@@ -12,19 +12,21 @@
 **BBM:** Kad situasi A/B, peta tindakan saling menghormati, borang semak; fail `materials/pendidikan_moral/year3/unit_01_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Murid memperagakan tindakan berdasarkan **1.5: Mengamalkan sikap menerima, menghormati dan mengurus kepelbagaian perayaan warga sekolah.** Kriteria kejayaan: Semak senarai pemerhatian perlakuan bagi SP 1.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP.
+Murid dapat **mempraktikkan dua perlakuan menghormati dan mengurus perayaan warga sekolah** dalam simulasi pameran serta membuat satu penambahbaikan selepas maklum balas (SP 1.5).
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Warga sekolah meraikan perayaan yang berbeza dalam suasana saling menghormati**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Rancang lakonan:** Guru membahagikan watak pelaku, penerima dan pemerhati. Murid merangka ayat serta langkah tindakan selamat untuk **menghormati pegangan agama atau kepercayaan orang lain**. Murid menyemak persediaan berdasarkan SP 1.5.
+**Aktiviti 1 (20 minit) — Susun pameran harmoni:** Guru memaparkan pameran **Jis Pai, Maulidur Rasul, Hari Gawai dan Ponggal** pada buku teks **m/s 2–3**. Murid menyusun jadual lawatan dan kad peraturan seperti memberi peluang bertanya, tidak mempersenda budaya orang lain dan meminta izin sebelum menyentuh bahan pameran. Guru memastikan tiada murid dipaksa mengikuti upacara keagamaan.
 
-**Aktiviti 2 (20 minit) — Lakon, semak, ulang:** Murid memperagakan situasi selama 60–90 saat, rakan memerhati dengan senarai semak, kemudian murid mengulang tindakan selepas maklum balas. Murid menetapkan satu amalan yang boleh dilaksanakan dengan selamat di sekolah atau rumah.
+**Aktiviti 2 (20 minit) — Simulasi pengunjung:** Murid menjadi penganjur, pengunjung dan pemerhati; pengunjung bertanya secara sopan, penganjur memberi penerangan ringkas dan pemerhati mencatat dua amalan menghormati serta pengurusan ruang pameran. Mereka mengulang situasi selepas maklum balas (SP 1.5).
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak senarai pemerhatian perlakuan bagi SP 1.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Senarai semak guru: bahasa hormat, giliran adil, pengurusan bahan pameran yang selamat, dan tindakan pembetulan. Bukti lakonan tidak menggantikan pemerhatian amalan sebenar.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **kepercayaan kepada tuhan**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
+
+**Semakan visual sumber:** m/s 2–3 (PDF 8–9); contoh aktiviti di atas dipadankan pada halaman yang diperiksa. Halaman untuk SP lain dalam unit ini belum diaudit.
 
 **Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — halaman belum dipadankan; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
