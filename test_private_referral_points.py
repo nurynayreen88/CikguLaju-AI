@@ -68,8 +68,8 @@ class TestPrivateReferral(unittest.TestCase):
         ns, sent, calls, registered = fixture()
         msg = {"chat":{"id":301,"type":"private"},"from":{"id":301},
                "text":"/start rp_" + "A"*24}
-        ns["request"] = type("Request",(),{"get_json":lambda self,**_:{"message":msg}})()
-        with patch.dict(os.environ, {"CIKGULAJU_REFERRAL_POINTS_ENABLED":"1"}):
+        ns["request"] = type("Request",(),{"headers":{"X-Telegram-Bot-Api-Secret-Token":"correct-long-secret"},"get_json":lambda self,**_:{"message":msg}})()
+        with patch.dict(os.environ, {"CIKGULAJU_REFERRAL_POINTS_ENABLED":"1","CIKGULAJU_TELEGRAM_WEBHOOK_SECRET":"correct-long-secret"}):
             self.assertTrue(referral.install(ns))
             response = ns["app"].view_functions["webhook"]()
         self.assertTrue(response["private_referral"])
@@ -80,18 +80,30 @@ class TestPrivateReferral(unittest.TestCase):
         ns, sent, calls, registered = fixture()
         msg={"chat":{"id":301,"type":"private"},"from":{"id":301},
              "text":"/start ref_123"}
-        ns["request"]=type("Request",(),{"get_json":lambda self,**_:{"message":msg}})()
-        with patch.dict(os.environ, {"CIKGULAJU_REFERRAL_POINTS_ENABLED":"1"}):
+        ns["request"]=type("Request",(),{"headers":{"X-Telegram-Bot-Api-Secret-Token":"correct-long-secret"},"get_json":lambda self,**_:{"message":msg}})()
+        with patch.dict(os.environ, {"CIKGULAJU_REFERRAL_POINTS_ENABLED":"1","CIKGULAJU_TELEGRAM_WEBHOOK_SECRET":"correct-long-secret"}):
             referral.install(ns)
             response = ns["app"].view_functions["webhook"]()
         self.assertTrue(response["legacy_referral_closed"])
         self.assertEqual(registered,[301])
         self.assertFalse(any("referral_award" in p for m,p,a in calls))
 
+    def test_reject_forged_webhook(self):
+        ns, sent, calls, registered = fixture()
+        msg={"chat":{"id":1,"type":"private"},"from":{"id":1},"text":"/refadd 301"}
+        ns["request"]=type("Request",(),{"headers":{},
+            "get_json":lambda self,**_:{"message":msg}})()
+        with patch.dict(os.environ,{"CIKGULAJU_REFERRAL_POINTS_ENABLED":"1",
+                                    "CIKGULAJU_TELEGRAM_WEBHOOK_SECRET":"correct-long-secret"}):
+            referral.install(ns)
+            response=ns["app"].view_functions["webhook"]()
+        self.assertEqual(response[1],403)
+        self.assertFalse(any(path=="referral_members" for method,path,args in calls))
+
     def test_pioneer_points_after_admin_approval_only(self):
         ns,sent,calls,_=fixture()
-        ns["request"]=type("Request",(),{"get_json":lambda self,**_:{} })()
-        with patch.dict(os.environ,{"CIKGULAJU_REFERRAL_POINTS_ENABLED":"1"}):
+        ns["request"]=type("Request",(),{"headers":{"X-Telegram-Bot-Api-Secret-Token":"correct-long-secret"},"get_json":lambda self,**_:{} })()
+        with patch.dict(os.environ,{"CIKGULAJU_REFERRAL_POINTS_ENABLED":"1","CIKGULAJU_TELEGRAM_WEBHOOK_SECRET":"correct-long-secret"}):
             referral.install(ns)
             ns["callback"](1,"admin_approve|7|301")
             ns["callback"](1,"admin_approve|7|301")  # no second award request
