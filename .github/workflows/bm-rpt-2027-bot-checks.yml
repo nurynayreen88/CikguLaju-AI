@@ -4,6 +4,7 @@ on:
     branches:
       - feat/rpt-bm-2027-pdf-telegram-20261104
       - feat/bm-rpt-2026-layout-20261104
+      - feat/bm-rpt-week-per-page-20261104
     paths:
       - 'rpt_2027/bahasa_melayu/**'
       - 'rpt_2027/english/telegram_downloads.py'
@@ -52,6 +53,7 @@ jobs:
               assert path.is_file() and path.stat().st_size>50000, path
               assert path.read_bytes()[:5]==b"%PDF-", path
               pdf=PdfReader(str(path))
+              assert len(pdf.pages) == 44, (year, 'one week per page expected', len(pdf.pages))
               assert all(float(p.mediabox.width)>float(p.mediabox.height) for p in pdf.pages)
               content="\n".join((p.extract_text() or "") for p in pdf.pages)
               found={int(x) for x in re.findall(r"PdP\s+(\d{3})\b", content)}

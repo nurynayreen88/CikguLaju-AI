@@ -23,13 +23,17 @@ col.a{width:11%}col.b{width:19%}col.c{width:19%}col.d{width:26%}col.f{width:25%}
 th{background:#bed6eb;font-size:8pt;text-align:center;padding:6px 4px;border:1px solid #4a5a68;line-height:1.2}
 td{border:1px solid #4a5a68;font-size:7.5pt;line-height:1.42;vertical-align:top;padding:5px 6px;overflow-wrap:anywhere}
 tr{break-inside:avoid}
+/* Satu minggu ditetapkan kepada satu helaian A4 landscape. */
+body > table{break-after:page;page-break-after:always;break-inside:avoid}
+body > table:last-of-type{break-after:auto;page-break-after:auto}
+body > table:nth-of-type(n+2){margin-top:1mm}
 .week{background:#eaf1e3;vertical-align:middle;text-align:center;font-size:7.4pt;line-height:1.6}.weekcont{font-size:8.4pt;font-weight:bold;color:#547153}
 .wn{display:block;font-weight:bold;font-size:13pt;margin-bottom:7px}
 .date{display:block;margin-top:7px}.theme{line-height:1.6}
 .ref-title{font-size:7.85pt;font-weight:bold;margin-bottom:5px}.pd{color:#244b69}.code{font-size:6.5pt;color:#677786;font-weight:normal}
 .refs{font-size:7.25pt;font-weight:600;display:block;margin-top:4px}.detail{color:#53606c;font-size:7.05pt;display:block;margin-top:4px}
 .pkjr td:not(.week){background:#fff2ca}.unallocated td:not(.week){background:#f4f6f8;color:#657381}
-.foot{font-size:7.2pt;color:#687785;margin-top:9px}'''
+.foot{display:none}'''
 
 def build(year,total):
     path=SRC/f'RPT_BM_TAHUN_{year}_2027_A_B_PER_LESSON_DRAF.html'
@@ -42,6 +46,7 @@ def build(year,total):
 <b>KUMPULAN A + B</b> &nbsp; | &nbsp; 44 minggu &nbsp; | &nbsp; {total} PdP &nbsp; | &nbsp; Format jadual RPT BM SK 2026<br>
 <span class="status">DRAF UNTUK SEMAKAN: cuti negeri/gantian, SK/SP, aktiviti dan BT/BA masih memerlukan pengesahan menyeluruh.</span></div>''']
     seen=[]
+    week_pdps=[]
     for ix,section in enumerate(weeks,1):
         title=section.select_one('.weektitle').get_text(' ',strip=True)
         parts=[s.strip() for s in title.split('|')]
@@ -50,11 +55,12 @@ def build(year,total):
         assert w==ix,(year,w,ix)
         rows=section.select('tbody > tr')
         assert rows,(year,w)
-        weekcell=f'<td class="week"><span class="wn">{w:02d}</span><span class="date">{e(parts[1])}</span><span class="date">{e(parts[2])}</span></td>'
+        week_seen=[]
+        weekcell=f'<td class="week" rowspan="{len(rows)}"><span class="wn">{w:02d}</span><span class="date">{e(parts[1])}</span><span class="date">{e(parts[2])}</span></td>'
         html.append('<table><colgroup><col class="a"><col class="b"><col class="c"><col class="d"><col class="f"></colgroup><thead><tr><th>MINGGU</th><th>TEMA / UNIT</th><th>STANDARD<br>KANDUNGAN</th><th>STANDARD<br>PEMBELAJARAN</th><th>CATATAN /<br>RUJUKAN</th></tr></thead><tbody>')
         for j,row in enumerate(rows):
             cells=row.find_all('td',recursive=False)
-            lead=weekcell if j==0 else f'<td class="week weekcont">{w:02d}</td>'
+            lead=weekcell if j==0 else ''
             idtag=row.select_one('td.id')
             if idtag is None:
                 line=' '.join(c.get_text(' ',strip=True) for c in cells)
@@ -63,7 +69,7 @@ def build(year,total):
             assert len(cells)==7,(year,w,len(cells))
             vals=[c.get_text(' ',strip=True) for c in cells]
             m=re.search(r'PdP\s+(\d{3})',vals[0]);assert m,(year,w,vals[0])
-            n=int(m.group(1));seen.append(n)
+            n=int(m.group(1));seen.append(n);week_seen.append(n)
             _,theme,topic,sk,sp,refs,notes=vals
             theme_html=e(theme).replace('; ',';<br>')
             id_suffix=e(vals[0].replace(f'PdP {n:03d}','').strip())
@@ -72,6 +78,7 @@ def build(year,total):
             special=' class="pkjr"' if re.search(r'\bPKJR\b',topic+' '+notes,re.I) else ''
             html.append(f'<tr{special}>{lead}<td class="theme">{theme_html}</td><td>{e(sk)}</td><td>{e(sp)}</td><td>{end}</td></tr>')
         html.append('</tbody></table>')
+        week_pdps.append(week_seen)
     assert seen==list(range(1,total+1)),(year,seen[:10],seen[-10:],len(seen))
     html.append('<p class="foot">Rujukan: RPT BM SK 2026, DSKP dan Kalendar Induk 2027. Status DRAF — tidak menandakan kelulusan READY.</p></body></html>')
     combined='\n'.join(html)
@@ -80,10 +87,20 @@ def build(year,total):
     HTML(string=combined,base_url=str(SRC)).write_pdf(str(target))
     pdf=fitz.open(str(target))
     assert all(p.rect.width>p.rect.height for p in pdf),(year,'not landscape')
+    assert len(pdf)==44,(year,'expected one page per week',len(pdf))
+    for week_index,page in enumerate(pdf,1):
+        lines=page.get_text().splitlines()
+        assert 'MINGGU' in lines,(year,week_index,'no week column')
+        marker=lines[lines.index('MINGGU')+8]
+        assert marker==f'{week_index:02d}',(year,week_index,'unexpected week marker',marker)
+        text=page.get_text()
+        assert 'Kumpulan A:' in text and 'Kumpulan B:' in text,(year,week_index,'date missing')
+        found={int(v) for v in re.findall(r'\bPdP\s+(\d{3})\b',text)}
+        assert set(week_pdps[week_index-1]).issubset(found),(year,week_index,'PdP missing from page',set(week_pdps[week_index-1])-found)
     ids={int(v) for v in re.findall(r'\bPdP\s+(\d{3})\b','\n'.join(p.get_text() for p in pdf))}
     assert ids==set(range(1,total+1)),(year,sorted(set(range(1,total+1))-ids))
     result=dict(year=year,pdp=total,weeks=44,pages=len(pdf),bytes=target.stat().st_size,
-                status='DRAF_BELUM_READY',layout='RPT BM SK 2026 five-column style',filename=target.name)
+                status='DRAF_BELUM_READY',layout='RPT BM SK 2026 five-column style; one week per page',filename=target.name)
     print(json.dumps(result,ensure_ascii=False),flush=True)
     return result
 
