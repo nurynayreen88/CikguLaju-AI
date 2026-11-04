@@ -54,6 +54,17 @@ class EnglishY4WordPdfRowsTests(unittest.TestCase):
         self.assertNotIn("QA status", "\n".join(updated.values()))
         self.assertNotIn("Verified mapping and limits", "\n".join(updated.values()))
 
+    def test_middle_year_workbook_and_pbd_remain_in_correct_phases(self):
+        state = {"year": "Tahun 4", "subject": "English", "lesson_no": 67,
+                 "sp_code": "3.2.4", "comp_sp_code": "3.2.2"}
+        rows = adapt_rows(state, self.existing)
+        self.assertIn("Teacher:", rows["AKTIVITI UTAMA"])
+        self.assertIn("Pupils:", rows["AKTIVITI UTAMA"])
+        self.assertIn("Workbook p.40", rows["AKTIVITI UTAMA"])
+        self.assertIn("monolingual dictionary", rows["PENTAKSIRAN"])
+        self.assertNotIn("Assess pupils' use", rows["PENUTUP"])
+        self.assertIn("exit cards", rows["PENUTUP"])
+
     def test_teacher_entered_metadata_is_preserved(self):
         out = adapt_rows(self.state, self.existing)
         for field in ("TARIKH", "MASA", "KELAS", "BILANGAN MURID", "REFLEKSI"):
