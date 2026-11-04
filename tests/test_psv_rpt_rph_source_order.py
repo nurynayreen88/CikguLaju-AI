@@ -364,5 +364,88 @@ class PSVSourceOrderTests(unittest.TestCase):
                     self.assertNotIn("bercetak di bawah", sp.group(1))
 
 
+    def test_forty_unit_dskp_technique_and_production_semantics(self):
+        """Independent SP-to-technique crosswalk from printed Y2–Y5 DSKP.
+
+        This checks real teaching activity text, never just title metadata.
+        Y2 DSKP prints SP 2.1.3 twice, covering both construction and
+        traditional craft; retain original printed code, not a made-up 2.1.4.
+        """
+        verified = {
+            2: [
+                ("2.1.1", "3.1.1", r"garisan selari"),
+                ("2.1.2", "3.1.1", r"lipatan|guntingan"),
+                ("2.1.3", "3.1.1", r"stabail"),
+                ("2.1.3", "3.1.1", r"gasing"),
+                ("2.1.1", "3.1.1", r"gosokan"),
+                ("2.1.2", "3.1.1", r"cetakan|cetak"),
+                ("2.1.3", "3.1.1", r"topeng"),
+                ("2.1.3", "3.1.1", r"tembikar|picitan"),
+                ("2.1.1", "3.1.1", r"basah atas kering|rama.rama"),
+                ("2.1.1", "3.1.1", r"resis"),
+            ],
+            3: [
+                ("2.1.1", "3.1.1", r"silang pangkah"),
+                ("2.1.1", "3.1.1", r"montaj|bertindih"),
+                ("2.1.2", "3.1.2", r"capan"),
+                ("2.1.3", "3.1.4", r"mobail"),
+                ("2.1.4", "3.1.5", r"parang ilang|alat pertahanan"),
+                ("2.1.1", "3.1.1", r"kolaj"),
+                ("2.1.1", "3.1.1", r"gurisan"),
+                ("2.1.2", "3.1.2", r"renjisan|percikan"),
+                ("2.1.3", "3.1.4", r"boneka"),
+                ("2.1.4", "3.1.5", r"anyaman"),
+            ],
+            4: [
+                ("2.1.1", "3.1.1", r"basah atas basah"),
+                ("2.1.2", "3.1.1", r"mozek"),
+                ("2.1.6", "3.1.3", r"stensil"),
+                ("2.1.7", "3.1.4", r"asemblaj"),
+                ("2.1.10", "3.1.5", r"papier.mache|cawan"),
+                ("2.1.3", "3.1.1", r"poster"),
+                ("2.1.4", "3.1.1", r"kolograf"),
+                ("2.1.5", "3.1.3", r"pualaman"),
+                ("2.1.8", "3.1.4", r"diorama"),
+                ("2.1.9", "3.1.5", r"ukiran"),
+            ],
+            5: [
+                ("2.1.4", "3.1.1", r"capan"),
+                ("2.1.2", "3.1.1", r"montaj|poster"),
+                ("2.1.6", "3.1.3", r"kolaj"),
+                ("2.1.8", "3.1.4", r"roket|model"),
+                ("2.1.9", "3.1.5", r"tembikar|paper.clay|pasu"),
+                ("2.1.1", "3.1.1", r"gurisan|kolaj"),
+                ("2.1.3", "3.1.1", r"mozek|catan"),
+                ("2.1.5", "3.1.3", r"titisan"),
+                ("2.1.7", "3.1.4", r"stabail"),
+                ("2.1.10", "3.1.5", r"tekat|mempulur"),
+            ],
+        }
+        checked = 0
+        for year, units in verified.items():
+            self.assertEqual(len(units), 10)
+            rows = read_csv(PSV / f"RPT_PSV_Tahun_{year}_2027_DRAF.csv")
+            for row in rows:
+                unit_raw = str(row["Unit"]).strip()
+                if not unit_raw.isdecimal():
+                    continue
+                unit = int(unit_raw)
+                with self.subTest(year=year, pdp=row["PdP"], unit=unit):
+                    exploration, production, activity_pattern = units[unit - 1]
+                    codes = [x.strip() for x in row["SP"].split(";")]
+                    for code in codes:
+                        if code.startswith("2.1."):
+                            self.assertEqual(code, exploration)
+                        if code.startswith("3.1."):
+                            self.assertEqual(code, production)
+                    rph = (ROOT / row["Fail RPH"]).read_text(encoding="utf-8")
+                    activity = rph.partition("## Langkah PdP")[2]
+                    self.assertTrue(activity, "Missing lesson activity section")
+                    self.assertRegex(activity.lower(), activity_pattern)
+                    checked += 1
+        self.assertEqual(checked, 170)
+
+
+
 if __name__ == "__main__":
     unittest.main()
