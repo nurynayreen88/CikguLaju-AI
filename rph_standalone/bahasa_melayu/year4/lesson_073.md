@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 073
 
-**ID:** BM4-P073  
-**Minggu RPT 2027:** M18 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Kebudayaan, Kesenian dan Estetika; U12: Adat Dijunjung Budaya Disanjung  
-**Tajuk aktiviti:** Penyeri Majlis  
-**Standard Kandungan (SK):** 5.2 Memahami dan menggunakan bentuk kata mengikut konteks.  
-**Standard Pembelajaran (SP):** 5.2.1 (i) — Memahami dan menggunakan kata berimbuhan mengikut konteks  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 83  
-**Fokus:** tatabahasa — Penyeri Majlis  
-**Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan 'Penyeri Majlis'.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P073
+**Minggu RPT 2027:** M18 (tarikh sebenar ikut jadual persekolahan)
+**Tema/Unit:** Kebudayaan, Kesenian dan Estetika; U12: Adat Dijunjung Budaya Disanjung
+**Tajuk aktiviti:** Penyeri Majlis
+**Standard Kandungan (SK):** 5.2 Memahami dan menggunakan bentuk kata mengikut konteks.
+**Standard Pembelajaran (SP):** 5.2.1 (iii) — Memahami dan menggunakan kata berimbuhan mengikut konteks
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 83. **BA:** halaman/latihan asal belum disahkan.
+**Konteks BT:** Hadif dan keluarga menghadiri perkahwinan sepupu; mereka memerhatikan pahar tembaga dan perkataan berimbuhan apitan daripada keterangan corak, kegunaan serta hiasan pahar.
+**Objektif PdP:** Pada akhir PdP, murid dapat mengenal pasti sekurang-kurangnya empat kata berimbuhan apitan dan membina tiga ayat tentang pahar berdasarkan teks.
+**Bahan:** Buku Teks asal, salinan petikan atau bahan grafik berkaitan, kad tugasan serta senarai semak PBD.
+**Masa:** 60 minit (boleh diselaraskan mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Penyeri Majlis' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kebudayaan, Kesenian dan Estetika; U12: Adat Dijunjung Budaya Disanjung.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar gambar pahar tembaga dengan motif seni tradisional.
+**Murid:** Nyatakan kegunaan pahar pada sesuatu majlis.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan ayat daripada bahan 'Penyeri Majlis'; membimbing murid mengenal pasti unsur bahasa yang dinyatakan dalam Memahami dan menggunakan kata berimbuhan mengikut konteks.  
-**Murid:** Mengenal pasti dan mengelaskan empat contoh bentuk bahasa daripada tajuk 'Penyeri Majlis'.
+## Aktiviti 1 — Teliti Buku Teks (15 minit)
+**Guru:** Bimbing murid membaca BT m/s 83 dan jelaskan kata berimbuhan apitan sebagai imbuhan di hadapan dan belakang kata dasar.
+**Murid:** Kenal pasti contoh seperti 'perkahwinan', 'pertunangan', 'mengekalkan' dan 'dianggarkan'.
 
-## Aktiviti 2 — Aplikasi berpandu tatabahasa (20 minit)
-**Guru:** Memberikan tugasan bina ayat bertema 'Penyeri Majlis' menggunakan bentuk bahasa sasaran; membimbing pembetulan mengikut konteks.  
-**Murid:** Membina empat ayat yang mengandungi unsur bahasa sasaran dan menyunting contoh yang kurang tepat.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Bimbing pengelasan awalan dan akhiran dalam kata berimbuhan apitan, kemudian bina ayat berdasarkan keterangan pahar.
+**Murid:** Bina tiga ayat menggunakan kata berimbuhan apitan yang mengekalkan makna asal bahan.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (5.2.1 (i) — Memahami dan menggunakan kata berimbuhan mengikut konteks) menggunakan bukti hasil tugasan: Empat ayat disemak: pilihan perkataan betul dan penggunaan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak empat kata berimbuhan apitan dan struktur tiga ayat.
+**Murid:** Baiki kata yang tersalah dianggap sebagai awalan sahaja.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam 'Penyeri Majlis' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan fungsi imbuhan apitan dalam ayat.
+**Murid:** Nyatakan satu perkataan yang mempunyai imbuhan apitan.
 
-**Nota RPT asal:** Tatabahasa; Penggunaan tatabahasa dalam ayat bertema
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus Buku Teks:** BT m/s 83 jelas menyatakan SP 5.2.1(iii), bukan SP 5.2.1(i) dalam RPT lama, dan latihan membina ayat dengan kata berimbuhan apitan.
+**Status QA:** DRAF — halaman, aktiviti dan SP BT disemak. BA, PKJR (jika berkenaan), takwim negeri, format cetakan Word/PDF A4 dan ujian Telegram belum disahkan. Jangan tanda FINAL READY.

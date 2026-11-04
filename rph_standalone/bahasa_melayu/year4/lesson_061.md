@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 061
 
-**ID:** BM4-P061  
-**Minggu RPT 2027:** M15 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Kebudayaan, Kesenian dan Estetika; U10: Semarakkan Budaya Kita  
-**Tajuk aktiviti:** Pejuang Tanjak Masa Kini  
-**Standard Kandungan (SK):** 4.1 Mengaplikasikan unsur keindahan dan kesantunan bahasa dalam bahan sastera.  
-**Standard Pembelajaran (SP):** 4.1.1 — Bercerita dan mengujarkan dialog yang mengandungi peribahasa  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 70  
-**Fokus:** seni — Pejuang Tanjak Masa Kini  
-**Objektif PdP:** Murid dapat mengujarkan dialog atau bercerita tentang 'Pejuang Tanjak Masa Kini' dengan menggunakan sekurang-kurangnya dua ungkapan/peribahasa yang tepat mengikut konteks.
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P061
+**Minggu RPT 2027:** M15 (tarikh sebenar ikut jadual persekolahan)
+**Tema/Unit:** Kebudayaan, Kesenian dan Estetika; U10: Semarakkan Budaya Kita
+**Tajuk aktiviti:** Pejuang Tanjak Masa Kini
+**Standard Kandungan (SK):** 4.1 Mengaplikasikan unsur keindahan dan kesantunan bahasa dalam bahan sastera.
+**Standard Pembelajaran (SP):** 4.1.1 — Bercerita dan mengujarkan dialog yang mengandungi peribahasa
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 70. **BA:** halaman/latihan asal belum disahkan.
+**Konteks BT:** Dialog Hadif dengan Abang Aziz di pesta kebudayaan tentang tanjak dan adat tempatan, termasuk peribahasa 'bulat kata', 'tidak lapuk dek hujan, tidak lekang dek panas' dan 'lain padang lain belalang'.
+**Objektif PdP:** Pada akhir PdP, murid dapat mengujarkan dialog secara berpasangan dengan sebutan sesuai dan menerangkan sekurang-kurangnya dua peribahasa berdasarkan konteks.
+**Bahan:** Buku Teks asal, salinan petikan atau bahan grafik berkaitan, kad tugasan serta senarai semak PBD.
+**Masa:** 60 minit (boleh diselaraskan mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Pejuang Tanjak Masa Kini' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kebudayaan, Kesenian dan Estetika; U10: Semarakkan Budaya Kita.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar gambar tanjak dan tanya mengapa pakaian tradisi berbeza mengikut negeri.
+**Murid:** Nyatakan satu bahan warisan yang pernah dilihat.
 
-## Aktiviti 1 — Fahami penggunaan peribahasa (15 minit)
-**Guru:** Menunjukkan petikan atau dialog berkaitan 'Pejuang Tanjak Masa Kini' dalam bahan yang dirujuk; mengajak murid meneliti maksud peribahasa berdasarkan situasi.
-**Murid:** Mengenal pasti dua peribahasa/ungkapan dan menerangkan maksudnya melalui contoh situasi dalam tajuk.
+## Aktiviti 1 — Teliti Buku Teks (15 minit)
+**Guru:** Bimbing bacaan dialog BT m/s 70 antara Hadif dengan Abang Aziz; modelkan sebutan dan makna peribahasa dalam ayat asal.
+**Murid:** Gariskan tiga ungkapan peribahasa serta maksudnya daripada jawapan Abang Aziz.
 
-## Aktiviti 2 — Dialog dan persembahan (20 minit)
-**Guru:** Membimbing murid membina dialog empat hingga enam ujaran dengan peribahasa yang digunakan pada konteks yang sesuai; memodelkan intonasi santun.
-**Murid:** Berpasangan membina dialog bertema 'Pejuang Tanjak Masa Kini', menggunakan dua ungkapan yang relevan, kemudian mempersembahkannya secara lisan.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Bahagikan murid kepada pasangan sebagai Hadif dan Abang Aziz; minta simulasi tentang jenis lipatan tanjak serta maksud peribahasa.
+**Murid:** Lakonkan dialog dan jelaskan dua peribahasa dengan contoh berbeza yang sesuai.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Merekod ketepatan makna dua peribahasa dan penggunaan dalam dialog/cerita serta kelancaran ujaran, menurut SP (4.1.1 — Bercerita dan mengujarkan dialog yang mengandungi peribahasa).
-**Murid:** Menjelaskan mengapa ungkapan dipilih dan membetulkan sekurang-kurangnya satu penggunaan jika tidak tepat.
+**Guru:** Semak kesesuaian ujaran peribahasa, sebutan dan makna dalam situasi sebenar.
+**Murid:** Baiki satu penggunaan peribahasa yang tersalah maksud.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran seni yang digunakan dalam 'Pejuang Tanjak Masa Kini' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan nilai menghargai seni tanjak dan kesantunan bertutur.
+**Murid:** Sebut satu peribahasa yang dipelajari bersama maksudnya.
 
-**Nota RPT asal:** Seni Bahasa (sokongan): penilaian hanya melalui kemahiran bahasa berkaitan; aspek seni bahasa tidak ditaksir berasingan
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus Buku Teks:** BT m/s 70 mengarahkan bercerita dan mengujarkan dialog mengandungi peribahasa mengenai tanjak, bukannya aktiviti umum.
+**Status QA:** DRAF — halaman, aktiviti dan SP BT disemak. BA, PKJR (jika berkenaan), takwim negeri, format cetakan Word/PDF A4 dan ujian Telegram belum disahkan. Jangan tanda FINAL READY.

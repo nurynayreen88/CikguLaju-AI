@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 063
 
-**ID:** BM4-P063  
-**Minggu RPT 2027:** M16 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Kebudayaan, Kesenian dan Estetika; U10: Semarakkan Budaya Kita  
-**Tajuk aktiviti:** Pusaka Bangsa  
-**Standard Kandungan (SK):** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.  
-**Standard Pembelajaran (SP):** 5.1.4 (iv) — Memahami dan menggunakan kata tugas mengikut konteks  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 72  
-**Fokus:** tatabahasa — Pusaka Bangsa  
-**Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan 'Pusaka Bangsa'.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P063
+**Minggu RPT 2027:** M16 (tarikh sebenar ikut jadual persekolahan)
+**Tema/Unit:** Kebudayaan, Kesenian dan Estetika; U10: Semarakkan Budaya Kita
+**Tajuk aktiviti:** Pusaka Bangsa
+**Standard Kandungan (SK):** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.
+**Standard Pembelajaran (SP):** 5.1.4 (iv) — Memahami dan menggunakan kata tugas mengikut konteks
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 72. **BA:** halaman/latihan asal belum disahkan.
+**Konteks BT:** Rencana tentang tarian dabus dari Perak dengan maklumat jumlah pemain, alat muzik, tempoh latihan dan kategori kata bilangan.
+**Objektif PdP:** Pada akhir PdP, murid dapat mengelaskan empat jenis kata bilangan serta membina tiga ayat berdasarkan rencana tarian dabus.
+**Bahan:** Buku Teks asal, salinan petikan atau bahan grafik berkaitan, kad tugasan serta senarai semak PBD.
+**Masa:** 60 minit (boleh diselaraskan mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Pusaka Bangsa' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kebudayaan, Kesenian dan Estetika; U10: Semarakkan Budaya Kita.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar gambar atau tajuk Pusaka Bangsa dan minta murid meneka kesenian yang dibincang.
+**Murid:** Sebut satu tarian tradisional yang diketahui.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan ayat daripada bahan 'Pusaka Bangsa'; membimbing murid mengenal pasti unsur bahasa yang dinyatakan dalam Memahami dan menggunakan kata tugas mengikut konteks.  
-**Murid:** Mengenal pasti dan mengelaskan empat contoh bentuk bahasa daripada tajuk 'Pusaka Bangsa'.
+## Aktiviti 1 — Teliti Buku Teks (15 minit)
+**Guru:** Bimbing bacaan BT m/s 72, fokus fakta bilangan pemain dabus, tempoh latihan dan kategori kata bilangan dalam ruang Munsyi Cilik.
+**Murid:** Gariskan perkataan atau frasa bilangan serta tentukan kategorinya.
 
-## Aktiviti 2 — Aplikasi berpandu tatabahasa (20 minit)
-**Guru:** Memberikan tugasan bina ayat bertema 'Pusaka Bangsa' menggunakan bentuk bahasa sasaran; membimbing pembetulan mengikut konteks.  
-**Murid:** Membina empat ayat yang mengandungi unsur bahasa sasaran dan menyunting contoh yang kurang tepat.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Bimbing pengelasan kata bilangan tentu, tak tentu, himpunan, pisahan dan pecahan menggunakan contoh daripada buku.
+**Murid:** Bina tiga ayat tentang tarian dabus menggunakan kata bilangan yang sesuai.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (5.1.4 (iv) — Memahami dan menggunakan kata tugas mengikut konteks) menggunakan bukti hasil tugasan: Empat ayat disemak: pilihan perkataan betul dan penggunaan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak kategori dan ketepatan penggunaan kata bilangan dalam ayat.
+**Murid:** Baiki satu kata bilangan yang tidak sesuai dengan kata nama.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam 'Pusaka Bangsa' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan pentingnya kata bilangan dalam laporan kesenian.
+**Murid:** Nyatakan satu fakta tentang tarian dabus daripada petikan.
 
-**Nota RPT asal:** Tatabahasa; Penggunaan tatabahasa dalam ayat bertema
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus Buku Teks:** BT m/s 72 menyenaraikan kategori kata bilangan dan mengarahkan membina ayat menggunakan kata bilangan dalam konteks tarian dabus.
+**Status QA:** DRAF — halaman, aktiviti dan SP BT disemak. BA, PKJR (jika berkenaan), takwim negeri, format cetakan Word/PDF A4 dan ujian Telegram belum disahkan. Jangan tanda FINAL READY.

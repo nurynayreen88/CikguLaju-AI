@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 072
 
-**ID:** BM4-P072  
-**Minggu RPT 2027:** M18 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Kebudayaan, Kesenian dan Estetika; U12: Adat Dijunjung Budaya Disanjung  
-**Tajuk aktiviti:** Tiupan Emas  
-**Standard Kandungan (SK):** 4.2 Menghayati keindahan dan kesantunan bahasa dalam bahan sastera.  
-**Standard Pembelajaran (SP):** 4.2.1 — Melafazkan dan menjelaskan maksud sajak  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 82  
-**Fokus:** seni — Tiupan Emas  
-**Objektif PdP:** Murid dapat mempersembahkan satu respons atau hasil seni bahasa yang berkaitan 'Tiupan Emas' serta menjelaskan maksudnya dengan tepat.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P072
+**Minggu RPT 2027:** M18 (tarikh sebenar ikut jadual persekolahan)
+**Tema/Unit:** Kebudayaan, Kesenian dan Estetika; U12: Adat Dijunjung Budaya Disanjung
+**Tajuk aktiviti:** Tiupan Emas
+**Standard Kandungan (SK):** 4.2 Menghayati keindahan dan kesantunan bahasa dalam bahan sastera.
+**Standard Pembelajaran (SP):** 4.2.1 — Melafazkan dan menjelaskan maksud sajak
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 82. **BA:** halaman/latihan asal belum disahkan.
+**Konteks BT:** Sajak tentang nafiri sebagai alat kebesaran diraja, digunakan dalam pertabalan dan adat istiadat; halaman meminta murid mendeklamasi dan menjelaskan maksud tiga rangkap.
+**Objektif PdP:** Pada akhir PdP, murid dapat mendeklamasikan satu rangkap sajak dengan sebutan dan intonasi betul serta menjelaskan tiga maksud rangkap.
+**Bahan:** Buku Teks asal, salinan petikan atau bahan grafik berkaitan, kad tugasan serta senarai semak PBD.
+**Masa:** 60 minit (boleh diselaraskan mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Tiupan Emas' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kebudayaan, Kesenian dan Estetika; U12: Adat Dijunjung Budaya Disanjung.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar gambar nafiri atau penerangan ringkas alat kebesaran diraja.
+**Murid:** Nyatakan satu alat muzik tradisional yang diketahui.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Memperdengarkan atau membacakan contoh karya dalam 'Tiupan Emas'; memimpin pengesanan ungkapan, maksud dan ciri bahasa.  
-**Murid:** Membaca/mendengar karya berkaitan 'Tiupan Emas' dan menandakan dua ungkapan atau unsur bahasa yang bermakna.
+## Aktiviti 1 — Teliti Buku Teks (15 minit)
+**Guru:** Bimbing bacaan sajak nafiri BT m/s 82; tekankan perkataan seperti kedaulatan, istiadat dan takhta.
+**Murid:** Kenal pasti gambaran kegunaan nafiri dalam setiap rangkap.
 
-## Aktiviti 2 — Aplikasi berpandu seni (20 minit)
-**Guru:** Membimbing persembahan/hasil seni bahasa mengikut jenis karya sebenar dalam sumber dan menghubungkannya dengan situasi tema.  
-**Murid:** Melafazkan, bercerita, menyampaikan dialog atau menghasilkan respons kreatif sesuai SP; menjelaskan maksud dua ungkapan.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Tunjukkan cara mendeklamasikan sajak dengan jeda, nada serta penekanan tanpa menukar teks asal.
+**Murid:** Deklamasikan satu rangkap, kemudian huraikan tiga maksud rangkap secara lisan.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (4.2.1 — Melafazkan dan menjelaskan maksud sajak) menggunakan bukti hasil tugasan: Semakan respons/persembahan: sebutan, makna dan penggunaan bahasa mengikut SP. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak sebutan, intonasi, penghayatan dan kefahaman maksud berdasarkan teks.
+**Murid:** Baiki maksud yang kurang tepat dan baca semula rangkap.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran seni yang digunakan dalam 'Tiupan Emas' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan nilai menjaga alat warisan diraja.
+**Murid:** Nyatakan satu peranan nafiri dalam adat istiadat.
 
-**Nota RPT asal:** Seni Bahasa (sokongan): penilaian hanya melalui kemahiran bahasa berkaitan; aspek seni bahasa tidak ditaksir berasingan; Semak tajuk penuh
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus Buku Teks:** BT m/s 82 memaparkan sajak tentang nafiri dengan arahan mendeklamasikan dan menjelaskan maksud; tajuk 'Tiupan Emas' hanya tajuk RPT dan tidak disahkan sebagai tajuk bercetak.
+**Status QA:** DRAF — halaman, aktiviti dan SP BT disemak. BA, PKJR (jika berkenaan), takwim negeri, format cetakan Word/PDF A4 dan ujian Telegram belum disahkan. Jangan tanda FINAL READY.

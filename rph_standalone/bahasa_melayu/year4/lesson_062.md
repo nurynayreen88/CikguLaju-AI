@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 062
 
-**ID:** BM4-P062  
-**Minggu RPT 2027:** M16 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Kebudayaan, Kesenian dan Estetika; U10: Semarakkan Budaya Kita  
-**Tajuk aktiviti:** Anyaman Ribu-ribu  
-**Standard Kandungan (SK):** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.  
-**Standard Pembelajaran (SP):** 5.1.4 (iii) — Memahami dan menggunakan kata tugas mengikut konteks  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 71  
-**Fokus:** tatabahasa — Anyaman Ribu-ribu  
-**Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan 'Anyaman Ribu-ribu'.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P062
+**Minggu RPT 2027:** M16 (tarikh sebenar ikut jadual persekolahan)
+**Tema/Unit:** Kebudayaan, Kesenian dan Estetika; U10: Semarakkan Budaya Kita
+**Tajuk aktiviti:** Anyaman Ribu-ribu
+**Standard Kandungan (SK):** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.
+**Standard Pembelajaran (SP):** 5.1.4 (iii) — Memahami dan menggunakan kata tugas mengikut konteks
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 71. **BA:** halaman/latihan asal belum disahkan.
+**Konteks BT:** Petikan cara menghasilkan anyaman ribu-ribu dengan tempat kosong; latihan kata nafi bukan dan tidak pada BT.
+**Objektif PdP:** Pada akhir PdP, murid dapat membezakan kata nafi bukan dan tidak serta melengkapkan empat ayat dengan kata nafi yang tepat.
+**Bahan:** Buku Teks asal, salinan petikan atau bahan grafik berkaitan, kad tugasan serta senarai semak PBD.
+**Masa:** 60 minit (boleh diselaraskan mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Anyaman Ribu-ribu' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kebudayaan, Kesenian dan Estetika; U10: Semarakkan Budaya Kita.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar anyaman ribu-ribu yang dibuat daripada tumbuhan paku pakis.
+**Murid:** Nyatakan satu bahan alam yang boleh dijadikan kraf.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan ayat daripada bahan 'Anyaman Ribu-ribu'; membimbing murid mengenal pasti unsur bahasa yang dinyatakan dalam Memahami dan menggunakan kata tugas mengikut konteks.  
-**Murid:** Mengenal pasti dan mengelaskan empat contoh bentuk bahasa daripada tajuk 'Anyaman Ribu-ribu'.
+## Aktiviti 1 — Teliti Buku Teks (15 minit)
+**Guru:** Bimbing bacaan petikan BT m/s 71 dan jelaskan 'bukan' di hadapan frasa nama/sendi serta 'tidak' di hadapan frasa kerja/adjektif.
+**Murid:** Bezakan contoh penggunaan bukan dan tidak dalam petikan langkah anyaman.
 
-## Aktiviti 2 — Aplikasi berpandu tatabahasa (20 minit)
-**Guru:** Memberikan tugasan bina ayat bertema 'Anyaman Ribu-ribu' menggunakan bentuk bahasa sasaran; membimbing pembetulan mengikut konteks.  
-**Murid:** Membina empat ayat yang mengandungi unsur bahasa sasaran dan menyunting contoh yang kurang tepat.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Tunjukkan empat ruang kosong berkenaan alat, keadaan helaian dan langkah penyediaan anyaman.
+**Murid:** Lengkapkan keempat-empat ayat menggunakan bukan atau tidak dan nyatakan sebab.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (5.1.4 (iii) — Memahami dan menggunakan kata tugas mengikut konteks) menggunakan bukti hasil tugasan: Empat ayat disemak: pilihan perkataan betul dan penggunaan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak jenis frasa selepas kata nafi, makna ayat serta kesesuaian dengan proses anyaman.
+**Murid:** Baiki dua penggunaan yang tidak sepadan dengan struktur.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam 'Anyaman Ribu-ribu' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan perbezaan kata nafi bukan/tidak.
+**Murid:** Bina satu ayat kraf menggunakan kata nafi dengan betul.
 
-**Nota RPT asal:** Tatabahasa; Penggunaan tatabahasa dalam ayat bertema
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus Buku Teks:** BT m/s 71 mengajar SP 5.1.4(iii), menyuruh murid membina ayat menggunakan kata nafi mengikut konteks proses anyaman.
+**Status QA:** DRAF — halaman, aktiviti dan SP BT disemak. BA, PKJR (jika berkenaan), takwim negeri, format cetakan Word/PDF A4 dan ujian Telegram belum disahkan. Jangan tanda FINAL READY.

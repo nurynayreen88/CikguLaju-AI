@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 064
 
-**ID:** BM4-P064  
-**Minggu RPT 2027:** M16 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Kebudayaan, Kesenian dan Estetika; U11: Indah Seni Sepanjang Zaman  
-**Tajuk aktiviti:** Semutar Datuk  
-**Standard Kandungan (SK):** 1.1 Mendengar dan memberikan respons semasa berkomunikasi dalam situasi formal dan tidak formal.  
-**Standard Pembelajaran (SP):** 1.1.2 — Mendengar, memahami dan memberikan respons terhadap ujaran yang terdapat dalam situasi tidak formal  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 73  
-**Fokus:** lisan — Semutar Datuk  
-**Objektif PdP:** Murid dapat memberikan sekurang-kurangnya tiga respons lisan yang relevan tentang 'Semutar Datuk' mengikut kemahiran 1.1.2.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P064
+**Minggu RPT 2027:** M16 (tarikh sebenar ikut jadual persekolahan)
+**Tema/Unit:** Kebudayaan, Kesenian dan Estetika; U11: Indah Seni Sepanjang Zaman
+**Tajuk aktiviti:** Semutar Datuk
+**Standard Kandungan (SK):** 1.1 Mendengar dan memberikan respons semasa berkomunikasi dalam situasi formal dan tidak formal.
+**Standard Pembelajaran (SP):** 1.1.2 — Mendengar, memahami dan memberikan respons terhadap ujaran yang terdapat dalam situasi tidak formal
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 73. **BA:** halaman/latihan asal belum disahkan.
+**Konteks BT:** Dialog Hadif dan datuknya yang menyirat jala di tepi laut tentang semutar, iaitu lilitan kain di kepala dan kegunaannya.
+**Objektif PdP:** Pada akhir PdP, murid dapat memberikan sekurang-kurangnya tiga respons lisan yang menunjukkan kefahaman terhadap soalan dan ujaran datuk tentang semutar.
+**Bahan:** Buku Teks asal, salinan petikan atau bahan grafik berkaitan, kad tugasan serta senarai semak PBD.
+**Masa:** 60 minit (boleh diselaraskan mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Semutar Datuk' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kebudayaan, Kesenian dan Estetika; U11: Indah Seni Sepanjang Zaman.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar gambar semutar pada datuk dan tanya fungsi penutup kepala.
+**Murid:** Beri satu ramalan tentang sebab datuk memakai semutar.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Membacakan/menyampaikan maklumat atau dialog berpandukan bahan bertajuk 'Semutar Datuk' dan meminta murid mengenal pasti isi serta sebutan penting.  
-**Murid:** Mendengar/meneliti bahan 'Semutar Datuk'; mencatat tiga maklumat dan menjawab soalan guru secara lisan.
+## Aktiviti 1 — Teliti Buku Teks (15 minit)
+**Guru:** Lakonkan dialog BT m/s 73 dengan soalan kegunaan semutar, bahan kain serta perbezaan dengan tanjak.
+**Murid:** Dengar dan kenal pasti tiga maklumat yang diberikan oleh watak datuk.
 
-## Aktiviti 2 — Aplikasi berpandu lisan (20 minit)
-**Guru:** Mengendalikan simulasi komunikasi berpasangan berdasarkan situasi sebenar dalam 'Semutar Datuk'; mengemukakan soalan susulan dan membetulkan sebutan/laras bahasa.  
-**Murid:** Berbual atau memainkan peranan berpandukan tajuk; memberikan tiga respons yang jelas dan sopan serta membaiki jawapan hasil maklum balas.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Minta murid melakonkan Hadif dan datuk dalam situasi tidak formal serta melengkapkan respons yang tertinggal.
+**Murid:** Jawab tiga soalan tentang fungsi semutar dengan bahasa sopan dan tepat.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (1.1.2 — Mendengar, memahami dan memberikan respons terhadap ujaran yang terdapat dalam situasi tidak formal) menggunakan bukti hasil tugasan: Senarai semak tiga respons lisan: tepat, jelas dan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak ketepatan respons berdasarkan bahan termasuk menahan panas dan mengesat peluh.
+**Murid:** Baiki satu jawapan yang tidak selari dengan bahan.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran lisan yang digunakan dalam 'Semutar Datuk' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan cara memberi respons dalam dialog tidak formal.
+**Murid:** Nyatakan satu perbezaan fungsi semutar dengan tanjak yang disokong teks.
 
-**Nota RPT asal:** Mendengar / Bertutur; Pemerhatian respons lisan
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti khusus Buku Teks:** BT m/s 73 memuatkan dialog semutar serta arahan mendengar, memahami dan memberikan respons (SP 1.1.2).
+**Status QA:** DRAF — halaman, aktiviti dan SP BT disemak. BA, PKJR (jika berkenaan), takwim negeri, format cetakan Word/PDF A4 dan ujian Telegram belum disahkan. Jangan tanda FINAL READY.
