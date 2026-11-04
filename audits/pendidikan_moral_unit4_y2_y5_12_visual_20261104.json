@@ -1,0 +1,237 @@
+{
+  "review_date": "2026-11-04",
+  "scope": "Pendidikan Moral unit 4 Years 2–5",
+  "status": "TEXTBOOK_PAGE_TASKS_VERIFIED_12_RPH; FULL_RELEASE_NOT_CLAIMED",
+  "method": "Direct visual inspection of original Drive textbook scanned PDF pages and correction of 12 RPH lesson activities",
+  "baseline": "210 core RPH, 33 previously source-verified; this batch adds 12 new distinct RPH",
+  "source_map": "Printed pages and 1-based PDF pages; page indices crosschecked with previously verified TOC offset",
+  "source_issues": [
+    {
+      "year": 6,
+      "unit": 4,
+      "lessons": [
+        10,
+        11,
+        12
+      ],
+      "status": "HOLD_SOURCE_MISMATCH",
+      "dskp": "Hargai Keunikan Negara (SK4.0, SP4.1–4.5)",
+      "textbook": "Jasa Tokoh Negara Dikenang, m/s29–38",
+      "decision": "Do not claim textbook task alignment; preserve authoritative DSKP and hold this year for reconciliation"
+    }
+  ],
+  "entries": [
+    {
+      "year": 2,
+      "lesson": 10,
+      "unit": 4,
+      "book_file_id": "1HfrXEKYWSDvjClcArAwdCR5yglIRip2b",
+      "printed": [
+        19,
+        20
+      ],
+      "pdf": [
+        28,
+        29
+      ],
+      "sp_codes": [
+        "4.1",
+        "4.2"
+      ]
+    },
+    {
+      "year": 2,
+      "lesson": 11,
+      "unit": 4,
+      "book_file_id": "1HfrXEKYWSDvjClcArAwdCR5yglIRip2b",
+      "printed": [
+        21,
+        23
+      ],
+      "pdf": [
+        30,
+        32
+      ],
+      "sp_codes": [
+        "4.3",
+        "4.4"
+      ]
+    },
+    {
+      "year": 2,
+      "lesson": 12,
+      "unit": 4,
+      "book_file_id": "1HfrXEKYWSDvjClcArAwdCR5yglIRip2b",
+      "printed": [
+        22,
+        24
+      ],
+      "pdf": [
+        31,
+        33
+      ],
+      "sp_codes": [
+        "4.5"
+      ]
+    },
+    {
+      "year": 3,
+      "lesson": 10,
+      "unit": 4,
+      "book_file_id": "1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl",
+      "printed": [
+        25,
+        27
+      ],
+      "pdf": [
+        31,
+        33
+      ],
+      "sp_codes": [
+        "4.1",
+        "4.2"
+      ]
+    },
+    {
+      "year": 3,
+      "lesson": 11,
+      "unit": 4,
+      "book_file_id": "1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl",
+      "printed": [
+        26,
+        31
+      ],
+      "pdf": [
+        32,
+        37
+      ],
+      "sp_codes": [
+        "4.3",
+        "4.4"
+      ]
+    },
+    {
+      "year": 3,
+      "lesson": 12,
+      "unit": 4,
+      "book_file_id": "1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl",
+      "printed": [
+        28,
+        32
+      ],
+      "pdf": [
+        34,
+        38
+      ],
+      "sp_codes": [
+        "4.5"
+      ]
+    },
+    {
+      "year": 4,
+      "lesson": 10,
+      "unit": 4,
+      "book_file_id": "1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j",
+      "printed": [
+        28,
+        29
+      ],
+      "pdf": [
+        34,
+        35
+      ],
+      "sp_codes": [
+        "4.1",
+        "4.2"
+      ]
+    },
+    {
+      "year": 4,
+      "lesson": 11,
+      "unit": 4,
+      "book_file_id": "1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j",
+      "printed": [
+        30,
+        33
+      ],
+      "pdf": [
+        36,
+        39
+      ],
+      "sp_codes": [
+        "4.3",
+        "4.4"
+      ]
+    },
+    {
+      "year": 4,
+      "lesson": 12,
+      "unit": 4,
+      "book_file_id": "1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j",
+      "printed": [
+        34,
+        36
+      ],
+      "pdf": [
+        40,
+        42
+      ],
+      "sp_codes": [
+        "4.5"
+      ]
+    },
+    {
+      "year": 5,
+      "lesson": 10,
+      "unit": 4,
+      "book_file_id": "1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz",
+      "printed": [
+        30,
+        31
+      ],
+      "pdf": [
+        33,
+        34
+      ],
+      "sp_codes": [
+        "4.1",
+        "4.2"
+      ]
+    },
+    {
+      "year": 5,
+      "lesson": 11,
+      "unit": 4,
+      "book_file_id": "1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz",
+      "printed": [
+        32,
+        34
+      ],
+      "pdf": [
+        35,
+        37
+      ],
+      "sp_codes": [
+        "4.3",
+        "4.4"
+      ]
+    },
+    {
+      "year": 5,
+      "lesson": 12,
+      "unit": 4,
+      "book_file_id": "1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz",
+      "printed": [
+        35,
+        38
+      ],
+      "pdf": [
+        38,
+        41
+      ],
+      "sp_codes": [
+        "4.5"
+      ]
+    }
+  ]
+}
