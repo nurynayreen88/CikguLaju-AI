@@ -3,7 +3,8 @@
 **ID:** BM4-P012 | **RPT 2027:** M04 | **Unit:** 2 — Prihatinnya Kita
 **Tajuk aktiviti:** Mesyuarat Warga Rimba
 **SK:** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.
-**SP:** 5.1.1 (ii) — Memahami dan menggunakan kata nama mengikut konteks tidak formal (**fokus kata nama khas**).
+**SP:** 5.1.1 (ii) — Memahami dan menggunakan kata nama mengikut konteks tidak formal
+**Fokus SP:** Kata nama khas seperti nama watak dan tempat dalam cerita BT m/s 12.
 **Sumber disemak:** Buku Teks BM Tahun 4 SK m/s 12, cerita penghuni hutan bermesyuarat tentang burung bermigrasi. **BA:** Belum disahkan.
 **Objektif:** Murid mengenal pasti sekurang-kurangnya empat kata nama khas dan membina tiga ayat menggunakannya dengan huruf besar yang betul.
 **BBM:** BT m/s 12, kad nama watak/tempat dan jadual pengelasan. **Masa:** 60 minit, boleh disesuaikan.
@@ -25,3 +26,4 @@
 
 **Bukti BT:** m/s 12 secara khusus mengarahkan murid menyenaraikan dan membina ayat menggunakan **kata nama khas**; bukan latihan kata nama umum sahaja.
 **Status:** DRAF — BA, kalendar, cetakan dan Telegram belum disahkan; jangan terbitkan.
+
