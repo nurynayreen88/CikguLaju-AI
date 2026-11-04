@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with: {python-version: '3.11'}
+        with: {python-version: '3.12'}
       - name: Compile both adapter and current application without importing runtime
         run: python -m py_compile english_y4_standalone_render.py app.py
       - name: Source-bound staging lesson 14, rejected lesson 30, all ten teacher-choice, default-off
