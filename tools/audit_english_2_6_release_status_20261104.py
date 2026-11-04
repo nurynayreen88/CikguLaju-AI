@@ -12,6 +12,10 @@ from collections import Counter
 from datetime import date
 import json
 from pathlib import Path
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
 
 from english_y2_standalone_render import apply as year2_rows
 from english_y3_standalone_render import apply as year3_rows
