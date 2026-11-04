@@ -15,7 +15,7 @@
 **Teacher:** Replay or reread the model family text, highlight useful sentence openings and demonstrate the Writing Tip. **Pupils:** Read along, orally rehearse at least two sentences about their families and identify capitals and full stops.
 
 ## Activity 2 — Main task (25 minutes)
-**Teacher:** Read the model text; rehearse family descriptions orally; use the Writing Tip to draft and revise two or more sentences. **Pupils:** Complete the referenced tasks, practising both standards.
+**Teacher:** Read the model text; rehearse family descriptions orally; use the Writing Tip to draft and revise two or more sentences. **Pupils:** Rehearse two family sentences using SB p.11, apply the TB p.27 Writing Tip, draft the description and revise punctuation after feedback.
 
 ## Reinforcement / PBD (10 minutes)
 **CikguLaju original assessment:** Pupils use `materials/lesson_014_writing_family_revision.md` to write three family sentences, check capitals and full stops, and revise one sentence; do not repeat Workbook p.6, Activity 2.

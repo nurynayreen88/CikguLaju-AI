@@ -15,7 +15,7 @@
 **Teacher:** Mime sports to review vocabulary, show cut-up pictures from the referenced page and ask pupils to predict which written description matches each picture. **Pupils:** Name the sports, discuss visual clues and prepare to match pictures with short texts.
 
 ## Activity 2 — Main task (25 minutes)
-**Teacher:** Match cut-up texts and pictures from p.8; read the texts; discuss visual clues; complete Activity 1, grammar box and Activity 2 on can + verb. **Pupils:** Complete the referenced tasks, practising both standards.
+**Teacher:** Match cut-up texts and pictures from p.8; read the texts; discuss visual clues; complete Activity 1, grammar box and Activity 2 on can + verb. **Pupils:** Read cut-up SB p.8 sports texts, match each to a picture, complete Activity 1 and practise can + verb in SB p.9 Activity 2.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Check the main idea and an unfamiliar word inferred using visual clues. **Pupils:** Identify the main idea of a short sports text and infer one word using its picture.

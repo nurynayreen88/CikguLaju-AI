@@ -15,7 +15,7 @@
 **Teacher:** Show character flashcards and elicit 'He/She has got ...'; contrast with 'I have got ...' using pupils' own examples on the board. **Pupils:** Say and write one first-person and one third-person sentence before completing the worksheet.
 
 ## Activity 2 — Main task (25 minutes)
-**Teacher:** Review has got/have got using character flashcards; complete worksheet Sections A and B; practise can/can't and Can you? questions. **Pupils:** Complete the referenced tasks, practising both standards.
+**Teacher:** Review has got/have got with character flashcards, guide SOW worksheet Sections A and B, then model can/can't and Can you? exchanges before guiding worksheet Section C and punctuation review. **Pupils:** Compare I have got with he/she has got, complete SOW worksheet Sections A–C, ask and answer 'Can you...?' and check punctuation.
 
 ## Reinforcement / PBD (10 minutes)
 **Workbook assessment:** Pupils use Workbook p.9, Activity 5, to say sentences with 'has got' and 'can' from the pictures.

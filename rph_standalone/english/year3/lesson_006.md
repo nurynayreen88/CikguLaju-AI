@@ -15,7 +15,7 @@
 **Teacher:** Display character flashcards, ask 'What has he/she got?', and model a sentence using word and punctuation cards, including capitals, full stops and apostrophes. **Pupils:** Listen for character details, arrange a model sentence and explain its punctuation.
 
 ## Activity 2 — Core lesson task (25 minutes)
-**Teacher:** Follow SB p.7 Activity 3; model a sentence with word and punctuation cards; pupils write about a character, exchange, check punctuation and rewrite. **Pupils:** Complete the referenced tasks, collaborate where appropriate and practise the main and complementary skills.
+**Teacher:** Follow SB p.7 Activity 3; model a sentence with word and punctuation cards; pupils write about a character, exchange, check punctuation and rewrite. **Pupils:** Write one SB p.7 Activity 3 character sentence, exchange it, check capitals, full stops and apostrophes, then rewrite after feedback.
 
 ## Reinforcement / PBD (10 minutes)
 **Teacher:** Check two details from listening and a correctly punctuated sentence. **Pupils:** Identify two spoken character details and write one sentence with a capital letter and full stop.
