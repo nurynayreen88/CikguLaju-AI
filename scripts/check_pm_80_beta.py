@@ -2,9 +2,12 @@
 """Moral 80% beta release gate; offline source-backed RPH and paid PDF routes."""
 from __future__ import annotations
 import os
+import sys
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from types import SimpleNamespace
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from web.pendidikan_moral_80_runtime import load_candidate, adapt_rows, install as install_rows
 from rpt_2027.pendidikan_moral.telegram_downloads import (
