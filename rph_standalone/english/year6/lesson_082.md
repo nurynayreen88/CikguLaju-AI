@@ -7,32 +7,32 @@
 **Language focus:** Suffixes (-tion; -sion); spelling of recently learned vocabulary  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 70-72; Teacher Book page 116  
-**Learning objective:** Spell at least 8 of 10 relevant high-frequency words correctly while writing about making a familiar product.  
-**PBD evidence:** Spelling check: 8 of 10 target words correct in independent sentences.
+**Learning objective:** Spell eight of ten jeans-production words accurately and distinguish the endings -sion and -tion by listening and pronunciation.  
+**PBD evidence:** Eight correctly spelled words in writing (Writing 4.3.2), and four recognised or produced -sion/-tion endings (Listening 1.1.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show four process-stage pictures and ask: “How is this useful item made?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Recall the jeans-production text from PB pp.70–71.  
+**Pupils:** Say one production step and spell a key word.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model a short response linked to “How is this useful item made?”. Highlight useful language: Suffixes (-tion; -sion); spelling of recently learned vocabulary.  
-**Pupils:** Identify the model’s key ideas and rehearse three expressions related to making a familiar product.
+**Teacher:** Follow TB p.116 Activity 2; answer details from memory before rereading.  
+**Pupils:** Compare remembered facts with a partner and check the source.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Select ten high-frequency words from the actual lesson material; model checking spelling within sentences.  
-**Pupils:** Write original sentences with the 10 selected words; self-check against the source before finalising.
+**Teacher:** Use TB p.116 Working with Words to model -sion and -tion endings.  
+**Pupils:** Listen to six modelled words and classify the two contrasting sounds.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner. Listen to a partner or a short approved utterance and identify one meaningful detail.
+**Teacher:** Distribute the SOW choice worksheet and ask pupils to design a tricky-word spelling game.  
+**Pupils:** Complete an individual spelling task, create word clues and swap games with another pair.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check spelling in context and listen to four accurate suffix pronunciations.  
+**Pupils:** Correct two words and explain how their endings are pronounced.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How is this useful item made?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Review one tricky word in a short class pronunciation game.  
+**Pupils:** Say and spell a word ending in -sion or -tion.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

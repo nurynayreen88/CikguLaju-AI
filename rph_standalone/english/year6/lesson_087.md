@@ -7,32 +7,32 @@
 **Language focus:** Passive voice (e.g. Water is added to…); linking words (Sequencing: first, second, next, then, finally)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 76-77; Teacher Book pages 124  
-**Learning objective:** Connect at least 8 sentences into two coherent paragraphs related to making a familiar product.  
-**PBD evidence:** Two logically organised paragraphs, 8 sentences and at least two appropriate linking words.
+**Learning objective:** Describe how pasta is made using a clearly ordered passive-voice paragraph with appropriate sequencing words and punctuation.  
+**PBD evidence:** An ordered explanation of pasta production (Writing 4.2.5) with two correctly placed commas or sentence punctuation choices (Writing 4.3.1).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show four process-stage pictures and ask: “How is this useful item made?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Review pasta and food-production vocabulary.  
+**Pupils:** Name two ingredients and one process verb.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Model a short response linked to “How is this useful item made?”. Highlight useful language: Passive voice (e.g. Water is added to…); linking words (Sequencing: first, second, next, then,….  
-**Pupils:** Identify the model’s key ideas and rehearse three expressions related to making a familiar product.
+**Teacher:** Use PB pp.76–77/TB p.124 to introduce difficult words and match them to definitions.  
+**Pupils:** Check assigned words in a dictionary and explain one to a partner.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Demonstrate paragraph breaks, topic sentences and basic coordinating connectors using the cited task.  
-**Pupils:** Plan and write two linked paragraphs containing at least 8 sentences in total.
+**Teacher:** Follow TB p.124 Activity 1 and inspect the pasta infographic.  
+**Pupils:** Order pictures and write passive sentences for four production stages.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Give feedback on content, grammar and punctuation using a concise checklist. Check the complementary skill using the short task.  
-**Pupils:** Re-read, revise two points, then share the final writing with a partner. Write 2 connected sentences reflecting the lesson language.
+**Teacher:** Use PB p.77 Look! sequencing box and TB p.124 Activities 2–3.  
+**Pupils:** Plan an introduction and write a short coherent explanation using first, next and finally.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check order, passive forms and punctuation, including commas after introductory linkers.  
+**Pupils:** Correct one unclear sentence and a sequencing punctuation error.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How is this useful item made?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Invite pairs to explain the pasta process without reading every line.  
+**Pupils:** Describe two consecutive steps in the right order.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.

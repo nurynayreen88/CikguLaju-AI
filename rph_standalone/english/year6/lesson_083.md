@@ -7,32 +7,32 @@
 **Language focus:** Passive voice: Statements (e.g. be made from..)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book page 73; Teacher Book pages 118-119; visuals / approved read-aloud script (audio track only if verified)  
-**Learning objective:** Identify at least 5 specific facts from a spoken passage about making a familiar product with little or no support.  
-**PBD evidence:** Five correct details from the oral text; note independent/repeated support.
+**Learning objective:** Listen to an accurate reading of PB pp.70–71 and identify three passive-voice facts; compare sentence forms before completing the PB p.73 passive exercise.  
+**PBD evidence:** Three correct details from teacher-read text (Listening 1.2.2) and two correctly interpreted passive-voice sentences (Reading 3.2.2).  
 
 ## Set induction (5 minutes)
-**Teacher:** Show four process-stage pictures and ask: “How is this useful item made?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Use TB p.118 Tic-tac-toe with materials or process words.  
+**Pupils:** Name one finished item and its source material.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Pre-teach materials, tools, process and sequence; display four process-stage pictures and ask pupils to predict what they may hear. Emphasise the language focus: Passive voice: Statements (e.g. be made from..).  
-**Pupils:** Predict two likely words and say why they match the context.
+**Teacher:** Follow TB p.118 Activity 1; show how is made and was made describe a process.  
+**Pupils:** Find two passive forms in the written PB pp.70–71 passage.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Use the cited listening task with a confirmed audio track or an approved teacher read-aloud; give pupils a five-item grid.  
-**Pupils:** Listen for details and complete five information questions before paired comparison.
+**Teacher:** Read a selected original passage aloud twice, asking pupils to count and record passive verbs.  
+**Pupils:** Listen without reading first, then note three passive verbs and facts.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Check the grid with prompts about making a familiar product, and replay/read relevant parts where needed. Check the complementary skill using the short task.  
-**Pupils:** Compare answers with a partner, identify one correction and repeat useful key phrases. Locate one additional supporting clue in the cited reading material.
+**Teacher:** Distribute paired PB p.73 Activity 2 sentence worksheets A/B, then guide TB p.119 Activity 3.  
+**Pupils:** Read one sentence aloud for a partner to judge and fill the passive gaps.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Assess three heard details and two supported passive comparisons.  
+**Pupils:** Explain why one passive sentence fits and correct one gap.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “How is this useful item made?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Review a household product and say how it is made.  
+**Pupils:** Produce one correct passive statement about the item.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
