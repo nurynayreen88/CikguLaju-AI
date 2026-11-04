@@ -11,8 +11,8 @@
 **PBD evidence:** Time/structure checklist, complete narration and 2 follow-up responses.
 
 ## Set induction (5 minutes)
-**Teacher:** Show teacher-selected topic visuals and ask: “What can you say about this topic?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Model a brief personal-experience opening and invite pupils to identify who, where and when before speaking.  
+**Pupils:** Name the three opening details and tell a partner which experience they will describe.
 
 ## Activity 1 — Prepare (10 minutes)
 **Teacher:** Model an appropriate experience story with opening, sequence and ending.  
@@ -31,8 +31,8 @@
 **Pupils:** Show the evidence, correct a response and complete an exit check.
 
 ## Closure (4 minutes)
-**Teacher:** Ask “What can you say about this topic?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Invite a second, improved opening after partner feedback and ask for one specific speaking target.  
+**Pupils:** Deliver a clearer opening sentence and choose one next-step target for their narration.
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
