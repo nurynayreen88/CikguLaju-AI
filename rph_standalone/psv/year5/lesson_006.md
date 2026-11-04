@@ -1,34 +1,22 @@
 # RPH Pendidikan Seni Visual Tahun 5 — PdP 006
-
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
-
-**Bidang:** Menggambar  
-**Jenis/Tajuk:** Poster dan Montaj — Sayangilah Habitat Kita
-**Unit rujukan 2026:** Unit 2 — Sayangilah Habitat Kita  
-**Fokus:** Lakar dan pilih media  
+**Status:** DRAF SEMAK  
+**Unit:** 2 — Sayangilah Habitat Kita  
+**Fokus:** Percubaan teknik dan lakaran | **Teknik:** Poster dan montaj  
 **SK:** 2.1; 3.1  
 **SP:** 2.1.2; 3.1.1  
-**Teknik:** gabungan poster dan montaj  
-**Bahasa seni visual:** rupa, warna, penegasan  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** majalah, poster, gam
+**Buku Teks:** Pendidikan Seni Visual Tahun 5, ms 16–17 (unit ms 14-21)  
+**BBM:** gambar ikan bayan, kertas lukisan, cat poster, gam  
+**Tempoh:** 60 minit
 
-## Objektif pembelajaran
-Murid dapat menyiapkan dua lakaran Sayangi Sungai dan memilih satu lakaran berdasarkan rupa, warna, penegasan.
+## Objektif dan kriteria kejayaan
+Murid dapat menghasilkan dua sampel dan satu lakaran pilihan untuk Sayangilah Habitat Kita. Evidens: dua sampel serta lakaran berlabel.
 
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Sayangi Sungai. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
-
-**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Sayangi Sungai. Murid menyenaraikan alat serta bahan yang diperlukan.
-
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal poster Selamatkan Ikan Bayan, menguji gabungan poster dan montaj pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
-
-**Pengukuhan/Pentaksiran (10 minit):** Dua lakaran, satu ujian media dan alasan pemilihan yang merujuk unsur seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
-
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
-
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
-
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan tema Sayangilah Habitat Kita; murid menjelaskan satu pemerhatian visual.
+**Aktiviti 1 (15 minit) — Demonstrasi:** Guru membuat demonstrasi media gambar ikan bayan, kertas lukisan, cat poster, gam; murid membanding dua kemungkinan teknik serta membuat lakaran.
+**Aktiviti 2 (25 minit) — Amali:** Murid melakar bentuk akhir dan meneroka dua kaedah: Susun dua pilihan slogan dan gambar habitat laut, periksa kejelasan hierarki poster. Murid memberi sebab pilihan.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menilai dua sampel serta lakaran berlabel dan merekod kemajuan PBD.
+**Penutup (5 minit):** Murid menyatakan satu kemahiran dan menyimpan karya serta membersihkan ruang.
+**Pembezaan:** Templat langkah bergambar bagi sokongan; murid mahir membanding pilihan reka bentuk.
+**Keselamatan:** Gunakan bahan tidak toksik dan alat tumpul dengan pengawasan guru.
+**Rujukan:** [DSKP Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [Buku Teks Tahun 5](https://anyflip.com/gygr/pity/basic). Aktiviti adalah adaptasi CikguLaju.

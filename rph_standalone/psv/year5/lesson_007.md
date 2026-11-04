@@ -1,34 +1,22 @@
 # RPH Pendidikan Seni Visual Tahun 5 — PdP 007
-
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
-
-**Bidang:** Menggambar  
-**Jenis/Tajuk:** Poster dan Montaj — Sayangilah Habitat Kita
-**Unit rujukan 2026:** Unit 2 — Sayangilah Habitat Kita  
-**Fokus:** Hasilkan karya  
+**Status:** DRAF SEMAK  
+**Unit:** 2 — Sayangilah Habitat Kita  
+**Fokus:** Penghasilan karya utama | **Teknik:** Poster dan montaj  
 **SK:** 3.1  
 **SP:** 3.1.1  
-**Teknik:** gabungan poster dan montaj  
-**Bahasa seni visual:** rupa, warna, penegasan  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** majalah, poster, gam
+**Buku Teks:** Pendidikan Seni Visual Tahun 5, ms 18–19 (unit ms 14-21)  
+**BBM:** gambar ikan bayan, kertas lukisan, cat poster, gam  
+**Tempoh:** 60 minit
 
-## Objektif pembelajaran
-Murid dapat menghasilkan poster Selamatkan Ikan Bayan dengan gabungan poster dan montaj, sekurang-kurangnya dua aspek rupa, warna, penegasan.
+## Objektif dan kriteria kejayaan
+Murid dapat menghasilkan karya Sayangilah Habitat Kita dengan teknik poster dan montaj dan mematuhi keselamatan. Evidens: hasil karya dengan teknik yang jelas dan penggunaan alatan selamat.
 
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Sayangi Sungai. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
-
-**Aktiviti 1 (15 minit) — Hasilkan karya:** Guru menyemak lakaran terpilih, menunjukkan urutan penghasilan dan mengingatkan keselamatan alat majalah, poster, gam. Murid menyediakan bahan serta menetapkan kriteria karya.
-
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan poster Selamatkan Ikan Bayan mengikut lakaran menggunakan gabungan poster dan montaj, memperbaiki pemilihan media dan susunan berdasarkan bimbingan guru. Murid melabelkan karya dan menyimpan dengan kemas.
-
-**Pengukuhan/Pentaksiran (10 minit):** Karya/proses menunjukkan teknik yang betul, ciri rupa, warna, penegasan, keputusan kreatif dan penggunaan alat selamat. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
-
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
-
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
-
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view) dan [indeks RPT PSV 2026](https://sites.google.com/moe-dl.edu.my/sekolah-kebangsaan-haji-mahmud/kurikulum/panitia-pendidikan-seni-visual/rpt-psv). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan tema Sayangilah Habitat Kita; murid menjelaskan satu pemerhatian visual.
+**Aktiviti 1 (15 minit) — Demonstrasi:** Guru menyemak lakaran dan bahan; murid menyusun urutan kerja lalu menjalankan amali.
+**Aktiviti 2 (25 minit) — Amali:** Murid menghasilkan karya berasaskan lakaran: Hasilkan poster Selamatkan Ikan Bayan dengan gabungan montaj dan tulisan. Guru menilai prosedur dan kualiti.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menilai hasil karya dengan teknik yang jelas dan penggunaan alatan selamat dan merekod kemajuan PBD.
+**Penutup (5 minit):** Murid menyatakan satu kemahiran dan menyimpan karya serta membersihkan ruang.
+**Pembezaan:** Templat langkah bergambar bagi sokongan; murid mahir membanding pilihan reka bentuk.
+**Keselamatan:** Gunakan bahan tidak toksik dan alat tumpul dengan pengawasan guru.
+**Rujukan:** [DSKP Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [Buku Teks Tahun 5](https://anyflip.com/gygr/pity/basic). Aktiviti adalah adaptasi CikguLaju.
