@@ -119,7 +119,7 @@ class PSVSourceOrderTests(unittest.TestCase):
             with self.subTest(pdp=n):
                 self.assertEqual(row["PdP"], f"{n:03d}")
                 rph = (ROOT / row["Fail RPH"]).read_text(encoding="utf-8")
-                m = re.search(r"## Objektif dan kriteria kejayaan\nMurid dapat (.*?)\. Evidens: (.*?)\.", rph)
+                m = re.search(r"## Objektif dan kriteria kejayaan\nMurid dapat (.*?)\. (?:Evidens|Kriteria kejayaan): (.*?)\.", rph)
                 self.assertIsNotNone(m)
                 self.assertEqual(row["Objektif"], "Murid dapat " + m.group(1))
                 self.assertEqual(row["Evidens PBD"], m.group(2))
