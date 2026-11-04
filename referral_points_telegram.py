@@ -84,21 +84,33 @@ def install(ns):
         return f"https://t.me/{username}?start=rp_{code}" if username else ""
 
     def show_referral(uid):
+        # Recheck the member allowlist on every click, including old buttons.
         row = member(uid)
-        if not row or not row.get("enabled"):
+        if not row or row.get("enabled") is not True:
             return send(uid, "🔒 Program referral tertutup tidak tersedia untuk akaun ini.")
         link = link_for(uid, row["referral_code"])
         if not link:
             return send(uid, "⚠️ Pautan belum dapat dijana. Sila cuba lagi.")
         total, paid, points = summary(uid)
+        share = ("https://t.me/share/url?url=" + quote(link, safe="")
+                 + "&text=" + quote(
+                     "Saya sedang menggunakan CikguLaju AI untuk membantu penyediaan RPH. Cuba pautan ini:",
+                     safe=""
+                 ))
+        buttons = [
+            [{"text": "📤 Kongsi Pautan", "url": share}],
+            [{"text": "📋 Salin Pautan", "copy_text": {"text": link}}],
+            [{"text": "🏠 Menu Utama", "callback_data": "home"}],
+        ]
         return send(uid,
-            "🔒 <b>REFERRAL PERIBADI CIKGULAJU</b>\\n\\n"
-            f"🔗 <code>{link}</code>\\n\\n"
-            f"👥 Pendaftaran melalui pautan: <b>{total}</b>\\n"
-            f"✅ Bayaran layak disahkan: <b>{paid}</b>\\n"
-            f"⭐ Jumlah mata: <b>{format_points(points)}</b>\\n\\n"
-            "Mata hanya diberikan selepas bayaran disahkan admin. "
-            "Mata bukan kredit RPH dan tidak boleh ditebus sehingga program dibuka.")
+            "🎁 <b>REFERRAL SAYA</b>\n\n"
+            f"🔗 <code>{link}</code>\n\n"
+            f"👥 Rakan mendaftar: <b>{total}</b>\n"
+            f"✅ Pembayaran layak: <b>{paid}</b>\n"
+            f"⭐ Mata terkumpul: <b>{format_points(points)}</b>\n\n"
+            "Ganjaran ialah 20% daripada bayaran pertama yang disahkan. "
+            "Mata dikumpul dahulu dan belum boleh ditebus.",
+            buttons)
 
     def manage_member(admin, uid, allow):
         if not ns["_is_admin"](admin):
@@ -174,7 +186,7 @@ def install(ns):
                         send(int(refs[0]["referrer_user_id"]),
                              f"🎉 Tahniah! +{points} mata referral telah direkodkan "
                              "selepas pembayaran rakan disahkan. "
-                             "Taip /mata untuk semak jumlah terkini.")
+                             "Tekan 🎁 Referral Saya pada menu untuk semak mata.")
                 except Exception:
                     print("PRIVATE REFERRAL notification deferred", flush=True)
         except Exception as exc:
@@ -182,6 +194,12 @@ def install(ns):
             print("PRIVATE REFERRAL award error:", type(exc).__name__, flush=True)
 
     def callback(cid, d):
+        if str(d) == "private_referral_home":
+            try:
+                return show_referral(cid)
+            except Exception as exc:
+                print("PRIVATE REFERRAL menu callback error:", type(exc).__name__, flush=True)
+                return send(cid, "⚠️ Referral belum dapat dibuka. Cuba semula.")
         if str(d) == "referral_vip":
             # Close the old public registration-for-VIP rewards while this private
             # replacement is active. Historical awards are preserved.
@@ -253,6 +271,7 @@ def install(ns):
             return ns["jsonify"]({"ok":True})
         return previous_webhook()
 
+    ns["_private_referral_member"] = member
     ns["callback"] = callback
     app.view_functions["webhook"] = webhook
     return True

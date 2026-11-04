@@ -244,3 +244,13 @@ try:
 except Exception as _moralrpt_exc:
     MORAL_RPT_2027_TELEGRAM_ACTIVE = False
     print("Moral RPT 2027 download route unavailable:", repr(_moralrpt_exc), flush=True)
+
+# Invite-only referral navigation, installed last so all existing menu features
+# remain intact. Visible only to users previously approved by /refadd.
+try:
+    from web.private_referral_menu_runtime import install as install_private_referral_buttons
+    PRIVATE_REFERRAL_MENU_BUTTONS_ACTIVE = install_private_referral_buttons(telegram_runtime)
+except Exception as _private_referral_menu_exc:
+    PRIVATE_REFERRAL_MENU_BUTTONS_ACTIVE = False
+    print("Private referral menu integration unavailable:",
+          type(_private_referral_menu_exc).__name__, flush=True)
