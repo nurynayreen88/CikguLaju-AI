@@ -6,7 +6,7 @@
 **Tajuk aktiviti:** Mesin Lipat Pakaian + PKJR  
 **Standard Kandungan (SK):** 2.3 Membaca dan mengapresiasi karya sastera dan bukan sastera.  
 **Standard Pembelajaran (SP):** 2.3.2 — Membaca karya sastera, dan karya bukan sastera dengan gaya penyampaian yang sesuai  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 107  
+**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 122  
 **Fokus:** bacaan — Mesin Lipat Pakaian  
 **Objektif PdP:** Murid dapat membaca petikan bertajuk 'Mesin Lipat Pakaian' dengan sesuai dan mengenal pasti sekurang-kurangnya tiga maklumat/idea yang disokong teks.  
 **Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
