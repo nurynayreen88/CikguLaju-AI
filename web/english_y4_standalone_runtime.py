@@ -205,6 +205,64 @@ def _materials(meta):
     return _plain(text)
 
 
+
+_SKILL_ACTIONS = {
+    "1": re.compile(r"\b(listen|heard|audio|recording|spoken|sound|identify|answer)\b", re.I),
+    "2": re.compile(r"\b(speak|ask|answer|talk|share|describe|role.play|discuss|survey|present|dialogue)\b", re.I),
+    "3": re.compile(r"\b(read|text|clue|infer|detail|story|identify|locate|article|comprehension)\b", re.I),
+    "4": re.compile(r"\b(write|draft|paragraph|sentence|punctuat|spell|edit|cursive|revis|written)\w*", re.I),
+    "5": re.compile(r"\b(create|draw|story|perform|read|character|act|role|retell|illustrat)\w*", re.I),
+}
+_GENERIC_ACTION = re.compile(
+    r"\b(?:as directed|complete the task|complete the activities|"
+    r"practise the language|respond to questions|complete listening tasks|"
+    r"review their answers|complete workbook)\b", re.I
+)
+
+
+def _pupil_action_lines(text):
+    """Only pupil actions already present in the approved-for-preview source."""
+    actions = []
+    for match in re.finditer(r"(?im)^Pupils:\s*([^\n]+)", str(text)):
+        part = match.group(1).strip()
+        part = re.split(r"\s+(?=(?:The teacher|Pupils:|Teacher:)\b)", part)[0]
+        part = re.split(r"(?<=[.!?])\s+(?=[A-Z])", part, maxsplit=1)[0]
+        part = part.rstrip(" .;")
+        if 20 <= len(part) <= 280 and not re.search(
+            r"(?i)\b(?:pending|unverified|QA status|teacher approval)\b", part
+        ):
+            actions.append(part)
+    return actions
+
+
+def _draft_objective_from_source(sow, steps):
+    """Draft goal from concrete pupils' actions, never an invented mastery count.
+
+    Original objectives, when present, always take precedence. The derived
+    sentence is explicitly labelled as suggested, not claimed as official SOW.
+    """
+    skill = str(sow.get("main_ls") or "")[:1]
+    pattern = _SKILL_ACTIONS.get(skill)
+    ranked = []
+    for priority, section in enumerate(("pbd", "activity2", "activity1", "activity3", "closure")):
+        for action in _pupil_action_lines(steps.get(section, "")):
+            score = (4 if pattern and pattern.search(action) else 0)
+            score += 2 if re.search(r"\b(?:two|three|four|five|[2-9])\b", action, re.I) else 0
+            score += 1 if 35 <= len(action) <= 155 else 0
+            score -= 3 if _GENERIC_ACTION.search(action) else 0
+            ranked.append((score, -priority, action))
+    if not ranked:
+        return None
+    best = max(ranked)[2].strip()
+    if len(best) > 190:
+        best = best[:190].rsplit(" ", 1)[0].rstrip(",;:-")
+    if len(best) < 20:
+        return None
+    return ("Suggested from source pupil task: By the end of the lesson, "
+            "pupils can " + best[0].lower() + best[1:].rstrip(".") + ".")
+
+
+
 def adapt_rows(state, rows, *, root=Y4_ROOT, index_path=OFFICIAL_SOW_INDEX):
     """Modify only validated Year 4 lesson fields used by Telegram Word/PDF."""
     number = _selected_y4_lesson(state)
@@ -240,6 +298,8 @@ def adapt_rows(state, rows, *, root=Y4_ROOT, index_path=OFFICIAL_SOW_INDEX):
     result["TAJUK"] = topic + (" — " + sow["focus"] if sow.get("focus") else "")
 
     objective = meta.get("learning objectives") or meta.get("learning objective")
+    if not objective:
+        objective = _draft_objective_from_source(sow, steps)
     if objective:
         result["OBJEKTIF PEMBELAJARAN"] = _plain(objective)
         result["KRITERIA KEJAYAAN"] = _plain(meta.get("success evidence") or objective)
