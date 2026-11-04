@@ -19,15 +19,15 @@
 **Pupils:** Read and complete the written Activity 1 task.
 
 ## Reinforcement and PBD (10 minutes)
-**Teacher:** Follow TB Activity 2 using CD1 Track 29; pupils respond to supported questions and check spelling.
-**Pupils:** Listen to Track 29, answer the spoken questions and check spelling in their written chore cards and Activity 1 responses. The teacher assesses spelling accuracy in the written work for main Writing SP 4.3.2 and comprehension of the recording for complementary Listening SP 1.2.5. As optional written practice, pupils complete Workbook p.15, Activity 3: use Phil and Gina's timetable to write sentences with *have to* or *don't have to*. The teacher checks spelling and correct modal forms. This written task needs no extra audio; Student's Book p.20 Activity 2 remains a separate listening task whose CD1 Track 29 content must be checked before audio delivery.
+**Teacher:** Keep Student's Book p.20 Activity 2 audio on hold: neither CD1 nor CD2 Track 29 may be played or sent until the spoken words and exact Telegram route are independently verified. For a safe interim **reading/speaking practice only**, guide pairs to read the printed prompts and ask/answer them; then check the spelling of chore cards and Activity 1. After track approval, use the exact verified Class CD1 Track 29 source cited by Teacher's Book p.39 to conduct the genuine listening task.
+**Pupils:** Before audio approval, read the printed questions, practise asking/answering in pairs and check spelling in their chore cards and written Activity 1 answers. **Do not record this silent/pair-reading alternative as evidence of Listening SP 1.2.5.** When the correct recording is independently approved and available, listen and respond to the supported questions for separate Listening PBD. As optional written practice, complete Workbook p.15 Activity 3: use Phil and Gina's timetable to write sentences with *have to* or *don't have to*. This Workbook task needs no audio and supports main Writing SP 4.3.2; its success does not confirm the unverified listening track.
 
 ## Closure (5 minutes)
 **Teacher:** Use the optional hopscotch review if time permits, then ask pupils to identify and correct one chore spelling error.
 **Pupils:** Correct one spelling error.
 
 ## Assessment and differentiation
-**PBD:** Check task-specific responses and note achievement of Writing 4.3.2 and Listening 1.2.5.  
+**PBD:** Assess Writing SP 4.3.2 from correctly spelled chore cards, Activity 1 and optional Workbook p.15 Activity 3. **Listening SP 1.2.5 is pending**; do not mark it achieved from reading/role-play. Check it separately only after the correct audio content and delivery route have been independently verified.  
 **Support:** Use mixed-ability pairs and targeted feedback on high-frequency spelling.
 
 **SOW source:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
