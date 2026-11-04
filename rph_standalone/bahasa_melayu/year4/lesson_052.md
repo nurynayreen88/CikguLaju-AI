@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 052
 
-**ID:** BM4-P052  
-**Minggu RPT 2027:** M13 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Keselamatan; U9: Patuh dan Selamat  
-**Tajuk aktiviti:** Makanan Selamat  
-**Standard Kandungan (SK):** 3.3 Menghasilkan penulisan.  
-**Standard Pembelajaran (SP):** 3.3.1 — Menulis draf dan menghasilkan penulisan imaginatif.  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 59  
-**Fokus:** tulisan — Makanan Selamat  
-**Objektif PdP:** Murid dapat menghasilkan sekurang-kurangnya tiga ayat berkaitan 'Makanan Selamat' yang menepati kemahiran penulisan dalam SP.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P052
+**Minggu RPT 2027:** M13 (tarikh PdP sebenar ditentukan oleh sekolah)
+**Tema/Unit:** Keselamatan; U9: Patuh dan Selamat
+**Tajuk aktiviti:** Makanan Selamat
+**Standard Kandungan (SK):** 3.3 Menghasilkan penulisan.
+**Standard Pembelajaran (SP):** 3.3.1 — Menulis draf dan menghasilkan penulisan imaginatif dan deskriptif
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 59. **BA:** Halaman serta latihan asal belum disahkan.
+**Konteks bahan:** Rangka karangan keselamatan makanan dalam BT tentang mencuci tangan dan peralatan, mengasingkan makanan, menggunakan bekas sesuai dan memasak dengan sempurna.
+**Objektif PdP:** Pada akhir PdP, murid dapat menyusun draf enam bahagian dan menulis karangan bertema keselamatan makanan berdasarkan frasa yang diberi.
+**Bahan:** Buku Teks, kad tugasan mengikut aktiviti, bahan Peta i-Think jika dinyatakan dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Makanan Selamat' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Keselamatan; U9: Patuh dan Selamat.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar frasa 'Makanan Selamat' dan poster berkaitan dalam BT.
+**Murid:** Sebut satu amalan yang memastikan makanan selamat.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan contoh ayat/perenggan yang relevan dengan 'Makanan Selamat' dan memodelkan langkah menyusun isi serta menulis mengikut Menulis draf dan menghasilkan penulisan imaginatif.  
-**Murid:** Mengenal pasti kata kunci dan membina rangka/ayat berdasarkan maklumat tajuk 'Makanan Selamat'.
+## Aktiviti 1 — Teliti Buku Teks (15 minit)
+**Guru:** Bimbing murid meneliti rangka pendahuluan, empat isi dan penutup, kemudian tunjuk cara memisahkan isi.
+**Murid:** Padankan setiap frasa dalam bahan dengan langkah keselamatan makanan yang sesuai.
 
-## Aktiviti 2 — Aplikasi berpandu tulisan (20 minit)
-**Guru:** Membimbing penulisan individu berdasarkan gambar atau petikan sumber; meminta semakan kandungan, tanda baca dan ejaan.  
-**Murid:** Menulis tiga ayat atau perenggan pendek yang bersesuaian dengan SP, kemudian menyuntingnya berdasarkan senarai semak.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Modelkan pengembangan satu isi menjadi dua ayat jelas berasaskan rangka.
+**Murid:** Hasilkan draf enam bahagian lalu tulis karangan pendek dengan penanda wacana.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (3.3.1 — Menulis draf dan menghasilkan penulisan imaginatif.) menggunakan bukti hasil tugasan: Hasil penulisan: isi menepati tajuk/SP, ayat jelas dan ejaan/tanda baca betul. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak urutan isi, ketepatan fakta berdasarkan bahan, struktur ayat, ejaan dan tanda baca.
+**Murid:** Baiki sekurang-kurangnya dua ayat yang kabur atau terkeluar daripada tajuk.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tulisan yang digunakan dalam 'Makanan Selamat' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kepentingan merangka karangan dan keselamatan makanan.
+**Murid:** Nyatakan satu amalan yang boleh diamalkan di rumah.
 
-**Nota RPT asal:** Menulis; Semakan bahan bertulis
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti sumber BT:** BT m/s 59 mengarahkan membina ayat berdasarkan draf untuk menghasilkan karangan makanan selamat; SP 3.3.1.
+**Status QA:** DRAF — aktiviti/halaman Buku Teks dipadankan, tetapi BA, semakan PKJR, takwim negeri, cetakan Word/PDF A4 dan ujian Telegram masih belum lulus. Tidak boleh diterbitkan sebagai FINAL READY.

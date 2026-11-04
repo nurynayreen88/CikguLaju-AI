@@ -439,6 +439,96 @@
       "ba_exercise_verified": false
     },
     {
+      "year": 4,
+      "pdp": 51,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "58",
+      "proof": "BT m/s 58 mengarahkan melagukan syair Nasihat Ayah Bonda dan melengkapkan Peta Bulatan; SP 2.3.1.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 52,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "59",
+      "proof": "BT m/s 59 mengarahkan membina ayat berdasarkan draf untuk menghasilkan karangan makanan selamat; SP 3.3.1.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 53,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "60",
+      "proof": "BT m/s 60 mengajar SP 5.1.4(i) kata hubung dan meminta murid menulis ayat menggunakan kata hubung.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 54,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "61",
+      "proof": "BT m/s 61 meminta membaca rencana dan menyenaraikan kata sendi nama; SP 5.1.4(ii).",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 55,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "62",
+      "proof": "BT m/s 62 mempunyai petikan Angkatan Pertahanan Awam Malaysia dan arahan imlak perenggan; SP 3.2.4.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 56,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "63",
+      "proof": "BT m/s 63 dilabel Pengayaan, memuatkan petikan Keselamatan di Sekolah serta arahan memindahkan maklumat ke Peta Pelbagai Alir; kegiatan ini aktiviti tambahan, bukan PdP wajib rasmi yang baharu.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 57,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "64",
+      "proof": "BT m/s 64 dilabel Bacaan Luas dengan petikan Tempat Kerja Selamat; digunakan sebagai sokongan SP 2.1.1, bukan aktiviti wajib tambahan yang direka.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 58,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "66",
+      "proof": "BT Tahun 4 SK meletakkan aktiviti Salam Diberikan Tetamu Dihormati pada halaman bercetak 66, dengan SP 1.1.1; m/s 65 ialah pengenalan tema.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 59,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "67",
+      "proof": "BT m/s 67 memberi e-mel Dayang Rosni tentang etnik Lun Bawang serta arahan membaca dan mengisi Peta Pokok; SP 2.3.1.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 60,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "68–69",
+      "proof": "BT m/s 68–69 memuatkan teks lawatan Kampung Chetti Melaka dengan kesalahan ejaan/tanda baca/imbuhan dan arahan mengedit serta memurnikan mengikut SP 3.3.2.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
       "year": 5,
       "pdp": 45,
       "book": "BT Tahun 5 SK",
@@ -485,7 +575,7 @@
     }
   ],
   "unresolved": [
-    "All remaining 775 RPH need specific textbook page/activity review",
+    "All remaining 765 RPH need specific textbook page/activity review",
     "All Buku Aktiviti exercises not verified globally",
     "Year 2 29 HOLD incl PKJR/assessment/duplicates",
     "Year 4–6 496 RPH require full academic audit",
@@ -502,18 +592,13 @@
   "reviewed_seventeen_not_ready": true,
   "current_audit_batch": {
     "year": 4,
-    "scope": "036–050 excluding PdP 037, 041 and 047",
-    "reviewed_rph": 12,
-    "explicit_hold": [
-      37,
-      41,
-      47
-    ],
+    "pdp_range": "051–060",
+    "reviewed_rph": 10,
     "changed_rpt_formats": [
       "Markdown",
       "HTML"
     ],
-    "evidence": "Original Book Teks Tahun 4 SK and DSKP via Google Drive",
+    "evidence": "Original BT BM Tahun 4 SK and DSKP Tahun 4",
     "publication_approved": false
   }
 }

@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 058
 
-**ID:** BM4-P058  
-**Minggu RPT 2027:** M15 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Kebudayaan, Kesenian dan Estetika; U10: Semarakkan Budaya Kita  
-**Tajuk aktiviti:** Salam Diberikan Tetamu Dihormati  
-**Standard Kandungan (SK):** 1.1 Mendengar dan memberikan respons semasa berkomunikasi dalam situasi formal dan tidak formal.  
-**Standard Pembelajaran (SP):** 1.1.1 — Mendengar, mengecam sebutan, dan menyebut sesuatu yang diujarkan semula dalam situasi tidak formal  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 65  
-**Fokus:** lisan — Salam Diberikan Tetamu Dihormati  
-**Objektif PdP:** Murid dapat memberikan sekurang-kurangnya tiga respons lisan yang relevan tentang 'Salam Diberikan Tetamu Dihormati' mengikut kemahiran 1.1.1.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P058
+**Minggu RPT 2027:** M15 (tarikh PdP sebenar ditentukan oleh sekolah)
+**Tema/Unit:** Kebudayaan, Kesenian dan Estetika; U10: Semarakkan Budaya Kita
+**Tajuk aktiviti:** Salam Diberikan Tetamu Dihormati
+**Standard Kandungan (SK):** 1.1 Mendengar dan memberikan respons semasa berkomunikasi dalam situasi formal dan tidak formal.
+**Standard Pembelajaran (SP):** 1.1.1 — Mendengar, mengecam sebutan, dan menyebut sesuatu yang diujarkan semula dalam situasi tidak formal
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 66. **BA:** Halaman serta latihan asal belum disahkan.
+**Konteks bahan:** Ibu Haziq mengajar adab menerima dan melayan tetamu, seperti bersenyum, berbudi bahasa dan berterima kasih.
+**Objektif PdP:** Pada akhir PdP, murid dapat mendengar ujaran tentang adab melayan tetamu dan menyebut semula sekurang-kurangnya tiga maklumat dengan tepat.
+**Bahan:** Buku Teks, kad tugasan mengikut aktiviti, bahan Peta i-Think jika dinyatakan dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Salam Diberikan Tetamu Dihormati' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kebudayaan, Kesenian dan Estetika; U10: Semarakkan Budaya Kita.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Tunjuk situasi rumah menerima tetamu; hubungkan dengan adab menghormati orang.
+**Murid:** Nyatakan satu cara menyambut tetamu dengan sopan.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Membacakan/menyampaikan maklumat atau dialog berpandukan bahan bertajuk 'Salam Diberikan Tetamu Dihormati' dan meminta murid mengenal pasti isi serta sebutan penting.  
-**Murid:** Mendengar/meneliti bahan 'Salam Diberikan Tetamu Dihormati'; mencatat tiga maklumat dan menjawab soalan guru secara lisan.
+## Aktiviti 1 — Teliti Buku Teks (15 minit)
+**Guru:** Bimbing murid mendengar dialog ibu Haziq dan anak-anak dalam BT m/s 66; baca dalam dua pusingan.
+**Murid:** Dengar tanpa melihat teks dahulu dan kenal pasti tiga nasihat yang disampaikan.
 
-## Aktiviti 2 — Aplikasi berpandu lisan (20 minit)
-**Guru:** Mengendalikan simulasi komunikasi berpasangan berdasarkan situasi sebenar dalam 'Salam Diberikan Tetamu Dihormati'; mengemukakan soalan susulan dan membetulkan sebutan/laras bahasa.  
-**Murid:** Berbual atau memainkan peranan berpandukan tajuk; memberikan tiga respons yang jelas dan sopan serta membaiki jawapan hasil maklum balas.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Minta pasangan menyebut semula ujaran tentang senyuman, layanan mengikut kemampuan dan menjaga percakapan.
+**Murid:** Ujarkan semula tiga maklumat dengan sebutan dan maksud yang betul.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (1.1.1 — Mendengar, mengecam sebutan, dan menyebut sesuatu yang diujarkan semula dalam situasi tidak formal) menggunakan bukti hasil tugasan: Senarai semak tiga respons lisan: tepat, jelas dan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak ketepatan maklumat yang didengar, sebutan dan kesantunan.
+**Murid:** Baiki satu ujaran yang tidak setia kepada maksud sumber.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran lisan yang digunakan dalam 'Salam Diberikan Tetamu Dihormati' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kemahiran mendengar dan adab melayan tetamu.
+**Murid:** Nyatakan satu amalan menghormati tetamu.
 
-**Nota RPT asal:** Mendengar / Bertutur; Pemerhatian respons lisan
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti sumber BT:** BT Tahun 4 SK meletakkan aktiviti Salam Diberikan Tetamu Dihormati pada halaman bercetak 66, dengan SP 1.1.1; m/s 65 ialah pengenalan tema.
+**Status QA:** DRAF — aktiviti/halaman Buku Teks dipadankan, tetapi BA, semakan PKJR, takwim negeri, cetakan Word/PDF A4 dan ujian Telegram masih belum lulus. Tidak boleh diterbitkan sebagai FINAL READY.

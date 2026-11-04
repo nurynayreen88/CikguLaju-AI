@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 056
 
-**ID:** BM4-P056  
-**Minggu RPT 2027:** M14 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Keselamatan; U9: Patuh dan Selamat  
-**Tajuk aktiviti:** Keselamatan di Sekolah  
-**Standard Kandungan (SK):** 2.1 Asas membaca dan memahami.  
-**Standard Pembelajaran (SP):** 2.1.1 — Membaca dan memahami petikan dengan sebutan yang betul dan intonasi yang sesuai  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 63  
-**Fokus:** bacaan — Keselamatan di Sekolah  
-**Objektif PdP:** Murid dapat membaca petikan bertajuk 'Keselamatan di Sekolah' dengan sesuai dan mengenal pasti sekurang-kurangnya tiga maklumat/idea yang disokong teks.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P056
+**Minggu RPT 2027:** M14 (tarikh PdP sebenar ditentukan oleh sekolah)
+**Tema/Unit:** Keselamatan; U9: Patuh dan Selamat
+**Tajuk aktiviti:** Keselamatan di Sekolah
+**Standard Kandungan (SK):** 2.1 Asas membaca dan memahami.
+**Standard Pembelajaran (SP):** 2.1.1 — Membaca dan memahami petikan dengan sebutan yang betul dan intonasi yang sesuai
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 63. **BA:** Halaman serta latihan asal belum disahkan.
+**Konteks bahan:** Petikan pengayaan Keselamatan di Sekolah membincangkan risiko stor, kolam terbiar, lantai kantin licin, koridor dan tangga.
+**Objektif PdP:** Pada akhir PdP, murid dapat membaca petikan dengan sebutan sesuai serta menyusun sekurang-kurangnya tiga pasangan punca-akibat dalam Peta Pelbagai Alir.
+**Bahan:** Buku Teks, kad tugasan mengikut aktiviti, bahan Peta i-Think jika dinyatakan dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Keselamatan di Sekolah' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Keselamatan; U9: Patuh dan Selamat.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar gambar lokasi sekolah dan minta murid mengenal pasti tempat yang perlu dielakkan.
+**Murid:** Nyatakan satu risiko di kawasan sekolah.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan bahagian bacaan 'Keselamatan di Sekolah' pada sumber yang dinyatakan, memodelkan intonasi atau strategi mencari maklumat tersurat/tersirat.  
-**Murid:** Membaca petikan 'Keselamatan di Sekolah' dan menanda sekurang-kurangnya tiga isi atau bukti daripada bahan.
+## Aktiviti 1 — Teliti Buku Teks (15 minit)
+**Guru:** Bimbing bacaan petikan pengayaan BT m/s 63 dan kenal pasti hubungan punca kemalangan dengan akibat.
+**Murid:** Baca dan garis peristiwa seperti lantai licin, berebut di tangga atau bermain berhampiran kolam.
 
-## Aktiviti 2 — Aplikasi berpandu bacaan (20 minit)
-**Guru:** Membimbing pembacaan berpasangan; meminta murid menjawab soalan isi, sebab dan bukti berdasarkan petikan, bukan berdasarkan tekaan.  
-**Murid:** Menyatakan idea utama dan dua maklumat sokongan, kemudian menjawab soalan dengan merujuk bukti dalam petikan.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Sediakan Peta Pelbagai Alir dan contoh pasangan punca-akibat daripada petikan.
+**Murid:** Lengkapkan tiga pasangan punca-akibat serta cadangkan langkah berwaspada berdasarkan teks.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (2.1.1 — Membaca dan memahami petikan dengan sebutan yang betul dan intonasi yang sesuai) menggunakan bukti hasil tugasan: Bacaan dan tiga jawapan pemahaman disemak berdasarkan teks asal. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak bacaan, logik hubungan punca-akibat dan bukti daripada bahan.
+**Murid:** Baiki satu pasangan yang tidak sepadan.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran bacaan yang digunakan dalam 'Keselamatan di Sekolah' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan kepentingan memahami keselamatan melalui petikan.
+**Murid:** Nyatakan satu langkah menjaga keselamatan di sekolah.
 
-**Nota RPT asal:** Membaca; Bacaan dan soalan pemahaman
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti sumber BT:** BT m/s 63 dilabel Pengayaan, memuatkan petikan Keselamatan di Sekolah serta arahan memindahkan maklumat ke Peta Pelbagai Alir; kegiatan ini aktiviti tambahan, bukan PdP wajib rasmi yang baharu.
+**Status QA:** DRAF — aktiviti/halaman Buku Teks dipadankan, tetapi BA, semakan PKJR, takwim negeri, cetakan Word/PDF A4 dan ujian Telegram masih belum lulus. Tidak boleh diterbitkan sebagai FINAL READY.

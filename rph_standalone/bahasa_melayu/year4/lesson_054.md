@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 054
 
-**ID:** BM4-P054  
-**Minggu RPT 2027:** M14 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Keselamatan; U9: Patuh dan Selamat  
-**Tajuk aktiviti:** Kita Harus Berwaspada  
-**Standard Kandungan (SK):** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.  
-**Standard Pembelajaran (SP):** 5.1.4 (ii) — Memahami dan menggunakan kata tugas mengikut konteks  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 61  
-**Fokus:** tatabahasa — Kita Harus Berwaspada  
-**Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan 'Kita Harus Berwaspada'.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P054
+**Minggu RPT 2027:** M14 (tarikh PdP sebenar ditentukan oleh sekolah)
+**Tema/Unit:** Keselamatan; U9: Patuh dan Selamat
+**Tajuk aktiviti:** Kita Harus Berwaspada
+**Standard Kandungan (SK):** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.
+**Standard Pembelajaran (SP):** 5.1.4 (ii) — Memahami dan menggunakan kata tugas mengikut konteks
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 61. **BA:** Halaman serta latihan asal belum disahkan.
+**Konteks bahan:** Rencana Hadif mengenai kewaspadaan di pasar raya, dobi layan diri, rumah dan premis kerusi urut; fokus kata sendi nama.
+**Objektif PdP:** Pada akhir PdP, murid dapat menyenaraikan sekurang-kurangnya lima kata sendi nama daripada rencana dan membina tiga ayat baharu.
+**Bahan:** Buku Teks, kad tugasan mengikut aktiviti, bahan Peta i-Think jika dinyatakan dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Kita Harus Berwaspada' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Keselamatan; U9: Patuh dan Selamat.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Paparkan empat tempat yang disebut dalam rencana keselamatan diri.
+**Murid:** Nyatakan satu situasi yang memerlukan kewaspadaan.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan ayat daripada bahan 'Kita Harus Berwaspada'; membimbing murid mengenal pasti unsur bahasa yang dinyatakan dalam Memahami dan menggunakan kata tugas mengikut konteks.  
-**Murid:** Mengenal pasti dan mengelaskan empat contoh bentuk bahasa daripada tajuk 'Kita Harus Berwaspada'.
+## Aktiviti 1 — Teliti Buku Teks (15 minit)
+**Guru:** Bimbing bacaan BT m/s 61 dan terangkan fungsi kata sendi nama di hadapan frasa nama.
+**Murid:** Gariskan kata sendi nama seperti di, ke, oleh, daripada, dalam dan pada yang ditemui.
 
-## Aktiviti 2 — Aplikasi berpandu tatabahasa (20 minit)
-**Guru:** Memberikan tugasan bina ayat bertema 'Kita Harus Berwaspada' menggunakan bentuk bahasa sasaran; membimbing pembetulan mengikut konteks.  
-**Murid:** Membina empat ayat yang mengandungi unsur bahasa sasaran dan menyunting contoh yang kurang tepat.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Minta murid mengelaskan kata sendi nama mengikut fungsi, tempat dan konteks bahan.
+**Murid:** Senaraikan lima kata sendi nama dan bina tiga ayat tentang keselamatan diri.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (5.1.4 (ii) — Memahami dan menggunakan kata tugas mengikut konteks) menggunakan bukti hasil tugasan: Empat ayat disemak: pilihan perkataan betul dan penggunaan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Semak kesesuaian kata sendi nama dan kedudukan dalam ayat.
+**Murid:** Baiki pilihan kata sendi yang salah dan baca semula ayat.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam 'Kita Harus Berwaspada' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan fungsi kata sendi nama dalam penulisan.
+**Murid:** Sebut satu contoh kata sendi nama dan frasa yang mengikutinya.
 
-**Nota RPT asal:** Tatabahasa; Penggunaan tatabahasa dalam ayat bertema
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti sumber BT:** BT m/s 61 meminta membaca rencana dan menyenaraikan kata sendi nama; SP 5.1.4(ii).
+**Status QA:** DRAF — aktiviti/halaman Buku Teks dipadankan, tetapi BA, semakan PKJR, takwim negeri, cetakan Word/PDF A4 dan ujian Telegram masih belum lulus. Tidak boleh diterbitkan sebagai FINAL READY.
