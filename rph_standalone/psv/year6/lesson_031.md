@@ -18,7 +18,7 @@ Murid dapat membina dua susunan motif daun sirih pada sayap dan ekor wau serta m
 
 **Aktiviti 1 (15 minit) — Penerangan dan tunjuk cara:** Guru merujuk BT ms 70–71, melukis paksi tengah wau, menunjukkan motif daun sirih disusun cerminan kiri/kanan, serta membandingkan dua warna menggunakan pen warna dan pensel warna.
 
-**Aktiviti 2 (25 minit) — Amali:** Murid melakar dua reka letak motif pada sayap dan bilah ekor, melabel bahagian wau, menyiapkan satu kajian warna dan memilih reka bentuk yang simetri untuk penghasilan model. Guru menyemak kesesuaian bahan kadbod dan kain felt.
+**Aktiviti 2 (25 minit) — Amali:** Murid melakar dua reka letak susunan cerminan motif daun sirih pada sayap kiri dan kanan serta bilah ekor, menandakan paksi tengah wau, melabel bahagiannya, menyiapkan satu kajian warna dan memilih reka bentuk yang simetri untuk penghasilan model. Guru menyemak kesesuaian bahan kadbod dan kain felt.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Evidens PBD: dua lakaran susunan cerminan, satu kajian warna dan satu alasan pilihan reka bentuk. Guru mengesahkan imbangan, motif dan pilihan warna.
 
