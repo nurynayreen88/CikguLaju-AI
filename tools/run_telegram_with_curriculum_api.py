@@ -343,3 +343,15 @@ except Exception as _manual_exc:
     USER_MANUAL_MENU_ACTIVE = False
     print("Public user manual menu unavailable:",
           type(_manual_exc).__name__, flush=True)
+
+
+# RPT 2027 personal cover: ask school name + logo on EVERY paid PDF download.
+# Holds temporary metadata in RAM, strips uploaded image metadata and never
+# saves school name/logo to user profiles, curriculum DB or Supabase.
+# Must be installed after all other callback wrappers.
+try:
+    from web.rpt2027_personalized_download_runtime import install as install_rpt2027_logo_once
+    RPT2027_LOGO_ONCE_ACTIVE = bool(install_rpt2027_logo_once(telegram_runtime))
+except Exception as _rpt_logo_exc:
+    RPT2027_LOGO_ONCE_ACTIVE = False
+    print("RPT 2027 personalized cover unavailable:", type(_rpt_logo_exc).__name__, flush=True)
