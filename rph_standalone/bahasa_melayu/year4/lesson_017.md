@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 017
 
-**ID:** BM4-P017  
-**Minggu RPT 2027:** M05 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Kemasyarakatan; U3: Masyarakat Berilmu  
-**Tajuk aktiviti:** Satu untuk Semua  
-**Standard Kandungan (SK):** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.  
-**Standard Pembelajaran (SP):** 5.1.1 (iii) — Memahami dan menggunakan kata nama mengikut konteks tidak formal  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 17  
-**Fokus:** tatabahasa — Satu untuk Semua  
-**Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan 'Satu untuk Semua'.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P017
+**Minggu RPT 2027:** M05 (tarikh PdP sebenar ikut jadual sekolah)
+**Tema/Unit:** Kemasyarakatan; U3: Masyarakat Berilmu
+**Tajuk aktiviti:** Satu untuk Semua
+**Standard Kandungan (SK):** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.
+**Standard Pembelajaran (SP):** 5.1.1 (iii) — Memahami dan menggunakan kata nama mengikut konteks tidak formal
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 17. **Buku Aktiviti:** halaman/latihan belum disahkan.
+**Konteks BT:** Perbualan Rajiv dan Hadif tentang membaca e-buku menggunakan tablet, komputer riba dan telefon pintar.
+**Objektif PdP:** Pada akhir PdP, murid dapat melengkapkan sekurang-kurangnya enam tempat kosong dialog dengan kata ganti nama diri atau tunjuk yang sesuai mengikut konteks.
+**Bahan:** BT pada halaman berkenaan, bahan respons/lembaran berpandu berdasarkan tugas tersebut dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual sebenar).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Satu untuk Semua' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kemasyarakatan; U3: Masyarakat Berilmu.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar situasi Rajiv datang ke rumah Hadif untuk membaca e-buku.
+**Murid:** Sebut dua alat yang boleh digunakan untuk membaca e-buku.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan ayat daripada bahan 'Satu untuk Semua'; membimbing murid mengenal pasti unsur bahasa yang dinyatakan dalam Memahami dan menggunakan kata nama mengikut konteks tidak formal.  
-**Murid:** Mengenal pasti dan mengelaskan empat contoh bentuk bahasa daripada tajuk 'Satu untuk Semua'.
+## Aktiviti 1 — Bimbingan Buku Teks (15 minit)
+**Guru:** Tunjukkan kategori kata ganti nama diri pertama, kedua, ketiga dan kata ganti nama tunjuk tempat dalam BT m/s 17.
+**Murid:** Kelaskan contoh saya, kamu, mereka, ini, situ dan sana mengikut fungsinya.
 
-## Aktiviti 2 — Aplikasi berpandu tatabahasa (20 minit)
-**Guru:** Memberikan tugasan bina ayat bertema 'Satu untuk Semua' menggunakan bentuk bahasa sasaran; membimbing pembetulan mengikut konteks.  
-**Murid:** Membina empat ayat yang mengandungi unsur bahasa sasaran dan menyunting contoh yang kurang tepat.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Bimbing murid melengkapkan dialog Rajiv–Hadif, termasuk rujukan kepada ibu, Haziq, adik dan peranti yang digunakan.
+**Murid:** Isi enam tempat kosong dengan kata ganti nama yang sesuai; baca dialog secara bergilir dan jelaskan pilihannya.
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (5.1.1 (iii) — Memahami dan menggunakan kata nama mengikut konteks tidak formal) menggunakan bukti hasil tugasan: Empat ayat disemak: pilihan perkataan betul dan penggunaan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Periksa enam jawapan berdasarkan siapa bercakap, siapa dirujuk dan penunjuk tempat; minta pembetulan bersebab.
+**Murid:** Betulkan kata ganti nama yang tidak sepadan dengan watak atau lokasi.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam 'Satu untuk Semua' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan penggunaan kata ganti nama dalam pertuturan harian.
+**Murid:** Bina satu ujaran baharu tentang e-buku menggunakan kata ganti nama yang betul.
 
-**Nota RPT asal:** Tatabahasa; Penggunaan tatabahasa dalam ayat bertema
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti sumber BT:** BT m/s 17 ialah dialog Rajiv–Hadif tentang e-buku untuk dilengkapkan dengan kata ganti nama diri/tunjuk; SP 5.1.1(iii).
+**Status QA:** DRAF — kandungan aktiviti dan halaman BT disemak; BA, PKJR (jika berkaitan), takwim negeri, visual Word/PDF A4 dan ujian Telegram belum lulus. Bukan FINAL READY, jangan terbitkan.

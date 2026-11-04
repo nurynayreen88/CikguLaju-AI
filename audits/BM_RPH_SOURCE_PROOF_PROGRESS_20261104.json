@@ -142,6 +142,96 @@
       "ba_exercise_verified": false
     },
     {
+      "year": 4,
+      "pdp": 15,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "15",
+      "proof": "BT m/s 15 mengarahkan membina dan menulis ayat serta perenggan berdasarkan gambar dan frasa, dalam konteks program Dekad Bahasa Kebangsaan.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 16,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "16",
+      "proof": "BT m/s 16 meminta murid menyanyikan lagu tentang sepuluh minit membaca dan menjelaskan maksud lirik, dengan rujukan melodi Anak Ayam.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 17,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "17",
+      "proof": "BT m/s 17 ialah dialog Rajiv–Hadif tentang e-buku untuk dilengkapkan dengan kata ganti nama diri/tunjuk; SP 5.1.1(iii).",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 18,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "18",
+      "proof": "BT m/s 18 menyediakan petikan bacaan tentang Hadif merawat kucing bernama Kelabu, serta arahan membaca dengan sebutan dan intonasi sesuai.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 19,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "19",
+      "proof": "BT m/s 19 mengarahkan membina ayat dan perenggan daripada poster Karnival Mini Masyarakat Kita.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 20,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "22",
+      "proof": "BT m/s 22 memaparkan dialog Hadif dan poster Amalan Ketika Anda Batuk dan Bersin untuk menilai tindakan serta memberi alasan (SP 1.2.1).",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 21,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "23",
+      "proof": "BT m/s 23 mengarahkan membaca poster Syarat-syarat Menderma Darah serta melengkapkan Peta Bulatan.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 22,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "24–25",
+      "proof": "BT m/s 24–25 mengandungi petikan Penjagaan Kesihatan Mata dan lima soalan pemahaman; SP 3.2.2 menekankan jawapan bertumpu/bercapah.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 23,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "26",
+      "proof": "BT m/s 26 mengarahkan murid mengubah suai pantun berdasarkan perkataan yang dicetak berwarna dan mempersembahkannya; SP 4.3.1.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 24,
+      "book": "BT Tahun 4 SK",
+      "printed_pages": "27",
+      "proof": "BT m/s 27 mengarahkan melengkapkan teks Farmasi Pandu Lalu dan Peta Titi menggunakan penjodoh bilangan; SP 5.1.1(iv).",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
       "year": 5,
       "pdp": 45,
       "book": "BT Tahun 5 SK",
@@ -188,7 +278,7 @@
     }
   ],
   "unresolved": [
-    "All remaining 808 RPH need specific textbook page/activity review",
+    "All remaining 798 RPH need specific textbook page/activity review",
     "All Buku Aktiviti exercises not verified globally",
     "Year 2 29 HOLD incl PKJR/assessment/duplicates",
     "Year 4–6 496 RPH require full academic audit",
@@ -203,13 +293,13 @@
   "reviewed_seventeen_not_ready": true,
   "current_audit_batch": {
     "year": 4,
-    "pdp_range": "008–014",
-    "verified_with": "Drive: BT Tahun 4 SK, DSKP Tahun 4; GitHub: RPT 2027",
+    "pdp_range": "015–024",
+    "verified_with": "Original Buku Teks BM Tahun 4 SK PDF, DSKP Tahun 4 from Google Drive; RPT 2027",
+    "reviewed_rph": 10,
     "changed_rpt_formats": [
       "Markdown",
       "HTML"
     ],
-    "reviewed_rph": 7,
     "publication_approved": false
   }
 }

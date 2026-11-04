@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 024
 
-**ID:** BM4-P024  
-**Minggu RPT 2027:** M08 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Kesihatan dan Kebersihan; U4: Saya Sihat  
-**Tajuk aktiviti:** Farmasi Pandu Lalu  
-**Standard Kandungan (SK):** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.  
-**Standard Pembelajaran (SP):** 5.1.1 (iv) — Memahami dan menggunakan kata nama mengikut konteks tidak formal  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 27  
-**Fokus:** tatabahasa — Farmasi Pandu Lalu  
-**Objektif PdP:** Murid dapat menggunakan sekurang-kurangnya empat contoh bentuk bahasa yang ditetapkan SP dalam ayat berkaitan 'Farmasi Pandu Lalu'.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P024
+**Minggu RPT 2027:** M08 (tarikh PdP sebenar ikut jadual sekolah)
+**Tema/Unit:** Kesihatan dan Kebersihan; U4: Saya Sihat
+**Tajuk aktiviti:** Farmasi Pandu Lalu
+**Standard Kandungan (SK):** 5.1 Memahami dan menggunakan golongan kata mengikut konteks.
+**Standard Pembelajaran (SP):** 5.1.1 (iv) — Memahami dan menggunakan kata nama mengikut konteks tidak formal
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 27. **Buku Aktiviti:** halaman/latihan belum disahkan.
+**Konteks BT:** Petikan Farmasi Pandu Lalu tentang Encik Husin mengambil ubat, latihan penjodoh bilangan serta Peta Titi.
+**Objektif PdP:** Pada akhir PdP, murid dapat melengkapkan sekurang-kurangnya enam penjodoh bilangan yang sesuai dan memadankan kata nama dalam Peta Titi.
+**Bahan:** BT pada halaman berkenaan, bahan respons/lembaran berpandu berdasarkan tugas tersebut dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual sebenar).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Farmasi Pandu Lalu' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kesihatan dan Kebersihan; U4: Saya Sihat.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar gambar farmasi pandu lalu serta konteks Encik Husin mengambil ubat.
+**Murid:** Nyatakan satu benda atau orang yang boleh dibilang dalam situasi tersebut.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan ayat daripada bahan 'Farmasi Pandu Lalu'; membimbing murid mengenal pasti unsur bahasa yang dinyatakan dalam Memahami dan menggunakan kata nama mengikut konteks tidak formal.  
-**Murid:** Mengenal pasti dan mengelaskan empat contoh bentuk bahasa daripada tajuk 'Farmasi Pandu Lalu'.
+## Aktiviti 1 — Bimbingan Buku Teks (15 minit)
+**Guru:** Bimbing bacaan petikan dan contoh pasangan penjodoh bilangan pada BT m/s 27 seperti buah, keping, orang, helai, papan, biji dan botol.
+**Murid:** Padankan penjodoh bilangan dengan kata nama yang logik mengikut contoh asal.
 
-## Aktiviti 2 — Aplikasi berpandu tatabahasa (20 minit)
-**Guru:** Memberikan tugasan bina ayat bertema 'Farmasi Pandu Lalu' menggunakan bentuk bahasa sasaran; membimbing pembetulan mengikut konteks.  
-**Murid:** Membina empat ayat yang mengandungi unsur bahasa sasaran dan menyunting contoh yang kurang tepat.
+## Aktiviti 2 — Aplikasi kemahiran (20 minit)
+**Guru:** Bimbing pengisian tempat kosong dalam petikan dan Peta Titi dengan kata nama yang tepat.
+**Murid:** Lengkapkan sekurang-kurangnya enam pasangan penjodoh bilangan dan jelaskan pilihan dalam dua contoh.
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (5.1.1 (iv) — Memahami dan menggunakan kata nama mengikut konteks tidak formal) menggunakan bukti hasil tugasan: Empat ayat disemak: pilihan perkataan betul dan penggunaan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak padanan berdasarkan benda yang dirujuk, bilangan dan konteks farmasi; minta pembetulan.
+**Murid:** Betulkan penjodoh bilangan yang tersalah dan bina dua ayat mengikut konteks.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tatabahasa yang digunakan dalam 'Farmasi Pandu Lalu' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan fungsi penjodoh bilangan.
+**Murid:** Sebut satu pasangan penjodoh bilangan yang betul dalam situasi harian.
 
-**Nota RPT asal:** Tatabahasa; Penggunaan tatabahasa dalam ayat bertema
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti sumber BT:** BT m/s 27 mengarahkan melengkapkan teks Farmasi Pandu Lalu dan Peta Titi menggunakan penjodoh bilangan; SP 5.1.1(iv).
+**Status QA:** DRAF — kandungan aktiviti dan halaman BT disemak; BA, PKJR (jika berkaitan), takwim negeri, visual Word/PDF A4 dan ujian Telegram belum lulus. Bukan FINAL READY, jangan terbitkan.
