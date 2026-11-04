@@ -1,0 +1,430 @@
+{
+  "subject": "Pendidikan Moral",
+  "year": 3,
+  "status": "DRAF_SEMAK",
+  "source_dskp_id": "1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv",
+  "source_book_id": "1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl",
+  "notes": "Semakan sumber SK; 14 unit × 3 PdP cadangan; tidak mengesahkan tarikh / halaman buku teks",
+  "units": [
+    {
+      "year": 3,
+      "unit": 1,
+      "sk": "1.0",
+      "title": "Kepelbagaian Perayaan Warga Sekolah",
+      "nilai": "Kepercayaan kepada Tuhan",
+      "sp": [
+        {
+          "code": "1.1",
+          "text": "Menyenaraikan pelbagai perayaan di Malaysia."
+        },
+        {
+          "code": "1.2",
+          "text": "Menjelaskan amalan pelbagai perayaan yang disambut oleh warga sekolah."
+        },
+        {
+          "code": "1.3",
+          "text": "Menilai kepentingan menerima, menghormati dan mengurus kepelbagaian perayaan yang disambut oleh warga sekolah."
+        },
+        {
+          "code": "1.4",
+          "text": "Mengekspresikan perasaan apabila dapat menerima, menghormati dan mengurus kepelbagaian perayaan warga sekolah."
+        },
+        {
+          "code": "1.5",
+          "text": "Mengamalkan sikap menerima, menghormati dan mengurus kepelbagaian perayaan warga sekolah."
+        }
+      ],
+      "scenario": "Warga sekolah meraikan perayaan yang berbeza dalam suasana saling menghormati"
+    },
+    {
+      "year": 3,
+      "unit": 2,
+      "sk": "2.0",
+      "title": "Bantuan Kepada Warga Sekolah",
+      "nilai": "Baik hati",
+      "sp": [
+        {
+          "code": "2.1",
+          "text": "Menyenaraikan jenis bantuan yang boleh diberi kepada warga sekolah."
+        },
+        {
+          "code": "2.2",
+          "text": "Mengenal pasti cara membantu warga sekolah."
+        },
+        {
+          "code": "2.3",
+          "text": "Menjelaskan kepentingan bersikap ikhlas membantu warga sekolah."
+        },
+        {
+          "code": "2.4",
+          "text": "Mengekspresikan perasaan apabila dapat membantu warga sekolah."
+        },
+        {
+          "code": "2.5",
+          "text": "Mengamalkan sikap saling membantu dalam kalangan warga sekolah."
+        }
+      ],
+      "scenario": "Seorang murid baharu memerlukan bantuan mencari bilik khas"
+    },
+    {
+      "year": 3,
+      "unit": 3,
+      "sk": "3.0",
+      "title": "Tanggungjawab Di Sekolah",
+      "nilai": "Bertanggungjawab",
+      "sp": [
+        {
+          "code": "3.1",
+          "text": "Menyenaraikan tanggungjawab di sekolah."
+        },
+        {
+          "code": "3.2",
+          "text": "Menjelaskan cara melaksanakan tanggungjawab mengikut peranan dan tugas di sekolah."
+        },
+        {
+          "code": "3.3",
+          "text": "Menghuraikan kepentingan melaksanakan tanggungjawab di sekolah."
+        },
+        {
+          "code": "3.4",
+          "text": "Mengekspresikan perasaan apabila dapat melaksanakan tanggungjawab di sekolah."
+        },
+        {
+          "code": "3.5",
+          "text": "Mengamalkan sikap bertanggungjawab di sekolah."
+        }
+      ],
+      "scenario": "Pengawas dan ketua kelas membahagikan tugas dengan jelas"
+    },
+    {
+      "year": 3,
+      "unit": 4,
+      "sk": "4.0",
+      "title": "Amalan Berterima Kasih Terhadap Warga Sekolah",
+      "nilai": "Berterima kasih",
+      "sp": [
+        {
+          "code": "4.1",
+          "text": "Menyenaraikan cara berterima kasih terhadap warga sekolah."
+        },
+        {
+          "code": "4.2",
+          "text": "Menjelaskan kepentingan amalan berterima kasih terhadap warga sekolah."
+        },
+        {
+          "code": "4.3",
+          "text": "Menganalisis kesan mengabaikan amalan berterima kasih terhadap warga sekolah."
+        },
+        {
+          "code": "4.4",
+          "text": "Mengekspresikan perasaan apabila dapat menunjukkan sikap berterima kasih terhadap warga sekolah."
+        },
+        {
+          "code": "4.5",
+          "text": "Mengamalkan sikap berterima kasih terhadap warga sekolah."
+        }
+      ],
+      "scenario": "Pekerja kantin membantu murid yang tertinggal bekalan makanan"
+    },
+    {
+      "year": 3,
+      "unit": 5,
+      "sk": "5.0",
+      "title": "Bersopan Dan Berbudi Pekerti Mulia Terhadap Warga Sekolah",
+      "nilai": "Hemah tinggi",
+      "sp": [
+        {
+          "code": "5.1",
+          "text": "Menyenaraikan contoh pertuturan dan perlakuan yang sopan terhadap warga sekolah."
+        },
+        {
+          "code": "5.2",
+          "text": "Mengenal pasti kepentingan bersikap sopan dan berbudi pekerti mulia terhadap warga sekolah."
+        },
+        {
+          "code": "5.3",
+          "text": "Menjelaskan kesan tidak bersopan dan berbudi pekerti mulia terhadap warga sekolah."
+        },
+        {
+          "code": "5.4",
+          "text": "Mengekspresikan perasaan apabila dapat bersikap sopan dan berbudi pekerti mulia terhadap warga sekolah."
+        },
+        {
+          "code": "5.5",
+          "text": "Mengamalkan sikap bersopan dan berbudi pekerti mulia terhadap warga sekolah."
+        }
+      ],
+      "scenario": "Murid menyapa pekerja sekolah dan pelawat dengan bahasa sopan"
+    },
+    {
+      "year": 3,
+      "unit": 6,
+      "sk": "6.0",
+      "title": "Hormati Warga Sekolah Dan Pelawat",
+      "nilai": "Hormat",
+      "sp": [
+        {
+          "code": "6.1",
+          "text": "Menyenaraikan warga sekolah dan pelawat."
+        },
+        {
+          "code": "6.2",
+          "text": "Menjelaskan cara menghormati warga sekolah dan pelawat."
+        },
+        {
+          "code": "6.3",
+          "text": "Mengkaji kepentingan menghormati warga sekolah dan pelawat."
+        },
+        {
+          "code": "6.4",
+          "text": "Mengekspresikan perasaan apabila dapat menghormati warga sekolah dan pelawat."
+        },
+        {
+          "code": "6.5",
+          "text": "Mengamalkan perlakuan sikap hormat terhadap warga sekolah dan pelawat."
+        }
+      ],
+      "scenario": "Seorang pelawat bertanya arah di kawasan sekolah"
+    },
+    {
+      "year": 3,
+      "unit": 7,
+      "sk": "7.0",
+      "title": "Sayangi Sekolah Dan Warga Sekolah",
+      "nilai": "Kasih sayang",
+      "sp": [
+        {
+          "code": "7.1",
+          "text": "Mengenal pasti cara menyayangi sekolah dan warga sekolah."
+        },
+        {
+          "code": "7.2",
+          "text": "Menghuraikan kepentingan menyayangi sekolah dan warga sekolah."
+        },
+        {
+          "code": "7.3",
+          "text": "Menjelaskan kesan sekiranya tidak menyayangi sekolah dan warga sekolah."
+        },
+        {
+          "code": "7.4",
+          "text": "Mengekspresikan perasaan apabila dapat menyayangi sekolah dan warga sekolah."
+        },
+        {
+          "code": "7.5",
+          "text": "Mengamalkan sikap menyayangi sekolah dan warga sekolah."
+        }
+      ],
+      "scenario": "Murid mendapati kawasan taman sekolah tidak dijaga"
+    },
+    {
+      "year": 3,
+      "unit": 8,
+      "sk": "8.0",
+      "title": "Bersikap Adil Sesama Warga Sekolah",
+      "nilai": "Keadilan",
+      "sp": [
+        {
+          "code": "8.1",
+          "text": "Memerihalkan cara bersikap adil sesama warga sekolah."
+        },
+        {
+          "code": "8.2",
+          "text": "Menjelaskan kepentingan bersikap adil sesama warga sekolah."
+        },
+        {
+          "code": "8.3",
+          "text": "Menghuraikan kesan tidak bersikap adil sesama warga sekolah."
+        },
+        {
+          "code": "8.4",
+          "text": "Mengekspresikan perasaan apabila dapat bersikap adil sesama warga sekolah."
+        },
+        {
+          "code": "8.5",
+          "text": "Mengamalkan sikap adil sesama warga sekolah."
+        }
+      ],
+      "scenario": "Kumpulan murid memilih ketua dan mengagihkan bahan secara adil"
+    },
+    {
+      "year": 3,
+      "unit": 9,
+      "sk": "9.0",
+      "title": "Berani Menghadapi Cabaran di Sekolah",
+      "nilai": "Keberanian",
+      "sp": [
+        {
+          "code": "9.1",
+          "text": "Menyenaraikan contoh menghadapi cabaran yang terdapat di sekolah."
+        },
+        {
+          "code": "9.2",
+          "text": "Mengenal pasti cara berani menghadapi cabaran yang terdapat di sekolah."
+        },
+        {
+          "code": "9.3",
+          "text": "Menjelaskan kepentingan berani menghadapi cabaran yang terdapat di sekolah."
+        },
+        {
+          "code": "9.4",
+          "text": "Mengekspresikan perasaan apabila berani menghadapi cabaran di sekolah."
+        },
+        {
+          "code": "9.5",
+          "text": "Mengamalkan sikap berani menghadapi cabaran di sekolah."
+        }
+      ],
+      "scenario": "Seorang murid melihat rakan dibuli di kawasan sekolah"
+    },
+    {
+      "year": 3,
+      "unit": 10,
+      "sk": "10.0",
+      "title": "Jujur Terhadap Warga Sekolah",
+      "nilai": "Kejujuran",
+      "sp": [
+        {
+          "code": "10.1",
+          "text": "Menyenaraikan contoh perlakuan jujur terhadap warga sekolah."
+        },
+        {
+          "code": "10.2",
+          "text": "Menjelaskan kepentingan bersikap jujur terhadap warga sekolah."
+        },
+        {
+          "code": "10.3",
+          "text": "Menilai kesan tidak bersikap jujur terhadap warga sekolah."
+        },
+        {
+          "code": "10.4",
+          "text": "Mengekspresikan perasaan apabila dapat bersikap jujur terhadap warga sekolah."
+        },
+        {
+          "code": "10.5",
+          "text": "Mengamalkan sikap jujur terhadap warga sekolah."
+        }
+      ],
+      "scenario": "Murid menemukan dompet di koridor sekolah"
+    },
+    {
+      "year": 3,
+      "unit": 11,
+      "sk": "11.0",
+      "title": "Bersikap Rajin Di Sekolah",
+      "nilai": "Kerajinan",
+      "sp": [
+        {
+          "code": "11.1",
+          "text": "Menyenaraikan contoh perlakuan rajin di sekolah."
+        },
+        {
+          "code": "11.2",
+          "text": "Menghuraikan kepentingan bersikap rajin di sekolah."
+        },
+        {
+          "code": "11.3",
+          "text": "Menjelaskan akibat tidak bersikap rajin di sekolah."
+        },
+        {
+          "code": "11.4",
+          "text": "Mengekspresikan perasaan apabila bersikap rajin di sekolah."
+        },
+        {
+          "code": "11.5",
+          "text": "Mengamalkan sikap rajin di sekolah."
+        }
+      ],
+      "scenario": "Sekumpulan murid ingin menyiapkan projek kelas mengikut jadual"
+    },
+    {
+      "year": 3,
+      "unit": 12,
+      "sk": "12.0",
+      "title": "Kerjasama dengan Warga Sekolah",
+      "nilai": "Kerjasama",
+      "sp": [
+        {
+          "code": "12.1",
+          "text": "Menyenaraikan contoh aktiviti yang dilakukan bersama-sama warga sekolah."
+        },
+        {
+          "code": "12.2",
+          "text": "Mencadangkan cara melaksanakan aktiviti bersama-sama warga sekolah."
+        },
+        {
+          "code": "12.3",
+          "text": "Menghuraikan kepentingan bekerjasama dengan warga sekolah."
+        },
+        {
+          "code": "12.4",
+          "text": "Mengekspresikan perasaan apabila bekerjasama dengan warga sekolah."
+        },
+        {
+          "code": "12.5",
+          "text": "Mengamalkan sikap bekerjasama dengan warga sekolah."
+        }
+      ],
+      "scenario": "Kelas merancang aktiviti menghias sudut bacaan secara bersama"
+    },
+    {
+      "year": 3,
+      "unit": 13,
+      "sk": "13.0",
+      "title": "Kesederhanaan Di Sekolah",
+      "nilai": "Kesederhanaan",
+      "sp": [
+        {
+          "code": "13.1",
+          "text": "Menyenaraikan contoh perlakuan sederhana di sekolah."
+        },
+        {
+          "code": "13.2",
+          "text": "Memerihalkan cara bersikap sederhana di sekolah."
+        },
+        {
+          "code": "13.3",
+          "text": "Menghuraikan kebaikan bersikap sederhana di sekolah."
+        },
+        {
+          "code": "13.4",
+          "text": "Mengekspresikan perasaan apabila bersikap sederhana di sekolah."
+        },
+        {
+          "code": "13.5",
+          "text": "Mengamalkan kesederhanaan di sekolah."
+        }
+      ],
+      "scenario": "Murid memilih antara menggunakan semula bahan atau membeli barang baharu"
+    },
+    {
+      "year": 3,
+      "unit": 14,
+      "sk": "14.0",
+      "title": "Toleransi Sesama Warga Sekolah",
+      "nilai": "Toleransi",
+      "sp": [
+        {
+          "code": "14.1",
+          "text": "Menyenaraikan ciri toleransi."
+        },
+        {
+          "code": "14.2",
+          "text": "Menjelaskan dengan contoh sikap toleransi sesama warga sekolah."
+        },
+        {
+          "code": "14.3",
+          "text": "Menghuraikan kepentingan bersikap toleransi sesama warga sekolah."
+        },
+        {
+          "code": "14.4",
+          "text": "Mengekspresikan perasaan apabila bersikap toleransi sesama warga sekolah."
+        },
+        {
+          "code": "14.5",
+          "text": "Mengamalkan sikap bertoleransi untuk mengeratkan perpaduan sesama warga sekolah."
+        }
+      ],
+      "scenario": "Dua kumpulan murid berbeza pendapat tentang peraturan permainan"
+    }
+  ]
+}

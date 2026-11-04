@@ -1,0 +1,430 @@
+{
+  "subject": "Pendidikan Moral",
+  "year": 5,
+  "status": "DRAF_SEMAK",
+  "source_dskp_id": "1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD",
+  "source_book_id": "1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz",
+  "notes": "Semakan sumber SK; 14 unit × 3 PdP cadangan; tidak mengesahkan tarikh / halaman buku teks",
+  "units": [
+    {
+      "year": 5,
+      "unit": 1,
+      "sk": "1.0",
+      "title": "Amalan Ajaran Agama atau Kepercayaan Membentuk Masyarakat Harmoni",
+      "nilai": "Kepercayaan kepada Tuhan",
+      "sp": [
+        {
+          "code": "1.1",
+          "text": "Menjelaskan ciri masyarakat."
+        },
+        {
+          "code": "1.2",
+          "text": "Mengenal pasti amalan ajaran agama atau kepercayaan dalam membentuk masyarakat harmoni."
+        },
+        {
+          "code": "1.3",
+          "text": "Menghuraikan kepentingan amalan ajaran agama atau kepercayaan dalam membentuk masyarakat harmoni."
+        },
+        {
+          "code": "1.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan ajaran agama atau kepercayaan dalam membentuk masyarakat harmoni."
+        },
+        {
+          "code": "1.5",
+          "text": "Mengamalkan sikap menerima, menghormati dan mengurus kepelbagaian agama atau kepercayaan dalam membentuk masyarakat harmoni."
+        }
+      ],
+      "scenario": "Masyarakat pelbagai kepercayaan bekerjasama menjayakan sambutan setempat"
+    },
+    {
+      "year": 5,
+      "unit": 2,
+      "sk": "2.0",
+      "title": "Peka Terhadap Keperluan dan Kebajikan Masyarakat",
+      "nilai": "Baik hati",
+      "sp": [
+        {
+          "code": "2.1",
+          "text": "Menyenaraikan contoh keperluan dan kebajikan yang boleh diberikan kepada masyarakat."
+        },
+        {
+          "code": "2.2",
+          "text": "Menjelaskan kepentingan bersikap peka terhadap keperluan dan kebajikan masyarakat."
+        },
+        {
+          "code": "2.3",
+          "text": "Menjana idea tentang kesan pengabaian sikap peka terhadap keperluan dan kebajikan masyarakat."
+        },
+        {
+          "code": "2.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan peka terhadap keperluan dan kebajikan masyarakat."
+        },
+        {
+          "code": "2.5",
+          "text": "Mengamalkan sikap peka terhadap keperluan dan kebajikan masyarakat."
+        }
+      ],
+      "scenario": "Sukarelawan menyelaraskan bantuan untuk penduduk terjejas banjir"
+    },
+    {
+      "year": 5,
+      "unit": 3,
+      "sk": "3.0",
+      "title": "Tanggungjawab Sebagai Anggota Masyarakat",
+      "nilai": "Bertanggungjawab",
+      "sp": [
+        {
+          "code": "3.1",
+          "text": "Menyenaraikan contoh tanggungjawab sebagai anggota masyarakat."
+        },
+        {
+          "code": "3.2",
+          "text": "Menghuraikan cara melaksanakan tanggungjawab sebagai anggota masyarakat."
+        },
+        {
+          "code": "3.3",
+          "text": "Membuat justifikasi kepentingan melaksanakan tanggungjawab sebagai anggota masyarakat."
+        },
+        {
+          "code": "3.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan tanggungjawab sebagai anggota masyarakat."
+        },
+        {
+          "code": "3.5",
+          "text": "Mengamalkan sikap bertanggungjawab sebagai anggota masyarakat."
+        }
+      ],
+      "scenario": "Penduduk membincangkan tanggungjawab menjaga dewan komuniti"
+    },
+    {
+      "year": 5,
+      "unit": 4,
+      "sk": "4.0",
+      "title": "Penghargaan Terhadap Jasa dan Sumbangan Anggota Masyarakat",
+      "nilai": "Berterima kasih",
+      "sp": [
+        {
+          "code": "4.1",
+          "text": "Menyenaraikan contoh jasa dan sumbangan anggota masyarakat."
+        },
+        {
+          "code": "4.2",
+          "text": "Menghuraikan bentuk penghargaan terhadap jasa dan sumbangan anggota masyarakat."
+        },
+        {
+          "code": "4.3",
+          "text": "Mengkaji kepentingan amalan menghargai jasa dan sumbangan anggota masyarakat."
+        },
+        {
+          "code": "4.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan menghargai jasa dan sumbangan anggota masyarakat."
+        },
+        {
+          "code": "4.5",
+          "text": "Mengamalkan sikap menghargai jasa dan sumbangan anggota masyarakat."
+        }
+      ],
+      "scenario": "Seorang anggota masyarakat menerima penghargaan atas perkhidmatannya"
+    },
+    {
+      "year": 5,
+      "unit": 5,
+      "sk": "5.0",
+      "title": "Beradab Sopan dan Berbudi Pekerti Mulia Dalam Hidup Bermasyarakat",
+      "nilai": "Hemah tinggi",
+      "sp": [
+        {
+          "code": "5.1",
+          "text": "Menyenaraikan contoh amalan beradab sopan dan berbudi pekerti mulia dalam hidup bermasyarakat."
+        },
+        {
+          "code": "5.2",
+          "text": "Menjelaskan kepentingan amalan beradab sopan dan berbudi pekerti mulia dalam hidup bermasyarakat."
+        },
+        {
+          "code": "5.3",
+          "text": "Menaakul kesan pengabaian amalan beradab sopan dan berbudi pekerti mulia dalam hidup bermasyarakat."
+        },
+        {
+          "code": "5.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan beradab sopan dan berbudi pekerti mulia dalam hidup bermasyarakat."
+        },
+        {
+          "code": "5.5",
+          "text": "Mengamalkan sikap beradab sopan dan berbudi pekerti mulia dalam hidup bermasyarakat."
+        }
+      ],
+      "scenario": "Orang ramai beratur di kaunter perkhidmatan masyarakat"
+    },
+    {
+      "year": 5,
+      "unit": 6,
+      "sk": "6.0",
+      "title": "Amalan Hormat Terhadap Kepelbagaian Budaya Dalam Hidup Bermasyarakat",
+      "nilai": "Hormat",
+      "sp": [
+        {
+          "code": "6.1",
+          "text": "Memberi contoh kepelbagaian budaya dalam hidup bermasyarakat."
+        },
+        {
+          "code": "6.2",
+          "text": "Menghuraikan cara menghormati kepelbagaian budaya dalam hidup bermasyarakat."
+        },
+        {
+          "code": "6.3",
+          "text": "Membuat justifikasi kepentingan menghormati kepelbagaian budaya dalam hidup bermasyarakat."
+        },
+        {
+          "code": "6.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan menghormati kepelbagaian budaya dalam hidup bermasyarakat."
+        },
+        {
+          "code": "6.5",
+          "text": "Mengamalkan sikap menghormati kepelbagaian budaya dalam hidup bermasyarakat."
+        }
+      ],
+      "scenario": "Penduduk menganjurkan program pertukaran budaya masyarakat"
+    },
+    {
+      "year": 5,
+      "unit": 7,
+      "sk": "7.0",
+      "title": "Sayangi Masyarakat Demi Kesejahteraan Bersama",
+      "nilai": "Kasih sayang",
+      "sp": [
+        {
+          "code": "7.1",
+          "text": "Menyenaraikan contoh amalan menyayangi masyarakat demi kesejahteraan bersama."
+        },
+        {
+          "code": "7.2",
+          "text": "Menghuraikan cara memupuk amalan kasih sayang dalam masyarakat demi kesejahteraan bersama."
+        },
+        {
+          "code": "7.3",
+          "text": "Merumuskan kepentingan amalan menyayangi masyarakat demi kesejahteraan bersama."
+        },
+        {
+          "code": "7.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan menyayangi masyarakat demi kesejahteraan bersama."
+        },
+        {
+          "code": "7.5",
+          "text": "Mengamalkan sikap menyayangi masyarakat demi kesejahteraan bersama."
+        }
+      ],
+      "scenario": "Komuniti mengumpul sumbangan untuk keluarga yang memerlukan"
+    },
+    {
+      "year": 5,
+      "unit": 8,
+      "sk": "8.0",
+      "title": "Amalan Adil Dalam Hidup Bermasyarakat",
+      "nilai": "Keadilan",
+      "sp": [
+        {
+          "code": "8.1",
+          "text": "Menyenaraikan contoh amalan adil dalam hidup bermasyarakat."
+        },
+        {
+          "code": "8.2",
+          "text": "Menjelaskan kepentingan amalan adil dalam hidup bermasyarakat."
+        },
+        {
+          "code": "8.3",
+          "text": "Menghuraikan kesan pengabaian amalan adil dalam hidup bermasyarakat."
+        },
+        {
+          "code": "8.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan adil dalam hidup bermasyarakat."
+        },
+        {
+          "code": "8.5",
+          "text": "Mengamalkan sikap adil dalam hidup bermasyarakat."
+        }
+      ],
+      "scenario": "Jawatankuasa mengagihkan bantuan komuniti secara saksama"
+    },
+    {
+      "year": 5,
+      "unit": 9,
+      "sk": "9.0",
+      "title": "Amalan Berani Dalam Hidup Bermasyarakat",
+      "nilai": "Keberanian",
+      "sp": [
+        {
+          "code": "9.1",
+          "text": "Memberikan contoh amalan berani dalam hidup bermasyarakat."
+        },
+        {
+          "code": "9.2",
+          "text": "Menghuraikan cabaran amalan berani dalam hidup bermasyarakat."
+        },
+        {
+          "code": "9.3",
+          "text": "Menaakul kepentingan amalan berani dalam hidup bermasyarakat."
+        },
+        {
+          "code": "9.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan berani dalam hidup bermasyarakat."
+        },
+        {
+          "code": "9.5",
+          "text": "Mengamalkan sikap berani dalam hidup bermasyarakat."
+        }
+      ],
+      "scenario": "Saksi menyaksikan tindakan yang boleh membahayakan komuniti"
+    },
+    {
+      "year": 5,
+      "unit": 10,
+      "sk": "10.0",
+      "title": "Amalan Jujur Dalam Hidup Bermasyarakat",
+      "nilai": "Kejujuran",
+      "sp": [
+        {
+          "code": "10.1",
+          "text": "Menyenaraikan contoh amalan jujur dalam hidup bermasyarakat."
+        },
+        {
+          "code": "10.2",
+          "text": "Mengenal pasti cara memupuk amalan jujur dalam hidup bermasyarakat."
+        },
+        {
+          "code": "10.3",
+          "text": "Menghuraikan kepentingan amalan jujur dalam hidup bermasyarakat."
+        },
+        {
+          "code": "10.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan jujur dalam hidup bermasyarakat."
+        },
+        {
+          "code": "10.5",
+          "text": "Mengamalkan sikap jujur dalam hidup bermasyarakat."
+        }
+      ],
+      "scenario": "Wakil komuniti perlu melaporkan kutipan derma dengan benar"
+    },
+    {
+      "year": 5,
+      "unit": 11,
+      "sk": "11.0",
+      "title": "Amalan Rajin Dalam Hidup Bermasyarakat",
+      "nilai": "Kerajinan",
+      "sp": [
+        {
+          "code": "11.1",
+          "text": "Menyenaraikan contoh amalan rajin dalam hidup bermasyarakat."
+        },
+        {
+          "code": "11.2",
+          "text": "Mengenal pasti kepentingan amalan rajin dalam hidup bermasyarakat."
+        },
+        {
+          "code": "11.3",
+          "text": "Menjelaskan kesan pengabaian amalan rajin dalam hidup bermasyarakat."
+        },
+        {
+          "code": "11.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan rajin dalam hidup bermasyarakat."
+        },
+        {
+          "code": "11.5",
+          "text": "Mengamalkan sikap rajin dalam hidup bermasyarakat."
+        }
+      ],
+      "scenario": "Penduduk melaksanakan projek taman komuniti sepanjang bulan"
+    },
+    {
+      "year": 5,
+      "unit": 12,
+      "sk": "12.0",
+      "title": "Amalan Kerjasama Dalam Hidup Bermasyarakat",
+      "nilai": "Kerjasama",
+      "sp": [
+        {
+          "code": "12.1",
+          "text": "Menyenaraikan contoh amalan kerjasama dalam hidup bermasyarakat."
+        },
+        {
+          "code": "12.2",
+          "text": "Menghuraikan kepentingan amalan kerjasama dalam hidup bermasyarakat."
+        },
+        {
+          "code": "12.3",
+          "text": "Menjelaskan kesan pengabaian amalan kerjasama dalam hidup bermasyarakat."
+        },
+        {
+          "code": "12.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan kerjasama dalam hidup bermasyarakat."
+        },
+        {
+          "code": "12.5",
+          "text": "Mengamalkan sikap bekerjasama dalam hidup bermasyarakat."
+        }
+      ],
+      "scenario": "Pasukan sukarelawan menyelaraskan kerja selepas banjir"
+    },
+    {
+      "year": 5,
+      "unit": 13,
+      "sk": "13.0",
+      "title": "Amalan Kesederhanaan Dalam Hidup Bermasyarakat",
+      "nilai": "Kesederhanaan",
+      "sp": [
+        {
+          "code": "13.1",
+          "text": "Menyenaraikan bentuk amalan kesederhanaan dalam hidup bermasyarakat."
+        },
+        {
+          "code": "13.2",
+          "text": "Menjelaskan cara amalan kesederhanaan dalam hidup bermasyarakat."
+        },
+        {
+          "code": "13.3",
+          "text": "Menghuraikan kepentingan amalan kesederhanaan dalam hidup bermasyarakat."
+        },
+        {
+          "code": "13.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan kesederhanaan dalam hidup bermasyarakat."
+        },
+        {
+          "code": "13.5",
+          "text": "Mengamalkan sikap sederhana dalam hidup bermasyarakat."
+        }
+      ],
+      "scenario": "Komuniti membincangkan cara mengurangkan sisa plastik"
+    },
+    {
+      "year": 5,
+      "unit": 14,
+      "sk": "14.0",
+      "title": "Amalan Toleransi Dalam Hidup Bermasyarakat",
+      "nilai": "Toleransi",
+      "sp": [
+        {
+          "code": "14.1",
+          "text": "Mengenal pasti contoh amalan toleransi dalam hidup bermasyarakat."
+        },
+        {
+          "code": "14.2",
+          "text": "Menghuraikan kepentingan amalan toleransi dalam hidup bermasyarakat."
+        },
+        {
+          "code": "14.3",
+          "text": "Membuat justifikasi kesan pengabaian amalan toleransi dalam hidup bermasyarakat."
+        },
+        {
+          "code": "14.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan toleransi dalam hidup bermasyarakat."
+        },
+        {
+          "code": "14.5",
+          "text": "Mengamalkan sikap bertoleransi dalam hidup bermasyarakat."
+        }
+      ],
+      "scenario": "Pelbagai kumpulan komuniti berbincang tentang tarikh acara bersama"
+    }
+  ]
+}

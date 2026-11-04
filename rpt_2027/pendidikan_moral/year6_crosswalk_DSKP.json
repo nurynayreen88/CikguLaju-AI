@@ -1,0 +1,430 @@
+{
+  "subject": "Pendidikan Moral",
+  "year": 6,
+  "status": "DRAF_SEMAK",
+  "source_dskp_id": "1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA",
+  "source_book_id": "12YjwUWy6DdVsqP5_azEp987jfvZ6PROo",
+  "notes": "Semakan sumber SK; 14 unit × 3 PdP cadangan; tidak mengesahkan tarikh / halaman buku teks",
+  "units": [
+    {
+      "year": 6,
+      "unit": 1,
+      "sk": "1.0",
+      "title": "Kepercayaan kepada Tuhan Menjamin Kesejahteraan Negara",
+      "nilai": "Kepercayaan kepada Tuhan",
+      "sp": [
+        {
+          "code": "1.1",
+          "text": "Menjelaskan maksud Kepercayaan kepada Tuhan dalam prinsip Rukun Negara."
+        },
+        {
+          "code": "1.2",
+          "text": "Memerihalkan cara mengamalkan kepercayaan kepada Tuhan demi kesejahteraan negara."
+        },
+        {
+          "code": "1.3",
+          "text": "Menghuraikan kepentingan amalan kepercayaan kepada Tuhan demi kesejahteraan negara."
+        },
+        {
+          "code": "1.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan kepercayaan kepada Tuhan demi kesejahteraan negara."
+        },
+        {
+          "code": "1.5",
+          "text": "Mengamalkan sikap kepercayaan kepada Tuhan demi kesejahteraan negara."
+        }
+      ],
+      "scenario": "Rakyat yang berbeza kepercayaan menghayati prinsip pertama Rukun Negara"
+    },
+    {
+      "year": 6,
+      "unit": 2,
+      "sk": "2.0",
+      "title": "Bantuan dan Sokongan Moral Kepada Negara",
+      "nilai": "Baik hati",
+      "sp": [
+        {
+          "code": "2.1",
+          "text": "Menyenaraikan contoh bantuan dan sokongan moral yang boleh disumbangkan kepada negara."
+        },
+        {
+          "code": "2.2",
+          "text": "Menghuraikan cara memupuk budaya memberi bantuan dan sokongan moral kepada negara."
+        },
+        {
+          "code": "2.3",
+          "text": "Menjelaskan kepentingan amalan memberi bantuan dan sokongan moral kepada negara."
+        },
+        {
+          "code": "2.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan memberi bantuan dan sokongan moral kepada negara."
+        },
+        {
+          "code": "2.5",
+          "text": "Mengamalkan sikap memberi bantuan dan sokongan moral kepada negara."
+        }
+      ],
+      "scenario": "Sekumpulan rakyat memberi sokongan moral kepada petugas semasa bencana"
+    },
+    {
+      "year": 6,
+      "unit": 3,
+      "sk": "3.0",
+      "title": "Tanggungjawab Sebagai Warganegara",
+      "nilai": "Bertanggungjawab",
+      "sp": [
+        {
+          "code": "3.1",
+          "text": "Memberikan definisi warganegara."
+        },
+        {
+          "code": "3.2",
+          "text": "Menghuraikan cara melaksanakan tanggungjawab sebagai warganegara."
+        },
+        {
+          "code": "3.3",
+          "text": "Menjana idea kesan pengabaian tanggungjawab sebagai warganegara."
+        },
+        {
+          "code": "3.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan bertanggungjawab sebagai warganegara."
+        },
+        {
+          "code": "3.5",
+          "text": "Mengamalkan sikap bertanggungjawab sebagai warganegara."
+        }
+      ],
+      "scenario": "Murid membincangkan tanggungjawab menjaga kemudahan awam"
+    },
+    {
+      "year": 6,
+      "unit": 4,
+      "sk": "4.0",
+      "title": "Hargai Keunikan Negara",
+      "nilai": "Berterima kasih",
+      "sp": [
+        {
+          "code": "4.1",
+          "text": "Menyenaraikan keunikan negara."
+        },
+        {
+          "code": "4.2",
+          "text": "Menghuraikan cara menghargai keunikan negara."
+        },
+        {
+          "code": "4.3",
+          "text": "Menjelaskan kepentingan amalan menghargai keunikan negara."
+        },
+        {
+          "code": "4.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan menghargai keunikan negara."
+        },
+        {
+          "code": "4.5",
+          "text": "Mengamalkan sikap menghargai keunikan negara."
+        }
+      ],
+      "scenario": "Pameran sekolah mengetengahkan keunikan budaya dan warisan negara"
+    },
+    {
+      "year": 6,
+      "unit": 5,
+      "sk": "5.0",
+      "title": "Amalan Hemah Tinggi Meningkatkan Imej Negara",
+      "nilai": "Hemah tinggi",
+      "sp": [
+        {
+          "code": "5.1",
+          "text": "Menjelaskan contoh amalan hemah tinggi demi meningkatkan imej negara."
+        },
+        {
+          "code": "5.2",
+          "text": "Memerihalkan cara mengamalkan hemah tinggi demi meningkatkan imej negara."
+        },
+        {
+          "code": "5.3",
+          "text": "Menghuraikan kepentingan amalan hemah tinggi demi meningkatkan imej negara."
+        },
+        {
+          "code": "5.4",
+          "text": "Mengekspresikan perasaan berkaitan amalan hemah tinggi demi meningkatkan imej negara."
+        },
+        {
+          "code": "5.5",
+          "text": "Mengamalkan sikap hemah tinggi demi meningkatkan imej negara."
+        }
+      ],
+      "scenario": "Pelancong bertanya tentang adab dan imej rakyat Malaysia"
+    },
+    {
+      "year": 6,
+      "unit": 6,
+      "sk": "6.0",
+      "title": "Hormati Identiti Negara",
+      "nilai": "Hormat",
+      "sp": [
+        {
+          "code": "6.1",
+          "text": "Memberi contoh identiti negara."
+        },
+        {
+          "code": "6.2",
+          "text": "Menghuraikan cara menghormati identiti negara."
+        },
+        {
+          "code": "6.3",
+          "text": "Menaakul kepentingan menghormati identiti negara."
+        },
+        {
+          "code": "6.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan menghormati identiti negara."
+        },
+        {
+          "code": "6.5",
+          "text": "Mengamalkan sikap menghormati identiti negara."
+        }
+      ],
+      "scenario": "Murid mempersiapkan pameran tentang identiti kebangsaan"
+    },
+    {
+      "year": 6,
+      "unit": 7,
+      "sk": "7.0",
+      "title": "Cinta Akan Negara",
+      "nilai": "Kasih sayang",
+      "sp": [
+        {
+          "code": "7.1",
+          "text": "Menyenaraikan contoh amalan cinta akan negara."
+        },
+        {
+          "code": "7.2",
+          "text": "Menghuraikan cara memupuk amalan cinta akan negara."
+        },
+        {
+          "code": "7.3",
+          "text": "Merumuskan kesan pengabaian amalan cinta akan negara."
+        },
+        {
+          "code": "7.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan cinta akan negara."
+        },
+        {
+          "code": "7.5",
+          "text": "Mengamalkan sikap amalan cinta akan negara."
+        }
+      ],
+      "scenario": "Murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan"
+    },
+    {
+      "year": 6,
+      "unit": 8,
+      "sk": "8.0",
+      "title": "Amalan Adil Demi Kesejahteraan Negara",
+      "nilai": "Keadilan",
+      "sp": [
+        {
+          "code": "8.1",
+          "text": "Menyenaraikan contoh institusi yang menegakkan keadilan negara."
+        },
+        {
+          "code": "8.2",
+          "text": "Menghuraikan cara amalan adil demi kesejahteraan negara."
+        },
+        {
+          "code": "8.3",
+          "text": "Menjelaskan kepentingan amalan adil demi kesejahteraan negara."
+        },
+        {
+          "code": "8.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan adil demi kesejahteraan negara."
+        },
+        {
+          "code": "8.5",
+          "text": "Mengamalkan sikap adil demi kesejahteraan negara."
+        }
+      ],
+      "scenario": "Warga membincangkan pengagihan kemudahan awam yang saksama"
+    },
+    {
+      "year": 6,
+      "unit": 9,
+      "sk": "9.0",
+      "title": "Berani Mempertahankan Maruah Negara",
+      "nilai": "Keberanian",
+      "sp": [
+        {
+          "code": "9.1",
+          "text": "Menyenaraikan contoh amalan berani mempertahankan maruah negara."
+        },
+        {
+          "code": "9.2",
+          "text": "Menghuraikan kepentingan amalan berani mempertahankan maruah negara."
+        },
+        {
+          "code": "9.3",
+          "text": "Merumuskan kesan pengabaian amalan berani mempertahankan maruah negara."
+        },
+        {
+          "code": "9.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan berani mempertahankan maruah negara."
+        },
+        {
+          "code": "9.5",
+          "text": "Mengamalkan sikap berani mempertahankan maruah negara."
+        }
+      ],
+      "scenario": "Murid berhadapan maklumat palsu yang menjatuhkan maruah negara"
+    },
+    {
+      "year": 6,
+      "unit": 10,
+      "sk": "10.0",
+      "title": "Kejujuran Demi Kesejahteraan Negara",
+      "nilai": "Kejujuran",
+      "sp": [
+        {
+          "code": "10.1",
+          "text": "Menyenaraikan cara bersikap jujur demi kesejahteraan negara."
+        },
+        {
+          "code": "10.2",
+          "text": "Menghuraikan kepentingan bersikap jujur demi kesejahteraan negara."
+        },
+        {
+          "code": "10.3",
+          "text": "Merumuskan kesan pengabaian sikap jujur demi kesejahteraan negara."
+        },
+        {
+          "code": "10.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan sikap jujur demi kesejahteraan negara."
+        },
+        {
+          "code": "10.5",
+          "text": "Mengamalkan sikap jujur demi kesejahteraan negara."
+        }
+      ],
+      "scenario": "Seorang warga perlu bersikap jujur ketika menggunakan perkhidmatan awam"
+    },
+    {
+      "year": 6,
+      "unit": 11,
+      "sk": "11.0",
+      "title": "Rajin Demi Kemajuan Negara",
+      "nilai": "Kerajinan",
+      "sp": [
+        {
+          "code": "11.1",
+          "text": "Menyenaraikan contoh suri teladan yang mengharumkan nama negara dalam pelbagai bidang."
+        },
+        {
+          "code": "11.2",
+          "text": "Menjelaskan cara amalan rajin demi kemajuan negara."
+        },
+        {
+          "code": "11.3",
+          "text": "Mengenal pasti kepentingan amalan rajin demi kemajuan negara."
+        },
+        {
+          "code": "11.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan rajin demi kemajuan negara."
+        },
+        {
+          "code": "11.5",
+          "text": "Mengamalkan sikap rajin demi kemajuan negara."
+        }
+      ],
+      "scenario": "Murid mengenali usaha tekun rakyat membangunkan negara"
+    },
+    {
+      "year": 6,
+      "unit": 12,
+      "sk": "12.0",
+      "title": "Kerjasama Demi Keharmonian Negara",
+      "nilai": "Kerjasama",
+      "sp": [
+        {
+          "code": "12.1",
+          "text": "Memerihalkan contoh kerjasama demi keharmonian negara."
+        },
+        {
+          "code": "12.2",
+          "text": "Menjelaskan cara memupuk amalan kerjasama demi keharmonian negara."
+        },
+        {
+          "code": "12.3",
+          "text": "Menghuraikan kepentingan amalan kerjasama demi keharmonian negara."
+        },
+        {
+          "code": "12.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan kerjasama demi keharmonian negara."
+        },
+        {
+          "code": "12.5",
+          "text": "Mengamalkan sikap bekerjasama demi keharmonian negara."
+        }
+      ],
+      "scenario": "Rakyat pelbagai latar belakang menjalankan projek kebajikan bersama"
+    },
+    {
+      "year": 6,
+      "unit": 13,
+      "sk": "13.0",
+      "title": "Amalan Kesederhanaan Demi kesejahteraan Negara",
+      "nilai": "Kesederhanaan",
+      "sp": [
+        {
+          "code": "13.1",
+          "text": "Menyenaraikan contoh amalan kesederhanaan demi kesejahteraan negara."
+        },
+        {
+          "code": "13.2",
+          "text": "Menghuraikan kepentingan amalan kesederhanaan demi kesejahteraan negara."
+        },
+        {
+          "code": "13.3",
+          "text": "Merumuskan kesan pengabaian amalan kesederhanaan demi kesejahteraan negara."
+        },
+        {
+          "code": "13.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan kesederhanaan demi kesejahteraan negara."
+        },
+        {
+          "code": "13.5",
+          "text": "Mengamalkan sikap bersederhana demi kesejahteraan negara."
+        }
+      ],
+      "scenario": "Komuniti merancang penggunaan sumber negara secara berhemat"
+    },
+    {
+      "year": 6,
+      "unit": 14,
+      "sk": "14.0",
+      "title": "Amalan Toleransi Demi Perpaduan Negara",
+      "nilai": "Toleransi",
+      "sp": [
+        {
+          "code": "14.1",
+          "text": "Memberi contoh amalan toleransi demi perpaduan negara."
+        },
+        {
+          "code": "14.2",
+          "text": "Menghuraikan kepentingan amalan toleransi demi perpaduan negara."
+        },
+        {
+          "code": "14.3",
+          "text": "Merumuskan kesan pengabaian amalan toleransi demi perpaduan negara."
+        },
+        {
+          "code": "14.4",
+          "text": "Mengekspresikan perasaan berkaitan dengan amalan toleransi demi perpaduan negara."
+        },
+        {
+          "code": "14.5",
+          "text": "Mengamalkan sikap bertoleransi demi perpaduan negara."
+        }
+      ],
+      "scenario": "Masyarakat berbeza budaya berbincang secara aman demi perpaduan"
+    }
+  ]
+}
