@@ -205,16 +205,17 @@ except Exception as _pi_rpt_2027_exc:
     print("Pendidikan Islam RPT 2027 Telegram bridge unavailable:", repr(_pi_rpt_2027_exc), flush=True)
 
 
-# PJPK 2027 admin-only preview. OFF unless explicitly enabled on Render.
-# This bridge reads standalone DRAFT files in read-only mode and intercepts only
-# admin PJPK choices. Regular users continue through the existing PJPK safe gate.
-# No DB changes, quota changes or READY promotions are performed.
+# PJPK Year 2-6 DRAF RPH: available to regular Telegram users via the same
+# existing class/date, RPH Word/PDF, subscription and free-credit gates.
+# Source is the 339-row RPT 2027 manifest; all rows remain DRAF/not READY.
+# This bridge performs no database, user, subscription or quota mutation.
 try:
-    from web.pjpk_2027_preview_runtime import install as install_pjpk_preview
-    PJPK_2027_PREVIEW_INSTALLED = install_pjpk_preview(vars(telegram_runtime))
-except Exception as _pjpk_preview_exc:
-    PJPK_2027_PREVIEW_INSTALLED = False
-    print("PJPK preview unavailable:", repr(_pjpk_preview_exc), flush=True)
+    from web.pjpk_2027_preview_runtime import install as install_pjpk_rph_2027
+    PJPK_2027_RPH_INSTALLED = install_pjpk_rph_2027(
+        vars(telegram_runtime), enabled=True)
+except Exception as _pjpk_rph_exc:
+    PJPK_2027_RPH_INSTALLED = False
+    print("PJPK DRAF RPH bridge unavailable:", repr(_pjpk_rph_exc), flush=True)
 
 
 # PJPK RPT 2027 (PDF DRAF) — read-only paid-gated route.
