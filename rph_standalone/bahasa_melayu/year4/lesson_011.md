@@ -4,7 +4,7 @@
 **Tajuk aktiviti:** Istimewanya Kita
 **Tajuk:** Istimewanya Kita
 **SK:** 4.2 Menghayati keindahan dan kesantunan bahasa dalam bahan sastera.
-**SP:** 4.2.1 — Melafazkan dan menjelaskan maksud sajak.
+**SP:** 4.2.1 — Melafazkan dan menjelaskan maksud sajak
 **Sumber disemak:** Buku Teks BM Tahun 4 SK **m/s 11** (bukan m/s 6); sajak tentang ibu, guru dan pahlawan. **BA:** Belum disahkan.
 **Objektif:** Murid mendeklamasikan sekurang-kurangnya satu rangkap dengan sebutan serta intonasi sesuai dan menjelaskan dua maksud daripada sajak.
 **BBM:** BT m/s 11, kad maksud rangkap dan rubrik ringkas. **Masa:** 60 minit, boleh disesuaikan.
