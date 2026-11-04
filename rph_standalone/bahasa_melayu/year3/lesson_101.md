@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 101
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 101
 
 **ID:** BM3-P101  
 **Tema/Unit:** Kebudayaan, Kesenian dan Estetika; U14: Kenali Kesenian Kita  
@@ -33,7 +33,7 @@
 
 **RPH Integrasi PKJR (belum disahkan):** HP PKJR 5.1.3; BAM m/s 22, Aktiviti 20; fokus cara pemakaian topi keledar basikal. Kod BM SK/SP di atas kekal berasingan daripada HP PKJR.  
 **Status QA:** DRAF — PKJR berpandukan BAM ditambah; belum lulus BPG, A4, kalender atau CI. BUKAN READY.  
-**Kawalan:** Jika topik sama dengan Lesson lain, RPH ini ialah sesi susulan berfokus berbeza; jangan nombor semula. Penerbitan ke Telegram/Web ditangguhkan.
+**Kawalan:** Jika topik sama dengan PdP lain, RPH ini ialah sesi susulan berfokus berbeza; jangan nombor semula. Penerbitan ke Telegram/Web ditangguhkan.
 
 ## Integrasi PKJR — 10 minit daripada Aktiviti 2
 

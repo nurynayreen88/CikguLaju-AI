@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 2 — Lesson 059
+# RPH Standalone Bahasa Melayu Tahun 2 — PdP 059
 
 **Tema/Unit:** Kebersihan dan Kesihatan; U8: Jadikan Amalan  
 **Tajuk:** Minumlah Air untuk Cergas dan Cerdas  
@@ -31,4 +31,4 @@
 **Tindakan murid:** Murid menyatakan satu kemahiran yang dikuasai dan satu contoh amalan harian.
 
 **Status:** DRAF — semakan kurikulum, BA dan format cetakan belum selesai.
-**Nota audit:** Ini ialah cadangan sesi pengukuhan berlainan produk, bukan keputusan rasmi untuk mengekalkan dua Lesson dengan tajuk sama.  Tiada latihan BA atau kod PKJR rasmi direka. Fail tidak diterbitkan kepada pengguna.
+**Nota audit:** Ini ialah cadangan sesi pengukuhan berlainan produk, bukan keputusan rasmi untuk mengekalkan dua PdP dengan tajuk sama.  Tiada latihan BA atau kod PKJR rasmi direka. Fail tidak diterbitkan kepada pengguna.

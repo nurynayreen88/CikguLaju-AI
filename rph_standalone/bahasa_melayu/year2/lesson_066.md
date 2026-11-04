@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 2 — Lesson 066
+# RPH Standalone Bahasa Melayu Tahun 2 — PdP 066
 
 **Tema / Unit:** Kebersihan dan Kesihatan; U9: Aktifkan Diri  
 **Tajuk:** Berkemas sambil Bersenam  
@@ -20,7 +20,7 @@
 
 ## Aktiviti 2 — Aplikasi dan penghasilan (20 minit)
 **Tindakan guru:** Guru meminta murid memberikan arahan kepada rakan menggunakan kata sendi nama dan menulis jawapan.
-**Tindakan murid:** Murid membina empat ayat tentang kedudukan barang yang berbeza daripada Lesson 065.
+**Tindakan murid:** Murid membina empat ayat tentang kedudukan barang yang berbeza daripada PdP 065.
 
 ## Pengukuhan / Penilaian PBD (15 minit)
 **Tindakan guru:** Semak empat penggunaan kata sendi nama; sesi ulangan sumber belum diputuskan.

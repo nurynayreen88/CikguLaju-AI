@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 071
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 071
 
 **ID:** BM3-P071  
 **Tema/Unit:** Keselamatan; U9: Alatan Keselamatan  
@@ -10,7 +10,7 @@
 **Fokus:** kata penguat  
 **Masa cadangan:** 60 minit; mengikut jadual guru, hanya selepas kelulusan akademik.  
 **Objektif:** Memilih lima kata penguat dan membina tiga ayat bertema.  
-**Bahan:** gambar jam tangan pintar; buku teks/aktiviti bagi Lesson berkenaan; senarai semak PBD.
+**Bahan:** gambar jam tangan pintar; buku teks/aktiviti bagi PdP berkenaan; senarai semak PBD.
 
 ## Set induksi (5 minit)
 **Guru:** Mengemukakan gambar jam tangan pintar untuk mencetuskan perbincangan.

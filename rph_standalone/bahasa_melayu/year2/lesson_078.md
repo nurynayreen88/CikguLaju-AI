@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 2 — Lesson 078
+# RPH Standalone Bahasa Melayu Tahun 2 — PdP 078
 
 **Tema / Unit:** Kebudayaan Kita; U10: Uniknya Budaya Kita  
 **Tajuk:** Nasi Ambeng  
@@ -23,7 +23,7 @@
 **Tindakan murid:** Murid menulis idea keseluruhan dengan sokongan daripada petikan.
 
 ## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Nilai rumusan dan alasan; bukan salinan Lesson 073.
+**Tindakan guru:** Nilai rumusan dan alasan; bukan salinan PdP 073.
 **Tindakan murid:** Murid menyerahkan hasil atau memberi respons individu dan membuat pembetulan selepas maklum balas guru.
 
 ## Penutup (5 minit)

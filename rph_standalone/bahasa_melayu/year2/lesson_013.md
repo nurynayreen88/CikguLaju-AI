@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 2 — Lesson 013
+# RPH Standalone Bahasa Melayu Tahun 2 — PdP 013
 
 **Tema / Unit:** Kekeluargaan; U2: Cerita Keluarga  
 **Tajuk:** Hamster Kesayangan Hani  
@@ -23,7 +23,7 @@
 **Tindakan murid:** Murid menulis empat ayat dan saling menyemak huruf besar serta ketepatan penggunaan.
 
 ## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Nilai empat ayat baharu, bukan mengulangi lembaran Lesson 012; sesi susulan belum ditentukan sebagai PdP rasmi.
+**Tindakan guru:** Nilai empat ayat baharu, bukan mengulangi lembaran PdP 012; sesi susulan belum ditentukan sebagai PdP rasmi.
 **Tindakan murid:** Murid menunjukkan bukti lisan, bacaan atau penulisan yang telah dihasilkan dan membetulkan jawapan berdasarkan maklum balas.
 
 ## Penutup (5 minit)

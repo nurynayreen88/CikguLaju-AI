@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 2 — Lesson 023
+# RPH Standalone Bahasa Melayu Tahun 2 — PdP 023
 
 **Tema/Unit:** Kekeluargaan; U3: Keluarga Berhemah  
 **Tajuk:** Penilaian Tema 1  
@@ -15,7 +15,7 @@
 **Tindakan murid:** Murid menyatakan satu pengalaman atau pengetahuan sedia ada yang relevan.
 
 ## Aktiviti 1 — Rangsangan Buku Teks (15 minit)
-**Tindakan guru:** Guru menerangkan stesen pentaksiran empat kemahiran berdasarkan Lesson 001–022; tidak mencipta SP baharu.
+**Tindakan guru:** Guru menerangkan stesen pentaksiran empat kemahiran berdasarkan PdP 001–022; tidak mencipta SP baharu.
 **Tindakan murid:** Murid mengikuti empat stesen: menjawab satu soalan, membaca dua ayat, menyalin satu ayat dan mengelaskan tiga kata nama.
 
 ## Aktiviti 2 — Aplikasi kepada situasi (20 minit)

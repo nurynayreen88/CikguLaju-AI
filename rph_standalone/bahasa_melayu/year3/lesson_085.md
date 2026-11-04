@@ -1,6 +1,6 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 085
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 085
 
-**ID Lesson:** BM3-P085  
+**ID PdP:** BM3-P085  
 **Tema / Unit:** Perpaduan; U11: Hormat-menghormati Budaya Kita  
 **Tajuk dalam RPT/BT calon:** Cahaya Keharmonian  
 **Standard Kandungan (SK):** 4.2 Menghayati keindahan dan kesantunan bahasa dalam bahan sastera.  
@@ -34,4 +34,4 @@
 **Status QA:** DRAF — **bukan READY**.  
 **Bukti padanan BA/BT:** Petunjuk BT dan kod SP ditemui dalam Buku Aktiviti jilid berkaitan; butiran Buku Teks sebenar masih perlu diaudit.  
 **Isu yang perlu diselesaikan:** Semakan muka surat Buku Teks penuh, cetakan satu A4 dan ujian runtime/CI.  
-**Kawalan:** Boleh digunakan untuk semakan pedagogi dalaman, namun belum diterbitkan untuk guru. Kekalkan nombor Lesson; jangan ubah data pengguna, `main`, Telegram atau Web secara automatik.
+**Kawalan:** Boleh digunakan untuk semakan pedagogi dalaman, namun belum diterbitkan untuk guru. Kekalkan nombor PdP; jangan ubah data pengguna, `main`, Telegram atau Web secara automatik.

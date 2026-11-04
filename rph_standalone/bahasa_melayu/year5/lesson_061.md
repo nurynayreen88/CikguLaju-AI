@@ -8,7 +8,7 @@
 **Standard Pembelajaran (SP):** 4.1.1 — Bercerita dan mengujarkan dialog yang mengandungi peribahasa dan bahasa yang santun  
 **Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 79  
 **Fokus:** seni — Indahnya Kemesraan  
-**Objektif PdP:** Murid dapat mempersembahkan satu respons atau hasil seni bahasa yang berkaitan 'Indahnya Kemesraan' serta menjelaskan maksudnya dengan tepat.  
+**Objektif PdP:** Murid dapat mengujarkan dialog atau bercerita tentang 'Indahnya Kemesraan' dengan menggunakan sekurang-kurangnya dua ungkapan/peribahasa yang tepat mengikut konteks.
 **Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
 **Masa cadangan:** 60 minit (laras mengikut jadual kelas).
 
@@ -16,17 +16,17 @@
 **Guru:** Memaparkan judul/ilustrasi 'Indahnya Kemesraan' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Perpaduan; U10: Memupuk Perpaduan.  
 **Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Memperdengarkan atau membacakan contoh karya dalam 'Indahnya Kemesraan'; memimpin pengesanan ungkapan, maksud dan ciri bahasa.  
-**Murid:** Membaca/mendengar karya berkaitan 'Indahnya Kemesraan' dan menandakan dua ungkapan atau unsur bahasa yang bermakna.
+## Aktiviti 1 — Fahami penggunaan peribahasa (15 minit)
+**Guru:** Menunjukkan petikan atau dialog berkaitan 'Indahnya Kemesraan' dalam bahan yang dirujuk; mengajak murid meneliti maksud peribahasa berdasarkan situasi.
+**Murid:** Mengenal pasti dua peribahasa/ungkapan dan menerangkan maksudnya melalui contoh situasi dalam tajuk.
 
-## Aktiviti 2 — Aplikasi berpandu seni (20 minit)
-**Guru:** Membimbing persembahan/hasil seni bahasa mengikut jenis karya sebenar dalam sumber dan menghubungkannya dengan situasi tema.  
-**Murid:** Melafazkan, bercerita, menyampaikan dialog atau menghasilkan respons kreatif sesuai SP; menjelaskan maksud dua ungkapan.
+## Aktiviti 2 — Dialog dan persembahan (20 minit)
+**Guru:** Membimbing murid membina dialog empat hingga enam ujaran dengan peribahasa yang digunakan pada konteks yang sesuai; memodelkan intonasi santun.
+**Murid:** Berpasangan membina dialog bertema 'Indahnya Kemesraan', menggunakan dua ungkapan yang relevan, kemudian mempersembahkannya secara lisan.
 
 ## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (4.1.1 — Bercerita dan mengujarkan dialog yang mengandungi peribahasa dan bahasa yang santun) menggunakan bukti hasil tugasan: Semakan respons/persembahan: sebutan, makna dan penggunaan bahasa mengikut SP. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+**Guru:** Merekod ketepatan makna dua peribahasa dan penggunaan dalam dialog/cerita serta kelancaran ujaran, menurut SP (4.1.1 — Bercerita dan mengujarkan dialog yang mengandungi peribahasa dan bahasa yang santun).
+**Murid:** Menjelaskan mengapa ungkapan dipilih dan membetulkan sekurang-kurangnya satu penggunaan jika tidak tepat.
 
 ## Penutup (5 minit)
 **Guru:** Merumuskan kemahiran seni yang digunakan dalam 'Indahnya Kemesraan' dan menghubungkannya dengan SP tanpa menambah standard baharu.  

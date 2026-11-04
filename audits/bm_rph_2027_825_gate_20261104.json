@@ -1,0 +1,97 @@
+{
+  "scope": "BM SK 2027 Years 2–6",
+  "dsdkp_source_hashes": {
+    "2": "c842c22b745ed2c2ea4a6da9932494b97cb62e4eb3937832840fe81c66c32522",
+    "3": "d8498c616447323d7e98c9940b369faeaab2e7e20ab499567943cb16baffa7a7",
+    "4": "42af399fc0abae7a49d81d8a0202fa1249592326e62b92c52bad200c59986373",
+    "5": "28683e60e201838550c760f69388bbe73fe60510e70f311aed957b5f81cb4c7d",
+    "6": "db151ef90a7fcdd8d8b9079a32473ae54c9276d12621d369cf329cc8fe6b24d9"
+  },
+  "ready": false,
+  "checks": "DSKP code presence, parent SK consistency, RPT/RPH metadata, RPH structure and source-release barriers",
+  "years": {
+    "2": {
+      "expected": 164,
+      "counts": {
+        "coded_sp": 161,
+        "contains_draft": 135,
+        "files_seen": 164,
+        "contains_hold": 29,
+        "rpt_pkjr": 17,
+        "thematic_pbd_no_new_sp": 3
+      },
+      "hard_errors": 0,
+      "review_warnings": 0,
+      "errors": [],
+      "warnings": []
+    },
+    "3": {
+      "expected": 165,
+      "counts": {
+        "coded_sp": 165,
+        "contains_draft": 165,
+        "files_seen": 165,
+        "rpt_pkjr": 28,
+        "contains_hold": 8
+      },
+      "hard_errors": 0,
+      "review_warnings": 0,
+      "errors": [],
+      "warnings": []
+    },
+    "4": {
+      "expected": 165,
+      "counts": {
+        "coded_sp": 165,
+        "contains_hold": 165,
+        "contains_draft": 165,
+        "needs_full_source_review": 165,
+        "files_seen": 165,
+        "rpt_pkjr": 24
+      },
+      "hard_errors": 0,
+      "review_warnings": 0,
+      "errors": [],
+      "warnings": []
+    },
+    "5": {
+      "expected": 166,
+      "counts": {
+        "coded_sp": 166,
+        "contains_hold": 166,
+        "contains_draft": 166,
+        "needs_full_source_review": 166,
+        "files_seen": 166,
+        "rpt_pkjr": 24
+      },
+      "hard_errors": 0,
+      "review_warnings": 0,
+      "errors": [],
+      "warnings": []
+    },
+    "6": {
+      "expected": 165,
+      "counts": {
+        "coded_sp": 165,
+        "contains_hold": 165,
+        "contains_draft": 165,
+        "needs_full_source_review": 165,
+        "files_seen": 165,
+        "rpt_pkjr": 21
+      },
+      "hard_errors": 0,
+      "review_warnings": 0,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  "unresolved_source_types": [
+    "BT page-to-task verification",
+    "Buku Aktiviti pages and exercises",
+    "DSKP full text and Roman-subcode semantics",
+    "PKJR/BPG/BAM source mapping",
+    "RPH factual lesson-specificity",
+    "2027 state calendar",
+    "complete visual Word/PDF proof and real Telegram runtime"
+  ]
+}

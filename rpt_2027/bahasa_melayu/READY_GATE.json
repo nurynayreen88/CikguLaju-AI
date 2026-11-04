@@ -19,7 +19,9 @@
       "duplicate_resolutions_verified": false,
       "full_calendar_2027_state_specific_verified": false,
       "word_pdf_published_and_proofed": false,
-      "runtime_tests_passed": false
+      "runtime_tests_passed": false,
+      "rph_rpt_mechanical_checks_passed": true,
+      "dskp_sp_code_presence_verified": true
     },
     "3": {
       "rph_all_present": true,
@@ -29,7 +31,9 @@
       "duplicate_resolutions_verified": false,
       "full_calendar_2027_state_specific_verified": false,
       "word_pdf_published_and_proofed": false,
-      "runtime_tests_passed": false
+      "runtime_tests_passed": false,
+      "rph_rpt_mechanical_checks_passed": true,
+      "dskp_sp_code_presence_verified": true
     },
     "4": {
       "rph_all_present": true,
@@ -39,7 +43,9 @@
       "duplicate_resolutions_verified": false,
       "full_calendar_2027_state_specific_verified": false,
       "word_pdf_published_and_proofed": false,
-      "runtime_tests_passed": false
+      "runtime_tests_passed": false,
+      "rph_rpt_mechanical_checks_passed": true,
+      "dskp_sp_code_presence_verified": true
     },
     "5": {
       "rph_all_present": true,
@@ -49,7 +55,9 @@
       "duplicate_resolutions_verified": false,
       "full_calendar_2027_state_specific_verified": false,
       "word_pdf_published_and_proofed": false,
-      "runtime_tests_passed": false
+      "runtime_tests_passed": false,
+      "rph_rpt_mechanical_checks_passed": true,
+      "dskp_sp_code_presence_verified": true
     },
     "6": {
       "rph_all_present": true,
@@ -59,8 +67,10 @@
       "duplicate_resolutions_verified": false,
       "full_calendar_2027_state_specific_verified": false,
       "word_pdf_published_and_proofed": false,
-      "runtime_tests_passed": false
+      "runtime_tests_passed": false,
+      "rph_rpt_mechanical_checks_passed": true,
+      "dskp_sp_code_presence_verified": true
     }
   },
-  "note": "Tahun 2: 164/164 calon RPH, 29 HOLD; Tahun 3: 165/165 calon RPH DRAF; Tahun 4–6: 496/496 fail calon RPH diwujudkan (semua HOLD semakan sumber). 0 READY keseluruhan. Kelengkapan fail tidak sama dengan audit akademik. Semakan DSKP, BT/BA, PKJR, kalendar, cetakan dan runtime belum lulus."
+  "note": "Audit silang 825 RPH–RPT dan inventori kod SP daripada DSKP BM SK Tahun 2–6 lulus pada peringkat mekanikal: 825 fail, 822 mempunyai kod SP dan 3 Penilaian Tema Tahun 2 tanpa kod SP baharu. Tahun 4–6: 496 fail masih memerlukan semakan lengkap Buku Teks/Buku Aktiviti, aktiviti khusus dan PKJR. Lulus kod/struktur bukan bukti akademik; seluruh READY gate kekal fail-closed sehingga semua semakan sumber, kalendar, cetakan dan runtime selesai."
 }

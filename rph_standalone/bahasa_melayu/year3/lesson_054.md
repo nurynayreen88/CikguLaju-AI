@@ -1,9 +1,9 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 054
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 054
 
 **ID:** BM3-P054  
 **Tema/Unit:** Keselamatan; U7: Keselamatan di Rumah  
 **Tajuk:** Hati-hati Membantu  
-**SK:** 2.1 Asas membaca dan memahami.  
+**SK:** 2.2 Membaca, memahami, dan menaakul bahan grafik dan bukan grafik.  
 **SP:** 2.2.1 (i) — Membaca, memahami dan mengecam maksud kosa kata  
 **Fokus:** Makna perkataan dalam teks aktiviti  
 **Rujukan RPT:** BA1 m/s 48 — Hati-hati Membantu; aktiviti BA sahaja tanpa BT khusus  

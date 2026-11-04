@@ -1,4 +1,4 @@
-# RPH Standalone Bahasa Melayu Tahun 3 — Lesson 143
+# RPH Standalone Bahasa Melayu Tahun 3 — PdP 143
 
 **ID:** BM3-P143  
 **Tema/Unit:** Pertanian dan Penternakan; U20: Inovasi dalam Penternakan  
@@ -32,4 +32,4 @@
 **Murid:** Menyatakan satu perkara yang dikuasai.
 
 **Status QA:** DRAF — semakan BT/BA khusus telah dilaksanakan, tetapi belum READY.  
-**Kawalan:** Jika topik sama dengan Lesson lain, RPH ini ialah sesi susulan berfokus berbeza; jangan nombor semula. Penerbitan ke Telegram/Web ditangguhkan.
+**Kawalan:** Jika topik sama dengan PdP lain, RPH ini ialah sesi susulan berfokus berbeza; jangan nombor semula. Penerbitan ke Telegram/Web ditangguhkan.
