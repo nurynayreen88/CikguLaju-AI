@@ -4,7 +4,7 @@
 **Fasa PdP:** Amali dan aplikasi  
 **SK:** 1.3, 2.3, 5.2  
 **SP:** 1.3.1, 2.3.1, 5.2.1  
-**Buku teks:** calon m/s 7 daripada RPT 2026; belum disahkan pada buku teks  
+**Buku teks:** m/s 7, disemak visual pada Buku Teks PJPK Tahun 5 (KSSR Semakan 2017).
 **Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
 **Objektif:** (1) Melakukan kemahiran SP 1.3.1 (melakukan putaran menegak 180° dan 360° di atas trampolin dan mendarat di atas trampolin) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.3.1: Mengenal pasti aksi-aksi badan yang membantu putaran.
