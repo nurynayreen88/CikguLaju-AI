@@ -12,6 +12,7 @@ on:
       - 'rph_standalone/english/year[2-6]/**'
       - 'audits/english_primary_2_6_official_sow_index_20261103.json'
       - 'tests/test_english_y2_y6_native_rph_fields.py'
+      - 'tests/test_english_y2_47_sow_metadata_verified_20261104.py'
       - '.github/workflows/english-y2-y6-native-rph-fields.yml'
   push:
     branches: [main]
@@ -33,6 +34,7 @@ jobs:
       - name: Check all 800 Year 2–6 Lesson source-to-document contracts
         run: |
           python -m unittest discover -s tests -p 'test_english_y2_y6_native_rph_fields.py' -v
+          python -m unittest discover -s tests -p 'test_english_y2_47_sow_metadata_verified_20261104.py' -v
           python -m unittest discover -s tests -p 'test_english_y2_y3_rph_render_integrity.py' -v
           python -m unittest discover -s tests -p 'test_english_y4_word_pdf_rows.py' -v
           python -m unittest discover -s tests -p 'test_english_y5_rph_runtime.py' -v
