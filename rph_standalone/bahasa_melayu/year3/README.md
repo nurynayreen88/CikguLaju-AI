@@ -1,6 +1,6 @@
 # CikguLaju AI — RPH Standalone Bahasa Melayu Tahun 3 (2027)
 
-**STATUS: 165/165 fail RPH tersedia • 162 DRAF • 3 HOLD • 0 READY (semakan 4 November 2026).**
+**STATUS: 165/165 fail RPH tersedia • 165 DRAF • 0 HOLD • 0 READY (semakan 4 November 2026).**
 
 ## Liputan
 
@@ -25,7 +25,7 @@
 - Ujian Python `python tools/qa_bm_2027_readiness.py rph` ada tetapi **belum dijalankan di CI/runtime**; pemeriksaan fail dalam sambungan GitHub tidak sama dengan ujian produksi.
 - [Pintu penerbitan](../../../rpt_2027/bahasa_melayu/READY_GATE.json) masih `DRAFT_NOT_PUBLISHED`. Tahun 3 mempunyai `rph_all_present=false` sehingga 165/165 fail ada dan sumber/semakan lulus.
 
-**Baki Tahun 3:** 3 HOLD memerlukan keputusan akademik khusus; semua 165 fail sudah tersedia. Semakan satu halaman A4, kalendar negeri, QA/CI dan pembacaan Telegram belum lulus.
+**Baki Tahun 3:** 0 HOLD PKJR; semua 165 fail sudah tersedia. Semakan satu halaman A4, kalendar negeri, QA/CI dan pembacaan Telegram belum lulus.
 
 
 ## Semakan Buku Teks Jilid 1 pada 4 November 2026
@@ -51,3 +51,7 @@ Semua 28 RPH PKJR kini mempunyai aktiviti khusus 10 minit, arahan guru dan murid
 ## Pemutihan tiga padanan PKJR (4 November 2026)
 
 Lesson 003: HP 1.1.1 mengenal kenderaan disokong kandungan BAM Aktiviti 1. Lesson 010: RPT2026 Aktiviti 2B ialah bahagian B BAM Aktiviti 2 m/s3, bukan aktiviti baharu. Lesson 157: HP asal 4.3.1 tidak padan BAM22 m/s24 alat penahan, dipetakan kepada **HP 6.2.1** berdasarkan BPG/BAM. Ketiga-tiganya DRAF, **bukan READY**. Hanya Lesson 079, 089 dan 094 kekal HOLD. Status semasa **162 DRAF, 3 HOLD, 0 READY**.
+
+## Penentuan tiga HOLD PKJR terakhir (4 November 2026)
+
+Lesson 079 disusun sebagai tugasan lanjutan yang jelas berbeza daripada Lesson 075. Lesson 089 dipetakan kepada HP 4.2.1 (berjalan menghadap lalu lintas) menurut BAM17 m/s19 dan BPG, bukan HP 4.4.2 dalam RPT2026. Lesson 094 HP 4.4.2 sepadan BAM18 m/s20 tingkah laku melintas selamat. **165 DRAF, 0 HOLD, 0 READY**. Status fail lengkap bukan pengesahan cetakan A4, kalendar negeri dan ujian penggunaan Telegram.

@@ -16,7 +16,7 @@ GATE = RPT_BASE / "READY_GATE.json"
 EXPECTED = set(range(1, 166))
 EXPECTED_PKJR = {3, 9, 10, 19, 30, 35, 40, 44, 50, 58, 66, 75, 79, 84, 89,
                  94, 96, 101, 107, 112, 116, 120, 125, 139, 145, 151, 157, 162}
-EXPECTED_HOLD = {79, 89, 94}
+EXPECTED_HOLD = set()
 
 def norm(s):
     s = re.sub(r"<[^>]*>", "", s)

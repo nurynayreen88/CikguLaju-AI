@@ -31,12 +31,12 @@
 **Guru:** Merumuskan Memahami cerita dan nilai perpaduan dan nilai berkaitan unit.
 **Murid:** Menyatakan satu kemahiran yang telah dipelajari.
 
-**Status QA:** HOLD — PKJR berpandukan BAM ditambah; belum lulus BPG, A4, kalender atau CI. BUKAN READY.  
+**Status QA:** DRAF — keselarasan HP/BAM diperiksa; belum READY kerana BPG keseluruhan, kalendar 2027, A4 dan runtime.  
 **Kawalan:** Pemetaan PKJR daripada modul asal belum disahkan, maka kandungan ini tidak boleh diterbitkan.
 
 ## Integrasi PKJR — 10 minit daripada Aktiviti 2
 
-**Sumber:** HP PKJR 4.4.2 (calon RPT 2026), BAM PKJR Tahun 3 Aktiviti 17, m/s 19, *Berjalan Secara Selamat*. Bahan ini berasingan daripada Buku Aktiviti Bahasa Melayu.
+**Sumber:** HP PKJR 4.2.1 (dibetulkan daripada 4.4.2 dalam RPT 2026), BAM PKJR Tahun 3 Aktiviti 17, m/s 19, *Berjalan Secara Selamat*. Bahan ini berasingan daripada Buku Aktiviti Bahasa Melayu.
 
 **Guru:** Menunjukkan ilustrasi atau petikan BAM Aktiviti 17 dan membimbing pemerhatian keselamatan jalan raya.
 
@@ -46,6 +46,8 @@
 
 **Peruntukan:** Ambil 10 minit daripada Aktiviti 2 sedia ada (tidak menambah durasi PdP).
 
-**Keputusan QA:** HOLD — Kod HP 4.4.2 RPT 2026 belum dapat dipastikan sepadan BAM Aktiviti 17. Perlu semak BPG.
+**Keputusan QA:** DRAF — BAM Aktiviti 17 m/s19 membincangkan arah berjalan dan berjalan menghadap lalu lintas; kod HP PKJR dikemas kini daripada 4.4.2 (RPT 2026) kepada 4.2.1 (BPG).
 
 **Sumber BAM:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/
+
+**Pengesahan kes khas (4 November 2026):** BAM Aktiviti 17 m/s19 membincangkan arah berjalan dan berjalan menghadap lalu lintas; kod HP PKJR dikemas kini daripada 4.4.2 (RPT 2026) kepada 4.2.1 (BPG).

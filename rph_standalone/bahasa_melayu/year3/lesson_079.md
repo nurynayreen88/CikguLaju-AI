@@ -32,7 +32,7 @@
 **Guru:** Merumuskan kemahiran yang tepat selepas semakan sumber.
 **Murid:** Menyatakan satu contoh atau pengajaran yang diperoleh.
 
-**Status QA:** HOLD — bahagian PKJR berpandukan BAM ditambah; belum READY (BPG/CI/A4/takwim belum disahkan).  
+**Status QA:** DRAF — keselarasan HP/BAM diperiksa; belum READY kerana BPG keseluruhan, kalendar 2027, A4 dan runtime.  
 **Kawalan:** Padanan Buku Teks, tarikh negeri, format A4 dan CI belum lulus.  
 **Pengeluaran:** Staging sahaja; tidak mengubah main, database, Telegram atau Web.
 
@@ -51,3 +51,5 @@
 **Status sumber:** HOLD — Pendua Aktiviti 14 dengan Lesson 075; bentuk sesi susulan perlu diputuskan.
 
 **Rujukan BAM:** https://fliphtml5.com/zwnvd/dizd/PKJR_BAM_Tahun_3/
+
+**Pengesahan kes khas (4 November 2026):** BAM Aktiviti 14 m/s16 dijadikan sesi susulan khusus: murid menulis tiga ayat sendiri dan membentangkan cara meningkatkan kebolehlihatan, bukan mengulang isian Lesson 075.
