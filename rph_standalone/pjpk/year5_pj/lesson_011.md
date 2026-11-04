@@ -4,7 +4,7 @@
 **Fasa PdP:** Sesi pertama — tunjuk cara dan asas  
 **SK:** 1.6, 2.6, 5.4  
 **SP:** 1.6.1, 1.6.2, 1.6.5, 2.6.1, 2.6.2, 2.6.5, 5.4.1  
-**Buku teks:** calon m/s 16-17 daripada RPT 2026; belum disahkan pada buku teks  
+**Buku teks:** m/s 16-17, disemak visual pada Buku Teks PJPK Tahun 5 (KSSR Semakan 2017).
 **Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
 **Objektif:** (1) Melakukan kemahiran SP 1.6.1 (melakukan pelbagai cara hantaran bola ke sasaran dengan menggunakan alatan dan anggota badan yang dibenarkan) pada dua cubaan dengan bimbingan, kemudian membaiki satu teknik. (2) Menerangkan satu konsep berkaitan SP 2.6.1: Menjelaskan perbezaan pelbagai cara menghantar bola ke sasaran.
