@@ -3,17 +3,21 @@ on:
   push:
     branches:
       - staging/pendidikan-moral-y2-y6-20261104
+      - staging/moral-96h-coverage-plan-20261104
     paths:
       - 'rph_standalone/pendidikan_moral/**'
       - 'materials/pendidikan_moral/**'
       - 'rpt_2027/pendidikan_moral/**'
       - 'scripts/check_pendidikan_moral_y2_y6.py'
       - 'scripts/check_moral_verified_activity_batch.py'
+      - 'scripts/check_moral_96h_planning.py'
+      - 'scripts/check_moral_96_downloads.py'
       - 'scripts/check_pm_v2600_stage_parity.py'
       - 'scripts/check_pendidikan_moral_release_readiness.py'
       - 'scripts/check_pm_80_beta.py'
       - 'web/pendidikan_moral_80_runtime.py'
       - 'rpt_2027/english/telegram_downloads.py'
+      - 'rpt_2027/pendidikan_moral/complete_96_downloads.py'
       - 'tools/run_telegram_with_curriculum_api.py'
       - 'scripts/preview_pm_y2_sp44_v2600_safe_patch.py'
       - '.github/workflows/pendidikan-moral-y2-y6-qa.yml'
@@ -26,6 +30,8 @@ on:
       - 'rpt_2027/pendidikan_moral/**'
       - 'scripts/check_pendidikan_moral_y2_y6.py'
       - 'scripts/check_moral_verified_activity_batch.py'
+      - 'scripts/check_moral_96h_planning.py'
+      - 'scripts/check_moral_96_downloads.py'
       - 'scripts/check_pm_v2600_stage_parity.py'
       - 'scripts/check_pendidikan_moral_release_readiness.py'
       - 'scripts/preview_pm_y2_sp44_v2600_safe_patch.py'
@@ -62,13 +68,19 @@ jobs:
       - name: Cross-check all staged Moral SP against current v26.00 master without DB changes
         run: python scripts/check_pm_v2600_stage_parity.py
       - name: Install provisional PDF QA dependencies
-        run: python -m pip install reportlab==4.2.5 pypdf==5.1.0
+        run: python -m pip install reportlab==4.2.5 pypdf==5.1.0 python-docx==1.1.2
       - name: Compile provisional Moral runtime, PDF delivery and beta tests
         run: python -m py_compile web/pendidikan_moral_80_runtime.py rpt_2027/pendidikan_moral/telegram_downloads.py scripts/check_pm_80_beta.py
       - name: Validate 80 percent beta - 210 native RPH plus five paid RPT PDFs
         run: python scripts/check_pm_80_beta.py
       - name: Verify 33 visual-book-source Moral RPH against DSKP and page ledger
         run: python scripts/check_moral_verified_activity_batch.py
+      - name: Verify 96-hour planning slots without treating extra sessions as READY
+        run: python scripts/check_moral_96h_planning.py
+      - name: Compile complete Moral 96-session RPT and 54-RPH PDF/Word download modules
+        run: python -m py_compile rpt_2027/pendidikan_moral/complete_96_downloads.py scripts/check_moral_96_downloads.py
+      - name: Verify 10 RPT PDFs, 270 supplementary RPH pages, editable Word and paid Telegram callbacks
+        run: python scripts/check_moral_96_downloads.py
       - name: Full-release gate - informational only for explicitly provisional beta
         if: always()
         continue-on-error: true
