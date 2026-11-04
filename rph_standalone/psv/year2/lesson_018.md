@@ -1,35 +1,22 @@
 # RPH Pendidikan Seni Visual Tahun 2 — PdP 018
+**Status:** DRAF SEMAK (sasaran mutu 90%; belum aktif dalam bot)  
+**Unit:** 5 — Bersukan Badan Sihat  
+**Fokus:** Penghasilan karya berfokus | **Teknik:** Gosokan  
+**SK:** 3.1  
+**SP:** 3.1.1  
+**Buku Teks:** Pendidikan Kesenian Tahun 2 (bahagian Seni Visual), ms 40–41 (unit 38-41)  
+**BBM:** krayon, kertas lukisan, daun dan permukaan berjalinan selamat  
+**Masa:** 60 minit
 
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
+## Objektif dan kriteria kejayaan
+Pada akhir PdP, murid dapat menghasilkan karya Bersukan Badan Sihat menggunakan gosokan secara terkawal. Bukti kejayaan: Produk amali menunjukkan sekurang-kurangnya dua ciri teknik serta amalan keselamatan.
 
-**Bidang:** Menggambar  
-**Jenis/Tajuk:** Gosokan — Bersukan Badan Sihat
-**Unit RPT 2026:** Unit 5 — Bersukan Badan Sihat (BT ms 38–41)  
-**Sumber urutan:** [RPT PSV 2 2026](https://anyflip.com/fnolw/gkho/basic)  
-**Fokus:** Lakar dan pilih media  
-**SK:** 2.1; 3.1  
-**SP:** 2.1.1; 3.1.1  
-**Teknik:** gosokan  
-**Bahasa seni visual:** garisan, rupa, imbangan, kepelbagaian  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** daun, krayon, kertas nipis
-
-## Objektif pembelajaran
-Murid dapat menyiapkan dua lakaran Tekstur Daun dan memilih satu lakaran berdasarkan garisan, rupa, imbangan, kepelbagaian.
-
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Tekstur Daun. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
-
-**Aktiviti 1 (15 minit) — Lakar dan pilih media:** Guru menunjukkan susunan subjek, latar dan ruang pada contoh Tekstur Daun. Murid menyenaraikan alat serta bahan yang diperlukan.
-
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan dua lakaran awal karya gosokan bertema aktiviti sukan, menguji gosokan pada cebisan media, dan memilih satu lakaran selepas menerangkan alasan pemilihan kepada rakan.
-
-**Pengukuhan/Pentaksiran (10 minit):** Dua lakaran, satu ujian media dan alasan pemilihan yang merujuk unsur seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
-
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
-
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
-
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 2](https://drive.google.com/file/d/1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8/view) dan [RPT PSV Tahun 2 2026](https://anyflip.com/fnolw/gkho/basic). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru memperlihatkan karya bertajuk Bersukan Badan Sihat dan murid menyebut pengalaman atau imej yang berkaitan dengan tema.
+**Aktiviti 1 (15 minit) — Penerangan dan eksplorasi:** Guru menyemak lakaran dan menunjukkan urutan penghasilan; murid menyusun bahan serta mengagih tugas.
+**Aktiviti 2 (25 minit) — Amali murid:** Murid mengikut lakaran dan menghasilkan karya: Gubah potongan gosokan menjadi karya bertema permainan atau sukan. Guru menilai proses penggunaan media dan membimbing kemasan awal.
+**Pengukuhan/Pentaksiran (10 minit):** Produk amali menunjukkan sekurang-kurangnya dua ciri teknik serta amalan keselamatan. Guru merekod evidens PBD dan memberi maklum balas mengikut tahap murid.
+**Penutup (5 minit):** Murid menyatakan satu pembelajaran dan menyimpan karya serta membersihkan ruang.
+**Pembezaan:** Murid memerlukan bantuan menggunakan contoh langkah berperingkat; murid mahir membandingkan dua teknik dan menerangkan pemilihan sendiri.
+**Keselamatan:** Alat tumpul dan media tidak toksik; aktiviti gunting/cantuman dipantau guru. 
+**Rujukan:** [DSKP PSV Tahun 2](https://drive.google.com/file/d/1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8/view) | [Buku Teks Pendidikan Kesenian Tahun 2 (bahagian Seni Visual)](https://fliphtml5.com/laiqy/thik/Buku_Teks_Pendidikan_Kesenian_Tahun_2/). Aktiviti ialah adaptasi CikguLaju yang berpandukan kandungan unit; bukan salinan arahan buku secara verbatim.

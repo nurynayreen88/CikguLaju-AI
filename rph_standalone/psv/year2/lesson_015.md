@@ -1,35 +1,22 @@
 # RPH Pendidikan Seni Visual Tahun 2 — PdP 015
-
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
-
-**Bidang:** Mengenal Kraf Tradisional  
-**Jenis/Tajuk:** Alat Permainan — Pusing Gasing Pusing
-**Unit RPT 2026:** Unit 4 — Pusing Gasing Pusing (BT ms 30–33)  
-**Sumber urutan:** [RPT PSV 2 2026](https://anyflip.com/fnolw/gkho/basic)  
-**Fokus:** Hasilkan karya  
+**Status:** DRAF SEMAK (sasaran mutu 90%; belum aktif dalam bot)  
+**Unit:** 4 — Pusing Gasing Pusing  
+**Fokus:** Penghasilan karya berfokus | **Teknik:** Alat permainan gasing  
 **SK:** 3.1  
 **SP:** 3.1.1  
-**Teknik:** binaan kertas  
-**Bahasa seni visual:** bentuk, jalinan, imbangan, kontra  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** kadbod, kertas warna, pita
+**Buku Teks:** Pendidikan Kesenian Tahun 2 (bahagian Seni Visual), ms 32–33 (unit 30-33)  
+**BBM:** kadbod tebal, kertas warna, gam, pita, lidi kertas tumpul  
+**Masa:** 60 minit
 
-## Objektif pembelajaran
-Murid dapat menghasilkan model gasing tradisional daripada kadbod dengan binaan kertas, sekurang-kurangnya dua aspek bentuk, jalinan, imbangan, kontra.
+## Objektif dan kriteria kejayaan
+Pada akhir PdP, murid dapat menghasilkan karya Pusing Gasing Pusing menggunakan alat permainan gasing secara terkawal. Bukti kejayaan: Produk amali menunjukkan sekurang-kurangnya dua ciri teknik serta amalan keselamatan.
 
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Model Gasing Kertas. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
-
-**Aktiviti 1 (15 minit) — Hasilkan karya:** Guru menyemak lakaran terpilih, menunjukkan urutan penghasilan dan mengingatkan keselamatan alat kadbod, kertas warna, pita. Murid menyediakan bahan serta menetapkan kriteria karya.
-
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menghasilkan model gasing tradisional daripada kadbod mengikut lakaran menggunakan binaan kertas, memperbaiki pemilihan media dan susunan berdasarkan bimbingan guru. Murid melabelkan karya dan menyimpan dengan kemas.
-
-**Pengukuhan/Pentaksiran (10 minit):** Karya/proses menunjukkan teknik yang betul, ciri bentuk, jalinan, imbangan, kontra, keputusan kreatif dan penggunaan alat selamat. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
-
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
-
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
-
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 2](https://drive.google.com/file/d/1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8/view) dan [RPT PSV Tahun 2 2026](https://anyflip.com/fnolw/gkho/basic). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru memperlihatkan karya bertajuk Pusing Gasing Pusing dan murid menyebut pengalaman atau imej yang berkaitan dengan tema.
+**Aktiviti 1 (15 minit) — Penerangan dan eksplorasi:** Guru menyemak lakaran dan menunjukkan urutan penghasilan; murid menyusun bahan serta mengagih tugas.
+**Aktiviti 2 (25 minit) — Amali murid:** Murid mengikut lakaran dan menghasilkan karya: Hasilkan model gasing berhias motif tradisional dan uji putaran di atas permukaan rata. Guru menilai proses penggunaan media dan membimbing kemasan awal.
+**Pengukuhan/Pentaksiran (10 minit):** Produk amali menunjukkan sekurang-kurangnya dua ciri teknik serta amalan keselamatan. Guru merekod evidens PBD dan memberi maklum balas mengikut tahap murid.
+**Penutup (5 minit):** Murid menyatakan satu pembelajaran dan menyimpan karya serta membersihkan ruang.
+**Pembezaan:** Murid memerlukan bantuan menggunakan contoh langkah berperingkat; murid mahir membandingkan dua teknik dan menerangkan pemilihan sendiri.
+**Keselamatan:** Alat tumpul dan media tidak toksik; aktiviti gunting/cantuman dipantau guru. 
+**Rujukan:** [DSKP PSV Tahun 2](https://drive.google.com/file/d/1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8/view) | [Buku Teks Pendidikan Kesenian Tahun 2 (bahagian Seni Visual)](https://fliphtml5.com/laiqy/thik/Buku_Teks_Pendidikan_Kesenian_Tahun_2/). Aktiviti ialah adaptasi CikguLaju yang berpandukan kandungan unit; bukan salinan arahan buku secara verbatim.

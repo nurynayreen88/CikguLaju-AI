@@ -1,35 +1,22 @@
 # RPH Pendidikan Seni Visual Tahun 2 — PdP 020
+**Status:** DRAF SEMAK  
+**Unit:** Projek Seni Visual penggal pertama  
+**Fokus:** Perancangan dan penyediaan pameran  
+**SK:** 5.1  
+**SP:** 3.3.1 (kod bercetak di bawah SK 5.1 pada DSKP PSV Tahun 2)  
+**Buku Teks:** Projek Kesenian penggal pertama; projek visual disesuaikan tanpa komponen Seni Muzik  
+**BBM:** karya Unit 1–5, label karya, kad, pita tidak merosakkan, meja stabil  
+**Masa:** 60 minit
 
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
+## Objektif dan kriteria kejayaan
+Murid boleh merancang sudut pameran penggal pertama, menyiapkan kapsyen, memilih karya daripada unit terdahulu. Evidens: pelan/kapsyen atau gambar pameran dan ulasan karya.
 
-**Bidang:** Menggambar  
-**Jenis/Tajuk:** Gosokan — Bersukan Badan Sihat
-**Unit RPT 2026:** Unit 5 — Bersukan Badan Sihat (BT ms 38–41)  
-**Sumber urutan:** [RPT PSV 2 2026](https://anyflip.com/fnolw/gkho/basic)  
-**Fokus:** Kemaskan dan apresiasi  
-**SK:** 4.1  
-**SP:** 4.1.1; 4.1.2  
-**Teknik:** gosokan  
-**Bahasa seni visual:** garisan, rupa, imbangan, kepelbagaian  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** daun, krayon, kertas nipis
-
-## Objektif pembelajaran
-Murid dapat memperkemas karya gosokan bertema aktiviti sukan serta mengulasnya menggunakan dua istilah seni visual.
-
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Tekstur Daun. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
-
-**Aktiviti 1 (15 minit) — Kemaskan dan apresiasi:** Guru memperlihatkan kriteria kemasan, teknik gosokan serta penggunaan garisan, rupa, imbangan, kepelbagaian. Murid menyemak bahagian karya yang belum lengkap.
-
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Murid menambah kemasan yang perlu pada karya gosokan bertema aktiviti sukan, mempamerkan hasil di galeri meja dan memberi satu pujian serta satu cadangan berpandukan bahasa seni kepada rakan.
-
-**Pengukuhan/Pentaksiran (10 minit):** Karya akhir, senarai semak murid, dan ulasan rakan yang menyebut teknik serta bahasa seni. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
-
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
-
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
-
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 2](https://drive.google.com/file/d/1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8/view) dan [RPT PSV Tahun 2 2026](https://anyflip.com/fnolw/gkho/basic). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru menunjukkan susunan pameran selamat dan murid menyatakan tanggungjawab kumpulan.
+**Aktiviti 1 (15 minit):** Guru menjelaskan tema pameran, keselamatan pemasangan dan kandungan kapsyen. Murid berbincang dan membahagi peranan.
+**Aktiviti 2 (25 minit) — Projek:** Kumpulan menyenaraikan karya Unit 1–5, menyediakan dua kapsyen (tajuk, media, teknik), melakar susun atur dan mencuba pemasangan yang stabil.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menggunakan senarai semak penglibatan, kreativiti, kerjasama, penyampaian dan penjagaan karya.
+**Penutup (5 minit):** Murid membuat refleksi ringkas dan mengemas bahan.
+**Pembezaan:** Berikan kad peranan bergambar; murid lanjutan menjadi pembimbing galeri.
+**Keselamatan:** Pastikan laluan bebas halangan, tiada jarum/paku, dan bahan dilekatkan dengan pita sesuai.
+**Rujukan:** [DSKP PSV Tahun 2](https://drive.google.com/file/d/1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8/view); [Buku Teks Pendidikan Kesenian Tahun 2 (bahagian Seni Visual)](https://fliphtml5.com/laiqy/thik/Buku_Teks_Pendidikan_Kesenian_Tahun_2/). Cadangan projek PSV CikguLaju.

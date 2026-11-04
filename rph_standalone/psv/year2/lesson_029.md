@@ -1,35 +1,22 @@
 # RPH Pendidikan Seni Visual Tahun 2 — PdP 029
+**Status:** DRAF SEMAK (sasaran mutu 90%; belum aktif dalam bot)  
+**Unit:** 7 — Burung Kenek-kenek  
+**Fokus:** Kemasan karya serta apresiasi | **Teknik:** Topeng burung  
+**SK:** 3.1; 4.1  
+**SP:** 3.1.1; 4.1.1; 4.1.2  
+**Buku Teks:** Pendidikan Kesenian Tahun 2 (bahagian Seni Visual), ms 58–59 (unit 56-59)  
+**BBM:** kadbod lembut, kertas warna, tali lembut, gam dan gunting hujung bulat  
+**Masa:** 60 minit
 
-**Status:** DRAF SEMAK — BELUM AKTIF TELEGRAM
+## Objektif dan kriteria kejayaan
+Pada akhir PdP, murid dapat menambah baik hasil Burung Kenek-kenek dan mengulas dua unsur seni serta satu kekuatan karya. Bukti kejayaan: Karya dikemas kini + apresiasi lisan dua unsur seni dan satu cadangan penambahbaikan.
 
-**Bidang:** Mengenal Kraf Tradisional  
-**Jenis/Tajuk:** Tembikar — Uli-Uli Tembikar
-**Unit RPT 2026:** Unit 8 — Uli-Uli Tembikar (BT ms 64–69)  
-**Sumber urutan:** [RPT PSV 2 2026](https://anyflip.com/fnolw/gkho/basic)  
-**Fokus:** Perhatikan dan teroka  
-**SK:** 1.1; 2.1  
-**SP:** 1.1.4; 2.1.3  
-**Teknik:** picitan  
-**Bahasa seni visual:** bentuk, jalinan, imbangan, kepelbagaian  
-**Masa:** 60 minit (cadangan mengikut jadual guru)  
-**BBM:** doh atau tanah liat, alas
-
-## Objektif pembelajaran
-Murid dapat mengenal pasti dua unsur/prinsip seni pada contoh tembikar dan menghasilkan satu sampel picitan.
-
-## Aktiviti PdP
-**Set induksi (5 minit):** Guru memaparkan contoh atau hasil berkaitan Mangkuk Picitan Mini. Murid menyatakan satu ciri visual dan menjangka bahan/teknik yang digunakan.
-
-**Aktiviti 1 (15 minit) — Perhatikan dan teroka:** Guru menunjukkan dua contoh tembikar bertema Mangkuk Picitan Mini dan membandingkan bentuk, jalinan, imbangan, kepelbagaian. Murid menandakan dua ciri yang dapat dilihat.
-
-**Aktiviti 2 (25 minit) — Aktiviti seni:** Guru menunjukkan teknik picitan. Murid mencuba dua sampel kecil menggunakan doh atau tanah liat, membandingkan kesan dan memilih teknik yang sesuai untuk tembikar kecil dengan teknik picitan.
-
-**Pengukuhan/Pentaksiran (10 minit):** Dua unsur yang dikenal pasti dan dua sampel percubaan yang menunjukkan perbezaan kesan. Guru membuat rekod pemerhatian proses dan produk; satu evidens tidak menentukan Tahap Penguasaan muktamad.
-
-**Penutup (5 minit):** Murid menyatakan satu kekuatan karya atau proses serta satu penambahbaikan; guru merumuskan bahasa seni yang dipelajari dan mengarahkan semua mengemas ruang kerja.
-
-**Pembezaan:** Murid yang memerlukan sokongan menggunakan lakaran contoh dan langkah kecil; murid lanjutan menghasilkan variasi susunan atau memberi justifikasi pilihan media.
-
-**Keselamatan:** Gunakan alat tumpul dan bahan tidak toksik. Guru mengawasi aktiviti memotong, menggantung, mengecat serta penggunaan gam; sesuaikan tahap bantuan dengan umur murid.
-
-**Rujukan:** [DSKP PSV Tahun 2](https://drive.google.com/file/d/1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8/view) dan [RPT PSV Tahun 2 2026](https://anyflip.com/fnolw/gkho/basic). Tajuk projek merupakan cadangan CikguLaju, bukan dakwaan tajuk buku teks rasmi. Padanan khusus dengan RPT 2026 dan tarikh 2027 belum disahkan.
+## Langkah PdP
+**Set induksi (5 minit):** Guru memperlihatkan karya bertajuk Burung Kenek-kenek dan murid menyebut pengalaman atau imej yang berkaitan dengan tema.
+**Aktiviti 1 (15 minit) — Penerangan dan eksplorasi:** Guru menunjukkan rubrik ringkas (fungsi, motif, kemasan); murid menandakan dua bahagian yang hendak diperbaiki.
+**Aktiviti 2 (25 minit) — Amali murid:** Murid menyempurnakan karya, mempamerkan di galeri meja dan memberi apresiasi: Ulas jalinan dan rupa topeng serta keselamatan apabila dipakai. Guru merekod hujah murid tentang teknik dan hasil.
+**Pengukuhan/Pentaksiran (10 minit):** Karya dikemas kini + apresiasi lisan dua unsur seni dan satu cadangan penambahbaikan. Guru merekod evidens PBD dan memberi maklum balas mengikut tahap murid.
+**Penutup (5 minit):** Murid menyatakan satu pembelajaran dan menyimpan karya serta membersihkan ruang.
+**Pembezaan:** Murid memerlukan bantuan menggunakan contoh langkah berperingkat; murid mahir membandingkan dua teknik dan menerangkan pemilihan sendiri.
+**Keselamatan:** Alat tumpul dan media tidak toksik; aktiviti gunting/cantuman dipantau guru. 
+**Rujukan:** [DSKP PSV Tahun 2](https://drive.google.com/file/d/1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8/view) | [Buku Teks Pendidikan Kesenian Tahun 2 (bahagian Seni Visual)](https://fliphtml5.com/laiqy/thik/Buku_Teks_Pendidikan_Kesenian_Tahun_2/). Aktiviti ialah adaptasi CikguLaju yang berpandukan kandungan unit; bukan salinan arahan buku secara verbatim.
