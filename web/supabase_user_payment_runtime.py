@@ -7,6 +7,7 @@ fail closed: never silently fall back to a new/empty SQLite payment queue.
 """
 import html
 import os
+from web.payment_receipt_admin_runtime import malaysia_time
 from decimal import Decimal, InvalidOperation
 from datetime import datetime, timedelta, timezone
 
@@ -210,7 +211,7 @@ def install(runtime):
             per = 8
             params = (
                 "bot_payment_requests?select=id,chat_id,amount,status,"
-                "submitted_at&order=id.desc"
+                "submitted_at,proof_received_at&order=id.desc"
                 f"&limit={per + 1}&offset={per * page}"
             )
             if kind == "pending":
@@ -234,6 +235,10 @@ def install(runtime):
                     str(payment.get("status")), "•")
                 lines.append(f"{icon} #{payment['id']} • ID <code>{uid}</code> "
                              f"• RM{amount}")
+                lines.append("  🗓️ Permohonan: " +
+                             malaysia_time(payment.get("submitted_at")))
+                lines.append("  🧾 Resit: " +
+                             malaysia_time(payment.get("proof_received_at")))
                 label = f"{icon} #{payment['id']} {name} • RM{amount}"
                 callback = (f"admin_pending|{int(payment['id'])}"
                             if kind == "pending"
