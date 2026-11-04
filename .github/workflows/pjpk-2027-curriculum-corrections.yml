@@ -1,0 +1,84 @@
+name: PJPK curriculum content correction + RPT rebuild
+on:
+  push:
+    branches:
+      - fix/pjpk-2027-curriculum-content-audit-20261104
+    paths:
+      - 'scripts/check_pjpk_2027_curriculum_crosswalk.py'
+      - 'rpt_2027/pjpk/pjpk_2027_rpt_manifest.json'
+      - 'rph_standalone/pjpk/**'
+      - '.github/workflows/pjpk-2027-curriculum-corrections.yml'
+      - 'scripts/build_pjpk_rpt_2027.py'
+  pull_request:
+    paths:
+      - 'scripts/check_pjpk_2027_curriculum_crosswalk.py'
+      - 'rpt_2027/pjpk/**'
+      - 'rph_standalone/pjpk/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  curriculum-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Inspect 339 RPT and 338 RPH (fail closed)
+        run: python scripts/check_pjpk_2027_curriculum_crosswalk.py | tee pjpk_audit_output.json
+      - name: Run Telegram RPT paid-access regression
+        run: python -m unittest discover -s tests -p 'test_pjpk_rpt_2027_telegram.py' -v
+      - name: Run PJPK admin-preview isolation
+        run: python -m unittest discover -s tests -p 'test_pjpk_2027_preview_runtime.py' -v
+      - name: Install Word/PDF dependencies
+        run: python -m pip install --disable-pip-version-check reportlab python-docx pypdf
+      - name: Rebuild all 5 RPT PDFs and DOCX files from corrected sources
+        run: python scripts/build_pjpk_rpt_2027.py --out-dir dist/RPT_PJPK_2027
+      - name: Validate regenerated A4 PDFs and repaired topics
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from pypdf import PdfReader
+          from zipfile import ZipFile
+          files=list(Path('dist/RPT_PJPK_2027').glob('*.pdf'))
+          docs=list(Path('dist/RPT_PJPK_2027').glob('*.docx'))
+          assert len(files)==len(docs)==5
+          for pdf in files:
+            pages=PdfReader(str(pdf)).pages
+            assert len(pages)>=5, pdf
+            assert all(float(x.mediabox.width)>800 for x in pages)
+            t=' '.join(' '.join((x.extract_text() or '').split()) for x in pages)
+            assert 'MINGGU PENGAJARAN 38' in t and 'DRAF' in t
+            if 'Tahun_2_' in pdf.name:
+              assert 'Mengurus perasaan bimbang dan cemburu' in t
+              assert 'Mengurus rasa bimbang dan marah' not in t
+            if 'Tahun_4_' in pdf.name:
+              assert 'Menangani gejala sosial dengan sokongan keluarga' in t
+              assert 'Tanggungjawab ahli keluarga' not in t
+            if 'Tahun_6_' in pdf.name:
+              assert 'BLOK' in t and '5.2.2' in t
+          z=Path('dist/RPT_PJPK_2027_Tahun_2_6_DRAF_WORD_PDF.zip')
+          with ZipFile(z) as f:
+            assert len(f.namelist())==11 and f.testzip() is None
+          print('PASS: corrected 5 PDFs, 5 editable DOCX, ZIP integrity')
+          PY
+      - name: Upload validated Word/PDF files
+        uses: actions/upload-artifact@v4
+        with:
+          name: RPT-PJPK-2027-CORRECTED-Y2-Y4-WORD-PDF
+          path: dist/RPT_PJPK_2027_Tahun_2_6_DRAF_WORD_PDF.zip
+          retention-days: 7
+          if-no-files-found: error
+      - name: Commit checked PDFs back to correction branch
+        if: github.event_name == 'push'
+        run: |
+          cp dist/RPT_PJPK_2027/*.pdf rpt_2027/pjpk/
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add rpt_2027/pjpk/RPT_PJPK_Tahun_*_2027_DRAF.pdf
+          git diff --cached --quiet || git commit -m "build(pjpk): refresh verified 2027 RPT PDFs after DSKP corrections"
+          git push origin HEAD:refs/heads/fix/pjpk-2027-curriculum-content-audit-20261104

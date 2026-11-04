@@ -1,6 +1,6 @@
 # RPH Pendidikan Kesihatan Tahun 2 — PdP 010
 **Status:** DRAF RPT 2027 • belum diluluskan untuk Telegram  
-**Tajuk:** Mengurus rasa bimbang dan marah — Latihan berpandu  
+**Tajuk:** Mengurus perasaan bimbang dan cemburu — Latihan berpandu  
 **SK:** 3.1  
 **SP:** 3.1.2  
 **Tempoh:** 30 minit (cadangan berasaskan agihan minimum DSKP).  
@@ -8,13 +8,13 @@
 
 **Objektif:** Murid dapat memperlihatkan pencapaian bagi SP 3.1.2: Mengaplikasi cara mengurus perasaan bimbang dan cemburu apabila berlaku perubahan dalam kalangan ahli keluarga serta rakan sebaya. melalui satu respons lisan/bertulis atau simulasi selamat yang bersesuaian tahap.
 
-**Set induksi:** Guru memberikan contoh ringkas bertema "Mengurus rasa bimbang dan marah" dan mengemukakan soalan berkaitan SP. Murid memberi respons awal tanpa membincangkan pengalaman peribadi.
+**Set induksi:** Guru memberikan contoh ringkas bertema "Mengurus perasaan bimbang dan cemburu" dan mengemukakan soalan berkaitan SP. Murid memberi respons awal tanpa membincangkan pengalaman peribadi.
 
-**Aktiviti 1 — Latihan berpandu:** Pasangan membina dialog sopan untuk menyatakan perasaan dan mendapatkan sokongan; kemudian membandingkan kesan kepada diri bagi watak yang mengurus perasaan dengan watak yang membiarkannya berlarutan dalam situasi keluarga dan rakan sebaya.
+**Aktiviti 1 — Penerokaan berpandu:** Guru memperaga dialog watak rekaan yang cemburu apabila rakan menerima perhatian guru; murid mengenal cara menyatakan perasaan dengan sopan.
 
-**Aktiviti 2 — Aplikasi:** Murid mengenal pasti perasaan bimbang atau cemburu dalam situasi adik baharu dan perubahan hubungan rakan sebaya tanpa menghakimi watak.
+**Aktiviti 2 — Aplikasi:** Berpasangan murid menyusun tiga langkah: kenali emosi, bertenang dan berkomunikasi dengan guru/penjaga; kemudian berlatih dialog.
 
-**Pengukuhan/PBD:** Guru menyemak hasil berdasarkan 3.1.2 dengan kriteria ketepatan fakta, alasan pilihan dan tindakan selamat. Murid membuat satu pembetulan berdasarkan maklum balas.
+**Pengukuhan/PBD:** Guru menilai satu dialog pengurusan bimbang atau cemburu dan alasan bagi tindakan yang dipilih (SP 3.1.2).
 
 **Penutup:** Murid menyatakan satu pengetahuan atau tindakan yang boleh diamalkan; guru merekod penguasaan individu dan tindak susul.
 
