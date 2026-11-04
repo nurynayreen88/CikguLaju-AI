@@ -11,6 +11,8 @@ on:
       - "tests/test_pjpk_2027_preview_runtime.py"
       - "scripts/check_pjpk_2027_staging_drafts.py"
       - "audits/pjpk_2027_staging_manifest_20261104.json"
+      - "scripts/build_pjpk_2027_preview_bundle.py"
+      - ".github/workflows/pjpk-2027-staging-checks.yml"
 
 jobs:
   pjpk-staging-checks:
@@ -27,3 +29,68 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_pjpk_2027_preview_runtime.py' -v
       - name: Syntax check entrypoint and source bridge
         run: python -m py_compile web/pjpk_2027_preview_runtime.py tools/run_telegram_with_curriculum_api.py
+
+  build-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install PDF and DOCX dependencies
+        run: python -m pip install --disable-pip-version-check python-docx reportlab pypdf
+      - name: Verify manifest and all 338 source files
+        run: |
+          python scripts/check_pjpk_2027_staging_drafts.py
+          python -m unittest discover -s tests -p 'test_pjpk_2027_preview_runtime.py' -v
+      - name: Build all teacher-facing Word and single-page PDF
+        run: python scripts/build_pjpk_2027_preview_bundle.py --out-dir dist/PJPK_2027
+      - name: Inspect PDF page counts and ZIP contents
+        run: |
+          python - <<'PY'
+          import csv
+          from pathlib import Path
+          from zipfile import ZipFile
+          from pypdf import PdfReader
+          directory = Path("dist/PJPK_2027")
+          docs = sorted(directory.joinpath("Word").glob("*.docx"))
+          pdfs = sorted(directory.joinpath("PDF").glob("*.pdf"))
+          rows = list(csv.DictReader(directory.joinpath("MANIFEST_PRATONTON.csv").open(encoding="utf-8-sig")))
+          assert len(docs) == len(pdfs) == len(rows) == 338
+          for pdf in pdfs:
+              assert len(PdfReader(str(pdf)).pages) == 1, pdf
+          archive = next(Path("dist").glob("PJPK_2027_RPH_338_PRATONTON.zip"))
+          with ZipFile(archive) as f:
+              assert len(f.namelist()) == 338 * 2 + 2
+              assert f.testzip() is None
+          print(f"PASS: {len(docs)} Word + {len(pdfs)} PDF A4 one-page; ZIP CRC intact")
+          PY
+      - name: Ensure LibreOffice is present for real DOCX A4 rendering
+        run: |
+          if ! command -v libreoffice >/dev/null 2>&1; then
+            sudo apt-get -qq update
+            sudo DEBIAN_FRONTEND=noninteractive apt-get -y -qq install --no-install-recommends libreoffice-writer fonts-dejavu-core
+          fi
+      - name: Render representative Word files and require one A4 page
+        run: |
+          mkdir -p dist/word-a4-check
+          libreoffice -env:UserInstallation=file:///tmp/lo_pjpk_2027 --headless --convert-to pdf --outdir dist/word-a4-check             dist/PJPK_2027/Word/RPH_PJPK_PJ_Tahun2_PdP001.docx             dist/PJPK_2027/Word/RPH_PJPK_PJ_Tahun3_PdP038.docx             dist/PJPK_2027/Word/RPH_PJPK_PJ_Tahun4_PdP003.docx             dist/PJPK_2027/Word/RPH_PJPK_PJ_Tahun5_PdP010.docx             dist/PJPK_2027/Word/RPH_PJPK_PK_Tahun2_PdP035.docx             dist/PJPK_2027/Word/RPH_PJPK_PK_Tahun6_PdP032.docx
+          python - <<'PY'
+          from pathlib import Path
+          from pypdf import PdfReader
+          docs=list(Path('dist/word-a4-check').glob('*.pdf'))
+          assert len(docs)==6, f"Only {len(docs)} DOCX rendered"
+          for path in docs:
+              reader=PdfReader(str(path))
+              assert len(reader.pages)==1, f"DOCX overflow: {path.name}, pages={len(reader.pages)}"
+              assert all(abs(float(p.mediabox.width)-595.276)<2 for p in reader.pages), path
+          print('PASS: six representative DOCX files render to 1 A4 page')
+          PY
+      - name: Upload download-ready ZIP (DRAF, not READY)
+        uses: actions/upload-artifact@v4
+        with:
+          name: PJPK-2027-338-RPH-Word-PDF-PRATONTON
+          path: dist/PJPK_2027_RPH_338_PRATONTON.zip
+          retention-days: 7
+          if-no-files-found: error
