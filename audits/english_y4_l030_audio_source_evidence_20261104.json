@@ -1,0 +1,62 @@
+{
+  "version": "english-y4-l030-source-evidence-20261104",
+  "year": 4,
+  "lesson": 30,
+  "status": "SOURCE_CONFLICT_AUDIO_CONTENT_NOT_VERIFIED",
+  "sow": {
+    "title": "Primary Year 4 SK Scheme of Work",
+    "url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+    "printed_page": 66,
+    "lesson": "30 (Writing 6)",
+    "standard_pair": {
+      "main": "4.3.2",
+      "complementary": "1.2.5"
+    },
+    "activity_2_audio": "CD2, Track 29",
+    "source_checked": true
+  },
+  "teacher_book": {
+    "title": "Get Smart Plus 4 Teacher's Book",
+    "url": "https://drive.google.com/file/d/1lBWc96e8DCIMSdxzRuLC7CissHL52q8v/view",
+    "printed_page": 39,
+    "pdf_page": 25,
+    "activity_2_audio": "Class CD1 — Track 29",
+    "source_checked": true
+  },
+  "audio_files": [
+    {
+      "disc": "CD1",
+      "track": 29,
+      "drive_file_id": "15tyBPsUwd5z9AknoOOUIiaTN6QT-Xrct",
+      "name": "29 Track 29.mp3",
+      "bytes": 218335,
+      "duration_seconds": 13.325938,
+      "sha256": "7e19b89af1a1cea0d71029a0b6ab6ca3f6a7aed5962258d432649aeca4e5b226",
+      "ffmpeg_decode_pass": true,
+      "actual_spoken_content_verified": false
+    },
+    {
+      "disc": "CD2",
+      "track": 29,
+      "drive_file_id": "1jndYaX3ysrgEERRYQFFojPLxHuwN35Ob",
+      "name": "29 Track 29.mp3",
+      "bytes": 245857,
+      "duration_seconds": 15.046063,
+      "sha256": "bd1478b3d90f055a4ad6d9f1a3ebefbd303e70cd6479597106fddebc5a06bd8e",
+      "ffmpeg_decode_pass": true,
+      "actual_spoken_content_verified": false
+    }
+  ],
+  "interpretation": "The two recordings are distinct binary files and should never be treated as interchangeable. The printed Teacher's Book CD1 track is used as the lesson-plan source reference, but its audio words and Telegram routing are NOT independently confirmed.",
+  "release_gates": {
+    "source_discrepancy_documented": true,
+    "teacher_book_activity_visual_checked": true,
+    "both_mp3_decoded": true,
+    "correct_content_listening_verified": false,
+    "telegram_audio_mapping_verified": false,
+    "teacher_word_download_verified": false,
+    "native_pdf_download_verified": false,
+    "pedagogical_approval": false
+  },
+  "next_action": "Listen to both tracks against Teacher's Book Activity 2 dialogue, verify Telegram's per-lesson audio file ID, then run native Word/PDF teacher test and record signoff. Until then retain explicit AUDIO REFERENCE CONFLICT (DRAF)."
+}
