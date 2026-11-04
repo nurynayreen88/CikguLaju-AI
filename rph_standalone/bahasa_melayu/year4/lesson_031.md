@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 031
 
-**ID:** BM4-P031  
-**Minggu RPT 2027:** M09 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Kesihatan dan Kebersihan; U6: Pilih Gaya Hidup Sihat  
-**Tajuk aktiviti:** Makanan Ruji Kita  
-**Standard Kandungan (SK):** 1.2 Bertutur untuk menyampaikan maklumat dan idea bagi pelbagai tujuan.  
-**Standard Pembelajaran (SP):** 1.2.2 — Menjelaskan dan membanding beza maklumat tersurat dan tersirat dengan menggunakan idea yang kritis dan kreatif  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 35  
-**Fokus:** lisan — Makanan Ruji Kita  
-**Objektif PdP:** Murid dapat memberikan sekurang-kurangnya tiga respons lisan yang relevan tentang 'Makanan Ruji Kita' mengikut kemahiran 1.2.2.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P031
+**Minggu RPT 2027:** M09 (tarikh sebenar mengikut jadual sekolah)
+**Tema/Unit:** Kesihatan dan Kebersihan; U6: Pilih Gaya Hidup Sihat
+**Tajuk aktiviti:** Makanan Ruji Kita
+**Standard Kandungan (SK):** 1.2 Bertutur untuk menyampaikan maklumat dan idea bagi pelbagai tujuan.
+**Standard Pembelajaran (SP):** 1.2.2 — Menjelaskan dan membanding beza maklumat tersurat dan tersirat dengan menggunakan idea yang kritis dan kreatif
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 35. **BA:** Latihan dan halaman asal belum disahkan.
+**Konteks bahan:** Maklumat beras rebus dan beras putih yang dibandingkan dari segi warna, kalsium, kadar penyerapan nutrien serta persamaan.
+**Objektif PdP:** Pada akhir PdP, murid dapat melengkapkan Peta Buih Berganda dengan sekurang-kurangnya dua persamaan dan empat perbezaan serta memberi alasan berdasarkan data BT.
+**Bahan:** Buku Teks pada halaman berkenaan, kad tugasan khusus, bahan grafik/peta jika dinyatakan dan senarai semak PBD.
+**Masa:** 60 minit (boleh disesuaikan dengan jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Makanan Ruji Kita' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kesihatan dan Kebersihan; U6: Pilih Gaya Hidup Sihat.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar gambar beras rebus dan beras putih daripada BT.
+**Murid:** Namakan satu jenis beras yang biasa dimakan keluarga.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Membacakan/menyampaikan maklumat atau dialog berpandukan bahan bertajuk 'Makanan Ruji Kita' dan meminta murid mengenal pasti isi serta sebutan penting.  
-**Murid:** Mendengar/meneliti bahan 'Makanan Ruji Kita'; mencatat tiga maklumat dan menjawab soalan guru secara lisan.
+## Aktiviti 1 — Teliti Buku Teks (15 minit)
+**Guru:** Bimbing pembacaan maklumat kedua-dua jenis beras termasuk warna, kadar penyerapan dan kandungan kalsium yang dinyatakan dalam buku.
+**Murid:** Kenal pasti fakta yang menjadi persamaan dan perbezaan tanpa membuat dakwaan kesihatan di luar bahan.
 
-## Aktiviti 2 — Aplikasi berpandu lisan (20 minit)
-**Guru:** Mengendalikan simulasi komunikasi berpasangan berdasarkan situasi sebenar dalam 'Makanan Ruji Kita'; mengemukakan soalan susulan dan membetulkan sebutan/laras bahasa.  
-**Murid:** Berbual atau memainkan peranan berpandukan tajuk; memberikan tiga respons yang jelas dan sopan serta membaiki jawapan hasil maklum balas.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Bimbing pengisian Peta Buih Berganda dan pertanyaan 'beras manakah lebih baik?' berdasarkan maklumat yang disediakan.
+**Murid:** Isi peta dengan sekurang-kurangnya dua persamaan dan empat perbezaan lalu beri pendapat beralasan.
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (1.2.2 — Menjelaskan dan membanding beza maklumat tersurat dan tersirat dengan menggunakan idea yang kritis dan kreatif) menggunakan bukti hasil tugasan: Senarai semak tiga respons lisan: tepat, jelas dan sesuai konteks. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak ketepatan perbandingan serta hubungan antara data dan alasan.
+**Murid:** Baiki satu perbandingan yang tidak disokong fakta bahan.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran lisan yang digunakan dalam 'Makanan Ruji Kita' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan cara membanding beza dua bahan grafik.
+**Murid:** Nyatakan satu alasan yang boleh disokong oleh maklumat di BT.
 
-**Nota RPT asal:** Mendengar / Bertutur; Pemerhatian respons lisan
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti sumber BT:** BT m/s 35 mengarahkan melengkapkan Peta Buih Berganda dan menjelaskan perbandingan beras rebus dengan beras putih.
+**Status QA:** DRAF — aktiviti BT dan SP disemak secara khusus; BA, PKJR (jika berkenaan), takwim negeri, Word/PDF A4 dan runtime Telegram masih belum lulus. Bukan FINAL READY, jangan terbitkan.

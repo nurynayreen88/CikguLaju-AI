@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 033
 
-**ID:** BM4-P033  
-**Minggu RPT 2027:** M09 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Kesihatan dan Kebersihan; U6: Pilih Gaya Hidup Sihat  
-**Tajuk aktiviti:** Hati-hati Menggunakan Fon Telinga  
-**Standard Kandungan (SK):** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.  
-**Standard Pembelajaran (SP):** 3.2.3 — Menganalisis dan mencatat maklumat tentang sesuatu perkara yang dirujuk  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 37  
-**Fokus:** tulisan — Hati-hati Menggunakan Fon Telinga  
-**Objektif PdP:** Murid dapat menghasilkan sekurang-kurangnya tiga ayat berkaitan 'Hati-hati Menggunakan Fon Telinga' yang menepati kemahiran penulisan dalam SP.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P033
+**Minggu RPT 2027:** M09 (tarikh sebenar mengikut jadual sekolah)
+**Tema/Unit:** Kesihatan dan Kebersihan; U6: Pilih Gaya Hidup Sihat
+**Tajuk aktiviti:** Hati-hati Menggunakan Fon Telinga
+**Standard Kandungan (SK):** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna.
+**Standard Pembelajaran (SP):** 3.2.3 — Menganalisis dan mencatat maklumat tentang sesuatu perkara yang dirujuk
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 37. **BA:** Latihan dan halaman asal belum disahkan.
+**Konteks bahan:** Hadif menghubungi Doktor Azlan untuk mendapatkan maklumat penggunaan fon telinga yang lebih selamat bagi pertandingan reka bentuk poster.
+**Objektif PdP:** Pada akhir PdP, murid dapat mencatat sekurang-kurangnya empat fakta daripada dialog dan menggunakannya untuk melengkapkan poster keselamatan fon telinga.
+**Bahan:** Buku Teks pada halaman berkenaan, kad tugasan khusus, bahan grafik/peta jika dinyatakan dan senarai semak PBD.
+**Masa:** 60 minit (boleh disesuaikan dengan jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Hati-hati Menggunakan Fon Telinga' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kesihatan dan Kebersihan; U6: Pilih Gaya Hidup Sihat.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar poster kosong bertajuk Penggunaan Fon Telinga yang Selamat.
+**Murid:** Nyatakan satu risiko menggunakan fon telinga tanpa berwaspada.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Menunjukkan contoh ayat/perenggan yang relevan dengan 'Hati-hati Menggunakan Fon Telinga' dan memodelkan langkah menyusun isi serta menulis mengikut Menganalisis dan mencatat maklumat tentang sesuatu perkara yang dirujuk.  
-**Murid:** Mengenal pasti kata kunci dan membina rangka/ayat berdasarkan maklumat tajuk 'Hati-hati Menggunakan Fon Telinga'.
+## Aktiviti 1 — Teliti Buku Teks (15 minit)
+**Guru:** Bimbing bacaan dialog Hadif–Doktor Azlan pada BT m/s 37, kenal pasti maklumat masalah pendengaran, tempoh penggunaan dan tahap bunyi sebagai fakta teks.
+**Murid:** Garis empat maklumat yang dinyatakan dan asingkan masalah daripada cadangan dalam dialog.
 
-## Aktiviti 2 — Aplikasi berpandu tulisan (20 minit)
-**Guru:** Membimbing penulisan individu berdasarkan gambar atau petikan sumber; meminta semakan kandungan, tanda baca dan ejaan.  
-**Murid:** Menulis tiga ayat atau perenggan pendek yang bersesuaian dengan SP, kemudian menyuntingnya berdasarkan senarai semak.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Bimbing murid menulis tajuk kecil, petikan fakta dan langkah berjaga-jaga pada poster dalam buku.
+**Murid:** Lengkapkan poster berpandukan dialog dan catat empat maklumat dengan susunan yang jelas.
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (3.2.3 — Menganalisis dan mencatat maklumat tentang sesuatu perkara yang dirujuk) menggunakan bukti hasil tugasan: Hasil penulisan: isi menepati tajuk/SP, ayat jelas dan ejaan/tanda baca betul. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak bahawa setiap isi poster benar-benar berasal daripada teks, ejaan betul dan maklumat tidak bercampur dengan tekaan.
+**Murid:** Baiki fakta yang tersasar dan sebut satu cadangan daripada buku.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran tulisan yang digunakan dalam 'Hati-hati Menggunakan Fon Telinga' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan cara menganalisis dan mencatat maklumat untuk poster.
+**Murid:** Nyatakan satu langkah menjaga pendengaran; angka dalam BT tidak dianggap panduan klinikal semasa tanpa semakan.
 
-**Nota RPT asal:** Menulis; Semakan bahan bertulis
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti sumber BT:** BT m/s 37 mengarahkan berbincang, mencatat maklumat dan melengkapkan poster daripada dialog Hadif dengan Doktor Azlan tentang fon telinga.
+**Status QA:** DRAF — aktiviti BT dan SP disemak secara khusus; BA, PKJR (jika berkenaan), takwim negeri, Word/PDF A4 dan runtime Telegram masih belum lulus. Bukan FINAL READY, jangan terbitkan.

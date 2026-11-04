@@ -1,40 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 4 — PdP 029
 
-**ID:** BM4-P029  
-**Minggu RPT 2027:** M09 (tarikh PdP sebenar ditentukan oleh jadual sekolah)  
-**Tema/Unit:** Kesihatan dan Kebersihan; U5: Persekitaran Bersih Hidup Ceria  
-**Tajuk aktiviti:** Briged Kebersihan Sekolah  
-**Standard Kandungan (SK):** 4.3 Menghasilkan bahan sastera dengan menyerapkan keindahan dan kesantunan bahasa serta mempersembahkannya secara kreatif.  
-**Standard Pembelajaran (SP):** 4.3.2 — Mengubah suai cerita secara berpandu, dan mempersembahkannya secara kreatif  
-**Sumber BT/BA seperti RPT (BELUM disahkan menyeluruh):** BT m/s 33  
-**Fokus:** seni — Briged Kebersihan Sekolah  
-**Objektif PdP:** Murid dapat mempersembahkan satu respons atau hasil seni bahasa yang berkaitan 'Briged Kebersihan Sekolah' serta menjelaskan maksudnya dengan tepat.  
-**Bahan:** Buku Teks/bahan asal berdasarkan rujukan RPT, papan putih, kad perkataan/soalan bertema, buku latihan dan senarai semak PBD.  
-**Masa cadangan:** 60 minit (laras mengikut jadual kelas).
+**ID:** BM4-P029
+**Minggu RPT 2027:** M09 (tarikh sebenar mengikut jadual sekolah)
+**Tema/Unit:** Kesihatan dan Kebersihan; U5: Persekitaran Bersih Hidup Ceria
+**Tajuk aktiviti:** Briged Kebersihan Sekolah
+**Standard Kandungan (SK):** 4.3 Menghasilkan bahan sastera dengan menyerapkan keindahan dan kesantunan bahasa serta mempersembahkannya secara kreatif.
+**Standard Pembelajaran (SP):** 4.3.2 — Mengubah suai cerita secara berpandu, dan mempersembahkannya secara kreatif
+**Sumber:** Buku Teks BM Tahun 4 SK m/s 33. **BA:** Latihan dan halaman asal belum disahkan.
+**Konteks bahan:** Pengalaman Hadif melawat SK Seri Kirana, sekolah yang mempunyai Briged Kebersihan Sekolah untuk memantau kebersihan.
+**Objektif PdP:** Pada akhir PdP, murid dapat mengubah suai pilihan perkataan dalam satu bahagian cerita secara berpandu serta mempersembahkan cerita yang telah dimurnikan.
+**Bahan:** Buku Teks pada halaman berkenaan, kad tugasan khusus, bahan grafik/peta jika dinyatakan dan senarai semak PBD.
+**Masa:** 60 minit (boleh disesuaikan dengan jadual kelas).
 
 ## Set induksi (5 minit)
-**Guru:** Memaparkan judul/ilustrasi 'Briged Kebersihan Sekolah' daripada bahan yang dinyatakan, meminta ramalan kandungan berdasarkan dua petunjuk dan mengaitkan dengan tema Kesihatan dan Kebersihan; U5: Persekitaran Bersih Hidup Ceria.  
-**Murid:** Membuat ramalan berdasarkan tajuk atau ilustrasi serta memberikan satu contoh pengalaman/perkataan berkaitan.
+**Guru:** Papar konteks briged kebersihan yang memantau kebersihan kelas.
+**Murid:** Nyatakan satu tugas ahli briged kebersihan.
 
-## Aktiviti 1 — Teliti sumber dan contoh kemahiran (15 minit)
-**Guru:** Memperdengarkan atau membacakan contoh karya dalam 'Briged Kebersihan Sekolah'; memimpin pengesanan ungkapan, maksud dan ciri bahasa.  
-**Murid:** Membaca/mendengar karya berkaitan 'Briged Kebersihan Sekolah' dan menandakan dua ungkapan atau unsur bahasa yang bermakna.
+## Aktiviti 1 — Teliti Buku Teks (15 minit)
+**Guru:** Bimbing bacaan cerita m/s 33 mengenai pemeriksaan kelas, kantin, ganjaran dan kebersihan sekolah; tandakan perkataan berwarna.
+**Murid:** Kenal pasti peristiwa dan kata sasaran yang boleh diubah tanpa menghilangkan maksud.
 
-## Aktiviti 2 — Aplikasi berpandu seni (20 minit)
-**Guru:** Membimbing persembahan/hasil seni bahasa mengikut jenis karya sebenar dalam sumber dan menghubungkannya dengan situasi tema.  
-**Murid:** Melafazkan, bercerita, menyampaikan dialog atau menghasilkan respons kreatif sesuai SP; menjelaskan maksud dua ungkapan.
+## Aktiviti 2 — Aplikasi (20 minit)
+**Guru:** Berikan pilihan kata gantian yang sesuai mengikut konteks dan bimbing murid menyampaikan cerita versi baharu.
+**Murid:** Ubah suai bahagian cerita berdasarkan perkataan berwarna, kemudian bercerita semula secara kreatif.
 
-## Pengukuhan / Pentaksiran Bilik Darjah (15 minit)
-**Guru:** Menilai berdasarkan SP (4.3.2 — Mengubah suai cerita secara berpandu, dan mempersembahkannya secara kreatif) menggunakan bukti hasil tugasan: Semakan respons/persembahan: sebutan, makna dan penggunaan bahasa mengikut SP. Memberikan satu maklum balas khusus untuk pembetulan.  
-**Murid:** Menunjukkan hasil/menjawab tugasan, membetulkan sekurang-kurangnya satu kesilapan dan menyatakan bukti daripada bahan.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak ketepatan makna, kelancaran penceritaan dan penggunaan kosa kata yang sesuai.
+**Murid:** Baiki perkataan yang mengubah maksud asal dan persembahkan bahagian yang disemak.
 
 ## Penutup (5 minit)
-**Guru:** Merumuskan kemahiran seni yang digunakan dalam 'Briged Kebersihan Sekolah' dan menghubungkannya dengan SP tanpa menambah standard baharu.  
-**Murid:** Menyebut satu perkara dipelajari dan satu contoh daripada tugasan.
+**Guru:** Rumuskan fungsi pengubahsuaian cerita serta tanggungjawab menjaga kebersihan.
+**Murid:** Nyatakan satu amalan menjaga kelas.
 
-**Nota RPT asal:** Seni Bahasa (sokongan): penilaian hanya melalui kemahiran bahasa berkaitan; aspek seni bahasa tidak ditaksir berasingan
-
-**Buku Aktiviti:** RPT tidak memberikan halaman BA yang disahkan untuk PdP ini. Jangan menyuruh murid membuka BA pada halaman yang diteka.
-
-**Status QA:** HOLD_SEMAKAN_SUMBER — fail DRAF kandungan calon, belum lulus audit lengkap DSKP, BT/BA, pemetaan PKJR, cetakan A4 dan ujian Telegram.  
-**Kawalan:** Bukan READY. Jangan aktifkan automatik di bot; kekalkan sumber asal dan buat semakan satu demi satu sebelum penerbitan.
+**Bukti sumber BT:** BT m/s 33 meminta murid mengubah suai cerita Briged Kebersihan Sekolah berdasarkan perkataan yang dicetak berwarna dan mempersembahkannya.
+**Status QA:** DRAF — aktiviti BT dan SP disemak secara khusus; BA, PKJR (jika berkenaan), takwim negeri, Word/PDF A4 dan runtime Telegram masih belum lulus. Bukan FINAL READY, jangan terbitkan.
