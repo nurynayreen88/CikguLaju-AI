@@ -59,14 +59,12 @@ def _manifest(root):
             year, subject, number = int(match[1]), match[2], int(match[3])
             if not 1 <= number <= MAXIMUM[subject][year]:
                 continue
-            if year == 6 and subject == "pj" and number == 33:
-                continue  # conflicting RPT / DSKP: never offer it
             key = (year, subject, number)
             if key in records:
                 return {}
             records[key] = path
-        # 176 PJ numbered minus blocked PdP033; all 163 PK numbered.
-        if len(records) != 338:
+        # 176 PJ bernombor dan 163 PK bernombor; semua kekal DRAF.
+        if len(records) != 339:
             return {}
         return records
     except (OSError, ValueError, KeyError, TypeError):

@@ -3,7 +3,7 @@
 
 The source of truth for Lesson identities is the 339-record candidate manifest;
 all activity/PBD summaries come from corresponding source RPH Markdown, except
-the deliberately blocked PJ Year6 PdP033. No source is promoted to READY.
+the reviewed PJ Year6 PdP033. No source is promoted to READY.
 """
 from __future__ import annotations
 
@@ -54,9 +54,6 @@ def _fields(path):
 
 
 def _record_activity(rec):
-    if rec["year"] == 6 and rec["subject"] == "PJ" and rec["pdp"] == 33:
-        return ("BLOK: SK/SP sumber belum diselaraskan. RPH tidak dikeluarkan.",
-                "Jangan jadikan PdP ini sebagai READY.")
     subj = rec["subject"].lower()
     path = ROOT / f"rph_standalone/pjpk/year{rec['year']}_{subj}/lesson_{rec['pdp']:03d}.md"
     if not path.is_file():
@@ -193,7 +190,7 @@ def _pdf(year, out, weeks, records):
         _p("PdP ialah identiti kandungan; minggu ialah slot cadangan. Tarikh A/B "
            "tertakluk kepada jadual guru, perayaan, cuti negeri, cuti gantian dan "
            "takwim sekolah. Tahun 1 KP2027 belum dimasukkan. Empat sisipan Akuatik "
-           "Tahun 2 belum disahkan. PJ Tahun 6 PdP 033 disekat kerana konflik SP 5.2.2. "
+           "Tahun 2 belum disahkan. PJ Tahun 6 PdP 033 diselaraskan kepada SP 5.3.3 sebagai draf. "
            "Halaman PJ Tahun 5/6 yang belum disahkan tidak direka.", subtitle),
         _p("Sumber: RPT PJ Tahun 2/3/4–6 2027 dalam Drive CikguLaju, DSKP PK "
            "Tahun 2–6, RPT induk 2027. Sila semak buku teks dan PdP sebelum mengajar.", subtitle)
@@ -265,7 +262,7 @@ def _docx(year, out, weeks, records):
         doc.add_paragraph("")
     doc.add_paragraph("CATATAN: Tarikh A/B hanya cadangan slot; semak jadual, "
                       "cuti negeri dan sumber asal. Tahun 1 dan sisipan Akuatik T2 "
-                      "tidak termasuk. PJ T6 PdP033 tidak boleh READY.")
+                      "tidak termasuk. PJ T6 PdP033 dibetulkan kepada 5.3.3; masih DRAF.")
     doc.save(str(out))
 
 

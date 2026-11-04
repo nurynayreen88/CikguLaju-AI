@@ -27,8 +27,10 @@ class PJPKRPT2027Tests(unittest.TestCase):
         byyear={y:sum(1 for x in data["records"] if x["year"]==y) for y in range(2,7)}
         self.assertEqual(byyear,{2:72,3:70,4:66,5:65,6:66})
         blocked=[x for x in data["records"] if x["status"].startswith("BLOK")]
-        self.assertEqual(len(blocked), 1)
-        self.assertEqual((blocked[0]["year"],blocked[0]["subject"],blocked[0]["pdp"]),(6,"PJ",33))
+        self.assertEqual(len(blocked), 0)
+        revised=next(r for r in data["records"] if r["year"]==6 and r["subject"]=="PJ" and r["pdp"]==33)
+        self.assertEqual(revised["sp"],["3.5.1","4.5.1","4.5.2","5.3.3"])
+        self.assertFalse(revised["ready"])
 
     def test_paid_and_admin_download_only_exact_year_and_preserve_other_callbacks(self):
         sent=[]; docs=[]; previous=[]

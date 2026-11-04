@@ -15,7 +15,7 @@
   "exceptions": {
     "year1": "KP2027 DK belum disahkan; tidak dimasukkan",
     "PJ2_aquatic_inserts": "4 sisipan belum disahkan; tidak dimasukkan",
-    "PJ6_033": "BLOK: konflik SP 5.2.2 dengan sumber DSKP, jangan iklankan READY",
+    "PJ6_033": "Calon dibetulkan kepada SP 5.3.3 berdasarkan DSKP dan buku teks. RPT sumber lama mengandungi tambahan SP 5.2.2 yang tidak bersesuaian; sumber asal tidak diubah.",
     "PJ5_6_pages": "31 rujukan halaman belum disahkan; jangan reka"
   },
   "weeks": [
@@ -4135,13 +4135,12 @@
         "3.5.1",
         "4.5.1",
         "4.5.2",
-        "5.2.2",
         "5.3.3"
       ],
-      "bt": "BELUM DISAHKAN",
+      "bt": "69 (RPT 2026; semak cetakan buku teks)",
       "week": 35,
       "origin": "PJ456_2027_RPT",
-      "status": "BLOK_KONFLIK_SK_SP",
+      "status": "DRAF_CADANGAN",
       "ready": false
     },
     {

@@ -10,16 +10,16 @@ from web import pjpk_2027_preview_runtime as preview
 
 
 class PJPKSourceTests(unittest.TestCase):
-    def test_inventory_exactly_338_safe_numbered_drafts(self):
+    def test_inventory_exactly_339_safe_numbered_drafts(self):
         idx = preview._manifest(str(preview.ROOT))
-        self.assertEqual(len(idx), 338)
-        self.assertNotIn((6, "pj", 33), idx)
+        self.assertEqual(len(idx), 339)
+        self.assertIn((6, "pj", 33), idx)
         self.assertNotIn((2, "pj", 38), idx)
 
     def test_every_staged_numbered_lesson_loads(self):
         expected = {
             (2, "pj"): 37, (3, "pj"): 38, (4, "pj"): 34,
-            (5, "pj"): 33, (6, "pj"): 33,
+            (5, "pj"): 33, (6, "pj"): 34,
             (2, "pk"): 35, (3, "pk"): 32, (4, "pk"): 32,
             (5, "pk"): 32, (6, "pk"): 32,
         }
@@ -38,7 +38,7 @@ class PJPKSourceTests(unittest.TestCase):
     def test_unverified_year_one_and_aquatic_are_not_offered(self):
         self.assertEqual(preview.list_lessons("Tahun 1", "Pendidikan Jasmani"), [])
         self.assertIsNone(preview._source(2, "pj", 38))
-        self.assertIsNone(preview._source(6, "pj", 33))
+        self.assertIsNotNone(preview._source(6, "pj", 33))
         self.assertEqual(preview.list_lessons("Tahun 2", "Bahasa Inggeris"), [])
 
     def test_existing_rph_metadata_preserved(self):

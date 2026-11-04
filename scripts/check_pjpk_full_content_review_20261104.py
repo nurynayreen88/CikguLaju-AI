@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """PJPK Year2-6 full release audit: read-only, fail-closed, no DB access.
 
-Compares 339 planned RPT PdP to 338 source RPH, validates key content
+Compares 339 planned RPT PdP to 339 source RPH, validates key content
 fixes and flags items that still require verified textbook, teacher approval
 and real Telegram delivery. It never promotes READY.
 """
@@ -33,7 +33,7 @@ def run():
         "Word/PDF rendering and real Telegram document delivery are separate checks.",
         "2027 local class schedule, state holidays and textbook physical pages need validation.",
         "Year1 KP2027 excluded, four Year2 aquatic inserts not approved.",
-        "Source RPT Year6 PJ PdP033 still requires DSKP reconciliation."]}
+        "PdP033 calon diselaraskan kepada SP5.3.3 daripada DSKP/buku teks; RPT sumber lama belum diubah."]}
     manifest=json.loads(MANIFEST.read_text(encoding="utf-8"))
     if len(manifest.get("records", [])) != 339 or len(manifest.get("weeks", [])) != 38:
         raise AssertionError("Unexpected RPT master")
@@ -47,10 +47,6 @@ def run():
         if ident in seen: fatal.append(f"DUPLICATE RPT {ident}")
         seen.add(ident);counted[f"{y}-{sub}"]+=1
         if row.get("ready") is not False: fatal.append(f"UNSAFE READY flag {ident}")
-        if y == 6 and sub == "PJ" and n == 33:
-            if row.get("status") != "BLOK_KONFLIK_SK_SP": fatal.append("Y6 PJ033 must remain blocked")
-            report["individual"].append({"year":y,"component":sub,"pdp":n,"disposition":"BLOCKED_SOURCE_CONFLICT"})
-            continue
         path=ROOT / f"rph_standalone/pjpk/year{y}_{sub.lower()}/lesson_{n:03d}.md"
         if not path.is_file(): fatal.append(f"MISSING RPH {ident}"); continue
         text=path.read_text(encoding="utf-8")
@@ -106,11 +102,11 @@ def run():
     repeated=[{"subject":s,"field":f,"count":len(rows),"lesson_examples":rows[:6]}
               for (s,f,v),rows in dup.items() if len(rows)>1 and v]
     repeated.sort(key=lambda x:-x["count"])
-    report["counts"]={"RPT_PDP":len(seen),"RPH_numbered_found":len(report["individual"])-1,
-      "blocked_RPT":1,"PJ_numbered":176,"PK_numbered":163,
+    report["counts"]={"RPT_PDP":len(seen),"RPH_numbered_found":len(report["individual"]),
+      "blocked_RPT":0,"PJ_numbered":176,"PK_numbered":163,
       "source_page_unverified":sum(1 for r in manifest["records"] if r["subject"]=="PJ" and "BELUM" in str(r.get("bt","")).upper()),
       "repeated_activity_templates":len(repeated),"repeated_templates_examples":repeated[:12],
-      "fatal_count":len(fatal),"manual_content_review_required":338}
+      "fatal_count":len(fatal),"manual_content_review_required":339}
     report["fatal"]=fatal
     report["status"]="FAIL_STATIC" if fatal else "PASS_STATIC_ONLY_NOT_READY"
     return report

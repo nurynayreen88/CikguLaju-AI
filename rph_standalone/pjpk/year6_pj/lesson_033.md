@@ -1,10 +1,10 @@
 # RPH Pendidikan Jasmani Tahun 6 — PdP 033
-**Status:** DRAF TERHALANG — KONFLIK DSKP/RPT SP 5.2.2  
+**Status:** DRAF • SP 5.3.3 disemak dengan DSKP dan buku teks  
 **Unit/Tajuk:** REKOD KESIHATAN DAN KECERGASAN  
 **Fasa PdP:** Amali dan aplikasi  
 **SK:** 3.5, 4.5, 5.3  
 **SP:** 3.5.1, 4.5.1, 4.5.2, 5.3.3  
-**Buku teks:** calon m/s 69 daripada RPT 2026; belum disahkan pada buku teks  
+**Buku teks:** m/s 69 menurut RPT 2026; semak cetakan buku  
 **Tarikh/Kelas/Masa:** Guru isi mengikut jadual waktu sebenar.
 
 **Objektif:** (1) Merekod atau melaksanakan tugasan SP 3.5.1 secara tepat dan sulit, kemudian mentafsir hasil berpandukan panduan guru. (2) Menerangkan satu konsep berkaitan SP 4.5.1: Membanding Indeks Jisim Badan (BMI) sendiri dengan norma.
@@ -22,4 +22,4 @@
 **BBM:** alat ukur/borang SEGAK jika berkaitan, kad rekod individu, carta rujukan rasmi.  
 **Keselamatan/inklusif:** Jangan umumkan atau bandingkan berat/BMI murid di hadapan kelas; simpan rekod secara sulit dan gunakan prosedur sekolah.
 
-**Audit:** [RPT PJ 2027](https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit) · [DSKP Tahun 6](https://drive.google.com/file/d/1AK0F5GLkhTkAPyhNkFBG6sHP6JgAU3Jv/view). **BLOK:** Kod SP 5.2.2 daripada RPT asal bertentangan dengan konteks/teks DSKP Tahun 6; tidak disertakan dalam SP RPH cadangan ini. RPT induk belum dipinda. KONFLIK DSKP/RPT, tidak boleh READY.
+**Audit:** [RPT PJ 2027](https://docs.google.com/document/d/1uwf_pl6YYmMMU0NWaIn2xJOhIpCpkfIjw6Qi5UgHCv0/edit) · [DSKP Tahun 6](https://drive.google.com/file/d/1AK0F5GLkhTkAPyhNkFBG6sHP6JgAU3Jv/view). **Pembetulan calon:** RPT sumber mencatat 5.2.2 yang tidak sesuai; SP 5.3.3 yang ditetapkan DSKP dan buku teks Tahun 6 digunakan. Kekal DRAF sehingga semakan guru dan penghantaran Telegram.

@@ -30,7 +30,7 @@ jobs:
           python-version: "3.11"
       - name: Install required PDF, Word and validation libraries
         run: python -m pip install --disable-pip-version-check python-docx reportlab pypdf
-      - name: Check 339 RPT crosswalks and 338 RPH content (no DB)
+      - name: Check 339 RPT crosswalks and 339 RPH content (no DB)
         run: |
           mkdir -p dist
           python scripts/check_pjpk_full_content_review_20261104.py > dist/pjpk_2027_full_content_review.json
@@ -40,7 +40,7 @@ jobs:
         run: python scripts/build_pjpk_2027_preview_bundle.py --out-dir dist/PJPK_2027
       - name: Rebuild all five source-aligned RPT PDFs + Word
         run: python scripts/build_pjpk_rpt_2027.py --out-dir dist/RPT_PJPK_2027
-      - name: Verify all 338 PDFs, 5 RPT and ZIP integrity
+      - name: Verify all 339 PDFs, 5 RPT and ZIP integrity
         run: |
           python - <<'PY'
           from pathlib import Path
@@ -52,7 +52,7 @@ jobs:
           rph=list(Path('dist/PJPK_2027/PDF').glob('*.pdf'))
           docs=list(Path('dist/PJPK_2027/Word').glob('*.docx'))
           rpt=list(Path('dist/RPT_PJPK_2027').glob('*.pdf'))
-          assert len(rph)==338 and len(docs)==338 and len(rpt)==5
+          assert len(rph)==339 and len(docs)==339 and len(rpt)==5
           for path in rph:
               reader=PdfReader(str(path))
               assert len(reader.pages)==1, path
@@ -64,12 +64,12 @@ jobs:
               text='\n'.join(p.extract_text() or '' for p in pdf.pages)
               assert 'DRAF CADANGAN' in text
               assert 'MINGGU PENGAJARAN 38' in text
-          for name,count in [('PJPK_2027_RPH_338_PRATONTON.zip',678),('RPT_PJPK_2027_Tahun_2_6_DRAF_WORD_PDF.zip',11)]:
+          for name,count in [('PJPK_2027_RPH_339_PRATONTON.zip',680),('RPT_PJPK_2027_Tahun_2_6_DRAF_WORD_PDF.zip',11)]:
               matches=list(Path('dist').rglob(name))
               assert len(matches)==1, name
               with ZipFile(matches[0]) as z:
                   assert len(z.namelist())==count and z.testzip() is None, name
-          print('PASS: 338 RPH A4 PDFs and editable Word, five RPT PDFs, two valid ZIPs')
+          print('PASS: 339 RPH A4 PDFs and editable Word, five RPT PDFs, two valid ZIPs')
           PY
       - name: Check representative DOCX actual A4 layout
         run: |
@@ -95,7 +95,7 @@ jobs:
           name: PJPK-2027-FULL-CONTENT-REVIEW-20261104
           path: |
             dist/pjpk_2027_full_content_review.json
-            dist/PJPK_2027_RPH_338_PRATONTON.zip
+            dist/PJPK_2027_RPH_339_PRATONTON.zip
             dist/RPT_PJPK_2027_Tahun_2_6_DRAF_WORD_PDF.zip
           retention-days: 7
           if-no-files-found: error

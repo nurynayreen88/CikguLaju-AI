@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a teacher-usable PJPK 2027 PREVIEW bundle from 338 numbered source RPH.
+"""Build a teacher-usable PJPK 2027 PREVIEW bundle from 339 numbered source RPH.
 
 Outputs editable A4 DOCX, one-page A4 PDF and ZIP, without touching DB,
 Telegram credits, subscriptions, any READY flag, or original source files.
@@ -224,8 +224,6 @@ def build(out_dir, *, root=ROOT, limit=None):
             for num in range(1, maximum + 1):
                 lesson = _source(year, short_subject, num, root=root)
                 if lesson is None:
-                    if (year, short_subject, num) == (6, "pj", 33):
-                        continue  # explicitly blocked source conflict
                     raise RuntimeError("Unexpected missing numbered source %d %s %03d"
                                        % (year, short_subject, num))
                 stem = "RPH_PJPK_%s_Tahun%d_PdP%03d" % (
@@ -241,8 +239,8 @@ def build(out_dir, *, root=ROOT, limit=None):
                 break
         if limit and count >= limit:
             break
-    if not limit and count != 338:
-        raise RuntimeError("Expected 338 printable RPH, got %d" % count)
+    if not limit and count != 339:
+        raise RuntimeError("Expected 339 printable RPH, got %d" % count)
     out_dir.mkdir(parents=True, exist_ok=True)
     index = out_dir / "MANIFEST_PRATONTON.csv"
     with index.open("w", newline="", encoding="utf-8-sig") as f:
@@ -253,8 +251,8 @@ def build(out_dir, *, root=ROOT, limit=None):
     readme = out_dir / "BACA_DULU.txt"
     readme.write_text(
         "CIKGULAJU PJPK 2027 — PRATONTON DRAF\n\n"
-        "338 RPH bernombor; PJ T2–T6 dan PK T2–T6.\n"
-        "PJ Tahun 6 PdP 033 tidak disertakan: konflik DSKP/RPT.\n"
+        "339 RPH bernombor; PJ T2–T6 dan PK T2–T6.\n"
+        "PJ Tahun 6 PdP 033 termasuk setelah SP 5.3.3 diselaraskan.\n"
         "Sisipan Akuatik Tahun 2 tidak disertakan: keselamatan belum diluluskan.\n"
         "Tahun 1 KP2027 belum disertakan. Semua Lesson PK ialah urutan cadangan.\n"
         "Tarikh, masa dan kelas perlu diisi mengikut jadual guru dan negeri.\n"
