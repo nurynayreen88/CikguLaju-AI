@@ -2,9 +2,9 @@
 
 **KELUARAN 3 NOVEMBER 2026 — DRAF KANDUNGAN / BELUM READY**
 
-Susun atur seperti RPT English 2027: satu RPT bagi setiap Tahun 2–6, Kumpulan A/B bergabung, Minggu → Lesson bernombor → satu baris per Lesson dengan Tema/Unit, tajuk aktiviti, SK/SP, BT/BA dan catatan.
+Susun atur seperti RPT English 2027: satu RPT bagi setiap Tahun 2–6, Kumpulan A/B bergabung, Minggu → PdP bernombor → satu baris per PdP dengan Tema/Unit, tajuk aktiviti, SK/SP, BT/BA dan catatan.
 
-| Tahun | Lesson calon | Versi cetak A4 landscape | Versi teks | RPT BM 2026 |
+| Tahun | PdP calon | Versi cetak A4 landscape | Versi teks | RPT BM 2026 |
 |---|---:|---|---|---|
 | 2 | 164 | [HTML](RPT_BM_TAHUN_2_2027_A_B_PER_LESSON_DRAF.html) | [Markdown](RPT_BM_TAHUN_2_2027_A_B_PER_LESSON_DRAF.md) | [Sumber 2026](https://docs.google.com/document/d/1qFUGCNH672R4QYBSxzSCYUbTiVmTQQU0/edit) |
 | 3 | 165 | [HTML](RPT_BM_TAHUN_3_2027_A_B_PER_LESSON_DRAF.html) | [Markdown](RPT_BM_TAHUN_3_2027_A_B_PER_LESSON_DRAF.md) | [Sumber 2026](https://docs.google.com/document/d/1wlrI120RKhZh85oSPIZPPgJwj7CKChsT/edit) |
@@ -12,7 +12,7 @@ Susun atur seperti RPT English 2027: satu RPT bagi setiap Tahun 2–6, Kumpulan 
 | 5 | 166 | [HTML](RPT_BM_TAHUN_5_2027_A_B_PER_LESSON_DRAF.html) | [Markdown](RPT_BM_TAHUN_5_2027_A_B_PER_LESSON_DRAF.md) | [Sumber 2026](https://docs.google.com/document/d/1q0vWe8ydZonJsAohVEe121u-0A2xMrg7/edit) |
 | 6 | 165 | [HTML](RPT_BM_TAHUN_6_2027_A_B_PER_LESSON_DRAF.html) | [Markdown](RPT_BM_TAHUN_6_2027_A_B_PER_LESSON_DRAF.md) | [Sumber 2026](https://docs.google.com/document/d/1g0HR5PGuW9CMQFJZLcDbXUD0qZwlMJK1/edit) |
 
-**Semakan struktur:** 825 Lesson calon, 129 unit, 44 minggu bernombor bagi setiap tahun. ID Lesson unik dan versi HTML/Markdown sejajar.
+**Semakan struktur:** 825 PdP calon, 129 unit, 44 minggu bernombor bagi setiap tahun. ID PdP unik dan versi HTML/Markdown sejajar.
 
 ## Tahun 1 — KP2027 berasingan
 
@@ -20,10 +20,10 @@ Induk projek masih belum mempunyai salinan DK Bahasa Melayu SK Tahun 1 KP2027 da
 
 ## Baki sebelum READY
 
-1. [Audit global](../AUDIT_ULANGAN_GLOBAL_825_20261103.md) mengenal pasti **37 pasangan calon ulangan** merentas semua 825 Lesson, termasuk 6 varian +PKJR. Tujuh aktiviti berbeza tajuk tetapi berkongsi kod/halaman dalam audit lama dikekalkan. Tiada rekod dipadam atau dinombor semula.
+1. [Audit global](../AUDIT_ULANGAN_GLOBAL_825_20261103.md) mengenal pasti **37 pasangan calon ulangan** merentas semua 825 PdP, termasuk 6 varian +PKJR. Tujuh aktiviti berbeza tajuk tetapi berkongsi kod/halaman dalam audit lama dikekalkan. Tiada rekod dipadam atau dinombor semula.
 2. Semak buku aktiviti penuh bagi Tahun 2–3; nombor BA yang tertera hanyalah rujukan daripada RPT 2026 dan Buku Teks yang ditemui.
 3. Semak ayat SK/SP, subkod roman, tema, aktiviti dan halaman asal terhadap naskhah primer.
-4. Tarikh mingguan ialah gabungan induk 2027 A/B, bukannya hari Lesson individu. Cuti negeri/cuti gantian dan jadual sekolah belum dipadankan untuk READY.
+4. Tarikh mingguan ialah gabungan induk 2027 A/B, bukannya hari PdP individu. Cuti negeri/cuti gantian dan jadual sekolah belum dipadankan untuk READY.
 5. Minggu BELUM AGIH tidak bermaksud cuti. Tentukan program sekolah, PBD, pemulihan/pengayaan dan ruang pentaksiran berdasarkan sumber sah.
 6. Betulkan ralat halaman yang masih meragukan hanya selepas buku teks dan RPT sumber dibandingkan.
 
