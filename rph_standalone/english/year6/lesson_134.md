@@ -7,32 +7,32 @@
 **Language focus:** Topic sentences; functional language: giving opinion (e.g. I don’t believe that…)  
 **Duration:** 60 minutes  
 **Materials:** Academy Stars Year 6 Pupil Book pages 114-115; Teacher Book pages 180-181  
-**Learning objective:** Locate at least 5 specific, text-supported facts in the RPT-cited reading on a familiar school-life issue.  
-**PBD evidence:** Five answers with supporting text clues; record achieved / supported / reteach.
+**Learning objective:** Read Bart's PB p.115 opinion essay for its main points, paragraph purposes and four expressions of personal opinion.  
+**PBD evidence:** Correct main-idea and detail answers from Bart's essay (Reading 3.2.2), including the purpose of two paragraphs.  
 
 ## Set induction (5 minutes)
-**Teacher:** Show two contrasting opinion cards and ask: “Do you agree or disagree? Why?”  
-**Pupils:** Offer one prediction or personal example using relevant words.
+**Teacher:** Give pupils healthy-eating topic cards and invite differing opinions.  
+**Pupils:** State one short viewpoint and listen to a counterargument.  
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Introduce opinions, reasons, examples and teach how to scan the stated Pupil’s Book/reading passage for clues. Show the language pattern: Topic sentences; functional language: giving opinion (e.g. I don’t believe that…).  
-**Pupils:** Predict the text from two contrasting opinion cards; highlight two useful clues or words.
+**Teacher:** Follow TB p.180 Learning to Learn on topic sentences and arguments.  
+**Pupils:** Match two topic sentences with the supporting ideas.  
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Guide reading of the cited material and ask five text-dependent questions about a familiar school-life issue; model locating exact evidence.  
-**Pupils:** Read individually; highlight and answer five detail questions using evidence in the text.
+**Teacher:** Follow TB p.180 Activity 1; pupils read Bart's complete essay independently.  
+**Pupils:** Identify the writer's overall position and one reason.  
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Lead a paired evidence-check; invite pupils to justify their answers before checking as a class. Check the complementary skill using the short task.  
-**Pupils:** Compare responses with a partner, correct unsupported answers and write one sentence related to a familiar school-life issue. Locate one additional supporting clue in the cited reading material.
+**Teacher:** Follow TB p.180 Activities 2–4: analyse opinions, opinion phrases and paragraph purposes.  
+**Pupils:** Find four opinion expressions and explain why two paragraphs were written.  
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check the lesson evidence against the target and give one actionable correction.  
-**Pupils:** Show the evidence, correct a response and complete an exit check.
+**Teacher:** Check four text-supported answers and an accurate paragraph purpose.  
+**Pupils:** Show a sentence as evidence and correct one unsupported interpretation.  
 
 ## Closure (4 minutes)
-**Teacher:** Ask “Do you agree or disagree? Why?” and collect an exit response.  
-**Pupils:** Share one accurate new sentence or fact; identify one skill to practise next.
+**Teacher:** Run an agree/disagree discussion using positions from Bart's essay.  
+**Pupils:** Give one respectful reason to support or oppose a statement.  
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
