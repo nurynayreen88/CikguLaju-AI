@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 028
 
-**Tema/Unit:** Perpaduan; U4: Sahabat Karib  
-**Tajuk:** Rakanku Tanggungjawabku  
-**SK:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks  
-**SP:** 5.1.2 — Memahami, mengenal pasti dan menggunakan kata kerja mengikut konteks  
-**Buku rujukan:** BT1 m/s 26; BA m/s 31-32 — rujukan BA daripada BT atau RPT 2026; arahan latihan BA belum disahkan.  
-**Tempoh cadangan:** 60 minit, laras mengikut slot sebenar.  
-**Fokus:** kata kerja aktif transitif dalam cerita Rakanku Tanggungjawabku  
-**Objektif:** Pada akhir PdP, murid dapat mencari empat kata kerja aktif transitif berserta objek dan membina tiga ayat lengkap.  
-**BBM:** Buku Teks berkaitan, kad gambar/perkataan, kertas kerja/buku latihan. Kosa kata/konteks: membeli makanan; memberikan wang; mengumpulkan sumbangan; membantu Yahya.  
+**ID:** BM2-P028
+**Minggu RPT 2027:** M08 (tarikh pelaksanaan ikut jadual kelas)
+**Tema/Unit:** Perpaduan; U4: Sahabat Karib
+**Tajuk aktiviti:** Rakanku Tanggungjawabku
+**Standard Kandungan (SK):** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks
+**Standard Pembelajaran (SP):** 5.1.2 (i) — Memahami, mengenal pasti dan menggunakan kata kerja mengikut konteks
+**Rujukan:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 26. **Buku Aktiviti:** rujukan dalam RPT hanya; halaman/latihan BA asal belum disahkan.
+**Fokus asal BT:** situasi Yahya tertinggal wang ke sekolah dan rakan mengumpulkan bantuan serta memberikan makanan.
+**Objektif PdP:** Pada akhir PdP, murid dapat membina empat frasa kata kerja aktif transitif yang mempunyai objek dan dua ayat lengkap.
+**Bahan:** BT Jilid 1, bahan bergambar/kad kata daripada tugasan sumber, lembaran tugasan khusus dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru mengemukakan satu situasi bergambar daripada tema Rakanku Tanggungjawabku dan mengaitkannya dengan pengalaman murid.
-**Tindakan murid:** Murid menyatakan satu pengalaman atau pengetahuan sedia ada yang relevan.
+**Guru:** Paparkan gambar Rakanku Tanggungjawabku daripada BT1 m/s 26; tanya pengalaman murid yang berkaitan dengan tema.
+**Murid:** Nyatakan satu perkara yang dapat diperhatikan dalam gambar Rakanku Tanggungjawabku.
 
-## Aktiviti 1 — Rangsangan Buku Teks (15 minit)
-**Tindakan guru:** Guru membincangkan Yahya terlupa wang dan menggariskan pasangan kata kerja aktif transitif dengan objek.
-**Tindakan murid:** Murid memadankan empat kata kerja dengan objek yang sesuai.
+## Aktiviti 1 — Dengar atau teliti sumber (15 minit)
+**Guru:** Bimbing murid membaca ilustrasi BT1 m/s26 serta contoh kata kerja mengumpulkan dan memberikan
+**Murid:** Kenal pasti kata kerja yang memerlukan objek seperti makanan atau wang
 
-## Aktiviti 2 — Aplikasi kepada situasi (20 minit)
-**Tindakan guru:** Guru mengagihkan kad situasi bantuan rakan di kantin dan meminta ayat mengandungi objek.
-**Tindakan murid:** Murid membina tiga ayat dan menggariskan kata kerja serta membulatkan objek.
+## Aktiviti 2 — Laksana tugasan buku teks (20 minit)
+**Guru:** Modelkan perbezaan kata kerja tanpa objek dan kata kerja aktif transitif yang mesti diikuti objek
+**Murid:** Lengkapkan empat frasa kerja transitif dan bina dua ayat bantuan rakan
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak empat padanan dan tiga ayat dengan objek yang lengkap.
-**Tindakan murid:** Murid menyerahkan hasil atau memberi respons secara individu, menerima pembetulan guru dan memperbaiki satu kesilapan jika ada.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak kata kerja serta kehadiran objek dan makna ayat
+**Murid:** Baiki satu frasa yang tiada objek
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru menyimpulkan kemahiran kata kerja aktif transitif dalam cerita Rakanku Tanggungjawabku dan mengaitkannya dengan nilai murni dalam tajuk.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dipelajari serta contoh mengamalkannya.
+**Guru:** Rumuskan kemahiran 5.1.2 (i) dengan contoh yang diperoleh daripada Buku Teks.
+**Murid:** Sebut satu perkataan, ayat atau pengajaran penting daripada Rakanku Tanggungjawabku.
 
-**Status QA:** DRAF — audit BA dan masa pelaksanaan belum lengkap. 
-**Catatan:**  Tidak mengarang latihan Buku Aktiviti atau standard rasmi PKJR. Belum untuk diterbitkan di Telegram/Web.
+**Bukti khusus BT:** BT1 m/s26 mencetak SP5.1.2(i), kata kerja aktif transitif perlu objek; RPT lama hanya menulis 5.1.2.
+**Status QA:** DRAF — halaman dan aktiviti BT telah dipadankan; BA, takwim negeri, format Word/PDF A4 dan ujian Telegram belum disahkan. Tidak layak diterbitkan sebagai FINAL READY.

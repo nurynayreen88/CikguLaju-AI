@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 026
 
-**Tema/Unit:** Perpaduan; U4: Sahabat Karib  
-**Tajuk:** Bantu – membantu  
-**SK:** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna  
-**SP:** 3.2.1 (i), (ii) — Membina dan menulis  
-**Buku rujukan:** BT1 m/s 24; BA m/s 28-29 — rujukan BA daripada BT atau RPT 2026; arahan latihan BA belum disahkan.  
-**Tempoh cadangan:** 60 minit, laras mengikut slot sebenar.  
-**Fokus:** membina perkataan dan frasa berkaitan kerjasama rakan sekolah  
-**Objektif:** Pada akhir PdP, murid dapat menulis lima perkataan dan tiga frasa bermakna daripada gambar Yahya dan rakan sekelas.  
-**BBM:** Buku Teks berkaitan, kad gambar/perkataan, kertas kerja/buku latihan. Kosa kata/konteks: membantu rakan; menyusun buku; menjaga kebersihan; berkongsi alat tulis.  
+**ID:** BM2-P026
+**Minggu RPT 2027:** M08 (tarikh pelaksanaan ikut jadual kelas)
+**Tema/Unit:** Perpaduan; U4: Sahabat Karib
+**Tajuk aktiviti:** Bantu-membantu
+**Standard Kandungan (SK):** 3.2 Menulis perkataan, frasa, dan ayat yang bermakna
+**Standard Pembelajaran (SP):** 3.2.1 (i), (ii) — Membina dan menulis
+**Rujukan:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 24. **Buku Aktiviti:** rujukan dalam RPT hanya; halaman/latihan BA asal belum disahkan.
+**Fokus asal BT:** aktiviti Yahya sebagai ketua kelas membantu Yong Han, Pravin, Soo Mei dan Lageswari menyelesaikan tugas bilik darjah.
+**Objektif PdP:** Pada akhir PdP, murid dapat melengkapkan empat frasa tugas kelas dan membina dua ayat berdasarkan gambar.
+**Bahan:** BT Jilid 1, bahan bergambar/kad kata daripada tugasan sumber, lembaran tugasan khusus dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru mengemukakan satu situasi bergambar daripada tema Bantu – membantu dan mengaitkannya dengan pengalaman murid.
-**Tindakan murid:** Murid menyatakan satu pengalaman atau pengetahuan sedia ada yang relevan.
+**Guru:** Paparkan gambar Bantu-membantu daripada BT1 m/s 24; tanya pengalaman murid yang berkaitan dengan tema.
+**Murid:** Nyatakan satu perkara yang dapat diperhatikan dalam gambar Bantu-membantu.
 
-## Aktiviti 1 — Rangsangan Buku Teks (15 minit)
-**Tindakan guru:** Guru memperkenalkan cerita ketua kelas Yahya dan membezakan perkataan tunggal dengan frasa.
-**Tindakan murid:** Murid menamakan lima perkataan yang mencerminkan tindakan tolong-menolong.
+## Aktiviti 1 — Dengar atau teliti sumber (15 minit)
+**Guru:** Bimbing murid membaca situasi BT1 m/s24 dan kata kerja tentang membuang sampah serta memadam papan putih
+**Murid:** Kenal pasti empat aktiviti pertolongan rakan
 
-## Aktiviti 2 — Aplikasi kepada situasi (20 minit)
-**Tindakan guru:** Guru menyediakan kad kata kerja dan objek lalu meminta murid membentuk sekurang-kurangnya tiga frasa yang sesuai dengan gambar.
-**Tindakan murid:** Murid membina frasa dan menyalin ke buku latihan serta menerangkan maknanya.
+## Aktiviti 2 — Laksana tugasan buku teks (20 minit)
+**Guru:** Modelkan binaan frasa nama/kerja daripada gambar dan perkataan yang disediakan
+**Murid:** Isi empat ruang kosong kemudian bina dua ayat tentang tolong-menolong di kelas
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak ejaan lima perkataan dan binaan tiga frasa.
-**Tindakan murid:** Murid menyerahkan hasil atau memberi respons secara individu, menerima pembetulan guru dan memperbaiki satu kesilapan jika ada.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak empat frasa dan dua ayat dari segi ejaan serta maksud
+**Murid:** Baiki satu frasa tidak lengkap
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru menyimpulkan kemahiran membina perkataan dan frasa berkaitan kerjasama rakan sekolah dan mengaitkannya dengan nilai murni dalam tajuk.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dipelajari serta contoh mengamalkannya.
+**Guru:** Rumuskan kemahiran 3.2.1 (i), (ii) dengan contoh yang diperoleh daripada Buku Teks.
+**Murid:** Sebut satu perkataan, ayat atau pengajaran penting daripada Bantu-membantu.
 
-**Status QA:** DRAF — audit BA dan masa pelaksanaan belum lengkap. 
-**Catatan:**  Tidak mengarang latihan Buku Aktiviti atau standard rasmi PKJR. Belum untuk diterbitkan di Telegram/Web.
+**Bukti khusus BT:** BT1 m/s24 memberi SP3.2.1(i)(ii), melengkapkan frasa bantuan rakan dan simulasi, ejaan tajuk asal Bantu-membantu.
+**Status QA:** DRAF — halaman dan aktiviti BT telah dipadankan; BA, takwim negeri, format Word/PDF A4 dan ujian Telegram belum disahkan. Tidak layak diterbitkan sebagai FINAL READY.

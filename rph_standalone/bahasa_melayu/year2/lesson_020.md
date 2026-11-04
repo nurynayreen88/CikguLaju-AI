@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 020
 
-**Tema / Unit:** Kekeluargaan; U3: Keluarga Berhemah  
-**Tajuk:** Tahniah, Kak Mastura!  
-**SK:** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks  
-**SP:** 5.1.1 (iv) — Memahami, mengenal pasti dan menggunakan golongan kata mengikut konteks  
-**Sumber:** BT1 m/s 17; BA m/s 23-24. Petunjuk BA daripada BT/RPT 2026, belum diaudit terhadap Buku Aktiviti asal.  
-**Masa cadangan:** 60 minit (laras mengikut jadual sekolah)  
-**Fokus:** penjodoh bilangan  
-**Objektif pembelajaran:** Pada akhir PdP, murid dapat memadankan lima penjodoh bilangan dan membina tiga ayat berkaitan hadiah.  
-**Bahan:** Buku Teks berkenaan, kad gambar/kata, papan putih, buku latihan. Kosa kata/model: sebuah kamera; sekaki payung; sebentuk cincin; seurat gelang; sepasang cermin mata.
+**ID:** BM2-P020
+**Minggu RPT 2027:** M07 (tarikh pelaksanaan ikut jadual kelas)
+**Tema/Unit:** Kekeluargaan; U3: Keluarga Berhemah
+**Tajuk aktiviti:** Tahniah, Kak Mastura!
+**Standard Kandungan (SK):** 5.1 Memahami fungsi dan menggunakan golongan kata mengikut konteks
+**Standard Pembelajaran (SP):** 5.1.1 (iv) — Memahami, mengenal pasti dan menggunakan golongan kata mengikut konteks
+**Rujukan:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 17. **Buku Aktiviti:** rujukan dalam RPT hanya; halaman/latihan BA asal belum disahkan.
+**Fokus asal BT:** ucapan tahniah kepada Kak Mastura dengan hadiah kamera, payung, cincin, gelang, cermin mata dan coklat.
+**Objektif PdP:** Pada akhir PdP, murid dapat memadankan lima penjodoh bilangan dengan objek dan membina tiga ayat lengkap.
+**Bahan:** BT Jilid 1, bahan bergambar/kad kata daripada tugasan sumber, lembaran tugasan khusus dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru mengemukakan gambar atau situasi Tahniah, Kak Mastura! dan bertanya pengalaman berkaitan kepada murid.
-**Tindakan murid:** Murid mengaitkan satu pengalaman atau pengetahuan sedia ada dengan tajuk.
+**Guru:** Paparkan gambar Tahniah, Kak Mastura! daripada BT1 m/s 17; tanya pengalaman murid yang berkaitan dengan tema.
+**Murid:** Nyatakan satu perkara yang dapat diperhatikan dalam gambar Tahniah, Kak Mastura!.
 
-## Aktiviti 1 — Fahami kandungan (15 minit)
-**Tindakan guru:** Guru memaparkan gambar hadiah kepada Kak Mastura dan memodelkan hubungan penjodoh bilangan dengan objek.
-**Tindakan murid:** Murid memadankan lima penjodoh bilangan dengan kad gambar.
+## Aktiviti 1 — Dengar atau teliti sumber (15 minit)
+**Guru:** Bimbing murid meneliti gambar hadiah BT1 m/s17 seperti sebuah kamera, sekaki payung, sebentuk cincin dan sepasang cermin mata
+**Murid:** Padankan lima penjodoh bilangan dan objek berdasarkan bahan
 
-## Aktiviti 2 — Aplikasi kemahiran (20 minit)
-**Tindakan guru:** Guru memberi situasi pemberian hadiah kepada ahli keluarga dan meminta tiga ayat lengkap.
-**Tindakan murid:** Murid menulis tiga ayat lalu menyemak padanan penjodoh bilangan bersama rakan.
+## Aktiviti 2 — Laksana tugasan buku teks (20 minit)
+**Guru:** Modelkan ayat 'Kak Mastura menerima ...' dengan penjodoh bilangan yang sesuai
+**Murid:** Bina tiga ayat tentang hadiah dengan penggunaan penjodoh bilangan betul
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak lima padanan dan tiga ayat yang menggunakan penjodoh bilangan tepat.
-**Tindakan murid:** Murid menunjukkan bukti lisan, bacaan atau penulisan yang telah dihasilkan dan membetulkan jawapan berdasarkan maklum balas.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak lima padanan dan tiga ayat dari segi tatabahasa
+**Murid:** Baiki dua penjodoh bilangan yang tidak sesuai objek
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru merumuskan kemahiran dan menekankan nilai murni dalam Tahniah, Kak Mastura!.
-**Tindakan murid:** Murid menyatakan satu perkara yang dipelajari serta satu amalan baik yang berkaitan.
+**Guru:** Rumuskan kemahiran 5.1.1 (iv) dengan contoh yang diperoleh daripada Buku Teks.
+**Murid:** Sebut satu perkataan, ayat atau pengajaran penting daripada Tahniah, Kak Mastura!.
 
-**Status:** DRAF — semakan BA, RPT 2027 dan format cetak belum lulus. 
-**Kawalan:** Bahan guru dibina sendiri berdasarkan tema buku, bukan petikan latihan Buku Aktiviti; tiada arahan BA atau hasil PKJR rasmi yang direka. Belum untuk penerbitan kepada guru.
+**Bukti khusus BT:** BT1 m/s17 mengajar SP5.1.1(iv), lima contoh penjodoh bilangan hadiah dan membina ayat, BA1 m/s23–24 belum disahkan.
+**Status QA:** DRAF — halaman dan aktiviti BT telah dipadankan; BA, takwim negeri, format Word/PDF A4 dan ujian Telegram belum disahkan. Tidak layak diterbitkan sebagai FINAL READY.

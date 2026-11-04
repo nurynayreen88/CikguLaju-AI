@@ -7,6 +7,33 @@
   "verified_rph_textbook_page_activity": [
     {
       "year": 2,
+      "pdp": 1,
+      "book": "BT Tahun 2 SK Jilid 1",
+      "printed_pages": "2–3",
+      "proof": "BT1 m/s2–3 menyenaraikan frasa pili air, pagar batu, atap genting dan aktiviti keluarga; SP1.1.1(i), BA1 m/s1 belum disahkan.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 2,
+      "pdp": 3,
+      "book": "BT Tahun 2 SK Jilid 1",
+      "printed_pages": "4",
+      "proof": "BT1 m/s4 menyatakan SP2.1.1(i)(ii) dan aktiviti membaca perkataan/ayat kedai kek, BA1 m/s2–3 belum disahkan.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 2,
+      "pdp": 4,
+      "book": "BT Tahun 2 SK Jilid 1",
+      "printed_pages": "5",
+      "proof": "BT1 m/s5 mengarahkan menulis perkataan dan ayat dengan kemas dalam konteks Kek Mentega Istimewa, SP3.1.1(i)(ii).",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 2,
       "pdp": 5,
       "book": "BT Tahun 2 SK Jilid 1",
       "printed_pages": "5",
@@ -16,10 +43,181 @@
     },
     {
       "year": 2,
+      "pdp": 6,
+      "book": "BT Tahun 2 SK Jilid 1",
+      "printed_pages": "6",
+      "proof": "BT1 m/s6 mengarahkan menggunakan kata nama am untuk membina ayat kejutan hari lahir, SP5.1.1(i), BA1 m/s6–8 belum disahkan.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 2,
+      "pdp": 8,
+      "book": "BT Tahun 2 SK Jilid 1",
+      "printed_pages": "7",
+      "proof": "BT1 m/s7 mempunyai dialog hobi keluarga Hana dan SP1.1.1(ii) mendengar/menyebut ayat tunggal, BA1 m/s9 belum disahkan.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 2,
+      "pdp": 9,
+      "book": "BT Tahun 2 SK Jilid 1",
+      "printed_pages": "8",
+      "proof": "BT1 m/s8 mengandungi petikan Kenangan Sukaneka dan aktiviti membaca perenggan SP2.1.1(iii)(iv), BA1 m/s10–11 belum disahkan.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 2,
       "pdp": 10,
       "book": "BT Tahun 2 SK Jilid 1",
       "printed_pages": "9",
       "proof": "Menulis perenggan tentang percutian keluarga di Bukit Larut",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 2,
+      "pdp": 11,
+      "book": "BT Tahun 2 SK Jilid 1",
+      "printed_pages": "10",
+      "proof": "BT1 m/s10 menyebut SP4.1.1(i) dan dialog simpulan bahasa mengenai Amar; BA1 m/s13 belum disahkan.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 2,
+      "pdp": 12,
+      "book": "BT Tahun 2 SK Jilid 1",
+      "printed_pages": "11",
+      "proof": "BT1 m/s11 mempunyai SP5.1.1(ii) dan aktiviti melengkapkan cerita Hamster Kesayangan Hani menggunakan kata nama khas.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 2,
+      "pdp": 14,
+      "book": "BT Tahun 2 SK Jilid 1",
+      "printed_pages": "12",
+      "proof": "BT1 m/s12 mengandungi SP5.1.1(iii), dialog pertandingan fotografi dan tugasan melakon dialog menggunakan kata ganti nama diri.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 2,
+      "pdp": 15,
+      "book": "BT Tahun 2 SK Jilid 1",
+      "printed_pages": "13",
+      "proof": "BT1 m/s13 menyatakan SP1.1.1(iii) dan arahan mendengar/menyebut ayat majmuk tentang kebersihan dapur.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 2,
+      "pdp": 16,
+      "book": "BT Tahun 2 SK Jilid 1",
+      "printed_pages": "14",
+      "proof": "BT1 m/s14 memuatkan petikan tugas rumah dan SP2.1.2(i)(ii); BA1 m/s18–20 dirujuk tetapi belum disahkan.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 2,
+      "pdp": 18,
+      "book": "BT Tahun 2 SK Jilid 1",
+      "printed_pages": "15",
+      "proof": "BT1 m/s15 menggunakan SP3.1.1(iv), arahan menulis petikan secara mekanis; BA1 m/s21 belum disahkan.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 2,
+      "pdp": 19,
+      "book": "BT Tahun 2 SK Jilid 1",
+      "printed_pages": "16",
+      "proof": "BT1 m/s16 mencetak SP4.1.1(ii) dan aktiviti menuturkan dialog dengan bandingan semacam, BA1 m/s22 belum disahkan.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 2,
+      "pdp": 20,
+      "book": "BT Tahun 2 SK Jilid 1",
+      "printed_pages": "17",
+      "proof": "BT1 m/s17 mengajar SP5.1.1(iv), lima contoh penjodoh bilangan hadiah dan membina ayat, BA1 m/s23–24 belum disahkan.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 2,
+      "pdp": 21,
+      "book": "BT Tahun 2 SK Jilid 1",
+      "printed_pages": "18",
+      "proof": "BT1 m/s18 mencetak SP5.1.1(i)(ii)(iii), aktiviti berbual menggunakan kata nama daripada kisah Dr. Norini.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 2,
+      "pdp": 24,
+      "book": "BT Tahun 2 SK Jilid 1",
+      "printed_pages": "22",
+      "proof": "BT1 m/s22 menyatakan SP1.1.2(i), Kerusi Panas Kenali Rakan dan soal jawab; m/s21 ialah pengenalan tema.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 2,
+      "pdp": 25,
+      "book": "BT Tahun 2 SK Jilid 1",
+      "printed_pages": "23",
+      "proof": "BT1 m/s23 mencetak SP2.1.2(iii)(iv) dan dua soalan pemahaman tentang Rahisin; BA1 m/s26–27 belum disahkan.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 2,
+      "pdp": 26,
+      "book": "BT Tahun 2 SK Jilid 1",
+      "printed_pages": "24",
+      "proof": "BT1 m/s24 memberi SP3.2.1(i)(ii), melengkapkan frasa bantuan rakan dan simulasi, ejaan tajuk asal Bantu-membantu.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 2,
+      "pdp": 27,
+      "book": "BT Tahun 2 SK Jilid 1",
+      "printed_pages": "25",
+      "proof": "BT1 m/s25 mencetak SP4.1.1(iii) dan dialog Yahya–Yong Han menggunakan perumpamaan; BA1 m/s30 belum disahkan.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 2,
+      "pdp": 28,
+      "book": "BT Tahun 2 SK Jilid 1",
+      "printed_pages": "26",
+      "proof": "BT1 m/s26 mencetak SP5.1.2(i), kata kerja aktif transitif perlu objek; RPT lama hanya menulis 5.1.2.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 2,
+      "pdp": 29,
+      "book": "BT Tahun 2 SK Jilid 1",
+      "printed_pages": "27",
+      "proof": "BT1 m/s27 mencetak SP1.1.2(ii) dengan dialog suruhan Bantu Jiran, BA1 m/s33 belum disahkan.",
+      "pkjr_release": false,
+      "ba_exercise_verified": false
+    },
+    {
+      "year": 2,
+      "pdp": 30,
+      "book": "BT Tahun 2 SK Jilid 1",
+      "printed_pages": "28",
+      "proof": "BT1 m/s28 menyatakan SP2.2.1(i) dan aktiviti mengenal pasti kosa kata dalam petikan gotong-royong jamuan Puan Jeya.",
       "pkjr_release": false,
       "ba_exercise_verified": false
     },
@@ -1430,7 +1628,7 @@
     }
   ],
   "unresolved": [
-    "All remaining 670 RPH need specific textbook page/activity review",
+    "All remaining 648 RPH need specific textbook page/activity review",
     "All Buku Aktiviti exercises not verified globally",
     "Year 2 29 HOLD incl PKJR/assessment/duplicates",
     "Year 4–6 496 RPH require full academic audit",
@@ -1446,19 +1644,29 @@
     "Tahun 4 PdP 083 HOLD: SP bercetak BT m/s 95 ialah 1.2.2 tetapi arahan pada halaman ialah soal jawab penjelasan 1.2.3; perlu keputusan semakan.",
     "Tahun 4 PdP 095 dan 096 HOLD: BT m/s 108 menggabungkan penghasilan tisu Jalur Gemilang dan autobiografi; kedua-dua RPT menggunakan SP 2.2.1, sedangkan aktiviti autobiografi perlu pemetaan penulisan berasingan.",
     "Tahun 4 PdP 117, 118, 129 HOLD: aktiviti rasmi seni tulisan Jawi tidak boleh disahkan menggunakan ekstraksi teks tanpa semakan visual huruf tunggal, tulisan dan simpulan bahasa.",
-    "Tahun 4 PdP 135 HOLD: perlu semakan visual tulisan Jawi qaf/kaf dan simpulan bahasa pada BT m/s156, bukti teks tidak cukup."
+    "Tahun 4 PdP 135 HOLD: perlu semakan visual tulisan Jawi qaf/kaf dan simpulan bahasa pada BT m/s156, bukti teks tidak cukup.",
+    "Tahun 2 PdP 002, 007, 013, 017, 022 HOLD: perlu pembezaan tujuan PdP bagi pengulangan BT1; PdP 023 ialah Penilaian Tema bukan SP baharu."
   ],
   "ready_count": 0,
   "reviewed_eight_not_ready": true,
   "reviewed_seventeen_not_ready": true,
   "current_audit_batch": {
-    "year": 4,
-    "pdp_range": "132–165 excluding Jawi 135",
-    "reviewed_rph": 33,
+    "year": 2,
+    "pdp_range": "001–030, source-verifiable distinct activities only",
+    "reviewed_rph": 22,
     "explicit_hold": [
-      135
+      2,
+      7,
+      13,
+      17,
+      22,
+      23
     ],
-    "source": "Buku Teks BM Tahun 4 SK + DSKP original in Drive",
+    "preserved_existing_verified": [
+      5,
+      10
+    ],
+    "verified_with": "Buku Teks Bahasa Melayu Tahun 2 SK Jilid 1 original via Google Drive",
     "changed_rpt_formats": [
       "Markdown",
       "HTML"

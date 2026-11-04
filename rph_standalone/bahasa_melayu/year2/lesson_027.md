@@ -1,34 +1,36 @@
 # RPH Standalone Bahasa Melayu Tahun 2 — PdP 027
 
-**Tema/Unit:** Perpaduan; U4: Sahabat Karib  
-**Tajuk:** Berbakti Kepada Kawan  
-**SK:** 4.1 Mengaplikasikan unsur keindahan dan kesantunan bahasa dalam bahan sastera  
-**SP:** 4.1.1 (iii) — Bercerita, dan menuturkan dialog yang mengandungi gaya bahasa yang indah  
-**Buku rujukan:** BT1 m/s 25; BA m/s 30 — rujukan BA daripada BT atau RPT 2026; arahan latihan BA belum disahkan.  
-**Tempoh cadangan:** 60 minit, laras mengikut slot sebenar.  
-**Fokus:** perumpamaan tentang rakan membantu rakan  
-**Objektif:** Pada akhir PdP, murid dapat menerangkan makna tiga perumpamaan dan menggunakan dua ungkapan dalam dialog.  
-**BBM:** Buku Teks berkaitan, kad gambar/perkataan, kertas kerja/buku latihan. Kosa kata/konteks: bagai isi dengan kuku; seperti aur dengan tebing; kacang lupakan kulit.  
+**ID:** BM2-P027
+**Minggu RPT 2027:** M08 (tarikh pelaksanaan ikut jadual kelas)
+**Tema/Unit:** Perpaduan; U4: Sahabat Karib
+**Tajuk aktiviti:** Berbakti Kepada Kawan
+**Standard Kandungan (SK):** 4.1 Mengaplikasikan unsur keindahan dan kesantunan bahasa dalam bahan sastera
+**Standard Pembelajaran (SP):** 4.1.1 (iii) — Bercerita, dan menuturkan dialog yang mengandungi gaya bahasa yang indah
+**Rujukan:** Buku Teks BM Tahun 2 SK Jilid 1 m/s 25. **Buku Aktiviti:** rujukan dalam RPT hanya; halaman/latihan BA asal belum disahkan.
+**Fokus asal BT:** dialog Yahya dan Yong Han yang menggunakan perumpamaan bagai isi dengan kuku, seperti aur dengan tebing dan kacang lupakan kulit.
+**Objektif PdP:** Pada akhir PdP, murid dapat mengenal pasti tiga perumpamaan dan melakonkan dialog pertolongan rakan dengan intonasi sesuai.
+**Bahan:** BT Jilid 1, bahan bergambar/kad kata daripada tugasan sumber, lembaran tugasan khusus dan senarai semak PBD.
+**Masa:** 60 minit (laras mengikut jadual).
 
 ## Set induksi (5 minit)
-**Tindakan guru:** Guru mengemukakan satu situasi bergambar daripada tema Berbakti Kepada Kawan dan mengaitkannya dengan pengalaman murid.
-**Tindakan murid:** Murid menyatakan satu pengalaman atau pengetahuan sedia ada yang relevan.
+**Guru:** Paparkan gambar Berbakti Kepada Kawan daripada BT1 m/s 25; tanya pengalaman murid yang berkaitan dengan tema.
+**Murid:** Nyatakan satu perkara yang dapat diperhatikan dalam gambar Berbakti Kepada Kawan.
 
-## Aktiviti 1 — Rangsangan Buku Teks (15 minit)
-**Tindakan guru:** Guru membaca kisah Yahya membantu Yong Han dan memodelkan maksud tiga perumpamaan.
-**Tindakan murid:** Murid memadankan ungkapan dengan situasi rapat, bekerjasama dan tidak melupakan jasa.
+## Aktiviti 1 — Dengar atau teliti sumber (15 minit)
+**Guru:** Bimbing murid membaca cerita/dialog BT1 m/s25 dan mengenal pasti perumpamaan tentang kerjasama
+**Murid:** Padankan tiga perumpamaan dengan maksud hubungan rapat, saling membantu dan tidak lupa jasa
 
-## Aktiviti 2 — Aplikasi kepada situasi (20 minit)
-**Tindakan guru:** Guru mengagihkan watak rakan yang memerlukan bantuan kerja sekolah lalu mengarahkan dialog empat giliran.
-**Tindakan murid:** Murid melakonkan dialog dengan dua perumpamaan yang tepat dan intonasi sesuai.
+## Aktiviti 2 — Laksana tugasan buku teks (20 minit)
+**Guru:** Modelkan lakonan perbualan Yahya membantu Yong Han menyiapkan kerja sekolah
+**Murid:** Ujarkan dialog dengan tiga perumpamaan serta jelaskan satu pengajaran
 
-## Pengukuhan / Penilaian PBD (15 minit)
-**Tindakan guru:** Semak tiga maksud dan dua penggunaan ungkapan yang munasabah.
-**Tindakan murid:** Murid menyerahkan hasil atau memberi respons secara individu, menerima pembetulan guru dan memperbaiki satu kesilapan jika ada.
+## Pengukuhan / PBD (15 minit)
+**Guru:** Semak intonasi, ketepatan perumpamaan dan maksud
+**Murid:** Baiki satu perumpamaan yang dipadankan salah
 
 ## Penutup (5 minit)
-**Tindakan guru:** Guru menyimpulkan kemahiran perumpamaan tentang rakan membantu rakan dan mengaitkannya dengan nilai murni dalam tajuk.
-**Tindakan murid:** Murid menyatakan satu kemahiran yang dipelajari serta contoh mengamalkannya.
+**Guru:** Rumuskan kemahiran 4.1.1 (iii) dengan contoh yang diperoleh daripada Buku Teks.
+**Murid:** Sebut satu perkataan, ayat atau pengajaran penting daripada Berbakti Kepada Kawan.
 
-**Status QA:** DRAF — audit BA dan masa pelaksanaan belum lengkap. 
-**Catatan:**  Tidak mengarang latihan Buku Aktiviti atau standard rasmi PKJR. Belum untuk diterbitkan di Telegram/Web.
+**Bukti khusus BT:** BT1 m/s25 mencetak SP4.1.1(iii) dan dialog Yahya–Yong Han menggunakan perumpamaan; BA1 m/s30 belum disahkan.
+**Status QA:** DRAF — halaman dan aktiviti BT telah dipadankan; BA, takwim negeri, format Word/PDF A4 dan ujian Telegram belum disahkan. Tidak layak diterbitkan sebagai FINAL READY.
