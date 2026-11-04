@@ -83,6 +83,12 @@ class PSVSourceOrderTests(unittest.TestCase):
         cases = {
             "002": ("Alat Tulis Saya", "ms 10–11", "garisan selari", "dua lakaran berlabel"),
             "003": ("Tingkap Damai", "ms 12–13", "tetingkap fokus", "tiga bahagian ruang"),
+            "004": ("Dunia Gemilang", "ms 14–15", "arca tiga dimensi", "tiga ciri berlabel"),
+            "005": ("Bersatu Teguh Bercerai Roboh", "ms 16–17", "tanggam", "dua percubaan susunan"),
+            "006": ("Kotak Kejutan", "ms 18–19", "templat bentangan", "dua catatan bentuk/lipatan"),
+            "007": ("Realiti Alam", "ms 20–21", "ruang ilusi", "tiga label tepat"),
+            "008": ("Lihat dan Sentuh", "ms 22–23", "capan dan kolaj", "dua sampel teknik"),
+            "009": ("Kaktus Khatulistiwa", "ms 24–25", "montaj", "dua lapisan rupa"),
         }
         for pdp, (title, pages, technique, evidence) in cases.items():
             with self.subTest(pdp=pdp):
@@ -97,8 +103,10 @@ class PSVSourceOrderTests(unittest.TestCase):
                 self.assertNotIn("garisan laluan, rupa rumah", rph)
                 self.assertIn(row["Objektif"], rph)
         html = (PSV / "RPT_PSV_Tahun_6_2027_DRAF.html").read_text(encoding="utf-8")
-        self.assertIn("Buku teks ms 10–11", html)
-        self.assertIn("Buku teks ms 12–13", html)
+        for pdp, (_, pages, _, _) in cases.items():
+            with self.subTest(html_pdp=pdp):
+                row = next(r for r in html.splitlines() if f"<td>{pdp}</td>" in r)
+                self.assertIn(f"Buku teks {pages}", row)
 
 
 if __name__ == "__main__":
