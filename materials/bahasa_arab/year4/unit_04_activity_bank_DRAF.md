@@ -1,7 +1,7 @@
 # Bank aktiviti Bahasa Arab Tahun 4 — Unit 04 (DRAF)
 
 **Tahun:** 4  |  **Unit:** بيتي جنتي
-**Kosa kata rujukan:** سرير، وسادة، حمام، مطعم، هاتف، طاولة، سلم، مخزن.
+**Kosa kata rujukan:** سرير، وسادة، حمام، ستار، هاتف، طاولة، سلم، مخزن.
 **Fokus kemahiran disyorkan:** mendengar dan bertutur. **SP cadangan peta sumber:** 1.2.1 (mesti dipadankan semula bagi PdP sebenar).
 **BBM:** Pelan rumah dan kad objek.
 

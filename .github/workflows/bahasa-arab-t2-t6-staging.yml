@@ -1,0 +1,27 @@
+name: BA Year 2–6 staging (read-only)
+on:
+  push:
+    branches: [staging/bahasa-arab-t2-t6-20261105]
+    paths:
+      - 'rph_standalone/bahasa_arab/**'
+      - 'rpt_2027/bahasa_arab/**'
+      - 'materials/bahasa_arab/**'
+      - 'scripts/check_bahasa_arab_t2_t6_stage.py'
+  pull_request:
+    paths:
+      - 'rph_standalone/bahasa_arab/**'
+      - 'rpt_2027/bahasa_arab/**'
+      - 'materials/bahasa_arab/**'
+      - 'scripts/check_bahasa_arab_t2_t6_stage.py'
+jobs:
+  verify-drafts-not-ready:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Audit 30 RPH and 15 unit activity banks
+        run: python scripts/check_bahasa_arab_t2_t6_stage.py

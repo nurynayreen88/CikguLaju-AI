@@ -29,6 +29,9 @@ def read_csv(path: Path) -> list[dict[str,str]]:
     with path.open(encoding="utf-8-sig", newline="") as file:
         return list(csv.DictReader(file))
 
+def src_url_not_empty(content: str) -> bool:
+    return "https://anyflip.com/" in content
+
 def check() -> None:
     data = json.loads(MANIFEST.read_text(encoding="utf-8"))
     assert data["release_status"] == "DRAF_STAGING_SAHAJA"
@@ -66,7 +69,18 @@ def check() -> None:
             assert record["sp"] in content and info["rpt_2026"] in content
             assert len(content) >= 1100, (path, "RPH too short")
             checked += 1
-    print(f"PASSED: {len(units)} unit placeholders, {len(lessons)} RPT-PdP rows, {checked} RPH drafts.")
+    bank_checked = 0
+    for year in range(2, 7):
+        for unit in range(2, 5):
+            path = ROOT / "materials" / "bahasa_arab" / f"year{year}" / f"unit_{unit:02d}_activity_bank_DRAF.md"
+            content = path.read_text(encoding="utf-8")
+            assert f"Bahasa Arab Tahun {year}" in content
+            assert "Bukti PBD" in content
+            assert "DRAF_SEMAK" in content and "BELUM READY" in content
+            assert src_url_not_empty(content)
+            bank_checked += 1
+    assert bank_checked == data["additional_unit_activity_bank_count"] == 15
+    print(f"PASSED: {len(units)} unit placeholders, {len(lessons)} RPT-PdP rows, {checked} RPH drafts, {bank_checked} activity banks.")
     print("RELEASE BLOCKED: 0 FINAL READY; textbook-page, native render, manual approval pending.")
 
 if __name__ == "__main__":

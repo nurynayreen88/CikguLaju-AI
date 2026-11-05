@@ -20,7 +20,9 @@
         "title": "Buku Teks Bahasa Arab Tahun 2 KSSR Semakan (sumber sekolah KPM)",
         "url": "https://sites.google.com/moe-dl.edu.my/sketta2bahasaarab/buku-teks-digital",
         "text_extractable": false,
-        "source_page_verified": false
+        "source_page_verified": false,
+        "alternate_public_copy": "https://anyflip.com/ypnd/tcce/basic",
+        "alternate_public_copy_status": "Pautan buku teks ditemukan; halaman PdP individu belum disahkan"
       },
       "rpt_2026": "https://anyflip.com/zxzlm/jffk/basic",
       "unit_1": "هيا نتعارف",
@@ -38,7 +40,8 @@
         "url": "https://drive.google.com/file/d/1U-j2TPeVTyLaZbU2qGDb9jmf53KAwNNH/view",
         "text_extractable": false,
         "source_page_verified": false,
-        "note": "PDF imbasan CamScanner; teks tidak tersedia untuk pemadanan halaman automatik"
+        "note": "PDF imbasan CamScanner; teks tidak tersedia untuk pemadanan halaman automatik",
+        "alternate_public_reference": "https://sites.google.com/moe-dl.edu.my/sketta2bahasaarab/buku-teks-digital"
       },
       "rpt_2026": "https://anyflip.com/zxzlm/vmip/basic",
       "unit_1": "تفضل إلى الفصل",
@@ -130,13 +133,16 @@
         "url": "https://sites.google.com/moe-dl.edu.my/ba2k26/dokumen-standard-kurikulum/dskp-mata-pelajaran-terkini",
         "text_extractable": false,
         "note": "Sumber DSKP KSSR Semakan Tahun 6 tambahan boleh dibaca melalui teks AnyFlip; dokumen asal dari panitia sekolah belum diaudit sepenuhnya.",
-        "secondary_text_reference": "https://anyflip.com/bpvwr/huxb/basic"
+        "secondary_text_reference": "https://anyflip.com/bpvwr/huxb/basic",
+        "alternate_public_copy": "https://anyflip.com/vouoy/jjuq/basic"
       },
       "textbook": {
         "title": "GuruBesar_BukuTeks_Bahasa_Arab_T6.pdf",
         "url": "https://drive.google.com/file/d/1WPab-TZG1SpqYhBIbo6Lb5wVr98_aIbP/view",
         "text_extractable": false,
-        "source_page_verified": false
+        "source_page_verified": false,
+        "alternate_public_copy": "https://anyflip.com/jxgvj/krzu/basic/",
+        "alternate_public_copy_status": "Edisi teks cetakan 2021 ditemui; belum semak padanan halaman dengan PDF Drive"
       },
       "rpt_2026": "https://anyflip.com/zxzlm/bmaa/basic",
       "unit_1": "حياتنا أجمل بالنظافة",
@@ -153,5 +159,7 @@
     "Ujian integrasi, hash, FK/orphan dan tiada penggantian data sedia ada",
     "Kelulusan manual individu dan pengaktifan hanya selepas CI lulus"
   ],
-  "stage_progress_note": "30/30 PdP 001–006 ditulis sebagai draf permulaan Unit 1 (6 setiap tahun); tidak menandakan lulus DSKP/BT per halaman atau RPT 2027 siap."
+  "stage_progress_note": "30/30 PdP 001–006 ditulis sebagai draf permulaan Unit 1 (6 setiap tahun); tidak menandakan lulus DSKP/BT per halaman atau RPT 2027 siap.",
+  "additional_unit_activity_bank_count": 15,
+  "additional_unit_activity_bank_status": "DRAF_SEMAK_BELUM_READY"
 }

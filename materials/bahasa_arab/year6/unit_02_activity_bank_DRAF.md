@@ -1,7 +1,7 @@
 # Bank aktiviti Bahasa Arab Tahun 6 — Unit 02 (DRAF)
 
 **Tahun:** 6  |  **Unit:** الشباب أمل الأمة
-**Kosa kata rujukan:** طبيب، معلم، شرطي، طباخ، ممرض، تاجر.
+**Kosa kata rujukan:** طبيب، معلم، شرطي، طباخ، ممرضة، تاجر.
 **Fokus kemahiran disyorkan:** mendengar dan bertutur. **SP cadangan peta sumber:** 1.2.1 (mesti dipadankan semula bagi PdP sebenar).
 **BBM:** Kad kerjaya.
 

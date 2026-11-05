@@ -5,6 +5,7 @@
 - `unit_sequence_DRAF_20261105.csv`: 20 unit (4 bagi setiap Tahun 2–6) berdasarkan urutan sumber 2026/buku teks, tanpa minggu atau tarikh.
 - `pdp_001_006_DRAF.csv`: 30 baris pemetaan awal PdP–kod SK/SP–fokus Unit 1. **Ini bukan RPT 2027 lengkap.**
 - `rph_standalone/bahasa_arab/year2..year6/lesson_001..lesson_006.md`: 30 contoh RPH DRAF (6 setiap tahun), belum audit halaman buku dan belum dicetak A4.
+- `materials/bahasa_arab/year2..year6/unit_02..unit_04_activity_bank_DRAF.md`: 15 bank aktiviti tema Unit 2–4, **bukan** 15 RPH siap.
 - `audits/bahasa_arab_stage_20261105.md`: status, sumber dan keperluan release.
 - `rph_standalone/bahasa_arab/source_manifest_20261105.json`: rekod sumber serta release gate.
 

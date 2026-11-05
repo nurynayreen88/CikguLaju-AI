@@ -2,6 +2,7 @@
 
 ## Terkini
 - **30 RPH Markdown DRAF**, PdP 001–006 bagi setiap Tahun 2–6.
+- **15 bank aktiviti unit** tambahan merentas Unit 2–4 setiap tahun, dengan contoh PdP dan PBD khusus; bukan RPH bernombor.
 - **20 unit** (4 per tahun) pada indeks urutan unit; **30 baris** pemetaan PdP awal kepada kod SK/SP dalam CSV berasingan.
 - Semua rekod berstatus **DRAF_SEMAK / BELUM READY**, halaman buku teks PdP individu belum disahkan, **0 FINAL READY**.
 - Y3 Unit 4 dalam indeks diperbetulkan kepada **الزمان**, berdasarkan RPT 2026 dan tema DSKP.
