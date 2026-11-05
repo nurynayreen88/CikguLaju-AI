@@ -58,7 +58,7 @@ def _failure(exc):
         return jsonify({"error": str(exc)}), 400
     if isinstance(exc, ProfileConflict):
         return jsonify({"error": "Maklumat telah berubah pada peranti lain. Muat semula sebelum simpan."}), 409
-    return jsonify({"error": "Sambungan profil Supabase tidak tersedia. Data lama tidak diubah."}), 503
+    return jsonify({"error": "Maklumat guru belum dapat disimpan. Data sedia ada tidak diubah."}), 503
 
 
 @bp.get("/api/web/teacher/profile")
