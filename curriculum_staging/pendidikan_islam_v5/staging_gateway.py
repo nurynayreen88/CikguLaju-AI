@@ -18,8 +18,12 @@ from collections import Counter
 from pathlib import Path
 from urllib.parse import parse_qs
 
-from bundle_reader import PIBundleV5, BundleValidationError
-from preview_reader import PIPreviewBundleV5, PreviewBundleError
+try:
+    from .bundle_reader import PIBundleV5, BundleValidationError
+    from .preview_reader import PIPreviewBundleV5, PreviewBundleError
+except ImportError:  # permit running the standalone staging module from its folder
+    from bundle_reader import PIBundleV5, BundleValidationError
+    from preview_reader import PIPreviewBundleV5, PreviewBundleError
 
 MAX_SERVED_BYTES = 8 * 1024 * 1024
 VALID_COUNTS = {2: 112, 3: 147, 4: 151, 5: 143, 6: 143}
