@@ -32,6 +32,11 @@ def check() -> None:
     assert next(x["tajuk_arab"] for x in units if x["tahun"] == "3" and x["unit"] == "4") == "الوقت كالذهب"
     assert m["years"]["3"]["unit_4_theme_tag"] == "الزمان"
     assert m["years"]["3"]["unit_4_corrected"] == "الوقت كالذهب"
+    assert next(x["tajuk_arab"] for x in units if x["tahun"] == "5" and x["unit"] == "3") == "هيا نشترك في الأنشطة اللاصفية"
+    assert m["years"]["5"]["unit_3_title_corrected"] == "هيا نشترك في الأنشطة اللاصفية"
+    y5bank = (ROOT / "materials" / "bahasa_arab" / "year5" / "unit_03_activity_bank_DRAF.md").read_text(encoding="utf-8")
+    assert "**Unit:** هيا نشترك في الأنشطة اللاصفية" in y5bank
+    assert "فرقة الكشافة" in y5bank
     assert {(int(x["tahun"]),int(x["unit"])) for x in units} == {(y,n) for y in range(2,7) for n in range(1,5)}
     assert m["primary_crosswalk_file"] == "rpt_2027/bahasa_arab/pdp_001_012_DRAF.csv"
     rows = read_csv(RPT / "pdp_001_012_DRAF.csv")

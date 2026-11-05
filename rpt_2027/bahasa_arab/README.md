@@ -31,3 +31,5 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 ## Evidence PdP awal Tahun 4
 - 6/6 PdP awal Year 4 Unit 1 menerima rujukan halaman buku: **2, 2, 4–5, 3, 7, 3** dan contoh aktiviti asal. Fail `audits/bahasa_arab_y4_textbook_pdp001_006_evidence_20261106.json`.
 - Bukti halaman spesifik ini **tidak** menukar status keseluruhan kepada READY; Word/PDF RTL dan kelulusan guru belum dibuat.
+
+- Tahun 5 Unit 3 tajuk rasmi **هيا نشترك في الأنشطة اللاصفية** (kokurikulum), bukan **هيا نشترك في الأنشطة الصفية**. Sumber indeks dan bank aktiviti staging diselaraskan (6 Nov 2026).

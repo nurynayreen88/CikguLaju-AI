@@ -191,7 +191,7 @@
         },
         {
           "unit": 3,
-          "title": "هيا نشترك في الأنشطة الصفية",
+          "title": "هيا نشترك في الأنشطة اللاصفية",
           "printed_pages": "57-84"
         },
         {
@@ -203,7 +203,9 @@
       "provisional_rph_count": 12,
       "external_textbook_portal": "https://sites.google.com/moe-dl.edu.my/sketta2bahasaarab/buku-teks-digital",
       "external_dskp_portal": "https://sites.google.com/moe-dl.edu.my/unitbahasaprogram-pso-2021/mata-pelajaran-unit-bahasa/bahasa-arab/sekolah-rendah/dskp",
-      "external_rpt_2026_portal": "https://sites.google.com/moe-dl.edu.my/panitia-bahasa-arab-sksn/induk/rptdskp"
+      "external_rpt_2026_portal": "https://sites.google.com/moe-dl.edu.my/panitia-bahasa-arab-sksn/induk/rptdskp",
+      "unit_3_title_corrected": "هيا نشترك في الأنشطة اللاصفية",
+      "unit_3_correction_note": "Judul sebenar Unit 3 BT KSSR Tahun 5 ialah aktiviti luar bilik darjah/kokurikulum (اللاصفية), bukan aktiviti dalam kelas (الصفية)."
     },
     "6": {
       "dskp": {

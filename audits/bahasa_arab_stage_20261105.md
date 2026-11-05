@@ -56,3 +56,6 @@ Sumber: https://www.scribd.com/document/438677752/Bahasa-Arab-Tahun-3-Teks-KSSR-
 
 ## 6 Nov 2026 — Tahun 4 Unit 1, enam PdP pertama
 Enam draf RPH Tahun 4 PdP 001–006 dikemaskini dengan bukti contoh muka surat BT DBP/KPM 2019: 2, 2, 4–5, 3, 7, 3. Aktiviti diperincikan menggunakan contoh asli kata ال, bulan Masihi dan tulisan. Rujukan fail: `audits/bahasa_arab_y4_textbook_pdp001_006_evidence_20261106.json` dan https://anyflip.com/rzqgi/ejrv/basic. Semua kekal DRAF, belum lulus pengesahan RPT 2027 atau fail A4 Word/PDF.
+
+## Pembetulan Tahun 5 Unit 3 — 6 Nov 2026
+Tajuk Buku Teks Tahun 5 Unit 3 ialah **هيا نشترك في الأنشطة اللاصفية** (Aktiviti Kokurikulum / Luar Bilik Darjah), bukan **هيا نشترك في الأنشطة الصفية**. Bank aktiviti kini menggunakan contoh kelab/persatuan/unit beruniform. Disahkan silang menggunakan bahan PdP sekolah yang menyebut buku teks halaman 65 dan RPT 2024/25. Buku Teks Tahun 5 DBP/KPM 2020 masih sumber asas; halaman individu PdP untuk unit ini belum diluluskan. Indeks CSV, manifest, bibliografi dan bank aktiviti diseragamkan tanpa menukar status READY.
