@@ -70,7 +70,14 @@ def check() -> None:
     assert m["years"]["6"]["textbook"]["source_page_verified"] is False
     assert all(x["ready"] is False for x in y6_evidence["lesson_candidates"])
     assert len(y6_evidence["lesson_candidates"]) == 12
-    assert len(y6_evidence["conflicts"]) >= 1
+    assert y6_evidence["conflicts"] == []
+    assert len(y6_evidence["resolved_discussions"]) == 1
+    assert y6_evidence["resolved_discussions"][0]["lesson"] == "year6/lesson_004"
+    assert y6_evidence["resolved_discussions"][0]["old_sp"] == "2.1.1"
+    assert y6_evidence["resolved_discussions"][0]["new_sp"] == "2.1.2"
+    assert y6_evidence["lesson_candidates"][3]["sp_in_draft"] == "2.1.2"
+    assert mapping[(6,4)]["sp"] == "2.1.2"
+    assert "2.1 / 2.1.2" in (SUBJECT / "year6" / "lesson_004.md").read_text(encoding="utf-8")
     for idx, row in enumerate(y6_evidence["book"]["toc"], start=1):
         found = next(r for r in units if r["tahun"]=="6" and r["unit"]==str(idx))
         assert found["halaman_mula_buku"] == str(row["printed_page_start"])
