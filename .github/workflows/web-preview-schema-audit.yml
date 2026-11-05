@@ -1,0 +1,45 @@
+name: Audit isolated Web v26 curriculum to RPH source mapping
+on:
+  push:
+    branches:
+      - staging/cikgulaju-web-v1
+    paths:
+      - .github/workflows/web-preview-schema-audit.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  schema:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read only latest approved v26.00 schema and catalog counts
+        run: |
+          python - <<'PY'
+          import hashlib, json, sqlite3, tempfile, pathlib
+          root=pathlib.Path('.')
+          m=json.loads((root/'v26_00_manifest.json').read_text())
+          with tempfile.TemporaryDirectory() as tmp:
+              p=pathlib.Path(tmp)/'curriculum.db'
+              h=hashlib.sha256()
+              with p.open('wb') as dest:
+                  for part in m['parts']:
+                      b=(root/part['file']).read_bytes()
+                      assert hashlib.sha256(b).hexdigest()==part['sha256']
+                      h.update(b)
+                      dest.write(b)
+              assert h.hexdigest()==m['sha256']
+              con=sqlite3.connect(p.as_uri()+'?mode=ro',uri=True)
+              con.execute('PRAGMA query_only=ON')
+              tables=[r[0] for r in con.execute("SELECT name FROM sqlite_master WHERE type='table'")]
+              print('TABLE_NAMES (curriculum only):', [x for x in tables if any(k in x.lower() for k in ('rph','lesson','rpt','template','sk','sp','topic'))])
+              for name in tables:
+                  if any(k in name.lower() for k in ('rph','lesson','rpt','template')):
+                      cols=[(r[1],r[2]) for r in con.execute('PRAGMA table_info("'+name+'")')]
+                      print('SCHEMA:',name, cols[:30])
+              if 'rpt_entries' in tables:
+                  print('RPT_COUNTS:',list(con.execute("SELECT year_label,subject,COUNT(*),MIN(sequence_no),MAX(sequence_no) FROM rpt_entries WHERE verified=1 AND lower(COALESCE(notes,'')) NOT LIKE '%superseded%' GROUP BY year_label,subject ORDER BY year_label,subject LIMIT 110")))
+                  print('RPT_SAMPLE:', list(con.execute("SELECT id,year_label,subject,sequence_no,unit_title,topic,subtopic FROM rpt_entries WHERE year_label IN ('Tahun 2','Tahun 6') AND verified=1 AND subject IN ('Bahasa Inggeris','Pendidikan Moral','PJPK') ORDER BY id LIMIT 12")))
+              con.close()
+          PY
