@@ -1,34 +1,32 @@
 # RPH PENDIDIKAN MUZIK TAHUN 4 — PdP 10
 
-**Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** BUNGA GERGASI  
-**Bidang:** Permainan Alat Perkusi  
-**SK / SP (RPT sumber):** 2.2.1, 2.2.2
-**Tempoh cadangan:** 30 minit  
-**Status:** DRAF STAGING — belum FINAL READY
+**Kelas:** __________  **Tarikh:** __________  **Masa:** __________
+**Unit/Tajuk:** BUNGA GERGASI
+**SK / SP (rujukan RPT):** 2.2.1, 2.2.2
+**Bidang/Fokus:** Perkusi & Irama — Bunga Gergasi — korus perkusi
+**Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — bukan FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Memainkan corak irama empat detik dengan betul dalam sekurang-kurangnya 2 daripada 3 percubaan.
+**Objektif:** Memainkan corak irama berdasarkan skor lagu dengan tempo stabil dalam sekurang-kurangnya dua ulangan.
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **BUNGA GERGASI**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
 
-**Set Induksi — 4 minit**  
-Guru mengetuk empat detik; murid menepuk semula dengan stabil dan meneka perubahan tempo/dinamik.
+**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru memperkenalkan Corak Irama 1 dan 2 yang digunakan sebagai iringan lagu Bunga Gergasi.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru menerangkan skor ikon/corak irama dengan penekanan pada Memainkan alat perkusi mengikut tempo.. Murid berlatih melalui tepukan dan kiraan sebelum menggunakan alat.
+**Aktiviti 2 — Aplikasi muzik (10 minit):** Murid menepuk pola, mengaplikasikan pada dua alat perkusi dan menggabungkan permainan berasaskan skor dengan isyarat tempo.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Kumpulan kecil memainkan 2–3 ulangan corak irama berpandukan skor; ketua kumpulan memberi isyarat mula, henti dan tempo.
+**Pengukuhan dan pentaksiran (6 minit):** Rubrik tiga aspek: ketepatan irama, tempo dan disiplin alat.
 
-**Pengukuhan & Penilaian — 6 minit**  
-Periksa ketepatan pola empat detik dalam 3 percubaan dan penglibatan setiap murid.
+**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
 
-**Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
 
-**Bahan:** Alat perkusi, skor ikon atau notasi ringkas, kad detik dan audio iringan.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 42; **belum disahkan pada halaman buku asal**. Audio/trek belum dipadankan.
+**Rujukan buku teks:** m/s 42 daripada RPT rujukan yang padan dengan tema buku Kesenian Tahun 4. **Semakan teks unit/aktiviti dibuat, tetapi halaman penuh belum disahkan secara visual.** Sumber: https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view
 
-**Catatan pelaksanaan / pemulihan:** __________________________________________
+**Rujukan audio bercetak:** 30–37. **Belum disahkan sama ada fail trek tersedia atau sepadan dengan laluan penghantaran.**
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Audit kod:** Pemetaan SP RPT belum kelulusan guru.
+
+**Refleksi / pemulihan:** __________________________________________________
+
+**Kawalan penerbitan:** DRAF STAGING. Semakan kandungan dan format Word/PDF belum selesai; jangan aktifkan secara langsung di Web atau Telegram.

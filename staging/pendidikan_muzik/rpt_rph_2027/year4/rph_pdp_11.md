@@ -1,34 +1,32 @@
 # RPH PENDIDIKAN MUZIK TAHUN 4 — PdP 11
 
-**Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** BUNGA GERGASI  
-**Bidang:** Gerakan Mengikut Muzik  
-**SK / SP (RPT sumber):** 2.3.1
-**Tempoh cadangan:** 30 minit  
-**Status:** DRAF STAGING — belum FINAL READY
+**Kelas:** __________  **Tarikh:** __________  **Masa:** __________
+**Unit/Tajuk:** BUNGA GERGASI
+**SK / SP (rujukan RPT):** 2.3.1
+**Bidang/Fokus:** Gerakan, Tempo & Irama — Bapaku Pulang dan Burung Kakaktua — bentuk lagu
+**Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — bukan FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Melakukan sekurang-kurangnya dua corak pergerakan yang tepat dengan tempo/struktur muzik.
+**Objektif:** Mengenal bentuk lagu AA dan AB serta menunjukkan dua pola gerak mengikut bahagian muzik.
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **BUNGA GERGASI**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
 
-**Set Induksi — 4 minit**  
-Murid mendengar muzik dan bergerak setempat mengikut detik tanpa mengganggu ruang rakan.
+**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru memperdengarkan petikan Bapaku Pulang dan Burung Kakaktua lalu membantu murid menandakan bahagian A dan B.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru menunjuk contoh gerakan berdasarkan Merancang dan membuat pergerakan berdasarkan muzik yang didengar dari aspek: (i) bentuk lagu., sambil menerangkan aspek irama, bentuk lagu atau tempo.
+**Aktiviti 2 — Aplikasi muzik (10 minit):** Murid memilih formasi gerak A/B dan mengubah gerakan semasa bahagian lagu berubah menggunakan persembahan ringkas.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid dalam kumpulan mencipta formasi 4–8 kiraan dan mempersembahkannya bersama muzik; kumpulan lain memberi ulasan membina.
+**Pengukuhan dan pentaksiran (6 minit):** Semak pengecaman bentuk dan keselarasan perubahan gerak dengan muzik.
 
-**Pengukuhan & Penilaian — 6 minit**  
-Rubrik 3 aspek: padanan muzik, koordinasi dan kerjasama; rekod penyertaan setiap murid.
+**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
 
-**Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
 
-**Bahan:** Audio muzik, ruang selamat dan kad formasi/tempo.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 44; **belum disahkan pada halaman buku asal**. Audio/trek belum dipadankan.
+**Rujukan buku teks:** m/s 44 daripada RPT rujukan yang padan dengan tema buku Kesenian Tahun 4. **Semakan teks unit/aktiviti dibuat, tetapi halaman penuh belum disahkan secara visual.** Sumber: https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view
 
-**Catatan pelaksanaan / pemulihan:** __________________________________________
+**Rujukan audio bercetak:** 38–43. **Belum disahkan sama ada fail trek tersedia atau sepadan dengan laluan penghantaran.**
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Audit kod:** Pemetaan SP RPT belum kelulusan guru.
+
+**Refleksi / pemulihan:** __________________________________________________
+
+**Kawalan penerbitan:** DRAF STAGING. Semakan kandungan dan format Word/PDF belum selesai; jangan aktifkan secara langsung di Web atau Telegram.

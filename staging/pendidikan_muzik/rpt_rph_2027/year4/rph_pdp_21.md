@@ -1,36 +1,32 @@
 # RPH PENDIDIKAN MUZIK TAHUN 4 — PdP 21
 
-**Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** INDAHNYA DASAR LAUT
-**Bidang:** Pengajaran dan Persembahan Muzik  
-**SK / SP (RPT sumber):** 3.1.2, 3.1.3
-**Tempoh cadangan:** 30 minit  
-**Status:** DRAF STAGING — belum FINAL READY
+**Kelas:** __________  **Tarikh:** __________  **Masa:** __________
+**Unit/Tajuk:** INDAHNYA DASAR LAUT
+**SK / SP (rujukan RPT):** 3.1.2, 3.1.3
+**Bidang/Fokus:** Kreativiti Muzik — Cipta melodi — permainan Susun Notasi
+**Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — bukan FINAL READY
 
-**AMARAN KOD:** SP dalam RPT tidak ditemui secara tepat dalam katalog DSKP tahun ini: 3.1.2, 3.1.3. Jangan ubah kod automatik.
+**Objektif:** Mencipta satu frasa melodi pendek menggunakan not G, A, B dan C’ serta mempersembahkannya.
 
-**Objektif pembelajaran (draf boleh ukur):** Menghasilkan dan mempersembahkan satu corak irama/melodi ringkas yang memenuhi 3 kriteria rubrik.
+**Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **INDAHNYA DASAR LAUT**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru menepuk Corak Irama 1/2 kemudian mengingatkan kedudukan not yang digunakan untuk ciptaan.
 
-**Set Induksi — 4 minit**  
-Guru menepuk corak empat detik; murid menyambung dengan corak yang berbeza sebagai respons.
+**Aktiviti 2 — Aplikasi muzik (10 minit):** Kumpulan menyusun kad not G, A, B, C’, menulis pola di atas baluk dan mencuba melodi menggunakan rekoder.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru membimbing murid meneroka bunyi dan mencipta contoh berdasarkan melaksanakan kemahiran muzik mengikut Standard Pembelajaran RPT. Murid menyusun empat kad corak/not.
+**Pengukuhan dan pentaksiran (6 minit):** Guru menyemak pilihan not, kiraan detik dan kelancaran frasa ciptaan.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid mencipta satu corak atau frasa sendiri, menotasi dengan kad/ikon dan mempersembahkannya di hadapan pasangan.
+**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
 
-**Pengukuhan & Penilaian — 6 minit**  
-Semak 3 aspek: bilangan detik tepat, kesesuaian bunyi/not dan keupayaan mempersembahkan ciptaan.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
 
-**Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+**Rujukan buku teks:** m/s 70-71 daripada RPT rujukan yang padan dengan tema buku Kesenian Tahun 4. **Semakan teks unit/aktiviti dibuat, tetapi halaman penuh belum disahkan secara visual.** Sumber: https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view
 
-**Bahan:** Kad ikon/not, alat perkusi atau rekoder mengikut SP, bahan improvisasi selamat.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 70-71; **belum disahkan pada halaman buku asal**. Audio/trek belum dipadankan.
+**Rujukan audio bercetak:** 66–67. **Belum disahkan sama ada fail trek tersedia atau sepadan dengan laluan penghantaran.**
 
-**Catatan pelaksanaan / pemulihan:** __________________________________________
+**Audit kod:** Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 3.1.2, 3.1.3; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL.
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Refleksi / pemulihan:** __________________________________________________
+
+**Kawalan penerbitan:** DRAF STAGING. Semakan kandungan dan format Word/PDF belum selesai; jangan aktifkan secara langsung di Web atau Telegram.

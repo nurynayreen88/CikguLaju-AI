@@ -1,34 +1,32 @@
 # RPH PENDIDIKAN MUZIK TAHUN 4 — PdP 22
 
-**Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** HELO, HELO APA KHABAR?
-**Bidang:** Rekoder  
-**SK / SP (RPT sumber):** 2.4.1, 2.4.2
-**Tempoh cadangan:** 30 minit  
-**Status:** DRAF STAGING — belum FINAL READY
+**Kelas:** __________  **Tarikh:** __________  **Masa:** __________
+**Unit/Tajuk:** HELO, HELO APA KHABAR?
+**SK / SP (rujukan RPT):** 2.4.1, 2.4.2
+**Bidang/Fokus:** Rekoder — Rekoder D’ dan melodi kaunter Telefon Bimbit
+**Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — bukan FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Memainkan satu frasa not sasaran dengan sekurang-kurangnya 3 daripada 4 aspek teknik yang betul.
+**Objektif:** Memainkan not D’ dengan penjarian dan ton yang betul serta mencuba satu frasa kaunter pendek.
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **HELO, HELO APA KHABAR?**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
 
-**Set Induksi — 4 minit**  
-Guru menunjukkan not sasaran pada kad serta cara memegang dan membersihkan rekoder.
+**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru membimbing demonstrasi penjarian D’ dan latihan rekoder bertahap seperti buku m/s 78–79.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Murid mempraktikkan penjarian dan perlidahan 'tu' untuk kemahiran Memainkan rekoder mengikut tempo dengan ton yang baik dengan: (i) penjarian not G, A, B, C’ dan D’ yang betul.. Guru menyemak postur seorang demi seorang.
+**Aktiviti 2 — Aplikasi muzik (10 minit):** Murid dibahagi kepada melodi utama dan kaunter; kedua-dua kumpulan berlatih secara berasingan sebelum digabungkan.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid memainkan frasa dua atau empat bar secara perlahan, kemudian bersama metronom; rakan menanda kejayaan bacaan skor.
+**Pengukuhan dan pentaksiran (6 minit):** Semak penjarian D’, ton, masa masuk dan tempo ensembel.
 
-**Pengukuhan & Penilaian — 6 minit**  
-Catat kejayaan 3 daripada 4 aspek: penjarian, ton, tempo dan pernafasan/perlidahan.
+**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
 
-**Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
 
-**Bahan:** Rekoder individu, kad penjarian dan skor ringkas bersesuaian tahun.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 78; **belum disahkan pada halaman buku asal**. Audio/trek belum dipadankan.
+**Rujukan buku teks:** m/s 78 daripada RPT rujukan yang padan dengan tema buku Kesenian Tahun 4. **Semakan teks unit/aktiviti dibuat, tetapi halaman penuh belum disahkan secara visual.** Sumber: https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view
 
-**Catatan pelaksanaan / pemulihan:** __________________________________________
+**Rujukan audio bercetak:** 68–76. **Belum disahkan sama ada fail trek tersedia atau sepadan dengan laluan penghantaran.**
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Audit kod:** Pemetaan SP RPT belum kelulusan guru.
+
+**Refleksi / pemulihan:** __________________________________________________
+
+**Kawalan penerbitan:** DRAF STAGING. Semakan kandungan dan format Word/PDF belum selesai; jangan aktifkan secara langsung di Web atau Telegram.

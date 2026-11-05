@@ -4,7 +4,7 @@
   "academic_year": 2027,
   "source_doc_id": "1oABBpnuOC5QxqWi283dD0pWu97SfUx2q",
   "source_type": "RPT_2025_26",
-  "status": "DRAF_STAGING_PARTIAL_BOOK_CONTENT_CHECK",
+  "status": "DRAF_STAGING_28_OF_35_BOOK_UNIT_CHECKS",
   "textbook_verified": false,
   "audio_verified": false,
   "rph_word_pdf_verified": false,
@@ -25,7 +25,15 @@
         "week": 1,
         "groupA": "04/01–07/01",
         "groupB": "04/01–08/01"
-      }
+      },
+      "focus_pdp": "Not Berbunyi — not G, A dan B",
+      "rph_specificity_status": "AKTIVITI_DIPERINCI_DARI_BUKU_T4_TEKS",
+      "source_book_text_crosscheck": true,
+      "source_book_text_crosscheck_scope": "UNIT_DAN_CADANGAN_AKTIVITI; HALAMAN_DIRUJUK_DARI_RPT_2025_26, BELUM_VERIFIKASI_IMEJ_PENUH",
+      "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_audio_numbers_printed": "1–3",
+      "source_book_audio_file_verified": false,
+      "book_text_topic_evidence": "Not Berbunyi — not G, A dan B"
     },
     {
       "pdp_id": "MZ-Y4-02",
@@ -43,7 +51,15 @@
         "week": 2,
         "groupA": "10/01–14/01",
         "groupB": "11/01–15/01"
-      }
+      },
+      "focus_pdp": "Terminologi dan simbol pada baluk",
+      "rph_specificity_status": "AKTIVITI_DIPERINCI_DARI_BUKU_T4_TEKS",
+      "source_book_text_crosscheck": true,
+      "source_book_text_crosscheck_scope": "UNIT_DAN_CADANGAN_AKTIVITI; HALAMAN_DIRUJUK_DARI_RPT_2025_26, BELUM_VERIFIKASI_IMEJ_PENUH",
+      "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_audio_numbers_printed": "1–3",
+      "source_book_audio_file_verified": false,
+      "book_text_topic_evidence": "Terminologi dan simbol pada baluk"
     },
     {
       "pdp_id": "MZ-Y4-03",
@@ -61,7 +77,15 @@
         "week": 3,
         "groupA": "17/01–21/01",
         "groupB": "18/01–22/01"
-      }
+      },
+      "focus_pdp": "Not C’ dan D’ serta bacaan notasi",
+      "rph_specificity_status": "AKTIVITI_DIPERINCI_DARI_BUKU_T4_TEKS",
+      "source_book_text_crosscheck": true,
+      "source_book_text_crosscheck_scope": "UNIT_DAN_CADANGAN_AKTIVITI; HALAMAN_DIRUJUK_DARI_RPT_2025_26, BELUM_VERIFIKASI_IMEJ_PENUH",
+      "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_audio_numbers_printed": "Tiada track khusus pada halaman ini; rujukan buku sahaja",
+      "source_book_audio_file_verified": false,
+      "book_text_topic_evidence": "Not C’ dan D’ serta bacaan notasi"
     },
     {
       "pdp_id": "MZ-Y4-04",
@@ -80,7 +104,15 @@
         "week": 4,
         "groupA": "24/01–28/01",
         "groupB": "25/01–29/01"
-      }
+      },
+      "focus_pdp": "Kek Cawan Comel — skor perkusi dan corak irama",
+      "rph_specificity_status": "AKTIVITI_DIPERINCI_DARI_BUKU_T4_TEKS",
+      "source_book_text_crosscheck": true,
+      "source_book_text_crosscheck_scope": "UNIT_DAN_CADANGAN_AKTIVITI; HALAMAN_DIRUJUK_DARI_RPT_2025_26, BELUM_VERIFIKASI_IMEJ_PENUH",
+      "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_audio_numbers_printed": "4–8",
+      "source_book_audio_file_verified": false,
+      "book_text_topic_evidence": "Kek Cawan Comel — skor perkusi dan corak irama"
     },
     {
       "pdp_id": "MZ-Y4-05",
@@ -98,7 +130,15 @@
         "week": 5,
         "groupA": "31/01–04/02",
         "groupB": "01/02–05/02"
-      }
+      },
+      "focus_pdp": "Kek Cawan Comel — iringan ensembel",
+      "rph_specificity_status": "AKTIVITI_DIPERINCI_DARI_BUKU_T4_TEKS",
+      "source_book_text_crosscheck": true,
+      "source_book_text_crosscheck_scope": "UNIT_DAN_CADANGAN_AKTIVITI; HALAMAN_DIRUJUK_DARI_RPT_2025_26, BELUM_VERIFIKASI_IMEJ_PENUH",
+      "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_audio_numbers_printed": "9–11",
+      "source_book_audio_file_verified": false,
+      "book_text_topic_evidence": "Kek Cawan Comel — iringan ensembel"
     },
     {
       "pdp_id": "MZ-Y4-06",
@@ -116,7 +156,15 @@
         "week": 6,
         "groupA": "07/02–11/02",
         "groupB": "08/02–12/02"
-      }
+      },
+      "focus_pdp": "Beg Cantik Menawan — latihan pic dan nyanyian",
+      "rph_specificity_status": "AKTIVITI_DIPERINCI_DARI_BUKU_T4_TEKS",
+      "source_book_text_crosscheck": true,
+      "source_book_text_crosscheck_scope": "UNIT_DAN_CADANGAN_AKTIVITI; HALAMAN_DIRUJUK_DARI_RPT_2025_26, BELUM_VERIFIKASI_IMEJ_PENUH",
+      "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_audio_numbers_printed": "12–16",
+      "source_book_audio_file_verified": false,
+      "book_text_topic_evidence": "Beg Cantik Menawan — latihan pic dan nyanyian"
     },
     {
       "pdp_id": "MZ-Y4-07",
@@ -135,7 +183,15 @@
         "week": 7,
         "groupA": "14/02–18/02",
         "groupB": "15/02–19/02"
-      }
+      },
+      "focus_pdp": "Beg Cantik Menawan — nyanyian dan tempo",
+      "rph_specificity_status": "AKTIVITI_DIPERINCI_DARI_BUKU_T4_TEKS",
+      "source_book_text_crosscheck": true,
+      "source_book_text_crosscheck_scope": "UNIT_DAN_CADANGAN_AKTIVITI; HALAMAN_DIRUJUK_DARI_RPT_2025_26, BELUM_VERIFIKASI_IMEJ_PENUH",
+      "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_audio_numbers_printed": "17–18 (rujukan bercetak)",
+      "source_book_audio_file_verified": false,
+      "book_text_topic_evidence": "Beg Cantik Menawan — nyanyian dan tempo"
     },
     {
       "pdp_id": "MZ-Y4-08",
@@ -154,7 +210,15 @@
         "week": 8,
         "groupA": "21/02–25/02",
         "groupB": "22/02–26/02"
-      }
+      },
+      "focus_pdp": "Beg Cantik Menawan — permainan alat perkusi",
+      "rph_specificity_status": "AKTIVITI_DIPERINCI_DARI_BUKU_T4_TEKS",
+      "source_book_text_crosscheck": true,
+      "source_book_text_crosscheck_scope": "UNIT_DAN_CADANGAN_AKTIVITI; HALAMAN_DIRUJUK_DARI_RPT_2025_26, BELUM_VERIFIKASI_IMEJ_PENUH",
+      "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_audio_numbers_printed": "19–23",
+      "source_book_audio_file_verified": false,
+      "book_text_topic_evidence": "Beg Cantik Menawan — permainan alat perkusi"
     },
     {
       "pdp_id": "MZ-Y4-09",
@@ -172,7 +236,15 @@
         "week": 9,
         "groupA": "28/02–04/03",
         "groupB": "01/03–05/03"
-      }
+      },
+      "focus_pdp": "Bunga Gergasi — legato dan staccato",
+      "rph_specificity_status": "AKTIVITI_DIPERINCI_DARI_BUKU_T4_TEKS",
+      "source_book_text_crosscheck": true,
+      "source_book_text_crosscheck_scope": "UNIT_DAN_CADANGAN_AKTIVITI; HALAMAN_DIRUJUK_DARI_RPT_2025_26, BELUM_VERIFIKASI_IMEJ_PENUH",
+      "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_audio_numbers_printed": "24–29",
+      "source_book_audio_file_verified": false,
+      "book_text_topic_evidence": "Bunga Gergasi — legato dan staccato"
     },
     {
       "pdp_id": "MZ-Y4-10",
@@ -191,7 +263,15 @@
         "week": 10,
         "groupA": "14/03–18/03",
         "groupB": "15/03–19/03"
-      }
+      },
+      "focus_pdp": "Bunga Gergasi — korus perkusi",
+      "rph_specificity_status": "AKTIVITI_DIPERINCI_DARI_BUKU_T4_TEKS",
+      "source_book_text_crosscheck": true,
+      "source_book_text_crosscheck_scope": "UNIT_DAN_CADANGAN_AKTIVITI; HALAMAN_DIRUJUK_DARI_RPT_2025_26, BELUM_VERIFIKASI_IMEJ_PENUH",
+      "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_audio_numbers_printed": "30–37",
+      "source_book_audio_file_verified": false,
+      "book_text_topic_evidence": "Bunga Gergasi — korus perkusi"
     },
     {
       "pdp_id": "MZ-Y4-11",
@@ -209,7 +289,15 @@
         "week": 11,
         "groupA": "21/03–25/03",
         "groupB": "22/03–26/03"
-      }
+      },
+      "focus_pdp": "Bapaku Pulang dan Burung Kakaktua — bentuk lagu",
+      "rph_specificity_status": "AKTIVITI_DIPERINCI_DARI_BUKU_T4_TEKS",
+      "source_book_text_crosscheck": true,
+      "source_book_text_crosscheck_scope": "UNIT_DAN_CADANGAN_AKTIVITI; HALAMAN_DIRUJUK_DARI_RPT_2025_26, BELUM_VERIFIKASI_IMEJ_PENUH",
+      "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_audio_numbers_printed": "38–43",
+      "source_book_audio_file_verified": false,
+      "book_text_topic_evidence": "Bapaku Pulang dan Burung Kakaktua — bentuk lagu"
     },
     {
       "pdp_id": "MZ-Y4-12",
@@ -371,7 +459,15 @@
         "week": 17,
         "groupA": "02/05–06/05",
         "groupB": "03/05–07/05"
-      }
+      },
+      "focus_pdp": "Rekoder — penjarian not C’",
+      "rph_specificity_status": "AKTIVITI_DIPERINCI_DARI_BUKU_T4_TEKS",
+      "source_book_text_crosscheck": true,
+      "source_book_text_crosscheck_scope": "UNIT_DAN_CADANGAN_AKTIVITI; HALAMAN_DIRUJUK_DARI_RPT_2025_26, BELUM_VERIFIKASI_IMEJ_PENUH",
+      "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_audio_numbers_printed": "49–53",
+      "source_book_audio_file_verified": false,
+      "book_text_topic_evidence": "Rekoder — penjarian not C’"
     },
     {
       "pdp_id": "MZ-Y4-18",
@@ -390,7 +486,15 @@
         "week": 18,
         "groupA": "09/05–13/05",
         "groupB": "10/05–14/05"
-      }
+      },
+      "focus_pdp": "Meter, garis bar dan tanda rehat",
+      "rph_specificity_status": "AKTIVITI_DIPERINCI_DARI_BUKU_T4_TEKS",
+      "source_book_text_crosscheck": true,
+      "source_book_text_crosscheck_scope": "UNIT_DAN_CADANGAN_AKTIVITI; HALAMAN_DIRUJUK_DARI_RPT_2025_26, BELUM_VERIFIKASI_IMEJ_PENUH",
+      "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_audio_numbers_printed": "58–60 untuk corak irama; tidak disahkan pautan",
+      "source_book_audio_file_verified": false,
+      "book_text_topic_evidence": "Meter, garis bar dan tanda rehat"
     },
     {
       "pdp_id": "MZ-Y4-19",
@@ -409,7 +513,15 @@
         "week": 19,
         "groupA": "16/05–20/05",
         "groupB": "17/05–21/05"
-      }
+      },
+      "focus_pdp": "Tapak Sulaiman — perkusi badan mengikut tempo",
+      "rph_specificity_status": "AKTIVITI_DIPERINCI_DARI_BUKU_T4_TEKS",
+      "source_book_text_crosscheck": true,
+      "source_book_text_crosscheck_scope": "UNIT_DAN_CADANGAN_AKTIVITI; HALAMAN_DIRUJUK_DARI_RPT_2025_26, BELUM_VERIFIKASI_IMEJ_PENUH",
+      "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_audio_numbers_printed": "61–65",
+      "source_book_audio_file_verified": false,
+      "book_text_topic_evidence": "Tapak Sulaiman — perkusi badan mengikut tempo"
     },
     {
       "pdp_id": "MZ-Y4-20",
@@ -428,7 +540,15 @@
         "week": 20,
         "groupA": "06/06–10/06",
         "groupB": "07/06–11/06"
-      }
+      },
+      "focus_pdp": "Tapak Sulaiman — variasi tempo",
+      "rph_specificity_status": "AKTIVITI_DIPERINCI_DARI_BUKU_T4_TEKS",
+      "source_book_text_crosscheck": true,
+      "source_book_text_crosscheck_scope": "UNIT_DAN_CADANGAN_AKTIVITI; HALAMAN_DIRUJUK_DARI_RPT_2025_26, BELUM_VERIFIKASI_IMEJ_PENUH",
+      "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_audio_numbers_printed": "64–65",
+      "source_book_audio_file_verified": false,
+      "book_text_topic_evidence": "Tapak Sulaiman — variasi tempo"
     },
     {
       "pdp_id": "MZ-Y4-21",
@@ -450,7 +570,15 @@
       },
       "flags": [
         "Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 3.1.2, 3.1.3; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL"
-      ]
+      ],
+      "focus_pdp": "Cipta melodi — permainan Susun Notasi",
+      "rph_specificity_status": "AKTIVITI_DIPERINCI_DARI_BUKU_T4_TEKS",
+      "source_book_text_crosscheck": true,
+      "source_book_text_crosscheck_scope": "UNIT_DAN_CADANGAN_AKTIVITI; HALAMAN_DIRUJUK_DARI_RPT_2025_26, BELUM_VERIFIKASI_IMEJ_PENUH",
+      "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_audio_numbers_printed": "66–67",
+      "source_book_audio_file_verified": false,
+      "book_text_topic_evidence": "Cipta melodi — permainan Susun Notasi"
     },
     {
       "pdp_id": "MZ-Y4-22",
@@ -469,7 +597,15 @@
         "week": 22,
         "groupA": "20/06–24/06",
         "groupB": "21/06–25/06"
-      }
+      },
+      "focus_pdp": "Rekoder D’ dan melodi kaunter Telefon Bimbit",
+      "rph_specificity_status": "AKTIVITI_DIPERINCI_DARI_BUKU_T4_TEKS",
+      "source_book_text_crosscheck": true,
+      "source_book_text_crosscheck_scope": "UNIT_DAN_CADANGAN_AKTIVITI; HALAMAN_DIRUJUK_DARI_RPT_2025_26, BELUM_VERIFIKASI_IMEJ_PENUH",
+      "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_audio_numbers_printed": "68–76",
+      "source_book_audio_file_verified": false,
+      "book_text_topic_evidence": "Rekoder D’ dan melodi kaunter Telefon Bimbit"
     },
     {
       "pdp_id": "MZ-Y4-23",
@@ -488,7 +624,15 @@
         "week": 23,
         "groupA": "27/06–01/07",
         "groupB": "28/06–02/07"
-      }
+      },
+      "focus_pdp": "Perkusi Cergas Badan — jenis bunyi dan corak irama",
+      "rph_specificity_status": "AKTIVITI_DIPERINCI_DARI_BUKU_T4_TEKS",
+      "source_book_text_crosscheck": true,
+      "source_book_text_crosscheck_scope": "UNIT_DAN_CADANGAN_AKTIVITI; HALAMAN_DIRUJUK_DARI_RPT_2025_26, BELUM_VERIFIKASI_IMEJ_PENUH",
+      "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_audio_numbers_printed": "77–89",
+      "source_book_audio_file_verified": false,
+      "book_text_topic_evidence": "Perkusi Cergas Badan — jenis bunyi dan corak irama"
     },
     {
       "pdp_id": "MZ-Y4-24",
@@ -511,7 +655,15 @@
       },
       "flags": [
         "Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 3.1.1, 3.1.2, 3.1.3; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL"
-      ]
+      ],
+      "focus_pdp": "Cipta jawapan melodi — soal jawab muzik",
+      "rph_specificity_status": "AKTIVITI_DIPERINCI_DARI_BUKU_T4_TEKS",
+      "source_book_text_crosscheck": true,
+      "source_book_text_crosscheck_scope": "UNIT_DAN_CADANGAN_AKTIVITI; HALAMAN_DIRUJUK_DARI_RPT_2025_26, BELUM_VERIFIKASI_IMEJ_PENUH",
+      "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_audio_numbers_printed": "90–92",
+      "source_book_audio_file_verified": false,
+      "book_text_topic_evidence": "Cipta jawapan melodi — soal jawab muzik"
     },
     {
       "pdp_id": "MZ-Y4-25",
@@ -586,7 +738,15 @@
         "week": 28,
         "groupA": "01/08–05/08",
         "groupB": "02/08–06/08"
-      }
+      },
+      "focus_pdp": "Desaku Tercinta — nyanyian mengikut tempo",
+      "rph_specificity_status": "AKTIVITI_DIPERINCI_DARI_BUKU_T4_TEKS",
+      "source_book_text_crosscheck": true,
+      "source_book_text_crosscheck_scope": "UNIT_DAN_CADANGAN_AKTIVITI; HALAMAN_DIRUJUK_DARI_RPT_2025_26, BELUM_VERIFIKASI_IMEJ_PENUH",
+      "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_audio_numbers_printed": "93–95",
+      "source_book_audio_file_verified": false,
+      "book_text_topic_evidence": "Desaku Tercinta — nyanyian mengikut tempo"
     },
     {
       "pdp_id": "MZ-Y4-29",
@@ -604,7 +764,15 @@
         "week": 29,
         "groupA": "08/08–12/08",
         "groupB": "09/08–13/08"
-      }
+      },
+      "focus_pdp": "Desaku Tercinta — perkusi tempo cepat dan lambat",
+      "rph_specificity_status": "AKTIVITI_DIPERINCI_DARI_BUKU_T4_TEKS",
+      "source_book_text_crosscheck": true,
+      "source_book_text_crosscheck_scope": "UNIT_DAN_CADANGAN_AKTIVITI; HALAMAN_DIRUJUK_DARI_RPT_2025_26, BELUM_VERIFIKASI_IMEJ_PENUH",
+      "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_audio_numbers_printed": "96–101",
+      "source_book_audio_file_verified": false,
+      "book_text_topic_evidence": "Desaku Tercinta — perkusi tempo cepat dan lambat"
     },
     {
       "pdp_id": "MZ-Y4-30",
@@ -622,7 +790,15 @@
         "week": 30,
         "groupA": "15/08–19/08",
         "groupB": "16/08–20/08"
-      }
+      },
+      "focus_pdp": "Tapak Sulaiman — nyanyian lagu pusingan",
+      "rph_specificity_status": "AKTIVITI_DIPERINCI_DARI_BUKU_T4_TEKS",
+      "source_book_text_crosscheck": true,
+      "source_book_text_crosscheck_scope": "UNIT_DAN_CADANGAN_AKTIVITI; HALAMAN_DIRUJUK_DARI_RPT_2025_26, BELUM_VERIFIKASI_IMEJ_PENUH",
+      "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_audio_numbers_printed": "102–109",
+      "source_book_audio_file_verified": false,
+      "book_text_topic_evidence": "Tapak Sulaiman — nyanyian lagu pusingan"
     },
     {
       "pdp_id": "MZ-Y4-31",
@@ -799,5 +975,6 @@
   "source_book_found_title": "GuruBesar_BukuTeks_Pendidikan_Kesenian_T4_SK.pdf",
   "partial_page_content_check_count": 6,
   "dskp_projects_per_year": 2,
-  "deprecated_project3_reclassified_count": 2
+  "deprecated_project3_reclassified_count": 2,
+  "partial_text_crosscheck_count": 22
 }
