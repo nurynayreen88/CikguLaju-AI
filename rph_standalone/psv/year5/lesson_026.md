@@ -9,7 +9,7 @@
 **Tempoh:** 60 minit
 
 ## Objektif dan kriteria kejayaan
-Murid dapat membanding gabungan catan bunga kekwa dengan teknik mozek jalinan pada bingkai. Evidens PBD: Dua sampel media, lakaran kekwa dan satu pemerhatian perbezaan jalinan.
+Murid dapat membanding gabungan catan bunga kekwa dengan teknik mozek jalinan pada bingkai. Kriteria kejayaan: Dua sampel media, lakaran kekwa dan satu pemerhatian perbezaan jalinan.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan tema Bunga Kekwa Mekar; murid menjelaskan satu pemerhatian visual.
