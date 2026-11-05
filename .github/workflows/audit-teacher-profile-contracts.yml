@@ -1,0 +1,18 @@
+name: Inspect shared teacher profile contracts
+on:
+  push:
+    branches:
+      - feature/telegram-web-shared-teacher-profile-20261105
+    paths:
+      - 'tools/audit_teacher_profile_contracts_20261105.py'
+      - '.github/workflows/audit-teacher-profile-contracts.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  read:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: python tools/audit_teacher_profile_contracts_20261105.py
