@@ -90,7 +90,7 @@ def main():
         assert u==(n-1)//3+1 and u not in (4,7),row
         start,end=row["printed_pages"]
         assert start>=revised["units"][u-1]["printed_start"]
-        assert end<revised["units"][u]["printed_start"]
+        assert end<(revised["units"][u]["printed_start"] if u<14 else 141)
         assert row["flipbook_pages"]==[start+10,end+10]
         phase=(n-1)%3
         expected_sp=cross["units"][u-1]["sp"]
