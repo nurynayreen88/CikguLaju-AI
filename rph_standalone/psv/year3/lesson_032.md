@@ -4,7 +4,7 @@
 **Fokus:** Penghasilan karya seni | **Teknik:** Renjisan dan percikan  
 **SK:** 3.1  
 **SP:** 3.1.2  
-**Rujukan Buku Teks:** Pendidikan Kesenian Tahun 3 (bahagian Seni Visual) ms 68–68 (unit 66-69)  
+**Rujukan Buku Teks:** Pendidikan Kesenian Tahun 3 (bahagian Seni Visual) ms 68 (unit 66-69)  
 **BBM:** berus gigi bersih, berus lukisan, cat poster, kertas, batang aiskrim  
 **Tempoh:** 60 minit
 

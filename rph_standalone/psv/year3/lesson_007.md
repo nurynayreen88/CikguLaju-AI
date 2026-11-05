@@ -4,7 +4,7 @@
 **Fokus:** Penghasilan karya seni | **Teknik:** Montaj  
 **SK:** 3.1  
 **SP:** 3.1.1  
-**Rujukan Buku Teks:** Pendidikan Kesenian Tahun 3 (bahagian Seni Visual) ms 16–16 (unit 14-17)  
+**Rujukan Buku Teks:** Pendidikan Kesenian Tahun 3 (bahagian Seni Visual) ms 16 (unit 14-17)  
 **BBM:** gambar cetak, kertas latar, gam, gunting tumpul  
 **Tempoh:** 60 minit
 

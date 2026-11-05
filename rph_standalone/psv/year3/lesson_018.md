@@ -4,7 +4,7 @@
 **Fokus:** Penghasilan karya seni | **Teknik:** Model alat pertahanan diri tidak berfungsi  
 **SK:** 3.1  
 **SP:** 3.1.5  
-**Rujukan Buku Teks:** Pendidikan Kesenian Tahun 3 (bahagian Seni Visual) ms 42–42 (unit 40-43)  
+**Rujukan Buku Teks:** Pendidikan Kesenian Tahun 3 (bahagian Seni Visual) ms 42 (unit 40-43)  
 **BBM:** kadbod lembut, kertas warna, pita, gam  
 **Tempoh:** 60 minit
 

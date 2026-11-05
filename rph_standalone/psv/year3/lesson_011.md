@@ -4,7 +4,7 @@
 **Fokus:** Penghasilan karya seni | **Teknik:** Capan  
 **SK:** 3.1  
 **SP:** 3.1.2  
-**Rujukan Buku Teks:** Pendidikan Kesenian Tahun 3 (bahagian Seni Visual) ms 24–24 (unit 22-25)  
+**Rujukan Buku Teks:** Pendidikan Kesenian Tahun 3 (bahagian Seni Visual) ms 24 (unit 22-25)  
 **BBM:** span, daun, warna poster, kertas dan selempang kad  
 **Tempoh:** 60 minit
 

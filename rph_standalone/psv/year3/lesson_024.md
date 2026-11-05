@@ -4,7 +4,7 @@
 **Fokus:** Penghasilan karya seni | **Teknik:** Kolaj  
 **SK:** 3.1  
 **SP:** 3.1.1  
-**Rujukan Buku Teks:** Pendidikan Kesenian Tahun 3 (bahagian Seni Visual) ms 52–52 (unit 50-53)  
+**Rujukan Buku Teks:** Pendidikan Kesenian Tahun 3 (bahagian Seni Visual) ms 52 (unit 50-53)  
 **BBM:** kertas warna, kertas corak, gam dan kertas latar  
 **Tempoh:** 60 minit
 

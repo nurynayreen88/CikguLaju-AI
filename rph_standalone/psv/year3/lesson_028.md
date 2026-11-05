@@ -4,7 +4,7 @@
 **Fokus:** Penghasilan karya seni | **Teknik:** Gurisan  
 **SK:** 3.1  
 **SP:** 3.1.1  
-**Rujukan Buku Teks:** Pendidikan Kesenian Tahun 3 (bahagian Seni Visual) ms 60–60 (unit 58-61)  
+**Rujukan Buku Teks:** Pendidikan Kesenian Tahun 3 (bahagian Seni Visual) ms 60 (unit 58-61)  
 **BBM:** krayon berwarna, krayon gelap, pengguris plastik tumpul dan kertas  
 **Tempoh:** 60 minit
 

@@ -4,7 +4,7 @@
 **Fokus:** Penghasilan karya seni | **Teknik:** Lukisan silang pangkah  
 **SK:** 3.1  
 **SP:** 3.1.1  
-**Rujukan Buku Teks:** Pendidikan Kesenian Tahun 3 (bahagian Seni Visual) ms 8–8 (unit 6-9)  
+**Rujukan Buku Teks:** Pendidikan Kesenian Tahun 3 (bahagian Seni Visual) ms 8 (unit 6-9)  
 **BBM:** pensel grafit, pen hitam, kertas lukisan  
 **Tempoh:** 60 minit
 
