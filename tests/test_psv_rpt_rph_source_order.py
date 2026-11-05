@@ -829,6 +829,24 @@ class PSVSourceOrderTests(unittest.TestCase):
         for n in (27,28):
             self.assertIn("blok", (ROOT / f"rph_standalone/psv/year4/lesson_{n:03d}.md").read_text(encoding="utf-8"))
 
+    def test_year4_kota_ceria_pdp34_to37_visual_and_pages(self):
+        """Original PDF pages 84-89: miniature models and 3D diorama composition."""
+        rpt = read_csv(PSV / "RPT_PSV_Tahun_4_2027_DRAF.csv")
+        audit = read_csv(ROOT / "rph_standalone/psv/audits/psv_individual_210_review_20261105.csv")
+        for n in (34,35,36,37):
+            with self.subTest(pdp=n):
+                row = next(x for x in audit if x["Tahun"] == "4" and int(x["PdP"]) == n)
+                self.assertEqual(row["Kelulusan_terbit"], "PASSED")
+                self.assertTrue(row["Bukti_buku"].startswith("BUKU_TEKS_VISUAL_SAH:"))
+                self.assertIn("DSKP_SEMANTIC_PASSED", row["Pemeriksaan_RPH_individu"])
+                self.assertFalse(row["Nota_semakan_terbuka"])
+                source = (ROOT / f"rph_standalone/psv/year4/lesson_{n:03d}.md").read_text(encoding="utf-8")
+                self.assertIn(rpt[n-1]["Objektif"], source)
+                self.assertIn(rpt[n-1]["Evidens PBD"], source)
+                self.assertIn("**Status:** DRAF", source)
+        self.assertEqual(rpt[35]["BT muka surat"], "88–89")
+        self.assertIn("ms 88–89", (ROOT / "rph_standalone/psv/year4/lesson_036.md").read_text(encoding="utf-8"))
+
     def test_forty_unit_dskp_technique_and_production_semantics(self):
         """Independent SP-to-technique crosswalk from printed Y2–Y5 DSKP.
 
