@@ -4,13 +4,13 @@
 **Main SK/SP:** Reading 3.2 / 3.2.1
 **Complementary SK/SP:** Writing 4.2 / 4.2.5
 **Duration:** 60 minutes
-**References:** Student's Book p.61; Teacher's Book pp.96–97; Class CD1 Track 97 (teacher-confirmed Tony's Pizza recording); food flashcards.
+**References:** Student's Book p.61; original Teacher's Book pp.96–97 (printed Track 97, disc not specified on the checked page); food flashcards. Exact audio file ID and Telegram delivery remain unverified.
 
 ## Set Induction (5 minutes)
 Teacher reviews food vocabulary using the warm-up from Teacher's Book p.96. Pupils name ingredients.
 
 ## Activity 1 — Pizza reading (15 minutes)
-Pupils read the text about Tony's pizza before listening to the recording and say whether they would like it.
+Teacher guides pupils to read Tony's pizza text and discuss whether they would like it. Use Track 97 only after verifying its exact source disc, file and delivery; until then, carry out the printed reading discussion without claiming an audio listening assessment.
 
 ## Activity 2 — Reading and writing (25 minutes)
 Teacher guides Student's Book p.61 Activity 1 and the Writing Tip. Pupils identify the main idea and complete sentence stems about the pizza in full sentences.
@@ -25,4 +25,4 @@ Pupils complete Workbook p.48, Activity 1, by adding commas and *and* where nece
 ## Closure (5 minutes)
 Pupils share one sentence describing a pizza.
 
-**QA:** SOW alignment checked; Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
+**QA status:** NOT READY FOR RELEASE — original Teacher's Book printed p.96 confirms Track 97 for the Tony's Pizza reading. It does not independently establish the CD1 label, source file ID or live Telegram route. SOW and isolated document-format checks passed, but spoken audio, authenticated delivery and classroom approval remain pending.
