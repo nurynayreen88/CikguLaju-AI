@@ -359,6 +359,14 @@ def create_blueprint():
         if result is None:
             return None, (jsonify({"error": "RPH tepat untuk Lesson/PdP ini belum tersedia di Web. Tiada RPH generik atau daripada tajuk lain digunakan.",
                                    "code": "RPH_SOURCE_NOT_VERIFIED"}), 503)
+        from web.rph_shared_source_identity import source_fingerprint
+        # Verify exact source/mapping bytes again at request time; the native
+        # Telegram endpoint checks this same fingerprint against its own tree.
+        digest = source_fingerprint(year, subject, result["lesson"], component)
+        if digest is None:
+            return None, (jsonify({"error": "RPH tidak dapat disahkan dengan sumber Telegram.",
+                                   "code": "RPH_SOURCE_NOT_VERIFIED"}), 503)
+        result["source_digest"] = digest
         result["teacher"] = teacher
         try:
             from web.telegram_rph_parity import build_layout
