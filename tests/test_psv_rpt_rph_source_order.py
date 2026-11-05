@@ -485,6 +485,21 @@ class PSVSourceOrderTests(unittest.TestCase):
                 if n in (20, 21, 41, 42):
                     self.assertIn("Projek Penggal", rpt[n-1]["BT muka surat"])
 
+    def test_year6_original_book_koi_stabail_must_rotate_safely(self):
+        """Koi is a functional rotating stabail, not a static paper fish."""
+        for n in (14, 15, 16, 17):
+            with self.subTest(pdp=n):
+                text = (ROOT / f"rph_standalone/psv/year6/lesson_{n:03d}.md").read_text(encoding="utf-8").lower()
+                self.assertIn("berpusing", text)
+                self.assertIn("roda", text)
+                self.assertIn("prasiap guru", text)
+                self.assertIn("**status:** draf", text)
+        work = (ROOT / "rph_standalone/psv/year6/lesson_016.md").read_text(encoding="utf-8").lower()
+        self.assertIn("tanpa bergesel atau tumbang", work)
+        end = (ROOT / "rph_standalone/psv/year6/lesson_017.md").read_text(encoding="utf-8").lower()
+        self.assertIn("folio sumber idea", end)
+        self.assertIn("gambar akhir", end)
+
     def test_year5_bunga_kemboja_tekat_is_genuine_couching(self):
         rows = read_csv(PSV / "RPT_PSV_Tahun_5_2027_DRAF.csv")
         keywords = {
