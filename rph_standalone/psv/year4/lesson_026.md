@@ -13,7 +13,7 @@ Murid dapat membanding kesan cetakan timbul daripada kad busa, tali kasut dan ba
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan imej Indahnya Dasar Laut; murid menyebut satu unsur seni atau fungsi karya.
-**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru merujuk BT ms 64–65: banding teknik cetakan timbulan dengan teknik benaman dan saring sutera; tunjuk blok kad busa, tali kasut dan bentuk daun.
+**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru merujuk BT ms 64–65: banding teknik kolograf cetakan timbulan dengan teknik benaman dan saring sutera; tunjuk blok kad busa, tali kasut dan bentuk daun.
 **Aktiviti 2 (25 minit) — Amali:** Murid memilih dua bahan berjalinan, membina contoh blok cetakan kecil daripada kad busa dan tali kasut atau daun lalu membanding kesan timbul pada dua sampel.
 **Pengukuhan/Pentaksiran (10 minit):** Guru menyemak dua blok sampel, dua jenis jalinan dan penerangan bentuk cetakan.
 **Penutup (5 minit):** Murid menyatakan satu perkara baharu dan mengemas alatan.
