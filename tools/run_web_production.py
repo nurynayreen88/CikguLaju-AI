@@ -9,6 +9,8 @@ from tools.run_web_v1_preview import app
 from web_v1_telegram_auth_routes import _config
 from web.teacher_profile_routes import bp as teacher_profile_bp
 app.register_blueprint(teacher_profile_bp)
+from web.web_payment_routes import bp as web_payment_bp
+app.register_blueprint(web_payment_bp)
 
 
 def _web_config_status():
@@ -35,6 +37,16 @@ def teacher_profile_script():
     from flask import send_file
     file = Path(__file__).resolve().parents[1] / "web_v1_static_preview" / "teacher-profile.js"
     return send_file(file, mimetype="application/javascript", max_age=1800, conditional=True)
+
+
+@app.get("/assets/web-payment.js")
+def web_payment_script():
+    """Same-origin payment UI; no credentials or payment state in static JS."""
+    from pathlib import Path
+    from flask import send_file
+    file = Path(__file__).resolve().parents[1] / "web_v1_static_preview" / "web-payment.js"
+    return send_file(file, mimetype="application/javascript", max_age=1800,
+                     conditional=True)
 
 
 @app.get("/healthz")

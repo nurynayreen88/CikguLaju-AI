@@ -1,0 +1,24 @@
+name: Web manual payment receipts QA
+on:
+  push:
+    branches: [feature/web-payment-portal-20261105]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  web-payment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'flask==3.1.3' 'gunicorn==23.0.0'
+      - run: python -m py_compile web/web_payment_routes.py tools/run_web_production.py
+      - run: node --check web_v1_static_preview/web-payment.js
+      - run: python -m unittest discover -s tests -p test_web_payment_proof_first.py -v
+      - run: python -m unittest discover -s tests -p test_web_sidebar_navigation.py -v
+      - run: python -m unittest discover -s tests -p test_web_shared_teacher_profile.py -v
+      - run: python -m unittest discover -s tests -p test_web_rpt_native_proxy_stdlib.py -v
+      - run: python -c "from tools.run_web_production import app; assert any(x.rule=='/api/web/payment/receipt' for x in app.url_map.iter_rules())"

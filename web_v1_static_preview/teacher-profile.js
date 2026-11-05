@@ -145,7 +145,7 @@ function hasUnsavedTeacherChanges() {
 }
 async function refreshTeacherProfile() {
   if (hasUnsavedTeacherChanges() &&
-      !window.confirm("Ada maklumat belum disimpan. Teruskan segar semula?")) return;
+      !window.confirm("Ada maklumat belum disimpan. Teruskan Refresh?")) return;
   await loadTeacherProfile();
 }
 document.getElementById("profile-refresh").addEventListener("click", refreshTeacherProfile);
