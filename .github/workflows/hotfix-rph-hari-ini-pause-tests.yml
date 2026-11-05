@@ -1,0 +1,25 @@
+name: Pause RPH Hari Ini menu safety
+on:
+  push:
+    branches:
+      - hotfix/pause-rph-hari-ini-20261105
+  pull_request:
+    paths:
+      - app.py
+      - tests/test_rph_hari_ini_pause_20261105.py
+      - .github/workflows/hotfix-rph-hari-ini-pause-tests.yml
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check original source syntax and isolated menu callbacks
+        run: |
+          python -m py_compile app.py
+          python -m unittest discover -s tests -p 'test_rph_hari_ini_pause_20261105.py' -v
