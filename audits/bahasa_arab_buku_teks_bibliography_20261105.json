@@ -2,21 +2,53 @@
   "subject": "Bahasa Arab KSSR Semakan",
   "status": "BIBLIOGRAPHIC_PROVENANCE_ONLY",
   "created": "2026-11-05",
-  "claim_limits": "Confirmed from existing Drive PDF extracted front matter (Years 4–5) and publicly readable original textbook front matter/TOC (Year 6). Visual layout and lesson-page mapping not audited.",
+  "claim_limits": "Years 2–3 publisher ISBN confirmed, Year 3 textbook TOC and unit printed pages from public text version; Year 2 original matching edition pages not checked. Years 4–5 from existing Drive PDF front matter, Year 6 public textbook source. Individual RPH not manually approved.",
   "items": [
     {
       "year": 2,
-      "status": "ISBN_NOT_YET_VERIFIED",
+      "status": "ISBN_PUBLISHER_CONFIRMED_BUT_NO_SAME_EDITION_PDF_PAGE_AUDIT",
       "existing_drive_textbook": false,
       "alternate": "https://fliphtml5.com/svnea/bmjf/BUKU_TEKS_BAHASA_ARAB_TAHUN_2_KSSR_SEMAKAN_2017/",
-      "printed_pages_per_unit": null
+      "printed_pages_per_unit": null,
+      "publisher": "Dewan Bahasa dan Pustaka",
+      "isbn": "978-983-49-1589-6",
+      "publication_date": "2017-11-15",
+      "publisher_source": "https://stage.jendeladbp.my/ujana/bahasa-arab-tahun-2-bt-pt/",
+      "activity_book_isbn": "978-983-49-1590-2",
+      "activity_book_publisher_source": "https://jendeladbp.my/ujana/bahasa-arab-tahun-2-ba-pt/"
     },
     {
       "year": 3,
-      "status": "SCANNED_IN_DRIVE_ISBN_NOT_YET_VERIFIED",
+      "status": "ISBN_EDITION_CONFIRMED_PUBLISHER_AND_TOC",
       "existing_drive_textbook": true,
       "existing_drive_pdf": "https://drive.google.com/file/d/1U-j2TPeVTyLaZbU2qGDb9jmf53KAwNNH/view",
-      "printed_pages_per_unit": null
+      "printed_pages_per_unit": [
+        {
+          "unit": 1,
+          "title_arab": "تفضل إلى الفصل",
+          "printed_pages": "1-28"
+        },
+        {
+          "unit": 2,
+          "title_arab": "ملابسي الجميلة",
+          "printed_pages": "29-58"
+        },
+        {
+          "unit": 3,
+          "title_arab": "الألوان حولنا",
+          "printed_pages": "59-86"
+        },
+        {
+          "unit": 4,
+          "title_arab": "الوقت كالذهب",
+          "printed_pages": "87-117"
+        }
+      ],
+      "publisher": "Dewan Bahasa dan Pustaka untuk KPM",
+      "isbn": "978-983-49-2033-3",
+      "edition": "Cetakan Pertama 2018",
+      "publisher_source": "https://jendeladbp.my/ujana/bahasa-arab-tahun-3-bt-pt/",
+      "source_toc": "https://www.scribd.com/document/438677752/Bahasa-Arab-Tahun-3-Teks-KSSR-Semakan"
     },
     {
       "year": 4,

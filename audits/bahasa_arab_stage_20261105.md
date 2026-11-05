@@ -46,3 +46,10 @@ Status berangka ini mengira fail yang wujud, **bukan** 60 RPH yang telah disahka
 - T5: **DBP/KPM, Cetakan Pertama 2020**, ISBN **978-983-49-2838-4** daripada PDF Drive asal.
 - T6: **DBP/KPM, Cetakan Pertama 2021**, ISBN **978-983-49-3300-5** daripada HTML buku teks.
 - Tahun 2/3 ISBN **belum disahkan**. Semua RPH kekal DRAF, 0 READY. Fail asal dalam Drive tidak diubah.
+
+## Pembetulan penting tajuk Tahun 3 Unit 4 (6 Nov 2026)
+Semakan teks isi kandungan buku sebenar DBP/KPM Tahun 3, cetakan pertama 2018, ISBN 978-983-49-2033-3, membuktikan tajuk unit sebenar ialah **الوقت كالذهب**, julat halaman bercetak 87–117. Label **الزمان** ialah tema masa yang dibincangkan dalam unit, **bukan** nama rasmi unit. Sebarang catatan terdahulu bahawa `الزمان` tajuk unit adalah *dibatalkan/superseded* tanpa memadam sejarah audit.
+
+Buku Teks Tahun 3 unit 1–4: 1–28, 29–58, 59–86, 87–117. Tahun 2 Buku Teks ISBN **978-983-49-1589-6**, Buku Aktiviti ISBN **978-983-49-1590-2**, diterbitkan DBP November 2017 menurut katalog penerbit. **Tiada bukti halaman individu Tahun 2 ditambah.** Semua status kekal DRAF, 0 READY.
+
+Sumber: https://www.scribd.com/document/438677752/Bahasa-Arab-Tahun-3-Teks-KSSR-Semakan ; https://jendeladbp.my/ujana/bahasa-arab-tahun-3-bt-pt/ ; https://stage.jendeladbp.my/ujana/bahasa-arab-tahun-2-bt-pt/ ; https://jendeladbp.my/ujana/bahasa-arab-tahun-2-ba-pt/

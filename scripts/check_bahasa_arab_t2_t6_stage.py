@@ -29,7 +29,9 @@ def check() -> None:
     assert len(units) == 20
     assert Counter(int(row["tahun"]) for row in units) == Counter({y:4 for y in range(2,7)})
     assert all(row["status"] == "DRAF_SEMAK" and row["pdp_ready"] == "FALSE" for row in units)
-    assert next(x["tajuk_arab"] for x in units if x["tahun"] == "3" and x["unit"] == "4") == "الزمان"
+    assert next(x["tajuk_arab"] for x in units if x["tahun"] == "3" and x["unit"] == "4") == "الوقت كالذهب"
+    assert m["years"]["3"]["unit_4_theme_tag"] == "الزمان"
+    assert m["years"]["3"]["unit_4_corrected"] == "الوقت كالذهب"
     assert {(int(x["tahun"]),int(x["unit"])) for x in units} == {(y,n) for y in range(2,7) for n in range(1,5)}
     assert m["primary_crosswalk_file"] == "rpt_2027/bahasa_arab/pdp_001_012_DRAF.csv"
     rows = read_csv(RPT / "pdp_001_012_DRAF.csv")
@@ -88,11 +90,20 @@ def check() -> None:
     assert bibliography["individual_rph_verified"] == 0
     assert bibliography["no_new_textbook_pdf_uploaded"] is True
     assert m["bibliography_file"] == "audits/bahasa_arab_buku_teks_bibliography_20261105.json"
-    for year, isbn in ((4,"978-983-49-2480-5"), (5,"978-983-49-2838-4"), (6,"978-983-49-3300-5")):
+    for year, isbn in ((2,"978-983-49-1589-6"), (3,"978-983-49-2033-3"), (4,"978-983-49-2480-5"), (5,"978-983-49-2838-4"), (6,"978-983-49-3300-5")):
         item = next(x for x in bibliography["items"] if x["year"] == year)
         assert item["isbn"] == isbn
         assert m["years"][str(year)]["textbook"]["bibliographic_verification"]["isbn"] == isbn
         assert m["years"][str(year)]["textbook"]["source_page_verified"] is False
+    y3_expected = [("تفضل إلى الفصل","1","28"),("ملابسي الجميلة","29","58"),("الألوان حولنا","59","86"),("الوقت كالذهب","87","117")]
+    for idx, (title,start,end) in enumerate(y3_expected,1):
+        found = next(row for row in units if row["tahun"] == "3" and row["unit"] == str(idx))
+        assert (found["tajuk_arab"],found["halaman_mula_buku"],found["halaman_akhir_buku"]) == (title,start,end)
+        assert found["pdp_ready"] == "FALSE" and found["status"] == "DRAF_SEMAK"
+    bank3 = (ROOT / "materials" / "bahasa_arab" / "year3" / "unit_04_activity_bank_DRAF.md").read_text(encoding="utf-8")
+    assert "**Unit:** الوقت كالذهب" in bank3
+    assert "**Tema DSKP:** الزمان" in bank3
+    assert next(x["activity_book_isbn"] for x in bibliography["items"] if x["year"] == 2) == "978-983-49-1590-2"
     print("PASSED: 20 unit indexes, 60 crosswalks, 60 RPH draft files, 15 banks.")
     print("RELEASE BLOCKED: 0 READY; page-level textbook, A4 RTL and manual review missing.")
 

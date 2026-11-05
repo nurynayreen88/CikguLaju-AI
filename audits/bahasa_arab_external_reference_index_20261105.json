@@ -180,6 +180,16 @@
   ],
   "bibliography_file": "audits/bahasa_arab_buku_teks_bibliography_20261105.json",
   "verified_existing_drive_edition_by_year": {
+    "2": {
+      "isbn": "978-983-49-1589-6",
+      "year": 2017,
+      "source": "DBP publisher product catalogue; no local Year 2 textbook PDF to match"
+    },
+    "3": {
+      "isbn": "978-983-49-2033-3",
+      "year": 2018,
+      "source": "DBP publisher plus public textbook front matter; local PDF scanned, edition not visually matched"
+    },
     "4": {
       "isbn": "978-983-49-2480-5",
       "year": 2019
@@ -192,5 +202,8 @@
       "isbn": "978-983-49-3300-5",
       "year": 2021
     }
-  }
+  },
+  "year3_unit4_title": "الوقت كالذهب",
+  "year3_unit4_theme": "الزمان",
+  "year3_toc_source": "https://www.scribd.com/document/438677752/Bahasa-Arab-Tahun-3-Teks-KSSR-Semakan"
 }

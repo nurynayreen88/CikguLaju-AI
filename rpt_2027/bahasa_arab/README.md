@@ -22,3 +22,8 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 ## Bukti terbaharu Tahun 6
 - Buku teks DBP/KPM 2021, ISBN 978-983-49-3300-5, julat halaman bercetak berdasarkan TOC Tahun 6: 1–30; 31–60; 61–90; 91–120.
 - `audits/bahasa_arab_y6_textbook_page_evidence_20261105.json`: 12 cadangan semakan padanan PdP/halaman, satu bendera SP 2.1.1 vs buku 2.1.2/2.1.4, **bukan kelulusan RPH**.
+
+## Pembetulan sumber 6 Nov 2026
+- Tahun 3 Unit 4 rasmi **الوقت كالذهب** (Buku Teks DBP 2018, 87–117), **bukan الزمان**; yang kedua ialah tema masa. Semua sumber aktif staging (CSV dan bank aktiviti) kini menggunakan judul buku sebenar.
+- Tahun 3 isi kandungan: Unit 1 (1–28), Unit 2 (29–58), Unit 3 (59–86), Unit 4 (87–117).
+- Tahun 2: ISBN Buku Teks 978-983-49-1589-6, Buku Aktiviti 978-983-49-1590-2. Tahun 3: ISBN Buku Teks 978-983-49-2033-3. Semua ini identiti penerbit, **bukan sijil halaman PdP**.

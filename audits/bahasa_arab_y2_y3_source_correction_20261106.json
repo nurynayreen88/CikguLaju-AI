@@ -1,0 +1,59 @@
+{
+  "audit_date": "2026-11-06",
+  "status": "BIBLIOGRAPHY_AND_UNIT_TOC_VERIFIED_NOT_RPH_READY",
+  "year2": {
+    "textbook": {
+      "isbn": "978-983-49-1589-6",
+      "publication_date": "2017-11-15",
+      "publisher": "DBP",
+      "source": "https://stage.jendeladbp.my/ujana/bahasa-arab-tahun-2-bt-pt/"
+    },
+    "activity_book": {
+      "isbn": "978-983-49-1590-2",
+      "publication_date": "2017-11-14",
+      "publisher": "DBP",
+      "source": "https://jendeladbp.my/ujana/bahasa-arab-tahun-2-ba-pt/"
+    },
+    "printed_page_evidence_available": false
+  },
+  "year3": {
+    "textbook": {
+      "isbn": "978-983-49-2033-3",
+      "edition": "Cetakan Pertama 2018",
+      "source_publisher": "https://jendeladbp.my/ujana/bahasa-arab-tahun-3-bt-pt/",
+      "source_book": "https://www.scribd.com/document/438677752/Bahasa-Arab-Tahun-3-Teks-KSSR-Semakan"
+    },
+    "toc": [
+      {
+        "unit": 1,
+        "title_arab": "تفضل إلى الفصل",
+        "printed_pages": "1-28"
+      },
+      {
+        "unit": 2,
+        "title_arab": "ملابسي الجميلة",
+        "printed_pages": "29-58"
+      },
+      {
+        "unit": 3,
+        "title_arab": "الألوان حولنا",
+        "printed_pages": "59-86"
+      },
+      {
+        "unit": 4,
+        "title_arab": "الوقت كالذهب",
+        "printed_pages": "87-117"
+      }
+    ],
+    "correction": {
+      "old_incorrect_index": "الزمان",
+      "correct_book_title": "الوقت كالذهب",
+      "context_theme": "الزمان",
+      "verified": true
+    },
+    "individual_lesson_page_verified": false
+  },
+  "changes_scope": "staging only",
+  "release_status": "DRAF",
+  "ready_count": 0
+}

@@ -23,7 +23,14 @@
         "source_page_verified": false,
         "alternate_public_copy": "https://anyflip.com/ypnd/tcce/basic",
         "alternate_public_copy_status": "Pautan buku teks ditemukan; halaman PdP individu belum disahkan",
-        "external_public_source_confirmed": true
+        "external_public_source_confirmed": true,
+        "bibliographic_verification": {
+          "status": "ISBN_VERIFIED_PUBLISHER_CATALOGUE",
+          "isbn": "978-983-49-1589-6",
+          "source": "https://stage.jendeladbp.my/ujana/bahasa-arab-tahun-2-bt-pt/",
+          "publication_date": "2017-11-15",
+          "note": "ISBN Buku Teks (BT), bukan Buku Aktiviti (BA). Buku PDF belum dipadankan ke edisi penerbit."
+        }
       },
       "rpt_2026": "https://anyflip.com/zxzlm/jffk/basic",
       "unit_1": "هيا نتعارف",
@@ -32,7 +39,13 @@
       "external_textbook_portal": "https://sites.google.com/moe-dl.edu.my/sketta2bahasaarab/buku-teks-digital",
       "external_dskp_portal": "https://sites.google.com/moe-dl.edu.my/unitbahasaprogram-pso-2021/mata-pelajaran-unit-bahasa/bahasa-arab/sekolah-rendah/dskp",
       "external_rpt_2026_portal": "https://sites.google.com/moe-dl.edu.my/panitia-bahasa-arab-sksn/induk/rptdskp",
-      "external_activity_book_portal": "https://sites.google.com/moe-dl.edu.my/panitiapendidikanislamtldmkk/buku-teks"
+      "external_activity_book_portal": "https://sites.google.com/moe-dl.edu.my/panitiapendidikanislamtldmkk/buku-teks",
+      "activity_book_bibliographic_verification": {
+        "isbn": "978-983-49-1590-2",
+        "source": "https://jendeladbp.my/ujana/bahasa-arab-tahun-2-ba-pt/",
+        "publication_date": "2017-11-14",
+        "note": "Buku Aktiviti Tahun 2, bukan Buku Teks"
+      }
     },
     "3": {
       "dskp": {
@@ -46,17 +59,50 @@
         "text_extractable": false,
         "source_page_verified": false,
         "note": "PDF imbasan CamScanner; teks tidak tersedia untuk pemadanan halaman automatik",
-        "alternate_public_reference": "https://sites.google.com/moe-dl.edu.my/sketta2bahasaarab/buku-teks-digital"
+        "alternate_public_reference": "https://sites.google.com/moe-dl.edu.my/sketta2bahasaarab/buku-teks-digital",
+        "bibliographic_verification": {
+          "status": "ISBN_EDITION_CONFIRMED_PUBLISHER_AND_BOOK_TOC",
+          "isbn": "978-983-49-2033-3",
+          "publisher": "Dewan Bahasa dan Pustaka untuk KPM",
+          "edition": "Cetakan Pertama 2018",
+          "source": "https://jendeladbp.my/ujana/bahasa-arab-tahun-3-bt-pt/",
+          "textbook_toc_evidence": "https://www.scribd.com/document/438677752/Bahasa-Arab-Tahun-3-Teks-KSSR-Semakan",
+          "page_mapping_status": "UNIT_TOC_ONLY"
+        },
+        "unit_page_ranges_verified": true
       },
       "rpt_2026": "https://anyflip.com/zxzlm/vmip/basic",
       "unit_1": "تفضل إلى الفصل",
-      "textbook_units_confirmed": [],
+      "textbook_units_confirmed": [
+        {
+          "unit": 1,
+          "title": "تفضل إلى الفصل",
+          "printed_pages": "1-28"
+        },
+        {
+          "unit": 2,
+          "title": "ملابسي الجميلة",
+          "printed_pages": "29-58"
+        },
+        {
+          "unit": 3,
+          "title": "الألوان حولنا",
+          "printed_pages": "59-86"
+        },
+        {
+          "unit": 4,
+          "title": "الوقت كالذهب",
+          "printed_pages": "87-117"
+        }
+      ],
       "provisional_rph_count": 12,
-      "unit_4_corrected": "الزمان",
+      "unit_4_corrected": "الوقت كالذهب",
       "external_textbook_portal": "https://sites.google.com/moe-dl.edu.my/sketta2bahasaarab/buku-teks-digital",
       "external_dskp_portal": "https://sites.google.com/moe-dl.edu.my/unitbahasaprogram-pso-2021/mata-pelajaran-unit-bahasa/bahasa-arab/sekolah-rendah/dskp",
       "external_rpt_2026_portal": "https://sites.google.com/moe-dl.edu.my/panitia-bahasa-arab-sksn/induk/rptdskp",
-      "external_activity_book_portal": "https://sites.google.com/moe-dl.edu.my/panitiapendidikanislamtldmkk/buku-teks"
+      "external_activity_book_portal": "https://sites.google.com/moe-dl.edu.my/panitiapendidikanislamtldmkk/buku-teks",
+      "unit_4_theme_tag": "الزمان",
+      "unit_4_correction_note": "Sebelum ini indeks tersalah menganggap label DSKP الزمان sebagai tajuk unit; judul buku teks Tahun 3 2018 ialah الوقت كالذهب."
     },
     "4": {
       "dskp": {
