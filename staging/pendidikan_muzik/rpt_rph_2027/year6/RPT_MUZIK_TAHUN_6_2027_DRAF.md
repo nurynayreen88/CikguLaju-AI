@@ -16,8 +16,8 @@
 | 09 | 28/02–04/03 | 01/03–05/03 | RANGKAIAN GLOBALISASI | 2.1.1, 2.1.2, 2.4.1 | 26-29 |
 | 10 | 14/03–18/03 | 15/03–19/03 | RANGKAIAN GLOBALISASI | 3.1.1, 3.1.2 | 30-33 |
 | 11 | 21/03–25/03 | 22/03–26/03 | RANGKAIAN GLOBALISASI | 4.1.1, 4.1.2 | 34-35 |
-| 12 | 28/03–01/04 | 29/03–02/04 | Projek Seni Muzik 1 — Perancangan | 5.1.1, 5.1.2, 5.1.4 | — |
-| 13 | 04/04–08/04 | 05/04–09/04 | Projek Seni Muzik 1 — Persembahan | 5.1.2, 5.1.3, 5.1.4 | — |
+| 12 | 28/03–01/04 | 29/03–02/04 | Projek Seni Muzik 1 — Perancangan | 5.1.1, 5.1.2, 5.1.4 | 44-45 |
+| 13 | 04/04–08/04 | 05/04–09/04 | Projek Seni Muzik 1 — Persembahan | 5.1.2, 5.1.3, 5.1.4 | 44-45 |
 | 14 | 11/04–15/04 | 12/04–16/04 | MIKROORGANISMA | 2.1.1, 2.1.2 | 36-37 |
 | 15 | 18/04–22/04 | 19/04–23/04 | MIKROORGANISMA | 2.4.1, 2.4.2 | 38-43 |
 | 16 | 25/04–29/04 | 26/04–30/04 | MEMORI INDAH | 2.1.1, 2.1.2 | 46-47 |
@@ -30,8 +30,8 @@
 | 23 | 27/06–01/07 | 28/06–02/07 | WARNA WARNI MALAYSIA | 2.3.1 | 64-65 |
 | 24 | 04/07–08/07 | 05/07–09/07 | WARNA WARNI MALAYSIA | 3.1.1, 3.1.2 | 66-69 |
 | 25 | 11/07–15/07 | 12/07–16/07 | KELESTARIAN ALAM | 2.1.1, 2.1.2, 2.3.1 | 70-71 |
-| 26 | 18/07–22/07 | 19/07–23/07 | Projek Seni Muzik 2 — Perancangan | 5.1.1, 5.1.4 | — |
-| 27 | 25/07–29/07 | 26/07–30/07 | Projek Seni Muzik 2 — Persembahan | 5.1.2, 5.1.3, 5.1.4 | — |
+| 26 | 18/07–22/07 | 19/07–23/07 | Projek Seni Muzik 2 — Perancangan | 5.1.1, 5.1.4 | 88-89 |
+| 27 | 25/07–29/07 | 26/07–30/07 | Projek Seni Muzik 2 — Persembahan | 5.1.2, 5.1.3, 5.1.4 | 88-89 |
 | 28 | 01/08–05/08 | 02/08–06/08 | KELESTARIAN ALAM | 2.4.1, 2.2.1, 2.2.2 | 72-73 |
 | 29 | 08/08–12/08 | 09/08–13/08 | KELESTARIAN ALAM | 2.4.1, 2.4.2 | 74-77 |
 | 30 | 15/08–19/08 | 16/08–20/08 | RINDU | 2.1.1, 2.1.2 | 78-79 |
@@ -47,3 +47,6 @@
 
 
 **Nota PdP05:** RPT asal menyebut halaman 14–15 untuk gerakan, tetapi aktiviti dua kumpulan arah jam/lawan jam dan tempo cepat/sederhana/lambat turut berada pada halaman 16–17 Buku Muzik Tahun 6 DBP 2021; halaman asal dipelihara dalam `source_rpt_original_page`. Status masih DRAF.
+
+
+**Audit Projek Tahun 6:** Dua projek rasmi mempunyai buku teks halaman 44–45 dan 88–89. PdP 34–35 kekal cadangan pengukuhan, bukan projek ketiga. Semua masih DRAF; kalendar, audio, skor dan Word/PDF belum diluluskan.

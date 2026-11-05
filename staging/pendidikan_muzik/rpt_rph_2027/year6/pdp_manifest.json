@@ -324,7 +324,7 @@
         "5.1.2",
         "5.1.4"
       ],
-      "page": null,
+      "page": "44-45",
       "flags": [],
       "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
       "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
@@ -332,7 +332,15 @@
         "week": 12,
         "groupA": "28/03–01/04",
         "groupB": "29/03–02/04"
-      }
+      },
+      "source_rpt_original_page": null,
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic/51-100",
+      "source_book_verification_level": "BUKU_ONLINE_PROJEK_RASMI_SEMAKAN_TEKSTUAL",
+      "project_book_evidence": true,
+      "source_book_audio_file_verified": false,
+      "source_book_audio_numbers_printed": "Tiada audio projek khusus; pilihan lagu perlu disahkan",
+      "validation_status": "DRAF_PROJEK_RASMI_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
     },
     {
       "pdp_id": "MZ-Y6-13",
@@ -345,7 +353,7 @@
         "5.1.3",
         "5.1.4"
       ],
-      "page": null,
+      "page": "44-45",
       "flags": [],
       "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
       "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
@@ -353,7 +361,15 @@
         "week": 13,
         "groupA": "04/04–08/04",
         "groupB": "05/04–09/04"
-      }
+      },
+      "source_rpt_original_page": null,
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic/51-100",
+      "source_book_verification_level": "BUKU_ONLINE_PROJEK_RASMI_SEMAKAN_TEKSTUAL",
+      "project_book_evidence": true,
+      "source_book_audio_file_verified": false,
+      "source_book_audio_numbers_printed": "Tiada audio projek khusus; pilihan lagu perlu disahkan",
+      "validation_status": "DRAF_PROJEK_RASMI_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
     },
     {
       "pdp_id": "MZ-Y6-14",
@@ -690,7 +706,7 @@
         "5.1.1",
         "5.1.4"
       ],
-      "page": null,
+      "page": "88-89",
       "flags": [],
       "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
       "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
@@ -698,7 +714,15 @@
         "week": 26,
         "groupA": "18/07–22/07",
         "groupB": "19/07–23/07"
-      }
+      },
+      "source_rpt_original_page": null,
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic/51-100",
+      "source_book_verification_level": "BUKU_ONLINE_PROJEK_RASMI_SEMAKAN_TEKSTUAL",
+      "project_book_evidence": true,
+      "source_book_audio_file_verified": false,
+      "source_book_audio_numbers_printed": "Tiada audio projek khusus; pilihan lagu perlu disahkan",
+      "validation_status": "DRAF_PROJEK_RASMI_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
     },
     {
       "pdp_id": "MZ-Y6-27",
@@ -711,7 +735,7 @@
         "5.1.3",
         "5.1.4"
       ],
-      "page": null,
+      "page": "88-89",
       "flags": [],
       "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
       "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
@@ -719,7 +743,15 @@
         "week": 27,
         "groupA": "25/07–29/07",
         "groupB": "26/07–30/07"
-      }
+      },
+      "source_rpt_original_page": null,
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic/51-100",
+      "source_book_verification_level": "BUKU_ONLINE_PROJEK_RASMI_SEMAKAN_TEKSTUAL",
+      "project_book_evidence": true,
+      "source_book_audio_file_verified": false,
+      "source_book_audio_numbers_printed": "Tiada audio projek khusus; pilihan lagu perlu disahkan",
+      "validation_status": "DRAF_PROJEK_RASMI_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
     },
     {
       "pdp_id": "MZ-Y6-28",
@@ -956,7 +988,7 @@
   ],
   "dskp_projects_per_year": 2,
   "deprecated_project3_reclassified_count": 2,
-  "partial_textbook_crosscheck_count": 29,
+  "partial_textbook_crosscheck_count": 33,
   "source_textbook_url": "https://anyflip.com/zcnoa/yxcj/basic",
   "source_textbook_edition": "DBP 2021 KSSR Semakan 2017"
 }

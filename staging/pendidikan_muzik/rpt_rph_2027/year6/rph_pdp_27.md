@@ -1,28 +1,28 @@
 # RPH PENDIDIKAN MUZIK TAHUN 6 — PdP 27
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** Projek Seni Muzik 2 — Persembahan  
-**Bidang:** Projek Seni Muzik  
-**SK/SP:** 5.1.2, 5.1.3, 5.1.4  
-**Tempoh cadangan:** 30 minit  
+**Unit/Tajuk:** Projek Seni Muzik 2 — Persembahan
+**Bidang:** Projek Seni Muzik Penggal Dua: persembahan
+**SK/SP (sumber DSKP/RPT, kekal):** 5.1.2, 5.1.3, 5.1.4
 **Status:** DRAF STAGING — bukan FINAL READY
+**Tempoh cadangan:** 30 minit
 
-**Objektif:** Murid melengkapkan tugas perancangan, latihan atau persembahan kumpulan dengan sekurang-kurangnya 3 daripada 4 kriteria rubrik.
+**Objektif:** Melaksanakan persembahan projek Unit 6–10 dengan sekurang-kurangnya tiga amalan etika yang tepat serta refleksi kumpulan.
 
-**Set induksi (4 minit):** Guru menunjukkan contoh persembahan dan bertanya tentang persediaan, peranan ahli serta disiplin.
+**Kriteria kejayaan:** Semua peranan utama dikenal pasti atau dipersembahkan dan murid mencapai 3 daripada 4 item senarai semak guru.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Kumpulan mengagihkan peranan dan merancang aktiviti Membuat persediaan persembahan muzik termasuk susunan alat, latihan dan keselamatan.
+**Set Induksi — 4 minit:** Guru mengimbas peranan ketua kumpulan, etika persembahan dan pemanasan sebelum menggunakan alat muzik.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Murid berlatih atau membuat persembahan mini; guru memberi pembetulan tentang koordinasi, ketepatan dan pengurusan pentas.
+**Aktiviti 1 — Bimbingan projek (8 minit):** Murid memanaskan suara, jari rekoder, menguji alat dan menyemak peranan serta kesiapsiagaan seperti borang halaman 89.
 
-**Pengukuhan dan pentaksiran (6 minit):** Rubrik 4 aspek: kerjasama, ketepatan kemahiran, komunikasi dan refleksi murid.
+**Aktiviti 2 — Pelaksanaan projek (10 minit):** Kumpulan mempersembahkan pilihan nyanyian, rekoder, alat perkusi atau gerakan Unit 6–10; rakan menilai disiplin, kerjasama dan kreativiti.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Pengukuhan dan Penilaian — 6 minit:** Murid menyemak senarai semak lagu, peranan, disiplin, koordinasi dan pengurusan alat. Guru melengkapkan pemerhatian PBD.
 
-**Bahan:** Instrumen muzik, carta latihan/peranan dan rubrik projek.
+**Penutup — 2 minit:** Ketua kumpulan berkongsi satu penambahbaikan serta memastikan peralatan disimpan dengan selamat.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 6. Halaman buku teks tidak disahkan. Rakaman/trek audio belum disahkan.
+**Bahan:** Buku teks halaman 88-89, borang perancangan/penilaian, senarai alat, alat muzik sekolah.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Rujukan:** Buku Teks Pendidikan Muzik Tahun 6 SK DBP 2021, halaman 88-89; https://anyflip.com/zcnoa/yxcj/basic/51-100. Buku menamakan dua projek rasmi Penggal Satu/Dua sahaja; **tiada Projek 3 rasmi**. Fail lagu/audio sebenar belum diaudit.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Audit:** PROJEK_RASMI_SEMAKAN_TEKSTUAL_BUKU_20261106; RPH belum lulus semakan audio, DSKP crosswalk akhir, Word/PDF atau Web/Telegram.

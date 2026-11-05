@@ -139,3 +139,7 @@ Fail RPT (.md/.csv), RPH setiap PdP (.md), manifest JSON di `staging/pendidikan_
 - 12 RPH lagi diselaraskan dengan teks buku Muzik Tahun 6 DBP2021 halaman 46–77. Latihan khusus meliputi nyanyian, rekoder, not bertitik, fermata, perkusi, ciptaan melodi dan ensembel.
 - Tahun 6 kini **29/35 semakan teks buku**, keseluruhan Tahun 2–6 **148/175**, baki **27 PdP** yang merangkumi projek/pengukuhan berbeza. **Semakan teks BUKAN kelulusan kurikulum, audio, skor atau Word/PDF.**
 - RPH/manifest/test dikemas kini hanya staging. Audit terperinci `year6/BUKU_TAHUN6_PDP16_29_TEXT_AUDIT_20261106.md`.
+
+
+## 6 Nov 2026 — Empat projek rasmi Tahun 6
+PdP12,13,26,27 dirujuk kepada buku Tahun 6 halaman 44–45 dan 88–89. **33/35 Tahun 6**, **152/175 keseluruhan**; baki **23** termasuk dua pengukuhan cadangan Tahun 6 dan 21 Tahun 2–4. Tiada audio, skor, kalendar atau cetakan akhir disahkan.
