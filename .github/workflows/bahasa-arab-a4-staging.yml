@@ -1,0 +1,41 @@
+name: BA Year 2–6 A4 RTL staging previews
+
+on:
+  push:
+    branches: [staging/bahasa-arab-t2-t6-20261105]
+    paths:
+      - "rph_standalone/bahasa_arab/**"
+      - "scripts/render_bahasa_arab_staging.py"
+      - ".github/workflows/bahasa-arab-a4-staging.yml"
+  workflow_dispatch:
+
+jobs:
+  docx-pdf-preview:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install preview-only dependencies (no app/runtime changes)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-amiri poppler-utils
+          python -m pip install --disable-pip-version-check python-docx==1.2.0
+      - name: Validate 60 staging draft RPH in A4 DOCX and PDF
+        run: |
+          python scripts/render_bahasa_arab_staging.py --input-dir rph_standalone/bahasa_arab --output-dir /tmp/ba-rph-previews --pdf-check
+          test "$(find /tmp/ba-rph-previews -maxdepth 1 -name '*.docx' | wc -l)" -eq 60
+          test "$(find /tmp/ba-rph-previews/_pdf_previews -name '*.pdf' | wc -l)" -eq 60
+      - name: Archive previews for manual inspection (not deployed)
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bahasa-arab-draft-a4-previews
+          path: |
+            /tmp/ba-rph-previews/*.docx
+            /tmp/ba-rph-previews/_pdf_previews/*.pdf
+          retention-days: 7
