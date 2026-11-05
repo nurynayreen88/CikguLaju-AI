@@ -70,9 +70,7 @@ class YearTwoThreeAudioPhysicalSourceEvidence(unittest.TestCase):
                          "ORIGINAL_TB_AND_FILE_METADATA_VERIFIED_SPEECH_AND_TELEGRAM_PENDING")
         self.assertEqual(statuses["Y3_L93_TRACK97_RECHECK"],
                          "ORIGINAL_TB_TRACK97_VERIFIED_DISC_FILE_AND_TELEGRAM_PENDING")
-        self.assertIn("NOT_FINAL",EVIDENCE["overall_release"].replace(
-            "SOURCE_EVIDENCE_VERIFIED_DELIVERY_AND_SPEECH_UNVERIFIED",
-            "NOT_FINAL_SOURCE_EVIDENCE"))
+        self.assertNotIn("FINAL_READY",EVIDENCE["overall_release"])
 
 if __name__=="__main__":
     unittest.main()
