@@ -5,10 +5,10 @@
   "pr_url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/336",
   "completed": {
     "unit_indexes": 20,
-    "draft_rph": 106,
+    "draft_rph": 122,
     "unit2_4_activity_banks": 15,
     "draft_crosswalk": 60,
-    "source_page_draft_reviewed": 106,
+    "source_page_draft_reviewed": 122,
     "preliminary_year6_page_candidates": 0,
     "one_page_A4_docx_pdf_ci_verified": true,
     "render_check_ci": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42127983356",
@@ -23,7 +23,9 @@
     "year4_unit3_candidate_rph": 14,
     "verified_a4_render_for_all_90": true,
     "year4_unit4_candidate_rph": 16,
-    "verified_a4_render_for_all_106": true
+    "verified_a4_render_for_all_106": true,
+    "year5_unit2_candidate_rph": 16,
+    "verified_a4_render_for_all_122": false
   },
   "release_checks": [
     {
@@ -39,17 +41,17 @@
     {
       "id": "full_pdp_coverage",
       "status": "BLOCKED",
-      "detail": "106 RPH draft candidates: first 12 for each Year2–6 (60), plus Year4 Unit2 16, Unit3 14, Unit4 16. Year4 all 4 units have draft candidates, but true annual session counts/timing and complete pedagogic coverage not certified; Years2,3,5,6 Units2–4 still have no individual RPH."
+      "detail": "122 draft candidates: 60 initial Unit1 across Y2–6; Y4 Units2–4 another 46; Y5 Unit2 another 16. Years2/3/6 Units2–4, Year5 Units3/4 still unwritten. Candidate counts not approved annual RPT 2027 allocation."
     },
     {
       "id": "sk_sp",
       "status": "PARTIAL",
-      "detail": "106 draft SP codes paired to relevant printed textbook exercise at text-extraction level. Year2 four code-print OCR ambiguities still flagged. Full manual DSKP/RPT 2027 sign-off missing."
+      "detail": "122 draft SP codes linked to textbook exercise references (16 additional Y5 Unit2 pages 30–56); 4 Y2 printed SP OCR ambiguities unresolved. No final 2027 RPT mapping or manual teacher signoff."
     },
     {
       "id": "textbook_page_to_pdp",
       "status": "PARTIAL",
-      "detail": "106 draft RPH have printed-page source notes, 58 in Year4. Sources not verified through per-page visual screenshot and annual RPT schedule; these numbers are candidate sequence only."
+      "detail": "122 provisional draft RPH have source text page references, 16 new Y5 Unit2. Page images and per-lesson annual RPT sequencing remain unapproved."
     },
     {
       "id": "rpt_2027_group_A_B",
@@ -59,7 +61,7 @@
     {
       "id": "word_pdf_programmatic_a4",
       "status": "PASS_TECHNICAL_ONLY",
-      "detail": "Confirmed on GitHub Actions https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42127983356: 106 DOCX + 106 PDF, each PDF exactly 1 A4 page with Arabic font support. Structural render succeeded; individual human RTL proofreading and pedagogic approval are NOT complete."
+      "detail": "Last VERIFIED GitHub CI 106 DOCX+106 PDF one A4 page passed. Expanded 122-document A4 run pending; do not assert 122 passed yet."
     },
     {
       "id": "manual_pedagogic_approval",
@@ -85,6 +87,11 @@
       "id": "year4_unit4_candidate",
       "status": "PARTIAL",
       "detail": "16 draft Unit4 RPH candidates from textbook pp86–112 covering phonics, home vocabulary, dialogue, related sentences and silhouette project; 2027 annual RPT, all source images and teacher approvals pending."
+    },
+    {
+      "id": "year5_unit2_candidate",
+      "status": "PARTIAL",
+      "detail": "16 provisional Y5 Unit2 RPH (PdP013–028) based on book pp30–56, including distinct phonics, vocabulary, reading, listening, dialogue, writing and project activities. Annual RPT and visual/manual validation pending."
     }
   ],
   "years": [
@@ -132,14 +139,16 @@
       "year": 5,
       "units": 4,
       "unit1_draft_rph": 12,
-      "source_page_reviewed_rph": 12,
+      "source_page_reviewed_rph": 28,
       "preliminary_mapping_only": 0,
       "unwritten_units": [
-        2,
         3,
         4
       ],
-      "textbook_issue": "Year 5 source pages reviewed as text and four content discrepancies corrected across Year 4/5; RPT and manual sign-off pending."
+      "textbook_issue": "Year5 28 draf: Unit1 12 source-reviewed with old SP discrepancies remediated, Unit2 16 candidates from book printed pp30–56. Full RPT 2027 mapping, manual pedagogical approval and visual source verification pending.",
+      "incomplete_units": [
+        2
+      ]
     },
     {
       "year": 6,

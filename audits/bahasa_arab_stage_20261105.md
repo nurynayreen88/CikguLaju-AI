@@ -111,3 +111,7 @@ Peta `rpt_2027/bahasa_arab/year4_unit4_pdp043_058_DRAF.csv` dan fail bukti `audi
 
 ## 6 Nov 2026 — Ujian A4 untuk 106 RPH draf LULUS
 GitHub run `42127983356` menghasilkan 106 Word dan 106 PDF A4 Arab (font Amiri), dengan semakan automatik setiap PDF tepat satu halaman; artifak pratonton disimpan. Pautan: https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42127983356. Ini hanya **lulus teknikal** dan tidak membuktikan susunan PdP dalam RPT 2027, mutu bahasa/sumber halaman secara visual atau kelulusan guru. **0 FINAL READY**.
+
+## 6 November 2026 — Tahun 5 Unit 2 (16 RPH baharu)
+Unit **ما ألذ الطعام!** Buku Teks Tahun5 DBP/KPM cetakan 2020 (ISBN 978-983-49-2838-4) dan DSKP Tahun5 dibaca untuk latihan halaman bercetak **30,30,31,31,32,32,34,35,36,37,38,41,42,44,47,56**. Ditambah 16 RPH draf individu PdP013–028: fonetik ح/خ dan ذ/ز; dengar makanan; klasifikasi; projek audio; bacaan minuman; menulis kata; dialog jual beli; ayat buah segar; projek kolaj.
+Peta draf `rpt_2027/bahasa_arab/year5_unit2_pdp013_028_DRAF.csv`; audit `audits/bahasa_arab_y5_unit2_pdp013_028_text_source_audit_20261106.json`. Nombor PdP calon tidak sama dengan pengesahan RPT 2027; visual halaman dan kelulusan individu tiada. Jumlah **122 draf**, **0 FINAL READY**. QA Word/PDF untuk 122 masih perlu lulus.

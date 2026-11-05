@@ -77,3 +77,7 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 - 106 RPH DRAF dalam keseluruhan staging; Word/PDF 106 perlu diuji; 0 FINAL READY.
 
 - [CI teknikal 106 Word + 106 PDF satu halaman A4 telah lulus](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42127983356), pratonton tersedia sebagai artifak GitHub; kelulusan pedagogi masih belum dibuat dan PR kekal draft.
+
+## Tahun 5 Unit 2 — 16 RPH baharu (6 Nov 2026)
+- Unit **ما ألذ الطعام!** PdP013–028, 16 draf berdasarkan buku Tahun5 2020 halaman 30–56; peta `rpt_2027/bahasa_arab/year5_unit2_pdp013_028_DRAF.csv`; bukti `audits/bahasa_arab_y5_unit2_pdp013_028_text_source_audit_20261106.json`.
+- Kini **122 RPH draf** dalam staging, bukan 122 READY. Tahun5 Unit3/4 belum ada RPH individu; turutan RPT 2027, kelulusan per PdP, fon Arab dan PDF akhir perlu disemak.
