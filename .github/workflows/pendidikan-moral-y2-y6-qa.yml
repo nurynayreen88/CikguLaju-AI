@@ -32,6 +32,7 @@ on:
       - 'scripts/check_moral_y6_visual24_20261105.py'
       - 'scripts/check_moral_y6_historical_provenance_20261105.py'
       - 'scripts/check_moral_y6_core24_bbm_induction_20261105.py'
+      - 'scripts/check_moral_y6_unit02_text_review_20261105.py'
       - 'scripts/check_moral_y6_kssr2017_edition_20261105.py'
       - 'audits/pendidikan_moral_y6_kssr2017_edition_migration_20261105.json'
       - 'audits/pendidikan_moral_y6_visual24_units05_13_20261105.json'
@@ -72,6 +73,7 @@ on:
       - 'scripts/check_moral_y6_visual24_20261105.py'
       - 'scripts/check_moral_y6_historical_provenance_20261105.py'
       - 'scripts/check_moral_y6_core24_bbm_induction_20261105.py'
+      - 'scripts/check_moral_y6_unit02_text_review_20261105.py'
       - 'scripts/check_moral_y6_kssr2017_edition_20261105.py'
       - 'audits/pendidikan_moral_y6_kssr2017_edition_migration_20261105.json'
       - 'audits/pendidikan_moral_y6_visual24_units05_13_20261105.json'
@@ -138,6 +140,8 @@ jobs:
         run: python scripts/check_moral_y6_historical_provenance_20261105.py
       - name: Validate 24 Year6 current-edition BBM and page-linked set inductions without false visual approval
         run: python scripts/check_moral_y6_core24_bbm_induction_20261105.py
+      - name: Validate three Year6 Unit2 textbook scene-based teaching tasks and safe PBD
+        run: python scripts/check_moral_y6_unit02_text_review_20261105.py
       - name: Guard Year6 revised 2021 textbook edition and 14 mapped source tasks
         run: python scripts/check_moral_y6_kssr2017_edition_20261105.py
       - name: Verify 350 SP against five original KPM DSKP PDFs and 70 book-opening headings

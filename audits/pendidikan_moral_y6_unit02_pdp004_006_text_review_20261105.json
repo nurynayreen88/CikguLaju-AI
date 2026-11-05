@@ -1,0 +1,88 @@
+{
+  "date": "2026-11-05",
+  "subject": "Pendidikan Moral",
+  "year": 6,
+  "unit": 2,
+  "scope": "Three core lesson source TEXT activity audit, not visual all-page approval and not teacher delivery.",
+  "edition": "KSSR Semakan 2017, DBP 2021",
+  "source_url": "https://fliphtml5.com/sbinx/haph/",
+  "historic_book": "OLD_EDITION_IS_SEPARATE_NOT_2021_APPROVAL",
+  "lesson_records": [
+    {
+      "lesson": 4,
+      "sp": [
+        "2.1",
+        "2.2"
+      ],
+      "printed_pages": [
+        12,
+        15
+      ],
+      "book_scenes": [
+        "MRT Pusat Darah Negara awareness billboard",
+        "Sujitra and Monika campaign support",
+        "historical police/RELA support diary"
+      ],
+      "changes": [
+        "induction",
+        "activity1",
+        "activity2",
+        "PBD"
+      ],
+      "level": "SOURCE_TEXT_SCENE_MATCH_ONLY"
+    },
+    {
+      "lesson": 5,
+      "sp": [
+        "2.3",
+        "2.4"
+      ],
+      "printed_pages": [
+        16,
+        18
+      ],
+      "book_scenes": [
+        "Veronica JKM social-support e-mail and agency reply",
+        "storm affected families",
+        "disappointed athlete",
+        "Bumi Hijau campaign"
+      ],
+      "changes": [
+        "induction",
+        "activity1",
+        "activity2",
+        "PBD"
+      ],
+      "level": "SOURCE_TEXT_SCENE_MATCH_ONLY"
+    },
+    {
+      "lesson": 6,
+      "sp": [
+        "2.5"
+      ],
+      "printed_pages": [
+        18,
+        20
+      ],
+      "book_scenes": [
+        "storm, athlete and Bumi Hijau action-simulation",
+        "AADK/PPDa school awareness",
+        "Mari Uji Diri assessment"
+      ],
+      "changes": [
+        "induction",
+        "activity1",
+        "activity2",
+        "PBD"
+      ],
+      "level": "SOURCE_TEXT_SCENE_MATCH_ONLY"
+    }
+  ],
+  "constraints": [
+    "all DRAF/legacy evidence preserved",
+    "no real giving blood or collecting money",
+    "no personal data sharing",
+    "not claiming 3/3 visual full-page textbook approvals"
+  ],
+  "teacher_release_gate": "NOT_FINAL_READY"
+}

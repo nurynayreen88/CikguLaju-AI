@@ -15,13 +15,13 @@
 Murid menganalisis kepentingan memberi bantuan kepada negara dan mengekspresikan perasaan beralasan. Kriteria kejayaan: Dua kepentingan/kesan yang dijustifikasikan dan satu ayat perasaan berserta sebab.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru memperlihatkan tajuk **Bantuan dan Sokongan Moral kepada Negara** dalam buku teks KSSR Semakan 2017, m/s 16, dan mengemukakan situasi berkaitan nilai unit. Murid mengenal pasti watak, tindakan serta satu keputusan yang munasabah mengikut SP PdP.
+**Set induksi (5 minit):** Guru memaparkan ringkasan e-mel Veronica kepada Jabatan Kebajikan Masyarakat (JKM) yang terdapat pada buku teks m/s 16–17. Murid mengenal pasti saluran bantuan yang selamat dan membincangkan mengapa maklumat orang yang memerlukan bantuan perlu dilindungi.
 
-**Aktiviti 1 (20 minit) — Sokongan Moral Menjamin Kesejahteraan Negara:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 2, m/s 16–18, bahagian **Sokongan Moral Menjamin Kesejahteraan Negara** sebagai rangsangan. Murid menjelaskan dua kepentingan memberi sokongan moral kepada pihak yang memerlukan menggunakan hubungan sebab-akibat (SP 2.3). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
+**Aktiviti 1 (20 minit) — Sokongan Moral Menjamin Kesejahteraan Negara:** Guru membimbing murid meneliti e-mel permohonan bantuan melalui JKM dan maklum balas tindakan agensi pada m/s 16–17. Murid menjelaskan dua kepentingan menyalurkan maklumat kepada agensi yang tepat, seperti keselamatan penerima bantuan dan kesejahteraan masyarakat (SP 2.3). Murid tidak diminta menulis atau mendedahkan butiran peribadi orang sebenar.
 
-**Aktiviti 2 (20 minit) — Hulurkan Bantuan Jadikan Amalan:** Guru merujuk bahagian **Hulurkan Bantuan Jadikan Amalan** dalam unit yang sama dan menyediakan kad aktiviti berkaitan. Murid mengekspresikan perasaan apabila bantuan diberi secara ikhlas menggunakan ayat perasaan dan sebab yang jelas (SP 2.4). Guru memberikan maklum balas terhadap sebab, tindakan atau refleksi, kemudian meminta pembetulan yang boleh diperhatikan.
+**Aktiviti 2 (20 minit) — Hulurkan Bantuan Jadikan Amalan:** Guru menggunakan tiga situasi bergambar m/s 18: keluarga terjejas ribut, atlet yang kecewa dan kempen menanam pokok. Murid memilih satu situasi dan mengekspresikan perasaan berserta sebab apabila dapat memberi kata semangat atau sokongan yang selamat (SP 2.4). Guru membezakan simpati daripada tindakan bantuan yang benar-benar sesuai dengan keadaan.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Dua kepentingan/kesan yang dijustifikasikan dan satu ayat perasaan berserta sebab. Guru merekod pencapaian berdasarkan respons individu dan memberi maklum balas terhadap penjelasan atau tingkah laku yang dapat diperhatikan.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Murid menjelaskan dua kepentingan tindakan JKM dalam situasi e-mel m/s 16–17 dan menulis satu ayat perasaan bersebab bagi situasi m/s 18. Guru merekod respons individu mengikut SP 2.3–2.4 tanpa meminta pengalaman peribadi sensitif.
 
 **Penutup (5 minit):** Murid menyatakan satu tindakan dan sebab tindakan itu wajar berdasarkan nilai unit. Guru merumuskan pembelajaran dan mengingatkan murid agar menghormati keadaan keluarga, sekolah dan komuniti yang berbeza.
 

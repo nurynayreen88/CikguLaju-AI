@@ -6,11 +6,11 @@
 **Status:** DRAF_SEMAK
 
 ## Kad situasi
-Sekumpulan rakyat memberi sokongan moral kepada petugas semasa bencana.
+Sujitra dan Monika menemui iklan Kempen Derma Darah di MRT (buku teks DBP 2021, m/s 12–13); catatan diari m/s 14–15 menghargai anggota polis dan RELA semasa pandemik sebagai situasi sejarah. Pilihan lain: permohonan bantuan melalui JKM (m/s 16–17), kempen Bumi Hijau serta program AADK/PPDa (m/s 18–19).
 
-**Pilihan A (sesuai):** bertanya bantuan yang diperlukan dan membantu dengan selamat.  
-**Pilihan B (perlu dibaiki):** mengabaikan orang yang memerlukan pertolongan.  
-**Soalan utama:** Bantuan apa yang paling sesuai serta selamat?
+**Pilihan A (sesuai):** menyampaikan maklumat kempen yang disahkan kepada keluarga atau menghasilkan kad sokongan di sekolah dengan bimbingan guru.
+**Pilihan B (perlu dibaiki):** menyiarkan maklumat peribadi penerima bantuan atau mengatur kutipan wang sendiri tanpa pengawasan.
+**Soalan utama:** Bagaimanakah murid dapat membantu negara secara berhemah, selamat dan sesuai dengan usia?
 
 ## PdP 1 — Pengetahuan dan cara
 **Tugasan 1 (2.1):** Menyenaraikan contoh bantuan dan sokongan moral yang boleh disumbangkan kepada negara.  
@@ -28,4 +28,4 @@ Sekumpulan rakyat memberi sokongan moral kepada petugas semasa bencana.
 **Checklist PBD:** [ ] sesuai dengan situasi [ ] menunjukkan nilai [ ] menghormati keselamatan [ ] refleksi atau sebab wajar.
 
 **Panduan inklusif:** Murid boleh memberi respons lisan, tulisan atau lakonan; tidak perlu mendedahkan pegangan agama, keadaan rumah atau pengalaman sensitif.
-**Sumber:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); buku teks perlu audit halaman. Kit ini cadangan CikguLaju, bukan kandungan rasmi buku teks.
+**Sumber:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017, DBP 2021](https://fliphtml5.com/sbinx/haph/) m/s 12–20. Kandungan adalah olahan PdP CikguLaju berdasarkan situasi teks, bukan salinan aktiviti rasmi atau bukti pelaksanaan sebenar.

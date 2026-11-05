@@ -15,13 +15,13 @@
 Murid menyenaraikan tiga bentuk bantuan atau sokongan moral kepada negara dan menghuraikan dua cara memupuknya. Kriteria kejayaan: Tiga contoh bantuan dengan dua cara memupuk amalan dan sebab yang boleh disokong bukti.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru memperlihatkan tajuk **Bantuan dan Sokongan Moral kepada Negara** dalam buku teks KSSR Semakan 2017, m/s 12, dan mengemukakan situasi berkaitan nilai unit. Murid mengenal pasti watak, tindakan serta satu keputusan yang munasabah mengikut SP PdP.
+**Set induksi (5 minit):** Guru memaparkan situasi papan iklan Kempen Derma Darah di stesen MRT yang diperhatikan oleh Sujitra dan Monika (buku teks m/s 12–13). Murid membincangkan bagaimana murid sekolah boleh menyokong kempen kesedaran melalui saluran selamat, bukan menderma darah.
 
-**Aktiviti 1 (20 minit) — Bantuan Diberikan Beban Dikurangkan:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 2, m/s 12–15, bahagian **Bantuan Diberikan Beban Dikurangkan** sebagai rangsangan. Murid menyenaraikan tiga bentuk bantuan atau sokongan moral kepada rakyat seperti bantuan keperluan, sukarelawan dan kata-kata semangat (SP 2.1). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
+**Aktiviti 1 (20 minit) — Bantuan Diberikan Beban Dikurangkan:** Guru membimbing murid meneliti cerita Sujitra dan Monika tentang kempen Pusat Darah Negara (buku teks m/s 12–13). Murid menyenaraikan tiga cara membantu negara yang sesuai dengan usia, seperti menyampaikan maklumat kempen yang disahkan kepada keluarga, menyediakan risalah kesedaran di kelas, dan menyampaikan sokongan berhemah (SP 2.1). Guru membandingkan tindakan selamat dengan tindakan yang memerlukan kebenaran orang dewasa.
 
-**Aktiviti 2 (20 minit) — Ikhlas Membantu Keamanan Dijaga:** Guru merujuk bahagian **Ikhlas Membantu Keamanan Dijaga** dalam unit yang sama dan menyediakan kad aktiviti berkaitan. Murid menghuraikan dua cara memupuk budaya membantu ketika keperluan masyarakat dengan pertimbangan keselamatan (SP 2.2). Guru memberikan maklum balas terhadap sebab, tindakan atau refleksi, kemudian meminta pembetulan yang boleh diperhatikan.
+**Aktiviti 2 (20 minit) — Ikhlas Membantu Keamanan Dijaga:** Guru meneliti catatan diari tentang sokongan kepada anggota polis dan RELA ketika pandemik yang digambarkan dalam buku teks m/s 14–15 sebagai konteks sejarah. Murid menghuraikan dua cara memupuk budaya memberi sokongan moral, contohnya mengucapkan penghargaan dan menyebarkan mesej kesedaran yang tepat; bantuan fizikal hanya melalui orang dewasa atau pihak berkuasa (SP 2.2). Murid menjelaskan sebab tindakan tersebut wajar.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Tiga contoh bantuan dengan dua cara memupuk amalan dan sebab yang boleh disokong bukti. Guru merekod pencapaian berdasarkan respons individu dan memberi maklum balas terhadap penjelasan atau tingkah laku yang dapat diperhatikan.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Murid menulis tiga contoh sokongan yang berkaitan dengan kempen derma darah atau petugas barisan hadapan serta dua cara memupuk budaya membantu beserta sebab (SP 2.1–2.2). Guru menyemak ketepatan isi, kesesuaian usia dan keselamatan tindakan individu.
 
 **Penutup (5 minit):** Murid menyatakan satu tindakan dan sebab tindakan itu wajar berdasarkan nilai unit. Guru merumuskan pembelajaran dan mengingatkan murid agar menghormati keadaan keluarga, sekolah dan komuniti yang berbeza.
 
