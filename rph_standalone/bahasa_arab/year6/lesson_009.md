@@ -4,7 +4,7 @@
 **Fokus PdP:** Membaca ayat mudah tentang kebersihan
 **SK/SP cadangan:** 2.3 / 2.3.1 — berdasarkan DSKP dan urutan kemahiran RPT 2026, masih menunggu semakan individu terhadap buku teks.
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
-**Kosa kata / ayat:** أنا أستخدم الصابون، أنا أغسل يدي، لا تبذر الماء
+**Kosa kata / ayat:** أنا أستخدم الصابون، أنا أغسل يدي؛ لا تبذر الماء ialah ayat pengayaan guru daripada unit, bukan dialog 2.3.1 h13–15.
 **Objektif pembelajaran:** Murid meniru bacaan tiga ayat kebersihan dengan sebutan tepat.
 **Kriteria kejayaan:** Kejayaan murid diukur berdasarkan bilangan sebutan/bacaan/tulisan betul dalam objektif.
 
@@ -28,3 +28,5 @@
 **Audit halaman:** Tiada nombor halaman individu disahkan; jangan nyatakan muka surat khusus kepada guru sebelum semakan buku teks.
 
 **Status:** DRAF_STAGING / BELUM READY. Bukan bahan LIVE Telegram atau Web. Teks/aktiviti ini merupakan cadangan berpandukan fokus DSKP/RPT, tidak boleh dianggap padanan tepat halaman buku teks, dan belum diuji dalam Word/PDF A4 RTL.
+
+**Semakan teks BT Tahun 6 (6 Nov 2026):** Buku Teks Tahun 6 DBP/KPM 2021 ISBN 978-983-49-3300-5, Unit 1 halaman bercetak **13–15**. Sumber: https://anyflip.com/gcmci/mxcs/basic. SP2.3.1 pada bacaan dialog kebersihan h13–15; nasihat لا تبذر الماء ialah pengayaan daripada teks lain dalam unit. Ini audit teks sumber, bukan pengesahan turutan RPT 2027 atau persetujuan guru. **DRAF / BELUM READY**.
