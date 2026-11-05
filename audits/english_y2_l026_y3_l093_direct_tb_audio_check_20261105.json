@@ -1,0 +1,103 @@
+{
+  "audit_date": "2026-11-05",
+  "scope": "Two original Teacher's Book checks, downloaded WMA codec/hashes, and a read-only AST check of the original app.py Year1-2 Telegram source ID map. No user transmission or listening-content verification.",
+  "overall_release": "SOURCE_EVIDENCE_VERIFIED_DELIVERY_AND_SPEECH_UNVERIFIED",
+  "cases": [
+    {
+      "year": 2,
+      "lesson": 26,
+      "book": "Super Minds 1",
+      "tb_drive_id": "1-tfy1OH9Cjsg5YLZOyBOY8PM5DLCQU2g",
+      "tb_printed_page": "T70",
+      "tb_pdf_zero_based_index": 151,
+      "sb_page": 70,
+      "activity_source": [
+        {
+          "activity": 1,
+          "printed_audio": "CD2 Track 35",
+          "task": "listen/look, then listen/say the home words"
+        },
+        {
+          "activity": 2,
+          "printed_audio": "CD2 Track 36",
+          "task": "listen and chant"
+        }
+      ],
+      "original_audio": [
+        {
+          "filename": "CD2-35.wma",
+          "drive_file_id": "1ZxYROG_L291L8WWIq2_J3NZDiW8giBkK",
+          "parent_folder_id": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv",
+          "size_bytes": 1832078,
+          "sha256": "5efaa11876c31f01e3db035c386483332dc7d65f3e4b73e5cb5b0fb62d04edf7",
+          "container_probe_codec": "wmav2",
+          "sample_rate_hz": 44100,
+          "channels": 2,
+          "duration_seconds": 113.599
+        },
+        {
+          "filename": "CD2-36.wma",
+          "drive_file_id": "1DZnb_IvBrqYfNZqWxuliQlJ-uGPgqIz9",
+          "parent_folder_id": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv",
+          "size_bytes": 1108982,
+          "sha256": "75eb75ed9ee5831125cb49af9ef2024d384770e5e202aaae9ab9008fa3aaa9c2",
+          "container_probe_codec": "wmav2",
+          "sample_rate_hz": 44100,
+          "channels": 2,
+          "duration_seconds": 68.44
+        }
+      ],
+      "source_grade": "ORIGINAL_TB_AND_WMA_FILE_SHA256_CODEC_AND_ACTUAL_APP_LITERAL_ROUTE_MATCH",
+      "spoken_words_checked": false,
+      "telegram_bot_file_id_route_checked": true,
+      "actual_bot_send_checked": false,
+      "final_ready_approved": false,
+      "note": "Original .wma bytes/extension are preserved by the Year1-2 code sender. Actual Telegram send and heard speech are separate pending gates.",
+      "telegram_sender": "_eng12_send_verified_audio",
+      "telegram_sender_source": "app.py AST function line 24620",
+      "telegram_sender_literal_entries": 163,
+      "telegram_sender_route_match": {
+        "CD2_35": true,
+        "CD2_36": true
+      }
+    },
+    {
+      "year": 3,
+      "lesson": 93,
+      "book": "Get Smart Plus 3",
+      "tb_drive_id": "10Cw_yGvWayaWE2jROAnHKheuhC7wCmgh",
+      "tb_printed_pages": [
+        96,
+        97
+      ],
+      "tb_pdf_zero_based_indices": [
+        97,
+        98
+      ],
+      "sb_page": 61,
+      "activity_source": [
+        {
+          "activity": 1,
+          "printed_audio": "Track 97",
+          "disc_printed_on_tb_page": false,
+          "task": "Read/listen to Tony's favourite food/pizza; complete sentences and writing tip"
+        }
+      ],
+      "workbook_evidence": "Original TB printed p97 refers to Workbook Activities 1 and 2 (without displaying workbook printed page in this TB panel). RPH cites Workbook p48, not independently inspected in this check.",
+      "rph_audio_label": "Class CD1 Track 97",
+      "tb_confirms_track_number": 97,
+      "tb_confirms_disc_number": false,
+      "original_track_file_id": null,
+      "source_grade": "ORIGINAL_TB_TRACK97_VERIFIED_NO_Y3_TOP_LEVEL_LITERAL_FILE_ROUTE_SOURCE_OR_SEND",
+      "spoken_words_checked": false,
+      "telegram_bot_file_id_route_checked": false,
+      "actual_bot_send_checked": false,
+      "final_ready_approved": false,
+      "note": "Printed TB p96 gives Track 97, not an explicit CD1 prefix; do not treat RPH CD1 attribution as independently verified.",
+      "actual_app_year3_specific_top_level_audio_literal_route_found": false,
+      "actual_app_source_route_search": "tools/audit_english_y3_l093_static_media_routes_20261105.py",
+      "static_source_scope_limit": "Year3-specific top-level literal maps only. Track may come from curriculum DB or indirect media route; no final assertion on dynamic routing."
+    }
+  ],
+  "unaffected": "No curriculum database, app.py, user credits/payments, original assets, audio format, production or main changes"
+}
