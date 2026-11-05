@@ -14,6 +14,7 @@ on:
       - 'scripts/check_moral_unit4_12_visual.py'
       - 'scripts/check_moral_96h_planning.py'
       - 'scripts/check_moral_official_dskp_350sp.py'
+      - 'scripts/audit_moral_480_individual_evidence.py'
       - 'audits/pendidikan_moral_official_dskp_350sp_fingerprints_20261105.json'
       - 'scripts/check_moral_96_downloads.py'
       - 'scripts/check_pm_v2600_stage_parity.py'
@@ -37,6 +38,7 @@ on:
       - 'scripts/check_moral_unit4_12_visual.py'
       - 'scripts/check_moral_96h_planning.py'
       - 'scripts/check_moral_official_dskp_350sp.py'
+      - 'scripts/audit_moral_480_individual_evidence.py'
       - 'audits/pendidikan_moral_official_dskp_350sp_fingerprints_20261105.json'
       - 'scripts/check_moral_96_downloads.py'
       - 'scripts/check_pm_v2600_stage_parity.py'
@@ -92,6 +94,14 @@ jobs:
         run: python -m py_compile rpt_2027/pendidikan_moral/complete_96_downloads.py scripts/check_moral_96_downloads.py
       - name: Verify 10 RPT PDFs, 270 supplementary RPH pages, editable Word and paid Telegram callbacks
         run: python scripts/check_moral_96_downloads.py
+      - name: Audit each of 480 Moral sessions and produce traceable evidence report
+        run: python scripts/audit_moral_480_individual_evidence.py --output "$RUNNER_TEMP/moral_480_individual_evidence.csv"
+      - name: Archive all 480 individual session decisions
+        uses: actions/upload-artifact@v4
+        with:
+          name: moral-480-individual-evidence
+          path: ${{ runner.temp }}/moral_480_individual_evidence.csv
+          if-no-files-found: error
       - name: Full-release gate - informational only for explicitly provisional beta
         if: always()
         continue-on-error: true
