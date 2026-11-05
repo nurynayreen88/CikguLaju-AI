@@ -46,16 +46,16 @@ def check_year(y, master):
         path = ROOT / r["Rujukan_RPH_Sedia_Ada"]
         assert path.is_file(), (y, r["Rujukan_RPH_Sedia_Ada"])
         source = path.read_text(encoding="utf-8")
-        if y == 6 and r["Unit"] == "4":
+        if y == 6 and r["Unit"] in ("4", "7"):
             # The verified Book TOC has a DIFFERENT Unit 4 topic from DSKP SK4.
             # Keep all seven Year 6 planning sessions on source hold.
-            assert r["Tahap_Semakan_Buku"] == "HOLD_SOURCE_MISMATCH_UNIT4_Y6", (y, r["Sesi_1_96"])
-            assert "Jasa Tokoh Negara Dikenang" not in r["Aktiviti_Guru"], (y, r["Sesi_1_96"])
+            assert r["Tahap_Semakan_Buku"] == ("HOLD_SOURCE_MISMATCH_UNIT%s_Y6" % r["Unit"]), (y, r["Sesi_1_96"])
+            assert "Jasa Tokoh Negara Dikenang" not in r["Aktiviti_Guru"] and "Sayangilah Alam" not in r["Aktiviti_Guru"], (y, r["Sesi_1_96"])
             if r["Modul"] == "PENGUKUHAN":
-                assert "**BBM:** Kad pameran keunikan budaya" in source, path
+                assert ("**BBM:** Kad pameran keunikan budaya" if r["Unit"] == "4" else "**BBM:** Kad gambar Jalur Gemilang") in source, path
                 assert "tidak mendakwa rujukan halaman buku teks" in source, path
             else:
-                assert "Unit 4 buku teks" in source, path
+                assert ("Unit 4 buku teks" if r["Unit"] == "4" else "Buku Teks Unit 7") in source, path
         else:
             assert r["Tahap_Semakan_Buku"] == "VERIFIED_TOC_START_ONLY", (y, r["Sesi_1_96"])
         if r["Modul"] == "PENGUKUHAN":
@@ -65,7 +65,7 @@ def check_year(y, master):
                     "cadangan 60 minit" in source), path
             assert "60 minit" in source, path
             assert len(source) >= 2000, path
-            if y == 6 and r["Unit"] == "4":
+            if y == 6 and r["Unit"] in ("4", "7"):
                 assert "tidak mendakwa rujukan halaman buku teks" in source, path
             else:
                 assert "halaman" in source.lower() and "permulaan" in source.lower(), path

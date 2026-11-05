@@ -10,7 +10,7 @@
 **SP:** 7.1 — Menyenaraikan contoh amalan cinta akan negara. | 7.2 — Menghuraikan cara memupuk amalan cinta akan negara.  
 **Fokus:** Penerokaan tindakan berasaskan nilai  
 **Masa:** 60 minit (sesuaikan dengan jadual waktu guru)  
-**BBM:** Buku Teks Tahun 6, Unit 7, Sayangilah Alam, Hargai Kehidupan, halaman permulaan bercetak 59 (PDF 68); kad situasi, peta keputusan, rekod PBD.
+**BBM:** Kad gambar Jalur Gemilang, Rukun Negara dan aktiviti cinta negara berdasarkan DSKP Tahun 6 SK 7.0; peta keputusan, bahan poster, rekod PBD.
 
 ## Objektif dan kriteria kejayaan
 Murid menunjukkan penguasaan SP **7.1; 7.2** dengan menghasilkan dua contoh tindakan yang sesuai dan dua cara pelaksanaan berdasarkan konteks **Cinta Akan Negara**.  
@@ -21,7 +21,7 @@ Murid menunjukkan penguasaan SP **7.1; 7.2** dengan menghasilkan dua contoh tind
 
 **Aktiviti 1 (20 minit) — Penerokaan tindakan berasaskan nilai:** Guru membacakan kes: Murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan. Murid mengenal pasti pihak terlibat dan mencadangkan dua perbuatan bertepatan dengan nilai Kasih sayang. Guru menjelaskan kata tugas SP (7.1; 7.2) dan memeriksa kefahaman murid melalui soal jawab individu.
 
-**Aktiviti 2 (20 minit) — Menyelesaikan masalah:** Murid menyusun kad "siapa memerlukan apa" dan membina dua langkah bantuan/tindakan praktikal bagi kes murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan. Mereka membandingkan cadangan dan memilih yang paling sesuai. Guru memandu murid menggunakan sebab yang sahih, menjaga keselamatan serta mengelakkan aktiviti yang memerlukan murid mendedahkan butiran peribadi.
+**Aktiviti 2 (20 minit) — Menyelesaikan masalah:** Murid menyusun kad "amalan cinta negara - cara memupuk - alasan" dan membina dua langkah bantuan/tindakan praktikal bagi kes murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan. Mereka membandingkan cadangan dan memilih yang paling sesuai. Guru memandu murid menggunakan sebab yang sahih, menjaga keselamatan serta mengelakkan aktiviti yang memerlukan murid mendedahkan butiran peribadi.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Dua contoh tindakan, dua cara pelaksanaan dan satu alasan dinilai melalui kad individu. Guru memeriksa hasil murid seorang demi seorang, mencatat kelemahan tertentu dan tidak menetapkan TP berdasarkan lakonan semata-mata.
 
@@ -31,4 +31,4 @@ Murid menunjukkan penguasaan SP **7.1; 7.2** dengan menghasilkan dua contoh tind
 **Pengayaan:** Tambah satu pilihan alternatif dan dua justifikasi yang melihat kesan terhadap pihak lain.  
 **Refleksi guru:** Rekod evidens individu, keperluan bimbingan dan susulan PdP.
 
-**Batasan sumber:** SP ini dipetik daripada crosswalk DSKP SK Tahun 6, dan rujukan buku teks ialah **halaman mula unit berdasarkan TOC yang disahkan**; halaman aktiviti terperinci belum disahkan. Langkah PdP diadaptasi oleh CikguLaju. Label status dalaman tidak untuk dipaparkan pada RPH guru.
+**Batasan sumber:** SP ini dipetik daripada crosswalk DSKP SK Tahun 6, dan **Buku Teks Tahun 6 Unit 7 memfokus kasih sayang terhadap alam sekitar, bukan SK 7.0 Cinta Akan Negara**; tugasan ini berpandukan DSKP dan tidak mendakwa rujukan halaman buku teks. Langkah PdP diadaptasi oleh CikguLaju. Label status dalaman tidak untuk dipaparkan pada RPH guru.

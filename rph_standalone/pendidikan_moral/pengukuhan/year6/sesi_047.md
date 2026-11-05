@@ -10,7 +10,7 @@
 **SP:** 7.4 — Mengekspresikan perasaan berkaitan dengan amalan cinta akan negara.  
 **Fokus:** Empati, perasaan dan komunikasi  
 **Masa:** 60 minit (sesuaikan dengan jadual waktu guru)  
-**BBM:** Buku Teks Tahun 6, Unit 7, Sayangilah Alam, Hargai Kehidupan, halaman permulaan bercetak 59 (PDF 68); kad situasi, peta keputusan, rekod PBD.
+**BBM:** Kad gambar Jalur Gemilang, Rukun Negara dan aktiviti cinta negara berdasarkan DSKP Tahun 6 SK 7.0; peta keputusan, bahan poster, rekod PBD.
 
 ## Objektif dan kriteria kejayaan
 Murid menunjukkan penguasaan SP **7.4** dengan menghasilkan dua perasaan yang wajar beserta satu sebab yang dinyatakan berdasarkan konteks **Cinta Akan Negara**.  
@@ -19,7 +19,7 @@ Murid menunjukkan penguasaan SP **7.4** dengan menghasilkan dua perasaan yang wa
 ## Langkah PdP
 **Set induksi (5 minit):** Guru memperkenalkan situasi **Murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan** Murid mengenal pasti cabaran nilai Kasih sayang dan menyebut satu tindakan yang boleh diambil.
 
-**Aktiviti 1 (20 minit) — Empati, perasaan dan komunikasi:** Guru menunjukkan pandangan pihak yang membuat keputusan dan pihak yang menerima kesan dalam situasi Murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan. Murid membina bank kata emosi berhemah. Guru menjelaskan kata tugas SP (7.4) dan memeriksa kefahaman murid melalui soal jawab individu.
+**Aktiviti 1 (20 minit) — Empati, perasaan dan komunikasi:** Guru memaparkan dua situasi sambutan hari kebangsaan (menghormati lambang negara dan memperlekehkan lambang negara); murid menyatakan perasaan masing-masing beserta sebab secara berhemah. Murid membina bank kata emosi berhemah. Guru menjelaskan kata tugas SP (7.4) dan memeriksa kefahaman murid melalui soal jawab individu.
 
 **Aktiviti 2 (20 minit) — Menyelesaikan masalah:** Murid melengkapkan dialog dua watak: "Saya berasa ... kerana ...". Mereka berlatih mendengar pandangan yang berbeza, mengubah respons kasar dan memberi sebab yang munasabah. Guru memandu murid menggunakan sebab yang sahih, menjaga keselamatan serta mengelakkan aktiviti yang memerlukan murid mendedahkan butiran peribadi.
 
@@ -31,4 +31,4 @@ Murid menunjukkan penguasaan SP **7.4** dengan menghasilkan dua perasaan yang wa
 **Pengayaan:** Tambah satu pilihan alternatif dan dua justifikasi yang melihat kesan terhadap pihak lain.  
 **Refleksi guru:** Rekod evidens individu, keperluan bimbingan dan susulan PdP.
 
-**Batasan sumber:** SP ini dipetik daripada crosswalk DSKP SK Tahun 6, dan rujukan buku teks ialah **halaman mula unit berdasarkan TOC yang disahkan**; halaman aktiviti terperinci belum disahkan. Langkah PdP diadaptasi oleh CikguLaju. Label status dalaman tidak untuk dipaparkan pada RPH guru.
+**Batasan sumber:** SP ini dipetik daripada crosswalk DSKP SK Tahun 6, dan **Buku Teks Tahun 6 Unit 7 memfokus kasih sayang terhadap alam sekitar, bukan SK 7.0 Cinta Akan Negara**; tugasan ini berpandukan DSKP dan tidak mendakwa rujukan halaman buku teks. Langkah PdP diadaptasi oleh CikguLaju. Label status dalaman tidak untuk dipaparkan pada RPH guru.

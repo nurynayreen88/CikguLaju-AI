@@ -17,9 +17,9 @@ Murid memperagakan tindakan berdasarkan **7.5: Mengamalkan sikap amalan cinta ak
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Rancang lakonan:** Guru membahagikan watak pelaku, penerima dan pemerhati. Murid merangka ayat serta langkah tindakan selamat untuk **menunjukkan kasih sayang dan keprihatinan**. Murid menyemak persediaan berdasarkan SP 7.5.
+**Aktiviti 1 (20 minit) — Rancang lakonan:** Guru membahagikan watak pelaku, penerima dan pemerhati. Murid merangka ayat serta langkah tindakan selamat untuk **menghormati Jalur Gemilang dan memupuk semangat cinta akan negara**. Murid menyemak persediaan berdasarkan SP 7.5.
 
-**Aktiviti 2 (20 minit) — Lakon, semak, ulang:** Murid memperagakan situasi selama 60–90 saat, rakan memerhati dengan senarai semak, kemudian murid mengulang tindakan selepas maklum balas. Murid menetapkan satu amalan yang boleh dilaksanakan dengan selamat di sekolah atau rumah.
+**Aktiviti 2 (20 minit) — Hasil karya dan amalan:** Murid secara berkumpulan menghasilkan Jalur Gemilang menggunakan bahan sesuai seperti cadangan DSKP, menjaga susunan warna dan lambang serta menerangkan dua cara menghormati bendera. Guru memerhati amalan kerjasama dan adab, bukan menilai SP 7.5 hanya daripada hasil seni.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Semak senarai pemerhatian perlakuan bagi SP 7.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 
@@ -27,4 +27,4 @@ Murid memperagakan tindakan berdasarkan **7.5: Mengamalkan sikap amalan cinta ak
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — halaman belum dipadankan; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — Buku Teks Unit 7 m/s 59–68 berfokus kasih sayang terhadap alam sekitar, bukan SK 7.0; langkah PdP berdasarkan DSKP 7.5; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
