@@ -31,10 +31,15 @@ class AudioConflictGuardTests(unittest.TestCase):
             calls.append(("legacy", cid, key))
             return True
 
+        def verified_send(cid, rows):
+            calls.append(("approved", cid, [dict(row) for row in rows]))
+            return True
+
         rt = SimpleNamespace(
             _available_materials_v2528=available,
             _send_reference_material_v2528=send_media,
             _send_reference_material=direct_media,
+            _send_verified_media_rows_v2594=verified_send,
             send=lambda cid, text: notices.append((cid, text)),
             _EN4_AUDIO_ALL_V25257={30: [{"audio_reference": "CD2 Track 29"}], 31: ["other"]},
             _EN4_AUDIO_ALL_V25258={
@@ -62,23 +67,42 @@ class AudioConflictGuardTests(unittest.TestCase):
             self.assertEqual(mapping[31], ["other"])
         self.assertTrue(install(rt))  # idempotent
 
-    def test_conflict_hides_media_and_rejects_stale_media_requests(self):
+    def test_confirmed_cd1_only_for_both_selectors_and_stale_state(self):
         rt, calls, notices = self.fake_runtime()
         self.assertTrue(install(rt))
         ss = {"subject": "English", "year": "Year 4", "lesson_no": "030",
-              "audio_status": "VERIFIED_AUDIO", "audio_storage_file_id": "stale"}
+              "audio_status": "VERIFIED_AUDIO",
+              "audio_storage_file_id": "1jndYaX3ysrgEERRYQFFojPLxHuwN35Ob"}
         menu = rt._available_materials_v2528(ss)
-        self.assertEqual(menu, ["rph", "rph_word", "textbook", "activity"])
-        self.assertEqual(ss["audio_status"], "SOURCE_CONFLICT_NOT_VERIFIED")
+        self.assertEqual(menu, ["rph", "rph_word", "textbook", "media", "activity"])
+        self.assertEqual(ss["audio_status"], "CD1_SOURCE_CONFIRMED_DELIVERY_UNTESTED")
+        self.assertEqual(ss["audio_reference"], "CD1 Track 29")
+        self.assertEqual(ss["audio_storage_file_id"], "15tyBPsUwd5z9AknoOOUIiaTN6QT-Xrct")
+        self.assertTrue(rt._send_reference_material_v2528(55, ss, "media"))
+        self.assertTrue(rt._send_reference_material(55, ss, "media"))
+        self.assertEqual(len(calls), 2)
+        for route, cid, rows in calls:
+            self.assertEqual(route, "approved")
+            self.assertEqual(cid, 55)
+            self.assertEqual(len(rows), 1)
+            self.assertEqual(rows[0]["audio_reference"], "CD1 Track 29")
+            self.assertEqual(rows[0]["storage_file_id"], "15tyBPsUwd5z9AknoOOUIiaTN6QT-Xrct")
+            self.assertNotEqual(rows[0]["storage_file_id"], "1jndYaX3ysrgEERRYQFFojPLxHuwN35Ob")
+        self.assertEqual(notices, [])
+        self.assertTrue(rt._send_reference_material_v2528(55, ss, "textbook"))
+        self.assertEqual(calls[-1][0], "selector")
+
+    def test_no_approved_sender_fails_closed_without_old_cd2_fallback(self):
+        rt, calls, notices = self.fake_runtime()
+        delattr(rt, "_send_verified_media_rows_v2594")
+        self.assertTrue(install(rt))
+        ss = {"subject": "English", "year": "Year 4", "lesson_no": 30}
+        self.assertNotIn("media", rt._available_materials_v2528(ss))
         self.assertNotIn("audio_storage_file_id", ss)
         self.assertFalse(rt._send_reference_material_v2528(55, ss, "media"))
         self.assertFalse(rt._send_reference_material(55, ss, "media"))
         self.assertEqual(calls, [])
         self.assertEqual(len(notices), 2)
-        self.assertTrue(all("Lesson 30" in msg for _, msg in notices))
-        self.assertTrue(rt._send_reference_material_v2528(55, ss, "textbook"))
-        self.assertTrue(rt._send_reference_material_v2528(55, ss, "activity"))
-        self.assertEqual([x[2] for x in calls], ["textbook", "activity"])
 
     def test_l103_only_source_correct_cd2_track26_remains(self):
         rt, calls, notices = self.fake_runtime()

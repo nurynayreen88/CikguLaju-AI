@@ -47,7 +47,7 @@
       "actual_spoken_content_verified": false
     }
   ],
-  "interpretation": "The two recordings are distinct binary files and should never be treated as interchangeable. The printed Teacher's Book CD1 track is used as the lesson-plan source reference, but its audio words and Telegram routing are NOT independently confirmed.",
+  "interpretation": "Teacher/user confirmed CD1 Track29 for SB p20 Activity2 on 5 Nov 2026, consistent with printed TB p39. Printed SOW still says CD2 Track29, but do NOT send the distinct CD2 recording for this Lesson. Code is constrained to the exact CD1 Drive file; real Telegram delivery and lesson PBD must be tested separately.",
   "release_gates": {
     "source_discrepancy_documented": true,
     "teacher_book_activity_visual_checked": true,
@@ -59,7 +59,7 @@
     "pedagogical_approval": false,
     "printed_workbook_activity_checked": true
   },
-  "next_action": "Telegram code route mismatch identified; send of both unverified tracks now intentionally blocked for Year4 Lesson30 after guard deployment. To release audio: independently verify spoken content against TB p39/SB p20, update exact approved route, then controlled teacher Telegram test for Word/PDF/media and explicit approval.",
+  "next_action": "With user-confirmed CD1 Track29, keep Lesson30 only on the exact CD1 file path via web/english_y4_l030_audio_guard.py and explicitly reject CD2 legacy. Verify authorized teacher Telegram playback and actual Listening SP 1.2.5 assessment before pedagogical FINAL READY.",
   "workbook": {
     "title": "Get Smart Plus 4 Workbook",
     "drive_file_id": "1vFEGRSrG0ANTweKVOV-TDCAAqL0_i9FX",
@@ -95,9 +95,9 @@
     "source": "app.py, legacy Year4 media layers v25.257 / v25.258 / v25.259",
     "finding": "All three legacy maps contain Lesson30 -> CD2 Track29 -> Drive file ID 1jndYaX3ysrgEERRYQFFojPLxHuwN35Ob, conflicting with printed TB p39 CD1 Track29.",
     "consequence": "An unguarded Year4 L30 media picker or legacy send could deliver the conflicting CD2 file even though standalone RPH cites CD1.",
-    "protection": "web/english_y4_l030_audio_guard.py installed last by tools/run_telegram_with_curriculum_api.py; remove Lesson30 from three legacy maps, hide only media in the picker, and reject stale media requests through both sender variants.",
+    "protection": "Source-confirmed CD1-only guarded routing in web/english_y4_l030_audio_guard.py; stale CD2 dropped from three old maps, both sender variants intercepted. Fallback blocks if exact verified audio sender unavailable.",
     "scope": "Year4 Lesson30 media only; all other lessons, RPH Word/PDF, user DB, payments and credits unchanged",
-    "mode": "BLOCK_AUDIO_UNTIL_VERIFIED",
+    "mode": "EXACT_CD1_SOURCE_CONFIRMED_TELEGRAM_DELIVERY_NOT_TESTED",
     "actual_telegram_send_tested": false,
     "correct_spoken_content_verified": false
   },
@@ -119,5 +119,17 @@
     "audio_playback_to_user_verified": false,
     "correct_content_listening_verified": false,
     "final_ready_approved": false
+  },
+  "user_confirmation_20261105": {
+    "confirmed_on": "2026-11-05",
+    "confirmed_by": "teacher/user in this conversation",
+    "lesson": 30,
+    "student_book_page": 20,
+    "student_book_activity": 2,
+    "teacher_book_page": 39,
+    "audio_reference": "CD1 Track 29",
+    "drive_file_id": "15tyBPsUwd5z9AknoOOUIiaTN6QT-Xrct",
+    "rejected_legacy_sow_audio_reference": "CD2 Track 29",
+    "scope": "source/activity mapping confirmed; not an authenticated Telegram file delivery or full pedagogical approval"
   }
 }

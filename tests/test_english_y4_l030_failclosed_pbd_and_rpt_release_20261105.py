@@ -32,17 +32,19 @@ class Lesson30FailClosed(unittest.TestCase):
         self.assertFalse(self.audio["release_gates"]["correct_content_listening_verified"])
         self.assertFalse(self.audio["release_gates"]["telegram_audio_mapping_verified"])
 
-    def test_no_unconditional_play_or_false_listening_pbd(self):
-        self.assertNotIn("**Teacher:** Follow TB Activity 2 using CD1 Track 29",self.rph)
-        self.assertNotIn("**Pupils:** Listen to Track 29",self.rph)
-        self.assertIn("neither CD1 nor CD2 Track 29 may be played or sent",self.rph)
-        self.assertIn("**Listening SP 1.2.5 is pending**",self.rph)
-        self.assertIn("Do not record this silent/pair-reading alternative as evidence",self.rph)
-        self.assertIn("After track approval",self.rph)
-        self.assertIn("correct recording is independently approved",self.rph)
+    def test_confirmed_cd1_and_no_false_listening_pbd(self):
+        self.assertIn("Class CD1 Track 29",self.rph)
+        self.assertIn("never substitute SOW's CD2 Track 29",self.rph)
+        self.assertIn("confirmed by the teacher",self.rph)
+        self.assertIn("without counting this as evidence of Listening SP 1.2.5",self.rph)
+        self.assertIn("only after pupils have actually listened to the correct CD1 Track 29",self.rph)
+        self.assertIn("Do not mark Listening achieved from silent reading",self.rph)
         self.assertIn("Workbook p.15 Activity 3",self.rph)
         self.assertIn("**PBD:** Assess Writing SP 4.3.2",self.rph)
         self.assertIn("**QA status:** NOT READY",self.rph)
+        self.assertFalse(self.audio["telegram_code_route_check"]["actual_telegram_send_tested"])
+        self.assertEqual(self.audio["user_confirmation_20261105"]["audio_reference"],"CD1 Track 29")
+        self.assertEqual(self.audio["user_confirmation_20261105"]["student_book_page"],20)
 
     def test_keep_original_phases_and_teacher_choice_boundary(self):
         durations=[int(n) for n in re.findall(
