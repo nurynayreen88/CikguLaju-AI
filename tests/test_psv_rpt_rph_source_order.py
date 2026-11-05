@@ -864,6 +864,27 @@ class PSVSourceOrderTests(unittest.TestCase):
             self.assertIn("gulungan", (ROOT / f"rph_standalone/psv/year4/lesson_{n:03d}.md").read_text(encoding="utf-8"))
         self.assertIn("beg sandang", (ROOT / "rph_standalone/psv/year4/lesson_012.md").read_text(encoding="utf-8").lower())
 
+    def test_all_42_year4_individual_visual_textbook_source_audits_passed(self):
+        """Full original Year4 PDF audit, but 210 release remains independently gated."""
+        audit = read_csv(ROOT / "rph_standalone/psv/audits/psv_individual_210_review_20261105.csv")
+        y4 = sorted((x for x in audit if x["Tahun"] == "4"), key=lambda x: int(x["PdP"]))
+        self.assertEqual(len(y4), 42)
+        for n, r in enumerate(y4, 1):
+            with self.subTest(pdp=n):
+                self.assertEqual(int(r["PdP"]), n)
+                self.assertEqual(r["Kelulusan_terbit"], "PASSED")
+                self.assertEqual(r["Pemeriksaan_RPH_individu"],
+                                 "RPH_DIBACA;BUKU_TEKS_VISUAL_SAH;DSKP_SEMANTIC_PASSED")
+                self.assertIn("1ZPvbJcwogZVQjRSgPMSgD6iymMXcASSU", r["Bukti_buku"])
+                self.assertIn("1CpSVz8txeDqSnKM7OfOmrjnYH9HBmGy1", r["Bukti_buku"])
+                self.assertIn("ms ", r["Bukti_buku"])
+                self.assertFalse(r["Nota_semakan_terbuka"])
+                body = (ROOT / f"rph_standalone/psv/year4/lesson_{n:03d}.md").read_text(encoding="utf-8")
+                self.assertIn("**Status:** DRAF", body)
+        for x in audit:
+            if x["Tahun"] != "4":
+                self.assertEqual(x["Kelulusan_terbit"], "BELUM_READY")
+
     def test_forty_unit_dskp_technique_and_production_semantics(self):
         """Independent SP-to-technique crosswalk from printed Y2–Y5 DSKP.
 
