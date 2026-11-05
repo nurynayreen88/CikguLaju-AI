@@ -5,6 +5,8 @@ private Supabase Storage bucket. No local ephemeral files, public links,
 additional tables, overwrite of curricular PDFs, or browser service keys.
 """
 from io import BytesIO
+from struct import unpack
+from zlib import crc32, decompressobj
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlsplit
 from urllib.request import Request, build_opener
@@ -28,37 +30,77 @@ def _object_url(supabase_url, user_id):
 
 
 def normalized_png(source):
-    """Strip metadata, reject vector/corrupt/animated images, limit pixels."""
+    """Accept compact 8-bit RGBA/RGB PNG only; strip every ancillary chunk.
+
+    Browsers convert JPG/WebP and resize through canvas before upload. This
+    parser checks chunk CRCs, pixel bounds and decompressed scanline length
+    without requiring extra packages in the dedicated Web deployment.
+    """
     if not isinstance(source, bytes) or not 0 < len(source) <= MAX_INPUT:
         raise ProfileValidation("Logo mesti imej berukuran maksimum 2 MB")
+    signature = b"\x89PNG\r\n\x1a\n"
+    if not source.startswith(signature):
+        raise ProfileValidation("Pilih logo PNG (JPG/WebP ditukar automatik)")
+    pos, header, chunks, compressed, finished = 8, None, [], bytearray(), False
+    while pos + 12 <= len(source):
+        length = unpack(">I", source[pos:pos + 4])[0]
+        name = source[pos + 4:pos + 8]
+        if length > MAX_INPUT or pos + 12 + length > len(source):
+            raise ProfileValidation("Struktur fail logo tidak sah")
+        payload = source[pos + 8:pos + 8 + length]
+        checksum = unpack(">I", source[pos + 8 + length:pos + 12 + length])[0]
+        if crc32(name + payload) & 0xffffffff != checksum:
+            raise ProfileValidation("Fail PNG rosak")
+        pos += 12 + length
+        if name == b"IHDR":
+            if header is not None or length != 13 or chunks:
+                raise ProfileValidation("Header PNG tidak sah")
+            width, height, bit_depth, color, compression, filtering, interlace = unpack(">IIBBBBB", payload)
+            if (not 32 <= width <= 1024 or not 32 <= height <= 1024
+                    or width * height > 1_048_576 or bit_depth != 8
+                    or color not in (2, 6) or compression or filtering or interlace):
+                raise ProfileValidation("Dimensi atau format logo tidak disokong")
+            header = (width, height, color)
+            chunks.append((name, payload))
+        elif name == b"IDAT":
+            if header is None or finished or len(compressed) + length > MAX_SAVED:
+                raise ProfileValidation("Data PNG tidak sah")
+            compressed.extend(payload)
+            chunks.append((name, payload))
+        elif name == b"IEND":
+            if length or header is None or not compressed or pos != len(source):
+                raise ProfileValidation("Penamat PNG tidak sah")
+            chunks.append((name, payload))
+            finished = True
+            break
+        elif name in (b"sRGB", b"gAMA", b"pHYs", b"cHRM"):
+            if header is None or compressed:
+                raise ProfileValidation("Metadata PNG tidak sah")
+            # Strip harmless color metadata. Never preserve author/EXIF/text.
+        else:
+            raise ProfileValidation("Sila gunakan logo PNG tanpa metadata tambahan")
+    if not finished:
+        raise ProfileValidation("Fail PNG tidak lengkap")
+    width, height, color = header
+    expected = (width * (4 if color == 6 else 3) + 1) * height
     try:
-        from PIL import Image, ImageOps, UnidentifiedImageError
-        from PIL import ImageFile
-        Image.MAX_IMAGE_PIXELS = 12_000_000
-        ImageFile.LOAD_TRUNCATED_IMAGES = False
-        with Image.open(BytesIO(source)) as picture:
-            if picture.format not in ("PNG", "JPEG", "WEBP") or getattr(picture, "is_animated", False):
-                raise ProfileValidation("Pilih logo PNG, JPG atau WebP tidak beranimasi")
-            if picture.width < 32 or picture.height < 32:
-                raise ProfileValidation("Logo terlalu kecil")
-            if picture.width * picture.height > 12_000_000:
-                raise ProfileValidation("Dimensi logo terlalu besar")
-            picture.load()
-            img = ImageOps.exif_transpose(picture).convert("RGBA")
-        for side in (512, 420, 320, 240):
-            candidate = img.copy()
-            candidate.thumbnail((side, side), Image.Resampling.LANCZOS)
-            stream = BytesIO()
-            candidate.save(stream, format="PNG", optimize=True)
-            result = stream.getvalue()
-            if len(result) <= MAX_SAVED:
-                return result
-    except ProfileValidation:
-        raise
-    except (OSError, ValueError, TypeError, UnidentifiedImageError, Image.DecompressionBombError):
-        pass
-    raise ProfileValidation("Fail logo tidak sah atau tidak boleh diproses")
-
+        obj = decompressobj()
+        pixels = obj.decompress(bytes(compressed), expected + 1)
+        if (len(pixels) != expected or not obj.eof or obj.unconsumed_tail
+                or obj.unused_data or obj.flush()):
+            raise ProfileValidation("Kandungan PNG tidak sah")
+        stride = width * (4 if color == 6 else 3) + 1
+        if any(pixels[i * stride] not in range(5) for i in range(height)):
+            raise ProfileValidation("Penapis PNG tidak sah")
+    except (ValueError, OverflowError, MemoryError):
+        raise ProfileValidation("Kandungan PNG rosak") from None
+    raw = bytearray(signature)
+    for name, payload in chunks:
+        raw.extend(len(payload).to_bytes(4, "big") + name + payload)
+        raw.extend((crc32(name + payload) & 0xffffffff).to_bytes(4, "big"))
+    if len(raw) > MAX_SAVED:
+        raise ProfileValidation("Logo terlalu besar selepas diproses")
+    return bytes(raw)
 
 def logo_png(supabase_url, service_key, user_id, *, opener=None):
     if not service_key:
