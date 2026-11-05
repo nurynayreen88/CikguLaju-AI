@@ -91,6 +91,8 @@ def install(ns):
             if moral_combined_pdf_ready(year):
                 kb.append([{"text": "📥 Pendidikan Moral (PDF)",
                             "callback_data": "rpt2027_pm_ab_pdf_%d" % year}])
+                kb.append([{"text": "📘 Pendidikan Moral • RPH Pengukuhan",
+                            "callback_data": "moral_supp_menu_%d" % year}])
             if psv_pdf_ready(year):
                 kb.append([{"text": "📥 Pendidikan Seni Visual (PDF)",
                             "callback_data": "rpt2027_psv_pdf_%d" % year}])
@@ -102,7 +104,7 @@ def install(ns):
                 "📅 <b>RPT 2027 — Tahun %d</b>\n\n"
                 "Pilih subjek untuk memuat turun RPT.\n"
                 "English: 160 Lesson; Kumpulan A/B dalam satu PDF.\nBahasa Melayu: RPT 2027 DRAF untuk semakan guru, jika tersedia.\n"
-                "Matematik v28: DRAF/SEMENTARA, jika fail tersedia.\nPendidikan Islam: cadangan untuk semakan guru, jika fail tersedia.\nPJPK: RPT cadangan PdP 2027 (DRAF), jika tersedia.\nPendidikan Moral: satu fail PDF dengan Kumpulan A dan B, merangkumi 42 PdP teras dan 54 sesi pengukuhan.\n\n"
+                "Matematik v28: DRAF/SEMENTARA, jika fail tersedia.\nPendidikan Islam: cadangan untuk semakan guru, jika fail tersedia.\nPJPK: RPT cadangan PdP 2027 (DRAF), jika tersedia.\nPendidikan Moral: RPT PDF Kumpulan A dan B (96 sesi) serta RPH Pengukuhan (54 sesi, PDF/Word).\n\n"
                 "PSV: 42 PdP cadangan (PDF A4 landscape).\n\nTarikh individu bergantung kepada jadual kelas serta cuti negeri." % year,
                 kb)
         if is_psv:
