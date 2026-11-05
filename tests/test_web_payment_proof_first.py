@@ -92,8 +92,12 @@ class PaymentWebTests(unittest.TestCase):
                    return_value={"telegram_user_id":712}), \
              patch("web.web_payment_routes._telegram_document",return_value=proof) as bot, \
              patch("web.web_payment_routes._payment_rest",
-                   return_value=[{"chat_id":"712","status":"pending","id":21}]) as write:
+                   return_value=[{"chat_id":"712","status":"pending","id":21}]) as write, \
+             patch("web.web_payment_routes._notify_telegram_admin_review",
+                   return_value=True) as notice:
             r=self.request_receipt()
+        notice.assert_called_once_with(712,21)
+        self.assertEqual(r.json["admin_notification"],"sent")
         self.assertEqual(r.status_code,201,r.json)
         self.assertEqual(r.json["status"],"pending")
         bot.assert_called_once()
@@ -104,6 +108,69 @@ class PaymentWebTests(unittest.TestCase):
         self.assertEqual(row["amount"],"10.00")
         self.assertEqual(row["notes"],"proof_received_web")
         self.assertEqual(row["chat_id"],"712")
+
+    def test_pending_is_not_lost_if_telegram_admin_notice_fails(self):
+        # A successfully saved payment must NEVER return 503 and induce a
+        # second payment just because the admin notification transport fails.
+        proof={"file_id":"telegram-proof-id","unique_id":"u",
+               "message_id":31,"mime":"application/pdf"}
+        with patch("web.web_payment_routes._source",return_value=CATALOG), \
+             patch("web.web_payment_routes._existing",return_value=[]), \
+             patch("web_v1_telegram_auth_routes._lookup",
+                   return_value={"telegram_user_id":712}), \
+             patch("web.web_payment_routes._telegram_document",return_value=proof), \
+             patch("web.web_payment_routes._payment_rest",
+                   return_value=[{"chat_id":"712","status":"pending","id":21}]) as store, \
+             patch("web.web_payment_routes._notify_telegram_admin_review",
+                   side_effect=ProfileUnavailable("Telegram unreachable")) as notice:
+            r=self.request_receipt()
+        self.assertEqual(r.status_code,201,r.json)
+        self.assertEqual(r.json["admin_notification"],"unconfirmed")
+        self.assertIn("Jangan bayar",r.json["message"])
+        self.assertEqual(r.json["id"],21)
+        store.assert_called_once()
+        notice.assert_called_once_with(712,21)
+
+    def test_telegram_admin_private_notice_uses_fixed_verified_payment_id(self):
+        from web.web_payment_routes import _notify_telegram_admin_review
+        from unittest.mock import Mock
+        class Reply:
+            status=200
+            headers={"Content-Type":"application/json; charset=utf-8"}
+            def __enter__(self):return self
+            def __exit__(self,*args):return None
+            def read(self,n):return json.dumps({
+                "notified":True,"request_id":47,"review":"admin_only"
+            }).encode()
+        class Transport:
+            def __init__(self):self.req=None
+            def open(self,req,timeout):self.req=req;return Reply()
+        transport=Transport()
+        with patch.dict(os.environ,{
+            "CIKGULAJU_AUTHORITATIVE_API_URL":"https://cikgulaju-ai.onrender.com",
+            "CIKGULAJU_AUTHORITATIVE_API_TOKEN":"x"*48,
+        }):
+            self.assertTrue(_notify_telegram_admin_review(712,47,opener=transport))
+        body=json.loads(transport.req.data)
+        self.assertEqual(body,{"request_id":47,"telegram_user_id":712})
+        self.assertEqual(transport.req.get_method(),"POST")
+        self.assertTrue(transport.req.full_url.endswith(
+            "/internal/payment/v1/admin-review-notify"))
+        self.assertEqual(transport.req.get_header("Authorization"),"Bearer "+"x"*48)
+        self.assertNotIn("approve",str(body))
+        self.assertNotIn("file_id",str(body))
+        with self.assertRaises(ProfileUnavailable):
+            _notify_telegram_admin_review(True,47,opener=transport)
+
+    def test_no_notification_for_qr_or_invalid_proof(self):
+        with patch("web.web_payment_routes._notify_telegram_admin_review") as notice, \
+             patch("web.web_payment_routes._source",return_value=CATALOG), \
+             patch("web.web_payment_routes._existing",return_value=[]), \
+             patch("web.web_payment_routes._is_member",return_value=False):
+            r=self.client.get("/api/web/payment/qr",base_url=self.url)
+            self.assertIn(r.status_code,(200,503))
+            self.assertEqual(self.request_receipt(plan="wrong-plan").status_code,400)
+        notice.assert_not_called()
 
     def test_receipt_bot_failure_never_creates_pending(self):
         with patch("web.web_payment_routes._source",return_value=CATALOG), \
