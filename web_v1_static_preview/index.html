@@ -22,6 +22,14 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 #rph-teacher-details{font-weight:650;white-space:pre-wrap;color:#1c4a40!important}
 
 #rph-preview-content p{white-space:pre-wrap;color:#233c33;line-height:1.55;margin:0 0 10px}
+.rph-table-wrap{overflow-x:auto;margin:12px 0}
+.rph-preview-table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:.84rem;line-height:1.45;color:#193344}
+.rph-preview-table th,.rph-preview-table td{border:1px solid #a6c1d1;padding:9px 11px;vertical-align:top;white-space:pre-wrap;overflow-wrap:anywhere}
+.rph-preview-table thead th{background:#174b6b;color:white;text-align:left}
+.rph-preview-table th:first-child{width:27%}
+.rph-preview-table tbody th{background:#eaf2f6;font-weight:700}
+@page{size:A4;margin:11mm}
+@media print{.rph-table-wrap{overflow:visible}.rph-preview-table{font-size:8pt}.rph-preview-table th,.rph-preview-table td{padding:4px 6px}.rph-preview-table tbody tr{break-inside:avoid-page}#rph-preview-content h3{margin-top:0}#rph-preview-content p{margin-bottom:4px}}
 @media print{body{background:white!important}header,footer,main.panel,#workspace>*:not(#rph-preview-panel),#rph-preview-panel>button{display:none!important}#workspace{display:block!important;border:0!important;box-shadow:none!important;padding:0!important;margin:0!important;max-width:none!important}#rph-preview-panel{display:block!important;border:0!important;background:white!important;margin:0!important;padding:0!important}#rph-preview-content{border:0!important;padding:0!important}#rph-preview-content h4{break-after:avoid}#rph-preview-content p{break-inside:avoid}}
 /* Sembunyikan bahan tambahan yang belum disambungkan; kekalkan kod untuk pengaktifan kemudian. */
 #show-materials,#materials-panel{display:none!important}
@@ -264,13 +272,24 @@ rphButton.addEventListener("click",async()=>{
   if(data.teacher?.class!==teacherClass.value.trim()||data.teacher?.date!==teacherDate.value||data.teacher?.time!==teacherTime.value)throw Error("Maklumat kelas tidak sepadan.");
   document.getElementById("rph-teacher-details").textContent="Kelas: "+(data.teacher.class||"—")+"  ·  Tarikh: "+(data.teacher.date||"—")+"  ·  Masa: "+(data.teacher.time||"—");
   document.getElementById("rph-preview-notice").textContent=data.status+" · "+data.notice;
+  // A real RPH table for screen, print/PDF and the corresponding Word download.
+  const wrap=document.createElement("div");wrap.className="rph-table-wrap";
+  const table=document.createElement("table");table.className="rph-preview-table";
+  const caption=document.createElement("caption");caption.textContent="Rancangan Pengajaran Harian";caption.className="sr-only";
+  const head=document.createElement("thead"),heading=document.createElement("tr");
+  for(const title of ["Bahagian RPH","Kandungan dan aktiviti PdP"]){
+   const th=document.createElement("th");th.scope="col";th.textContent=title;heading.append(th);
+  }
+  head.append(heading);table.append(caption,head);
+  const tbody=document.createElement("tbody");
   for(const field of data.fields){
    if(typeof field.label!=="string"||typeof field.value!=="string")continue;
-   const h=document.createElement("h4"),p=document.createElement("p");
-   h.textContent=field.label;p.textContent=field.value;
-   rphFields.append(h,p);
+   const tr=document.createElement("tr"),th=document.createElement("th"),td=document.createElement("td");
+   th.scope="row";th.textContent=field.label;td.textContent=field.value;
+   tr.append(th,td);tbody.append(tr);
   }
-  if(!rphFields.children.length)throw Error("Kandungan RPH kosong.");
+  if(!tbody.children.length)throw Error("Kandungan RPH kosong.");
+  table.append(tbody);wrap.append(table);rphFields.append(wrap);
   rphContent.hidden=false;renderedRphKey=key;
   rphWord.disabled=false;rphPrint.disabled=false;
   rphStatus.textContent="Pratonton RPH tersedia. Semak kandungan sebelum muat turun atau cetak.";updateSelectionHelp("RPH telah dipaparkan. Seterusnya tekan Muat turun Word atau Cetak / Simpan PDF.");
