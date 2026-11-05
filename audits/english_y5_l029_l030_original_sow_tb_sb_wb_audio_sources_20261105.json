@@ -1,0 +1,128 @@
+{
+  "audit_date": "2026-11-05",
+  "scope": "Direct visual review of original official SOW pp64-65, Teacher's Book T106, Student's Book p92, Workbook pp18-19, plus true original MP3 SHA256/codec metadata. No recording speech transcription or Telegram send.",
+  "year": 5,
+  "source_books": {
+    "sow": {
+      "drive_id": "1FHJm1tl7IamOSZWIndUMoytm6SGoexAV",
+      "file": "Primary-Year-5-SoW-SK.pdf",
+      "sha256": "d9c61e7031d5acaf31a47f79560f653c3ce06b27d91c67e02013d819b33c3e3f",
+      "printed_pages_by_lesson": {
+        "29": 64,
+        "30": 65
+      },
+      "pdf_pages_by_lesson": {
+        "29": 65,
+        "30": 66
+      }
+    },
+    "teacher_book": {
+      "drive_id": "14Vpj-DjCbOERXdx7rGG8zhzNhsnUEPsM",
+      "printed_page": "T106",
+      "pdf_page": 107,
+      "sha256": "28d16fd342559ec87426b50fc39c48d029005ef319e6a37f81ed7efdec3038fe"
+    },
+    "student_book": {
+      "drive_id": "13B4s4HacQgWn3M2QkzwHif6JdrBqc1Fw",
+      "printed_page": 92,
+      "pdf_page": 93,
+      "sha256": "0f1b0263ccec6689e896ba375690e4d0cb900e00f52a86832e16411c759eff96"
+    },
+    "workbook": {
+      "drive_id": "1cmRSBYK0_DfKyOOFZW5JazYk7AG6wl8E",
+      "printed_pages": [
+        18,
+        19
+      ],
+      "pdf_pages": [
+        17,
+        18
+      ],
+      "sha256": "b418aabdada23964f168c46966c0ceb4ef41b7f6eed37df6ca84abb23519cec4",
+      "activity_context": "Unit 1 Progress Review: comparing places, places in town/city, asking and saying where places are; optional review, not SOW personal-information core"
+    }
+  },
+  "audio_source_folder_id": "1A-cDnYRn3j-B5NrvTC5fSaWCg-Gq6YyC",
+  "lesson_evidence": [
+    {
+      "lesson": 29,
+      "focus": "Listening 6",
+      "sow_main_sp": "1.2.5",
+      "sow_complementary_sp": "4.3.2",
+      "sow_printed_page": 64,
+      "printed_sb_activities": [
+        1,
+        2,
+        3
+      ],
+      "sow_audio_labels": [
+        "CD3.02",
+        "CD3.03"
+      ],
+      "original_tb_activity_evidence": "SB p92 Activity1: listen and correct 6 personal-information answers using CD3.02. Activities2-3: tick Luke's questions and complete Tobias table using CD3.03. TB T106 matches the SOW.",
+      "printed_task_alignment_verified": true
+    },
+    {
+      "lesson": 30,
+      "focus": "Speaking 6",
+      "sow_main_sp": "2.2.1",
+      "sow_complementary_sp": "1.2.5",
+      "sow_printed_page": 65,
+      "printed_sb_activities": [
+        4,
+        5
+      ],
+      "sow_audio_labels": [
+        "CD3.04"
+      ],
+      "original_tb_activity_evidence": "SB p92 Activity4: Sara/Lili dialogue with five questions, CD3.04. Activity5: Eriko/Liam pair dialogue using printed profiles, switch roles. TB T106 and SOW p65 match.",
+      "printed_task_alignment_verified": true
+    }
+  ],
+  "original_audio_files": [
+    {
+      "label": "CD3.02",
+      "filename": "3-02 English Plus Second Edition Students Book 1.mp3",
+      "drive_file_id": "1T-HBLwsQ2C4eC3egNFZ9ZgDLsOxDRO6N",
+      "size_bytes": 385087,
+      "sha256": "f435ae7c336a1e573b950e3f5a6f9799388a2b74d34ace56e2ad9a3520e13fa8",
+      "codec": "mp3",
+      "sample_rate_hz": 44100,
+      "channels": 1,
+      "duration_seconds": 37.616327
+    },
+    {
+      "label": "CD3.03",
+      "filename": "3-03 English Plus Second Edition Students Book 1.mp3",
+      "drive_file_id": "16N8fUyxWYYyzmeEIYyB7_f1MzLS2i5Zf",
+      "size_bytes": 819242,
+      "sha256": "0c3ad06c99b9b219c2566b64df767c8ea587942c8b6b0a95960df31e778fd6ca",
+      "codec": "mp3",
+      "sample_rate_hz": 44100,
+      "channels": 1,
+      "duration_seconds": 86.674286
+    },
+    {
+      "label": "CD3.04",
+      "filename": "3-04 English Plus Second Edition Students Book 1.mp3",
+      "drive_file_id": "1e4xl-R1CYY3t0XGiWhr8sKxVRzBrTNcX",
+      "size_bytes": 823068,
+      "sha256": "28b105375e3eeef4d04c2f1233b60673b28c98b686d4d4576a9224f9e5504301",
+      "codec": "mp3",
+      "sample_rate_hz": 44100,
+      "channels": 1,
+      "duration_seconds": 91.977143
+    }
+  ],
+  "gates": {
+    "official_sow_pair_verified": true,
+    "printed_book_activity_verified": true,
+    "audio_file_identity_and_codec_verified": true,
+    "audio_spoken_contents_verified": false,
+    "authenticated_teacher_telegram_send_verified": false,
+    "teacher_final_approval": false,
+    "printed_word_a4_per_lesson_verified": false,
+    "final_ready_approved": false
+  },
+  "limitation": "Audio duration and source CD/file ID do not prove exact speech. Do not approve audio, mark all 7 production gates true, or enable unverified Year5 RPH adapter."
+}
