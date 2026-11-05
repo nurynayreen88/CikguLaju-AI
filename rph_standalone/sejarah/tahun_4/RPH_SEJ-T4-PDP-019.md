@@ -1,6 +1,6 @@
 # RPH SEJARAH TAHUN 4 — PdP 019
 
-**Status:** DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS — semakan buku teks dan kelulusan guru belum selesai  
+**Status:** DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS; belum semakan akhir guru / buku teks  
 **Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu A:** 2027-06-13–2027-06-17 | **Minggu B:** 2027-06-14–2027-06-18  
 **Tema:** Zaman Prasejarah | **Tajuk:** Unit 6: Zaman Prasejarah — PdP 019 | **SK:** 3.1  
 **SP:** 3.1.3, K3.1.6 | **Jenis:** PdP Kandungan
@@ -16,7 +16,7 @@
 
 **Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan aktiviti sosial serta ekonomi bagi beberapa tahap zaman prasejarah. Guru menyemak jawapan awal berpandukan 3.1.3.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 6. Murid membanding perubahan cara hidup memburu, mengumpul hasil, bercucuk tanam dan menetap. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menjelaskan sikap bersedia untuk menghadapi perubahan persekitaran..
+**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 6. Murid membanding perubahan cara hidup memburu, mengumpul hasil, bercucuk tanam dan menetap. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan sikap bersedia untuk menghadapi perubahan persekitaran.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan jadual kegiatan sosial-ekonomi dengan dua perubahan beralasan. Guru menyemak secara individu menggunakan kata tugas SP 3.1.3 dan nilai K3.1.6, kemudian memberi intervensi kepada murid yang belum tepat.
 
@@ -24,8 +24,8 @@
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
 
-**Tahap bukti sumber:** DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.; latihan buku teks belum diperiksa
+**Tahap sumber:** DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.; latihan buku teks sebenar belum disahkan
 
-**Rujukan buku teks:** https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/ (ISBN 978-983-49-2472-0) — halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
+**Rujukan buku teks:** https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/ (ISBN 978-983-49-2472-0); halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
 
-**Peringatan:** Tarikh minggu ialah cadangan; semak cuti negeri tambahan dan jadual kelas sebelum pengajaran. Format Word/PDF mesti lulus ujian dan guru mesti menyemak aktiviti buku sebelum status READY.
+**Peringatan:** Semak kebolehlaksanaan aktiviti dengan situasi kelas, halaman buku teks sebenar, kalendar/cuti negeri, dan hasil cetakan Word/PDF sebelum kelulusan atau penerbitan.

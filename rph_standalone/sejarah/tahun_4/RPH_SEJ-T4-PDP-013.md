@@ -1,6 +1,6 @@
 # RPH SEJARAH TAHUN 4 — PdP 013
 
-**Status:** DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS — semakan buku teks dan kelulusan guru belum selesai  
+**Status:** DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS; belum semakan akhir guru / buku teks  
 **Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu A:** 2027-04-11–2027-04-15 | **Minggu B:** 2027-04-12–2027-04-16  
 **Tema:** Mari Belajar Sejarah | **Tajuk:** Unit 4: Sejarah Tempat Tinggal — PdP 013 | **SK:** 1.4  
 **SP:** 1.4.3, K1.4.6 | **Jenis:** PdP Kandungan
@@ -16,7 +16,7 @@
 
 **Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengenal pasti satu perubahan setempat melalui sumber yang bertarikh. Guru menyemak jawapan awal berpandukan 1.4.3.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid menyusun kronologi kawasan dan menjelaskan bagaimana kemudahan berkembang. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menerangkan kepentingan menjaga kebersihan dan keindahan di tempat tinggal..
+**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid menyusun kronologi kawasan dan menjelaskan bagaimana kemudahan berkembang. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan menjaga kebersihan dan keindahan di tempat tinggal.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan garis masa kawasan dengan dua bukti perubahan dan sumber. Guru menyemak secara individu menggunakan kata tugas SP 1.4.3 dan nilai K1.4.6, kemudian memberi intervensi kepada murid yang belum tepat.
 
@@ -24,8 +24,8 @@
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
 
-**Tahap bukti sumber:** DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.; latihan buku teks belum diperiksa
+**Tahap sumber:** DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.; latihan buku teks sebenar belum disahkan
 
-**Rujukan buku teks:** https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/ (ISBN 978-983-49-2472-0) — halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
+**Rujukan buku teks:** https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/ (ISBN 978-983-49-2472-0); halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
 
-**Peringatan:** Tarikh minggu ialah cadangan; semak cuti negeri tambahan dan jadual kelas sebelum pengajaran. Format Word/PDF mesti lulus ujian dan guru mesti menyemak aktiviti buku sebelum status READY.
+**Peringatan:** Semak kebolehlaksanaan aktiviti dengan situasi kelas, halaman buku teks sebenar, kalendar/cuti negeri, dan hasil cetakan Word/PDF sebelum kelulusan atau penerbitan.

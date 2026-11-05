@@ -1,6 +1,6 @@
 # RPH SEJARAH TAHUN 6 — PdP 036
 
-**Status:** DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS — semakan buku teks dan kelulusan guru belum selesai  
+**Status:** DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS; belum semakan akhir guru / buku teks  
 **Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu A:** 2027-10-17–2027-10-21 | **Minggu B:** 2027-10-18–2027-10-22  
 **Tema:** Pencapaian dan Kebanggaan Negara | **Tajuk:** Unit 10: Malaysia dan Dunia — PdP 036 | **SK:** 12.4  
 **SP:** 12.4.1, 12.4.2, K12.4.6 | **Jenis:** Kajian Kes
@@ -17,7 +17,7 @@
 
 **Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina persoalan kajian tentang cara Malaysia menyumbang di peringkat dunia. Guru menyemak jawapan awal berpandukan 12.4.1.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid membandingkan bukti pelibatan dalam dua organisasi dan menyimpulkan faedah kerjasama. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan menjalinkan hubungan baik dengan negara luar..
+**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid membandingkan bukti pelibatan dalam dua organisasi dan menyimpulkan faedah kerjasama. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menjalinkan hubungan baik dengan negara luar.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan laporan kes dua organisasi, dua bukti dan satu iktibar. Guru menyemak secara individu menggunakan kata tugas SP 12.4.1, 12.4.2 dan nilai K12.4.6, kemudian memberi intervensi kepada murid yang belum tepat.
 
@@ -25,8 +25,8 @@
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
 
-**Tahap bukti sumber:** DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.; latihan buku teks belum diperiksa
+**Tahap sumber:** DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.; latihan buku teks sebenar belum disahkan
 
-**Rujukan buku teks:** https://fliphtml5.com/itcew/pnmn (ISBN 978-983-49-3279-4) — halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
+**Rujukan buku teks:** https://fliphtml5.com/itcew/pnmn (ISBN 978-983-49-3279-4); halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
 
-**Peringatan:** Tarikh minggu ialah cadangan; semak cuti negeri tambahan dan jadual kelas sebelum pengajaran. Format Word/PDF mesti lulus ujian dan guru mesti menyemak aktiviti buku sebelum status READY.
+**Peringatan:** Semak kebolehlaksanaan aktiviti dengan situasi kelas, halaman buku teks sebenar, kalendar/cuti negeri, dan hasil cetakan Word/PDF sebelum kelulusan atau penerbitan.

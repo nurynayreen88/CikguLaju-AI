@@ -1,6 +1,6 @@
 # RPH SEJARAH TAHUN 5 — PdP 035
 
-**Status:** DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS — semakan buku teks dan kelulusan guru belum selesai  
+**Status:** DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS; belum semakan akhir guru / buku teks  
 **Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu A:** 2027-10-10–2027-10-14 | **Minggu B:** 2027-10-11–2027-10-15  
 **Tema:** Identiti Negara Kita | **Tajuk:** Unit 12: Bunga Raya Bunga Kebangsaan — PdP 035 | **SK:** 9.5  
 **SP:** 9.5.3, K9.5.5 | **Jenis:** PdP Kandungan
@@ -16,7 +16,7 @@
 
 **Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan lima kelopak dengan lima prinsip Rukun Negara tanpa menokok simbol baharu. Guru menyemak jawapan awal berpandukan 9.5.3.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 12. Murid membina poster nilai yang menghubungkan prinsip Rukun Negara dengan situasi murid. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menerangkan kepentingan bunga kebangsaan sebagai lambang perpaduan..
+**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 12. Murid membina poster nilai yang menghubungkan prinsip Rukun Negara dengan situasi murid. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan bunga kebangsaan sebagai lambang perpaduan.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan poster lima prinsip dan satu contoh amalan. Guru menyemak secara individu menggunakan kata tugas SP 9.5.3 dan nilai K9.5.5, kemudian memberi intervensi kepada murid yang belum tepat.
 
@@ -24,8 +24,8 @@
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
 
-**Tahap bukti sumber:** DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.; latihan buku teks belum diperiksa
+**Tahap sumber:** DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.; latihan buku teks sebenar belum disahkan
 
-**Rujukan buku teks:** https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/ (ISBN 978-983-49-2829-2) — halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
+**Rujukan buku teks:** https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/ (ISBN 978-983-49-2829-2); halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
 
-**Peringatan:** Tarikh minggu ialah cadangan; semak cuti negeri tambahan dan jadual kelas sebelum pengajaran. Format Word/PDF mesti lulus ujian dan guru mesti menyemak aktiviti buku sebelum status READY.
+**Peringatan:** Semak kebolehlaksanaan aktiviti dengan situasi kelas, halaman buku teks sebenar, kalendar/cuti negeri, dan hasil cetakan Word/PDF sebelum kelulusan atau penerbitan.

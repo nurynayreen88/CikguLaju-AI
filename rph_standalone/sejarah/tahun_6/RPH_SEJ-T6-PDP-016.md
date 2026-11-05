@@ -1,6 +1,6 @@
 # RPH SEJARAH TAHUN 6 — PdP 016
 
-**Status:** DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS — semakan buku teks dan kelulusan guru belum selesai  
+**Status:** DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS; belum semakan akhir guru / buku teks  
 **Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu A:** 2027-05-02–2027-05-06 | **Minggu B:** 2027-05-03–2027-05-07  
 **Tema:** Kita Rakyat Malaysia | **Tajuk:** Unit 5: Agama dan Kepercayaan — PdP 016 | **SK:** 11.2  
 **SP:** 11.2.3, K11.2.6 | **Jenis:** PdP Kandungan
@@ -16,7 +16,7 @@
 
 **Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membezakan kedudukan agama Persekutuan dengan kebebasan beragama. Guru menyemak jawapan awal berpandukan 11.2.3.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 5. Murid membincangkan situasi hormat terhadap amalan agama yang berbeza tanpa memaksa murid berkongsi kepercayaan sendiri. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menghubungkait kepentingan amalan agama dan kepercayaan dalam kehidupan..
+**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 5. Murid membincangkan situasi hormat terhadap amalan agama yang berbeza tanpa memaksa murid berkongsi kepercayaan sendiri. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghubungkait kepentingan amalan agama dan kepercayaan dalam kehidupan.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan dua contoh amalan menghormati hak beragama. Guru menyemak secara individu menggunakan kata tugas SP 11.2.3 dan nilai K11.2.6, kemudian memberi intervensi kepada murid yang belum tepat.
 
@@ -24,8 +24,8 @@
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
 
-**Tahap bukti sumber:** DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.; latihan buku teks belum diperiksa
+**Tahap sumber:** DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.; latihan buku teks sebenar belum disahkan
 
-**Rujukan buku teks:** https://fliphtml5.com/itcew/pnmn (ISBN 978-983-49-3279-4) — halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
+**Rujukan buku teks:** https://fliphtml5.com/itcew/pnmn (ISBN 978-983-49-3279-4); halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
 
-**Peringatan:** Tarikh minggu ialah cadangan; semak cuti negeri tambahan dan jadual kelas sebelum pengajaran. Format Word/PDF mesti lulus ujian dan guru mesti menyemak aktiviti buku sebelum status READY.
+**Peringatan:** Semak kebolehlaksanaan aktiviti dengan situasi kelas, halaman buku teks sebenar, kalendar/cuti negeri, dan hasil cetakan Word/PDF sebelum kelulusan atau penerbitan.

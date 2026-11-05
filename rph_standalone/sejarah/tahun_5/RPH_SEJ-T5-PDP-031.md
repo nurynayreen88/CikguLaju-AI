@@ -1,6 +1,6 @@
 # RPH SEJARAH TAHUN 5 — PdP 031
 
-**Status:** DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS — semakan buku teks dan kelulusan guru belum selesai  
+**Status:** DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS; belum semakan akhir guru / buku teks  
 **Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu A:** 2027-09-12–2027-09-16 | **Minggu B:** 2027-09-13–2027-09-17  
 **Tema:** Identiti Negara Kita | **Tajuk:** Unit 11: Bahasa Kebangsaan — PdP 031 | **SK:** 9.4  
 **SP:** 9.4.1, 9.4.2, K9.4.5 | **Jenis:** PdP Kandungan
@@ -17,7 +17,7 @@
 
 **Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membezakan kedudukan bahasa kebangsaan dengan penggunaan bahasa lain. Guru menyemak jawapan awal berpandukan 9.4.1.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 11. Murid membina peta peranan bahasa kebangsaan sebagai alat perpaduan dan ilmu. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan memartabatkan bahasa kebangsaan..
+**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 11. Murid membina peta peranan bahasa kebangsaan sebagai alat perpaduan dan ilmu. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan memartabatkan bahasa kebangsaan.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan jadual kedudukan perlembagaan dan dua peranan bahasa. Guru menyemak secara individu menggunakan kata tugas SP 9.4.1, 9.4.2 dan nilai K9.4.5, kemudian memberi intervensi kepada murid yang belum tepat.
 
@@ -25,8 +25,8 @@
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
 
-**Tahap bukti sumber:** DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.; latihan buku teks belum diperiksa
+**Tahap sumber:** DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.; latihan buku teks sebenar belum disahkan
 
-**Rujukan buku teks:** https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/ (ISBN 978-983-49-2829-2) — halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
+**Rujukan buku teks:** https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/ (ISBN 978-983-49-2829-2); halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
 
-**Peringatan:** Tarikh minggu ialah cadangan; semak cuti negeri tambahan dan jadual kelas sebelum pengajaran. Format Word/PDF mesti lulus ujian dan guru mesti menyemak aktiviti buku sebelum status READY.
+**Peringatan:** Semak kebolehlaksanaan aktiviti dengan situasi kelas, halaman buku teks sebenar, kalendar/cuti negeri, dan hasil cetakan Word/PDF sebelum kelulusan atau penerbitan.

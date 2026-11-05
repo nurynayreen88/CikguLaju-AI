@@ -1,6 +1,6 @@
 # RPH SEJARAH TAHUN 4 — PdP 022
 
-**Status:** DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS — semakan buku teks dan kelulusan guru belum selesai  
+**Status:** DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS; belum semakan akhir guru / buku teks  
 **Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu A:** 2027-07-04–2027-07-08 | **Minggu B:** 2027-07-05–2027-07-09  
 **Tema:** Kerajaan Melayu Awal | **Tajuk:** Unit 7: Kerajaan Melayu Awal — PdP 022 | **SK:** 4.1  
 **SP:** 4.1.1, 4.1.2, K4.1.5 | **Jenis:** PdP Kandungan
@@ -17,7 +17,7 @@
 
 **Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan nama kerajaan awal dengan kedudukan pada peta serantau. Guru menyemak jawapan awal berpandukan 4.1.1.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid membina peta berlabel serta menyatakan kepentingan lokasi laluan maritim. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menerangkan kepentingan menjalin hubungan diplomatik..
+**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid membina peta berlabel serta menyatakan kepentingan lokasi laluan maritim. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan menjalin hubungan diplomatik.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan peta dua kerajaan dengan lokasi dan sumber rujukan. Guru menyemak secara individu menggunakan kata tugas SP 4.1.1, 4.1.2 dan nilai K4.1.5, kemudian memberi intervensi kepada murid yang belum tepat.
 
@@ -25,8 +25,8 @@
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
 
-**Tahap bukti sumber:** DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.; latihan buku teks belum diperiksa
+**Tahap sumber:** DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.; latihan buku teks sebenar belum disahkan
 
-**Rujukan buku teks:** https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/ (ISBN 978-983-49-2472-0) — halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
+**Rujukan buku teks:** https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/ (ISBN 978-983-49-2472-0); halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
 
-**Peringatan:** Tarikh minggu ialah cadangan; semak cuti negeri tambahan dan jadual kelas sebelum pengajaran. Format Word/PDF mesti lulus ujian dan guru mesti menyemak aktiviti buku sebelum status READY.
+**Peringatan:** Semak kebolehlaksanaan aktiviti dengan situasi kelas, halaman buku teks sebenar, kalendar/cuti negeri, dan hasil cetakan Word/PDF sebelum kelulusan atau penerbitan.

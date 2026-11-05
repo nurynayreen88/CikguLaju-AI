@@ -83,6 +83,11 @@ for y, (num_sk, num_sp) in EXPECTED.items():
             assert ev["actual_textbook_visual_page_checked"] is False
             assert ev["textbook_html_page_text_read"] is (y == 5)
             assert r["status"].startswith("DRAF")
+        assert ".." not in r["aktiviti_1"]["activity"] and ".." not in r["aktiviti_2"]["activity"]
+        if r.get("context_specific_activity") and r["values_sp"]:
+            civic = r["values_sp"][0]["text"].rstrip(".")
+            expected = "Murid " + civic[0].lower() + civic[1:] + "."
+            assert expected in r["aktiviti_2"]["activity"], ("civic action mismatch", x["id"])
             assert r["aktiviti_1"]["activity"] != r["aktiviti_2"]["activity"]
         bt = r["textbook_reference"]
         u = units[r["sk"]]
