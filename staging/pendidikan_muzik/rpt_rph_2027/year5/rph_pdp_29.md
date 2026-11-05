@@ -2,30 +2,32 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** ADIWIRA
-**SK/SP (DSKP Tahun 5):** 2.3.1
+**SK / SP:** 2.3.1
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Fokus PdP:** Merancang gerakan berdasarkan meter dan tempo Adiwira.
+**Fokus:** Dia Adiwira — gerak berdasarkan cerita
 
-**Objektif:** Menghasilkan dan mempersembahkan dua urutan gerakan yang mengikut meter serta tempo muzik.
+**Objektif:** Murid mempersembahkan dua pola gerakan selaras cerita dan perubahan tempo.
 
-**Set induksi (4 minit):** Murid menandakan detik dengan langkah setempat ketika guru memperdengarkan petikan muzik.
+**Set induksi (4 minit):** Guru memperkenalkan satu contoh bunyi, skor atau pergerakan yang berkait dengan kemahiran PdP; murid mengajuk atau mengemukakan respons ringkas.
 
-**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Guru menunjukkan hubungan meter/tempo dengan pola gerak; murid menguji dua pola yang tidak mengganggu ruang rakan.
+**Aktiviti 1 — Penerokaan (8 minit):** Guru membimbing murid mengenal bahagian cerita Dia Adiwira yang cepat dan perlahan.
 
-**Aktiviti 2 — Amali mengikut unit (10 minit):** Kumpulan merancang formasi, menyusun dua urutan gerak, dan mempersembahkan semula setelah menerima maklum balas. Guru dan murid merujuk tema **ADIWIRA**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
+**Aktiviti 2 — Amali / aplikasi (10 minit):** Kumpulan menyusun gerakan selamat dan mempersembahkannya pada isyarat yang sesuai.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak keselarasan tempo, ketepatan meter, koordinasi dan disiplin keselamatan gerakan.
+**Pengukuhan dan pentaksiran (6 minit):** Semak padanan gerak, tempo dan keselamatan ruang.
 
-**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
+**Penutup (2 minit):** Murid menunjukkan semula kemahiran yang dipelajari, memberi satu refleksi dan menerima maklum balas guru.
 
-**Bahan:** Audio muzik dibenarkan, ruang lapang dan kad kiraan/formasi.
+**Bahan:** Buku Teks Pendidikan Muzik Tahun 5 SK, DBP 2020, m/s 74-77; instrumen/kad/skor mengikut PdP.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 74-77; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
+**Bukti buku:** https://anyflip.com/ziqkn/yatu/basic — semakan teks dan rujukan halaman untuk fokus ini, bukan kelulusan visual semua halaman.
 
-**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 74-77 BELUM disahkan pada buku asal.
+**Audio yang dicetak dalam buku:** 136. **Fail audio sebenar belum diperiksa atau diaktifkan.**
 
-**Refleksi dan pemulihan:** _________________________________________________
+**Nota audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 74-77 BELUM disahkan pada buku asal
 
-**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.
+**Refleksi / pemulihan:** _______________________________________________
+
+**Kawalan penerbitan:** STAGING sahaja. Belum disahkan Word/PDF semuka, audio, laluan Telegram/Web dan keputusan guru.

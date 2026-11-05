@@ -2,30 +2,32 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** RAJA DI LAUTAN
-**SK/SP (DSKP Tahun 5):** 2.4.1, 2.4.2
+**SK / SP:** 2.4.1, 2.4.2
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Fokus PdP:** Rekoder dan melodi kaunter secara ensembel.
+**Fokus:** Rekoder not F dan E
 
-**Objektif:** Memainkan satu frasa rekoder dengan 3 daripada 4 aspek teknik (penjarian, ton, tempo, pernafasan) yang betul.
+**Objektif:** Murid memainkan frasa not F/E dengan penjarian dan ton baik.
 
-**Set induksi (4 minit):** Guru memperagakan satu bunyi rekoder yang bersih dan satu yang berhembus kuat; murid menjelaskan perbezaannya.
+**Set induksi (4 minit):** Guru memperkenalkan satu contoh bunyi, skor atau pergerakan yang berkait dengan kemahiran PdP; murid mengajuk atau mengemukakan respons ringkas.
 
-**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Murid menunjukkan postur, penjarian, pernafasan dan perlidahan ‘tu’ sebelum memainkan not sasaran E hingga D’ mengikut kemampuan.
+**Aktiviti 1 — Penerokaan (8 minit):** Guru memodelkan penjarian F/E, postur tangan kiri di atas dan perlidahan 'tu'.
 
-**Aktiviti 2 — Amali mengikut unit (10 minit):** Murid membaca satu frasa skor pendek, memainkan perlahan secara individu dan mengulang secara berpasangan setelah semakan penjarian. Guru dan murid merujuk tema **RAJA DI LAUTAN**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
+**Aktiviti 2 — Amali / aplikasi (10 minit):** Murid berlatih lima latihan rekoder secara bertahap dan mencuba melodi kaunter Ikan Yu.
 
-**Pengukuhan dan pentaksiran (6 minit):** Guru membuat senarai semak penjarian, ton, tempo dan pernafasan; murid menunjukkan pembaikan pada percubaan kedua.
+**Pengukuhan dan pentaksiran (6 minit):** Semak penjarian, ton, pernafasan dan tempo.
 
-**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
+**Penutup (2 minit):** Murid menunjukkan semula kemahiran yang dipelajari, memberi satu refleksi dan menerima maklum balas guru.
 
-**Bahan:** Rekoder bersih, carta penjarian not, skor asas dan alat penentu tempo.
+**Bahan:** Buku Teks Pendidikan Muzik Tahun 5 SK, DBP 2020, m/s 38-41; instrumen/kad/skor mengikut PdP.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 38-41; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
+**Bukti buku:** https://anyflip.com/ziqkn/yatu/basic — semakan teks dan rujukan halaman untuk fokus ini, bukan kelulusan visual semua halaman.
 
-**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 38-41 BELUM disahkan pada buku asal.
+**Audio yang dicetak dalam buku:** 67–79. **Fail audio sebenar belum diperiksa atau diaktifkan.**
 
-**Refleksi dan pemulihan:** _________________________________________________
+**Nota audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 38-41 BELUM disahkan pada buku asal
 
-**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.
+**Refleksi / pemulihan:** _______________________________________________
+
+**Kawalan penerbitan:** STAGING sahaja. Belum disahkan Word/PDF semuka, audio, laluan Telegram/Web dan keputusan guru.

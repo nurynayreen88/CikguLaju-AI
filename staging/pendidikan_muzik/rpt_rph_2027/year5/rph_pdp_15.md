@@ -2,30 +2,32 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** Projek Seni Muzik 1 — Perancangan
-**SK/SP (DSKP Tahun 5):** 5.1.1, 5.1.2
+**SK / SP:** 5.1.1, 5.1.2
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Fokus PdP:** Merancang serta menyediakan projek persembahan muzik pertama.
+**Fokus:** Projek Penggal Satu — perancangan
 
-**Objektif:** Merancang satu persembahan muzik berkumpulan dengan peranan jelas dan semua bahan serta jadual latihan dikenal pasti.
+**Objektif:** Kumpulan menyediakan tugasan, bahan dan jadual latihan persembahan Unit 1–5.
 
-**Set induksi (4 minit):** Guru menunjukkan gambaran persembahan kelas; murid menamakan peranan penyanyi, pemuzik, penyusun gerak dan penyelaras.
+**Set induksi (4 minit):** Guru memperkenalkan satu contoh bunyi, skor atau pergerakan yang berkait dengan kemahiran PdP; murid mengajuk atau mengemukakan respons ringkas.
 
-**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Kumpulan memilih bentuk persembahan daripada kemahiran yang dipelajari dan melakar turutan, peranan serta keperluan alat.
+**Aktiviti 1 — Penerokaan (8 minit):** Guru memperkenalkan borang peranan, pilihan nyanyian, instrumen dan gerakan daripada unit terdahulu.
 
-**Aktiviti 2 — Amali mengikut unit (10 minit):** Murid membuat latihan singkat dan menambah baik susunan selepas guru menyemak keselamatan, penyertaan dan kesesuaian tempoh. Guru dan murid merujuk tema **Projek Seni Muzik 1 — Perancangan**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
+**Aktiviti 2 — Amali / aplikasi (10 minit):** Murid menyusun urutan persembahan, mengagih tugas serta membuat latihan awal.
 
-**Pengukuhan dan pentaksiran (6 minit):** Rubrik perancangan: tugasan ahli, pilihan aktiviti, bahan, disiplin dan persediaan.
+**Pengukuhan dan pentaksiran (6 minit):** Semak kesediaan bahan, peranan, masa dan kerjasama.
 
-**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
+**Penutup (2 minit):** Murid menunjukkan semula kemahiran yang dipelajari, memberi satu refleksi dan menerima maklum balas guru.
 
-**Bahan:** Kad peranan, alat muzik selamat, pelan latihan dan rubrik projek.
+**Bahan:** Buku Teks Pendidikan Muzik Tahun 5 SK, DBP 2020, m/s 44-45; instrumen/kad/skor mengikut PdP.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. Tiada rujukan halaman buku teks untuk PdP projek. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
+**Bukti buku:** https://anyflip.com/ziqkn/yatu/basic — semakan teks dan rujukan halaman untuk fokus ini, bukan kelulusan visual semua halaman.
 
-**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks tiada BELUM disahkan pada buku asal; Kod SP projek mengikuti struktur DSKP Tahun 5; penomboran SP projek dalam RPT awam berbeza dan perlu pengesahan manual.
+**Audio yang dicetak dalam buku:** Tiada trek khusus disahkan. **Fail audio sebenar belum diperiksa atau diaktifkan.**
 
-**Refleksi dan pemulihan:** _________________________________________________
+**Nota audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks tiada BELUM disahkan pada buku asal; Kod SP projek mengikuti struktur DSKP Tahun 5; penomboran SP projek dalam RPT awam berbeza dan perlu pengesahan manual
 
-**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.
+**Refleksi / pemulihan:** _______________________________________________
+
+**Kawalan penerbitan:** STAGING sahaja. Belum disahkan Word/PDF semuka, audio, laluan Telegram/Web dan keputusan guru.

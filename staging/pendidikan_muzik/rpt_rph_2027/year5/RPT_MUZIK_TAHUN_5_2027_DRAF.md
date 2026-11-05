@@ -1,13 +1,10 @@
-# RANCANGAN PENGAJARAN TAHUNAN (RPT) 2027
+# RPT PENDIDIKAN MUZIK TAHUN 5 — 2027 (KUMPULAN A & B)
 
-## PENDIDIKAN MUZIK TAHUN 5 — KUMPULAN A & B
+**Sekolah:** __________  **Guru:** __________  
+**Status:** DRAF STAGING, bukan FINAL READY.
+**Kurikulum:** DSKP Pendidikan Muzik Tahun 5 KSSR Semakan 2017. **Buku:** DBP 2020, https://anyflip.com/ziqkn/yatu/basic.
 
-**Sekolah:** ____________________  **Nama Guru:** ____________________  **Tahun:** 5  
-**Kurikulum:** KSSR Semakan 2017  **Status:** DRAF STAGING — BELUM FINAL READY
-
-**Kaedah:** 35 PdP berurutan; nombor PdP ialah identiti. Agihan masa Kumpulan A/B ialah cadangan penjadualan menggunakan rujukan takwim 2027 dan perlu diselaraskan dengan cuti negeri, cuti gantian serta jadual waktu sebenar. Rujukan RPT 2026 digunakan untuk turutan dan halaman *cadangan*; buku teks asal dan audio masih belum disahkan.
-
-| PdP | Kumpulan A | Kumpulan B | Unit/Tajuk | SP DSKP Tahun 5 | BT m/s* |
+| PdP | Slot A | Slot B | Unit/Tajuk | SP | Buku teks m/s* |
 |---:|---|---|---|---|---|
 | 01 | 04/01–07/01 | 04/01–08/01 | WASPADA SELALU | 2.1.1, 2.1.4 | 2-5 |
 | 02 | 10/01–14/01 | 11/01–15/01 | WASPADA SELALU | 2.2.1 | 6-7 |
@@ -23,8 +20,8 @@
 | 12 | 28/03–01/04 | 29/03–02/04 | SERUPA TETAPI TIDAK SAMA | 4.1.1, 4.1.2 | 34-35 |
 | 13 | 04/04–08/04 | 05/04–09/04 | RAJA DI LAUTAN | 2.1.1, 2.1.3 | 36-37 |
 | 14 | 11/04–15/04 | 12/04–16/04 | RAJA DI LAUTAN | 2.4.1, 2.4.2 | 38-41 |
-| 15 | 18/04–22/04 | 19/04–23/04 | Projek Seni Muzik 1 — Perancangan | 5.1.1, 5.1.2 | — |
-| 16 | 25/04–29/04 | 26/04–30/04 | Projek Seni Muzik 1 — Persembahan | 5.1.3, 5.1.4 | — |
+| 15 | 18/04–22/04 | 19/04–23/04 | Projek Seni Muzik 1 — Perancangan | 5.1.1, 5.1.2 | 44-45 |
+| 16 | 25/04–29/04 | 26/04–30/04 | Projek Seni Muzik 1 — Persembahan | 5.1.3, 5.1.4 | 44-45 |
 | 17 | 02/05–06/05 | 03/05–07/05 | RAJA DI LAUTAN | 2.4.1 | 42-43 |
 | 18 | 09/05–13/05 | 10/05–14/05 | SILAP MATA | 2.1.1, 2.1.3 | 46-48 |
 | 19 | 16/05–20/05 | 17/05–21/05 | SILAP MATA | 2.4.1 | 49 |
@@ -39,14 +36,10 @@
 | 28 | 01/08–05/08 | 02/08–06/08 | ADIWIRA | 2.2.1 | 72-73 |
 | 29 | 08/08–12/08 | 09/08–13/08 | ADIWIRA | 2.3.1 | 74-77 |
 | 30 | 15/08–19/08 | 16/08–20/08 | JOGET KHATULISTIWA | 2.1.1, 2.1.3 | 78-79 |
-| 31 | 22/08–26/08 | 23/08–27/08 | JOGET KHATULISTIWA | 2.4.1 | 80-83 |
-| 32 | 05/09–09/09 | 06/09–10/09 | JOGET KHATULISTIWA | 2.4.2 | 80-83 |
+| 31 | 22/08–26/08 | 23/08–27/08 | JOGET KHATULISTIWA | 2.4.1 | 80-81 |
+| 32 | 05/09–09/09 | 06/09–10/09 | JOGET KHATULISTIWA | 2.4.2 | 82-83 |
 | 33 | 12/09–16/09 | 13/09–17/09 | JOGET KHATULISTIWA | 2.2.1, 2.2.2 | 84-87 |
-| 34 | 19/09–23/09 | 20/09–24/09 | Projek Seni Muzik 2 — Perancangan | 5.1.1, 5.1.2 | — |
-| 35 | 26/09–30/09 | 27/09–01/10 | Projek Seni Muzik 2 — Persembahan | 5.1.3, 5.1.4 | — |
+| 34 | 19/09–23/09 | 20/09–24/09 | Projek Seni Muzik 2 — Perancangan | 5.1.1, 5.1.2 | 88-89 |
+| 35 | 26/09–30/09 | 27/09–01/10 | Projek Seni Muzik 2 — Persembahan | 5.1.3, 5.1.4 | 88-89 |
 
-*Rujukan halaman daripada RPT Pendidikan Muzik Tahun 5 2026, **bukan semakan visual buku teks**. Audio dan contoh lagu belum dibuktikan.
-
-**Sumber rujukan:** https://anyflip.com/eaqot/basd/basic. **Pelarasan projek:** dua siri Projek Seni Muzik, mengikut DSKP Tahun 5. **PdP 31–32:** dua latihan berbeza disusun daripada satu blok RPT yang meliputi beberapa minggu; pembahagian ini cadangan CikguLaju, bukan dua baris rasmi asal.
-
-**Penerbitan:** Jangan merge/deploy sehingga pengesahan kandungan buku teks, kesahihan audio, kalendar cuti negeri dan ujian Word/PDF serta kelulusan guru.
+*Semakan teks buku khusus dibuat bagi 15 PdP: 12–17 dan 27–35. Baki adalah calon rujukan RPT. Nombor audio hanya tercetak, belum disahkan fail audio. Tarikh 2027 masih slot cadangan dan tertakluk cuti negeri/gantian.
