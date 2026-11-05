@@ -7,20 +7,20 @@
 **SP:** 2.1.1; 2.1.2; 2.1.3  
 **Buku Teks:** Pendidikan Seni Visual Tahun 6, Dompet Lemon Kesayanganku, ms 54–55
 **Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
-**BBM:** kertas lukisan, oil pastel putih, pewarna makanan atau warna air tidak toksik, berus, templat dompet kertas dan pita pelekat
+**BBM:** Buku Teks ms 54–55, kertas lukisan, oil pastel, pewarna makanan tidak toksik, berus, kad busa prapotong guru, pita pelekat dua muka, pita velkro dan bahan hiasan
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
 ## Objektif dan kriteria kejayaan
-Murid menghasilkan corak resis bermotif lemon secara berselang-seli dan menerapkannya pada templat dompet kertas. Kriteria kejayaan: motif lemon berulang, halangan warna menggunakan oil pastel, kombinasi warna kontra dan satu produk templat dompet.
+Murid menghasilkan corak resis bermotif lemon secara berselang-seli, kemudian melekatkannya pada kad busa berlipat untuk membentuk dompet berpenutup velkro. Kriteria kejayaan: motif lemon berulang, halangan warna menggunakan oil pastel, kombinasi warna kontra dan satu produk templat dompet.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan contoh motif lemon dan hasil resis; murid meramalkan apa yang berlaku apabila pewarna disapu di atas garisan oil pastel.
 
 **Aktiviti 1 (15 minit) — Tunjuk cara:** Guru merujuk BT ms 54–55 dan mendemonstrasi susunan motif lemon berselang-seli, lakaran semula dengan oil pastel sebagai perintang warna serta sapuan warna kuning pada buah, hijau pada daun dan biru kehijauan pada latar.
 
-**Aktiviti 2 (25 minit) — Amali:** Murid melakar motif lemon berulang pada kertas, mengikut semula garis motif dengan oil pastel, menyapu pewarna makanan atau warna air tidak toksik dan menunggu kering; mereka memotong atau melipat templat dompet menggunakan corak yang siap dengan pengawasan guru.
+**Aktiviti 2 (25 minit) — Amali:** Murid melakar motif lemon berselang-seli, menegaskan garis oil pastel dan menyapu pewarna makanan. Menggunakan corak yang telah kering atau sampel prasiap guru, murid melekatkannya pada kad busa dengan pita dua muka, melipat poket dan penutup, kemudian memasang pita velkro agar dompet dapat ditutup. Potongan kad busa disediakan guru.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Satu lembaran corak resis menunjukkan motif berselang-seli serta kontra warna dan satu templat dompet yang menggunakan corak tersebut. Guru merekod perkembangan murid secara berterusan.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menyemak susunan motif lemon, kontra warna dan fungsi penutup velkro pada model dompet kad busa, atau prototaip prasiap apabila pewarna masih basah. Guru merekod perkembangan murid secara berterusan.
 
 **Penutup (5 minit):** Murid menyatakan satu kekuatan hasil dan satu perkara yang perlu diperbaiki; guru merumuskan kemahiran seni serta memastikan kebersihan ruang.
 
