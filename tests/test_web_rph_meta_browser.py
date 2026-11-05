@@ -29,6 +29,10 @@ class RphFieldsBrowserTests(unittest.TestCase):
             element.add(new Option(value,value));
             element.value=value;
           }
+          // UI setup acts as an already-authenticated paid user here.
+          // Dedicated trial tests cover 10->9 and 1->0 account states.
+          applyRphAccount({rph_access_mode:'paid',rph_trial_remaining:4,
+                           status:'Rakan Pembangun',access:'Tanpa had seumur hidup'});
           verifiedRphKey=currentRphLessonKey();
           showRphAction();
         }""")
