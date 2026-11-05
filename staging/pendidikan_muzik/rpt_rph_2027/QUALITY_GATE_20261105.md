@@ -79,8 +79,8 @@ Fail RPT (.md/.csv), RPH setiap PdP (.md), manifest JSON di `staging/pendidikan_
 - **Tahun 4:** 22 PdP bertambah pemurnian teks buku, ditambah 6 PdP diperiksa kandungan halaman sebelumnya = 28/35; baki 7 PdP ialah slot projek/pengukuhan. Halaman penuh dan skor belum semuanya disahkan secara visual.
 - **Tahun 5:** 15 PdP 12–17, 27–35 dimurnikan berdasarkan Buku Teks Muzik Tahun 5 DBP 2020; baki 20 PdP.
 - **Tahun 6:** 7 PdP (11, 14, 15, 30–33) dimurnikan berdasarkan buku Muzik Tahun 6 DBP 2021; baki 28 PdP. Konflik julat Classical dalam DSKP (1750–1830) dan buku (1750–1850) didokumentasi, DSKP dijadikan rujukan standard.
-- **Tahun 2–3:** salinan buku dalam talian ditemui, tetapi 70 RPH masih menunggu audit individu.
-- **Jumlah kemajuan semakan kandungan buku:** **50/175 semakan terhad**, bukan FINAL READY. **Tiada fail audio diperiksa** dan ZIP Word/PDF lama bukan snapshot terkini.
+- **Tahun 2:** 28/35 RPH mempunyai semakan teks buku, 7 RPH masih menunggu audit bukti setara (termasuk PdP 33 yang hanya draf); PdP 11 dibetulkan daripada halaman 32–33 kepada 36–37 kerana halaman asal berkaitan seni visual. **Tahun 3:** 35 RPH masih menunggu audit individu.
+- **Jumlah kemajuan semakan kandungan buku:** **78/175 semakan terhad**, bukan FINAL READY. **Tiada fail audio diperiksa** dan ZIP Word/PDF lama bukan snapshot terkini.
 - Semua fail dan ujian kekal di staging. Lihat `SOURCE_BOOK_REGISTER_20261106.md`.
 
 ## Release gates
