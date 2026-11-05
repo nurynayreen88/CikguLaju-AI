@@ -1,12 +1,14 @@
-# Bahasa Arab Tahun 2–6 — indeks RPT 2027 (staging)
+# Bahasa Arab Tahun 2–6 — RPT 2027 dan RPH (staging sahaja)
 
-**Status:** DRAF_SEMAK / BELUM READY; jangan terbitkan sebagai RPT/RPH rasmi atau tawaran produk LIVE.
+**Pencapaian 5 Nov 2026:** 60 RPH Markdown **DRAF** (PdP 001–012, 12 setiap tahun), 20 unit RPT yang dikenal pasti, 60 pemetaan PdP awal serta 15 bank aktiviti Unit 2–4. **0 FINAL READY.**
 
-- `unit_sequence_DRAF_20261105.csv`: 20 unit (4 bagi setiap Tahun 2–6) berdasarkan urutan sumber 2026/buku teks, tanpa minggu atau tarikh.
-- `pdp_001_006_DRAF.csv`: 30 baris pemetaan awal PdP–kod SK/SP–fokus Unit 1. **Ini bukan RPT 2027 lengkap.**
-- `rph_standalone/bahasa_arab/year2..year6/lesson_001..lesson_006.md`: 30 contoh RPH DRAF (6 setiap tahun), belum audit halaman buku dan belum dicetak A4.
-- `materials/bahasa_arab/year2..year6/unit_02..unit_04_activity_bank_DRAF.md`: 15 bank aktiviti tema Unit 2–4, **bukan** 15 RPH siap.
-- `audits/bahasa_arab_stage_20261105.md`: status, sumber dan keperluan release.
-- `rph_standalone/bahasa_arab/source_manifest_20261105.json`: rekod sumber serta release gate.
+- `unit_sequence_DRAF_20261105.csv`: urutan 4 unit bagi setiap tahun daripada sumber RPT 2026/buku teks; belum ditetapkan tarikh.
+- `pdp_001_012_DRAF.csv`: **peta semasa utama** PdP 001–012 setiap tahun kepada SK/SP cadangan. Kolum halaman buku **FALSE** hingga audit individu.
+- `pdp_001_006_DRAF.csv`: checkpoint sejarah untuk 30 PdP pertama, **bukan** sumber semasa untuk digunakan secara tersendiri.
+- `rph_standalone/bahasa_arab/year2..year6/lesson_001..lesson_012.md`: 60 RPH draf, bukan dokumen siap Word/PDF.
+- `materials/bahasa_arab/year2..year6/unit_02..unit_04_activity_bank_DRAF.md`: 15 cadangan aktiviti bertema untuk Unit 2–4; tidak sama dengan 15 RPH.
+- `audits/bahasa_arab_stage_20261105.md`: isu sumber dan release gate.
 
-Sebelum READY: sahkan halaman buku teks dan SK/SP setiap PdP, bina RPT 2027 Kumpulan A/B yang disesuaikan cuti negeri, lulus semakan individu dan render Word/PDF Arab RTL, audit DB v26.00/backup, kemudian uji penjana asli Telegram dan Web bersama. **Jangan mengubah produksi atau data pengguna melalui PR draf ini.**
+**Belum dilakukan:** RPT 2027 A/B bertarikh, liputan PdP penuh, semakan SK/SP/halaman buku setiap PdP, Word A4 dan PDF RTL, parity generator Telegram/Web, ujian produksi dan kelulusan guru.
+
+Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod pengguna mesti diaudit serta disandarkan sebelum integrasi. Minggu bukan identiti PdP; tarikh A/B/cuti negeri perlu dikira berasingan.

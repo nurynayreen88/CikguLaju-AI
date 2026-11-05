@@ -23,5 +23,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Audit 30 RPH and 15 unit activity banks
+      - name: Audit 60 RPH and 15 unit activity banks
         run: python scripts/check_bahasa_arab_t2_t6_stage.py

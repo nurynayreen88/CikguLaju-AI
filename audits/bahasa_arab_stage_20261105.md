@@ -1,38 +1,31 @@
-# Bahasa Arab Tahun 2–6 — checkpoint staging (5 November 2026)
+# Audit Bahasa Arab Tahun 2–6 — sambungan 5 Nov 2026
 
-## Terkini
-- **30 RPH Markdown DRAF**, PdP 001–006 bagi setiap Tahun 2–6.
-- **15 bank aktiviti unit** tambahan merentas Unit 2–4 setiap tahun, dengan contoh PdP dan PBD khusus; bukan RPH bernombor.
-- **20 unit** (4 per tahun) pada indeks urutan unit; **30 baris** pemetaan PdP awal kepada kod SK/SP dalam CSV berasingan.
-- Semua rekod berstatus **DRAF_SEMAK / BELUM READY**, halaman buku teks PdP individu belum disahkan, **0 FINAL READY**.
-- Y3 Unit 4 dalam indeks diperbetulkan kepada **الزمان**, berdasarkan RPT 2026 dan tema DSKP.
-- RPH ini bahan kerja awal; bukan 30 RPH yang lulus pengesahan guru atau dipasang ke Telegram/Web.
-- Cabang staging berasingan; **tiada** ubah `app.py`, SQLite produksi v26.00 atau Supabase pengguna.
+**Status:** STAGING / DRAF / BELUM READY. Tiada perubahan `main`, `app.py`, DB produksi, Supabase pengguna, Telegram LIVE atau Web LIVE.
 
-## Kod pada enam PdP awal
-| PdP | T2 | T3 | T4 | T5 | T6 |
-|---|---|---|---|---|---|
-| 001 | 1.1.1 | 1.1.1 | 1.1.1 | 1.1.1 | 1.1.1 |
-| 002 | 1.1.2 | 1.1.2 | 1.1.2 | 1.1.2 | 1.1.2 |
-| 003 | 1.2.1 | 1.2.1 | 1.2.1 | 1.2.1 | 1.2.1 |
-| 004 | 2.1.1 | 2.1.1 | 2.1.1 | 2.1.1 | 2.1.1 |
-| 005 | 2.2.1 | 2.2.1 | 2.2.1 | 2.2.1 | 2.2.1 |
-| 006 | 3.1.1 | 3.1.1 | 3.1.1 | **3.2.1** | 3.1.1 |
+## Semakan dan penghasilan
+- **60/60 RPH DRAF**: PdP 001–012 bagi setiap Tahun 2–6, dengan Set induksi, Aktiviti 1/2, BBM, PBD dan penutup; bukan hasil render A4.
+- **20 unit** diindeks: empat unit setiap tahun. Tahun 3 Unit 4 menggunakan **الزمان** berdasarkan RPT 2026.
+- **60/60 crosswalk PdP** dengan SK/SP cadangan, dipisahkan daripada urutan 20 unit, semuanya halaman buku belum disahkan.
+- **15 bank aktiviti Unit 2–4**, setiap unit mempunyai kosa kata, permainan/BBM khusus dan cadangan PBD; bukan RPH siap.
+- CI lama 30 RPH / 15 bank lulus pada run 42048090396. CI baharu untuk **60 RPH** perlu dibaca selepas push ini; jangan menyamakan ini dengan kelulusan pedagogi.
 
-Kod berdasarkan DSKP dan RPT 2026 yang dicapai; jadual ini **pemetaan perancangan** sahaja, bukan semakan manual setiap PdP dengan bukti halaman.
+## Sumber yang digunakan
+- DSKP Tahun 2–5 PDF Drive; DSKP Tahun 6 rujukan KSSR Semakan awam serta dokumen di portal panitia.
+- RPT Kumpulan B 2026 Tahun 2–6 yang ada dalam manifest. Ini peta **PdP**, bukan jadual minggu 2027.
+- Buku teks T4/T5: pemetaan julat halaman mengikut unit; buku T2, T3, T6 masih memerlukan pengesahan halaman PdP spesifik.
+- Tahun 2: unit perkenalan (contoh اسم، أنا، أنت، معلم، تلميذ).
+- Tahun 3: bilik darjah (contoh كرسي، سبورة، مكتب، نافذة).
+- Tahun 4: bulan Masihi (contoh يناير، فبراير، مارس dan soalan ما هذا الشهر؟).
+- Tahun 5: dapur dan tindakan (contoh صحن، ثلاجة، ماذا تفعل؟).
+- Tahun 6: kebersihan (contoh صابون، فرشاة الأسنان، كيف تنظف؟).
+- Bahasa dan aktiviti yang dirancang **tidak** menuntut padanan buku halaman tertentu sehingga penyemak membuktikan perkara itu.
 
-## Sumber rujukan
-- DSKP T2–T5: PDF Google Drive pada `source_manifest_20261105.json`.
-- DSKP T6: RPT 2026 serta teks DSKP KSSR Semakan Tahun 6 di https://anyflip.com/bpvwr/huxb/basic ; perlu banding PDF asal.
-- RPT 2026 T2–T6: URL pada `source_manifest_20261105.json`.
-- Buku teks T4/T5 memberi **julat halaman unit**, bukan halaman aktiviti tertentu.
-- Buku T2 perlu bukti halaman, buku T3 dan T6 imbasan memerlukan semakan imej.
+## Pintu kawalan sebelum FINAL READY
+1. Banding DSKP dan buku teks bagi **setiap** RPH serta wujudkan bukti halaman buku dan kod SK/SP.
+2. Lengkapkan PdP keseluruhan mengikut unit dan RPT 2027 Kumpulan A/B serta kalendar negeri; jangan gunakan minggu sebagai identiti.
+3. Uji Word A4 satu halaman, PDF dan susun atur Arab RTL/harakat.
+4. Semak arahan guru, BBM, peranan murid, PBD dan kesahihan perkataan/ayat; semakan manual individu.
+5. Audit DB v26.00 dan backup, uji penghantaran Telegram/Web dari penjana dan sumber sama.
+6. Kekalkan semua status DRAF sehingga kelulusan manual individu. **READY = 0**.
 
-## Belum siap
-1. Susunan semua PdP sepanjang tahun dan RPT 2027 (tarikh Kumpulan A/B/cuti).
-2. Buktikan setiap rujukan SK/SP/halaman buku, aktiviti dan pencapaian.
-3. Jana dan periksa Word/PDF satu halaman A4 serta susun atur Arab RTL.
-4. Audit DB aktif dahulu, gabung sumber Telegram–Web, uji integrasi serta kelulusan guru.
-
-## Semakan teknikal
-`python scripts/check_bahasa_arab_t2_t6_stage.py` ialah pemeriksa struktur **baca-sahaja** untuk draf dan mesti dijalankan dalam CI. Kejayaan struktur tidak membuktikan kualiti pedagogi atau status READY.
+Status berangka ini mengira fail yang wujud, **bukan** 60 RPH yang telah disahkan.
