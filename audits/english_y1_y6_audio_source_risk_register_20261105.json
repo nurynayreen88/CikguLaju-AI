@@ -30,7 +30,7 @@
       "year": 4,
       "sow": "13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S",
       "teacher_book": "1lBWc96e8DCIMSdxzRuLC7CissHL52q8v",
-      "audit_level": "SOW_160; 69 legacy v25.259 routes reviewed in staging PR279; TB activity evidence at L29/L30/L103/104",
+      "audit_level": "SOW_160; 69 Year4 legacy routes inventoried PR279, physical TB L29/L30/L103/104; 24 WMA source IDs across 19 Lessons were proven wrong-book and protected by PR283 merged in main, Render LIVE commit 9726c79. Correct audio speech and authenticated user send unverified.",
       "audio_source": "Get Smart Plus4 MP3 folders CD1=88 CD2=88 CD3=44; legacy 24 WMA routes from WRONG Super Minds1 source"
     },
     {
@@ -61,7 +61,16 @@
       ],
       "impact": "Potential audio from different textbook, plus source WMA sent as MP3",
       "status": "SOURCE_BOOK_IDENTITY_CONFIRMED_AUDIO_CONTENT_AND_TELEGRAM_SEND_UNVERIFIED",
-      "required": "Quarantine these exact legacy media routes and validate candidate Get Smart Plus4 original MP3 against printed TB and the speech; do not bulk replace by track number."
+      "required": "Quarantine these exact legacy media routes and validate candidate Get Smart Plus4 original MP3 against printed TB and the speech; do not bulk replace by track number.",
+      "live_safety_guard": {
+        "pr": 283,
+        "commit_sha": "9726c79e8d20cc98e565d74f4026c178b85e121f",
+        "render_status": "LIVE",
+        "guarded_lessons": 19,
+        "blocked_legacy_routes": 24,
+        "original_wma_deleted": false,
+        "actual_authenticated_telegram_test": false
+      }
     },
     {
       "id": "Y4_L29_WRONG_DISC",
@@ -132,9 +141,11 @@
       "severity": "review",
       "year": 3,
       "lesson": 93,
-      "exact_issue": "Original Get Smart Plus 3 TB printed p96 (PDF 0-based index97) verifies Activity1 Track97 with SB p61 Tony's favourite pizza. TB says Track97 without explicit CD1 label; RPH CD1 attribution, original Drive track ID, prior mismatched audio report and actual Telegram mapping remain unchecked.",
+      "exact_issue": "Original Get Smart Plus 3 TB printed p96 (PDF 0-based index97) verifies Activity1 Track97 with SB p61 Tony's favourite pizza. TB says Track97 without explicit CD1 label; RPH CD1 attribution, original Drive track ID, prior mismatched audio report and actual Telegram mapping remain unchecked. Read-only current app.py AST has no Year3-specific top-level literal route for Lesson93; code has Year3 curriculum lookup functions. The dynamic DB/indirect route remains unverified.",
       "status": "ORIGINAL_TB_TRACK97_VERIFIED_DISC_FILE_AND_TELEGRAM_PENDING",
-      "evidence_path": "audits/english_y2_l026_y3_l093_direct_tb_audio_check_20261105.json"
+      "evidence_path": "audits/english_y2_l026_y3_l093_direct_tb_audio_check_20261105.json",
+      "static_app_y3_top_level_literal_track93_found": false,
+      "static_scan_tool": "tools/audit_english_y3_l093_static_media_routes_20261105.py"
     }
   ],
   "limitations": [
@@ -145,7 +156,7 @@
     "No changes to production main, Supabase, original audio files, quotas, subscriptions or referrals."
   ],
   "recommended_release_order": [
-    "First block proven wrong-book Year4 Super Minds audio and wrong-disc L29/L30 and L103 extras without blocking otherwise valid Word/PDF.",
+    "Maintain LIVE Year4 Super Minds 1 wrong-book hold for the 19 affected Lessons (PR283) and existing Lesson30 source guard; do not auto-enable unlistened replacements. WMA source files remain intact.",
     "Review year6 folder AS5 naming and actual deployed media IDs before release.",
     "Continue TB/SB audio-page-per-Lesson checks for each year; Year5 and Year6 require separate audio numbering formats.",
     "Run controlled authenticated Telegram send/playback of each approved audio and native Word/PDF.",
