@@ -15,12 +15,18 @@ on:
       - 'scripts/check_moral_visual21_20261105.py'
       - 'scripts/check_moral_visual27_y2_20261105.py'
       - 'scripts/check_moral_visual27_y3_20261105.py'
+      - 'scripts/check_moral_visual30_y4_20261105.py'
+      - 'scripts/check_moral_visual30_y5_20261105.py'
+      - 'audits/pendidikan_moral_visual30_y5_u05_u14_20261105.json'
+      - 'audits/pendidikan_moral_visual30_y4_u05_u14_20261105.json'
       - 'audits/pendidikan_moral_visual27_y3_u06_u14_20261105.json'
       - 'audits/pendidikan_moral_visual27_y2_u06_u14_20261105.json'
       - 'audits/pendidikan_moral_visual21_unit1_unit5_20261105.json'
       - 'scripts/check_moral_96h_planning.py'
       - 'scripts/check_moral_official_dskp_350sp.py'
       - 'scripts/audit_moral_480_individual_evidence.py'
+      - 'scripts/check_moral_y6_visual24_20261105.py'
+      - 'audits/pendidikan_moral_y6_visual24_units05_13_20261105.json'
       - 'audits/pendidikan_moral_official_dskp_350sp_fingerprints_20261105.json'
       - 'scripts/check_moral_96_downloads.py'
       - 'scripts/check_pm_v2600_stage_parity.py'
@@ -45,12 +51,18 @@ on:
       - 'scripts/check_moral_visual21_20261105.py'
       - 'scripts/check_moral_visual27_y2_20261105.py'
       - 'scripts/check_moral_visual27_y3_20261105.py'
+      - 'scripts/check_moral_visual30_y4_20261105.py'
+      - 'scripts/check_moral_visual30_y5_20261105.py'
+      - 'audits/pendidikan_moral_visual30_y5_u05_u14_20261105.json'
+      - 'audits/pendidikan_moral_visual30_y4_u05_u14_20261105.json'
       - 'audits/pendidikan_moral_visual27_y3_u06_u14_20261105.json'
       - 'audits/pendidikan_moral_visual27_y2_u06_u14_20261105.json'
       - 'audits/pendidikan_moral_visual21_unit1_unit5_20261105.json'
       - 'scripts/check_moral_96h_planning.py'
       - 'scripts/check_moral_official_dskp_350sp.py'
       - 'scripts/audit_moral_480_individual_evidence.py'
+      - 'scripts/check_moral_y6_visual24_20261105.py'
+      - 'audits/pendidikan_moral_y6_visual24_units05_13_20261105.json'
       - 'audits/pendidikan_moral_official_dskp_350sp_fingerprints_20261105.json'
       - 'scripts/check_moral_96_downloads.py'
       - 'scripts/check_pm_v2600_stage_parity.py'
@@ -104,6 +116,12 @@ jobs:
         run: python scripts/check_moral_visual27_y2_20261105.py
       - name: Verify 27 Year3 source-book matched Moral RPH against real scanned activity pages
         run: python scripts/check_moral_visual27_y3_20261105.py
+      - name: Verify 30 Moral Year4 book-linked RPH against original scanned activities
+        run: python scripts/check_moral_visual30_y4_20261105.py
+      - name: Check 30 Year5 RPH against original scanned book activities and DSKP SP
+        run: python scripts/check_moral_visual30_y5_20261105.py
+      - name: Validate 24 Year6 RPH individually against scanned book tasks and DSKP SP
+        run: python scripts/check_moral_y6_visual24_20261105.py
       - name: Verify 350 SP against five original KPM DSKP PDFs and 70 book-opening headings
         run: python scripts/check_moral_official_dskp_350sp.py
       - name: Verify 96-hour planning slots without treating extra sessions as READY

@@ -72,7 +72,7 @@ class Lesson30AudioEvidence(unittest.TestCase):
         self.assertIn("CD1 Track 29",src)
         self.assertIn("CD2 Track 29",src)
         self.assertIn("NOT READY FOR RELEASE",src)
-        self.assertIn("Workbook p.15, Activity 3",src)
+        self.assertRegex(src, r"Workbook p\.15,?\s+Activity 3")
         self.assertNotIn("Workbook p.14, Activity 1",src)
         self.assertIn("CD1 Track 30",src)  # workbook activity 1 is not assigned
         old={"TARIKH":"04/11/2026",
