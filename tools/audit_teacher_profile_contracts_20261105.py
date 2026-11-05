@@ -1,18 +1,11 @@
-"""Print only static fragments of app.py about Telegram teacher profile/timetable.
-
-No Telegram bot/network calls, no DB mutations.
-"""
+"""Static review of webhook and text dispatch for an isolated school edit."""
 from pathlib import Path
-p=Path("app.py");lines=p.read_text("utf-8").splitlines()
-ranges=[
- (12408,12696),(14578,14647),(15979,16035),
- (39409,39452),(39687,39733),(39789,39829),
- (40551,40640),(46925,47024)
-]
-for start,end in ranges:
+lines=Path("app.py").read_text("utf-8").splitlines()
+for start,end in ((15999,16096),(37774,37843),(6320,6395),
+                  (39610,39665),(12690,12780)):
  print("SECTION",start,end)
  for i in range(start-1,min(end,len(lines))):
   line=lines[i]
-  if any(x in line.upper() for x in ("TOKEN=", "SECRET=", "API_KEY=", "BOT_TOKEN", "PASSWORD=")):
-    print(f"{i+1}: [CONFIG REDACTED]");continue
-  print(f"{i+1}: {line[:200]}")
+  if any(w in line.upper() for w in ("TOKEN=", "SECRET=", "API_KEY=", "BOT_TOKEN", "PASSWORD=")):
+   continue
+  print(f"{i+1}: {line[:230]}")
