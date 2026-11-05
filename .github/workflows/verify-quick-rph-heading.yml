@@ -1,0 +1,24 @@
+name: Verify RPH selection step title
+on:
+  push:
+    branches: [hotfix/rename-quick-rph-heading-20261105]
+  pull_request:
+    paths:
+      - app.py
+      - tests/test_quick_rph_heading_20261105.py
+      - .github/workflows/verify-quick-rph-heading.yml
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check source and title-only change
+        run: |
+          python -m py_compile app.py
+          python -m unittest discover -s tests -p 'test_quick_rph_heading_20261105.py' -v
