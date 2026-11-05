@@ -3,7 +3,7 @@
    The browser never sees service keys or chooses a Telegram user ID. */
 const teacherProfileState = {
   loaded: false, profileVersion: "", timetableVersion: "",
-  classNames: [], savedPeriods: 0,
+  classNames: [], savedPeriods: 0, savedProfile: null, savedTimetable: null,
 };
 const teacherDays = ["Isnin","Selasa","Rabu","Khamis","Jumaat","Sabtu","Ahad"];
 const profileForm = document.getElementById("teacher-profile-form");
@@ -13,6 +13,32 @@ const timetableMessage = document.getElementById("timetable-save-status");
 const profileSaveButton = document.getElementById("profile-save");
 const timetableSaveButton = document.getElementById("timetable-save");
 const timetableAddButton = document.getElementById("timetable-add");
+
+function profileEditorData() {
+  return {
+    display_name: document.getElementById("profile-name").value.trim(),
+    school_name: document.getElementById("profile-school").value.trim(),
+    state_name: document.getElementById("profile-state").value,
+    class_names: teacherClassLines(),
+  };
+}
+function hasUnsavedTeacherChanges() {
+  if (!teacherProfileState.loaded) return false;
+  return JSON.stringify(profileEditorData()) !== teacherProfileState.savedProfile ||
+         JSON.stringify(timetableValueRows()) !== teacherProfileState.savedTimetable;
+}
+async function refreshTeacherProfile() {
+  if (hasUnsavedTeacherChanges() &&
+      !window.confirm("Ada maklumat belum disimpan. Teruskan segar semula?")) return;
+  await loadTeacherProfile();
+}
+document.getElementById("profile-refresh").addEventListener("click", refreshTeacherProfile);
+document.querySelector('[data-web-view="account"]').addEventListener("click", () => {
+  if (!hasUnsavedTeacherChanges()) loadTeacherProfile();
+});
+document.querySelector('[data-web-view="rph"]').addEventListener("click", () => {
+  if (typeof loadTeacherClasses === "function") loadTeacherClasses();
+});
 
 function teacherClassLines() {
   return document.getElementById("profile-classes").value.split(/\r?\n/)
@@ -109,8 +135,8 @@ async function teacherApi(url, method, body) {
 async function loadTeacherProfile() {
   teacherProfileState.loaded=false;
   setTeacherProfileButtons(false);
-  profileMessage.textContent="Memuatkan profil daripada Supabase…";
-  timetableMessage.textContent="Memuatkan jadual daripada Supabase…";
+  profileMessage.textContent="Memuatkan maklumat guru…";
+  timetableMessage.textContent="Memuatkan jadual mengajar…";
   try {
     const result=await teacherApi("/api/web/teacher/profile","GET");
     if(!result.profile || !result.timetable || !Array.isArray(result.profile.class_names)
@@ -124,6 +150,8 @@ async function loadTeacherProfile() {
     teacherProfileState.profileVersion=profile.version || "";
     teacherProfileState.timetableVersion=timetable.version || "";
     teacherProfileState.savedPeriods=timetable.entries.length;
+    teacherProfileState.savedProfile=JSON.stringify(profileEditorData());
+    teacherProfileState.savedTimetable=JSON.stringify(timetableValueRows());
     renderTeacherTimetable(timetable.entries);
     teacherProfileState.loaded=true;
     setTeacherProfileButtons(true);
@@ -156,6 +184,8 @@ profileForm.addEventListener("submit", async event => {
     const result=await teacherApi("/api/web/teacher/profile","PUT",body);
     if(!result.saved || typeof result.version!=="string")throw new Error("Pengesahan simpan tidak lengkap.");
     teacherProfileState.profileVersion=result.version;
+    teacherProfileState.timetableVersion=result.version;
+    teacherProfileState.savedProfile=JSON.stringify(profileEditorData());
     teacherProfileState.classNames=class_names;
     renderTeacherTimetable(timetableValueRows());
     if(typeof loadTeacherClasses==="function")loadTeacherClasses();
@@ -201,8 +231,10 @@ timetableSaveButton.addEventListener("click",async() => {
     });
     if(!result.saved || typeof result.version!=="string")throw new Error("Pengesahan simpan tidak lengkap.");
     teacherProfileState.timetableVersion=result.version;
+    teacherProfileState.profileVersion=result.version;
+    teacherProfileState.savedTimetable=JSON.stringify(entries);
     teacherProfileState.savedPeriods=entries.length;
-    timetableMessage.textContent=entries.length+" waktu berjaya disimpan dalam Supabase.";
+    timetableMessage.textContent=entries.length+" waktu berjaya disimpan. Jadual ini turut tersedia di Telegram.";
   }catch(err){
     timetableMessage.textContent=err.message;
   }finally{
