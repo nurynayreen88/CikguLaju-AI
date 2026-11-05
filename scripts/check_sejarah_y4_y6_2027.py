@@ -47,6 +47,8 @@ for y, (num_sk, num_sp) in EXPECTED.items():
             assert ev["pages"] == target["pages"] and ev["sources"] == target["sources"]
             assert ev["level"] == target["evidence"]
             assert ev["teacher_validated"] is False and ev["exact_textbook_activity_approved"] is False
+            assert ev["actual_textbook_visual_page_checked"] is False
+            assert ev["textbook_html_page_text_read"] is (y == 5)
             assert r["status"].startswith("DRAF")
             assert r["aktiviti_1"]["activity"] != r["aktiviti_2"]["activity"]
         bt = r["textbook_reference"]

@@ -91,7 +91,8 @@
           ],
           "teacher_validated": false,
           "actual_textbook_visual_page_checked": false,
-          "exact_textbook_activity_approved": false
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false
         }
       },
       "weeks": {
@@ -187,7 +188,8 @@
           ],
           "teacher_validated": false,
           "actual_textbook_visual_page_checked": false,
-          "exact_textbook_activity_approved": false
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false
         }
       },
       "weeks": {
@@ -282,7 +284,8 @@
           ],
           "teacher_validated": false,
           "actual_textbook_visual_page_checked": false,
-          "exact_textbook_activity_approved": false
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false
         }
       },
       "weeks": {
