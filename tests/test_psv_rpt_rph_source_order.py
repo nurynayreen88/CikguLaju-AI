@@ -732,6 +732,23 @@ class PSVSourceOrderTests(unittest.TestCase):
         for unit, term in ((2, "bekas air comel"), (6, "kain putih"), (7, "topeng serkup")):
             self.assertIn(term, canon["years"]["2"]["units"][unit-1][6].lower())
 
+    def test_year2_all_42_lesson_textbook_text_source_links_and_project_pages(self):
+        """Y2 content has been individually reviewed against textbook text, not visually certified."""
+        audit = read_csv(ROOT / "rph_standalone/psv/audits/psv_individual_210_review_20261105.csv")
+        y2 = [row for row in audit if row["Tahun"] == "2"]
+        self.assertEqual(len(y2), 42)
+        for row in y2:
+            with self.subTest(pdp=row["PdP"]):
+                self.assertNotIn("UNIT_BUKU_ASAL_DIRUJUK", row["Bukti_buku"])
+                self.assertNotEqual(row["Kelulusan_terbit"], "PASSED")
+                self.assertTrue(row["Nota_semakan_terbuka"])
+        rows = read_csv(PSV / "RPT_PSV_Tahun_2_2027_DRAF.csv")
+        for n, page in ((20, "4–5"), (21, "4–5"), (41, "46–47"), (42, "46–47")):
+            self.assertIn(page, rows[n-1]["BT muka surat"])
+            body = (ROOT / f"rph_standalone/psv/year2/lesson_{n:03d}.md").read_text(encoding="utf-8")
+            self.assertIn("ms " + page, body)
+        self.assertTrue(all(row["Status"] == "DRAF_SEMAK" for row in rows))
+
     def test_year2_real_stabail_piala_and_rope_axle_gasing(self):
         """Book makes two-cup paper trophy and centrally balanced cardboard spinning top."""
         rows = read_csv(PSV / "RPT_PSV_Tahun_2_2027_DRAF.csv")
