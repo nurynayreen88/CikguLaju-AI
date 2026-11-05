@@ -1,0 +1,30 @@
+name: Web and Telegram shared 10 RPH trial QA
+on:
+  push:
+    branches: [feature/web-shared-ten-free-rph-20261106]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          pip install 'flask==3.1.3' 'requests==2.32.3' 'python-docx==1.2.0' 'lxml==6.0.2' 'reportlab==4.4.9' 'pypdf==6.1.3' 'Pillow==11.3.0' 'playwright==1.55.0'
+          python -m playwright install --with-deps chromium
+      - run: python -m py_compile web/unified_rph_web.py web_v1_telegram_auth_routes.py web/rph_delivery_quota.py web/shared_trial_rpc.py
+      - run: python -m unittest discover -s tests -p test_web_shared_ten_rph_trial.py -v
+      - run: python -m unittest discover -s tests -p test_web_v1_telegram_auth_routes.py -v
+      - run: python -m unittest discover -s tests -p test_web_v1_supabase_account_adapter.py -v
+      - run: python -m unittest discover -s tests -p test_web_rph_availability.py -v
+      - run: python -m unittest discover -s tests -p test_web_unified_rph_preview.py -v
+      - run: python -m unittest discover -s tests -p test_web_native_telegram_rph_download.py -v
+      - run: python -m unittest discover -s tests -p test_web_rph_meta_browser.py -v
+      - run: python -m unittest discover -s tests -p test_web_trial_browser.py -v
+      - run: python -m unittest discover -s tests -p test_web_payment_proof_first.py -v
+      - run: python -m unittest discover -s tests -p test_web_rpt_2027_all.py -v
