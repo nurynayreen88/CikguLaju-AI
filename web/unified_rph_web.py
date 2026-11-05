@@ -282,7 +282,8 @@ def verified_preview(year, subject, unit, token, component=None):
 
 def _selection():
     required = {"year", "subject", "unit", "lesson"}
-    extras = {"teacher_class", "teacher_date", "teacher_time"}
+    extras = {"teacher_class", "teacher_date", "teacher_time",
+              "teacher_start", "teacher_end", "teacher_students"}
     keys = set(request.args)
     if not required.issubset(keys) or not keys.issubset(required | extras | {"component"}):
         raise ValueError("Unexpected selection keys")
@@ -304,11 +305,14 @@ def _selection():
 
 
 def _teacher_context():
-    """Strictly validated printable fields, never used for authentication or RPH mapping."""
+    """Strict printable teacher fields; no change to auth, Lesson or payment."""
     cls = request.args.get("teacher_class", "")
     dt = request.args.get("teacher_date", "")
-    tm = request.args.get("teacher_time", "")
-    if any(not isinstance(x, str) for x in (cls, dt, tm)):
+    old_time = request.args.get("teacher_time", "")
+    start = request.args.get("teacher_start", "")
+    end = request.args.get("teacher_end", "")
+    students = request.args.get("teacher_students", "")
+    if any(not isinstance(x, str) for x in (cls, dt, old_time, start, end, students)):
         raise ValueError("Invalid printable fields")
     if cls and (len(cls) > 40 or not re.fullmatch(r"[\w .\-/()]+", cls, re.UNICODE)
                 or not cls.strip()):
@@ -319,13 +323,32 @@ def _teacher_context():
         parsed = date.fromisoformat(dt)
         if not 2025 <= parsed.year <= 2031:
             raise ValueError("Date outside supported range")
-    if tm:
-        if not re.fullmatch(r"\d{2}:\d{2}(?:\s*-\s*\d{2}:\d{2})?", tm):
-            raise ValueError("Invalid time")
-        import datetime
-        for piece in re.split(r"\s*-\s*", tm):
-            datetime.datetime.strptime(piece, "%H:%M")
-    return {"class": cls.strip(), "date": dt, "time": tm}
+
+    def valid_clock(value):
+        return bool(re.fullmatch(r"(?:[01]\d|2[0-3]):[0-5]\d", value))
+
+    # Existing clients still use teacher_time; new clients must supply both
+    # start/end. Do not silently accept a single endpoint or inverted times.
+    if old_time and (start or end):
+        raise ValueError("Ambiguous time fields")
+    if start or end:
+        if not (valid_clock(start) and valid_clock(end) and start < end):
+            raise ValueError("Start/end time must be a valid increasing range")
+        tm = start + " - " + end
+    else:
+        tm = old_time
+        if tm:
+            parts = re.split(r"\s*-\s*", tm)
+            if len(parts) not in (1, 2) or not all(valid_clock(piece) for piece in parts):
+                raise ValueError("Invalid time")
+            if len(parts) == 2:
+                if parts[0] >= parts[1]:
+                    raise ValueError("Invalid time range")
+                tm = parts[0] + " - " + parts[1]
+    if students:
+        if not re.fullmatch(r"[1-9][0-9]{0,2}", students) or not 1 <= int(students) <= 200:
+            raise ValueError("Invalid number of pupils")
+    return {"class": cls.strip(), "date": dt, "time": tm, "students": students}
 
 
 def _docx(data):
