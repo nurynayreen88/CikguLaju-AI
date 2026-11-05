@@ -46692,8 +46692,7 @@ def menu(cid, show_persistent=False):
     if show_persistent:
         install_menu_button(cid)
     kb = [
-        [{'text':'📚 SEDIAKAN BAHAN PdP','callback_data':'quick'}],
-        [{'text':'⚡ RPH HARI INI','callback_data':'todayrph272'}],
+        [{'text':'📚 SEDIAKAN RPH','callback_data':'quick'}],
         [{'text':'📅 RPT 2027','callback_data':'rpt2027_home'}],
         [{'text':'👤 PROFIL SAYA','callback_data':'account'}],
         [{'text':'🏆 Jadi Rakan Pembangun','callback_data':'pioneer_join'}],
@@ -46712,8 +46711,7 @@ def menu(cid, show_persistent=False):
         '🚀 <b>CIKGULAJU AI</b>\n<i>Pembantu pintar persediaan PdP guru.</i>\n\n'
         '🚧 <b>STATUS: DALAM PEMBANGUNAN</b>\n'
         'Fungsi dan kandungan sedang dilengkapkan secara berperingkat.\n\n'
-        '📚 <b>SEDIAKAN BAHAN PdP</b>\nPilih subjek & PdP untuk sediakan RPH dan bahan berkaitan.\n\n'
-        '⚡ <b>RPH HARI INI</b>\nCadangan RPH berdasarkan RPT/SOW, negeri dan jadual cikgu.\n\n'
+        '📚 <b>SEDIAKAN RPH</b>\nPilih Tahun → Subjek → Unit/Tajuk → Lesson/PdP, kemudian pilih RPH (PDF/Word).\n\n'
         '📅 <b>RPT 2027</b>\nRancangan Pengajaran Tahunan 2027 mengikut tahun, subjek dan Kumpulan A/B.\n\n'
         '👤 <b>PROFIL SAYA</b>\nUrus kelas, jadual waktu dan maklumat cikgu.\n\n'
         '🏆 <b>JADI RAKAN PEMBANGUN</b>\nPeluang menjadi Rakan Pembangun sepanjang tempoh pembangunan. Akses sepanjang CikguLaju AI beroperasi tanpa bayaran langganan bulanan atau tahunan.\n\n'
@@ -47003,3 +47001,24 @@ def callback(cid, d):
         print('English supplementary download failed:', repr(exc), flush=True)
         return send(cid, 'Muat turun worksheet gagal. Sila cuba semula.')
 # === END ENGLISH Y4 SUPPLEMENTARY WORKSHEET DELIVERY ===
+
+
+# === TEMPORARY RPH HARI INI PAUSE: 2026-11-05 ===
+# Keep the underlying RPH Hari Ini code and timetable records unchanged.
+# Old Telegram inline buttons are safely redirected to manual RPH selection.
+CIKGULAJU_RPH_HARI_INI_PAUSED_20261105 = True
+_RPH_HARI_INI_PREVIOUS_CALLBACK_20261105 = callback
+def callback(cid, d):
+    value = str(d or '')
+    if CIKGULAJU_RPH_HARI_INI_PAUSED_20261105 and (
+            value == 'todayrph272'
+            or value.startswith(('todaybatch273_', 'daily292_',
+                                 'quicknext275_', 'quickpick275_',
+                                 'quickapply276_'))):
+        return send(cid,
+                    '⚠️ RPH Hari Ini direhatkan sementara untuk penambahbaikan. '
+                    'Sila gunakan Sediakan RPH dan pilih Tahun, Subjek, Unit/Tajuk serta Lesson/PdP.',
+                    [[{'text': '📚 Sediakan RPH', 'callback_data': 'quick'}],
+                     [{'text': '🏠 Menu Utama', 'callback_data': 'home'}]])
+    return _RPH_HARI_INI_PREVIOUS_CALLBACK_20261105(cid, d)
+# === END TEMPORARY RPH HARI INI PAUSE ===
