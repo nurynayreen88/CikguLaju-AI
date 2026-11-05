@@ -9,13 +9,13 @@
 **SP:** 8.5 — Mengamalkan sikap adil demi kesejahteraan negara.  
 **Fokus:** Tindakan moral dan refleksi  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, jadual hak-keperluan-pembahagian, borang semak; fail `materials/pendidikan_moral/year6/unit_08_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 8, m/s 78–80 (bahagian **Keadilan Ditegakkan Rakyat Sejahtera**); Kad situasi A/B, jadual hak-keperluan-pembahagian, borang semak; fail `materials/pendidikan_moral/year6/unit_08_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid memperagakan tindakan berdasarkan **8.5: Mengamalkan sikap adil demi kesejahteraan negara.** Kriteria kejayaan: Semak senarai pemerhatian perlakuan bagi SP 8.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Warga membincangkan pengagihan kemudahan awam yang saksama**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan bahagian **Keadilan Ditegakkan Rakyat Sejahtera** daripada Buku Teks KSSR Semakan 2017 (DBP 2021), m/s 78, sebagai rangsangan mengikut SP PdP ini. Murid meneliti kandungan buku dan menyatakan satu tindakan atau pertimbangan moral beserta alasan ringkas sebelum memulakan tugasan.
 
 **Aktiviti 1 (20 minit) — Keadilan Ditegakkan Rakyat Sejahtera:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 8, m/s 78–80, bahagian **Keadilan Ditegakkan Rakyat Sejahtera** sebagai rangsangan. Murid merancang simulasi agihan peluang atau giliran yang adil kepada ahli kumpulan yang berbeza keperluan (SP 8.5). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
 

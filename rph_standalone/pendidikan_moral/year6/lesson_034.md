@@ -9,13 +9,13 @@
 **SP:** 12.1 — Memerihalkan contoh kerjasama demi keharmonian negara. | 12.2 — Menjelaskan cara memupuk amalan kerjasama demi keharmonian negara.  
 **Fokus:** Pengetahuan dan cara perlakuan  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, lembaran peranan kumpulan, borang semak; fail `materials/pendidikan_moral/year6/unit_12_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 12, m/s 112–115 (bahagian **Kerjasama Kunci Keharmonian Negara**); Kad situasi A/B, lembaran peranan kumpulan, borang semak; fail `materials/pendidikan_moral/year6/unit_12_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid menyiapkan tugasan **SP 12.1** (Memerihalkan contoh kerjasama demi keharmonian negara.) dan **SP 12.2** (Menjelaskan cara memupuk amalan kerjasama demi keharmonian negara.). Kriteria kejayaan: setiap murid menghasilkan **penerangan dua situasi menggunakan ayat sendiri** bagi SP pertama dan **penjelasan dalam dua ayat serta satu contoh** bagi SP kedua, dengan contoh yang sesuai dengan situasi unit.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Rakyat pelbagai latar belakang menjalankan projek kebajikan bersama**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan bahagian **Kerjasama Kunci Keharmonian Negara** daripada Buku Teks KSSR Semakan 2017 (DBP 2021), m/s 112, sebagai rangsangan mengikut SP PdP ini. Murid meneliti kandungan buku dan menyatakan satu tindakan atau pertimbangan moral beserta alasan ringkas sebelum memulakan tugasan.
 
 **Aktiviti 1 (20 minit) — Kerjasama Kunci Keharmonian Negara:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 12, m/s 112–115, bahagian **Kerjasama Kunci Keharmonian Negara** sebagai rangsangan. Murid memerihalkan tiga contoh kerjasama rakyat dan agensi untuk menjaga keamanan serta kebajikan komuniti tanpa melibatkan murid dalam tindakan berisiko (SP 12.1). Guru menyemak ketepatan evidens individu mengikut kata tugas SP dan memandu pembetulan yang perlu.
 

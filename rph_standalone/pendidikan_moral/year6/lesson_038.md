@@ -9,13 +9,13 @@
 **SP:** 13.3 — Merumuskan kesan pengabaian amalan kesederhanaan demi kesejahteraan negara. | 13.4 — Mengekspresikan perasaan berkaitan dengan amalan kesederhanaan demi kesejahteraan negara.  
 **Fokus:** Penaakulan kesan dan emosi  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, jadual perlu-mahu-pilihan, borang semak; fail `materials/pendidikan_moral/year6/unit_13_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 13, m/s 125–128 (bahagian **Kesihatan Dijaga Negara Sejahtera**); Kad situasi A/B, jadual perlu-mahu-pilihan, borang semak; fail `materials/pendidikan_moral/year6/unit_13_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid menghuraikan atau menilai berdasarkan **13.3: Merumuskan kesan pengabaian amalan kesederhanaan demi kesejahteraan negara.** serta mengekspresikan perasaan bagi **13.4: Mengekspresikan perasaan berkaitan dengan amalan kesederhanaan demi kesejahteraan negara.** Kriteria kejayaan: Semak justifikasi serta dua kesan bagi SP 13.3 dan ayat perasaan yang sesuai bagi SP 13.4.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Komuniti merancang penggunaan sumber negara secara berhemat**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan bahagian **Kesihatan Dijaga Negara Sejahtera** daripada Buku Teks KSSR Semakan 2017 (DBP 2021), m/s 125, sebagai rangsangan mengikut SP PdP ini. Murid meneliti kandungan buku dan menyatakan satu tindakan atau pertimbangan moral beserta alasan ringkas sebelum memulakan tugasan.
 
 **Aktiviti 1 (20 minit) — Kesihatan Dijaga Negara Sejahtera:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 13, m/s 125–128, bahagian **Kesihatan Dijaga Negara Sejahtera** sebagai rangsangan. Murid merumuskan dua kesan jika orang ramai membazir sumber, berbelanja melampau atau mengabaikan amalan kesihatan sederhana (SP 13.3). Guru menyemak ketepatan evidens individu mengikut kata tugas SP dan memandu pembetulan yang perlu.
 

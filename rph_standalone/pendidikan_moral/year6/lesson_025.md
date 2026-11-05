@@ -9,13 +9,13 @@
 **SP:** 9.1 — Menyenaraikan contoh amalan berani mempertahankan maruah negara. | 9.2 — Menghuraikan kepentingan amalan berani mempertahankan maruah negara.  
 **Fokus:** Pengetahuan dan cara perlakuan  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, peta langkah berani yang selamat, borang semak; fail `materials/pendidikan_moral/year6/unit_09_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 9, m/s 82–85 (bahagian **Mempertahankan Maruah Malaysia Tercinta**); Kad situasi A/B, peta langkah berani yang selamat, borang semak; fail `materials/pendidikan_moral/year6/unit_09_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid menyiapkan tugasan **SP 9.1** (Menyenaraikan contoh amalan berani mempertahankan maruah negara.) dan **SP 9.2** (Menghuraikan kepentingan amalan berani mempertahankan maruah negara.). Kriteria kejayaan: setiap murid menghasilkan **senarai tiga contoh atau perkara yang tepat** bagi SP pertama dan **dua huraian yang disokong sebab** bagi SP kedua, dengan contoh yang sesuai dengan situasi unit.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Murid berhadapan maklumat palsu yang menjatuhkan maruah negara**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan bahagian **Mempertahankan Maruah Malaysia Tercinta** daripada Buku Teks KSSR Semakan 2017 (DBP 2021), m/s 82, sebagai rangsangan mengikut SP PdP ini. Murid meneliti kandungan buku dan menyatakan satu tindakan atau pertimbangan moral beserta alasan ringkas sebelum memulakan tugasan.
 
 **Aktiviti 1 (20 minit) — Mempertahankan Maruah Malaysia Tercinta:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 9, m/s 82–85, bahagian **Mempertahankan Maruah Malaysia Tercinta** sebagai rangsangan. Murid menyenaraikan tiga contoh keberanian yang berhemah untuk mempertahankan maruah negara tanpa membahayakan diri atau membuli orang lain (SP 9.1). Guru menyemak ketepatan evidens individu mengikut kata tugas SP dan memandu pembetulan yang perlu.
 

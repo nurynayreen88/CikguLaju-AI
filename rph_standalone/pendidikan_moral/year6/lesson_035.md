@@ -9,13 +9,13 @@
 **SP:** 12.3 — Menghuraikan kepentingan amalan kerjasama demi keharmonian negara. | 12.4 — Mengekspresikan perasaan berkaitan dengan amalan kerjasama demi keharmonian negara.  
 **Fokus:** Penaakulan kesan dan emosi  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, lembaran peranan kumpulan, borang semak; fail `materials/pendidikan_moral/year6/unit_12_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 12, m/s 116–118 (bahagian **Projek Kerjasama**); Kad situasi A/B, lembaran peranan kumpulan, borang semak; fail `materials/pendidikan_moral/year6/unit_12_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid menghuraikan atau menilai berdasarkan **12.3: Menghuraikan kepentingan amalan kerjasama demi keharmonian negara.** serta mengekspresikan perasaan bagi **12.4: Mengekspresikan perasaan berkaitan dengan amalan kerjasama demi keharmonian negara.** Kriteria kejayaan: Semak justifikasi serta dua kesan bagi SP 12.3 dan ayat perasaan yang sesuai bagi SP 12.4.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Rakyat pelbagai latar belakang menjalankan projek kebajikan bersama**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan bahagian **Projek Kerjasama** daripada Buku Teks KSSR Semakan 2017 (DBP 2021), m/s 116, sebagai rangsangan mengikut SP PdP ini. Murid meneliti kandungan buku dan menyatakan satu tindakan atau pertimbangan moral beserta alasan ringkas sebelum memulakan tugasan.
 
 **Aktiviti 1 (20 minit) — Projek Kerjasama:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 12, m/s 116–118, bahagian **Projek Kerjasama** sebagai rangsangan. Murid menghuraikan dua kepentingan kerja bersama ketika berhadapan isu masyarakat, termasuk bantuan bencana yang dirancang dengan selamat (SP 12.3). Guru menyemak ketepatan evidens individu mengikut kata tugas SP dan memandu pembetulan yang perlu.
 

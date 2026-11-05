@@ -9,13 +9,13 @@
 **SP:** 13.5 — Mengamalkan sikap bersederhana demi kesejahteraan negara.  
 **Fokus:** Tindakan moral dan refleksi  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, jadual perlu-mahu-pilihan, borang semak; fail `materials/pendidikan_moral/year6/unit_13_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 13, m/s 128–130 (bahagian **Kesederhanaan Diamalkan Kesejahteraan Negara Dikecapi**); Kad situasi A/B, jadual perlu-mahu-pilihan, borang semak; fail `materials/pendidikan_moral/year6/unit_13_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid memperagakan tindakan berdasarkan **13.5: Mengamalkan sikap bersederhana demi kesejahteraan negara.** Kriteria kejayaan: Semak senarai pemerhatian perlakuan bagi SP 13.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Komuniti merancang penggunaan sumber negara secara berhemat**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan bahagian **Kesederhanaan Diamalkan Kesejahteraan Negara Dikecapi** daripada Buku Teks KSSR Semakan 2017 (DBP 2021), m/s 128, sebagai rangsangan mengikut SP PdP ini. Murid meneliti kandungan buku dan menyatakan satu tindakan atau pertimbangan moral beserta alasan ringkas sebelum memulakan tugasan.
 
 **Aktiviti 1 (20 minit) — Kesederhanaan Diamalkan Kesejahteraan Negara Dikecapi:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 13, m/s 128–130, bahagian **Kesederhanaan Diamalkan Kesejahteraan Negara Dikecapi** sebagai rangsangan. Murid merangka pelan penggunaan air dan kertas yang sederhana di kelas dengan sasaran boleh diukur tanpa mengawal pilihan peribadi murid (SP 13.5). Guru menyemak ketepatan evidens individu mengikut kata tugas SP dan memandu pembetulan yang perlu.
 

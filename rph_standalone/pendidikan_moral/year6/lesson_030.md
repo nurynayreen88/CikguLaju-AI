@@ -9,13 +9,13 @@
 **SP:** 10.5 — Mengamalkan sikap jujur demi kesejahteraan negara.  
 **Fokus:** Tindakan moral dan refleksi  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, jadual fakta-andaian-laporan, borang semak; fail `materials/pendidikan_moral/year6/unit_10_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 10, m/s 98–100 (bahagian **Kejujuran Membawa Tuah**); Kad situasi A/B, jadual fakta-andaian-laporan, borang semak; fail `materials/pendidikan_moral/year6/unit_10_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid memperagakan tindakan berdasarkan **10.5: Mengamalkan sikap jujur demi kesejahteraan negara.** Kriteria kejayaan: Semak senarai pemerhatian perlakuan bagi SP 10.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Seorang warga perlu bersikap jujur ketika menggunakan perkhidmatan awam**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan bahagian **Kejujuran Membawa Tuah** daripada Buku Teks KSSR Semakan 2017 (DBP 2021), m/s 98, sebagai rangsangan mengikut SP PdP ini. Murid meneliti kandungan buku dan menyatakan satu tindakan atau pertimbangan moral beserta alasan ringkas sebelum memulakan tugasan.
 
 **Aktiviti 1 (20 minit) — Kejujuran Membawa Tuah:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 10, m/s 98–100, bahagian **Kejujuran Membawa Tuah** sebagai rangsangan. Murid merangka dialog bersikap jujur apabila tersalah lapor maklumat atau menjumpai barang bukan milik sendiri (SP 10.5). Guru menyemak ketepatan evidens individu mengikut kata tugas SP dan memandu pembetulan yang perlu.
 

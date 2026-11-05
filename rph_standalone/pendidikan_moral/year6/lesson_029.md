@@ -9,13 +9,13 @@
 **SP:** 10.3 — Merumuskan kesan pengabaian sikap jujur demi kesejahteraan negara. | 10.4 — Mengekspresikan perasaan berkaitan dengan sikap jujur demi kesejahteraan negara.  
 **Fokus:** Penaakulan kesan dan emosi  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, jadual fakta-andaian-laporan, borang semak; fail `materials/pendidikan_moral/year6/unit_10_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 10, m/s 96–98 (bahagian **Kesan Pengabaian Kejujuran**); Kad situasi A/B, jadual fakta-andaian-laporan, borang semak; fail `materials/pendidikan_moral/year6/unit_10_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid menghuraikan atau menilai berdasarkan **10.3: Merumuskan kesan pengabaian sikap jujur demi kesejahteraan negara.** serta mengekspresikan perasaan bagi **10.4: Mengekspresikan perasaan berkaitan dengan sikap jujur demi kesejahteraan negara.** Kriteria kejayaan: Semak justifikasi serta dua kesan bagi SP 10.3 dan ayat perasaan yang sesuai bagi SP 10.4.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Seorang warga perlu bersikap jujur ketika menggunakan perkhidmatan awam**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan bahagian **Kesan Pengabaian Kejujuran** daripada Buku Teks KSSR Semakan 2017 (DBP 2021), m/s 96, sebagai rangsangan mengikut SP PdP ini. Murid meneliti kandungan buku dan menyatakan satu tindakan atau pertimbangan moral beserta alasan ringkas sebelum memulakan tugasan.
 
 **Aktiviti 1 (20 minit) — Kesan Pengabaian Kejujuran:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 10, m/s 96–98, bahagian **Kesan Pengabaian Kejujuran** sebagai rangsangan. Murid merumuskan dua akibat penipuan atau penyalahgunaan amanah terhadap individu dan negara dengan peta sebab-akibat (SP 10.3). Guru menyemak ketepatan evidens individu mengikut kata tugas SP dan memandu pembetulan yang perlu.
 

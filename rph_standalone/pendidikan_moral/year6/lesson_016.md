@@ -9,13 +9,13 @@
 **SP:** 6.1 — Memberi contoh identiti negara. | 6.2 — Menghuraikan cara menghormati identiti negara.  
 **Fokus:** Pengetahuan dan cara perlakuan  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, jadual tindakan menghormati, borang semak; fail `materials/pendidikan_moral/year6/unit_06_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 6, m/s 52–55 (bahagian **Identiti Negara Kebanggaan Kita**); Kad situasi A/B, jadual tindakan menghormati, borang semak; fail `materials/pendidikan_moral/year6/unit_06_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid menyiapkan tugasan **SP 6.1** (Memberi contoh identiti negara.) dan **SP 6.2** (Menghuraikan cara menghormati identiti negara.). Kriteria kejayaan: setiap murid menghasilkan **dua contoh atau jawapan konkrit** bagi SP pertama dan **dua huraian yang disokong sebab** bagi SP kedua, dengan contoh yang sesuai dengan situasi unit.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Murid mempersiapkan pameran tentang identiti kebangsaan**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan bahagian **Identiti Negara Kebanggaan Kita** daripada Buku Teks KSSR Semakan 2017 (DBP 2021), m/s 52, sebagai rangsangan mengikut SP PdP ini. Murid meneliti kandungan buku dan menyatakan satu tindakan atau pertimbangan moral beserta alasan ringkas sebelum memulakan tugasan.
 
 **Aktiviti 1 (20 minit) — Identiti Negara Kebanggaan Kita:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 6, m/s 52–55, bahagian **Identiti Negara Kebanggaan Kita** sebagai rangsangan. Murid menamakan tiga identiti Malaysia seperti Jalur Gemilang, Rukun Negara dan lagu kebangsaan daripada bahan unit ini (SP 6.1). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
 
