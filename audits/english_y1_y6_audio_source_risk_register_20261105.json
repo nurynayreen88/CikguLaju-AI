@@ -16,14 +16,14 @@
       "year": 2,
       "sow": "1s9lRNUtBLQgjzoQZIRPy-RzSXu0vf8Gc",
       "teacher_book": "1-tfy1OH9Cjsg5YLZOyBOY8PM5DLCQU2g",
-      "audit_level": "SOW_160; Year2 L26 source RPH references SB p70 CD2 Tracks35/36 but original TB scanning/Telegram file check pending",
+      "audit_level": "SOW_160; Year2 L26 original Super Minds 1 TB T70 visually confirms SB p70 Activity1 CD2 Track35 and Activity2 CD2 Track36; 2 matching original WMA Drive files SHA256/codec checked; speech and Telegram route still unverified",
       "audio_source": "Super Minds 1 Audio Unzipped (candidate folder, 3 discs of WMA)"
     },
     {
       "year": 3,
       "sow": "1_-uNQsXiNfuorjMD1ObUUhmCi_L1i3L5",
       "teacher_book": "10Cw_yGvWayaWE2jROAnHKheuhC7wCmgh",
-      "audit_level": "SOW_160; sparse/no printed CD/Track numbers; RPH Lesson93 cites CD1 Track97 but actual delivery recheck pending",
+      "audit_level": "SOW_160; Year3 L93 original Get Smart Plus 3 TB printed p96 (PDF index97) visually confirms Track97 and SB p61 Tony's pizza; printed TB does not specify CD disc; original audio ID, delivery and speech still unverified",
       "audio_source": "Get Smart Plus 3 CD map in DB needs direct materialization/source verification"
     },
     {
@@ -123,16 +123,18 @@
       "severity": "review",
       "year": 2,
       "lesson": 26,
-      "exact_issue": "CikguLaju RPH currently cites Super Minds1 SB p70, TB T70 CD2 Tracks35/36; SOW lacks numbered CD reference; physical TB and actual Telegram mapping still to be checked.",
-      "status": "RPH_CITATION_ONLY"
+      "exact_issue": "Original Super Minds 1 TB printed T70 (PDF 0-based index151) confirms SB p70 Activity1 CD2 Track35 and Activity2 CD2 Track36. Matching CD2-35.wma/CD2-36.wma original Drive assets and codec/hashes confirmed; correct audio speech and actual deployed Telegram route unverified.",
+      "status": "ORIGINAL_TB_AND_FILE_METADATA_VERIFIED_SPEECH_AND_TELEGRAM_PENDING",
+      "evidence_path": "audits/english_y2_l026_y3_l093_direct_tb_audio_check_20261105.json"
     },
     {
       "id": "Y3_L93_TRACK97_RECHECK",
       "severity": "review",
       "year": 3,
       "lesson": 93,
-      "exact_issue": "CikguLaju RPH cites Get Smart Plus3 SB p61 TB pp96-97 CD1 Track97; SOW has no numbered CD reference for the Lesson. Earlier user reports of wrong SB/audio mapping need material-to-actual-file check.",
-      "status": "RPH_CITATION_ONLY"
+      "exact_issue": "Original Get Smart Plus 3 TB printed p96 (PDF 0-based index97) verifies Activity1 Track97 with SB p61 Tony's favourite pizza. TB says Track97 without explicit CD1 label; RPH CD1 attribution, original Drive track ID, prior mismatched audio report and actual Telegram mapping remain unchecked.",
+      "status": "ORIGINAL_TB_TRACK97_VERIFIED_DISC_FILE_AND_TELEGRAM_PENDING",
+      "evidence_path": "audits/english_y2_l026_y3_l093_direct_tb_audio_check_20261105.json"
     }
   ],
   "limitations": [
