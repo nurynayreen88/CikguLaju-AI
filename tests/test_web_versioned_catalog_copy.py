@@ -89,11 +89,12 @@ class WebVersionedCopyTests(unittest.TestCase):
                 self.assertIn("ENGLISH", [row["value"] for row in subjects.json])
                 units = client.get("/api/options?kind=units&year=2&subject=ENGLISH")
                 self.assertEqual(units.status_code, 200)
-                self.assertEqual(units.json[0]["value"], "My Friends")
+                # English uses exact SOW standalone lesson numbers, never a broad RPT row ID.
+                self.assertEqual(units.json[0]["value"], "Introduction")
                 lessons = client.get(
-                    "/api/options?kind=pdp&year=2&subject=ENGLISH&unit=My+Friends")
+                    "/api/options?kind=pdp&year=2&subject=ENGLISH&unit=Introduction")
                 self.assertEqual(lessons.status_code, 200)
-                self.assertEqual(lessons.json[0]["value"], "17")
+                self.assertEqual(lessons.json[0]["value"], "e-2-001")
                 state = client.get("/api/source/status")
                 self.assertTrue(state.json["web_copy_verified"])
                 self.assertFalse(state.json["shared_source_verified"])
