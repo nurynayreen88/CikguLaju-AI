@@ -89,6 +89,7 @@ class PSVSourceOrderTests(unittest.TestCase):
             "001": ("8–9", ("kaktus", "silang pangkah", "jingga", "biru"), ("rupa rumah", "garisan laluan")),
             "018": ("50–51", ("sisik ikan", "separa bulat", "kolaj"), ("motif lemon", "templat dompet")),
             "020": ("54–55", ("lemon", "resis", "kad busa", "velkro"), ()),
+            "027": ("62–63", ("loket", "pending", "jalinan sentuh", "imbangan simetri"), ("aksesori kepala",)),
         }
         for pdp, (pages, required, excluded) in cases.items():
             with self.subTest(pdp=pdp):
