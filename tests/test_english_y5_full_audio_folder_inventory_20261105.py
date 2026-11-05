@@ -49,7 +49,7 @@ class YearFiveOriginalAudioFolderInventory(unittest.TestCase):
         risk=next(x for x in RISK["confirmed_risks"]
                   if x["id"]=="Y5_TRACKS_FOUND_NOT_PLAYED")
         self.assertEqual(risk["status"],
-                         "DRIVE_120_MP3_INVENTORY_AND_DUPLICATE_HASH_PASS_AUDIO_SPEECH_AND_TELEGRAM_PENDING")
+                         "SOW_87_OF_87_TRACK_LABELS_AND_DRIVE_IDS_MATCH_CONTENT_AND_TELEGRAM_PENDING")
         for key in ("audio_speech_verified","telegram_active_route_verified",
                     "teacher_approved","final_ready_approved"):
             self.assertIs(DOC[key],False)
