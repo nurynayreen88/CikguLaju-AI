@@ -7,6 +7,8 @@ on:
       - 'web/english_y4_wrong_book_audio_hold_20261105.py'
       - 'tools/run_telegram_with_curriculum_api.py'
       - 'tests/test_english_y4_wrong_book_audio_hold_20261105.py'
+      - 'rph_standalone/english/year4/lesson_029.md'
+      - 'tests/test_english_y4_l029_cd3_printed_reading_ready_audio_hold_20261105.py'
       - 'tools/audit_english_wma_sender_20261105.py'
       - 'tests/test_english_wma_sender_source_contract_20261105.py'
       - 'audits/english_wma_preserve_original_format_decision_20261105.md'
@@ -24,5 +26,6 @@ jobs:
       - run: python tools/audit_english_wma_sender_20261105.py
       - run: python -m unittest discover -s tests -p 'test_english_wma_sender_source_contract_20261105.py' -v
       - run: python -m unittest discover -s tests -p 'test_english_y4_wrong_book_audio_hold_20261105.py' -v
+      - run: python -m unittest discover -s tests -p 'test_english_y4_l029_cd3_printed_reading_ready_audio_hold_20261105.py' -v
       - run: python -m unittest discover -s tests -p 'test_english_y4_l030_audio_guard.py' -v
       - run: python -m unittest discover -s tests -p 'test_english_y4_production_launcher_parity_20261105.py' -v
