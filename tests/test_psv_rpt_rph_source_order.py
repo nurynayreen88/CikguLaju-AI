@@ -438,6 +438,26 @@ class PSVSourceOrderTests(unittest.TestCase):
                 self.assertIn(pages, rows[n-1]["BT muka surat"])
                 self.assertEqual(rows[n-1]["Status"], "DRAF_SEMAK")
 
+    def test_year6_real_textbook_project_pages_not_photo_book(self):
+        """Printed book has exhibition projects p4-5 and p46-49; p88-89 is a photo book."""
+        rows = read_csv(PSV / "RPT_PSV_Tahun_6_2027_DRAF.csv")
+        html = (PSV / "RPT_PSV_Tahun_6_2027_DRAF.html").read_text(encoding="utf-8")
+        for number, page, term in [(24, "4–5", "penggal satu"), (25, "4–5", "penggal satu"),
+                                   (26, "4–5", "penggal satu"), (40, "46–49", "penggal dua"),
+                                   (41, "46–49", "penggal dua"), (42, "46–49", "penggal dua")]:
+            with self.subTest(pdp=number):
+                row = rows[number - 1]
+                raw = (ROOT / f"rph_standalone/psv/year6/lesson_{number:03d}.md").read_text(encoding="utf-8").lower()
+                self.assertIn("ms " + page, raw)
+                self.assertIn(term, raw)
+                self.assertIn("turutan cadangan cikgulaju", raw)
+                self.assertIn(page, row["Rujukan BT ms (RPT 2026)"])
+                self.assertEqual(row["Status"], "DRAF_SEMAK")
+                self.assertIn("<td>" + f"{number:03d}" + "</td>", html)
+                self.assertIn(row["Rujukan BT ms (RPT 2026)"], html)
+        for number in (40, 41, 42):
+            self.assertIn("buku foto ms 88–89", rows[number-1]["Rujukan BT ms (RPT 2026)"].lower())
+
     def test_year5_bunga_kemboja_tekat_is_genuine_couching(self):
         rows = read_csv(PSV / "RPT_PSV_Tahun_5_2027_DRAF.csv")
         keywords = {
