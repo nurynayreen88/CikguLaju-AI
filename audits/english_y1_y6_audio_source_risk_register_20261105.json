@@ -94,7 +94,7 @@
       "id": "Y6_AS5_FOLDER_MISMATCH",
       "severity": "high",
       "year": 6,
-      "exact_issue": "Drive folder Academy_Stars_Year6_Audio contains only folder Academy_Stars_5_Audio_www.frenglish.ru with 51 AS5_Uxx MP3 assets, while SOW specifies Academy Stars Year6.",
+      "exact_issue": "Drive folder Academy_Stars_Year6_Audio contains only folder Academy_Stars_5_Audio_www.frenglish.ru with 49 AS5_Uxx MP3 files and 2 non-audio companion files, while SOW specifies Academy Stars Year6.",
       "folder_ids": [
         "1DsVLNsEMmDy8jceXZYB1VGt5qqIiEDRg",
         "1s-2IuDcPbVBo5LGNF3MxJ91UtoAkhNEi"
