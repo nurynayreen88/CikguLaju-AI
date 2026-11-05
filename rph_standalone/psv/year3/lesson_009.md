@@ -5,18 +5,18 @@
 **SK:** 1.1; 2.1  
 **SP:** 1.1.5; 2.1.2  
 **Rujukan Buku Teks:** Pendidikan Kesenian Tahun 3 (bahagian Seni Visual) ms 22–23 (unit 22-25)  
-**BBM:** span, daun, warna poster, kertas dan selempang kad  
+**BBM:** BT ms 22–23, bendi dan batang saderi prapotong guru, daun, cat poster, kertas sampel dan alas
 **Tempoh:** 60 minit
 
 ## Objektif dan kriteria kejayaan
-Pada akhir PdP, murid dapat mengenal pasti dua bahasa seni dan membanding dua sampel media untuk Aneka Capan. Evidens PBD: dua percubaan media, dua istilah bahasa seni dan satu pemerhatian.
+Murid dapat mengenal rupa dan jalinan melalui sekurang-kurangnya dua capan keratan sayuran. Evidens PBD: Dua sampel capan berlabel dengan perbandingan bentuk dan kontra.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan contoh Aneka Capan dan murid memberi satu pemerhatian tentang bentuk, warna, ruang atau fungsi.
-**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru membuka buku teks ms 22–23 dan menjelaskan rupa, jalinan, kontra dan kepelbagaian motif capan; murid menamakan unsur visual yang dapat diperhatikan.
-**Aktiviti 2 (25 minit) — Amali:** Murid meneroka secara amali: Bandingkan tiga capan daripada daun dan span dan rancang corak berselang-seli. Mereka merekod dua perbezaan hasil dan memilih teknik untuk sesi berikutnya.
-**Pengukuhan/Pentaksiran (10 minit):** Guru menilai dua percubaan media, dua istilah bahasa seni dan satu pemerhatian; murid membandingkan hasil dengan kriteria kejayaan dan membuat pembetulan.
+**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru menunjukkan corak capan daripada keratan bendi dan batang saderi dalam BT ms 22–23 serta menerangkan rupa, jalinan dan kontra.
+**Aktiviti 2 (25 minit) — Amali:** Murid mengecap bendi dan batang saderi prapotong pada dua petak sampel, membanding rupa setiap capan dan memilih motif untuk Selempang Pancar.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menyemak dua sampel capan, kesan jalinan dan satu pemerhatian rupa yang berbeza.
 **Penutup (5 minit):** Murid menyebut satu teknik yang dipelajari; guru membimbing penyimpanan hasil dan pembersihan.
 **Pembezaan:** Kad langkah bergambar untuk sokongan; murid lanjutan menghuraikan pilihan media dan kesan visual.
-**Keselamatan:** Guna alat tumpul, bahan tidak toksik, dan kendalikan gunting atau cantuman di bawah pengawasan.
-**Sumber:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view); [Buku Teks Pendidikan Kesenian Tahun 3 (bahagian Seni Visual)](https://fliphtml5.com/ubcth/flrm/). Langkah ialah adaptasi PdP CikguLaju berpandukan teknik dan unit buku.
+**Keselamatan:** Potongan sayur dan bahan logam hanya disediakan guru; murid menggunakan acuan tumpul, cat tidak toksik dan tidak memakan bahan capan.
+**Sumber:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view); [Buku Teks Pendidikan Kesenian Tahun 3 (bahagian Seni Visual)](https://fliphtml5.com/hkvtu/vifc/Pendidikan_Kesenian_Tahun_3_SK/). Langkah ialah adaptasi PdP CikguLaju berpandukan teknik dan unit buku.
