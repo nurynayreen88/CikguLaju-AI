@@ -1,27 +1,29 @@
 # RPH SEJARAH TAHUN 4 — PdP 009
 
-**Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
+**Status:** DRAF (semakan halaman aktiviti/kelulusan guru belum selesai)  
 **Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-02-28–2027-03-04 | **B:** 2027-03-01–2027-03-05  
-**Tema:** Mari Belajar Sejarah | **Tajuk:** Sejarah Sekolah | **SK:** 1.3  
+**Tema:** Mari Belajar Sejarah | **Tajuk:** Unit 3: Sejarah Sekolah — PdP 009 | **SK:** 1.3  
 **SP:** 1.3.3, K1.3.6 | **Jenis:** PdP Kandungan
 
 **Objektif:**
 - Murid dapat menjelaskan sejarah sekolah.
 
-**Kriteria kejayaan:** Murid menghasilkan respons individu yang memenuhi kata tugas 1.3.3 dan menghubungkan satu nilai sivik.
+**Kriteria kejayaan:** Murid menyiapkan produk 1.3.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.
 
-**BBM:** Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); foto lama sekolah, lencana dan buku tahunan; kad sumber/lembaran bukti.
+**Buku teks dan bahan:** Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 3: Sejarah Sekolah, hlm. 30–43 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; foto lama sekolah, lencana dan buku tahunan; kad sumber/lembaran bukti.
 
-**Set Induksi (5 min):** Guru mempamerkan foto lama sekolah, lencana dan buku tahunan dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami sejarah sekolah?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah.
+**Set Induksi (5 min):** Guru mempamerkan imej, peta atau petikan bertajuk “Sejarah Sekolah” dan menyoal “Apakah yang dapat kita buktikan tentang Sejarah Sekolah daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari. Gunakan contoh rekaan, bukan dokumen identiti murid.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid meneliti foto lama sekolah, lencana dan buku tahunan, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menjelaskan sejarah sekolah.
+**Aktiviti 1 (20 min):** Guru menunjukkan cara mencari maklumat dalam Unit 3, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan sejarah sekolah” dengan contoh daripada sumber.
 
-**Aktiviti 2 (20 min):** Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut sejarah sekolah. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai menjelaskan kepentingan mengiktiraf jasa dan sumbangan sekolah kepada diri serta masyarakat..
+**Aktiviti 2 (20 min):** Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menjelaskan sejarah sekolah, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan kepentingan mengiktiraf jasa dan sumbangan sekolah kepada diri serta masyarakat; jawapan mesti disokong bahan.
 
-**Pengukuhan dan PBD (10 min):** Murid melengkapkan tiket keluar: satu fakta tepat tentang sejarah sekolah, satu bukti daripada bahan, dan satu iktibar (pautan K1.3.6). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham.
+**Pengukuhan dan PBD (10 min):** Murid menyerahkan hasil 1.3.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K1.3.6.
 
-**Penutup (5 min):** Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya.
+**Penutup (5 min):** Guru merumus isi penting Unit 3: Sejarah Sekolah. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini.
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
 
-**Sumber:** DSKP Sejarah Tahun 4 KSSR Semakan 2017; pengesahan halaman buku teks masih diperlukan. Jangan anggap tarikh cadangan sebagai jadual PdP sebenar.
+**Bukti sumber:** https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/ (ISBN 978-983-49-2472-0); isi kandungan membuktikan permulaan unit, BUKAN halaman aktiviti individu.
+
+**Perhatian:** RPH ini ialah draf PdP berpandukan unit dan SP. Tarikh cadangan bukan jadual kelas sebenar; semakan visual aktiviti buku, cuti negeri, dan ujian Word/PDF belum lulus.

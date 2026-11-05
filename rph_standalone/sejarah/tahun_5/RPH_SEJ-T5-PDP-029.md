@@ -1,28 +1,30 @@
 # RPH SEJARAH TAHUN 5 — PdP 029
 
-**Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
+**Status:** DRAF (semakan halaman aktiviti/kelulusan guru belum selesai)  
 **Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-08-08–2027-08-12 | **B:** 2027-08-09–2027-08-13  
-**Tema:** Identiti Negara Kita | **Tajuk:** Lagu Kebangsaan | **SK:** 9.3  
+**Tema:** Identiti Negara Kita | **Tajuk:** Unit 10: Lagu Kebangsaan Malaysia — PdP 029 | **SK:** 9.3  
 **SP:** 9.3.3, 9.3.4, K9.3.7 | **Jenis:** PdP Kandungan
 
 **Objektif:**
 - Murid dapat menerangkan lirik dan maksud lagu Negaraku.
 - Murid dapat menjelaskan etika menyanyikan dan mendengar lagu kebangsaan.
 
-**Kriteria kejayaan:** Murid menghasilkan respons individu yang memenuhi kata tugas 9.3.3, 9.3.4 dan menghubungkan satu nilai sivik.
+**Kriteria kejayaan:** Murid menyiapkan produk 9.3.3–9.3.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.
 
-**BBM:** Buku Teks Sejarah Tahun 5 KSSR Semakan 2017 (halaman perlu disahkan); maklumat sejarah dan etika Lagu Negaraku; kad sumber/lembaran bukti.
+**Buku teks dan bahan:** Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 10: Lagu Kebangsaan Malaysia, hlm. 134–147 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; maklumat sejarah dan etika Lagu Negaraku; kad sumber/lembaran bukti.
 
-**Set Induksi (5 min):** Guru mempamerkan maklumat sejarah dan etika Lagu Negaraku dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami lagu kebangsaan?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah.
+**Set Induksi (5 min):** Guru mempamerkan imej, peta atau petikan bertajuk “Lagu Kebangsaan Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Lagu Kebangsaan Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid meneliti maklumat sejarah dan etika Lagu Negaraku, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menerangkan lirik dan maksud lagu negaraku.
+**Aktiviti 1 (20 min):** Guru menunjukkan cara mencari maklumat dalam Unit 10, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menerangkan lirik dan maksud lagu Negaraku” dengan contoh daripada sumber.
 
-**Aktiviti 2 (20 min):** Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut lagu kebangsaan. Murid menerangkan menjelaskan etika menyanyikan dan mendengar lagu kebangsaan; kemudian mengaitkan nilai menjelaskan kepentingan menghayati dan menjiwai lagu kebangsaan malaysia..
+**Aktiviti 2 (20 min):** Murid menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan etika menyanyikan dan mendengar lagu kebangsaan” dengan contoh daripada sumber, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan kepentingan menghayati dan menjiwai lagu kebangsaan Malaysia; jawapan mesti disokong bahan.
 
-**Pengukuhan dan PBD (10 min):** Murid melengkapkan tiket keluar: satu fakta tepat tentang lagu kebangsaan, satu bukti daripada bahan, dan satu iktibar (pautan K9.3.7). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham.
+**Pengukuhan dan PBD (10 min):** Murid menyerahkan hasil 9.3.3 dan 9.3.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K9.3.7.
 
-**Penutup (5 min):** Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya.
+**Penutup (5 min):** Guru merumus isi penting Unit 10: Lagu Kebangsaan Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini.
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
 
-**Sumber:** DSKP Sejarah Tahun 5 KSSR Semakan 2017; pengesahan halaman buku teks masih diperlukan. Jangan anggap tarikh cadangan sebagai jadual PdP sebenar.
+**Bukti sumber:** https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/ (ISBN 978-983-49-2829-2); isi kandungan membuktikan permulaan unit, BUKAN halaman aktiviti individu.
+
+**Perhatian:** RPH ini ialah draf PdP berpandukan unit dan SP. Tarikh cadangan bukan jadual kelas sebenar; semakan visual aktiviti buku, cuti negeri, dan ujian Word/PDF belum lulus.

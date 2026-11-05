@@ -1,27 +1,29 @@
 # RPH SEJARAH TAHUN 6 — PdP 022
 
-**Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
+**Status:** DRAF (semakan halaman aktiviti/kelulusan guru belum selesai)  
 **Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-06-20–2027-06-24 | **B:** 2027-06-21–2027-06-25  
-**Tema:** Pencapaian dan Kebanggaan Negara | **Tajuk:** Pemimpin Negara di Malaysia | **SK:** 12.1  
+**Tema:** Pencapaian dan Kebanggaan Negara | **Tajuk:** Unit 7: Pemimpin Negara Malaysia — PdP 022 | **SK:** 12.1  
 **SP:** 12.1.1, K12.1.4 | **Jenis:** PdP Kandungan
 
 **Objektif:**
 - Murid dapat menyenaraikan nama-nama dan biodata ringkas Perdana Menteri Malaysia mengikut urutan.
 
-**Kriteria kejayaan:** Murid menghasilkan respons individu yang memenuhi kata tugas 12.1.1 dan menghubungkan satu nilai sivik.
+**Kriteria kejayaan:** Murid menyiapkan produk 12.1.1 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.
 
-**BBM:** Buku Teks Sejarah Tahun 6 KSSR Semakan 2017 (halaman perlu disahkan); garis masa Perdana Menteri Malaysia daripada sumber yang disemak tarikhnya; kad sumber/lembaran bukti.
+**Buku teks dan bahan:** Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 7: Pemimpin Negara Malaysia, hlm. 106–123 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; garis masa Perdana Menteri Malaysia daripada sumber yang disemak tarikhnya; kad sumber/lembaran bukti.
 
-**Set Induksi (5 min):** Guru mempamerkan garis masa Perdana Menteri Malaysia daripada sumber yang disemak tarikhnya dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami pemimpin negara di malaysia?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah.
+**Set Induksi (5 min):** Guru mempamerkan imej, peta atau petikan bertajuk “Pemimpin Negara Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Pemimpin Negara Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid meneliti garis masa Perdana Menteri Malaysia daripada sumber yang disemak tarikhnya, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menyenaraikan nama-nama dan biodata ringkas perdana menteri malaysia mengikut urutan.
+**Aktiviti 1 (20 min):** Guru menunjukkan cara mencari maklumat dalam Unit 7, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan senarai fakta atau nama berserta label dan rujukan bagi fokus “Menyenaraikan nama-nama dan biodata ringkas Perdana Menteri Malaysia mengikut urutan”.
 
-**Aktiviti 2 (20 min):** Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut pemimpin negara di malaysia. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai menyatakan kepentingan pemimpin yang memiliki ciri-ciri kepimpinan yang berwibawa..
+**Aktiviti 2 (20 min):** Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menyenaraikan nama-nama dan biodata ringkas Perdana Menteri Malaysia mengikut urutan, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan kepentingan pemimpin yang memiliki ciri-ciri kepimpinan yang berwibawa; jawapan mesti disokong bahan.
 
-**Pengukuhan dan PBD (10 min):** Murid melengkapkan tiket keluar: satu fakta tepat tentang pemimpin negara di malaysia, satu bukti daripada bahan, dan satu iktibar (pautan K12.1.4). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham.
+**Pengukuhan dan PBD (10 min):** Murid menyerahkan hasil 12.1.1 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K12.1.4.
 
-**Penutup (5 min):** Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya.
+**Penutup (5 min):** Guru merumus isi penting Unit 7: Pemimpin Negara Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini.
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
 
-**Sumber:** DSKP Sejarah Tahun 6 KSSR Semakan 2017; pengesahan halaman buku teks masih diperlukan. Jangan anggap tarikh cadangan sebagai jadual PdP sebenar.
+**Bukti sumber:** https://fliphtml5.com/itcew/pnmn (ISBN 978-983-49-3279-4); isi kandungan membuktikan permulaan unit, BUKAN halaman aktiviti individu.
+
+**Perhatian:** RPH ini ialah draf PdP berpandukan unit dan SP. Tarikh cadangan bukan jadual kelas sebenar; semakan visual aktiviti buku, cuti negeri, dan ujian Word/PDF belum lulus.

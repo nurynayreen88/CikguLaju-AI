@@ -111,3 +111,11 @@ Tahun 6:
 - Kekalkan PR #341 sebagai DRAF staging sehingga ujian Word/PDF, takwim dan Telegram–Web lulus.
 
 **Hak cipta:** Rujukan buku teks adalah untuk pengesahan kandungan; jangan menghos semula buku penuh atau mengedarkan salinan tanpa kebenaran.
+
+## Nota audit 6 November 2026 — bezakan salinan Tahun 6 dengan ISBN
+
+**Rujukan primer KSSR Semakan 2017 yang diutamakan:** Buku Teks Sejarah Tahun 6, Dewan Bahasa dan Pustaka, cetakan pertama 2021, ISBN **978-983-49-3279-4**, https://fliphtml5.com/itcew/pnmn . Isi kandungannya menunjukkan unit bermula pada halaman bercetak: **2, 20, 34, 50, 76, 92, 106, 124, 142, 160**. Ini **SEPADAN dengan inventori awal**. Jangan tukar kepada 2,20,38,54,72,90,108,124,140,158 daripada salinan rehost "Sejarah Tahun 6 SR Kegunaan 2022" yang susunannya tidak sama; salinan alternatif itu tidak boleh dianggap edisi DBP 2021 yang sepadan hanya berdasarkan judul. Periksa ISBN dan halaman hak cipta sebelum padan halaman. https://anyflip.com/bybhs/oqrj/basic
+
+Unit Tahun 4 (DBP 2019 ISBN 978-983-49-2472-0): https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/ . Tahun 5 (DBP 2020 ISBN 978-983-49-2829-2): https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/ . Tiga fail `curriculum/sejarah/y{4,5,6}_buku_teks_unit_map_20261106.json` memegang pemetaan SK kepada unit, nama dan julat muka surat berdasarkan **isi kandungan sahaja**. Julat unit bukan pengesahan lokasi latihan dan bukan kelulusan RPH individu.
+
+**Perincian DSKP IPIM Tahun 6** menunjukkan SP untuk versi yang berlainan (`10.1.1 Menyatakan idea...` dalam DSKP Drive 2021 berbanding `10.1.1 Menyatakan idea pembentukan Malaysia` dengan pemecahan berbeza dalam PDF IPIM). Oleh itu, DSKP Drive 2021 sentiasa sumber penggubal, jadual IPIM hanya rujukan silang berperingkat.

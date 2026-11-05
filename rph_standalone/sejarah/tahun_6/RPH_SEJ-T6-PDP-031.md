@@ -1,27 +1,29 @@
 # RPH SEJARAH TAHUN 6 — PdP 031
 
-**Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
+**Status:** DRAF (semakan halaman aktiviti/kelulusan guru belum selesai)  
 **Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-08-22–2027-08-26 | **B:** 2027-08-23–2027-08-27  
-**Tema:** Pencapaian dan Kebanggaan Negara | **Tajuk:** Sukan Kebanggaan Malaysia | **SK:** 12.3  
+**Tema:** Pencapaian dan Kebanggaan Negara | **Tajuk:** Unit 9: Sukan Kebanggaan Malaysia — PdP 031 | **SK:** 12.3  
 **SP:** 12.3.4, K12.3.7 | **Jenis:** PdP Kandungan
 
 **Objektif:**
 - Murid dapat menghubungkait tokoh-tokoh sukan negara terdahulu yang memberi inspirasi kepada sukan masa kini.
 
-**Kriteria kejayaan:** Murid menghasilkan respons individu yang memenuhi kata tugas 12.3.4 dan menghubungkan satu nilai sivik.
+**Kriteria kejayaan:** Murid menyiapkan produk 12.3.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.
 
-**BBM:** Buku Teks Sejarah Tahun 6 KSSR Semakan 2017 (halaman perlu disahkan); gambar pencapaian sukan Malaysia berserta tarikh sumber; kad sumber/lembaran bukti.
+**Buku teks dan bahan:** Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 9: Sukan Kebanggaan Malaysia, hlm. 142–159 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; gambar pencapaian sukan Malaysia berserta tarikh sumber; kad sumber/lembaran bukti.
 
-**Set Induksi (5 min):** Guru mempamerkan gambar pencapaian sukan Malaysia berserta tarikh sumber dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami sukan kebanggaan malaysia?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah.
+**Set Induksi (5 min):** Guru mempamerkan imej, peta atau petikan bertajuk “Sukan Kebanggaan Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Sukan Kebanggaan Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid meneliti gambar pencapaian sukan Malaysia berserta tarikh sumber, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menghubungkait tokoh-tokoh sukan negara terdahulu yang memberi inspirasi kepada sukan masa kini.
+**Aktiviti 1 (20 min):** Guru menunjukkan cara mencari maklumat dalam Unit 9, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menghubungkait tokoh-tokoh sukan negara terdahulu yang memberi inspirasi kepada sukan masa kini” dengan contoh daripada sumber.
 
-**Aktiviti 2 (20 min):** Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut sukan kebanggaan malaysia. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai menghuraikan kepentingan nilai sahsiah dan etika dalam mempamerkan semangat kesukanan..
+**Aktiviti 2 (20 min):** Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menghubungkait tokoh-tokoh sukan negara terdahulu yang memberi inspirasi kepada sukan masa kini, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghuraikan kepentingan nilai sahsiah dan etika dalam mempamerkan semangat kesukanan; jawapan mesti disokong bahan.
 
-**Pengukuhan dan PBD (10 min):** Murid melengkapkan tiket keluar: satu fakta tepat tentang sukan kebanggaan malaysia, satu bukti daripada bahan, dan satu iktibar (pautan K12.3.7). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham.
+**Pengukuhan dan PBD (10 min):** Murid menyerahkan hasil 12.3.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K12.3.7.
 
-**Penutup (5 min):** Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya.
+**Penutup (5 min):** Guru merumus isi penting Unit 9: Sukan Kebanggaan Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini.
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
 
-**Sumber:** DSKP Sejarah Tahun 6 KSSR Semakan 2017; pengesahan halaman buku teks masih diperlukan. Jangan anggap tarikh cadangan sebagai jadual PdP sebenar.
+**Bukti sumber:** https://fliphtml5.com/itcew/pnmn (ISBN 978-983-49-3279-4); isi kandungan membuktikan permulaan unit, BUKAN halaman aktiviti individu.
+
+**Perhatian:** RPH ini ialah draf PdP berpandukan unit dan SP. Tarikh cadangan bukan jadual kelas sebenar; semakan visual aktiviti buku, cuti negeri, dan ujian Word/PDF belum lulus.

@@ -11,12 +11,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Mari Belajar Sejarah",
         "sk": "1.1",
         "sk_title": "Pengertian dan Kemahiran Ilmu Sejarah",
-        "title": "Pengertian dan Kemahiran Ilmu Sejarah — 001",
+        "title": "Unit 1: Mengenali Sejarah — PdP 001",
         "sp_codes": [
           "1.1.1",
           "1.1.2",
@@ -42,33 +42,46 @@
           "Murid dapat menyatakan pengertian sejarah.",
           "Murid dapat mengenal pasti sumber dalam sejarah."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 1.1.1, 1.1.2 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 1.1.1–1.1.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); gambar artifak, dokumen lama dan garis masa; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 1: Mengenali Sejarah, hlm. 2–15 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; gambar artifak, dokumen lama dan garis masa; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan gambar artifak, dokumen lama dan garis masa dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami pengertian dan kemahiran ilmu sejarah?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Mengenali Sejarah” dan menyoal “Apakah yang dapat kita buktikan tentang Mengenali Sejarah daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti gambar artifak, dokumen lama dan garis masa, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menyatakan pengertian sejarah."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 1, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan pengertian sejarah”."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut pengertian dan kemahiran ilmu sejarah. Murid menerangkan mengenal pasti sumber dalam sejarah; kemudian mengaitkan nilai menyatakan kepentingan mempelajari sejarah.."
+          "activity": "Murid menghasilkan kad klasifikasi/peta berlabel untuk fokus “Mengenal pasti sumber dalam sejarah”, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan kepentingan mempelajari sejarah; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang pengertian dan kemahiran ilmu sejarah, satu bukti daripada bahan, dan satu iktibar (pautan K1.1.6). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 1.1.1 dan 1.1.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K1.1.6."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 1: Mengenali Sejarah. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 1,
+          "unit_title": "Mengenali Sejarah",
+          "unit_start_page": 2,
+          "unit_end_page": 15,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -89,12 +102,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Mari Belajar Sejarah",
         "sk": "1.1",
         "sk_title": "Pengertian dan Kemahiran Ilmu Sejarah",
-        "title": "Pengertian dan Kemahiran Ilmu Sejarah — 002",
+        "title": "Unit 1: Mengenali Sejarah — PdP 002",
         "sp_codes": [
           "1.1.3",
           "K1.1.7"
@@ -114,33 +127,46 @@
         "objective": [
           "Murid dapat menjelaskan kaedah penyelidikan sejarah."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 1.1.3 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 1.1.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); gambar artifak, dokumen lama dan garis masa; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 1: Mengenali Sejarah, hlm. 2–15 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; gambar artifak, dokumen lama dan garis masa; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan gambar artifak, dokumen lama dan garis masa dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami pengertian dan kemahiran ilmu sejarah?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Mengenali Sejarah” dan menyoal “Apakah yang dapat kita buktikan tentang Mengenali Sejarah daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti gambar artifak, dokumen lama dan garis masa, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menjelaskan kaedah penyelidikan sejarah."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 1, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan kaedah penyelidikan sejarah” dengan contoh daripada sumber."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut pengertian dan kemahiran ilmu sejarah. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai menerangkan kepentingan mengambil iktibar daripada peristiwa lalu.."
+          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menjelaskan kaedah penyelidikan sejarah, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menerangkan kepentingan mengambil iktibar daripada peristiwa lalu; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang pengertian dan kemahiran ilmu sejarah, satu bukti daripada bahan, dan satu iktibar (pautan K1.1.7). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 1.1.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K1.1.7."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 1: Mengenali Sejarah. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 1,
+          "unit_title": "Mengenali Sejarah",
+          "unit_start_page": 2,
+          "unit_end_page": 15,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -161,12 +187,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Mari Belajar Sejarah",
         "sk": "1.1",
         "sk_title": "Pengertian dan Kemahiran Ilmu Sejarah",
-        "title": "Pengertian dan Kemahiran Ilmu Sejarah — 003",
+        "title": "Unit 1: Mengenali Sejarah — PdP 003",
         "sp_codes": [
           "1.1.4",
           "K1.1.8"
@@ -186,33 +212,46 @@
         "objective": [
           "Murid dapat membezakan konsep ruang dan masa dalam sejarah."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 1.1.4 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 1.1.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); gambar artifak, dokumen lama dan garis masa; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 1: Mengenali Sejarah, hlm. 2–15 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; gambar artifak, dokumen lama dan garis masa; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan gambar artifak, dokumen lama dan garis masa dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami pengertian dan kemahiran ilmu sejarah?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Mengenali Sejarah” dan menyoal “Apakah yang dapat kita buktikan tentang Mengenali Sejarah daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti gambar artifak, dokumen lama dan garis masa, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi membezakan konsep ruang dan masa dalam sejarah."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 1, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan jadual banding beza dua aspek bagi fokus “Membezakan konsep ruang dan masa dalam sejarah”, disertai dua bukti daripada sumber."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut pengertian dan kemahiran ilmu sejarah. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai menjelaskan kepentingan meraikan sesuatu peristiwa sejarah negara.."
+          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Membezakan konsep ruang dan masa dalam sejarah, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan kepentingan meraikan sesuatu peristiwa sejarah negara; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang pengertian dan kemahiran ilmu sejarah, satu bukti daripada bahan, dan satu iktibar (pautan K1.1.8). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 1.1.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K1.1.8."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 1: Mengenali Sejarah. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 1,
+          "unit_title": "Mengenali Sejarah",
+          "unit_start_page": 2,
+          "unit_end_page": 15,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -233,12 +272,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Mari Belajar Sejarah",
         "sk": "1.1",
         "sk_title": "Pengertian dan Kemahiran Ilmu Sejarah",
-        "title": "Pengertian dan Kemahiran Ilmu Sejarah — 004",
+        "title": "Unit 1: Mengenali Sejarah — PdP 004",
         "sp_codes": [
           "1.1.5",
           "K1.1.9"
@@ -258,33 +297,46 @@
         "objective": [
           "Murid dapat menghuraikan sebab dan akibat dalam peristiwa sejarah."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 1.1.5 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 1.1.5 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); gambar artifak, dokumen lama dan garis masa; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 1: Mengenali Sejarah, hlm. 2–15 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; gambar artifak, dokumen lama dan garis masa; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan gambar artifak, dokumen lama dan garis masa dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami pengertian dan kemahiran ilmu sejarah?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Mengenali Sejarah” dan menyoal “Apakah yang dapat kita buktikan tentang Mengenali Sejarah daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti gambar artifak, dokumen lama dan garis masa, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menghuraikan sebab dan akibat dalam peristiwa sejarah."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 1, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menghuraikan sebab dan akibat dalam peristiwa sejarah” dengan contoh daripada sumber."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut pengertian dan kemahiran ilmu sejarah. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai menghurai kepentingan memelihara sumber sejarah untuk generasi akan datang.."
+          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menghuraikan sebab dan akibat dalam peristiwa sejarah, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghurai kepentingan memelihara sumber sejarah untuk generasi akan datang; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang pengertian dan kemahiran ilmu sejarah, satu bukti daripada bahan, dan satu iktibar (pautan K1.1.9). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 1.1.5 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K1.1.9."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 1: Mengenali Sejarah. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 1,
+          "unit_title": "Mengenali Sejarah",
+          "unit_start_page": 2,
+          "unit_end_page": 15,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -305,12 +357,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Mari Belajar Sejarah",
         "sk": "1.2",
         "sk_title": "Pengertian Diri dan Keluarga",
-        "title": "Pengertian Diri dan Keluarga — 005",
+        "title": "Unit 2: Saya dan Keluarga — PdP 005",
         "sp_codes": [
           "1.2.1",
           "1.2.2",
@@ -336,33 +388,46 @@
           "Murid dapat menyatakan biodata diri.",
           "Murid dapat menjelaskan pengertian keluarga asas dan kembangan."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 1.2.1, 1.2.2 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 1.2.1–1.2.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); contoh salasilah dan garis masa keluarga tanpa mendedahkan data peribadi; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 2: Saya dan Keluarga, hlm. 16–29 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; contoh salasilah dan garis masa keluarga tanpa mendedahkan data peribadi; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan contoh salasilah dan garis masa keluarga tanpa mendedahkan data peribadi dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami pengertian diri dan keluarga?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Saya dan Keluarga” dan menyoal “Apakah yang dapat kita buktikan tentang Saya dan Keluarga daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari. Gunakan contoh rekaan, bukan dokumen identiti murid."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti contoh salasilah dan garis masa keluarga tanpa mendedahkan data peribadi, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menyatakan biodata diri."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 2, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan biodata diri”."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut pengertian diri dan keluarga. Murid menerangkan menjelaskan pengertian keluarga asas dan kembangan; kemudian mengaitkan nilai menunjuk cara adab yang perlu diamalkan dalam keluarga.."
+          "activity": "Murid menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan pengertian keluarga asas dan kembangan” dengan contoh daripada sumber, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menunjuk cara adab yang perlu diamalkan dalam keluarga; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang pengertian diri dan keluarga, satu bukti daripada bahan, dan satu iktibar (pautan K1.2.5). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 1.2.1 dan 1.2.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K1.2.5."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 2: Saya dan Keluarga. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 2,
+          "unit_title": "Saya dan Keluarga",
+          "unit_start_page": 16,
+          "unit_end_page": 29,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -383,12 +448,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Mari Belajar Sejarah",
         "sk": "1.2",
         "sk_title": "Pengertian Diri dan Keluarga",
-        "title": "Pengertian Diri dan Keluarga — 006",
+        "title": "Unit 2: Saya dan Keluarga — PdP 006",
         "sp_codes": [
           "1.2.3",
           "K1.2.6"
@@ -408,33 +473,46 @@
         "objective": [
           "Murid dapat membandingkan peranan anggota keluarga."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 1.2.3 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 1.2.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); contoh salasilah dan garis masa keluarga tanpa mendedahkan data peribadi; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 2: Saya dan Keluarga, hlm. 16–29 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; contoh salasilah dan garis masa keluarga tanpa mendedahkan data peribadi; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan contoh salasilah dan garis masa keluarga tanpa mendedahkan data peribadi dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami pengertian diri dan keluarga?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Saya dan Keluarga” dan menyoal “Apakah yang dapat kita buktikan tentang Saya dan Keluarga daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari. Gunakan contoh rekaan, bukan dokumen identiti murid."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti contoh salasilah dan garis masa keluarga tanpa mendedahkan data peribadi, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi membandingkan peranan anggota keluarga."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 2, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan jadual banding beza dua aspek bagi fokus “Membandingkan peranan anggota keluarga”, disertai dua bukti daripada sumber."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut pengertian diri dan keluarga. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai menjelaskan kepentingan menghormati peranan setiap ahli keluarga.."
+          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Membandingkan peranan anggota keluarga, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan kepentingan menghormati peranan setiap ahli keluarga; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang pengertian diri dan keluarga, satu bukti daripada bahan, dan satu iktibar (pautan K1.2.6). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 1.2.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K1.2.6."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 2: Saya dan Keluarga. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 2,
+          "unit_title": "Saya dan Keluarga",
+          "unit_start_page": 16,
+          "unit_end_page": 29,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -455,12 +533,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Mari Belajar Sejarah",
         "sk": "1.2",
         "sk_title": "Pengertian Diri dan Keluarga",
-        "title": "Pengertian Diri dan Keluarga — 007",
+        "title": "Unit 2: Saya dan Keluarga — PdP 007",
         "sp_codes": [
           "1.2.4",
           "K1.2.7"
@@ -480,33 +558,46 @@
         "objective": [
           "Murid dapat menghuraikan perkembangan diri mengikut garis masa."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 1.2.4 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 1.2.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); contoh salasilah dan garis masa keluarga tanpa mendedahkan data peribadi; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 2: Saya dan Keluarga, hlm. 16–29 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; contoh salasilah dan garis masa keluarga tanpa mendedahkan data peribadi; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan contoh salasilah dan garis masa keluarga tanpa mendedahkan data peribadi dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami pengertian diri dan keluarga?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Saya dan Keluarga” dan menyoal “Apakah yang dapat kita buktikan tentang Saya dan Keluarga daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari. Gunakan contoh rekaan, bukan dokumen identiti murid."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti contoh salasilah dan garis masa keluarga tanpa mendedahkan data peribadi, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menghuraikan perkembangan diri mengikut garis masa."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 2, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menghuraikan perkembangan diri mengikut garis masa” dengan contoh daripada sumber."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut pengertian diri dan keluarga. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai menghuraikan kepentingan akhlak yang mulia untuk mewujudkan hubungan kekeluargaan yang harmoni.."
+          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menghuraikan perkembangan diri mengikut garis masa, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghuraikan kepentingan akhlak yang mulia untuk mewujudkan hubungan kekeluargaan yang harmoni; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang pengertian diri dan keluarga, satu bukti daripada bahan, dan satu iktibar (pautan K1.2.7). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 1.2.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K1.2.7."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 2: Saya dan Keluarga. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 2,
+          "unit_title": "Saya dan Keluarga",
+          "unit_start_page": 16,
+          "unit_end_page": 29,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -527,12 +618,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Mari Belajar Sejarah",
         "sk": "1.3",
         "sk_title": "Sejarah Sekolah",
-        "title": "Sejarah Sekolah — 008",
+        "title": "Unit 3: Sejarah Sekolah — PdP 008",
         "sp_codes": [
           "1.3.1",
           "1.3.2",
@@ -558,33 +649,46 @@
           "Murid dapat menyatakan nama dan alamat sekolah.",
           "Murid dapat mengenal pasti lokasi sekolah."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 1.3.1, 1.3.2 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 1.3.1–1.3.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); foto lama sekolah, lencana dan buku tahunan; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 3: Sejarah Sekolah, hlm. 30–43 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; foto lama sekolah, lencana dan buku tahunan; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan foto lama sekolah, lencana dan buku tahunan dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami sejarah sekolah?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Sejarah Sekolah” dan menyoal “Apakah yang dapat kita buktikan tentang Sejarah Sekolah daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari. Gunakan contoh rekaan, bukan dokumen identiti murid."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti foto lama sekolah, lencana dan buku tahunan, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menyatakan nama dan alamat sekolah."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 3, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan nama dan alamat sekolah”."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut sejarah sekolah. Murid menerangkan mengenal pasti lokasi sekolah; kemudian mengaitkan nilai menerangkan kepentingan tanggungjawab murid terhadap sekolah.."
+          "activity": "Murid menghasilkan kad klasifikasi/peta berlabel untuk fokus “Mengenal pasti lokasi sekolah”, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menerangkan kepentingan tanggungjawab murid terhadap sekolah; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang sejarah sekolah, satu bukti daripada bahan, dan satu iktibar (pautan K1.3.5). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 1.3.1 dan 1.3.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K1.3.5."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 3: Sejarah Sekolah. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 3,
+          "unit_title": "Sejarah Sekolah",
+          "unit_start_page": 30,
+          "unit_end_page": 43,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -605,12 +709,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Mari Belajar Sejarah",
         "sk": "1.3",
         "sk_title": "Sejarah Sekolah",
-        "title": "Sejarah Sekolah — 009",
+        "title": "Unit 3: Sejarah Sekolah — PdP 009",
         "sp_codes": [
           "1.3.3",
           "K1.3.6"
@@ -630,33 +734,46 @@
         "objective": [
           "Murid dapat menjelaskan sejarah sekolah."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 1.3.3 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 1.3.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); foto lama sekolah, lencana dan buku tahunan; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 3: Sejarah Sekolah, hlm. 30–43 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; foto lama sekolah, lencana dan buku tahunan; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan foto lama sekolah, lencana dan buku tahunan dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami sejarah sekolah?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Sejarah Sekolah” dan menyoal “Apakah yang dapat kita buktikan tentang Sejarah Sekolah daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari. Gunakan contoh rekaan, bukan dokumen identiti murid."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti foto lama sekolah, lencana dan buku tahunan, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menjelaskan sejarah sekolah."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 3, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan sejarah sekolah” dengan contoh daripada sumber."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut sejarah sekolah. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai menjelaskan kepentingan mengiktiraf jasa dan sumbangan sekolah kepada diri serta masyarakat.."
+          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menjelaskan sejarah sekolah, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan kepentingan mengiktiraf jasa dan sumbangan sekolah kepada diri serta masyarakat; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang sejarah sekolah, satu bukti daripada bahan, dan satu iktibar (pautan K1.3.6). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 1.3.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K1.3.6."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 3: Sejarah Sekolah. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 3,
+          "unit_title": "Sejarah Sekolah",
+          "unit_start_page": 30,
+          "unit_end_page": 43,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -677,12 +794,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Mari Belajar Sejarah",
         "sk": "1.3",
         "sk_title": "Sejarah Sekolah",
-        "title": "Sejarah Sekolah — 010",
+        "title": "Unit 3: Sejarah Sekolah — PdP 010",
         "sp_codes": [
           "1.3.4",
           "K1.3.7"
@@ -702,33 +819,46 @@
         "objective": [
           "Murid dapat menghuraikan maklumat sekolah yang lengkap."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 1.3.4 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 1.3.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); foto lama sekolah, lencana dan buku tahunan; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 3: Sejarah Sekolah, hlm. 30–43 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; foto lama sekolah, lencana dan buku tahunan; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan foto lama sekolah, lencana dan buku tahunan dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami sejarah sekolah?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Sejarah Sekolah” dan menyoal “Apakah yang dapat kita buktikan tentang Sejarah Sekolah daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari. Gunakan contoh rekaan, bukan dokumen identiti murid."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti foto lama sekolah, lencana dan buku tahunan, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menghuraikan maklumat sekolah yang lengkap."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 3, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menghuraikan maklumat sekolah yang lengkap” dengan contoh daripada sumber."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut sejarah sekolah. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai menghuraikan kepentingan sekolah sebagai sebuah institusi yang membina masyarakat dan negara.."
+          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menghuraikan maklumat sekolah yang lengkap, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghuraikan kepentingan sekolah sebagai sebuah institusi yang membina masyarakat dan negara; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang sejarah sekolah, satu bukti daripada bahan, dan satu iktibar (pautan K1.3.7). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 1.3.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K1.3.7."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 3: Sejarah Sekolah. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 3,
+          "unit_title": "Sejarah Sekolah",
+          "unit_start_page": 30,
+          "unit_end_page": 43,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -749,12 +879,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KAJIAN_KES",
         "tema": "Mari Belajar Sejarah",
         "sk": "1.3",
         "sk_title": "Sejarah Sekolah",
-        "title": "Kajian kes: sejarah sekolah berdasarkan bukti",
+        "title": "Unit 3: Sejarah Sekolah — PdP 011",
         "sp_codes": [
           "1.3.1",
           "1.3.2",
@@ -780,33 +910,46 @@
           "Membina satu soalan inkuiri berkenaan Sejarah Sekolah.",
           "Mengenal pasti sekurang-kurangnya dua bukti relevan dan menerangkan kesimpulan secara beralasan."
         ],
-        "success_criteria": "Murid menyatakan persoalan kajian, dua bukti dan satu rumusan berasas.",
+        "success_criteria": "Murid membina persoalan kajian, menyatakan dua bukti relevan dan menjelaskan satu rumusan yang disokong bukti.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); foto lama sekolah, lencana dan buku tahunan; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 3: Sejarah Sekolah, hlm. 30–43 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; foto lama sekolah, lencana dan buku tahunan; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan foto lama sekolah, lencana dan buku tahunan dan mengemukakan soalan: “Apakah bukti yang dapat menyokong dapatan tentang sejarah sekolah?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Sejarah Sekolah” dan menyoal “Apakah bukti yang menyokong persoalan kajian tentang Sejarah Sekolah?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari. Gunakan contoh rekaan, bukan dokumen identiti murid."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid merumuskan soalan kajian \"Kajian kes: sejarah sekolah berdasarkan bukti\" dan memilih sumber yang boleh disemak (buku teks, peta, dokumen, foto berlabel). Murid membina jadual persoalan–sumber–bukti."
+          "activity": "Guru membantu murid membina soalan kajian “Sejarah Sekolah”, mencari dua sumber berbeza dan membezakan fakta dengan pendapat. Murid melengkapkan jadual soalan–sumber–bukti, tanpa menyalin bulat-bulat teks sumber."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyemak kebolehpercayaan dua sumber dan membimbing pembezaan fakta dengan pandangan. Murid mencatat bukti, membina rumusan ringkas dan menyatakan had maklumat yang diperoleh."
+          "activity": "Murid membandingkan dua sumber berkaitan Sejarah Sekolah, menyusun maklumat mengikut kronologi atau kategori, lalu merumus satu dapatan dan batas bukti. Guru membimbing murid menghubungkan iktibar dengan nilai sivik secara beralasan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid membentangkan dapatan berserta dua bukti dan satu iktibar. Guru menilai ketepatan sumber, kronologi, inferens serta komunikasi melalui senarai semak PBD."
+          "activity": "Pembentangan kajian ringkas: satu persoalan, dua bukti, satu rumusan. Guru menilai kesahan fakta, kesesuaian bukti, tafsiran dan komunikasi murid; beri maklum balas individu."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 3: Sejarah Sekolah. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 3,
+          "unit_title": "Sejarah Sekolah",
+          "unit_start_page": 30,
+          "unit_end_page": 43,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -827,12 +970,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Mari Belajar Sejarah",
         "sk": "1.4",
         "sk_title": "Kawasan Tempat Tinggal",
-        "title": "Kawasan Tempat Tinggal — 012",
+        "title": "Unit 4: Sejarah Tempat Tinggal — PdP 012",
         "sp_codes": [
           "1.4.1",
           "1.4.2",
@@ -858,33 +1001,46 @@
           "Murid dapat menyatakan maklumat lengkap mengenai tempat tinggal.",
           "Murid dapat menerangkan bentuk muka bumi kawasan tempat tinggal."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 1.4.1, 1.4.2 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 1.4.1–1.4.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); peta setempat dan gambar perubahan tempat tinggal; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 4: Sejarah Tempat Tinggal, hlm. 44–57 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta setempat dan gambar perubahan tempat tinggal; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan peta setempat dan gambar perubahan tempat tinggal dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami kawasan tempat tinggal?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Sejarah Tempat Tinggal” dan menyoal “Apakah yang dapat kita buktikan tentang Sejarah Tempat Tinggal daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari. Gunakan contoh rekaan, bukan dokumen identiti murid."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti peta setempat dan gambar perubahan tempat tinggal, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menyatakan maklumat lengkap mengenai tempat tinggal."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 4, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan maklumat lengkap mengenai tempat tinggal”."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut kawasan tempat tinggal. Murid menerangkan menerangkan bentuk muka bumi kawasan tempat tinggal; kemudian mengaitkan nilai menyatakan kepentingan menjaga kemudahan awam di tempat tinggal.."
+          "activity": "Murid menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menerangkan bentuk muka bumi kawasan tempat tinggal” dengan contoh daripada sumber, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan kepentingan menjaga kemudahan awam di tempat tinggal; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang kawasan tempat tinggal, satu bukti daripada bahan, dan satu iktibar (pautan K1.4.5). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 1.4.1 dan 1.4.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K1.4.5."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 4: Sejarah Tempat Tinggal. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 4,
+          "unit_title": "Sejarah Tempat Tinggal",
+          "unit_start_page": 44,
+          "unit_end_page": 57,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -905,12 +1061,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Mari Belajar Sejarah",
         "sk": "1.4",
         "sk_title": "Kawasan Tempat Tinggal",
-        "title": "Kawasan Tempat Tinggal — 013",
+        "title": "Unit 4: Sejarah Tempat Tinggal — PdP 013",
         "sp_codes": [
           "1.4.3",
           "K1.4.6"
@@ -930,33 +1086,46 @@
         "objective": [
           "Murid dapat menjelaskan sejarah tempat tinggal."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 1.4.3 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 1.4.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); peta setempat dan gambar perubahan tempat tinggal; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 4: Sejarah Tempat Tinggal, hlm. 44–57 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta setempat dan gambar perubahan tempat tinggal; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan peta setempat dan gambar perubahan tempat tinggal dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami kawasan tempat tinggal?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Sejarah Tempat Tinggal” dan menyoal “Apakah yang dapat kita buktikan tentang Sejarah Tempat Tinggal daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari. Gunakan contoh rekaan, bukan dokumen identiti murid."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti peta setempat dan gambar perubahan tempat tinggal, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menjelaskan sejarah tempat tinggal."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 4, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan sejarah tempat tinggal” dengan contoh daripada sumber."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut kawasan tempat tinggal. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai menerangkan kepentingan menjaga kebersihan dan keindahan di tempat tinggal.."
+          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menjelaskan sejarah tempat tinggal, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menerangkan kepentingan menjaga kebersihan dan keindahan di tempat tinggal; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang kawasan tempat tinggal, satu bukti daripada bahan, dan satu iktibar (pautan K1.4.6). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 1.4.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K1.4.6."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 4: Sejarah Tempat Tinggal. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 4,
+          "unit_title": "Sejarah Tempat Tinggal",
+          "unit_start_page": 44,
+          "unit_end_page": 57,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -977,12 +1146,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Mari Belajar Sejarah",
         "sk": "1.4",
         "sk_title": "Kawasan Tempat Tinggal",
-        "title": "Kawasan Tempat Tinggal — 014",
+        "title": "Unit 4: Sejarah Tempat Tinggal — PdP 014",
         "sp_codes": [
           "1.4.4",
           "K1.4.7"
@@ -1002,33 +1171,46 @@
         "objective": [
           "Murid dapat menghuraikan tokoh setempat di tempat anda."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 1.4.4 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 1.4.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); peta setempat dan gambar perubahan tempat tinggal; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 4: Sejarah Tempat Tinggal, hlm. 44–57 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta setempat dan gambar perubahan tempat tinggal; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan peta setempat dan gambar perubahan tempat tinggal dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami kawasan tempat tinggal?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Sejarah Tempat Tinggal” dan menyoal “Apakah yang dapat kita buktikan tentang Sejarah Tempat Tinggal daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari. Gunakan contoh rekaan, bukan dokumen identiti murid."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti peta setempat dan gambar perubahan tempat tinggal, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menghuraikan tokoh setempat di tempat anda."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 4, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menghuraikan tokoh setempat di tempat anda” dengan contoh daripada sumber."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut kawasan tempat tinggal. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai menjelaskan kepentingan sikap menghargai kawasan tempat tinggal.."
+          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menghuraikan tokoh setempat di tempat anda, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan kepentingan sikap menghargai kawasan tempat tinggal; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang kawasan tempat tinggal, satu bukti daripada bahan, dan satu iktibar (pautan K1.4.7). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 1.4.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K1.4.7."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 4: Sejarah Tempat Tinggal. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 4,
+          "unit_title": "Sejarah Tempat Tinggal",
+          "unit_start_page": 44,
+          "unit_end_page": 57,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -1049,12 +1231,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Zaman Air Batu",
         "sk": "2.1",
         "sk_title": "Zaman Air Batu",
-        "title": "Zaman Air Batu — 015",
+        "title": "Unit 5: Zaman Air Batu — PdP 015",
         "sp_codes": [
           "2.1.1",
           "2.1.2",
@@ -1080,33 +1262,46 @@
           "Murid dapat menyatakan maksud Zaman Air Batu.",
           "Murid dapat menyenaraikan garis masa Zaman Air Batu."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 2.1.1, 2.1.2 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 2.1.1–2.1.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); ilustrasi iklim dan garis masa Zaman Air Batu; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 5: Zaman Air Batu, hlm. 58–71 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; ilustrasi iklim dan garis masa Zaman Air Batu; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan ilustrasi iklim dan garis masa Zaman Air Batu dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami zaman air batu?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Zaman Air Batu” dan menyoal “Apakah yang dapat kita buktikan tentang Zaman Air Batu daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti ilustrasi iklim dan garis masa Zaman Air Batu, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menyatakan maksud zaman air batu."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 5, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan maksud Zaman Air Batu”."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut zaman air batu. Murid menerangkan menyenaraikan garis masa zaman air batu; kemudian mengaitkan nilai menerangkan kepentingan mengambil iktibar perubahan zaman dalam kehidupan manusia.."
+          "activity": "Murid menghasilkan senarai fakta atau nama berserta label dan rujukan bagi fokus “Menyenaraikan garis masa Zaman Air Batu”, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menerangkan kepentingan mengambil iktibar perubahan zaman dalam kehidupan manusia; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang zaman air batu, satu bukti daripada bahan, dan satu iktibar (pautan K2.1.5). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 2.1.1 dan 2.1.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K2.1.5."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 5: Zaman Air Batu. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 5,
+          "unit_title": "Zaman Air Batu",
+          "unit_start_page": 58,
+          "unit_end_page": 71,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -1127,12 +1322,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Zaman Air Batu",
         "sk": "2.1",
         "sk_title": "Zaman Air Batu",
-        "title": "Zaman Air Batu — 016",
+        "title": "Unit 5: Zaman Air Batu — PdP 016",
         "sp_codes": [
           "2.1.3",
           "K2.1.6"
@@ -1152,33 +1347,46 @@
         "objective": [
           "Murid dapat menerangkan perubahan Zaman Air Batu Akhir."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 2.1.3 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 2.1.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); ilustrasi iklim dan garis masa Zaman Air Batu; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 5: Zaman Air Batu, hlm. 58–71 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; ilustrasi iklim dan garis masa Zaman Air Batu; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan ilustrasi iklim dan garis masa Zaman Air Batu dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami zaman air batu?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Zaman Air Batu” dan menyoal “Apakah yang dapat kita buktikan tentang Zaman Air Batu daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti ilustrasi iklim dan garis masa Zaman Air Batu, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menerangkan perubahan zaman air batu akhir."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 5, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menerangkan perubahan Zaman Air Batu Akhir” dengan contoh daripada sumber."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut zaman air batu. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai menjelaskan kepentingan langkah memelihara dan memulihara alam sekitar.."
+          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menerangkan perubahan Zaman Air Batu Akhir, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan kepentingan langkah memelihara dan memulihara alam sekitar; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang zaman air batu, satu bukti daripada bahan, dan satu iktibar (pautan K2.1.6). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 2.1.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K2.1.6."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 5: Zaman Air Batu. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 5,
+          "unit_title": "Zaman Air Batu",
+          "unit_start_page": 58,
+          "unit_end_page": 71,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -1199,12 +1407,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Zaman Air Batu",
         "sk": "2.1",
         "sk_title": "Zaman Air Batu",
-        "title": "Zaman Air Batu — 017",
+        "title": "Unit 5: Zaman Air Batu — PdP 017",
         "sp_codes": [
           "2.1.4",
           "K2.1.7"
@@ -1224,33 +1432,46 @@
         "objective": [
           "Murid dapat menghuraikan kesan perubahan Zaman Air Batu Akhir di Asia Tenggara."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 2.1.4 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 2.1.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); ilustrasi iklim dan garis masa Zaman Air Batu; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 5: Zaman Air Batu, hlm. 58–71 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; ilustrasi iklim dan garis masa Zaman Air Batu; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan ilustrasi iklim dan garis masa Zaman Air Batu dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami zaman air batu?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Zaman Air Batu” dan menyoal “Apakah yang dapat kita buktikan tentang Zaman Air Batu daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti ilustrasi iklim dan garis masa Zaman Air Batu, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menghuraikan kesan perubahan zaman air batu akhir di asia tenggara."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 5, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menghuraikan kesan perubahan Zaman Air Batu Akhir di Asia Tenggara” dengan contoh daripada sumber."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut zaman air batu. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai menghuraikan kepentingan usaha mengekalkan kelestarian alam sekitar.."
+          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menghuraikan kesan perubahan Zaman Air Batu Akhir di Asia Tenggara, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghuraikan kepentingan usaha mengekalkan kelestarian alam sekitar; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang zaman air batu, satu bukti daripada bahan, dan satu iktibar (pautan K2.1.7). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 2.1.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K2.1.7."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 5: Zaman Air Batu. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 5,
+          "unit_title": "Zaman Air Batu",
+          "unit_start_page": 58,
+          "unit_end_page": 71,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -1271,12 +1492,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Zaman Prasejarah",
         "sk": "3.1",
         "sk_title": "Kehidupan Manusia Zaman Prasejarah",
-        "title": "Kehidupan Manusia Zaman Prasejarah — 018",
+        "title": "Unit 6: Zaman Prasejarah — PdP 018",
         "sp_codes": [
           "3.1.1",
           "3.1.2",
@@ -1302,33 +1523,46 @@
           "Murid dapat menyatakan maksud Zaman Prasejarah.",
           "Murid dapat memberi contoh lokasi Zaman Prasejarah di negara kita."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 3.1.1, 3.1.2 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 3.1.1–3.1.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); gambar artifak serta peta petempatan prasejarah; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 6: Zaman Prasejarah, hlm. 72–85 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; gambar artifak serta peta petempatan prasejarah; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan gambar artifak serta peta petempatan prasejarah dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami kehidupan manusia zaman prasejarah?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Zaman Prasejarah” dan menyoal “Apakah yang dapat kita buktikan tentang Zaman Prasejarah daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti gambar artifak serta peta petempatan prasejarah, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menyatakan maksud zaman prasejarah."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 6, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan maksud Zaman Prasejarah”."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut kehidupan manusia zaman prasejarah. Murid menerangkan memberi contoh lokasi zaman prasejarah di negara kita; kemudian mengaitkan nilai menyatakan kepentingan memulihara artifak zaman prasejarah.."
+          "activity": "Murid menghasilkan peta konsep atau catatan fakta beralasan bagi fokus “Memberi contoh lokasi Zaman Prasejarah di negara kita”, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan kepentingan memulihara artifak Zaman Prasejarah; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang kehidupan manusia zaman prasejarah, satu bukti daripada bahan, dan satu iktibar (pautan K3.1.5). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 3.1.1 dan 3.1.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K3.1.5."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 6: Zaman Prasejarah. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 6,
+          "unit_title": "Zaman Prasejarah",
+          "unit_start_page": 72,
+          "unit_end_page": 85,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -1349,12 +1583,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Zaman Prasejarah",
         "sk": "3.1",
         "sk_title": "Kehidupan Manusia Zaman Prasejarah",
-        "title": "Kehidupan Manusia Zaman Prasejarah — 019",
+        "title": "Unit 6: Zaman Prasejarah — PdP 019",
         "sp_codes": [
           "3.1.3",
           "K3.1.6"
@@ -1374,33 +1608,46 @@
         "objective": [
           "Murid dapat menghuraikan ciri kehidupan dari aspek kegiatan sosial dan ekonomi manusia Zaman Prasejarah."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 3.1.3 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 3.1.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); gambar artifak serta peta petempatan prasejarah; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 6: Zaman Prasejarah, hlm. 72–85 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; gambar artifak serta peta petempatan prasejarah; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan gambar artifak serta peta petempatan prasejarah dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami kehidupan manusia zaman prasejarah?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Zaman Prasejarah” dan menyoal “Apakah yang dapat kita buktikan tentang Zaman Prasejarah daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti gambar artifak serta peta petempatan prasejarah, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menghuraikan ciri kehidupan dari aspek kegiatan sosial dan ekonomi manusia zaman prasejarah."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 6, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menghuraikan ciri kehidupan dari aspek kegiatan sosial dan ekonomi manusia Zaman Prasejarah” dengan contoh daripada sumber."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut kehidupan manusia zaman prasejarah. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai menjelaskan sikap bersedia untuk menghadapi perubahan persekitaran.."
+          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menghuraikan ciri kehidupan dari aspek kegiatan sosial dan ekonomi manusia Zaman Prasejarah, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan sikap bersedia untuk menghadapi perubahan persekitaran; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang kehidupan manusia zaman prasejarah, satu bukti daripada bahan, dan satu iktibar (pautan K3.1.6). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 3.1.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K3.1.6."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 6: Zaman Prasejarah. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 6,
+          "unit_title": "Zaman Prasejarah",
+          "unit_start_page": 72,
+          "unit_end_page": 85,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -1421,12 +1668,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Zaman Prasejarah",
         "sk": "3.1",
         "sk_title": "Kehidupan Manusia Zaman Prasejarah",
-        "title": "Kehidupan Manusia Zaman Prasejarah — 020",
+        "title": "Unit 6: Zaman Prasejarah — PdP 020",
         "sp_codes": [
           "3.1.4",
           "K3.1.7"
@@ -1446,33 +1693,46 @@
         "objective": [
           "Murid dapat menghuraikan sumbangan teknologi Zaman Prasejarah kepada kemajuan inovasi pada masa kini."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 3.1.4 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 3.1.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); gambar artifak serta peta petempatan prasejarah; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 6: Zaman Prasejarah, hlm. 72–85 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; gambar artifak serta peta petempatan prasejarah; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan gambar artifak serta peta petempatan prasejarah dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami kehidupan manusia zaman prasejarah?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Zaman Prasejarah” dan menyoal “Apakah yang dapat kita buktikan tentang Zaman Prasejarah daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti gambar artifak serta peta petempatan prasejarah, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menghuraikan sumbangan teknologi zaman prasejarah kepada kemajuan inovasi pada masa kini."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 6, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menghuraikan sumbangan teknologi Zaman Prasejarah kepada kemajuan inovasi pada masa kini” dengan contoh daripada sumber."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut kehidupan manusia zaman prasejarah. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai menghuraikan kepentingan sumbangan zaman prasejarah terhadap peradaban negara.."
+          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menghuraikan sumbangan teknologi Zaman Prasejarah kepada kemajuan inovasi pada masa kini, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghuraikan kepentingan sumbangan Zaman Prasejarah terhadap peradaban negara; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang kehidupan manusia zaman prasejarah, satu bukti daripada bahan, dan satu iktibar (pautan K3.1.7). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 3.1.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K3.1.7."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 6: Zaman Prasejarah. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 6,
+          "unit_title": "Zaman Prasejarah",
+          "unit_start_page": 72,
+          "unit_end_page": 85,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -1493,12 +1753,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KAJIAN_KES",
         "tema": "Zaman Prasejarah",
         "sk": "3.1",
         "sk_title": "Kehidupan Manusia Zaman Prasejarah",
-        "title": "Kajian kes: perubahan kehidupan manusia",
+        "title": "Unit 6: Zaman Prasejarah — PdP 021",
         "sp_codes": [
           "3.1.1",
           "3.1.2",
@@ -1524,33 +1784,46 @@
           "Membina satu soalan inkuiri berkenaan Kehidupan Manusia Zaman Prasejarah.",
           "Mengenal pasti sekurang-kurangnya dua bukti relevan dan menerangkan kesimpulan secara beralasan."
         ],
-        "success_criteria": "Murid menyatakan persoalan kajian, dua bukti dan satu rumusan berasas.",
+        "success_criteria": "Murid membina persoalan kajian, menyatakan dua bukti relevan dan menjelaskan satu rumusan yang disokong bukti.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); gambar artifak serta peta petempatan prasejarah; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 6: Zaman Prasejarah, hlm. 72–85 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; gambar artifak serta peta petempatan prasejarah; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan gambar artifak serta peta petempatan prasejarah dan mengemukakan soalan: “Apakah bukti yang dapat menyokong dapatan tentang kehidupan manusia zaman prasejarah?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Zaman Prasejarah” dan menyoal “Apakah bukti yang menyokong persoalan kajian tentang Zaman Prasejarah?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid merumuskan soalan kajian \"Kajian kes: perubahan kehidupan manusia\" dan memilih sumber yang boleh disemak (buku teks, peta, dokumen, foto berlabel). Murid membina jadual persoalan–sumber–bukti."
+          "activity": "Guru membantu murid membina soalan kajian “Zaman Prasejarah”, mencari dua sumber berbeza dan membezakan fakta dengan pendapat. Murid melengkapkan jadual soalan–sumber–bukti, tanpa menyalin bulat-bulat teks sumber."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyemak kebolehpercayaan dua sumber dan membimbing pembezaan fakta dengan pandangan. Murid mencatat bukti, membina rumusan ringkas dan menyatakan had maklumat yang diperoleh."
+          "activity": "Murid membandingkan dua sumber berkaitan Zaman Prasejarah, menyusun maklumat mengikut kronologi atau kategori, lalu merumus satu dapatan dan batas bukti. Guru membimbing murid menghubungkan iktibar dengan nilai sivik secara beralasan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid membentangkan dapatan berserta dua bukti dan satu iktibar. Guru menilai ketepatan sumber, kronologi, inferens serta komunikasi melalui senarai semak PBD."
+          "activity": "Pembentangan kajian ringkas: satu persoalan, dua bukti, satu rumusan. Guru menilai kesahan fakta, kesesuaian bukti, tafsiran dan komunikasi murid; beri maklum balas individu."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 6: Zaman Prasejarah. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 6,
+          "unit_title": "Zaman Prasejarah",
+          "unit_start_page": 72,
+          "unit_end_page": 85,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -1571,12 +1844,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Kerajaan Melayu Awal",
         "sk": "4.1",
         "sk_title": "Kerajaan Melayu Awal",
-        "title": "Kerajaan Melayu Awal — 022",
+        "title": "Unit 7: Kerajaan Melayu Awal — PdP 022",
         "sp_codes": [
           "4.1.1",
           "4.1.2",
@@ -1602,33 +1875,46 @@
           "Murid dapat menamakan Kerajaan Melayu Awal di Alam Melayu.",
           "Murid dapat menyatakan lokasi Kerajaan Melayu Awal di Kepulauan Melayu."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 4.1.1, 4.1.2 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 4.1.1–4.1.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); peta Alam Melayu dan laluan perdagangan; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 7: Kerajaan Melayu Awal, hlm. 86–103 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta Alam Melayu dan laluan perdagangan; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan peta Alam Melayu dan laluan perdagangan dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami kerajaan melayu awal?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Kerajaan Melayu Awal” dan menyoal “Apakah yang dapat kita buktikan tentang Kerajaan Melayu Awal daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti peta Alam Melayu dan laluan perdagangan, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menamakan kerajaan melayu awal di alam melayu."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 7, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan senarai fakta atau nama berserta label dan rujukan bagi fokus “Menamakan Kerajaan Melayu Awal di Alam Melayu”."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut kerajaan melayu awal. Murid menerangkan menyatakan lokasi kerajaan melayu awal di kepulauan melayu; kemudian mengaitkan nilai menerangkan kepentingan menjalin hubungan diplomatik.."
+          "activity": "Murid menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan lokasi Kerajaan Melayu Awal di Kepulauan Melayu”, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menerangkan kepentingan menjalin hubungan diplomatik; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang kerajaan melayu awal, satu bukti daripada bahan, dan satu iktibar (pautan K4.1.5). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 4.1.1 dan 4.1.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K4.1.5."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 7: Kerajaan Melayu Awal. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 7,
+          "unit_title": "Kerajaan Melayu Awal",
+          "unit_start_page": 86,
+          "unit_end_page": 103,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -1649,12 +1935,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Kerajaan Melayu Awal",
         "sk": "4.1",
         "sk_title": "Kerajaan Melayu Awal",
-        "title": "Kerajaan Melayu Awal — 023",
+        "title": "Unit 7: Kerajaan Melayu Awal — PdP 023",
         "sp_codes": [
           "4.1.3",
           "K4.1.6"
@@ -1674,33 +1960,46 @@
         "objective": [
           "Murid dapat menjelaskan hubungan diplomatik Kerajaan Melayu Awal di Kepulauan Melayu."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 4.1.3 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 4.1.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); peta Alam Melayu dan laluan perdagangan; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 7: Kerajaan Melayu Awal, hlm. 86–103 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta Alam Melayu dan laluan perdagangan; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan peta Alam Melayu dan laluan perdagangan dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami kerajaan melayu awal?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Kerajaan Melayu Awal” dan menyoal “Apakah yang dapat kita buktikan tentang Kerajaan Melayu Awal daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti peta Alam Melayu dan laluan perdagangan, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menjelaskan hubungan diplomatik kerajaan melayu awal di kepulauan melayu."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 7, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan hubungan diplomatik Kerajaan Melayu Awal di Kepulauan Melayu” dengan contoh daripada sumber."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut kerajaan melayu awal. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai menjelaskan kepentingan perdagangan jalan laut kepada negara.."
+          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menjelaskan hubungan diplomatik Kerajaan Melayu Awal di Kepulauan Melayu, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan kepentingan perdagangan jalan laut kepada negara; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang kerajaan melayu awal, satu bukti daripada bahan, dan satu iktibar (pautan K4.1.6). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 4.1.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K4.1.6."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 7: Kerajaan Melayu Awal. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 7,
+          "unit_title": "Kerajaan Melayu Awal",
+          "unit_start_page": 86,
+          "unit_end_page": 103,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -1721,12 +2020,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Kerajaan Melayu Awal",
         "sk": "4.1",
         "sk_title": "Kerajaan Melayu Awal",
-        "title": "Kerajaan Melayu Awal — 024",
+        "title": "Unit 7: Kerajaan Melayu Awal — PdP 024",
         "sp_codes": [
           "4.1.4",
           "K4.1.7"
@@ -1746,33 +2045,46 @@
         "objective": [
           "Murid dapat menghuraikan kegiatan ekonomi Kerajaan Melayu Awal di Kepulauan Melayu."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 4.1.4 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 4.1.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); peta Alam Melayu dan laluan perdagangan; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 7: Kerajaan Melayu Awal, hlm. 86–103 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta Alam Melayu dan laluan perdagangan; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan peta Alam Melayu dan laluan perdagangan dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami kerajaan melayu awal?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Kerajaan Melayu Awal” dan menyoal “Apakah yang dapat kita buktikan tentang Kerajaan Melayu Awal daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti peta Alam Melayu dan laluan perdagangan, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menghuraikan kegiatan ekonomi kerajaan melayu awal di kepulauan melayu."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 7, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menghuraikan kegiatan ekonomi Kerajaan Melayu Awal di Kepulauan Melayu” dengan contoh daripada sumber."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut kerajaan melayu awal. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai menghuraikan kepentingan sumbangan kerajaan melayu awal terhadap ekonomi negara.."
+          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menghuraikan kegiatan ekonomi Kerajaan Melayu Awal di Kepulauan Melayu, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghuraikan kepentingan sumbangan Kerajaan Melayu Awal terhadap ekonomi negara; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang kerajaan melayu awal, satu bukti daripada bahan, dan satu iktibar (pautan K4.1.7). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 4.1.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K4.1.7."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 7: Kerajaan Melayu Awal. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 7,
+          "unit_title": "Kerajaan Melayu Awal",
+          "unit_start_page": 86,
+          "unit_end_page": 103,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -1793,12 +2105,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Tokoh Terbilang Kesultanan Melayu Melaka",
         "sk": "5.1",
         "sk_title": "Tokoh Terbilang Kesultanan Melayu Melaka",
-        "title": "Tokoh Terbilang Kesultanan Melayu Melaka — 025",
+        "title": "Unit 8: Tokoh Terbilang Kesultanan Melayu Melaka — PdP 025",
         "sp_codes": [
           "5.1.1",
           "5.1.2",
@@ -1824,33 +2136,46 @@
           "Murid dapat menyatakan struktur masyarakat Zaman Kesultanan Melayu Melaka.",
           "Murid dapat menjelaskan maksud tokoh terbilang dalam Kesultanan Melayu Melaka."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 5.1.1, 5.1.2 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 5.1.1–5.1.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); ilustrasi struktur pentadbiran Melaka; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 8: Tokoh Terbilang Kesultanan Melayu Melaka, hlm. 104–119 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; ilustrasi struktur pentadbiran Melaka; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan ilustrasi struktur pentadbiran Melaka dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami tokoh terbilang kesultanan melayu melaka?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Tokoh Terbilang Kesultanan Melayu Melaka” dan menyoal “Apakah yang dapat kita buktikan tentang Tokoh Terbilang Kesultanan Melayu Melaka daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti ilustrasi struktur pentadbiran Melaka, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menyatakan struktur masyarakat zaman kesultanan melayu melaka."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 8, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan struktur masyarakat Zaman Kesultanan Melayu Melaka”."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut tokoh terbilang kesultanan melayu melaka. Murid menerangkan menjelaskan maksud tokoh terbilang dalam kesultanan melayu melaka; kemudian mengaitkan nilai menjelaskan kepentingan mencontohi nilai murni tokoh terbilang.."
+          "activity": "Murid menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan maksud tokoh terbilang dalam Kesultanan Melayu Melaka” dengan contoh daripada sumber, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan kepentingan mencontohi nilai murni tokoh terbilang; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang tokoh terbilang kesultanan melayu melaka, satu bukti daripada bahan, dan satu iktibar (pautan K5.1.5). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 5.1.1 dan 5.1.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K5.1.5."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 8: Tokoh Terbilang Kesultanan Melayu Melaka. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 8,
+          "unit_title": "Tokoh Terbilang Kesultanan Melayu Melaka",
+          "unit_start_page": 104,
+          "unit_end_page": 119,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -1871,12 +2196,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Tokoh Terbilang Kesultanan Melayu Melaka",
         "sk": "5.1",
         "sk_title": "Tokoh Terbilang Kesultanan Melayu Melaka",
-        "title": "Tokoh Terbilang Kesultanan Melayu Melaka — 026",
+        "title": "Unit 8: Tokoh Terbilang Kesultanan Melayu Melaka — PdP 026",
         "sp_codes": [
           "5.1.3",
           "K5.1.6"
@@ -1896,33 +2221,46 @@
         "objective": [
           "Murid dapat mengkategorikan peranan Sultan, Bendahara, dan Laksamana dalam Kesultanan Melayu Melaka."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 5.1.3 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 5.1.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); ilustrasi struktur pentadbiran Melaka; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 8: Tokoh Terbilang Kesultanan Melayu Melaka, hlm. 104–119 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; ilustrasi struktur pentadbiran Melaka; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan ilustrasi struktur pentadbiran Melaka dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami tokoh terbilang kesultanan melayu melaka?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Tokoh Terbilang Kesultanan Melayu Melaka” dan menyoal “Apakah yang dapat kita buktikan tentang Tokoh Terbilang Kesultanan Melayu Melaka daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti ilustrasi struktur pentadbiran Melaka, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi mengkategorikan peranan sultan, bendahara, dan laksamana dalam kesultanan melayu melaka."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 8, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta konsep atau catatan fakta beralasan bagi fokus “Mengkategorikan peranan Sultan, Bendahara, dan Laksamana dalam Kesultanan Melayu Melaka”."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut tokoh terbilang kesultanan melayu melaka. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai menghuraikan kepentingan menghargai sumbangan tokoh.."
+          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Mengkategorikan peranan Sultan, Bendahara, dan Laksamana dalam Kesultanan Melayu Melaka, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghuraikan kepentingan menghargai sumbangan tokoh; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang tokoh terbilang kesultanan melayu melaka, satu bukti daripada bahan, dan satu iktibar (pautan K5.1.6). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 5.1.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K5.1.6."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 8: Tokoh Terbilang Kesultanan Melayu Melaka. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 8,
+          "unit_title": "Tokoh Terbilang Kesultanan Melayu Melaka",
+          "unit_start_page": 104,
+          "unit_end_page": 119,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -1943,12 +2281,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Tokoh Terbilang Kesultanan Melayu Melaka",
         "sk": "5.1",
         "sk_title": "Tokoh Terbilang Kesultanan Melayu Melaka",
-        "title": "Tokoh Terbilang Kesultanan Melayu Melaka — 027",
+        "title": "Unit 8: Tokoh Terbilang Kesultanan Melayu Melaka — PdP 027",
         "sp_codes": [
           "5.1.4"
         ],
@@ -1962,33 +2300,46 @@
         "objective": [
           "Murid dapat menerangkan cara menghargai keistimewaan tokoh terbilang Kesultanan Melayu Melaka."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 5.1.4 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 5.1.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); ilustrasi struktur pentadbiran Melaka; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 8: Tokoh Terbilang Kesultanan Melayu Melaka, hlm. 104–119 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; ilustrasi struktur pentadbiran Melaka; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan ilustrasi struktur pentadbiran Melaka dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami tokoh terbilang kesultanan melayu melaka?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Tokoh Terbilang Kesultanan Melayu Melaka” dan menyoal “Apakah yang dapat kita buktikan tentang Tokoh Terbilang Kesultanan Melayu Melaka daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti ilustrasi struktur pentadbiran Melaka, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menerangkan cara menghargai keistimewaan tokoh terbilang kesultanan melayu melaka."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 8, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menerangkan cara menghargai keistimewaan tokoh terbilang Kesultanan Melayu Melaka” dengan contoh daripada sumber."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut tokoh terbilang kesultanan melayu melaka. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai patriotisme."
+          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menerangkan cara menghargai keistimewaan tokoh terbilang Kesultanan Melayu Melaka, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta dan sebab-akibat; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang tokoh terbilang kesultanan melayu melaka, satu bukti daripada bahan, dan satu iktibar . Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 5.1.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 8: Tokoh Terbilang Kesultanan Melayu Melaka. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 8,
+          "unit_title": "Tokoh Terbilang Kesultanan Melayu Melaka",
+          "unit_start_page": 104,
+          "unit_end_page": 119,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -2009,12 +2360,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Tokoh Terbilang Kesultanan Melayu Melaka",
         "sk": "5.2",
         "sk_title": "Pengasas Kesultanan Melayu Melaka",
-        "title": "Pengasas Kesultanan Melayu Melaka — 028",
+        "title": "Unit 9: Pengasas Kesultanan Melayu Melaka — PdP 028",
         "sp_codes": [
           "5.2.1",
           "5.2.2",
@@ -2040,33 +2391,46 @@
           "Murid dapat menyatakan latar belakang pengasas Kesultanan Melayu Melaka.",
           "Murid dapat menerangkan rentetan peristiwa perjalanan pengasas Kesultanan Melayu Melaka."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 5.2.1, 5.2.2 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 5.2.1–5.2.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); peta perjalanan dan kronologi pengasasan Melaka; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 9: Pengasas Kesultanan Melayu Melaka, hlm. 120–137 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta perjalanan dan kronologi pengasasan Melaka; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan peta perjalanan dan kronologi pengasasan Melaka dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami pengasas kesultanan melayu melaka?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Pengasas Kesultanan Melayu Melaka” dan menyoal “Apakah yang dapat kita buktikan tentang Pengasas Kesultanan Melayu Melaka daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti peta perjalanan dan kronologi pengasasan Melaka, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menyatakan latar belakang pengasas kesultanan melayu melaka."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 9, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan latar belakang pengasas Kesultanan Melayu Melaka”."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut pengasas kesultanan melayu melaka. Murid menerangkan menerangkan rentetan peristiwa perjalanan pengasas kesultanan melayu melaka; kemudian mengaitkan nilai menerangkan kepentingan sifat-sifat kepimpinan tokoh yang boleh dicontohi.."
+          "activity": "Murid menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menerangkan rentetan peristiwa perjalanan pengasas Kesultanan Melayu Melaka” dengan contoh daripada sumber, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menerangkan kepentingan sifat-sifat kepimpinan tokoh yang boleh dicontohi; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang pengasas kesultanan melayu melaka, satu bukti daripada bahan, dan satu iktibar (pautan K5.2.5). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 5.2.1 dan 5.2.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K5.2.5."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 9: Pengasas Kesultanan Melayu Melaka. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 9,
+          "unit_title": "Pengasas Kesultanan Melayu Melaka",
+          "unit_start_page": 120,
+          "unit_end_page": 137,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -2087,12 +2451,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Tokoh Terbilang Kesultanan Melayu Melaka",
         "sk": "5.2",
         "sk_title": "Pengasas Kesultanan Melayu Melaka",
-        "title": "Pengasas Kesultanan Melayu Melaka — 029",
+        "title": "Unit 9: Pengasas Kesultanan Melayu Melaka — PdP 029",
         "sp_codes": [
           "5.2.3",
           "K5.2.6"
@@ -2112,33 +2476,46 @@
         "objective": [
           "Murid dapat menjelaskan peristiwa pembukaan Melaka."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 5.2.3 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 5.2.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); peta perjalanan dan kronologi pengasasan Melaka; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 9: Pengasas Kesultanan Melayu Melaka, hlm. 120–137 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta perjalanan dan kronologi pengasasan Melaka; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan peta perjalanan dan kronologi pengasasan Melaka dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami pengasas kesultanan melayu melaka?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Pengasas Kesultanan Melayu Melaka” dan menyoal “Apakah yang dapat kita buktikan tentang Pengasas Kesultanan Melayu Melaka daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti peta perjalanan dan kronologi pengasasan Melaka, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menjelaskan peristiwa pembukaan melaka."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 9, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan peristiwa pembukaan Melaka” dengan contoh daripada sumber."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut pengasas kesultanan melayu melaka. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai menjelaskan kepentingan sumbangan pengasas kesultanan melayu melaka.."
+          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menjelaskan peristiwa pembukaan Melaka, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan kepentingan sumbangan pengasas Kesultanan Melayu Melaka; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang pengasas kesultanan melayu melaka, satu bukti daripada bahan, dan satu iktibar (pautan K5.2.6). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 5.2.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K5.2.6."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 9: Pengasas Kesultanan Melayu Melaka. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 9,
+          "unit_title": "Pengasas Kesultanan Melayu Melaka",
+          "unit_start_page": 120,
+          "unit_end_page": 137,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -2159,12 +2536,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Tokoh Terbilang Kesultanan Melayu Melaka",
         "sk": "5.2",
         "sk_title": "Pengasas Kesultanan Melayu Melaka",
-        "title": "Pengasas Kesultanan Melayu Melaka — 030",
+        "title": "Unit 9: Pengasas Kesultanan Melayu Melaka — PdP 030",
         "sp_codes": [
           "5.2.4",
           "K5.2.7"
@@ -2184,33 +2561,46 @@
         "objective": [
           "Murid dapat menghuraikan asal usul nama Melaka dari pelbagai sumber."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 5.2.4 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 5.2.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); peta perjalanan dan kronologi pengasasan Melaka; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 9: Pengasas Kesultanan Melayu Melaka, hlm. 120–137 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta perjalanan dan kronologi pengasasan Melaka; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan peta perjalanan dan kronologi pengasasan Melaka dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami pengasas kesultanan melayu melaka?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Pengasas Kesultanan Melayu Melaka” dan menyoal “Apakah yang dapat kita buktikan tentang Pengasas Kesultanan Melayu Melaka daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti peta perjalanan dan kronologi pengasasan Melaka, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menghuraikan asal usul nama melaka dari pelbagai sumber."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 9, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menghuraikan asal usul nama Melaka dari pelbagai sumber” dengan contoh daripada sumber."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut pengasas kesultanan melayu melaka. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai menghuraikan kepentingan sikap taat setia kepada raja dan negara.."
+          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menghuraikan asal usul nama Melaka dari pelbagai sumber, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghuraikan kepentingan sikap taat setia kepada raja dan negara; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang pengasas kesultanan melayu melaka, satu bukti daripada bahan, dan satu iktibar (pautan K5.2.7). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 5.2.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K5.2.7."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 9: Pengasas Kesultanan Melayu Melaka. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 9,
+          "unit_title": "Pengasas Kesultanan Melayu Melaka",
+          "unit_start_page": 120,
+          "unit_end_page": 137,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -2231,12 +2621,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KAJIAN_KES",
         "tema": "Tokoh Terbilang Kesultanan Melayu Melaka",
         "sk": "5.2",
         "sk_title": "Pengasas Kesultanan Melayu Melaka",
-        "title": "Kajian kes: kerajaan awal dan hubungan serantau",
+        "title": "Unit 9: Pengasas Kesultanan Melayu Melaka — PdP 031",
         "sp_codes": [
           "5.2.1",
           "5.2.2",
@@ -2262,33 +2652,46 @@
           "Membina satu soalan inkuiri berkenaan Pengasas Kesultanan Melayu Melaka.",
           "Mengenal pasti sekurang-kurangnya dua bukti relevan dan menerangkan kesimpulan secara beralasan."
         ],
-        "success_criteria": "Murid menyatakan persoalan kajian, dua bukti dan satu rumusan berasas.",
+        "success_criteria": "Murid membina persoalan kajian, menyatakan dua bukti relevan dan menjelaskan satu rumusan yang disokong bukti.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); peta perjalanan dan kronologi pengasasan Melaka; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 9: Pengasas Kesultanan Melayu Melaka, hlm. 120–137 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta perjalanan dan kronologi pengasasan Melaka; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan peta perjalanan dan kronologi pengasasan Melaka dan mengemukakan soalan: “Apakah bukti yang dapat menyokong dapatan tentang pengasas kesultanan melayu melaka?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Pengasas Kesultanan Melayu Melaka” dan menyoal “Apakah bukti yang menyokong persoalan kajian tentang Pengasas Kesultanan Melayu Melaka?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid merumuskan soalan kajian \"Kajian kes: kerajaan awal dan hubungan serantau\" dan memilih sumber yang boleh disemak (buku teks, peta, dokumen, foto berlabel). Murid membina jadual persoalan–sumber–bukti."
+          "activity": "Guru membantu murid membina soalan kajian “Pengasas Kesultanan Melayu Melaka”, mencari dua sumber berbeza dan membezakan fakta dengan pendapat. Murid melengkapkan jadual soalan–sumber–bukti, tanpa menyalin bulat-bulat teks sumber."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyemak kebolehpercayaan dua sumber dan membimbing pembezaan fakta dengan pandangan. Murid mencatat bukti, membina rumusan ringkas dan menyatakan had maklumat yang diperoleh."
+          "activity": "Murid membandingkan dua sumber berkaitan Pengasas Kesultanan Melayu Melaka, menyusun maklumat mengikut kronologi atau kategori, lalu merumus satu dapatan dan batas bukti. Guru membimbing murid menghubungkan iktibar dengan nilai sivik secara beralasan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid membentangkan dapatan berserta dua bukti dan satu iktibar. Guru menilai ketepatan sumber, kronologi, inferens serta komunikasi melalui senarai semak PBD."
+          "activity": "Pembentangan kajian ringkas: satu persoalan, dua bukti, satu rumusan. Guru menilai kesahan fakta, kesesuaian bukti, tafsiran dan komunikasi murid; beri maklum balas individu."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 9: Pengasas Kesultanan Melayu Melaka. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 9,
+          "unit_title": "Pengasas Kesultanan Melayu Melaka",
+          "unit_start_page": 120,
+          "unit_end_page": 137,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -2309,12 +2712,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Tokoh Terbilang Kesultanan Melayu Melaka",
         "sk": "5.3",
         "sk_title": "Tun Perak Sebagai Bendahara Melaka",
-        "title": "Tun Perak Sebagai Bendahara Melaka — 032",
+        "title": "Unit 10: Tun Perak Bendahara Terbilang — PdP 032",
         "sp_codes": [
           "5.3.1",
           "5.3.2",
@@ -2345,33 +2748,46 @@
           "Murid dapat menceritakan riwayat hidup Tun Perak.",
           "Murid dapat menganalisis peranan Tun Perak sebagai Bendahara Melaka."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 5.3.1, 5.3.2 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 5.3.1–5.3.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); petikan sumber berkaitan Tun Perak; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 10: Tun Perak Bendahara Terbilang, hlm. 138–153 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; petikan sumber berkaitan Tun Perak; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan petikan sumber berkaitan Tun Perak dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami tun perak sebagai bendahara melaka?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Tun Perak Bendahara Terbilang” dan menyoal “Apakah yang dapat kita buktikan tentang Tun Perak Bendahara Terbilang daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti petikan sumber berkaitan Tun Perak, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menceritakan riwayat hidup tun perak."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 10, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menceritakan riwayat hidup Tun Perak”."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut tun perak sebagai bendahara melaka. Murid menerangkan menganalisis peranan tun perak sebagai bendahara melaka; kemudian mengaitkan nilai mengambarkan cara menyatakan penghargaan terhadap jasa dan sumbangan tun perak.; menghuraikan kepentingan nilai taat setia kepada pemimpin.."
+          "activity": "Murid menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menganalisis peranan Tun Perak sebagai Bendahara Melaka” dengan contoh daripada sumber, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Mengambarkan cara menyatakan penghargaan terhadap jasa dan sumbangan Tun Perak; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang tun perak sebagai bendahara melaka, satu bukti daripada bahan, dan satu iktibar (pautan K5.3.4, K5.3.6). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 5.3.1 dan 5.3.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K5.3.4, K5.3.6."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 10: Tun Perak Bendahara Terbilang. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 10,
+          "unit_title": "Tun Perak Bendahara Terbilang",
+          "unit_start_page": 138,
+          "unit_end_page": 153,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -2392,12 +2808,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Tokoh Terbilang Kesultanan Melayu Melaka",
         "sk": "5.3",
         "sk_title": "Tun Perak Sebagai Bendahara Melaka",
-        "title": "Tun Perak Sebagai Bendahara Melaka — 033",
+        "title": "Unit 10: Tun Perak Bendahara Terbilang — PdP 033",
         "sp_codes": [
           "5.3.3",
           "K5.3.5"
@@ -2417,33 +2833,46 @@
         "objective": [
           "Murid dapat menghuraikan kebijaksanaan Tun Perak dalam membina kegemilangan Kesultanan Melayu Melaka."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 5.3.3 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 5.3.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); petikan sumber berkaitan Tun Perak; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 10: Tun Perak Bendahara Terbilang, hlm. 138–153 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; petikan sumber berkaitan Tun Perak; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan petikan sumber berkaitan Tun Perak dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami tun perak sebagai bendahara melaka?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Tun Perak Bendahara Terbilang” dan menyoal “Apakah yang dapat kita buktikan tentang Tun Perak Bendahara Terbilang daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti petikan sumber berkaitan Tun Perak, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menghuraikan kebijaksanaan tun perak dalam membina kegemilangan kesultanan melayu melaka."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 10, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menghuraikan kebijaksanaan Tun Perak dalam membina kegemilangan Kesultanan Melayu Melaka” dengan contoh daripada sumber."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut tun perak sebagai bendahara melaka. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai menjelaskan nilai kepimpinan tun perak yang boleh dicontohi.."
+          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menghuraikan kebijaksanaan Tun Perak dalam membina kegemilangan Kesultanan Melayu Melaka, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan nilai kepimpinan Tun Perak yang boleh dicontohi; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang tun perak sebagai bendahara melaka, satu bukti daripada bahan, dan satu iktibar (pautan K5.3.5). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 5.3.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K5.3.5."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 10: Tun Perak Bendahara Terbilang. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 10,
+          "unit_title": "Tun Perak Bendahara Terbilang",
+          "unit_start_page": 138,
+          "unit_end_page": 153,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -2464,12 +2893,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Tokoh Terbilang Kesultanan Melayu Melaka",
         "sk": "5.4",
         "sk_title": "Hang Tuah sebagai Laksamana Melaka",
-        "title": "Hang Tuah sebagai Laksamana Melaka — 034",
+        "title": "Unit 11: Hang Tuah Laksamana Terbilang — PdP 034",
         "sp_codes": [
           "5.4.1",
           "5.4.2",
@@ -2500,33 +2929,46 @@
           "Murid dapat menyatakan riwayat hidup Hang Tuah.",
           "Murid dapat menjelaskan kualiti diri Hang Tuah sebagai Laksamana Melaka."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 5.4.1, 5.4.2 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 5.4.1–5.4.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); petikan sumber berkaitan Hang Tuah; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 11: Hang Tuah Laksamana Terbilang, hlm. 154–168 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; petikan sumber berkaitan Hang Tuah; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan petikan sumber berkaitan Hang Tuah dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami hang tuah sebagai laksamana melaka?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Hang Tuah Laksamana Terbilang” dan menyoal “Apakah yang dapat kita buktikan tentang Hang Tuah Laksamana Terbilang daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti petikan sumber berkaitan Hang Tuah, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menyatakan riwayat hidup hang tuah."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 11, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan riwayat hidup Hang Tuah”."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut hang tuah sebagai laksamana melaka. Murid menerangkan menjelaskan kualiti diri hang tuah sebagai laksamana melaka; kemudian mengaitkan nilai mencontohi kesetiaan hang tuah sebagai laksamana melaka.; mencadangkan sikap bertanggungjawab mempertahankan kedaulatan negara.."
+          "activity": "Murid menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan kualiti diri Hang Tuah sebagai Laksamana Melaka” dengan contoh daripada sumber, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Mencontohi kesetiaan Hang Tuah sebagai Laksamana Melaka; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang hang tuah sebagai laksamana melaka, satu bukti daripada bahan, dan satu iktibar (pautan K5.4.4, K5.4.6). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 5.4.1 dan 5.4.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K5.4.4, K5.4.6."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 11: Hang Tuah Laksamana Terbilang. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 11,
+          "unit_title": "Hang Tuah Laksamana Terbilang",
+          "unit_start_page": 154,
+          "unit_end_page": 168,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -2547,12 +2989,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KANDUNGAN",
         "tema": "Tokoh Terbilang Kesultanan Melayu Melaka",
         "sk": "5.4",
         "sk_title": "Hang Tuah sebagai Laksamana Melaka",
-        "title": "Hang Tuah sebagai Laksamana Melaka — 035",
+        "title": "Unit 11: Hang Tuah Laksamana Terbilang — PdP 035",
         "sp_codes": [
           "5.4.3",
           "K5.4.5"
@@ -2572,33 +3014,46 @@
         "objective": [
           "Murid dapat menganalisis peranan Hang Tuah sebagai Laksamana Melaka."
         ],
-        "success_criteria": "Murid menghasilkan respons individu yang memenuhi kata tugas 5.4.3 dan menghubungkan satu nilai sivik.",
+        "success_criteria": "Murid menyiapkan produk 5.4.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); petikan sumber berkaitan Hang Tuah; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 11: Hang Tuah Laksamana Terbilang, hlm. 154–168 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; petikan sumber berkaitan Hang Tuah; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan petikan sumber berkaitan Hang Tuah dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami hang tuah sebagai laksamana melaka?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Hang Tuah Laksamana Terbilang” dan menyoal “Apakah yang dapat kita buktikan tentang Hang Tuah Laksamana Terbilang daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid meneliti petikan sumber berkaitan Hang Tuah, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menganalisis peranan hang tuah sebagai laksamana melaka."
+          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 11, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menganalisis peranan Hang Tuah sebagai Laksamana Melaka” dengan contoh daripada sumber."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut hang tuah sebagai laksamana melaka. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai menjelaskan kebijaksanaan tokoh dalam menyelesaikan sesuatu masalah.."
+          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menganalisis peranan Hang Tuah sebagai Laksamana Melaka, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan kebijaksanaan tokoh dalam menyelesaikan sesuatu masalah; jawapan mesti disokong bahan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid melengkapkan tiket keluar: satu fakta tepat tentang hang tuah sebagai laksamana melaka, satu bukti daripada bahan, dan satu iktibar (pautan K5.4.5). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham."
+          "activity": "Murid menyerahkan hasil 5.4.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K5.4.5."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 11: Hang Tuah Laksamana Terbilang. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 11,
+          "unit_title": "Hang Tuah Laksamana Terbilang",
+          "unit_start_page": 154,
+          "unit_end_page": 168,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {
@@ -2619,12 +3074,12 @@
         "year": 4,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKs_BELUM_SELESAI",
+        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
         "type": "KAJIAN_KES",
         "tema": "Tokoh Terbilang Kesultanan Melayu Melaka",
         "sk": "5.4",
         "sk_title": "Hang Tuah sebagai Laksamana Melaka",
-        "title": "Kajian kes: teladan tokoh Kesultanan Melayu Melaka",
+        "title": "Unit 11: Hang Tuah Laksamana Terbilang — PdP 036",
         "sp_codes": [
           "5.4.1",
           "5.4.2",
@@ -2650,33 +3105,46 @@
           "Membina satu soalan inkuiri berkenaan Hang Tuah sebagai Laksamana Melaka.",
           "Mengenal pasti sekurang-kurangnya dua bukti relevan dan menerangkan kesimpulan secara beralasan."
         ],
-        "success_criteria": "Murid menyatakan persoalan kajian, dua bukti dan satu rumusan berasas.",
+        "success_criteria": "Murid membina persoalan kajian, menyatakan dua bukti relevan dan menjelaskan satu rumusan yang disokong bukti.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 4 KSSR Semakan 2017 (halaman perlu disahkan); petikan sumber berkaitan Hang Tuah; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 11: Hang Tuah Laksamana Terbilang, hlm. 154–168 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; petikan sumber berkaitan Hang Tuah; kad sumber/lembaran bukti.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan petikan sumber berkaitan Hang Tuah dan mengemukakan soalan: “Apakah bukti yang dapat menyokong dapatan tentang hang tuah sebagai laksamana melaka?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah."
+          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Hang Tuah Laksamana Terbilang” dan menyoal “Apakah bukti yang menyokong persoalan kajian tentang Hang Tuah Laksamana Terbilang?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid merumuskan soalan kajian \"Kajian kes: teladan tokoh Kesultanan Melayu Melaka\" dan memilih sumber yang boleh disemak (buku teks, peta, dokumen, foto berlabel). Murid membina jadual persoalan–sumber–bukti."
+          "activity": "Guru membantu murid membina soalan kajian “Hang Tuah Laksamana Terbilang”, mencari dua sumber berbeza dan membezakan fakta dengan pendapat. Murid melengkapkan jadual soalan–sumber–bukti, tanpa menyalin bulat-bulat teks sumber."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyemak kebolehpercayaan dua sumber dan membimbing pembezaan fakta dengan pandangan. Murid mencatat bukti, membina rumusan ringkas dan menyatakan had maklumat yang diperoleh."
+          "activity": "Murid membandingkan dua sumber berkaitan Hang Tuah Laksamana Terbilang, menyusun maklumat mengikut kronologi atau kategori, lalu merumus satu dapatan dan batas bukti. Guru membimbing murid menghubungkan iktibar dengan nilai sivik secara beralasan."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid membentangkan dapatan berserta dua bukti dan satu iktibar. Guru menilai ketepatan sumber, kronologi, inferens serta komunikasi melalui senarai semak PBD."
+          "activity": "Pembentangan kajian ringkas: satu persoalan, dua bukti, satu rumusan. Guru menilai kesahan fakta, kesesuaian bukti, tafsiran dan komunikasi murid; beri maklum balas individu."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya."
+          "activity": "Guru merumus isi penting Unit 11: Hang Tuah Laksamana Terbilang. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
         "textbook_page_verified": false,
-        "teacher_approval": false
+        "teacher_approval": false,
+        "textbook_reference": {
+          "year": 4,
+          "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+          "edition": "DBP 2019, KSSR Semakan 2017",
+          "isbn": "978-983-49-2472-0",
+          "unit_number": 11,
+          "unit_title": "Hang Tuah Laksamana Terbilang",
+          "unit_start_page": 154,
+          "unit_end_page": 168,
+          "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
+          "exact_activity_page_confirmed": false
+        },
+        "unit_toc_verified": true
       },
       "weeks": {
         "A": {

@@ -1,27 +1,29 @@
 # RPH SEJARAH TAHUN 6 — PdP 006
 
-**Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
+**Status:** DRAF (semakan halaman aktiviti/kelulusan guru belum selesai)  
 **Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-02-07–2027-02-11 | **B:** 2027-02-08–2027-02-12  
-**Tema:** Negara Malaysia | **Tajuk:** Negeri-negeri di Malaysia | **SK:** 10.2  
+**Tema:** Negara Malaysia | **Tajuk:** Unit 2: Negeri-negeri di Malaysia — PdP 006 | **SK:** 10.2  
 **SP:** 10.2.4, K10.2.7 | **Jenis:** PdP Kandungan
 
 **Objektif:**
 - Murid dapat menjelaskan bendera, lagu dan jata sebagai lambang negeri.
 
-**Kriteria kejayaan:** Murid menghasilkan respons individu yang memenuhi kata tugas 10.2.4 dan menghubungkan satu nilai sivik.
+**Kriteria kejayaan:** Murid menyiapkan produk 10.2.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.
 
-**BBM:** Buku Teks Sejarah Tahun 6 KSSR Semakan 2017 (halaman perlu disahkan); peta negeri, bendera dan jata rasmi negeri; kad sumber/lembaran bukti.
+**Buku teks dan bahan:** Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 2: Negeri-negeri di Malaysia, hlm. 20–33 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta negeri, bendera dan jata rasmi negeri; kad sumber/lembaran bukti.
 
-**Set Induksi (5 min):** Guru mempamerkan peta negeri, bendera dan jata rasmi negeri dan mengemukakan soalan: “Bagaimanakah bahan sejarah membantu kita memahami negeri-negeri di malaysia?” Murid membuat pemerhatian awal dan menyatakan satu persoalan sejarah.
+**Set Induksi (5 min):** Guru mempamerkan imej, peta atau petikan bertajuk “Negeri-negeri di Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Negeri-negeri di Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid meneliti peta negeri, bendera dan jata rasmi negeri, menyoal asal usul dan konteks sumber. Murid bekerja berpasangan untuk mencari bukti bagi menjelaskan bendera, lagu dan jata sebagai lambang negeri.
+**Aktiviti 1 (20 min):** Guru menunjukkan cara mencari maklumat dalam Unit 2, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan bendera, lagu dan jata sebagai lambang negeri” dengan contoh daripada sumber.
 
-**Aktiviti 2 (20 min):** Guru mengendalikan perbincangan peta i-Think/garis masa/jadual perbandingan mengikut negeri-negeri di malaysia. Murid menerangkan kaitan bukti dengan tema; kemudian mengaitkan nilai menjelaskan rasa bangga terhadap warisan negeri-negeri di malaysia..
+**Aktiviti 2 (20 min):** Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menjelaskan bendera, lagu dan jata sebagai lambang negeri, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan rasa bangga terhadap warisan negeri-negeri di Malaysia; jawapan mesti disokong bahan.
 
-**Pengukuhan dan PBD (10 min):** Murid melengkapkan tiket keluar: satu fakta tepat tentang negeri-negeri di malaysia, satu bukti daripada bahan, dan satu iktibar (pautan K10.2.7). Guru merekod jawapan individu dan memberi pemulihan berdasarkan salah faham.
+**Pengukuhan dan PBD (10 min):** Murid menyerahkan hasil 10.2.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K10.2.7.
 
-**Penutup (5 min):** Guru merumus dapatan berdasarkan SP dan membetulkan fakta yang tersasar. Dua murid berkongsi satu pengajaran; guru catat pemerhatian untuk PdP seterusnya.
+**Penutup (5 min):** Guru merumus isi penting Unit 2: Negeri-negeri di Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini.
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
 
-**Sumber:** DSKP Sejarah Tahun 6 KSSR Semakan 2017; pengesahan halaman buku teks masih diperlukan. Jangan anggap tarikh cadangan sebagai jadual PdP sebenar.
+**Bukti sumber:** https://fliphtml5.com/itcew/pnmn (ISBN 978-983-49-3279-4); isi kandungan membuktikan permulaan unit, BUKAN halaman aktiviti individu.
+
+**Perhatian:** RPH ini ialah draf PdP berpandukan unit dan SP. Tarikh cadangan bukan jadual kelas sebenar; semakan visual aktiviti buku, cuti negeri, dan ujian Word/PDF belum lulus.
