@@ -37,8 +37,8 @@
       "year": 5,
       "sow": "1FHJm1tl7IamOSZWIndUMoytm6SGoexAV",
       "teacher_book": "14Vpj-DjCbOERXdx7rGG8zhzNhsnUEPsM",
-      "audit_level": "SOW_160; 62 Lessons have explicit CD/Track mentions; physical TB and actual Telegram media map not fully validated",
-      "audio_source": "English Plus 1 Audio Year5 folder shows first 100 MP3 only (partial listing)"
+      "audit_level": "SOW_160; 62 Lessons explicitly mention numbered audio. Full listed folder contains 120 MP3 files for 119 unique CD/Track labels (CD1=46, CD2=37, CD3=36); an extra byte-identical CD2-12 duplicate. Book-edition/content and real Telegram routes still unverified.",
+      "audio_source": "English Plus 1 Audio Year 5 Drive folder: 120 MP3 files, 119 unique disc-track labels and one identical CD2-12 duplicate; filenames identify English Plus Second Edition Students Book 1."
     },
     {
       "year": 6,
@@ -119,13 +119,14 @@
         29,
         30
       ],
-      "exact_issue": "Year5 SOW L29 specifies CD3.02/03 and L30 CD3.04. The first 100 files in English Plus1 Year5 Drive folder contain three correspondingly named MP3s; actual speech and bot routes not tested.",
+      "exact_issue": "Whole Year5 English Plus 1 Audio Drive folder now enumerated: 120 MP3, 119 unique CD/Track pairs and one byte-identical CD2-12 copy; no numbered gaps CD1 1–46/CD2 1–37/CD3 1–36. SOW Year5 L29 CD3 tracks02/03 and L30 CD3 track04 map to corresponding candidate file labels. Audio content, edition fidelity and actual Telegram file routes remain unverified.",
       "source_ids": [
         "1T-HBLwsQ2C4eC3egNFZ9ZgDLsOxDRO6N",
         "16N8fUyxWYYyzmeEIYyB7_f1MzLS2i5Zf",
         "1e4xl-R1CYY3t0XGiWhr8sKxVRzBrTNcX"
       ],
-      "status": "SOURCE_FILENAME_CANDIDATES_ONLY"
+      "status": "DRIVE_120_MP3_INVENTORY_AND_DUPLICATE_HASH_PASS_AUDIO_SPEECH_AND_TELEGRAM_PENDING",
+      "evidence_path": "audits/english_y5_full_120_mp3_folder_inventory_20261105.json"
     },
     {
       "id": "Y2_L26_AUDIO_TB_CHECK",
@@ -151,7 +152,7 @@
   "limitations": [
     "960/960 official SOW lesson titles indexed, not 960/960 Student's Book/Teacher's Book pages visually verified.",
     "Year1–3 official SOW contains no explicit audio-track IDs, so an SOW-only scan cannot declare audio unused, missing or correct.",
-    "Year5 Drive folder listing was capped at first 100, never claim the complete catalog was enumerated.",
+    "Year5 Drive audio folder now directly enumerated at 120 MP3 files/119 unique CD-Track labels; audio content, edition and actual Telegram routes remain unchecked.",
     "No query of live Telegram users/payment/credit tables, no real auth Telegram audio send, and no audio speech recognition was run.",
     "No changes to production main, Supabase, original audio files, quotas, subscriptions or referrals."
   ],
