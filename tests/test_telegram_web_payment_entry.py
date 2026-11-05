@@ -51,6 +51,7 @@ class PaymentCatalogTests(unittest.TestCase):
     def setUp(self):
         app=Flask(__name__)
         self.rt=SimpleNamespace(
+            API="https://api.telegram.org/bot123456789:"+"A"*40,
             CIKGULAJU_PROOF_FIRST_PAYMENT_ACTIVE=True,
             DONATION_QR_B64=base64.b64encode(b"\xff\xd8\xff"+b"x"*1000).decode("ascii"))
         app.register_blueprint(create_web_payment_source(self.rt))
@@ -74,6 +75,7 @@ class PaymentCatalogTests(unittest.TestCase):
             h={"Authorization":"Bearer "+"a"*64}
             result=self.client.get("/internal/payment/v1/catalog",headers=h)
             self.assertEqual(result.status_code,200)
+            self.assertEqual(result.json["telegram_bot_id"],"123456789")
             plans={p["code"]:p["amount"] for p in result.json["plans"]}
             self.assertEqual(plans,{"rakan_pembangun":"10.00",
                                     "langganan_30_hari":"5.00"})
