@@ -274,23 +274,6 @@ except Exception as _ref_admin_exc:
     print("Private referral admin report unavailable:",
           type(_ref_admin_exc).__name__, flush=True)
 
-# Admin-only Web launch announcement, installed after referral admin's
-# panel edit to merge both buttons into the final Telegram keyboard. It cannot
-# send anything at deployment or when Panel Admin is opened: admin must preview
-# and explicitly confirm first. Each attempted recipient is logged in Supabase.
-try:
-    from web.admin_web_launch_broadcast import install as install_web_announcement
-    TELEGRAM_WEB_BROADCAST_READY = bool(
-        DURABLE_USER_PAYMENT_STORE_ACTIVE
-        and install_web_announcement(
-            telegram_runtime,
-            preserve_referral=PRIVATE_REFERRAL_ADMIN_POINTS_ACTIVE))
-except Exception as _web_broadcast_exc:
-    TELEGRAM_WEB_BROADCAST_READY = False
-    print("Web launch admin broadcast unavailable:",
-          type(_web_broadcast_exc).__name__, flush=True)
-
-
 # English Year 4 Lesson 30: fail closed on a proven source discrepancy.
 # Original app.py v25.257/v25.258/v25.259 maps L030 to CD2 Track29,
 # while printed TB p39 identifies CD1 Track29 for SB p20 Activity 2.
@@ -438,3 +421,24 @@ try:
 except Exception as _web_menu_error:
     TELEGRAM_WEB_LINK_MENU_ACTIVE = False
     print("Telegram Web menu unavailable:", type(_web_menu_error).__name__, flush=True)
+
+# Registration intentionally last. DURABLE_USER_PAYMENT_STORE_ACTIVE is
+# only available after the Supabase user-record bridge above; registering any
+# earlier caused a startup NameError and hid the broadcast button.
+# Admin-only Web launch announcement, installed after referral admin's
+# panel edit to merge both buttons into the final Telegram keyboard. It cannot
+# send anything at deployment or when Panel Admin is opened: admin must preview
+# and explicitly confirm first. Each attempted recipient is logged in Supabase.
+try:
+    from web.admin_web_launch_broadcast import install as install_web_announcement
+    TELEGRAM_WEB_BROADCAST_READY = bool(
+        DURABLE_USER_PAYMENT_STORE_ACTIVE
+        and install_web_announcement(
+            telegram_runtime,
+            preserve_referral=PRIVATE_REFERRAL_ADMIN_POINTS_ACTIVE))
+except Exception as _web_broadcast_exc:
+    TELEGRAM_WEB_BROADCAST_READY = False
+    print("Web launch admin broadcast unavailable:",
+          type(_web_broadcast_exc).__name__, flush=True)
+
+
