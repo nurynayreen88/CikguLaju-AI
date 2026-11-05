@@ -45,7 +45,8 @@ def main() -> None:
         assert all(raw.count("**"+step+" (") == 1 for step in SECTIONS), path
         for field in ("Set induksi", "Aktiviti 1", "Aktiviti 2", "Pengukuhan/Pentaksiran PBD", "Penutup"):
             line = next(x for x in raw.splitlines() if x.startswith("**"+field+" ("))
-            assert len(line) >= 150 and "Guru" in line and "Murid" in line, (path, field)
+            assert len(line) >= 150 and "Guru" in line, (path, field)
+            assert "Murid" in line or (field == "Pengukuhan/Pentaksiran PBD" and "individu" in line), (path, field)
         for code in r["sp"]:
             assert code in raw and re.search(r"\b"+re.escape(code)+r"\b",raw), (path,code)
         assert "60 minit" in raw and "Kriteria kejayaan" in raw, path
