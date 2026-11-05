@@ -350,7 +350,7 @@ class PSVSourceOrderTests(unittest.TestCase):
                 text = (ROOT / f"rph_standalone/psv/year5/lesson_{n:03d}.md").read_text(encoding="utf-8").lower()
                 self.assertTrue(all(term in text for term in phrases))
                 self.assertEqual(rows[n - 1]["Status"], "DRAF_SEMAK")
-                self.assertIn("1UA9arc9LrigHx-GccSJFpkTtqfskLFpg", text)
+                self.assertIn("1UA9arc9LrigHx-GccSJFpkTtqfskLFpg".lower(), text)
 
     def test_year5_bunga_kemboja_tekat_is_genuine_couching(self):
         rows = read_csv(PSV / "RPT_PSV_Tahun_5_2027_DRAF.csv")
