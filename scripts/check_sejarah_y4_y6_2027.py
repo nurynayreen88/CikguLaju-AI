@@ -87,6 +87,14 @@ for y, (num_sk, num_sp) in EXPECTED.items():
             assert ev["actual_textbook_visual_page_checked"] is False
             assert ev["textbook_html_page_text_read"] is (y == 5)
             assert r["status"].startswith("DRAF")
+        if y == 6 and i == 22:
+            assert "Anwar Ibrahim" in r["aktiviti_2"]["activity"]
+            assert "24 November 2022" in r["aktiviti_2"]["activity"]
+            assert r["current_official_supplement"]["reference_url"] == "https://www.kabinet.gov.my/senarai-perdana-menteri/"
+        if y == 6 and i == 32:
+            assert "Timor-Leste" in r["aktiviti_1"]["activity"]
+            assert "26 Oktober 2025" in r["aktiviti_1"]["activity"]
+            assert r["current_official_supplement"]["reference_url"] == "https://asean.org/about-asean/"
         assert ".." not in r["aktiviti_1"]["activity"] and ".." not in r["aktiviti_2"]["activity"]
         if r.get("context_specific_activity") and r["values_sp"]:
             civic = r["values_sp"][0]["text"].rstrip(".")

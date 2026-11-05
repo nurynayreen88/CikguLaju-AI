@@ -11,11 +11,11 @@
 
 **Kriteria kejayaan:** Murid dapat menghasilkan peta organisasi dan dua peranan Malaysia dalam ASEAN, dengan maklumat bersumber yang memenuhi SP 12.4.1, 12.4.2.
 
-**BBM:** Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 10: Malaysia dan Dunia, hlm. 160–176 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: peta Asia Tenggara dan simbol ASEAN serta organisasi antarabangsa; kad tugasan dan lembaran rekod PBD.
+**BBM:** Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 10: Malaysia dan Dunia, hlm. 160–176 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: peta Asia Tenggara dan simbol ASEAN serta organisasi antarabangsa; kad tugasan dan lembaran rekod PBD.; rujukan kemas kini kerajaan (6 Nov 2026): Portal ASEAN: Keanggotaan Timor-Leste
 
 **Set Induksi (5 min):** Guru mempamerkan peta Asia Tenggara dan simbol ASEAN serta organisasi antarabangsa. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 10: Malaysia dan Dunia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid melabel negara anggota ASEAN mengikut sumber semasa yang dinyatakan tahun. Guru menyemak jawapan awal berpandukan 12.4.1.
+**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid melabel negara anggota ASEAN mengikut sumber semasa yang dinyatakan tahun. Guru menyemak jawapan awal berpandukan 12.4.1. Guru menegaskan Timor-Leste diterima sebagai anggota ASEAN ke-11 pada 26 Oktober 2025; peta terkini perlu mencerminkan perubahan ini.
 
 **Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid membina rajah peranan Malaysia dalam kerjasama ASEAN dan membezakan organisasi serantau/antarabangsa. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menjalinkan hubungan baik dengan negara luar.
 

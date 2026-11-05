@@ -2289,18 +2289,18 @@
         ],
         "success_criteria": "Murid dapat menghasilkan jadual urutan Perdana Menteri bersumber dan garis masa, dengan maklumat bersumber yang memenuhi SP 12.1.1.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 7: Pemimpin Negara Malaysia, hlm. 106–123 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: kad biodata Perdana Menteri dan garis masa pelantikan daripada sumber rasmi bertarikh; kad tugasan dan lembaran rekod PBD.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 7: Pemimpin Negara Malaysia, hlm. 106–123 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: kad biodata Perdana Menteri dan garis masa pelantikan daripada sumber rasmi bertarikh; kad tugasan dan lembaran rekod PBD.; rujukan kemas kini kerajaan (6 Nov 2026): Senarai Perdana Menteri BKPP JPM",
         "set_induksi": {
           "min": 5,
           "activity": "Guru mempamerkan kad biodata Perdana Menteri dan garis masa pelantikan daripada sumber rasmi bertarikh. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 7: Pemimpin Negara Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun nama Perdana Menteri Malaysia mengikut urutan yang disemak tarikh. Guru menyemak jawapan awal berpandukan 12.1.1."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun nama Perdana Menteri Malaysia mengikut urutan yang disemak tarikh. Guru menyemak jawapan awal berpandukan 12.1.1. Guru menjelaskan buku 2021 sudah menyenaraikan PM ke-9, tetapi rujukan rasmi 2026 diperlukan untuk PM ke-10."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid membina garis masa dan menyatakan satu biodata ringkas bagi beberapa pemimpin. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan pemimpin yang memiliki ciri-ciri kepimpinan yang berwibawa."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid membina garis masa dan menyatakan satu biodata ringkas bagi beberapa pemimpin. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan pemimpin yang memiliki ciri-ciri kepimpinan yang berwibawa. Murid menambah PM ke-10, Anwar Ibrahim (24 November 2022), dan melabel tarikh serta sumber rasmi."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2337,6 +2337,12 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "current_official_supplement": {
+          "reference_url": "https://www.kabinet.gov.my/senarai-perdana-menteri/",
+          "checked_date": "2026-11-06",
+          "summary": "Buku DBP 2021 menyenaraikan PM1–9; BKPP JPM menyenaraikan Anwar Ibrahim sebagai PM ke-10 bermula 24 Nov 2022.",
+          "status": "OFFICIAL_CONTEXT_CHECKED_NOT_TEACHER_APPROVED"
         }
       },
       "weeks": {
@@ -3267,14 +3273,14 @@
         ],
         "success_criteria": "Murid dapat menghasilkan peta organisasi dan dua peranan Malaysia dalam ASEAN, dengan maklumat bersumber yang memenuhi SP 12.4.1, 12.4.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 10: Malaysia dan Dunia, hlm. 160–176 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: peta Asia Tenggara dan simbol ASEAN serta organisasi antarabangsa; kad tugasan dan lembaran rekod PBD.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 10: Malaysia dan Dunia, hlm. 160–176 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: peta Asia Tenggara dan simbol ASEAN serta organisasi antarabangsa; kad tugasan dan lembaran rekod PBD.; rujukan kemas kini kerajaan (6 Nov 2026): Portal ASEAN: Keanggotaan Timor-Leste",
         "set_induksi": {
           "min": 5,
           "activity": "Guru mempamerkan peta Asia Tenggara dan simbol ASEAN serta organisasi antarabangsa. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 10: Malaysia dan Dunia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid melabel negara anggota ASEAN mengikut sumber semasa yang dinyatakan tahun. Guru menyemak jawapan awal berpandukan 12.4.1."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid melabel negara anggota ASEAN mengikut sumber semasa yang dinyatakan tahun. Guru menyemak jawapan awal berpandukan 12.4.1. Guru menegaskan Timor-Leste diterima sebagai anggota ASEAN ke-11 pada 26 Oktober 2025; peta terkini perlu mencerminkan perubahan ini."
         },
         "aktiviti_2": {
           "min": 20,
@@ -3315,6 +3321,12 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "current_official_supplement": {
+          "reference_url": "https://asean.org/about-asean/",
+          "checked_date": "2026-11-06",
+          "summary": "Timor-Leste anggota ASEAN ke-11 sejak 26 Okt 2025 menurut Sekretariat ASEAN; buku DBP 2021 merupakan snapshot sejarah terdahulu.",
+          "status": "OFFICIAL_CONTEXT_CHECKED_NOT_TEACHER_APPROVED"
         }
       },
       "weeks": {

@@ -10,13 +10,13 @@
 
 **Kriteria kejayaan:** Murid dapat menghasilkan jadual urutan Perdana Menteri bersumber dan garis masa, dengan maklumat bersumber yang memenuhi SP 12.1.1.
 
-**BBM:** Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 7: Pemimpin Negara Malaysia, hlm. 106–123 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: kad biodata Perdana Menteri dan garis masa pelantikan daripada sumber rasmi bertarikh; kad tugasan dan lembaran rekod PBD.
+**BBM:** Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 7: Pemimpin Negara Malaysia, hlm. 106–123 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: kad biodata Perdana Menteri dan garis masa pelantikan daripada sumber rasmi bertarikh; kad tugasan dan lembaran rekod PBD.; rujukan kemas kini kerajaan (6 Nov 2026): Senarai Perdana Menteri BKPP JPM
 
 **Set Induksi (5 min):** Guru mempamerkan kad biodata Perdana Menteri dan garis masa pelantikan daripada sumber rasmi bertarikh. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 7: Pemimpin Negara Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun nama Perdana Menteri Malaysia mengikut urutan yang disemak tarikh. Guru menyemak jawapan awal berpandukan 12.1.1.
+**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun nama Perdana Menteri Malaysia mengikut urutan yang disemak tarikh. Guru menyemak jawapan awal berpandukan 12.1.1. Guru menjelaskan buku 2021 sudah menyenaraikan PM ke-9, tetapi rujukan rasmi 2026 diperlukan untuk PM ke-10.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid membina garis masa dan menyatakan satu biodata ringkas bagi beberapa pemimpin. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan pemimpin yang memiliki ciri-ciri kepimpinan yang berwibawa.
+**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid membina garis masa dan menyatakan satu biodata ringkas bagi beberapa pemimpin. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan pemimpin yang memiliki ciri-ciri kepimpinan yang berwibawa. Murid menambah PM ke-10, Anwar Ibrahim (24 November 2022), dan melabel tarikh serta sumber rasmi.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan jadual urutan Perdana Menteri bersumber dan garis masa. Guru menyemak secara individu menggunakan kata tugas SP 12.1.1 dan nilai K12.1.4, kemudian memberi intervensi kepada murid yang belum tepat.
 
