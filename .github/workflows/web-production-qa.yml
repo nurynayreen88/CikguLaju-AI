@@ -1,0 +1,48 @@
+name: CikguLaju Web production source and authorization QA
+on:
+  push:
+    branches:
+      - production/cikgulaju-web-20261105
+    paths:
+      - '.github/workflows/web-production-qa.yml'
+      - 'tools/run_web_production.py'
+      - 'tools/run_web_v1_preview.py'
+      - 'web/**'
+      - 'web_v1_static_preview/**'
+      - 'web_v1_telegram_login.py'
+      - 'tests/test_web_production_inventory.py'
+      - 'rph_standalone/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  isolated-web:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'flask==3.1.3' 'gunicorn==23.0.0'
+      - name: Run source, auth, RPH and document unit tests
+        run: |
+          python -m py_compile tools/run_web_production.py tools/run_web_v1_preview.py web/unified_rph_web.py web_v1_telegram_login.py
+          python -m unittest discover -s tests -p 'test_web_production_inventory.py' -v
+          python -m unittest discover -s tests -p 'test_web_unified_rph_preview.py' -v
+          python -m unittest discover -s tests -p 'test_web_v1_quick_preview.py' -v
+          python -m unittest discover -s tests -p 'test_web_saved_classes.py' -v
+          python -m unittest discover -s tests -p 'test_web_v1_telegram_login.py' -v
+          python -m unittest discover -s tests -p 'test_web_v1_telegram_auth_routes.py' -v
+          python -m unittest discover -s tests -p 'test_web_rpt_2027_all.py' -v
+      - name: Validate actual Web script
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          html=Path('web_v1_static_preview/index.html').read_text(encoding='utf8')
+          scripts=re.findall(r'<script>\s*(.*?)\s*</script>',html,flags=re.S)
+          assert len(scripts)==1
+          Path('/tmp/cikgulaju-web-production.js').write_text(scripts[0],encoding='utf8')
+          PY
+          node --check /tmp/cikgulaju-web-production.js
