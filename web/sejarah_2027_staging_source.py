@@ -70,6 +70,32 @@ def lesson(year,pdp,*,root=ROOT):
         plan=list(csv.DictReader(fh))
     if len(plan)!=36 or plan[pdp-1]["ID"]!=row["id"]:
         raise SejarahNotReady("RPT dan RPH tidak sepadan")
+    # Independently curated release ledger: editing a lesson's own READY flags
+    # can never make it deliverable. Both per-lesson and ledger approvals are required.
+    manifest_path = base/"audits/sejarah_y4_y6_release_approval_manifest_20261106.json"
+    if manifest_path.is_symlink() or not manifest_path.is_file() or manifest_path.stat().st_size > 2_000_000:
+        raise SejarahNotReady("Rekod kelulusan bebas tidak sah")
+    ledger=json.loads(manifest_path.read_text(encoding="utf-8"))
+    if (ledger.get("subject")!="Sejarah" or ledger.get("academic_year")!=2027
+        or ledger.get("count")!=108 or len(ledger.get("lessons",[]))!=108):
+        raise SejarahNotReady("Rekod kelulusan tidak lengkap")
+    entry=ledger["lessons"][36*(year-4)+pdp-1]
+    if (entry.get("id")!=row["id"] or entry.get("year")!=year or entry.get("pdp")!=pdp
+        or entry.get("sk")!=r["sk"] or entry.get("sp_codes")!=r["sp_codes"]
+        or entry.get("release_ready") is not True
+        or entry.get("exact_textbook_exercise_page_verified") is not True
+        or entry.get("teacher_individual_signoff") is not True
+        or entry.get("school_profile_logo_verified") is not True
+        or entry.get("telegram_web_native_parity_verified") is not True):
+        raise SejarahNotReady("PdP belum mempunyai kelulusan bebas dan bukti lengkap")
+    signed = r.get("release_signoff",{})
+    fingerprint=source_fingerprint(year,pdp,root=base)
+    if (not fingerprint or entry.get("approved_source_fingerprint")!=fingerprint
+        or signed.get("approved_source_fingerprint")!=fingerprint
+        or not str(entry.get("teacher_approved_by") or "").strip()
+        or not str(entry.get("textbook_evidence_url") or "").strip()):
+        raise SejarahNotReady("Bukti atau cap jari bahan tidak disahkan")
+
     # Missing approval evidence always fails closed, even when status is forged.
     checks=(
         r.get("teacher_approval") is True,
