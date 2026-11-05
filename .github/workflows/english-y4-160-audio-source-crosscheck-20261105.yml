@@ -5,6 +5,7 @@ on:
     paths:
       - 'audits/english_y4_sow_160_audio_index_20261105.json'
       - 'audits/english_y4_160_audio_drive_crosscheck_20261105.json'
+      - 'audits/english_y4_legacy_wma_to_mp3_candidates_20261105.json'
       - 'tests/test_english_y4_160_audio_crosscheck_20261105.py'
       - '.github/workflows/english-y4-160-audio-source-crosscheck-20261105.yml'
   workflow_dispatch:
