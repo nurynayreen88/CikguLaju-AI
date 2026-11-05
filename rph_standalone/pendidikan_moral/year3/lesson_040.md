@@ -17,14 +17,16 @@ Murid menyiapkan tugasan **SP 14.1** (Menyenaraikan ciri toleransi.) dan **SP 14
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Dua kumpulan murid berbeza pendapat tentang peraturan permainan**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Tugasan 14.1:** Guru membentangkan situasi **Dua kumpulan murid berbeza pendapat tentang peraturan permainan** dan menyediakan kad/gambar yang relevan dengan unit buku teks **Toleransi Sesama Warga Sekolah** (mula m/s 105; halaman aktiviti belum disahkan). Murid melaksanakan arahan **“Menyenaraikan ciri toleransi.”** dengan menghasilkan **senarai tiga contoh atau perkara yang tepat**; pasangan menyemak fakta, bukan hanya memilih tindakan baik atau buruk. Guru merekod satu respons individu.
+**Aktiviti 1 (20 minit) — Padanan tugasan buku:** Guru memaparkan dialog Rosmond dan Pei Yee ketika masuk dewan sekolah m/s105. Murid menyenaraikan tiga ciri toleransi, termasuk sabar menunggu giliran, bertolak ansur dan mendengar rakan (SP14.1). Guru menyemak hasil individu murid.
 
-**Aktiviti 2 (20 minit) — Tugasan 14.2:** Guru menukar sudut situasi kepada tindakan atau akibat yang boleh diperhatikan. Murid melaksanakan arahan **“Menjelaskan dengan contoh sikap toleransi sesama warga sekolah.”** dan menyediakan **penjelasan dalam dua ayat serta satu contoh** berdasarkan contoh yang relevan dengan unit. Murid membentangkan hasil dan memperbaiki jawapan selepas pertanyaan lanjut guru.
+**Aktiviti 2 (20 minit) — Padanan tugasan buku:** Guru menggunakan cerita catatan Sudep Singh m/s106–107 tentang berkongsi buku dan memberi ruang rakan. Murid menjelaskan dua contoh toleransi dengan alasan yang berasas (SP14.2). Guru menyemak hasil individu murid.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Guru mengutip hasil individu: **senarai tiga contoh atau perkara yang tepat** untuk SP 14.1 dan **penjelasan dalam dua ayat serta satu contoh** untuk SP 14.2; semak ketepatan makna, bukti dan kaitan dengan nilai **Toleransi**. Murid membetulkan satu jawapan selepas maklum balas.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menyemak tiga ciri dan dua contoh toleransi berdasarkan dialog/diari buku (SP14.1–14.2). Murid membetulkan satu jawapan selepas maklum balas guru.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **toleransi**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — unit bermula m/s 105 (PDF 111); halaman aktiviti khusus belum dipadankan; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 14, m/s 105–107 (PDF 111–113); contoh dialog, diari, permainan dan Uji Minda diperiksa, aktiviti diolah untuk PdP 040.
+
+**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — aktiviti Unit 14 m/s 105–107 (PDF 111–113) diperiksa secara visual; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
