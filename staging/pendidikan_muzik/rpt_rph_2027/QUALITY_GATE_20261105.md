@@ -174,3 +174,8 @@ PdP12–13 dan 24–26 diselaraskan dengan projek terpadu Kesenian Tahun3 halama
 - PdP21 kod RPT 3.1.2/3.1.3 berbanding DSKP+BT tercetak 3.2.2/3.2.3. PdP24 kod RPT 3.1.1/3.1.2/3.1.3 berbanding DSKP+BT 3.2.1/3.2.2/3.2.3.
 - DSKP mencetak SP 3.2.x di bawah SK 3.1, serta SP 4.2.1 di bawah SK 4.1. Buku T4 m/s70–71 menyatakan not G/A/B/C’ tetapi nota DSKP menyatakan B/A/G sahaja. Bukti: `year4/AUDIT_SK_SP_DSKP_BUKU_20261106.md`.
 - **Kod RPT asal dipelihara**. Keputusan rasmi normalisasi dan skop not masih tertangguh; audio/notasi visual, Word/PDF dan release tetap TIDAK FINAL READY.
+
+
+## 6 Nov 2026 — Gate Word/PDF Telegram–Web
+- Audit kod sedia ada mengesahkan `web/native_rph_telegram_api.py` belum menyokong subjek MUZIK dan `web/rph_shared_source_identity.py` belum mempunyai source path Muzik.
+- Belum ada ujian sebenar Word/PDF 175/175, satu halaman A4 dan parity Telegram–Web. Rujuk `INTEGRATION_WORD_PDF_RELEASE_GATE_20261106.md`. Jangan tambah subjek ke produksi tanpa data disahkan.
