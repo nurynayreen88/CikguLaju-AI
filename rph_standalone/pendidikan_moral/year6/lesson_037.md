@@ -17,9 +17,9 @@ Murid menyiapkan tugasan **SP 13.1** (Menyenaraikan contoh amalan kesederhanaan 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Komuniti merancang penggunaan sumber negara secara berhemat**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Tugasan 13.1:** Guru membentangkan situasi **Komuniti merancang penggunaan sumber negara secara berhemat** dan menyediakan kad/gambar yang relevan dengan unit buku teks **Gunakanlah Prasarana Secara Berhemah** (mula m/s 119; halaman aktiviti belum disahkan). Murid melaksanakan arahan **“Menyenaraikan contoh amalan kesederhanaan demi kesejahteraan negara.”** dengan menghasilkan **senarai tiga contoh atau perkara yang tepat**; pasangan menyemak fakta, bukan hanya memilih tindakan baik atau buruk. Guru merekod satu respons individu.
+**Aktiviti 1 (20 minit) — Contoh kesederhanaan di tempat awam:** Guru memaparkan kemudahan dan pengangkutan awam m/s 119–121. Murid menyenaraikan tiga amalan sederhana seperti menggunakan kemudahan mengikut keperluan, memberi keutamaan kepada yang memerlukan dan mengelakkan pembaziran (SP 13.1).
 
-**Aktiviti 2 (20 minit) — Tugasan 13.2:** Guru menukar sudut situasi kepada tindakan atau akibat yang boleh diperhatikan. Murid melaksanakan arahan **“Menghuraikan kepentingan amalan kesederhanaan demi kesejahteraan negara.”** dan menyediakan **dua huraian yang disokong sebab** berdasarkan contoh yang relevan dengan unit. Murid membentangkan hasil dan memperbaiki jawapan selepas pertanyaan lanjut guru.
+**Aktiviti 2 (20 minit) — Mengapa perlu bersederhana?:** Guru membincangkan gambar adab pengangkutan awam m/s 121 dan kesan vandalisme m/s 122–123. Murid menerangkan dua kepentingan menggunakan kemudahan awam secara berhemah kepada keselesaan, keselamatan serta kesejahteraan negara (SP 13.2).
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Guru mengutip hasil individu: **senarai tiga contoh atau perkara yang tepat** untuk SP 13.1 dan **dua huraian yang disokong sebab** untuk SP 13.2; semak ketepatan makna, bukti dan kaitan dengan nilai **Kesederhanaan**. Murid membetulkan satu jawapan selepas maklum balas.
 
@@ -27,4 +27,6 @@ Murid menyiapkan tugasan **SP 13.1** (Menyenaraikan contoh amalan kesederhanaan 
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — unit bermula m/s 119 (PDF 128); halaman aktiviti khusus belum dipadankan; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti buku teks disemak (2026-11-05):** Unit 13, m/s 119–123 (PDF 128–132). Bahan asal: Prasarana awam, panduan menggunakan pengangkutan awam secara berhemah dan larangan vandalisme. Aktiviti RPH ialah olahan PdP bagi SP rasmi, bukan salinan buku teks atau pengesahan amalan sebenar murid.
+
+**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — Unit 13, m/s 119–123 (PDF 128–132) disemak mengikut aktiviti buku teks; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
