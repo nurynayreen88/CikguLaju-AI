@@ -133,6 +133,76 @@ class PSV84SourceContentTests(unittest.TestCase):
                         folded,
                     )
 
+    def test_every_84_staging_adapter_preview_preserves_native_fields(self):
+        """Preview all individual lessons through the real fail-closed PSV adapter."""
+        from web.psv_2027_rph_release_bridge import adapt_rows, load_candidate
+        original = {
+            "KELAS": "6 Amanah",
+            "TARIKH": "2026-11-05",
+            "MASA": "10:00–11:00",
+            "REFLEKSI": "Guru catat selepas PdP",
+            "CATATAN": "Jangan ubah metadata pengguna",
+        }
+        count = 0
+        for year, checks in REQUIRED.items():
+            for pdp in checks:
+                with self.subTest(year=year, pdp=pdp):
+                    state = {
+                        "subject": "Pendidikan Seni Visual",
+                        "year": year,
+                        "lesson_no": pdp,
+                    }
+                    candidate = load_candidate(year, pdp, preview=True)
+                    self.assertIsNotNone(candidate)
+                    row = adapt_rows(state, original, preview=True)
+                    self.assertIsNot(row, original)
+                    self.assertEqual(row["STANDARD KANDUNGAN"], candidate["sk"])
+                    self.assertEqual(row["STANDARD PEMBELAJARAN"], candidate["sp"])
+                    self.assertEqual(row["OBJEKTIF PEMBELAJARAN"], candidate["objective"])
+                    self.assertEqual(row["KRITERIA KEJAYAAN"], candidate["evidence"])
+                    self.assertIn("Aktiviti 1", row["AKTIVITI UTAMA"])
+                    self.assertIn("Aktiviti 2", row["AKTIVITI UTAMA"])
+                    self.assertTrue(row["BAHAN BANTU MENGAJAR"])
+                    self.assertTrue(row["PENTAKSIRAN"])
+                    for k, v in original.items():
+                        self.assertEqual(row[k], v)
+                    self.assertNotIn("DRAF SEMAK", " ".join(map(str, row.values())))
+                    count += 1
+        self.assertEqual(count, 84)
+        untouched = adapt_rows({
+            "subject": "Pendidikan Kesenian", "year": 3, "lesson_no": 12
+        }, original, preview=True)
+        self.assertIs(untouched, original)
+
+    def test_each_84_rpt_sp_is_listed_in_original_year_dskp(self):
+        """Literal code whitelist derived from the 2019 Year3 and 2021 Year6 DSKP PDFs."""
+        codes = {
+            3: {
+                "1.1.1", "1.1.2", "1.1.3", "1.1.4", "1.1.5",
+                "1.1.6", "1.1.7", "1.1.8", "1.1.9", "1.1.10",
+                "2.1.1", "2.1.2", "2.1.3", "2.1.4",
+                "3.1.1", "3.1.2", "3.1.3", "3.1.4", "3.1.5",
+                "3.3.1", "3.3.2", "3.3.3", "3.3.4", "3.3.5",
+                "4.1.1", "4.1.2",
+            },
+            6: {
+                "1.1.1", "1.1.2", "1.1.3",
+                "2.1.1", "2.1.2", "2.1.3",
+                "3.1.1", "3.2.1", "3.2.2", "3.2.3",
+                "4.1.1",
+                "5.1.1", "5.1.2", "5.1.3", "5.1.4", "5.1.5",
+            },
+        }
+        for year in (3, 6):
+            for row in read_rpt(year):
+                with self.subTest(year=year, pdp=row["PdP"]):
+                    listed = [s.strip() for s in row["SP"].split(";")]
+                    self.assertTrue(set(listed).issubset(codes[year]))
+                    if year == 3 and int(row["PdP"]) in (20, 21, 41, 42):
+                        # Year3 DSKP prints SK 5.1 despite SP numbering 3.3.x.
+                        self.assertEqual(row["SK"], "5.1")
+                        self.assertTrue(all(s.startswith("3.3.") for s in listed))
+
     def test_no_source_verification_bypasses_telegram_release_gate(self):
         audit = ROOT / "rph_standalone/psv/audits/psv_individual_210_review_20261105.csv"
         with audit.open(encoding="utf-8-sig", newline="") as f:
