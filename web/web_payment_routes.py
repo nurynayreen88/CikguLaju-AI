@@ -137,10 +137,12 @@ class PaymentConflict(Exception):
 def _existing(conf, uid, *, opener=None):
     if type(uid) is not int or uid < 1:
         raise ProfileUnavailable("Akaun tidak sah")
+    # The partial unique DB index guarantees at most one Pending per user;
+    # read it directly, never miss an old Pending behind newer history rows.
     query=urlencode({
         "select":"id,chat_id,amount,status,submitted_at,proof_received_at",
         "chat_id":"eq."+str(uid),
-        "order":"id.desc", "limit":"15"})
+        "status":"eq.pending","order":"id.desc", "limit":"2"})
     rows=_payment_rest(conf,"GET",query=query,opener=opener)
     if any(not isinstance(r,dict) or r.get("chat_id") != str(uid) for r in rows):
         raise ProfileUnavailable("Padanan rekod pembayaran tidak sah")
