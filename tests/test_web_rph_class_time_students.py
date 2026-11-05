@@ -7,9 +7,10 @@ import unittest
 from unittest.mock import patch
 from flask import Flask
 from web.unified_rph_web import create_blueprint, source_records
-from web.native_rph_telegram_api import build_native_input
-from web.telegram_rph_parity import build_layout
-from web.unified_rph_web import SUBJECT_LABELS
+import json
+import os
+from web.unified_rph_web import _docx
+from web.native_telegram_rph_client import request_native_rph
 
 
 class RphMetadataTests(unittest.TestCase):
@@ -45,17 +46,31 @@ class RphMetadataTests(unittest.TestCase):
         self.assertEqual(header["Class"],"4 Bestari")
         self.assertEqual(header["Time"],"07:30 - 08:30")
         self.assertEqual(header["Number of Pupils"],"32")
-        payload={key:document[key] for key in ("year","subject","unit","lesson")}
-        payload["component"]=None
-        payload["teacher"]=document["teacher"]
-        payload["layout"]=document["telegram_layout"]
-        payload["source_digest"]=document["source_digest"]
-        payload["format"]="word"
-        state,_,fmt=build_native_input(payload)
-        self.assertEqual(fmt,"word")
-        self.assertEqual(state["rph_class"],"4 Bestari")
-        self.assertEqual(state["rph_time"],"07:30 - 08:30")
-        self.assertEqual(state["rph_students"],"32")
+        # Verify the actual private HTTPS payload that the Web sends to the
+        # Telegram generator; no second Web RPH renderer is substituted.
+        native_doc=_docx(document).getvalue()
+        class NativeReply:
+            status=200
+            headers={"Content-Type":"application/vnd.openxmlformats-officedocument.wordprocessingml.document"}
+            def __enter__(self):return self
+            def __exit__(self,*a):return False
+            def read(self,n):return native_doc[:n]
+        class NativeTransport:
+            def __init__(self):self.req=None
+            def open(self,req,timeout):self.req=req;return NativeReply()
+        transport=NativeTransport()
+        with patch.dict(os.environ,{
+            "CIKGULAJU_AUTHORITATIVE_API_URL":"https://cikgulaju-ai.onrender.com",
+            "CIKGULAJU_AUTHORITATIVE_API_TOKEN":"x"*48,
+        }):
+            request_native_rph(document,"word",opener=transport)
+        sent=json.loads(transport.req.data)
+        self.assertEqual(sent["format"],"word")
+        self.assertEqual(sent["teacher"]["class"],"4 Bestari")
+        self.assertEqual(sent["teacher"]["time"],"07:30 - 08:30")
+        self.assertEqual(sent["teacher"]["students"],"32")
+        native_header={i["label"]:i["value"] for i in sent["layout"]["header"]}
+        self.assertEqual(native_header["Number of Pupils"],"32")
 
     def test_optional_fields_and_old_time_format_stay_compatible(self):
         response=self.preview()
