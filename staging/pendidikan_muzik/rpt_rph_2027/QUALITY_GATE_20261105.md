@@ -179,3 +179,8 @@ PdP12–13 dan 24–26 diselaraskan dengan projek terpadu Kesenian Tahun3 halama
 ## 6 Nov 2026 — Gate Word/PDF Telegram–Web
 - Audit kod sedia ada mengesahkan `web/native_rph_telegram_api.py` belum menyokong subjek MUZIK dan `web/rph_shared_source_identity.py` belum mempunyai source path Muzik.
 - Belum ada ujian sebenar Word/PDF 175/175, satu halaman A4 dan parity Telegram–Web. Rujuk `INTEGRATION_WORD_PDF_RELEASE_GATE_20261106.md`. Jangan tambah subjek ke produksi tanpa data disahkan.
+
+
+## 6 Nov 2026 — Smoke Word/PDF 175 RPH fungsi asas Telegram
+- Semua **175 DOCX** berjaya dijana dengan 3 jadual dan seksyen A4; semua **175 PDF** berjaya dijana 1 halaman A4. Tiada ralat dalam ujian asas: [Actions 42129353421](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42129353421).
+- Ini **tidak** membuktikan Word satu halaman dalam aplikasi, penjana sebenar berlapis, sumber Audio, keputusan SK/SP, atau kesamaan Telegram–Web. Tiada perubahan runtime/produksi. Lihat `NATIVE_BASE_RENDER_SMOKE_AUDIT_20261106.md`.
