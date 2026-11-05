@@ -215,9 +215,9 @@ def _fields_from_markdown(raw):
                 r"Original source access|Jejak audit|Bukti audit|Audit notes|"
                 r"Source QA|QA checklist)", current_heading, re.I))
         elif not ignore_technical_section and not re.match(
-                r"^\\s*\\*\\*(?:STATUS|Status|QA|QA status|Resource status|"
+                r"^\s*\*\*(?:STATUS|Status|QA|QA status|Resource status|"
                 r"Jejak audit|Bukti visual buku teks|Non-textbook source rule)"
-                r"[^\\n]*?\\*\\*", line, re.I):
+                r"[^\n]*?\*\*", line, re.I):
             block.append(line.rstrip())
     flush()
     return result
