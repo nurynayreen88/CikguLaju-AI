@@ -264,21 +264,6 @@ except Exception as _private_referral_menu_exc:
     print("Private referral menu integration unavailable:",
           type(_private_referral_menu_exc).__name__, flush=True)
 
-# Admin-only Web launch announcement; no sends until explicitly confirmed in
-# Telegram Panel Admin. It snapshots recipients and delivery attempts in the
-# private Supabase ledger. Install before referral admin buttons so both admin
-# panel actions are preserved; no curriculum/payment/trial handlers are changed.
-try:
-    from web.admin_web_launch_broadcast import install as install_web_announcement
-    TELEGRAM_WEB_BROADCAST_READY = bool(
-        DURABLE_USER_PAYMENT_STORE_ACTIVE
-        and install_web_announcement(telegram_runtime))
-except Exception as _web_broadcast_exc:
-    TELEGRAM_WEB_BROADCAST_READY = False
-    print("Web launch admin broadcast unavailable:",
-          type(_web_broadcast_exc).__name__, flush=True)
-
-
 # Read-only admin referral points; the last wrapper on callback and admin_panel.
 # Only _is_admin() identities can access this data; no payment or credit writes.
 try:
@@ -288,6 +273,23 @@ except Exception as _ref_admin_exc:
     PRIVATE_REFERRAL_ADMIN_POINTS_ACTIVE = False
     print("Private referral admin report unavailable:",
           type(_ref_admin_exc).__name__, flush=True)
+
+# Admin-only Web launch announcement, installed after referral admin's
+# panel edit to merge both buttons into the final Telegram keyboard. It cannot
+# send anything at deployment or when Panel Admin is opened: admin must preview
+# and explicitly confirm first. Each attempted recipient is logged in Supabase.
+try:
+    from web.admin_web_launch_broadcast import install as install_web_announcement
+    TELEGRAM_WEB_BROADCAST_READY = bool(
+        DURABLE_USER_PAYMENT_STORE_ACTIVE
+        and install_web_announcement(
+            telegram_runtime,
+            preserve_referral=PRIVATE_REFERRAL_ADMIN_POINTS_ACTIVE))
+except Exception as _web_broadcast_exc:
+    TELEGRAM_WEB_BROADCAST_READY = False
+    print("Web launch admin broadcast unavailable:",
+          type(_web_broadcast_exc).__name__, flush=True)
+
 
 # English Year 4 Lesson 30: fail closed on a proven source discrepancy.
 # Original app.py v25.257/v25.258/v25.259 maps L030 to CD2 Track29,
