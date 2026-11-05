@@ -464,7 +464,7 @@ class PSVSourceOrderTests(unittest.TestCase):
             30: ("ms 66–67", "renjisan", "jalinan"),
             31: ("ms 68–69", "batang aiskrim", "renjisan"),
             32: ("ms 68–69", "empat rangka", "terendak lampu"),
-            33: ("ms 68–69", "lilin elektronik", "tanpa"),
+            33: ("ms 68–69", "lilin elektronik", "tiada nyalaan api"),
             38: ("ms 86–87", "kelarai", "anyaman"),
             39: ("ms 88–90", "kertas a", "alas mangkuk"),
             40: ("ms 90–91", "alas mangkuk", "kelarai"),
