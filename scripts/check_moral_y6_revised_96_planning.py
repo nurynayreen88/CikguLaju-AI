@@ -60,7 +60,7 @@ def main():
             assert printed["Tajuk_Unit"]==canonical["Tajuk_Unit"], (group,i,"obsolete textbook title")
             assert printed["SP"]==canonical["SP"]
             assert printed["Rujukan_RPH"]==canonical["Rujukan_RPH_Sedia_Ada"]
-            assert printed["Status_Dalaman"]=="RPH_TERSEDIA_BETA80"
+            assert printed["Status_Dalaman"]==("RPH_TERSEDIA_BETA80" if printed["Modul"]=="TERAS" else "RPH_PENGUKUHAN_DRAF_SUMBER_TOC")
 
     print("PASS: Year6 96 sessions crosswalk 2021 textbook edition, 42 core + 54 supplement, 14 source-textual unit4/7")
     print("UNRESOLVED: 82 chapter-only activity-level verifications; teacher dates, user-facing Word A4 and Telegram real delivery remain separate gates")
