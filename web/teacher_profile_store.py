@@ -272,9 +272,9 @@ def get_schedule(url, key, uid, *, opener=None):
         return {"entries": [], "version": ""}
     classes = _class_records(record)
     # The current Telegram menu and RPH timetable resolver use class_profiles.
-    # No fallback is permitted once records exist: an intentionally empty
-    # timetable must stay empty, never resurrect an archived Web copy.
-    if classes:
+    # No fallback is permitted once class_profiles exist: an intentionally
+    # cleared timetable must stay empty, not resurrect archived Web entries.
+    if record.get("class_profiles"):
         return {"entries": _flatten_timetable(classes),
                 "version": record.get("updated_at") or ""}
     # Read-only compatibility for the pre-unification Web timetable rows.
