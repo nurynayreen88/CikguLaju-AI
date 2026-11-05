@@ -94,5 +94,24 @@ class AllYear4AudioAudit(unittest.TestCase):
         self.assertIn('suffix=".mp3"',APP.read_text(encoding="utf-8"))
         self.assertFalse(any(r["classification"]=="FINAL_READY" for r in all_rows))
 
+    def test_wma_mp3_candidates_are_not_deployed_or_trusted_without_tb_and_delivery(self):
+        d=json.loads((ROOT/"audits/english_y4_legacy_wma_to_mp3_candidates_20261105.json").read_text(encoding="utf-8"))
+        self.assertEqual(d["status"],"CANDIDATE_ONLY_NO_RUNTIME_USE")
+        self.assertEqual(d["counts"]["wma_route_rows"],24)
+        self.assertEqual(d["counts"]["canonical_mp3_candidate_found"],24)
+        self.assertEqual(d["counts"]["block_wrong_disc_l29"],2)
+        self.assertEqual(d["counts"]["block_wrong_lesson_l103"],2)
+        self.assertEqual(d["counts"]["source_format_candidates"],20)
+        candidate_ids={e["old_drive_id"] for e in d["candidates"]}
+        actual_ids={e["legacy_file_id"]
+                    for x in self.lessons.values() for e in x["legacy_audio"]
+                    if e["drive_inventory"]["format"]=="WMA"}
+        self.assertEqual(candidate_ids,actual_ids)
+        self.assertTrue(all(e["mp3_candidate"]["name"].endswith(".mp3")
+                            and "NOT_APPROVED" in e["classification"]
+                            or e["classification"].startswith("BLOCK_")
+                            for e in d["candidates"]))
+        self.assertTrue(all(not row["delivery_verified"] for row in d["known_direct_tb_paths"]))
+
 if __name__=="__main__":
     unittest.main()
