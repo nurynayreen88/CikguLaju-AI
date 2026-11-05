@@ -22,6 +22,9 @@ def verified_lesson():
     assert data
     data["teacher"]={"class":"4 Bestari","date":"2027-03-08","time":"09:15"}
     data["telegram_layout"]=build_layout(data,SUBJECT_LABELS)
+    from web.rph_shared_source_identity import source_fingerprint
+    data["source_digest"]=source_fingerprint(4,"ENGLISH",row["lesson"])
+    assert data["source_digest"]
     return data
 
 
@@ -68,6 +71,7 @@ class NativeWebProxyTests(unittest.TestCase):
         self.assertIsNone(body["component"])
         self.assertEqual(body["layout"]["style"],"telegram-native-rph-v1")
         self.assertEqual(body["teacher"]["class"],"4 Bestari")
+        self.assertEqual(body["source_digest"],data["source_digest"])
         self.assertNotIn("telegram_user_id",body)
         self.assertNotIn("payment",body)
         self.assertNotIn("credits",body)
@@ -109,6 +113,8 @@ class NativeWebProxyTests(unittest.TestCase):
         data=verified_preview(3,"PJPK",row["unit"],row["token"],"PK")
         data["teacher"]={"class":"","date":"","time":""}
         data["telegram_layout"]=build_layout(data,SUBJECT_LABELS)
+        from web.rph_shared_source_identity import source_fingerprint
+        data["source_digest"]=source_fingerprint(3,"PJPK",row["lesson"],"PK")
         transport=OpenerStub(_docx(data).getvalue(),
             "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
         with patch.dict(os.environ,{
