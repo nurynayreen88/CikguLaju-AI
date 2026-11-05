@@ -5,18 +5,18 @@
 **SK:** 3.1; 4.1  
 **SP:** 3.1.1; 4.1.1; 4.1.2  
 **Buku Teks:** Pendidikan Kesenian Tahun 4 (bahagian Seni Visual), ms 66–67 (unit ms 64-67)  
-**BBM:** kadbod, tali benang, gam, cat poster, kertas cetakan  
+**BBM:** BT ms 66–67, dua cetakan kolograf dasar laut PdP028, kad ulasan, alas pengeringan dan cat poster untuk pembaikan
 **Tempoh:** 60 minit
 
 ## Objektif dan kriteria kejayaan
-Murid dapat mengemas karya, membuat satu pembetulan dan mengulas dua unsur seni. Evidens: karya kemas serta apresiasi lisan.
+Murid dapat mengemas cetakan kolograf dan menerangkan dua jalinan serta satu cadangan pembaikan. Evidens PBD: Cetakan siap, dua unsur seni dan satu ulasan tentang tekanan serta jalinan.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan imej Indahnya Dasar Laut; murid menyebut satu unsur seni atau fungsi karya.
-**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru menunjukkan kriteria kemasan dan murid mengenal pasti satu kekuatan serta kelemahan hasil.
-**Aktiviti 2 (25 minit) — Amali:** Murid membaiki karya dan memberi apresiasi: Ulas kesan jalinan cetakan dan susunan imej; seorang rakan memberi ulasan membina.
-**Pengukuhan/Pentaksiran (10 minit):** Guru menyemak karya kemas serta apresiasi lisan dan mencatat PBD.
+**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru membanding hasil cetakan pada BT ms 67 dan menunjukkan kesan tekanan cat serta ketebalan blok terhadap rupa dan garisan.
+**Aktiviti 2 (25 minit) — Amali:** Murid membanding dua hasil cetakan, memilih karya yang lebih jelas, memperkemas tepi kertas, mempamer hasil dan memberi ulasan tentang jalinan kad busa serta tali kasut.
+**Pengukuhan/Pentaksiran (10 minit):** Guru mencatat dua istilah seni visual, perbezaan tekanan cetakan dan satu cadangan pembaikan yang boleh diperhatikan.
 **Penutup (5 minit):** Murid menyatakan satu perkara baharu dan mengemas alatan.
 **Pembezaan:** Sediakan kad langkah untuk sokongan; murid lanjutan membandingkan dua reka bentuk.
-**Keselamatan:** Media tidak toksik; gunting dan alat ukir hanya digunakan di bawah pengawasan. Elak pisau tajam.
-**Rujukan:** [DSKP PSV 4](https://drive.google.com/file/d/1CpSVz8txeDqSnKM7OfOmrjnYH9HBmGy1/view); [Buku Teks Pendidikan Kesenian Tahun 4 (bahagian Seni Visual)](https://fliphtml5.com/jfuhh/hbrx/Buku_Teks_Pendidikan_Kesenian_Tahun_4/). Aktiviti adaptasi CikguLaju.
+**Keselamatan:** Kad busa dan tali dipotong awal oleh guru; guna cat poster tidak toksik, penggelek/sudu tumpul dan cuci alatan selepas mencetak.
+**Rujukan:** [DSKP PSV 4](https://drive.google.com/file/d/1CpSVz8txeDqSnKM7OfOmrjnYH9HBmGy1/view); [Buku Teks Pendidikan Kesenian Tahun 4 (bahagian Seni Visual)](https://drive.google.com/file/d/1ZPvbJcwogZVQjRSgPMSgD6iymMXcASSU/view). Aktiviti adaptasi CikguLaju.

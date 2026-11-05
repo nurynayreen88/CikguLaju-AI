@@ -806,6 +806,29 @@ class PSVSourceOrderTests(unittest.TestCase):
         self.assertIn("hkvtu/vifc", m["years"]["3"]["book"])
         self.assertIn("1ZPvbJcwogZVQjRSgPMSgD6iymMXcASSU", m["years"]["4"]["book"])
 
+    def test_year4_source_pdf_visually_confirmed_12_pdp_batch(self):
+        """Per-PdP visual textbook crosscheck; release stays draft until all 210 pass."""
+        rows = read_csv(PSV / "RPT_PSV_Tahun_4_2027_DRAF.csv")
+        audit = read_csv(ROOT / "rph_standalone/psv/audits/psv_individual_210_review_20261105.csv")
+        expected = {1,2,3,4,22,23,24,25,26,27,28,29}
+        approved = {int(row["PdP"]) for row in audit if row["Tahun"] == "4" and row["Kelulusan_terbit"] == "PASSED"}
+        self.assertTrue(expected.issubset(approved))
+        for n in sorted(expected):
+            with self.subTest(pdp=n):
+                row = next(r for r in audit if r["Tahun"] == "4" and int(r["PdP"]) == n)
+                self.assertIn("BUKU_TEKS_VISUAL_SAH:", row["Bukti_buku"])
+                self.assertIn("1ZPvbJcwogZVJRSg".lower()[:8], row["Bukti_buku"].lower())
+                self.assertIn("DSKP_SEMANTIC_PASSED", row["Pemeriksaan_RPH_individu"])
+                self.assertFalse(row["Nota_semakan_terbuka"])
+                body = (ROOT / f"rph_standalone/psv/year4/lesson_{n:03d}.md").read_text(encoding="utf-8")
+                self.assertIn(rows[n-1]["Objektif"], body)
+                self.assertIn(rows[n-1]["Evidens PBD"], body)
+                self.assertIn("**Status:** DRAF", body)
+        for n in (23,24):
+            self.assertIn("arang", (ROOT / f"rph_standalone/psv/year4/lesson_{n:03d}.md").read_text(encoding="utf-8"))
+        for n in (27,28):
+            self.assertIn("blok", (ROOT / f"rph_standalone/psv/year4/lesson_{n:03d}.md").read_text(encoding="utf-8"))
+
     def test_forty_unit_dskp_technique_and_production_semantics(self):
         """Independent SP-to-technique crosswalk from printed Y2–Y5 DSKP.
 

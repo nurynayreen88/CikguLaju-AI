@@ -5,18 +5,18 @@
 **SK:** 1.1; 2.1  
 **SP:** 1.1.1; 2.1.3  
 **Buku Teks:** Pendidikan Kesenian Tahun 4 (bahagian Seni Visual), ms 56–57 (unit ms 56-59)  
-**BBM:** gambar sukan, pen warna, kertas lukisan, gam  
+**BBM:** BT ms 56–57, contoh poster Larian Ria, foto sukan, kertas lukisan, pensel warna, pen penanda dan arang siap guru
 **Tempoh:** 60 minit
 
 ## Objektif dan kriteria kejayaan
-Murid dapat mengenal dua unsur seni pada poster lukisan dan montaj dan menguji dua teknik. Evidens: dua percubaan serta istilah seni.
+Murid dapat membanding dua susunan poster larian dari segi tajuk, ruang, dan gabungan lukisan dengan montaj. Evidens PBD: Dua susunan imej/tajuk dan dua istilah visual tentang komposisi poster.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan imej Larian Riang Ria; murid menyebut satu unsur seni atau fungsi karya.
-**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru menunjukkan BT ms 56–57, mengaitkan mesej poster, hierarki tulisan dan gabungan lukisan serta montaj, dan murid menyatakan bahasa seni.
-**Aktiviti 2 (25 minit) — Amali:** Murid mencuba teknik: Susun dua pilihan tajuk poster larian dan imej utama; pilih kombinasi yang paling mudah dibaca; mereka mencatat dua kesan yang berbeza.
-**Pengukuhan/Pentaksiran (10 minit):** Guru menyemak dua percubaan serta istilah seni dan mencatat PBD.
+**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru merujuk BT ms 56–57: tunjuk kriteria poster dengan tajuk menonjol, warna harmoni, ruang seimbang dan kombinasi lukisan serta montaj.
+**Aktiviti 2 (25 minit) — Amali:** Murid mengatur dua pilihan tajuk Larian Ria dan imej aktiviti larian; membanding keterbacaan huruf, ruang dan kesesuaian gambar sebelum memilih komposisi.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menyemak dua pilihan komposisi, dua istilah visual dan alasan memilih tajuk serta imej.
 **Penutup (5 minit):** Murid menyatakan satu perkara baharu dan mengemas alatan.
 **Pembezaan:** Sediakan kad langkah untuk sokongan; murid lanjutan membandingkan dua reka bentuk.
-**Keselamatan:** Media tidak toksik; gunting dan alat ukir hanya digunakan di bawah pengawasan. Elak pisau tajam.
-**Rujukan:** [DSKP PSV 4](https://drive.google.com/file/d/1CpSVz8txeDqSnKM7OfOmrjnYH9HBmGy1/view); [Buku Teks Pendidikan Kesenian Tahun 4 (bahagian Seni Visual)](https://fliphtml5.com/jfuhh/hbrx/Buku_Teks_Pendidikan_Kesenian_Tahun_4/). Aktiviti adaptasi CikguLaju.
+**Keselamatan:** Guna foto prapotong dan arang dalam balutan tisu; murid tidak menyedut serbuk arang, gunakan gunting tumpul serta gam tidak toksik.
+**Rujukan:** [DSKP PSV 4](https://drive.google.com/file/d/1CpSVz8txeDqSnKM7OfOmrjnYH9HBmGy1/view); [Buku Teks Pendidikan Kesenian Tahun 4 (bahagian Seni Visual)](https://drive.google.com/file/d/1ZPvbJcwogZVQjRSgPMSgD6iymMXcASSU/view). Aktiviti adaptasi CikguLaju.
