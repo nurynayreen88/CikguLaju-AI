@@ -233,11 +233,17 @@ def _fields_from_markdown(raw):
                 r"^(?:Verified mapping and limits|Original book and audio access|"
                 r"Original source access|Jejak audit|Bukti audit|Audit notes|"
                 r"Source QA|QA checklist)", current_heading, re.I))
-        elif not ignore_technical_section and not re.match(
-                r"^\s*\*\*(?:STATUS|Status|QA|QA status|Resource status|"
-                r"Jejak audit|Bukti visual buku teks|Non-textbook source rule)"
-                r"[^\n]*?\*\*", line, re.I):
-            block.append(line.rstrip())
+        elif not ignore_technical_section:
+            # Do not erase valid Topic, SK/SP or duration when an inline
+            # technical status appears at the beginning of a shared line.
+            # This is used by English Year 5 standalone sources.
+            cleanline = re.sub(
+                r"\*\*(?:STATUS|QA(?: status)?|Resource status|Jejak audit|"
+                r"Bukti visual buku teks|Non-textbook source rule):?\*\*"
+                r"(?:(?!\*\*[^*]{1,90}:\*\*).)*",
+                "", line, flags=re.I)
+            if cleanline.strip():
+                block.append(cleanline.rstrip())
     flush()
     return result
 
@@ -322,39 +328,11 @@ def _teacher_context():
     return {"class": cls.strip(), "date": dt, "time": tm}
 
 
-def _docx_paragraph(text, *, strong=False):
-    style = "<w:rPr><w:rFonts w:ascii='Aptos' w:hAnsi='Aptos'/><w:sz w:val='18'/>" + ("<w:b/>" if strong else "") + "</w:rPr>"
-    return "<w:p><w:r>" + style + "<w:t xml:space='preserve'>" + escape(str(text)) + "</w:t></w:r></w:p>"
-
 def _docx(data):
-    # The old version flattened every Markdown heading into bare paragraphs.
-    # Route both preview and actual downloads to the same source-backed table layout.
+    """Word and browser print use the same Telegram three-table RPH layout."""
     from web.rph_table_layout import build_rph_table_docx
     return build_rph_table_docx(data, SUBJECT_LABELS)
 
-    paragraphs = [_docx_paragraph("CIKGULAJU AI — RANCANGAN PENGAJARAN HARIAN", strong=True),
-                  _docx_paragraph(f"{SUBJECT_LABELS[data['subject']]} — Tahun {data['year']} | {data['title']}", strong=True),
-                  _docx_paragraph("Status sumber: " + data["status"]),
-                  _docx_paragraph(f"Kelas: {data.get('teacher', {}).get('class') or '______________'}    Tarikh: {data.get('teacher', {}).get('date') or '__________'}    Masa: {data.get('teacher', {}).get('time') or '__________'}"),
-                  _docx_paragraph(data["notice"])]
-    for part in data["fields"]:
-        paragraphs.append(_docx_paragraph(part["label"], strong=True))
-        for line in part["value"].splitlines():
-            line = re.sub(r"\[([^]]+)\]\([^)]*\)", r"\1", line)
-            line = re.sub(r"\*\*([^*]+)\*\*", r"\1", line).strip()
-            if line:
-                paragraphs.append(_docx_paragraph(line))
-    paragraphs.append("<w:sectPr><w:pgSz w:w='11906' w:h='16838'/><w:pgMar w:top='600' w:right='600' w:bottom='600' w:left='600'/></w:sectPr>")
-    document = "<?xml version='1.0' encoding='utf-8' standalone='yes'?><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main'><w:body>" + "".join(paragraphs) + "</w:body></w:document>"
-    manifest = "<?xml version='1.0' encoding='UTF-8' standalone='yes'?><Types xmlns='http://schemas.openxmlformats.org/package/2006/content-types'><Default Extension='rels' ContentType='application/vnd.openxmlformats-package.relationships+xml'/><Default Extension='xml' ContentType='application/xml'/><Override PartName='/word/document.xml' ContentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'/></Types>"
-    rels = "<?xml version='1.0' encoding='UTF-8' standalone='yes'?><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships>"
-    buffer = BytesIO()
-    with ZipFile(buffer, "w", ZIP_DEFLATED) as archive:
-        archive.writestr("[Content_Types].xml", manifest)
-        archive.writestr("_rels/.rels", rels)
-        archive.writestr("word/document.xml", document)
-    buffer.seek(0)
-    return buffer
 
 def create_blueprint():
     bp = Blueprint("unified_rph_preview", __name__)
@@ -382,6 +360,13 @@ def create_blueprint():
             return None, (jsonify({"error": "RPH tepat untuk Lesson/PdP ini belum tersedia di Web. Tiada RPH generik atau daripada tajuk lain digunakan.",
                                    "code": "RPH_SOURCE_NOT_VERIFIED"}), 503)
         result["teacher"] = teacher
+        try:
+            from web.telegram_rph_parity import build_layout
+            result["telegram_layout"] = build_layout(result, SUBJECT_LABELS)
+        except (ValueError, TypeError, KeyError):
+            return None, (jsonify({
+                "error": "Format RPH bagi Lesson/PdP ini belum lengkap. Sila pilih Lesson/PdP lain.",
+                "code": "RPH_TELEGRAM_LAYOUT_INCOMPLETE"}), 503)
         return result, None
 
     @bp.get("/api/web/rph/preview")
