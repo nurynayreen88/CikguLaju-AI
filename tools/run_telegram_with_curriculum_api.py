@@ -372,3 +372,14 @@ except Exception as _psv_provisional_exc:
     PSV_2027_PROVISIONAL_RPH_ACTIVE = False
     print("PSV provisional RPH route unavailable:",
           type(_psv_provisional_exc).__name__, flush=True)
+
+# Telegram/Web profile parity: share the same teacher_profiles class/timetable
+# records, and expose school-name editing within the Telegram profile menu.
+# This is additive; all previous RPH, payments and callbacks remain installed.
+try:
+    from web.shared_teacher_school_telegram import install as install_shared_teacher_school
+    SHARED_TEACHER_PROFILE_ACTIVE = bool(install_shared_teacher_school(telegram_runtime))
+except Exception as _teacher_profile_exc:
+    SHARED_TEACHER_PROFILE_ACTIVE = False
+    print("Shared teacher profile bridge unavailable:",
+          type(_teacher_profile_exc).__name__, flush=True)
