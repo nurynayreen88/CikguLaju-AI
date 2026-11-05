@@ -47,9 +47,9 @@ jobs:
             sudo apt-get install -y -qq libreoffice-writer >/dev/null
           fi
       - name: Compile PSV QA code
-        run: python -m py_compile rph_standalone/psv/preview_a4.py web/psv_2027_rph_release_bridge.py tools/psv_candidate_staging_entrypoint.py tools/verify_psv_word_a4.py tests/test_psv_rpt_rph_source_order.py tests/test_psv_preview_a4.py tests/test_psv_runtime_bridge_candidate.py
+        run: python -m py_compile rph_standalone/psv/preview_a4.py web/psv_2027_rph_release_bridge.py tools/psv_candidate_staging_entrypoint.py tools/verify_psv_word_a4.py tests/test_psv_rpt_rph_source_order.py tests/test_psv_preview_a4.py tests/test_psv_runtime_bridge_candidate.py tests/test_psv_84_individual_textbook_semantics_20261105.py
       - name: Source, DSKP semantic and 210 PDF preview checks
-        run: python -m unittest -v tests.test_psv_rpt_rph_source_order tests.test_psv_preview_a4 tests.test_psv_runtime_bridge_candidate
+        run: python -m unittest -v tests.test_psv_rpt_rph_source_order tests.test_psv_preview_a4 tests.test_psv_runtime_bridge_candidate tests.test_psv_84_individual_textbook_semantics_20261105
       - name: Convert all 210 Word RPH with LibreOffice and count A4 pages
         run: python tools/verify_psv_word_a4.py --batch-size 25
       - name: Upload summary counts only
