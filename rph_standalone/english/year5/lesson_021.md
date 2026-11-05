@@ -1,6 +1,6 @@
 # English Year 5 Lesson 21 — Language Arts 4
 
-**Official SOW:** Lesson 21, printed p.57. **Topic:** Cats. **Duration:** 60 minutes (suggested).
+**Official SOW:** Lesson 21, printed p.56. **Topic:** Cats. **Duration:** 60 minutes (suggested).
 **Main and complementary CS/LS:** Language Arts 5.3/5.3.1; Writing 4.2/4.2.4.
 **Materials:** Anthology of Poems p.15 Cats; BPK Poetry Guidebook Activity 4 p.35; cat-shape poem example.
 **Learning objectives:** Main (Language Arts 5.3.1) — pupils respond imaginatively and intelligibly through creating simple role-plays and simple poems or another appropriate imaginative response in the Cats activities. Complementary (Writing 4.2.4) — pupils describe people, places and objects using suitable statements in the linked writing task.

@@ -1,6 +1,6 @@
 # English Year 5 Lesson 49 — Reading 9
 
-Official SOW Lesson 49, printed p.86. Topic: Days. Suggested duration: 60 minutes.
+Official SOW Lesson 49, printed p.85. Topic: Days. Suggested duration: 60 minutes.
 Main and complementary learning standards: Reading 3.2.3; Speaking 2.3.1.
 Materials: SB p.29 Activities 1–3; TB p.43; Caribbean map.
 

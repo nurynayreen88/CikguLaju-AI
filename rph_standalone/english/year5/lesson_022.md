@@ -1,6 +1,6 @@
 # English Year 5 Lesson 22 — Consolidation 1
 
-**Official SOW:** Lesson 22, printed p.58. **Topic:** Towns and cities. **Duration:** 60 minutes (suggested).
+**Official SOW:** Lesson 22, printed p.57. **Topic:** Towns and cities. **Duration:** 60 minutes (suggested).
 **Main and complementary CS/LS:** Speaking 2.2/2.2.1; Writing 4.2/4.2.4.
 **Materials:** SB p.15 Activities 2–4; TB p.29.
 **Learning objectives:** Main (Speaking 2.2.1) — pupils keep interaction going in short exchanges by asking suitable questions in the Towns and cities activities. Complementary (Writing 4.2.4) — pupils describe people, places and objects using suitable statements in the linked writing task.

@@ -2,7 +2,7 @@
 
 **Official SOW topic:** Towns and cities.
 
-**Official SOW:** Lesson 32, printed p.68. **Suggested duration:** 60 minutes.
+**Official SOW:** Lesson 32, printed p.67. **Suggested duration:** 60 minutes.
 **Main/complementary CS and LS:** Writing 4.2.5; Speaking 2.1.5.
 **Materials:** SB p.106 Activities 3–4; TB p.120; Malaysia map.
 **Learning objectives:** Main (Writing 4.2.5) — pupils connect sentences into one or two coherent paragraphs using basic coordinating conjunctions and reference pronouns in the Towns and cities activities. Complementary (Speaking 2.1.5) — pupils describe people, places and objects using suitable statements in the linked speaking task.

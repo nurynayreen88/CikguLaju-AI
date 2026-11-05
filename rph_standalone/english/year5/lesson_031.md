@@ -2,7 +2,7 @@
 
 **Official SOW topic:** Towns and cities.
 
-**Official SOW:** Lesson 31, printed p.67. **Suggested duration:** 60 minutes.
+**Official SOW:** Lesson 31, printed p.66. **Suggested duration:** 60 minutes.
 **Main/complementary CS and LS:** Reading 3.2.4; Writing 4.2.4.
 **Materials:** SB p.106 Activities 1–2; TB p.120; CD 3-27; UK and Malaysia maps.
 **Learning objectives:** Main (Reading 3.2.4) — pupils use with support familiar print and digital resources to check meaning in the Towns and cities activities. Complementary (Writing 4.2.4) — pupils describe people, places and objects using suitable statements in the linked writing task.

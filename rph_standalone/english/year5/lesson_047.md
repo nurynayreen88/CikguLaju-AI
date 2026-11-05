@@ -1,6 +1,6 @@
 # English Year 5 Lesson 47 — Listening 9
 
-Official SOW Lesson 47, printed p.84. Topic: Days. Suggested duration: 60 minutes.
+Official SOW Lesson 47, printed p.83. Topic: Days. Suggested duration: 60 minutes.
 Main and complementary learning standards: Listening 1.3.1; Reading 3.2.4.
 Materials: SB p.28 Activities 1–3; TB p.42; CD 1-26.
 

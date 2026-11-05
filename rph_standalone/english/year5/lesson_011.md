@@ -1,6 +1,6 @@
 # English Year 5 — Standalone RPH — Lesson 011 (Listening 3)
 
-**Source:** Official Primary Year 5 SK Scheme of Work Lesson 11, printed p.46. **Theme:** World of Knowledge. **Topic:** Free time. **Duration:** 60 minutes suggested.
+**Source:** Official Primary Year 5 SK Scheme of Work Lesson 11, printed p.45. **Theme:** World of Knowledge. **Topic:** Free time. **Duration:** 60 minutes suggested.
 **Main CS/LS:** Listening 1.2/1.2.5. **Complementary CS/LS:** Reading 3.2/3.2.3. **Language focus:** countries and nationalities; question words.
 **Learning objectives:** Main (Listening 1.2.5) — pupils understand a sequence of supported questions in the Free time activities. Complementary (Reading 3.2.3) — pupils guess the meaning of unfamiliar words from clues provided by title, topic and other known words through the linked reading task.
 **Success criteria (teacher-set):** Pupils complete the core activities and demonstrate an observable response for each skill.

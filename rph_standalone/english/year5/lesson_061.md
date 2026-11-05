@@ -1,6 +1,6 @@
 # English Year 5 Lesson 61: Reading 11
 
-Official SOW Lesson 61, printed p.99. Topic: Wild Life. Suggested duration: 60 minutes.
+Official SOW Lesson 61, printed p.98. Topic: Wild Life. Suggested duration: 60 minutes.
 Standards: Reading 3.2.2; Writing 4.2.4.
 Sources: SB p.39 Activities 1–5; TB p.53; Philippines map.
 

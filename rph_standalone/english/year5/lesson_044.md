@@ -1,6 +1,6 @@
 # English Year 5 Lesson 44 — Writing 8
 
-Official Year 5 SOW Lesson 44, printed p.81. Topic: Days. Suggested duration: 60 minutes.
+Official Year 5 SOW Lesson 44, printed p.80. Topic: Days. Suggested duration: 60 minutes.
 Main and complementary learning standards: Writing 4.2.1; Speaking 2.1.5.
 Materials: SB p.26 Activity 5; TB p.40; question-word cards.
 

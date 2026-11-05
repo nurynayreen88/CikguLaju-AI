@@ -1,6 +1,6 @@
 # English Year 5 Lesson 51 — Language Arts 9
 
-Official Year 5 SOW Lesson 51, printed p.88. Topic: And Something Weird Happened. Suggested duration: 60 minutes.
+Official Year 5 SOW Lesson 51, printed p.87. Topic: And Something Weird Happened. Suggested duration: 60 minutes.
 Main and complementary standards: Language Arts 5.2.1; Reading 3.2.2.
 Materials: NON-TEXTBOOK: And Something Weird Happened by Pamela Rushby pp.5–8; BPK Short Stories Guidebook p.17.
 

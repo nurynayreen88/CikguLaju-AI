@@ -1,6 +1,6 @@
 # English Year 5 Lesson 17 — Listening 4
 
-Official SOW: Lesson 17, printed p.53. Unit 1: Towns and cities. Suggested time: 60 minutes.
+Official SOW: Lesson 17, printed p.52. Unit 1: Towns and cities. Suggested time: 60 minutes.
 Standards: Listening 1.2/1.2.1; Writing 4.2/4.2.4.
 Learning objective: Pupils demonstrate the stated skills through SOW-prescribed tasks.
 Materials: SB pp.12–13 Activities 1–4; TB pp.26–27; CD 1-13, 1-14.

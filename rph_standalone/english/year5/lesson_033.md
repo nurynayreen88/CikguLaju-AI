@@ -1,6 +1,6 @@
 # English Year 5 Lesson 33 — Language Arts 6
 
-**Official SOW:** Lesson 33, printed p.69. **Suggested duration:** 60 minutes.
+**Official SOW:** Lesson 33, printed p.68. **Suggested duration:** 60 minutes.
 **Main/complementary CS and LS:** Language Arts 5.3.1; Speaking 2.1.5.
 **Materials:** NON-TEXTBOOK: Serenade, Anthology p.17; BPK Poetry Guidebook Activity 7 p.63; pupil-provided craft materials.
 **Learning objectives:** Main (Language Arts 5.3.1) — pupils respond imaginatively and intelligibly through creating simple role-plays and simple poems or another appropriate imaginative response in the Serenade activities. Complementary (Speaking 2.1.5) — pupils describe people, places and objects using suitable statements in the linked speaking task.

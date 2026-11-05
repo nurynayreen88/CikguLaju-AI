@@ -1,6 +1,6 @@
 # English Year 5 — Standalone RPH — Lesson 013 (Reading 3)
 
-**Source:** Official Primary Year 5 SK Scheme of Work Lesson 13, printed p.48. **Theme:** World of Self, Family and Friends. **Topic:** Free time. **Duration:** 60 minutes suggested.
+**Source:** Official Primary Year 5 SK Scheme of Work Lesson 13, printed p.47. **Theme:** World of Self, Family and Friends. **Topic:** Free time. **Duration:** 60 minutes suggested.
 **Main CS/LS:** Reading 3.3/3.3.1. **Complementary CS/LS:** Writing 4.3/4.3.1. **Language focus:** question words; and, but, or.
 **Learning objectives:** Main (Reading 3.3.1) — pupils read and enjoy A2 fiction/non-fiction print and digital texts of interest in the Free time activities. Complementary (Writing 4.3.1) — pupils use capital letters, full stops, commas in lists and question marks appropriately in independent writing at discourse level through the linked writing task.
 **Success criteria (teacher-set):** Pupils complete the core activities and demonstrate an observable response for each skill.

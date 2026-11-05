@@ -1,6 +1,6 @@
 # English Year 5 Lesson 24 — Speaking 5
 
-**Official SOW:** Lesson 24, printed p.60. **Topic:** Towns and cities. **Duration:** 60 minutes (suggested).
+**Official SOW:** Lesson 24, printed p.59. **Topic:** Towns and cities. **Duration:** 60 minutes (suggested).
 **Main and complementary CS/LS:** Speaking 2.1/2.1.2; Listening 1.1/1.1.1.
 **Materials:** SB p.17 Activities 1,4,5; TB p.31; CD 1-18.
 **Learning objectives:** Main (Speaking 2.1.2) — pupils find out about and describe experiences up to now in the Towns and cities activities. Complementary (Listening 1.1.1) — pupils recognise and reproduce with little or no support a wide range of target language phonemes in the linked listening task.

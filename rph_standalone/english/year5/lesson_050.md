@@ -1,6 +1,6 @@
 # English Year 5 Lesson 50 — Writing 9
 
-Official SOW Lesson 50, printed p.87. Topic: Days. Suggested duration: 60 minutes.
+Official SOW Lesson 50, printed p.86. Topic: Days. Suggested duration: 60 minutes.
 Main and complementary learning standards: Writing 4.3.3; Reading 3.2.2.
 Materials: SB p.29 Activities 4–5; TB p.43; peer-feedback checklist.
 

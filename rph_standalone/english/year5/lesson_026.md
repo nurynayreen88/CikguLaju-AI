@@ -1,6 +1,6 @@
 # English Year 5 Lesson 26 — Writing 5
 
-Source: Official Year 5 SOW Lesson 26, printed p.62. Suggested duration: 60 minutes.
+Source: Official Year 5 SOW Lesson 26, printed p.61. Suggested duration: 60 minutes.
 Topic: Towns and cities.
 Main and complementary CS/LS: Writing 4.2/4.2.5; Reading 3.2/3.2.1.
 Materials: SB p.19 Activity 5 and Writing Guide; TB p.33.

@@ -1,6 +1,6 @@
 # English Year 5 Lesson 20 — Writing 4
 
-Official SOW: Lesson 20, printed p.56. Unit 1: Towns and cities. Suggested time: 60 minutes.
+Official SOW: Lesson 20, printed p.55. Unit 1: Towns and cities. Suggested time: 60 minutes.
 Standards: Writing 4.2/4.2.4; Speaking 2.2/2.2.1.
 Learning objective: Pupils use Student Book p.15 tasks to describe a holiday park accurately in linked sentences and ask a partner at least one relevant question about its facilities.
 Materials: SB p.15 Activities 1, 5, 6 and Finished!; TB p.29.

@@ -1,6 +1,6 @@
 # English Year 5 Lesson 46 — Consolidation 4
 
-Official SOW Lesson 46, printed p.83. Topic: Days. Suggested duration: 60 minutes.
+Official SOW Lesson 46, printed p.82. Topic: Days. Suggested duration: 60 minutes.
 Main and complementary learning standards: Speaking 2.2.1; Writing 4.2.1.
 Materials: SB p.27 Activities 1–6; TB p.41.
 
