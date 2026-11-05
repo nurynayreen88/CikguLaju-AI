@@ -15,7 +15,7 @@ import re
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 INDEX=ROOT/"audits/english_y5_sow_160_original_printed_pages_20261105.json"
 SOURCE=ROOT/"rph_standalone/english/year5"
-PATTERN=re.compile(r"(?i)\\b(?:official\\s+)?SOW\\b[^\\n]{0,180}?\\bprinted\\s+p\\.\\s*(\\d{1,3})")
+PATTERN=re.compile(r"(?i)\b(?:official\s+)?SOW\b[^\n]{0,180}?\bprinted\s+p\.\s*(\d{1,3})")
 
 def run():
     data=json.loads(INDEX.read_text(encoding="utf-8"))
