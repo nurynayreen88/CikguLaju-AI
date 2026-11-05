@@ -17,14 +17,16 @@ Murid menyiapkan tugasan **SP 6.1** (Menyenaraikan warga sekolah dan pelawat.) d
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Seorang pelawat bertanya arah di kawasan sekolah**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Tugasan 6.1:** Guru membentangkan situasi **Seorang pelawat bertanya arah di kawasan sekolah** dan menyediakan kad/gambar yang relevan dengan unit buku teks **Hormati Semua Amalan Kami** (mula m/s 41; halaman aktiviti belum disahkan). Murid melaksanakan arahan **“Menyenaraikan warga sekolah dan pelawat.”** dengan menghasilkan **senarai tiga contoh atau perkara yang tepat**; pasangan menyemak fakta, bukan hanya memilih tindakan baik atau buruk. Guru merekod satu respons individu.
+**Aktiviti 1 (20 minit) — Bukti aktiviti buku teks:** Guru memaparkan gambar Hari Kantin, sekolah selamat serta cerita pelawat Aqib Bara m/s41–43. Murid menyenaraikan warga sekolah dan pelawat yang mempunyai hubungan dengan sekolah (SP6.1). Guru menyemak hasil individu murid.
 
-**Aktiviti 2 (20 minit) — Tugasan 6.2:** Guru menukar sudut situasi kepada tindakan atau akibat yang boleh diperhatikan. Murid melaksanakan arahan **“Menjelaskan cara menghormati warga sekolah dan pelawat.”** dan menyediakan **penjelasan dalam dua ayat serta satu contoh** berdasarkan contoh yang relevan dengan unit. Murid membentangkan hasil dan memperbaiki jawapan selepas pertanyaan lanjut guru.
+**Aktiviti 2 (20 minit) — Bukti aktiviti buku teks:** Guru menggunakan dialog buah-buahan dalam m/s42–43 tentang mengucap salam kepada pengawal, guru dan pelawat. Murid menjelaskan dua cara menghormati warga sekolah dan pelawat melalui jadual tindakan dan kata sopan (SP6.2). Guru menyemak hasil individu murid.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Guru mengutip hasil individu: **senarai tiga contoh atau perkara yang tepat** untuk SP 6.1 dan **penjelasan dalam dua ayat serta satu contoh** untuk SP 6.2; semak ketepatan makna, bukti dan kaitan dengan nilai **Hormat**. Murid membetulkan satu jawapan selepas maklum balas.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menyemak senarai warga sekolah/pelawat dan dua tindakan hormat (SP6.1–6.2). Murid membetulkan satu respons selepas maklum balas guru.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **hormat**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — unit bermula m/s 41 (PDF 47); halaman aktiviti khusus belum dipadankan; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 6, m/s 41–43 (PDF 47–49); aktiviti PdP 016 diolah daripada contoh/dialog/latihan asal tanpa mengubah SP.
+
+**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — aktiviti Unit 6 m/s 41–43 (PDF 47–49) diperiksa secara visual; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
