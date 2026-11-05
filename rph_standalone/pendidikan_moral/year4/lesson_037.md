@@ -17,14 +17,16 @@ Murid menyiapkan tugasan **SP 13.1** (Memberikan contoh amalan kesederhanaan dal
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Beberapa keluarga ingin mengurangkan pembaziran air di kawasan perumahan**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Tugasan 13.1:** Guru membentangkan situasi **Beberapa keluarga ingin mengurangkan pembaziran air di kawasan perumahan** dan menyediakan kad/gambar yang relevan dengan unit buku teks **Kesederhanaan** (mula m/s 112; halaman aktiviti belum disahkan). Murid melaksanakan arahan **“Memberikan contoh amalan kesederhanaan dalam hidup berjiran.”** dengan menghasilkan **dua contoh atau jawapan konkrit**; pasangan menyemak fakta, bukan hanya memilih tindakan baik atau buruk. Guru merekod satu respons individu.
+**Aktiviti 1 (20 minit) — Penerapan sumber buku:** Guru memperlihatkan cerita 'Kesederhanaan Menjalin Kemesraan Sesama Jiran' m/s112–113 tentang menjamu tetamu tanpa berlebih-lebihan. Murid memberi tiga contoh sederhana dalam majlis kejiranan (SP13.1). Guru memeriksa hasil individu murid.
 
-**Aktiviti 2 (20 minit) — Tugasan 13.2:** Guru menukar sudut situasi kepada tindakan atau akibat yang boleh diperhatikan. Murid melaksanakan arahan **“Memerihalkan cara bersikap sederhana dalam hidup berjiran.”** dan menyediakan **penerangan dua situasi menggunakan ayat sendiri** berdasarkan contoh yang relevan dengan unit. Murid membentangkan hasil dan memperbaiki jawapan selepas pertanyaan lanjut guru.
+**Aktiviti 2 (20 minit) — Penerapan sumber buku:** Guru memaparkan siaran Instagram 'Kesederhanaan Mengeratkan Hubungan Sesama Jiran' m/s114. Murid memerihalkan dua cara berpakaian, berbicara atau menyediakan jamuan secara sederhana (SP13.2). Guru memeriksa hasil individu murid.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Guru mengutip hasil individu: **dua contoh atau jawapan konkrit** untuk SP 13.1 dan **penerangan dua situasi menggunakan ayat sendiri** untuk SP 13.2; semak ketepatan makna, bukti dan kaitan dengan nilai **Kesederhanaan**. Murid membetulkan satu jawapan selepas maklum balas.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menilai tiga contoh kesederhanaan dan dua penerangan cara berdasarkan dialog/Instagram (SP13.1–13.2). Murid membaiki respons selepas maklum balas guru.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **kesederhanaan**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 4](https://drive.google.com/file/d/1nNUL3EA3TTtuq9mG5fYBpbnGTJuOw-pd/view); [buku teks Tahun 4](https://drive.google.com/file/d/1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j/view) — unit bermula m/s 112 (PDF 118); halaman aktiviti khusus belum dipadankan; [RPT SK 2026](https://id.scribd.com/document/1032116415/RPT-PMRL-THN-4-SK-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 13 m/s 112–114 (PDF 118–120); dialog, poster, permainan dan latihan sumber asli diolah untuk PdP 037 berdasarkan SP asal.
+
+**Rujukan:** [DSKP SK Tahun 4](https://drive.google.com/file/d/1nNUL3EA3TTtuq9mG5fYBpbnGTJuOw-pd/view); [buku teks Tahun 4](https://drive.google.com/file/d/1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j/view) — Unit 13 m/s 112–114 (PDF 118–120) diperiksa visual dan dipadankan; [RPT SK 2026](https://id.scribd.com/document/1032116415/RPT-PMRL-THN-4-SK-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
