@@ -15,13 +15,13 @@
 Murid memperagakan tindakan baik hati melalui aktiviti kebajikan yang selamat dan merekod refleksi. Kriteria kejayaan: Senarai semak dua tindakan simulasi, produk kumpulan dan satu refleksi; kutipan wang tidak diwajibkan.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru memperlihatkan tajuk **Bantuan dan Sokongan Moral kepada Negara** dalam buku teks KSSR Semakan 2017, m/s 18, dan mengemukakan situasi berkaitan nilai unit. Murid mengenal pasti watak, tindakan serta satu keputusan yang munasabah mengikut SP PdP.
+**Set induksi (5 minit):** Guru menunjukkan pilihan situasi m/s 18–19, termasuk kempen Bumi Hijau dan program kesedaran AADK/PPDa, lalu bertanya bentuk sokongan yang selamat dan sesuai bagi murid sekolah.
 
-**Aktiviti 1 (20 minit) — Hulurkan Bantuan Jadikan Amalan:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 2, m/s 18–20, bahagian **Hulurkan Bantuan Jadikan Amalan** sebagai rangsangan. Murid merancang simulasi khidmat bantuan seperti mengagihkan kad keperluan tanpa pungutan wang sebenar (SP 2.5). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
+**Aktiviti 1 (20 minit) — Hulurkan Bantuan Jadikan Amalan:** Guru merujuk situasi kempen Bumi Hijau serta bantuan kepada mangsa ribut dan atlet pada m/s 18. Murid memperagakan secara simulasi dua tindakan sokongan, seperti menyediakan kad dorongan dan menerangkan cadangan menanam pokok, tanpa kutipan wang atau aktiviti luar sekolah tanpa kebenaran (SP 2.5). Guru memerhati tindakan yang boleh ditunjukkan.
 
-**Aktiviti 2 (20 minit) — Mari Uji Diri:** Guru merujuk bahagian **Mari Uji Diri** dalam unit yang sama dan menyediakan kad aktiviti berkaitan. Murid memperagakan dua amalan membantu secara selamat, menilai respons pemerhati dan menulis refleksi tentang sikap baik hati (SP 2.5). Guru memberikan maklum balas terhadap sebab, tindakan atau refleksi, kemudian meminta pembetulan yang boleh diperhatikan.
+**Aktiviti 2 (20 minit) — Mari Uji Diri:** Guru menggunakan konteks program kesedaran AADK/PPDa pada m/s 19 serta latihan kendiri m/s 20. Murid menghasilkan satu poster kesedaran yang berhemah, melakonkan cara berkongsi maklumat keselamatan kepada rakan dan menilai dua perlakuan baik hati melalui senarai semak (SP 2.5). Guru mengelakkan gambaran penggunaan bahan terlarang atau penglibatan sebenar tanpa pengawasan.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Senarai semak dua tindakan simulasi, produk kumpulan dan satu refleksi; kutipan wang tidak diwajibkan. Guru merekod pencapaian berdasarkan respons individu dan memberi maklum balas terhadap penjelasan atau tingkah laku yang dapat diperhatikan.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menilai dua tindakan simulasi sokongan moral berdasarkan situasi buku teks m/s 18–20, satu hasil poster/kad dan satu refleksi individu (SP 2.5). Lakonan tidak dianggap bukti amalan di luar kelas.
 
 **Penutup (5 minit):** Murid menyatakan satu tindakan yang boleh diamalkan secara selamat berdasarkan nilai unit. Guru merumuskan pembelajaran dan mengingatkan murid agar menghormati keadaan keluarga, sekolah dan komuniti yang berbeza.
 
