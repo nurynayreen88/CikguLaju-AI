@@ -69,17 +69,32 @@ def create_web_payment_source(runtime):
                         str(getattr(runtime,"API","")))
         if not match:
             return jsonify({"error":"Active Telegram bot identity unavailable"}),503
+        # Exactly the same verified, non-revoked entitlement count and
+        # rounding logic as Telegram's own Rakan Pembangun screen. Neither the
+        # underlying capacity nor individual user identifiers leave this API.
+        try:
+            from pioneer_supabase import pioneer_availability
+            from pioneer_percentage import pioneer_percentage
+            sb = getattr(runtime, "_sb_request", None)
+            if not callable(sb):
+                raise RuntimeError("Rakan Pembangun source missing")
+            count, remaining = pioneer_availability(sb)
+            joined = pioneer_percentage(count)
+        except Exception as exc:
+            print("Rakan Pembangun percentage unavailable:",
+                  type(exc).__name__, flush=True)
+            return jsonify({"error":"Rakan Pembangun status unavailable"}),503
         return jsonify({
             "telegram_bot_id":match.group(1),
             "plans":[
                 {"code":"rakan_pembangun","label":"Rakan Pembangun",
-                 "amount":"10.00","description":"Bayaran sekali, akses seumur hidup"},
-                {"code":"langganan_30_hari","label":"Langganan 30 Hari",
-                 "amount":"5.00","description":"Akses selama 30 hari"},
+                 "amount":"10.00","description":"RM10 sekali bayar, akses sepanjang CikguLaju AI beroperasi"},
             ],
+            "progress_percentage":joined,
+            "rakan_open":remaining > 0,
             "currency":"MYR",
             "mode":"manual_receipt_review",
-            "note":"QR tidak mencipta Pending. Resit diperlukan; admin sahkan secara manual.",
+            "note":"Pending hanya selepas resit sebenar. Admin sahkan secara manual.",
         })
 
     @bp.get("/internal/payment/v1/qr")

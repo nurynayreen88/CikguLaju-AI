@@ -53,7 +53,8 @@ class PaymentCatalogTests(unittest.TestCase):
         self.rt=SimpleNamespace(
             API="https://api.telegram.org/bot123456789:"+"A"*40,
             CIKGULAJU_PROOF_FIRST_PAYMENT_ACTIVE=True,
-            DONATION_QR_B64=base64.b64encode(b"\xff\xd8\xff"+b"x"*1000).decode("ascii"))
+            DONATION_QR_B64=base64.b64encode(b"\xff\xd8\xff"+b"x"*1000).decode("ascii"),
+            _sb_request=lambda *a,**k: 6)
         app.register_blueprint(create_web_payment_source(self.rt))
         self.client=app.test_client()
         self.env={"CIKGULAJU_AUTHORITATIVE_API_TOKEN":"a"*64,
@@ -70,6 +71,21 @@ class PaymentCatalogTests(unittest.TestCase):
                headers={"Authorization":"Bearer "+"a"*64})
             self.assertEqual(denied.status_code,503)
 
+    def test_percentage_follows_existing_telegram_rounding_and_full_gate(self):
+        with patch.dict(os.environ,self.env):
+            headers={"Authorization":"Bearer "+"a"*64}
+            self.rt._sb_request=lambda *a,**k: 500
+            r=self.client.get("/internal/payment/v1/catalog",headers=headers)
+            self.assertEqual(r.status_code,200)
+            self.assertEqual(r.json["progress_percentage"],"100.0%")
+            self.assertFalse(r.json["rakan_open"])
+            self.rt._sb_request=lambda *a,**k: 1
+            r=self.client.get("/internal/payment/v1/catalog",headers=headers)
+            self.assertEqual(r.json["progress_percentage"],"0.2%")
+            self.rt._sb_request=lambda *a,**k: "invalid"
+            r=self.client.get("/internal/payment/v1/catalog",headers=headers)
+            self.assertEqual(r.status_code,503)
+
     def test_read_only_uses_verified_duitnow_and_telegram_prices(self):
         with patch.dict(os.environ,self.env):
             h={"Authorization":"Bearer "+"a"*64}
@@ -77,8 +93,11 @@ class PaymentCatalogTests(unittest.TestCase):
             self.assertEqual(result.status_code,200)
             self.assertEqual(result.json["telegram_bot_id"],"123456789")
             plans={p["code"]:p["amount"] for p in result.json["plans"]}
-            self.assertEqual(plans,{"rakan_pembangun":"10.00",
-                                    "langganan_30_hari":"5.00"})
+            self.assertEqual(plans,{"rakan_pembangun":"10.00"})
+            self.assertEqual(result.json["progress_percentage"],"1.2%")
+            self.assertTrue(result.json["rakan_open"])
+            self.assertNotIn("500",str(result.json))
+            self.assertNotIn("langganan_30_hari",str(result.json))
             qr=self.client.get("/internal/payment/v1/qr",headers=h)
             self.assertEqual(qr.status_code,200)
             self.assertEqual(qr.mimetype,"image/jpeg")
@@ -86,6 +105,29 @@ class PaymentCatalogTests(unittest.TestCase):
             self.assertTrue(qr.data.startswith(b"\xff\xd8\xff"))
             self.assertEqual(list(self.client.application.view_functions).count(
                 "telegram_web_payment_source.catalog"),1)
+
+
+class WebReceiptAdminParityTests(unittest.TestCase):
+    def test_existing_telegram_receipt_stays_supported(self):
+        from pioneer_telegram import _has_recorded_payment_proof
+        self.assertTrue(_has_recorded_payment_proof(
+            {"notes":"proof_received_admin_notified"}))
+
+    def test_web_receipt_requires_real_telegram_file_reference(self):
+        from pioneer_telegram import _has_recorded_payment_proof
+        good={"notes":"proof_received_web",
+              "proof_telegram_file_id":"AA-verified-file",
+              "proof_telegram_message_id":44,
+              "proof_received_at":"2026-11-06T01:00:00+00:00"}
+        self.assertTrue(_has_recorded_payment_proof(good))
+        for key in ("proof_telegram_file_id","proof_telegram_message_id",
+                    "proof_received_at"):
+            with self.subTest(key=key):
+                bad=dict(good);bad.pop(key)
+                self.assertFalse(_has_recorded_payment_proof(bad))
+        self.assertFalse(_has_recorded_payment_proof(
+            {"notes":"proof_received_web"}))
+        self.assertFalse(_has_recorded_payment_proof(None))
 
 
 if __name__=="__main__":

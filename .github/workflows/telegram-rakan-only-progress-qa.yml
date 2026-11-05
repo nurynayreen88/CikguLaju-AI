@@ -1,0 +1,21 @@
+name: Telegram RM10 Rakan only and progress QA
+on:
+  push:
+    branches: [feature/telegram-rakan-only-progress-20261106]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'flask==3.1.3' 'requests==2.32.3'
+      - run: python -m py_compile web/telegram_payment_source.py pioneer_percentage.py pioneer_supabase.py pioneer_telegram.py
+      - run: python -m unittest discover -s tests -p test_telegram_web_payment_entry.py -v
+      - run: python -m unittest discover -s tests -p test_pioneer_percentage.py -v
+      - run: python -m unittest discover -s tests -p test_pioneer_supabase.py -v
