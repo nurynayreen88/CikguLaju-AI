@@ -4,13 +4,13 @@
 **Fokus PdP:** Sebut kosa kata dalam kelas
 **SK/SP cadangan:** 1.3 / 1.3.1 — berdasarkan DSKP dan urutan kemahiran RPT 2026, masih menunggu semakan individu terhadap buku teks.
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
-**Kosa kata / ayat:** كرسي، سبورة، مكتب، باب، نافذة، فصل
+**Kosa kata / ayat:** كرسي، مكتب، باب، فصل، دولاب، مصباح؛ kad tambahan guru: سبورة.
 **Objektif pembelajaran:** Murid mengulang lima daripada enam kata kelas dengan jelas.
 **Kriteria kejayaan:** Kejayaan murid diukur berdasarkan bilangan sebutan/bacaan/tulisan betul dalam objektif.
 
 **Set induksi:** Guru mengetuk pintu باب dan menunjuk papan سبورة sambil menyebut kedua-duanya.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menyebut enam kosa kata sambil menunjuk objek di kelas; murid meniru secara kumpulan.
+**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menunjukkan enam benda dalam Buku Teks Tahun 3 halaman 11: كرسي، مكتب، باب، فصل، دولاب، مصباح; murid mendengar dan mengulang. سبورة dari halaman 12 digunakan sebagai pengayaan.
 
 **Aktiviti 2 — Aplikasi murid:** Murid berjalan ke enam stesen mini dan menyebut nama Arab objek pada kad sebelum mengangkatnya.
 
@@ -28,3 +28,6 @@
 **Audit halaman:** Tiada nombor halaman individu disahkan; jangan nyatakan muka surat khusus kepada guru sebelum semakan buku teks.
 
 **Status:** DRAF_STAGING / BELUM READY. Bukan bahan LIVE Telegram atau Web. Teks/aktiviti ini merupakan cadangan berpandukan fokus DSKP/RPT, tidak boleh dianggap padanan tepat halaman buku teks, dan belum diuji dalam Word/PDF A4 RTL.
+
+**Audit sumber BT Tahun 3 (6 Nov 2026):** Buku Teks Bahasa Arab Tahun 3 DBP/KPM cetakan pertama 2018, ISBN 978-983-49-2033-3, Unit 1, halaman bercetak **11–12**. Sumber: https://www.scribd.com/document/438677752/Bahasa-Arab-Tahun-3-Teks-KSSR-Semakan; DSKP asal dalam Drive: https://drive.google.com/file/d/1VQcCrSyo-zmAndvAFv9pScQcLT-DRl00/view.
+**Kesepadanan aktiviti dan SP (1.3.1):** SP 1.3.1 dicetak pada latihan mendengar nama objek kelas h.11–12; buku mengasingkan dua set kosa kata. Pengesahan RPT 2027 mengikut PdP, semakan guru dan pemeriksaan format akhir masih belum selesai. **DRAF / BELUM READY**.
