@@ -16,7 +16,7 @@
       "year": 2,
       "sow": "1s9lRNUtBLQgjzoQZIRPy-RzSXu0vf8Gc",
       "teacher_book": "1-tfy1OH9Cjsg5YLZOyBOY8PM5DLCQU2g",
-      "audit_level": "SOW_160; Year2 L26 original Super Minds 1 TB T70 visually confirms SB p70 Activity1 CD2 Track35 and Activity2 CD2 Track36; 2 matching original WMA Drive files SHA256/codec checked; speech and Telegram route still unverified",
+      "audit_level": "SOW_160; Y2 L26 original TB T70, CD2 Tracks35/36, 2 genuine WMA file SHA256/codec checks, and both exact app.py sender Drive IDs verified. Actual audio speech/live Telegram send pending.",
       "audio_source": "Super Minds 1 Audio Unzipped (candidate folder, 3 discs of WMA)"
     },
     {
@@ -123,8 +123,8 @@
       "severity": "review",
       "year": 2,
       "lesson": 26,
-      "exact_issue": "Original Super Minds 1 TB printed T70 (PDF 0-based index151) confirms SB p70 Activity1 CD2 Track35 and Activity2 CD2 Track36. Matching CD2-35.wma/CD2-36.wma original Drive assets and codec/hashes confirmed; correct audio speech and actual deployed Telegram route unverified.",
-      "status": "ORIGINAL_TB_AND_FILE_METADATA_VERIFIED_SPEECH_AND_TELEGRAM_PENDING",
+      "exact_issue": "Original Super Minds 1 TB T70 confirms SB p70 Activity1 CD2 Track35 and Activity2 CD2 Track36. Both original WMA Drive files passed file hash/codec checks, and app.py _eng12_send_verified_audio literal IDs match exactly (163 map entries). Actual Telegram send and exact spoken content not checked.",
+      "status": "ORIGINAL_TB_WMA_AND_BOT_CODE_FILE_IDS_VERIFIED_LIVE_SEND_AND_SPEECH_PENDING",
       "evidence_path": "audits/english_y2_l026_y3_l093_direct_tb_audio_check_20261105.json"
     },
     {
