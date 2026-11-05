@@ -10,7 +10,7 @@
 **SP:** 7.3 — Merumuskan kesan pengabaian amalan cinta akan negara.  
 **Fokus:** Penaakulan kepentingan dan akibat  
 **Masa:** 60 minit (sesuaikan dengan jadual waktu guru)  
-**BBM:** Buku Teks Tahun 6, Unit 7, Sayangilah Alam, Hargai Kehidupan, halaman permulaan bercetak 59 (PDF 68); kad situasi, peta keputusan, rekod PBD.
+**BBM:** Kad gambar Jalur Gemilang, Rukun Negara dan aktiviti cinta negara berdasarkan DSKP Tahun 6 SK 7.0; peta keputusan, bahan poster, rekod PBD.
 
 ## Objektif dan kriteria kejayaan
 Murid menunjukkan penguasaan SP **7.3** dengan menghasilkan dua alasan atau kesan yang konsisten dengan kata tugas SP berdasarkan konteks **Cinta Akan Negara**.  
@@ -19,7 +19,7 @@ Murid menunjukkan penguasaan SP **7.3** dengan menghasilkan dua alasan atau kesa
 ## Langkah PdP
 **Set induksi (5 minit):** Guru memperkenalkan situasi **Murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan** Murid mengenal pasti cabaran nilai Kasih sayang dan menyebut satu tindakan yang boleh diambil.
 
-**Aktiviti 1 (20 minit) — Penaakulan kepentingan dan akibat:** Guru menukar satu fakta dalam kes "Murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan" dan meminta murid menjangka perubahan akibat kepada individu serta masyarakat. Guru menjelaskan kata tugas SP (7.3) dan memeriksa kefahaman murid melalui soal jawab individu.
+**Aktiviti 1 (20 minit) — Penaakulan kepentingan dan akibat:** Guru mengemukakan situasi rakyat mengabaikan perpaduan dan lambang kebangsaan; murid membandingkan akibatnya kepada keselamatan, identiti negara dan kerjasama masyarakat. Guru menjelaskan kata tugas SP (7.3) dan memeriksa kefahaman murid melalui soal jawab individu.
 
 **Aktiviti 2 (20 minit) — Menyelesaikan masalah:** Murid menghasilkan peta "pilihan–sebab–akibat" dan membandingkan dua keputusan berbeza. Wakil memberi alasan di hadapan kumpulan manakala pemerhati menguji sama ada kesannya dapat dijelaskan. Guru memandu murid menggunakan sebab yang sahih, menjaga keselamatan serta mengelakkan aktiviti yang memerlukan murid mendedahkan butiran peribadi.
 
@@ -31,4 +31,4 @@ Murid menunjukkan penguasaan SP **7.3** dengan menghasilkan dua alasan atau kesa
 **Pengayaan:** Tambah satu pilihan alternatif dan dua justifikasi yang melihat kesan terhadap pihak lain.  
 **Refleksi guru:** Rekod evidens individu, keperluan bimbingan dan susulan PdP.
 
-**Batasan sumber:** SP ini dipetik daripada crosswalk DSKP SK Tahun 6, dan rujukan buku teks ialah **halaman mula unit berdasarkan TOC yang disahkan**; halaman aktiviti terperinci belum disahkan. Langkah PdP diadaptasi oleh CikguLaju. Label status dalaman tidak untuk dipaparkan pada RPH guru.
+**Batasan sumber:** SP ini dipetik daripada crosswalk DSKP SK Tahun 6, dan **Buku Teks Tahun 6 Unit 7 memfokus kasih sayang terhadap alam sekitar, bukan SK 7.0 Cinta Akan Negara**; tugasan ini berpandukan DSKP dan tidak mendakwa rujukan halaman buku teks. Langkah PdP diadaptasi oleh CikguLaju. Label status dalaman tidak untuk dipaparkan pada RPH guru.
