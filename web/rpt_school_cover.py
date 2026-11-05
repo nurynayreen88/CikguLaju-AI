@@ -6,6 +6,13 @@ Return original bytes when the teacher has not saved school identity.
 """
 from io import BytesIO
 from pathlib import Path
+from hashlib import sha256
+from urllib.error import HTTPError, URLError
+from urllib.parse import urlsplit
+from urllib.request import Request, build_opener, HTTPSHandler
+import base64
+import json
+import os
 
 from web.teacher_profile_store import _get_one, ProfileUnavailable, _validated_name
 from web.school_logo_store import logo_png
@@ -30,11 +37,7 @@ def school_identity(config, uid):
 
 
 def for_download(account, path, subject, year):
-    """Return original PDF file path OR personalized in-memory PDF.
-
-    No personalization for anonymous/legacy test accounts without a Telegram
-    identity. Real Web accounts are already authenticated before this call.
-    """
+    """Attach school details via the existing protected Telegram PDF stack."""
     uid = account.get("telegram_user_id") if isinstance(account, dict) else None
     if type(uid) is not int or uid <= 0:
         return path
@@ -45,8 +48,57 @@ def for_download(account, path, subject, year):
     identity = school_identity(config, uid)
     if identity is None:
         return path
-    return personalized_pdf(path, subject, year, identity)
+    return request_telegram_school_rpt(path, subject, year, identity)
 
+
+def request_telegram_school_rpt(path, subject, year, identity, *, opener=None):
+    """Use same source PDF bytes, but never run a second PDF writer on Web."""
+    from web.native_telegram_rph_client import BlockRedirects
+    if subject not in (
+        "english", "bahasa_melayu", "matematik", "pendidikan_islam",
+        "pjpk", "pendidikan_moral", "psv",
+    ) or type(year) is not int or not 2 <= year <= 6:
+        raise ProfileUnavailable("RPT tidak sah")
+    path = Path(path)
+    if path.is_symlink() or not path.is_file() or not 8000 <= path.stat().st_size <= 25 * 1024 * 1024:
+        raise ProfileUnavailable("Fail RPT asal tidak tersedia")
+    source = path.read_bytes()
+    if not source.startswith(b"%PDF-"):
+        raise ProfileUnavailable("Fail RPT asal tidak sah")
+    base = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_URL", "").strip()
+    token = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_TOKEN", "")
+    parsed = urlsplit(base)
+    if (parsed.scheme != "https" or not parsed.hostname or parsed.port is not None
+            or parsed.username or parsed.password or parsed.path not in ("", "/")
+            or parsed.query or parsed.fragment or len(token) < 32):
+        raise ProfileUnavailable("Pelayan RPT belum disambungkan")
+    logo = identity.get("logo")
+    payload = {
+        "subject":subject, "year":year, "source_sha256":sha256(source).hexdigest(),
+        "school":identity["school"], "teacher":identity["teacher"],
+        "state":identity["state"],
+        "logo":base64.b64encode(logo).decode("ascii") if logo else None,
+    }
+    body=json.dumps(payload,ensure_ascii=False,separators=(",",":")).encode("utf-8")
+    if len(body)>750000:
+        raise ProfileUnavailable("Data identiti sekolah terlalu besar")
+    request=Request(base.rstrip("/")+"/internal/rpt/v1/personalize",
+                    data=body,headers={
+                        "Authorization":"Bearer "+token,
+                        "Content-Type":"application/json",
+                        "Accept":"application/pdf",
+                    },method="POST")
+    try:
+        with (opener or build_opener(HTTPSHandler(),BlockRedirects())).open(
+                request,timeout=35) as response:
+            if response.status != 200 or response.headers.get("Content-Type","").split(";")[0] != "application/pdf":
+                raise ProfileUnavailable("Respons RPT sekolah tidak sah")
+            data = response.read(25*1024*1024+1)
+    except (HTTPError,URLError,OSError,TimeoutError):
+        raise ProfileUnavailable("RPT sekolah tidak dapat dijana. Sila cuba semula.") from None
+    if not 8000 <= len(data) <= 25*1024*1024 or not data.startswith(b"%PDF-"):
+        raise ProfileUnavailable("Fail RPT sekolah tidak sah")
+    return BytesIO(data)
 
 def _fit_line(text, font, size, width):
     """Fit one line without drawing outside the printable content area."""
