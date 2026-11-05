@@ -15,13 +15,13 @@
 Murid melaksanakan dua tindakan toleransi semasa aktiviti berpasukan dan menilai perbuatannya dengan refleksi. Kriteria kejayaan: Pemerhatian dua tindakan toleransi, satu cadangan pembaikan dan satu refleksi beralasan; lakonan bukan bukti amalan rumah.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru memperlihatkan tajuk **Amalan Toleransi Menjamin Perpaduan Negara** dalam buku teks KSSR Semakan 2017, m/s 138, dan mengemukakan situasi berkaitan nilai unit. Murid mengenal pasti watak, tindakan serta satu keputusan yang munasabah mengikut SP PdP.
+**Set induksi (5 minit):** Guru memperlihatkan risalah toleransi dalam buku teks m/s 138–139 dan latihan kendiri m/s 140; murid memilih satu perlakuan yang boleh diamalkan ketika bekerja dalam kumpulan.
 
-**Aktiviti 1 (20 minit) — Bersikap Toleransi demi Perpaduan Negara:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 14, m/s 138–140, bahagian **Bersikap Toleransi demi Perpaduan Negara** sebagai rangsangan. Murid merangka dua perlakuan toleransi untuk lakonan pengurusan giliran atau konflik pandangan tanpa melibatkan identiti peribadi murid (SP 14.5). Guru menyemak ketepatan evidens individu mengikut kata tugas SP dan memandu pembetulan yang perlu.
+**Aktiviti 1 (20 minit) — Bersikap Toleransi demi Perpaduan Negara:** Berpandukan tugasan risalah m/s 138–139, guru mengagihkan peranan dan memerhati murid mempraktikkan dua perlakuan toleransi seperti memberi giliran bercakap dan menerima pandangan rakan (SP 14.5). Hasil risalah hanya digunakan dalam kelas, tidak dimuat naik ke media sosial.
 
-**Aktiviti 2 (20 minit) — Mari Uji Diri:** Guru merujuk bahagian **Mari Uji Diri** dalam unit sama dan menyediakan bahan perbincangan atau latihan berstruktur. Murid melaksanakan dialog kerjasama, menerima maklum balas pemerhati dan membaiki satu perlakuan yang menunjukkan toleransi (SP 14.5). Guru memberikan maklum balas yang boleh dilihat pada hasil atau tindakan murid dan menilai bukti secara individu.
+**Aktiviti 2 (20 minit) — Mari Uji Diri:** Guru meneliti latihan m/s 140 dan meminta murid menyampaikan ucapan ringkas kepada kumpulan. Murid mendengar tanpa mencelah, memberi respons sopan dan membaiki satu tindakan berdasarkan komen pemerhati (SP 14.5).
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Pemerhatian dua tindakan toleransi, satu cadangan pembaikan dan satu refleksi beralasan; lakonan bukan bukti amalan rumah. Guru merekod evidens individu dan memberi maklum balas berdasarkan sebab dan tingkah laku yang boleh diperhatikan.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menggunakan senarai semak bagi dua perlakuan toleransi yang diperhatikan, satu penambahbaikan dan satu refleksi individu berasaskan tugasan m/s 138–140. Simulasi tidak dianggap bukti amalan di luar sekolah (SP 14.5).
 
 **Penutup (5 minit):** Murid menyatakan satu tindakan bertoleransi yang boleh dilakukan secara selamat dan sebab tindakan itu menjaga perpaduan. Guru merumuskan sikap menghormati kepelbagaian masyarakat.
 
