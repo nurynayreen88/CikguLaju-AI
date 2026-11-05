@@ -1,0 +1,23 @@
+name: English Y4 160 SOW lesson and Drive audio inventory audit
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'audits/english_y4_sow_160_audio_index_20261105.json'
+      - 'audits/english_y4_160_audio_drive_crosscheck_20261105.json'
+      - 'tests/test_english_y4_160_audio_crosscheck_20261105.py'
+      - '.github/workflows/english-y4-160-audio-source-crosscheck-20261105.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  offline-source-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Verify all SOW lesson IDs, legacy media files and unapproved blockers
+        run: python -m unittest discover -s tests -p 'test_english_y4_160_audio_crosscheck_20261105.py' -v
+      - name: Run prior Year4 read-only media route analysis
+        run: python tools/audit_english_y4_legacy_audio_routes_20261104.py
