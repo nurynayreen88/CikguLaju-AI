@@ -17,9 +17,9 @@ Murid menghuraikan atau menilai berdasarkan **11.3: Mengenal pasti kepentingan a
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Murid mengenali usaha tekun rakyat membangunkan negara**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Kepentingan usaha gigih:** Guru membandingkan usaha menghasilkan ciptaan dan industri kreatif m/s 101–103 dengan kegiatan membaca m/s 105. Murid mengenal pasti dua kepentingan sikap rajin terhadap perkembangan ilmu dan ekonomi negara (SP 11.3) dan menyatakan sebab.
+**Aktiviti 1 (20 minit) — Gigih Berusaha Negara Maju:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 11, m/s 106–108, bahagian **Gigih Berusaha Negara Maju** sebagai rangsangan. Murid mengenal pasti dua kepentingan kerajinan seperti meningkatkan kemahiran, kreativiti atau hasil kerja yang bermanfaat untuk negara (SP 11.3). Guru menyemak ketepatan evidens individu mengikut kata tugas SP dan memandu pembetulan yang perlu.
 
-**Aktiviti 2 (20 minit) — Perasaan menyumbang kejayaan:** Guru memaparkan bahan 'Rajin Membaca, Negara Gemilang' m/s 105–106. Murid menyatakan satu perasaan apabila usaha gigih menghasilkan kejayaan atau manfaat kepada masyarakat, disertai alasan berkaitan negara (SP 11.4).
+**Aktiviti 2 (20 minit) — Teruskan Semangat Dedikasi:** Guru merujuk bahagian **Teruskan Semangat Dedikasi** dalam unit sama dan menyediakan bahan perbincangan atau latihan berstruktur. Murid mengekspresikan perasaan apabila usaha gigih membuahkan kejayaan dengan alasan berpandukan situasi bab (SP 11.4). Guru memberikan maklum balas yang boleh dilihat pada hasil atau tindakan murid dan menilai bukti secara individu.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Semak justifikasi serta dua kesan bagi SP 11.3 dan ayat perasaan yang sesuai bagi SP 11.4. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 
@@ -29,4 +29,8 @@ Murid menghuraikan atau menilai berdasarkan **11.3: Mengenal pasti kepentingan a
 
 **Bukti buku teks disemak (2026-11-05):** Unit 11, m/s 101–106 (PDF 110–115). Contoh asal: Reka cipta dan ekonomi kreatif, rajin membaca serta contoh kerja gigih dalam pelbagai bidang. RPH ini mengolah contoh dalam buku mengikut SP DSKP, bukan menyalin petikan buku atau mendakwa amalan sebenar di luar PdP.
 
-**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — Unit 11, m/s 101–106 (PDF 110–115) disemak khusus bagi aktiviti PdP; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 11, m/s 106–108 (flipbook 116–118); tajuk Gigih Berusaha Negara Maju / Teruskan Semangat Dedikasi; SP 11.3 dan 11.4. Ini padanan isi kandungan bab dan olahan PdP, **bukan semakan visual penuh tugasan buku atau pengesahan kelas sebenar**.
+
+**Batasan bukti sejarah:** Sebarang rujukan halaman PDF tahun lama dalam nota audit terdahulu ialah edisi KSSR pra-Semakan dan tidak disahkan sebagai bahan Tahun 6 edisi 2021.
+
+**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 — DBP 2021](https://fliphtml5.com/sbinx/haph/) — Unit 11, m/s 106–108 (halaman flipbook 116–118), rujukan tajuk dan konteks; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) untuk urutan, bukan tarikh rasmi 2027. Aktiviti olahan CikguLaju; semakan visual lengkap halaman buku belum selesai.

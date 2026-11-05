@@ -17,9 +17,9 @@ Murid memperagakan tindakan berdasarkan **12.5: Mengamalkan sikap bekerjasama de
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Rakyat pelbagai latar belakang menjalankan projek kebajikan bersama**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Pelan projek kerjasama:** Guru memperlihatkan projek Minggu Cegah Jenayah m/s 113–114 dan contoh komuniti menjalankan tugas bersama m/s 115. Murid membentuk kumpulan dengan tugas jelas dan merancang aktiviti bantuan komuniti secara selamat tanpa menjalankan tugas penguatkuasaan (SP 12.5).
+**Aktiviti 1 (20 minit) — Rakyat Bekerjasama Negara Aman:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 12, m/s 118–120, bahagian **Rakyat Bekerjasama Negara Aman** sebagai rangsangan. Murid merangka tugasan projek gotong-royong bilik darjah dengan dua peranan yang boleh diperhatikan dan langkah keselamatan (SP 12.5). Guru menyemak ketepatan evidens individu mengikut kata tugas SP dan memandu pembetulan yang perlu.
 
-**Aktiviti 2 (20 minit) — Laksanakan dan semak kerjasama:** Murid melaksanakan simulasi penyediaan poster atau kit kesedaran; guru menilai pembahagian tugas, tolong-menolong dan komunikasi yang dapat dilihat. Murid melengkapkan refleksi berdasarkan latihan m/s 117–118 (SP 12.5). Guru mengesahkan dua tindakan bekerjasama yang benar-benar ditunjukkan dan mencatat satu langkah penambahbaikan.
+**Aktiviti 2 (20 minit) — Mari Uji Diri:** Guru merujuk bahagian **Mari Uji Diri** dalam unit sama dan menyediakan bahan perbincangan atau latihan berstruktur. Murid melaksanakan simulasi kerjasama, memerhati sumbangan setiap murid, membetulkan pembahagian kerja dan melengkapkan refleksi individu (SP 12.5). Guru memberikan maklum balas yang boleh dilihat pada hasil atau tindakan murid dan menilai bukti secara individu.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Semak senarai pemerhatian perlakuan bagi SP 12.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 
@@ -29,4 +29,8 @@ Murid memperagakan tindakan berdasarkan **12.5: Mengamalkan sikap bekerjasama de
 
 **Bukti buku teks disemak (2026-11-05):** Unit 12, m/s 113–118 (PDF 122–127). Bahan asal: Bersama-sama Mencegah Jenayah, Dasar Kerajaan Dijayakan Bersama serta penilaian. Aktiviti RPH ialah olahan PdP bagi SP rasmi, bukan salinan buku teks atau pengesahan amalan sebenar murid.
 
-**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — Unit 12, m/s 113–118 (PDF 122–127) disemak mengikut aktiviti buku teks; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 12, m/s 118–120 (flipbook 128–130); tajuk Rakyat Bekerjasama Negara Aman / Mari Uji Diri; SP 12.5. Ini padanan isi kandungan bab dan olahan PdP, **bukan semakan visual penuh tugasan buku atau pengesahan kelas sebenar**.
+
+**Batasan bukti sejarah:** Sebarang rujukan halaman PDF tahun lama dalam nota audit terdahulu ialah edisi KSSR pra-Semakan dan tidak disahkan sebagai bahan Tahun 6 edisi 2021.
+
+**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 — DBP 2021](https://fliphtml5.com/sbinx/haph/) — Unit 12, m/s 118–120 (halaman flipbook 128–130), rujukan tajuk dan konteks; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) untuk urutan, bukan tarikh rasmi 2027. Aktiviti olahan CikguLaju; semakan visual lengkap halaman buku belum selesai.

@@ -17,9 +17,9 @@ Murid menghuraikan atau menilai berdasarkan **12.3: Menghuraikan kepentingan ama
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Rakyat pelbagai latar belakang menjalankan projek kebajikan bersama**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Kepentingan bantuan bersama:** Guru memperlihatkan bantuan mangsa bencana m/s 111–112 serta kegiatan komuniti m/s 113–115. Murid menghuraikan dua kesan baik kerjasama kepada mangsa dan kejiranan, bersama alasan mengapa hubungan antara rakyat menjadi lebih harmoni (SP 12.3).
+**Aktiviti 1 (20 minit) — Projek Kerjasama:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 12, m/s 116–118, bahagian **Projek Kerjasama** sebagai rangsangan. Murid menghuraikan dua kepentingan kerja bersama ketika berhadapan isu masyarakat, termasuk bantuan bencana yang dirancang dengan selamat (SP 12.3). Guru menyemak ketepatan evidens individu mengikut kata tugas SP dan memandu pembetulan yang perlu.
 
-**Aktiviti 2 (20 minit) — Bangga bekerjasama:** Guru menggunakan gambar kegiatan kedai serta 'Dasar Kerajaan Dijayakan Bersama' m/s 115–116. Murid menzahirkan perasaan apabila turut membantu projek komuniti, menyebut satu bukti tindakan dan satu alasan berkaitan keharmonian negara (SP 12.4).
+**Aktiviti 2 (20 minit) — Pupuk Semangat Kerjasama:** Guru merujuk bahagian **Pupuk Semangat Kerjasama** dalam unit sama dan menyediakan bahan perbincangan atau latihan berstruktur. Murid menyatakan satu perasaan apabila pasukan berjaya bekerjasama dengan baik dan memberi alasan berdasarkan pengalaman simulasi (SP 12.4). Guru memberikan maklum balas yang boleh dilihat pada hasil atau tindakan murid dan menilai bukti secara individu.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Semak justifikasi serta dua kesan bagi SP 12.3 dan ayat perasaan yang sesuai bagi SP 12.4. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 
@@ -29,4 +29,8 @@ Murid menghuraikan atau menilai berdasarkan **12.3: Menghuraikan kepentingan ama
 
 **Bukti buku teks disemak (2026-11-05):** Unit 12, m/s 111–116 (PDF 120–125). Bahan asal: Kempen bantuan bencana, pelaksanaan Program Minggu Cegah Jenayah dan dasar kerjasama komuniti. Aktiviti RPH ialah olahan PdP bagi SP rasmi, bukan salinan buku teks atau pengesahan amalan sebenar murid.
 
-**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — Unit 12, m/s 111–116 (PDF 120–125) disemak mengikut aktiviti buku teks; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 12, m/s 116–118 (flipbook 126–128); tajuk Projek Kerjasama / Pupuk Semangat Kerjasama; SP 12.3 dan 12.4. Ini padanan isi kandungan bab dan olahan PdP, **bukan semakan visual penuh tugasan buku atau pengesahan kelas sebenar**.
+
+**Batasan bukti sejarah:** Sebarang rujukan halaman PDF tahun lama dalam nota audit terdahulu ialah edisi KSSR pra-Semakan dan tidak disahkan sebagai bahan Tahun 6 edisi 2021.
+
+**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 — DBP 2021](https://fliphtml5.com/sbinx/haph/) — Unit 12, m/s 116–118 (halaman flipbook 126–128), rujukan tajuk dan konteks; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) untuk urutan, bukan tarikh rasmi 2027. Aktiviti olahan CikguLaju; semakan visual lengkap halaman buku belum selesai.
