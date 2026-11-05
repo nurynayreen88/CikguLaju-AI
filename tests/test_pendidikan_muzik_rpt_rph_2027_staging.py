@@ -102,6 +102,33 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
                 self.assertTrue(all("Projek Seni Muzik 3" in row["source_rpt_original_unit"] for row in extra))
                 self.assertTrue(all(row["validation_status"].startswith("DRAF") for row in extra))
 
+    def test_textbook_crosscheck_is_partial_and_audio_is_unverified(self):
+        expected = {
+            4: (22, {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 17, 18, 19, 20, 21, 22, 23, 24, 28, 29, 30}),
+            5: (15, {12, 13, 14, 15, 16, 17, 27, 28, 29, 30, 31, 32, 33, 34, 35}),
+            6: (7, {11, 14, 15, 30, 31, 32, 33}),
+        }
+        for year, (count, pdp_numbers) in expected.items():
+            manifest = json.loads((MUSIC / "rpt_rph_2027" / f"year{year}" / "pdp_manifest.json").read_text(encoding="utf-8"))
+            actual = {r["pdp"] for r in manifest["pdps"] if r.get("source_book_text_crosscheck")}
+            self.assertEqual(actual, pdp_numbers)
+            self.assertEqual(manifest["partial_textbook_crosscheck_count"] if year != 4 else manifest["partial_text_crosscheck_count"], count)
+            self.assertFalse(manifest["textbook_verified"])
+            self.assertFalse(manifest["audio_verified"])
+            self.assertFalse(manifest["rph_word_pdf_verified"])
+            self.assertTrue(all(r.get("source_book_audio_file_verified") is False for r in manifest["pdps"] if r.get("source_book_text_crosscheck")))
+        year4 = json.loads((MUSIC / "rpt_rph_2027" / "year4" / "pdp_manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(year4["partial_page_content_check_count"], 6)
+        y5 = json.loads((MUSIC / "rpt_rph_2027" / "year5" / "pdp_manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(y5["pdps"][30]["source_rpt_original_page"], "80-83")
+        self.assertEqual(y5["pdps"][31]["source_rpt_original_page"], "80-83")
+        self.assertEqual(y5["pdps"][30]["page"], "80-81")
+        self.assertEqual(y5["pdps"][31]["page"], "82-83")
+        y6 = json.loads((MUSIC / "rpt_rph_2027" / "year6" / "pdp_manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(y6["pdps"][10]["dskp_classical_years"], "1750-1830")
+        self.assertEqual(y6["pdps"][10]["textbook_classical_years"], "1750-1850")
+        self.assertIn("Classical", (MUSIC / "rpt_rph_2027" / "year6" / "rph_pdp_11.md").read_text(encoding="utf-8"))
+
     def test_year_5_6_risks_remain_visible(self):
         y5 = json.loads((MUSIC / "rpt_rph_2027" / "year5" / "pdp_manifest.json").read_text(encoding="utf-8"))
         y6 = json.loads((MUSIC / "rpt_rph_2027" / "year6" / "pdp_manifest.json").read_text(encoding="utf-8"))
