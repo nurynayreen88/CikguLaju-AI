@@ -31,6 +31,17 @@ class ProductionSourceInventory(unittest.TestCase):
             self.assertTrue(all(r["path"] is None for r in source_records(year,"PSV")))
         self.assertEqual((ROOT/"rph_standalone"/"matematik"/"staging_preview.py").is_file(),True)
 
+    def test_psv_release_is_independently_approval_gated(self):
+        from unittest.mock import patch
+        from web.unified_rph_web import source_records
+        # Even a mistakenly enabled approval switch cannot publish DRAF rows.
+        with patch("web.unified_rph_web._psv_release_approved", return_value=True):
+            for year in range(2,7):
+                records=source_records(year,"PSV")
+                self.assertEqual(len(records),42)
+                self.assertTrue(all(rec["path"] is None for rec in records))
+                self.assertTrue(all(rec["status"] != "READY" for rec in records))
+
     def test_public_branding(self):
         html=(ROOT/"web_v1_static_preview"/"index.html").read_text(encoding="utf8")
         self.assertIn("CikguLaju AI · Web",html)
