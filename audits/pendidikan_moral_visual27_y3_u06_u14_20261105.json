@@ -1,0 +1,487 @@
+{
+  "status": "VISUAL_SOURCE_ACTIVITY_REVIEWED_27_Y3_NOT_FINAL_READY",
+  "date": "2026-11-05",
+  "method": "Direct inspection of the eight printed activity pages per Moral Year3 book unit, except final ten-page unit; teacher-pupil activities rewritten and referenced per RPH.",
+  "source_book_file_id": "1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl",
+  "source_pdf_sha256": "2c3909942f174c1e295824d63676a294bd423be609680d8b2f691a3adde8f657",
+  "scope": "Y3 core 27 lessons Units6-14. No claims about supplementary teaching activities, teaching assessment or real Telegram delivery.",
+  "records": [
+    {
+      "year": 3,
+      "unit": 6,
+      "lesson": 16,
+      "printed": [
+        41,
+        43
+      ],
+      "pdf": [
+        47,
+        49
+      ],
+      "sp_codes": [
+        "6.1",
+        "6.2"
+      ],
+      "evidence": "Hari Kantin/Sekolah Selamat, pelawat Aqib Bara, Kenali Warga Sekolah, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 6,
+      "lesson": 17,
+      "printed": [
+        44,
+        45
+      ],
+      "pdf": [
+        50,
+        51
+      ],
+      "sp_codes": [
+        "6.3",
+        "6.4"
+      ],
+      "evidence": "Hari Kantin/Sekolah Selamat, pelawat Aqib Bara, Kenali Warga Sekolah, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 6,
+      "lesson": 18,
+      "printed": [
+        46,
+        48
+      ],
+      "pdf": [
+        52,
+        54
+      ],
+      "sp_codes": [
+        "6.5"
+      ],
+      "evidence": "Hari Kantin/Sekolah Selamat, pelawat Aqib Bara, Kenali Warga Sekolah, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 7,
+      "lesson": 19,
+      "printed": [
+        49,
+        51
+      ],
+      "pdf": [
+        55,
+        57
+      ],
+      "sp_codes": [
+        "7.1",
+        "7.2"
+      ],
+      "evidence": "Sekolah Kebanggaan, Sekolah Terbaik, Pondok Bacaan, mural, Sekolahku Sayang, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 7,
+      "lesson": 20,
+      "printed": [
+        52,
+        53
+      ],
+      "pdf": [
+        58,
+        59
+      ],
+      "sp_codes": [
+        "7.3",
+        "7.4"
+      ],
+      "evidence": "Sekolah Kebanggaan, Sekolah Terbaik, Pondok Bacaan, mural, Sekolahku Sayang, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 7,
+      "lesson": 21,
+      "printed": [
+        54,
+        56
+      ],
+      "pdf": [
+        60,
+        62
+      ],
+      "sp_codes": [
+        "7.5"
+      ],
+      "evidence": "Sekolah Kebanggaan, Sekolah Terbaik, Pondok Bacaan, mural, Sekolahku Sayang, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 8,
+      "lesson": 22,
+      "printed": [
+        57,
+        59
+      ],
+      "pdf": [
+        63,
+        65
+      ],
+      "sp_codes": [
+        "8.1",
+        "8.2"
+      ],
+      "evidence": "Sambutan kemerdekaan, kisah Aaron dan Erwin, Sampul Surat Adil, Singa Yang Adil, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 8,
+      "lesson": 23,
+      "printed": [
+        60,
+        61
+      ],
+      "pdf": [
+        66,
+        67
+      ],
+      "sp_codes": [
+        "8.3",
+        "8.4"
+      ],
+      "evidence": "Sambutan kemerdekaan, kisah Aaron dan Erwin, Sampul Surat Adil, Singa Yang Adil, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 8,
+      "lesson": 24,
+      "printed": [
+        62,
+        64
+      ],
+      "pdf": [
+        68,
+        70
+      ],
+      "sp_codes": [
+        "8.5"
+      ],
+      "evidence": "Sambutan kemerdekaan, kisah Aaron dan Erwin, Sampul Surat Adil, Singa Yang Adil, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 9,
+      "lesson": 25,
+      "printed": [
+        65,
+        67
+      ],
+      "pdf": [
+        71,
+        73
+      ],
+      "sp_codes": [
+        "9.1",
+        "9.2"
+      ],
+      "evidence": "Melvin pertandingan catur, Faiz melapor benar, Kota Berani, Shanti pertandingan bercerita, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 9,
+      "lesson": 26,
+      "printed": [
+        68,
+        69
+      ],
+      "pdf": [
+        74,
+        75
+      ],
+      "sp_codes": [
+        "9.3",
+        "9.4"
+      ],
+      "evidence": "Melvin pertandingan catur, Faiz melapor benar, Kota Berani, Shanti pertandingan bercerita, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 9,
+      "lesson": 27,
+      "printed": [
+        70,
+        72
+      ],
+      "pdf": [
+        76,
+        78
+      ],
+      "sp_codes": [
+        "9.5"
+      ],
+      "evidence": "Melvin pertandingan catur, Faiz melapor benar, Kota Berani, Shanti pertandingan bercerita, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 10,
+      "lesson": 28,
+      "printed": [
+        73,
+        75
+      ],
+      "pdf": [
+        79,
+        81
+      ],
+      "sp_codes": [
+        "10.1",
+        "10.2"
+      ],
+      "evidence": "Sarvesh jujur, Kumaar/Pavithra, Tabung Kejujuran, Jason dompet, Nazri, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 10,
+      "lesson": 29,
+      "printed": [
+        76,
+        77
+      ],
+      "pdf": [
+        82,
+        83
+      ],
+      "sp_codes": [
+        "10.3",
+        "10.4"
+      ],
+      "evidence": "Sarvesh jujur, Kumaar/Pavithra, Tabung Kejujuran, Jason dompet, Nazri, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 10,
+      "lesson": 30,
+      "printed": [
+        78,
+        80
+      ],
+      "pdf": [
+        84,
+        86
+      ],
+      "sp_codes": [
+        "10.5"
+      ],
+      "evidence": "Sarvesh jujur, Kumaar/Pavithra, Tabung Kejujuran, Jason dompet, Nazri, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 11,
+      "lesson": 31,
+      "printed": [
+        81,
+        83
+      ],
+      "pdf": [
+        87,
+        89
+      ],
+      "sp_codes": [
+        "11.1",
+        "11.2"
+      ],
+      "evidence": "Brandon murid rajin, Radin Pusat Sumber Sekolah, Monopoli Kerajinan, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 11,
+      "lesson": 32,
+      "printed": [
+        84,
+        85
+      ],
+      "pdf": [
+        90,
+        91
+      ],
+      "sp_codes": [
+        "11.3",
+        "11.4"
+      ],
+      "evidence": "Brandon murid rajin, Radin Pusat Sumber Sekolah, Monopoli Kerajinan, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 11,
+      "lesson": 33,
+      "printed": [
+        86,
+        88
+      ],
+      "pdf": [
+        92,
+        94
+      ],
+      "sp_codes": [
+        "11.5"
+      ],
+      "evidence": "Brandon murid rajin, Radin Pusat Sumber Sekolah, Monopoli Kerajinan, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 12,
+      "lesson": 34,
+      "printed": [
+        89,
+        91
+      ],
+      "pdf": [
+        95,
+        97
+      ],
+      "sp_codes": [
+        "12.1",
+        "12.2"
+      ],
+      "evidence": "Gotong-royong taman sains, Jalur Gemilang bekas telur, buah potong, Menara Kerjasama, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 12,
+      "lesson": 35,
+      "printed": [
+        92,
+        93
+      ],
+      "pdf": [
+        98,
+        99
+      ],
+      "sp_codes": [
+        "12.3",
+        "12.4"
+      ],
+      "evidence": "Gotong-royong taman sains, Jalur Gemilang bekas telur, buah potong, Menara Kerjasama, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 12,
+      "lesson": 36,
+      "printed": [
+        94,
+        96
+      ],
+      "pdf": [
+        100,
+        102
+      ],
+      "sp_codes": [
+        "12.5"
+      ],
+      "evidence": "Gotong-royong taman sains, Jalur Gemilang bekas telur, buah potong, Menara Kerjasama, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 13,
+      "lesson": 37,
+      "printed": [
+        97,
+        99
+      ],
+      "pdf": [
+        103,
+        105
+      ],
+      "sp_codes": [
+        "13.1",
+        "13.2"
+      ],
+      "evidence": "Bais hidup sederhana, Hari Kanak-Kanak, Gegantung Kesederhanaan, tutup suis, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 13,
+      "lesson": 38,
+      "printed": [
+        100,
+        101
+      ],
+      "pdf": [
+        106,
+        107
+      ],
+      "sp_codes": [
+        "13.3",
+        "13.4"
+      ],
+      "evidence": "Bais hidup sederhana, Hari Kanak-Kanak, Gegantung Kesederhanaan, tutup suis, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 13,
+      "lesson": 39,
+      "printed": [
+        102,
+        104
+      ],
+      "pdf": [
+        108,
+        110
+      ],
+      "sp_codes": [
+        "13.5"
+      ],
+      "evidence": "Bais hidup sederhana, Hari Kanak-Kanak, Gegantung Kesederhanaan, tutup suis, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 14,
+      "lesson": 40,
+      "printed": [
+        105,
+        107
+      ],
+      "pdf": [
+        111,
+        113
+      ],
+      "sp_codes": [
+        "14.1",
+        "14.2"
+      ],
+      "evidence": "Rosmond dan Pei Yee, diari Sudep Singh, dialog bertolak ansur, menunggu giliran, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 14,
+      "lesson": 41,
+      "printed": [
+        108,
+        110
+      ],
+      "pdf": [
+        114,
+        116
+      ],
+      "sp_codes": [
+        "14.3",
+        "14.4"
+      ],
+      "evidence": "Rosmond dan Pei Yee, diari Sudep Singh, dialog bertolak ansur, menunggu giliran, Uji Minda"
+    },
+    {
+      "year": 3,
+      "unit": 14,
+      "lesson": 42,
+      "printed": [
+        111,
+        114
+      ],
+      "pdf": [
+        117,
+        120
+      ],
+      "sp_codes": [
+        "14.5"
+      ],
+      "evidence": "Rosmond dan Pei Yee, diari Sudep Singh, dialog bertolak ansur, menunggu giliran, Uji Minda"
+    }
+  ]
+}

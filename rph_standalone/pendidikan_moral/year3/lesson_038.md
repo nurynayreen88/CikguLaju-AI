@@ -17,14 +17,16 @@ Murid menghuraikan atau menilai berdasarkan **13.3: Menghuraikan kebaikan bersik
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Murid memilih antara menggunakan semula bahan atau membeli barang baharu**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Peta akibat:** Guru beri dua penghujung kepada situasi. Murid bina peta **pilihan → kesan → alasan**, merujuk SP 13.3 (**Menghuraikan kebaikan bersikap sederhana di sekolah.**). Bandingkan akibat kepada watak yang terlibat dan bincang soalan: **Apakah perbezaan keperluan dan kehendak?**
+**Aktiviti 1 (20 minit) — Pembelajaran berasaskan halaman buku:** Guru memaparkan aktiviti 'Gegantung Kesederhanaan' m/s100 dan permainan 'Sederhana Membawa Kejayaan' m/s101. Murid menghuraikan dua kebaikan bersikap sederhana, termasuk tidak membazir dan memberi ruang kepada orang lain (SP13.3). Guru menyemak hasil individu murid.
 
-**Aktiviti 2 (20 minit) — Dialog dan emosi:** Murid menjalankan dialog ringkas dua versi, menyatakan kesan kedua-duanya dan menulis satu ayat perspektif pihak yang terlibat untuk SP 13.4 (**Mengekspresikan perasaan apabila bersikap sederhana di sekolah.**). Guru semak hubungan alasan, emosi dan nilai.
+**Aktiviti 2 (20 minit) — Pembelajaran berasaskan halaman buku:** Guru meminta murid menyatakan perasaan apabila berjimat atau membantu menjimatkan elektrik di kelas berdasarkan contoh permainan m/s101; murid menulis satu ayat perasaan bersebab (SP13.4). Guru menyemak hasil individu murid.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak justifikasi serta dua kesan bagi SP 13.3 dan ayat perasaan yang sesuai bagi SP 13.4. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menilai dua kebaikan dan satu ayat perasaan yang sesuai dengan gambar/aktiviti. Murid membetulkan satu respons selepas maklum balas guru.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **kesederhanaan**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — halaman belum dipadankan; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 13, m/s 100–101 (PDF 106–107); contoh projek, permainan, situasi atau latihan diperiksa visual dan disesuaikan untuk PdP 038.
+
+**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — aktiviti Unit 13 m/s 100–101 (PDF 106–107) disahkan visual; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

@@ -17,14 +17,16 @@ Murid menyiapkan tugasan **SP 7.1** (Mengenal pasti cara menyayangi sekolah dan 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Murid mendapati kawasan taman sekolah tidak dijaga**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Tugasan 7.1:** Guru membentangkan situasi **Murid mendapati kawasan taman sekolah tidak dijaga** dan menyediakan kad/gambar yang relevan dengan unit buku teks **Sekolah Kebanggaanku** (mula m/s 49; halaman aktiviti belum disahkan). Murid melaksanakan arahan **“Mengenal pasti cara menyayangi sekolah dan warga sekolah.”** dengan menghasilkan **jadual dua contoh dengan label atau alasan**; pasangan menyemak fakta, bukan hanya memilih tindakan baik atau buruk. Guru merekod satu respons individu.
+**Aktiviti 1 (20 minit) — Bukti aktiviti buku teks:** Guru memaparkan empat gambar m/s49: menyanyikan lagu sekolah, meraikan hari lahir sekolah, mengharumkan nama sekolah dan menceriakan sekolah. Murid mengenal pasti tiga cara menyayangi sekolah dan warganya (SP7.1). Guru menyemak hasil individu murid.
 
-**Aktiviti 2 (20 minit) — Tugasan 7.2:** Guru menukar sudut situasi kepada tindakan atau akibat yang boleh diperhatikan. Murid melaksanakan arahan **“Menghuraikan kepentingan menyayangi sekolah dan warga sekolah.”** dan menyediakan **dua huraian yang disokong sebab** berdasarkan contoh yang relevan dengan unit. Murid membentangkan hasil dan memperbaiki jawapan selepas pertanyaan lanjut guru.
+**Aktiviti 2 (20 minit) — Bukti aktiviti buku teks:** Guru menggunakan artikel 'Sekolah Terbaik' m/s50 dan cerita Pondok Bacaan Sekolah m/s51. Murid menghuraikan dua kepentingan menjaga sekolah serta kemudahan bacaan menggunakan bukti cerita (SP7.2). Guru menyemak hasil individu murid.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Guru mengutip hasil individu: **jadual dua contoh dengan label atau alasan** untuk SP 7.1 dan **dua huraian yang disokong sebab** untuk SP 7.2; semak ketepatan makna, bukti dan kaitan dengan nilai **Kasih sayang**. Murid membetulkan satu jawapan selepas maklum balas.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menyemak tiga cara dan dua kepentingan menyayangi sekolah dengan alasan (SP7.1–7.2). Murid membetulkan satu respons selepas maklum balas guru.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **kasih sayang**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — unit bermula m/s 49 (PDF 55); halaman aktiviti khusus belum dipadankan; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 7, m/s 49–51 (PDF 55–57); aktiviti PdP 019 diolah daripada contoh/dialog/latihan asal tanpa mengubah SP.
+
+**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — aktiviti Unit 7 m/s 49–51 (PDF 55–57) diperiksa secara visual; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

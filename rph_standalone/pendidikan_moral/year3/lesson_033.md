@@ -17,14 +17,16 @@ Murid memperagakan tindakan berdasarkan **11.5: Mengamalkan sikap rajin di sekol
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Sekumpulan murid ingin menyiapkan projek kelas mengikut jadual**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Rancang lakonan:** Guru membahagikan watak pelaku, penerima dan pemerhati. Murid merangka ayat serta langkah tindakan selamat untuk **berusaha secara tekun dan berterusan**. Murid menyemak persediaan berdasarkan SP 11.5.
+**Aktiviti 1 (20 minit) — Aktiviti sumber buku:** Guru memaparkan papan permainan Monopoli Kerajinan m/s86–87 dengan tugasan menyusun buku, mengemas kelas dan bertanggungjawab. Murid merancang dua amalan rajin yang boleh diperagakan (SP11.5). Guru menyemak hasil individu murid.
 
-**Aktiviti 2 (20 minit) — Lakon, semak, ulang:** Murid memperagakan situasi selama 60–90 saat, rakan memerhati dengan senarai semak, kemudian murid mengulang tindakan selepas maklum balas. Murid menetapkan satu amalan yang boleh dilaksanakan dengan selamat di sekolah atau rumah.
+**Aktiviti 2 (20 minit) — Aktiviti sumber buku:** Guru menggunakan jadual keputusan Uji Minda m/s88 tentang meningkatkan markah peperiksaan dan kesan tidak rajin. Murid memperagakan dua tugasan kemas kelas secara selamat dan menjawab soalan individu (SP11.5). Guru menyemak hasil individu murid.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak senarai pemerhatian perlakuan bagi SP 11.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru memerhati dua tindakan rajin, menyemak Uji Minda serta meminta refleksi susulan; pelaksanaan sekolah sebenar perlu dipantau. Murid memperbaiki respons selepas maklum balas guru.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **kerajinan**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — halaman belum dipadankan; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 11 m/s 86–88 (PDF 92–94); contoh dialog/cerita/permainan disemak visual dan diolah bagi PdP 033 tanpa mengubah SP.
+
+**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — Unit 11 m/s 86–88 (PDF 92–94) disahkan terhadap aktiviti asal; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
