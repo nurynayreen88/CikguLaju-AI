@@ -39,7 +39,8 @@
       "TB_P39_AND_USER_CONFIRM_CD1_NOT_CD2": 1,
       "TRACK_NOT_LISTED_IN_THIS_SOW_LESSON": 2,
       "SOW_ASSIGNMENT_IS_LESSON_104": 2
-    }
+    },
+    "wrong_textbook_super_minds1_year4_audio_references": 24
   },
   "known_teacher_book_checks": {
     "29": {
@@ -85,7 +86,8 @@
     "24 legacy references are source WMA; old sender downloads as mp3 without conversion (playback not proven).",
     "SOW compatibility is not independent TB verification; all 160 need activity-level TB/SB/media signoff before blanket FINAL READY.",
     "Historical v25.257/258/259 maps may all be reachable from older callback closures; do not patch only the last map.",
-    "CD3 material can legitimately appear early for CLIL/phonics, so monotonic disc sequence is a heuristic only."
+    "CD3 material can legitimately appear early for CLIL/phonics, so monotonic disc sequence is a heuristic only.",
+    "ESCALATION: all 24 WMA paths are in Super Minds 1 Audio Unzipped/CD1 or CD2, not Get Smart Plus 4. Treat as wrong-textbook source provenance and hold; file rename/conversion is not sufficient."
   ],
   "missing_legacy_media_for_sow_audio_lessons": [
     {
@@ -343,9 +345,10 @@
             "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
           },
           "flags": [
-            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER"
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
           ],
-          "classification": "REVIEW_OR_HOLD"
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
         }
       ]
     },
@@ -377,9 +380,10 @@
             "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
           },
           "flags": [
-            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER"
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
           ],
-          "classification": "REVIEW_OR_HOLD"
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
         }
       ]
     },
@@ -416,9 +420,10 @@
             "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
           },
           "flags": [
-            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER"
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
           ],
-          "classification": "REVIEW_OR_HOLD"
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
         },
         {
           "lesson": 9,
@@ -434,9 +439,10 @@
             "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
           },
           "flags": [
-            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER"
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
           ],
-          "classification": "REVIEW_OR_HOLD"
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
         }
       ]
     },
@@ -477,9 +483,10 @@
             "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
           },
           "flags": [
-            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER"
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
           ],
-          "classification": "REVIEW_OR_HOLD"
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
         }
       ]
     },
@@ -511,9 +518,10 @@
             "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
           },
           "flags": [
-            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER"
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
           ],
-          "classification": "REVIEW_OR_HOLD"
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
         }
       ]
     },
@@ -587,9 +595,10 @@
             "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
           },
           "flags": [
-            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER"
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
           ],
-          "classification": "REVIEW_OR_HOLD"
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
         }
       ]
     },
@@ -663,9 +672,10 @@
             "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
           },
           "flags": [
-            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER"
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
           ],
-          "classification": "REVIEW_OR_HOLD"
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
         }
       ]
     },
@@ -706,9 +716,10 @@
             "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
           },
           "flags": [
-            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER"
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
           ],
-          "classification": "REVIEW_OR_HOLD"
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
         }
       ]
     },
@@ -826,9 +837,10 @@
           },
           "flags": [
             "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
-            "TB_P193_CONFIRMS_CD3_NOT_CD1"
+            "TB_P193_CONFIRMS_CD3_NOT_CD1",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
           ],
-          "classification": "REVIEW_OR_HOLD"
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
         },
         {
           "lesson": 29,
@@ -845,9 +857,10 @@
           },
           "flags": [
             "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
-            "TB_P193_CONFIRMS_CD3_NOT_CD1"
+            "TB_P193_CONFIRMS_CD3_NOT_CD1",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
           ],
-          "classification": "REVIEW_OR_HOLD"
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
         }
       ]
     },
@@ -922,9 +935,10 @@
             "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
           },
           "flags": [
-            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER"
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
           ],
-          "classification": "REVIEW_OR_HOLD"
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
         }
       ]
     },
@@ -1299,9 +1313,10 @@
             "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
           },
           "flags": [
-            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER"
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
           ],
-          "classification": "REVIEW_OR_HOLD"
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
         }
       ]
     },
@@ -1582,9 +1597,10 @@
             "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
           },
           "flags": [
-            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER"
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
           ],
-          "classification": "REVIEW_OR_HOLD"
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
         }
       ]
     },
@@ -2299,9 +2315,10 @@
             "folder_id": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv"
           },
           "flags": [
-            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER"
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
           ],
-          "classification": "REVIEW_OR_HOLD"
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
         }
       ]
     },
@@ -2338,9 +2355,10 @@
             "folder_id": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv"
           },
           "flags": [
-            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER"
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
           ],
-          "classification": "REVIEW_OR_HOLD"
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
         },
         {
           "lesson": 98,
@@ -2356,9 +2374,10 @@
             "folder_id": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv"
           },
           "flags": [
-            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER"
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
           ],
-          "classification": "REVIEW_OR_HOLD"
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
         }
       ]
     },
@@ -2395,9 +2414,10 @@
             "folder_id": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv"
           },
           "flags": [
-            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER"
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
           ],
-          "classification": "REVIEW_OR_HOLD"
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
         }
       ]
     },
@@ -2447,9 +2467,10 @@
             "folder_id": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv"
           },
           "flags": [
-            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER"
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
           ],
-          "classification": "REVIEW_OR_HOLD"
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
         }
       ]
     },
@@ -2481,9 +2502,10 @@
             "folder_id": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv"
           },
           "flags": [
-            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER"
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
           ],
-          "classification": "REVIEW_OR_HOLD"
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
         },
         {
           "lesson": 103,
@@ -2501,9 +2523,10 @@
           "flags": [
             "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
             "TRACK_NOT_LISTED_IN_THIS_SOW_LESSON",
-            "SOW_ASSIGNMENT_IS_LESSON_104"
+            "SOW_ASSIGNMENT_IS_LESSON_104",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
           ],
-          "classification": "REVIEW_OR_HOLD"
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
         },
         {
           "lesson": 103,
@@ -2521,9 +2544,10 @@
           "flags": [
             "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
             "TRACK_NOT_LISTED_IN_THIS_SOW_LESSON",
-            "SOW_ASSIGNMENT_IS_LESSON_104"
+            "SOW_ASSIGNMENT_IS_LESSON_104",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
           ],
-          "classification": "REVIEW_OR_HOLD"
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
         }
       ]
     },
@@ -2616,9 +2640,10 @@
             "folder_id": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv"
           },
           "flags": [
-            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER"
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
           ],
-          "classification": "REVIEW_OR_HOLD"
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
         }
       ]
     },
@@ -2668,9 +2693,10 @@
             "folder_id": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv"
           },
           "flags": [
-            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER"
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
           ],
-          "classification": "REVIEW_OR_HOLD"
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
         }
       ]
     },
@@ -3300,5 +3326,28 @@
     "date": "2026-11-05",
     "issue": "Initial SOW-to-app parser missed the first dict key (Lesson1) because it follows '{' rather than a newline",
     "correction": "The first legacy map row is now explicitly included; 56 Lessons/69 route references, 24 WMA + 45 MP3, 9 SOW-audio gaps."
+  },
+  "source_provenance_discovery_20261105": {
+    "parent_title": "Super Minds 1 Audio Unzipped",
+    "parent_drive_id": "1vRIoINoYFHpBiBew73WYTQc_qMCLZtlh",
+    "folder_path": [
+      "Super Minds 1 Audio Unzipped",
+      "CD1 or CD2"
+    ],
+    "subfolders": [
+      {
+        "title": "CD1",
+        "drive_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50",
+        "year4_legacy_references": 14
+      },
+      {
+        "title": "CD2",
+        "drive_id": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv",
+        "year4_legacy_references": 10
+      }
+    ],
+    "conclusion": "The 24 Year4 legacy WMA IDs refer to Super Minds 1 audio source folders. Year4 textbook is Get Smart Plus 4; this is a textbook identity mismatch, not just a WMA-to-MP3 transport issue.",
+    "status": "WRONG_TEXTBOOK_SOURCE_PROVENANCE_HOLD_ALL_24",
+    "note": "No spoken-word comparisons or live user delivery were performed. Exact CD/Track filenames cannot cure wrong textbook source."
   }
 }
