@@ -22,11 +22,25 @@ class TestProvisionalPSV(unittest.TestCase):
             return "sent"
         def callback(cid, data):
             return ("original", data)
+        def subjects(cid, label):
+            return ("original_subjects", label)
         def to_class(cid):
             return ("class", cid)
         def rows(s, *args, **kwargs):
             return base
         return {"state": state, "send": send, "callback": callback,
+                "subjects": subjects,
+                "SUBJECTS_BY_GRADE": {
+                    "Tahun %d" % year: ["Bahasa Melayu", "Sains"]
+                    for year in range(1, 7)
+                },
+                "SUBJECT_LABEL": {
+                    "Bahasa Melayu": "Bahasa Melayu", "Sains": "Sains"
+                },
+                "_CIKGULAJU_DEV_SUBJECTS_V2617": {
+                    "Pendidikan Seni Visual": (1, 2, 3, 4, 5, 6),
+                    "Pendidikan Muzik": (1, 2, 3, 4, 5, 6)
+                },
                 "_lesson_to_class_v2439": to_class, "_rph_rows": rows}, seen, base
 
     def test_unlocked_navigation_and_210_source_rows(self):
@@ -56,6 +70,62 @@ class TestProvisionalPSV(unittest.TestCase):
                         self.assertEqual(rows[key], value)
                     self.assertNotIn("DRAF", " ".join(map(str, rows.values())))
         self.assertEqual(ns["callback"](99, "other_action"), ("original", "other_action"))
+
+    def test_v2617_old_development_callback_and_new_subject_menu(self):
+        """Exact Telegram symptom: v26.17 had a devsub2617_ PSV blocker."""
+        ns, seen, base = self.fake()
+        self.assertTrue(bridge.install(ns, enabled=True))
+        for year in range(2, 7):
+            with self.subTest(year=year):
+                cid = 300 + year
+                self.assertEqual(ns["subjects"](
+                    cid, "Tahun %d" % year), "sent")
+                content, keyboard = seen[-1][1], seen[-1][2]
+                flat = [b for row in keyboard for b in row]
+                psv = [b for b in flat if
+                       "Pendidikan Seni Visual" in b["text"]]
+                self.assertEqual(len(psv), 1)
+                self.assertEqual(psv[0]["callback_data"],
+                                 "sub_Pendidikan Seni Visual")
+                self.assertNotIn("Dalam Pembangunan", psv[0]["text"])
+                self.assertIn("sub_Bahasa Melayu",
+                              [b["callback_data"] for b in flat])
+                self.assertIn("devsub2617_Pendidikan Muzik",
+                              [b["callback_data"] for b in flat])
+                self.assertIn("Pilih subjek", content)
+                # Click a previously-sent Telegram button: accept old data.
+                self.assertEqual(ns["callback"](
+                    cid, "devsub2617_Pendidikan Seni Visual"), "sent")
+                self.assertIn("PdP", seen[-1][1])
+                self.assertEqual(ns["callback"](
+                    cid, "psv27pick|%d|001" % year), ("class", cid))
+                plan = strict.load_candidate(year, 1, preview=True)
+                rows = ns["_rph_rows"](ns["state"][cid], "rph")
+                self.assertEqual(rows["STANDARD PEMBELAJARAN"], plan["sp"])
+        # KP2027 Year1 and secondary remain on their previous routes.
+        self.assertEqual(ns["subjects"](301, "Tahun 1"),
+                         ("original_subjects", "Tahun 1"))
+        ns["state"][301] = {"year": "Tahun 1"}
+        self.assertEqual(ns["callback"](
+            301, "devsub2617_Pendidikan Seni Visual"),
+            ("original", "devsub2617_Pendidikan Seni Visual"))
+        self.assertEqual(ns["subjects"](302, "Tingkatan 1"),
+                         ("original_subjects", "Tingkatan 1"))
+        self.assertEqual(ns["callback"](
+            302, "devsub2617_Pendidikan Muzik"),
+            ("original", "devsub2617_Pendidikan Muzik"))
+
+    def test_legacy_menu_patch_disabled_or_installed_twice(self):
+        ns, seen, base = self.fake()
+        self.assertTrue(bridge.install(ns, enabled=True))
+        patched = ns["subjects"]
+        self.assertTrue(bridge.install(ns, enabled=True))
+        self.assertIs(ns["subjects"], patched)
+        with patch.dict(os.environ, {bridge.FLAG: "0"}):
+            ns2, _, _ = self.fake()
+            original = ns2["subjects"]
+            self.assertFalse(bridge.install(ns2))
+            self.assertIs(ns2["subjects"], original)
 
     def test_stale_or_other_subject_never_overrides(self):
         ns, seen, base = self.fake()
