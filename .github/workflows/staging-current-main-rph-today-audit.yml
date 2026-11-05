@@ -1,0 +1,28 @@
+name: Audit production RPH Hari Ini menu entry safety
+on:
+  push:
+    branches: [staging/cikgulaju-web-v1]
+    paths: ['.github/workflows/staging-current-main-rph-today-audit.yml']
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Read current production main source only
+        run: |
+          git fetch --depth=1 origin main
+          python - <<'PY'
+          import subprocess,re
+          text=subprocess.check_output(['git','show','origin/main:app.py']).decode('utf8',errors='replace').splitlines()
+          print('MAIN_SHA',subprocess.check_output(['git','rev-parse','origin/main']).decode().strip())
+          needles=(r'RPH Hari Ini',r'RPH HARI INI',r'todayrph272',r'todaybatch273_run',r'RPH Minggu Ini')
+          matches=[(i,line) for i,line in enumerate(text) if any(re.search(w,line,re.I) for w in needles)]
+          print('MAIN_MATCHES',len(matches),'APP_LINES',len(text))
+          for i,line in matches[-45:]:
+              print('LINE',i+1,' '.join(f'{j+1}:{text[j].strip()[:190]}' for j in range(max(0,i-1),min(len(text),i+2))))
+          PY
