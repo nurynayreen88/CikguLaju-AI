@@ -31,7 +31,7 @@ def _load(year,root):
     if year not in COUNT:return None
     root=Path(root)
     try:
-        obj=json.loads((root / f'year{year}_draft_catalog.json').read_text(encoding='utf-8'))
+        obj=json.loads((root / f'year{year}.json').read_text(encoding='utf-8'))
         if obj.get('version')!=VERSION or obj.get('ready') is not False or obj.get('year')!=year:return None
         rows=obj.get('records')
         if not isinstance(rows,list) or len(rows)!=COUNT[year]:return None
