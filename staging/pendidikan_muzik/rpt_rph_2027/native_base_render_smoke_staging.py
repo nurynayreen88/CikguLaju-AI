@@ -37,18 +37,42 @@ SELECTED = [(2, 1), (3, 20), (4, 21), (5, 34), (6, 35)]
 
 
 def _compile_functions(source_file, wanted, *, last=()):
-    # Never import app.py: it rebuilds the production database at import time.
-    tree = ast.parse(source_file.read_text(encoding="utf-8"), filename=str(source_file))
-    definitions = {}
-    for entry in tree.body:
-        if isinstance(entry, ast.FunctionDef) and entry.name in wanted:
-            definitions.setdefault(entry.name, []).append(entry)
-    if set(definitions) != set(wanted):
-        raise RuntimeError("Renderer source functions absent: " + str(set(wanted) - set(definitions)))
-    selected = [definitions[name][-1] if name in last else definitions[name][0] for name in wanted]
-    node = ast.fix_missing_locations(ast.Module(body=sorted(selected, key=lambda x: x.lineno), type_ignores=[]))
-    return compile(node, str(source_file), "exec"), tree
-
+    # Never import app.py; it bootstraps the main curriculum DB.
+    # Independently parse chosen functions to tolerate unrelated Python 3.12 syntax.
+    contents = source_file.read_text(encoding='utf-8')
+    if source_file == NATIVE:
+        tree = ast.parse(contents, filename=str(source_file))
+        entries = {}
+        for node in tree.body:
+            if isinstance(node, ast.FunctionDef) and node.name in wanted:
+                entries.setdefault(node.name, []).append(node)
+        if set(entries) != set(wanted):
+            raise RuntimeError('Web parser source changed')
+        nodes = [entries[n][-1] if n in last else entries[n][0] for n in wanted]
+        return compile(ast.fix_missing_locations(ast.Module(body=nodes, type_ignores=[])), str(source_file), 'exec'), tree
+    lines = contents.splitlines(keepends=True)
+    entries = {}
+    for i, line in enumerate(lines):
+        if not line.startswith('def '):
+            continue
+        name = line.split('(', 1)[0][4:].strip()
+        if name not in wanted:
+            continue
+        j = i + 1
+        while j < len(lines):
+            item = lines[j]
+            if item.strip() and not item[0].isspace() and not item.lstrip().startswith('#'):
+                break
+            j += 1
+        snippet = ''.join(lines[i:j])
+        node = ast.parse(snippet, filename=str(source_file)).body[0]
+        if not isinstance(node, ast.FunctionDef) or node.name != name:
+            raise RuntimeError('Unexpected function snippet')
+        entries.setdefault(name, []).append(node)
+    if set(entries) != set(wanted):
+        raise RuntimeError('Missing RPH native functions: ' + str(set(wanted) - set(entries)))
+    nodes = [entries[n][-1] if n in last else entries[n][0] for n in wanted]
+    return compile(ast.fix_missing_locations(ast.Module(body=nodes, type_ignores=[])), str(source_file), 'exec'), None
 
 def _preview_module():
     spec = importlib.util.spec_from_file_location("music_preview_for_base_smoke", SOURCE / "native_layout_preview_staging.py")
