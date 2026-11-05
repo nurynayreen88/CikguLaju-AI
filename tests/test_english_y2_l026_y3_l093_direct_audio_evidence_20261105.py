@@ -55,7 +55,9 @@ class YearTwoThreeAudioPhysicalSourceEvidence(unittest.TestCase):
         source3=(ROOT/"rph_standalone/english/year3/lesson_093.md").read_text(encoding="utf-8")
         for label in ("CD2 Track 35","CD2 Track 36"):
             self.assertIn(label,source2)
-        self.assertIn("CD1 Track 97",source3)
+        self.assertIn("printed Track 97",source3)
+        self.assertNotIn("Class CD1 Track 97 (teacher-confirmed",source3)
+        self.assertIn("original WMA file IDs",source2)
         self.assertIn("Tony",source3)
         self.assertIn("NOT READY",source2)
         self.assertIn("NOT READY",source3)
