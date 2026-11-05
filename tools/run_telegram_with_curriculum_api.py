@@ -288,6 +288,21 @@ except Exception as _y4_l030_audio_exc:
     print("English Y4 L030 audio source safety guard unavailable:",
           type(_y4_l030_audio_exc).__name__, flush=True)
 
+# Year4 Get Smart Plus4: 24 legacy WMA files came from the
+# 'Super Minds 1 Audio Unzipped' folder. Block only 19 affected
+# Year4 Lessons' media buttons and stale callbacks until the correct
+# TB-verified tracks have been tested. Preserve RPH Word/PDF, all other
+# Years/subjects, teacher data, billing, credits and subscriptions.
+# Install after the existing Lesson30 audio guard so both protections hold.
+try:
+    from web.english_y4_wrong_book_audio_hold_20261105 import install as install_y4_wrong_book_audio_hold
+    ENGLISH_Y4_WRONG_BOOK_AUDIO_HOLD_ACTIVE = install_y4_wrong_book_audio_hold(telegram_runtime)
+except Exception as _y4_wrong_book_exc:
+    ENGLISH_Y4_WRONG_BOOK_AUDIO_HOLD_ACTIVE = False
+    print("English Year4 wrong-textbook audio hold unavailable:",
+          type(_y4_wrong_book_exc).__name__, flush=True)
+
+
 
 # Durable teacher/user records: payment IDs, statuses, admin approvals, Telegram
 # names and user feedback are stored in Supabase when explicitly enabled.
