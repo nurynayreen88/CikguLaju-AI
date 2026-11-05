@@ -1,0 +1,24 @@
+name: English Year4 Lesson29 CLIL CD3 source audit
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'rph_standalone/english/year4/lesson_029.md'
+      - 'tests/test_english_y4_l029_clil_cd3_source_20261105.py'
+      - 'tests/test_english_y4_l029_clil_cd3_runtime_hold_20261105.py'
+      - 'web/english_y4_l029_audio_guard.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - '.github/workflows/english-y4-l029-clil-cd3-20261105.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  lesson29-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python -m unittest discover -s tests -p 'test_english_y4_l029_clil_cd3_source_20261105.py' -v
+      - run: python -m unittest discover -s tests -p 'test_english_y4_l029_clil_cd3_runtime_hold_20261105.py' -v
+      - run: python -m unittest discover -s tests -p 'test_english_y4_l030_audio_guard.py' -v

@@ -4,7 +4,7 @@
 **Main SP:** Reading 3.2.2  
 **Complementary SP:** Reading 3.2.4  
 **Duration:** 60 minutes  
-**References:** SB p.129 Activities 1–2; TB p.193; Warm up Track 35; Activity 1 Track 36 (KPM SOW; CD1 designation requires independent TB/audio verification); monolingual dictionaries
+**References:** SB p.129 Activities 1–2; TB p.193; Class CD3 Track 35 (Vocabulary) and Class CD3 Track 36 (Activity 1), visually checked against the Teacher's Book; monolingual dictionaries. Legacy Telegram CD1 audio mapping is incorrect and must not be released until corrected and tested.
 
 ## Set induction (10 minutes)
 **Teacher:** Compare pictures of Malaysian schools with the pupils' own school.
@@ -15,8 +15,8 @@
 **Pupils:** Use a dictionary for library, country, special, strange and forest.
 
 ## Activity 2 (20 minutes)
-**Teacher:** Follow TB Warm-up with Track 35 and Activity 1 with Track 36; pupils read the school texts.
-**Pupils:** Read school texts while listening to Tracks 35–36.
+**Teacher:** Play Class CD3 Track 35 for the vocabulary and Class CD3 Track 36 for SB p.129 Activity 1 as stated in TB p.193; pupils read the school texts. Do not substitute the old CD1-labelled Telegram audio.
+**Pupils:** Practise the vocabulary with Class CD3 Track 35, then read the school texts while listening to Class CD3 Track 36.
 
 ## Reinforcement and PBD (10 minutes)
 **Teacher:** Guide Activity 2 by modelling how to locate a detail in the text, then ask pairs to produce four accurate statements about their own school.
@@ -32,4 +32,8 @@
 
 **SOW source:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
 
-**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.
+**QA status:** READY — provisional, pending teacher's final review. Lesson content is source-based, but this does **not** approve media.
+
+**Audio status:** HOLD FOR AUDIO RELEASE — Teacher's Book p.193 confirms CD3 Tracks 35/36 for the CLIL activity, but legacy Telegram maps wrongly label both as CD1. Do not send old CD1 audio. Source matching does not prove Telegram playback or individual teacher approval.
+
+**Audio file evidence (5 Nov 2026):** Get Smart Plus 4 Class CD 3 folder in Drive holds `35 Track 35.mp3` (file ID `1RNYuEKqaS5YZ9e4TDpnCH73I0scaPVIC`) and `36 Track 36.mp3` (file ID `1VVehPZAvRph_YUTfbBglELLBkFOx9e3J`). Filename and CD3 folder identity verified; spoken content, actual Telegram routing and delivery remain unverified.
