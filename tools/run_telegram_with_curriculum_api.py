@@ -413,6 +413,22 @@ except Exception as _web_payment_catalog_error:
     print("Web payment source unavailable:",
           type(_web_payment_catalog_error).__name__, flush=True)
 
+# Private Web -> Telegram receipt notification. Registers only after the
+# durable Supabase payment queue and admin receipt callbacks are ready.
+# No notification occurs until a saved Pending proof is verified by its ID.
+try:
+    from web.telegram_web_receipt_admin_notification import (
+        create_web_receipt_admin_notification,
+    )
+    telegram_runtime.app.register_blueprint(
+        create_web_receipt_admin_notification(telegram_runtime))
+    TELEGRAM_WEB_RECEIPT_REVIEW_NOTICE_REGISTERED = True
+except Exception as _web_receipt_notice_exc:
+    TELEGRAM_WEB_RECEIPT_REVIEW_NOTICE_REGISTERED = False
+    print("Web receipt admin notification unavailable:",
+          type(_web_receipt_notice_exc).__name__, flush=True)
+
+
 # Add the Web URL after all existing Telegram menu wrappers. Preserve
 # private referral access, manual PDF, payment and other callback handlers.
 try:
