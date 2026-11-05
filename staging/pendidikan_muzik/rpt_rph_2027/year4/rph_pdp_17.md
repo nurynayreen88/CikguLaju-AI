@@ -1,7 +1,7 @@
 # RPH PENDIDIKAN MUZIK TAHUN 4 — PdP 17
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** LARIAN  
+**Unit / Tajuk:** LARIAN RIANG RIA
 **Bidang:** Rekoder  
 **SK / SP (RPT sumber):** 2.4.1
 **Tempoh cadangan:** 30 minit  

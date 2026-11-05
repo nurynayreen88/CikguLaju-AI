@@ -1,7 +1,7 @@
 # RPH PENDIDIKAN MUZIK TAHUN 4 — PdP 18
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** LARIAN  
+**Unit / Tajuk:** LARIAN RIANG RIA
 **Bidang:** Bahasa Muzik dan Notasi  
 **SK / SP (RPT sumber):** 1.1.1, 1.1.2
 **Tempoh cadangan:** 30 minit  

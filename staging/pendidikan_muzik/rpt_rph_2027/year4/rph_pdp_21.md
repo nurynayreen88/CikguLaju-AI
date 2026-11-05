@@ -1,7 +1,7 @@
 # RPH PENDIDIKAN MUZIK TAHUN 4 — PdP 21
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** INDAHNYA  
+**Unit / Tajuk:** INDAHNYA DASAR LAUT
 **Bidang:** Pengajaran dan Persembahan Muzik  
 **SK / SP (RPT sumber):** 3.1.2, 3.1.3
 **Tempoh cadangan:** 30 minit  

@@ -1,7 +1,7 @@
 # RPH PENDIDIKAN MUZIK TAHUN 4 — PdP 20
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** INDAHNYA  
+**Unit / Tajuk:** INDAHNYA DASAR LAUT
 **Bidang:** Permainan Alat Perkusi  
 **SK / SP (RPT sumber):** 2.2.1, 2.2.2
 **Tempoh cadangan:** 30 minit  
