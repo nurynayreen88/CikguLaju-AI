@@ -1,0 +1,76 @@
+name: Web RPH Year 6 top toggle tests
+on:
+  push:
+    branches:
+      - staging/cikgulaju-web-v1
+    paths:
+      - 'web_v1_static_preview/index.html'
+      - '.github/workflows/web-y6-top-toggle-tests.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-accordion:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify top button and preserved RPH tools
+        run: |
+          python - <<'PY'
+          import re
+          from pathlib import Path
+          s = Path('web_v1_static_preview/index.html').read_text(encoding='utf-8')
+          assert s.count('id="y6rph-panel"') == 1
+          assert s.count('id="y6rph-toggle"') == 1
+          assert re.search(r'<section id="y6rph-panel"[^>]* hidden>', s)
+          assert re.search(r'<button id="y6rph-toggle"[^>]*aria-controls="y6rph-panel"[^>]*aria-expanded="false"',s)
+          assert s.index('id="y6rph-toggle"') < s.index('id="y6rph-panel"') < s.index('id="year"') < s.index('id="rpt2027-panel"')
+          assert 'y6Toggle.addEventListener("click"' in s
+          for ident in ('y6rph-lesson','y6rph-show','y6rph-word','y6rph-print','y6rph-preview'):
+              assert 'id="' + ident + '"' in s
+          assert 'RPT 2027 — Semua Subjek' in s
+          src = re.search(r'<script>\s*(.*?)\s*</script>', s, re.S)
+          assert src
+          Path('/tmp/web-y6-toggle.js').write_text(src.group(1),encoding='utf-8')
+          print('PASS: top collapsible RPH Year6 panel and all original controls')
+          PY
+          node --check /tmp/web-y6-toggle.js
+      - name: Verify click opens and closes without removing RPH
+        run: |
+          python - <<'PY'
+          import re
+          from pathlib import Path
+          src=Path('/tmp/web-y6-toggle.js').read_text()
+          snippet=re.search(r'(const y6Toggle=.*?\n\}\);)',src,re.S)
+          assert snippet, 'RPH toggle callback missing'
+          Path('/tmp/web-y6-toggle-test.js').write_text(r"""
+          const assert=require('node:assert/strict');
+          const vm=require('node:vm');
+          let callback=null,focused=0;
+          const panel={hidden:true};
+          const chevron={textContent:'▾'};
+          const toggle={
+            attrs:{'aria-expanded':'false'},
+            addEventListener(name,fn){assert.equal(name,'click');callback=fn;},
+            setAttribute(name,value){this.attrs[name]=value;},
+            querySelector(query){assert.equal(query,'span');return chevron;}
+          };
+          const lesson={focus(){focused++;}};
+          const elements={'y6rph-toggle':toggle,'y6rph-panel':panel,'y6rph-lesson':lesson};
+          const sandbox={document:{getElementById(id){assert.ok(elements[id]);return elements[id];}}};
+          vm.runInNewContext(%r,sandbox);
+          assert.equal(typeof callback,'function');
+          callback();
+          assert.equal(panel.hidden,false);
+          assert.equal(toggle.attrs['aria-expanded'],'true');
+          assert.equal(focused,1);
+          callback();
+          assert.equal(panel.hidden,true);
+          assert.equal(toggle.attrs['aria-expanded'],'false');
+          console.log('PASS: button toggles panel visibility and aria-expanded');
+          """ % snippet.group(1))
+          PY
+          node /tmp/web-y6-toggle-test.js
