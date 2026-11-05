@@ -5,7 +5,7 @@ import re
 import sys
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
-from web.sejarah_2027_staging_source import SejarahNotReady, lesson, preview_only, source_fingerprint
+from web.sejarah_2027_staging_source import SejarahNotReady, lesson, preview_only, source_fingerprint, source_paths
 
 count=0
 for y in (4,5,6):
