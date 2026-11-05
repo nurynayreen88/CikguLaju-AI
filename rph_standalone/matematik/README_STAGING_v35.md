@@ -21,4 +21,4 @@ Kod dalam cabang ini hanya menambah `staging_preview.py` dan ujian fail-closed; 
 - Penghantaran fail melalui **Telegram API sebenar**, penggunaan DB aktif dan regresi subjek lain belum diuji bagi v35.
 - Jika mana-mana syarat gagal, **jangan nyatakan FINAL READY**; jangan merge ke `main` yang auto-deploy ke Render.
 
-Laporan audit yang boleh diaudit: [v35 QA](../../audits/matematik_v35_585_rph_source_safe_qa_20261105.md) pada cabang audit berasingan, [GitHub repo Math RPT](../../rpt_2027/matematik/README.md).
+Laporan audit yang boleh diaudit: [v35 QA](https://github.com/nurynayreen88/CikguLaju-AI/blob/audit/matematik-evidence-gate-20261105/audits/matematik_v35_585_rph_source_safe_qa_20261105.md) pada cabang audit berasingan, [GitHub repo Math RPT](../../rpt_2027/matematik/README.md).
