@@ -29,6 +29,8 @@ on:
       - 'rpt_2027/pendidikan_moral/year6_96h_coverage_SEMAKAN2017_REVIEW.csv'
       - 'scripts/check_moral_official_dskp_350sp.py'
       - 'scripts/audit_moral_480_individual_evidence.py'
+      - 'scripts/check_moral_supplement270_semantic_quality.py'
+      - 'audits/pendidikan_moral_supplement270_semantic_review_20261105.json'
       - 'scripts/check_moral_y6_visual24_20261105.py'
       - 'scripts/check_moral_y6_historical_provenance_20261105.py'
       - 'scripts/check_moral_y6_core24_bbm_induction_20261105.py'
@@ -71,6 +73,8 @@ on:
       - 'scripts/check_moral_96h_planning.py'
       - 'scripts/check_moral_official_dskp_350sp.py'
       - 'scripts/audit_moral_480_individual_evidence.py'
+      - 'scripts/check_moral_supplement270_semantic_quality.py'
+      - 'audits/pendidikan_moral_supplement270_semantic_review_20261105.json'
       - 'scripts/check_moral_y6_visual24_20261105.py'
       - 'scripts/check_moral_y6_historical_provenance_20261105.py'
       - 'scripts/check_moral_y6_core24_bbm_induction_20261105.py'
@@ -164,6 +168,8 @@ jobs:
         run: python scripts/check_moral_96_downloads.py
       - name: Audit each of 480 Moral sessions and produce traceable evidence report
         run: python scripts/audit_moral_480_individual_evidence.py --output "$RUNNER_TEMP/moral_480_individual_evidence.csv"
+      - name: Reject generic, missing-SP or untraceable content across all 270 supplementary Moral RPH
+        run: python scripts/check_moral_supplement270_semantic_quality.py
       - name: Archive all 480 individual session decisions
         uses: actions/upload-artifact@v4
         with:
