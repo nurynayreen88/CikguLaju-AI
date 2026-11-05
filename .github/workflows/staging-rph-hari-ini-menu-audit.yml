@@ -1,0 +1,37 @@
+name: Inspect CikguLaju RPH Hari Ini menu wiring
+on:
+  push:
+    branches:
+      - staging/cikgulaju-web-v1
+    paths:
+      - '.github/workflows/staging-rph-hari-ini-menu-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect menu labels and disabled flags without running bot
+        run: |
+          python - <<'PY'
+          import pathlib,re
+          roots=['app.py','tools','web','config','bot','handlers']
+          terms=[r'RPH Hari Ini',r'rph_hari_ini',r'RPH_HARI_INI',r'rph_today',r'RPH Minggu Ini',r'rph_minggu_ini']
+          found=0
+          for root in roots:
+              base=pathlib.Path(root)
+              paths=[base] if base.is_file() else base.rglob('*.py') if base.is_dir() else []
+              for path in paths:
+                  try: lines=path.read_text(encoding='utf8').splitlines()
+                  except (OSError,UnicodeDecodeError):continue
+                  hits=[i for i,line in enumerate(lines) if any(re.search(term,line,re.I) for term in terms)]
+                  if not hits:continue
+                  print('FILE',path,'MATCHES',len(hits))
+                  for i in hits[:25]:
+                      print('  LINE',i+1,'CTX',' // '.join(f'{j+1}:{lines[j].strip()[:190]}' for j in range(max(0,i-2),min(len(lines),i+3))))
+                  found+=len(hits)
+          print('TOTAL_MATCHES',found)
+          PY
