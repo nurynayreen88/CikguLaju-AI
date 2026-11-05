@@ -31,10 +31,20 @@ class ReadinessTests(unittest.TestCase):
         self.assertNotIn(b"activity", response.data)
 
     @patch("web.unified_rph_web._has_paid_access", return_value=False)
-    @patch("web.unified_rph_web._account", return_value=({"telegram_user_id":123}, None))
-    def test_readiness_rejects_unpaid(self, *_):
+    @patch("web.unified_rph_web._account", return_value=(
+        {"authenticated":True,"telegram_user_id":123,"free_remaining":0},None))
+    def test_readiness_rejects_exhausted_trial(self, *_):
         response = self.client.get("/api/web/rph/availability", query_string=self.query)
         self.assertEqual(response.status_code, 403)
+        self.assertEqual(response.get_json()["code"],"FREE_TRIAL_EXHAUSTED")
+
+    @patch("web.unified_rph_web._has_paid_access", return_value=False)
+    @patch("web.unified_rph_web._account", return_value=(
+        {"authenticated":True,"telegram_user_id":123,"free_remaining":5},None))
+    def test_readiness_allows_existing_trial_but_never_consumes_it(self, *_):
+        response = self.client.get("/api/web/rph/availability", query_string=self.query)
+        self.assertEqual(response.status_code,200,response.get_json())
+        self.assertEqual(response.get_json(),{"available":True,"generator":"telegram-native"})
 
     @patch("web.unified_rph_web._account", return_value=(None, ({"error":"login"},401)))
     def test_readiness_rejects_anonymous(self, *_):
