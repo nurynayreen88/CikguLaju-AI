@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-05",
+  "scope": "English Years 1–6, 960 SOW Lesson IDs. Cross-year audio source provenance and priority-risk sample; NOT all 960 physical Teacher's Book/audio/transcript checks.",
+  "release_status": "AUDIT_STAGING_ONLY_NO_TELEGRAM_OR_PRODUCTION_APPROVAL",
+  "sow_index_path": "audits/english_y1_y6_960_sow_audio_index_20261105.json",
+  "reviewed_book_sources": [
+    {
+      "year": 1,
+      "sow": "1Z8eorRE2_dLjgiEFYpTnXNAnn3cuAdyB",
+      "teacher_book": "1-tfy1OH9Cjsg5YLZOyBOY8PM5DLCQU2g",
+      "audit_level": "SOW_160; TB scan exists but not all pages visually checked",
+      "audio_source": "Super Minds 1 Audio Unzipped",
+      "kp2027": "LEGACY_SOW_NOT_VALIDATED_FOR_KP2027"
+    },
+    {
+      "year": 2,
+      "sow": "1s9lRNUtBLQgjzoQZIRPy-RzSXu0vf8Gc",
+      "teacher_book": "1-tfy1OH9Cjsg5YLZOyBOY8PM5DLCQU2g",
+      "audit_level": "SOW_160; Year2 L26 source RPH references SB p70 CD2 Tracks35/36 but original TB scanning/Telegram file check pending",
+      "audio_source": "Super Minds 1 Audio Unzipped (candidate folder, 3 discs of WMA)"
+    },
+    {
+      "year": 3,
+      "sow": "1_-uNQsXiNfuorjMD1ObUUhmCi_L1i3L5",
+      "teacher_book": "10Cw_yGvWayaWE2jROAnHKheuhC7wCmgh",
+      "audit_level": "SOW_160; sparse/no printed CD/Track numbers; RPH Lesson93 cites CD1 Track97 but actual delivery recheck pending",
+      "audio_source": "Get Smart Plus 3 CD map in DB needs direct materialization/source verification"
+    },
+    {
+      "year": 4,
+      "sow": "13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S",
+      "teacher_book": "1lBWc96e8DCIMSdxzRuLC7CissHL52q8v",
+      "audit_level": "SOW_160; 69 legacy v25.259 routes reviewed in staging PR279; TB activity evidence at L29/L30/L103/104",
+      "audio_source": "Get Smart Plus4 MP3 folders CD1=88 CD2=88 CD3=44; legacy 24 WMA routes from WRONG Super Minds1 source"
+    },
+    {
+      "year": 5,
+      "sow": "1FHJm1tl7IamOSZWIndUMoytm6SGoexAV",
+      "teacher_book": "14Vpj-DjCbOERXdx7rGG8zhzNhsnUEPsM",
+      "audit_level": "SOW_160; 62 Lessons have explicit CD/Track mentions; physical TB and actual Telegram media map not fully validated",
+      "audio_source": "English Plus 1 Audio Year5 folder shows first 100 MP3 only (partial listing)"
+    },
+    {
+      "year": 6,
+      "sow": "1Onk874v0lSQWEo-gOMcdw4uIUg8YsI8Z",
+      "teacher_book": "13xG-dTuRJvPQZOKAknPJJq8NMRXZbMeb",
+      "audit_level": "SOW_160; 7 Lessons have printed numbered Audio refs, but CD source folder labelled Academy Stars5, physical TB and Telegram route not verified",
+      "audio_source": "Academy_Stars_Year6_Audio holds Academy_Stars_5_Audio_www.frenglish.ru with 51 AS5_Uxx files"
+    }
+  ],
+  "confirmed_risks": [
+    {
+      "id": "Y4_WRONG_BOOK_24",
+      "severity": "critical",
+      "year": 4,
+      "scope": "24 legacy media file references across 19 distinct Lesson IDs",
+      "exact_issue": "24/24 WMA IDs route under Super Minds 1 Audio Unzipped/CD1 or CD2; Year4 textbook is Get Smart Plus 4. NOT mere encoding mismatch.",
+      "source_folder_ids": [
+        "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50",
+        "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv"
+      ],
+      "impact": "Potential audio from different textbook, plus source WMA sent as MP3",
+      "status": "SOURCE_BOOK_IDENTITY_CONFIRMED_AUDIO_CONTENT_AND_TELEGRAM_SEND_UNVERIFIED",
+      "required": "Quarantine these exact legacy media routes and validate candidate Get Smart Plus4 original MP3 against printed TB and the speech; do not bulk replace by track number."
+    },
+    {
+      "id": "Y4_L29_WRONG_DISC",
+      "severity": "high",
+      "year": 4,
+      "lesson": 29,
+      "exact_issue": "Legacy CD1 Tracks35/36; printed TB p193 and SB p129 CLIL require CD3 Tracks35/36",
+      "status": "SOURCE_CONFIRMED_SAFETY_PR277_DRAFT"
+    },
+    {
+      "id": "Y4_L30_WRONG_DISC",
+      "severity": "high",
+      "year": 4,
+      "lesson": 30,
+      "exact_issue": "Legacy CD2 Track29; TB p39/SB p20 Activity2 and user confirm CD1 Track29",
+      "status": "SOURCE_CONFIRMED_GUARDED_MAIN_CD1_PATCH_PR275_DRAFT"
+    },
+    {
+      "id": "Y4_L103_104_CROSS_LESSON",
+      "severity": "high",
+      "year": 4,
+      "lessons": [
+        103,
+        104
+      ],
+      "exact_issue": "Legacy L103 has CD2 Tracks26,27,28 but SOW places Track26 at L103 and Tracks27/28 at L104; L104 lacks route",
+      "status": "SOW_ASSIGNMENT_CONFIRMED_ACTUAL_MEDIA_DELIVERY_UNVERIFIED"
+    },
+    {
+      "id": "Y6_AS5_FOLDER_MISMATCH",
+      "severity": "high",
+      "year": 6,
+      "exact_issue": "Drive folder Academy_Stars_Year6_Audio contains only folder Academy_Stars_5_Audio_www.frenglish.ru with 51 AS5_Uxx MP3 assets, while SOW specifies Academy Stars Year6.",
+      "folder_ids": [
+        "1DsVLNsEMmDy8jceXZYB1VGt5qqIiEDRg",
+        "1s-2IuDcPbVBo5LGNF3MxJ91UtoAkhNEi"
+      ],
+      "status": "SOURCE_LABEL_MISMATCH_NOT_PROOF_OF_BOT_WRONG_SEND",
+      "required": "Confirm whether a different correct Year6 audio folder exists; compare TB p/Audio ref and actual bot mapping; never send AS5 by assumption."
+    },
+    {
+      "id": "Y5_TRACKS_FOUND_NOT_PLAYED",
+      "severity": "review",
+      "year": 5,
+      "lessons": [
+        29,
+        30
+      ],
+      "exact_issue": "Year5 SOW L29 specifies CD3.02/03 and L30 CD3.04. The first 100 files in English Plus1 Year5 Drive folder contain three correspondingly named MP3s; actual speech and bot routes not tested.",
+      "source_ids": [
+        "1T-HBLwsQ2C4eC3egNFZ9ZgDLsOxDRO6N",
+        "16N8fUyxWYYyzmeEIYyB7_f1MzLS2i5Zf",
+        "1e4xl-R1CYY3t0XGiWhr8sKxVRzBrTNcX"
+      ],
+      "status": "SOURCE_FILENAME_CANDIDATES_ONLY"
+    },
+    {
+      "id": "Y2_L26_AUDIO_TB_CHECK",
+      "severity": "review",
+      "year": 2,
+      "lesson": 26,
+      "exact_issue": "CikguLaju RPH currently cites Super Minds1 SB p70, TB T70 CD2 Tracks35/36; SOW lacks numbered CD reference; physical TB and actual Telegram mapping still to be checked.",
+      "status": "RPH_CITATION_ONLY"
+    },
+    {
+      "id": "Y3_L93_TRACK97_RECHECK",
+      "severity": "review",
+      "year": 3,
+      "lesson": 93,
+      "exact_issue": "CikguLaju RPH cites Get Smart Plus3 SB p61 TB pp96-97 CD1 Track97; SOW has no numbered CD reference for the Lesson. Earlier user reports of wrong SB/audio mapping need material-to-actual-file check.",
+      "status": "RPH_CITATION_ONLY"
+    }
+  ],
+  "limitations": [
+    "960/960 official SOW lesson titles indexed, not 960/960 Student's Book/Teacher's Book pages visually verified.",
+    "Year1–3 official SOW contains no explicit audio-track IDs, so an SOW-only scan cannot declare audio unused, missing or correct.",
+    "Year5 Drive folder listing was capped at first 100, never claim the complete catalog was enumerated.",
+    "No query of live Telegram users/payment/credit tables, no real auth Telegram audio send, and no audio speech recognition was run.",
+    "No changes to production main, Supabase, original audio files, quotas, subscriptions or referrals."
+  ],
+  "recommended_release_order": [
+    "First block proven wrong-book Year4 Super Minds audio and wrong-disc L29/L30 and L103 extras without blocking otherwise valid Word/PDF.",
+    "Review year6 folder AS5 naming and actual deployed media IDs before release.",
+    "Continue TB/SB audio-page-per-Lesson checks for each year; Year5 and Year6 require separate audio numbering formats.",
+    "Run controlled authenticated Telegram send/playback of each approved audio and native Word/PDF.",
+    "Only promote individually reviewed lessons/media, preserve teacher-selected SK/SP and prior paid-user records."
+  ]
+}
