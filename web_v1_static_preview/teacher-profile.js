@@ -77,14 +77,44 @@ schoolLogoFile.addEventListener("change", () => {
   schoolLogoStatus.textContent = "Pratonton sahaja. Tekan Muat Naik Logo untuk menyimpan.";
 });
 
+async function schoolLogoToPng(file) {
+  // Canvas removes image metadata and normalizes PNG/JPEG/WebP to a compact,
+  // static PNG. Private server accepts PNG only, independently validating it.
+  const url=URL.createObjectURL(file),picture=new Image();
+  try {
+    picture.src=url;
+    await picture.decode();
+    if (picture.width < 32 || picture.height < 32 ||
+        picture.width * picture.height > 12000000)
+      throw new Error("Dimensi gambar tidak sah atau terlalu besar.");
+    for (const side of [512,420,320,240]) {
+      const factor=Math.min(1,side/Math.max(picture.width,picture.height));
+      const canvas=document.createElement("canvas");
+      canvas.width=Math.max(32,Math.round(picture.width*factor));
+      canvas.height=Math.max(32,Math.round(picture.height*factor));
+      const ctx=canvas.getContext("2d");
+      if (!ctx) throw new Error("Pemprosesan logo tidak tersedia.");
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+      ctx.drawImage(picture,0,0,canvas.width,canvas.height);
+      const png=await new Promise(resolve=>canvas.toBlob(resolve,"image/png"));
+      if (png?.type==="image/png" && png.size>0 && png.size<450*1024)
+        return png;
+    }
+    throw new Error("Fail terlalu rumit untuk dijadikan logo. Cuba gambar lebih kecil.");
+  } finally {
+    URL.revokeObjectURL(url);
+  }
+}
+
 schoolLogoUpload.addEventListener("click", async () => {
   const file = schoolLogoFile.files?.[0];
   if (!file || schoolLogoUpload.disabled) return;
-  const body = new FormData();
-  body.append("logo", file, file.name);
   schoolLogoUpload.disabled = true;
-  schoolLogoStatus.textContent = "Menyimpan logo sekolah…";
+  schoolLogoStatus.textContent = "Memproses dan menyimpan logo sekolah…";
   try {
+    const png=await schoolLogoToPng(file);
+    const body = new FormData();
+    body.append("logo", png, "logo.png");
     const response = await fetch("/api/web/teacher/school-logo", {
       method:"POST",credentials:"same-origin",cache:"no-store",body,
     });
