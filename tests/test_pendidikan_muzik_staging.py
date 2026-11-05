@@ -25,7 +25,7 @@ class PendidikanMuzikStagingQA(unittest.TestCase):
                 key = (year, entry["sp"])
                 self.assertNotIn(key, all_keys)
                 all_keys.add(key)
-                self.assertRegex(entry["sp"], r"^[1-5]\\.[1-9]\\.\\d{1,2}$")
+                self.assertRegex(entry["sp"], r"^[1-5][.][1-9][.][0-9]{1,2}$")
                 self.assertTrue(entry["ringkasan_sp"].strip())
                 draft = entry["rph_seed"]
                 self.assertTrue(SECTIONS <= set(draft))
