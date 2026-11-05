@@ -174,9 +174,9 @@ def check() -> None:
         assert "BELUM READY" in src
     readiness = json.loads((ROOT / "audits" / "bahasa_arab_release_readiness_20261106.json").read_text(encoding="utf-8"))
     assert readiness["release_state"] == "DRAF_STAGING_RELEASE_BLOCKED"
-    assert readiness["completed"]["source_page_draft_reviewed"] == 48
+    assert readiness["completed"]["source_page_draft_reviewed"] == 60
     assert readiness["completed"]["draft_rph"] == 60
-    assert sum(y["source_page_reviewed_rph"] for y in readiness["years"]) == 48
+    assert sum(y["source_page_reviewed_rph"] for y in readiness["years"]) == 60
     assert all(y["unwritten_units"] == [2,3,4] for y in readiness["years"])
     assert readiness["total_ready_rph"] == 0 and readiness["release_authorized"] is False
     assert all(readiness[k] is False for k in ("production_db_touched","telegram_live_touched","web_live_touched"))
@@ -196,8 +196,25 @@ def check() -> None:
         assert "**Semakan teks BT Tahun 6 (6 Nov 2026):**" in s
         assert f"**{row['printed_page_text_source']}**" in s
         assert "BELUM READY" in s
-    assert readiness["completed"]["source_page_draft_reviewed"] == 48
-    assert sum(y["source_page_reviewed_rph"] for y in readiness["years"]) == 48
+    assert readiness["completed"]["source_page_draft_reviewed"] == 60
+    assert sum(y["source_page_reviewed_rph"] for y in readiness["years"]) == 60
+    y2_source = json.loads((ROOT / "audits" / "bahasa_arab_y2_pdp001_012_text_source_audit_20261106.json").read_text(encoding="utf-8"))
+    assert y2_source["year"] == 2 and y2_source["unit"] == 1
+    assert y2_source["source_page_reviewed_draft_count"] == 12
+    assert len(y2_source["items"]) == 12 and y2_source["final_ready"] == 0
+    assert [x["sp"] for x in y2_source["items"]] == EXPECTED_SP[2]
+    assert y2_source["ambiguous_book_sp_pdp"] == ["002","004","010","011"]
+    assert all(x["teacher_approval"] is False and x["ready"] is False for x in y2_source["items"])
+    assert y2_source["release_authorized"] is False
+    assert m["years"]["2"]["source_evidence_pdp001_012"] == "audits/bahasa_arab_y2_pdp001_012_text_source_audit_20261106.json"
+    assert m["years"]["2"]["source_text_reviewed_drafts"] == 12
+    assert m["years"]["2"]["textbook"]["source_page_verified"] is False
+    assert readiness["completed"]["year2_sp_book_ocr_ambiguous"] == 4
+    for i, record in enumerate(y2_source["items"], start=1):
+        text = (SUBJECT / "year2" / f"lesson_{i:03d}.md").read_text(encoding="utf-8")
+        assert "**Semakan Buku Teks asal Tahun 2 (6 Nov 2026):**" in text
+        assert f"**{record['book_printed_page_text']}**" in text
+        assert record["evidence_status"] in text and "BELUM READY" in text
     print("PASSED: 20 unit indexes, 60 crosswalks, 60 RPH draft files, 15 banks.")
     print("RELEASE BLOCKED: 0 READY; full-year curriculum/book-page approval, RPT 2027 and runtime parity missing; A4 preview CI passed.")
 

@@ -53,3 +53,8 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 ## Tahun 6 Unit 1 semakan teks (6 November 2026)
 - 12 draf PdP awal menerima catatan halaman bercetak dan kod SP daripada teks buku tahun 6. PdP012 dibetulkan kepada contoh baldi pada h18. Bukti `audits/bahasa_arab_y6_pdp001_012_text_source_audit_20261106.json`.
 - Kini **48/60** draf awal Tahun 3–6 mempunyai audit halaman berdasarkan teks sumber. Tahun 2 belum. Status **0 FINAL READY**.
+
+## Tahun 2 Unit 1 — sumber buku teks asal (6 Nov 2026)
+- Buku Teks DBP 2017 dengan ISBN 978-983-49-1589-6 ditemui secara teks boleh baca: https://anyflip.com/slrpb/qzcr/basic.
+- PdP001–012 menerima nota halaman sumber cetak dan kod DSKP. Empat identifier SP pada **cetakan buku** masih kabur dalam OCR: 002,004,010,011; DSKP kod disahkan.
+- **60/60 draf Unit 1** Tahun 2–6 kini telah diaudit pada tahap teks sumber dan mempunyai bukti halaman. Ini ialah audit awal satu unit sahaja, bukan liputan tahunan penuh atau FINAL READY.

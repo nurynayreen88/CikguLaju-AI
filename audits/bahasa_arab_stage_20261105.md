@@ -84,3 +84,9 @@ Semua 12 draf Tahun 3 Unit 1 menerima catatan halaman bercetak Buku Teks DBP/KPM
 
 ## Tahun 6 PdP 001–012: semakan teks buku asal (6 Nov 2026)
 12 draf awal kini menerima catatan bukti halaman bercetak bagi buku DBP/KPM cetakan pertama 2021: 2,3,4–5,2,6–9,10–12,13–14,14–15,13–15,14–15,16,18. PdP 012 diubah daripada contoh sabun kepada contoh baldi (h18) untuk kod 1.4.1; tambahan ayat guru ditandakan. PdP 009 membezakan larangan pembaziran air sebagai pengayaan di luar contoh h13–15. Bukti disimpan dalam `audits/bahasa_arab_y6_pdp001_012_text_source_audit_20261106.json`. Status semua kekal DRAF; buku PDF imej asal dan RPT 2027 belum diluluskan individu.
+
+## Tahun 2 PdP 001–012 — Buku Teks DBP 2017 dijumpai (6 Nov 2026)
+- Buku Teks asal Bahasa Arab Tahun 2 KSSR Semakan 2017 DBP, ISBN **978-983-49-1589-6**, teks digital boleh dibaca di https://anyflip.com/slrpb/qzcr/basic dan portal sekolah https://sites.google.com/moe-dl.edu.my/fcpi/bahasa-arab/tahun-2-bahasa-arab/%D8%A7%D9%84%D9%88%D8%AD%D8%AF%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-1.
+- 12 draf RPH Tahun 2 Unit 1 kini ada rujukan halaman bercetak secara spesifik: **2+4; 2+4; 3+5; 2+4; 3+5; 6; 6; 8; 8; 9–11; 17; 12–14**. Pemetaan SK/SP dibanding dengan PDF DSKP Tahun 2 yang mengekalkan identifier Arab dengan betul: https://cdn1.get-qr.com/files/67c8ee65569c40f8cc02dedb/1741221735772-edfd2d1acbd2cca80728a1fbd9edcc66.pdf.
+- **Empat bendera OCR kod buku** PdP 002,004,010,011. Pemadanan kemahiran didapati relevan dan SP DSKP sah, tetapi jangan dakwa cetakan SP dalam buku telah diluluskan sehingga semak halaman imej asal.
+- Fail bukti `audits/bahasa_arab_y2_pdp001_012_text_source_audit_20261106.json`. Sekarang **60/60 draf awal mendapat semakan teks sumber**; ini TIDAK bermakna tahun lengkap / siap diterbitkan. **0 FINAL READY** dan 15 unit Unit2–4 belum RPH.

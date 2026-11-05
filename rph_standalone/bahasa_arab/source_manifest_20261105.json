@@ -30,11 +30,35 @@
           "source": "https://stage.jendeladbp.my/ujana/bahasa-arab-tahun-2-bt-pt/",
           "publication_date": "2017-11-15",
           "note": "ISBN Buku Teks (BT), bukan Buku Aktiviti (BA). Buku PDF belum dipadankan ke edisi penerbit."
-        }
+        },
+        "original_edition_text_link": "https://anyflip.com/slrpb/qzcr/basic",
+        "text_extractable_from_alternate": true,
+        "alternate_original_textbook_publication": 2017
       },
       "rpt_2026": "https://anyflip.com/zxzlm/jffk/basic",
       "unit_1": "هيا نتعارف",
-      "textbook_units_confirmed": [],
+      "textbook_units_confirmed": [
+        {
+          "unit": 1,
+          "title": "هيا نتعارف",
+          "source": "https://anyflip.com/slrpb/qzcr/basic"
+        },
+        {
+          "unit": 2,
+          "title": "أحب أسرتي",
+          "source": "https://sites.google.com/moe-dl.edu.my/fcpi/bahasa-arab/tahun-2-bahasa-arab/%D8%A7%D9%84%D9%88%D8%AD%D8%AF%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-1"
+        },
+        {
+          "unit": 3,
+          "title": "جسمي السليم",
+          "source": "https://sites.google.com/moe-dl.edu.my/fcpi/bahasa-arab/tahun-2-bahasa-arab/%D8%A7%D9%84%D9%88%D8%AD%D8%AF%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-1"
+        },
+        {
+          "unit": 4,
+          "title": "أحافظ على الأدوات الدراسية",
+          "source": "https://sites.google.com/moe-dl.edu.my/fcpi/bahasa-arab/tahun-2-bahasa-arab/%D8%A7%D9%84%D9%88%D8%AD%D8%AF%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-1"
+        }
+      ],
       "provisional_rph_count": 12,
       "external_textbook_portal": "https://sites.google.com/moe-dl.edu.my/sketta2bahasaarab/buku-teks-digital",
       "external_dskp_portal": "https://sites.google.com/moe-dl.edu.my/unitbahasaprogram-pso-2021/mata-pelajaran-unit-bahasa/bahasa-arab/sekolah-rendah/dskp",
@@ -45,7 +69,15 @@
         "source": "https://jendeladbp.my/ujana/bahasa-arab-tahun-2-ba-pt/",
         "publication_date": "2017-11-14",
         "note": "Buku Aktiviti Tahun 2, bukan Buku Teks"
-      }
+      },
+      "source_evidence_pdp001_012": "audits/bahasa_arab_y2_pdp001_012_text_source_audit_20261106.json",
+      "source_text_reviewed_drafts": 12,
+      "source_book_sp_print_unresolved": [
+        "002",
+        "004",
+        "010",
+        "011"
+      ]
     },
     "3": {
       "dskp": {

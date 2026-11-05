@@ -8,19 +8,21 @@
     "draft_rph": 60,
     "unit2_4_activity_banks": 15,
     "draft_crosswalk": 60,
-    "source_page_draft_reviewed": 48,
+    "source_page_draft_reviewed": 60,
     "preliminary_year6_page_candidates": 0,
     "one_page_A4_docx_pdf_ci_verified": true,
     "render_check_ci": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42115776091",
     "word_generated_in_ci": 60,
     "pdf_generated_in_ci": 60,
-    "year6_text_source_reviewed": 12
+    "year6_text_source_reviewed": 12,
+    "year2_text_source_reviewed": 12,
+    "year2_sp_book_ocr_ambiguous": 4
   },
   "release_checks": [
     {
       "id": "source_book_editions",
       "status": "PARTIAL",
-      "detail": "Y2–Y6 ISBN identified; Y2 original PDF page audit missing; Y3 scanned original PDF book layout not visually checked."
+      "detail": "Year 2–6 ISBN independently identified, Year 2 original textbook DBP 2017 text opened; original per-page visual inspection and matching all editions to local source PDFs not done."
     },
     {
       "id": "unit_index",
@@ -35,12 +37,12 @@
     {
       "id": "sk_sp",
       "status": "PARTIAL",
-      "detail": "Y3–Y6 48 initial draft source-page codes crosschecked as text; Y2 still not fully audited. None individually teacher-approved."
+      "detail": "Year 2–6 60 draft SP codes were crosschecked against DSKP/page-text context. Four Year 2 textbook printed-SP identifiers are unclear in OCR (002,004,010,011); none teacher-approved."
     },
     {
       "id": "textbook_page_to_pdp",
       "status": "PARTIAL",
-      "detail": "48 draft source reviews Y3–6, Y2 0. No final individual approvals or annual RPT mapping."
+      "detail": "All 60 Unit 1 draft RPH now carry source-page textual evidence (12 per year), but four Year 2 book-SP OCR codes unresolved; visual, 2027 annual sequence and manual approvals outstanding."
     },
     {
       "id": "rpt_2027_group_A_B",
@@ -68,14 +70,14 @@
       "year": 2,
       "units": 4,
       "unit1_draft_rph": 12,
-      "source_page_reviewed_rph": 0,
+      "source_page_reviewed_rph": 12,
       "preliminary_mapping_only": 0,
       "unwritten_units": [
         2,
         3,
         4
       ],
-      "textbook_issue": "Public KPM school portals linked; actual page-by-page comparison of same-edition Year 2 textbook is incomplete."
+      "textbook_issue": "Year 2 Unit 1 12 draft page-textbook reviews completed using DBP 2017 public text book; four book printed-SP OCR readings (002,004,010,011) unclear. Full-book visual/source-specific 2027 RPT mapping and teacher signoff missing."
     },
     {
       "year": 3,
