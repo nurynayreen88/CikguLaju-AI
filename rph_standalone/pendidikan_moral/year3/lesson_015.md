@@ -19,7 +19,7 @@ Murid memperagakan tindakan berdasarkan **5.5: Mengamalkan sikap bersopan dan be
 
 **Aktiviti 1 (20 minit) — Rangka amalan sopan:** Guru memilih situasi m/s 34–37: memberi salam kepada pengawal, meminta izin duduk, meminta maaf apabila lewat dan berterima kasih kepada guru. Murid merangka dialog dan menetapkan dua perlakuan sopan yang boleh diperagakan (SP 5.5).
 
-**Aktiviti 2 (20 minit) — Praktik dan ulang:** Murid mempraktikkan dialog dua watak dan pemerhati menyemak penggunaan 'maaf', 'terima kasih' dan 'boleh saya' merujuk latihan m/s 37. Permainan Belon Sopan m/s 39 boleh digunakan untuk pengukuhan, tetapi permainan sahaja tidak membuktikan amalan konsisten di luar kelas (SP 5.5).
+**Aktiviti 2 (20 minit) — Praktik dan ulang:** Murid mempraktikkan dialog dua watak dan pemerhati menyemak penggunaan 'maaf', 'terima kasih' dan 'boleh saya' merujuk latihan m/s 37. Permainan Belon Sopan m/s 39 boleh digunakan untuk pengukuhan, tetapi permainan sahaja tidak membuktikan amalan konsisten di luar kelas (SP 5.5). Guru membimbing murid membuat penilaian pemerhatian terhadap dua ucapan atau perlakuan sopan yang betul.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Semak senarai pemerhatian perlakuan bagi SP 5.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 

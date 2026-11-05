@@ -21,7 +21,7 @@ Murid dapat **memperagakan dua tindakan patuh** yang sesuai untuk keadaan keluar
 
 **Aktiviti 1 (20 minit) — Pilih tindakan keluarga:** Guru menayangkan contoh buku teks **m/s 1–3**: mengucap salam, menghormati ibu bapa, berdoa sebelum makan dan membantu menjaga hubungan kekeluargaan. Murid memilih **dua tindakan** yang boleh dilakonkan dengan selamat tanpa meniru amalan agama tertentu. Guru menyemak kesesuaian tindakan bagi keluarga yang berbeza.
 
-**Aktiviti 2 (20 minit) — Amalkan dan maklum balas:** Murid berpasangan melakonkan situasi meminta izin, menghormati ibu bapa atau membantu ahli keluarga. Pemerhati mencatat dua tingkah laku yang kelihatan, memberi maklum balas, kemudian murid membetulkan perlakuan dan menyatakan sebab tindakan itu wajar. Murid tidak diminta mengisahkan amalan peribadi.
+**Aktiviti 2 (20 minit) — Amalkan dan maklum balas:** Murid berpasangan melakonkan situasi meminta izin, menghormati ibu bapa atau membantu ahli keluarga. Pemerhati mencatat dua tingkah laku yang kelihatan, memberi maklum balas, kemudian murid membetulkan perlakuan dan menyatakan sebab tindakan itu wajar. Murid tidak diminta mengisahkan amalan peribadi. Guru memerhati dua tingkah laku sopan yang dipraktikkan, memberi maklum balas dan merekod bukti individu untuk SP 1.5.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Guru menyemak **dua tindakan yang dipraktikkan**, respons berhemah dan satu ayat refleksi (SP 1.5). Lakonan ialah evidens bilik darjah; amalan sebenar di rumah tidak dianggap telah dibuktikan tanpa evidens tambahan.
 

@@ -17,9 +17,9 @@ Murid memperagakan tindakan berdasarkan **5.5: Mengamalkan sikap hemah tinggi da
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Anak ingin menyampaikan pendapat berbeza kepada ibu bapa secara beradab**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Sedia simulasi hemah tinggi:** Murid merujuk situasi m/s 31: ibu meminta bantuan untuk adik membaca, ibu bapa berbual ketika anak pulang dan kunjungan datuk/nenek. Kumpulan merangka ayat sopan serta tindakan yang boleh diperagakan bagi setiap situasi (SP 5.5).
+**Aktiviti 1 (20 minit) — Sedia simulasi hemah tinggi:** Murid merujuk situasi m/s 31: ibu meminta bantuan untuk adik membaca, ibu bapa berbual ketika anak pulang dan kunjungan datuk/nenek. Kumpulan merangka ayat sopan serta tindakan yang boleh diperagakan bagi setiap situasi (SP 5.5). Guru menyediakan kad situasi daripada m/s 31, mengagihkan watak dan memeriksa ayat sopan sebelum simulasi.
 
-**Aktiviti 2 (20 minit) — Lakon dan semak:** Murid melakonkan dua situasi m/s 31; pemerhati menandakan salam, permintaan izin, hormat dan bantuan yang kelihatan. Selepas maklum balas murid mengulang tindakan. Kisah Anugerah Ikon Anak Terbaik m/s 30 boleh digunakan sebagai rangsangan; satu lakonan bukan bukti amalan harian.
+**Aktiviti 2 (20 minit) — Lakon dan semak:** Murid melakonkan dua situasi m/s 31; pemerhati menandakan salam, permintaan izin, hormat dan bantuan yang kelihatan. Selepas maklum balas murid mengulang tindakan. Kisah Anugerah Ikon Anak Terbaik m/s 30 boleh digunakan sebagai rangsangan; satu lakonan bukan bukti amalan harian. Guru memerhati dua amalan dalam lakonan dan mencatat pembetulan yang ditunjukkan murid; simulasi bukan bukti amalan harian.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Semak senarai pemerhatian perlakuan bagi SP 5.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 

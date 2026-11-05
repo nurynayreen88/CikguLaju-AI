@@ -21,7 +21,7 @@ Murid dapat **melaksanakan dua tindakan menghormati kepelbagaian kepercayaan dem
 
 **Aktiviti 1 (20 minit) — Sediakan sudut pameran harmoni:** Guru menunjukkan bahan **Minggu Keharmonian Agama dan Kepercayaan** dalam buku teks **m/s 1–3**. Murid menghasilkan peraturan pameran bersama: tidak mengejek, mendengar pandangan berbeza, menjaga bahan dan membantu pelawat. Kumpulan merancang tindakan yang mempraktikkan kesejahteraan negara dalam konteks sekolah.
 
-**Aktiviti 2 (20 minit) — Laksana dan perbaiki:** Murid memainkan peranan pengunjung, penganjur dan pemerhati. Pengunjung mengemukakan soalan dengan sopan; penganjur menerima perbezaan tanpa menghina; pemerhati menanda dua tindakan yang benar-benar dilihat, kemudian murid membaiki satu tindakan (SP 1.5). Tiada lakonan ritual agama diperlukan.
+**Aktiviti 2 (20 minit) — Laksana dan perbaiki:** Murid memainkan peranan pengunjung, penganjur dan pemerhati. Pengunjung mengemukakan soalan dengan sopan; penganjur menerima perbezaan tanpa menghina; pemerhati menanda dua tindakan yang benar-benar dilihat, kemudian murid membaiki satu tindakan (SP 1.5). Tiada lakonan ritual agama diperlukan. Guru menggunakan borang pemerhatian untuk merekod dua tindakan menghormati kepercayaan berbeza dan membimbing satu penambahbaikan.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Guru menanda dua tindakan hormat yang dilaksanakan dan satu perubahan selepas maklum balas. Murid menulis refleksi satu ayat tentang kaitan amalan tersebut dengan kesejahteraan negara (SP 1.5).
 

@@ -19,7 +19,7 @@ Murid menyiapkan tugasan **SP 5.1** (Menyenaraikan amalan hemah tinggi dalam kel
 
 **Aktiviti 1 (20 minit) — Contoh hemah tinggi dalam keluarga:** Guru menunjukkan gambar buku teks m/s 25–27: Roger menyapa nenek/datuk dengan sopan, keluarga mempersilakan tetamu duduk dan anak meminta maaf atau meminta izin. Murid menyenaraikan tiga amalan hemah tinggi berserta pihak yang terlibat (SP 5.1). Guru membezakan amalan sopan daripada sekadar ucapan tanpa tindakan.
 
-**Aktiviti 2 (20 minit) — Kepentingan amalan hemah tinggi:** Berdasarkan keluarga yang mesra dalam m/s 25–27, murid menghubungkan dua amalan dengan kepentingannya: menjaga perasaan, menunjukkan hormat serta mengeratkan hubungan keluarga. Murid menerangkan dua sebab menggunakan ayat sendiri (SP 5.2).
+**Aktiviti 2 (20 minit) — Kepentingan amalan hemah tinggi:** Berdasarkan keluarga yang mesra dalam m/s 25–27, murid menghubungkan dua amalan dengan kepentingannya: menjaga perasaan, menunjukkan hormat serta mengeratkan hubungan keluarga. Murid menerangkan dua sebab menggunakan ayat sendiri (SP 5.2). Guru menguji kaitan setiap amalan dengan sebabnya dan memberi maklum balas khusus. Murid membaiki dua jawapan yang kurang tepat.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Guru mengutip hasil individu: **senarai tiga contoh atau perkara yang tepat** untuk SP 5.1 dan **penjelasan dalam dua ayat serta satu contoh** untuk SP 5.2; semak ketepatan makna, bukti dan kaitan dengan nilai **Hemah tinggi**. Murid membetulkan satu jawapan selepas maklum balas.
 

@@ -21,7 +21,7 @@ Murid dapat **mempraktikkan dua perlakuan menghormati dan mengurus perayaan warg
 
 **Aktiviti 1 (20 minit) — Susun pameran harmoni:** Guru memaparkan pameran **Jis Pai, Maulidur Rasul, Hari Gawai dan Ponggal** pada buku teks **m/s 2–3**. Murid menyusun jadual lawatan dan kad peraturan seperti memberi peluang bertanya, tidak mempersenda budaya orang lain dan meminta izin sebelum menyentuh bahan pameran. Guru memastikan tiada murid dipaksa mengikuti upacara keagamaan.
 
-**Aktiviti 2 (20 minit) — Simulasi pengunjung:** Murid menjadi penganjur, pengunjung dan pemerhati; pengunjung bertanya secara sopan, penganjur memberi penerangan ringkas dan pemerhati mencatat dua amalan menghormati serta pengurusan ruang pameran. Mereka mengulang situasi selepas maklum balas (SP 1.5).
+**Aktiviti 2 (20 minit) — Simulasi pengunjung:** Murid menjadi penganjur, pengunjung dan pemerhati; pengunjung bertanya secara sopan, penganjur memberi penerangan ringkas dan pemerhati mencatat dua amalan menghormati serta pengurusan ruang pameran. Mereka mengulang situasi selepas maklum balas (SP 1.5). Guru menggunakan senarai semak bagi dua perlakuan menghormati perayaan yang diperagakan dan meminta murid membaiki satu respons.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Senarai semak guru: bahasa hormat, giliran adil, pengurusan bahan pameran yang selamat, dan tindakan pembetulan. Bukti lakonan tidak menggantikan pemerhatian amalan sebenar.
 

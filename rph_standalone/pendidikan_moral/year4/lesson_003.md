@@ -21,7 +21,7 @@ Murid dapat **memperagakan sekurang-kurangnya dua perbuatan menghormati amalan a
 
 **Aktiviti 1 (20 minit) — Kad tindakan jiran:** Guru meminta murid merujuk dialog **Bavin, Amsyar dan Yu Zhe** dalam buku teks **m/s 4**, kemudian mengagihkan situasi jiran sedang beribadat, tetamu melalui kawasan rumah dan gotong-royong kawasan kejiranan. Murid merancang ayat sopan, cara meminta izin serta tindakan menghormati ruang dan masa jiran.
 
-**Aktiviti 2 (20 minit) — Lakonan hormat:** Murid melakonkan dua situasi. Pemerhati mengenal pasti perlakuan yang kelihatan: tidak mengganggu, bertanya dengan sopan, menghormati hak jiran dan membantu dengan selamat. Murid mengulang lakonan selepas pembetulan (SP 1.5). Aktiviti tidak melakonkan ritual agama.
+**Aktiviti 2 (20 minit) — Lakonan hormat:** Murid melakonkan dua situasi. Pemerhati mengenal pasti perlakuan yang kelihatan: tidak mengganggu, bertanya dengan sopan, menghormati hak jiran dan membantu dengan selamat. Murid mengulang lakonan selepas pembetulan (SP 1.5). Aktiviti tidak melakonkan ritual agama. Guru memerhati dua perlakuan menghormati jiran, memberi maklum balas dan menyemak pembetulan murid tanpa melakonkan ritual agama.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Guru menanda dua perlakuan hormat dan satu tindakan penambahbaikan (SP 1.5), serta meminta refleksi ringkas tentang menghormati privasi jiran.
 

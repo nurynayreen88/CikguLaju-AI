@@ -21,7 +21,7 @@ Murid dapat **mempraktikkan dua tindakan menerima dan menghormati kepelbagaian k
 
 **Aktiviti 1 (20 minit) — Rancang bantuan tanpa pilih kasih:** Guru menunjukkan kegiatan kebajikan pada **m/s 4 (PDF 7)**. Murid merancang agihan peralatan sekolah bagi penerima daripada latar berbeza; setiap kumpulan menetapkan giliran, bahasa layanan dan langkah menghormati keperluan semua penerima. Guru menegaskan tiada syarat penyertaan aktiviti keagamaan untuk mendapat bantuan.
 
-**Aktiviti 2 (20 minit) — Simulasi khidmat masyarakat:** Murid melaksanakan agihan kad barangan kepada penerima pelbagai latar secara adil, mendengar permintaan dengan sopan dan mengurus perbezaan pendapat. Pemerhati mencatat dua tindakan hormat dan satu penambahbaikan; murid mengulang lakonan selepas maklum balas (SP 1.5).
+**Aktiviti 2 (20 minit) — Simulasi khidmat masyarakat:** Murid melaksanakan agihan kad barangan kepada penerima pelbagai latar secara adil, mendengar permintaan dengan sopan dan mengurus perbezaan pendapat. Pemerhati mencatat dua tindakan hormat dan satu penambahbaikan; murid mengulang lakonan selepas maklum balas (SP 1.5). Guru mencatat dua tindakan saksama yang diperagakan serta satu pembetulan berdasarkan situasi kebajikan dalam buku teks.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Evidens individu: dua tingkah laku menerima dan menghormati orang lain, serta satu cadangan pengurusan adil (SP 1.5). Prestasi lakonan tidak dianggap sebagai bukti amalan di luar kelas.
 
