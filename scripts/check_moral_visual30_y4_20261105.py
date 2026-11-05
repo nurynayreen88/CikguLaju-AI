@@ -6,7 +6,7 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "audits/pendidikan_moral_visual30_y4_u05_u14_20261105.json"
-RPT = ROOT / "rpt_2030/pendidikan_moral"
+RPT = ROOT / "rpt_2027/pendidikan_moral"
 
 def main():
     x = json.loads(LEDGER.read_text(encoding="utf-8"))
