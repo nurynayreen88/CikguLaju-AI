@@ -191,16 +191,16 @@ def adapt_rows(state, rows, *, root=Y4_ROOT, index_path=OFFICIAL_SOW_INDEX):
         else:
             result["OBJEKTIF PEMBELAJARAN"] = (
                 "Suggested: Write and spell household-chores vocabulary accurately; "
-                "check a listening response to TB-prescribed CD1 Track 29 after spoken-content confirmation.")
+                "check a listening response using teacher-confirmed SB p.20 CD1 Track 29 only after the pupils actually hear it.")
             result["KRITERIA KEJAYAAN"] = (
                 "Evidence: correctly spelled chores and task-specific written "
-                "responses; listening evidence only after correct track verification.")
+                "responses; listening evidence only after pupils hear CD1 Track 29 and respond.")
         resources = _materials(meta) or str(meta.get("references") or "SOW unit review")
         resources = re.sub(r"resources/[^\s;,()]+", "", resources, flags=re.I).strip(" ;,")
         if number == AUDIO_CONFLICT:
             resources += ("; AUDIO REFERENCE CONFLICT: printed TB p.39 and SB p.20 "
                           "visually checked — Activity 2 uses CD1 Track 29; "
-                          "SOW says CD2 Track 29. MP3s differ; confirm speech before use.")
+                          "SOW prints CD2 Track 29. Teacher confirms CD1 for SB p.20; Telegram CD1 delivery remains untested.")
         result["BAHAN BANTU MENGAJAR"] = resources
         result["SET INDUKSI"] = phases["induction"]
         result["AKTIVITI UTAMA"] = "Activity 1\n%s\n\nActivity 2\n%s" % (
