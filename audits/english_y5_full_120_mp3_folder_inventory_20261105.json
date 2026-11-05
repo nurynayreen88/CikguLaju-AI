@@ -1,0 +1,83 @@
+{
+  "date": "2026-11-05",
+  "scope": "Direct complete listing of one original Drive folder, English Plus 1 Audio Year 5. Inventory and duplicate-content comparison only; no speech assessment or real Telegram delivery.",
+  "folder_id": "1A-cDnYRn3j-B5NrvTC5fSaWCg-Gq6YyC",
+  "folder_name": "English Plus 1 Audio Year 5",
+  "returned_item_count": 120,
+  "all_files_mime": "audio/mpeg",
+  "filename_pattern": "<disc>-<track> English Plus Second Edition Students Book 1.mp3",
+  "per_disc": [
+    {
+      "disc": 1,
+      "unique_tracks": 46,
+      "min_track": 1,
+      "max_track": 46,
+      "missing_numbers": []
+    },
+    {
+      "disc": 2,
+      "unique_tracks": 37,
+      "min_track": 1,
+      "max_track": 37,
+      "missing_numbers": []
+    },
+    {
+      "disc": 3,
+      "unique_tracks": 36,
+      "min_track": 1,
+      "max_track": 36,
+      "missing_numbers": []
+    }
+  ],
+  "total_unique_disc_track_pairs": 119,
+  "extra_duplicate_copies": 1,
+  "duplicate": {
+    "disc": 2,
+    "track": 12,
+    "primary": {
+      "file_id": "18yfuGjVNdkfNCidGZ3ICtl7VE4HuVHFt",
+      "name": "2-12 English Plus Second Edition Students Book 1.mp3"
+    },
+    "copy": {
+      "file_id": "1nYL5y51YIIntcAWOvYK_TFhv2bmbPIcl",
+      "name": "2-12 English Plus Second Edition Students Book 1 (1).mp3"
+    },
+    "file_size_bytes": 742553,
+    "sha256_both": "447d6aab706f91a8949218af09edc05765ee7b5446807e0a9d747b0e0a773cf4",
+    "identical_bytes": true,
+    "deleted": false
+  },
+  "selected_sow_audio_candidates": [
+    {
+      "year": 5,
+      "lesson": 29,
+      "disc": 3,
+      "track": 2,
+      "file_id": "1T-HBLwsQ2C4eC3egNFZ9ZgDLsOxDRO6N"
+    },
+    {
+      "year": 5,
+      "lesson": 29,
+      "disc": 3,
+      "track": 3,
+      "file_id": "16N8fUyxWYYyzmeEIYyB7_f1MzLS2i5Zf"
+    },
+    {
+      "year": 5,
+      "lesson": 30,
+      "disc": 3,
+      "track": 4,
+      "file_id": "1e4xl-R1CYY3t0XGiWhr8sKxVRzBrTNcX"
+    }
+  ],
+  "further_release_checks": [
+    "Confirm exact book edition/part matches the official Year5 Pupil/Teacher Book used in CikguLaju; folder file names say English Plus Second Edition Students Book 1.",
+    "Listen to and compare source audio to printed SOW/TB/PB task (no track-number-only approval).",
+    "Compare each active Telegram file ID with approved Drive identity and test live teacher delivery without changing credits.",
+    "Preserve both original MP3 files for CD2-12; duplicate is not a reason to delete source assets."
+  ],
+  "audio_speech_verified": false,
+  "telegram_active_route_verified": false,
+  "teacher_approved": false,
+  "final_ready_approved": false
+}
