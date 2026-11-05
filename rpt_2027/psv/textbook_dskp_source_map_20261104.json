@@ -4,7 +4,7 @@
   "description": "50 PSV textbook/DSKP unit anchors, with 20 corrected unit-level product outcomes from source-text audit. This is NOT per-RPH visual certification or runtime staging approval.",
   "years": {
     "2": {
-      "book": "https://fliphtml5.com/laiqy/thik/Buku_Teks_Pendidikan_Kesenian_Tahun_2/",
+      "book": "https://fliphtml5.com/pssskfc/cmag/PENDIDIKAN_KESENIAN_TAHUN_2_SK_BUKU_TEKS/",
       "dskp": "https://drive.google.com/file/d/1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8/view",
       "kind": "Pendidikan Kesenian Tahun 2 (bahagian Seni Visual)",
       "units": [
@@ -26,11 +26,11 @@
           "Bersih Pasti Cantik",
           "Lipatan dan guntingan",
           "14-17",
-          "kertas lipat, kertas warna, gunting hujung bulat, gam",
+          "kertas warna nipis, bekas air minuman plastik bersih, gam, gunting tumpul, pita kalis air",
           "rupa positif-negatif, harmoni dan susunan motif daripada lipatan kertas",
-          "Cuba lipatan satu dan dua paksi, kemudian gunting bentuk ringkas secara selamat untuk memerhati ulangan rupa",
-          "Susun dan tampal motif lipatan dan guntingan bagi menghasilkan corak bertema kebersihan",
-          "Bandingkan kontra warna serta kerapian lipatan dan guntingan",
+          "Uji dua teknik lipatan-guntingan dan reka motif berulang mengelilingi Bekas Air Comel",
+          "Hasilkan Bekas Air Comel daripada botol plastik bersih dengan corak lipatan dan guntingan ditampal keliling bekas",
+          "Semak rupa, kontra, harmoni dan kekuatan tampalan",
           2,
           2,
           1,
@@ -82,11 +82,11 @@
           "Cantik Menawan",
           "Cetakan blok",
           "48-51",
-          "blok span atau kadbod, warna air, palet, kertas corak",
+          "kad tebal, tali tebal, kain putih, cat poster, span, palet dan berus",
           "rupa, warna, kontra dan kepelbagaian cetakan blok",
-          "Uji tekanan dan sapuan warna pada blok span; hasilkan dua motif dengan rupa atau warna berbeza",
-          "Cetak corak berulang pada kertas rekaan dan ubah aturan motif secara sedar",
-          "Kenal pasti susunan motif, kontra dan kesan cetakan",
+          "Lakar dan cuba dua blok cetakan daripada kad dan tali tebal pada kain contoh",
+          "Hasilkan kain putih bercetak corak berulang daripada blok kad dan tali tebal menggunakan cat poster",
+          "Semak kontra, kualiti capan dan kemasan kain",
           2,
           2,
           1,
@@ -96,11 +96,11 @@
           "Burung Kenek-kenek",
           "Topeng burung",
           "56-59",
-          "kadbod lembut, kertas warna, tali lembut, gam dan gunting hujung bulat",
+          "kad manila, kain felt, templat mata, paruh kon kertas, gam dan pita",
           "bentuk, jalinan dan penegasan pada topeng",
-          "Lakar rupa kepala dan paruh burung, ukur ruang mata dan uji penyambungan paruh kadbod tanpa hujung tajam",
-          "Bina topeng burung berlapis, hias bulu kertas, dan pasang tali yang selamat",
-          "Ulas jalinan dan rupa topeng serta keselamatan apabila dipakai",
+          "Teroka topeng serkup silinder, susun mata, paruh kon dan hiasan jalinan kain felt",
+          "Hasilkan Topeng Serkup Si Burung Kenek-kenek berbentuk silinder kad manila dengan mata, paruh kon dan jalinan felt",
+          "Semak rupa paruh, kestabilan silinder, keselamatan penglihatan dan jalinan",
           3,
           3,
           1,
@@ -148,7 +148,8 @@
           1,
           1
         ]
-      ]
+      ],
+      "book_previous_url": "https://fliphtml5.com/laiqy/thik/Buku_Teks_Pendidikan_Kesenian_Tahun_2/"
     },
     "3": {
       "book": "https://fliphtml5.com/hkvtu/vifc/Pendidikan_Kesenian_Tahun_3_SK/",
@@ -745,7 +746,7 @@
   },
   "updated": "2026-11-05",
   "source_audit_summary": {
-    "unit_corrections": 20,
+    "unit_corrections": 23,
     "scope": "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL",
     "report": "audits/psv_source_map_reconciliation_20261105.md",
     "corrections": {
@@ -848,6 +849,18 @@
         "before": "Bina arca stabail ikan koi 3D dengan cantuman dan catan untuk permainan yang selamat",
         "after": "Bina arca koi 3D berpusing dengan roda pemusing dan paksi prasiap guru",
         "scope": "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL"
+      },
+      "2-2": {
+        "scope": "TEXTBOOK_PRINTED_PAGE_TEXT_CHECKED_NOT_PER_PDP_VISUAL_CERTIFICATE",
+        "after": "Hasilkan Bekas Air Comel daripada botol plastik bersih dengan corak lipatan dan guntingan ditampal keliling bekas"
+      },
+      "2-6": {
+        "scope": "TEXTBOOK_PRINTED_PAGE_TEXT_CHECKED_NOT_PER_PDP_VISUAL_CERTIFICATE",
+        "after": "Hasilkan kain putih bercetak corak berulang daripada blok kad dan tali tebal menggunakan cat poster"
+      },
+      "2-7": {
+        "scope": "TEXTBOOK_PRINTED_PAGE_TEXT_CHECKED_NOT_PER_PDP_VISUAL_CERTIFICATE",
+        "after": "Hasilkan Topeng Serkup Si Burung Kenek-kenek berbentuk silinder kad manila dengan mata, paruh kon dan jalinan felt"
       }
     }
   }
