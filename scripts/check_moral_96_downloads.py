@@ -15,7 +15,7 @@ from docx import Document
 from rpt_2027.pendidikan_moral.complete_96_downloads import (
     source_rows, pdf_ready, rph_ready, build_rpt_pdf,
     build_rph_pdf, build_rph_docx, install,
-    RPT_PREFIX, RPH_PDF_PREFIX, RPH_DOCX_PREFIX,
+    RPT_PREFIX, RPH_PDF_PREFIX, RPH_DOCX_PREFIX, RPH_MENU_PREFIX,
     _supplement, _latin, PHASE_NAMES,
 )
 
@@ -94,7 +94,7 @@ def test_callback_security_and_isolation():
         captured.append(("original", cid, data))
         return "original"
     def send(cid, body, *args):
-        captured.append(("send", cid, body))
+        captured.append(("send", cid, body, args))
         return "blocked"
     def send_document(cid, path, caption):
         file = Path(path)
@@ -116,6 +116,16 @@ def test_callback_security_and_isolation():
     assert captured[-1][0] == "send", "Unpaid user not blocked"
     ns["callback"](3, RPH_PDF_PREFIX + "2")
     assert captured[-1][0] == "send", "Unpaid RPH package not blocked"
+    ns["callback"](3, RPH_MENU_PREFIX + "2")
+    assert captured[-1][0] == "send" and "hanya untuk" in captured[-1][2], "Unpaid RPH menu not blocked"
+    ns["callback"](2, RPH_MENU_PREFIX + "2")
+    assert captured[-1][0] == "send" and "54 sesi" in captured[-1][2], "Paid RPH menu not rendered"
+    kb = captured[-1][3][0]
+    callbacks = {button["callback_data"] for row in kb for button in row}
+    assert {RPH_PDF_PREFIX + "2", RPH_DOCX_PREFIX + "2", "rpt2027_year_2"} <= callbacks, "PDF, Word or back button missing"
+    assert_no_internal_labels(captured[-1][2], "Moral RPH menu body")
+    ns["callback"](2, RPH_MENU_PREFIX + "1")
+    assert captured[-1][0] == "send" and "tidak sah" in captured[-1][2], "Unsupported year exposed"
     ns["callback"](2, RPT_PREFIX + "x_2")
     assert captured[-1][0] == "send", "Invalid group allowed"
     ns["callback"](2, RPH_DOCX_PREFIX + "99")
