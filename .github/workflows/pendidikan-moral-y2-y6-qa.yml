@@ -25,6 +25,8 @@ on:
       - 'scripts/check_moral_96h_planning.py'
       - 'scripts/check_moral_official_dskp_350sp.py'
       - 'scripts/audit_moral_480_individual_evidence.py'
+      - 'scripts/check_moral_210_source_and_270_supplement.py'
+      - 'scripts/build_moral_word_a4_review_artifact.py'
       - 'scripts/check_moral_y6_visual24_20261105.py'
       - 'audits/pendidikan_moral_y6_visual24_units05_13_20261105.json'
       - 'audits/pendidikan_moral_official_dskp_350sp_fingerprints_20261105.json'
@@ -61,6 +63,8 @@ on:
       - 'scripts/check_moral_96h_planning.py'
       - 'scripts/check_moral_official_dskp_350sp.py'
       - 'scripts/audit_moral_480_individual_evidence.py'
+      - 'scripts/check_moral_210_source_and_270_supplement.py'
+      - 'scripts/build_moral_word_a4_review_artifact.py'
       - 'scripts/check_moral_y6_visual24_20261105.py'
       - 'audits/pendidikan_moral_y6_visual24_units05_13_20261105.json'
       - 'audits/pendidikan_moral_official_dskp_350sp_fingerprints_20261105.json'
@@ -137,6 +141,16 @@ jobs:
         with:
           name: moral-480-individual-evidence
           path: ${{ runner.temp }}/moral_480_individual_evidence.csv
+          if-no-files-found: error
+      - name: Verify academic source classification for 204 book RPH, 6 DSKP only, 270 supplemental
+        run: python scripts/check_moral_210_source_and_270_supplement.py
+      - name: Export 270 supplementary Word RPH for independent A4 pagination audit
+        run: python scripts/build_moral_word_a4_review_artifact.py --outdir "$RUNNER_TEMP/moral-word-review"
+      - name: Archive five 54-RPH Word packs for A4 physical page audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: moral-270-word-a4-review
+          path: ${{ runner.temp }}/moral-word-review/*.docx
           if-no-files-found: error
       - name: Full-release gate - informational only for explicitly provisional beta
         if: always()
