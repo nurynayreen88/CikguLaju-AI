@@ -95,8 +95,16 @@ def install(runtime):
             ],
         )
 
+    def _clear_school_waiting(cid):
+        ss = runtime.state.get(cid) or {}
+        for field in ("waiting", "_school_shared_version", "_school_shared_started"):
+            ss.pop(field, None)
+
     def _callback_school(cid, data):
-        if str(data or "") != "profedit_school":
+        value = str(data or "")
+        if value != "profedit_school":
+            if (runtime.state.get(cid) or {}).get("waiting") == "profile_school_shared":
+                _clear_school_waiting(cid)
             return original_callback(cid, data)
         uid = _identifier(cid)
         if uid is None:
@@ -118,6 +126,17 @@ def install(runtime):
             [[{"text": "❌ Batal", "callback_data": "profedit_menu"}]],
         )
 
+    recent_school_updates = set()
+    recent_school_order = []
+
+    def _handled_school_update(update_id):
+        if update_id in recent_school_updates:
+            return
+        recent_school_updates.add(update_id)
+        recent_school_order.append(update_id)
+        if len(recent_school_order) > 250:
+            recent_school_updates.discard(recent_school_order.pop(0))
+
     def _school_message():
         from flask import request, jsonify
 
@@ -126,8 +145,11 @@ def install(runtime):
         if not request.is_json or request.content_length is None or request.content_length > 16384:
             return None
         update = request.get_json(silent=True)
-        if not isinstance(update, dict) or not isinstance(update.get("update_id"), int):
+        if not isinstance(update, dict) or type(update.get("update_id")) is not int:
             return None
+        update_id = update["update_id"]
+        if update_id in recent_school_updates:
+            return jsonify({"ok": True, "duplicate": True})
         message = update.get("message")
         if not isinstance(message, dict):
             return None
@@ -139,15 +161,14 @@ def install(runtime):
         ss = runtime.state.get(uid) or {}
         if ss.get("waiting") != "profile_school_shared":
             return None
+        _handled_school_update(update_id)
         value = message.get("text")
         if not isinstance(value, str):
             return None
         if value.strip().startswith("/") and value.strip().lower() not in ("/batal", "/cancel"):
             return None
         if value.strip().lower() in ("/batal", "/cancel"):
-            ss.pop("waiting", None)
-            ss.pop("_school_shared_version", None)
-            ss.pop("_school_shared_started", None)
+            _clear_school_waiting(uid)
             runtime.send(uid, "Pengemaskinian sekolah dibatalkan.")
             return jsonify({"ok": True})
         school = value.strip()
@@ -179,14 +200,10 @@ def install(runtime):
             runtime.send(uid, "⚠️ Maklumat belum dapat disimpan. Sila cuba lagi.")
             return jsonify({"ok": True})
         if not isinstance(saved, list) or len(saved) != 1 or _identifier(saved[0].get("telegram_user_id")) != uid:
-            ss.pop("waiting", None)
-            ss.pop("_school_shared_version", None)
-            ss.pop("_school_shared_started", None)
+            _clear_school_waiting(uid)
             runtime.send(uid, "⚠️ Profil telah berubah di tempat lain. Buka semula Profil sebelum mengemas kini.")
             return jsonify({"ok": True})
-        ss.pop("waiting", None)
-        ss.pop("_school_shared_version", None)
-        ss.pop("_school_shared_started", None)
+        _clear_school_waiting(uid)
         runtime.send(uid, "✅ Nama sekolah telah dikemas kini.")
         _send_account_page(uid)
         return jsonify({"ok": True})
