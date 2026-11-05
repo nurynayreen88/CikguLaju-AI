@@ -76,7 +76,7 @@ def preview_rows(state, rows, *, root=LESSON_ROOT):
     # Explicitly distinguish a source-backed, classroom-useful draft from
     # a teacher-approved final RPH. Source page/audio verification is pending.
     result = dict(staged)
-    result["TAJUK"] = "DRAF CIKGULAJU (SEMAKAN GURU) — %s — %s" % (
+    result["TAJUK"] = "CADANGAN CIKGULAJU (DRAF) — %s — %s" % (
         str(expected.get("topic") or "").strip(),
         str(expected.get("focus") or "").strip())
     result["MAIN CONTENT STANDARD"] = main.rsplit(".", 1)[0]
