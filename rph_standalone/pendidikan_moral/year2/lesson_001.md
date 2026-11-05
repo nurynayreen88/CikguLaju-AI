@@ -27,6 +27,7 @@ Murid dapat **memberikan dua contoh perlakuan patuh kepada ajaran agama dalam ke
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Semakan visual buku teks untuk PdP 001:** Unit 1, m/s bercetak 1 (PDF 10) mengandungi gambar pelbagai amalan keluarga. Contoh PdP ditambat kepada gambar tersebut; tidak mensyaratkan pendedahan pegangan peribadi.
 
-**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — unit buku teks **Ajaran Agama Keluarga Saya** bermula pada **m/s 1 (halaman PDF 10)**, disahkan melalui halaman kandungan; halaman aktiviti khusus SP belum dipadankan; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 1, m/s 1–2 (PDF 10–11). Halaman yang diperiksa mengandungi Gambar salam, hormat ibu bapa, doa sebelum makan dan tujuan patuh ajaran. Langkah PdP ini ialah olahan guru berdasarkan contoh dan tugasan sebenar, bukan petikan buku atau pengesahan pelaksanaan PBD.
+
+**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — Unit 1, m/s 1–2 (PDF 10–11) sudah disemak secara visual untuk aktiviti PdP ini; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

@@ -29,6 +29,7 @@ Murid dapat **mempraktikkan dua perlakuan menghormati dan mengurus perayaan warg
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Semakan visual sumber:** m/s 2–3 (PDF 8–9); contoh aktiviti di atas dipadankan pada halaman yang diperiksa. Halaman untuk SP lain dalam unit ini belum diaudit.
 
-**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — halaman belum dipadankan; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 1, m/s 4–8 (PDF 10–14). Halaman yang diperiksa mengandungi Kolam, permainan kenal perayaan, lawatan pameran dan Uji Minda. Langkah PdP ini ialah olahan guru berdasarkan contoh dan tugasan sebenar, bukan petikan buku atau pengesahan pelaksanaan PBD.
+
+**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — Unit 1, m/s 4–8 (PDF 10–14) sudah disemak secara visual untuk aktiviti PdP ini; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
