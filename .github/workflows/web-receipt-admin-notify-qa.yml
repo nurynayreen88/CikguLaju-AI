@@ -1,0 +1,21 @@
+name: Web payment admin review notice QA
+on:
+  push:
+    branches: [feature/web-receipt-admin-notify-20261106]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'flask==3.1.3' 'requests==2.32.3' 'gunicorn==23.0.0'
+      - run: python -m py_compile web/web_payment_routes.py tools/run_web_production.py
+      - run: python -m unittest discover -s tests -p test_web_payment_proof_first.py -v
+      - run: python -m unittest discover -s tests -p test_web_v1_supabase_account_adapter.py -v
+      - run: python -m unittest discover -s tests -p test_web_shared_ten_rph_trial.py -v
