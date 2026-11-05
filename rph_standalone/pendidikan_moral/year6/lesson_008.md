@@ -12,16 +12,16 @@
 **BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 3: Tanggungjawab sebagai Warganegara, m/s 26–28 (flipbook halaman 36–38); kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year6/unit_03_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Murid menghuraikan kepentingan tanggungjawab negara dan mengekspresikan perasaan dengan sebab. Kriteria kejayaan: Dua kepentingan bersebab serta satu perasaan dengan alasan berkaitan bantuan kemanusiaan.
+Murid menjana dua kesan pengabaian tanggungjawab sebagai warganegara dan mengekspresikan perasaan bersebab terhadap tindakan yang bertanggungjawab. Kriteria kejayaan: dua kesan yang munasabah serta satu perasaan dengan sebab berdasarkan kesahihan berita dan penggunaan media sosial.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru memperlihatkan tajuk **Tanggungjawab sebagai Warganegara** dalam buku teks KSSR Semakan 2017, m/s 26, dan mengemukakan situasi berkaitan nilai unit. Murid mengenal pasti watak, tindakan serta satu keputusan yang munasabah mengikut SP PdP.
+**Set induksi (5 minit):** Guru menunjukkan situasi mesej tular dalam bahagian **Fikir Sebelum Kongsi** pada m/s 26 tanpa menyebarkan dakwaan itu sebagai fakta. Murid menjawab sama ada maklumat wajar dikongsi sebelum disemak dan menjelaskan alasannya.
 
-**Aktiviti 1 (20 minit) — Fikir Sebelum Kongsi:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 3, m/s 26–28, bahagian **Fikir Sebelum Kongsi** sebagai rangsangan. Murid menjana dua kesan jika rakyat berkongsi maklumat tidak sahih atau mengabaikan tanggungjawab menjaga nama negara (SP 3.3). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
+**Aktiviti 1 (20 minit) — Fikir Sebelum Kongsi:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 3, m/s 26–28, bahagian **Fikir Sebelum Kongsi** sebagai rangsangan. Murid melengkapkan peta minda m/s 26 tentang keputusan menyemak atau berkongsi berita yang belum disahkan, lalu menjana dua kesan pengabaian tanggungjawab tersebut; guru memperkenalkan keperluan semakan sumber seperti portal SEBENARNYA.MY (SP 3.3). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
 
-**Aktiviti 2 (20 minit) — Jaga Nama Negara Tanggungjawab Bersama:** Guru merujuk bahagian **Jaga Nama Negara Tanggungjawab Bersama** dalam unit yang sama dan menyediakan kad aktiviti berkaitan. Murid menulis satu perasaan yang beralasan selepas memilih tindakan bertanggungjawab dan menjelaskan pengaruh kepada masyarakat (SP 3.4). Guru memberikan maklum balas terhadap sebab, tindakan atau refleksi, kemudian meminta pembetulan yang boleh diperhatikan.
+**Aktiviti 2 (20 minit) — Jaga Nama Negara Tanggungjawab Bersama:** Guru merujuk bahagian **Jaga Nama Negara Tanggungjawab Bersama** dalam unit yang sama dan menyediakan kad aktiviti berkaitan. Murid menyertai perbahasan ringkas berasaskan tajuk buku teks m/s 27 tentang batas penggunaan media sosial, kemudian menyatakan satu perasaan serta sebab apabila memilih tindakan bertanggungjawab (SP 3.4). Guru memberikan maklum balas terhadap sebab, tindakan atau refleksi, kemudian meminta pembetulan yang boleh diperhatikan.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Dua kepentingan bersebab serta satu perasaan dengan alasan berkaitan bantuan kemanusiaan. Guru merekod pencapaian berdasarkan respons individu dan memberi maklum balas terhadap penjelasan atau tingkah laku yang dapat diperhatikan.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menilai dua kesan menyebarkan maklumat tidak sahih tanpa semakan dan satu perasaan bersebab selepas membuat pilihan bertanggungjawab, berpandukan peta minda m/s 26 dan perbahasan m/s 27. Guru merekod pencapaian berdasarkan respons individu dan memberi maklum balas terhadap penjelasan atau tingkah laku yang dapat diperhatikan.
 
 **Penutup (5 minit):** Murid menyatakan satu tindakan dan sebab tindakan itu wajar berdasarkan nilai unit. Guru merumuskan pembelajaran dan mengingatkan murid agar menghormati keadaan keluarga, sekolah dan komuniti yang berbeza.
 
