@@ -1,8 +1,7 @@
-"""CikguLaju teacher profile data stored in the existing shared Supabase project.
+"""Shared Telegram/Web teacher profile. Telegram class_profiles is canonical.
 
-Only names/school/classes/state are updated in existing teacher_profiles; schedules
-use the separate teacher_timetables table. No credits, referrals, payment, RPH
-or Telegram runtime tables are written. Authenticated server-side use only.
+Schedule writes update class_profiles in the same profile record. An old Web
+schedule table stays untouched as a recovery copy. No payments or credits touched.
 """
 import json
 import re
@@ -19,6 +18,7 @@ STATES = frozenset((
     "Johor", "Kedah", "Kelantan", "Melaka", "Negeri Sembilan",
     "Pahang", "Perak", "Perlis", "Pulau Pinang", "Sabah", "Sarawak",
     "Selangor", "Terengganu", "Kuala Lumpur", "Putrajaya", "Labuan",
+    "W.P. Kuala Lumpur", "W.P. Putrajaya", "W.P. Labuan",
 ))
 SCHEDULE_KEYS = frozenset(("day", "start", "end", "class_name", "subject"))
 PROFILE_KEYS = frozenset(("display_name", "school_name", "state_name", "class_names", "version"))
@@ -193,27 +193,95 @@ def clean_schedule(form, class_names):
     return result, _version(form["version"])
 
 
+def _class_records(record):
+    """Read Telegram's canonical class_profiles without dropping student counts.
+
+    class_names is a backwards-compatible mirror; never treat a separate
+    Web timetable record as more authoritative than Telegram class records.
+    """
+    if record is None:
+        return []
+    raw = record.get("class_profiles") or []
+    if not isinstance(raw, list):
+        raise ProfileUnavailable("Data kelas lama perlu disemak")
+    rows = []
+    if raw:
+        for item in raw:
+            if isinstance(item, str):
+                item = {"name": item, "students": None, "timetable": []}
+            if not isinstance(item, dict) or not isinstance(item.get("name"), str):
+                raise ProfileUnavailable("Rekod kelas tidak sah")
+            name = item["name"].strip()
+            if not name:
+                raise ProfileUnavailable("Nama kelas tidak sah")
+            timetable = item.get("timetable") or []
+            if not isinstance(timetable, list):
+                raise ProfileUnavailable("Jadual kelas tidak sah")
+            rows.append({**item, "name": name, "timetable": timetable})
+    else:
+        names = record.get("class_names") or []
+        if not isinstance(names, list):
+            raise ProfileUnavailable("Senarai kelas tidak sah")
+        rows = [{"name": item.strip(), "students": None, "timetable": []}
+                for item in names if isinstance(item, str) and item.strip()]
+    if len({r["name"].casefold() for r in rows}) != len(rows):
+        raise ProfileUnavailable("Kelas berulang dalam rekod lama")
+    return rows
+
+
+def _profile_record(url, key, uid, *, opener=None):
+    return _get_one(
+        url, key, "teacher_profiles", uid,
+        "telegram_user_id,display_name,school_name,state_name,class_names,class_profiles,updated_at",
+        opener=opener,
+    )
+
+
+def _flatten_timetable(rows):
+    result = []
+    for row in rows:
+        for entry in row.get("timetable") or []:
+            if not isinstance(entry, dict):
+                raise ProfileUnavailable("Baris jadual lama tidak sah")
+            result.append({
+                "day": entry.get("day"), "start": entry.get("start"),
+                "end": entry.get("end"), "class_name": row["name"],
+                "subject": entry.get("subject"),
+            })
+    return result
+
+
 def get_profile(url, key, uid, *, opener=None):
-    record = _get_one(url, key, "teacher_profiles", uid,
-                      "telegram_user_id,display_name,school_name,state_name,class_names,updated_at",
-                      opener=opener)
+    record = _profile_record(url, key, uid, opener=opener)
     if record is None:
         return {"display_name": "Cikgu", "school_name": "",
                 "state_name": "", "class_names": [], "version": ""}
+    classes = [r["name"] for r in _class_records(record)]
     return {
         "display_name": record.get("display_name") or "Cikgu",
         "school_name": record.get("school_name") or "",
         "state_name": record.get("state_name") or "",
-        "class_names": record.get("class_names") or [],
+        "class_names": classes,
         "version": record.get("updated_at") or "",
     }
 
 
 def get_schedule(url, key, uid, *, opener=None):
-    record = _get_one(url, key, "teacher_timetables", uid,
+    record = _profile_record(url, key, uid, opener=opener)
+    if record is None:
+        return {"entries": [], "version": ""}
+    classes = _class_records(record)
+    # The current Telegram menu and RPH timetable resolver use class_profiles.
+    # No fallback is permitted once class_profiles exist: an intentionally
+    # cleared timetable must stay empty, not resurrect archived Web entries.
+    if record.get("class_profiles"):
+        return {"entries": _flatten_timetable(classes),
+                "version": record.get("updated_at") or ""}
+    # Read-only compatibility for the pre-unification Web timetable rows.
+    legacy = _get_one(url, key, "teacher_timetables", uid,
                       "telegram_user_id,entries,updated_at", opener=opener)
-    return {"entries": (record.get("entries") if record else []) or [],
-            "version": (record.get("updated_at") if record else "") or ""}
+    return {"entries": (legacy.get("entries") or []) if legacy else [],
+            "version": record.get("updated_at") or ""}
 
 
 def _save(url, key, table, uid, values, expected_version, *, opener=None):
@@ -240,12 +308,47 @@ def _save(url, key, table, uid, values, expected_version, *, opener=None):
 
 
 def save_profile(url, key, uid, form, *, opener=None):
+    """Patch shared profile and class_profiles atomically, preserving each class schedule."""
     values, version = clean_profile(form)
+    record = _profile_record(url, key, uid, opener=opener)
+    if version != ((record or {}).get("updated_at") or ""):
+        raise ProfileConflict("Maklumat telah dikemas kini. Muat semula")
+    rows = _class_records(record)
+    byname = {r["name"].casefold(): r for r in rows}
+    keep = {name.casefold() for name in values["class_names"]}
+    for row in rows:
+        # Removing a class with timetable entries must never silently delete periods.
+        if row["name"].casefold() not in keep and row.get("timetable"):
+            raise ProfileValidation(
+                "Kelas masih mempunyai jadual. Padam waktu kelas itu dahulu.")
+    class_profiles = []
+    for name in values["class_names"]:
+        old = byname.get(name.casefold())
+        if old is not None:
+            class_profiles.append({**old, "name": name})
+        else:
+            class_profiles.append({"name": name, "students": None, "timetable": []})
+    values["class_profiles"] = class_profiles
     return _save(url, key, "teacher_profiles", uid, values, version, opener=opener)
 
 
 def save_schedule(url, key, uid, form, *, opener=None):
-    profile = get_profile(url, key, uid, opener=opener)
-    entries, version = clean_schedule(form, profile["class_names"])
-    return _save(url, key, "teacher_timetables", uid,
-                 {"entries": entries}, version, opener=opener)
+    """Write same Telegram class_profiles timetable, never a second writable copy."""
+    record = _profile_record(url, key, uid, opener=opener)
+    if not record:
+        raise ProfileValidation("Simpan maklumat kelas terlebih dahulu")
+    records = _class_records(record)
+    classes = [r["name"] for r in records]
+    entries, version = clean_schedule(form, classes)
+    if version != (record.get("updated_at") or ""):
+        raise ProfileConflict("Maklumat telah dikemas kini. Muat semula")
+    byname = {r["name"].casefold(): [] for r in records}
+    for entry in entries:
+        byname[entry["class_name"].casefold()].append({
+            "day": entry["day"], "start": entry["start"],
+            "end": entry["end"], "subject": entry["subject"],
+        })
+    updated = [{**r, "timetable": byname[r["name"].casefold()]} for r in records]
+    return _save(url, key, "teacher_profiles", uid,
+                 {"class_profiles": updated, "class_names": classes},
+                 version, opener=opener)
