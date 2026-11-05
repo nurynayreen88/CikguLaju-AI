@@ -27,3 +27,6 @@
 **Status kawalan:** DRAF_STAGING; BELUM READY; BUKAN bahan LIVE atau bukti pengesahan penuh buku teks/DSKP. Jangan jana Word/PDF kepada pengguna sebelum semakan halaman dan ujian A4.
 
 **Rujukan RPT 2026:** https://anyflip.com/zxzlm/vmip/basic
+
+**Audit sumber BT Tahun 3 (6 Nov 2026):** Buku Teks Bahasa Arab Tahun 3 DBP/KPM cetakan pertama 2018, ISBN 978-983-49-2033-3, Unit 1, halaman bercetak **2 & 6**. Rujukan teks buku: https://www.scribd.com/document/438677752/Bahasa-Arab-Tahun-3-Teks-KSSR-Semakan; DSKP asal dalam Drive: https://drive.google.com/file/d/1VQcCrSyo-zmAndvAFv9pScQcLT-DRl00/view.
+**Kesepadanan aktiviti dan SP:** 1.1.1 dicetak pada kedua-dua latihan fonetik خ h.2 dan ش h.6. Pemetaan RPT 2027, pemilihan PdP individu dan kelulusan guru masih perlu semakan; ini bukti sumber sahaja. **DRAF / BELUM READY**.
