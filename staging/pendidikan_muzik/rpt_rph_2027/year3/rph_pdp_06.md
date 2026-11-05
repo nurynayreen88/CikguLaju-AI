@@ -3,32 +3,32 @@
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
 **Unit / Tajuk:** MALAYSIA KITA  
 **Bidang:** Gerakan Mengikut Muzik  
-**SK / SP (RPT sumber):** 2.3.1
+**SK / SP (RPT sumber; belum penyelarasan kod akhir):** 2.3.1  
 **Tempoh cadangan:** 30 minit  
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Melakukan sekurang-kurangnya dua corak pergerakan yang tepat dengan tempo/struktur muzik.
+**Objektif pembelajaran (draf boleh ukur):** Mempersembahkan urutan gerak empat detik dalam kumpulan pada dua tempo dengan sekurang-kurangnya dua peralihan tepat.
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Kriteria kejayaan:** Murid menyelaraskan langkah dengan tempo lambat dan cepat, memberi isyarat mula/henti dan mengekalkan formasi selamat.
 
 **Set Induksi — 4 minit**  
-Murid mendengar muzik dan bergerak setempat mengikut detik tanpa mengganggu ruang rakan.
+Murid mengimbas urutan halaman 20 dan mengenal pasti perbezaan tempo lambat dengan tempo cepat melalui tepukan guru.
 
 **Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru menunjuk contoh gerakan berdasarkan Membuat pergerakan berdasarkan corak irama dari muzik yang didengar., sambil menerangkan aspek irama, bentuk lagu atau tempo.
+Guru merancang kumpulan kecil untuk mengiringi Kita Satu Keluarga mengikut halaman 21; murid menetapkan peranan, titik mula dan urutan maju–setempat–undur–setempat.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid dalam kumpulan mencipta formasi 4–8 kiraan dan mempersembahkannya bersama muzik; kumpulan lain memberi ulasan membina.
+**Aktiviti 2 — Latihan dan aplikasi (10 minit)**  
+Kumpulan berlatih pada tempo lambat, kemudian tempo cepat; jika fail audio telah sah, gunakan instrumental bercetak Audio 16 diikuti Audio 17. Tanpa fail, guru mengira detik atau memberi iringan perkusi sendiri.
 
 **Pengukuhan & Penilaian — 6 minit**  
-Rubrik 3 aspek: padanan muzik, koordinasi dan kerjasama; rekod penyertaan setiap murid.
+Guru menilai perubahan tempo, keseragaman pergerakan dan kerjasama dalam dua persembahan berasingan.
 
 **Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+Kumpulan menerangkan penyesuaian gerak ketika tempo berubah dan memilih satu penambahbaikan.
 
-**Bahan:** Audio muzik, ruang selamat dan kad formasi/tempo.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 20; **belum disahkan pada halaman buku asal**. RPT sumber menyebut Audio 15-17; **nombor trek belum diaudit dengan fail audio**.
+**Bahan:** Buku teks halaman 21, ruang persembahan, kad urutan dan alat perkusi ringkas; audio belum dipadankan kepada fail.  
+**Rujukan sumber:** Buku Teks Pendidikan Kesenian Tahun 3 SK (DBP 2018), halaman 21; teks aktiviti disemak terhadap salinan https://anyflip.com/lcinm/flxx/basic. Kod dicetak dalam buku gabungan: 2.2.6; **bukan pengesahan kod DSKP Pendidikan Muzik berdiri sendiri**. Audio tercetak: 16–17 (instrumental lambat/cepat bermetronom); **fail audio/trek belum diperiksa**.
 
 **Catatan pelaksanaan / pemulihan:** __________________________________________
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_20261106; status DRAF; rujukan halaman dan aktiviti ialah pemeriksaan teks, bukan pengesahan skor visual atau fail audio; kod RPT asal dikekalkan; Word/PDF dan keluaran Telegram–Web belum diuji.
