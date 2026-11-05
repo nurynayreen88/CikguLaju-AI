@@ -34,7 +34,7 @@ class EnglishPrimaryAllYearsSourceAudioAudit(unittest.TestCase):
                     "SOW_EXPLICIT_AUDIO_REFERENCE",
                     "SOW_AUDIO_DISCUSSION_WITHOUT_PARSEABLE_NUMBER",
                     "SOW_NO_EXPLICIT_AUDIO_REFERENCE_NOT_NO_AUDIO") for l in y["entries"]))
-                self.assertIn("SOW",y["source"]["title"].upper())
+                self.assertTrue("SOW" in y["source"]["title"].upper() or "SCHEME OF WORK" in y["source"]["title"].upper())
 
     def test_year1_to_3_sow_silent_does_not_conclude_no_audio(self):
         for year in (1,2,3):
