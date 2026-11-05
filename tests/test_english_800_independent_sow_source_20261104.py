@@ -98,7 +98,8 @@ class IndependentPrimarySowVerification(unittest.TestCase):
         self.assertIn("SB p.20",out["BAHAN BANTU MENGAJAR"])
         self.assertIn("CD1 Track 29",out["BAHAN BANTU MENGAJAR"])
         self.assertIn("CD2 Track 29",out["BAHAN BANTU MENGAJAR"])
-        self.assertIn("confirm speech",out["BAHAN BANTU MENGAJAR"])
+        self.assertIn("Teacher confirms CD1 for SB p.20",out["BAHAN BANTU MENGAJAR"])
+        self.assertIn("Telegram CD1 delivery remains untested",out["BAHAN BANTU MENGAJAR"])
         self.assertEqual(out["MAIN LEARNING STANDARD"],"4.3.2")
         self.assertEqual(out["COMPLEMENTARY LEARNING STANDARD"],"1.2.5")
         for k in ("TARIKH","KELAS","REFLEKSI"):
