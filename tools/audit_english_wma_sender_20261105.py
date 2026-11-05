@@ -43,6 +43,38 @@ def run():
         "wma_policy": "Keep source .wma bytes and extension. No forced .mp3 label or audio/mpeg. Block wrong textbook provenance regardless of extension.",
         "verification": "CODE_PATH_INVENTORY_ONLY_NOT_REAL_SEND",
     }
+    # Sanitized implementation outline for the two actual media senders.
+    # Never print live tokens, file IDs, URLs, raw media or user data.
+    class RedactConstants(ast.NodeTransformer):
+        KEEP = {
+            "audio", "document", "sendAudio", "sendDocument",
+            "audio/mpeg", "audio/x-ms-wma", "application/octet-stream",
+            ".mp3", ".wma", "rb", "wb", "name", "filename",
+            "caption", "chat_id", "files", "data", "title",
+            "storage_file_id", "audio_reference", "verified",
+            "file", "media", "timeout", "suffix", "mime_type",
+            "content_type", "parse_mode", "POST", "GET",
+        }
+        def visit_Constant(self, node):
+            if isinstance(node.value, str) and node.value not in self.KEEP:
+                return ast.copy_location(ast.Constant(value="<masked>"), node)
+            return node
+
+    for target in ("_eng12_send_verified_audio", "_send_verified_media_rows_v2594"):
+        functions = [node for node in ast.walk(tree)
+                     if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef))
+                     and node.name == target]
+        if not functions:
+            print("WMA_SENDER_OUTLINE", target, "MISSING")
+            continue
+        fn = functions[-1]
+        import copy
+        clone = RedactConstants().visit(copy.deepcopy(fn))
+        outline = ast.unparse(clone)
+        print("WMA_SENDER_OUTLINE", target,
+              json.dumps({"line": fn.lineno, "masked_ast_source": outline[:8500]},
+                         ensure_ascii=False))
+
     print("CIKGULAJU_WMA_SENDER_STATIC_AUDIT", json.dumps(report, ensure_ascii=False))
     return report
 
