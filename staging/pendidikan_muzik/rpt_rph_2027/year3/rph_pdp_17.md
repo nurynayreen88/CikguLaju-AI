@@ -2,33 +2,33 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
 **Unit / Tajuk:** BELON UDARA TINGGI DI LANGIT  
-**Bidang:** Bahasa Muzik dan Notasi  
-**SK / SP (RPT sumber):** 1.2.1, 2.4.1, 2.4.2
+**Bidang:** Permainan Rekoder dan Notasi  
+**SK / SP (RPT Muzik sumber; belum disahkan silang dengan kod buku Kesenian):** 1.2.1, 2.4.1, 2.4.2  
 **Tempoh cadangan:** 30 minit  
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Mengenal sekurang-kurangnya 3 daripada 4 contoh elemen atau notasi muzik, serta mengaplikasikan satu contoh dengan betul.
+**Objektif pembelajaran (draf boleh ukur):** Memegang rekoder dengan postur betul serta memainkan not B dalam dua corak irama asas.
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Kriteria kejayaan:** Murid meletakkan tangan kiri di atas, memadankan lubang not B dan meniup perlahan.
 
 **Set Induksi — 4 minit**  
-Guru memainkan dua petikan bunyi atau menunjukkan dua simbol pada baluk; murid meneka perbezaan dan memberikan sebab.
+Guru menunjukkan bahagian kepala, badan dan kaki rekoder lalu bertanya cara memegang yang selamat.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru menunjukkan contoh notasi/elemen muzik (Membaca not pada baluk: (i) not G, A dan B.); murid mengecamnya pada tiga kad atau corak dengar.
+**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit)**  
+Berdasarkan halaman 54–55, murid mengenal nombor lubang dan kedudukan tangan. Guru memodelkan penjarian not B serta sebutan irama ta, ta-a dan ta-a-a-a.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid melukis, menulis atau melaksanakan elemen/notasi tersebut secara berpasangan dan saling membetulkan hasil.
+**Aktiviti 2 — Aplikasi / persembahan (10 minit)**  
+Murid menepuk irama latihan not B sebelum memainkan dua corak pendek dengan hembusan lembut. Guru membimbing satu bar pada satu masa.
 
 **Pengukuhan & Penilaian — 6 minit**  
-Semak 3 item pengecaman dan satu aplikasi pada skor/nyanyian/pergerakan; rekod 0–4 hasil tepat.
+Semak kedudukan tangan, penjarian not B dan detik pada dua latihan; jangan meniup kuat.
 
 **Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+Murid membersihkan pemipit dan mengingat semula satu peraturan penjagaan rekoder.
 
-**Bahan:** Kad notasi, papan baluk, audio contoh dan alat perkusi mudah.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 54-55; **belum disahkan pada halaman buku asal**. RPT sumber menyebut Audio 48-49; **nombor trek belum diaudit dengan fail audio**.
+**Bahan:** Buku halaman 54–55, rekoder individu bersih dan kad nilai detik; Audio 48–49 belum disahkan sebagai fail.  
+**Rujukan sumber:** Buku Teks Pendidikan Kesenian Tahun 3 SK, DBP 2018, halaman 54–55; disemak secara teks terhadap https://anyflip.com/lcinm/flxx/basic/51-100 . Kod buku Kesenian yang dicetak: 1.2.2, 2.2.9(i)(iii), 2.2.10(i)(ii); **jangan gantikan kod DSKP Muzik tanpa pengesahan crosswalk**. Audio bercetak: 48–49; **tiada fail audio disahkan**.
 
 **Catatan pelaksanaan / pemulihan:** __________________________________________
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_20261106; DRAF STAGING. Bukan pengesahan visual skor, fail audio, kod DSKP atau output Word/PDF dan Telegram–Web.
