@@ -102,7 +102,10 @@
       "external_rpt_2026_portal": "https://sites.google.com/moe-dl.edu.my/panitia-bahasa-arab-sksn/induk/rptdskp",
       "external_activity_book_portal": "https://sites.google.com/moe-dl.edu.my/panitiapendidikanislamtldmkk/buku-teks",
       "unit_4_theme_tag": "الزمان",
-      "unit_4_correction_note": "Sebelum ini indeks tersalah menganggap label DSKP الزمان sebagai tajuk unit; judul buku teks Tahun 3 2018 ialah الوقت كالذهب."
+      "unit_4_correction_note": "Sebelum ini indeks tersalah menganggap label DSKP الزمان sebagai tajuk unit; judul buku teks Tahun 3 2018 ialah الوقت كالذهب.",
+      "source_evidence_pdp001_012": "audits/bahasa_arab_y3_pdp001_012_source_audit_20261106.json",
+      "unit_1_source_reviewed_drafts": 12,
+      "source_review_is_not_individual_approval": true
     },
     "4": {
       "dskp": {

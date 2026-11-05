@@ -1,0 +1,154 @@
+{
+  "audited_on": "2026-11-06",
+  "year": 3,
+  "unit": 1,
+  "title": "تفضل إلى الفصل",
+  "status": "DRAF_SOURCE_REVIEW_NO_MANUAL_RELEASE",
+  "source_textbook": {
+    "title": "Buku Teks Bahasa Arab Tahun 3 KSSR Semakan",
+    "publisher": "DBP untuk KPM",
+    "year": 2018,
+    "isbn": "978-983-49-2033-3",
+    "source_online": "https://www.scribd.com/document/438677752/Bahasa-Arab-Tahun-3-Teks-KSSR-Semakan",
+    "drive_scanned": "https://drive.google.com/file/d/1U-j2TPeVTyLaZbU2qGDb9jmf53KAwNNH/view"
+  },
+  "source_dskp": "https://drive.google.com/file/d/1VQcCrSyo-zmAndvAFv9pScQcLT-DRl00/view",
+  "source_level": "Individual printed-page text transcription and code references were inspected. Textbook page images, full RPT 2027 sequence, teacher pedagogic review not signed off.",
+  "items": [
+    {
+      "pdp": "001",
+      "sp": "1.1.1",
+      "page_textbook": "2 & 6",
+      "skill": "Fonetik خ/ش",
+      "scope_note": "Dua halaman untuk dua huruf; urutan PdP belum dipastikan",
+      "source_reviewed": true,
+      "word_pdf_previewed_in_ci": true,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "002",
+      "sp": "1.1.2",
+      "page_textbook": "2 & 6",
+      "skill": "Kenal bunyi خ/ش",
+      "scope_note": "Dua halaman untuk dua huruf; urutan PdP belum dipastikan",
+      "source_reviewed": true,
+      "word_pdf_previewed_in_ci": true,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "003",
+      "sp": "1.2.1",
+      "page_textbook": "2 & 6",
+      "skill": "Suku kata خ/ش",
+      "scope_note": "Dua halaman untuk dua huruf; urutan PdP belum dipastikan",
+      "source_reviewed": true,
+      "word_pdf_previewed_in_ci": true,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "004",
+      "sp": "2.1.1",
+      "page_textbook": "2 & 6",
+      "skill": "Baca kata huruf خ/ش",
+      "scope_note": "Kad bentuk huruf sebagai sokongan; fokus bacaan kata dicetak",
+      "source_reviewed": true,
+      "word_pdf_previewed_in_ci": true,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "005",
+      "sp": "2.2.1",
+      "page_textbook": "4 & 8",
+      "skill": "Baca suku kata",
+      "scope_note": "Suku kata pendek-panjang dibimbing mengikut latihan",
+      "source_reviewed": true,
+      "word_pdf_previewed_in_ci": true,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "006",
+      "sp": "3.1.1",
+      "page_textbook": "5 & 9",
+      "skill": "Menulis huruf خ/ش",
+      "scope_note": "Menulis bentuk huruf; h5/h9",
+      "source_reviewed": true,
+      "word_pdf_previewed_in_ci": true,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "007",
+      "sp": "3.2.1",
+      "page_textbook": "5 & 9",
+      "skill": "Tulis suku kata",
+      "scope_note": "Menulis suku kata; h5/h9",
+      "source_reviewed": true,
+      "word_pdf_previewed_in_ci": true,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "008",
+      "sp": "1.3.1",
+      "page_textbook": "11–12",
+      "skill": "Dengar sebut objek bilik darjah",
+      "scope_note": "Set halaman 11 & 12 berbeza; kod utama 1.3.1",
+      "source_reviewed": true,
+      "word_pdf_previewed_in_ci": true,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "009",
+      "sp": "1.3.2",
+      "page_textbook": "11–12",
+      "skill": "Kenal objek bilik darjah daripada bunyi",
+      "scope_note": "Kod utama 1.3.2 tercetak pada h11; h12 lebih kepada 1.3.3",
+      "source_reviewed": true,
+      "word_pdf_previewed_in_ci": true,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "010",
+      "sp": "2.3.5",
+      "page_textbook": "13–14",
+      "skill": "Baca kata objek bilik darjah",
+      "scope_note": "Buku memaparkan 2.3.5 pada h13/h14",
+      "source_reviewed": true,
+      "word_pdf_previewed_in_ci": true,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "011",
+      "sp": "3.3.1",
+      "page_textbook": "20 & 24",
+      "skill": "Tulis kata dan frasa kelas",
+      "scope_note": "SP 3.3.1 dicetak bersama 3.4.1; fokus hanya kata yang ditulis",
+      "source_reviewed": true,
+      "word_pdf_previewed_in_ci": true,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "012",
+      "sp": "1.4.1",
+      "page_textbook": "16–17",
+      "skill": "Dengar-tiru frasa tunjuk",
+      "scope_note": "SP1.4.1 pada h16/17; frasa من فضلك dari h19 ialah pengayaan, bukan bukti SP h16",
+      "source_reviewed": true,
+      "word_pdf_previewed_in_ci": true,
+      "manual_approval": false,
+      "ready": false
+    }
+  ],
+  "reviewed_count": 12,
+  "final_ready_count": 0,
+  "product_release_approved": false
+}

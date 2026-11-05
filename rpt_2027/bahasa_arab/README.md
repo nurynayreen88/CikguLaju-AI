@@ -39,3 +39,7 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 - **Bendera:** PdP 002, 004, 012 perlu semakan kandungan/SP dengan lebih teliti. Semakan halaman sumber **tidak** membuktikan RPT 2027 atau kelulusan akhir.
 
 - Tahun 4 PdP 007–012: halaman 10,15,25,15,16,20 telah dicatat sebagai bukti sumber. `audits/bahasa_arab_y4_pdp007_012_source_audit_20261106.json`. PdP 012 perlu pembetulan kandungan individu; 12 draf Unit 1 telah menerima rujukan sumber tetapi status tetap DRAF.
+
+## Audit Tahun 3 Unit 1 (6 Nov 2026)
+- 12 PdP awal menerima bukti halaman buku bercetak dan kod SP daripada teks buku DBP/KPM 2018; fail `audits/bahasa_arab_y3_pdp001_012_source_audit_20261106.json`.
+- Bersama 12 PdP Tahun 4 dan 12 PdP Tahun 5 yang telah disemak sumber, terdapat 36 PdP awal yang mempunyai audit rujukan halaman; **0 RPH FINAL READY**. PDF/Word 60 draf lulus satu A4 dalam workflow staging, tetapi bukan bukti kualiti kandungan.

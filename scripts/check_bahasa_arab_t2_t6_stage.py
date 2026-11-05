@@ -158,6 +158,20 @@ def check() -> None:
         assert "**Audit buku teks (6 Nov 2026):**" in src
         assert f"**{x['page']}**" in src
         assert "BELUM READY" in src and x["evidence_status"] in src
+    y3_source = json.loads((ROOT / "audits" / "bahasa_arab_y3_pdp001_012_source_audit_20261106.json").read_text(encoding="utf-8"))
+    assert y3_source["year"] == 3 and y3_source["unit"] == 1
+    assert y3_source["reviewed_count"] == 12 and y3_source["final_ready_count"] == 0
+    assert y3_source["product_release_approved"] is False
+    assert [x["pdp"] for x in y3_source["items"]] == [f"{i:03d}" for i in range(1,13)]
+    assert [x["sp"] for x in y3_source["items"]] == EXPECTED_SP[3]
+    assert all(x["source_reviewed"] and x["manual_approval"] is False and x["ready"] is False for x in y3_source["items"])
+    assert m["years"]["3"]["source_evidence_pdp001_012"] == "audits/bahasa_arab_y3_pdp001_012_source_audit_20261106.json"
+    assert m["years"]["3"]["textbook"]["source_page_verified"] is False
+    for i, item in enumerate(y3_source["items"], start=1):
+        src = (SUBJECT / "year3" / f"lesson_{i:03d}.md").read_text(encoding="utf-8")
+        assert "**Audit sumber BT Tahun 3 (6 Nov 2026):**" in src
+        assert f"**{item['page_textbook']}**" in src
+        assert "BELUM READY" in src
     print("PASSED: 20 unit indexes, 60 crosswalks, 60 RPH draft files, 15 banks.")
     print("RELEASE BLOCKED: 0 READY; page-level textbook, A4 RTL and manual review missing.")
 

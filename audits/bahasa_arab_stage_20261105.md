@@ -78,3 +78,6 @@ Fail: `audits/bahasa_arab_y4_pdp007_012_source_audit_20261106.json`. Kini 12/12 
 - Y5 PdP 012: draf lama berasaskan contoh p19 diganti dialog ibu-anak tentang memasak yang sepadan dengan latihan berkod 1.4.1 pada h.20.
 - Y4 PdP 012: contoh draf Hari Guru diganti dialog Hari Bahasa Arab pada BT Tahun 4 h.20 (1.4.1).
 - Rekod konflik sumber dikemas kini sebagai dibetulkan pada kandungan, **bukan kelulusan FINAL READY**; turutan 2027 RPT, pemeriksaan halaman imej, Word/PDF RTL dan semakan guru belum selesai.
+
+## Tahun 3 PdP 001–012: audit sumber buku teks (6 Nov 2026)
+Semua 12 draf Tahun 3 Unit 1 menerima catatan halaman bercetak Buku Teks DBP/KPM 2018 dan kod SP mengikut aktiviti yang ditemui: 2+6, 2+6, 2+6, 2+6, 4+8, 5+9, 5+9, 11–12, 11–12, 13–14, 20+24, 16–17. Draf PdP 004, 008–012 dimurnikan supaya kosa kata/objektif mengikuti buku teks. Frasa tambahan guru ditandakan berasingan. Pautan bukti https://www.scribd.com/document/438677752/Bahasa-Arab-Tahun-3-Teks-KSSR-Semakan dan fail `audits/bahasa_arab_y3_pdp001_012_source_audit_20261106.json`. **Status masih DRAF, 0 READY**, belum semak keseluruhan RPT 2027 dan approval guru.
