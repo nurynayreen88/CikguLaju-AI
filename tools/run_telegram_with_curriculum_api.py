@@ -385,3 +385,16 @@ except Exception as _native_rph_error:
     TELEGRAM_NATIVE_WEB_RPH_REGISTERED = False
     print("Native Web RPH route unavailable:",
           type(_native_rph_error).__name__, flush=True)
+
+
+# Private source-matched RPT school covers for authenticated Web users. Web
+# checks account entitlement; Telegram re-checks exact PDF bytes before it
+# inserts the logo. The bot's menus, RPH, sources, and credits stay untouched.
+try:
+    from web.native_rpt_telegram_api import create_private_rpt_blueprint
+    telegram_runtime.app.register_blueprint(create_private_rpt_blueprint())
+    TELEGRAM_PRIVATE_RPT_COVER_REGISTERED = True
+except Exception as _private_rpt_error:
+    TELEGRAM_PRIVATE_RPT_COVER_REGISTERED = False
+    print("Private RPT school cover unavailable:",
+          type(_private_rpt_error).__name__, flush=True)
