@@ -46,6 +46,7 @@ def request_native_rph(data, fmt, *, opener=None):
         raise NativeRPHUnavailable("Telegram RPH layout unavailable")
     body={
         "subject":data["subject"],
+        "component":(data["selection"].split("-")[2] if data["subject"]=="PJPK" else None),
         "year":data["year"],
         "lesson":data["lesson"],
         "unit":data["unit"],
