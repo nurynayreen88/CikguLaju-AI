@@ -35,13 +35,19 @@ def check() -> None:
     assert sorted(data["years"]) == ["2", "3", "4", "5", "6"]
     for y in range(2, 7):
         src = data["years"][str(y)]
-        assert src["provisional_rph_count"] == 1
+        assert src["provisional_rph_count"] == 6
         assert src["dskp"]["url"].startswith("https://")
         assert src["textbook"]["url"].startswith("https://")
         assert src["rpt_2026"].startswith("https://")
         assert src["textbook"]["source_page_verified"] is False
-        p = SUBJECT / f"year{y}" / "lesson_001.md"
-        txt = p.read_text(encoding="utf-8")
+        for lesson_num in range(1, 7):
+            p = SUBJECT / f"year{y}" / f"lesson_{lesson_num:03d}.md"
+            txt = p.read_text(encoding="utf-8")
+            if lesson_num > 1:
+                assert "DRAF" in txt and "BELUM READY" in txt
+                assert all(s in txt for s in ("Set induksi", "Aktiviti 1", "Aktiviti 2", "Penutup", "PBD"))
+                assert "muka surat" in txt.lower() or "halaman" in txt.lower()
+                continue
         assert f"Bahasa Arab Tahun {y}" in txt
         assert "DSKP SK/SP:** 1.1 / 1.1.1" in txt
         assert all(section in txt for section in REQUIRED), p
@@ -53,7 +59,7 @@ def check() -> None:
     assert len(data["years"]["5"]["textbook_units_confirmed"]) == 4
     assert data["years"]["3"]["textbook"]["text_extractable"] is False
     assert data["years"]["6"]["dskp"]["text_extractable"] is False
-    print("BA Year 2–6: 5 source entries / 5 draft first-PdP checks passed.")
+    print("BA Year 2–6: 5 source entries / 30 draft first-six-PdP checks passed.")
     print("RELEASE BLOCKED: 0 final-ready; individual textbook/DSKP/RPT evidence outstanding.")
 
 

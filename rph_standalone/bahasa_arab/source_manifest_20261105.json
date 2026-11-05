@@ -25,7 +25,7 @@
       "rpt_2026": "https://anyflip.com/zxzlm/jffk/basic",
       "unit_1": "هيا نتعارف",
       "textbook_units_confirmed": [],
-      "provisional_rph_count": 1
+      "provisional_rph_count": 6
     },
     "3": {
       "dskp": {
@@ -43,7 +43,8 @@
       "rpt_2026": "https://anyflip.com/zxzlm/vmip/basic",
       "unit_1": "تفضل إلى الفصل",
       "textbook_units_confirmed": [],
-      "provisional_rph_count": 1
+      "provisional_rph_count": 6,
+      "unit_4_corrected": "الزمان"
     },
     "4": {
       "dskp": {
@@ -82,7 +83,7 @@
           "printed_pages": "85-112"
         }
       ],
-      "provisional_rph_count": 1
+      "provisional_rph_count": 6
     },
     "5": {
       "dskp": {
@@ -121,14 +122,15 @@
           "printed_pages": "85-112"
         }
       ],
-      "provisional_rph_count": 1
+      "provisional_rph_count": 6
     },
     "6": {
       "dskp": {
         "title": "DSKP KSSR Semakan Bahasa Arab Tahun 6 (sumber panitia sekolah KPM)",
         "url": "https://sites.google.com/moe-dl.edu.my/ba2k26/dokumen-standard-kurikulum/dskp-mata-pelajaran-terkini",
         "text_extractable": false,
-        "note": "Pautan PDF ditemui, tetapi kandungan belum disemak halaman demi halaman"
+        "note": "Sumber DSKP KSSR Semakan Tahun 6 tambahan boleh dibaca melalui teks AnyFlip; dokumen asal dari panitia sekolah belum diaudit sepenuhnya.",
+        "secondary_text_reference": "https://anyflip.com/bpvwr/huxb/basic"
       },
       "textbook": {
         "title": "GuruBesar_BukuTeks_Bahasa_Arab_T6.pdf",
@@ -139,7 +141,7 @@
       "rpt_2026": "https://anyflip.com/zxzlm/bmaa/basic",
       "unit_1": "حياتنا أجمل بالنظافة",
       "textbook_units_confirmed": [],
-      "provisional_rph_count": 1
+      "provisional_rph_count": 6
     }
   },
   "mandatory_release_gates": [
@@ -150,5 +152,6 @@
     "Penjana Telegram/Web menggunakan versi dan kandungan sama",
     "Ujian integrasi, hash, FK/orphan dan tiada penggantian data sedia ada",
     "Kelulusan manual individu dan pengaktifan hanya selepas CI lulus"
-  ]
+  ],
+  "stage_progress_note": "30/30 PdP 001–006 ditulis sebagai draf permulaan Unit 1 (6 setiap tahun); tidak menandakan lulus DSKP/BT per halaman atau RPT 2027 siap."
 }
