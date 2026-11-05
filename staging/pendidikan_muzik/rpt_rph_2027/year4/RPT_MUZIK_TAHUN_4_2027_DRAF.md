@@ -16,8 +16,8 @@
 | 09 | 28/02–04/03 | 01/03–05/03 | BUNGA GERGASI | 2.1.4 | 40 |
 | 10 | 14/03–18/03 | 15/03–19/03 | BUNGA GERGASI | 2.2.1, 2.2.2 | 42 |
 | 11 | 21/03–25/03 | 22/03–26/03 | BUNGA GERGASI | 2.3.1 | 44 |
-| 12 | 28/03–01/04 | 29/03–02/04 | Projek Seni Muzik 1 | 5.1.1 | — |
-| 13 | 04/04–08/04 | 05/04–09/04 | Projek Seni Muzik 1 | 5.1.2, 5.1.3 | — |
+| 12 | 28/03–01/04 | 29/03–02/04 | Projek Seni Muzik 1 | 5.1.1 | 4-5 |
+| 13 | 04/04–08/04 | 05/04–09/04 | Projek Seni Muzik 1 | 5.1.2, 5.1.3 | 4-5 |
 | 14 | 11/04–15/04 | 12/04–16/04 | SECAWAN KOPI MANIS | 4.2.1 | 50-51 |
 | 15 | 18/04–22/04 | 19/04–23/04 | SECAWAN KOPI MANIS | 2.3.1 | 52-53 |
 | 16 | 25/04–29/04 | 26/04–30/04 | SECAWAN KOPI MANIS | 2.3.1 | 52-53 |
@@ -29,9 +29,9 @@
 | 22 | 20/06–24/06 | 21/06–25/06 | HELO, HELO APA KHABAR? | 2.4.1, 2.4.2 | 78 |
 | 23 | 27/06–01/07 | 28/06–02/07 | HELO, HELO APA KHABAR? | 1.1.3, 2.2.1 | 80 |
 | 24 | 04/07–08/07 | 05/07–09/07 | HELO, HELO APA KHABAR? | 3.1.1, 3.1.2, 3.1.3 | 82 |
-| 25 | 11/07–15/07 | 12/07–16/07 | Projek Seni Muzik 2 | 5.1.1 | — |
-| 26 | 18/07–22/07 | 19/07–23/07 | Projek Seni Muzik 2 | 5.1.2, 5.1.3 | — |
-| 27 | 25/07–29/07 | 26/07–30/07 | Projek Seni Muzik 2 | 5.1.2, 5.1.3 | — |
+| 25 | 11/07–15/07 | 12/07–16/07 | Projek Seni Muzik 2 | 5.1.1 | 54-55 |
+| 26 | 18/07–22/07 | 19/07–23/07 | Projek Seni Muzik 2 | 5.1.2, 5.1.3 | 54-55 |
+| 27 | 25/07–29/07 | 26/07–30/07 | Projek Seni Muzik 2 | 5.1.2, 5.1.3 | 54-55 |
 | 28 | 01/08–05/08 | 02/08–06/08 | KOTA CERIA | 2.1.3, 2.3.1 | 90 |
 | 29 | 08/08–12/08 | 09/08–13/08 | KOTA CERIA | 2.2.1 | 92 |
 | 30 | 15/08–19/08 | 16/08–20/08 | KOTA CERIA | 2.1.1 | 94 |
@@ -44,3 +44,6 @@
 **Nota penting:** DSKP memperuntukkan dua siri Projek Seni Muzik setahun. PdP 34–35 yang dilabel Projek 3 oleh RPT sumber lama kini dibezakan sebagai cadangan pengukuhan/pentaksiran, bukan projek rasmi. Data sumber asal disimpan dalam manifest untuk jejak audit.
 
 *Halaman buku teks hanya rujukan sumber RPT lama kecuali rekod Tahun 4 yang mempunyai `source_book_content_page_checked=true` untuk enam PdP. Fail audio belum disahkan, tarikh 2027 belum disahkan penuh.
+
+
+**Audit projek (6 November 2026):** Buku Kesenian Tahun 4 DBP 2019 menyenaraikan Projek Kesenian Penggal Satu halaman 4–5 serta Penggal Dua halaman 54–55. Aktiviti projek gabungan disesuaikan kepada RPH muzik sahaja, tanpa menggantikan kod SP DSKP. PdP 34–35 kekal cadangan pengukuhan dan bukan Projek 3. Semua masih DRAF.

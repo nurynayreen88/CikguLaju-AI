@@ -1,34 +1,30 @@
 # RPH PENDIDIKAN MUZIK TAHUN 4 — PdP 12
 
-**Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** Projek Seni Muzik 1  
-**Bidang:** Projek Seni Muzik  
-**SK / SP (RPT sumber):** 5.1.1
-**Tempoh cadangan:** 30 minit  
+**Kelas:** __________  **Tarikh:** __________  **Masa:** __________
+**Unit/Tajuk:** Projek Seni Muzik 1
+**Bidang:** Projek Kesenian Penggal Satu — Perancangan Persembahan Muzik
+**SK / SP (sumber RPT/DSKP Muzik, dikekalkan untuk audit):** 5.1.1
+**Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Mengambil bahagian dalam persembahan muzik dan memenuhi sekurang-kurangnya 3 daripada 4 item senarai semak.
+**Objektif:** Membentuk kumpulan dan merancang persembahan nyanyian Unit 1–5 dengan empat komponen: lagu, peranan, jadual latihan dan alat.
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Kriteria kejayaan:** Murid melengkapkan tugasan projek dengan sekurang-kurangnya tiga daripada empat item senarai semak guru.
 
-**Set Induksi — 4 minit**  
-Guru menyemak contoh persembahan lalu bertanya peranan, disiplin dan penyediaan yang penting.
+**Set Induksi — 4 minit:** Guru membentangkan aktiviti projek Kesenian Penggal Satu dalam buku dan mengingatkan bahawa kita menumpukan bahagian muzik.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Kumpulan menyenaraikan peranan, turutan persembahan dan bahan yang diperlukan bagi Merancang persembahan muzik..
+**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid membentuk lima kumpulan sebagaimana arahan halaman 4–5, memilih satu lagu yang sudah dipelajari daripada Unit 1 hingga 5 serta menetapkan ketua dan peranan nyanyian, perkusi atau gerakan.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid membuat latihan atau persembahan mini; guru memberi maklum balas pada ketepatan, koordinasi dan pengurusan alat.
+**Aktiviti 2 — Pelaksanaan dan aplikasi (10 minit):** Kumpulan menyusun rancangan ringkas untuk persembahan muzikal, termasuk jadual latihan, alat yang diperlukan dan cara mengawal volume supaya nyanyian dapat didengar; kumpulan membentangkan pelan kepada guru.
 
-**Pengukuhan & Penilaian — 6 minit**  
-Senarai semak: peranan, disiplin, kejelasan persembahan dan refleksi ringkas.
+**Pengukuhan dan Penilaian — 6 minit:** Semak empat aspek perancangan: lagu Unit 1–5, pembahagian peranan, senarai alat dan jadual latihan.
 
-**Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+**Penutup — 2 minit:** Setiap ketua menyatakan satu perkara yang perlu disediakan sebelum persembahan. Guru merekod pemerhatian PBD.
 
-**Bahan:** Alat persembahan selamat, skor lagu/gerak dan senarai semak kumpulan.  
-**Rujukan sumber:** Halaman buku teks belum tersedia untuk pengesahan. Audio/trek belum dipadankan.
+**Bahan:** Buku Kesenian Tahun 4 halaman 4–5, senarai semak dan kad peranan.
 
-**Catatan pelaksanaan / pemulihan:** __________________________________________
+**Rujukan:** Buku Teks Pendidikan Kesenian Tahun 4 SK DBP 2019, Projek Penggal Satu, halaman 4-5; https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view. Projek Kesenian menggabungkan seni visual dan persembahan muzikal; RPH ini khusus muzik, bukan dakwaan seluruh projek gabungan. Kod SP Muzik asal tidak ditimpa oleh kod buku Kesenian. **Nombor audio bercetak bukan bukti fail sebenar; tiada audio diaktifkan atau lirik lagu dimuat naik.**
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Catatan pemulihan/refleksi:** ____________________________________________
+
+**Audit:** Y4_PROJEK_BUKU_SEMAKAN_TEKSTUAL_20261106; semua kekal DRAF; skor visual, kod DSKP, Word/PDF, 2027 tarikh/cuti serta Telegram/Web belum disahkan.

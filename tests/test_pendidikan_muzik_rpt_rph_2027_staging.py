@@ -106,7 +106,7 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
         expected = {
             2: (33, set(range(1, 34))),
             3: (33, set(range(1, 34))),
-            4: (22, {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 17, 18, 19, 20, 21, 22, 23, 24, 28, 29, 30}),
+            4: (27, set(range(1, 14)) | set(range(17, 31))),
             5: (35, set(range(1, 36))),
             6: (33, set(range(1, 34))),
         }
@@ -135,7 +135,7 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
         self.assertEqual(year3["pdps"][5]["source_rpt_original_page"], "20")
         self.assertEqual(year3["pdps"][9]["audio"], "39–40")
         self.assertEqual(year3["pdps"][9]["source_rpt_original_audio"], "36-38")
-        self.assertEqual({r["pdp"] for r in year3["pdps"] if r.get("source_book_text_crosscheck")}, set(range(1, 12)) | set(range(14, 24)) | set(range(27, 34)))
+        self.assertEqual({r["pdp"] for r in year3["pdps"] if r.get("source_book_text_crosscheck")}, set(range(1, 34)))
         self.assertEqual(year3["pdps"][26]["audio"], "65")
         self.assertEqual(year3["pdps"][26]["source_rpt_original_audio"], "69-70")
         self.assertEqual(year3["pdps"][27]["page"], "81")
@@ -150,6 +150,11 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
         self.assertFalse(year3["textbook_verified"])
         year4 = json.loads((MUSIC / "rpt_rph_2027" / "year4" / "pdp_manifest.json").read_text(encoding="utf-8"))
         self.assertEqual(year4["partial_page_content_check_count"], 6)
+        self.assertEqual(year4["partial_text_crosscheck_count"], 27)
+        self.assertTrue(all(year4["pdps"][i-1].get("source_book_project_evidence") for i in (12,13,25,26,27)))
+        self.assertEqual([year4["pdps"][i-1]["page"] for i in (12,13,25,26,27)], ["4-5","4-5","54-55","54-55","54-55"])
+        self.assertFalse(year4["pdps"][33].get("source_book_text_crosscheck", False))
+        self.assertFalse(year4["pdps"][34].get("source_book_text_crosscheck", False))
         y5 = json.loads((MUSIC / "rpt_rph_2027" / "year5" / "pdp_manifest.json").read_text(encoding="utf-8"))
         self.assertEqual(y5["partial_textbook_crosscheck_count"], 35)
         self.assertIn("Da Dum", (MUSIC / "rpt_rph_2027" / "year5" / "rph_pdp_01.md").read_text(encoding="utf-8"))

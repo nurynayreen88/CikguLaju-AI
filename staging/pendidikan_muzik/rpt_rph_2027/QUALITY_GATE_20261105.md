@@ -152,3 +152,9 @@ PdP12,13,26,27 dirujuk kepada buku Tahun 6 halaman 44–45 dan 88–89. **33/35 
 
 ## Projek Tahun 3 — 6 Nov 2026
 PdP12–13 dan 24–26 diselaraskan dengan projek terpadu Kesenian Tahun3 halaman 4–5 dan 48–49; buku menyatakan aktiviti nyanyian, perkusi, boneka dan penilaian rakan. Tahun 3 **33/35**, keseluruhan **162/175**, baki **13**, semua belum FINAL READY.
+
+
+## 6 November 2026 — Projek Tahun 4 dan pembetulan CI Tahun 3
+- Projek PdP12–13 halaman 4–5, PdP25–27 halaman 54–55 diselaraskan dengan buku Kesenian Tahun 4 DBP2019. Kekal adaptasi muzik daripada projek Kesenian gabungan.
+- CI Tahun 3 gagal kerana satu ujian masih menggunakan set lama sebelum penambahan lima RPH projek PdP12,13,24–26. **Hanya asersi ujian dikemaskini mengikut manifest dan bukti**, tanpa menurunkan standard semakan.
+- Tahun 4: 27 semakan teks + 6 kandungan halaman diperiksa = **33/35**. Keseluruhan **167/175**, baki **8** hanyalah PdP34–35 pengukuhan cadangan Tahun2,3,4,6. Tiada bahan FINAL READY; skor visual, fail audio dan cetakan belum disahkan.
