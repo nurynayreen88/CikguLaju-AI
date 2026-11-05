@@ -5,10 +5,10 @@
   "pr_url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/336",
   "completed": {
     "unit_indexes": 20,
-    "draft_rph": 72,
+    "draft_rph": 90,
     "unit2_4_activity_banks": 15,
     "draft_crosswalk": 60,
-    "source_page_draft_reviewed": 72,
+    "source_page_draft_reviewed": 90,
     "preliminary_year6_page_candidates": 0,
     "one_page_A4_docx_pdf_ci_verified": true,
     "render_check_ci": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42115776091",
@@ -17,9 +17,11 @@
     "year6_text_source_reviewed": 12,
     "year2_text_source_reviewed": 12,
     "year2_sp_book_ocr_ambiguous": 4,
-    "year4_unit2_candidate_rph": 12,
+    "year4_unit2_candidate_rph": 16,
     "year4_unit2_page_text_covered_range": "30–48",
-    "verified_a4_render_for_new_12": false
+    "verified_a4_render_for_new_12": false,
+    "year4_unit3_candidate_rph": 14,
+    "verified_a4_render_for_all_90": false
   },
   "release_checks": [
     {
@@ -35,17 +37,17 @@
     {
       "id": "full_pdp_coverage",
       "status": "BLOCKED",
-      "detail": "Unit1: 12 RPH drafts per year (60), plus Year4 Unit2: 12 additional provisional PdP013–024 covering printed pages 30–48 only. Remaining 14 units have no RPH individually; Year4 Unit2 pages 49–56 remain unmapped. Annual PdP totals unverified."
+      "detail": "90 proposed RPH in staging: 60 Unit1 across Y2–6, 16 Y4 Unit2 and 14 Y4 Unit3. Unit4 Y4 and Units2–4 Y2,3,5,6 have no individual RPH. No verified annual PdP totals; unit 2/3 sampled, not manually complete."
     },
     {
       "id": "sk_sp",
       "status": "PARTIAL",
-      "detail": "72 candidate RPH codes associated with source text. Four Year2 SP prints remain ambiguous; 12 new Year4 Unit2 source-page codes checked at text level. No teacher approvals or 2027 RPT sequence signoff."
+      "detail": "90 draft RPH SP codes match sampled book exercises and DSKP candidate skills at text level; 4 Year2 printed-SP OCR identifiers unclear; no year-long RPT-mapped/manual pedagogical approvals."
     },
     {
       "id": "textbook_page_to_pdp",
       "status": "PARTIAL",
-      "detail": "72 draft RPH carry printed-page textual source evidence (Year2–6 first 12 each, plus Year4 Unit2 12). Year4 Unit2 only partially covers book, and no visual or manual final validation completed."
+      "detail": "90 draft RPH contain page-text source references; 42 Y4 included. This does NOT confirm actual annual PdP order or detailed visual source proof."
     },
     {
       "id": "rpt_2027_group_A_B",
@@ -55,7 +57,7 @@
     {
       "id": "word_pdf_programmatic_a4",
       "status": "PASS_TECHNICAL_ONLY",
-      "detail": "Previous 60 DOCX/PDF one-page A4 passed. A4 render test for expanded 72 drafts is scheduled in CI; do not label 72 passed yet."
+      "detail": "60 DOCX+PDF passed previously; 72-document CI run pending, 90-document CI not yet passed. No assumption of successful 90-render until result."
     },
     {
       "id": "manual_pedagogic_approval",
@@ -70,7 +72,12 @@
     {
       "id": "year4_unit2_partial",
       "status": "PARTIAL",
-      "detail": "12 draft lessons 013–024 linked to textbook pages 30–48, but no approved annual RPT indexing and rest of Unit2 pages 49–56 unallocated."
+      "detail": "16 Y4 Unit2 RPH proposals sample pp30–56; unit lesson-count, every activity and RPT 2027 order still not approved."
+    },
+    {
+      "id": "year4_unit3_partial",
+      "status": "PARTIAL",
+      "detail": "14 Unit3 RPH proposals based on BT Year4 pp58–84, SP DSKP; unit session chronology, visual checks and annual RPT 2027 still unapproved."
     }
   ],
   "years": [
@@ -104,15 +111,15 @@
       "year": 4,
       "units": 4,
       "unit1_draft_rph": 12,
-      "source_page_reviewed_rph": 24,
+      "source_page_reviewed_rph": 42,
       "preliminary_mapping_only": 0,
       "unwritten_units": [
-        3,
         4
       ],
-      "textbook_issue": "Year4 Unit1 12 source-reviewed drafts plus 12 Unit2 provisional drafts cover BT pp30–48 only; pages 49–56 remain, exact annual RPT sequence and manual pedagogical signoff not confirmed.",
+      "textbook_issue": "Year4 42 draft RPH: Unit1 12 source reviewed, Unit2 16 sample-based proposals h30–56, Unit3 14 sample-based proposals h58–84. Unit4 absent; annual RPT sequence not verified, no individual teacher approvals.",
       "incomplete_units": [
-        2
+        2,
+        3
       ]
     },
     {

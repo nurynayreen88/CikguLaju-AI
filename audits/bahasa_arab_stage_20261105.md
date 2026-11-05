@@ -95,3 +95,8 @@ Semua 12 draf Tahun 3 Unit 1 menerima catatan halaman bercetak Buku Teks DBP/KPM
 - `rph_standalone/bahasa_arab/year4/lesson_013.md` hingga `lesson_024.md` disediakan berdasarkan latihan Buku Teks asal DBP 2019, Unit 2 **من في المدرسة؟** halaman bercetak 30,30,31,31,32,32,34,36,38,42,44,48 dan kod SP pada setiap latihan.
 - Setiap RPH mempunyai set induksi, aktiviti utama (tindakan guru+murid), BBM, PBD, penutup, refleksi dan sumber. Fail peta cadangan `rpt_2027/bahasa_arab/year4_unit2_pdp013_024_DRAF.csv`; bukti `audits/bahasa_arab_y4_unit2_pdp013_024_text_source_audit_20261106.json`.
 - **Penjadualan 013–024 ialah cadangan**, bukan jumlah PdP Unit 2 rasmi. Halaman 49–56 masih belum dipetakan. Keseluruhan kini **72 RPH draf**, 15 bank unit dan **0 FINAL READY**.
+
+## 6 Nov 2026 — Tahun 4 Unit 2 sambungan, Unit 3 awal
+- 4 RPH cadangan PdP025–028 Unit2 menggunakan latihan Buku Teks asal h49 (dialog), h53 (permainan susun ayat), h54 (persembahan lisan), h56 (diorama). Jumlah Unit2 kini 16 draf yang merujuk halaman tersebar 30–56; **tidak bermaksud unit diluluskan RPT 2027**.
+- 14 RPH cadangan PdP029–042 Unit3 **أحب مدرستي** bersumber latihan h58,59,60,62,64,66,70,72,76,82,84. Kemahiran dengar/baca/tulis, kedudukan sekolah dan projek. Projek ialah aktiviti murid, bukan salinan buku.
+- Fail peta `rpt_2027/bahasa_arab/year4_unit2_tail_unit3_pdp025_042_DRAF.csv` dan audit `audits/bahasa_arab_y4_unit2_tail_unit3_pdp025_042_text_source_audit_20261106.json`. **90 RPH draf** Tahun2–6, tiada FINAL READY. Langkah 2027 A/B, semakan visual dan kelulusan guru masih belum dibuat.

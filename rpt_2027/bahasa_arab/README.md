@@ -63,3 +63,8 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 - 12 RPH baharu draf PdP 013–024 berdasarkan buku asal 2019 dan DSKP Tahun 4: dengar/kenal ال, kosa kata warga sekolah, baca/tulis kata, dialog dan ayat bersambung.
 - Lihat `rpt_2027/bahasa_arab/year4_unit2_pdp013_024_DRAF.csv` dan `audits/bahasa_arab_y4_unit2_pdp013_024_text_source_audit_20261106.json`.
 - Unit 2 masih SEPARA; halaman 49–56 dan agihan tahunan belum diluluskan. Kini **72 RPH draf**, bukannya 72 bahan READY. Ujian Word/PDF perlu dijalankan semula untuk 72 fail.
+
+## Tahun 4 Unit 2/3 baharu (6 Nov 2026)
+- PdP025–028 Unit2 dan 029–042 Unit3 ditambah berdasarkan Buku Teks DBP/KPM Tahun4 edisi 2019, dengan SK/SP dan halaman spesifik.
+- Unit2 menjadi 16 cadangan PdP; Unit3 menjadi 14 cadangan PdP. Agihan **tidak semestinya** jumlah sesi sebenar RPT 2027. Unit4 belum ada RPH individu.
+- Jumlah **90 RPH DRAF**; QA struktur diselaraskan dan A4 PDF/Word perlu lulus 90 dokumen; **0 FINAL READY**.
