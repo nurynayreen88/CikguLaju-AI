@@ -17,14 +17,16 @@ Murid menyiapkan tugasan **SP 9.1** (Menyenaraikan contoh menjaga nama baik kelu
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Seorang rakan menyebarkan cerita yang tidak benar mengenai keluarga**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Tugasan 9.1:** Guru membentangkan situasi **Seorang rakan menyebarkan cerita yang tidak benar mengenai keluarga** dan menyediakan kad/gambar yang relevan dengan unit buku teks **Berani Demi Nama Baik Keluarga** (mula m/s 57; halaman aktiviti belum disahkan). Murid melaksanakan arahan **“Menyenaraikan contoh menjaga nama baik keluarga.”** dengan menghasilkan **senarai tiga contoh atau perkara yang tepat**; pasangan menyemak fakta, bukan hanya memilih tindakan baik atau buruk. Guru merekod satu respons individu.
+**Aktiviti 1 (20 minit) — Berpandukan buku teks:** Guru memaparkan tiga gambar Unit 9 m/s 57: tidak meniru suara orang, memulangkan barang dan tidak mengambil milik orang. Murid menyenaraikan contoh berani menjaga nama baik keluarga dan menjelaskan siapa yang dilindungi (SP 9.1).
 
-**Aktiviti 2 (20 minit) — Tugasan 9.2:** Guru menukar sudut situasi kepada tindakan atau akibat yang boleh diperhatikan. Murid melaksanakan arahan **“Menjelaskan cara menjaga nama baik keluarga.”** dan menyediakan **penjelasan dalam dua ayat serta satu contoh** berdasarkan contoh yang relevan dengan unit. Murid membentangkan hasil dan memperbaiki jawapan selepas pertanyaan lanjut guru.
+**Aktiviti 2 (20 minit) — Berpandukan buku teks:** Guru menunjukkan dialog Lini dan Lina m/s 58 serta surat ayah pada m/s 59. Murid menerangkan dua cara berani menegur salah laku tanpa mengaibkan orang lain dan menyokong cara itu dengan sebab (SP 9.2).
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Guru mengutip hasil individu: **senarai tiga contoh atau perkara yang tepat** untuk SP 9.1 dan **penjelasan dalam dua ayat serta satu contoh** untuk SP 9.2; semak ketepatan makna, bukti dan kaitan dengan nilai **Keberanian**. Murid membetulkan satu jawapan selepas maklum balas.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menyemak tiga contoh dan dua cara menjaga nama baik keluarga (SP 9.1–9.2); murid memilih satu nasihat yang selamat.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **keberanian**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — unit bermula m/s 57 (PDF 66); halaman aktiviti khusus belum dipadankan; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 9, m/s 57–59 (PDF 66–68); dua aktiviti disesuaikan dengan ilustrasi, cerita dan tugasan sumber asal untuk PdP 025.
+
+**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — Unit 9, m/s 57–59 (PDF 66–68) disahkan bagi PdP ini; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

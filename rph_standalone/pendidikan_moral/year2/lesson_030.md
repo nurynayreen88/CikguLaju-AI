@@ -17,14 +17,16 @@ Murid memperagakan tindakan berdasarkan **10.5: Mengamalkan sikap jujur terhadap
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Murid menjumpai wang keluarga yang tertinggal di atas meja**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Rancang lakonan:** Guru membahagikan watak pelaku, penerima dan pemerhati. Murid merangka ayat serta langkah tindakan selamat untuk **menyampaikan kebenaran dengan jujur**. Murid menyemak persediaan berdasarkan SP 10.5.
+**Aktiviti 1 (20 minit) — Aktiviti halaman buku teks:** Guru menunjukkan slaid 'Kejujuran Amalan Keluarga' m/s70–71 dan pilihan yang ada. Murid menyusun dua ayat dialog meminta izin serta mengakui kesilapan dalam situasi keluarga (SP10.5). Murid menyerahkan bukti jawapan individu; Guru menyemak ketepatan.
 
-**Aktiviti 2 (20 minit) — Lakon, semak, ulang:** Murid memperagakan situasi selama 60–90 saat, rakan memerhati dengan senarai semak, kemudian murid mengulang tindakan selepas maklum balas. Murid menetapkan satu amalan yang boleh dilaksanakan dengan selamat di sekolah atau rumah.
+**Aktiviti 2 (20 minit) — Aktiviti halaman buku teks:** Guru memaparkan lapan pernyataan Uji Diri m/s72, termasuk memulangkan wang, tidak membohongi keluarga dan mengaku kesilapan. Murid menanda perlakuan jujur, kemudian melakonkan dua tindakan tanpa menipu atau menyembunyikan kesalahan (SP10.5). Murid menyerahkan bukti jawapan individu; Guru menyemak ketepatan.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak senarai pemerhatian perlakuan bagi SP 10.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru merekod dua perlakuan yang diperagakan dan ketepatan Uji Diri m/s72; satu lakonan belum membuktikan amalan rutin. Murid membuat pembetulan selepas maklum balas Guru.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **kejujuran**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — halaman belum dipadankan; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 10, m/s 71–72 (PDF 80–81), padanan tugasan dan ilustrasi visual asal bagi PdP 030. Aktiviti disesuaikan, bukan petikan buku.
+
+**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — aktiviti Unit 10 m/s 71–72 (PDF 80–81) disahkan khusus untuk PdP 30; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

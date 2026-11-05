@@ -17,14 +17,16 @@ Murid menyiapkan tugasan **SP 11.1** (Menyenaraikan contoh sikap rajin yang bole
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Sebuah keluarga perlu mengemas ruang tamu selepas majlis makan**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Tugasan 11.1:** Guru membentangkan situasi **Sebuah keluarga perlu mengemas ruang tamu selepas majlis makan** dan menyediakan kad/gambar yang relevan dengan unit buku teks **Sikap Rajin Amalan Keluarga** (mula m/s 73; halaman aktiviti belum disahkan). Murid melaksanakan arahan **“Menyenaraikan contoh sikap rajin yang boleh dilakukan terhadap ahli keluarga.”** dengan menghasilkan **senarai tiga contoh atau perkara yang tepat**; pasangan menyemak fakta, bukan hanya memilih tindakan baik atau buruk. Guru merekod satu respons individu.
+**Aktiviti 1 (20 minit) — Aktiviti halaman buku teks:** Guru memaparkan gambar Richie membantu keluarga memetik buah, bercucuk tanam dan menangkap ikan m/s73 serta cerita Kacuma bercucuk tanam m/s74–75. Murid menyenaraikan tiga contoh rajin dalam keluarga (SP11.1). Murid menyerahkan bukti jawapan individu; Guru menyemak ketepatan.
 
-**Aktiviti 2 (20 minit) — Tugasan 11.2:** Guru menukar sudut situasi kepada tindakan atau akibat yang boleh diperhatikan. Murid melaksanakan arahan **“Menjelaskan cara bersikap rajin terhadap ahli keluarga.”** dan menyediakan **penjelasan dalam dua ayat serta satu contoh** berdasarkan contoh yang relevan dengan unit. Murid membentangkan hasil dan memperbaiki jawapan selepas pertanyaan lanjut guru.
+**Aktiviti 2 (20 minit) — Aktiviti halaman buku teks:** Guru menggunakan urutan Kacuma menggembur tanah, menanam sayur, membaja dan menjual hasil m/s74–75. Murid menjelaskan dua cara rajin secara teratur berserta langkah (SP11.2). Murid menyerahkan bukti jawapan individu; Guru menyemak ketepatan.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Guru mengutip hasil individu: **senarai tiga contoh atau perkara yang tepat** untuk SP 11.1 dan **penjelasan dalam dua ayat serta satu contoh** untuk SP 11.2; semak ketepatan makna, bukti dan kaitan dengan nilai **Kerajinan**. Murid membetulkan satu jawapan selepas maklum balas.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menyemak tiga amalan rajin dan dua cara daripada kisah Kacuma. Murid membuat pembetulan selepas maklum balas Guru.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **kerajinan**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — unit bermula m/s 73 (PDF 82); halaman aktiviti khusus belum dipadankan; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 11, m/s 73–75 (PDF 82–84), padanan tugasan dan ilustrasi visual asal bagi PdP 031. Aktiviti disesuaikan, bukan petikan buku.
+
+**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — aktiviti Unit 11 m/s 73–75 (PDF 82–84) disahkan khusus untuk PdP 31; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

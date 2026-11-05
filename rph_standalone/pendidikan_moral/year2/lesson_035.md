@@ -17,14 +17,16 @@ Murid menghuraikan atau menilai berdasarkan **12.3: Menjelaskan kesan bekerjasam
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Sekeluarga merancang gotong-royong membersihkan halaman**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Peta akibat:** Guru beri dua penghujung kepada situasi. Murid bina peta **pilihan → kesan → alasan**, merujuk SP 12.3 (**Menjelaskan kesan bekerjasama dan tidak bekerjasama dengan ahli keluarga.**). Bandingkan akibat kepada watak yang terlibat dan bincang soalan: **Bagaimana memastikan setiap orang mengambil bahagian?**
+**Aktiviti 1 (20 minit) — Bukti tugasan buku teks:** Guru memaparkan 'Poster Kerjasama' m/s84 dan lirik 'Kerjasama Keluarga' m/s85. Murid membandingkan dua kesan apabila keluarga bekerjasama dengan dua kesan jika tugas diabaikan (SP12.3). Guru menyemak satu hasil individu daripada murid.
 
-**Aktiviti 2 (20 minit) — Dialog dan emosi:** Murid menjalankan dialog ringkas dua versi, menyatakan kesan kedua-duanya dan menulis satu ayat perspektif pihak yang terlibat untuk SP 12.4 (**Menzahirkan perasaan apabila melaksanakan tugasan bersama-sama keluarga.**). Guru semak hubungan alasan, emosi dan nilai.
+**Aktiviti 2 (20 minit) — Bukti tugasan buku teks:** Guru membimbing murid mengisi jadual m/s85 tentang cara bekerjasama serta perasaan selepas bekerjasama. Murid menzahirkan satu perasaan bersebab berdasarkan aktiviti keluarga (SP12.4). Guru menyemak satu hasil individu daripada murid.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak justifikasi serta dua kesan bagi SP 12.3 dan ayat perasaan yang sesuai bagi SP 12.4. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menilai peta dua kesan dan satu ayat perasaan (SP12.3–12.4); murid membetulkan alasan yang lemah. Murid membetulkan respons selepas maklum balas Guru.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **kerjasama**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — halaman belum dipadankan; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 12 m/s 84–85, PDF 93–94; aktiviti disesuaikan daripada ilustrasi, cerita atau latihan asal untuk PdP 035.
+
+**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — halaman aktiviti Unit 12, m/s 84–85 (PDF 93–94), disahkan bagi PdP 35; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
