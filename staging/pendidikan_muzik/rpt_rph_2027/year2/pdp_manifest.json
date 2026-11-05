@@ -4,7 +4,7 @@
   "academic_year": 2027,
   "source_doc_id": "1GHbsB2aL-KAXu3XyNszoT_htAMpDZIs-",
   "source_type": "RPT_2025_26",
-  "status": "DRAF_STAGING_NO_LIVE",
+  "status": "DRAF_STAGING_11_TAHUN2_BOOK_TEXT_MATCHED",
   "textbook_verified": false,
   "audio_verified": false,
   "rph_word_pdf_verified": false,
@@ -26,7 +26,14 @@
         "week": 1,
         "groupA": "04/01–07/01",
         "groupB": "04/01–08/01"
-      }
+      },
+      "focus_pdp": "Kami Suka Sayur — nyanyian tempo cepat dan lambat",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SINGOFF",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic",
+      "source_book_audio_numbers_printed": "1–4",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISUSUN_SP"
     },
     {
       "pdp_id": "MZ-Y2-02",
@@ -45,7 +52,14 @@
         "week": 2,
         "groupA": "10/01–14/01",
         "groupB": "11/01–15/01"
-      }
+      },
+      "focus_pdp": "Tempo cepat dan lambat — permainan kad Arnab dan Kura-kura",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SINGOFF",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic",
+      "source_book_audio_numbers_printed": "5–10",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISUSUN_SP"
     },
     {
       "pdp_id": "MZ-Y2-03",
@@ -63,7 +77,14 @@
         "week": 3,
         "groupA": "17/01–21/01",
         "groupB": "18/01–22/01"
-      }
+      },
+      "focus_pdp": "Bunyi di Sekelilingku — alat muzik improvisasi",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SINGOFF",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic",
+      "source_book_audio_numbers_printed": "Tiada audio khusus pada halaman ini",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISUSUN_SP"
     },
     {
       "pdp_id": "MZ-Y2-04",
@@ -82,7 +103,14 @@
         "week": 4,
         "groupA": "24/01–28/01",
         "groupB": "25/01–29/01"
-      }
+      },
+      "focus_pdp": "Riang Bernyanyi — postur duduk/berdiri dan pic",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SINGOFF",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic",
+      "source_book_audio_numbers_printed": "11–13",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISUSUN_SP"
     },
     {
       "pdp_id": "MZ-Y2-05",
@@ -101,7 +129,14 @@
         "week": 5,
         "groupA": "31/01–04/02",
         "groupB": "01/02–05/02"
-      }
+      },
+      "focus_pdp": "Tepuk Ikon — corak ta, ti-ti, sa",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SINGOFF",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic",
+      "source_book_audio_numbers_printed": "14–16",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISUSUN_SP"
     },
     {
       "pdp_id": "MZ-Y2-06",
@@ -119,7 +154,14 @@
         "week": 6,
         "groupA": "07/02–11/02",
         "groupB": "08/02–12/02"
-      }
+      },
+      "focus_pdp": "Sukan Sekolah — senandung dan nyanyian pic",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SINGOFF",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic",
+      "source_book_audio_numbers_printed": "17–19",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISUSUN_SP"
     },
     {
       "pdp_id": "MZ-Y2-07",
@@ -139,7 +181,15 @@
         "week": 7,
         "groupA": "14/02–18/02",
         "groupB": "15/02–19/02"
-      }
+      },
+      "focus_pdp": "Irama Ciptaanku — kad ikon dan bunyi improvisasi",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SINGOFF",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic",
+      "source_book_audio_numbers_printed": "Tiada audio khas pada halaman 27; RPT lama menulis 17–19 bagi lagu halaman 26",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISUSUN_SP",
+      "source_rpt_audio_note": "RPT lama merujuk audio dari PdP bersebelahan; tiada audio khusus bagi aktiviti ciptaan/improvisasi ini."
     },
     {
       "pdp_id": "MZ-Y2-08",
@@ -159,7 +209,14 @@
         "week": 8,
         "groupA": "21/02–25/02",
         "groupB": "22/02–26/02"
-      }
+      },
+      "focus_pdp": "Jenis Melodi dan Tangga Melodi",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SINGOFF",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic",
+      "source_book_audio_numbers_printed": "20–22",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISUSUN_SP"
     },
     {
       "pdp_id": "MZ-Y2-09",
@@ -178,7 +235,14 @@
         "week": 9,
         "groupA": "28/02–04/03",
         "groupB": "01/03–05/03"
-      }
+      },
+      "focus_pdp": "Main Gasing — nyanyian tempo lagu",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SINGOFF",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic",
+      "source_book_audio_numbers_printed": "23–26",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISUSUN_SP"
     },
     {
       "pdp_id": "MZ-Y2-10",
@@ -196,7 +260,15 @@
         "week": 10,
         "groupA": "14/03–18/03",
         "groupB": "15/03–19/03"
-      }
+      },
+      "focus_pdp": "Eksplorasi bunyi bahan improvisasi",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SINGOFF",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic",
+      "source_book_audio_numbers_printed": "Tiada audio khusus halaman 35; RPT lama menyebut 27–28 milik aktiviti perkusi halaman 36",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISUSUN_SP",
+      "source_rpt_audio_note": "RPT lama merujuk audio dari PdP bersebelahan; tiada audio khusus bagi aktiviti ciptaan/improvisasi ini."
     },
     {
       "pdp_id": "MZ-Y2-11",
@@ -208,14 +280,25 @@
         "2.2.2",
         "2.2.3"
       ],
-      "page": "32-33",
+      "page": "36-37",
       "audio": "27-32",
       "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
       "rpt2027_slot": {
         "week": 11,
         "groupA": "21/03–25/03",
         "groupB": "22/03–26/03"
-      }
+      },
+      "source_rpt_original_page": "32-33",
+      "focus_pdp": "Main Gasing — ensembel skor ikon perkusi",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SINGOFF",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic",
+      "source_book_audio_numbers_printed": "27–32",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISUSUN_SP",
+      "flags": [
+        "RPT sumber lama merujuk 32–33 (aktiviti seni visual membuat gasing), sedangkan skor muzik/ensembel perkusi pada halaman 36–37; halaman telah diperbetulkan berasaskan teks buku."
+      ]
     },
     {
       "pdp_id": "MZ-Y2-12",
@@ -682,5 +765,8 @@
     }
   ],
   "dskp_projects_per_year": 2,
-  "deprecated_project3_reclassified_count": 2
+  "deprecated_project3_reclassified_count": 2,
+  "source_textbook_url": "https://anyflip.com/iawvx/mran/basic",
+  "source_textbook_edition": "Buku Teks Pendidikan Kesenian Tahun 2 SK KSSR Semakan",
+  "partial_textbook_crosscheck_count": 11
 }

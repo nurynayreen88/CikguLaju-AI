@@ -1,34 +1,33 @@
 # RPH PENDIDIKAN MUZIK TAHUN 2 — PdP 03
 
-**Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** KAMI SUKA SAYUR  
-**Bidang:** Kreativiti Muzik  
-**SK / SP (RPT sumber):** 3.1.1
-**Tempoh cadangan:** 30 minit  
-**Status:** DRAF STAGING — belum FINAL READY
+**Kelas:** __________  **Tarikh:** __________  **Masa:** __________
+**Unit/Tajuk:** KAMI SUKA SAYUR
+**SK / SP DSKP:** 3.1.1
+**Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — bukan FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Menghasilkan dan mempersembahkan satu corak irama/melodi ringkas yang memenuhi 3 kriteria rubrik.
+**Fokus:** Bunyi di Sekelilingku — alat muzik improvisasi
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Objektif:** Murid menghasilkan dua jenis bunyi menggunakan bahan improvisasi dan menjelaskan perbezaan bunyinya.
 
-**Set Induksi — 4 minit**  
-Guru menepuk corak empat detik; murid menyambung dengan corak yang berbeza sebagai respons.
+**Set induksi (4 minit):** Guru menunjukkan satu contoh bunyi atau ilustrasi dari unit KAMI SUKA SAYUR; murid memberi respons dan menyatakan pengalaman berkaitan.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru membimbing murid meneroka bunyi dan mencipta contoh berdasarkan Menghasilkan pelbagai bunyi menggunakan bahan improvisasi.. Murid menyusun empat kad corak/not.
+**Aktiviti 1 — Demonstrasi/eksplorasi (8 minit):** Guru menunjukkan bahan selamat seperti botol plastik, tin bertutup atau bekas berisi butiran dan membandingkan bunyi.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid mencipta satu corak atau frasa sendiri, menotasi dengan kad/ikon dan mempersembahkannya di hadapan pasangan.
+**Aktiviti 2 — Aplikasi dan amali (10 minit):** Kumpulan meneroka bahan tiupan, tali atau perkusi yang selamat, mencipta satu respons bunyi dan mengajuk bunyi kumpulan rakan.
 
-**Pengukuhan & Penilaian — 6 minit**  
-Semak 3 aspek: bilangan detik tepat, kesesuaian bunyi/not dan keupayaan mempersembahkan ciptaan.
+**Pengukuhan dan pentaksiran (6 minit):** Semak dua bunyi yang jelas, keselamatan bahan dan koordinasi respons kumpulan.
 
-**Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+**Penutup (2 minit):** Murid memperagakan satu kemahiran muzik dan menyatakan satu perkara yang boleh ditambah baik; guru membuat rekod PBD.
 
-**Bahan:** Kad ikon/not, alat perkusi atau rekoder mengikut SP, bahan improvisasi selamat.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 12-13; **belum disahkan pada halaman buku asal**. Audio/trek belum dipadankan.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 12-13; kad, instrumen atau bahan selamat yang diperlukan bagi aktiviti ini.
 
-**Catatan pelaksanaan / pemulihan:** __________________________________________
+**Bukti rujukan teks buku:** https://anyflip.com/iawvx/mran/basic. Nama lagu, fokus dan aktiviti dikenal pasti daripada salinan buku teks dalam talian. **Belum semakan imej setiap halaman dan ketepatan skor penuh.**
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Rujukan audio tercetak:** Tiada audio khusus pada halaman ini. **Fail audio sebenar/ID lagu belum disahkan; jangan aktifkan audio hanya berdasarkan nombor.**
+
+**Nota audit:**  Kod SP dalam Buku Teks Pendidikan Kesenian tidak semestinya sama dengan kod DSKP Pendidikan Muzik berdiri sendiri; gunakan kod DSKP yang direkodkan dan semak semula secara manual.
+
+**Refleksi/pemulihan:** ___________________________________________________
+
+**Kawalan penerbitan:** DRAF STAGING. Pelaksanaan dan Word/PDF satu halaman belum disahkan dalam penjana Telegram/Web sebenar.

@@ -1,9 +1,10 @@
 # RPT PENDIDIKAN MUZIK TAHUN 2 — 2027 (KUMPULAN A & B)
 
-**Sekolah:** __________ **Guru:** __________ **Status:** DRAF STAGING — belum FINAL READY.
-**Sumber:** DSKP KSSR Semakan 2017 Tahun 2 dan susunan PdP RPT lama. Slot A/B hanya cadangan, perlu semakan cuti negeri/gantian.
+**Sekolah:** __________  **Guru:** __________  
+**Status:** DRAF STAGING — bukan FINAL READY.  
+**Kurikulum:** DSKP Pendidikan Muzik Tahun 2 KSSR Semakan 2017. **Buku:** Pendidikan Kesenian Tahun 2 SK, https://anyflip.com/iawvx/mran/basic.
 
-| PdP | Slot A | Slot B | Unit / Tajuk | SP | BT m/s* |
+| PdP | Slot A | Slot B | Unit/Tajuk | SP | Buku teks m/s* |
 |---:|---|---|---|---|---|
 | 01 | 04/01–07/01 | 04/01–08/01 | KAMI SUKA SAYUR | 2.1.3, 2.1.4 | 10 |
 | 02 | 10/01–14/01 | 11/01–15/01 | KAMI SUKA SAYUR | 1.1.1, 1.1.3 | 11 |
@@ -15,7 +16,7 @@
 | 08 | 21/02–25/02 | 22/02–26/02 | SAYA JUARA | 1.1.1, 1.1.2, 1.1.4 | 28-29 |
 | 09 | 28/02–04/03 | 01/03–05/03 | PUSING GASING PUSING | 2.1.3, 2.1.4 | 34 |
 | 10 | 14/03–18/03 | 15/03–19/03 | PUSING GASING PUSING | 3.1.1 | 35 |
-| 11 | 21/03–25/03 | 22/03–26/03 | PUSING GASING PUSING | 2.2.2, 2.2.3 | 32-33 |
+| 11 | 21/03–25/03 | 22/03–26/03 | PUSING GASING PUSING | 2.2.2, 2.2.3 | 36-37 |
 | 12 | 28/03–01/04 | 29/03–02/04 | Projek Seni Muzik 1 | 5.1.1 | — |
 | 13 | 04/04–08/04 | 05/04–09/04 | Projek Seni Muzik 1 | 5.1.2, 5.1.3 | — |
 | 14 | 11/04–15/04 | 12/04–16/04 | BERSUKAN BADAN SIHAT | 2.2.1 | 42 |
@@ -41,6 +42,4 @@
 | 34 | 19/09–23/09 | 20/09–24/09 | Pengukuhan Akhir Tahun — Nyanyian dan Gerakan (cadangan) | 2.1.3, 2.3.2 | — |
 | 35 | 26/09–30/09 | 27/09–01/10 | Penilaian dan Refleksi Muzik Akhir Tahun (cadangan) | 3.1.3, 4.1.1 | — |
 
-**Nota penting:** DSKP memperuntukkan dua siri Projek Seni Muzik setahun. PdP 34–35 yang dilabel Projek 3 oleh RPT sumber lama kini dibezakan sebagai cadangan pengukuhan/pentaksiran, bukan projek rasmi. Data sumber asal disimpan dalam manifest untuk jejak audit.
-
-*Halaman buku teks hanya rujukan sumber RPT lama kecuali rekod Tahun 4 yang mempunyai `source_book_content_page_checked=true` untuk enam PdP. Fail audio belum disahkan, tarikh 2027 belum disahkan penuh.
+*Semakan isi teks buku dilakukan bagi PdP 01–11; halaman PdP 11 dibetulkan **32–33 → 36–37** untuk skor perkusi lagu Main Gasing. Halaman lain daripada RPT masih belum disahkan. Nombor audio ialah rujukan cetakan sahaja, bukan bukti fail audio. Cuti negeri dan cuti gantian 2027 belum disahkan.

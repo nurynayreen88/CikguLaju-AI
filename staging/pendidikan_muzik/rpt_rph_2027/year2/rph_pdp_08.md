@@ -1,34 +1,33 @@
 # RPH PENDIDIKAN MUZIK TAHUN 2 — PdP 08
 
-**Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** SAYA JUARA  
-**Bidang:** Bahasa Muzik dan Notasi  
-**SK / SP (RPT sumber):** 1.1.1, 1.1.2, 1.1.4
-**Tempoh cadangan:** 30 minit  
-**Status:** DRAF STAGING — belum FINAL READY
+**Kelas:** __________  **Tarikh:** __________  **Masa:** __________
+**Unit/Tajuk:** SAYA JUARA
+**SK / SP DSKP:** 1.1.1, 1.1.2, 1.1.4
+**Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — bukan FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Mengenal sekurang-kurangnya 3 daripada 4 contoh elemen atau notasi muzik, serta mengaplikasikan satu contoh dengan betul.
+**Fokus:** Jenis Melodi dan Tangga Melodi
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Objektif:** Murid mengenal melodi menaik, menurun dan mendatar pada tiga contoh serta mengajuknya menggunakan suku kata la.
 
-**Set Induksi — 4 minit**  
-Guru memainkan dua petikan bunyi atau menunjukkan dua simbol pada baluk; murid meneka perbezaan dan memberikan sebab.
+**Set induksi (4 minit):** Guru menunjukkan satu contoh bunyi atau ilustrasi dari unit SAYA JUARA; murid memberi respons dan menyatakan pengalaman berkaitan.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru menunjukkan contoh notasi/elemen muzik (Mengenal dan membezakan tempo cepat dan lambat.); murid mengecamnya pada tiga kad atau corak dengar.
+**Aktiviti 1 — Demonstrasi/eksplorasi (8 minit):** Guru memperdengarkan tiga bentuk pergerakan melodi dan mengajak murid menunjuk arah dengan tangan.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid melukis, menulis atau melaksanakan elemen/notasi tersebut secara berpasangan dan saling membetulkan hasil.
+**Aktiviti 2 — Aplikasi dan amali (10 minit):** Murid bermain Tangga Melodi: memilih kad arah yang sepadan dengan bunyi dan mengajuk frasa selepas guru.
 
-**Pengukuhan & Penilaian — 6 minit**  
-Semak 3 item pengecaman dan satu aplikasi pada skor/nyanyian/pergerakan; rekod 0–4 hasil tepat.
+**Pengukuhan dan pentaksiran (6 minit):** Semak pengenalan tiga bentuk melodi dan satu demonstrasi ajuk yang tepat.
 
-**Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+**Penutup (2 minit):** Murid memperagakan satu kemahiran muzik dan menyatakan satu perkara yang boleh ditambah baik; guru membuat rekod PBD.
 
-**Bahan:** Kad notasi, papan baluk, audio contoh dan alat perkusi mudah.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 28-29; **belum disahkan pada halaman buku asal**. RPT sumber menyebut Audio 20-22; **nombor trek belum diaudit dengan fail audio**.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 28-29; kad, instrumen atau bahan selamat yang diperlukan bagi aktiviti ini.
 
-**Catatan pelaksanaan / pemulihan:** __________________________________________
+**Bukti rujukan teks buku:** https://anyflip.com/iawvx/mran/basic. Nama lagu, fokus dan aktiviti dikenal pasti daripada salinan buku teks dalam talian. **Belum semakan imej setiap halaman dan ketepatan skor penuh.**
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Rujukan audio tercetak:** 20–22. **Fail audio sebenar/ID lagu belum disahkan; jangan aktifkan audio hanya berdasarkan nombor.**
+
+**Nota audit:**  Kod SP dalam Buku Teks Pendidikan Kesenian tidak semestinya sama dengan kod DSKP Pendidikan Muzik berdiri sendiri; gunakan kod DSKP yang direkodkan dan semak semula secara manual.
+
+**Refleksi/pemulihan:** ___________________________________________________
+
+**Kawalan penerbitan:** DRAF STAGING. Pelaksanaan dan Word/PDF satu halaman belum disahkan dalam penjana Telegram/Web sebenar.

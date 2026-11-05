@@ -1,34 +1,33 @@
 # RPH PENDIDIKAN MUZIK TAHUN 2 — PdP 07
 
-**Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** SAYA JUARA  
-**Bidang:** Kreativiti Muzik  
-**SK / SP (RPT sumber):** 3.1.1, 3.1.2, 3.1.3
-**Tempoh cadangan:** 30 minit  
-**Status:** DRAF STAGING — belum FINAL READY
+**Kelas:** __________  **Tarikh:** __________  **Masa:** __________
+**Unit/Tajuk:** SAYA JUARA
+**SK / SP DSKP:** 3.1.1, 3.1.2, 3.1.3
+**Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — bukan FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Menghasilkan dan mempersembahkan satu corak irama/melodi ringkas yang memenuhi 3 kriteria rubrik.
+**Fokus:** Irama Ciptaanku — kad ikon dan bunyi improvisasi
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Objektif:** Murid mencipta satu corak irama daripada kad ikon dan memainkannya dengan bahan improvisasi secara berkumpulan.
 
-**Set Induksi — 4 minit**  
-Guru menepuk corak empat detik; murid menyambung dengan corak yang berbeza sebagai respons.
+**Set induksi (4 minit):** Guru menunjukkan satu contoh bunyi atau ilustrasi dari unit SAYA JUARA; murid memberi respons dan menyatakan pengalaman berkaitan.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru membimbing murid meneroka bunyi dan mencipta contoh berdasarkan Menghasilkan pelbagai bunyi menggunakan bahan improvisasi.. Murid menyusun empat kad corak/not.
+**Aktiviti 1 — Demonstrasi/eksplorasi (8 minit):** Guru menunjukkan lapan kad contoh yang mewakili bunyi dan diam; murid meneroka variasi corak melalui ketukan selamat.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid mencipta satu corak atau frasa sendiri, menotasi dengan kad/ikon dan mempersembahkannya di hadapan pasangan.
+**Aktiviti 2 — Aplikasi dan amali (10 minit):** Setiap kumpulan menyusun kad ikon, memainkan corak melalui alat improvisasi dan bertukar hasil ciptaan dengan kumpulan lain.
 
-**Pengukuhan & Penilaian — 6 minit**  
-Semak 3 aspek: bilangan detik tepat, kesesuaian bunyi/not dan keupayaan mempersembahkan ciptaan.
+**Pengukuhan dan pentaksiran (6 minit):** Semak logik pola, kerjasama dan ketepatan irama; jangan gunakan audio lagu halaman 26 sebagai bukti audio halaman 27.
 
-**Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+**Penutup (2 minit):** Murid memperagakan satu kemahiran muzik dan menyatakan satu perkara yang boleh ditambah baik; guru membuat rekod PBD.
 
-**Bahan:** Kad ikon/not, alat perkusi atau rekoder mengikut SP, bahan improvisasi selamat.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 27; **belum disahkan pada halaman buku asal**. RPT sumber menyebut Audio 17-19; **nombor trek belum diaudit dengan fail audio**.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 27; kad, instrumen atau bahan selamat yang diperlukan bagi aktiviti ini.
 
-**Catatan pelaksanaan / pemulihan:** __________________________________________
+**Bukti rujukan teks buku:** https://anyflip.com/iawvx/mran/basic. Nama lagu, fokus dan aktiviti dikenal pasti daripada salinan buku teks dalam talian. **Belum semakan imej setiap halaman dan ketepatan skor penuh.**
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Rujukan audio tercetak:** Tiada audio khas pada halaman 27; RPT lama menulis 17–19 bagi lagu halaman 26. **Fail audio sebenar/ID lagu belum disahkan; jangan aktifkan audio hanya berdasarkan nombor.**
+
+**Nota audit:** RPT lama merujuk audio dari PdP bersebelahan; tiada audio khusus bagi aktiviti ciptaan/improvisasi ini. Kod SP dalam Buku Teks Pendidikan Kesenian tidak semestinya sama dengan kod DSKP Pendidikan Muzik berdiri sendiri; gunakan kod DSKP yang direkodkan dan semak semula secara manual.
+
+**Refleksi/pemulihan:** ___________________________________________________
+
+**Kawalan penerbitan:** DRAF STAGING. Pelaksanaan dan Word/PDF satu halaman belum disahkan dalam penjana Telegram/Web sebenar.
