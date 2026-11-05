@@ -34,7 +34,7 @@ def main():
             assert f"**{section}" in source,(n,section)
         lines=source.splitlines()
         activities=[l for l in lines if l.startswith("**Aktiviti 1 (") or l.startswith("**Aktiviti 2 (")]
-        assert len(activities)==2 and all("Guru" in a and "Murid" in a for a in activities),n
+        assert len(activities)==2 and all("guru" in a.casefold() and "murid" in a.casefold() for a in activities),n
         assert all(len(a)>230 for a in activities),n
         for e in cross["units"][u-1]["sp"]:
             if e["code"] in r["sp_codes"]:
