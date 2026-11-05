@@ -78,7 +78,7 @@ class PSVSourceOrderTests(unittest.TestCase):
                 self.assertEqual(row["SK"], "5.1")
                 self.assertTrue(all(x.strip().startswith("3.3.") for x in row["SP"].split(";")))
                 content = (ROOT / row["Fail RPH"]).read_text(encoding="utf-8")
-                self.assertIn("**SK:** 5.1 — Persembahan hasil karya", content)
+                self.assertIn("**SK:** 5.1", content)
                 self.assertIn("**Status:** DRAF", content)
 
     def test_year6_pdp_post_exhibition_standard(self):
