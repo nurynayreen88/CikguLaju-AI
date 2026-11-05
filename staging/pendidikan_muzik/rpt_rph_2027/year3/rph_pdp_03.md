@@ -1,34 +1,31 @@
 # RPH PENDIDIKAN MUZIK TAHUN 3 — PdP 03
 
-**Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** TUT TUT KERETA API  
-**Bidang:** Gerakan Mengikut Muzik  
-**SK / SP (RPT sumber):** 2.3.2
-**Tempoh cadangan:** 30 minit  
-**Status:** DRAF STAGING — belum FINAL READY
+**Kelas:** __________  **Tarikh:** __________  **Masa:** __________
+**Unit/Tajuk:** TUT  TUT  KERETA API
+**SK / SP DSKP:** 2.3.2
+**Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — bukan FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Melakukan sekurang-kurangnya dua corak pergerakan yang tepat dengan tempo/struktur muzik.
+**Fokus:** Bergerak Ikut Tempo — bentuk kereta api
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Objektif:** Murid bergerak dalam formasi kereta api mengikut tempo lagu dan mengubah halaju apabila isyarat berubah.
 
-**Set Induksi — 4 minit**  
-Murid mendengar muzik dan bergerak setempat mengikut detik tanpa mengganggu ruang rakan.
+**Set induksi (4 minit):** Guru meniru bunyi kereta api dan meminta murid menyatakan perbezaan antara bunyi, nyanyian, detik dan tempo.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru menunjuk contoh gerakan berdasarkan Membuat pergerakan berdasarkan tempo., sambil menerangkan aspek irama, bentuk lagu atau tempo.
+**Aktiviti 1 — Bimbingan (8 minit):** Guru menunjukkan berjalan setempat dengan tempo lambat dan cepat serta menetapkan jarak selamat.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid dalam kumpulan mencipta formasi 4–8 kiraan dan mempersembahkannya bersama muzik; kumpulan lain memberi ulasan membina.
+**Aktiviti 2 — Amali muzik (10 minit):** Murid bergerak dalam barisan seperti kereta api secara berkumpulan, menukar langkah mengikut tempo lagu dan memberi arahan mula/henti.
 
-**Pengukuhan & Penilaian — 6 minit**  
-Rubrik 3 aspek: padanan muzik, koordinasi dan kerjasama; rekod penyertaan setiap murid.
+**Pengukuhan dan pentaksiran (6 minit):** Semak tempo, koordinasi dan keselamatan barisan.
 
-**Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+**Penutup (2 minit):** Murid menunjukkan contoh kemahiran yang dipelajari, memberi satu ulasan terhadap persembahan rakan; guru merekod pemerhatian PBD.
 
-**Bahan:** Audio muzik, ruang selamat dan kad formasi/tempo.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 13; **belum disahkan pada halaman buku asal**. RPT sumber menyebut Audio 8; **nombor trek belum diaudit dengan fail audio**.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 3 SK DBP 2018 m/s 13, kad/kastanet atau ruang gerak yang selamat.
 
-**Catatan pelaksanaan / pemulihan:** __________________________________________
+**Rujukan teks buku:** https://anyflip.com/pkots/czbw/basic. Nama aktiviti telah disemak pada salinan bahagian pertama; kod pada buku Kesenian dan DSKP Muzik tidak semestinya sama.
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Audio bercetak:** 5 atau 8; **tiada pengesahan fail audio sebenar atau laluan Telegram/Web**.
+
+**Refleksi/pemulihan:** __________________________________________
+
+**Kawalan penerbitan:** DRAF STAGING, belum diuji Word/PDF satu halaman dan tiada kelulusan guru.

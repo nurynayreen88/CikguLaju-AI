@@ -4,7 +4,7 @@
   "academic_year": 2027,
   "source_doc_id": "1cuT0ZSdAgczebl_8PnDfFlBfsKtnOc1h",
   "source_type": "RPT_2025_26",
-  "status": "DRAF_STAGING_NO_LIVE",
+  "status": "DRAF_STAGING_3_TAHUN3_BOOK_TEXT_MATCHED",
   "textbook_verified": false,
   "audio_verified": false,
   "rph_word_pdf_verified": false,
@@ -26,7 +26,14 @@
         "week": 1,
         "groupA": "04/01–07/01",
         "groupB": "04/01–08/01"
-      }
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "YEAR3_KESENIAN_BOOK_PART1_TEXT_ONLY_NOT_PAGE_IMAGE_SIGNOFF",
+      "source_book_url": "https://anyflip.com/pkots/czbw/basic",
+      "source_book_audio_numbers_printed": "1–7",
+      "source_book_audio_file_verified": false,
+      "focus_pdp": "Tut Tut Kereta Api — senandung dan pernafasan",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN3_PDPAWAL"
     },
     {
       "pdp_id": "MZ-Y3-02",
@@ -44,7 +51,14 @@
         "week": 2,
         "groupA": "10/01–14/01",
         "groupB": "11/01–15/01"
-      }
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "YEAR3_KESENIAN_BOOK_PART1_TEXT_ONLY_NOT_PAGE_IMAGE_SIGNOFF",
+      "source_book_url": "https://anyflip.com/pkots/czbw/basic",
+      "source_book_audio_numbers_printed": "5, 8",
+      "source_book_audio_file_verified": false,
+      "focus_pdp": "Ikut Detik — tepuk dan kastanet",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN3_PDPAWAL"
     },
     {
       "pdp_id": "MZ-Y3-03",
@@ -62,7 +76,14 @@
         "week": 3,
         "groupA": "17/01–21/01",
         "groupB": "18/01–22/01"
-      }
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "YEAR3_KESENIAN_BOOK_PART1_TEXT_ONLY_NOT_PAGE_IMAGE_SIGNOFF",
+      "source_book_url": "https://anyflip.com/pkots/czbw/basic",
+      "source_book_audio_numbers_printed": "5 atau 8",
+      "source_book_audio_file_verified": false,
+      "focus_pdp": "Bergerak Ikut Tempo — bentuk kereta api",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN3_PDPAWAL"
     },
     {
       "pdp_id": "MZ-Y3-04",
@@ -681,5 +702,7 @@
     }
   ],
   "dskp_projects_per_year": 2,
-  "deprecated_project3_reclassified_count": 2
+  "deprecated_project3_reclassified_count": 2,
+  "partial_textbook_crosscheck_count": 3,
+  "source_textbook_url": "https://anyflip.com/pkots/czbw/basic"
 }

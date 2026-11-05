@@ -1,34 +1,31 @@
 # RPH PENDIDIKAN MUZIK TAHUN 3 — PdP 02
 
-**Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** TUT TUT KERETA API  
-**Bidang:** Permainan Alat Perkusi  
-**SK / SP (RPT sumber):** 2.2.1
-**Tempoh cadangan:** 30 minit  
-**Status:** DRAF STAGING — belum FINAL READY
+**Kelas:** __________  **Tarikh:** __________  **Masa:** __________
+**Unit/Tajuk:** TUT  TUT  KERETA API
+**SK / SP DSKP:** 2.2.1
+**Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — bukan FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Memainkan corak irama empat detik dengan betul dalam sekurang-kurangnya 2 daripada 3 percubaan.
+**Fokus:** Ikut Detik — tepuk dan kastanet
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Objektif:** Murid memainkan kastanet pada setiap detik lagu Tut Tut Kereta Api dengan tempo stabil dalam dua percubaan.
 
-**Set Induksi — 4 minit**  
-Guru mengetuk empat detik; murid menepuk semula dengan stabil dan meneka perubahan tempo/dinamik.
+**Set induksi (4 minit):** Guru meniru bunyi kereta api dan meminta murid menyatakan perbezaan antara bunyi, nyanyian, detik dan tempo.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru menerangkan skor ikon/corak irama dengan penekanan pada Memainkan alat perkusi mengikut tempo.. Murid berlatih melalui tepukan dan kiraan sebelum menggunakan alat.
+**Aktiviti 1 — Bimbingan (8 minit):** Guru memperdengarkan atau memberi kiraan detik dan mengajak murid menepuk tangan serta paha secara selang-seli.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Kumpulan kecil memainkan 2–3 ulangan corak irama berpandukan skor; ketua kumpulan memberi isyarat mula, henti dan tempo.
+**Aktiviti 2 — Amali muzik (10 minit):** Murid berpindah daripada tepukan kepada kastanet sambil menyanyi atau mendengar frasa Tut Tut Kereta Api; rakan menilai keseragaman.
 
-**Pengukuhan & Penilaian — 6 minit**  
-Periksa ketepatan pola empat detik dalam 3 percubaan dan penglibatan setiap murid.
+**Pengukuhan dan pentaksiran (6 minit):** Semak ketepatan setiap detik, tempo dan kawalan alat dalam dua percubaan.
 
-**Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+**Penutup (2 minit):** Murid menunjukkan contoh kemahiran yang dipelajari, memberi satu ulasan terhadap persembahan rakan; guru merekod pemerhatian PBD.
 
-**Bahan:** Alat perkusi, skor ikon atau notasi ringkas, kad detik dan audio iringan.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 12; **belum disahkan pada halaman buku asal**. RPT sumber menyebut Audio 5,8; **nombor trek belum diaudit dengan fail audio**.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 3 SK DBP 2018 m/s 12, kad/kastanet atau ruang gerak yang selamat.
 
-**Catatan pelaksanaan / pemulihan:** __________________________________________
+**Rujukan teks buku:** https://anyflip.com/pkots/czbw/basic. Nama aktiviti telah disemak pada salinan bahagian pertama; kod pada buku Kesenian dan DSKP Muzik tidak semestinya sama.
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Audio bercetak:** 5, 8; **tiada pengesahan fail audio sebenar atau laluan Telegram/Web**.
+
+**Refleksi/pemulihan:** __________________________________________
+
+**Kawalan penerbitan:** DRAF STAGING, belum diuji Word/PDF satu halaman dan tiada kelulusan guru.
