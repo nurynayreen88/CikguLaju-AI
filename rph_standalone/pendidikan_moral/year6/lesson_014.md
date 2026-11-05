@@ -17,14 +17,16 @@ Murid menghuraikan atau menilai berdasarkan **5.3: Menghuraikan kepentingan amal
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Pelancong bertanya tentang adab dan imej rakyat Malaysia**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Peta akibat:** Guru beri dua penghujung kepada situasi. Murid bina peta **pilihan → kesan → alasan**, merujuk SP 5.3 (**Menghuraikan kepentingan amalan hemah tinggi demi meningkatkan imej negara.**). Bandingkan akibat kepada watak yang terlibat dan bincang soalan: **Bagaimanakah bahasa badan dan tutur kata mempengaruhi perasaan?**
+**Aktiviti 1 (20 minit) — Aktiviti sumber buku:** Guru memaparkan piagam pelanggan bagi institusi awam m/s42 serta jadual bersopan ketika berurusan m/s43. Murid menghuraikan dua kepentingan hemah tinggi terhadap kepercayaan dan imej negara (SP5.3). Guru menilai respons individu murid.
 
-**Aktiviti 2 (20 minit) — Dialog dan emosi:** Murid menjalankan dialog ringkas dua versi, menyatakan kesan kedua-duanya dan menulis satu ayat perspektif pihak yang terlibat untuk SP 5.4 (**Mengekspresikan perasaan berkaitan amalan hemah tinggi demi meningkatkan imej negara.**). Guru semak hubungan alasan, emosi dan nilai.
+**Aktiviti 2 (20 minit) — Aktiviti sumber buku:** Guru menggunakan pesanan 'Pesanan Berhemah Tinggi' m/s44 tentang adab berhubung melalui telefon serta media digital. Murid menulis ayat perasaan apabila rakyat negara dihormati kerana layanan berhemah, beserta sebab (SP5.4). Guru menilai respons individu murid.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak justifikasi serta dua kesan bagi SP 5.3 dan ayat perasaan yang sesuai bagi SP 5.4. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menilai dua kepentingan bersebab dan satu ayat perasaan daripada situasi perkhidmatan awam (SP5.3–5.4). Murid membetulkan satu respons selepas maklum balas guru.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **hemah tinggi**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — halaman belum dipadankan; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 5 m/s 42–44 (PDF 51–53), dialog, keratan, poster dan latihan asal dijadikan asas aktiviti PdP 014. Buku teks dan DSKP mempunyai fokus yang sepadan untuk Unit ini; aktiviti diolah.
+
+**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — Unit 5 m/s 42–44 (PDF 51–53) disemak visual; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
