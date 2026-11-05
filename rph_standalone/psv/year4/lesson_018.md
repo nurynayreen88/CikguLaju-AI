@@ -5,7 +5,7 @@
 **SK:** 3.1  
 **SP:** 3.1.5  
 **Buku Teks:** Pendidikan Kesenian Tahun 4 (bahagian Seni Visual), ms 48–49 (unit ms 46-49)  
-**BBM:** kertas koyak, gam mesra kanak-kanak, mangkuk acuan, warna  
+**BBM:** BT ms 48–49, kertas surat khabar koyak, acuan cawan dan piring, air, gam kanji dan alas
 **Tempoh:** 60 minit
 
 ## Objektif dan kriteria kejayaan
@@ -13,10 +13,10 @@ Murid dapat menghasilkan karya Secawan Kopi Manis menggunakan teknik alat domest
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan imej Secawan Kopi Manis; murid menyebut satu unsur seni atau fungsi karya.
-**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru menilai lakaran dan menunjukkan teknik utama; murid menyusun bahan di meja.
-**Aktiviti 2 (25 minit) — Amali:** Murid menghasilkan projek: Bina model cawan papier mache, keringkan dan hias dengan motif domestik; guru menguji proses dan membetulkan teknik jika perlu.
-**Pengukuhan/Pentaksiran (10 minit):** Guru menyemak produk amali menunjukkan teknik yang betul dan mencatat PBD.
+**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru menunjukkan urutan BT ms 48–49: koyak/basah kertas, lekat pada acuan cawan serta piring, sapu gam kanji berlapis dan biarkan kering.
+**Aktiviti 2 (25 minit) — Amali:** Murid menampal beberapa lapis kertas lembap bersama gam kanji pada dua acuan plastik untuk cawan dan piring, meratakan sambungan lalu menyimpan kedua-duanya untuk pengeringan.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menilai kualiti lapisan, bentuk cawan dan piring serta kebersihan penggunaan gam.
 **Penutup (5 minit):** Murid menyatakan satu perkara baharu dan mengemas alatan.
 **Pembezaan:** Sediakan kad langkah untuk sokongan; murid lanjutan membandingkan dua reka bentuk.
 **Keselamatan:** Media tidak toksik; gunting dan alat ukir hanya digunakan di bawah pengawasan. Elak pisau tajam.
-**Rujukan:** [DSKP PSV 4](https://drive.google.com/file/d/1CpSVz8txeDqSnKM7OfOmrjnYH9HBmGy1/view); [Buku Teks Pendidikan Kesenian Tahun 4 (bahagian Seni Visual)](https://fliphtml5.com/jfuhh/hbrx/Buku_Teks_Pendidikan_Kesenian_Tahun_4/). Aktiviti adaptasi CikguLaju.
+**Rujukan:** [DSKP PSV 4](https://drive.google.com/file/d/1CpSVz8txeDqSnKM7OfOmrjnYH9HBmGy1/view); [Buku Teks Pendidikan Kesenian Tahun 4 (bahagian Seni Visual)](https://drive.google.com/file/d/1ZPvbJcwogZVQjRSgPMSgD6iymMXcASSU/view). Aktiviti adaptasi CikguLaju.
