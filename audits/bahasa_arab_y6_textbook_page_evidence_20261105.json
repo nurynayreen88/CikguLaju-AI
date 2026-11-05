@@ -78,11 +78,11 @@
     },
     {
       "lesson_id": "year6/lesson_004",
-      "sp_in_draft": "2.1.1",
+      "sp_in_draft": "2.1.2",
       "book_printed_pages_candidate": "2–3",
-      "evidence_topic": "Baca kata dengan bunyi huruf seakan sama; buku memaparkan 2.1.2 dan 2.1.4 pada halaman 2",
-      "evidence_code": "SKILL_RELEVANT_BUT_SP_NOT_SAME",
-      "quality_note": "Perlu betulkan padanan spesifik atau pindahkan aktiviti ke 2.1.2 setelah audit",
+      "evidence_topic": "Membaca kata dengan bunyi ع/أ/ح/ه pada halaman bercetak 2; SP 2.1.2 DSKP/buku teks",
+      "evidence_code": "MATCH_TOPICAL_SP_AFTER_CORRECTION",
+      "quality_note": "Kod draf dibetulkan selepas perbandingan DSKP dan contoh buku; belum diluluskan secara manual",
       "ready": false
     },
     {
@@ -158,19 +158,15 @@
       "ready": false
     }
   ],
-  "conflicts": [
+  "conflicts": [],
+  "release_gate": "0 FINAL READY",
+  "resolved_discussions": [
     {
       "lesson": "year6/lesson_004",
-      "draft_sp": "2.1.1",
-      "book_page_2_codes": [
-        "1.1.1",
-        "1.1.3",
-        "2.1.2",
-        "2.1.4"
-      ],
-      "status": "REQUIRES_ADJUDICATION",
-      "reason": "Different SK/SP displayed on book sample; do not blindly change until DSKP and lesson focus review."
+      "old_sp": "2.1.1",
+      "new_sp": "2.1.2",
+      "evidence": "Buku Teks Tahun 6 hlm. 2 dan DSKP Tahun 6 hlm. 24",
+      "status": "CONTENT_CORRECTED_BUT_NOT_FINAL_READY"
     }
-  ],
-  "release_gate": "0 FINAL READY"
+  ]
 }

@@ -37,3 +37,6 @@ Status berangka ini mengira fail yang wujud, **bukan** 60 RPH yang telah disahka
 - **Bendera konflik**: Tahun 6 PdP 004 menggunakan SP 2.1.1 sedangkan contoh halaman buku 2 menampilkan 2.1.2/2.1.4. Perlu adjudikasi, jangan ubah SP automatik.
 - Sumber HTML BT: https://anyflip.com/gcmci/mxcs/basic. DSKP Tahun 6: https://anyflip.com/mhtcw/pstm/basic. Dokumen indeks sumber Drive: https://docs.google.com/document/d/1z5rz0j-xtIwm1JF8-p0sc5BQvk8q_W_UOZR3yFAnl7A/edit?usp=drivesdk.
 - **0 RPH READY**, kerana padanan 1:1 PdP/halaman dan ujian Word/PDF RTL belum dibuat.
+
+### Pembetulan Tahun 6 PdP 004
+**2.1.1 → 2.1.2** dan aktiviti/kosa kata diselaraskan dengan Buku Teks Tahun 6 Unit 1 halaman bercetak 2. DSKP SP 2.1.2 ialah membaca kata berhuruf seakan sama. Status kekal DRAF/BELUM READY sehingga semakan individu dan render Word/PDF.
