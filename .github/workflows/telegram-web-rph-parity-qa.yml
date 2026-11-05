@@ -1,0 +1,21 @@
+name: Telegram-Web Canonical RPH Parity QA
+on:
+  push:
+    branches: [feature/telegram-web-rph-parity-20261105]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-parity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install flask==3.1.3 python-docx==1.2.0 lxml==5.4.0
+      - name: Check native RPH security, source digests, PJPK/PSV session parity
+        run: |
+          python -m py_compile web/native_rph_telegram_api.py web/rph_shared_source_identity.py
+          python -m unittest discover -s tests -p test_native_telegram_rph_api.py -v
