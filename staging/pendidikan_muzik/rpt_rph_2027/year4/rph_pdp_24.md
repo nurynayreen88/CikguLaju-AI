@@ -25,6 +25,8 @@
 
 **Rujukan audio bercetak:** 90–92. **Belum disahkan sama ada fail trek tersedia atau sepadan dengan laluan penghantaran.**
 
+**Audit silang DSKP/buku (6 Nov 2026, BELUM DILULUSKAN):** Kod RPT 3.1.1, 3.1.2, 3.1.3 dikekalkan. DSKP Tahun 4 dan Buku Kesenian mencetak 3.2.1, 3.2.2, 3.2.3 di bawah SK 3.1 yang tidak sepadan nombornya. Buku halaman 82–84 mengandungi aktiviti soalan/jawapan melodi dan empat kad notasi. Sumber RPT lama hanya menyebut halaman 82; liputan halaman penuh dan notasi perlu semakan visual. Tiada kod SP ditukar sehingga keputusan kurikulum akhir direkod.
+
 **Audit kod:** Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 3.1.1, 3.1.2, 3.1.3; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL.
 
 **Refleksi / pemulihan:** __________________________________________________

@@ -121,6 +121,25 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
             {"3.2.1", "3.2.2", "3.2.3", "4.2.1"},
         )
 
+    def test_year4_crosswalk_sources_preserved_and_not_approved(self):
+        manifest = json.loads((MUSIC / "rpt_rph_2027" / "year4" / "pdp_manifest.json").read_text(encoding="utf-8"))
+        expected = {
+            21: (["3.1.2", "3.1.3"], ["3.2.2", "3.2.3"]),
+            24: (["3.1.1", "3.1.2", "3.1.3"], ["3.2.1", "3.2.2", "3.2.3"]),
+        }
+        for pdp, (source, printed) in expected.items():
+            row = manifest["pdps"][pdp-1]
+            self.assertEqual(row["sp"], source)
+            self.assertEqual(row["dskp_source_printed_sp"], printed)
+            self.assertEqual(row["textbook_printed_sp"], printed)
+            self.assertFalse(row["dskp_crosswalk_approved"])
+            self.assertEqual(row["dskp_crosswalk_review_level"], "SOURCE_VERIFIED_CODE_DIFFERENCE_UNRESOLVED")
+            self.assertIn("drive.google.com", row["dskp_source_document_url"])
+            doc = (MUSIC / "rpt_rph_2027" / "year4" / f"rph_pdp_{pdp:02d}.md").read_text(encoding="utf-8")
+            self.assertIn("BELUM DILULUSKAN", doc)
+            self.assertIn(", ".join(printed), doc)
+        self.assertIn("G, A, B, C’", manifest["pdps"][20]["crosswalk_review_note"])
+
     def test_reinforcement_candidates_stay_nonofficial_and_no_fabricated_audio(self):
         """All eight non-book slots are specificity-reviewed but never count as book-verified."""
         total = 0

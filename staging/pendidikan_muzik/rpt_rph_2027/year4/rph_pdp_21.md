@@ -25,6 +25,8 @@
 
 **Rujukan audio bercetak:** 66–67. **Belum disahkan sama ada fail trek tersedia atau sepadan dengan laluan penghantaran.**
 
+**Audit silang DSKP/buku (6 Nov 2026, BELUM DILULUSKAN):** Kod RPT 3.1.2, 3.1.3 dikekalkan. DSKP Tahun 4 dan Buku Kesenian mencetak 3.2.2, 3.2.3 di bawah SK 3.1 yang tidak sepadan nombornya. Buku Tahun 4 halaman 70–71 menyuruh not G, A, B, C', sedangkan DSKP Tahun 4 nota Kreativiti Muzik menyebut B, A, G sahaja. Skop not belum diselaraskan untuk FINAL READY. Tiada kod SP ditukar sehingga keputusan kurikulum akhir direkod.
+
 **Audit kod:** Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 3.1.2, 3.1.3; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL.
 
 **Refleksi / pemulihan:** __________________________________________________

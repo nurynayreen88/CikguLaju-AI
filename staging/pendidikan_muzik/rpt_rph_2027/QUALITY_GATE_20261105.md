@@ -168,3 +168,9 @@ PdP12–13 dan 24–26 diselaraskan dengan projek terpadu Kesenian Tahun3 halama
 ## 6 November 2026 — Pengesahan julat minggu RPT terhadap indeks CikguLaju
 - 175/175 julat tarikh A/B (manifest dan RPT CSV) sepadan dengan indeks rasmi CikguLaju M01–M44 (read-only snapshot); tiada tarikh perlu dianjak.
 - Semakan ini **BUKAN** pengesahan hari PdP mengikut negeri atau cuti perayaan/gantian. Jangan merombak PdP berdasarkan minggu tanpa kelas. Audit: `KALENDAR_2027_WEEK_SLOT_AUDIT_20261106.md`. Release gate kekal tertutup.
+
+
+## 6 November 2026 — Konflik SK/SP Tahun 4 disahkan pada sumber
+- PdP21 kod RPT 3.1.2/3.1.3 berbanding DSKP+BT tercetak 3.2.2/3.2.3. PdP24 kod RPT 3.1.1/3.1.2/3.1.3 berbanding DSKP+BT 3.2.1/3.2.2/3.2.3.
+- DSKP mencetak SP 3.2.x di bawah SK 3.1, serta SP 4.2.1 di bawah SK 4.1. Buku T4 m/s70–71 menyatakan not G/A/B/C’ tetapi nota DSKP menyatakan B/A/G sahaja. Bukti: `year4/AUDIT_SK_SP_DSKP_BUKU_20261106.md`.
+- **Kod RPT asal dipelihara**. Keputusan rasmi normalisasi dan skop not masih tertangguh; audio/notasi visual, Word/PDF dan release tetap TIDAK FINAL READY.
