@@ -46,7 +46,7 @@ class UnifiedWebRPHTests(unittest.TestCase):
         self.assertIsNone(verified_preview(2, "PSV", "Wrong unit", "v-2-001"))
         self.assertEqual(len(source_records(2, "PSV")), 42)
 
-    @patch("web.unified_rph_web._account", return_value=(None, (jsonify({"error": "Login required"}), 401)))
+    @patch("web.unified_rph_web._account", return_value=(None, ({"error": "Login required"}, 401)))
     def test_non_authenticated_read_rejected(self, _):
         self.assertEqual(self.client.get("/api/web/rph/preview").status_code, 401)
 
