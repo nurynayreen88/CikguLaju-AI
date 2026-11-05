@@ -1,0 +1,45 @@
+name: Pendidikan Moral Word 270 physical A4 print verification
+on:
+  push:
+    branches:
+      - staging/moral-word270-real-a4-render-20261105
+    paths:
+      - 'scripts/check_moral_word270_physical_a4.py'
+      - '.github/workflows/pendidikan-moral-word-a4.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'scripts/check_moral_word270_physical_a4.py'
+      - 'rpt_2027/pendidikan_moral/complete_96_downloads.py'
+      - '.github/workflows/pendidikan-moral-word-a4.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  real-a4:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Word rendering and PDF verification dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-liberation
+          python -m pip install python-docx==1.1.2 pypdf==5.1.0
+      - name: Export and physically render 270 supplementary RPH; assert one A4 page per session
+        run: python scripts/check_moral_word270_physical_a4.py --outdir "$RUNNER_TEMP/moral-word-a4"
+      - name: Archive rendered Word and PDF proof for visual spot check
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pendidikan-moral-270-physical-a4-word-proof
+          path: ${{ runner.temp }}/moral-word-a4/
+          if-no-files-found: warn
+          retention-days: 7
