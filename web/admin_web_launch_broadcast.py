@@ -190,7 +190,7 @@ def _send_one(api, uid, post=requests.post, pause=time.sleep):
     return "failed", "rate_limited"
 
 
-def install(runtime):
+def install(runtime, *, preserve_referral=False):
     if getattr(runtime, "CIKGULAJU_BROADCAST_INSTALLED", False):
         return True
     if not all(callable(getattr(runtime, name, None))
@@ -288,6 +288,16 @@ def install(runtime):
                    for row in keyboard for b in row):
                 return result
             rows = [[dict(b) for b in row] for row in keyboard]
+            # The earlier referral-admin wrapper edits the same Telegram
+            # message but returns the *original* sendMessage response.
+            # Reinsert its known action so this final edit never erases it.
+            referral_action = "admin_ref_points|list|0"
+            if preserve_referral and not any(
+                b.get("callback_data") == referral_action
+                for row in rows for b in row
+            ):
+                rows.append([{"text": "📊 MATA REFERRAL",
+                              "callback_data": referral_action}])
             before = next(
                 (i for i, row in enumerate(rows)
                  if any(b.get("callback_data") == "admin_system" for b in row)),
