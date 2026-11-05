@@ -8,6 +8,7 @@ and PJPK 339-PdP manifest. Missing or contradictory source files fail closed.
 For other subjects, keep existing database navigation; no invented preview.
 """
 import csv
+from datetime import date
 from functools import lru_cache
 from io import BytesIO
 import json
@@ -257,8 +258,9 @@ def verified_preview(year, subject, unit, token, component=None):
 
 def _selection():
     required = {"year", "subject", "unit", "lesson"}
+    extras = {"teacher_class", "teacher_date", "teacher_time"}
     keys = set(request.args)
-    if keys not in (required, required | {"component"}):
+    if not required.issubset(keys) or not keys.issubset(required | extras | {"component"}):
         raise ValueError("Unexpected selection keys")
     if any(len(request.args.getlist(key)) != 1 for key in keys):
         raise ValueError("Ambiguous selection")
@@ -276,6 +278,32 @@ def _selection():
         raise ValueError("Unexpected component")
     return year, subject, unit, lesson, component
 
+
+def _teacher_context():
+    """Strictly validated printable fields, never used for authentication or RPH mapping."""
+    cls = request.args.get("teacher_class", "")
+    dt = request.args.get("teacher_date", "")
+    tm = request.args.get("teacher_time", "")
+    if any(not isinstance(x, str) for x in (cls, dt, tm)):
+        raise ValueError("Invalid printable fields")
+    if cls and (len(cls) > 40 or not re.fullmatch(r"[\w .\-/()]+", cls, re.UNICODE)
+                or not cls.strip()):
+        raise ValueError("Invalid class")
+    if dt:
+        if len(dt) != 10 or not re.fullmatch(r"20\d{2}-\d{2}-\d{2}", dt):
+            raise ValueError("Invalid date")
+        parsed = date.fromisoformat(dt)
+        if not 2025 <= parsed.year <= 2031:
+            raise ValueError("Date outside supported range")
+    if tm:
+        if not re.fullmatch(r"\d{2}:\d{2}(?:\s*-\s*\d{2}:\d{2})?", tm):
+            raise ValueError("Invalid time")
+        import datetime
+        for piece in re.split(r"\s*-\s*", tm):
+            datetime.datetime.strptime(piece, "%H:%M")
+    return {"class": cls.strip(), "date": dt, "time": tm}
+
+
 def _docx_paragraph(text, *, strong=False):
     style = "<w:rPr><w:rFonts w:ascii='Aptos' w:hAnsi='Aptos'/><w:sz w:val='18'/>" + ("<w:b/>" if strong else "") + "</w:rPr>"
     return "<w:p><w:r>" + style + "<w:t xml:space='preserve'>" + escape(str(text)) + "</w:t></w:r></w:p>"
@@ -284,7 +312,7 @@ def _docx(data):
     paragraphs = [_docx_paragraph("CIKGULAJU AI — RANCANGAN PENGAJARAN HARIAN", strong=True),
                   _docx_paragraph(f"{SUBJECT_LABELS[data['subject']]} — Tahun {data['year']} | {data['title']}", strong=True),
                   _docx_paragraph("Status sumber: " + data["status"]),
-                  _docx_paragraph("Kelas: ______________ Tarikh: __________ Masa: __________"),
+                  _docx_paragraph(f"Kelas: {data.get('teacher', {}).get('class') or '______________'}    Tarikh: {data.get('teacher', {}).get('date') or '__________'}    Masa: {data.get('teacher', {}).get('time') or '__________'}"),
                   _docx_paragraph(data["notice"])]
     for part in data["fields"]:
         paragraphs.append(_docx_paragraph(part["label"], strong=True))
@@ -323,12 +351,14 @@ def create_blueprint():
             return None, (jsonify({"error": "Pratonton RPH Web memerlukan Rakan Pembangun atau langganan aktif; 10 janaan percuma kekal melalui Telegram"}), 403)
         try:
             year, subject, unit, token, component = _selection()
-        except ValueError:
+            teacher = _teacher_context()
+        except (ValueError, TypeError):
             return None, (jsonify({"error": "Pilihan Tahun/Subjek/Unit/PdP tidak sah"}), 400)
         result = verified_preview(year, subject, unit, token, component)
         if result is None:
             return None, (jsonify({"error": "RPH tepat untuk Lesson/PdP ini belum tersedia di Web. Tiada RPH generik atau daripada tajuk lain digunakan.",
                                    "code": "RPH_SOURCE_NOT_VERIFIED"}), 503)
+        result["teacher"] = teacher
         return result, None
 
     @bp.get("/api/web/rph/preview")
