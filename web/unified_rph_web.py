@@ -67,7 +67,7 @@ def _english_records(year):
             continue
         result.append({"unit": topic, "label": f"Lesson {n:03d} — {focus or topic}",
                        "lesson": n, "token": f"e-{year}-{n:03d}",
-                       "path": path, "status": "DRAF / SEMAK SUMBER"})
+                       "path": path, "status": "PRATONTON BELUM MUKTAMAD"})
     return result
 
 def _moral_records(year):
@@ -97,7 +97,7 @@ def _moral_records(year):
         entries.append({"unit": f"Unit {idx+1:02d} — {title}",
                         "label": f"PdP {n:03d} — {candidate['title']}",
                         "lesson": n, "token": f"m-{year}-{n:03d}",
-                        "path": path, "status": "DRAF SEMAK"})
+                        "path": path, "status": "PRATONTON BELUM MUKTAMAD"})
     return entries
 
 def _pjpk_records(year, component):
@@ -116,7 +116,7 @@ def _pjpk_records(year, component):
             continue
         entries.append({"unit": str(title), "label": f"PdP {n:03d} — {title}",
                         "lesson": n, "token": f"p-{year}-{component}-{n:03d}",
-                        "path": path, "status": "DRAF CADANGAN"})
+                        "path": path, "status": "PRATONTON BELUM MUKTAMAD"})
     return entries
 
 def _psv_records(year):
@@ -205,11 +205,19 @@ def _fields_from_markdown(raw):
             if value:
                 result.append({"label": current_heading, "value": value})
             block.clear()
+    ignore_technical_section = False
     for line in lines[1:]:
         if line.startswith("## "):
             flush()
             current_heading = line[3:].strip()
-        else:
+            ignore_technical_section = bool(re.match(
+                r"^(?:Verified mapping and limits|Original book and audio access|"
+                r"Original source access|Jejak audit|Bukti audit|Audit notes|"
+                r"Source QA|QA checklist)", current_heading, re.I))
+        elif not ignore_technical_section and not re.match(
+                r"^\\s*\\*\\*(?:STATUS|Status|QA|QA status|Resource status|"
+                r"Jejak audit|Bukti visual buku teks|Non-textbook source rule)"
+                r"[^\\n]*?\\*\\*", line, re.I):
             block.append(line.rstrip())
     flush()
     return result
@@ -245,7 +253,7 @@ def verified_preview(year, subject, unit, token, component=None):
             "lesson": row["lesson"], "selection": token,
             "title": row["label"], "status": row["status"],
             "fields": fields, "source": "existing-standalone-rph",
-            "notice": "Pratonton daripada fail RPH sedia ada; semak SK/SP, aktiviti, sumber dan status draf sebelum cetak."}
+            "notice": "Pratonton RPH daripada sumber CikguLaju; pastikan maklumat kelas, aktiviti dan rujukan sesuai sebelum cetak."}
 
 def _selection():
     required = {"year", "subject", "unit", "lesson"}
