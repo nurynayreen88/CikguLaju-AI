@@ -361,6 +361,16 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "Invalid subject/year"):
                 namespace["build_native_input"](payload_for(first, "word"))
             namespace["SUBJECTS"] = dict(namespace["SUBJECTS"], MUZIK="Pendidikan Muzik")
+            # Even with test-only allowlisting, real source-parity mode MUST reject
+            # Muzik because runtime has no approved fingerprint/source route yet.
+            from web.rph_shared_source_identity import source_paths
+            self.assertIsNone(source_paths(4, "MUZIK", 21, None))
+            with patch.dict(os.environ, {"CIKGULAJU_WEB_RPH_SOURCE_PARITY_REQUIRED": "1"}):
+                with self.assertRaisesRegex(ValueError, "Missing source identity"):
+                    namespace["build_native_input"](payload_for(first, "word"))
+                supplied = dict(payload_for(first, "word"), source_digest="0" * 64)
+                with self.assertRaisesRegex(ValueError, "Web/Telegram RPH source mismatch"):
+                    namespace["build_native_input"](supplied)
             for year in range(2, 7):
                 for pdp in range(1, 36):
                     with self.subTest(year=year, pdp=pdp):
