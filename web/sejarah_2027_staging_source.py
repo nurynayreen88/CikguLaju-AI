@@ -46,7 +46,7 @@ def source_fingerprint(year,pdp,*,root=ROOT):
         digest.update(rel.encode("utf-8")+b"\x00"+raw+b"\x00")
     return digest.hexdigest()
 
-def lesson(year,pdp,*,root=ROOT,qa_preview=False):
+def lesson(year,pdp,*,root=ROOT):
     """Return a copied source row for QA only, never a live RPH export."""
     _validate(year,pdp)
     base=Path(root).resolve()
@@ -75,12 +75,12 @@ def lesson(year,pdp,*,root=ROOT,qa_preview=False):
         r.get("teacher_approval") is True,
         r.get("textbook_page_verified") is True,
         r.get("textbook_reference",{}).get("exact_activity_page_confirmed") is True,
-        r.get("release_signoff",{}).get("approved_by") is not None,
+        isinstance(r.get("release_signoff",{}).get("approved_by"),str) and bool(r["release_signoff"]["approved_by"].strip()),
         r.get("release_signoff",{}).get("web_telegram_parity_verified") is True,
         r.get("release_signoff",{}).get("word_pdf_layout_verified") is True,
         r.get("status")=="FINAL_READY",
     )
-    if not qa_preview or not all(checks):
+    if not all(checks):
         raise SejarahNotReady("Sejarah Tahun 4–6 belum FINAL READY; eksport pengguna ditutup")
     # This release function intentionally does not generate/send the document.
     # It only returns an approved immutable source row for the native renderer.
