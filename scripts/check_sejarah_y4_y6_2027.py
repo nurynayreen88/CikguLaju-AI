@@ -32,9 +32,9 @@ for y, (num_sk, num_sp) in EXPECTED.items():
     assert len(all_matrix) == 97
     assert len([m for m in matrix["records"] if m["year"] == y]) == (33 if y == 6 else 32)
     textbook_evidence = json.loads((ROOT/"audits/sejarah_y4_y6_primary_textbook_page_evidence_20261106.json").read_text())
-    assert textbook_evidence["count"] == len(textbook_evidence["records"]) == 55
+    assert textbook_evidence["count"] == len(textbook_evidence["records"]) == 108
     corroborated = {(a["year"], a["pdp"]):a for a in textbook_evidence["records"]}
-    assert len(corroborated) == 55
+    assert len(corroborated) == 108
     audited = {a["id"]:a for a in audit["rows"]}
     assert len(audited) == 11
     calendar = json.loads((ROOT/"curriculum/sejarah/kalender_sejarah_2027_kumpulan_a_b.json").read_text())
@@ -108,6 +108,11 @@ for y, (num_sk, num_sp) in EXPECTED.items():
             assert scope["matched_sp"] == rec["sp"]
             assert scope["source_urls"] == rec["page_urls"]
             assert scope["text_checked"] is True
+            assert scope["teacher_approved"] is False
+            assert scope["exact_exercise_visual_verification"] is False
+            assert rec["teacher_approved"] is False
+            assert rec["exact_exercise_visual_verified"] is False
+            assert rec["ready"] is False
             assert scope["teacher_approved"] is False
             assert scope["exact_exercise_visual_verification"] is False
             assert all(code in r["sp_codes"] for code in rec["sp"])

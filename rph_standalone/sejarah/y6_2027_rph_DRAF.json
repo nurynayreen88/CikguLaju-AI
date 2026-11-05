@@ -1646,7 +1646,23 @@
           "unit_start_page": 76,
           "unit_end_page": 91,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "78–83",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "11.2.1",
+              "11.2.2"
+            ],
+            "description": "Agama dan kepercayaan pelbagai masyarakat serta kedudukan Islam sebagai agama Persekutuan",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1742,7 +1758,22 @@
           "unit_start_page": 76,
           "unit_end_page": 91,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "84–85",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "11.2.3"
+            ],
+            "description": "Hak amalan agama lain dalam Perlembagaan, termasuk Perkara 11",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1838,7 +1869,22 @@
           "unit_start_page": 76,
           "unit_end_page": 91,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "86–88",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "11.2.4"
+            ],
+            "description": "Masjid, gereja, tokong, wat, kuil dan gurdwara serta adab melawat",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1940,7 +1986,23 @@
           "unit_start_page": 76,
           "unit_end_page": 91,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "78–89",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "11.2.1",
+              "11.2.2"
+            ],
+            "description": "Kajian kes cadangan tentang keharmonian masyarakat berbilang agama",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2036,7 +2098,22 @@
           "unit_start_page": 92,
           "unit_end_page": 105,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "94–96",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "11.3.1"
+            ],
+            "description": "Perayaan utama masyarakat Malaysia mengikut komuniti dan tradisi",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2132,7 +2209,22 @@
           "unit_start_page": 92,
           "unit_end_page": 105,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "96–98",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "11.3.2"
+            ],
+            "description": "Tujuan sambutan dan nilai kekeluargaan, kejiranan serta perpaduan",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2228,7 +2320,22 @@
           "unit_start_page": 92,
           "unit_end_page": 105,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "99–101",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "11.3.3"
+            ],
+            "description": "Sambutan perayaan dahulu dan kini serta analisis SWOT warisan",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2324,7 +2431,22 @@
           "unit_start_page": 106,
           "unit_end_page": 123,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "108–115",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "12.1.1"
+            ],
+            "description": "Urutan Perdana Menteri; buku 2021 setakat PM9, suplemen sumber rasmi PM10",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2426,7 +2548,22 @@
           "unit_start_page": 106,
           "unit_end_page": 123,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "116–117",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "12.1.2"
+            ],
+            "description": "Tugas Perdana Menteri dalam pentadbiran dan kepimpinan kerajaan",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2522,7 +2659,22 @@
           "unit_start_page": 106,
           "unit_end_page": 123,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "118–120",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "12.1.3"
+            ],
+            "description": "Pencapaian negara di bawah pentadbiran Perdana Menteri berbeza",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2618,7 +2770,22 @@
           "unit_start_page": 124,
           "unit_end_page": 141,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "126–128",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "12.2.1"
+            ],
+            "description": "Sektor pertanian, perlombongan dan ekonomi tradisional/komersial",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2714,7 +2881,22 @@
           "unit_start_page": 124,
           "unit_end_page": 141,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "129–133",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "12.2.2"
+            ],
+            "description": "Pertanian, pembuatan, petroleum dan kegiatan penyumbang ekonomi",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2810,7 +2992,22 @@
           "unit_start_page": 124,
           "unit_end_page": 141,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "134–139",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "12.2.3"
+            ],
+            "description": "Pencapaian ekonomi negara termasuk PETRONAS dan perkembangan industri",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2912,7 +3109,23 @@
           "unit_start_page": 124,
           "unit_end_page": 141,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "126–139",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "12.2.1",
+              "12.2.2"
+            ],
+            "description": "Kajian kes cadangan tentang perubahan sektor dan bukti ekonomi",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -3014,7 +3227,23 @@
           "unit_start_page": 142,
           "unit_end_page": 159,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "144–148",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "12.3.1",
+              "12.3.2"
+            ],
+            "description": "Pencapaian sukan Malaysia dan peranan sukan menyatupadukan rakyat",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -3110,7 +3339,22 @@
           "unit_start_page": 142,
           "unit_end_page": 159,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "149–152",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "12.3.3"
+            ],
+            "description": "Peranan Malaysia menganjur acara sukan antarabangsa",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -3206,7 +3450,22 @@
           "unit_start_page": 142,
           "unit_end_page": 159,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "153–157",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "12.3.4"
+            ],
+            "description": "Tokoh sukan negara dahulu dan inspirasi generasi masa kini",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -3308,7 +3567,23 @@
           "unit_start_page": 160,
           "unit_end_page": 176,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "162–165",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "12.4.1",
+              "12.4.2"
+            ],
+            "description": "ASEAN dan pelibatan Malaysia, dengan suplemen keanggotaan Timor-Leste 2025",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -3410,7 +3685,22 @@
           "unit_start_page": 160,
           "unit_end_page": 176,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "166–167",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "12.4.3"
+            ],
+            "description": "Pelibatan Malaysia dalam Komanwel dan kerjasama Sukan Komanwel",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -3506,7 +3796,22 @@
           "unit_start_page": 160,
           "unit_end_page": 176,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "168–169",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "12.4.4"
+            ],
+            "description": "Malaysia dalam Pertubuhan Kerjasama Islam (OIC)",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -3596,7 +3901,22 @@
           "unit_start_page": 160,
           "unit_end_page": 176,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "170–172",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "12.4.5"
+            ],
+            "description": "Malaysia dalam PBB serta peranan keselamatan dan kerjasama antarabangsa",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -3698,7 +4018,23 @@
           "unit_start_page": 160,
           "unit_end_page": 176,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "162–172",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "12.4.1",
+              "12.4.2"
+            ],
+            "description": "Kajian kes cadangan tentang kerjasama Malaysia dalam organisasi dunia",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {

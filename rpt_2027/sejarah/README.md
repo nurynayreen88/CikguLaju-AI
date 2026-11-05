@@ -51,3 +51,9 @@ Semua kerja masih pada PR #341 DRAF. Jangan gabung atau deploy atas keputusan QA
 - **Semakan halaman teks terkini**: Tahun 4 36/36, keseluruhan 47/108. Semua status DRAF dan kelulusan individu belum disahkan. Rujuk ledger bukti untuk nilai terkini.
 
 - Tambahan bacaan teks Sejarah Tahun 6 PdP 007–014. Semakan halaman khusus keseluruhan **55/108**, tanpa kelulusan latihan atau guru. Semua DRAF.
+
+## Crosswalk buku teks 108/108 PdP siap (6 November 2026)
+
+- Semua Tahun 4–6 (36 PdP setiap tahun) mempunyai padanan teks digital buku, halaman bercetak, fokus SP dan sumber dalam `audits/sejarah_y4_y6_primary_textbook_page_evidence_20261106.json`.
+- Baki 53 Tahun 5/6 dilengkapkan menerusi `audits/sejarah_y5_y6_remaining_53_book_text_crosswalk_20261106.json`.
+- **Penting:** Bukti teks/fokus bab tidak bermaksud gambar dan arahan latihan bagi setiap halaman telah disahkan. Semakan guru, pengesahan latihan sebenar, logo profil sekolah dan ujian penjana natif Telegram–Web masih wajib. Semua RPH kekal DRAF; `release_ready=false` dan eksport pengguna ditutup.

@@ -79,7 +79,23 @@
           "unit_start_page": 2,
           "unit_end_page": 15,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "4–6",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "6.1.1",
+              "6.1.2"
+            ],
+            "description": "Maksud raja/kerajaan dan waadat Seri Teri Buana–Demang Lebar Daun",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "page_specific_evidence": {
@@ -177,7 +193,22 @@
           "unit_start_page": 2,
           "unit_end_page": 15,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "7",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "6.1.3"
+            ],
+            "description": "Konsep daulat dan derhaka yang dikaitkan dengan perjanjian raja–rakyat",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "page_specific_evidence": {
@@ -274,7 +305,22 @@
           "unit_start_page": 2,
           "unit_end_page": 15,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "8–9",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "6.1.4"
+            ],
+            "description": "Perbandingan kuasa institusi raja pada zaman awal, kolonial dan kini",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "page_specific_evidence": {
@@ -365,7 +411,22 @@
           "unit_start_page": 2,
           "unit_end_page": 15,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "10",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "6.1.5"
+            ],
+            "description": "Contoh negara dunia yang mengamalkan sistem pemerintahan beraja",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "page_specific_evidence": {
@@ -1055,7 +1116,23 @@
           "unit_start_page": 30,
           "unit_end_page": 43,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "32–43",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "6.3.1",
+              "6.3.2"
+            ],
+            "description": "Kajian kes cadangan bahasa Melayu: susur galur dan sebaran penutur",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1157,7 +1234,23 @@
           "unit_start_page": 44,
           "unit_end_page": 57,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "45–49",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "7.1.1",
+              "7.1.2"
+            ],
+            "description": "Naungan, campur tangan, penjajahan dan kuasa Siam, Portugis, Belanda, British, Jepun, Brooke",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1253,7 +1346,22 @@
           "unit_start_page": 44,
           "unit_end_page": 57,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "50–52",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "7.1.3"
+            ],
+            "description": "Kedudukan strategik, hasil bumi, penyebaran agama dan Revolusi Perindustrian",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1349,7 +1457,22 @@
           "unit_start_page": 44,
           "unit_end_page": 57,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "53–56",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "7.1.4"
+            ],
+            "description": "Kesan pentadbiran Negeri-negeri Selat/Bersekutu, ekonomi dan masyarakat majmuk",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1456,7 +1579,23 @@
           "unit_start_page": 58,
           "unit_end_page": 73,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "60–63",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "7.2.1",
+              "7.2.2"
+            ],
+            "description": "Tokoh tempatan dan sebab penentangan, termasuk Dol Said, Rentap dan Tok Janggut",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1552,7 +1691,22 @@
           "unit_start_page": 58,
           "unit_end_page": 73,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "64–68",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "7.2.3"
+            ],
+            "description": "Urutan peristiwa penentangan tokoh tempatan terhadap kuasa asing",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1659,7 +1813,23 @@
           "unit_start_page": 74,
           "unit_end_page": 89,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "76–79",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "7.3.1",
+              "7.3.2"
+            ],
+            "description": "Tokoh kemerdekaan dan usaha menuju merdeka termasuk Dato' Onn dan rundingan",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1755,7 +1925,22 @@
           "unit_start_page": 74,
           "unit_end_page": 89,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "80–85",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "7.3.3"
+            ],
+            "description": "Detik pemasyhuran kemerdekaan pada 31 Ogos 1957 di Stadium Merdeka",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1857,7 +2042,23 @@
           "unit_start_page": 74,
           "unit_end_page": 89,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "76–88",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "7.3.1",
+              "7.3.2"
+            ],
+            "description": "Kajian kes cadangan tentang sumber pengisytiharan, tokoh dan usaha kemerdekaan",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1959,7 +2160,23 @@
           "unit_start_page": 90,
           "unit_end_page": 107,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "92–96",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "8.1.1",
+              "8.1.2"
+            ],
+            "description": "Kedudukan Yang di-Pertuan Agong sebagai Ketua Utama Negara dan proses Majlis Raja-Raja",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2061,7 +2278,23 @@
           "unit_start_page": 90,
           "unit_end_page": 107,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "97–100",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "8.1.3",
+              "8.1.4"
+            ],
+            "description": "Istiadat pertabalan dan kuasa perundangan, eksekutif serta kehakiman",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2157,7 +2390,22 @@
           "unit_start_page": 90,
           "unit_end_page": 107,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "101–106",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "8.1.5"
+            ],
+            "description": "Tengkolok Diraja, Keris Panjang Diraja, Cogan Alam dan alat kebesaran lain",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2264,7 +2512,23 @@
           "unit_start_page": 108,
           "unit_end_page": 119,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "110–115",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "9.1.1",
+              "9.1.2"
+            ],
+            "description": "Perubahan sejarah Jata Negara dan pengenalan lambang pada perisai",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2360,7 +2624,22 @@
           "unit_start_page": 108,
           "unit_end_page": 119,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "116–119",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "9.1.3"
+            ],
+            "description": "Makna warna, harimau, bintang, bulan sabit dan cogan kata Jata Negara",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2462,7 +2741,23 @@
           "unit_start_page": 120,
           "unit_end_page": 133,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "122–124",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "9.2.1",
+              "9.2.2"
+            ],
+            "description": "Sejarah bendera kebangsaan dan nama Jalur Gemilang",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2558,7 +2853,22 @@
           "unit_start_page": 120,
           "unit_end_page": 133,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "125–129",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "9.2.3"
+            ],
+            "description": "Makna jalur, warna, bulan sabit dan bintang pada Jalur Gemilang",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2654,7 +2964,22 @@
           "unit_start_page": 120,
           "unit_end_page": 133,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "130–132",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "9.2.4"
+            ],
+            "description": "Etika mempamer, menaik dan menjaga bendera kebangsaan",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2756,7 +3081,23 @@
           "unit_start_page": 120,
           "unit_end_page": 133,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "122–132",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "9.2.1",
+              "9.2.2"
+            ],
+            "description": "Kajian kes cadangan tentang asal usul dan penghormatan Jalur Gemilang",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2858,7 +3199,23 @@
           "unit_start_page": 134,
           "unit_end_page": 147,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "136–140",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "9.3.1",
+              "9.3.2"
+            ],
+            "description": "Sejarah lagu Negaraku daripada lagu kebesaran Perak dan penamaan lagu",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2960,7 +3317,23 @@
           "unit_start_page": 134,
           "unit_end_page": 147,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "141–144",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "9.3.3",
+              "9.3.4"
+            ],
+            "description": "Maksud Negaraku dan etika menyanyi atau mendengar lagu kebangsaan",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -3056,7 +3429,22 @@
           "unit_start_page": 134,
           "unit_end_page": 147,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "145–146",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "9.3.5"
+            ],
+            "description": "Kaitan lagu kebangsaan dengan pembentukan jati diri dan perpaduan",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -3158,7 +3546,23 @@
           "unit_start_page": 148,
           "unit_end_page": 161,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "150–154",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "9.4.1",
+              "9.4.2"
+            ],
+            "description": "Perkara 152 Perlembagaan dan fungsi bahasa Melayu sebagai bahasa kebangsaan",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -3254,7 +3658,22 @@
           "unit_start_page": 148,
           "unit_end_page": 161,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "155–158",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "9.4.3"
+            ],
+            "description": "DBP, institusi pendidikan dan program memartabatkan bahasa kebangsaan",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -3350,7 +3769,22 @@
           "unit_start_page": 148,
           "unit_end_page": 161,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "159–160",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "9.4.4"
+            ],
+            "description": "Cabaran penggunaan bahasa Melayu dan usaha mengatasinya",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -3457,7 +3891,23 @@
           "unit_start_page": 162,
           "unit_end_page": null,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "164–166",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "9.5.1",
+              "9.5.2"
+            ],
+            "description": "Pemilihan bunga raya sebagai bunga kebangsaan, makna warna merah",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -3553,7 +4003,22 @@
           "unit_start_page": 162,
           "unit_end_page": null,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "167–169",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "9.5.3"
+            ],
+            "description": "Makna lima kelopak bunga raya dengan lima prinsip Rukun Negara",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -3655,7 +4120,23 @@
           "unit_start_page": 162,
           "unit_end_page": null,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK_NOT_VISUAL_EXERCISE",
+            "printed_page_range": "164–174",
+            "source_urls": [
+              "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+            ],
+            "matched_sp": [
+              "9.5.1",
+              "9.5.2"
+            ],
+            "description": "Kajian kes cadangan tentang sejarah dan perlambangan bunga raya",
+            "text_checked": true,
+            "topic_page_mapping_verified": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
