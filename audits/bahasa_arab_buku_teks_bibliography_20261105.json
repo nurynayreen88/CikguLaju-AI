@@ -1,0 +1,124 @@
+{
+  "subject": "Bahasa Arab KSSR Semakan",
+  "status": "BIBLIOGRAPHIC_PROVENANCE_ONLY",
+  "created": "2026-11-05",
+  "claim_limits": "Confirmed from existing Drive PDF extracted front matter (Years 4–5) and publicly readable original textbook front matter/TOC (Year 6). Visual layout and lesson-page mapping not audited.",
+  "items": [
+    {
+      "year": 2,
+      "status": "ISBN_NOT_YET_VERIFIED",
+      "existing_drive_textbook": false,
+      "alternate": "https://fliphtml5.com/svnea/bmjf/BUKU_TEKS_BAHASA_ARAB_TAHUN_2_KSSR_SEMAKAN_2017/",
+      "printed_pages_per_unit": null
+    },
+    {
+      "year": 3,
+      "status": "SCANNED_IN_DRIVE_ISBN_NOT_YET_VERIFIED",
+      "existing_drive_textbook": true,
+      "existing_drive_pdf": "https://drive.google.com/file/d/1U-j2TPeVTyLaZbU2qGDb9jmf53KAwNNH/view",
+      "printed_pages_per_unit": null
+    },
+    {
+      "year": 4,
+      "status": "ISBN_EDITION_CONFIRMED_FROM_DRIVE_FRONT_MATTER",
+      "existing_drive_textbook": true,
+      "existing_drive_pdf": "https://drive.google.com/file/d/1o53JpmljwxCUkyVYMWLSGnARs85gbncO/view",
+      "publisher": "Dewan Bahasa dan Pustaka untuk KPM",
+      "isbn": "978-983-49-2480-5",
+      "edition": "Cetakan Pertama 2019",
+      "toc_unit_pages": [
+        {
+          "unit": 1,
+          "title": "الشهور الميلادية",
+          "printed_pages": "1-28"
+        },
+        {
+          "unit": 2,
+          "title": "من في المدرسة؟",
+          "printed_pages": "29-56"
+        },
+        {
+          "unit": 3,
+          "title": "أحب مدرستي",
+          "printed_pages": "57-84"
+        },
+        {
+          "unit": 4,
+          "title": "بيتي جنتي",
+          "printed_pages": "85-112"
+        }
+      ]
+    },
+    {
+      "year": 5,
+      "status": "ISBN_EDITION_CONFIRMED_FROM_DRIVE_FRONT_MATTER",
+      "existing_drive_textbook": true,
+      "existing_drive_pdf": "https://drive.google.com/file/d/1OI3RZ8-NXE2bVSOVqSz9bEWCh2tQEN5U/view",
+      "publisher": "Dewan Bahasa dan Pustaka untuk KPM",
+      "isbn": "978-983-49-2838-4",
+      "edition": "Cetakan Pertama 2020",
+      "toc_unit_pages": [
+        {
+          "unit": 1,
+          "title": "في المطبخ",
+          "printed_pages": "1-28"
+        },
+        {
+          "unit": 2,
+          "title": "ما ألذ الطعام!",
+          "printed_pages": "29-56"
+        },
+        {
+          "unit": 3,
+          "title": "هيا نشترك في الأنشطة الصفية",
+          "printed_pages": "57-84"
+        },
+        {
+          "unit": 4,
+          "title": "رفقا بالحيوانات!",
+          "printed_pages": "85-112"
+        }
+      ]
+    },
+    {
+      "year": 6,
+      "status": "ISBN_EDITION_CONFIRMED_FROM_PUBLIC_BOOK_FRONT_MATTER",
+      "existing_drive_textbook": true,
+      "existing_drive_pdf": "https://drive.google.com/file/d/1WPab-TZG1SpqYhBIbo6Lb5wVr98_aIbP/view",
+      "publisher": "Dewan Bahasa dan Pustaka untuk KPM",
+      "isbn": "978-983-49-3300-5",
+      "edition": "Cetakan Pertama 2021",
+      "public_book_url": "https://anyflip.com/gcmci/mxcs/basic",
+      "toc_unit_pages": [
+        {
+          "unit": 1,
+          "title_arab": "حياتنا أجمل بالنظافة",
+          "printed_page_start": 1,
+          "printed_page_end": 30
+        },
+        {
+          "unit": 2,
+          "title_arab": "الشباب أمل الأمة",
+          "printed_page_start": 31,
+          "printed_page_end": 60
+        },
+        {
+          "unit": 3,
+          "title_arab": "رحلة سعيدة",
+          "printed_page_start": 61,
+          "printed_page_end": 90
+        },
+        {
+          "unit": 4,
+          "title_arab": "فدائي يا وطني",
+          "printed_page_start": 91,
+          "printed_page_end": 120
+        }
+      ]
+    }
+  ],
+  "no_new_textbook_pdf_uploaded": true,
+  "external_file_copying_approved": false,
+  "individual_rph_verified": 0,
+  "production_unchanged": true
+}

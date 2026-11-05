@@ -40,3 +40,9 @@ Status berangka ini mengira fail yang wujud, **bukan** 60 RPH yang telah disahka
 
 ### Pembetulan Tahun 6 PdP 004
 **2.1.1 → 2.1.2** dan aktiviti/kosa kata diselaraskan dengan Buku Teks Tahun 6 Unit 1 halaman bercetak 2. DSKP SP 2.1.2 ialah membaca kata berhuruf seakan sama. Status kekal DRAF/BELUM READY sehingga semakan individu dan render Word/PDF.
+
+### Padanan edisi Buku Teks (front matter PDF Drive + teks BT Year 6)
+- T4: **DBP/KPM, Cetakan Pertama 2019**, ISBN **978-983-49-2480-5** daripada PDF Drive asal.
+- T5: **DBP/KPM, Cetakan Pertama 2020**, ISBN **978-983-49-2838-4** daripada PDF Drive asal.
+- T6: **DBP/KPM, Cetakan Pertama 2021**, ISBN **978-983-49-3300-5** daripada HTML buku teks.
+- Tahun 2/3 ISBN **belum disahkan**. Semua RPH kekal DRAF, 0 READY. Fail asal dalam Drive tidak diubah.

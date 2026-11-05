@@ -83,6 +83,16 @@ def check() -> None:
         assert found["halaman_mula_buku"] == str(row["printed_page_start"])
         assert found["halaman_akhir_buku"] == str(row["printed_page_end"])
         assert found["status"] == "DRAF_SEMAK" and found["pdp_ready"] == "FALSE"
+    bibliography = json.loads((ROOT / "audits" / "bahasa_arab_buku_teks_bibliography_20261105.json").read_text(encoding="utf-8"))
+    assert len(bibliography["items"]) == 5
+    assert bibliography["individual_rph_verified"] == 0
+    assert bibliography["no_new_textbook_pdf_uploaded"] is True
+    assert m["bibliography_file"] == "audits/bahasa_arab_buku_teks_bibliography_20261105.json"
+    for year, isbn in ((4,"978-983-49-2480-5"), (5,"978-983-49-2838-4"), (6,"978-983-49-3300-5")):
+        item = next(x for x in bibliography["items"] if x["year"] == year)
+        assert item["isbn"] == isbn
+        assert m["years"][str(year)]["textbook"]["bibliographic_verification"]["isbn"] == isbn
+        assert m["years"][str(year)]["textbook"]["source_page_verified"] is False
     print("PASSED: 20 unit indexes, 60 crosswalks, 60 RPH draft files, 15 banks.")
     print("RELEASE BLOCKED: 0 READY; page-level textbook, A4 RTL and manual review missing.")
 
