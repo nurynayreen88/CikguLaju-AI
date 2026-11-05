@@ -79,6 +79,23 @@ class Thread:
         return self.target(*self.args)
 
 
+class StartupOrderTests(unittest.TestCase):
+    def test_broadcast_installed_after_durable_users_and_referral(self):
+        from pathlib import Path
+        code=(Path(__file__).resolve().parents[1] /
+              "tools/run_telegram_with_curriculum_api.py").read_text("utf-8")
+        self.assertLess(
+            code.index("DURABLE_USER_PAYMENT_STORE_ACTIVE = bool("),
+            code.index("install_web_announcement("),
+        )
+        self.assertLess(
+            code.index("PRIVATE_REFERRAL_ADMIN_POINTS_ACTIVE = install_private_referral_admin"),
+            code.index("install_web_announcement("),
+        )
+        self.assertIn("preserve_referral=PRIVATE_REFERRAL_ADMIN_POINTS_ACTIVE",code)
+        self.assertIn("and install_web_announcement(",code)
+
+
 class BroadcastTests(unittest.TestCase):
     def setUp(self):
         Thread.threads.clear()
