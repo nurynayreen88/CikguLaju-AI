@@ -44,7 +44,11 @@ def request_native_rph(data, fmt, *, opener=None):
     layout=data.get("telegram_layout")
     if not isinstance(layout,dict) or layout.get("style")!="telegram-native-rph-v1":
         raise NativeRPHUnavailable("Telegram RPH layout unavailable")
+    digest=data.get("source_digest")
+    if not isinstance(digest,str) or len(digest)!=64 or any(c not in "0123456789abcdef" for c in digest):
+        raise NativeRPHUnavailable("RPH source identity missing")
     body={
+        "source_digest":digest,
         "subject":data["subject"],
         "component":(data["selection"].split("-")[2] if data["subject"]=="PJPK" else None),
         "year":data["year"],

@@ -50,6 +50,15 @@ class ReadinessTests(unittest.TestCase):
         self.assertEqual(response.status_code, 503)
         self.assertEqual(response.get_json()["code"], "RPH_SOURCE_NOT_VERIFIED")
 
+    @patch("web.unified_rph_web._has_paid_access", return_value=True)
+    @patch("web.unified_rph_web._account", return_value=({"telegram_user_id":123}, None))
+    def test_unapproved_year5_is_not_misrepresented_as_telegram_rph(self, *_):
+        row = source_records(5, "ENGLISH")[0]
+        query = {"year":5, "subject":"ENGLISH", "unit":row["unit"], "lesson":row["token"]}
+        response = self.client.get("/api/web/rph/availability", query_string=query)
+        self.assertEqual(response.status_code, 503)
+        self.assertEqual(response.get_json()["code"], "TELEGRAM_RPH_PARITY_NOT_READY")
+
     def test_browser_hides_download_until_verified_and_shows_failures(self):
         page=(ROOT/"web_v1_static_preview"/"index.html").read_text("utf8")
         self.assertIn('async function checkRphAvailability()', page)

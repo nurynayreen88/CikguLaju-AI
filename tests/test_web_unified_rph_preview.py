@@ -97,6 +97,15 @@ class UnifiedWebRPHTests(unittest.TestCase):
                      "teacher_class": "5 Bestari", "teacher_date": "2027-03-08",
                      "teacher_time": "08:30"}
             result = self.client.get("/api/web/rph/preview", query_string=query)
+            if year == 5:
+                # The source file exists but Telegram's per-lesson release
+                # manifest has no approvals. Never silently serve a different
+                # Web-only Year 5 draft while Telegram uses another version.
+                self.assertEqual(result.status_code, 503)
+                self.assertEqual(result.get_json()["code"], "TELEGRAM_RPH_PARITY_NOT_READY")
+                self.assertEqual(
+                    self.client.get("/api/web/rph/word", query_string=query).status_code, 503)
+                continue
             self.assertEqual(result.status_code, 200, result.get_json())
             self.assertEqual(result.get_json()["teacher"], {
                 "class": "5 Bestari", "date": "2027-03-08", "time": "08:30"})
