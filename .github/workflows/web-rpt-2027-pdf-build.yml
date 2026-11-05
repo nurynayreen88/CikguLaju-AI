@@ -1,0 +1,73 @@
+name: Build staging Moral and PSV RPT 2027 PDFs
+on:
+  push:
+    branches:
+      - staging/cikgulaju-web-v1
+    paths:
+      - '.github/workflows/web-rpt-2027-pdf-build.yml'
+      - 'rpt_2027/pendidikan_moral/telegram_downloads.py'
+      - 'rpt_2027/pendidikan_moral/*_DRAF.csv'
+      - 'rpt_2027/psv/telegram_downloads.py'
+      - 'rpt_2027/psv/*_DRAF.csv'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: staging-web-rpt-2027-pdf
+  cancel-in-progress: false
+
+jobs:
+  render-verified-draft-sources:
+    if: github.ref == 'refs/heads/staging/cikgulaju-web-v1'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: staging/cikgulaju-web-v1
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PDF renderer
+        run: python -m pip install 'reportlab==4.4.9'
+      - name: Generate exact native draft PDFs and verify all ten files
+        shell: bash
+        run: |
+          python - <<'PY'
+          import importlib.util
+          from pathlib import Path
+
+          specs = (
+              ("pendidikan_moral", "RPT_Pendidikan_Moral_Tahun_%d_2027_DRAF_WEB.pdf"),
+              ("psv", "RPT_PSV_Tahun_%d_2027_DRAF_WEB.pdf"),
+          )
+          for name, filename in specs:
+              folder = Path("rpt_2027") / name
+              path = folder / "telegram_downloads.py"
+              spec = importlib.util.spec_from_file_location("web_rpt_" + name, path)
+              module = importlib.util.module_from_spec(spec)
+              spec.loader.exec_module(module)
+              for year in range(2, 7):
+                  if not module.pdf_ready(year):
+                      raise SystemExit(f"{name} Year {year}: source validation failed")
+                  target = folder / (filename % year)
+                  module.build_pdf(year, target)
+                  if target.stat().st_size < 8_000 or target.read_bytes()[:5] != b"%PDF-":
+                      raise SystemExit(f"{name} Year {year}: generated PDF validation failed")
+                  print(f"OK {name} Year {year}: {target.stat().st_size} bytes")
+          PY
+      - name: Commit PDFs to Web staging only
+        shell: bash
+        run: |
+          git add rpt_2027/pendidikan_moral/*_DRAF_WEB.pdf rpt_2027/psv/*_DRAF_WEB.pdf
+          if git diff --cached --quiet; then
+            echo "No changed PDF outputs"
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m "build(web staging): render ten 2027 Moral and PSV draft PDFs [skip ci]"
+          git push origin HEAD:staging/cikgulaju-web-v1
