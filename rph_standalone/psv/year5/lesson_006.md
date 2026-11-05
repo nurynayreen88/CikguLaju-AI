@@ -5,7 +5,7 @@
 **SK:** 2.1; 3.1  
 **SP:** 2.1.2; 3.1.1  
 **Buku Teks:** Pendidikan Seni Visual Tahun 5, ms 16–17 (unit ms 14-21)  
-**BBM:** gambar ikan bayan, kertas lukisan, cat poster, gam  
+**BBM:** Buku Teks ms 16–17, poster bercetak, imej ikan bayan, keratan majalah, pensel warna dan kertas lakaran
 **Tempoh:** 60 minit
 
 ## Objektif dan kriteria kejayaan
@@ -13,10 +13,10 @@ Murid dapat menghasilkan dua sampel dan satu lakaran pilihan untuk Sayangilah Ha
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan tema Sayangilah Habitat Kita; murid menjelaskan satu pemerhatian visual.
-**Aktiviti 1 (15 minit) — Demonstrasi:** Guru membuat demonstrasi media gambar ikan bayan, kertas lukisan, cat poster, gam; murid membanding dua kemungkinan teknik serta membuat lakaran.
-**Aktiviti 2 (25 minit) — Amali:** Murid melakar bentuk akhir dan meneroka dua kaedah: Susun dua pilihan slogan dan gambar habitat laut, periksa kejelasan hierarki poster. Murid memberi sebab pilihan.
-**Pengukuhan/Pentaksiran (10 minit):** Guru menilai dua sampel serta lakaran berlabel dan merekod kemajuan PBD.
+**Aktiviti 1 (15 minit) — Demonstrasi:** Guru rujuk BT ms 16–17 tentang sumber bercetak/digital, susun atur muka taip serta ruang hadapan dan belakang.
+**Aktiviti 2 (25 minit) — Amali:** Murid mencuba dua kombinasi keratan gambar habitat laut, susun imej ikan bayan sebagai tumpuan, uji saiz tajuk dan memilih satu reka letak poster untuk PdP 007.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menyemak dua lakaran susun atur, satu label objek utama dan kejelasan mesej pemuliharaan.
 **Penutup (5 minit):** Murid menyatakan satu kemahiran dan menyimpan karya serta membersihkan ruang.
 **Pembezaan:** Templat langkah bergambar bagi sokongan; murid mahir membanding pilihan reka bentuk.
 **Keselamatan:** Gunakan bahan tidak toksik dan alat tumpul dengan pengawasan guru.
-**Rujukan:** [DSKP Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [Buku Teks Tahun 5](https://anyflip.com/gygr/pity/basic). Aktiviti adalah adaptasi CikguLaju.
+**Rujukan:** [DSKP Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [Buku Teks Tahun 5](https://drive.google.com/file/d/1UA9arc9LrigHx-GccSJFpkTtqfskLFpg/view). Aktiviti adalah adaptasi CikguLaju.

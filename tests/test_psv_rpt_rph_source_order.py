@@ -352,6 +352,23 @@ class PSVSourceOrderTests(unittest.TestCase):
                 self.assertEqual(rows[n - 1]["Status"], "DRAF_SEMAK")
                 self.assertIn("1UA9arc9LrigHx-GccSJFpkTtqfskLFpg".lower(), text)
 
+    def test_year5_pdf_units_2_to_4_have_concrete_pupil_artwork(self):
+        """Source-specific artifacts and source link for 2026-11-05 PDF review."""
+        checks = {
+            5: ("poster", "ikan bayan"), 6: ("ikan bayan", "slogan"),
+            7: ("montaj", "ikan bayan"), 8: ("selamatkan ikan bayan", "galeri"),
+            9: ("kolaj", "kupu-kupu"), 10: ("motif", "kapal layar"),
+            11: ("kapal layar", "kolaj"), 12: ("kapal layar", "jaket"),
+            13: ("roket", "silinder"), 14: ("roket", "botol"),
+            15: ("kon", "botol plastik"), 16: ("sayap", "roket"),
+        }
+        for n, required in checks.items():
+            with self.subTest(pdp=n):
+                text = (ROOT / f"rph_standalone/psv/year5/lesson_{n:03d}.md").read_text(encoding="utf-8").lower()
+                self.assertTrue(all(k in text for k in required))
+                self.assertIn("1UA9arc9LrigHx-GccSJFpkTtqfskLFpg".lower(), text)
+                self.assertIn("**status:** draf", text)
+
     def test_year5_bunga_kemboja_tekat_is_genuine_couching(self):
         rows = read_csv(PSV / "RPT_PSV_Tahun_5_2027_DRAF.csv")
         keywords = {

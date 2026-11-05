@@ -26,3 +26,8 @@ PDF awam [PENDIDIKAN SENI VISUAL T5 SK.pdf](https://drive.google.com/file/d/1UA9
 - Unit 1 **Si Putih Menawan** (ms 6–13): karya angsa putih melalui gabungan lukisan dan capan, media sapuan/capan span serta putik kapas, garisan sayap dan latar. PdP 001–004 diperinci dengan ujian capan, lakaran, karya dan bingkai/apresiasi.
 - Unit 8 **Bingkai Gambarku** (ms 66–73): buku mempamerkan titisan **lilin** dan penghasilan bingkai selepas penghasilan panel. PdP 030–033 menggunakan **adaptasi titisan cat tidak toksik dengan pipet** supaya murid tidak mengendalikan haba/lilin panas. PdP 032 kini fokus panel titisan; PdP 033 baru membina bingkai tiga lipatan dan penyangga.
 - RPT bagi lapan PdP ini diselaraskan bagi objektif dan evidens; kelulusan penerbitan masih ditangguh.
+
+## Pemurnian aktiviti Unit 2–4
+- Unit 2 **Sayangilah Habitat Kita** (BT ms 14–21; PdP 005–008): susun atur poster, kedudukan imej ikan bayan, slogan, montaj dan apresiasi diperinci; evidens PBD ditetapkan pada produk yang boleh dilihat.
+- Unit 3 **Jaket Buku Nota** (BT ms 22–29; PdP 009–012): contoh motif kupu-kupu dan teknik potong/koyak sebagai penerokaan; produk akhir kolaj kapal layar pada jaket buku dengan ujian lipatan.
+- Unit 4 **Misi Angkasa** (BT ms 30–37; PdP 013–016): bentuk kon/silinder, botol plastik, cantuman sayap dan kestabilan model roket diperinci.
