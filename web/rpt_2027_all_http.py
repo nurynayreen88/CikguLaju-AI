@@ -93,7 +93,13 @@ def create_all_rpt_blueprint(*, root=ROOT):
         if not pdf_ready(subject, year, root=root):
             return jsonify({"error": "PDF RPT subjek/tahun ini belum tersedia dan belum disahkan"}), 503
         path = pdf_path(subject, year, root=root)
-        return send_file(path, mimetype="application/pdf", as_attachment=True,
+        from web.rpt_school_cover import for_download
+        from web.teacher_profile_store import ProfileUnavailable
+        try:
+            document = for_download(account, path, subject, year)
+        except ProfileUnavailable:
+            return jsonify({"error": "RPT dengan identiti sekolah belum dapat disediakan. Sila cuba semula."}), 503
+        return send_file(document, mimetype="application/pdf", as_attachment=True,
                          download_name=path.name, conditional=False)
 
     return bp

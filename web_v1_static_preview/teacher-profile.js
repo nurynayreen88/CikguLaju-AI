@@ -13,6 +13,122 @@ const timetableMessage = document.getElementById("timetable-save-status");
 const profileSaveButton = document.getElementById("profile-save");
 const timetableSaveButton = document.getElementById("timetable-save");
 const timetableAddButton = document.getElementById("timetable-add");
+const schoolLogoFile = document.getElementById("school-logo-file");
+const schoolLogoUpload = document.getElementById("school-logo-upload");
+const schoolLogoStatus = document.getElementById("school-logo-status");
+const schoolLogoPreview = document.getElementById("school-logo-preview");
+const schoolLogoPlaceholder = document.getElementById("school-logo-placeholder");
+let schoolLogoObjectUrl = null;
+
+function setTeacherIdentity(profile) {
+  // Only use the name explicitly saved in the shared teacher profile.
+  // Telegram widget usernames are not substitutes for the teacher's name.
+  const name = typeof profile?.display_name === "string" && profile.display_name.trim()
+    ? profile.display_name.trim() : "Cikgu";
+  const school = typeof profile?.school_name === "string" && profile.school_name.trim()
+    ? profile.school_name.trim() : "Ruang Guru";
+  document.getElementById("sidebar-teacher-name").textContent = name;
+  document.getElementById("sidebar-school-name").textContent = school;
+  document.getElementById("workspace-teacher-name").textContent = name;
+}
+
+function setSchoolLogoPreview(blob) {
+  if (schoolLogoObjectUrl) URL.revokeObjectURL(schoolLogoObjectUrl);
+  schoolLogoObjectUrl = URL.createObjectURL(blob);
+  schoolLogoPreview.src = schoolLogoObjectUrl;
+  schoolLogoPreview.hidden = false;
+  schoolLogoPlaceholder.hidden = true;
+}
+
+async function loadSchoolLogo() {
+  try {
+    const response = await fetch("/api/web/teacher/school-logo", {
+      credentials:"same-origin",cache:"no-store",
+    });
+    if (response.status === 404) {
+      if (schoolLogoObjectUrl) URL.revokeObjectURL(schoolLogoObjectUrl);
+      schoolLogoObjectUrl = null;
+      schoolLogoPreview.hidden = true;
+      schoolLogoPreview.removeAttribute("src");
+      schoolLogoPlaceholder.hidden = false;
+      schoolLogoStatus.textContent = "Belum ada logo sekolah. Pilih fail untuk memuat naik.";
+      return;
+    }
+    if (!response.ok) throw new Error("Logo sekolah tidak dapat dimuatkan.");
+    const blob = await response.blob();
+    if (blob.type !== "image/png" || blob.size > 460800) throw new Error("Logo tersimpan tidak sah.");
+    setSchoolLogoPreview(blob);
+    schoolLogoStatus.textContent = "Logo tersimpan dan akan digunakan dalam RPT.";
+  } catch (error) {
+    schoolLogoStatus.textContent = error.message;
+  }
+}
+
+schoolLogoFile.addEventListener("change", () => {
+  const file = schoolLogoFile.files?.[0];
+  schoolLogoUpload.disabled = !file;
+  if (!file) return;
+  if (file.size > 2 * 1024 * 1024 || !["image/png","image/jpeg","image/webp"].includes(file.type)) {
+    schoolLogoUpload.disabled = true;
+    schoolLogoStatus.textContent = "Pilih imej PNG, JPG atau WebP maksimum 2 MB.";
+    return;
+  }
+  setSchoolLogoPreview(file);
+  schoolLogoStatus.textContent = "Pratonton sahaja. Tekan Muat Naik Logo untuk menyimpan.";
+});
+
+async function schoolLogoToPng(file) {
+  // Canvas removes image metadata and normalizes PNG/JPEG/WebP to a compact,
+  // static PNG. Private server accepts PNG only, independently validating it.
+  const url=URL.createObjectURL(file),picture=new Image();
+  try {
+    picture.src=url;
+    await picture.decode();
+    if (picture.width < 32 || picture.height < 32 ||
+        picture.width * picture.height > 12000000)
+      throw new Error("Dimensi gambar tidak sah atau terlalu besar.");
+    for (const side of [512,420,320,240]) {
+      const factor=Math.min(1,side/Math.max(picture.width,picture.height));
+      const canvas=document.createElement("canvas");
+      canvas.width=Math.max(32,Math.round(picture.width*factor));
+      canvas.height=Math.max(32,Math.round(picture.height*factor));
+      const ctx=canvas.getContext("2d");
+      if (!ctx) throw new Error("Pemprosesan logo tidak tersedia.");
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+      ctx.drawImage(picture,0,0,canvas.width,canvas.height);
+      const png=await new Promise(resolve=>canvas.toBlob(resolve,"image/png"));
+      if (png?.type==="image/png" && png.size>0 && png.size<450*1024)
+        return png;
+    }
+    throw new Error("Fail terlalu rumit untuk dijadikan logo. Cuba gambar lebih kecil.");
+  } finally {
+    URL.revokeObjectURL(url);
+  }
+}
+
+schoolLogoUpload.addEventListener("click", async () => {
+  const file = schoolLogoFile.files?.[0];
+  if (!file || schoolLogoUpload.disabled) return;
+  schoolLogoUpload.disabled = true;
+  schoolLogoStatus.textContent = "Memproses dan menyimpan logo sekolah…";
+  try {
+    const png=await schoolLogoToPng(file);
+    const body = new FormData();
+    body.append("logo", png, "logo.png");
+    const response = await fetch("/api/web/teacher/school-logo", {
+      method:"POST",credentials:"same-origin",cache:"no-store",body,
+    });
+    const result = await response.json().catch(() => ({}));
+    if (!response.ok || result.saved !== true) throw new Error(
+      result.error || "Logo tidak berjaya dimuat naik.");
+    schoolLogoFile.value = "";
+    await loadSchoolLogo();
+    schoolLogoStatus.textContent = "Logo sekolah berjaya disimpan. RPT seterusnya akan menggunakan logo ini.";
+  } catch (error) {
+    schoolLogoStatus.textContent = error.message;
+    schoolLogoUpload.disabled = false;
+  }
+});
 
 function profileEditorData() {
   return {
@@ -146,6 +262,8 @@ async function loadTeacherProfile() {
     document.getElementById("profile-school").value=profile.school_name || "";
     document.getElementById("profile-state").value=profile.state_name || "";
     document.getElementById("profile-classes").value=profile.class_names.join("\n");
+    setTeacherIdentity(profile);
+    void loadSchoolLogo();
     teacherProfileState.classNames=[...profile.class_names];
     teacherProfileState.profileVersion=profile.version || "";
     teacherProfileState.timetableVersion=timetable.version || "";
@@ -187,6 +305,7 @@ profileForm.addEventListener("submit", async event => {
     teacherProfileState.timetableVersion=result.version;
     teacherProfileState.savedProfile=JSON.stringify(profileEditorData());
     teacherProfileState.classNames=class_names;
+    setTeacherIdentity(body);
     renderTeacherTimetable(timetableValueRows());
     if(typeof loadTeacherClasses==="function")loadTeacherClasses();
     profileMessage.textContent="Maklumat guru dan senarai kelas berjaya disimpan.";

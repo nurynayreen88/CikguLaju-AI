@@ -88,7 +88,13 @@ def create_english_rpt_blueprint(root=ROOT):
         path = pdf_path(root, year)
         if not path.is_file():
             return jsonify({"error": "Verified RPT PDF not present on Web service"}), 503
-        return send_file(path, mimetype="application/pdf", as_attachment=True,
+        from web.rpt_school_cover import for_download
+        from web.teacher_profile_store import ProfileUnavailable
+        try:
+            document = for_download(account, path, "english", year)
+        except ProfileUnavailable:
+            return jsonify({"error": "RPT dengan identiti sekolah belum dapat disediakan. Sila cuba semula."}), 503
+        return send_file(document, mimetype="application/pdf", as_attachment=True,
                          download_name=path.name, conditional=False)
 
     return bp

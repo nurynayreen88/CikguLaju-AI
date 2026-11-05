@@ -1,0 +1,44 @@
+name: Web school RPT logo and UI QA
+on:
+  push:
+    branches: [feature/web-school-rpt-logo-ui-20261105]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  school-branding:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'flask==3.1.3' 'Pillow==11.3.0' 'pypdf==5.1.0' 'reportlab==4.2.5' 'python-docx==1.2.0'
+      - name: Check server and browser syntax
+        run: |
+          python -m py_compile web/teacher_profile_routes.py web/school_logo_store.py web/rpt_school_cover.py web/rpt_2027_all_http.py web/english_rpt_2027_http.py
+          node --check web_v1_static_preview/teacher-profile.js
+      - name: Run logo, profile, RPT and interface regression suites
+        run: |
+          python -m unittest discover -s tests -p test_web_school_rpt_branding.py -v
+          python -m unittest discover -s tests -p test_web_rpt_native_proxy_stdlib.py -v
+          python -m unittest discover -s tests -p test_web_teacher_profile_timetable.py -v
+          python -m unittest discover -s tests -p test_web_shared_teacher_profile.py -v
+          python -m unittest discover -s tests -p test_web_rpt_2027_all.py -v
+          python -m unittest discover -s tests -p test_web_sidebar_navigation.py -v
+          python -m unittest discover -s tests -p test_web_logo_and_tables.py -v
+  production-import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'flask==3.1.3' 'gunicorn==23.0.0'
+      - name: Verify actual Render Web build needs no extra PDF/image packages
+        run: |
+          python -c "from tools.run_web_production import app; import web.school_logo_store, web.rpt_school_cover; assert app is not None"
+          python -m unittest discover -s tests -p test_web_rpt_native_proxy_stdlib.py -v
+          node --check web_v1_static_preview/teacher-profile.js

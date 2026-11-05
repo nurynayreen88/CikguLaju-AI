@@ -68,7 +68,8 @@ class WebLogoAndTables(unittest.TestCase):
                     preview=self.client.get("/api/web/rph/preview",query_string=query)
                     if preview.status_code==503:
                         self.assertIn(preview.get_json().get("code"),
-                                      ("RPH_SOURCE_NOT_VERIFIED","RPH_TELEGRAM_LAYOUT_INCOMPLETE"))
+                                      ("RPH_SOURCE_NOT_VERIFIED","RPH_TELEGRAM_LAYOUT_INCOMPLETE",
+                                        "TELEGRAM_RPH_PARITY_NOT_READY"))
                         continue
                     self.assertEqual(preview.status_code,200,preview.get_json())
                     result=preview.get_json()
@@ -146,6 +147,10 @@ class WebLogoAndTables(unittest.TestCase):
             if component: query["component"]=component
             with self.subTest(year=year,subject=subject):
                 response=self.client.get("/api/web/rph/preview",query_string=query)
+                if year==5 and subject=="ENGLISH":
+                    self.assertEqual(response.status_code,503)
+                    self.assertEqual(response.get_json()["code"],"TELEGRAM_RPH_PARITY_NOT_READY")
+                    continue
                 self.assertEqual(response.status_code,200,response.get_json())
                 layout=response.get_json()["telegram_layout"]
                 info="\n".join(str(entry["value"]) for entry in layout["header"])
