@@ -1,0 +1,21 @@
+name: English Year1-6 960-SOW audio provenance safety audit
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'audits/english_y1_y6_960_sow_audio_index_20261105.json'
+      - 'audits/english_y1_y6_audio_source_risk_register_20261105.json'
+      - 'tests/test_english_y1_y6_960_sow_audio_provenance_20261105.py'
+      - '.github/workflows/english-y1-y6-audio-provenance-20261105.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  sow-audio-960:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: All 960 SOW lessons and known wrong-source audio safety checks
+        run: python -m unittest discover -s tests -p 'test_english_y1_y6_960_sow_audio_provenance_20261105.py' -v
