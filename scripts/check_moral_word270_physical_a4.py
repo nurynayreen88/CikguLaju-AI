@@ -66,6 +66,8 @@ def audit_one(year: int, output: Path, soffice: str) -> None:
                 raise AssertionError((year, idx, f"{label} missing from printed page"))
         if any(flag in text for flag in ("DRAF SEMAK", "BELUM READY", "BELUM_FINAL_READY")):
             raise AssertionError((year, idx, "internal audit label leaked"))
+        if "**" in text or "`" in text:
+            raise AssertionError((year, idx, "raw Markdown formatting leaked into printable RPH"))
     print(f"PASS YEAR{year}: 54/54 independent physical A4 Word-rendered RPH pages")
 
 
