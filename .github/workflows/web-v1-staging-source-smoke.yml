@@ -1,0 +1,58 @@
+name: Web V1 staging source smoke
+on:
+  push:
+    branches:
+      - staging/cikgulaju-web-v1
+    paths:
+      - .github/workflows/web-v1-staging-source-smoke.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-live-catalog:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Verify staging Web uses checksum-verified v26.00 copy
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, time, urllib.error, urllib.request
+
+          base = "https://cikgulaju-web-v1-api-test.onrender.com"
+          def get(path):
+              req = urllib.request.Request(base + path, headers={"User-Agent": "CikguLaju-Staging-Smoke/1.0"})
+              try:
+                  with urllib.request.urlopen(req, timeout=20) as reply:
+                      return reply.status, json.load(reply)
+              except urllib.error.HTTPError as exc:
+                  try:
+                      return exc.code, json.load(exc)
+                  except Exception:
+                      return exc.code, {}
+          last = None
+          for attempt in range(30):
+              try:
+                  health_code, health = get("/health")
+                  source_code, source = get("/api/source/status")
+                  last = (health_code, health, source_code, source)
+                  if (health_code == 200 and health.get("database_connected") is True
+                      and health.get("generation_enabled") is False
+                      and source_code == 200
+                      and source.get("copy_version") == "v26_00"
+                      and source.get("web_copy_verified") is True
+                      and source.get("telegram_parity_verified") is False):
+                      break
+              except Exception as exc:
+                  last = repr(exc)
+              time.sleep(8)
+          else:
+              raise SystemExit("Verified staging curriculum copy unavailable: " + str(last)[:400])
+          public_code, public_result = get("/api/options?year=2&kind=subjects")
+          assert public_code in (401, 403, 503), (public_code, public_result)
+          status_code, status = get("/api/deployment/status")
+          assert status_code == 200 and status.get("public_launch_ready") is False
+          print("PASS: staging Web curriculum v26.00 checksum verified; private catalog auth enforced; generation and public launch disabled.")
+          PY
