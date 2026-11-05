@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-05",
+  "scope": "Pendidikan Moral Year6 Unit3 PdP007–009",
+  "source": {
+    "edition": "KSSR Semakan 2017",
+    "publisher": "Dewan Bahasa dan Pustaka",
+    "publication_year": 2021,
+    "text_url": "https://fliphtml5.com/sbinx/haph/Buku_Teks_Pendidikan_Moral_Tahun_6_%28KSSR_Semakan_2017%29/"
+  },
+  "status": "TEXT_ONLY_REVIEW_NOT_VISUAL_APPROVAL",
+  "notes": [
+    "Text/page headings from published edition corroborate revised teaching tasks. No full visual page-by-page approval or observed pupil performance is claimed.",
+    "Historic 24-lesson old-edition visual ledger remains EXCLUDED from correct-edition activity approvals.",
+    "All three RPH retain DRAF, original SK/SP, and pending A4 physical rendering and real Telegram teacher testing."
+  ],
+  "entries": [
+    {
+      "lesson": 7,
+      "unit": 3,
+      "printed_pages": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "book_anchors": [
+        "Kita Anak Malaysia / MyKad",
+        "Negaraku Tanggungjawabku / hak dan kewajipan"
+      ],
+      "corrected": [
+        "objective",
+        "set_induksi",
+        "aktiviti_1",
+        "aktiviti_2",
+        "pbd"
+      ],
+      "evidence_level": "BOOK_TEXT_CONTEXT_ONLY_PEND_VISUAL"
+    },
+    {
+      "lesson": 8,
+      "unit": 3,
+      "printed_pages": [
+        26,
+        27
+      ],
+      "book_anchors": [
+        "Fikir Sebelum Kongsi / peta minda semakan berita",
+        "Jaga Nama Negara Tanggungjawab Bersama / perbahasan batas media sosial"
+      ],
+      "corrected": [
+        "objective",
+        "set_induksi",
+        "aktiviti_1",
+        "aktiviti_2",
+        "pbd"
+      ],
+      "evidence_level": "BOOK_TEXT_CONTEXT_ONLY_PEND_VISUAL"
+    },
+    {
+      "lesson": 9,
+      "unit": 3,
+      "printed_pages": [
+        28,
+        29,
+        30
+      ],
+      "book_anchors": [
+        "Jaga Diri Lindungi Negara",
+        "Tanggungjawab Dilaksanakan Kewajipan Terlaksana",
+        "Mari Uji Diri / Kempen E-waste"
+      ],
+      "corrected": [
+        "objective",
+        "set_induksi",
+        "aktiviti_1",
+        "aktiviti_2",
+        "pbd"
+      ],
+      "evidence_level": "BOOK_TEXT_CONTEXT_ONLY_PEND_VISUAL"
+    }
+  ]
+}
