@@ -10,7 +10,7 @@
 
 **Set induksi:** Guru memaparkan فبراير dengan susunan huruf salah dan murid membetulkannya.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan ejaan Januari hingga Mac; murid memerhatikan alif dan titik serta menyalin.
+**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru merujuk latihan menulis bulan Masihi pada Buku Teks Tahun 4 halaman bercetak 10 (misalnya فبراير، مايو، أغسطس), kemudian murid menjejak sambungan huruf sebelum menulis tanpa contoh.
 
 **Aktiviti 2 — Aplikasi murid:** Murid melengkapkan kalendar mini Januari hingga Jun dengan nama Arab yang tepat, kemudian semak pasangan.
 
@@ -28,3 +28,6 @@
 **Audit halaman:** Tiada nombor halaman individu disahkan; jangan nyatakan muka surat khusus kepada guru sebelum semakan buku teks.
 
 **Status:** DRAF_STAGING / BELUM READY. Bukan bahan LIVE Telegram atau Web. Teks/aktiviti ini merupakan cadangan berpandukan fokus DSKP/RPT, tidak boleh dianggap padanan tepat halaman buku teks, dan belum diuji dalam Word/PDF A4 RTL.
+
+**Audit buku teks (6 Nov 2026):** Unit 1, halaman bercetak **10**. Buku Teks Bahasa Arab Tahun 4 DBP/KPM cetakan pertama 2019, ISBN 978-983-49-2480-5; PDF asal: https://drive.google.com/file/d/1o53JpmljwxCUkyVYMWLSGnARs85gbncO/view.
+**Tahap sokongan SP/aktiviti:** MATCH_BOOK_PAGE_SP. SP 3.2.1 tercetak pada latihan menulis bulan Masihi halaman 10. Rujukan ini belum mengesahkan turutan RPT 2027, fail Word/PDF RTL atau kelulusan individu. **DRAF / BELUM READY**.

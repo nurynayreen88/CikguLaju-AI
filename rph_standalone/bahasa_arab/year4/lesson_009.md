@@ -10,7 +10,7 @@
 
 **Set induksi:** Guru membaca ما هذا الشهر؟ secara nada rata dan nada soal, murid memilih yang betul.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan jeda dan penekanan bagi soalan ما هذا الشهر؟ dan jawapan هذا الشهر شهر مارس.
+**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru mengambil latihan soal-jawab pada buku halaman 25 (ما هذا الشهر؟، متى يوم ميلادك؟) untuk memodelkan nada tanya, jeda dan jawapan; murid meniru sebutan.
 
 **Aktiviti 2 — Aplikasi murid:** Murid berpasangan menjadi pengacara kalendar: seorang bertanya, seorang menjawab menggunakan empat kad bulan.
 
@@ -28,3 +28,6 @@
 **Audit halaman:** Tiada nombor halaman individu disahkan; jangan nyatakan muka surat khusus kepada guru sebelum semakan buku teks.
 
 **Status:** DRAF_STAGING / BELUM READY. Bukan bahan LIVE Telegram atau Web. Teks/aktiviti ini merupakan cadangan berpandukan fokus DSKP/RPT, tidak boleh dianggap padanan tepat halaman buku teks, dan belum diuji dalam Word/PDF A4 RTL.
+
+**Audit buku teks (6 Nov 2026):** Unit 1, halaman bercetak **25**. Buku Teks Bahasa Arab Tahun 4 DBP/KPM cetakan pertama 2019, ISBN 978-983-49-2480-5; PDF asal: https://drive.google.com/file/d/1o53JpmljwxCUkyVYMWLSGnARs85gbncO/view.
+**Tahap sokongan SP/aktiviti:** MATCH_BOOK_PAGE_SP. SP 1.3.2 tercetak pada latihan sebutan soal-jawab bulan halaman 25. Rujukan ini belum mengesahkan turutan RPT 2027, fail Word/PDF RTL atau kelulusan individu. **DRAF / BELUM READY**.
