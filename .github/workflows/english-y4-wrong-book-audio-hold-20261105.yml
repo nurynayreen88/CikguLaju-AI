@@ -1,0 +1,23 @@
+name: English Year4 wrong-textbook audio fail-closed regression
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'audits/english_y4_wrong_book_audio_hold_manifest_20261105.json'
+      - 'web/english_y4_wrong_book_audio_hold_20261105.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - 'tests/test_english_y4_wrong_book_audio_hold_20261105.py'
+      - '.github/workflows/english-y4-wrong-book-audio-hold-20261105.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  fail-closed-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python -m unittest discover -s tests -p 'test_english_y4_wrong_book_audio_hold_20261105.py' -v
+      - run: python -m unittest discover -s tests -p 'test_english_y4_l030_audio_guard.py' -v
+      - run: python -m unittest discover -s tests -p 'test_english_y4_production_launcher_parity_20261105.py' -v
