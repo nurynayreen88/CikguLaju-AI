@@ -6,6 +6,7 @@ import sys
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
 from web.sejarah_2027_staging_source import SejarahNotReady, lesson, preview_only, source_fingerprint, source_paths
+from web.rph_shared_source_identity import source_fingerprint as cross_deploy_fingerprint
 
 count=0
 for y in (4,5,6):
@@ -14,6 +15,7 @@ for y in (4,5,6):
         row=preview_only(y,n)
         assert row["id"]==f"SEJ-T{y}-PDP-{n:03d}"
         identity=source_fingerprint(y,n)
+        assert identity == cross_deploy_fingerprint(y,"SEJARAH",n), ("Telegram-Web fingerprint diverged",y,n)
         assert re.fullmatch(r"[0-9a-f]{64}",identity)
         hashes.add(identity)
         try:

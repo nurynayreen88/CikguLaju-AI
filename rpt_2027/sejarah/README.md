@@ -57,3 +57,9 @@ Semua kerja masih pada PR #341 DRAF. Jangan gabung atau deploy atas keputusan QA
 - Semua Tahun 4–6 (36 PdP setiap tahun) mempunyai padanan teks digital buku, halaman bercetak, fokus SP dan sumber dalam `audits/sejarah_y4_y6_primary_textbook_page_evidence_20261106.json`.
 - Baki 53 Tahun 5/6 dilengkapkan menerusi `audits/sejarah_y5_y6_remaining_53_book_text_crosswalk_20261106.json`.
 - **Penting:** Bukti teks/fokus bab tidak bermaksud gambar dan arahan latihan bagi setiap halaman telah disahkan. Semakan guru, pengesahan latihan sebenar, logo profil sekolah dan ujian penjana natif Telegram–Web masih wajib. Semua RPH kekal DRAF; `release_ready=false` dan eksport pengguna ditutup.
+
+## Cap jari sumber silang Telegram–Web (6 November 2026)
+
+- Semua **108/108** cap jari pelajaran Sejarah kini boleh dijana melalui `web/rph_shared_source_identity.source_fingerprint(year, "SEJARAH", pdp)`, menggunakan fail yang **sama dan susunan yang sama** dengan `web/sejarah_2027_staging_source.source_fingerprint()`. Ujian membandingkan kedua-duanya.
+- Manifest kelulusan bebas merekod 108 rekod padanan buku teks, tetapi **0 kelulusan visual latihan dan 0 kelulusan guru**. Cap jari adalah identiti bahan, bukan surat kelulusan. Laluan eksport awam kekal disekat.
+- Ini tidak mengaktifkan Sejarah dalam endpoint natif Telegram atau Web; ujian pengguna dan adapter natif masih diperlukan.

@@ -3,7 +3,7 @@
   "academic_year": 2027,
   "branch": "staging/sejarah-rpt-rph-y4-y6-2027-20261105",
   "pr": 341,
-  "status": "DRAF_TECHNICAL_RENDER_QA_PASSED_NOT_FINAL_READY",
+  "status": "108_TEXT_CROSSWALK_COMPLETE_TECHNICAL_QA_PASSED_VISUAL_TEACHER_NATIVE_BLOCKED",
   "last_verified_commit": "bd170c29bda6217220b9379e229eb435237accc6",
   "technical_QA": {
     "markdown_rph": 108,
@@ -14,7 +14,11 @@
     "rpt_pdf_pages": 15,
     "word_rph_one_page_each": true,
     "pdf_page_boundary_flags": 0,
-    "github_actions_three_checks_success": true
+    "github_actions_three_checks_success": true,
+    "textbook_digital_text_topic_crosswalk": 108,
+    "textbook_exercise_page_visual_checks_passed": 0,
+    "teacher_individual_signoffs_passed": 0,
+    "sejarah_telegram_web_native_delivery_checked": false
   },
   "release_blockers": [
     "textbook exercise page per lesson",
@@ -46,7 +50,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "4–7",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -68,7 +75,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "8–9",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -90,7 +100,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "10",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -112,7 +125,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "11–12",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -135,7 +151,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "18–21",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -157,7 +176,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "22–23",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -179,7 +201,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "24",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -202,7 +227,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "32–35",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -224,7 +252,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "36–37",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -246,7 +277,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "38–40",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -269,7 +303,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "32–40",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -292,7 +329,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "46–49",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -314,7 +354,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "50–51",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -336,7 +379,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "52–54",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -359,7 +405,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "60–63",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -381,7 +430,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "64–65",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -403,7 +455,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "66–67",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -426,7 +481,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "74–77",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -448,7 +506,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "78–79",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -470,7 +531,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "80–82",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -493,7 +557,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "74–84",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -516,7 +583,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "88–91",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -538,7 +608,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "92–94",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -560,7 +633,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "95–98",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -583,7 +659,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "106–109",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -605,7 +684,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "110–115",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -626,7 +708,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "109, 117–119",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -649,7 +734,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "122–125",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -671,7 +759,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "126–127",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -693,7 +784,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "128–131",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -716,7 +810,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "122–131",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -740,7 +837,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "140–145",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -762,7 +862,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "146–148",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -786,7 +889,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "156–159",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -808,7 +914,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "160–162",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 4,
@@ -831,7 +940,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "156–167",
+      "textbook_text_source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
     },
     {
       "year": 5,
@@ -854,7 +966,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "4–6",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -876,7 +991,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "7",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -898,7 +1016,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "8–9",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -919,7 +1040,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "10",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -942,7 +1066,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "18–21",
+      "textbook_text_source_url": "https://online.anyflip.com/iawvx/fevz/files/basic-html/page24.html"
     },
     {
       "year": 5,
@@ -965,7 +1092,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "22–24",
+      "textbook_text_source_url": "https://online.anyflip.com/iawvx/fevz/files/basic-html/page28.html"
     },
     {
       "year": 5,
@@ -987,7 +1117,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "25",
+      "textbook_text_source_url": "https://online.anyflip.com/iawvx/fevz/files/basic-html/page31.html"
     },
     {
       "year": 5,
@@ -1011,7 +1144,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "32, 34",
+      "textbook_text_source_url": "https://online.anyflip.com/iawvx/fevz/files/basic-html/page38.html"
     },
     {
       "year": 5,
@@ -1034,7 +1170,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "37, 39",
+      "textbook_text_source_url": "https://online.anyflip.com/iawvx/fevz/files/basic-html/page43.html"
     },
     {
       "year": 5,
@@ -1057,7 +1196,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "32–43",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1080,7 +1222,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "45–49",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1102,7 +1247,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "50–52",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1124,7 +1272,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "53–56",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1148,7 +1299,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "60–63",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1170,7 +1324,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "64–68",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1194,7 +1351,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "76–79",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1216,7 +1376,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "80–85",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1239,7 +1402,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "76–88",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1262,7 +1428,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "92–96",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1285,7 +1454,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "97–100",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1307,7 +1479,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "101–106",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1331,7 +1506,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "110–115",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1353,7 +1531,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "116–119",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1376,7 +1557,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "122–124",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1398,7 +1582,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "125–129",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1420,7 +1607,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "130–132",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1443,7 +1633,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "122–132",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1466,7 +1659,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "136–140",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1489,7 +1685,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "141–144",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1511,7 +1710,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "145–146",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1534,7 +1736,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "150–154",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1556,7 +1761,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "155–158",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1578,7 +1786,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "159–160",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1602,7 +1813,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "164–166",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1624,7 +1838,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "167–169",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 5,
@@ -1647,7 +1864,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "164–174",
+      "textbook_text_source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
     },
     {
       "year": 6,
@@ -1670,7 +1890,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "4–9",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -1692,7 +1915,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "10–15",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -1714,7 +1940,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "16",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -1737,7 +1966,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "25–26",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -1759,7 +1991,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "27",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -1781,7 +2016,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "28–30",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -1803,7 +2041,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "35–38",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -1825,7 +2066,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "39–43",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -1847,7 +2091,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "44–46",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -1870,7 +2117,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "35–46",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -1893,7 +2143,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "52–57",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -1915,7 +2168,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "58–63",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -1937,7 +2193,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "64–67",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -1958,7 +2217,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "68–71",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -1981,7 +2243,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "78–83",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -2003,7 +2268,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "84–85",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -2025,7 +2293,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "86–88",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -2048,7 +2319,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "78–89",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -2070,7 +2344,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "94–96",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -2092,7 +2369,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "96–98",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -2114,7 +2394,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "99–101",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -2136,7 +2419,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "108–115",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -2158,7 +2444,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "116–117",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -2180,7 +2469,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "118–120",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -2202,7 +2494,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "126–128",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -2224,7 +2519,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "129–133",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -2246,7 +2544,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "134–139",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -2269,7 +2570,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "126–139",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -2292,7 +2596,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "144–148",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -2314,7 +2621,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "149–152",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -2336,7 +2646,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "153–157",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -2359,7 +2672,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "162–165",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -2381,7 +2697,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "166–167",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -2403,7 +2722,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "168–169",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -2424,7 +2746,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "170–172",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     },
     {
       "year": 6,
@@ -2447,7 +2772,10 @@
       "teacher_individual_signoff": false,
       "school_profile_logo_verified": false,
       "telegram_web_native_parity_verified": false,
-      "release_ready": false
+      "release_ready": false,
+      "textbook_digital_text_topic_crosswalk": true,
+      "textbook_printed_page_range": "162–172",
+      "textbook_text_source_url": "https://fliphtml5.com/itcew/pnmn"
     }
   ]
 }
