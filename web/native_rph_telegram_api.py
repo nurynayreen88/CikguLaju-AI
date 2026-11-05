@@ -130,11 +130,19 @@ def build_native_input(payload):
         raise ValueError("Invalid unit")
     if fmt not in MIMES:
         raise ValueError("Invalid requested format")
-    if not isinstance(teacher,dict) or set(teacher)!={"class","date","time"}:
+    # Legacy clients send class/date/time. New Web adds an optional pupil
+    # count; keep old requests valid while validating the new value strictly.
+    if (not isinstance(teacher,dict)
+            or set(teacher) not in ({"class","date","time"},
+                                   {"class","date","time","students"})):
         raise ValueError("Invalid teacher fields")
     cls=_require_text(teacher["class"],40,allow_empty=True).strip()
     dt=_require_text(teacher["date"],10,allow_empty=True).strip()
     tm=_require_text(teacher["time"],40,allow_empty=True).strip()
+    students=_require_text(teacher.get("students",""),3,allow_empty=True).strip()
+    if students:
+        if not re.fullmatch(r"[1-9][0-9]{0,2}",students) or not 1<=int(students)<=200:
+            raise ValueError("Invalid number of pupils")
     if cls and not re.fullmatch(r"[\w .\-/()]+",cls):
         raise ValueError("Invalid class")
     if dt:
@@ -209,7 +217,7 @@ def build_native_input(payload):
             if subject=="ENGLISH" else
             ("Isnin","Selasa","Rabu","Khamis","Jumaat","Sabtu","Ahad")
         )[day.weekday()] if day else ""),
-        "rph_students":"",
+        "rph_students":students,
     }
     # These are the exact selection markers set by Telegram callbacks. The
     # PJPK/PSV native row adapters otherwise silently return the older generic
