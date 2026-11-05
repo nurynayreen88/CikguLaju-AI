@@ -19,7 +19,7 @@ Murid memperagakan tindakan berdasarkan **5.5: Mengamalkan sikap hemah tinggi de
 
 **Aktiviti 1 (20 minit) — Latihan dialog berhemah:** Guru membahagi watak petugas kaunter, pelanggan dan pemerhati, merujuk dialog m/s 43 serta ungkapan m/s 45. Murid merangka skrip pendek tentang giliran, pertanyaan dan ucapan terima kasih sebelum melakonkan amalan hemah tinggi demi imej negara (SP 5.5).
 
-**Aktiviti 2 (20 minit) — Peragakan serta nilai:** Murid memperagakan dua situasi layanan sopan; guru dan pemerhati menandakan kata sapaan, kejelasan jawapan dan sikap menghormati. Murid membaiki satu kesilapan lalu melengkapkan item berkaitan amalan hemah tinggi daripada m/s 47–48 (SP 5.5).
+**Aktiviti 2 (20 minit) — Peragakan serta nilai:** Murid memperagakan dua situasi layanan sopan; guru dan pemerhati menandakan kata sapaan, kejelasan jawapan dan sikap menghormati. Murid membaiki satu kesilapan lalu melengkapkan item berkaitan amalan hemah tinggi daripada m/s 47–48 (SP 5.5). Guru menilai dua indikator amalan hemah tinggi melalui borang pemerhatian dan membimbing murid membaiki dialog.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Semak senarai pemerhatian perlakuan bagi SP 5.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 

@@ -19,7 +19,7 @@ Murid memperagakan tindakan berdasarkan **8.5: Mengamalkan sikap adil demi kesej
 
 **Aktiviti 1 (20 minit) — Rancang tugasan saksama:** Guru menggunakan kisah 'Jalankan Tugas Secara Saksama' m/s 75 dan kad pilihan kumpulan m/s 76. Murid membahagikan tugas projek secara adil berdasarkan kebolehan, masa dan peluang setiap ahli (SP 8.5).
 
-**Aktiviti 2 (20 minit) — Laksana keputusan adil:** Murid melakonkan mesyuarat agihan tugas dengan ketua kumpulan dan pemerhati berdasarkan m/s 76; guru merekod sekurang-kurangnya dua tindakan tidak memilih kasih dan memberi maklum balas. Murid menjawab item pentaksiran m/s 77–78 (SP 8.5).
+**Aktiviti 2 (20 minit) — Laksana keputusan adil:** Murid melakonkan mesyuarat agihan tugas dengan ketua kumpulan dan pemerhati berdasarkan m/s 76; guru merekod sekurang-kurangnya dua tindakan tidak memilih kasih dan memberi maklum balas. Murid menjawab item pentaksiran m/s 77–78 (SP 8.5). Guru menggunakan senarai semak untuk menilai pembahagian tugas dan membimbing murid membaiki keputusan yang tidak saksama.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Semak senarai pemerhatian perlakuan bagi SP 8.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 

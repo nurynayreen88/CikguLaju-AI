@@ -19,7 +19,7 @@ Murid memperagakan tindakan berdasarkan **12.5: Mengamalkan sikap bekerjasama de
 
 **Aktiviti 1 (20 minit) — Pelan projek kerjasama:** Guru memperlihatkan projek Minggu Cegah Jenayah m/s 113–114 dan contoh komuniti menjalankan tugas bersama m/s 115. Murid membentuk kumpulan dengan tugas jelas dan merancang aktiviti bantuan komuniti secara selamat tanpa menjalankan tugas penguatkuasaan (SP 12.5).
 
-**Aktiviti 2 (20 minit) — Laksanakan dan semak kerjasama:** Murid melaksanakan simulasi penyediaan poster atau kit kesedaran; guru menilai pembahagian tugas, tolong-menolong dan komunikasi yang dapat dilihat. Murid melengkapkan refleksi berdasarkan latihan m/s 117–118 (SP 12.5).
+**Aktiviti 2 (20 minit) — Laksanakan dan semak kerjasama:** Murid melaksanakan simulasi penyediaan poster atau kit kesedaran; guru menilai pembahagian tugas, tolong-menolong dan komunikasi yang dapat dilihat. Murid melengkapkan refleksi berdasarkan latihan m/s 117–118 (SP 12.5). Guru mengesahkan dua tindakan bekerjasama yang benar-benar ditunjukkan dan mencatat satu langkah penambahbaikan.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Semak senarai pemerhatian perlakuan bagi SP 12.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 

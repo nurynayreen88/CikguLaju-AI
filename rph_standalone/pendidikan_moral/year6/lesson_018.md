@@ -19,7 +19,7 @@ Murid memperagakan tindakan berdasarkan **6.5: Mengamalkan sikap menghormati ide
 
 **Aktiviti 1 (20 minit) — Persediaan kempen hormat lambang:** Guru memperlihatkan buku m/s 54–56 tentang menjaga lambang negara. Murid merangka kad kempen yang menyenaraikan dua tindakan hormat seperti penggunaan Jalur Gemilang secara betul dan menjaga bahan pameran kebangsaan (SP 6.5).
 
-**Aktiviti 2 (20 minit) — Simulasi memelihara lambang:** Murid melakonkan peranan petugas pameran dan pengunjung, menegur secara sopan apabila lambang negara tidak dijaga; guru merekod dua tindakan yang benar-benar dipraktikkan dan memberi maklum balas. Murid menjawab item pemilihan tindakan pada m/s 57–58 (SP 6.5).
+**Aktiviti 2 (20 minit) — Simulasi memelihara lambang:** Murid melakonkan peranan petugas pameran dan pengunjung, menegur secara sopan apabila lambang negara tidak dijaga; guru merekod dua tindakan yang benar-benar dipraktikkan dan memberi maklum balas. Murid menjawab item pemilihan tindakan pada m/s 57–58 (SP 6.5). Guru menggunakan senarai semak perlakuan menghormati identiti negara dan meminta Murid membuat satu pembetulan bersebab.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Semak senarai pemerhatian perlakuan bagi SP 6.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 

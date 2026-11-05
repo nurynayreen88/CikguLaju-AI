@@ -19,7 +19,7 @@ Murid memperagakan tindakan berdasarkan **9.5: Mengamalkan sikap berani memperta
 
 **Aktiviti 1 (20 minit) — Sedia tindakan berani:** Guru memperlihatkan kad lakonan m/s 84 dan soalan permainan 'Tingkatkan Imej Negara' m/s 86. Murid merancang respons sopan apabila terdapat maklumat salah tentang negara, termasuk menyemak fakta dahulu dan mengelakkan pertengkaran (SP 9.5).
 
-**Aktiviti 2 (20 minit) — Lakonan membela maruah secara berhemah:** Murid memperagakan respons terhadap dua situasi cabaran, pemerhati mencatat tindakan berani yang tidak membahayakan diri, guru membimbing pembetulan. Murid menjawab soalan pada m/s 87–88 (SP 9.5).
+**Aktiviti 2 (20 minit) — Lakonan membela maruah secara berhemah:** Murid memperagakan respons terhadap dua situasi cabaran, pemerhati mencatat tindakan berani yang tidak membahayakan diri, guru membimbing pembetulan. Murid menjawab soalan pada m/s 87–88 (SP 9.5). Guru menilai dua bukti tindakan berani berhemah dalam simulasi dan membimbing murid membuat satu penambahbaikan.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Semak senarai pemerhatian perlakuan bagi SP 9.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 

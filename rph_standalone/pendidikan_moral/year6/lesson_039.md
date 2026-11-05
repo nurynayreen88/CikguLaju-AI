@@ -19,7 +19,7 @@ Murid memperagakan tindakan berdasarkan **13.5: Mengamalkan sikap bersederhana d
 
 **Aktiviti 1 (20 minit) — Kempen menjaga kemudahan awam:** Guru menggunakan situasi menjaga kemudahan m/s 124–126. Murid merangka poster dengan dua tindakan sederhana dan selamat, seperti tidak merosakkan peralatan, menggunakan air/elektrik secara berpatutan dan memaklumkan kerosakan kepada orang bertanggungjawab (SP 13.5).
 
-**Aktiviti 2 (20 minit) — Simulasi pengguna bertanggungjawab:** Murid melakonkan cara menggunakan kemudahan awam tanpa membazir, pemerhati mencatat dua tindakan yang diperagakan dan guru memberikan maklum balas. Murid menjawab item m/s 127–128; simulasi tidak dianggap bukti amalan berterusan (SP 13.5).
+**Aktiviti 2 (20 minit) — Simulasi pengguna bertanggungjawab:** Murid melakonkan cara menggunakan kemudahan awam tanpa membazir, pemerhati mencatat dua tindakan yang diperagakan dan guru memberikan maklum balas. Murid menjawab item m/s 127–128; simulasi tidak dianggap bukti amalan berterusan (SP 13.5). Guru memeriksa dua tindakan menggunakan kemudahan awam dengan bertanggungjawab serta memberi maklum balas khusus.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Semak senarai pemerhatian perlakuan bagi SP 13.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 

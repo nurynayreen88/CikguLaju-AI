@@ -19,7 +19,7 @@ Murid menghuraikan atau menilai berdasarkan **9.3: Merumuskan kesan pengabaian a
 
 **Aktiviti 1 (20 minit) — Akibat mengabaikan maruah negara:** Guru menggunakan e-mel 'Nama Negara, Kita Pelihara' m/s 83. Murid membandingkan dua akibat jika rakyat tidak mempertahankan nama baik negara dengan tindakan berani yang bertanggungjawab (SP 9.3).
 
-**Aktiviti 2 (20 minit) — Perasaan mempertahankan nama baik:** Guru meminta murid merujuk kad lakonan m/s 84 dan dialog semangat negara m/s 85; murid menulis ayat perasaan bangga atau kecewa berserta sebab apabila maruah negara dipelihara atau diabaikan (SP 9.4).
+**Aktiviti 2 (20 minit) — Perasaan mempertahankan nama baik:** Guru meminta murid merujuk kad lakonan m/s 84 dan dialog semangat negara m/s 85; murid menulis ayat perasaan bangga atau kecewa berserta sebab apabila maruah negara dipelihara atau diabaikan (SP 9.4). Murid menyemak semula satu respons dan membetulkan alasan mengikut maklum balas guru.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Semak justifikasi serta dua kesan bagi SP 9.3 dan ayat perasaan yang sesuai bagi SP 9.4. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 
