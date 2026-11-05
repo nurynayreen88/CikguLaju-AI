@@ -9,13 +9,13 @@
 **SP:** 10.1 — Menyenaraikan cara bersikap jujur demi kesejahteraan negara. | 10.2 — Menghuraikan kepentingan bersikap jujur demi kesejahteraan negara.  
 **Fokus:** Pengetahuan dan cara perlakuan  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, jadual fakta-andaian-laporan, borang semak; fail `materials/pendidikan_moral/year6/unit_10_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 10, m/s 92–95 (bahagian **Kejujuran Diamalkan Kesejahteraan Negara Diutamakan**); Kad situasi A/B, jadual fakta-andaian-laporan, borang semak; fail `materials/pendidikan_moral/year6/unit_10_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid menyiapkan tugasan **SP 10.1** (Menyenaraikan cara bersikap jujur demi kesejahteraan negara.) dan **SP 10.2** (Menghuraikan kepentingan bersikap jujur demi kesejahteraan negara.). Kriteria kejayaan: setiap murid menghasilkan **senarai tiga contoh atau perkara yang tepat** bagi SP pertama dan **dua huraian yang disokong sebab** bagi SP kedua, dengan contoh yang sesuai dengan situasi unit.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Seorang warga perlu bersikap jujur ketika menggunakan perkhidmatan awam**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan bahagian **Kejujuran Diamalkan Kesejahteraan Negara Diutamakan** daripada Buku Teks KSSR Semakan 2017 (DBP 2021), m/s 92, sebagai rangsangan mengikut SP PdP ini. Murid meneliti kandungan buku dan menyatakan satu tindakan atau pertimbangan moral beserta alasan ringkas sebelum memulakan tugasan.
 
 **Aktiviti 1 (20 minit) — Kejujuran Diamalkan Kesejahteraan Negara Diutamakan:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 10, m/s 92–95, bahagian **Kejujuran Diamalkan Kesejahteraan Negara Diutamakan** sebagai rangsangan. Murid menyenaraikan tiga cara bersikap jujur dalam urusan masyarakat seperti berkata benar, mengurus harta dengan amanah dan tidak menipu (SP 10.1). Guru menyemak ketepatan evidens individu mengikut kata tugas SP dan memandu pembetulan yang perlu.
 

@@ -9,13 +9,13 @@
 **SP:** 11.1 — Menyenaraikan contoh suri teladan yang mengharumkan nama negara dalam pelbagai bidang. | 11.2 — Menjelaskan cara amalan rajin demi kemajuan negara.  
 **Fokus:** Pengetahuan dan cara perlakuan  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, pelan langkah kecil dan jadual kemajuan, borang semak; fail `materials/pendidikan_moral/year6/unit_11_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 11, m/s 102–105 (bahagian **Usaha Berterusan Membuahkan Kejayaan**); Kad situasi A/B, pelan langkah kecil dan jadual kemajuan, borang semak; fail `materials/pendidikan_moral/year6/unit_11_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid menyiapkan tugasan **SP 11.1** (Menyenaraikan contoh suri teladan yang mengharumkan nama negara dalam pelbagai bidang.) dan **SP 11.2** (Menjelaskan cara amalan rajin demi kemajuan negara.). Kriteria kejayaan: setiap murid menghasilkan **senarai tiga contoh atau perkara yang tepat** bagi SP pertama dan **penjelasan dalam dua ayat serta satu contoh** bagi SP kedua, dengan contoh yang sesuai dengan situasi unit.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Murid mengenali usaha tekun rakyat membangunkan negara**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan bahagian **Usaha Berterusan Membuahkan Kejayaan** daripada Buku Teks KSSR Semakan 2017 (DBP 2021), m/s 102, sebagai rangsangan mengikut SP PdP ini. Murid meneliti kandungan buku dan menyatakan satu tindakan atau pertimbangan moral beserta alasan ringkas sebelum memulakan tugasan.
 
 **Aktiviti 1 (20 minit) — Usaha Berterusan Membuahkan Kejayaan:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 11, m/s 102–105, bahagian **Usaha Berterusan Membuahkan Kejayaan** sebagai rangsangan. Murid menyenaraikan tiga contoh suri teladan daripada bidang yang berbeza dan mencatat sumbangan mereka tanpa mereka nama atau pencapaian tokoh (SP 11.1). Guru menyemak ketepatan evidens individu mengikut kata tugas SP dan memandu pembetulan yang perlu.
 

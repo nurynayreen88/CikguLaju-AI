@@ -9,13 +9,13 @@
 **SP:** 11.5 — Mengamalkan sikap rajin demi kemajuan negara.  
 **Fokus:** Tindakan moral dan refleksi  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, pelan langkah kecil dan jadual kemajuan, borang semak; fail `materials/pendidikan_moral/year6/unit_11_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 11, m/s 108–110 (bahagian **Rajin Berusaha Usahawan Berjaya**); Kad situasi A/B, pelan langkah kecil dan jadual kemajuan, borang semak; fail `materials/pendidikan_moral/year6/unit_11_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid memperagakan tindakan berdasarkan **11.5: Mengamalkan sikap rajin demi kemajuan negara.** Kriteria kejayaan: Semak senarai pemerhatian perlakuan bagi SP 11.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Murid mengenali usaha tekun rakyat membangunkan negara**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan bahagian **Rajin Berusaha Usahawan Berjaya** daripada Buku Teks KSSR Semakan 2017 (DBP 2021), m/s 108, sebagai rangsangan mengikut SP PdP ini. Murid meneliti kandungan buku dan menyatakan satu tindakan atau pertimbangan moral beserta alasan ringkas sebelum memulakan tugasan.
 
 **Aktiviti 1 (20 minit) — Rajin Berusaha Usahawan Berjaya:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 11, m/s 108–110, bahagian **Rajin Berusaha Usahawan Berjaya** sebagai rangsangan. Murid merancang projek mini reka cipta atau khidmat berpasukan dengan jadual kerja, pembahagian peranan dan sasaran yang realistik (SP 11.5). Guru menyemak ketepatan evidens individu mengikut kata tugas SP dan memandu pembetulan yang perlu.
 

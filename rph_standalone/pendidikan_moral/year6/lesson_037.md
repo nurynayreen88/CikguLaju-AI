@@ -9,13 +9,13 @@
 **SP:** 13.1 — Menyenaraikan contoh amalan kesederhanaan demi kesejahteraan negara. | 13.2 — Menghuraikan kepentingan amalan kesederhanaan demi kesejahteraan negara.  
 **Fokus:** Pengetahuan dan cara perlakuan  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, jadual perlu-mahu-pilihan, borang semak; fail `materials/pendidikan_moral/year6/unit_13_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 13, m/s 122–124 (bahagian **Amalan Bersederhana Teras Kebaikan**); Kad situasi A/B, jadual perlu-mahu-pilihan, borang semak; fail `materials/pendidikan_moral/year6/unit_13_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid menyiapkan tugasan **SP 13.1** (Menyenaraikan contoh amalan kesederhanaan demi kesejahteraan negara.) dan **SP 13.2** (Menghuraikan kepentingan amalan kesederhanaan demi kesejahteraan negara.). Kriteria kejayaan: setiap murid menghasilkan **senarai tiga contoh atau perkara yang tepat** bagi SP pertama dan **dua huraian yang disokong sebab** bagi SP kedua, dengan contoh yang sesuai dengan situasi unit.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Komuniti merancang penggunaan sumber negara secara berhemat**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan bahagian **Amalan Bersederhana Teras Kebaikan** daripada Buku Teks KSSR Semakan 2017 (DBP 2021), m/s 122, sebagai rangsangan mengikut SP PdP ini. Murid meneliti kandungan buku dan menyatakan satu tindakan atau pertimbangan moral beserta alasan ringkas sebelum memulakan tugasan.
 
 **Aktiviti 1 (20 minit) — Amalan Bersederhana Teras Kebaikan:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 13, m/s 122–124, bahagian **Amalan Bersederhana Teras Kebaikan** sebagai rangsangan. Murid menyenaraikan tiga contoh kesederhanaan seperti penggunaan elektrik dan air mengikut keperluan, pengurusan belanja serta pengurangan pembaziran (SP 13.1). Guru menyemak ketepatan evidens individu mengikut kata tugas SP dan memandu pembetulan yang perlu.
 

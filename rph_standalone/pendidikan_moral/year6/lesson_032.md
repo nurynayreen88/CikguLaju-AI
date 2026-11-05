@@ -9,13 +9,13 @@
 **SP:** 11.3 — Mengenal pasti kepentingan amalan rajin demi kemajuan negara. | 11.4 — Mengekspresikan perasaan berkaitan dengan amalan rajin demi kemajuan negara.  
 **Fokus:** Penaakulan kesan dan emosi  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, pelan langkah kecil dan jadual kemajuan, borang semak; fail `materials/pendidikan_moral/year6/unit_11_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 11, m/s 106–108 (bahagian **Gigih Berusaha Negara Maju**); Kad situasi A/B, pelan langkah kecil dan jadual kemajuan, borang semak; fail `materials/pendidikan_moral/year6/unit_11_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid menghuraikan atau menilai berdasarkan **11.3: Mengenal pasti kepentingan amalan rajin demi kemajuan negara.** serta mengekspresikan perasaan bagi **11.4: Mengekspresikan perasaan berkaitan dengan amalan rajin demi kemajuan negara.** Kriteria kejayaan: Semak justifikasi serta dua kesan bagi SP 11.3 dan ayat perasaan yang sesuai bagi SP 11.4.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Murid mengenali usaha tekun rakyat membangunkan negara**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan bahagian **Gigih Berusaha Negara Maju** daripada Buku Teks KSSR Semakan 2017 (DBP 2021), m/s 106, sebagai rangsangan mengikut SP PdP ini. Murid meneliti kandungan buku dan menyatakan satu tindakan atau pertimbangan moral beserta alasan ringkas sebelum memulakan tugasan.
 
 **Aktiviti 1 (20 minit) — Gigih Berusaha Negara Maju:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 11, m/s 106–108, bahagian **Gigih Berusaha Negara Maju** sebagai rangsangan. Murid mengenal pasti dua kepentingan kerajinan seperti meningkatkan kemahiran, kreativiti atau hasil kerja yang bermanfaat untuk negara (SP 11.3). Guru menyemak ketepatan evidens individu mengikut kata tugas SP dan memandu pembetulan yang perlu.
 
