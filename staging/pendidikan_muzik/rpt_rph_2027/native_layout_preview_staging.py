@@ -9,8 +9,8 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-BOLD_HEADING = re.compile(r"^\\s*\\*\\*([^*\\n]+)\\*\\*\\s*(.*)$")
-CODES = re.compile(r"^[1-5]\\.[1-9]\\.\\d+$")
+BOLD_HEADING = re.compile(r"^\s*\*\*([^*\n]+)\*\*\s*(.*)$")
+CODES = re.compile(r"^[1-5]\.[1-9]\.\d+$")
 ACTIVITY_HEADER = ["Fasa / Masa", "Aktiviti Pengajaran & Pembelajaran", "Catatan"]
 
 
@@ -28,7 +28,7 @@ def _sections(text):
         elif current is not None:
             current["parts"].append(line.strip())
     return [
-        (s["label"], "\\n".join(s["parts"]).strip())
+        (s["label"], "\n".join(s["parts"]).strip())
         for s in found
     ]
 
@@ -38,7 +38,7 @@ def _lookup(items, pattern):
     if len(matches) != 1:
         raise ValueError(f"Missing/ambiguous Music RPH section {pattern}: {len(matches)}")
     name, value = matches[0]
-    if not value or value.strip("— _\\n") == "":
+    if not value or value.strip("— _\n") == "":
         raise ValueError(f"Empty Music RPH section: {name}")
     return name, value
 
@@ -50,7 +50,7 @@ def build_staging_preview(root, year, pdp):
     if type(pdp) is not int or pdp not in range(1, 36):
         raise ValueError("PdP must be 1–35")
     base = Path(root).resolve()
-    if not (base / "year%d" % year).is_dir():
+    if not (base / f"year{year}").is_dir():
         raise ValueError("Missing year directory")
     directory = base / f"year{year}"
     manifest = json.loads((directory / "pdp_manifest.json").read_text(encoding="utf-8"))
@@ -66,21 +66,21 @@ def build_staging_preview(root, year, pdp):
     raw = path.read_text(encoding="utf-8")
     items = _sections(raw)
     labels = {
-        "objective": _lookup(items, r"^objektif(?:\\s|$)"),
-        "induction": _lookup(items, r"^set\\s+induksi\\b"),
-        "act1": _lookup(items, r"^aktiviti\\s*1\\b"),
-        "act2": _lookup(items, r"^aktiviti\\s*2\\b"),
-        "assessment": _lookup(items, r"^pengukuhan\\b"),
-        "closure": _lookup(items, r"^penutup\\b"),
-        "materials": _lookup(items, r"^bahan\\b"),
+        "objective": _lookup(items, r"^objektif(?:\s|$)"),
+        "induction": _lookup(items, r"^set\s+induksi\b"),
+        "act1": _lookup(items, r"^aktiviti\s*1\b"),
+        "act2": _lookup(items, r"^aktiviti\s*2\b"),
+        "assessment": _lookup(items, r"^pengukuhan\b"),
+        "closure": _lookup(items, r"^penutup\b"),
+        "materials": _lookup(items, r"^bahan\b"),
     }
-    criterion = [(k, v) for k, v in items if re.search(r"^kriteria\\s+kejayaan", k, re.I)]
+    criterion = [(k, v) for k, v in items if re.search(r"^kriteria\s+kejayaan", k, re.I)]
     if len(criterion) > 1:
         raise ValueError("Duplicated success criteria")
     criteria = criterion[0][1] if criterion else "—"
-    notes = "Aktiviti 1 — " + labels["act1"][0] + "\\n" + labels["act1"][1] + \
-            "\\n\\nAktiviti 2 — " + labels["act2"][0] + "\\n" + labels["act2"][1] + \
-            "\\n\\nPengukuhan dan Penilaian — " + labels["assessment"][0] + "\\n" + labels["assessment"][1]
+    notes = "Aktiviti 1 — " + labels["act1"][0] + "\n" + labels["act1"][1] + \
+            "\n\nAktiviti 2 — " + labels["act2"][0] + "\n" + labels["act2"][1] + \
+            "\n\nPengukuhan dan Penilaian — " + labels["assessment"][0] + "\n" + labels["assessment"][1]
     standards = []
     for code in sp:
         parent = code.rsplit(".", 1)[0]
