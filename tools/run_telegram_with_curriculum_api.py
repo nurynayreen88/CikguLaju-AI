@@ -264,6 +264,21 @@ except Exception as _private_referral_menu_exc:
     print("Private referral menu integration unavailable:",
           type(_private_referral_menu_exc).__name__, flush=True)
 
+# Admin-only Web launch announcement; no sends until explicitly confirmed in
+# Telegram Panel Admin. It snapshots recipients and delivery attempts in the
+# private Supabase ledger. Install before referral admin buttons so both admin
+# panel actions are preserved; no curriculum/payment/trial handlers are changed.
+try:
+    from web.admin_web_launch_broadcast import install as install_web_announcement
+    TELEGRAM_WEB_BROADCAST_READY = bool(
+        DURABLE_USER_PAYMENT_STORE_ACTIVE
+        and install_web_announcement(telegram_runtime))
+except Exception as _web_broadcast_exc:
+    TELEGRAM_WEB_BROADCAST_READY = False
+    print("Web launch admin broadcast unavailable:",
+          type(_web_broadcast_exc).__name__, flush=True)
+
+
 # Read-only admin referral points; the last wrapper on callback and admin_panel.
 # Only _is_admin() identities can access this data; no payment or credit writes.
 try:
