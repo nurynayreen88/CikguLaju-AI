@@ -3,32 +3,32 @@
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
 **Unit / Tajuk:** SERANGGA COMEL  
 **Bidang:** Apresiasi Muzik  
-**SK / SP (RPT sumber):** 4.1.1
+**SK / SP (RPT sumber; belum penyelarasan kod akhir):** 4.1.1  
 **Tempoh cadangan:** 30 minit  
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Memberi ulasan tentang muzik yang didengar dengan sekurang-kurangnya dua maklumat tepat dan satu alasan.
+**Objektif pembelajaran (draf boleh ukur):** Menyatakan dua ciri muzik jaz dan mengenal pasti sekurang-kurangnya satu contoh penyanyi yang disebut dalam buku teks.
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Kriteria kejayaan:** Murid menyebut jenis muzik jaz, membandingkan cirinya dengan contoh lain dan memberi satu alasan berdasarkan pendengaran atau penerangan guru.
 
 **Set Induksi — 4 minit**  
-Guru memperdengarkan satu petikan muzik dan meminta murid menyatakan dua perkara yang didengar.
+Guru memperkenalkan gambar atau deskripsi muzik jaz dan meminta murid menyatakan perkara yang mereka jangka akan dengar.
 
 **Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru memperkenalkan kosa kata apresiasi yang berkaitan: Membuat ulasan terhadap Muzik Popular yang didengar daripada aspek: (i) jenis muzik (ii) nama penyanyi atau kumpulan. Murid membuat pemerhatian berpandukan tiga soalan dengar.
+Guru merujuk halaman 39 yang menerangkan Muzik Jaz serta menyebut contoh penyanyi tempatan, termasuk Julie Sudiro dan Sheila Majid; murid mencatat dua fakta daripada bahan tersebut.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid berbincang secara pasangan, menyusun ulasan dua ayat dengan bukti daripada rakaman, kemudian berkongsi respons.
+**Aktiviti 2 — Latihan dan aplikasi (10 minit)**  
+Guru memperdengarkan petikan yang sah digunakan, jika tersedia, atau menggunakan contoh irama yang dimainkan sendiri; pasangan murid membincangkan sifat muzik dan membentangkan ulasan pendek.
 
 **Pengukuhan & Penilaian — 6 minit**  
-Semak ketepatan sekurang-kurangnya 2 fakta/unsur muzik dalam ulasan dan satu alasan berasaskan pendengaran.
+Murid menghasilkan dua fakta tepat tentang jaz dan satu alasan mengapa contoh itu dikaitkan dengan muzik tersebut.
 
 **Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+Murid berkongsi satu nama artis daripada buku teks serta satu perkara baharu yang dipelajari.
 
-**Bahan:** Rakaman muzik yang berlesen/diizinkan, gambar alat muzik dan lembaran respons.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 39; **belum disahkan pada halaman buku asal**. Audio/trek belum dipadankan.
+**Bahan:** Buku teks halaman 39, kad fakta dan contoh muzik berizin apabila tersedia; tiada laluan audio boleh didakwa disahkan.  
+**Rujukan sumber:** Buku Teks Pendidikan Kesenian Tahun 3 SK (DBP 2018), halaman 39; teks aktiviti disemak terhadap salinan https://anyflip.com/lcinm/flxx/basic. Kod dicetak dalam buku gabungan: 4.2.1; **bukan pengesahan kod DSKP Pendidikan Muzik berdiri sendiri**. Audio tercetak: Tiada audio bernombor pada halaman; contoh jaz perlu sumber berizin; **fail audio/trek belum diperiksa**.
 
 **Catatan pelaksanaan / pemulihan:** __________________________________________
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_20261106; status DRAF; rujukan halaman dan aktiviti ialah pemeriksaan teks, bukan pengesahan skor visual atau fail audio; kod RPT asal dikekalkan; Word/PDF dan keluaran Telegram–Web belum diuji.
