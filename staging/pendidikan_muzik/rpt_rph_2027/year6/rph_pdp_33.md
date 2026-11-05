@@ -1,30 +1,33 @@
 # RPH PENDIDIKAN MUZIK TAHUN 6 — PdP 33
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** RINDU  
-**Bidang:** Nyanyian  
-**SK/SP:** 2.1.1, 2.1.2, 2.2.2, 2.4.1, 2.4.2  
-**Tempoh cadangan:** 30 minit  
-**Status:** DRAF STAGING — bukan FINAL READY
+**Unit/Tajuk:** RINDU
+**SK / SP:** 2.1.1, 2.1.2, 2.2.2, 2.4.1, 2.4.2
+**Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — belum FINAL READY
 
-**Perkara belum disahkan:** RPT sumber contoh rekoder E–D’ sedangkan DSKP Tahun 6 merangkumi C–D’; jangan sempitkan julat DSKP.
+**Fokus:** Rindu — ensembel nyanyian, rekoder dan perkusi
 
-**Objektif:** Murid menyanyikan frasa lagu dengan sekurang-kurangnya 2 daripada 3 kriteria pic, tempo dan ekspresi/teknik yang tepat.
+**Objektif:** Murid mempersembahkan bahagian ensembel Rindu dan menunjukkan tempo yang tepat dalam dua ulangan.
 
-**Set induksi (4 minit):** Guru memperdengarkan frasa lagu daripada unit ini; murid mengajuk pic dan menyebut perubahan ekspresi.
+**Set induksi (4 minit):** Guru memperkenalkan satu petikan, skor atau aktiviti berkaitan unit dan meminta murid menunjukkan pengetahuan sedia ada.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Guru memodelkan pernafasan, postur serta fokus SP: Bernyanyi lagu dengan pic yang betul mengikut tempo.; murid mengajuk satu bar pada satu masa.
+**Aktiviti 1 — Demonstrasi / penemuan (8 minit):** Guru membahagikan peranan nyanyian, rekoder dan perkusi serta menyemak skor utama dan kaunter.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Murid menyanyikan frasa/rangkap dalam kumpulan kemudian mengulang secara berpasangan dengan pembetulan pic, tempo serta dinamik mengikut SP.
+**Aktiviti 2 — Amali / aplikasi (10 minit):** Kumpulan berlatih terlebih dahulu pada tempo perlahan (rujukan bercetak q=90), kemudian mengulang pada tempo lebih cepat (q=100).
 
-**Pengukuhan dan pentaksiran (6 minit):** Guru menyemak 3 kriteria (pic, tempo, teknik/dinamik), mencatat percubaan pertama dan kedua.
+**Pengukuhan dan pentaksiran (6 minit):** Semak koordinasi masuk, tempo, dinamik dan ketepatan peranan setiap kumpulan.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Penutup (2 minit):** Murid menunjukkan satu kemahiran atau fakta muzik yang dipelajari; guru merekod pemerhatian PBD dan maklum balas.
 
-**Bahan:** Rakaman lagu yang diizinkan, skor ringkas, pembesar suara.
+**Bahan:** Buku Teks Pendidikan Muzik Tahun 6 SK DBP 2021, m/s 85-87, skor dan alat mengikut PdP.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 6. RPT rujukan mencatat halaman buku teks 85-87 (belum disahkan pada buku asal). Rakaman/trek audio belum disahkan.
+**Rujukan buku:** https://anyflip.com/zcnoa/yxcj/basic. Kandungan disemak secara teks buku, belum visual semua halaman.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Audio yang dicetak dalam buku:** 162–167; **fail audio sebenar belum disahkan**.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Audit:** RPT sumber contoh rekoder E–D’ sedangkan DSKP Tahun 6 merangkumi C–D’; jangan sempitkan julat DSKP
+
+**Refleksi dan pemulihan:** ____________________________________________
+
+**Kawalan penerbitan:** DRAF. Word/PDF dan penyelarasan Telegram/Web belum diuji semula.

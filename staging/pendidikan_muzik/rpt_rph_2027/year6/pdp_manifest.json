@@ -4,7 +4,7 @@
   "academic_year": 2027,
   "source_url": "https://www.scribd.com/document/854410603/MZ6",
   "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
-  "status": "DRAF_STAGING_NOT_LIVE",
+  "status": "DRAF_STAGING_7_TAHUN6_BOOK_TEXT_MATCHED",
   "textbook_verified": false,
   "audio_verified": false,
   "rph_word_pdf_verified": false,
@@ -220,7 +220,8 @@
       ],
       "page": "34-35",
       "flags": [
-        "RPT sumber menulis Baroque untuk Tahun 6 tetapi DSKP Tahun 6 menyatakan Classical; ikuti DSKP, tunggu bukti buku"
+        "RPT sumber menulis Baroque untuk Tahun 6 tetapi DSKP Tahun 6 menyatakan Classical; ikuti DSKP, tunggu bukti buku",
+        "PERCANGGAHAN DSKP vs Buku teks: DSKP 1750-1830, buku 1750-1850; RPH ikut DSKP dan kekalkan nota audit."
       ],
       "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
       "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
@@ -228,7 +229,16 @@
         "week": 11,
         "groupA": "21/03–25/03",
         "groupB": "22/03–26/03"
-      }
+      },
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic",
+      "source_book_audio_numbers_printed": "71–73",
+      "source_book_audio_file_verified": false,
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "BUKU_T6_ONLINE_TEKSTUAL_BUKAN_IMeJ_SIGNOFF",
+      "focus_pdp": "Zaman Classical (DSKP 1750–1830; buku 1750–1850)",
+      "rph_specificity_status": "TEKS_BUKU_T6_DISEMAK",
+      "dskp_classical_years": "1750-1830",
+      "textbook_classical_years": "1750-1850"
     },
     {
       "pdp_id": "MZ-Y6-12",
@@ -290,7 +300,14 @@
         "week": 14,
         "groupA": "11/04–15/04",
         "groupB": "12/04–16/04"
-      }
+      },
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic",
+      "source_book_audio_numbers_printed": "74–76",
+      "source_book_audio_file_verified": false,
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "BUKU_T6_ONLINE_TEKSTUAL_BUKAN_IMeJ_SIGNOFF",
+      "focus_pdp": "Mikroorganisma — nyanyian",
+      "rph_specificity_status": "TEKS_BUKU_T6_DISEMAK"
     },
     {
       "pdp_id": "MZ-Y6-15",
@@ -310,7 +327,14 @@
         "week": 15,
         "groupA": "18/04–22/04",
         "groupB": "19/04–23/04"
-      }
+      },
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic",
+      "source_book_audio_numbers_printed": "77–88",
+      "source_book_audio_file_verified": false,
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "BUKU_T6_ONLINE_TEKSTUAL_BUKAN_IMeJ_SIGNOFF",
+      "focus_pdp": "Mikroorganisma — rekoder not D dan C / melodi kaunter",
+      "rph_specificity_status": "TEKS_BUKU_T6_DISEMAK"
     },
     {
       "pdp_id": "MZ-Y6-16",
@@ -613,7 +637,14 @@
         "week": 30,
         "groupA": "15/08–19/08",
         "groupB": "16/08–20/08"
-      }
+      },
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic",
+      "source_book_audio_numbers_printed": "139–141",
+      "source_book_audio_file_verified": false,
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "BUKU_T6_ONLINE_TEKSTUAL_BUKAN_IMeJ_SIGNOFF",
+      "focus_pdp": "Rindu — nyanyian swing",
+      "rph_specificity_status": "TEKS_BUKU_T6_DISEMAK"
     },
     {
       "pdp_id": "MZ-Y6-31",
@@ -632,7 +663,14 @@
         "week": 31,
         "groupA": "22/08–26/08",
         "groupB": "23/08–27/08"
-      }
+      },
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic",
+      "source_book_audio_numbers_printed": "142",
+      "source_book_audio_file_verified": false,
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "BUKU_T6_ONLINE_TEKSTUAL_BUKAN_IMeJ_SIGNOFF",
+      "focus_pdp": "Rindu — pergerakan di tiga stesen",
+      "rph_specificity_status": "TEKS_BUKU_T6_DISEMAK"
     },
     {
       "pdp_id": "MZ-Y6-32",
@@ -655,7 +693,14 @@
         "week": 32,
         "groupA": "05/09–09/09",
         "groupB": "06/09–10/09"
-      }
+      },
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic",
+      "source_book_audio_numbers_printed": "143–161",
+      "source_book_audio_file_verified": false,
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "BUKU_T6_ONLINE_TEKSTUAL_BUKAN_IMeJ_SIGNOFF",
+      "focus_pdp": "Rindu — rekoder C hingga D’ dan corak irama",
+      "rph_specificity_status": "TEKS_BUKU_T6_DISEMAK"
     },
     {
       "pdp_id": "MZ-Y6-33",
@@ -680,7 +725,14 @@
         "week": 33,
         "groupA": "12/09–16/09",
         "groupB": "13/09–17/09"
-      }
+      },
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic",
+      "source_book_audio_numbers_printed": "162–167",
+      "source_book_audio_file_verified": false,
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "BUKU_T6_ONLINE_TEKSTUAL_BUKAN_IMeJ_SIGNOFF",
+      "focus_pdp": "Rindu — ensembel nyanyian, rekoder dan perkusi",
+      "rph_specificity_status": "TEKS_BUKU_T6_DISEMAK"
     },
     {
       "pdp_id": "MZ-Y6-34",
@@ -744,5 +796,8 @@
     }
   ],
   "dskp_projects_per_year": 2,
-  "deprecated_project3_reclassified_count": 2
+  "deprecated_project3_reclassified_count": 2,
+  "partial_textbook_crosscheck_count": 7,
+  "source_textbook_url": "https://anyflip.com/zcnoa/yxcj/basic",
+  "source_textbook_edition": "DBP 2021 KSSR Semakan 2017"
 }

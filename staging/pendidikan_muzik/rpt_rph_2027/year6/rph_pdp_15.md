@@ -1,28 +1,33 @@
 # RPH PENDIDIKAN MUZIK TAHUN 6 — PdP 15
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** MIKROORGANISMA  
-**Bidang:** Rekoder  
-**SK/SP:** 2.4.1, 2.4.2  
-**Tempoh cadangan:** 30 minit  
-**Status:** DRAF STAGING — bukan FINAL READY
+**Unit/Tajuk:** MIKROORGANISMA
+**SK / SP:** 2.4.1, 2.4.2
+**Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif:** Murid memainkan frasa rekoder pada julat not DSKP Tahun 6 dengan sekurang-kurangnya 3 daripada 4 aspek teknik yang betul.
+**Fokus:** Mikroorganisma — rekoder not D dan C / melodi kaunter
 
-**Set induksi (4 minit):** Guru menunjukkan carta penjarian dan memperagakan ton lembut serta bersih.
+**Objektif:** Murid memainkan not D dan C pada rekoder serta satu frasa melodi kaunter dengan ton terkawal.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Murid menyemak postur, penjarian dan perlidahan 'tu' untuk: Memainkan rekoder bagi not C, D, E, F, G, A, B, C’ dan D’ dengan ton yang baik mengikut tempo..
+**Set induksi (4 minit):** Guru memperkenalkan satu petikan, skor atau aktiviti berkaitan unit dan meminta murid menunjukkan pengetahuan sedia ada.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Murid membaca dua bar skor, memainkan secara perlahan dan mengulang dengan tempo stabil; pasangan memberi maklum balas.
+**Aktiviti 1 — Demonstrasi / penemuan (8 minit):** Guru membimbing penjarian D dan C serta perlidahan 'tu' yang betul, seperti latihan buku.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak penjarian, embouchure, pernafasan dan tempo; nilai setiap murid pada dua percubaan.
+**Aktiviti 2 — Amali / aplikasi (10 minit):** Murid melakukan latihan rekoder bertahap kemudian membahagikan kumpulan kepada melodi utama dan kaunter Mikroorganisma.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Rubrik penjarian, ton, masa masuk dan tempo.
 
-**Bahan:** Rekoder bersih, skor melodi ringkas, carta penjarian.
+**Penutup (2 minit):** Murid menunjukkan satu kemahiran atau fakta muzik yang dipelajari; guru merekod pemerhatian PBD dan maklum balas.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 6. RPT rujukan mencatat halaman buku teks 38-43 (belum disahkan pada buku asal). Rakaman/trek audio belum disahkan.
+**Bahan:** Buku Teks Pendidikan Muzik Tahun 6 SK DBP 2021, m/s 38-43, skor dan alat mengikut PdP.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Rujukan buku:** https://anyflip.com/zcnoa/yxcj/basic. Kandungan disemak secara teks buku, belum visual semua halaman.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Audio yang dicetak dalam buku:** 77–88; **fail audio sebenar belum disahkan**.
+
+**Audit:** Pengesahan RPT dan pedagogi individu masih diperlukan.
+
+**Refleksi dan pemulihan:** ____________________________________________
+
+**Kawalan penerbitan:** DRAF. Word/PDF dan penyelarasan Telegram/Web belum diuji semula.
