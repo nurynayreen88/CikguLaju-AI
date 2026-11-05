@@ -17,9 +17,9 @@ Murid memperagakan tindakan berdasarkan **5.5: Mengamalkan sikap hemah tinggi da
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Anak ingin menyampaikan pendapat berbeza kepada ibu bapa secara beradab**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Rancang lakonan:** Guru membahagikan watak pelaku, penerima dan pemerhati. Murid merangka ayat serta langkah tindakan selamat untuk **mengamalkan bahasa sopan dan budi pekerti mulia**. Murid menyemak persediaan berdasarkan SP 5.5.
+**Aktiviti 1 (20 minit) — Sedia simulasi hemah tinggi:** Murid merujuk situasi m/s 31: ibu meminta bantuan untuk adik membaca, ibu bapa berbual ketika anak pulang dan kunjungan datuk/nenek. Kumpulan merangka ayat sopan serta tindakan yang boleh diperagakan bagi setiap situasi (SP 5.5).
 
-**Aktiviti 2 (20 minit) — Lakon, semak, ulang:** Murid memperagakan situasi selama 60–90 saat, rakan memerhati dengan senarai semak, kemudian murid mengulang tindakan selepas maklum balas. Murid menetapkan satu amalan yang boleh dilaksanakan dengan selamat di sekolah atau rumah.
+**Aktiviti 2 (20 minit) — Lakon dan semak:** Murid melakonkan dua situasi m/s 31; pemerhati menandakan salam, permintaan izin, hormat dan bantuan yang kelihatan. Selepas maklum balas murid mengulang tindakan. Kisah Anugerah Ikon Anak Terbaik m/s 30 boleh digunakan sebagai rangsangan; satu lakonan bukan bukti amalan harian.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Semak senarai pemerhatian perlakuan bagi SP 5.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 
@@ -27,4 +27,6 @@ Murid memperagakan tindakan berdasarkan **5.5: Mengamalkan sikap hemah tinggi da
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — halaman belum dipadankan; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 5, m/s 28–31 (PDF 37–40). Halaman diperiksa: Susun suai adab, Anugerah Ikon Anak Terbaik dan lakonan situasi keluarga. Padanan contoh aktiviti dengan SP dinilai secara khusus bagi PdP 015; aktiviti dalam RPH ialah olahan CikguLaju, bukan petikan verbatim.
+
+**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — Unit 5, m/s 28–31 (PDF 37–40) disemak secara visual dan langkah PdP diolah daripada contoh aktiviti; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

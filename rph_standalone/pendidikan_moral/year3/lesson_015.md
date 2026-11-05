@@ -17,9 +17,9 @@ Murid memperagakan tindakan berdasarkan **5.5: Mengamalkan sikap bersopan dan be
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Murid menyapa pekerja sekolah dan pelawat dengan bahasa sopan**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Rancang lakonan:** Guru membahagikan watak pelaku, penerima dan pemerhati. Murid merangka ayat serta langkah tindakan selamat untuk **mengamalkan bahasa sopan dan budi pekerti mulia**. Murid menyemak persediaan berdasarkan SP 5.5.
+**Aktiviti 1 (20 minit) — Rangka amalan sopan:** Guru memilih situasi m/s 34–37: memberi salam kepada pengawal, meminta izin duduk, meminta maaf apabila lewat dan berterima kasih kepada guru. Murid merangka dialog dan menetapkan dua perlakuan sopan yang boleh diperagakan (SP 5.5).
 
-**Aktiviti 2 (20 minit) — Lakon, semak, ulang:** Murid memperagakan situasi selama 60–90 saat, rakan memerhati dengan senarai semak, kemudian murid mengulang tindakan selepas maklum balas. Murid menetapkan satu amalan yang boleh dilaksanakan dengan selamat di sekolah atau rumah.
+**Aktiviti 2 (20 minit) — Praktik dan ulang:** Murid mempraktikkan dialog dua watak dan pemerhati menyemak penggunaan 'maaf', 'terima kasih' dan 'boleh saya' merujuk latihan m/s 37. Permainan Belon Sopan m/s 39 boleh digunakan untuk pengukuhan, tetapi permainan sahaja tidak membuktikan amalan konsisten di luar kelas (SP 5.5).
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Semak senarai pemerhatian perlakuan bagi SP 5.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 
@@ -27,4 +27,6 @@ Murid memperagakan tindakan berdasarkan **5.5: Mengamalkan sikap bersopan dan be
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — halaman belum dipadankan; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 5, m/s 36–39 (PDF 42–45). Halaman diperiksa: Origami kucing sopan, latihan dialog dan permainan Belon Sopan. Padanan contoh aktiviti dengan SP dinilai secara khusus bagi PdP 015; aktiviti dalam RPH ialah olahan CikguLaju, bukan petikan verbatim.
+
+**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — Unit 5, m/s 36–39 (PDF 42–45) disemak secara visual dan langkah PdP diolah daripada contoh aktiviti; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

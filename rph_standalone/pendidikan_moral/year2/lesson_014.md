@@ -17,9 +17,9 @@ Murid menghuraikan atau menilai berdasarkan **5.3: Menganalisis kesan tidak bers
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Anak ingin menyampaikan pendapat berbeza kepada ibu bapa secara beradab**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Peta akibat:** Guru beri dua penghujung kepada situasi. Murid bina peta **pilihan → kesan → alasan**, merujuk SP 5.3 (**Menganalisis kesan tidak bersikap hemah tinggi dalam keluarga.**). Bandingkan akibat kepada watak yang terlibat dan bincang soalan: **Bagaimanakah bahasa badan dan tutur kata mempengaruhi perasaan?**
+**Aktiviti 1 (20 minit) — Tindakan dan kesan:** Guru memaparkan tindakan dalam buku m/s 27 serta situasi keluarga m/s 31. Murid membina peta dua perlakuan kurang sopan, dua kesan terhadap hubungan keluarga dan sebab yang munasabah (SP 5.3); bandingkan dengan contoh berhemah tinggi pada halaman sama.
 
-**Aktiviti 2 (20 minit) — Dialog dan emosi:** Murid menjalankan dialog ringkas dua versi, menyatakan kesan kedua-duanya dan menulis satu ayat perspektif pihak yang terlibat untuk SP 5.4 (**Melahirkan perasaan apabila berhemah tinggi dalam keluarga.**). Guru semak hubungan alasan, emosi dan nilai.
+**Aktiviti 2 (20 minit) — Perasaan dan penilaian:** Guru merujuk ruang 'kesan berhemah tinggi' dan 'kesan tidak berhemah tinggi' dalam Uji Diri m/s 32. Murid menulis ayat 'Saya berasa ... apabila ... kerana ...' berdasarkan situasi keluarga m/s 27–31 (SP 5.4). Guru menyemak kaitan perasaan dengan perlakuan.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Semak justifikasi serta dua kesan bagi SP 5.3 dan ayat perasaan yang sesuai bagi SP 5.4. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 
@@ -27,4 +27,6 @@ Murid menghuraikan atau menilai berdasarkan **5.3: Menganalisis kesan tidak bers
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — halaman belum dipadankan; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 5, m/s 27–32 (PDF 36–41). Halaman diperiksa: Empat tindakan hemah tinggi, lakonan kes keluarga dan bahagian kesan Uji Diri. Padanan contoh aktiviti dengan SP dinilai secara khusus bagi PdP 014; aktiviti dalam RPH ialah olahan CikguLaju, bukan petikan verbatim.
+
+**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — Unit 5, m/s 27–32 (PDF 36–41) disemak secara visual dan langkah PdP diolah daripada contoh aktiviti; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

@@ -17,9 +17,9 @@ Murid menyiapkan tugasan **SP 5.1** (Menyenaraikan amalan hemah tinggi dalam kel
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Anak ingin menyampaikan pendapat berbeza kepada ibu bapa secara beradab**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Tugasan 5.1:** Guru membentangkan situasi **Anak ingin menyampaikan pendapat berbeza kepada ibu bapa secara beradab** dan menyediakan kad/gambar yang relevan dengan unit buku teks **Hemah Tinggi Dalam Keluarga** (mula m/s 25; halaman aktiviti belum disahkan). Murid melaksanakan arahan **“Menyenaraikan amalan hemah tinggi dalam keluarga.”** dengan menghasilkan **senarai tiga contoh atau perkara yang tepat**; pasangan menyemak fakta, bukan hanya memilih tindakan baik atau buruk. Guru merekod satu respons individu.
+**Aktiviti 1 (20 minit) — Contoh hemah tinggi dalam keluarga:** Guru menunjukkan gambar buku teks m/s 25–27: Roger menyapa nenek/datuk dengan sopan, keluarga mempersilakan tetamu duduk dan anak meminta maaf atau meminta izin. Murid menyenaraikan tiga amalan hemah tinggi berserta pihak yang terlibat (SP 5.1). Guru membezakan amalan sopan daripada sekadar ucapan tanpa tindakan.
 
-**Aktiviti 2 (20 minit) — Tugasan 5.2:** Guru menukar sudut situasi kepada tindakan atau akibat yang boleh diperhatikan. Murid melaksanakan arahan **“Menjelaskan kepentingan hemah tinggi dalam keluarga.”** dan menyediakan **penjelasan dalam dua ayat serta satu contoh** berdasarkan contoh yang relevan dengan unit. Murid membentangkan hasil dan memperbaiki jawapan selepas pertanyaan lanjut guru.
+**Aktiviti 2 (20 minit) — Kepentingan amalan hemah tinggi:** Berdasarkan keluarga yang mesra dalam m/s 25–27, murid menghubungkan dua amalan dengan kepentingannya: menjaga perasaan, menunjukkan hormat serta mengeratkan hubungan keluarga. Murid menerangkan dua sebab menggunakan ayat sendiri (SP 5.2).
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Guru mengutip hasil individu: **senarai tiga contoh atau perkara yang tepat** untuk SP 5.1 dan **penjelasan dalam dua ayat serta satu contoh** untuk SP 5.2; semak ketepatan makna, bukti dan kaitan dengan nilai **Hemah tinggi**. Murid membetulkan satu jawapan selepas maklum balas.
 
@@ -27,4 +27,6 @@ Murid menyiapkan tugasan **SP 5.1** (Menyenaraikan amalan hemah tinggi dalam kel
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — unit bermula m/s 25 (PDF 34); halaman aktiviti khusus belum dipadankan; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 5, m/s 25–27 (PDF 34–36). Halaman diperiksa: Datuk dan nenek disapa dengan mesra; adab majlis; contoh meminta maaf dan meminta izin. Padanan contoh aktiviti dengan SP dinilai secara khusus bagi PdP 013; aktiviti dalam RPH ialah olahan CikguLaju, bukan petikan verbatim.
+
+**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — Unit 5, m/s 25–27 (PDF 34–36) disemak secara visual dan langkah PdP diolah daripada contoh aktiviti; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
