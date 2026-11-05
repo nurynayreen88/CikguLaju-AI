@@ -30,3 +30,11 @@
 **Rujukan buku teks:** https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/ (ISBN 978-983-49-2472-0) — halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
 
 **Peringatan:** Tarikh minggu ialah cadangan; semak cuti negeri tambahan dan jadual kelas sebelum pengajaran. Format Word/PDF mesti lulus ujian dan guru mesti menyemak aktiviti buku sebelum status READY.
+
+## Bukti rujukan halaman — semakan teks (bukan kelulusan akhir)
+
+- **Buku teks edisi dipadankan:** DBP 2019, KSSR Semakan 2017; ISBN 978-983-49-2472-0.
+- **Halaman bercetak diperiksa dalam teks digital:** 4–7; SP 1.1.1, 1.1.2.
+- **Dapatan:** Teks asal mengandungi pengertian sejarah mengikut tokoh dan pengelasan sumber primer/sekunder, bersama aktiviti Meja Bulat dan Suai Padan.
+- **Pautan asal yang diperiksa:** https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/.
+- **Status:** Teks halaman telah dibaca. Susun atur visual, arahan setiap aktiviti, kelulusan pedagogi guru, dan penerbitan **belum disahkan**. `textbook_page_verified=false` kekal.

@@ -1,9 +1,116 @@
 {
   "date": "2026-11-06",
   "source_basis": "digital scanned/rehost textbook HTML text read, not complete visual approval",
-  "count": 11,
-  "status": "ELEVEN_PAGE_TEXT_CORROBORATED_NOT_RELEASE",
+  "count": 18,
+  "status": "EIGHTEEN_PAGE_TEXT_CORROBORATED_NOT_RELEASE",
   "records": [
+    {
+      "year": 4,
+      "pdp": 1,
+      "pages": "4–7",
+      "sp": [
+        "1.1.1",
+        "1.1.2"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Teks asal mengandungi pengertian sejarah mengikut tokoh dan pengelasan sumber primer/sekunder, bersama aktiviti Meja Bulat dan Suai Padan.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 2,
+      "pages": "8–9",
+      "sp": [
+        "1.1.3"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Buku menghuraikan tiga kaedah kajian: arkeologi, lisan dan bertulis, langkah kerja dan kegiatan pasangan Giliran Robin; rancangan kelas perlu menjaga privasi sumber lisan.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 3,
+      "pages": "10",
+      "sp": [
+        "1.1.4"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Teks menerangkan ruang serta konsep masa, kronologi, dekad, abad dan alaf dengan contoh peristiwa sekolah.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 4,
+      "pages": "11–12",
+      "sp": [
+        "1.1.5"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Halaman menunjukkan jadual sebab dan akibat bagi peristiwa sekolah dan perjuangan kemerdekaan, dengan latihan melengkapkan rajah sebab-akibat.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 5,
+      "pages": "18–21",
+      "sp": [
+        "1.2.1",
+        "1.2.2"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Halaman 18–19 menjelaskan biodata dan contoh peta minda; 20–21 membezakan keluarga asas dan kembangan. RPH menggunakan profil rekaan bagi mengelakkan pendedahan dokumen pengenalan murid.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 6,
+      "pages": "22–23",
+      "sp": [
+        "1.2.3"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Buku menghuraikan peranan ibu bapa dan anak-anak serta aktiviti Fikir–Pasang–Kongsi, menekankan tanggungjawab dan adab.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 7,
+      "pages": "24",
+      "sp": [
+        "1.2.4"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Halaman 24 menunjukkan riwayat perkembangan diri dalam bentuk garis masa, peristiwa lahir dan berpindah serta aktiviti buku skrap.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
     {
       "year": 5,
       "pdp": 5,
@@ -57,6 +164,39 @@
       "exact_exercise_visual_verified": false
     },
     {
+      "year": 5,
+      "pdp": 8,
+      "pages": "32, 34",
+      "sp": [
+        "6.3.1",
+        "6.3.2"
+      ],
+      "page_urls": [
+        "https://online.anyflip.com/iawvx/fevz/files/basic-html/page38.html",
+        "https://online.anyflip.com/iawvx/fevz/files/basic-html/page40.html"
+      ],
+      "summary": "Halaman bercetak 32 membincangkan susur galur bahasa Melayu dan rumpun Austronesia; halaman 34 menunjukkan peta wilayah penutur bahasa Melayu sebagai bahasa perhubungan.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 5,
+      "pdp": 9,
+      "pages": "37, 39",
+      "sp": [
+        "6.3.3"
+      ],
+      "page_urls": [
+        "https://online.anyflip.com/iawvx/fevz/files/basic-html/page43.html",
+        "https://online.anyflip.com/iawvx/fevz/files/basic-html/page45.html"
+      ],
+      "summary": "Halaman 37 menyenaraikan peranan bahasa Melayu dalam kehidupan negara, manakala halaman 39 menyediakan contoh dahulu–kini dan aktiviti peta pemikiran perbandingan.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
       "year": 6,
       "pdp": 1,
       "pages": "4–9",
@@ -98,39 +238,6 @@
         "https://fliphtml5.com/itcew/pnmn"
       ],
       "summary": "Bab cabaran pembentukan Malaysia menyebut penentangan SUPP, konfrontasi Indonesia dan tuntutan Filipina terhadap Sabah; teks ini turut mencadangkan carian bukti tambahan.",
-      "ready": false,
-      "teacher_approved": false,
-      "exact_exercise_visual_verified": false
-    },
-    {
-      "year": 5,
-      "pdp": 8,
-      "pages": "32, 34",
-      "sp": [
-        "6.3.1",
-        "6.3.2"
-      ],
-      "page_urls": [
-        "https://online.anyflip.com/iawvx/fevz/files/basic-html/page38.html",
-        "https://online.anyflip.com/iawvx/fevz/files/basic-html/page40.html"
-      ],
-      "summary": "Halaman bercetak 32 membincangkan susur galur bahasa Melayu dan rumpun Austronesia; halaman 34 menunjukkan peta wilayah penutur bahasa Melayu sebagai bahasa perhubungan.",
-      "ready": false,
-      "teacher_approved": false,
-      "exact_exercise_visual_verified": false
-    },
-    {
-      "year": 5,
-      "pdp": 9,
-      "pages": "37, 39",
-      "sp": [
-        "6.3.3"
-      ],
-      "page_urls": [
-        "https://online.anyflip.com/iawvx/fevz/files/basic-html/page43.html",
-        "https://online.anyflip.com/iawvx/fevz/files/basic-html/page45.html"
-      ],
-      "summary": "Halaman 37 menyenaraikan peranan bahasa Melayu dalam kehidupan negara, manakala halaman 39 menyediakan contoh dahulu–kini dan aktiviti peta pemikiran perbandingan.",
       "ready": false,
       "teacher_approved": false,
       "exact_exercise_visual_verified": false

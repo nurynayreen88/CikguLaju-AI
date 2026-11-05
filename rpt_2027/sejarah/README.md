@@ -45,3 +45,5 @@ Semua kerja masih pada PR #341 DRAF. Jangan gabung atau deploy atas keputusan QA
 - **11/108 RPH** kini ada rujukan halaman buku teks khusus yang disemak melalui teks digital (Tahun 5 PdP 005–009, Tahun 6 PdP 001–006). Lihat `audits/sejarah_y4_y6_primary_textbook_page_evidence_20261106.json`. Ini belum sama dengan kelulusan visual tugasan atau guru.
 - **Pagar kelulusan bebas** menghendaki rekod `audits/sejarah_y4_y6_release_approval_manifest_20261106.json` dan fingerprint sumber sepadan sebelum data boleh diserahkan untuk eksport natif. Meminda status sumber semata-mata tidak mengaktifkan akses.
 - Semua dokumen masih DRAF. Jangan merge ke main atau deploy sehingga tanda tangan pengesahan setiap PdP serta QA Telegram–Web betul-betul lengkap.
+
+- **Kemajuan bukti teks halaman terkini: 18/108 PdP** (Tahun 4 PdP 001–007, Tahun 5 PdP 005–009, Tahun 6 PdP 001–006). Rekod terdahulu menyebut 11/108; rujuk ledger JSON untuk bilangan terkini. Semua kelulusan kekal belum lengkap.
