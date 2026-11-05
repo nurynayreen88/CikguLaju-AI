@@ -54,6 +54,31 @@ def grant_pioneer(sb_request, telegram_user_id, payment_reference,
     })
 
 
+def reactivate_revoked_pioneer(sb_request, telegram_user_id, payment_reference,
+                              approved_by, payment_id, verified=False):
+    """Admin-confirmed, receipt-bound reactivation with atomic history archive.
+
+    Only a previously *revoked* entitlement is eligible. The protected DB RPC
+    verifies that this exact pending payment belongs to this Telegram user and
+    has a recorded proof before restoring access and archiving old entitlement.
+    It must never be called merely because a PDF/image was uploaded.
+    """
+    if verified is not True:
+        raise ValueError("Admin verification required")
+    uid = int(telegram_user_id)
+    admin = int(approved_by)
+    pid = int(payment_id)
+    reference = str(payment_reference).strip()
+    if uid <= 0 or admin <= 0 or pid <= 0 or not reference or len(reference) > 220:
+        raise ValueError("Valid user, admin, payment and reference required")
+    return sb_request("POST", "rpc/reactivate_pioneer_after_revocation", json={
+        "p_telegram_user_id": uid,
+        "p_payment_reference": reference,
+        "p_approved_by": admin,
+        "p_payment_request_id": pid,
+    })
+
+
 def legacy_non_atomic_grant_payload(uid, reference, admin):
     """Legacy payload retained for audit only; do not use for grants."""
     return {
