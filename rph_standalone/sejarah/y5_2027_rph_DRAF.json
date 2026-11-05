@@ -821,7 +821,23 @@
           "unit_start_page": 30,
           "unit_end_page": 43,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "32, 34",
+            "source_urls": [
+              "https://online.anyflip.com/iawvx/fevz/files/basic-html/page38.html",
+              "https://online.anyflip.com/iawvx/fevz/files/basic-html/page40.html"
+            ],
+            "matched_sp": [
+              "6.3.1",
+              "6.3.2"
+            ],
+            "description": "Halaman bercetak 32 membincangkan susur galur bahasa Melayu dan rumpun Austronesia; halaman 34 menunjukkan peta wilayah penutur bahasa Melayu sebagai bahasa perhubungan.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -922,7 +938,22 @@
           "unit_start_page": 30,
           "unit_end_page": 43,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "37, 39",
+            "source_urls": [
+              "https://online.anyflip.com/iawvx/fevz/files/basic-html/page43.html",
+              "https://online.anyflip.com/iawvx/fevz/files/basic-html/page45.html"
+            ],
+            "matched_sp": [
+              "6.3.3"
+            ],
+            "description": "Halaman 37 menyenaraikan peranan bahasa Melayu dalam kehidupan negara, manakala halaman 39 menyediakan contoh dahulu–kini dan aktiviti peta pemikiran perbandingan.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {

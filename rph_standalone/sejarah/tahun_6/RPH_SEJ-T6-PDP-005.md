@@ -29,3 +29,11 @@
 **Rujukan buku teks:** https://fliphtml5.com/itcew/pnmn (ISBN 978-983-49-3279-4); halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
 
 **Peringatan:** Semak kebolehlaksanaan aktiviti dengan situasi kelas, halaman buku teks sebenar, kalendar/cuti negeri, dan hasil cetakan Word/PDF sebelum kelulusan atau penerbitan.
+
+## Bukti rujukan halaman — semakan teks (bukan kelulusan akhir)
+
+- **Buku teks edisi dipadankan:** DBP 2021, KSSR Semakan 2017; ISBN 978-983-49-3279-4.
+- **Halaman bercetak diperiksa dalam teks digital:** 27; SP 10.2.3.
+- **Dapatan:** Halaman 27 menerangkan perbezaan ibu negeri dan bandar diraja serta peta lokasi dan warisan; maklumat Wilayah Persekutuan dijelaskan sebagai bukan negeri.
+- **Pautan asal yang diperiksa:** https://fliphtml5.com/itcew/pnmn.
+- **Status:** Teks halaman telah dibaca. Susun atur visual, arahan setiap aktiviti, kelulusan pedagogi guru, dan penerbitan **belum disahkan**. `textbook_page_verified=false` kekal.

@@ -421,7 +421,22 @@
           "unit_start_page": 20,
           "unit_end_page": 33,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "25–26",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "10.2.1",
+              "10.2.2"
+            ],
+            "description": "Halaman 25 membincangkan asal-usul nama negeri termasuk Sabah dan Sarawak; halaman 26 mengelaskan ketua negeri kepada sultan/raja, Yang di-Pertuan Besar dan Yang di-Pertua Negeri.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -517,7 +532,21 @@
           "unit_start_page": 20,
           "unit_end_page": 33,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "27",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "10.2.3"
+            ],
+            "description": "Halaman 27 menerangkan perbezaan ibu negeri dan bandar diraja serta peta lokasi dan warisan; maklumat Wilayah Persekutuan dijelaskan sebagai bukan negeri.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -613,7 +642,21 @@
           "unit_start_page": 20,
           "unit_end_page": 33,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "28–30",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "10.2.4"
+            ],
+            "description": "Halaman 28–30 mengenal pasti bendera, lagu dan jata negeri. Halaman 30 memberikan aktiviti mendengar lagu negeri dan menerangkan makna serta identiti negeri.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {

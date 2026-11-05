@@ -1,8 +1,8 @@
 {
   "date": "2026-11-06",
   "source_basis": "digital scanned/rehost textbook HTML text read, not complete visual approval",
-  "count": 6,
-  "status": "PARTIAL_PAGE_TEXT_CORROBORATED_NOT_RELEASE",
+  "count": 11,
+  "status": "ELEVEN_PAGE_TEXT_CORROBORATED_NOT_RELEASE",
   "records": [
     {
       "year": 5,
@@ -98,6 +98,85 @@
         "https://fliphtml5.com/itcew/pnmn"
       ],
       "summary": "Bab cabaran pembentukan Malaysia menyebut penentangan SUPP, konfrontasi Indonesia dan tuntutan Filipina terhadap Sabah; teks ini turut mencadangkan carian bukti tambahan.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 5,
+      "pdp": 8,
+      "pages": "32, 34",
+      "sp": [
+        "6.3.1",
+        "6.3.2"
+      ],
+      "page_urls": [
+        "https://online.anyflip.com/iawvx/fevz/files/basic-html/page38.html",
+        "https://online.anyflip.com/iawvx/fevz/files/basic-html/page40.html"
+      ],
+      "summary": "Halaman bercetak 32 membincangkan susur galur bahasa Melayu dan rumpun Austronesia; halaman 34 menunjukkan peta wilayah penutur bahasa Melayu sebagai bahasa perhubungan.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 5,
+      "pdp": 9,
+      "pages": "37, 39",
+      "sp": [
+        "6.3.3"
+      ],
+      "page_urls": [
+        "https://online.anyflip.com/iawvx/fevz/files/basic-html/page43.html",
+        "https://online.anyflip.com/iawvx/fevz/files/basic-html/page45.html"
+      ],
+      "summary": "Halaman 37 menyenaraikan peranan bahasa Melayu dalam kehidupan negara, manakala halaman 39 menyediakan contoh dahulu–kini dan aktiviti peta pemikiran perbandingan.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 6,
+      "pdp": 4,
+      "pages": "25–26",
+      "sp": [
+        "10.2.1",
+        "10.2.2"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/itcew/pnmn"
+      ],
+      "summary": "Halaman 25 membincangkan asal-usul nama negeri termasuk Sabah dan Sarawak; halaman 26 mengelaskan ketua negeri kepada sultan/raja, Yang di-Pertuan Besar dan Yang di-Pertua Negeri.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 6,
+      "pdp": 5,
+      "pages": "27",
+      "sp": [
+        "10.2.3"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/itcew/pnmn"
+      ],
+      "summary": "Halaman 27 menerangkan perbezaan ibu negeri dan bandar diraja serta peta lokasi dan warisan; maklumat Wilayah Persekutuan dijelaskan sebagai bukan negeri.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 6,
+      "pdp": 6,
+      "pages": "28–30",
+      "sp": [
+        "10.2.4"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/itcew/pnmn"
+      ],
+      "summary": "Halaman 28–30 mengenal pasti bendera, lagu dan jata negeri. Halaman 30 memberikan aktiviti mendengar lagu negeri dan menerangkan makna serta identiti negeri.",
       "ready": false,
       "teacher_approved": false,
       "exact_exercise_visual_verified": false

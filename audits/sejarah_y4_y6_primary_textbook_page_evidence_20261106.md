@@ -12,3 +12,13 @@ Tarikh 2026-11-06. **6 RPH** diperkukuh dengan teks halaman cetakan buku teks ya
 **Jenis bukti:** teks buku asal daripada salinan digital yang dikenal pasti, bukan imej/penyemakan visual lengkap halaman, bukan pemarkahan guru dan bukan bukti bahawa setiap aktiviti RPH diambil bulat-bulat daripada buku. Perubahan hanya metadata bukti dalam JSON sumber dan lampiran RPH Markdown individu; tidak menukar SP, RPT atau penjana pengguna.
 
 **Peringatan keperluan akhir:** semakan visual/tugasan setiap halaman, guru menyemak kesesuaian PDP individu, perakuan guru, pariti penjana Telegram/Web dan suntikan profil sekolah. Baki 102/108 PdP masih belum mendapat semakan teks halaman spesifik dalam pusingan ini.
+
+## Tambahan semakan lima PdP (6 November 2026)
+
+- **Tahun 5 PdP 008**: SP 6.3.1, 6.3.2; halaman 32, 34. Halaman bercetak 32 membincangkan susur galur bahasa Melayu dan rumpun Austronesia; halaman 34 menunjukkan peta wilayah penutur bahasa Melayu sebagai bahasa perhubungan. Sumber https://online.anyflip.com/iawvx/fevz/files/basic-html/page38.html, https://online.anyflip.com/iawvx/fevz/files/basic-html/page40.html.
+- **Tahun 5 PdP 009**: SP 6.3.3; halaman 37, 39. Halaman 37 menyenaraikan peranan bahasa Melayu dalam kehidupan negara, manakala halaman 39 menyediakan contoh dahulu–kini dan aktiviti peta pemikiran perbandingan. Sumber https://online.anyflip.com/iawvx/fevz/files/basic-html/page43.html, https://online.anyflip.com/iawvx/fevz/files/basic-html/page45.html.
+- **Tahun 6 PdP 004**: SP 10.2.1, 10.2.2; halaman 25–26. Halaman 25 membincangkan asal-usul nama negeri termasuk Sabah dan Sarawak; halaman 26 mengelaskan ketua negeri kepada sultan/raja, Yang di-Pertuan Besar dan Yang di-Pertua Negeri. Sumber https://fliphtml5.com/itcew/pnmn.
+- **Tahun 6 PdP 005**: SP 10.2.3; halaman 27. Halaman 27 menerangkan perbezaan ibu negeri dan bandar diraja serta peta lokasi dan warisan; maklumat Wilayah Persekutuan dijelaskan sebagai bukan negeri. Sumber https://fliphtml5.com/itcew/pnmn.
+- **Tahun 6 PdP 006**: SP 10.2.4; halaman 28–30. Halaman 28–30 mengenal pasti bendera, lagu dan jata negeri. Halaman 30 memberikan aktiviti mendengar lagu negeri dan menerangkan makna serta identiti negeri. Sumber https://fliphtml5.com/itcew/pnmn.
+
+**Keseluruhan kini 11/108** mempunyai bukti bacaan teks halaman khusus; **97 lagi belum**. Semua terus DRAF sehingga teks, imej latihan buku dan semakan pedagogi setiap PdP disahkan. Pernyataan 6/108 dalam laporan awal merujuk rekod terdahulu, bukan jumlah terkini.

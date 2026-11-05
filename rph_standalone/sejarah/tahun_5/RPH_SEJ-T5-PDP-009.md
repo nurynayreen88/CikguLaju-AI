@@ -29,3 +29,11 @@
 **Rujukan buku teks:** https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/ (ISBN 978-983-49-2829-2); halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
 
 **Peringatan:** Semak kebolehlaksanaan aktiviti dengan situasi kelas, halaman buku teks sebenar, kalendar/cuti negeri, dan hasil cetakan Word/PDF sebelum kelulusan atau penerbitan.
+
+## Bukti rujukan halaman — semakan teks (bukan kelulusan akhir)
+
+- **Buku teks edisi dipadankan:** DBP 2020, KSSR Semakan 2017; ISBN 978-983-49-2829-2.
+- **Halaman bercetak diperiksa dalam teks digital:** 37, 39; SP 6.3.3.
+- **Dapatan:** Halaman 37 menyenaraikan peranan bahasa Melayu dalam kehidupan negara, manakala halaman 39 menyediakan contoh dahulu–kini dan aktiviti peta pemikiran perbandingan.
+- **Pautan asal yang diperiksa:** https://online.anyflip.com/iawvx/fevz/files/basic-html/page43.html; https://online.anyflip.com/iawvx/fevz/files/basic-html/page45.html.
+- **Status:** Teks halaman telah dibaca. Susun atur visual, arahan setiap aktiviti, kelulusan pedagogi guru, dan penerbitan **belum disahkan**. `textbook_page_verified=false` kekal.

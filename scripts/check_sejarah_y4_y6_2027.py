@@ -31,6 +31,10 @@ for y, (num_sk, num_sp) in EXPECTED.items():
     all_matrix = {m["id"]:m for m in matrix["records"]}
     assert len(all_matrix) == 97
     assert len([m for m in matrix["records"] if m["year"] == y]) == (33 if y == 6 else 32)
+    textbook_evidence = json.loads((ROOT/"audits/sejarah_y4_y6_primary_textbook_page_evidence_20261106.json").read_text())
+    assert textbook_evidence["count"] == len(textbook_evidence["records"]) == 11
+    corroborated = {(a["year"], a["pdp"]):a for a in textbook_evidence["records"]}
+    assert len(corroborated) == 11
     audited = {a["id"]:a for a in audit["rows"]}
     assert len(audited) == 11
     calendar = json.loads((ROOT/"curriculum/sejarah/kalender_sejarah_2027_kumpulan_a_b.json").read_text())
@@ -89,6 +93,17 @@ for y, (num_sk, num_sp) in EXPECTED.items():
             expected = "Murid " + civic[0].lower() + civic[1:] + "."
             assert expected in r["aktiviti_2"]["activity"], ("civic action mismatch", x["id"])
             assert r["aktiviti_1"]["activity"] != r["aktiviti_2"]["activity"]
+        if (y,i) in corroborated:
+            rec = corroborated[(y,i)]
+            scope = r["textbook_reference"]["checked_focus_pages"]
+            assert scope["printed_page_range"] == rec["pages"]
+            assert scope["matched_sp"] == rec["sp"]
+            assert scope["source_urls"] == rec["page_urls"]
+            assert scope["text_checked"] is True
+            assert scope["teacher_approved"] is False
+            assert scope["exact_exercise_visual_verification"] is False
+            assert all(code in r["sp_codes"] for code in rec["sp"])
+            assert rec["ready"] is False
         bt = r["textbook_reference"]
         u = units[r["sk"]]
         assert r["unit_toc_verified"] is True
