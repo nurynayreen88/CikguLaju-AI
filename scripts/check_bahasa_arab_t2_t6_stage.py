@@ -152,7 +152,7 @@ def check() -> None:
     assert y4rest["pdp"][5]["evidence_status"] == "MATCH_BOOK_PAGE_SP_AFTER_CONTENT_CORRECTION"
     assert all(x["ready"] is False and x["manual_approval"] is False for x in y4rest["pdp"])
     assert m["years"]["4"]["source_evidence_pdp007_012"] == "audits/bahasa_arab_y4_pdp007_012_source_audit_20261106.json"
-    assert m["years"]["4"]["source_reviewed_drafts_total"] == 12
+    assert m["years"]["4"]["source_reviewed_drafts_total"] == 24
     for i, x in enumerate(y4rest["pdp"], 7):
         src = (SUBJECT / "year4" / f"lesson_{i:03d}.md").read_text(encoding="utf-8")
         assert "**Audit buku teks (6 Nov 2026):**" in src
