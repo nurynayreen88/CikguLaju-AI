@@ -3,32 +3,32 @@
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
 **Unit / Tajuk:** PAHLAWAN KECIL  
 **Bidang:** Gerakan Mengikut Muzik  
-**SK / SP (RPT sumber):** 2.3.3
+**SK / SP (RPT Muzik sumber; belum disahkan silang dengan kod buku Kesenian):** 2.3.3  
 **Tempoh cadangan:** 30 minit  
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Melakukan sekurang-kurangnya dua corak pergerakan yang tepat dengan tempo/struktur muzik.
+**Objektif pembelajaran (draf boleh ukur):** Melaksanakan urutan enam bahagian Gerak Irama dengan sekurang-kurangnya lima pergerakan tepat mengikut empat detik.
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Kriteria kejayaan:** Murid menepuk pola berpasangan dan menyusun langkah sisi, belakang, depan serta gerakan setempat dengan betul.
 
 **Set Induksi — 4 minit**  
-Murid mendengar muzik dan bergerak setempat mengikut detik tanpa mengganggu ruang rakan.
+Guru menyemak tepukan mengikut ikon halaman 46 secara pasangan sambil menyebut empat detik.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru menunjuk contoh gerakan berdasarkan Merancang pergerakan berdasarkan muzik yang didengar: (i) corak irama lagu (ii) tempo, sambil menerangkan aspek irama, bentuk lagu atau tempo.
+**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit)**  
+Guru memodelkan turutan halaman 47: gerak setempat empat detik, kaki kiri ke sisi, kaki kanan ke belakang, kaki kiri ke depan, rapatkan kaki kanan dan gerak setempat semula.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid dalam kumpulan mencipta formasi 4–8 kiraan dan mempersembahkannya bersama muzik; kumpulan lain memberi ulasan membina.
+**Aktiviti 2 — Aplikasi / persembahan (10 minit)**  
+Murid berlatih berpasangan dengan kiraan guru, kemudian kumpulan mempersembahkan urutan sambil seorang ahli menjaga tempo menggunakan perkusi.
 
 **Pengukuhan & Penilaian — 6 minit**  
-Rubrik 3 aspek: padanan muzik, koordinasi dan kerjasama; rekod penyertaan setiap murid.
+Guru menilai enam peralihan dan ketepatan detik; pasangan membetulkan satu peralihan yang tersilap.
 
 **Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+Murid menunjukkan langkah yang paling sukar dan demonstrasi pembetulannya.
 
-**Bahan:** Audio muzik, ruang selamat dan kad formasi/tempo.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 46-47; **belum disahkan pada halaman buku asal**. RPT sumber menyebut Audio 46-47; **nombor trek belum diaudit dengan fail audio**.
+**Bahan:** Buku halaman 46–47, kad urutan, perkusi selamat; Audio 46–47 adalah nombor bercetak.  
+**Rujukan sumber:** Buku Teks Pendidikan Kesenian Tahun 3 SK, DBP 2018, halaman 46–47; disemak secara teks terhadap https://anyflip.com/lcinm/flxx/basic/51-100 . Kod buku Kesenian yang dicetak: 2.2.8(i); **jangan gantikan kod DSKP Muzik tanpa pengesahan crosswalk**. Audio bercetak: 46–47; **tiada fail audio disahkan**.
 
 **Catatan pelaksanaan / pemulihan:** __________________________________________
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_20261106; DRAF STAGING. Bukan pengesahan visual skor, fail audio, kod DSKP atau output Word/PDF dan Telegram–Web.
