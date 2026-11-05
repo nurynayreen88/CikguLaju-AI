@@ -1,0 +1,479 @@
+{
+  "date": "2026-11-05",
+  "status": "CANDIDATE_ONLY_NO_RUNTIME_USE",
+  "purpose": "Record exact canonical MP3-file candidates for 24 legacy WMA routes; never automatically substitute by number alone.",
+  "scope": "English Year4 historical v25.259 audio map only, no live bot or DB changes",
+  "counts": {
+    "wma_route_rows": 24,
+    "canonical_mp3_candidate_found": 24,
+    "block_wrong_disc_l29": 2,
+    "block_wrong_lesson_l103": 2,
+    "source_format_candidates": 20
+  },
+  "known_direct_tb_paths": [
+    {
+      "lesson": 29,
+      "source_page": 193,
+      "student_book_page": 129,
+      "required_disc": "CD3",
+      "tracks": [
+        {
+          "track": 35,
+          "file_id": "1RNYuEKqaS5YZ9e4TDpnCH73I0scaPVIC"
+        },
+        {
+          "track": 36,
+          "file_id": "1VVehPZAvRph_YUTfbBglELLBkFOx9e3J"
+        }
+      ],
+      "delivery_verified": false
+    },
+    {
+      "lesson": 30,
+      "source_page": 39,
+      "student_book_page": 20,
+      "required_disc": "CD1",
+      "tracks": [
+        {
+          "track": 29,
+          "file_id": "15tyBPsUwd5z9AknoOOUIiaTN6QT-Xrct"
+        }
+      ],
+      "delivery_verified": false
+    }
+  ],
+  "candidates": [
+    {
+      "lesson": 7,
+      "old_reference": "CD1 Track 9",
+      "old_drive_id": "1FWD8yWIYH8qw0qgXRsjLgpcakl-FV5Jd",
+      "old_filename": "CD1-09.wma",
+      "mp3_candidate": {
+        "file_id": "1RCIp86VNulrP6AfPsA-Bt3wfksyQh55h",
+        "name": "09 Track 9.mp3",
+        "size_bytes": 185809,
+        "drive_folder": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+      },
+      "classification": "CANDIDATE_SOURCE_FORMAT_REPLACEMENT_NOT_APPROVED",
+      "not_verified": [
+        "MP3 candidate spoken content vs exact TB/SB activity",
+        "Teacher's Book page and activity for this Lesson",
+        "Normal teacher Telegram download and playback"
+      ]
+    },
+    {
+      "lesson": 8,
+      "old_reference": "CD1 Track 11",
+      "old_drive_id": "1vf0CXmq7XumG9aAa_tglZ_haghztiG9G",
+      "old_filename": "CD1-11.wma",
+      "mp3_candidate": {
+        "file_id": "10kXQb3-RghrTcCchRpaX70e4vhZlVuZt",
+        "name": "11 Track 11.mp3",
+        "size_bytes": 1196617,
+        "drive_folder": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+      },
+      "classification": "CANDIDATE_SOURCE_FORMAT_REPLACEMENT_NOT_APPROVED",
+      "not_verified": [
+        "MP3 candidate spoken content vs exact TB/SB activity",
+        "Teacher's Book page and activity for this Lesson",
+        "Normal teacher Telegram download and playback"
+      ]
+    },
+    {
+      "lesson": 9,
+      "old_reference": "CD1 Track 12",
+      "old_drive_id": "1eaoHB3Mv1yZWj53KaVJNY_9q7M3ag3C1",
+      "old_filename": "CD1-12.wma",
+      "mp3_candidate": {
+        "file_id": "1VjM_5R4Wpm7PD1cnjeZoYVkB6dn3-4s4",
+        "name": "12 Track 12.mp3",
+        "size_bytes": 1779166,
+        "drive_folder": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+      },
+      "classification": "CANDIDATE_SOURCE_FORMAT_REPLACEMENT_NOT_APPROVED",
+      "not_verified": [
+        "MP3 candidate spoken content vs exact TB/SB activity",
+        "Teacher's Book page and activity for this Lesson",
+        "Normal teacher Telegram download and playback"
+      ]
+    },
+    {
+      "lesson": 9,
+      "old_reference": "CD1 Track 13",
+      "old_drive_id": "1XHx5n_Ajd8uhnm-0kV7TzGcOu510_WBH",
+      "old_filename": "CD1-13.wma",
+      "mp3_candidate": {
+        "file_id": "1II1vdAtGBRev3d0sytdYRGmZ-GV-naEq",
+        "name": "13 Track 13.mp3",
+        "size_bytes": 198736,
+        "drive_folder": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+      },
+      "classification": "CANDIDATE_SOURCE_FORMAT_REPLACEMENT_NOT_APPROVED",
+      "not_verified": [
+        "MP3 candidate spoken content vs exact TB/SB activity",
+        "Teacher's Book page and activity for this Lesson",
+        "Normal teacher Telegram download and playback"
+      ]
+    },
+    {
+      "lesson": 11,
+      "old_reference": "CD1 Track 16",
+      "old_drive_id": "1OzT7ZXRtOKwNBcQ9kYcHHjT2o_X8uOqa",
+      "old_filename": "CD1-16.wma",
+      "mp3_candidate": {
+        "file_id": "1rtjvLFeUfPvc7ailsz6fQGSig_qssaL7",
+        "name": "16 Track 16.mp3",
+        "size_bytes": 1970569,
+        "drive_folder": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+      },
+      "classification": "CANDIDATE_SOURCE_FORMAT_REPLACEMENT_NOT_APPROVED",
+      "not_verified": [
+        "MP3 candidate spoken content vs exact TB/SB activity",
+        "Teacher's Book page and activity for this Lesson",
+        "Normal teacher Telegram download and playback"
+      ]
+    },
+    {
+      "lesson": 12,
+      "old_reference": "CD1 Track 17",
+      "old_drive_id": "1f083A06NlIo0NkZqbRH_XM_OkobuU4oY",
+      "old_filename": "CD1-17.wma",
+      "mp3_candidate": {
+        "file_id": "1XB19lJST_n4_MauxhZyWEGjRLbywRG17",
+        "name": "17 Track 17.mp3",
+        "size_bytes": 668278,
+        "drive_folder": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+      },
+      "classification": "CANDIDATE_SOURCE_FORMAT_REPLACEMENT_NOT_APPROVED",
+      "not_verified": [
+        "MP3 candidate spoken content vs exact TB/SB activity",
+        "Teacher's Book page and activity for this Lesson",
+        "Normal teacher Telegram download and playback"
+      ]
+    },
+    {
+      "lesson": 17,
+      "old_reference": "CD1 Track 19",
+      "old_drive_id": "1J7bjab5zvMHsf8nn_HM7dzDZb3wrNJAl",
+      "old_filename": "CD1-19.wma",
+      "mp3_candidate": {
+        "file_id": "1I_6yoZHAyY7LQwsoJFNzr_m92aIQ4ETr",
+        "name": "19 Track 19.mp3",
+        "size_bytes": 1006465,
+        "drive_folder": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+      },
+      "classification": "CANDIDATE_SOURCE_FORMAT_REPLACEMENT_NOT_APPROVED",
+      "not_verified": [
+        "MP3 candidate spoken content vs exact TB/SB activity",
+        "Teacher's Book page and activity for this Lesson",
+        "Normal teacher Telegram download and playback"
+      ]
+    },
+    {
+      "lesson": 22,
+      "old_reference": "CD1 Track 22",
+      "old_drive_id": "1bOffmpd3jucdHKNaKleJpZB7nl9HDCVY",
+      "old_filename": "CD1-22.wma",
+      "mp3_candidate": {
+        "file_id": "1PTp6yCuctJ3721R6qdIMO4CNwk1Ns_9z",
+        "name": "22 Track 22.mp3",
+        "size_bytes": 1318798,
+        "drive_folder": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+      },
+      "classification": "CANDIDATE_SOURCE_FORMAT_REPLACEMENT_NOT_APPROVED",
+      "not_verified": [
+        "MP3 candidate spoken content vs exact TB/SB activity",
+        "Teacher's Book page and activity for this Lesson",
+        "Normal teacher Telegram download and playback"
+      ]
+    },
+    {
+      "lesson": 24,
+      "old_reference": "CD1 Track 25",
+      "old_drive_id": "12AuYsXvPu1BUI6BCUVTX67EPQzRxYadW",
+      "old_filename": "CD1-25.wma",
+      "mp3_candidate": {
+        "file_id": "1EFhN40hDU0UwghVrhg84PxnWs3HnzNVA",
+        "name": "25 Track 25.mp3",
+        "size_bytes": 925150,
+        "drive_folder": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+      },
+      "classification": "CANDIDATE_SOURCE_FORMAT_REPLACEMENT_NOT_APPROVED",
+      "not_verified": [
+        "MP3 candidate spoken content vs exact TB/SB activity",
+        "Teacher's Book page and activity for this Lesson",
+        "Normal teacher Telegram download and playback"
+      ]
+    },
+    {
+      "lesson": 29,
+      "old_reference": "CD1 Track 35",
+      "old_drive_id": "1BJFfffgxHyiYohapgypE2C212W3177mt",
+      "old_filename": "CD1-35.wma",
+      "mp3_candidate": {
+        "file_id": "1-Of80VEu80UizkMLgBLBwFDKwTOLCTHA",
+        "name": "35 Track 35.mp3",
+        "size_bytes": 1816279,
+        "drive_folder": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+      },
+      "classification": "BLOCK_WRONG_DISC_TB_CONFIRMS_CD3",
+      "not_verified": [
+        "MP3 candidate spoken content vs exact TB/SB activity",
+        "Teacher's Book page and activity for this Lesson",
+        "Normal teacher Telegram download and playback"
+      ]
+    },
+    {
+      "lesson": 29,
+      "old_reference": "CD1 Track 36",
+      "old_drive_id": "18EUpIGuG87WIzjYifdnPWjXf6OZl41F3",
+      "old_filename": "CD1-36.wma",
+      "mp3_candidate": {
+        "file_id": "1pKfRsR3uN7H9bxFL_wyiBn1BGVmkbCeM",
+        "name": "36 Track 36.mp3",
+        "size_bytes": 483547,
+        "drive_folder": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+      },
+      "classification": "BLOCK_WRONG_DISC_TB_CONFIRMS_CD3",
+      "not_verified": [
+        "MP3 candidate spoken content vs exact TB/SB activity",
+        "Teacher's Book page and activity for this Lesson",
+        "Normal teacher Telegram download and playback"
+      ]
+    },
+    {
+      "lesson": 32,
+      "old_reference": "CD1 Track 35",
+      "old_drive_id": "1BJFfffgxHyiYohapgypE2C212W3177mt",
+      "old_filename": "CD1-35.wma",
+      "mp3_candidate": {
+        "file_id": "1-Of80VEu80UizkMLgBLBwFDKwTOLCTHA",
+        "name": "35 Track 35.mp3",
+        "size_bytes": 1816279,
+        "drive_folder": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+      },
+      "classification": "CANDIDATE_SOURCE_FORMAT_REPLACEMENT_NOT_APPROVED",
+      "not_verified": [
+        "MP3 candidate spoken content vs exact TB/SB activity",
+        "Teacher's Book page and activity for this Lesson",
+        "Normal teacher Telegram download and playback"
+      ]
+    },
+    {
+      "lesson": 48,
+      "old_reference": "CD1 Track 51",
+      "old_drive_id": "1bIvShBruLIYJNVy3i3iY_-L8tudecOQj",
+      "old_filename": "CD1-51.wma",
+      "mp3_candidate": {
+        "file_id": "19GTdnMrK-qYKgYg-ghZSZXqefaffCIil",
+        "name": "51 Track 51.mp3",
+        "size_bytes": 1103209,
+        "drive_folder": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+      },
+      "classification": "CANDIDATE_SOURCE_FORMAT_REPLACEMENT_NOT_APPROVED",
+      "not_verified": [
+        "MP3 candidate spoken content vs exact TB/SB activity",
+        "Teacher's Book page and activity for this Lesson",
+        "Normal teacher Telegram download and playback"
+      ]
+    },
+    {
+      "lesson": 59,
+      "old_reference": "CD1 Track 61",
+      "old_drive_id": "1pHZtmTX98352O8oYMv86OqaOMLLV5GmY",
+      "old_filename": "CD1-61.wma",
+      "mp3_candidate": {
+        "file_id": "1pU3lax9ykeB5YTzXuP6joDBNaaUCQBSL",
+        "name": "61 Track 61.mp3",
+        "size_bytes": 1200787,
+        "drive_folder": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+      },
+      "classification": "CANDIDATE_SOURCE_FORMAT_REPLACEMENT_NOT_APPROVED",
+      "not_verified": [
+        "MP3 candidate spoken content vs exact TB/SB activity",
+        "Teacher's Book page and activity for this Lesson",
+        "Normal teacher Telegram download and playback"
+      ]
+    },
+    {
+      "lesson": 97,
+      "old_reference": "CD2 Track 21",
+      "old_drive_id": "1tytx8H50xtmemOXI-Vh0YERcy9HI5CGH",
+      "old_filename": "CD2-21.wma",
+      "mp3_candidate": {
+        "file_id": "1ZjFEfvJuagEtcEAZuCzRsSs3AXrqUMMw",
+        "name": "21 Track 21.mp3",
+        "size_bytes": 1263337,
+        "drive_folder": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+      },
+      "classification": "CANDIDATE_SOURCE_FORMAT_REPLACEMENT_NOT_APPROVED",
+      "not_verified": [
+        "MP3 candidate spoken content vs exact TB/SB activity",
+        "Teacher's Book page and activity for this Lesson",
+        "Normal teacher Telegram download and playback"
+      ]
+    },
+    {
+      "lesson": 98,
+      "old_reference": "CD2 Track 21",
+      "old_drive_id": "1tytx8H50xtmemOXI-Vh0YERcy9HI5CGH",
+      "old_filename": "CD2-21.wma",
+      "mp3_candidate": {
+        "file_id": "1ZjFEfvJuagEtcEAZuCzRsSs3AXrqUMMw",
+        "name": "21 Track 21.mp3",
+        "size_bytes": 1263337,
+        "drive_folder": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+      },
+      "classification": "CANDIDATE_SOURCE_FORMAT_REPLACEMENT_NOT_APPROVED",
+      "not_verified": [
+        "MP3 candidate spoken content vs exact TB/SB activity",
+        "Teacher's Book page and activity for this Lesson",
+        "Normal teacher Telegram download and playback"
+      ]
+    },
+    {
+      "lesson": 98,
+      "old_reference": "CD2 Track 22",
+      "old_drive_id": "1aUGlOIiWw4-lFvOtfgoJTna4NXGG5jbc",
+      "old_filename": "CD2-22.wma",
+      "mp3_candidate": {
+        "file_id": "1sI2jDn8otlgH4pK_dyztrwuMY3azWlYl",
+        "name": "22 Track 22.mp3",
+        "size_bytes": 148696,
+        "drive_folder": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+      },
+      "classification": "CANDIDATE_SOURCE_FORMAT_REPLACEMENT_NOT_APPROVED",
+      "not_verified": [
+        "MP3 candidate spoken content vs exact TB/SB activity",
+        "Teacher's Book page and activity for this Lesson",
+        "Normal teacher Telegram download and playback"
+      ]
+    },
+    {
+      "lesson": 99,
+      "old_reference": "CD2 Track 24",
+      "old_drive_id": "17GXqR69gZa1ARaqjb59vylcH5vqvKAHT",
+      "old_filename": "CD2-24.wma",
+      "mp3_candidate": {
+        "file_id": "1kX9N0DkQ73k-VgbMr5z45o9uZE5NYF-z",
+        "name": "24 Track 24.mp3",
+        "size_bytes": 1710361,
+        "drive_folder": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+      },
+      "classification": "CANDIDATE_SOURCE_FORMAT_REPLACEMENT_NOT_APPROVED",
+      "not_verified": [
+        "MP3 candidate spoken content vs exact TB/SB activity",
+        "Teacher's Book page and activity for this Lesson",
+        "Normal teacher Telegram download and playback"
+      ]
+    },
+    {
+      "lesson": 102,
+      "old_reference": "CD2 Track 25",
+      "old_drive_id": "1dZfNW0fnedxJjSARaHw2fIi8x_k0-vO4",
+      "old_filename": "CD2-25.wma",
+      "mp3_candidate": {
+        "file_id": "1Lz-BPqFM6g0dLLe0MPxnM3CqTwvZh5yk",
+        "name": "25 Track 25.mp3",
+        "size_bytes": 1921363,
+        "drive_folder": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+      },
+      "classification": "CANDIDATE_SOURCE_FORMAT_REPLACEMENT_NOT_APPROVED",
+      "not_verified": [
+        "MP3 candidate spoken content vs exact TB/SB activity",
+        "Teacher's Book page and activity for this Lesson",
+        "Normal teacher Telegram download and playback"
+      ]
+    },
+    {
+      "lesson": 103,
+      "old_reference": "CD2 Track 26",
+      "old_drive_id": "1vpNkB4OWao5iPQvHzEpemQrlNiNhkX4H",
+      "old_filename": "CD2-26.wma",
+      "mp3_candidate": {
+        "file_id": "1PmJHMo3mOxKxUMJ145BpsmjypzhxJkHl",
+        "name": "26 Track 26.mp3",
+        "size_bytes": 140356,
+        "drive_folder": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+      },
+      "classification": "CANDIDATE_SOURCE_FORMAT_REPLACEMENT_NOT_APPROVED",
+      "not_verified": [
+        "MP3 candidate spoken content vs exact TB/SB activity",
+        "Teacher's Book page and activity for this Lesson",
+        "Normal teacher Telegram download and playback"
+      ]
+    },
+    {
+      "lesson": 103,
+      "old_reference": "CD2 Track 27",
+      "old_drive_id": "10g7LyS5-rGCPgoOgPoYfw-zpBrUZVt9-",
+      "old_filename": "CD2-27.wma",
+      "mp3_candidate": {
+        "file_id": "1vg719XbwPSpRhO70E4IjymsWEi0nxnLG",
+        "name": "27 Track 27.mp3",
+        "size_bytes": 300901,
+        "drive_folder": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+      },
+      "classification": "BLOCK_WRONG_LESSON_BELONGS_TO_104",
+      "not_verified": [
+        "MP3 candidate spoken content vs exact TB/SB activity",
+        "Teacher's Book page and activity for this Lesson",
+        "Normal teacher Telegram download and playback"
+      ]
+    },
+    {
+      "lesson": 103,
+      "old_reference": "CD2 Track 28",
+      "old_drive_id": "1EMV_qy19Ktx3F_lPWtt3JFHPibyHt5du",
+      "old_filename": "CD2-28.wma",
+      "mp3_candidate": {
+        "file_id": "1VjQVaLY2_3TneQ96VwNwGlPbfkklNgnf",
+        "name": "28 Track 28.mp3",
+        "size_bytes": 1013137,
+        "drive_folder": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+      },
+      "classification": "BLOCK_WRONG_LESSON_BELONGS_TO_104",
+      "not_verified": [
+        "MP3 candidate spoken content vs exact TB/SB activity",
+        "Teacher's Book page and activity for this Lesson",
+        "Normal teacher Telegram download and playback"
+      ]
+    },
+    {
+      "lesson": 107,
+      "old_reference": "CD2 Track 32",
+      "old_drive_id": "1t44G8OrP3Zj4Rb7kWUAV_u08PUxl4HhU",
+      "old_filename": "CD2-32.wma",
+      "mp3_candidate": {
+        "file_id": "1oYoThks0v93Otoe5vobmuvxVvhHEsPmY",
+        "name": "32 Track 32.mp3",
+        "size_bytes": 2037706,
+        "drive_folder": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+      },
+      "classification": "CANDIDATE_SOURCE_FORMAT_REPLACEMENT_NOT_APPROVED",
+      "not_verified": [
+        "MP3 candidate spoken content vs exact TB/SB activity",
+        "Teacher's Book page and activity for this Lesson",
+        "Normal teacher Telegram download and playback"
+      ]
+    },
+    {
+      "lesson": 110,
+      "old_reference": "CD2 Track 31",
+      "old_drive_id": "1bohxCDWg5pwB4IZnpibBlFoM3z6FkPyP",
+      "old_filename": "CD2-31.wma",
+      "mp3_candidate": {
+        "file_id": "16vsBWLC0YzofVdzxloNNqTkuKj2DkTcX",
+        "name": "31 Track 31.mp3",
+        "size_bytes": 122425,
+        "drive_folder": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+      },
+      "classification": "CANDIDATE_SOURCE_FORMAT_REPLACEMENT_NOT_APPROVED",
+      "not_verified": [
+        "MP3 candidate spoken content vs exact TB/SB activity",
+        "Teacher's Book page and activity for this Lesson",
+        "Normal teacher Telegram download and playback"
+      ]
+    }
+  ]
+}
