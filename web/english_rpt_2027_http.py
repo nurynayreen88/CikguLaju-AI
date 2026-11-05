@@ -91,7 +91,7 @@ def create_english_rpt_blueprint(root=ROOT):
         from web.rpt_school_cover import for_download
         from web.teacher_profile_store import ProfileUnavailable
         try:
-            document = for_download(account, path, "English", year)
+            document = for_download(account, path, "english", year)
         except ProfileUnavailable:
             return jsonify({"error": "RPT dengan identiti sekolah belum dapat disediakan. Sila cuba semula."}), 503
         return send_file(document, mimetype="application/pdf", as_attachment=True,
