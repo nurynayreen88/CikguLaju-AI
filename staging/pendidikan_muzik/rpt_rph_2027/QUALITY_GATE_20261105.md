@@ -163,3 +163,8 @@ PdP12–13 dan 24–26 diselaraskan dengan projek terpadu Kesenian Tahun3 halama
 ## Semakan semua 175 draf — 8 cadangan pengukuhan (6 November 2026)
 - 8 PdP34–35 Tahun2/3/4/6 kini mempunyai aktiviti khusus dan rubrik boleh ukur; kekal **cadangan guru**, bukan sumber buku rasmi. Audit `REINFORCEMENT_8_CANDIDATE_PDP_AUDIT_20261106.md`.
 - **175/175 RPH draf mempunyai semakan kandungan mengikut skop masing-masing**: 167 semakan teks buku/projek pada tahap berlainan dan 8 semakan spesifisiti cadangan. **0 FINAL READY** kerana belum lulus skor visual/audio/DSKP/cuti/RPT/Word-PDF/Telegram-Web.
+
+
+## 6 November 2026 — Pengesahan julat minggu RPT terhadap indeks CikguLaju
+- 175/175 julat tarikh A/B (manifest dan RPT CSV) sepadan dengan indeks rasmi CikguLaju M01–M44 (read-only snapshot); tiada tarikh perlu dianjak.
+- Semakan ini **BUKAN** pengesahan hari PdP mengikut negeri atau cuti perayaan/gantian. Jangan merombak PdP berdasarkan minggu tanpa kelas. Audit: `KALENDAR_2027_WEEK_SLOT_AUDIT_20261106.md`. Release gate kekal tertutup.

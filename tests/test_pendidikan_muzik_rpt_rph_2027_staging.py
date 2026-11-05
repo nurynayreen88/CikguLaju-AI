@@ -68,6 +68,39 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
             self.assertIn("DRAF", rpt_md)
         self.assertEqual(len(all_keys), 175)
 
+    def test_week_slots_match_frozen_master_not_per_state_availability(self):
+        """Master-index week ranges only. This does NOT validate school dates by state."""
+        snapshot = json.loads((MUSIC / "rpt_rph_2027" / "KALENDAR_MINGGU_RPT_2027_INDUK_AUDIT_SNAPSHOT.json").read_text(encoding="utf-8"))
+        self.assertFalse(snapshot["verification"]["release_authorization"])
+        self.assertEqual(snapshot["verification"]["year2_to6_pdp"], 175)
+        for group in ("A", "B"):
+            self.assertEqual(len(snapshot["weeks"][group]), 44)
+            self.assertEqual(set(snapshot["weeks"][group]), {f"M{i:02d}" for i in range(1, 45)})
+            self.assertEqual(len(snapshot["school_break_week_slots"][group]), 4)
+        self.assertEqual(snapshot["weeks"]["A"]["M10"]["start"], "2027-03-14")
+        self.assertEqual(snapshot["weeks"]["B"]["M10"]["start"], "2027-03-15")
+        self.assertEqual(snapshot["weeks"]["B"]["M20"]["start"], "2027-06-07")
+        self.assertEqual(snapshot["weeks"]["B"]["M32"]["start"], "2027-09-06")
+
+        import csv
+        def short_date(iso):
+            return iso[8:10] + "/" + iso[5:7]
+
+        for year in range(2, 7):
+            directory = MUSIC / "rpt_rph_2027" / f"year{year}"
+            manifest = json.loads((directory / "pdp_manifest.json").read_text(encoding="utf-8"))
+            with (directory / f"RPT_MUZIK_TAHUN_{year}_2027_DRAF.csv").open(encoding="utf-8", newline="") as fh:
+                csv_rows = {row[0]: row for row in list(csv.reader(fh))[1:]}
+            self.assertEqual(len(csv_rows), 35)
+            for row in manifest["pdps"]:
+                ident = row["pdp_id"]
+                week_code = f"M{row['rpt2027_slot']['week']:02d}"
+                for group, column in (("A", 2), ("B", 3)):
+                    source = snapshot["weeks"][group][week_code]
+                    expected = short_date(source["start"]) + "–" + short_date(source["end"])
+                    self.assertEqual(row["rpt2027_slot"]["group" + group], expected)
+                    self.assertEqual(csv_rows[ident][column], expected)
+
     def test_conflicting_year_4_codes_not_automatically_normalized(self):
         directory = MUSIC / "rpt_rph_2027" / "year4"
         manifest = json.loads((directory / "pdp_manifest.json").read_text(encoding="utf-8"))
