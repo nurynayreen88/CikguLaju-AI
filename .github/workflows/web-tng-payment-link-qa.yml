@@ -1,0 +1,21 @@
+name: Web TnG payment link QA
+on:
+  push:
+    branches: [feature/web-tng-payment-link-20261106]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'flask==3.1.3' 'gunicorn==23.0.0'
+      - run: node --check web_v1_static_preview/web-payment.js
+      - run: python -m unittest discover -s tests -p test_web_payment_proof_first.py -v
+      - run: python -m unittest discover -s tests -p test_web_sidebar_navigation.py -v
+      - run: python -c "from tools.run_web_production import app; assert app is not None"
