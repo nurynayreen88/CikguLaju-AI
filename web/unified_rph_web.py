@@ -17,7 +17,7 @@ import re
 from xml.sax.saxutils import escape
 from zipfile import ZIP_DEFLATED, ZipFile
 
-from flask import Blueprint, jsonify, request, send_file
+from flask import Blueprint, g, jsonify, request, send_file
 
 from web.english_rpt_2027_http import _account, _has_paid_access
 
@@ -371,8 +371,23 @@ def create_blueprint():
         account, error = _account()
         if error is not None:
             return None, error
-        if not _has_paid_access(account):
-            return None, (jsonify({"error": "Pratonton RPH Web memerlukan Rakan Pembangun atau langganan aktif; 10 janaan percuma kekal melalui Telegram"}), 403)
+        # Free RPH uses the *same* ten-credit Supabase balance as Telegram.
+        # A paid account is unlimited; a trial account needs a verified,
+        # strictly typed positive balance. Do not provision credits here.
+        paid = _has_paid_access(account)
+        credits = account.get("free_remaining") if isinstance(account, dict) else None
+        if not paid and (type(credits) is not int or not 0 <= credits <= 10):
+            return None, (jsonify({
+                "error": "Baki janaan percuma belum dapat disahkan. Cuba Refresh.",
+                "code": "RPH_TRIAL_BALANCE_UNAVAILABLE"}), 503)
+        if not paid and credits == 0:
+            return None, (jsonify({
+                "error": "10 janaan RPH percuma telah habis. Aktifkan Rakan Pembangun untuk akses tanpa had.",
+                "code": "FREE_TRIAL_EXHAUSTED", "remaining": 0}), 403)
+        # Never add account/payment details to a returned preview JSON or
+        # the server-to-server native Telegram document payload.
+        g.cikgulaju_rph_account = account
+        g.cikgulaju_rph_paid = paid
         try:
             year, subject, unit, token, component = _selection()
             teacher = _teacher_context()
@@ -426,25 +441,63 @@ def create_blueprint():
     @bp.get("/api/web/rph/preview")
     def preview():
         selected, err = selected_rph()
-        return err if err is not None else jsonify(selected)
+        if err is not None:
+            return err
+        # Full RPH source JSON is a complete teaching artifact. A free
+        # user must not bypass the one-use trial charge by reading preview.
+        if not g.cikgulaju_rph_paid:
+            return jsonify({
+                "error": "Pratonton penuh bukan sebahagian percubaan. Gunakan Jana RPH Word atau PDF.",
+                "code": "TRIAL_PREVIEW_UNAVAILABLE"}), 403
+        return jsonify(selected)
 
     def _native_document(selected, fmt):
-        """Use actual Telegram document generator, never Web's mock renderer."""
+        """Render via Telegram first; charge trial atomically only afterwards.
+
+        A failed renderer/invalid file never spends a credit. An authenticated
+        paid user never spends credits. No browser may choose a quota reference.
+        """
         from web.native_telegram_rph_client import request_native_rph, NativeRPHUnavailable
         try:
-            return request_native_rph(selected, fmt), None
+            document = request_native_rph(selected, fmt)
         except (NativeRPHUnavailable, ValueError):
             return None, (jsonify({
                 "error": "Penjana RPH Telegram belum dapat dihubungi. Pilihan guru dikekalkan; cuba semula.",
                 "code": "TELEGRAM_RPH_GENERATOR_UNAVAILABLE"
-            }), 503)
+            }), 503), None
+        if g.cikgulaju_rph_paid:
+            return document, None, None
+        from web.rph_delivery_quota import authorize_rendered_document
+        from web_v1_telegram_auth_routes import _config
+        config = _config()
+        if not config or config.get("account_backend") != "supabase":
+            return None, (jsonify({
+                "error": "Sambungan baki janaan percuma belum tersedia.",
+                "code": "RPH_TRIAL_SOURCE_UNAVAILABLE"}), 503), None
+        account = g.cikgulaju_rph_account
+        try:
+            charged = authorize_rendered_document(
+                account, account["telegram_user_id"], document.getvalue(),
+                config["supabase_url"], config["supabase_key"])
+        except Exception:
+            # A transport timeout can be an uncertain RPC result, so do not
+            # claim the balance was unchanged or automatically retry a debit.
+            return None, (jsonify({
+                "error": "Pengesahan baki janaan tidak berjaya. Refresh status akaun sebelum cuba lagi.",
+                "code": "RPH_TRIAL_CHARGE_UNCONFIRMED"}), 503), None
+        if not charged["allowed"]:
+            return None, (jsonify({
+                "error": "Baki janaan RPH percuma telah habis. Aktifkan Rakan Pembangun untuk akses tanpa had.",
+                "code": "FREE_TRIAL_EXHAUSTED",
+                "remaining": charged["remaining"]}), 403), None
+        return document, None, charged["remaining"]
 
     @bp.get("/api/web/rph/word")
     def word():
         selected, err = selected_rph()
         if err is not None:
             return err
-        document, error = _native_document(selected, "word")
+        document, error, trial_remaining = _native_document(selected, "word")
         if error is not None:
             return error
         filename = f"CIKGULAJU_RPH_{selected['subject']}_TAHUN_{selected['year']}_{selected['lesson']:03d}.docx"
@@ -452,6 +505,10 @@ def create_blueprint():
             mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
             as_attachment=True,download_name=filename,conditional=False)
         response.headers["X-RPH-Generator"] = "telegram-native"
+        response.headers["X-RPH-Access-Mode"] = (
+            "paid" if g.cikgulaju_rph_paid else "trial")
+        if trial_remaining is not None:
+            response.headers["X-RPH-Trial-Remaining"] = str(trial_remaining)
         return response
 
     @bp.get("/api/web/rph/pdf")
@@ -459,13 +516,17 @@ def create_blueprint():
         selected, err = selected_rph()
         if err is not None:
             return err
-        document, error = _native_document(selected, "pdf")
+        document, error, trial_remaining = _native_document(selected, "pdf")
         if error is not None:
             return error
         filename = f"CIKGULAJU_RPH_{selected['subject']}_TAHUN_{selected['year']}_{selected['lesson']:03d}.pdf"
         response = send_file(document,mimetype="application/pdf",
             as_attachment=True,download_name=filename,conditional=False)
         response.headers["X-RPH-Generator"] = "telegram-native"
+        response.headers["X-RPH-Access-Mode"] = (
+            "paid" if g.cikgulaju_rph_paid else "trial")
+        if trial_remaining is not None:
+            response.headers["X-RPH-Trial-Remaining"] = str(trial_remaining)
         return response
 
     return bp
