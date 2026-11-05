@@ -33,8 +33,8 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_pendidikan_muzik*staging.py' -v
       - name: Pasang perpustakaan cetakan asas Muzik (hanya CI)
         run: python -m pip install -q python-docx==1.1.2 reportlab==4.2.5 pypdf==5.1.0
-      - name: Uji 5 contoh Word/PDF daripada fungsi asas Telegram tanpa app import
-        run: python staging/pendidikan_muzik/rpt_rph_2027/native_base_render_smoke_staging.py
+      - name: Audit 175 RPH Word/PDF menggunakan fungsi asas Telegram tanpa app import
+        run: python staging/pendidikan_muzik/rpt_rph_2027/native_base_render_smoke_staging.py --all
       - name: Simpan laporan cetakan asas Muzik CI (bukan bahan pengguna)
         if: always()
         uses: actions/upload-artifact@v4
