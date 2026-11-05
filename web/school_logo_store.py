@@ -6,7 +6,7 @@ additional tables, overwrite of curricular PDFs, or browser service keys.
 """
 from io import BytesIO
 from struct import unpack
-from zlib import crc32, decompressobj
+from zlib import crc32, decompressobj, error as ZlibError
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlsplit
 from urllib.request import Request, build_opener
@@ -92,7 +92,7 @@ def normalized_png(source):
         stride = width * (4 if color == 6 else 3) + 1
         if any(pixels[i * stride] not in range(5) for i in range(height)):
             raise ProfileValidation("Penapis PNG tidak sah")
-    except (ValueError, OverflowError, MemoryError):
+    except (ValueError, OverflowError, MemoryError, ZlibError):
         raise ProfileValidation("Kandungan PNG rosak") from None
     raw = bytearray(signature)
     for name, payload in chunks:
