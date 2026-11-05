@@ -1,0 +1,32 @@
+# RPH Pendidikan Moral Tahun 2 — PdP 019
+
+**STATUS: DRAF SEMAK — BELUM READY / BELUM AKTIF TELEGRAM**
+
+**Tema:** Saya dan Keluarga  
+**Unit:** 7. Sayangi Ahli Keluarga  
+**Nilai:** Kasih sayang  
+**SK:** 7.0 — Sayangi Ahli Keluarga  
+**SP:** 7.1 — Menjelaskan ciri-ciri keluarga yang bahagia. | 7.2 — Memerihalkan cara mengeratkan kasih sayang sesama ahli keluarga.  
+**Fokus:** Pengetahuan dan cara perlakuan  
+**Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
+**BBM:** Kad situasi A/B, peta emosi dan tindakan peduli, borang semak; fail `materials/pendidikan_moral/year2/unit_07_kad_aktiviti.md`.
+
+## Objektif dan kriteria kejayaan
+Murid menyiapkan tugasan **SP 7.1** (Menjelaskan ciri-ciri keluarga yang bahagia.) dan **SP 7.2** (Memerihalkan cara mengeratkan kasih sayang sesama ahli keluarga.). Kriteria kejayaan: setiap murid menghasilkan **penjelasan dalam dua ayat serta satu contoh** bagi SP pertama dan **penerangan dua situasi menggunakan ayat sendiri** bagi SP kedua, dengan contoh yang sesuai dengan situasi unit.
+
+## Langkah PdP
+**Set induksi (5 minit):** Guru menceritakan situasi **Seorang ahli keluarga demam dan memerlukan perhatian**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+
+**Aktiviti 1 (20 minit) — Ciri keluarga bahagia:** Guru memaparkan Anugerah Keluarga Bahagia m/s 41 dan dialog keluarga berkelah m/s 42. Murid menamakan tiga ciri keluarga bahagia, termasuk bermuafakat, saling menghormati dan membantu, berserta bukti daripada cerita (SP 7.1).
+
+**Aktiviti 2 (20 minit) — Cara mengeratkan kasih sayang:** Guru menunjukkan dialog ayah dan anak pada m/s 42–43 mengenai mendengar nasihat, beriadah dan hubungan harmoni. Murid menerangkan dua cara yang boleh diamalkan dengan ahli keluarga dan sebab setiap cara dapat mengeratkan kasih sayang (SP 7.2).
+
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menyemak tiga ciri keluarga bahagia dan dua cara mengeratkan kasih sayang daripada gambar/dialog (SP 7.1–7.2); murid menambah satu contoh baharu yang selamat.
+
+**Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **kasih sayang**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
+
+**Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
+
+**Bukti visual buku teks (audit 2026-11-05):** Unit 7; muka surat bercetak 41–43; PDF 50–52; aktiviti PdP 019 dipadankan kepada tugas/ilustrasi sumber asal, dengan penyesuaian PdP CikguLaju.
+
+**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — aktiviti Unit 7 m/s 41–43 (PDF 50–52) diperiksa secara visual untuk PdP 19; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
