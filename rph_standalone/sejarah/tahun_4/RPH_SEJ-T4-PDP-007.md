@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 4 — PdP 007
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-02-15–2027-02-21 | **B:** 2027-02-15–2027-02-19  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-02-14–2027-02-18 | **B:** 2027-02-15–2027-02-19  
 **Tema:** Mari Belajar Sejarah | **Tajuk:** Pengertian Diri dan Keluarga | **SK:** 1.2  
 **SP:** 1.2.4, K1.2.7 | **Jenis:** PdP Kandungan
 

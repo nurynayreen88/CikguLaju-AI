@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 4 — PdP 002
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-01-11–2027-01-17 | **B:** 2027-01-11–2027-01-15  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-01-10–2027-01-14 | **B:** 2027-01-11–2027-01-15  
 **Tema:** Mari Belajar Sejarah | **Tajuk:** Pengertian dan Kemahiran Ilmu Sejarah | **SK:** 1.1  
 **SP:** 1.1.3, K1.1.7 | **Jenis:** PdP Kandungan
 

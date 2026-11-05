@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 6 — PdP 035
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-09-27–2027-10-03 | **B:** 2027-09-27–2027-10-01  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-09-26–2027-09-30 | **B:** 2027-09-27–2027-10-01  
 **Tema:** Pencapaian dan Kebanggaan Negara | **Tajuk:** Malaysia dan Dunia | **SK:** 12.4  
 **SP:** 12.4.5 | **Jenis:** PdP Kandungan
 

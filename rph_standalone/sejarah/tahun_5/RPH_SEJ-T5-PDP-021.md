@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 5 — PdP 021
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-06-14–2027-06-20 | **B:** 2027-06-14–2027-06-18  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-06-13–2027-06-17 | **B:** 2027-06-14–2027-06-18  
 **Tema:** Yang di-Pertuan Agong | **Tajuk:** Institusi Yang di-Pertuan Agong | **SK:** 8.1  
 **SP:** 8.1.5, K8.1.8 | **Jenis:** PdP Kandungan
 

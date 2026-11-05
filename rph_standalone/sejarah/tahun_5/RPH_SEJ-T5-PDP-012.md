@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 5 — PdP 012
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-03-29–2027-04-04 | **B:** 2027-03-29–2027-04-02  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-03-28–2027-04-01 | **B:** 2027-03-29–2027-04-02  
 **Tema:** Perjuangan Kemerdekaan Negara | **Tajuk:** Campur Tangan dan Penjajahan Kuasa Asing | **SK:** 7.1  
 **SP:** 7.1.3, K7.1.6 | **Jenis:** PdP Kandungan
 

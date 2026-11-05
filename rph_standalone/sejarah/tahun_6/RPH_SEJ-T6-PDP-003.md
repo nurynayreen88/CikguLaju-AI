@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 6 — PdP 003
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-01-18–2027-01-24 | **B:** 2027-01-18–2027-01-22  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-01-17–2027-01-21 | **B:** 2027-01-18–2027-01-22  
 **Tema:** Negara Malaysia | **Tajuk:** Pembentukan Malaysia | **SK:** 10.1  
 **SP:** 10.1.4, K10.1.7 | **Jenis:** PdP Kandungan
 

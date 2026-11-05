@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 6 — PdP 030
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-08-16–2027-08-22 | **B:** 2027-08-16–2027-08-20  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-08-15–2027-08-19 | **B:** 2027-08-16–2027-08-20  
 **Tema:** Pencapaian dan Kebanggaan Negara | **Tajuk:** Sukan Kebanggaan Malaysia | **SK:** 12.3  
 **SP:** 12.3.3, K12.3.6 | **Jenis:** PdP Kandungan
 

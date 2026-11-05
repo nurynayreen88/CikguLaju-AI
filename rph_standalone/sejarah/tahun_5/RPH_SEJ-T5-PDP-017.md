@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 5 — PdP 017
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-05-03–2027-05-09 | **B:** 2027-05-03–2027-05-07  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-05-02–2027-05-06 | **B:** 2027-05-03–2027-05-07  
 **Tema:** Perjuangan Kemerdekaan Negara | **Tajuk:** Sejarah Kemerdekaan 1957 | **SK:** 7.3  
 **SP:** 7.3.3, K7.3.5 | **Jenis:** PdP Kandungan
 

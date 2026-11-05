@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 4 — PdP 027
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-07-26–2027-08-01 | **B:** 2027-07-26–2027-07-30  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-07-25–2027-07-29 | **B:** 2027-07-26–2027-07-30  
 **Tema:** Tokoh Terbilang Kesultanan Melayu Melaka | **Tajuk:** Tokoh Terbilang Kesultanan Melayu Melaka | **SK:** 5.1  
 **SP:** 5.1.4 | **Jenis:** PdP Kandungan
 

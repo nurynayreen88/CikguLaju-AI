@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 6 — PdP 011
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-03-22–2027-03-28 | **B:** 2027-03-22–2027-03-26  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-03-21–2027-03-25 | **B:** 2027-03-22–2027-03-26  
 **Tema:** Kita Rakyat Malaysia | **Tajuk:** Kaum di Malaysia | **SK:** 11.1  
 **SP:** 11.1.1, 11.1.2, K11.1.6 | **Jenis:** PdP Kandungan
 

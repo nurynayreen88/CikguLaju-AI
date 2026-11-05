@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 5 — PdP 022
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-06-21–2027-06-27 | **B:** 2027-06-21–2027-06-25  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-06-20–2027-06-24 | **B:** 2027-06-21–2027-06-25  
 **Tema:** Identiti Negara Kita | **Tajuk:** Jata Negara | **SK:** 9.1  
 **SP:** 9.1.1, 9.1.2, K9.1.4, K9.1.6 | **Jenis:** PdP Kandungan
 

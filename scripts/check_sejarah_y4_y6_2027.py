@@ -17,7 +17,20 @@ for y, (num_sk, num_sp) in EXPECTED.items():
     assert sum(x["rph"]["type"] == "KAJIAN_KES" for x in lesson) == 4
     seen = {code for x in lesson if x["rph"]["type"] == "KANDUNGAN" for code in x["rph"]["sp_codes"]}
     assert not (set(specs) - seen), set(specs) - seen
+    from datetime import date
+    previous_a = previous_b = None
     for i, x in enumerate(lesson, 1):
+        a0 = date.fromisoformat(x["weeks"]["A"]["start"])
+        a1 = date.fromisoformat(x["weeks"]["A"]["end"])
+        b0 = date.fromisoformat(x["weeks"]["B"]["start"])
+        b1 = date.fromisoformat(x["weeks"]["B"]["end"])
+        assert 0 <= (a1 - a0).days <= 4, ("Kumpulan A minggu bertindih", y, i)
+        assert 0 <= (b1 - b0).days <= 4, ("Kumpulan B minggu bertindih", y, i)
+        assert a0.weekday() in (6, 0) and a1.weekday() in (0, 1, 2, 3)
+        assert b0.weekday() == 0 and b1.weekday() in (2, 3, 4)
+        if previous_a: assert a0 > previous_a
+        if previous_b: assert b0 > previous_b
+        previous_a, previous_b = a1, b1
         r = x["rph"]
         assert x["num"] == i == int(rpt[i - 1]["PdP"])
         assert x["id"] == rpt[i - 1]["ID"]

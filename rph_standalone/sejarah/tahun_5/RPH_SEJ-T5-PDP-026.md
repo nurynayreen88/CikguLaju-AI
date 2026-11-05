@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 5 — PdP 026
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-07-19–2027-07-25 | **B:** 2027-07-19–2027-07-23  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-07-18–2027-07-22 | **B:** 2027-07-19–2027-07-23  
 **Tema:** Identiti Negara Kita | **Tajuk:** Bendera Kebangsaan | **SK:** 9.2  
 **SP:** 9.2.4, K9.2.7 | **Jenis:** PdP Kandungan
 

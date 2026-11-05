@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 4 — PdP 024
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-07-05–2027-07-11 | **B:** 2027-07-05–2027-07-09  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-07-04–2027-07-08 | **B:** 2027-07-05–2027-07-09  
 **Tema:** Kerajaan Melayu Awal | **Tajuk:** Kerajaan Melayu Awal | **SK:** 4.1  
 **SP:** 4.1.4, K4.1.7 | **Jenis:** PdP Kandungan
 

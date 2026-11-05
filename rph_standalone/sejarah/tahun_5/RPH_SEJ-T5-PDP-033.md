@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 5 — PdP 033
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-09-13–2027-09-19 | **B:** 2027-09-13–2027-09-17  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-09-12–2027-09-16 | **B:** 2027-09-13–2027-09-17  
 **Tema:** Identiti Negara Kita | **Tajuk:** Bahasa Kebangsaan | **SK:** 9.4  
 **SP:** 9.4.4, K9.4.7 | **Jenis:** PdP Kandungan
 

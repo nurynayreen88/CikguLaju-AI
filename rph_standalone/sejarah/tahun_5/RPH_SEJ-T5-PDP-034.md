@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 5 — PdP 034
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-09-20–2027-09-26 | **B:** 2027-09-20–2027-09-24  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-09-19–2027-09-23 | **B:** 2027-09-20–2027-09-24  
 **Tema:** Identiti Negara Kita | **Tajuk:** Bunga Kebangsaan | **SK:** 9.5  
 **SP:** 9.5.1, 9.5.2, K9.5.4, K9.5.6 | **Jenis:** PdP Kandungan
 

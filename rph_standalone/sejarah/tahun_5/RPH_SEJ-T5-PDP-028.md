@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 5 — PdP 028
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-08-02–2027-08-08 | **B:** 2027-08-02–2027-08-06  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-08-01–2027-08-05 | **B:** 2027-08-02–2027-08-06  
 **Tema:** Identiti Negara Kita | **Tajuk:** Lagu Kebangsaan | **SK:** 9.3  
 **SP:** 9.3.1, 9.3.2, K9.3.6 | **Jenis:** PdP Kandungan
 

@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 5 — PdP 030
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-08-16–2027-08-22 | **B:** 2027-08-16–2027-08-20  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-08-15–2027-08-19 | **B:** 2027-08-16–2027-08-20  
 **Tema:** Identiti Negara Kita | **Tajuk:** Lagu Kebangsaan | **SK:** 9.3  
 **SP:** 9.3.5, K9.3.8 | **Jenis:** PdP Kandungan
 

@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 4 — PdP 020
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-06-07–2027-06-13 | **B:** 2027-06-07–2027-06-11  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-06-06–2027-06-10 | **B:** 2027-06-07–2027-06-11  
 **Tema:** Zaman Prasejarah | **Tajuk:** Kehidupan Manusia Zaman Prasejarah | **SK:** 3.1  
 **SP:** 3.1.4, K3.1.7 | **Jenis:** PdP Kandungan
 

@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 5 — PdP 007
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-02-15–2027-02-21 | **B:** 2027-02-15–2027-02-19  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-02-14–2027-02-18 | **B:** 2027-02-15–2027-02-19  
 **Tema:** Warisan Negara Kita | **Tajuk:** Agama Islam | **SK:** 6.2  
 **SP:** 6.2.5, K6.2.8 | **Jenis:** PdP Kandungan
 

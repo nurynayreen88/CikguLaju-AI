@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 6 — PdP 022
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-06-21–2027-06-27 | **B:** 2027-06-21–2027-06-25  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-06-20–2027-06-24 | **B:** 2027-06-21–2027-06-25  
 **Tema:** Pencapaian dan Kebanggaan Negara | **Tajuk:** Pemimpin Negara di Malaysia | **SK:** 12.1  
 **SP:** 12.1.1, K12.1.4 | **Jenis:** PdP Kandungan
 

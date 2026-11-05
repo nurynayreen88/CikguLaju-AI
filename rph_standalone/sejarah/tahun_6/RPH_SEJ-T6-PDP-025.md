@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 6 — PdP 025
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-07-12–2027-07-18 | **B:** 2027-07-12–2027-07-16  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-07-11–2027-07-15 | **B:** 2027-07-12–2027-07-16  
 **Tema:** Pencapaian dan Kebanggaan Negara | **Tajuk:** Kemajuan Ekonomi di Malaysia | **SK:** 12.2  
 **SP:** 12.2.1, K12.2.4 | **Jenis:** PdP Kandungan
 

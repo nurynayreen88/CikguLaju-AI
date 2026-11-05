@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 5 — PdP 020
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-06-07–2027-06-13 | **B:** 2027-06-07–2027-06-11  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-06-06–2027-06-10 | **B:** 2027-06-07–2027-06-11  
 **Tema:** Yang di-Pertuan Agong | **Tajuk:** Institusi Yang di-Pertuan Agong | **SK:** 8.1  
 **SP:** 8.1.3, 8.1.4, K8.1.7 | **Jenis:** PdP Kandungan
 

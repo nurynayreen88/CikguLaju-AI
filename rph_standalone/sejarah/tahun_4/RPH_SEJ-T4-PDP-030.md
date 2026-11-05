@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 4 — PdP 030
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-08-16–2027-08-22 | **B:** 2027-08-16–2027-08-20  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-08-15–2027-08-19 | **B:** 2027-08-16–2027-08-20  
 **Tema:** Tokoh Terbilang Kesultanan Melayu Melaka | **Tajuk:** Pengasas Kesultanan Melayu Melaka | **SK:** 5.2  
 **SP:** 5.2.4, K5.2.7 | **Jenis:** PdP Kandungan
 

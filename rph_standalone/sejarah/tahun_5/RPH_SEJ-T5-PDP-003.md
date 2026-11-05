@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 5 — PdP 003
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-01-18–2027-01-24 | **B:** 2027-01-18–2027-01-22  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-01-17–2027-01-21 | **B:** 2027-01-18–2027-01-22  
 **Tema:** Warisan Negara Kita | **Tajuk:** Institusi Raja | **SK:** 6.1  
 **SP:** 6.1.4, K6.1.8 | **Jenis:** PdP Kandungan
 

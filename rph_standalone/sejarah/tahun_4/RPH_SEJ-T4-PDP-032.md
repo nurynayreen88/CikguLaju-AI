@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 4 — PdP 032
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-09-06–2027-09-12 | **B:** 2027-09-06–2027-09-10  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-09-05–2027-09-09 | **B:** 2027-09-06–2027-09-10  
 **Tema:** Tokoh Terbilang Kesultanan Melayu Melaka | **Tajuk:** Tun Perak Sebagai Bendahara Melaka | **SK:** 5.3  
 **SP:** 5.3.1, 5.3.2, K5.3.4, K5.3.6 | **Jenis:** PdP Kandungan
 

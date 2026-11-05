@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 6 — PdP 004
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-01-25–2027-01-31 | **B:** 2027-01-25–2027-01-29  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-01-24–2027-01-28 | **B:** 2027-01-25–2027-01-29  
 **Tema:** Negara Malaysia | **Tajuk:** Negeri-negeri di Malaysia | **SK:** 10.2  
 **SP:** 10.2.1, 10.2.2, K10.2.5 | **Jenis:** PdP Kandungan
 

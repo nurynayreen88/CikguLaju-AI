@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 4 — PdP 029
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-08-09–2027-08-15 | **B:** 2027-08-09–2027-08-13  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-08-08–2027-08-12 | **B:** 2027-08-09–2027-08-13  
 **Tema:** Tokoh Terbilang Kesultanan Melayu Melaka | **Tajuk:** Pengasas Kesultanan Melayu Melaka | **SK:** 5.2  
 **SP:** 5.2.3, K5.2.6 | **Jenis:** PdP Kandungan
 

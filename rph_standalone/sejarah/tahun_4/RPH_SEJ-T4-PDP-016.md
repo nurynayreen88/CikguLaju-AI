@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 4 — PdP 016
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-04-26–2027-05-02 | **B:** 2027-04-26–2027-04-30  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-04-25–2027-04-29 | **B:** 2027-04-26–2027-04-30  
 **Tema:** Zaman Air Batu | **Tajuk:** Zaman Air Batu | **SK:** 2.1  
 **SP:** 2.1.3, K2.1.6 | **Jenis:** PdP Kandungan
 

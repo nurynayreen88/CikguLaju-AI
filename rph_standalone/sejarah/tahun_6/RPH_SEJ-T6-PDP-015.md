@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 6 — PdP 015
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-04-19–2027-04-25 | **B:** 2027-04-19–2027-04-23  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-04-18–2027-04-22 | **B:** 2027-04-19–2027-04-23  
 **Tema:** Kita Rakyat Malaysia | **Tajuk:** Agama dan Kepercayaan di Malaysia | **SK:** 11.2  
 **SP:** 11.2.1, 11.2.2, K11.2.5 | **Jenis:** PdP Kandungan
 

@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 5 — PdP 014
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-04-12–2027-04-18 | **B:** 2027-04-12–2027-04-16  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-04-11–2027-04-15 | **B:** 2027-04-12–2027-04-16  
 **Tema:** Perjuangan Kemerdekaan Negara | **Tajuk:** Perjuangan Menentang Campur Tangan dan Penjajahan | **SK:** 7.2  
 **SP:** 7.2.1, 7.2.2, K7.2.4, K7.2.6 | **Jenis:** PdP Kandungan
 

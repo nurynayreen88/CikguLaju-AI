@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 4 — PdP 018
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-05-10–2027-05-16 | **B:** 2027-05-10–2027-05-14  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-05-09–2027-05-13 | **B:** 2027-05-10–2027-05-14  
 **Tema:** Zaman Prasejarah | **Tajuk:** Kehidupan Manusia Zaman Prasejarah | **SK:** 3.1  
 **SP:** 3.1.1, 3.1.2, K3.1.5 | **Jenis:** PdP Kandungan
 

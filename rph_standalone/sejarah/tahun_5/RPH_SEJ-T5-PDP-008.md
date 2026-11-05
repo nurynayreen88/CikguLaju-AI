@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 5 — PdP 008
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-02-22–2027-02-28 | **B:** 2027-02-22–2027-02-26  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-02-21–2027-02-25 | **B:** 2027-02-22–2027-02-26  
 **Tema:** Warisan Negara Kita | **Tajuk:** Bahasa Melayu | **SK:** 6.3  
 **SP:** 6.3.1, 6.3.2, K6.3.4, K6.3.6 | **Jenis:** PdP Kandungan
 

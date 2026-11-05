@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 6 — PdP 020
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-06-07–2027-06-13 | **B:** 2027-06-07–2027-06-11  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-06-06–2027-06-10 | **B:** 2027-06-07–2027-06-11  
 **Tema:** Kita Rakyat Malaysia | **Tajuk:** Perayaan Masyarakat di Malaysia | **SK:** 11.3  
 **SP:** 11.3.2, K11.3.5 | **Jenis:** PdP Kandungan
 

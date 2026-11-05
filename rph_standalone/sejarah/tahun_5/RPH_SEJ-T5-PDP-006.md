@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 5 — PdP 006
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-02-08–2027-02-14 | **B:** 2027-02-08–2027-02-12  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-02-07–2027-02-11 | **B:** 2027-02-08–2027-02-12  
 **Tema:** Warisan Negara Kita | **Tajuk:** Agama Islam | **SK:** 6.2  
 **SP:** 6.2.3, 6.2.4, K6.2.7 | **Jenis:** PdP Kandungan
 

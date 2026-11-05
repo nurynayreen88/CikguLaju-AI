@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 4 — PdP 036
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-10-04–2027-10-10 | **B:** 2027-10-04–2027-10-08  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-10-03–2027-10-07 | **B:** 2027-10-04–2027-10-08  
 **Tema:** Tokoh Terbilang Kesultanan Melayu Melaka | **Tajuk:** Hang Tuah sebagai Laksamana Melaka | **SK:** 5.4  
 **SP:** 5.4.1, 5.4.2, K5.4.4 | **Jenis:** Kajian Kes
 

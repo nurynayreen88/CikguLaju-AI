@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 6 — PdP 018
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-05-10–2027-05-16 | **B:** 2027-05-10–2027-05-14  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-05-09–2027-05-13 | **B:** 2027-05-10–2027-05-14  
 **Tema:** Kita Rakyat Malaysia | **Tajuk:** Agama dan Kepercayaan di Malaysia | **SK:** 11.2  
 **SP:** 11.2.1, 11.2.2, K11.2.5 | **Jenis:** Kajian Kes
 

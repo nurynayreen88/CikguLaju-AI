@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 6 — PdP 010
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-03-15–2027-03-21 | **B:** 2027-03-15–2027-03-19  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-03-14–2027-03-18 | **B:** 2027-03-15–2027-03-19  
 **Tema:** Negara Malaysia | **Tajuk:** Rukun Negara | **SK:** 10.3  
 **SP:** 10.3.1, 10.3.2, K10.3.4 | **Jenis:** Kajian Kes
 

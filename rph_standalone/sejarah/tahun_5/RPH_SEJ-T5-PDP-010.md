@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 5 — PdP 010
 
 **Status:** DRAF (belum kelulusan guru / semakan halaman buku teks)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-03-15–2027-03-21 | **B:** 2027-03-15–2027-03-19  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-03-14–2027-03-18 | **B:** 2027-03-15–2027-03-19  
 **Tema:** Warisan Negara Kita | **Tajuk:** Bahasa Melayu | **SK:** 6.3  
 **SP:** 6.3.1, 6.3.2, K6.3.4 | **Jenis:** Kajian Kes
 
