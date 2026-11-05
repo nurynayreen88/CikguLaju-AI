@@ -3,32 +3,32 @@
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
 **Unit / Tajuk:** PENGHAYATAN KARYA MUZIK  
 **Bidang:** Apresiasi Muzik  
-**SK / SP (RPT sumber):** 4.1.1
+**SK / SP (RPT sumber, dikekalkan untuk audit):** 4.1.1  
 **Tempoh cadangan:** 30 minit  
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Memberi ulasan tentang muzik yang didengar dengan sekurang-kurangnya dua maklumat tepat dan satu alasan.
+**Objektif pembelajaran (draf boleh ukur):** Menjelaskan dua perbezaan persembahan solo dengan koir serta dua nilai kerjasama.
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Kriteria kejayaan:** Murid boleh menunjukkan kemahiran khusus yang diterangkan dalam objektif dengan bimbingan guru dan dinilai melalui senarai semak aktiviti.
 
 **Set Induksi — 4 minit**  
-Guru memperdengarkan satu petikan muzik dan meminta murid menyatakan dua perkara yang didengar.
+Guru menunjukkan gambar solo dan koir daripada halaman 84 dan meminta murid membuat pemerhatian.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru memperkenalkan kosa kata apresiasi yang berkaitan: Membuat ulasan terhadap Muzik Popular yang didengar daripada aspek: (i) jenis muzik (ii) nama penyanyi atau kumpulan. Murid membuat pemerhatian berpandukan tiga soalan dengar.
+**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit)**  
+Murid membandingkan solo, berkumpulan dan koir serta menyatakan satu unsur kreativiti persembahan yang jelas.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid berbincang secara pasangan, menyusun ulasan dua ayat dengan bukti daripada rakaman, kemudian berkongsi respons.
+**Aktiviti 2 — Aplikasi muzik (10 minit)**  
+Murid membincang nilai kerjasama halaman 85 seperti membantu, bertanggungjawab, patuh ketua dan bertolak ansur, kemudian memberi contoh situasi persembahan.
 
 **Pengukuhan & Penilaian — 6 minit**  
-Semak ketepatan sekurang-kurangnya 2 fakta/unsur muzik dalam ulasan dan satu alasan berasaskan pendengaran.
+Semak dua perbezaan persembahan dan dua nilai murni berserta contoh.
 
 **Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+Murid menjelaskan satu kemahiran yang diperbaiki; guru merekod pemerhatian dan mengatur latihan pemulihan bagi murid yang belum menguasai kemahiran.
 
-**Bahan:** Rakaman muzik yang berlesen/diizinkan, gambar alat muzik dan lembaran respons.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 84-85; **belum disahkan pada halaman buku asal**. Audio/trek belum dipadankan.
+**Bahan:** Buku halaman 84–85, gambar solo/koir, kad nilai kerjasama.  
+**Rujukan sumber:** Buku Teks Pendidikan Kesenian Tahun 3 SK DBP 2018, halaman 84–85, sumber teks https://anyflip.com/lcinm/flxx/basic/51-100. Kod dicetak dalam buku Kesenian: 3.3.6, 4.2.2(i)(ii); kod RPT Muzik tidak dinormalisasikan secara automatik. Nombor audio tercetak Tiada nombor audio; **tiada fail audio sebenar disahkan atau dipasang ke Telegram**.
 
 **Catatan pelaksanaan / pemulihan:** __________________________________________
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_20261106; DRAF STAGING; bukan pengesahan visual notasi, fail audio, kod DSKP Muzik, cetakan Word/PDF atau pelaksanaan Telegram–Web.

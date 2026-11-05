@@ -2,33 +2,33 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
 **Unit / Tajuk:** CANTIK BERCAHAYA  
-**Bidang:** Permainan Alat Perkusi  
-**SK / SP (RPT sumber):** 2.2.2
+**Bidang:** Perkusi  
+**SK / SP (RPT sumber, dikekalkan untuk audit):** 2.2.2  
 **Tempoh cadangan:** 30 minit  
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Memainkan corak irama empat detik dengan betul dalam sekurang-kurangnya 2 daripada 3 percubaan.
+**Objektif pembelajaran (draf boleh ukur):** Memainkan corak perkusi untuk mengiringi Selamat Malam sekurang-kurangnya lapan detik tanpa kehilangan tempo.
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Kriteria kejayaan:** Murid boleh menunjukkan kemahiran khusus yang diterangkan dalam objektif dengan bimbingan guru dan dinilai melalui senarai semak aktiviti.
 
 **Set Induksi — 4 minit**  
-Guru mengetuk empat detik; murid menepuk semula dengan stabil dan meneka perubahan tempo/dinamik.
+Murid mengimbas lagu Selamat Malam sambil menepuk detik dengan guru.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru menerangkan skor ikon/corak irama dengan penekanan pada Memainkan alat perkusi mengikut corak irama berdasarkan skor ikon yang mewakili nilai not   Mengenal ikon berdasarkan nilai not.. Murid berlatih melalui tepukan dan kiraan sebelum menggunakan alat.
+**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit)**  
+Berpandukan Perkusi Gubahanku pada halaman 72, guru mengajar pola melalui tepukan dan murid berlatih menggunakan alat perkusi selamat.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Kumpulan kecil memainkan 2–3 ulangan corak irama berpandukan skor; ketua kumpulan memberi isyarat mula, henti dan tempo.
+**Aktiviti 2 — Aplikasi muzik (10 minit)**  
+Kumpulan memainkan iringan ketika rakan menyanyi; ketua kumpulan memberi isyarat mula, henti dan kawalan dinamik.
 
 **Pengukuhan & Penilaian — 6 minit**  
-Periksa ketepatan pola empat detik dalam 3 percubaan dan penglibatan setiap murid.
+Periksa pola, detik stabil, koordinasi kumpulan dan etika penggunaan alat.
 
 **Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+Murid menjelaskan satu kemahiran yang diperbaiki; guru merekod pemerhatian dan mengatur latihan pemulihan bagi murid yang belum menguasai kemahiran.
 
-**Bahan:** Alat perkusi, skor ikon atau notasi ringkas, kad detik dan audio iringan.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 72-73; **belum disahkan pada halaman buku asal**. RPT sumber menyebut Audio 61-63; **nombor trek belum diaudit dengan fail audio**.
+**Bahan:** Alat perkusi kelas, kad ikon, skor perkusi halaman 72–73.  
+**Rujukan sumber:** Buku Teks Pendidikan Kesenian Tahun 3 SK DBP 2018, halaman 72–73, sumber teks https://anyflip.com/lcinm/flxx/basic/51-100. Kod dicetak dalam buku Kesenian: 2.2.5; kod RPT Muzik tidak dinormalisasikan secara automatik. Nombor audio tercetak 61–64; **tiada fail audio sebenar disahkan atau dipasang ke Telegram**.
 
 **Catatan pelaksanaan / pemulihan:** __________________________________________
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_20261106; DRAF STAGING; bukan pengesahan visual notasi, fail audio, kod DSKP Muzik, cetakan Word/PDF atau pelaksanaan Telegram–Web.

@@ -3,32 +3,32 @@
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
 **Unit / Tajuk:** BELON UDARA TINGGI DI LANGIT  
 **Bidang:** Rekoder  
-**SK / SP (RPT sumber):** 2.4.2
+**SK / SP (RPT sumber, dikekalkan untuk audit):** 2.4.2  
 **Tempoh cadangan:** 30 minit  
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Memainkan satu frasa not sasaran dengan sekurang-kurangnya 3 daripada 4 aspek teknik yang betul.
+**Objektif pembelajaran (draf boleh ukur):** Memainkan not A pada rekoder dengan penjarian betul dalam dua latihan bar demi bar.
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Kriteria kejayaan:** Murid boleh menunjukkan kemahiran khusus yang diterangkan dalam objektif dengan bimbingan guru dan dinilai melalui senarai semak aktiviti.
 
 **Set Induksi — 4 minit**  
-Guru menunjukkan not sasaran pada kad serta cara memegang dan membersihkan rekoder.
+Guru mengimbas postur rekoder yang betul dan teknik tiupan 'tu' yang lembut.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Murid mempraktikkan penjarian dan perlidahan 'tu' untuk kemahiran Memainkan rekoder mengikut tempo dengan ton yang baik: (i) dengan penjarian not B, A dan G.. Guru menyemak postur seorang demi seorang.
+**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit)**  
+Guru memodelkan penjarian not A serta tepukan pola sebelum murid mengulang latihan not A pada halaman 57.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid memainkan frasa dua atau empat bar secara perlahan, kemudian bersama metronom; rakan menanda kejayaan bacaan skor.
+**Aktiviti 2 — Aplikasi muzik (10 minit)**  
+Murid berlatih latihan rekoder 1 dan 2, menepuk dahulu, meniup secara bergilir dan membetulkan bahagian yang sukar.
 
 **Pengukuhan & Penilaian — 6 minit**  
-Catat kejayaan 3 daripada 4 aspek: penjarian, ton, tempo dan pernafasan/perlidahan.
+Guru menyemak penjarian not A, postur, hembusan dan ritma dua bar.
 
 **Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+Murid menjelaskan satu kemahiran yang diperbaiki; guru merekod pemerhatian dan mengatur latihan pemulihan bagi murid yang belum menguasai kemahiran.
 
-**Bahan:** Rekoder individu, kad penjarian dan skor ringkas bersesuaian tahun.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 56-57; **belum disahkan pada halaman buku asal**. RPT sumber menyebut Audio 50-53; **nombor trek belum diaudit dengan fail audio**.
+**Bahan:** Rekoder individu bersih, carta penjarian A, skor buku.  
+**Rujukan sumber:** Buku Teks Pendidikan Kesenian Tahun 3 SK DBP 2018, halaman 56–57, sumber teks https://anyflip.com/lcinm/flxx/basic/51-100. Kod dicetak dalam buku Kesenian: 2.2.10(i)–(vi); kod RPT Muzik tidak dinormalisasikan secara automatik. Nombor audio tercetak 50–53; **tiada fail audio sebenar disahkan atau dipasang ke Telegram**.
 
 **Catatan pelaksanaan / pemulihan:** __________________________________________
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_20261106; DRAF STAGING; bukan pengesahan visual notasi, fail audio, kod DSKP Muzik, cetakan Word/PDF atau pelaksanaan Telegram–Web.

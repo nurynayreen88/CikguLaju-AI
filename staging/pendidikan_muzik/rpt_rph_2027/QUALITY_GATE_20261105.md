@@ -101,3 +101,10 @@ Fail RPT (.md/.csv), RPH setiap PdP (.md), manifest JSON di `staging/pendidikan_
 - PdP 05 dan 06 kini berbeza: halaman **20** (latihan) berbanding **21** (persembahan tempo lambat/cepat). PdP 10 merujuk **Audio 39–40 bercetak**; Audio 36–38 asal tidak sesuai dan dipelihara dalam medan audit.
 - Jumlah baharu: **Tahun 3 = 11/35**, **semua tahun = 89/175** semakan teks terhad; **baki 86 RPH** belum diaudit setara. **Tiada yang FINAL READY.**
 - Kod buku gabungan Kesenian tidak disalin ke DSKP Muzik asal. Fail audio sebenar, skor visual dan Word/PDF masih belum disahkan. Nota perincian: `year3/BUKU_TEKS_8_RPH_TEXT_CROSSCHECK_20261106.md`.
+
+
+## Audit tambahan Tahun 3 PdP 14–23 dan 27–31 (6 November 2026)
+- **15 lagi RPH** disemak berdasarkan teks Buku Pendidikan Kesenian Tahun 3 DBP 2018: *Parang Ilang*, Gerak Irama, rekoder B/A/G, *Kad Ucapan Hari Lahirku*, *Irama Bingo*, *Selamat Malam*, *Boneka*, *Tamak Selalu Rugi*, apresiasi solo/koir dan *Seni Anyaman Jangan Dilupa*.
+- PdP 14–17 dan 18–23 dipisahkan kepada aktiviti khusus buku; PdP 27 disahkan **Ajuk Nyanyianku** (Audio 65) dan PdP 28 **Boneka** (Audio 66–68), bukan Audio 69–70 (cerita). PdP 28 menggunakan buku halaman 81; asal 80–81 disimpan.
+- **Kiraan semasa: Tahun 3 26/35 semakan teks; keseluruhan 104/175; baki 71 RPH menunggu semakan setara**. Semakan skor, fail audio, kod DSKP Muzik, Word/PDF masih belum FINAL READY. 
+- Rujukan audit: `year3/BUKU_TEKS_15_RPH_TEXT_CROSSCHECK_20261106.md`. Jangan merge/deploy.

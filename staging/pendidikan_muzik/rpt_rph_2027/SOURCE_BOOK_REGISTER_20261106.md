@@ -5,12 +5,12 @@
 | Tahun | Sumber buku | Bentuk bukti | Status semakan RPH |
 |---|---|---|---|
 | 2 | [Buku Teks Pendidikan Kesenian Tahun 2 SK](https://anyflip.com/iawvx/mran/basic), DBP 2017 | Salinan awam mempunyai unit 1 *Kami Suka Sayur* hingga unit 10 *Segarnya Air Terjun*, kandungan belum disemak halaman demi halaman | 28/35 semakan teks buku (11 PdP awal + 17 PdP tambahan); PdP 33 tidak diluluskan |
-| 3 | [Buku Teks Pendidikan Kesenian Tahun 3 SK](https://anyflip.com/iawvx/rlmd/basic), [fail Drive](https://drive.google.com/file/d/13P0maZhBReHBIYSPXI_CPvobj0Ryya6z/view) | Salinan awam muncul dalam indeks dengan Unit 1 *Tut Tut Kereta Api* hingga Unit 10 *Seni Anyaman Berzaman*; teks dalam fail Drive belum dapat dibaca sepenuhnya | 11/35 semakan teks buku: PdP 1–3 Tut Tut Kereta Api dan PdP 4–11 mengikut buku DBP 2018 |
+| 3 | [Buku Teks Pendidikan Kesenian Tahun 3 SK](https://anyflip.com/iawvx/rlmd/basic), [fail Drive](https://drive.google.com/file/d/13P0maZhBReHBIYSPXI_CPvobj0Ryya6z/view) | Salinan awam muncul dalam indeks dengan Unit 1 *Tut Tut Kereta Api* hingga Unit 10 *Seni Anyaman Berzaman*; teks dalam fail Drive belum dapat dibaca sepenuhnya | 26/35 semakan teks buku: PdP 1–11, 14–23 dan 27–31 mengikut buku DBP 2018 |
 | 4 | [Buku Teks Pendidikan Kesenian Tahun 4 SK di Drive](https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view), DBP 2019 | 22 PdP semakan teks unit/aktiviti + 6 PdP pemeriksaan kandungan halaman terdahulu | 28/35 semakan terhad |
 | 5 | [Buku Teks Pendidikan Muzik Tahun 5 SK](https://anyflip.com/ziqkn/yatu/basic), DBP 2020 | Teks dan halaman rujukan unit dipadankan bagi 15 PdP; audio nombor cetak sahaja | 15/35 semakan terhad |
 | 6 | [Buku Teks Pendidikan Muzik Tahun 6 SK](https://anyflip.com/zcnoa/yxcj/basic), DBP 2021 | Teks dan halaman rujukan unit dipadankan bagi 7 PdP, khusus Classical, Mikroorganisma dan Rindu | 7/35 semakan terhad |
 
-Jumlah **89/175 RPH** mempunyai semakan kandungan berasaskan teks buku atau halaman (dengan tahap bukti berbeza); **86 RPH belum melalui audit buku teks individu yang setara**.
+Jumlah **104/175 RPH** mempunyai semakan kandungan berasaskan teks buku atau halaman (dengan tahap bukti berbeza); **71 RPH belum melalui audit buku teks individu yang setara**.
 
 
 ## Pusingan Tahun 2 — bukti baharu (6 November 2026)
@@ -38,3 +38,7 @@ Jumlah **89/175 RPH** mempunyai semakan kandungan berasaskan teks buku atau hala
 Buku penuh DBP 2018: https://anyflip.com/lcinm/flxx/basic. Lapan RPH PdP 04–11 telah ditulis semula supaya berpaut pada aktiviti sebenar halaman 18–21, 26–29 dan 36–39. PdP 06 memerlukan halaman buku **21** walaupun RPT asal menyebut 20; PdP 10 menggunakan cerita *Gigih Si Labah-labah* dengan **Audio 39–40 tercetak**, bukan rakaman nyanyian 36–38. Perbezaan kod SP cetakan buku Kesenian dan DSKP Muzik kekal berasingan dalam manifest.
 
 Rincian: `year3/BUKU_TEKS_8_RPH_TEXT_CROSSCHECK_20261106.md`. Kiraan semasa **11/35 Tahun 3**, **89/175 keseluruhan**, **86 belum semakan setara**, tidak termasuk pengesahan audio, skor visual, Word/PDF atau penerbitan.
+
+
+## Tambahan PdP 14–23 dan 27–31 Tahun 3 (6 November 2026)
+15 RPH dimurnikan daripada buku halaman 44–47, 54–57, 62–65, 70–73, 80–85, 92–93, termasuk pemisahan **PdP27 Audio 65** (*Ajuk Nyanyianku*), **PdP28 Audio 66–68** (*Boneka*) dan **PdP29 Audio 69–70** (*Tamak Selalu Rugi*). Kiraan terkini **26/35 Tahun 3** dan **104/175 semua tahun**; **71** belum mendapat semakan setara. Buku Kesenian kod SP tidak dianggap pengganti kod DSKP Muzik. Audit: `year3/BUKU_TEKS_15_RPH_TEXT_CROSSCHECK_20261106.md`.

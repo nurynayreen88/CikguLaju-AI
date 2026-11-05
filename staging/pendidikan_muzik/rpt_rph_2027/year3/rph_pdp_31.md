@@ -2,33 +2,33 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
 **Unit / Tajuk:** ANYAMAN BERZAMAN  
-**Bidang:** Nyanyian  
-**SK / SP (RPT sumber):** 2.1.2, 2.3.2
+**Bidang:** Nyanyian dan Gerak Tempo  
+**SK / SP (RPT sumber, dikekalkan untuk audit):** 2.1.2, 2.3.2  
 **Tempoh cadangan:** 30 minit  
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Menyanyikan satu rangkap atau frasa dengan sekurang-kurangnya 2 daripada 3 aspek pic, tempo dan teknik yang betul.
+**Objektif pembelajaran (draf boleh ukur):** Menyanyikan satu rangkap Seni Anyaman Jangan Dilupa dan melakukan dua gerakan yang seiring tempo.
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Kriteria kejayaan:** Murid boleh menunjukkan kemahiran khusus yang diterangkan dalam objektif dengan bimbingan guru dan dinilai melalui senarai semak aktiviti.
 
 **Set Induksi — 4 minit**  
-Guru memainkan frasa lagu pendek dan meminta murid meniru satu frasa mengikut pic serta tempo.
+Guru membimbing sebutan berirama Cik Kecik Kebom sebagai pemanasan suara halaman 92.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru memodelkan latihan vokal bersesuaian: Bernyanyi dengan pic yang betul.. Murid berlatih secara respons-gema dalam dua pusingan.
+**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit)**  
+Murid mengajuk melodi Seni Anyaman Jangan Dilupa daripada halaman 93 baris demi baris dengan pic dan tempo yang terkawal.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid menyanyikan bahagian lagu daripada unit ANYAMAN BERZAMAN secara berkumpulan, kemudian mencuba semula setelah maklum balas pic/tempo/postur.
+**Aktiviti 2 — Aplikasi muzik (10 minit)**  
+Kumpulan menyanyi sambil melakukan dua gerakan mengikut tempo; pasangan memberikan maklum balas pada keseragaman.
 
 **Pengukuhan & Penilaian — 6 minit**  
-Rubrik pemerhatian: pic, tempo dan kemahiran utama SP (3 kriteria); murid menunjukkan pembaikan pada percubaan kedua.
+Guru menyemak sebutan, pic, tempo dan dua gerak yang selaras.
 
 **Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+Murid menjelaskan satu kemahiran yang diperbaiki; guru merekod pemerhatian dan mengatur latihan pemulihan bagi murid yang belum menguasai kemahiran.
 
-**Bahan:** Audio lagu yang sah, lirik rujukan guru, pembesar suara dan alat iringan jika ada.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 92-93; **belum disahkan pada halaman buku asal**. RPT sumber menyebut Audio 71-74; **nombor trek belum diaudit dengan fail audio**.
+**Bahan:** Buku halaman 92–93, skor guru dan ruang gerakan selamat.  
+**Rujukan sumber:** Buku Teks Pendidikan Kesenian Tahun 3 SK DBP 2018, halaman 92–93, sumber teks https://anyflip.com/lcinm/flxx/basic/51-100. Kod dicetak dalam buku Kesenian: 2.2.2, 2.2.7; kod RPT Muzik tidak dinormalisasikan secara automatik. Nombor audio tercetak 71–74; **tiada fail audio sebenar disahkan atau dipasang ke Telegram**.
 
 **Catatan pelaksanaan / pemulihan:** __________________________________________
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_20261106; DRAF STAGING; bukan pengesahan visual notasi, fail audio, kod DSKP Muzik, cetakan Word/PDF atau pelaksanaan Telegram–Web.
