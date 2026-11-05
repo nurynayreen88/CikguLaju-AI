@@ -257,8 +257,8 @@ def check() -> None:
     assert m["years"]["4"]["unit3_release_approved"] is False
     assert readiness["completed"]["year4_unit3_candidate_rph"] == 14
     assert readiness["completed"]["verified_a4_render_for_all_90"] is True
-    assert readiness["completed"]["word_generated_in_ci"] == 90
-    assert readiness["completed"]["pdf_generated_in_ci"] == 90
+    assert readiness["completed"]["word_generated_in_ci"] == 106
+    assert readiness["completed"]["pdf_generated_in_ci"] == 106
     assert readiness["total_ready_rph"] == 0
     assert m["latest_technical_a4_validation"]["status"] == "PASSED_OFFLINE_TECHNICAL_ONLY"
     assert m["latest_technical_a4_validation"]["release_approval"] is False
@@ -285,7 +285,7 @@ def check() -> None:
     assert m["years"]["4"]["unit4_release_approved"] is False and m["years"]["4"]["year_4_final_ready"] is False
     assert m["years"]["4"]["all_four_units_have_candidate_pdp"] is True
     assert readiness["completed"]["year4_unit4_candidate_rph"] == 16
-    assert readiness["completed"]["verified_a4_render_for_all_106"] is False
+    assert readiness["completed"]["verified_a4_render_for_all_106"] is True
     for n, row in zip(range(43,59), unit4_rows):
         text = (SUBJECT / "year4" / f"lesson_{n:03d}.md").read_text(encoding="utf-8")
         assert len(text) > 1450 and all(marker in text for marker in MARKERS)

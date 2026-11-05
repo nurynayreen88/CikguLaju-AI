@@ -11,9 +11,9 @@
     "source_page_draft_reviewed": 106,
     "preliminary_year6_page_candidates": 0,
     "one_page_A4_docx_pdf_ci_verified": true,
-    "render_check_ci": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42124849955",
-    "word_generated_in_ci": 90,
-    "pdf_generated_in_ci": 90,
+    "render_check_ci": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42127983356",
+    "word_generated_in_ci": 106,
+    "pdf_generated_in_ci": 106,
     "year6_text_source_reviewed": 12,
     "year2_text_source_reviewed": 12,
     "year2_sp_book_ocr_ambiguous": 4,
@@ -23,7 +23,7 @@
     "year4_unit3_candidate_rph": 14,
     "verified_a4_render_for_all_90": true,
     "year4_unit4_candidate_rph": 16,
-    "verified_a4_render_for_all_106": false
+    "verified_a4_render_for_all_106": true
   },
   "release_checks": [
     {
@@ -59,7 +59,7 @@
     {
       "id": "word_pdf_programmatic_a4",
       "status": "PASS_TECHNICAL_ONLY",
-      "detail": "Last VERIFIED technical test passed 90 DOCX + 90 one-page A4 PDFs (run 42124849955). Expanded 106 DOCX/PDF still awaiting CI results; do not claim 106 pass yet."
+      "detail": "Confirmed on GitHub Actions https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42127983356: 106 DOCX + 106 PDF, each PDF exactly 1 A4 page with Arabic font support. Structural render succeeded; individual human RTL proofreading and pedagogic approval are NOT complete."
     },
     {
       "id": "manual_pedagogic_approval",

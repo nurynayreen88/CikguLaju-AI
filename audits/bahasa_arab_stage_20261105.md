@@ -108,3 +108,6 @@ Run GitHub Actions `42124849955` (head ade2e7f465a6f49a473e53923f7387d6d2dce596)
 Unit **بيتي جنتي** kini mempunyai 16 RPH individu cadangan PdP043–058. Sumber: Buku Teks DBP/KPM Tahun 4 cetakan 2019 h86,87,88–89,90,91,93,94,97,98,99,100,104,105,108,112 serta kod SP yang muncul pada latihan bertema rumah. Aktiviti ditulis berbeza mengikut kemahiran fonetik, kosa kata, soalan tempat, dialog, tulisan, lawatan warga emas dan projek siluet. Setiap RPH mempunyai pengajaran guru/murid, PBD dan refleksi. 
 Peta `rpt_2027/bahasa_arab/year4_unit4_pdp043_058_DRAF.csv` dan fail bukti `audits/bahasa_arab_y4_unit4_pdp043_058_text_source_audit_20261106.json`.
 **Jumlah 106 RPH DRAF**, 58 Tahun 4 meliputi 4 unit secara **calon**, bukan RPT 2027 rasmi atau kelulusan individu. QA A4 terkini disahkan 90; jalankan 106 selepas commit. **0 FINAL READY**, jangan deploy.
+
+## 6 Nov 2026 — Ujian A4 untuk 106 RPH draf LULUS
+GitHub run `42127983356` menghasilkan 106 Word dan 106 PDF A4 Arab (font Amiri), dengan semakan automatik setiap PDF tepat satu halaman; artifak pratonton disimpan. Pautan: https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42127983356. Ini hanya **lulus teknikal** dan tidak membuktikan susunan PdP dalam RPT 2027, mutu bahasa/sumber halaman secara visual atau kelulusan guru. **0 FINAL READY**.

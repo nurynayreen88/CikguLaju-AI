@@ -75,3 +75,5 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 - PdP043–058 bagi **بيتي جنتي** bersumber Buku Teks DBP/KPM 2019 dan DSKP Tahun 4, latihan utama h86–112. Fail `rpt_2027/bahasa_arab/year4_unit4_pdp043_058_DRAF.csv` dan `audits/bahasa_arab_y4_unit4_pdp043_058_text_source_audit_20261106.json`.
 - Jumlah Year4 kini 58 RPH calon merentasi Unit 1–4. **Ini belum bermakna semua sesi tahunan lengkap** kerana pemetaan PdP rasmi RPT 2027, visual halaman dan semakan guru belum selesai.
 - 106 RPH DRAF dalam keseluruhan staging; Word/PDF 106 perlu diuji; 0 FINAL READY.
+
+- [CI teknikal 106 Word + 106 PDF satu halaman A4 telah lulus](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42127983356), pratonton tersedia sebagai artifak GitHub; kelulusan pedagogi masih belum dibuat dan PR kekal draft.
