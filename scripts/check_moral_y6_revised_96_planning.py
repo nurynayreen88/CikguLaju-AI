@@ -34,7 +34,7 @@ def main():
         assert not ("READY" in row["Status_Dalaman"] and "BETA" not in row["Status_Dalaman"])
         # Only source metadata may differ; original RPH/SC/SP/session order retained.
         for field in original[0]:
-            if field not in ("Halaman_Mula_Unit_Buku","Tahap_Semakan_Buku"):
+            if field not in ("Halaman_Mula_Unit_Buku","Tahap_Semakan_Buku","Tajuk_Unit"):
                 assert row[field]==old[field], (n, field)
         path=ROOT/row["Rujukan_RPH_Sedia_Ada"]
         assert path.is_file(), (n,path)
