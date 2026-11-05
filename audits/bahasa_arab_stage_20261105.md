@@ -103,3 +103,8 @@ Semua 12 draf Tahun 3 Unit 1 menerima catatan halaman bercetak Buku Teks DBP/KPM
 
 ## 6 November 2026 — QA A4 untuk 90 RPH lulus
 Run GitHub Actions `42124849955` (head ade2e7f465a6f49a473e53923f7387d6d2dce596) menyiapkan penjanaan **90 DOCX + 90 PDF** dan mengesahkan setiap PDF satu halaman A4, Amiri/Arabic RTL; pratonton disimpan sebagai artifak workflow. Ini **lulus teknikal sahaja**: tiada proofread setiap halaman, pengesahan SK/SP per halaman visual, jadual RPT 2027 A/B atau manual pedagogi. Kekalkan **0 FINAL READY** dan tiada deploy. Pautan https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42124849955.
+
+## 6 November 2026 — Tahun 4 Unit 4 (16 RPH baharu)
+Unit **بيتي جنتي** kini mempunyai 16 RPH individu cadangan PdP043–058. Sumber: Buku Teks DBP/KPM Tahun 4 cetakan 2019 h86,87,88–89,90,91,93,94,97,98,99,100,104,105,108,112 serta kod SP yang muncul pada latihan bertema rumah. Aktiviti ditulis berbeza mengikut kemahiran fonetik, kosa kata, soalan tempat, dialog, tulisan, lawatan warga emas dan projek siluet. Setiap RPH mempunyai pengajaran guru/murid, PBD dan refleksi. 
+Peta `rpt_2027/bahasa_arab/year4_unit4_pdp043_058_DRAF.csv` dan fail bukti `audits/bahasa_arab_y4_unit4_pdp043_058_text_source_audit_20261106.json`.
+**Jumlah 106 RPH DRAF**, 58 Tahun 4 meliputi 4 unit secara **calon**, bukan RPT 2027 rasmi atau kelulusan individu. QA A4 terkini disahkan 90; jalankan 106 selepas commit. **0 FINAL READY**, jangan deploy.

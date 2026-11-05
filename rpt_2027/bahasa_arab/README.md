@@ -70,3 +70,8 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 - Jumlah **90 RPH DRAF**; QA struktur diselaraskan dan A4 PDF/Word perlu lulus 90 dokumen; **0 FINAL READY**.
 
 - QA teknikal terbaharu **90 Word + 90 PDF satu halaman A4 lulus** pada [run 42124849955](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42124849955); artifak pratonton tersedia melalui halaman workflow. Status akhir RPH **masih DRAF / 0 READY**.
+
+## Tahun 4 Unit 4 — tambahan 16 RPH cadangan (6 Nov 2026)
+- PdP043–058 bagi **بيتي جنتي** bersumber Buku Teks DBP/KPM 2019 dan DSKP Tahun 4, latihan utama h86–112. Fail `rpt_2027/bahasa_arab/year4_unit4_pdp043_058_DRAF.csv` dan `audits/bahasa_arab_y4_unit4_pdp043_058_text_source_audit_20261106.json`.
+- Jumlah Year4 kini 58 RPH calon merentasi Unit 1–4. **Ini belum bermakna semua sesi tahunan lengkap** kerana pemetaan PdP rasmi RPT 2027, visual halaman dan semakan guru belum selesai.
+- 106 RPH DRAF dalam keseluruhan staging; Word/PDF 106 perlu diuji; 0 FINAL READY.
