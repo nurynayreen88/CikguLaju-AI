@@ -169,7 +169,8 @@ def clean_schedule(form, class_names):
         day, start, end = (entry[k] for k in ("day", "start", "end"))
         cls = _validated_name(entry["class_name"], 40, "Kelas", required=True)
         subject = _validated_name(entry["subject"], 60, "Subjek", required=True)
-        if (day not in DAYS or not isinstance(start, str) or not isinstance(end, str)
+        if (not isinstance(day, str) or day not in DAYS
+                or not isinstance(start, str) or not isinstance(end, str)
                 or not TIME.fullmatch(start) or not TIME.fullmatch(end) or start >= end):
             raise ProfileValidation("Hari atau masa tidak sah")
         if cls.casefold() not in permitted:
