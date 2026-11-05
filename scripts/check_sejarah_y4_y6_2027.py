@@ -63,6 +63,11 @@ for y, (num_sk, num_sp) in EXPECTED.items():
         assert path.is_file() and "Set Induksi" in path.read_text()
     assert all(row["Unit Buku Teks"] == units[lesson[i]["rph"]["sk"]]["name"] for i, row in enumerate(rpt))
     assert (ROOT/f"rpt_2027/sejarah/RPT_SEJARAH_TAHUN_{y}_2027_A_B_DRAF.html").is_file()
+    html = (ROOT/f"rpt_2027/sejarah/RPT_SEJARAH_TAHUN_{y}_2027_A_B_DRAF.html").read_text()
+    assert "<th>Tajuk / SK / Buku Teks</th>" in html
+    for u in units.values():
+        assert f"Unit {u['number']}: {u['name']}" in html
+
     assert (ROOT/f"rph_standalone/sejarah/RPH_SEJARAH_TAHUN_{y}_2027_DRAF.html").is_file()
     print(f"Tahun {y}: {num_sk} SK / {num_sp} SP / 36 PdP / 36 RPH — LULUS semakan struktur")
 print("Nota: semakan struktur BUKAN pengesahan halaman buku teks, pedagogi individu, PDF Word atau Telegram.")
