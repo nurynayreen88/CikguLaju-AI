@@ -82,13 +82,18 @@ def install(ns, *, enabled=None, root=ROOT):
     if enabled is None:
         enabled = os.environ.get(FLAG, "1") == "1"
     if not enabled:
+        print("PSV_PROVISIONAL_RPH_ACTIVE=0; reason=feature_disabled", flush=True)
         return False
     if ns.get("PSV_2027_PROVISIONAL_TELEGRAM_ACTIVE"):
         return True
     required = ("callback", "subjects", "send", "_rph_rows", "_lesson_to_class_v2439")
     if not isinstance(ns, dict) or not isinstance(ns.get("state"), dict):
+        print("PSV_PROVISIONAL_RPH_ACTIVE=0; reason=runtime_state_missing", flush=True)
         return False
-    if any(not callable(ns.get(name)) for name in required):
+    missing = [name for name in required if not callable(ns.get(name))]
+    if missing:
+        print("PSV_PROVISIONAL_RPH_ACTIVE=0; reason=runtime_hooks_missing; hooks=" +
+              ",".join(missing), flush=True)
         return False
     root = Path(root).resolve()
     # Fail before patching any production callback if the 210 draft sources do
@@ -96,11 +101,44 @@ def install(ns, *, enabled=None, root=ROOT):
     for year in range(2, 7):
         for number in range(1, 43):
             if _lesson(year, number, root=root) is None:
+                print("PSV_PROVISIONAL_RPH_ACTIVE=0; reason=source_unavailable; "
+                      "year=%d; pdp=%03d" % (year, number), flush=True)
                 return False
 
     previous_cb, previous_rows = ns["callback"], ns["_rph_rows"]
     previous_subjects = ns["subjects"]
     send, session = ns["send"], ns["state"]
+
+    def send_with_active_psv_subject(cid, text, kb=None, *args, **kwargs):
+        """Correct the exact v26.17 subject notice on any surviving legacy route."""
+        old = "Pilih subjek. 🚧 = Dalam Pembangunan; janaan belum dibuka."
+        match = re.fullmatch(r"📘 <b>Tahun ([2-6])</b>\\n\\n" + re.escape(old),
+                             str(text or ""))
+        if match:
+            # Always work on a copy: do not mutate a Telegram keyboard reused
+            # by an unrelated handler. Leave other 🚧 subjects untouched.
+            copied = [[dict(button) for button in row] for row in (kb or [])]
+            found = False
+            for row in copied:
+                for button in row:
+                    if button.get("callback_data") in (
+                            "devsub2617_Pendidikan Seni Visual",
+                            "sub_Pendidikan Seni Visual"):
+                        button["text"] = "🎨 Pendidikan Seni Visual"
+                        button["callback_data"] = "sub_Pendidikan Seni Visual"
+                        found = True
+            if not found:
+                # Add just the PSV entry before legacy back/home navigation.
+                copied.insert(max(0, len(copied) - 2), [
+                    {"text": "🎨 Pendidikan Seni Visual",
+                     "callback_data": "sub_Pendidikan Seni Visual"}])
+            kb = copied
+            text = ("📘 <b>Tahun " + match.group(1) + "</b>\\n\\n"
+                    "Pilih subjek. 🎨 Pendidikan Seni Visual sudah tersedia "
+                    "(42 PdP). 🚧 Hanya subjek lain yang berlabel "
+                    "Dalam Pembangunan belum dibuka.")
+        return send(cid, text, kb, *args, **kwargs)
+
 
     def subjects(cid, label):
         """Remove the old PSV development button for Years 2–6 only.
@@ -242,5 +280,8 @@ def install(ns, *, enabled=None, root=ROOT):
     ns["subjects"] = subjects
     ns["callback"] = callback
     ns["_rph_rows"] = rows
+    ns["send"] = send_with_active_psv_subject
     ns["PSV_2027_PROVISIONAL_TELEGRAM_ACTIVE"] = True
+    print("PSV_PROVISIONAL_RPH_ACTIVE=1; curriculum_pdp=210; "
+          "subject_menu_live=1; legacy_development_notice_guard=1", flush=True)
     return True
