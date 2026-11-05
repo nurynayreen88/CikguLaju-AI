@@ -5,6 +5,8 @@ on:
     paths:
       - 'audits/english_y1_y6_960_sow_audio_index_20261105.json'
       - 'audits/english_y1_y6_audio_source_risk_register_20261105.json'
+      - 'audits/english_y2_l026_y3_l093_direct_tb_audio_check_20261105.json'
+      - 'tests/test_english_y2_l026_y3_l093_direct_audio_evidence_20261105.py'
       - 'tests/test_english_y1_y6_960_sow_audio_provenance_20261105.py'
       - '.github/workflows/english-y1-y6-audio-provenance-20261105.yml'
   workflow_dispatch:
@@ -18,4 +20,6 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
       - name: All 960 SOW lessons and known wrong-source audio safety checks
-        run: python -m unittest discover -s tests -p 'test_english_y1_y6_960_sow_audio_provenance_20261105.py' -v
+        run: |
+          python -m unittest discover -s tests -p 'test_english_y1_y6_960_sow_audio_provenance_20261105.py' -v
+          python -m unittest discover -s tests -p 'test_english_y2_l026_y3_l093_direct_audio_evidence_20261105.py' -v
