@@ -16,6 +16,7 @@ from rpt_2027.pendidikan_moral.complete_96_downloads import (
     source_rows, pdf_ready, rph_ready, build_rpt_pdf,
     build_rph_pdf, build_rph_docx, install,
     RPT_PREFIX, RPH_PDF_PREFIX, RPH_DOCX_PREFIX,
+    _supplement, _latin, PHASE_NAMES,
 )
 
 FORBIDDEN = ("DRAF", "BELUM READY", "SEMAKAN GURU", "CADANGAN CIKGULAJU")
@@ -57,11 +58,17 @@ def test_rendered_pdfs_and_word():
             rph_pdf = build_rph_pdf(year, root/"RPH_54.pdf")
             pages = PdfReader(rph_pdf).pages
             assert len(pages) == 54, (year, "rph pdf pages", len(pages))
-            for page_no in (0, 1, 26, 53):
-                text = pages[page_no].extract_text()
-                assert "PENDIDIKAN MORAL" in text
-                assert_no_internal_labels(text, (year, "rph pdf", page_no))
-                assert all(x in text for x in ("Aktiviti 1", "Aktiviti 2", "Penutup"))
+            supplements = list(_supplement(year))
+            assert len(supplements) == len(pages) == 54, (year, "supplement order")
+            for page_no, ((row, raw, sections), page) in enumerate(zip(supplements, pages)):
+                extracted = " ".join(page.extract_text().split())
+                assert "PENDIDIKAN MORAL" in extracted
+                assert_no_internal_labels(extracted, (year, "rph pdf", page_no))
+                assert all(x in extracted for x in ("Aktiviti 1", "Aktiviti 2", "Penutup"))
+                assert "Sesi " + row["Sesi"] in extracted, (year, row["Sesi"], "wrong PDF page")
+                for phase in (*PHASE_NAMES, "Objektif"):
+                    tail = " ".join(_latin(sections[phase]).split()[-7:])
+                    assert tail in extracted, (year, row["Sesi"], phase, "PDF section truncated")
             docx_path = build_rph_docx(year, root/"RPH_54.docx")
             dfile = Document(docx_path)
             titles = [p.text for p in dfile.paragraphs if
