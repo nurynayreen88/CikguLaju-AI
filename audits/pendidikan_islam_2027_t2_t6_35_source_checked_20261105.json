@@ -1,0 +1,399 @@
+{
+  "subject": "Pendidikan Islam",
+  "year": 2027,
+  "audit_date": "2026-11-05",
+  "branch_policy": "STAGING_ONLY",
+  "release_state": "DRAF_NOT_READY",
+  "counts": {
+    "total": 35,
+    "verified_correction_or_code_theme": 24,
+    "unresolved_tasmi": 10,
+    "unresolved_alternative_ibadah": 1
+  },
+  "groups": [
+    {
+      "status": "SAH_PEMBETULAN_OBJEKTIF_RPT",
+      "items": [
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          50
+        ]
+      ],
+      "basis": "RPT PI3 2026: original objectives repeat the previous verse range; staged objectives now match original SP."
+    },
+    {
+      "status": "SAH_KOD_TEMA_DSKP_BUKU",
+      "items": [
+        [
+          5,
+          47
+        ],
+        [
+          5,
+          134
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          6,
+          20
+        ],
+        [
+          6,
+          24
+        ],
+        [
+          6,
+          28
+        ],
+        [
+          6,
+          32
+        ],
+        [
+          6,
+          36
+        ],
+        [
+          6,
+          40
+        ],
+        [
+          6,
+          44
+        ],
+        [
+          6,
+          48
+        ],
+        [
+          6,
+          52
+        ],
+        [
+          6,
+          56
+        ],
+        [
+          6,
+          64
+        ],
+        [
+          6,
+          68
+        ],
+        [
+          6,
+          72
+        ],
+        [
+          6,
+          76
+        ],
+        [
+          6,
+          80
+        ],
+        [
+          6,
+          87
+        ]
+      ],
+      "basis": "KPM DSKP T5 pp28/30, T6 pp28/43 and primary textbooks; verifies code/theme, not a full independent line-by-line pedagogical approval."
+    },
+    {
+      "status": "BELUM_LULUS_URUTAN_TASMI",
+      "items": [
+        [
+          2,
+          35
+        ],
+        [
+          3,
+          145
+        ],
+        [
+          5,
+          141
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          6,
+          18
+        ],
+        [
+          6,
+          26
+        ],
+        [
+          6,
+          117
+        ],
+        [
+          6,
+          137
+        ],
+        [
+          6,
+          141
+        ]
+      ],
+      "basis": "RPT 2026 Quran sequence has unresolved overlap/gaps/invalid endpoint or no explicit verse scope; do not invent replacements."
+    },
+    {
+      "status": "BELUM_LULUS_ALTERNATIF_IBADAH",
+      "items": [
+        [
+          6,
+          60
+        ]
+      ],
+      "basis": "KPM DSKP 4.2.3-4.2.5 and textbook align, but alternative objective says 'state two benefits' rather than analyze under 4.2.4; original RPT calls for three benefits."
+    }
+  ],
+  "lessons": [
+    {
+      "year": 3,
+      "lesson": 6,
+      "status": "SAH_PEMBETULAN_OBJEKTIF_RPT",
+      "issue": null
+    },
+    {
+      "year": 3,
+      "lesson": 50,
+      "status": "SAH_PEMBETULAN_OBJEKTIF_RPT",
+      "issue": null
+    },
+    {
+      "year": 5,
+      "lesson": 47,
+      "status": "SAH_KOD_TEMA_DSKP_BUKU",
+      "issue": null
+    },
+    {
+      "year": 5,
+      "lesson": 134,
+      "status": "SAH_KOD_TEMA_DSKP_BUKU",
+      "issue": null
+    },
+    {
+      "year": 6,
+      "lesson": 4,
+      "status": "SAH_KOD_TEMA_DSKP_BUKU",
+      "issue": null
+    },
+    {
+      "year": 6,
+      "lesson": 8,
+      "status": "SAH_KOD_TEMA_DSKP_BUKU",
+      "issue": null
+    },
+    {
+      "year": 6,
+      "lesson": 12,
+      "status": "SAH_KOD_TEMA_DSKP_BUKU",
+      "issue": null
+    },
+    {
+      "year": 6,
+      "lesson": 16,
+      "status": "SAH_KOD_TEMA_DSKP_BUKU",
+      "issue": null
+    },
+    {
+      "year": 6,
+      "lesson": 20,
+      "status": "SAH_KOD_TEMA_DSKP_BUKU",
+      "issue": null
+    },
+    {
+      "year": 6,
+      "lesson": 24,
+      "status": "SAH_KOD_TEMA_DSKP_BUKU",
+      "issue": null
+    },
+    {
+      "year": 6,
+      "lesson": 28,
+      "status": "SAH_KOD_TEMA_DSKP_BUKU",
+      "issue": null
+    },
+    {
+      "year": 6,
+      "lesson": 32,
+      "status": "SAH_KOD_TEMA_DSKP_BUKU",
+      "issue": null
+    },
+    {
+      "year": 6,
+      "lesson": 36,
+      "status": "SAH_KOD_TEMA_DSKP_BUKU",
+      "issue": null
+    },
+    {
+      "year": 6,
+      "lesson": 40,
+      "status": "SAH_KOD_TEMA_DSKP_BUKU",
+      "issue": null
+    },
+    {
+      "year": 6,
+      "lesson": 44,
+      "status": "SAH_KOD_TEMA_DSKP_BUKU",
+      "issue": null
+    },
+    {
+      "year": 6,
+      "lesson": 48,
+      "status": "SAH_KOD_TEMA_DSKP_BUKU",
+      "issue": null
+    },
+    {
+      "year": 6,
+      "lesson": 52,
+      "status": "SAH_KOD_TEMA_DSKP_BUKU",
+      "issue": null
+    },
+    {
+      "year": 6,
+      "lesson": 56,
+      "status": "SAH_KOD_TEMA_DSKP_BUKU",
+      "issue": null
+    },
+    {
+      "year": 6,
+      "lesson": 64,
+      "status": "SAH_KOD_TEMA_DSKP_BUKU",
+      "issue": null
+    },
+    {
+      "year": 6,
+      "lesson": 68,
+      "status": "SAH_KOD_TEMA_DSKP_BUKU",
+      "issue": null
+    },
+    {
+      "year": 6,
+      "lesson": 72,
+      "status": "SAH_KOD_TEMA_DSKP_BUKU",
+      "issue": null
+    },
+    {
+      "year": 6,
+      "lesson": 76,
+      "status": "SAH_KOD_TEMA_DSKP_BUKU",
+      "issue": null
+    },
+    {
+      "year": 6,
+      "lesson": 80,
+      "status": "SAH_KOD_TEMA_DSKP_BUKU",
+      "issue": null
+    },
+    {
+      "year": 6,
+      "lesson": 87,
+      "status": "SAH_KOD_TEMA_DSKP_BUKU",
+      "issue": null
+    },
+    {
+      "year": 2,
+      "lesson": 35,
+      "status": "BELUM_LULUS_URUTAN_TASMI",
+      "issue": "al-Baqarah ayat 224 overlaps L032; repetition or error unresolved"
+    },
+    {
+      "year": 3,
+      "lesson": 145,
+      "status": "BELUM_LULUS_URUTAN_TASMI",
+      "issue": "Hud 89–123 not recorded after Hud 63–88"
+    },
+    {
+      "year": 5,
+      "lesson": 141,
+      "status": "BELUM_LULUS_URUTAN_TASMI",
+      "issue": "Fussilat 21–54 not recorded after Fussilat 1–20"
+    },
+    {
+      "year": 6,
+      "lesson": 6,
+      "status": "BELUM_LULUS_URUTAN_TASMI",
+      "issue": "source asy-Syura 33–77 impossible (surah ends at 53); staged 33–51 still only candidate; 52–53 unexplained"
+    },
+    {
+      "year": 6,
+      "lesson": 14,
+      "status": "BELUM_LULUS_URUTAN_TASMI",
+      "issue": "az-Zukhruf 74–89 not scheduled"
+    },
+    {
+      "year": 6,
+      "lesson": 18,
+      "status": "BELUM_LULUS_URUTAN_TASMI",
+      "issue": "ad-Dukhan 1–39 not scheduled, source begins at 40"
+    },
+    {
+      "year": 6,
+      "lesson": 26,
+      "status": "BELUM_LULUS_URUTAN_TASMI",
+      "issue": "al-Jathiyah 34–37 not scheduled"
+    },
+    {
+      "year": 6,
+      "lesson": 117,
+      "status": "BELUM_LULUS_URUTAN_TASMI",
+      "issue": "source falsely attaches az-Zumar 1–5 to Juz29; removed from staging, destination unresolved"
+    },
+    {
+      "year": 6,
+      "lesson": 137,
+      "status": "BELUM_LULUS_URUTAN_TASMI",
+      "issue": "Juz30 surah names without explicit full-surah or selected-verse intent; duplicate 'سورة' in objective"
+    },
+    {
+      "year": 6,
+      "lesson": 141,
+      "status": "BELUM_LULUS_URUTAN_TASMI",
+      "issue": "Juz30 surah names without explicit full-surah or selected-verse intent"
+    },
+    {
+      "year": 6,
+      "lesson": 60,
+      "status": "BELUM_LULUS_ALTERNATIF_IBADAH",
+      "issue": "alternative lesson requires stronger analysis-level objective and PBD for SP4.2.4; align with RPT"
+    }
+  ],
+  "qa_scope": "All 35 RPH compared to original 2026 Word source, selected DSKP text/visual pages and textbook topics; not complete independent visual and pedagogical sign-off of all 696.",
+  "production_untouched": true,
+  "local_archive": "CIKGULAJU_PI_35_ISU_AUDIT_SELESAI_STAGING_20261105.zip",
+  "notes": [
+    "19 Year6 Jawi lessons already use 7.1.2-7.1.5 as in official Year6 DSKP p43, though original RPT has outdated numbering.",
+    "T5 L047 and L134 corrected code numbering matches DSKP p28 and p30.",
+    "No disputed tasmi ranges were invented; original DOCX bytes remain unchanged."
+  ]
+}
