@@ -626,6 +626,24 @@ class PSVSourceOrderTests(unittest.TestCase):
         body = (ROOT / "rph_standalone/psv/year3/lesson_003.md").read_text(encoding="utf-8")
         self.assertIn("ms 8–9", body)
 
+    def test_year3_parang_ilang_art_is_inert_layered_heritage_model(self):
+        """Source-specific craft and safety, never a functional sharp weapon."""
+        rows = read_csv(PSV / "RPT_PSV_Tahun_3_2027_DRAF.csv")
+        for number in (17, 18, 19):
+            with self.subTest(pdp=number):
+                body = (ROOT / f"rph_standalone/psv/year3/lesson_{number:03d}.md").read_text(encoding="utf-8").lower()
+                self.assertIn("parang ilang", body)
+                self.assertIn("tali rafia", body)
+                self.assertIn("kadbod", body)
+                self.assertIn("tanpa bilah tajam", body)
+                self.assertIn(rows[number-1]["Objektif"].lower(), body)
+                self.assertIn(rows[number-1]["Evidens PBD"].lower(), body)
+                self.assertEqual(rows[number-1]["Status"], "DRAF_SEMAK")
+        self.assertEqual(rows[17]["BT muka surat"], "42–43")
+        body = (ROOT / "rph_standalone/psv/year3/lesson_018.md").read_text(encoding="utf-8")
+        self.assertIn("ms 42–43", body)
+        self.assertIn("tidak berfungsi", body)
+
     def test_year5_bunga_kemboja_tekat_is_genuine_couching(self):
         rows = read_csv(PSV / "RPT_PSV_Tahun_5_2027_DRAF.csv")
         keywords = {

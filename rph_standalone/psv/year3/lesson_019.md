@@ -5,18 +5,18 @@
 **SK:** 3.1; 4.1  
 **SP:** 3.1.5; 4.1.1; 4.1.2  
 **Rujukan Buku Teks:** Pendidikan Kesenian Tahun 3 (bahagian Seni Visual) ms 42–43 (unit 40-43)  
-**BBM:** kadbod lembut, kertas warna, pita, gam  
+**BBM:** BT ms 42–43, model hiasan Parang Ilang PdP 018, pita kertas, tali rafia halus, warna poster dan kad apresiasi
 **Tempoh:** 60 minit
 
 ## Objektif dan kriteria kejayaan
-Pada akhir PdP, murid dapat mengemas karya Pahlawan Kecil, menyatakan dua unsur seni dan satu cadangan pembaikan. Evidens PBD: karya siap, apresiasi lisan dua unsur dan satu pembaikan.
+Murid dapat mengemas model hiasan Parang Ilang dan menerangkan bentuk, jalinan serta warisan budaya secara selamat. Evidens PBD: Model hiasan tanpa bilah tajam, dua unsur seni dan satu ulasan penambahbaikan.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan contoh Pahlawan Kecil dan murid memberi satu pemerhatian tentang bentuk, warna, ruang atau fungsi.
-**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru menunjukkan kriteria hasil yang kemas dan berfungsi; murid menilai kualiti karya sebelum menambah baik.
-**Aktiviti 2 (25 minit) — Amali:** Murid membuat kemasan, mempamerkan hasil dan menilai: Terangkan fungsi budaya, motif dan amalan keselamatan. Murid memberi ulasan dua unsur seni dan penambahbaikan.
-**Pengukuhan/Pentaksiran (10 minit):** Guru menilai karya siap, apresiasi lisan dua unsur dan satu pembaikan; murid membandingkan hasil dengan kriteria kejayaan dan membuat pembetulan.
+**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru merujuk BT ms 43 tentang balutan pemegang dengan pita serta hiasan tali rafia untuk menyerlahkan jalinan; murid menyemak kekukuhan cantuman model.
+**Aktiviti 2 (25 minit) — Amali:** Murid mengemas pita pemegang model hiasan bertepi bulat, menambah corak tali rafia, mempamer tanpa lakonan bertarung dan memberi ulasan bentuk, jalinan serta kepelbagaian bahan.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menyemak cantuman, rupa model hiasan tidak berbahaya, dua istilah seni dan satu cadangan pembaikan.
 **Penutup (5 minit):** Murid menyebut satu teknik yang dipelajari; guru membimbing penyimpanan hasil dan pembersihan.
 **Pembezaan:** Kad langkah bergambar untuk sokongan; murid lanjutan menghuraikan pilihan media dan kesan visual.
-**Keselamatan:** Guna alat tumpul, bahan tidak toksik, dan kendalikan gunting atau cantuman di bawah pengawasan.
-**Sumber:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view); [Buku Teks Pendidikan Kesenian Tahun 3 (bahagian Seni Visual)](https://fliphtml5.com/ubcth/flrm/). Langkah ialah adaptasi PdP CikguLaju berpandukan teknik dan unit buku.
+**Keselamatan:** Model hiasan berhujung bulat dan tidak berfungsi; guru sahaja memotong polistirena/kadbod tebal, murid menggunakan gam tidak toksik, tanpa bilah tajam.
+**Sumber:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view); [Buku Teks Pendidikan Kesenian Tahun 3 (bahagian Seni Visual)](https://fliphtml5.com/hkvtu/vifc/Pendidikan_Kesenian_Tahun_3_SK/). Langkah ialah adaptasi PdP CikguLaju berpandukan teknik dan unit buku.
