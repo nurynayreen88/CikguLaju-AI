@@ -7,6 +7,8 @@ on:
       - 'audits/english_y4_160_audio_drive_crosscheck_20261105.json'
       - 'audits/english_y4_legacy_wma_to_mp3_candidates_20261105.json'
       - 'tests/test_english_y4_160_audio_crosscheck_20261105.py'
+      - 'audits/english_y4_24_wrong_book_tb_visual_and_mp3_metadata_crosscheck_20261105.json'
+      - 'tests/test_english_y4_24_wrong_book_tb_visual_and_mp3_metadata_20261105.py'
       - '.github/workflows/english-y4-160-audio-source-crosscheck-20261105.yml'
   workflow_dispatch:
 permissions: {contents: read}
@@ -20,5 +22,7 @@ jobs:
         with: {python-version: '3.12'}
       - name: Verify all SOW lesson IDs, legacy media files and unapproved blockers
         run: python -m unittest discover -s tests -p 'test_english_y4_160_audio_crosscheck_20261105.py' -v
+      - name: Verify 19 printed Teacher's Book pages and 24 candidate MP3 metadata checks
+        run: python -m unittest discover -s tests -p 'test_english_y4_24_wrong_book_tb_visual_and_mp3_metadata_20261105.py' -v
       - name: Run prior Year4 read-only media route analysis
         run: python tools/audit_english_y4_legacy_audio_routes_20261104.py
