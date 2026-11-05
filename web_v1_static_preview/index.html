@@ -17,6 +17,14 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 #rph-preview-content h4{font-size:.96rem;margin:16px 0 5px}
 #rph-preview-content p{white-space:pre-wrap;color:#233c33;line-height:1.55;margin:0 0 10px}
 @media print{body{background:white!important}header,footer,main.panel,#workspace>*:not(#rph-preview-panel),#rph-preview-panel>button{display:none!important}#workspace{display:block!important;border:0!important;box-shadow:none!important;padding:0!important;margin:0!important;max-width:none!important}#rph-preview-panel{display:block!important;border:0!important;background:white!important;margin:0!important;padding:0!important}#rph-preview-content{border:0!important;padding:0!important}#rph-preview-content h4{break-after:avoid}#rph-preview-content p{break-inside:avoid}}
+/* Sembunyikan bahan tambahan yang belum disambungkan; kekalkan kod untuk pengaktifan kemudian. */
+#show-materials,#materials-panel{display:none!important}
+.rph-guide{padding:16px 18px;margin:18px 0;border-radius:14px;background:#edf7f2;border:1px solid #d3e6db}
+.rph-guide h3{margin:0 0 8px;font-size:1.07rem}
+.rph-guide p{margin:6px 0;line-height:1.5}
+.rph-guide .notice{margin-top:13px;font-size:.86rem}
+.selection-help{padding:12px 14px;border-left:4px solid #087568;background:#f4f9f6;color:#173d37;border-radius:8px;font-weight:650}
+@media print{.rph-guide,.selection-help{display:none!important}}
 </style>
 </head>
 <body>
@@ -24,12 +32,12 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 <header class="header"><span class="mark">CL</span><span>CikguLaju AI</span></header>
 <main class="panel">
 <span class="pill">Versi Web</span>
-<h1>RPH lebih mudah, semuanya di satu tempat.</h1>
-<p>Log masuk menggunakan akaun Telegram CikguLaju sedia ada. Selepas disahkan, pilih Tahun, Subjek dan Lesson/PdP dalam satu halaman.</p>
+<h1>Sediakan RPH langkah demi langkah</h1>
+<p>Log masuk dengan akaun Telegram CikguLaju. Pilih RPH mengikut Tahun, Subjek, Unit/Tajuk dan Lesson/PdP, kemudian semak sebelum mencetak.</p>
 <div id="telegram-widget" aria-label="Log masuk Telegram"></div>
 <p class="notice" role="status" id="login-status">Menyemak sambungan log masuk…</p>
 </main>
-<section id="workspace" class="panel" hidden><h2>Pilih Bahan PdP</h2><p id="account-access" class="notice" role="status"></p><p>Pilih Tahun, Subjek dan Lesson/PdP. Lesson yang ada dalam sumber Telegram dipaparkan di sini. Muat turun Web akan dibuka selepas penjanaan dan kuota disambungkan.</p><label for="year">Tahun</label><select id="year"><option value="">Pilih Tahun</option><option value="1">Tahun 1</option><option value="2">Tahun 2</option><option value="3">Tahun 3</option><option value="4">Tahun 4</option><option value="5">Tahun 5</option><option value="6">Tahun 6</option></select><label for="subject">Subjek</label><select id="subject" disabled><option value="">Pilih Tahun dahulu</option></select><label for="component" id="component-label" hidden>Pilih komponen PJPK</label><select id="component" hidden disabled><option value="">Pilih PJ atau PK</option></select><label for="unit" id="unit-label" hidden>Unit/Tajuk</label><select id="unit" hidden disabled><option value="">Pilih Subjek dahulu</option></select><label for="lesson" id="lesson-label" hidden>Lesson/PdP</label><select id="lesson" hidden disabled><option value="">Pilih Subjek dahulu</option></select><p id="catalog-status" class="notice" role="status"></p><button id="rph-preview-button" type="button" hidden disabled>Papar RPH</button><section id="rph-preview-panel" hidden aria-live="polite"><h3>Pratonton RPH</h3><p id="rph-preview-status" class="notice" role="status"></p><article id="rph-preview-content" hidden><h3 id="rph-preview-title"></h3><p id="rph-preview-notice"></p><div id="rph-preview-fields"></div></article><button id="rph-word" type="button" disabled>Muat turun Word</button><button id="rph-print" type="button" disabled>Cetak / Simpan PDF</button></section><button id="show-materials" type="button" hidden disabled>Papar Bahan</button><section id="materials-panel" hidden aria-live="polite"><h3>Senarai Bahan</h3><p id="materials-status" class="notice"></p><ul id="materials-list"></ul><button id="download-all" type="button" disabled>Download Semua</button></section><section id="rpt2027-panel" aria-labelledby="rpt2027-heading"><h3 id="rpt2027-heading">📅 RPT 2027 — Semua Subjek</h3><p>Pilih subjek dan tahun. RPT adalah untuk Rakan Pembangun yang disahkan atau pelanggan berlangganan aktif. Fail bertanda DRAF/SEMENTARA masih dalam semakan.</p><label for="rpt-subject">Subjek RPT</label><select id="rpt-subject" disabled><option value="">Memuatkan senarai subjek…</option></select><label for="rpt-year">Tahun RPT</label><select id="rpt-year" disabled><option value="">Pilih Subjek dahulu</option></select><button id="rpt-download" type="button" disabled>Muat turun RPT 2027 (PDF)</button><p id="rpt-status" class="notice" role="status"></p></section><button id="logout" type="button">Log keluar</button></section><footer class="foot">CikguLaju AI · Web staging</footer>
+<section id="workspace" class="panel" hidden><h2>Sediakan RPH</h2><p id="account-access" class="notice" role="status"></p><section class="rph-guide" aria-label="Cara menyediakan RPH"><h3>Cara menggunakan CikguLaju Web</h3><p><strong>1.</strong> Pilih <strong>Tahun</strong> dan <strong>Subjek</strong>.</p><p><strong>2.</strong> Pilih <strong>Unit/Tajuk</strong> dan <strong>Lesson/PdP</strong>.</p><p><strong>3.</strong> Tekan <strong>Papar RPH</strong> untuk membaca dan menyemak kandungannya.</p><p><strong>4.</strong> Tekan <strong>Muat turun Word</strong> atau <strong>Cetak / Simpan PDF</strong> selepas pratonton muncul.</p><p class="notice">Pratonton Web hanya untuk RPH yang mempunyai sumber disahkan dan pengguna Rakan Pembangun/langganan aktif. Untuk 10 janaan percuma, gunakan bot Telegram CikguLaju.</p></section><p id="selection-help" class="selection-help" role="status">Mula di bawah dengan memilih Tahun.</p><label for="year">Langkah 1 — Pilih Tahun</label><select id="year"><option value="">Pilih Tahun</option><option value="1">Tahun 1</option><option value="2">Tahun 2</option><option value="3">Tahun 3</option><option value="4">Tahun 4</option><option value="5">Tahun 5</option><option value="6">Tahun 6</option></select><label for="subject">Langkah 2 — Pilih Subjek</label><select id="subject" disabled><option value="">Pilih Tahun dahulu</option></select><label for="component" id="component-label" hidden>Pilih komponen PJPK (PJ atau PK)</label><select id="component" hidden disabled><option value="">Pilih PJ atau PK</option></select><label for="unit" id="unit-label" hidden>Langkah 3 — Pilih Unit/Tajuk</label><select id="unit" hidden disabled><option value="">Pilih Subjek dahulu</option></select><label for="lesson" id="lesson-label" hidden>Langkah 4 — Pilih Lesson/PdP</label><select id="lesson" hidden disabled><option value="">Pilih Subjek dahulu</option></select><p id="catalog-status" class="notice" role="status"></p><button id="rph-preview-button" type="button" hidden disabled>Papar RPH</button><section id="rph-preview-panel" hidden aria-live="polite"><h3>Pratonton RPH</h3><p id="rph-preview-status" class="notice" role="status"></p><article id="rph-preview-content" hidden><h3 id="rph-preview-title"></h3><p id="rph-preview-notice"></p><div id="rph-preview-fields"></div></article><button id="rph-word" type="button" disabled>Muat turun Word</button><button id="rph-print" type="button" disabled>Cetak / Simpan PDF</button></section><button id="show-materials" type="button" hidden disabled>Papar Bahan</button><section id="materials-panel" hidden aria-live="polite"><h3>Senarai Bahan</h3><p id="materials-status" class="notice"></p><ul id="materials-list"></ul><button id="download-all" type="button" disabled>Download Semua</button></section><section id="rpt2027-panel" aria-labelledby="rpt2027-heading"><h3 id="rpt2027-heading">📅 RPT 2027 — Semua Subjek</h3><p>Pilih subjek dan tahun. RPT adalah untuk Rakan Pembangun yang disahkan atau pelanggan berlangganan aktif. Fail bertanda DRAF/SEMENTARA masih dalam semakan.</p><label for="rpt-subject">Subjek RPT</label><select id="rpt-subject" disabled><option value="">Memuatkan senarai subjek…</option></select><label for="rpt-year">Tahun RPT</label><select id="rpt-year" disabled><option value="">Pilih Subjek dahulu</option></select><button id="rpt-download" type="button" disabled>Muat turun RPT 2027 (PDF)</button><p id="rpt-status" class="notice" role="status"></p></section><button id="logout" type="button">Log keluar</button></section><footer class="foot">CikguLaju AI · Web staging</footer>
 </div>
 <script>
 "use strict";
@@ -80,6 +88,7 @@ function resetRphPreview(){
  const btn=document.getElementById("rph-preview-button");
  btn.hidden=true;btn.disabled=true;
 }
+function updateSelectionHelp(message){document.getElementById("selection-help").textContent=message;}
 function showRphAction(){
  const btn=document.getElementById("rph-preview-button");
  btn.hidden=!currentRphParams();btn.disabled=!currentRphParams();
@@ -100,23 +109,23 @@ function resetSelect(el,label){el.replaceChildren(new Option(label,""));el.disab
 function fillSelect(el,items,label){resetSelect(el,label);for(const item of items){if(item.value==null||!item.label)continue;const opt=new Option(item.label,String(item.value));opt.dataset.approved=item.approved===true&&item.download_enabled===true&&item.standalone_rph_verified===true?"1":"0";if(Number.isInteger(item.lesson_no)&&item.lesson_no>0&&item.lesson_no<=160)opt.dataset.lessonNo=String(item.lesson_no);el.add(opt);}el.disabled=el.options.length<=1;}
 year.addEventListener("change",async()=>{
  resetSelect(subject,"Pilih Subjek");resetSelect(component,"Pilih PJ atau PK");resetSelect(unit,"Pilih Subjek dahulu");resetSelect(lesson,"Pilih Unit dahulu");
- catalogStatus.textContent="";showStep(component,false);showStep(unit,false);showStep(lesson,false);resetMaterials();resetRphPreview();if(!year.value)return;
- try{fillSelect(subject,await loadOptions("subjects"),"Pilih Subjek");}catch(error){catalogStatus.textContent=error.message;}
+ catalogStatus.textContent="";showStep(component,false);showStep(unit,false);showStep(lesson,false);resetMaterials();resetRphPreview();updateSelectionHelp(year.value?"Langkah 2: Pilih Subjek.":"Mula dengan memilih Tahun.");if(!year.value)return;
+ try{fillSelect(subject,await loadOptions("subjects"),"Pilih Subjek");if(subject.options.length<=1)updateSelectionHelp("Tiada pilihan Subjek bagi Tahun ini dalam Web. Gunakan bot Telegram untuk janaan RPH.");}catch(error){catalogStatus.textContent=error.message;updateSelectionHelp("Senarai Subjek belum tersedia. Cuba lagi atau gunakan bot Telegram.");}
 });
 subject.addEventListener("change",async()=>{
- resetSelect(component,"Pilih PJ atau PK");resetSelect(unit,"Pilih Unit");resetSelect(lesson,"Pilih Unit dahulu");showStep(component,false);showStep(unit,false);showStep(lesson,false);resetMaterials();resetRphPreview();if(!subject.value)return;
+ resetSelect(component,"Pilih PJ atau PK");resetSelect(unit,"Pilih Unit");resetSelect(lesson,"Pilih Unit dahulu");showStep(component,false);showStep(unit,false);showStep(lesson,false);resetMaterials();resetRphPreview();updateSelectionHelp(subject.value?(subject.value==="PJPK"?"Pilih komponen Pendidikan Jasmani (PJ) atau Pendidikan Kesihatan (PK).":"Langkah 3: Pilih Unit/Tajuk."):"Langkah 2: Pilih Subjek.");if(!subject.value)return;
  try{
   if(subject.value==="PJPK"){showStep(component,true);fillSelect(component,await loadOptions("components",{subject:"PJPK"}),"Pilih PJ atau PK");}
   else{showStep(unit,true);fillSelect(unit,await loadOptions("units",{subject:subject.value}),"Pilih Unit");}
  }catch(error){catalogStatus.textContent=error.message;}
 });
 component.addEventListener("change",async()=>{
- resetSelect(unit,"Pilih Unit");resetSelect(lesson,"Pilih Unit dahulu");showStep(unit,!!component.value);showStep(lesson,false);resetMaterials();resetRphPreview();if(!component.value)return;
+ resetSelect(unit,"Pilih Unit");resetSelect(lesson,"Pilih Unit dahulu");showStep(unit,!!component.value);showStep(lesson,false);resetMaterials();resetRphPreview();updateSelectionHelp(component.value?"Langkah 3: Pilih Unit/Tajuk PJPK.":"Pilih komponen PJ atau PK dahulu.");if(!component.value)return;
  try{fillSelect(unit,await loadOptions("units",{subject:"PJPK",component:component.value}),"Pilih Unit");}catch(error){catalogStatus.textContent=error.message;}
 });
 unit.addEventListener("change",async()=>{
- resetSelect(lesson,"Pilih Lesson/PdP");showStep(lesson,!!unit.value);resetMaterials();resetRphPreview();if(!unit.value)return;
- try{const extra={subject:subject.value,unit:unit.value};if(subject.value==="PJPK"){if(!component.value)return;extra.component=component.value;}const items=await loadOptions("pdp",extra);fillSelect(lesson,items,"Pilih Lesson/PdP");catalogStatus.textContent=items.length+" Lesson/PdP tersedia dalam katalog."; }
+ resetSelect(lesson,"Pilih Lesson/PdP");showStep(lesson,!!unit.value);resetMaterials();resetRphPreview();updateSelectionHelp(unit.value?"Langkah 4: Pilih Lesson/PdP.":"Langkah 3: Pilih Unit/Tajuk.");if(!unit.value)return;
+ try{const extra={subject:subject.value,unit:unit.value};if(subject.value==="PJPK"){if(!component.value)return;extra.component=component.value;}const items=await loadOptions("pdp",extra);fillSelect(lesson,items,"Pilih Lesson/PdP");catalogStatus.textContent=items.length+" Lesson/PdP tersedia dalam katalog.";if(items.length===0)updateSelectionHelp("Tiada Lesson/PdP bagi tajuk ini. Cuba tajuk lain atau gunakan Telegram."); }
  catch(error){catalogStatus.textContent=error.message;}
 });
 lesson.addEventListener("change",()=>{
@@ -124,7 +133,7 @@ lesson.addEventListener("change",()=>{
  if(lesson.value){
   document.getElementById("show-materials").hidden=false;
   document.getElementById("show-materials").disabled=false;
-  catalogStatus.textContent="Lesson/PdP dipilih. Tekan Papar RPH untuk semak sebelum muat turun atau cetak.";
+  catalogStatus.textContent="Lesson/PdP dipilih.";updateSelectionHelp("Langkah 5: Tekan Papar RPH. Selepas kandungan dipaparkan, barulah Word dan Cetak / Simpan PDF boleh digunakan.");
  }
 });
 document.getElementById("show-materials").addEventListener("click",async()=>{
@@ -233,8 +242,8 @@ rphButton.addEventListener("click",async()=>{
   if(!rphFields.children.length)throw Error("Kandungan RPH kosong.");
   rphContent.hidden=false;renderedRphKey=key;
   rphWord.disabled=false;rphPrint.disabled=false;
-  rphStatus.textContent="Semak kandungan RPH dan status sumber sebelum cetak.";
- }catch(e){rphStatus.textContent=e.message;rphContent.hidden=true;renderedRphKey=null;}
+  rphStatus.textContent="Pratonton RPH tersedia. Semak kandungan sebelum muat turun atau cetak.";updateSelectionHelp("RPH telah dipaparkan. Seterusnya tekan Muat turun Word atau Cetak / Simpan PDF.");
+ }catch(e){rphStatus.textContent=e.message;rphContent.hidden=true;renderedRphKey=null;updateSelectionHelp("RPH belum dapat dipaparkan untuk pilihan ini. Cuba Lesson/PdP lain atau gunakan bot Telegram CikguLaju.");}
  finally{rphButton.disabled=!currentRphParams();}
 });
 rphWord.addEventListener("click",async()=>{
