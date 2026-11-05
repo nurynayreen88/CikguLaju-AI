@@ -31,8 +31,8 @@ Fail RPT (.md/.csv), RPH setiap PdP (.md), manifest JSON di `staging/pendidikan_
 
 ## Isu kandungan lain
 - Tahun 3: sebahagian tajuk/unit atau SP diulang dalam slot bersebelahan. Semak sama ada pengulangan PdP dirancang guru atau salinan berganda.
-- Tahun 4: Unit *Harum Mewangi* pada hujung RPT merujuk halaman 50/52 selepas Unit *Kota Ceria* halaman 90/94. Ini mencurigakan dan belum boleh disahkan.
-- Tahun 5: tajuk Unit 5 dan Unit 9 serta sebahagian besar rujukan buku/audio belum disahkan.
+- Tahun 4: halaman Unit *Harum Mewangi* 50/52 daripada RPT lama telah dibetulkan berdasarkan buku Kesenian T4 sebenar kepada 100–103 bagi tiga PdP, masih perlu semakan kurikulum dan audio.
+- Tahun 5: nama Unit 5 (*Raja di Lautan*) dan 9 (*Adiwira*) sudah ditemui dalam RPT 2026 awam, dengan 35 PdP disusun semula. Rujukan halaman dan audio masih belum disahkan pada buku asal.
 - Tahun 6: salinan RPT lama menyebut **Baroque** sedangkan DSKP Tahun 6 **Classical**; julat rekoder DSKP meliputi C-D'.
 - Tahun 2–3: rujukan Audio pada RPT tidak sama dengan bukti fail audio sebenar.
 - Semua tahun: semak cuti negeri/cuti gantian Kumpulan A/B secara khusus; slot 2027 hanyalah cadangan.
@@ -65,6 +65,14 @@ Fail RPT (.md/.csv), RPH setiap PdP (.md), manifest JSON di `staging/pendidikan_
 - Kod sumber RPT **4.1.1** dikekalkan sebagai `sp_rpt_source`; untuk aktiviti apresiasi, kod **4.2.1** yang dicetak dalam DSKP dan buku digunakan bagi dua PdP. Kod pergerakan **2.3.1** pada empat PdP ialah cadangan crosswalk kerana kod buku `4.2.2/2.2.7` berbeza daripada DSKP Muzik berdiri sendiri.
 - Nombor Audio 44–48 dan 110–117 memang **dicetak dalam buku**, tetapi **fail audio/track tidak disahkan** dan tidak diaktifkan.
 - Perincian: `year4/BUKU_TEKS_EDISI_SEPADAN_AUDIT.md`. Buku belum selesai diaudit bagi baki 29 PdP Tahun 4.
+
+
+### Projek Seni Muzik dikawal untuk Tahun 2–6
+- DSKP Pendidikan Muzik Tahun **2, 3, 4, 5 dan 6** menyebut **dua projek berskala kecil setahun**.
+- Tahun 5: dua projek disusun berdasarkan RPT 2026 awam.
+- Tahun 2, 3, 4 dan 6: 8 slot PdP hujung tahun yang sebelum ini dinamakan Projek 3 telah ditukar menjadi **cadangan pengukuhan/pentaksiran**, BUKAN projek ketiga rasmi. ID PdP tetap sama; label dan kod SP RPT asal dikekalkan dalam medan audit.
+- RPH calon 34–35 untuk empat tahun tersebut sudah disesuaikan dengan kemahiran tahun. RPT/CSV setiap tahun turut diselaraskan.
+- Semakan penerbitan masih diperlukan kerana slot pengukuhan adalah **cadangan**, bukan agihan rasmi RPT 2027; lihat `TWO_PROJECTS_PER_YEAR_AUDIT.md`.
 
 ## Release gates
 [ ] Buku teks sepadan dan nombor halaman disahkan PdP demi PdP  
