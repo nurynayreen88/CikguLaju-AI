@@ -1,0 +1,1624 @@
+{
+  "date": "2026-11-05",
+  "year": 5,
+  "source_book": "English Plus 1, filenames identify English Plus Second Edition Students Book 1",
+  "source_sow_index": "audits/english_y1_y6_960_sow_audio_index_20261105.json",
+  "source_sow_git_blob_sha": "9ba7c9e4558151439c6f92dd5e43ea156b2d9a34",
+  "drive_audio_folder_id": "1A-cDnYRn3j-B5NrvTC5fSaWCg-Gq6YyC",
+  "total_sow_lessons": 160,
+  "sow_lessons_with_explicit_audio": 62,
+  "sow_numbered_audio_references": 87,
+  "distinct_cd_track_references": 82,
+  "matched_references_by_cd_track_label": 87,
+  "missing_cd_track_label_references": 0,
+  "inventory_mp3_files": 120,
+  "inventory_unique_cd_track_labels": 119,
+  "extra_duplicate_file_copies": 1,
+  "duplicate_cd2_track12_sha256_verified": "447d6aab706f91a8949218af09edc05765ee7b5446807e0a9d747b0e0a773cf4",
+  "lesson_audio_candidates": [
+    {
+      "lesson": 1,
+      "topic": "Free time",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 2,
+          "sow_notation": "CD Track 1-02",
+          "drive_candidates": [
+            {
+              "filename": "1-02 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1bHosw3bReEbG_e92GsrKV40j0wib21TO",
+              "size_bytes": 2152962,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 1,
+          "track": 3,
+          "sow_notation": "CD Track 1-03",
+          "drive_candidates": [
+            {
+              "filename": "1-03 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1JG5MszSc8HC4XeqQHYOscl3P7h8Qc9GF",
+              "size_bytes": 2371137,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 2,
+      "topic": "Free time",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 4,
+          "sow_notation": "CD track 1-04",
+          "drive_candidates": [
+            {
+              "filename": "1-04 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1I2YbiQkvwoC-jZ7-r978VSi3dfZ9o9hS",
+              "size_bytes": 1772620,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 3,
+      "topic": "Free time",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 5,
+          "sow_notation": "CD 1-05",
+          "drive_candidates": [
+            {
+              "filename": "1-05 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1teVj-V8NNFaiA5wwreNZzlngiStImVDY",
+              "size_bytes": 907444,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 6,
+      "topic": "Free time",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 8,
+          "sow_notation": "CD 1-08",
+          "drive_candidates": [
+            {
+              "filename": "1-08 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "14yyhvr8ny096ND-hpPr3NNwmnJB-ZuMB",
+              "size_bytes": 2821697,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 8,
+      "topic": "Free time",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 9,
+          "sow_notation": "CD 1-09",
+          "drive_candidates": [
+            {
+              "filename": "1-09 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1bzi8GJ8QmtvH6Xlw55Zqzx9b9L0-kcwU",
+              "size_bytes": 1236796,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 11,
+      "topic": "Free time",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 12,
+          "sow_notation": "CD1.12",
+          "drive_candidates": [
+            {
+              "filename": "1-12 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "17SabOFDM37_JuWqj605iMawaJqSxqhTp",
+              "size_bytes": 1607944,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 17,
+      "topic": "Towns and cities",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 13,
+          "sow_notation": "CD-1.13",
+          "drive_candidates": [
+            {
+              "filename": "1-13 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1m0MKsa3jG0unwDu-0h2rNR1xO_RFO3z9",
+              "size_bytes": 2094448,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 1,
+          "track": 14,
+          "sow_notation": "CD-1.14",
+          "drive_candidates": [
+            {
+              "filename": "1-14 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "12zQ-KjDh12ehSFVEpeOrbclekD-LFhJy",
+              "size_bytes": 3386778,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 19,
+      "topic": "Towns and cities",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 15,
+          "sow_notation": "CD1.15",
+          "drive_candidates": [
+            {
+              "filename": "1-15 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1mVjVwyqnsPu98sdETPmZIXHPDC9hwzw0",
+              "size_bytes": 3532228,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 23,
+      "topic": "Towns and cities",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 16,
+          "sow_notation": "CD 1.16",
+          "drive_candidates": [
+            {
+              "filename": "1-16 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1qX-TIsIPU3KgpPg1uC44LKiITTj1ul5O",
+              "size_bytes": 1293638,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 1,
+          "track": 17,
+          "sow_notation": "CD1.17",
+          "drive_candidates": [
+            {
+              "filename": "1-17 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1lt6jAaSg-Y5fyalpu_TdQuUbqSjw8NhC",
+              "size_bytes": 2332812,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 24,
+      "topic": "Towns and cities",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 18,
+          "sow_notation": "CD1.18",
+          "drive_candidates": [
+            {
+              "filename": "1-18 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1X1FzjdHZaCg3ZVxt_3iuT95Sw8lD7PhS",
+              "size_bytes": 848930,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 29,
+      "topic": "Options: Extra Listening and Speaking",
+      "tracks": [
+        {
+          "cd": 3,
+          "track": 2,
+          "sow_notation": "CD3.02",
+          "drive_candidates": [
+            {
+              "filename": "3-02 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1T-HBLwsQ2C4eC3egNFZ9ZgDLsOxDRO6N",
+              "size_bytes": 385087,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 3,
+          "track": 3,
+          "sow_notation": "CD3.03",
+          "drive_candidates": [
+            {
+              "filename": "3-03 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "16N8fUyxWYYyzmeEIYyB7_f1MzLS2i5Zf",
+              "size_bytes": 819242,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 30,
+      "topic": "Options: Extra Listening and Speaking",
+      "tracks": [
+        {
+          "cd": 3,
+          "track": 4,
+          "sow_notation": "CD3.04",
+          "drive_candidates": [
+            {
+              "filename": "3-04 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1e4xl-R1CYY3t0XGiWhr8sKxVRzBrTNcX",
+              "size_bytes": 823068,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 31,
+      "topic": "Towns and cities",
+      "tracks": [
+        {
+          "cd": 3,
+          "track": 27,
+          "sow_notation": "CD3.27",
+          "drive_candidates": [
+            {
+              "filename": "3-27 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1dvMw05yDuZuo3ftm2c6GPJzQMpzC-zKH",
+              "size_bytes": 855831,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 35,
+      "topic": "Days",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 21,
+          "sow_notation": "CD 1.21",
+          "drive_candidates": [
+            {
+              "filename": "1-21 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1JTVtMpkKAlc1GZ2vWRCpavcZbBk_VuBt",
+              "size_bytes": 515956,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 1,
+          "track": 22,
+          "sow_notation": "CD1.22",
+          "drive_candidates": [
+            {
+              "filename": "1-22 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1I-RSHMCuYnD9y1u2--JKNlEtVZ3-ivYa",
+              "size_bytes": 1228895,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 40,
+      "topic": "Days",
+      "tracks": [
+        {
+          "cd": 3,
+          "track": 5,
+          "sow_notation": "CD3.05",
+          "drive_candidates": [
+            {
+              "filename": "3-05 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1flOJbhgGAAyZs-b9MHbAPMtf3KZB8tdy",
+              "size_bytes": 367587,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 3,
+          "track": 6,
+          "sow_notation": "CD3.06",
+          "drive_candidates": [
+            {
+              "filename": "3-06 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1ewXieRQlfQme_aF2Cqyb04JWC4-5bGC7",
+              "size_bytes": 790264,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 3,
+          "track": 7,
+          "sow_notation": "CD3.07",
+          "drive_candidates": [
+            {
+              "filename": "3-07 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1IBY4EtoZt_888i4uq5UZGL73DzaW7XGK",
+              "size_bytes": 479089,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 41,
+      "topic": "Days",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 23,
+          "sow_notation": "CD1.23",
+          "drive_candidates": [
+            {
+              "filename": "1-23 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1GI8AOZlrOvkrLUmB6YYfKLXYVkGMbxE4",
+              "size_bytes": 1168294,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 42,
+      "topic": "Days",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 24,
+          "sow_notation": "CD1.24",
+          "drive_candidates": [
+            {
+              "filename": "1-24 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1o5amiuoNhxJK8rK4dNaNU3OVSofYJ0tW",
+              "size_bytes": 499717,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 43,
+      "topic": "Days",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 25,
+          "sow_notation": "CD1.25",
+          "drive_candidates": [
+            {
+              "filename": "1-25 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1RzoP0gRCLP0CRz08Uu1Dw3j4nDJGotvX",
+              "size_bytes": 1291670,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 47,
+      "topic": "Days",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 26,
+          "sow_notation": "CD1.26",
+          "drive_candidates": [
+            {
+              "filename": "1-26 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1uz450xsgVm5foEYAA4DMTHciwybTpeL7",
+              "size_bytes": 481705,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 53,
+      "topic": "Wild Life",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 28,
+          "sow_notation": "CD1.28",
+          "drive_candidates": [
+            {
+              "filename": "1-28 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1c1MGrgWNE73kKXipiLHGP1pLvCjMvFPz",
+              "size_bytes": 1173637,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 1,
+          "track": 29,
+          "sow_notation": "CD1.29",
+          "drive_candidates": [
+            {
+              "filename": "1-29 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1XBVE6mmDhJDbFEVpIhgZczby20ei3hon",
+              "size_bytes": 426972,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 1,
+          "track": 30,
+          "sow_notation": "CD1.30",
+          "drive_candidates": [
+            {
+              "filename": "1-30 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1AkLps5UW0f4Z04DS0j8cjKaw-sAYIt08",
+              "size_bytes": 630261,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 58,
+      "topic": "Wild Life",
+      "tracks": [
+        {
+          "cd": 3,
+          "track": 8,
+          "sow_notation": "CD3.08",
+          "drive_candidates": [
+            {
+              "filename": "3-08 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1GVOiY5gyesbMWtaQxYo9rJBX0SFu5E7J",
+              "size_bytes": 504760,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 3,
+          "track": 9,
+          "sow_notation": "CD3.09",
+          "drive_candidates": [
+            {
+              "filename": "3-09 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1EqLr6uas9lMF1eYpWYy9lBwhQ6I-oiMa",
+              "size_bytes": 283901,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 59,
+      "topic": "Wild Life",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 33,
+          "sow_notation": "CD1.33",
+          "drive_candidates": [
+            {
+              "filename": "1-33 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1-LsZIXlyvRamkz1Oyr7VZV6X84EbHvs9",
+              "size_bytes": 577991,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 1,
+          "track": 34,
+          "sow_notation": "CD1.34",
+          "drive_candidates": [
+            {
+              "filename": "1-34 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1WosraAxRIMLCqB37vpKTISX4mBuVXuD1",
+              "size_bytes": 1716162,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 64,
+      "topic": "Wild Life",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 36,
+          "sow_notation": "CD1.36",
+          "drive_candidates": [
+            {
+              "filename": "1-36 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "14CrzfyoDH3qizONIHL0lpxY5Wgxa9OtV",
+              "size_bytes": 353610,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 65,
+      "topic": "Wild Life",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 37,
+          "sow_notation": "CD1.37",
+          "drive_candidates": [
+            {
+              "filename": "1-37 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1t96NlMmNnpWQGOeZAIHHdf6v7zzKOdwC",
+              "size_bytes": 1233331,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 67,
+      "topic": "Wild Life",
+      "tracks": [
+        {
+          "cd": 3,
+          "track": 34,
+          "sow_notation": "CD3.34",
+          "drive_candidates": [
+            {
+              "filename": "3-34 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1G0SscIC6eeIqIVjOkYcJUDZRE0R8mPXO",
+              "size_bytes": 1790200,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 68,
+      "topic": "Wild Life",
+      "tracks": [
+        {
+          "cd": 3,
+          "track": 34,
+          "sow_notation": "CD3.34",
+          "drive_candidates": [
+            {
+              "filename": "3-34 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1G0SscIC6eeIqIVjOkYcJUDZRE0R8mPXO",
+              "size_bytes": 1790200,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 71,
+      "topic": "Learning World",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 38,
+          "sow_notation": "CD1.38",
+          "drive_candidates": [
+            {
+              "filename": "1-38 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "19sKFFfl2b33kEQhMHus5BjUzEV5EiMW0",
+              "size_bytes": 687375,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 72,
+      "topic": "Learning World",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 39,
+          "sow_notation": "CD 1.39",
+          "drive_candidates": [
+            {
+              "filename": "1-39 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1veuNpcHfs84O7xWwufHg763Y8SdJyVKn",
+              "size_bytes": 1073270,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 73,
+      "topic": "Learning World",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 40,
+          "sow_notation": "CD1.40",
+          "drive_candidates": [
+            {
+              "filename": "1-40 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1FLyx-2yXk-pLnerWF9WPBzdI_fAHz_1P",
+              "size_bytes": 1024666,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 74,
+      "topic": "Learning World",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 41,
+          "sow_notation": "CD1.41",
+          "drive_candidates": [
+            {
+              "filename": "1-41 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "10b3U6m6AUzGLxigHbX8qhSNpLDENE6Rm",
+              "size_bytes": 817836,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 77,
+      "topic": "Learning World",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 42,
+          "sow_notation": "CD1.42",
+          "drive_candidates": [
+            {
+              "filename": "1-42 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1-yGRC4XowytULTTwAOZD1xBR1t8Xmt5q",
+              "size_bytes": 879494,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 1,
+          "track": 43,
+          "sow_notation": "CD1.43",
+          "drive_candidates": [
+            {
+              "filename": "1-43 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1905tO4i9dpIhayr8tbhgyi0HL3x2YdRm",
+              "size_bytes": 1181372,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 83,
+      "topic": "Learning World",
+      "tracks": [
+        {
+          "cd": 1,
+          "track": 44,
+          "sow_notation": "CD1.44",
+          "drive_candidates": [
+            {
+              "filename": "1-44 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1s-mxqw6xjIT2jwFso67u5KCDN-n1cEuu",
+              "size_bytes": 533864,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 1,
+          "track": 45,
+          "sow_notation": "CD1.45",
+          "drive_candidates": [
+            {
+              "filename": "1-45 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1MGgRcffwilP64Ai9qa5c7KRoINKut3d1",
+              "size_bytes": 643373,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 89,
+      "topic": "Food and health",
+      "tracks": [
+        {
+          "cd": 2,
+          "track": 2,
+          "sow_notation": "CD2.02",
+          "drive_candidates": [
+            {
+              "filename": "2-02 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "13FhVo6FXZEKaHhGuYmftCiRxXy3CvaiK",
+              "size_bytes": 727115,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 2,
+          "track": 3,
+          "sow_notation": "CD2.03",
+          "drive_candidates": [
+            {
+              "filename": "2-03 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1s09eP6RfHQzPSXruET8eUFxBWVFMmlQY",
+              "size_bytes": 374625,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 90,
+      "topic": "Food and health",
+      "tracks": [
+        {
+          "cd": 2,
+          "track": 4,
+          "sow_notation": "CD2.04",
+          "drive_candidates": [
+            {
+              "filename": "2-04 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1KF1KUstzuIrYdk4knJSinRORzXKO1_w4",
+              "size_bytes": 887539,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 91,
+      "topic": "Food and health",
+      "tracks": [
+        {
+          "cd": 2,
+          "track": 5,
+          "sow_notation": "CD2.05",
+          "drive_candidates": [
+            {
+              "filename": "2-05 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1BBGvhRlvD3--PYBLE5Us-thjtbeltquZ",
+              "size_bytes": 1104424,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 95,
+      "topic": "Food and health",
+      "tracks": [
+        {
+          "cd": 3,
+          "track": 12,
+          "sow_notation": "CD3.12",
+          "drive_candidates": [
+            {
+              "filename": "3-12 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "16s5sKVgXGrzcBX4MJd9iZV_GrlwgM3-m",
+              "size_bytes": 523560,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 3,
+          "track": 13,
+          "sow_notation": "CD3.13",
+          "drive_candidates": [
+            {
+              "filename": "3-13 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1urN1Kqb-Ygngl-PZ-OPjJ-WpUrZHzndk",
+              "size_bytes": 802929,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 96,
+      "topic": "Food and health",
+      "tracks": [
+        {
+          "cd": 3,
+          "track": 13,
+          "sow_notation": "CD3.13",
+          "drive_candidates": [
+            {
+              "filename": "3-13 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1urN1Kqb-Ygngl-PZ-OPjJ-WpUrZHzndk",
+              "size_bytes": 802929,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 3,
+          "track": 14,
+          "sow_notation": "CD3.14",
+          "drive_candidates": [
+            {
+              "filename": "3-14 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "14qxzS64WO5qoFO5K_uzkGX0U04nHmpml",
+              "size_bytes": 949330,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 97,
+      "topic": "Food and health",
+      "tracks": [
+        {
+          "cd": 2,
+          "track": 6,
+          "sow_notation": "CD2.06",
+          "drive_candidates": [
+            {
+              "filename": "2-06 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1vkJeaH8SOBWxDLUspG05rjEHO5tTpdMu",
+              "size_bytes": 341534,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 101,
+      "topic": "Food and health",
+      "tracks": [
+        {
+          "cd": 2,
+          "track": 8,
+          "sow_notation": "CD2.08",
+          "drive_candidates": [
+            {
+              "filename": "2-08 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1yfbC8XOZ2t8n0HQoGZv83lbg0pz9Y-rj",
+              "size_bytes": 358764,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 2,
+          "track": 9,
+          "sow_notation": "CD2.09",
+          "drive_candidates": [
+            {
+              "filename": "2-09 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1IYX8A3-He16Zlsy5hluvHUZw5J3FeUO8",
+              "size_bytes": 341677,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 107,
+      "topic": "Sport",
+      "tracks": [
+        {
+          "cd": 2,
+          "track": 12,
+          "sow_notation": "CD2.12",
+          "drive_candidates": [
+            {
+              "filename": "2-12 English Plus Second Edition Students Book 1 (1).mp3",
+              "drive_file_id": "1nYL5y51YIIntcAWOvYK_TFhv2bmbPIcl",
+              "size_bytes": 742553,
+              "mime_type": "audio/mpeg"
+            },
+            {
+              "filename": "2-12 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "18yfuGjVNdkfNCidGZ3ICtl7VE4HuVHFt",
+              "size_bytes": 742553,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 108,
+      "topic": "Sport",
+      "tracks": [
+        {
+          "cd": 2,
+          "track": 13,
+          "sow_notation": "CD2.13",
+          "drive_candidates": [
+            {
+              "filename": "2-13 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1Dmx9BxMaU5p70hLPxXTZwZDgRNQTDA93",
+              "size_bytes": 944298,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 109,
+      "topic": "Sport",
+      "tracks": [
+        {
+          "cd": 2,
+          "track": 14,
+          "sow_notation": "CD2.14",
+          "drive_candidates": [
+            {
+              "filename": "2-14 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1OXDllxlGGKI_3Rr1M7Ruf0PO6Ef2a9uf",
+              "size_bytes": 1590360,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 113,
+      "topic": "Sport",
+      "tracks": [
+        {
+          "cd": 2,
+          "track": 15,
+          "sow_notation": "CD2.15",
+          "drive_candidates": [
+            {
+              "filename": "2-15 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1rusGO4GFVkhtE1Vm2V5prbKsuCLkgmPq",
+              "size_bytes": 583577,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 2,
+          "track": 16,
+          "sow_notation": "CD2.16",
+          "drive_candidates": [
+            {
+              "filename": "2-16 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1xvn6P9lvo33RtEtVQ0MULM_42_r4Xr_o",
+              "size_bytes": 1221695,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 115,
+      "topic": "Sport",
+      "tracks": [
+        {
+          "cd": 2,
+          "track": 17,
+          "sow_notation": "CD2.17",
+          "drive_candidates": [
+            {
+              "filename": "2-17 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1A2WLIrFQRPoO6nKnGpw2w9hhp7fTJlmt",
+              "size_bytes": 360715,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 118,
+      "topic": "Sport",
+      "tracks": [
+        {
+          "cd": 3,
+          "track": 15,
+          "sow_notation": "CD3.15",
+          "drive_candidates": [
+            {
+              "filename": "3-15 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "179U0T1m3CHkKbRb59xD1b91-lVs1BWDK",
+              "size_bytes": 817651,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 3,
+          "track": 16,
+          "sow_notation": "CD3.16",
+          "drive_candidates": [
+            {
+              "filename": "3-16 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1Yp14etxItptowG5yNlxkSeY756LybdVB",
+              "size_bytes": 434553,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 119,
+      "topic": "Sport",
+      "tracks": [
+        {
+          "cd": 2,
+          "track": 18,
+          "sow_notation": "CD2.18",
+          "drive_candidates": [
+            {
+              "filename": "2-18 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1rWVcV-AiEF24qiLEimsgRoSweXHniF2k",
+              "size_bytes": 457578,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 2,
+          "track": 19,
+          "sow_notation": "CD2.19",
+          "drive_candidates": [
+            {
+              "filename": "2-19 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1Nmc-PbM5FjhkMG_VV3aOYeqvLbCbbSu_",
+              "size_bytes": 450476,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 125,
+      "topic": "Growing up",
+      "tracks": [
+        {
+          "cd": 2,
+          "track": 21,
+          "sow_notation": "CD2.21",
+          "drive_candidates": [
+            {
+              "filename": "2-21 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1ZS1fAjRHwutg76EmsxNN_r0mBoZNKJkH",
+              "size_bytes": 901796,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 2,
+          "track": 22,
+          "sow_notation": "CD2.22",
+          "drive_candidates": [
+            {
+              "filename": "2-22 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1JPK3Egc3LBxyLK5WkIlex_zzlSXkIYJF",
+              "size_bytes": 505342,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 130,
+      "topic": "Growing up",
+      "tracks": [
+        {
+          "cd": 3,
+          "track": 17,
+          "sow_notation": "CD3.17",
+          "drive_candidates": [
+            {
+              "filename": "3-17 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "191mrSNzdTpkt7ARRKwmiARkXrbnt-9gx",
+              "size_bytes": 779120,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 3,
+          "track": 18,
+          "sow_notation": "CD3.18",
+          "drive_candidates": [
+            {
+              "filename": "3-18 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1Zg_qgfOtrBZtvl32A-ZPm6PiWwQiIAeR",
+              "size_bytes": 664864,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 131,
+      "topic": "Growing up",
+      "tracks": [
+        {
+          "cd": 2,
+          "track": 25,
+          "sow_notation": "CD2.25",
+          "drive_candidates": [
+            {
+              "filename": "2-25 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1v_PFvs1D4fmEPK2yRndkkWUFpkKzkHjG",
+              "size_bytes": 677961,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 2,
+          "track": 26,
+          "sow_notation": "CD2.26",
+          "drive_candidates": [
+            {
+              "filename": "2-26 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1c7ltkDGJcRnJzOrCnRGHTMJsMnrUIP4p",
+              "size_bytes": 1214917,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 137,
+      "topic": "Growing up",
+      "tracks": [
+        {
+          "cd": 2,
+          "track": 27,
+          "sow_notation": "CD2.27",
+          "drive_candidates": [
+            {
+              "filename": "2-27 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1R5zBgVc-zYjl4gz0WBkBU5EJ9cEnByrI",
+              "size_bytes": 913913,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 139,
+      "topic": "Growing up",
+      "tracks": [
+        {
+          "cd": 3,
+          "track": 36,
+          "sow_notation": "CD3.36",
+          "drive_candidates": [
+            {
+              "filename": "3-36 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1a2upbM7Irs5mMB8r5Um8crJUNTV-YdZg",
+              "size_bytes": 1530279,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 140,
+      "topic": "Growing up",
+      "tracks": [
+        {
+          "cd": 3,
+          "track": 36,
+          "sow_notation": "CD3.36",
+          "drive_candidates": [
+            {
+              "filename": "3-36 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1a2upbM7Irs5mMB8r5Um8crJUNTV-YdZg",
+              "size_bytes": 1530279,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 143,
+      "topic": "Going away",
+      "tracks": [
+        {
+          "cd": 2,
+          "track": 29,
+          "sow_notation": "CD2.29",
+          "drive_candidates": [
+            {
+              "filename": "2-29 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1VzufD2N-iSNtAq_pFS3K9A0pakyCXPLL",
+              "size_bytes": 842061,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 2,
+          "track": 30,
+          "sow_notation": "CD2.30",
+          "drive_candidates": [
+            {
+              "filename": "2-30 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1qpPCD7TuSxnHelpltCuUenfijLzuIVZ3",
+              "size_bytes": 1273665,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 144,
+      "topic": "Going away",
+      "tracks": [
+        {
+          "cd": 2,
+          "track": 30,
+          "sow_notation": "CD2.30",
+          "drive_candidates": [
+            {
+              "filename": "2-30 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1qpPCD7TuSxnHelpltCuUenfijLzuIVZ3",
+              "size_bytes": 1273665,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 145,
+      "topic": "Going away",
+      "tracks": [
+        {
+          "cd": 2,
+          "track": 31,
+          "sow_notation": "CD2.31",
+          "drive_candidates": [
+            {
+              "filename": "2-31 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1l9njfpa6Fva6zsqytNXoTei-gr2WLNOb",
+              "size_bytes": 961255,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 148,
+      "topic": "Going away",
+      "tracks": [
+        {
+          "cd": 2,
+          "track": 32,
+          "sow_notation": "CD2.32",
+          "drive_candidates": [
+            {
+              "filename": "2-32 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1Is0GwlbevVk3lC9hcHwBIFnUEpE7RxA6",
+              "size_bytes": 298538,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 149,
+      "topic": "Going away",
+      "tracks": [
+        {
+          "cd": 2,
+          "track": 33,
+          "sow_notation": "CD2.33",
+          "drive_candidates": [
+            {
+              "filename": "2-33 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1_fcd8_7ywaSEyZbO_qTT-ex1i9lEmJf8",
+              "size_bytes": 331327,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        },
+        {
+          "cd": 2,
+          "track": 34,
+          "sow_notation": "CD2.34",
+          "drive_candidates": [
+            {
+              "filename": "2-34 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "14YExEfTS2mC_Cr-k0fCGyYx2ZoGE7Br1",
+              "size_bytes": 1466934,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 150,
+      "topic": "Going away",
+      "tracks": [
+        {
+          "cd": 2,
+          "track": 34,
+          "sow_notation": "CD2.34",
+          "drive_candidates": [
+            {
+              "filename": "2-34 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "14YExEfTS2mC_Cr-k0fCGyYx2ZoGE7Br1",
+              "size_bytes": 1466934,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 154,
+      "topic": "Going away",
+      "tracks": [
+        {
+          "cd": 2,
+          "track": 37,
+          "sow_notation": "CD2.37",
+          "drive_candidates": [
+            {
+              "filename": "2-37 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1AhgPcX4mVQb9u41epfBeLdSoQ3vGi2ZY",
+              "size_bytes": 833579,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 155,
+      "topic": "Going away",
+      "tracks": [
+        {
+          "cd": 3,
+          "track": 19,
+          "sow_notation": "CD3.19",
+          "drive_candidates": [
+            {
+              "filename": "3-19 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1-HlEsYrAccxIvtYPzBfxo-dMYgxctfQz",
+              "size_bytes": 775574,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 156,
+      "topic": "Going away",
+      "tracks": [
+        {
+          "cd": 3,
+          "track": 20,
+          "sow_notation": "CD3.20",
+          "drive_candidates": [
+            {
+              "filename": "3-20 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1-9pdGupjexg1b3y0Wjv2p-m7BgisvGqa",
+              "size_bytes": 455468,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    },
+    {
+      "lesson": 157,
+      "topic": "Going away",
+      "tracks": [
+        {
+          "cd": 3,
+          "track": 32,
+          "sow_notation": "CD3.32",
+          "drive_candidates": [
+            {
+              "filename": "3-32 English Plus Second Edition Students Book 1.mp3",
+              "drive_file_id": "1jg37pGROzRuW-81ATU4yXKqNuSicTYcH",
+              "size_bytes": 1158647,
+              "mime_type": "audio/mpeg"
+            }
+          ],
+          "source_grade": "SOW_NUMBER_AND_DRIVE_FILENAME_METADATA_ONLY"
+        }
+      ]
+    }
+  ],
+  "source_validation_level": "FILENAME_FILE_ID_MIME_SIZE_MATCH_ONLY",
+  "independent_teacher_book_audio_content_verified": false,
+  "audio_speech_verified": false,
+  "textbook_edition_alignment_final_verified": false,
+  "app_runtime_drive_file_ids_verified": false,
+  "authenticated_teacher_telegram_send_verified": false,
+  "lesson_final_ready_approved": false,
+  "original_mp3_or_wma_file_modified": false
+}
