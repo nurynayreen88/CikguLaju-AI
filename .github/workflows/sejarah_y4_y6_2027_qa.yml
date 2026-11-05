@@ -7,6 +7,8 @@ on:
       - 'rph_standalone/sejarah/**'
       - 'scripts/check_sejarah_y4_y6_2027.py'
       - 'scripts/check_sejarah_release_gates_2027.py'
+      - 'scripts/check_sejarah_native_layout_2027.py'
+      - 'web/sejarah_2027_native_layout_adapter.py'
       - 'web/sejarah_2027_staging_source.py'
       - '.github/workflows/sejarah_y4_y6_2027_qa.yml'
   pull_request:
@@ -26,3 +28,4 @@ jobs:
           python-version: '3.11'
       - run: python scripts/check_sejarah_y4_y6_2027.py
       - run: python scripts/check_sejarah_release_gates_2027.py
+      - run: python scripts/check_sejarah_native_layout_2027.py
