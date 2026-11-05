@@ -45,7 +45,7 @@ def main():
                     assert "tidak mendakwa rujukan halaman buku teks" in source
                 else:
                     assert row["Tahap_Semakan_Buku"]=="VERIFIED_TOC_START_ONLY"
-                assert "DRAF" in source
+                assert "RPH_SOKONGAN_DSKP" in source and "aktiviti tepat belum disahkan" in source
             else:
                 core=int(row["PdP_Teras_Asal"])
                 if (y,core) in visual:
