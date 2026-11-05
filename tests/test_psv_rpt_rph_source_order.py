@@ -553,6 +553,28 @@ class PSVSourceOrderTests(unittest.TestCase):
         self.assertIn("<td>015</td>", html)
         self.assertIn("<td>34–35</td>", html)
 
+    def test_year3_boneka_tali_matches_original_textbook_product(self):
+        """The Year 3 book makes a string puppet, not a stick puppet."""
+        rows = read_csv(PSV / "RPT_PSV_Tahun_3_2027_DRAF.csv")
+        expected = {
+            34: ("74–75", "boneka tali", "jalinan"),
+            35: ("76–77", "gulungan tisu", "tali"),
+            36: ("78–79", "penyedut minuman", "tangan dan kaki"),
+            37: ("78–79", "boneka tali", "pergerakan"),
+        }
+        for n, (pages, media, task) in expected.items():
+            with self.subTest(pdp=n):
+                row = rows[n-1]
+                body = (ROOT / f"rph_standalone/psv/year3/lesson_{n:03d}.md").read_text(encoding="utf-8").lower()
+                self.assertTrue(all(x in body for x in (media, task)))
+                self.assertIn("ms " + pages, body)
+                self.assertIn(pages, row["BT muka surat"])
+                self.assertIn(row["Objektif"].lower(), body)
+                self.assertIn(row["Evidens PBD"].lower(), body)
+                self.assertIn("**status:** draf", body)
+        body = (ROOT / "rph_standalone/psv/year3/lesson_036.md").read_text(encoding="utf-8").lower()
+        self.assertNotIn("boneka tongkat", body)
+
     def test_year5_bunga_kemboja_tekat_is_genuine_couching(self):
         rows = read_csv(PSV / "RPT_PSV_Tahun_5_2027_DRAF.csv")
         keywords = {
