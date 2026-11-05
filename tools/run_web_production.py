@@ -86,3 +86,60 @@ def _production_health():
 # metadata in this production-only launcher. Do not mutate Telegram handlers.
 app.view_functions["deployment_status"] = _production_deployment_status
 app.view_functions["health"] = _production_health
+
+
+@app.get("/api/auth/telegram/bot-identity")
+def telegram_login_bot_identity():
+    """Check bot token <-> public widget username without disclosing credentials.
+
+    The legacy Telegram widget is bound to the username of the token's bot.
+    A BotFather domain set on any other bot will not authorize this Web.
+    """
+    from urllib.request import Request, urlopen
+    import json
+
+    configured = os.environ.get("CIKGULAJU_WEB_BOT_USERNAME", "").strip().lstrip("@")
+    token = os.environ.get("CIKGULAJU_WEB_BOT_TOKEN", "").strip()
+    expected_domain = "cikgulaju-web.onrender.com"
+    safe_configured = configured if configured and configured.replace("_", "").isalnum() else ""
+    result = {
+        "expected_domain": expected_domain,
+        "configured_widget_bot": safe_configured,
+        "telegram_bot_identity_checked": False,
+        "username_matches_token": False,
+        "telegram_token_bot_username": "",
+        "note": "Configure this exact bot in BotFather > Login Widget / allowed URLs.",
+    }
+    if not safe_configured or not token or ":" not in token:
+        return jsonify(result), 503
+
+    try:
+        request = Request(
+            "https://api.telegram.org/bot" + token + "/getMe",
+            headers={"Accept": "application/json"},
+            method="GET",
+        )
+        with urlopen(request, timeout=6) as response:
+            raw = response.read(4097)
+        if len(raw) > 4096:
+            return jsonify(result), 503
+        answer = json.loads(raw)
+        identity = answer.get("result") if answer.get("ok") is True else None
+        name = identity.get("username", "") if isinstance(identity, dict) else ""
+        if not isinstance(name, str) or not name or not name.replace("_", "").isalnum():
+            return jsonify(result), 503
+        result["telegram_token_bot_username"] = name
+        result["telegram_bot_identity_checked"] = True
+        result["username_matches_token"] = name.casefold() == safe_configured.casefold()
+        result["note"] = (
+            "Bot identity matches. Check this exact bot's BotFather allowed domain."
+            if result["username_matches_token"] else
+            "Widget username and token belong to different Telegram bots."
+        )
+    except Exception:
+        # No exception logging: urllib errors can contain the bot token in URL.
+        return jsonify(result), 503
+
+    response = jsonify(result)
+    response.headers["Cache-Control"] = "no-store"
+    return response, 200 if result["username_matches_token"] else 409
