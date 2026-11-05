@@ -32,8 +32,8 @@ def main():
     assert toc["units"][3]["printed_heading_original"]=="Jasa Tokoh Negara Dikenang"
     assert toc["units"][6]["printed_heading_original"]=="Sayangilah Alam, Hargai Kehidupan"
     assert cross["source_dskp_id"]=="1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA"
-    assert len(legacy["historical_y6_core_source_ledger_lessons"])==33
-    assert len(set(legacy["historical_y6_core_source_ledger_lessons"]))==33
+    assert len(legacy["historical_y6_core_source_ledger_lessons"])==36
+    assert len(set(legacy["historical_y6_core_source_ledger_lessons"]))==36
     assert len(source["reviewed_revised"])==14
     assert sum(x["module"]=="TERAS" for x in source["reviewed_revised"])==6
     assert sum(x["module"]=="PENGUKUHAN" for x in source["reviewed_revised"])==8
@@ -61,7 +61,10 @@ def main():
         assert marker in s,p
         assert old_edition_marker in s,p
         assert revised["source_url"] in s,p
-        assert "DRAF" in s and ("BELUM READY" in s or "BELUM_FINAL_READY" in s),p
+        if mod=="TERAS":
+            assert "DRAF SEMAK" in s and "BELUM READY" in s,p
+        else:
+            assert "STATUS DALAMAN" in s and "BELUM_FINAL_READY" in s,p
         assert "Objektif dan kriteria kejayaan" in s and "PBD" in s
         assert "Set induksi" in s and "Penutup" in s
         activities=[x for x in s.splitlines() if x.startswith(("**Aktiviti 1 (20 minit)","**Aktiviti 2 (20 minit)"))]
@@ -75,10 +78,10 @@ def main():
         assert row["sp_codes"]==[x["code"] for x in target],p
         assert all(x["code"] in s and x["text"] in s for x in target),p
     assert source["remaining"]=={
-      "y6_core_old_edition_historical_review":33,
-      "y6_core_not_in_prior_visual_ledger":[40,41,42],
+      "y6_core_old_edition_historical_review":36,
+      "y6_core_not_in_prior_visual_ledger":[],
       "y6_supplement_not_individually_revised":46,
-      "years2_to5_core_correct_edition_visual_ledger":171,
+      "years2_to5_core_correct_edition_visual_ledger":168,
     }
     print("PASS Year6: 14 KSSR Semakan 2017 source-text/DSKP-aligned RPH (6 core, 8 supplementary)")
     print("REQUIRED REMAINING: 36 other Year6 core current-book checks; 46 other Year6 supplementary source checks.")

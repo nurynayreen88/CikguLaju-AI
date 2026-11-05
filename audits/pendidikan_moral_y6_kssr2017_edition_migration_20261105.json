@@ -122,7 +122,10 @@
       36,
       37,
       38,
-      39
+      39,
+      40,
+      41,
+      42
     ]
   },
   "reviewed_revised": [
@@ -372,13 +375,9 @@
     }
   ],
   "remaining": {
-    "y6_core_old_edition_historical_review": 33,
-    "y6_core_not_in_prior_visual_ledger": [
-      40,
-      41,
-      42
-    ],
+    "y6_core_old_edition_historical_review": 36,
+    "y6_core_not_in_prior_visual_ledger": [],
     "y6_supplement_not_individually_revised": 46,
-    "years2_to5_core_correct_edition_visual_ledger": 171
+    "years2_to5_core_correct_edition_visual_ledger": 168
   }
 }
