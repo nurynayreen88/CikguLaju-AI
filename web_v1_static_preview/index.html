@@ -79,7 +79,7 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
  .app-main{padding:18px 16px}
 }
 @media print{
- #workspace > .app-shell{display:block!important}
+ #workspace > .app-shell:not(#rph-preview-panel){display:block!important}
  #workspace .app-main,#workspace #view-rph{display:block!important;border:0!important;box-shadow:none!important;padding:0!important;margin:0!important}
  #workspace .app-sidebar,#workspace #view-rpt,#workspace #view-account,#workspace #view-guide{display:none!important}
  #workspace #view-rph > *:not(#rph-preview-panel){display:none!important}
