@@ -33,7 +33,10 @@ class PreviewTests(unittest.TestCase):
         self.assertIn(b'id="rph-print" type="button" disabled', response.data)
         self.assertNotIn(b'id="generate-docx"', response.data)
         self.assertNotIn(b'id="generate-pdf"', response.data)
-        self.assertIn(b'Muat turun Web akan dibuka', response.data)
+        self.assertIn(b'Cara menggunakan CikguLaju Web', response.data)
+        self.assertIn(b'id="selection-help"', response.data)
+        self.assertIn(b'Papar RPH', response.data)
+        self.assertIn(b'Langkah 4', response.data)
 
     def test_health_declares_no_data_or_generation(self):
         response = self.client.get("/health")
