@@ -67,9 +67,14 @@ def rph_ready(year):
     return bool(source_rows(year, "A"))
 
 
+def _plain(value):
+    """Strip source Markdown markers from teacher-visible Word/PDF text."""
+    return str(value or "").replace("**", "").replace("`", "").strip()
+
+
 def _latin(s):
     """Safely map unsupported punctuation for reportlab's built-in Latin fonts."""
-    return (str(s or "").replace("—", "-").replace("–", "-")
+    return (_plain(s).replace("—", "-").replace("–", "-")
             .replace("’", "'").replace("“", '"').replace("”", '"')
             .replace("•", "-").encode("latin-1", errors="replace")
             .decode("latin-1"))
@@ -325,24 +330,24 @@ def build_rph_docx(year, destination):
     section.left_margin, section.right_margin = Cm(1.5), Cm(1.5)
     normal = doc.styles["Normal"]
     normal.font.name = "Arial"
-    normal.font.size = Pt(8.5)
-    normal.paragraph_format.space_after = Pt(2)
+    normal.font.size = Pt(10.5)
+    normal.paragraph_format.space_after = Pt(3)
     count = 0
     def line(label, value, bold=True):
         p = doc.add_paragraph()
-        p.paragraph_format.space_after = Pt(2)
+        p.paragraph_format.space_after = Pt(3)
         if bold:
             p.add_run(label + ": ").bold = True
         else:
             p.add_run(label)
-        p.add_run(value)
+        p.add_run(_plain(value))
     for row, raw, sec in _supplement(year):
         if count:
             doc.add_page_break()
         count += 1
         h = doc.add_paragraph()
         h.style = "Heading 1"
-        h.paragraph_format.space_after = Pt(4)
+        h.paragraph_format.space_after = Pt(7)
         h.add_run("RPH PENDIDIKAN MORAL TAHUN %d — SESI %s" % (year, row["Sesi"]))
         line("Tempoh", "60 minit • Pengukuhan")
         line("Unit/Nilai", _field(raw, "Unit") + " | " + (_field(raw, "Nilai") or _field(raw, "Tema/Nilai")))
