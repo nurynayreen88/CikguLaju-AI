@@ -7,11 +7,11 @@
 **Status:** DRAF_SEMAK
 
 ## Kad situasi
-Masyarakat berbeza budaya berbincang secara aman demi perpaduan.
+Murid melihat amalan toleransi ketika perayaan dan perarakan m/s 132–133, kisah memberi laluan kepada rombongan pengantin m/s 134–135, perbincangan GPI 2020 m/s 136–137 serta risalah dan latihan ringkas m/s 138–140 (buku teks DBP 2021).
 
-**Pilihan A (sesuai):** mendengar perbezaan pandangan dan mencari titik persetujuan.  
-**Pilihan B (perlu dibaiki):** memaksa semua orang ikut pendapat sendiri.  
-**Soalan utama:** Bagaimana menyelesaikan perbezaan tanpa menyakiti pihak lain?
+**Pilihan A (sesuai):** memberikan giliran bercakap, menghormati amalan budaya masyarakat lain dan bekerjasama menyiapkan risalah kelas.
+**Pilihan B (perlu dibaiki):** mengganggu amalan budaya orang lain atau memaksa rakan menerima satu pandangan sahaja.
+**Soalan utama:** Apakah dua perlakuan toleransi yang dapat diperhatikan semasa aktiviti sekolah?
 
 ## PdP 1 — Pengetahuan dan cara
 **Tugasan 1 (14.1):** Memberi contoh amalan toleransi demi perpaduan negara.  

@@ -12,6 +12,7 @@ on:
       - 'scripts/check_moral_core210_native_word_a4.py'
       - '.github/workflows/pendidikan-moral-core210-word-a4.yml'
       - 'web/pendidikan_moral_80_runtime.py'
+      - 'rph_standalone/pendidikan_moral/year*/lesson_*.md'
   workflow_dispatch:
 permissions:
   contents: read

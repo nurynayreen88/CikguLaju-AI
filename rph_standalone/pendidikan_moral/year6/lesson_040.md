@@ -15,13 +15,13 @@
 Murid menyatakan dua amalan toleransi dan menghuraikan dua kepentingannya berdasarkan situasi buku teks. Kriteria kejayaan: Dua amalan nyata serta dua kepentingan dengan bukti kisah dan alasan; guru menyemak respons individu.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru memperlihatkan tajuk **Amalan Toleransi Menjamin Perpaduan Negara** dalam buku teks KSSR Semakan 2017, m/s 132, dan mengemukakan situasi berkaitan nilai unit. Murid mengenal pasti watak, tindakan serta satu keputusan yang munasabah mengikut SP PdP.
+**Set induksi (5 minit):** Guru menggunakan contoh sambutan Tahun Baharu Cina, perarakan Thaipusam, azan dan Hari Gawai yang ditunjukkan pada buku teks m/s 132–133; murid memilih tindakan toleransi beserta sebab.
 
-**Aktiviti 1 (20 minit) — Toleransi Diamalkan Perpaduan Dikukuhkan:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 14, m/s 132–135, bahagian **Toleransi Diamalkan Perpaduan Dikukuhkan** sebagai rangsangan. Murid memberikan tiga contoh amalan toleransi ketika warga berlainan budaya atau pendapat berkongsi kemudahan awam (SP 14.1). Guru menyemak ketepatan evidens individu mengikut kata tugas SP dan memandu pembetulan yang perlu.
+**Aktiviti 1 (20 minit) — Toleransi Diamalkan Perpaduan Dikukuhkan:** Guru membimbing murid meneliti contoh kebudayaan dan perayaan berlainan pada m/s 132–133. Murid memberikan dua contoh toleransi yang boleh diamalkan dalam komuniti berbilang kaum dan menyatakan sebab tindakan itu wajar (SP 14.1).
 
-**Aktiviti 2 (20 minit) — Kisah Hari Ini:** Guru merujuk bahagian **Kisah Hari Ini** dalam unit sama dan menyediakan bahan perbincangan atau latihan berstruktur. Murid menghuraikan dua kepentingan bertolak ansur untuk menjaga hubungan baik dan perpaduan negara (SP 14.2). Guru memberikan maklum balas yang boleh dilihat pada hasil atau tindakan murid dan menilai bukti secara individu.
+**Aktiviti 2 (20 minit) — Kisah Hari Ini:** Guru membacakan kisah keluarga yang memberikan laluan kepada rombongan pengantin walaupun hampir lewat ke majlis hadiah (m/s 134–135). Murid menghuraikan dua kepentingan bertolak ansur kepada perpaduan dan keharmonian masyarakat (SP 14.2).
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Dua amalan nyata serta dua kepentingan dengan bukti kisah dan alasan; guru menyemak respons individu. Guru merekod evidens individu dan memberi maklum balas berdasarkan sebab dan tingkah laku yang boleh diperhatikan.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menyemak dua contoh toleransi daripada m/s 132–133 dan dua huraian kepentingan berdasarkan kisah m/s 134–135; setiap murid memberikan sebab yang dapat dinilai bagi SP 14.1–14.2.
 
 **Penutup (5 minit):** Murid menyatakan satu tindakan bertoleransi yang boleh dilakukan secara selamat dan sebab tindakan itu menjaga perpaduan. Guru merumuskan sikap menghormati kepelbagaian masyarakat.
 

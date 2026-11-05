@@ -15,13 +15,13 @@
 Murid merumuskan dua kesan mengabaikan toleransi dan mengekspresikan satu perasaan beralasan. Kriteria kejayaan: Dua kesan berpunca daripada tindakan, satu ayat perasaan dengan alasan dan satu pilihan penyelesaian konflik.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru memperlihatkan tajuk **Amalan Toleransi Menjamin Perpaduan Negara** dalam buku teks KSSR Semakan 2017, m/s 136, dan mengemukakan situasi berkaitan nilai unit. Murid mengenal pasti watak, tindakan serta satu keputusan yang munasabah mengikut SP PdP.
+**Set induksi (5 minit):** Guru menunjukkan petikan Global Peace Index yang dicetak pada m/s 136 sebagai fakta sejarah **tahun 2020**, bukan kedudukan semasa; murid membincangkan cara toleransi menyokong keamanan.
 
-**Aktiviti 1 (20 minit) — Budayakan Amalan Toleransi:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 14, m/s 136–138, bahagian **Budayakan Amalan Toleransi** sebagai rangsangan. Murid merumuskan dua kesan jika masyarakat saling mengejek atau enggan bertolak ansur dalam perbincangan dan penggunaan ruang awam (SP 14.3). Guru menyemak ketepatan evidens individu mengikut kata tugas SP dan memandu pembetulan yang perlu.
+**Aktiviti 1 (20 minit) — Budayakan Amalan Toleransi:** Guru merujuk soalan perbincangan m/s 136–137. Murid merumuskan dua kesan pengabaian toleransi seperti salah faham dan perpecahan, lalu mencadangkan langkah pembaikan berdasarkan situasi berkumpulan (SP 14.3). Statistik tahun 2020 tidak digunakan sebagai maklumat terkini.
 
-**Aktiviti 2 (20 minit) — Bersikap Toleransi demi Perpaduan Negara:** Guru merujuk bahagian **Bersikap Toleransi demi Perpaduan Negara** dalam unit sama dan menyediakan bahan perbincangan atau latihan berstruktur. Murid mengekspresikan satu perasaan berkaitan kejayaan menyelesaikan perbezaan secara toleran dan menyertakan sebab (SP 14.4). Guru memberikan maklum balas yang boleh dilihat pada hasil atau tindakan murid dan menilai bukti secara individu.
+**Aktiviti 2 (20 minit) — Bersikap Toleransi demi Perpaduan Negara:** Guru menggunakan tugasan menghasilkan risalah m/s 138. Murid menghasilkan draf risalah toleransi kelas dan menulis satu perasaan bersebab apabila dapat menyumbang kepada perpaduan (SP 14.4). Tiada perkongsian media sosial diperlukan.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Dua kesan berpunca daripada tindakan, satu ayat perasaan dengan alasan dan satu pilihan penyelesaian konflik. Guru merekod evidens individu dan memberi maklum balas berdasarkan sebab dan tingkah laku yang boleh diperhatikan.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru merekod dua kesan pengabaian toleransi daripada m/s 136–137 dan satu ayat perasaan bersebab berdasarkan risalah m/s 138 (SP 14.3–14.4); data GPI 2020 dilabel sebagai konteks sejarah.
 
 **Penutup (5 minit):** Murid menyatakan satu tindakan bertoleransi yang boleh dilakukan secara selamat dan sebab tindakan itu menjaga perpaduan. Guru merumuskan sikap menghormati kepelbagaian masyarakat.
 

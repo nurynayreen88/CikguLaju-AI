@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-05",
+  "unit": 14,
+  "year": 6,
+  "edition": "KSSR Semakan 2017 DBP 2021",
+  "source_url": "https://fliphtml5.com/sbinx/haph/",
+  "level": "TEXTUAL_ACTIVITIES_ONLY_NOT_FULL_VISUAL",
+  "records": [
+    {
+      "lesson": 40,
+      "sp": [
+        "14.1",
+        "14.2"
+      ],
+      "pages": [
+        132,
+        135
+      ],
+      "anchors": [
+        "festival and procession tolerance",
+        "wedding procession delaying award ceremony"
+      ]
+    },
+    {
+      "lesson": 41,
+      "sp": [
+        "14.3",
+        "14.4"
+      ],
+      "pages": [
+        136,
+        138
+      ],
+      "anchors": [
+        "GPI 2020 historical only",
+        "classroom brochure"
+      ]
+    },
+    {
+      "lesson": 42,
+      "sp": [
+        "14.5"
+      ],
+      "pages": [
+        138,
+        140
+      ],
+      "anchors": [
+        "brochure collaborative activity",
+        "short spoken reflection"
+      ]
+    }
+  ],
+  "limitations": [
+    "No old-book evidence counted",
+    "No real Telegram teacher E2E",
+    "All sources remain DRAF",
+    "No forced personal disclosures or public social posts"
+  ]
+}
