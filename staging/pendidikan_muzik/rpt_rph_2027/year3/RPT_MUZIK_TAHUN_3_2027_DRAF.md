@@ -32,7 +32,7 @@
 | 25 | 11/07–15/07 | 12/07–16/07 | Projek Seni Muzik 2 | 5.1.2, 5.1.3 | — |
 | 26 | 18/07–22/07 | 19/07–23/07 | Projek Seni Muzik 2 | 5.1.2, 5.1.3 | — |
 | 27 | 25/07–29/07 | 26/07–30/07 | BONEKA MENARI MENCUIT HATI | 2.1.2, 2.1.3 | 80 |
-| 28 | 01/08–05/08 | 02/08–06/08 | BONEKA MENARI MENCUIT HATI | 2.1.2, 2.1.3 | 80-81 |
+| 28 | 01/08–05/08 | 02/08–06/08 | BONEKA MENARI MENCUIT HATI | 2.1.2, 2.1.3 | 81 |
 | 29 | 08/08–12/08 | 09/08–13/08 | TAMAK SELALU RUGI | 3.1.1, 3.1.2 | 82-83 |
 | 30 | 15/08–19/08 | 16/08–20/08 | PENGHAYATAN KARYA MUZIK | 4.1.1 | 84-85 |
 | 31 | 22/08–26/08 | 23/08–27/08 | ANYAMAN BERZAMAN | 2.1.2, 2.3.2 | 92-93 |
@@ -47,3 +47,6 @@
 
 
 **Nota audit PdP 06:** Sumber RPT asal menyebut halaman 20, tetapi aktiviti persembahan kumpulan dua tempo berada pada halaman 21 Buku Teks Pendidikan Kesenian Tahun 3 DBP 2018. Kod RPT asal dikekalkan dan belum disahkan terhadap DSKP Muzik berdiri sendiri. Nombor audio bukan bukti fail.
+
+
+**Nota audit PdP 27–29 (6 November 2026):** Aktiviti ajuk dan gerak PdP 27 ialah halaman 80, audio **65** bercetak; nyanyian *Boneka* PdP 28 ialah halaman **81**, audio **66–68**; cerita kesan bunyi PdP 29 halaman 82–83 ialah audio **69–70**. Nombor asal RPT bagi PdP 27–28 dipelihara dalam manifest; fail audio sebenar belum disahkan.
