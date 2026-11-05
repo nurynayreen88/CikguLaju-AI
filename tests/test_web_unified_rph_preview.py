@@ -7,7 +7,7 @@ from zipfile import ZipFile
 
 from flask import Flask, jsonify
 
-from web.unified_rph_web import (
+from web.unified_rph_web import (, _docx
     SUBJECT_LABELS, english_index, source_records, unit_options,
     pdp_options, verified_preview, create_blueprint,
 )
@@ -18,6 +18,10 @@ class UnifiedWebRPHTests(unittest.TestCase):
         cls.app = Flask(__name__)
         cls.app.register_blueprint(create_blueprint())
         cls.client = cls.app.test_client()
+        cls.native_fake = patch("web.native_telegram_rph_client.request_native_rph",
+            side_effect=lambda selected, fmt: _docx(selected))
+        cls.native_fake.start()
+        cls.addClassCleanup(cls.native_fake.stop)
 
     def test_all_subject_codes_have_one_shared_entry_point(self):
         self.assertEqual(set(SUBJECT_LABELS), {
