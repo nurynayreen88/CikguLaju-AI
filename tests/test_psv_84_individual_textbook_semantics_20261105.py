@@ -140,6 +140,8 @@ class PSV84SourceContentTests(unittest.TestCase):
         targets = [r for r in rows if int(r["Tahun"]) in (3, 6)]
         self.assertEqual(len(targets), 84)
         self.assertTrue(all(r["Kelulusan_terbit"] == "BELUM_READY" for r in targets))
+        self.assertTrue(all("BUKU_TEKS_UNIT_KANDUNGAN_DISEMAK" in r["Pemeriksaan_RPH_individu"] for r in targets))
+        self.assertTrue(all("https://drive.google.com/file/d/" in r["Bukti_buku"] for r in targets))
 
 
 if __name__ == "__main__":
