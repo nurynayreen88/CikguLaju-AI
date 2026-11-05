@@ -1,0 +1,19 @@
+name: Public Web production smoke (no secrets)
+on:
+  push:
+    branches:
+      - production/cikgulaju-web-20261105
+    paths:
+      - 'tools/probe_web_production.py'
+      - '.github/workflows/web-production-public-smoke.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-deployed-web:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check Web readiness, linked catalog, login and anonymous access
+        run: python tools/probe_web_production.py
