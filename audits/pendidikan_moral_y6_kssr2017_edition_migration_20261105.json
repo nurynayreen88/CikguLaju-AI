@@ -380,5 +380,643 @@
     "y6_core_not_in_prior_visual_ledger": [],
     "y6_supplement_not_individually_revised": 46,
     "years2_to5_core_correct_edition_visual_ledger": 168
-  }
+  },
+  "revised_topic_mapped_core": [
+    {
+      "year": 6,
+      "lesson": 1,
+      "unit": 1,
+      "printed_pages": [
+        2,
+        4
+      ],
+      "flipbook_pages": [
+        12,
+        14
+      ],
+      "sp_codes": [
+        "1.1",
+        "1.2"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 2,
+      "unit": 1,
+      "printed_pages": [
+        4,
+        8
+      ],
+      "flipbook_pages": [
+        14,
+        18
+      ],
+      "sp_codes": [
+        "1.3",
+        "1.4"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 3,
+      "unit": 1,
+      "printed_pages": [
+        8,
+        10
+      ],
+      "flipbook_pages": [
+        18,
+        20
+      ],
+      "sp_codes": [
+        "1.5"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 4,
+      "unit": 2,
+      "printed_pages": [
+        12,
+        15
+      ],
+      "flipbook_pages": [
+        22,
+        25
+      ],
+      "sp_codes": [
+        "2.1",
+        "2.2"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 5,
+      "unit": 2,
+      "printed_pages": [
+        16,
+        18
+      ],
+      "flipbook_pages": [
+        26,
+        28
+      ],
+      "sp_codes": [
+        "2.3",
+        "2.4"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 6,
+      "unit": 2,
+      "printed_pages": [
+        18,
+        20
+      ],
+      "flipbook_pages": [
+        28,
+        30
+      ],
+      "sp_codes": [
+        "2.5"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 7,
+      "unit": 3,
+      "printed_pages": [
+        22,
+        25
+      ],
+      "flipbook_pages": [
+        32,
+        35
+      ],
+      "sp_codes": [
+        "3.1",
+        "3.2"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 8,
+      "unit": 3,
+      "printed_pages": [
+        26,
+        28
+      ],
+      "flipbook_pages": [
+        36,
+        38
+      ],
+      "sp_codes": [
+        "3.3",
+        "3.4"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 9,
+      "unit": 3,
+      "printed_pages": [
+        28,
+        30
+      ],
+      "flipbook_pages": [
+        38,
+        40
+      ],
+      "sp_codes": [
+        "3.5"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 13,
+      "unit": 5,
+      "printed_pages": [
+        42,
+        45
+      ],
+      "flipbook_pages": [
+        52,
+        55
+      ],
+      "sp_codes": [
+        "5.1",
+        "5.2"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 14,
+      "unit": 5,
+      "printed_pages": [
+        46,
+        48
+      ],
+      "flipbook_pages": [
+        56,
+        58
+      ],
+      "sp_codes": [
+        "5.3",
+        "5.4"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 15,
+      "unit": 5,
+      "printed_pages": [
+        49,
+        50
+      ],
+      "flipbook_pages": [
+        59,
+        60
+      ],
+      "sp_codes": [
+        "5.5"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 16,
+      "unit": 6,
+      "printed_pages": [
+        52,
+        55
+      ],
+      "flipbook_pages": [
+        62,
+        65
+      ],
+      "sp_codes": [
+        "6.1",
+        "6.2"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 17,
+      "unit": 6,
+      "printed_pages": [
+        56,
+        58
+      ],
+      "flipbook_pages": [
+        66,
+        68
+      ],
+      "sp_codes": [
+        "6.3",
+        "6.4"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 18,
+      "unit": 6,
+      "printed_pages": [
+        58,
+        60
+      ],
+      "flipbook_pages": [
+        68,
+        70
+      ],
+      "sp_codes": [
+        "6.5"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 22,
+      "unit": 8,
+      "printed_pages": [
+        72,
+        76
+      ],
+      "flipbook_pages": [
+        82,
+        86
+      ],
+      "sp_codes": [
+        "8.1",
+        "8.2"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 23,
+      "unit": 8,
+      "printed_pages": [
+        74,
+        78
+      ],
+      "flipbook_pages": [
+        84,
+        88
+      ],
+      "sp_codes": [
+        "8.3",
+        "8.4"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 24,
+      "unit": 8,
+      "printed_pages": [
+        78,
+        80
+      ],
+      "flipbook_pages": [
+        88,
+        90
+      ],
+      "sp_codes": [
+        "8.5"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 25,
+      "unit": 9,
+      "printed_pages": [
+        82,
+        85
+      ],
+      "flipbook_pages": [
+        92,
+        95
+      ],
+      "sp_codes": [
+        "9.1",
+        "9.2"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 26,
+      "unit": 9,
+      "printed_pages": [
+        86,
+        88
+      ],
+      "flipbook_pages": [
+        96,
+        98
+      ],
+      "sp_codes": [
+        "9.3",
+        "9.4"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 27,
+      "unit": 9,
+      "printed_pages": [
+        88,
+        90
+      ],
+      "flipbook_pages": [
+        98,
+        100
+      ],
+      "sp_codes": [
+        "9.5"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 28,
+      "unit": 10,
+      "printed_pages": [
+        92,
+        95
+      ],
+      "flipbook_pages": [
+        102,
+        105
+      ],
+      "sp_codes": [
+        "10.1",
+        "10.2"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 29,
+      "unit": 10,
+      "printed_pages": [
+        96,
+        98
+      ],
+      "flipbook_pages": [
+        106,
+        108
+      ],
+      "sp_codes": [
+        "10.3",
+        "10.4"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 30,
+      "unit": 10,
+      "printed_pages": [
+        98,
+        100
+      ],
+      "flipbook_pages": [
+        108,
+        110
+      ],
+      "sp_codes": [
+        "10.5"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 31,
+      "unit": 11,
+      "printed_pages": [
+        102,
+        105
+      ],
+      "flipbook_pages": [
+        112,
+        115
+      ],
+      "sp_codes": [
+        "11.1",
+        "11.2"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 32,
+      "unit": 11,
+      "printed_pages": [
+        106,
+        108
+      ],
+      "flipbook_pages": [
+        116,
+        118
+      ],
+      "sp_codes": [
+        "11.3",
+        "11.4"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 33,
+      "unit": 11,
+      "printed_pages": [
+        108,
+        110
+      ],
+      "flipbook_pages": [
+        118,
+        120
+      ],
+      "sp_codes": [
+        "11.5"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 34,
+      "unit": 12,
+      "printed_pages": [
+        112,
+        115
+      ],
+      "flipbook_pages": [
+        122,
+        125
+      ],
+      "sp_codes": [
+        "12.1",
+        "12.2"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 35,
+      "unit": 12,
+      "printed_pages": [
+        116,
+        118
+      ],
+      "flipbook_pages": [
+        126,
+        128
+      ],
+      "sp_codes": [
+        "12.3",
+        "12.4"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 36,
+      "unit": 12,
+      "printed_pages": [
+        118,
+        120
+      ],
+      "flipbook_pages": [
+        128,
+        130
+      ],
+      "sp_codes": [
+        "12.5"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 37,
+      "unit": 13,
+      "printed_pages": [
+        122,
+        124
+      ],
+      "flipbook_pages": [
+        132,
+        134
+      ],
+      "sp_codes": [
+        "13.1",
+        "13.2"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 38,
+      "unit": 13,
+      "printed_pages": [
+        125,
+        128
+      ],
+      "flipbook_pages": [
+        135,
+        138
+      ],
+      "sp_codes": [
+        "13.3",
+        "13.4"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 39,
+      "unit": 13,
+      "printed_pages": [
+        128,
+        130
+      ],
+      "flipbook_pages": [
+        138,
+        140
+      ],
+      "sp_codes": [
+        "13.5"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 40,
+      "unit": 14,
+      "printed_pages": [
+        132,
+        135
+      ],
+      "flipbook_pages": [
+        142,
+        145
+      ],
+      "sp_codes": [
+        "14.1",
+        "14.2"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 41,
+      "unit": 14,
+      "printed_pages": [
+        136,
+        138
+      ],
+      "flipbook_pages": [
+        146,
+        148
+      ],
+      "sp_codes": [
+        "14.3",
+        "14.4"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    },
+    {
+      "year": 6,
+      "lesson": 42,
+      "unit": 14,
+      "printed_pages": [
+        138,
+        140
+      ],
+      "flipbook_pages": [
+        148,
+        150
+      ],
+      "sp_codes": [
+        "14.5"
+      ],
+      "scope": "REVISED_2021_BOOK_CHAPTER_TITLES_MAPPED_TO_DSKP_SP; TEACHER_TASKS_ARE_EDUCATOR_ADAPTATIONS; NO_FULL_ACTIVITY_PAGE_VISUAL_PROOF"
+    }
+  ]
 }

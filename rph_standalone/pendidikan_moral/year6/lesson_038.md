@@ -17,9 +17,9 @@ Murid menghuraikan atau menilai berdasarkan **13.3: Merumuskan kesan pengabaian 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Komuniti merancang penggunaan sumber negara secara berhemat**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Kesan sikap keterlaluan:** Guru menunjukkan gambar kerosakan akibat vandalisme m/s 122–123. Murid menyusun peta sebab dan dua kesan apabila peralatan awam rosak, seperti kos membaiki dan pengguna kehilangan kemudahan, lalu merumuskan kesan pengabaian nilai kesederhanaan (SP 13.3).
+**Aktiviti 1 (20 minit) — Kesihatan Dijaga Negara Sejahtera:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 13, m/s 125–128, bahagian **Kesihatan Dijaga Negara Sejahtera** sebagai rangsangan. Murid merumuskan dua kesan jika orang ramai membazir sumber, berbelanja melampau atau mengabaikan amalan kesihatan sederhana (SP 13.3). Guru menyemak ketepatan evidens individu mengikut kata tugas SP dan memandu pembetulan yang perlu.
 
-**Aktiviti 2 (20 minit) — Perasaan sebagai pengguna:** Guru merujuk ruang kemudahan yang terjaga dalam 'Prasarana Dijaga, Rakyat Ceria' m/s 124. Murid memilih satu situasi kemudahan awam bersih dan satu yang rosak, menulis ayat perasaan bersebab serta cadangan tindakan berhemah (SP 13.4).
+**Aktiviti 2 (20 minit) — Kesederhanaan Diamalkan Kesejahteraan Negara Dikecapi:** Guru merujuk bahagian **Kesederhanaan Diamalkan Kesejahteraan Negara Dikecapi** dalam unit sama dan menyediakan bahan perbincangan atau latihan berstruktur. Murid menyatakan satu perasaan apabila berjaya mengamalkan kesederhanaan dan menyokongnya dengan alasan yang relevan (SP 13.4). Guru memberikan maklum balas yang boleh dilihat pada hasil atau tindakan murid dan menilai bukti secara individu.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Semak justifikasi serta dua kesan bagi SP 13.3 dan ayat perasaan yang sesuai bagi SP 13.4. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 
@@ -29,4 +29,8 @@ Murid menghuraikan atau menilai berdasarkan **13.3: Merumuskan kesan pengabaian 
 
 **Bukti buku teks disemak (2026-11-05):** Unit 13, m/s 122–125 (PDF 131–134). Bahan asal: Katakan Tidak kepada Vandalisme, Sikap Keterlaluan Membawa Padah dan Prasarana Dijaga Rakyat Ceria. Aktiviti RPH ialah olahan PdP bagi SP rasmi, bukan salinan buku teks atau pengesahan amalan sebenar murid.
 
-**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — Unit 13, m/s 122–125 (PDF 131–134) disemak mengikut aktiviti buku teks; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 13, m/s 125–128 (flipbook 135–138); tajuk Kesihatan Dijaga Negara Sejahtera / Kesederhanaan Diamalkan Kesejahteraan Negara Dikecapi; SP 13.3 dan 13.4. Ini padanan isi kandungan bab dan olahan PdP, **bukan semakan visual penuh tugasan buku atau pengesahan kelas sebenar**.
+
+**Batasan bukti sejarah:** Sebarang rujukan halaman PDF tahun lama dalam nota audit terdahulu ialah edisi KSSR pra-Semakan dan tidak disahkan sebagai bahan Tahun 6 edisi 2021.
+
+**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 — DBP 2021](https://fliphtml5.com/sbinx/haph/) — Unit 13, m/s 125–128 (halaman flipbook 135–138), rujukan tajuk dan konteks; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) untuk urutan, bukan tarikh rasmi 2027. Aktiviti olahan CikguLaju; semakan visual lengkap halaman buku belum selesai.

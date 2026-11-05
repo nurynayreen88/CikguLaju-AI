@@ -17,9 +17,9 @@ Murid menghuraikan kepentingan tanggungjawab negara dan mengekspresikan perasaan
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan gambar/tajuk unit **Kempen Kemanusiaan Tanggungjawab Bersama** dari Buku Teks m/s 22. Murid mengenal pasti pihak yang terlibat, nilai yang diuji dan satu kemungkinan tindakan.
 
-**Aktiviti 1 (20 minit) — Bukti daripada buku teks:** Guru memperlihatkan jadual peranan agensi dalam bantuan m/s 22 dan contoh kertas cadangan kempen m/s 23. Murid meneliti akibat jika tugas tidak diselaraskan.
+**Aktiviti 1 (20 minit) — Fikir Sebelum Kongsi:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 3, m/s 26–28, bahagian **Fikir Sebelum Kongsi** sebagai rangsangan. Murid menjana dua kesan jika rakyat berkongsi maklumat tidak sahih atau mengabaikan tanggungjawab menjaga nama negara (SP 3.3). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
 
-**Aktiviti 2 (20 minit) — Aplikasi dan penaakulan:** Murid menggunakan kisah warga hutan yang menggerakkan bantuan bersama m/s 24 untuk membina peta tindakan–kepentingan–perasaan.
+**Aktiviti 2 (20 minit) — Jaga Nama Negara Tanggungjawab Bersama:** Guru merujuk bahagian **Jaga Nama Negara Tanggungjawab Bersama** dalam unit yang sama dan menyediakan kad aktiviti berkaitan. Murid menulis satu perasaan yang beralasan selepas memilih tindakan bertanggungjawab dan menjelaskan pengaruh kepada masyarakat (SP 3.4). Guru memberikan maklum balas terhadap sebab, tindakan atau refleksi, kemudian meminta pembetulan yang boleh diperhatikan.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Dua kepentingan bersebab serta satu perasaan dengan alasan berkaitan bantuan kemanusiaan. Guru merekod pencapaian berdasarkan respons individu dan memberi maklum balas terhadap penjelasan atau tingkah laku yang dapat diperhatikan.
 
@@ -29,4 +29,8 @@ Murid menghuraikan kepentingan tanggungjawab negara dan mengekspresikan perasaan
 
 **Semakan visual buku teks:** Tahun 6, Unit 3 — **Kempen Kemanusiaan Tanggungjawab Bersama**; halaman bercetak 22–24 (PDF 31–33). Ilustrasi dan aktiviti pada halaman ini diperiksa secara visual bagi PdP 008 sahaja. Langkah PdP ialah penyesuaian guru CikguLaju, bukan petikan penuh buku teks.
 
-**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view); [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026). Buku teks asal Drive ID `12YjwUWy6DdVsqP5_azEp987jfvZ6PROo`; RPT 2026 ialah rujukan urutan, bukan pengesahan tarikh 2027.
+**Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 3, m/s 26–28 (flipbook 36–38), bahagian Fikir Sebelum Kongsi / Jaga Nama Negara Tanggungjawab Bersama; SP 3.3 dan 3.4. Ini pemetaan bab dan olahan tugasan mengikut DSKP, **bukan semakan visual menyeluruh aktiviti buku atau bukti amalan murid**.
+
+**Batasan bukti sejarah:** Rujukan halaman PDF buku lama dalam nota audit terdahulu berkaitan edisi KSSR pra-Semakan; tidak digunakan sebagai pengesahan edisi 2021.
+
+**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 — DBP 2021](https://fliphtml5.com/sbinx/haph/) — Unit 3, m/s 26–28 (halaman flipbook 36–38), rujukan tajuk dan konteks; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai urutan, bukan tarikh rasmi 2027. Aktiviti kelas ialah olahan CikguLaju; perlu semakan visual halaman lengkap sebelum FINAL READY.

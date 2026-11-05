@@ -131,8 +131,9 @@ def main() -> None:
                     book_activity = "SEMAKAN2017_TEKSTUAL_TERAS_BUKAN_PDF_LEGASI"
                     counts["core_y6_revised_source_text"] += 1
                 elif key in visual:
-                    book_activity = "REKOD_EDISI_LAMA_TAHUN6_BUKAN_PENGESAHAN_SEMAKAN2017"
-                    counts["core_y6_old_edition_recheck"] += 1
+                    assert "Padanan bab edisi Semakan 2017" in source
+                    book_activity = "SEMAKAN2017_PADANAN_TAJUK_BAB_SP_TANPA_SEMAK_VISUAL_TUGAS"
+                    counts["core_y6_revised_topic_only"] += 1
                 else:
                     raise AssertionError((year, lesson, "unsighted Year6 core RPH in historical ledger"))
                     book_activity = "TAHUN6_EDISI_SEMAKAN2017_BELUM_DISAHKAN"
@@ -181,7 +182,7 @@ def main() -> None:
         "core": 210, "core_book_visual_historical": 204,
         "core_correct_edition_y2_y5": 168,
         "core_y6_revised_source_text": 6,
-        "core_y6_old_edition_recheck": 36,
+        "core_y6_revised_topic_only": 36,
         "supplement": 270,
         "supp_y2_y5_not_individually_book_verified": 216,
         "supp_y6_revised_source_text": 8,
@@ -196,8 +197,9 @@ def main() -> None:
     assert dest.stat().st_size > 40000, dest.stat().st_size
     print(f"PASS INDIVIDUAL EVIDENCE LEDGER: 480/480 records, {dict(counts)}")
     print(f"Saved: {dest}")
-    print("NOT FINAL READY: 204 old visual checks included 36 Year6 OBSOLETE-EDITION book references.")
-    print("Correct-edition core: 168 Y2-Y5 visual + 6 Y6 revised source-text = 174/210; 36 Year6 core still need revised-source audit.")
+    print("NOT FINAL READY: 204 historical visual checks included 36 Year6 references to OBSOLETE textbook edition.")
+    print("Correct-edition core: 168 Y2-Y5 visual + 6 Y6 revised source-text tasks = 174 with activity-linked evidence.")
+    print("The remaining 36 Year6 core now have revised-edition chapter/SP mappings ONLY (not detailed textbook activity review).")
     print("270 supplementary: 8 Year6 revised-book references mapped, 262 still lack individual current-book verification.")
     print("14 Year6 unit 4/7 sessions remain RPT historical HOLD pending complete edition migration and true teacher delivery.")
     print("Word A4 all-session visual and actual Telegram account delivery are separate release gates.")
