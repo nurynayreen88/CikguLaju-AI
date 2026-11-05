@@ -120,6 +120,16 @@ def _pjpk_records(year, component):
                         "path": path, "status": "PRATONTON BELUM MUKTAMAD"})
     return entries
 
+@lru_cache(maxsize=1)
+def _psv_release_approved():
+    """Do not release PSV merely because 210 draft source files exist."""
+    try:
+        from web.psv_2027_rph_release_bridge import _approved
+        return _approved(ROOT) is True
+    except Exception:
+        return False
+
+
 def _psv_records(year):
     path = ROOT / "rpt_2027" / "psv" / f"RPT_PSV_Tahun_{year}_2027_DRAF.csv"
     try:
@@ -129,15 +139,18 @@ def _psv_records(year):
             return []
         rows = []
         for n, rec in enumerate(lines, 1):
-            if rec.get("PdP") != f"{n:03d}" or rec.get("Tahun") != str(year) or rec.get("Status") != "DRAF_SEMAK":
+            if rec.get("PdP") != f"{n:03d}" or rec.get("Tahun") != str(year) or rec.get("Status") not in ("DRAF_SEMAK", "READY"):
                 return []
             title = (rec.get("Tajuk/aktiviti PdP") or rec.get("Tajuk karya cadangan") or "").strip()
             unit = (rec.get("Tajuk unit") or rec.get("Tajuk karya cadangan") or "").strip()
             if not title or not unit:
                 return []
+            approved = rec.get("Status") == "READY" and _psv_release_approved()
+            candidate = ROOT / "rph_standalone" / "psv" / f"year{year}" / f"lesson_{n:03d}.md"
+            release_path = candidate if approved and candidate.is_file() and not candidate.is_symlink() else None
             rows.append({"unit": unit, "label": f"PdP {n:03d} — {title}",
                          "lesson": n, "token": f"v-{year}-{n:03d}",
-                         "path": None, "status": "RPH BELUM TERSEDIA"})
+                         "path": release_path, "status": "READY" if release_path else "RPH BELUM TERSEDIA"})
         return rows
     except (OSError, ValueError, csv.Error, KeyError):
         return []
@@ -192,6 +205,11 @@ def _read_source(row, year, subject):
         if not text.startswith(f"# RPH Pendidikan {suffix} Tahun {year} — PdP {n:03d}"):
             return None
         if "DRAF" not in text[:300]:
+            return None
+    elif subject == "PSV":
+        if not text.startswith(f"# RPH Pendidikan Seni Visual Tahun {year} — PdP {n:03d}"):
+            return None
+        if not re.search(r"(?m)^\\*\\*Status:\\*\\*\\s*READY\\s*$", text):
             return None
     return text
 
