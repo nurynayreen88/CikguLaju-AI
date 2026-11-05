@@ -304,7 +304,7 @@ def check() -> None:
     assert [r["sp"] for r in y5rows] == [x["candidate_sp"] for x in y5unit2["items"]]
     assert [r["halaman_buku_teks_dicadang"] for r in y5rows] == [str(x["printed_page"]) for x in y5unit2["items"]]
     assert all(not x["ready"] and not x["teacher_approved"] and not x["annual_rpt_2027_verified"] for x in y5unit2["items"])
-    assert m["years"]["5"]["unit2_candidate_rph_count"] == 16 and m["years"]["5"]["source_reviewed_drafts_total"] == 28
+    assert m["years"]["5"]["unit2_candidate_rph_count"] == 16 and m["years"]["5"]["source_reviewed_drafts_total"] == 44
     assert m["years"]["5"]["unit2_release_approved"] is False
     assert readiness["completed"]["year5_unit2_candidate_rph"] == 16
     assert readiness["completed"]["verified_a4_render_for_all_122"] is True
