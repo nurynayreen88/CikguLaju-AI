@@ -75,7 +75,9 @@ class EnglishYear2Year3RenderIntegrity(unittest.TestCase):
         rows = y3({"subject":"English", "year":"Tahun 3", "lesson_no":93}, dict(BASE))
         self.assertIn("Tony", rows["AKTIVITI UTAMA"])
         self.assertIn("Workbook p.48", rows["AKTIVITI UTAMA"] + rows["PENTAKSIRAN"])
-        self.assertIn("CD1 Track 97", rows["BAHAN BANTU MENGAJAR"])
+        self.assertIn("printed Track 97", rows["BAHAN BANTU MENGAJAR"])
+        self.assertIn("disc not specified", rows["BAHAN BANTU MENGAJAR"])
+        self.assertNotIn("Class CD1 Track 97 (teacher-confirmed", rows["BAHAN BANTU MENGAJAR"])
 
 if __name__ == "__main__":
     unittest.main()

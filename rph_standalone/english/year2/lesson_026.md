@@ -33,6 +33,4 @@
 **Teacher:** Hide one flashcard and ask pupils to name the missing room; recap two difficult words.  
 **Pupils:** Name the missing room and say one new word.
 
-**QA:** TEXTBOOK-ALIGNED DRAFT — SB p.70 and TB T70 inspected visually; official SOW SK/SP verification and A4/PDF QA pending. Do not mark READY.
-
-**QA status:** NOT READY — 60-minute structure checked; official SOW, Teacher's Book and A4/PDF inspection pending.
+**QA status:** NOT READY FOR RELEASE — SB p.70 and original TB T70 checked; CD2 Tracks 35/36 matched to the original WMA file IDs and current Telegram sender code. SOW code matching and isolated Word/PDF A4 checks passed in the wider English Year 2–6 audit. Spoken recording content and an authenticated Telegram delivery are still unverified; classroom sign-off remains pending. Keep both original .wma files unchanged.
