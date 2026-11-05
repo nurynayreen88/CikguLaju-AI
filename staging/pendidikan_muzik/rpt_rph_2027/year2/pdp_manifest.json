@@ -309,14 +309,23 @@
       "sp": [
         "5.1.1"
       ],
-      "page": null,
+      "page": "4-5",
       "audio": null,
       "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
       "rpt2027_slot": {
         "week": 12,
         "groupA": "28/03–01/04",
         "groupB": "29/03–02/04"
-      }
+      },
+      "source_rpt_original_page": null,
+      "source_book_text_crosscheck": true,
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_KESENIAN_T2_ONLINE_TEXTUAL_ONLY",
+      "rph_specificity_status": "TEKS_BUKU_MUZIK_TERPADU_DIPADANKAN",
+      "validation_status": "DRAF_TEXTBOOK_CHECK_ONLY",
+      "source_book_project_evidence": true,
+      "source_book_crosscheck_scope": "PROJEK_KESENIAN_TERPADU; ADAPTASI_BAHAGIAN_MUZIK_SAHAJA"
     },
     {
       "pdp_id": "MZ-Y2-13",
@@ -328,14 +337,23 @@
         "5.1.2",
         "5.1.3"
       ],
-      "page": null,
+      "page": "4-5",
       "audio": null,
       "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
       "rpt2027_slot": {
         "week": 13,
         "groupA": "04/04–08/04",
         "groupB": "05/04–09/04"
-      }
+      },
+      "source_rpt_original_page": null,
+      "source_book_text_crosscheck": true,
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_KESENIAN_T2_ONLINE_TEXTUAL_ONLY",
+      "rph_specificity_status": "TEKS_BUKU_MUZIK_TERPADU_DIPADANKAN",
+      "validation_status": "DRAF_TEXTBOOK_CHECK_ONLY",
+      "source_book_project_evidence": true,
+      "source_book_crosscheck_scope": "PROJEK_KESENIAN_TERPADU; ADAPTASI_BAHAGIAN_MUZIK_SAHAJA"
     },
     {
       "pdp_id": "MZ-Y2-14",
@@ -652,14 +670,23 @@
       "sp": [
         "5.1.1"
       ],
-      "page": null,
+      "page": "46-47",
       "audio": null,
       "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
       "rpt2027_slot": {
         "week": 26,
         "groupA": "18/07–22/07",
         "groupB": "19/07–23/07"
-      }
+      },
+      "source_rpt_original_page": null,
+      "source_book_text_crosscheck": true,
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_KESENIAN_T2_ONLINE_TEXTUAL_ONLY",
+      "rph_specificity_status": "TEKS_BUKU_MUZIK_TERPADU_DIPADANKAN",
+      "validation_status": "DRAF_TEXTBOOK_CHECK_ONLY",
+      "source_book_project_evidence": true,
+      "source_book_crosscheck_scope": "PROJEK_KESENIAN_TERPADU; ADAPTASI_BAHAGIAN_MUZIK_SAHAJA"
     },
     {
       "pdp_id": "MZ-Y2-27",
@@ -671,14 +698,23 @@
         "5.1.2",
         "5.1.3"
       ],
-      "page": null,
+      "page": "46-47",
       "audio": null,
       "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
       "rpt2027_slot": {
         "week": 27,
         "groupA": "25/07–29/07",
         "groupB": "26/07–30/07"
-      }
+      },
+      "source_rpt_original_page": null,
+      "source_book_text_crosscheck": true,
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_KESENIAN_T2_ONLINE_TEXTUAL_ONLY",
+      "rph_specificity_status": "TEKS_BUKU_MUZIK_TERPADU_DIPADANKAN",
+      "validation_status": "DRAF_TEXTBOOK_CHECK_ONLY",
+      "source_book_project_evidence": true,
+      "source_book_crosscheck_scope": "PROJEK_KESENIAN_TERPADU; ADAPTASI_BAHAGIAN_MUZIK_SAHAJA"
     },
     {
       "pdp_id": "MZ-Y2-28",
@@ -824,16 +860,17 @@
         "groupB": "13/09–17/09"
       },
       "focus_pdp": "Apresiasi muzik dan budaya setempat (calon halaman 95–96)",
-      "source_book_url": "https://anyflip.com/iawvx/mran/basic/51-100",
-      "source_book_text_crosscheck": false,
-      "source_book_verification_level": "RPT_REFERENCE_ONLY_PENDING_TEXTBOOK_PAGE_CONFIRM",
-      "pending_book_page_crosscheck": true,
-      "source_book_audio_numbers_printed": "84–86 — rujukan RPT lama belum semak pada buku sebenar",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "BUKU_KESENIAN_T2_ONLINE_TEXTUAL_ONLY",
+      "pending_book_page_crosscheck": false,
+      "source_book_audio_numbers_printed": "84–85 (sompoton/Sumazau); 86 (muzik Sumazau) — tercetak, bukan fail",
       "source_book_audio_file_verified": false,
-      "rph_specificity_status": "PDP_DRAFT_APRESIASI_PENDING_BOOK",
+      "rph_specificity_status": "TEKS_BUKU_MUZIK_TERPADU_DIPADANKAN",
       "flags": [
-        "Halaman 95–96 dan Audio 84–86 masih rujukan RPT; kandungan buku belum sempat disahkan. Jangan tandakan sebagai book crosschecked."
-      ]
+        "Buku teks Pendidikan Kesenian Tahun 2 halaman 95–96 disemak teks: sompoton dan Tarian Sumazau; kod Kesenian bercetak 4.2.1/4.2.2 berbeza daripada SP RPT Muzik 4.1.1; crosswalk belum lulus."
+      ],
+      "validation_status": "DRAF_TEXTBOOK_CHECK_ONLY"
     },
     {
       "pdp_id": "MZ-Y2-34",
@@ -899,5 +936,5 @@
   "deprecated_project3_reclassified_count": 2,
   "source_textbook_url": "https://anyflip.com/iawvx/mran/basic",
   "source_textbook_edition": "Buku Teks Pendidikan Kesenian Tahun 2 SK KSSR Semakan",
-  "partial_textbook_crosscheck_count": 28
+  "partial_textbook_crosscheck_count": 33
 }

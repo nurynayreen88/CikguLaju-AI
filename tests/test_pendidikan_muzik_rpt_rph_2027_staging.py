@@ -104,7 +104,7 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
 
     def test_textbook_crosscheck_is_partial_and_audio_is_unverified(self):
         expected = {
-            2: (28, set(range(1, 12)) | set(range(14, 26)) | set(range(28, 33))),
+            2: (33, set(range(1, 34))),
             3: (28, set(range(1, 12)) | set(range(14, 24)) | set(range(27, 34))),
             4: (22, {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 17, 18, 19, 20, 21, 22, 23, 24, 28, 29, 30}),
             5: (35, set(range(1, 36))),
@@ -123,8 +123,10 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
         self.assertEqual(year2["pdps"][10]["page"], "36-37")
         self.assertEqual(year2["pdps"][10]["source_rpt_original_page"], "32-33")
         self.assertEqual(year2["pdps"][21]["source_book_audio_numbers_printed"], "60–66 (berbeza rujukan RPT 57–59)")
-        self.assertFalse(year2["pdps"][32].get("source_book_text_crosscheck", False))
-        self.assertTrue(year2["pdps"][32].get("pending_book_page_crosscheck", False))
+        self.assertTrue(year2["pdps"][32].get("source_book_text_crosscheck", False))
+        self.assertFalse(year2["pdps"][32].get("pending_book_page_crosscheck", False))
+        self.assertIn("sompoton", (MUSIC / "rpt_rph_2027" / "year2" / "rph_pdp_33.md").read_text(encoding="utf-8"))
+        self.assertTrue(all(year2["pdps"][i-1].get("source_book_project_evidence") for i in (12,13,26,27)))
         year3 = json.loads((MUSIC / "rpt_rph_2027" / "year3" / "pdp_manifest.json").read_text(encoding="utf-8"))
         self.assertEqual(year3["partial_textbook_crosscheck_count"], 28)
         self.assertEqual(year3["pdps"][5]["page"], "21")

@@ -143,3 +143,8 @@ Fail RPT (.md/.csv), RPH setiap PdP (.md), manifest JSON di `staging/pendidikan_
 
 ## 6 Nov 2026 — Empat projek rasmi Tahun 6
 PdP12,13,26,27 dirujuk kepada buku Tahun 6 halaman 44–45 dan 88–89. **33/35 Tahun 6**, **152/175 keseluruhan**; baki **23** termasuk dua pengukuhan cadangan Tahun 6 dan 21 Tahun 2–4. Tiada audio, skor, kalendar atau cetakan akhir disahkan.
+
+
+## 6 Nov 2026 — Tahun 2 projek dan PdP 33
+- PdP 33 sompoton/Tarian Sumazau halaman 95–96, Audio 84–86 bercetak; empat RPH projek Tahun 2 dirujuk kepada buku Kesenian projek Penggal Satu/Dua dengan adaptasi hanya Muzik.
+- Tahun 2 kini **33/35** semakan teks buku, keseluruhan **157/175**, baki **18**; perbezaan kod buku Kesenian–DSKP Muzik masih memerlukan keputusan rasmi. Tidak FINAL READY.
