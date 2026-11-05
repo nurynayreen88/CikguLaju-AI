@@ -23,8 +23,8 @@
       "year": 3,
       "sow": "1_-uNQsXiNfuorjMD1ObUUhmCi_L1i3L5",
       "teacher_book": "10Cw_yGvWayaWE2jROAnHKheuhC7wCmgh",
-      "audit_level": "SOW_160; Year3 L93 original Get Smart Plus 3 TB printed p96 (PDF index97) visually confirms Track97 and SB p61 Tony's pizza; printed TB does not specify CD disc; original audio ID, delivery and speech still unverified",
-      "audio_source": "Get Smart Plus 3 CD map in DB needs direct materialization/source verification"
+      "audit_level": "SOW_160; Year3 L93 original TB p96 confirms Track97/SB p61 Tony's Pizza, no disc number. Complete YEAR3_CLASS_CD inventory shows unique CD1 Track97 MP3 ID and genuine file SHA256. Lesson-to-audio spoken content and app/Telegram mapping remain unverified.",
+      "audio_source": "201 Get Smart Plus 3 Class CD audio files: CD1=99, CD2=91, CD3=11. Candidate L93 Track97 found in B Class CD1, Drive file ID 1ZC_p24-ggASU_DceLRXUKc26nUssouk-."
     },
     {
       "year": 4,
@@ -142,11 +142,14 @@
       "severity": "review",
       "year": 3,
       "lesson": 93,
-      "exact_issue": "Original Get Smart Plus 3 TB printed p96 (PDF 0-based index97) verifies Activity1 Track97 with SB p61 Tony's favourite pizza. TB says Track97 without explicit CD1 label; RPH CD1 attribution, original Drive track ID, prior mismatched audio report and actual Telegram mapping remain unchecked. Read-only current app.py AST has no Year3-specific top-level literal route for Lesson93; code has Year3 curriculum lookup functions. The dynamic DB/indirect route remains unverified.",
-      "status": "ORIGINAL_TB_TRACK97_VERIFIED_DISC_FILE_AND_TELEGRAM_PENDING",
+      "exact_issue": "Original Get Smart Plus 3 TB p96 confirms Track97 for SB p61 Tony's Pizza but prints no disc. The complete native Year3 Class CD inventory (201 files; CD1=99, CD2=91, CD3=11) has exactly one Track97, under B Class CD1 (candidate ID 1ZC_p24-ggASU_DceLRXUKc26nUssouk-). The real MP3 bytes, codec, duration and SHA256 were verified. Spoken words, runtime curriculum DB route and authenticated Telegram send are NOT verified; do not turn candidate into final approval.",
+      "status": "TB_TRACK97_AND_ONLY_CD1_CANDIDATE_FILE_HASH_VERIFIED_AUDIO_SPEECH_APP_ROUTE_PENDING",
       "evidence_path": "audits/english_y2_l026_y3_l093_direct_tb_audio_check_20261105.json",
       "static_app_y3_top_level_literal_track93_found": false,
-      "static_scan_tool": "tools/audit_english_y3_l093_static_media_routes_20261105.py"
+      "static_scan_tool": "tools/audit_english_y3_l093_static_media_routes_20261105.py",
+      "candidate_audio_file_id": "1ZC_p24-ggASU_DceLRXUKc26nUssouk-",
+      "candidate_sha256": "f7253c240cd25ff862f911d25ba3a2ffe2ebc46efc91612ade933b4a197a5fa6",
+      "direct_evidence_path": "audits/english_y2_l026_y3_l093_direct_tb_audio_check_20261105.json"
     }
   ],
   "limitations": [

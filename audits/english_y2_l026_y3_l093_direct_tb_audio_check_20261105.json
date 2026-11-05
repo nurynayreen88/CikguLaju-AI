@@ -1,6 +1,6 @@
 {
   "audit_date": "2026-11-05",
-  "scope": "Two original Teacher's Book checks, downloaded WMA codec/hashes, and a read-only AST check of the original app.py Year1-2 Telegram source ID map. No user transmission or listening-content verification.",
+  "scope": "Two original Teacher's Book checks, Year2 WMA sender source IDs, and Year3 L93 complete 201-Class-CD original Drive inventory plus authentic CD1 Track97 MP3 metadata/hash. No user transmission or spoken-content verification.",
   "overall_release": "SOURCE_EVIDENCE_VERIFIED_DELIVERY_AND_SPEECH_UNVERIFIED",
   "cases": [
     {
@@ -88,15 +88,48 @@
       "tb_confirms_track_number": 97,
       "tb_confirms_disc_number": false,
       "original_track_file_id": null,
-      "source_grade": "ORIGINAL_TB_TRACK97_VERIFIED_NO_Y3_TOP_LEVEL_LITERAL_FILE_ROUTE_SOURCE_OR_SEND",
+      "source_grade": "ORIGINAL_TB_TRACK97_AND_ONLY_CD1_97_IN_COMPLETE_INVENTORY_VERIFIED_AUDIO_CONTENT_AND_TELEGRAM_UNVERIFIED",
       "spoken_words_checked": false,
       "telegram_bot_file_id_route_checked": false,
       "actual_bot_send_checked": false,
       "final_ready_approved": false,
-      "note": "Printed TB p96 gives Track 97, not an explicit CD1 prefix; do not treat RPH CD1 attribution as independently verified.",
+      "note": "Original TB p96 names Track97 without disc. The connected complete Class CD inventory has only CD1 Track97; its MP3 metadata, SHA256 and parent folder are verified. This identifies a credible source *candidate*, not proof of spoken content, actual app route, or teacher-approved final audio.",
       "actual_app_year3_specific_top_level_audio_literal_route_found": false,
       "actual_app_source_route_search": "tools/audit_english_y3_l093_static_media_routes_20261105.py",
-      "static_source_scope_limit": "Year3-specific top-level literal maps only. Track may come from curriculum DB or indirect media route; no final assertion on dynamic routing."
+      "static_source_scope_limit": "Year3-specific top-level literal maps only. Track may come from curriculum DB or indirect media route; no final assertion on dynamic routing.",
+      "class_cd_inventory": {
+        "source_spreadsheet_id": "1xzRM71yAZDM0ZgW_457RVtAixQ27kit7RiGaG0WASPY",
+        "source_sheet": "YEAR3_CLASS_CD",
+        "source_row_number": 98,
+        "parent_folder_id": "1atCnW_lBeor8yfINE1hGKcbsRyNbOTmm",
+        "parent_folder_title": "B Class CD 1",
+        "collection_parent_title": "YEAR 3",
+        "disc_file_counts": {
+          "CD1": 99,
+          "CD2": 91,
+          "CD3": 11
+        },
+        "total_files": 201,
+        "no_track_number_gaps": true,
+        "unique_disc_containing_track97": "CD1",
+        "candidate": {
+          "title": "Track 97.mp3",
+          "drive_file_id": "1ZC_p24-ggASU_DceLRXUKc26nUssouk-",
+          "mime_type": "audio/mpeg",
+          "file_size_bytes": 648935,
+          "sha256": "f7253c240cd25ff862f911d25ba3a2ffe2ebc46efc91612ade933b4a197a5fa6",
+          "codec": "mp3",
+          "duration_seconds": 40.222438,
+          "sample_rate_hz": 44100,
+          "channels": 2,
+          "source_visibility": "permission_metadata_available"
+        },
+        "source_grade": "CD1_TRACK97_FILE_ID_AND_MP3_HASH_VERIFIED_AS_CANDIDATE_NOT_ACTUAL_SOW_CONTENT",
+        "spoken_words_checked": false,
+        "actual_bot_send_checked": false,
+        "telegram_bot_file_id_route_checked": false,
+        "candidate_is_final_approved": false
+      }
     }
   ],
   "unaffected": "No curriculum database, app.py, user credits/payments, original assets, audio format, production or main changes"

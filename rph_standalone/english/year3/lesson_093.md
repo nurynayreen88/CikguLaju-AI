@@ -26,3 +26,5 @@ Pupils complete Workbook p.48, Activity 1, by adding commas and *and* where nece
 Pupils share one sentence describing a pizza.
 
 **QA status:** NOT READY FOR RELEASE — original Teacher's Book printed p.96 confirms Track 97 for the Tony's Pizza reading. It does not independently establish the CD1 label, source file ID or live Telegram route. SOW and isolated document-format checks passed, but spoken audio, authenticated delivery and classroom approval remain pending.
+
+**Audio source candidate (5 Nov 2026):** The complete Year 3 Class CD inventory has 99 CD1, 91 CD2 and 11 CD3 tracks. Track 97 exists only in CD1, as `Track 97.mp3` (Drive ID `1ZC_p24-ggASU_DceLRXUKc26nUssouk-`, 648,935 bytes, MP3). The original file was decoded and its SHA-256 recorded in the audio audit. **Do not enable or send this candidate** until the actual spoken words match SB p.61/TB p.96 and the runtime Telegram file ID is verified. This inventory inference does not change what the Teacher's Book prints.
