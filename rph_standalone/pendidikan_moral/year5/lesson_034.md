@@ -17,14 +17,16 @@ Murid menyiapkan tugasan **SP 12.1** (Menyenaraikan contoh amalan kerjasama dala
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Pasukan sukarelawan menyelaraskan kerja selepas banjir**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Tugasan 12.1:** Guru membentangkan situasi **Pasukan sukarelawan menyelaraskan kerja selepas banjir** dan menyediakan kad/gambar yang relevan dengan unit buku teks **Kerjasama** (mula m/s 110; halaman aktiviti belum disahkan). Murid melaksanakan arahan **“Menyenaraikan contoh amalan kerjasama dalam hidup bermasyarakat.”** dengan menghasilkan **senarai tiga contoh atau perkara yang tepat**; pasangan menyemak fakta, bukan hanya memilih tindakan baik atau buruk. Guru merekod satu respons individu.
+**Aktiviti 1 (20 minit) — Tugasan asli buku teks:** Guru menunjukkan forum 'Amalan Kerjasama, Kebaikan Bersama' m/s110–111 tentang penduduk mengelolakan program komuniti. Murid memberikan tiga contoh kerjasama dan pihak yang terlibat (SP12.1). Guru menyemak respons individu murid.
 
-**Aktiviti 2 (20 minit) — Tugasan 12.2:** Guru menukar sudut situasi kepada tindakan atau akibat yang boleh diperhatikan. Murid melaksanakan arahan **“Menghuraikan kepentingan amalan kerjasama dalam hidup bermasyarakat.”** dan menyediakan **dua huraian yang disokong sebab** berdasarkan contoh yang relevan dengan unit. Murid membentangkan hasil dan memperbaiki jawapan selepas pertanyaan lanjut guru.
+**Aktiviti 2 (20 minit) — Tugasan asli buku teks:** Guru menggunakan perancangan 'Masyarakat Sepakat, Hidup Berkat' m/s112 yang membezakan aktiviti sebelum, semasa dan selepas program. Murid menerangkan dua cara membahagi tugasan secara saksama (SP12.2). Guru menyemak respons individu murid.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Guru mengutip hasil individu: **senarai tiga contoh atau perkara yang tepat** untuk SP 12.1 dan **dua huraian yang disokong sebab** untuk SP 12.2; semak ketepatan makna, bukti dan kaitan dengan nilai **Kerjasama**. Murid membetulkan satu jawapan selepas maklum balas.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menyemak tiga contoh dan dua cara kerjasama berdasarkan catatan forum dan jadual program (SP12.1–12.2). Murid membetulkan satu hasil selepas maklum balas Guru.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **kerjasama**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — unit bermula m/s 110 (PDF 113); halaman aktiviti khusus belum dipadankan; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 12 m/s 110–112 (PDF 113–115); aktiviti forum, projek dan latihan buku teks telah diperiksa sebelum diolah untuk PdP 034.
+
+**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — Unit 12 m/s 110–112 (PDF 113–115) disahkan aktiviti secara visual; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

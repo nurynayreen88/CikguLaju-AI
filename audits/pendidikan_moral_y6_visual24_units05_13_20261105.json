@@ -1,0 +1,459 @@
+{
+  "status": "24_YEAR6_SOURCE_BACKED_ACTIVITY_MATCHES; NOT_FINAL_READY",
+  "date": "2026-11-05",
+  "method": "Visual examination of original Year6 scanned textbook unit 5,6,8,9,10,11,12,13 page spreads, followed by individual RPH revisions and DSKP-code consistency checks. Lesson activities are educator adaptations, not copyrighted verbatim text. Book unit4 and7 conflict with DSKP and are expressly excluded.",
+  "year": 6,
+  "source_book_drive_id": "12YjwUWy6DdVsqP5_azEp987jfvZ6PROo",
+  "source_dskp_drive_id": "1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA",
+  "pdf_page_offset": 9,
+  "records": [
+    {
+      "year": 6,
+      "unit": 5,
+      "lesson": 13,
+      "printed": [
+        39,
+        43
+      ],
+      "pdf": [
+        48,
+        52
+      ],
+      "sp_codes": [
+        "5.1",
+        "5.2"
+      ],
+      "page_evidence": "Kaunter imigresen, Piagam Pelanggan, urusan dengan petugas",
+      "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "unit": 5,
+      "lesson": 14,
+      "printed": [
+        41,
+        46
+      ],
+      "pdf": [
+        50,
+        55
+      ],
+      "sp_codes": [
+        "5.3",
+        "5.4"
+      ],
+      "page_evidence": "Rakyat Berhemah, ungkapan bersopan, Jabatan Kerajaan",
+      "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "unit": 5,
+      "lesson": 15,
+      "printed": [
+        43,
+        48
+      ],
+      "pdf": [
+        52,
+        57
+      ],
+      "sp_codes": [
+        "5.5"
+      ],
+      "page_evidence": "Lakonan kaunter, ungkapan, penilaian formatif",
+      "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "unit": 6,
+      "lesson": 16,
+      "printed": [
+        49,
+        52
+      ],
+      "pdf": [
+        58,
+        61
+      ],
+      "sp_codes": [
+        "6.1",
+        "6.2"
+      ],
+      "page_evidence": "Puisi hormati negara, Jalur Gemilang, Rukun Negara",
+      "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "unit": 6,
+      "lesson": 17,
+      "printed": [
+        52,
+        55
+      ],
+      "pdf": [
+        61,
+        64
+      ],
+      "sp_codes": [
+        "6.3",
+        "6.4"
+      ],
+      "page_evidence": "Identiti dan lambang negara, Bunga Raya",
+      "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "unit": 6,
+      "lesson": 18,
+      "printed": [
+        54,
+        58
+      ],
+      "pdf": [
+        63,
+        67
+      ],
+      "sp_codes": [
+        "6.5"
+      ],
+      "page_evidence": "Kempen menjaga lambang, pameran dan penilaian",
+      "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "unit": 8,
+      "lesson": 22,
+      "printed": [
+        69,
+        73
+      ],
+      "pdf": [
+        78,
+        82
+      ],
+      "sp_codes": [
+        "8.1",
+        "8.2"
+      ],
+      "page_evidence": "Keadilan negara dan kerjasama pelbagai kaum; institusi diambil daripada SP DSKP",
+      "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "unit": 8,
+      "lesson": 23,
+      "printed": [
+        72,
+        74
+      ],
+      "pdf": [
+        81,
+        83
+      ],
+      "sp_codes": [
+        "8.3",
+        "8.4"
+      ],
+      "page_evidence": "Kisah integrasi murid dan Bersikap Adil demi Kebaikan Negara",
+      "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "unit": 8,
+      "lesson": 24,
+      "printed": [
+        75,
+        78
+      ],
+      "pdf": [
+        84,
+        87
+      ],
+      "sp_codes": [
+        "8.5"
+      ],
+      "page_evidence": "Jalankan Tugas Secara Saksama, Membuat Keputusan Adil",
+      "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "unit": 9,
+      "lesson": 25,
+      "printed": [
+        79,
+        82
+      ],
+      "pdf": [
+        88,
+        91
+      ],
+      "sp_codes": [
+        "9.1",
+        "9.2"
+      ],
+      "page_evidence": "Tokoh sukan berani serta buku skrap negara",
+      "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "unit": 9,
+      "lesson": 26,
+      "printed": [
+        83,
+        85
+      ],
+      "pdf": [
+        92,
+        94
+      ],
+      "sp_codes": [
+        "9.3",
+        "9.4"
+      ],
+      "page_evidence": "Nama Negara Kita Pelihara dan kad lakonan",
+      "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "unit": 9,
+      "lesson": 27,
+      "printed": [
+        84,
+        88
+      ],
+      "pdf": [
+        93,
+        97
+      ],
+      "sp_codes": [
+        "9.5"
+      ],
+      "page_evidence": "Permainan Tingkatkan Imej Negara, penilaian",
+      "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "unit": 10,
+      "lesson": 28,
+      "printed": [
+        89,
+        93
+      ],
+      "pdf": [
+        98,
+        102
+      ],
+      "sp_codes": [
+        "10.1",
+        "10.2"
+      ],
+      "page_evidence": "Angkara rasuah, kejujuran urusan niaga",
+      "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "unit": 10,
+      "lesson": 29,
+      "printed": [
+        91,
+        94
+      ],
+      "pdf": [
+        100,
+        103
+      ],
+      "sp_codes": [
+        "10.3",
+        "10.4"
+      ],
+      "page_evidence": "Kejujuran Membawa Manfaat, Bersikap Jujur",
+      "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "unit": 10,
+      "lesson": 30,
+      "printed": [
+        94,
+        98
+      ],
+      "pdf": [
+        103,
+        107
+      ],
+      "sp_codes": [
+        "10.5"
+      ],
+      "page_evidence": "Pekerja Jujur, Bertindak Jujur, penilaian",
+      "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "unit": 11,
+      "lesson": 31,
+      "printed": [
+        99,
+        103
+      ],
+      "pdf": [
+        108,
+        112
+      ],
+      "sp_codes": [
+        "11.1",
+        "11.2"
+      ],
+      "page_evidence": "Tokoh teladan rajin, reka cipta, ekonomi kreatif",
+      "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "unit": 11,
+      "lesson": 32,
+      "printed": [
+        101,
+        106
+      ],
+      "pdf": [
+        110,
+        115
+      ],
+      "sp_codes": [
+        "11.3",
+        "11.4"
+      ],
+      "page_evidence": "Kemajuan melalui usaha rajin dan pembacaan",
+      "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "unit": 11,
+      "lesson": 33,
+      "printed": [
+        103,
+        108
+      ],
+      "pdf": [
+        112,
+        117
+      ],
+      "sp_codes": [
+        "11.5"
+      ],
+      "page_evidence": "Usaha Berterusan Negara Jaya, penilaian",
+      "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "unit": 12,
+      "lesson": 34,
+      "printed": [
+        109,
+        113
+      ],
+      "pdf": [
+        118,
+        122
+      ],
+      "sp_codes": [
+        "12.1",
+        "12.2"
+      ],
+      "page_evidence": "Kerjasama rakyat, kempen bantuan bencana",
+      "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "unit": 12,
+      "lesson": 35,
+      "printed": [
+        111,
+        116
+      ],
+      "pdf": [
+        120,
+        125
+      ],
+      "sp_codes": [
+        "12.3",
+        "12.4"
+      ],
+      "page_evidence": "Minggu Cegah Jenayah, Dasar Kerajaan Dijayakan Bersama",
+      "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "unit": 12,
+      "lesson": 36,
+      "printed": [
+        113,
+        118
+      ],
+      "pdf": [
+        122,
+        127
+      ],
+      "sp_codes": [
+        "12.5"
+      ],
+      "page_evidence": "Projek kerjasama, penilaian",
+      "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "unit": 13,
+      "lesson": 37,
+      "printed": [
+        119,
+        123
+      ],
+      "pdf": [
+        128,
+        132
+      ],
+      "sp_codes": [
+        "13.1",
+        "13.2"
+      ],
+      "page_evidence": "Kemudahan awam, pengangkutan, bahaya vandalisme",
+      "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "unit": 13,
+      "lesson": 38,
+      "printed": [
+        122,
+        125
+      ],
+      "pdf": [
+        131,
+        134
+      ],
+      "sp_codes": [
+        "13.3",
+        "13.4"
+      ],
+      "page_evidence": "Sikap Keterlaluan Membawa Padah",
+      "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "unit": 13,
+      "lesson": 39,
+      "printed": [
+        124,
+        128
+      ],
+      "pdf": [
+        133,
+        137
+      ],
+      "sp_codes": [
+        "13.5"
+      ],
+      "page_evidence": "Prasarana Dijaga, Jagalah Kemudahan Awam, penilaian",
+      "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
+    }
+  ]
+}

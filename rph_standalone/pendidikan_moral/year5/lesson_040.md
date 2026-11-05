@@ -17,14 +17,16 @@ Murid menyiapkan tugasan **SP 14.1** (Mengenal pasti contoh amalan toleransi dal
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Pelbagai kumpulan komuniti berbincang tentang tarikh acara bersama**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Tugasan 14.1:** Guru membentangkan situasi **Pelbagai kumpulan komuniti berbincang tentang tarikh acara bersama** dan menyediakan kad/gambar yang relevan dengan unit buku teks **Toleransi** (mula m/s 130; halaman aktiviti belum disahkan). Murid melaksanakan arahan **“Mengenal pasti contoh amalan toleransi dalam hidup bermasyarakat.”** dengan menghasilkan **jadual dua contoh dengan label atau alasan**; pasangan menyemak fakta, bukan hanya memilih tindakan baik atau buruk. Guru merekod satu respons individu.
+**Aktiviti 1 (20 minit) — Kandungan buku teks asal:** Guru menunjukkan situasi 'Bertoleransi Membawa Kesejahteraan' m/s130–131 tentang jiran berbeza pandangan apabila bermain dan menggunakan gelanggang serta kisah 'Bertolak Ansur Kebajikan Diutamakan' m/s132 tentang memberi tempat duduk kepada warga emas. Murid mengenal pasti tiga contoh toleransi dalam masyarakat (SP14.1). Guru menyemak hasil individu murid.
 
-**Aktiviti 2 (20 minit) — Tugasan 14.2:** Guru menukar sudut situasi kepada tindakan atau akibat yang boleh diperhatikan. Murid melaksanakan arahan **“Menghuraikan kepentingan amalan toleransi dalam hidup bermasyarakat.”** dan menyediakan **dua huraian yang disokong sebab** berdasarkan contoh yang relevan dengan unit. Murid membentangkan hasil dan memperbaiki jawapan selepas pertanyaan lanjut guru.
+**Aktiviti 2 (20 minit) — Kandungan buku teks asal:** Guru menggunakan cerita menaiki tren di m/s132 untuk murid menerangkan dua cara bertolak ansur dan menjaga keperluan orang lain dalam kemudahan awam (SP14.2). Guru menyemak hasil individu murid.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Guru mengutip hasil individu: **jadual dua contoh dengan label atau alasan** untuk SP 14.1 dan **dua huraian yang disokong sebab** untuk SP 14.2; semak ketepatan makna, bukti dan kaitan dengan nilai **Toleransi**. Murid membetulkan satu jawapan selepas maklum balas.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menilai tiga contoh bertoleransi dan dua cara pelaksanaannya daripada cerita asal (SP14.1–14.2). Murid membetulkan satu jawapan selepas maklum balas guru.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **toleransi**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — unit bermula m/s 130 (PDF 133); halaman aktiviti khusus belum dipadankan; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 14 m/s 130–132 (PDF 133–135); contoh kegiatan, foto, projek atau latihan asal diolah bagi PdP 040 dan SP yang sedia ada.
+
+**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — Unit 14 m/s 130–132 (PDF 133–135) disahkan melalui semakan visual; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

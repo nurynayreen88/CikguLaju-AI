@@ -17,14 +17,16 @@ Murid menghuraikan atau menilai berdasarkan **6.3: Membuat justifikasi kepenting
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Penduduk menganjurkan program pertukaran budaya masyarakat**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Peta akibat:** Guru beri dua penghujung kepada situasi. Murid bina peta **pilihan → kesan → alasan**, merujuk SP 6.3 (**Membuat justifikasi kepentingan menghormati kepelbagaian budaya dalam hidup bermasyarakat.**). Bandingkan akibat kepada watak yang terlibat dan bincang soalan: **Bagaimanakah hormat ditunjukkan melalui perbuatan?**
+**Aktiviti 1 (20 minit) — Tugasan buku teks:** Guru memaparkan perbualan masyarakat dalam 'Hormati Budaya Bermasyarakat' m/s53 dan perayaan Gawai Dayak serta Pesta Buah m/s54. Murid menghuraikan dua kepentingan menghormati budaya untuk perpaduan dan keharmonian masyarakat (SP6.3). Guru menyemak hasil individu murid.
 
-**Aktiviti 2 (20 minit) — Dialog dan emosi:** Murid menjalankan dialog ringkas dua versi, menyatakan kesan kedua-duanya dan menulis satu ayat perspektif pihak yang terlibat untuk SP 6.4 (**Mengekspresikan perasaan berkaitan dengan amalan menghormati kepelbagaian budaya dalam hidup bermasyarakat.**). Guru semak hubungan alasan, emosi dan nilai.
+**Aktiviti 2 (20 minit) — Tugasan buku teks:** Guru menggunakan situasi 'Hormati Kepelbagaian Budaya' m/s55. Murid menulis ayat perasaan apabila keunikan budaya diterima dengan hormat, berserta alasan yang berkaitan (SP6.4). Guru menyemak hasil individu murid.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak justifikasi serta dua kesan bagi SP 6.3 dan ayat perasaan yang sesuai bagi SP 6.4. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menilai dua kepentingan serta satu perasaan bersebab berdasarkan contoh sambutan asal (SP6.3–6.4). Murid membetulkan satu respons selepas maklum balas guru.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **hormat**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — halaman belum dipadankan; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 6, m/s 53–55 (PDF 56–58); gambar, aktiviti dan latihan asal digunakan sebagai asas olahan RPH PdP 017; bukan petikan verbatim.
+
+**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — Unit 6 m/s 53–55 (PDF 56–58), aktiviti asal diperiksa; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

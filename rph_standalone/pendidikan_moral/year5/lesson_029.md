@@ -17,14 +17,16 @@ Murid menghuraikan atau menilai berdasarkan **10.3: Menghuraikan kepentingan ama
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Wakil komuniti perlu melaporkan kutipan derma dengan benar**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Peta akibat:** Guru beri dua penghujung kepada situasi. Murid bina peta **pilihan → kesan → alasan**, merujuk SP 10.3 (**Menghuraikan kepentingan amalan jujur dalam hidup bermasyarakat.**). Bandingkan akibat kepada watak yang terlibat dan bincang soalan: **Bagaimanakah fakta berbeza daripada andaian atau khabar angin?**
+**Aktiviti 1 (20 minit) — Aktiviti kandungan asal:** Guru menggunakan dialog 'Jujur Ketika Bertindak' m/s93 dan cerita 'Amalan Jujur Perlu Dicontohi' m/s94. Murid menghuraikan dua akibat jika berlaku tidak jujur ketika berurusan atau menolong masyarakat (SP10.3). Guru menyemak bukti hasil individu murid.
 
-**Aktiviti 2 (20 minit) — Dialog dan emosi:** Murid menjalankan dialog ringkas dua versi, menyatakan kesan kedua-duanya dan menulis satu ayat perspektif pihak yang terlibat untuk SP 10.4 (**Mengekspresikan perasaan berkaitan dengan amalan jujur dalam hidup bermasyarakat.**). Guru semak hubungan alasan, emosi dan nilai.
+**Aktiviti 2 (20 minit) — Aktiviti kandungan asal:** Guru menunjukkan situasi 'Berniaga Secara Jujur' m/s95 yang melibatkan timbang dan harga barangan. Murid mengekspresikan satu perasaan bersebab apabila perniagaan dilakukan secara jujur (SP10.4). Guru menyemak bukti hasil individu murid.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak justifikasi serta dua kesan bagi SP 10.3 dan ayat perasaan yang sesuai bagi SP 10.4. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menilai dua akibat tidak jujur dan satu ayat perasaan dengan alasan daripada kisah peniaga (SP10.3–10.4). Murid membetulkan satu respons selepas maklum balas guru.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **kejujuran**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — halaman belum dipadankan; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 10 m/s 93–95 (PDF 96–98); dialog, fabel, permainan atau latihan asal dipadankan kepada aktiviti PdP 029 dan SP DSKP.
+
+**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — Unit 10, m/s 93–95 (PDF 96–98) disemak secara visual; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

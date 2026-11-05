@@ -1,0 +1,540 @@
+{
+  "date": "2026-11-05",
+  "status": "VISUAL_BOOK_ACTIVITY_SOURCE_REVIEWED_30_CORE_Y4_NOT_FINAL_READY",
+  "source_book_file_id": "1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j",
+  "source_pdf_sha256": "87a388b739d8a7c7b99c4bfbfc25d3f5dd9e3d1a6016973806db806d2f4b2e11",
+  "scope": "30 Year4 core RPH Units5-14, no supplementary exact activity approval, no real teacher account delivery or Word A4 approval",
+  "method": "Direct inspection of original full textbook unit pages; activity and visual SP anchors recorded per RPH, distinct from one-page cover proof.",
+  "records": [
+    {
+      "year": 4,
+      "unit": 5,
+      "lesson": 13,
+      "printed": [
+        38,
+        40
+      ],
+      "pdf": [
+        44,
+        46
+      ],
+      "sp_codes": [
+        "5.1",
+        "5.2"
+      ],
+      "evidence": "Sopan Santun Dengan Jiran, dialog panggilan video, Anugerah Berhemah, Mari Uji Diri"
+    },
+    {
+      "year": 4,
+      "unit": 5,
+      "lesson": 14,
+      "printed": [
+        41,
+        42
+      ],
+      "pdf": [
+        47,
+        48
+      ],
+      "sp_codes": [
+        "5.3",
+        "5.4"
+      ],
+      "evidence": "Sopan Santun Dengan Jiran, dialog panggilan video, Anugerah Berhemah, Mari Uji Diri"
+    },
+    {
+      "year": 4,
+      "unit": 5,
+      "lesson": 15,
+      "printed": [
+        43,
+        44
+      ],
+      "pdf": [
+        49,
+        50
+      ],
+      "sp_codes": [
+        "5.5"
+      ],
+      "evidence": "Sopan Santun Dengan Jiran, dialog panggilan video, Anugerah Berhemah, Mari Uji Diri"
+    },
+    {
+      "year": 4,
+      "unit": 6,
+      "lesson": 16,
+      "printed": [
+        46,
+        49
+      ],
+      "pdf": [
+        52,
+        55
+      ],
+      "sp_codes": [
+        "6.1",
+        "6.2"
+      ],
+      "evidence": "Semarak Amalan Menghormati Jiran, Suri Teladan, borang temu bual, Bangga Menghormati Jiran"
+    },
+    {
+      "year": 4,
+      "unit": 6,
+      "lesson": 17,
+      "printed": [
+        50,
+        52
+      ],
+      "pdf": [
+        56,
+        58
+      ],
+      "sp_codes": [
+        "6.3",
+        "6.4"
+      ],
+      "evidence": "Semarak Amalan Menghormati Jiran, Suri Teladan, borang temu bual, Bangga Menghormati Jiran"
+    },
+    {
+      "year": 4,
+      "unit": 6,
+      "lesson": 18,
+      "printed": [
+        53,
+        54
+      ],
+      "pdf": [
+        59,
+        60
+      ],
+      "sp_codes": [
+        "6.5"
+      ],
+      "evidence": "Semarak Amalan Menghormati Jiran, Suri Teladan, borang temu bual, Bangga Menghormati Jiran"
+    },
+    {
+      "year": 4,
+      "unit": 7,
+      "lesson": 19,
+      "printed": [
+        56,
+        58
+      ],
+      "pdf": [
+        62,
+        64
+      ],
+      "sp_codes": [
+        "7.1",
+        "7.2"
+      ],
+      "evidence": "Sayangi Jiran, Kasihi Jiran Kita, Sifat Penyayang Pendorong Kejayaan, Mari Uji Diri"
+    },
+    {
+      "year": 4,
+      "unit": 7,
+      "lesson": 20,
+      "printed": [
+        59,
+        60
+      ],
+      "pdf": [
+        65,
+        66
+      ],
+      "sp_codes": [
+        "7.3",
+        "7.4"
+      ],
+      "evidence": "Sayangi Jiran, Kasihi Jiran Kita, Sifat Penyayang Pendorong Kejayaan, Mari Uji Diri"
+    },
+    {
+      "year": 4,
+      "unit": 7,
+      "lesson": 21,
+      "printed": [
+        61,
+        62
+      ],
+      "pdf": [
+        67,
+        68
+      ],
+      "sp_codes": [
+        "7.5"
+      ],
+      "evidence": "Sayangi Jiran, Kasihi Jiran Kita, Sifat Penyayang Pendorong Kejayaan, Mari Uji Diri"
+    },
+    {
+      "year": 4,
+      "unit": 8,
+      "lesson": 22,
+      "printed": [
+        64,
+        66
+      ],
+      "pdf": [
+        70,
+        72
+      ],
+      "sp_codes": [
+        "8.1",
+        "8.2"
+      ],
+      "evidence": "Karnival Kanak-Kanak Taman Seroja, Adil Demi Keamanan, Berlian Jiranku, Mari Uji Diri"
+    },
+    {
+      "year": 4,
+      "unit": 8,
+      "lesson": 23,
+      "printed": [
+        67,
+        69
+      ],
+      "pdf": [
+        73,
+        75
+      ],
+      "sp_codes": [
+        "8.3",
+        "8.4"
+      ],
+      "evidence": "Karnival Kanak-Kanak Taman Seroja, Adil Demi Keamanan, Berlian Jiranku, Mari Uji Diri"
+    },
+    {
+      "year": 4,
+      "unit": 8,
+      "lesson": 24,
+      "printed": [
+        70,
+        72
+      ],
+      "pdf": [
+        76,
+        78
+      ],
+      "sp_codes": [
+        "8.5"
+      ],
+      "evidence": "Karnival Kanak-Kanak Taman Seroja, Adil Demi Keamanan, Berlian Jiranku, Mari Uji Diri"
+    },
+    {
+      "year": 4,
+      "unit": 9,
+      "lesson": 25,
+      "printed": [
+        74,
+        76
+      ],
+      "pdf": [
+        80,
+        82
+      ],
+      "sp_codes": [
+        "9.1",
+        "9.2"
+      ],
+      "evidence": "Bertindak Berani Demi Kesejahteraan, Saya Menegur Jiran Terima, komik Cabaran Diharungi, Uji Diri"
+    },
+    {
+      "year": 4,
+      "unit": 9,
+      "lesson": 26,
+      "printed": [
+        77,
+        79
+      ],
+      "pdf": [
+        83,
+        85
+      ],
+      "sp_codes": [
+        "9.3",
+        "9.4"
+      ],
+      "evidence": "Bertindak Berani Demi Kesejahteraan, Saya Menegur Jiran Terima, komik Cabaran Diharungi, Uji Diri"
+    },
+    {
+      "year": 4,
+      "unit": 9,
+      "lesson": 27,
+      "printed": [
+        80,
+        82
+      ],
+      "pdf": [
+        86,
+        88
+      ],
+      "sp_codes": [
+        "9.5"
+      ],
+      "evidence": "Bertindak Berani Demi Kesejahteraan, Saya Menegur Jiran Terima, komik Cabaran Diharungi, Uji Diri"
+    },
+    {
+      "year": 4,
+      "unit": 10,
+      "lesson": 28,
+      "printed": [
+        84,
+        86
+      ],
+      "pdf": [
+        90,
+        92
+      ],
+      "sp_codes": [
+        "10.1",
+        "10.2"
+      ],
+      "evidence": "Kumar memulangkan skuter jiran, Kisah Anak Jiranku, Kuiz Roda Kejujuran, Penanda Buku Kejujuran"
+    },
+    {
+      "year": 4,
+      "unit": 10,
+      "lesson": 29,
+      "printed": [
+        87,
+        89
+      ],
+      "pdf": [
+        93,
+        95
+      ],
+      "sp_codes": [
+        "10.3",
+        "10.4"
+      ],
+      "evidence": "Kumar memulangkan skuter jiran, Kisah Anak Jiranku, Kuiz Roda Kejujuran, Penanda Buku Kejujuran"
+    },
+    {
+      "year": 4,
+      "unit": 10,
+      "lesson": 30,
+      "printed": [
+        90,
+        92
+      ],
+      "pdf": [
+        96,
+        98
+      ],
+      "sp_codes": [
+        "10.5"
+      ],
+      "evidence": "Kumar memulangkan skuter jiran, Kisah Anak Jiranku, Kuiz Roda Kejujuran, Penanda Buku Kejujuran"
+    },
+    {
+      "year": 4,
+      "unit": 11,
+      "lesson": 31,
+      "printed": [
+        94,
+        96
+      ],
+      "pdf": [
+        100,
+        102
+      ],
+      "sp_codes": [
+        "11.1",
+        "11.2"
+      ],
+      "evidence": "Nelson dan Romazi kerajinan jiran, Kerajinan Asas Kesejahteraan, Travelling File, silang kata Uji Diri"
+    },
+    {
+      "year": 4,
+      "unit": 11,
+      "lesson": 32,
+      "printed": [
+        97,
+        98
+      ],
+      "pdf": [
+        103,
+        104
+      ],
+      "sp_codes": [
+        "11.3",
+        "11.4"
+      ],
+      "evidence": "Nelson dan Romazi kerajinan jiran, Kerajinan Asas Kesejahteraan, Travelling File, silang kata Uji Diri"
+    },
+    {
+      "year": 4,
+      "unit": 11,
+      "lesson": 33,
+      "printed": [
+        99,
+        100
+      ],
+      "pdf": [
+        105,
+        106
+      ],
+      "sp_codes": [
+        "11.5"
+      ],
+      "evidence": "Nelson dan Romazi kerajinan jiran, Kerajinan Asas Kesejahteraan, Travelling File, silang kata Uji Diri"
+    },
+    {
+      "year": 4,
+      "unit": 12,
+      "lesson": 34,
+      "printed": [
+        102,
+        104
+      ],
+      "pdf": [
+        108,
+        110
+      ],
+      "sp_codes": [
+        "12.1",
+        "12.2"
+      ],
+      "evidence": "blog Saya dan Jiran, Bekerjasama Demi Kebaikan Semua, Pesta Tanggung, Roda Raksasa"
+    },
+    {
+      "year": 4,
+      "unit": 12,
+      "lesson": 35,
+      "printed": [
+        105,
+        107
+      ],
+      "pdf": [
+        111,
+        113
+      ],
+      "sp_codes": [
+        "12.3",
+        "12.4"
+      ],
+      "evidence": "blog Saya dan Jiran, Bekerjasama Demi Kebaikan Semua, Pesta Tanggung, Roda Raksasa"
+    },
+    {
+      "year": 4,
+      "unit": 12,
+      "lesson": 36,
+      "printed": [
+        108,
+        110
+      ],
+      "pdf": [
+        114,
+        116
+      ],
+      "sp_codes": [
+        "12.5"
+      ],
+      "evidence": "blog Saya dan Jiran, Bekerjasama Demi Kebaikan Semua, Pesta Tanggung, Roda Raksasa"
+    },
+    {
+      "year": 4,
+      "unit": 13,
+      "lesson": 37,
+      "printed": [
+        112,
+        114
+      ],
+      "pdf": [
+        118,
+        120
+      ],
+      "sp_codes": [
+        "13.1",
+        "13.2"
+      ],
+      "evidence": "Kesederhanaan Menjalin Kemesraan, siaran Instagram, Dompet Kecil Untuk Jiranku, Mari Uji Diri"
+    },
+    {
+      "year": 4,
+      "unit": 13,
+      "lesson": 38,
+      "printed": [
+        115,
+        117
+      ],
+      "pdf": [
+        121,
+        123
+      ],
+      "sp_codes": [
+        "13.3",
+        "13.4"
+      ],
+      "evidence": "Kesederhanaan Menjalin Kemesraan, siaran Instagram, Dompet Kecil Untuk Jiranku, Mari Uji Diri"
+    },
+    {
+      "year": 4,
+      "unit": 13,
+      "lesson": 39,
+      "printed": [
+        118,
+        120
+      ],
+      "pdf": [
+        124,
+        126
+      ],
+      "sp_codes": [
+        "13.5"
+      ],
+      "evidence": "Kesederhanaan Menjalin Kemesraan, siaran Instagram, Dompet Kecil Untuk Jiranku, Mari Uji Diri"
+    },
+    {
+      "year": 4,
+      "unit": 14,
+      "lesson": 40,
+      "printed": [
+        122,
+        124
+      ],
+      "pdf": [
+        128,
+        130
+      ],
+      "sp_codes": [
+        "14.1",
+        "14.2"
+      ],
+      "evidence": "perayaan tarian singa, Senang Hati Bertoleransi, Kempen Toleransi, Kesabaran Kunci Kebahagiaan"
+    },
+    {
+      "year": 4,
+      "unit": 14,
+      "lesson": 41,
+      "printed": [
+        125,
+        127
+      ],
+      "pdf": [
+        131,
+        133
+      ],
+      "sp_codes": [
+        "14.3",
+        "14.4"
+      ],
+      "evidence": "perayaan tarian singa, Senang Hati Bertoleransi, Kempen Toleransi, Kesabaran Kunci Kebahagiaan"
+    },
+    {
+      "year": 4,
+      "unit": 14,
+      "lesson": 42,
+      "printed": [
+        128,
+        130
+      ],
+      "pdf": [
+        134,
+        136
+      ],
+      "sp_codes": [
+        "14.5"
+      ],
+      "evidence": "perayaan tarian singa, Senang Hati Bertoleransi, Kempen Toleransi, Kesabaran Kunci Kebahagiaan"
+    }
+  ]
+}

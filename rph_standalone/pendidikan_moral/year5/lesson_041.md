@@ -17,14 +17,16 @@ Murid menghuraikan atau menilai berdasarkan **14.3: Membuat justifikasi kesan pe
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Pelbagai kumpulan komuniti berbincang tentang tarikh acara bersama**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Peta akibat:** Guru beri dua penghujung kepada situasi. Murid bina peta **pilihan → kesan → alasan**, merujuk SP 14.3 (**Membuat justifikasi kesan pengabaian amalan toleransi dalam hidup bermasyarakat.**). Bandingkan akibat kepada watak yang terlibat dan bincang soalan: **Bagaimana menyelesaikan perbezaan tanpa menyakiti pihak lain?**
+**Aktiviti 1 (20 minit) — Kandungan buku teks asal:** Guru memaparkan artikel 'Bertoleransi Membentuk Perpaduan' m/s133 yang mengandungi kisah bertimbang rasa ketika menggunakan komputer serta kemudahan awam. Murid menghuraikan dua kepentingan toleransi untuk perpaduan masyarakat (SP14.3). Guru menyemak hasil individu murid.
 
-**Aktiviti 2 (20 minit) — Dialog dan emosi:** Murid menjalankan dialog ringkas dua versi, menyatakan kesan kedua-duanya dan menulis satu ayat perspektif pihak yang terlibat untuk SP 14.4 (**Mengekspresikan perasaan berkaitan dengan amalan toleransi dalam hidup bermasyarakat.**). Guru semak hubungan alasan, emosi dan nilai.
+**Aktiviti 2 (20 minit) — Kandungan buku teks asal:** Guru menggunakan aktiviti 'Bertoleransi Elakkan Sengketa' m/s134 dan peta minda burung merak m/s135. Murid mengekspresikan satu perasaan bersebab apabila pertelingkahan diselesaikan secara tolak ansur (SP14.4). Guru menyemak hasil individu murid.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak justifikasi serta dua kesan bagi SP 14.3 dan ayat perasaan yang sesuai bagi SP 14.4. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menilai dua kepentingan toleransi dan satu ayat perasaan bersebab (SP14.3–14.4). Murid membetulkan satu jawapan selepas maklum balas guru.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **toleransi**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — halaman belum dipadankan; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 14 m/s 133–135 (PDF 136–138); contoh kegiatan, foto, projek atau latihan asal diolah bagi PdP 041 dan SP yang sedia ada.
+
+**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — Unit 14 m/s 133–135 (PDF 136–138) disahkan melalui semakan visual; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

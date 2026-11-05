@@ -1,0 +1,181 @@
+{
+  "date": "2026-11-05",
+  "state": "SOURCE_HOLD_IN_STAGING",
+  "source_provenance": "All 24 ID links found under Super Minds 1 Audio Unzipped/CD1 or CD2, which is not Year4 Get Smart Plus 4",
+  "original_folder": "1vRIoINoYFHpBiBew73WYTQc_qMCLZtlh",
+  "year": 4,
+  "expected_textbook": "Get Smart Plus 4",
+  "observed_source_textbook": "Super Minds 1",
+  "lesson_count": 19,
+  "route_count": 24,
+  "rows": [
+    {
+      "lesson": 7,
+      "reference": "CD1 Track 9",
+      "source_drive_file_id": "1FWD8yWIYH8qw0qgXRsjLgpcakl-FV5Jd",
+      "parent_folder": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50",
+      "file_name": "CD1-09.wma"
+    },
+    {
+      "lesson": 8,
+      "reference": "CD1 Track 11",
+      "source_drive_file_id": "1vf0CXmq7XumG9aAa_tglZ_haghztiG9G",
+      "parent_folder": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50",
+      "file_name": "CD1-11.wma"
+    },
+    {
+      "lesson": 9,
+      "reference": "CD1 Track 12",
+      "source_drive_file_id": "1eaoHB3Mv1yZWj53KaVJNY_9q7M3ag3C1",
+      "parent_folder": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50",
+      "file_name": "CD1-12.wma"
+    },
+    {
+      "lesson": 9,
+      "reference": "CD1 Track 13",
+      "source_drive_file_id": "1XHx5n_Ajd8uhnm-0kV7TzGcOu510_WBH",
+      "parent_folder": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50",
+      "file_name": "CD1-13.wma"
+    },
+    {
+      "lesson": 11,
+      "reference": "CD1 Track 16",
+      "source_drive_file_id": "1OzT7ZXRtOKwNBcQ9kYcHHjT2o_X8uOqa",
+      "parent_folder": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50",
+      "file_name": "CD1-16.wma"
+    },
+    {
+      "lesson": 12,
+      "reference": "CD1 Track 17",
+      "source_drive_file_id": "1f083A06NlIo0NkZqbRH_XM_OkobuU4oY",
+      "parent_folder": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50",
+      "file_name": "CD1-17.wma"
+    },
+    {
+      "lesson": 17,
+      "reference": "CD1 Track 19",
+      "source_drive_file_id": "1J7bjab5zvMHsf8nn_HM7dzDZb3wrNJAl",
+      "parent_folder": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50",
+      "file_name": "CD1-19.wma"
+    },
+    {
+      "lesson": 22,
+      "reference": "CD1 Track 22",
+      "source_drive_file_id": "1bOffmpd3jucdHKNaKleJpZB7nl9HDCVY",
+      "parent_folder": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50",
+      "file_name": "CD1-22.wma"
+    },
+    {
+      "lesson": 24,
+      "reference": "CD1 Track 25",
+      "source_drive_file_id": "12AuYsXvPu1BUI6BCUVTX67EPQzRxYadW",
+      "parent_folder": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50",
+      "file_name": "CD1-25.wma"
+    },
+    {
+      "lesson": 29,
+      "reference": "CD1 Track 35",
+      "source_drive_file_id": "1BJFfffgxHyiYohapgypE2C212W3177mt",
+      "parent_folder": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50",
+      "file_name": "CD1-35.wma"
+    },
+    {
+      "lesson": 29,
+      "reference": "CD1 Track 36",
+      "source_drive_file_id": "18EUpIGuG87WIzjYifdnPWjXf6OZl41F3",
+      "parent_folder": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50",
+      "file_name": "CD1-36.wma"
+    },
+    {
+      "lesson": 32,
+      "reference": "CD1 Track 35",
+      "source_drive_file_id": "1BJFfffgxHyiYohapgypE2C212W3177mt",
+      "parent_folder": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50",
+      "file_name": "CD1-35.wma"
+    },
+    {
+      "lesson": 48,
+      "reference": "CD1 Track 51",
+      "source_drive_file_id": "1bIvShBruLIYJNVy3i3iY_-L8tudecOQj",
+      "parent_folder": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50",
+      "file_name": "CD1-51.wma"
+    },
+    {
+      "lesson": 59,
+      "reference": "CD1 Track 61",
+      "source_drive_file_id": "1pHZtmTX98352O8oYMv86OqaOMLLV5GmY",
+      "parent_folder": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50",
+      "file_name": "CD1-61.wma"
+    },
+    {
+      "lesson": 97,
+      "reference": "CD2 Track 21",
+      "source_drive_file_id": "1tytx8H50xtmemOXI-Vh0YERcy9HI5CGH",
+      "parent_folder": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv",
+      "file_name": "CD2-21.wma"
+    },
+    {
+      "lesson": 98,
+      "reference": "CD2 Track 21",
+      "source_drive_file_id": "1tytx8H50xtmemOXI-Vh0YERcy9HI5CGH",
+      "parent_folder": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv",
+      "file_name": "CD2-21.wma"
+    },
+    {
+      "lesson": 98,
+      "reference": "CD2 Track 22",
+      "source_drive_file_id": "1aUGlOIiWw4-lFvOtfgoJTna4NXGG5jbc",
+      "parent_folder": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv",
+      "file_name": "CD2-22.wma"
+    },
+    {
+      "lesson": 99,
+      "reference": "CD2 Track 24",
+      "source_drive_file_id": "17GXqR69gZa1ARaqjb59vylcH5vqvKAHT",
+      "parent_folder": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv",
+      "file_name": "CD2-24.wma"
+    },
+    {
+      "lesson": 102,
+      "reference": "CD2 Track 25",
+      "source_drive_file_id": "1dZfNW0fnedxJjSARaHw2fIi8x_k0-vO4",
+      "parent_folder": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv",
+      "file_name": "CD2-25.wma"
+    },
+    {
+      "lesson": 103,
+      "reference": "CD2 Track 26",
+      "source_drive_file_id": "1vpNkB4OWao5iPQvHzEpemQrlNiNhkX4H",
+      "parent_folder": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv",
+      "file_name": "CD2-26.wma"
+    },
+    {
+      "lesson": 103,
+      "reference": "CD2 Track 27",
+      "source_drive_file_id": "10g7LyS5-rGCPgoOgPoYfw-zpBrUZVt9-",
+      "parent_folder": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv",
+      "file_name": "CD2-27.wma"
+    },
+    {
+      "lesson": 103,
+      "reference": "CD2 Track 28",
+      "source_drive_file_id": "1EMV_qy19Ktx3F_lPWtt3JFHPibyHt5du",
+      "parent_folder": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv",
+      "file_name": "CD2-28.wma"
+    },
+    {
+      "lesson": 107,
+      "reference": "CD2 Track 32",
+      "source_drive_file_id": "1t44G8OrP3Zj4Rb7kWUAV_u08PUxl4HhU",
+      "parent_folder": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv",
+      "file_name": "CD2-32.wma"
+    },
+    {
+      "lesson": 110,
+      "reference": "CD2 Track 31",
+      "source_drive_file_id": "1bohxCDWg5pwB4IZnpibBlFoM3z6FkPyP",
+      "parent_folder": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv",
+      "file_name": "CD2-31.wma"
+    }
+  ]
+}

@@ -17,14 +17,16 @@ Murid memperagakan tindakan berdasarkan **6.5: Mengamalkan sikap menghormati jir
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Jiran mengadakan majlis yang perlu dihormati semua penduduk**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Rancang lakonan:** Guru membahagikan watak pelaku, penerima dan pemerhati. Murid merangka ayat serta langkah tindakan selamat untuk **menghormati orang lain dan peraturan**. Murid menyemak persediaan berdasarkan SP 6.5.
+**Aktiviti 1 (20 minit) — Tugasan buku teks:** Guru memperlihatkan permainan papan 'Bangga Menghormati Jiran' m/s53 yang bertanya tentang tindakan menghormati jiran. Murid merancang dua perlakuan hormat untuk pertemuan kejiranan dan giliran memberi bantuan (SP6.5). Guru menyemak hasil murid secara individu.
 
-**Aktiviti 2 (20 minit) — Lakon, semak, ulang:** Murid memperagakan situasi selama 60–90 saat, rakan memerhati dengan senarai semak, kemudian murid mengulang tindakan selepas maklum balas. Murid menetapkan satu amalan yang boleh dilaksanakan dengan selamat di sekolah atau rumah.
+**Aktiviti 2 (20 minit) — Tugasan buku teks:** Guru menggunakan 'Mari Uji Diri' m/s54 yang meminta melengkapkan perkataan tentang menghormati jiran. Murid mempraktikkan dialog meminta izin dan menghormati perbezaan kemudian menyemak jawapan individu (SP6.5). Guru menyemak hasil murid secara individu.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak senarai pemerhatian perlakuan bagi SP 6.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru mencatat dua perlakuan hormat yang diperagakan dan menyemak respons Mari Uji Diri; bukti amalan sebenar memerlukan pemantauan. Murid membetulkan satu respons selepas maklum balas guru.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **hormat**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 4](https://drive.google.com/file/d/1nNUL3EA3TTtuq9mG5fYBpbnGTJuOw-pd/view); [buku teks Tahun 4](https://drive.google.com/file/d/1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j/view) — halaman belum dipadankan; [RPT SK 2026](https://id.scribd.com/document/1032116415/RPT-PMRL-THN-4-SK-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 6, m/s 53–54 (PDF 59–60), aktiviti sumber asal dipadankan kepada PdP 018 dengan olahan CikguLaju.
+
+**Rujukan:** [DSKP SK Tahun 4](https://drive.google.com/file/d/1nNUL3EA3TTtuq9mG5fYBpbnGTJuOw-pd/view); [buku teks Tahun 4](https://drive.google.com/file/d/1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j/view) — Unit 6 m/s 53–54 (PDF 59–60) telah disemak secara visual; [RPT SK 2026](https://id.scribd.com/document/1032116415/RPT-PMRL-THN-4-SK-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
