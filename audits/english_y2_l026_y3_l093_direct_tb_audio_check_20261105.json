@@ -1,6 +1,6 @@
 {
   "audit_date": "2026-11-05",
-  "scope": "Two prior audio-risk Lesson source cross-checks against original scanned Teacher's Books and downloaded WMA headers; no spoken-audio verification, no Telegram sends",
+  "scope": "Two original Teacher's Book checks, downloaded WMA codec/hashes, and a read-only AST check of the original app.py Year1-2 Telegram source ID map. No user transmission or listening-content verification.",
   "overall_release": "SOURCE_EVIDENCE_VERIFIED_DELIVERY_AND_SPEECH_UNVERIFIED",
   "cases": [
     {
@@ -47,12 +47,19 @@
           "duration_seconds": 68.44
         }
       ],
-      "source_grade": "ORIGINAL_TB_PAGE_VISUAL_CHECK_AND_WMA_FILE_ID_HASH_CODEC_PASS",
+      "source_grade": "ORIGINAL_TB_AND_WMA_FILE_SHA256_CODEC_AND_ACTUAL_APP_LITERAL_ROUTE_MATCH",
       "spoken_words_checked": false,
-      "telegram_bot_file_id_route_checked": false,
+      "telegram_bot_file_id_route_checked": true,
       "actual_bot_send_checked": false,
       "final_ready_approved": false,
-      "note": "Original .wma bytes and extension must be retained; no phone-playback requirement."
+      "note": "Original .wma bytes/extension are preserved by the Year1-2 code sender. Actual Telegram send and heard speech are separate pending gates.",
+      "telegram_sender": "_eng12_send_verified_audio",
+      "telegram_sender_source": "app.py AST function line 24620",
+      "telegram_sender_literal_entries": 163,
+      "telegram_sender_route_match": {
+        "CD2_35": true,
+        "CD2_36": true
+      }
     },
     {
       "year": 3,
