@@ -96,9 +96,15 @@ def build_native_input(payload):
     entitlement; this private endpoint only renders, never chooses a source.
     """
     if not isinstance(payload,dict) or set(payload)!={
-            "subject","year","lesson","unit","teacher","layout","format"}:
+            "subject","component","year","lesson","unit","teacher","layout","format"}:
         raise ValueError("Unexpected RPH input")
     subject=payload["subject"]
+    component=payload["component"]
+    if subject=="PJPK":
+        if component not in ("PJ","PK"):
+            raise ValueError("Missing PJPK component")
+    elif component is not None:
+        raise ValueError("Unexpected component")
     year=payload["year"]
     lesson=payload["lesson"]
     unit=payload["unit"]
@@ -179,7 +185,7 @@ def build_native_input(payload):
     # Web document writer. Each heading is generated server-side and closed.
     ai_text="\n".join(name+":\n"+value+"\n" for name,value in labels.items())
     s={
-        "task":"rph","subject":SUBJECTS[subject],
+        "task":"rph","subject":("Pendidikan Jasmani" if component=="PJ" else "Pendidikan Kesihatan" if component=="PK" else SUBJECTS[subject]),
         "year":("Year " if subject=="ENGLISH" else "Tahun ")+str(year),
         "year_label":("Year " if subject=="ENGLISH" else "Tahun ")+str(year),
         "topic":_extract(meta,"Topic","Tajuk") or unit,
