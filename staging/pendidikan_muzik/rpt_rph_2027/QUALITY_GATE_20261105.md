@@ -79,8 +79,8 @@ Fail RPT (.md/.csv), RPH setiap PdP (.md), manifest JSON di `staging/pendidikan_
 - **Tahun 4:** 22 PdP bertambah pemurnian teks buku, ditambah 6 PdP diperiksa kandungan halaman sebelumnya = 28/35; baki 7 PdP ialah slot projek/pengukuhan. Halaman penuh dan skor belum semuanya disahkan secara visual.
 - **Tahun 5:** 15 PdP 12–17, 27–35 dimurnikan berdasarkan Buku Teks Muzik Tahun 5 DBP 2020; baki 20 PdP.
 - **Tahun 6:** 7 PdP (11, 14, 15, 30–33) dimurnikan berdasarkan buku Muzik Tahun 6 DBP 2021; baki 28 PdP. Konflik julat Classical dalam DSKP (1750–1830) dan buku (1750–1850) didokumentasi, DSKP dijadikan rujukan standard.
-- **Tahun 2:** 28/35 RPH mempunyai semakan teks buku, 7 RPH masih menunggu audit bukti setara (termasuk PdP 33 yang hanya draf); PdP 11 dibetulkan daripada halaman 32–33 kepada 36–37 kerana halaman asal berkaitan seni visual. **Tahun 3:** 3/35 RPH PdP 1–3 telah dimurnikan berdasarkan buku DBP 2018 Bahagian 1; 32 lagi menunggu audit individu.
-- **Jumlah kemajuan semakan kandungan buku:** **81/175 semakan terhad**, bukan FINAL READY. **Tiada fail audio diperiksa** dan ZIP Word/PDF lama bukan snapshot terkini.
+- **Tahun 2:** 28/35 RPH mempunyai semakan teks buku, 7 RPH masih menunggu audit bukti setara (termasuk PdP 33 yang hanya draf); PdP 11 dibetulkan daripada halaman 32–33 kepada 36–37 kerana halaman asal berkaitan seni visual. **Tahun 3:** 11/35 RPH PdP 1–11 telah dimurnikan berdasarkan buku DBP 2018; 24 lagi menunggu audit individu.
+- **Jumlah kemajuan semakan kandungan buku:** **89/175 semakan terhad**, bukan FINAL READY. **Tiada fail audio diperiksa** dan ZIP Word/PDF lama bukan snapshot terkini.
 - Semua fail dan ujian kekal di staging. Lihat `SOURCE_BOOK_REGISTER_20261106.md`.
 
 ## Release gates
@@ -94,3 +94,10 @@ Fail RPT (.md/.csv), RPH setiap PdP (.md), manifest JSON di `staging/pendidikan_
 [ ] Kelulusan penerbitan, checksum dan audit non-destructive sebelum `main`
 
 **TIADA kemas kini** kepada `main`, SQLite produksi, Supabase pengguna, Telegram/Web runtime, akses pelanggan atau referral.
+
+
+## Kemaskini tambahan 6 November 2026 — PdP 04–11 Tahun 3
+- Buku Teks Pendidikan Kesenian Tahun 3 DBP 2018 penuh disemak **secara teks** pada halaman bercetak 18–21, 26–29 dan 36–39. **8 RPH Tahun 3** dibaiki berdasarkan aktiviti khusus buku, termasuk nyanyian *Kita Satu Keluarga*, pergerakan empat detik, *Tepuk Amai-amai*, *Putar-putar Roda Ciptaan*, tekstur lagu *Serangga*, kesan bunyi cerita *Gigih Si Labah-labah* dan Muzik Jaz.
+- PdP 05 dan 06 kini berbeza: halaman **20** (latihan) berbanding **21** (persembahan tempo lambat/cepat). PdP 10 merujuk **Audio 39–40 bercetak**; Audio 36–38 asal tidak sesuai dan dipelihara dalam medan audit.
+- Jumlah baharu: **Tahun 3 = 11/35**, **semua tahun = 89/175** semakan teks terhad; **baki 86 RPH** belum diaudit setara. **Tiada yang FINAL READY.**
+- Kod buku gabungan Kesenian tidak disalin ke DSKP Muzik asal. Fail audio sebenar, skor visual dan Word/PDF masih belum disahkan. Nota perincian: `year3/BUKU_TEKS_8_RPH_TEXT_CROSSCHECK_20261106.md`.
