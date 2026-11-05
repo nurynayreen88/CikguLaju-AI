@@ -36,6 +36,53 @@ class PSVBridgeTests(unittest.TestCase):
                     count += 1
         self.assertEqual(count, 210)
 
+    def test_forged_release_json_without_210_signed_textbook_records_cannot_enable(self):
+        """A file claiming approval must not bypass the original-page per-PdP ledger."""
+        import hashlib
+        import json
+        with tempfile.TemporaryDirectory(prefix="psv-release-failclosed-") as tmp:
+            root = Path(tmp)
+            folder = root / "rpt_2027" / "psv"
+            folder.mkdir(parents=True)
+            approval = {
+                "approved": True, "rph_count": 210, "years": [2, 3, 4, 5, 6],
+                "source_review": "INDIVIDUAL_TEXTBOOK_DSKP_PASSED",
+                "runtime_staging": "PASSED",
+                "runtime_staging_commit": "a" * 40,
+                "content_sha256": "b" * 64,
+                "audit_sha256": "c" * 64,
+            }
+            (folder / "psv_release_approval.json").write_text(
+                json.dumps(approval), encoding="utf-8")
+            self.assertFalse(psv._approved(root))
+            self.assertIsNone(psv.load_candidate(5, 1, root=root))
+            self.assertFalse(psv.install(SimpleNamespace(_rph_rows=lambda s: {}),
+                                        enabled=True, root=root))
+
+            audit = root / "rph_standalone" / "psv" / "audits"
+            audit.mkdir(parents=True)
+            raw = (ROOT / "rph_standalone" / "psv" / "audits"
+                   / "psv_individual_210_review_20261105.csv").read_bytes()
+            (audit / "psv_individual_210_review_20261105.csv").write_bytes(raw)
+            approval["audit_sha256"] = hashlib.sha256(raw).hexdigest()
+            (folder / "psv_release_approval.json").write_text(
+                json.dumps(approval), encoding="utf-8")
+            self.assertFalse(psv._individual_source_audit_passed(
+                root, approval["audit_sha256"]))
+            self.assertFalse(psv._approved(root))
+
+    def test_current_candidate_has_no_unsigned_runtime_release(self):
+        """Candidate is allowed for offline QA only until the full release protocol."""
+        self.assertFalse(psv._approved(ROOT))
+        self.assertTrue(all(
+            psv.load_candidate(year, pdp, preview=True) is not None
+            for year in range(2, 7) for pdp in range(1, 43)
+        ))
+        self.assertTrue(all(
+            psv.load_candidate(year, pdp) is None
+            for year in range(2, 7) for pdp in range(1, 43)
+        ))
+
     def test_public_user_cannot_receive_draft_even_with_enabled_flag(self):
         base = {"KELAS": "6 Bestari", "TARIKH": "2026-11-05", "REFLEKSI": ""}
         with patch.dict(os.environ, {psv.FLAG: "1"}):

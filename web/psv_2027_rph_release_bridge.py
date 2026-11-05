@@ -5,6 +5,8 @@ in both 210 RPH and RPT, and an explicit enabled switch. No DB writes.
 """
 from __future__ import annotations
 import csv
+import hashlib
+import io
 import json
 import os
 import re
@@ -68,14 +70,92 @@ def _rpt(year, root):
         return None
 
 
+def _candidate_content_hash(root):
+    """Lock reviewed 210 RPH and five RPT CSVs to a specific immutable revision."""
+    root = Path(root)
+    digest = hashlib.sha256()
+    for year in range(2, 7):
+        source_paths = [
+            Path("rpt_2027") / "psv" / f"RPT_PSV_Tahun_{year}_2027_DRAF.csv"
+        ]
+        source_paths += [
+            Path("rph_standalone") / "psv" / f"year{year}" / f"lesson_{pdp:03d}.md"
+            for pdp in range(1, 43)
+        ]
+        for relative in source_paths:
+            digest.update(relative.as_posix().encode("utf-8"))
+            digest.update(b"\\0")
+            digest.update((root / relative).read_bytes())
+            digest.update(b"\\0")
+    return digest.hexdigest()
+
+
+def _individual_source_audit_passed(root, expected_digest):
+    """Require 210 named evidence records, not a self-declared approval JSON."""
+    file = (Path(root) / "rph_standalone" / "psv" / "audits"
+            / "psv_individual_210_review_20261105.csv")
+    original = file.read_bytes()
+    if not re.fullmatch(r"[a-f0-9]{64}", str(expected_digest or "")):
+        return False
+    if hashlib.sha256(original).hexdigest() != expected_digest:
+        return False
+    rows = list(csv.DictReader(io.StringIO(original.decode("utf-8-sig"))))
+    if len(rows) != 210:
+        return False
+    by_id = {}
+    for row in rows:
+        try:
+            year = int(row["Tahun"])
+            pdp = int(row["PdP"])
+            key = (year, pdp)
+            expected_path = f"rph_standalone/psv/year{year}/lesson_{pdp:03d}.md"
+            markers = set((row["Pemeriksaan_RPH_individu"] or "").split(";"))
+            evidence = row["Bukti_buku"] or ""
+            if (year not in range(2, 7) or pdp not in range(1, 43)
+                or key in by_id or row["Fail_RPH"] != expected_path
+                or row["Kelulusan_terbit"] != "PASSED"
+                or not {"RPH_DIBACA", "BUKU_TEKS_VISUAL_SAH",
+                        "DSKP_SEMANTIC_PASSED"}.issubset(markers)
+                or not evidence.startswith("BUKU_TEKS_VISUAL_SAH:")
+                or "https://" not in evidence or "ms " not in evidence.lower()
+                or (row["Nota_semakan_terbuka"] or "").strip()):
+                return False
+            by_id[key] = True
+        except (KeyError, ValueError, TypeError):
+            return False
+    return len(by_id) == 210
+
+
 def _approved(root):
+    """Fail closed unless source, audit ledger, and native runtime QA all agree."""
     try:
-        data = json.loads((Path(root) / "rpt_2027" / "psv" / "psv_release_approval.json").read_text(encoding="utf-8"))
-        return (data.get("approved") is True and data.get("rph_count") == 210
+        root = Path(root)
+        data = json.loads(
+            (root / "rpt_2027" / "psv" / "psv_release_approval.json")
+            .read_text(encoding="utf-8"))
+        if not (data.get("approved") is True and data.get("rph_count") == 210
                 and data.get("years") == [2, 3, 4, 5, 6]
                 and data.get("source_review") == "INDIVIDUAL_TEXTBOOK_DSKP_PASSED"
-                and data.get("runtime_staging") == "PASSED")
-    except (OSError, ValueError, TypeError):
+                and data.get("runtime_staging") == "PASSED"
+                and re.fullmatch(r"[a-f0-9]{40}",
+                                 str(data.get("runtime_staging_commit") or ""))):
+            return False
+        if not _individual_source_audit_passed(root, data.get("audit_sha256")):
+            return False
+        if data.get("content_sha256") != _candidate_content_hash(root):
+            return False
+        # Every declared release lesson must be READY before installing the bridge.
+        for year in range(2, 7):
+            rows = _rpt(year, str(root.resolve()))
+            if rows is None or any(row["Status"] != "READY" for row in rows):
+                return False
+            for pdp in range(1, 43):
+                path = root / "rph_standalone" / "psv" / f"year{year}" / f"lesson_{pdp:03d}.md"
+                if not re.search(r"(?m)^\\*\\*Status:\\*\\*\\s*READY\\s*$",
+                                 path.read_text(encoding="utf-8")):
+                    return False
+        return True
+    except (OSError, ValueError, TypeError, UnicodeError, csv.Error):
         return False
 
 
