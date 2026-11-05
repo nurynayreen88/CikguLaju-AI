@@ -3,32 +3,32 @@
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
 **Unit / Tajuk:** SERANGGA COMEL  
 **Bidang:** Kreativiti Muzik  
-**SK / SP (RPT sumber):** 3.1.1, 3.1.3
+**SK / SP (RPT sumber; belum penyelarasan kod akhir):** 3.1.1, 3.1.3  
 **Tempoh cadangan:** 30 minit  
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Menghasilkan dan mempersembahkan satu corak irama/melodi ringkas yang memenuhi 3 kriteria rubrik.
+**Objektif pembelajaran (draf boleh ukur):** Menghasilkan sekurang-kurangnya tiga kesan bunyi yang sesuai untuk mengiringi urutan cerita Gigih Si Labah-labah secara berkumpulan.
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Kriteria kejayaan:** Murid memilih bahan bunyi selamat, memadankan tiga kesan bunyi dengan peristiwa dan melaksanakannya mengikut giliran.
 
 **Set Induksi — 4 minit**  
-Guru menepuk corak empat detik; murid menyambung dengan corak yang berbeza sebagai respons.
+Guru menceritakan ringkasan situasi labah-labah membina sarang dan bertanya bunyi yang boleh mewakili kerja, kejutan atau kerosakan.
 
 **Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru membimbing murid meneroka bunyi dan mencipta contoh berdasarkan Menghasilkan kesan bunyi untuk mengiringi persembahan.. Murid menyusun empat kad corak/not.
+Berpandukan cerita halaman 38, setiap kumpulan memilih sekurang-kurangnya tiga adegan dan merancang kesan bunyi menggunakan perkusi badan atau alat perkusi yang selamat.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid mencipta satu corak atau frasa sendiri, menotasi dengan kad/ikon dan mempersembahkannya di hadapan pasangan.
+**Aktiviti 2 — Latihan dan aplikasi (10 minit)**  
+Murid mempersembahkan cerita mengikut urutan; kumpulan menambah kesan bunyi pada adegan yang sesuai, kemudian membandingkan versi dengan dan tanpa kesan bunyi melalui demonstrasi sendiri.
 
 **Pengukuhan & Penilaian — 6 minit**  
-Semak 3 aspek: bilangan detik tepat, kesesuaian bunyi/not dan keupayaan mempersembahkan ciptaan.
+Guru menilai padanan bunyi–adegan, turutan yang tepat dan kerjasama kumpulan.
 
 **Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+Murid menerangkan pilihan satu kesan bunyi dan nilai cekal yang ditunjukkan watak cerita.
 
-**Bahan:** Kad ikon/not, alat perkusi atau rekoder mengikut SP, bahan improvisasi selamat.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 38; **belum disahkan pada halaman buku asal**. RPT sumber menyebut Audio 36-38; **nombor trek belum diaudit dengan fail audio**.
+**Bahan:** Buku teks halaman 38, perkusi badan, alat perkusi dan kad adegan; buku mencetak Audio 39–40 tetapi fail belum disahkan.  
+**Rujukan sumber:** Buku Teks Pendidikan Kesenian Tahun 3 SK (DBP 2018), halaman 38; teks aktiviti disemak terhadap salinan https://anyflip.com/lcinm/flxx/basic. Kod dicetak dalam buku gabungan: 3.2.1, 3.2.3; **bukan pengesahan kod DSKP Pendidikan Muzik berdiri sendiri**. Audio tercetak: 39–40 (bukan 36–38); **fail audio/trek belum diperiksa**.
 
 **Catatan pelaksanaan / pemulihan:** __________________________________________
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_20261106; status DRAF; rujukan halaman dan aktiviti ialah pemeriksaan teks, bukan pengesahan skor visual atau fail audio; kod RPT asal dikekalkan; Word/PDF dan keluaran Telegram–Web belum diuji.
