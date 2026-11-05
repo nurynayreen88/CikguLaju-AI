@@ -5,7 +5,7 @@
 **SK:** 3.1; 4.1  
 **SP:** 3.1.1; 4.1.1; 4.1.2  
 **Buku Teks:** Pendidikan Seni Visual Tahun 5, ms 64–65 (unit ms 58-65)  
-**BBM:** cat poster, kertas warna, gam, berus  
+**BBM:** BT ms 64–65, karya kekwa PdP 028, kertas warna, kepingan mozek kertas, bahan bingkai dan gam
 **Tempoh:** 60 minit
 
 ## Objektif dan kriteria kejayaan
@@ -13,10 +13,10 @@ Murid dapat menilai kemasan karya Bunga Kekwa Mekar serta memberi satu ulasan kr
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan tema Bunga Kekwa Mekar; murid menjelaskan satu pemerhatian visual.
-**Aktiviti 1 (15 minit) — Demonstrasi:** Guru menunjukkan kriteria kemasan dan apresiasi; murid menanda satu pembetulan yang diperlukan.
-**Aktiviti 2 (25 minit) — Amali:** Murid menyiapkan karya, menjalankan galeri meja dan membincangkan: Terangkan hubungan catan dengan struktur mozek.
-**Pengukuhan/Pentaksiran (10 minit):** Guru menilai hasil kemas dengan ulasan dan satu cadangan penambahbaikan dan merekod kemajuan PBD.
+**Aktiviti 1 (15 minit) — Demonstrasi:** Guru menunjukkan BT ms 64–65 tentang kemasan mozek, penegasan bunga serta bingkai karya dengan jalinan.
+**Aktiviti 2 (25 minit) — Amali:** Murid menambah kepingan mozek pada ruang kosong kelopak, mengemas cat latar dan membina bingkai selamat daripada kertas; rakan mengulas harmoni, jalinan dan penegasan bunga kekwa.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menyemak mozek kemas, bingkai lengkap, penggunaan dua istilah seni dan satu ulasan penambahbaikan.
 **Penutup (5 minit):** Murid menyatakan satu kemahiran dan menyimpan karya serta membersihkan ruang.
 **Pembezaan:** Templat langkah bergambar bagi sokongan; murid mahir membanding pilihan reka bentuk.
 **Keselamatan:** Gunakan bahan tidak toksik dan alat tumpul dengan pengawasan guru.
-**Rujukan:** [DSKP Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [Buku Teks Tahun 5](https://anyflip.com/gygr/pity/basic). Aktiviti adalah adaptasi CikguLaju.
+**Rujukan:** [DSKP Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [Buku Teks Tahun 5](https://drive.google.com/file/d/1UA9arc9LrigHx-GccSJFpkTtqfskLFpg/view). Aktiviti adalah adaptasi CikguLaju.

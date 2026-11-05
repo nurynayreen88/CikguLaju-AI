@@ -31,3 +31,9 @@ PDF awam [PENDIDIKAN SENI VISUAL T5 SK.pdf](https://drive.google.com/file/d/1UA9
 - Unit 2 **Sayangilah Habitat Kita** (BT ms 14–21; PdP 005–008): susun atur poster, kedudukan imej ikan bayan, slogan, montaj dan apresiasi diperinci; evidens PBD ditetapkan pada produk yang boleh dilihat.
 - Unit 3 **Jaket Buku Nota** (BT ms 22–29; PdP 009–012): contoh motif kupu-kupu dan teknik potong/koyak sebagai penerokaan; produk akhir kolaj kapal layar pada jaket buku dengan ujian lipatan.
 - Unit 4 **Misi Angkasa** (BT ms 30–37; PdP 013–016): bentuk kon/silinder, botol plastik, cantuman sayap dan kestabilan model roket diperinci.
+
+## Susulan pembaikan terakhir Year 5
+- Unit 6 **Pungguk Rindu Akan Bulan** (ms 50–57, PdP 022–025): gabungan gurisan oil pastel dan kolaj burung pungguk/latar malam diperinci termasuk keselamatan pengguris tumpul.
+- Unit 7 **Bunga Kekwa Mekar** (ms 58–65, PdP 026–029): catan latar, mozek kertas pada kelopak dan bingkai secara jelas. Kulit telur dalam buku ialah contoh; kertas digunakan sebagai adaptasi bahan yang selamat.
+- Projek PdP 020–021 dan 041–042: Buku Teks meletakkan **Projek Penggal Satu pada ms 4–5** dan **Projek Penggal Dua pada ms 46–49**; **CikguLaju mengadaptasi penempatannya selepas Unit 5 dan selepas Unit 10**. Tiada dakwaan ini turutan tepat buku.
+- **42/42 RPH Tahun 5 kini mempunyai rujukan langsung PDF Buku Teks** dan aktiviti projek/unit telah dirapikan berdasarkan semakan imej. Ini belum membuktikan 42/42 lulus pemeriksaan pedagogi penuh atau pengesahan Telegram staging.

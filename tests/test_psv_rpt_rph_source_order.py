@@ -369,6 +369,25 @@ class PSVSourceOrderTests(unittest.TestCase):
                 self.assertIn("1UA9arc9LrigHx-GccSJFpkTtqfskLFpg".lower(), text)
                 self.assertIn("**status:** draf", text)
 
+    def test_year5_pdf_units_6_and_7_and_project_source_positions(self):
+        """Check concrete media and project-placement honesty in Year 5."""
+        required = {
+            20: ("ms 4–5", "cadangan cikgulaju"),
+            21: ("ms 4–5", "cadangan cikgulaju"),
+            22: ("pungguk", "gurisan"), 23: ("gurisan", "kolaj"),
+            24: ("pungguk", "oil pastel"), 25: ("pungguk", "bingkai"),
+            26: ("kekwa", "catan"), 27: ("mozek", "catan"),
+            28: ("mozek", "kelopak"), 29: ("mozek", "bingkai"),
+            41: ("ms 46–49", "cadangan cikgulaju"),
+            42: ("ms 46–49", "cadangan cikgulaju"),
+        }
+        for n, terms in required.items():
+            with self.subTest(pdp=n):
+                body = (ROOT / f"rph_standalone/psv/year5/lesson_{n:03d}.md").read_text(encoding="utf-8").lower()
+                self.assertTrue(all(term in body for term in terms))
+                self.assertIn("1UA9arc9LrigHx-GccSJFpkTtqfskLFpg".lower(), body)
+                self.assertIn("**status:** draf", body)
+
     def test_year5_bunga_kemboja_tekat_is_genuine_couching(self):
         rows = read_csv(PSV / "RPT_PSV_Tahun_5_2027_DRAF.csv")
         keywords = {

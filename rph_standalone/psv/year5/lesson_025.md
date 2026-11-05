@@ -5,7 +5,7 @@
 **SK:** 3.1; 4.1  
 **SP:** 3.1.1; 4.1.1; 4.1.2  
 **Buku Teks:** Pendidikan Seni Visual Tahun 5, ms 56–57 (unit ms 50-57)  
-**BBM:** kertas warna, krayon, pengguris tumpul, gam  
+**BBM:** BT ms 56–57, karya pungguk PdP 024, cebisan kertas warna, oil pastel, kad keras dan gam
 **Tempoh:** 60 minit
 
 ## Objektif dan kriteria kejayaan
@@ -13,10 +13,10 @@ Murid dapat menilai kemasan karya Pungguk Rindu Akan Bulan serta memberi satu ul
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan tema Pungguk Rindu Akan Bulan; murid menjelaskan satu pemerhatian visual.
-**Aktiviti 1 (15 minit) — Demonstrasi:** Guru menunjukkan kriteria kemasan dan apresiasi; murid menanda satu pembetulan yang diperlukan.
-**Aktiviti 2 (25 minit) — Amali:** Murid menyiapkan karya, menjalankan galeri meja dan membincangkan: Ulas tona malam, bentuk burung dan dua teknik penghasilan.
-**Pengukuhan/Pentaksiran (10 minit):** Guru menilai hasil kemas dengan ulasan dan satu cadangan penambahbaikan dan merekod kemajuan PBD.
+**Aktiviti 1 (15 minit) — Demonstrasi:** Guru berpandukan BT ms 56–57 menunjukkan kemasan ranting, bulan, bulu pungguk dan bingkai karya menggunakan kertas berbeza tona.
+**Aktiviti 2 (25 minit) — Amali:** Murid melengkapkan bulu dan ranting melalui kolaj, menguatkan kontra gurisan bulan serta menghias bingkai; pasangan menilai kesan jalinan dan memberi satu cadangan membaiki komposisi.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menilai dua teknik yang jelas, kemasan bingkai, dua istilah seni dan satu cadangan penambahbaikan.
 **Penutup (5 minit):** Murid menyatakan satu kemahiran dan menyimpan karya serta membersihkan ruang.
 **Pembezaan:** Templat langkah bergambar bagi sokongan; murid mahir membanding pilihan reka bentuk.
 **Keselamatan:** Gunakan bahan tidak toksik dan alat tumpul dengan pengawasan guru.
-**Rujukan:** [DSKP Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [Buku Teks Tahun 5](https://anyflip.com/gygr/pity/basic). Aktiviti adalah adaptasi CikguLaju.
+**Rujukan:** [DSKP Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [Buku Teks Tahun 5](https://drive.google.com/file/d/1UA9arc9LrigHx-GccSJFpkTtqfskLFpg/view). Aktiviti adalah adaptasi CikguLaju.
