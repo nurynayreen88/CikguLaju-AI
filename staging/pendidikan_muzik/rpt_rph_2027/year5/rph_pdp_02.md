@@ -2,30 +2,32 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** WASPADA SELALU
-**SK/SP (DSKP Tahun 5):** 2.2.1
+**SK/SP (DSKP/RPT Tahun 5, dikekalkan):** 2.2.1
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Fokus PdP:** Ketepatan tempo dan skor perkusi dengan tanda rehat.
+**Fokus PdP:** Permainan Teroka Bunyi dan latihan dua corak irama perkusi
 
-**Objektif:** Memainkan satu corak irama berpandukan skor dengan tempo tepat pada sekurang-kurangnya 2 daripada 3 percubaan.
+**Objektif:** Menepuk dua corak irama sebelum memainkan kedua-duanya menggunakan perkusi dengan tempo stabil.
 
-**Set induksi (4 minit):** Guru mengetuk empat detik dan memberi jeda; murid mengajuk dan mengenal pasti tempat berhenti.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran yang dinyatakan dalam objektif melalui latihan khusus dan penilaian guru.
 
-**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Murid membaca skor ringkas, menepuk corak irama serta mengenal pasti tanda rehat sebelum memegang alat.
+**Set induksi (4 minit):** Guru memperagakan bunyi kayu tik tok, tamborin dan dram bes; murid mencadangkan perbezaan cara memainkannya.
 
-**Aktiviti 2 — Amali mengikut unit (10 minit):** Kumpulan memainkan corak bergilir dan bersama-sama; guru memberi isyarat masuk/henti serta murid menilai ketepatan tempo. Guru dan murid merujuk tema **WASPADA SELALU**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
+**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Guru menganjurkan empat stesen Permainan Teroka Bunyi halaman 6; setiap kumpulan empat orang bergerak mengikut kad bernombor dan menilai cara bermain alat dengan selamat.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak tiga percubaan dari segi detik, bacaan skor dan rehat; kumpulan mengulang pola yang tidak seragam.
+**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid menepuk Corak Irama 1 dan 2 halaman 7 sebelum mengikut kumpulan alat dan memainkan pola secara bergilir menggunakan kiraan guru; tidak menganggap audio 10–17 sebagai fail yang telah tersedia.
 
-**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Guru menyemak ketepatan tepukan, tempo dan kendalian alat dalam dua pusingan.
 
-**Bahan:** Alat perkusi, skor/ikon irama dan metronom atau tepukan kiraan.
+**Penutup (2 minit):** Murid menunjukkan satu cara memegang dan memainkan perkusi dengan betul. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 6-7; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
+**Bahan:** Empat stesen perkusi, kad nombor, kad corak irama 1/2, loceng atau isyarat guru.
 
-**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 6-7 BELUM disahkan pada buku asal.
+**Rujukan:** Buku Teks Pendidikan Muzik Tahun 5 SK (DBP 2020), halaman 6–7; https://anyflip.com/sgimv/qcts/basic. RPT 2026: https://anyflip.com/eaqot/basd/basic. Nombor audio dalam buku: 10–17 (halaman 7); **nombor bercetak sahaja, bukan pengesahan fail audio**. Kod SP asal dikekalkan, semakan silang skor visual/DSKP belum lengkap.
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_TAHUN5_20261106; sumber buku teks dipadankan pada aktiviti, tidak mewakili pengesahan skor, lesen audio, penjana Word/PDF atau Telegram–Web.
 
 **Refleksi dan pemulihan:** _________________________________________________
 
-**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.
+**Kawalan penerbitan:** DRAF; kekal staging, jangan aktifkan akses pengguna sebelum semua quality gate.

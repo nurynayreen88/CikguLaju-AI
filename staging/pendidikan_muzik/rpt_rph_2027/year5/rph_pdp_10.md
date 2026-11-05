@@ -2,30 +2,32 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** SERUPA TETAPI TIDAK SAMA
-**SK/SP (DSKP Tahun 5):** 2.1.2, 2.1.3
+**SK/SP (DSKP/RPT Tahun 5, dikekalkan):** 2.1.2, 2.1.3
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Fokus PdP:** Nyanyian lagu berkembar dengan tempo stabil.
+**Fokus PdP:** Nyanyian dua lagu berkembar secara serentak
 
-**Objektif:** Menyanyikan frasa atau rangkap dengan pic dan tempo tepat dalam sekurang-kurangnya 2 daripada 3 percubaan.
+**Objektif:** Menyanyikan satu daripada dua bahagian lagu berkembar dengan tempo tepat semasa dua kumpulan bernyanyi serentak.
 
-**Set induksi (4 minit):** Guru memperdengarkan satu frasa lagu, murid mengajuk sambil mengetuk detik mengikut tempo.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran yang dinyatakan dalam objektif melalui latihan khusus dan penilaian guru.
 
-**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Guru memodelkan cara mengambil nafas dan menyanyikan frasa; murid mengajuk secara respons-gema sebelum menyanyi bersama.
+**Set induksi (4 minit):** Guru membimbing murid membandingkan dua melodi berbeza yang boleh dinyanyikan pada detik sama.
 
-**Aktiviti 2 — Amali mengikut unit (10 minit):** Kumpulan menyanyikan bahagian lagu secara bergilir dengan penekanan pada pic dan tempo; pasangan memberi pembetulan dan cuba semula. Guru dan murid merujuk tema **SERUPA TETAPI TIDAK SAMA**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
+**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Kumpulan A berlatih Hot Cross Buns dan kumpulan B Bow Wow Wow pada halaman 26–27, lalu menyatukan dua bahagian dengan tempo yang sama.
 
-**Pengukuhan dan pentaksiran (6 minit):** Guru menyemak pic, tempo dan sebutan dengan senarai semak tiga kriteria; murid mengulang frasa yang belum tepat.
+**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid mengulangi konsep dengan pasangan lagu Waspada Selalu dan Santun di Jalan Raya pada halaman 28–29; guru mengekalkan detik dan menilai keseimbangan kedua-dua kumpulan.
 
-**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Guru menilai kemampuan murid kekal pada bahagian sendiri, pic dan tempo semasa nyanyian serentak.
 
-**Bahan:** Rakaman lagu daripada buku yang sah (jika tersedia), lirik/skor dan pembesar suara.
+**Penutup (2 minit):** Murid menjelaskan maksud lagu berkembar melalui contoh dua kumpulan yang baru dinyanyikan. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 26-29; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
+**Bahan:** Skor rujukan guru halaman 26–29, kad kumpulan A/B dan alat kira detik.
 
-**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 26-29 BELUM disahkan pada buku asal.
+**Rujukan:** Buku Teks Pendidikan Muzik Tahun 5 SK (DBP 2020), halaman 26–29; https://anyflip.com/sgimv/qcts/basic. RPT 2026: https://anyflip.com/eaqot/basd/basic. Nombor audio dalam buku: 49–60; **nombor bercetak sahaja, bukan pengesahan fail audio**. Kod SP asal dikekalkan, semakan silang skor visual/DSKP belum lengkap.
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_TAHUN5_20261106; sumber buku teks dipadankan pada aktiviti, tidak mewakili pengesahan skor, lesen audio, penjana Word/PDF atau Telegram–Web.
 
 **Refleksi dan pemulihan:** _________________________________________________
 
-**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.
+**Kawalan penerbitan:** DRAF; kekal staging, jangan aktifkan akses pengguna sebelum semua quality gate.

@@ -21,7 +21,7 @@
       ],
       "page": "2-5",
       "flags": [
-        "Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 2-5 BELUM disahkan pada buku asal"
+        "SEMAKAN TEKS BUKU 2026-11-06; audio, notasi visual dan Word/PDF belum disahkan"
       ],
       "source_type": "RPT_2026_PUBLIC_VERIFIED_SEQUENCING_BOOK_NOT_VERIFIED",
       "status": "DRAF_STAGING_RPT_ALIGNED_BUT_BOOK_AUDIO_NOT_VERIFIED",
@@ -33,7 +33,16 @@
       "source_week_scope": "2",
       "focus_pdp": "Dinamik forte (f) dan piano (p) dalam nyanyian",
       "focus_kind": "nyanyian",
-      "source_url": "https://anyflip.com/eaqot/basd/basic"
+      "source_url": "https://anyflip.com/eaqot/basd/basic",
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/sgimv/qcts/basic",
+      "source_book_audio_numbers_printed": "1–9",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN5_DIINTEGRASI",
+      "source_rpt_original_flags": [
+        "Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 2-5 BELUM disahkan pada buku asal"
+      ]
     },
     {
       "pdp_id": "MZ-Y5-02",
@@ -46,7 +55,7 @@
       ],
       "page": "6-7",
       "flags": [
-        "Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 6-7 BELUM disahkan pada buku asal"
+        "SEMAKAN TEKS BUKU 2026-11-06; audio, notasi visual dan Word/PDF belum disahkan"
       ],
       "source_type": "RPT_2026_PUBLIC_VERIFIED_SEQUENCING_BOOK_NOT_VERIFIED",
       "status": "DRAF_STAGING_RPT_ALIGNED_BUT_BOOK_AUDIO_NOT_VERIFIED",
@@ -58,7 +67,16 @@
       "source_week_scope": "3",
       "focus_pdp": "Ketepatan tempo dan skor perkusi dengan tanda rehat",
       "focus_kind": "perkusi",
-      "source_url": "https://anyflip.com/eaqot/basd/basic"
+      "source_url": "https://anyflip.com/eaqot/basd/basic",
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/sgimv/qcts/basic",
+      "source_book_audio_numbers_printed": "10–17 (halaman 7)",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN5_DIINTEGRASI",
+      "source_rpt_original_flags": [
+        "Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 6-7 BELUM disahkan pada buku asal"
+      ]
     },
     {
       "pdp_id": "MZ-Y5-03",
@@ -72,7 +90,7 @@
       ],
       "page": "8-9",
       "flags": [
-        "Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 8-9 BELUM disahkan pada buku asal"
+        "SEMAKAN TEKS BUKU 2026-11-06; audio, notasi visual dan Word/PDF belum disahkan"
       ],
       "source_type": "RPT_2026_PUBLIC_VERIFIED_SEQUENCING_BOOK_NOT_VERIFIED",
       "status": "DRAF_STAGING_RPT_ALIGNED_BUT_BOOK_AUDIO_NOT_VERIFIED",
@@ -84,7 +102,16 @@
       "source_week_scope": "4",
       "focus_pdp": "Perubahan bunyi kuat dan lembut semasa permainan perkusi",
       "focus_kind": "perkusi",
-      "source_url": "https://anyflip.com/eaqot/basd/basic"
+      "source_url": "https://anyflip.com/eaqot/basd/basic",
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/sgimv/qcts/basic",
+      "source_book_audio_numbers_printed": "18–19",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN5_DIINTEGRASI",
+      "source_rpt_original_flags": [
+        "Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 8-9 BELUM disahkan pada buku asal"
+      ]
     },
     {
       "pdp_id": "MZ-Y5-04",
@@ -99,7 +126,7 @@
       ],
       "page": "10-12",
       "flags": [
-        "Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 10-12 BELUM disahkan pada buku asal"
+        "SEMAKAN TEKS BUKU 2026-11-06; audio, notasi visual dan Word/PDF belum disahkan"
       ],
       "source_type": "RPT_2026_PUBLIC_VERIFIED_SEQUENCING_BOOK_NOT_VERIFIED",
       "status": "DRAF_STAGING_RPT_ALIGNED_BUT_BOOK_AUDIO_NOT_VERIFIED",
@@ -111,7 +138,16 @@
       "source_week_scope": "6",
       "focus_pdp": "Nyanyian dan gerak mengikut tempo",
       "focus_kind": "geraknyanyi",
-      "source_url": "https://anyflip.com/eaqot/basd/basic"
+      "source_url": "https://anyflip.com/eaqot/basd/basic",
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/sgimv/qcts/basic",
+      "source_book_audio_numbers_printed": "20–26",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN5_DIINTEGRASI",
+      "source_rpt_original_flags": [
+        "Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 10-12 BELUM disahkan pada buku asal"
+      ]
     },
     {
       "pdp_id": "MZ-Y5-05",
@@ -125,7 +161,7 @@
       ],
       "page": "13",
       "flags": [
-        "Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 13 BELUM disahkan pada buku asal"
+        "SEMAKAN TEKS BUKU 2026-11-06; audio, notasi visual dan Word/PDF belum disahkan"
       ],
       "source_type": "RPT_2026_PUBLIC_VERIFIED_SEQUENCING_BOOK_NOT_VERIFIED",
       "status": "DRAF_STAGING_RPT_ALIGNED_BUT_BOOK_AUDIO_NOT_VERIFIED",
@@ -137,7 +173,16 @@
       "source_week_scope": "7",
       "focus_pdp": "Tanda forte (f) dan piano (p) pada skor dan lagu",
       "focus_kind": "dinamik",
-      "source_url": "https://anyflip.com/eaqot/basd/basic"
+      "source_url": "https://anyflip.com/eaqot/basd/basic",
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/sgimv/qcts/basic",
+      "source_book_audio_numbers_printed": "22 (rujukan nota guru) / 24–26 (latihan detik berkaitan)",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN5_DIINTEGRASI",
+      "source_rpt_original_flags": [
+        "Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 13 BELUM disahkan pada buku asal"
+      ]
     },
     {
       "pdp_id": "MZ-Y5-06",
@@ -150,7 +195,7 @@
       ],
       "page": "14-17",
       "flags": [
-        "Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 14-17 BELUM disahkan pada buku asal"
+        "SEMAKAN TEKS BUKU 2026-11-06; audio, notasi visual dan Word/PDF belum disahkan"
       ],
       "source_type": "RPT_2026_PUBLIC_VERIFIED_SEQUENCING_BOOK_NOT_VERIFIED",
       "status": "DRAF_STAGING_RPT_ALIGNED_BUT_BOOK_AUDIO_NOT_VERIFIED",
@@ -162,7 +207,16 @@
       "source_week_scope": "8",
       "focus_pdp": "Gerakan berformasi berdasarkan meter dan tempo",
       "focus_kind": "gerak",
-      "source_url": "https://anyflip.com/eaqot/basd/basic"
+      "source_url": "https://anyflip.com/eaqot/basd/basic",
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/sgimv/qcts/basic",
+      "source_book_audio_numbers_printed": "27–30",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN5_DIINTEGRASI",
+      "source_rpt_original_flags": [
+        "Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 14-17 BELUM disahkan pada buku asal"
+      ]
     },
     {
       "pdp_id": "MZ-Y5-07",
@@ -177,7 +231,7 @@
       ],
       "page": "18-21",
       "flags": [
-        "Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 18-21 BELUM disahkan pada buku asal"
+        "SEMAKAN TEKS BUKU 2026-11-06; audio, notasi visual dan Word/PDF belum disahkan"
       ],
       "source_type": "RPT_2026_PUBLIC_VERIFIED_SEQUENCING_BOOK_NOT_VERIFIED",
       "status": "DRAF_STAGING_RPT_ALIGNED_BUT_BOOK_AUDIO_NOT_VERIFIED",
@@ -189,7 +243,16 @@
       "source_week_scope": "9",
       "focus_pdp": "Gabungan nyanyian dan perkusi mengikut tempo",
       "focus_kind": "ensembel",
-      "source_url": "https://anyflip.com/eaqot/basd/basic"
+      "source_url": "https://anyflip.com/eaqot/basd/basic",
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/sgimv/qcts/basic",
+      "source_book_audio_numbers_printed": "31–40",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN5_DIINTEGRASI",
+      "source_rpt_original_flags": [
+        "Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 18-21 BELUM disahkan pada buku asal"
+      ]
     },
     {
       "pdp_id": "MZ-Y5-08",
@@ -202,7 +265,7 @@
       ],
       "page": "22-23",
       "flags": [
-        "Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 22-23 BELUM disahkan pada buku asal"
+        "SEMAKAN TEKS BUKU 2026-11-06; audio, notasi visual dan Word/PDF belum disahkan"
       ],
       "source_type": "RPT_2026_PUBLIC_VERIFIED_SEQUENCING_BOOK_NOT_VERIFIED",
       "status": "DRAF_STAGING_RPT_ALIGNED_BUT_BOOK_AUDIO_NOT_VERIFIED",
@@ -214,7 +277,16 @@
       "source_week_scope": "10",
       "focus_pdp": "Penjarian asas dan teknik pernafasan rekoder",
       "focus_kind": "rekoder",
-      "source_url": "https://anyflip.com/eaqot/basd/basic"
+      "source_url": "https://anyflip.com/eaqot/basd/basic",
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/sgimv/qcts/basic",
+      "source_book_audio_numbers_printed": "41–48",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN5_DIINTEGRASI",
+      "source_rpt_original_flags": [
+        "Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 22-23 BELUM disahkan pada buku asal"
+      ]
     },
     {
       "pdp_id": "MZ-Y5-09",
@@ -227,7 +299,7 @@
       ],
       "page": "24-25",
       "flags": [
-        "Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 24-25 BELUM disahkan pada buku asal"
+        "SEMAKAN TEKS BUKU 2026-11-06; audio, notasi visual dan Word/PDF belum disahkan"
       ],
       "source_type": "RPT_2026_PUBLIC_VERIFIED_SEQUENCING_BOOK_NOT_VERIFIED",
       "status": "DRAF_STAGING_RPT_ALIGNED_BUT_BOOK_AUDIO_NOT_VERIFIED",
@@ -239,7 +311,16 @@
       "source_week_scope": "11",
       "focus_pdp": "Mencipta melodi menggunakan not B, A, G",
       "focus_kind": "ciptaan",
-      "source_url": "https://anyflip.com/eaqot/basd/basic"
+      "source_url": "https://anyflip.com/eaqot/basd/basic",
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/sgimv/qcts/basic",
+      "source_book_audio_numbers_printed": "Tiada trek khusus; permainan Nama Berirama",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN5_DIINTEGRASI",
+      "source_rpt_original_flags": [
+        "Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 24-25 BELUM disahkan pada buku asal"
+      ]
     },
     {
       "pdp_id": "MZ-Y5-10",
@@ -253,7 +334,7 @@
       ],
       "page": "26-29",
       "flags": [
-        "Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 26-29 BELUM disahkan pada buku asal"
+        "SEMAKAN TEKS BUKU 2026-11-06; audio, notasi visual dan Word/PDF belum disahkan"
       ],
       "source_type": "RPT_2026_PUBLIC_VERIFIED_SEQUENCING_BOOK_NOT_VERIFIED",
       "status": "DRAF_STAGING_RPT_ALIGNED_BUT_BOOK_AUDIO_NOT_VERIFIED",
@@ -265,7 +346,16 @@
       "source_week_scope": "12",
       "focus_pdp": "Nyanyian lagu berkembar dengan tempo stabil",
       "focus_kind": "nyanyian",
-      "source_url": "https://anyflip.com/eaqot/basd/basic"
+      "source_url": "https://anyflip.com/eaqot/basd/basic",
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/sgimv/qcts/basic",
+      "source_book_audio_numbers_printed": "49–60",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN5_DIINTEGRASI",
+      "source_rpt_original_flags": [
+        "Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 26-29 BELUM disahkan pada buku asal"
+      ]
     },
     {
       "pdp_id": "MZ-Y5-11",
@@ -279,7 +369,7 @@
       ],
       "page": "30-33",
       "flags": [
-        "Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 30-33 BELUM disahkan pada buku asal"
+        "SEMAKAN TEKS BUKU 2026-11-06; audio, notasi visual dan Word/PDF belum disahkan"
       ],
       "source_type": "RPT_2026_PUBLIC_VERIFIED_SEQUENCING_BOOK_NOT_VERIFIED",
       "status": "DRAF_STAGING_RPT_ALIGNED_BUT_BOOK_AUDIO_NOT_VERIFIED",
@@ -291,7 +381,16 @@
       "source_week_scope": "13",
       "focus_pdp": "Membaca notasi dan mencipta melodi B, A, G",
       "focus_kind": "ciptaan",
-      "source_url": "https://anyflip.com/eaqot/basd/basic"
+      "source_url": "https://anyflip.com/eaqot/basd/basic",
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/sgimv/qcts/basic",
+      "source_book_audio_numbers_printed": "Tiada audio bercetak khusus untuk permainan",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN5_DIINTEGRASI",
+      "source_rpt_original_flags": [
+        "Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 30-33 BELUM disahkan pada buku asal"
+      ]
     },
     {
       "pdp_id": "MZ-Y5-12",
@@ -1017,7 +1116,7 @@
   "source_rpt_2026_checked_date": "2026-11-05",
   "project_count_dskp": 2,
   "source_year": 2026,
-  "partial_textbook_crosscheck_count": 15,
+  "partial_textbook_crosscheck_count": 26,
   "source_textbook_url": "https://anyflip.com/ziqkn/yatu/basic",
   "source_textbook_edition": "DBP 2020 KSSR Semakan 2017"
 }

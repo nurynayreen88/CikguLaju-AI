@@ -2,30 +2,32 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** SANTUN DI JALAN RAYA
-**SK/SP (DSKP Tahun 5):** 2.3.1
+**SK/SP (DSKP/RPT Tahun 5, dikekalkan):** 2.3.1
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Fokus PdP:** Gerakan berformasi berdasarkan meter dan tempo.
+**Fokus PdP:** Meter 2/4 dan 3/4 serta Permainan Gerak Berirama
 
-**Objektif:** Menghasilkan dan mempersembahkan dua urutan gerakan yang mengikut meter serta tempo muzik.
+**Objektif:** Mencipta dua gerakan dalam meter 3/4 dengan tekanan pada detik pertama dan mempersembahkannya mengikut kiraan stabil.
 
-**Set induksi (4 minit):** Murid menandakan detik dengan langkah setempat ketika guru memperdengarkan petikan muzik.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran yang dinyatakan dalam objektif melalui latihan khusus dan penilaian guru.
 
-**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Guru menunjukkan hubungan meter/tempo dengan pola gerak; murid menguji dua pola yang tidak mengganggu ruang rakan.
+**Set induksi (4 minit):** Guru menepuk pola dua detik dan tiga detik lalu murid mengenal pasti tekanan pada detik pertama.
 
-**Aktiviti 2 — Amali mengikut unit (10 minit):** Kumpulan merancang formasi, menyusun dua urutan gerak, dan mempersembahkan semula setelah menerima maklum balas. Guru dan murid merujuk tema **SANTUN DI JALAN RAYA**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
+**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Guru membimbing perbandingan meter pada halaman 14 dan memodelkan gerakan harian meter 3/4 halaman 15 seperti sembur-lap cermin, sidai-kepit dan tarik langsir.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak keselarasan tempo, ketepatan meter, koordinasi dan disiplin keselamatan gerakan.
+**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid bermain Permainan Gerak Berirama halaman 16–17; kumpulan memilih dua kad gerakan badan, menyusun pola tiga detik dan mempersembahkan dua pusingan dengan penilaian rakan sebaya.
 
-**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Semak tekanan pada detik satu, ketepatan kiraan tiga detik dan keselamatan pergerakan.
 
-**Bahan:** Audio muzik dibenarkan, ruang lapang dan kad kiraan/formasi.
+**Penutup (2 minit):** Murid menepuk semula meter 3/4 serta menyatakan beza detik kuat pertama dengan detik seterusnya. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 14-17; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
+**Bahan:** Kad gambar gerak, ruang selamat, kad meter, tepukan/metronom; Audio 27–30 hanya nombor cetak.
 
-**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 14-17 BELUM disahkan pada buku asal.
+**Rujukan:** Buku Teks Pendidikan Muzik Tahun 5 SK (DBP 2020), halaman 14–17; https://anyflip.com/sgimv/qcts/basic. RPT 2026: https://anyflip.com/eaqot/basd/basic. Nombor audio dalam buku: 27–30; **nombor bercetak sahaja, bukan pengesahan fail audio**. Kod SP asal dikekalkan, semakan silang skor visual/DSKP belum lengkap.
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_TAHUN5_20261106; sumber buku teks dipadankan pada aktiviti, tidak mewakili pengesahan skor, lesen audio, penjana Word/PDF atau Telegram–Web.
 
 **Refleksi dan pemulihan:** _________________________________________________
 
-**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.
+**Kawalan penerbitan:** DRAF; kekal staging, jangan aktifkan akses pengguna sebelum semua quality gate.

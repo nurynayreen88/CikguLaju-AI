@@ -2,30 +2,32 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** SANTUN DI JALAN RAYA
-**SK/SP (DSKP Tahun 5):** 2.1.1, 2.1.3, 2.3.1
+**SK/SP (DSKP/RPT Tahun 5, dikekalkan):** 2.1.1, 2.1.3, 2.3.1
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Fokus PdP:** Nyanyian dan gerak mengikut tempo.
+**Fokus PdP:** Nyanyian Santun di Jalan Raya dan tempo cepat/lambat
 
-**Objektif:** Menyanyi dengan pic dan tempo serta menunjukkan dua pola gerakan berirama yang sepadan.
+**Objektif:** Menyanyikan satu frasa Santun di Jalan Raya dengan pic tepat serta membezakan dua tempo dalam latihan detik.
 
-**Set induksi (4 minit):** Guru memperdengarkan lagu bertema unit; murid menandakan detik dengan langkah di tempat.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran yang dinyatakan dalam objektif melalui latihan khusus dan penilaian guru.
 
-**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Murid berlatih frasa nyanyian secara respons-gema dan mengikuti ketukan tempo guru.
+**Set induksi (4 minit):** Murid menyatakan contoh keselamatan jalan raya yang dinyatakan dalam tema lagu.
 
-**Aktiviti 2 — Amali mengikut unit (10 minit):** Secara berkumpulan, murid menambah dua gerak selamat pada nyanyian dan mempersembahkannya bersama iringan. Guru dan murid merujuk tema **SANTUN DI JALAN RAYA**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
+**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Guru membimbing nyanyian Santun di Jalan Raya halaman 11, menyemak sebutan dan tanda pernafasan, serta memperkenalkan perbezaan tempo lambat dan cepat.
 
-**Pengukuhan dan pentaksiran (6 minit):** Perhatikan pic, tempo dan padanan gerak; murid membetulkan satu aspek sebelum mengulang.
+**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid menjalankan aktiviti hantaran objek mengikut detik halaman 12 dalam arah ditetapkan pada dua tempo yang dihasilkan guru dengan tepukan/metronom; menyanyi semula satu rangkap dengan tempo sesuai.
 
-**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Nilai pic, sebutan dan keupayaan mengekalkan detik ketika tempo berubah.
 
-**Bahan:** Lagu/skor unit, alat ketuk tempo dan ruang gerakan.
+**Penutup (2 minit):** Murid menerangkan tempo largo/allegro secara mudah dan satu amalan keselamatan di jalan raya. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 10-12; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
+**Bahan:** Skor lagu halaman 11, objek selamat untuk hantaran, metronom atau kiraan guru.
 
-**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 10-12 BELUM disahkan pada buku asal.
+**Rujukan:** Buku Teks Pendidikan Muzik Tahun 5 SK (DBP 2020), halaman 10–12; https://anyflip.com/sgimv/qcts/basic. RPT 2026: https://anyflip.com/eaqot/basd/basic. Nombor audio dalam buku: 20–26; **nombor bercetak sahaja, bukan pengesahan fail audio**. Kod SP asal dikekalkan, semakan silang skor visual/DSKP belum lengkap.
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_TAHUN5_20261106; sumber buku teks dipadankan pada aktiviti, tidak mewakili pengesahan skor, lesen audio, penjana Word/PDF atau Telegram–Web.
 
 **Refleksi dan pemulihan:** _________________________________________________
 
-**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.
+**Kawalan penerbitan:** DRAF; kekal staging, jangan aktifkan akses pengguna sebelum semua quality gate.

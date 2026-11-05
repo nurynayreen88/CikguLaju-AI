@@ -2,30 +2,32 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** WASPADA SELALU
-**SK/SP (DSKP Tahun 5):** 2.1.1, 2.1.4
+**SK/SP (DSKP/RPT Tahun 5, dikekalkan):** 2.1.1, 2.1.4
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Fokus PdP:** Dinamik forte (f) dan piano (p) dalam nyanyian.
+**Fokus PdP:** Nyanyian: latihan vokal, permainan dinamik Da Dum serta lagu Waspada Selalu
 
-**Objektif:** Menyanyikan frasa atau rangkap dengan pic dan tempo tepat dalam sekurang-kurangnya 2 daripada 3 percubaan.
+**Objektif:** Menyanyikan satu frasa Waspada Selalu dengan pic, tempo serta simbol dinamik p/f tepat dalam dua daripada tiga percubaan.
 
-**Set induksi (4 minit):** Guru memperdengarkan satu frasa lagu, murid mengajuk sambil mengetuk detik mengikut tempo.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran yang dinyatakan dalam objektif melalui latihan khusus dan penilaian guru.
 
-**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Guru memodelkan cara mengambil nafas dan menyanyikan frasa; murid mengajuk secara respons-gema sebelum menyanyi bersama.
+**Set induksi (4 minit):** Guru membezakan bunyi kuat dan lembut menggunakan sebutan da dan dum; murid menunjukkan kad p atau f.
 
-**Aktiviti 2 — Amali mengikut unit (10 minit):** Kumpulan menyanyikan bahagian lagu secara bergilir dengan penekanan pada pic dan tempo; pasangan memberi pembetulan dan cuba semula. Guru dan murid merujuk tema **WASPADA SELALU**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
+**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Guru membimbing latihan vokal halaman 3 secara ajuk frasa dan kawalan nafas, kemudian permainan Da Dum halaman 4 menggunakan kad piano (p) dan forte (f).
 
-**Pengukuhan dan pentaksiran (6 minit):** Guru menyemak pic, tempo dan sebutan dengan senarai semak tiga kriteria; murid mengulang frasa yang belum tepat.
+**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid mengajuk lagu Waspada Selalu halaman 5, mengenal tanda nafas dan menyanyikan satu rangkap dengan dinamik mengikut skor, menggunakan kiraan atau suara guru apabila audio sebenar belum tersedia.
 
-**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Guru menilai pic, tempo dan dinamik dalam tiga percubaan dan membimbing semula frasa yang kurang tepat.
 
-**Bahan:** Rakaman lagu daripada buku yang sah (jika tersedia), lirik/skor dan pembesar suara.
+**Penutup (2 minit):** Murid menyatakan perbezaan p dengan f dan menunjukkan kawalan dinamik pada satu frasa. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 2-5; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
+**Bahan:** Kad p/f, salinan skor yang dibenarkan, kad detik, suara guru. Audio bercetak 1–9 tidak dibekalkan tanpa bukti fail.
 
-**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 2-5 BELUM disahkan pada buku asal.
+**Rujukan:** Buku Teks Pendidikan Muzik Tahun 5 SK (DBP 2020), halaman 2–5; https://anyflip.com/sgimv/qcts/basic. RPT 2026: https://anyflip.com/eaqot/basd/basic. Nombor audio dalam buku: 1–9; **nombor bercetak sahaja, bukan pengesahan fail audio**. Kod SP asal dikekalkan, semakan silang skor visual/DSKP belum lengkap.
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_TAHUN5_20261106; sumber buku teks dipadankan pada aktiviti, tidak mewakili pengesahan skor, lesen audio, penjana Word/PDF atau Telegram–Web.
 
 **Refleksi dan pemulihan:** _________________________________________________
 
-**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.
+**Kawalan penerbitan:** DRAF; kekal staging, jangan aktifkan akses pengguna sebelum semua quality gate.

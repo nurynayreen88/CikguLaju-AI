@@ -107,7 +107,7 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
             2: (28, set(range(1, 12)) | set(range(14, 26)) | set(range(28, 33))),
             3: (28, set(range(1, 12)) | set(range(14, 24)) | set(range(27, 34))),
             4: (22, {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 17, 18, 19, 20, 21, 22, 23, 24, 28, 29, 30}),
-            5: (15, {12, 13, 14, 15, 16, 17, 27, 28, 29, 30, 31, 32, 33, 34, 35}),
+            5: (26, set(range(1, 18)) | set(range(27, 36))),
             6: (7, {11, 14, 15, 30, 31, 32, 33}),
         }
         for year, (count, pdp_numbers) in expected.items():
@@ -147,6 +147,13 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
         year4 = json.loads((MUSIC / "rpt_rph_2027" / "year4" / "pdp_manifest.json").read_text(encoding="utf-8"))
         self.assertEqual(year4["partial_page_content_check_count"], 6)
         y5 = json.loads((MUSIC / "rpt_rph_2027" / "year5" / "pdp_manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(y5["partial_textbook_crosscheck_count"], 26)
+        self.assertIn("Da Dum", (MUSIC / "rpt_rph_2027" / "year5" / "rph_pdp_01.md").read_text(encoding="utf-8"))
+        self.assertIn("Permainan Teroka Bunyi", (MUSIC / "rpt_rph_2027" / "year5" / "rph_pdp_02.md").read_text(encoding="utf-8"))
+        self.assertIn("meter 3/4", (MUSIC / "rpt_rph_2027" / "year5" / "rph_pdp_06.md").read_text(encoding="utf-8"))
+        self.assertIn("Lightly Row", (MUSIC / "rpt_rph_2027" / "year5" / "rph_pdp_08.md").read_text(encoding="utf-8"))
+        self.assertIn("Dua Kekal Dua Mengembara", (MUSIC / "rpt_rph_2027" / "year5" / "rph_pdp_11.md").read_text(encoding="utf-8"))
+        self.assertFalse(any(r.get("source_book_audio_file_verified") for r in y5["pdps"][:11]))
         self.assertEqual(y5["pdps"][30]["source_rpt_original_page"], "80-83")
         self.assertEqual(y5["pdps"][31]["source_rpt_original_page"], "80-83")
         self.assertEqual(y5["pdps"][30]["page"], "80-81")

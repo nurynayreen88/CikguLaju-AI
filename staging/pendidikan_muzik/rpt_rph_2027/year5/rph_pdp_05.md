@@ -2,30 +2,32 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** SANTUN DI JALAN RAYA
-**SK/SP (DSKP Tahun 5):** 1.1.2, 2.1.4
+**SK/SP (DSKP/RPT Tahun 5, dikekalkan):** 1.1.2, 2.1.4
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Fokus PdP:** Tanda forte (f) dan piano (p) pada skor dan lagu.
+**Fokus PdP:** Cipta dan persembahkan dinamik p/f pada Santun di Jalan Raya
 
-**Objektif:** Mengenal dan mengaplikasikan simbol f dan p dalam satu frasa nyanyian pada dua tahap bunyi berbeza.
+**Objektif:** Meletakkan dua simbol dinamik p dan f pada lirik serta menyanyikan frasa mengikut simbol pilihan.
 
-**Set induksi (4 minit):** Guru memperdengarkan dua tahap kelantangan dengan suara, murid menamakan perbezaannya.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran yang dinyatakan dalam objektif melalui latihan khusus dan penilaian guru.
 
-**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Murid memadankan f (forte) dan p (piano) pada kad/ruang skor; guru menunjukkan kawalan suara.
+**Set induksi (4 minit):** Guru menyanyi frasa sama secara perlahan dan kuat; murid mengangkat kad piano atau forte.
 
-**Aktiviti 2 — Amali mengikut unit (10 minit):** Kumpulan mempersembahkan frasa dengan perubahan f/p yang ditandakan pada skor dan memerhati keselarasan. Guru dan murid merujuk tema **SANTUN DI JALAN RAYA**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
+**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Murid bekerja dalam kumpulan untuk meletakkan simbol p dan f pada bahagian lagu Santun di Jalan Raya di halaman 13, kemudian menerangkan pilihan mereka.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak pengecaman dua simbol dan perubahan dinamik yang boleh didengar.
+**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Setiap kumpulan mempersembahkan frasa berpandukan susunan dinamik dan membandingkan sama ada simbol tersebut sesuai dengan suasana lagu.
 
-**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Guru memeriksa dua simbol ditandakan betul, kawalan suara dan alasan pemilihan dinamik.
 
-**Bahan:** Kad forte/piano, skor ringkas dan rakaman lagu.
+**Penutup (2 minit):** Murid memberikan satu sebab penggunaan dinamik kuat atau lembut dalam lagu. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 13; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
+**Bahan:** Lirik rujukan guru, kad p/f, pen penanda boleh padam dan suara guru.
 
-**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 13 BELUM disahkan pada buku asal.
+**Rujukan:** Buku Teks Pendidikan Muzik Tahun 5 SK (DBP 2020), halaman 13; https://anyflip.com/sgimv/qcts/basic. RPT 2026: https://anyflip.com/eaqot/basd/basic. Nombor audio dalam buku: 22 (rujukan nota guru) / 24–26 (latihan detik berkaitan); **nombor bercetak sahaja, bukan pengesahan fail audio**. Kod SP asal dikekalkan, semakan silang skor visual/DSKP belum lengkap.
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_TAHUN5_20261106; sumber buku teks dipadankan pada aktiviti, tidak mewakili pengesahan skor, lesen audio, penjana Word/PDF atau Telegram–Web.
 
 **Refleksi dan pemulihan:** _________________________________________________
 
-**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.
+**Kawalan penerbitan:** DRAF; kekal staging, jangan aktifkan akses pengguna sebelum semua quality gate.

@@ -2,30 +2,32 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** BUSAK PAKUI
-**SK/SP (DSKP Tahun 5):** 2.1.1, 2.1.3, 2.2.1
+**SK/SP (DSKP/RPT Tahun 5, dikekalkan):** 2.1.1, 2.1.3, 2.2.1
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Fokus PdP:** Gabungan nyanyian dan perkusi mengikut tempo.
+**Fokus PdP:** Nyanyian dan ensembel perkusi Busak Pakui
 
-**Objektif:** Menggabungkan nyanyian dan perkusi dalam satu persembahan kecil mengikut tempo seragam.
+**Objektif:** Menyanyikan satu frasa Busak Pakui dan memainkan satu pola iringan perkusi mengikut tempo sama.
 
-**Set induksi (4 minit):** Guru membahagikan murid kepada penyanyi dan pemain perkusi untuk memberi respons pada satu pola detik.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran yang dinyatakan dalam objektif melalui latihan khusus dan penilaian guru.
 
-**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Kumpulan nyanyian mempelajari frasa lagu, sementara kumpulan perkusi menepuk pola iringan berdasarkan skor.
+**Set induksi (4 minit):** Guru memperkenalkan Busak Pakui sebagai lagu tradisional Sarawak dan memodelkan senandung hmm dengan suara.
 
-**Aktiviti 2 — Amali mengikut unit (10 minit):** Kedua-dua kumpulan bergabung, mencuba tempo bersama, bertukar peranan dan membaiki bahagian yang kurang tepat. Guru dan murid merujuk tema **BUSAK PAKUI**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
+**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Guru membimbing nyanyian halaman 19 mengikut pic/tempo, termasuk bahagian bersenandung hmm, kemudian murid menepuk enam corak irama A–F pada halaman 20.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak pic, tempo dan koordinasi ensembel mengikut rubrik tiga aspek.
+**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Kelas dibahagi empat kumpulan seperti nota halaman 21: satu kumpulan menyanyi Busak Pakui dan tiga kumpulan memainkan iringan perkusi; murid bertukar peranan mengikut isyarat guru.
 
-**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Senarai semak frasa nyanyian, pola perkusi dan koordinasi masuk ensembel.
 
-**Bahan:** Rakaman lagu, skor mudah dan alat perkusi.
+**Penutup (2 minit):** Murid menyebut satu kemahiran membunyikan perkusi tanpa menenggelamkan nyanyian. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 18-21; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
+**Bahan:** Buku teks halaman 18–21, pola perkusi A–F, alat perkusi sekolah, suara guru.
 
-**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 18-21 BELUM disahkan pada buku asal.
+**Rujukan:** Buku Teks Pendidikan Muzik Tahun 5 SK (DBP 2020), halaman 18–21; https://anyflip.com/sgimv/qcts/basic. RPT 2026: https://anyflip.com/eaqot/basd/basic. Nombor audio dalam buku: 31–40; **nombor bercetak sahaja, bukan pengesahan fail audio**. Kod SP asal dikekalkan, semakan silang skor visual/DSKP belum lengkap.
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_TAHUN5_20261106; sumber buku teks dipadankan pada aktiviti, tidak mewakili pengesahan skor, lesen audio, penjana Word/PDF atau Telegram–Web.
 
 **Refleksi dan pemulihan:** _________________________________________________
 
-**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.
+**Kawalan penerbitan:** DRAF; kekal staging, jangan aktifkan akses pengguna sebelum semua quality gate.

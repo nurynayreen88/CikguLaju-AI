@@ -114,3 +114,10 @@ Fail RPT (.md/.csv), RPH setiap PdP (.md), manifest JSON di `staging/pendidikan_
 - PdP 32 menggunakan *Permainan Buah Lazat* halaman 94–95: ciptaan corak **lapan detik** dengan minimum tiga ikon buah; Audio 75 tercetak.
 - PdP 33 menggunakan *Muzik Rock* halaman 96: peranan penyanyi, gitar, bes, dram dan rock balada; tiada nombor trek dinyatakan.
 - Tahun 3 kini **28/35** semakan teks buku; tujuh PdP projek/pengukuhan memerlukan audit kurikulum/pentaksiran berasingan. Keseluruhan **106/175** semakan terhad, **69** belum diperiksa setara. TIADA status FINAL READY.
+
+
+## Pusingan 6 November 2026 — Tahun 5 PdP 01–11
+- Buku Teks Muzik Tahun 5 DBP 2020, halaman 2–33 disemak secara teks untuk **11 RPH tambahan**, aktiviti spesifik ditulis semula.
+- Pembetulan yang penting: *Da Dum* dinamik, Teroka Bunyi, ensembel Waspada Selalu, *Santun di Jalan Raya* dinamik/tempo, meter 3/4, *Busak Pakui*, rekoder *Lightly Row*, *Nama Berirama*, lagu berkembar dan permainan melodi 3/4 vs 4/4.
+- **Tahun 5 26/35** semakan teks, **semua T2–6 117/175**, baki **58** semakan setara; **0 FINAL READY**. Audit lengkap: `year5/BUKU_TAHUN5_PDP01_11_TEXT_AUDIT_20261106.md`.
+- Fail audio sebenar, skor visual, tarikh cuti negeri RPT 2027, pembaca Word/PDF dan integrasi Telegram/Web kekal blocker.

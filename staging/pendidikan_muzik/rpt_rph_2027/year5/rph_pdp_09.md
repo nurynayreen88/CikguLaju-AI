@@ -2,30 +2,32 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** BUSAK PAKUI
-**SK/SP (DSKP Tahun 5):** 3.1.1
+**SK/SP (DSKP/RPT Tahun 5, dikekalkan):** 3.1.1
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Fokus PdP:** Mencipta melodi menggunakan not B, A, G.
+**Fokus PdP:** Cipta melodi B, A, G menggunakan nama bersuku kata
 
-**Objektif:** Mencipta satu corak irama atau melodi pendek yang dapat dipersembahkan dengan sekurang-kurangnya tiga kriteria tepat.
+**Objektif:** Mencipta dan memainkan satu melodi pendek berasaskan suku kata nama menggunakan not B, A dan G.
 
-**Set induksi (4 minit):** Guru memperdengarkan pola soalan empat detik; murid menjawab dengan tepukan yang berbeza.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran yang dinyatakan dalam objektif melalui latihan khusus dan penilaian guru.
 
-**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Murid mengenal not yang dibenarkan DSKP, menyusun kad not B, A, G atau corak yang sesuai dan menguji bunyinya.
+**Set induksi (4 minit):** Guru meminta murid memecahkan nama sendiri kepada suku kata dan menepuk mengikut sebutan.
 
-**Aktiviti 2 — Amali mengikut unit (10 minit):** Pasangan menulis pola ciptaan pada kad/skor, memainkan dan membaiki satu bahagian selepas ulasan rakan. Guru dan murid merujuk tema **BUSAK PAKUI**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
+**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Berpandukan Permainan Nama Berirama halaman 24, murid memilih nilai not kuaver, krocet, minim atau semibrif untuk setiap suku kata serta menepuk coraknya.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak bilangan detik, logik susunan not/corak serta kelancaran persembahan ciptaan.
+**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid memilih not B, A dan G, menyusun corak pada baluk halaman 25 lalu mempersembahkannya dengan rekoder secara individu atau pasangan.
 
-**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Guru menyemak padanan suku kata dengan durasi, not B/A/G dan kebolehan memainkan hasil ciptaan.
 
-**Bahan:** Kad not, helaian skor, alat perkusi atau rekoder mengikut SP.
+**Penutup (2 minit):** Murid berkongsi satu perubahan melodi yang masih mengekalkan irama nama. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 24-25; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
+**Bahan:** Kad suku kata, kad nilai not, baluk kosong, pensel dan rekoder.
 
-**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 24-25 BELUM disahkan pada buku asal.
+**Rujukan:** Buku Teks Pendidikan Muzik Tahun 5 SK (DBP 2020), halaman 24–25; https://anyflip.com/sgimv/qcts/basic. RPT 2026: https://anyflip.com/eaqot/basd/basic. Nombor audio dalam buku: Tiada trek khusus; permainan Nama Berirama; **nombor bercetak sahaja, bukan pengesahan fail audio**. Kod SP asal dikekalkan, semakan silang skor visual/DSKP belum lengkap.
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_TAHUN5_20261106; sumber buku teks dipadankan pada aktiviti, tidak mewakili pengesahan skor, lesen audio, penjana Word/PDF atau Telegram–Web.
 
 **Refleksi dan pemulihan:** _________________________________________________
 
-**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.
+**Kawalan penerbitan:** DRAF; kekal staging, jangan aktifkan akses pengguna sebelum semua quality gate.

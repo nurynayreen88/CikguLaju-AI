@@ -2,30 +2,32 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** SERUPA TETAPI TIDAK SAMA
-**SK/SP (DSKP Tahun 5):** 1.1.1, 3.1.1
+**SK/SP (DSKP/RPT Tahun 5, dikekalkan):** 1.1.1, 3.1.1
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Fokus PdP:** Membaca notasi dan mencipta melodi B, A, G.
+**Fokus PdP:** Permainan Ini Melodiku dan Dua Kekal Dua Mengembara
 
-**Objektif:** Mencipta satu corak irama atau melodi pendek yang dapat dipersembahkan dengan sekurang-kurangnya tiga kriteria tepat.
+**Objektif:** Mencipta corak empat bar dan menghasilkan satu melodi B, A, G yang dapat dibaca dan dimainkan oleh rakan.
 
-**Set induksi (4 minit):** Guru memperdengarkan pola soalan empat detik; murid menjawab dengan tepukan yang berbeza.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran yang dinyatakan dalam objektif melalui latihan khusus dan penilaian guru.
 
-**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Murid mengenal not yang dibenarkan DSKP, menyusun kad not B, A, G atau corak yang sesuai dan menguji bunyinya.
+**Set induksi (4 minit):** Guru menepuk satu corak meter 3/4 dan meminta murid menulis nilai not asas pada kad.
 
-**Aktiviti 2 — Amali mengikut unit (10 minit):** Pasangan menulis pola ciptaan pada kad/skor, memainkan dan membaiki satu bahagian selepas ulasan rakan. Guru dan murid merujuk tema **SERUPA TETAPI TIDAK SAMA**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
+**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Melalui Ini Melodiku halaman 30–31, murid menyusun empat bar corak irama meter 3/4, menyebut ta/ti-ti/ta-a dan mengaitkan kad not pada baluk.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak bilangan detik, logik susunan not/corak serta kelancaran persembahan ciptaan.
+**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid melaksanakan Dua Kekal Dua Mengembara halaman 32–33 menggunakan not B, A, G dan meter 4/4 bagi empat bar, lalu dua ahli berpindah berkongsi serta bermain melodi ciptaan kumpulan.
 
-**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Semak bilangan bar dan nilai detik bagi setiap meter, ketepatan notasi dan kebolehan memainkan melodi; bezakan meter 3/4 dengan 4/4.
 
-**Bahan:** Kad not, helaian skor, alat perkusi atau rekoder mengikut SP.
+**Penutup (2 minit):** Murid menyatakan satu perbezaan corak meter 3/4 dengan 4/4 dalam dua permainan. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 30-33; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
+**Bahan:** Kad corak irama, kad gambar, baluk kosong, buku manuskrip, rekoder bersih.
 
-**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 30-33 BELUM disahkan pada buku asal.
+**Rujukan:** Buku Teks Pendidikan Muzik Tahun 5 SK (DBP 2020), halaman 30–33; https://anyflip.com/sgimv/qcts/basic. RPT 2026: https://anyflip.com/eaqot/basd/basic. Nombor audio dalam buku: Tiada audio bercetak khusus untuk permainan; **nombor bercetak sahaja, bukan pengesahan fail audio**. Kod SP asal dikekalkan, semakan silang skor visual/DSKP belum lengkap.
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_TAHUN5_20261106; sumber buku teks dipadankan pada aktiviti, tidak mewakili pengesahan skor, lesen audio, penjana Word/PDF atau Telegram–Web.
 
 **Refleksi dan pemulihan:** _________________________________________________
 
-**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.
+**Kawalan penerbitan:** DRAF; kekal staging, jangan aktifkan akses pengguna sebelum semua quality gate.

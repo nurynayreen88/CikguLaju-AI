@@ -2,30 +2,32 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** BUSAK PAKUI
-**SK/SP (DSKP Tahun 5):** 2.4.1
+**SK/SP (DSKP/RPT Tahun 5, dikekalkan):** 2.4.1
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Fokus PdP:** Penjarian asas dan teknik pernafasan rekoder.
+**Fokus PdP:** Latihan rekoder B, A, G, C', D' dan lagu Lightly Row
 
-**Objektif:** Memainkan satu frasa rekoder dengan 3 daripada 4 aspek teknik (penjarian, ton, tempo, pernafasan) yang betul.
+**Objektif:** Memainkan satu frasa Lightly Row dengan penjarian, pernafasan dan tempo yang tepat dalam dua percubaan.
 
-**Set induksi (4 minit):** Guru memperagakan satu bunyi rekoder yang bersih dan satu yang berhembus kuat; murid menjelaskan perbezaannya.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran yang dinyatakan dalam objektif melalui latihan khusus dan penilaian guru.
 
-**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Murid menunjukkan postur, penjarian, pernafasan dan perlidahan ‘tu’ sebelum memainkan not sasaran E hingga D’ mengikut kemampuan.
+**Set induksi (4 minit):** Guru mengimbas semula penjarian B, A, G, C' dan D' yang pernah dipelajari.
 
-**Aktiviti 2 — Amali mengikut unit (10 minit):** Murid membaca satu frasa skor pendek, memainkan perlahan secara individu dan mengulang secara berpasangan setelah semakan penjarian. Guru dan murid merujuk tema **BUSAK PAKUI**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
+**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Murid menepuk dan mengajuk latihan rekoder halaman 22 menggunakan not B, A, G, C' dan D', memeriksa tanda nafas pada akhir frasa.
 
-**Pengukuhan dan pentaksiran (6 minit):** Guru membuat senarai semak penjarian, ton, tempo dan pernafasan; murid menunjukkan pembaikan pada percubaan kedua.
+**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid memainkan frasa Lightly Row halaman 23 dengan penjarian dan perlidahan lembut; pasangan membandingkan ketepatan frasa sebelum latihan kedua.
 
-**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Guru menyemak penjarian, tanda nafas, tempo dan dinamik mudah menggunakan senarai semak.
 
-**Bahan:** Rekoder bersih, carta penjarian not, skor asas dan alat penentu tempo.
+**Penutup (2 minit):** Murid membersihkan rekoder dan menerangkan satu tanda nafas pada skor. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 22-23; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
+**Bahan:** Rekoder individu bersih, carta penjarian B/A/G/C'/D', skor Lightly Row halaman 23.
 
-**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 22-23 BELUM disahkan pada buku asal.
+**Rujukan:** Buku Teks Pendidikan Muzik Tahun 5 SK (DBP 2020), halaman 22–23; https://anyflip.com/sgimv/qcts/basic. RPT 2026: https://anyflip.com/eaqot/basd/basic. Nombor audio dalam buku: 41–48; **nombor bercetak sahaja, bukan pengesahan fail audio**. Kod SP asal dikekalkan, semakan silang skor visual/DSKP belum lengkap.
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_TAHUN5_20261106; sumber buku teks dipadankan pada aktiviti, tidak mewakili pengesahan skor, lesen audio, penjana Word/PDF atau Telegram–Web.
 
 **Refleksi dan pemulihan:** _________________________________________________
 
-**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.
+**Kawalan penerbitan:** DRAF; kekal staging, jangan aktifkan akses pengguna sebelum semua quality gate.
