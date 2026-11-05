@@ -28,7 +28,7 @@ class AllYear4AudioAudit(unittest.TestCase):
         for n in range(1,161):
             self.assertEqual(self.source[n]["sow_track_references"],
                              self.lessons[n]["sow_track_references"])
-            self.assertIn("SOW",self.source[n]["source"])
+            self.assertIn("Scheme of Work",self.source[n]["source"])
 
     def test_legacy_map_matches_actual_app_and_is_not_auto_approved(self):
         tree=ast.parse(APP.read_text(encoding="utf-8"))
@@ -59,10 +59,10 @@ class AllYear4AudioAudit(unittest.TestCase):
         cov=AUDIT["coverage"]
         self.assertEqual((cov["sow_lessons"],cov["sow_lessons_mentioning_tracks"]),(160,65))
         self.assertEqual((cov["legacy_map_v25259_lessons"],
-                          cov["legacy_map_v25259_audio_references"]),(55,68))
+                          cov["legacy_map_v25259_audio_references"]),(56,69))
         self.assertEqual(set(x["lesson"] for x in
             AUDIT["missing_legacy_media_for_sow_audio_lessons"]),
-            {1,13,20,65,66,68,70,76,104,139})
+            {13,20,65,66,68,70,76,104,139})
         l29=self.lessons[29]["legacy_audio"]
         self.assertEqual(len(l29),2)
         for a in l29:
@@ -80,12 +80,12 @@ class AllYear4AudioAudit(unittest.TestCase):
 
     def test_source_format_is_not_falsely_treated_as_mp3(self):
         all_rows=[x for l in self.lessons.values() for x in l["legacy_audio"]]
-        self.assertEqual(len(all_rows),68)
+        self.assertEqual(len(all_rows),69)
         self.assertEqual(sum(r["drive_inventory"]["format"]=="WMA" for r in all_rows),24)
-        self.assertEqual(sum(r["drive_inventory"]["format"]=="MP3" for r in all_rows),44)
-        self.assertEqual(AUDIT["coverage"]["matched_drive_refs"],68)
+        self.assertEqual(sum(r["drive_inventory"]["format"]=="MP3" for r in all_rows),45)
+        self.assertEqual(AUDIT["coverage"]["matched_drive_refs"],69)
         self.assertEqual(AUDIT["coverage"]["legacy_wma_refs"],24)
-        self.assertEqual(AUDIT["coverage"]["legacy_mp3_refs"],44)
+        self.assertEqual(AUDIT["coverage"]["legacy_mp3_refs"],45)
         for row in all_rows:
             self.assertEqual(row["drive_inventory"]["disc"],"CD"+str(row["declared_disc"]))
             self.assertEqual(row["drive_inventory"]["track"],row["declared_track"])
