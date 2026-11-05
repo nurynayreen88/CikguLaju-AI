@@ -18,6 +18,7 @@ class Bot:
         self.messages = []
         self.marked = []
         self.delegated = []
+        self.db_rows = []
 
     def send(self, cid, message, keyboard=None):
         self.messages.append((cid, message, keyboard or []))
@@ -53,7 +54,9 @@ class Bot:
             "_payment_request": self.payment,
             "_mark_payment_request": self.mark,
             "_latest_pending_payment": lambda cid: None,
-            "_sb_request": lambda method, path, **kw: [],
+            "_sb_request": lambda method, path, **kw: (
+                self.db_rows if path.startswith(
+                    "pioneer_entitlements?telegram_user_id=eq.") else []),
             "state": {},
             "send": self.send,
         }
@@ -123,6 +126,63 @@ class TestStalePioneerApproval(unittest.TestCase):
         self.assertTrue(kwargs["verified"])
         self.assertRegex(args[2], r"^pioneer-payment:201:[a-f0-9]{32}$")
         self.assertEqual(self.bot.requests[1]["status"], "approved")
+
+    def test_revoked_member_is_reactivated_only_after_explicit_admin_confirmation(self):
+        previous = [{"entitlement": "PIONEER_LIFETIME",
+                     "payment_reference": "old-payment-verified",
+                     "revoked_at": "2026-11-05T22:39:22Z"}]
+        self.bot.db_rows = previous
+        # The bridge was installed with a closure using ns, so it sees the
+        # replacement durable lookup without re-installing wrappers.
+        with patch("pioneer_telegram.reactivate_revoked_pioneer",
+                   return_value={"approved": True, "reactivated": True}) as restore:
+            self.ns["callback"](ADMIN, "admin_approve|1")
+            self.assertEqual(self.bot.marked, [])
+            restore.assert_not_called()
+            self.ns["callback"](ADMIN, "admin_approve|1|201")
+            restore.assert_called_once()
+            args, kw = restore.call_args
+            self.assertEqual((args[1], args[3], args[4]), (PAYER, ADMIN, 1))
+            self.assertTrue(kw["verified"])
+            self.assertEqual(self.bot.marked[0][:3], (1, "approved", ADMIN))
+            self.grant_mock.assert_not_called()
+
+    def test_revoked_member_rpc_failure_preserves_pending_and_history(self):
+        self.bot.db_rows = [
+            {"entitlement":"PIONEER_LIFETIME",
+             "revoked_at":"2026-11-05T22:39:22Z"}]
+        with patch("pioneer_telegram.reactivate_revoked_pioneer",
+                   side_effect=RuntimeError("Matching pending verified proof required")) as restore:
+            self.ns["callback"](ADMIN, "admin_approve|1|201")
+        restore.assert_called_once()
+        self.assertEqual(self.bot.requests[1]["status"], "pending")
+        self.assertEqual(self.bot.marked, [])
+        self.grant_mock.assert_not_called()
+        self.assertIn("belum diaktifkan", self.bot.messages[-1][1])
+
+    def test_revoked_member_unconfirmed_result_never_marks_payment_approved(self):
+        self.bot.db_rows = [
+            {"entitlement":"PIONEER_LIFETIME",
+             "revoked_at":"2026-11-05T22:39:22Z"}]
+        with patch("pioneer_telegram.reactivate_revoked_pioneer",
+                   return_value={"approved": False}) as restore:
+            self.ns["callback"](ADMIN, "admin_approve|1|201")
+        restore.assert_called_once()
+        self.assertEqual(self.bot.marked, [])
+        self.assertEqual(self.bot.requests[1]["status"], "pending")
+
+    def test_no_reactivation_if_proof_is_missing_or_owner_differs(self):
+        self.bot.db_rows = [
+            {"entitlement":"PIONEER_LIFETIME",
+             "revoked_at":"2026-11-05T22:39:22Z"}]
+        with patch("pioneer_telegram.reactivate_revoked_pioneer") as restore:
+            self.bot.requests[1]["notes"]="awaiting_proof"
+            self.ns["callback"](ADMIN, "admin_approve|1|201")
+            self.bot.requests[1]["notes"]="proof_received_web"
+            self.bot.requests[1]["chat_id"]=202
+            self.ns["callback"](ADMIN, "admin_approve|1|201")
+        restore.assert_not_called()
+        self.assertEqual(self.bot.marked, [])
 
     def test_mismatched_owner_blocks_approval_and_shows_both_ids(self):
         self.bot.requests[1]["chat_id"] = 202
