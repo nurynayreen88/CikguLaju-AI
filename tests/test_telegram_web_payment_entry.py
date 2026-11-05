@@ -107,5 +107,28 @@ class PaymentCatalogTests(unittest.TestCase):
                 "telegram_web_payment_source.catalog"),1)
 
 
+class WebReceiptAdminParityTests(unittest.TestCase):
+    def test_existing_telegram_receipt_stays_supported(self):
+        from pioneer_telegram import _has_recorded_payment_proof
+        self.assertTrue(_has_recorded_payment_proof(
+            {"notes":"proof_received_admin_notified"}))
+
+    def test_web_receipt_requires_real_telegram_file_reference(self):
+        from pioneer_telegram import _has_recorded_payment_proof
+        good={"notes":"proof_received_web",
+              "proof_telegram_file_id":"AA-verified-file",
+              "proof_telegram_message_id":44,
+              "proof_received_at":"2026-11-06T01:00:00+00:00"}
+        self.assertTrue(_has_recorded_payment_proof(good))
+        for key in ("proof_telegram_file_id","proof_telegram_message_id",
+                    "proof_received_at"):
+            with self.subTest(key=key):
+                bad=dict(good);bad.pop(key)
+                self.assertFalse(_has_recorded_payment_proof(bad))
+        self.assertFalse(_has_recorded_payment_proof(
+            {"notes":"proof_received_web"}))
+        self.assertFalse(_has_recorded_payment_proof(None))
+
+
 if __name__=="__main__":
     unittest.main()
