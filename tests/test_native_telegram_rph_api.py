@@ -1,0 +1,177 @@
+"""Authenticated Telegram native RPH document bridge, no bot state mutations."""
+from io import BytesIO
+import os
+from pathlib import Path
+import tempfile
+import unittest
+from unittest.mock import patch
+from zipfile import ZipFile
+
+from docx import Document
+from flask import Flask
+
+from web.native_rph_telegram_api import (
+    build_native_input, compact_web_word_notes,
+    create_native_rph_blueprint,
+)
+
+
+def payload(fmt="word"):
+    common=[
+        {"label":"Subject","value":"Bahasa Inggeris"},
+        {"label":"Year / Form","value":"Year 4"},
+        {"label":"Date","value":"2027-03-08"},
+        {"label":"Day","value":"Monday"},
+        {"label":"Time","value":"09:15"},
+        {"label":"Class","value":"4 Bestari"},
+        {"label":"Number of Pupils","value":"—"},
+        {"label":"Topic","value":"Where are you from?"},
+        {"label":"Main Content Standard","value":"1.2"},
+        {"label":"Main Learning Standard","value":"1.2.2"},
+        {"label":"Complementary Content Standard","value":"1.1"},
+        {"label":"Complementary Learning Standard","value":"1.1.1"},
+        {"label":"Learning Objectives","value":"Pupils can listen for two countries."},
+        {"label":"Success Criteria","value":"Two correct answers."},
+        {"label":"Prior Knowledge","value":"Country names."},
+        {"label":"Teaching and Learning Materials","value":"SB p.5; TB p.18."},
+        {"label":"CCE / Values","value":"Respect."},
+        {"label":"HOTS / 21st Century Skills","value":"Explain a clue."},
+        {"label":"Assessment","value":"Four listening answers."},
+    ]
+    return {
+        "subject":"ENGLISH","component":None,"year":4,"lesson":1,"unit":"Where are you from?",
+        "teacher":{"class":"4 Bestari","date":"2027-03-08","time":"09:15"},
+        "layout":{
+            "style":"telegram-native-rph-v1",
+            "header":common,
+            "activity_header":["Phase / Time","Teaching and Learning Activities","Notes"],
+            "phases":[
+                {"label":"Set Induction","activity":"Teacher greets. Pupils respond.","notes":""},
+                {"label":"Main Activities","activity":"Activity 1: Listen. Pupils match the flag.","notes":""},
+                {"label":"Closure","activity":"Pupils recap the country names.","notes":""},
+            ],
+            "footer":[{"label":"Remedial / Enrichment","value":"Visual prompts."},
+                      {"label":"Reflection","value":"____ pupils met objectives."}],
+        },"format":fmt,
+    }
+
+
+class FakeRuntime:
+    def __init__(self):
+        self.calls=[]
+        self.last_path=None
+
+    def create_word_file(self,state,ai_text,cid):
+        self.calls.append(("word",state,ai_text,cid))
+        doc=Document()
+        doc.add_paragraph("RANCANGAN PENGAJARAN HARIAN")
+        info=doc.add_table(rows=2,cols=2)
+        info.cell(0,0).text="Subject";info.cell(0,1).text="English"
+        phase=doc.add_table(rows=2,cols=3)
+        phase.cell(0,0).text="Phase / Time"
+        phase.cell(0,1).text="Teaching and Learning Activities"
+        phase.cell(0,2).text="Notes"
+        phase.cell(1,0).text="Main Activities"
+        phase.cell(1,1).text="Activity 1: Listen. Pupils match the flag."
+        phase.cell(1,2).text=""
+        footer=doc.add_table(rows=2,cols=2)
+        footer.cell(0,0).text="Reflection"
+        footer.cell(0,1).text="____ pupils met objectives."
+        self.last_path=os.path.join(tempfile.gettempdir(),cid+"_TEST.docx")
+        doc.save(self.last_path)
+        return self.last_path
+
+    def create_pdf_file(self,state,ai_text,cid):
+        self.calls.append(("pdf",state,ai_text,cid))
+        self.last_path=os.path.join(tempfile.gettempdir(),cid+"_TEST.pdf")
+        Path(self.last_path).write_bytes(b"%PDF-1.4\n"+b"0"*2000)
+        return self.last_path
+
+
+class NativeRPHBridgeTests(unittest.TestCase):
+    def setUp(self):
+        self.runtime=FakeRuntime()
+        app=Flask(__name__)
+        app.register_blueprint(create_native_rph_blueprint(self.runtime))
+        self.client=app.test_client()
+        self.config=patch.dict(os.environ,{
+            "CIKGULAJU_WEB_NATIVE_RPH_ENABLED":"1",
+            "CIKGULAJU_AUTHORITATIVE_API_TOKEN":"x"*48,
+        })
+        self.config.start();self.addCleanup(self.config.stop)
+
+    def _post(self,p=None,token="x"*48):
+        return self.client.post("/internal/rph/v1/render",json=p or payload(),
+                                headers={"Authorization":"Bearer "+token})
+
+    def test_disabled_and_invalid_bearer_fail_closed(self):
+        with patch.dict(os.environ,{"CIKGULAJU_WEB_NATIVE_RPH_ENABLED":"0"}):
+            self.assertEqual(self._post().status_code,503)
+        self.assertEqual(self._post(token="x"*47).status_code,401)
+        self.assertEqual(self.client.post("/internal/rph/v1/render",
+                                         headers={"Authorization":"Bearer "+"x"*48},
+                                         data="invalid").status_code,400)
+        self.assertEqual(self.runtime.calls,[])
+
+    def test_uses_existing_native_word_generator_and_shrinks_notes(self):
+        response=self._post()
+        self.assertEqual(response.status_code,200,response.get_json() if response.is_json else "")
+        self.assertEqual(response.headers["Cache-Control"],"no-store, private")
+        self.assertEqual(len(self.runtime.calls),1)
+        kind,state,ai_text,cid=self.runtime.calls[0]
+        self.assertEqual(kind,"word")
+        self.assertEqual(state["subject"],"English")
+        self.assertEqual(state["lesson_no"],1)
+        self.assertEqual(state["rph_class"],"4 Bestari")
+        self.assertEqual(state["rph_day"],"Monday")
+        self.assertIn("AKTIVITI UTAMA",ai_text)
+        self.assertIn("Pupils match the flag",ai_text)
+        self.assertIn("1.2.2",ai_text)
+        doc=Document(BytesIO(response.data))
+        self.assertEqual(len(doc.tables),3)
+        self.assertIn("flag",doc.tables[1].cell(1,1).text)
+        self.assertAlmostEqual(doc.tables[1].columns[2].width.cm,1.55,places=1)
+        self.assertAlmostEqual(doc.tables[1].columns[1].width.cm,14.55,places=1)
+        self.assertFalse(Path(self.runtime.last_path).exists())
+
+    def test_pdf_comes_from_telegram_native_pdf_generator(self):
+        response=self._post(payload("pdf"))
+        self.assertEqual(response.status_code,200)
+        self.assertTrue(response.data.startswith(b"%PDF-"))
+        self.assertEqual(self.runtime.calls[0][0],"pdf")
+        self.assertFalse(Path(self.runtime.last_path).exists())
+
+    def test_rejects_tampered_layout_before_any_generation(self):
+        invalid=[
+            {"telegram_user_id":456},
+            {"year":1},
+            {"unit":"X"*400},
+            {"teacher":{"class":"<script>","date":"","time":""}},
+            {"layout":{"style":"web-fallback"}},
+        ]
+        for override in invalid:
+            body=payload();body.update(override)
+            with self.subTest(override=override):
+                self.assertEqual(self._post(body).status_code,400)
+        self.assertEqual(self.runtime.calls,[])
+
+    def test_source_specific_activities_required(self):
+        body=payload()
+        body["layout"]["phases"][1]["activity"]="—"
+        self.assertEqual(self._post(body).status_code,400)
+        self.assertEqual(self.runtime.calls,[])
+
+    def test_no_duplicate_ids_or_account_changes_in_source(self):
+        from inspect import getsource
+        from web import native_rph_telegram_api as module
+        src=getsource(module)
+        self.assertNotIn("supabase",src.lower())
+        self.assertNotIn("set_webhook",src.lower())
+        self.assertNotIn("debit_credit",src.lower())
+        self.assertIn("runtime.create_word_file",src)
+        self.assertIn("runtime.create_pdf_file",src)
+        self.assertIn("CIKGULAJU_WEB_NATIVE_RPH_ENABLED",src)
+
+
+if __name__=="__main__":
+    unittest.main()
