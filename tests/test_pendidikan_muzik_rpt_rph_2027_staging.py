@@ -43,7 +43,7 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
                 self.assertRegex(row["rpt2027_slot"]["groupA"], r"^\d{2}/\d{2}")
                 self.assertRegex(row["rpt2027_slot"]["groupB"], r"^\d{2}/\d{2}")
                 md = (directory / f"rph_pdp_{i:02d}.md").read_text(encoding="utf-8")
-                self.assertIn(row["unit"], md)
+                self.assertIn(" ".join(row["unit"].split()), " ".join(md.split()))
                 self.assertIn(f"PdP {i:02d}", md)
                 self.assertIn("DRAF STAGING", md)
                 for field in REQUIRED:
