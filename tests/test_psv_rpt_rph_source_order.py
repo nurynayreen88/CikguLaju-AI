@@ -487,6 +487,16 @@ class PSVSourceOrderTests(unittest.TestCase):
         )["years"]
         total, specific, exhibitions = 0, 0, 0
         page = re.compile(r"(?<!\d)(\d{1,3})\s*[-–]\s*(\d{1,3})(?!\d)")
+        def page_bounds(value, *, require_ms=False):
+            # Prefer the cited page over a parenthesized unit range.
+            # A single page such as 'ms 8' is a precise valid anchor.
+            pattern = (
+                r"(?i)\bms\.?\s*(\d{1,3})(?:\s*[-–]\s*(\d{1,3}))?(?!\d)"
+                if require_ms else
+                r"(?i)(?:\bms\.?\s*|^\s*)(\d{1,3})(?:\s*[-–]\s*(\d{1,3}))?(?!\d)"
+            )
+            match = re.search(pattern, str(value))
+            return (int(match.group(1)), int(match.group(2) or match.group(1))) if match else None
         for year in range(2, 7):
             source = anchors[str(year)]
             self.assertEqual(len(source["units"]), 10)
@@ -522,11 +532,11 @@ class PSVSourceOrderTests(unittest.TestCase):
                     )
                     self.assertIsNotNone(section, "RPH has no explicit textbook page")
                     unit_range = page.search(span)
-                    cited_range = page.search(section.group(1))
+                    cited_range = page_bounds(section.group(1), require_ms=True)
                     self.assertIsNotNone(unit_range)
                     self.assertIsNotNone(cited_range)
                     a, b = map(int, unit_range.groups())
-                    c, d = map(int, cited_range.groups())
+                    c, d = cited_range
                     self.assertLessEqual(a, c)
                     self.assertLessEqual(d, b)
                     self.assertLessEqual(c, d)
@@ -534,11 +544,14 @@ class PSVSourceOrderTests(unittest.TestCase):
                         row.get("BT muka surat", "")
                         if year < 6 else row.get("Rujukan BT ms (RPT 2026)", "")
                     )
-                    rpt_page = page.search(rpt_ref)
+                    rpt_page = page_bounds(rpt_ref, require_ms=(year == 6))
                     self.assertIsNotNone(rpt_page)
-                    r1, r2 = map(int, rpt_page.groups())
+                    r1, r2 = rpt_page
                     self.assertLessEqual(a, r1)
                     self.assertLessEqual(r2, b)
+                    self.assertLessEqual(r1, r2)
+                    self.assertEqual((c, d), (r1, r2),
+                                     "RPH/RPT must cite the same exact pages")
                     specific += 1
                     total += 1
         self.assertEqual(total, 210)
