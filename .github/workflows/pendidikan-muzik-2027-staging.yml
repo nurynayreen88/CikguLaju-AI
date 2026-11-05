@@ -1,0 +1,51 @@
+name: Pendidikan Muzik 2027 staging audit
+on:
+  pull_request:
+    paths:
+      - 'staging/pendidikan_muzik/**'
+      - 'tests/test_pendidikan_muzik_staging.py'
+      - 'tests/test_pendidikan_muzik_rpt_rph_2027_staging.py'
+      - '.github/workflows/pendidikan-muzik-2027-staging.yml'
+  push:
+    branches:
+      - 'staging/pendidikan-muzik-dskp-rph-audit-20261105'
+    paths:
+      - 'staging/pendidikan_muzik/**'
+      - 'tests/test_pendidikan_muzik_staging.py'
+      - 'tests/test_pendidikan_muzik_rpt_rph_2027_staging.py'
+      - '.github/workflows/pendidikan-muzik-2027-staging.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit-staging:
+    name: Audit 99 SP + 175 RPH + 5 RPT (DRAF sahaja)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Semak rekod kurikulum staging
+        run: python -m unittest discover -s tests -p 'test_pendidikan_muzik*staging.py' -v
+      - name: Pastikan tiada fail production diubah dalam PR
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          git fetch origin "$BASE_REF" --depth=1
+          python - <<'PY'
+          import subprocess
+          files = subprocess.check_output(['git','diff','--name-only','FETCH_HEAD','HEAD'], text=True).splitlines()
+          permitted = lambda p: p.startswith('staging/pendidikan_muzik/') or p in {
+            'tests/test_pendidikan_muzik_staging.py',
+            'tests/test_pendidikan_muzik_rpt_rph_2027_staging.py',
+            '.github/workflows/pendidikan-muzik-2027-staging.yml',
+          }
+          errors = [f for f in files if not permitted(f)]
+          if errors:
+              raise SystemExit('Unexpected production-scope diff: ' + ', '.join(errors))
+          print('PASS: only Musik staging / QA / CI files changed')
+          PY
