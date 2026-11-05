@@ -203,7 +203,7 @@ window.onCikguLajuTelegramAuth=async function(user){
  const status=document.getElementById("login-status");
  try{
   const response=await fetch("/api/auth/telegram/widget",{method:"POST",headers:{"Content-Type":"application/json"},credentials:"same-origin",body:JSON.stringify(user)});
-  if(!response.ok){const messages={400:"Permintaan login tidak sah (400).",401:"Pengesahan Telegram tidak sepadan (401). Semak token bot Web.",403:"Akaun Telegram belum didaftarkan dalam CikguLaju (403).",503:"Sambungan akaun Supabase belum tersedia (503). Semak Environment dan log Render."};throw new Error(messages[response.status]||"Login gagal (HTTP "+response.status+").");}
+  if(!response.ok){const messages={400:"Permintaan login tidak sah (400).",401:"Pengesahan Telegram tidak sepadan (401). Semak token bot Web.",403:"Akaun Telegram belum didaftarkan dalam CikguLaju (403).",503:"Sambungan akaun belum tersedia (503). Sila cuba sebentar lagi."};throw new Error(messages[response.status]||"Login gagal (HTTP "+response.status+").");}
   status.textContent="Log masuk berjaya.";
   location.reload();
  }catch(error){status.textContent=error.message;}
