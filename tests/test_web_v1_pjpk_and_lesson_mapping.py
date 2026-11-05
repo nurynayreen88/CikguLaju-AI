@@ -11,10 +11,14 @@ class WebNavigationSafetyTests(unittest.TestCase):
         self.assertIn('if(subject.value==="PJPK")', HTML)
         self.assertIn('extra.component=component.value', HTML)
 
-    def test_rph_uses_verified_lesson_number_not_rpt_row_id(self):
-        self.assertIn('opt.dataset.lessonNo=String(item.lesson_no)', HTML)
-        self.assertIn('lesson_no:verifiedLessonNo', HTML)
+    def test_rph_preview_binds_exact_selected_year_subject_unit_and_lesson(self):
+        self.assertIn('year:year.value,subject:subject.value,unit:unit.value,lesson:lesson.value', HTML)
+        self.assertIn('data.selection!==lesson.value', HTML)
+        self.assertIn('data.unit!==unit.value', HTML)
+        self.assertIn('data.subject!==subject.value', HTML)
+        self.assertIn('"/api/web/rph/preview?"+key', HTML)
         self.assertNotIn('lesson_no:Number(lesson.value)', HTML)
+        self.assertNotIn('"/api/web/english/rph"', HTML)
 
     def test_hidden_links_when_delivery_is_not_verified(self):
         self.assertIn('data.download_enabled===true&&item.download_enabled===true', HTML)
