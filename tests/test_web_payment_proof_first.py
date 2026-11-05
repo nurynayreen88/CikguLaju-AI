@@ -12,7 +12,7 @@ from web.web_payment_routes import (
     _telegram_document, _existing, _payment_rest, validated_plans,
 )
 
-CATALOG={"mode":"manual_receipt_review","plans":[
+CATALOG={"mode":"manual_receipt_review","telegram_bot_id":"123456789","plans":[
     {"code":"rakan_pembangun","amount":"10.00","label":"Rakan Pembangun"},
     {"code":"langganan_30_hari","amount":"5.00","label":"Langganan 30 Hari"},
 ]}
@@ -30,6 +30,9 @@ class PaymentWebTests(unittest.TestCase):
         self.user_auth=patch("web.web_payment_routes._auth",
                   return_value=(CONF,712,None))
         self.user_auth.start();self.addCleanup(self.user_auth.stop)
+        bot=patch.dict(os.environ,{"CIKGULAJU_WEB_BOT_TOKEN":
+            "123456789:abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMN"})
+        bot.start();self.addCleanup(bot.stop)
 
     def request_receipt(self,plan="rakan_pembangun",origin=None):
         return self.client.post("/api/web/payment/receipt",base_url=self.url,
@@ -118,9 +121,15 @@ class PaymentWebTests(unittest.TestCase):
             self.assertEqual(self.request_receipt(plan="hacked").status_code,400)
             send.assert_not_called()
         with self.assertRaises(ProfileUnavailable):
-            validated_plans({"mode":"manual_receipt_review","plans":[
+            validated_plans({"mode":"manual_receipt_review","telegram_bot_id":"000000000","plans":[
                 {"code":"rakan_pembangun","amount":"1.00"},
                 {"code":"langganan_30_hari","amount":"5.00"}]})
+
+    def test_different_bot_token_rejected_before_payment(self):
+        with patch.dict(os.environ,{"CIKGULAJU_WEB_BOT_TOKEN":
+                "999999999:abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMN"}):
+            with self.assertRaises(ProfileUnavailable):
+                validated_plans(CATALOG)
 
     def test_unauthenticated_and_wrong_account_cannot_pay(self):
         with patch("web.web_payment_routes._auth",
