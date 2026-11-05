@@ -17,14 +17,16 @@ Murid menyiapkan tugasan **SP 6.1** (Mengenal pasti hubungan antara ahli keluarg
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Dua beradik berebut penggunaan alat permainan**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Tugasan 6.1:** Guru membentangkan situasi **Dua beradik berebut penggunaan alat permainan** dan menyediakan kad/gambar yang relevan dengan unit buku teks **Hormati Keluarga Hidup Gembira** (mula m/s 33; halaman aktiviti belum disahkan). Murid melaksanakan arahan **“Mengenal pasti hubungan antara ahli keluarga.”** dengan menghasilkan **jadual dua contoh dengan label atau alasan**; pasangan menyemak fakta, bukan hanya memilih tindakan baik atau buruk. Guru merekod satu respons individu.
+**Aktiviti 1 (20 minit) — Hubungan ahli keluarga:** Guru memaparkan puisi 'Hormati Keluarga' m/s 33 serta gambar hubungan ayah, ibu, anak dan adik-beradik pada m/s 34–35. Murid membina peta keluarga dengan sekurang-kurangnya empat hubungan yang betul (SP 6.1).
 
-**Aktiviti 2 (20 minit) — Tugasan 6.2:** Guru menukar sudut situasi kepada tindakan atau akibat yang boleh diperhatikan. Murid melaksanakan arahan **“Menjelaskan cara menghormati ahli keluarga.”** dan menyediakan **penjelasan dalam dua ayat serta satu contoh** berdasarkan contoh yang relevan dengan unit. Murid membentangkan hasil dan memperbaiki jawapan selepas pertanyaan lanjut guru.
+**Aktiviti 2 (20 minit) — Cara menghormati keluarga:** Guru menunjukkan enam gambar m/s 34–35: menyambut kepulangan ayah, bersalam, berehat selepas kerja, makan tertib, menghormati waktu rehat serta memuji sikap hormat. Murid memilih tiga cara dan menerangkan pelaksanaannya (SP 6.2).
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Guru mengutip hasil individu: **jadual dua contoh dengan label atau alasan** untuk SP 6.1 dan **penjelasan dalam dua ayat serta satu contoh** untuk SP 6.2; semak ketepatan makna, bukti dan kaitan dengan nilai **Hormat**. Murid membetulkan satu jawapan selepas maklum balas.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menyemak peta empat hubungan keluarga (SP 6.1) dan tiga tindakan hormat beserta penerangan (SP 6.2); murid membaiki satu padanan yang kurang tepat.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **hormat**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — unit bermula m/s 33 (PDF 42); halaman aktiviti khusus belum dipadankan; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 6; muka surat bercetak 33–35; PDF 42–44; aktiviti PdP 016 dipadankan kepada tugas/ilustrasi sumber asal, dengan penyesuaian PdP CikguLaju.
+
+**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — aktiviti Unit 6 m/s 33–35 (PDF 42–44) diperiksa secara visual untuk PdP 16; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

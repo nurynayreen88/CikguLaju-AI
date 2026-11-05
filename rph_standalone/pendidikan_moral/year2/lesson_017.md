@@ -17,14 +17,16 @@ Murid menghuraikan atau menilai berdasarkan **6.3: Menghuraikan kepentingan meng
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Dua beradik berebut penggunaan alat permainan**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Peta akibat:** Guru beri dua penghujung kepada situasi. Murid bina peta **pilihan → kesan → alasan**, merujuk SP 6.3 (**Menghuraikan kepentingan menghormati ahli keluarga.**). Bandingkan akibat kepada watak yang terlibat dan bincang soalan: **Bagaimanakah hormat ditunjukkan melalui perbuatan?**
+**Aktiviti 1 (20 minit) — Mengapa perlu menghormati?:** Guru memaparkan bulatan 'Hormati Keluarga' m/s 36 dan dialog ibu, adik, kakak dan ayah pada m/s 38. Murid mengaitkan dua perlakuan hormat dengan manfaatnya, seperti hubungan mesra serta mengelakkan perselisihan, lalu menghuraikan sebab (SP 6.3).
 
-**Aktiviti 2 (20 minit) — Dialog dan emosi:** Murid menjalankan dialog ringkas dua versi, menyatakan kesan kedua-duanya dan menulis satu ayat perspektif pihak yang terlibat untuk SP 6.4 (**Menceritakan perasaan apabila menghormati ahli keluarga.**). Guru semak hubungan alasan, emosi dan nilai.
+**Aktiviti 2 (20 minit) — Perasaan apabila dihormati:** Guru menggunakan dialog permintaan izin dan ucapan terima kasih dalam m/s 38. Murid menulis dua ayat 'Saya berasa ... kerana ...' daripada sudut anak dan ibu bapa (SP 6.4) serta memeriksa kesesuaian emosi dengan situasi.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak justifikasi serta dua kesan bagi SP 6.3 dan ayat perasaan yang sesuai bagi SP 6.4. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menilai dua hubungan tindakan–kepentingan (SP 6.3) serta dua ayat perasaan bersebab (SP 6.4); murid berkongsi satu pengajaran daripada dialog buku.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **hormat**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — halaman belum dipadankan; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 6; muka surat bercetak 36–38; PDF 45–47; aktiviti PdP 017 dipadankan kepada tugas/ilustrasi sumber asal, dengan penyesuaian PdP CikguLaju.
+
+**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — aktiviti Unit 6 m/s 36–38 (PDF 45–47) diperiksa secara visual untuk PdP 17; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
