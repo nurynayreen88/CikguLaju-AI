@@ -257,8 +257,8 @@ def check() -> None:
     assert m["years"]["4"]["unit3_release_approved"] is False
     assert readiness["completed"]["year4_unit3_candidate_rph"] == 14
     assert readiness["completed"]["verified_a4_render_for_all_90"] is True
-    assert readiness["completed"]["word_generated_in_ci"] == 122
-    assert readiness["completed"]["pdf_generated_in_ci"] == 122
+    assert readiness["completed"]["word_generated_in_ci"] == 138
+    assert readiness["completed"]["pdf_generated_in_ci"] == 138
     assert readiness["total_ready_rph"] == 0
     assert m["latest_technical_a4_validation"]["status"] == "PASSED_OFFLINE_TECHNICAL_ONLY"
     assert m["latest_technical_a4_validation"]["release_approval"] is False
@@ -308,8 +308,8 @@ def check() -> None:
     assert m["years"]["5"]["unit2_release_approved"] is False
     assert readiness["completed"]["year5_unit2_candidate_rph"] == 16
     assert readiness["completed"]["verified_a4_render_for_all_122"] is True
-    assert readiness["completed"]["word_generated_in_ci"] == 122
-    assert readiness["completed"]["pdf_generated_in_ci"] == 122
+    assert readiness["completed"]["word_generated_in_ci"] == 138
+    assert readiness["completed"]["pdf_generated_in_ci"] == 138
     assert m["latest_technical_a4_validation"]["status"] == "PASSED_OFFLINE_TECHNICAL_ONLY"
     assert m["latest_technical_a4_validation"]["release_approval"] is False
     for n,row in zip(range(13,29),y5rows):
@@ -335,7 +335,11 @@ def check() -> None:
     assert m["years"]["5"]["source_reviewed_drafts_total"] == 44
     assert m["years"]["5"]["unit3_release_approved"] is False
     assert readiness["completed"]["year5_unit3_candidate_rph"] == 16
-    assert readiness["completed"]["verified_a4_render_for_all_138"] is False
+    assert readiness["completed"]["verified_a4_render_for_all_138"] is True
+    assert readiness["completed"]["word_generated_in_ci"] == 138
+    assert readiness["completed"]["pdf_generated_in_ci"] == 138
+    assert m["latest_technical_a4_validation"]["status"] == "PASSED_OFFLINE_TECHNICAL_ONLY"
+    assert m["latest_technical_a4_validation"]["release_approval"] is False
     for n,r in zip(range(29,45),y5u3rows):
         src = (SUBJECT / "year5" / f"lesson_{n:03d}.md").read_text(encoding="utf-8")
         assert len(src) > 1550 and all(mark in src for mark in MARKERS)

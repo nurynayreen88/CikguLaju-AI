@@ -122,3 +122,6 @@ GitHub Actions `42131146183` pada commit `41a0265769c7035cfe613e380c4dc6d2baeac9
 ## 6 Nov 2026 — Tahun5 Unit3: 16 RPH draf kokurikulum
 Buku Teks Tahun5 DBP/KPM 2020, Unit3 **هيا نشترك في الأنشطة اللاصفية** (aktiviti kokurikulum), halaman 58,58,59,59,60,60,62,63,64,66,69,70,72,75,77,84. 16 RPH baru PdP029–044 berkaitan fonetik ت/ط dan ق/ك, acara sukan, kelab/persatuan/unit beruniform, dialog penyertaan, menulis ayat berkait dan projek Tarsia. Rujukan SP mengikuti kod yang dicetak dalam latihan asal; nombor PdP calon dan perlu pengesahan RPT 2027.
 Peta `rpt_2027/bahasa_arab/year5_unit3_pdp029_044_DRAF.csv`; bukti `audits/bahasa_arab_y5_unit3_pdp029_044_text_source_audit_20261106.json`. Keseluruhan **138 RPH DRAF**, **0 READY**, Unit4 Tahun5 masih belum dibina. QA Word/PDF 138 belum disahkan.
+
+## 6 Nov 2026 — 138 Word/PDF lulus A4
+GitHub Actions run `42132565716` (https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42132565716) lulus untuk **138 Word dan 138 PDF**, setiap PDF satu halaman A4, format Arab Amiri dan artifak pratonton tersedia. Ujian struktur pertama pada commit sebelumnya gagal kerana pemeriksaan status teknikal lama, bukan kesilapan isi RPH; metadata dan ujian dikemas kini tanpa mengubah status 0 READY. 
