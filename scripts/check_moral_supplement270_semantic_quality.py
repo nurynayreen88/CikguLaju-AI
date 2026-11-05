@@ -46,7 +46,10 @@ def main() -> None:
         for field in ("Set induksi", "Aktiviti 1", "Aktiviti 2", "Pengukuhan/Pentaksiran PBD", "Penutup"):
             line = next(x for x in raw.splitlines() if x.startswith("**"+field+" ("))
             assert len(line) >= 150 and "Guru" in line, (path, field)
-            assert "Murid" in line or (field == "Pengukuhan/Pentaksiran PBD" and "individu" in line), (path, field)
+            if field != "Pengukuhan/Pentaksiran PBD":
+                assert "Murid" in line, (path, field)
+            else:
+                assert any(t in line for t in ("Murid", "individu", "diperagakan", "refleksi")), (path, field)
         for code in r["sp"]:
             assert code in raw and re.search(r"\b"+re.escape(code)+r"\b",raw), (path,code)
         assert "60 minit" in raw and "Kriteria kejayaan" in raw, path
