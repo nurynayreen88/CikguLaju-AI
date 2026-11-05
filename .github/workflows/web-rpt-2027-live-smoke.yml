@@ -1,0 +1,67 @@
+name: Live smoke Web staging RPT 2027 all subjects
+on:
+  push:
+    branches:
+      - staging/cikgulaju-web-v1
+    paths:
+      - '.github/workflows/web-rpt-2027-live-smoke.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect-live-private-rpt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Check deployed Web interface, v26.00 health and RPT login gate
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          import time
+          import urllib.error
+          import urllib.request
+
+          origin = "https://cikgulaju-web-v1-api-test.onrender.com"
+
+          def fetch(path):
+              req = urllib.request.Request(origin + path, headers={
+                  "User-Agent": "CikguLaju-Web-RPT-2027-Release-Smoke/1.0",
+                  "Accept": "*/*",
+              })
+              try:
+                  with urllib.request.urlopen(req, timeout=18) as response:
+                      return response.status, response.read(100000).decode("utf-8", errors="replace")
+              except urllib.error.HTTPError as exc:
+                  return exc.code, exc.read(100000).decode("utf-8", errors="replace")
+
+          for i in range(12):
+              try:
+                  status, page = fetch("/")
+                  health_status, health_json = fetch("/health")
+                  source_status, source_json = fetch("/api/source/status")
+                  health = json.loads(health_json)
+                  source = json.loads(source_json)
+                  if (status == 200 and
+                      'RPT 2027 — Semua Subjek' in page and
+                      'id="rpt-subject"' in page and
+                      health_status == 200 and health.get("database_connected") is True and
+                      health.get("copy_version") == "v26_00" and
+                      source_status == 200 and source.get("web_copy_verified") is True):
+                      break
+              except Exception as exc:
+                  print("Web staging health attempt", i + 1, type(exc).__name__)
+              time.sleep(8)
+          else:
+              raise SystemExit("Live new menu/v26.00 source not verified")
+
+          catalog_status, _ = fetch("/api/rpt/2027/catalog")
+          pdf_status, _ = fetch("/api/rpt/2027/all/bahasa_melayu/2.pdf")
+          sains_status, _ = fetch("/api/rpt/2027/all/sains/2.pdf")
+          assert catalog_status == 401, "RPT catalog must enforce login: " + str(catalog_status)
+          assert pdf_status == 401, "Paid PDF must enforce login: " + str(pdf_status)
+          assert sains_status == 401, "Absent year must not leak public files: " + str(sains_status)
+          print("PASS: deployed Web has RPT all-subject selector and v26.00 curriculum, and rejects anonymous RPT/PDF access.")
+          PY
