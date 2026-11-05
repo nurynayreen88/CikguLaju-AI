@@ -1,36 +1,31 @@
 # RPH PENDIDIKAN MUZIK TAHUN 4 — PdP 31
 
-**Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** HARUM MEWANGI  
-**Bidang:** Pengajaran dan Persembahan Muzik  
-**SK / SP (RPT sumber):** 4.1.1
-**Tempoh cadangan:** 30 minit  
+**Kelas:** __________  **Tarikh:** __________  **Masa:** __________
+**Unit/Tajuk:** HARUM MEWANGI
+**SK / SP DSKP (crosswalk yang perlu pengesahan):** 4.2.1
+**Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**AMARAN KOD:** SP dalam RPT tidak ditemui secara tepat dalam katalog DSKP tahun ini: 4.1.1. Jangan ubah kod automatik.
+**Fokus PdP:** Apresiasi Kolattam: ensembel dan keluarga alat muzik
 
-**Objektif pembelajaran (draf boleh ukur):** Memberi ulasan tentang muzik yang didengar dengan sekurang-kurangnya dua maklumat tepat dan satu alasan.
+**Objektif:** Murid mengenal sekurang-kurangnya tiga alat muzik yang mengiringi Kolattam dan menerangkan dua ciri alat dengan tepat.
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Set induksi (4 minit):** Guru menunjukkan gambar tarian Kolattam dan murid menyatakan hubungan antara kayu kol dengan irama.
 
-**Set Induksi — 4 minit**  
-Guru memperdengarkan satu petikan muzik dan meminta murid menyatakan dua perkara yang didengar.
+**Aktiviti 1 — Demonstrasi dan penerokaan (8 minit):** Guru memperkenalkan alat dalam buku seperti violin, mridangam, tambura, veena, manjira, bansuri dan harmonium; murid meneliti ciri fizikal dan cara menghasilkan bunyi.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru memperkenalkan kosa kata apresiasi yang berkaitan: melaksanakan kemahiran muzik mengikut Standard Pembelajaran RPT. Murid membuat pemerhatian berpandukan tiga soalan dengar.
+**Aktiviti 2 — Amali / aplikasi (10 minit):** Murid menyusun peta alat dan keluarga alat, kemudian menerangkan sekurang-kurangnya tiga pilihan secara berpasangan.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid berbincang secara pasangan, menyusun ulasan dua ayat dengan bukti daripada rakaman, kemudian berkongsi respons.
+**Pengukuhan dan pentaksiran (6 minit):** Semak tiga nama alat dan dua ciri perbezaan menggunakan kad soal jawab.
 
-**Pengukuhan & Penilaian — 6 minit**  
-Semak ketepatan sekurang-kurangnya 2 fakta/unsur muzik dalam ulasan dan satu alasan berasaskan pendengaran.
+**Penutup (2 minit):** Murid menyatakan satu dapatan tentang muzik dan menunjukkan semula kemahiran yang diamalkan; guru merekod tahap penguasaan berdasarkan evidens aktiviti.
 
-**Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 halaman 100–101, imej instrumen dan kad pengelasan.
 
-**Bahan:** Rakaman muzik yang berlesen/diizinkan, gambar alat muzik dan lembaran respons.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 50; **belum disahkan pada halaman buku asal**. Audio/trek belum dipadankan.
+**Rujukan:** Buku Teks Pendidikan Kesenian Tahun 4 SK KSSR Semakan 2017 halaman 100-101. Sumber Drive: https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view
 
-**Catatan pelaksanaan / pemulihan:** __________________________________________
+**Nota audit penting:** Buku mencetak Audio 110–116; nombor ini hanya Rujukan Tercetak, bukan fail audio yang disahkan. RPT asal menulis SP 4.1.1. **Jangan ubah kod dalam DB produksi sebelum pengesahan.**
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Refleksi / Pemulihan:** _________________________________________________
+
+**Kawalan penerbitan:** Buku disemak pada halaman 100-101, namun pemetaan kod gerak, kelulusan RPH dan audio masih terbuka. Ini bukan bukti FINAL READY.

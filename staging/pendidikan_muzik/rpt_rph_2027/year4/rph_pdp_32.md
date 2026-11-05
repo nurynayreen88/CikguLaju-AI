@@ -1,36 +1,31 @@
 # RPH PENDIDIKAN MUZIK TAHUN 4 — PdP 32
 
-**Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** HARUM MEWANGI  
-**Bidang:** Gerakan Mengikut Muzik  
-**SK / SP (RPT sumber):** 2.3.1, 4.1.1
-**Tempoh cadangan:** 30 minit  
+**Kelas:** __________  **Tarikh:** __________  **Masa:** __________
+**Unit/Tajuk:** HARUM MEWANGI
+**SK / SP DSKP (crosswalk yang perlu pengesahan):** 2.3.1
+**Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**AMARAN KOD:** SP dalam RPT tidak ditemui secara tepat dalam katalog DSKP tahun ini: 4.1.1. Jangan ubah kod automatik.
+**Fokus PdP:** Gerakan Kolattam menggunakan pola ketukan dan tempo
 
-**Objektif pembelajaran (draf boleh ukur):** Melakukan sekurang-kurangnya dua corak pergerakan yang tepat dengan tempo/struktur muzik.
+**Objektif:** Murid melaksanakan dua corak gerakan selaras tempo secara selamat dalam kumpulan.
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Set induksi (4 minit):** Guru menunjukkan ketukan kayu kol melalui demonstrasi tanpa alat dan mengajak murid menepuk detik.
 
-**Set Induksi — 4 minit**  
-Murid mendengar muzik dan bergerak setempat mengikut detik tanpa mengganggu ruang rakan.
+**Aktiviti 1 — Demonstrasi dan penerokaan (8 minit):** Murid mengkaji ilustrasi gerakan buku: ketuk di hadapan, ke kiri/kanan dan bergerak membentuk bulatan. Guru memilih peralatan pengganti lembut jika kayu sebenar tidak selamat.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru menunjuk contoh gerakan berdasarkan Merancang dan membuat pergerakan berdasarkan muzik yang didengar dari aspek: (i) bentuk lagu., sambil menerangkan aspek irama, bentuk lagu atau tempo.
+**Aktiviti 2 — Amali / aplikasi (10 minit):** Kumpulan merancang pola empat atau lapan kiraan, bergerak dalam ruang selamat dan mengikut isyarat tempo yang diberi.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid dalam kumpulan mencipta formasi 4–8 kiraan dan mempersembahkannya bersama muzik; kumpulan lain memberi ulasan membina.
+**Pengukuhan dan pentaksiran (6 minit):** Guru menilai kawalan detik, susunan gerak dan kerjasama dengan rubrik tiga aspek.
 
-**Pengukuhan & Penilaian — 6 minit**  
-Rubrik 3 aspek: padanan muzik, koordinasi dan kerjasama; rekod penyertaan setiap murid.
+**Penutup (2 minit):** Murid menyatakan satu dapatan tentang muzik dan menunjukkan semula kemahiran yang diamalkan; guru merekod tahap penguasaan berdasarkan evidens aktiviti.
 
-**Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 halaman 102–103, alat pengganti selamat serta kad tempo.
 
-**Bahan:** Audio muzik, ruang selamat dan kad formasi/tempo.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 52; **belum disahkan pada halaman buku asal**. Audio/trek belum dipadankan.
+**Rujukan:** Buku Teks Pendidikan Kesenian Tahun 4 SK KSSR Semakan 2017 halaman 102-103. Sumber Drive: https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view
 
-**Catatan pelaksanaan / pemulihan:** __________________________________________
+**Nota audit penting:** Audio 117 tercetak dalam buku dan belum dipadankan dengan fail. Kod cetakan buku 2.2.7/4.2.2 berbeza daripada SP gerak 2.3.1 DSKP Pendidikan Muzik Tahun 4. RPT asal menulis SP 2.3.1, 4.1.1. **Jangan ubah kod dalam DB produksi sebelum pengesahan.**
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Refleksi / Pemulihan:** _________________________________________________
+
+**Kawalan penerbitan:** Buku disemak pada halaman 102-103, namun pemetaan kod gerak, kelulusan RPH dan audio masih terbuka. Ini bukan bukti FINAL READY.

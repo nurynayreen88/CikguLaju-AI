@@ -4,7 +4,7 @@
   "academic_year": 2027,
   "source_doc_id": "1oABBpnuOC5QxqWi283dD0pWu97SfUx2q",
   "source_type": "RPT_2025_26",
-  "status": "DRAF_STAGING_NO_LIVE",
+  "status": "DRAF_STAGING_PARTIAL_BOOK_CONTENT_CHECK",
   "textbook_verified": false,
   "audio_verified": false,
   "rph_word_pdf_verified": false,
@@ -255,9 +255,9 @@
       "unit": "SECAWAN KOPI MANIS",
       "unit_number": 5,
       "sp": [
-        "4.1.1"
+        "4.2.1"
       ],
-      "page": "50",
+      "page": "50-51",
       "audio": null,
       "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
       "rpt2027_slot": {
@@ -266,8 +266,22 @@
         "groupB": "12/04–16/04"
       },
       "flags": [
-        "Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 4.1.1; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL"
-      ]
+        "RPT 2025/26 menulis SP 4.1.1, buku teks cetak 4.2.1, SP DSKP Muzik yang digunakan 4.2.1",
+        "Halaman 50-51 dilihat pada buku teks Pendidikan Kesenian Tahun 4 dalam Drive; audio hanya nombor tercetak, fail belum disahkan"
+      ],
+      "sp_rpt_source": [
+        "4.1.1"
+      ],
+      "sp_book_source": [
+        "4.2.1"
+      ],
+      "focus_pdp": "Apresiasi ensembel Tagunggu dan keluarga alat muzik",
+      "source_book_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_title": "Buku Teks Pendidikan Kesenian Tahun 4 SK KSSR Semakan 2017 (DBP 2019)",
+      "source_book_content_page_checked": true,
+      "source_book_audio_number_printed": "44–47",
+      "source_book_audio_file_verified": false,
+      "source_sp_mapping_status": "BUKU_DSKP_SP_TEXT_SEPADAN"
     },
     {
       "pdp_id": "MZ-Y4-15",
@@ -276,9 +290,9 @@
       "unit": "SECAWAN KOPI MANIS",
       "unit_number": 5,
       "sp": [
-        "4.1.1"
+        "2.3.1"
       ],
-      "page": "52",
+      "page": "52-53",
       "audio": null,
       "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
       "rpt2027_slot": {
@@ -287,8 +301,23 @@
         "groupB": "19/04–23/04"
       },
       "flags": [
-        "Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 4.1.1; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL"
-      ]
+        "RPT 2025/26 menulis SP 4.1.1, buku teks cetak 4.2.2, SP DSKP Muzik yang digunakan 2.3.1",
+        "Halaman 52-53 dilihat pada buku teks Pendidikan Kesenian Tahun 4 dalam Drive; audio hanya nombor tercetak, fail belum disahkan",
+        "Crosswalk SP pergerakan masih perlu pengesahan manual kerana nombor kod Buku Teks Pendidikan Kesenian berbeza daripada DSKP Pendidikan Muzik"
+      ],
+      "sp_rpt_source": [
+        "4.1.1"
+      ],
+      "sp_book_source": [
+        "4.2.2"
+      ],
+      "focus_pdp": "Pergerakan Gemalai — membina urutan gerakan mengikut tempo",
+      "source_book_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_title": "Buku Teks Pendidikan Kesenian Tahun 4 SK KSSR Semakan 2017 (DBP 2019)",
+      "source_book_content_page_checked": true,
+      "source_book_audio_number_printed": "48",
+      "source_book_audio_file_verified": false,
+      "source_sp_mapping_status": "CADANGAN_CROSSWALK_BUKU_DSKP_BERBEZA"
     },
     {
       "pdp_id": "MZ-Y4-16",
@@ -297,9 +326,9 @@
       "unit": "SECAWAN KOPI MANIS",
       "unit_number": 5,
       "sp": [
-        "4.1.1"
+        "2.3.1"
       ],
-      "page": "52",
+      "page": "52-53",
       "audio": null,
       "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
       "rpt2027_slot": {
@@ -308,8 +337,23 @@
         "groupB": "26/04–30/04"
       },
       "flags": [
-        "Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 4.1.1; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL"
-      ]
+        "RPT 2025/26 menulis SP 4.1.1, buku teks cetak 4.2.2, SP DSKP Muzik yang digunakan 2.3.1",
+        "Halaman 52-53 dilihat pada buku teks Pendidikan Kesenian Tahun 4 dalam Drive; audio hanya nombor tercetak, fail belum disahkan",
+        "Crosswalk SP pergerakan masih perlu pengesahan manual kerana nombor kod Buku Teks Pendidikan Kesenian berbeza daripada DSKP Pendidikan Muzik"
+      ],
+      "sp_rpt_source": [
+        "4.1.1"
+      ],
+      "sp_book_source": [
+        "4.2.2"
+      ],
+      "focus_pdp": "Pergerakan Gemalai — persembahan dan penilaian rakan",
+      "source_book_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_title": "Buku Teks Pendidikan Kesenian Tahun 4 SK KSSR Semakan 2017 (DBP 2019)",
+      "source_book_content_page_checked": true,
+      "source_book_audio_number_printed": "48",
+      "source_book_audio_file_verified": false,
+      "source_sp_mapping_status": "CADANGAN_CROSSWALK_BUKU_DSKP_BERBEZA"
     },
     {
       "pdp_id": "MZ-Y4-17",
@@ -587,9 +631,9 @@
       "unit": "HARUM MEWANGI",
       "unit_number": 10,
       "sp": [
-        "4.1.1"
+        "4.2.1"
       ],
-      "page": "50",
+      "page": "100-101",
       "audio": null,
       "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
       "rpt2027_slot": {
@@ -598,9 +642,22 @@
         "groupB": "23/08–27/08"
       },
       "flags": [
-        "Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 4.1.1; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL",
-        "Halaman buku teks sumber 50 menurun selepas unit terdahulu; semak pada buku asal"
-      ]
+        "RPT 2025/26 menulis SP 4.1.1, buku teks cetak 4.2.1, SP DSKP Muzik yang digunakan 4.2.1",
+        "Halaman 100-101 dilihat pada buku teks Pendidikan Kesenian Tahun 4 dalam Drive; audio hanya nombor tercetak, fail belum disahkan"
+      ],
+      "sp_rpt_source": [
+        "4.1.1"
+      ],
+      "sp_book_source": [
+        "4.2.1"
+      ],
+      "focus_pdp": "Apresiasi Kolattam: ensembel dan keluarga alat muzik",
+      "source_book_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_title": "Buku Teks Pendidikan Kesenian Tahun 4 SK KSSR Semakan 2017 (DBP 2019)",
+      "source_book_content_page_checked": true,
+      "source_book_audio_number_printed": "110–116",
+      "source_book_audio_file_verified": false,
+      "source_sp_mapping_status": "BUKU_DSKP_SP_TEXT_SEPADAN"
     },
     {
       "pdp_id": "MZ-Y4-32",
@@ -609,10 +666,9 @@
       "unit": "HARUM MEWANGI",
       "unit_number": 10,
       "sp": [
-        "2.3.1",
-        "4.1.1"
+        "2.3.1"
       ],
-      "page": "52",
+      "page": "102-103",
       "audio": null,
       "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
       "rpt2027_slot": {
@@ -621,9 +677,25 @@
         "groupB": "06/09–10/09"
       },
       "flags": [
-        "Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 4.1.1; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL",
-        "Halaman buku teks sumber 52 menurun selepas unit terdahulu; semak pada buku asal"
-      ]
+        "RPT 2025/26 menulis SP 2.3.1, 4.1.1, buku teks cetak 2.2.7, 4.2.2, SP DSKP Muzik yang digunakan 2.3.1",
+        "Halaman 102-103 dilihat pada buku teks Pendidikan Kesenian Tahun 4 dalam Drive; audio hanya nombor tercetak, fail belum disahkan",
+        "Crosswalk SP pergerakan masih perlu pengesahan manual kerana nombor kod Buku Teks Pendidikan Kesenian berbeza daripada DSKP Pendidikan Muzik"
+      ],
+      "sp_rpt_source": [
+        "2.3.1",
+        "4.1.1"
+      ],
+      "sp_book_source": [
+        "2.2.7",
+        "4.2.2"
+      ],
+      "focus_pdp": "Gerakan Kolattam menggunakan pola ketukan dan tempo",
+      "source_book_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_title": "Buku Teks Pendidikan Kesenian Tahun 4 SK KSSR Semakan 2017 (DBP 2019)",
+      "source_book_content_page_checked": true,
+      "source_book_audio_number_printed": "117",
+      "source_book_audio_file_verified": false,
+      "source_sp_mapping_status": "CADANGAN_CROSSWALK_BUKU_DSKP_BERBEZA"
     },
     {
       "pdp_id": "MZ-Y4-33",
@@ -632,10 +704,9 @@
       "unit": "HARUM MEWANGI",
       "unit_number": 10,
       "sp": [
-        "2.3.1",
-        "4.1.1"
+        "2.3.1"
       ],
-      "page": "52",
+      "page": "102-103",
       "audio": null,
       "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
       "rpt2027_slot": {
@@ -644,9 +715,25 @@
         "groupB": "13/09–17/09"
       },
       "flags": [
-        "Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 4.1.1; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL",
-        "Halaman buku teks sumber 52 menurun selepas unit terdahulu; semak pada buku asal"
-      ]
+        "RPT 2025/26 menulis SP 2.3.1, 4.1.1, buku teks cetak 2.2.7, 4.2.2, SP DSKP Muzik yang digunakan 2.3.1",
+        "Halaman 102-103 dilihat pada buku teks Pendidikan Kesenian Tahun 4 dalam Drive; audio hanya nombor tercetak, fail belum disahkan",
+        "Crosswalk SP pergerakan masih perlu pengesahan manual kerana nombor kod Buku Teks Pendidikan Kesenian berbeza daripada DSKP Pendidikan Muzik"
+      ],
+      "sp_rpt_source": [
+        "2.3.1",
+        "4.1.1"
+      ],
+      "sp_book_source": [
+        "2.2.7",
+        "4.2.2"
+      ],
+      "focus_pdp": "Kolattam: persembahan berkumpulan dan rubrik kreativiti",
+      "source_book_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+      "source_book_title": "Buku Teks Pendidikan Kesenian Tahun 4 SK KSSR Semakan 2017 (DBP 2019)",
+      "source_book_content_page_checked": true,
+      "source_book_audio_number_printed": "117",
+      "source_book_audio_file_verified": false,
+      "source_sp_mapping_status": "CADANGAN_CROSSWALK_BUKU_DSKP_BERBEZA"
     },
     {
       "pdp_id": "MZ-Y4-34",
@@ -685,5 +772,8 @@
         "groupB": "27/09–01/10"
       }
     }
-  ]
+  ],
+  "source_book_found_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
+  "source_book_found_title": "GuruBesar_BukuTeks_Pendidikan_Kesenian_T4_SK.pdf",
+  "partial_page_content_check_count": 6
 }

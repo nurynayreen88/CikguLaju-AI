@@ -1,10 +1,11 @@
-# RPT PENDIDIKAN MUZIK TAHUN 4 — 2027 (KUMPULAN A & B)
+# RANCANGAN PENGAJARAN TAHUNAN PENDIDIKAN MUZIK TAHUN 4 — 2027
 
-**SEKOLAH:** __________  **GURU:** __________  **STATUS:** DRAF STAGING — belum untuk Telegram/Web.
+**Sekolah:** __________   **Guru:** __________   **Kurikulum:** KSSR Semakan 2017   
+**Status:** DRAF STAGING — Kumpulan A dan B (tarikh cadangan belum kesahan cuti negeri/gantian).
 
-**Nota penting:** RPT 2025/26 mempunyai kod SP 3.1.x dan 4.1.1 yang tidak sama dengan DSKP salinan Tahun 4 (3.2.x / 4.2.1). Jangan ubah kod secara senyap; sahkan DSKP dan buku asal. Halaman buku teks hanya rujukan sumber lama, belum disahkan secara visual.
+**Sumber:** DSKP Tahun 4; RPT 2025/26; Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019). Buku yang sepadan dengan unit ini telah ditemukan di Drive: https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view.
 
-| PdP | Slot A | Slot B | Unit/Tajuk | SP RPT | BT m/s* |
+| PdP | Slot A | Slot B | Unit / Tajuk | SP | BT m/s* |
 |---:|---|---|---|---|---|
 | 01 | 04/01–07/01 | 04/01–08/01 | SENJA NAN INDAH | 1.1.2 | 10-11 |
 | 02 | 10/01–14/01 | 11/01–15/01 | SENJA NAN INDAH | 1.1.2 | 10-11 |
@@ -19,9 +20,9 @@
 | 11 | 21/03–25/03 | 22/03–26/03 | BUNGA GERGASI | 2.3.1 | 44 |
 | 12 | 28/03–01/04 | 29/03–02/04 | Projek Seni Muzik 1 | 5.1.1 | — |
 | 13 | 04/04–08/04 | 05/04–09/04 | Projek Seni Muzik 1 | 5.1.2, 5.1.3 | — |
-| 14 | 11/04–15/04 | 12/04–16/04 | SECAWAN KOPI MANIS | 4.1.1 | 50 |
-| 15 | 18/04–22/04 | 19/04–23/04 | SECAWAN KOPI MANIS | 4.1.1 | 52 |
-| 16 | 25/04–29/04 | 26/04–30/04 | SECAWAN KOPI MANIS | 4.1.1 | 52 |
+| 14 | 11/04–15/04 | 12/04–16/04 | SECAWAN KOPI MANIS | 4.2.1 | 50-51 |
+| 15 | 18/04–22/04 | 19/04–23/04 | SECAWAN KOPI MANIS | 2.3.1 | 52-53 |
+| 16 | 25/04–29/04 | 26/04–30/04 | SECAWAN KOPI MANIS | 2.3.1 | 52-53 |
 | 17 | 02/05–06/05 | 03/05–07/05 | LARIAN RIANG RIA | 2.4.1 | 60 |
 | 18 | 09/05–13/05 | 10/05–14/05 | LARIAN RIANG RIA | 1.1.1, 1.1.2 | 62 |
 | 19 | 16/05–20/05 | 17/05–21/05 | INDAHNYA DASAR LAUT | 2.2.1, 2.2.2 | 68 |
@@ -36,12 +37,12 @@
 | 28 | 01/08–05/08 | 02/08–06/08 | KOTA CERIA | 2.1.3, 2.3.1 | 90 |
 | 29 | 08/08–12/08 | 09/08–13/08 | KOTA CERIA | 2.2.1 | 92 |
 | 30 | 15/08–19/08 | 16/08–20/08 | KOTA CERIA | 2.1.1 | 94 |
-| 31 | 22/08–26/08 | 23/08–27/08 | HARUM MEWANGI | 4.1.1 | 50 |
-| 32 | 05/09–09/09 | 06/09–10/09 | HARUM MEWANGI | 2.3.1, 4.1.1 | 52 |
-| 33 | 12/09–16/09 | 13/09–17/09 | HARUM MEWANGI | 2.3.1, 4.1.1 | 52 |
+| 31 | 22/08–26/08 | 23/08–27/08 | HARUM MEWANGI | 4.2.1 | 100-101 |
+| 32 | 05/09–09/09 | 06/09–10/09 | HARUM MEWANGI | 2.3.1 | 102-103 |
+| 33 | 12/09–16/09 | 13/09–17/09 | HARUM MEWANGI | 2.3.1 | 102-103 |
 | 34 | 19/09–23/09 | 20/09–24/09 | Projek Seni Muzik 3 | 5.1.1 | — |
 | 35 | 26/09–30/09 | 27/09–01/10 | Projek Seni Muzik 3 | 5.1.2, 5.1.3 | — |
 
-*Slot bukan identiti PdP. Semak cuti negeri dan ganti sebelum tarikh disahkan. Slot baki 2027 dikhaskan bagi pemulihan, projek atau pentaksiran mengikut jadual sebenar.
+*Hanya **6 PdP** Unit 5 (14–16) dan Unit 10 (31–33) diperiksa secara khusus pada teks buku dalam pusingan ini. Bilangan halaman lain masih calon RPT lama. Buku menggunakan kod SP yang tidak selalu sama dengan DSKP Pendidikan Muzik Tahun 4 dan belum semakan penuh. Audio tidak disahkan.*
 
-**Temuan audit kod SP:** PdP 14 (Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 4.1.1; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL) | PdP 15 (Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 4.1.1; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL) | PdP 16 (Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 4.1.1; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL) | PdP 21 (Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 3.1.2, 3.1.3; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL) | PdP 24 (Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 3.1.1, 3.1.2, 3.1.3; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL) | PdP 31 (Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 4.1.1; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL; Halaman buku teks sumber 50 menurun selepas unit terdahulu; semak pada buku asal) | PdP 32 (Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 4.1.1; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL; Halaman buku teks sumber 52 menurun selepas unit terdahulu; semak pada buku asal) | PdP 33 (Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 4.1.1; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL; Halaman buku teks sumber 52 menurun selepas unit terdahulu; semak pada buku asal).
+**Isu masih terbuka:** Projek seni tahun 4 pada draf sumber lama muncul tiga kali, sedangkan DSKP menyatakan dua projek setahun. Mesti selesai sebelum FINAL READY.

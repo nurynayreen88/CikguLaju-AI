@@ -1,36 +1,31 @@
 # RPH PENDIDIKAN MUZIK TAHUN 4 — PdP 16
 
-**Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** SECAWAN KOPI MANIS  
-**Bidang:** Pengajaran dan Persembahan Muzik  
-**SK / SP (RPT sumber):** 4.1.1
-**Tempoh cadangan:** 30 minit  
+**Kelas:** __________  **Tarikh:** __________  **Masa:** __________
+**Unit/Tajuk:** SECAWAN KOPI MANIS
+**SK / SP DSKP (crosswalk yang perlu pengesahan):** 2.3.1
+**Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**AMARAN KOD:** SP dalam RPT tidak ditemui secara tepat dalam katalog DSKP tahun ini: 4.1.1. Jangan ubah kod automatik.
+**Fokus PdP:** Pergerakan Gemalai — persembahan dan penilaian rakan
 
-**Objektif pembelajaran (draf boleh ukur):** Memberi ulasan tentang muzik yang didengar dengan sekurang-kurangnya dua maklumat tepat dan satu alasan.
+**Objektif:** Murid mempersembahkan urutan Gemalai dan memberikan satu ulasan berdasarkan koordinasi serta kreativiti gerakan.
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Set induksi (4 minit):** Murid mengulang semula urutan tangan-kaki yang dipelajari; guru membimbing penetapan tempo.
 
-**Set Induksi — 4 minit**  
-Guru memperdengarkan satu petikan muzik dan meminta murid menyatakan dua perkara yang didengar.
+**Aktiviti 1 — Demonstrasi dan penerokaan (8 minit):** Kumpulan merancang formasi ringkas berdasarkan urutan gerak Gemalai dalam buku, menentukan ketua dan isyarat mula/henti.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru memperkenalkan kosa kata apresiasi yang berkaitan: melaksanakan kemahiran muzik mengikut Standard Pembelajaran RPT. Murid membuat pemerhatian berpandukan tiga soalan dengar.
+**Aktiviti 2 — Amali / aplikasi (10 minit):** Setiap kumpulan mempersembahkan urutan mengikut tempo. Pemerhati menggunakan dua kriteria ringkas: keseragaman tempo dan kreativiti.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid berbincang secara pasangan, menyusun ulasan dua ayat dengan bukti daripada rakaman, kemudian berkongsi respons.
+**Pengukuhan dan pentaksiran (6 minit):** Kumpulan mencatat satu kekuatan dan satu penambahbaikan, kemudian melakukan percubaan kedua.
 
-**Pengukuhan & Penilaian — 6 minit**  
-Semak ketepatan sekurang-kurangnya 2 fakta/unsur muzik dalam ulasan dan satu alasan berasaskan pendengaran.
+**Penutup (2 minit):** Murid menyatakan satu dapatan tentang muzik dan menunjukkan semula kemahiran yang diamalkan; guru merekod tahap penguasaan berdasarkan evidens aktiviti.
 
-**Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 halaman 52–53, kad rubrik dan ruang persembahan.
 
-**Bahan:** Rakaman muzik yang berlesen/diizinkan, gambar alat muzik dan lembaran respons.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 52; **belum disahkan pada halaman buku asal**. Audio/trek belum dipadankan.
+**Rujukan:** Buku Teks Pendidikan Kesenian Tahun 4 SK KSSR Semakan 2017 halaman 52-53. Sumber Drive: https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view
 
-**Catatan pelaksanaan / pemulihan:** __________________________________________
+**Nota audit penting:** Buku mencetak Audio 48; fail tidak disahkan. Kod buku 4.2.2 berbeza daripada kod SP gerak 2.3.1 dalam DSKP Muzik Tahun 4. RPT asal menulis SP 4.1.1. **Jangan ubah kod dalam DB produksi sebelum pengesahan.**
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Refleksi / Pemulihan:** _________________________________________________
+
+**Kawalan penerbitan:** Buku disemak pada halaman 52-53, namun pemetaan kod gerak, kelulusan RPH dan audio masih terbuka. Ini bukan bukti FINAL READY.
