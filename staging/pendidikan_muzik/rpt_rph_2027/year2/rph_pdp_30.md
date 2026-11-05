@@ -1,7 +1,7 @@
 # RPH PENDIDIKAN MUZIK TAHUN 2 — PdP 30
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** JALAN- JALAN  
+**Unit / Tajuk:** JALAN-JALAN KE TAMAN RAMA-RAMA  
 **Bidang:** Apresiasi Muzik  
 **SK / SP (RPT sumber):** 4.1.1
 **Tempoh cadangan:** 30 minit  

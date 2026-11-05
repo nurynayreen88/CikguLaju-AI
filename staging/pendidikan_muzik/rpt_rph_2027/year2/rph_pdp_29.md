@@ -1,7 +1,7 @@
 # RPH PENDIDIKAN MUZIK TAHUN 2 — PdP 29
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** JALAN- JALAN KE TAMAN RAMA- RAMA  
+**Unit / Tajuk:** JALAN-JALAN KE TAMAN RAMA-RAMA  
 **Bidang:** Gerakan Mengikut Muzik  
 **SK / SP (RPT sumber):** 2.3.2
 **Tempoh cadangan:** 30 minit  

@@ -1,7 +1,7 @@
 # RPH PENDIDIKAN MUZIK TAHUN 2 — PdP 28
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** JALAN- JALAN KE TAMAN RAMA- RAMA  
+**Unit / Tajuk:** JALAN-JALAN KE TAMAN RAMA-RAMA  
 **Bidang:** Nyanyian  
 **SK / SP (RPT sumber):** 2.1.4
 **Tempoh cadangan:** 30 minit  
@@ -18,7 +18,7 @@ Guru memainkan frasa lagu pendek dan meminta murid meniru satu frasa mengikut pi
 Guru memodelkan latihan vokal bersesuaian: Bernyanyi dengan perubahan tempo.. Murid berlatih secara respons-gema dalam dua pusingan.
 
 **Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid menyanyikan bahagian lagu daripada unit JALAN- JALAN KE TAMAN RAMA- RAMA secara berkumpulan, kemudian mencuba semula setelah maklum balas pic/tempo/postur.
+Murid menyanyikan bahagian lagu daripada unit JALAN-JALAN KE TAMAN RAMA-RAMA secara berkumpulan, kemudian mencuba semula setelah maklum balas pic/tempo/postur.
 
 **Pengukuhan & Penilaian — 6 minit**  
 Rubrik pemerhatian: pic, tempo dan kemahiran utama SP (3 kriteria); murid menunjukkan pembaikan pada percubaan kedua.

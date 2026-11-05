@@ -1,7 +1,7 @@
 # RPH PENDIDIKAN MUZIK TAHUN 3 — PdP 19
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** OH ,  
+**Unit / Tajuk:** OH, BERWARNA-WARNI  
 **Bidang:** Nyanyian  
 **SK / SP (RPT sumber):** 2.1.2
 **Tempoh cadangan:** 30 minit  
@@ -18,7 +18,7 @@ Guru memainkan frasa lagu pendek dan meminta murid meniru satu frasa mengikut pi
 Guru memodelkan latihan vokal bersesuaian: Bernyanyi dengan pic yang betul.. Murid berlatih secara respons-gema dalam dua pusingan.
 
 **Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid menyanyikan bahagian lagu daripada unit OH , secara berkumpulan, kemudian mencuba semula setelah maklum balas pic/tempo/postur.
+Murid menyanyikan bahagian lagu daripada unit OH, BERWARNA-WARNI secara berkumpulan, kemudian mencuba semula setelah maklum balas pic/tempo/postur.
 
 **Pengukuhan & Penilaian — 6 minit**  
 Rubrik pemerhatian: pic, tempo dan kemahiran utama SP (3 kriteria); murid menunjukkan pembaikan pada percubaan kedua.
