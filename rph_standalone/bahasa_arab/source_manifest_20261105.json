@@ -370,12 +370,12 @@
   "bibliography_file": "audits/bahasa_arab_buku_teks_bibliography_20261105.json",
   "total_provisional_rph_count": 122,
   "latest_technical_a4_validation": {
-    "source_commit": "2c971d5082f522e3c10800ec2f63b5487596d18d",
-    "github_actions_run": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42127983356",
-    "word_document_count": 106,
-    "pdf_document_count": 106,
+    "source_commit": "41a0265769c7035cfe613e380c4dc6d2baeac980",
+    "github_actions_run": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42131146183",
+    "word_document_count": 122,
+    "pdf_document_count": 122,
     "pdf_pages_each": 1,
-    "status": "PASSED_OFFLINE_TECHNICAL_ONLY_FOR_PREVIOUS_106",
+    "status": "PASSED_OFFLINE_TECHNICAL_ONLY",
     "release_approval": false
   }
 }

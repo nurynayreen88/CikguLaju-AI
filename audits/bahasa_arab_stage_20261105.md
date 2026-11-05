@@ -115,3 +115,6 @@ GitHub run `42127983356` menghasilkan 106 Word dan 106 PDF A4 Arab (font Amiri),
 ## 6 November 2026 — Tahun 5 Unit 2 (16 RPH baharu)
 Unit **ما ألذ الطعام!** Buku Teks Tahun5 DBP/KPM cetakan 2020 (ISBN 978-983-49-2838-4) dan DSKP Tahun5 dibaca untuk latihan halaman bercetak **30,30,31,31,32,32,34,35,36,37,38,41,42,44,47,56**. Ditambah 16 RPH draf individu PdP013–028: fonetik ح/خ dan ذ/ز; dengar makanan; klasifikasi; projek audio; bacaan minuman; menulis kata; dialog jual beli; ayat buah segar; projek kolaj.
 Peta draf `rpt_2027/bahasa_arab/year5_unit2_pdp013_028_DRAF.csv`; audit `audits/bahasa_arab_y5_unit2_pdp013_028_text_source_audit_20261106.json`. Nombor PdP calon tidak sama dengan pengesahan RPT 2027; visual halaman dan kelulusan individu tiada. Jumlah **122 draf**, **0 FINAL READY**. QA Word/PDF untuk 122 masih perlu lulus.
+
+## 6 Nov 2026 — 122 Word/PDF A4 berjaya
+GitHub Actions `42131146183` pada commit `41a0265769c7035cfe613e380c4dc6d2baeac980` berjaya untuk 122 DOCX + 122 PDF, setiap PDF satu halaman A4 dan artifak pratonton tersedia. Pautan https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42131146183. CI pertama struktur pada head ini gagal kerana status terakhir mencatat lulus 106, bukan 122. Rekod telah diselaraskan supaya set 122 diuji tanpa menukar status kelulusan pedagogi. **0 FINAL READY**.

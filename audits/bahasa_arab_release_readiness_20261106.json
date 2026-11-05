@@ -11,9 +11,9 @@
     "source_page_draft_reviewed": 122,
     "preliminary_year6_page_candidates": 0,
     "one_page_A4_docx_pdf_ci_verified": true,
-    "render_check_ci": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42127983356",
-    "word_generated_in_ci": 106,
-    "pdf_generated_in_ci": 106,
+    "render_check_ci": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42131146183",
+    "word_generated_in_ci": 122,
+    "pdf_generated_in_ci": 122,
     "year6_text_source_reviewed": 12,
     "year2_text_source_reviewed": 12,
     "year2_sp_book_ocr_ambiguous": 4,
@@ -25,7 +25,7 @@
     "year4_unit4_candidate_rph": 16,
     "verified_a4_render_for_all_106": true,
     "year5_unit2_candidate_rph": 16,
-    "verified_a4_render_for_all_122": false
+    "verified_a4_render_for_all_122": true
   },
   "release_checks": [
     {
@@ -61,7 +61,7 @@
     {
       "id": "word_pdf_programmatic_a4",
       "status": "PASS_TECHNICAL_ONLY",
-      "detail": "Last VERIFIED GitHub CI 106 DOCX+106 PDF one A4 page passed. Expanded 122-document A4 run pending; do not assert 122 passed yet."
+      "detail": "PASS TECHNICAL ONLY on https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42131146183: generated 122 DOCX and 122 PDFs; each PDF one A4 page. Arabic/RTL rendering uses Amiri. Individual visual/linguistic proofreading and pedagogy/RPT release approval still missing."
     },
     {
       "id": "manual_pedagogic_approval",

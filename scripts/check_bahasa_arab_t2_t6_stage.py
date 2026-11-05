@@ -307,7 +307,11 @@ def check() -> None:
     assert m["years"]["5"]["unit2_candidate_rph_count"] == 16 and m["years"]["5"]["source_reviewed_drafts_total"] == 28
     assert m["years"]["5"]["unit2_release_approved"] is False
     assert readiness["completed"]["year5_unit2_candidate_rph"] == 16
-    assert readiness["completed"]["verified_a4_render_for_all_122"] is False
+    assert readiness["completed"]["verified_a4_render_for_all_122"] is True
+    assert readiness["completed"]["word_generated_in_ci"] == 122
+    assert readiness["completed"]["pdf_generated_in_ci"] == 122
+    assert m["latest_technical_a4_validation"]["status"] == "PASSED_OFFLINE_TECHNICAL_ONLY"
+    assert m["latest_technical_a4_validation"]["release_approval"] is False
     for n,row in zip(range(13,29),y5rows):
         txt = (SUBJECT / "year5" / f"lesson_{n:03d}.md").read_text(encoding="utf-8")
         assert len(txt) > 1550 and all(mark in txt for mark in MARKERS)
