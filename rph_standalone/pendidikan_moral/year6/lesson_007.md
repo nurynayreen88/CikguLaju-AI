@@ -12,16 +12,16 @@
 **BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 3: Tanggungjawab sebagai Warganegara, m/s 22–25 (flipbook halaman 32–35); kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year6/unit_03_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Murid menyenaraikan tiga tanggungjawab warganegara dan menerangkan cara menggalasnya. Kriteria kejayaan: Tiga tanggungjawab serta dua cara dan alasan yang sesuai bagi situasi bencana.
+Murid mendefinisikan warganegara dan menghuraikan dua cara melaksanakan tanggungjawab sebagai warganegara. Kriteria kejayaan: satu takrif tepat serta dua cara dan sebab yang berkaitan dengan situasi dalam buku teks Unit 3.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru memperlihatkan tajuk **Tanggungjawab sebagai Warganegara** dalam buku teks KSSR Semakan 2017, m/s 22, dan mengemukakan situasi berkaitan nilai unit. Murid mengenal pasti watak, tindakan serta satu keputusan yang munasabah mengikut SP PdP.
+**Set induksi (5 minit):** Guru memaparkan ilustrasi MyKad daripada buku teks m/s 22–23 tanpa menggunakan data peribadi sebenar murid. Murid mengenal pasti fungsi dokumen pengenalan dan menghubungkannya dengan kewajipan warganegara.
 
-**Aktiviti 1 (20 minit) — Kita Anak Malaysia:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 3, m/s 22–25, bahagian **Kita Anak Malaysia** sebagai rangsangan. Murid memberikan definisi warganegara menggunakan ayat sendiri, kemudian mengaitkan identiti Malaysia dengan situasi masyarakat pelbagai latar (SP 3.1). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
+**Aktiviti 1 (20 minit) — Kita Anak Malaysia:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 3, m/s 22–25, bahagian **Kita Anak Malaysia** sebagai rangsangan. Murid memberikan takrif warganegara dengan ayat sendiri berdasarkan penjelasan MyKad dan taraf kewarganegaraan pada m/s 22–23; guru membetulkan kekeliruan antara kad pengenalan dan tanggungjawab seseorang warganegara (SP 3.1). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
 
-**Aktiviti 2 (20 minit) — Negaraku Tanggungjawabku:** Guru merujuk bahagian **Negaraku Tanggungjawabku** dalam unit yang sama dan menyediakan kad aktiviti berkaitan. Murid menghuraikan dua tanggungjawab warganegara dalam sekolah atau komuniti dan cara melaksanakannya dengan selamat (SP 3.2). Guru memberikan maklum balas terhadap sebab, tindakan atau refleksi, kemudian meminta pembetulan yang boleh diperhatikan.
+**Aktiviti 2 (20 minit) — Negaraku Tanggungjawabku:** Guru merujuk bahagian **Negaraku Tanggungjawabku** dalam unit yang sama dan menyediakan kad aktiviti berkaitan. Murid memilih dua contoh daripada m/s 24–25 seperti mematuhi undang-undang, memelihara khazanah negara atau menerima kepelbagaian kaum; murid menghuraikan cara melaksanakannya secara selamat di sekolah atau komuniti (SP 3.2). Guru memberikan maklum balas terhadap sebab, tindakan atau refleksi, kemudian meminta pembetulan yang boleh diperhatikan.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Tiga tanggungjawab serta dua cara dan alasan yang sesuai bagi situasi bencana. Guru merekod pencapaian berdasarkan respons individu dan memberi maklum balas terhadap penjelasan atau tingkah laku yang dapat diperhatikan.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menilai satu takrif warganegara dan dua cara melaksanakan tanggungjawab berserta sebab, berpandukan situasi MyKad dan ilustrasi kewajipan warganegara pada m/s 22–25. Guru merekod pencapaian berdasarkan respons individu dan memberi maklum balas terhadap penjelasan atau tingkah laku yang dapat diperhatikan.
 
 **Penutup (5 minit):** Murid menyatakan satu tindakan dan sebab tindakan itu wajar berdasarkan nilai unit. Guru merumuskan pembelajaran dan mengingatkan murid agar menghormati keadaan keluarga, sekolah dan komuniti yang berbeza.
 
