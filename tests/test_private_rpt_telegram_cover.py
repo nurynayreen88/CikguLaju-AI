@@ -66,6 +66,8 @@ class ProtectedRptTests(unittest.TestCase):
         pages=PdfReader(BytesIO(r.data)).pages
         self.assertEqual(len(pages),13)
         self.assertIn("SK Sejahtera",pages[0].extract_text())
+        self.assertIn("2027",pages[0].extract_text())
+        self.assertIn("Tahun 2",pages[0].extract_text())
         self.assertIn("Johor",pages[0].extract_text())
         self.assertIn("ORIGINAL page 1",pages[1].extract_text())
         self.assertIn("ORIGINAL page 12",pages[12].extract_text())
