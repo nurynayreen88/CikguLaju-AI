@@ -1,0 +1,18 @@
+{
+  "subject": "Pendidikan Islam",
+  "version": "pi-v7-partial-draft-20261105",
+  "ready": false,
+  "year_counts": {
+    "2": 112,
+    "3": 147,
+    "4": 151,
+    "5": 143,
+    "6": 143
+  },
+  "available_drafts": 690,
+  "held": 6,
+  "status": "DRAF_SEMAKAN",
+  "source_zip_sha256": "36e68d13d84f0f8edd2622b6414362020e9a3a0498d6b195c5f193a2a2132b3a",
+  "release": "DISABLED_BY_DEFAULT",
+  "notes": "Lesson identity and Jawi paragraphs copied from V5 Word. Internal audit footer removed only for preview; no semantic approval. Six held records omit all teacher content."
+}
