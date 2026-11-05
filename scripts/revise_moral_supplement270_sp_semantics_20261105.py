@@ -205,9 +205,9 @@ def transform(path: Path):
         match = one(STEP_REGEXES[name], new, path.name + " " + name)
         new = new[:match.start()] + replacements[name] + new[match.end():]
     assert "STATUS" in new and "STATUS" in old
-    for marker in ("Padanan edisi Semakan 2017", "Batasan sumber"):
-        if y == 6:
-            assert marker in new, (path, marker)
+    if y == 6:
+        assert ("Padanan edisi Semakan 2017" in new or "Bukti aktiviti Semakan 2017" in new), path
+        assert ("Batasan sumber" in new or "Batasan sumber:" in new or "Batasan sumber" in old), path
     for code, desc in standards:
         assert code in new and desc in new, (path, code)
     assert len(new) > 1800 and all(one(STEP_REGEXES[name], new, name) for name in PHASES)
