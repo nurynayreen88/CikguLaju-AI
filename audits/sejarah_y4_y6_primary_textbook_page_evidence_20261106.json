@@ -1,8 +1,8 @@
 {
   "date": "2026-11-06",
   "source_basis": "digital scanned/rehost textbook HTML text read, not complete visual approval",
-  "count": 47,
-  "status": "47_TEXTBOOK_PAGE_TEXT_CORROBORATED_NOT_RELEASE",
+  "count": 55,
+  "status": "55_TEXTBOOK_PAGE_TEXT_CORROBORATED_NOT_RELEASE",
   "records": [
     {
       "year": 4,
@@ -732,6 +732,128 @@
         "https://fliphtml5.com/itcew/pnmn"
       ],
       "summary": "Halaman 28–30 mengenal pasti bendera, lagu dan jata negeri. Halaman 30 memberikan aktiviti mendengar lagu negeri dan menerangkan makna serta identiti negeri.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 6,
+      "pdp": 7,
+      "pages": "35–38",
+      "sp": [
+        "10.3.1"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/itcew/pnmn"
+      ],
+      "summary": "Asal-usul Rukun Negara selepas peristiwa 13 Mei 1969, penubuhan MAGERAN/MAPEN dan faktor pengasingan ekonomi, petempatan dan fahaman politik.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 6,
+      "pdp": 8,
+      "pages": "39–43",
+      "sp": [
+        "10.3.2"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/itcew/pnmn"
+      ],
+      "summary": "Matlamat dan lima prinsip Rukun Negara, maksud prinsip serta aktiviti kumpulan dan peta pemikiran.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 6,
+      "pdp": 9,
+      "pages": "44–46",
+      "sp": [
+        "10.3.3"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/itcew/pnmn"
+      ],
+      "summary": "Peranan Rukun Negara dalam perpaduan, toleransi, patriotisme, penghayatan undang-undang dan jati diri individu.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 6,
+      "pdp": 10,
+      "pages": "35–46",
+      "sp": [
+        "10.3.1",
+        "10.3.2"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/itcew/pnmn"
+      ],
+      "summary": "Kajian kes Rukun Negara ialah olahan guru berpandukan latar sejarah, tujuan dan prinsip dalam bab ini, bukan latihan kajian kes rasmi pada satu halaman.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 6,
+      "pdp": 11,
+      "pages": "52–57",
+      "sp": [
+        "11.1.1",
+        "11.1.2"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/itcew/pnmn"
+      ],
+      "summary": "Pengenalan kepelbagaian kaum dan perbandingan petempatan serta kegiatan ekonomi masyarakat dahulu berbanding kini; elakkan stereotaip yang menyamaratakan keadaan semasa.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 6,
+      "pdp": 12,
+      "pages": "58–63",
+      "sp": [
+        "11.1.3"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/itcew/pnmn"
+      ],
+      "summary": "Alat muzik dan tarian tradisional pelbagai kaum termasuk engkerurai, sompoton, sape dan veenai, bersama bahan ilustrasi.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 6,
+      "pdp": 13,
+      "pages": "64–67",
+      "sp": [
+        "11.1.4"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/itcew/pnmn"
+      ],
+      "summary": "Permainan tradisional seperti sepak raga, kabaddi, chap teh dan wau, serta nilai kerjasama.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 6,
+      "pdp": 14,
+      "pages": "68–71",
+      "sp": [
+        "11.1.5"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/itcew/pnmn"
+      ],
+      "summary": "Cerita rakyat tempatan seperti Si Luncai dan legenda Puteri Santubong; latihan analisis nilai dan pengajaran, bukan bukti sejarah literal.",
       "ready": false,
       "teacher_approved": false,
       "exact_exercise_visual_verified": false

@@ -68,3 +68,16 @@ Sumber asal teks: https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/ . 
 - **PdP 036**: halaman 156–167; SP 5.4.1,5.4.2; Kajian kes cadangan guru yang membezakan hikayat Hang Tuah daripada bukti lain.
 
 Tahun 4 kini **36/36** mempunyai catatan bacaan teks halaman khusus, tanpa kelulusan visual latihan atau guru. Jumlah keseluruhan **47/108**, baki **61**. Ini metadata bukti pada JSON sumber dan ledger, bukan perubahan aktiviti RPH atau generator.
+
+## Tahun 6 PdP 007–014 — semakan sumber teks (6 November 2026)
+
+- **T6 PdP 007** — halaman 35–38; SP 10.3.1. Asal-usul Rukun Negara selepas peristiwa 13 Mei 1969, penubuhan MAGERAN/MAPEN dan faktor pengasingan ekonomi, petempatan dan fahaman politik.
+- **T6 PdP 008** — halaman 39–43; SP 10.3.2. Matlamat dan lima prinsip Rukun Negara, maksud prinsip serta aktiviti kumpulan dan peta pemikiran.
+- **T6 PdP 009** — halaman 44–46; SP 10.3.3. Peranan Rukun Negara dalam perpaduan, toleransi, patriotisme, penghayatan undang-undang dan jati diri individu.
+- **T6 PdP 010** — halaman 35–46; SP 10.3.1,10.3.2. Kajian kes Rukun Negara ialah olahan guru berpandukan latar sejarah, tujuan dan prinsip dalam bab ini, bukan latihan kajian kes rasmi pada satu halaman.
+- **T6 PdP 011** — halaman 52–57; SP 11.1.1,11.1.2. Pengenalan kepelbagaian kaum dan perbandingan petempatan serta kegiatan ekonomi masyarakat dahulu berbanding kini; elakkan stereotaip yang menyamaratakan keadaan semasa.
+- **T6 PdP 012** — halaman 58–63; SP 11.1.3. Alat muzik dan tarian tradisional pelbagai kaum termasuk engkerurai, sompoton, sape dan veenai, bersama bahan ilustrasi.
+- **T6 PdP 013** — halaman 64–67; SP 11.1.4. Permainan tradisional seperti sepak raga, kabaddi, chap teh dan wau, serta nilai kerjasama.
+- **T6 PdP 014** — halaman 68–71; SP 11.1.5. Cerita rakyat tempatan seperti Si Luncai dan legenda Puteri Santubong; latihan analisis nilai dan pengajaran, bukan bukti sejarah literal.
+
+Sumber buku DBP 2021: https://fliphtml5.com/itcew/pnmn. Jumlah terkini **55/108**, baki **53**; semua aktiviti dan pengesahan guru masih DRAF.

@@ -49,3 +49,5 @@ Semua kerja masih pada PR #341 DRAF. Jangan gabung atau deploy atas keputusan QA
 - **Kemajuan bukti teks halaman terkini: 18/108 PdP** (Tahun 4 PdP 001–007, Tahun 5 PdP 005–009, Tahun 6 PdP 001–006). Rekod terdahulu menyebut 11/108; rujuk ledger JSON untuk bilangan terkini. Semua kelulusan kekal belum lengkap.
 
 - **Semakan halaman teks terkini**: Tahun 4 36/36, keseluruhan 47/108. Semua status DRAF dan kelulusan individu belum disahkan. Rujuk ledger bukti untuk nilai terkini.
+
+- Tambahan bacaan teks Sejarah Tahun 6 PdP 007–014. Semakan halaman khusus keseluruhan **55/108**, tanpa kelulusan latihan atau guru. Semua DRAF.

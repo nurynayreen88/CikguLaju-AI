@@ -752,7 +752,21 @@
           "unit_start_page": 34,
           "unit_end_page": 49,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "35–38",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "10.3.1"
+            ],
+            "description": "Asal-usul Rukun Negara selepas peristiwa 13 Mei 1969, penubuhan MAGERAN/MAPEN dan faktor pengasingan ekonomi, petempatan dan fahaman politik.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -848,7 +862,21 @@
           "unit_start_page": 34,
           "unit_end_page": 49,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "39–43",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "10.3.2"
+            ],
+            "description": "Matlamat dan lima prinsip Rukun Negara, maksud prinsip serta aktiviti kumpulan dan peta pemikiran.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -944,7 +972,21 @@
           "unit_start_page": 34,
           "unit_end_page": 49,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "44–46",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "10.3.3"
+            ],
+            "description": "Peranan Rukun Negara dalam perpaduan, toleransi, patriotisme, penghayatan undang-undang dan jati diri individu.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1046,7 +1088,22 @@
           "unit_start_page": 34,
           "unit_end_page": 49,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "35–46",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "10.3.1",
+              "10.3.2"
+            ],
+            "description": "Kajian kes Rukun Negara ialah olahan guru berpandukan latar sejarah, tujuan dan prinsip dalam bab ini, bukan latihan kajian kes rasmi pada satu halaman.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1148,7 +1205,22 @@
           "unit_start_page": 50,
           "unit_end_page": 75,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "52–57",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "11.1.1",
+              "11.1.2"
+            ],
+            "description": "Pengenalan kepelbagaian kaum dan perbandingan petempatan serta kegiatan ekonomi masyarakat dahulu berbanding kini; elakkan stereotaip yang menyamaratakan keadaan semasa.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1244,7 +1316,21 @@
           "unit_start_page": 50,
           "unit_end_page": 75,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "58–63",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "11.1.3"
+            ],
+            "description": "Alat muzik dan tarian tradisional pelbagai kaum termasuk engkerurai, sompoton, sape dan veenai, bersama bahan ilustrasi.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1340,7 +1426,21 @@
           "unit_start_page": 50,
           "unit_end_page": 75,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "64–67",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "11.1.4"
+            ],
+            "description": "Permainan tradisional seperti sepak raga, kabaddi, chap teh dan wau, serta nilai kerjasama.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1430,7 +1530,21 @@
           "unit_start_page": 50,
           "unit_end_page": 75,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "68–71",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "11.1.5"
+            ],
+            "description": "Cerita rakyat tempatan seperti Si Luncai dan legenda Puteri Santubong; latihan analisis nilai dan pengajaran, bukan bukti sejarah literal.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
