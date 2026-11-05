@@ -6,33 +6,33 @@
 **Complementary CS/LS:** PILIHAN GURU (SOW)  
 **Language focus:** Unit 1 review: emergency vocabulary, verb forms and when/while sentences  
 **Duration:** 60 minutes  
-**Materials:** Academy Stars Year 6 Workbook pp.16–17, Check-up Challenge; Teacher's Book printed p.37; unit self-assessment. No separate unverified audio assigned.  
-**Learning objective:** Complete the Workbook p.16 vocabulary challenge and verb-form practice, and write at least two meaningful when/while sentences on p.17.  
-**PBD evidence:** At least four accurate vocabulary/verb responses, two meaningful when/while sentences and one explained correction.  
+**Materials:** Academy Stars Year 6 Workbook pp.16–17 Check-up Challenge; TB p.37; no unverified audio.  
+**Learning objective:** Complete WB p.16 vocabulary puzzle and verb forms; write two meaningful when/while sentences on p.17.  
+**PBD evidence:** Four accurate vocabulary/verb answers, two when/while sentences and one corrected error.  
 
 ## Set induction (5 minutes)
-**Teacher:** Show familiar emergency-scene pictures and elicit Unit 1 vocabulary without introducing a new listening track.  
-**Pupils:** Name two appropriate emergency words and explain a picture clue.
+**Teacher:** Show emergency pictures; elicit Unit 1 vocabulary without audio.  
+**Pupils:** Name two emergency words and explain one picture clue.
 
 ## Activity 1 — Prepare (10 minutes)
-**Teacher:** Guide the Workbook p.16 Check-up Challenge vocabulary puzzle shown in Teacher's Book p.37; model one clue, then circulate.  
-**Pupils:** Complete the crossword/puzzle and compare the selected vocabulary with a partner.
+**Teacher:** Model one clue in the WB p.16 vocabulary puzzle (TB p.37); guide pairs.  
+**Pupils:** Complete the vocabulary puzzle; compare answers in pairs.
 
 ## Activity 2 — Guided core task (18 minutes)
-**Teacher:** Follow the printed Workbook pp.16–17 verb-tense completion task; model how the surrounding sentence determines the verb form.  
-**Pupils:** Complete the verb items, compare answers and explain the choice of two forms.
+**Teacher:** Model verb choices from context in WB pp.16–17.  
+**Pupils:** Complete verb forms; explain two choices to a partner.
 
 ## Activity 3 — Apply and share (15 minutes)
-**Teacher:** Guide Workbook p.17 'What a terrible day!' sentence-writing with when/while; ask pairs to check time order and punctuation.  
-**Pupils:** Write at least two when/while sentences from the printed prompts, exchange work and make one improvement.
+**Teacher:** Guide WB p.17 'What a terrible day!' when/while writing; check sequence and punctuation.  
+**Pupils:** Write two when/while sentences; peer-check and improve one.
 
 ## Reinforcement / PBD (8 minutes)
-**Teacher:** Check four vocabulary/verb answers and two when/while sentences against the selected lesson goal; give one correction.  
-**Pupils:** Show their source-based answers, correct an error and record one area for practice.
+**Teacher:** Assess four vocabulary/verb answers and two when/while sentences.  
+**Pupils:** Show answers, correct one error and note a practice target.
 
 ## Closure (4 minutes)
-**Teacher:** Ask for one corrected Unit 1 sentence and use the review to identify a next learning need.  
-**Pupils:** Read a corrected sentence and state one target for further practice.
+**Teacher:** Request one corrected Unit 1 sentence and next learning goal.  
+**Pupils:** Read the corrected sentence; name one practice target.
 
 ## Differentiation and follow-up
 Support: picture/word bank, guided modelling and extra processing time. Extension: justify an answer independently or add precise supporting detail.
