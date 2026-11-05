@@ -1,28 +1,31 @@
 # RPH PENDIDIKAN MUZIK TAHUN 6 — PdP 17
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** MEMORI INDAH  
-**Bidang:** Rekoder  
-**SK/SP:** 2.4.1, 2.4.2  
-**Tempoh cadangan:** 30 minit  
+**Unit / Tajuk:** MEMORI INDAH
+**SK / SP (sumber DSKP/RPT Tahun 6, dikekalkan untuk audit):** 2.4.1, 2.4.2
+**Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — bukan FINAL READY
 
-**Objektif:** Murid memainkan frasa rekoder pada julat not DSKP Tahun 6 dengan sekurang-kurangnya 3 daripada 4 aspek teknik yang betul.
+**Fokus PdP:** Rekoder Country Gardens dan melodi kaunter Memori Indah
 
-**Set induksi (4 minit):** Guru menunjukkan carta penjarian dan memperagakan ton lembut serta bersih.
+**Objektif:** Memainkan satu frasa Country Gardens dan satu frasa melodi kaunter Memori Indah dengan penjarian serta hembusan betul.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Murid menyemak postur, penjarian dan perlidahan 'tu' untuk: Memainkan rekoder bagi not C, D, E, F, G, A, B, C’ dan D’ dengan ton yang baik mengikut tempo..
+**Kriteria kejayaan:** Murid menunjukkan kemahiran yang disebut pada objektif melalui latihan atau hasil kumpulan yang diperiksa guru.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Murid membaca dua bar skor, memainkan secara perlahan dan mengulang dengan tempo stabil; pasangan memberi maklum balas.
+**Set Induksi — 4 minit:** Guru menerangkan perbezaan melodi utama dan melodi kaunter melalui dua contoh bunyi yang dihasilkan sendiri.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak penjarian, embouchure, pernafasan dan tempo; nilai setiap murid pada dua percubaan.
+**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid membaca dan memainkan latihan rekoder Country Gardens halaman 48 secara ansur maju dengan penjarian dan perlidahan yang bersih.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Aktiviti 2 — Aplikasi, latihan dan persembahan (10 minit):** Kelas dibahagi dua kumpulan seperti nota buku halaman 49 untuk berlatih melodi kaunter Memori Indah dan mempersembahkan secara bergilir, kemudian seorang murid mencuba secara individu.
 
-**Bahan:** Rekoder bersih, skor melodi ringkas, carta penjarian.
+**Pengukuhan dan Penilaian — 6 minit:** Semak penjarian, tempo dan kejelasan satu frasa daripada setiap latihan.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 6. RPT rujukan mencatat halaman buku teks 48-49 (belum disahkan pada buku asal). Rakaman/trek audio belum disahkan.
+**Penutup — 2 minit:** Murid menunjukkan cara memegang rekoder serta satu fungsi melodi kaunter. Guru merekod pencapaian dan keperluan pemulihan PBD.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Bahan:** Rekoder individu bersih, carta penjarian dan skor rujukan guru halaman 48–49.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Rujukan sumber:** Buku Teks Pendidikan Muzik Tahun 6 SK, DBP 2021, halaman 48–49; https://anyflip.com/zcnoa/yxcj/basic/51-100. Audio bercetak: 92–95; **tiada fail audio sebenar diperiksa atau diaktifkan**. Kod DSKP/RPT sumber dikekalkan, pemeriksaan skor visual dan pemetaan SK–SP belum kelulusan akhir.
+
+**Catatan pelaksanaan / pemulihan:** __________________________________________
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_20261106; DRAF STAGING; notasi, hak audio, Word/PDF, cuti negeri 2027 dan Telegram/Web belum disahkan.

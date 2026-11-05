@@ -1,28 +1,31 @@
 # RPH PENDIDIKAN MUZIK TAHUN 6 — PdP 21
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** PUTERI LEGENDA LANGKAWI  
-**Bidang:** Permainan Alat Perkusi  
-**SK/SP:** 2.2.1, 2.2.2  
-**Tempoh cadangan:** 30 minit  
+**Unit / Tajuk:** PUTERI LEGENDA LANGKAWI
+**SK / SP (sumber DSKP/RPT Tahun 6, dikekalkan untuk audit):** 2.2.1, 2.2.2
+**Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — bukan FINAL READY
 
-**Objektif:** Murid memainkan corak irama empat detik secara tepat dalam sekurang-kurangnya 2 daripada 3 percubaan.
+**Fokus PdP:** Ensembel perkusi Puteri Legenda Langkawi mengikut dinamik
 
-**Set induksi (4 minit):** Guru mengetuk empat detik; murid mengenal pasti detik dan mengajuk secara tepukan.
+**Objektif:** Memainkan satu bahagian ensembel Puteri Legenda Langkawi dengan masuk/henti tepat dan dinamik terkawal.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Murid membaca corak irama/skor ikon dengan tumpuan Memainkan alat perkusi mengikut tempo berdasarkan skor: (i) (ii) tanda rehat; guru memberi contoh pola sebelum menggunakan alat.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran yang disebut pada objektif melalui latihan atau hasil kumpulan yang diperiksa guru.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Kumpulan memainkan irama dengan alat perkusi pada dua tempo; rakan menyemak pola, detik dan dinamik.
+**Set Induksi — 4 minit:** Guru menunjukkan tiga alat iringan dan murid menamakan bunyi yang sesuai untuk mengiringi nyanyian.
 
-**Pengukuhan dan pentaksiran (6 minit):** Senarai semak ketepatan ritma, tempo dan kerjasama; pembetulan dan ulang satu pola.
+**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid membahagikan peranan egg shaker, klaves dan dram bes lalu membaca corak skor ensembel halaman 60–61 melalui tepukan dahulu.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Aktiviti 2 — Aplikasi, latihan dan persembahan (10 minit):** Ketiga-tiga kumpulan memainkan iringan Puteri Legenda Langkawi di bawah isyarat ketua; murid mengawal dinamik seperti ditanda dalam buku dan menilai keseimbangan ensembel.
 
-**Bahan:** Kad skor, metronom atau kiraan, alat perkusi.
+**Pengukuhan dan Penilaian — 6 minit:** Senarai semak masuk/henti, corak irama dan perubahan dinamik dalam dua percubaan.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 6. RPT rujukan mencatat halaman buku teks 60-61 (belum disahkan pada buku asal). Rakaman/trek audio belum disahkan.
+**Penutup — 2 minit:** Murid menerangkan kenapa keseimbangan bunyi penting ketika persembahan. Guru merekod pencapaian dan keperluan pemulihan PBD.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Bahan:** Skor rujukan halaman 60–61, klaves, egg shaker, dram bes dan kad dinamik.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Rujukan sumber:** Buku Teks Pendidikan Muzik Tahun 6 SK, DBP 2021, halaman 60–61; https://anyflip.com/zcnoa/yxcj/basic/51-100. Audio bercetak: 112–116; **tiada fail audio sebenar diperiksa atau diaktifkan**. Kod DSKP/RPT sumber dikekalkan, pemeriksaan skor visual dan pemetaan SK–SP belum kelulusan akhir.
+
+**Catatan pelaksanaan / pemulihan:** __________________________________________
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_20261106; DRAF STAGING; notasi, hak audio, Word/PDF, cuti negeri 2027 dan Telegram/Web belum disahkan.

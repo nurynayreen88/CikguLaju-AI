@@ -1,28 +1,31 @@
 # RPH PENDIDIKAN MUZIK TAHUN 6 — PdP 24
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** WARNA WARNI MALAYSIA  
-**Bidang:** Kreativiti Muzik  
-**SK/SP:** 3.1.1, 3.1.2  
-**Tempoh cadangan:** 30 minit  
+**Unit / Tajuk:** WARNA WARNI MALAYSIA
+**SK / SP (sumber DSKP/RPT Tahun 6, dikekalkan untuk audit):** 3.1.1, 3.1.2
+**Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — bukan FINAL READY
 
-**Objektif:** Murid membina dan mempersembahkan satu frasa irama atau melodi empat detik dengan sekurang-kurangnya 3 kriteria dipenuhi.
+**Fokus PdP:** Soalan-jawapan melodi 4/4 dan tiga stesen Kutub Utara–Selatan–Khatulistiwa
 
-**Set induksi (4 minit):** Guru memberi soalan ritma empat detik; murid memberi jawapan tepukan sendiri.
+**Objektif:** Menghasilkan jawapan melodi dua bar meter 4/4 dan satu melodi ringkas pada stesen pilihan menggunakan not B, A, G, C' atau D'.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Guru memandu murid mencipta pola berpandukan Mencipta melodi mudah menggunakan not B, A, G, C’ dan D’. dengan kad not dan bunyi yang dibenarkan SP.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran yang disebut pada objektif melalui latihan atau hasil kumpulan yang diperiksa guru.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Murid merancang urutan, menyusun skor ciptaan dan mempersembahkannya secara pasangan, kemudian menerima cadangan penambahbaikan.
+**Set Induksi — 4 minit:** Guru memberi contoh soalan melodi ringkas lalu murid menjawab secara tepukan, mengekalkan empat detik setiap bar.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak bilangan detik, kesesuaian pic/not dan persembahan; murid membetulkan satu unsur.
+**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid merujuk halaman 66–67 untuk melengkapkan soalan–jawapan melodi meter 4/4 dua bar, mengubah suai irama atau kontur dan menulis not yang dibenarkan.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Aktiviti 2 — Aplikasi, latihan dan persembahan (10 minit):** Kumpulan bergilir antara stesen Kutub Utara, Kutub Selatan dan Khatulistiwa halaman 68–69; murid menukar melodi ciptaan melalui kapal terbang kertas dan memainkan melodi rakan pada rekoder/loceng berpic.
 
-**Bahan:** Kad corak, alat perkusi atau rekoder, helaian skor.
+**Pengukuhan dan Penilaian — 6 minit:** Semak meter 4/4, dua bar lengkap, not yang dibenarkan serta kebolehan membaca melodi rakan.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 6. RPT rujukan mencatat halaman buku teks 66-69 (belum disahkan pada buku asal). Rakaman/trek audio belum disahkan.
+**Penutup — 2 minit:** Murid memberikan satu sebab jawapan melodi sesuai dengan soalan melodi. Guru merekod pencapaian dan keperluan pemulihan PBD.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Bahan:** Kad corak irama, baluk kosong, kad tiga stesen, kapal terbang kertas dan rekoder bersih.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Rujukan sumber:** Buku Teks Pendidikan Muzik Tahun 6 SK, DBP 2021, halaman 66–69; https://anyflip.com/zcnoa/yxcj/basic/51-100. Audio bercetak: Tiada nombor khusus untuk melodi ciptaan; **tiada fail audio sebenar diperiksa atau diaktifkan**. Kod DSKP/RPT sumber dikekalkan, pemeriksaan skor visual dan pemetaan SK–SP belum kelulusan akhir.
+
+**Catatan pelaksanaan / pemulihan:** __________________________________________
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_20261106; DRAF STAGING; notasi, hak audio, Word/PDF, cuti negeri 2027 dan Telegram/Web belum disahkan.

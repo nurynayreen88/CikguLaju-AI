@@ -1,28 +1,31 @@
 # RPH PENDIDIKAN MUZIK TAHUN 6 — PdP 20
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** PUTERI LEGENDA LANGKAWI  
-**Bidang:** Permainan Alat Perkusi  
-**SK/SP:** 2.2.1, 2.2.2  
-**Tempoh cadangan:** 30 minit  
+**Unit / Tajuk:** PUTERI LEGENDA LANGKAWI
+**SK / SP (sumber DSKP/RPT Tahun 6, dikekalkan untuk audit):** 2.2.1, 2.2.2
+**Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — bukan FINAL READY
 
-**Objektif:** Murid memainkan corak irama empat detik secara tepat dalam sekurang-kurangnya 2 daripada 3 percubaan.
+**Fokus PdP:** Permainan corak irama cawan, klaves dan egg shaker
 
-**Set induksi (4 minit):** Guru mengetuk empat detik; murid mengenal pasti detik dan mengajuk secara tepukan.
+**Objektif:** Menepuk serta mempersembahkan dua corak irama menggunakan cawan, klaves dan egg shaker dengan detik stabil.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Murid membaca corak irama/skor ikon dengan tumpuan Memainkan alat perkusi mengikut tempo berdasarkan skor: (i) (ii) tanda rehat; guru memberi contoh pola sebelum menggunakan alat.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran yang disebut pada objektif melalui latihan atau hasil kumpulan yang diperiksa guru.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Kumpulan memainkan irama dengan alat perkusi pada dua tempo; rakan menyemak pola, detik dan dinamik.
+**Set Induksi — 4 minit:** Guru memodelkan satu pola tepukan dan meminta murid mengira detik sebelum menggunakan cawan.
 
-**Pengukuhan dan pentaksiran (6 minit):** Senarai semak ketepatan ritma, tempo dan kerjasama; pembetulan dan ulang satu pola.
+**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid melaksanakan pola cawan plastik/kertas di permukaan rata halaman 58, kemudian menggunakan klaves dan egg shaker bagi corak 1 dan 2, mengikut kiraan guru.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Aktiviti 2 — Aplikasi, latihan dan persembahan (10 minit):** Tiga kumpulan mempraktikkan Latihan Corak Irama 1 dan 2 halaman 59 menggunakan egg shaker, klaves dan dram bes sebelum menggabungkan ensembel.
 
-**Bahan:** Kad skor, metronom atau kiraan, alat perkusi.
+**Pengukuhan dan Penilaian — 6 minit:** Guru memeriksa dua pola, ketepatan detik dan kendalian alat secara selamat.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 6. RPT rujukan mencatat halaman buku teks 58-59 (belum disahkan pada buku asal). Rakaman/trek audio belum disahkan.
+**Penutup — 2 minit:** Murid menyatakan perbezaan cara menggunakan klaves dengan egg shaker. Guru merekod pencapaian dan keperluan pemulihan PBD.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Bahan:** Cawan kertas/plastik, klaves, egg shaker, dram bes atau alat setara, kad pola.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Rujukan sumber:** Buku Teks Pendidikan Muzik Tahun 6 SK, DBP 2021, halaman 58–59; https://anyflip.com/zcnoa/yxcj/basic/51-100. Audio bercetak: 103–111; **tiada fail audio sebenar diperiksa atau diaktifkan**. Kod DSKP/RPT sumber dikekalkan, pemeriksaan skor visual dan pemetaan SK–SP belum kelulusan akhir.
+
+**Catatan pelaksanaan / pemulihan:** __________________________________________
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_20261106; DRAF STAGING; notasi, hak audio, Word/PDF, cuti negeri 2027 dan Telegram/Web belum disahkan.

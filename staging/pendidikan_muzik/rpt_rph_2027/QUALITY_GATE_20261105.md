@@ -133,3 +133,9 @@ Fail RPT (.md/.csv), RPH setiap PdP (.md), manifest JSON di `staging/pendidikan_
 - 10 RPH tambahan diperincikan menggunakan Buku Teks Muzik Tahun 6 DBP 2021 halaman 4–33, termasuk *Setia Kawan*, *Gerbang Ilmu*, *Tudung Periuk* dan *Rangkaian Globalisasi*.
 - Semakan teks kini **17/35 Tahun 6** dan **136/175 keseluruhan**, baki **39** RPH belum setara. Lagu *Tudung Periuk* mempunyai nota hak cipta, tiada audio atau lirik diedarkan.
 - Projek, skor muzik visual, fail audio, dokumen Word/PDF, cuti 2027 dan runtime Telegram/Web belum lulus. Audit: `year6/BUKU_TAHUN6_PDP01_10_TEXT_AUDIT_20261106.md`.
+
+
+## Pusingan Buku Tahun 6 PdP16–25, 28–29 (6 Nov 2026)
+- 12 RPH lagi diselaraskan dengan teks buku Muzik Tahun 6 DBP2021 halaman 46–77. Latihan khusus meliputi nyanyian, rekoder, not bertitik, fermata, perkusi, ciptaan melodi dan ensembel.
+- Tahun 6 kini **29/35 semakan teks buku**, keseluruhan Tahun 2–6 **148/175**, baki **27 PdP** yang merangkumi projek/pengukuhan berbeza. **Semakan teks BUKAN kelulusan kurikulum, audio, skor atau Word/PDF.**
+- RPH/manifest/test dikemas kini hanya staging. Audit terperinci `year6/BUKU_TAHUN6_PDP16_29_TEXT_AUDIT_20261106.md`.

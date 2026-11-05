@@ -1,28 +1,31 @@
 # RPH PENDIDIKAN MUZIK TAHUN 6 — PdP 19
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** PUTERI LEGENDA LANGKAWI  
-**Bidang:** Nyanyian  
-**SK/SP:** 2.1.1, 2.1.2, 1.1.2, 1.1.3  
-**Tempoh cadangan:** 30 minit  
+**Unit / Tajuk:** PUTERI LEGENDA LANGKAWI
+**SK / SP (sumber DSKP/RPT Tahun 6, dikekalkan untuk audit):** 2.1.1, 2.1.2, 1.1.2, 1.1.3
+**Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — bukan FINAL READY
 
-**Objektif:** Murid menyanyikan frasa lagu dengan sekurang-kurangnya 2 daripada 3 kriteria pic, tempo dan ekspresi/teknik yang tepat.
+**Fokus PdP:** Nyanyian Puteri Legenda Langkawi dengan fermata serta simbol dinamik
 
-**Set induksi (4 minit):** Guru memperdengarkan frasa lagu daripada unit ini; murid mengajuk pic dan menyebut perubahan ekspresi.
+**Objektif:** Menyanyikan satu frasa Puteri Legenda Langkawi dengan fermata yang tepat dan menanda tiga simbol ekspresi pada keratan skor.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Guru memodelkan pernafasan, postur serta fokus SP: Bernyanyi lagu dengan pic yang betul mengikut tempo.; murid mengajuk satu bar pada satu masa.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran yang disebut pada objektif melalui latihan atau hasil kumpulan yang diperiksa guru.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Murid menyanyikan frasa/rangkap dalam kumpulan kemudian mengulang secara berpasangan dengan pembetulan pic, tempo serta dinamik mengikut SP.
+**Set Induksi — 4 minit:** Guru menerangkan legenda Mahsuri sebagai konteks lagu tanpa menyalin liriknya ke dalam bahan.
 
-**Pengukuhan dan pentaksiran (6 minit):** Guru menyemak 3 kriteria (pic, tempo, teknik/dinamik), mencatat percubaan pertama dan kedua.
+**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Guru membimbing ajuk frasa halaman 55 dan menunjukkan fermata halaman 56 sebagai pemanjangan nilai not; murid membandingkan demonstrasi guru dengan/ tanpa fermata.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Aktiviti 2 — Aplikasi, latihan dan persembahan (10 minit):** Kumpulan empat orang menerima empat keratan skor pada halaman 57; setiap murid menanda crescendo, decrescendo atau fermata pada keratannya, kemudian kumpulan menyusun dan mempersembahkan contoh frasa.
 
-**Bahan:** Rakaman lagu yang diizinkan, skor ringkas, pembesar suara.
+**Pengukuhan dan Penilaian — 6 minit:** Nilai ketepatan satu fermata dan tiga simbol ekspresi serta peranan murid dalam susunan keratan.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 6. RPT rujukan mencatat halaman buku teks 54-57 (belum disahkan pada buku asal). Rakaman/trek audio belum disahkan.
+**Penutup — 2 minit:** Murid menjelaskan maksud fermata dan bagaimana ia mengubah tempoh bunyi. Guru merekod pencapaian dan keperluan pemulihan PBD.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Bahan:** Buku halaman 54–57, keratan skor yang digunakan secara sah, kad fermata/crescendo/decrescendo.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Rujukan sumber:** Buku Teks Pendidikan Muzik Tahun 6 SK, DBP 2021, halaman 54–57; https://anyflip.com/zcnoa/yxcj/basic/51-100. Audio bercetak: 97–102; **tiada fail audio sebenar diperiksa atau diaktifkan**. Kod DSKP/RPT sumber dikekalkan, pemeriksaan skor visual dan pemetaan SK–SP belum kelulusan akhir.
+
+**Catatan pelaksanaan / pemulihan:** __________________________________________
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_20261106; DRAF STAGING; notasi, hak audio, Word/PDF, cuti negeri 2027 dan Telegram/Web belum disahkan.

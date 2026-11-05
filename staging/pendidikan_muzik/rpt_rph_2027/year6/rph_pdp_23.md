@@ -1,28 +1,31 @@
 # RPH PENDIDIKAN MUZIK TAHUN 6 — PdP 23
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** WARNA WARNI MALAYSIA  
-**Bidang:** Gerakan Mengikut Muzik  
-**SK/SP:** 2.3.1  
-**Tempoh cadangan:** 30 minit  
+**Unit / Tajuk:** WARNA WARNI MALAYSIA
+**SK / SP (sumber DSKP/RPT Tahun 6, dikekalkan untuk audit):** 2.3.1
+**Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — bukan FINAL READY
 
-**Objektif:** Murid mempersembahkan dua urutan gerakan empat atau lapan kiraan mengikut tempo dan tema yang dipilih.
+**Fokus PdP:** Gerakan tempo/tema dengan combo-mat empat peranan
 
-**Set induksi (4 minit):** Guru memainkan petikan, murid mengesan detik dan memberi respons dengan pergerakan di tempat.
+**Objektif:** Menghasilkan dua gerakan berlainan berasaskan tempo dan tema menggunakan perbincangan combo-mat empat ahli.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Guru membimbing gerakan yang sesuai dengan Merancang dan melakukan pergerakan mengikut muzik yang didengar berdasarkan: (i) tema (ii) tempo; murid membezakan tempo/tema serta corak gerakan.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran yang disebut pada objektif melalui latihan atau hasil kumpulan yang diperiksa guru.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Murid merancang urutan gerakan dan formasi dalam kumpulan lalu menunjukkan persembahan ringkas mengikut muzik.
+**Set Induksi — 4 minit:** Guru memperagakan gerak tepuk detik dan gerak bertema, lalu murid menjelaskan perbezaannya.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak padanan tema, tempo, koordinasi dan keselamatan ruang menggunakan rubrik tiga tahap.
+**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Kumpulan A mencadangkan gerakan mengikut tempo (tepuk, petik jari, hentak kaki), manakala Kumpulan B mencadangkan gerakan bertema Warna-warni Malaysia halaman 64.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Aktiviti 2 — Aplikasi, latihan dan persembahan (10 minit):** Kumpulan kecil empat orang menggunakan combo-mat halaman 65: tulis cadangan pada A–D, pilih yang terbaik di E, berlatih dan persembahkan dalam bulatan apabila diberi empat isyarat guru.
 
-**Bahan:** Rakaman muzik, pembesar suara, ruang selamat.
+**Pengukuhan dan Penilaian — 6 minit:** Guru menilai kesesuaian dua gerakan, penyertaan keempat-empat ahli dan ketepatan mengikut detik.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 6. RPT rujukan mencatat halaman buku teks 64-65 (belum disahkan pada buku asal). Rakaman/trek audio belum disahkan.
+**Penutup — 2 minit:** Murid menyebut cara membezakan gerak berdasarkan tempo daripada gerak berdasarkan tema. Guru merekod pencapaian dan keperluan pemulihan PBD.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Bahan:** Combo-mat A–E, kad tempo/tema, ruang bulatan selamat.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Rujukan sumber:** Buku Teks Pendidikan Muzik Tahun 6 SK, DBP 2021, halaman 64–65; https://anyflip.com/zcnoa/yxcj/basic/51-100. Audio bercetak: 120; **tiada fail audio sebenar diperiksa atau diaktifkan**. Kod DSKP/RPT sumber dikekalkan, pemeriksaan skor visual dan pemetaan SK–SP belum kelulusan akhir.
+
+**Catatan pelaksanaan / pemulihan:** __________________________________________
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_20261106; DRAF STAGING; notasi, hak audio, Word/PDF, cuti negeri 2027 dan Telegram/Web belum disahkan.

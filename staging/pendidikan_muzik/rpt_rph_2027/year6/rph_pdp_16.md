@@ -1,28 +1,31 @@
 # RPH PENDIDIKAN MUZIK TAHUN 6 — PdP 16
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** MEMORI INDAH  
-**Bidang:** Nyanyian  
-**SK/SP:** 2.1.1, 2.1.2  
-**Tempoh cadangan:** 30 minit  
+**Unit / Tajuk:** MEMORI INDAH
+**SK / SP (sumber DSKP/RPT Tahun 6, dikekalkan untuk audit):** 2.1.1, 2.1.2
+**Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — bukan FINAL READY
 
-**Objektif:** Murid menyanyikan frasa lagu dengan sekurang-kurangnya 2 daripada 3 kriteria pic, tempo dan ekspresi/teknik yang tepat.
+**Fokus PdP:** Nyanyian Memori Indah dengan pic, tempo serta dinamik
 
-**Set induksi (4 minit):** Guru memperdengarkan frasa lagu daripada unit ini; murid mengajuk pic dan menyebut perubahan ekspresi.
+**Objektif:** Menyanyikan satu frasa Memori Indah dengan pic, tempo dan perubahan dinamik yang betul pada dua percubaan.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Guru memodelkan pernafasan, postur serta fokus SP: Bernyanyi lagu dengan pic yang betul mengikut tempo.; murid mengajuk satu bar pada satu masa.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran yang disebut pada objektif melalui latihan atau hasil kumpulan yang diperiksa guru.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Murid menyanyikan frasa/rangkap dalam kumpulan kemudian mengulang secara berpasangan dengan pembetulan pic, tempo serta dinamik mengikut SP.
+**Set Induksi — 4 minit:** Guru meminta murid berkongsi kenangan sekolah secara ringkas, kemudian membimbing latihan pernafasan.
 
-**Pengukuhan dan pentaksiran (6 minit):** Guru menyemak 3 kriteria (pic, tempo, teknik/dinamik), mencatat percubaan pertama dan kedua.
+**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Guru membimbing nyanyian satu frasa Memori Indah halaman 47 melalui ajuk melodi dan tanda nafas tanpa memuat naik lirik atau rakaman.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Aktiviti 2 — Aplikasi, latihan dan persembahan (10 minit):** Kumpulan menyanyi semula frasa tersebut pada tempo yang stabil dengan dinamik seperti ditanda pada skor buku; murid mencatat satu perubahan daripada percubaan pertama.
 
-**Bahan:** Rakaman lagu yang diizinkan, skor ringkas, pembesar suara.
+**Pengukuhan dan Penilaian — 6 minit:** Semak pic, tempo dan perubahan dinamik pada dua percubaan yang dirakam dalam senarai semak guru.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 6. RPT rujukan mencatat halaman buku teks 46-47 (belum disahkan pada buku asal). Rakaman/trek audio belum disahkan.
+**Penutup — 2 minit:** Murid menyatakan satu cara memelihara dinamik ketika menyanyi. Guru merekod pencapaian dan keperluan pemulihan PBD.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Bahan:** Buku halaman 46–47, skor rujukan guru dan kad dinamik.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Rujukan sumber:** Buku Teks Pendidikan Muzik Tahun 6 SK, DBP 2021, halaman 46–47; https://anyflip.com/zcnoa/yxcj/basic/51-100. Audio bercetak: 89–91; **tiada fail audio sebenar diperiksa atau diaktifkan**. Kod DSKP/RPT sumber dikekalkan, pemeriksaan skor visual dan pemetaan SK–SP belum kelulusan akhir.
+
+**Catatan pelaksanaan / pemulihan:** __________________________________________
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_20261106; DRAF STAGING; notasi, hak audio, Word/PDF, cuti negeri 2027 dan Telegram/Web belum disahkan.

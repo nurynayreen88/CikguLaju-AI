@@ -8,9 +8,9 @@
 | 3 | [Buku Teks Pendidikan Kesenian Tahun 3 SK](https://anyflip.com/iawvx/rlmd/basic), [fail Drive](https://drive.google.com/file/d/13P0maZhBReHBIYSPXI_CPvobj0Ryya6z/view) | Salinan awam muncul dalam indeks dengan Unit 1 *Tut Tut Kereta Api* hingga Unit 10 *Seni Anyaman Berzaman*; teks dalam fail Drive belum dapat dibaca sepenuhnya | 28/35 semakan teks buku: PdP 1–11, 14–23 dan 27–33 mengikut buku DBP 2018 |
 | 4 | [Buku Teks Pendidikan Kesenian Tahun 4 SK di Drive](https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view), DBP 2019 | 22 PdP semakan teks unit/aktiviti + 6 PdP pemeriksaan kandungan halaman terdahulu | 28/35 semakan terhad |
 | 5 | [Buku Teks Pendidikan Muzik Tahun 5 SK](https://anyflip.com/ziqkn/yatu/basic), DBP 2020 | Teks dan halaman rujukan unit dipadankan bagi 15 PdP; audio nombor cetak sahaja | 35/35 semakan teks terhad |
-| 6 | [Buku Teks Pendidikan Muzik Tahun 6 SK](https://anyflip.com/zcnoa/yxcj/basic), DBP 2021 | Teks dan halaman rujukan unit dipadankan bagi 7 PdP, khusus Classical, Mikroorganisma dan Rindu | 17/35 semakan teks terhad |
+| 6 | [Buku Teks Pendidikan Muzik Tahun 6 SK](https://anyflip.com/zcnoa/yxcj/basic), DBP 2021 | Teks dan halaman rujukan unit dipadankan bagi 7 PdP, khusus Classical, Mikroorganisma dan Rindu | 29/35 semakan teks terhad |
 
-Jumlah **136/175 RPH** mempunyai semakan kandungan berasaskan teks buku atau halaman (dengan tahap bukti berbeza); **39 RPH belum melalui audit buku teks individu yang setara**.
+Jumlah **148/175 RPH** mempunyai semakan kandungan berasaskan teks buku atau halaman (dengan tahap bukti berbeza); **27 RPH belum melalui audit buku teks individu yang setara**.
 
 
 ## Pusingan Tahun 2 — bukti baharu (6 November 2026)
@@ -58,3 +58,7 @@ Buku Teks Muzik Tahun 5 DBP 2020 halaman 46–69 telah diperiksa secara teks unt
 
 ## 6 November 2026 — Tahun 6 PdP 01–10
 Buku Teks Muzik Tahun 6 DBP 2021 halaman 4–33 disemak secara teks untuk 10 RPH tambahan; nota hak cipta *Tudung Periuk* dan latihan halaman 14–17 yang dibezakan daripada RPT direkod. Audit: `year6/BUKU_TAHUN6_PDP01_10_TEXT_AUDIT_20261106.md`. Tahun 6 **17/35**, keseluruhan **136/175**, baki **39**. BUKAN FINAL READY.
+
+
+## 6 November 2026 — Tahun 6 PdP16–25, 28–29
+Buku Teks Muzik Tahun 6 DBP 2021 halaman 46–77 disemak teks untuk 12 RPH tambahan; audit: `year6/BUKU_TAHUN6_PDP16_29_TEXT_AUDIT_20261106.md`. Tahun 6 **29/35**, keseluruhan **148/175**. Baki 27 terutamanya projek, pengukuhan dan satu PdP Tahun 2 memerlukan audit tersendiri. **Tidak FINAL READY**, skor, audio, kalendar, cetakan dan release gate kekal terbuka.

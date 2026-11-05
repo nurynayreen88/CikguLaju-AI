@@ -1,28 +1,31 @@
 # RPH PENDIDIKAN MUZIK TAHUN 6 — PdP 29
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** KELESTARIAN ALAM  
-**Bidang:** Rekoder  
-**SK/SP:** 2.4.1, 2.4.2  
-**Tempoh cadangan:** 30 minit  
+**Unit / Tajuk:** KELESTARIAN ALAM
+**SK / SP (sumber DSKP/RPT Tahun 6, dikekalkan untuk audit):** 2.4.1, 2.4.2
+**Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — bukan FINAL READY
 
-**Objektif:** Murid memainkan frasa rekoder pada julat not DSKP Tahun 6 dengan sekurang-kurangnya 3 daripada 4 aspek teknik yang betul.
+**Fokus PdP:** Ensembel rekoder dan perkusi Kelestarian Alam
 
-**Set induksi (4 minit):** Guru menunjukkan carta penjarian dan memperagakan ton lembut serta bersih.
+**Objektif:** Memainkan satu frasa melodi kaunter rekoder bersama sekurang-kurangnya dua pola iringan perkusi dalam ensembel.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Murid menyemak postur, penjarian dan perlidahan 'tu' untuk: Memainkan rekoder bagi not C, D, E, F, G, A, B, C’ dan D’ dengan ton yang baik mengikut tempo..
+**Kriteria kejayaan:** Murid menunjukkan kemahiran yang disebut pada objektif melalui latihan atau hasil kumpulan yang diperiksa guru.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Murid membaca dua bar skor, memainkan secara perlahan dan mengulang dengan tempo stabil; pasangan memberi maklum balas.
+**Set Induksi — 4 minit:** Guru mengimbas fungsi rekoder, loceng, egg shaker dan dram bes dalam ensembel.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak penjarian, embouchure, pernafasan dan tempo; nilai setiap murid pada dua percubaan.
+**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid menepuk dan memainkan tiga latihan perkusi halaman 74 (loceng–egg shaker, loceng–dram bes dan egg shaker–dram bes) secara kumpulan.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Aktiviti 2 — Aplikasi, latihan dan persembahan (10 minit):** Kumpulan rekoder dan perkusi menggabungkan ensembel Kelestarian Alam halaman 75–77; murid menjawab soalan skor tentang corak berulang, dinamik dan julat not sebelum persembahan.
 
-**Bahan:** Rekoder bersih, skor melodi ringkas, carta penjarian.
+**Pengukuhan dan Penilaian — 6 minit:** Semak penjarian melodi kaunter, ketepatan dua pola perkusi dan keseimbangan bunyi ensembel.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 6. RPT rujukan mencatat halaman buku teks 74-77 (belum disahkan pada buku asal). Rakaman/trek audio belum disahkan.
+**Penutup — 2 minit:** Murid menyebut satu cara mengekalkan melodi rekoder apabila perkusi dimainkan bersama. Guru merekod pencapaian dan keperluan pemulihan PBD.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Bahan:** Skor halaman 74–77, rekoder individu, loceng, egg shaker dan dram bes.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Rujukan sumber:** Buku Teks Pendidikan Muzik Tahun 6 SK, DBP 2021, halaman 74–77; https://anyflip.com/zcnoa/yxcj/basic/51-100. Audio bercetak: 129–138; **tiada fail audio sebenar diperiksa atau diaktifkan**. Kod DSKP/RPT sumber dikekalkan, pemeriksaan skor visual dan pemetaan SK–SP belum kelulusan akhir.
+
+**Catatan pelaksanaan / pemulihan:** __________________________________________
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_20261106; DRAF STAGING; notasi, hak audio, Word/PDF, cuti negeri 2027 dan Telegram/Web belum disahkan.
