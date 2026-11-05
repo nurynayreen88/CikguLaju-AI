@@ -77,6 +77,19 @@ class YearTwoThreeAudioPhysicalSourceEvidence(unittest.TestCase):
             with self.subTest(track=name):
                 self.assertEqual(mapping.get(name),source_id)
 
+    def test_year3_printed_track_is_not_conflated_with_year4_literal_map(self):
+        y3=EVIDENCE["cases"][1]
+        self.assertFalse(y3["actual_app_year3_specific_top_level_audio_literal_route_found"])
+        self.assertFalse(y3["tb_confirms_disc_number"])
+        self.assertIsNone(y3["original_track_file_id"])
+        self.assertIn("Year3-specific",y3["static_source_scope_limit"])
+        from tools.audit_english_y3_l093_static_media_routes_20261105 import run
+        report=run()
+        self.assertEqual(report["lesson93_literal_matches"],[])
+        self.assertFalse(report["actual_media_file_id_verified"])
+        self.assertFalse(report["live_telegram_send_verified"])
+        self.assertEqual(report["release_status"],"NO_FINAL_READY")
+
     def test_risk_ledger_only_promotes_physical_source_not_delivery(self):
         statuses={r["id"]:r["status"] for r in RISKS["confirmed_risks"]}
         self.assertEqual(statuses["Y2_L26_AUDIO_TB_CHECK"],
