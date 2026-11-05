@@ -42,7 +42,7 @@ class SchoolRptProxyTests(unittest.TestCase):
                     "CIKGULAJU_AUTHORITATIVE_API_URL":"https://cikgulaju-ai.onrender.com",
                     "CIKGULAJU_AUTHORITATIVE_API_TOKEN":"a"*64}):
                 file=request_telegram_school_rpt(
-                    source,"bahasa_melayu",2027,identity,opener=transport)
+                    source,"bahasa_melayu",2,identity,opener=transport)
             self.assertTrue(file.getvalue().startswith(b"%PDF-"))
             sent=json.loads(transport.request.data)
             self.assertEqual(sent["source_sha256"],sha256(original).hexdigest())
