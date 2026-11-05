@@ -1613,12 +1613,15 @@
       ]
     }
   ],
-  "source_validation_level": "FILENAME_FILE_ID_MIME_SIZE_MATCH_ONLY",
+  "source_validation_level": "SOW_CD_TRACK_FILE_ID_METADATA_PLUS_VISUAL_TB_SB_WB_SECOND_EDITION_COVERS",
   "independent_teacher_book_audio_content_verified": false,
   "audio_speech_verified": false,
   "textbook_edition_alignment_final_verified": false,
   "app_runtime_drive_file_ids_verified": false,
   "authenticated_teacher_telegram_send_verified": false,
   "lesson_final_ready_approved": false,
-  "original_mp3_or_wma_file_modified": false
+  "original_mp3_or_wma_file_modified": false,
+  "original_book_cover_edition_verified": true,
+  "original_book_cover_edition_evidence": "audits/english_y5_original_three_books_second_edition_cover_evidence_20261105.json",
+  "books_and_filename_same_series_year_edition": true
 }
