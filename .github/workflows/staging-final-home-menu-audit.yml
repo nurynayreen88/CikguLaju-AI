@@ -1,0 +1,25 @@
+name: Inspect current main final menu and callbacks
+on:
+  push:
+    branches: [staging/cikgulaju-web-v1]
+    paths: ['.github/workflows/staging-final-home-menu-audit.yml']
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - name: Print current main main-menu code read-only
+        run: |
+          git fetch --depth=1 origin main
+          python - <<'PY'
+          import subprocess
+          lines=subprocess.check_output(['git','show','origin/main:app.py']).decode('utf8',errors='replace').splitlines()
+          print('HEAD',subprocess.check_output(['git','rev-parse','origin/main']).decode().strip())
+          for a,b in [(46655,46785),(40190,40280),(39980,40045)]:
+              print('===REGION',a,b)
+              for i in range(a-1,min(b,len(lines))):
+                  print(f'{i+1:05d}',lines[i][:300])
+          PY
