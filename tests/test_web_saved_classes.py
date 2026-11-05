@@ -81,13 +81,17 @@ class SavedClassTests(unittest.TestCase):
         self.assertEqual(resp.headers["Cache-Control"],"no-store, private")
         self.assertEqual(self.client.get("/api/web/teacher/classes?telegram_user_id=9999").status_code,400)
 
-    def test_dropdown_remains_manually_editable(self):
+    def test_saved_class_is_native_dropdown_with_manual_fallback(self):
         s=(ROOT/"web_v1_static_preview"/"index.html").read_text(encoding="utf8")
-        self.assertIn('id="saved-teacher-classes"',s)
-        self.assertIn('list="saved-teacher-classes"',s)
+        self.assertIn('<select id="teacher-class">',s)
+        self.assertIn('value="__other__"',s)
+        self.assertIn('id="teacher-class-other"',s)
+        self.assertIn('toggleTeacherClassOther()',s)
+        self.assertIn('choices.add(new Option(clean,clean))',s)
         self.assertIn('loadTeacherClasses();return;',s)
         self.assertIn('if(!response.ok)return;',s)
-        self.assertNotIn('id="teacher-class" type="text" autocomplete="off" maxlength="40" placeholder="Contoh: 4 Bestari" required',s)
+        self.assertNotIn('list="saved-teacher-classes"',s)
+        self.assertNotIn('id="teacher-class" type="text"',s)
 
 if __name__=="__main__":
     unittest.main()
