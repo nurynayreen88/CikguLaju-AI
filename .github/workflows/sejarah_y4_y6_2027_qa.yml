@@ -1,0 +1,25 @@
+name: Sejarah Tahun 4-6 2027 staging QA
+on:
+  push:
+    paths:
+      - 'curriculum/sejarah/**'
+      - 'rpt_2027/sejarah/**'
+      - 'rph_standalone/sejarah/**'
+      - 'scripts/check_sejarah_y4_y6_2027.py'
+      - '.github/workflows/sejarah_y4_y6_2027_qa.yml'
+  pull_request:
+    paths:
+      - 'curriculum/sejarah/**'
+      - 'rpt_2027/sejarah/**'
+      - 'rph_standalone/sejarah/**'
+      - 'scripts/check_sejarah_y4_y6_2027.py'
+      - '.github/workflows/sejarah_y4_y6_2027_qa.yml'
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python scripts/check_sejarah_y4_y6_2027.py
