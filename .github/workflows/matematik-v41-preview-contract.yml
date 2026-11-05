@@ -1,0 +1,25 @@
+name: Matematik v41 staging preview contract
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'rph_standalone/matematik/staging_preview.py'
+      - 'tests/test_matematik_v41_*.py'
+      - '.github/workflows/matematik-v41-preview-contract.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-staging-preview:
+    if: ${{ github.event_name == 'workflow_dispatch' || startsWith(github.head_ref, 'staging/matematik-v41-') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify preview contract with synthetic 585-Lesson fixture
+        run: python -m unittest discover -s tests -p 'test_matematik_v41_*.py' -v
