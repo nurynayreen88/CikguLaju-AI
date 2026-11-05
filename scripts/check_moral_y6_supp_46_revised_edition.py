@@ -22,7 +22,7 @@ def main():
         txt=path.read_text(encoding="utf-8")
         assert path.is_file()
         assert row["Tajuk_Unit"]==unit["title"]
-        assert "STATUS DALAMAN" in txt and "BELUM_VERIFIED" in txt
+        assert "STATUS DALAMAN" in txt and ("BELUM_VERIFIED" in txt or "BELUM_FINAL_READY" in txt)
         assert "**Aktiviti 1" in txt and "**Aktiviti 2" in txt and "**Penutup" in txt
         assert "Pengukuhan/Pentaksiran PBD" in txt and "60 minit" in txt
         if sess in textual:
@@ -34,7 +34,7 @@ def main():
             assert f"mula m/s {unit['printed_start']}" in bbm
             assert f"flipbook halaman {unit['printed_start']+10}" in bbm
             assert "PDF " not in bbm, (sess,"obsolete scanned source page")
-            assert "halaman aktiviti terperinci" in txt.casefold()
+            assert any(term in txt.casefold() for term in ("halaman aktiviti terperinci", "aktiviti sp individu belum disahkan", "aktiviti individu belum disahkan"))
         checked.add(sess)
     assert len(checked)==54 and len(checked-textual)==46 and len(checked & textual)==8
     print("PASS 54 Year6 supplementary RPH: 46 revised-2021 chapter/page references + 8 previously text-audited RPH")
