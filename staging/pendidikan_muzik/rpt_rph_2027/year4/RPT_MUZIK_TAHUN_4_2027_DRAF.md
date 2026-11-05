@@ -1,4 +1,4 @@
-# RANCANGAN PENGAJARAN TAHUNAN PENDIDIKAN MUZIK TAHUN 4 — 2027
+# RANCANGAN PENGAJARAN TAHUNAN PENDIDIKAN MUZIK TAHUN 4 — 2027 (KUMPULAN A & B)
 
 **Sekolah:** __________   **Guru:** __________   **Kurikulum:** KSSR Semakan 2017   
 **Status:** DRAF STAGING — Kumpulan A dan B (tarikh cadangan belum kesahan cuti negeri/gantian).

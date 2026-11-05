@@ -56,6 +56,16 @@ Fail RPT (.md/.csv), RPH setiap PdP (.md), manifest JSON di `staging/pendidikan_
 ## Percanggahan jumlah projek tahun lain
 - DSKP menyatakan Projek Seni Muzik dijalankan **dua kali setahun**. Manifest RPT Tahun 2, 3, 4 dan 6 sebelum ini menamakan projek ketiga berdasarkan RPT sumber lama / susunan draf. **Semak semula dan jangan anggap Projek 3 sebagai program rasmi sehingga sumber berkuasa disahkan.**
 
+
+### Kemaskini buku teks sepadan — pembetulan penemuan asal
+- Buku teks yang betul **telah ditemui dalam Google Drive**: `GuruBesar_BukuTeks_Pendidikan_Kesenian_T4_SK.pdf`, ID `1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k`, DBP 2019, KSSR Semakan 2017.
+- Buku **Pendidikan Muzik Tahun 4** yang diperiksa awal memang tidak sepadan, namun kesimpulan lama bahawa tiada buku sepadan dalam Drive kini tidak tepat; buku sepadan ialah gabungan **Pendidikan Kesenian**.
+- **6 PdP Tahun 4 telah disemak terhadap kandungan halaman buku:** PdP 14/15/16 (Unit 5, halaman 50–53) dan PdP 31/32/33 (Unit 10, halaman 100–103).
+- Unit 10 *Harum Mewangi* telah dibetulkan daripada rujukan RPT lama halaman 50/52 (sebenarnya Unit 5) kepada **100–101 (Kolattam)** dan **102–103 (Pergerakan Kolattam)**.
+- Kod sumber RPT **4.1.1** dikekalkan sebagai `sp_rpt_source`; untuk aktiviti apresiasi, kod **4.2.1** yang dicetak dalam DSKP dan buku digunakan bagi dua PdP. Kod pergerakan **2.3.1** pada empat PdP ialah cadangan crosswalk kerana kod buku `4.2.2/2.2.7` berbeza daripada DSKP Muzik berdiri sendiri.
+- Nombor Audio 44–48 dan 110–117 memang **dicetak dalam buku**, tetapi **fail audio/track tidak disahkan** dan tidak diaktifkan.
+- Perincian: `year4/BUKU_TEKS_EDISI_SEPADAN_AUDIT.md`. Buku belum selesai diaudit bagi baki 29 PdP Tahun 4.
+
 ## Release gates
 [ ] Buku teks sepadan dan nombor halaman disahkan PdP demi PdP  
 [ ] Audio, skor atau muzik sebenar disahkan; jangan reka track  

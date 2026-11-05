@@ -72,7 +72,15 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
         directory = MUSIC / "rpt_rph_2027" / "year4"
         manifest = json.loads((directory / "pdp_manifest.json").read_text(encoding="utf-8"))
         self.assertTrue(any(row.get("flags") for row in manifest["pdps"]))
-        self.assertTrue(any("4.1.1" in row["sp"] for row in manifest["pdps"]))
+        self.assertEqual(
+            [row["pdp"] for row in manifest["pdps"] if row.get("source_book_content_page_checked")],
+            [14, 15, 16, 31, 32, 33],
+        )
+        self.assertEqual({row["pdp"]: row["page"] for row in manifest["pdps"] if row.get("source_book_content_page_checked")},
+                         {14: "50-51", 15: "52-53", 16: "52-53", 31: "100-101", 32: "102-103", 33: "102-103"})
+        self.assertTrue(all("4.1.1" in row["sp_rpt_source"] for row in manifest["pdps"] if row.get("source_book_content_page_checked")))
+        self.assertTrue(all("4.1.1" not in row["sp"] for row in manifest["pdps"] if row.get("source_book_content_page_checked")))
+        self.assertTrue(all(not row["source_book_audio_file_verified"] for row in manifest["pdps"] if row.get("source_book_content_page_checked")))
         self.assertTrue(any("3.1.1" in row["sp"] for row in manifest["pdps"]))
         sources = json.loads((MUSIC / "y4_dskp_sp_rph_seeds.json").read_text(encoding="utf-8"))
         self.assertEqual(
