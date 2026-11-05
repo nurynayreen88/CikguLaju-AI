@@ -27065,7 +27065,7 @@ APP_VERSION = 'v25.29-LIVE-FLOW-MATERIAL-PICKER'
 def quick(cid):
     state[cid]={'task':'quick_material','quick_material_flow':True,'_cid':cid}
     return send(cid,
-        '📚 <b>Sediakan Bahan PdP</b>\n\n'
+        '📚 <b>Sediakan RPH</b>\n\n'
         'Pilih <b>Tahun/Tingkatan → Subjek → Tema/Unit/Tajuk → Lesson/PdP</b>.\n\n'
         'SK/SP, RPT/SOW, buku teks dan buku aktiviti dipadankan secara automatik di belakang tabir. '
         'Selepas memilih kelas, tarikh dan masa, pilih sendiri bahan yang diperlukan dan tekan <b>✅ SUBMIT</b>.',
