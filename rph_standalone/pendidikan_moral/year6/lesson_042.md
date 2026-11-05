@@ -3,19 +3,19 @@
 **STATUS: DRAF SEMAK — BELUM READY / BELUM AKTIF TELEGRAM**
 
 **Tema:** Saya dan Negara  
-**Unit:** 14. Amalan Toleransi Demi Perpaduan Negara  
+**Unit:** 14. Amalan Toleransi Menjamin Perpaduan Negara  
 **Nilai:** Toleransi  
 **SK:** 14.0 — Amalan Toleransi Demi Perpaduan Negara  
 **SP:** 14.5 — Mengamalkan sikap bertoleransi demi perpaduan negara.  
 **Fokus:** Tindakan moral dan refleksi  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Buku Teks Tahun 6 m/s 135–137 (PDF 144–146), kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year6/unit_14_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 14: Amalan Toleransi Menjamin Perpaduan Negara, m/s 138–140 (flipbook halaman 148–150); kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year6/unit_14_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid melaksanakan dua tindakan toleransi semasa aktiviti berpasukan dan menilai perbuatannya dengan refleksi. Kriteria kejayaan: Pemerhatian dua tindakan toleransi, satu cadangan pembaikan dan satu refleksi beralasan; lakonan bukan bukti amalan rumah.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menunjukkan gambar/tajuk unit **Toleransi Mengeratkan Hubungan Negara** dari Buku Teks m/s 135. Murid mengenal pasti pihak yang terlibat, nilai toleransi dan satu tindakan yang wajar.
+**Set induksi (5 minit):** Guru memperlihatkan tajuk **Amalan Toleransi Menjamin Perpaduan Negara** dalam buku teks KSSR Semakan 2017, m/s 138, dan mengemukakan situasi berkaitan nilai unit. Murid mengenal pasti watak, tindakan serta satu keputusan yang munasabah mengikut SP PdP.
 
 **Aktiviti 1 (20 minit) — Bersikap Toleransi demi Perpaduan Negara:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 14, m/s 138–140, bahagian **Bersikap Toleransi demi Perpaduan Negara** sebagai rangsangan. Murid merangka dua perlakuan toleransi untuk lakonan pengurusan giliran atau konflik pandangan tanpa melibatkan identiti peribadi murid (SP 14.5). Guru menyemak ketepatan evidens individu mengikut kata tugas SP dan memandu pembetulan yang perlu.
 
@@ -27,7 +27,7 @@ Murid melaksanakan dua tindakan toleransi semasa aktiviti berpasukan dan menilai
 
 **Pembezaan:** Kad gambar/kata kunci untuk murid yang memerlukan sokongan; murid maju memberi dua justifikasi. Elakkan pendedahan hal peribadi atau agama.
 
-**Semakan visual buku teks:** Tahun 6, Unit 14 — **Toleransi Mengeratkan Hubungan Negara**; halaman bercetak 135–137 (PDF 144–146). Ilustrasi dan aktiviti pada halaman ini diperiksa secara visual bagi PdP 042 sahaja. Langkah PdP ialah penyesuaian guru CikguLaju.
+**Rekod audit sejarah — bukan pengesahan buku Semakan 2017:** Semakan terdahulu menggunakan PDF buku lama Unit 14, m/s 135–137 (PDF 144–146). Halaman tersebut tidak sah digunakan bagi aktiviti buku teks DBP 2021. Rujukan bab edisi terkini dan had buktinya direkodkan dalam perenggan Padanan bab di bawah.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 14, m/s 138–140 (flipbook 148–150); tajuk Bersikap Toleransi demi Perpaduan Negara / Mari Uji Diri; SP 14.5. Ini padanan isi kandungan bab dan olahan PdP, **bukan semakan visual penuh tugasan buku atau pengesahan kelas sebenar**.
 

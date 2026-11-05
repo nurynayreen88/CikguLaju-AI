@@ -9,13 +9,13 @@
 **SP:** 2.1 — Menyenaraikan contoh bantuan dan sokongan moral yang boleh disumbangkan kepada negara. | 2.2 — Menghuraikan cara memupuk budaya memberi bantuan dan sokongan moral kepada negara.  
 **Fokus:** Pengetahuan dan cara perlakuan  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Buku Teks Tahun 6 m/s 9–11 (PDF 18–20), kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year6/unit_02_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 2: Bantuan dan Sokongan Moral kepada Negara, m/s 12–15 (flipbook halaman 22–25); kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year6/unit_02_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid menyenaraikan tiga bentuk bantuan atau sokongan moral kepada negara dan menghuraikan dua cara memupuknya. Kriteria kejayaan: Tiga contoh bantuan dengan dua cara memupuk amalan dan sebab yang boleh disokong bukti.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menunjukkan gambar/tajuk unit **Rakyat Baik Hati Membawa Berkat** dari Buku Teks m/s 9. Murid mengenal pasti pihak yang terlibat, nilai yang diuji dan satu kemungkinan tindakan.
+**Set induksi (5 minit):** Guru memperlihatkan tajuk **Bantuan dan Sokongan Moral kepada Negara** dalam buku teks KSSR Semakan 2017, m/s 12, dan mengemukakan situasi berkaitan nilai unit. Murid mengenal pasti watak, tindakan serta satu keputusan yang munasabah mengikut SP PdP.
 
 **Aktiviti 1 (20 minit) — Bantuan Diberikan Beban Dikurangkan:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 2, m/s 12–15, bahagian **Bantuan Diberikan Beban Dikurangkan** sebagai rangsangan. Murid menyenaraikan tiga bentuk bantuan atau sokongan moral kepada rakyat seperti bantuan keperluan, sukarelawan dan kata-kata semangat (SP 2.1). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
 
@@ -27,7 +27,7 @@ Murid menyenaraikan tiga bentuk bantuan atau sokongan moral kepada negara dan me
 
 **Pembezaan:** Murid yang memerlukan bimbingan mendapat kad gambar/kata kunci; murid yang lebih maju memberikan justifikasi tambahan. Tiada pendedahan pengalaman peribadi diwajibkan.
 
-**Semakan visual buku teks:** Tahun 6, Unit 2 — **Rakyat Baik Hati Membawa Berkat**; halaman bercetak 9–11 (PDF 18–20). Ilustrasi dan aktiviti pada halaman ini diperiksa secara visual bagi PdP 004 sahaja. Langkah PdP ialah penyesuaian guru CikguLaju, bukan petikan penuh buku teks.
+**Rekod audit sejarah — bukan pengesahan buku Semakan 2017:** Semakan terdahulu menggunakan PDF buku lama Unit 2, m/s 9–11 (PDF 18–20). Halaman tersebut tidak sah digunakan bagi aktiviti buku teks DBP 2021. Rujukan bab edisi terkini dan had buktinya direkodkan dalam perenggan Padanan bab di bawah.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 2, m/s 12–15 (flipbook 22–25), bahagian Bantuan Diberikan Beban Dikurangkan / Ikhlas Membantu Keamanan Dijaga; SP 2.1 dan 2.2. Ini pemetaan bab dan olahan tugasan mengikut DSKP, **bukan semakan visual menyeluruh aktiviti buku atau bukti amalan murid**.
 

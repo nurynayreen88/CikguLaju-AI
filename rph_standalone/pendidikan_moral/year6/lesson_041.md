@@ -3,19 +3,19 @@
 **STATUS: DRAF SEMAK — BELUM READY / BELUM AKTIF TELEGRAM**
 
 **Tema:** Saya dan Negara  
-**Unit:** 14. Amalan Toleransi Demi Perpaduan Negara  
+**Unit:** 14. Amalan Toleransi Menjamin Perpaduan Negara  
 **Nilai:** Toleransi  
 **SK:** 14.0 — Amalan Toleransi Demi Perpaduan Negara  
 **SP:** 14.3 — Merumuskan kesan pengabaian amalan toleransi demi perpaduan negara. | 14.4 — Mengekspresikan perasaan berkaitan dengan amalan toleransi demi perpaduan negara.  
 **Fokus:** Penaakulan kesan dan emosi  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Buku Teks Tahun 6 m/s 132–134 (PDF 141–143), kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year6/unit_14_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 14: Amalan Toleransi Menjamin Perpaduan Negara, m/s 136–138 (flipbook halaman 146–148); kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year6/unit_14_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid merumuskan dua kesan mengabaikan toleransi dan mengekspresikan satu perasaan beralasan. Kriteria kejayaan: Dua kesan berpunca daripada tindakan, satu ayat perasaan dengan alasan dan satu pilihan penyelesaian konflik.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menunjukkan gambar/tajuk unit **Toleransi Mengeratkan Hubungan Negara** dari Buku Teks m/s 132. Murid mengenal pasti pihak yang terlibat, nilai toleransi dan satu tindakan yang wajar.
+**Set induksi (5 minit):** Guru memperlihatkan tajuk **Amalan Toleransi Menjamin Perpaduan Negara** dalam buku teks KSSR Semakan 2017, m/s 136, dan mengemukakan situasi berkaitan nilai unit. Murid mengenal pasti watak, tindakan serta satu keputusan yang munasabah mengikut SP PdP.
 
 **Aktiviti 1 (20 minit) — Budayakan Amalan Toleransi:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 14, m/s 136–138, bahagian **Budayakan Amalan Toleransi** sebagai rangsangan. Murid merumuskan dua kesan jika masyarakat saling mengejek atau enggan bertolak ansur dalam perbincangan dan penggunaan ruang awam (SP 14.3). Guru menyemak ketepatan evidens individu mengikut kata tugas SP dan memandu pembetulan yang perlu.
 
@@ -27,7 +27,7 @@ Murid merumuskan dua kesan mengabaikan toleransi dan mengekspresikan satu perasa
 
 **Pembezaan:** Kad gambar/kata kunci untuk murid yang memerlukan sokongan; murid maju memberi dua justifikasi. Elakkan pendedahan hal peribadi atau agama.
 
-**Semakan visual buku teks:** Tahun 6, Unit 14 — **Toleransi Mengeratkan Hubungan Negara**; halaman bercetak 132–134 (PDF 141–143). Ilustrasi dan aktiviti pada halaman ini diperiksa secara visual bagi PdP 041 sahaja. Langkah PdP ialah penyesuaian guru CikguLaju.
+**Rekod audit sejarah — bukan pengesahan buku Semakan 2017:** Semakan terdahulu menggunakan PDF buku lama Unit 14, m/s 132–134 (PDF 141–143). Halaman tersebut tidak sah digunakan bagi aktiviti buku teks DBP 2021. Rujukan bab edisi terkini dan had buktinya direkodkan dalam perenggan Padanan bab di bawah.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 14, m/s 136–138 (flipbook 146–148); tajuk Budayakan Amalan Toleransi / Bersikap Toleransi demi Perpaduan Negara; SP 14.3 dan 14.4. Ini padanan isi kandungan bab dan olahan PdP, **bukan semakan visual penuh tugasan buku atau pengesahan kelas sebenar**.
 
