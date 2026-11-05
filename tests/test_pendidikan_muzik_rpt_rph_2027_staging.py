@@ -314,6 +314,75 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
                     for kind in ("act1", "act2", "assessment"):
                         self.assertIn(preview["phase_text"][kind], preview["layout"]["phases"][1]["activity"])
                     self.assertIn("NO_REAL_WORD_PDF_RENDER", preview["warnings"])
+    def test_175_layouts_pass_existing_web_native_parser_preflight(self):
+        """Run the actual Web input parser, WITHOUT enabling Muzik in runtime.
+
+        Extract only known pure functions/constants from its AST. We never
+        import app.py, open the live service, write files or debit user quota.
+        The one temporary MUZIK whitelist is isolated inside the test only.
+        There is NO source digest or production approval here.
+        """
+        import ast
+        import datetime
+        import hmac
+        import os
+        import re
+        from unittest.mock import patch
+
+        path = ROOT / "web" / "native_rph_telegram_api.py"
+        source_text = path.read_text(encoding="utf-8")
+        tree = ast.parse(source_text, filename=str(path))
+        constants = {"MIMES", "SUBJECTS", "LAYOUT_STYLE", "HEADINGS"}
+        functions = {"_require_text", "_metadata_dict", "_extract", "build_native_input"}
+        namespace = {"os": os, "re": re, "hmac": hmac, "date": datetime.date}
+        for node in tree.body:
+            if isinstance(node, ast.Assign):
+                for target in node.targets:
+                    if isinstance(target, ast.Name) and target.id in constants:
+                        namespace[target.id] = ast.literal_eval(node.value)
+        found = {n.name: n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name in functions}
+        self.assertEqual(set(found), functions)
+        self.assertEqual(constants, set(namespace).intersection(constants))
+        # Compile only selected trusted local functions; never execute the module boot.
+        ast_module = ast.Module(body=[found[n] for n in sorted(functions, key=lambda z: found[z].lineno)], type_ignores=[])
+        exec(compile(ast.fix_missing_locations(ast_module), str(path), "exec"), namespace)
+        self.assertNotIn("MUZIK", namespace["SUBJECTS"])
+
+        def payload_for(preview, fmt):
+            header = {entry["label"]: entry["value"] for entry in preview["layout"]["header"]}
+            return {"subject": "MUZIK", "component": None,
+                    "year": preview["year"], "lesson": preview["pdp"],
+                    "unit": header["Tajuk"],
+                    "teacher": {"class": "4 Amanah", "date": "2027-01-04", "time": "09:00-09:30"},
+                    "layout": preview["layout"], "format": fmt}
+
+        first = module.build_staging_preview(SOURCE, 4, 21)
+        with patch.dict(os.environ, {"CIKGULAJU_WEB_RPH_SOURCE_PARITY_REQUIRED": "0"}):
+            with self.assertRaisesRegex(ValueError, "Invalid subject/year"):
+                namespace["build_native_input"](payload_for(first, "word"))
+            namespace["SUBJECTS"] = dict(namespace["SUBJECTS"], MUZIK="Pendidikan Muzik")
+            for year in range(2, 7):
+                for pdp in range(1, 36):
+                    with self.subTest(year=year, pdp=pdp):
+                        preview = module.build_staging_preview(SOURCE, year, pdp)
+                        for fmt in ("word", "pdf"):
+                            state, ai_text, returned_format = namespace["build_native_input"](payload_for(preview, fmt))
+                            self.assertEqual(returned_format, fmt)
+                            self.assertEqual(state["task"], "rph")
+                            self.assertEqual(state["subject"], "Pendidikan Muzik")
+                            self.assertEqual(state["year"], f"Tahun {year}")
+                            self.assertEqual(state["lesson_no"], pdp)
+                            self.assertEqual(state["topic"], next(e["value"] for e in preview["layout"]["header"] if e["label"] == "Tajuk"))
+                            self.assertEqual(state["rph_class"], "4 Amanah")
+                            self.assertEqual(state["rph_date"], "2027-01-04")
+                            self.assertEqual(state["rph_time"], "09:00-09:30")
+                            self.assertIn("STANDARD PEMBELAJARAN:", ai_text)
+                            for component in ("induction", "act1", "act2", "assessment", "closure", "objective", "materials"):
+                                self.assertIn(preview["phase_text"][component], ai_text)
+                            self.assertFalse(preview["approved_for_live"])
+        # A future production integration MUST implement source-digest parity,
+        # actual DOCX/PDF rendering and approval gates separately.
+
     def test_fail_closed_for_invalid_year_or_pdp(self):
         for year, pdp in ((1, 1), (7, 1), (2, 0), (3, 36), ("2", 1)):
             with self.subTest(year=year, pdp=pdp):
