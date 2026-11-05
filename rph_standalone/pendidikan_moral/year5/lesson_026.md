@@ -17,14 +17,16 @@ Murid menghuraikan atau menilai berdasarkan **9.3: Menaakul kepentingan amalan b
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Saksi menyaksikan tindakan yang boleh membahayakan komuniti**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Peta akibat:** Guru beri dua penghujung kepada situasi. Murid bina peta **pilihan → kesan → alasan**, merujuk SP 9.3 (**Menaakul kepentingan amalan berani dalam hidup bermasyarakat.**). Bandingkan akibat kepada watak yang terlibat dan bincang soalan: **Bagaimana menjaga kebenaran tanpa mendedahkan diri kepada bahaya?**
+**Aktiviti 1 (20 minit) — Aktiviti kandungan asal:** Guru memaparkan sambungan fabel Sang Lebah m/s83 dan 'Gurindam Keberanian' m/s84. Murid membandingkan dua manfaat bertindak berani dengan akibat berdiam diri apabila masyarakat memerlukan bantuan (SP9.3). Guru menyemak bukti hasil individu murid.
 
-**Aktiviti 2 (20 minit) — Dialog dan emosi:** Murid menjalankan dialog ringkas dua versi, menyatakan kesan kedua-duanya dan menulis satu ayat perspektif pihak yang terlibat untuk SP 9.4 (**Mengekspresikan perasaan berkaitan dengan amalan berani dalam hidup bermasyarakat.**). Guru semak hubungan alasan, emosi dan nilai.
+**Aktiviti 2 (20 minit) — Aktiviti kandungan asal:** Guru menggunakan latihan 'Hadapi Cabaran Kekalkan Keberanian' m/s85; murid menulis ayat perasaan bersebab apabila mampu mempertahankan kebenaran secara sopan (SP9.4). Guru menyemak bukti hasil individu murid.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak justifikasi serta dua kesan bagi SP 9.3 dan ayat perasaan yang sesuai bagi SP 9.4. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menilai dua manfaat dan satu ayat perasaan daripada fabel dan latihan (SP9.3–9.4). Murid membetulkan satu respons selepas maklum balas guru.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **keberanian**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — halaman belum dipadankan; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 9 m/s 83–85 (PDF 86–88); dialog, fabel, permainan atau latihan asal dipadankan kepada aktiviti PdP 026 dan SP DSKP.
+
+**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — Unit 9, m/s 83–85 (PDF 86–88) disemak secara visual; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

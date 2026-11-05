@@ -17,14 +17,16 @@ Murid menghuraikan atau menilai berdasarkan **7.3: Merumuskan kepentingan amalan
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Komuniti mengumpul sumbangan untuk keluarga yang memerlukan**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Peta akibat:** Guru beri dua penghujung kepada situasi. Murid bina peta **pilihan → kesan → alasan**, merujuk SP 7.3 (**Merumuskan kepentingan amalan menyayangi masyarakat demi kesejahteraan bersama.**). Bandingkan akibat kepada watak yang terlibat dan bincang soalan: **Apakah perasaan pihak yang memerlukan perhatian?**
+**Aktiviti 1 (20 minit) — Panduan buku teks asal:** Guru membincangkan kisah 'Ibu Teras Kesejahteraan Masyarakat' m/s63 serta perancangan 'Projek Kasih Sayang' m/s64–65. Murid menghuraikan dua kepentingan membantu masyarakat, contohnya menjaga kebajikan dan mengeratkan hubungan (SP7.3). Guru meneliti hasil individu murid.
 
-**Aktiviti 2 (20 minit) — Dialog dan emosi:** Murid menjalankan dialog ringkas dua versi, menyatakan kesan kedua-duanya dan menulis satu ayat perspektif pihak yang terlibat untuk SP 7.4 (**Mengekspresikan perasaan berkaitan dengan amalan menyayangi masyarakat demi kesejahteraan bersama.**). Guru semak hubungan alasan, emosi dan nilai.
+**Aktiviti 2 (20 minit) — Panduan buku teks asal:** Guru menunjukkan aktiviti perbentangan 'Projek Kasih Sayang' m/s64–65. Murid menzahirkan satu perasaan bersebab apabila diberi peluang membantu warga komuniti dan mendengar perspektif penerima bantuan (SP7.4). Guru meneliti hasil individu murid.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak justifikasi serta dua kesan bagi SP 7.3 dan ayat perasaan yang sesuai bagi SP 7.4. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menyemak dua kepentingan dan satu ayat perasaan yang berkait dengan projek kebajikan (SP7.3–7.4). Murid membaiki satu jawapan selepas maklum balas Guru.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **kasih sayang**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — halaman belum dipadankan; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 7, m/s 63–65 (PDF 66–68), kegiatan dan contoh asal dijadikan rujukan aktiviti PdP 020; aktiviti diolah untuk SP DSKP.
+
+**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — Unit 7 m/s 63–65 (PDF 66–68) diperiksa visual; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
