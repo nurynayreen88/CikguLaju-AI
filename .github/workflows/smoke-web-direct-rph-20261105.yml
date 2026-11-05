@@ -1,0 +1,49 @@
+name: CikguLaju actual Web direct RPH smoke
+on:
+  push:
+    branches: [feature/web-direct-rph-telegram-engine-20261105]
+    paths: [.github/workflows/smoke-web-direct-rph-20261105.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  public-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Verify actual production UI and unauthenticated download gates
+        run: |
+          python - <<'PY'
+          from urllib.request import Request,urlopen
+          from urllib.error import HTTPError,URLError
+          from time import sleep
+          base="https://cikgulaju-web.onrender.com"
+          def get(path):
+            for i in range(5):
+              try:
+                with urlopen(Request(base+path,headers={
+                  "Accept":"text/html,application/json",
+                  "User-Agent":"CikguLaju-Public-Security-Smoke/1",
+                }),timeout=20) as res:
+                  return res.status,res.read(125000)
+              except HTTPError as e:
+                return e.code,e.read(1200)
+              except URLError:
+                if i==4: raise
+                sleep(7)
+          for path,want in (
+              ("/healthz",200),
+              ("/",200),
+              ("/api/web/rph/word",401),
+              ("/api/web/rph/pdf",401)):
+            status,body=get(path)
+            print(f"GET {path}: {status}")
+            assert status==want,(path,status,body[:150])
+            if path=="/":
+              assert b'id="rph-word"' in body
+              assert b'id="rph-pdf"' in body
+              assert b'id="rph-download-actions"' in body
+              assert b'id="rph-preview-panel"' not in body
+              assert b'id="rph-preview-button"' not in body
+          print("ACTUAL_PRODUCTION_DIRECT_RPH_UI_GATE_PASS")
+          PY
