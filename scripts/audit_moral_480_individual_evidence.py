@@ -149,8 +149,9 @@ def main() -> None:
                     book_activity = "SEMAKAN2017_TEKSTUAL_PENGUKUHAN_BUKAN_PDF_LEGASI"
                     counts["supp_y6_revised_source_text"] += 1
                 else:
-                    book_activity = "EDISI_SEMAKAN2017_Y6_AKTIVITI_BELUM_DISAHKAN"
-                    counts["supp_y6_old_edition_recheck"] += 1
+                    assert "Padanan edisi Semakan 2017 (2021)" in source, (year, n, "missing revised source heading")
+                    book_activity = "SEMAKAN2017_PADANAN_BAB_SAHAJA_BELUM_AUDIT_AKTIVITI"
+                    counts["supp_y6_revised_topic_only"] += 1
             held = year == 6 and unit_id in (4, 7)
             stage = r["Tahap_Semakan_Buku"]
             if held:
@@ -186,7 +187,7 @@ def main() -> None:
         "supplement": 270,
         "supp_y2_y5_not_individually_book_verified": 216,
         "supp_y6_revised_source_text": 8,
-        "supp_y6_old_edition_recheck": 46,
+        "supp_y6_revised_topic_only": 46,
         "source_hold": 14,
     }, counts
     dest.parent.mkdir(parents=True, exist_ok=True)
@@ -200,7 +201,7 @@ def main() -> None:
     print("NOT FINAL READY: 204 historical visual checks included 36 Year6 references to OBSOLETE textbook edition.")
     print("Correct-edition core: 168 Y2-Y5 visual + 6 Y6 revised source-text tasks = 174 with activity-linked evidence.")
     print("The remaining 36 Year6 core now have revised-edition chapter/SP mappings ONLY (not detailed textbook activity review).")
-    print("270 supplementary: 8 Year6 revised-book references mapped, 262 still lack individual current-book verification.")
+    print("270 supplementary: 8 Year6 revised-book references mapped, 262 still lack individual current-book activity verification (46 Year6 now match revised chapter starts).")
     print("14 Year6 unit 4/7 sessions remain RPT historical HOLD pending complete edition migration and true teacher delivery.")
     print("Word A4 all-session visual and actual Telegram account delivery are separate release gates.")
 

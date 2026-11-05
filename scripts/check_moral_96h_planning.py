@@ -68,7 +68,13 @@ def check_year(y, master):
             if y == 6 and r["Unit"] in ("4", "7"):
                 assert "tidak mendakwa rujukan halaman buku teks" in source, path
             else:
-                assert "halaman" in source.lower() and "permulaan" in source.lower(), path
+                if y == 6:
+                    # Revised 2021 textbook uses printed chapter starts and public
+                    # flipbook page indices, never the obsolete scanned-PDF offset.
+                    assert "Padanan edisi Semakan 2017 (2021)" in source, path
+                    assert "flipbook halaman" in source and "mula m/s" in source, path
+                else:
+                    assert "halaman" in source.lower() and "permulaan" in source.lower(), path
             for section in REQUIRED_SECTIONS:
                 assert section in source, (y, path, section)
             codes = actual_codes

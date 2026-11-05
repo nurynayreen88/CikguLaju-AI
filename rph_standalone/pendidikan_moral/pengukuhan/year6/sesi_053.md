@@ -10,7 +10,7 @@
 **SP:** 8.3 — Menjelaskan kepentingan amalan adil demi kesejahteraan negara.  
 **Fokus:** Penaakulan kepentingan dan akibat  
 **Masa:** 60 minit (sesuaikan dengan jadual waktu guru)  
-**BBM:** Buku Teks Tahun 6, Unit 8, Adil Pemangkin Keamanan Negara, halaman permulaan bercetak 69 (PDF 78); kad situasi, peta keputusan, rekod PBD.
+**BBM:** Buku teks Pendidikan Moral Tahun 6 KSSR Semakan 2017, DBP 2021, Unit 8: Amalan Adil Demi Kesejahteraan Negara, mula m/s 72 (flipbook halaman 82); kad situasi, peta keputusan, rekod PBD.
 
 ## Objektif dan kriteria kejayaan
 Murid menunjukkan penguasaan SP **8.3** dengan menghasilkan dua alasan atau kesan yang konsisten dengan kata tugas SP berdasarkan konteks **Amalan Adil Demi Kesejahteraan Negara**.  
@@ -31,4 +31,6 @@ Murid menunjukkan penguasaan SP **8.3** dengan menghasilkan dua alasan atau kesa
 **Pengayaan:** Tambah satu pilihan alternatif dan dua justifikasi yang melihat kesan terhadap pihak lain.  
 **Refleksi guru:** Rekod evidens individu, keperluan bimbingan dan susulan PdP.
 
-**Batasan sumber:** SP ini dipetik daripada crosswalk DSKP SK Tahun 6, dan rujukan buku teks ialah **halaman mula unit berdasarkan TOC yang disahkan**; halaman aktiviti terperinci belum disahkan. Langkah PdP diadaptasi oleh CikguLaju. Label status dalaman tidak untuk dipaparkan pada RPH guru.
+**Padanan edisi Semakan 2017 (2021):** Unit 8, `Amalan Adil Demi Kesejahteraan Negara`, m/s mula 72 dipadankan dengan kandungan edisi DBP 2021 (https://fliphtml5.com/sbinx/haph/). Ini bukti muka surat mula bab sahaja; aktiviti SP individu belum disahkan secara visual.
+
+**Batasan sumber:** SP mengikut DSKP KSSR Semakan 2017 Tahun 6; contoh latihan pengukuhan ialah olahan CikguLaju, bukan petikan buku. Status dalaman bukan untuk paparan guru. Buku PDF lama dalam Drive bukan sumber edisi Semakan 2017.
