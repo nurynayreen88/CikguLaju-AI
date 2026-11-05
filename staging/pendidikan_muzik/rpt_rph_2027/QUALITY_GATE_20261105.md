@@ -41,7 +41,20 @@ Fail RPT (.md/.csv), RPH setiap PdP (.md), manifest JSON di `staging/pendidikan_
 - GitHub tree readback: **175** fail RPH `rph_pdp_??.md`, **5** CSV RPT, **5** MD RPT dan **5** manifest unik.
 - 5 manifest mempunyai **35 PdP** setahun, setiap satu dengan ID unik `MZ-Yn-xx`.
 - Pakej Word/PDF untuk semakan guru telah dijana sebagai artifak perbualan ini (tidak dimasukkan ke GitHub): **5 RPT landscape** dan **5 buku RPH A4** yang masing-masing mengandungi **35 halaman untuk 35 PdP**. Dokumen diedarkan berlabel **DRAF**. Fail Word individu untuk 175 PdP turut dijana.
-- Ujian `tests/test_pendidikan_muzik_rpt_rph_2027_staging.py` ditambahkan pada branch. **Keputusan GitHub Actions masih perlu disahkan; ujian daripada repository belum disahkan lulus**.
+- Ujian `tests/test_pendidikan_muzik_rpt_rph_2027_staging.py` ditambahkan pada branch. **Ujian struktur asas sebelum pusingan Tahun 5 telah lulus dalam CI; kandungan Tahun 5 selepas pembetulan perlu ujian semula**.
+
+
+## Pusingan tambahan Tahun 5 — semakan RPT sumber awam
+- RPT 2026 Tahun 5 pada https://anyflip.com/eaqot/basd/basic dirujuk semula untuk menyusun 35 PdP dalam turutan sebenar, sambil mengekalkan ID `MZ-Y5-01` hingga `MZ-Y5-35`.
+- Unit 5 ditetapkan **RAJA DI LAUTAN** dan Unit 9 **ADIWIRA**. Unit 9 dipadankan kepada PdP 27–29 dengan rujukan halaman 70–77 daripada RPT (masih belum semakan buku teks asal).
+- RPT Tahun 5 kini hanya mempunyai **dua projek**, seperti struktur DSKP; projek ketiga yang dicadangkan sebelum ini tidak dikekalkan.
+- 35 RPH Tahun 5 dijana semula dalam staging dengan kemahiran khusus nyanyian, perkusi, gerakan, rekoder, kreativiti, apresiasi dan projek. Ini pembetulan **kandungan draf**, bukan pengesahan akhir.
+- Kod SP projek dalam sumber RPT dan DSKP tidak sepenuhnya sama; kod dalam RPH menggunakan DSKP Tahun 5, dengan nota audit sumber. PdP 31–32 ialah pemecahan latihan rekoder bagi blok RPT yang meliputi beberapa minggu, masih cadangan.
+- Sumber teks penuh dan peta silang: `year5/RPT2026_SOURCE_CROSSWALK_AUDIT.md`.
+- **PENTING:** Pakej ZIP Word/PDF daripada pusingan sebelumnya ialah snapshot lama dan belum menggambarkan pelarasan ini. Sebelum diedarkan kepada pengguna, perlu jana semula dan QA cetakan.
+
+## Percanggahan jumlah projek tahun lain
+- DSKP menyatakan Projek Seni Muzik dijalankan **dua kali setahun**. Manifest RPT Tahun 2, 3, 4 dan 6 sebelum ini menamakan projek ketiga berdasarkan RPT sumber lama / susunan draf. **Semak semula dan jangan anggap Projek 3 sebagai program rasmi sehingga sumber berkuasa disahkan.**
 
 ## Release gates
 [ ] Buku teks sepadan dan nombor halaman disahkan PdP demi PdP  

@@ -83,7 +83,15 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
     def test_year_5_6_risks_remain_visible(self):
         y5 = json.loads((MUSIC / "rpt_rph_2027" / "year5" / "pdp_manifest.json").read_text(encoding="utf-8"))
         y6 = json.loads((MUSIC / "rpt_rph_2027" / "year6" / "pdp_manifest.json").read_text(encoding="utf-8"))
-        self.assertTrue(any("belum disahkan" in r["unit"] for r in y5["pdps"]))
+        self.assertTrue(y5["source_rpt_2026_crosswalk_checked"])
+        self.assertEqual(y5["project_count_dskp"], 2)
+        self.assertEqual([r["pdp"] for r in y5["pdps"] if r["unit"].startswith("Projek Seni Muzik")], [15, 16, 34, 35])
+        self.assertFalse(any("Projek Seni Muzik 3" in r["unit"] for r in y5["pdps"]))
+        self.assertEqual([(r["pdp"], r["page"]) for r in y5["pdps"] if r["unit"] == "ADIWIRA"], [(27, "70-71"), (28, "72-73"), (29, "74-77")])
+        self.assertEqual([r["pdp"] for r in y5["pdps"] if r["unit"] == "RAJA DI LAUTAN"], [13, 14, 17])
+        self.assertFalse(y5["textbook_verified"])
+        self.assertFalse(y5["audio_verified"])
+        self.assertFalse(y5["rph_word_pdf_verified"])
         self.assertTrue(any("Baroque" in " ".join(r.get("flags", [])) for r in y6["pdps"]))
         self.assertTrue(any("Classical" in " ".join(r.get("flags", [])) for r in y6["pdps"]))
 
