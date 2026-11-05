@@ -40,16 +40,16 @@ Y6_BOOK_CONTEXT = {
 
 PHASES = ("Set induksi", "Aktiviti 1", "Aktiviti 2",
           "Pengukuhan/Pentaksiran PBD", "Penutup")
-SOURCE_REGEX = re.compile(r"(?m)^\\*\\*SP:\\*\\* (.+?)\\s*$")
-UNIT_REGEX = re.compile(r"(?m)^\\*\\*Unit:\\*\\* (\\d+)\\.\\s*(.+?)\\s*$")
-VALUE_REGEX = re.compile(r"(?m)^\\*\\*(?:Nilai|Tema/Nilai):\\*\\* (.+?)\\s*$")
-SCENE_REGEX = re.compile(r"(?i)situasi:?\\s*\\*\\*([^*]+)\\*\\*")
+SOURCE_REGEX = re.compile(r"(?m)^\*\*SP:\*\* (.+?)\s*$")
+UNIT_REGEX = re.compile(r"(?m)^\*\*Unit:\*\* (\d+)\.\s*(.+?)\s*$")
+VALUE_REGEX = re.compile(r"(?m)^\*\*(?:Nilai|Tema/Nilai):\*\* (.+?)\s*$")
+SCENE_REGEX = re.compile(r"(?i)situasi:?\s*\*\*([^*]+)\*\*")
 STEP_REGEXES = {
-    "Set induksi": re.compile(r"(?m)^\\*\\*Set induksi \\(5 minit\\):\\*\\* .+$"),
-    "Aktiviti 1": re.compile(r"(?m)^\\*\\*Aktiviti 1 \\(20 minit\\) — [^\\n]+$"),
-    "Aktiviti 2": re.compile(r"(?m)^\\*\\*Aktiviti 2 \\(20 minit\\) — [^\\n]+$"),
-    "Pengukuhan/Pentaksiran PBD": re.compile(r"(?m)^\\*\\*Pengukuhan/Pentaksiran PBD \\(10 minit\\):\\*\\* .+$"),
-    "Penutup": re.compile(r"(?m)^\\*\\*Penutup \\(5 minit\\):\\*\\* .+$"),
+    "Set induksi": re.compile(r"(?m)^\*\*Set induksi \(5 minit\):\*\* .+$"),
+    "Aktiviti 1": re.compile(r"(?m)^\*\*Aktiviti 1 \(20 minit\) — [^\n]+$"),
+    "Aktiviti 2": re.compile(r"(?m)^\*\*Aktiviti 2 \(20 minit\) — [^\n]+$"),
+    "Pengukuhan/Pentaksiran PBD": re.compile(r"(?m)^\*\*Pengukuhan/Pentaksiran PBD \(10 minit\):\*\* .+$"),
+    "Penutup": re.compile(r"(?m)^\*\*Penutup \(5 minit\):\*\* .+$"),
 }
 
 
@@ -64,7 +64,7 @@ def source_standard(line: str):
     parts = [x.strip() for x in line.split("|")]
     parsed = []
     for p in parts:
-        m = re.fullmatch(r"(\\d+\\.\\d+)\\s*[—–-]\\s*(.+?)\\s*", p)
+        m = re.fullmatch(r"(\d+\.\d+)\s*[—–-]\s*(.+?)\s*", p)
         if not m:
             raise AssertionError(f"Cannot parse SP: {p}")
         parsed.append((m[1], m[2].rstrip(".")))
