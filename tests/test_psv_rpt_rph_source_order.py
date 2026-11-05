@@ -882,8 +882,34 @@ class PSVSourceOrderTests(unittest.TestCase):
                 body = (ROOT / f"rph_standalone/psv/year4/lesson_{n:03d}.md").read_text(encoding="utf-8")
                 self.assertIn("**Status:** DRAF", body)
         for x in audit:
-            if x["Tahun"] != "4":
+            if x["Tahun"] in ("2", "3", "6"):
                 self.assertEqual(x["Kelulusan_terbit"], "BELUM_READY")
+
+    def test_year5_all_42_visual_textbook_individual_source_reviews_passed(self):
+        """The complete Year5 original PDF (not a generic RPT) was reviewed page-by-page."""
+        a = read_csv(ROOT / "rph_standalone/psv/audits/psv_individual_210_review_20261105.csv")
+        year5 = sorted((r for r in a if r["Tahun"] == "5"), key=lambda x:int(x["PdP"]))
+        self.assertEqual(len(year5), 42)
+        for n, row in enumerate(year5, 1):
+            with self.subTest(pdp=n):
+                self.assertEqual(int(row["PdP"]), n)
+                self.assertEqual(row["Kelulusan_terbit"], "PASSED")
+                self.assertEqual(row["Pemeriksaan_RPH_individu"],
+                                 "RPH_DIBACA;BUKU_TEKS_VISUAL_SAH;DSKP_SEMANTIC_PASSED")
+                self.assertIn("1UA9arc9LrigHx-GccSJFpkTtqfskLFpg", row["Bukti_buku"])
+                self.assertIn("19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx", row["Bukti_buku"])
+                self.assertFalse(row["Nota_semakan_terbuka"])
+                body = (ROOT / f"rph_standalone/psv/year5/lesson_{n:03d}.md").read_text(encoding="utf-8")
+                self.assertIn("**Status:** DRAF", body)
+        source = (ROOT / "rph_standalone/psv/year5/lesson_029.md").read_text(encoding="utf-8").lower()
+        self.assertIn("mozek pada bingkai", source)
+        self.assertIn("catan bunga", source)
+        source_map = json.loads((PSV / "textbook_dskp_source_map_20261104.json").read_text(encoding="utf-8"))
+        self.assertIn("mozek", source_map["years"]["5"]["units"][6][6])
+        self.assertIn("bingkai", source_map["years"]["5"]["units"][6][6])
+        for row in a:
+            if row["Tahun"] in ("2", "3", "6"):
+                self.assertEqual(row["Kelulusan_terbit"], "BELUM_READY")
 
     def test_forty_unit_dskp_technique_and_production_semantics(self):
         """Independent SP-to-technique crosswalk from printed Y2–Y5 DSKP.
