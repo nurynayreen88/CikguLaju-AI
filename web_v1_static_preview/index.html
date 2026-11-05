@@ -43,6 +43,48 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
  .brand-icon{object-fit:contain;flex-shrink:0;background:transparent}
  .login-brand{object-fit:contain;display:block;margin:0 auto 20px;background:transparent}
  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* Ruang guru: RPT diasingkan daripada halaman penyediaan RPH. */
+#workspace.panel{max-width:1160px;margin:26px auto 16px;padding:0;border:0;background:transparent;box-shadow:none}
+.app-shell{display:grid;grid-template-columns:228px minmax(0,1fr);align-items:start;gap:18px}
+.app-sidebar{background:#fff;border:1px solid #d7e5e9;border-radius:18px;padding:18px 14px;box-shadow:0 8px 28px #153b5b0b;position:sticky;top:18px}
+.sidebar-brand{display:flex;align-items:center;gap:10px;padding:4px 7px 17px;border-bottom:1px solid #e2eaf0;margin-bottom:14px}
+.sidebar-brand img{object-fit:contain;flex-shrink:0;background:transparent}
+.sidebar-brand strong{display:block;color:#153f66;font-size:.98rem}
+.sidebar-brand span{display:block;color:#60778d;font-size:.76rem;margin-top:4px}
+.sidebar-menu{display:flex;flex-direction:column;gap:7px}
+.sidebar-tab{font:inherit;font-size:.93rem;display:flex;gap:11px;align-items:center;text-align:left;width:100%;padding:13px 11px;background:transparent;border:1px solid transparent;border-radius:11px;color:#2b485d;font-weight:650;cursor:pointer}
+.sidebar-tab:hover{background:#eef5f9}
+.sidebar-tab.is-active,.sidebar-tab[aria-current="page"]{background:#e7f1fa;border-color:#c7deed;color:#0b4e7d}
+.sidebar-tab:focus-visible,.sidebar-logout:focus-visible{outline:3px solid #f7bc31;outline-offset:2px}
+.sidebar-logout{margin-top:28px;width:100%;text-align:center;border:1px solid #d5dfe6;background:white;border-radius:11px;padding:11px 13px;font:inherit;font-weight:700;color:#43576b;cursor:pointer}
+.app-main{min-width:0;background:#fff;border:1px solid #d7e5e9;border-radius:18px;padding:clamp(20px,4vw,36px);box-shadow:0 8px 28px #153b5b0b}
+.app-view{min-width:0}
+.app-view h2{margin:0 0 13px;color:#113e60}
+.app-view[hidden]{display:none!important}
+#view-rpt #rpt2027-panel{padding:12px 0 0}
+#view-rpt #rpt2027-panel h3{font-size:1.3rem;color:#113e60;margin-top:0}
+.profile-access-status{padding:16px 18px;background:#eef6fa;border:1px solid #cfe1eb;border-radius:12px;color:#163f59;white-space:pre-wrap}
+.guide-steps{line-height:1.6}
+.guide-steps h3{color:#18486c;margin:24px 0 5px}
+.guide-steps p{margin:0 0 12px}
+@media(max-width:760px){
+ #workspace.panel{margin-top:16px}
+ .app-shell{grid-template-columns:minmax(0,1fr);gap:12px}
+ .app-sidebar{position:static;padding:12px}
+ .sidebar-brand{padding:4px 8px 10px;margin-bottom:10px}
+ .sidebar-menu{display:flex;flex-direction:row;gap:7px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}
+ .sidebar-tab{flex:0 0 auto;white-space:nowrap;width:auto;padding:11px 12px;font-size:.88rem}
+ .sidebar-logout{margin-top:8px;width:auto;min-width:130px;padding:9px 12px}
+ .app-main{padding:18px 16px}
+}
+@media print{
+ #workspace > .app-shell{display:block!important}
+ #workspace .app-main,#workspace #view-rph{display:block!important;border:0!important;box-shadow:none!important;padding:0!important;margin:0!important}
+ #workspace .app-sidebar,#workspace #view-rpt,#workspace #view-account,#workspace #view-guide{display:none!important}
+ #workspace #view-rph > *:not(#rph-preview-panel){display:none!important}
+}
+
 </style>
 </head>
 <body>
@@ -56,7 +98,43 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 <div id="telegram-widget" aria-label="Log masuk Telegram"></div>
 <p class="notice" role="status" id="login-status">Menyemak sambungan log masuk…</p>
 </main>
-<section id="workspace" class="panel" hidden><h2>Sediakan RPH</h2><p id="account-access" class="notice" role="status"></p><section class="rph-guide" aria-label="Cara menyediakan RPH"><h3>Cara menggunakan CikguLaju Web</h3><p><strong>1.</strong> Pilih <strong>Tahun</strong> dan <strong>Subjek</strong>.</p><p><strong>2.</strong> Pilih <strong>Unit/Tajuk</strong> dan <strong>Lesson/PdP</strong>.</p><p><strong>3.</strong> Tekan <strong>Papar RPH</strong> sebaik sahaja Lesson/PdP dipilih.</p><p><strong>4.</strong> Isi <strong>kelas, tarikh dan masa</strong> jika mahu maklumat tersebut dimasukkan dalam dokumen.</p><p><strong>5.</strong> Semak RPH, kemudian tekan <strong>Muat turun Word</strong> atau <strong>Cetak / Simpan PDF</strong>.</p><p class="notice">Pratonton Web hanya untuk RPH yang mempunyai sumber disahkan dan pengguna Rakan Pembangun/langganan aktif. Untuk 10 janaan percuma, gunakan bot Telegram CikguLaju.</p></section><p id="selection-help" class="selection-help" role="status">Mula di bawah dengan memilih Tahun.</p><label for="year">Langkah 1 — Pilih Tahun</label><select id="year"><option value="">Pilih Tahun</option><option value="1">Tahun 1</option><option value="2">Tahun 2</option><option value="3">Tahun 3</option><option value="4">Tahun 4</option><option value="5">Tahun 5</option><option value="6">Tahun 6</option></select><label for="subject">Langkah 2 — Pilih Subjek</label><select id="subject" disabled><option value="">Pilih Tahun dahulu</option></select><label for="component" id="component-label" hidden>Pilih komponen PJPK (PJ atau PK)</label><select id="component" hidden disabled><option value="">Pilih PJ atau PK</option></select><label for="unit" id="unit-label" hidden>Langkah 3 — Pilih Unit/Tajuk</label><select id="unit" hidden disabled><option value="">Pilih Subjek dahulu</option></select><label for="lesson" id="lesson-label" hidden>Langkah 4 — Pilih Lesson/PdP</label><select id="lesson" hidden disabled><option value="">Pilih Subjek dahulu</option></select><p id="catalog-status" class="notice" role="status"></p><button id="rph-preview-button" type="button" hidden disabled>Papar RPH</button><section id="teacher-info" hidden aria-label="Maklumat kelas dan waktu"><h3>Langkah 5 — Maklumat RPH</h3><p>Maklumat ini pilihan. RPH boleh dipaparkan dahulu; isi butiran di sini untuk dimasukkan ke dalam dokumen.</p><label for="teacher-class">Kelas</label><input id="teacher-class" type="text" autocomplete="off" maxlength="40" placeholder="Contoh: 4 Bestari" list="saved-teacher-classes"><datalist id="saved-teacher-classes"></datalist><label for="teacher-date">Tarikh PdP</label><input id="teacher-date" type="date"><label for="teacher-time">Masa PdP</label><input id="teacher-time" type="time"></section><section id="rph-preview-panel" hidden aria-live="polite"><h3>Pratonton RPH</h3><p id="rph-preview-status" class="notice" role="status"></p><article id="rph-preview-content" hidden><h3 id="rph-preview-title"></h3><p id="rph-teacher-details"></p><p id="rph-preview-notice"></p><div id="rph-preview-fields"></div></article><button id="rph-word" type="button" disabled>Muat turun Word</button><button id="rph-print" type="button" disabled>Cetak / Simpan PDF</button></section><button id="show-materials" type="button" hidden disabled>Papar Bahan</button><section id="materials-panel" hidden aria-live="polite"><h3>Senarai Bahan</h3><p id="materials-status" class="notice"></p><ul id="materials-list"></ul><button id="download-all" type="button" disabled>Download Semua</button></section><section id="rpt2027-panel" aria-labelledby="rpt2027-heading"><h3 id="rpt2027-heading">📅 RPT 2027 — Semua Subjek</h3><p>Pilih subjek dan tahun. RPT adalah untuk Rakan Pembangun yang disahkan atau pelanggan berlangganan aktif. Fail bertanda DRAF/SEMENTARA masih dalam semakan.</p><label for="rpt-subject">Subjek RPT</label><select id="rpt-subject" disabled><option value="">Memuatkan senarai subjek…</option></select><label for="rpt-year">Tahun RPT</label><select id="rpt-year" disabled><option value="">Pilih Subjek dahulu</option></select><button id="rpt-download" type="button" disabled>Muat turun RPT 2027 (PDF)</button><p id="rpt-status" class="notice" role="status"></p></section><button id="logout" type="button">Log keluar</button></section><footer class="foot">CikguLaju AI · Web</footer>
+<section id="workspace" class="panel" hidden>
+<div class="app-shell">
+<aside class="app-sidebar" aria-label="Navigasi CikguLaju Web">
+  <div class="sidebar-brand"><img src="/assets/cikgulaju-logo.svg" width="58" height="58" alt="" decoding="async"><div><strong>CikguLaju AI</strong><span>Ruang Guru</span></div></div>
+  <nav class="sidebar-menu" aria-label="Menu utama">
+    <button type="button" class="sidebar-tab is-active" data-web-view="rph" aria-controls="view-rph" aria-current="page"><span aria-hidden="true">📘</span> Sediakan RPH</button>
+    <button type="button" class="sidebar-tab" data-web-view="rpt" aria-controls="view-rpt"><span aria-hidden="true">📅</span> RPT 2027</button>
+    <button type="button" class="sidebar-tab" data-web-view="account" aria-controls="view-account"><span aria-hidden="true">👤</span> Profil &amp; Akses</button>
+    <button type="button" class="sidebar-tab" data-web-view="guide" aria-controls="view-guide"><span aria-hidden="true">📖</span> Panduan</button>
+  </nav>
+  <button id="logout" type="button" class="sidebar-logout">Log keluar</button>
+</aside>
+<div class="app-main">
+<section id="view-rph" class="app-view" aria-labelledby="view-rph-heading">
+<h2 id="view-rph-heading">Sediakan RPH</h2><p id="account-access" class="notice" role="status"></p><section class="rph-guide" aria-label="Cara menyediakan RPH"><h3>Cara menggunakan CikguLaju Web</h3><p><strong>1.</strong> Pilih <strong>Tahun</strong> dan <strong>Subjek</strong>.</p><p><strong>2.</strong> Pilih <strong>Unit/Tajuk</strong> dan <strong>Lesson/PdP</strong>.</p><p><strong>3.</strong> Tekan <strong>Papar RPH</strong> sebaik sahaja Lesson/PdP dipilih.</p><p><strong>4.</strong> Isi <strong>kelas, tarikh dan masa</strong> jika mahu maklumat tersebut dimasukkan dalam dokumen.</p><p><strong>5.</strong> Semak RPH, kemudian tekan <strong>Muat turun Word</strong> atau <strong>Cetak / Simpan PDF</strong>.</p><p class="notice">Pratonton Web hanya untuk RPH yang mempunyai sumber disahkan dan pengguna Rakan Pembangun/langganan aktif. Untuk 10 janaan percuma, gunakan bot Telegram CikguLaju.</p></section><p id="selection-help" class="selection-help" role="status">Mula di bawah dengan memilih Tahun.</p><label for="year">Langkah 1 — Pilih Tahun</label><select id="year"><option value="">Pilih Tahun</option><option value="1">Tahun 1</option><option value="2">Tahun 2</option><option value="3">Tahun 3</option><option value="4">Tahun 4</option><option value="5">Tahun 5</option><option value="6">Tahun 6</option></select><label for="subject">Langkah 2 — Pilih Subjek</label><select id="subject" disabled><option value="">Pilih Tahun dahulu</option></select><label for="component" id="component-label" hidden>Pilih komponen PJPK (PJ atau PK)</label><select id="component" hidden disabled><option value="">Pilih PJ atau PK</option></select><label for="unit" id="unit-label" hidden>Langkah 3 — Pilih Unit/Tajuk</label><select id="unit" hidden disabled><option value="">Pilih Subjek dahulu</option></select><label for="lesson" id="lesson-label" hidden>Langkah 4 — Pilih Lesson/PdP</label><select id="lesson" hidden disabled><option value="">Pilih Subjek dahulu</option></select><p id="catalog-status" class="notice" role="status"></p><button id="rph-preview-button" type="button" hidden disabled>Papar RPH</button><section id="teacher-info" hidden aria-label="Maklumat kelas dan waktu"><h3>Langkah 5 — Maklumat RPH</h3><p>Maklumat ini pilihan. RPH boleh dipaparkan dahulu; isi butiran di sini untuk dimasukkan ke dalam dokumen.</p><label for="teacher-class">Kelas</label><input id="teacher-class" type="text" autocomplete="off" maxlength="40" placeholder="Contoh: 4 Bestari" list="saved-teacher-classes"><datalist id="saved-teacher-classes"></datalist><label for="teacher-date">Tarikh PdP</label><input id="teacher-date" type="date"><label for="teacher-time">Masa PdP</label><input id="teacher-time" type="time"></section><section id="rph-preview-panel" hidden aria-live="polite"><h3>Pratonton RPH</h3><p id="rph-preview-status" class="notice" role="status"></p><article id="rph-preview-content" hidden><h3 id="rph-preview-title"></h3><p id="rph-teacher-details"></p><p id="rph-preview-notice"></p><div id="rph-preview-fields"></div></article><button id="rph-word" type="button" disabled>Muat turun Word</button><button id="rph-print" type="button" disabled>Cetak / Simpan PDF</button></section><button id="show-materials" type="button" hidden disabled>Papar Bahan</button><section id="materials-panel" hidden aria-live="polite"><h3>Senarai Bahan</h3><p id="materials-status" class="notice"></p><ul id="materials-list"></ul><button id="download-all" type="button" disabled>Download Semua</button></section></section>
+<section id="view-rpt" class="app-view" aria-labelledby="rpt2027-heading" hidden>
+<section id="rpt2027-panel" aria-labelledby="rpt2027-heading"><h3 id="rpt2027-heading">📅 RPT 2027 — Semua Subjek</h3><p>Pilih subjek dan tahun. RPT adalah untuk Rakan Pembangun yang disahkan atau pelanggan berlangganan aktif. Fail bertanda DRAF/SEMENTARA masih dalam semakan.</p><label for="rpt-subject">Subjek RPT</label><select id="rpt-subject" disabled><option value="">Memuatkan senarai subjek…</option></select><label for="rpt-year">Tahun RPT</label><select id="rpt-year" disabled><option value="">Pilih Subjek dahulu</option></select><button id="rpt-download" type="button" disabled>Muat turun RPT 2027 (PDF)</button><p id="rpt-status" class="notice" role="status"></p></section></section>
+<section id="view-account" class="app-view" aria-labelledby="view-account-heading" hidden>
+<h2 id="view-account-heading">Profil &amp; Akses</h2>
+<p>Gunakan akaun Telegram CikguLaju yang telah didaftarkan. Rekod langganan dan akses kekal di sumber pengguna sedia ada.</p>
+<p id="profile-access-summary" class="profile-access-status" role="status">Memuatkan status akaun…</p>
+<p class="notice">Akses RPT dan RPH Web mengikut status Rakan Pembangun atau langganan aktif. Percubaan 10 janaan percuma masih melalui Telegram.</p>
+</section>
+<section id="view-guide" class="app-view" aria-labelledby="view-guide-heading" hidden>
+<h2 id="view-guide-heading">Panduan Penggunaan</h2>
+<div class="guide-steps">
+<h3>Cara menyediakan RPH</h3>
+<p>Pilih Sediakan RPH → Tahun → Subjek → Unit/Tajuk → Lesson/PdP. Tekan Papar RPH, semak aktiviti, kemudian muat turun Word atau cetak sebagai PDF. Kelas, tarikh dan masa boleh diisi sebelum muat turun.</p>
+<h3>Cara memuat turun RPT 2027</h3>
+<p>Tekan menu RPT 2027 di sebelah. Pilih Subjek dan Tahun, kemudian tekan Muat turun RPT 2027 (PDF). Fail yang belum tersedia tidak akan digantikan dengan fail subjek lain.</p>
+<h3>Akses &amp; keselamatan</h3>
+<p>Log masuk menggunakan Telegram. Hanya akaun yang mempunyai akses berbayar boleh menggunakan RPT dan pratonton Web yang tersedia. Kandungan yang masih dalam semakan ditunjukkan mengikut status sebenarnya.</p>
+</div>
+</section>
+</div>
+</div>
+</section><footer class="foot">CikguLaju AI · Web</footer>
 </div>
 <script>
 "use strict";
@@ -69,11 +147,28 @@ window.onCikguLajuTelegramAuth=async function(user){
   location.reload();
  }catch(error){status.textContent=error.message;}
 };
+const webViewButtons=Array.from(document.querySelectorAll("[data-web-view]"));
+const webViews=new Map([["rph","view-rph"],["rpt","view-rpt"],["account","view-account"],["guide","view-guide"]]);
+function showWebView(name){
+ if(!webViews.has(name))return;
+ for(const [key,id] of webViews){
+  document.getElementById(id).hidden=key!==name;
+ }
+ for(const button of webViewButtons){
+  const active=button.dataset.webView===name;
+  button.classList.toggle("is-active",active);
+  if(active)button.setAttribute("aria-current","page");
+  else button.removeAttribute("aria-current");
+ }
+}
+webViewButtons.forEach(button=>button.addEventListener("click",()=>showWebView(button.dataset.webView)));
+showWebView("rph");
+
 (async()=>{
  const status=document.getElementById("login-status");
  try{
   const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),8000);let session;try{session=await fetch("/api/auth/telegram/session",{credentials:"same-origin",cache:"no-store",signal:controller.signal});}finally{clearTimeout(timeout);}
-  if(session.ok){const account=await session.json();document.querySelector("main.panel").hidden=true;document.getElementById("workspace").hidden=false;document.getElementById("account-access").textContent="Akses akaun: "+(account.status||"Aktif")+" · "+(account.access||"Semakan akses belum tersedia");document.getElementById("account-access").dataset.loaded="1";document.getElementById("account-access").setAttribute("aria-live","polite");loadRptCatalog();loadTeacherClasses();return;}
+  if(session.ok){const account=await session.json();document.querySelector("main.panel").hidden=true;document.getElementById("workspace").hidden=false;document.getElementById("account-access").textContent="Akses akaun: "+(account.status||"Aktif")+" · "+(account.access||"Semakan akses belum tersedia");document.getElementById("account-access").dataset.loaded="1";document.getElementById("profile-access-summary").textContent=document.getElementById("account-access").textContent;document.getElementById("account-access").setAttribute("aria-live","polite");loadRptCatalog();loadTeacherClasses();return;}
   const response=await fetch("/api/auth/capabilities",{cache:"no-store"});
   if(session.status===503){status.textContent="Semakan akaun belum tersedia pada pelayan. Cuba log masuk semula selepas konfigurasi disemak.";}
 
