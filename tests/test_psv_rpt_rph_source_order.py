@@ -847,6 +847,23 @@ class PSVSourceOrderTests(unittest.TestCase):
         self.assertEqual(rpt[35]["BT muka surat"], "88–89")
         self.assertIn("ms 88–89", (ROOT / "rph_standalone/psv/year4/lesson_036.md").read_text(encoding="utf-8"))
 
+    def test_year4_textbook_photo_pages_14_to17_and_22_to27_individual_signoff(self):
+        """Eight sources were visually inspected in original PDF; release remains gated."""
+        audit = read_csv(ROOT / "rph_standalone/psv/audits/psv_individual_210_review_20261105.csv")
+        for n in range(5,13):
+            with self.subTest(pdp=n):
+                row = next(r for r in audit if r["Tahun"] == "4" and int(r["PdP"]) == n)
+                self.assertEqual(row["Kelulusan_terbit"], "PASSED")
+                self.assertIn("BUKU_TEKS_VISUAL_SAH:", row["Bukti_buku"])
+                self.assertIn("DSKP_SEMANTIC_PASSED", row["Pemeriksaan_RPH_individu"])
+                self.assertFalse(row["Nota_semakan_terbuka"])
+                body = (ROOT / f"rph_standalone/psv/year4/lesson_{n:03d}.md").read_text(encoding="utf-8").lower()
+                self.assertIn("**status:** draf", body)
+                self.assertTrue("mozek" in body if n <= 8 else "stensil" in body)
+        for n in (6,7,8):
+            self.assertIn("gulungan", (ROOT / f"rph_standalone/psv/year4/lesson_{n:03d}.md").read_text(encoding="utf-8"))
+        self.assertIn("beg sandang", (ROOT / "rph_standalone/psv/year4/lesson_012.md").read_text(encoding="utf-8").lower())
+
     def test_forty_unit_dskp_technique_and_production_semantics(self):
         """Independent SP-to-technique crosswalk from printed Y2–Y5 DSKP.
 
