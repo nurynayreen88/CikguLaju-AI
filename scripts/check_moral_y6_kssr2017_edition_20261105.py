@@ -82,6 +82,31 @@ def main():
       "y6_supplement_not_individually_revised":46,
       "years2_to5_core_correct_edition_visual_ledger":168,
     }
+    mapping=source["revised_topic_mapped_core"]
+    assert len(mapping)==36
+    assert sorted(r["lesson"] for r in mapping)==sorted(set(range(1,43))-{10,11,12,19,20,21})
+    for row in mapping:
+        n,u=row["lesson"],row["unit"]
+        assert u==(n-1)//3+1 and u not in (4,7),row
+        start,end=row["printed_pages"]
+        assert start>=revised["units"][u-1]["printed_start"]
+        assert end<revised["units"][u]["printed_start"]
+        assert row["flipbook_pages"]==[start+10,end+10]
+        phase=(n-1)%3
+        expected_sp=cross["units"][u-1]["sp"]
+        expected_sp=expected_sp[:2] if phase==0 else expected_sp[2:4] if phase==1 else expected_sp[4:]
+        assert row["sp_codes"]==[x["code"] for x in expected_sp]
+        path=ROOT/f"rph_standalone/pendidikan_moral/year6/lesson_{n:03d}.md"
+        text=path.read_text(encoding="utf-8")
+        marker=f"**Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit {u}, m/s {start}–{end} (flipbook {start+10}–{end+10})"
+        assert marker in text,path
+        assert revised["source_url"] in text,path
+        assert "Batasan bukti sejarah" in text,path
+        assert "DRAF SEMAK" in text and "BELUM READY" in text,path
+        assert all(x["code"] in text and x["text"] in text for x in expected_sp),path
+        phases=[line for line in text.splitlines() if line.startswith(("**Aktiviti 1 (20 minit)","**Aktiviti 2 (20 minit)"))]
+        assert len(phases)==2 and all("Guru" in x and "Murid" in x for x in phases),path
+    print("PASS Year6: 36 additional lessons mapped to revised 2021 book chapter headings; NOT detailed visual activity approval")
     print("PASS Year6: 14 KSSR Semakan 2017 source-text/DSKP-aligned RPH (6 core, 8 supplementary)")
     print("REQUIRED REMAINING: 36 other Year6 core current-book checks; 46 other Year6 supplementary source checks.")
     print("Historical 33 old-edition Year6 'verified' entries are NOT approved for revised-edition teaching.")
