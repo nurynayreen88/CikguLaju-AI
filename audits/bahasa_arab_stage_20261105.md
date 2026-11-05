@@ -66,3 +66,8 @@ Buku teks DBP/KPM cetakan pertama 2020 ISBN 978-983-49-2838-4 dan DSKP asal dala
 **Bendera belum selesai:** (1) PdP 002 kod 1.1.2 DSKP tiada pada latihan buku h.2; (2) PdP 004 buku h.3 berfokus huruf ب/ن sedangkan draf berfokus bunyi ث/س/ص; (3) PdP 012 contoh p19 berbeza daripada SP 1.4.1 yang tercetak di p20. Perlu pengesahan SK/SP dan pemetaan RPT individu, tidak boleh auto-READY.
 
 Fail bukti `audits/bahasa_arab_y5_pdp001_012_source_audit_20261106.json` menyimpan kod buku dan had pengesahan; pembetulan tidak menukar status **0 FINAL READY**. Word/PDF RTL A4 belum diuji.
+
+## 6 November 2026 — Tahun 4 PdP 007–012
+Enam draf tambahan disemak berdasarkan Buku Teks Tahun 4 DBP/KPM 2019 (halaman 10, 15, 25, 15, 16, 20). PdP 007 menulis nama bulan; PdP 008/010 menggunakan dialog hari jadi; PdP 009 intonasi; PdP 011 ucapan hari jadi. **Bendera PdP 012:** buku halaman 20 mengandungi kod SP 1.4.1 untuk dialog berkait, tetapi contoh ayat draf tentang Hari Guru belum sepadan teks buku; jangan tanda READY tanpa adjudikasi.
+
+Fail: `audits/bahasa_arab_y4_pdp007_012_source_audit_20261106.json`. Kini 12/12 draf Unit 1 Tahun 4 mempunyai sumber halaman bercetak pada aras teks, tetapi tiada kelulusan individu akhir atau Word/PDF RTL. **0 FINAL READY**.

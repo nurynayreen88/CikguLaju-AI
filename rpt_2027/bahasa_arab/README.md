@@ -37,3 +37,5 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 ## Audit sumber awal Tahun 5 (6 Nov 2026)
 - 12 RPH PdP 001–012 bagi Unit 1 telah mendapat rujukan halaman buku dan catatan sokongan kod SP, `audits/bahasa_arab_y5_pdp001_012_source_audit_20261106.json`.
 - **Bendera:** PdP 002, 004, 012 perlu semakan kandungan/SP dengan lebih teliti. Semakan halaman sumber **tidak** membuktikan RPT 2027 atau kelulusan akhir.
+
+- Tahun 4 PdP 007–012: halaman 10,15,25,15,16,20 telah dicatat sebagai bukti sumber. `audits/bahasa_arab_y4_pdp007_012_source_audit_20261106.json`. PdP 012 perlu pembetulan kandungan individu; 12 draf Unit 1 telah menerima rujukan sumber tetapi status tetap DRAF.

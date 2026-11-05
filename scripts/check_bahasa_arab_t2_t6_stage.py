@@ -141,6 +141,20 @@ def check() -> None:
         assert "BELUM READY" in rph and record["draft_sp"] in rph
         assert f"**{record['source_printed_pages']}**" in rph
         assert record["evidence_status"] in rph
+    y4rest = json.loads((ROOT / "audits" / "bahasa_arab_y4_pdp007_012_source_audit_20261106.json").read_text(encoding="utf-8"))
+    assert y4rest["final_ready"] == 0 and len(y4rest["pdp"]) == 6
+    assert [x["lesson"] for x in y4rest["pdp"]] == [f"{i:03d}" for i in range(7,13)]
+    assert [x["sp"] for x in y4rest["pdp"]] == EXPECTED_SP[4][6:12]
+    assert y4rest["flagged_lessons"] == ["012"]
+    assert y4rest["pdp"][5]["evidence_status"] == "PRINTED_SP_BUT_RPH_SAMPLE_NOT_SAME_TEXT"
+    assert all(x["ready"] is False and x["manual_approval"] is False for x in y4rest["pdp"])
+    assert m["years"]["4"]["source_evidence_pdp007_012"] == "audits/bahasa_arab_y4_pdp007_012_source_audit_20261106.json"
+    assert m["years"]["4"]["source_reviewed_drafts_total"] == 12
+    for i, x in enumerate(y4rest["pdp"], 7):
+        src = (SUBJECT / "year4" / f"lesson_{i:03d}.md").read_text(encoding="utf-8")
+        assert "**Audit buku teks (6 Nov 2026):**" in src
+        assert f"**{x['page']}**" in src
+        assert "BELUM READY" in src and x["evidence_status"] in src
     print("PASSED: 20 unit indexes, 60 crosswalks, 60 RPH draft files, 15 banks.")
     print("RELEASE BLOCKED: 0 READY; page-level textbook, A4 RTL and manual review missing.")
 
