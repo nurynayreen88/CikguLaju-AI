@@ -7,6 +7,7 @@ import base64
 import binascii
 import hmac
 import os
+import re
 from flask import Blueprint, Response, jsonify, request
 
 MIN_TOKEN=32
@@ -61,7 +62,15 @@ def create_web_payment_source(runtime):
             _qr_data(runtime)
         except ValueError:
             return jsonify({"error":"payment QR unavailable"}),503
+        # Use the ID from Telegram's *active bot API*, not a browser username.
+        # A Web widget configured for a different bot must never submit a
+        # receipt whose Telegram file_id the real admin bot cannot open.
+        match=re.search(r"/bot([0-9]{5,15}):[A-Za-z0-9_-]{20,}$",
+                        str(getattr(runtime,"API","")))
+        if not match:
+            return jsonify({"error":"Active Telegram bot identity unavailable"}),503
         return jsonify({
+            "telegram_bot_id":match.group(1),
             "plans":[
                 {"code":"rakan_pembangun","label":"Rakan Pembangun",
                  "amount":"10.00","description":"Bayaran sekali, akses seumur hidup"},
