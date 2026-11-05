@@ -231,7 +231,7 @@ def check() -> None:
     assert m["years"]["4"]["unit2_release_approved"] is False
     assert m["total_provisional_rph_count"] == 90
     assert readiness["completed"]["year4_unit2_candidate_rph"] == 16
-    assert readiness["completed"]["verified_a4_render_for_new_12"] is False
+    assert readiness["completed"]["verified_a4_render_for_new_12"] is True
     for n, item in zip(range(13,25),more_evidence["items"]):
         page = SUBJECT / "year4" / f"lesson_{n:03d}.md"
         text = page.read_text(encoding="utf-8")
@@ -256,7 +256,12 @@ def check() -> None:
     assert m["years"]["4"]["unit3_candidate_rph_count"] == 14
     assert m["years"]["4"]["unit3_release_approved"] is False
     assert readiness["completed"]["year4_unit3_candidate_rph"] == 14
-    assert readiness["completed"]["verified_a4_render_for_all_90"] is False
+    assert readiness["completed"]["verified_a4_render_for_all_90"] is True
+    assert readiness["completed"]["word_generated_in_ci"] == 90
+    assert readiness["completed"]["pdf_generated_in_ci"] == 90
+    assert readiness["total_ready_rph"] == 0
+    assert m["latest_technical_a4_validation"]["status"] == "PASSED_OFFLINE_TECHNICAL_ONLY"
+    assert m["latest_technical_a4_validation"]["release_approval"] is False
     for n, i in zip(range(25,43),tail_evidence["items"]):
         source = (SUBJECT / "year4" / f"lesson_{n:03d}.md").read_text(encoding="utf-8")
         assert len(source) > 1500 and all(mark in source for mark in MARKERS)

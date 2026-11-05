@@ -11,17 +11,17 @@
     "source_page_draft_reviewed": 90,
     "preliminary_year6_page_candidates": 0,
     "one_page_A4_docx_pdf_ci_verified": true,
-    "render_check_ci": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42115776091",
-    "word_generated_in_ci": 60,
-    "pdf_generated_in_ci": 60,
+    "render_check_ci": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42124849955",
+    "word_generated_in_ci": 90,
+    "pdf_generated_in_ci": 90,
     "year6_text_source_reviewed": 12,
     "year2_text_source_reviewed": 12,
     "year2_sp_book_ocr_ambiguous": 4,
     "year4_unit2_candidate_rph": 16,
     "year4_unit2_page_text_covered_range": "30–48",
-    "verified_a4_render_for_new_12": false,
+    "verified_a4_render_for_new_12": true,
     "year4_unit3_candidate_rph": 14,
-    "verified_a4_render_for_all_90": false
+    "verified_a4_render_for_all_90": true
   },
   "release_checks": [
     {
@@ -57,7 +57,7 @@
     {
       "id": "word_pdf_programmatic_a4",
       "status": "PASS_TECHNICAL_ONLY",
-      "detail": "60 DOCX+PDF passed previously; 72-document CI run pending, 90-document CI not yet passed. No assumption of successful 90-render until result."
+      "detail": "PASS technical-only: CI https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42124849955 rendered 90 DOCX and 90 PDF, all PDFs one A4 page with Arabic font support; individual visual/linguistic proofreading not approved."
     },
     {
       "id": "manual_pedagogic_approval",
