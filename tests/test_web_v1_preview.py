@@ -27,8 +27,12 @@ class PreviewTests(unittest.TestCase):
         self.assertIn(b'id="catalog-status"', response.data)
         self.assertIn(b'id="unit" hidden disabled', response.data)
         self.assertIn(b'id="lesson" hidden disabled', response.data)
-        self.assertIn(b'id="generate-docx"', response.data)
-        self.assertIn(b'id="generate-pdf"', response.data)
+        self.assertIn(b'id="rph-preview-button" type="button" hidden disabled', response.data)
+        self.assertIn(b'id="rph-preview-panel" hidden', response.data)
+        self.assertIn(b'id="rph-word" type="button" disabled', response.data)
+        self.assertIn(b'id="rph-print" type="button" disabled', response.data)
+        self.assertNotIn(b'id="generate-docx"', response.data)
+        self.assertNotIn(b'id="generate-pdf"', response.data)
         self.assertIn(b'Muat turun Web akan dibuka', response.data)
 
     def test_health_declares_no_data_or_generation(self):
