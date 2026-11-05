@@ -2,10 +2,10 @@
 
 **Status:** DRAF SEMAK (belum aktif Telegram)  
 **Unit RPT 2026:** Unit 6 — Inspirasi Corak Rekaan  
-**Aktiviti/Tajuk:** Gerak Berirama  
+**Aktiviti/Tajuk:** Gerak Beritma  
 **SK:** 2.1  
 **SP:** 2.1.1; 2.1.2; 2.1.3  
-**Buku Teks:** Pendidikan Seni Visual Tahun 6, Gerak Berirama, ms 52–53
+**Buku Teks:** Pendidikan Seni Visual Tahun 6, Gerak Beritma, ms 52–53
 **Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
 **BBM:** kertas warna berbeza saiz, gunting hujung bulat, pen penanda, gam, kertas lukisan
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
