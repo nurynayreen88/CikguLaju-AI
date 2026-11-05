@@ -180,6 +180,7 @@ def test_moral_menu_labels():
                for row in (keyboard or []) for button in row}
     expected = {
         "rpt2027_pm_ab_pdf_2": "📥 Pendidikan Moral (PDF)",
+        "moral_supp_menu_2": "📘 Pendidikan Moral • RPH Pengukuhan",
     }
     assert_true(all(buttons.get(key) == value for key, value in expected.items()),
                 "Moral combined A/B PDF button missing or incorrectly labelled")

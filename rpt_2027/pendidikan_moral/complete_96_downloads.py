@@ -16,6 +16,7 @@ YEARS = frozenset(range(2, 7))
 RPT_PREFIX = "rpt2027_pm_96_"
 RPH_PDF_PREFIX = "rpt2027_pm_rph54_pdf_"
 RPH_DOCX_PREFIX = "rpt2027_pm_rph54_docx_"
+RPH_MENU_PREFIX = "moral_supp_menu_"
 PHASE_NAMES = ("Set induksi", "Aktiviti 1", "Aktiviti 2",
                "Pengukuhan/Pentaksiran PBD", "Penutup")
 
@@ -377,7 +378,10 @@ def install(ns):
     def callback(cid, data):
         action = str(data or "")
         kind, group, raw_year = None, None, None
-        if action.startswith(COMBINED_RPT_PREFIX):
+        if action.startswith(RPH_MENU_PREFIX):
+            raw_year = action[len(RPH_MENU_PREFIX):]
+            kind = "rph_menu"
+        elif action.startswith(COMBINED_RPT_PREFIX):
             raw_year = action[len(COMBINED_RPT_PREFIX):]
             kind = "rpt"
         elif action.startswith(RPT_PREFIX):
@@ -406,6 +410,17 @@ def install(ns):
                         [[{"text":"Jadi Rakan Pembangun","callback_data":"pioneer_join"}],
                          [{"text":"Menu Utama","callback_data":"home"}]])
         year = int(raw_year)
+        if kind == "rph_menu":
+            if not rph_ready(year):
+                return send(cid, "Sumber RPH pengukuhan Pendidikan Moral tahun ini belum tersedia.")
+            return send(cid,
+                        "📘 <b>RPH Pengukuhan Pendidikan Moral Tahun %d</b>\n\n"
+                        "54 sesi pengukuhan. Pilih format bahan yang ingin dimuat turun. "
+                        "RPH teras masih dijana seperti biasa melalui Sediakan Bahan PdP." % year,
+                        [[{"text": "📄 Muat turun PDF", "callback_data": RPH_PDF_PREFIX + str(year)}],
+                         [{"text": "📝 Muat turun Word", "callback_data": RPH_DOCX_PREFIX + str(year)}],
+                         [{"text": "⬅️ Kembali ke Tahun %d" % year, "callback_data": "rpt2027_year_%d" % year}],
+                         [{"text": "🏠 Menu Utama", "callback_data": "home"}]])
         if (kind == "rpt" and not combined_pdf_ready(year)) or (
                 kind != "rpt" and not rph_ready(year)):
             return send(cid, "Sumber Pendidikan Moral bagi pilihan ini belum lengkap.")
