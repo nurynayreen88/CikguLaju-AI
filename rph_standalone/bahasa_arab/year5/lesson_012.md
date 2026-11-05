@@ -28,3 +28,6 @@
 **Audit halaman:** Tiada nombor halaman individu disahkan; jangan nyatakan muka surat khusus kepada guru sebelum semakan buku teks.
 
 **Status:** DRAF_STAGING / BELUM READY. Bukan bahan LIVE Telegram atau Web. Teks/aktiviti ini merupakan cadangan berpandukan fokus DSKP/RPT, tidak boleh dianggap padanan tepat halaman buku teks, dan belum diuji dalam Word/PDF A4 RTL.
+
+**Audit buku teks (6 Nov 2026):** Unit 1, halaman bercetak **19–20**. Buku Teks Bahasa Arab Tahun 5 DBP/KPM cetakan 2020, ISBN 978-983-49-2838-4; PDF asal Drive: https://drive.google.com/file/d/1OI3RZ8-NXE2bVSOVqSz9bEWCh2tQEN5U/view.
+**Tahap sokongan SP/aktiviti:** RELATED_EXAMPLE_P19_SP_1_4_1_PRINTED_P20. Ayat contoh tentang pinggan menyerupai halaman 19 (kod SP bercetak 1.4.2), manakala SP 1.4.1 tercetak pada dialog halaman 20. Perlu pastikan pemadanan PdP 012 sebelum lulus. Ini catatan bukti sumber, bukan kelulusan urutan RPT 2027. **DRAF / BELUM READY**.

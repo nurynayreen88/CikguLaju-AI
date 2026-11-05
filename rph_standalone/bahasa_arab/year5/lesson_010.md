@@ -4,13 +4,13 @@
 **Fokus PdP:** Membaca ayat dapur secara lancar
 **SK/SP cadangan:** 2.3 / 2.3.2 — berdasarkan DSKP dan urutan kemahiran RPT 2026, masih menunggu semakan individu terhadap buku teks.
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
-**Kosa kata / ayat:** ماذا تطبخ؟ أنا أطبخ الحساء، أين تضع الصحن؟
+**Kosa kata / ayat:** ماذا تطبخ؟ أنا أطبخ الأرز، أين تضع الفواكه؟ أضع الفواكه في الثلاجة.
 **Objektif pembelajaran:** Murid membaca dua daripada tiga ayat dengan intonasi dan jeda yang sesuai.
 **Kriteria kejayaan:** Kejayaan murid diukur berdasarkan bilangan sebutan/bacaan/tulisan betul dalam objektif.
 
 **Set induksi:** Guru memaparkan ماذا تطبخ؟ dan meminta murid mengecam tanda soal.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membacakan ayat soalan dan jawapan sambil menandakan jeda sebelum respons.
+**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membacakan dialog memasak daripada buku halaman 14 serta soalan-jawapan bentuk daripada halaman 15; murid menanda jeda sebelum respons.
 
 **Aktiviti 2 — Aplikasi murid:** Murid membaca dialog tiga ayat secara berpasangan, kemudian bertukar peranan membaca soalan.
 
@@ -28,3 +28,6 @@
 **Audit halaman:** Tiada nombor halaman individu disahkan; jangan nyatakan muka surat khusus kepada guru sebelum semakan buku teks.
 
 **Status:** DRAF_STAGING / BELUM READY. Bukan bahan LIVE Telegram atau Web. Teks/aktiviti ini merupakan cadangan berpandukan fokus DSKP/RPT, tidak boleh dianggap padanan tepat halaman buku teks, dan belum diuji dalam Word/PDF A4 RTL.
+
+**Audit buku teks (6 Nov 2026):** Unit 1, halaman bercetak **14–15**. Buku Teks Bahasa Arab Tahun 5 DBP/KPM cetakan 2020, ISBN 978-983-49-2838-4; PDF asal Drive: https://drive.google.com/file/d/1OI3RZ8-NXE2bVSOVqSz9bEWCh2tQEN5U/view.
+**Tahap sokongan SP/aktiviti:** MATCH_BOOK_PAGE_SP. Buku halaman 14–15 memaparkan dialog memasak dan bentuk peralatan, SP 2.3.2. Ini catatan bukti sumber, bukan kelulusan urutan RPT 2027. **DRAF / BELUM READY**.
