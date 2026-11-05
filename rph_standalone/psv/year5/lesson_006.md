@@ -14,7 +14,7 @@ Murid dapat menghasilkan dua sampel dan satu lakaran pilihan untuk Sayangilah Ha
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan tema Sayangilah Habitat Kita; murid menjelaskan satu pemerhatian visual.
 **Aktiviti 1 (15 minit) — Demonstrasi:** Guru rujuk BT ms 16–17 tentang sumber bercetak/digital, susun atur muka taip serta ruang hadapan dan belakang.
-**Aktiviti 2 (25 minit) — Amali:** Murid mencuba dua kombinasi keratan gambar habitat laut, susun imej ikan bayan sebagai tumpuan, uji saiz tajuk dan memilih satu reka letak poster untuk PdP 007.
+**Aktiviti 2 (25 minit) — Amali:** Murid mencuba dua kombinasi keratan gambar habitat laut, susun imej ikan bayan sebagai tumpuan, uji saiz tajuk dan memilih satu reka letak poster berserta slogan perlindungan habitat untuk PdP 007.
 **Pengukuhan/Pentaksiran (10 minit):** Guru menyemak dua lakaran susun atur, satu label objek utama dan kejelasan mesej pemuliharaan.
 **Penutup (5 minit):** Murid menyatakan satu kemahiran dan menyimpan karya serta membersihkan ruang.
 **Pembezaan:** Templat langkah bergambar bagi sokongan; murid mahir membanding pilihan reka bentuk.
