@@ -1,0 +1,43 @@
+name: Pendidikan Moral 210 native Word table A4 diagnostic
+on:
+  push:
+    branches:
+      - staging/moral-core210-real-word-a4-20261105
+    paths:
+      - 'scripts/check_moral_core210_native_word_a4.py'
+      - '.github/workflows/pendidikan-moral-core210-word-a4.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'scripts/check_moral_core210_native_word_a4.py'
+      - '.github/workflows/pendidikan-moral-core210-word-a4.yml'
+      - 'web/pendidikan_moral_80_runtime.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  physical-a4:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Word layout runner
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-liberation
+          python -m pip install python-docx==1.1.2 pypdf==5.1.0
+      - name: Diagnostic - render all 210 core RPH using production-table snapshot and Moral adapter
+        run: python scripts/check_moral_core210_native_word_a4.py --outdir "$RUNNER_TEMP/moral-core210-a4"
+      - name: Upload diagnostics on success or failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: moral-core210-word-a4-diagnostic
+          path: ${{ runner.temp }}/moral-core210-a4/
+          if-no-files-found: warn
+          retention-days: 7
