@@ -9,13 +9,13 @@
 **SP:** 8.3 — Menjelaskan kepentingan amalan adil demi kesejahteraan negara. | 8.4 — Mengekspresikan perasaan berkaitan dengan amalan adil demi kesejahteraan negara.  
 **Fokus:** Penaakulan kesan dan emosi  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, jadual hak-keperluan-pembahagian, borang semak; fail `materials/pendidikan_moral/year6/unit_08_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 8, m/s 74–78 (bahagian **Keadilan Membawa Keamanan**); Kad situasi A/B, jadual hak-keperluan-pembahagian, borang semak; fail `materials/pendidikan_moral/year6/unit_08_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid menghuraikan atau menilai berdasarkan **8.3: Menjelaskan kepentingan amalan adil demi kesejahteraan negara.** serta mengekspresikan perasaan bagi **8.4: Mengekspresikan perasaan berkaitan dengan amalan adil demi kesejahteraan negara.** Kriteria kejayaan: Semak justifikasi serta dua kesan bagi SP 8.3 dan ayat perasaan yang sesuai bagi SP 8.4.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Warga membincangkan pengagihan kemudahan awam yang saksama**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan bahagian **Keadilan Membawa Keamanan** daripada Buku Teks KSSR Semakan 2017 (DBP 2021), m/s 74, sebagai rangsangan mengikut SP PdP ini. Murid meneliti kandungan buku dan menyatakan satu tindakan atau pertimbangan moral beserta alasan ringkas sebelum memulakan tugasan.
 
 **Aktiviti 1 (20 minit) — Keadilan Membawa Keamanan:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 8, m/s 74–78, bahagian **Keadilan Membawa Keamanan** sebagai rangsangan. Murid menjelaskan dua kepentingan tindakan saksama terhadap keselamatan, kepercayaan dan keharmonian negara (SP 8.3). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
 

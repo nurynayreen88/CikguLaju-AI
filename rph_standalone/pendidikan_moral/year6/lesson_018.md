@@ -9,13 +9,13 @@
 **SP:** 6.5 — Mengamalkan sikap menghormati identiti negara.  
 **Fokus:** Tindakan moral dan refleksi  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, jadual tindakan menghormati, borang semak; fail `materials/pendidikan_moral/year6/unit_06_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 6, m/s 58–60 (bahagian **Identiti Negara Pembentukan Jati Diri**); Kad situasi A/B, jadual tindakan menghormati, borang semak; fail `materials/pendidikan_moral/year6/unit_06_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid memperagakan tindakan berdasarkan **6.5: Mengamalkan sikap menghormati identiti negara.** Kriteria kejayaan: Semak senarai pemerhatian perlakuan bagi SP 6.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Murid mempersiapkan pameran tentang identiti kebangsaan**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan bahagian **Identiti Negara Pembentukan Jati Diri** daripada Buku Teks KSSR Semakan 2017 (DBP 2021), m/s 58, sebagai rangsangan mengikut SP PdP ini. Murid meneliti kandungan buku dan menyatakan satu tindakan atau pertimbangan moral beserta alasan ringkas sebelum memulakan tugasan.
 
 **Aktiviti 1 (20 minit) — Identiti Negara Pembentukan Jati Diri:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 6, m/s 58–60, bahagian **Identiti Negara Pembentukan Jati Diri** sebagai rangsangan. Murid merancang replika kad identiti negara atau peta minda yang mematuhi tatacara penghormatan Jalur Gemilang (SP 6.5). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
 

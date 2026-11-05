@@ -9,13 +9,13 @@
 **SP:** 6.3 — Menaakul kepentingan menghormati identiti negara. | 6.4 — Mengekspresikan perasaan berkaitan dengan menghormati identiti negara.  
 **Fokus:** Penaakulan kesan dan emosi  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, jadual tindakan menghormati, borang semak; fail `materials/pendidikan_moral/year6/unit_06_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 6, m/s 56–58 (bahagian **Hormati Identiti Negara Kewajipan Kita**); Kad situasi A/B, jadual tindakan menghormati, borang semak; fail `materials/pendidikan_moral/year6/unit_06_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid menghuraikan atau menilai berdasarkan **6.3: Menaakul kepentingan menghormati identiti negara.** serta mengekspresikan perasaan bagi **6.4: Mengekspresikan perasaan berkaitan dengan menghormati identiti negara.** Kriteria kejayaan: Semak justifikasi serta dua kesan bagi SP 6.3 dan ayat perasaan yang sesuai bagi SP 6.4.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Murid mempersiapkan pameran tentang identiti kebangsaan**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan bahagian **Hormati Identiti Negara Kewajipan Kita** daripada Buku Teks KSSR Semakan 2017 (DBP 2021), m/s 56, sebagai rangsangan mengikut SP PdP ini. Murid meneliti kandungan buku dan menyatakan satu tindakan atau pertimbangan moral beserta alasan ringkas sebelum memulakan tugasan.
 
 **Aktiviti 1 (20 minit) — Hormati Identiti Negara Kewajipan Kita:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 6, m/s 56–58, bahagian **Hormati Identiti Negara Kewajipan Kita** sebagai rangsangan. Murid menaakul dua kepentingan menjaga kehormatan identiti negara dan menjelaskan kesannya terhadap jati diri rakyat (SP 6.3). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
 

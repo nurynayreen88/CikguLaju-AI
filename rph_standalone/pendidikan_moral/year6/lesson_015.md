@@ -9,13 +9,13 @@
 **SP:** 5.5 — Mengamalkan sikap hemah tinggi demi meningkatkan imej negara.  
 **Fokus:** Tindakan moral dan refleksi  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, dialog pilihan perkataan yang berhemah, borang semak; fail `materials/pendidikan_moral/year6/unit_05_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 5, m/s 49–50 (bahagian **Berhemah Tinggi demi Negara**); Kad situasi A/B, dialog pilihan perkataan yang berhemah, borang semak; fail `materials/pendidikan_moral/year6/unit_05_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid memperagakan tindakan berdasarkan **5.5: Mengamalkan sikap hemah tinggi demi meningkatkan imej negara.** Kriteria kejayaan: Semak senarai pemerhatian perlakuan bagi SP 5.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Pelancong bertanya tentang adab dan imej rakyat Malaysia**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan bahagian **Berhemah Tinggi demi Negara** daripada Buku Teks KSSR Semakan 2017 (DBP 2021), m/s 49, sebagai rangsangan mengikut SP PdP ini. Murid meneliti kandungan buku dan menyatakan satu tindakan atau pertimbangan moral beserta alasan ringkas sebelum memulakan tugasan.
 
 **Aktiviti 1 (20 minit) — Berhemah Tinggi demi Negara:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 5, m/s 49–50, bahagian **Berhemah Tinggi demi Negara** sebagai rangsangan. Murid merancang dialog kaunter khidmat atau sambutan pelawat yang menggunakan bahasa sopan tanpa meniru pegangan peribadi (SP 5.5). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
 

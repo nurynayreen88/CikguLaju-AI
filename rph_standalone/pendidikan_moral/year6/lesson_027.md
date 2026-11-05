@@ -9,13 +9,13 @@
 **SP:** 9.5 — Mengamalkan sikap berani mempertahankan maruah negara.  
 **Fokus:** Tindakan moral dan refleksi  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, peta langkah berani yang selamat, borang semak; fail `materials/pendidikan_moral/year6/unit_09_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 9, m/s 88–90 (bahagian **Saya Berikrar Saya Berani**); Kad situasi A/B, peta langkah berani yang selamat, borang semak; fail `materials/pendidikan_moral/year6/unit_09_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid memperagakan tindakan berdasarkan **9.5: Mengamalkan sikap berani mempertahankan maruah negara.** Kriteria kejayaan: Semak senarai pemerhatian perlakuan bagi SP 9.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Murid berhadapan maklumat palsu yang menjatuhkan maruah negara**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan bahagian **Saya Berikrar Saya Berani** daripada Buku Teks KSSR Semakan 2017 (DBP 2021), m/s 88, sebagai rangsangan mengikut SP PdP ini. Murid meneliti kandungan buku dan menyatakan satu tindakan atau pertimbangan moral beserta alasan ringkas sebelum memulakan tugasan.
 
 **Aktiviti 1 (20 minit) — Saya Berikrar Saya Berani:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 9, m/s 88–90, bahagian **Saya Berikrar Saya Berani** sebagai rangsangan. Murid merangka dua ucapan berani tetapi sopan untuk menolak fitnah dan menjaga nama baik Malaysia dalam simulasi kelas (SP 9.5). Guru menyemak ketepatan evidens individu mengikut kata tugas SP dan memandu pembetulan yang perlu.
 

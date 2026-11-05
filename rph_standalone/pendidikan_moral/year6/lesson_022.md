@@ -9,13 +9,13 @@
 **SP:** 8.1 — Menyenaraikan contoh institusi yang menegakkan keadilan negara. | 8.2 — Menghuraikan cara amalan adil demi kesejahteraan negara.  
 **Fokus:** Pengetahuan dan cara perlakuan  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Kad situasi A/B, jadual hak-keperluan-pembahagian, borang semak; fail `materials/pendidikan_moral/year6/unit_08_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 8, m/s 72–76 (bahagian **Tindakan Adil Asas Kesejahteraan**); Kad situasi A/B, jadual hak-keperluan-pembahagian, borang semak; fail `materials/pendidikan_moral/year6/unit_08_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid menyiapkan tugasan **SP 8.1** (Menyenaraikan contoh institusi yang menegakkan keadilan negara.) dan **SP 8.2** (Menghuraikan cara amalan adil demi kesejahteraan negara.). Kriteria kejayaan: setiap murid menghasilkan **senarai tiga contoh atau perkara yang tepat** bagi SP pertama dan **dua huraian yang disokong sebab** bagi SP kedua, dengan contoh yang sesuai dengan situasi unit.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menceritakan situasi **Warga membincangkan pengagihan kemudahan awam yang saksama**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan bahagian **Tindakan Adil Asas Kesejahteraan** daripada Buku Teks KSSR Semakan 2017 (DBP 2021), m/s 72, sebagai rangsangan mengikut SP PdP ini. Murid meneliti kandungan buku dan menyatakan satu tindakan atau pertimbangan moral beserta alasan ringkas sebelum memulakan tugasan.
 
 **Aktiviti 1 (20 minit) — Tindakan Adil Asas Kesejahteraan:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 8, m/s 72–76, bahagian **Tindakan Adil Asas Kesejahteraan** sebagai rangsangan. Murid menyenaraikan sekurang-kurangnya dua institusi yang berkaitan dengan keadilan dan memadankan satu fungsi dengan setiap institusi (SP 8.1). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
 
