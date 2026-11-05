@@ -7,6 +7,8 @@ on:
       - 'rph_standalone/english/year5/lesson_030.md'
       - 'audits/english_y5_l029_l030_original_sow_tb_sb_wb_audio_sources_20261105.json'
       - 'tests/test_english_y5_l029_l030_original_source_evidence_20261105.py'
+      - 'tests/test_english_y5_l029_l030_source_timing_20261104.py'
+      - 'tools/verify_english_y5_l029_l030_physical_word_a4_20261105.py'
       - '.github/workflows/english-y5-l029-l030-source-evidence-20261105.yml'
 permissions: {contents: read}
 jobs:
@@ -21,3 +23,26 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_english_y5_l029_l030_original_source_evidence_20261105.py' -v
       - name: Existing Year5 standalone release gate must remain fail-closed
         run: python -m unittest discover -s tests -p 'test_english_y5_rph_runtime.py' -v
+  physical-word-a4:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Install Word/PDF conversion tools
+        run: |
+          python -m pip install python-docx==1.1.2 pypdf==5.1.0
+          if ! command -v libreoffice >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq libreoffice-writer >/dev/null
+          fi
+      - name: Produce physical Word and PDF A4 per Lesson
+        run: python tools/verify_english_y5_l029_l030_physical_word_a4_20261105.py
+      - name: Preserve per-Lesson audit evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: english-y5-l029-l030-word-a4-report
+          path: output/english_y5_l029_l030_physical_word_a4_20261105/report.json
+          retention-days: 14
