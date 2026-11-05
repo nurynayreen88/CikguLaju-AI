@@ -1,0 +1,875 @@
+{
+  "schema": "CikguLaju_PSV_textbook_DSKP_anchor_v1",
+  "created": "2026-11-04",
+  "description": "50 PSV textbook/DSKP unit anchors, with 20 corrected unit-level product outcomes from source-text audit. This is NOT per-RPH visual certification or runtime staging approval.",
+  "years": {
+    "2": {
+      "book": "https://fliphtml5.com/pssskfc/cmag/PENDIDIKAN_KESENIAN_TAHUN_2_SK_BUKU_TEKS/",
+      "dskp": "https://drive.google.com/file/d/1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8/view",
+      "kind": "Pendidikan Kesenian Tahun 2 (bahagian Seni Visual)",
+      "units": [
+        [
+          "Kami Suka Sayur",
+          "Lukisan garisan selari",
+          "6-9",
+          "pensel warna, oil pastel, kertas lukisan",
+          "garisan selari lurus, melengkung dan beralun pada rupa sayur-sayuran",
+          "Lakar timun, lobak dan labu air daripada pemerhatian; uji ketebalan dan jarak garisan selari menggunakan dua media kering",
+          "Susun sayur di ruang hadapan dan belakang, kemudian lengkapkan imej melalui garisan selari",
+          "Jelaskan garisan, rupa organik dan imbangan dalam karya",
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          "Bersih Pasti Cantik",
+          "Lipatan dan guntingan",
+          "14-17",
+          "kertas warna nipis, bekas air minuman plastik bersih, gam, gunting tumpul, pita kalis air",
+          "rupa positif-negatif, harmoni dan susunan motif daripada lipatan kertas",
+          "Uji dua teknik lipatan-guntingan dan reka motif berulang mengelilingi Bekas Air Comel",
+          "Hasilkan Bekas Air Comel daripada botol plastik bersih dengan corak lipatan dan guntingan ditampal keliling bekas",
+          "Semak rupa, kontra, harmoni dan kekuatan tampalan",
+          2,
+          2,
+          1,
+          2
+        ],
+        [
+          "Saya Juara",
+          "Arca stabail",
+          "22-25",
+          "dua cawan kertas berlainan saiz, kertas kilat, kad bulat, gam dan tapak pemberat tertutup",
+          "bentuk, warna dan imbangan arca stabail",
+          "Uji imbangan dua cawan kertas A/B dan lakar Piala Saya Hebat",
+          "Bina arca stabail Piala Saya Hebat daripada dua cawan kertas berbalut kertas kilat dan cantum dasar",
+          "Semak kestabilan tapak, bentuk cawan, kemasan kad bulat dan imbangan",
+          3,
+          3,
+          1,
+          3
+        ],
+        [
+          "Pusing Gasing Pusing",
+          "Alat permainan gasing",
+          "30-33",
+          "kadbod bulat prapotong, tali tebal, gam dan paksi kertas tumpul prasiap guru",
+          "bentuk, jalinan dan imbangan alat permainan tradisional",
+          "Uji titik pusat paksi dan lilitan tali tebal pada gasing kadbod",
+          "Hasilkan model gasing kadbod berlilit tali tebal dengan paksi di tengah dan uji putaran selamat",
+          "Banding ketahanan putaran, imbangan simetri dan jalinan tali",
+          4,
+          3,
+          1,
+          4
+        ],
+        [
+          "Bersukan Badan Sihat",
+          "Gosokan",
+          "38-41",
+          "krayon, pensel warna, kertas lukisan, alas jalinan selamat",
+          "kesan jalinan gosokan daripada permukaan timbul dan rendah",
+          "Gosok krayon pada dua permukaan berjalinan lalu lakar susunan buah-buahan",
+          "Hasilkan Warna-warni Buah-buahan dengan garisan dan gosokan pada rupa buah, bukan karya sukan generik",
+          "Kenal dua jalinan gosokan dan imbangan rupa buah",
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          "Cantik Menawan",
+          "Cetakan blok",
+          "48-51",
+          "kad tebal, tali tebal, kain putih, cat poster, span, palet dan berus",
+          "rupa, warna, kontra dan kepelbagaian cetakan blok",
+          "Lakar dan cuba dua blok cetakan daripada kad dan tali tebal pada kain contoh",
+          "Hasilkan kain putih bercetak corak berulang daripada blok kad dan tali tebal menggunakan cat poster",
+          "Semak kontra, kualiti capan dan kemasan kain",
+          2,
+          2,
+          1,
+          2
+        ],
+        [
+          "Burung Kenek-kenek",
+          "Topeng burung",
+          "56-59",
+          "kad manila, kain felt, templat mata, paruh kon kertas, gam dan pita",
+          "bentuk, jalinan dan penegasan pada topeng",
+          "Teroka topeng serkup silinder, susun mata, paruh kon dan hiasan jalinan kain felt",
+          "Hasilkan Topeng Serkup Si Burung Kenek-kenek berbentuk silinder kad manila dengan mata, paruh kon dan jalinan felt",
+          "Semak rupa paruh, kestabilan silinder, keselamatan penglihatan dan jalinan",
+          3,
+          3,
+          1,
+          3
+        ],
+        [
+          "Uli-uli Tembikar",
+          "Tembikar teknik picitan",
+          "64-69",
+          "tanah liat lembut atau doh, alas kerja, air dan pencungkil plastik tumpul",
+          "bentuk, jalinan dan imbangan pada tembikar tradisional",
+          "Golek bola doh dan uji teknik picitan untuk membentuk ruang dalam bekas",
+          "Hasilkan bekas mini melalui picitan dinding, ratakan tapak dan tambah jalinan hiasan",
+          "Terangkan hubungan bentuk, fungsi dan ketebalan dinding tembikar",
+          4,
+          3,
+          1,
+          4
+        ],
+        [
+          "Jalan-jalan ke Taman Rama-rama",
+          "Catan basah atas kering",
+          "74-79",
+          "cat air, pewarna makanan, span dan putik kapas, berus, kertas kering",
+          "rupa sayap rama-rama, ton warna serta kesan basah atas kering",
+          "Lakar Taman Mini bunga dan rama-rama, uji basah atas kering dan capan putik kapas",
+          "Hasilkan catan Taman Mini dengan bunga, rama-rama dan titik putik kapas",
+          "Nilai ton warna, rupa bunga/rama-rama dan kemasan",
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          "Segarnya Air Terjun",
+          "Resis",
+          "84-89",
+          "oil pastel, cat poster cair, berus, kertas lukisan",
+          "garisan aliran air dan kesan penolakan air pada resis krayon",
+          "Lakar ikan dan tumbuhan laut, uji garisan oil pastel dan cat resis",
+          "Hasilkan catan resis Suasana Hidupan Laut dengan ikan, tumbuhan serta riak air",
+          "Kenal kesan penolakan cat dan kontra garisan laut",
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "book_previous_url": "https://fliphtml5.com/laiqy/thik/Buku_Teks_Pendidikan_Kesenian_Tahun_2/"
+    },
+    "3": {
+      "book": "https://fliphtml5.com/hkvtu/vifc/Pendidikan_Kesenian_Tahun_3_SK/",
+      "dskp": "https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view",
+      "kind": "Pendidikan Kesenian Tahun 3 (bahagian Seni Visual)",
+      "units": [
+        [
+          "Tut Tut Kereta Api",
+          "Lukisan silang pangkah",
+          "6-9",
+          "pensel grafit, pen hitam, kertas lukisan",
+          "garisan silang pangkah, ruang dan kesan tona",
+          "Lakar lokomotif, roda dan asap; cuba garisan silang pangkah rapat dan jarang untuk menunjukkan kedalaman",
+          "Lengkapkan lukisan kereta api berlatar ruang hadapan-tengah-belakang dengan tona silang pangkah",
+          "Huraikan kesan ruang, ritma dan pergerakan pada kereta api",
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          "Malaysia Kita",
+          "Montaj",
+          "14-17",
+          "gambar perayaan, kertas warna, muka taip, gam, gunting tumpul",
+          "bentuk, ruang, kesatuan dan tema Malaysia",
+          "Uji dua susun atur imej perayaan dengan latar dan muka taip",
+          "Hasilkan Poster Perayaan montaj dengan imej ruang hadapan-belakang dan muka taip",
+          "Nilai keseimbangan imej, ruang dan keterbacaan muka taip",
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          "Aneka Capan",
+          "Capan",
+          "22-25",
+          "kain putih, keratan bendi dan saderi prapotong guru, cat tekstil, acuan tumpul",
+          "rupa, jalinan, kontra dan kepelbagaian motif capan",
+          "Uji capan bendi dan saderi pada kain dan susunan motif pancaran",
+          "Hasilkan Selempang Pancar kain putih dengan capan sayuran dan motif bintang",
+          "Nilai kontra dua jenis capan dan susunan motif",
+          5,
+          2,
+          2,
+          2
+        ],
+        [
+          "Serangga Comel",
+          "Mobail",
+          "30-35",
+          "bahan asemblaj, cawan kertas pratebuk guru, tali lembut, batang aiskrim",
+          "bentuk 3D, warna, imbangan serta ritma serangga",
+          "Lakar serangga dan uji imbangan ikatan pada cawan kertas",
+          "Bina mobail Serangga Kecil dengan serangga asemblaj, cawan kertas dan tali seimbang",
+          "Uji kestabilan ikatan dan pergerakan serangga",
+          7,
+          3,
+          4,
+          3
+        ],
+        [
+          "Pahlawan Kecil",
+          "Model alat pertahanan diri tidak berfungsi",
+          "40-43",
+          "kadbod, buih polistirena prapotong guru, pita, gam dan tali rafia",
+          "jalinan, bentuk dan imej kraf warisan pada Parang Ilang",
+          "Lakar model Parang Ilang bertepi bulat dan uji jalinan tali rafia",
+          "Bina model hiasan Parang Ilang tidak berfungsi dengan lapisan kadbod dan jalinan rafia",
+          "Periksa lapisan, keselamatan hujung bulat dan jalinan",
+          10,
+          4,
+          5,
+          4
+        ],
+        [
+          "Belon Udara Tinggi di Langit",
+          "Kolaj",
+          "50-53",
+          "kad keras, kertas warna, keratan majalah, kain felt dan gam",
+          "jalinan, warna dan kontra dalam kolaj belon udara",
+          "Lakar belon udara, uji koyakan kertas dan kontra warna",
+          "Hasilkan kolaj belon udara daripada kertas/majalah dan kain felt yang ditampal bertindih",
+          "Nilai kesan kontra, jalinan dan rupa belon",
+          3,
+          1,
+          1,
+          1
+        ],
+        [
+          "Oh, Berwarna-warni!",
+          "Gurisan",
+          "58-61",
+          "oil pastel cerah/gelap, kad lipat, gam, batang aiskrim tumpul",
+          "garisan, rupa, kepelbagaian dan harmoni dalam gurisan",
+          "Cuba gurisan berlapis dan lakar burung merak untuk Kad Untukmu",
+          "Hasilkan Kad Untukmu, kad ucapan gurisan burung merak dengan oil pastel",
+          "Periksa kontra, kejelasan burung merak dan fungsi kad",
+          4,
+          1,
+          1,
+          1
+        ],
+        [
+          "Cantik Bercahaya",
+          "Renjisan dan percikan",
+          "66-69",
+          "berus gigi, cat poster, kertas renjisan, batang aiskrim prapotong guru, gam",
+          "jalinan, warna, harmoni dan kontra pada renjisan-percikan",
+          "Cuba renjisan dan susun empat rangka segi empat batang aiskrim",
+          "Bina terendak lampu daripada empat rangka batang aiskrim dan kertas renjisan tanpa api",
+          "Uji keteguhan empat panel dan jalinan",
+          6,
+          2,
+          2,
+          2
+        ],
+        [
+          "Boneka Menari Mencuit Hati",
+          "Boneka",
+          "74-79",
+          "gulungan tisu, kain felt, tali lembut, penyedut minuman prapotong",
+          "bentuk, jalinan, imbangan serta ekspresi watak",
+          "Lakar boneka tali dan cuba ikatan anggota serta jalinan kain felt",
+          "Hasilkan boneka tali Boneka Menari Riang daripada gulungan tisu dan penyedut minuman",
+          "Uji pergerakan tangan/kaki boneka tali",
+          8,
+          3,
+          4,
+          3
+        ],
+        [
+          "Seni Anyaman Berzaman",
+          "Anyaman",
+          "86-91",
+          "kertas A dan B dua warna, templat kelarai, gam dan kad",
+          "garisan, jalinan, kontra dan harmoni dalam kelarai",
+          "Uji kelarai mata bilis dan tampuk jantung pada Kertas A/B",
+          "Hasilkan alas mangkuk daripada anyaman kertas berkelarai yang ditampal pada kad",
+          "Periksa ketepatan motif kelarai dan fungsi alas mangkuk",
+          9,
+          4,
+          5,
+          4
+        ]
+      ],
+      "book_previous_url": "https://fliphtml5.com/ubcth/flrm/"
+    },
+    "4": {
+      "book": "https://drive.google.com/file/d/1ZPvbJcwogZVQjRSgPMSgD6iymMXcASSU/view",
+      "dskp": "https://drive.google.com/file/d/1CpSVz8txeDqSnKM7OfOmrjnYH9HBmGy1/view",
+      "kind": "Pendidikan Kesenian Tahun 4 (bahagian Seni Visual)",
+      "units": [
+        [
+          "Senja Nan Indah",
+          "Catan basah atas basah",
+          "6-9",
+          "cat air, span, berus dan kertas cat air",
+          "ruang hadapan-tengah-belakang, harmoni dan kepekatan air",
+          "Bandingkan sapuan cat air pada kertas lembap menggunakan span dan berus; uji dua tahap kepekatan",
+          "Lakar suasana senja, lembapkan kertas, sapu warna latar dan tambah gunung, burung serta ruang hadapan",
+          "Ulas kesan ruang, lut sinar, harmoni dan ton warna",
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          "Warna-warni Kek Cawan",
+          "Mozek",
+          "14-17",
+          "batang aiskrim prapotong, jalur kertas warna, alat gulung paper quilling dan gam",
+          "susunan kepingan mozek, rupa, warna dan harmoni",
+          "Lakar kek cawan dan uji gulungan paper quilling bersebelahan",
+          "Hasilkan mozek kek cawan dengan batang aiskrim dan gulungan paper quilling",
+          "Nilai susunan bersebelahan dan kekukuhan gulungan",
+          1,
+          2,
+          1,
+          1
+        ],
+        [
+          "Beg Cantik Menawan",
+          "Stensilan",
+          "22-27",
+          "kemeja-T terpakai bersih, stensil prapotong, cat kain, span dan kad pengukuh",
+          "rupa positif negatif, ulangan motif dan kontra",
+          "Uji motif stensil pada kemeja-T dan rancang ikatan tapak",
+          "Hasilkan beg sandang daripada kemeja-T bercorak stensil dengan ikatan bawah",
+          "Uji fungsi beg, kekuatan ikatan dan corak",
+          2,
+          6,
+          3,
+          2
+        ],
+        [
+          "Bunga Gergasi",
+          "Arca asemblaj",
+          "34-39",
+          "penutup botol, mangkuk plastik, gulungan tisu, botol tapak tertutup",
+          "bentuk besar-kecil, imbangan dan struktur arca bunga",
+          "Uji susunan penutup botol sebagai kelopak bunga matahari",
+          "Bina arca asemblaj bunga matahari daripada penutup botol, tiub dan tapak botol",
+          "Semak kelopak, cantuman dan kestabilan tapak",
+          3,
+          7,
+          4,
+          3
+        ],
+        [
+          "Secawan Kopi Manis",
+          "Alat domestik papier mache",
+          "46-49",
+          "acuan cawan dan piring plastik, surat khabar, air, gam kanji dan cat poster",
+          "bentuk silinder, permukaan serta fungsi cawan",
+          "Cuba lapisan papier-mâché pada acuan cawan dan piring",
+          "Bina model cawan bersama piring menggunakan papier-mâché, keringkan dan hias",
+          "Nilai ketebalan lapisan, pemegang dan kestabilan piring",
+          4,
+          10,
+          5,
+          4
+        ],
+        [
+          "Larian Riang Ria",
+          "Poster lukisan dan montaj",
+          "56-59",
+          "gambar sukan, pen warna, kertas lukisan, gam",
+          "mesej poster, hierarki tulisan dan gabungan lukisan serta montaj",
+          "Susun dua pilihan tajuk poster larian dan imej utama; pilih kombinasi yang paling mudah dibaca",
+          "Hasilkan poster larian riang ria dengan mesej jelas, lukisan dan imej montaj",
+          "Terangkan hubungan teks, gambar dan mesej kesihatan",
+          1,
+          3,
+          1,
+          1
+        ],
+        [
+          "Indahnya Dasar Laut",
+          "Cetakan kolograf",
+          "64-67",
+          "kadbod, tali benang, gam, cat poster, kertas cetakan",
+          "jalinan timbul, tekanan dan komposisi hidupan dasar laut",
+          "Bina matriks kolograf hidupan laut daripada kad dan tali, uji tekanan cetakan di atas kertas",
+          "Cetak karya dasar laut dan lengkapkan corak objek yang kelihatan jelas",
+          "Ulas kesan jalinan cetakan dan susunan imej",
+          1,
+          4,
+          1,
+          1
+        ],
+        [
+          "Helo, Helo Apa Khabar?",
+          "Pualaman",
+          "72-77",
+          "kertas keras, krim pencukur pilihan guru, pewarna makanan, kad busa, reben",
+          "corak pualaman organik, warna dan harmoni",
+          "Uji pualaman dengan adaptasi krim pencukur dan pewarna makanan tanpa pelarut",
+          "Hasilkan tempat letak telefon arnab daripada kertas pualaman dan reben sokongan",
+          "Uji fungsi tapak arnab dengan model telefon kadbod",
+          2,
+          5,
+          3,
+          2
+        ],
+        [
+          "Kota Ceria",
+          "Diorama",
+          "84-89",
+          "kotak kasut, kadbod, kertas warna, gam, pita",
+          "perspektif, ruang hadapan-belakang, imbangan bangunan",
+          "Lakar susun atur kota diorama dan uji ketinggian dua bangunan kadbod",
+          "Bina diorama bandar ceria dengan struktur 3D, jalan dan ruang jelas",
+          "Ulas lapisan ruang dan kepelbagaian reka bentuk",
+          3,
+          8,
+          4,
+          3
+        ],
+        [
+          "Harum Mewangi",
+          "Ukiran timbul pada sabun",
+          "96-99",
+          "sabun ketul, pen tanpa dakwat, sudu plastik tumpul, berus lembut, alas, kain net dan reben",
+          "motif bunga kemboja, ukiran timbul cetek, jalinan, bentuk dan penegasan",
+          "Lakar motif pada sabun, uji dua kesan alur cetek dan beza motif timbul daripada latar",
+          "Ukir garis luar serta turunkan latar dengan alat tumpul, bersihkan sisa dan hias sebagai oleh-oleh",
+          "Ulas jalinan dan penegasan motif flora serta kaitan ukiran dengan hiasan rumah tradisional",
+          4,
+          9,
+          5,
+          4
+        ]
+      ],
+      "book_previous_url": "https://fliphtml5.com/jfuhh/hbrx/Buku_Teks_Pendidikan_Kesenian_Tahun_4/"
+    },
+    "5": {
+      "book": "https://drive.google.com/file/d/1UA9arc9LrigHx-GccSJFpkTtqfskLFpg/view",
+      "dskp": "https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view",
+      "kind": "Pendidikan Seni Visual Tahun 5",
+      "units": [
+        [
+          "Si Putih Menawan",
+          "Lukisan dan capan",
+          "6-13",
+          "kertas lukisan, pen warna, cat poster, span capan",
+          "gabungan lukisan, capan dan penggunaan warna kontra",
+          "Lakar imej burung putih, cuba capan tekstur pada sayap menggunakan bahan tumpul dan bandingkan kesan",
+          "Hasilkan karya Si Putih Menawan menggabungkan lukisan garisan dan capan berstruktur",
+          "Ulas pengulangan capan, imbangan dan tona subjek putih",
+          1,
+          4,
+          1,
+          1
+        ],
+        [
+          "Sayangilah Habitat Kita",
+          "Poster dan montaj",
+          "14-21",
+          "gambar ikan bayan, kertas lukisan, cat poster, gam",
+          "mesej pemuliharaan ikan bayan serta hubungan poster dengan montaj",
+          "Susun dua pilihan slogan dan gambar habitat laut, periksa kejelasan hierarki poster",
+          "Hasilkan poster Selamatkan Ikan Bayan dengan gabungan montaj dan tulisan",
+          "Terangkan mengapa perlindungan habitat diperlukan menggunakan bahasa visual",
+          1,
+          2,
+          1,
+          1
+        ],
+        [
+          "Jaket Buku Nota",
+          "Corak kolaj",
+          "22-29",
+          "kertas corak, gam, kad jaket buku, gunting tumpul",
+          "motif kapal, ulangan corak dan fungsi jaket buku",
+          "Lakar motif kapal dan buat dua susunan kolaj kecil pada templat kad",
+          "Hasilkan jaket buku nota menggunakan kolaj motif kapal berulang dengan kemasan berfungsi",
+          "Nilai kualiti tampalan, ritma dan ketahanan jaket buku",
+          2,
+          6,
+          3,
+          2
+        ],
+        [
+          "Misi Angkasa",
+          "Model roket",
+          "30-37",
+          "botol plastik terpakai, kadbod, pita, kertas warna",
+          "model roket 3D, bentuk silinder dan kestabilan tapak",
+          "Lakar roket angkasa dan uji sambungan kon, silinder dan tapak dengan kadbod",
+          "Bina model roket angkasa tidak berfungsi menggunakan botol plastik dan kadbod",
+          "Ulas imbangan model, keteguhan dan identiti rekaan",
+          3,
+          8,
+          4,
+          3
+        ],
+        [
+          "Pasu Mini",
+          "Tembikar",
+          "38-45",
+          "paper clay atau doh, air, alas kerja, cat poster",
+          "bentuk pasu, dinding picitan dan kesatuan hiasan",
+          "Uji teknik picitan dan lingkaran pada paper clay serta perhatikan ketebalan dinding",
+          "Hasilkan pasu mini paper clay bertapak stabil, biarkan kering dan hias corak",
+          "Terangkan fungsi pasu, jalinan dan keselamatan bahan",
+          4,
+          9,
+          5,
+          4
+        ],
+        [
+          "Pungguk Rindu Akan Bulan",
+          "Kolaj dan gurisan",
+          "50-57",
+          "kertas warna, krayon, pengguris tumpul, gam",
+          "gabungan jalinan kolaj dan gurisan pada burung pungguk dan bulan",
+          "Lakar burung pungguk berlatar bulan, uji dua bentuk jalinan kolaj dan garisan gurisan",
+          "Hasilkan karya pungguk berlatar bulan dengan gabungan kolaj dan gurisan yang jelas",
+          "Ulas tona malam, bentuk burung dan dua teknik penghasilan",
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          "Bunga Kekwa Mekar",
+          "Mozek dan catan",
+          "58-65",
+          "cat poster, berus, kertas bunga dan latar, kulit telur atau cangkerang prabersih, gam, kad bingkai",
+          "gabungan mozek dan catan pada kelopak bunga kekwa",
+          "Lakar dan cat bunga kekwa serta latar; uji dua susunan bahan mozek kulit telur atau cangkerang di tepi bingkai",
+          "Hasilkan catan bunga kekwa yang digunting dan ditampal pada latar, kemudian hias bingkai dengan mozek kulit telur atau cangkerang yang bersih",
+          "Banding kesan catan pada bunga, jalinan mozek pada bingkai, kemasan serta apresiasi",
+          1,
+          3,
+          1,
+          1
+        ],
+        [
+          "Bingkai Gambarku",
+          "Titisan",
+          "66-73",
+          "cat air dan pipet plastik, kertas tebal, templat bingkai; adaptasi selamat tanpa lilin panas",
+          "arah aliran titisan, kepelbagaian corak dan reka bentuk bingkai",
+          "Banding titisan lilin dalam buku dengan adaptasi titisan cat air menggunakan pipet",
+          "Hasilkan bingkai gambar daripada panel titisan cat air yang dilipat setelah kering",
+          "Periksa corak titisan dan fungsi bingkai tiga lipatan",
+          2,
+          5,
+          3,
+          2
+        ],
+        [
+          "Haiwan Peliharaan",
+          "Stabail",
+          "74-81",
+          "polistirena prapotong guru, kadbod tapak berlapis, pelekat dua muka",
+          "arca stabail kucing peliharaan dan imbangan pada tapak",
+          "Lakar kedudukan badan kucing dan uji tapak seimbang",
+          "Bina arca stabail kucing daripada polistirena prapotong dan tapak kadbod berlapis",
+          "Uji arca berdiri stabil 10 saat",
+          3,
+          7,
+          4,
+          3
+        ],
+        [
+          "Bunga Kemboja Emas",
+          "Tekat motif flora",
+          "82-89",
+          "kain baldu atau felt pada ram, kad mempulur, benang kapas dan benang emas tiruan, jarum sulam tumpul",
+          "tekat timbul bunga kemboja dengan mempulur dan benang hias, jalinan serta kontra",
+          "Lakar motif bunga kemboja, bina mempulur dan banding dua susunan benang",
+          "Pasang mempulur pada kain dan lakukan tekat timbul menggunakan benang yang diikat dengan bantuan jarum tumpul",
+          "Kemaskan susunan benang, apresiasi fungsi tekat dan nilai warisan",
+          4,
+          10,
+          5,
+          4
+        ]
+      ],
+      "book_alternative_flipbook": "https://anyflip.com/gygr/pity/basic",
+      "book_verified_pdf": "PENDIDIKAN SENI VISUAL T5 SK.pdf (99 PDF pages; printed pages 1–89; page offset +8)"
+    },
+    "6": {
+      "book": "https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/",
+      "dskp": "https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view",
+      "kind": "Pendidikan Seni Visual Tahun 6",
+      "units": [
+        [
+          "Gambaran Minda",
+          "Bahasa seni visual dan media lukisan",
+          "8-13",
+          "pensel, pen marker dan kertas lukisan",
+          "kajian lakaran alam kampung dan reka bentuk tingkap",
+          "Lakar dua kemungkinan komposisi dan uji garisan serta ruang",
+          "Hasilkan kajian visual dan idea tingkap",
+          "Huraikan istilah bahasa seni dan fungsi tingkap",
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          "Pembina Cilik",
+          "Struktur binaan",
+          "14-19",
+          "kotak terpakai, kadbod, pita dan gam",
+          "struktur kotak serta sambungan stabil",
+          "Uji dua bentuk lipatan kad dan cantuman",
+          "Bina kotak kejutan daripada struktur 3D",
+          "Jelaskan kestabilan dan bentuk",
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          "Ilusi dan Realiti",
+          "Jalinan dan komposisi",
+          "20-25",
+          "kertas, krayon dan bahan jalinan",
+          "jalinan tumbuhan dan kaktus",
+          "Banding kesan gosokan dua bahan",
+          "Hasilkan imej kaktus dengan gabungan jalinan",
+          "Ulas ruang dan jalinan",
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          "Cik Lebah dan Madu",
+          "Kotak pembungkusan makanan 3D — gabungan bidang Menggambar dan Binaan",
+          "26-33",
+          "kad manila, pensel, pen penanda, gam, gunting hujung bulat, reben",
+          "rupa heksagon sarang lebah, imbangan kotak pembungkusan, lipatan kad dan kemasan reben",
+          "Lakar dua variasi kotak madu, uji lipatan serta cantuman kad manila dan tentukan fungsi pemegang atau penutup",
+          "Bina kotak pembungkusan makanan bertema lebah dan madu secara 3D menggunakan lukisan, lipatan, cantuman serta ikatan reben",
+          "Nilai fungsi kotak, kestabilan cantuman, motif heksagon dan kemasan",
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          "Si Cilik Koi",
+          "Arca stabail ikan koi 3D sebagai alat permainan",
+          "34-45",
+          "tapak kotak, badan ikan koi, roda pemusing karton dan paksi licin prasiap guru",
+          "bentuk ikan koi, imbangan arca stabail, fungsi sebagai alat permainan dan warna sisik",
+          "Lakar ikan koi dan mekanisme roda pemusing yang selamat",
+          "Bina arca koi 3D berpusing dengan roda pemusing dan paksi prasiap guru",
+          "Uji putaran roda, kestabilan dan folio gambar karya",
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          "Inspirasi Corak Rekaan",
+          "Corak dan rekaan produk",
+          "50-55",
+          "kad, pensel warna, gam",
+          "garisan beralun dan berpancar; resis lemon dengan kontra warna",
+          "Uji dua susunan rupa besar-kecil bagi gerak berirama",
+          "Hasilkan corak resis lemon dan templat dompet",
+          "Ulas pergerakan corak, resis serta fungsi dompet",
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          "Celupan Kreatif",
+          "Ikatan dan celupan",
+          "56-61",
+          "kain kapas, tali dan pewarna air tidak toksik",
+          "corak ikatan dan celupan; hasilkan sarung botol berfungsi",
+          "Uji dua kaedah ikatan dan corak celupan",
+          "Hasilkan model Sarung Botol Idamanku daripada kain celupan",
+          "Ulas jalinan, motif celupan dan fungsi sarung botol",
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          "Seni Kraf Warisan",
+          "Aksesori tradisional",
+          "62-67",
+          "kertas krep, jalur cekak dan kertas bunga origami, gam PVA",
+          "cucuk sanggul bunga lipat empat dan tanjak origami",
+          "Teroka susunan bunga seimbang dan empat lipatan tanjak",
+          "Hasilkan model aksesori bunga serta tanjak origami yang selamat",
+          "Ulas jalinan, imbangan, penegasan dan fungsi alat hiasan diri",
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          "Wau Bulan Sirih Pinang",
+          "Karya gabungan wau",
+          "68-75",
+          "kadbod, kain felt, kad busa, kertas krep dan gam PVA",
+          "motif daun sirih pada sayap dan ekor dengan susunan cerminan",
+          "Lakar reka letak motif daun sirih dan kajian warna wau",
+          "Hasilkan model wau 3D dan tambah rambu serta pemegang",
+          "Ulas imbangan simetri, jalinan serta fungsi wau permainan",
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          "Beg Batik Rekaanku",
+          "Kraf batik dan rekaan beg",
+          "76-87",
+          "kain kapas, resis gam PVA atau oil pastel, pewarna tidak toksik, kain felt dan velkro",
+          "motif bunga raya, susunan corak dan fungsi beg simpanan alatan seni",
+          "Lakar susunan corak dan kajian warna, pilih rekaan beg 3D",
+          "Hasilkan panel batik resis dan cantum model beg berpenutup",
+          "Ulas kontra warna, teknik resis, nilai estetik serta fungsi beg",
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  "updated": "2026-11-05",
+  "source_audit_summary": {
+    "unit_corrections": 25,
+    "scope": "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL",
+    "report": "audits/psv_source_map_reconciliation_20261105.md",
+    "corrections": {
+      "2-5": {
+        "before": "Gubah potongan gosokan menjadi karya bertema permainan atau sukan",
+        "after": "Hasilkan Warna-warni Buah-buahan dengan garisan dan gosokan pada rupa buah, bukan karya sukan generik",
+        "scope": "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL"
+      },
+      "2-9": {
+        "before": "Warna sayap rama-rama berlapis menggunakan basah atas kering dan bentuk ton yang sesuai",
+        "after": "Hasilkan catan Taman Mini dengan bunga, rama-rama dan titik putik kapas",
+        "scope": "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL"
+      },
+      "2-10": {
+        "before": "Hasilkan pemandangan air terjun dengan aliran putih resis dan latar berwarna",
+        "after": "Hasilkan catan resis Suasana Hidupan Laut dengan ikan, tumbuhan serta riak air",
+        "scope": "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL"
+      },
+      "3-2": {
+        "before": "Hasilkan montaj Sayangi Malaysia yang menunjukkan ruang serta kesatuan imej",
+        "after": "Hasilkan Poster Perayaan montaj dengan imej ruang hadapan-belakang dan muka taip",
+        "scope": "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL"
+      },
+      "3-3": {
+        "before": "Hasilkan corak capan untuk selempang atau bahan hiasan dengan tekanan yang sekata",
+        "after": "Hasilkan Selempang Pancar kain putih dengan capan sayuran dan motif bintang",
+        "scope": "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL"
+      },
+      "3-4": {
+        "before": "Hasilkan mobail serangga berlapis pada palang kertas dan seimbangkan setiap sisi",
+        "after": "Bina mobail Serangga Kecil dengan serangga asemblaj, cawan kertas dan tali seimbang",
+        "scope": "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL"
+      },
+      "3-5": {
+        "before": "Bina model hiasan Parang Ilang kadbod tanpa bilah atau hujung tajam, kemudian hias motif",
+        "after": "Bina model hiasan Parang Ilang tidak berfungsi dengan lapisan kadbod dan jalinan rafia",
+        "scope": "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL"
+      },
+      "3-6": {
+        "before": "Tampal kolaj belon udara panas dengan rupa berlapis yang jelas",
+        "after": "Hasilkan kolaj belon udara daripada kertas/majalah dan kain felt yang ditampal bertindih",
+        "scope": "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL"
+      },
+      "3-7": {
+        "before": "Hasilkan gambar flora atau burung berwarna menggunakan teknik gurisan berlapis",
+        "after": "Hasilkan Kad Untukmu, kad ucapan gurisan burung merak dengan oil pastel",
+        "scope": "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL"
+      },
+      "3-8": {
+        "before": "Gunakan kertas bercorak renjisan untuk membina terendak lampu kadbod ringkas tanpa sambungan elektrik",
+        "after": "Bina terendak lampu daripada empat rangka batang aiskrim dan kertas renjisan tanpa api",
+        "scope": "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL"
+      },
+      "3-9": {
+        "before": "Bina boneka tongkat atau watak dengan sambungan selamat dan hias tekstur",
+        "after": "Hasilkan boneka tali Boneka Menari Riang daripada gulungan tisu dan penyedut minuman",
+        "scope": "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL"
+      },
+      "3-10": {
+        "before": "Hasilkan alas mangkuk anyaman kertas dengan kelarai kemas",
+        "after": "Hasilkan alas mangkuk daripada anyaman kertas berkelarai yang ditampal pada kad",
+        "scope": "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL"
+      },
+      "4-2": {
+        "before": "Tampal mozek kek cawan dengan jarak kepingan sekata dan motif berbeza",
+        "after": "Hasilkan mozek kek cawan dengan batang aiskrim dan gulungan paper quilling",
+        "scope": "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL"
+      },
+      "4-3": {
+        "before": "Gunakan stensilan untuk menghasilkan motif pada beg kertas reka bentuk sendiri",
+        "after": "Hasilkan beg sandang daripada kemeja-T bercorak stensil dengan ikatan bawah",
+        "scope": "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL"
+      },
+      "4-4": {
+        "before": "Bina arca bunga gergasi dengan beberapa komponen asemblaj yang stabil",
+        "after": "Bina arca asemblaj bunga matahari daripada penutup botol, tiub dan tapak botol",
+        "scope": "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL"
+      },
+      "4-5": {
+        "before": "Bina model cawan papier mache, keringkan dan hias dengan motif domestik",
+        "after": "Bina model cawan bersama piring menggunakan papier-mâché, keringkan dan hias",
+        "scope": "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL"
+      },
+      "4-8": {
+        "before": "Gunakan kertas pualaman untuk menghias produk rekaan berbentuk kad atau aksesori alat komunikasi",
+        "after": "Hasilkan tempat letak telefon arnab daripada kertas pualaman dan reben sokongan",
+        "scope": "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL"
+      },
+      "5-8": {
+        "before": "Hasilkan bingkai gambar daripada kad bercorak titisan yang sekata",
+        "after": "Hasilkan bingkai gambar daripada panel titisan cat air yang dilipat setelah kering",
+        "scope": "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL"
+      },
+      "5-9": {
+        "before": "Bina arca stabail kucing dengan cantuman selamat dan tapak kukuh",
+        "after": "Bina arca stabail kucing daripada polistirena prapotong dan tapak kadbod berlapis",
+        "scope": "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL"
+      },
+      "6-5": {
+        "before": "Bina arca stabail ikan koi 3D dengan cantuman dan catan untuk permainan yang selamat",
+        "after": "Bina arca koi 3D berpusing dengan roda pemusing dan paksi prasiap guru",
+        "scope": "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL"
+      },
+      "2-2": {
+        "scope": "TEXTBOOK_PRINTED_PAGE_TEXT_CHECKED_NOT_PER_PDP_VISUAL_CERTIFICATE",
+        "after": "Hasilkan Bekas Air Comel daripada botol plastik bersih dengan corak lipatan dan guntingan ditampal keliling bekas"
+      },
+      "2-6": {
+        "scope": "TEXTBOOK_PRINTED_PAGE_TEXT_CHECKED_NOT_PER_PDP_VISUAL_CERTIFICATE",
+        "after": "Hasilkan kain putih bercetak corak berulang daripada blok kad dan tali tebal menggunakan cat poster"
+      },
+      "2-7": {
+        "scope": "TEXTBOOK_PRINTED_PAGE_TEXT_CHECKED_NOT_PER_PDP_VISUAL_CERTIFICATE",
+        "after": "Hasilkan Topeng Serkup Si Burung Kenek-kenek berbentuk silinder kad manila dengan mata, paruh kon dan jalinan felt"
+      },
+      "2-3": {
+        "scope": "SOURCE_TEXT_PRODUCT_PAGES_CHECKED_NOT_INDIVIDUAL_VISUAL_CERTIFICATE",
+        "after": "Bina arca stabail Piala Saya Hebat daripada dua cawan kertas berbalut kertas kilat dan cantum dasar"
+      },
+      "2-4": {
+        "scope": "SOURCE_TEXT_PRODUCT_PAGES_CHECKED_NOT_INDIVIDUAL_VISUAL_CERTIFICATE",
+        "after": "Hasilkan model gasing kadbod berlilit tali tebal dengan paksi di tengah dan uji putaran selamat"
+      }
+    }
+  }
+}
