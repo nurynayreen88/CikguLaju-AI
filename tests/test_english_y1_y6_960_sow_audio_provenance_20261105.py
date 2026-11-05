@@ -80,7 +80,7 @@ class EnglishPrimaryAllYearsSourceAudioAudit(unittest.TestCase):
         self.assertEqual(w["status"],
                          "SOURCE_BOOK_IDENTITY_CONFIRMED_AUDIO_CONTENT_AND_TELEGRAM_SEND_UNVERIFIED")
         y6=issues["Y6_AS5_FOLDER_MISMATCH"]
-        self.assertIn("AS5_Uxx",y6["exact_issue"])
+        self.assertIn("49 AS5_Uxx MP3 files and 2 non-audio companion files",y6["exact_issue"])
         self.assertEqual(y6["status"],"SOURCE_LABEL_MISMATCH_NOT_PROOF_OF_BOT_WRONG_SEND")
         y5=issues["Y5_TRACKS_FOUND_NOT_PLAYED"]
         self.assertEqual(len(y5["source_ids"]),3)
