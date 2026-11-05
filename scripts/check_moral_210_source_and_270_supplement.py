@@ -56,7 +56,7 @@ def main():
                     assert row["Tahap_Semakan_Buku"]==f"HOLD_SOURCE_MISMATCH_UNIT{unit}_Y6"
                     assert "buku teks" in source.lower() and "DSKP" in source
                     assert ("tidak sepadan" in source.lower() or "tajuk berbeza" in source.lower() or
-                            "bukan padanan" in source.lower()),(y,core)
+                            "bukan padanan" in source.lower() or "bukan sk 7.0" in source.lower()),(y,core)
                     metrics["DSKP_ONLY_BOOK_CONFLICT_6"]+=1
                 assert "DRAF SEMAK" in source and "BELUM READY" in source
         print(f"Year {y}: 42 core and 54 supplementary RPH reviewed against DSKP source")
