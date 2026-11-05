@@ -264,14 +264,14 @@ def payment_submit():
         plans=validated_plans(_source("/internal/payment/v1/catalog"))
         if code not in plans:
             raise ValueError("Pakej tidak sah")
+        if _status_rows(_existing(conf,uid))["pending"]:
+            return jsonify({"error":"Resit lain sedang disemak. Jangan bayar lagi."}),409
         from web_v1_telegram_auth_routes import _lookup
         account=_lookup(conf,uid)
         if not account or account.get("telegram_user_id") != uid:
             return jsonify({"error":"Sila log masuk semula"}),401
         if code=="rakan_pembangun" and account.get("rakan_pembangun") is True:
             return jsonify({"error":"Akses seumur hidup sudah aktif. Jangan bayar sekali lagi."}),409
-        if _status_rows(_existing(conf,uid))["pending"]:
-            return jsonify({"error":"Resit lain sedang disemak. Jangan bayar lagi."}),409
         proof=_telegram_document(conf,uid,raw,ext)
         amount=plans[code]["amount"]
         data={
