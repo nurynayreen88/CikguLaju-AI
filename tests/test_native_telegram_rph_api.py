@@ -39,7 +39,7 @@ def payload(fmt="word"):
         {"label":"Assessment","value":"Four listening answers."},
     ]
     return {
-        "subject":"ENGLISH","year":4,"lesson":1,"unit":"Where are you from?",
+        "subject":"ENGLISH","component":None,"year":4,"lesson":1,"unit":"Where are you from?",
         "teacher":{"class":"4 Bestari","date":"2027-03-08","time":"09:15"},
         "layout":{
             "style":"telegram-native-rph-v1",
