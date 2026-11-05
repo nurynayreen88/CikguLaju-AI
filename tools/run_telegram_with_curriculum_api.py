@@ -288,6 +288,18 @@ except Exception as _y4_l030_audio_exc:
     print("English Y4 L030 audio source safety guard unavailable:",
           type(_y4_l030_audio_exc).__name__, flush=True)
 
+# English Year4 Lesson29 CLIL1 is the distinct reverse-disc error:
+# TB p193/SB p129 specifies CD3 Tracks35/36 but historical map uses
+# CD1 WMA. Keep only L29 audio on hold; never affect other Lessons,
+# teacher Word/PDF, credits, Supabase or payments.
+try:
+    from web.english_y4_l029_audio_guard import install as install_y4_l029_audio_guard
+    ENGLISH_Y4_L029_CLIL3_AUDIO_GUARD_ACTIVE = install_y4_l029_audio_guard(telegram_runtime)
+except Exception as _y4_l029_audio_exc:
+    ENGLISH_Y4_L029_CLIL3_AUDIO_GUARD_ACTIVE = False
+    print("English Y4 L029 CD3 audio source safety guard unavailable:",
+          type(_y4_l029_audio_exc).__name__, flush=True)
+
 
 # Durable teacher/user records: payment IDs, statuses, admin approvals, Telegram
 # names and user feedback are stored in Supabase when explicitly enabled.
