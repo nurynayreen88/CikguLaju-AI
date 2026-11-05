@@ -36,6 +36,14 @@ class PSVBridgeTests(unittest.TestCase):
                     count += 1
         self.assertEqual(count, 210)
 
+    def test_release_status_match_is_exact_and_never_accepts_draft(self):
+        self.assertTrue(psv._has_ready_status("**Status:** READY\n"))
+        self.assertTrue(psv._has_ready_status("# Header\n**Status:** READY\n## Next"))
+        for candidate in ("**Status:** DRAF SEMAK", "**Status:** READY LATER",
+                          "**Status:** NOT READY", "**Status:** DRAF READY"):
+            with self.subTest(candidate=candidate):
+                self.assertFalse(psv._has_ready_status(candidate))
+
     def test_forged_release_json_without_210_signed_textbook_records_cannot_enable(self):
         """A file claiming approval must not bypass the original-page per-PdP ledger."""
         import hashlib

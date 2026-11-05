@@ -84,9 +84,9 @@ def _candidate_content_hash(root):
         ]
         for relative in source_paths:
             digest.update(relative.as_posix().encode("utf-8"))
-            digest.update(b"\\0")
+            digest.update(bytes([0]))
             digest.update((root / relative).read_bytes())
-            digest.update(b"\\0")
+            digest.update(bytes([0]))
     return digest.hexdigest()
 
 
@@ -126,6 +126,11 @@ def _individual_source_audit_passed(root, expected_digest):
     return len(by_id) == 210
 
 
+def _has_ready_status(source):
+    """Only exact READY on one header line; never accept DRAF or READY suffixes."""
+    return bool(re.search(r"(?m)^\*\*Status:\*\*\s*READY\s*$", source))
+
+
 def _approved(root):
     """Fail closed unless source, audit ledger, and native runtime QA all agree."""
     try:
@@ -151,8 +156,7 @@ def _approved(root):
                 return False
             for pdp in range(1, 43):
                 path = root / "rph_standalone" / "psv" / f"year{year}" / f"lesson_{pdp:03d}.md"
-                if not re.search(r"(?m)^\\*\\*Status:\\*\\*\\s*READY\\s*$",
-                                 path.read_text(encoding="utf-8")):
+                if not _has_ready_status(path.read_text(encoding="utf-8")):
                     return False
         return True
     except (OSError, ValueError, TypeError, UnicodeError, csv.Error):
