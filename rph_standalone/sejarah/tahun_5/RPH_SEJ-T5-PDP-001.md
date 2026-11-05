@@ -17,7 +17,7 @@
 
 **Aktiviti 1 (20 min):** Guru mengarahkan murid merujuk halaman 4–5, meneliti maksud raja dan kerajaan serta peta negeri yang masih mempunyai institusi raja. Murid menghasilkan carta ringkas maksud istilah, memadankan gelaran ketua negeri dengan negeri yang betul dan menjelaskan kepentingan menghargai institusi raja (SP 6.1.1, K6.1.6).
 
-**Aktiviti 2 (20 min):** Guru membimbing murid merujuk dialog waadat dalam Sulalatus Salatin pada halaman 6. Dua kumpulan melakonkan watak Seri Teri Buana dan Demang Lebar Daun menggunakan olahan ringkas sendiri; kumpulan lain merekod tanggungjawab raja dan rakyat dalam dua lajur (SP 6.1.2).
+**Aktiviti 2 (20 min):** Guru membimbing murid merujuk dialog waadat dalam Sulalatus Salatin pada halaman 6. Murid dalam dua kumpulan melakonkan watak Seri Teri Buana dan Demang Lebar Daun menggunakan olahan ringkas sendiri; kumpulan lain merekod tanggungjawab raja dan rakyat dalam dua lajur (SP 6.1.2).
 
 **Pengukuhan & PBD (10 min):** Murid menulis maksud raja dan kerajaan, memberikan dua contoh negeri beraja dan menerangkan maksud waadat serta peranan kedua-dua pihak. Guru menilai ketepatan fakta dan hubungan taat setia dengan pemerintahan yang adil.
 
