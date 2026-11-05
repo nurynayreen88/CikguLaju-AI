@@ -107,6 +107,7 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 @media(max-width:760px){.profile-fields-grid{grid-template-columns:1fr}.teacher-profile-form,.teacher-timetable-section{padding:13px 11px}}
 @media print{#view-account{display:none!important}}
 
+.profile-refresh{border:1px solid #c7d8de;background:white;border-radius:10px;color:#1a526a;font:inherit;font-weight:650;padding:10px 15px;cursor:pointer}.profile-refresh:hover{background:#edf6fa}
 </style>
 </head>
 <body>
@@ -139,8 +140,8 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 <section id="rpt2027-panel" aria-labelledby="rpt2027-heading"><h3 id="rpt2027-heading">📅 RPT 2027 — Semua Subjek</h3><p>Pilih subjek dan tahun. RPT adalah untuk Rakan Pembangun yang disahkan atau pelanggan berlangganan aktif. Fail bertanda DRAF/SEMENTARA masih dalam semakan.</p><label for="rpt-subject">Subjek RPT</label><select id="rpt-subject" disabled><option value="">Memuatkan senarai subjek…</option></select><label for="rpt-year">Tahun RPT</label><select id="rpt-year" disabled><option value="">Pilih Subjek dahulu</option></select><button id="rpt-download" type="button" disabled>Muat turun RPT 2027 (PDF)</button><p id="rpt-status" class="notice" role="status"></p></section></section>
 <section id="view-account" class="app-view" aria-labelledby="view-account-heading" hidden>
 <h2 id="view-account-heading">Profil Guru</h2>
-<p>Maklumat guru disimpan dalam akaun CikguLaju yang sama melalui Supabase. Isi sekali untuk memudahkan penyediaan RPH.</p>
-<p id="profile-access-summary" class="profile-access-status" role="status">Memuatkan status akaun…</p>
+<p>Maklumat guru yang sama boleh dilihat dan dikemas kini melalui Telegram atau Web. Isi sekali untuk memudahkan penyediaan RPH.</p>
+<p id="profile-access-summary" class="profile-access-status" role="status">Memuatkan status akaun…</p><p><button type="button" id="profile-refresh" class="profile-refresh" aria-label="Segar semula profil dari Telegram atau Web">🔄 Segar Semula Profil &amp; Jadual</button></p>
 <form id="teacher-profile-form" class="teacher-profile-form" autocomplete="on">
   <h3>Maklumat Diri &amp; Sekolah</h3>
   <div class="profile-fields-grid">
@@ -151,7 +152,7 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
       <option>Johor</option><option>Kedah</option><option>Kelantan</option><option>Melaka</option>
       <option>Negeri Sembilan</option><option>Pahang</option><option>Perak</option><option>Perlis</option>
       <option>Pulau Pinang</option><option>Sabah</option><option>Sarawak</option><option>Selangor</option>
-      <option>Terengganu</option><option>Kuala Lumpur</option><option>Putrajaya</option><option>Labuan</option>
+      <option>Terengganu</option><option>Kuala Lumpur</option><option>Putrajaya</option><option>Labuan</option><option>W.P. Kuala Lumpur</option><option>W.P. Putrajaya</option><option>W.P. Labuan</option>
     </select></div>
   </div>
   <label for="profile-classes">Senarai kelas yang diajar</label>
@@ -162,7 +163,7 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 <section id="teacher-timetable" class="teacher-timetable-section" aria-labelledby="timetable-heading">
 <h3 id="timetable-heading">Jadual Waktu Mengajar</h3>
 <p>Tambah waktu PdP mengikut hari, masa, kelas dan subjek. Simpan untuk rujukan apabila menyediakan RPH. Hari Ahad dan Sabtu juga disediakan bagi sekolah yang memerlukannya.</p>
-<p class="notice">Jadual disimpan dalam Supabase. Ciri bacaan automatik daripada gambar jadual waktu dan RPH Hari Ini belum diaktifkan pada Web ini.</p>
+<p class="notice">Jadual yang dikemas kini di sini juga boleh dilihat melalui Telegram. Muat naik gambar jadual boleh dilakukan melalui bot Telegram; bacaan gambar automatik belum tersedia pada Web.</p>
 <div class="timetable-table-wrap"><table class="timetable-table" aria-label="Jadual waktu guru">
 <thead><tr><th>Hari</th><th>Mula</th><th>Tamat</th><th>Kelas</th><th>Subjek</th><th>Padam</th></tr></thead>
 <tbody id="timetable-rows"></tbody></table></div>
