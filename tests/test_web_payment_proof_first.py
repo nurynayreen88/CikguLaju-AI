@@ -163,12 +163,15 @@ class PaymentWebTests(unittest.TestCase):
             _notify_telegram_admin_review(True,47,opener=transport)
 
     def test_no_notification_for_qr_or_invalid_proof(self):
+        def source(path, **kwargs):
+            return CATALOG if path.endswith("/catalog") else (
+                b"\\xff\\xd8\\xff" + b"x"*900, "image/jpeg")
         with patch("web.web_payment_routes._notify_telegram_admin_review") as notice, \
-             patch("web.web_payment_routes._source",return_value=CATALOG), \
+             patch("web.web_payment_routes._source",side_effect=source), \
              patch("web.web_payment_routes._existing",return_value=[]), \
              patch("web.web_payment_routes._is_member",return_value=False):
             r=self.client.get("/api/web/payment/qr",base_url=self.url)
-            self.assertIn(r.status_code,(200,503))
+            self.assertEqual(r.status_code,200)
             self.assertEqual(self.request_receipt(plan="wrong-plan").status_code,400)
         notice.assert_not_called()
 
