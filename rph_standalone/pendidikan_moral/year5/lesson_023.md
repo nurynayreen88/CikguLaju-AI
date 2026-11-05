@@ -17,14 +17,16 @@ Murid menghuraikan atau menilai berdasarkan **8.3: Menghuraikan kesan pengabaian
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Jawatankuasa mengagihkan bantuan komuniti secara saksama**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Peta akibat:** Guru beri dua penghujung kepada situasi. Murid bina peta **pilihan → kesan → alasan**, merujuk SP 8.3 (**Menghuraikan kesan pengabaian amalan adil dalam hidup bermasyarakat.**). Bandingkan akibat kepada watak yang terlibat dan bincang soalan: **Bilakah sama rata tidak sama dengan adil?**
+**Aktiviti 1 (20 minit) — Panduan buku teks asal:** Guru menunjukkan cerita 'Bersikap Adil Masyarakat Harmoni' m/s73 dan jadual 'Amalan Adil Kukuhkan Silaturahim' m/s74–75. Murid menganalisis dua kepentingan berlaku adil dalam pengagihan bantuan masyarakat (SP8.3). Guru meneliti hasil individu murid.
 
-**Aktiviti 2 (20 minit) — Dialog dan emosi:** Murid menjalankan dialog ringkas dua versi, menyatakan kesan kedua-duanya dan menulis satu ayat perspektif pihak yang terlibat untuk SP 8.4 (**Mengekspresikan perasaan berkaitan dengan amalan adil dalam hidup bermasyarakat.**). Guru semak hubungan alasan, emosi dan nilai.
+**Aktiviti 2 (20 minit) — Panduan buku teks asal:** Guru meminta murid memilih situasi daripada jadual amalan adil m/s74–75 lalu menulis satu ayat perasaan bersebab apabila dilayan dengan saksama (SP8.4). Guru meneliti hasil individu murid.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak justifikasi serta dua kesan bagi SP 8.3 dan ayat perasaan yang sesuai bagi SP 8.4. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menilai dua manfaat keadilan kepada masyarakat dan satu ayat perasaan dengan alasan (SP8.3–8.4). Murid membaiki satu jawapan selepas maklum balas Guru.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **keadilan**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — halaman belum dipadankan; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 8, m/s 73–75 (PDF 76–78), kegiatan dan contoh asal dijadikan rujukan aktiviti PdP 023; aktiviti diolah untuk SP DSKP.
+
+**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — Unit 8 m/s 73–75 (PDF 76–78) diperiksa visual; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

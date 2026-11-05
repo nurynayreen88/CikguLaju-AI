@@ -17,14 +17,16 @@ Murid menyiapkan tugasan **SP 7.1** (Menyenaraikan contoh amalan menyayangi masy
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Komuniti mengumpul sumbangan untuk keluarga yang memerlukan**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Tugasan 7.1:** Guru membentangkan situasi **Komuniti mengumpul sumbangan untuk keluarga yang memerlukan** dan menyediakan kad/gambar yang relevan dengan unit buku teks **Kasih Sayang** (mula m/s 60; halaman aktiviti belum disahkan). Murid melaksanakan arahan **“Menyenaraikan contoh amalan menyayangi masyarakat demi kesejahteraan bersama.”** dengan menghasilkan **senarai tiga contoh atau perkara yang tepat**; pasangan menyemak fakta, bukan hanya memilih tindakan baik atau buruk. Guru merekod satu respons individu.
+**Aktiviti 1 (20 minit) — Panduan buku teks asal:** Guru mempersembahkan 'Sajak Kasih Sayang' m/s60 dan kisah 'Sayangi Warga Emas' m/s61 serta lawatan ke rumah warga emas dalam 'Kami Prihatin' m/s62. Murid menyenaraikan tiga contoh kasih sayang terhadap masyarakat, termasuk membantu warga emas dengan izin (SP7.1). Guru meneliti hasil individu murid.
 
-**Aktiviti 2 (20 minit) — Tugasan 7.2:** Guru menukar sudut situasi kepada tindakan atau akibat yang boleh diperhatikan. Murid melaksanakan arahan **“Menghuraikan cara memupuk amalan kasih sayang dalam masyarakat demi kesejahteraan bersama.”** dan menyediakan **dua huraian yang disokong sebab** berdasarkan contoh yang relevan dengan unit. Murid membentangkan hasil dan memperbaiki jawapan selepas pertanyaan lanjut guru.
+**Aktiviti 2 (20 minit) — Panduan buku teks asal:** Guru menggunakan gambar program 'Kami Prihatin' m/s62 untuk membimbing murid menghuraikan dua cara menyantuni warga emas dan golongan memerlukan tanpa menyentuh isu peribadi penerima (SP7.2). Guru meneliti hasil individu murid.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Guru mengutip hasil individu: **senarai tiga contoh atau perkara yang tepat** untuk SP 7.1 dan **dua huraian yang disokong sebab** untuk SP 7.2; semak ketepatan makna, bukti dan kaitan dengan nilai **Kasih sayang**. Murid membetulkan satu jawapan selepas maklum balas.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menilai tiga amalan kasih sayang dan dua huraian cara yang selamat berdasarkan kisah serta gambar sumber (SP7.1–7.2). Murid membaiki satu jawapan selepas maklum balas Guru.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **kasih sayang**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — unit bermula m/s 60 (PDF 63); halaman aktiviti khusus belum dipadankan; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 7, m/s 60–62 (PDF 63–65), kegiatan dan contoh asal dijadikan rujukan aktiviti PdP 019; aktiviti diolah untuk SP DSKP.
+
+**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — Unit 7 m/s 60–62 (PDF 63–65) diperiksa visual; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
