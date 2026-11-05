@@ -1,0 +1,57 @@
+name: Web unified RPH deployed smoke
+on:
+  push:
+    branches:
+      - staging/cikgulaju-web-v1
+    paths:
+      - .github/workflows/web-unified-rph-live-smoke.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Check deployed normal selection and protected preview
+        run: |
+          python - <<'PY'
+          import json
+          import time
+          import urllib.error
+          import urllib.request
+
+          base="https://cikgulaju-web-v1-api-test.onrender.com"
+          def get(path):
+              req=urllib.request.Request(base+path,headers={"User-Agent":"CikguLaju-Unified-RPH-Staging-Smoke/1.0"})
+              try:
+                  with urllib.request.urlopen(req,timeout=15) as response:
+                      return response.status,response.read(180000).decode("utf-8",errors="replace")
+              except urllib.error.HTTPError as e:
+                  return e.code,e.read(4000).decode("utf-8",errors="replace")
+          for i in range(20):
+              try:
+                  code,html=get("/")
+                  health_code,health_text=get("/health")
+                  if (code==200 and health_code==200 and
+                      "id=\"rph-preview-button\" type=\"button\" hidden disabled" in html and
+                      "id=\"rph-preview-panel\" hidden" in html and
+                      "id=\"y6rph-toggle\"" not in html and
+                      "id=\"y6rph-panel\"" not in html and
+                      html.index("id=\"year\"")<html.index("id=\"subject\"")<
+                      html.index("id=\"unit\"")<html.index("id=\"lesson\"")<
+                      html.index("id=\"rph-preview-button\"") and
+                      json.loads(health_text).get("copy_version")=="v26_00"):
+                      break
+              except (ValueError,KeyError,urllib.error.URLError) as e:
+                  print("Staging warmup:",type(e).__name__)
+              time.sleep(7)
+          else:
+              raise SystemExit("New unified RPH UI not found on staging")
+          url="/api/web/rph/preview?year=6&subject=ENGLISH&unit=Welcome&lesson=e-6-001"
+          assert get(url)[0]==401,"RPH preview must not be anonymous"
+          assert get(url.replace("/preview?","/word?"))[0]==401,"Word must not be anonymous"
+          assert get("/api/options?kind=subjects&year=6")[0]==401,"Subject catalog needs login"
+          assert get("/api/rpt/2027/catalog")[0]==401,"RPT must remain authenticated"
+          print("PASS: RPH preview follows standard selection; no Year6 shortcut; v26.00 copy; protected preview, Word, RPT and catalog.")
+          PY
