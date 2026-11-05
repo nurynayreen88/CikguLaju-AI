@@ -709,6 +709,28 @@ class PSVSourceOrderTests(unittest.TestCase):
                     self.assertNotIn("bercetak di bawah", sp.group(1))
 
 
+    def test_20_fixed_source_map_outcomes_do_not_revert_to_generic_art(self):
+        """Map is editorial context, not a certificate of 210 visual approvals."""
+        m = json.loads((PSV / "textbook_dskp_source_map_20261104.json").read_text(encoding="utf-8"))
+        expected = {
+            (2,5): "buah-buahan", (2,9): "taman mini", (2,10): "suasana hidupan laut",
+            (3,2): "poster perayaan", (3,3): "selempang pancar",
+            (3,4): "cawan kertas", (3,5): "tidak berfungsi",
+            (3,6): "kain felt", (3,7): "burung merak",
+            (3,8): "batang aiskrim", (3,9): "boneka tali", (3,10): "alas mangkuk",
+            (4,2): "paper quilling", (4,3): "kemeja-t",
+            (4,4): "bunga matahari", (4,5): "piring", (4,8): "arnab",
+            (5,8): "bingkai gambar", (5,9): "polistirena", (6,5): "roda pemusing",
+        }
+        self.assertEqual(m["source_audit_summary"]["unit_corrections"], 20)
+        self.assertEqual(m["source_audit_summary"]["scope"], "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL")
+        for (year, unit), keyword in expected.items():
+            with self.subTest(year=year, unit=unit):
+                self.assertIn(keyword, m["years"][str(year)]["units"][unit-1][6].casefold())
+                self.assertIn(f"{year}-{unit}", m["source_audit_summary"]["corrections"])
+        self.assertIn("hkvtu/vifc", m["years"]["3"]["book"])
+        self.assertIn("1ZPvbJcwogZVQjRSgPMSgD6iymMXcASSU", m["years"]["4"]["book"])
+
     def test_forty_unit_dskp_technique_and_production_semantics(self):
         """Independent SP-to-technique crosswalk from printed Y2–Y5 DSKP.
 
