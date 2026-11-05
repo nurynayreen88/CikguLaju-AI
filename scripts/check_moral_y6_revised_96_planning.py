@@ -30,7 +30,7 @@ def main():
         assert row["Tajuk_Unit"]==entry["title"], (n, row["Tajuk_Unit"], entry["title"])
         assert row["Tahap_Semakan_Buku"]==("SEMAKAN2017_TEKSTUAL_SP_KEGIATAN_DIKAITKAN" if hold else "SEMAKAN2017_BAB_SP_SAHAJA_BELUM_AUDIT_AKTIVITI")
         assert row["Bukti_Individu"]=="BELUM_FINAL_READY"
-        assert "SEMAKAN 2017" in row["Nota_Sumber"]
+        assert "semakan 2017" in row["Nota_Sumber"].casefold()
         assert not ("READY" in row["Status_Dalaman"] and "BETA" not in row["Status_Dalaman"])
         # Only source metadata may differ; original RPH/SC/SP/session order retained.
         for field in original[0]:
