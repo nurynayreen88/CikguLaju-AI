@@ -173,5 +173,44 @@ class NativeRPHBridgeTests(unittest.TestCase):
         self.assertIn("CIKGULAJU_WEB_NATIVE_RPH_ENABLED",src)
 
 
+    def test_strict_source_digest_matches_telegram_bytes(self):
+        from web.rph_shared_source_identity import source_fingerprint
+        digest=source_fingerprint(4,"ENGLISH",1)
+        self.assertRegex(digest,r"^[a-f0-9]{64}$")
+        body=payload()
+        with patch.dict(os.environ,{"CIKGULAJU_WEB_RPH_SOURCE_PARITY_REQUIRED":"1"}):
+            self.assertEqual(self._post(body).status_code,400)
+            body["source_digest"]="0"*64
+            self.assertEqual(self._post(body).status_code,400)
+            body["source_digest"]=digest
+            self.assertEqual(self._post(body).status_code,200)
+        self.assertEqual(len(self.runtime.calls),1)
+
+    def test_selection_state_matches_pjpk_and_psv_telegram_callbacks(self):
+        from web.rph_shared_source_identity import source_fingerprint
+        from web.native_rph_telegram_api import build_native_input
+        pj=payload()
+        pj.update(subject="PJPK",component="PK",year=3,lesson=1,
+                  unit="Kemahiran Kesihatan")
+        pj["layout"]["activity_header"]=[
+            "Fasa / Masa","Aktiviti Pengajaran & Pembelajaran","Catatan"]
+        pj["source_digest"]=source_fingerprint(3,"PJPK",1,"PK")
+        state,_,_=build_native_input(pj)
+        from web.pjpk_2027_preview_runtime import _selection as pj_selected
+        self.assertIsNotNone(pj_selected(state))
+        self.assertEqual(state["_pjpk_2027_preview_selection"],
+                         {"year":3,"subject":"pk","lesson":1})
+        self.assertEqual(state["sp_code"],pj_selected(state)["sp"][0])
+        psv=payload()
+        psv.update(subject="PSV",year=2,lesson=1,unit="Seni Visual")
+        psv["layout"]["activity_header"]=[
+            "Fasa / Masa","Aktiviti Pengajaran & Pembelajaran","Catatan"]
+        psv["source_digest"]=source_fingerprint(2,"PSV",1)
+        state,_,_=build_native_input(psv)
+        from web.psv_2027_provisional_runtime import _selection as psv_selected
+        self.assertIsNotNone(psv_selected(state))
+        self.assertEqual(state["subject"],"Pendidikan Seni Visual")
+
+
 if __name__=="__main__":
     unittest.main()
