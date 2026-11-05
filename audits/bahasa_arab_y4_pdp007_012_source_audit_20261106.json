@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-06",
+  "year": 4,
+  "unit": 1,
+  "title": "الشهور الميلادية",
+  "status": "SOURCE_CONTENT_REMEDIATED_DRAF_RELEASE_QA_PENDING",
+  "textbook": {
+    "edition": "DBP/KPM cetakan pertama 2019",
+    "isbn": "978-983-49-2480-5",
+    "drive_pdf": "https://drive.google.com/file/d/1o53JpmljwxCUkyVYMWLSGnARs85gbncO/view"
+  },
+  "dskp": {
+    "edition": "KSSR Semakan 2017",
+    "drive_pdf": "https://drive.google.com/file/d/1J3hPVU5QhA3z1Mus8MEKntWI-83WpImj/view"
+  },
+  "method": "PDF Buku Teks Tahun 4 di Drive dibaca sebagai teks sumber dengan penanda halaman dan SP; turutan RPT 2027 belum diaudit; Word/PDF belum dijana.",
+  "pdp": [
+    {
+      "lesson": "007",
+      "sp": "3.2.1",
+      "page": "10",
+      "scope": "menulis nama bulan Masihi",
+      "evidence_status": "MATCH_BOOK_PAGE_SP",
+      "ready": false,
+      "manual_approval": false
+    },
+    {
+      "lesson": "008",
+      "sp": "1.3.1",
+      "page": "15",
+      "scope": "dialog tarikh hari jadi",
+      "evidence_status": "MATCH_BOOK_PAGE_SP",
+      "ready": false,
+      "manual_approval": false
+    },
+    {
+      "lesson": "009",
+      "sp": "1.3.2",
+      "page": "25",
+      "scope": "intonasi dialog bulan/hari istimewa",
+      "evidence_status": "MATCH_BOOK_PAGE_SP",
+      "ready": false,
+      "manual_approval": false
+    },
+    {
+      "lesson": "010",
+      "sp": "2.3.1",
+      "page": "15",
+      "scope": "membaca dialog tarikh hari jadi",
+      "evidence_status": "MATCH_BOOK_PAGE_SP",
+      "ready": false,
+      "manual_approval": false
+    },
+    {
+      "lesson": "011",
+      "sp": "3.3.1",
+      "page": "16",
+      "scope": "menulis kad ucapan hari jadi",
+      "evidence_status": "MATCH_BOOK_PAGE_SP",
+      "ready": false,
+      "manual_approval": false
+    },
+    {
+      "lesson": "012",
+      "sp": "1.4.1",
+      "page": "20",
+      "scope": "ayat berangkai tentang hari istimewa",
+      "evidence_status": "MATCH_BOOK_PAGE_SP_AFTER_CONTENT_CORRECTION",
+      "ready": false,
+      "manual_approval": false
+    }
+  ],
+  "flagged_lessons": [],
+  "final_ready": 0,
+  "remediated_conflicts": [
+    {
+      "lesson": "012",
+      "old": "teacher day draft not p20 textbook dialogue",
+      "new": "Arabic Language Day dialogue on p20 with SP 1.4.1"
+    }
+  ]
+}

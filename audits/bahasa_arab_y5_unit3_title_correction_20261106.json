@@ -1,0 +1,22 @@
+{
+  "audit_date": "2026-11-06",
+  "year": 5,
+  "unit": 3,
+  "wrong_title": "هيا نشترك في الأنشطة الصفية",
+  "correct_title": "هيا نشترك في الأنشطة اللاصفية",
+  "printed_page_range": "57-84",
+  "source_book": {
+    "isbn": "978-983-49-2838-4",
+    "edition": "Cetakan Pertama 2020",
+    "drive_pdf": "https://drive.google.com/file/d/1OI3RZ8-NXE2bVSOVqSz9bEWCh2tQEN5U/view"
+  },
+  "independent_sources": [
+    "https://sites.google.com/moe-dl.edu.my/pdpronline/link-bahan-pdpr-skls1-j/en-mohd-nazri/b-arab-5-satria",
+    "https://www.youtube.com/watch?v=82qRw836RoE",
+    "https://anyflip.com/zxzlm/yswb/basic"
+  ],
+  "source_scope": "Unit title corroborated by textbooks-associated teacher materials and RPT; per-PdP page/2027 sequence not audited",
+  "matched_theme": "Aktiviti kokurikulum — kelab, persatuan dan unit beruniform",
+  "status": "DRAF_SEMAK",
+  "ready": false
+}

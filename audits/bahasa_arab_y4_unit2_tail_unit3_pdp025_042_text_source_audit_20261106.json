@@ -1,0 +1,270 @@
+{
+  "audit_date": "2026-11-06",
+  "year": 4,
+  "source_book": {
+    "url": "https://drive.google.com/file/d/1o53JpmljwxCUkyVYMWLSGnARs85gbncO/view",
+    "isbn": "978-983-49-2480-5",
+    "publisher": "DBP/KPM",
+    "first_edition": 2019
+  },
+  "source_dskp": "https://drive.google.com/file/d/1J3hPVU5QhA3z1Mus8MEKntWI-83WpImj/view",
+  "release_authorized": false,
+  "final_ready": 0,
+  "stage": "DRAF_PARTIAL_PEDAGOGICAL_AND_ANNUAL_RPT_NOT_APPROVED",
+  "unit2": {
+    "unit": 2,
+    "title": "من في المدرسة؟",
+    "new_pdp": [
+      "025",
+      "026",
+      "027",
+      "028"
+    ],
+    "new_pages": [
+      "49",
+      "53",
+      "54",
+      "56"
+    ],
+    "pages_50_52_55_included_as_associated_revision_only": true,
+    "manual_unit_completion_approved": false
+  },
+  "unit3": {
+    "unit": 3,
+    "title": "أحب مدرستي",
+    "new_pdp": [
+      "029",
+      "030",
+      "031",
+      "032",
+      "033",
+      "034",
+      "035",
+      "036",
+      "037",
+      "038",
+      "039",
+      "040",
+      "041",
+      "042"
+    ],
+    "new_pages": [
+      "58",
+      "58",
+      "59",
+      "59",
+      "60",
+      "60",
+      "62",
+      "64",
+      "66",
+      "70",
+      "72",
+      "76",
+      "82",
+      "84"
+    ],
+    "manual_unit_completion_approved": false
+  },
+  "items": [
+    {
+      "pdp": "025",
+      "unit": 2,
+      "printed_page": "49",
+      "sp": "1.4.1",
+      "source_text_activity": "Memodelkan ungkapan sopan untuk menemui pegawai sekolah",
+      "source_text_reviewed": true,
+      "annual_rpt_mapping_approved": false,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "026",
+      "unit": 2,
+      "printed_page": "53",
+      "sp": "2.4.2",
+      "source_text_activity": "Menyusun kad ayat mengikut permainan buku teks h53",
+      "source_text_reviewed": true,
+      "annual_rpt_mapping_approved": false,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "027",
+      "unit": 2,
+      "printed_page": "54",
+      "sp": "1.4.2",
+      "source_text_activity": "Melatih ucapan mudah bertema warga sekolah",
+      "source_text_reviewed": true,
+      "annual_rpt_mapping_approved": false,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "028",
+      "unit": 2,
+      "printed_page": "56",
+      "sp": "2.3.6",
+      "source_text_activity": "Menjelaskan watak warga sekolah melalui diorama",
+      "source_text_reviewed": true,
+      "annual_rpt_mapping_approved": false,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "029",
+      "unit": 3,
+      "printed_page": "58",
+      "sp": "1.1.1",
+      "source_text_activity": "Melafazkan kata menggunakan ال syamsiah/qamariah dalam topik sekolah",
+      "source_text_reviewed": true,
+      "annual_rpt_mapping_approved": false,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "030",
+      "unit": 3,
+      "printed_page": "58",
+      "sp": "1.1.2",
+      "source_text_activity": "Mendengar perbezaan bunyi awal dalam kosa kata sekolah",
+      "source_text_reviewed": true,
+      "annual_rpt_mapping_approved": false,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "031",
+      "unit": 3,
+      "printed_page": "59",
+      "sp": "2.1.1",
+      "source_text_activity": "Menyebut dan membaca kata ber-ال daripada latihan sambung h59",
+      "source_text_reviewed": true,
+      "annual_rpt_mapping_approved": false,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "032",
+      "unit": 3,
+      "printed_page": "59",
+      "sp": "3.1.1",
+      "source_text_activity": "Menulis bentuk huruf dan sambungan ال menggunakan kata topik sekolah",
+      "source_text_reviewed": true,
+      "annual_rpt_mapping_approved": false,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "033",
+      "unit": 3,
+      "printed_page": "60",
+      "sp": "1.2.1",
+      "source_text_activity": "Mengenal sebutan enam lokasi biasa dalam sekolah",
+      "source_text_reviewed": true,
+      "annual_rpt_mapping_approved": false,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "034",
+      "unit": 3,
+      "printed_page": "60",
+      "sp": "1.2.3",
+      "source_text_activity": "Membezakan jenis lokasi melalui sebutan audio",
+      "source_text_reviewed": true,
+      "annual_rpt_mapping_approved": false,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "035",
+      "unit": 3,
+      "printed_page": "62",
+      "sp": "1.2.4",
+      "source_text_activity": "Dengar dan memilih gambar bilik khas mengikut frasa",
+      "source_text_reviewed": true,
+      "annual_rpt_mapping_approved": false,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "036",
+      "unit": 3,
+      "printed_page": "64",
+      "sp": "2.2.3",
+      "source_text_activity": "Membaca kata nama tempat mengikut kata tunjuk betul",
+      "source_text_reviewed": true,
+      "annual_rpt_mapping_approved": false,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "037",
+      "unit": 3,
+      "printed_page": "66",
+      "sp": "3.2.1",
+      "source_text_activity": "Menulis kata dan frasa lokasi daripada latihan h66",
+      "source_text_reviewed": true,
+      "annual_rpt_mapping_approved": false,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "038",
+      "unit": 3,
+      "printed_page": "70",
+      "sp": "2.3.4",
+      "source_text_activity": "Susun ayat lokasi agar menjadi ayat mudah yang bermakna",
+      "source_text_reviewed": true,
+      "annual_rpt_mapping_approved": false,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "039",
+      "unit": 3,
+      "printed_page": "72",
+      "sp": "3.3.1",
+      "source_text_activity": "Latihan tulisan ayat pendek sambutan sekolah",
+      "source_text_reviewed": true,
+      "annual_rpt_mapping_approved": false,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "040",
+      "unit": 3,
+      "printed_page": "76",
+      "sp": "3.4.1",
+      "source_text_activity": "Membina ayat berkait tentang kebersihan tempat sekolah",
+      "source_text_reviewed": true,
+      "annual_rpt_mapping_approved": false,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "041",
+      "unit": 3,
+      "printed_page": "82",
+      "sp": "1.4.2",
+      "source_text_activity": "Menuturkan rangkap sambutan dan tempat sekolah dengan intonasi yang sesuai",
+      "source_text_reviewed": true,
+      "annual_rpt_mapping_approved": false,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "042",
+      "unit": 3,
+      "printed_page": "84",
+      "sp": "2.2.3",
+      "source_text_activity": "Membaca serta mengelaskan nama tempat kepada هذا atau هذه",
+      "source_text_reviewed": true,
+      "annual_rpt_mapping_approved": false,
+      "manual_approval": false,
+      "ready": false
+    }
+  ],
+  "note": "Page selections are sampled activities in textbook; they are not all lessons in a verified annual RPT. Unit 2/3 need manual source validation and visual proof."
+}

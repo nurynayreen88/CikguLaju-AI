@@ -1,0 +1,158 @@
+{
+  "subject": "Bahasa Arab KSSR Semakan",
+  "status": "BIBLIOGRAPHIC_PROVENANCE_ONLY",
+  "created": "2026-11-05",
+  "claim_limits": "Years 2–3 publisher ISBN confirmed, Year 3 textbook TOC and unit printed pages from public text version; Year 2 original matching edition pages not checked. Years 4–5 from existing Drive PDF front matter, Year 6 public textbook source. Individual RPH not manually approved.",
+  "items": [
+    {
+      "year": 2,
+      "status": "ISBN_PUBLISHER_CONFIRMED_BUT_NO_SAME_EDITION_PDF_PAGE_AUDIT",
+      "existing_drive_textbook": false,
+      "alternate": "https://fliphtml5.com/svnea/bmjf/BUKU_TEKS_BAHASA_ARAB_TAHUN_2_KSSR_SEMAKAN_2017/",
+      "printed_pages_per_unit": null,
+      "publisher": "Dewan Bahasa dan Pustaka",
+      "isbn": "978-983-49-1589-6",
+      "publication_date": "2017-11-15",
+      "publisher_source": "https://stage.jendeladbp.my/ujana/bahasa-arab-tahun-2-bt-pt/",
+      "activity_book_isbn": "978-983-49-1590-2",
+      "activity_book_publisher_source": "https://jendeladbp.my/ujana/bahasa-arab-tahun-2-ba-pt/"
+    },
+    {
+      "year": 3,
+      "status": "ISBN_EDITION_CONFIRMED_PUBLISHER_AND_TOC",
+      "existing_drive_textbook": true,
+      "existing_drive_pdf": "https://drive.google.com/file/d/1U-j2TPeVTyLaZbU2qGDb9jmf53KAwNNH/view",
+      "printed_pages_per_unit": [
+        {
+          "unit": 1,
+          "title_arab": "تفضل إلى الفصل",
+          "printed_pages": "1-28"
+        },
+        {
+          "unit": 2,
+          "title_arab": "ملابسي الجميلة",
+          "printed_pages": "29-58"
+        },
+        {
+          "unit": 3,
+          "title_arab": "الألوان حولنا",
+          "printed_pages": "59-86"
+        },
+        {
+          "unit": 4,
+          "title_arab": "الوقت كالذهب",
+          "printed_pages": "87-117"
+        }
+      ],
+      "publisher": "Dewan Bahasa dan Pustaka untuk KPM",
+      "isbn": "978-983-49-2033-3",
+      "edition": "Cetakan Pertama 2018",
+      "publisher_source": "https://jendeladbp.my/ujana/bahasa-arab-tahun-3-bt-pt/",
+      "source_toc": "https://www.scribd.com/document/438677752/Bahasa-Arab-Tahun-3-Teks-KSSR-Semakan"
+    },
+    {
+      "year": 4,
+      "status": "ISBN_EDITION_CONFIRMED_FROM_DRIVE_FRONT_MATTER",
+      "existing_drive_textbook": true,
+      "existing_drive_pdf": "https://drive.google.com/file/d/1o53JpmljwxCUkyVYMWLSGnARs85gbncO/view",
+      "publisher": "Dewan Bahasa dan Pustaka untuk KPM",
+      "isbn": "978-983-49-2480-5",
+      "edition": "Cetakan Pertama 2019",
+      "toc_unit_pages": [
+        {
+          "unit": 1,
+          "title": "الشهور الميلادية",
+          "printed_pages": "1-28"
+        },
+        {
+          "unit": 2,
+          "title": "من في المدرسة؟",
+          "printed_pages": "29-56"
+        },
+        {
+          "unit": 3,
+          "title": "أحب مدرستي",
+          "printed_pages": "57-84"
+        },
+        {
+          "unit": 4,
+          "title": "بيتي جنتي",
+          "printed_pages": "85-112"
+        }
+      ]
+    },
+    {
+      "year": 5,
+      "status": "ISBN_EDITION_CONFIRMED_FROM_DRIVE_FRONT_MATTER",
+      "existing_drive_textbook": true,
+      "existing_drive_pdf": "https://drive.google.com/file/d/1OI3RZ8-NXE2bVSOVqSz9bEWCh2tQEN5U/view",
+      "publisher": "Dewan Bahasa dan Pustaka untuk KPM",
+      "isbn": "978-983-49-2838-4",
+      "edition": "Cetakan Pertama 2020",
+      "toc_unit_pages": [
+        {
+          "unit": 1,
+          "title": "في المطبخ",
+          "printed_pages": "1-28"
+        },
+        {
+          "unit": 2,
+          "title": "ما ألذ الطعام!",
+          "printed_pages": "29-56"
+        },
+        {
+          "unit": 3,
+          "title": "هيا نشترك في الأنشطة اللاصفية",
+          "printed_pages": "57-84"
+        },
+        {
+          "unit": 4,
+          "title": "رفقا بالحيوانات!",
+          "printed_pages": "85-112"
+        }
+      ],
+      "unit3_title_evidence": "https://sites.google.com/moe-dl.edu.my/pdpronline/link-bahan-pdpr-skls1-j/en-mohd-nazri/b-arab-5-satria",
+      "unit3_title_secondary_evidence": "https://www.youtube.com/watch?v=82qRw836RoE"
+    },
+    {
+      "year": 6,
+      "status": "ISBN_EDITION_CONFIRMED_FROM_PUBLIC_BOOK_FRONT_MATTER",
+      "existing_drive_textbook": true,
+      "existing_drive_pdf": "https://drive.google.com/file/d/1WPab-TZG1SpqYhBIbo6Lb5wVr98_aIbP/view",
+      "publisher": "Dewan Bahasa dan Pustaka untuk KPM",
+      "isbn": "978-983-49-3300-5",
+      "edition": "Cetakan Pertama 2021",
+      "public_book_url": "https://anyflip.com/gcmci/mxcs/basic",
+      "toc_unit_pages": [
+        {
+          "unit": 1,
+          "title_arab": "حياتنا أجمل بالنظافة",
+          "printed_page_start": 1,
+          "printed_page_end": 30
+        },
+        {
+          "unit": 2,
+          "title_arab": "الشباب أمل الأمة",
+          "printed_page_start": 31,
+          "printed_page_end": 60
+        },
+        {
+          "unit": 3,
+          "title_arab": "رحلة سعيدة",
+          "printed_page_start": 61,
+          "printed_page_end": 90
+        },
+        {
+          "unit": 4,
+          "title_arab": "فدائي يا وطني",
+          "printed_page_start": 91,
+          "printed_page_end": 120
+        }
+      ]
+    }
+  ],
+  "no_new_textbook_pdf_uploaded": true,
+  "external_file_copying_approved": false,
+  "individual_rph_verified": 0,
+  "production_unchanged": true
+}

@@ -1,0 +1,187 @@
+{
+  "generated": "2026-11-06",
+  "scope": "Bahasa Arab Tahun 2–6 KSSR Semakan 2017",
+  "release_state": "DRAF_STAGING_RELEASE_BLOCKED",
+  "pr_url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/336",
+  "completed": {
+    "unit_indexes": 20,
+    "draft_rph": 138,
+    "unit2_4_activity_banks": 15,
+    "draft_crosswalk": 60,
+    "source_page_draft_reviewed": 138,
+    "preliminary_year6_page_candidates": 0,
+    "one_page_A4_docx_pdf_ci_verified": true,
+    "render_check_ci": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42132565716",
+    "word_generated_in_ci": 138,
+    "pdf_generated_in_ci": 138,
+    "year6_text_source_reviewed": 12,
+    "year2_text_source_reviewed": 12,
+    "year2_sp_book_ocr_ambiguous": 4,
+    "year4_unit2_candidate_rph": 16,
+    "year4_unit2_page_text_covered_range": "30–48",
+    "verified_a4_render_for_new_12": true,
+    "year4_unit3_candidate_rph": 14,
+    "verified_a4_render_for_all_90": true,
+    "year4_unit4_candidate_rph": 16,
+    "verified_a4_render_for_all_106": true,
+    "year5_unit2_candidate_rph": 16,
+    "verified_a4_render_for_all_122": true,
+    "year5_unit3_candidate_rph": 16,
+    "verified_a4_render_for_all_138": true
+  },
+  "release_checks": [
+    {
+      "id": "source_book_editions",
+      "status": "PARTIAL",
+      "detail": "Year 2–6 ISBN independently identified, Year 2 original textbook DBP 2017 text opened; original per-page visual inspection and matching all editions to local source PDFs not done."
+    },
+    {
+      "id": "unit_index",
+      "status": "PASS_AS_INDEX_ONLY",
+      "detail": "4 units per Year 2–6 (20 total) recorded. Unit titles do not constitute an authored RPT."
+    },
+    {
+      "id": "full_pdp_coverage",
+      "status": "BLOCKED",
+      "detail": "138 draft candidates: Unit1 60 Year2–6; Year4 extra 46 for Units2–4; Year5 Unit2 16, Unit3 16. Year5 Unit4 and Years2,3,6 Units2–4 not authored. All session numbers proposed, not annual RPT 2027 certified."
+    },
+    {
+      "id": "sk_sp",
+      "status": "PARTIAL",
+      "detail": "138 draft SP codes linked to textbook exercise text. Y5 extracurricular Unit3 activity codes checked on printed pages 58–84. Four Year2 SP print OCR uncertainties remain; none individually teacher approved."
+    },
+    {
+      "id": "textbook_page_to_pdp",
+      "status": "PARTIAL",
+      "detail": "138 draft RPH reference printed pages from source texts. Year5 Unit3 16 new candidates; graphical per-page cross-check and annual RPT 2027 map still missing."
+    },
+    {
+      "id": "rpt_2027_group_A_B",
+      "status": "BLOCKED",
+      "detail": "No complete dated RPT 2027, Group A/B, school holidays or timetable integration verified."
+    },
+    {
+      "id": "word_pdf_programmatic_a4",
+      "status": "PASS_TECHNICAL_ONLY",
+      "detail": "138 Word and 138 one-page A4 PDF documents generated successfully on https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42132565716. This is technical format testing, not pedagogical/linguistic/manual RPT 2027 approval."
+    },
+    {
+      "id": "manual_pedagogic_approval",
+      "status": "BLOCKED",
+      "detail": "All RPH draft: 0 individually approved; no school release sign-off."
+    },
+    {
+      "id": "telegram_web_runtime_parity",
+      "status": "NOT_STARTED",
+      "detail": "Staging RPH generator is offline, not connected to runtime; no changes to production apps, SQLite/Supabase user data."
+    },
+    {
+      "id": "year4_unit2_partial",
+      "status": "PARTIAL",
+      "detail": "16 Y4 Unit2 RPH proposals sample pp30–56; unit lesson-count, every activity and RPT 2027 order still not approved."
+    },
+    {
+      "id": "year4_unit3_partial",
+      "status": "PARTIAL",
+      "detail": "14 Unit3 RPH proposals based on BT Year4 pp58–84, SP DSKP; unit session chronology, visual checks and annual RPT 2027 still unapproved."
+    },
+    {
+      "id": "year4_unit4_candidate",
+      "status": "PARTIAL",
+      "detail": "16 draft Unit4 RPH candidates from textbook pp86–112 covering phonics, home vocabulary, dialogue, related sentences and silhouette project; 2027 annual RPT, all source images and teacher approvals pending."
+    },
+    {
+      "id": "year5_unit2_candidate",
+      "status": "PARTIAL",
+      "detail": "16 provisional Y5 Unit2 RPH (PdP013–028) based on book pp30–56, including distinct phonics, vocabulary, reading, listening, dialogue, writing and project activities. Annual RPT and visual/manual validation pending."
+    },
+    {
+      "id": "year5_unit3_candidate",
+      "status": "PARTIAL",
+      "detail": "16 source-linked Year5 extracurricular Unit3 draft RPH (PdP029–044) from pp58–84; RPT 2027 total/time and individual visual/pedagogical approval pending."
+    }
+  ],
+  "years": [
+    {
+      "year": 2,
+      "units": 4,
+      "unit1_draft_rph": 12,
+      "source_page_reviewed_rph": 12,
+      "preliminary_mapping_only": 0,
+      "unwritten_units": [
+        2,
+        3,
+        4
+      ],
+      "textbook_issue": "Year 2 Unit 1 12 draft page-textbook reviews completed using DBP 2017 public text book; four book printed-SP OCR readings (002,004,010,011) unclear. Full-book visual/source-specific 2027 RPT mapping and teacher signoff missing."
+    },
+    {
+      "year": 3,
+      "units": 4,
+      "unit1_draft_rph": 12,
+      "source_page_reviewed_rph": 12,
+      "preliminary_mapping_only": 0,
+      "unwritten_units": [
+        2,
+        3,
+        4
+      ],
+      "textbook_issue": "Year 3 source pages reviewed as text; original scanned Drive edition and layouts not visually compared; teacher approval pending."
+    },
+    {
+      "year": 4,
+      "units": 4,
+      "unit1_draft_rph": 12,
+      "source_page_reviewed_rph": 58,
+      "preliminary_mapping_only": 0,
+      "unwritten_units": [],
+      "textbook_issue": "Year4 58 draft candidates across all 4 units, including Unit4 16 source-text-based candidate PdP043–058 from book pp86–112. Full annual RPT 2027 chronology, detailed page visual proof, linguistic proofreading and teacher sign-off unverified.",
+      "incomplete_units": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "year": 5,
+      "units": 4,
+      "unit1_draft_rph": 12,
+      "source_page_reviewed_rph": 44,
+      "preliminary_mapping_only": 0,
+      "unwritten_units": [
+        4
+      ],
+      "textbook_issue": "Year5 Unit1 12 text source-reviewed drafts; Unit2 16 candidates pp30–56; Unit3 16 candidates pp58–84 titled extracurricular activities (الأنشطة اللاصفية). Unit4 not authored. RPT 2027 and pedagogical manual approval still pending.",
+      "incomplete_units": [
+        2,
+        3
+      ]
+    },
+    {
+      "year": 6,
+      "units": 4,
+      "unit1_draft_rph": 12,
+      "source_page_reviewed_rph": 12,
+      "preliminary_mapping_only": 0,
+      "unwritten_units": [
+        2,
+        3,
+        4
+      ],
+      "textbook_issue": "Year 6 has 12 Unit 1 draft source-page text reviews, including corrected PdP012 p18. Teacher approval, visual page proof, RPT 2027 mapping and complete years still missing."
+    }
+  ],
+  "total_ready_rph": 0,
+  "release_authorized": false,
+  "production_db_touched": false,
+  "telegram_live_touched": false,
+  "web_live_touched": false,
+  "release_next_actions": [
+    "Audit original Year 2 textbook Unit 1 per printed page and DSKP",
+    "Audit Year 6 Unit 1 all 12 SP/page links individually, not candidate-only",
+    "Complete and review full-year PdP/RPH coverage for Units 2, 3, 4 across Years 2–6",
+    "Generate dated RPT 2027 Group A and B with school calendar and school profile",
+    "Proofread A4 Arabic RTL Word/PDF samples and all release-critical pages",
+    "Approve materials individually against DSKP/book pages and test Telegram-Web parity with DB backup"
+  ]
+}

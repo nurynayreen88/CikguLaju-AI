@@ -1,0 +1,165 @@
+{
+  "audited_at": "2026-11-06",
+  "year": 5,
+  "unit": 2,
+  "title": "ما ألذ الطعام!",
+  "textbook": {
+    "edition": "DBP/KPM first printing 2020",
+    "isbn": "978-983-49-2838-4",
+    "drive": "https://drive.google.com/file/d/1OI3RZ8-NXE2bVSOVqSz9bEWCh2tQEN5U/view",
+    "unit_printed_pages": "29-56"
+  },
+  "dskp": "https://drive.google.com/file/d/16px1xzM1OQxa5-Pggb1nGLN-L4a4wSHY/view",
+  "draft_pdp_range": "013-028",
+  "candidate_count": 16,
+  "review_scope": "Text extraction of corresponding original Drive textbook page+SP; not full graphical proof or annual RPT confirmation",
+  "items": [
+    {
+      "pdp": "013",
+      "printed_page": 30,
+      "candidate_sp": "1.1.1",
+      "lesson_focus": "Mendengar dan meniru bunyi ح/خ dan ذ/ز dalam perkataan makanan",
+      "annual_rpt_2027_verified": false,
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "014",
+      "printed_page": 30,
+      "candidate_sp": "1.1.2",
+      "lesson_focus": "Mengecam bunyi awal ح/خ dan ذ/ز melalui pendengaran",
+      "annual_rpt_2027_verified": false,
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "015",
+      "printed_page": 31,
+      "candidate_sp": "2.1.1",
+      "lesson_focus": "Membaca perkataan makanan yang mengandungi bunyi huruf serupa",
+      "annual_rpt_2027_verified": false,
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "016",
+      "printed_page": 31,
+      "candidate_sp": "3.1.1",
+      "lesson_focus": "Menulis kata yang mengandungi bentuk huruf hampir sama",
+      "annual_rpt_2027_verified": false,
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "017",
+      "printed_page": 32,
+      "candidate_sp": "1.2.1",
+      "lesson_focus": "Dengar dan sebut kosa kata makanan dan minuman harian",
+      "annual_rpt_2027_verified": false,
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "018",
+      "printed_page": 32,
+      "candidate_sp": "1.2.3",
+      "lesson_focus": "Mengelaskan makanan dan minuman yang didengar",
+      "annual_rpt_2027_verified": false,
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "019",
+      "printed_page": 34,
+      "candidate_sp": "1.2.5",
+      "lesson_focus": "Menghasilkan rakaman sebutan makanan dengan kosa kata baharu",
+      "annual_rpt_2027_verified": false,
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "020",
+      "printed_page": 35,
+      "candidate_sp": "2.2.3",
+      "lesson_focus": "Membaca dan mengelaskan kumpulan makanan",
+      "annual_rpt_2027_verified": false,
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "021",
+      "printed_page": 36,
+      "candidate_sp": "2.2.2",
+      "lesson_focus": "Membaca dan mengenal makanan mengikut kata tunjuk ذلك / تلك",
+      "annual_rpt_2027_verified": false,
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "022",
+      "printed_page": 37,
+      "candidate_sp": "2.2.5",
+      "lesson_focus": "Membina projek menu minuman daripada kosa kata yang dibaca",
+      "annual_rpt_2027_verified": false,
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "023",
+      "printed_page": 38,
+      "candidate_sp": "3.2.1",
+      "lesson_focus": "Menulis nama makanan dan minuman dengan sambungan tepat",
+      "annual_rpt_2027_verified": false,
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "024",
+      "printed_page": 41,
+      "candidate_sp": "1.3.1",
+      "lesson_focus": "Mendengar dan meniru dialog tentang makanan dan minuman pilihan",
+      "annual_rpt_2027_verified": false,
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "025",
+      "printed_page": 42,
+      "candidate_sp": "2.3.2",
+      "lesson_focus": "Membaca dialog jual beli makanan dan minuman",
+      "annual_rpt_2027_verified": false,
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "026",
+      "printed_page": 44,
+      "candidate_sp": "3.3.1",
+      "lesson_focus": "Menulis ayat ringkas tentang makanan yang disukai",
+      "annual_rpt_2027_verified": false,
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "027",
+      "printed_page": 47,
+      "candidate_sp": "1.4.1",
+      "lesson_focus": "Mendengar dan meniru ayat bersambung tentang buah segar",
+      "annual_rpt_2027_verified": false,
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "028",
+      "printed_page": 56,
+      "candidate_sp": "2.2.5",
+      "lesson_focus": "Menyediakan projek kolaj makanan atau minuman daripada kosa kata yang dibaca",
+      "annual_rpt_2027_verified": false,
+      "teacher_approved": false,
+      "ready": false
+    }
+  ],
+  "release_authorized": false,
+  "final_ready": 0,
+  "unit_session_count_confirmed": false
+}

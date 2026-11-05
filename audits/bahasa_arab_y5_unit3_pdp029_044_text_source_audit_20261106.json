@@ -1,0 +1,178 @@
+{
+  "date": "2026-11-06",
+  "year": 5,
+  "unit": 3,
+  "title": "هيا نشترك في الأنشطة اللاصفية",
+  "pdp_range": "029–044",
+  "candidate_rph_count": 16,
+  "source_book": "https://drive.google.com/file/d/1OI3RZ8-NXE2bVSOVqSz9bEWCh2tQEN5U/view",
+  "source_dskp": "https://drive.google.com/file/d/16px1xzM1OQxa5-Pggb1nGLN-L4a4wSHY/view",
+  "source_book_isbn": "978-983-49-2838-4",
+  "source_book_printed_pages": "57–84",
+  "source_level": "Textbook extracted page text; not full graphic page or human teacher approval.",
+  "pdp": [
+    {
+      "pdp": "029",
+      "printed_page": 58,
+      "candidate_sp": "1.1.1",
+      "skill": "Dengar dan sebut bunyi ت/ط dan ق/ك",
+      "source_text_matched": true,
+      "manual_approval": false,
+      "annual_rpt_2027_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "030",
+      "printed_page": 58,
+      "candidate_sp": "1.1.3",
+      "skill": "Membezakan bunyi huruf hampir sama",
+      "source_text_matched": true,
+      "manual_approval": false,
+      "annual_rpt_2027_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "031",
+      "printed_page": 59,
+      "candidate_sp": "2.1.1",
+      "skill": "Membaca kata yang mengandungi huruf seakan sama",
+      "source_text_matched": true,
+      "manual_approval": false,
+      "annual_rpt_2027_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "032",
+      "printed_page": 59,
+      "candidate_sp": "3.1.1",
+      "skill": "Menulis kata dengan bentuk huruf seakan sama",
+      "source_text_matched": true,
+      "manual_approval": false,
+      "annual_rpt_2027_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "033",
+      "printed_page": 60,
+      "candidate_sp": "1.2.1",
+      "skill": "Dengar dan sebut acara sukan",
+      "source_text_matched": true,
+      "manual_approval": false,
+      "annual_rpt_2027_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "034",
+      "printed_page": 60,
+      "candidate_sp": "1.2.4",
+      "skill": "Membezakan jenis permainan bola yang didengar",
+      "source_text_matched": true,
+      "manual_approval": false,
+      "annual_rpt_2027_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "035",
+      "printed_page": 62,
+      "candidate_sp": "1.2.3",
+      "skill": "Mengelaskan kelab dan unit beruniform kokurikulum",
+      "source_text_matched": true,
+      "manual_approval": false,
+      "annual_rpt_2027_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "036",
+      "printed_page": 63,
+      "candidate_sp": "2.2.2",
+      "skill": "Mengenal nama acara olahraga daripada bacaan",
+      "source_text_matched": true,
+      "manual_approval": false,
+      "annual_rpt_2027_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "037",
+      "printed_page": 64,
+      "candidate_sp": "2.2.1",
+      "skill": "Membaca nama permainan sukan",
+      "source_text_matched": true,
+      "manual_approval": false,
+      "annual_rpt_2027_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "038",
+      "printed_page": 66,
+      "candidate_sp": "3.2.1",
+      "skill": "Menulis nama kelab dan aktiviti sukan",
+      "source_text_matched": true,
+      "manual_approval": false,
+      "annual_rpt_2027_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "039",
+      "printed_page": 69,
+      "candidate_sp": "2.3.2",
+      "skill": "Membaca dialog permainan dan penyertaan kelab",
+      "source_text_matched": true,
+      "manual_approval": false,
+      "annual_rpt_2027_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "040",
+      "printed_page": 70,
+      "candidate_sp": "2.3.1",
+      "skill": "Membaca ayat tentang pertandingan sukan ditonton",
+      "source_text_matched": true,
+      "manual_approval": false,
+      "annual_rpt_2027_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "041",
+      "printed_page": 72,
+      "candidate_sp": "3.3.1",
+      "skill": "Menulis ayat mudah berkaitan kokurikulum",
+      "source_text_matched": true,
+      "manual_approval": false,
+      "annual_rpt_2027_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "042",
+      "printed_page": 75,
+      "candidate_sp": "1.4.2",
+      "skill": "Menuturkan rangkaian ayat tentang acara sukan",
+      "source_text_matched": true,
+      "manual_approval": false,
+      "annual_rpt_2027_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "043",
+      "printed_page": 77,
+      "candidate_sp": "3.4.1",
+      "skill": "Menulis ayat bersambung mengenai kelab bahasa",
+      "source_text_matched": true,
+      "manual_approval": false,
+      "annual_rpt_2027_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "044",
+      "printed_page": 84,
+      "candidate_sp": "2.2.3",
+      "skill": "Mengelaskan nama sukan dan kelab melalui projek Tarsia",
+      "source_text_matched": true,
+      "manual_approval": false,
+      "annual_rpt_2027_verified": false,
+      "ready": false
+    }
+  ],
+  "unit_completed": false,
+  "release_authorized": false,
+  "final_ready": 0
+}

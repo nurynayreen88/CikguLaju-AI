@@ -1,0 +1,118 @@
+{
+  "year": 4,
+  "date": "2026-11-06",
+  "status": "SIX_SOURCE_PAGE_EXAMPLES_IDENTIFIED_NOT_RPH_FINAL_APPROVED",
+  "textbook": {
+    "title": "Bahasa Arab Tahun 4 KSSR Semakan",
+    "publisher": "DBP untuk KPM",
+    "edition": "Cetakan Pertama 2019",
+    "isbn": "978-983-49-2480-5",
+    "source_url": "https://anyflip.com/rzqgi/ejrv/basic",
+    "existing_drive_pdf": "https://drive.google.com/file/d/1o53JpmljwxCUkyVYMWLSGnARs85gbncO/view"
+  },
+  "dskp_url": "https://drive.google.com/file/d/1J3hPVU5QhA3z1Mus8MEKntWI-83WpImj/view",
+  "page_level_findings": [
+    {
+      "lesson": "year4/lesson_001",
+      "printed_page": "2",
+      "sp": "1.1.1",
+      "evidence_topic": "Mendengar dan meniru kata ber-ال syamsiah/qamariah",
+      "example_terms": [
+        "الْيَوْم",
+        "الشَّهْر",
+        "اللُّغَة",
+        "الرِّيَاضِيّ"
+      ],
+      "source_url": "https://anyflip.com/rzqgi/ejrv/basic",
+      "source_content_seen": true,
+      "lesson_manual_approval": false,
+      "ready": false
+    },
+    {
+      "lesson": "year4/lesson_002",
+      "printed_page": "2",
+      "sp": "1.1.2",
+      "evidence_topic": "Mengenal bunyi lam dibunyikan/digugurkan selepas ال",
+      "example_terms": [
+        "الْيَوْم",
+        "الشَّهْر",
+        "الْقَمَرِيَّة",
+        "الشَّمْسِيَّة"
+      ],
+      "source_url": "https://anyflip.com/rzqgi/ejrv/basic",
+      "source_content_seen": true,
+      "lesson_manual_approval": false,
+      "ready": false
+    },
+    {
+      "lesson": "year4/lesson_003",
+      "printed_page": "4–5",
+      "sp": "1.2.1",
+      "evidence_topic": "Mendengar, menyebut nama bulan Masihi menggunakan kad kalendar",
+      "example_terms": [
+        "يناير",
+        "فبراير",
+        "مارس",
+        "إبريل",
+        "مايو"
+      ],
+      "source_url": "https://anyflip.com/rzqgi/ejrv/basic",
+      "source_content_seen": true,
+      "lesson_manual_approval": false,
+      "ready": false
+    },
+    {
+      "lesson": "year4/lesson_004",
+      "printed_page": "3",
+      "sp": "2.1.1",
+      "evidence_topic": "Membaca perkataan berawalan ال dalam latihan kenal bunyi",
+      "example_terms": [
+        "الْمُعَلِّم",
+        "الْعِيد",
+        "التَّقْوِيم",
+        "الرَّئِيس"
+      ],
+      "source_url": "https://anyflip.com/rzqgi/ejrv/basic",
+      "source_content_seen": true,
+      "lesson_manual_approval": false,
+      "ready": false
+    },
+    {
+      "lesson": "year4/lesson_005",
+      "printed_page": "7",
+      "sp": "2.2.1",
+      "evidence_topic": "Membaca kad bulan Masihi dari kalendar Januari–Jun",
+      "example_terms": [
+        "يناير",
+        "فبراير",
+        "مارس",
+        "إبريل",
+        "مايو",
+        "يونيو"
+      ],
+      "source_url": "https://anyflip.com/rzqgi/ejrv/basic",
+      "source_content_seen": true,
+      "lesson_manual_approval": false,
+      "ready": false
+    },
+    {
+      "lesson": "year4/lesson_006",
+      "printed_page": "3",
+      "sp": "3.1.1",
+      "evidence_topic": "Menulis dan menyambung kata ال + perkataan",
+      "example_terms": [
+        "الْمُعَلِّم",
+        "الْعِيد",
+        "التَّقْوِيم",
+        "الرَّئِيس"
+      ],
+      "source_url": "https://anyflip.com/rzqgi/ejrv/basic",
+      "source_content_seen": true,
+      "lesson_manual_approval": false,
+      "ready": false
+    }
+  ],
+  "scope_note": "Page-level references grounded in source book HTML text and DSKP, but pages not verified by screenshot and 2027 course sequence/Word-PDF output not approved.",
+  "no_published_textbook_copied": true,
+  "final_ready": 0
+}

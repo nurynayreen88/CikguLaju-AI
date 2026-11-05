@@ -1,0 +1,166 @@
+{
+  "audit_date": "2026-11-06",
+  "year": 4,
+  "unit": 4,
+  "title": "بيتي جنتي",
+  "source_book": {
+    "url": "https://drive.google.com/file/d/1o53JpmljwxCUkyVYMWLSGnARs85gbncO/view",
+    "isbn": "978-983-49-2480-5",
+    "publisher": "Dewan Bahasa dan Pustaka untuk KPM",
+    "first_printing": 2019,
+    "unit_printed_page_range": "85–112"
+  },
+  "source_dskp": "https://drive.google.com/file/d/1J3hPVU5QhA3z1Mus8MEKntWI-83WpImj/view",
+  "release_authorized": false,
+  "final_ready": 0,
+  "source_type": "text extraction from existing book in Drive, not individual visual page inspection",
+  "numbering_status": "PdP043–058 is provisional; not officially allocated by RPT 2027",
+  "coverage_status": "16 proposals span main printed exercises pp86–112; does not certify all unit activities or precise annual session count",
+  "items": [
+    {
+      "pdp": "043",
+      "sp": "1.1.1",
+      "page": 86,
+      "activity": "Dengar dan tiru perkataan rumah ber-ال qamariah dan syamsiah",
+      "manual_approval": false,
+      "annual_rpt_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "044",
+      "sp": "1.1.2",
+      "page": 86,
+      "activity": "Mengecam bunyi lam dalam perkataan rumah yang didengar",
+      "manual_approval": false,
+      "annual_rpt_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "045",
+      "sp": "3.1.1",
+      "page": 87,
+      "activity": "Menulis kata rumah menggunakan ال dengan sambungan tepat",
+      "manual_approval": false,
+      "annual_rpt_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "046",
+      "sp": "1.2.1",
+      "page": 88,
+      "activity": "Dengar dan ulang kosa kata peralatan dalam rumah",
+      "manual_approval": false,
+      "annual_rpt_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "047",
+      "sp": "1.2.3",
+      "page": 90,
+      "activity": "Mengelaskan frasa nama ruang dalam rumah berdasarkan sebutan",
+      "manual_approval": false,
+      "annual_rpt_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "048",
+      "sp": "2.2.1",
+      "page": 91,
+      "activity": "Membaca perkataan objek rumah dengan sebutan tepat",
+      "manual_approval": false,
+      "annual_rpt_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "049",
+      "sp": "2.2.4",
+      "page": 93,
+      "activity": "Membezakan perkataan objek dan frasa ruang rumah ketika membaca",
+      "manual_approval": false,
+      "annual_rpt_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "050",
+      "sp": "3.2.1",
+      "page": 94,
+      "activity": "Menyalin nama peralatan dan bilik rumah dalam tulisan Arab",
+      "manual_approval": false,
+      "annual_rpt_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "051",
+      "sp": "1.3.2",
+      "page": 97,
+      "activity": "Menyebut soalan dan jawapan tempat objek dengan intonasi betul",
+      "manual_approval": false,
+      "annual_rpt_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "052",
+      "sp": "2.3.1",
+      "page": 98,
+      "activity": "Membaca dialog ringkas tentang milik dan peralatan rumah",
+      "manual_approval": false,
+      "annual_rpt_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "053",
+      "sp": "2.3.4",
+      "page": 99,
+      "activity": "Membaca dan menyusun kata menjadi ayat lokasi rumah",
+      "manual_approval": false,
+      "annual_rpt_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "054",
+      "sp": "3.3.1",
+      "page": 100,
+      "activity": "Menulis ayat mudah tentang kedudukan perkakas rumah",
+      "manual_approval": false,
+      "annual_rpt_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "055",
+      "sp": "3.4.1",
+      "page": 104,
+      "activity": "Menulis dua ayat yang saling berkait tentang perabot rumah",
+      "manual_approval": false,
+      "annual_rpt_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "056",
+      "sp": "1.4.1",
+      "page": 105,
+      "activity": "Mendengar dan meniru dialog bersambung menerima tetamu",
+      "manual_approval": false,
+      "annual_rpt_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "057",
+      "sp": "1.4.4",
+      "page": 108,
+      "activity": "Membina ayat bersambung tentang lawatan rumah warga emas",
+      "manual_approval": false,
+      "annual_rpt_verified": false,
+      "ready": false
+    },
+    {
+      "pdp": "058",
+      "sp": "2.4.2",
+      "page": 112,
+      "activity": "Membaca dan mempersembahkan projek siluet perkakas rumah",
+      "manual_approval": false,
+      "annual_rpt_verified": false,
+      "ready": false
+    }
+  ],
+  "total_added": 16
+}

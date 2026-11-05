@@ -1,0 +1,129 @@
+{
+  "audited": "2026-11-06",
+  "year": 4,
+  "unit": 2,
+  "title": "من في المدرسة؟",
+  "source_book": {
+    "publisher": "Dewan Bahasa dan Pustaka untuk KPM",
+    "edition": "Cetakan Pertama 2019",
+    "isbn": "978-983-49-2480-5",
+    "drive_pdf": "https://drive.google.com/file/d/1o53JpmljwxCUkyVYMWLSGnARs85gbncO/view",
+    "unit_printed_pages": "29-56"
+  },
+  "source_dskp": "https://drive.google.com/file/d/1J3hPVU5QhA3z1Mus8MEKntWI-83WpImj/view",
+  "scope_note": "Only printed pages 30-48 included in provisional new drafts. Remaining Unit 2 pages 49-56 still require PdP mapping; candidate numbering 013-024 not verified annual RPT 2027.",
+  "items": [
+    {
+      "pdp": "013",
+      "sp": "1.1.1",
+      "printed_page": "30",
+      "activity": "Mendengar dan mengulang kata ber-ال syamsiah/qamariah tentang sekolah",
+      "source_text_reviewed": true,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "014",
+      "sp": "1.1.2",
+      "printed_page": "30",
+      "activity": "Mengenal bunyi ال qamariah/syamsiah melalui pendengaran",
+      "source_text_reviewed": true,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "015",
+      "sp": "2.1.1",
+      "printed_page": "31",
+      "activity": "Membaca kata ber-ال tentang sekolah",
+      "source_text_reviewed": true,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "016",
+      "sp": "3.1.1",
+      "printed_page": "31",
+      "activity": "Menulis kata ber-ال dengan sambungan huruf yang betul",
+      "source_text_reviewed": true,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "017",
+      "sp": "1.2.1",
+      "printed_page": "32",
+      "activity": "Dengar dan sebut nama pekerjaan serta jawatan di sekolah",
+      "source_text_reviewed": true,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "018",
+      "sp": "1.2.2",
+      "printed_page": "32",
+      "activity": "Mengenal nama warga sekolah apabila didengar",
+      "source_text_reviewed": true,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "019",
+      "sp": "1.2.4",
+      "printed_page": "34",
+      "activity": "Membezakan frasa jawatan warga sekolah yang didengar",
+      "source_text_reviewed": true,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "020",
+      "sp": "2.2.1",
+      "printed_page": "36",
+      "activity": "Membaca nama warga sekolah dan peranan mereka",
+      "source_text_reviewed": true,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "021",
+      "sp": "3.2.1",
+      "printed_page": "38",
+      "activity": "Menulis kosa kata warga sekolah dengan betul",
+      "source_text_reviewed": true,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "022",
+      "sp": "1.3.4",
+      "printed_page": "42",
+      "activity": "Membezakan ayat dialog ringkas tentang jawatan sekolah",
+      "source_text_reviewed": true,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "023",
+      "sp": "2.3.2",
+      "printed_page": "44",
+      "activity": "Membaca ayat mudah untuk bertemu pegawai sekolah",
+      "source_text_reviewed": true,
+      "manual_approval": false,
+      "ready": false
+    },
+    {
+      "pdp": "024",
+      "sp": "3.4.1",
+      "printed_page": "48",
+      "activity": "Menulis ayat bersambung tentang warga sekolah",
+      "source_text_reviewed": true,
+      "manual_approval": false,
+      "ready": false
+    }
+  ],
+  "candidate_rph_count": 12,
+  "unit_completed": false,
+  "final_ready": 0,
+  "release_authorized": false
+}

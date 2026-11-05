@@ -1,0 +1,386 @@
+{
+  "subject": "Bahasa Arab",
+  "scope": "Tahun 2–6",
+  "created_date": "2026-11-05",
+  "repository_branch": "staging/bahasa-arab-t2-t6-20261105",
+  "release_status": "DRAF_STAGING_SAHAJA",
+  "production_db_touched": false,
+  "telegram_live_touched": false,
+  "web_live_touched": false,
+  "source_policy": "Jangan tanda READY sebelum SK/SP DSKP, RPT, muka surat dan aktiviti buku teks disemak secara individu; jangan guna minggu sebagai ID PdP.",
+  "total_final_ready_rph": 0,
+  "years": {
+    "2": {
+      "dskp": {
+        "title": "GuruBesar_DSKP_Bahasa_Arab_Tahun_2.pdf",
+        "url": "https://drive.google.com/file/d/1WY_c69UshDm3jHzVK86G2xfu77UUkGYO/view",
+        "text_extractable": true
+      },
+      "textbook": {
+        "title": "Buku Teks Bahasa Arab Tahun 2 KSSR Semakan (sumber sekolah KPM)",
+        "url": "https://sites.google.com/moe-dl.edu.my/sketta2bahasaarab/buku-teks-digital",
+        "text_extractable": false,
+        "source_page_verified": false,
+        "alternate_public_copy": "https://anyflip.com/ypnd/tcce/basic",
+        "alternate_public_copy_status": "Pautan buku teks ditemukan; halaman PdP individu belum disahkan",
+        "external_public_source_confirmed": true,
+        "bibliographic_verification": {
+          "status": "ISBN_VERIFIED_PUBLISHER_CATALOGUE",
+          "isbn": "978-983-49-1589-6",
+          "source": "https://stage.jendeladbp.my/ujana/bahasa-arab-tahun-2-bt-pt/",
+          "publication_date": "2017-11-15",
+          "note": "ISBN Buku Teks (BT), bukan Buku Aktiviti (BA). Buku PDF belum dipadankan ke edisi penerbit."
+        },
+        "original_edition_text_link": "https://anyflip.com/slrpb/qzcr/basic",
+        "text_extractable_from_alternate": true,
+        "alternate_original_textbook_publication": 2017
+      },
+      "rpt_2026": "https://anyflip.com/zxzlm/jffk/basic",
+      "unit_1": "هيا نتعارف",
+      "textbook_units_confirmed": [
+        {
+          "unit": 1,
+          "title": "هيا نتعارف",
+          "source": "https://anyflip.com/slrpb/qzcr/basic"
+        },
+        {
+          "unit": 2,
+          "title": "أحب أسرتي",
+          "source": "https://sites.google.com/moe-dl.edu.my/fcpi/bahasa-arab/tahun-2-bahasa-arab/%D8%A7%D9%84%D9%88%D8%AD%D8%AF%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-1"
+        },
+        {
+          "unit": 3,
+          "title": "جسمي السليم",
+          "source": "https://sites.google.com/moe-dl.edu.my/fcpi/bahasa-arab/tahun-2-bahasa-arab/%D8%A7%D9%84%D9%88%D8%AD%D8%AF%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-1"
+        },
+        {
+          "unit": 4,
+          "title": "أحافظ على الأدوات الدراسية",
+          "source": "https://sites.google.com/moe-dl.edu.my/fcpi/bahasa-arab/tahun-2-bahasa-arab/%D8%A7%D9%84%D9%88%D8%AD%D8%AF%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-1"
+        }
+      ],
+      "provisional_rph_count": 12,
+      "external_textbook_portal": "https://sites.google.com/moe-dl.edu.my/sketta2bahasaarab/buku-teks-digital",
+      "external_dskp_portal": "https://sites.google.com/moe-dl.edu.my/unitbahasaprogram-pso-2021/mata-pelajaran-unit-bahasa/bahasa-arab/sekolah-rendah/dskp",
+      "external_rpt_2026_portal": "https://sites.google.com/moe-dl.edu.my/panitia-bahasa-arab-sksn/induk/rptdskp",
+      "external_activity_book_portal": "https://sites.google.com/moe-dl.edu.my/panitiapendidikanislamtldmkk/buku-teks",
+      "activity_book_bibliographic_verification": {
+        "isbn": "978-983-49-1590-2",
+        "source": "https://jendeladbp.my/ujana/bahasa-arab-tahun-2-ba-pt/",
+        "publication_date": "2017-11-14",
+        "note": "Buku Aktiviti Tahun 2, bukan Buku Teks"
+      },
+      "source_evidence_pdp001_012": "audits/bahasa_arab_y2_pdp001_012_text_source_audit_20261106.json",
+      "source_text_reviewed_drafts": 12,
+      "source_book_sp_print_unresolved": [
+        "002",
+        "004",
+        "010",
+        "011"
+      ]
+    },
+    "3": {
+      "dskp": {
+        "title": "GuruBesar_DSKP_Bahasa_Arab_Tahun_3.pdf",
+        "url": "https://drive.google.com/file/d/1VQcCrSyo-zmAndvAFv9pScQcLT-DRl00/view",
+        "text_extractable": true
+      },
+      "textbook": {
+        "title": "GuruBesar_BukuTeks_Bahasa_Arab_T3_SK.pdf",
+        "url": "https://drive.google.com/file/d/1U-j2TPeVTyLaZbU2qGDb9jmf53KAwNNH/view",
+        "text_extractable": false,
+        "source_page_verified": false,
+        "note": "PDF imbasan CamScanner; teks tidak tersedia untuk pemadanan halaman automatik",
+        "alternate_public_reference": "https://sites.google.com/moe-dl.edu.my/sketta2bahasaarab/buku-teks-digital",
+        "bibliographic_verification": {
+          "status": "ISBN_EDITION_CONFIRMED_PUBLISHER_AND_BOOK_TOC",
+          "isbn": "978-983-49-2033-3",
+          "publisher": "Dewan Bahasa dan Pustaka untuk KPM",
+          "edition": "Cetakan Pertama 2018",
+          "source": "https://jendeladbp.my/ujana/bahasa-arab-tahun-3-bt-pt/",
+          "textbook_toc_evidence": "https://www.scribd.com/document/438677752/Bahasa-Arab-Tahun-3-Teks-KSSR-Semakan",
+          "page_mapping_status": "UNIT_TOC_ONLY"
+        },
+        "unit_page_ranges_verified": true
+      },
+      "rpt_2026": "https://anyflip.com/zxzlm/vmip/basic",
+      "unit_1": "تفضل إلى الفصل",
+      "textbook_units_confirmed": [
+        {
+          "unit": 1,
+          "title": "تفضل إلى الفصل",
+          "printed_pages": "1-28"
+        },
+        {
+          "unit": 2,
+          "title": "ملابسي الجميلة",
+          "printed_pages": "29-58"
+        },
+        {
+          "unit": 3,
+          "title": "الألوان حولنا",
+          "printed_pages": "59-86"
+        },
+        {
+          "unit": 4,
+          "title": "الوقت كالذهب",
+          "printed_pages": "87-117"
+        }
+      ],
+      "provisional_rph_count": 12,
+      "unit_4_corrected": "الوقت كالذهب",
+      "external_textbook_portal": "https://sites.google.com/moe-dl.edu.my/sketta2bahasaarab/buku-teks-digital",
+      "external_dskp_portal": "https://sites.google.com/moe-dl.edu.my/unitbahasaprogram-pso-2021/mata-pelajaran-unit-bahasa/bahasa-arab/sekolah-rendah/dskp",
+      "external_rpt_2026_portal": "https://sites.google.com/moe-dl.edu.my/panitia-bahasa-arab-sksn/induk/rptdskp",
+      "external_activity_book_portal": "https://sites.google.com/moe-dl.edu.my/panitiapendidikanislamtldmkk/buku-teks",
+      "unit_4_theme_tag": "الزمان",
+      "unit_4_correction_note": "Sebelum ini indeks tersalah menganggap label DSKP الزمان sebagai tajuk unit; judul buku teks Tahun 3 2018 ialah الوقت كالذهب.",
+      "source_evidence_pdp001_012": "audits/bahasa_arab_y3_pdp001_012_source_audit_20261106.json",
+      "unit_1_source_reviewed_drafts": 12,
+      "source_review_is_not_individual_approval": true
+    },
+    "4": {
+      "dskp": {
+        "title": "GuruBesar_DSKP_Bahasa_Arab_Tahun_4.pdf",
+        "url": "https://drive.google.com/file/d/1J3hPVU5QhA3z1Mus8MEKntWI-83WpImj/view",
+        "text_extractable": true
+      },
+      "textbook": {
+        "title": "GuruBesar_BukuTeks_Bahasa_Arab_T4_SK.pdf",
+        "url": "https://drive.google.com/file/d/1o53JpmljwxCUkyVYMWLSGnARs85gbncO/view",
+        "text_extractable": true,
+        "source_page_verified": false,
+        "note": "Halaman unit berdasarkan kandungan buku; halaman PdP belum disahkan",
+        "bibliographic_verification": {
+          "status": "ISBN_EDITION_CONFIRMED_FROM_DRIVE_FRONT_MATTER",
+          "source_pdf": "https://drive.google.com/file/d/1o53JpmljwxCUkyVYMWLSGnARs85gbncO/view",
+          "isbn": "978-983-49-2480-5",
+          "publisher": "Dewan Bahasa dan Pustaka untuk KPM",
+          "edition": "Cetakan Pertama 2019"
+        },
+        "unit_page_ranges_verified": true
+      },
+      "rpt_2026": "https://anyflip.com/zxzlm/xrtv/basic",
+      "unit_1": "الشهور الميلادية",
+      "textbook_units_confirmed": [
+        {
+          "unit": 1,
+          "title": "الشهور الميلادية",
+          "printed_pages": "1-28"
+        },
+        {
+          "unit": 2,
+          "title": "من في المدرسة؟",
+          "printed_pages": "29-56"
+        },
+        {
+          "unit": 3,
+          "title": "أحب مدرستي",
+          "printed_pages": "57-84"
+        },
+        {
+          "unit": 4,
+          "title": "بيتي جنتي",
+          "printed_pages": "85-112"
+        }
+      ],
+      "provisional_rph_count": 12,
+      "external_textbook_portal": "https://sites.google.com/moe-dl.edu.my/sketta2bahasaarab/buku-teks-digital",
+      "external_dskp_portal": "https://sites.google.com/moe-dl.edu.my/unitbahasaprogram-pso-2021/mata-pelajaran-unit-bahasa/bahasa-arab/sekolah-rendah/dskp",
+      "external_rpt_2026_portal": "https://sites.google.com/moe-dl.edu.my/panitia-bahasa-arab-sksn/induk/rptdskp",
+      "first_six_source_evidence": "audits/bahasa_arab_y4_textbook_pdp001_006_evidence_20261106.json",
+      "source_evidence_pdp007_012": "audits/bahasa_arab_y4_pdp007_012_source_audit_20261106.json",
+      "source_reviewed_drafts_total": 58,
+      "source_review_unresolved": [],
+      "source_review_remediated": [
+        "012"
+      ],
+      "source_review_remediation_status": "TEXTBOOK_DIALOG_ALIGNED_STILL_AWAITING_RPT_2027_AND_RELEASE_QA",
+      "unit2_candidate_rph_count": 16,
+      "unit2_candidate_rph_pdp_range": "013–028",
+      "unit2_source_evidence_file": "audits/bahasa_arab_y4_unit2_pdp013_024_text_source_audit_20261106.json",
+      "unit2_coverage_status": "DRAF_REPRESENTATIVE_PAGES_30_56_NO_VERIFIED_RPT_2027_OR_VISUAL_PAGE_APPROVAL",
+      "unit2_release_approved": false,
+      "unit2_tail_evidence_file": "audits/bahasa_arab_y4_unit2_tail_unit3_pdp025_042_text_source_audit_20261106.json",
+      "unit3_candidate_rph_count": 14,
+      "unit3_candidate_rph_pdp_range": "029–042",
+      "unit3_source_evidence_file": "audits/bahasa_arab_y4_unit2_tail_unit3_pdp025_042_text_source_audit_20261106.json",
+      "unit3_coverage_status": "DRAF_REPRESENTATIVE_PAGES_58_84_NO_VERIFIED_RPT_2027_OR_VISUAL_PAGE_APPROVAL",
+      "unit3_release_approved": false,
+      "unit4_candidate_rph_count": 16,
+      "unit4_candidate_rph_pdp_range": "043–058",
+      "unit4_source_evidence_file": "audits/bahasa_arab_y4_unit4_pdp043_058_text_source_audit_20261106.json",
+      "unit4_coverage_status": "DRAF_SAMPLE_BASED_PAGES_86_112_NO_MANUAL_VISUAL_OR_RPT_APPROVAL",
+      "unit4_release_approved": false,
+      "all_four_units_have_candidate_pdp": true,
+      "year_4_final_ready": false
+    },
+    "5": {
+      "dskp": {
+        "title": "GuruBesar_DSKP_Bahasa_Arab_Tahun_5.pdf",
+        "url": "https://drive.google.com/file/d/16px1xzM1OQxa5-Pggb1nGLN-L4a4wSHY/view",
+        "text_extractable": true
+      },
+      "textbook": {
+        "title": "GuruBesar_BukuTeks_Bahasa_Arab_T5_SK.pdf",
+        "url": "https://drive.google.com/file/d/1OI3RZ8-NXE2bVSOVqSz9bEWCh2tQEN5U/view",
+        "text_extractable": true,
+        "source_page_verified": false,
+        "note": "Halaman unit berdasarkan kandungan buku; halaman PdP belum disahkan",
+        "bibliographic_verification": {
+          "status": "ISBN_EDITION_CONFIRMED_FROM_DRIVE_FRONT_MATTER",
+          "source_pdf": "https://drive.google.com/file/d/1OI3RZ8-NXE2bVSOVqSz9bEWCh2tQEN5U/view",
+          "isbn": "978-983-49-2838-4",
+          "publisher": "Dewan Bahasa dan Pustaka untuk KPM",
+          "edition": "Cetakan Pertama 2020"
+        },
+        "unit_page_ranges_verified": true
+      },
+      "rpt_2026": "https://anyflip.com/zxzlm/ucjc/basic",
+      "unit_1": "في المطبخ",
+      "textbook_units_confirmed": [
+        {
+          "unit": 1,
+          "title": "في المطبخ",
+          "printed_pages": "1-28"
+        },
+        {
+          "unit": 2,
+          "title": "ما ألذ الطعام!",
+          "printed_pages": "29-56"
+        },
+        {
+          "unit": 3,
+          "title": "هيا نشترك في الأنشطة اللاصفية",
+          "printed_pages": "57-84"
+        },
+        {
+          "unit": 4,
+          "title": "رفقا بالحيوانات!",
+          "printed_pages": "85-112"
+        }
+      ],
+      "provisional_rph_count": 12,
+      "external_textbook_portal": "https://sites.google.com/moe-dl.edu.my/sketta2bahasaarab/buku-teks-digital",
+      "external_dskp_portal": "https://sites.google.com/moe-dl.edu.my/unitbahasaprogram-pso-2021/mata-pelajaran-unit-bahasa/bahasa-arab/sekolah-rendah/dskp",
+      "external_rpt_2026_portal": "https://sites.google.com/moe-dl.edu.my/panitia-bahasa-arab-sksn/induk/rptdskp",
+      "unit_3_title_corrected": "هيا نشترك في الأنشطة اللاصفية",
+      "unit_3_correction_note": "Judul sebenar Unit 3 BT KSSR Tahun 5 ialah aktiviti luar bilik darjah/kokurikulum (اللاصفية), bukan aktiviti dalam kelas (الصفية).",
+      "source_evidence_pdp001_012": "audits/bahasa_arab_y5_pdp001_012_source_audit_20261106.json",
+      "page_source_reviewed_drafts": 12,
+      "source_audit_unresolved": [],
+      "source_audit_remediated": [
+        "002",
+        "004",
+        "012"
+      ],
+      "source_audit_remediation_status": "TEXTBOOK_CODE_AND_ACTIVITY_REVISED_STILL_AWAITING_RPT_2027_AND_RELEASE_QA",
+      "unit2_candidate_rph_count": 16,
+      "unit2_candidate_pdp_range": "013–028",
+      "unit2_source_evidence_file": "audits/bahasa_arab_y5_unit2_pdp013_028_text_source_audit_20261106.json",
+      "unit2_coverage_status": "DRAF_SOURCE_TEXT_OF_BOOK_PAGES_30_56__NOT_ANNUAL_RPT_CONFIRMED",
+      "unit2_release_approved": false,
+      "source_reviewed_drafts_total": 44,
+      "unit3_candidate_rph_count": 16,
+      "unit3_candidate_pdp_range": "029–044",
+      "unit3_evidence_file": "audits/bahasa_arab_y5_unit3_pdp029_044_text_source_audit_20261106.json",
+      "unit3_coverage_status": "DRAF_SOURCE_TEXT_OF_ORIGINAL_BOOK_PAGES_58_84; ANNUAL_RPT_NOT_APPROVED",
+      "unit3_release_approved": false
+    },
+    "6": {
+      "dskp": {
+        "title": "DSKP KSSR Semakan Bahasa Arab Tahun 6 (sumber panitia sekolah KPM)",
+        "url": "https://sites.google.com/moe-dl.edu.my/ba2k26/dokumen-standard-kurikulum/dskp-mata-pelajaran-terkini",
+        "text_extractable": false,
+        "note": "Sumber DSKP KSSR Semakan Tahun 6 tambahan boleh dibaca melalui teks AnyFlip; dokumen asal dari panitia sekolah belum diaudit sepenuhnya.",
+        "secondary_text_reference": "https://anyflip.com/bpvwr/huxb/basic",
+        "alternate_public_copy": "https://anyflip.com/vouoy/jjuq/basic",
+        "external_public_source_confirmed": true,
+        "html_text_source_verified": "https://anyflip.com/mhtcw/pstm/basic",
+        "original_pdf_audited": false
+      },
+      "textbook": {
+        "title": "GuruBesar_BukuTeks_Bahasa_Arab_T6.pdf",
+        "url": "https://drive.google.com/file/d/1WPab-TZG1SpqYhBIbo6Lb5wVr98_aIbP/view",
+        "text_extractable": false,
+        "source_page_verified": false,
+        "alternate_public_copy": "https://anyflip.com/jxgvj/krzu/basic/",
+        "alternate_public_copy_status": "Edisi teks cetakan 2021 ditemui; belum semak padanan halaman dengan PDF Drive",
+        "bibliographic_verification": {
+          "status": "VERIFIED_FROM_PUBLIC_HTML_TEXTBOOK_TOC",
+          "source": "https://anyflip.com/gcmci/mxcs/basic",
+          "url": "https://anyflip.com/gcmci/mxcs/basic",
+          "isbn": "978-983-49-3300-5",
+          "publisher": "Dewan Bahasa dan Pustaka",
+          "edition": "Cetakan Pertama 2021",
+          "toc": [
+            {
+              "unit": 1,
+              "title_arab": "حياتنا أجمل بالنظافة",
+              "printed_page_start": 1,
+              "printed_page_end": 30
+            },
+            {
+              "unit": 2,
+              "title_arab": "الشباب أمل الأمة",
+              "printed_page_start": 31,
+              "printed_page_end": 60
+            },
+            {
+              "unit": 3,
+              "title_arab": "رحلة سعيدة",
+              "printed_page_start": 61,
+              "printed_page_end": 90
+            },
+            {
+              "unit": 4,
+              "title_arab": "فدائي يا وطني",
+              "printed_page_start": 91,
+              "printed_page_end": 120
+            }
+          ]
+        },
+        "unit_page_ranges_verified": true
+      },
+      "rpt_2026": "https://anyflip.com/zxzlm/bmaa/basic",
+      "unit_1": "حياتنا أجمل بالنظافة",
+      "textbook_units_confirmed": [],
+      "provisional_rph_count": 12,
+      "external_textbook_portal": "https://sites.google.com/moe-dl.edu.my/sketta2bahasaarab/buku-teks-digital",
+      "external_dskp_portal": "https://sites.google.com/moe-dl.edu.my/unitbahasaprogram-pso-2021/mata-pelajaran-unit-bahasa/bahasa-arab/sekolah-rendah/dskp",
+      "external_rpt_2026_portal": "https://sites.google.com/moe-dl.edu.my/panitia-bahasa-arab-sksn/induk/rptdskp",
+      "draft_lesson_page_evidence_file": "audits/bahasa_arab_y6_textbook_page_evidence_20261105.json",
+      "source_evidence_pdp001_012": "audits/bahasa_arab_y6_pdp001_012_text_source_audit_20261106.json",
+      "source_text_reviewed_drafts": 12,
+      "source_content_approved": false
+    }
+  },
+  "mandatory_release_gates": [
+    "DSKP setiap Tahun dibaca dan kod SK/SP diluluskan",
+    "Buku teks dan unit lengkap serta setiap halaman PdP disahkan",
+    "RPT 2027 A/B diselaraskan mengikut jadual sekolah dan sumber 2026",
+    "Setiap RPH satu halaman A4, aktivitinya khusus dan disemak guru",
+    "Penjana Telegram/Web menggunakan versi dan kandungan sama",
+    "Ujian integrasi, hash, FK/orphan dan tiada penggantian data sedia ada",
+    "Kelulusan manual individu dan pengaktifan hanya selepas CI lulus"
+  ],
+  "stage_progress_note": "60 RPH DRAF (PdP 001–012, 12 setiap tahun); 20 unit dalam indeks, 15 bank aktiviti Unit 2–4. Semua DRAF; 0 FINAL READY. | 6 Nov 2026: 12 additional Year4 Unit2 provisional drafts PdP013–024, non-final.",
+  "additional_unit_activity_bank_count": 15,
+  "additional_unit_activity_bank_status": "DRAF_SEMAK_BELUM_READY",
+  "primary_crosswalk_file": "rpt_2027/bahasa_arab/pdp_001_012_DRAF.csv",
+  "external_source_index_drive_folder": "https://drive.google.com/drive/folders/1M0C9jmFvvkRIDoYB2QXJ2oQnTWUWcN9P",
+  "external_source_index_google_doc": "https://docs.google.com/document/d/1z5rz0j-xtIwm1JF8-p0sc5BQvk8q_W_UOZR3yFAnl7A/edit?usp=drivesdk",
+  "external_source_registry_path": "audits/bahasa_arab_external_reference_index_20261105.json",
+  "external_source_status": "WEB_REFERENCE_DISCOVERED; link cataloged in Drive only, no textbook PDFs copied from public internet",
+  "bibliography_file": "audits/bahasa_arab_buku_teks_bibliography_20261105.json",
+  "total_provisional_rph_count": 138,
+  "latest_technical_a4_validation": {
+    "source_commit": "6ba64bb7d1cf4e7db15b30baf30ded20486065b3",
+    "github_actions_run": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42132565716",
+    "word_document_count": 138,
+    "pdf_document_count": 138,
+    "pdf_pages_each": 1,
+    "status": "PASSED_OFFLINE_TECHNICAL_ONLY",
+    "release_approval": false
+  }
+}

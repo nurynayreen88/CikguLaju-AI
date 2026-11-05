@@ -1,0 +1,173 @@
+{
+  "version": "2026-11-05-y6-textbook-v1",
+  "year": 6,
+  "language": "ms",
+  "status": "BOOK_SOURCE_PAGES_REVIEWED_BUT_RPH_NOT_APPROVED",
+  "book": {
+    "title": "Buku Teks Bahasa Arab Tahun 6 KSSR Semakan 2017",
+    "publisher": "Dewan Bahasa dan Pustaka untuk Kementerian Pendidikan Malaysia",
+    "edition": "Cetakan Pertama 2021",
+    "isbn": "978-983-49-3300-5",
+    "url": "https://anyflip.com/gcmci/mxcs/basic",
+    "rights_notice": "Hak cipta terpelihara: tidak boleh terbit semula tanpa kebenaran KPM",
+    "toc": [
+      {
+        "unit": 1,
+        "title_arab": "حياتنا أجمل بالنظافة",
+        "printed_page_start": 1,
+        "printed_page_end": 30
+      },
+      {
+        "unit": 2,
+        "title_arab": "الشباب أمل الأمة",
+        "printed_page_start": 31,
+        "printed_page_end": 60
+      },
+      {
+        "unit": 3,
+        "title_arab": "رحلة سعيدة",
+        "printed_page_start": 61,
+        "printed_page_end": 90
+      },
+      {
+        "unit": 4,
+        "title_arab": "فدائي يا وطني",
+        "printed_page_start": 91,
+        "printed_page_end": 120
+      }
+    ]
+  },
+  "dskp": {
+    "title": "DSKP KSSR Semakan 2017 Bahasa Arab Tahun 6",
+    "edition": "Terbitan 2019, BPK/KPM",
+    "url": "https://anyflip.com/mhtcw/pstm/basic"
+  },
+  "printed_page_note": "Halaman buku ialah nombor bercetak, bukan nombor indeks flipbook; 4 unit sahaja disahkan pada tahap TOC.",
+  "all_unit_pages_verified_at_toc_level": true,
+  "individual_rph_approval": false,
+  "lesson_to_page_mapping_status": "CANDIDATE_AUDIT_NOT_FINAL",
+  "source_method": "Evidence from publicly readable HTML transcription of the KPM/DBP 2021 textbook, not a separate visual PDF inspection or manual lesson approval",
+  "source_excerpt_reproduction": false,
+  "lesson_candidates": [
+    {
+      "lesson_id": "year6/lesson_001",
+      "sp_in_draft": "1.1.1",
+      "book_printed_pages_candidate": "2",
+      "evidence_topic": "Latihan bunyi huruf ع/أ, ح/ه; kod 1.1.1 dipaparkan pada buku",
+      "evidence_code": "MATCH_TOPICAL_SP",
+      "quality_note": "Bukan kelulusan RPH",
+      "ready": false
+    },
+    {
+      "lesson_id": "year6/lesson_002",
+      "sp_in_draft": "1.1.2",
+      "book_printed_pages_candidate": "3",
+      "evidence_topic": "Latihan dengar dan bina kata bagi bunyi hampir sama, kod 1.1.2 pada buku",
+      "evidence_code": "MATCH_TOPICAL_SP",
+      "quality_note": "Fokus kelas ialah mengecam bunyi, bukan susunan rasmi PdP",
+      "ready": false
+    },
+    {
+      "lesson_id": "year6/lesson_003",
+      "sp_in_draft": "1.2.1",
+      "book_printed_pages_candidate": "4–5",
+      "evidence_topic": "Istima' dan ulang kosa kata alatan kebersihan",
+      "evidence_code": "MATCH_TOPICAL_SP",
+      "quality_note": "Buku membahagikan kata kepada beberapa halaman",
+      "ready": false
+    },
+    {
+      "lesson_id": "year6/lesson_004",
+      "sp_in_draft": "2.1.2",
+      "book_printed_pages_candidate": "2–3",
+      "evidence_topic": "Membaca kata dengan bunyi ع/أ/ح/ه pada halaman bercetak 2; SP 2.1.2 DSKP/buku teks",
+      "evidence_code": "MATCH_TOPICAL_SP_AFTER_CORRECTION",
+      "quality_note": "Kod draf dibetulkan selepas perbandingan DSKP dan contoh buku; belum diluluskan secara manual",
+      "ready": false
+    },
+    {
+      "lesson_id": "year6/lesson_005",
+      "sp_in_draft": "2.2.1",
+      "book_printed_pages_candidate": "6–9",
+      "evidence_topic": "Bacaan kosa kata kebersihan seperti صابون, شامبو, مشط, منشفة",
+      "evidence_code": "MATCH_TOPICAL_SP",
+      "quality_note": "Halaman 6–9 mengandungi latihan kata berlainan",
+      "ready": false
+    },
+    {
+      "lesson_id": "year6/lesson_006",
+      "sp_in_draft": "3.1.1",
+      "book_printed_pages_candidate": "10–12",
+      "evidence_topic": "Latihan menulis/ melengkapkan kosa kata kebersihan",
+      "evidence_code": "MATCH_TOPICAL_SP",
+      "quality_note": "Bukti latihan mengandungi salinan dan pengisian",
+      "ready": false
+    },
+    {
+      "lesson_id": "year6/lesson_007",
+      "sp_in_draft": "1.3.1",
+      "book_printed_pages_candidate": "12–15",
+      "evidence_topic": "Dialog ringkas alat kebersihan: ماذا تستخدم؟",
+      "evidence_code": "MATCH_TOPICAL_SP",
+      "quality_note": "Ayat cadangan dalam RPH perlu dipadankan dengan dialog halaman khusus",
+      "ready": false
+    },
+    {
+      "lesson_id": "year6/lesson_008",
+      "sp_in_draft": "1.3.2",
+      "book_printed_pages_candidate": "12–15",
+      "evidence_topic": "Intonasi soal jawab tentang alat kebersihan",
+      "evidence_code": "MATCH_TOPICAL_SP",
+      "quality_note": "Ayat tertentu draf belum semua sama seperti contoh buku",
+      "ready": false
+    },
+    {
+      "lesson_id": "year6/lesson_009",
+      "sp_in_draft": "2.3.1",
+      "book_printed_pages_candidate": "12–15",
+      "evidence_topic": "Membaca ayat mudah penjagaan kebersihan",
+      "evidence_code": "MATCH_TOPICAL_SP",
+      "quality_note": "RPH masih draf alternatif",
+      "ready": false
+    },
+    {
+      "lesson_id": "year6/lesson_010",
+      "sp_in_draft": "2.3.2",
+      "book_printed_pages_candidate": "12–15",
+      "evidence_topic": "Membaca dan melakon dialog kebersihan dengan tekanan ayat",
+      "evidence_code": "MATCH_TOPICAL_SP",
+      "quality_note": "Padanan tunggal PdP-ke-halaman belum ditetapkan",
+      "ready": false
+    },
+    {
+      "lesson_id": "year6/lesson_011",
+      "sp_in_draft": "3.2.1",
+      "book_printed_pages_candidate": "16",
+      "evidence_topic": "Latihan melengkapkan/menulis ayat mudah, kod 3.2.1 pada buku",
+      "evidence_code": "MATCH_TOPICAL_SP",
+      "quality_note": "Ayat draf berbeza daripada rangka asal",
+      "ready": false
+    },
+    {
+      "lesson_id": "year6/lesson_012",
+      "sp_in_draft": "1.4.1",
+      "book_printed_pages_candidate": "18",
+      "evidence_topic": "Contoh ayat berkait, kod 1.4.1 dipaparkan pada buku",
+      "evidence_code": "MATCH_TOPICAL_SP",
+      "quality_note": "Updated from p19 to p18 to match printed SP 1.4.1 with related sentence model; RPH revised to bucket example.",
+      "ready": false
+    }
+  ],
+  "conflicts": [],
+  "release_gate": "0 FINAL READY",
+  "resolved_discussions": [
+    {
+      "lesson": "year6/lesson_004",
+      "old_sp": "2.1.1",
+      "new_sp": "2.1.2",
+      "evidence": "Buku Teks Tahun 6 hlm. 2 dan DSKP Tahun 6 hlm. 24",
+      "status": "CONTENT_CORRECTED_BUT_NOT_FINAL_READY"
+    }
+  ],
+  "book_text_source_audit_20261106": "audits/bahasa_arab_y6_pdp001_012_text_source_audit_20261106.json"
+}
