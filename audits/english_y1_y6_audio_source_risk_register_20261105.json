@@ -37,7 +37,7 @@
       "year": 5,
       "sow": "1FHJm1tl7IamOSZWIndUMoytm6SGoexAV",
       "teacher_book": "14Vpj-DjCbOERXdx7rGG8zhzNhsnUEPsM",
-      "audit_level": "SOW_160; all 87 explicit CD/Track mentions in 62 Lessons map to original Year5 Drive MP3 candidates with 82 unique IDs; 120 MP3 physically present, 119 distinct labels, 1 duplicate. Audio speech, actual edition fidelity, app mapping and authenticated delivery still pending.",
+      "audit_level": "SOW_160; 87/87 explicit numbered audio references across 62 Lessons have Drive file candidates; all 3 original Year5 book cover PDFs visually confirm English Plus 1 Second Edition and match the MP3 naming. Independent spoken content, exact per-page activity and authenticated Telegram delivery still pending.",
       "audio_source": "English Plus 1 Year5 original Drive folder: 119 unique CD/Track labels, 120 MP3. All 87 explicit SOW references matched to candidate Drive file IDs; filename says Second Edition Students Book 1."
     },
     {
@@ -179,7 +179,7 @@
         156,
         157
       ],
-      "exact_issue": "All 87 Year5 SOW numbered audio references across 62 Lessons resolve to at least one MP3 candidate ID in the complete Google Drive source folder; 82 distinct CD/Track labels, 119 available unique labels (CD1 46, CD2 37, CD3 36) and one byte-identical CD2-12 duplicate. This is metadata/filename completeness only; exact spoken content, edition match and LIVE Telegram route remain unverified.",
+      "exact_issue": "All 87 Year5 SOW numbered audio references across 62 Lessons resolve to at least one MP3 candidate ID in the complete Google Drive source folder; 82 distinct CD/Track labels, 119 available unique labels (CD1 46, CD2 37, CD3 36) and one byte-identical CD2-12 duplicate. This is metadata/filename completeness only; exact spoken content, edition match and LIVE Telegram route remain unverified. Independently inspected three original Year5 Teacher's Book/Student's Book/Workbook covers and hashes: all English Plus 1 Second Edition, Year5, matching audio filename edition. This does NOT prove 87 spoken recordings match activities or Telegram routing.",
       "source_ids": [
         "1T-HBLwsQ2C4eC3egNFZ9ZgDLsOxDRO6N",
         "16N8fUyxWYYyzmeEIYyB7_f1MzLS2i5Zf",
@@ -188,7 +188,9 @@
       "status": "SOW_87_OF_87_TRACK_LABELS_AND_DRIVE_IDS_MATCH_CONTENT_AND_TELEGRAM_PENDING",
       "evidence_path": "audits/english_y5_all_87_sow_audio_refs_to_drive_file_ids_20261105.json",
       "scope": "All 62 Year5 SOW Lessons with 87 numbered CD/Track references",
-      "prior_inventory_evidence": "audits/english_y5_full_120_mp3_folder_inventory_20261105.json"
+      "prior_inventory_evidence": "audits/english_y5_full_120_mp3_folder_inventory_20261105.json",
+      "visual_original_edition_covers_verified": true,
+      "visual_book_covers_evidence": "audits/english_y5_original_three_books_second_edition_cover_evidence_20261105.json"
     },
     {
       "id": "Y2_L26_AUDIO_TB_CHECK",
