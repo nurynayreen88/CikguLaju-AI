@@ -92,12 +92,41 @@ class YearTwoThreeAudioPhysicalSourceEvidence(unittest.TestCase):
         self.assertFalse(report["live_telegram_send_verified"])
         self.assertEqual(report["release_status"],"NO_FINAL_READY")
 
+    def test_y3_unique_original_cd1_track97_is_a_candidate_not_audio_approval(self):
+        y3=EVIDENCE["cases"][1]
+        data=y3["class_cd_inventory"]
+        self.assertEqual(data["source_spreadsheet_id"],
+                         "1xzRM71yAZDM0ZgW_457RVtAixQ27kit7RiGaG0WASPY")
+        self.assertEqual(data["source_sheet"],"YEAR3_CLASS_CD")
+        self.assertEqual(data["source_row_number"],98)
+        self.assertEqual(data["disc_file_counts"],{"CD1":99,"CD2":91,"CD3":11})
+        self.assertEqual(data["total_files"],201)
+        self.assertTrue(data["no_track_number_gaps"])
+        self.assertEqual(data["unique_disc_containing_track97"],"CD1")
+        candidate=data["candidate"]
+        self.assertEqual(candidate["title"],"Track 97.mp3")
+        self.assertEqual(candidate["drive_file_id"],"1ZC_p24-ggASU_DceLRXUKc26nUssouk-")
+        self.assertEqual(candidate["file_size_bytes"],648935)
+        self.assertEqual(candidate["sha256"],
+                         "f7253c240cd25ff862f911d25ba3a2ffe2ebc46efc91612ade933b4a197a5fa6")
+        self.assertEqual(candidate["codec"],"mp3")
+        self.assertAlmostEqual(candidate["duration_seconds"],40.222438,places=4)
+        self.assertFalse(data["spoken_words_checked"])
+        self.assertFalse(data["actual_bot_send_checked"])
+        self.assertFalse(data["telegram_bot_file_id_route_checked"])
+        self.assertFalse(data["candidate_is_final_approved"])
+        self.assertIsNone(y3["original_track_file_id"])
+        text=(ROOT/"rph_standalone/english/year3/lesson_093.md").read_text(encoding="utf-8")
+        self.assertIn("Track 97 exists only in CD1",text)
+        self.assertIn("Do not enable or send this candidate",text)
+        self.assertIn("NOT READY FOR RELEASE",text)
+
     def test_risk_ledger_only_promotes_physical_source_not_delivery(self):
         statuses={r["id"]:r["status"] for r in RISKS["confirmed_risks"]}
         self.assertEqual(statuses["Y2_L26_AUDIO_TB_CHECK"],
                          "ORIGINAL_TB_WMA_AND_BOT_CODE_FILE_IDS_VERIFIED_LIVE_SEND_AND_SPEECH_PENDING")
         self.assertEqual(statuses["Y3_L93_TRACK97_RECHECK"],
-                         "ORIGINAL_TB_TRACK97_VERIFIED_DISC_FILE_AND_TELEGRAM_PENDING")
+                         "TB_TRACK97_AND_ONLY_CD1_CANDIDATE_FILE_HASH_VERIFIED_AUDIO_SPEECH_APP_ROUTE_PENDING")
         self.assertNotIn("FINAL_READY",EVIDENCE["overall_release"])
 
 if __name__=="__main__":
