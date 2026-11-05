@@ -9,7 +9,7 @@
 
 **Set induksi:** Guru menulis ال di papan dan murid mengenal dua huruf tersebut.
 
-**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru menunjukkan lima kata daripada buku teks serta titik sambungan yang betul; murid menyalin satu contoh dan menyemak dengan model.
+**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru menunjukkan empat kata pada Buku Teks halaman bercetak 3 (الْمُعَلِّم، الْعِيد، التَّقْوِيم، الرَّئِيس) dan satu kad pengukuhan guru. Murid menjejak sambungan huruf, menyalin satu contoh dan menyemak model.
 
 **Aktiviti 2 — Amali murid:** Murid menyalin empat kata berikutnya ke buku, mewarnakan ال dan membacanya kepada pasangan sambil guru memantau arah tulisan.
 
@@ -25,3 +25,5 @@
 **RPT rujukan 2026:** https://anyflip.com/zxzlm/xrtv/basic
 **Status rujukan buku teks:** Buku teks Unit 1 halaman bercetak 1–28; halaman khusus PdP belum disahkan; jangan cipta nombor muka surat.
 **Status penerbitan:** DRAF_STAGING / BELUM READY. Bukan bahan Telegram/Web LIVE. Semakan halaman teks, pemaparan Arab RTL, Word/PDF A4 serta pengesahan manual masih diperlukan.
+
+**Bukti padanan buku teks yang dikenal pasti:** Buku Teks Bahasa Arab Tahun 4 DBP/KPM cetakan pertama 2019, ISBN 978-983-49-2480-5, Unit 1 halaman bercetak **3**, rujukan https://anyflip.com/rzqgi/ejrv/basic. Kod SP **3.1.1** terdapat pada panduan aktiviti yang berkaitan. Halaman ini bukti sumber aktiviti sahaja; pemetaan urutan PdP kepada RPT 2027 dan kelulusan individu masih **BELUM READY**.

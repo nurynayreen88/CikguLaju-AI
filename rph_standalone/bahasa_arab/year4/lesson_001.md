@@ -12,7 +12,7 @@
 
 **Set induksi:** Guru memperdengarkan dua sebutan kata berawalan ال yang berbeza dan meminta murid meneka sama ada lam dibunyikan.
 
-**Aktiviti 1 — Dengar dan ulang:** Guru menunjukkan huruf contoh qamariah ي، ع، م dan syamsiah ر، ت، ل، ش seperti RPT 2026; murid mendengar sebutan kata contoh yang diambil guru daripada buku teks.
+**Aktiviti 1 — Dengar dan ulang:** Guru menggunakan perkataan pada Buku Teks Unit 1 halaman bercetak 2, contohnya الْيَوْم، الشَّهْر، اللُّغَة dan الرِّيَاضِيّ, untuk memodelkan sebutan ال qamariah/syamsiah. Murid mengulang dan menandakan sama ada bunyi lam didengar.
 
 **Aktiviti 2 — Amali/berpasangan:** Murid menyusun kad perkataan sebenar daripada unit buku teks kepada dua kumpulan. Setiap pasangan membaca semula perkataan yang dipilih dan menyemak sebutan bersama guru.
 
@@ -20,10 +20,12 @@
 
 **Penutup:** Murid menyatakan satu perbezaan bunyi antara ال الشمسية dan ال القمرية. Guru membetulkan contoh.
 
-**BBM:** Buku Teks Bahasa Arab Tahun 4 Unit 1 (julat halaman 1–28), kad ال dan kad perkataan
+**BBM:** Buku Teks Bahasa Arab Tahun 4 Unit 1 halaman bercetak 2 (latihan dengar dan ulang), kad ال dan kad perkataan
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif. Tindakan susulan: __________________.
 
 **Status kawalan:** DRAF_STAGING; BELUM READY; BUKAN bahan LIVE atau bukti pengesahan penuh buku teks/DSKP. Jangan jana Word/PDF kepada pengguna sebelum semakan halaman dan ujian A4.
 
 **Rujukan RPT 2026:** https://anyflip.com/zxzlm/xrtv/basic
+
+**Bukti padanan buku teks yang dikenal pasti:** Buku Teks Bahasa Arab Tahun 4 DBP/KPM cetakan pertama 2019, ISBN 978-983-49-2480-5, Unit 1 halaman bercetak **2**, rujukan https://anyflip.com/rzqgi/ejrv/basic. Kod SP **1.1.1** terdapat pada panduan aktiviti yang berkaitan. Halaman ini bukti sumber aktiviti sahaja; pemetaan urutan PdP kepada RPT 2027 dan kelulusan individu masih **BELUM READY**.

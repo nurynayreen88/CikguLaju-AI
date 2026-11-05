@@ -9,7 +9,7 @@
 
 **Set induksi:** Guru menunjukkan kad kalendar Januari hingga Mei dan bertanya nama bulan semasa.
 
-**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru memperdengarkan dan menyebut nama lima bulan secara berturutan; murid meniru mengikut suku kata dan tekanan betul.
+**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru menggunakan aktiviti kalendar bulan Masihi dalam Buku Teks halaman 4–5, memperdengarkan Januari–Mei (يناير، فبراير، مارس، إبريل، مايو). Murid meniru mengikut suku kata dan tekanan yang betul.
 
 **Aktiviti 2 — Amali murid:** Pasangan murid menyusun lima kad bulan secara urutan, kemudian murid A menyebut nama dan murid B menunjukkan nombor urutan bulan.
 
@@ -25,3 +25,5 @@
 **RPT rujukan 2026:** https://anyflip.com/zxzlm/xrtv/basic
 **Status rujukan buku teks:** Buku teks Unit 1 halaman bercetak 1–28; halaman khusus PdP belum disahkan; jangan cipta nombor muka surat.
 **Status penerbitan:** DRAF_STAGING / BELUM READY. Bukan bahan Telegram/Web LIVE. Semakan halaman teks, pemaparan Arab RTL, Word/PDF A4 serta pengesahan manual masih diperlukan.
+
+**Bukti padanan buku teks yang dikenal pasti:** Buku Teks Bahasa Arab Tahun 4 DBP/KPM cetakan pertama 2019, ISBN 978-983-49-2480-5, Unit 1 halaman bercetak **4–5**, rujukan https://anyflip.com/rzqgi/ejrv/basic. Kod SP **1.2.1** terdapat pada panduan aktiviti yang berkaitan. Halaman ini bukti sumber aktiviti sahaja; pemetaan urutan PdP kepada RPT 2027 dan kelulusan individu masih **BELUM READY**.

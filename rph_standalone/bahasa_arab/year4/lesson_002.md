@@ -9,7 +9,7 @@
 
 **Set induksi:** Guru menyebut ال pada dua kata contoh daripada bahan bulan Masihi dan murid mengenal sama ada lam dibunyikan.
 
-**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru memperdengarkan lima contoh kata daripada buku teks; murid memerhatikan bunyi selepas ال dan mengangkat kad syamsiah atau qamariah.
+**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru menggunakan contoh kata pada Buku Teks halaman bercetak 2 seperti الْيَوْم، الشَّهْر، اللُّغَة dan الرِّيَاضِيّ, kemudian menambah satu kad latihan setara. Murid mengangkat kad qamariah atau syamsiah selepas mendengar.
 
 **Aktiviti 2 — Amali murid:** Dua kumpulan membincangkan pengelasan setiap kad, kemudian menyebut semula kata bagi membuktikan pilihan; guru membetulkan lam yang digugurkan/dibunyikan.
 
@@ -17,7 +17,7 @@
 
 **Penutup:** Murid memberi satu contoh bagi setiap kategori.
 
-**BBM:** Buku teks unit 1, kad شمسية dan قمرية, papan putih
+**BBM:** Buku Teks Tahun 4 Unit 1 halaman 2, empat kata asal dan satu kad pengukuhan ciptaan guru, kad شمسية dan قمرية
 
 **Refleksi:** ____ / ____ murid mencapai sasaran. Intervensi: __________________.
 
@@ -25,3 +25,5 @@
 **RPT rujukan 2026:** https://anyflip.com/zxzlm/xrtv/basic
 **Status rujukan buku teks:** Buku teks Unit 1 halaman bercetak 1–28; halaman khusus PdP belum disahkan; jangan cipta nombor muka surat.
 **Status penerbitan:** DRAF_STAGING / BELUM READY. Bukan bahan Telegram/Web LIVE. Semakan halaman teks, pemaparan Arab RTL, Word/PDF A4 serta pengesahan manual masih diperlukan.
+
+**Bukti padanan buku teks yang dikenal pasti:** Buku Teks Bahasa Arab Tahun 4 DBP/KPM cetakan pertama 2019, ISBN 978-983-49-2480-5, Unit 1 halaman bercetak **2**, rujukan https://anyflip.com/rzqgi/ejrv/basic. Kod SP **1.1.2** terdapat pada panduan aktiviti yang berkaitan. Halaman ini bukti sumber aktiviti sahaja; pemetaan urutan PdP kepada RPT 2027 dan kelulusan individu masih **BELUM READY**.

@@ -53,3 +53,6 @@ Semakan teks isi kandungan buku sebenar DBP/KPM Tahun 3, cetakan pertama 2018, I
 Buku Teks Tahun 3 unit 1–4: 1–28, 29–58, 59–86, 87–117. Tahun 2 Buku Teks ISBN **978-983-49-1589-6**, Buku Aktiviti ISBN **978-983-49-1590-2**, diterbitkan DBP November 2017 menurut katalog penerbit. **Tiada bukti halaman individu Tahun 2 ditambah.** Semua status kekal DRAF, 0 READY.
 
 Sumber: https://www.scribd.com/document/438677752/Bahasa-Arab-Tahun-3-Teks-KSSR-Semakan ; https://jendeladbp.my/ujana/bahasa-arab-tahun-3-bt-pt/ ; https://stage.jendeladbp.my/ujana/bahasa-arab-tahun-2-bt-pt/ ; https://jendeladbp.my/ujana/bahasa-arab-tahun-2-ba-pt/
+
+## 6 Nov 2026 — Tahun 4 Unit 1, enam PdP pertama
+Enam draf RPH Tahun 4 PdP 001–006 dikemaskini dengan bukti contoh muka surat BT DBP/KPM 2019: 2, 2, 4–5, 3, 7, 3. Aktiviti diperincikan menggunakan contoh asli kata ال, bulan Masihi dan tulisan. Rujukan fail: `audits/bahasa_arab_y4_textbook_pdp001_006_evidence_20261106.json` dan https://anyflip.com/rzqgi/ejrv/basic. Semua kekal DRAF, belum lulus pengesahan RPT 2027 atau fail A4 Word/PDF.

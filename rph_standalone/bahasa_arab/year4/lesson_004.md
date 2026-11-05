@@ -9,7 +9,7 @@
 
 **Set induksi:** Guru memaparkan dua kata berawalan ال yang pernah didengar dan meminta murid membacanya.
 
-**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru membaca lima kata yang dipilih daripada unit; murid mengulang dan menandakan bunyi lam apabila perlu.
+**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru membaca empat kata contoh pada Buku Teks halaman 3 (الْمُعَلِّم، الْعِيد، التَّقْوِيم، الرَّئِيس), diikuti satu kata pengukuhan yang sesuai. Murid mengulang, menandakan huruf selepas ال dan membezakan bacaan lam.
 
 **Aktiviti 2 — Amali murid:** Secara berpasangan murid menggariskan huruf selepas ال dan membaca lantang untuk rakan menilai syamsiah atau qamariah.
 
@@ -17,7 +17,7 @@
 
 **Penutup:** Murid membaca semula satu kata yang tersilap.
 
-**BBM:** Kad kata daripada buku teks unit 1, pembaris, pen warna
+**BBM:** Kad empat kata Buku Teks Unit 1 halaman 3 serta satu kad pengukuhan guru, pen warna
 
 **Refleksi:** ____ / ____ murid mencapai sasaran. Intervensi: __________________.
 
@@ -25,3 +25,5 @@
 **RPT rujukan 2026:** https://anyflip.com/zxzlm/xrtv/basic
 **Status rujukan buku teks:** Buku teks Unit 1 halaman bercetak 1–28; halaman khusus PdP belum disahkan; jangan cipta nombor muka surat.
 **Status penerbitan:** DRAF_STAGING / BELUM READY. Bukan bahan Telegram/Web LIVE. Semakan halaman teks, pemaparan Arab RTL, Word/PDF A4 serta pengesahan manual masih diperlukan.
+
+**Bukti padanan buku teks yang dikenal pasti:** Buku Teks Bahasa Arab Tahun 4 DBP/KPM cetakan pertama 2019, ISBN 978-983-49-2480-5, Unit 1 halaman bercetak **3**, rujukan https://anyflip.com/rzqgi/ejrv/basic. Kod SP **2.1.1** terdapat pada panduan aktiviti yang berkaitan. Halaman ini bukti sumber aktiviti sahaja; pemetaan urutan PdP kepada RPT 2027 dan kelulusan individu masih **BELUM READY**.

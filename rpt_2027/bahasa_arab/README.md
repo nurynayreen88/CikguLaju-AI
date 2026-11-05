@@ -27,3 +27,7 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 - Tahun 3 Unit 4 rasmi **الوقت كالذهب** (Buku Teks DBP 2018, 87–117), **bukan الزمان**; yang kedua ialah tema masa. Semua sumber aktif staging (CSV dan bank aktiviti) kini menggunakan judul buku sebenar.
 - Tahun 3 isi kandungan: Unit 1 (1–28), Unit 2 (29–58), Unit 3 (59–86), Unit 4 (87–117).
 - Tahun 2: ISBN Buku Teks 978-983-49-1589-6, Buku Aktiviti 978-983-49-1590-2. Tahun 3: ISBN Buku Teks 978-983-49-2033-3. Semua ini identiti penerbit, **bukan sijil halaman PdP**.
+
+## Evidence PdP awal Tahun 4
+- 6/6 PdP awal Year 4 Unit 1 menerima rujukan halaman buku: **2, 2, 4–5, 3, 7, 3** dan contoh aktiviti asal. Fail `audits/bahasa_arab_y4_textbook_pdp001_006_evidence_20261106.json`.
+- Bukti halaman spesifik ini **tidak** menukar status keseluruhan kepada READY; Word/PDF RTL dan kelulusan guru belum dibuat.

@@ -104,6 +104,18 @@ def check() -> None:
     assert "**Unit:** الوقت كالذهب" in bank3
     assert "**Tema DSKP:** الزمان" in bank3
     assert next(x["activity_book_isbn"] for x in bibliography["items"] if x["year"] == 2) == "978-983-49-1590-2"
+    y4 = json.loads((ROOT / "audits" / "bahasa_arab_y4_textbook_pdp001_006_evidence_20261106.json").read_text(encoding="utf-8"))
+    assert y4["year"] == 4 and y4["final_ready"] == 0
+    assert len(y4["page_level_findings"]) == 6
+    assert y4["no_published_textbook_copied"] is True
+    assert [r["printed_page"] for r in y4["page_level_findings"]] == ["2","2","4–5","3","7","3"]
+    assert [r["sp"] for r in y4["page_level_findings"]] == EXPECTED_SP[4][:6]
+    for idx in range(1,7):
+        file = SUBJECT / "year4" / f"lesson_{idx:03d}.md"
+        content = file.read_text(encoding="utf-8")
+        assert "**Bukti padanan buku teks yang dikenal pasti:**" in content
+        assert "BELUM READY" in content
+    assert m["years"]["4"]["first_six_source_evidence"] == "audits/bahasa_arab_y4_textbook_pdp001_006_evidence_20261106.json"
     print("PASSED: 20 unit indexes, 60 crosswalks, 60 RPH draft files, 15 banks.")
     print("RELEASE BLOCKED: 0 READY; page-level textbook, A4 RTL and manual review missing.")
 
