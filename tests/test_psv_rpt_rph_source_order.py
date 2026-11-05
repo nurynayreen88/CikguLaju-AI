@@ -415,6 +415,29 @@ class PSVSourceOrderTests(unittest.TestCase):
                 self.assertEqual(rows[n-1]["Status"], "DRAF_SEMAK")
         self.assertTrue(all(row["Pautan Buku Teks"] == "https://drive.google.com/file/d/1ZPvbJcwogZVQjRSgPMSgD6iymMXcASSU/view" for row in rows))
 
+    def test_year2_source_paged_pottery_fruit_rubbings_and_marine_resis(self):
+        """Guard source-specific Y2 lessons and page range mapping."""
+        sources = {
+            18: ("40–41", "buah", "gosokan"),
+            19: ("40–41", "buah", "gosokan"),
+            31: ("66–67", "picitan", "tembikar"),
+            32: ("68–69", "picitan", "tembikar"),
+            33: ("68–69", "tembikar", "kering"),
+            35: ("76–77", "taman mini", "bunga"),
+            36: ("78–79", "taman mini", "rama-rama"),
+            37: ("78–79", "taman mini", "bunga"),
+            39: ("88–89", "suasana hidupan laut", "resis"),
+            40: ("88–89", "suasana hidupan laut", "resis"),
+        }
+        rows = read_csv(PSV / "RPT_PSV_Tahun_2_2027_DRAF.csv")
+        for n, (pages, a, b) in sources.items():
+            with self.subTest(pdp=n):
+                text = (ROOT / f"rph_standalone/psv/year2/lesson_{n:03d}.md").read_text(encoding="utf-8").lower()
+                self.assertTrue(all(w in text for w in (a, b)))
+                self.assertIn("ms " + pages, text)
+                self.assertIn(pages, rows[n-1]["BT muka surat"])
+                self.assertEqual(rows[n-1]["Status"], "DRAF_SEMAK")
+
     def test_year5_bunga_kemboja_tekat_is_genuine_couching(self):
         rows = read_csv(PSV / "RPT_PSV_Tahun_5_2027_DRAF.csv")
         keywords = {
