@@ -104,6 +104,72 @@ class SchoolLogoTests(unittest.TestCase):
             self.assertEqual(client.get("/api/web/teacher/school-logo").status_code, 401)
 
 
+class MissingOptionalLogoRegressionTests(unittest.TestCase):
+    """Missing optional logo is not a school-cover or RPT download failure."""
+
+    @staticmethod
+    def failure_open(code, payload):
+        from urllib.error import HTTPError
+
+        class Response:
+            def open(self, request, timeout=8):
+                raise HTTPError(
+                    request.full_url, code, "Storage object missing", {},
+                    BytesIO(payload)
+                )
+        return Response()
+
+    def test_400_missing_object_not_found_is_optional(self):
+        missing_versions=[
+            b'{"statusCode":"404","error":"not_found","message":"Object not found"}',
+            b'{"statusCode":"400","errorCode":"NoSuchKey","message":"Object not found"}',
+        ]
+        for payload in missing_versions:
+            with self.subTest(payload=payload):
+                self.assertIsNone(
+                    logo_png("https://school.supabase.co", "private-server-key",812,
+                             opener=self.failure_open(400,payload))
+                )
+
+    def test_bad_credentials_permissions_and_missing_bucket_stay_errors(self):
+        from web.teacher_profile_store import ProfileUnavailable
+        for code,payload in (
+            (403,b'{"error":"unauthorized","message":"Not allowed"}'),
+            (400,b'{"error":"not_found","message":"Bucket not found"}'),
+            (400,b'{"error":"unauthorized","message":"Object not found"}'),
+            (400,b'not json'),
+        ):
+            with self.subTest(code=code,payload=payload):
+                with self.assertRaises(ProfileUnavailable):
+                    logo_png("https://school.supabase.co","private-server-key",812,
+                             opener=self.failure_open(code,payload))
+
+    def test_school_identity_without_uploaded_logo_still_builds_personalized_pdf(self):
+        from web.rpt_school_cover import school_identity, for_download
+        from tempfile import TemporaryDirectory
+        with patch("web.rpt_school_cover._get_one",return_value={
+                "telegram_user_id":812,"school_name":"SK Taman Jaya",
+                "display_name":"Cikgu Ali","state_name":"Johor"}), \
+             patch("web.rpt_school_cover.logo_png",return_value=None):
+            identity=school_identity({"supabase_url":"https://school.supabase.co",
+                                      "supabase_key":"private-key"},812)
+        self.assertEqual(identity["school"],"SK Taman Jaya")
+        self.assertIsNone(identity["logo"])
+        with TemporaryDirectory() as tmp:
+            pdf=Path(tmp)/"RPT.pdf"
+            pdf.write_bytes(b"%PDF-"+b"x"*9000)
+            with patch("web_v1_telegram_auth_routes._config",return_value={
+                    "supabase_url":"https://school.supabase.co",
+                    "supabase_key":"private-key","account_backend":"supabase"}), \
+                 patch("web.rpt_school_cover.school_identity",return_value=identity), \
+                 patch("web.rpt_school_cover.request_telegram_school_rpt",
+                       return_value=BytesIO(b"%PDF-"+b"y"*9000)) as call:
+                result=for_download({"telegram_user_id":812},pdf,"pjpk",2)
+                self.assertTrue(result.getvalue().startswith(b"%PDF-"))
+                self.assertEqual(call.call_args.args[0],pdf)
+                self.assertEqual(call.call_args.args[3]["school"],"SK Taman Jaya")
+
+
 class RptSchoolSheetTests(unittest.TestCase):
     def test_original_rpt_pages_and_file_are_preserved(self):
         with TemporaryDirectory() as temp:

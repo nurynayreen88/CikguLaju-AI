@@ -1,0 +1,29 @@
+name: Fix mobile RPT download and optional logo QA
+on:
+  push:
+    branches: [fix/web-mobile-rpt-download-logo-20261106]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install runtime and mobile-browser test libraries
+        run: |
+          pip install 'flask==3.1.3' 'gunicorn==23.0.0' 'Pillow==11.3.0' 'pypdf==6.1.3' 'reportlab==4.4.9' 'playwright==1.55.0' 'requests==2.32.3'
+          python -m playwright install --with-deps chromium
+      - run: python -m py_compile web/school_logo_store.py web/rpt_school_cover.py web/rpt_2027_all_http.py
+      - name: Confirm optional school logo never blocks authorized RPT
+        run: python -m unittest discover -s tests -p test_web_school_rpt_branding.py -v
+      - name: Confirm RPT auth, source integrity and backend PDF attachment
+        run: python -m unittest discover -s tests -p test_web_rpt_2027_all.py -v
+      - name: Confirm source-verifying Telegram RPT proxy
+        run: python -m unittest discover -s tests -p test_web_rpt_native_proxy_stdlib.py -v
+      - name: Test actual phone and desktop layout with Chromium
+        run: python -m unittest discover -s tests -p test_web_mobile_rpt_download_browser.py -v
