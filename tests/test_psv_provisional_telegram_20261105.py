@@ -127,6 +127,56 @@ class TestProvisionalPSV(unittest.TestCase):
             self.assertFalse(bridge.install(ns2))
             self.assertIs(ns2["subjects"], original)
 
+    def test_legacy_subject_notice_is_rewritten_only_for_psv_year2_to6(self):
+        ns, seen, base = self.fake()
+        self.assertTrue(bridge.install(ns, enabled=True))
+        old_text = ("📘 <b>Tahun 2</b>\n\nPilih subjek. "
+                    "🚧 = Dalam Pembangunan; janaan belum dibuka.")
+        old_buttons = [
+            [{"text": "Bahasa Melayu", "callback_data": "sub_Bahasa Melayu"}],
+            [{"text": "🚧 Pendidikan Seni Visual (Dalam Pembangunan)",
+              "callback_data": "devsub2617_Pendidikan Seni Visual"}],
+            [{"text": "🚧 Pendidikan Muzik (Dalam Pembangunan)",
+              "callback_data": "devsub2617_Pendidikan Muzik"}],
+            [{"text": "🏠 Menu Utama", "callback_data": "home"}],
+        ]
+        self.assertEqual(ns["send"](201, old_text, old_buttons), "sent")
+        body, keyboard = seen[-1][1], seen[-1][2]
+        self.assertIn("Pendidikan Seni Visual sudah tersedia", body)
+        self.assertNotIn("🚧 = Dalam Pembangunan; janaan belum dibuka.", body)
+        all_buttons = [b for row in keyboard for b in row]
+        psv = [b for b in all_buttons
+               if "Pendidikan Seni Visual" in b["text"]]
+        self.assertEqual(len(psv), 1)
+        self.assertEqual(psv[0]["callback_data"], "sub_Pendidikan Seni Visual")
+        self.assertEqual(psv[0]["text"], "🎨 Pendidikan Seni Visual")
+        self.assertIn("devsub2617_Pendidikan Muzik",
+                      [b["callback_data"] for b in all_buttons])
+        self.assertEqual(old_buttons[1][0]["callback_data"],
+                         "devsub2617_Pendidikan Seni Visual")
+        # The Year1 KP2027 menu and unrelated messages are passed unchanged.
+        old_year1 = old_text.replace("Tahun 2", "Tahun 1")
+        ns["send"](201, old_year1, old_buttons)
+        self.assertEqual(seen[-1][1], old_year1)
+        self.assertIs(seen[-1][2], old_buttons)
+        ns["send"](201, "Jadual waktu tidak tersedia", old_buttons)
+        self.assertEqual(seen[-1][1], "Jadual waktu tidak tersedia")
+        self.assertIs(seen[-1][2], old_buttons)
+
+    def test_legacy_subject_notice_adds_psv_if_old_keyboard_missing_it(self):
+        ns, seen, base = self.fake()
+        self.assertTrue(bridge.install(ns, enabled=True))
+        old_text = ("📘 <b>Tahun 6</b>\n\nPilih subjek. "
+                    "🚧 = Dalam Pembangunan; janaan belum dibuka.")
+        kb = [[{"text": "Bahasa Melayu",
+                "callback_data": "sub_Bahasa Melayu"}],
+              [{"text": "⬅️ Kembali", "callback_data": "back_subjects"}],
+              [{"text": "🏠 Menu Utama", "callback_data": "home"}]]
+        ns["send"](305, old_text, kb)
+        flat = [b for row in seen[-1][2] for b in row]
+        self.assertEqual(sum(b["callback_data"] ==
+                             "sub_Pendidikan Seni Visual" for b in flat), 1)
+
     def test_stale_or_other_subject_never_overrides(self):
         ns, seen, base = self.fake()
         self.assertTrue(bridge.install(ns, enabled=True))
