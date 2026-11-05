@@ -5,18 +5,19 @@
 **SK:** 1.1; 2.1  
 **SP:** 1.1.3; 2.1.3  
 **Buku Teks:** Pendidikan Kesenian Tahun 2 (bahagian Seni Visual), ms 22–23 (unit 22-25)  
-**BBM:** kadbod, kertas warna, gam, pita dan tapak tegar  
+**BBM:** BT ms 22–23, dua cawan kertas berlainan saiz, kadbod, kertas kilat dan bahan tapak
 **Masa:** 60 minit
 
 ## Objektif dan kriteria kejayaan
-Pada akhir PdP, murid dapat mengenal dua istilah bahasa seni pada arca stabail dan membandingkan dua media. Bukti kejayaan: Kad bahasa seni + dua sampel teknik dengan catatan perbezaan.
+Pada akhir PdP, murid dapat mengenal imbangan dan bentuk pada dua model arca Piala Saya Hebat. Bukti kejayaan: Dua lakaran tapak serta satu alasan memilih bahan pemberat.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru memperlihatkan karya bertajuk Saya Juara dan murid menyebut pengalaman atau imej yang berkaitan dengan tema.
-**Aktiviti 1 (15 minit) — Penerangan dan eksplorasi:** Guru menunjukkan buku teks ms 22–23, menjelaskan bentuk, warna dan imbangan arca stabail; murid mengenal pasti dua unsur bahasa seni pada contoh.
-**Aktiviti 2 (25 minit) — Amali murid:** Murid memerhati imej buku dan membuat dua sampel: Bina dua model asas tapak dan tiang; uji titik berat dan kestabilan model sebelum cantuman. Guru meminta murid merekod kesan teknik serta memilih idea projek.
-**Pengukuhan/Pentaksiran (10 minit):** Kad bahasa seni + dua sampel teknik dengan catatan perbezaan. Guru merekod evidens PBD dan memberi maklum balas mengikut tahap murid.
+**Aktiviti 1 (15 minit) — Penerangan dan eksplorasi:** Guru menerangkan BT ms 22–23: arca stabail perlu tapak berat yang stabil dan boleh menggunakan cawan kertas.
+**Aktiviti 2 (25 minit) — Amali murid:** Murid membanding bentuk dua cawan A dan B, menguji kedudukan cawan dengan pemberat selamat dan melakar piala dua bahagian.
+**Pengukuhan/Pentaksiran (10 minit):** Guru semak dua lakaran, bentuk cawan dan imbangan tapak.
 **Penutup (5 minit):** Murid menyatakan satu pembelajaran dan menyimpan karya serta membersihkan ruang.
 **Pembezaan:** Murid memerlukan bantuan menggunakan contoh langkah berperingkat; murid mahir membandingkan dua teknik dan menerangkan pemilihan sendiri.
-**Keselamatan:** Alat tumpul dan media tidak toksik; aktiviti gunting/cantuman dipantau guru. 
+**Keselamatan:** Gunting cawan dan kad tebal dengan bantuan guru; murid menggunakan gam tidak toksik, tapak pemberat disediakan guru.
 **Rujukan:** [DSKP PSV Tahun 2](https://drive.google.com/file/d/1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8/view) | [Buku Teks Pendidikan Kesenian Tahun 2 (bahagian Seni Visual)](https://fliphtml5.com/laiqy/thik/Buku_Teks_Pendidikan_Kesenian_Tahun_2/). Aktiviti ialah adaptasi CikguLaju yang berpandukan kandungan unit; bukan salinan arahan buku secara verbatim.
+**Sumber Buku Teks langsung:** https://fliphtml5.com/pssskfc/cmag/PENDIDIKAN_KESENIAN_TAHUN_2_SK_BUKU_TEKS/
