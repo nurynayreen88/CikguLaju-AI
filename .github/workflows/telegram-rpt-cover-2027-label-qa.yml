@@ -1,0 +1,18 @@
+name: Telegram RPT 2027 school cover label QA
+on:
+  push:
+    branches: [feature/telegram-rpt-cover-2027-label-fix]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'flask==3.1.3' 'Pillow==11.3.0' 'pypdf==5.1.0' 'reportlab==4.2.5'
+      - run: python -m unittest discover -s tests -p test_private_rpt_telegram_cover.py -v
