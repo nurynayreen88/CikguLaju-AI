@@ -393,6 +393,28 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
         # A future production integration MUST implement source-digest parity,
         # actual DOCX/PDF rendering and approval gates separately.
 
+    def test_all_81_specific_success_criteria_overlays_remain_draft(self):
+        overlay = json.loads((SOURCE / "SUCCESS_CRITERIA_DRAFT_20261106.json").read_text(encoding="utf-8"))
+        self.assertEqual(len(overlay), 81)
+        counts = {2: 28, 3: 3, 4: 28, 5: 15, 6: 7}
+        for year in range(2, 7):
+            matched = 0
+            for pdp in range(1, 36):
+                result = module.build_staging_preview(SOURCE, year, pdp)
+                ident = f"MZ-Y{year}-{pdp:02d}"
+                criterion = next(x["value"] for x in result["layout"]["header"] if x["label"] == "KRITERIA KEJAYAAN")
+                self.assertNotEqual(criterion, "—")
+                self.assertFalse(result["approved_for_live"])
+                if ident in overlay:
+                    matched += 1
+                    self.assertEqual(criterion, overlay[ident]["criterion"])
+                    self.assertEqual(overlay[ident]["approval"], "DRAF_EDITORIAL_BELUM_DISAHKAN")
+                    self.assertIn("EDITORIAL_DRAFT_CRITERION_OVERLAY_NOT_APPROVED", result["warnings"])
+                else:
+                    self.assertNotIn("EDITORIAL_DRAFT_CRITERION_OVERLAY_NOT_APPROVED", result["warnings"])
+            self.assertEqual(matched, counts[year])
+        self.assertEqual(len({x["criterion"] for x in overlay.values()}), 81)
+
     def test_fail_closed_for_invalid_year_or_pdp(self):
         for year, pdp in ((1, 1), (7, 1), (2, 0), (3, 36), ("2", 1)):
             with self.subTest(year=year, pdp=pdp):

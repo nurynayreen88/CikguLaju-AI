@@ -1,0 +1,569 @@
+{
+  "MZ-Y2-01": {
+    "criterion": "Menyanyikan dua frasa Kami Suka Sayur pada tempo cepat dan lambat dengan sekurang-kurangnya dua daripada tiga percubaan tepat dari segi pic dan perubahan tempo.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 1
+  },
+  "MZ-Y2-02": {
+    "criterion": "Mengenal pasti tempo cepat atau lambat pada sekurang-kurangnya tiga daripada empat contoh serta mengubah gerakan selaras dengan tempo.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 2
+  },
+  "MZ-Y2-03": {
+    "criterion": "Menghasilkan dua bunyi improvisasi yang berbeza, menyatakan perbezaannya dan menggunakan bahan dengan selamat.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 3
+  },
+  "MZ-Y2-04": {
+    "criterion": "Menunjukkan postur duduk dan berdiri yang betul serta menyanyikan satu frasa dengan pic dan sebutan sesuai dalam dua percubaan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 4
+  },
+  "MZ-Y2-05": {
+    "criterion": "Menyusun sekurang-kurangnya empat ikon menjadi satu corak irama serta mempersembahkannya dengan detik dan sebutan yang tepat.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 5
+  },
+  "MZ-Y2-06": {
+    "criterion": "Menyenandungkan dan menyanyikan satu frasa dengan pic serta sebutan jelas dalam dua percubaan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 6
+  },
+  "MZ-Y2-07": {
+    "criterion": "Menghasilkan satu corak irama daripada ikon dan memainkannya menggunakan bahan improvisasi dengan tempo stabil serta kerjasama ahli.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 7
+  },
+  "MZ-Y2-08": {
+    "criterion": "Mengecam tiga bentuk melodi—menaik, menurun dan mendatar—serta mengajuk sekurang-kurangnya satu contoh dengan tepat.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 8
+  },
+  "MZ-Y2-09": {
+    "criterion": "Menyanyikan satu rangkap Main Gasing pada tempo stabil dan mengubah tempo pada isyarat guru tanpa kehilangan detik.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 9
+  },
+  "MZ-Y2-10": {
+    "criterion": "Menghasilkan bunyi kuat atau perlahan menggunakan tiga bahan improvisasi, mencatat pengelasan dengan tepat dan mematuhi keselamatan bahan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 10
+  },
+  "MZ-Y2-11": {
+    "criterion": "Memainkan corak skor ikon menggunakan dua alat perkusi dengan detik dan tempo seragam dalam dua percubaan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 11
+  },
+  "MZ-Y2-14": {
+    "criterion": "Memainkan satu corak perkusi berdasarkan skor dengan pola, tempo dan penekanan detik bertanda yang tepat dalam dua percubaan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 14
+  },
+  "MZ-Y2-15": {
+    "criterion": "Menyusun satu corak irama daripada kad ikon, menyebut coraknya dan memainkannya secara berkumpulan dengan kerjasama.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 15
+  },
+  "MZ-Y2-16": {
+    "criterion": "Membezakan bunyi pak dan bung, memperagakan dua pola kompang serta menyatakan dua ciri permainan kompang.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 16
+  },
+  "MZ-Y2-17": {
+    "criterion": "Memperagakan tiga arah melodi—menaik, mendatar dan menurun—sambil mengekalkan tempo dan membetulkan sekurang-kurangnya satu kesilapan gerak.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 17
+  },
+  "MZ-Y2-18": {
+    "criterion": "Menyusun corak irama dengan sekurang-kurangnya empat ikon, menepuknya tepat dan mempersembahkan satu corak ciptaan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 18
+  },
+  "MZ-Y2-19": {
+    "criterion": "Mencipta satu corak irama baharu serta memainkannya pada tempo stabil dalam dua ulangan dengan satu penambahbaikan selepas refleksi.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 19
+  },
+  "MZ-Y2-20": {
+    "criterion": "Memadankan tiga peristiwa cerita dengan tiga kesan bunyi yang sesuai serta menggunakan bahan dengan selamat.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 20
+  },
+  "MZ-Y2-21": {
+    "criterion": "Menyanyikan satu rangkap Burung Kenek-Kenek dengan pic, frasa dan sebutan yang tepat dalam dua percubaan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 21
+  },
+  "MZ-Y2-22": {
+    "criterion": "Memainkan iringan kastanet dan loceng mengikut skor dengan tempo seragam serta bertukar peranan tanpa mengganggu nyanyian.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 22
+  },
+  "MZ-Y2-23": {
+    "criterion": "Menyanyikan satu frasa Tembikar Cantik dengan pic, tempo dan artikulasi yang sesuai dalam dua percubaan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 23
+  },
+  "MZ-Y2-24": {
+    "criterion": "Mengekalkan detik lagu menggunakan ketukan kayu irama pada dua tempo berbeza dengan koordinasi pasangan yang baik.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 24
+  },
+  "MZ-Y2-25": {
+    "criterion": "Memainkan corak irama mengikut isyarat mula dan henti konduktor, mengekalkan tempo serta bertukar peranan dengan selamat.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 25
+  },
+  "MZ-Y2-28": {
+    "criterion": "Menyanyikan satu rangkap Taman Mini dengan pic, tempo dan keseragaman frasa yang sesuai.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 28
+  },
+  "MZ-Y2-29": {
+    "criterion": "Menyanyi sambil bergerak mengikut tempo cepat dan lambat serta bertindak tepat apabila tempo berubah dengan menjaga keselamatan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 29
+  },
+  "MZ-Y2-30": {
+    "criterion": "Menyatakan dua ciri muzik tarian singa, mengenal satu alat iringan dan memberi satu ulasan berdasarkan bahan rujukan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 30
+  },
+  "MZ-Y2-31": {
+    "criterion": "Menyanyikan satu rangkap pada tempo tepat dan bertindak balas terhadap isyarat perubahan tempo dalam dua pusingan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 31
+  },
+  "MZ-Y2-32": {
+    "criterion": "Mencipta satu corak irama empat detik dan memainkannya bersama nyanyian dengan isyarat masuk, tempo dan kerjasama tepat.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 2,
+    "pdp": 32
+  },
+  "MZ-Y3-01": {
+    "criterion": "Melakukan dua ulangan latihan pernafasan 8–16 detik mengikut kemampuan dengan postur sesuai serta menyanyi satu frasa pada pic tepat.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 3,
+    "pdp": 1
+  },
+  "MZ-Y3-02": {
+    "criterion": "Memainkan kastanet pada setiap detik Tut Tut Kereta Api dengan tempo stabil dan kawalan alat yang betul dalam dua percubaan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 3,
+    "pdp": 2
+  },
+  "MZ-Y3-03": {
+    "criterion": "Melakukan gerak formasi kereta api mengikut tempo, menukar halaju pada isyarat guru dan menjaga koordinasi serta keselamatan barisan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 3,
+    "pdp": 3
+  },
+  "MZ-Y4-01": {
+    "criterion": "Mengenal not G, A dan B, menandakan ketiga-tiga kedudukan pada baluk serta membaca sekurang-kurangnya satu contoh not dengan tepat.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 1
+  },
+  "MZ-Y4-02": {
+    "criterion": "Mengenal dan menulis sekurang-kurangnya tiga daripada empat simbol muzik dengan betul serta menerangkan fungsi satu simbol.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 2
+  },
+  "MZ-Y4-03": {
+    "criterion": "Menulis dan menamakan not C’ dan D’ pada baluk dengan sekurang-kurangnya tiga daripada empat item latihan tepat.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 3
+  },
+  "MZ-Y4-04": {
+    "criterion": "Menepuk satu corak irama berdasarkan skor sambil menghormati tanda rehat dengan tepat dalam dua percubaan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 4
+  },
+  "MZ-Y4-05": {
+    "criterion": "Menghasilkan iringan perkusi mengikut skor dengan sekurang-kurangnya dua daripada tiga aspek—pola, tempo dan kerjasama—tepat.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 5
+  },
+  "MZ-Y4-06": {
+    "criterion": "Mengajuk satu frasa melodi pada pic sesuai serta menyanyi satu rangkap dalam kumpulan dengan sebutan dan kawalan nafas yang baik.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 6
+  },
+  "MZ-Y4-07": {
+    "criterion": "Menyanyi frasa lagu dengan pic dan tempo tepat pada sekurang-kurangnya dua daripada tiga percubaan sambil mengekalkan postur.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 7
+  },
+  "MZ-Y4-08": {
+    "criterion": "Memainkan dua corak perkusi yang berbeza mengikut tempo lagu dengan koordinasi ensembel yang baik.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 8
+  },
+  "MZ-Y4-09": {
+    "criterion": "Membezakan serta menyanyikan dua frasa menggunakan legato dan staccato yang betul serta menjelaskan satu perbezaan artikulasi.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 9
+  },
+  "MZ-Y4-10": {
+    "criterion": "Memainkan corak irama mengikut skor pada tempo stabil dalam sekurang-kurangnya dua ulangan sambil menjaga disiplin alat.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 10
+  },
+  "MZ-Y4-11": {
+    "criterion": "Mengenal bentuk AA dan AB serta menukar dua pola gerak tepat mengikut bahagian lagu yang didengar.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 11
+  },
+  "MZ-Y4-14": {
+    "criterion": "Menamakan tiga alat ensembel Tagunggu dan mengelaskan sekurang-kurangnya dua alat kepada keluarga muzik yang betul.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 14
+  },
+  "MZ-Y4-15": {
+    "criterion": "Melaksanakan dua urutan gerak Gemalai seiring detik muzik dalam dua percubaan dengan koordinasi dan jarak selamat.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 15
+  },
+  "MZ-Y4-16": {
+    "criterion": "Mempersembahkan satu urutan Gemalai dan memberi satu ulasan koordinasi atau kreativiti, kemudian membetulkan satu aspek persembahan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 16
+  },
+  "MZ-Y4-17": {
+    "criterion": "Memainkan frasa rekoder dengan penjarian not G, A, B dan C’, ton serta perlidahan yang sesuai dalam dua percubaan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 17
+  },
+  "MZ-Y4-18": {
+    "criterion": "Menjawab sekurang-kurangnya empat daripada lima item berkaitan meter, garis bar dan tanda rehat pada baluk dengan tepat.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 18
+  },
+  "MZ-Y4-19": {
+    "criterion": "Mengiringi satu rangkap lagu menggunakan perkusi badan pada tempo dan detik seragam dalam dua ulangan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 19
+  },
+  "MZ-Y4-20": {
+    "criterion": "Memainkan corak perkusi badan pada dua tempo berbeza dengan isyarat masuk dan detik yang tepat.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 20
+  },
+  "MZ-Y4-21": {
+    "criterion": "Mencipta serta mempersembahkan satu frasa melodi pendek berdasarkan aktiviti Susun Notasi dengan kiraan detik yang betul; skop not kekal tertakluk semakan DSKP.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 21
+  },
+  "MZ-Y4-22": {
+    "criterion": "Memainkan not D’ pada rekoder dengan penjarian dan ton tepat serta mencuba satu frasa melodi kaunter dengan masa masuk sesuai.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 22
+  },
+  "MZ-Y4-23": {
+    "criterion": "Mengenal dua bunyi alat perkusi dan memainkan satu pola iringan mengikut skor dengan tempo serta disiplin yang baik.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 23
+  },
+  "MZ-Y4-24": {
+    "criterion": "Menghasilkan satu jawapan melodi kepada soalan melodi dan mempersembahkannya dengan detik serta bentuk soal jawab yang tepat; kod SP masih menunggu penyelarasan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 24
+  },
+  "MZ-Y4-28": {
+    "criterion": "Menyanyikan satu rangkap Desaku Tercinta dengan pic, tempo dan frasa tepat dalam dua percubaan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 28
+  },
+  "MZ-Y4-29": {
+    "criterion": "Memainkan iringan perkusi mengikut skor pada dua tempo dengan pola dan perubahan mengikut isyarat yang tepat.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 29
+  },
+  "MZ-Y4-30": {
+    "criterion": "Mempersembahkan dua bahagian lagu pusingan dengan masuk pada bar yang ditetapkan dan menjaga kelancaran dua suara.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 30
+  },
+  "MZ-Y4-31": {
+    "criterion": "Mengenal sekurang-kurangnya tiga alat pengiring Kolattam serta menerangkan dua ciri alat menggunakan kad soal jawab.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 31
+  },
+  "MZ-Y4-32": {
+    "criterion": "Melaksanakan dua corak gerakan selaras tempo dengan ketepatan detik, susunan gerak dan kerjasama dalam ruang selamat.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 32
+  },
+  "MZ-Y4-33": {
+    "criterion": "Mempersembahkan satu urutan gerak berirama, menilai rakan menggunakan dua kriteria dan membetulkan satu aspek selepas percubaan pertama.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 4,
+    "pdp": 33
+  },
+  "MZ-Y5-12": {
+    "criterion": "Memadankan sekurang-kurangnya dua komposer Baroque dengan karya yang betul serta mengenal negara asal dan satu judul karya.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 5,
+    "pdp": 12
+  },
+  "MZ-Y5-13": {
+    "criterion": "Menyanyikan satu frasa dengan pic dan tempo tepat dalam dua percubaan serta mengikuti dinamik yang ditunjukkan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 5,
+    "pdp": 13
+  },
+  "MZ-Y5-14": {
+    "criterion": "Memainkan satu frasa not F dan E dengan penjarian, ton, pernafasan serta tempo yang sesuai.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 5,
+    "pdp": 14
+  },
+  "MZ-Y5-15": {
+    "criterion": "Menyediakan pelan persembahan Unit 1–5 dengan pembahagian tugasan, senarai bahan, jadual latihan dan kerjasama kumpulan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 5,
+    "pdp": 15
+  },
+  "MZ-Y5-16": {
+    "criterion": "Melaksanakan persembahan projek dengan sekurang-kurangnya tiga daripada empat aspek rubrik—penglibatan, kemahiran, kreativiti dan nilai murni—memuaskan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 5,
+    "pdp": 16
+  },
+  "MZ-Y5-17": {
+    "criterion": "Memainkan melodi kaunter dengan penjarian, ton, tempo serta masa masuk yang tepat.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 5,
+    "pdp": 17
+  },
+  "MZ-Y5-27": {
+    "criterion": "Menyanyikan satu frasa Adiwira dengan pic, sebutan dan perubahan tempo mengikut skor yang betul.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 5,
+    "pdp": 27
+  },
+  "MZ-Y5-28": {
+    "criterion": "Memainkan satu corak iringan perkusi berdasarkan skor dengan tempo, simbol dinamik dan kerjasama kumpulan yang sesuai.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 5,
+    "pdp": 28
+  },
+  "MZ-Y5-29": {
+    "criterion": "Mempersembahkan dua pola gerakan yang sesuai dengan cerita serta perubahan tempo sambil menjaga ruang selamat.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 5,
+    "pdp": 29
+  },
+  "MZ-Y5-30": {
+    "criterion": "Menyanyikan frasa Joget Khatulistiwa dengan pic, tempo dan tempat nafas yang tepat.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 5,
+    "pdp": 30
+  },
+  "MZ-Y5-31": {
+    "criterion": "Memainkan satu latihan rekoder dengan penjarian dan perlidahan 'tu' yang betul berdasarkan skor.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 5,
+    "pdp": 31
+  },
+  "MZ-Y5-32": {
+    "criterion": "Memainkan satu frasa melodi kaunter dengan ton, tempo, dinamik dan masa masuk yang seragam bersama ensembel.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 5,
+    "pdp": 32
+  },
+  "MZ-Y5-33": {
+    "criterion": "Memainkan pola perkusi dengan corak, tempo dan dinamik piano/forte yang tepat serta bekerjasama dalam kumpulan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 5,
+    "pdp": 33
+  },
+  "MZ-Y5-34": {
+    "criterion": "Menyiapkan pelan persembahan yang menyatakan tugasan bagi empat kumpulan, senarai peralatan dan kesediaan latihan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 5,
+    "pdp": 34
+  },
+  "MZ-Y5-35": {
+    "criterion": "Mempersembahkan muzik berkumpulan dan memberikan refleksi dengan sekurang-kurangnya tiga daripada empat aspek rubrik—penglibatan, ketepatan, kreativiti dan nilai murni—diperhatikan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 5,
+    "pdp": 35
+  },
+  "MZ-Y6-11": {
+    "criterion": "Menamakan tiga komposer zaman Classical, memadankan dua komposer dengan karya yang betul dan memberi satu sebab apresiasi yang disokong rujukan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 6,
+    "pdp": 11
+  },
+  "MZ-Y6-14": {
+    "criterion": "Menyanyikan frasa Mikroorganisma dengan pic, tempo, dinamik dan tempat nafas yang sesuai dalam dua percubaan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 6,
+    "pdp": 14
+  },
+  "MZ-Y6-15": {
+    "criterion": "Memainkan not D dan C pada rekoder dengan penjarian tepat dan satu frasa melodi kaunter dengan ton, tempo serta masa masuk terkawal.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 6,
+    "pdp": 15
+  },
+  "MZ-Y6-30": {
+    "criterion": "Menyanyikan frasa Rindu dengan pic, tempo, ayunan swing dan tempat nafas yang sesuai.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 6,
+    "pdp": 30
+  },
+  "MZ-Y6-31": {
+    "criterion": "Mencipta empat gerak lapan detik dan mempersembahkan satu turutan selaras tempo dengan koordinasi serta keselamatan.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 6,
+    "pdp": 31
+  },
+  "MZ-Y6-32": {
+    "criterion": "Memainkan latihan rekoder C hingga D’ dan pola irama dengan sekurang-kurangnya tiga daripada empat aspek—penjarian, dinamik, tempo, kerjasama—tepat.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 6,
+    "pdp": 32
+  },
+  "MZ-Y6-33": {
+    "criterion": "Mempersembahkan bahagian ensembel Rindu dalam dua ulangan dengan masa masuk, tempo, dinamik dan peranan kumpulan yang tepat.",
+    "approval": "DRAF_EDITORIAL_BELUM_DISAHKAN",
+    "evidence": "Dirumus secara individu daripada objektif dan bahagian pengukuhan/penilaian RPH yang sama",
+    "year": 6,
+    "pdp": 33
+  }
+}

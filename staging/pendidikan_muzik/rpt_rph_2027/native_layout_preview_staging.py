@@ -77,7 +77,13 @@ def build_staging_preview(root, year, pdp):
     criterion = [(k, v) for k, v in items if re.search(r"^kriteria\s+kejayaan", k, re.I)]
     if len(criterion) > 1:
         raise ValueError("Duplicated success criteria")
-    criteria = criterion[0][1] if criterion else "—"
+    # Draft sidecar is editorial scaffolding only, never an official DSKP gate.
+    draft_overlay = json.loads((base / "SUCCESS_CRITERIA_DRAFT_20261106.json").read_text(encoding="utf-8"))
+    drafted = draft_overlay.get(row["pdp_id"]) if not criterion else None
+    if drafted and (drafted.get("approval") != "DRAF_EDITORIAL_BELUM_DISAHKAN"
+                    or drafted.get("year") != year or drafted.get("pdp") != pdp):
+        raise ValueError("Untrusted success criterion overlay")
+    criteria = criterion[0][1] if criterion else drafted["criterion"] if drafted else "—"
     notes = "Aktiviti 1 — " + labels["act1"][0] + "\n" + labels["act1"][1] + \
             "\n\nAktiviti 2 — " + labels["act2"][0] + "\n" + labels["act2"][1] + \
             "\n\nPengukuhan dan Penilaian — " + labels["assessment"][0] + "\n" + labels["assessment"][1]
@@ -121,6 +127,8 @@ def build_staging_preview(root, year, pdp):
     warnings = ["NOT_PUBLISHED", "NO_REAL_WORD_PDF_RENDER", "NO_CROSS_PLATFORM_PARITY"]
     if not criterion:
         warnings.append("NO_EXPLICIT_SUCCESS_CRITERIA")
+        if drafted:
+            warnings.append("EDITORIAL_DRAFT_CRITERION_OVERLAY_NOT_APPROVED")
     if not row.get("source_book_text_crosscheck", False):
         warnings.append("TEXTBOOK_NOT_FULLY_CROSSCHECKED_OR_NONOFFICIAL")
     return {
