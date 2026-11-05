@@ -2,33 +2,33 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
 **Unit / Tajuk:** PAHLAWAN KECIL  
-**Bidang:** Nyanyian  
-**SK / SP (RPT sumber):** 2.1.2, 2.3.3
+**Bidang:** Gerakan Mengikut Muzik  
+**SK / SP (RPT Muzik sumber; belum disahkan silang dengan kod buku Kesenian):** 2.1.2, 2.3.3  
 **Tempoh cadangan:** 30 minit  
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Menyanyikan satu rangkap atau frasa dengan sekurang-kurangnya 2 daripada 3 aspek pic, tempo dan teknik yang betul.
+**Objektif pembelajaran (draf boleh ukur):** Menyelaraskan satu urutan lima gerakan dengan detik lagu Parang Ilang melalui dua persembahan berkumpulan.
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Kriteria kejayaan:** Murid bergerak mengikut tempo tanpa kehilangan detik serta berkerjasama dengan kumpulan nyanyian.
 
 **Set Induksi — 4 minit**  
-Guru memainkan frasa lagu pendek dan meminta murid meniru satu frasa mengikut pic serta tempo.
+Guru menepuk detik Parang Ilang dan meminta murid membezakan gerakan tepat dan terlewat.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru memodelkan latihan vokal bersesuaian: Bernyanyi dengan pic yang betul.. Murid berlatih secara respons-gema dalam dua pusingan.
+**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit)**  
+Berpandukan ilustrasi gerakan halaman 45, guru memodelkan lima bentuk gerakan yang sesuai lalu membahagikan murid kepada kumpulan penyanyi dan kumpulan bergerak.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid menyanyikan bahagian lagu daripada unit PAHLAWAN KECIL secara berkumpulan, kemudian mencuba semula setelah maklum balas pic/tempo/postur.
+**Aktiviti 2 — Aplikasi / persembahan (10 minit)**  
+Kumpulan A menyanyi mengikut pic, kumpulan B memperagakan gerakan mengikut tempo; mereka bertukar peranan dan menilai keseragaman pergerakan.
 
 **Pengukuhan & Penilaian — 6 minit**  
-Rubrik pemerhatian: pic, tempo dan kemahiran utama SP (3 kriteria); murid menunjukkan pembaikan pada percubaan kedua.
+Senarai semak tempo, ketepatan gerakan dan keselamatan ruang; murid mengulangi bahagian yang kurang seragam.
 
 **Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+Murid berkongsi satu cara memadankan gerak dengan nyanyian rakan.
 
-**Bahan:** Audio lagu yang sah, lirik rujukan guru, pembesar suara dan alat iringan jika ada.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 44-45; **belum disahkan pada halaman buku asal**. RPT sumber menyebut Audio 41-45; **nombor trek belum diaudit dengan fail audio**.
+**Bahan:** Ilustrasi buku halaman 45, ruang lapang dan iringan detik oleh guru; audio sebenar belum diperiksa.  
+**Rujukan sumber:** Buku Teks Pendidikan Kesenian Tahun 3 SK, DBP 2018, halaman 45; disemak secara teks terhadap https://anyflip.com/lcinm/flxx/basic/51-100 . Kod buku Kesenian yang dicetak: 2.2.8(ii); **jangan gantikan kod DSKP Muzik tanpa pengesahan crosswalk**. Audio bercetak: 41–45; **tiada fail audio disahkan**.
 
 **Catatan pelaksanaan / pemulihan:** __________________________________________
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_20261106; DRAF STAGING. Bukan pengesahan visual skor, fail audio, kod DSKP atau output Word/PDF dan Telegram–Web.
