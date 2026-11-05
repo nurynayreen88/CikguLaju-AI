@@ -40,7 +40,7 @@ def main() -> None:
         assert "STATUS" in raw, path
         assert "siapa memerlukan apa" not in raw, path
         assert "bantuan/tindakan praktikal" not in raw, path
-        assert any(x in raw.lower() for x in ("bukan semakan aktiviti individu", "halaman aktiviti", "bukan petikan buku")), path
+        assert any(x in raw.lower() for x in ("bukan semakan aktiviti individu", "halaman aktiviti", "bukan petikan buku", "pengesahan aktiviti di kelas")), path
         assert r["scenario"] in raw, path
         assert all(raw.count("**"+step+" (") == 1 for step in SECTIONS), path
         for field in ("Set induksi", "Aktiviti 1", "Aktiviti 2", "Pengukuhan/Pentaksiran PBD", "Penutup"):
