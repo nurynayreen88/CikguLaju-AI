@@ -55,6 +55,14 @@ def test_rendered_pdfs_and_word():
                 assert "KUMPULAN " + group in first
                 assert_no_internal_labels(first, (year, group, "RPT header"))
                 assert "096" in reader.pages[-1].extract_text(), (year, group)
+                if year == 6:
+                    # Verify the actual teacher-facing PDF renderer consumes
+                    # 2021 revised-edition titles, not historical KSSR names.
+                    pdf_text = " ".join(" ".join(p.extract_text().split()) for p in reader.pages)
+                    assert "Amalan Toleransi Menjamin Perpaduan Negara" in pdf_text, (year, group, "unit14 newer textbook title missing from PDF")
+                    assert "Amalan Toleransi Demi Perpaduan Negara" not in pdf_text, (year, group, "obsolete unit14 title leaked")
+                    assert "Hargai Keunikan Negara" in pdf_text and "Cinta akan Negara" in pdf_text, (year, group, "unit4 or unit7 missing")
+
             rph_pdf = build_rph_pdf(year, root/"RPH_54.pdf")
             pages = PdfReader(rph_pdf).pages
             assert len(pages) == 54, (year, "rph pdf pages", len(pages))
