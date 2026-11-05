@@ -1,0 +1,22 @@
+name: English Year4/5 teacher-facing draft labels
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'web/english_y4_pending_draft_preview_runtime.py'
+      - 'web/english_y5_fixed_draft_preview_runtime.py'
+      - 'tests/test_english_teacher_draft_title_safety_20261105.py'
+      - '.github/workflows/english-teacher-draft-title-safety-20261105.yml'
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  title-safety:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python -m unittest discover -s tests -p 'test_english_teacher_draft_title_safety_20261105.py' -v
+      - run: python -m unittest discover -s tests -p 'test_english_y5_full_preview_gate_20261105.py' -v
+      - run: python -m unittest discover -s tests -p 'test_english_y4_production_launcher_parity_20261105.py' -v
