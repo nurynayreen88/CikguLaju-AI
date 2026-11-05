@@ -121,8 +121,36 @@
     "audio_spoken_contents_verified": false,
     "authenticated_teacher_telegram_send_verified": false,
     "teacher_final_approval": false,
-    "printed_word_a4_per_lesson_verified": false,
-    "final_ready_approved": false
+    "printed_word_a4_per_lesson_verified": true,
+    "final_ready_approved": false,
+    "native_telegram_pdf_render_verified": false
   },
-  "limitation": "Audio duration and source CD/file ID do not prove exact speech. Do not approve audio, mark all 7 production gates true, or enable unverified Year5 RPH adapter."
+  "limitation": "The original book pages and three MP3 binary IDs are verified, and both Word documents render to one physical A4 page offline. Audio speech, actual Telegram document delivery and teacher approval are unverified; this does not certify native Telegram PDF output or authorize Year5 release.",
+  "word_a4_ci_evidence": {
+    "workflow_run_id": 41977394366,
+    "checked_head_sha": "3ec6dfacbed9144fee5b5bf5566229e9823e60fc",
+    "method": "AST-locked production Word builder, LibreOffice PDF approximation, not native Telegram PDF",
+    "criteria": "one physical A4 PDF page each, no missing Word source text; PDF extracted text >=60% Word source text",
+    "lessons": [
+      {
+        "lesson": 29,
+        "source_sha256": "a9f47f75a9b57b5550df0bcc5e32069cd28d1030c288cff5a711971d9a5ea9d9",
+        "pages": 1,
+        "one_page_a4": true,
+        "word_chars": 2543,
+        "pdf_chars": 2590
+      },
+      {
+        "lesson": 30,
+        "source_sha256": "1caaa14e5dd65654fe98a622e4c0509d2c1597e862a64a7a8830a559433ee0a6",
+        "pages": 1,
+        "one_page_a4": true,
+        "word_chars": 2598,
+        "pdf_chars": 2646
+      }
+    ],
+    "source_lesson_29_30_changed_after_audit": false,
+    "teacher_approved": false,
+    "authenticated_telegram_test": false
+  }
 }
