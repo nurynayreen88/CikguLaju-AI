@@ -196,6 +196,44 @@ def build_native_input(payload):
     return s,ai_text,fmt
 
 
+def compact_web_word_notes(document):
+    """Resize only Notes in native Telegram RPH Word; preserve all document content."""
+    from lxml import etree
+    ns='http://schemas.openxmlformats.org/wordprocessingml/2006/main'
+    w=lambda tag:'{'+ns+'}'+tag
+    with ZipFile(io.BytesIO(document)) as archive:
+        root=etree.fromstring(archive.read('word/document.xml'))
+        body=root.find(w('body'))
+        tables=body.findall(w('tbl')) if body is not None else []
+        if len(tables)!=3:
+            raise ValueError('Expected 3 native RPH tables')
+        activity=tables[1]
+        grid=activity.find(w('tblGrid'))
+        columns=grid.findall(w('gridCol')) if grid is not None else []
+        if len(columns)!=3:
+            raise ValueError('Expected 3 native activity columns')
+        widths=(1500,8250,880)
+        for col,width in zip(columns,widths):
+            col.set(w('w'),str(width))
+        for row in activity.findall(w('tr')):
+            cells=row.findall(w('tc'))
+            if len(cells)!=3:
+                raise ValueError('Unexpected merged native RPH columns')
+            for cell,width in zip(cells,widths):
+                props=cell.find(w('tcPr'))
+                if props is None:
+                    props=etree.Element(w('tcPr'));cell.insert(0,props)
+                tcw=props.find(w('tcW'))
+                if tcw is None:
+                    tcw=etree.SubElement(props,w('tcW'))
+                tcw.set(w('w'),str(width));tcw.set(w('type'),'dxa')
+        updated=etree.tostring(root,xml_declaration=True,encoding='UTF-8',standalone=True)
+        output=io.BytesIO()
+        with ZipFile(output,'w') as dest:
+            for item in archive.infolist():
+                dest.writestr(item,updated if item.filename=='word/document.xml' else archive.read(item.filename))
+    return output.getvalue()
+
 def _authorized():
     if os.environ.get("CIKGULAJU_WEB_NATIVE_RPH_ENABLED")!="1":
         return False,503
@@ -245,6 +283,8 @@ def create_native_rph_blueprint(runtime):
             if not path.is_file() or not 1000<=path.stat().st_size<=MAX_RESULT:
                 raise ValueError("Renderer output length invalid")
             data=path.read_bytes()
+            if fmt=="word":
+                data=compact_web_word_notes(data)
             if fmt=="pdf":
                 if not data.startswith(b"%PDF-"):
                     raise ValueError("Invalid PDF")
