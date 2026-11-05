@@ -98,6 +98,37 @@ class WrongBookEnglishYear4AudioHold(unittest.TestCase):
         self.assertTrue(_risk({"subject":"Bahasa Inggeris","year":"Tahun 4","lesson_no":97}))
         self.assertFalse(_risk({"subject":"Bahasa Inggeris","year":"Tahun 2","lesson_no":97}))
 
+    def test_correct_book_wma_for_other_year_is_preserved_unchanged(self):
+        """WMA is not forbidden: a correct-book Year2 file survives the Y4 source guard."""
+        forwarded=[]
+        def available(ss):
+            return ["rph", "media", "textbook"]
+        def sender(cid,ss,key):
+            forwarded.append((cid,key,dict(ss)))
+            return True
+        runtime=SimpleNamespace(
+            _available_materials_v2528=available,
+            _send_reference_material_v2528=sender,
+            _send_reference_material=sender,
+            send=lambda cid,msg: None,
+        )
+        self.assertTrue(install(runtime))
+        state={
+            "subject":"English",
+            "year":"Year 2",
+            "lesson_no":26,
+            "audio_filename":"CD2-35.wma",
+            "audio_storage_file_id":"CORRECT_BOOK_ORIGINAL_WMA",
+            "audio_mime_type":"audio/x-ms-wma",
+        }
+        before=dict(state)
+        self.assertIn("media",runtime._available_materials_v2528(state))
+        self.assertTrue(runtime._send_reference_material_v2528(100,state,"media"))
+        self.assertTrue(runtime._send_reference_material(100,state,"media"))
+        self.assertEqual(state,before)
+        self.assertEqual([entry[1] for entry in forwarded],["media","media"])
+        self.assertTrue(all(entry[2]==before for entry in forwarded))
+
     def test_guard_installed_only_after_existing_y4_l30_guard(self):
         launcher=(ROOT/"tools/run_telegram_with_curriculum_api.py").read_text(encoding="utf-8")
         self.assertIn("ENGLISH_Y4_WRONG_BOOK_AUDIO_HOLD_ACTIVE",launcher)
