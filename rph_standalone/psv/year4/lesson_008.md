@@ -5,7 +5,7 @@
 **SK:** 3.1; 4.1  
 **SP:** 3.1.1; 4.1.1; 4.1.2  
 **Buku Teks:** Pendidikan Kesenian Tahun 4 (bahagian Seni Visual), ms 16–17 (unit ms 14-17)  
-**BBM:** kertas warna, gam, kad latar, gunting hujung bulat  
+**BBM:** Mozek kek cawan PdP 007, jalur kertas tambahan, gam, kad bingkai dan kad apresiasi
 **Tempoh:** 60 minit
 
 ## Objektif dan kriteria kejayaan
@@ -13,10 +13,10 @@ Murid dapat mengemas karya, membuat satu pembetulan dan mengulas dua unsur seni.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan imej Warna-warni Kek Cawan; murid menyebut satu unsur seni atau fungsi karya.
-**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru menunjukkan kriteria kemasan dan murid mengenal pasti satu kekuatan serta kelemahan hasil.
-**Aktiviti 2 (25 minit) — Amali:** Murid membaiki karya dan memberi apresiasi: Ulas kesan susunan dan warna pada mozek; seorang rakan memberi ulasan membina.
-**Pengukuhan/Pentaksiran (10 minit):** Guru menyemak karya kemas serta apresiasi lisan dan mencatat PBD.
+**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru merujuk karya buku ms 17 dan mengingatkan susunan gulungan, ruang latar serta prinsip kontra.
+**Aktiviti 2 (25 minit) — Amali:** Murid mengemas gulungan kertas yang longgar, melengkapkan hiasan pada mangkuk kek cawan dan memberi ulasan jalinan, imbangan serta kontra warna.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menilai gulungan yang melekat kukuh, kek cawan lengkap dan apresiasi dua istilah seni.
 **Penutup (5 minit):** Murid menyatakan satu perkara baharu dan mengemas alatan.
 **Pembezaan:** Sediakan kad langkah untuk sokongan; murid lanjutan membandingkan dua reka bentuk.
 **Keselamatan:** Media tidak toksik; gunting dan alat ukir hanya digunakan di bawah pengawasan. Elak pisau tajam.
-**Rujukan:** [DSKP PSV 4](https://drive.google.com/file/d/1CpSVz8txeDqSnKM7OfOmrjnYH9HBmGy1/view); [Buku Teks Pendidikan Kesenian Tahun 4 (bahagian Seni Visual)](https://fliphtml5.com/jfuhh/hbrx/Buku_Teks_Pendidikan_Kesenian_Tahun_4/). Aktiviti adaptasi CikguLaju.
+**Rujukan:** [DSKP PSV 4](https://drive.google.com/file/d/1CpSVz8txeDqSnKM7OfOmrjnYH9HBmGy1/view); [Buku Teks Pendidikan Kesenian Tahun 4 (bahagian Seni Visual)](https://drive.google.com/file/d/1ZPvbJcwogZVQjRSgPMSgD6iymMXcASSU/view). Aktiviti adaptasi CikguLaju.
