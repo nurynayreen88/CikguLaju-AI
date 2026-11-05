@@ -34,3 +34,8 @@ Lihat [CSV audit berbaris untuk setiap PdP](../rph_standalone/psv/audits/psv_ind
 
 ## Gerbang akhir
 Bagi setiap baris CSV, buka *halaman tepat* buku asal, banding arahan sebenar dengan tindakan guru/murid, bahan dan keselamatan, semak maksud SK/SP (bukan kod sahaja), kemudian rekod bukti semakan dan tetapkan `PASSED` atau `FIX_REQUIRED`. Hanya apabila semua 210 mempunyai bukti, CI semasa hijau dan integrasi native Telegram staging berjaya boleh disediakan fail kelulusan sah dan ditimbang merge ke `main` terkini. Jangan lakukan deploy secara automatik daripada PR ini.
+
+## Penambahan audit sumber teks pada 5 November 2026
+- Tahun 2: **42/42** RPH mempunyai sumber Buku Teks yang dibanding pada peringkat kandungan teks halaman; rujukan projek ms 4–5 dan 46–47, karya unit sebenar diselaraskan. Ini **bukan** sijil visual setiap RPH.
+- Tahun 6: **42/42** RPH dibanding terhadap tajuk/hasil aktiviti unit dan halaman asal menggunakan buku PSV digital; 32 penanda lama `UNIT_BUKU_ASAL_DIRUJUK` diperincikan sebagai pemeriksaan kandungan teks unit. Ini **bukan** sijil visual per PdP.
+- Audit visual individu, RPT 2027 kalendar negeri dan native Telegram staging masih menjadi gerbang berasingan. Jangan tukar kelulusan kepada PASSED atau menerbitkan DRAF tanpa bukti.

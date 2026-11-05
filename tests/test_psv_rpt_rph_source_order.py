@@ -732,6 +732,21 @@ class PSVSourceOrderTests(unittest.TestCase):
         for unit, term in ((2, "bekas air comel"), (6, "kain putih"), (7, "topeng serkup")):
             self.assertIn(term, canon["years"]["2"]["units"][unit-1][6].lower())
 
+    def test_year6_42_pdp_have_book_text_audit_not_fake_visual_certification(self):
+        """Original-book unit semantics are mapped without inventing image-by-image signoff."""
+        audit = read_csv(ROOT / "rph_standalone/psv/audits/psv_individual_210_review_20261105.csv")
+        group = [row for row in audit if row["Tahun"] == "6"]
+        self.assertEqual(len(group), 42)
+        for row in group:
+            with self.subTest(pdp=row["PdP"]):
+                self.assertNotIn("UNIT_BUKU_ASAL_DIRUJUK", row["Bukti_buku"])
+                self.assertEqual(row["Kelulusan_terbit"], "BELUM_READY")
+                self.assertFalse(row["Bukti_buku"].startswith("BUKU_TEKS_VISUAL_SAH:"))
+        rpt = read_csv(PSV / "RPT_PSV_Tahun_6_2027_DRAF.csv")
+        self.assertEqual(len(rpt), 42)
+        for n in range(1, 43):
+            self.assertEqual(rpt[n-1]["Status"], "DRAF_SEMAK")
+
     def test_year2_all_42_lesson_textbook_text_source_links_and_project_pages(self):
         """Y2 content has been individually reviewed against textbook text, not visually certified."""
         audit = read_csv(ROOT / "rph_standalone/psv/audits/psv_individual_210_review_20261105.csv")
