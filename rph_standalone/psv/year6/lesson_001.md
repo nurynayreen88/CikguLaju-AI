@@ -18,7 +18,7 @@ Menyatakan sekurang-kurangnya tiga unsur/prinsip seni pada Kampungku dan mengait
 
 **Aktiviti 1 (15 minit) — Penerangan dan penerokaan:** Guru menunjukkan dua imej kampungku dan meminta murid menunjukkan garisan, rupa serta imbangan. Murid membandingkan dua contoh menggunakan kad pemerhatian.
 
-**Aktiviti 2 (25 minit) — Amali:** Guru membimbing peta visual tentang garisan laluan, rupa rumah dan ruang hadapan-belakang dalam suasana kampung. Murid menghasilkan kajian ringkas berlabel: tiga ciri bahasa seni dan satu cadangan penggunaannya pada kajian visual kampung dan lakaran tingkap berfungsi.
+**Aktiviti 2 (25 minit) — Amali:** Guru membimbing peta visual tentang garisan laluan, rupa rumah dan ruang hadapan-belakang dalam suasana kampung. Murid menghasilkan kajian ringkas berlabel: tiga ciri bahasa seni dan satu cadangan penggunaannya pada lakaran suasana kampung.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Kad pemerhatian mengandungi tiga istilah visual tepat dan satu penerangan kaitan dengan karya. Guru merekod proses, produk dan penjelasan murid; Tahap Penguasaan tidak ditentukan daripada satu item semata-mata.
 
