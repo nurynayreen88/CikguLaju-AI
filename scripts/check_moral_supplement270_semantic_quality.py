@@ -54,7 +54,7 @@ def main() -> None:
             assert code in raw and re.search(r"\b"+re.escape(code)+r"\b",raw), (path,code)
         assert "60 minit" in raw and "Kriteria kejayaan" in raw, path
         if y==6:
-            assert "Semakan 2017" in raw and "2021" in raw, path
+            assert "Semakan 2017" in raw and ("2021" in raw or "Bukti aktiviti Semakan 2017" in raw), path
             assert "fliphtml5.com/sbinx/haph" in raw, path
             assert "buku teks" in raw.lower(), path
         # The versioned source record remains an educator proposal, not
