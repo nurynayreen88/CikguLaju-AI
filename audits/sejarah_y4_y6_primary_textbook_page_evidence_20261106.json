@@ -1,8 +1,8 @@
 {
   "date": "2026-11-06",
   "source_basis": "digital scanned/rehost textbook HTML text read, not complete visual approval",
-  "count": 18,
-  "status": "EIGHTEEN_PAGE_TEXT_CORROBORATED_NOT_RELEASE",
+  "count": 47,
+  "status": "47_TEXTBOOK_PAGE_TEXT_CORROBORATED_NOT_RELEASE",
   "records": [
     {
       "year": 4,
@@ -107,6 +107,454 @@
         "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
       ],
       "summary": "Halaman 24 menunjukkan riwayat perkembangan diri dalam bentuk garis masa, peristiwa lahir dan berpindah serta aktiviti buku skrap.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 8,
+      "pages": "32–35",
+      "sp": [
+        "1.3.1",
+        "1.3.2"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Nama, alamat, lokasi sekolah dan mercu tanda melalui peta serta pelan.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 9,
+      "pages": "36–37",
+      "sp": [
+        "1.3.3"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Sejarah sekolah, garis masa perubahan bangunan dan bukti pencapaian.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 10,
+      "pages": "38–40",
+      "sp": [
+        "1.3.4"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Lencana, bendera, lagu, cogan kata serta carta organisasi sekolah.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 11,
+      "pages": "32–40",
+      "sp": [
+        "1.3.1",
+        "1.3.2"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Sumber lokasi, identiti dan sejarah sekolah sebagai bahan kajian kes cadangan guru; tiada tugas kajian kes tunggal yang disahkan.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 12,
+      "pages": "46–49",
+      "sp": [
+        "1.4.1",
+        "1.4.2"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Maklumat kawasan tempat tinggal dan contoh bentuk bumi tanah tinggi, tanah pamah, sungai dan pantai.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 13,
+      "pages": "50–51",
+      "sp": [
+        "1.4.3"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Contoh perubahan nama tempat Tanjung Puteri kepada Johor Bahru serta rekod sejarah tempatan.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 14,
+      "pages": "52–54",
+      "sp": [
+        "1.4.4"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Takrif tokoh setempat, contoh malim gunung, guru dan usahawan serta rangka kajian kes.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 15,
+      "pages": "60–63",
+      "sp": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Epok Pleistosen/Holosen, pengertian dan garis masa Zaman Air Batu; model pencairan ais.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 16,
+      "pages": "64–65",
+      "sp": [
+        "2.1.3"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Perubahan suhu, pencairan, bentuk bumi dan habitat; aktiviti Jalan Galeri.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 17,
+      "pages": "66–67",
+      "sp": [
+        "2.1.4"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Kesan paras laut terhadap Pentas Sunda, perpindahan manusia/haiwan dan petempatan.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 18,
+      "pages": "74–77",
+      "sp": [
+        "3.1.1",
+        "3.1.2"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Takrif Zaman Prasejarah dan peta Bukit Jawa, Gua Niah, Bukit Tengkorak serta artifak.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 19,
+      "pages": "78–79",
+      "sp": [
+        "3.1.3"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Perbandingan sosial/ekonomi zaman Paleolitik, Mesolitik, Neolitik dan Logam.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 20,
+      "pages": "80–82",
+      "sp": [
+        "3.1.4"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Teknologi prasejarah ke kini: pertanian, komunikasi, pengangkutan dan aktiviti berpasangan.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 21,
+      "pages": "74–84",
+      "sp": [
+        "3.1.1",
+        "3.1.2"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Kajian kes cadangan guru daripada lokasi dan artifak prasejarah serta soalan pemeliharaan warisan.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 22,
+      "pages": "88–91",
+      "sp": [
+        "4.1.1",
+        "4.1.2"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Kerajaan Melayu awal mengikut kronologi dan peta kedudukan kerajaan di Kepulauan Melayu.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 23,
+      "pages": "92–94",
+      "sp": [
+        "4.1.3"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Hubungan diplomatik kerajaan awal dengan China dan India; aktiviti kad Fan-n-Pick.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 24,
+      "pages": "95–98",
+      "sp": [
+        "4.1.4"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Kegiatan pertanian, perdagangan, hasil hutan/laut, perlombongan dan pembuatan.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 25,
+      "pages": "106–109",
+      "sp": [
+        "5.1.1",
+        "5.1.2"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Struktur pemerintah/diperintah dan ciri tokoh terbilang Melaka.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 26,
+      "pages": "110–115",
+      "sp": [
+        "5.1.3"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Peranan Sultan, Bendahara, Laksamana; main peranan dan Giliran Robin.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 27,
+      "pages": "109, 117–119",
+      "sp": [
+        "5.1.4"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Perbincangan menghargai keistimewaan tokoh dan nilai patriotisme.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 28,
+      "pages": "122–125",
+      "sp": [
+        "5.2.1",
+        "5.2.2"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Sulalatus Salatin dan Suma Oriental tentang pengasas Melaka; perjalanan Parameswara.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 29,
+      "pages": "126–127",
+      "sp": [
+        "5.2.3"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Pembukaan Melaka di Sungai Bertam dan naratif pelanduk putih sebagai cerita bersumber.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 30,
+      "pages": "128–131",
+      "sp": [
+        "5.2.4"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Asal usul nama Melaka menurut sumber tempatan, Arab dan India.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 31,
+      "pages": "122–131",
+      "sp": [
+        "5.2.1",
+        "5.2.2"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Kajian kes cadangan guru membanding sumber pengasas, legenda dan kronologi Parameswara.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 32,
+      "pages": "140–145",
+      "sp": [
+        "5.3.1",
+        "5.3.2"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Riwayat Tun Perak dan tugas ketua pembesar, penasihat, diplomat serta panglima.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 33,
+      "pages": "146–148",
+      "sp": [
+        "5.3.3"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Strategi jamung Tun Perak, hubungan dengan Siam dan keputusan pentadbiran.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 34,
+      "pages": "156–159",
+      "sp": [
+        "5.4.1",
+        "5.4.2"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Riwayat Hang Tuah berasaskan hikayat, ciri jujur, amanah, berani dan tanggungjawab.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 35,
+      "pages": "160–162",
+      "sp": [
+        "5.4.3"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Peranan Hang Tuah menjaga perairan dan pedagang serta mengetuai utusan.",
+      "ready": false,
+      "teacher_approved": false,
+      "exact_exercise_visual_verified": false
+    },
+    {
+      "year": 4,
+      "pdp": 36,
+      "pages": "156–167",
+      "sp": [
+        "5.4.1",
+        "5.4.2"
+      ],
+      "page_urls": [
+        "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+      ],
+      "summary": "Kajian kes cadangan guru yang membezakan hikayat Hang Tuah daripada bukti lain.",
       "ready": false,
       "teacher_approved": false,
       "exact_exercise_visual_verified": false

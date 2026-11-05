@@ -34,3 +34,37 @@ Tarikh 2026-11-06. **6 RPH** diperkukuh dengan teks halaman cetakan buku teks ya
 - PdP 007; SP 1.2.4; halaman 24. Halaman 24 menunjukkan riwayat perkembangan diri dalam bentuk garis masa, peristiwa lahir dan berpindah serta aktiviti buku skrap.
 
 Sumber asal teks: https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/ . **Jumlah terkini: 18/108 sumber halaman teks diperiksa, 90/108 lagi belum.** Kelulusan keseluruhan masih 0; semua RPH kekal DRAF.
+
+## Tambahan Tahun 4 PdP 008–036 — semakan teks buku (6 November 2026)
+
+- **PdP 008**: halaman 32–35; SP 1.3.1,1.3.2; Nama, alamat, lokasi sekolah dan mercu tanda melalui peta serta pelan.
+- **PdP 009**: halaman 36–37; SP 1.3.3; Sejarah sekolah, garis masa perubahan bangunan dan bukti pencapaian.
+- **PdP 010**: halaman 38–40; SP 1.3.4; Lencana, bendera, lagu, cogan kata serta carta organisasi sekolah.
+- **PdP 011**: halaman 32–40; SP 1.3.1,1.3.2; Sumber lokasi, identiti dan sejarah sekolah sebagai bahan kajian kes cadangan guru; tiada tugas kajian kes tunggal yang disahkan.
+- **PdP 012**: halaman 46–49; SP 1.4.1,1.4.2; Maklumat kawasan tempat tinggal dan contoh bentuk bumi tanah tinggi, tanah pamah, sungai dan pantai.
+- **PdP 013**: halaman 50–51; SP 1.4.3; Contoh perubahan nama tempat Tanjung Puteri kepada Johor Bahru serta rekod sejarah tempatan.
+- **PdP 014**: halaman 52–54; SP 1.4.4; Takrif tokoh setempat, contoh malim gunung, guru dan usahawan serta rangka kajian kes.
+- **PdP 015**: halaman 60–63; SP 2.1.1,2.1.2; Epok Pleistosen/Holosen, pengertian dan garis masa Zaman Air Batu; model pencairan ais.
+- **PdP 016**: halaman 64–65; SP 2.1.3; Perubahan suhu, pencairan, bentuk bumi dan habitat; aktiviti Jalan Galeri.
+- **PdP 017**: halaman 66–67; SP 2.1.4; Kesan paras laut terhadap Pentas Sunda, perpindahan manusia/haiwan dan petempatan.
+- **PdP 018**: halaman 74–77; SP 3.1.1,3.1.2; Takrif Zaman Prasejarah dan peta Bukit Jawa, Gua Niah, Bukit Tengkorak serta artifak.
+- **PdP 019**: halaman 78–79; SP 3.1.3; Perbandingan sosial/ekonomi zaman Paleolitik, Mesolitik, Neolitik dan Logam.
+- **PdP 020**: halaman 80–82; SP 3.1.4; Teknologi prasejarah ke kini: pertanian, komunikasi, pengangkutan dan aktiviti berpasangan.
+- **PdP 021**: halaman 74–84; SP 3.1.1,3.1.2; Kajian kes cadangan guru daripada lokasi dan artifak prasejarah serta soalan pemeliharaan warisan.
+- **PdP 022**: halaman 88–91; SP 4.1.1,4.1.2; Kerajaan Melayu awal mengikut kronologi dan peta kedudukan kerajaan di Kepulauan Melayu.
+- **PdP 023**: halaman 92–94; SP 4.1.3; Hubungan diplomatik kerajaan awal dengan China dan India; aktiviti kad Fan-n-Pick.
+- **PdP 024**: halaman 95–98; SP 4.1.4; Kegiatan pertanian, perdagangan, hasil hutan/laut, perlombongan dan pembuatan.
+- **PdP 025**: halaman 106–109; SP 5.1.1,5.1.2; Struktur pemerintah/diperintah dan ciri tokoh terbilang Melaka.
+- **PdP 026**: halaman 110–115; SP 5.1.3; Peranan Sultan, Bendahara, Laksamana; main peranan dan Giliran Robin.
+- **PdP 027**: halaman 109, 117–119; SP 5.1.4; Perbincangan menghargai keistimewaan tokoh dan nilai patriotisme.
+- **PdP 028**: halaman 122–125; SP 5.2.1,5.2.2; Sulalatus Salatin dan Suma Oriental tentang pengasas Melaka; perjalanan Parameswara.
+- **PdP 029**: halaman 126–127; SP 5.2.3; Pembukaan Melaka di Sungai Bertam dan naratif pelanduk putih sebagai cerita bersumber.
+- **PdP 030**: halaman 128–131; SP 5.2.4; Asal usul nama Melaka menurut sumber tempatan, Arab dan India.
+- **PdP 031**: halaman 122–131; SP 5.2.1,5.2.2; Kajian kes cadangan guru membanding sumber pengasas, legenda dan kronologi Parameswara.
+- **PdP 032**: halaman 140–145; SP 5.3.1,5.3.2; Riwayat Tun Perak dan tugas ketua pembesar, penasihat, diplomat serta panglima.
+- **PdP 033**: halaman 146–148; SP 5.3.3; Strategi jamung Tun Perak, hubungan dengan Siam dan keputusan pentadbiran.
+- **PdP 034**: halaman 156–159; SP 5.4.1,5.4.2; Riwayat Hang Tuah berasaskan hikayat, ciri jujur, amanah, berani dan tanggungjawab.
+- **PdP 035**: halaman 160–162; SP 5.4.3; Peranan Hang Tuah menjaga perairan dan pedagang serta mengetuai utusan.
+- **PdP 036**: halaman 156–167; SP 5.4.1,5.4.2; Kajian kes cadangan guru yang membezakan hikayat Hang Tuah daripada bukti lain.
+
+Tahun 4 kini **36/36** mempunyai catatan bacaan teks halaman khusus, tanpa kelulusan visual latihan atau guru. Jumlah keseluruhan **47/108**, baki **61**. Ini metadata bukti pada JSON sumber dan ledger, bukan perubahan aktiviti RPH atau generator.

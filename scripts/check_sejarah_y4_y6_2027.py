@@ -32,9 +32,9 @@ for y, (num_sk, num_sp) in EXPECTED.items():
     assert len(all_matrix) == 97
     assert len([m for m in matrix["records"] if m["year"] == y]) == (33 if y == 6 else 32)
     textbook_evidence = json.loads((ROOT/"audits/sejarah_y4_y6_primary_textbook_page_evidence_20261106.json").read_text())
-    assert textbook_evidence["count"] == len(textbook_evidence["records"]) == 18
+    assert textbook_evidence["count"] == len(textbook_evidence["records"]) == 47
     corroborated = {(a["year"], a["pdp"]):a for a in textbook_evidence["records"]}
-    assert len(corroborated) == 18
+    assert len(corroborated) == 47
     audited = {a["id"]:a for a in audit["rows"]}
     assert len(audited) == 11
     calendar = json.loads((ROOT/"curriculum/sejarah/kalender_sejarah_2027_kumpulan_a_b.json").read_text())

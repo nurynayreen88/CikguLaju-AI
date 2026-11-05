@@ -868,7 +868,22 @@
           "unit_start_page": 30,
           "unit_end_page": 43,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "32–35",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "1.3.1",
+              "1.3.2"
+            ],
+            "description": "Nama, alamat, lokasi sekolah dan mercu tanda melalui peta serta pelan.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -964,7 +979,21 @@
           "unit_start_page": 30,
           "unit_end_page": 43,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "36–37",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "1.3.3"
+            ],
+            "description": "Sejarah sekolah, garis masa perubahan bangunan dan bukti pencapaian.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1060,7 +1089,21 @@
           "unit_start_page": 30,
           "unit_end_page": 43,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "38–40",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "1.3.4"
+            ],
+            "description": "Lencana, bendera, lagu, cogan kata serta carta organisasi sekolah.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1162,7 +1205,22 @@
           "unit_start_page": 30,
           "unit_end_page": 43,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "32–40",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "1.3.1",
+              "1.3.2"
+            ],
+            "description": "Sumber lokasi, identiti dan sejarah sekolah sebagai bahan kajian kes cadangan guru; tiada tugas kajian kes tunggal yang disahkan.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1264,7 +1322,22 @@
           "unit_start_page": 44,
           "unit_end_page": 57,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "46–49",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "1.4.1",
+              "1.4.2"
+            ],
+            "description": "Maklumat kawasan tempat tinggal dan contoh bentuk bumi tanah tinggi, tanah pamah, sungai dan pantai.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1360,7 +1433,21 @@
           "unit_start_page": 44,
           "unit_end_page": 57,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "50–51",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "1.4.3"
+            ],
+            "description": "Contoh perubahan nama tempat Tanjung Puteri kepada Johor Bahru serta rekod sejarah tempatan.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1456,7 +1543,21 @@
           "unit_start_page": 44,
           "unit_end_page": 57,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "52–54",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "1.4.4"
+            ],
+            "description": "Takrif tokoh setempat, contoh malim gunung, guru dan usahawan serta rangka kajian kes.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1558,7 +1659,22 @@
           "unit_start_page": 58,
           "unit_end_page": 71,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "60–63",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "2.1.1",
+              "2.1.2"
+            ],
+            "description": "Epok Pleistosen/Holosen, pengertian dan garis masa Zaman Air Batu; model pencairan ais.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1654,7 +1770,21 @@
           "unit_start_page": 58,
           "unit_end_page": 71,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "64–65",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "2.1.3"
+            ],
+            "description": "Perubahan suhu, pencairan, bentuk bumi dan habitat; aktiviti Jalan Galeri.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1750,7 +1880,21 @@
           "unit_start_page": 58,
           "unit_end_page": 71,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "66–67",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "2.1.4"
+            ],
+            "description": "Kesan paras laut terhadap Pentas Sunda, perpindahan manusia/haiwan dan petempatan.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1852,7 +1996,22 @@
           "unit_start_page": 72,
           "unit_end_page": 85,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "74–77",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "3.1.1",
+              "3.1.2"
+            ],
+            "description": "Takrif Zaman Prasejarah dan peta Bukit Jawa, Gua Niah, Bukit Tengkorak serta artifak.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -1948,7 +2107,21 @@
           "unit_start_page": 72,
           "unit_end_page": 85,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "78–79",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "3.1.3"
+            ],
+            "description": "Perbandingan sosial/ekonomi zaman Paleolitik, Mesolitik, Neolitik dan Logam.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2044,7 +2217,21 @@
           "unit_start_page": 72,
           "unit_end_page": 85,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "80–82",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "3.1.4"
+            ],
+            "description": "Teknologi prasejarah ke kini: pertanian, komunikasi, pengangkutan dan aktiviti berpasangan.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2146,7 +2333,22 @@
           "unit_start_page": 72,
           "unit_end_page": 85,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "74–84",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "3.1.1",
+              "3.1.2"
+            ],
+            "description": "Kajian kes cadangan guru daripada lokasi dan artifak prasejarah serta soalan pemeliharaan warisan.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2248,7 +2450,22 @@
           "unit_start_page": 86,
           "unit_end_page": 103,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "88–91",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "4.1.1",
+              "4.1.2"
+            ],
+            "description": "Kerajaan Melayu awal mengikut kronologi dan peta kedudukan kerajaan di Kepulauan Melayu.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2344,7 +2561,21 @@
           "unit_start_page": 86,
           "unit_end_page": 103,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "92–94",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "4.1.3"
+            ],
+            "description": "Hubungan diplomatik kerajaan awal dengan China dan India; aktiviti kad Fan-n-Pick.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2440,7 +2671,21 @@
           "unit_start_page": 86,
           "unit_end_page": 103,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "95–98",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "4.1.4"
+            ],
+            "description": "Kegiatan pertanian, perdagangan, hasil hutan/laut, perlombongan dan pembuatan.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2542,7 +2787,22 @@
           "unit_start_page": 104,
           "unit_end_page": 119,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "106–109",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "5.1.1",
+              "5.1.2"
+            ],
+            "description": "Struktur pemerintah/diperintah dan ciri tokoh terbilang Melaka.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2638,7 +2898,21 @@
           "unit_start_page": 104,
           "unit_end_page": 119,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "110–115",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "5.1.3"
+            ],
+            "description": "Peranan Sultan, Bendahara, Laksamana; main peranan dan Giliran Robin.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2728,7 +3002,21 @@
           "unit_start_page": 104,
           "unit_end_page": 119,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "109, 117–119",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "5.1.4"
+            ],
+            "description": "Perbincangan menghargai keistimewaan tokoh dan nilai patriotisme.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2830,7 +3118,22 @@
           "unit_start_page": 120,
           "unit_end_page": 137,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "122–125",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "5.2.1",
+              "5.2.2"
+            ],
+            "description": "Sulalatus Salatin dan Suma Oriental tentang pengasas Melaka; perjalanan Parameswara.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -2926,7 +3229,21 @@
           "unit_start_page": 120,
           "unit_end_page": 137,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "126–127",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "5.2.3"
+            ],
+            "description": "Pembukaan Melaka di Sungai Bertam dan naratif pelanduk putih sebagai cerita bersumber.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -3022,7 +3339,21 @@
           "unit_start_page": 120,
           "unit_end_page": 137,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "128–131",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "5.2.4"
+            ],
+            "description": "Asal usul nama Melaka menurut sumber tempatan, Arab dan India.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -3124,7 +3455,22 @@
           "unit_start_page": 120,
           "unit_end_page": 137,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "122–131",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "5.2.1",
+              "5.2.2"
+            ],
+            "description": "Kajian kes cadangan guru membanding sumber pengasas, legenda dan kronologi Parameswara.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -3231,7 +3577,22 @@
           "unit_start_page": 138,
           "unit_end_page": 153,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "140–145",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "5.3.1",
+              "5.3.2"
+            ],
+            "description": "Riwayat Tun Perak dan tugas ketua pembesar, penasihat, diplomat serta panglima.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -3327,7 +3688,21 @@
           "unit_start_page": 138,
           "unit_end_page": 153,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "146–148",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "5.3.3"
+            ],
+            "description": "Strategi jamung Tun Perak, hubungan dengan Siam dan keputusan pentadbiran.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -3434,7 +3809,22 @@
           "unit_start_page": 154,
           "unit_end_page": 168,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "156–159",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "5.4.1",
+              "5.4.2"
+            ],
+            "description": "Riwayat Hang Tuah berasaskan hikayat, ciri jujur, amanah, berani dan tanggungjawab.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -3530,7 +3920,21 @@
           "unit_start_page": 154,
           "unit_end_page": 168,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "160–162",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "5.4.3"
+            ],
+            "description": "Peranan Hang Tuah menjaga perairan dan pedagang serta mengetuai utusan.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -3632,7 +4036,22 @@
           "unit_start_page": 154,
           "unit_end_page": 168,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "156–167",
+            "source_urls": [
+              "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+            ],
+            "matched_sp": [
+              "5.4.1",
+              "5.4.2"
+            ],
+            "description": "Kajian kes cadangan guru yang membezakan hikayat Hang Tuah daripada bukti lain.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {

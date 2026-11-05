@@ -47,3 +47,5 @@ Semua kerja masih pada PR #341 DRAF. Jangan gabung atau deploy atas keputusan QA
 - Semua dokumen masih DRAF. Jangan merge ke main atau deploy sehingga tanda tangan pengesahan setiap PdP serta QA Telegram–Web betul-betul lengkap.
 
 - **Kemajuan bukti teks halaman terkini: 18/108 PdP** (Tahun 4 PdP 001–007, Tahun 5 PdP 005–009, Tahun 6 PdP 001–006). Rekod terdahulu menyebut 11/108; rujuk ledger JSON untuk bilangan terkini. Semua kelulusan kekal belum lengkap.
+
+- **Semakan halaman teks terkini**: Tahun 4 36/36, keseluruhan 47/108. Semua status DRAF dan kelulusan individu belum disahkan. Rujuk ledger bukti untuk nilai terkini.
