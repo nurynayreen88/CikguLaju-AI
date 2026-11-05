@@ -20,7 +20,7 @@ class Lesson29ClilSourceAudit(unittest.TestCase):
         self.assertIn("CD3 Track 35 (Vocabulary)",text)
         self.assertIn("CD3 Track 36 (Activity 1)",text)
         self.assertIn("CD3 Tracks 35/36",text)
-        self.assertIn("NOT READY FOR AUDIO RELEASE",text)
+        self.assertIn("HOLD FOR AUDIO RELEASE",text)
         self.assertIn("legacy Telegram maps wrongly label both as CD1",text)
         for fid in SRC_IDS:
             self.assertIn(fid,text)
