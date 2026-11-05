@@ -1,28 +1,29 @@
 # RPH PENDIDIKAN MUZIK TAHUN 6 — PdP 02
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** SETIA KAWAN  
-**Bidang:** Permainan Alat Perkusi  
-**SK/SP:** 2.2.1, 2.2.2  
-**Tempoh cadangan:** 30 minit  
+**Unit/Tajuk:** SETIA KAWAN
+**SK / SP (sumber DSKP/RPT Tahun 6, dikekalkan):** 2.2.1, 2.2.2
+**Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — bukan FINAL READY
 
-**Objektif:** Murid memainkan corak irama empat detik secara tepat dalam sekurang-kurangnya 2 daripada 3 percubaan.
+**Objektif:** Menghasilkan corak perkusi badan 32 detik dan memainkan satu bahagian iringan ensembel Setia Kawan dengan tempo terkawal.
 
-**Set induksi (4 minit):** Guru mengetuk empat detik; murid mengenal pasti detik dan mengajuk secara tepukan.
+**Kriteria kejayaan:** Murid membuktikan kemahiran yang dinyatakan dalam objektif melalui demonstrasi atau hasil tugasan yang diperiksa guru.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Murid membaca corak irama/skor ikon dengan tumpuan Memainkan alat perkusi mengikut tempo berdasarkan skor: (i) (ii) tanda rehat; guru memberi contoh pola sebelum menggunakan alat.
+**Set Induksi — 4 minit:** Guru memodelkan corak tepuk/hentak kaki dan bunyi perkusi mulut tanpa alat.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Kumpulan memainkan irama dengan alat perkusi pada dua tempo; rakan menyemak pola, detik dan dinamik.
+**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid membentuk bulatan dan menepuk dua latihan perkusi badan sepanjang 32 detik halaman 6, kemudian mencuba corak perkusi mulut secara selamat.
 
-**Pengukuhan dan pentaksiran (6 minit):** Senarai semak ketepatan ritma, tempo dan kerjasama; pembetulan dan ulang satu pola.
+**Aktiviti 2 — Aplikasi dan latihan (10 minit):** Guru membahagikan kastanet, loceng dan kerincing untuk melatih corak 1 dan 2 halaman 7; tiga kumpulan perkusi mengiringi satu kumpulan penyanyi Setia Kawan mengikut skor halaman 8–9.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Pengukuhan dan Penilaian — 6 minit:** Semak 32 detik yang stabil, ketepatan satu corak irama dan keseimbangan bunyi antara nyanyian dengan alat.
 
-**Bahan:** Kad skor, metronom atau kiraan, alat perkusi.
+**Penutup — 2 minit:** Murid menjelaskan perbezaan perkusi badan dan perkusi mulut. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 6. RPT rujukan mencatat halaman buku teks 6-9 (belum disahkan pada buku asal). Rakaman/trek audio belum disahkan.
+**Bahan:** Skor halaman 6–9, kastanet/loceng/kerincing atau alternatif selamat, kad 32 detik.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Rujukan sumber:** Buku Teks Pendidikan Muzik Tahun 6 SK DBP 2021, halaman 6–9; https://anyflip.com/zcnoa/yxcj/basic. Audio 11–27 hanya nombor bercetak, **bukan bukti fail audio telah disahkan**. Kod sumber DSKP/RPT dikekalkan, pemeriksaan skor/notasi visual dan render Word/PDF masih tertangguh.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Catatan pelaksanaan / pemulihan:** __________________________________________
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_20261106; kekal DRAF dalam staging; belum pengesahan Word/PDF, skor visual, fail audio, cuti RPT 2027 atau Telegram/Web.

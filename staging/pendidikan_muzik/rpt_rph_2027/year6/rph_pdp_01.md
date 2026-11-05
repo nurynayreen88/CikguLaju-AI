@@ -1,28 +1,29 @@
 # RPH PENDIDIKAN MUZIK TAHUN 6 — PdP 01
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** SETIA KAWAN  
-**Bidang:** Nyanyian  
-**SK/SP:** 2.1.1, 2.1.2  
-**Tempoh cadangan:** 30 minit  
+**Unit/Tajuk:** SETIA KAWAN
+**SK / SP (sumber DSKP/RPT Tahun 6, dikekalkan):** 2.1.1, 2.1.2
+**Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — bukan FINAL READY
 
-**Objektif:** Murid menyanyikan frasa lagu dengan sekurang-kurangnya 2 daripada 3 kriteria pic, tempo dan ekspresi/teknik yang tepat.
+**Objektif:** Menyanyikan satu frasa Setia Kawan dengan pic, tempo serta perubahan crescendo dan decrescendo tepat dalam dua percubaan.
 
-**Set induksi (4 minit):** Guru memperdengarkan frasa lagu daripada unit ini; murid mengajuk pic dan menyebut perubahan ekspresi.
+**Kriteria kejayaan:** Murid membuktikan kemahiran yang dinyatakan dalam objektif melalui demonstrasi atau hasil tugasan yang diperiksa guru.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Guru memodelkan pernafasan, postur serta fokus SP: Bernyanyi lagu dengan pic yang betul mengikut tempo.; murid mengajuk satu bar pada satu masa.
+**Set Induksi — 4 minit:** Guru membimbing pemanasan suara dan menarik nafas sebelum memperdengarkan perbezaan bunyi beransur kuat dan lembut.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Murid menyanyikan frasa/rangkap dalam kumpulan kemudian mengulang secara berpasangan dengan pembetulan pic, tempo serta dinamik mengikut SP.
+**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Guru membimbing latihan vokal halaman 3 serta nyanyian Setia Kawan mengikut frasa pada halaman 4, dengan pernafasan dan dinamik berpandukan skor.
 
-**Pengukuhan dan pentaksiran (6 minit):** Guru menyemak 3 kriteria (pic, tempo, teknik/dinamik), mencatat percubaan pertama dan kedua.
+**Aktiviti 2 — Aplikasi dan latihan (10 minit):** Murid menggunakan simbol crescendo dan decrescendo halaman 5 untuk menyebut satu frasa dengan bunyi beransur kuat kemudian beransur lembut; mereka menyanyikan semula bahagian lagu.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Pengukuhan dan Penilaian — 6 minit:** Guru menilai pic, tempo dan ketepatan dinamik melalui senarai semak tiga aspek.
 
-**Bahan:** Rakaman lagu yang diizinkan, skor ringkas, pembesar suara.
+**Penutup — 2 minit:** Murid menunjukkan simbol crescendo/decrescendo menggunakan gerakan tangan dan suara. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 6. RPT rujukan mencatat halaman buku teks 4-5 (belum disahkan pada buku asal). Rakaman/trek audio belum disahkan.
+**Bahan:** Skor rujukan guru, kad simbol crescendo/decrescendo dan suara guru.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Rujukan sumber:** Buku Teks Pendidikan Muzik Tahun 6 SK DBP 2021, halaman 4–5; https://anyflip.com/zcnoa/yxcj/basic. Audio 1–10 hanya nombor bercetak, **bukan bukti fail audio telah disahkan**. Kod sumber DSKP/RPT dikekalkan, pemeriksaan skor/notasi visual dan render Word/PDF masih tertangguh.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Catatan pelaksanaan / pemulihan:** __________________________________________
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_20261106; kekal DRAF dalam staging; belum pengesahan Word/PDF, skor visual, fail audio, cuti RPT 2027 atau Telegram/Web.

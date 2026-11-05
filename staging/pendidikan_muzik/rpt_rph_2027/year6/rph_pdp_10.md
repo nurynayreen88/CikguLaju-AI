@@ -1,28 +1,29 @@
 # RPH PENDIDIKAN MUZIK TAHUN 6 — PdP 10
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** RANGKAIAN GLOBALISASI  
-**Bidang:** Kreativiti Muzik  
-**SK/SP:** 3.1.1, 3.1.2  
-**Tempoh cadangan:** 30 minit  
+**Unit/Tajuk:** RANGKAIAN GLOBALISASI
+**SK / SP (sumber DSKP/RPT Tahun 6, dikekalkan):** 3.1.1, 3.1.2
+**Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — bukan FINAL READY
 
-**Objektif:** Murid membina dan mempersembahkan satu frasa irama atau melodi empat detik dengan sekurang-kurangnya 3 kriteria dipenuhi.
+**Objektif:** Mengenal tiga bentuk kontur melodi serta mencipta satu frasa dua bar dalam meter 4/4 dengan not B, A, G, C' dan D'.
 
-**Set induksi (4 minit):** Guru memberi soalan ritma empat detik; murid memberi jawapan tepukan sendiri.
+**Kriteria kejayaan:** Murid membuktikan kemahiran yang dinyatakan dalam objektif melalui demonstrasi atau hasil tugasan yang diperiksa guru.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Guru memandu murid mencipta pola berpandukan Mencipta melodi mudah menggunakan not B, A, G, C’ dan D’. dengan kad not dan bunyi yang dibenarkan SP.
+**Set Induksi — 4 minit:** Guru menunjukkan tiga susunan not: mendatar, bertangga dan melompat; murid menggambarkan pergerakan pic.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Murid merancang urutan, menyusun skor ciptaan dan mempersembahkannya secara pasangan, kemudian menerima cadangan penambahbaikan.
+**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid mengesan dan menanda tiga jenis kontur dalam keratan Rangkaian Globalisasi halaman 30, kemudian merancang meter 4/4 dan nilai not yang sesuai pada halaman 31.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak bilangan detik, kesesuaian pic/not dan persembahan; murid membetulkan satu unsur.
+**Aktiviti 2 — Aplikasi dan latihan (10 minit):** Murid menyusun kad untuk mencipta melodi dua bar halaman 32–33 menggunakan not B/A/G/C'/D', bertukar hasil ciptaan dengan rakan dan memainkan melodi rakan menggunakan rekoder.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Pengukuhan dan Penilaian — 6 minit:** Guru menilai tiga jenis kontur, jumlah empat detik setiap bar dan ketepatan melodi dua bar.
 
-**Bahan:** Kad corak, alat perkusi atau rekoder, helaian skor.
+**Penutup — 2 minit:** Murid berkongsi satu contoh kontur melodi yang telah dicuba. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 6. RPT rujukan mencatat halaman buku teks 30-33 (belum disahkan pada buku asal). Rakaman/trek audio belum disahkan.
+**Bahan:** Kad kontur mendatar/bertangga/melompat, kad not, baluk dua bar dan rekoder.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Rujukan sumber:** Buku Teks Pendidikan Muzik Tahun 6 SK DBP 2021, halaman 30–33; https://anyflip.com/zcnoa/yxcj/basic. Audio 68–70 hanya nombor bercetak, **bukan bukti fail audio telah disahkan**. Kod sumber DSKP/RPT dikekalkan, pemeriksaan skor/notasi visual dan render Word/PDF masih tertangguh.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Catatan pelaksanaan / pemulihan:** __________________________________________
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_20261106; kekal DRAF dalam staging; belum pengesahan Word/PDF, skor visual, fail audio, cuti RPT 2027 atau Telegram/Web.

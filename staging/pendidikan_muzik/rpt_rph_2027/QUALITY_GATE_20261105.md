@@ -127,3 +127,9 @@ Fail RPT (.md/.csv), RPH setiap PdP (.md), manifest JSON di `staging/pendidikan_
 - **9 RPH lagi** disemak berdasarkan halaman buku asal 46–69: *Silap Mata*, *Buruj* dan *Tip Tap Tip Tap*.
 - Tahun 5 kini **35/35 semakan kandungan teks buku** (bukan final); jumlah keseluruhan **126/175**, baki **49 RPH** belum disemak setara. Fail audio sebenar, notasi visual, Word/PDF dan cuti negeri belum disahkan.
 - Lihat `year5/BUKU_TAHUN5_PDP18_26_TEXT_AUDIT_20261106.md`. JANGAN MERGE / DEPLOY.
+
+
+## Pusingan 6 November 2026 — Tahun 6 PdP 01–10
+- 10 RPH tambahan diperincikan menggunakan Buku Teks Muzik Tahun 6 DBP 2021 halaman 4–33, termasuk *Setia Kawan*, *Gerbang Ilmu*, *Tudung Periuk* dan *Rangkaian Globalisasi*.
+- Semakan teks kini **17/35 Tahun 6** dan **136/175 keseluruhan**, baki **39** RPH belum setara. Lagu *Tudung Periuk* mempunyai nota hak cipta, tiada audio atau lirik diedarkan.
+- Projek, skor muzik visual, fail audio, dokumen Word/PDF, cuti 2027 dan runtime Telegram/Web belum lulus. Audit: `year6/BUKU_TAHUN6_PDP01_10_TEXT_AUDIT_20261106.md`.

@@ -9,7 +9,7 @@
 | 02 | 10/01–14/01 | 11/01–15/01 | SETIA KAWAN | 2.2.1, 2.2.2 | 6-9 |
 | 03 | 17/01–21/01 | 18/01–22/01 | GERBANG ILMU | 2.1.1, 2.1.2 | 10-12 |
 | 04 | 24/01–28/01 | 25/01–29/01 | GERBANG ILMU | 3.1.1, 3.1.2 | 13 |
-| 05 | 31/01–04/02 | 01/02–05/02 | GERBANG ILMU | 2.3.1 | 14-15 |
+| 05 | 31/01–04/02 | 01/02–05/02 | GERBANG ILMU | 2.3.1 | 14-17 |
 | 06 | 07/02–11/02 | 08/02–12/02 | TUDUNG PERIUK | 2.1.2 | 18-19 |
 | 07 | 14/02–18/02 | 15/02–19/02 | TUDUNG PERIUK | 2.2.1, 2.2.2 | 20-23 |
 | 08 | 21/02–25/02 | 22/02–26/02 | TUDUNG PERIUK | 3.1.1, 3.1.2 | 24-25 |
@@ -44,3 +44,6 @@
 **Nota penting:** DSKP memperuntukkan dua siri Projek Seni Muzik setahun. PdP 34–35 yang dilabel Projek 3 oleh RPT sumber lama kini dibezakan sebagai cadangan pengukuhan/pentaksiran, bukan projek rasmi. Data sumber asal disimpan dalam manifest untuk jejak audit.
 
 *Halaman buku teks hanya rujukan sumber RPT lama kecuali rekod Tahun 4 yang mempunyai `source_book_content_page_checked=true` untuk enam PdP. Fail audio belum disahkan, tarikh 2027 belum disahkan penuh.
+
+
+**Nota PdP05:** RPT asal menyebut halaman 14–15 untuk gerakan, tetapi aktiviti dua kumpulan arah jam/lawan jam dan tempo cepat/sederhana/lambat turut berada pada halaman 16–17 Buku Muzik Tahun 6 DBP 2021; halaman asal dipelihara dalam `source_rpt_original_page`. Status masih DRAF.

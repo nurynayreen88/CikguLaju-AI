@@ -1,28 +1,29 @@
 # RPH PENDIDIKAN MUZIK TAHUN 6 — PdP 03
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** GERBANG ILMU  
-**Bidang:** Nyanyian  
-**SK/SP:** 2.1.1, 2.1.2  
-**Tempoh cadangan:** 30 minit  
+**Unit/Tajuk:** GERBANG ILMU
+**SK / SP (sumber DSKP/RPT Tahun 6, dikekalkan):** 2.1.1, 2.1.2
+**Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — bukan FINAL READY
 
-**Objektif:** Murid menyanyikan frasa lagu dengan sekurang-kurangnya 2 daripada 3 kriteria pic, tempo dan ekspresi/teknik yang tepat.
+**Objektif:** Membaca satu pematah lidah dengan sebutan jelas serta menyanyikan satu frasa Gerbang Ilmu dengan pic, tempo dan dinamik tepat.
 
-**Set induksi (4 minit):** Guru memperdengarkan frasa lagu daripada unit ini; murid mengajuk pic dan menyebut perubahan ekspresi.
+**Kriteria kejayaan:** Murid membuktikan kemahiran yang dinyatakan dalam objektif melalui demonstrasi atau hasil tugasan yang diperiksa guru.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Guru memodelkan pernafasan, postur serta fokus SP: Bernyanyi lagu dengan pic yang betul mengikut tempo.; murid mengajuk satu bar pada satu masa.
+**Set Induksi — 4 minit:** Guru memulakan pematah lidah pendek dengan tempo lambat lalu mempercepat sebutan secara terkawal.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Murid menyanyikan frasa/rangkap dalam kumpulan kemudian mengulang secara berpasangan dengan pembetulan pic, tempo serta dinamik mengikut SP.
+**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid berlatih pematah lidah halaman 11 dan ajuk frasa lagu Mouse Mousie; guru menumpukan sebutan tepat sebelum tempo ditingkatkan.
 
-**Pengukuhan dan pentaksiran (6 minit):** Guru menyemak 3 kriteria (pic, tempo, teknik/dinamik), mencatat percubaan pertama dan kedua.
+**Aktiviti 2 — Aplikasi dan latihan (10 minit):** Murid mengajuk nyanyian Gerbang Ilmu halaman 12, mengikut tanda pernafasan pada awal frasa dan simbol dinamik dalam skor.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Pengukuhan dan Penilaian — 6 minit:** Guru menilai satu pematah lidah dan nyanyian melalui sebutan, pic dan tempo.
 
-**Bahan:** Rakaman lagu yang diizinkan, skor ringkas, pembesar suara.
+**Penutup — 2 minit:** Murid mengenal pasti satu cara menjaga sebutan semasa lagu bertempo cepat. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 6. RPT rujukan mencatat halaman buku teks 10-12 (belum disahkan pada buku asal). Rakaman/trek audio belum disahkan.
+**Bahan:** Kad pematah lidah, skor Gerbang Ilmu, kad nafas dan suara guru.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Rujukan sumber:** Buku Teks Pendidikan Muzik Tahun 6 SK DBP 2021, halaman 10–12; https://anyflip.com/zcnoa/yxcj/basic. Audio 28–33 hanya nombor bercetak, **bukan bukti fail audio telah disahkan**. Kod sumber DSKP/RPT dikekalkan, pemeriksaan skor/notasi visual dan render Word/PDF masih tertangguh.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Catatan pelaksanaan / pemulihan:** __________________________________________
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_20261106; kekal DRAF dalam staging; belum pengesahan Word/PDF, skor visual, fail audio, cuti RPT 2027 atau Telegram/Web.

@@ -1,28 +1,29 @@
 # RPH PENDIDIKAN MUZIK TAHUN 6 — PdP 04
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** GERBANG ILMU  
-**Bidang:** Kreativiti Muzik  
-**SK/SP:** 3.1.1, 3.1.2  
-**Tempoh cadangan:** 30 minit  
+**Unit/Tajuk:** GERBANG ILMU
+**SK / SP (sumber DSKP/RPT Tahun 6, dikekalkan):** 3.1.1, 3.1.2
+**Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — bukan FINAL READY
 
-**Objektif:** Murid membina dan mempersembahkan satu frasa irama atau melodi empat detik dengan sekurang-kurangnya 3 kriteria dipenuhi.
+**Objektif:** Mencipta sebutan berulang empat bar daripada satu perkataan serta memainkan melodi ringkas dengan not D' dan G.
 
-**Set induksi (4 minit):** Guru memberi soalan ritma empat detik; murid memberi jawapan tepukan sendiri.
+**Kriteria kejayaan:** Murid membuktikan kemahiran yang dinyatakan dalam objektif melalui demonstrasi atau hasil tugasan yang diperiksa guru.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Guru memandu murid mencipta pola berpandukan Mencipta melodi mudah menggunakan not B, A, G, C’ dan D’. dengan kad not dan bunyi yang dibenarkan SP.
+**Set Induksi — 4 minit:** Guru memberi contoh sebutan berulang ringkas daripada tema lagu tanpa menyalin lirik penuh.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Murid merancang urutan, menyusun skor ciptaan dan mempersembahkannya secara pasangan, kemudian menerima cadangan penambahbaikan.
+**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Kumpulan memilih satu perkataan daripada keratan skor Gerbang Ilmu halaman 13, memecahkannya kepada suku kata dan menulis sebutan berulang konsisten sepanjang empat bar.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak bilangan detik, kesesuaian pic/not dan persembahan; murid membetulkan satu unsur.
+**Aktiviti 2 — Aplikasi dan latihan (10 minit):** Murid menyanyikan sebutan berulang dan mencipta melodi mudah empat bar menggunakan not D' serta G; mereka mencuba hasil ciptaan dengan rekoder.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Pengukuhan dan Penilaian — 6 minit:** Semak empat bar lengkap, pengulangan konsisten dan ketepatan dua not dalam persembahan.
 
-**Bahan:** Kad corak, alat perkusi atau rekoder, helaian skor.
+**Penutup — 2 minit:** Murid menjelaskan bagaimana sebutan berulang mengiringi melodi utama. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 6. RPT rujukan mencatat halaman buku teks 13 (belum disahkan pada buku asal). Rakaman/trek audio belum disahkan.
+**Bahan:** Keratan skor yang sah, kad suku kata, baluk empat bar dan rekoder bersih.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Rujukan sumber:** Buku Teks Pendidikan Muzik Tahun 6 SK DBP 2021, halaman 13; https://anyflip.com/zcnoa/yxcj/basic. Audio 34 hanya nombor bercetak, **bukan bukti fail audio telah disahkan**. Kod sumber DSKP/RPT dikekalkan, pemeriksaan skor/notasi visual dan render Word/PDF masih tertangguh.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Catatan pelaksanaan / pemulihan:** __________________________________________
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_20261106; kekal DRAF dalam staging; belum pengesahan Word/PDF, skor visual, fail audio, cuti RPT 2027 atau Telegram/Web.

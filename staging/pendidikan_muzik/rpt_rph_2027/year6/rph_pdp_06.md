@@ -1,28 +1,29 @@
 # RPH PENDIDIKAN MUZIK TAHUN 6 — PdP 06
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** TUDUNG PERIUK  
-**Bidang:** Nyanyian  
-**SK/SP:** 2.1.2  
-**Tempoh cadangan:** 30 minit  
+**Unit/Tajuk:** TUDUNG PERIUK
+**SK / SP (sumber DSKP/RPT Tahun 6, dikekalkan):** 2.1.2
+**Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — bukan FINAL READY
 
-**Objektif:** Murid menyanyikan frasa lagu dengan sekurang-kurangnya 2 daripada 3 kriteria pic, tempo dan ekspresi/teknik yang tepat.
+**Objektif:** Menyanyikan satu frasa Tudung Periuk dengan sebutan, dinamik dan ekspresi bersesuaian melalui dua latihan.
 
-**Set induksi (4 minit):** Guru memperdengarkan frasa lagu daripada unit ini; murid mengajuk pic dan menyebut perubahan ekspresi.
+**Kriteria kejayaan:** Murid membuktikan kemahiran yang dinyatakan dalam objektif melalui demonstrasi atau hasil tugasan yang diperiksa guru.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Guru memodelkan pernafasan, postur serta fokus SP: Mengaplikasikan dinamik dalam nyanyian.; murid mengajuk satu bar pada satu masa.
+**Set Induksi — 4 minit:** Guru memperkenalkan lagu Tudung Periuk sebagai karya yang disebut dalam buku dan menerangkan penggunaan bahan berlesen.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Murid menyanyikan frasa/rangkap dalam kumpulan kemudian mengulang secara berpasangan dengan pembetulan pic, tempo serta dinamik mengikut SP.
+**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid mengajuk frasa nyanyian yang ditunjukkan dalam buku teks halaman 19 secara lisan melalui bimbingan guru, dengan latihan sebutan dan penekanan ekspresi.
 
-**Pengukuhan dan pentaksiran (6 minit):** Guru menyemak 3 kriteria (pic, tempo, teknik/dinamik), mencatat percubaan pertama dan kedua.
+**Aktiviti 2 — Aplikasi dan latihan (10 minit):** Murid menyanyikan satu frasa mengikut skor rujukan guru dengan dinamik yang berubah-ubah. Rakaman atau salinan lirik tidak diterbitkan bersama RPH; guru menggunakan sumber yang diperoleh secara sah.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Pengukuhan dan Penilaian — 6 minit:** Guru mencatat ketepatan sebutan, kawalan dinamik dan ekspresi dalam dua percubaan.
 
-**Bahan:** Rakaman lagu yang diizinkan, skor ringkas, pembesar suara.
+**Penutup — 2 minit:** Murid menyatakan satu peranan ekspresi dalam persembahan nyanyian. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 6. RPT rujukan mencatat halaman buku teks 18-19 (belum disahkan pada buku asal). Rakaman/trek audio belum disahkan.
+**Bahan:** Buku teks halaman 18–19 untuk rujukan kelas, kad simbol dinamik, tanpa lampiran rakaman/lirik.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Rujukan sumber:** Buku Teks Pendidikan Muzik Tahun 6 SK DBP 2021, halaman 18–19; https://anyflip.com/zcnoa/yxcj/basic. Audio 39–41 hanya nombor bercetak, **bukan bukti fail audio telah disahkan**. Kod sumber DSKP/RPT dikekalkan, pemeriksaan skor/notasi visual dan render Word/PDF masih tertangguh. Nota hak cipta: buku menyatakan lagu Tudung Periuk digunakan dengan kebenaran EMI Music Publishing Malaysia; jangan edarkan rakaman atau lirik tanpa pengesahan hak.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Catatan pelaksanaan / pemulihan:** __________________________________________
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_20261106; kekal DRAF dalam staging; belum pengesahan Word/PDF, skor visual, fail audio, cuti RPT 2027 atau Telegram/Web.

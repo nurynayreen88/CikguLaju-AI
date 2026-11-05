@@ -108,7 +108,7 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
             3: (28, set(range(1, 12)) | set(range(14, 24)) | set(range(27, 34))),
             4: (22, {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 17, 18, 19, 20, 21, 22, 23, 24, 28, 29, 30}),
             5: (35, set(range(1, 36))),
-            6: (7, {11, 14, 15, 30, 31, 32, 33}),
+            6: (17, set(range(1, 12)) | {14, 15, 30, 31, 32, 33}),
         }
         for year, (count, pdp_numbers) in expected.items():
             manifest = json.loads((MUSIC / "rpt_rph_2027" / f"year{year}" / "pdp_manifest.json").read_text(encoding="utf-8"))
@@ -164,6 +164,14 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
         self.assertEqual(y5["pdps"][30]["page"], "80-81")
         self.assertEqual(y5["pdps"][31]["page"], "82-83")
         y6 = json.loads((MUSIC / "rpt_rph_2027" / "year6" / "pdp_manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(y6["partial_textbook_crosscheck_count"], 17)
+        self.assertEqual(y6["pdps"][4]["page"], "14-17")
+        self.assertEqual(y6["pdps"][4]["source_rpt_original_page"], "14-15")
+        self.assertIn("crescendo", (MUSIC / "rpt_rph_2027" / "year6" / "rph_pdp_01.md").read_text(encoding="utf-8"))
+        self.assertIn("32 detik", (MUSIC / "rpt_rph_2027" / "year6" / "rph_pdp_02.md").read_text(encoding="utf-8"))
+        self.assertIn("EMI Music Publishing", (MUSIC / "rpt_rph_2027" / "year6" / "rph_pdp_06.md").read_text(encoding="utf-8"))
+        self.assertIn("kontur melodi", (MUSIC / "rpt_rph_2027" / "year6" / "rph_pdp_10.md").read_text(encoding="utf-8"))
+        self.assertFalse(any(x["source_book_audio_file_verified"] for x in y6["pdps"][:10]))
         self.assertEqual(y6["pdps"][10]["dskp_classical_years"], "1750-1830")
         self.assertEqual(y6["pdps"][10]["textbook_classical_years"], "1750-1850")
         self.assertIn("Classical", (MUSIC / "rpt_rph_2027" / "year6" / "rph_pdp_11.md").read_text(encoding="utf-8"))
