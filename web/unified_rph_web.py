@@ -327,6 +327,11 @@ def _docx_paragraph(text, *, strong=False):
     return "<w:p><w:r>" + style + "<w:t xml:space='preserve'>" + escape(str(text)) + "</w:t></w:r></w:p>"
 
 def _docx(data):
+    # The old version flattened every Markdown heading into bare paragraphs.
+    # Route both preview and actual downloads to the same source-backed table layout.
+    from web.rph_table_layout import build_rph_table_docx
+    return build_rph_table_docx(data, SUBJECT_LABELS)
+
     paragraphs = [_docx_paragraph("CIKGULAJU AI — RANCANGAN PENGAJARAN HARIAN", strong=True),
                   _docx_paragraph(f"{SUBJECT_LABELS[data['subject']]} — Tahun {data['year']} | {data['title']}", strong=True),
                   _docx_paragraph("Status sumber: " + data["status"]),

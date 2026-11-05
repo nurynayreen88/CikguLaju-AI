@@ -4,6 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#0c7669">
 <title>CikguLaju AI — Web</title>
+<link rel="icon" type="image/svg+xml" href="/assets/cikgulaju-logo.svg">
 <style>
 :root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#173d37;background:#f5f8f7}*{box-sizing:border-box}body{margin:0}.wrap{max-width:920px;margin:auto;padding:24px}.header{display:flex;align-items:center;gap:12px;font-size:1.1rem;font-weight:800}.mark{background:#087568;color:#fff;padding:13px;border-radius:13px}.panel{background:white;border:1px solid #e0eae6;border-radius:24px;padding:clamp(26px,6vw,58px);margin:56px auto 18px;max-width:640px;box-shadow:0 16px 48px #174b3910}h1{font-size:clamp(1.8rem,5vw,2.6rem);letter-spacing:-.04em;line-height:1.15;margin:0 0 18px}p{line-height:1.65;color:#536c64} .pill{display:inline-block;background:#e6f5ee;color:#087568;border-radius:30px;padding:7px 12px;font-size:.78rem;font-weight:700;margin-bottom:20px}.login{background:#087568;color:#fff;border:0;border-radius:12px;padding:15px 20px;font:inherit;font-weight:700;width:100%;margin-top:14px;cursor:not-allowed;opacity:.55}.notice{font-size:.88rem;color:#65796f;margin-top:14px}.foot{text-align:center;color:#75867f;font-size:.8rem;margin-top:26px}@media(max-width:550px){.wrap{padding:16px}.panel{margin-top:35px;border-radius:18px;padding:27px}}
 label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width:100%;padding:13px;border:1px solid #ceded8;border-radius:12px;background:white;font:inherit}select:disabled{background:#f1f5f3} [hidden]{display:none!important}#show-materials,#rpt-download{margin-top:18px;background:#087568;color:white;border:0;border-radius:12px;padding:13px 20px;font:inherit;font-weight:700;cursor:pointer}#materials-list{padding-left:22px;line-height:2}#materials-list a{color:#087568;font-weight:700}#download-all:disabled,#rpt-download:disabled{opacity:.5;cursor:not-allowed}#logout{border:1px solid #ccdcd6;background:white;border-radius:12px;padding:12px 18px;margin-top:12px;cursor:pointer}.panel[hidden]{display:none}</style>
@@ -22,6 +23,14 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 #rph-teacher-details{font-weight:650;white-space:pre-wrap;color:#1c4a40!important}
 
 #rph-preview-content p{white-space:pre-wrap;color:#233c33;line-height:1.55;margin:0 0 10px}
+.rph-table-wrap{overflow-x:auto;margin:12px 0}
+.rph-preview-table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:.84rem;line-height:1.45;color:#193344}
+.rph-preview-table th,.rph-preview-table td{border:1px solid #a6c1d1;padding:9px 11px;vertical-align:top;white-space:pre-wrap;overflow-wrap:anywhere}
+.rph-preview-table thead th{background:#174b6b;color:white;text-align:left}
+.rph-preview-table th:first-child{width:27%}
+.rph-preview-table tbody th{background:#eaf2f6;font-weight:700}
+@page{size:A4;margin:11mm}
+@media print{.rph-table-wrap{overflow:visible}.rph-preview-table{font-size:8pt}.rph-preview-table th,.rph-preview-table td{padding:4px 6px}.rph-preview-table tbody tr{break-inside:avoid-page}#rph-preview-content h3{margin-top:0}#rph-preview-content p{margin-bottom:4px}}
 @media print{body{background:white!important}header,footer,main.panel,#workspace>*:not(#rph-preview-panel),#rph-preview-panel>button{display:none!important}#workspace{display:block!important;border:0!important;box-shadow:none!important;padding:0!important;margin:0!important;max-width:none!important}#rph-preview-panel{display:block!important;border:0!important;background:white!important;margin:0!important;padding:0!important}#rph-preview-content{border:0!important;padding:0!important}#rph-preview-content h4{break-after:avoid}#rph-preview-content p{break-inside:avoid}}
 /* Sembunyikan bahan tambahan yang belum disambungkan; kekalkan kod untuk pengaktifan kemudian. */
 #show-materials,#materials-panel{display:none!important}
@@ -31,12 +40,16 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 .rph-guide .notice{margin-top:13px;font-size:.86rem}
 .selection-help{padding:12px 14px;border-left:4px solid #087568;background:#f4f9f6;color:#173d37;border-radius:8px;font-weight:650}
 @media print{.rph-guide,.selection-help{display:none!important}}
+ .brand-icon{object-fit:contain;flex-shrink:0;background:transparent}
+ .login-brand{object-fit:contain;display:block;margin:0 auto 20px;background:transparent}
+ .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 </style>
 </head>
 <body>
 <div class="wrap">
-<header class="header"><span class="mark">CL</span><span>CikguLaju AI</span></header>
+<header class="header"><img class="brand-icon" src="/assets/cikgulaju-logo.svg" width="62" height="62" alt="Logo CikguLaju AI" decoding="async"><span>CikguLaju AI</span></header>
 <main class="panel">
+<img class="login-brand" src="/assets/cikgulaju-logo.svg" width="118" height="118" alt="CikguLaju AI" decoding="async">
 <span class="pill">Versi Web</span>
 <h1>Sediakan RPH langkah demi langkah</h1>
 <p>Log masuk dengan akaun Telegram CikguLaju. Pilih RPH mengikut Tahun, Subjek, Unit/Tajuk dan Lesson/PdP, kemudian semak sebelum mencetak.</p>
@@ -264,13 +277,24 @@ rphButton.addEventListener("click",async()=>{
   if(data.teacher?.class!==teacherClass.value.trim()||data.teacher?.date!==teacherDate.value||data.teacher?.time!==teacherTime.value)throw Error("Maklumat kelas tidak sepadan.");
   document.getElementById("rph-teacher-details").textContent="Kelas: "+(data.teacher.class||"—")+"  ·  Tarikh: "+(data.teacher.date||"—")+"  ·  Masa: "+(data.teacher.time||"—");
   document.getElementById("rph-preview-notice").textContent=data.status+" · "+data.notice;
+  // A real RPH table for screen, print/PDF and the corresponding Word download.
+  const wrap=document.createElement("div");wrap.className="rph-table-wrap";
+  const table=document.createElement("table");table.className="rph-preview-table";
+  const caption=document.createElement("caption");caption.textContent="Rancangan Pengajaran Harian";caption.className="sr-only";
+  const head=document.createElement("thead"),heading=document.createElement("tr");
+  for(const title of ["Bahagian RPH","Kandungan dan aktiviti PdP"]){
+   const th=document.createElement("th");th.scope="col";th.textContent=title;heading.append(th);
+  }
+  head.append(heading);table.append(caption,head);
+  const tbody=document.createElement("tbody");
   for(const field of data.fields){
    if(typeof field.label!=="string"||typeof field.value!=="string")continue;
-   const h=document.createElement("h4"),p=document.createElement("p");
-   h.textContent=field.label;p.textContent=field.value;
-   rphFields.append(h,p);
+   const tr=document.createElement("tr"),th=document.createElement("th"),td=document.createElement("td");
+   th.scope="row";th.textContent=field.label;td.textContent=field.value;
+   tr.append(th,td);tbody.append(tr);
   }
-  if(!rphFields.children.length)throw Error("Kandungan RPH kosong.");
+  if(!tbody.children.length)throw Error("Kandungan RPH kosong.");
+  table.append(tbody);wrap.append(table);rphFields.append(wrap);
   rphContent.hidden=false;renderedRphKey=key;
   rphWord.disabled=false;rphPrint.disabled=false;
   rphStatus.textContent="Pratonton RPH tersedia. Semak kandungan sebelum muat turun atau cetak.";updateSelectionHelp("RPH telah dipaparkan. Seterusnya tekan Muat turun Word atau Cetak / Simpan PDF.");
