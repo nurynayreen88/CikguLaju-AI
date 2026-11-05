@@ -24,6 +24,6 @@ Fail `AUDIT/V41_RELEASE_GATE.json` mestilah menyatakan `lessons_total=585` dan `
 - Pakej v41 tempatan: **585/585 PDF A4 satu halaman** dan **12/12 ujian dengan arkib sebenar lulus** pada 5 Nov 2026 (simulasi, bukan Telegram API).
 - Audit DSKP asal: **593 kod SP dalam 585 Lesson ditemui**; 7 Lesson Tahun 4 memuatkan beberapa kod; Tahun 2 SP 4.1.1 dicetak `4. 1.1` dalam PDF.
 - **Baki sebelum release:** semak individu aktiviti/PBD berasaskan BT/BA Tahun 2–3, pengesahan kandungan pecahan 83→117 Tahun 4, takwim 2027, DB staging, Telegram API sebenar serta regresi subjek lain.
-- **Jangan merge DRAFT PR ini ke `main`** sehingga semua syarat akademik dan runtime telah direkod LULUS; jika diuji melalui staging tersendiri, gunakan token dan data ujian yang berasingan.
+- **Kelulusan separa yang dibenarkan:** modul pratonton dan ujian ini boleh digabung ke `main` sebagai **kod dormant/opt-in sahaja**, setelah CI berjaya, kerana ia tidak diimport oleh runtime produksi. **Ini BUKAN kelulusan 585 RPH untuk dipaparkan kepada guru**, dan tidak membenarkan pengaktifan callback, import ke app, penggunaan DB produksi atau deployment aset. Pengaktifan staging perlu token dan data ujian yang berasingan. Pelepasan kandungan RPH kekal disekat sehingga syarat akademik dan runtime lulus.
 
 Laporan audit utama: [Matematik v41](https://github.com/nurynayreen88/CikguLaju-AI/blob/audit/matematik-evidence-gate-20261105/audits/matematik_v41_585_rph_release_gate_20261105.md).
