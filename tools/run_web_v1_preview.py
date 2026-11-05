@@ -254,13 +254,28 @@ def shared_source_status():
             "telegram_parity_verified": False,
             "reason": "separate checksum-verified copy; manually update both releases",
         })
-    catalog = catalog_source_status()
-    catalog["authoritative_api_configured"] = bool(
-        os.environ.get("CIKGULAJU_AUTHORITATIVE_API_URL", "").strip()
-        and os.environ.get("CIKGULAJU_AUTHORITATIVE_API_TOKEN", "")
-    )
-    report = parity_report({"lesson_catalog": catalog["shared_source_verified"]})
-    return jsonify({"curriculum_mode": "telegram-api", **catalog, **report})
+    url = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_URL", "").strip()
+    token = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_TOKEN", "")
+    if not url or len(token) < 32:
+        return jsonify({"curriculum_mode": "telegram-api",
+                        "shared_source_verified": False,
+                        "telegram_parity_verified": False,
+                        "reason": "Live Telegram catalog connection not configured"}), 503
+    try:
+        from web.authoritative_http_source import AuthoritativeHttpCurriculumSource
+        items = AuthoritativeHttpCurriculumSource(url, token).list_subjects(2)
+        if not items:
+            raise ValueError("Telegram returned empty subject catalog")
+    except Exception:
+        return jsonify({"curriculum_mode": "telegram-api",
+                        "shared_source_verified": False,
+                        "telegram_parity_verified": False,
+                        "reason": "Live Telegram catalog unavailable"}), 503
+    return jsonify({"curriculum_mode": "telegram-api",
+                    "shared_source_verified": True,
+                    "catalog_parity_verified": True,
+                    "telegram_parity_verified": False,
+                    "reason": "Live Telegram curriculum catalog reachable; RPH generation parity still pending"})
 
 
 @app.get("/api/deployment/status")
