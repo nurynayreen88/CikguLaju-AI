@@ -10,7 +10,7 @@
 | 03 | 17/01–21/01 | 18/01–22/01 | TUT  TUT  KERETA API | 2.3.2 | 13 |
 | 04 | 24/01–28/01 | 25/01–29/01 | MALAYSIA KITA | 2.1.2, 2.1.3 | 18-19 |
 | 05 | 31/01–04/02 | 01/02–05/02 | MALAYSIA KITA | 2.3.1 | 20 |
-| 06 | 07/02–11/02 | 08/02–12/02 | MALAYSIA KITA | 2.3.1 | 20 |
+| 06 | 07/02–11/02 | 08/02–12/02 | MALAYSIA KITA | 2.3.1 | 21 |
 | 07 | 14/02–18/02 | 15/02–19/02 | ANEKA CAPAN | 2.2.2 | 26-27 |
 | 08 | 21/02–25/02 | 22/02–26/02 | ANEKA CAPAN | 3.1.3 | 28-29 |
 | 09 | 28/02–04/03 | 01/03–05/03 | SERANGGA COMEL | 1.1.1, 1.1.2 | 36-37 |
@@ -44,3 +44,6 @@
 **Nota penting:** DSKP memperuntukkan dua siri Projek Seni Muzik setahun. PdP 34–35 yang dilabel Projek 3 oleh RPT sumber lama kini dibezakan sebagai cadangan pengukuhan/pentaksiran, bukan projek rasmi. Data sumber asal disimpan dalam manifest untuk jejak audit.
 
 *Halaman buku teks hanya rujukan sumber RPT lama kecuali rekod Tahun 4 yang mempunyai `source_book_content_page_checked=true` untuk enam PdP. Fail audio belum disahkan, tarikh 2027 belum disahkan penuh.
+
+
+**Nota audit PdP 06:** Sumber RPT asal menyebut halaman 20, tetapi aktiviti persembahan kumpulan dua tempo berada pada halaman 21 Buku Teks Pendidikan Kesenian Tahun 3 DBP 2018. Kod RPT asal dikekalkan dan belum disahkan terhadap DSKP Muzik berdiri sendiri. Nombor audio bukan bukti fail.
