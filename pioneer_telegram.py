@@ -2,7 +2,10 @@
 
 Install only after the bot's existing callback/menu/access helpers are defined.
 """
-from pioneer_supabase import effective_access, grant_pioneer, has_pioneer, pioneer_availability
+from pioneer_supabase import (
+    effective_access, grant_pioneer, has_pioneer, pioneer_availability,
+    reactivate_revoked_pioneer,
+)
 from pioneer_percentage import pioneer_percentage
 
 
@@ -292,7 +295,26 @@ def install(ns):
                             return send(cid,
                                 f"⚠️ Rujukan bayaran #{rid} sudah digunakan.\\n"
                                 "Jangan aktifkan atau minta bayaran semula sebelum audit.")
-                        grant_pioneer(sb, uid, reference, cid, verified=True)
+                        revoked = any(
+                            row.get("entitlement") == "PIONEER_LIFETIME"
+                            and row.get("revoked_at") is not None
+                            for row in existing
+                        )
+                        if revoked:
+                            # An old primary-key row still exists after an
+                            # admin revokes lifetime access. Never call the
+                            # first-time INSERT RPC for a revoked account.
+                            # The reactivation RPC checks the exact Pending
+                            # owner, amount and proof, and archives the old
+                            # entitlement before restoring this row atomically.
+                            result = reactivate_revoked_pioneer(
+                                sb, uid, reference, cid, rid, verified=True)
+                            if (not isinstance(result, dict)
+                                    or result.get("approved") is not True
+                                    or result.get("reactivated") is not True):
+                                raise RuntimeError("Supabase did not confirm reactivation")
+                        else:
+                            grant_pioneer(sb, uid, reference, cid, verified=True)
                 except Exception as exc:
                     # Do not mark payment approved when the entitlement grant fails.
                     # Expose a safe, actionable category to admin; full details stay in logs.
