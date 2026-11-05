@@ -32,6 +32,7 @@ SUBJECTS = {
     "MORAL": "Pendidikan Moral",
     "PJPK": "Pendidikan Jasmani dan Pendidikan Kesihatan",
     "PSV": "Pendidikan Seni Visual",
+    "SEJARAH": "Sejarah",
 }
 MIN_LENGTH=32
 MAX_BODY=100000
@@ -115,6 +116,20 @@ def build_native_input(payload):
         raise ValueError("Invalid subject/year")
     if type(lesson) is not int or not 1<=lesson<=200:
         raise ValueError("Invalid lesson")
+    # A supported subject is NOT a release approval. Sejarah remains closed
+    # unless its independent per-PdP ledger, content and native layout match.
+    if subject=="SEJARAH":
+        if year not in (4,5,6) or lesson>36 or payload.get("source_digest") is None:
+            raise ValueError("Sejarah requires approved source identity")
+        from web.sejarah_2027_staging_source import lesson as approved_sejarah
+        from web.sejarah_2027_native_layout_adapter import _layout as sejarah_native_layout
+        try:
+            approved=approved_sejarah(year,lesson)
+            if payload["layout"]!=sejarah_native_layout(approved,teacher):
+                raise ValueError("Sejarah native layout not an exact approved source")
+        except (PermissionError,KeyError,TypeError,OSError) as exc:
+            raise ValueError("Sejarah source is not independently approved") from exc
+
     # Web and Telegram deploy independently. A live Web must not render a
     # stale lesson when the Telegram source/mapping was updated.
     source_digest=payload.get("source_digest")
@@ -338,6 +353,9 @@ def create_native_rph_blueprint(runtime):
         if (body["subject"]=="PSV"
                 and not getattr(runtime,"PSV_2027_PROVISIONAL_RPH_ACTIVE",False)):
             return jsonify({"error":"Telegram PSV RPH source unavailable"}),503
+        if (body["subject"]=="SEJARAH"
+                and not getattr(runtime,"SEJARAH_2027_NATIVE_RPH_ACTIVE",False)):
+            return jsonify({"error":"Telegram Sejarah native source not activated"}),503
         if body["subject"]=="ENGLISH" and body["year"]==5:
             from web.english_y5_standalone_runtime import approved_for_telegram
             if not (getattr(runtime,"CIKGULAJU_ENGLISH_Y5_DRAFT_RPH_ACTIVE",False)
