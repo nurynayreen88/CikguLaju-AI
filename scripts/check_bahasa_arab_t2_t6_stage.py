@@ -257,8 +257,8 @@ def check() -> None:
     assert m["years"]["4"]["unit3_release_approved"] is False
     assert readiness["completed"]["year4_unit3_candidate_rph"] == 14
     assert readiness["completed"]["verified_a4_render_for_all_90"] is True
-    assert readiness["completed"]["word_generated_in_ci"] == 106
-    assert readiness["completed"]["pdf_generated_in_ci"] == 106
+    assert readiness["completed"]["word_generated_in_ci"] == 122
+    assert readiness["completed"]["pdf_generated_in_ci"] == 122
     assert readiness["total_ready_rph"] == 0
     assert m["latest_technical_a4_validation"]["status"] == "PASSED_OFFLINE_TECHNICAL_ONLY"
     assert m["latest_technical_a4_validation"]["release_approval"] is False
