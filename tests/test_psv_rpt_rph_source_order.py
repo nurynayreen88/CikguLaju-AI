@@ -593,6 +593,23 @@ class PSVSourceOrderTests(unittest.TestCase):
         self.assertIn("ms 60–61", card)
         self.assertEqual(rows[27]["BT muka surat"], "60–61")
 
+    def test_year3_belon_udara_kolaj_from_original_textbook(self):
+        """Keep specific torn-paper, magazine and felt collage process, page reference and draft gating."""
+        rows = read_csv(PSV / "RPT_PSV_Tahun_3_2027_DRAF.csv")
+        for n in (22, 23, 24, 25):
+            with self.subTest(pdp=n):
+                text = (ROOT / f"rph_standalone/psv/year3/lesson_{n:03d}.md").read_text(encoding="utf-8").lower()
+                self.assertIn("belon udara", text)
+                self.assertIn("kertas majalah", text)
+                self.assertIn("kain felt", text)
+                self.assertIn(rows[n-1]["Objektif"].lower(), text)
+                self.assertIn(rows[n-1]["Evidens PBD"].lower(), text)
+                self.assertEqual(rows[n-1]["Status"], "DRAF_SEMAK")
+        lesson = (ROOT / "rph_standalone/psv/year3/lesson_024.md").read_text(encoding="utf-8").lower()
+        self.assertIn("ms 52–53", lesson)
+        self.assertIn("secara bertindih", lesson)
+        self.assertEqual(rows[23]["BT muka surat"], "52–53")
+
     def test_year5_bunga_kemboja_tekat_is_genuine_couching(self):
         rows = read_csv(PSV / "RPT_PSV_Tahun_5_2027_DRAF.csv")
         keywords = {

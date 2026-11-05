@@ -5,18 +5,18 @@
 **SK:** 1.1; 2.1  
 **SP:** 1.1.3; 2.1.1  
 **Rujukan Buku Teks:** Pendidikan Kesenian Tahun 3 (bahagian Seni Visual) ms 50–51 (unit 50-53)  
-**BBM:** kertas warna, kertas corak, gam dan kertas latar  
+**BBM:** BT ms 50–51, kad keras, kertas warna, kertas majalah, gam batang dan sampel kain felt
 **Tempoh:** 60 minit
 
 ## Objektif dan kriteria kejayaan
-Pada akhir PdP, murid dapat mengenal pasti dua bahasa seni dan membanding dua sampel media untuk Belon Udara Tinggi di Langit. Evidens PBD: dua percubaan media, dua istilah bahasa seni dan satu pemerhatian.
+Murid dapat membanding dua kesan jalinan dan kontra warna melalui kolaj kertas warna serta kertas majalah. Evidens PBD: Dua sampel koyakan berlabel, dua istilah seni dan satu perbandingan kontra.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan contoh Belon Udara Tinggi di Langit dan murid memberi satu pemerhatian tentang bentuk, warna, ruang atau fungsi.
-**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru membuka buku teks ms 50–51 dan menjelaskan jalinan, warna dan kontra dalam kolaj belon udara; murid menamakan unsur visual yang dapat diperhatikan.
-**Aktiviti 2 (25 minit) — Amali:** Murid meneroka secara amali: Koyak atau potong kertas corak kepada kepingan kecil; susun ton latar dan bentuk belon. Mereka merekod dua perbezaan hasil dan memilih teknik untuk sesi berikutnya.
-**Pengukuhan/Pentaksiran (10 minit):** Guru menilai dua percubaan media, dua istilah bahasa seni dan satu pemerhatian; murid membandingkan hasil dengan kriteria kejayaan dan membuat pembetulan.
+**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru merujuk BT ms 50–51 dan menunjukkan kolaj sebagai koyakan, guntingan dan tampalan bertindih; murid menamakan jalinan, warna dan kontra.
+**Aktiviti 2 (25 minit) — Amali:** Murid mengoyak kertas warna dan kertas majalah kepada dua jenis cebisan, menyusun tona berbeza pada kad keras dan menerangkan perbezaan jalinan serta kontra.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menyemak dua sampel koyakan yang berbeza, dua istilah seni visual dan satu pemerhatian kontra warna.
 **Penutup (5 minit):** Murid menyebut satu teknik yang dipelajari; guru membimbing penyimpanan hasil dan pembersihan.
 **Pembezaan:** Kad langkah bergambar untuk sokongan; murid lanjutan menghuraikan pilihan media dan kesan visual.
-**Keselamatan:** Guna alat tumpul, bahan tidak toksik, dan kendalikan gunting atau cantuman di bawah pengawasan.
-**Sumber:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view); [Buku Teks Pendidikan Kesenian Tahun 3 (bahagian Seni Visual)](https://fliphtml5.com/ubcth/flrm/). Langkah ialah adaptasi PdP CikguLaju berpandukan teknik dan unit buku.
+**Keselamatan:** Kain felt dipotong awal oleh guru atau digunting dengan gunting tumpul; guna gam batang tidak toksik dan elakkan bahan majalah berbahaya.
+**Sumber:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view); [Buku Teks Pendidikan Kesenian Tahun 3 (bahagian Seni Visual)](https://fliphtml5.com/hkvtu/vifc/Pendidikan_Kesenian_Tahun_3_SK/). Langkah ialah adaptasi PdP CikguLaju berpandukan teknik dan unit buku.
