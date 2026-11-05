@@ -17,14 +17,16 @@ Murid memperagakan tindakan berdasarkan **11.5: Mengamalkan sikap rajin dalam hi
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Keluarga bergilir-gilir membersihkan kawasan sekitar rumah**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Rancang lakonan:** Guru membahagikan watak pelaku, penerima dan pemerhati. Murid merangka ayat serta langkah tindakan selamat untuk **berusaha secara tekun dan berterusan**. Murid menyemak persediaan berdasarkan SP 11.5.
+**Aktiviti 1 (20 minit) — Berpandukan buku teks:** Guru menunjukkan slogan 'Amalan Rajin Harmoni Terjalin' m/s99. Murid merancang dua amalan rajin yang boleh membantu jiran, seperti kempen kebersihan dan menyusun bahan (SP11.5). Guru memeriksa respons individu murid.
 
-**Aktiviti 2 (20 minit) — Lakon, semak, ulang:** Murid memperagakan situasi selama 60–90 saat, rakan memerhati dengan senarai semak, kemudian murid mengulang tindakan selepas maklum balas. Murid menetapkan satu amalan yang boleh dilaksanakan dengan selamat di sekolah atau rumah.
+**Aktiviti 2 (20 minit) — Berpandukan buku teks:** Guru menggunakan silang kata 'Mari Uji Diri' m/s100 berkaitan rajin, usaha dan kebersihan. Murid memperagakan tugas menyusun bahan kerja secara selamat dan menyemak jawapan sendiri (SP11.5). Guru memeriksa respons individu murid.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak senarai pemerhatian perlakuan bagi SP 11.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru merekod dua tindakan rajin dalam simulasi serta jawapan silang kata; bukti berterusan diperlukan bagi amalan sebenar. Murid membaiki satu jawapan selepas maklum balas guru.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **kerajinan**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 4](https://drive.google.com/file/d/1nNUL3EA3TTtuq9mG5fYBpbnGTJuOw-pd/view); [buku teks Tahun 4](https://drive.google.com/file/d/1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j/view) — halaman belum dipadankan; [RPT SK 2026](https://id.scribd.com/document/1032116415/RPT-PMRL-THN-4-SK-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 11, m/s 99–100 (PDF 105–106); contoh visual asal dipadankan kepada SP dan aktiviti PdP 033.
+
+**Rujukan:** [DSKP SK Tahun 4](https://drive.google.com/file/d/1nNUL3EA3TTtuq9mG5fYBpbnGTJuOw-pd/view); [buku teks Tahun 4](https://drive.google.com/file/d/1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j/view) — aktiviti Unit 11 m/s 99–100 (PDF 105–106) diperiksa asal; [RPT SK 2026](https://id.scribd.com/document/1032116415/RPT-PMRL-THN-4-SK-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
