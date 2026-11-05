@@ -27,14 +27,16 @@ def configure(doc,landscape=False):
     section.header_distance=section.footer_distance=Mm(4)
     style=doc.styles["Normal"]
     style.font.name="Arial"
-    style.font.size=Pt(7.7 if not landscape else 8.2)
+    style.font.size=Pt(9.5 if not landscape else 9.0)
     pf=style.paragraph_format
     pf.space_before=Pt(0);pf.space_after=Pt(1.5);pf.line_spacing=1.03
     return doc
 
 def line(table,heading,body):
     cells=table.add_row().cells
+    table.autofit=False
     cells[0].width=Mm(34)
+    cells[1].width=Mm(158)
     for idx,words in enumerate((heading,body)):
         c=cells[idx]
         c.vertical_alignment=WD_CELL_VERTICAL_ALIGNMENT.CENTER
@@ -42,11 +44,11 @@ def line(table,heading,body):
         p=c.paragraphs[0]
         p.paragraph_format.space_after=Pt(0)
         p.paragraph_format.space_before=Pt(0)
-        p.paragraph_format.line_spacing=1.0
+        p.paragraph_format.line_spacing=1.08
         run=p.add_run(str(words))
         run.bold=(idx==0)
         run.font.name="Arial"
-        run.font.size=Pt(7.25 if idx else 7.2)
+        run.font.size=Pt(10.2 if idx else 9.7)
 
 def heading(doc,text,size=11):
     p=doc.add_paragraph()
@@ -60,8 +62,8 @@ def rph_year(year,obj):
     for n,item in enumerate(obj["lessons"]):
         r=item["rph"]
         if n: doc.add_page_break()
-        heading(doc,f"RPH SEJARAH TAHUN {year}  •  PdP {item['num']:03d}",10.5)
-        t=doc.add_table(rows=0,cols=2);t.style="Table Grid";t.columns[0].width=Mm(34);t.columns[1].width=Mm(157)
+        heading(doc,f"RPH SEJARAH TAHUN {year}  •  PdP {item['num']:03d}",14)
+        t=doc.add_table(rows=0,cols=2);t.style="Table Grid";t.autofit=False;t.columns[0].width=Mm(34);t.columns[1].width=Mm(158)
         line(t,"Sekolah / Guru","_______________________ / _______________________")
         line(t,"Kelas / Tarikh / Masa","_______________________ / _______________________ / 60 minit")
         line(t,"Unit / Tajuk",r["title"])
@@ -69,36 +71,41 @@ def rph_year(year,obj):
         line(t,"Objektif","; ".join(r["objective"]))
         line(t,"Kriteria kejayaan",r["success_criteria"])
         line(t,"Buku Teks / BBM",r["bbm"])
-        a=doc.add_table(rows=0,cols=2);a.style="Table Grid";a.columns[0].width=Mm(34);a.columns[1].width=Mm(157)
+        a=doc.add_table(rows=0,cols=2);a.style="Table Grid";a.autofit=False;a.columns[0].width=Mm(34);a.columns[1].width=Mm(158)
         for title,key in SECTIONS: line(a,title+f" ({r[key]['min']} min)",r[key]["activity"])
         line(a,"Refleksi",r["reflection"])
         p=doc.add_paragraph()
         p.paragraph_format.space_before=Pt(2)
         rr=p.add_run("DRAF SEMAKAN • Halaman latihan buku teks belum disahkan • Bukan untuk pengedaran")
-        rr.italic=True;rr.font.size=Pt(6.7)
+        rr.italic=True;rr.font.size=Pt(8.5)
     dest=OUT/f"RPH_SEJARAH_TAHUN_{year}_2027_DRAF_PREVIEW.docx"
     doc.save(str(dest))
     return dest
 
 def rpt_year(year,rows):
     doc=configure(Document(),landscape=True)
-    heading(doc,"RANCANGAN PENGAJARAN TAHUNAN",17)
-    heading(doc,f"SEJARAH TAHUN {year}  •  2027",14)
+    for _ in range(4): doc.add_paragraph(" ")
+    heading(doc,"RANCANGAN PENGAJARAN TAHUNAN",21)
+    heading(doc,f"SEJARAH TAHUN {year}  •  2027",19)
     for v in ("Sekolah: _________________________________________________",
               "Guru: ____________________________________________________",
               "Logo sekolah: disuntik daripada profil pengguna apabila generator diluluskan",
               "Kumpulan A dan B • 36 PdP cadangan • KSSR Semakan 2017",
               "STATUS: DRAF • Tarikh minggu sahaja; cuti negeri dan jadual kelas perlu disahkan"):
         p=doc.add_paragraph(v);p.alignment=WD_ALIGN_PARAGRAPH.CENTER
+        for run in p.runs: run.font.size=Pt(11)
     for group in ("A","B"):
         doc.add_page_break()
         heading(doc,f"RPT SEJARAH TAHUN {year} · KUMPULAN {group}",11)
         p=doc.add_paragraph("Minggu cadangan, bukan hari mengajar individu. SP dan PBD mengikut RPH sepadan.")
         p.paragraph_format.space_after=Pt(3)
-        tbl=doc.add_table(rows=1,cols=5);tbl.style="Table Grid"
+        tbl=doc.add_table(rows=1,cols=5);tbl.style="Table Grid";tbl.autofit=False
+        widths=(12,46,44,64,109)
+        for j,w in enumerate(widths): tbl.columns[j].width=Mm(w)
         hdr=("PdP","Minggu mula–akhir","Unit","SK / SP","Evidens PBD")
         for i,v in enumerate(hdr):
-            run=tbl.rows[0].cells[i].paragraphs[0].add_run(v);run.bold=True;run.font.size=Pt(7)
+            tbl.rows[0].cells[i].width=Mm(widths[i])
+            run=tbl.rows[0].cells[i].paragraphs[0].add_run(v);run.bold=True;run.font.size=Pt(9)
         for row in rows:
             cells=tbl.add_row().cells
             vals=(
@@ -106,9 +113,10 @@ def rpt_year(year,rows):
                 row["Unit Buku Teks"],row["SK"]+" | "+row["SP"],row["Evidens PBD RPH"],
             )
             for i,value in enumerate(vals):
+                cells[i].width=Mm(widths[i])
                 cells[i].text=""
                 r=cells[i].paragraphs[0].add_run(str(value))
-                r.font.name="Arial";r.font.size=Pt(7.3 if i==4 else 7.0)
+                r.font.name="Arial";r.font.size=Pt(9.0 if i==4 else 8.7)
     dest=OUT/f"RPT_SEJARAH_TAHUN_{year}_2027_DRAF_PREVIEW.docx"
     doc.save(str(dest))
     return dest
