@@ -13,7 +13,7 @@ Objective: Pupils recognise five spoken questions, complete Tobias's information
 5. Assessment and closure (8 min): **Teacher:** Check each pupil's response to the supported question sequence (Listening 1.2.5) and the spelling of independently entered high-frequency words (Writing 4.3.2). Invite pairs to ask and answer SB Key Phrases about their town and sibling, using *quite*, *really* or *very*. **Pupils:** Show their corrected table, take turns answering a question and state one detail they heard.
 
 PBD: Teacher checks answers to two listening details about Tobias and observes an intelligible short exchange using the prescribed Key Phrases.
-Workbook: Exact exercise not verified. Audio files matched by filename in Google Drive; content not yet played.
-QA status: SOW-aligned draft pending source-page and one-page Word/PDF checks.
+Workbook: Original WB pp.18–19 Progress Review (Towns and cities) visually checked; optional cross-topic practice only, not the SOW core personal-information task. Audio recordings' exact spoken content remains unverified.
+QA status: PRINTED SOURCE VERIFIED / DRAF — original SOW printed p.64 (PDF p.65), TB T106 and SB p.92 Activities 1–3 visually checked; real CD3.02 / CD3.03 MP3 file IDs and codec/hash confirmed. Audio speech, authenticated Telegram delivery, final Word A4 and teacher approval are not yet verified.
 
 **Workbook (existing source QA map):** p.18-19, Unit 1 Progress Review — Listening comparing places + Speaking asking/saying where places are, Ex4, Ex6. Optional short practice after SOW activities; not a replacement for the core tasks.

@@ -1,6 +1,6 @@
 """Year 5 L29/30 original KPM SOW task and timing checks.
 
-Source: Primary Year 5 SK SOW pp.65–66 (L29/L30), available in Drive
+Source: Primary Year 5 SK SOW printed pp.64–65 / PDF pp.65–66 (L29/L30), available in Drive
 file 1FHJm1tl7IamOSZWIndUMoytm6SGoexAV. Audio content and Telegram
 are NOT independently approved by this source-level test.
 """
@@ -13,10 +13,10 @@ ROOT=Path(__file__).resolve().parents[1]
 SOURCE=ROOT/"rph_standalone"/"english"/"year5"
 INDEX=json.loads((ROOT/"audits"/"english_primary_2_6_official_sow_index_20261103.json").read_text(encoding="utf-8"))["lessons"]
 TASKS={
-    29: {"main":"1.2.5","comp":"4.3.2","tracks":("CD3.02","CD3.03"),
+    29: {"main":"1.2.5","comp":"4.3.2","printed":64,"tracks":("CD3.02","CD3.03"),
          "words":("Tobias","Luke","spelling","information table"),
          "workbook":"p.18-19"},
-    30: {"main":"2.2.1","comp":"1.2.5","tracks":("CD3.04",),
+    30: {"main":"2.2.1","comp":"1.2.5","printed":65,"tracks":("CD3.04",),
          "words":("Eriko","Liam","When's...?","swap roles"),
          "workbook":"p.19"},
 }
@@ -37,8 +37,11 @@ class Year5SourceVerifiedTiming(unittest.TestCase):
                 for word in expected["words"]:
                     self.assertIn(word,t)
                 self.assertIn(expected["workbook"],t)
-                self.assertIn("SOW-aligned draft",t)
-                self.assertIn("content not yet played",t)
+                self.assertIn(f"printed p.{expected['printed']}",t)
+                self.assertIn("PRINTED SOURCE VERIFIED / DRAF",t)
+                self.assertIn("Audio recordings\' exact spoken content remains unverified",t)
+                self.assertIn("authenticated Telegram delivery",t)
+                self.assertIn("teacher approval are not yet verified",t)
                 self.assertIn("Workbook (existing source QA map)",t)
                 phases=list(re.finditer(r"(?m)^[1-5]\. (.+?) \((\d+) min\):",t))
                 self.assertEqual(len(phases),5)

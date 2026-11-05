@@ -12,7 +12,7 @@ Objective: Pupils recognise five question forms from the recording and sustain a
 5. Assessment and closure (8 min): **Teacher:** Ask pairs to repeat the dialogue using their own names and personal details. Record pupils' ability to sustain exchanges (Speaking 2.2.1) and to recognise a supported sequence of spoken questions (Listening 1.2.5), with targeted feedback. **Pupils:** Conduct a short personal exchange, answer follow-up questions and improve one unclear response.
 
 PBD: Teacher observes a two-turn exchange using Eriko/Liam information, including one follow-up question; pupils switch roles and improve an unclear response.
-Workbook: Exact exercise not verified. Audio files matched by filename in Google Drive; content not yet played.
-QA status: SOW-aligned draft pending source-page and one-page Word/PDF checks.
+Workbook: Original WB pp.18–19 Progress Review (Towns and cities) visually checked; optional cross-topic practice only, not the SOW core personal-information task. Audio recordings' exact spoken content remains unverified.
+QA status: PRINTED SOURCE VERIFIED / DRAF — original SOW printed p.65 (PDF p.66), TB T106 and SB p.92 Activities 4–5 visually checked; real CD3.04 MP3 file IDs and codec/hash confirmed. Audio speech, authenticated Telegram delivery, final Word A4 and teacher approval are not yet verified.
 
 **Workbook (existing source QA map):** p.19, Unit 1 Speaking — Asking and saying where places are, Ex6. Optional short practice after SOW activities; not a replacement for the core tasks.
