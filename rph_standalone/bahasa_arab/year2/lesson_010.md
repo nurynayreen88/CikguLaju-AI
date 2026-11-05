@@ -10,7 +10,7 @@
 
 **Set induksi:** Guru memaparkan اسم dan أنا, murid cuba membaca huruf awal.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membaca enam kad kata secara berperingkat, murid menanda titik/baris yang membantu sebutan.
+**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memaparkan contoh تلميذ، تلميذة، معلم، معلمة pada hlm 9, ganti nama أنا، أنت، أنتِ pada hlm 10, dan latihan melengkapkan kata pada hlm 11; murid membaca kata terlebih dahulu sebelum melengkapkannya.
 
 **Aktiviti 2 — Aplikasi murid:** Murid bermain 'bacaan bergilir' secara berpasangan: pilih kad, baca, dan rakan padankan dengan gambar.
 
@@ -28,3 +28,5 @@
 **Audit halaman:** Tiada nombor halaman individu disahkan; jangan nyatakan muka surat khusus kepada guru sebelum semakan buku teks.
 
 **Status:** DRAF_STAGING / BELUM READY. Bukan bahan LIVE Telegram atau Web. Teks/aktiviti ini merupakan cadangan berpandukan fokus DSKP/RPT, tidak boleh dianggap padanan tepat halaman buku teks, dan belum diuji dalam Word/PDF A4 RTL.
+
+**Semakan Buku Teks asal Tahun 2 (6 Nov 2026):** Buku Teks Bahasa Arab Tahun 2 DBP untuk KPM cetakan 2017, ISBN 978-983-49-1589-6, Unit 1 هيا نتعارف, halaman bercetak **9–11**. Teks buku: https://anyflip.com/slrpb/qzcr/basic; DSKP asal: https://drive.google.com/file/d/1WY_c69UshDm3jHzVK86G2xfu77UUkGYO/view. Latihan baca kata perkenalan pada hlm 9, ganti nama pada hlm 10 dan lengkapkan perkataan pada hlm 11. **Kategori bukti:** BOOK_EXERCISE_DSKP_SP_ALIGNED_PRINTED_CODE_NOT_CLEARED. Pemetaan turutan PdP RPT 2027 dan semakan visual kod buku masih belum diluluskan. **DRAF / BELUM READY**.

@@ -25,3 +25,5 @@
 **RPT rujukan 2026:** https://anyflip.com/zxzlm/jffk/basic
 **Status rujukan buku teks:** Halaman buku teks Tahun 2 belum disahkan; jangan cipta nombor muka surat.
 **Status penerbitan:** DRAF_STAGING / BELUM READY. Bukan bahan Telegram/Web LIVE. Semakan halaman teks, pemaparan Arab RTL, Word/PDF A4 serta pengesahan manual masih diperlukan.
+
+**Semakan Buku Teks asal Tahun 2 (6 Nov 2026):** Buku Teks Bahasa Arab Tahun 2 DBP untuk KPM cetakan 2017, ISBN 978-983-49-1589-6, Unit 1 هيا نتعارف, halaman bercetak **2 & 4**. Teks buku: https://anyflip.com/slrpb/qzcr/basic; DSKP asal: https://drive.google.com/file/d/1WY_c69UshDm3jHzVK86G2xfu77UUkGYO/view. Latihan halaman 2 dan 4 mengenal bunyi ل/ي pada kata dengan baris; kod SP 1.1.2 disahkan dalam DSKP, tetapi OCR kod buku tidak cukup jelas. **Kategori bukti:** BOOK_EXERCISE_DSKP_SP_ALIGNED_PRINTED_CODE_NOT_CLEARED. Pemetaan turutan PdP RPT 2027 dan semakan visual kod buku masih belum diluluskan. **DRAF / BELUM READY**.

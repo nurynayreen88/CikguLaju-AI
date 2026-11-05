@@ -10,7 +10,7 @@
 
 **Set induksi:** Guru menunjukkan kata تلميذ yang hilang satu titik dan murid membetulkannya.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru mencontohkan penyalinan اسم dan معلم; murid menjejak arah tulisan sambil menyebut huruf.
+**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru merujuk latihan menyalin perkataan/frasa perkenalan pada Buku Teks halaman 17, kemudian memodelkan tulisan اسم، أنا، تلميذ، معلم dan satu kata pengayaan daripada Unit 1. Murid menyalin empat daripada lima kata secara RTL.
 
 **Aktiviti 2 — Aplikasi murid:** Murid melengkapkan kad nama peranan dengan salinan lima kata, kemudian semak secara pasangan.
 
@@ -28,3 +28,5 @@
 **Audit halaman:** Tiada nombor halaman individu disahkan; jangan nyatakan muka surat khusus kepada guru sebelum semakan buku teks.
 
 **Status:** DRAF_STAGING / BELUM READY. Bukan bahan LIVE Telegram atau Web. Teks/aktiviti ini merupakan cadangan berpandukan fokus DSKP/RPT, tidak boleh dianggap padanan tepat halaman buku teks, dan belum diuji dalam Word/PDF A4 RTL.
+
+**Semakan Buku Teks asal Tahun 2 (6 Nov 2026):** Buku Teks Bahasa Arab Tahun 2 DBP untuk KPM cetakan 2017, ISBN 978-983-49-1589-6, Unit 1 هيا نتعارف, halaman bercetak **17**. Teks buku: https://anyflip.com/slrpb/qzcr/basic; DSKP asal: https://drive.google.com/file/d/1WY_c69UshDm3jHzVK86G2xfu77UUkGYO/view. Latihan hlm 17 mengarahkan penyalinan perkataan/frasa perkenalan. SP 3.3.1 sesuai dalam DSKP tetapi cetakan kod h17 perlu disemak visual. **Kategori bukti:** BOOK_COPY_EXERCISE_SP_PRINTED_CODE_REQUIRES_VISUAL_CHECK. Pemetaan turutan PdP RPT 2027 dan semakan visual kod buku masih belum diluluskan. **DRAF / BELUM READY**.

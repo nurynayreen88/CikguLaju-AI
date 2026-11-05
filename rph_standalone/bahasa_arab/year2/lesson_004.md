@@ -9,7 +9,7 @@
 
 **Set induksi:** Guru menunjukkan dua bentuk ي dan meminta murid menunjukkan huruf asal.
 
-**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru memodelkan bacaan kad ل، لـ، ـلـ، ي، ـي; murid meniru sambil menjejak huruf dengan jari.
+**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru menunjukkan perkataan لِسَان، لِبَاس daripada buku hlm 2 dan يَد، كُرْسِي daripada buku hlm 4, membimbing murid menjejak serta membaca huruf ل/ي di awal dan akhir kata. Kad bentuk huruf ialah BBM pengayaan guru.
 
 **Aktiviti 2 — Amali murid:** Permainan papan magnet: murid padankan kad bentuk awal, tengah dan akhir huruf berdasarkan contoh guru; sebut huruf semasa memadankan.
 
@@ -25,3 +25,5 @@
 **RPT rujukan 2026:** https://anyflip.com/zxzlm/jffk/basic
 **Status rujukan buku teks:** Halaman buku teks Tahun 2 belum disahkan; jangan cipta nombor muka surat.
 **Status penerbitan:** DRAF_STAGING / BELUM READY. Bukan bahan Telegram/Web LIVE. Semakan halaman teks, pemaparan Arab RTL, Word/PDF A4 serta pengesahan manual masih diperlukan.
+
+**Semakan Buku Teks asal Tahun 2 (6 Nov 2026):** Buku Teks Bahasa Arab Tahun 2 DBP untuk KPM cetakan 2017, ISBN 978-983-49-1589-6, Unit 1 هيا نتعارف, halaman bercetak **2 & 4**. Teks buku: https://anyflip.com/slrpb/qzcr/basic; DSKP asal: https://drive.google.com/file/d/1WY_c69UshDm3jHzVK86G2xfu77UUkGYO/view. Buku hlm 2 dan 4 memperkenalkan huruf dalam kedudukan kata; kad huruf adalah latihan guru tambahan, bukan dakwaan kod 2.1.1 tercetak. **Kategori bukti:** BOOK_SKILL_MATCH_PRINTED_CODE_REQUIRES_VISUAL_CHECK. Pemetaan turutan PdP RPT 2027 dan semakan visual kod buku masih belum diluluskan. **DRAF / BELUM READY**.
