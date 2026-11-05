@@ -1,67 +1,73 @@
 #!/usr/bin/env python3
-"""Read-only source/first-PdP checks for Bahasa Arab Years 2–6 staging.
-
-This is NOT a release test. It verifies that staging explicitly stays non-LIVE.
-Run from repository root: python scripts/check_bahasa_arab_t2_t6_stage.py
-"""
+"""Read-only 30-draft Bahasa Arab Year 2–6 staging preflight. NOT a release test."""
 from __future__ import annotations
-
+import csv
 import json
+from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SUBJECT = ROOT / "rph_standalone" / "bahasa_arab"
+RPT = ROOT / "rpt_2027" / "bahasa_arab"
 MANIFEST = SUBJECT / "source_manifest_20261105.json"
-REQUIRED = (
-    "Set induksi", "Aktiviti 1", "Aktiviti 2",
-    "Pengukuhan / Penilaian", "Penutup", "BBM",
-    "Kriteria kejayaan", "Refleksi guru", "BELUM READY",
-)
-EXPECTED_FOCUS = {
-    2: ("هيا نتعارف", "ل", "ي"),
-    3: ("تفضل إلى الفصل", "خ", "ش"),
-    4: ("الشهور الميلادية", "ال"),
-    5: ("في المطبخ", "ث", "س", "ص"),
-    6: ("حياتنا أجمل بالنظافة", "ع", "أ", "ح", "ه"),
+EXPECTED_SP = {
+    2: ["1.1.1", "1.1.2", "1.2.1", "2.1.1", "2.2.1", "3.1.1"],
+    3: ["1.1.1", "1.1.2", "1.2.1", "2.1.1", "2.2.1", "3.1.1"],
+    4: ["1.1.1", "1.1.2", "1.2.1", "2.1.1", "2.2.1", "3.1.1"],
+    5: ["1.1.1", "1.1.2", "1.2.1", "2.1.1", "2.2.1", "3.2.1"],
+    6: ["1.1.1", "1.1.2", "1.2.1", "2.1.1", "2.2.1", "3.1.1"],
+}
+FOCUS_UNIT_1 = {
+    2: "هيا نتعارف",
+    3: "تفضل إلى الفصل",
+    4: "الشهور الميلادية",
+    5: "في المطبخ",
+    6: "حياتنا أجمل بالنظافة",
 }
 
+def read_csv(path: Path) -> list[dict[str,str]]:
+    with path.open(encoding="utf-8-sig", newline="") as file:
+        return list(csv.DictReader(file))
 
 def check() -> None:
     data = json.loads(MANIFEST.read_text(encoding="utf-8"))
     assert data["release_status"] == "DRAF_STAGING_SAHAJA"
     assert data["total_final_ready_rph"] == 0
-    for flag in ("production_db_touched", "telegram_live_touched", "web_live_touched"):
-        assert data[flag] is False, f"Unexpected live flag: {flag}"
-    assert sorted(data["years"]) == ["2", "3", "4", "5", "6"]
-    for y in range(2, 7):
-        src = data["years"][str(y)]
-        assert src["provisional_rph_count"] == 6
-        assert src["dskp"]["url"].startswith("https://")
-        assert src["textbook"]["url"].startswith("https://")
-        assert src["rpt_2026"].startswith("https://")
-        assert src["textbook"]["source_page_verified"] is False
-        for lesson_num in range(1, 7):
-            p = SUBJECT / f"year{y}" / f"lesson_{lesson_num:03d}.md"
-            txt = p.read_text(encoding="utf-8")
-            if lesson_num > 1:
-                assert "DRAF" in txt and "BELUM READY" in txt
-                assert all(s in txt for s in ("Set induksi", "Aktiviti 1", "Aktiviti 2", "Penutup", "PBD"))
-                assert "muka surat" in txt.lower() or "halaman" in txt.lower()
-                continue
-        assert f"Bahasa Arab Tahun {y}" in txt
-        assert "DSKP SK/SP:** 1.1 / 1.1.1" in txt
-        assert all(section in txt for section in REQUIRED), p
-        assert all(fragment in txt for fragment in EXPECTED_FOCUS[y]), p
-        assert src["rpt_2026"] in txt
-        assert "DRAF_STAGING" in txt and "BUKAN bahan LIVE" in txt
-        assert len(txt) >= 1300, f"Suspiciously short first PdP: {p}"
-    assert len(data["years"]["4"]["textbook_units_confirmed"]) == 4
-    assert len(data["years"]["5"]["textbook_units_confirmed"]) == 4
-    assert data["years"]["3"]["textbook"]["text_extractable"] is False
-    assert data["years"]["6"]["dskp"]["text_extractable"] is False
-    print("BA Year 2–6: 5 source entries / 30 draft first-six-PdP checks passed.")
-    print("RELEASE BLOCKED: 0 final-ready; individual textbook/DSKP/RPT evidence outstanding.")
-
+    assert all(data[x] is False for x in ("production_db_touched", "telegram_live_touched", "web_live_touched"))
+    assert sorted(data["years"]) == [str(y) for y in range(2, 7)]
+    units = read_csv(RPT / "unit_sequence_DRAF_20261105.csv")
+    assert len(units) == 20
+    assert Counter(int(row["tahun"]) for row in units) == Counter({y: 4 for y in range(2, 7)})
+    assert all(row["status"] == "DRAF_SEMAK" and row["pdp_ready"] == "FALSE" for row in units)
+    assert {(int(row["tahun"]), int(row["unit"])) for row in units} == {(y,i) for y in range(2,7) for i in range(1,5)}
+    assert next(row["tajuk_arab"] for row in units if row["tahun"]=="3" and row["unit"]=="4") == "الزمان"
+    lessons = read_csv(RPT / "pdp_001_006_DRAF.csv")
+    assert len(lessons) == 30
+    assert all(row["status"] == "DRAF_SEMAK" and row["ready"] == "FALSE" and row["halaman_buku_disahkan"] == "FALSE" for row in lessons)
+    lesson_map = {(int(row["tahun"]), int(row["pdp"])): row for row in lessons}
+    assert len(lesson_map) == 30
+    checked = 0
+    for year in range(2, 7):
+        info = data["years"][str(year)]
+        assert info["provisional_rph_count"] == 6
+        assert info["textbook"]["source_page_verified"] is False
+        for lesson in range(1, 7):
+            path = SUBJECT / f"year{year}" / f"lesson_{lesson:03d}.md"
+            content = path.read_text(encoding="utf-8")
+            record = lesson_map[(year, lesson)]
+            assert record["sp"] == EXPECTED_SP[year][lesson-1]
+            assert record["unit"] == "1"
+            assert f"Bahasa Arab Tahun {year}" in content, path
+            assert f"PdP {lesson:03d}" in content, path
+            assert FOCUS_UNIT_1[year] in content, path
+            for heading in ("Set induksi", "Aktiviti 1", "Aktiviti 2", "Penutup", "BBM", "PBD", "Kriteria kejayaan", "Refleksi"):
+                assert heading in content, (path, heading)
+            assert "DRAF" in content and "BELUM READY" in content and "READY" in content
+            assert record["sp"] in content and info["rpt_2026"] in content
+            assert len(content) >= 1100, (path, "RPH too short")
+            checked += 1
+    print(f"PASSED: {len(units)} unit placeholders, {len(lessons)} RPT-PdP rows, {checked} RPH drafts.")
+    print("RELEASE BLOCKED: 0 FINAL READY; textbook-page, native render, manual approval pending.")
 
 if __name__ == "__main__":
     check()

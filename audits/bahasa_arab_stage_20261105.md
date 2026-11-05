@@ -1,34 +1,37 @@
-# Audit permulaan Bahasa Arab Tahun 2–6 — 5 November 2026
+# Bahasa Arab Tahun 2–6 — checkpoint staging (5 November 2026)
 
-**Keputusan:** DRAF / staging sahaja. **0 RPH FINAL READY**, **5 RPH contoh PdP 001** telah disediakan untuk semakan; bukan keseluruhan subjek. Belum ada perubahan pada app.py, Telegram/Web LIVE, DB v26.00 atau jadual guru.
+## Terkini
+- **30 RPH Markdown DRAF**, PdP 001–006 bagi setiap Tahun 2–6.
+- **20 unit** (4 per tahun) pada indeks urutan unit; **30 baris** pemetaan PdP awal kepada kod SK/SP dalam CSV berasingan.
+- Semua rekod berstatus **DRAF_SEMAK / BELUM READY**, halaman buku teks PdP individu belum disahkan, **0 FINAL READY**.
+- Y3 Unit 4 dalam indeks diperbetulkan kepada **الزمان**, berdasarkan RPT 2026 dan tema DSKP.
+- RPH ini bahan kerja awal; bukan 30 RPH yang lulus pengesahan guru atau dipasang ke Telegram/Web.
+- Cabang staging berasingan; **tiada** ubah `app.py`, SQLite produksi v26.00 atau Supabase pengguna.
 
-## Penemuan sebenar
-| Tahun | DSKP | Buku teks | RPT 2026 | RPH contoh | Sekatan penerbitan |
+## Kod pada enam PdP awal
+| PdP | T2 | T3 | T4 | T5 | T6 |
 |---|---|---|---|---|---|
-| 2 | PDF Drive; teks boleh baca | PDF Tahun 2 ditemui pada portal sekolah KPM; belum semak muka surat | RPT 2026 Kumpulan B ditemui | 1 DRAF | Halaman buku dan SP individu |
-| 3 | PDF Drive; teks boleh baca | Drive PDF imej (CamScanner); tidak boleh diekstrak secara terus | RPT 2026 Kumpulan B ditemui | 1 DRAF | Audit visual buku, semua halaman |
-| 4 | PDF Drive; teks boleh baca | PDF berteks; 4 unit, halaman bercetak 1–112 | RPT 2026 Kumpulan B ditemui | 1 DRAF | Semak halaman spesifik setiap PdP |
-| 5 | PDF Drive; teks boleh baca | PDF berteks; 4 unit, halaman bercetak 1–112 | RPT 2026 Kumpulan B ditemui | 1 DRAF | Semak halaman spesifik setiap PdP |
-| 6 | PDF DSKP Tahun 6 ditemui pada laman panitia KPM, belum baca kandungan penuh | PDF Drive; ekstraksi teks kosong | RPT 2026 Kumpulan B ditemui | 1 DRAF | Semak DSKP serta buku secara visual |
+| 001 | 1.1.1 | 1.1.1 | 1.1.1 | 1.1.1 | 1.1.1 |
+| 002 | 1.1.2 | 1.1.2 | 1.1.2 | 1.1.2 | 1.1.2 |
+| 003 | 1.2.1 | 1.2.1 | 1.2.1 | 1.2.1 | 1.2.1 |
+| 004 | 2.1.1 | 2.1.1 | 2.1.1 | 2.1.1 | 2.1.1 |
+| 005 | 2.2.1 | 2.2.1 | 2.2.1 | 2.2.1 | 2.2.1 |
+| 006 | 3.1.1 | 3.1.1 | 3.1.1 | **3.2.1** | 3.1.1 |
 
-## Semakan unit buku teks yang mempunyai teks
-**Tahun 4 (rujukan halaman bercetak untuk unit sahaja):** (1) الشهور الميلادية 1–28; (2) من في المدرسة؟ 29–56; (3) أحب مدرستي 57–84; (4) بيتي جنتي 85–112.
+Kod berdasarkan DSKP dan RPT 2026 yang dicapai; jadual ini **pemetaan perancangan** sahaja, bukan semakan manual setiap PdP dengan bukti halaman.
 
-**Tahun 5:** (1) في المطبخ 1–28; (2) ما ألذ الطعام! 29–56; (3) هيا نشترك في الأنشطة الصفية 57–84; (4) رفقا بالحيوانات! 85–112.
+## Sumber rujukan
+- DSKP T2–T5: PDF Google Drive pada `source_manifest_20261105.json`.
+- DSKP T6: RPT 2026 serta teks DSKP KSSR Semakan Tahun 6 di https://anyflip.com/bpvwr/huxb/basic ; perlu banding PDF asal.
+- RPT 2026 T2–T6: URL pada `source_manifest_20261105.json`.
+- Buku teks T4/T5 memberi **julat halaman unit**, bukan halaman aktiviti tertentu.
+- Buku T2 perlu bukti halaman, buku T3 dan T6 imbasan memerlukan semakan imej.
 
-## Kawalan kualiti dan operasi
-1. Jangan guna jadual minggu RPT 2026 sebagai identiti PdP; susun lesson/PdP secara berturutan untuk 2027 dan sesuaikan cuti Kumpulan A/B berasingan.
-2. RPH hendaklah menyatakan objektif boleh ukur, aktiviti guru/murid, bahan, PBD dan penutup; sasaran 1 halaman Word A4 selepas dirender. Draf Markdown sedia ada belum menjalani ujian render.
-3. Jangan salin/palsukan halaman buku teks: julat *unit* tidak sama dengan halaman pengajaran individu.
-4. DSKP dan SP mesti dipadankan setiap satu daripada PDF sumber, bukan disalin daripada RPT pihak ketiga tanpa pengesahan.
-5. Sehingga audit setiap PdP lulus, metadata kekal DRAF dan tiada adapter runtime/telegram/web disambungkan.
-6. Semak DB v26.00 yang benar-benar dipasang sebelum insert/upsert; ambil backup, bezakan rekod semasa dan jangan padam atau overwrite.
-7. Apabila lulus, penjana Telegram dan Web mesti menggunakan sumber/format RPH yang sama.
+## Belum siap
+1. Susunan semua PdP sepanjang tahun dan RPT 2027 (tarikh Kumpulan A/B/cuti).
+2. Buktikan setiap rujukan SK/SP/halaman buku, aktiviti dan pencapaian.
+3. Jana dan periksa Word/PDF satu halaman A4 serta susun atur Arab RTL.
+4. Audit DB aktif dahulu, gabung sumber Telegram–Web, uji integrasi serta kelulusan guru.
 
-## Pautan sumber
-- DSKP T2–T5: lihat `rph_standalone/bahasa_arab/source_manifest_20261105.json`.
-- DSKP T6: https://sites.google.com/moe-dl.edu.my/ba2k26/dokumen-standard-kurikulum/dskp-mata-pelajaran-terkini
-- Buku teks T2: https://sites.google.com/moe-dl.edu.my/sketta2bahasaarab/buku-teks-digital
-- RPT 2026 T2–T6: https://anyflip.com/zxzlm/jffk/basic ; https://anyflip.com/zxzlm/vmip/basic ; https://anyflip.com/zxzlm/xrtv/basic ; https://anyflip.com/zxzlm/ucjc/basic ; https://anyflip.com/zxzlm/bmaa/basic
-
-**Catatan:** RPT 2026 yang ditemui adalah Kumpulan B dan bukan pengesahan tarikh RPT 2027. Audit ini tidak mengesahkan semua SK/SP, bukan jaminan bahan LIVE dan tidak menandakan subjek selesai.
+## Semakan teknikal
+`python scripts/check_bahasa_arab_t2_t6_stage.py` ialah pemeriksa struktur **baca-sahaja** untuk draf dan mesti dijalankan dalam CI. Kejayaan struktur tidak membuktikan kualiti pedagogi atau status READY.
