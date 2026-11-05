@@ -174,14 +174,30 @@ def check() -> None:
         assert "BELUM READY" in src
     readiness = json.loads((ROOT / "audits" / "bahasa_arab_release_readiness_20261106.json").read_text(encoding="utf-8"))
     assert readiness["release_state"] == "DRAF_STAGING_RELEASE_BLOCKED"
-    assert readiness["completed"]["source_page_draft_reviewed"] == 36
+    assert readiness["completed"]["source_page_draft_reviewed"] == 48
     assert readiness["completed"]["draft_rph"] == 60
-    assert sum(y["source_page_reviewed_rph"] for y in readiness["years"]) == 36
+    assert sum(y["source_page_reviewed_rph"] for y in readiness["years"]) == 48
     assert all(y["unwritten_units"] == [2,3,4] for y in readiness["years"])
     assert readiness["total_ready_rph"] == 0 and readiness["release_authorized"] is False
     assert all(readiness[k] is False for k in ("production_db_touched","telegram_live_touched","web_live_touched"))
     assert any(x["id"] == "full_pdp_coverage" and x["status"] == "BLOCKED" for x in readiness["release_checks"])
     assert any(x["id"] == "word_pdf_programmatic_a4" and x["status"] == "PASS_TECHNICAL_ONLY" for x in readiness["release_checks"])
+    y6review = json.loads((ROOT / "audits" / "bahasa_arab_y6_pdp001_012_text_source_audit_20261106.json").read_text(encoding="utf-8"))
+    assert y6review["year"] == 6 and y6review["unit"] == 1
+    assert y6review["source_text_reviewed_count"] == 12 and y6review["final_ready_count"] == 0
+    assert len(y6review["pdp"]) == 12
+    assert [x["sp"] for x in y6review["pdp"]] == EXPECTED_SP[6]
+    assert all(x["textbook_sp_found_for_topic"] and x["manual_approval"] is False and x["ready"] is False for x in y6review["pdp"])
+    assert m["years"]["6"]["source_evidence_pdp001_012"] == "audits/bahasa_arab_y6_pdp001_012_text_source_audit_20261106.json"
+    assert m["years"]["6"]["source_text_reviewed_drafts"] == 12
+    assert m["years"]["6"]["textbook"]["source_page_verified"] is False
+    for i, row in enumerate(y6review["pdp"], 1):
+        s = (SUBJECT / "year6" / f"lesson_{i:03d}.md").read_text(encoding="utf-8")
+        assert "**Semakan teks BT Tahun 6 (6 Nov 2026):**" in s
+        assert f"**{row['printed_page_text_source']}**" in s
+        assert "BELUM READY" in s
+    assert readiness["completed"]["source_page_draft_reviewed"] == 48
+    assert sum(y["source_page_reviewed_rph"] for y in readiness["years"]) == 48
     print("PASSED: 20 unit indexes, 60 crosswalks, 60 RPH draft files, 15 banks.")
     print("RELEASE BLOCKED: 0 READY; full-year curriculum/book-page approval, RPT 2027 and runtime parity missing; A4 preview CI passed.")
 

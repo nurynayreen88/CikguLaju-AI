@@ -81,3 +81,6 @@ Fail: `audits/bahasa_arab_y4_pdp007_012_source_audit_20261106.json`. Kini 12/12 
 
 ## Tahun 3 PdP 001–012: audit sumber buku teks (6 Nov 2026)
 Semua 12 draf Tahun 3 Unit 1 menerima catatan halaman bercetak Buku Teks DBP/KPM 2018 dan kod SP mengikut aktiviti yang ditemui: 2+6, 2+6, 2+6, 2+6, 4+8, 5+9, 5+9, 11–12, 11–12, 13–14, 20+24, 16–17. Draf PdP 004, 008–012 dimurnikan supaya kosa kata/objektif mengikuti buku teks. Frasa tambahan guru ditandakan berasingan. Pautan bukti https://www.scribd.com/document/438677752/Bahasa-Arab-Tahun-3-Teks-KSSR-Semakan dan fail `audits/bahasa_arab_y3_pdp001_012_source_audit_20261106.json`. **Status masih DRAF, 0 READY**, belum semak keseluruhan RPT 2027 dan approval guru.
+
+## Tahun 6 PdP 001–012: semakan teks buku asal (6 Nov 2026)
+12 draf awal kini menerima catatan bukti halaman bercetak bagi buku DBP/KPM cetakan pertama 2021: 2,3,4–5,2,6–9,10–12,13–14,14–15,13–15,14–15,16,18. PdP 012 diubah daripada contoh sabun kepada contoh baldi (h18) untuk kod 1.4.1; tambahan ayat guru ditandakan. PdP 009 membezakan larangan pembaziran air sebagai pengayaan di luar contoh h13–15. Bukti disimpan dalam `audits/bahasa_arab_y6_pdp001_012_text_source_audit_20261106.json`. Status semua kekal DRAF; buku PDF imej asal dan RPT 2027 belum diluluskan individu.

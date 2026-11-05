@@ -151,10 +151,10 @@
     {
       "lesson_id": "year6/lesson_012",
       "sp_in_draft": "1.4.1",
-      "book_printed_pages_candidate": "19",
+      "book_printed_pages_candidate": "18",
       "evidence_topic": "Contoh ayat berkait, kod 1.4.1 dipaparkan pada buku",
       "evidence_code": "MATCH_TOPICAL_SP",
-      "quality_note": "Teks draf bukan petikan buku halaman itu",
+      "quality_note": "Updated from p19 to p18 to match printed SP 1.4.1 with related sentence model; RPH revised to bucket example.",
       "ready": false
     }
   ],
@@ -168,5 +168,6 @@
       "evidence": "Buku Teks Tahun 6 hlm. 2 dan DSKP Tahun 6 hlm. 24",
       "status": "CONTENT_CORRECTED_BUT_NOT_FINAL_READY"
     }
-  ]
+  ],
+  "book_text_source_audit_20261106": "audits/bahasa_arab_y6_pdp001_012_text_source_audit_20261106.json"
 }

@@ -288,7 +288,10 @@
       "external_textbook_portal": "https://sites.google.com/moe-dl.edu.my/sketta2bahasaarab/buku-teks-digital",
       "external_dskp_portal": "https://sites.google.com/moe-dl.edu.my/unitbahasaprogram-pso-2021/mata-pelajaran-unit-bahasa/bahasa-arab/sekolah-rendah/dskp",
       "external_rpt_2026_portal": "https://sites.google.com/moe-dl.edu.my/panitia-bahasa-arab-sksn/induk/rptdskp",
-      "draft_lesson_page_evidence_file": "audits/bahasa_arab_y6_textbook_page_evidence_20261105.json"
+      "draft_lesson_page_evidence_file": "audits/bahasa_arab_y6_textbook_page_evidence_20261105.json",
+      "source_evidence_pdp001_012": "audits/bahasa_arab_y6_pdp001_012_text_source_audit_20261106.json",
+      "source_text_reviewed_drafts": 12,
+      "source_content_approved": false
     }
   },
   "mandatory_release_gates": [

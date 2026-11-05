@@ -49,3 +49,7 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 - **36/60** RPH draf awal Tahun 3–5 menerima semakan rujukan halaman teks sumber; Tahun 2 **0**; Tahun 6 **12 calon** (belum diluluskan individu).
 - Ujian [60 DOCX + 60 PDF satu A4](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42115776091) ialah **lulus teknikal sahaja**, bukan pengesahan kandungan atau kelulusan tahun penuh.
 - Baki **15 unit** (Unit 2–4 bagi Tahun 2–6) belum mempunyai RPH individu; bank aktiviti bukan RPH. Oleh itu, **0 FINAL READY** dan PR kekal draf tanpa deploy ke Telegram/Web.
+
+## Tahun 6 Unit 1 semakan teks (6 November 2026)
+- 12 draf PdP awal menerima catatan halaman bercetak dan kod SP daripada teks buku tahun 6. PdP012 dibetulkan kepada contoh baldi pada h18. Bukti `audits/bahasa_arab_y6_pdp001_012_text_source_audit_20261106.json`.
+- Kini **48/60** draf awal Tahun 3–6 mempunyai audit halaman berdasarkan teks sumber. Tahun 2 belum. Status **0 FINAL READY**.
