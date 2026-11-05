@@ -89,9 +89,9 @@ def validated_plans(catalog):
     if not match or catalog.get("telegram_bot_id") != match.group(1):
         raise ProfileUnavailable("Bot Web dan Telegram tidak sepadan")
     items = catalog.get("plans")
-    if not isinstance(items, list) or len(items) != 2:
-        raise ProfileUnavailable("Pakej bayaran tidak disahkan")
-    expected = {"rakan_pembangun": "10.00", "langganan_30_hari": "5.00"}
+    if not isinstance(items, list) or len(items) != 1:
+        raise ProfileUnavailable("Hanya Rakan Pembangun RM10 ditawarkan")
+    expected = {"rakan_pembangun": "10.00"}
     result = {}
     for entry in items:
         if (not isinstance(entry, dict) or entry.get("code") not in expected
@@ -104,6 +104,32 @@ def validated_plans(catalog):
     if set(result) != set(expected):
         raise ProfileUnavailable("Pakej bayaran tidak lengkap")
     return result
+
+
+def validated_rakan_status(catalog):
+    """Only expose Telegram's verified one-decimal percentage, not capacity."""
+    percent = catalog.get("progress_percentage") if isinstance(catalog, dict) else None
+    open_enrollment = catalog.get("rakan_open") if isinstance(catalog, dict) else None
+    if (not isinstance(percent, str) or not re.fullmatch(r"(?:[0-9]{1,2}\.[0-9]|100\.0)%", percent)
+            or type(open_enrollment) is not bool):
+        raise ProfileUnavailable("Peratus Rakan Pembangun belum dapat disahkan")
+    value = float(percent[:-1])
+    if (value < 0 or value > 100
+            or (value == 100.0 and open_enrollment)):
+        raise ProfileUnavailable("Status penyertaan tidak sepadan")
+    return percent, open_enrollment
+
+
+def _is_member(conf, uid):
+    """Recheck the authenticated, paid lifetime entitlement before charging."""
+    from web_v1_telegram_auth_routes import _lookup
+    try:
+        account = _lookup(conf, uid)
+    except Exception:
+        raise ProfileUnavailable("Status keahlian tidak dapat disemak") from None
+    if not isinstance(account, dict) or account.get("telegram_user_id") != uid:
+        raise ProfileUnavailable("Akaun berdaftar tidak dapat disahkan")
+    return account.get("rakan_pembangun") is True
 
 
 def _payment_rest(conf, method, *, query="", body=None, opener=None):
@@ -227,13 +253,18 @@ def payment_catalog():
     if err is not None:
         return err
     try:
-        plans=validated_plans(_source("/internal/payment/v1/catalog"))
+        catalog=_source("/internal/payment/v1/catalog")
+        plans=validated_plans(catalog)
+        percentage,rakan_open=validated_rakan_status(catalog)
         rows=_existing(conf,uid)
+        member=_is_member(conf,uid)
     except (ProfileUnavailable,PaymentConflict):
-        return jsonify({"error":"Sumber atau status pembayaran belum tersedia"}),503
+        return jsonify({"error":"Sumber atau status Rakan Pembangun belum tersedia"}),503
     return jsonify({"plans":list(plans.values()),"status":_status_rows(rows),
-                    "qr_available":True,
-                    "note":"Pending hanya dibuat selepas resit sebenar dimuat naik. Kelulusan admin diperlukan."})
+                    "progress_percentage":percentage,"rakan_open":rakan_open,
+                    "already_member":member,
+                    "qr_available":rakan_open and not member and not _status_rows(rows)["pending"],
+                    "note":"Pending hanya selepas resit sebenar. Kelulusan admin diperlukan."})
 
 
 @bp.get("/api/web/payment/qr")
@@ -245,6 +276,13 @@ def payment_qr():
         rows=_existing(conf,uid)
         if _status_rows(rows)["pending"]:
             return jsonify({"error":"Resit sedang disemak. Jangan bayar lagi."}),409
+        if _is_member(conf,uid):
+            return jsonify({"error":"Rakan Pembangun sudah aktif. Jangan bayar lagi."}),409
+        catalog=_source("/internal/payment/v1/catalog")
+        validated_plans(catalog)
+        percentage,rakan_open=validated_rakan_status(catalog)
+        if not rakan_open:
+            return jsonify({"error":"Pendaftaran Rakan Pembangun telah penuh"}),409
         image,mime=_source("/internal/payment/v1/qr",expect="image")
     except (ProfileUnavailable,PaymentConflict):
         return jsonify({"error":"QR pembayaran belum tersedia"}),503
@@ -268,17 +306,17 @@ def payment_submit():
     raw=upload.stream.read(MAX_RECEIPT+1) if upload is not None else b""
     try:
         ext=_validate_receipt(raw,mime)
-        plans=validated_plans(_source("/internal/payment/v1/catalog"))
+        catalog=_source("/internal/payment/v1/catalog")
+        plans=validated_plans(catalog)
         if code not in plans:
-            raise ValueError("Pakej tidak sah")
+            raise ValueError("Hanya pakej Rakan Pembangun ditawarkan")
+        _,rakan_open=validated_rakan_status(catalog)
         if _status_rows(_existing(conf,uid))["pending"]:
             return jsonify({"error":"Resit lain sedang disemak. Jangan bayar lagi."}),409
-        from web_v1_telegram_auth_routes import _lookup
-        account=_lookup(conf,uid)
-        if not account or account.get("telegram_user_id") != uid:
-            return jsonify({"error":"Sila log masuk semula"}),401
-        if code=="rakan_pembangun" and account.get("rakan_pembangun") is True:
-            return jsonify({"error":"Akses seumur hidup sudah aktif. Jangan bayar sekali lagi."}),409
+        if _is_member(conf,uid):
+            return jsonify({"error":"Rakan Pembangun sudah aktif. Jangan bayar sekali lagi."}),409
+        if not rakan_open:
+            return jsonify({"error":"Pendaftaran Rakan Pembangun telah penuh"}),409
         proof=_telegram_document(conf,uid,raw,ext)
         amount=plans[code]["amount"]
         data={
