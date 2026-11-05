@@ -53,9 +53,9 @@ def source_fingerprint(year, lesson, component=None, *, root=ROOT):
         except (OSError, ValueError):
             return None
         digest.update(relative.encode("utf-8"))
-        digest.update(b"\\x00")
+        digest.update(bytes([0]))
         digest.update(data)
-        digest.update(b"\\x00")
+        digest.update(bytes([0]))
     return digest.hexdigest()
 
 
