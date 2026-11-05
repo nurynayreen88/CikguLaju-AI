@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-05",
+  "scope": "Direct visual inspection of first page/cover of three original PDF books in connected Google Drive and SHA256 of full original PDF bytes. Audio speech and per-Lesson book task alignment are not inspected by this check.",
+  "year": 5,
+  "series": "English Plus 1",
+  "observed_edition": "Second Edition",
+  "observed_year": "Year 5",
+  "books": [
+    {
+      "type": "teacher_book",
+      "drive_file_id": "14Vpj-DjCbOERXdx7rGG8zhzNhsnUEPsM",
+      "source_filename": "English Plus 1 Year 5 (Teacher's Book).pdf",
+      "pdf_pages": 162,
+      "cover_pdf_page_one_based": 1,
+      "size_bytes": 66269773,
+      "sha256": "28d16fd342559ec87426b50fc39c48d029005ef319e6a37f81ed7efdec3038fe",
+      "visual_cover_text": [
+        "English Plus 1",
+        "Second Edition",
+        "Year 5",
+        "Teacher's Book"
+      ]
+    },
+    {
+      "type": "students_book",
+      "drive_file_id": "13B4s4HacQgWn3M2QkzwHif6JdrBqc1Fw",
+      "source_filename": "English Plus 1 Student's Book Year 5.pdf",
+      "pdf_pages": 122,
+      "cover_pdf_page_one_based": 1,
+      "size_bytes": 44060870,
+      "sha256": "0f1b0263ccec6689e896ba375690e4d0cb900e00f52a86832e16411c759eff96",
+      "visual_cover_text": [
+        "English Plus 1",
+        "Second Edition",
+        "Year 5",
+        "Student's Book"
+      ]
+    },
+    {
+      "type": "workbook",
+      "drive_file_id": "1cmRSBYK0_DfKyOOFZW5JazYk7AG6wl8E",
+      "source_filename": "English Plus 1 Year 5 Workbook 2nd Edition.pdf",
+      "pdf_pages": 110,
+      "cover_pdf_page_one_based": 1,
+      "size_bytes": 47031351,
+      "sha256": "b418aabdada23964f168c46966c0ceb4ef41b7f6eed37df6ca84abb23519cec4",
+      "visual_cover_text": [
+        "English Plus 1",
+        "Second Edition",
+        "Year 5",
+        "Workbook"
+      ]
+    }
+  ],
+  "audio_folder_drive_id": "1A-cDnYRn3j-B5NrvTC5fSaWCg-Gq6YyC",
+  "audio_filename_template": "<disc>-<track> English Plus Second Edition Students Book 1.mp3",
+  "all_three_books_series_year_edition_match": true,
+  "audio_filename_series_and_edition_match_original_book_covers": true,
+  "original_sow_87_numbered_references_filename_match": 87,
+  "content_of_all_87_recordings_verified": false,
+  "exact_audio_task_per_lesson_tb_sb_page_verified": false,
+  "all_151_fixed_rph_teacher_approved": false,
+  "real_telegram_audio_send_verified": false,
+  "final_ready_approved": false,
+  "scope_limit": "Cover/page edition identity is verified; do not treat it as spoken transcript or file-to-SOW activity matching."
+}
