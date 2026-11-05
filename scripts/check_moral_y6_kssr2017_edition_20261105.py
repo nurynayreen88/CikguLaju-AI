@@ -25,8 +25,7 @@ def main():
     assert len(revised["units"])==14
     starts=[x["printed_start"] for x in revised["units"]]
     assert starts==list(range(2,133,10)),starts
-    assert revised["units"][3]["title"]=="Hargai Keunikan Negara"
-    assert revised["units"][6]["title"]=="Cinta akan Negara"
+    assert [u["title"] for u in revised["units"]]==["Kepercayaan kepada Tuhan Menjamin Kesejahteraan Negara","Bantuan dan Sokongan Moral kepada Negara","Tanggungjawab sebagai Warganegara","Hargai Keunikan Negara","Amalan Hemah Tinggi Meningkatkan Imej Negara","Hormati Identiti Negara","Cinta akan Negara","Amalan Adil Demi Kesejahteraan Negara","Berani Mempertahankan Maruah Negara","Kejujuran Demi Kesejahteraan Negara","Rajin Demi Kemajuan Negara","Kerjasama Demi Keharmonian Negara","Amalan Kesederhanaan Demi Kesejahteraan Negara","Amalan Toleransi Menjamin Perpaduan Negara"]
     assert toc["source_drive_file_id"]==legacy["source_drive_file_id"]
     assert toc["pdf_page_offset"]==legacy["pdf_printed_offset"]==9
     assert toc["units"][3]["printed_heading_original"]=="Jasa Tokoh Negara Dikenang"

@@ -182,7 +182,6 @@ def main() -> None:
         "core_correct_edition_y2_y5": 168,
         "core_y6_revised_source_text": 6,
         "core_y6_old_edition_recheck": 36,
-        "core_y6_not_previously_reviewed": 0,
         "supplement": 270,
         "supp_y2_y5_not_individually_book_verified": 216,
         "supp_y6_revised_source_text": 8,
