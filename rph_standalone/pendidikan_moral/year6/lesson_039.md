@@ -17,9 +17,9 @@ Murid memperagakan tindakan berdasarkan **13.5: Mengamalkan sikap bersederhana d
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Komuniti merancang penggunaan sumber negara secara berhemat**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Rancang lakonan:** Guru membahagikan watak pelaku, penerima dan pemerhati. Murid merangka ayat serta langkah tindakan selamat untuk **mengamalkan kesederhanaan dan mengelakkan pembaziran**. Murid menyemak persediaan berdasarkan SP 13.5.
+**Aktiviti 1 (20 minit) — Kempen menjaga kemudahan awam:** Guru menggunakan situasi menjaga kemudahan m/s 124–126. Murid merangka poster dengan dua tindakan sederhana dan selamat, seperti tidak merosakkan peralatan, menggunakan air/elektrik secara berpatutan dan memaklumkan kerosakan kepada orang bertanggungjawab (SP 13.5).
 
-**Aktiviti 2 (20 minit) — Lakon, semak, ulang:** Murid memperagakan situasi selama 60–90 saat, rakan memerhati dengan senarai semak, kemudian murid mengulang tindakan selepas maklum balas. Murid menetapkan satu amalan yang boleh dilaksanakan dengan selamat di sekolah atau rumah.
+**Aktiviti 2 (20 minit) — Simulasi pengguna bertanggungjawab:** Murid melakonkan cara menggunakan kemudahan awam tanpa membazir, pemerhati mencatat dua tindakan yang diperagakan dan guru memberikan maklum balas. Murid menjawab item m/s 127–128; simulasi tidak dianggap bukti amalan berterusan (SP 13.5).
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Semak senarai pemerhatian perlakuan bagi SP 13.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 
@@ -27,4 +27,6 @@ Murid memperagakan tindakan berdasarkan **13.5: Mengamalkan sikap bersederhana d
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — halaman belum dipadankan; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti buku teks disemak (2026-11-05):** Unit 13, m/s 124–128 (PDF 133–137). Bahan asal: Prasarana Dijaga Rakyat Ceria, aktiviti Jagalah Kemudahan Awam dan pentaksiran. Aktiviti RPH ialah olahan PdP bagi SP rasmi, bukan salinan buku teks atau pengesahan amalan sebenar murid.
+
+**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — Unit 13, m/s 124–128 (PDF 133–137) disemak mengikut aktiviti buku teks; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
