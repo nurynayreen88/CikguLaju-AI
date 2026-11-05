@@ -4,7 +4,7 @@
 **Fokus:** Kemasan karya serta apresiasi | **Teknik:** Catan basah atas kering  
 **SK:** 3.1; 4.1  
 **SP:** 3.1.1; 4.1.1; 4.1.2  
-**Buku Teks:** Pendidikan Kesenian Tahun 2 (bahagian Seni Visual), ms 76–77 (unit 74-79)  
+**Buku Teks:** Pendidikan Kesenian Tahun 2 (bahagian Seni Visual), ms 78–79 (unit 74-79)  
 **BBM:** cat air tidak toksik, berus, palet, kertas lukisan  
 **Masa:** 60 minit
 
@@ -13,9 +13,9 @@ Pada akhir PdP, murid dapat menambah baik hasil Jalan-jalan ke Taman Rama-rama d
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru memperlihatkan karya bertajuk Jalan-jalan ke Taman Rama-rama dan murid menyebut pengalaman atau imej yang berkaitan dengan tema.
-**Aktiviti 1 (15 minit) — Penerangan dan eksplorasi:** Guru menunjukkan rubrik ringkas (fungsi, motif, kemasan); murid menandakan dua bahagian yang hendak diperbaiki.
-**Aktiviti 2 (25 minit) — Amali murid:** Murid menyempurnakan karya, mempamerkan di galeri meja dan memberi apresiasi: Bandingkan keseimbangan sayap, ton dan kerapian catan. Guru merekod hujah murid tentang teknik dan hasil.
-**Pengukuhan/Pentaksiran (10 minit):** Karya dikemas kini + apresiasi lisan dua unsur seni dan satu cadangan penambahbaikan. Guru merekod evidens PBD dan memberi maklum balas mengikut tahap murid.
+**Aktiviti 1 (15 minit) — Penerangan dan eksplorasi:** Guru menunjukkan karya catan *Taman Mini* ms 78–79 serta kemasan bingkai selepas kering.
+**Aktiviti 2 (25 minit) — Amali murid:** Murid mengemas bentuk bunga dan rama-rama pada catan *Taman Mini*, membingkaikan karya kering dan membuat apresiasi kontra, ton serta kepelbagaian warna.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menyemak catan berbingkai, dua istilah seni visual dan satu pembaikan yang dibuat.
 **Penutup (5 minit):** Murid menyatakan satu pembelajaran dan menyimpan karya serta membersihkan ruang.
 **Pembezaan:** Murid memerlukan bantuan menggunakan contoh langkah berperingkat; murid mahir membandingkan dua teknik dan menerangkan pemilihan sendiri.
 **Keselamatan:** Alat tumpul dan media tidak toksik; aktiviti gunting/cantuman dipantau guru. 

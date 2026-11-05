@@ -13,9 +13,9 @@ Pada akhir PdP, murid dapat menambah baik hasil Bersukan Badan Sihat dan mengula
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru memperlihatkan karya bertajuk Bersukan Badan Sihat dan murid menyebut pengalaman atau imej yang berkaitan dengan tema.
-**Aktiviti 1 (15 minit) — Penerangan dan eksplorasi:** Guru menunjukkan rubrik ringkas (fungsi, motif, kemasan); murid menandakan dua bahagian yang hendak diperbaiki.
-**Aktiviti 2 (25 minit) — Amali murid:** Murid menyempurnakan karya, mempamerkan di galeri meja dan memberi apresiasi: Tunjukkan dua jalinan berbeza dan huraikan kaitan aktiviti sukan. Guru merekod hujah murid tentang teknik dan hasil.
-**Pengukuhan/Pentaksiran (10 minit):** Karya dikemas kini + apresiasi lisan dua unsur seni dan satu cadangan penambahbaikan. Guru merekod evidens PBD dan memberi maklum balas mengikut tahap murid.
+**Aktiviti 1 (15 minit) — Penerangan dan eksplorasi:** Guru menunjukkan karya *Warna-warni Buah-buahan* dalam BT ms 40–41 dan membimbing murid mengenal rupa, garisan serta imbangan.
+**Aktiviti 2 (25 minit) — Amali murid:** Murid menambah gosokan pada lakaran buah yang belum lengkap, mengemas ton dan menyusun karya di galeri; rakan membandingkan dua jalinan dan satu ciri keseimbangan pada buah.
+**Pengukuhan/Pentaksiran (10 minit):** Guru memeriksa kemasan gosokan buah, dua istilah seni visual serta satu cadangan penambahbaikan.
 **Penutup (5 minit):** Murid menyatakan satu pembelajaran dan menyimpan karya serta membersihkan ruang.
 **Pembezaan:** Murid memerlukan bantuan menggunakan contoh langkah berperingkat; murid mahir membandingkan dua teknik dan menerangkan pemilihan sendiri.
 **Keselamatan:** Alat tumpul dan media tidak toksik; aktiviti gunting/cantuman dipantau guru. 

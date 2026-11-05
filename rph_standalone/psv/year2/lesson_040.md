@@ -4,7 +4,7 @@
 **Fokus:** Kemasan karya serta apresiasi | **Teknik:** Resis  
 **SK:** 3.1; 4.1  
 **SP:** 3.1.1; 4.1.1; 4.1.2  
-**Buku Teks:** Pendidikan Kesenian Tahun 2 (bahagian Seni Visual), ms 86–87 (unit 84-89)  
+**Buku Teks:** Pendidikan Kesenian Tahun 2 (bahagian Seni Visual), ms 88–89 (unit 84-89)  
 **BBM:** krayon lilin, cat air, berus, kertas lukisan, palet  
 **Masa:** 60 minit
 
@@ -13,9 +13,9 @@ Pada akhir PdP, murid dapat menambah baik hasil Segarnya Air Terjun dan mengulas
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru memperlihatkan karya bertajuk Segarnya Air Terjun dan murid menyebut pengalaman atau imej yang berkaitan dengan tema.
-**Aktiviti 1 (15 minit) — Penerangan dan eksplorasi:** Guru menunjukkan rubrik ringkas (fungsi, motif, kemasan); murid menandakan dua bahagian yang hendak diperbaiki.
-**Aktiviti 2 (25 minit) — Amali murid:** Murid menyempurnakan karya, mempamerkan di galeri meja dan memberi apresiasi: Jelaskan bagaimana krayon menolak cat air dan menghasilkan garisan. Guru merekod hujah murid tentang teknik dan hasil.
-**Pengukuhan/Pentaksiran (10 minit):** Karya dikemas kini + apresiasi lisan dua unsur seni dan satu cadangan penambahbaikan. Guru merekod evidens PBD dan memberi maklum balas mengikut tahap murid.
+**Aktiviti 1 (15 minit) — Penerangan dan eksplorasi:** Guru merujuk karya *Suasana Hidupan Laut* BT ms 88–89 dan membimbing penilaian kesan resis, pergerakan serta kontra warna.
+**Aktiviti 2 (25 minit) — Amali murid:** Murid mengemas ikan dan riak pada catan *Suasana Hidupan Laut*, mempamerkan karya dan menerangkan bagaimana oil pastel menolak cat untuk menunjukkan garisan dan pergerakan.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menilai kemasan hasil resis, dua istilah seni visual dan satu cadangan pembaikan.
 **Penutup (5 minit):** Murid menyatakan satu pembelajaran dan menyimpan karya serta membersihkan ruang.
 **Pembezaan:** Murid memerlukan bantuan menggunakan contoh langkah berperingkat; murid mahir membandingkan dua teknik dan menerangkan pemilihan sendiri.
 **Keselamatan:** Alat tumpul dan media tidak toksik; aktiviti gunting/cantuman dipantau guru. 

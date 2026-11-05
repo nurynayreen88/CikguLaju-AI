@@ -4,7 +4,7 @@
 **Fokus:** Latihan media, teknik dan lakaran | **Teknik:** Tembikar teknik picitan  
 **SK:** 2.1; 3.1  
 **SP:** 2.1.3; 3.1.1  
-**Buku Teks:** Pendidikan Kesenian Tahun 2 (bahagian Seni Visual), ms 64–65 (unit 64-69)  
+**Buku Teks:** Pendidikan Kesenian Tahun 2 (bahagian Seni Visual), ms 66–67 (unit 64-69)  
 **BBM:** tanah liat lembut atau doh, alas kerja, air dan pencungkil plastik tumpul  
 **Masa:** 60 minit
 
@@ -13,9 +13,9 @@ Pada akhir PdP, murid dapat menguji dua pendekatan teknik dan menyediakan satu l
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru memperlihatkan karya bertajuk Uli-uli Tembikar dan murid menyebut pengalaman atau imej yang berkaitan dengan tema.
-**Aktiviti 1 (15 minit) — Penerangan dan eksplorasi:** Guru mendemonstrasi teknik tembikar teknik picitan menggunakan tanah liat lembut atau doh, alas kerja, air dan pencungkil plastik tumpul; murid menyemak lakaran dan langkah keselamatan.
-**Aktiviti 2 (25 minit) — Amali murid:** Murid mencuba teknik secara berpasangan: Golek bola doh dan uji teknik picitan untuk membentuk ruang dalam bekas. Murid menghasilkan lakaran berlabel dan memilih media yang sesuai untuk projek.
-**Pengukuhan/Pentaksiran (10 minit):** Lakaran berlabel + dua percubaan media/teknik dan sebab pemilihan. Guru merekod evidens PBD dan memberi maklum balas mengikut tahap murid.
+**Aktiviti 1 (15 minit) — Penerangan dan eksplorasi:** Guru menunjukkan BT ms 66–67 tentang bentuk kubus dan silinder serta teknik picitan pada doh atau air-dry clay selamat.
+**Aktiviti 2 (25 minit) — Amali murid:** Murid mencuba picitan pada bebola doh menjadi bekas kecil, membanding dinding nipis/tebal dan melakar rupa tembikar dengan bukaan seimbang.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menilai dua sampel picitan, lakaran berlabel dan satu alasan mengekalkan ketebalan dinding.
 **Penutup (5 minit):** Murid menyatakan satu pembelajaran dan menyimpan karya serta membersihkan ruang.
 **Pembezaan:** Murid memerlukan bantuan menggunakan contoh langkah berperingkat; murid mahir membandingkan dua teknik dan menerangkan pemilihan sendiri.
 **Keselamatan:** Alat tumpul dan media tidak toksik; aktiviti gunting/cantuman dipantau guru. 
