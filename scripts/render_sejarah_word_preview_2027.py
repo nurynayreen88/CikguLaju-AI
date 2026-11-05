@@ -84,16 +84,41 @@ def rph_year(year,obj):
 
 def rpt_year(year,rows):
     doc=configure(Document(),landscape=True)
-    for _ in range(4): doc.add_paragraph(" ")
-    heading(doc,"RANCANGAN PENGAJARAN TAHUNAN",21)
-    heading(doc,f"SEJARAH TAHUN {year}  •  2027",19)
-    for v in ("Sekolah: _________________________________________________",
-              "Guru: ____________________________________________________",
-              "Logo sekolah: disuntik daripada profil pengguna apabila generator diluluskan",
-              "Kumpulan A dan B • 36 PdP cadangan • KSSR Semakan 2017",
-              "STATUS: DRAF • Tarikh minggu sahaja; cuti negeri dan jadual kelas perlu disahkan"):
-        p=doc.add_paragraph(v);p.alignment=WD_ALIGN_PARAGRAPH.CENTER
-        for run in p.runs: run.font.size=Pt(11)
+    from docx.shared import RGBColor
+    from docx.enum.table import WD_TABLE_ALIGNMENT
+    kicker=doc.add_paragraph()
+    kicker.alignment=WD_ALIGN_PARAGRAPH.CENTER
+    kicker.paragraph_format.space_before=Pt(28)
+    k=kicker.add_run("CIKGULAJU AI  |  KURIKULUM STANDARD SEKOLAH RENDAH")
+    k.bold=True;k.font.name="Arial";k.font.size=Pt(12)
+    k.font.color.rgb=RGBColor(16,111,131)
+    for _ in range(2): doc.add_paragraph(" ")
+    heading(doc,"RANCANGAN PENGAJARAN TAHUNAN",24)
+    heading(doc,f"SEJARAH  •  TAHUN {year}",22)
+    p=doc.add_paragraph()
+    p.alignment=WD_ALIGN_PARAGRAPH.CENTER
+    r=p.add_run("TAHUN AKADEMIK 2027")
+    r.bold=True;r.font.size=Pt(16);r.font.color.rgb=RGBColor(16,111,131)
+    doc.add_paragraph(" ")
+    logo=doc.add_table(rows=1,cols=1)
+    logo.style="Table Grid";logo.alignment=WD_TABLE_ALIGNMENT.CENTER;logo.autofit=False
+    logo.columns[0].width=Mm(62);logo.cell(0,0).width=Mm(62)
+    p=logo.cell(0,0).paragraphs[0]
+    p.alignment=WD_ALIGN_PARAGRAPH.CENTER
+    r=p.add_run("\\n\\nLOGO SEKOLAH\\n(DARIPADA PROFIL PENGGUNA)\\n\\n")
+    r.bold=True;r.font.size=Pt(10);r.font.color.rgb=RGBColor(90,110,120)
+    doc.add_paragraph(" ")
+    for v in (
+        "NAMA SEKOLAH: ___________________________________________________",
+        "NAMA GURU: _______________________________________________________",
+        "KUMPULAN A / B   •   36 PdP CADANGAN   •   KSSR SEMAKAN 2017",
+        "DRAF: Minggu perancangan sahaja. Sahkan takwim negeri dan jadual kelas sebelum guna.",
+    ):
+        p=doc.add_paragraph(v)
+        p.alignment=WD_ALIGN_PARAGRAPH.CENTER
+        p.paragraph_format.space_after=Pt(7)
+        r=p.runs[0];r.font.name="Arial";r.font.size=Pt(11)
+        if v.startswith("DRAF"):r.italic=True;r.font.color.rgb=RGBColor(129,88,38)
     for group in ("A","B"):
         doc.add_page_break()
         heading(doc,f"RPT SEJARAH TAHUN {year} · KUMPULAN {group}",11)
