@@ -1,6 +1,6 @@
 # RPH Pendidikan Moral Tahun 6 — Sesi 046 (Pengukuhan)
 
-**STATUS DALAMAN:** SUMBER_DSKP_SEPADAN; HALAMAN_AKTIVITI_BUKU_BELUM_VERIFIED
+**STATUS DALAMAN:** SUMBER_DSKP_SEPADAN; SUMBER_BUKU_KSSR_SEMAKAN2017_DIRUJUK; BELUM_FINAL_READY
 **Subjek:** Pendidikan Moral  
 **Tahun:** 6  
 **Sesi:** 046 daripada 096  
@@ -19,9 +19,9 @@ Murid menunjukkan penguasaan SP **7.3** dengan menghasilkan dua alasan atau kesa
 ## Langkah PdP
 **Set induksi (5 minit):** Guru memperkenalkan situasi **Murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan** Murid mengenal pasti cabaran nilai Kasih sayang dan menyebut satu tindakan yang boleh diambil.
 
-**Aktiviti 1 (20 minit) — Penaakulan kepentingan dan akibat:** Guru mengemukakan situasi rakyat mengabaikan perpaduan dan lambang kebangsaan; murid membandingkan akibatnya kepada keselamatan, identiti negara dan kerjasama masyarakat. Guru menjelaskan kata tugas SP (7.3) dan memeriksa kefahaman murid melalui soal jawab individu.
+**Aktiviti 1 (20 minit) — Kesan mengabaikan negara:** Guru menggunakan peristiwa daripada sajak 'Malaysia Negaraku Tercinta' m/s 64–65 yang menyentuh perpaduan dan maruah negara. Murid menyusun dua akibat pengabaian serta alasan yang munasabah (SP 7.3).
 
-**Aktiviti 2 (20 minit) — Menyelesaikan masalah:** Murid menghasilkan peta "pilihan–sebab–akibat" dan membandingkan dua keputusan berbeza. Wakil memberi alasan di hadapan kumpulan manakala pemerhati menguji sama ada kesannya dapat dijelaskan. Guru memandu murid menggunakan sebab yang sahih, menjaga keselamatan serta mengelakkan aktiviti yang memerlukan murid mendedahkan butiran peribadi.
+**Aktiviti 2 (20 minit) — Projek warisan dan rumusan:** Murid merujuk kad tempat bersejarah m/s 66–67, merumuskan dua kesan jika tempat bersejarah diabaikan dan membetulkan peta sebab-akibat selepas maklum balas guru (SP 7.3).
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Sekurang-kurangnya dua alasan/kesan yang bersebab dengan bukti respons individu. Guru memeriksa hasil murid seorang demi seorang, mencatat kelemahan tertentu dan tidak menetapkan TP berdasarkan lakonan semata-mata.
 
@@ -31,4 +31,6 @@ Murid menunjukkan penguasaan SP **7.3** dengan menghasilkan dua alasan atau kesa
 **Pengayaan:** Tambah satu pilihan alternatif dan dua justifikasi yang melihat kesan terhadap pihak lain.  
 **Refleksi guru:** Rekod evidens individu, keperluan bimbingan dan susulan PdP.
 
-**Batasan sumber:** SP ini dipetik daripada crosswalk DSKP SK Tahun 6, dan **Buku Teks Tahun 6 Unit 7 memfokus kasih sayang terhadap alam sekitar, bukan SK 7.0 Cinta Akan Negara**; tugasan ini berpandukan DSKP dan tidak mendakwa rujukan halaman buku teks. Langkah PdP diadaptasi oleh CikguLaju. Label status dalaman tidak untuk dipaparkan pada RPH guru.
+**Bukti aktiviti Semakan 2017 (2026-11-05):** Unit 7, m/s 64–67 (halaman flipbook 74–77): Sajak Malaysia Negaraku Tercinta dan kad refleksi projek tempat bersejarah. Semakan teks edisi semakan sahaja; bukan bukti pelaksanaan di sekolah.
+
+**Batasan sumber:** Buku Teks Tahun 6 Unit 7 PDF lama 'Sayangilah Alam, Hargai Kehidupan' bukan edisi Semakan 2017; audit asal tidak mendakwa rujukan halaman buku teks terkini. Aktiviti baharu ialah olahan daripada [Buku Teks Moral Tahun 6 KSSR Semakan 2017](https://fliphtml5.com/sbinx/haph/), Unit 7, m/s 64–67 (halaman flipbook 74–77), dan DSKP SP berkaitan. Pengesahan aktiviti di kelas, PBD sebenar serta Word A4 berasingan.

@@ -1,6 +1,6 @@
 # RPH Pendidikan Moral Tahun 6 — Sesi 026 (Pengukuhan)
 
-**STATUS DALAMAN:** SUMBER_DSKP_SEPADAN; HALAMAN_AKTIVITI_BUKU_BELUM_VERIFIED
+**STATUS DALAMAN:** SUMBER_DSKP_SEPADAN; SUMBER_BUKU_KSSR_SEMAKAN2017_DIRUJUK; BELUM_FINAL_READY
 **Subjek:** Pendidikan Moral  
 **Tahun:** 6  
 **Sesi:** 026 daripada 096  
@@ -19,9 +19,9 @@ Murid menunjukkan penguasaan SP **4.4** dengan menghasilkan dua perasaan yang wa
 ## Langkah PdP
 **Set induksi (5 minit):** Guru memperkenalkan situasi **Pameran sekolah mengetengahkan keunikan budaya dan warisan negara** Murid mengenal pasti cabaran nilai Berterima kasih dan menyebut satu tindakan yang boleh diambil.
 
-**Aktiviti 1 (20 minit) — Empati, perasaan dan komunikasi:** Guru menunjukkan pandangan pihak yang membuat keputusan dan pihak yang menerima kesan dalam situasi Pameran sekolah mengetengahkan keunikan budaya dan warisan negara. Murid membina bank kata emosi berhemah. Guru menjelaskan kata tugas SP (4.4) dan memeriksa kefahaman murid melalui soal jawab individu.
+**Aktiviti 1 (20 minit) — Perspektif pelawat warisan:** Guru meneliti cerita lawatan Muzium Baba dan Nyonya m/s 34–35 serta soalan perasaan tentang sistem pemerintahan m/s 37. Murid memilih dua perspektif dan menyatakan emosi yang berkaitan dengan penghargaan budaya negara (SP 4.4).
 
-**Aktiviti 2 (20 minit) — Menyelesaikan masalah:** Murid melengkapkan dialog dua watak: "Saya berasa ... kerana ...". Mereka berlatih mendengar pandangan yang berbeza, mengubah respons kasar dan memberi sebab yang munasabah. Guru memandu murid menggunakan sebab yang sahih, menjaga keselamatan serta mengelakkan aktiviti yang memerlukan murid mendedahkan butiran peribadi.
+**Aktiviti 2 (20 minit) — Kad refleksi bersebab:** Murid menulis dua ayat 'Saya berasa ... apabila ... kerana ...' berkaitan keunikan budaya/pemerintahan. Guru menilai kesesuaian perasaan dan sebab secara individu; murid membetulkan satu ayat (SP 4.4).
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Dua ekspresi emosi dan satu sebab yang jelas serta hormat dinilai dalam respons bertulis individu. Guru memeriksa hasil murid seorang demi seorang, mencatat kelemahan tertentu dan tidak menetapkan TP berdasarkan lakonan semata-mata.
 
@@ -31,4 +31,6 @@ Murid menunjukkan penguasaan SP **4.4** dengan menghasilkan dua perasaan yang wa
 **Pengayaan:** Tambah satu pilihan alternatif dan dua justifikasi yang melihat kesan terhadap pihak lain.  
 **Refleksi guru:** Rekod evidens individu, keperluan bimbingan dan susulan PdP.
 
-**Batasan sumber:** SP ini dipetik daripada crosswalk DSKP SK Tahun 6, dan **Buku Teks Tahun 6 Unit 4 bertajuk Jasa Tokoh Negara Dikenang, tidak sepadan dengan SK 4.0 Hargai Keunikan Negara**; aktiviti ini berdasarkan DSKP dan tidak mendakwa rujukan halaman buku teks. Langkah PdP diadaptasi oleh CikguLaju. Label status dalaman tidak untuk dipaparkan pada RPH guru.
+**Bukti aktiviti Semakan 2017 (2026-11-05):** Unit 4, m/s 34–38 (halaman flipbook 44–48): Cerita lawatan budaya Baba dan Nyonya dan perasaan terhadap keunikan negara. Semakan teks edisi semakan sahaja; bukan bukti pelaksanaan di sekolah.
+
+**Batasan sumber:** Buku Teks Tahun 6 Unit 4 PDF lama 'Jasa Tokoh Negara Dikenang' bukan edisi Semakan 2017; audit asal tidak mendakwa rujukan halaman buku teks terkini. Aktiviti baharu ialah olahan daripada [Buku Teks Moral Tahun 6 KSSR Semakan 2017](https://fliphtml5.com/sbinx/haph/), Unit 4, m/s 34–38 (halaman flipbook 44–48), dan DSKP SP berkaitan. Pengesahan aktiviti di kelas, PBD sebenar serta Word A4 berasingan.

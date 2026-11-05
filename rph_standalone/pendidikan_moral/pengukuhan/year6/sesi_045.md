@@ -1,6 +1,6 @@
 # RPH Pendidikan Moral Tahun 6 — Sesi 045 (Pengukuhan)
 
-**STATUS DALAMAN:** SUMBER_DSKP_SEPADAN; HALAMAN_AKTIVITI_BUKU_BELUM_VERIFIED
+**STATUS DALAMAN:** SUMBER_DSKP_SEPADAN; SUMBER_BUKU_KSSR_SEMAKAN2017_DIRUJUK; BELUM_FINAL_READY
 **Subjek:** Pendidikan Moral  
 **Tahun:** 6  
 **Sesi:** 045 daripada 096  
@@ -19,9 +19,9 @@ Murid menunjukkan penguasaan SP **7.1; 7.2** dengan menghasilkan dua contoh tind
 ## Langkah PdP
 **Set induksi (5 minit):** Guru memperkenalkan situasi **Murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan** Murid mengenal pasti cabaran nilai Kasih sayang dan menyebut satu tindakan yang boleh diambil.
 
-**Aktiviti 1 (20 minit) — Penerokaan tindakan berasaskan nilai:** Guru membacakan kes: Murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan. Murid mengenal pasti pihak terlibat dan mencadangkan dua perbuatan bertepatan dengan nilai Kasih sayang. Guru menjelaskan kata tugas SP (7.1; 7.2) dan memeriksa kefahaman murid melalui soal jawab individu.
+**Aktiviti 1 (20 minit) — Jejak amalan patriotik:** Guru memaparkan buku Semakan 2017 m/s 62–63 dan perbualan sambutan kebangsaan. Murid menyenaraikan tiga contoh amalan cinta akan negara berdasarkan penghasilan sepanduk, penanda buku dan lawatan muzium (SP 7.1).
 
-**Aktiviti 2 (20 minit) — Menyelesaikan masalah:** Murid menyusun kad "amalan cinta negara - cara memupuk - alasan" dan membina dua langkah bantuan/tindakan praktikal bagi kes murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan. Mereka membandingkan cadangan dan memilih yang paling sesuai. Guru memandu murid menggunakan sebab yang sahih, menjaga keselamatan serta mengelakkan aktiviti yang memerlukan murid mendedahkan butiran peribadi.
+**Aktiviti 2 (20 minit) — Perancangan mini kempen:** Murid memilih dua tindakan untuk memupuk cinta negara di sekolah dan menghuraikan cara melaksanakannya menggunakan peta tindakan. Guru menyemak setiap huraian dengan rujukan m/s 62–64 dan SP 7.2.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Dua contoh tindakan, dua cara pelaksanaan dan satu alasan dinilai melalui kad individu. Guru memeriksa hasil murid seorang demi seorang, mencatat kelemahan tertentu dan tidak menetapkan TP berdasarkan lakonan semata-mata.
 
@@ -31,4 +31,6 @@ Murid menunjukkan penguasaan SP **7.1; 7.2** dengan menghasilkan dua contoh tind
 **Pengayaan:** Tambah satu pilihan alternatif dan dua justifikasi yang melihat kesan terhadap pihak lain.  
 **Refleksi guru:** Rekod evidens individu, keperluan bimbingan dan susulan PdP.
 
-**Batasan sumber:** SP ini dipetik daripada crosswalk DSKP SK Tahun 6, dan **Buku Teks Tahun 6 Unit 7 memfokus kasih sayang terhadap alam sekitar, bukan SK 7.0 Cinta Akan Negara**; tugasan ini berpandukan DSKP dan tidak mendakwa rujukan halaman buku teks. Langkah PdP diadaptasi oleh CikguLaju. Label status dalaman tidak untuk dipaparkan pada RPH guru.
+**Bukti aktiviti Semakan 2017 (2026-11-05):** Unit 7, m/s 62–64 (halaman flipbook 72–74): Perbualan laman sosial tentang sepanduk, penanda buku dan lawatan muzium. Semakan teks edisi semakan sahaja; bukan bukti pelaksanaan di sekolah.
+
+**Batasan sumber:** Buku Teks Tahun 6 Unit 7 PDF lama 'Sayangilah Alam, Hargai Kehidupan' bukan edisi Semakan 2017; audit asal tidak mendakwa rujukan halaman buku teks terkini. Aktiviti baharu ialah olahan daripada [Buku Teks Moral Tahun 6 KSSR Semakan 2017](https://fliphtml5.com/sbinx/haph/), Unit 7, m/s 62–64 (halaman flipbook 72–74), dan DSKP SP berkaitan. Pengesahan aktiviti di kelas, PBD sebenar serta Word A4 berasingan.
