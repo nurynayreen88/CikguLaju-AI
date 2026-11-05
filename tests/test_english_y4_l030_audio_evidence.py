@@ -22,6 +22,11 @@ class Lesson30AudioEvidence(unittest.TestCase):
         self.assertEqual((d["year"],d["lesson"]),(4,30))
         self.assertEqual(d["status"],"SOURCE_CONFLICT_AUDIO_CONTENT_NOT_VERIFIED")
         self.assertEqual(d["sow"]["activity_2_audio"],"CD2, Track 29")
+        confirmed=d["user_confirmation_20261105"]
+        self.assertEqual((confirmed["student_book_page"],confirmed["student_book_activity"]), (20,2))
+        self.assertEqual(confirmed["audio_reference"],"CD1 Track 29")
+        self.assertEqual(confirmed["drive_file_id"],"15tyBPsUwd5z9AknoOOUIiaTN6QT-Xrct")
+        self.assertFalse(d["telegram_code_route_check"]["actual_telegram_send_tested"])
         self.assertEqual(d["teacher_book"]["activity_2_audio"],"Class CD1 — Track 29")
         self.assertEqual((d["sow"]["standard_pair"]["main"],
                           d["sow"]["standard_pair"]["complementary"]),("4.3.2","1.2.5"))
@@ -72,7 +77,7 @@ class Lesson30AudioEvidence(unittest.TestCase):
         self.assertIn("CD1 Track 29",src)
         self.assertIn("CD2 Track 29",src)
         self.assertIn("NOT READY FOR RELEASE",src)
-        self.assertIn("Workbook p.15, Activity 3",src)
+        self.assertIn("Workbook p.15 Activity 3",src)
         self.assertNotIn("Workbook p.14, Activity 1",src)
         self.assertIn("CD1 Track 30",src)  # workbook activity 1 is not assigned
         old={"TARIKH":"04/11/2026",
