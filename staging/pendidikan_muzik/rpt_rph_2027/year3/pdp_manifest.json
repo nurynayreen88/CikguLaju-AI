@@ -816,7 +816,15 @@
         "week": 32,
         "groupA": "05/09–09/09",
         "groupB": "06/09–10/09"
-      }
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_crosscheck_scope": "SEMAKAN_TEKSTUAL_BUKU_BERPANDUKAN_HALAMAN; BUKAN_VISUAL_SCORE_AUDIO",
+      "source_book_textbook": "Pendidikan Kesenian Tahun 3 SK DBP 2018 KSSR Semakan 2017",
+      "source_book_crosscheck_source_url": "https://anyflip.com/pkots/gcvz/basic",
+      "source_book_sp_printed": "3.2.2, 3.3.7",
+      "source_book_audio_numbers_printed": "75",
+      "source_book_audio_file_verified": false,
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
     },
     {
       "pdp_id": "MZ-Y3-33",
@@ -834,7 +842,15 @@
         "week": 33,
         "groupA": "12/09–16/09",
         "groupB": "13/09–17/09"
-      }
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_crosscheck_scope": "SEMAKAN_TEKSTUAL_BUKU_BERPANDUKAN_HALAMAN; BUKAN_VISUAL_SCORE_AUDIO",
+      "source_book_textbook": "Pendidikan Kesenian Tahun 3 SK DBP 2018 KSSR Semakan 2017",
+      "source_book_crosscheck_source_url": "https://anyflip.com/pkots/gcvz/basic",
+      "source_book_sp_printed": "4.2.1(i)–(ii)",
+      "source_book_audio_numbers_printed": "Tiada nombor audio khusus",
+      "source_book_audio_file_verified": false,
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
     },
     {
       "pdp_id": "MZ-Y3-34",
@@ -898,6 +914,6 @@
   ],
   "dskp_projects_per_year": 2,
   "deprecated_project3_reclassified_count": 2,
-  "partial_textbook_crosscheck_count": 26,
+  "partial_textbook_crosscheck_count": 28,
   "source_textbook_url": "https://anyflip.com/pkots/czbw/basic"
 }

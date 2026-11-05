@@ -108,3 +108,9 @@ Fail RPT (.md/.csv), RPH setiap PdP (.md), manifest JSON di `staging/pendidikan_
 - PdP 14–17 dan 18–23 dipisahkan kepada aktiviti khusus buku; PdP 27 disahkan **Ajuk Nyanyianku** (Audio 65) dan PdP 28 **Boneka** (Audio 66–68), bukan Audio 69–70 (cerita). PdP 28 menggunakan buku halaman 81; asal 80–81 disimpan.
 - **Kiraan semasa: Tahun 3 26/35 semakan teks; keseluruhan 104/175; baki 71 RPH menunggu semakan setara**. Semakan skor, fail audio, kod DSKP Muzik, Word/PDF masih belum FINAL READY. 
 - Rujukan audit: `year3/BUKU_TEKS_15_RPH_TEXT_CROSSCHECK_20261106.md`. Jangan merge/deploy.
+
+
+## Akhir sumber buku Tahun 3 — PdP 32–33 (6 Nov 2026)
+- PdP 32 menggunakan *Permainan Buah Lazat* halaman 94–95: ciptaan corak **lapan detik** dengan minimum tiga ikon buah; Audio 75 tercetak.
+- PdP 33 menggunakan *Muzik Rock* halaman 96: peranan penyanyi, gitar, bes, dram dan rock balada; tiada nombor trek dinyatakan.
+- Tahun 3 kini **28/35** semakan teks buku; tujuh PdP projek/pengukuhan memerlukan audit kurikulum/pentaksiran berasingan. Keseluruhan **106/175** semakan terhad, **69** belum diperiksa setara. TIADA status FINAL READY.
