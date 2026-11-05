@@ -1,0 +1,22 @@
+name: Telegram admin Web announcement QA
+on:
+  push:
+    branches: [feature/telegram-admin-web-launch-broadcast-20261106]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'flask==3.1.3' 'requests==2.32.3'
+      - run: python -m py_compile web/admin_web_launch_broadcast.py tools/run_telegram_with_curriculum_api.py
+      - run: python -m unittest discover -s tests -p test_admin_web_launch_broadcast.py -v
+      - run: python -m unittest discover -s tests -p test_private_referral_admin.py -v
+      - run: python -m unittest discover -s tests -p test_telegram_web_payment_entry.py -v
+      - run: python -m unittest discover -s tests -p test_manual_pengguna_telegram.py -v
