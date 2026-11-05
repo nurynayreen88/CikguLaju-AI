@@ -1,0 +1,23 @@
+name: English Y5 L29 L30 original source and fail-closed QA
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'rph_standalone/english/year5/lesson_029.md'
+      - 'rph_standalone/english/year5/lesson_030.md'
+      - 'audits/english_y5_l029_l030_original_sow_tb_sb_wb_audio_sources_20261105.json'
+      - 'tests/test_english_y5_l029_l030_original_source_evidence_20261105.py'
+      - '.github/workflows/english-y5-l029-l030-source-evidence-20261105.yml'
+permissions: {contents: read}
+jobs:
+  original-source-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Verify original source identities, activity pairs and release holds
+        run: python -m unittest discover -s tests -p 'test_english_y5_l029_l030_original_source_evidence_20261105.py' -v
+      - name: Existing Year5 standalone release gate must remain fail-closed
+        run: python -m unittest discover -s tests -p 'test_english_y5_rph_runtime.py' -v
