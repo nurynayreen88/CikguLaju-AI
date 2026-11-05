@@ -52,7 +52,7 @@ class AllYear4AudioAudit(unittest.TestCase):
                      int(old["audio_reference"].split("Track")[0].strip().replace("CD","")),
                      int(old["audio_reference"].split("Track")[1].strip())),n)
                 self.assertIn(row["classification"],(
-                    "REVIEW_OR_HOLD","SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"))
+                    "REVIEW_OR_HOLD","WRONG_TEXTBOOK_SOURCE_HOLD","SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"))
         self.assertEqual(AUDIT["status"],"AUDIT_ONLY_NOT_RELEASE_APPROVAL")
 
     def test_sow_audio_gap_and_known_tb_mismatches_are_visible(self):
@@ -85,6 +85,13 @@ class AllYear4AudioAudit(unittest.TestCase):
         self.assertEqual(sum(r["drive_inventory"]["format"]=="MP3" for r in all_rows),45)
         self.assertEqual(AUDIT["coverage"]["matched_drive_refs"],69)
         self.assertEqual(AUDIT["coverage"]["legacy_wma_refs"],24)
+        self.assertEqual(AUDIT["coverage"]["wrong_textbook_super_minds1_year4_audio_references"],24)
+        self.assertEqual(AUDIT["source_provenance_discovery_20261105"]["parent_title"],"Super Minds 1 Audio Unzipped")
+        for r in all_rows:
+            if r["drive_inventory"]["format"]=="WMA":
+                self.assertEqual(r["classification"],"WRONG_TEXTBOOK_SOURCE_HOLD")
+                self.assertIn("SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4",r["flags"])
+                self.assertIn(r["drive_inventory"]["folder_id"],{"1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50","1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv"})
         self.assertEqual(AUDIT["coverage"]["legacy_mp3_refs"],45)
         for row in all_rows:
             self.assertEqual(row["drive_inventory"]["disc"],"CD"+str(row["declared_disc"]))
