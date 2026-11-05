@@ -63,6 +63,10 @@ def _source_items(fields):
 
 def classify(label):
     s=norm(label)
+    # Telegram's English Y6 PBD / Assessment is a metadata field,
+    # not a separate teaching phase.
+    if s.startswith("pbd / assessment"):
+        return "assessment"
     rules=(
         (r"^(set induksi|set induction)","induction"),
         (r"^(closure|penutup|rumusan)","closure"),
@@ -138,6 +142,9 @@ def build_layout(data,subject_labels):
                 labels_for.setdefault(category,_phase_label(label,category,english))
             text=clean(label)+":\n"+value if category=="main" else value
             phases[category].append(text)
+            if category=="main" and ("pbd" in norm(label) or "pentaksiran" in norm(label)):
+                if meta["PENTAKSIRAN"]=="—":
+                    meta["PENTAKSIRAN"]=value
         elif category=="main_standard":
             cs,ls=_standard_pair(value)
             meta["MAIN CONTENT STANDARD"]=cs
