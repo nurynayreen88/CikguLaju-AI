@@ -10,7 +10,7 @@
 **SP:** 12.5 — Mengamalkan sikap bekerjasama demi keharmonian negara.  
 **Fokus:** Tindakan moral berasaskan simulasi  
 **Masa:** 60 minit (sesuaikan dengan jadual waktu guru)  
-**BBM:** Buku Teks Tahun 6, Unit 12, Kerjasama Serikan Kehidupan, halaman permulaan bercetak 109 (PDF 118); kad situasi, peta keputusan, rekod PBD.
+**BBM:** Buku teks Pendidikan Moral Tahun 6 KSSR Semakan 2017, DBP 2021, Unit 12: Kerjasama Demi Keharmonian Negara, mula m/s 112 (flipbook halaman 122); kad situasi, peta keputusan, rekod PBD.
 
 ## Objektif dan kriteria kejayaan
 Murid menunjukkan penguasaan SP **12.5** dengan menghasilkan dua perlakuan yang dapat diperhatikan dan satu refleksi berdasarkan konteks **Kerjasama Demi Keharmonian Negara**.  
@@ -31,4 +31,6 @@ Murid menunjukkan penguasaan SP **12.5** dengan menghasilkan dua perlakuan yang 
 **Pengayaan:** Tambah satu pilihan alternatif dan dua justifikasi yang melihat kesan terhadap pihak lain.  
 **Refleksi guru:** Rekod evidens individu, keperluan bimbingan dan susulan PdP.
 
-**Batasan sumber:** SP ini dipetik daripada crosswalk DSKP SK Tahun 6, dan rujukan buku teks ialah **halaman mula unit berdasarkan TOC yang disahkan**; halaman aktiviti terperinci belum disahkan. Langkah PdP diadaptasi oleh CikguLaju. Label status dalaman tidak untuk dipaparkan pada RPH guru.
+**Padanan edisi Semakan 2017 (2021):** Unit 12, `Kerjasama Demi Keharmonian Negara`, m/s mula 112 dipadankan dengan kandungan edisi DBP 2021 (https://fliphtml5.com/sbinx/haph/). Ini bukti muka surat mula bab sahaja; aktiviti SP individu belum disahkan secara visual.
+
+**Batasan sumber:** SP mengikut DSKP KSSR Semakan 2017 Tahun 6; contoh latihan pengukuhan ialah olahan CikguLaju, bukan petikan buku. Status dalaman bukan untuk paparan guru. Buku PDF lama dalam Drive bukan sumber edisi Semakan 2017.

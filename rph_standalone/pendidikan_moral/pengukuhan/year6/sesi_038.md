@@ -10,7 +10,7 @@
 **SP:** 6.1 — Memberi contoh identiti negara. | 6.2 — Menghuraikan cara menghormati identiti negara.  
 **Fokus:** Penerokaan tindakan berasaskan nilai  
 **Masa:** 60 minit (sesuaikan dengan jadual waktu guru)  
-**BBM:** Buku Teks Tahun 6, Unit 6, Hormati Negara, Rakyat Sejahtera, halaman permulaan bercetak 49 (PDF 58); kad situasi, peta keputusan, rekod PBD.
+**BBM:** Buku teks Pendidikan Moral Tahun 6 KSSR Semakan 2017, DBP 2021, Unit 6: Hormati Identiti Negara, mula m/s 52 (flipbook halaman 62); kad situasi, peta keputusan, rekod PBD.
 
 ## Objektif dan kriteria kejayaan
 Murid menunjukkan penguasaan SP **6.1; 6.2** dengan menghasilkan dua contoh tindakan yang sesuai dan dua cara pelaksanaan berdasarkan konteks **Hormati Identiti Negara**.  
@@ -31,4 +31,6 @@ Murid menunjukkan penguasaan SP **6.1; 6.2** dengan menghasilkan dua contoh tind
 **Pengayaan:** Tambah satu pilihan alternatif dan dua justifikasi yang melihat kesan terhadap pihak lain.  
 **Refleksi guru:** Rekod evidens individu, keperluan bimbingan dan susulan PdP.
 
-**Batasan sumber:** SP ini dipetik daripada crosswalk DSKP SK Tahun 6, dan rujukan buku teks ialah **halaman mula unit berdasarkan TOC yang disahkan**; halaman aktiviti terperinci belum disahkan. Langkah PdP diadaptasi oleh CikguLaju. Label status dalaman tidak untuk dipaparkan pada RPH guru.
+**Padanan edisi Semakan 2017 (2021):** Unit 6, `Hormati Identiti Negara`, m/s mula 52 dipadankan dengan kandungan edisi DBP 2021 (https://fliphtml5.com/sbinx/haph/). Ini bukti muka surat mula bab sahaja; aktiviti SP individu belum disahkan secara visual.
+
+**Batasan sumber:** SP mengikut DSKP KSSR Semakan 2017 Tahun 6; contoh latihan pengukuhan ialah olahan CikguLaju, bukan petikan buku. Status dalaman bukan untuk paparan guru. Buku PDF lama dalam Drive bukan sumber edisi Semakan 2017.

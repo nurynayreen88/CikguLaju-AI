@@ -10,7 +10,7 @@
 **SP:** 3.3 — Menjana idea kesan pengabaian tanggungjawab sebagai warganegara.  
 **Fokus:** Penaakulan kepentingan dan akibat  
 **Masa:** 60 minit (sesuaikan dengan jadual waktu guru)  
-**BBM:** Buku Teks Tahun 6, Unit 3, Kempen Kemanusiaan Tanggungjawab Bersama, halaman permulaan bercetak 19 (PDF 28); kad situasi, peta keputusan, rekod PBD.
+**BBM:** Buku teks Pendidikan Moral Tahun 6 KSSR Semakan 2017, DBP 2021, Unit 3: Tanggungjawab sebagai Warganegara, mula m/s 22 (flipbook halaman 32); kad situasi, peta keputusan, rekod PBD.
 
 ## Objektif dan kriteria kejayaan
 Murid menunjukkan penguasaan SP **3.3** dengan menghasilkan dua alasan atau kesan yang konsisten dengan kata tugas SP berdasarkan konteks **Tanggungjawab Sebagai Warganegara**.  
@@ -31,4 +31,6 @@ Murid menunjukkan penguasaan SP **3.3** dengan menghasilkan dua alasan atau kesa
 **Pengayaan:** Tambah satu pilihan alternatif dan dua justifikasi yang melihat kesan terhadap pihak lain.  
 **Refleksi guru:** Rekod evidens individu, keperluan bimbingan dan susulan PdP.
 
-**Batasan sumber:** SP ini dipetik daripada crosswalk DSKP SK Tahun 6, dan rujukan buku teks ialah **halaman mula unit berdasarkan TOC yang disahkan**; halaman aktiviti terperinci belum disahkan. Langkah PdP diadaptasi oleh CikguLaju. Label status dalaman tidak untuk dipaparkan pada RPH guru.
+**Padanan edisi Semakan 2017 (2021):** Tajuk Unit 3 `Tanggungjawab sebagai Warganegara` dan m/s mula 22 dipadankan dengan kandungan edisi DBP 2021 (https://fliphtml5.com/sbinx/haph/); bukan PDF lama yang terdapat dalam Drive. Padanan ini hanyalah pengesahan tajuk/muka surat mula bab, bukan semakan aktiviti individu atau keputusan PBD.
+
+**Batasan sumber:** SP dirujuk daripada DSKP Tahun 6 KSSR Semakan 2017. Halaman aktiviti terperinci edisi buku baharu dan kesesuaian aktiviti pengukuhan ini masih belum disahkan. Langkah PdP ialah olahan CikguLaju. Status dalaman tidak boleh dipaparkan pada RPH guru.
