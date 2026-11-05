@@ -415,6 +415,65 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
             self.assertEqual(matched, counts[year])
         self.assertEqual(len({x["criterion"] for x in overlay.values()}), 81)
 
+    def test_music_staging_source_digest_matches_physical_sources(self):
+        """Source hash is integrity-only; it must never grant release access."""
+        import hashlib
+        import re
+        import tempfile
+        from pathlib import Path
+        import shutil
+        spec = _music_importlib_util.spec_from_file_location(
+            "music_staging_source_identity", SOURCE / "music_source_identity_staging.py")
+        checker = _music_importlib_util.module_from_spec(spec)
+        spec.loader.exec_module(checker)
+        digests = {}
+        for year in range(2, 7):
+            for pdp in range(1, 36):
+                paths = checker.source_paths(year, pdp)
+                self.assertEqual(len(paths), 5)
+                self.assertTrue(checker.manifest_matches_source(year, pdp))
+                expected = hashlib.sha256()
+                for rel in paths:
+                    data = (ROOT / rel).read_bytes()
+                    expected.update(rel.encode("utf-8"))
+                    expected.update(bytes([0]))
+                    expected.update(data)
+                    expected.update(bytes([0]))
+                result = checker.source_fingerprint(year, pdp)
+                self.assertRegex(result, r"^[a-f0-9]{64}$")
+                self.assertEqual(result, expected.hexdigest())
+                self.assertEqual(result, checker.source_fingerprint(year, pdp))
+                digests[f"MZ-Y{year}-{pdp:02d}"] = result
+        self.assertEqual(len(digests), 175)
+        self.assertEqual(len(set(digests.values())), 175)
+        for args in [(1, 1), (7, 1), (2, 0), (2, 36), ("2", 1), (2, "1")]:
+            self.assertIsNone(checker.source_paths(*args))
+            self.assertIsNone(checker.source_fingerprint(*args))
+        self.assertIsNone(checker.source_fingerprint(2, 1, component="PJ"))
+
+        # Work on a temporary copy, never source files.
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            for rel in checker.source_paths(2, 1):
+                target = root / rel
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(ROOT / rel, target)
+            before = checker.source_fingerprint(2, 1, root=root)
+            self.assertIsNotNone(before)
+            source = root / checker.source_paths(2, 1)[0]
+            source.write_bytes(source.read_bytes() + b"\nSTAGING_TEST_MUTATION")
+            self.assertNotEqual(before, checker.source_fingerprint(2, 1, root=root))
+            source.unlink()
+            self.assertIsNone(checker.source_fingerprint(2, 1, root=root))
+            source.symlink_to(ROOT / checker.source_paths(2, 1)[0])
+            self.assertIsNone(checker.source_fingerprint(2, 1, root=root))
+            source.unlink()
+            shutil.copy2(ROOT / checker.source_paths(2, 1)[0], source)
+            self.assertEqual(before, checker.source_fingerprint(2, 1, root=root))
+            overlay = root / checker.source_paths(2, 1)[3]
+            overlay.write_bytes(overlay.read_bytes() + b"\nSTAGING_TEST_MUTATION")
+            self.assertNotEqual(before, checker.source_fingerprint(2, 1, root=root))
+
     def test_fail_closed_for_invalid_year_or_pdp(self):
         for year, pdp in ((1, 1), (7, 1), (2, 0), (3, 36), ("2", 1)):
             with self.subTest(year=year, pdp=pdp):

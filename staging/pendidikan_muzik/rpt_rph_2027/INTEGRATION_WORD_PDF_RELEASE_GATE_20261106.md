@@ -23,3 +23,7 @@
 **Laluan sumber:** `web/native_rph_telegram_api.py`; `web/rph_shared_source_identity.py`; `tests/test_pendidikan_muzik_rpt_rph_2027_staging.py`; `year4/AUDIT_SK_SP_DSKP_BUKU_20261106.md`; `KALENDAR_2027_WEEK_SLOT_AUDIT_20261106.md`.
 
 **Keputusan teknikal:** **BLOCKED — NOT FINAL READY**. Dokumen ini tidak membuat perubahan kepada `web/`, `app.py`, sumber runtime atau produksi.
+
+
+## Staging source-digest prototype (6 Nov 2026)
+Kawalan asal `web/rph_shared_source_identity.py` masih belum mengenali MUZIK. Modul `music_source_identity_staging.py` mengira fingerprint SHA-256 lima fail sumber untuk 175 PdP serta fail closed pada symlink/hilang/mutasi; tidak didaftarkan sebagai sumber runtime. Rujuk `MUSIC_SOURCE_IDENTITY_STAGE_AUDIT_20261106.md`. Fingerprint **bukan** kelulusan kurikulum atau penerbitan.
