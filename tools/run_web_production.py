@@ -9,6 +9,8 @@ from tools.run_web_v1_preview import app
 from web_v1_telegram_auth_routes import _config
 from web.teacher_profile_routes import bp as teacher_profile_bp
 app.register_blueprint(teacher_profile_bp)
+from web.web_payment_routes import bp as web_payment_bp
+app.register_blueprint(web_payment_bp)
 
 
 def _web_config_status():
