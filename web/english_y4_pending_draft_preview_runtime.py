@@ -183,7 +183,7 @@ def adapt_rows(state, rows, *, root=Y4_ROOT, index_path=OFFICIAL_SOW_INDEX):
         result["PENUTUP"] = "5 minutes\n" + project["closure"]
         result["PEMULIHAN / PENGAYAAN"] = "Support: picture cues and sentence frames. Extension: independently justify additional story/advice choices."
     else:
-        result["TAJUK"] = "DRAF CIKGULAJU (SEMAKAN GURU) — " + str(sow.get("topic") or "")
+        result["TAJUK"] = "CADANGAN CIKGULAJU (DRAF) — " + str(sow.get("topic") or "")
         if number in REVIEW_OBJECTIVES:
             objective, criteria = REVIEW_OBJECTIVES[number]
             result["OBJEKTIF PEMBELAJARAN"] = "Suggested: " + objective
