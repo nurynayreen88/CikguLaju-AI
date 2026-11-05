@@ -12,6 +12,8 @@ import os
 from pathlib import Path
 import re
 import tempfile
+import shutil
+import subprocess
 from unittest.mock import patch
 from xml.sax.saxutils import escape
 
@@ -123,7 +125,7 @@ def _native_base():
     return namespace
 
 
-def audit_one(year, pdp, fmt, preview, parse_input, writer):
+def audit_one(year, pdp, fmt, preview, parse_input, writer, word_output_dir=None):
     meta = {item["label"]: item["value"] for item in preview["layout"]["header"]}
     payload = {
         "subject": "MUZIK", "component": None,
@@ -155,6 +157,8 @@ def audit_one(year, pdp, fmt, preview, parse_input, writer):
             a4 = abs(section.page_width.cm - 21.0) < 0.15 and abs(section.page_height.cm - 29.7) < 0.15
             if not a4:
                 raise RuntimeError("Word section is not A4")
+            if word_output_dir is not None:
+                shutil.copy2(path, word_output_dir / f"MZ-Y{year}-{pdp:02d}.docx")
             return {"type": fmt, "bytes": path.stat().st_size, "tables": 3, "a4_section": a4,
                     "page_count": None}
         reader = PdfReader(str(path))
@@ -182,6 +186,13 @@ def main():
     preview_mod = _preview_module()
     parser = _web_parser()
     native = _native_base()
+    converter = shutil.which("libreoffice") or shutil.which("soffice")
+    scratch = tempfile.TemporaryDirectory(prefix="music_word_pages_staging_")
+    word_source = Path(scratch.name) / "docx"
+    word_pdf = Path(scratch.name) / "pdf"
+    if converter:
+        word_source.mkdir()
+        word_pdf.mkdir()
     results = []
     for year, pdp in cases:
         preview = preview_mod.build_staging_preview(SOURCE, year, pdp)
@@ -189,20 +200,51 @@ def main():
                   "approved_for_live": False, "render_kind": "BASE_FUNCTION_AST_ONLY"}
         for fmt in ("word", "pdf"):
             try:
-                record[fmt] = audit_one(year, pdp, fmt, preview, parser, native)
+                record[fmt] = audit_one(year, pdp, fmt, preview, parser, native, word_source if converter else None)
             except Exception as error:
                 record[fmt] = {"error": type(error).__name__ + ": " + str(error)}
         results.append(record)
         print(json.dumps(record, ensure_ascii=False), flush=True)
     failed = [r for r in results if "error" in r["word"] or "error" in r["pdf"]]
+    word_page_report = {"measured": False, "converter_available": bool(converter),
+                        "single_page_count": None, "multi_page": [],
+                        "reason": "LibreOffice/soffice not installed"}
+    if converter and not failed:
+        sources = sorted(word_source.glob("*.docx"))
+        try:
+            cmd = [converter, "-env:UserInstallation=file://" + str(Path(scratch.name) / "lo_profile"),
+                   "--headless", "--convert-to", "pdf", "--outdir", str(word_pdf)]
+            proc = subprocess.run(cmd + [str(x) for x in sources],
+                                  capture_output=True, text=True, timeout=240, check=False)
+            if proc.returncode != 0:
+                raise RuntimeError("LibreOffice conversion failed: " + (proc.stderr or proc.stdout)[-500:])
+            overs = []
+            converted = 0
+            for source in sources:
+                result = word_pdf / (source.stem + ".pdf")
+                if not result.is_file():
+                    raise RuntimeError("Word conversion missing: " + source.name)
+                count = len(PdfReader(str(result)).pages)
+                converted += 1
+                if count != 1:
+                    overs.append({"source": source.stem, "pages": count})
+            word_page_report = {"measured": True, "converter_available": True,
+                                "converted": converted, "single_page_count": converted-len(overs),
+                                "multi_page": overs, "reason": None}
+        except (OSError, RuntimeError, subprocess.TimeoutExpired) as error:
+            word_page_report = {"measured": False, "converter_available": True,
+                                "single_page_count": None, "multi_page": [],
+                                "reason": type(error).__name__ + ": " + str(error)}
+    scratch.cleanup()
     report = {
         "scope": "STAGING_BASE_NATIVE_RENDER_SMOKE_NOT_LIVE",
         "fully_covered": args.all,
         "cases": len(results), "docx_ok": sum("error" not in r["word"] for r in results),
         "pdf_ok": sum("error" not in r["pdf"] for r in results),
         "single_page_pdf": sum(r["pdf"].get("single_page") is True for r in results),
+        "word_page_audit": word_page_report,
         "errors": failed,
-        "disclaimer": "AST-extracted base RPH functions are not the full Telegram production wrapper chain; no Word page count or cross-platform release verified.",
+        "disclaimer": "AST-extracted base RPH functions are not the full Telegram production wrapper chain; LibreOffice Word-page measurements when present are staging-only and cross-platform release remains unverified.",
     }
     path = Path(os.getenv("MUSIC_SMOKE_REPORT", "/tmp/music_native_base_render_smoke.json"))
     path.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
