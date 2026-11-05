@@ -25,3 +25,6 @@
 **RPT rujukan 2026:** https://anyflip.com/zxzlm/ucjc/basic
 **Status rujukan buku teks:** Buku teks Unit 1 halaman bercetak 1–28; halaman khusus PdP belum disahkan; jangan cipta nombor muka surat.
 **Status penerbitan:** DRAF_STAGING / BELUM READY. Bukan bahan Telegram/Web LIVE. Semakan halaman teks, pemaparan Arab RTL, Word/PDF A4 serta pengesahan manual masih diperlukan.
+
+**Audit buku teks (6 Nov 2026):** Unit 1, halaman bercetak **3**. Buku Teks Bahasa Arab Tahun 5 DBP/KPM cetakan 2020, ISBN 978-983-49-2838-4; sumber asal: https://drive.google.com/file/d/1OI3RZ8-NXE2bVSOVqSz9bEWCh2tQEN5U/view.
+**Tahap sokongan SP/aktiviti:** CODE_PRINTED_BUT_TEXT_EXERCISE_DIFFERS_FROM_DRAFT. Buku halaman 3 ada kod 2.1.1, tetapi latihan yang ditonjolkan ialah tulisan/bacaan ب/ن, sedangkan draf memfokuskan ث/س/ص; perlu adjudikasi. Ini bukti sumber, **bukan** pengesahan urutan RPT 2027 atau kelulusan individu. **DRAF / BELUM READY**.
