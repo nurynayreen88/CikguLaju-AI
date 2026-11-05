@@ -7,8 +7,8 @@ from zipfile import ZipFile
 
 from flask import Flask, jsonify
 
-from web.unified_rph_web import (, _docx
-    SUBJECT_LABELS, english_index, source_records, unit_options,
+from web.unified_rph_web import (
+    _docx, SUBJECT_LABELS, english_index, source_records, unit_options,
     pdp_options, verified_preview, create_blueprint,
 )
 
