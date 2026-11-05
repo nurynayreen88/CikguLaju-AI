@@ -32,6 +32,8 @@
 
 **SOW source:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
 
-**QA status:** NOT READY FOR AUDIO RELEASE — Teacher's Book p.193 confirms CD3 Tracks 35/36 for the CLIL activity, but legacy Telegram maps wrongly label both as CD1. Source matching does not prove Telegram playback or individual teacher approval.
+**QA status:** READY — provisional, pending teacher's final review. Lesson content is source-based, but this does **not** approve media.
+
+**Audio status:** HOLD FOR AUDIO RELEASE — Teacher's Book p.193 confirms CD3 Tracks 35/36 for the CLIL activity, but legacy Telegram maps wrongly label both as CD1. Do not send old CD1 audio. Source matching does not prove Telegram playback or individual teacher approval.
 
 **Audio file evidence (5 Nov 2026):** Get Smart Plus 4 Class CD 3 folder in Drive holds `35 Track 35.mp3` (file ID `1RNYuEKqaS5YZ9e4TDpnCH73I0scaPVIC`) and `36 Track 36.mp3` (file ID `1VVehPZAvRph_YUTfbBglELLBkFOx9e3J`). Filename and CD3 folder identity verified; spoken content, actual Telegram routing and delivery remain unverified.
