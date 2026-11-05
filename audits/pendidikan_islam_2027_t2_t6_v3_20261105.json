@@ -1,0 +1,32 @@
+{
+  "subject": "Pendidikan Islam",
+  "release": "STAGING_DRAF_NOT_READY",
+  "date": "2026-11-05",
+  "branch": "staging/pendidikan-islam-2027-t2-t6-qa-20261105",
+  "zip_path": "/CikguLaju/Pendidikan_Islam_2027_STAGING/CIKGULAJU_PI_2027_T2_T6_AUDIT_V3_PEMBETULAN_TERKAWAL_STAGING_20261105.zip",
+  "zip_sha256": "6e6ea026034885c80e1c45e4045bc3e26c439224484bb100a6fa41b213f27bae",
+  "rph_total": 696,
+  "rph_changed": 104,
+  "rph_unchanged": 592,
+  "validated_pdf_renders": 104,
+  "single_page_validated": 104,
+  "word_rpts": 5,
+  "updated_pdf_rpts": 5,
+  "fixes": {
+    "tajwid_closings": 72,
+    "faham_closings": 27
+  },
+  "source_scope_exceptions": [
+    "T2-L035",
+    "T3-L145",
+    "T5-L141",
+    "T6-L014",
+    "T6-L018",
+    "T6-L026",
+    "T6-L137",
+    "T6-L141"
+  ],
+  "ready": false,
+  "main_changed": false,
+  "production_deployed": false
+}
