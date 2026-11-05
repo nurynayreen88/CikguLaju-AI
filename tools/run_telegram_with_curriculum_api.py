@@ -372,3 +372,16 @@ except Exception as _psv_provisional_exc:
     PSV_2027_PROVISIONAL_RPH_ACTIVE = False
     print("PSV provisional RPH route unavailable:",
           type(_psv_provisional_exc).__name__, flush=True)
+
+# Authenticated Web -> native Telegram RPH document generation.
+# Disabled unless CIKGULAJU_WEB_NATIVE_RPH_ENABLED=1; fail closed.
+# This does not alter Telegram webhook/callbacks, DB, trials, or payments.
+try:
+    from web.native_rph_telegram_api import create_native_rph_blueprint
+    telegram_runtime.app.register_blueprint(
+        create_native_rph_blueprint(telegram_runtime))
+    TELEGRAM_NATIVE_WEB_RPH_REGISTERED = True
+except Exception as _native_rph_error:
+    TELEGRAM_NATIVE_WEB_RPH_REGISTERED = False
+    print("Native Web RPH route unavailable:",
+          type(_native_rph_error).__name__, flush=True)
