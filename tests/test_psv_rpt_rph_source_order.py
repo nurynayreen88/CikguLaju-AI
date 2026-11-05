@@ -69,16 +69,16 @@ class PSVSourceOrderTests(unittest.TestCase):
 
 
     def test_year3_project_sk_matches_pendidikan_kesenian_dskp(self):
-        """Y3 combined Pendidikan Kesenian DSKP: SK 3.3 governs SP 3.3.1–3.3.5."""
+        """Y3 combined Pendidikan Kesenian DSKP: source-printed SK 5.1 governs SP 3.3.1–3.3.5."""
         rows = read_csv(PSV / "RPT_PSV_Tahun_3_2027_DRAF.csv")
         for n in (20, 21, 41, 42):
             row = rows[n - 1]
             with self.subTest(pdp=n):
                 self.assertEqual(row["PdP"], f"{n:03d}")
-                self.assertEqual(row["SK"], "3.3")
+                self.assertEqual(row["SK"], "5.1")
                 self.assertTrue(all(x.strip().startswith("3.3.") for x in row["SP"].split(";")))
                 content = (ROOT / row["Fail RPH"]).read_text(encoding="utf-8")
-                self.assertIn("**SK:** 3.3 — Projek Persembahan Kesenian", content)
+                self.assertIn("**SK:** 5.1 — Persembahan hasil karya", content)
                 self.assertIn("**Status:** DRAF", content)
 
     def test_year6_pdp_post_exhibition_standard(self):
