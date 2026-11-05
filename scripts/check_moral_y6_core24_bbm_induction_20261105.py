@@ -26,9 +26,9 @@ def main() -> None:
         source = (RPH / f"lesson_{n:03d}.md").read_text(encoding="utf-8")
         assert "STATUS: DRAF SEMAK — BELUM READY" in source, n
         assert "Rekod audit sejarah" in source and "Batasan bukti sejarah" in source, n
-        bbm = re.search(r"^\\*\\*BBM:\\*\\* (.+)$", source, re.M)
-        induction = re.search(r"^\\*\\*Set induksi \\(5 minit\\):\\*\\* (.+)$", source, re.M)
-        activity1 = re.search(r"^\\*\\*Aktiviti 1 \\(20 minit\\) — ([^:]+):\\*\\* (.+)$", source, re.M)
+        bbm = re.search(r"^\*\*BBM:\*\* (.+)$", source, re.M)
+        induction = re.search(r"^\*\*Set induksi \(5 minit\):\*\* (.+)$", source, re.M)
+        activity1 = re.search(r"^\*\*Aktiviti 1 \(20 minit\) — ([^:]+):\*\* (.+)$", source, re.M)
         assert bbm and induction and activity1, (n, "missing teaching step")
         heading = activity1.group(1)
         assert f"Unit {unit}, m/s {start}–{end} (bahagian **{heading}**)" in bbm.group(1), n
