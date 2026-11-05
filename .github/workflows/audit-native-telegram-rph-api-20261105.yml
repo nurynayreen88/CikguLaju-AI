@@ -1,0 +1,17 @@
+name: Audit Telegram native RPH API compatibility
+on:
+  push:
+    branches: [feature/telegram-internal-rph-api-20261105]
+    paths:
+      - tools/audit_native_telegram_rph_api_20261105.py
+      - .github/workflows/audit-native-telegram-rph-api-20261105.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - run: python tools/audit_native_telegram_rph_api_20261105.py
