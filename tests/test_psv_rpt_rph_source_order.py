@@ -332,6 +332,26 @@ class PSVSourceOrderTests(unittest.TestCase):
             self.assertNotIn("batang kertas", raw)
             self.assertIn("guru", raw.lower())
 
+    def test_year5_original_pdf_swan_and_frame_workflow(self):
+        """Ensure textbook-specific art and safe titisan stay in RPH after edits."""
+        checks = {
+            1: ("angsa", "capan", "putik kapas"),
+            2: ("angsa", "lakaran", "capan"),
+            3: ("angsa", "latar", "garisan"),
+            4: ("angsa", "bingkai", "bulu"),
+            30: ("titisan", "pipet", "tanpa lilin panas"),
+            31: ("ketinggian", "pipet", "tanpa lilin panas"),
+            32: ("panel", "pipet", "kering"),
+            33: ("bingkai", "lipatan", "penyangga"),
+        }
+        rows = read_csv(PSV / "RPT_PSV_Tahun_5_2027_DRAF.csv")
+        for n, phrases in checks.items():
+            with self.subTest(pdp=n):
+                text = (ROOT / f"rph_standalone/psv/year5/lesson_{n:03d}.md").read_text(encoding="utf-8").lower()
+                self.assertTrue(all(term in text for term in phrases))
+                self.assertEqual(rows[n - 1]["Status"], "DRAF_SEMAK")
+                self.assertIn("1UA9arc9LrigHx-GccSJFpkTtqfskLFpg", text)
+
     def test_year5_bunga_kemboja_tekat_is_genuine_couching(self):
         rows = read_csv(PSV / "RPT_PSV_Tahun_5_2027_DRAF.csv")
         keywords = {

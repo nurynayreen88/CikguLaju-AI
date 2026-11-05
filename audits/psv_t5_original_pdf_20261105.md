@@ -21,3 +21,8 @@ PDF awam [PENDIDIKAN SENI VISUAL T5 SK.pdf](https://drive.google.com/file/d/1UA9
 - Audit 210 rekod hanya mengemas kini **10 entri T5 yang benar-benar diperiksa visual**; baki Tahun 5 kekal sebagai bukti RPT/rujukan sebelumnya.
 - Tambah ujian regresi untuk bahan, proses, keselamatan, pautan dan sempadan DRAF; CI staging perlu lulus sebelum kerja diteruskan.
 - **Jangan merge PR #267, aktifkan PSV, cipta approval JSON, atau ubah Telegram produksi.** Pelaksanaan native Telegram staging dan audit kandungan semua 210 halaman masih tertangguh.
+
+## Susulan semakan PDF bergambar — Unit 1 dan Unit 8
+- Unit 1 **Si Putih Menawan** (ms 6–13): karya angsa putih melalui gabungan lukisan dan capan, media sapuan/capan span serta putik kapas, garisan sayap dan latar. PdP 001–004 diperinci dengan ujian capan, lakaran, karya dan bingkai/apresiasi.
+- Unit 8 **Bingkai Gambarku** (ms 66–73): buku mempamerkan titisan **lilin** dan penghasilan bingkai selepas penghasilan panel. PdP 030–033 menggunakan **adaptasi titisan cat tidak toksik dengan pipet** supaya murid tidak mengendalikan haba/lilin panas. PdP 032 kini fokus panel titisan; PdP 033 baru membina bingkai tiga lipatan dan penyangga.
+- RPT bagi lapan PdP ini diselaraskan bagi objektif dan evidens; kelulusan penerbitan masih ditangguh.
