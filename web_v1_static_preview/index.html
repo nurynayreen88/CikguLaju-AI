@@ -7,23 +7,16 @@
 <style>
 :root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#173d37;background:#f5f8f7}*{box-sizing:border-box}body{margin:0}.wrap{max-width:920px;margin:auto;padding:24px}.header{display:flex;align-items:center;gap:12px;font-size:1.1rem;font-weight:800}.mark{background:#087568;color:#fff;padding:13px;border-radius:13px}.panel{background:white;border:1px solid #e0eae6;border-radius:24px;padding:clamp(26px,6vw,58px);margin:56px auto 18px;max-width:640px;box-shadow:0 16px 48px #174b3910}h1{font-size:clamp(1.8rem,5vw,2.6rem);letter-spacing:-.04em;line-height:1.15;margin:0 0 18px}p{line-height:1.65;color:#536c64} .pill{display:inline-block;background:#e6f5ee;color:#087568;border-radius:30px;padding:7px 12px;font-size:.78rem;font-weight:700;margin-bottom:20px}.login{background:#087568;color:#fff;border:0;border-radius:12px;padding:15px 20px;font:inherit;font-weight:700;width:100%;margin-top:14px;cursor:not-allowed;opacity:.55}.notice{font-size:.88rem;color:#65796f;margin-top:14px}.foot{text-align:center;color:#75867f;font-size:.8rem;margin-top:26px}@media(max-width:550px){.wrap{padding:16px}.panel{margin-top:35px;border-radius:18px;padding:27px}}
 label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width:100%;padding:13px;border:1px solid #ceded8;border-radius:12px;background:white;font:inherit}select:disabled{background:#f1f5f3} [hidden]{display:none!important}#show-materials,#rpt-download{margin-top:18px;background:#087568;color:white;border:0;border-radius:12px;padding:13px 20px;font:inherit;font-weight:700;cursor:pointer}#materials-list{padding-left:22px;line-height:2}#materials-list a{color:#087568;font-weight:700}#download-all:disabled,#rpt-download:disabled{opacity:.5;cursor:not-allowed}#logout{border:1px solid #ccdcd6;background:white;border-radius:12px;padding:12px 18px;margin-top:12px;cursor:pointer}.panel[hidden]{display:none}</style>
+
 <style>
-#y6rph-panel{padding-top:22px;margin-top:24px;border-top:1px solid #dae8e3}
-#y6rph-panel button{margin:8px 4px 8px 0;border:0;border-radius:9px;padding:10px 13px;color:white;background:#087568;font-weight:700;cursor:pointer}
-#y6rph-panel button:disabled{opacity:.5;cursor:not-allowed}
-#y6rph-preview{border:1px solid #d5e2dd;border-radius:12px;padding:18px;margin:16px 0;font-size:.9rem}
-#y6rph-preview h4{font-size:.92rem;margin:12px 0 3px;color:#173d37}
-#y6rph-preview p{white-space:pre-wrap;color:#233c33;line-height:1.4;margin:0 0 7px}
-@media print{body{background:white!important}header,footer,main.panel,#workspace>*:not(#y6rph-panel),#y6rph-panel>*:not(#y6rph-preview){display:none!important}#workspace{display:block!important;box-shadow:none!important;border:0!important;padding:0!important;margin:0!important;max-width:none!important}#y6rph-panel{display:block!important;border:0!important;padding:0!important;margin:0!important}#y6rph-preview{display:block!important;border:0!important;padding:0!important;margin:0!important}#y6rph-preview h4{break-after:avoid}#y6rph-preview p{break-inside:avoid}}
-</style>
-<style>
-#web-quick-access{margin:16px 0 20px}
-.quick-access-button{display:flex;width:100%;justify-content:space-between;align-items:center;gap:12px;text-align:left;background:#087568;color:white;border:0;border-radius:13px;padding:16px 18px;font:inherit;font-weight:700;cursor:pointer}
-.quick-access-button:hover{background:#066358}
-.quick-access-button:focus-visible{outline:3px solid #edae45;outline-offset:3px}
-#y6rph-panel{margin:10px 0 24px;padding:22px;border:1px solid #dae8e3;border-radius:14px;background:#f8fcfa}
-#y6rph-panel[hidden]{display:none!important}
-@media print{#web-quick-access{display:none!important}}
+#rph-preview-button,#rph-word,#rph-print{border:0;border-radius:12px;padding:13px 20px;background:#087568;color:white;font:inherit;font-weight:700;cursor:pointer;margin:12px 8px 8px 0}
+#rph-preview-button:disabled,#rph-word:disabled,#rph-print:disabled{opacity:.5;cursor:not-allowed}
+#rph-preview-panel{margin-top:18px;padding:20px;border:1px solid #dae8e3;background:#f8fcfa;border-radius:14px}
+#rph-preview-panel[hidden]{display:none!important}
+#rph-preview-content{padding:14px 18px;border:1px solid #d5e2dd;border-radius:12px;background:white}
+#rph-preview-content h4{font-size:.96rem;margin:16px 0 5px}
+#rph-preview-content p{white-space:pre-wrap;color:#233c33;line-height:1.55;margin:0 0 10px}
+@media print{body{background:white!important}header,footer,main.panel,#workspace>*:not(#rph-preview-panel),#rph-preview-panel>button{display:none!important}#workspace{display:block!important;border:0!important;box-shadow:none!important;padding:0!important;margin:0!important;max-width:none!important}#rph-preview-panel{display:block!important;border:0!important;background:white!important;margin:0!important;padding:0!important}#rph-preview-content{border:0!important;padding:0!important}#rph-preview-content h4{break-after:avoid}#rph-preview-content p{break-inside:avoid}}
 </style>
 </head>
 <body>
@@ -36,7 +29,7 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 <div id="telegram-widget" aria-label="Log masuk Telegram"></div>
 <p class="notice" role="status" id="login-status">Menyemak sambungan log masuk…</p>
 </main>
-<section id="workspace" class="panel" hidden><h2>Pilih Bahan PdP</h2><p id="account-access" class="notice" role="status"></p><nav id="web-quick-access" aria-label="Akses pantas RPH"><button id="y6rph-toggle" class="quick-access-button" type="button" aria-controls="y6rph-panel" aria-expanded="false">📘 RPH English Tahun 6 — Lesson 1–160 <span aria-hidden="true">▾</span></button></nav><section id="y6rph-panel" aria-labelledby="y6rph-title" hidden><h3 id="y6rph-title">📘 RPH English Tahun 6 — Lesson 1–160</h3><p>RPH 2027 berdasarkan sumber yang sama seperti Telegram. Untuk Rakan Pembangun atau langganan aktif di Web staging; janaan percuma masih melalui Telegram.</p><label for="y6rph-lesson">Lesson</label><select id="y6rph-lesson"><option value="">Pilih Lesson</option></select><button type="button" id="y6rph-show">Papar RPH</button><button type="button" id="y6rph-word" disabled>Muat turun Word</button><button type="button" id="y6rph-print" disabled>Cetak / Simpan PDF</button><p class="notice" id="y6rph-status" role="status"></p><article id="y6rph-preview" hidden><h3>Rancangan Pengajaran Harian — English Tahun 6</h3><p id="y6rph-notice"></p><div id="y6rph-fields"></div></article></section><p>Pilih Tahun, Subjek dan Lesson/PdP. Lesson yang ada dalam sumber Telegram dipaparkan di sini. Muat turun Web akan dibuka selepas penjanaan dan kuota disambungkan.</p><label for="year">Tahun</label><select id="year"><option value="">Pilih Tahun</option><option value="1">Tahun 1</option><option value="2">Tahun 2</option><option value="3">Tahun 3</option><option value="4">Tahun 4</option><option value="5">Tahun 5</option><option value="6">Tahun 6</option></select><label for="subject">Subjek</label><select id="subject" disabled><option value="">Pilih Tahun dahulu</option></select><label for="component" id="component-label" hidden>Pilih komponen PJPK</label><select id="component" hidden disabled><option value="">Pilih PJ atau PK</option></select><label for="unit" id="unit-label" hidden>Unit/Tajuk</label><select id="unit" hidden disabled><option value="">Pilih Subjek dahulu</option></select><label for="lesson" id="lesson-label" hidden>Lesson/PdP</label><select id="lesson" hidden disabled><option value="">Pilih Subjek dahulu</option></select><p id="catalog-status" class="notice" role="status"></p><button id="show-materials" type="button" hidden disabled>Papar Bahan</button><section id="materials-panel" hidden aria-live="polite"><h3>Senarai Bahan</h3><p id="materials-status" class="notice"></p><ul id="materials-list"></ul><button id="download-all" type="button" disabled>Download Semua</button></section><button id="generate-docx" type="button" disabled>Jana Bahan (Word)</button> <button id="generate-pdf" type="button" disabled>Jana Bahan (PDF)</button><section id="rpt2027-panel" aria-labelledby="rpt2027-heading"><h3 id="rpt2027-heading">📅 RPT 2027 — Semua Subjek</h3><p>Pilih subjek dan tahun. RPT adalah untuk Rakan Pembangun yang disahkan atau pelanggan berlangganan aktif. Fail bertanda DRAF/SEMENTARA masih dalam semakan.</p><label for="rpt-subject">Subjek RPT</label><select id="rpt-subject" disabled><option value="">Memuatkan senarai subjek…</option></select><label for="rpt-year">Tahun RPT</label><select id="rpt-year" disabled><option value="">Pilih Subjek dahulu</option></select><button id="rpt-download" type="button" disabled>Muat turun RPT 2027 (PDF)</button><p id="rpt-status" class="notice" role="status"></p></section><button id="logout" type="button">Log keluar</button></section><footer class="foot">CikguLaju AI · Web staging</footer>
+<section id="workspace" class="panel" hidden><h2>Pilih Bahan PdP</h2><p id="account-access" class="notice" role="status"></p><p>Pilih Tahun, Subjek dan Lesson/PdP. Lesson yang ada dalam sumber Telegram dipaparkan di sini. Muat turun Web akan dibuka selepas penjanaan dan kuota disambungkan.</p><label for="year">Tahun</label><select id="year"><option value="">Pilih Tahun</option><option value="1">Tahun 1</option><option value="2">Tahun 2</option><option value="3">Tahun 3</option><option value="4">Tahun 4</option><option value="5">Tahun 5</option><option value="6">Tahun 6</option></select><label for="subject">Subjek</label><select id="subject" disabled><option value="">Pilih Tahun dahulu</option></select><label for="component" id="component-label" hidden>Pilih komponen PJPK</label><select id="component" hidden disabled><option value="">Pilih PJ atau PK</option></select><label for="unit" id="unit-label" hidden>Unit/Tajuk</label><select id="unit" hidden disabled><option value="">Pilih Subjek dahulu</option></select><label for="lesson" id="lesson-label" hidden>Lesson/PdP</label><select id="lesson" hidden disabled><option value="">Pilih Subjek dahulu</option></select><p id="catalog-status" class="notice" role="status"></p><button id="rph-preview-button" type="button" hidden disabled>Papar RPH</button><section id="rph-preview-panel" hidden aria-live="polite"><h3>Pratonton RPH</h3><p id="rph-preview-status" class="notice" role="status"></p><article id="rph-preview-content" hidden><h3 id="rph-preview-title"></h3><p id="rph-preview-notice"></p><div id="rph-preview-fields"></div></article><button id="rph-word" type="button" disabled>Muat turun Word</button><button id="rph-print" type="button" disabled>Cetak / Simpan PDF</button></section><button id="show-materials" type="button" hidden disabled>Papar Bahan</button><section id="materials-panel" hidden aria-live="polite"><h3>Senarai Bahan</h3><p id="materials-status" class="notice"></p><ul id="materials-list"></ul><button id="download-all" type="button" disabled>Download Semua</button></section><section id="rpt2027-panel" aria-labelledby="rpt2027-heading"><h3 id="rpt2027-heading">📅 RPT 2027 — Semua Subjek</h3><p>Pilih subjek dan tahun. RPT adalah untuk Rakan Pembangun yang disahkan atau pelanggan berlangganan aktif. Fail bertanda DRAF/SEMENTARA masih dalam semakan.</p><label for="rpt-subject">Subjek RPT</label><select id="rpt-subject" disabled><option value="">Memuatkan senarai subjek…</option></select><label for="rpt-year">Tahun RPT</label><select id="rpt-year" disabled><option value="">Pilih Subjek dahulu</option></select><button id="rpt-download" type="button" disabled>Muat turun RPT 2027 (PDF)</button><p id="rpt-status" class="notice" role="status"></p></section><button id="logout" type="button">Log keluar</button></section><footer class="foot">CikguLaju AI · Web staging</footer>
 </div>
 <script>
 "use strict";
@@ -69,9 +62,28 @@ window.onCikguLajuTelegramAuth=async function(user){
   status.textContent="Sahkan akaun Telegram untuk meneruskan.";
  }catch(error){status.textContent=error.name==="AbortError"?"Semakan log masuk mengambil masa terlalu lama. Sila muat semula halaman.":"Sambungan log masuk belum tersedia. Sila cuba kemudian.";}
 })();
-let approvedDownloadReady=false;
-async function checkDownloadReady(){try{const r=await fetch("/api/web/english/rph/capabilities",{cache:"no-store"});const d=r.ok?await r.json():{};approvedDownloadReady=d.download_enabled===true;}catch(_){approvedDownloadReady=false;}const opt=document.getElementById("lesson").selectedOptions[0];const enabled=approvedDownloadReady&&opt?.dataset.approved==="1"&&Number(opt?.dataset.lessonNo)>0;document.getElementById("generate-docx").disabled=!enabled;document.getElementById("generate-pdf").disabled=!enabled;}
-checkDownloadReady();
+let renderedRphKey=null;
+function currentRphParams(){
+ if(!year.value||!subject.value||!unit.value||!lesson.value)return null;
+ const params=new URLSearchParams({year:year.value,subject:subject.value,unit:unit.value,lesson:lesson.value});
+ if(subject.value==="PJPK"){if(!component.value)return null;params.set("component",component.value);}
+ return params;
+}
+function resetRphPreview(){
+ renderedRphKey=null;
+ const pane=document.getElementById("rph-preview-panel");
+ pane.hidden=true;document.getElementById("rph-preview-content").hidden=true;
+ document.getElementById("rph-preview-fields").replaceChildren();
+ document.getElementById("rph-preview-status").textContent="";
+ document.getElementById("rph-word").disabled=true;
+ document.getElementById("rph-print").disabled=true;
+ const btn=document.getElementById("rph-preview-button");
+ btn.hidden=true;btn.disabled=true;
+}
+function showRphAction(){
+ const btn=document.getElementById("rph-preview-button");
+ btn.hidden=!currentRphParams();btn.disabled=!currentRphParams();
+}
 const year=document.getElementById("year"),subject=document.getElementById("subject"),lesson=document.getElementById("lesson"),catalogStatus=document.getElementById("catalog-status");
 const unit=document.getElementById("unit"),component=document.getElementById("component");
 async function loadOptions(kind,extra={}){
@@ -88,26 +100,33 @@ function resetSelect(el,label){el.replaceChildren(new Option(label,""));el.disab
 function fillSelect(el,items,label){resetSelect(el,label);for(const item of items){if(item.value==null||!item.label)continue;const opt=new Option(item.label,String(item.value));opt.dataset.approved=item.approved===true&&item.download_enabled===true&&item.standalone_rph_verified===true?"1":"0";if(Number.isInteger(item.lesson_no)&&item.lesson_no>0&&item.lesson_no<=160)opt.dataset.lessonNo=String(item.lesson_no);el.add(opt);}el.disabled=el.options.length<=1;}
 year.addEventListener("change",async()=>{
  resetSelect(subject,"Pilih Subjek");resetSelect(component,"Pilih PJ atau PK");resetSelect(unit,"Pilih Subjek dahulu");resetSelect(lesson,"Pilih Unit dahulu");
- catalogStatus.textContent="";showStep(component,false);showStep(unit,false);showStep(lesson,false);resetMaterials();await checkDownloadReady();if(!year.value)return;
+ catalogStatus.textContent="";showStep(component,false);showStep(unit,false);showStep(lesson,false);resetMaterials();resetRphPreview();if(!year.value)return;
  try{fillSelect(subject,await loadOptions("subjects"),"Pilih Subjek");}catch(error){catalogStatus.textContent=error.message;}
 });
 subject.addEventListener("change",async()=>{
- resetSelect(component,"Pilih PJ atau PK");resetSelect(unit,"Pilih Unit");resetSelect(lesson,"Pilih Unit dahulu");showStep(component,false);showStep(unit,false);showStep(lesson,false);resetMaterials();await checkDownloadReady();if(!subject.value)return;
+ resetSelect(component,"Pilih PJ atau PK");resetSelect(unit,"Pilih Unit");resetSelect(lesson,"Pilih Unit dahulu");showStep(component,false);showStep(unit,false);showStep(lesson,false);resetMaterials();resetRphPreview();if(!subject.value)return;
  try{
   if(subject.value==="PJPK"){showStep(component,true);fillSelect(component,await loadOptions("components",{subject:"PJPK"}),"Pilih PJ atau PK");}
   else{showStep(unit,true);fillSelect(unit,await loadOptions("units",{subject:subject.value}),"Pilih Unit");}
  }catch(error){catalogStatus.textContent=error.message;}
 });
 component.addEventListener("change",async()=>{
- resetSelect(unit,"Pilih Unit");resetSelect(lesson,"Pilih Unit dahulu");showStep(unit,!!component.value);showStep(lesson,false);resetMaterials();await checkDownloadReady();if(!component.value)return;
+ resetSelect(unit,"Pilih Unit");resetSelect(lesson,"Pilih Unit dahulu");showStep(unit,!!component.value);showStep(lesson,false);resetMaterials();resetRphPreview();if(!component.value)return;
  try{fillSelect(unit,await loadOptions("units",{subject:"PJPK",component:component.value}),"Pilih Unit");}catch(error){catalogStatus.textContent=error.message;}
 });
 unit.addEventListener("change",async()=>{
- resetSelect(lesson,"Pilih Lesson/PdP");showStep(lesson,!!unit.value);resetMaterials();await checkDownloadReady();if(!unit.value)return;
+ resetSelect(lesson,"Pilih Lesson/PdP");showStep(lesson,!!unit.value);resetMaterials();resetRphPreview();if(!unit.value)return;
  try{const extra={subject:subject.value,unit:unit.value};if(subject.value==="PJPK"){if(!component.value)return;extra.component=component.value;}const items=await loadOptions("pdp",extra);fillSelect(lesson,items,"Pilih Lesson/PdP");catalogStatus.textContent=items.length+" Lesson/PdP tersedia dalam katalog."; }
  catch(error){catalogStatus.textContent=error.message;}
 });
-lesson.addEventListener("change",async()=>{resetMaterials();if(lesson.value){document.getElementById("show-materials").hidden=false;document.getElementById("show-materials").disabled=false;}await checkDownloadReady();const approved=lesson.selectedOptions[0]?.dataset.approved==="1";document.getElementById("generate-docx").disabled=!(approved&&approvedDownloadReady);document.getElementById("generate-pdf").disabled=!(approved&&approvedDownloadReady);if(lesson.value)catalogStatus.textContent=approved?(approvedDownloadReady?"Lesson tersedia untuk muat turun Web. Pilih Word atau PDF.":"Lesson ada dalam sumber, tetapi sambungan muat turun Web belum diaktifkan."):"Lesson "+lesson.value+" ada dalam sumber, tetapi muat turun Web belum diaktifkan.";});
+lesson.addEventListener("change",()=>{
+ resetMaterials();resetRphPreview();showRphAction();
+ if(lesson.value){
+  document.getElementById("show-materials").hidden=false;
+  document.getElementById("show-materials").disabled=false;
+  catalogStatus.textContent="Lesson/PdP dipilih. Tekan Papar RPH untuk semak sebelum muat turun atau cetak.";
+ }
+});
 document.getElementById("show-materials").addEventListener("click",async()=>{
  const panel=document.getElementById("materials-panel"),status=document.getElementById("materials-status");
  panel.hidden=false;document.getElementById("materials-list").replaceChildren();document.getElementById("download-all").disabled=true;
@@ -124,7 +143,6 @@ document.getElementById("show-materials").addEventListener("click",async()=>{
   // Download Semua stays disabled until a server-issued ZIP or download bundle is implemented.
  }catch(error){status.textContent=error.message;}
 });
-for(const fmt of ["docx","pdf"]){document.getElementById("generate-"+fmt).addEventListener("click",async()=>{if(!lesson.value)return;const verifiedLessonNo=Number(lesson.selectedOptions[0]?.dataset.lessonNo);if(!Number.isInteger(verifiedLessonNo)||verifiedLessonNo<1)return;catalogStatus.textContent="Menyediakan RPH…";try{const response=await fetch("/api/web/english/rph",{method:"POST",headers:{"Content-Type":"application/json"},credentials:"same-origin",body:JSON.stringify({year:Number(year.value),lesson_no:verifiedLessonNo,format:fmt})});if(!response.ok){const data=await response.json().catch(()=>({}));throw Error(data.error||"RPH belum tersedia");}const blob=await response.blob();const url=URL.createObjectURL(blob);const link=document.createElement("a");link.href=url;link.download="cikgulaju-rph-"+lesson.value+"."+fmt;link.click();setTimeout(()=>URL.revokeObjectURL(url),30000);catalogStatus.textContent="Fail RPH disediakan.";}catch(error){catalogStatus.textContent=error.message;}});}
 const rptSubject=document.getElementById("rpt-subject"),rptYear=document.getElementById("rpt-year"),rptDownload=document.getElementById("rpt-download"),rptStatus=document.getElementById("rpt-status");
 let rptCatalog=null;
 async function loadRptCatalog(){
@@ -187,20 +205,57 @@ rptDownload.addEventListener("click",async()=>{
   rptStatus.textContent="PDF RPT "+selection.item.label+" Tahun "+chosen+" disediakan.";
  }catch(e){rptStatus.textContent=e.message;}finally{refreshRptDownload();}
 });
-const y6Toggle=document.getElementById("y6rph-toggle"),y6Panel=document.getElementById("y6rph-panel");
-y6Toggle.addEventListener("click",()=>{
- const shouldOpen=y6Panel.hidden;
- y6Panel.hidden=!shouldOpen;
- y6Toggle.setAttribute("aria-expanded",String(shouldOpen));
- y6Toggle.querySelector("span").textContent=shouldOpen?"▴":"▾";
- if(shouldOpen)document.getElementById("y6rph-lesson").focus();
+const rphButton=document.getElementById("rph-preview-button"),rphPanel=document.getElementById("rph-preview-panel"),rphStatus=document.getElementById("rph-preview-status"),rphContent=document.getElementById("rph-preview-content"),rphFields=document.getElementById("rph-preview-fields"),rphWord=document.getElementById("rph-word"),rphPrint=document.getElementById("rph-print");
+rphButton.addEventListener("click",async()=>{
+ const params=currentRphParams();if(!params)return;
+ const key=params.toString();
+ renderedRphKey=null;
+ rphButton.disabled=true;rphPanel.hidden=false;rphContent.hidden=true;
+ rphFields.replaceChildren();rphWord.disabled=true;rphPrint.disabled=true;
+ rphStatus.textContent="Memuatkan RPH yang tepat bagi pilihan ini…";
+ try{
+  const response=await fetch("/api/web/rph/preview?"+key,{credentials:"same-origin",cache:"no-store"});
+  if(!response.ok){
+   const data=await response.json().catch(()=>({}));
+   throw Error(response.status===401?"Sila log masuk semula.":response.status===403?"Pratonton RPH Web memerlukan Rakan Pembangun atau langganan aktif. Janaan percuma masih di Telegram.":data.error||"RPH untuk pilihan ini belum tersedia (HTTP "+response.status+").");
+  }
+  const data=await response.json();
+  if(data.selection!==lesson.value||data.year!==Number(year.value)||data.subject!==subject.value||data.unit!==unit.value||!Array.isArray(data.fields)||!data.fields.length)throw Error("Padanan RPH tidak sah.");
+  if(!currentRphParams()||currentRphParams().toString()!==key)return;
+  document.getElementById("rph-preview-title").textContent="RPH "+subject.selectedOptions[0].textContent+" — Tahun "+year.value+" · "+data.title;
+  document.getElementById("rph-preview-notice").textContent=data.status+" · "+data.notice;
+  for(const field of data.fields){
+   if(typeof field.label!=="string"||typeof field.value!=="string")continue;
+   const h=document.createElement("h4"),p=document.createElement("p");
+   h.textContent=field.label;p.textContent=field.value;
+   rphFields.append(h,p);
+  }
+  if(!rphFields.children.length)throw Error("Kandungan RPH kosong.");
+  rphContent.hidden=false;renderedRphKey=key;
+  rphWord.disabled=false;rphPrint.disabled=false;
+  rphStatus.textContent="Semak kandungan RPH dan status sumber sebelum cetak.";
+ }catch(e){rphStatus.textContent=e.message;rphContent.hidden=true;renderedRphKey=null;}
+ finally{rphButton.disabled=!currentRphParams();}
 });
-const y6Select=document.getElementById("y6rph-lesson"),y6Show=document.getElementById("y6rph-show"),y6Word=document.getElementById("y6rph-word"),y6Print=document.getElementById("y6rph-print"),y6Status=document.getElementById("y6rph-status"),y6Preview=document.getElementById("y6rph-preview"),y6Fields=document.getElementById("y6rph-fields");
-for(let n=1;n<=160;n++)y6Select.add(new Option("Lesson "+n,String(n)));
-y6Select.addEventListener("change",()=>{y6Preview.hidden=true;y6Word.disabled=true;y6Print.disabled=true;y6Status.textContent="";});
-y6Show.addEventListener("click",async()=>{const n=Number(y6Select.value);if(!Number.isInteger(n)||n<1||n>160){y6Status.textContent="Pilih Lesson dahulu.";return;}y6Show.disabled=true;y6Status.textContent="Membaca RPH daripada sumber Telegram…";try{const r=await fetch("/api/web/english/year6/rph/"+n,{credentials:"same-origin",cache:"no-store"});if(!r.ok)throw new Error(r.status===401?"Sila log masuk semula.":r.status===403?"RPH Web memerlukan status Rakan Pembangun/langganan aktif. Gunakan Telegram untuk janaan percuma.":"Sumber RPH belum tersedia (HTTP "+r.status+").");const data=await r.json();if(data.lesson!==n||!Array.isArray(data.fields))throw Error("Maklumat Lesson tidak sepadan.");y6Fields.replaceChildren();for(const field of data.fields){const h=document.createElement("h4"),p=document.createElement("p");h.textContent=String(field.label||"");p.textContent=String(field.value||"");y6Fields.append(h,p);}document.getElementById("y6rph-notice").textContent=data.teacher_selection?"Lesson pilihan guru — SK/SP perlu disahkan oleh guru.":"Sila semak rujukan latihan buku/audio sebelum digunakan.";y6Preview.hidden=false;y6Word.disabled=false;y6Print.disabled=false;y6Status.textContent="RPH Lesson "+n+" dipaparkan.";}catch(e){y6Status.textContent=e.message;y6Preview.hidden=true;}finally{y6Show.disabled=false;}});
-y6Word.addEventListener("click",async()=>{if(y6Preview.hidden||!y6Select.value)return;const n=Number(y6Select.value);y6Word.disabled=true;try{const r=await fetch("/api/web/english/year6/rph/"+n+".docx",{credentials:"same-origin",cache:"no-store"});if(!r.ok)throw Error("Word belum boleh dimuat turun (HTTP "+r.status+").");const blob=await r.blob(),u=URL.createObjectURL(blob),a=document.createElement("a");a.href=u;a.download="CIKGULAJU_ENGLISH_Y6_RPH_"+String(n).padStart(3,"0")+"_2027.docx";document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),30000);y6Status.textContent="Word RPH Lesson "+n+" disediakan.";}catch(e){y6Status.textContent=e.message;}finally{y6Word.disabled=y6Preview.hidden;}});
-y6Print.addEventListener("click",()=>{if(!y6Preview.hidden)window.print();});
+rphWord.addEventListener("click",async()=>{
+ const key=currentRphParams()?.toString();
+ if(!key||key!==renderedRphKey||rphContent.hidden)return;
+ rphWord.disabled=true;
+ try{
+  const r=await fetch("/api/web/rph/word?"+key,{credentials:"same-origin",cache:"no-store"});
+  if(!r.ok){const body=await r.json().catch(()=>({}));throw Error(body.error||"Word RPH belum tersedia (HTTP "+r.status+").");}
+  const blob=await r.blob();
+  if(blob.size<1000||!r.headers.get("content-type")?.includes("wordprocessingml"))throw Error("Format Word tidak sah.");
+  const url=URL.createObjectURL(blob),a=document.createElement("a");
+  a.href=url;a.download="CIKGULAJU_RPH_"+subject.value+"_TAHUN_"+year.value+"_"+lesson.value.replace(/[^a-zA-Z0-9_-]/g,"_")+".docx";
+  document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);
+  rphStatus.textContent="Word RPH disediakan daripada pratonton yang disahkan.";
+ }catch(e){rphStatus.textContent=e.message;}
+ finally{rphWord.disabled=!renderedRphKey;}
+});
+rphPrint.addEventListener("click",()=>{
+ if(renderedRphKey&&currentRphParams()?.toString()===renderedRphKey&&!rphContent.hidden)window.print();
+});
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 </body>
