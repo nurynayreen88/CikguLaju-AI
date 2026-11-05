@@ -6,6 +6,27 @@ from pioneer_supabase import effective_access, grant_pioneer, has_pioneer, pione
 from pioneer_percentage import pioneer_percentage
 
 
+def _has_recorded_payment_proof(payment):
+    """Accept the existing Telegram receipt or a Web-uploaded Telegram file_id.
+
+    A Web note alone is insufficient: the storage reference must also be
+    durable and bound to this payment. This only enables *manual* admin review.
+    """
+    if not isinstance(payment, dict):
+        return False
+    if payment.get("notes") == "proof_received_admin_notified":
+        return True
+    if payment.get("notes") != "proof_received_web":
+        return False
+    try:
+        return (bool(str(payment.get("proof_telegram_file_id") or "").strip())
+                and int(payment.get("proof_telegram_message_id") or 0) > 0
+                and bool(payment.get("proof_received_at")))
+    except (TypeError, ValueError):
+        return False
+
+
+
 def install(ns):
     original_callback = ns["callback"]
     original_menu = ns["menu"]
@@ -81,7 +102,7 @@ def install(ns):
         req = ns["_payment_request"](request_id)
         if req and float(req["amount"]) == 10.0 and req["status"] == "pending":
             uid = int(req["chat_id"])
-            proof_received = req.get("notes") == "proof_received_admin_notified"
+            proof_received = _has_recorded_payment_proof(req)
             status = ("✅ Resit sudah direkodkan"
                       if proof_received else "⚠️ Resit belum direkodkan")
             buttons = [
@@ -246,7 +267,7 @@ def install(ns):
                         "Rekod permohonan tempatan diselaraskan; tiada bayaran semula diperlukan.")
                 if req["status"] != "pending":
                     return admin_card(cid, rid)
-                if req.get("notes") != "proof_received_admin_notified":
+                if not _has_recorded_payment_proof(req):
                     return send(cid, "⚠️ Resit belum direkodkan. Jangan aktifkan Rakan Pembangun.")
                 # Admin has manually verified the bank transaction before clicking Approve.
                 try:
