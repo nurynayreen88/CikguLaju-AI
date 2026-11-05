@@ -74,7 +74,7 @@ class WebSidebarTabsTests(unittest.TestCase):
         parsed.feed(self.html)
         self.assertIn("view-rpt",parsed.closest["rpt2027-panel"])
         self.assertNotIn("view-rph",parsed.closest["rpt2027-panel"])
-        for name in ["year","subject","unit","lesson","rph-preview-button","rph-word"]:
+        for name in ["year","subject","unit","lesson","rph-word","rph-pdf"]:
             self.assertIn("view-rph",parsed.closest[name],name)
             self.assertNotIn("view-rpt",parsed.closest[name],name)
         self.assertIn("view-account",parsed.closest["profile-access-summary"])
@@ -89,16 +89,18 @@ class WebSidebarTabsTests(unittest.TestCase):
         self.assertIn('document.getElementById("profile-access-summary").textContent=',self.html)
         self.assertIn('fetch("/api/auth/telegram/session"',self.html)
         self.assertIn('fetch("/api/rpt/2027/catalog"',self.html)
-        self.assertIn('fetch("/api/web/rph/preview?"',self.html)
-        self.assertIn('fetch("/api/web/rph/word?"',self.html)
-        self.assertIn('window.print()',self.html)
+        self.assertNotIn('id="rph-preview-panel"',self.html)
+        self.assertIn('"/api/web/rph/word?"',self.html)
+        self.assertIn('"/api/web/rph/pdf?"',self.html)
+        self.assertNotIn('window.print()',self.html)
 
     def test_mobile_and_print_sidebar_not_in_document(self):
         self.assertIn('@media(max-width:760px)',self.html)
         self.assertIn('.sidebar-menu{display:flex;flex-direction:row;',self.html)
         self.assertIn('#workspace .app-sidebar,#workspace #view-rpt',self.html)
-        self.assertIn('#workspace > .app-shell:not(#rph-preview-panel){display:block!important}',self.html)
-        self.assertIn('#workspace #view-rph > *:not(#rph-preview-panel){display:none!important}',self.html)
+        self.assertIn('id="rph-download-actions"',self.html)
+        self.assertIn('id="rph-word"',self.html)
+        self.assertIn('id="rph-pdf"',self.html)
 
     @patch("web.unified_rph_web._account",return_value=(None,({"error":"Login required"},401)))
     def test_word_and_preview_unauthenticated_denied(self,*_):

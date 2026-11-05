@@ -374,13 +374,44 @@ def create_blueprint():
         selected, err = selected_rph()
         return err if err is not None else jsonify(selected)
 
+    def _native_document(selected, fmt):
+        """Use actual Telegram document generator, never Web's mock renderer."""
+        from web.native_telegram_rph_client import request_native_rph, NativeRPHUnavailable
+        try:
+            return request_native_rph(selected, fmt), None
+        except (NativeRPHUnavailable, ValueError):
+            return None, (jsonify({
+                "error": "Penjana RPH Telegram belum dapat dihubungi. Pilihan guru dikekalkan; cuba semula.",
+                "code": "TELEGRAM_RPH_GENERATOR_UNAVAILABLE"
+            }), 503)
+
     @bp.get("/api/web/rph/word")
     def word():
         selected, err = selected_rph()
         if err is not None:
             return err
-        filename = f"CIKGULAJU_RPH_{selected['subject']}_TAHUN_{selected['year']}_{selected['lesson']:03d}_SEMAKAN.docx"
-        return send_file(_docx(selected), mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-                         as_attachment=True, download_name=filename, conditional=False)
+        document, error = _native_document(selected, "word")
+        if error is not None:
+            return error
+        filename = f"CIKGULAJU_RPH_{selected['subject']}_TAHUN_{selected['year']}_{selected['lesson']:03d}.docx"
+        response = send_file(document,
+            mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            as_attachment=True,download_name=filename,conditional=False)
+        response.headers["X-RPH-Generator"] = "telegram-native"
+        return response
+
+    @bp.get("/api/web/rph/pdf")
+    def pdf():
+        selected, err = selected_rph()
+        if err is not None:
+            return err
+        document, error = _native_document(selected, "pdf")
+        if error is not None:
+            return error
+        filename = f"CIKGULAJU_RPH_{selected['subject']}_TAHUN_{selected['year']}_{selected['lesson']:03d}.pdf"
+        response = send_file(document,mimetype="application/pdf",
+            as_attachment=True,download_name=filename,conditional=False)
+        response.headers["X-RPH-Generator"] = "telegram-native"
+        return response
 
     return bp

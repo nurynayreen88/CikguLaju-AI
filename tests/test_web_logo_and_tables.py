@@ -9,7 +9,7 @@ from xml.etree import ElementTree
 from docx import Document
 from PIL import Image
 from flask import Flask
-from web.unified_rph_web import create_blueprint, source_records
+from web.unified_rph_web import create_blueprint, source_records, _docx
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -20,6 +20,10 @@ class WebLogoAndTables(unittest.TestCase):
         app=Flask(__name__)
         app.register_blueprint(create_blueprint())
         cls.client=app.test_client()
+        cls.native_fake = patch("web.native_telegram_rph_client.request_native_rph",
+            side_effect=lambda selected, fmt: _docx(selected))
+        cls.native_fake.start()
+        cls.addClassCleanup(cls.native_fake.stop)
 
     def test_logo_has_transparency_and_is_served_publicly(self):
         path=ROOT/"web_v1_static_preview"/"cikgulaju-logo.svg"
@@ -40,13 +44,14 @@ class WebLogoAndTables(unittest.TestCase):
         html=(ROOT/"web_v1_static_preview"/"index.html").read_text("utf8")
         self.assertIn('class="brand-icon"',html)
         self.assertIn('class="login-brand"',html)
-        self.assertIn('style!=="telegram-native-rph-v1"',html)
-        self.assertIn("rph-telegram-info",html)
-        self.assertIn("rph-telegram-phases",html)
-        self.assertIn("rph-telegram-footer",html)
-        self.assertIn("rph-telegram-paper",html)
-        self.assertIn("rph-print-footer",html)
-        self.assertIn('window.print()',html)
+        self.assertNotIn('id="rph-preview-panel"',html)
+        self.assertNotIn('id="rph-preview-button"',html)
+        self.assertNotIn('id="rph-print"',html)
+        self.assertIn('id="rph-word"',html)
+        self.assertIn('id="rph-pdf"',html)
+        self.assertIn('generateRphFile("word")',html)
+        self.assertIn('generateRphFile("pdf")',html)
+        self.assertNotIn('window.print()',html)
 
     @patch("web.unified_rph_web._has_paid_access",return_value=True)
     @patch("web.unified_rph_web._account",return_value=({"telegram_user_id":123},None))
