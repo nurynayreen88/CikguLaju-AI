@@ -17,9 +17,9 @@ Murid memperagakan tindakan berdasarkan **8.5: Mengamalkan sikap adil demi kesej
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Warga membincangkan pengagihan kemudahan awam yang saksama**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Rancang tugasan saksama:** Guru menggunakan kisah 'Jalankan Tugas Secara Saksama' m/s 75 dan kad pilihan kumpulan m/s 76. Murid membahagikan tugas projek secara adil berdasarkan kebolehan, masa dan peluang setiap ahli (SP 8.5).
+**Aktiviti 1 (20 minit) — Keadilan Ditegakkan Rakyat Sejahtera:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 8, m/s 78–80, bahagian **Keadilan Ditegakkan Rakyat Sejahtera** sebagai rangsangan. Murid merancang simulasi agihan peluang atau giliran yang adil kepada ahli kumpulan yang berbeza keperluan (SP 8.5). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
 
-**Aktiviti 2 (20 minit) — Laksana keputusan adil:** Murid melakonkan mesyuarat agihan tugas dengan ketua kumpulan dan pemerhati berdasarkan m/s 76; guru merekod sekurang-kurangnya dua tindakan tidak memilih kasih dan memberi maklum balas. Murid menjawab item pentaksiran m/s 77–78 (SP 8.5). Guru menggunakan senarai semak untuk menilai pembahagian tugas dan membimbing murid membaiki keputusan yang tidak saksama.
+**Aktiviti 2 (20 minit) — Mari Uji Diri:** Guru merujuk bahagian **Mari Uji Diri** dalam unit yang sama dan menyediakan kad aktiviti berkaitan. Murid memperagakan dua keputusan saksama, membandingkan pemerhatian rakan dan memperbaiki satu keputusan sebelum membuat refleksi (SP 8.5). Guru memberikan maklum balas terhadap sebab, tindakan atau refleksi, kemudian meminta pembetulan yang boleh diperhatikan.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Semak senarai pemerhatian perlakuan bagi SP 8.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 
@@ -29,4 +29,8 @@ Murid memperagakan tindakan berdasarkan **8.5: Mengamalkan sikap adil demi kesej
 
 **Bukti buku teks disemak (2026-11-05):** Unit 8, m/s 75–78 (PDF 84–87). Sumber visual: Jalankan Tugas Secara Saksama, Membuat Keputusan Secara Adil serta penilaian. Aktiviti olahan CikguLaju berpandukan DSKP dan contoh buku teks; jika konsep hanya dalam DSKP, tidak didakwa berasal daripada ilustrasi buku.
 
-**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — Unit 8, m/s 75–78 (PDF 84–87) disemak sebagai sumber aktiviti; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 8, m/s 78–80 (flipbook 88–90), bahagian Keadilan Ditegakkan Rakyat Sejahtera / Mari Uji Diri; SP 8.5. Ini pemetaan bab dan olahan tugasan mengikut DSKP, **bukan semakan visual menyeluruh aktiviti buku atau bukti amalan murid**.
+
+**Batasan bukti sejarah:** Rujukan halaman PDF buku lama dalam nota audit terdahulu berkaitan edisi KSSR pra-Semakan; tidak digunakan sebagai pengesahan edisi 2021.
+
+**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 — DBP 2021](https://fliphtml5.com/sbinx/haph/) — Unit 8, m/s 78–80 (halaman flipbook 88–90), rujukan tajuk dan konteks; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai urutan, bukan tarikh rasmi 2027. Aktiviti kelas ialah olahan CikguLaju; perlu semakan visual halaman lengkap sebelum FINAL READY.

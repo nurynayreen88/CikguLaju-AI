@@ -17,9 +17,9 @@ Murid dapat **menjelaskan maksud prinsip Kepercayaan kepada Tuhan dalam Rukun Ne
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Rakyat yang berbeza kepercayaan menghayati prinsip pertama Rukun Negara**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Prinsip Rukun Negara:** Guru memaparkan buku teks Tahun 6, m/s 1–2 (PDF 10–11) berjudul **Agama dan Kepercayaan Dihayati, Negara Harmoni**, termasuk rujukan kepada prinsip pertama Rukun Negara. Murid **menjelaskan maksud Kepercayaan kepada Tuhan** menggunakan ayat sendiri dan melengkapkan satu peta maksud bersama contoh yang tidak mempersoalkan pegangan peribadi murid (SP 1.1).
+**Aktiviti 1 (20 minit) — Kepercayaan kepada Tuhan Menjamin Kehidupan yang Sejahtera:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 1, m/s 2–4, bahagian **Kepercayaan kepada Tuhan Menjamin Kehidupan yang Sejahtera** sebagai rangsangan. Murid menjelaskan maksud prinsip pertama Rukun Negara dengan satu contoh perlakuan berhemah tanpa perlu menyatakan agama sendiri (SP 1.1). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
 
-**Aktiviti 2 (20 minit) — Aplikasi kesejahteraan negara:** Guru merujuk buku m/s 3 (PDF 12) mengenai ajaran agama dan kepercayaan dalam masyarakat majmuk. Murid memilih dua situasi, contohnya menghormati perbezaan dan bekerjasama menjaga keharmonian, lalu **memerihalkan dua cara mengamalkan prinsip tersebut untuk kesejahteraan negara** (SP 1.2). Guru meminta hubungan yang jelas antara amalan dengan keamanan negara.
+**Aktiviti 2 (20 minit) — Kepercayaan kepada Tuhan Pegangan Kita:** Guru merujuk bahagian **Kepercayaan kepada Tuhan Pegangan Kita** dalam unit yang sama dan menyediakan kad aktiviti berkaitan. Murid memerihalkan dua cara menghormati pegangan rakyat yang berbeza supaya negara sejahtera dan memberikan sebab (SP 1.2). Guru memberikan maklum balas terhadap sebab, tindakan atau refleksi, kemudian meminta pembetulan yang boleh diperhatikan.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Kad individu: tulis **maksud prinsip Kepercayaan kepada Tuhan** (SP 1.1) dan **dua tindakan beserta huraian kesannya kepada negara** (SP 1.2). Guru merekod hasil berdasarkan ketepatan konsep dan sebab yang diberikan.
 
@@ -30,4 +30,8 @@ Murid dapat **menjelaskan maksud prinsip Kepercayaan kepada Tuhan dalam Rukun Ne
 
 **Bukti visual buku teks (audit 2026-11-05):** Unit 1, m/s 1–3 (PDF 10–12). Halaman diperiksa: Pameran Minggu Keharmonian Agama dan Kepercayaan, prinsip pertama Rukun Negara. PdP ialah aktiviti olahan berdasarkan kandungan asal, bukan petikan verbatim atau bukti amalan murid di luar kelas.
 
-**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — Unit 1, m/s 1–3 (PDF 10–12) diperiksa secara visual untuk aktiviti PdP ini; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 1, m/s 2–4 (flipbook 12–14), bahagian Kepercayaan kepada Tuhan Menjamin Kehidupan yang Sejahtera / Kepercayaan kepada Tuhan Pegangan Kita; SP 1.1 dan 1.2. Ini pemetaan bab dan olahan tugasan mengikut DSKP, **bukan semakan visual menyeluruh aktiviti buku atau bukti amalan murid**.
+
+**Batasan bukti sejarah:** Rujukan halaman PDF buku lama dalam nota audit terdahulu berkaitan edisi KSSR pra-Semakan; tidak digunakan sebagai pengesahan edisi 2021.
+
+**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 — DBP 2021](https://fliphtml5.com/sbinx/haph/) — Unit 1, m/s 2–4 (halaman flipbook 12–14), rujukan tajuk dan konteks; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai urutan, bukan tarikh rasmi 2027. Aktiviti kelas ialah olahan CikguLaju; perlu semakan visual halaman lengkap sebelum FINAL READY.

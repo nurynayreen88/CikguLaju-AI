@@ -17,9 +17,9 @@ Murid memperagakan tindakan berdasarkan **6.5: Mengamalkan sikap menghormati ide
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Murid mempersiapkan pameran tentang identiti kebangsaan**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Persediaan kempen hormat lambang:** Guru memperlihatkan buku m/s 54–56 tentang menjaga lambang negara. Murid merangka kad kempen yang menyenaraikan dua tindakan hormat seperti penggunaan Jalur Gemilang secara betul dan menjaga bahan pameran kebangsaan (SP 6.5).
+**Aktiviti 1 (20 minit) — Identiti Negara Pembentukan Jati Diri:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 6, m/s 58–60, bahagian **Identiti Negara Pembentukan Jati Diri** sebagai rangsangan. Murid merancang replika kad identiti negara atau peta minda yang mematuhi tatacara penghormatan Jalur Gemilang (SP 6.5). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
 
-**Aktiviti 2 (20 minit) — Simulasi memelihara lambang:** Murid melakonkan peranan petugas pameran dan pengunjung, menegur secara sopan apabila lambang negara tidak dijaga; guru merekod dua tindakan yang benar-benar dipraktikkan dan memberi maklum balas. Murid menjawab item pemilihan tindakan pada m/s 57–58 (SP 6.5). Guru menggunakan senarai semak perlakuan menghormati identiti negara dan meminta Murid membuat satu pembetulan bersebab.
+**Aktiviti 2 (20 minit) — Mari Uji Diri:** Guru merujuk bahagian **Mari Uji Diri** dalam unit yang sama dan menyediakan kad aktiviti berkaitan. Murid memperagakan dua amalan menghormati identiti negara dengan pemerhatian guru dan membetulkan respons yang kurang tepat (SP 6.5). Guru memberikan maklum balas terhadap sebab, tindakan atau refleksi, kemudian meminta pembetulan yang boleh diperhatikan.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Semak senarai pemerhatian perlakuan bagi SP 6.5, serta refleksi kendiri; satu lakonan sahaja tidak menetapkan TP. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
 
@@ -29,4 +29,8 @@ Murid memperagakan tindakan berdasarkan **6.5: Mengamalkan sikap menghormati ide
 
 **Bukti buku teks disemak (2026-11-05):** Unit 6, m/s 54–58 (PDF 63–67). Kandungan asal yang digunakan: Lambang negara dipelihara, pameran Bunga Raya, kad cara memelihara lambang dan penilaian. Aktiviti PdP merupakan olahan CikguLaju berpandukan halaman sumber, bukan petikan verbatim dan bukan bukti amalan harian murid.
 
-**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — Unit 6, m/s 54–58 (PDF 63–67) diperiksa berdasarkan gambar dan tugasan asal; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 6, m/s 58–60 (flipbook 68–70), bahagian Identiti Negara Pembentukan Jati Diri / Mari Uji Diri; SP 6.5. Ini pemetaan bab dan olahan tugasan mengikut DSKP, **bukan semakan visual menyeluruh aktiviti buku atau bukti amalan murid**.
+
+**Batasan bukti sejarah:** Rujukan halaman PDF buku lama dalam nota audit terdahulu berkaitan edisi KSSR pra-Semakan; tidak digunakan sebagai pengesahan edisi 2021.
+
+**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 — DBP 2021](https://fliphtml5.com/sbinx/haph/) — Unit 6, m/s 58–60 (halaman flipbook 68–70), rujukan tajuk dan konteks; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai urutan, bukan tarikh rasmi 2027. Aktiviti kelas ialah olahan CikguLaju; perlu semakan visual halaman lengkap sebelum FINAL READY.
