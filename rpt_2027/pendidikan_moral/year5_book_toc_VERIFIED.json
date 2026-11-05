@@ -22,7 +22,9 @@
       "pdf_start_page": 5,
       "pdf_end_page": 12,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Keunikan Masyarakatku",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 2,
@@ -32,7 +34,9 @@
       "pdf_start_page": 13,
       "pdf_end_page": 22,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Penyeri Jiwa Masyarakat",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 3,
@@ -42,7 +46,9 @@
       "pdf_start_page": 23,
       "pdf_end_page": 32,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Kehijauan Alam Tanggungjawab Bersama",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 4,
@@ -52,7 +58,9 @@
       "pdf_start_page": 33,
       "pdf_end_page": 42,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Hargai Jasa dan Sumbangan",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 5,
@@ -62,7 +70,9 @@
       "pdf_start_page": 43,
       "pdf_end_page": 52,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Pupuk Amalan Berbudi Pekerti Mulia",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 6,
@@ -72,7 +82,9 @@
       "pdf_start_page": 53,
       "pdf_end_page": 62,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Budaya Masyarakat Patut Dihormati",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 7,
@@ -82,7 +94,9 @@
       "pdf_start_page": 63,
       "pdf_end_page": 72,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Sajak Kasih Sayang",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 8,
@@ -92,7 +106,9 @@
       "pdf_start_page": 73,
       "pdf_end_page": 82,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Suri Teladan Dicontohi Masyarakat",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 9,
@@ -102,7 +118,9 @@
       "pdf_start_page": 83,
       "pdf_end_page": 92,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Berani Pertahankan Cabaran",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 10,
@@ -112,7 +130,9 @@
       "pdf_start_page": 93,
       "pdf_end_page": 102,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Beriadah Dengan Jujurnya",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 11,
@@ -122,7 +142,9 @@
       "pdf_start_page": 103,
       "pdf_end_page": 112,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Berkat Kerajinan",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 12,
@@ -132,7 +154,9 @@
       "pdf_start_page": 113,
       "pdf_end_page": 122,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Amalan Kerjasama, Kebaikan Bersama",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 13,
@@ -142,7 +166,9 @@
       "pdf_start_page": 123,
       "pdf_end_page": 132,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Bersederhana Menjamin Kebahagiaan",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 14,
@@ -152,7 +178,11 @@
       "pdf_start_page": 133,
       "pdf_end_page": null,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "End page not asserted without specific page check"
+      "note": "End page not asserted without specific page check",
+      "printed_heading_original": "Bertoleransi Membawa Kesejahteraan",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     }
-  ]
+  ],
+  "original_book_heading_audit_date": "2026-11-05",
+  "original_book_heading_audit_note": "Direct visual inspection of 14 original PDF unit opening-page images; title and start page only. Detailed activity pages remain unverified except separate 45-entry evidence ledgers. Year 4/5 value labels are NOT necessarily the printed heading."
 }

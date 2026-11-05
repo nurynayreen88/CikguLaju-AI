@@ -22,7 +22,9 @@
       "pdf_start_page": 10,
       "pdf_end_page": 15,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Ajaran Agama Keluarga Saya",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 2,
@@ -32,7 +34,9 @@
       "pdf_start_page": 16,
       "pdf_end_page": 21,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Baik Hati Keluarga Bahagia",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 3,
@@ -42,7 +46,9 @@
       "pdf_start_page": 22,
       "pdf_end_page": 27,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Tanggungjawab Saya Dalam Keluarga",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 4,
@@ -52,7 +58,9 @@
       "pdf_start_page": 28,
       "pdf_end_page": 33,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Terima Kasih, Keluargaku",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 5,
@@ -62,7 +70,9 @@
       "pdf_start_page": 34,
       "pdf_end_page": 41,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Hemah Tinggi Dalam Keluarga",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 6,
@@ -72,7 +82,9 @@
       "pdf_start_page": 42,
       "pdf_end_page": 49,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Hormati Keluarga Hidup Gembira",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 7,
@@ -82,7 +94,9 @@
       "pdf_start_page": 50,
       "pdf_end_page": 57,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Keluarga Bahagia",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 8,
@@ -92,7 +106,9 @@
       "pdf_start_page": 58,
       "pdf_end_page": 65,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Keluarga Yang Adil Hidup Sejahtera",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 9,
@@ -102,7 +118,9 @@
       "pdf_start_page": 66,
       "pdf_end_page": 73,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Berani Demi Nama Baik Keluarga",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 10,
@@ -112,7 +130,9 @@
       "pdf_start_page": 74,
       "pdf_end_page": 81,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Jujur Selalu",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 11,
@@ -122,7 +142,9 @@
       "pdf_start_page": 82,
       "pdf_end_page": 89,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Sikap Rajin Amalan Keluarga",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 12,
@@ -132,7 +154,9 @@
       "pdf_start_page": 90,
       "pdf_end_page": 97,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Kerjasama Meringankan Beban Keluarga",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 13,
@@ -142,7 +166,9 @@
       "pdf_start_page": 98,
       "pdf_end_page": 105,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified"
+      "note": "Unit end boundary inferred from next verified TOC start; activity pages unverified",
+      "printed_heading_original": "Bersederhana Amalan Keluarga",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     },
     {
       "unit": 14,
@@ -152,7 +178,11 @@
       "pdf_start_page": 106,
       "pdf_end_page": null,
       "confidence": "VERIFIED_VISUAL_TABLE_OF_CONTENTS",
-      "note": "End page not asserted without specific page check"
+      "note": "End page not asserted without specific page check",
+      "printed_heading_original": "Toleransi Sesama Ahli Keluarga",
+      "heading_verification_scope": "BOOK_OPENING_PAGE_VISUAL_ONLY"
     }
-  ]
+  ],
+  "original_book_heading_audit_date": "2026-11-05",
+  "original_book_heading_audit_note": "Direct visual inspection of 14 original PDF unit opening-page images; title and start page only. Detailed activity pages remain unverified except separate 45-entry evidence ledgers. Year 4/5 value labels are NOT necessarily the printed heading."
 }

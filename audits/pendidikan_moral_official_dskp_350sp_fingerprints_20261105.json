@@ -1,0 +1,107 @@
+{
+  "source_method": "Text extracted from the five original KPM DSKP PDFs available in Google Drive; 14 contiguous curriculum pages per year, each with SP 1–5; source manually compared on 2026-11-05",
+  "source_text_normalization": "Unicode lower-case, replace punctuation with spaces, trim; join five normalized SP texts using |; SHA-256 digest prefix 24 hex. Case/spacing/punctuation differences ignored, substantive text differences fail.",
+  "source_checksum_scope": "350 standard-learning texts across 70 DSKP units, not 480 textbook activity pages",
+  "years": {
+    "2": {
+      "original_dskp_drive_id": "1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E",
+      "pdf_first_unit_page_1based": 38,
+      "unit_sp_sha256_prefix_24": [
+        "658bfa3bac10efe92096b164",
+        "4df8f8eb1effdadac8e9ed64",
+        "6d418ade81e07d6aeccffb74",
+        "b61cb2b53be1f9d1077f1bd3",
+        "7307c04ed6262611d66d3346",
+        "1ee46b2727032498cc0de9b4",
+        "bed30e67989a788790b30b65",
+        "4234a99b6616a523e290f7ae",
+        "67c2c441fe135a67d2acc79e",
+        "e2af8848e7492cbd99ce0a6e",
+        "21fed065e1dd6139047f6390",
+        "66ba6376cf14333855a79dc7",
+        "c51540de96de5b67b88ea136",
+        "4c8bc356f6c1a9f31abcd3f5"
+      ]
+    },
+    "3": {
+      "original_dskp_drive_id": "1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv",
+      "pdf_first_unit_page_1based": 38,
+      "unit_sp_sha256_prefix_24": [
+        "944c64ed8fc4956d15299b34",
+        "e17ffdfc2ada4bb18ebba90d",
+        "b298b2b5225714119f979e09",
+        "484ca93c5673e64d1fb81d92",
+        "b574eb0103c5bac8dbb032b5",
+        "1b7a4c094effa4a3959269c7",
+        "cf9c4c70bcbb69059c778dd9",
+        "f8b39c728d7d56c7d67a1af7",
+        "b3eadb458ca80538a90fb480",
+        "342947af6b4c4e48ff4b8dcb",
+        "a8b56e6f85825e93b8fd6b5b",
+        "96328b2ebfcd41d772fe977c",
+        "b924bbf2bc4e50ebac0ff69f",
+        "6ec05bc7509cf8ae055aa437"
+      ]
+    },
+    "4": {
+      "original_dskp_drive_id": "1nNUL3EA3TTtuq9mG5fYBpbnGTJuOw-pd",
+      "pdf_first_unit_page_1based": 35,
+      "unit_sp_sha256_prefix_24": [
+        "596e19d3eeff5aa6008489de",
+        "1de7ac87f6cb59c6835c27a2",
+        "a95140bf1d8aa61a1740d324",
+        "328f8e9f6515814043d4c461",
+        "cd565ef037bfad4be2893512",
+        "67bd6afeb46d9c93a46296f0",
+        "87913f886d993019809f3beb",
+        "a7ac7951632ea1be605bd16b",
+        "6b5e27a4d2f9cb95a4c43806",
+        "ff24588cf402fdca0abf8dc4",
+        "8f5fab6670001983a967b92f",
+        "92b435216f63e30ceb5f17ae",
+        "6c8a3d084d0c30988bfe5d6d",
+        "65026cc313e562e0eb6619e1"
+      ]
+    },
+    "5": {
+      "original_dskp_drive_id": "1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD",
+      "pdf_first_unit_page_1based": 36,
+      "unit_sp_sha256_prefix_24": [
+        "c8430abcccb9f09ac73d25b4",
+        "f78d62303c5bbcfc54d1f05b",
+        "797d272e994a9abd1fe08c91",
+        "0e969834d9e850f5d5cf6ef8",
+        "d2d564812d358113f2520765",
+        "656ccb8c3ec34efac7375665",
+        "a50808615a049a424f86eee7",
+        "453bce2463742d579de4a6db",
+        "897e9c83d7192c4e989811a6",
+        "ca95ec77479443979409bdd2",
+        "8b0bc6f419c2ce1d01b1195b",
+        "a7c73c1e5f229bac30c38fa3",
+        "f9ab760d9e58c3a2d9cbe494",
+        "8d10a8f86e4e0948aba74417"
+      ]
+    },
+    "6": {
+      "original_dskp_drive_id": "1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA",
+      "pdf_first_unit_page_1based": 36,
+      "unit_sp_sha256_prefix_24": [
+        "9e6dad7a8a5a745079c01048",
+        "63fdcdcfb302af5a26ca5785",
+        "468b6e82c45e672690db652e",
+        "220a7bed22bd867c822b4e55",
+        "5a2dbbcdcfa86a055aa635d6",
+        "9bdf8eb646c51641754e7224",
+        "dadad58de64041ce6395df34",
+        "d3c340bd756ce9080e375379",
+        "d801295f94f53135919b83b4",
+        "9013a48eb5da1dd35c67d421",
+        "0288ad4ba1c657708961cd02",
+        "fd80d92d0d1c60740e93a74d",
+        "c108d1ee5883a525aa1dee12",
+        "8a0a58db770429367cc8cb72"
+      ]
+    }
+  }
+}
