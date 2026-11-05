@@ -18,6 +18,7 @@ class Bot:
         self.messages = []
         self.marked = []
         self.delegated = []
+        self.db_rows = []
 
     def send(self, cid, message, keyboard=None):
         self.messages.append((cid, message, keyboard or []))
@@ -53,7 +54,9 @@ class Bot:
             "_payment_request": self.payment,
             "_mark_payment_request": self.mark,
             "_latest_pending_payment": lambda cid: None,
-            "_sb_request": lambda method, path, **kw: [],
+            "_sb_request": lambda method, path, **kw: (
+                self.db_rows if path.startswith(
+                    "pioneer_entitlements?telegram_user_id=eq.") else []),
             "state": {},
             "send": self.send,
         }
@@ -128,10 +131,7 @@ class TestStalePioneerApproval(unittest.TestCase):
         previous = [{"entitlement": "PIONEER_LIFETIME",
                      "payment_reference": "old-payment-verified",
                      "revoked_at": "2026-11-05T22:39:22Z"}]
-        self.ns["_sb_request"] = (
-            lambda method, path, **kw: previous
-            if path.startswith("pioneer_entitlements?telegram_user_id=eq.")
-            else [])
+        self.bot.db_rows = previous
         # The bridge was installed with a closure using ns, so it sees the
         # replacement durable lookup without re-installing wrappers.
         with patch("pioneer_telegram.reactivate_revoked_pioneer",
@@ -148,10 +148,9 @@ class TestStalePioneerApproval(unittest.TestCase):
             self.grant_mock.assert_not_called()
 
     def test_revoked_member_rpc_failure_preserves_pending_and_history(self):
-        self.ns["_sb_request"] = lambda method, path, **kw: (
-            [{"entitlement":"PIONEER_LIFETIME","revoked_at":"2026-11-05T22:39:22Z"}]
-            if path.startswith("pioneer_entitlements?telegram_user_id=eq.")
-            else [])
+        self.bot.db_rows = [
+            {"entitlement":"PIONEER_LIFETIME",
+             "revoked_at":"2026-11-05T22:39:22Z"}]
         with patch("pioneer_telegram.reactivate_revoked_pioneer",
                    side_effect=RuntimeError("Matching pending verified proof required")) as restore:
             self.ns["callback"](ADMIN, "admin_approve|1|201")
@@ -162,10 +161,9 @@ class TestStalePioneerApproval(unittest.TestCase):
         self.assertIn("belum diaktifkan", self.bot.messages[-1][1])
 
     def test_revoked_member_unconfirmed_result_never_marks_payment_approved(self):
-        self.ns["_sb_request"] = lambda method, path, **kw: (
-            [{"entitlement":"PIONEER_LIFETIME","revoked_at":"2026-11-05T22:39:22Z"}]
-            if path.startswith("pioneer_entitlements?telegram_user_id=eq.")
-            else [])
+        self.bot.db_rows = [
+            {"entitlement":"PIONEER_LIFETIME",
+             "revoked_at":"2026-11-05T22:39:22Z"}]
         with patch("pioneer_telegram.reactivate_revoked_pioneer",
                    return_value={"approved": False}) as restore:
             self.ns["callback"](ADMIN, "admin_approve|1|201")
@@ -174,10 +172,9 @@ class TestStalePioneerApproval(unittest.TestCase):
         self.assertEqual(self.bot.requests[1]["status"], "pending")
 
     def test_no_reactivation_if_proof_is_missing_or_owner_differs(self):
-        self.ns["_sb_request"] = lambda method, path, **kw: (
-            [{"entitlement":"PIONEER_LIFETIME","revoked_at":"2026-11-05T22:39:22Z"}]
-            if path.startswith("pioneer_entitlements?telegram_user_id=eq.")
-            else [])
+        self.bot.db_rows = [
+            {"entitlement":"PIONEER_LIFETIME",
+             "revoked_at":"2026-11-05T22:39:22Z"}]
         with patch("pioneer_telegram.reactivate_revoked_pioneer") as restore:
             self.bot.requests[1]["notes"]="awaiting_proof"
             self.ns["callback"](ADMIN, "admin_approve|1|201")
