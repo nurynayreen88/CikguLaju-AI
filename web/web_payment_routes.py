@@ -237,6 +237,44 @@ def _telegram_document(conf, uid, raw, ext, *, opener=None):
     }
 
 
+def _notify_telegram_admin_review(uid, request_id, *, opener=None):
+    """Notify admin only *after* the durable Web proof and Pending row exist.
+
+    Telegram independently reloads and verifies the precise payment, user,
+    receipt file_id and Pending status. No approval or entitlement mutation.
+    This private API uses the same token as the already-protected catalog API.
+    """
+    if (type(uid) is not int or not 0 < uid < 10**18
+            or type(request_id) is not int or not 0 < request_id < 10**18):
+        raise ProfileUnavailable("Identiti bayaran belum disahkan")
+    base = _safe_host(os.environ.get("CIKGULAJU_AUTHORITATIVE_API_URL", ""))
+    token = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_TOKEN", "")
+    if not isinstance(token, str) or len(token) < 32:
+        raise ProfileUnavailable("Sambungan notifikasi admin belum tersedia")
+    body = json.dumps({"request_id": request_id, "telegram_user_id": uid},
+                      separators=(",", ":")).encode("utf-8")
+    req = Request(base + "/internal/payment/v1/admin-review-notify",
+                  method="POST", data=body,
+                  headers={"Authorization": "Bearer " + token,
+                           "Content-Type": "application/json",
+                           "Accept": "application/json"})
+    try:
+        with (opener or build_opener(HTTPSHandler(), NoRedirect())).open(req, timeout=25) as resp:
+            if resp.status != 200 or resp.headers.get("Content-Type", "").split(";")[0].strip().lower() != "application/json":
+                raise ProfileUnavailable("Telegram tidak mengesahkan penghantaran notifikasi")
+            raw = resp.read(4097)
+        if len(raw) > 4096:
+            raise ProfileUnavailable("Respons notifikasi terlalu besar")
+        data = json.loads(raw)
+        if (not isinstance(data, dict) or data.get("notified") is not True
+                or data.get("request_id") != request_id
+                or data.get("review") != "admin_only"):
+            raise ProfileUnavailable("Telegram tidak mengesahkan notifikasi admin")
+        return True
+    except (HTTPError, URLError, OSError, TypeError, ValueError):
+        raise ProfileUnavailable("Makluman Telegram admin belum dihantar") from None
+
+
 def _status_rows(rows):
     for item in rows:
         if item.get("status") == "pending":
@@ -330,10 +368,28 @@ def payment_submit():
             "notes":"proof_received_web",
         }
         saved=_payment_rest(conf,"POST",body=data)
-        if len(saved)!=1 or saved[0].get("chat_id")!=str(uid) or saved[0].get("status")!="pending":
+        if (len(saved)!=1 or saved[0].get("chat_id")!=str(uid)
+                or saved[0].get("status")!="pending"
+                or type(saved[0].get("id")) is not int or saved[0]["id"] <= 0):
             raise ProfileUnavailable("Permohonan bayaran belum disahkan")
-        return jsonify({"submitted":True,"id":saved[0]["id"],
-                        "status":"pending","message":"Resit diterima dan menunggu pengesahan admin."}),201
+        rid = saved[0]["id"]
+        # NEVER change a successfully saved Pending receipt into HTTP 503
+        # just because the subsequent admin Telegram notification failed.
+        # Otherwise the user could assume the receipt was lost and pay again.
+        notified = False
+        try:
+            notified = _notify_telegram_admin_review(uid, rid)
+        except Exception as exc:
+            print("WEB PAYMENT ADMIN NOTIFICATION unavailable:",
+                  type(exc).__name__, flush=True)
+        message = ("Resit diterima, permohonan Pending dan menunggu pengesahan admin."
+                   if notified else
+                   "Resit diterima dan direkod sebagai Pending. Makluman admin belum "
+                   "dapat disahkan; admin boleh semak melalui Panel Admin → Pending Bayaran. "
+                   "Jangan bayar atau hantar resit sekali lagi.")
+        return jsonify({"submitted":True,"id":rid,"status":"pending",
+                        "admin_notification":"sent" if notified else "unconfirmed",
+                        "message":message}),201
     except PaymentConflict:
         return jsonify({"error":"Permohonan Pending sudah wujud. Jangan bayar dua kali."}),409
     except ValueError as exc:
