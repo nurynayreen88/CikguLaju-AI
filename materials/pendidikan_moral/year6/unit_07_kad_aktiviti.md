@@ -2,6 +2,7 @@
 
 **Tema:** Saya dan Negara  
 **Unit:** Cinta Akan Negara  
+**Tajuk buku teks KSSR Semakan 2017 (DBP 2021):** Cinta akan Negara  
 **Nilai:** Kasih sayang  
 **Status:** DRAF_SEMAK
 
