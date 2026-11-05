@@ -1,0 +1,448 @@
+{
+  "date": "2026-11-05",
+  "status": "21_SOURCE_BOOK_ACTIVITIES_VISUALLY_REVIEWED; NO_FINAL_READY_GRANTED",
+  "method": "Direct visual inspection of original scanned textbook PDF pages, with cross-check against exact DSKP SP per lesson. RPH teaching tasks may be adapted and are not necessarily verbatim textbook tasks.",
+  "original_book_sha256": {
+    "2": "482d032d82a5f3ee8e718da5d7ca3a335c156b8cef63987dd399e76ae3b8dba0",
+    "3": "2c3909942f174c1e295824d63676a294bd423be609680d8b2f691a3adde8f657",
+    "4": "87a388b739d8a7c7b99c4bfbfc25d3f5dd9e3d1a6016973806db806d2f4b2e11",
+    "5": "b033d4c27e6f214b45f316aaf7d72451a8957dee9d9fef6d107b29f24648e9fa",
+    "6": "28c40b53356151ebad8a619df9da8b272857cf3ba54d27fc3fc053474c48b396"
+  },
+  "records": [
+    {
+      "year": 2,
+      "lesson": 1,
+      "unit": 1,
+      "source_book_drive_id": "1HfrXEKYWSDvjClcArAwdCR5yglIRip2b",
+      "book_sha256": "482d032d82a5f3ee8e718da5d7ca3a335c156b8cef63987dd399e76ae3b8dba0",
+      "printed": [
+        1,
+        2
+      ],
+      "pdf": [
+        10,
+        11
+      ],
+      "sp_codes": [
+        "1.1",
+        "1.2"
+      ],
+      "source_evidence": "Gambar mengucap salam, hormat ibu bapa serta amalan doa",
+      "scope": "VISUAL_ACTIVITY_SP_REVIEW_NOT_FINAL_READY"
+    },
+    {
+      "year": 2,
+      "lesson": 2,
+      "unit": 1,
+      "source_book_drive_id": "1HfrXEKYWSDvjClcArAwdCR5yglIRip2b",
+      "book_sha256": "482d032d82a5f3ee8e718da5d7ca3a335c156b8cef63987dd399e76ae3b8dba0",
+      "printed": [
+        2,
+        3
+      ],
+      "pdf": [
+        11,
+        12
+      ],
+      "sp_codes": [
+        "1.3",
+        "1.4"
+      ],
+      "source_evidence": "Ilustrasi tujuan patuh ajaran agama dan hubungan harmoni dalam keluarga",
+      "scope": "VISUAL_ACTIVITY_SP_REVIEW_NOT_FINAL_READY"
+    },
+    {
+      "year": 2,
+      "lesson": 3,
+      "unit": 1,
+      "source_book_drive_id": "1HfrXEKYWSDvjClcArAwdCR5yglIRip2b",
+      "book_sha256": "482d032d82a5f3ee8e718da5d7ca3a335c156b8cef63987dd399e76ae3b8dba0",
+      "printed": [
+        3,
+        6
+      ],
+      "pdf": [
+        12,
+        15
+      ],
+      "sp_codes": [
+        "1.5"
+      ],
+      "source_evidence": "Contoh patuh kepada agama, borang temu bual dan Uji Diri",
+      "scope": "VISUAL_ACTIVITY_SP_REVIEW_NOT_FINAL_READY"
+    },
+    {
+      "year": 3,
+      "lesson": 1,
+      "unit": 1,
+      "source_book_drive_id": "1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl",
+      "book_sha256": "2c3909942f174c1e295824d63676a294bd423be609680d8b2f691a3adde8f657",
+      "printed": [
+        1,
+        3
+      ],
+      "pdf": [
+        7,
+        9
+      ],
+      "sp_codes": [
+        "1.1",
+        "1.2"
+      ],
+      "source_evidence": "Gambar perayaan dan dialog pameran perayaan warga sekolah",
+      "scope": "VISUAL_ACTIVITY_SP_REVIEW_NOT_FINAL_READY"
+    },
+    {
+      "year": 3,
+      "lesson": 2,
+      "unit": 1,
+      "source_book_drive_id": "1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl",
+      "book_sha256": "2c3909942f174c1e295824d63676a294bd423be609680d8b2f691a3adde8f657",
+      "printed": [
+        2,
+        6
+      ],
+      "pdf": [
+        8,
+        12
+      ],
+      "sp_codes": [
+        "1.3",
+        "1.4"
+      ],
+      "source_evidence": "Pameran perayaan dan jadual menghormati perayaan di kantin sekolah",
+      "scope": "VISUAL_ACTIVITY_SP_REVIEW_NOT_FINAL_READY"
+    },
+    {
+      "year": 3,
+      "lesson": 3,
+      "unit": 1,
+      "source_book_drive_id": "1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl",
+      "book_sha256": "2c3909942f174c1e295824d63676a294bd423be609680d8b2f691a3adde8f657",
+      "printed": [
+        4,
+        8
+      ],
+      "pdf": [
+        10,
+        14
+      ],
+      "sp_codes": [
+        "1.5"
+      ],
+      "source_evidence": "Kolam perayaan, permainan kenal perayaan, latihan Uji Minda",
+      "scope": "VISUAL_ACTIVITY_SP_REVIEW_NOT_FINAL_READY"
+    },
+    {
+      "year": 4,
+      "lesson": 1,
+      "unit": 1,
+      "source_book_drive_id": "1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j",
+      "book_sha256": "87a388b739d8a7c7b99c4bfbfc25d3f5dd9e3d1a6016973806db806d2f4b2e11",
+      "printed": [
+        2,
+        3
+      ],
+      "pdf": [
+        8,
+        9
+      ],
+      "sp_codes": [
+        "1.1",
+        "1.2"
+      ],
+      "source_evidence": "Amalan berbeza jiran, bekerjasama dan menjaga kebersihan",
+      "scope": "VISUAL_ACTIVITY_SP_REVIEW_NOT_FINAL_READY"
+    },
+    {
+      "year": 4,
+      "lesson": 2,
+      "unit": 1,
+      "source_book_drive_id": "1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j",
+      "book_sha256": "87a388b739d8a7c7b99c4bfbfc25d3f5dd9e3d1a6016973806db806d2f4b2e11",
+      "printed": [
+        4,
+        6
+      ],
+      "pdf": [
+        10,
+        12
+      ],
+      "sp_codes": [
+        "1.3",
+        "1.4"
+      ],
+      "source_evidence": "Dialog Bavin, Amsyar, Yu Zhe serta kaji selidik jiran",
+      "scope": "VISUAL_ACTIVITY_SP_REVIEW_NOT_FINAL_READY"
+    },
+    {
+      "year": 4,
+      "lesson": 3,
+      "unit": 1,
+      "source_book_drive_id": "1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j",
+      "book_sha256": "87a388b739d8a7c7b99c4bfbfc25d3f5dd9e3d1a6016973806db806d2f4b2e11",
+      "printed": [
+        4,
+        8
+      ],
+      "pdf": [
+        10,
+        14
+      ],
+      "sp_codes": [
+        "1.5"
+      ],
+      "source_evidence": "Dialog jiran, contoh perayaan dan Mari Uji Diri",
+      "scope": "VISUAL_ACTIVITY_SP_REVIEW_NOT_FINAL_READY"
+    },
+    {
+      "year": 5,
+      "lesson": 1,
+      "unit": 1,
+      "source_book_drive_id": "1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz",
+      "book_sha256": "b033d4c27e6f214b45f316aaf7d72451a8957dee9d9fef6d107b29f24648e9fa",
+      "printed": [
+        2,
+        4
+      ],
+      "pdf": [
+        5,
+        7
+      ],
+      "sp_codes": [
+        "1.1",
+        "1.2"
+      ],
+      "source_evidence": "Ciri masyarakat dan catatan kegiatan kebajikan",
+      "scope": "VISUAL_ACTIVITY_SP_REVIEW_NOT_FINAL_READY"
+    },
+    {
+      "year": 5,
+      "lesson": 2,
+      "unit": 1,
+      "source_book_drive_id": "1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz",
+      "book_sha256": "b033d4c27e6f214b45f316aaf7d72451a8957dee9d9fef6d107b29f24648e9fa",
+      "printed": [
+        4,
+        6
+      ],
+      "pdf": [
+        7,
+        9
+      ],
+      "sp_codes": [
+        "1.3",
+        "1.4"
+      ],
+      "source_evidence": "Catatan kegiatan kebajikan serta khidmat doktor, guru, polis",
+      "scope": "VISUAL_ACTIVITY_SP_REVIEW_NOT_FINAL_READY"
+    },
+    {
+      "year": 5,
+      "lesson": 3,
+      "unit": 1,
+      "source_book_drive_id": "1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz",
+      "book_sha256": "b033d4c27e6f214b45f316aaf7d72451a8957dee9d9fef6d107b29f24648e9fa",
+      "printed": [
+        4,
+        8
+      ],
+      "pdf": [
+        7,
+        11
+      ],
+      "sp_codes": [
+        "1.5"
+      ],
+      "source_evidence": "Kegiatan kebajikan, amalan agama dan Uji Diri",
+      "scope": "VISUAL_ACTIVITY_SP_REVIEW_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "lesson": 1,
+      "unit": 1,
+      "source_book_drive_id": "12YjwUWy6DdVsqP5_azEp987jfvZ6PROo",
+      "book_sha256": "28c40b53356151ebad8a619df9da8b272857cf3ba54d27fc3fc053474c48b396",
+      "printed": [
+        1,
+        3
+      ],
+      "pdf": [
+        10,
+        12
+      ],
+      "sp_codes": [
+        "1.1",
+        "1.2"
+      ],
+      "source_evidence": "Pameran keharmonian agama dan prinsip Rukun Negara",
+      "scope": "VISUAL_ACTIVITY_SP_REVIEW_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "lesson": 2,
+      "unit": 1,
+      "source_book_drive_id": "12YjwUWy6DdVsqP5_azEp987jfvZ6PROo",
+      "book_sha256": "28c40b53356151ebad8a619df9da8b272857cf3ba54d27fc3fc053474c48b396",
+      "printed": [
+        2,
+        6
+      ],
+      "pdf": [
+        11,
+        15
+      ],
+      "sp_codes": [
+        "1.3",
+        "1.4"
+      ],
+      "source_evidence": "Poster agama dan peta kesan kepada kesejahteraan negara",
+      "scope": "VISUAL_ACTIVITY_SP_REVIEW_NOT_FINAL_READY"
+    },
+    {
+      "year": 6,
+      "lesson": 3,
+      "unit": 1,
+      "source_book_drive_id": "12YjwUWy6DdVsqP5_azEp987jfvZ6PROo",
+      "book_sha256": "28c40b53356151ebad8a619df9da8b272857cf3ba54d27fc3fc053474c48b396",
+      "printed": [
+        5,
+        8
+      ],
+      "pdf": [
+        14,
+        17
+      ],
+      "sp_codes": [
+        "1.5"
+      ],
+      "source_evidence": "Bayangan minda, rubrik formatif dan latihan sumatif",
+      "scope": "VISUAL_ACTIVITY_SP_REVIEW_NOT_FINAL_READY"
+    },
+    {
+      "year": 2,
+      "lesson": 13,
+      "unit": 5,
+      "source_book_drive_id": "1HfrXEKYWSDvjClcArAwdCR5yglIRip2b",
+      "book_sha256": "482d032d82a5f3ee8e718da5d7ca3a335c156b8cef63987dd399e76ae3b8dba0",
+      "printed": [
+        25,
+        27
+      ],
+      "pdf": [
+        34,
+        36
+      ],
+      "sp_codes": [
+        "5.1",
+        "5.2"
+      ],
+      "source_evidence": "Dialog sopan dengan datuk/nenek dan adab dalam majlis",
+      "scope": "VISUAL_ACTIVITY_SP_REVIEW_NOT_FINAL_READY"
+    },
+    {
+      "year": 2,
+      "lesson": 14,
+      "unit": 5,
+      "source_book_drive_id": "1HfrXEKYWSDvjClcArAwdCR5yglIRip2b",
+      "book_sha256": "482d032d82a5f3ee8e718da5d7ca3a335c156b8cef63987dd399e76ae3b8dba0",
+      "printed": [
+        27,
+        32
+      ],
+      "pdf": [
+        36,
+        41
+      ],
+      "sp_codes": [
+        "5.3",
+        "5.4"
+      ],
+      "source_evidence": "Contoh tindakan, kesan dan Uji Diri hemah tinggi",
+      "scope": "VISUAL_ACTIVITY_SP_REVIEW_NOT_FINAL_READY"
+    },
+    {
+      "year": 2,
+      "lesson": 15,
+      "unit": 5,
+      "source_book_drive_id": "1HfrXEKYWSDvjClcArAwdCR5yglIRip2b",
+      "book_sha256": "482d032d82a5f3ee8e718da5d7ca3a335c156b8cef63987dd399e76ae3b8dba0",
+      "printed": [
+        28,
+        31
+      ],
+      "pdf": [
+        37,
+        40
+      ],
+      "sp_codes": [
+        "5.5"
+      ],
+      "source_evidence": "Susun suai adab, kisah ikon anak terbaik dan lakonan keluarga",
+      "scope": "VISUAL_ACTIVITY_SP_REVIEW_NOT_FINAL_READY"
+    },
+    {
+      "year": 3,
+      "lesson": 13,
+      "unit": 5,
+      "source_book_drive_id": "1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl",
+      "book_sha256": "2c3909942f174c1e295824d63676a294bd423be609680d8b2f691a3adde8f657",
+      "printed": [
+        33,
+        35
+      ],
+      "pdf": [
+        39,
+        41
+      ],
+      "sp_codes": [
+        "5.1",
+        "5.2"
+      ],
+      "source_evidence": "Ucapan salam kepada warga sekolah dan sopan sepanjang hari",
+      "scope": "VISUAL_ACTIVITY_SP_REVIEW_NOT_FINAL_READY"
+    },
+    {
+      "year": 3,
+      "lesson": 14,
+      "unit": 5,
+      "source_book_drive_id": "1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl",
+      "book_sha256": "2c3909942f174c1e295824d63676a294bd423be609680d8b2f691a3adde8f657",
+      "printed": [
+        35,
+        38
+      ],
+      "pdf": [
+        41,
+        44
+      ],
+      "sp_codes": [
+        "5.3",
+        "5.4"
+      ],
+      "source_evidence": "Dialog, amalan maaf, perasaan dan jadual kesan",
+      "scope": "VISUAL_ACTIVITY_SP_REVIEW_NOT_FINAL_READY"
+    },
+    {
+      "year": 3,
+      "lesson": 15,
+      "unit": 5,
+      "source_book_drive_id": "1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl",
+      "book_sha256": "2c3909942f174c1e295824d63676a294bd423be609680d8b2f691a3adde8f657",
+      "printed": [
+        36,
+        39
+      ],
+      "pdf": [
+        42,
+        45
+      ],
+      "sp_codes": [
+        "5.5"
+      ],
+      "source_evidence": "Origami, kad dialog sopan dan permainan Belon Sopan",
+      "scope": "VISUAL_ACTIVITY_SP_REVIEW_NOT_FINAL_READY"
+    }
+  ]
+}
