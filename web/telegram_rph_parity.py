@@ -37,6 +37,7 @@ def clean(value):
     value = re.sub(r"(?<!\*)\*([^*\n]+)\*(?!\*)",r"\1",value)
     value = re.sub(r"\x60([^\x60]+)\x60",r"\1",value)
     value = re.sub(r"(?m)^\s*[-*]\s+","• ",value)
+    value = re.sub(r"[ \t]+\n", "\n", value)
     return value.strip()
 
 def norm(label):
