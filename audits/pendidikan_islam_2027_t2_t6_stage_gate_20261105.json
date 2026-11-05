@@ -1,0 +1,224 @@
+{
+  "project": "CikguLaju AI",
+  "subject": "Pendidikan Islam",
+  "year": 2027,
+  "scope": {
+    "years": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "rph_by_year": {
+      "2": 112,
+      "3": 147,
+      "4": 151,
+      "5": 143,
+      "6": 143
+    },
+    "rph_total": 696,
+    "rpt_word": 5
+  },
+  "checkpoint_date": "2026-11-05",
+  "branch_policy": "STAGING_ONLY",
+  "status": "DRAF_BELUM_READY",
+  "qa_counts": {
+    "CALON_UJIAN_GURU_DRAF": 661,
+    "SEMAKAN_KEUTAMAAN": 29,
+    "TAHAN_SEMAKAN_KANDUNGAN": 6
+  },
+  "held": [
+    [
+      "2",
+      "035"
+    ],
+    [
+      "6",
+      "006"
+    ],
+    [
+      "6",
+      "014"
+    ],
+    [
+      "6",
+      "018"
+    ],
+    [
+      "6",
+      "060"
+    ],
+    [
+      "6",
+      "117"
+    ]
+  ],
+  "priority": [
+    [
+      "3",
+      "006"
+    ],
+    [
+      "3",
+      "050"
+    ],
+    [
+      "3",
+      "145"
+    ],
+    [
+      "5",
+      "047"
+    ],
+    [
+      "5",
+      "134"
+    ],
+    [
+      "5",
+      "141"
+    ],
+    [
+      "6",
+      "004"
+    ],
+    [
+      "6",
+      "008"
+    ],
+    [
+      "6",
+      "012"
+    ],
+    [
+      "6",
+      "016"
+    ],
+    [
+      "6",
+      "020"
+    ],
+    [
+      "6",
+      "024"
+    ],
+    [
+      "6",
+      "026"
+    ],
+    [
+      "6",
+      "028"
+    ],
+    [
+      "6",
+      "032"
+    ],
+    [
+      "6",
+      "036"
+    ],
+    [
+      "6",
+      "040"
+    ],
+    [
+      "6",
+      "044"
+    ],
+    [
+      "6",
+      "048"
+    ],
+    [
+      "6",
+      "052"
+    ],
+    [
+      "6",
+      "056"
+    ],
+    [
+      "6",
+      "064"
+    ],
+    [
+      "6",
+      "068"
+    ],
+    [
+      "6",
+      "072"
+    ],
+    [
+      "6",
+      "076"
+    ],
+    [
+      "6",
+      "080"
+    ],
+    [
+      "6",
+      "087"
+    ],
+    [
+      "6",
+      "137"
+    ],
+    [
+      "6",
+      "141"
+    ]
+  ],
+  "render_samples": [
+    [
+      "2",
+      "001"
+    ],
+    [
+      "3",
+      "060"
+    ],
+    [
+      "4",
+      "079"
+    ],
+    [
+      "5",
+      "134"
+    ],
+    [
+      "6",
+      "117"
+    ]
+  ],
+  "qa_verified": {
+    "zip_integrity": true,
+    "unique_lesson_ids": 696,
+    "word_docx_integrity": 696,
+    "a4_layout_xml": 696,
+    "rtl_markup_xml": 696,
+    "rendered_one_page_samples": 5
+  },
+  "qa_not_verified": [
+    "Semantic accuracy for all 696 DSKP+textbook lessons",
+    "Correct Quran tasmi continuity and disputed verse boundaries",
+    "Visual rendering for the other 691 DOCX",
+    "Native Telegram/Render full download",
+    "State-specific teaching calendar"
+  ],
+  "release_controls": {
+    "allow_merge_to_main": false,
+    "allow_telegram_rph_delivery": false,
+    "allow_production_db_update": false,
+    "allow_mark_final_ready": false
+  },
+  "staging_asset": "CIKGULAJU_PI_2027_T2_T6_696_RPH_5_RPT_STAGING_20261105.zip",
+  "source_assets": [
+    "CIKGULAJU_PI_2027_RPH_TAHUN_2_6_PRATONTON_GURU_661.zip",
+    "CIKGULAJU_PI_2027_RPH_35_SEMAKAN_ADMIN.zip",
+    "CIKGULAJU_PI_2027_RPT_RPH_696_JADUAL_HITAM_PUTIH_QA_V4_BELUM_READY.zip"
+  ]
+}
