@@ -184,3 +184,9 @@ PdP12–13 dan 24–26 diselaraskan dengan projek terpadu Kesenian Tahun3 halama
 ## 6 Nov 2026 — Smoke Word/PDF 175 RPH fungsi asas Telegram
 - Semua **175 DOCX** berjaya dijana dengan 3 jadual dan seksyen A4; semua **175 PDF** berjaya dijana 1 halaman A4. Tiada ralat dalam ujian asas: [Actions 42129353421](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42129353421).
 - Ini **tidak** membuktikan Word satu halaman dalam aplikasi, penjana sebenar berlapis, sumber Audio, keputusan SK/SP, atau kesamaan Telegram–Web. Tiada perubahan runtime/produksi. Lihat `NATIVE_BASE_RENDER_SMOKE_AUDIT_20261106.md`.
+
+
+## 6 Nov 2026 — SHA-256 dan contoh cetakan manual
+- SHA-256 bagi **175 identiti PdP** kini diuji melalui fail RPH, manifest, RPT, 81 kriteria dan snapshot kalendar, dengan ujian mutasi/symlink fail closed. Modul **staging sahaja**, bukan kelulusan.
+- 5 pasang Word/PDF DRAF disimpan sebagai artifact GitHub untuk semakan manual; [run 42133072447](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42133072447) lulus: 175 Word satu halaman A4 selepas LibreOffice, 175 PDF satu halaman A4. Ini fungsi asas, bukan full runtime.
+- Rujuk `RELEASE_GATE_STATUS_20261106.md` bagi keputusan semasa dan blocker yang belum lulus.
