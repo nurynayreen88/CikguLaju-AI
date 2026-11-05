@@ -1,28 +1,31 @@
 # RPH PENDIDIKAN MUZIK TAHUN 5 — PdP 35
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** Projek Seni Muzik 3 — Persembahan  
-**Bidang:** Projek Seni Muzik  
-**SK/SP:** 5.1.3, 5.1.4  
-**Tempoh cadangan:** 30 minit  
-**Status:** DRAF STAGING — bukan FINAL READY
+**Unit/Tajuk:** Projek Seni Muzik 2 — Persembahan
+**SK/SP (DSKP Tahun 5):** 5.1.3, 5.1.4
+**Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif:** Murid melengkapkan tugas perancangan, latihan atau persembahan kumpulan dengan sekurang-kurangnya 3 daripada 4 kriteria rubrik.
+**Fokus PdP:** Mempersembahkan projek akhir dan refleksi berkumpulan.
 
-**Set induksi (4 minit):** Guru menunjukkan contoh persembahan dan bertanya tentang persediaan, peranan ahli serta disiplin.
+**Objektif:** Mempersembahkan hasil projek muzik dengan memenuhi tiga daripada empat kriteria koordinasi, kemahiran, kerjasama dan nilai murni.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Kumpulan mengagihkan peranan dan merancang aktiviti Membuat persembahan muzik. termasuk susunan alat, latihan dan keselamatan.
+**Set induksi (4 minit):** Ketua kumpulan menyemak peranan setiap ahli, susunan alat dan masa persembahan.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Murid berlatih atau membuat persembahan mini; guru memberi pembetulan tentang koordinasi, ketepatan dan pengurusan pentas.
+**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Kumpulan melakukan latihan terakhir dengan isyarat mula/henti serta membetulkan satu masalah teknikal.
 
-**Pengukuhan dan pentaksiran (6 minit):** Rubrik 4 aspek: kerjasama, ketepatan kemahiran, komunikasi dan refleksi murid.
+**Aktiviti 2 — Amali mengikut unit (10 minit):** Murid membuat persembahan muzik skala kelas dan menyemak hasil rakan berdasarkan rubrik yang telah dipersetujui. Guru dan murid merujuk tema **Projek Seni Muzik 2 — Persembahan**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Guru menilai penglibatan, kreativiti, ketepatan serta amalan nilai murni; murid menulis refleksi satu ayat.
 
-**Bahan:** Instrumen muzik, carta latihan/peranan dan rubrik projek.
+**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 5. Halaman buku teks tidak disahkan. Rakaman/trek audio belum disahkan.
+**Bahan:** Alat muzik/skor yang telah dipelajari, ruang persembahan dan rubrik.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. Tiada rujukan halaman buku teks untuk PdP projek. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks tiada BELUM disahkan pada buku asal; Kod SP projek mengikuti struktur DSKP Tahun 5; penomboran SP projek dalam RPT awam berbeza dan perlu pengesahan manual.
+
+**Refleksi dan pemulihan:** _________________________________________________
+
+**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.

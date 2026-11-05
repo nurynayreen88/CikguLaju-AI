@@ -1,28 +1,31 @@
 # RPH PENDIDIKAN MUZIK TAHUN 5 — PdP 05
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** SANTUN DI JALAN RAYA  
-**Bidang:** Bahasa dan Notasi Muzik  
-**SK/SP:** 1.1.2, 2.1.4  
-**Tempoh cadangan:** 30 minit  
-**Status:** DRAF STAGING — bukan FINAL READY
+**Unit/Tajuk:** SANTUN DI JALAN RAYA
+**SK/SP (DSKP Tahun 5):** 1.1.2, 2.1.4
+**Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif:** Murid mengenal 3 daripada 4 notasi/simbol dan mengaplikasikan satu contoh dalam aktiviti muzik.
+**Fokus PdP:** Tanda forte (f) dan piano (p) pada skor dan lagu.
 
-**Set induksi (4 minit):** Guru memaparkan kad notasi dan bertanya simbol atau ton yang diketahui murid.
+**Objektif:** Mengenal dan mengaplikasikan simbol f dan p dalam satu frasa nyanyian pada dua tahap bunyi berbeza.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Guru menerangkan Membaca, menulis dan memahami terminologi serta simbol muzik: (i) piano ( p ) (ii) forte ( f ) (iii) staccato (iv) legato; murid membaca/menulis simbol yang betul pada baluk atau kad.
+**Set induksi (4 minit):** Guru memperdengarkan dua tahap kelantangan dengan suara, murid menamakan perbezaannya.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Murid memadankan simbol dengan contoh bunyi dan menggunakannya dalam latihan nyanyian/perkusi/rekoder.
+**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Murid memadankan f (forte) dan p (piano) pada kad/ruang skor; guru menunjukkan kawalan suara.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak 4 item pengecaman dan satu demonstrasi penggunaan simbol.
+**Aktiviti 2 — Amali mengikut unit (10 minit):** Kumpulan mempersembahkan frasa dengan perubahan f/p yang ditandakan pada skor dan memerhati keselarasan. Guru dan murid merujuk tema **SANTUN DI JALAN RAYA**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Semak pengecaman dua simbol dan perubahan dinamik yang boleh didengar.
 
-**Bahan:** Baluk, kad notasi, contoh audio.
+**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 5. Halaman buku teks tidak disahkan. Rakaman/trek audio belum disahkan.
+**Bahan:** Kad forte/piano, skor ringkas dan rakaman lagu.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 13; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 13 BELUM disahkan pada buku asal.
+
+**Refleksi dan pemulihan:** _________________________________________________
+
+**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.

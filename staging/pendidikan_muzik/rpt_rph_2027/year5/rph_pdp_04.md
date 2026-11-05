@@ -1,28 +1,31 @@
 # RPH PENDIDIKAN MUZIK TAHUN 5 — PdP 04
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** SANTUN DI JALAN RAYA  
-**Bidang:** Nyanyian  
-**SK/SP:** 2.1.1, 2.1.3, 2.3.1  
-**Tempoh cadangan:** 30 minit  
-**Status:** DRAF STAGING — bukan FINAL READY
+**Unit/Tajuk:** SANTUN DI JALAN RAYA
+**SK/SP (DSKP Tahun 5):** 2.1.1, 2.1.3, 2.3.1
+**Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif:** Murid menyanyikan frasa lagu dengan sekurang-kurangnya 2 daripada 3 kriteria pic, tempo dan ekspresi/teknik yang tepat.
+**Fokus PdP:** Nyanyian dan gerak mengikut tempo.
 
-**Set induksi (4 minit):** Guru memperdengarkan frasa lagu daripada unit ini; murid mengajuk pic dan menyebut perubahan ekspresi.
+**Objektif:** Menyanyi dengan pic dan tempo serta menunjukkan dua pola gerakan berirama yang sepadan.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Guru memodelkan pernafasan, postur serta fokus SP: Bernyanyi dengan pic yang betul.; murid mengajuk satu bar pada satu masa.
+**Set induksi (4 minit):** Guru memperdengarkan lagu bertema unit; murid menandakan detik dengan langkah di tempat.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Murid menyanyikan frasa/rangkap dalam kumpulan kemudian mengulang secara berpasangan dengan pembetulan pic, tempo serta dinamik mengikut SP.
+**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Murid berlatih frasa nyanyian secara respons-gema dan mengikuti ketukan tempo guru.
 
-**Pengukuhan dan pentaksiran (6 minit):** Guru menyemak 3 kriteria (pic, tempo, teknik/dinamik), mencatat percubaan pertama dan kedua.
+**Aktiviti 2 — Amali mengikut unit (10 minit):** Secara berkumpulan, murid menambah dua gerak selamat pada nyanyian dan mempersembahkannya bersama iringan. Guru dan murid merujuk tema **SANTUN DI JALAN RAYA**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Perhatikan pic, tempo dan padanan gerak; murid membetulkan satu aspek sebelum mengulang.
 
-**Bahan:** Rakaman lagu yang diizinkan, skor ringkas, pembesar suara.
+**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 5. RPT rujukan mencatat halaman buku teks 10-12 (belum disahkan pada buku asal). Rakaman/trek audio belum disahkan.
+**Bahan:** Lagu/skor unit, alat ketuk tempo dan ruang gerakan.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 10-12; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 10-12 BELUM disahkan pada buku asal.
+
+**Refleksi dan pemulihan:** _________________________________________________
+
+**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.

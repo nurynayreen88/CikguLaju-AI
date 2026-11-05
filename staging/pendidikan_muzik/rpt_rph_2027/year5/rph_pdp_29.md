@@ -1,30 +1,31 @@
 # RPH PENDIDIKAN MUZIK TAHUN 5 — PdP 29
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** Unit 9 — tajuk buku teks belum disahkan  
-**Bidang:** Rekoder  
-**SK/SP:** 2.4.1, 2.4.2  
-**Tempoh cadangan:** 30 minit  
-**Status:** DRAF STAGING — bukan FINAL READY
+**Unit/Tajuk:** ADIWIRA
+**SK/SP (DSKP Tahun 5):** 2.3.1
+**Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — belum FINAL READY
 
-**Perkara belum disahkan:** Tajuk Unit belum dapat disahkan pada buku asal.
+**Fokus PdP:** Merancang gerakan berdasarkan meter dan tempo Adiwira.
 
-**Objektif:** Murid memainkan frasa rekoder pada julat not DSKP Tahun 5 dengan sekurang-kurangnya 3 daripada 4 aspek teknik yang betul.
+**Objektif:** Menghasilkan dan mempersembahkan dua urutan gerakan yang mengikut meter serta tempo muzik.
 
-**Set induksi (4 minit):** Guru menunjukkan carta penjarian dan memperagakan ton lembut serta bersih.
+**Set induksi (4 minit):** Murid menandakan detik dengan langkah setempat ketika guru memperdengarkan petikan muzik.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Murid menyemak postur, penjarian dan perlidahan 'tu' untuk: Memainkan rekoder bagi not E, F, G, A, B, C’ dan D’ dengan ton yang baik mengikut tempo..
+**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Guru menunjukkan hubungan meter/tempo dengan pola gerak; murid menguji dua pola yang tidak mengganggu ruang rakan.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Murid membaca dua bar skor, memainkan secara perlahan dan mengulang dengan tempo stabil; pasangan memberi maklum balas.
+**Aktiviti 2 — Amali mengikut unit (10 minit):** Kumpulan merancang formasi, menyusun dua urutan gerak, dan mempersembahkan semula setelah menerima maklum balas. Guru dan murid merujuk tema **ADIWIRA**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak penjarian, embouchure, pernafasan dan tempo; nilai setiap murid pada dua percubaan.
+**Pengukuhan dan pentaksiran (6 minit):** Semak keselarasan tempo, ketepatan meter, koordinasi dan disiplin keselamatan gerakan.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
 
-**Bahan:** Rekoder bersih, skor melodi ringkas, carta penjarian.
+**Bahan:** Audio muzik dibenarkan, ruang lapang dan kad kiraan/formasi.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 5. Halaman buku teks tidak disahkan. Rakaman/trek audio belum disahkan.
+**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 74-77; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 74-77 BELUM disahkan pada buku asal.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Refleksi dan pemulihan:** _________________________________________________
+
+**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.

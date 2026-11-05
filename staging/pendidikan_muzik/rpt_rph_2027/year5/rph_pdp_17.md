@@ -1,30 +1,31 @@
 # RPH PENDIDIKAN MUZIK TAHUN 5 — PdP 17
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** Unit 5 — tajuk buku teks belum disahkan  
-**Bidang:** Bahasa dan Notasi Muzik  
-**SK/SP:** 1.1.1, 1.1.3  
-**Tempoh cadangan:** 30 minit  
-**Status:** DRAF STAGING — bukan FINAL READY
+**Unit/Tajuk:** RAJA DI LAUTAN
+**SK/SP (DSKP Tahun 5):** 2.4.1
+**Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — belum FINAL READY
 
-**Perkara belum disahkan:** Tajuk Unit belum dapat disahkan pada buku asal.
+**Fokus PdP:** Pengukuhan penjarian dan postur rekoder bagi Raja di Lautan.
 
-**Objektif:** Murid mengenal 3 daripada 4 notasi/simbol dan mengaplikasikan satu contoh dalam aktiviti muzik.
+**Objektif:** Memainkan satu frasa rekoder dengan 3 daripada 4 aspek teknik (penjarian, ton, tempo, pernafasan) yang betul.
 
-**Set induksi (4 minit):** Guru memaparkan kad notasi dan bertanya simbol atau ton yang diketahui murid.
+**Set induksi (4 minit):** Guru memperagakan satu bunyi rekoder yang bersih dan satu yang berhembus kuat; murid menjelaskan perbezaannya.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Guru menerangkan Membaca dan menulis not E, F, G, A, B, C’, D’ serta tanda rehat pada baluk: (i) (ii) tanda rehat; murid membaca/menulis simbol yang betul pada baluk atau kad.
+**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Murid menunjukkan postur, penjarian, pernafasan dan perlidahan ‘tu’ sebelum memainkan not sasaran E hingga D’ mengikut kemampuan.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Murid memadankan simbol dengan contoh bunyi dan menggunakannya dalam latihan nyanyian/perkusi/rekoder.
+**Aktiviti 2 — Amali mengikut unit (10 minit):** Murid membaca satu frasa skor pendek, memainkan perlahan secara individu dan mengulang secara berpasangan setelah semakan penjarian. Guru dan murid merujuk tema **RAJA DI LAUTAN**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak 4 item pengecaman dan satu demonstrasi penggunaan simbol.
+**Pengukuhan dan pentaksiran (6 minit):** Guru membuat senarai semak penjarian, ton, tempo dan pernafasan; murid menunjukkan pembaikan pada percubaan kedua.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
 
-**Bahan:** Baluk, kad notasi, contoh audio.
+**Bahan:** Rekoder bersih, carta penjarian not, skor asas dan alat penentu tempo.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 5. Halaman buku teks tidak disahkan. Rakaman/trek audio belum disahkan.
+**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 42-43; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 42-43 BELUM disahkan pada buku asal.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Refleksi dan pemulihan:** _________________________________________________
+
+**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.

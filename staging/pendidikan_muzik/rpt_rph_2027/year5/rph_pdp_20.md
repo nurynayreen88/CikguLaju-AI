@@ -1,28 +1,31 @@
 # RPH PENDIDIKAN MUZIK TAHUN 5 — PdP 20
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** SILAP MATA  
-**Bidang:** Gerakan Mengikut Muzik  
-**SK/SP:** 2.3.1  
-**Tempoh cadangan:** 30 minit  
-**Status:** DRAF STAGING — bukan FINAL READY
+**Unit/Tajuk:** SILAP MATA
+**SK/SP (DSKP Tahun 5):** 2.3.1
+**Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif:** Murid mempersembahkan dua urutan gerakan empat atau lapan kiraan mengikut tempo dan tema yang dipilih.
+**Fokus PdP:** Pergerakan bermeter dan tempo dalam Silap Mata.
 
-**Set induksi (4 minit):** Guru memainkan petikan, murid mengesan detik dan memberi respons dengan pergerakan di tempat.
+**Objektif:** Menghasilkan dan mempersembahkan dua urutan gerakan yang mengikut meter serta tempo muzik.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Guru membimbing gerakan yang sesuai dengan Merancang dan melakukan pergerakan mengikut muzik yang didengar berdasarkan: (i) meter dan (ii) tempo; murid membezakan tempo/tema serta corak gerakan.
+**Set induksi (4 minit):** Murid menandakan detik dengan langkah setempat ketika guru memperdengarkan petikan muzik.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Murid merancang urutan gerakan dan formasi dalam kumpulan lalu menunjukkan persembahan ringkas mengikut muzik.
+**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Guru menunjukkan hubungan meter/tempo dengan pola gerak; murid menguji dua pola yang tidak mengganggu ruang rakan.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak padanan tema, tempo, koordinasi dan keselamatan ruang menggunakan rubrik tiga tahap.
+**Aktiviti 2 — Amali mengikut unit (10 minit):** Kumpulan merancang formasi, menyusun dua urutan gerak, dan mempersembahkan semula setelah menerima maklum balas. Guru dan murid merujuk tema **SILAP MATA**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Semak keselarasan tempo, ketepatan meter, koordinasi dan disiplin keselamatan gerakan.
 
-**Bahan:** Rakaman muzik, pembesar suara, ruang selamat.
+**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 5. RPT rujukan mencatat halaman buku teks 50-53 (belum disahkan pada buku asal). Rakaman/trek audio belum disahkan.
+**Bahan:** Audio muzik dibenarkan, ruang lapang dan kad kiraan/formasi.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 50-53; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 50-53 BELUM disahkan pada buku asal.
+
+**Refleksi dan pemulihan:** _________________________________________________
+
+**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.

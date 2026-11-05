@@ -1,28 +1,31 @@
 # RPH PENDIDIKAN MUZIK TAHUN 5 — PdP 07
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** BUSAK PAKUI  
-**Bidang:** Permainan Alat Perkusi  
-**SK/SP:** 2.2.1, 2.2.2  
-**Tempoh cadangan:** 30 minit  
-**Status:** DRAF STAGING — bukan FINAL READY
+**Unit/Tajuk:** BUSAK PAKUI
+**SK/SP (DSKP Tahun 5):** 2.1.1, 2.1.3, 2.2.1
+**Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif:** Murid memainkan corak irama empat detik secara tepat dalam sekurang-kurangnya 2 daripada 3 percubaan.
+**Fokus PdP:** Gabungan nyanyian dan perkusi mengikut tempo.
 
-**Set induksi (4 minit):** Guru mengetuk empat detik; murid mengenal pasti detik dan mengajuk secara tepukan.
+**Objektif:** Menggabungkan nyanyian dan perkusi dalam satu persembahan kecil mengikut tempo seragam.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Murid membaca corak irama/skor ikon dengan tumpuan Memainkan alat perkusi mengikut tempo berdasarkan skor: (i) (ii) tanda rehat; guru memberi contoh pola sebelum menggunakan alat.
+**Set induksi (4 minit):** Guru membahagikan murid kepada penyanyi dan pemain perkusi untuk memberi respons pada satu pola detik.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Kumpulan memainkan irama dengan alat perkusi pada dua tempo; rakan menyemak pola, detik dan dinamik.
+**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Kumpulan nyanyian mempelajari frasa lagu, sementara kumpulan perkusi menepuk pola iringan berdasarkan skor.
 
-**Pengukuhan dan pentaksiran (6 minit):** Senarai semak ketepatan ritma, tempo dan kerjasama; pembetulan dan ulang satu pola.
+**Aktiviti 2 — Amali mengikut unit (10 minit):** Kedua-dua kumpulan bergabung, mencuba tempo bersama, bertukar peranan dan membaiki bahagian yang kurang tepat. Guru dan murid merujuk tema **BUSAK PAKUI**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Semak pic, tempo dan koordinasi ensembel mengikut rubrik tiga aspek.
 
-**Bahan:** Kad skor, metronom atau kiraan, alat perkusi.
+**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 5. Halaman buku teks tidak disahkan. Rakaman/trek audio belum disahkan.
+**Bahan:** Rakaman lagu, skor mudah dan alat perkusi.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 18-21; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 18-21 BELUM disahkan pada buku asal.
+
+**Refleksi dan pemulihan:** _________________________________________________
+
+**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.

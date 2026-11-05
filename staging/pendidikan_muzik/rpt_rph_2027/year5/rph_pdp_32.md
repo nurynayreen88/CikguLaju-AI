@@ -1,28 +1,31 @@
 # RPH PENDIDIKAN MUZIK TAHUN 5 — PdP 32
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** JOGET KHATULISTIWA  
-**Bidang:** Rekoder  
-**SK/SP:** 2.4.1, 2.4.2  
-**Tempoh cadangan:** 30 minit  
-**Status:** DRAF STAGING — bukan FINAL READY
+**Unit/Tajuk:** JOGET KHATULISTIWA
+**SK/SP (DSKP Tahun 5):** 2.4.2
+**Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif:** Murid memainkan frasa rekoder pada julat not DSKP Tahun 5 dengan sekurang-kurangnya 3 daripada 4 aspek teknik yang betul.
+**Fokus PdP:** Persembahan melodi kaunter ensembel rekoder.
 
-**Set induksi (4 minit):** Guru menunjukkan carta penjarian dan memperagakan ton lembut serta bersih.
+**Objektif:** Memainkan melodi kaunter bersama pasangan dengan tempoh masuk, nada dan tempo yang seragam.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Murid menyemak postur, penjarian dan perlidahan 'tu' untuk: Memainkan rekoder bagi not E, F, G, A, B, C’ dan D’ dengan ton yang baik mengikut tempo..
+**Set induksi (4 minit):** Guru menunjukkan dua lapisan melodi dan meminta murid meneka bahagian melodi utama serta kaunter.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Murid membaca dua bar skor, memainkan secara perlahan dan mengulang dengan tempo stabil; pasangan memberi maklum balas.
+**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Guru membahagikan dua suara melodi pada skor; murid membaca garis melodi sendiri dan berlatih masuk selepas isyarat.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak penjarian, embouchure, pernafasan dan tempo; nilai setiap murid pada dua percubaan.
+**Aktiviti 2 — Amali mengikut unit (10 minit):** Dua kumpulan memainkan melodi utama dan melodi kaunter secara bergilir, kemudian serentak; murid mencatat bahagian yang perlu dibaiki. Guru dan murid merujuk tema **JOGET KHATULISTIWA**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Nilai masa masuk, keseragaman tempo, ton dan ketepatan penjarian melalui persembahan dua pusingan.
 
-**Bahan:** Rekoder bersih, skor melodi ringkas, carta penjarian.
+**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 5. Halaman buku teks tidak disahkan. Rakaman/trek audio belum disahkan.
+**Bahan:** Rekoder, skor melodi utama/kaunter yang sah, carta penjarian dan metronom.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 80-83; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 80-83 BELUM disahkan pada buku asal; RPT menyatukan minggu 33–35; CikguLaju memecahkan menjadi dua PdP latihan teknik/ensembel (CADANGAN, bukan dua baris RPT rasmi).
+
+**Refleksi dan pemulihan:** _________________________________________________
+
+**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.

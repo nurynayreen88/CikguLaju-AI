@@ -1,28 +1,31 @@
 # RPH PENDIDIKAN MUZIK TAHUN 5 — PdP 09
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** BUSAK PAKUI  
-**Bidang:** Kreativiti Muzik  
-**SK/SP:** 3.1.1  
-**Tempoh cadangan:** 30 minit  
-**Status:** DRAF STAGING — bukan FINAL READY
+**Unit/Tajuk:** BUSAK PAKUI
+**SK/SP (DSKP Tahun 5):** 3.1.1
+**Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif:** Murid membina dan mempersembahkan satu frasa irama atau melodi empat detik dengan sekurang-kurangnya 3 kriteria dipenuhi.
+**Fokus PdP:** Mencipta melodi menggunakan not B, A, G.
 
-**Set induksi (4 minit):** Guru memberi soalan ritma empat detik; murid memberi jawapan tepukan sendiri.
+**Objektif:** Mencipta satu corak irama atau melodi pendek yang dapat dipersembahkan dengan sekurang-kurangnya tiga kriteria tepat.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Guru memandu murid mencipta pola berpandukan Mencipta melodi mudah menggunakan not B, A dan G. dengan kad not dan bunyi yang dibenarkan SP.
+**Set induksi (4 minit):** Guru memperdengarkan pola soalan empat detik; murid menjawab dengan tepukan yang berbeza.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Murid merancang urutan, menyusun skor ciptaan dan mempersembahkannya secara pasangan, kemudian menerima cadangan penambahbaikan.
+**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Murid mengenal not yang dibenarkan DSKP, menyusun kad not B, A, G atau corak yang sesuai dan menguji bunyinya.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak bilangan detik, kesesuaian pic/not dan persembahan; murid membetulkan satu unsur.
+**Aktiviti 2 — Amali mengikut unit (10 minit):** Pasangan menulis pola ciptaan pada kad/skor, memainkan dan membaiki satu bahagian selepas ulasan rakan. Guru dan murid merujuk tema **BUSAK PAKUI**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Semak bilangan detik, logik susunan not/corak serta kelancaran persembahan ciptaan.
 
-**Bahan:** Kad corak, alat perkusi atau rekoder, helaian skor.
+**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 5. RPT rujukan mencatat halaman buku teks 24-25 (belum disahkan pada buku asal). Rakaman/trek audio belum disahkan.
+**Bahan:** Kad not, helaian skor, alat perkusi atau rekoder mengikut SP.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 24-25; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 24-25 BELUM disahkan pada buku asal.
+
+**Refleksi dan pemulihan:** _________________________________________________
+
+**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.
