@@ -1,0 +1,3594 @@
+{
+  "date": "2026-11-05",
+  "scope": "Individual SP-aligned pedagogy edits, not 2021 textbook activity visual proof",
+  "results": [
+    {
+      "year": 2,
+      "session": 4,
+      "unit": 1,
+      "sp": [
+        "1.1",
+        "1.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Dua ahli keluarga mengamalkan pegangan masing-masing dan saling menghormati",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "31c82dc1a4ce7fd3",
+      "new_sha256_16": "1c126a76403ec390"
+    },
+    {
+      "year": 2,
+      "session": 5,
+      "unit": 1,
+      "sp": [
+        "1.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Dua ahli keluarga mengamalkan pegangan masing-masing dan saling menghormati",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "dd209ee5823de58d",
+      "new_sha256_16": "c123a4973bf7d8bb"
+    },
+    {
+      "year": 2,
+      "session": 6,
+      "unit": 1,
+      "sp": [
+        "1.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Dua ahli keluarga mengamalkan pegangan masing-masing dan saling menghormati",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "23c544d20271abe1",
+      "new_sha256_16": "8e5c0aadca3c714a"
+    },
+    {
+      "year": 2,
+      "session": 10,
+      "unit": 2,
+      "sp": [
+        "2.1",
+        "2.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Ibu sedang menyediakan makan malam dan adik memerlukan bantuan menyusun meja",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "11d1a6d20b2205a4",
+      "new_sha256_16": "14d38b2177f006dd"
+    },
+    {
+      "year": 2,
+      "session": 11,
+      "unit": 2,
+      "sp": [
+        "2.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Ibu sedang menyediakan makan malam dan adik memerlukan bantuan menyusun meja",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "9edb7643cc1e7057",
+      "new_sha256_16": "09768a9d8a62f6c6"
+    },
+    {
+      "year": 2,
+      "session": 12,
+      "unit": 2,
+      "sp": [
+        "2.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Ibu sedang menyediakan makan malam dan adik memerlukan bantuan menyusun meja",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "0be60b79280b233d",
+      "new_sha256_16": "622cbeefb742bb0a"
+    },
+    {
+      "year": 2,
+      "session": 13,
+      "unit": 2,
+      "sp": [
+        "2.5"
+      ],
+      "approach": "practice",
+      "scenario": "Ibu sedang menyediakan makan malam dan adik memerlukan bantuan menyusun meja",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "e88465287a72ceed",
+      "new_sha256_16": "9e18e83e37c46753"
+    },
+    {
+      "year": 2,
+      "session": 17,
+      "unit": 3,
+      "sp": [
+        "3.1",
+        "3.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Keluarga membahagi tugasan sebelum tetamu datang ke rumah",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "b5f1dc02afb1d927",
+      "new_sha256_16": "e34fc27b963a9232"
+    },
+    {
+      "year": 2,
+      "session": 18,
+      "unit": 3,
+      "sp": [
+        "3.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Keluarga membahagi tugasan sebelum tetamu datang ke rumah",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "8b58d7a3e3015f3e",
+      "new_sha256_16": "55802e7644a3c76b"
+    },
+    {
+      "year": 2,
+      "session": 19,
+      "unit": 3,
+      "sp": [
+        "3.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Keluarga membahagi tugasan sebelum tetamu datang ke rumah",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "ed85b6fc4d9aaed1",
+      "new_sha256_16": "9a6c9b560bee67a7"
+    },
+    {
+      "year": 2,
+      "session": 20,
+      "unit": 3,
+      "sp": [
+        "3.5"
+      ],
+      "approach": "practice",
+      "scenario": "Keluarga membahagi tugasan sebelum tetamu datang ke rumah",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "645ec02eabce7a68",
+      "new_sha256_16": "fc5c7f6cf4b01806"
+    },
+    {
+      "year": 2,
+      "session": 24,
+      "unit": 4,
+      "sp": [
+        "4.1",
+        "4.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Datuk membantu cucu belajar dan cucu ingin menunjukkan penghargaan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "4f3f9d1e50c85c11",
+      "new_sha256_16": "64c58b5caa032b06"
+    },
+    {
+      "year": 2,
+      "session": 25,
+      "unit": 4,
+      "sp": [
+        "4.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Datuk membantu cucu belajar dan cucu ingin menunjukkan penghargaan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "98c1918c42ab82c7",
+      "new_sha256_16": "42dd16baa781a448"
+    },
+    {
+      "year": 2,
+      "session": 26,
+      "unit": 4,
+      "sp": [
+        "4.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Datuk membantu cucu belajar dan cucu ingin menunjukkan penghargaan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "a674edab535957ea",
+      "new_sha256_16": "2b3c3726eccaddf8"
+    },
+    {
+      "year": 2,
+      "session": 27,
+      "unit": 4,
+      "sp": [
+        "4.5"
+      ],
+      "approach": "practice",
+      "scenario": "Datuk membantu cucu belajar dan cucu ingin menunjukkan penghargaan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "56f9d066fefd7344",
+      "new_sha256_16": "3811559f730277f8"
+    },
+    {
+      "year": 2,
+      "session": 31,
+      "unit": 5,
+      "sp": [
+        "5.1",
+        "5.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Anak ingin menyampaikan pendapat berbeza kepada ibu bapa secara beradab",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "75c10681211184e0",
+      "new_sha256_16": "987816114ebe3620"
+    },
+    {
+      "year": 2,
+      "session": 32,
+      "unit": 5,
+      "sp": [
+        "5.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Anak ingin menyampaikan pendapat berbeza kepada ibu bapa secara beradab",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "e108123b874d4304",
+      "new_sha256_16": "d83df0153b1b33e6"
+    },
+    {
+      "year": 2,
+      "session": 33,
+      "unit": 5,
+      "sp": [
+        "5.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Anak ingin menyampaikan pendapat berbeza kepada ibu bapa secara beradab",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "78ec20827fb4eb80",
+      "new_sha256_16": "864b77ffa2167b51"
+    },
+    {
+      "year": 2,
+      "session": 34,
+      "unit": 5,
+      "sp": [
+        "5.5"
+      ],
+      "approach": "practice",
+      "scenario": "Anak ingin menyampaikan pendapat berbeza kepada ibu bapa secara beradab",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "6dd0ec34985cf644",
+      "new_sha256_16": "b4f29e42cba5d26d"
+    },
+    {
+      "year": 2,
+      "session": 38,
+      "unit": 6,
+      "sp": [
+        "6.1",
+        "6.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Dua beradik berebut penggunaan alat permainan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "fec06b5216b8082c",
+      "new_sha256_16": "f318e817455000fe"
+    },
+    {
+      "year": 2,
+      "session": 39,
+      "unit": 6,
+      "sp": [
+        "6.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Dua beradik berebut penggunaan alat permainan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "560648c9027b6051",
+      "new_sha256_16": "8796e1927f4a152d"
+    },
+    {
+      "year": 2,
+      "session": 40,
+      "unit": 6,
+      "sp": [
+        "6.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Dua beradik berebut penggunaan alat permainan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "7cae1b15707f3a61",
+      "new_sha256_16": "7c39f0070ae2cd64"
+    },
+    {
+      "year": 2,
+      "session": 41,
+      "unit": 6,
+      "sp": [
+        "6.5"
+      ],
+      "approach": "practice",
+      "scenario": "Dua beradik berebut penggunaan alat permainan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "e2e41b6ec80a65e3",
+      "new_sha256_16": "30b3230395d8df5b"
+    },
+    {
+      "year": 2,
+      "session": 45,
+      "unit": 7,
+      "sp": [
+        "7.1",
+        "7.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Seorang ahli keluarga demam dan memerlukan perhatian",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "6e928fbe99e002bc",
+      "new_sha256_16": "7511333c2ba2add2"
+    },
+    {
+      "year": 2,
+      "session": 46,
+      "unit": 7,
+      "sp": [
+        "7.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Seorang ahli keluarga demam dan memerlukan perhatian",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "1c0ae1812240afec",
+      "new_sha256_16": "d3a4c0aa3507e781"
+    },
+    {
+      "year": 2,
+      "session": 47,
+      "unit": 7,
+      "sp": [
+        "7.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Seorang ahli keluarga demam dan memerlukan perhatian",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "17d1cfcfce456e65",
+      "new_sha256_16": "dc3be6152f144212"
+    },
+    {
+      "year": 2,
+      "session": 48,
+      "unit": 7,
+      "sp": [
+        "7.5"
+      ],
+      "approach": "practice",
+      "scenario": "Seorang ahli keluarga demam dan memerlukan perhatian",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "c9b27a2c6cd77488",
+      "new_sha256_16": "90837917e0aec6bf"
+    },
+    {
+      "year": 2,
+      "session": 52,
+      "unit": 8,
+      "sp": [
+        "8.1",
+        "8.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Empat beradik membahagi tugas rumah secara adil",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "c12288aa5f462626",
+      "new_sha256_16": "55c92ae3e5c37204"
+    },
+    {
+      "year": 2,
+      "session": 53,
+      "unit": 8,
+      "sp": [
+        "8.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Empat beradik membahagi tugas rumah secara adil",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "4b04b71a17bd1819",
+      "new_sha256_16": "32e2ecf3dc047709"
+    },
+    {
+      "year": 2,
+      "session": 54,
+      "unit": 8,
+      "sp": [
+        "8.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Empat beradik membahagi tugas rumah secara adil",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "51b392f3e7a02a17",
+      "new_sha256_16": "531cf9e08acf1db2"
+    },
+    {
+      "year": 2,
+      "session": 55,
+      "unit": 8,
+      "sp": [
+        "8.5"
+      ],
+      "approach": "practice",
+      "scenario": "Empat beradik membahagi tugas rumah secara adil",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "6beee0f82a12ece3",
+      "new_sha256_16": "0a6020831e6f89fe"
+    },
+    {
+      "year": 2,
+      "session": 59,
+      "unit": 9,
+      "sp": [
+        "9.1",
+        "9.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Seorang rakan menyebarkan cerita yang tidak benar mengenai keluarga",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "f81d154f7b2825c5",
+      "new_sha256_16": "43647ca53a75f035"
+    },
+    {
+      "year": 2,
+      "session": 60,
+      "unit": 9,
+      "sp": [
+        "9.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Seorang rakan menyebarkan cerita yang tidak benar mengenai keluarga",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "08b1d32c27ada66b",
+      "new_sha256_16": "c401bcf98a62b903"
+    },
+    {
+      "year": 2,
+      "session": 61,
+      "unit": 9,
+      "sp": [
+        "9.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Seorang rakan menyebarkan cerita yang tidak benar mengenai keluarga",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "957cf85834e31c9f",
+      "new_sha256_16": "11fd5d7647628c91"
+    },
+    {
+      "year": 2,
+      "session": 62,
+      "unit": 9,
+      "sp": [
+        "9.5"
+      ],
+      "approach": "practice",
+      "scenario": "Seorang rakan menyebarkan cerita yang tidak benar mengenai keluarga",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "e25a3a952e09403d",
+      "new_sha256_16": "32a53cbe410f6382"
+    },
+    {
+      "year": 2,
+      "session": 66,
+      "unit": 10,
+      "sp": [
+        "10.1",
+        "10.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Murid menjumpai wang keluarga yang tertinggal di atas meja",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "54c761594d02422e",
+      "new_sha256_16": "7f587825c48c79c3"
+    },
+    {
+      "year": 2,
+      "session": 67,
+      "unit": 10,
+      "sp": [
+        "10.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Murid menjumpai wang keluarga yang tertinggal di atas meja",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "8bde501731c47dae",
+      "new_sha256_16": "1d0f607e1f5c061b"
+    },
+    {
+      "year": 2,
+      "session": 68,
+      "unit": 10,
+      "sp": [
+        "10.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Murid menjumpai wang keluarga yang tertinggal di atas meja",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "457f938f95dbc581",
+      "new_sha256_16": "bdcc86eff3e24300"
+    },
+    {
+      "year": 2,
+      "session": 69,
+      "unit": 10,
+      "sp": [
+        "10.5"
+      ],
+      "approach": "practice",
+      "scenario": "Murid menjumpai wang keluarga yang tertinggal di atas meja",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "7b39146c2b389cd2",
+      "new_sha256_16": "343a6e6c42ff4557"
+    },
+    {
+      "year": 2,
+      "session": 73,
+      "unit": 11,
+      "sp": [
+        "11.1",
+        "11.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Sebuah keluarga perlu mengemas ruang tamu selepas majlis makan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "a40d989cd83a48fa",
+      "new_sha256_16": "85aa932481e98c4d"
+    },
+    {
+      "year": 2,
+      "session": 74,
+      "unit": 11,
+      "sp": [
+        "11.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Sebuah keluarga perlu mengemas ruang tamu selepas majlis makan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "967475bb46f33a82",
+      "new_sha256_16": "5cc6f1756838a27c"
+    },
+    {
+      "year": 2,
+      "session": 75,
+      "unit": 11,
+      "sp": [
+        "11.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Sebuah keluarga perlu mengemas ruang tamu selepas majlis makan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "6e32df405de32048",
+      "new_sha256_16": "1db218d5c6671d82"
+    },
+    {
+      "year": 2,
+      "session": 76,
+      "unit": 11,
+      "sp": [
+        "11.5"
+      ],
+      "approach": "practice",
+      "scenario": "Sebuah keluarga perlu mengemas ruang tamu selepas majlis makan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "e9a5c461684f6c02",
+      "new_sha256_16": "487185958644039d"
+    },
+    {
+      "year": 2,
+      "session": 80,
+      "unit": 12,
+      "sp": [
+        "12.1",
+        "12.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Sekeluarga merancang gotong-royong membersihkan halaman",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "17fada9a5d40b695",
+      "new_sha256_16": "5634856fece1ab7e"
+    },
+    {
+      "year": 2,
+      "session": 81,
+      "unit": 12,
+      "sp": [
+        "12.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Sekeluarga merancang gotong-royong membersihkan halaman",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "4ed902981e052bd9",
+      "new_sha256_16": "178e39a8a06d0b53"
+    },
+    {
+      "year": 2,
+      "session": 82,
+      "unit": 12,
+      "sp": [
+        "12.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Sekeluarga merancang gotong-royong membersihkan halaman",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "4c8994885ab74db6",
+      "new_sha256_16": "758353ddf9b2485f"
+    },
+    {
+      "year": 2,
+      "session": 83,
+      "unit": 12,
+      "sp": [
+        "12.5"
+      ],
+      "approach": "practice",
+      "scenario": "Sekeluarga merancang gotong-royong membersihkan halaman",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "5cda6cce38d2652b",
+      "new_sha256_16": "f57bae660b936318"
+    },
+    {
+      "year": 2,
+      "session": 87,
+      "unit": 13,
+      "sp": [
+        "13.1",
+        "13.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Murid mahu membeli permainan mahal walaupun keluarga perlu berjimat",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "11b213be431b4b16",
+      "new_sha256_16": "144d027fe2c63c2b"
+    },
+    {
+      "year": 2,
+      "session": 88,
+      "unit": 13,
+      "sp": [
+        "13.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Murid mahu membeli permainan mahal walaupun keluarga perlu berjimat",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "a6f6693267d6b48c",
+      "new_sha256_16": "0d41bcd927511636"
+    },
+    {
+      "year": 2,
+      "session": 89,
+      "unit": 13,
+      "sp": [
+        "13.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Murid mahu membeli permainan mahal walaupun keluarga perlu berjimat",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "ec130ed920b19878",
+      "new_sha256_16": "90361f114460c300"
+    },
+    {
+      "year": 2,
+      "session": 90,
+      "unit": 13,
+      "sp": [
+        "13.5"
+      ],
+      "approach": "practice",
+      "scenario": "Murid mahu membeli permainan mahal walaupun keluarga perlu berjimat",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "cd9bbc10d56468a0",
+      "new_sha256_16": "9a099eb951b3b96e"
+    },
+    {
+      "year": 2,
+      "session": 94,
+      "unit": 14,
+      "sp": [
+        "14.1",
+        "14.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Adik-beradik berbeza pandangan tentang aktiviti hujung minggu",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "81ef654b27c6e36d",
+      "new_sha256_16": "33c5e461f6ea3531"
+    },
+    {
+      "year": 2,
+      "session": 95,
+      "unit": 14,
+      "sp": [
+        "14.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Adik-beradik berbeza pandangan tentang aktiviti hujung minggu",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "82393591cff635bb",
+      "new_sha256_16": "577c447757d42124"
+    },
+    {
+      "year": 2,
+      "session": 96,
+      "unit": 14,
+      "sp": [
+        "14.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Adik-beradik berbeza pandangan tentang aktiviti hujung minggu",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "f57bafd9854f42c1",
+      "new_sha256_16": "9cde218551f9c21d"
+    },
+    {
+      "year": 3,
+      "session": 4,
+      "unit": 1,
+      "sp": [
+        "1.1",
+        "1.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Warga sekolah meraikan perayaan yang berbeza dalam suasana saling menghormati",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "62727846fc102367",
+      "new_sha256_16": "a4cb22d9bc1846c6"
+    },
+    {
+      "year": 3,
+      "session": 5,
+      "unit": 1,
+      "sp": [
+        "1.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Warga sekolah meraikan perayaan yang berbeza dalam suasana saling menghormati",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "372dc6605ce078f5",
+      "new_sha256_16": "2745fc6bd2045692"
+    },
+    {
+      "year": 3,
+      "session": 6,
+      "unit": 1,
+      "sp": [
+        "1.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Warga sekolah meraikan perayaan yang berbeza dalam suasana saling menghormati",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "3e277b71ded7d2ef",
+      "new_sha256_16": "53667c81208550b3"
+    },
+    {
+      "year": 3,
+      "session": 10,
+      "unit": 2,
+      "sp": [
+        "2.1",
+        "2.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Seorang murid baharu memerlukan bantuan mencari bilik khas",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "772b9d031eba0903",
+      "new_sha256_16": "226ad710e85555a0"
+    },
+    {
+      "year": 3,
+      "session": 11,
+      "unit": 2,
+      "sp": [
+        "2.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Seorang murid baharu memerlukan bantuan mencari bilik khas",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "b09262b9e2ca6d98",
+      "new_sha256_16": "9ab2b739ee69586c"
+    },
+    {
+      "year": 3,
+      "session": 12,
+      "unit": 2,
+      "sp": [
+        "2.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Seorang murid baharu memerlukan bantuan mencari bilik khas",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "1ee73bc4f60827cb",
+      "new_sha256_16": "0c23f737aa30c59c"
+    },
+    {
+      "year": 3,
+      "session": 13,
+      "unit": 2,
+      "sp": [
+        "2.5"
+      ],
+      "approach": "practice",
+      "scenario": "Seorang murid baharu memerlukan bantuan mencari bilik khas",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "6903ab5abfb7b599",
+      "new_sha256_16": "b3b741011afb27d1"
+    },
+    {
+      "year": 3,
+      "session": 17,
+      "unit": 3,
+      "sp": [
+        "3.1",
+        "3.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Pengawas dan ketua kelas membahagikan tugas dengan jelas",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "3dac622b354809eb",
+      "new_sha256_16": "fea3917939058918"
+    },
+    {
+      "year": 3,
+      "session": 18,
+      "unit": 3,
+      "sp": [
+        "3.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Pengawas dan ketua kelas membahagikan tugas dengan jelas",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "a68612d896bf18b2",
+      "new_sha256_16": "1e4aab1658152373"
+    },
+    {
+      "year": 3,
+      "session": 19,
+      "unit": 3,
+      "sp": [
+        "3.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Pengawas dan ketua kelas membahagikan tugas dengan jelas",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "fe16f7711bb5675b",
+      "new_sha256_16": "35afb538ee79f4ae"
+    },
+    {
+      "year": 3,
+      "session": 20,
+      "unit": 3,
+      "sp": [
+        "3.5"
+      ],
+      "approach": "practice",
+      "scenario": "Pengawas dan ketua kelas membahagikan tugas dengan jelas",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "3e8e8a0c1fb5d081",
+      "new_sha256_16": "71e1e83e72311824"
+    },
+    {
+      "year": 3,
+      "session": 24,
+      "unit": 4,
+      "sp": [
+        "4.1",
+        "4.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Pekerja kantin membantu murid yang tertinggal bekalan makanan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "a30d5ac6d92b0adf",
+      "new_sha256_16": "49d57bf08d3575b8"
+    },
+    {
+      "year": 3,
+      "session": 25,
+      "unit": 4,
+      "sp": [
+        "4.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Pekerja kantin membantu murid yang tertinggal bekalan makanan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "8015f6f49351f4ac",
+      "new_sha256_16": "098b482dfc5a5036"
+    },
+    {
+      "year": 3,
+      "session": 26,
+      "unit": 4,
+      "sp": [
+        "4.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Pekerja kantin membantu murid yang tertinggal bekalan makanan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "a2cc575c0a61c70c",
+      "new_sha256_16": "770600e089a2a7f9"
+    },
+    {
+      "year": 3,
+      "session": 27,
+      "unit": 4,
+      "sp": [
+        "4.5"
+      ],
+      "approach": "practice",
+      "scenario": "Pekerja kantin membantu murid yang tertinggal bekalan makanan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "b8c84b9e9d524074",
+      "new_sha256_16": "3418859f511fa1e6"
+    },
+    {
+      "year": 3,
+      "session": 31,
+      "unit": 5,
+      "sp": [
+        "5.1",
+        "5.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Murid menyapa pekerja sekolah dan pelawat dengan bahasa sopan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "95287352aa930506",
+      "new_sha256_16": "f242b8ce14c90fb3"
+    },
+    {
+      "year": 3,
+      "session": 32,
+      "unit": 5,
+      "sp": [
+        "5.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Murid menyapa pekerja sekolah dan pelawat dengan bahasa sopan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "4e027f40795478c5",
+      "new_sha256_16": "1763c0aeaa088b7b"
+    },
+    {
+      "year": 3,
+      "session": 33,
+      "unit": 5,
+      "sp": [
+        "5.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Murid menyapa pekerja sekolah dan pelawat dengan bahasa sopan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "824b87c3d576d18f",
+      "new_sha256_16": "16e97e477e765153"
+    },
+    {
+      "year": 3,
+      "session": 34,
+      "unit": 5,
+      "sp": [
+        "5.5"
+      ],
+      "approach": "practice",
+      "scenario": "Murid menyapa pekerja sekolah dan pelawat dengan bahasa sopan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "be415b5a49ddc073",
+      "new_sha256_16": "5775e22561ae2fa3"
+    },
+    {
+      "year": 3,
+      "session": 38,
+      "unit": 6,
+      "sp": [
+        "6.1",
+        "6.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Seorang pelawat bertanya arah di kawasan sekolah",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "0f96fd5c4ce04e2e",
+      "new_sha256_16": "50fa3501bea2c6f9"
+    },
+    {
+      "year": 3,
+      "session": 39,
+      "unit": 6,
+      "sp": [
+        "6.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Seorang pelawat bertanya arah di kawasan sekolah",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "d0181023431ce8e3",
+      "new_sha256_16": "c745be270f0f6efa"
+    },
+    {
+      "year": 3,
+      "session": 40,
+      "unit": 6,
+      "sp": [
+        "6.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Seorang pelawat bertanya arah di kawasan sekolah",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "f0500cb9fe1908c6",
+      "new_sha256_16": "ab89ba295f965684"
+    },
+    {
+      "year": 3,
+      "session": 41,
+      "unit": 6,
+      "sp": [
+        "6.5"
+      ],
+      "approach": "practice",
+      "scenario": "Seorang pelawat bertanya arah di kawasan sekolah",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "ebbed741641aaa81",
+      "new_sha256_16": "32ceb9b18890b1a9"
+    },
+    {
+      "year": 3,
+      "session": 45,
+      "unit": 7,
+      "sp": [
+        "7.1",
+        "7.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Murid mendapati kawasan taman sekolah tidak dijaga",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "d30142746b29e771",
+      "new_sha256_16": "8572b67ea7780be5"
+    },
+    {
+      "year": 3,
+      "session": 46,
+      "unit": 7,
+      "sp": [
+        "7.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Murid mendapati kawasan taman sekolah tidak dijaga",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "14385182a60bc9b4",
+      "new_sha256_16": "47bcc6afc1775266"
+    },
+    {
+      "year": 3,
+      "session": 47,
+      "unit": 7,
+      "sp": [
+        "7.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Murid mendapati kawasan taman sekolah tidak dijaga",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "c62aaa866a9eb82f",
+      "new_sha256_16": "467116c0d6c7aa91"
+    },
+    {
+      "year": 3,
+      "session": 48,
+      "unit": 7,
+      "sp": [
+        "7.5"
+      ],
+      "approach": "practice",
+      "scenario": "Murid mendapati kawasan taman sekolah tidak dijaga",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "b68e3c264ffa27c5",
+      "new_sha256_16": "ccbf6671ff9730ae"
+    },
+    {
+      "year": 3,
+      "session": 52,
+      "unit": 8,
+      "sp": [
+        "8.1",
+        "8.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Kumpulan murid memilih ketua dan mengagihkan bahan secara adil",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "a7276b6ee30ae937",
+      "new_sha256_16": "fa0dc495bdea58fe"
+    },
+    {
+      "year": 3,
+      "session": 53,
+      "unit": 8,
+      "sp": [
+        "8.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Kumpulan murid memilih ketua dan mengagihkan bahan secara adil",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "5dc3058ab54b838c",
+      "new_sha256_16": "c0f5c84c118fe54a"
+    },
+    {
+      "year": 3,
+      "session": 54,
+      "unit": 8,
+      "sp": [
+        "8.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Kumpulan murid memilih ketua dan mengagihkan bahan secara adil",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "ced8665a5a861f64",
+      "new_sha256_16": "0133e55c2ad8b7aa"
+    },
+    {
+      "year": 3,
+      "session": 55,
+      "unit": 8,
+      "sp": [
+        "8.5"
+      ],
+      "approach": "practice",
+      "scenario": "Kumpulan murid memilih ketua dan mengagihkan bahan secara adil",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "0105b17100446a2a",
+      "new_sha256_16": "a4ed3dca7ac0e2d1"
+    },
+    {
+      "year": 3,
+      "session": 59,
+      "unit": 9,
+      "sp": [
+        "9.1",
+        "9.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Seorang murid melihat rakan dibuli di kawasan sekolah",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "d3ecf5c96e2fc6e2",
+      "new_sha256_16": "28644e0b8292de0e"
+    },
+    {
+      "year": 3,
+      "session": 60,
+      "unit": 9,
+      "sp": [
+        "9.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Seorang murid melihat rakan dibuli di kawasan sekolah",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "205da454580bd12f",
+      "new_sha256_16": "5da05fb46455efb0"
+    },
+    {
+      "year": 3,
+      "session": 61,
+      "unit": 9,
+      "sp": [
+        "9.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Seorang murid melihat rakan dibuli di kawasan sekolah",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "5319a9613776214b",
+      "new_sha256_16": "853a88466239aeb2"
+    },
+    {
+      "year": 3,
+      "session": 62,
+      "unit": 9,
+      "sp": [
+        "9.5"
+      ],
+      "approach": "practice",
+      "scenario": "Seorang murid melihat rakan dibuli di kawasan sekolah",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "467b9c971b37b6f8",
+      "new_sha256_16": "cdd1ba2a33b2fd1c"
+    },
+    {
+      "year": 3,
+      "session": 66,
+      "unit": 10,
+      "sp": [
+        "10.1",
+        "10.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Murid menemukan dompet di koridor sekolah",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "ae5e5c6957a242c6",
+      "new_sha256_16": "2f5c3171bfd118d5"
+    },
+    {
+      "year": 3,
+      "session": 67,
+      "unit": 10,
+      "sp": [
+        "10.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Murid menemukan dompet di koridor sekolah",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "b93de7eaa5cdc9b3",
+      "new_sha256_16": "4aa1f581ccc8fb01"
+    },
+    {
+      "year": 3,
+      "session": 68,
+      "unit": 10,
+      "sp": [
+        "10.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Murid menemukan dompet di koridor sekolah",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "3a50d6af6c46cd4b",
+      "new_sha256_16": "e8d9fc881a448166"
+    },
+    {
+      "year": 3,
+      "session": 69,
+      "unit": 10,
+      "sp": [
+        "10.5"
+      ],
+      "approach": "practice",
+      "scenario": "Murid menemukan dompet di koridor sekolah",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "d0a2a2d6f0ddced3",
+      "new_sha256_16": "68e4327699b42102"
+    },
+    {
+      "year": 3,
+      "session": 73,
+      "unit": 11,
+      "sp": [
+        "11.1",
+        "11.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Sekumpulan murid ingin menyiapkan projek kelas mengikut jadual",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "45a6cee6c65913cd",
+      "new_sha256_16": "d24238f5ae2b1c62"
+    },
+    {
+      "year": 3,
+      "session": 74,
+      "unit": 11,
+      "sp": [
+        "11.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Sekumpulan murid ingin menyiapkan projek kelas mengikut jadual",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "bb24bdd8d0280828",
+      "new_sha256_16": "f839ccb2d1344459"
+    },
+    {
+      "year": 3,
+      "session": 75,
+      "unit": 11,
+      "sp": [
+        "11.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Sekumpulan murid ingin menyiapkan projek kelas mengikut jadual",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "dd3cb897c898ed8f",
+      "new_sha256_16": "aee564d71ba62710"
+    },
+    {
+      "year": 3,
+      "session": 76,
+      "unit": 11,
+      "sp": [
+        "11.5"
+      ],
+      "approach": "practice",
+      "scenario": "Sekumpulan murid ingin menyiapkan projek kelas mengikut jadual",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "a93825d86e6cef19",
+      "new_sha256_16": "01890fa5ad7e4c52"
+    },
+    {
+      "year": 3,
+      "session": 80,
+      "unit": 12,
+      "sp": [
+        "12.1",
+        "12.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Kelas merancang aktiviti menghias sudut bacaan secara bersama",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "1864dccbaf00c4bf",
+      "new_sha256_16": "bd9b53c37b079799"
+    },
+    {
+      "year": 3,
+      "session": 81,
+      "unit": 12,
+      "sp": [
+        "12.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Kelas merancang aktiviti menghias sudut bacaan secara bersama",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "cd5aa79e542ad559",
+      "new_sha256_16": "885394c5d119894d"
+    },
+    {
+      "year": 3,
+      "session": 82,
+      "unit": 12,
+      "sp": [
+        "12.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Kelas merancang aktiviti menghias sudut bacaan secara bersama",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "bd087ed580ebf8d2",
+      "new_sha256_16": "5ffeca83c15027aa"
+    },
+    {
+      "year": 3,
+      "session": 83,
+      "unit": 12,
+      "sp": [
+        "12.5"
+      ],
+      "approach": "practice",
+      "scenario": "Kelas merancang aktiviti menghias sudut bacaan secara bersama",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "00daf46e7aef3f0c",
+      "new_sha256_16": "bf98ccbe84237629"
+    },
+    {
+      "year": 3,
+      "session": 87,
+      "unit": 13,
+      "sp": [
+        "13.1",
+        "13.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Murid memilih antara menggunakan semula bahan atau membeli barang baharu",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "6ed305ff3e4583c6",
+      "new_sha256_16": "b8d08620380b3e32"
+    },
+    {
+      "year": 3,
+      "session": 88,
+      "unit": 13,
+      "sp": [
+        "13.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Murid memilih antara menggunakan semula bahan atau membeli barang baharu",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "56fc353f87d56448",
+      "new_sha256_16": "8e1537a499c9a86e"
+    },
+    {
+      "year": 3,
+      "session": 89,
+      "unit": 13,
+      "sp": [
+        "13.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Murid memilih antara menggunakan semula bahan atau membeli barang baharu",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "1f2f51ef7105dd29",
+      "new_sha256_16": "dff6bc3837e71263"
+    },
+    {
+      "year": 3,
+      "session": 90,
+      "unit": 13,
+      "sp": [
+        "13.5"
+      ],
+      "approach": "practice",
+      "scenario": "Murid memilih antara menggunakan semula bahan atau membeli barang baharu",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "b9bd1c82bb224f75",
+      "new_sha256_16": "0b05c329a1280f2d"
+    },
+    {
+      "year": 3,
+      "session": 94,
+      "unit": 14,
+      "sp": [
+        "14.1",
+        "14.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Dua kumpulan murid berbeza pendapat tentang peraturan permainan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "e017a6a5f06ba39c",
+      "new_sha256_16": "6359598e08fc089f"
+    },
+    {
+      "year": 3,
+      "session": 95,
+      "unit": 14,
+      "sp": [
+        "14.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Dua kumpulan murid berbeza pendapat tentang peraturan permainan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "1d1fb1bd31c7fe36",
+      "new_sha256_16": "cddcdfe4bfc79182"
+    },
+    {
+      "year": 3,
+      "session": 96,
+      "unit": 14,
+      "sp": [
+        "14.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Dua kumpulan murid berbeza pendapat tentang peraturan permainan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "83e4abb8c6ea3cf8",
+      "new_sha256_16": "826fc81d3cb508ce"
+    },
+    {
+      "year": 4,
+      "session": 4,
+      "unit": 1,
+      "sp": [
+        "1.1",
+        "1.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Jiran mengamalkan kepercayaan berbeza dan berkongsi ruang kejiranan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "c21476e3166f5753",
+      "new_sha256_16": "e611fdbb202cbda7"
+    },
+    {
+      "year": 4,
+      "session": 5,
+      "unit": 1,
+      "sp": [
+        "1.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Jiran mengamalkan kepercayaan berbeza dan berkongsi ruang kejiranan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "5348c826236529c4",
+      "new_sha256_16": "9901ed8616f4ff71"
+    },
+    {
+      "year": 4,
+      "session": 6,
+      "unit": 1,
+      "sp": [
+        "1.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Jiran mengamalkan kepercayaan berbeza dan berkongsi ruang kejiranan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "4bfa63b807c96b64",
+      "new_sha256_16": "fcae1a52b0ccf135"
+    },
+    {
+      "year": 4,
+      "session": 10,
+      "unit": 2,
+      "sp": [
+        "2.1",
+        "2.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Jiran warga emas memerlukan bantuan membawa barang runcit",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "c782ca5c8e492e50",
+      "new_sha256_16": "9630c6909d7f2f59"
+    },
+    {
+      "year": 4,
+      "session": 11,
+      "unit": 2,
+      "sp": [
+        "2.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Jiran warga emas memerlukan bantuan membawa barang runcit",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "b56ce24d0dcb435e",
+      "new_sha256_16": "3fbc13964f7e1f27"
+    },
+    {
+      "year": 4,
+      "session": 12,
+      "unit": 2,
+      "sp": [
+        "2.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Jiran warga emas memerlukan bantuan membawa barang runcit",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "33d236226ff27169",
+      "new_sha256_16": "b73d6156b06530d0"
+    },
+    {
+      "year": 4,
+      "session": 13,
+      "unit": 2,
+      "sp": [
+        "2.5"
+      ],
+      "approach": "practice",
+      "scenario": "Jiran warga emas memerlukan bantuan membawa barang runcit",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "9378223ebc1f815e",
+      "new_sha256_16": "7f2f6b4c624aa79e"
+    },
+    {
+      "year": 4,
+      "session": 17,
+      "unit": 3,
+      "sp": [
+        "3.1",
+        "3.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Penduduk perlu menjaga keselamatan laluan rumah bersama",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "cb5825c30b1ea906",
+      "new_sha256_16": "3cc4127ca24cca10"
+    },
+    {
+      "year": 4,
+      "session": 18,
+      "unit": 3,
+      "sp": [
+        "3.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Penduduk perlu menjaga keselamatan laluan rumah bersama",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "d3d7ce3fbeb07f06",
+      "new_sha256_16": "933cdf306135c0ec"
+    },
+    {
+      "year": 4,
+      "session": 19,
+      "unit": 3,
+      "sp": [
+        "3.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Penduduk perlu menjaga keselamatan laluan rumah bersama",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "78a76e7d0dee620e",
+      "new_sha256_16": "5401bb33676733b8"
+    },
+    {
+      "year": 4,
+      "session": 20,
+      "unit": 3,
+      "sp": [
+        "3.5"
+      ],
+      "approach": "practice",
+      "scenario": "Penduduk perlu menjaga keselamatan laluan rumah bersama",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "fb4bf5c90a598a27",
+      "new_sha256_16": "1f990513dc509bd1"
+    },
+    {
+      "year": 4,
+      "session": 24,
+      "unit": 4,
+      "sp": [
+        "4.1",
+        "4.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Jiran memulangkan barang yang dipinjam dalam keadaan baik",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "de2c15845835956b",
+      "new_sha256_16": "ce1745c0e947f27f"
+    },
+    {
+      "year": 4,
+      "session": 25,
+      "unit": 4,
+      "sp": [
+        "4.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Jiran memulangkan barang yang dipinjam dalam keadaan baik",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "5babbb50aca02d54",
+      "new_sha256_16": "a87f9613980ece21"
+    },
+    {
+      "year": 4,
+      "session": 26,
+      "unit": 4,
+      "sp": [
+        "4.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Jiran memulangkan barang yang dipinjam dalam keadaan baik",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "94b09c7f00783119",
+      "new_sha256_16": "24de934e33040edc"
+    },
+    {
+      "year": 4,
+      "session": 27,
+      "unit": 4,
+      "sp": [
+        "4.5"
+      ],
+      "approach": "practice",
+      "scenario": "Jiran memulangkan barang yang dipinjam dalam keadaan baik",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "7cef1627bc6d1bc4",
+      "new_sha256_16": "5d1a57bf53e2df49"
+    },
+    {
+      "year": 4,
+      "session": 31,
+      "unit": 5,
+      "sp": [
+        "5.1",
+        "5.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Murid berbual dengan jiran ketika berkunjung ke rumah terbuka",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "9b49b1c2eb208051",
+      "new_sha256_16": "abc06a8443b27497"
+    },
+    {
+      "year": 4,
+      "session": 32,
+      "unit": 5,
+      "sp": [
+        "5.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Murid berbual dengan jiran ketika berkunjung ke rumah terbuka",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "906524416275815e",
+      "new_sha256_16": "ba65b68ad1ad8425"
+    },
+    {
+      "year": 4,
+      "session": 33,
+      "unit": 5,
+      "sp": [
+        "5.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Murid berbual dengan jiran ketika berkunjung ke rumah terbuka",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "102d2c42f76c425a",
+      "new_sha256_16": "95fc3711a1ee5c5c"
+    },
+    {
+      "year": 4,
+      "session": 34,
+      "unit": 5,
+      "sp": [
+        "5.5"
+      ],
+      "approach": "practice",
+      "scenario": "Murid berbual dengan jiran ketika berkunjung ke rumah terbuka",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "65075aa5832f60c0",
+      "new_sha256_16": "874e5c9729557479"
+    },
+    {
+      "year": 4,
+      "session": 38,
+      "unit": 6,
+      "sp": [
+        "6.1",
+        "6.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Jiran mengadakan majlis yang perlu dihormati semua penduduk",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "0158317879cf7dad",
+      "new_sha256_16": "29f675e809f1e44a"
+    },
+    {
+      "year": 4,
+      "session": 39,
+      "unit": 6,
+      "sp": [
+        "6.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Jiran mengadakan majlis yang perlu dihormati semua penduduk",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "06b78a2f5fb1eb8c",
+      "new_sha256_16": "66fbe013aea6a147"
+    },
+    {
+      "year": 4,
+      "session": 40,
+      "unit": 6,
+      "sp": [
+        "6.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Jiran mengadakan majlis yang perlu dihormati semua penduduk",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "1927b97463814c44",
+      "new_sha256_16": "2a10ba4535ab3fa9"
+    },
+    {
+      "year": 4,
+      "session": 41,
+      "unit": 6,
+      "sp": [
+        "6.5"
+      ],
+      "approach": "practice",
+      "scenario": "Jiran mengadakan majlis yang perlu dihormati semua penduduk",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "e930907943d3bd58",
+      "new_sha256_16": "6ea91d581cfb98ac"
+    },
+    {
+      "year": 4,
+      "session": 45,
+      "unit": 7,
+      "sp": [
+        "7.1",
+        "7.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Jiran sakit dan memerlukan sokongan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "41f8740f6aee1205",
+      "new_sha256_16": "f6f8ef6768400b03"
+    },
+    {
+      "year": 4,
+      "session": 46,
+      "unit": 7,
+      "sp": [
+        "7.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Jiran sakit dan memerlukan sokongan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "4fe04d1252f95fb9",
+      "new_sha256_16": "ccb03adfcd2f84b3"
+    },
+    {
+      "year": 4,
+      "session": 47,
+      "unit": 7,
+      "sp": [
+        "7.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Jiran sakit dan memerlukan sokongan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "e2ae70293d0a4b75",
+      "new_sha256_16": "16fefd2eace0984e"
+    },
+    {
+      "year": 4,
+      "session": 48,
+      "unit": 7,
+      "sp": [
+        "7.5"
+      ],
+      "approach": "practice",
+      "scenario": "Jiran sakit dan memerlukan sokongan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "d6175fb2f79ce835",
+      "new_sha256_16": "0d2842605af33985"
+    },
+    {
+      "year": 4,
+      "session": 52,
+      "unit": 8,
+      "sp": [
+        "8.1",
+        "8.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Penduduk membahagi penggunaan ruang permainan bersama secara adil",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "a2ef0886ea540216",
+      "new_sha256_16": "29fc8213d2d691fc"
+    },
+    {
+      "year": 4,
+      "session": 53,
+      "unit": 8,
+      "sp": [
+        "8.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Penduduk membahagi penggunaan ruang permainan bersama secara adil",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "2e5cdaf6d508eaa3",
+      "new_sha256_16": "9cdcca762128d075"
+    },
+    {
+      "year": 4,
+      "session": 54,
+      "unit": 8,
+      "sp": [
+        "8.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Penduduk membahagi penggunaan ruang permainan bersama secara adil",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "6160f8f4dbc0cc44",
+      "new_sha256_16": "530e74e34be7e0e3"
+    },
+    {
+      "year": 4,
+      "session": 55,
+      "unit": 8,
+      "sp": [
+        "8.5"
+      ],
+      "approach": "practice",
+      "scenario": "Penduduk membahagi penggunaan ruang permainan bersama secara adil",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "42371abb339b1dcf",
+      "new_sha256_16": "4573ecd9414be434"
+    },
+    {
+      "year": 4,
+      "session": 59,
+      "unit": 9,
+      "sp": [
+        "9.1",
+        "9.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Murid mendapati kejadian yang mengancam keselamatan jiran",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "4585ec265127ef69",
+      "new_sha256_16": "217fa619289493ff"
+    },
+    {
+      "year": 4,
+      "session": 60,
+      "unit": 9,
+      "sp": [
+        "9.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Murid mendapati kejadian yang mengancam keselamatan jiran",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "f1b0011011a9f6cd",
+      "new_sha256_16": "08d5b6fc73b75497"
+    },
+    {
+      "year": 4,
+      "session": 61,
+      "unit": 9,
+      "sp": [
+        "9.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Murid mendapati kejadian yang mengancam keselamatan jiran",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "1654632ae29c4e60",
+      "new_sha256_16": "dfdb20c38899c1dd"
+    },
+    {
+      "year": 4,
+      "session": 62,
+      "unit": 9,
+      "sp": [
+        "9.5"
+      ],
+      "approach": "practice",
+      "scenario": "Murid mendapati kejadian yang mengancam keselamatan jiran",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "a4d97f5bf7f89043",
+      "new_sha256_16": "0c8a38f96d872754"
+    },
+    {
+      "year": 4,
+      "session": 66,
+      "unit": 10,
+      "sp": [
+        "10.1",
+        "10.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Murid tersalah mengambil barang milik jiran",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "c4f87ce9200129ed",
+      "new_sha256_16": "292a68d6f9ca5a09"
+    },
+    {
+      "year": 4,
+      "session": 67,
+      "unit": 10,
+      "sp": [
+        "10.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Murid tersalah mengambil barang milik jiran",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "121b8830d9247d0f",
+      "new_sha256_16": "b06447c2e89fa7f6"
+    },
+    {
+      "year": 4,
+      "session": 68,
+      "unit": 10,
+      "sp": [
+        "10.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Murid tersalah mengambil barang milik jiran",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "4aacdae10821ade3",
+      "new_sha256_16": "78f5d0d8b806ae7f"
+    },
+    {
+      "year": 4,
+      "session": 69,
+      "unit": 10,
+      "sp": [
+        "10.5"
+      ],
+      "approach": "practice",
+      "scenario": "Murid tersalah mengambil barang milik jiran",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "e5053a43c5bfa825",
+      "new_sha256_16": "1df81a4cb0ac2a70"
+    },
+    {
+      "year": 4,
+      "session": 73,
+      "unit": 11,
+      "sp": [
+        "11.1",
+        "11.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Keluarga bergilir-gilir membersihkan kawasan sekitar rumah",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "87ced3c209bc366b",
+      "new_sha256_16": "c52b2dcfb920e589"
+    },
+    {
+      "year": 4,
+      "session": 74,
+      "unit": 11,
+      "sp": [
+        "11.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Keluarga bergilir-gilir membersihkan kawasan sekitar rumah",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "c4db5b828fb46964",
+      "new_sha256_16": "cd59a51a3340b774"
+    },
+    {
+      "year": 4,
+      "session": 75,
+      "unit": 11,
+      "sp": [
+        "11.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Keluarga bergilir-gilir membersihkan kawasan sekitar rumah",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "012bc0d07d06216d",
+      "new_sha256_16": "ef8ac21b08b6c446"
+    },
+    {
+      "year": 4,
+      "session": 76,
+      "unit": 11,
+      "sp": [
+        "11.5"
+      ],
+      "approach": "practice",
+      "scenario": "Keluarga bergilir-gilir membersihkan kawasan sekitar rumah",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "fa43fe65407eb4c6",
+      "new_sha256_16": "6607483d05400dcf"
+    },
+    {
+      "year": 4,
+      "session": 80,
+      "unit": 12,
+      "sp": [
+        "12.1",
+        "12.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Penduduk bekerjasama membersihkan longkang kejiranan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "91879244d299da94",
+      "new_sha256_16": "d82c4c69059369d5"
+    },
+    {
+      "year": 4,
+      "session": 81,
+      "unit": 12,
+      "sp": [
+        "12.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Penduduk bekerjasama membersihkan longkang kejiranan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "68c35bba022d0df8",
+      "new_sha256_16": "6aae93580aaa7576"
+    },
+    {
+      "year": 4,
+      "session": 82,
+      "unit": 12,
+      "sp": [
+        "12.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Penduduk bekerjasama membersihkan longkang kejiranan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "b1b88c1388aa5011",
+      "new_sha256_16": "62f3ccfddd4b9e29"
+    },
+    {
+      "year": 4,
+      "session": 83,
+      "unit": 12,
+      "sp": [
+        "12.5"
+      ],
+      "approach": "practice",
+      "scenario": "Penduduk bekerjasama membersihkan longkang kejiranan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "b309cd237a2d7885",
+      "new_sha256_16": "940a0212c09234ef"
+    },
+    {
+      "year": 4,
+      "session": 87,
+      "unit": 13,
+      "sp": [
+        "13.1",
+        "13.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Beberapa keluarga ingin mengurangkan pembaziran air di kawasan perumahan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "8b86a88dcf11575c",
+      "new_sha256_16": "d5db37c5b94ff0ae"
+    },
+    {
+      "year": 4,
+      "session": 88,
+      "unit": 13,
+      "sp": [
+        "13.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Beberapa keluarga ingin mengurangkan pembaziran air di kawasan perumahan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "bf923ba9dd8883db",
+      "new_sha256_16": "f3713c697ab5e936"
+    },
+    {
+      "year": 4,
+      "session": 89,
+      "unit": 13,
+      "sp": [
+        "13.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Beberapa keluarga ingin mengurangkan pembaziran air di kawasan perumahan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "ec3856ed6f0ebe6d",
+      "new_sha256_16": "a71f770125fac257"
+    },
+    {
+      "year": 4,
+      "session": 90,
+      "unit": 13,
+      "sp": [
+        "13.5"
+      ],
+      "approach": "practice",
+      "scenario": "Beberapa keluarga ingin mengurangkan pembaziran air di kawasan perumahan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "2aa0d591a540094d",
+      "new_sha256_16": "7dec8a295ac26e4a"
+    },
+    {
+      "year": 4,
+      "session": 94,
+      "unit": 14,
+      "sp": [
+        "14.1",
+        "14.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Jiran berbeza pendapat mengenai bunyi bising ketika hujung minggu",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "c1b0c4206d5bb564",
+      "new_sha256_16": "45c28512d8a3c3b4"
+    },
+    {
+      "year": 4,
+      "session": 95,
+      "unit": 14,
+      "sp": [
+        "14.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Jiran berbeza pendapat mengenai bunyi bising ketika hujung minggu",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "874a7331b74b62cf",
+      "new_sha256_16": "a871dcdf83b463fb"
+    },
+    {
+      "year": 4,
+      "session": 96,
+      "unit": 14,
+      "sp": [
+        "14.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Jiran berbeza pendapat mengenai bunyi bising ketika hujung minggu",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "b036922d9009ae27",
+      "new_sha256_16": "84b586ddb054d5d8"
+    },
+    {
+      "year": 5,
+      "session": 4,
+      "unit": 1,
+      "sp": [
+        "1.1",
+        "1.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Masyarakat pelbagai kepercayaan bekerjasama menjayakan sambutan setempat",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "1ce3780d466c1600",
+      "new_sha256_16": "6b911bb5a5e50a49"
+    },
+    {
+      "year": 5,
+      "session": 5,
+      "unit": 1,
+      "sp": [
+        "1.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Masyarakat pelbagai kepercayaan bekerjasama menjayakan sambutan setempat",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "e260cacb4376444e",
+      "new_sha256_16": "4abf003ddf6d891f"
+    },
+    {
+      "year": 5,
+      "session": 6,
+      "unit": 1,
+      "sp": [
+        "1.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Masyarakat pelbagai kepercayaan bekerjasama menjayakan sambutan setempat",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "f9ee3f8ae0d52676",
+      "new_sha256_16": "dd011f236b553c19"
+    },
+    {
+      "year": 5,
+      "session": 10,
+      "unit": 2,
+      "sp": [
+        "2.1",
+        "2.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Sukarelawan menyelaraskan bantuan untuk penduduk terjejas banjir",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "dafad963924cb868",
+      "new_sha256_16": "2652f348e23da4e0"
+    },
+    {
+      "year": 5,
+      "session": 11,
+      "unit": 2,
+      "sp": [
+        "2.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Sukarelawan menyelaraskan bantuan untuk penduduk terjejas banjir",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "4c8cc7fc708ca47c",
+      "new_sha256_16": "e573ccdb1e933348"
+    },
+    {
+      "year": 5,
+      "session": 12,
+      "unit": 2,
+      "sp": [
+        "2.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Sukarelawan menyelaraskan bantuan untuk penduduk terjejas banjir",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "c2e731386efb3c87",
+      "new_sha256_16": "377633f82ac94498"
+    },
+    {
+      "year": 5,
+      "session": 13,
+      "unit": 2,
+      "sp": [
+        "2.5"
+      ],
+      "approach": "practice",
+      "scenario": "Sukarelawan menyelaraskan bantuan untuk penduduk terjejas banjir",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "8c030e5fe4c6371d",
+      "new_sha256_16": "79c8200814a2140f"
+    },
+    {
+      "year": 5,
+      "session": 17,
+      "unit": 3,
+      "sp": [
+        "3.1",
+        "3.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Penduduk membincangkan tanggungjawab menjaga dewan komuniti",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "8be414c191683185",
+      "new_sha256_16": "e2a344376a1799f2"
+    },
+    {
+      "year": 5,
+      "session": 18,
+      "unit": 3,
+      "sp": [
+        "3.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Penduduk membincangkan tanggungjawab menjaga dewan komuniti",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "1a209a9b1cfacf25",
+      "new_sha256_16": "7aa0113cce8eeb1f"
+    },
+    {
+      "year": 5,
+      "session": 19,
+      "unit": 3,
+      "sp": [
+        "3.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Penduduk membincangkan tanggungjawab menjaga dewan komuniti",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "21833c400d1f9ba5",
+      "new_sha256_16": "f5a27ad69ed00ec9"
+    },
+    {
+      "year": 5,
+      "session": 20,
+      "unit": 3,
+      "sp": [
+        "3.5"
+      ],
+      "approach": "practice",
+      "scenario": "Penduduk membincangkan tanggungjawab menjaga dewan komuniti",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "d7c7f653c53d97ce",
+      "new_sha256_16": "8032391b00be2fef"
+    },
+    {
+      "year": 5,
+      "session": 24,
+      "unit": 4,
+      "sp": [
+        "4.1",
+        "4.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Seorang anggota masyarakat menerima penghargaan atas perkhidmatannya",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "70a8a2e525756734",
+      "new_sha256_16": "af7317034e176b8c"
+    },
+    {
+      "year": 5,
+      "session": 25,
+      "unit": 4,
+      "sp": [
+        "4.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Seorang anggota masyarakat menerima penghargaan atas perkhidmatannya",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "33dbf6d7f04b398a",
+      "new_sha256_16": "c0c82c482a3f8c4d"
+    },
+    {
+      "year": 5,
+      "session": 26,
+      "unit": 4,
+      "sp": [
+        "4.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Seorang anggota masyarakat menerima penghargaan atas perkhidmatannya",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "1d9836c473660df3",
+      "new_sha256_16": "b4188999713618e1"
+    },
+    {
+      "year": 5,
+      "session": 27,
+      "unit": 4,
+      "sp": [
+        "4.5"
+      ],
+      "approach": "practice",
+      "scenario": "Seorang anggota masyarakat menerima penghargaan atas perkhidmatannya",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "e661abc6115a2a34",
+      "new_sha256_16": "4347d30cd6b66db7"
+    },
+    {
+      "year": 5,
+      "session": 31,
+      "unit": 5,
+      "sp": [
+        "5.1",
+        "5.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Orang ramai beratur di kaunter perkhidmatan masyarakat",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "af3a900a5b001991",
+      "new_sha256_16": "bb3801c84c533480"
+    },
+    {
+      "year": 5,
+      "session": 32,
+      "unit": 5,
+      "sp": [
+        "5.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Orang ramai beratur di kaunter perkhidmatan masyarakat",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "d95cbee70b9691e7",
+      "new_sha256_16": "6c09719022efa4eb"
+    },
+    {
+      "year": 5,
+      "session": 33,
+      "unit": 5,
+      "sp": [
+        "5.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Orang ramai beratur di kaunter perkhidmatan masyarakat",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "13e85b891560f2a4",
+      "new_sha256_16": "b8a9dfb25b05ba39"
+    },
+    {
+      "year": 5,
+      "session": 34,
+      "unit": 5,
+      "sp": [
+        "5.5"
+      ],
+      "approach": "practice",
+      "scenario": "Orang ramai beratur di kaunter perkhidmatan masyarakat",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "30e24713e1567b31",
+      "new_sha256_16": "1fc22cdf647ad32d"
+    },
+    {
+      "year": 5,
+      "session": 38,
+      "unit": 6,
+      "sp": [
+        "6.1",
+        "6.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Penduduk menganjurkan program pertukaran budaya masyarakat",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "78ef422ecf5fd8e3",
+      "new_sha256_16": "8c4f91544dfee4d3"
+    },
+    {
+      "year": 5,
+      "session": 39,
+      "unit": 6,
+      "sp": [
+        "6.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Penduduk menganjurkan program pertukaran budaya masyarakat",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "7320e56f413e8843",
+      "new_sha256_16": "6494aeb8e6757e38"
+    },
+    {
+      "year": 5,
+      "session": 40,
+      "unit": 6,
+      "sp": [
+        "6.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Penduduk menganjurkan program pertukaran budaya masyarakat",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "0cccb02569586f71",
+      "new_sha256_16": "ba2e0151da72fbbb"
+    },
+    {
+      "year": 5,
+      "session": 41,
+      "unit": 6,
+      "sp": [
+        "6.5"
+      ],
+      "approach": "practice",
+      "scenario": "Penduduk menganjurkan program pertukaran budaya masyarakat",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "2e8b73fbd60bed42",
+      "new_sha256_16": "c800b76f88e23988"
+    },
+    {
+      "year": 5,
+      "session": 45,
+      "unit": 7,
+      "sp": [
+        "7.1",
+        "7.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Komuniti mengumpul sumbangan untuk keluarga yang memerlukan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "d6f7cb8d44c2c204",
+      "new_sha256_16": "b124ea1320655d21"
+    },
+    {
+      "year": 5,
+      "session": 46,
+      "unit": 7,
+      "sp": [
+        "7.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Komuniti mengumpul sumbangan untuk keluarga yang memerlukan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "ac0b52a5c5f8ba63",
+      "new_sha256_16": "be5a9c8d1be0551c"
+    },
+    {
+      "year": 5,
+      "session": 47,
+      "unit": 7,
+      "sp": [
+        "7.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Komuniti mengumpul sumbangan untuk keluarga yang memerlukan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "0572db46973d6df3",
+      "new_sha256_16": "f37f8dd229c3d6ff"
+    },
+    {
+      "year": 5,
+      "session": 48,
+      "unit": 7,
+      "sp": [
+        "7.5"
+      ],
+      "approach": "practice",
+      "scenario": "Komuniti mengumpul sumbangan untuk keluarga yang memerlukan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "4f33d5597717dd0f",
+      "new_sha256_16": "e66e435f53e9f6e6"
+    },
+    {
+      "year": 5,
+      "session": 52,
+      "unit": 8,
+      "sp": [
+        "8.1",
+        "8.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Jawatankuasa mengagihkan bantuan komuniti secara saksama",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "a9093978e9821d56",
+      "new_sha256_16": "b699e65b5fe75f1a"
+    },
+    {
+      "year": 5,
+      "session": 53,
+      "unit": 8,
+      "sp": [
+        "8.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Jawatankuasa mengagihkan bantuan komuniti secara saksama",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "ca2b8c93e8e383f7",
+      "new_sha256_16": "8c3f0dbd5acb171c"
+    },
+    {
+      "year": 5,
+      "session": 54,
+      "unit": 8,
+      "sp": [
+        "8.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Jawatankuasa mengagihkan bantuan komuniti secara saksama",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "0fddd7ecff8922d3",
+      "new_sha256_16": "ada2985dbfd4d174"
+    },
+    {
+      "year": 5,
+      "session": 55,
+      "unit": 8,
+      "sp": [
+        "8.5"
+      ],
+      "approach": "practice",
+      "scenario": "Jawatankuasa mengagihkan bantuan komuniti secara saksama",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "9e8bc10bba198b64",
+      "new_sha256_16": "828810e5a29c731b"
+    },
+    {
+      "year": 5,
+      "session": 59,
+      "unit": 9,
+      "sp": [
+        "9.1",
+        "9.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Saksi menyaksikan tindakan yang boleh membahayakan komuniti",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "661f7afdbaebfe20",
+      "new_sha256_16": "13b1e13144965a5e"
+    },
+    {
+      "year": 5,
+      "session": 60,
+      "unit": 9,
+      "sp": [
+        "9.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Saksi menyaksikan tindakan yang boleh membahayakan komuniti",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "17ddb6e0adeb59b2",
+      "new_sha256_16": "c5e20c4e9eec30ef"
+    },
+    {
+      "year": 5,
+      "session": 61,
+      "unit": 9,
+      "sp": [
+        "9.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Saksi menyaksikan tindakan yang boleh membahayakan komuniti",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "08f23e7ee732e99f",
+      "new_sha256_16": "dbc2aee5da1019be"
+    },
+    {
+      "year": 5,
+      "session": 62,
+      "unit": 9,
+      "sp": [
+        "9.5"
+      ],
+      "approach": "practice",
+      "scenario": "Saksi menyaksikan tindakan yang boleh membahayakan komuniti",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "c88289cf1d0d666a",
+      "new_sha256_16": "208a5907eff3ea36"
+    },
+    {
+      "year": 5,
+      "session": 66,
+      "unit": 10,
+      "sp": [
+        "10.1",
+        "10.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Wakil komuniti perlu melaporkan kutipan derma dengan benar",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "72347956b0aa5df2",
+      "new_sha256_16": "dffc33b7646cfad3"
+    },
+    {
+      "year": 5,
+      "session": 67,
+      "unit": 10,
+      "sp": [
+        "10.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Wakil komuniti perlu melaporkan kutipan derma dengan benar",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "a00692b201f30c23",
+      "new_sha256_16": "9d67a1bfb0870aaa"
+    },
+    {
+      "year": 5,
+      "session": 68,
+      "unit": 10,
+      "sp": [
+        "10.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Wakil komuniti perlu melaporkan kutipan derma dengan benar",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "7444746227f3f3d0",
+      "new_sha256_16": "3c82f8dfd692edf6"
+    },
+    {
+      "year": 5,
+      "session": 69,
+      "unit": 10,
+      "sp": [
+        "10.5"
+      ],
+      "approach": "practice",
+      "scenario": "Wakil komuniti perlu melaporkan kutipan derma dengan benar",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "8219c6f65f56be0f",
+      "new_sha256_16": "7070eee9bb62c500"
+    },
+    {
+      "year": 5,
+      "session": 73,
+      "unit": 11,
+      "sp": [
+        "11.1",
+        "11.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Penduduk melaksanakan projek taman komuniti sepanjang bulan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "78455a966b95b265",
+      "new_sha256_16": "5b60fb092998a715"
+    },
+    {
+      "year": 5,
+      "session": 74,
+      "unit": 11,
+      "sp": [
+        "11.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Penduduk melaksanakan projek taman komuniti sepanjang bulan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "a7c55903fc266f33",
+      "new_sha256_16": "393715fa950a8044"
+    },
+    {
+      "year": 5,
+      "session": 75,
+      "unit": 11,
+      "sp": [
+        "11.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Penduduk melaksanakan projek taman komuniti sepanjang bulan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "cfe59e5b7e695717",
+      "new_sha256_16": "a55b003b9dbb0458"
+    },
+    {
+      "year": 5,
+      "session": 76,
+      "unit": 11,
+      "sp": [
+        "11.5"
+      ],
+      "approach": "practice",
+      "scenario": "Penduduk melaksanakan projek taman komuniti sepanjang bulan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "25ebfd979385042d",
+      "new_sha256_16": "d56e85183e824486"
+    },
+    {
+      "year": 5,
+      "session": 80,
+      "unit": 12,
+      "sp": [
+        "12.1",
+        "12.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Pasukan sukarelawan menyelaraskan kerja selepas banjir",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "838a5746ffee3a76",
+      "new_sha256_16": "97356c4f3d0e8417"
+    },
+    {
+      "year": 5,
+      "session": 81,
+      "unit": 12,
+      "sp": [
+        "12.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Pasukan sukarelawan menyelaraskan kerja selepas banjir",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "f2375344715ca36f",
+      "new_sha256_16": "8fb24e6b1f841145"
+    },
+    {
+      "year": 5,
+      "session": 82,
+      "unit": 12,
+      "sp": [
+        "12.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Pasukan sukarelawan menyelaraskan kerja selepas banjir",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "d03f0b5ac10ac082",
+      "new_sha256_16": "8f8e9734960fc55c"
+    },
+    {
+      "year": 5,
+      "session": 83,
+      "unit": 12,
+      "sp": [
+        "12.5"
+      ],
+      "approach": "practice",
+      "scenario": "Pasukan sukarelawan menyelaraskan kerja selepas banjir",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "b3ffb9f97b0dc83e",
+      "new_sha256_16": "204f4748b7c83fa1"
+    },
+    {
+      "year": 5,
+      "session": 87,
+      "unit": 13,
+      "sp": [
+        "13.1",
+        "13.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Komuniti membincangkan cara mengurangkan sisa plastik",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "d844fafc45436d8c",
+      "new_sha256_16": "14cd8f3ea8735a93"
+    },
+    {
+      "year": 5,
+      "session": 88,
+      "unit": 13,
+      "sp": [
+        "13.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Komuniti membincangkan cara mengurangkan sisa plastik",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "fff914e962d591fa",
+      "new_sha256_16": "5e6ce3ad9e3000d9"
+    },
+    {
+      "year": 5,
+      "session": 89,
+      "unit": 13,
+      "sp": [
+        "13.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Komuniti membincangkan cara mengurangkan sisa plastik",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "dfd07b5a054f78d0",
+      "new_sha256_16": "42b6a43a8a62d93a"
+    },
+    {
+      "year": 5,
+      "session": 90,
+      "unit": 13,
+      "sp": [
+        "13.5"
+      ],
+      "approach": "practice",
+      "scenario": "Komuniti membincangkan cara mengurangkan sisa plastik",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "a1429804610c6a3a",
+      "new_sha256_16": "f9163aa66b3f2137"
+    },
+    {
+      "year": 5,
+      "session": 94,
+      "unit": 14,
+      "sp": [
+        "14.1",
+        "14.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Pelbagai kumpulan komuniti berbincang tentang tarikh acara bersama",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "72da60555a7ebb35",
+      "new_sha256_16": "9ecdbc6c4f4f4f69"
+    },
+    {
+      "year": 5,
+      "session": 95,
+      "unit": 14,
+      "sp": [
+        "14.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Pelbagai kumpulan komuniti berbincang tentang tarikh acara bersama",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "ad770489e4b273e2",
+      "new_sha256_16": "4c6276ad784b0f8a"
+    },
+    {
+      "year": 5,
+      "session": 96,
+      "unit": 14,
+      "sp": [
+        "14.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Pelbagai kumpulan komuniti berbincang tentang tarikh acara bersama",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "5f01953dfdc15bc7",
+      "new_sha256_16": "75c16664f0311a8c"
+    },
+    {
+      "year": 6,
+      "session": 4,
+      "unit": 1,
+      "sp": [
+        "1.1",
+        "1.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Rakyat yang berbeza kepercayaan menghayati prinsip pertama Rukun Negara",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "785eb30af0d751c6",
+      "new_sha256_16": "e57366bd685d68af"
+    },
+    {
+      "year": 6,
+      "session": 5,
+      "unit": 1,
+      "sp": [
+        "1.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Rakyat yang berbeza kepercayaan menghayati prinsip pertama Rukun Negara",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "fc4a2776fa46c4d4",
+      "new_sha256_16": "5b5786a8674d5d7b"
+    },
+    {
+      "year": 6,
+      "session": 6,
+      "unit": 1,
+      "sp": [
+        "1.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Rakyat yang berbeza kepercayaan menghayati prinsip pertama Rukun Negara",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "7d9cfea2728de2f5",
+      "new_sha256_16": "305746a1d91d4d12"
+    },
+    {
+      "year": 6,
+      "session": 10,
+      "unit": 2,
+      "sp": [
+        "2.1",
+        "2.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Sekumpulan rakyat memberi sokongan moral kepada petugas semasa bencana",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "ec49c017825cad22",
+      "new_sha256_16": "13295921352e19a9"
+    },
+    {
+      "year": 6,
+      "session": 11,
+      "unit": 2,
+      "sp": [
+        "2.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Sekumpulan rakyat memberi sokongan moral kepada petugas semasa bencana",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "6949cb4c0af18fdf",
+      "new_sha256_16": "71ae8bc502252c00"
+    },
+    {
+      "year": 6,
+      "session": 12,
+      "unit": 2,
+      "sp": [
+        "2.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Sekumpulan rakyat memberi sokongan moral kepada petugas semasa bencana",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "fe47f5ae6fdedfa6",
+      "new_sha256_16": "cbffa7727ae4c841"
+    },
+    {
+      "year": 6,
+      "session": 13,
+      "unit": 2,
+      "sp": [
+        "2.5"
+      ],
+      "approach": "practice",
+      "scenario": "Sekumpulan rakyat memberi sokongan moral kepada petugas semasa bencana",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "3da4cc4cbae0aa54",
+      "new_sha256_16": "1c85aba2db619bb1"
+    },
+    {
+      "year": 6,
+      "session": 17,
+      "unit": 3,
+      "sp": [
+        "3.1",
+        "3.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Murid membincangkan tanggungjawab menjaga kemudahan awam",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "b3df346d463fbfdc",
+      "new_sha256_16": "21d3b7a78b9cdeb1"
+    },
+    {
+      "year": 6,
+      "session": 18,
+      "unit": 3,
+      "sp": [
+        "3.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Murid membincangkan tanggungjawab menjaga kemudahan awam",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "f537d05fc414877a",
+      "new_sha256_16": "30fae519ea4f01c0"
+    },
+    {
+      "year": 6,
+      "session": 19,
+      "unit": 3,
+      "sp": [
+        "3.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Murid membincangkan tanggungjawab menjaga kemudahan awam",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "c7b4b79a3aa2ff4e",
+      "new_sha256_16": "60c9eccb9bc33a77"
+    },
+    {
+      "year": 6,
+      "session": 20,
+      "unit": 3,
+      "sp": [
+        "3.5"
+      ],
+      "approach": "practice",
+      "scenario": "Murid membincangkan tanggungjawab menjaga kemudahan awam",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "a365a94d9a6a94a9",
+      "new_sha256_16": "8a039a059042e07f"
+    },
+    {
+      "year": 6,
+      "session": 24,
+      "unit": 4,
+      "sp": [
+        "4.1",
+        "4.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Pameran sekolah mengetengahkan keunikan budaya dan warisan negara",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "5d2150d314a27e68",
+      "new_sha256_16": "9a0298ed63ca24d4"
+    },
+    {
+      "year": 6,
+      "session": 25,
+      "unit": 4,
+      "sp": [
+        "4.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Pameran sekolah mengetengahkan keunikan budaya dan warisan negara",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "1758285968f45c72",
+      "new_sha256_16": "6624806ca155bc11"
+    },
+    {
+      "year": 6,
+      "session": 26,
+      "unit": 4,
+      "sp": [
+        "4.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Pameran sekolah mengetengahkan keunikan budaya dan warisan negara",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "ec92db7939ae92a2",
+      "new_sha256_16": "fc08ef090466679f"
+    },
+    {
+      "year": 6,
+      "session": 27,
+      "unit": 4,
+      "sp": [
+        "4.5"
+      ],
+      "approach": "practice",
+      "scenario": "Pameran sekolah mengetengahkan keunikan budaya dan warisan negara",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "5dee34fa23ca3c45",
+      "new_sha256_16": "a6a670ba54953315"
+    },
+    {
+      "year": 6,
+      "session": 31,
+      "unit": 5,
+      "sp": [
+        "5.1",
+        "5.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Pelancong bertanya tentang adab dan imej rakyat Malaysia",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "37b0832aa8991720",
+      "new_sha256_16": "dbc1269e9f2161de"
+    },
+    {
+      "year": 6,
+      "session": 32,
+      "unit": 5,
+      "sp": [
+        "5.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Pelancong bertanya tentang adab dan imej rakyat Malaysia",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "d9e0e66a8d8b3c7f",
+      "new_sha256_16": "9445ee04ce153191"
+    },
+    {
+      "year": 6,
+      "session": 33,
+      "unit": 5,
+      "sp": [
+        "5.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Pelancong bertanya tentang adab dan imej rakyat Malaysia",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "a079e055a70c9749",
+      "new_sha256_16": "88782b7a68dd7760"
+    },
+    {
+      "year": 6,
+      "session": 34,
+      "unit": 5,
+      "sp": [
+        "5.5"
+      ],
+      "approach": "practice",
+      "scenario": "Pelancong bertanya tentang adab dan imej rakyat Malaysia",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "1c4f805b1b215478",
+      "new_sha256_16": "a68c7f416854d3ce"
+    },
+    {
+      "year": 6,
+      "session": 38,
+      "unit": 6,
+      "sp": [
+        "6.1",
+        "6.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Murid mempersiapkan pameran tentang identiti kebangsaan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "00d9d6433f9268e0",
+      "new_sha256_16": "390a642ae9a512e2"
+    },
+    {
+      "year": 6,
+      "session": 39,
+      "unit": 6,
+      "sp": [
+        "6.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Murid mempersiapkan pameran tentang identiti kebangsaan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "b5f6d0ed9fdd6468",
+      "new_sha256_16": "b8dcba4a72b1848c"
+    },
+    {
+      "year": 6,
+      "session": 40,
+      "unit": 6,
+      "sp": [
+        "6.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Murid mempersiapkan pameran tentang identiti kebangsaan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "aba5027d54a8893d",
+      "new_sha256_16": "fcc2a52f1576b88a"
+    },
+    {
+      "year": 6,
+      "session": 41,
+      "unit": 6,
+      "sp": [
+        "6.5"
+      ],
+      "approach": "practice",
+      "scenario": "Murid mempersiapkan pameran tentang identiti kebangsaan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "c430695f3a8095a0",
+      "new_sha256_16": "d1e503bc555e013d"
+    },
+    {
+      "year": 6,
+      "session": 45,
+      "unit": 7,
+      "sp": [
+        "7.1",
+        "7.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "8eb2cc1ccb2c151e",
+      "new_sha256_16": "41c0d0f403653aa6"
+    },
+    {
+      "year": 6,
+      "session": 46,
+      "unit": 7,
+      "sp": [
+        "7.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "f9013057cfcfead2",
+      "new_sha256_16": "3b87ae9efafdb799"
+    },
+    {
+      "year": 6,
+      "session": 47,
+      "unit": 7,
+      "sp": [
+        "7.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "bab31b130eafbce3",
+      "new_sha256_16": "e5018163e92882e4"
+    },
+    {
+      "year": 6,
+      "session": 48,
+      "unit": 7,
+      "sp": [
+        "7.5"
+      ],
+      "approach": "practice",
+      "scenario": "Murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "d2561bdf07c4e55e",
+      "new_sha256_16": "0e274f2930db14ab"
+    },
+    {
+      "year": 6,
+      "session": 52,
+      "unit": 8,
+      "sp": [
+        "8.1",
+        "8.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Warga membincangkan pengagihan kemudahan awam yang saksama",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "8e42a44202f1e322",
+      "new_sha256_16": "fe90fc4f8b295e9a"
+    },
+    {
+      "year": 6,
+      "session": 53,
+      "unit": 8,
+      "sp": [
+        "8.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Warga membincangkan pengagihan kemudahan awam yang saksama",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "480f12c650c892e9",
+      "new_sha256_16": "1c82ccb8a73caec2"
+    },
+    {
+      "year": 6,
+      "session": 54,
+      "unit": 8,
+      "sp": [
+        "8.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Warga membincangkan pengagihan kemudahan awam yang saksama",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "75d832cfd73fae94",
+      "new_sha256_16": "1e0a279963c7b15c"
+    },
+    {
+      "year": 6,
+      "session": 55,
+      "unit": 8,
+      "sp": [
+        "8.5"
+      ],
+      "approach": "practice",
+      "scenario": "Warga membincangkan pengagihan kemudahan awam yang saksama",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "24f4ad307a0fdc45",
+      "new_sha256_16": "1249525787529a0f"
+    },
+    {
+      "year": 6,
+      "session": 59,
+      "unit": 9,
+      "sp": [
+        "9.1",
+        "9.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Murid berhadapan maklumat palsu yang menjatuhkan maruah negara",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "4d89e57521ce4dd1",
+      "new_sha256_16": "46e18cd2c355b833"
+    },
+    {
+      "year": 6,
+      "session": 60,
+      "unit": 9,
+      "sp": [
+        "9.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Murid berhadapan maklumat palsu yang menjatuhkan maruah negara",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "adc18829db0230c9",
+      "new_sha256_16": "970527bd44d87e70"
+    },
+    {
+      "year": 6,
+      "session": 61,
+      "unit": 9,
+      "sp": [
+        "9.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Murid berhadapan maklumat palsu yang menjatuhkan maruah negara",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "5702f4c9074038c4",
+      "new_sha256_16": "56189205e7fe14b5"
+    },
+    {
+      "year": 6,
+      "session": 62,
+      "unit": 9,
+      "sp": [
+        "9.5"
+      ],
+      "approach": "practice",
+      "scenario": "Murid berhadapan maklumat palsu yang menjatuhkan maruah negara",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "9e919761cacf7b27",
+      "new_sha256_16": "db68fe7900d134b1"
+    },
+    {
+      "year": 6,
+      "session": 66,
+      "unit": 10,
+      "sp": [
+        "10.1",
+        "10.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Seorang warga perlu bersikap jujur ketika menggunakan perkhidmatan awam",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "45a875e1acc9f6e5",
+      "new_sha256_16": "278a020f41339981"
+    },
+    {
+      "year": 6,
+      "session": 67,
+      "unit": 10,
+      "sp": [
+        "10.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Seorang warga perlu bersikap jujur ketika menggunakan perkhidmatan awam",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "7f773ef5daf04d0a",
+      "new_sha256_16": "b753ef207129ed49"
+    },
+    {
+      "year": 6,
+      "session": 68,
+      "unit": 10,
+      "sp": [
+        "10.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Seorang warga perlu bersikap jujur ketika menggunakan perkhidmatan awam",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "1dfe801c7245f63a",
+      "new_sha256_16": "a7d42301202d00ee"
+    },
+    {
+      "year": 6,
+      "session": 69,
+      "unit": 10,
+      "sp": [
+        "10.5"
+      ],
+      "approach": "practice",
+      "scenario": "Seorang warga perlu bersikap jujur ketika menggunakan perkhidmatan awam",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "d533854efb206d43",
+      "new_sha256_16": "489d133f5341d916"
+    },
+    {
+      "year": 6,
+      "session": 73,
+      "unit": 11,
+      "sp": [
+        "11.1",
+        "11.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Murid mengenali usaha tekun rakyat membangunkan negara",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "dc492f9a71e1c364",
+      "new_sha256_16": "d612abde13e39ba6"
+    },
+    {
+      "year": 6,
+      "session": 74,
+      "unit": 11,
+      "sp": [
+        "11.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Murid mengenali usaha tekun rakyat membangunkan negara",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "679c4d18ddfe5551",
+      "new_sha256_16": "0d185e565b91f8cd"
+    },
+    {
+      "year": 6,
+      "session": 75,
+      "unit": 11,
+      "sp": [
+        "11.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Murid mengenali usaha tekun rakyat membangunkan negara",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "99470336e11b0d88",
+      "new_sha256_16": "578a7e96078aa8ef"
+    },
+    {
+      "year": 6,
+      "session": 76,
+      "unit": 11,
+      "sp": [
+        "11.5"
+      ],
+      "approach": "practice",
+      "scenario": "Murid mengenali usaha tekun rakyat membangunkan negara",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "65b2e90341db8ca6",
+      "new_sha256_16": "55294e9a1332b41e"
+    },
+    {
+      "year": 6,
+      "session": 80,
+      "unit": 12,
+      "sp": [
+        "12.1",
+        "12.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Rakyat pelbagai latar belakang menjalankan projek kebajikan bersama",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "ed2e2eb1e8c3f403",
+      "new_sha256_16": "188a90f99d462021"
+    },
+    {
+      "year": 6,
+      "session": 81,
+      "unit": 12,
+      "sp": [
+        "12.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Rakyat pelbagai latar belakang menjalankan projek kebajikan bersama",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "67ad35c12cb06cb3",
+      "new_sha256_16": "091a3ec366b164a4"
+    },
+    {
+      "year": 6,
+      "session": 82,
+      "unit": 12,
+      "sp": [
+        "12.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Rakyat pelbagai latar belakang menjalankan projek kebajikan bersama",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "93931a8110490327",
+      "new_sha256_16": "adb7255bcd58aada"
+    },
+    {
+      "year": 6,
+      "session": 83,
+      "unit": 12,
+      "sp": [
+        "12.5"
+      ],
+      "approach": "practice",
+      "scenario": "Rakyat pelbagai latar belakang menjalankan projek kebajikan bersama",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "23903eaf82cc2eb8",
+      "new_sha256_16": "2af38ac92a23a1b1"
+    },
+    {
+      "year": 6,
+      "session": 87,
+      "unit": 13,
+      "sp": [
+        "13.1",
+        "13.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Komuniti merancang penggunaan sumber negara secara berhemat",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "c9ab39f84cb89dff",
+      "new_sha256_16": "1b8fc3004a2b2d51"
+    },
+    {
+      "year": 6,
+      "session": 88,
+      "unit": 13,
+      "sp": [
+        "13.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Komuniti merancang penggunaan sumber negara secara berhemat",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "fe76cd3f65661765",
+      "new_sha256_16": "dd39b5cfbf274c82"
+    },
+    {
+      "year": 6,
+      "session": 89,
+      "unit": 13,
+      "sp": [
+        "13.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Komuniti merancang penggunaan sumber negara secara berhemat",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "e08ae8363504f85a",
+      "new_sha256_16": "ce0c5bb958699ef3"
+    },
+    {
+      "year": 6,
+      "session": 90,
+      "unit": 13,
+      "sp": [
+        "13.5"
+      ],
+      "approach": "practice",
+      "scenario": "Komuniti merancang penggunaan sumber negara secara berhemat",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "1f5f28218cf412ba",
+      "new_sha256_16": "427265198bc0ead7"
+    },
+    {
+      "year": 6,
+      "session": 94,
+      "unit": 14,
+      "sp": [
+        "14.1",
+        "14.2"
+      ],
+      "approach": "knowledge",
+      "scenario": "Masyarakat berbeza budaya berbincang secara aman demi perpaduan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "65eae6996977a453",
+      "new_sha256_16": "2a8e9dcf8aa6b383"
+    },
+    {
+      "year": 6,
+      "session": 95,
+      "unit": 14,
+      "sp": [
+        "14.3"
+      ],
+      "approach": "reasoning",
+      "scenario": "Masyarakat berbeza budaya berbincang secara aman demi perpaduan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "8d233024e602a476",
+      "new_sha256_16": "5733764fbe1d741f"
+    },
+    {
+      "year": 6,
+      "session": 96,
+      "unit": 14,
+      "sp": [
+        "14.4"
+      ],
+      "approach": "emotion",
+      "scenario": "Masyarakat berbeza budaya berbincang secara aman demi perpaduan",
+      "evidence_scope": "DSKP_SP_AND_TEACHER_DEVELOPED_CLASSROOM_SCENE_NOT_VISUAL_BOOK_ACTIVITY",
+      "source_sha256_16": "98c0cb95346d9f3b",
+      "new_sha256_16": "c259ce54df9fc341"
+    }
+  ],
+  "final_ready": false,
+  "visual_activity_approval": false,
+  "telegram_teacher_end_to_end": false,
+  "notes": [
+    "All 270 educator-developed supplementary lessons rewritten at phase level.",
+    "Official SP, source provenance, release status and original teaching metadata unchanged.",
+    "No user databases, quotas, payment or runtime changed."
+  ]
+}

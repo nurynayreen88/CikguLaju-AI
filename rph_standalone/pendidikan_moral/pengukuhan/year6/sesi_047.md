@@ -17,15 +17,15 @@ Murid menunjukkan penguasaan SP **7.4** dengan menghasilkan dua perasaan yang wa
 **Kriteria kejayaan:** Dua ekspresi emosi dan satu sebab yang jelas serta hormat dinilai dalam respons bertulis individu.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru memperkenalkan situasi **Murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan** Murid mengenal pasti cabaran nilai Kasih sayang dan menyebut satu tindakan yang boleh diambil.
+**Set induksi (5 minit):** Guru memaparkan kad kes: **Murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan**. Murid meneliti siapa terlibat, menyebut satu pilihan tindakan dan mengaitkannya dengan nilai **Kasih sayang**. Pengalaman peribadi tidak diperlukan.
 
-**Aktiviti 1 (20 minit) — Perasaan warga prihatin:** Guru meneliti sajak m/s 64–65 dan aktiviti menghasilkan e-poster m/s 68. Murid menamakan dua perasaan apabila dapat menyumbang kepada negara serta menjelaskan konteksnya (SP 7.4).
+**Aktiviti 1 (20 minit) — Empati SP 7.4:** Guru memaparkan dua perspektif pihak terlibat dalam **pilihan melancong dalam negara dan menjaga nama baik Malaysia**. Murid melaksanakan tugasan **Mengekspresikan perasaan berkaitan dengan amalan cinta akan negara** menggunakan kad perasaan dan memilih respons yang berhemah tanpa mengaitkannya dengan keluarga sendiri.
 
-**Aktiviti 2 (20 minit) — Respons bersebab:** Murid melengkapkan latihan refleksi perasaan dalam 'Mari Uji Diri' m/s 70 dan berbincang cara menghormati pandangan rakan. Guru merekod satu ungkapan perasaan dengan alasan individu (SP 7.4).
+**Aktiviti 2 (20 minit) — Dialog beralasan:** Guru memberikan rangka ayat 'Saya berasa ... kerana ...'. Murid membina dua dialog pendek yang berkaitan dengan kes **Murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan**, membandingkan kesan kata-kata terhadap rakan dan menambah baik satu ayat.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Dua ekspresi emosi dan satu sebab yang jelas serta hormat dinilai dalam respons bertulis individu. Guru memeriksa hasil murid seorang demi seorang, mencatat kelemahan tertentu dan tidak menetapkan TP berdasarkan lakonan semata-mata.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menyemak dua perasaan yang bertepatan dengan SP 7.4 bersama sekurang-kurangnya satu alasan jelas dalam respons individu. Tiada markah berdasarkan pendedahan pengalaman atau pegangan peribadi.
 
-**Penutup (5 minit):** Murid menyebut satu tindakan untuk memperkukuh nilai Kasih sayang dan satu sebab ia penting dalam cinta akan negara. Guru merumuskan perkara yang telah dinilai dan memberikan maklum balas.
+**Penutup (5 minit):** Murid menyatakan satu keputusan atau perlakuan yang menunjukkan nilai **Kasih sayang** dalam konteks **pilihan melancong dalam negara dan menjaga nama baik Malaysia** serta sebab pilihan itu. Guru merumuskan SP 7.4 dan tindakan selamat yang boleh dipraktikkan.
 
 **Pemulihan:** Kad bergambar serta rangka ayat berpandu.  
 **Pengayaan:** Tambah satu pilihan alternatif dan dua justifikasi yang melihat kesan terhadap pihak lain.  

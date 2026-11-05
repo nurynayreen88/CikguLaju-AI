@@ -17,15 +17,15 @@ Murid menunjukkan penguasaan SP **1.3** dengan menghasilkan dua alasan atau kesa
 **Kriteria kejayaan:** Sekurang-kurangnya dua alasan/kesan yang bersebab dengan bukti respons individu.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru memperkenalkan situasi **Rakyat yang berbeza kepercayaan menghayati prinsip pertama Rukun Negara** Murid mengenal pasti cabaran nilai Kepercayaan kepada Tuhan dan menyebut satu tindakan yang boleh diambil.
+**Set induksi (5 minit):** Guru memaparkan kad kes: **Rakyat yang berbeza kepercayaan menghayati prinsip pertama Rukun Negara**. Murid meneliti siapa terlibat, menyebut satu pilihan tindakan dan mengaitkannya dengan nilai **Kepercayaan kepada Tuhan**. Pengalaman peribadi tidak diperlukan.
 
-**Aktiviti 1 (20 minit) — Penaakulan kepentingan dan akibat:** Guru menukar satu fakta dalam kes "Rakyat yang berbeza kepercayaan menghayati prinsip pertama Rukun Negara" dan meminta murid menjangka perubahan akibat kepada individu serta masyarakat. Guru menjelaskan kata tugas SP (1.3) dan memeriksa kefahaman murid melalui soal jawab individu.
+**Aktiviti 1 (20 minit) — Penaakulan SP 1.3:** Guru memperkenalkan dua hasil yang mungkin apabila **rakyat yang berbeza kepercayaan menghayati prinsip pertama Rukun Negara**. Murid menjalankan tugasan **Menghuraikan kepentingan amalan kepercayaan kepada Tuhan demi kesejahteraan negara** dengan mengenal pasti dua hubungan tindakan–sebab–kesan dan pihak yang menerima kesannya.
 
-**Aktiviti 2 (20 minit) — Menyelesaikan masalah:** Murid menghasilkan peta "pilihan–sebab–akibat" dan membandingkan dua keputusan berbeza. Wakil memberi alasan di hadapan kumpulan manakala pemerhati menguji sama ada kesannya dapat dijelaskan. Guru memandu murid menggunakan sebab yang sahih, menjaga keselamatan serta mengelakkan aktiviti yang memerlukan murid mendedahkan butiran peribadi.
+**Aktiviti 2 (20 minit) — Uji justifikasi:** Guru membekalkan dua kad pilihan yang berbeza bagi **prinsip pertama Rukun Negara dan kepelbagaian kepercayaan dalam negara**. Murid memilih keputusan lebih wajar, membina peta sebab–kesan dan mempertahankannya dengan dua alasan. Rakan meminta satu pembaikan berasaskan SP.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Sekurang-kurangnya dua alasan/kesan yang bersebab dengan bukti respons individu. Guru memeriksa hasil murid seorang demi seorang, mencatat kelemahan tertentu dan tidak menetapkan TP berdasarkan lakonan semata-mata.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menilai dua justifikasi individu yang menjawab SP 1.3, kedua-duanya disokong hubungan sebab dan kesan yang munasabah. Murid membetulkan satu kaitan yang tidak tepat selepas ulasan guru.
 
-**Penutup (5 minit):** Murid menyebut satu tindakan untuk memperkukuh nilai Kepercayaan kepada Tuhan dan satu sebab ia penting dalam kepercayaan kepada tuhan menjamin kesejahteraan negara. Guru merumuskan perkara yang telah dinilai dan memberikan maklum balas.
+**Penutup (5 minit):** Murid menyatakan satu keputusan atau perlakuan yang menunjukkan nilai **Kepercayaan kepada Tuhan** dalam konteks **prinsip pertama Rukun Negara dan kepelbagaian kepercayaan dalam negara** serta sebab pilihan itu. Guru merumuskan SP 1.3 dan tindakan selamat yang boleh dipraktikkan.
 
 **Pemulihan:** Kad bergambar serta rangka ayat berpandu.  
 **Pengayaan:** Tambah satu pilihan alternatif dan dua justifikasi yang melihat kesan terhadap pihak lain.  

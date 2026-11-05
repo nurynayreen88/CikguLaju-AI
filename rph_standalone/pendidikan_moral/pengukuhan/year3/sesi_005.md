@@ -16,15 +16,15 @@ Murid dapat menunjukkan penguasaan SP **1.3** melalui dua justifikasi yang berka
 **Kriteria kejayaan:** Sekurang-kurangnya dua alasan dengan hubungan sebab–akibat; guru menilai penaakulan dan ketepatan kata tugas SP.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru memaparkan situasi: **Warga sekolah meraikan perayaan yang berbeza dalam suasana saling menghormati** Murid menyatakan satu isu moral, pihak terlibat dan nilai Kepercayaan kepada Tuhan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan kad kes: **Warga sekolah meraikan perayaan yang berbeza dalam suasana saling menghormati**. Murid meneliti siapa terlibat, menyebut satu pilihan tindakan dan mengaitkannya dengan nilai **Kepercayaan kepada Tuhan**. Pengalaman peribadi tidak diperlukan.
 
-**Aktiviti 1 (20 minit) — Penaakulan moral dan implikasi:** Guru membandingkan dua pilihan apabila warga sekolah meraikan perayaan yang berbeza dalam suasana saling menghormati. Murid menyatakan kemungkinan hasil kepada individu, rakan atau komuniti. Guru mengemukakan soalan berdasarkan kata tugas SP **1.3** dan mengaitkan perbincangan dengan konsep nilai dalam DSKP.
+**Aktiviti 1 (20 minit) — Penaakulan SP 1.3:** Guru memperkenalkan dua hasil yang mungkin apabila **warga sekolah meraikan perayaan yang berbeza dalam suasana saling menghormati**. Murid menjalankan tugasan **Menilai kepentingan menerima, menghormati dan mengurus kepelbagaian perayaan yang disambut oleh warga sekolah** dengan mengenal pasti dua hubungan tindakan–sebab–kesan dan pihak yang menerima kesannya.
 
-**Aktiviti 2 (20 minit) — Respons dan hujah:** Murid membina carta pilihan–sebab–kesan, membentangkan dua justifikasi dan menjawab soalan mencabar daripada kumpulan lain. Guru mengaitkan keputusan dengan kepentingan dan akibat nilai Kepercayaan kepada Tuhan. Murid menilai sendiri hasil dengan panduan guru; komunikasi mesti hormat, selamat dan tidak memerlukan pendedahan agama/keluarga peribadi.
+**Aktiviti 2 (20 minit) — Uji justifikasi:** Guru membekalkan dua kad pilihan yang berbeza bagi **warga sekolah meraikan perayaan yang berbeza dalam suasana saling menghormati**. Murid memilih keputusan lebih wajar, membina peta sebab–kesan dan mempertahankannya dengan dua alasan. Rakan meminta satu pembaikan berasaskan SP.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Sekurang-kurangnya dua alasan dengan hubungan sebab–akibat; guru menilai penaakulan dan ketepatan kata tugas SP. Guru mencatat evidens individu dan menerangkan satu pembetulan spesifik, bukan memberikan TP hanya kerana murid mengambil bahagian.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menilai dua justifikasi individu yang menjawab SP 1.3, kedua-duanya disokong hubungan sebab dan kesan yang munasabah. Murid membetulkan satu kaitan yang tidak tepat selepas ulasan guru.
 
-**Penutup (5 minit):** Wakil murid menyatakan tindakan yang dipilih, satu sebab dan contoh aplikasi selamat. Guru membuat rumusan nilai Kepercayaan kepada Tuhan dan kaitannya dengan kepelbagaian perayaan warga sekolah.
+**Penutup (5 minit):** Murid menyatakan satu keputusan atau perlakuan yang menunjukkan nilai **Kepercayaan kepada Tuhan** dalam konteks **warga sekolah meraikan perayaan yang berbeza dalam suasana saling menghormati** serta sebab pilihan itu. Guru merumuskan SP 1.3 dan tindakan selamat yang boleh dipraktikkan.
 
 **Pemulihan:** Gambar situasi, kerangka "Saya memilih ... kerana ..." dan dua pilihan tindakan disediakan.  
 **Pengayaan:** Murid menambah satu sebab atau mempertimbangkan perspektif pihak yang berbeza.  

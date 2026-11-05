@@ -17,15 +17,15 @@ Murid menunjukkan penguasaan SP **5.5** dengan menghasilkan dua perlakuan yang d
 **Kriteria kejayaan:** Dua perlakuan yang benar-benar diperagakan, satu sebab dan refleksi; simulasi tidak membuktikan amalan harian.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru memperkenalkan situasi **Pelancong bertanya tentang adab dan imej rakyat Malaysia** Murid mengenal pasti cabaran nilai Hemah tinggi dan menyebut satu tindakan yang boleh diambil.
+**Set induksi (5 minit):** Guru memaparkan kad kes: **Pelancong bertanya tentang adab dan imej rakyat Malaysia**. Murid meneliti siapa terlibat, menyebut satu pilihan tindakan dan mengaitkannya dengan nilai **Hemah tinggi**. Pengalaman peribadi tidak diperlukan.
 
-**Aktiviti 1 (20 minit) — Tindakan moral berasaskan simulasi:** Guru menjadikan situasi "Pelancong bertanya tentang adab dan imej rakyat Malaysia" sebagai permainan peranan berstruktur dan memberikan senarai semak dua tingkah laku berasaskan nilai Hemah tinggi. Guru menjelaskan kata tugas SP (5.5) dan memeriksa kefahaman murid melalui soal jawab individu.
+**Aktiviti 1 (20 minit) — Tindakan SP 5.5:** Guru menyediakan lakonan ringkas daripada kes **Pelancong bertanya tentang adab dan imej rakyat Malaysia**. Murid memperagakan dua langkah yang bersesuaian untuk **Mengamalkan sikap hemah tinggi demi meningkatkan imej negara**, tanpa memerlukan wang, data peribadi atau aktiviti luar kelas.
 
-**Aktiviti 2 (20 minit) — Menyelesaikan masalah:** Murid memperagakan tindakan dalam kumpulan kecil, menerima maklum balas pemerhati dan mengulangi satu langkah yang kurang tepat. Murid menulis refleksi pilihan tindakan yang selamat. Guru memandu murid menggunakan sebab yang sahih, menjaga keselamatan serta mengelakkan aktiviti yang memerlukan murid mendedahkan butiran peribadi.
+**Aktiviti 2 (20 minit) — Simulasi dan penambahbaikan:** Guru memandu pemerhati menggunakan senarai semak nilai **Hemah tinggi**. Murid menunjukkan satu perlakuan kedua apabila keadaan kes berubah, menerima komen rakan dan memperbaiki satu tindakan yang dapat dilihat.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Dua perlakuan yang benar-benar diperagakan, satu sebab dan refleksi; simulasi tidak membuktikan amalan harian. Guru memeriksa hasil murid seorang demi seorang, mencatat kelemahan tertentu dan tidak menetapkan TP berdasarkan lakonan semata-mata.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru merekod dua tindakan yang benar-benar diperagakan untuk SP 5.5, satu sebab tindakan dan satu refleksi pembaikan. Simulasi di kelas tidak dianggap bukti amalan harian di luar sekolah.
 
-**Penutup (5 minit):** Murid menyebut satu tindakan untuk memperkukuh nilai Hemah tinggi dan satu sebab ia penting dalam amalan hemah tinggi meningkatkan imej negara. Guru merumuskan perkara yang telah dinilai dan memberikan maklum balas.
+**Penutup (5 minit):** Murid menyatakan satu keputusan atau perlakuan yang menunjukkan nilai **Hemah tinggi** dalam konteks **bahasa sopan, layanan berhemah dan imej rakyat Malaysia** serta sebab pilihan itu. Guru merumuskan SP 5.5 dan tindakan selamat yang boleh dipraktikkan.
 
 **Pemulihan:** Kad bergambar serta rangka ayat berpandu.  
 **Pengayaan:** Tambah satu pilihan alternatif dan dua justifikasi yang melihat kesan terhadap pihak lain.  

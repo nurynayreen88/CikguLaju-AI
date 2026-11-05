@@ -17,15 +17,15 @@ Murid menunjukkan penguasaan SP **4.4** dengan menghasilkan dua perasaan yang wa
 **Kriteria kejayaan:** Dua ekspresi emosi dan satu sebab yang jelas serta hormat dinilai dalam respons bertulis individu.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru memperkenalkan situasi **Pameran sekolah mengetengahkan keunikan budaya dan warisan negara** Murid mengenal pasti cabaran nilai Berterima kasih dan menyebut satu tindakan yang boleh diambil.
+**Set induksi (5 minit):** Guru memaparkan kad kes: **Pameran sekolah mengetengahkan keunikan budaya dan warisan negara**. Murid meneliti siapa terlibat, menyebut satu pilihan tindakan dan mengaitkannya dengan nilai **Berterima kasih**. Pengalaman peribadi tidak diperlukan.
 
-**Aktiviti 1 (20 minit) — Perspektif pelawat warisan:** Guru meneliti cerita lawatan Muzium Baba dan Nyonya m/s 34–35 serta soalan perasaan tentang sistem pemerintahan m/s 37. Murid memilih dua perspektif dan menyatakan emosi yang berkaitan dengan penghargaan budaya negara (SP 4.4).
+**Aktiviti 1 (20 minit) — Empati SP 4.4:** Guru memaparkan dua perspektif pihak terlibat dalam **keunikan masyarakat Baba dan Nyonya serta warisan budaya negara**. Murid melaksanakan tugasan **Mengekspresikan perasaan berkaitan dengan amalan menghargai keunikan negara** menggunakan kad perasaan dan memilih respons yang berhemah tanpa mengaitkannya dengan keluarga sendiri.
 
-**Aktiviti 2 (20 minit) — Kad refleksi bersebab:** Murid menulis dua ayat 'Saya berasa ... apabila ... kerana ...' berkaitan keunikan budaya/pemerintahan. Guru menilai kesesuaian perasaan dan sebab secara individu; murid membetulkan satu ayat (SP 4.4).
+**Aktiviti 2 (20 minit) — Dialog beralasan:** Guru memberikan rangka ayat 'Saya berasa ... kerana ...'. Murid membina dua dialog pendek yang berkaitan dengan kes **Pameran sekolah mengetengahkan keunikan budaya dan warisan negara**, membandingkan kesan kata-kata terhadap rakan dan menambah baik satu ayat.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Dua ekspresi emosi dan satu sebab yang jelas serta hormat dinilai dalam respons bertulis individu. Guru memeriksa hasil murid seorang demi seorang, mencatat kelemahan tertentu dan tidak menetapkan TP berdasarkan lakonan semata-mata.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menyemak dua perasaan yang bertepatan dengan SP 4.4 bersama sekurang-kurangnya satu alasan jelas dalam respons individu. Tiada markah berdasarkan pendedahan pengalaman atau pegangan peribadi.
 
-**Penutup (5 minit):** Murid menyebut satu tindakan untuk memperkukuh nilai Berterima kasih dan satu sebab ia penting dalam hargai keunikan negara. Guru merumuskan perkara yang telah dinilai dan memberikan maklum balas.
+**Penutup (5 minit):** Murid menyatakan satu keputusan atau perlakuan yang menunjukkan nilai **Berterima kasih** dalam konteks **keunikan masyarakat Baba dan Nyonya serta warisan budaya negara** serta sebab pilihan itu. Guru merumuskan SP 4.4 dan tindakan selamat yang boleh dipraktikkan.
 
 **Pemulihan:** Kad bergambar serta rangka ayat berpandu.  
 **Pengayaan:** Tambah satu pilihan alternatif dan dua justifikasi yang melihat kesan terhadap pihak lain.  

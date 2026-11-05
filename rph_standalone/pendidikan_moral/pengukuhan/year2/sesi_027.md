@@ -17,15 +17,15 @@ Murid dapat memperagakan dua tindakan yang menunjukkan nilai berterima kasih sec
 **Kriteria kejayaan:** Senarai semak dua perlakuan diperagakan, satu sebab tindakan dan satu refleksi; simulasi bukan bukti amalan sebenar di luar kelas.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru membacakan situasi **Datuk membantu cucu belajar dan cucu ingin menunjukkan penghargaan**. Murid mengenal pasti pihak terlibat dan menyatakan satu tindakan berkaitan nilai **Berterima kasih**.
+**Set induksi (5 minit):** Guru memaparkan kad kes: **Datuk membantu cucu belajar dan cucu ingin menunjukkan penghargaan**. Murid meneliti siapa terlibat, menyebut satu pilihan tindakan dan mengaitkannya dengan nilai **Berterima kasih**. Pengalaman peribadi tidak diperlukan.
 
-**Aktiviti 1 (20 minit) — Simulasi amalan nilai dan refleksi:** Guru mengemukakan cabaran "Datuk membantu cucu belajar dan cucu ingin menunjukkan penghargaan" dan membahagikan tiga peranan: pelaku, penerima tindakan dan pemerhati. Murid merancang dua langkah yang tidak membahayakan diri atau memerlukan pendedahan keluarga/peribadi.
+**Aktiviti 1 (20 minit) — Tindakan SP 4.5:** Guru menyediakan lakonan ringkas daripada kes **Datuk membantu cucu belajar dan cucu ingin menunjukkan penghargaan**. Murid memperagakan dua langkah yang bersesuaian untuk **Mengamalkan sikap berterima kasih terhadap keluarga**, tanpa memerlukan wang, data peribadi atau aktiviti luar kelas.
 
-**Aktiviti 2 (20 minit) — Aplikasi dalam konteks sebenar:** Murid melaksanakan simulasi 90 saat, menerima maklum balas senarai semak, kemudian mengulang tindakan dengan bahasa yang lebih berhemah. Pemerhati melaporkan tindakan nyata yang boleh dilihat. Guru membandingkan evidens dengan SP 4.5.
+**Aktiviti 2 (20 minit) — Simulasi dan penambahbaikan:** Guru memandu pemerhati menggunakan senarai semak nilai **Berterima kasih**. Murid menunjukkan satu perlakuan kedua apabila keadaan kes berubah, menerima komen rakan dan memperbaiki satu tindakan yang dapat dilihat.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Senarai semak dua perlakuan diperagakan, satu sebab tindakan dan satu refleksi; simulasi bukan bukti amalan sebenar di luar kelas. Guru mencatat respon individu dan memberi maklum balas berbukti, bukan menetapkan TP berdasarkan satu respons sahaja.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru merekod dua tindakan yang benar-benar diperagakan untuk SP 4.5, satu sebab tindakan dan satu refleksi pembaikan. Simulasi di kelas tidak dianggap bukti amalan harian di luar sekolah.
 
-**Penutup (5 minit):** Dua murid menjelaskan tindakan yang dipilih serta sebabnya; guru merumuskan hubungan nilai **Berterima kasih** dengan berterima kasih terhadap keluarga dan cadangan pengamalan selamat.
+**Penutup (5 minit):** Murid menyatakan satu keputusan atau perlakuan yang menunjukkan nilai **Berterima kasih** dalam konteks **datuk membantu cucu belajar dan cucu ingin menunjukkan penghargaan** serta sebab pilihan itu. Guru merumuskan SP 4.5 dan tindakan selamat yang boleh dipraktikkan.
 
 **Pemulihan:** Pilihan gambar, tiga kad kata kunci dan rangka ayat untuk murid yang memerlukan sokongan.  
 **Pengayaan:** Murid yang telah menguasai tugasan membandingkan dua keputusan dan menyokong pilihan dengan justifikasi tambahan.  

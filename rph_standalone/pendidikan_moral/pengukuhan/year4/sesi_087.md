@@ -16,15 +16,15 @@ Murid dapat menunjukkan penguasaan SP **13.1; 13.2** melalui dua tindakan releva
 **Kriteria kejayaan:** Dua contoh atau tindakan, dua cara dan satu alasan yang tepat dinilai secara individu.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru memaparkan situasi: **Beberapa keluarga ingin mengurangkan pembaziran air di kawasan perumahan** Murid menyatakan satu isu moral, pihak terlibat dan nilai Kesederhanaan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan kad kes: **Beberapa keluarga ingin mengurangkan pembaziran air di kawasan perumahan**. Murid meneliti siapa terlibat, menyebut satu pilihan tindakan dan mengaitkannya dengan nilai **Kesederhanaan**. Pengalaman peribadi tidak diperlukan.
 
-**Aktiviti 1 (20 minit) — Penerokaan nilai melalui kes:** Guru memperkenalkan situasi: Beberapa keluarga ingin mengurangkan pembaziran air di kawasan perumahan. Murid mengelaskan tindakan sesuai/tidak sesuai pada kad dan menyenaraikan pihak yang memerlukan perhatian. Guru mengemukakan soalan berdasarkan kata tugas SP **13.1; 13.2** dan mengaitkan perbincangan dengan konsep nilai dalam DSKP.
+**Aktiviti 1 (20 minit) — Teliti situasi dan SP 13.1:** Guru menggunakan dua variasi kes berkaitan **beberapa keluarga ingin mengurangkan pembaziran air di kawasan perumahan**. Murid menghasilkan dua jawapan konkrit bagi tugasan **Memberikan contoh amalan kesederhanaan dalam hidup berjiran** dan menerangkan hubungannya dengan watak atau keperluan dalam situasi.
 
-**Aktiviti 2 (20 minit) — Respons dan hujah:** Murid membina peta dua tindakan dan dua cara melaksanakannya dengan selamat bagi situasi beberapa keluarga ingin mengurangkan pembaziran air di kawasan perumahan. Kumpulan bertukar hasil dan membetulkan pilihan yang tidak praktikal. Murid menilai sendiri hasil dengan panduan guru; komunikasi mesti hormat, selamat dan tidak memerlukan pendedahan agama/keluarga peribadi.
+**Aktiviti 2 (20 minit) — Buktikan SP 13.2:** Guru menyoal cara atau sebab pilihan dibuat. Murid menghasilkan kad respons bagi **Memerihalkan cara bersikap sederhana dalam hidup berjiran** dengan dua butiran khusus serta alasan yang sesuai dengan kes **Beberapa keluarga ingin mengurangkan pembaziran air di kawasan perumahan**. Rakan menyemak ketepatan jawapan mengikut kata tugas SP.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Dua contoh atau tindakan, dua cara dan satu alasan yang tepat dinilai secara individu. Guru mencatat evidens individu dan menerangkan satu pembetulan spesifik, bukan memberikan TP hanya kerana murid mengambil bahagian.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menyemak kad individu: dua respons untuk SP 13.1, dua butiran dan satu alasan tepat untuk SP 13.2. Murid membetulkan satu jawapan berdasarkan maklum balas; penilaian bukan berdasarkan hafalan semata-mata.
 
-**Penutup (5 minit):** Wakil murid menyatakan tindakan yang dipilih, satu sebab dan contoh aplikasi selamat. Guru membuat rumusan nilai Kesederhanaan dan kaitannya dengan amalan kesederhanaan dalam hidup berjiran.
+**Penutup (5 minit):** Murid menyatakan satu keputusan atau perlakuan yang menunjukkan nilai **Kesederhanaan** dalam konteks **beberapa keluarga ingin mengurangkan pembaziran air di kawasan perumahan** serta sebab pilihan itu. Guru merumuskan SP 13.1; 13.2 dan tindakan selamat yang boleh dipraktikkan.
 
 **Pemulihan:** Gambar situasi, kerangka "Saya memilih ... kerana ..." dan dua pilihan tindakan disediakan.  
 **Pengayaan:** Murid menambah satu sebab atau mempertimbangkan perspektif pihak yang berbeza.  

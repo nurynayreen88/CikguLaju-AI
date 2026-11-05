@@ -17,15 +17,15 @@ Murid menunjukkan penguasaan SP **3.5** dengan menghasilkan dua perlakuan yang d
 **Kriteria kejayaan:** Dua perlakuan yang benar-benar diperagakan, satu sebab dan refleksi; simulasi tidak membuktikan amalan harian.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru memperkenalkan situasi **Penduduk membincangkan tanggungjawab menjaga dewan komuniti** Murid mengenal pasti cabaran nilai Bertanggungjawab dan menyebut satu tindakan yang boleh diambil.
+**Set induksi (5 minit):** Guru memaparkan kad kes: **Penduduk membincangkan tanggungjawab menjaga dewan komuniti**. Murid meneliti siapa terlibat, menyebut satu pilihan tindakan dan mengaitkannya dengan nilai **Bertanggungjawab**. Pengalaman peribadi tidak diperlukan.
 
-**Aktiviti 1 (20 minit) — Tindakan moral berasaskan simulasi:** Guru menjadikan situasi "Penduduk membincangkan tanggungjawab menjaga dewan komuniti" sebagai permainan peranan berstruktur dan memberikan senarai semak dua tingkah laku berasaskan nilai Bertanggungjawab. Guru menjelaskan kata tugas SP (3.5) dan memeriksa kefahaman murid melalui soal jawab individu.
+**Aktiviti 1 (20 minit) — Tindakan SP 3.5:** Guru menyediakan lakonan ringkas daripada kes **Penduduk membincangkan tanggungjawab menjaga dewan komuniti**. Murid memperagakan dua langkah yang bersesuaian untuk **Mengamalkan sikap bertanggungjawab sebagai anggota masyarakat**, tanpa memerlukan wang, data peribadi atau aktiviti luar kelas.
 
-**Aktiviti 2 (20 minit) — Menyelesaikan masalah:** Murid memperagakan tindakan dalam kumpulan kecil, menerima maklum balas pemerhati dan mengulangi satu langkah yang kurang tepat. Murid menulis refleksi pilihan tindakan yang selamat. Guru memandu murid menggunakan sebab yang sahih, menjaga keselamatan serta mengelakkan aktiviti yang memerlukan murid mendedahkan butiran peribadi.
+**Aktiviti 2 (20 minit) — Simulasi dan penambahbaikan:** Guru memandu pemerhati menggunakan senarai semak nilai **Bertanggungjawab**. Murid menunjukkan satu perlakuan kedua apabila keadaan kes berubah, menerima komen rakan dan memperbaiki satu tindakan yang dapat dilihat.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Dua perlakuan yang benar-benar diperagakan, satu sebab dan refleksi; simulasi tidak membuktikan amalan harian. Guru memeriksa hasil murid seorang demi seorang, mencatat kelemahan tertentu dan tidak menetapkan TP berdasarkan lakonan semata-mata.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru merekod dua tindakan yang benar-benar diperagakan untuk SP 3.5, satu sebab tindakan dan satu refleksi pembaikan. Simulasi di kelas tidak dianggap bukti amalan harian di luar sekolah.
 
-**Penutup (5 minit):** Murid menyebut satu tindakan untuk memperkukuh nilai Bertanggungjawab dan satu sebab ia penting dalam tanggungjawab sebagai anggota masyarakat. Guru merumuskan perkara yang telah dinilai dan memberikan maklum balas.
+**Penutup (5 minit):** Murid menyatakan satu keputusan atau perlakuan yang menunjukkan nilai **Bertanggungjawab** dalam konteks **penduduk membincangkan tanggungjawab menjaga dewan komuniti** serta sebab pilihan itu. Guru merumuskan SP 3.5 dan tindakan selamat yang boleh dipraktikkan.
 
 **Pemulihan:** Kad bergambar serta rangka ayat berpandu.  
 **Pengayaan:** Tambah satu pilihan alternatif dan dua justifikasi yang melihat kesan terhadap pihak lain.  

@@ -16,15 +16,15 @@ Murid dapat menunjukkan penguasaan SP **2.3** melalui dua justifikasi yang berka
 **Kriteria kejayaan:** Sekurang-kurangnya dua alasan dengan hubungan sebab–akibat; guru menilai penaakulan dan ketepatan kata tugas SP.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru memaparkan situasi: **Seorang murid baharu memerlukan bantuan mencari bilik khas** Murid menyatakan satu isu moral, pihak terlibat dan nilai Baik hati yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan kad kes: **Seorang murid baharu memerlukan bantuan mencari bilik khas**. Murid meneliti siapa terlibat, menyebut satu pilihan tindakan dan mengaitkannya dengan nilai **Baik hati**. Pengalaman peribadi tidak diperlukan.
 
-**Aktiviti 1 (20 minit) — Penaakulan moral dan implikasi:** Guru membandingkan dua pilihan apabila seorang murid baharu memerlukan bantuan mencari bilik khas. Murid menyatakan kemungkinan hasil kepada individu, rakan atau komuniti. Guru mengemukakan soalan berdasarkan kata tugas SP **2.3** dan mengaitkan perbincangan dengan konsep nilai dalam DSKP.
+**Aktiviti 1 (20 minit) — Penaakulan SP 2.3:** Guru memperkenalkan dua hasil yang mungkin apabila **seorang murid baharu memerlukan bantuan mencari bilik khas**. Murid menjalankan tugasan **Menjelaskan kepentingan bersikap ikhlas membantu warga sekolah** dengan mengenal pasti dua hubungan tindakan–sebab–kesan dan pihak yang menerima kesannya.
 
-**Aktiviti 2 (20 minit) — Respons dan hujah:** Murid membina carta pilihan–sebab–kesan, membentangkan dua justifikasi dan menjawab soalan mencabar daripada kumpulan lain. Guru mengaitkan keputusan dengan kepentingan dan akibat nilai Baik hati. Murid menilai sendiri hasil dengan panduan guru; komunikasi mesti hormat, selamat dan tidak memerlukan pendedahan agama/keluarga peribadi.
+**Aktiviti 2 (20 minit) — Uji justifikasi:** Guru membekalkan dua kad pilihan yang berbeza bagi **seorang murid baharu memerlukan bantuan mencari bilik khas**. Murid memilih keputusan lebih wajar, membina peta sebab–kesan dan mempertahankannya dengan dua alasan. Rakan meminta satu pembaikan berasaskan SP.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Sekurang-kurangnya dua alasan dengan hubungan sebab–akibat; guru menilai penaakulan dan ketepatan kata tugas SP. Guru mencatat evidens individu dan menerangkan satu pembetulan spesifik, bukan memberikan TP hanya kerana murid mengambil bahagian.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menilai dua justifikasi individu yang menjawab SP 2.3, kedua-duanya disokong hubungan sebab dan kesan yang munasabah. Murid membetulkan satu kaitan yang tidak tepat selepas ulasan guru.
 
-**Penutup (5 minit):** Wakil murid menyatakan tindakan yang dipilih, satu sebab dan contoh aplikasi selamat. Guru membuat rumusan nilai Baik hati dan kaitannya dengan bantuan kepada warga sekolah.
+**Penutup (5 minit):** Murid menyatakan satu keputusan atau perlakuan yang menunjukkan nilai **Baik hati** dalam konteks **seorang murid baharu memerlukan bantuan mencari bilik khas** serta sebab pilihan itu. Guru merumuskan SP 2.3 dan tindakan selamat yang boleh dipraktikkan.
 
 **Pemulihan:** Gambar situasi, kerangka "Saya memilih ... kerana ..." dan dua pilihan tindakan disediakan.  
 **Pengayaan:** Murid menambah satu sebab atau mempertimbangkan perspektif pihak yang berbeza.  

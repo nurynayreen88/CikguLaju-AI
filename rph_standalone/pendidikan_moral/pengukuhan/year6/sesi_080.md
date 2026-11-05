@@ -17,15 +17,15 @@ Murid menunjukkan penguasaan SP **12.1; 12.2** dengan menghasilkan dua contoh ti
 **Kriteria kejayaan:** Dua contoh tindakan, dua cara pelaksanaan dan satu alasan dinilai melalui kad individu.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru memperkenalkan situasi **Rakyat pelbagai latar belakang menjalankan projek kebajikan bersama** Murid mengenal pasti cabaran nilai Kerjasama dan menyebut satu tindakan yang boleh diambil.
+**Set induksi (5 minit):** Guru memaparkan kad kes: **Rakyat pelbagai latar belakang menjalankan projek kebajikan bersama**. Murid meneliti siapa terlibat, menyebut satu pilihan tindakan dan mengaitkannya dengan nilai **Kerjasama**. Pengalaman peribadi tidak diperlukan.
 
-**Aktiviti 1 (20 minit) — Penerokaan tindakan berasaskan nilai:** Guru membacakan kes: Rakyat pelbagai latar belakang menjalankan projek kebajikan bersama. Murid mengenal pasti pihak terlibat dan mencadangkan dua perbuatan bertepatan dengan nilai Kerjasama. Guru menjelaskan kata tugas SP (12.1; 12.2) dan memeriksa kefahaman murid melalui soal jawab individu.
+**Aktiviti 1 (20 minit) — Teliti situasi dan SP 12.1:** Guru menggunakan dua variasi kes berkaitan **kerjasama komuniti dan tindakan selamat menjaga keharmonian negara**. Murid menghasilkan dua jawapan konkrit bagi tugasan **Memerihalkan contoh kerjasama demi keharmonian negara** dan menerangkan hubungannya dengan watak atau keperluan dalam situasi.
 
-**Aktiviti 2 (20 minit) — Menyelesaikan masalah:** Murid menyusun kad "siapa memerlukan apa" dan membina dua langkah bantuan/tindakan praktikal bagi kes rakyat pelbagai latar belakang menjalankan projek kebajikan bersama. Mereka membandingkan cadangan dan memilih yang paling sesuai. Guru memandu murid menggunakan sebab yang sahih, menjaga keselamatan serta mengelakkan aktiviti yang memerlukan murid mendedahkan butiran peribadi.
+**Aktiviti 2 (20 minit) — Buktikan SP 12.2:** Guru menyoal cara atau sebab pilihan dibuat. Murid menghasilkan kad respons bagi **Menjelaskan cara memupuk amalan kerjasama demi keharmonian negara** dengan dua butiran khusus serta alasan yang sesuai dengan kes **Rakyat pelbagai latar belakang menjalankan projek kebajikan bersama**. Rakan menyemak ketepatan jawapan mengikut kata tugas SP.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Dua contoh tindakan, dua cara pelaksanaan dan satu alasan dinilai melalui kad individu. Guru memeriksa hasil murid seorang demi seorang, mencatat kelemahan tertentu dan tidak menetapkan TP berdasarkan lakonan semata-mata.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menyemak kad individu: dua respons untuk SP 12.1, dua butiran dan satu alasan tepat untuk SP 12.2. Murid membetulkan satu jawapan berdasarkan maklum balas; penilaian bukan berdasarkan hafalan semata-mata.
 
-**Penutup (5 minit):** Murid menyebut satu tindakan untuk memperkukuh nilai Kerjasama dan satu sebab ia penting dalam kerjasama demi keharmonian negara. Guru merumuskan perkara yang telah dinilai dan memberikan maklum balas.
+**Penutup (5 minit):** Murid menyatakan satu keputusan atau perlakuan yang menunjukkan nilai **Kerjasama** dalam konteks **kerjasama komuniti dan tindakan selamat menjaga keharmonian negara** serta sebab pilihan itu. Guru merumuskan SP 12.1; 12.2 dan tindakan selamat yang boleh dipraktikkan.
 
 **Pemulihan:** Kad bergambar serta rangka ayat berpandu.  
 **Pengayaan:** Tambah satu pilihan alternatif dan dua justifikasi yang melihat kesan terhadap pihak lain.  

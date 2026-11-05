@@ -16,15 +16,15 @@ Murid dapat menunjukkan penguasaan SP **11.4** melalui dua perasaan dan satu seb
 **Kriteria kejayaan:** Dua ekspresi emosi yang relevan dan satu justifikasi; pentaksiran berdasarkan respons individu.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru memaparkan situasi: **Keluarga bergilir-gilir membersihkan kawasan sekitar rumah** Murid menyatakan satu isu moral, pihak terlibat dan nilai Kerajinan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan kad kes: **Keluarga bergilir-gilir membersihkan kawasan sekitar rumah**. Murid meneliti siapa terlibat, menyebut satu pilihan tindakan dan mengaitkannya dengan nilai **Kerajinan**. Pengalaman peribadi tidak diperlukan.
 
-**Aktiviti 1 (20 minit) — Empati, perasaan dan hubungan:** Guru membentangkan dua perspektif daripada situasi Keluarga bergilir-gilir membersihkan kawasan sekitar rumah. Murid mengenal pasti perasaan pihak terlibat tanpa membuat andaian pengalaman peribadi. Guru mengemukakan soalan berdasarkan kata tugas SP **11.4** dan mengaitkan perbincangan dengan konsep nilai dalam DSKP.
+**Aktiviti 1 (20 minit) — Empati SP 11.4:** Guru memaparkan dua perspektif pihak terlibat dalam **keluarga bergilir-gilir membersihkan kawasan sekitar rumah**. Murid melaksanakan tugasan **Mengekspresikan perasaan berkaitan dengan sikap rajin dalam hidup berjiran** menggunakan kad perasaan dan memilih respons yang berhemah tanpa mengaitkannya dengan keluarga sendiri.
 
-**Aktiviti 2 (20 minit) — Respons dan hujah:** Murid menyediakan dialog "Saya berasa ... kerana ..." dan mengubah satu respons yang boleh menyakitkan hati menjadi ayat berhemah. Pasangan menggunakan dua kriteria semakan: kesesuaian emosi dan alasan. Murid menilai sendiri hasil dengan panduan guru; komunikasi mesti hormat, selamat dan tidak memerlukan pendedahan agama/keluarga peribadi.
+**Aktiviti 2 (20 minit) — Dialog beralasan:** Guru memberikan rangka ayat 'Saya berasa ... kerana ...'. Murid membina dua dialog pendek yang berkaitan dengan kes **Keluarga bergilir-gilir membersihkan kawasan sekitar rumah**, membandingkan kesan kata-kata terhadap rakan dan menambah baik satu ayat.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Dua ekspresi emosi yang relevan dan satu justifikasi; pentaksiran berdasarkan respons individu. Guru mencatat evidens individu dan menerangkan satu pembetulan spesifik, bukan memberikan TP hanya kerana murid mengambil bahagian.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menyemak dua perasaan yang bertepatan dengan SP 11.4 bersama sekurang-kurangnya satu alasan jelas dalam respons individu. Tiada markah berdasarkan pendedahan pengalaman atau pegangan peribadi.
 
-**Penutup (5 minit):** Wakil murid menyatakan tindakan yang dipilih, satu sebab dan contoh aplikasi selamat. Guru membuat rumusan nilai Kerajinan dan kaitannya dengan amalan rajin dalam hidup berjiran.
+**Penutup (5 minit):** Murid menyatakan satu keputusan atau perlakuan yang menunjukkan nilai **Kerajinan** dalam konteks **keluarga bergilir-gilir membersihkan kawasan sekitar rumah** serta sebab pilihan itu. Guru merumuskan SP 11.4 dan tindakan selamat yang boleh dipraktikkan.
 
 **Pemulihan:** Gambar situasi, kerangka "Saya memilih ... kerana ..." dan dua pilihan tindakan disediakan.  
 **Pengayaan:** Murid menambah satu sebab atau mempertimbangkan perspektif pihak yang berbeza.  
