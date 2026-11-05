@@ -42,11 +42,15 @@ class Lesson29ClilSourceAudit(unittest.TestCase):
         for label, mapping in maps.items():
             with self.subTest(map=label):
                 entries=mapping.get(29) or mapping.get("29") or []
-                self.assertEqual(
-                    {r["audio_reference"] for r in entries},
-                    {"CD1 Track 35","CD1 Track 36"})
-                self.assertFalse(any(
-                    r["storage_file_id"] in SRC_IDS for r in entries))
+                if label == "_EN4_AUDIO_ALL_V25257":
+                    # Initial media map had no Lesson29, which is safe.
+                    self.assertEqual(entries,[])
+                else:
+                    self.assertEqual(
+                        {r["audio_reference"] for r in entries},
+                        {"CD1 Track 35","CD1 Track 36"})
+                    self.assertFalse(any(
+                        r["storage_file_id"] in SRC_IDS for r in entries))
         # The wrong CD1 route remains an uncorrected production legacy map.
         # A subsequent isolated guarded callback patch is required before
         # releasing native audio; this source audit must not fake that work.
