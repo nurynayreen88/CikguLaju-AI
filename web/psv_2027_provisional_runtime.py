@@ -112,7 +112,7 @@ def install(ns, *, enabled=None, root=ROOT):
     def send_with_active_psv_subject(cid, text, kb=None, *args, **kwargs):
         """Correct the exact v26.17 subject notice on any surviving legacy route."""
         old = "Pilih subjek. 🚧 = Dalam Pembangunan; janaan belum dibuka."
-        match = re.fullmatch(r"📘 <b>Tahun ([2-6])</b>\\n\\n" + re.escape(old),
+        match = re.fullmatch(r"📘 <b>Tahun ([2-6])</b>\n\n" + re.escape(old),
                              str(text or ""))
         if match:
             # Always work on a copy: do not mutate a Telegram keyboard reused
@@ -133,7 +133,7 @@ def install(ns, *, enabled=None, root=ROOT):
                     {"text": "🎨 Pendidikan Seni Visual",
                      "callback_data": "sub_Pendidikan Seni Visual"}])
             kb = copied
-            text = ("📘 <b>Tahun " + match.group(1) + "</b>\\n\\n"
+            text = ("📘 <b>Tahun " + match.group(1) + "</b>\n\n"
                     "Pilih subjek. 🎨 Pendidikan Seni Visual sudah tersedia "
                     "(42 PdP). 🚧 Hanya subjek lain yang berlabel "
                     "Dalam Pembangunan belum dibuka.")
