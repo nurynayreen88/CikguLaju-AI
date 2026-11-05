@@ -1,0 +1,662 @@
+{
+  "subject": "Pendidikan Muzik",
+  "year": 4,
+  "academic_year": 2027,
+  "source_doc_id": "1oABBpnuOC5QxqWi283dD0pWu97SfUx2q",
+  "source_type": "RPT_2025_26",
+  "status": "DRAF_STAGING_NO_LIVE",
+  "textbook_verified": false,
+  "audio_verified": false,
+  "rph_word_pdf_verified": false,
+  "pdps": [
+    {
+      "pdp_id": "MZ-Y4-01",
+      "pdp": 1,
+      "slot_source_2025": 2,
+      "unit": "SENJA NAN",
+      "unit_number": 1,
+      "sp": [
+        "1.1.2"
+      ],
+      "page": "10-11",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 1,
+        "groupA": "04/01–07/01",
+        "groupB": "04/01–08/01"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-02",
+      "pdp": 2,
+      "slot_source_2025": 3,
+      "unit": "SENJA NAN",
+      "unit_number": 1,
+      "sp": [
+        "1.1.2"
+      ],
+      "page": "10-11",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 2,
+        "groupA": "10/01–14/01",
+        "groupB": "11/01–15/01"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-03",
+      "pdp": 3,
+      "slot_source_2025": 4,
+      "unit": "SENJA NAN",
+      "unit_number": 1,
+      "sp": [
+        "1.1.1"
+      ],
+      "page": "12-13",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 3,
+        "groupA": "17/01–21/01",
+        "groupB": "18/01–22/01"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-04",
+      "pdp": 4,
+      "slot_source_2025": 5,
+      "unit": "WARNA WARNI KEK CAWAN",
+      "unit_number": 2,
+      "sp": [
+        "1.1.3",
+        "2.2.2"
+      ],
+      "page": "18-19",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 4,
+        "groupA": "24/01–28/01",
+        "groupB": "25/01–29/01"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-05",
+      "pdp": 5,
+      "slot_source_2025": 6,
+      "unit": "WARNA WARNI KEK CAWAN",
+      "unit_number": 2,
+      "sp": [
+        "1.1.1"
+      ],
+      "page": "20-21",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 5,
+        "groupA": "31/01–04/02",
+        "groupB": "01/02–05/02"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-06",
+      "pdp": 6,
+      "slot_source_2025": 8,
+      "unit": "BEG CANTIK MENAWAN",
+      "unit_number": 3,
+      "sp": [
+        "2.1.2"
+      ],
+      "page": "28-29",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 6,
+        "groupA": "07/02–11/02",
+        "groupB": "08/02–12/02"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-07",
+      "pdp": 7,
+      "slot_source_2025": 9,
+      "unit": "BEG CANTIK MENAWAN",
+      "unit_number": 3,
+      "sp": [
+        "2.1.1",
+        "2.1.3"
+      ],
+      "page": "30-31",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 7,
+        "groupA": "14/02–18/02",
+        "groupB": "15/02–19/02"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-08",
+      "pdp": 8,
+      "slot_source_2025": 10,
+      "unit": "BEG CANTIK MENAWAN",
+      "unit_number": 3,
+      "sp": [
+        "2.2.1",
+        "2.2.2"
+      ],
+      "page": "32-33",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 8,
+        "groupA": "21/02–25/02",
+        "groupB": "22/02–26/02"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-09",
+      "pdp": 9,
+      "slot_source_2025": 11,
+      "unit": "BUNGA GERGASI",
+      "unit_number": 4,
+      "sp": [
+        "2.1.4"
+      ],
+      "page": "40",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 9,
+        "groupA": "28/02–04/03",
+        "groupB": "01/03–05/03"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-10",
+      "pdp": 10,
+      "slot_source_2025": 12,
+      "unit": "BUNGA GERGASI",
+      "unit_number": 4,
+      "sp": [
+        "2.2.1",
+        "2.2.2"
+      ],
+      "page": "42",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 10,
+        "groupA": "14/03–18/03",
+        "groupB": "15/03–19/03"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-11",
+      "pdp": 11,
+      "slot_source_2025": 13,
+      "unit": "BUNGA GERGASI",
+      "unit_number": 4,
+      "sp": [
+        "2.3.1"
+      ],
+      "page": "44",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 11,
+        "groupA": "21/03–25/03",
+        "groupB": "22/03–26/03"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-12",
+      "pdp": 12,
+      "slot_source_2025": 14,
+      "unit": "Projek Seni Muzik 1",
+      "unit_number": null,
+      "sp": [
+        "5.1.1"
+      ],
+      "page": null,
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 12,
+        "groupA": "28/03–01/04",
+        "groupB": "29/03–02/04"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-13",
+      "pdp": 13,
+      "slot_source_2025": 15,
+      "unit": "Projek Seni Muzik 1",
+      "unit_number": null,
+      "sp": [
+        "5.1.2",
+        "5.1.3"
+      ],
+      "page": null,
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 13,
+        "groupA": "04/04–08/04",
+        "groupB": "05/04–09/04"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-14",
+      "pdp": 14,
+      "slot_source_2025": 16,
+      "unit": "SECAWAN KOPI MANIS",
+      "unit_number": 5,
+      "sp": [
+        "4.1.1"
+      ],
+      "page": "50",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 14,
+        "groupA": "11/04–15/04",
+        "groupB": "12/04–16/04"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-15",
+      "pdp": 15,
+      "slot_source_2025": 17,
+      "unit": "SECAWAN KOPI MANIS",
+      "unit_number": 5,
+      "sp": [
+        "4.1.1"
+      ],
+      "page": "52",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 15,
+        "groupA": "18/04–22/04",
+        "groupB": "19/04–23/04"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-16",
+      "pdp": 16,
+      "slot_source_2025": 18,
+      "unit": "SECAWAN KOPI MANIS",
+      "unit_number": 5,
+      "sp": [
+        "4.1.1"
+      ],
+      "page": "52",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 16,
+        "groupA": "25/04–29/04",
+        "groupB": "26/04–30/04"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-17",
+      "pdp": 17,
+      "slot_source_2025": 19,
+      "unit": "LARIAN",
+      "unit_number": 6,
+      "sp": [
+        "2.4.1"
+      ],
+      "page": "60",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 17,
+        "groupA": "02/05–06/05",
+        "groupB": "03/05–07/05"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-18",
+      "pdp": 18,
+      "slot_source_2025": 20,
+      "unit": "LARIAN",
+      "unit_number": 6,
+      "sp": [
+        "1.1.1",
+        "1.1.2"
+      ],
+      "page": "62",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 18,
+        "groupA": "09/05–13/05",
+        "groupB": "10/05–14/05"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-19",
+      "pdp": 19,
+      "slot_source_2025": 21,
+      "unit": "INDAHNYA",
+      "unit_number": 7,
+      "sp": [
+        "2.2.1",
+        "2.2.2"
+      ],
+      "page": "68",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 19,
+        "groupA": "16/05–20/05",
+        "groupB": "17/05–21/05"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-20",
+      "pdp": 20,
+      "slot_source_2025": 22,
+      "unit": "INDAHNYA",
+      "unit_number": 7,
+      "sp": [
+        "2.2.1",
+        "2.2.2"
+      ],
+      "page": "68",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 20,
+        "groupA": "06/06–10/06",
+        "groupB": "07/06–11/06"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-21",
+      "pdp": 21,
+      "slot_source_2025": 23,
+      "unit": "INDAHNYA",
+      "unit_number": 7,
+      "sp": [
+        "3.1.2",
+        "3.1.3"
+      ],
+      "page": "70-71",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 21,
+        "groupA": "13/06–17/06",
+        "groupB": "14/06–18/06"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-22",
+      "pdp": 22,
+      "slot_source_2025": 24,
+      "unit": "HELO, HELO",
+      "unit_number": 8,
+      "sp": [
+        "2.4.1",
+        "2.4.2"
+      ],
+      "page": "78",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 22,
+        "groupA": "20/06–24/06",
+        "groupB": "21/06–25/06"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-23",
+      "pdp": 23,
+      "slot_source_2025": 25,
+      "unit": "HELO, HELO",
+      "unit_number": 8,
+      "sp": [
+        "1.1.3",
+        "2.2.1"
+      ],
+      "page": "80",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 23,
+        "groupA": "27/06–01/07",
+        "groupB": "28/06–02/07"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-24",
+      "pdp": 24,
+      "slot_source_2025": 26,
+      "unit": "HELO, HELO",
+      "unit_number": 8,
+      "sp": [
+        "3.1.1",
+        "3.1.2",
+        "3.1.3"
+      ],
+      "page": "82",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 24,
+        "groupA": "04/07–08/07",
+        "groupB": "05/07–09/07"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-25",
+      "pdp": 25,
+      "slot_source_2025": 27,
+      "unit": "Projek Seni Muzik 2",
+      "unit_number": null,
+      "sp": [
+        "5.1.1"
+      ],
+      "page": null,
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 25,
+        "groupA": "11/07–15/07",
+        "groupB": "12/07–16/07"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-26",
+      "pdp": 26,
+      "slot_source_2025": 28,
+      "unit": "Projek Seni Muzik 2",
+      "unit_number": null,
+      "sp": [
+        "5.1.2",
+        "5.1.3"
+      ],
+      "page": null,
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 26,
+        "groupA": "18/07–22/07",
+        "groupB": "19/07–23/07"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-27",
+      "pdp": 27,
+      "slot_source_2025": 29,
+      "unit": "Projek Seni Muzik 2",
+      "unit_number": null,
+      "sp": [
+        "5.1.2",
+        "5.1.3"
+      ],
+      "page": null,
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 27,
+        "groupA": "25/07–29/07",
+        "groupB": "26/07–30/07"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-28",
+      "pdp": 28,
+      "slot_source_2025": 30,
+      "unit": "KOTA CERIA",
+      "unit_number": 9,
+      "sp": [
+        "2.1.3",
+        "2.3.1"
+      ],
+      "page": "90",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 28,
+        "groupA": "01/08–05/08",
+        "groupB": "02/08–06/08"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-29",
+      "pdp": 29,
+      "slot_source_2025": 31,
+      "unit": "KOTA CERIA",
+      "unit_number": 9,
+      "sp": [
+        "2.2.1"
+      ],
+      "page": "92",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 29,
+        "groupA": "08/08–12/08",
+        "groupB": "09/08–13/08"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-30",
+      "pdp": 30,
+      "slot_source_2025": 32,
+      "unit": "KOTA CERIA",
+      "unit_number": 9,
+      "sp": [
+        "2.1.1"
+      ],
+      "page": "94",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 30,
+        "groupA": "15/08–19/08",
+        "groupB": "16/08–20/08"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-31",
+      "pdp": 31,
+      "slot_source_2025": 33,
+      "unit": "HARUM MEWANGI",
+      "unit_number": 10,
+      "sp": [
+        "4.1.1"
+      ],
+      "page": "50",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 31,
+        "groupA": "22/08–26/08",
+        "groupB": "23/08–27/08"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-32",
+      "pdp": 32,
+      "slot_source_2025": 34,
+      "unit": "HARUM MEWANGI",
+      "unit_number": 10,
+      "sp": [
+        "2.3.1",
+        "4.1.1"
+      ],
+      "page": "52",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 32,
+        "groupA": "05/09–09/09",
+        "groupB": "06/09–10/09"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-33",
+      "pdp": 33,
+      "slot_source_2025": 35,
+      "unit": "HARUM MEWANGI",
+      "unit_number": 10,
+      "sp": [
+        "2.3.1",
+        "4.1.1"
+      ],
+      "page": "52",
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 33,
+        "groupA": "12/09–16/09",
+        "groupB": "13/09–17/09"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-34",
+      "pdp": 34,
+      "slot_source_2025": 36,
+      "unit": "Projek Seni Muzik 3",
+      "unit_number": null,
+      "sp": [
+        "5.1.1"
+      ],
+      "page": null,
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 34,
+        "groupA": "19/09–23/09",
+        "groupB": "20/09–24/09"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y4-35",
+      "pdp": 35,
+      "slot_source_2025": 37,
+      "unit": "Projek Seni Muzik 3",
+      "unit_number": null,
+      "sp": [
+        "5.1.2",
+        "5.1.3"
+      ],
+      "page": null,
+      "audio": null,
+      "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
+      "rpt2027_slot": {
+        "week": 35,
+        "groupA": "26/09–30/09",
+        "groupB": "27/09–01/10"
+      }
+    }
+  ]
+}
