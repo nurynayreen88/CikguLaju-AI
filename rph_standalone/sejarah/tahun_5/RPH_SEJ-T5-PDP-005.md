@@ -30,3 +30,11 @@
 **Rujukan buku teks:** https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/ (ISBN 978-983-49-2829-2); halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
 
 **Peringatan:** Semak kebolehlaksanaan aktiviti dengan situasi kelas, halaman buku teks sebenar, kalendar/cuti negeri, dan hasil cetakan Word/PDF sebelum kelulusan atau penerbitan.
+
+## Bukti rujukan halaman — semakan teks (bukan kelulusan akhir)
+
+- **Buku teks edisi dipadankan:** DBP 2020, KSSR Semakan 2017; ISBN 978-983-49-2829-2.
+- **Halaman bercetak diperiksa dalam teks digital:** 18–21; SP 6.2.1, 6.2.2.
+- **Dapatan:** Pengenalan agama dan kepercayaan masyarakat, batu bersurat, peranan pedagang/ulama/sultan dan undang-undang Melaka; teks halaman dibaca dan dibandingkan dengan fokus SP.
+- **Pautan asal yang diperiksa:** https://online.anyflip.com/iawvx/fevz/files/basic-html/page24.html; https://online.anyflip.com/iawvx/fevz/files/basic-html/page25.html; https://online.anyflip.com/iawvx/fevz/files/basic-html/page26.html; https://online.anyflip.com/iawvx/fevz/files/basic-html/page27.html.
+- **Status:** Teks halaman telah dibaca. Susun atur visual, arahan setiap aktiviti, kelulusan pedagogi guru, dan penerbitan **belum disahkan**. `textbook_page_verified=false` kekal.

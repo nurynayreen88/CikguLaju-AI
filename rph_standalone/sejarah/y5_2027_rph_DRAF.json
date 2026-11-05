@@ -467,7 +467,25 @@
           "unit_start_page": 16,
           "unit_end_page": 29,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "18–21",
+            "source_urls": [
+              "https://online.anyflip.com/iawvx/fevz/files/basic-html/page24.html",
+              "https://online.anyflip.com/iawvx/fevz/files/basic-html/page25.html",
+              "https://online.anyflip.com/iawvx/fevz/files/basic-html/page26.html",
+              "https://online.anyflip.com/iawvx/fevz/files/basic-html/page27.html"
+            ],
+            "matched_sp": [
+              "6.2.1",
+              "6.2.2"
+            ],
+            "description": "Pengenalan agama dan kepercayaan masyarakat, batu bersurat, peranan pedagang/ulama/sultan dan undang-undang Melaka; teks halaman dibaca dan dibandingkan dengan fokus SP.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -569,7 +587,24 @@
           "unit_start_page": 16,
           "unit_end_page": 29,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "22–24",
+            "source_urls": [
+              "https://online.anyflip.com/iawvx/fevz/files/basic-html/page28.html",
+              "https://online.anyflip.com/iawvx/fevz/files/basic-html/page29.html",
+              "https://online.anyflip.com/iawvx/fevz/files/basic-html/page30.html"
+            ],
+            "matched_sp": [
+              "6.2.3",
+              "6.2.4"
+            ],
+            "description": "Pentadbiran dan perundangan negeri Melayu, dasar penjajahan dan kedudukan Islam dalam Perlembagaan; banding beza berdasarkan halaman buku.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {
@@ -665,7 +700,21 @@
           "unit_start_page": 16,
           "unit_end_page": 29,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "25",
+            "source_urls": [
+              "https://online.anyflip.com/iawvx/fevz/files/basic-html/page31.html"
+            ],
+            "matched_sp": [
+              "6.2.5"
+            ],
+            "description": "Aktiviti kumpulan empat yang membincangkan nilai sejagat seperti hormat, toleransi dan kerjasama untuk perpaduan; arahan aktiviti buku telah dibaca dalam bentuk HTML.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "context_specific_activity": {

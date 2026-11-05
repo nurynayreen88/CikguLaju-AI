@@ -79,7 +79,22 @@
           "unit_start_page": 2,
           "unit_end_page": 19,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "4–9",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "10.1.1",
+              "10.1.2"
+            ],
+            "description": "Halaman 4–7 menyentuh idea dan empat sebab pembentukan Malaysia; 8–9 menunjukkan langkah kronologi termasuk JSKM, Cobbold, JAK, referendum, perjanjian dan 16 September 1963.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "page_specific_evidence": {
@@ -92,7 +107,8 @@
           "teacher_validated": false,
           "actual_textbook_visual_page_checked": false,
           "exact_textbook_activity_approved": false,
-          "textbook_html_page_text_read": false
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -176,7 +192,21 @@
           "unit_start_page": 2,
           "unit_end_page": 19,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "10–15",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "10.1.3"
+            ],
+            "description": "Buku menghuraikan tokoh dan negeri terlibat pada 1963; aktiviti kerusi panas tokoh dan kajian dokumen pemasyhuran, dengan peta empat wilayah asal.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "page_specific_evidence": {
@@ -189,7 +219,8 @@
           "teacher_validated": false,
           "actual_textbook_visual_page_checked": false,
           "exact_textbook_activity_approved": false,
-          "textbook_html_page_text_read": false
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -273,7 +304,21 @@
           "unit_start_page": 2,
           "unit_end_page": 19,
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
-          "exact_activity_page_confirmed": false
+          "exact_activity_page_confirmed": false,
+          "checked_focus_pages": {
+            "evidence_level": "TEXTBOOK_TEXT_READ_FROM_DIGITAL_REHOST_NOT_VISUAL",
+            "printed_page_range": "16",
+            "source_urls": [
+              "https://fliphtml5.com/itcew/pnmn"
+            ],
+            "matched_sp": [
+              "10.1.4"
+            ],
+            "description": "Bab cabaran pembentukan Malaysia menyebut penentangan SUPP, konfrontasi Indonesia dan tuntutan Filipina terhadap Sabah; teks ini turut mencadangkan carian bukti tambahan.",
+            "text_checked": true,
+            "teacher_approved": false,
+            "exact_exercise_visual_verification": false
+          }
         },
         "unit_toc_verified": true,
         "page_specific_evidence": {
@@ -285,7 +330,8 @@
           "teacher_validated": false,
           "actual_textbook_visual_page_checked": false,
           "exact_textbook_activity_approved": false,
-          "textbook_html_page_text_read": false
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {

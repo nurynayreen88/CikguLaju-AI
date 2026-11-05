@@ -29,3 +29,11 @@
 **Rujukan buku teks:** https://fliphtml5.com/itcew/pnmn (ISBN 978-983-49-3279-4) — halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
 
 **Peringatan:** Tarikh minggu ialah cadangan; semak cuti negeri tambahan dan jadual kelas sebelum pengajaran. Format Word/PDF mesti lulus ujian dan guru mesti menyemak aktiviti buku sebelum status READY.
+
+## Bukti rujukan halaman — semakan teks (bukan kelulusan akhir)
+
+- **Buku teks edisi dipadankan:** DBP 2021, KSSR Semakan 2017; ISBN 978-983-49-3279-4.
+- **Halaman bercetak diperiksa dalam teks digital:** 10–15; SP 10.1.3.
+- **Dapatan:** Buku menghuraikan tokoh dan negeri terlibat pada 1963; aktiviti kerusi panas tokoh dan kajian dokumen pemasyhuran, dengan peta empat wilayah asal.
+- **Pautan asal yang diperiksa:** https://fliphtml5.com/itcew/pnmn.
+- **Status:** Teks halaman telah dibaca. Susun atur visual, arahan setiap aktiviti, kelulusan pedagogi guru, dan penerbitan **belum disahkan**. `textbook_page_verified=false` kekal.
