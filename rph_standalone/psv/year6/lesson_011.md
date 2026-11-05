@@ -6,7 +6,7 @@
 **Aktiviti/Tajuk:** Lakaran alternatif  
 **SK:** 3.1  
 **SP:** 3.2.1  
-**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 4 — Cik Lebah dan Madu, ms 26-33 (rujukan unit buku)  
+**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 4 — Cik Lebah dan Madu, ms 28–29 (halaman khusus PdP; unit asal ms 26-33)  
 **Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
 **BBM:** kad manila, pensel, pen penanda, gam, gunting hujung bulat dan reben  
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
@@ -29,4 +29,4 @@ Menyiapkan dua lakaran berlabel untuk kotak makanan 3D bertema lebah dan madu me
 
 **Keselamatan:** Gunakan bahan tidak toksik, alat tumpul, permukaan stabil dan pengawasan guru. Elakkan lilin panas, hujung tajam serta pewarna berbahaya.
 
-**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [RPT PSV Tahun 6 2026](https://anyflip.com/zxzlm/tuth/basic). Aktiviti ialah adaptasi CikguLaju; tarikh PdP dan teks buku sebenar belum disahkan.
+**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [RPT PSV Tahun 6 2026](https://anyflip.com/zxzlm/tuth/basic). Aktiviti ialah adaptasi CikguLaju; tarikh PdP dan kelulusan ujian Telegram staging belum disahkan.

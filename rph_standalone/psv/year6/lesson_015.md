@@ -6,7 +6,7 @@
 **Aktiviti/Tajuk:** Lakaran alternatif  
 **SK:** 3.1  
 **SP:** 3.2.1  
-**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 5 — Si Cilik Koi, ms 34-45 (rujukan unit buku)  
+**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 5 — Si Cilik Koi, ms 36–37 (halaman khusus PdP; unit asal ms 34-45)  
 **Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
 **BBM:** Buku Teks ms 36–39, lakaran ikan koi, templat tapak kadbod, roda karton prasiap, straw paksi licin, pensel dan kad warna
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)

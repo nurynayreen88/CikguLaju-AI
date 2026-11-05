@@ -5,7 +5,7 @@
 **Aktiviti/Tajuk:** Variasi Rekaan  
 **SK:** 1.1  
 **SP:** 1.1.1; 1.1.2; 1.1.3  
-**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 7 — Celupan Kreatif, ms 56-61 (rujukan unit buku)  
+**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 7 — Celupan Kreatif, ms 56–57 (halaman khusus PdP; unit asal ms 56-61)  
 **Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
 **BBM:** kain kapas kecil, pewarna air tidak toksik, tali lembut, apron  
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
@@ -28,4 +28,4 @@ Menyatakan sekurang-kurangnya tiga unsur/prinsip seni pada Variasi Rekaan dan me
 
 **Keselamatan:** Gunakan bahan tidak toksik, alat tumpul, permukaan stabil dan pengawasan guru. Elakkan lilin panas, hujung tajam serta pewarna berbahaya.
 
-**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [RPT PSV Tahun 6 2026](https://anyflip.com/zxzlm/tuth/basic). Aktiviti ialah adaptasi CikguLaju; tarikh PdP dan teks buku sebenar belum disahkan.
+**Sumber:** [DSKP PSV Tahun 6](https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view); [RPT PSV Tahun 6 2026](https://anyflip.com/zxzlm/tuth/basic). Aktiviti ialah adaptasi CikguLaju; tarikh PdP dan kelulusan ujian Telegram staging belum disahkan.

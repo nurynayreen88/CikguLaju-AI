@@ -6,7 +6,7 @@
 **Aktiviti/Tajuk:** Perkembangan idea  
 **SK:** 2.1; 3.1  
 **SP:** 2.1.3; 3.2.1  
-**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 5 — Si Cilik Koi, ms 34-45 (rujukan unit buku)  
+**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 5 — Si Cilik Koi, ms 34–35 (halaman khusus PdP; unit asal ms 34-45)  
 **Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
 **BBM:** Buku Teks ms 34–37, model ikan koi, contoh tapak kotak, roda pemusing karton prasiap guru, lakaran warna dan kad idea
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)

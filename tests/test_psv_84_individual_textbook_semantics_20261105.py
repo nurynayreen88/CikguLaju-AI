@@ -203,6 +203,34 @@ class PSV84SourceContentTests(unittest.TestCase):
                         self.assertEqual(row["SK"], "5.1")
                         self.assertTrue(all(s.startswith("3.3.") for s in listed))
 
+    def test_year6_nine_source_page_ranges_are_specific_and_aligned(self):
+        """Original Year6 book pages split by individual teaching objective."""
+        cases = {
+            10: "26–27", 11: "28–29", 12: "30–31", 13: "32–33",
+            14: "34–35", 15: "36–37", 16: "38–43", 17: "44–45",
+            21: "56–57",
+        }
+        rows = read_rpt(6)
+        html = (
+            ROOT / "rpt_2027/psv/RPT_PSV_Tahun_6_2027_DRAF.html"
+        ).read_text(encoding="utf-8")
+        for pdp, pages in cases.items():
+            with self.subTest(pdp=pdp):
+                row = rows[pdp - 1]
+                source = (
+                    ROOT / f"rph_standalone/psv/year6/lesson_{pdp:03d}.md"
+                ).read_text(encoding="utf-8")
+                self.assertEqual(row["PdP"], f"{pdp:03d}")
+                self.assertEqual(
+                    row["Rujukan BT ms (RPT 2026)"], f"Buku teks ms {pages}"
+                )
+                self.assertIn(f"ms {pages} (halaman khusus PdP", source)
+                htmlrow = next(
+                    line for line in html.splitlines()
+                    if f"<td>{pdp:03d}</td>" in line
+                )
+                self.assertIn(f"Buku teks ms {pages}", htmlrow)
+
     def test_no_source_verification_bypasses_telegram_release_gate(self):
         audit = ROOT / "rph_standalone/psv/audits/psv_individual_210_review_20261105.csv"
         with audit.open(encoding="utf-8-sig", newline="") as f:

@@ -6,7 +6,7 @@
 **Aktiviti/Tajuk:** Penghasilan karya  
 **SK:** 3.1  
 **SP:** 3.2.2  
-**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 5 — Si Cilik Koi, ms 34-45 (rujukan unit buku)  
+**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 5 — Si Cilik Koi, ms 38–43 (halaman khusus PdP; unit asal ms 34-45)  
 **Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
 **BBM:** Buku Teks ms 38–43, tapak kotak dan roda karton prasiap guru, straw paksi licin, penggulung tisu, kad busa, cat poster dan gam tidak panas
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)

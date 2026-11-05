@@ -6,7 +6,7 @@
 **Aktiviti/Tajuk:** Gambar karya dan apresiasi  
 **SK:** 3.1; 4.1  
 **SP:** 3.1.1; 3.2.3; 4.1.1  
-**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 5 — Si Cilik Koi, ms 34-45 (rujukan unit buku)  
+**Buku Teks:** Pendidikan Seni Visual Tahun 6, Unit 5 — Si Cilik Koi, ms 44–45 (halaman khusus PdP; unit asal ms 34-45)  
 **Buku Teks digital:** [PSV Tahun 6](https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/)  
 **BBM:** Buku Teks ms 42–45, arca koi berpusing PdP016, kertas lukisan, pensel warna, kad bingkai dan folio lima bahagian
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
