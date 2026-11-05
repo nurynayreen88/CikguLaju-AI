@@ -31,6 +31,8 @@ from web.rpt_2027_all_http import create_all_rpt_blueprint
 app.register_blueprint(create_all_rpt_blueprint())
 from web.english_y6_rph_2027_http import create_blueprint as create_y6_rph_blueprint
 app.register_blueprint(create_y6_rph_blueprint())
+from web.unified_rph_web import create_blueprint as create_unified_rph_blueprint
+app.register_blueprint(create_unified_rph_blueprint())
 
 
 @app.get("/")
@@ -147,7 +149,31 @@ def options():
             return jsonify({"error": "invalid curriculum mode",
                             "code": "WEB_CURRICULUM_MODE_INVALID"}), 503
         if kind == "subjects":
-            return jsonify(available_subject_options(db, year))
+            available = available_subject_options(db, year)
+            if year in range(2, 7):
+                from web.unified_rph_web import source_records
+                for code, label in (("MORAL", "Pendidikan Moral"),
+                                    ("PJPK", "PJPK"), ("PSV", "Pendidikan Seni Visual")):
+                    if any(item["value"] == code for item in available):
+                        continue
+                    if code == "PJPK":
+                        exists = bool(source_records(year, code, "PJ")
+                                      or source_records(year, code, "PK"))
+                    else:
+                        exists = bool(source_records(year, code))
+                    if exists:
+                        available.append({"value": code, "label": label})
+            return jsonify(available)
+        if kind in ("units", "pdp") and year in range(2, 7):
+            from web.unified_rph_web import SOURCE_SUBJECTS
+            if request.args.get("subject") in SOURCE_SUBJECTS:
+                from web.unified_rph_web import unit_options as source_units, pdp_options as source_pdp
+                chosen_subject = request.args["subject"]
+                chosen_component = request.args.get("component")
+                if kind == "units":
+                    return jsonify(source_units(year, chosen_subject, chosen_component))
+                return jsonify(source_pdp(year, chosen_subject,
+                                          request.args.get("unit", ""), chosen_component))
         subject = request.args.get("subject", "")
         if subject == "PJPK":
             component = request.args.get("component", "")
