@@ -105,7 +105,7 @@ def rpt_year(year,rows):
     logo.columns[0].width=Mm(62);logo.cell(0,0).width=Mm(62)
     p=logo.cell(0,0).paragraphs[0]
     p.alignment=WD_ALIGN_PARAGRAPH.CENTER
-    r=p.add_run("\\n\\nLOGO SEKOLAH\\n(DARIPADA PROFIL PENGGUNA)\\n\\n")
+    r=p.add_run("\n\nLOGO SEKOLAH\n(DARIPADA PROFIL PENGGUNA)\n\n")
     r.bold=True;r.font.size=Pt(10);r.font.color.rgb=RGBColor(90,110,120)
     doc.add_paragraph(" ")
     for v in (
