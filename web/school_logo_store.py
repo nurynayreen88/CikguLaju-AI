@@ -5,6 +5,7 @@ private Supabase Storage bucket. No local ephemeral files, public links,
 additional tables, overwrite of curricular PDFs, or browser service keys.
 """
 from io import BytesIO
+import json
 from struct import unpack
 from zlib import crc32, decompressobj, error as ZlibError
 from urllib.error import HTTPError, URLError
@@ -123,6 +124,21 @@ def logo_png(supabase_url, service_key, user_id, *, opener=None):
     except HTTPError as exc:
         if exc.code == 404:
             return None
+        if exc.code == 400:
+            # Supabase Storage versions may encode a *missing object* as
+            # HTTP 400 with errorCode=NoSuchKey / error=not_found. An absent
+            # optional logo must not prevent RPT downloads. Other errors
+            # (bad credentials, permissions, missing bucket) still fail closed.
+            try:
+                raw = exc.read(2049)
+                detail = json.loads(raw) if len(raw) <= 2048 else None
+            except (OSError, ValueError, TypeError):
+                detail = None
+            if (isinstance(detail, dict)
+                    and detail.get("message") == "Object not found"
+                    and (detail.get("errorCode") == "NoSuchKey"
+                         or detail.get("error") == "not_found")):
+                return None
         raise ProfileUnavailable("Logo sekolah tidak dapat dibaca") from None
     except (OSError, URLError):
         raise ProfileUnavailable("Storan logo tidak dapat dihubungi") from None
