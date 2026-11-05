@@ -458,6 +458,33 @@ class PSVSourceOrderTests(unittest.TestCase):
         for number in (40, 41, 42):
             self.assertIn("buku foto ms 88–89", rows[number-1]["Rujukan BT ms (RPT 2026)"].lower())
 
+    def test_year3_original_textbook_sticks_lampshade_weaving_and_exhibitions(self):
+        """Source-specific craft outcomes from printed Y3 textbook pages."""
+        expectations = {
+            30: ("ms 66–67", "renjisan", "jalinan"),
+            31: ("ms 68–69", "batang aiskrim", "renjisan"),
+            32: ("ms 68–69", "empat rangka", "terendak lampu"),
+            33: ("ms 68–69", "lilin elektronik", "tanpa"),
+            38: ("ms 86–87", "kelarai", "anyaman"),
+            39: ("ms 88–90", "kertas a", "alas mangkuk"),
+            40: ("ms 90–91", "alas mangkuk", "kelarai"),
+            20: ("ms 4–5", "unit 1", "adaptasi"),
+            21: ("ms 4–5", "unit 1", "adaptasi"),
+            41: ("ms 48–49", "unit 10", "adaptasi"),
+            42: ("ms 48–49", "unit 10", "adaptasi"),
+        }
+        rpt = read_csv(PSV / "RPT_PSV_Tahun_3_2027_DRAF.csv")
+        for n, bits in expectations.items():
+            with self.subTest(pdp=n):
+                raw = (ROOT / f"rph_standalone/psv/year3/lesson_{n:03d}.md").read_text(encoding="utf-8").lower()
+                self.assertTrue(all(bit in raw for bit in bits))
+                self.assertIn("hkvtu/vifc", raw)
+                self.assertEqual(rpt[n-1]["Status"], "DRAF_SEMAK")
+                if n == 32:
+                    self.assertEqual(rpt[n-1]["BT muka surat"], "68–69")
+                if n in (20, 21, 41, 42):
+                    self.assertIn("Projek Penggal", rpt[n-1]["BT muka surat"])
+
     def test_year5_bunga_kemboja_tekat_is_genuine_couching(self):
         rows = read_csv(PSV / "RPT_PSV_Tahun_5_2027_DRAF.csv")
         keywords = {
