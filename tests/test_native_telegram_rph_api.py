@@ -134,6 +134,32 @@ class NativeRPHBridgeTests(unittest.TestCase):
         self.assertAlmostEqual(doc.tables[1].columns[1].width.cm,14.55,places=1)
         self.assertFalse(Path(self.runtime.last_path).exists())
 
+    def test_class_full_time_range_and_pupil_count_reach_native_generator(self):
+        body=payload()
+        body["teacher"]={"class":"4 Bestari","date":"2027-03-08",
+                         "time":"07:30 - 08:30","students":"32"}
+        response=self._post(body)
+        self.assertEqual(response.status_code,200,response.get_json() if response.is_json else "")
+        _,state,_,_=self.runtime.calls[0]
+        self.assertEqual(state["rph_class"],"4 Bestari")
+        self.assertEqual(state["rph_time"],"07:30 - 08:30")
+        self.assertEqual(state["rph_students"],"32")
+        self.assertEqual(state["rph_date"],"2027-03-08")
+
+    def test_legacy_payload_without_students_still_renders(self):
+        response=self._post(payload())
+        self.assertEqual(response.status_code,200,response.get_json() if response.is_json else "")
+        self.assertEqual(self.runtime.calls[0][1]["rph_students"],"")
+
+    def test_rejects_invalid_pupil_counts_before_document_generation(self):
+        for students in ("0","201","-5","2.5","1e2"," 32 ","999",
+                         "0001","a"*8,32,None):
+            with self.subTest(students=students):
+                body=payload()
+                body["teacher"]["students"]=students
+                self.assertEqual(self._post(body).status_code,400)
+        self.assertEqual(self.runtime.calls,[])
+
     def test_pdf_comes_from_telegram_native_pdf_generator(self):
         response=self._post(payload("pdf"))
         self.assertEqual(response.status_code,200)
