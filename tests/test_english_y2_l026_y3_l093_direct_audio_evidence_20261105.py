@@ -59,15 +59,28 @@ class YearTwoThreeAudioPhysicalSourceEvidence(unittest.TestCase):
         self.assertIn("Tony",source3)
         self.assertIn("NOT READY",source2)
         self.assertIn("NOT READY",source3)
+        y2,y3=EVIDENCE["cases"]
+        self.assertIs(y2["telegram_bot_file_id_route_checked"],True)
+        self.assertEqual(y2["telegram_sender"],"_eng12_send_verified_audio")
+        self.assertEqual(y2["telegram_sender_literal_entries"],163)
+        self.assertEqual(y2["telegram_sender_route_match"],{"CD2_35":True,"CD2_36":True})
+        self.assertIs(y3["telegram_bot_file_id_route_checked"],False)
         for row in EVIDENCE["cases"]:
-            for unverified in ("spoken_words_checked","telegram_bot_file_id_route_checked",
-                               "actual_bot_send_checked","final_ready_approved"):
+            for unverified in ("spoken_words_checked","actual_bot_send_checked","final_ready_approved"):
                 self.assertIs(row[unverified],False)
+
+    def test_actual_telegram_wma_source_id_literals_match_verified_drive(self):
+        from tools.audit_english_y2_l026_telegram_route_from_ast_20261105 import extract,EXPECTED
+        mapping,_line=extract()
+        self.assertEqual(len(mapping),163)
+        for name,source_id in EXPECTED.items():
+            with self.subTest(track=name):
+                self.assertEqual(mapping.get(name),source_id)
 
     def test_risk_ledger_only_promotes_physical_source_not_delivery(self):
         statuses={r["id"]:r["status"] for r in RISKS["confirmed_risks"]}
         self.assertEqual(statuses["Y2_L26_AUDIO_TB_CHECK"],
-                         "ORIGINAL_TB_AND_FILE_METADATA_VERIFIED_SPEECH_AND_TELEGRAM_PENDING")
+                         "ORIGINAL_TB_WMA_AND_BOT_CODE_FILE_IDS_VERIFIED_LIVE_SEND_AND_SPEECH_PENDING")
         self.assertEqual(statuses["Y3_L93_TRACK97_RECHECK"],
                          "ORIGINAL_TB_TRACK97_VERIFIED_DISC_FILE_AND_TELEGRAM_PENDING")
         self.assertNotIn("FINAL_READY",EVIDENCE["overall_release"])
