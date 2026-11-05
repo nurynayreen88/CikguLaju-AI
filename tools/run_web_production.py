@@ -54,3 +54,35 @@ def web_security_headers(response):
     response.headers.setdefault("X-Content-Type-Options", "nosniff")
     response.headers.setdefault("Referrer-Policy", "strict-origin-when-cross-origin")
     return response
+
+
+def _production_deployment_status():
+    """Separate a deployed production Web from fully launched content coverage."""
+    auth, catalog = _web_config_status()
+    return jsonify({
+        "environment": "production-web",
+        "hosting": "render",
+        "telegram_production_separate": True,
+        "account_lookup_configured": auth,
+        "authoritative_catalog_configured": catalog,
+        "rph_source_preview_enabled": auth and catalog,
+        "all_subject_rph_final_verified": False,
+        "public_launch_ready": False,
+    })
+
+
+def _production_health():
+    """Liveness is not proof of payments, RPH quality, or login readiness."""
+    auth, catalog = _web_config_status()
+    return jsonify({
+        "status": "web-service-running",
+        "account_lookup_configured": auth,
+        "authoritative_catalog_configured": catalog,
+        "all_subject_rph_final_verified": False,
+    })
+
+
+# Reuse the independently tested Web routes while fixing legacy preview
+# metadata in this production-only launcher. Do not mutate Telegram handlers.
+app.view_functions["deployment_status"] = _production_deployment_status
+app.view_functions["health"] = _production_health
