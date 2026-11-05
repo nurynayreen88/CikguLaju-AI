@@ -101,7 +101,7 @@ def create_private_rpt_blueprint(*, root=ROOT):
             return jsonify({"error": "RPT source or identity does not match Telegram"}), 409
         try:
             from web.rpt_pdf_cover_renderer import personalized_pdf
-            document = personalized_pdf(path, subject, year, identity)
+            document = personalized_pdf(path, subject + " — Tahun " + str(year), 2027, identity)
             content = document.getvalue()
             if not content.startswith(b"%PDF-") or len(content) > MAX_PDF:
                 raise ValueError("Invalid resulting RPT")
