@@ -164,7 +164,7 @@ class PSVSourceOrderTests(unittest.TestCase):
         rows = read_csv(PSV / "RPT_PSV_Tahun_6_2027_DRAF.csv")
         lookup = {row["PdP"]: row for row in rows}
         checks = {
-            "019": ("Gerak Berirama", "52–53", "garisan beralun"),
+            "019": ("Gerak Beritma", "52–53", "garisan beralun"),
             "020": ("Dompet Lemon Kesayanganku", "54–55", "resis"),
             "022": ("Ikatan Seni", "58–59", "ikatan"),
             "023": ("Sarung Botol Idamanku", "60–61", "sarung botol"),
