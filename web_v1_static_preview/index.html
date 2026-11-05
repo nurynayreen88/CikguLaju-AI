@@ -108,6 +108,30 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 @media print{#view-account{display:none!important}}
 
 .profile-refresh{border:1px solid #c7d8de;background:white;border-radius:10px;color:#1a526a;font:inherit;font-weight:650;padding:10px 15px;cursor:pointer}.profile-refresh:hover{background:#edf6fa}
+/* Telegram Word RPH document parity: metadata + 3-column phase + follow-up. */
+#rph-preview-content{font-family:Arial,sans-serif;color:#111}
+#rph-preview-title{font-size:15pt;text-align:center;font-weight:700;margin:4px 0 8px;color:#111}
+.rph-telegram-paper{width:100%;font-family:Arial,sans-serif}
+.rph-telegram-paper .rph-preview-table{border-collapse:collapse;table-layout:fixed;width:100%;font-size:8.5pt;line-height:1.18;color:#111;margin:0 0 5px}
+.rph-telegram-paper .rph-preview-table th,.rph-telegram-paper .rph-preview-table td{border:1px solid #666;background:#fff;color:#111;padding:3px 4px;white-space:pre-wrap;overflow-wrap:break-word;vertical-align:top}
+.rph-telegram-paper .rph-preview-table th{text-align:left;font-weight:700}
+.rph-telegram-paper .rph-telegram-info th,.rph-telegram-paper .rph-telegram-footer th{width:28%}
+.rph-telegram-paper .rph-telegram-phases th:first-child{width:14%}
+.rph-telegram-paper .rph-telegram-phases td:nth-child(2){width:67%}
+.rph-telegram-paper .rph-telegram-phases td:nth-child(3){width:19%}
+.rph-telegram-paper .rph-telegram-phases thead th{text-align:center;background:white;color:#111}
+.rph-print-footer{font-size:7.5pt;text-align:center;margin:4px 0 0!important;color:#333!important}
+@page{size:A4;margin:7.5mm 11mm}
+@media print{
+ #rph-preview-panel>h3,#rph-preview-status,#rph-preview-notice,#rph-teacher-details{display:none!important}
+ #rph-preview-title{font-size:15pt!important;text-align:center!important;margin:0 0 6px!important}
+ #rph-preview-content{padding:0!important;box-shadow:none!important}
+ .rph-telegram-paper .rph-preview-table{font-size:8.5pt!important;line-height:1.12!important;break-inside:auto}
+ .rph-telegram-paper .rph-preview-table th,.rph-telegram-paper .rph-preview-table td{padding:2px 3px!important;border-color:#666!important}
+ .rph-telegram-paper .rph-preview-table tr{break-inside:avoid-page}
+ .rph-print-footer{font-size:7.5pt!important;text-align:center!important}
+}
+
 </style>
 </head>
 <body>
@@ -429,28 +453,57 @@ rphButton.addEventListener("click",async()=>{
   const data=await response.json();
   if(data.selection!==lesson.value||data.year!==Number(year.value)||data.subject!==subject.value||data.unit!==unit.value||!Array.isArray(data.fields)||!data.fields.length)throw Error("Padanan RPH tidak sah.");
   if(!currentRphParams()||currentRphParams().toString()!==key)return;
-  document.getElementById("rph-preview-title").textContent="RPH "+subject.selectedOptions[0].textContent+" — Tahun "+year.value+" · "+data.title;
-  if(data.teacher?.class!==teacherClass.value.trim()||data.teacher?.date!==teacherDate.value||data.teacher?.time!==teacherTime.value)throw Error("Maklumat kelas tidak sepadan.");
-  document.getElementById("rph-teacher-details").textContent="Kelas: "+(data.teacher.class||"—")+"  ·  Tarikh: "+(data.teacher.date||"—")+"  ·  Masa: "+(data.teacher.time||"—");
+  const layout=data.telegram_layout;
+  if(!layout||layout.style!=="telegram-native-rph-v1"||
+     !Array.isArray(layout.header)||layout.header.length<16||
+     !Array.isArray(layout.phases)||layout.phases.length!==3||
+     !Array.isArray(layout.footer)||layout.footer.length!==2||
+     !Array.isArray(layout.activity_header)||layout.activity_header.length!==3)
+     throw Error("Susun atur RPH Telegram belum lengkap untuk PdP ini.");
+  if(data.teacher?.class!==teacherClass.value.trim()||
+     data.teacher?.date!==teacherDate.value||data.teacher?.time!==teacherTime.value)
+     throw Error("Maklumat kelas tidak sepadan.");
+  document.getElementById("rph-preview-title").textContent=layout.title;
+  document.getElementById("rph-teacher-details").textContent="";
   document.getElementById("rph-preview-notice").textContent=data.status+" · "+data.notice;
-  // A real RPH table for screen, print/PDF and the corresponding Word download.
-  const wrap=document.createElement("div");wrap.className="rph-table-wrap";
-  const table=document.createElement("table");table.className="rph-preview-table";
-  const caption=document.createElement("caption");caption.textContent="Rancangan Pengajaran Harian";caption.className="sr-only";
-  const head=document.createElement("thead"),heading=document.createElement("tr");
-  for(const title of ["Bahagian RPH","Kandungan dan aktiviti PdP"]){
-   const th=document.createElement("th");th.scope="col";th.textContent=title;heading.append(th);
+  // Mirror Telegram Word: lesson metadata, 3-column phases, remediation/reflection.
+  // Every cell is filled from the same verified JSON used for Word.
+  const root=document.createElement("div");root.className="rph-telegram-paper";
+  function renderTable(label,rows,style,heads=null){
+   const table=document.createElement("table");
+   table.className="rph-preview-table "+style;
+   const caption=document.createElement("caption");
+   caption.className="sr-only";caption.textContent=label;table.append(caption);
+   if(heads){
+    const thead=document.createElement("thead"),head=document.createElement("tr");
+    for(const column of heads){
+     const th=document.createElement("th");th.scope="col";th.textContent=column;head.append(th);
+    }
+    thead.append(head);table.append(thead);
+   }
+   const tbody=document.createElement("tbody");
+   for(const fields of rows){
+    if(!Array.isArray(fields)||fields.length!==(heads?3:2))throw Error("Baris RPH tidak sah.");
+    const tr=document.createElement("tr");
+    for(let i=0;i<fields.length;i++){
+     const cell=document.createElement(i===0?"th":"td");
+     if(i===0)cell.scope="row";
+     cell.textContent=String(fields[i]??"");
+     tr.append(cell);
+    }
+    tbody.append(tr);
+   }
+   table.append(tbody);return table;
   }
-  head.append(heading);table.append(caption,head);
-  const tbody=document.createElement("tbody");
-  for(const field of data.fields){
-   if(typeof field.label!=="string"||typeof field.value!=="string")continue;
-   const tr=document.createElement("tr"),th=document.createElement("th"),td=document.createElement("td");
-   th.scope="row";th.textContent=field.label;td.textContent=field.value;
-   tr.append(th,td);tbody.append(tr);
-  }
-  if(!tbody.children.length)throw Error("Kandungan RPH kosong.");
-  table.append(tbody);wrap.append(table);rphFields.append(wrap);
+  root.append(renderTable("Maklumat RPH",layout.header.map(x=>[x.label,x.value]),"rph-telegram-info"));
+  root.append(renderTable("Langkah PdP",layout.phases.map(x=>[x.label,x.activity,x.notes]),
+      "rph-telegram-phases",layout.activity_header));
+  root.append(renderTable("Pemulihan dan refleksi",layout.footer.map(x=>[x.label,x.value]),
+      "rph-telegram-footer"));
+  const printFooter=document.createElement("p");printFooter.className="rph-print-footer";
+  printFooter.textContent="CikguLaju AI";
+  root.append(printFooter);
+  rphFields.replaceChildren(root);
   rphContent.hidden=false;renderedRphKey=key;
   rphWord.disabled=false;rphPrint.disabled=false;
   rphStatus.textContent="Pratonton RPH tersedia. Semak kandungan sebelum muat turun atau cetak.";updateSelectionHelp("RPH telah dipaparkan. Seterusnya tekan Muat turun Word atau Cetak / Simpan PDF.");
