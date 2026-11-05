@@ -5,8 +5,8 @@
   "coverage": {
     "sow_lessons": 160,
     "sow_lessons_mentioning_tracks": 65,
-    "legacy_map_v25259_lessons": 55,
-    "legacy_map_v25259_audio_references": 68,
+    "legacy_map_v25259_lessons": 56,
+    "legacy_map_v25259_audio_references": 69,
     "canonical_folders": {
       "CD1_MP3": {
         "folderId": "172V689kqHh3AY787suKI4Teug3PjSj5_",
@@ -29,10 +29,10 @@
         "file_count": 51
       }
     },
-    "matched_drive_refs": 68,
+    "matched_drive_refs": 69,
     "legacy_wma_refs": 24,
-    "legacy_mp3_refs": 44,
-    "missing_media_for_sow_audio_lessons": 10,
+    "legacy_mp3_refs": 45,
+    "missing_media_for_sow_audio_lessons": 9,
     "flag_occurrences": {
       "WMA_SOURCE_WITH_LEGACY_MP3_SENDER": 24,
       "TB_P193_CONFIRMS_CD3_NOT_CD1": 2,
@@ -88,12 +88,6 @@
     "CD3 material can legitimately appear early for CLIL/phonics, so monotonic disc sequence is a heuristic only."
   ],
   "missing_legacy_media_for_sow_audio_lessons": [
-    {
-      "lesson": 1,
-      "tracks": [
-        "CD1 Track 3"
-      ]
-    },
     {
       "lesson": 13,
       "tracks": [
@@ -167,7 +161,24 @@
       ],
       "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
       "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
-      "legacy_audio": []
+      "legacy_audio": [
+        {
+          "lesson": 1,
+          "declared_disc": 1,
+          "declared_track": 3,
+          "legacy_file_id": "1Y1dlDrMq6ufg-t5pcH_6HY3ZeMtIBLKG",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 3,
+            "file_name": "03 Track 3.mp3",
+            "size_bytes": 1119889,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
     },
     {
       "lesson": 2,
@@ -3283,5 +3294,11 @@
       "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
       "legacy_audio": []
     }
-  ]
+  ],
+  "audit_parser_correction": {
+    "version": "v2",
+    "date": "2026-11-05",
+    "issue": "Initial SOW-to-app parser missed the first dict key (Lesson1) because it follows '{' rather than a newline",
+    "correction": "The first legacy map row is now explicitly included; 56 Lessons/69 route references, 24 WMA + 45 MP3, 9 SOW-audio gaps."
+  }
 }
