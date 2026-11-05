@@ -17,15 +17,15 @@ Murid dapat memperagakan dua tindakan yang menunjukkan nilai hormat secara selam
 **Kriteria kejayaan:** Senarai semak dua perlakuan diperagakan, satu sebab tindakan dan satu refleksi; simulasi bukan bukti amalan sebenar di luar kelas.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru membacakan situasi **Dua beradik berebut penggunaan alat permainan**. Murid mengenal pasti pihak terlibat dan menyatakan satu tindakan berkaitan nilai **Hormat**.
+**Set induksi (5 minit):** Guru memaparkan kad kes: **Dua beradik berebut penggunaan alat permainan**. Murid meneliti siapa terlibat, menyebut satu pilihan tindakan dan mengaitkannya dengan nilai **Hormat**. Pengalaman peribadi tidak diperlukan.
 
-**Aktiviti 1 (20 minit) — Simulasi amalan nilai dan refleksi:** Guru mengemukakan cabaran "Dua beradik berebut penggunaan alat permainan" dan membahagikan tiga peranan: pelaku, penerima tindakan dan pemerhati. Murid merancang dua langkah yang tidak membahayakan diri atau memerlukan pendedahan keluarga/peribadi.
+**Aktiviti 1 (20 minit) — Tindakan SP 6.5:** Guru menyediakan lakonan ringkas daripada kes **Dua beradik berebut penggunaan alat permainan**. Murid memperagakan dua langkah yang bersesuaian untuk **Mengamalkan perlakuan menghormati ahli keluarga**, tanpa memerlukan wang, data peribadi atau aktiviti luar kelas.
 
-**Aktiviti 2 (20 minit) — Aplikasi dalam konteks sebenar:** Murid melaksanakan simulasi 90 saat, menerima maklum balas senarai semak, kemudian mengulang tindakan dengan bahasa yang lebih berhemah. Pemerhati melaporkan tindakan nyata yang boleh dilihat. Guru membandingkan evidens dengan SP 6.5.
+**Aktiviti 2 (20 minit) — Simulasi dan penambahbaikan:** Guru memandu pemerhati menggunakan senarai semak nilai **Hormat**. Murid menunjukkan satu perlakuan kedua apabila keadaan kes berubah, menerima komen rakan dan memperbaiki satu tindakan yang dapat dilihat.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Senarai semak dua perlakuan diperagakan, satu sebab tindakan dan satu refleksi; simulasi bukan bukti amalan sebenar di luar kelas. Guru mencatat respon individu dan memberi maklum balas berbukti, bukan menetapkan TP berdasarkan satu respons sahaja.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru merekod dua tindakan yang benar-benar diperagakan untuk SP 6.5, satu sebab tindakan dan satu refleksi pembaikan. Simulasi di kelas tidak dianggap bukti amalan harian di luar sekolah.
 
-**Penutup (5 minit):** Dua murid menjelaskan tindakan yang dipilih serta sebabnya; guru merumuskan hubungan nilai **Hormat** dengan hormati ahli keluarga dan cadangan pengamalan selamat.
+**Penutup (5 minit):** Murid menyatakan satu keputusan atau perlakuan yang menunjukkan nilai **Hormat** dalam konteks **dua beradik berebut penggunaan alat permainan** serta sebab pilihan itu. Guru merumuskan SP 6.5 dan tindakan selamat yang boleh dipraktikkan.
 
 **Pemulihan:** Pilihan gambar, tiga kad kata kunci dan rangka ayat untuk murid yang memerlukan sokongan.  
 **Pengayaan:** Murid yang telah menguasai tugasan membandingkan dua keputusan dan menyokong pilihan dengan justifikasi tambahan.  

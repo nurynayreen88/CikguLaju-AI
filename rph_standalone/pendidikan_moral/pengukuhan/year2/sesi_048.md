@@ -17,15 +17,15 @@ Murid dapat memperagakan dua tindakan yang menunjukkan nilai kasih sayang secara
 **Kriteria kejayaan:** Senarai semak dua perlakuan diperagakan, satu sebab tindakan dan satu refleksi; simulasi bukan bukti amalan sebenar di luar kelas.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru membacakan situasi **Seorang ahli keluarga demam dan memerlukan perhatian**. Murid mengenal pasti pihak terlibat dan menyatakan satu tindakan berkaitan nilai **Kasih sayang**.
+**Set induksi (5 minit):** Guru memaparkan kad kes: **Seorang ahli keluarga demam dan memerlukan perhatian**. Murid meneliti siapa terlibat, menyebut satu pilihan tindakan dan mengaitkannya dengan nilai **Kasih sayang**. Pengalaman peribadi tidak diperlukan.
 
-**Aktiviti 1 (20 minit) — Simulasi amalan nilai dan refleksi:** Guru mengemukakan cabaran "Seorang ahli keluarga demam dan memerlukan perhatian" dan membahagikan tiga peranan: pelaku, penerima tindakan dan pemerhati. Murid merancang dua langkah yang tidak membahayakan diri atau memerlukan pendedahan keluarga/peribadi.
+**Aktiviti 1 (20 minit) — Tindakan SP 7.5:** Guru menyediakan lakonan ringkas daripada kes **Seorang ahli keluarga demam dan memerlukan perhatian**. Murid memperagakan dua langkah yang bersesuaian untuk **Mengamalkan sikap kasih sayang terhadap ahli keluarga**, tanpa memerlukan wang, data peribadi atau aktiviti luar kelas.
 
-**Aktiviti 2 (20 minit) — Aplikasi dalam konteks sebenar:** Murid melaksanakan simulasi 90 saat, menerima maklum balas senarai semak, kemudian mengulang tindakan dengan bahasa yang lebih berhemah. Pemerhati melaporkan tindakan nyata yang boleh dilihat. Guru membandingkan evidens dengan SP 7.5.
+**Aktiviti 2 (20 minit) — Simulasi dan penambahbaikan:** Guru memandu pemerhati menggunakan senarai semak nilai **Kasih sayang**. Murid menunjukkan satu perlakuan kedua apabila keadaan kes berubah, menerima komen rakan dan memperbaiki satu tindakan yang dapat dilihat.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Senarai semak dua perlakuan diperagakan, satu sebab tindakan dan satu refleksi; simulasi bukan bukti amalan sebenar di luar kelas. Guru mencatat respon individu dan memberi maklum balas berbukti, bukan menetapkan TP berdasarkan satu respons sahaja.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru merekod dua tindakan yang benar-benar diperagakan untuk SP 7.5, satu sebab tindakan dan satu refleksi pembaikan. Simulasi di kelas tidak dianggap bukti amalan harian di luar sekolah.
 
-**Penutup (5 minit):** Dua murid menjelaskan tindakan yang dipilih serta sebabnya; guru merumuskan hubungan nilai **Kasih sayang** dengan sayangi ahli keluarga dan cadangan pengamalan selamat.
+**Penutup (5 minit):** Murid menyatakan satu keputusan atau perlakuan yang menunjukkan nilai **Kasih sayang** dalam konteks **seorang ahli keluarga demam dan memerlukan perhatian** serta sebab pilihan itu. Guru merumuskan SP 7.5 dan tindakan selamat yang boleh dipraktikkan.
 
 **Pemulihan:** Pilihan gambar, tiga kad kata kunci dan rangka ayat untuk murid yang memerlukan sokongan.  
 **Pengayaan:** Murid yang telah menguasai tugasan membandingkan dua keputusan dan menyokong pilihan dengan justifikasi tambahan.  

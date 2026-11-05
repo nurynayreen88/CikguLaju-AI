@@ -17,15 +17,15 @@ Murid dapat mengenal pasti sekurang-kurangnya dua contoh tindakan bagi nilai ker
 **Kriteria kejayaan:** Murid menulis dua contoh tindakan, satu cara dan sebab pemilihannya; guru menandakan evidens bagi setiap SP secara individu.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru membacakan situasi **Sebuah keluarga perlu mengemas ruang tamu selepas majlis makan**. Murid mengenal pasti pihak terlibat dan menyatakan satu tindakan berkaitan nilai **Kerajinan**.
+**Set induksi (5 minit):** Guru memaparkan kad kes: **Sebuah keluarga perlu mengemas ruang tamu selepas majlis makan**. Murid meneliti siapa terlibat, menyebut satu pilihan tindakan dan mengaitkannya dengan nilai **Kerajinan**. Pengalaman peribadi tidak diperlukan.
 
-**Aktiviti 1 (20 minit) — Mengenal pasti dan memilih tindakan:** Guru mengemukakan situasi khusus: "Sebuah keluarga perlu mengemas ruang tamu selepas majlis makan". Murid bekerja secara berpasangan membezakan sekurang-kurangnya tiga tindakan yang membantu dan yang merugikan pihak terlibat. Guru mengaitkan jawapan dengan kata tugas 11.1 daripada DSKP.
+**Aktiviti 1 (20 minit) — Teliti situasi dan SP 11.1:** Guru menggunakan dua variasi kes berkaitan **sebuah keluarga perlu mengemas ruang tamu selepas majlis makan**. Murid menghasilkan dua jawapan konkrit bagi tugasan **Menyenaraikan contoh sikap rajin yang boleh dilakukan terhadap ahli keluarga** dan menerangkan hubungannya dengan watak atau keperluan dalam situasi.
 
-**Aktiviti 2 (20 minit) — Aplikasi dalam konteks sebenar:** Murid menghasilkan dua kad keputusan berlabel "tindakan" dan "cara" berdasarkan sebuah keluarga perlu mengemas ruang tamu selepas majlis makan. Setiap pasangan menyebut penerima tindakan dan memeriksa sama ada cadangannya sesuai, selamat dan menghormati orang lain. Guru meminta dua murid menjelaskan pilihan secara individu.
+**Aktiviti 2 (20 minit) — Buktikan SP 11.2:** Guru menyoal cara atau sebab pilihan dibuat. Murid menghasilkan kad respons bagi **Menjelaskan cara bersikap rajin terhadap ahli keluarga** dengan dua butiran khusus serta alasan yang sesuai dengan kes **Sebuah keluarga perlu mengemas ruang tamu selepas majlis makan**. Rakan menyemak ketepatan jawapan mengikut kata tugas SP.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Murid menulis dua contoh tindakan, satu cara dan sebab pemilihannya; guru menandakan evidens bagi setiap SP secara individu. Guru mencatat respon individu dan memberi maklum balas berbukti, bukan menetapkan TP berdasarkan satu respons sahaja.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menyemak kad individu: dua respons untuk SP 11.1, dua butiran dan satu alasan tepat untuk SP 11.2. Murid membetulkan satu jawapan berdasarkan maklum balas; penilaian bukan berdasarkan hafalan semata-mata.
 
-**Penutup (5 minit):** Dua murid menjelaskan tindakan yang dipilih serta sebabnya; guru merumuskan hubungan nilai **Kerajinan** dengan rajin terhadap ahli keluarga dan cadangan pengamalan selamat.
+**Penutup (5 minit):** Murid menyatakan satu keputusan atau perlakuan yang menunjukkan nilai **Kerajinan** dalam konteks **sebuah keluarga perlu mengemas ruang tamu selepas majlis makan** serta sebab pilihan itu. Guru merumuskan SP 11.1; 11.2 dan tindakan selamat yang boleh dipraktikkan.
 
 **Pemulihan:** Pilihan gambar, tiga kad kata kunci dan rangka ayat untuk murid yang memerlukan sokongan.  
 **Pengayaan:** Murid yang telah menguasai tugasan membandingkan dua keputusan dan menyokong pilihan dengan justifikasi tambahan.  

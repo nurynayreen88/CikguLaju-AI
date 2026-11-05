@@ -17,15 +17,15 @@ Murid dapat memberikan dua alasan yang munasabah bagi tindakan hormat berkaitan 
 **Kriteria kejayaan:** Kad keluar mengandungi dua sebab/kepentingan atau kesan beserta bukti daripada situasi; guru menilai penaakulan, bukan hafalan semata-mata.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru membacakan situasi **Dua beradik berebut penggunaan alat permainan**. Murid mengenal pasti pihak terlibat dan menyatakan satu tindakan berkaitan nilai **Hormat**.
+**Set induksi (5 minit):** Guru memaparkan kad kes: **Dua beradik berebut penggunaan alat permainan**. Murid meneliti siapa terlibat, menyebut satu pilihan tindakan dan mengaitkannya dengan nilai **Hormat**. Pengalaman peribadi tidak diperlukan.
 
-**Aktiviti 1 (20 minit) — Menilai kepentingan dan kesan:** Guru mengemukakan dua kemungkinan sambungan bagi situasi "Dua beradik berebut penggunaan alat permainan". Murid melakar peta punca–tindakan–akibat dan menandakan pihak yang mendapat manfaat atau menanggung risiko.
+**Aktiviti 1 (20 minit) — Penaakulan SP 6.3:** Guru memperkenalkan dua hasil yang mungkin apabila **dua beradik berebut penggunaan alat permainan**. Murid menjalankan tugasan **Menghuraikan kepentingan menghormati ahli keluarga** dengan mengenal pasti dua hubungan tindakan–sebab–kesan dan pihak yang menerima kesannya.
 
-**Aktiviti 2 (20 minit) — Aplikasi dalam konteks sebenar:** Murid menjalankan perbahasan mini "pilihan A atau B" dalam kumpulan tiga orang: seorang pembuat keputusan, seorang pemeriksa kesan dan seorang pemberi maklum balas. Hasil perbincangan dibandingkan dengan standard 6.3: Menghuraikan kepentingan menghormati ahli keluarga.
+**Aktiviti 2 (20 minit) — Uji justifikasi:** Guru membekalkan dua kad pilihan yang berbeza bagi **dua beradik berebut penggunaan alat permainan**. Murid memilih keputusan lebih wajar, membina peta sebab–kesan dan mempertahankannya dengan dua alasan. Rakan meminta satu pembaikan berasaskan SP.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Kad keluar mengandungi dua sebab/kepentingan atau kesan beserta bukti daripada situasi; guru menilai penaakulan, bukan hafalan semata-mata. Guru mencatat respon individu dan memberi maklum balas berbukti, bukan menetapkan TP berdasarkan satu respons sahaja.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menilai dua justifikasi individu yang menjawab SP 6.3, kedua-duanya disokong hubungan sebab dan kesan yang munasabah. Murid membetulkan satu kaitan yang tidak tepat selepas ulasan guru.
 
-**Penutup (5 minit):** Dua murid menjelaskan tindakan yang dipilih serta sebabnya; guru merumuskan hubungan nilai **Hormat** dengan hormati ahli keluarga dan cadangan pengamalan selamat.
+**Penutup (5 minit):** Murid menyatakan satu keputusan atau perlakuan yang menunjukkan nilai **Hormat** dalam konteks **dua beradik berebut penggunaan alat permainan** serta sebab pilihan itu. Guru merumuskan SP 6.3 dan tindakan selamat yang boleh dipraktikkan.
 
 **Pemulihan:** Pilihan gambar, tiga kad kata kunci dan rangka ayat untuk murid yang memerlukan sokongan.  
 **Pengayaan:** Murid yang telah menguasai tugasan membandingkan dua keputusan dan menyokong pilihan dengan justifikasi tambahan.  

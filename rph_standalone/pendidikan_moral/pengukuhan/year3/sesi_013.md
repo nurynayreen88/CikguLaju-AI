@@ -16,15 +16,15 @@ Murid dapat menunjukkan penguasaan SP **2.5** melalui dua tindakan nyata dan sat
 **Kriteria kejayaan:** Dua tindakan yang benar-benar diperagakan, alasan dan refleksi; simulasi tidak digunakan sebagai bukti amalan sebenar di luar kelas.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru memaparkan situasi: **Seorang murid baharu memerlukan bantuan mencari bilik khas** Murid menyatakan satu isu moral, pihak terlibat dan nilai Baik hati yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan kad kes: **Seorang murid baharu memerlukan bantuan mencari bilik khas**. Murid meneliti siapa terlibat, menyebut satu pilihan tindakan dan mengaitkannya dengan nilai **Baik hati**. Pengalaman peribadi tidak diperlukan.
 
-**Aktiviti 1 (20 minit) — Pengamalan nilai dalam simulasi:** Guru memberi tugasan simulasi daripada situasi Seorang murid baharu memerlukan bantuan mencari bilik khas. Murid membahagi peranan pelaku, penerima dan pemerhati serta memilih tindakan selamat. Guru mengemukakan soalan berdasarkan kata tugas SP **2.5** dan mengaitkan perbincangan dengan konsep nilai dalam DSKP.
+**Aktiviti 1 (20 minit) — Tindakan SP 2.5:** Guru menyediakan lakonan ringkas daripada kes **Seorang murid baharu memerlukan bantuan mencari bilik khas**. Murid memperagakan dua langkah yang bersesuaian untuk **Mengamalkan sikap saling membantu dalam kalangan warga sekolah**, tanpa memerlukan wang, data peribadi atau aktiviti luar kelas.
 
-**Aktiviti 2 (20 minit) — Respons dan hujah:** Murid memperagakan dua tindakan selama 60–90 saat, menggunakan senarai semak rakan, dan mengulang lakonan selepas pembetulan. Murid mencatat satu amalan yang munasabah untuk dibawa ke kehidupan seharian. Murid menilai sendiri hasil dengan panduan guru; komunikasi mesti hormat, selamat dan tidak memerlukan pendedahan agama/keluarga peribadi.
+**Aktiviti 2 (20 minit) — Simulasi dan penambahbaikan:** Guru memandu pemerhati menggunakan senarai semak nilai **Baik hati**. Murid menunjukkan satu perlakuan kedua apabila keadaan kes berubah, menerima komen rakan dan memperbaiki satu tindakan yang dapat dilihat.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Dua tindakan yang benar-benar diperagakan, alasan dan refleksi; simulasi tidak digunakan sebagai bukti amalan sebenar di luar kelas. Guru mencatat evidens individu dan menerangkan satu pembetulan spesifik, bukan memberikan TP hanya kerana murid mengambil bahagian.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru merekod dua tindakan yang benar-benar diperagakan untuk SP 2.5, satu sebab tindakan dan satu refleksi pembaikan. Simulasi di kelas tidak dianggap bukti amalan harian di luar sekolah.
 
-**Penutup (5 minit):** Wakil murid menyatakan tindakan yang dipilih, satu sebab dan contoh aplikasi selamat. Guru membuat rumusan nilai Baik hati dan kaitannya dengan bantuan kepada warga sekolah.
+**Penutup (5 minit):** Murid menyatakan satu keputusan atau perlakuan yang menunjukkan nilai **Baik hati** dalam konteks **seorang murid baharu memerlukan bantuan mencari bilik khas** serta sebab pilihan itu. Guru merumuskan SP 2.5 dan tindakan selamat yang boleh dipraktikkan.
 
 **Pemulihan:** Gambar situasi, kerangka "Saya memilih ... kerana ..." dan dua pilihan tindakan disediakan.  
 **Pengayaan:** Murid menambah satu sebab atau mempertimbangkan perspektif pihak yang berbeza.  

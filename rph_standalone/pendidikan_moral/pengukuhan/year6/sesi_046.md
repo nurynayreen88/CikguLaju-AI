@@ -17,15 +17,15 @@ Murid menunjukkan penguasaan SP **7.3** dengan menghasilkan dua alasan atau kesa
 **Kriteria kejayaan:** Sekurang-kurangnya dua alasan/kesan yang bersebab dengan bukti respons individu.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru memperkenalkan situasi **Murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan** Murid mengenal pasti cabaran nilai Kasih sayang dan menyebut satu tindakan yang boleh diambil.
+**Set induksi (5 minit):** Guru memaparkan kad kes: **Murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan**. Murid meneliti siapa terlibat, menyebut satu pilihan tindakan dan mengaitkannya dengan nilai **Kasih sayang**. Pengalaman peribadi tidak diperlukan.
 
-**Aktiviti 1 (20 minit) — Kesan mengabaikan negara:** Guru menggunakan peristiwa daripada sajak 'Malaysia Negaraku Tercinta' m/s 64–65 yang menyentuh perpaduan dan maruah negara. Murid menyusun dua akibat pengabaian serta alasan yang munasabah (SP 7.3).
+**Aktiviti 1 (20 minit) — Penaakulan SP 7.3:** Guru memperkenalkan dua hasil yang mungkin apabila **murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan**. Murid menjalankan tugasan **Merumuskan kesan pengabaian amalan cinta akan negara** dengan mengenal pasti dua hubungan tindakan–sebab–kesan dan pihak yang menerima kesannya.
 
-**Aktiviti 2 (20 minit) — Projek warisan dan rumusan:** Murid merujuk kad tempat bersejarah m/s 66–67, merumuskan dua kesan jika tempat bersejarah diabaikan dan membetulkan peta sebab-akibat selepas maklum balas guru (SP 7.3). Guru merekod dua rumusan individu dan membimbing alasan bagi kesan yang masih terlalu umum (SP 7.3).
+**Aktiviti 2 (20 minit) — Uji justifikasi:** Guru membekalkan dua kad pilihan yang berbeza bagi **pilihan melancong dalam negara dan menjaga nama baik Malaysia**. Murid memilih keputusan lebih wajar, membina peta sebab–kesan dan mempertahankannya dengan dua alasan. Rakan meminta satu pembaikan berasaskan SP.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Sekurang-kurangnya dua alasan/kesan yang bersebab dengan bukti respons individu. Guru memeriksa hasil murid seorang demi seorang, mencatat kelemahan tertentu dan tidak menetapkan TP berdasarkan lakonan semata-mata.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menilai dua justifikasi individu yang menjawab SP 7.3, kedua-duanya disokong hubungan sebab dan kesan yang munasabah. Murid membetulkan satu kaitan yang tidak tepat selepas ulasan guru.
 
-**Penutup (5 minit):** Murid menyebut satu tindakan untuk memperkukuh nilai Kasih sayang dan satu sebab ia penting dalam cinta akan negara. Guru merumuskan perkara yang telah dinilai dan memberikan maklum balas.
+**Penutup (5 minit):** Murid menyatakan satu keputusan atau perlakuan yang menunjukkan nilai **Kasih sayang** dalam konteks **pilihan melancong dalam negara dan menjaga nama baik Malaysia** serta sebab pilihan itu. Guru merumuskan SP 7.3 dan tindakan selamat yang boleh dipraktikkan.
 
 **Pemulihan:** Kad bergambar serta rangka ayat berpandu.  
 **Pengayaan:** Tambah satu pilihan alternatif dan dua justifikasi yang melihat kesan terhadap pihak lain.  

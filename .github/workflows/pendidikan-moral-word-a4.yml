@@ -11,6 +11,9 @@ on:
     paths:
       - 'scripts/check_moral_word270_physical_a4.py'
       - 'rpt_2027/pendidikan_moral/complete_96_downloads.py'
+      - 'rph_standalone/pendidikan_moral/pengukuhan/**'
+      - 'audits/pendidikan_moral_supplement270_semantic_review_20261105.json'
+      - 'scripts/check_moral_supplement270_semantic_quality.py'
       - '.github/workflows/pendidikan-moral-word-a4.yml'
   workflow_dispatch:
 

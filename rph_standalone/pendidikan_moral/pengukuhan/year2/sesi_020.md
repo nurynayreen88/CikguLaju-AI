@@ -17,15 +17,15 @@ Murid dapat memperagakan dua tindakan yang menunjukkan nilai bertanggungjawab se
 **Kriteria kejayaan:** Senarai semak dua perlakuan diperagakan, satu sebab tindakan dan satu refleksi; simulasi bukan bukti amalan sebenar di luar kelas.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru membacakan situasi **Keluarga membahagi tugasan sebelum tetamu datang ke rumah**. Murid mengenal pasti pihak terlibat dan menyatakan satu tindakan berkaitan nilai **Bertanggungjawab**.
+**Set induksi (5 minit):** Guru memaparkan kad kes: **Keluarga membahagi tugasan sebelum tetamu datang ke rumah**. Murid meneliti siapa terlibat, menyebut satu pilihan tindakan dan mengaitkannya dengan nilai **Bertanggungjawab**. Pengalaman peribadi tidak diperlukan.
 
-**Aktiviti 1 (20 minit) — Simulasi amalan nilai dan refleksi:** Guru mengemukakan cabaran "Keluarga membahagi tugasan sebelum tetamu datang ke rumah" dan membahagikan tiga peranan: pelaku, penerima tindakan dan pemerhati. Murid merancang dua langkah yang tidak membahayakan diri atau memerlukan pendedahan keluarga/peribadi.
+**Aktiviti 1 (20 minit) — Tindakan SP 3.5:** Guru menyediakan lakonan ringkas daripada kes **Keluarga membahagi tugasan sebelum tetamu datang ke rumah**. Murid memperagakan dua langkah yang bersesuaian untuk **Mengamalkan sikap bertanggungjawab terhadap keluarga**, tanpa memerlukan wang, data peribadi atau aktiviti luar kelas.
 
-**Aktiviti 2 (20 minit) — Aplikasi dalam konteks sebenar:** Murid melaksanakan simulasi 90 saat, menerima maklum balas senarai semak, kemudian mengulang tindakan dengan bahasa yang lebih berhemah. Pemerhati melaporkan tindakan nyata yang boleh dilihat. Guru membandingkan evidens dengan SP 3.5.
+**Aktiviti 2 (20 minit) — Simulasi dan penambahbaikan:** Guru memandu pemerhati menggunakan senarai semak nilai **Bertanggungjawab**. Murid menunjukkan satu perlakuan kedua apabila keadaan kes berubah, menerima komen rakan dan memperbaiki satu tindakan yang dapat dilihat.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Senarai semak dua perlakuan diperagakan, satu sebab tindakan dan satu refleksi; simulasi bukan bukti amalan sebenar di luar kelas. Guru mencatat respon individu dan memberi maklum balas berbukti, bukan menetapkan TP berdasarkan satu respons sahaja.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru merekod dua tindakan yang benar-benar diperagakan untuk SP 3.5, satu sebab tindakan dan satu refleksi pembaikan. Simulasi di kelas tidak dianggap bukti amalan harian di luar sekolah.
 
-**Penutup (5 minit):** Dua murid menjelaskan tindakan yang dipilih serta sebabnya; guru merumuskan hubungan nilai **Bertanggungjawab** dengan tanggungjawab terhadap keluarga dan cadangan pengamalan selamat.
+**Penutup (5 minit):** Murid menyatakan satu keputusan atau perlakuan yang menunjukkan nilai **Bertanggungjawab** dalam konteks **keluarga membahagi tugasan sebelum tetamu datang ke rumah** serta sebab pilihan itu. Guru merumuskan SP 3.5 dan tindakan selamat yang boleh dipraktikkan.
 
 **Pemulihan:** Pilihan gambar, tiga kad kata kunci dan rangka ayat untuk murid yang memerlukan sokongan.  
 **Pengayaan:** Murid yang telah menguasai tugasan membandingkan dua keputusan dan menyokong pilihan dengan justifikasi tambahan.  

@@ -17,15 +17,15 @@ Murid dapat memberikan dua alasan yang munasabah bagi tindakan baik hati berkait
 **Kriteria kejayaan:** Kad keluar mengandungi dua sebab/kepentingan atau kesan beserta bukti daripada situasi; guru menilai penaakulan, bukan hafalan semata-mata.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru membacakan situasi **Ibu sedang menyediakan makan malam dan adik memerlukan bantuan menyusun meja**. Murid mengenal pasti pihak terlibat dan menyatakan satu tindakan berkaitan nilai **Baik hati**.
+**Set induksi (5 minit):** Guru memaparkan kad kes: **Ibu sedang menyediakan makan malam dan adik memerlukan bantuan menyusun meja**. Murid meneliti siapa terlibat, menyebut satu pilihan tindakan dan mengaitkannya dengan nilai **Baik hati**. Pengalaman peribadi tidak diperlukan.
 
-**Aktiviti 1 (20 minit) — Menilai kepentingan dan kesan:** Guru mengemukakan dua kemungkinan sambungan bagi situasi "Ibu sedang menyediakan makan malam dan adik memerlukan bantuan menyusun meja". Murid melakar peta punca–tindakan–akibat dan menandakan pihak yang mendapat manfaat atau menanggung risiko.
+**Aktiviti 1 (20 minit) — Penaakulan SP 2.3:** Guru memperkenalkan dua hasil yang mungkin apabila **ibu sedang menyediakan makan malam dan adik memerlukan bantuan menyusun meja**. Murid menjalankan tugasan **Menganalisis kesan memberi bantuan kepada keluarga** dengan mengenal pasti dua hubungan tindakan–sebab–kesan dan pihak yang menerima kesannya.
 
-**Aktiviti 2 (20 minit) — Aplikasi dalam konteks sebenar:** Murid menjalankan perbahasan mini "pilihan A atau B" dalam kumpulan tiga orang: seorang pembuat keputusan, seorang pemeriksa kesan dan seorang pemberi maklum balas. Hasil perbincangan dibandingkan dengan standard 2.3: Menganalisis kesan memberi bantuan kepada keluarga.
+**Aktiviti 2 (20 minit) — Uji justifikasi:** Guru membekalkan dua kad pilihan yang berbeza bagi **ibu sedang menyediakan makan malam dan adik memerlukan bantuan menyusun meja**. Murid memilih keputusan lebih wajar, membina peta sebab–kesan dan mempertahankannya dengan dua alasan. Rakan meminta satu pembaikan berasaskan SP.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Kad keluar mengandungi dua sebab/kepentingan atau kesan beserta bukti daripada situasi; guru menilai penaakulan, bukan hafalan semata-mata. Guru mencatat respon individu dan memberi maklum balas berbukti, bukan menetapkan TP berdasarkan satu respons sahaja.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menilai dua justifikasi individu yang menjawab SP 2.3, kedua-duanya disokong hubungan sebab dan kesan yang munasabah. Murid membetulkan satu kaitan yang tidak tepat selepas ulasan guru.
 
-**Penutup (5 minit):** Dua murid menjelaskan tindakan yang dipilih serta sebabnya; guru merumuskan hubungan nilai **Baik hati** dengan bantuan kepada keluarga dan cadangan pengamalan selamat.
+**Penutup (5 minit):** Murid menyatakan satu keputusan atau perlakuan yang menunjukkan nilai **Baik hati** dalam konteks **ibu sedang menyediakan makan malam dan adik memerlukan bantuan menyusun meja** serta sebab pilihan itu. Guru merumuskan SP 2.3 dan tindakan selamat yang boleh dipraktikkan.
 
 **Pemulihan:** Pilihan gambar, tiga kad kata kunci dan rangka ayat untuk murid yang memerlukan sokongan.  
 **Pengayaan:** Murid yang telah menguasai tugasan membandingkan dua keputusan dan menyokong pilihan dengan justifikasi tambahan.  

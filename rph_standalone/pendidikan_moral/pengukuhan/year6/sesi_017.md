@@ -17,15 +17,15 @@ Murid menunjukkan penguasaan SP **3.1; 3.2** dengan menghasilkan dua contoh tind
 **Kriteria kejayaan:** Dua contoh tindakan, dua cara pelaksanaan dan satu alasan dinilai melalui kad individu.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru memperkenalkan situasi **Murid membincangkan tanggungjawab menjaga kemudahan awam** Murid mengenal pasti cabaran nilai Bertanggungjawab dan menyebut satu tindakan yang boleh diambil.
+**Set induksi (5 minit):** Guru memaparkan kad kes: **Murid membincangkan tanggungjawab menjaga kemudahan awam**. Murid meneliti siapa terlibat, menyebut satu pilihan tindakan dan mengaitkannya dengan nilai **Bertanggungjawab**. Pengalaman peribadi tidak diperlukan.
 
-**Aktiviti 1 (20 minit) — Penerokaan tindakan berasaskan nilai:** Guru membacakan kes: Murid membincangkan tanggungjawab menjaga kemudahan awam. Murid mengenal pasti pihak terlibat dan mencadangkan dua perbuatan bertepatan dengan nilai Bertanggungjawab. Guru menjelaskan kata tugas SP (3.1; 3.2) dan memeriksa kefahaman murid melalui soal jawab individu.
+**Aktiviti 1 (20 minit) — Teliti situasi dan SP 3.1:** Guru menggunakan dua variasi kes berkaitan **tanggungjawab warganegara, maklumat sahih dan pengurusan e-waste**. Murid menghasilkan dua jawapan konkrit bagi tugasan **Memberikan definisi warganegara** dan menerangkan hubungannya dengan watak atau keperluan dalam situasi.
 
-**Aktiviti 2 (20 minit) — Menyelesaikan masalah:** Murid menyusun kad "siapa memerlukan apa" dan membina dua langkah bantuan/tindakan praktikal bagi kes murid membincangkan tanggungjawab menjaga kemudahan awam. Mereka membandingkan cadangan dan memilih yang paling sesuai. Guru memandu murid menggunakan sebab yang sahih, menjaga keselamatan serta mengelakkan aktiviti yang memerlukan murid mendedahkan butiran peribadi.
+**Aktiviti 2 (20 minit) — Buktikan SP 3.2:** Guru menyoal cara atau sebab pilihan dibuat. Murid menghasilkan kad respons bagi **Menghuraikan cara melaksanakan tanggungjawab sebagai warganegara** dengan dua butiran khusus serta alasan yang sesuai dengan kes **Murid membincangkan tanggungjawab menjaga kemudahan awam**. Rakan menyemak ketepatan jawapan mengikut kata tugas SP.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Dua contoh tindakan, dua cara pelaksanaan dan satu alasan dinilai melalui kad individu. Guru memeriksa hasil murid seorang demi seorang, mencatat kelemahan tertentu dan tidak menetapkan TP berdasarkan lakonan semata-mata.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menyemak kad individu: dua respons untuk SP 3.1, dua butiran dan satu alasan tepat untuk SP 3.2. Murid membetulkan satu jawapan berdasarkan maklum balas; penilaian bukan berdasarkan hafalan semata-mata.
 
-**Penutup (5 minit):** Murid menyebut satu tindakan untuk memperkukuh nilai Bertanggungjawab dan satu sebab ia penting dalam tanggungjawab sebagai warganegara. Guru merumuskan perkara yang telah dinilai dan memberikan maklum balas.
+**Penutup (5 minit):** Murid menyatakan satu keputusan atau perlakuan yang menunjukkan nilai **Bertanggungjawab** dalam konteks **tanggungjawab warganegara, maklumat sahih dan pengurusan e-waste** serta sebab pilihan itu. Guru merumuskan SP 3.1; 3.2 dan tindakan selamat yang boleh dipraktikkan.
 
 **Pemulihan:** Kad bergambar serta rangka ayat berpandu.  
 **Pengayaan:** Tambah satu pilihan alternatif dan dua justifikasi yang melihat kesan terhadap pihak lain.  

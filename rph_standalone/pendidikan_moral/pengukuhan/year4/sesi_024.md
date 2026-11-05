@@ -16,15 +16,15 @@ Murid dapat menunjukkan penguasaan SP **4.1; 4.2** melalui dua tindakan relevan 
 **Kriteria kejayaan:** Dua contoh atau tindakan, dua cara dan satu alasan yang tepat dinilai secara individu.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru memaparkan situasi: **Jiran memulangkan barang yang dipinjam dalam keadaan baik** Murid menyatakan satu isu moral, pihak terlibat dan nilai Berterima kasih yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan kad kes: **Jiran memulangkan barang yang dipinjam dalam keadaan baik**. Murid meneliti siapa terlibat, menyebut satu pilihan tindakan dan mengaitkannya dengan nilai **Berterima kasih**. Pengalaman peribadi tidak diperlukan.
 
-**Aktiviti 1 (20 minit) — Penerokaan nilai melalui kes:** Guru memperkenalkan situasi: Jiran memulangkan barang yang dipinjam dalam keadaan baik. Murid mengelaskan tindakan sesuai/tidak sesuai pada kad dan menyenaraikan pihak yang memerlukan perhatian. Guru mengemukakan soalan berdasarkan kata tugas SP **4.1; 4.2** dan mengaitkan perbincangan dengan konsep nilai dalam DSKP.
+**Aktiviti 1 (20 minit) — Teliti situasi dan SP 4.1:** Guru menggunakan dua variasi kes berkaitan **jiran memulangkan barang yang dipinjam dalam keadaan baik**. Murid menghasilkan dua jawapan konkrit bagi tugasan **Menyenaraikan cara berterima kasih terhadap jiran** dan menerangkan hubungannya dengan watak atau keperluan dalam situasi.
 
-**Aktiviti 2 (20 minit) — Respons dan hujah:** Murid membina peta dua tindakan dan dua cara melaksanakannya dengan selamat bagi situasi jiran memulangkan barang yang dipinjam dalam keadaan baik. Kumpulan bertukar hasil dan membetulkan pilihan yang tidak praktikal. Murid menilai sendiri hasil dengan panduan guru; komunikasi mesti hormat, selamat dan tidak memerlukan pendedahan agama/keluarga peribadi.
+**Aktiviti 2 (20 minit) — Buktikan SP 4.2:** Guru menyoal cara atau sebab pilihan dibuat. Murid menghasilkan kad respons bagi **Menjelaskan kepentingan sikap berterima kasih terhadap jiran** dengan dua butiran khusus serta alasan yang sesuai dengan kes **Jiran memulangkan barang yang dipinjam dalam keadaan baik**. Rakan menyemak ketepatan jawapan mengikut kata tugas SP.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Dua contoh atau tindakan, dua cara dan satu alasan yang tepat dinilai secara individu. Guru mencatat evidens individu dan menerangkan satu pembetulan spesifik, bukan memberikan TP hanya kerana murid mengambil bahagian.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menyemak kad individu: dua respons untuk SP 4.1, dua butiran dan satu alasan tepat untuk SP 4.2. Murid membetulkan satu jawapan berdasarkan maklum balas; penilaian bukan berdasarkan hafalan semata-mata.
 
-**Penutup (5 minit):** Wakil murid menyatakan tindakan yang dipilih, satu sebab dan contoh aplikasi selamat. Guru membuat rumusan nilai Berterima kasih dan kaitannya dengan berterima kasih terhadap jiran.
+**Penutup (5 minit):** Murid menyatakan satu keputusan atau perlakuan yang menunjukkan nilai **Berterima kasih** dalam konteks **jiran memulangkan barang yang dipinjam dalam keadaan baik** serta sebab pilihan itu. Guru merumuskan SP 4.1; 4.2 dan tindakan selamat yang boleh dipraktikkan.
 
 **Pemulihan:** Gambar situasi, kerangka "Saya memilih ... kerana ..." dan dua pilihan tindakan disediakan.  
 **Pengayaan:** Murid menambah satu sebab atau mempertimbangkan perspektif pihak yang berbeza.  

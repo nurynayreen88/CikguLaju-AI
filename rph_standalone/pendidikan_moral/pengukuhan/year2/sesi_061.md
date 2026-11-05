@@ -17,15 +17,15 @@ Murid dapat mengekspresikan dua perasaan yang bersesuaian dengan situasi berani 
 **Kriteria kejayaan:** Dua ayat perasaan dan sekurang-kurangnya satu sebab yang relevan; semakan PBD dibuat berdasarkan respons individu.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru membacakan situasi **Seorang rakan menyebarkan cerita yang tidak benar mengenai keluarga**. Murid mengenal pasti pihak terlibat dan menyatakan satu tindakan berkaitan nilai **Keberanian**.
+**Set induksi (5 minit):** Guru memaparkan kad kes: **Seorang rakan menyebarkan cerita yang tidak benar mengenai keluarga**. Murid meneliti siapa terlibat, menyebut satu pilihan tindakan dan mengaitkannya dengan nilai **Keberanian**. Pengalaman peribadi tidak diperlukan.
 
-**Aktiviti 1 (20 minit) — Empati dan ekspresi perasaan:** Guru memaparkan dua perspektif bagi situasi "Seorang rakan menyebarkan cerita yang tidak benar mengenai keluarga": individu yang memberi bantuan/memikul tanggungjawab dan individu yang menerima kesannya. Murid memilih kad emosi tanpa mendedahkan pengalaman peribadi.
+**Aktiviti 1 (20 minit) — Empati SP 9.4:** Guru memaparkan dua perspektif pihak terlibat dalam **seorang rakan menyebarkan cerita yang tidak benar mengenai keluarga**. Murid melaksanakan tugasan **Menceritakan perasaan dalam mempertahankan nama baik keluarga** menggunakan kad perasaan dan memilih respons yang berhemah tanpa mengaitkannya dengan keluarga sendiri.
 
-**Aktiviti 2 (20 minit) — Aplikasi dalam konteks sebenar:** Pasangan murid membina dialog ringkas "Saya berasa ... kerana ..." dan mengganti respons yang kurang berhemah dengan ayat menghormati pihak lain. Murid memberi maklum balas menggunakan rubrik dua kriteria: perasaan sesuai dan alasan jelas. Guru menghubungkan tugasan dengan SP 9.4.
+**Aktiviti 2 (20 minit) — Dialog beralasan:** Guru memberikan rangka ayat 'Saya berasa ... kerana ...'. Murid membina dua dialog pendek yang berkaitan dengan kes **Seorang rakan menyebarkan cerita yang tidak benar mengenai keluarga**, membandingkan kesan kata-kata terhadap rakan dan menambah baik satu ayat.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Dua ayat perasaan dan sekurang-kurangnya satu sebab yang relevan; semakan PBD dibuat berdasarkan respons individu. Guru mencatat respon individu dan memberi maklum balas berbukti, bukan menetapkan TP berdasarkan satu respons sahaja.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menyemak dua perasaan yang bertepatan dengan SP 9.4 bersama sekurang-kurangnya satu alasan jelas dalam respons individu. Tiada markah berdasarkan pendedahan pengalaman atau pegangan peribadi.
 
-**Penutup (5 minit):** Dua murid menjelaskan tindakan yang dipilih serta sebabnya; guru merumuskan hubungan nilai **Keberanian** dengan berani menjaga nama baik keluarga dan cadangan pengamalan selamat.
+**Penutup (5 minit):** Murid menyatakan satu keputusan atau perlakuan yang menunjukkan nilai **Keberanian** dalam konteks **seorang rakan menyebarkan cerita yang tidak benar mengenai keluarga** serta sebab pilihan itu. Guru merumuskan SP 9.4 dan tindakan selamat yang boleh dipraktikkan.
 
 **Pemulihan:** Pilihan gambar, tiga kad kata kunci dan rangka ayat untuk murid yang memerlukan sokongan.  
 **Pengayaan:** Murid yang telah menguasai tugasan membandingkan dua keputusan dan menyokong pilihan dengan justifikasi tambahan.  

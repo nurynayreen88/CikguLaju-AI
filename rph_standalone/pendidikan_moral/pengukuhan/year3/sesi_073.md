@@ -16,15 +16,15 @@ Murid dapat menunjukkan penguasaan SP **11.1; 11.2** melalui dua tindakan releva
 **Kriteria kejayaan:** Dua contoh atau tindakan, dua cara dan satu alasan yang tepat dinilai secara individu.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru memaparkan situasi: **Sekumpulan murid ingin menyiapkan projek kelas mengikut jadual** Murid menyatakan satu isu moral, pihak terlibat dan nilai Kerajinan yang perlu dipertimbangkan.
+**Set induksi (5 minit):** Guru memaparkan kad kes: **Sekumpulan murid ingin menyiapkan projek kelas mengikut jadual**. Murid meneliti siapa terlibat, menyebut satu pilihan tindakan dan mengaitkannya dengan nilai **Kerajinan**. Pengalaman peribadi tidak diperlukan.
 
-**Aktiviti 1 (20 minit) — Penerokaan nilai melalui kes:** Guru memperkenalkan situasi: Sekumpulan murid ingin menyiapkan projek kelas mengikut jadual. Murid mengelaskan tindakan sesuai/tidak sesuai pada kad dan menyenaraikan pihak yang memerlukan perhatian. Guru mengemukakan soalan berdasarkan kata tugas SP **11.1; 11.2** dan mengaitkan perbincangan dengan konsep nilai dalam DSKP.
+**Aktiviti 1 (20 minit) — Teliti situasi dan SP 11.1:** Guru menggunakan dua variasi kes berkaitan **sekumpulan murid ingin menyiapkan projek kelas mengikut jadual**. Murid menghasilkan dua jawapan konkrit bagi tugasan **Menyenaraikan contoh perlakuan rajin di sekolah** dan menerangkan hubungannya dengan watak atau keperluan dalam situasi.
 
-**Aktiviti 2 (20 minit) — Respons dan hujah:** Murid membina peta dua tindakan dan dua cara melaksanakannya dengan selamat bagi situasi sekumpulan murid ingin menyiapkan projek kelas mengikut jadual. Kumpulan bertukar hasil dan membetulkan pilihan yang tidak praktikal. Murid menilai sendiri hasil dengan panduan guru; komunikasi mesti hormat, selamat dan tidak memerlukan pendedahan agama/keluarga peribadi.
+**Aktiviti 2 (20 minit) — Buktikan SP 11.2:** Guru menyoal cara atau sebab pilihan dibuat. Murid menghasilkan kad respons bagi **Menghuraikan kepentingan bersikap rajin di sekolah** dengan dua butiran khusus serta alasan yang sesuai dengan kes **Sekumpulan murid ingin menyiapkan projek kelas mengikut jadual**. Rakan menyemak ketepatan jawapan mengikut kata tugas SP.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Dua contoh atau tindakan, dua cara dan satu alasan yang tepat dinilai secara individu. Guru mencatat evidens individu dan menerangkan satu pembetulan spesifik, bukan memberikan TP hanya kerana murid mengambil bahagian.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menyemak kad individu: dua respons untuk SP 11.1, dua butiran dan satu alasan tepat untuk SP 11.2. Murid membetulkan satu jawapan berdasarkan maklum balas; penilaian bukan berdasarkan hafalan semata-mata.
 
-**Penutup (5 minit):** Wakil murid menyatakan tindakan yang dipilih, satu sebab dan contoh aplikasi selamat. Guru membuat rumusan nilai Kerajinan dan kaitannya dengan bersikap rajin di sekolah.
+**Penutup (5 minit):** Murid menyatakan satu keputusan atau perlakuan yang menunjukkan nilai **Kerajinan** dalam konteks **sekumpulan murid ingin menyiapkan projek kelas mengikut jadual** serta sebab pilihan itu. Guru merumuskan SP 11.1; 11.2 dan tindakan selamat yang boleh dipraktikkan.
 
 **Pemulihan:** Gambar situasi, kerangka "Saya memilih ... kerana ..." dan dua pilihan tindakan disediakan.  
 **Pengayaan:** Murid menambah satu sebab atau mempertimbangkan perspektif pihak yang berbeza.  
