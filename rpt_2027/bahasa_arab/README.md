@@ -83,3 +83,7 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 - Kini **122 RPH draf** dalam staging, bukan 122 READY. Tahun5 Unit3/4 belum ada RPH individu; turutan RPT 2027, kelulusan per PdP, fon Arab dan PDF akhir perlu disemak.
 
 - [122 RPH Word/PDF satu halaman A4 lulus dalam CI](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42131146183). Ini ujian format teknikal, bukan pengesahan kualiti Arab, padanan RPT 2027 atau kebenaran penerbitan. 0 READY.
+
+## Tambahan Tahun5 Unit3 (6 Nov 2026)
+- 16 RPH calon PdP029–044 bertema kokurikulum (Unit3: **الأنشطة اللاصفية**), halaman Buku Teks 58–84, bersama CSV dan audit `audits/bahasa_arab_y5_unit3_pdp029_044_text_source_audit_20261106.json`.
+- Staging kini 138 RPH DRAF; unit4 Y5 masih tiada RPH, RPT 2027/kelulusan individu belum disahkan. Ujian A4 138 dokumen perlu dijalankan.

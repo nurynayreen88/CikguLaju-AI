@@ -5,10 +5,10 @@
   "pr_url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/336",
   "completed": {
     "unit_indexes": 20,
-    "draft_rph": 122,
+    "draft_rph": 138,
     "unit2_4_activity_banks": 15,
     "draft_crosswalk": 60,
-    "source_page_draft_reviewed": 122,
+    "source_page_draft_reviewed": 138,
     "preliminary_year6_page_candidates": 0,
     "one_page_A4_docx_pdf_ci_verified": true,
     "render_check_ci": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42131146183",
@@ -25,7 +25,9 @@
     "year4_unit4_candidate_rph": 16,
     "verified_a4_render_for_all_106": true,
     "year5_unit2_candidate_rph": 16,
-    "verified_a4_render_for_all_122": true
+    "verified_a4_render_for_all_122": true,
+    "year5_unit3_candidate_rph": 16,
+    "verified_a4_render_for_all_138": false
   },
   "release_checks": [
     {
@@ -41,17 +43,17 @@
     {
       "id": "full_pdp_coverage",
       "status": "BLOCKED",
-      "detail": "122 draft candidates: 60 initial Unit1 across Y2–6; Y4 Units2–4 another 46; Y5 Unit2 another 16. Years2/3/6 Units2–4, Year5 Units3/4 still unwritten. Candidate counts not approved annual RPT 2027 allocation."
+      "detail": "138 draft candidates: Unit1 60 Year2–6; Year4 extra 46 for Units2–4; Year5 Unit2 16, Unit3 16. Year5 Unit4 and Years2,3,6 Units2–4 not authored. All session numbers proposed, not annual RPT 2027 certified."
     },
     {
       "id": "sk_sp",
       "status": "PARTIAL",
-      "detail": "122 draft SP codes linked to textbook exercise references (16 additional Y5 Unit2 pages 30–56); 4 Y2 printed SP OCR ambiguities unresolved. No final 2027 RPT mapping or manual teacher signoff."
+      "detail": "138 draft SP codes linked to textbook exercise text. Y5 extracurricular Unit3 activity codes checked on printed pages 58–84. Four Year2 SP print OCR uncertainties remain; none individually teacher approved."
     },
     {
       "id": "textbook_page_to_pdp",
       "status": "PARTIAL",
-      "detail": "122 provisional draft RPH have source text page references, 16 new Y5 Unit2. Page images and per-lesson annual RPT sequencing remain unapproved."
+      "detail": "138 draft RPH reference printed pages from source texts. Year5 Unit3 16 new candidates; graphical per-page cross-check and annual RPT 2027 map still missing."
     },
     {
       "id": "rpt_2027_group_A_B",
@@ -61,7 +63,7 @@
     {
       "id": "word_pdf_programmatic_a4",
       "status": "PASS_TECHNICAL_ONLY",
-      "detail": "PASS TECHNICAL ONLY on https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42131146183: generated 122 DOCX and 122 PDFs; each PDF one A4 page. Arabic/RTL rendering uses Amiri. Individual visual/linguistic proofreading and pedagogy/RPT release approval still missing."
+      "detail": "Last verified workflow generated 122 DOCX and 122 one-page PDF A4. Expanded 138 render still pending; do not claim success until CI."
     },
     {
       "id": "manual_pedagogic_approval",
@@ -92,6 +94,11 @@
       "id": "year5_unit2_candidate",
       "status": "PARTIAL",
       "detail": "16 provisional Y5 Unit2 RPH (PdP013–028) based on book pp30–56, including distinct phonics, vocabulary, reading, listening, dialogue, writing and project activities. Annual RPT and visual/manual validation pending."
+    },
+    {
+      "id": "year5_unit3_candidate",
+      "status": "PARTIAL",
+      "detail": "16 source-linked Year5 extracurricular Unit3 draft RPH (PdP029–044) from pp58–84; RPT 2027 total/time and individual visual/pedagogical approval pending."
     }
   ],
   "years": [
@@ -139,15 +146,15 @@
       "year": 5,
       "units": 4,
       "unit1_draft_rph": 12,
-      "source_page_reviewed_rph": 28,
+      "source_page_reviewed_rph": 44,
       "preliminary_mapping_only": 0,
       "unwritten_units": [
-        3,
         4
       ],
-      "textbook_issue": "Year5 28 draf: Unit1 12 source-reviewed with old SP discrepancies remediated, Unit2 16 candidates from book printed pp30–56. Full RPT 2027 mapping, manual pedagogical approval and visual source verification pending.",
+      "textbook_issue": "Year5 Unit1 12 text source-reviewed drafts; Unit2 16 candidates pp30–56; Unit3 16 candidates pp58–84 titled extracurricular activities (الأنشطة اللاصفية). Unit4 not authored. RPT 2027 and pedagogical manual approval still pending.",
       "incomplete_units": [
-        2
+        2,
+        3
       ]
     },
     {

@@ -280,7 +280,12 @@
       "unit2_source_evidence_file": "audits/bahasa_arab_y5_unit2_pdp013_028_text_source_audit_20261106.json",
       "unit2_coverage_status": "DRAF_SOURCE_TEXT_OF_BOOK_PAGES_30_56__NOT_ANNUAL_RPT_CONFIRMED",
       "unit2_release_approved": false,
-      "source_reviewed_drafts_total": 28
+      "source_reviewed_drafts_total": 44,
+      "unit3_candidate_rph_count": 16,
+      "unit3_candidate_pdp_range": "029–044",
+      "unit3_evidence_file": "audits/bahasa_arab_y5_unit3_pdp029_044_text_source_audit_20261106.json",
+      "unit3_coverage_status": "DRAF_SOURCE_TEXT_OF_ORIGINAL_BOOK_PAGES_58_84; ANNUAL_RPT_NOT_APPROVED",
+      "unit3_release_approved": false
     },
     "6": {
       "dskp": {
@@ -368,14 +373,14 @@
   "external_source_registry_path": "audits/bahasa_arab_external_reference_index_20261105.json",
   "external_source_status": "WEB_REFERENCE_DISCOVERED; link cataloged in Drive only, no textbook PDFs copied from public internet",
   "bibliography_file": "audits/bahasa_arab_buku_teks_bibliography_20261105.json",
-  "total_provisional_rph_count": 122,
+  "total_provisional_rph_count": 138,
   "latest_technical_a4_validation": {
     "source_commit": "41a0265769c7035cfe613e380c4dc6d2baeac980",
     "github_actions_run": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42131146183",
     "word_document_count": 122,
     "pdf_document_count": 122,
     "pdf_pages_each": 1,
-    "status": "PASSED_OFFLINE_TECHNICAL_ONLY",
+    "status": "PASSED_OFFLINE_TECHNICAL_ONLY_FOR_PREVIOUS_122",
     "release_approval": false
   }
 }
