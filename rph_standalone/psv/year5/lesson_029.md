@@ -9,7 +9,7 @@
 **Tempoh:** 60 minit
 
 ## Objektif dan kriteria kejayaan
-Murid dapat mengemas karya Bunga Kekwa Mekar dengan mozek jalinan pada bingkai dan memberi apresiasi. Evidens PBD: Karya catan bunga siap, bingkai bercorak mozek kemas, dua istilah seni dan satu pembaikan.
+Murid dapat mengemas karya Bunga Kekwa Mekar dengan mozek jalinan pada bingkai dan memberi apresiasi. Kriteria kejayaan: Karya catan bunga siap, bingkai bercorak mozek kemas, dua istilah seni dan satu pembaikan.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan tema Bunga Kekwa Mekar; murid menjelaskan satu pemerhatian visual.
