@@ -33,7 +33,7 @@ for y in (4,5,6):
         assert r["set_induksi"]["activity"]==layout["phases"][0]["activity"]
         assert r["penutup"]["activity"]==layout["phases"][2]["activity"]
         assert layout["footer"][1]["value"]==r["reflection"]
-        assert re.match(r"\\d{2}:\\d{2}-\\d{2}:\\d{2}",fields["MASA"])
+        assert re.match(r"\d{2}:\d{2}-\d{2}:\d{2}",fields["MASA"])
         try:
             approved_native_payload(y,n,TEACHER,"word")
         except SejarahNotReady:
