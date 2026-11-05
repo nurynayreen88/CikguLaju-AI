@@ -1,6 +1,6 @@
 # RPH Pendidikan Moral Tahun 6 — Sesi 024 (Pengukuhan)
 
-**STATUS DALAMAN:** SUMBER_DSKP_SEPADAN; HALAMAN_AKTIVITI_BUKU_BELUM_VERIFIED
+**STATUS DALAMAN:** SUMBER_DSKP_SEPADAN; SUMBER_BUKU_KSSR_SEMAKAN2017_DIRUJUK; BELUM_FINAL_READY
 **Subjek:** Pendidikan Moral  
 **Tahun:** 6  
 **Sesi:** 024 daripada 096  
@@ -19,9 +19,9 @@ Murid menunjukkan penguasaan SP **4.1; 4.2** dengan menghasilkan dua contoh tind
 ## Langkah PdP
 **Set induksi (5 minit):** Guru memperkenalkan situasi **Pameran sekolah mengetengahkan keunikan budaya dan warisan negara** Murid mengenal pasti cabaran nilai Berterima kasih dan menyebut satu tindakan yang boleh diambil.
 
-**Aktiviti 1 (20 minit) — Penerokaan tindakan berasaskan nilai:** Guru membacakan kes: Pameran sekolah mengetengahkan keunikan budaya dan warisan negara. Murid mengenal pasti pihak terlibat dan mencadangkan dua perbuatan bertepatan dengan nilai Berterima kasih. Guru menjelaskan kata tugas SP (4.1; 4.2) dan memeriksa kefahaman murid melalui soal jawab individu.
+**Aktiviti 1 (20 minit) — Tinjauan galeri keunikan:** Guru merujuk buku Semakan 2017 Unit 4 m/s 32–35: boria, Stadthuys, wau dan budaya Baba-Nyonya. Murid dalam kumpulan mencatat tiga keunikan dan memadankannya dengan kategori seni, warisan dan budaya (SP 4.1).
 
-**Aktiviti 2 (20 minit) — Menyelesaikan masalah:** Murid menyusun kad "keunikan negara - tindakan menghargai - alasan" dan membina dua langkah bantuan/tindakan praktikal bagi kes pameran sekolah mengetengahkan keunikan budaya dan warisan negara. Mereka membandingkan cadangan dan memilih yang paling sesuai. Guru memandu murid menggunakan sebab yang sahih, menjaga keselamatan serta mengelakkan aktiviti yang memerlukan murid mendedahkan butiran peribadi.
+**Aktiviti 2 (20 minit) — Kad tindakan menghargai:** Guru menyediakan empat kad berpandukan buku; murid menulis dua cara melindungi atau memperkenalkan warisan tersebut, membentangkan sebab dan memperbaik satu jawapan selepas semakan (SP 4.2). Murid menilai semula contoh daripada buku teks dan membetulkan satu pilihan tindakan (SP 4.2).
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Dua contoh tindakan, dua cara pelaksanaan dan satu alasan dinilai melalui kad individu. Guru memeriksa hasil murid seorang demi seorang, mencatat kelemahan tertentu dan tidak menetapkan TP berdasarkan lakonan semata-mata.
 
@@ -31,4 +31,6 @@ Murid menunjukkan penguasaan SP **4.1; 4.2** dengan menghasilkan dua contoh tind
 **Pengayaan:** Tambah satu pilihan alternatif dan dua justifikasi yang melihat kesan terhadap pihak lain.  
 **Refleksi guru:** Rekod evidens individu, keperluan bimbingan dan susulan PdP.
 
-**Batasan sumber:** SP ini dipetik daripada crosswalk DSKP SK Tahun 6, dan **Buku Teks Tahun 6 Unit 4 bertajuk Jasa Tokoh Negara Dikenang, tidak sepadan dengan SK 4.0 Hargai Keunikan Negara**; aktiviti ini berdasarkan DSKP dan tidak mendakwa rujukan halaman buku teks. Langkah PdP diadaptasi oleh CikguLaju. Label status dalaman tidak untuk dipaparkan pada RPH guru.
+**Bukti aktiviti Semakan 2017 (2026-11-05):** Unit 4, m/s 32–35 (halaman flipbook 42–45): Pameran boria, Stadthuys, wau dan budaya Baba dan Nyonya. Semakan teks edisi semakan sahaja; bukan bukti pelaksanaan di sekolah.
+
+**Batasan sumber:** Buku Teks Tahun 6 Unit 4 PDF lama 'Jasa Tokoh Negara Dikenang' bukan edisi Semakan 2017; audit asal tidak mendakwa rujukan halaman buku teks terkini. Aktiviti baharu ialah olahan daripada [Buku Teks Moral Tahun 6 KSSR Semakan 2017](https://fliphtml5.com/sbinx/haph/), Unit 4, m/s 32–35 (halaman flipbook 42–45), dan DSKP SP berkaitan. Pengesahan aktiviti di kelas, PBD sebenar serta Word A4 berasingan.

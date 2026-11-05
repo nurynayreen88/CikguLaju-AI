@@ -1,0 +1,384 @@
+{
+  "title": "Pendidikan Moral Tahun 6 KSSR Semakan 2017 edition safety and source correction",
+  "date": "2026-11-05",
+  "status": "DRAF_REVISED_EDITION_SOURCE_REVIEW_NOT_FINAL_TELEGRAM",
+  "copyright_original_publisher": "Dewan Bahasa dan Pustaka; newer curriculum textbook edition referenced via a public third-party flipbook, not an official file hosted in Drive",
+  "revised_edition": {
+    "curriculum": "KSSR Semakan 2017",
+    "publication_year": 2021,
+    "source_url": "https://fliphtml5.com/sbinx/haph/",
+    "source_format": "PUBLIC_THIRD_PARTY_WEB_FLIPBOOK_TEXT",
+    "book_edition_scope": "Tahun 6 only",
+    "page_number_note": "Flipbook 1-based page numbers = printed page + 10 in the reviewed digital edition; not the legacy Drive PDF offset",
+    "units": [
+      {
+        "unit": 1,
+        "printed_start": 2,
+        "title": "Kepercayaan kepada Tuhan Menjamin Kesejahteraan Negara"
+      },
+      {
+        "unit": 2,
+        "printed_start": 12,
+        "title": "Bantuan dan Sokongan Moral kepada Negara"
+      },
+      {
+        "unit": 3,
+        "printed_start": 22,
+        "title": "Tanggungjawab sebagai Warganegara"
+      },
+      {
+        "unit": 4,
+        "printed_start": 32,
+        "title": "Hargai Keunikan Negara"
+      },
+      {
+        "unit": 5,
+        "printed_start": 42,
+        "title": "Amalan Hemah Tinggi Meningkatkan Imej Negara"
+      },
+      {
+        "unit": 6,
+        "printed_start": 52,
+        "title": "Hormati Identiti Negara"
+      },
+      {
+        "unit": 7,
+        "printed_start": 62,
+        "title": "Cinta akan Negara"
+      },
+      {
+        "unit": 8,
+        "printed_start": 72,
+        "title": "Amalan Adil Demi Kesejahteraan Negara"
+      },
+      {
+        "unit": 9,
+        "printed_start": 82,
+        "title": "Berani Mempertahankan Maruah Negara"
+      },
+      {
+        "unit": 10,
+        "printed_start": 92,
+        "title": "Kejujuran Demi Kesejahteraan Negara"
+      },
+      {
+        "unit": 11,
+        "printed_start": 102,
+        "title": "Rajin Demi Kemajuan Negara"
+      },
+      {
+        "unit": 12,
+        "printed_start": 112,
+        "title": "Kerjasama Demi Keharmonian Negara"
+      },
+      {
+        "unit": 13,
+        "printed_start": 122,
+        "title": "Amalan Kesederhanaan Demi Kesejahteraan Negara"
+      },
+      {
+        "unit": 14,
+        "printed_start": 132,
+        "title": "Amalan Toleransi Menjamin Perpaduan Negara"
+      }
+    ],
+    "contents_source_note": "Revised 2021 book contents pages i-v; headings and printed-page starts cross-referenced with public FlipHTML5 text listing (not an original Drive PDF)"
+  },
+  "legacy_edition": {
+    "source_drive_file_id": "12YjwUWy6DdVsqP5_azEp987jfvZ6PROo",
+    "pdf_sha256": "28c40b53356151ebad8a619df9da8b272857cf3ba54d27fc3fc053474c48b396",
+    "pdf_pages": 148,
+    "pdf_printed_offset": 9,
+    "classification": "KSSR_2015_ORIGINAL_OLD_EDITION_DO_NOT_USE_FOR_REVISED_2017_RPH",
+    "historical_y6_core_source_ledger_lessons": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42
+    ]
+  },
+  "reviewed_revised": [
+    {
+      "module": "TERAS",
+      "lesson_or_session": 10,
+      "unit": 4,
+      "printed_pages": [
+        32,
+        36
+      ],
+      "flipbook_pages": [
+        42,
+        46
+      ],
+      "sp_codes": [
+        "4.1",
+        "4.2"
+      ],
+      "verification_scope": "ACTIVITY_TEXT_AND_DSKP_SP_MAPPED_NOT_COMPLETE_BOOK_VISUAL_OR_TEACHER_DELIVERY"
+    },
+    {
+      "module": "TERAS",
+      "lesson_or_session": 11,
+      "unit": 4,
+      "printed_pages": [
+        36,
+        38
+      ],
+      "flipbook_pages": [
+        46,
+        48
+      ],
+      "sp_codes": [
+        "4.3",
+        "4.4"
+      ],
+      "verification_scope": "ACTIVITY_TEXT_AND_DSKP_SP_MAPPED_NOT_COMPLETE_BOOK_VISUAL_OR_TEACHER_DELIVERY"
+    },
+    {
+      "module": "TERAS",
+      "lesson_or_session": 12,
+      "unit": 4,
+      "printed_pages": [
+        38,
+        40
+      ],
+      "flipbook_pages": [
+        48,
+        50
+      ],
+      "sp_codes": [
+        "4.5"
+      ],
+      "verification_scope": "ACTIVITY_TEXT_AND_DSKP_SP_MAPPED_NOT_COMPLETE_BOOK_VISUAL_OR_TEACHER_DELIVERY"
+    },
+    {
+      "module": "TERAS",
+      "lesson_or_session": 19,
+      "unit": 7,
+      "printed_pages": [
+        62,
+        64
+      ],
+      "flipbook_pages": [
+        72,
+        74
+      ],
+      "sp_codes": [
+        "7.1",
+        "7.2"
+      ],
+      "verification_scope": "ACTIVITY_TEXT_AND_DSKP_SP_MAPPED_NOT_COMPLETE_BOOK_VISUAL_OR_TEACHER_DELIVERY"
+    },
+    {
+      "module": "TERAS",
+      "lesson_or_session": 20,
+      "unit": 7,
+      "printed_pages": [
+        64,
+        67
+      ],
+      "flipbook_pages": [
+        74,
+        77
+      ],
+      "sp_codes": [
+        "7.3",
+        "7.4"
+      ],
+      "verification_scope": "ACTIVITY_TEXT_AND_DSKP_SP_MAPPED_NOT_COMPLETE_BOOK_VISUAL_OR_TEACHER_DELIVERY"
+    },
+    {
+      "module": "TERAS",
+      "lesson_or_session": 21,
+      "unit": 7,
+      "printed_pages": [
+        68,
+        70
+      ],
+      "flipbook_pages": [
+        78,
+        80
+      ],
+      "sp_codes": [
+        "7.5"
+      ],
+      "verification_scope": "ACTIVITY_TEXT_AND_DSKP_SP_MAPPED_NOT_COMPLETE_BOOK_VISUAL_OR_TEACHER_DELIVERY"
+    },
+    {
+      "module": "PENGUKUHAN",
+      "lesson_or_session": 24,
+      "unit": 4,
+      "printed_pages": [
+        32,
+        35
+      ],
+      "flipbook_pages": [
+        42,
+        45
+      ],
+      "sp_codes": [
+        "4.1",
+        "4.2"
+      ],
+      "verification_scope": "ACTIVITY_TEXT_AND_DSKP_SP_MAPPED_NOT_COMPLETE_BOOK_VISUAL_OR_TEACHER_DELIVERY"
+    },
+    {
+      "module": "PENGUKUHAN",
+      "lesson_or_session": 25,
+      "unit": 4,
+      "printed_pages": [
+        36,
+        38
+      ],
+      "flipbook_pages": [
+        46,
+        48
+      ],
+      "sp_codes": [
+        "4.3"
+      ],
+      "verification_scope": "ACTIVITY_TEXT_AND_DSKP_SP_MAPPED_NOT_COMPLETE_BOOK_VISUAL_OR_TEACHER_DELIVERY"
+    },
+    {
+      "module": "PENGUKUHAN",
+      "lesson_or_session": 26,
+      "unit": 4,
+      "printed_pages": [
+        34,
+        38
+      ],
+      "flipbook_pages": [
+        44,
+        48
+      ],
+      "sp_codes": [
+        "4.4"
+      ],
+      "verification_scope": "ACTIVITY_TEXT_AND_DSKP_SP_MAPPED_NOT_COMPLETE_BOOK_VISUAL_OR_TEACHER_DELIVERY"
+    },
+    {
+      "module": "PENGUKUHAN",
+      "lesson_or_session": 27,
+      "unit": 4,
+      "printed_pages": [
+        38,
+        40
+      ],
+      "flipbook_pages": [
+        48,
+        50
+      ],
+      "sp_codes": [
+        "4.5"
+      ],
+      "verification_scope": "ACTIVITY_TEXT_AND_DSKP_SP_MAPPED_NOT_COMPLETE_BOOK_VISUAL_OR_TEACHER_DELIVERY"
+    },
+    {
+      "module": "PENGUKUHAN",
+      "lesson_or_session": 45,
+      "unit": 7,
+      "printed_pages": [
+        62,
+        64
+      ],
+      "flipbook_pages": [
+        72,
+        74
+      ],
+      "sp_codes": [
+        "7.1",
+        "7.2"
+      ],
+      "verification_scope": "ACTIVITY_TEXT_AND_DSKP_SP_MAPPED_NOT_COMPLETE_BOOK_VISUAL_OR_TEACHER_DELIVERY"
+    },
+    {
+      "module": "PENGUKUHAN",
+      "lesson_or_session": 46,
+      "unit": 7,
+      "printed_pages": [
+        64,
+        67
+      ],
+      "flipbook_pages": [
+        74,
+        77
+      ],
+      "sp_codes": [
+        "7.3"
+      ],
+      "verification_scope": "ACTIVITY_TEXT_AND_DSKP_SP_MAPPED_NOT_COMPLETE_BOOK_VISUAL_OR_TEACHER_DELIVERY"
+    },
+    {
+      "module": "PENGUKUHAN",
+      "lesson_or_session": 47,
+      "unit": 7,
+      "printed_pages": [
+        64,
+        70
+      ],
+      "flipbook_pages": [
+        74,
+        80
+      ],
+      "sp_codes": [
+        "7.4"
+      ],
+      "verification_scope": "ACTIVITY_TEXT_AND_DSKP_SP_MAPPED_NOT_COMPLETE_BOOK_VISUAL_OR_TEACHER_DELIVERY"
+    },
+    {
+      "module": "PENGUKUHAN",
+      "lesson_or_session": 48,
+      "unit": 7,
+      "printed_pages": [
+        68,
+        70
+      ],
+      "flipbook_pages": [
+        78,
+        80
+      ],
+      "sp_codes": [
+        "7.5"
+      ],
+      "verification_scope": "ACTIVITY_TEXT_AND_DSKP_SP_MAPPED_NOT_COMPLETE_BOOK_VISUAL_OR_TEACHER_DELIVERY"
+    }
+  ],
+  "remaining": {
+    "y6_core_old_edition_historical_review": 36,
+    "y6_core_not_in_prior_visual_ledger": [],
+    "y6_supplement_not_individually_revised": 46,
+    "years2_to5_core_correct_edition_visual_ledger": 168
+  }
+}

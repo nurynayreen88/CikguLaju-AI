@@ -122,16 +122,42 @@ def main() -> None:
                 book_activity = ("VISUAL_REKOD_SP_20261105" if key in new_visual else "VISUAL_REKOD_SP_20261104") if key in visual else "BELUM_DISAHKAN_HALAMAN_AKTIVITI"
                 counts["core"] += 1
                 if key in visual:
-                    counts["core_book_visual"] += 1
+                    counts["core_book_visual_historical"] += 1
+                if year < 6:
+                    if key in visual:
+                        counts["core_correct_edition_y2_y5"] += 1
+                elif lesson in (10, 11, 12, 19, 20, 21):
+                    assert "Pengesahan sumber Semakan 2017" in source
+                    book_activity = "SEMAKAN2017_TEKSTUAL_TERAS_BUKAN_PDF_LEGASI"
+                    counts["core_y6_revised_source_text"] += 1
+                elif key in visual:
+                    book_activity = "REKOD_EDISI_LAMA_TAHUN6_BUKAN_PENGESAHAN_SEMAKAN2017"
+                    counts["core_y6_old_edition_recheck"] += 1
+                else:
+                    raise AssertionError((year, lesson, "unsighted Year6 core RPH in historical ledger"))
+                    book_activity = "TAHUN6_EDISI_SEMAKAN2017_BELUM_DISAHKAN"
+                    counts["core_y6_not_previously_reviewed"] += 1
             else:
                 assert f"Sesi {n:03d}" in source
                 book_activity = "BELUM_DISAHKAN_HALAMAN_AKTIVITI"
                 counts["supplement"] += 1
+                if year < 6:
+                    counts["supp_y2_y5_not_individually_book_verified"] += 1
+                elif n in (24, 25, 26, 27, 45, 46, 47, 48):
+                    assert "Bukti aktiviti Semakan 2017" in source
+                    book_activity = "SEMAKAN2017_TEKSTUAL_PENGUKUHAN_BUKAN_PDF_LEGASI"
+                    counts["supp_y6_revised_source_text"] += 1
+                else:
+                    book_activity = "EDISI_SEMAKAN2017_Y6_AKTIVITI_BELUM_DISAHKAN"
+                    counts["supp_y6_old_edition_recheck"] += 1
             held = year == 6 and unit_id in (4, 7)
             stage = r["Tahap_Semakan_Buku"]
             if held:
                 assert stage == f"HOLD_SOURCE_MISMATCH_UNIT{unit_id}_Y6"
-                book_activity = "HOLD_PERCANGGAHAN_DSKP_BUKU"
+                if "SEMAKAN2017_TEKSTUAL_" in book_activity:
+                    book_activity += "_RPT_HOLD_SEHINGGA_SEMUA_SUMBER_DIKEMASKINI"
+                else:
+                    book_activity = "HOLD_PERCANGGAHAN_DSKP_BUKU"
                 counts["source_hold"] += 1
             else:
                 assert stage == "VERIFIED_TOC_START_ONLY"
@@ -151,7 +177,17 @@ def main() -> None:
                 "Telegram_Akaun_Sebenar": "BELUM_UJI_HANTAR_KE_AKAUN_GURU",
             })
     assert len(output) == len(matched) == 480, (len(output), len(matched))
-    assert counts == {"core": 210, "core_book_visual": 204, "supplement": 270, "source_hold": 14}, counts
+    assert counts == {
+        "core": 210, "core_book_visual_historical": 204,
+        "core_correct_edition_y2_y5": 168,
+        "core_y6_revised_source_text": 6,
+        "core_y6_old_edition_recheck": 36,
+        "supplement": 270,
+        "supp_y2_y5_not_individually_book_verified": 216,
+        "supp_y6_revised_source_text": 8,
+        "supp_y6_old_edition_recheck": 46,
+        "source_hold": 14,
+    }, counts
     dest.parent.mkdir(parents=True, exist_ok=True)
     with dest.open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=FIELDS)
@@ -160,7 +196,10 @@ def main() -> None:
     assert dest.stat().st_size > 40000, dest.stat().st_size
     print(f"PASS INDIVIDUAL EVIDENCE LEDGER: 480/480 records, {dict(counts)}")
     print(f"Saved: {dest}")
-    print("NOT FINAL READY: source-book activity unverified in 6 core RPH + 270 supplementary; 14 sessions additionally on Y6 unit source hold.")
+    print("NOT FINAL READY: 204 old visual checks included 36 Year6 OBSOLETE-EDITION book references.")
+    print("Correct-edition core: 168 Y2-Y5 visual + 6 Y6 revised source-text = 174/210; 36 Year6 core still need revised-source audit.")
+    print("270 supplementary: 8 Year6 revised-book references mapped, 262 still lack individual current-book verification.")
+    print("14 Year6 unit 4/7 sessions remain RPT historical HOLD pending complete edition migration and true teacher delivery.")
     print("Word A4 all-session visual and actual Telegram account delivery are separate release gates.")
 
 

@@ -1,6 +1,6 @@
 # RPH Pendidikan Moral Tahun 6 — Sesi 047 (Pengukuhan)
 
-**STATUS DALAMAN:** SUMBER_DSKP_SEPADAN; HALAMAN_AKTIVITI_BUKU_BELUM_VERIFIED
+**STATUS DALAMAN:** SUMBER_DSKP_SEPADAN; SUMBER_BUKU_KSSR_SEMAKAN2017_DIRUJUK; BELUM_FINAL_READY
 **Subjek:** Pendidikan Moral  
 **Tahun:** 6  
 **Sesi:** 047 daripada 096  
@@ -19,9 +19,9 @@ Murid menunjukkan penguasaan SP **7.4** dengan menghasilkan dua perasaan yang wa
 ## Langkah PdP
 **Set induksi (5 minit):** Guru memperkenalkan situasi **Murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan** Murid mengenal pasti cabaran nilai Kasih sayang dan menyebut satu tindakan yang boleh diambil.
 
-**Aktiviti 1 (20 minit) — Empati, perasaan dan komunikasi:** Guru memaparkan dua situasi sambutan hari kebangsaan (menghormati lambang negara dan memperlekehkan lambang negara); murid menyatakan perasaan masing-masing beserta sebab secara berhemah. Murid membina bank kata emosi berhemah. Guru menjelaskan kata tugas SP (7.4) dan memeriksa kefahaman murid melalui soal jawab individu.
+**Aktiviti 1 (20 minit) — Perasaan warga prihatin:** Guru meneliti sajak m/s 64–65 dan aktiviti menghasilkan e-poster m/s 68. Murid menamakan dua perasaan apabila dapat menyumbang kepada negara serta menjelaskan konteksnya (SP 7.4).
 
-**Aktiviti 2 (20 minit) — Menyelesaikan masalah:** Murid melengkapkan dialog dua watak: "Saya berasa ... kerana ...". Mereka berlatih mendengar pandangan yang berbeza, mengubah respons kasar dan memberi sebab yang munasabah. Guru memandu murid menggunakan sebab yang sahih, menjaga keselamatan serta mengelakkan aktiviti yang memerlukan murid mendedahkan butiran peribadi.
+**Aktiviti 2 (20 minit) — Respons bersebab:** Murid melengkapkan latihan refleksi perasaan dalam 'Mari Uji Diri' m/s 70 dan berbincang cara menghormati pandangan rakan. Guru merekod satu ungkapan perasaan dengan alasan individu (SP 7.4).
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Dua ekspresi emosi dan satu sebab yang jelas serta hormat dinilai dalam respons bertulis individu. Guru memeriksa hasil murid seorang demi seorang, mencatat kelemahan tertentu dan tidak menetapkan TP berdasarkan lakonan semata-mata.
 
@@ -31,4 +31,6 @@ Murid menunjukkan penguasaan SP **7.4** dengan menghasilkan dua perasaan yang wa
 **Pengayaan:** Tambah satu pilihan alternatif dan dua justifikasi yang melihat kesan terhadap pihak lain.  
 **Refleksi guru:** Rekod evidens individu, keperluan bimbingan dan susulan PdP.
 
-**Batasan sumber:** SP ini dipetik daripada crosswalk DSKP SK Tahun 6, dan **Buku Teks Tahun 6 Unit 7 memfokus kasih sayang terhadap alam sekitar, bukan SK 7.0 Cinta Akan Negara**; tugasan ini berpandukan DSKP dan tidak mendakwa rujukan halaman buku teks. Langkah PdP diadaptasi oleh CikguLaju. Label status dalaman tidak untuk dipaparkan pada RPH guru.
+**Bukti aktiviti Semakan 2017 (2026-11-05):** Unit 7, m/s 64–70 (halaman flipbook 74–80): Sajak cinta negara, e-poster dan latihan perasaan pada Mari Uji Diri. Semakan teks edisi semakan sahaja; bukan bukti pelaksanaan di sekolah.
+
+**Batasan sumber:** Buku Teks Tahun 6 Unit 7 PDF lama 'Sayangilah Alam, Hargai Kehidupan' bukan edisi Semakan 2017; audit asal tidak mendakwa rujukan halaman buku teks terkini. Aktiviti baharu ialah olahan daripada [Buku Teks Moral Tahun 6 KSSR Semakan 2017](https://fliphtml5.com/sbinx/haph/), Unit 7, m/s 64–70 (halaman flipbook 74–80), dan DSKP SP berkaitan. Pengesahan aktiviti di kelas, PBD sebenar serta Word A4 berasingan.

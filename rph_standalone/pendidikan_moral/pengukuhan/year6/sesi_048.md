@@ -1,6 +1,6 @@
 # RPH Pendidikan Moral Tahun 6 — Sesi 048 (Pengukuhan)
 
-**STATUS DALAMAN:** SUMBER_DSKP_SEPADAN; HALAMAN_AKTIVITI_BUKU_BELUM_VERIFIED
+**STATUS DALAMAN:** SUMBER_DSKP_SEPADAN; SUMBER_BUKU_KSSR_SEMAKAN2017_DIRUJUK; BELUM_FINAL_READY
 **Subjek:** Pendidikan Moral  
 **Tahun:** 6  
 **Sesi:** 048 daripada 096  
@@ -19,9 +19,9 @@ Murid menunjukkan penguasaan SP **7.5** dengan menghasilkan dua perlakuan yang d
 ## Langkah PdP
 **Set induksi (5 minit):** Guru memperkenalkan situasi **Murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan** Murid mengenal pasti cabaran nilai Kasih sayang dan menyebut satu tindakan yang boleh diambil.
 
-**Aktiviti 1 (20 minit) — Tindakan moral berasaskan simulasi:** Guru membimbing aktiviti menghasilkan Jalur Gemilang daripada bahan sesuai seperti cadangan DSKP dan merekod dua tingkah laku menghormati lambang negara serta kerjasama berkumpulan. Guru menjelaskan kata tugas SP (7.5) dan memeriksa kefahaman murid melalui soal jawab individu.
+**Aktiviti 1 (20 minit) — Amalan cinta negara melalui kempen:** Guru merujuk projek e-poster Hari Kebangsaan m/s 68 dan Kempen Amalan Hijau m/s 69. Murid memilih satu kempen, merancang dua perlakuan yang menunjukkan sikap cinta negara dan menyediakan bahan poster (SP 7.5).
 
-**Aktiviti 2 (20 minit) — Menyelesaikan masalah:** Murid memperagakan tindakan dalam kumpulan kecil, menerima maklum balas pemerhati dan mengulangi satu langkah yang kurang tepat. Murid menulis refleksi pilihan tindakan yang selamat. Guru memandu murid menggunakan sebab yang sahih, menjaga keselamatan serta mengelakkan aktiviti yang memerlukan murid mendedahkan butiran peribadi.
+**Aktiviti 2 (20 minit) — Laksana, perhati dan nilai:** Murid memperagakan dua tindakan cinta negara dalam simulasi kempen; guru mencatat tingkah laku yang dilihat, memandu pembetulan dan menggunakan latihan m/s 70 sebagai refleksi. Produk poster bukan bukti amalan konsisten (SP 7.5). Guru menyemak dua bukti amalan dalam simulasi berasingan daripada hasil poster, dan membimbing satu pembetulan (SP 7.5).
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Dua perlakuan yang benar-benar diperagakan, satu sebab dan refleksi; simulasi tidak membuktikan amalan harian. Guru memeriksa hasil murid seorang demi seorang, mencatat kelemahan tertentu dan tidak menetapkan TP berdasarkan lakonan semata-mata.
 
@@ -31,4 +31,6 @@ Murid menunjukkan penguasaan SP **7.5** dengan menghasilkan dua perlakuan yang d
 **Pengayaan:** Tambah satu pilihan alternatif dan dua justifikasi yang melihat kesan terhadap pihak lain.  
 **Refleksi guru:** Rekod evidens individu, keperluan bimbingan dan susulan PdP.
 
-**Batasan sumber:** SP ini dipetik daripada crosswalk DSKP SK Tahun 6, dan **Buku Teks Tahun 6 Unit 7 memfokus kasih sayang terhadap alam sekitar, bukan SK 7.0 Cinta Akan Negara**; tugasan ini berpandukan DSKP dan tidak mendakwa rujukan halaman buku teks. Langkah PdP diadaptasi oleh CikguLaju. Label status dalaman tidak untuk dipaparkan pada RPH guru.
+**Bukti aktiviti Semakan 2017 (2026-11-05):** Unit 7, m/s 68–70 (halaman flipbook 78–80): E-poster Hari Kebangsaan dan kempen hijau demi negara tercinta. Semakan teks edisi semakan sahaja; bukan bukti pelaksanaan di sekolah.
+
+**Batasan sumber:** Buku Teks Tahun 6 Unit 7 PDF lama 'Sayangilah Alam, Hargai Kehidupan' bukan edisi Semakan 2017; audit asal tidak mendakwa rujukan halaman buku teks terkini. Aktiviti baharu ialah olahan daripada [Buku Teks Moral Tahun 6 KSSR Semakan 2017](https://fliphtml5.com/sbinx/haph/), Unit 7, m/s 68–70 (halaman flipbook 78–80), dan DSKP SP berkaitan. Pengesahan aktiviti di kelas, PBD sebenar serta Word A4 berasingan.
