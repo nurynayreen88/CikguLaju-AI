@@ -87,6 +87,9 @@ for y, (num_sk, num_sp) in EXPECTED.items():
         assert r["status"].startswith("DRAF")
         assert x["num"] == i == int(rpt[i - 1]["PdP"])
         assert x["id"] == rpt[i - 1]["ID"]
+        expected_evidence = (r.get("context_specific_activity") or {}).get("pbd_evidence") or r["pengukuhan_pbd"]["activity"]
+        assert rpt[i - 1]["Evidens PBD RPH"] == expected_evidence
+        assert rpt[i - 1]["Tahap Pemurnian"] == ("KHUSUS_SP_DRAF" if r.get("context_specific_activity") else "HALAMAN_RUJUKAN_DRAF")
         assert r["year"] == y and r["academic_year"] == 2027
         assert not r["textbook_page_verified"] and not r["teacher_approval"]
         assert set(r["sp_codes"]).issubset(set(specs))
@@ -102,6 +105,8 @@ for y, (num_sk, num_sp) in EXPECTED.items():
     assert (ROOT/f"rpt_2027/sejarah/RPT_SEJARAH_TAHUN_{y}_2027_A_B_DRAF.html").is_file()
     html = (ROOT/f"rpt_2027/sejarah/RPT_SEJARAH_TAHUN_{y}_2027_A_B_DRAF.html").read_text()
     assert "<th>Tajuk / SK / Buku Teks</th>" in html
+    assert "<th>Fokus SP / Evidens PBD</th>" in html
+    assert html.count("<strong>Evidens PBD:</strong>") == 72
     for u in units.values():
         assert f"Unit {u['number']}: {u['name']}" in html
 
