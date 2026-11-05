@@ -172,8 +172,18 @@ def check() -> None:
         assert "**Audit sumber BT Tahun 3 (6 Nov 2026):**" in src
         assert f"**{item['page_textbook']}**" in src
         assert "BELUM READY" in src
+    readiness = json.loads((ROOT / "audits" / "bahasa_arab_release_readiness_20261106.json").read_text(encoding="utf-8"))
+    assert readiness["release_state"] == "DRAF_STAGING_RELEASE_BLOCKED"
+    assert readiness["completed"]["source_page_draft_reviewed"] == 36
+    assert readiness["completed"]["draft_rph"] == 60
+    assert sum(y["source_page_reviewed_rph"] for y in readiness["years"]) == 36
+    assert all(y["unwritten_units"] == [2,3,4] for y in readiness["years"])
+    assert readiness["total_ready_rph"] == 0 and readiness["release_authorized"] is False
+    assert all(readiness[k] is False for k in ("production_db_touched","telegram_live_touched","web_live_touched"))
+    assert any(x["id"] == "full_pdp_coverage" and x["status"] == "BLOCKED" for x in readiness["release_checks"])
+    assert any(x["id"] == "word_pdf_programmatic_a4" and x["status"] == "PASS_TECHNICAL_ONLY" for x in readiness["release_checks"])
     print("PASSED: 20 unit indexes, 60 crosswalks, 60 RPH draft files, 15 banks.")
-    print("RELEASE BLOCKED: 0 READY; page-level textbook, A4 RTL and manual review missing.")
+    print("RELEASE BLOCKED: 0 READY; full-year curriculum/book-page approval, RPT 2027 and runtime parity missing; A4 preview CI passed.")
 
 if __name__ == "__main__":
     check()

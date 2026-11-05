@@ -43,3 +43,9 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 ## Audit Tahun 3 Unit 1 (6 Nov 2026)
 - 12 PdP awal menerima bukti halaman buku bercetak dan kod SP daripada teks buku DBP/KPM 2018; fail `audits/bahasa_arab_y3_pdp001_012_source_audit_20261106.json`.
 - Bersama 12 PdP Tahun 4 dan 12 PdP Tahun 5 yang telah disemak sumber, terdapat 36 PdP awal yang mempunyai audit rujukan halaman; **0 RPH FINAL READY**. PDF/Word 60 draf lulus satu A4 dalam workflow staging, tetapi bukan bukti kualiti kandungan.
+
+## Kelayakan Penerbitan (6 November 2026)
+- Ringkasan rasmi keadaan semasa: `audits/bahasa_arab_release_readiness_20261106.json`.
+- **36/60** RPH draf awal Tahun 3–5 menerima semakan rujukan halaman teks sumber; Tahun 2 **0**; Tahun 6 **12 calon** (belum diluluskan individu).
+- Ujian [60 DOCX + 60 PDF satu A4](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42115776091) ialah **lulus teknikal sahaja**, bukan pengesahan kandungan atau kelulusan tahun penuh.
+- Baki **15 unit** (Unit 2–4 bagi Tahun 2–6) belum mempunyai RPH individu; bank aktiviti bukan RPH. Oleh itu, **0 FINAL READY** dan PR kekal draf tanpa deploy ke Telegram/Web.
