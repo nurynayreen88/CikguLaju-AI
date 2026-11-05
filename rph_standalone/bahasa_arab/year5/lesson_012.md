@@ -1,24 +1,24 @@
 # RPH Bahasa Arab Tahun 5 — PdP 012 (DRAF / BELUM READY)
 
 **Tahun:** 5 | **Subjek:** Bahasa Arab KSSR Semakan 2017 | **Unit:** في المطبخ
-**Fokus PdP:** Dengar ayat berkait tentang dapur
+**Fokus PdP:** Dengar dan ulang dialog bersambung tentang aktiviti memasak
 **SK/SP cadangan:** 1.4 / 1.4.1 — berdasarkan DSKP dan urutan kemahiran RPT 2026, masih menunggu semakan individu terhadap buku teks.
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
-**Kosa kata / ayat:** هذا صحن. شكل الصحن دائري. أنا أرتب الصحن على الرف.
-**Objektif pembelajaran:** Murid meniru tiga ayat yang berkaitan menjadi satu penerangan ringkas.
+**Kosa kata / ayat:** ماذا تفعلين يا أمي؟ أنا أطبخ الطعام. أين أضع المقلاة؟ على الموقد. (dialog pengajaran diolah daripada situasi BT h.20)
+**Objektif pembelajaran:** Murid meniru sekurang-kurangnya tiga daripada empat pertuturan dialog berkait dengan makhraj dan susunan yang tepat.
 **Kriteria kejayaan:** Kejayaan murid diukur berdasarkan bilangan sebutan/bacaan/tulisan betul dalam objektif.
 
-**Set induksi:** Guru menunjukkan pinggan bulat dan bertanya bentuknya.
+**Set induksi:** Guru menunjukkan gambar ibu dan anak di dapur, kemudian bertanya apakah mereka sedang lakukan.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memperdengarkan tiga ayat berturutan, kemudian membezakan fungsi nama objek, bentuk dan tindakan.
+**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan urutan dialog ibu dan anak dalam Buku Teks Tahun 5 halaman bercetak 20, iaitu bertanya tindakan memasak dan tempat meletakkan kuali; murid mendengar dan mengulang mengikut giliran.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyusun tiga kad ayat supaya menerangkan pinggan, bentuk dan tempat susunannya; lalu membacakan urutan.
+**Aktiviti 2 — Aplikasi murid:** Murid berpasangan memilih peranan ibu atau anak dan meniru empat giliran dialog secara bersambung; guru membetulkan sebutan dan kesinambungan respons.
 
-**Pengukuhan / Penilaian (PBD):** Guru mendengar persembahan tiga ayat dan menanda susunan serta sebutan betul.
+**Pengukuhan / Penilaian (PBD):** Guru merekod tiga daripada empat pertuturan tepat dan sekurang-kurangnya satu respons sambung tanpa contoh bertulis.
 
-**Penutup:** Murid mengulang ayat terakhir berkaitan rak.
+**Penutup:** Dua murid menyambung satu pasangan soalan dan jawapan tentang memasak.
 
-**BBM:** Pinggan plastik, gambar rak, kad tiga ayat.
+**BBM:** Buku Teks Tahun 5 halaman 20, kad dialog ibu-anak dan gambar kuali di atas dapur.
 
 **Refleksi guru:** ____ / ____ murid menguasai objektif; tindakan susulan: _________________.
 
@@ -30,4 +30,4 @@
 **Status:** DRAF_STAGING / BELUM READY. Bukan bahan LIVE Telegram atau Web. Teks/aktiviti ini merupakan cadangan berpandukan fokus DSKP/RPT, tidak boleh dianggap padanan tepat halaman buku teks, dan belum diuji dalam Word/PDF A4 RTL.
 
 **Audit buku teks (6 Nov 2026):** Unit 1, halaman bercetak **19–20**. Buku Teks Bahasa Arab Tahun 5 DBP/KPM cetakan 2020, ISBN 978-983-49-2838-4; PDF asal Drive: https://drive.google.com/file/d/1OI3RZ8-NXE2bVSOVqSz9bEWCh2tQEN5U/view.
-**Tahap sokongan SP/aktiviti:** RELATED_EXAMPLE_P19_SP_1_4_1_PRINTED_P20. Ayat contoh tentang pinggan menyerupai halaman 19 (kod SP bercetak 1.4.2), manakala SP 1.4.1 tercetak pada dialog halaman 20. Perlu pastikan pemadanan PdP 012 sebelum lulus. Ini catatan bukti sumber, bukan kelulusan urutan RPT 2027. **DRAF / BELUM READY**.
+**Tahap sokongan SP/aktiviti:** MATCH_BOOK_PAGE_SP_AFTER_CONTENT_CORRECTION. SP 1.4.1 tercetak pada dialog bersambung h.20, dan draf telah menggantikan contoh lama h.19 dengan aktiviti berdialog berdasarkan h.20. Bukan bukti pemetaan RPT 2027. DRAF / BELUM READY.
