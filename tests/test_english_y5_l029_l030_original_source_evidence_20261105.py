@@ -5,6 +5,7 @@ having the authentic book pages and MP3 file bytes DOES NOT verify spoken
 dialogue, live Telegram delivery, A4 Word output, or teacher signoff.
 """
 import json
+from hashlib import sha256
 from pathlib import Path
 import unittest
 
@@ -78,8 +79,19 @@ class YearFiveL29L30OriginalEvidence(unittest.TestCase):
         self.assertTrue(gates["official_sow_pair_verified"])
         self.assertTrue(gates["printed_book_activity_verified"])
         self.assertTrue(gates["audio_file_identity_and_codec_verified"])
+        proof=AUDIT["word_a4_ci_evidence"]
+        self.assertEqual(proof["workflow_run_id"],41977394366)
+        self.assertEqual([x["lesson"] for x in proof["lessons"]],[29,30])
+        self.assertTrue(gates["printed_word_a4_per_lesson_verified"])
+        self.assertFalse(gates["native_telegram_pdf_render_verified"])
+        for entry in proof["lessons"]:
+            src=ROOT/f"rph_standalone/english/year5/lesson_{entry['lesson']:03}.md"
+            self.assertEqual(sha256(src.read_bytes()).hexdigest(),entry["source_sha256"])
+            self.assertEqual(entry["pages"],1)
+            self.assertTrue(entry["one_page_a4"])
+            self.assertGreaterEqual(entry["pdf_chars"],int(entry["word_chars"]*0.60))
         for k in ("audio_spoken_contents_verified","authenticated_teacher_telegram_send_verified",
-                  "teacher_final_approval","printed_word_a4_per_lesson_verified","final_ready_approved"):
+                  "teacher_final_approval","final_ready_approved"):
             self.assertIs(gates[k],False,k)
 
 if __name__=="__main__":
