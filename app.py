@@ -8442,6 +8442,10 @@ def _class_number_mismatch(s, value):
     return bool(m and int(m.group(1)) != expected)
 
 def _prompt_rph_class(cid, s, prefix=''):
+    # Keep the text-input handler active when the teacher types a class name
+    # directly after selecting a Lesson/PdP (without pressing Manual).
+    # Only change transient chat state; never write to the teacher profile/DB.
+    s['waiting'] = 'rph_class'
     ex=_dynamic_class_example(s)
     class_rows=_profile_class_records(cid)
     classes=[r['name'] for r in class_rows]
