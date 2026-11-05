@@ -17,6 +17,15 @@ def _web_config_status():
     return auth_configured, source_configured
 
 
+@app.get("/assets/cikgulaju-logo.svg")
+def web_brand_logo():
+    """Logo supplied by CikguLaju owner with transparent image background."""
+    from pathlib import Path
+    from flask import send_file
+    path = Path(__file__).resolve().parents[1] / "web_v1_static_preview" / "cikgulaju-logo.svg"
+    return send_file(path, mimetype="image/svg+xml", conditional=True, max_age=86400)
+
+
 @app.get("/healthz")
 def web_liveness():
     """Liveness only: never confuse a booted worker with an approved product."""
