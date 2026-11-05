@@ -27,7 +27,7 @@ Murid menghuraikan atau menilai berdasarkan **11.3: Mengenal pasti kepentingan a
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Bukti buku teks disemak (2026-11-05):** Unit 11, m/s 101–106 (PDF 110–115). Contoh asal: Reka cipta dan ekonomi kreatif, rajin membaca serta contoh kerja gigih dalam pelbagai bidang. RPH ini mengolah contoh dalam buku mengikut SP DSKP, bukan menyalin petikan buku atau mendakwa amalan sebenar di luar PdP.
+**Rekod audit sejarah — buku edisi lama, bukan bukti Semakan 2017 (2026-11-05):** Unit 11, m/s 101–106 (PDF 110–115). Halaman ini berasal daripada buku teks lama di Drive. Ia direkodkan untuk jejak audit sahaja dan **tidak boleh digunakan sebagai bukti aktiviti buku teks DBP 2021**. Rujukan PdP semasa ialah bab edisi Semakan 2017 dalam perenggan berikut; aktiviti individu edisi baharu masih perlu disahkan.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 11, m/s 106–108 (flipbook 116–118); tajuk Gigih Berusaha Negara Maju / Teruskan Semangat Dedikasi; SP 11.3 dan 11.4. Ini padanan isi kandungan bab dan olahan PdP, **bukan semakan visual penuh tugasan buku atau pengesahan kelas sebenar**.
 

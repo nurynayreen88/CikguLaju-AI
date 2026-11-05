@@ -27,7 +27,7 @@ Murid menghuraikan atau menilai berdasarkan **5.3: Menghuraikan kepentingan amal
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Bukti buku teks disemak (2026-11-05):** Unit 5, m/s 41–46 (PDF 50–55). Kandungan asal yang digunakan: Teks Rakyat Berhemah Negara Disanjung, Pesanan Berhemah Tinggi, ungkapan bersopan, Jabatan Kerajaan. Aktiviti PdP merupakan olahan CikguLaju berpandukan halaman sumber, bukan petikan verbatim dan bukan bukti amalan harian murid.
+**Rekod audit sejarah — buku edisi lama, bukan bukti Semakan 2017 (2026-11-05):** Unit 5, m/s 41–46 (PDF 50–55). Halaman ini berasal daripada buku teks lama di Drive. Ia direkodkan untuk jejak audit sahaja dan **tidak boleh digunakan sebagai bukti aktiviti buku teks DBP 2021**. Rujukan PdP semasa ialah bab edisi Semakan 2017 dalam perenggan berikut; aktiviti individu edisi baharu masih perlu disahkan.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 5, m/s 46–48 (flipbook 56–58), bahagian Personaliti Terbaik Tingkah Laku Terpuji / Insan Berbudi Pekerti Insan Dihormati; SP 5.3 dan 5.4. Ini pemetaan bab dan olahan tugasan mengikut DSKP, **bukan semakan visual menyeluruh aktiviti buku atau bukti amalan murid**.
 

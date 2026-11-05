@@ -27,7 +27,7 @@ Murid menghuraikan atau menilai berdasarkan **8.3: Menjelaskan kepentingan amala
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Bukti buku teks disemak (2026-11-05):** Unit 8, m/s 72–74 (PDF 81–83). Sumber visual: Kisah kerjasama sekolah menerapkan keadilan dan lembaran Bersikap Adil demi Kebaikan Negara. Aktiviti olahan CikguLaju berpandukan DSKP dan contoh buku teks; jika konsep hanya dalam DSKP, tidak didakwa berasal daripada ilustrasi buku.
+**Rekod audit sejarah — buku edisi lama, bukan bukti Semakan 2017 (2026-11-05):** Unit 8, m/s 72–74 (PDF 81–83). Halaman ini berasal daripada buku teks lama di Drive. Ia direkodkan untuk jejak audit sahaja dan **tidak boleh digunakan sebagai bukti aktiviti buku teks DBP 2021**. Rujukan PdP semasa ialah bab edisi Semakan 2017 dalam perenggan berikut; aktiviti individu edisi baharu masih perlu disahkan.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 8, m/s 74–78 (flipbook 84–88), bahagian Keadilan Membawa Keamanan / Keadilan Ditegakkan Rakyat Sejahtera; SP 8.3 dan 8.4. Ini pemetaan bab dan olahan tugasan mengikut DSKP, **bukan semakan visual menyeluruh aktiviti buku atau bukti amalan murid**.
 

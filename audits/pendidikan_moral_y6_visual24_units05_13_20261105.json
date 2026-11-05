@@ -1,7 +1,7 @@
 {
-  "status": "24_YEAR6_SOURCE_BACKED_ACTIVITY_MATCHES; NOT_FINAL_READY",
+  "status": "24_HISTORICAL_OLD_EDITION_VISUAL_RECORDS_EXCLUDED_FROM_2021_PROOF",
   "date": "2026-11-05",
-  "method": "Visual examination of original Year6 scanned textbook unit 5,6,8,9,10,11,12,13 page spreads, followed by individual RPH revisions and DSKP-code consistency checks. Lesson activities are educator adaptations, not copyrighted verbatim text. Book unit4 and7 conflict with DSKP and are expressly excluded.",
+  "method": "Historical 24-item visual examination of Year6 OLD KSSR textbook PDF in Drive. These page references DO NOT verify 2021 KSSR Semakan 2017 activities. Original page and SP facts are retained only to explain prior work; 2021 chapter mapping and exact current-edition activity verification are separate.",
   "year": 6,
   "source_book_drive_id": "12YjwUWy6DdVsqP5_azEp987jfvZ6PROo",
   "source_dskp_drive_id": "1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA",
@@ -455,5 +455,6 @@
       "page_evidence": "Prasarana Dijaga, Jagalah Kemudahan Awam, penilaian",
       "status": "VISUAL_SOURCE_TASKS_REVIEWED_NOT_FINAL_READY"
     }
-  ]
+  ],
+  "legacy_provenance_notice": "Original source 2015-style scanned Drive PDF. Do not add these 24 rows to current-edition pedagogical confirmation counts."
 }

@@ -27,7 +27,7 @@ Murid menyiapkan tugasan **SP 13.1** (Menyenaraikan contoh amalan kesederhanaan 
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Bukti buku teks disemak (2026-11-05):** Unit 13, m/s 119–123 (PDF 128–132). Bahan asal: Prasarana awam, panduan menggunakan pengangkutan awam secara berhemah dan larangan vandalisme. Aktiviti RPH ialah olahan PdP bagi SP rasmi, bukan salinan buku teks atau pengesahan amalan sebenar murid.
+**Rekod audit sejarah — buku edisi lama, bukan bukti Semakan 2017 (2026-11-05):** Unit 13, m/s 119–123 (PDF 128–132). Halaman ini berasal daripada buku teks lama di Drive. Ia direkodkan untuk jejak audit sahaja dan **tidak boleh digunakan sebagai bukti aktiviti buku teks DBP 2021**. Rujukan PdP semasa ialah bab edisi Semakan 2017 dalam perenggan berikut; aktiviti individu edisi baharu masih perlu disahkan.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 13, m/s 122–124 (flipbook 132–134); tajuk Amalan Bersederhana Teras Kebaikan / Kesederhanaan Diamalkan Negara Sejahtera; SP 13.1 dan 13.2. Ini padanan isi kandungan bab dan olahan PdP, **bukan semakan visual penuh tugasan buku atau pengesahan kelas sebenar**.
 

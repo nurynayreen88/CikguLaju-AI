@@ -27,7 +27,7 @@ Murid memperagakan tindakan berdasarkan **13.5: Mengamalkan sikap bersederhana d
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Bukti buku teks disemak (2026-11-05):** Unit 13, m/s 124–128 (PDF 133–137). Bahan asal: Prasarana Dijaga Rakyat Ceria, aktiviti Jagalah Kemudahan Awam dan pentaksiran. Aktiviti RPH ialah olahan PdP bagi SP rasmi, bukan salinan buku teks atau pengesahan amalan sebenar murid.
+**Rekod audit sejarah — buku edisi lama, bukan bukti Semakan 2017 (2026-11-05):** Unit 13, m/s 124–128 (PDF 133–137). Halaman ini berasal daripada buku teks lama di Drive. Ia direkodkan untuk jejak audit sahaja dan **tidak boleh digunakan sebagai bukti aktiviti buku teks DBP 2021**. Rujukan PdP semasa ialah bab edisi Semakan 2017 dalam perenggan berikut; aktiviti individu edisi baharu masih perlu disahkan.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 13, m/s 128–130 (flipbook 138–140); tajuk Kesederhanaan Diamalkan Kesejahteraan Negara Dikecapi / Mari Uji Diri; SP 13.5. Ini padanan isi kandungan bab dan olahan PdP, **bukan semakan visual penuh tugasan buku atau pengesahan kelas sebenar**.
 

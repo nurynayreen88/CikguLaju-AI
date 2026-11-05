@@ -27,7 +27,7 @@ Murid menyiapkan tugasan **SP 5.1** (Menjelaskan contoh amalan hemah tinggi demi
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Bukti buku teks disemak (2026-11-05):** Unit 5, m/s 39–43 (PDF 48–52). Kandungan asal yang digunakan: Dialog kaunter imigresen dan perkhidmatan, Piagam Pelanggan, cara berurusan dengan kakitangan. Aktiviti PdP merupakan olahan CikguLaju berpandukan halaman sumber, bukan petikan verbatim dan bukan bukti amalan harian murid.
+**Rekod audit sejarah — buku edisi lama, bukan bukti Semakan 2017 (2026-11-05):** Unit 5, m/s 39–43 (PDF 48–52). Halaman ini berasal daripada buku teks lama di Drive. Ia direkodkan untuk jejak audit sahaja dan **tidak boleh digunakan sebagai bukti aktiviti buku teks DBP 2021**. Rujukan PdP semasa ialah bab edisi Semakan 2017 dalam perenggan berikut; aktiviti individu edisi baharu masih perlu disahkan.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 5, m/s 42–45 (flipbook 52–55), bahagian Sikap Berhemah Negara Disanjung / Budaya Sopan Jadikan Amalan; SP 5.1 dan 5.2. Ini pemetaan bab dan olahan tugasan mengikut DSKP, **bukan semakan visual menyeluruh aktiviti buku atau bukti amalan murid**.
 

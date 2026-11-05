@@ -27,7 +27,7 @@ Murid memperagakan tindakan berdasarkan **9.5: Mengamalkan sikap berani memperta
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Bukti buku teks disemak (2026-11-05):** Unit 9, m/s 84–88 (PDF 93–97). Sumber visual: Kad lakonan negara, permainan Tingkatkan Imej Negara dan penilaian formatif/sumatif. Aktiviti olahan CikguLaju berpandukan DSKP dan contoh buku teks; jika konsep hanya dalam DSKP, tidak didakwa berasal daripada ilustrasi buku.
+**Rekod audit sejarah — buku edisi lama, bukan bukti Semakan 2017 (2026-11-05):** Unit 9, m/s 84–88 (PDF 93–97). Halaman ini berasal daripada buku teks lama di Drive. Ia direkodkan untuk jejak audit sahaja dan **tidak boleh digunakan sebagai bukti aktiviti buku teks DBP 2021**. Rujukan PdP semasa ialah bab edisi Semakan 2017 dalam perenggan berikut; aktiviti individu edisi baharu masih perlu disahkan.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 9, m/s 88–90 (flipbook 98–100); tajuk Saya Berikrar Saya Berani / Mari Uji Diri; SP 9.5. Ini padanan isi kandungan bab dan olahan PdP, **bukan semakan visual penuh tugasan buku atau pengesahan kelas sebenar**.
 

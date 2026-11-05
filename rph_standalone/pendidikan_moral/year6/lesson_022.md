@@ -27,7 +27,7 @@ Murid menyiapkan tugasan **SP 8.1** (Menyenaraikan contoh institusi yang menegak
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Bukti buku teks disemak (2026-11-05):** Unit 8, m/s 69–73 (PDF 78–82). Sumber visual: Cerita Adil Pemangkin Keamanan Negara, bahan Bersikap Adil kepada Semua dan kelab perpaduan sekolah. Aktiviti olahan CikguLaju berpandukan DSKP dan contoh buku teks; jika konsep hanya dalam DSKP, tidak didakwa berasal daripada ilustrasi buku.
+**Rekod audit sejarah — buku edisi lama, bukan bukti Semakan 2017 (2026-11-05):** Unit 8, m/s 69–73 (PDF 78–82). Halaman ini berasal daripada buku teks lama di Drive. Ia direkodkan untuk jejak audit sahaja dan **tidak boleh digunakan sebagai bukti aktiviti buku teks DBP 2021**. Rujukan PdP semasa ialah bab edisi Semakan 2017 dalam perenggan berikut; aktiviti individu edisi baharu masih perlu disahkan.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 8, m/s 72–76 (flipbook 82–86), bahagian Tindakan Adil Asas Kesejahteraan / Kenali Institusi Keadilan; SP 8.1 dan 8.2. Ini pemetaan bab dan olahan tugasan mengikut DSKP, **bukan semakan visual menyeluruh aktiviti buku atau bukti amalan murid**.
 
