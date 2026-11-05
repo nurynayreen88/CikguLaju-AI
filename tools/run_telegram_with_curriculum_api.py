@@ -398,3 +398,26 @@ except Exception as _private_rpt_error:
     TELEGRAM_PRIVATE_RPT_COVER_REGISTERED = False
     print("Private RPT school cover unavailable:",
           type(_private_rpt_error).__name__, flush=True)
+
+
+# Authenticated read-only QR and plan catalog for the independent Web payment
+# screen. The payment/approval logic remains the original proof-first Supabase
+# queue; this adapter NEVER creates pending records or sends receipts.
+try:
+    from web.telegram_payment_source import create_web_payment_source
+    telegram_runtime.app.register_blueprint(
+        create_web_payment_source(telegram_runtime))
+    TELEGRAM_WEB_PAYMENT_SOURCE_REGISTERED = True
+except Exception as _web_payment_catalog_error:
+    TELEGRAM_WEB_PAYMENT_SOURCE_REGISTERED = False
+    print("Web payment source unavailable:",
+          type(_web_payment_catalog_error).__name__, flush=True)
+
+# Add the Web URL after all existing Telegram menu wrappers. Preserve
+# private referral access, manual PDF, payment and other callback handlers.
+try:
+    from web.web_link_telegram import install as install_web_link
+    TELEGRAM_WEB_LINK_MENU_ACTIVE = bool(install_web_link(telegram_runtime))
+except Exception as _web_menu_error:
+    TELEGRAM_WEB_LINK_MENU_ACTIVE = False
+    print("Telegram Web menu unavailable:", type(_web_menu_error).__name__, flush=True)
