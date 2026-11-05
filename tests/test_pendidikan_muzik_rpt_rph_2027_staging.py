@@ -88,6 +88,29 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
             {"3.2.1", "3.2.2", "3.2.3", "4.2.1"},
         )
 
+    def test_reinforcement_candidates_stay_nonofficial_and_no_fabricated_audio(self):
+        """All eight non-book slots are specificity-reviewed but never count as book-verified."""
+        total = 0
+        for year in (2, 3, 4, 6):
+            directory = MUSIC / "rpt_rph_2027" / f"year{year}"
+            manifest = json.loads((directory / "pdp_manifest.json").read_text(encoding="utf-8"))
+            for pdp in (34, 35):
+                row = manifest["pdps"][pdp-1]
+                self.assertEqual(row["pdp_kind"], "CADANGAN_PENGUKUHAN_BUKAN_PROJEK_RASMI")
+                self.assertTrue(row["reinforcement_specificity_reviewed"])
+                self.assertIsNone(row["page"])
+                self.assertFalse(row.get("source_book_text_crosscheck", False))
+                self.assertFalse(row["source_book_audio_file_verified"])
+                self.assertTrue(row["validation_status"].startswith("DRAF_"))
+                doc = (directory / f"rph_pdp_{pdp:02d}.md").read_text(encoding="utf-8")
+                self.assertIn("BUKAN Projek Seni Muzik rasmi", doc)
+                self.assertIn("BUKAN Projek Seni Muzik rasmi".upper(), doc.upper())
+                self.assertIn("**Aktiviti 1", doc)
+                self.assertIn("**Aktiviti 2", doc)
+                self.assertIn("semakan teks buku", doc)
+                total += 1
+        self.assertEqual(total, 8)
+
     def test_only_two_official_music_projects_each_year(self):
         for year in YEAR_COUNTS:
             directory = MUSIC / "rpt_rph_2027" / f"year{year}"

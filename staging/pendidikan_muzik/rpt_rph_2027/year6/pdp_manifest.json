@@ -953,7 +953,11 @@
       ],
       "pdp_kind": "CADANGAN_PENGUKUHAN_BUKAN_PROJEK_RASMI",
       "source_rpt_project3_conflict": true,
-      "validation_status": "DRAF_CADANGAN_NONOFFICIAL"
+      "validation_status": "DRAF_CADANGAN_NONOFFICIAL_DIULANGKAJI_STRUKTUR; BUKAN_FINAL",
+      "reinforcement_specificity_reviewed": true,
+      "reinforcement_review_scope": "CADANGAN_GURU_AKTIVITI_KHUSUS_SAHAJA; BUKAN_BUKU_TEKS_RASMI_DSKP_DILULUSKAN",
+      "reinforcement_prior_unit_reference": "Muzik Tahun 6",
+      "source_book_audio_file_verified": false
     },
     {
       "pdp_id": "MZ-Y6-35",
@@ -983,7 +987,11 @@
       ],
       "pdp_kind": "CADANGAN_PENGUKUHAN_BUKAN_PROJEK_RASMI",
       "source_rpt_project3_conflict": true,
-      "validation_status": "DRAF_CADANGAN_NONOFFICIAL"
+      "validation_status": "DRAF_CADANGAN_NONOFFICIAL_DIULANGKAJI_STRUKTUR; BUKAN_FINAL",
+      "reinforcement_specificity_reviewed": true,
+      "reinforcement_review_scope": "CADANGAN_GURU_AKTIVITI_KHUSUS_SAHAJA; BUKAN_BUKU_TEKS_RASMI_DSKP_DILULUSKAN",
+      "reinforcement_prior_unit_reference": "Muzik Tahun 6",
+      "source_book_audio_file_verified": false
     }
   ],
   "dskp_projects_per_year": 2,

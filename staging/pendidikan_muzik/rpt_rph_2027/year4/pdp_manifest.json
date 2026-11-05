@@ -980,10 +980,14 @@
       ],
       "pdp_kind": "CADANGAN_PENGUKUHAN_BUKAN_PROJEK_RASMI",
       "source_rpt_project3_conflict": true,
-      "validation_status": "DRAF_CADANGAN_NONOFFICIAL",
+      "validation_status": "DRAF_CADANGAN_NONOFFICIAL_DIULANGKAJI_STRUKTUR; BUKAN_FINAL",
       "flags": [
         "RPT sumber lama menamakan Projek Seni Muzik 3, tetapi DSKP Tahun 4 menyatakan dua projek setahun. PdP ini cadangan tambahan, bukan projek rasmi."
-      ]
+      ],
+      "reinforcement_specificity_reviewed": true,
+      "reinforcement_review_scope": "CADANGAN_GURU_AKTIVITI_KHUSUS_SAHAJA; BUKAN_BUKU_TEKS_RASMI_DSKP_DILULUSKAN",
+      "reinforcement_prior_unit_reference": "Kesenian Tahun 4",
+      "source_book_audio_file_verified": false
     },
     {
       "pdp_id": "MZ-Y4-35",
@@ -1010,10 +1014,14 @@
       ],
       "pdp_kind": "CADANGAN_PENGUKUHAN_BUKAN_PROJEK_RASMI",
       "source_rpt_project3_conflict": true,
-      "validation_status": "DRAF_CADANGAN_NONOFFICIAL",
+      "validation_status": "DRAF_CADANGAN_NONOFFICIAL_DIULANGKAJI_STRUKTUR; BUKAN_FINAL",
       "flags": [
         "RPT sumber lama menamakan Projek Seni Muzik 3, tetapi DSKP Tahun 4 menyatakan dua projek setahun. PdP ini cadangan tambahan, bukan projek rasmi."
-      ]
+      ],
+      "reinforcement_specificity_reviewed": true,
+      "reinforcement_review_scope": "CADANGAN_GURU_AKTIVITI_KHUSUS_SAHAJA; BUKAN_BUKU_TEKS_RASMI_DSKP_DILULUSKAN",
+      "reinforcement_prior_unit_reference": "Kesenian Tahun 4",
+      "source_book_audio_file_verified": false
     }
   ],
   "source_book_found_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",

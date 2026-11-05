@@ -2,28 +2,30 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** Penilaian dan Refleksi Muzik Akhir Tahun (cadangan)
-**SK / SP DSKP:** 3.1.3, 4.1.1
-**Status:** DRAF STAGING — PdP cadangan tambahan, bukan Projek Seni Muzik rasmi
+**SK/SP cadangan daripada DSKP/RPT (belum keputusan kelulusan):** 3.1.3, 4.1.1
 **Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — PdP cadangan pengukuhan guru, **BUKAN Projek Seni Muzik rasmi**
 
-**Fokus:** Mempersembah ciptaan dan mengulas muzik popular
+**Fokus:** Penilaian corak ciptaan dan apresiasi Muzik Rock Tahun 3
 
-**Objektif:** Murid mempersembahkan ciptaan irama mudah serta menyatakan satu jenis muzik popular beserta ciri yang didengar.
+**Objektif:** Mencipta satu corak irama lapan detik dan memberikan dua maklumat tepat tentang ciri muzik rock atau peranan ahli kumpulan rock.
 
-**Set induksi (4 minit):** Guru memainkan petikan ringkas muzik popular untuk murid mengenal pasti jenis yang pernah dipelajari.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran dan hasil yang boleh diukur melalui aktiviti/penilaian guru.
 
-**Aktiviti 1 — Ulang kaji berfokus (8 minit):** Murid menambah baik corak irama ciptaan dengan menguji perubahan detik dan bunyi menggunakan perkusi atau suara.
+**Set Induksi — 4 minit:** Guru mengimbas maklumat Muzik Rock buku Kesenian Tahun 3 halaman 96 melalui kad gambar, tanpa memainkan fail audio belum disahkan.
 
-**Aktiviti 2 — Aplikasi dalam muzik (10 minit):** Kumpulan mempersembahkan ciptaan dan menyampaikan ulasan muzik popular menggunakan contoh daripada rakaman.
+**Aktiviti 1 — Ulang kaji khusus (8 minit):** Murid menyusun kad ikon sepanjang lapan detik dan menepuk corak ciptaan; kumpulan menyemak jumlah detik dan memperbaiki satu kesilapan.
 
-**Pengukuhan dan pentaksiran (6 minit):** Rubrik penciptaan, koordinasi dan fakta apresiasi; guru merancang pemulihan individu.
+**Aktiviti 2 — Aplikasi kemahiran (10 minit):** Kumpulan mempersembahkan corak dan memberikan ulasan dua ciri berkaitan muzik rock atau tugas penyanyi, dram, gitar utama/gitar bes berdasarkan penerangan yang dirujuk.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang sudah dikuasai dan satu sasaran pembaikan; guru membuat rekod PBD.
+**Pengukuhan dan Penilaian — 6 minit:** Guru merekod dua kriteria: irama lapan detik tepat dan sekurang-kurangnya dua maklumat apresiasi berpandukan rujukan.
 
-**Bahan:** Bahan dan instrumen sedia ada daripada PdP tahun ini; gunakan audio yang disahkan oleh guru sahaja.
+**Penutup — 2 minit:** Murid menyampaikan satu kekuatan ciptaan dan satu contoh kerjasama dalam persembahan. Guru merekod pemerhatian PBD.
 
-**Nota sumber:** RPT lama menamakan projek ketiga dengan SP 5.1.2, 5.1.3. DSKP Pendidikan Muzik Tahun 3 menetapkan dua projek setahun. Kandungan PdP 35 merupakan cadangan pengukuhan CikguLaju yang perlu disahkan guru, bukan sebahagian daripada projek ketiga rasmi.
+**Bahan:** Kad ikon irama, buku Kesenian Tahun 3 halaman 96 sebagai rujukan ulang kaji, kad ahli kumpulan muzik.
+
+**Rujukan dan had sumber:** Ini **cadangan ulang kaji** menggunakan kemahiran yang pernah dipelajari, bukan bab atau halaman baharu buku teks. RPT lama menamakan `Projek Seni Muzik 3`; DSKP Muzik mempunyai **dua projek rasmi** dan tidak menyokong pelabelan Projek 3. Kod SP sumber asal disimpan dalam manifest untuk audit; cadangan SK/SP ini belum diluluskan silang oleh pakar kurikulum. Tiada audio atau lirik diperolehi/diaktifkan oleh bot.
 
 **Refleksi / Tindakan susulan:** ____________________________________________
 
-**Kawalan penerbitan:** Belum FINAL READY, belum diaudit secara Word/PDF/Telegram/Web.
+**Audit:** SEMAKAN_SPESIFISITI_CADANGAN_PENGUKUHAN_20261106; bukan semakan teks buku, bukan kelulusan DSKP, belum Word/PDF, cuti negeri 2027, Telegram/Web atau FINAL READY.

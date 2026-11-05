@@ -2,28 +2,30 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** Pengukuhan Akhir Tahun — Nyanyian dan Gerakan (cadangan)
-**SK / SP DSKP:** 2.1.3, 2.3.2
-**Status:** DRAF STAGING — PdP cadangan tambahan, bukan Projek Seni Muzik rasmi
+**SK/SP cadangan daripada DSKP/RPT (belum keputusan kelulusan):** 2.1.3, 2.3.2
 **Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — PdP cadangan pengukuhan guru, **BUKAN Projek Seni Muzik rasmi**
 
-**Fokus:** Pengukuhan tempo dalam nyanyian dan gerakan
+**Fokus:** Pengukuhan nyanyian dan gerakan berdasarkan lagu dan gerak yang dipelajari Tahun 2
 
-**Objektif:** Murid menyanyikan frasa pendek mengikut tempo serta menunjukkan dua jenis gerakan yang sesuai.
+**Objektif:** Menyanyikan satu frasa lagu pilihan dengan tempo stabil dan mempersembahkan dua gerakan berbeza mengikut detik dalam dua percubaan.
 
-**Set induksi (4 minit):** Guru memperdengarkan petikan ringkas dan murid bergerak setempat untuk mengecam tempo cepat dan lambat.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran dan hasil yang boleh diukur melalui aktiviti/penilaian guru.
 
-**Aktiviti 1 — Ulang kaji berfokus (8 minit):** Murid menyanyi semula lagu pilihan yang telah dipelajari, membezakan dua tempo dan mempraktikkan ayunan atau langkah mengikut detik.
+**Set Induksi — 4 minit:** Guru menyanyikan atau membunyikan dua contoh tempo menggunakan suara dan tepukan; murid mengelaskan lambat dan cepat.
 
-**Aktiviti 2 — Aplikasi dalam muzik (10 minit):** Pasangan membina dua urutan gerakan pendek mengikut tempo sambil guru mengawal keselamatan ruang.
+**Aktiviti 1 — Ulang kaji khusus (8 minit):** Murid mengimbas lagu yang telah dipelajari sepanjang Tahun 2; guru membimbing dua frasa nyanyian dan tepukan empat detik pada dua tempo tanpa menggunakan audio belum disahkan.
 
-**Pengukuhan dan pentaksiran (6 minit):** Senarai semak pic, tempo dan ketepatan pergerakan; lakukan intervensi kepada murid yang masih keliru.
+**Aktiviti 2 — Aplikasi kemahiran (10 minit):** Pasangan murid membina gerak maju–setempat–undur dan satu gerak tangan selama empat detik. Murid menyelaraskan gerakan dengan nyanyian, kemudian membetulkan kesilapan tempo.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang sudah dikuasai dan satu sasaran pembaikan; guru membuat rekod PBD.
+**Pengukuhan dan Penilaian — 6 minit:** Semak dua elemen: satu frasa nyanyian dengan tempo stabil dan dua pergerakan mengikut detik; rekod sebelum/selepas intervensi.
 
-**Bahan:** Bahan dan instrumen sedia ada daripada PdP tahun ini; gunakan audio yang disahkan oleh guru sahaja.
+**Penutup — 2 minit:** Murid menunjukkan satu gerakan yang dipertingkatkan dan menyebut sebab tempo perlu konsisten. Guru merekod pemerhatian PBD.
 
-**Nota sumber:** RPT lama menamakan projek ketiga dengan SP 5.1.1. DSKP Pendidikan Muzik Tahun 2 menetapkan dua projek setahun. Kandungan PdP 34 merupakan cadangan pengukuhan CikguLaju yang perlu disahkan guru, bukan sebahagian daripada projek ketiga rasmi.
+**Bahan:** Skor atau kad lagu Tahun 2 yang sudah dimiliki guru, kad tempo dan ruang selamat.
+
+**Rujukan dan had sumber:** Ini **cadangan ulang kaji** menggunakan kemahiran yang pernah dipelajari, bukan bab atau halaman baharu buku teks. RPT lama menamakan `Projek Seni Muzik 3`; DSKP Muzik mempunyai **dua projek rasmi** dan tidak menyokong pelabelan Projek 3. Kod SP sumber asal disimpan dalam manifest untuk audit; cadangan SK/SP ini belum diluluskan silang oleh pakar kurikulum. Tiada audio atau lirik diperolehi/diaktifkan oleh bot.
 
 **Refleksi / Tindakan susulan:** ____________________________________________
 
-**Kawalan penerbitan:** Belum FINAL READY, belum diaudit secara Word/PDF/Telegram/Web.
+**Audit:** SEMAKAN_SPESIFISITI_CADANGAN_PENGUKUHAN_20261106; bukan semakan teks buku, bukan kelulusan DSKP, belum Word/PDF, cuti negeri 2027, Telegram/Web atau FINAL READY.

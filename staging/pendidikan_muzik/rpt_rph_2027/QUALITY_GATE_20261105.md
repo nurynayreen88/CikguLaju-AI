@@ -158,3 +158,8 @@ PdP12–13 dan 24–26 diselaraskan dengan projek terpadu Kesenian Tahun3 halama
 - Projek PdP12–13 halaman 4–5, PdP25–27 halaman 54–55 diselaraskan dengan buku Kesenian Tahun 4 DBP2019. Kekal adaptasi muzik daripada projek Kesenian gabungan.
 - CI Tahun 3 gagal kerana satu ujian masih menggunakan set lama sebelum penambahan lima RPH projek PdP12,13,24–26. **Hanya asersi ujian dikemaskini mengikut manifest dan bukti**, tanpa menurunkan standard semakan.
 - Tahun 4: 27 semakan teks + 6 kandungan halaman diperiksa = **33/35**. Keseluruhan **167/175**, baki **8** hanyalah PdP34–35 pengukuhan cadangan Tahun2,3,4,6. Tiada bahan FINAL READY; skor visual, fail audio dan cetakan belum disahkan.
+
+
+## Semakan semua 175 draf — 8 cadangan pengukuhan (6 November 2026)
+- 8 PdP34–35 Tahun2/3/4/6 kini mempunyai aktiviti khusus dan rubrik boleh ukur; kekal **cadangan guru**, bukan sumber buku rasmi. Audit `REINFORCEMENT_8_CANDIDATE_PDP_AUDIT_20261106.md`.
+- **175/175 RPH draf mempunyai semakan kandungan mengikut skop masing-masing**: 167 semakan teks buku/projek pada tahap berlainan dan 8 semakan spesifisiti cadangan. **0 FINAL READY** kerana belum lulus skor visual/audio/DSKP/cuti/RPT/Word-PDF/Telegram-Web.

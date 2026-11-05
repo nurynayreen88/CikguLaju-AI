@@ -2,28 +2,30 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** Pengukuhan Akhir Tahun — Kolattam dan Gerakan (cadangan)
-**SK / SP DSKP:** 4.2.1, 2.3.1
-**Status:** DRAF STAGING — PdP cadangan tambahan, bukan Projek Seni Muzik rasmi
+**SK/SP cadangan daripada DSKP/RPT (belum keputusan kelulusan):** 4.2.1, 2.3.1
 **Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — PdP cadangan pengukuhan guru, **BUKAN Projek Seni Muzik rasmi**
 
-**Fokus:** Apresiasi Kolattam dan formasi gerakan mengikut tempo
+**Fokus:** Pengukuhan apresiasi Kolattam dan pergerakan selaras tempo
 
-**Objektif:** Murid menamakan dua alat muzik pengiring Kolattam dan membuat satu gerakan berkumpulan selaras tempo.
+**Objektif:** Menyatakan dua fakta Kolattam daripada Unit Harum Mewangi dan melaksanakan satu pola gerak empat detik dalam kumpulan kecil.
 
-**Set induksi (4 minit):** Guru menunjukkan semula gambar dua alat muzik daripada halaman 100–101 buku teks Kesenian Tahun 4.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran dan hasil yang boleh diukur melalui aktiviti/penilaian guru.
 
-**Aktiviti 1 — Ulang kaji berfokus (8 minit):** Murid memadankan nama, cara permainan dan keluarga alat muzik, dengan rujukan bahan sah Unit 10.
+**Set Induksi — 4 minit:** Guru memaparkan gambar Kolattam dan bertanya hubungan alat atau kayu dengan pola detik yang dimainkan.
 
-**Aktiviti 2 — Aplikasi dalam muzik (10 minit):** Murid menyusun gerak selamat dalam formasi mengikut tempo berdasarkan halaman 102–103, menggunakan tepukan atau alat pengganti lembut.
+**Aktiviti 1 — Ulang kaji khusus (8 minit):** Murid merujuk semula buku Kesenian Tahun 4 halaman 100–101, membezakan peranan muzik pengiring dan corak bunyi, kemudian menyatakan dua fakta tepat.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak dua fakta alat muzik dan satu gerakan mengikut tempo; ambil catatan pembaikan.
+**Aktiviti 2 — Aplikasi kemahiran (10 minit):** Murid berlatih gerak empat detik daripada pola halaman 102–103 menggunakan tepukan atau pengganti kayu lembut secara berpasangan, sambil mengekalkan jarak selamat.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang sudah dikuasai dan satu sasaran pembaikan; guru membuat rekod PBD.
+**Pengukuhan dan Penilaian — 6 minit:** Rubrik: dua fakta Kolattam tepat, corak empat detik dan keselamatan ruang; guru memberi intervensi kepada murid yang keliru arah gerakan.
 
-**Bahan:** Bahan dan instrumen sedia ada daripada PdP tahun ini; gunakan audio yang disahkan oleh guru sahaja.
+**Penutup — 2 minit:** Murid menunjukkan gerakan paling tepat dan satu etika ketika menggunakan alat ganti. Guru merekod pemerhatian PBD.
 
-**Nota sumber:** RPT lama menamakan projek ketiga dengan SP 5.1.1. DSKP Pendidikan Muzik Tahun 4 menetapkan dua projek setahun. Kandungan PdP 34 merupakan cadangan pengukuhan CikguLaju yang perlu disahkan guru, bukan sebahagian daripada projek ketiga rasmi.
+**Bahan:** Buku Kesenian Tahun 4 halaman 100–103 untuk ulang kaji, kad detik dan alat ganti lembut.
+
+**Rujukan dan had sumber:** Ini **cadangan ulang kaji** menggunakan kemahiran yang pernah dipelajari, bukan bab atau halaman baharu buku teks. RPT lama menamakan `Projek Seni Muzik 3`; DSKP Muzik mempunyai **dua projek rasmi** dan tidak menyokong pelabelan Projek 3. Kod SP sumber asal disimpan dalam manifest untuk audit; cadangan SK/SP ini belum diluluskan silang oleh pakar kurikulum. Tiada audio atau lirik diperolehi/diaktifkan oleh bot.
 
 **Refleksi / Tindakan susulan:** ____________________________________________
 
-**Kawalan penerbitan:** Belum FINAL READY, belum diaudit secara Word/PDF/Telegram/Web.
+**Audit:** SEMAKAN_SPESIFISITI_CADANGAN_PENGUKUHAN_20261106; bukan semakan teks buku, bukan kelulusan DSKP, belum Word/PDF, cuti negeri 2027, Telegram/Web atau FINAL READY.

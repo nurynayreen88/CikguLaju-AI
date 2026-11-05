@@ -78,3 +78,7 @@ Semakan teks lima RPH projek berdasarkan Buku Kesenian Tahun 3 DBP2018 halaman 4
 
 ## Projek Tahun 4, 6 Nov 2026
 5 RPH projek berasaskan Buku Kesenian Tahun 4 DBP2019 Projek Penggal Satu halaman4–5 dan Penggal Dua halaman54–55, adaptasi Muzik sahaja. Tahun 4 kini **33/35**, semua Tahun 2–6 **167/175**, baki **8 PdP pengukuhan cadangan tanpa halaman buku tersendiri**. Rujuk `year4/PROJEK_T4_PENGGAL1_2_TEXT_AUDIT_20261106.md`. Semua kekal DRAF kerana skor/audio/DSKP/Word-PDF dan penerbitan belum lulus.
+
+
+## 8 Cadangan Pengukuhan — jangan keliru dengan buku teks rasmi
+PdP34–35 bagi Tahun2,3,4,6 telah diaudit untuk kekhususan aktiviti dan kriteria pentaksiran. 167 RPH kekal `source_book_text_crosscheck`/pemeriksaan halaman terhad, manakala **8 calon pengukuhan tidak dikira sebagai semakan buku** kerana tiada halaman rasmi tersendiri. Semua 175 mempunyai draf, bukan semua 175 mempunyai kesahan buku, dan tiada status FINAL READY.

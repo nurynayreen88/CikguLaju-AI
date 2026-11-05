@@ -2,28 +2,30 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** Penilaian Akhir — Rekoder dan Perkusi (cadangan)
-**SK / SP DSKP:** 2.4.2, 2.2.2
-**Status:** DRAF STAGING — PdP cadangan tambahan, bukan Projek Seni Muzik rasmi
+**SK/SP cadangan daripada DSKP/RPT (belum keputusan kelulusan):** 2.4.2, 2.2.2
 **Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — PdP cadangan pengukuhan guru, **BUKAN Projek Seni Muzik rasmi**
 
-**Fokus:** Pemerhatian kemahiran membaca skor, rekoder dan perkusi
+**Fokus:** Penilaian rekoder dan iringan perkusi daripada kemahiran Tahun 4
 
-**Objektif:** Murid memainkan satu melodi kaunter pendek dan corak perkusi dengan tempo yang dapat diikuti.
+**Objektif:** Memainkan satu frasa rekoder berasaskan not G, A, B, C' dan D' dengan penjarian tepat serta satu pola perkusi empat detik.
 
-**Set induksi (4 minit):** Guru memaparkan skor mudah not G, A, B, C’ dan D’ serta contoh corak perkusi.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran dan hasil yang boleh diukur melalui aktiviti/penilaian guru.
 
-**Aktiviti 1 — Ulang kaji berfokus (8 minit):** Murid berlatih penjarian rekoder dan membaca frasa mengikut tempo dengan guru memberi maklum balas.
+**Set Induksi — 4 minit:** Guru memaparkan carta penjarian G/A/B/C'/D' dan kad pola perkusi, kemudian murid meneka dua not pada baluk.
 
-**Aktiviti 2 — Aplikasi dalam muzik (10 minit):** Kumpulan menggabungkan rekoder dan perkusi mengikut satu pola, kemudian menilai ketepatan dan kerjasama.
+**Aktiviti 1 — Ulang kaji khusus (8 minit):** Murid membaca skor ringkas yang pernah dilatih pada Tahun 4, menepuk detik sebelum meniup rekoder dan membetulkan penjarian di bawah bimbingan guru.
 
-**Pengukuhan dan pentaksiran (6 minit):** Rekod bacaan skor, penjarian, tempo dan koordinasi; berikan tugas pemulihan mengikut keperluan murid.
+**Aktiviti 2 — Aplikasi kemahiran (10 minit):** Kumpulan A memainkan frasa rekoder, Kumpulan B menepuk atau memainkan pola perkusi empat detik, kemudian kedua-dua kumpulan bertukar peranan.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang sudah dikuasai dan satu sasaran pembaikan; guru membuat rekod PBD.
+**Pengukuhan dan Penilaian — 6 minit:** Rubrik penjarian, tempo, iringan perkusi dan koordinasi ensembel; guru membuat intervensi mengikut kemahiran yang belum dikuasai.
 
-**Bahan:** Bahan dan instrumen sedia ada daripada PdP tahun ini; gunakan audio yang disahkan oleh guru sahaja.
+**Penutup — 2 minit:** Murid mengenal pasti satu perbezaan antara peranan melodi dengan iringan. Guru merekod pemerhatian PBD.
 
-**Nota sumber:** RPT lama menamakan projek ketiga dengan SP 5.1.2, 5.1.3. DSKP Pendidikan Muzik Tahun 4 menetapkan dua projek setahun. Kandungan PdP 35 merupakan cadangan pengukuhan CikguLaju yang perlu disahkan guru, bukan sebahagian daripada projek ketiga rasmi.
+**Bahan:** Rekoder individu bersih, carta G/A/B/C'/D', alat perkusi, skor rujukan terdahulu yang sah.
+
+**Rujukan dan had sumber:** Ini **cadangan ulang kaji** menggunakan kemahiran yang pernah dipelajari, bukan bab atau halaman baharu buku teks. RPT lama menamakan `Projek Seni Muzik 3`; DSKP Muzik mempunyai **dua projek rasmi** dan tidak menyokong pelabelan Projek 3. Kod SP sumber asal disimpan dalam manifest untuk audit; cadangan SK/SP ini belum diluluskan silang oleh pakar kurikulum. Tiada audio atau lirik diperolehi/diaktifkan oleh bot.
 
 **Refleksi / Tindakan susulan:** ____________________________________________
 
-**Kawalan penerbitan:** Belum FINAL READY, belum diaudit secara Word/PDF/Telegram/Web.
+**Audit:** SEMAKAN_SPESIFISITI_CADANGAN_PENGUKUHAN_20261106; bukan semakan teks buku, bukan kelulusan DSKP, belum Word/PDF, cuti negeri 2027, Telegram/Web atau FINAL READY.

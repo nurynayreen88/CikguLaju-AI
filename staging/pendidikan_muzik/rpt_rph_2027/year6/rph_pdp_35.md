@@ -2,28 +2,30 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** Penilaian dan Refleksi Akhir — Muzik Klasik Barat (cadangan)
-**SK / SP DSKP:** 4.1.1, 4.1.2
-**Status:** DRAF STAGING — PdP cadangan tambahan, bukan Projek Seni Muzik rasmi
+**SK/SP cadangan daripada DSKP/RPT (belum keputusan kelulusan):** 4.1.1, 4.1.2
 **Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — PdP cadangan pengukuhan guru, **BUKAN Projek Seni Muzik rasmi**
 
-**Fokus:** Apresiasi muzik zaman Classical
+**Fokus:** Penilaian apresiasi Classical Barat berdasarkan DSKP Tahun 6
 
-**Objektif:** Murid menyatakan tempoh zaman Classical serta memberikan dua maklumat tepat tentang satu karya yang didengar.
+**Objektif:** Menyatakan julat zaman Classical seperti dalam DSKP (1750–1830) dan dua fakta sah mengenai satu karya yang benar-benar disediakan guru.
 
-**Set induksi (4 minit):** Guru memperdengarkan petikan muzik zaman Classical yang berlesen untuk PdP.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran dan hasil yang boleh diukur melalui aktiviti/penilaian guru.
 
-**Aktiviti 1 — Ulang kaji berfokus (8 minit):** Murid mengingat semula sekitar 1750–1830 serta mengumpulkan maklumat karya daripada sumber yang disediakan guru.
+**Set Induksi — 4 minit:** Guru menunjukkan garis masa berlabel Classical 1750–1830 (rujukan DSKP); murid menyatakan satu perkara yang pernah dipelajari daripada Unit Rangkaian Globalisasi.
 
-**Aktiviti 2 — Aplikasi dalam muzik (10 minit):** Murid membuat ulasan pendek tentang komposer, negara asal dan judul karya yang benar-benar dimainkan, tanpa meneka rakaman.
+**Aktiviti 1 — Ulang kaji khusus (8 minit):** Murid mengenal komposer, tajuk karya serta negara asal hanya daripada nota sumber yang disediakan guru, tanpa mereka-reka nama atau rakaman.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak dua fakta tepat, kualiti ulasan dan satu sebab berdasarkan pendengaran; catat intervensi lanjut.
+**Aktiviti 2 — Aplikasi kemahiran (10 minit):** Murid mendengar karya yang hak penggunaannya telah disemak oleh guru, atau mengkaji nota karya tanpa audio, lalu menghasilkan dua ayat ulasan dengan satu bukti yang boleh diperiksa.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang sudah dikuasai dan satu sasaran pembaikan; guru membuat rekod PBD.
+**Pengukuhan dan Penilaian — 6 minit:** Semak julat Classical DSKP, dua fakta karya tepat serta satu alasan daripada bahan; rekod pemulihan bagi murid yang tidak dapat menyokong ulasan.
 
-**Bahan:** Bahan dan instrumen sedia ada daripada PdP tahun ini; gunakan audio yang disahkan oleh guru sahaja.
+**Penutup — 2 minit:** Murid menyatakan satu perbezaan antara bukti yang disahkan dengan tekaan dalam apresiasi muzik. Guru merekod pemerhatian PBD.
 
-**Nota sumber:** RPT lama menamakan projek ketiga dengan SP 5.1.3, 5.1.4. DSKP Pendidikan Muzik Tahun 6 menetapkan dua projek setahun. Kandungan PdP 35 merupakan cadangan pengukuhan CikguLaju yang perlu disahkan guru, bukan sebahagian daripada projek ketiga rasmi.
+**Bahan:** DSKP Muzik Tahun 6 sebagai rujukan julat, nota karya yang diperiksa guru dan kad soalan apresiasi.
+
+**Rujukan dan had sumber:** Ini **cadangan ulang kaji** menggunakan kemahiran yang pernah dipelajari, bukan bab atau halaman baharu buku teks. RPT lama menamakan `Projek Seni Muzik 3 — Persembahan`; DSKP Muzik mempunyai **dua projek rasmi** dan tidak menyokong pelabelan Projek 3. Kod SP sumber asal disimpan dalam manifest untuk audit; cadangan SK/SP ini belum diluluskan silang oleh pakar kurikulum. Tiada audio atau lirik diperolehi/diaktifkan oleh bot.
 
 **Refleksi / Tindakan susulan:** ____________________________________________
 
-**Kawalan penerbitan:** Belum FINAL READY, belum diaudit secara Word/PDF/Telegram/Web.
+**Audit:** SEMAKAN_SPESIFISITI_CADANGAN_PENGUKUHAN_20261106; bukan semakan teks buku, bukan kelulusan DSKP, belum Word/PDF, cuti negeri 2027, Telegram/Web atau FINAL READY.

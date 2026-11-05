@@ -2,28 +2,30 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** Penilaian dan Refleksi Muzik Akhir Tahun (cadangan)
-**SK / SP DSKP:** 3.1.3, 4.1.1
-**Status:** DRAF STAGING — PdP cadangan tambahan, bukan Projek Seni Muzik rasmi
+**SK/SP cadangan daripada DSKP/RPT (belum keputusan kelulusan):** 3.1.3, 4.1.1
 **Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — PdP cadangan pengukuhan guru, **BUKAN Projek Seni Muzik rasmi**
 
-**Fokus:** Persembahan corak irama ciptaan dan ulasan muzik
+**Fokus:** Penilaian ciptaan irama dan apresiasi budaya muzik Malaysia
 
-**Objektif:** Murid mempersembahkan satu corak ciptaan dan menyatakan dua ciri muzik masyarakat Malaysia yang telah dibincangkan.
+**Objektif:** Mempersembahkan satu corak irama ciptaan empat detik dan memberi dua ulasan tepat tentang alat sompoton atau muzik Sumazau yang telah dipelajari.
 
-**Set induksi (4 minit):** Guru mengimbas semula perbezaan corak irama dan contoh muzik masyarakat Malaysia yang dipelajari.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran dan hasil yang boleh diukur melalui aktiviti/penilaian guru.
 
-**Aktiviti 1 — Ulang kaji berfokus (8 minit):** Murid menyemak corak irama ciptaan masing-masing, membetulkan satu bahagian dan berlatih dalam pasangan.
+**Set Induksi — 4 minit:** Guru memaparkan ilustrasi sompoton dalam buku Kesenian Tahun 2 halaman 95–96 sebagai ulang kaji, tanpa menganggap PdP ini mempunyai halaman buku baharu.
 
-**Aktiviti 2 — Aplikasi dalam muzik (10 minit):** Murid mempersembahkan corak irama pendek dan memberi satu ulasan terhadap muzik yang didengar berdasarkan pengetahuan Tahun 2.
+**Aktiviti 1 — Ulang kaji khusus (8 minit):** Murid menyusun kad ikon menjadi corak empat detik, menepuk lalu mencatat satu pembetulan sebelum mempersembahkannya.
 
-**Pengukuhan dan pentaksiran (6 minit):** Guru menilai persembahan ciptaan dan ulasan; rekod pencapaian dan sasaran pengukuhan seterusnya.
+**Aktiviti 2 — Aplikasi kemahiran (10 minit):** Murid mempersembahkan irama ciptaan secara pasangan. Guru menyoal fungsi sompoton serta iringan Sumazau dan meminta dua ulasan berdasarkan bahan yang dibaca/didengar secara sah.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang sudah dikuasai dan satu sasaran pembaikan; guru membuat rekod PBD.
+**Pengukuhan dan Penilaian — 6 minit:** Rubrik dua komponen: corak empat detik tepat dan dua fakta apresiasi yang boleh disokong oleh bahan rujukan.
 
-**Bahan:** Bahan dan instrumen sedia ada daripada PdP tahun ini; gunakan audio yang disahkan oleh guru sahaja.
+**Penutup — 2 minit:** Murid menyatakan satu kekuatan hasil ciptaan serta satu kemahiran budaya muzik yang ingin diperbaiki. Guru merekod pemerhatian PBD.
 
-**Nota sumber:** RPT lama menamakan projek ketiga dengan SP 5.1.2, 5.1.3. DSKP Pendidikan Muzik Tahun 2 menetapkan dua projek setahun. Kandungan PdP 35 merupakan cadangan pengukuhan CikguLaju yang perlu disahkan guru, bukan sebahagian daripada projek ketiga rasmi.
+**Bahan:** Kad ikon perkusi, buku Kesenian Tahun 2 halaman 95–96 sebagai rujukan terdahulu dan kad respons.
+
+**Rujukan dan had sumber:** Ini **cadangan ulang kaji** menggunakan kemahiran yang pernah dipelajari, bukan bab atau halaman baharu buku teks. RPT lama menamakan `Projek Seni Muzik 3`; DSKP Muzik mempunyai **dua projek rasmi** dan tidak menyokong pelabelan Projek 3. Kod SP sumber asal disimpan dalam manifest untuk audit; cadangan SK/SP ini belum diluluskan silang oleh pakar kurikulum. Tiada audio atau lirik diperolehi/diaktifkan oleh bot.
 
 **Refleksi / Tindakan susulan:** ____________________________________________
 
-**Kawalan penerbitan:** Belum FINAL READY, belum diaudit secara Word/PDF/Telegram/Web.
+**Audit:** SEMAKAN_SPESIFISITI_CADANGAN_PENGUKUHAN_20261106; bukan semakan teks buku, bukan kelulusan DSKP, belum Word/PDF, cuti negeri 2027, Telegram/Web atau FINAL READY.

@@ -2,28 +2,30 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** Pengukuhan Akhir Tahun — Rekoder Ensemble (cadangan)
-**SK / SP DSKP:** 2.4.1, 2.4.2
-**Status:** DRAF STAGING — PdP cadangan tambahan, bukan Projek Seni Muzik rasmi
+**SK/SP cadangan daripada DSKP/RPT (belum keputusan kelulusan):** 2.4.1, 2.4.2
 **Tempoh cadangan:** 30 minit
+**Status:** DRAF STAGING — PdP cadangan pengukuhan guru, **BUKAN Projek Seni Muzik rasmi**
 
-**Fokus:** Penjarian julat C hingga D’ dan melodi kaunter
+**Fokus:** Pengukuhan melodi utama dan melodi kaunter rekoder
 
-**Objektif:** Murid memainkan melodi kaunter rekoder dengan sekurang-kurangnya tiga daripada empat aspek teknik yang betul.
+**Objektif:** Memainkan satu frasa melodi kaunter Memori Indah dengan tiga daripada empat teknik rekoder yang tepat bersama iringan detik.
 
-**Set induksi (4 minit):** Guru menunjukkan beberapa not C hingga D’ pada baluk; murid menamakan dan menunjukkan penjarian yang dipelajari.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran dan hasil yang boleh diukur melalui aktiviti/penilaian guru.
 
-**Aktiviti 1 — Ulang kaji berfokus (8 minit):** Murid memperbaiki postur, pernafasan, perlidahan dan penjarian bagi frasa daripada skor yang sah.
+**Set Induksi — 4 minit:** Guru mengimbas frasa Country Gardens dan melodi kaunter Memori Indah dari halaman 48–49 untuk mengenal perbezaan melodi utama dan kaunter.
 
-**Aktiviti 2 — Aplikasi dalam muzik (10 minit):** Dua kumpulan memainkan melodi utama dan kaunter secara bergilir lalu bergabung dalam ensembel kecil.
+**Aktiviti 1 — Ulang kaji khusus (8 minit):** Murid menyemak postur, penjarian, tanda nafas dan perlidahan daripada skor rekoder yang sudah dipelajari; guru memodelkan satu frasa menggunakan suara atau rekoder.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak ton, penjarian, tempo dan masa masuk sebelum memberi maklum balas.
+**Aktiviti 2 — Aplikasi kemahiran (10 minit):** Kumpulan A memainkan frasa rekoder dan Kumpulan B memberi ketukan detik; kemudian bertukar supaya setiap murid dapat memperbaiki penjarian dan keseimbangan bunyi.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang sudah dikuasai dan satu sasaran pembaikan; guru membuat rekod PBD.
+**Pengukuhan dan Penilaian — 6 minit:** Guru menilai penjarian, ton, tanda nafas dan tempo melalui dua percubaan yang berasingan.
 
-**Bahan:** Bahan dan instrumen sedia ada daripada PdP tahun ini; gunakan audio yang disahkan oleh guru sahaja.
+**Penutup — 2 minit:** Murid menerangkan fungsi melodi kaunter dan menyatakan satu teknik rekoder yang meningkat. Guru merekod pemerhatian PBD.
 
-**Nota sumber:** RPT lama menamakan projek ketiga dengan SP 5.1.1, 5.1.2. DSKP Pendidikan Muzik Tahun 6 menetapkan dua projek setahun. Kandungan PdP 34 merupakan cadangan pengukuhan CikguLaju yang perlu disahkan guru, bukan sebahagian daripada projek ketiga rasmi.
+**Bahan:** Buku Muzik Tahun 6 halaman 48–49 sebagai ulang kaji, rekoder individu bersih, kad penjarian dan skor guru.
+
+**Rujukan dan had sumber:** Ini **cadangan ulang kaji** menggunakan kemahiran yang pernah dipelajari, bukan bab atau halaman baharu buku teks. RPT lama menamakan `Projek Seni Muzik 3 — Perancangan`; DSKP Muzik mempunyai **dua projek rasmi** dan tidak menyokong pelabelan Projek 3. Kod SP sumber asal disimpan dalam manifest untuk audit; cadangan SK/SP ini belum diluluskan silang oleh pakar kurikulum. Tiada audio atau lirik diperolehi/diaktifkan oleh bot.
 
 **Refleksi / Tindakan susulan:** ____________________________________________
 
-**Kawalan penerbitan:** Belum FINAL READY, belum diaudit secara Word/PDF/Telegram/Web.
+**Audit:** SEMAKAN_SPESIFISITI_CADANGAN_PENGUKUHAN_20261106; bukan semakan teks buku, bukan kelulusan DSKP, belum Word/PDF, cuti negeri 2027, Telegram/Web atau FINAL READY.
