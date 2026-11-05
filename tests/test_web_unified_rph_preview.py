@@ -55,8 +55,9 @@ class UnifiedWebRPHTests(unittest.TestCase):
         self.assertEqual(self.client.get("/api/web/rph/preview").status_code, 401)
 
     @patch("web.unified_rph_web._has_paid_access", return_value=False)
-    @patch("web.unified_rph_web._account", return_value=({"telegram_user_id": 123}, None))
-    def test_free_user_gated_without_debit(self, *_):
+    @patch("web.unified_rph_web._account", return_value=(
+        {"authenticated":True,"telegram_user_id":123,"free_remaining":5},None))
+    def test_full_preview_stays_gated_without_trial_debit(self, *_):
         r = source_records(6, "ENGLISH")[0]
         resp = self.client.get("/api/web/rph/preview", query_string={
             "year": 6, "subject": "ENGLISH", "unit": r["unit"], "lesson": r["token"],
@@ -108,7 +109,8 @@ class UnifiedWebRPHTests(unittest.TestCase):
                 continue
             self.assertEqual(result.status_code, 200, result.get_json())
             self.assertEqual(result.get_json()["teacher"], {
-                "class": "5 Bestari", "date": "2027-03-08", "time": "08:30"})
+                "class": "5 Bestari", "date": "2027-03-08", "time": "08:30",
+                "students": ""})
             docx = self.client.get("/api/web/rph/word", query_string=query)
             self.assertEqual(docx.status_code, 200)
             with ZipFile(__import__("io").BytesIO(docx.data)) as z:

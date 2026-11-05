@@ -92,7 +92,21 @@ def telegram_session_status():
     if not account or account.get("telegram_user_id") != uid:
         return jsonify({"authenticated": False}), 401
     entitlement = display_trusted_account(account)
-    response = make_response(jsonify({"authenticated": True, **entitlement}))
+    from web.english_rpt_2027_http import _has_paid_access
+    paid = _has_paid_access(account)
+    remaining = account.get("free_remaining")
+    # Same source as Telegram, not an extra Web allocation. For paid users
+    # trial credits remain untouched and the interface shows unlimited access.
+    if type(remaining) is not int or not 0 <= remaining <= 10:
+        remaining = None
+    access_mode = "paid" if paid else (
+        "trial" if remaining is not None and remaining > 0 else
+        "exhausted" if remaining == 0 else "unavailable")
+    response = make_response(jsonify({
+        "authenticated": True, **entitlement,
+        "rph_access_mode": access_mode,
+        "rph_trial_remaining": remaining,
+    }))
     response.headers["Cache-Control"] = "no-store, private"
     return response
 
