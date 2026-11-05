@@ -8,7 +8,7 @@ import ast,json,re
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-NAME=re.compile(r"(?i)(?:en3|eng3|english.y3|year.?3|audio)")
+NAME=re.compile(r"(?i)(?:^_?en3|^_?eng3|english.?y3|year.?3)")
 KEY=re.compile(r"(?i)^\s*(?:0*93|lesson.?0*93)\s*$")
 
 def _targets(n):
@@ -60,6 +60,7 @@ def run():
         "source_tb_cd1_verified":False,
         "actual_media_file_id_verified":False,
         "live_telegram_send_verified":False,
+        "interpretation":"Only genuine Year3-specific top-level dictionary names were checked; Year4 maps must never count as Year3 evidence. Any missing Year3 audio source may be stored in a separate curriculum DB or indirect runtime route.",
         "release_status":"NO_FINAL_READY",
     }
     print("YEAR3_LESSON93_AUDIO_STATIC_ROUTE_SEARCH",json.dumps(report,sort_keys=True))
