@@ -1,6 +1,6 @@
 # English Year 5 Lesson 45 — Language Arts 8
 
-Official Year 5 SOW Lesson 45, printed p.82. Topic: Watching a Bumble Bee. Suggested duration: 60 minutes.
+Official Year 5 SOW Lesson 45, printed p.81. Topic: Watching a Bumble Bee. Suggested duration: 60 minutes.
 Main and complementary learning standards: Language Arts 5.3.1; Speaking 2.1.2.
 Materials: NON-TEXTBOOK: Watching a Bumble Bee, Anthology p.21; BPK Poetry Guidebook.
 

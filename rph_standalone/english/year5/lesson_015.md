@@ -1,6 +1,6 @@
 # English Year 5 — Standalone RPH — Lesson 015 (Language Arts 3)
 
-**Source:** Official Primary Year 5 SK Scheme of Work Lesson 15, printed p.50. **Theme:** World of Stories. **Topic:** Cats. **Duration:** 60 minutes suggested.
+**Source:** Official Primary Year 5 SK Scheme of Work Lesson 15, printed p.49. **Theme:** World of Stories. **Topic:** Cats. **Duration:** 60 minutes suggested.
 **Main CS/LS:** Language Arts 5.2/5.2.1. **Complementary CS/LS:** Listening 1.2/1.2.2. **Language focus:** continuous-tense verbs.
 **Learning objectives:** Main (Language Arts 5.2.1) — pupils explain in simple language why they like or dislike an event, description or character in a text in the Cats activities. Complementary (Listening 1.2.2) — pupils understand with support specific information and details of longer simple texts on a range of familiar topics through the linked listening task.
 **Success criteria (teacher-set):** Pupils complete the core activities and demonstrate an observable response for each skill.

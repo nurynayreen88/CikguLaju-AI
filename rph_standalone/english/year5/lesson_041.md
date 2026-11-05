@@ -1,6 +1,6 @@
 # English Year 5 Lesson 41 — Listening 8
 
-Official Year 5 SOW Lesson 41, printed p.78. Topic: Days. Suggested duration: 60 minutes.
+Official Year 5 SOW Lesson 41, printed p.77. Topic: Days. Suggested duration: 60 minutes.
 Main and complementary learning standards: Listening 1.2.4; Reading 3.2.3.
 Materials: SB p.24 Activities 1–3; TB p.38; CD 1-23; family-word Venn diagram.
 

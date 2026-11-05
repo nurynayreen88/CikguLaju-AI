@@ -1,6 +1,6 @@
 # English Year 5 Lesson 23 — Listening 5
 
-**Official SOW:** Lesson 23, printed p.59. **Topic:** Towns and cities. **Duration:** 60 minutes (suggested).
+**Official SOW:** Lesson 23, printed p.58. **Topic:** Towns and cities. **Duration:** 60 minutes (suggested).
 **Main and complementary CS/LS:** Listening 1.2/1.2.2; Writing 4.3/4.3.2.
 **Materials:** SB p.16 Activities 1–4; TB p.30; CD 1-16 and 1-17.
 **Learning objectives:** Main (Listening 1.2.2) — pupils understand with support specific information and details of longer simple texts on a range of familiar topics in the Towns and cities activities. Complementary (Writing 4.3.2) — pupils spell a range of high frequency words accurately in independent writing in the linked writing task.

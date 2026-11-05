@@ -1,6 +1,6 @@
 # English Year 5 Lesson 42 — Speaking 8
 
-Official Year 5 SOW Lesson 42, printed p.79. Topic: Days. Suggested duration: 60 minutes.
+Official Year 5 SOW Lesson 42, printed p.78. Topic: Days. Suggested duration: 60 minutes.
 Main and complementary learning standards: Speaking 2.1.1; Listening 1.1.1.
 Materials: SB p.24 Activity 4, p.25 Activities 1–3; TB p.38; CD 1-24.
 

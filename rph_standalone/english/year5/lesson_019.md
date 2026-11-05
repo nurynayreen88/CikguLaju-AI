@@ -1,6 +1,6 @@
 # English Year 5 Lesson 19 — Reading 4
 
-Official SOW: Lesson 19, printed p.55. Unit 1: Towns and cities. Suggested time: 60 minutes.
+Official SOW: Lesson 19, printed p.54. Unit 1: Towns and cities. Suggested time: 60 minutes.
 Standards: Reading 3.2/3.2.4; Speaking 2.1/2.1.5.
 Learning objective: Pupils demonstrate the stated skills through SOW-prescribed tasks.
 Materials: SB p.14 Activities 1–3; TB p.28; CD 1-15; dictionary.

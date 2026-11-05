@@ -1,6 +1,6 @@
 # English Year 5 Lesson 027 — Language Arts 5
 
-Official SOW Lesson 27, printed p.63. Topic: Serenade. Suggested duration: 60 minutes.
+Official SOW Lesson 27, printed p.62. Topic: Serenade. Suggested duration: 60 minutes.
 Main CS/LS: Language Arts 5.2 / 5.2.1. Complementary CS/LS: Reading 3.3 / 3.3.1.
 Materials: Anthology of Poems p.17, Serenade; BPK Poetry Guidebook.
 

@@ -1,6 +1,6 @@
 # English Year 5 Lesson 18 — Speaking 4
 
-Official SOW: Lesson 18, printed p.54. Unit 1: Towns and cities. Suggested time: 60 minutes.
+Official SOW: Lesson 18, printed p.53. Unit 1: Towns and cities. Suggested time: 60 minutes.
 Standards: Speaking 2.1/2.1.5; Writing 4.2/4.2.1.
 Learning objective: Pupils demonstrate the stated skills through SOW-prescribed tasks.
 Materials: SB p.13 Activities 5–6; TB p.27.

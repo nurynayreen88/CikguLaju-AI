@@ -1,6 +1,6 @@
 # English Year 5 Lesson 48 — Speaking 9
 
-Official SOW Lesson 48, printed p.85. Topic: Days. Suggested duration: 60 minutes.
+Official SOW Lesson 48, printed p.84. Topic: Days. Suggested duration: 60 minutes.
 Main and complementary learning standards: Speaking 2.1.4; Writing 4.2.2.
 Materials: SB p.28 Activities 4–6; TB p.42.
 

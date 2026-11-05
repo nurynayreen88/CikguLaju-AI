@@ -1,6 +1,6 @@
 # Year 5 English Lesson 29 — Listening 6
 
-Official SOW: Lesson 29, printed p.65. Topic: Options: Extra Listening and Speaking. Duration: 60 minutes.
+Official SOW: Lesson 29, printed p.64. Topic: Options: Extra Listening and Speaking. Duration: 60 minutes.
 Skills: Listening 1.2.5; Writing 4.3.2.
 Sources: SB p.92 Activities 1–3; TB p.106; CD 3-02, 3-03.
 

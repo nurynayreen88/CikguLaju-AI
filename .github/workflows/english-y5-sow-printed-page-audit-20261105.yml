@@ -9,7 +9,7 @@ on:
       - '.github/workflows/english-y5-sow-printed-page-audit-20261105.yml'
 permissions: {contents: read}
 jobs:
-  report-only:
+  strict-source-pages:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -17,4 +17,4 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
       - name: Audit all Year5 Lesson SOW printed pages from original source
-        run: python tools/audit_english_y5_sow_printed_page_citations_20261105.py
+        run: python tools/audit_english_y5_sow_printed_page_citations_20261105.py --strict

@@ -1,6 +1,6 @@
 # English Year 5 Lesson 025 — Reading 5
 
-Source: Official SOW Lesson 25, printed p.61. Unit 1: Towns and cities. Duration: 60 minutes.
+Source: Official SOW Lesson 25, printed p.60. Unit 1: Towns and cities. Duration: 60 minutes.
 Main CS/LS: Reading 3.2 / 3.2.2. Complementary CS/LS: Writing 4.3 / 4.3.2.
 Language focus: population, business, monument, castle, zoo; quite, really, very.
 Materials: English Plus 1 Student's Book p.19 Activities 1–4; Teacher's Book p.33; images of Malaysian buildings and a castle.

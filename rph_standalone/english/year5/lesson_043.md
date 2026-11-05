@@ -1,6 +1,6 @@
 # English Year 5 Lesson 43 — Reading 8
 
-Official Year 5 SOW Lesson 43, printed p.80. Topic: Days. Suggested duration: 60 minutes.
+Official Year 5 SOW Lesson 43, printed p.79. Topic: Days. Suggested duration: 60 minutes.
 Main and complementary learning standards: Reading 3.2.3; Listening 1.2.5.
 Materials: SB p.26 Activities 1–4; TB p.40; CD 1-25.
 
