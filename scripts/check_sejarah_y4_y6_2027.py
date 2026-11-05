@@ -33,7 +33,12 @@ for y, (num_sk, num_sp) in EXPECTED.items():
     assert len([m for m in matrix["records"] if m["year"] == y]) == (33 if y == 6 else 32)
     audited = {a["id"]:a for a in audit["rows"]}
     assert len(audited) == 11
+    calendar = json.loads((ROOT/"curriculum/sejarah/kalender_sejarah_2027_kumpulan_a_b.json").read_text())
+    assert calendar["academic_year"] == 2027
+    assert len(calendar["weeks"]["A"]) == len(calendar["weeks"]["B"]) == 36
+    assert calendar["planned_annual_hours"] >= calendar["min_annual_hours"]
     for i, x in enumerate(lesson, 1):
+        assert x["weeks"] == {"A":calendar["weeks"]["A"][i-1],"B":calendar["weeks"]["B"][i-1]}
         a0 = date.fromisoformat(x["weeks"]["A"]["start"])
         a1 = date.fromisoformat(x["weeks"]["A"]["end"])
         b0 = date.fromisoformat(x["weeks"]["B"]["start"])
@@ -42,6 +47,14 @@ for y, (num_sk, num_sp) in EXPECTED.items():
         assert 0 <= (b1 - b0).days <= 4, ("Kumpulan B minggu bertindih", y, i)
         assert a0.weekday() in (6, 0) and a1.weekday() in (0, 1, 2, 3)
         assert b0.weekday() == 0 and b1.weekday() in (2, 3, 4)
+        assert x["weeks"]["A"]["start"] not in calendar["full_week_closed"]["A"]
+        assert x["weeks"]["B"]["start"] not in calendar["full_week_closed"]["B"]
+        assert x["weeks"]["A"]["start"] != "2027-03-14"
+        for group in ("A", "B"):
+            day0 = date.fromisoformat(x["weeks"][group]["start"])
+            day1 = date.fromisoformat(x["weeks"][group]["end"])
+            for left,right in calendar["term_breaks"][group]:
+                assert day1 < date.fromisoformat(left) or day0 > date.fromisoformat(right), ("RPT weeks overlap term holiday",y,i,group)
         if previous_a: assert a0 > previous_a
         if previous_b: assert b0 > previous_b
         previous_a, previous_b = a1, b1

@@ -24,6 +24,8 @@ def check_calendar(data,year):
             start=date.fromisoformat(x["weeks"][group]["start"])
             end=date.fromisoformat(x["weeks"][group]["end"])
             assert date(2027,1,4)<=start<=end<=date(2027,12,3),(year,x["id"],group,start,end)
+            assert x["weeks"][group]["start"] not in (("2027-02-07","2027-05-16") if group=="A" else ("2027-02-08","2027-05-17"))
+            assert not(group=="A" and x["weeks"]["A"]["start"]=="2027-03-14")
             for a,b in BREAKS[group]:
                 assert end<date.fromisoformat(a) or start>date.fromisoformat(b),("PdP in KPM term break",year,x["id"],group,a,b)
 
