@@ -3,19 +3,19 @@
 **STATUS: DRAF SEMAK — BELUM READY / BELUM AKTIF TELEGRAM**
 
 **Tema:** Saya dan Negara  
-**Unit:** 14. Amalan Toleransi Demi Perpaduan Negara  
+**Unit:** 14. Amalan Toleransi Menjamin Perpaduan Negara  
 **Nilai:** Toleransi  
 **SK:** 14.0 — Amalan Toleransi Demi Perpaduan Negara  
 **SP:** 14.1 — Memberi contoh amalan toleransi demi perpaduan negara. | 14.2 — Menghuraikan kepentingan amalan toleransi demi perpaduan negara.  
 **Fokus:** Pengetahuan dan cara perlakuan  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Buku Teks Tahun 6 m/s 129–131 (PDF 138–140), kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year6/unit_14_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 14: Amalan Toleransi Menjamin Perpaduan Negara, m/s 132–135 (flipbook halaman 142–145); kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year6/unit_14_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid menyatakan dua amalan toleransi dan menghuraikan dua kepentingannya berdasarkan situasi buku teks. Kriteria kejayaan: Dua amalan nyata serta dua kepentingan dengan bukti kisah dan alasan; guru menyemak respons individu.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menunjukkan gambar/tajuk unit **Toleransi Mengeratkan Hubungan Negara** dari Buku Teks m/s 129. Murid mengenal pasti pihak yang terlibat, nilai toleransi dan satu tindakan yang wajar.
+**Set induksi (5 minit):** Guru memperlihatkan tajuk **Amalan Toleransi Menjamin Perpaduan Negara** dalam buku teks KSSR Semakan 2017, m/s 132, dan mengemukakan situasi berkaitan nilai unit. Murid mengenal pasti watak, tindakan serta satu keputusan yang munasabah mengikut SP PdP.
 
 **Aktiviti 1 (20 minit) — Toleransi Diamalkan Perpaduan Dikukuhkan:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 14, m/s 132–135, bahagian **Toleransi Diamalkan Perpaduan Dikukuhkan** sebagai rangsangan. Murid memberikan tiga contoh amalan toleransi ketika warga berlainan budaya atau pendapat berkongsi kemudahan awam (SP 14.1). Guru menyemak ketepatan evidens individu mengikut kata tugas SP dan memandu pembetulan yang perlu.
 
@@ -27,7 +27,7 @@ Murid menyatakan dua amalan toleransi dan menghuraikan dua kepentingannya berdas
 
 **Pembezaan:** Kad gambar/kata kunci untuk murid yang memerlukan sokongan; murid maju memberi dua justifikasi. Elakkan pendedahan hal peribadi atau agama.
 
-**Semakan visual buku teks:** Tahun 6, Unit 14 — **Toleransi Mengeratkan Hubungan Negara**; halaman bercetak 129–131 (PDF 138–140). Ilustrasi dan aktiviti pada halaman ini diperiksa secara visual bagi PdP 040 sahaja. Langkah PdP ialah penyesuaian guru CikguLaju.
+**Rekod audit sejarah — bukan pengesahan buku Semakan 2017:** Semakan terdahulu menggunakan PDF buku lama Unit 14, m/s 129–131 (PDF 138–140). Halaman tersebut tidak sah digunakan bagi aktiviti buku teks DBP 2021. Rujukan bab edisi terkini dan had buktinya direkodkan dalam perenggan Padanan bab di bawah.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 14, m/s 132–135 (flipbook 142–145); tajuk Toleransi Diamalkan Perpaduan Dikukuhkan / Kisah Hari Ini; SP 14.1 dan 14.2. Ini padanan isi kandungan bab dan olahan PdP, **bukan semakan visual penuh tugasan buku atau pengesahan kelas sebenar**.
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Read-only verification of 24 Year6 Moral textbook activity/RPH updates."""
+"""Historical-only verification of 24 Year6 old-edition scanned-book evidence records."""
 from __future__ import annotations
 import json
 from pathlib import Path
@@ -27,7 +27,10 @@ def main():
         assert book["printed_start_page"]<=from_p<=to_p<toc["units"][u]["printed_start_page"]
         file=ROOT/f"rph_standalone/pendidikan_moral/year6/lesson_{n:03d}.md"
         s=file.read_text(encoding="utf-8")
-        assert f"**Bukti buku teks disemak (2026-11-05):** Unit {u}" in s,file
+        assert f"**Rekod audit sejarah — buku edisi lama, bukan bukti Semakan 2017 (2026-11-05):** Unit {u}" in s,file
+        assert "**Bukti buku teks disemak (2026-11-05):**" not in s,file
+        assert "tidak boleh digunakan sebagai bukti aktiviti buku teks DBP 2021" in s,file
+        assert "Padanan bab edisi Semakan 2017" in s,file
         assert f"m/s {from_p}–{to_p}" in s and f"PDF {from_f}–{to_f}" in s,file
         assert "DRAF SEMAK" in s and "BELUM READY" in s,file
         assert len(s)>=1800
@@ -43,7 +46,7 @@ def main():
         for sp in needed:
             assert sp["code"] in s and sp["text"] in s,(file,sp["code"])
     assert not any(r["unit"] in (4,7) for r in data["records"])
-    print("PASS 24 original scanned-book / DSKP-aligned Year6 RPH; source-hold units 4/7 preserved")
+    print("PASS 24 Year6 old-edition source records are labelled HISTORICAL ONLY and cannot count as 2021 textbook activity verification")
     print("NOTE: individual A4 Word layout and live Telegram delivery remain separate gates.")
 if __name__=="__main__":
     main()

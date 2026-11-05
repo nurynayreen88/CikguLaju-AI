@@ -27,7 +27,7 @@ Murid menyiapkan tugasan **SP 12.1** (Memerihalkan contoh kerjasama demi keharmo
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Bukti buku teks disemak (2026-11-05):** Unit 12, m/s 109–113 (PDF 118–122). Bahan asal: Puisi Kerjasama Serikan Kehidupan, bantuan kepada mangsa bencana dan Bersama-sama Mencegah Jenayah. Aktiviti RPH ialah olahan PdP bagi SP rasmi, bukan salinan buku teks atau pengesahan amalan sebenar murid.
+**Rekod audit sejarah — buku edisi lama, bukan bukti Semakan 2017 (2026-11-05):** Unit 12, m/s 109–113 (PDF 118–122). Halaman ini berasal daripada buku teks lama di Drive. Ia direkodkan untuk jejak audit sahaja dan **tidak boleh digunakan sebagai bukti aktiviti buku teks DBP 2021**. Rujukan PdP semasa ialah bab edisi Semakan 2017 dalam perenggan berikut; aktiviti individu edisi baharu masih perlu disahkan.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 12, m/s 112–115 (flipbook 122–125); tajuk Kerjasama Kunci Keharmonian Negara / Sepakat Membanteras Jenayah; SP 12.1 dan 12.2. Ini padanan isi kandungan bab dan olahan PdP, **bukan semakan visual penuh tugasan buku atau pengesahan kelas sebenar**.
 

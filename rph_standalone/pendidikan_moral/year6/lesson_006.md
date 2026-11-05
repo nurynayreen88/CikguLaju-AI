@@ -9,13 +9,13 @@
 **SP:** 2.5 — Mengamalkan sikap memberi bantuan dan sokongan moral kepada negara.  
 **Fokus:** Tindakan moral dan refleksi  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Buku Teks Tahun 6 m/s 15–18 (PDF 24–27), kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year6/unit_02_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 2: Bantuan dan Sokongan Moral kepada Negara, m/s 18–20 (flipbook halaman 28–30); kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year6/unit_02_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid memperagakan tindakan baik hati melalui aktiviti kebajikan yang selamat dan merekod refleksi. Kriteria kejayaan: Senarai semak dua tindakan simulasi, produk kumpulan dan satu refleksi; kutipan wang tidak diwajibkan.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menunjukkan gambar/tajuk unit **Rakyat Baik Hati Membawa Berkat** dari Buku Teks m/s 15. Murid mengenal pasti pihak yang terlibat, nilai yang diuji dan satu kemungkinan tindakan.
+**Set induksi (5 minit):** Guru memperlihatkan tajuk **Bantuan dan Sokongan Moral kepada Negara** dalam buku teks KSSR Semakan 2017, m/s 18, dan mengemukakan situasi berkaitan nilai unit. Murid mengenal pasti watak, tindakan serta satu keputusan yang munasabah mengikut SP PdP.
 
 **Aktiviti 1 (20 minit) — Hulurkan Bantuan Jadikan Amalan:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 2, m/s 18–20, bahagian **Hulurkan Bantuan Jadikan Amalan** sebagai rangsangan. Murid merancang simulasi khidmat bantuan seperti mengagihkan kad keperluan tanpa pungutan wang sebenar (SP 2.5). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
 
@@ -27,7 +27,7 @@ Murid memperagakan tindakan baik hati melalui aktiviti kebajikan yang selamat da
 
 **Pembezaan:** Murid yang memerlukan bimbingan mendapat kad gambar/kata kunci; murid yang lebih maju memberikan justifikasi tambahan. Tiada pendedahan pengalaman peribadi diwajibkan.
 
-**Semakan visual buku teks:** Tahun 6, Unit 2 — **Rakyat Baik Hati Membawa Berkat**; halaman bercetak 15–18 (PDF 24–27). Ilustrasi dan aktiviti pada halaman ini diperiksa secara visual bagi PdP 006 sahaja. Langkah PdP ialah penyesuaian guru CikguLaju, bukan petikan penuh buku teks.
+**Rekod audit sejarah — bukan pengesahan buku Semakan 2017:** Semakan terdahulu menggunakan PDF buku lama Unit 2, m/s 15–18 (PDF 24–27). Halaman tersebut tidak sah digunakan bagi aktiviti buku teks DBP 2021. Rujukan bab edisi terkini dan had buktinya direkodkan dalam perenggan Padanan bab di bawah.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 2, m/s 18–20 (flipbook 28–30), bahagian Hulurkan Bantuan Jadikan Amalan / Mari Uji Diri; SP 2.5. Ini pemetaan bab dan olahan tugasan mengikut DSKP, **bukan semakan visual menyeluruh aktiviti buku atau bukti amalan murid**.
 

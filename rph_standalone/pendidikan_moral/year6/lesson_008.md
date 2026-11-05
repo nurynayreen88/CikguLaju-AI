@@ -9,13 +9,13 @@
 **SP:** 3.3 — Menjana idea kesan pengabaian tanggungjawab sebagai warganegara. | 3.4 — Mengekspresikan perasaan berkaitan dengan amalan bertanggungjawab sebagai warganegara.  
 **Fokus:** Penaakulan kesan dan emosi  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Buku Teks Tahun 6 m/s 22–24 (PDF 31–33), kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year6/unit_03_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 3: Tanggungjawab sebagai Warganegara, m/s 26–28 (flipbook halaman 36–38); kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year6/unit_03_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid menghuraikan kepentingan tanggungjawab negara dan mengekspresikan perasaan dengan sebab. Kriteria kejayaan: Dua kepentingan bersebab serta satu perasaan dengan alasan berkaitan bantuan kemanusiaan.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menunjukkan gambar/tajuk unit **Kempen Kemanusiaan Tanggungjawab Bersama** dari Buku Teks m/s 22. Murid mengenal pasti pihak yang terlibat, nilai yang diuji dan satu kemungkinan tindakan.
+**Set induksi (5 minit):** Guru memperlihatkan tajuk **Tanggungjawab sebagai Warganegara** dalam buku teks KSSR Semakan 2017, m/s 26, dan mengemukakan situasi berkaitan nilai unit. Murid mengenal pasti watak, tindakan serta satu keputusan yang munasabah mengikut SP PdP.
 
 **Aktiviti 1 (20 minit) — Fikir Sebelum Kongsi:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 3, m/s 26–28, bahagian **Fikir Sebelum Kongsi** sebagai rangsangan. Murid menjana dua kesan jika rakyat berkongsi maklumat tidak sahih atau mengabaikan tanggungjawab menjaga nama negara (SP 3.3). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
 
@@ -27,7 +27,7 @@ Murid menghuraikan kepentingan tanggungjawab negara dan mengekspresikan perasaan
 
 **Pembezaan:** Murid yang memerlukan bimbingan mendapat kad gambar/kata kunci; murid yang lebih maju memberikan justifikasi tambahan. Tiada pendedahan pengalaman peribadi diwajibkan.
 
-**Semakan visual buku teks:** Tahun 6, Unit 3 — **Kempen Kemanusiaan Tanggungjawab Bersama**; halaman bercetak 22–24 (PDF 31–33). Ilustrasi dan aktiviti pada halaman ini diperiksa secara visual bagi PdP 008 sahaja. Langkah PdP ialah penyesuaian guru CikguLaju, bukan petikan penuh buku teks.
+**Rekod audit sejarah — bukan pengesahan buku Semakan 2017:** Semakan terdahulu menggunakan PDF buku lama Unit 3, m/s 22–24 (PDF 31–33). Halaman tersebut tidak sah digunakan bagi aktiviti buku teks DBP 2021. Rujukan bab edisi terkini dan had buktinya direkodkan dalam perenggan Padanan bab di bawah.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 3, m/s 26–28 (flipbook 36–38), bahagian Fikir Sebelum Kongsi / Jaga Nama Negara Tanggungjawab Bersama; SP 3.3 dan 3.4. Ini pemetaan bab dan olahan tugasan mengikut DSKP, **bukan semakan visual menyeluruh aktiviti buku atau bukti amalan murid**.
 

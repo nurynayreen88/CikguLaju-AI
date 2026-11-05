@@ -27,7 +27,7 @@ Murid menyiapkan tugasan **SP 9.1** (Menyenaraikan contoh amalan berani memperta
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Bukti buku teks disemak (2026-11-05):** Unit 9, m/s 79–82 (PDF 88–91). Sumber visual: Tokoh sukan mempertahankan nama negara, Sahut Cabaran demi Negara dan buku skrap maruah negara. Aktiviti olahan CikguLaju berpandukan DSKP dan contoh buku teks; jika konsep hanya dalam DSKP, tidak didakwa berasal daripada ilustrasi buku.
+**Rekod audit sejarah — buku edisi lama, bukan bukti Semakan 2017 (2026-11-05):** Unit 9, m/s 79–82 (PDF 88–91). Halaman ini berasal daripada buku teks lama di Drive. Ia direkodkan untuk jejak audit sahaja dan **tidak boleh digunakan sebagai bukti aktiviti buku teks DBP 2021**. Rujukan PdP semasa ialah bab edisi Semakan 2017 dalam perenggan berikut; aktiviti individu edisi baharu masih perlu disahkan.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 9, m/s 82–85 (flipbook 92–95); tajuk Mempertahankan Maruah Malaysia Tercinta / Berani kerana Benar; SP 9.1 dan 9.2. Ini padanan isi kandungan bab dan olahan PdP, **bukan semakan visual penuh tugasan buku atau pengesahan kelas sebenar**.
 

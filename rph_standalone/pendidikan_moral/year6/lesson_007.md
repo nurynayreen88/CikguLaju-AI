@@ -9,13 +9,13 @@
 **SP:** 3.1 — Memberikan definisi warganegara. | 3.2 — Menghuraikan cara melaksanakan tanggungjawab sebagai warganegara.  
 **Fokus:** Pengetahuan dan cara perlakuan  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Buku Teks Tahun 6 m/s 19–21 (PDF 28–30), kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year6/unit_03_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 3: Tanggungjawab sebagai Warganegara, m/s 22–25 (flipbook halaman 32–35); kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year6/unit_03_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid menyenaraikan tiga tanggungjawab warganegara dan menerangkan cara menggalasnya. Kriteria kejayaan: Tiga tanggungjawab serta dua cara dan alasan yang sesuai bagi situasi bencana.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menunjukkan gambar/tajuk unit **Kempen Kemanusiaan Tanggungjawab Bersama** dari Buku Teks m/s 19. Murid mengenal pasti pihak yang terlibat, nilai yang diuji dan satu kemungkinan tindakan.
+**Set induksi (5 minit):** Guru memperlihatkan tajuk **Tanggungjawab sebagai Warganegara** dalam buku teks KSSR Semakan 2017, m/s 22, dan mengemukakan situasi berkaitan nilai unit. Murid mengenal pasti watak, tindakan serta satu keputusan yang munasabah mengikut SP PdP.
 
 **Aktiviti 1 (20 minit) — Kita Anak Malaysia:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 3, m/s 22–25, bahagian **Kita Anak Malaysia** sebagai rangsangan. Murid memberikan definisi warganegara menggunakan ayat sendiri, kemudian mengaitkan identiti Malaysia dengan situasi masyarakat pelbagai latar (SP 3.1). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
 
@@ -27,7 +27,7 @@ Murid menyenaraikan tiga tanggungjawab warganegara dan menerangkan cara menggala
 
 **Pembezaan:** Murid yang memerlukan bimbingan mendapat kad gambar/kata kunci; murid yang lebih maju memberikan justifikasi tambahan. Tiada pendedahan pengalaman peribadi diwajibkan.
 
-**Semakan visual buku teks:** Tahun 6, Unit 3 — **Kempen Kemanusiaan Tanggungjawab Bersama**; halaman bercetak 19–21 (PDF 28–30). Ilustrasi dan aktiviti pada halaman ini diperiksa secara visual bagi PdP 007 sahaja. Langkah PdP ialah penyesuaian guru CikguLaju, bukan petikan penuh buku teks.
+**Rekod audit sejarah — bukan pengesahan buku Semakan 2017:** Semakan terdahulu menggunakan PDF buku lama Unit 3, m/s 19–21 (PDF 28–30). Halaman tersebut tidak sah digunakan bagi aktiviti buku teks DBP 2021. Rujukan bab edisi terkini dan had buktinya direkodkan dalam perenggan Padanan bab di bawah.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 3, m/s 22–25 (flipbook 32–35), bahagian Kita Anak Malaysia / Negaraku Tanggungjawabku; SP 3.1 dan 3.2. Ini pemetaan bab dan olahan tugasan mengikut DSKP, **bukan semakan visual menyeluruh aktiviti buku atau bukti amalan murid**.
 

@@ -27,7 +27,7 @@ Murid memperagakan tindakan berdasarkan **11.5: Mengamalkan sikap rajin demi kem
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Bukti buku teks disemak (2026-11-05):** Unit 11, m/s 103–108 (PDF 112–117). Contoh asal: Usaha Berterusan Negara Jaya, Rajin Membaca Negara Gemilang dan penilaian. RPH ini mengolah contoh dalam buku mengikut SP DSKP, bukan menyalin petikan buku atau mendakwa amalan sebenar di luar PdP.
+**Rekod audit sejarah — buku edisi lama, bukan bukti Semakan 2017 (2026-11-05):** Unit 11, m/s 103–108 (PDF 112–117). Halaman ini berasal daripada buku teks lama di Drive. Ia direkodkan untuk jejak audit sahaja dan **tidak boleh digunakan sebagai bukti aktiviti buku teks DBP 2021**. Rujukan PdP semasa ialah bab edisi Semakan 2017 dalam perenggan berikut; aktiviti individu edisi baharu masih perlu disahkan.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 11, m/s 108–110 (flipbook 118–120); tajuk Rajin Berusaha Usahawan Berjaya / Mari Uji Diri; SP 11.5. Ini padanan isi kandungan bab dan olahan PdP, **bukan semakan visual penuh tugasan buku atau pengesahan kelas sebenar**.
 

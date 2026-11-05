@@ -27,7 +27,7 @@ Murid menyiapkan tugasan **SP 6.1** (Memberi contoh identiti negara.) dan **SP 6
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Bukti buku teks disemak (2026-11-05):** Unit 6, m/s 49–52 (PDF 58–61). Kandungan asal yang digunakan: Puisi Hormati Negara Rakyat Sejahtera, Jalur Gemilang dan jadual Rukun Negara. Aktiviti PdP merupakan olahan CikguLaju berpandukan halaman sumber, bukan petikan verbatim dan bukan bukti amalan harian murid.
+**Rekod audit sejarah — buku edisi lama, bukan bukti Semakan 2017 (2026-11-05):** Unit 6, m/s 49–52 (PDF 58–61). Halaman ini berasal daripada buku teks lama di Drive. Ia direkodkan untuk jejak audit sahaja dan **tidak boleh digunakan sebagai bukti aktiviti buku teks DBP 2021**. Rujukan PdP semasa ialah bab edisi Semakan 2017 dalam perenggan berikut; aktiviti individu edisi baharu masih perlu disahkan.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 6, m/s 52–55 (flipbook 62–65), bahagian Identiti Negara Kebanggaan Kita / Megah Berkibar Jalur Gemilang; SP 6.1 dan 6.2. Ini pemetaan bab dan olahan tugasan mengikut DSKP, **bukan semakan visual menyeluruh aktiviti buku atau bukti amalan murid**.
 

@@ -27,7 +27,7 @@ Murid menghuraikan atau menilai berdasarkan **6.3: Menaakul kepentingan menghorm
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Bukti buku teks disemak (2026-11-05):** Unit 6, m/s 52–55 (PDF 61–64). Kandungan asal yang digunakan: Ilustrasi penghormatan identiti negara, lambang negara dipelihara dan hasil karya Bunga Raya. Aktiviti PdP merupakan olahan CikguLaju berpandukan halaman sumber, bukan petikan verbatim dan bukan bukti amalan harian murid.
+**Rekod audit sejarah — buku edisi lama, bukan bukti Semakan 2017 (2026-11-05):** Unit 6, m/s 52–55 (PDF 61–64). Halaman ini berasal daripada buku teks lama di Drive. Ia direkodkan untuk jejak audit sahaja dan **tidak boleh digunakan sebagai bukti aktiviti buku teks DBP 2021**. Rujukan PdP semasa ialah bab edisi Semakan 2017 dalam perenggan berikut; aktiviti individu edisi baharu masih perlu disahkan.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 6, m/s 56–58 (flipbook 66–68), bahagian Hormati Identiti Negara Kewajipan Kita / Semarakkan Identiti Negara; SP 6.3 dan 6.4. Ini pemetaan bab dan olahan tugasan mengikut DSKP, **bukan semakan visual menyeluruh aktiviti buku atau bukti amalan murid**.
 

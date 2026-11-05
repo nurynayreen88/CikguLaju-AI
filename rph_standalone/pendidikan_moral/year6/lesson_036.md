@@ -27,7 +27,7 @@ Murid memperagakan tindakan berdasarkan **12.5: Mengamalkan sikap bekerjasama de
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Bukti buku teks disemak (2026-11-05):** Unit 12, m/s 113–118 (PDF 122–127). Bahan asal: Bersama-sama Mencegah Jenayah, Dasar Kerajaan Dijayakan Bersama serta penilaian. Aktiviti RPH ialah olahan PdP bagi SP rasmi, bukan salinan buku teks atau pengesahan amalan sebenar murid.
+**Rekod audit sejarah — buku edisi lama, bukan bukti Semakan 2017 (2026-11-05):** Unit 12, m/s 113–118 (PDF 122–127). Halaman ini berasal daripada buku teks lama di Drive. Ia direkodkan untuk jejak audit sahaja dan **tidak boleh digunakan sebagai bukti aktiviti buku teks DBP 2021**. Rujukan PdP semasa ialah bab edisi Semakan 2017 dalam perenggan berikut; aktiviti individu edisi baharu masih perlu disahkan.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 12, m/s 118–120 (flipbook 128–130); tajuk Rakyat Bekerjasama Negara Aman / Mari Uji Diri; SP 12.5. Ini padanan isi kandungan bab dan olahan PdP, **bukan semakan visual penuh tugasan buku atau pengesahan kelas sebenar**.
 

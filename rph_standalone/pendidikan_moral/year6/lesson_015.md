@@ -27,7 +27,7 @@ Murid memperagakan tindakan berdasarkan **5.5: Mengamalkan sikap hemah tinggi de
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Bukti buku teks disemak (2026-11-05):** Unit 5, m/s 43–48 (PDF 52–57). Kandungan asal yang digunakan: Dialog di kaunter, ungkapan bersopan, situasi amalan dan penilaian formatif/sumatif. Aktiviti PdP merupakan olahan CikguLaju berpandukan halaman sumber, bukan petikan verbatim dan bukan bukti amalan harian murid.
+**Rekod audit sejarah — buku edisi lama, bukan bukti Semakan 2017 (2026-11-05):** Unit 5, m/s 43–48 (PDF 52–57). Halaman ini berasal daripada buku teks lama di Drive. Ia direkodkan untuk jejak audit sahaja dan **tidak boleh digunakan sebagai bukti aktiviti buku teks DBP 2021**. Rujukan PdP semasa ialah bab edisi Semakan 2017 dalam perenggan berikut; aktiviti individu edisi baharu masih perlu disahkan.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 5, m/s 49–50 (flipbook 59–60), bahagian Berhemah Tinggi demi Negara / Mari Uji Diri; SP 5.5. Ini pemetaan bab dan olahan tugasan mengikut DSKP, **bukan semakan visual menyeluruh aktiviti buku atau bukti amalan murid**.
 

@@ -27,7 +27,7 @@ Murid menyiapkan tugasan **SP 10.1** (Menyenaraikan cara bersikap jujur demi kes
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Bukti buku teks disemak (2026-11-05):** Unit 10, m/s 89–93 (PDF 98–102). Contoh asal: Keratan berita rasuah, contoh kejujuran membanteras penyelewengan dan Kejujuran Membawa Manfaat. RPH ini mengolah contoh dalam buku mengikut SP DSKP, bukan menyalin petikan buku atau mendakwa amalan sebenar di luar PdP.
+**Rekod audit sejarah — buku edisi lama, bukan bukti Semakan 2017 (2026-11-05):** Unit 10, m/s 89–93 (PDF 98–102). Halaman ini berasal daripada buku teks lama di Drive. Ia direkodkan untuk jejak audit sahaja dan **tidak boleh digunakan sebagai bukti aktiviti buku teks DBP 2021**. Rujukan PdP semasa ialah bab edisi Semakan 2017 dalam perenggan berikut; aktiviti individu edisi baharu masih perlu disahkan.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 10, m/s 92–95 (flipbook 102–105); tajuk Kejujuran Diamalkan Kesejahteraan Negara Diutamakan / Pantun Kejujuran demi Kesejahteraan Negara; SP 10.1 dan 10.2. Ini padanan isi kandungan bab dan olahan PdP, **bukan semakan visual penuh tugasan buku atau pengesahan kelas sebenar**.
 

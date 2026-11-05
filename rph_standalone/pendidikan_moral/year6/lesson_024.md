@@ -27,7 +27,7 @@ Murid memperagakan tindakan berdasarkan **8.5: Mengamalkan sikap adil demi kesej
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Bukti buku teks disemak (2026-11-05):** Unit 8, m/s 75–78 (PDF 84–87). Sumber visual: Jalankan Tugas Secara Saksama, Membuat Keputusan Secara Adil serta penilaian. Aktiviti olahan CikguLaju berpandukan DSKP dan contoh buku teks; jika konsep hanya dalam DSKP, tidak didakwa berasal daripada ilustrasi buku.
+**Rekod audit sejarah — buku edisi lama, bukan bukti Semakan 2017 (2026-11-05):** Unit 8, m/s 75–78 (PDF 84–87). Halaman ini berasal daripada buku teks lama di Drive. Ia direkodkan untuk jejak audit sahaja dan **tidak boleh digunakan sebagai bukti aktiviti buku teks DBP 2021**. Rujukan PdP semasa ialah bab edisi Semakan 2017 dalam perenggan berikut; aktiviti individu edisi baharu masih perlu disahkan.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 8, m/s 78–80 (flipbook 88–90), bahagian Keadilan Ditegakkan Rakyat Sejahtera / Mari Uji Diri; SP 8.5. Ini pemetaan bab dan olahan tugasan mengikut DSKP, **bukan semakan visual menyeluruh aktiviti buku atau bukti amalan murid**.
 

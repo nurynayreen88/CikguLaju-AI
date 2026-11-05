@@ -9,13 +9,13 @@
 **SP:** 3.5 — Mengamalkan sikap bertanggungjawab sebagai warganegara.  
 **Fokus:** Tindakan moral dan refleksi  
 **Tempoh PdP:** 60 minit (cadangan; guru sesuaikan jadual waktu). **Kelas/Tarikh:** Mengikut jadual guru dan cuti negeri yang disahkan.  
-**BBM:** Buku Teks Tahun 6 m/s 25–28 (PDF 34–37), kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year6/unit_03_kad_aktiviti.md`.
+**BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 3: Tanggungjawab sebagai Warganegara, m/s 28–30 (flipbook halaman 38–40); kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year6/unit_03_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
 Murid menunjukkan dua tindakan bertanggungjawab dalam simulasi kempen kemanusiaan dan membuat refleksi. Kriteria kejayaan: Rekod dua tindakan kumpulan, satu produk kempen dan refleksi kendiri; tindakan sebenar di luar kelas memerlukan bukti lanjut.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menunjukkan gambar/tajuk unit **Kempen Kemanusiaan Tanggungjawab Bersama** dari Buku Teks m/s 25. Murid mengenal pasti pihak yang terlibat, nilai yang diuji dan satu kemungkinan tindakan.
+**Set induksi (5 minit):** Guru memperlihatkan tajuk **Tanggungjawab sebagai Warganegara** dalam buku teks KSSR Semakan 2017, m/s 28, dan mengemukakan situasi berkaitan nilai unit. Murid mengenal pasti watak, tindakan serta satu keputusan yang munasabah mengikut SP PdP.
 
 **Aktiviti 1 (20 minit) — Jaga Diri Lindungi Negara:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 3, m/s 28–30, bahagian **Jaga Diri Lindungi Negara** sebagai rangsangan. Murid merancang situasi memeriksa kesahihan berita dan menjaga kemudahan awam sebagai tanggungjawab warga tanpa berkongsi data peribadi (SP 3.5). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
 
@@ -27,7 +27,7 @@ Murid menunjukkan dua tindakan bertanggungjawab dalam simulasi kempen kemanusiaa
 
 **Pembezaan:** Murid yang memerlukan bimbingan mendapat kad gambar/kata kunci; murid yang lebih maju memberikan justifikasi tambahan. Tiada pendedahan pengalaman peribadi diwajibkan.
 
-**Semakan visual buku teks:** Tahun 6, Unit 3 — **Kempen Kemanusiaan Tanggungjawab Bersama**; halaman bercetak 25–28 (PDF 34–37). Ilustrasi dan aktiviti pada halaman ini diperiksa secara visual bagi PdP 009 sahaja. Langkah PdP ialah penyesuaian guru CikguLaju, bukan petikan penuh buku teks.
+**Rekod audit sejarah — bukan pengesahan buku Semakan 2017:** Semakan terdahulu menggunakan PDF buku lama Unit 3, m/s 25–28 (PDF 34–37). Halaman tersebut tidak sah digunakan bagi aktiviti buku teks DBP 2021. Rujukan bab edisi terkini dan had buktinya direkodkan dalam perenggan Padanan bab di bawah.
 
 **Padanan bab edisi Semakan 2017 (audit 2026-11-05):** Unit 3, m/s 28–30 (flipbook 38–40), bahagian Jaga Diri Lindungi Negara / Mari Uji Diri; SP 3.5. Ini pemetaan bab dan olahan tugasan mengikut DSKP, **bukan semakan visual menyeluruh aktiviti buku atau bukti amalan murid**.
 
