@@ -40,8 +40,8 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
                 all_keys.add(row["pdp_id"])
                 self.assertTrue(row["unit"].strip())
                 self.assertTrue(row["sp"])
-                self.assertRegex(row["rpt2027_slot"]["groupA"], r"^\\d{2}/\\d{2}")
-                self.assertRegex(row["rpt2027_slot"]["groupB"], r"^\\d{2}/\\d{2}")
+                self.assertRegex(row["rpt2027_slot"]["groupA"], r"^\d{2}/\d{2}")
+                self.assertRegex(row["rpt2027_slot"]["groupB"], r"^\d{2}/\d{2}")
                 md = (directory / f"rph_pdp_{i:02d}.md").read_text(encoding="utf-8")
                 self.assertIn(row["unit"], md)
                 self.assertIn(f"PdP {i:02d}", md)
@@ -54,7 +54,7 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
                 self.assertEqual(md.count("**Aktiviti 1"), 1)
                 self.assertEqual(md.count("**Aktiviti 2"), 1)
                 for sp in row["sp"]:
-                    self.assertRegex(sp, r"^[1-5][.][1-9][.]\\d{1,2}$")
+                    self.assertRegex(sp, r"^[1-5][.][1-9][.]\d{1,2}$")
                 missing = set(row["sp"]) - known_sp
                 if missing:
                     self.assertEqual(year, 4, "Unknown SP outside known Year 4 source conflict")
