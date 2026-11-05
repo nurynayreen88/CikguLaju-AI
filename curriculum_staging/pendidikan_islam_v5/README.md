@@ -31,3 +31,21 @@ Library folder: `/CikguLaju/Pendidikan_Islam_2027_STAGING/`
 - No merges to `main`; no changes to live `app.py`, DB, prices, menus, or subject data.
 
 **Do NOT label READY or merge/deploy this PR. This is only a safe, testable step toward release.**
+
+## V6 restricted preview after Year → Lesson (not live)
+
+The new `staging_gateway.py` exposes an **independent, read-only WSGI interface** for testing the exact 696 RPH candidates; it does **not** register routes into existing Telegram or Web services.
+
+* `/api/pi/lessons?year=2`: list stages and optional tasmi guides by Lesson.
+* `/api/pi/lesson?year=2&lesson=1`: metadata only, never marks final ready.
+* `/api/pi/preview?year=2&lesson=1`: inline PDF preview after selection.
+* `/api/pi/word?year=2&lesson=1`: draft Word download.
+* `/api/pi/tasmi?year=2&lesson=35`: optional teacher-only tasmi guide.
+* `/api/pi/rpt?year=2&format=pdf|docx`: draft RPT.
+* `/api/pi/status`: 696 total, six held, 0 approved.
+
+Access requires explicit `PI_V5_STAGING_GATEWAY=1`, matching `PI_V5_ARCHIVE` and `PI_V5_PREVIEW_ARCHIVE` local file paths, and a **24+ character** `PI_V5_STAGING_TOKEN`. Every non-health route requires `Authorization: Bearer <secret>`; absent/invalid auth returns 403. `TAHAN_SEMAKAN_KANDUNGAN` lessons return 423 for Word/PDF. No CORS, no cache, no default production activation, and no DB or quota changes. Both ZIP archives must be securely mounted; they do not exist on Render just because they are in ChatGPT Library.
+
+**QA (5 Nov 2026): 25/25 local tests passed** with real ZIP files mounted, and GitHub Actions [run 41977534624](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/41977534624) passed synthetic tests. They are not live Telegram message tests.
+
+**Blocking issue confirmed:** all 696 PDF previews visibly contain `STAGING 2027` and `Bukan READY` / draft notice. The six held lessons are T2-L035, T6-L006/L014/L018/L060/L117. The content is unsuitable for public release or automatic subscription delivery until expert sign-off and revised release assets. The printed label should NOT be stripped merely to make the file appear ready.
