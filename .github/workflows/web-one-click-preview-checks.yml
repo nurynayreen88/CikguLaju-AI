@@ -1,0 +1,42 @@
+name: Web one-click RPH preview regression
+
+on:
+  push:
+    branches:
+      - staging/web-one-click-preview-20261105
+      - staging/cikgulaju-web-v1
+    paths:
+      - '.github/workflows/web-one-click-preview-checks.yml'
+      - 'web_v1_static_preview/index.html'
+      - 'tests/test_web_v1_quick_preview.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Flask for isolated tests
+        run: python -m pip install 'flask==3.1.2'
+      - name: Validate UI script syntax
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          html=Path('web_v1_static_preview/index.html').read_text(encoding='utf8')
+          scripts=re.findall(r'<script>\s*(.*?)\s*</script>',html,flags=re.S)
+          assert len(scripts)==1
+          Path('/tmp/cikgulaju-web-one-click.js').write_text(scripts[0],encoding='utf8')
+          PY
+          node --check /tmp/cikgulaju-web-one-click.js
+      - name: Run exact-selection, authorization and UI regression
+        run: |
+          python -m unittest discover -s tests -p 'test_web_v1_quick_preview.py' -v
+          python -m unittest discover -s tests -p 'test_web_unified_rph_preview.py' -v
