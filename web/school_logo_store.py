@@ -18,14 +18,17 @@ MAX_INPUT = 2 * 1024 * 1024
 MAX_SAVED = 450 * 1024
 
 
-def _object_url(supabase_url, user_id):
+def _object_url(supabase_url, user_id, *, authenticated=False):
     parsed = urlsplit(supabase_url)
     if (parsed.scheme != "https" or not parsed.hostname or parsed.port is not None
             or parsed.path not in ("", "/") or parsed.query or parsed.fragment
             or parsed.username or parsed.password or type(user_id) is not int
             or user_id < 1):
         raise ProfileUnavailable("Konfigurasi storan tidak sah")
-    return supabase_url.rstrip("/") + "/storage/v1/object/" + BUCKET + (
+    # Supabase private downloads use /object/authenticated/...; uploads
+    # use /object/... . Never switch this bucket to public access.
+    prefix = "/storage/v1/object/authenticated/" if authenticated else "/storage/v1/object/"
+    return supabase_url.rstrip("/") + prefix + BUCKET + (
         "/school-logos/%d/logo.png" % user_id)
 
 
@@ -105,7 +108,7 @@ def normalized_png(source):
 def logo_png(supabase_url, service_key, user_id, *, opener=None):
     if not service_key:
         raise ProfileUnavailable("Sambungan storan belum tersedia")
-    request = Request(_object_url(supabase_url, user_id), headers={
+    request = Request(_object_url(supabase_url, user_id, authenticated=True), headers={
         "apikey": service_key, "Authorization": "Bearer " + service_key,
         "Accept": "image/png",
     }, method="GET")
