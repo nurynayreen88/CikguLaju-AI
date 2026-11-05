@@ -81,6 +81,53 @@ class UnifiedWebRPHTests(unittest.TestCase):
 
     @patch("web.unified_rph_web._has_paid_access", return_value=True)
     @patch("web.unified_rph_web._account", return_value=({"telegram_user_id": 123}, None))
+    def test_english_year_4_and_5_real_source_files_and_teacher_details(self, *_):
+        for year in (4, 5):
+            records = source_records(year, "ENGLISH")
+            self.assertEqual(len(records), 160, year)
+            row = records[0]
+            payload = verified_preview(year, "ENGLISH", row["unit"], row["token"])
+            self.assertIsNotNone(payload, (year, row))
+            query = {"year": year, "subject": "ENGLISH",
+                     "unit": row["unit"], "lesson": row["token"],
+                     "teacher_class": "5 Bestari", "teacher_date": "2027-03-08",
+                     "teacher_time": "08:30"}
+            result = self.client.get("/api/web/rph/preview", query_string=query)
+            self.assertEqual(result.status_code, 200, result.get_json())
+            self.assertEqual(result.get_json()["teacher"], {
+                "class": "5 Bestari", "date": "2027-03-08", "time": "08:30"})
+            docx = self.client.get("/api/web/rph/word", query_string=query)
+            self.assertEqual(docx.status_code, 200)
+            with ZipFile(__import__("io").BytesIO(docx.data)) as z:
+                xml = z.read("word/document.xml").decode("utf8")
+                self.assertIn("5 Bestari", xml)
+                self.assertIn("2027-03-08", xml)
+                self.assertIn("08:30", xml)
+
+    @patch("web.unified_rph_web._has_paid_access", return_value=True)
+    @patch("web.unified_rph_web._account", return_value=({"telegram_user_id": 123}, None))
+    def test_print_context_rejects_invalid_and_ambiguous_metadata(self, *_):
+        row = source_records(4, "ENGLISH")[0]
+        base = {"year": 4, "subject": "ENGLISH",
+                "unit": row["unit"], "lesson": row["token"]}
+        bad = (
+            {"teacher_class": "4 A<script>"},
+            {"teacher_date": "2027-02-30"},
+            {"teacher_date": "2001-02-03"},
+            {"teacher_time": "49:99"},
+            {"teacher_time": "hello"},
+        )
+        for addition in bad:
+            response = self.client.get("/api/web/rph/preview",
+                                       query_string={**base, **addition})
+            self.assertEqual(response.status_code, 400, (addition,response.get_json()))
+        repeated = self.client.get("/api/web/rph/word",
+                                   query_string=list(base.items())+[
+                                       ("teacher_class","4A"),("teacher_class","4B")])
+        self.assertEqual(repeated.status_code, 400)
+
+    @patch("web.unified_rph_web._has_paid_access", return_value=True)
+    @patch("web.unified_rph_web._account", return_value=({"telegram_user_id": 123}, None))
     def test_unavailable_subject_is_explicitly_unavailable(self, *_):
         r = self.client.get("/api/web/rph/preview", query_string={"year": 2, "subject": "MATH", "unit": "Unit", "lesson": "33"})
         self.assertEqual(r.status_code, 503)
