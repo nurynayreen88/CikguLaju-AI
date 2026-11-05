@@ -88,12 +88,15 @@
       "tb_confirms_track_number": 97,
       "tb_confirms_disc_number": false,
       "original_track_file_id": null,
-      "source_grade": "ORIGINAL_TB_PAGE_VISUAL_CHECK_TRACK_NUMBER_PASS_DISC_AND_DRIVE_FILE_PENDING",
+      "source_grade": "ORIGINAL_TB_TRACK97_VERIFIED_NO_Y3_TOP_LEVEL_LITERAL_FILE_ROUTE_SOURCE_OR_SEND",
       "spoken_words_checked": false,
       "telegram_bot_file_id_route_checked": false,
       "actual_bot_send_checked": false,
       "final_ready_approved": false,
-      "note": "Printed TB p96 gives Track 97, not an explicit CD1 prefix; do not treat RPH CD1 attribution as independently verified."
+      "note": "Printed TB p96 gives Track 97, not an explicit CD1 prefix; do not treat RPH CD1 attribution as independently verified.",
+      "actual_app_year3_specific_top_level_audio_literal_route_found": false,
+      "actual_app_source_route_search": "tools/audit_english_y3_l093_static_media_routes_20261105.py",
+      "static_source_scope_limit": "Year3-specific top-level literal maps only. Track may come from curriculum DB or indirect media route; no final assertion on dynamic routing."
     }
   ],
   "unaffected": "No curriculum database, app.py, user credits/payments, original assets, audio format, production or main changes"
