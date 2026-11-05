@@ -150,7 +150,9 @@
         "note": "Sumber DSKP KSSR Semakan Tahun 6 tambahan boleh dibaca melalui teks AnyFlip; dokumen asal dari panitia sekolah belum diaudit sepenuhnya.",
         "secondary_text_reference": "https://anyflip.com/bpvwr/huxb/basic",
         "alternate_public_copy": "https://anyflip.com/vouoy/jjuq/basic",
-        "external_public_source_confirmed": true
+        "external_public_source_confirmed": true,
+        "html_text_source_verified": "https://anyflip.com/mhtcw/pstm/basic",
+        "original_pdf_audited": false
       },
       "textbook": {
         "title": "GuruBesar_BukuTeks_Bahasa_Arab_T6.pdf",
@@ -158,7 +160,42 @@
         "text_extractable": false,
         "source_page_verified": false,
         "alternate_public_copy": "https://anyflip.com/jxgvj/krzu/basic/",
-        "alternate_public_copy_status": "Edisi teks cetakan 2021 ditemui; belum semak padanan halaman dengan PDF Drive"
+        "alternate_public_copy_status": "Edisi teks cetakan 2021 ditemui; belum semak padanan halaman dengan PDF Drive",
+        "bibliographic_verification": {
+          "status": "VERIFIED_FROM_PUBLIC_HTML_TEXTBOOK_TOC",
+          "source": "https://anyflip.com/gcmci/mxcs/basic",
+          "url": "https://anyflip.com/gcmci/mxcs/basic",
+          "isbn": "978-983-49-3300-5",
+          "publisher": "Dewan Bahasa dan Pustaka",
+          "edition": "Cetakan Pertama 2021",
+          "toc": [
+            {
+              "unit": 1,
+              "title_arab": "حياتنا أجمل بالنظافة",
+              "printed_page_start": 1,
+              "printed_page_end": 30
+            },
+            {
+              "unit": 2,
+              "title_arab": "الشباب أمل الأمة",
+              "printed_page_start": 31,
+              "printed_page_end": 60
+            },
+            {
+              "unit": 3,
+              "title_arab": "رحلة سعيدة",
+              "printed_page_start": 61,
+              "printed_page_end": 90
+            },
+            {
+              "unit": 4,
+              "title_arab": "فدائي يا وطني",
+              "printed_page_start": 91,
+              "printed_page_end": 120
+            }
+          ]
+        },
+        "unit_page_ranges_verified": true
       },
       "rpt_2026": "https://anyflip.com/zxzlm/bmaa/basic",
       "unit_1": "حياتنا أجمل بالنظافة",
@@ -166,7 +203,8 @@
       "provisional_rph_count": 12,
       "external_textbook_portal": "https://sites.google.com/moe-dl.edu.my/sketta2bahasaarab/buku-teks-digital",
       "external_dskp_portal": "https://sites.google.com/moe-dl.edu.my/unitbahasaprogram-pso-2021/mata-pelajaran-unit-bahasa/bahasa-arab/sekolah-rendah/dskp",
-      "external_rpt_2026_portal": "https://sites.google.com/moe-dl.edu.my/panitia-bahasa-arab-sksn/induk/rptdskp"
+      "external_rpt_2026_portal": "https://sites.google.com/moe-dl.edu.my/panitia-bahasa-arab-sksn/induk/rptdskp",
+      "draft_lesson_page_evidence_file": "audits/bahasa_arab_y6_textbook_page_evidence_20261105.json"
     }
   },
   "mandatory_release_gates": [

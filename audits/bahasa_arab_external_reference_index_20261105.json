@@ -1,5 +1,5 @@
 {
-  "status": "REFERENCE_INDEX_ONLY_NOT_RELEASE_APPROVAL",
+  "status": "REFERENCE_INDEX_WITH_Y6_TOC_VERIFIED_BUT_RPH_UNAPPROVED",
   "date_checked": "2026-11-05",
   "project": "CikguLaju AI — Bahasa Arab Tahun 2–6",
   "drive": {
@@ -128,6 +128,25 @@
       "url": "https://sites.google.com/moe.gov.my/unit-bahasa-arab/hiwar-jaibi/kit",
       "provenance": "moe_gov_my_site",
       "verification": "not a Year 2–6 official source; supplementary methodology only"
+    },
+    {
+      "type": "textbook_page_evidence",
+      "years": [
+        6
+      ],
+      "name": "Buku Teks BA Tahun 6 KSSR Semakan DBP Cetakan Pertama 2021",
+      "url": "https://anyflip.com/gcmci/mxcs/basic",
+      "edition": "2021 ISBN 978-983-49-3300-5",
+      "verification": "TOC 4 units verified, printed page 1–120, first Unit 1 word/skill examples checked; not licensed for reupload"
+    },
+    {
+      "type": "dskp_text_reference",
+      "years": [
+        6
+      ],
+      "name": "DSKP Bahasa Arab Tahun 6 Terbitan BPK KPM 2019",
+      "url": "https://anyflip.com/mhtcw/pstm/basic",
+      "verification": "Web HTML DSKP standard descriptions checked; no full original PDF page audit"
     }
   ],
   "drive_existing": {

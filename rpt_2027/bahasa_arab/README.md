@@ -18,3 +18,7 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 - [Folder Drive rujukan](https://drive.google.com/drive/folders/1M0C9jmFvvkRIDoYB2QXJ2oQnTWUWcN9P)
 - `audits/bahasa_arab_external_reference_index_20261105.json`: provenance pautan buku teks, aktiviti, DSKP, RPT; penemuan portal **bukan** pengesahan edisi/halaman.
 - Fail PDF berhak cipta tidak disalin daripada internet; sumber asal boleh dibuka melalui pautan, sementara fail sedia ada dalam Drive dikekalkan.
+
+## Bukti terbaharu Tahun 6
+- Buku teks DBP/KPM 2021, ISBN 978-983-49-3300-5, julat halaman bercetak berdasarkan TOC Tahun 6: 1–30; 31–60; 61–90; 91–120.
+- `audits/bahasa_arab_y6_textbook_page_evidence_20261105.json`: 12 cadangan semakan padanan PdP/halaman, satu bendera SP 2.1.1 vs buku 2.1.2/2.1.4, **bukan kelulusan RPH**.

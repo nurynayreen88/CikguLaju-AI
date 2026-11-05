@@ -62,6 +62,20 @@ def check() -> None:
             assert all(m in text for m in ("DRAF_SEMAK", "BELUM READY", "https://anyflip.com/"))
             banks += 1
     assert banks == m["additional_unit_activity_bank_count"] == 15
+    y6_evidence = json.loads((ROOT / "audits" / "bahasa_arab_y6_textbook_page_evidence_20261105.json").read_text(encoding="utf-8"))
+    assert y6_evidence["year"] == 6 and y6_evidence["individual_rph_approval"] is False
+    assert y6_evidence["all_unit_pages_verified_at_toc_level"] is True
+    assert len(y6_evidence["book"]["toc"]) == 4
+    assert [(u["printed_page_start"], u["printed_page_end"]) for u in y6_evidence["book"]["toc"]] == [(1,30),(31,60),(61,90),(91,120)]
+    assert m["years"]["6"]["textbook"]["source_page_verified"] is False
+    assert all(x["ready"] is False for x in y6_evidence["lesson_candidates"])
+    assert len(y6_evidence["lesson_candidates"]) == 12
+    assert len(y6_evidence["conflicts"]) >= 1
+    for idx, row in enumerate(y6_evidence["book"]["toc"], start=1):
+        found = next(r for r in units if r["tahun"]=="6" and r["unit"]==str(idx))
+        assert found["halaman_mula_buku"] == str(row["printed_page_start"])
+        assert found["halaman_akhir_buku"] == str(row["printed_page_end"])
+        assert found["status"] == "DRAF_SEMAK" and found["pdp_ready"] == "FALSE"
     print("PASSED: 20 unit indexes, 60 crosswalks, 60 RPH draft files, 15 banks.")
     print("RELEASE BLOCKED: 0 READY; page-level textbook, A4 RTL and manual review missing.")
 

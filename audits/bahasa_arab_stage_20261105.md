@@ -29,3 +29,11 @@
 6. Kekalkan semua status DRAF sehingga kelulusan manual individu. **READY = 0**.
 
 Status berangka ini mengira fail yang wujud, **bukan** 60 RPH yang telah disahkan.
+
+## 5 Nov 2026: BUKU TEKS TAHUN 6 — BUKTI HALAMAN
+- Pengenalan bibliografi diperiksa melalui HTML buku sumber: DBP untuk KPM, cetakan pertama 2021, ISBN 978-983-49-3300-5.
+- TOC Tahun 6 Unit 1–4 = **1–30, 31–60, 61–90, 91–120** (halaman bercetak). Direkod dalam CSV unit; **jangan samakan julat unit dengan pengesahan halaman RPH**.
+- Buku mengandungi contoh kod SP di tepi aktiviti dan latihan mendengar/menulis/bertutur; 12 cadangan padanan PdP Unit 1 kini di fail `audits/bahasa_arab_y6_textbook_page_evidence_20261105.json`.
+- **Bendera konflik**: Tahun 6 PdP 004 menggunakan SP 2.1.1 sedangkan contoh halaman buku 2 menampilkan 2.1.2/2.1.4. Perlu adjudikasi, jangan ubah SP automatik.
+- Sumber HTML BT: https://anyflip.com/gcmci/mxcs/basic. DSKP Tahun 6: https://anyflip.com/mhtcw/pstm/basic. Dokumen indeks sumber Drive: https://docs.google.com/document/d/1z5rz0j-xtIwm1JF8-p0sc5BQvk8q_W_UOZR3yFAnl7A/edit?usp=drivesdk.
+- **0 RPH READY**, kerana padanan 1:1 PdP/halaman dan ujian Word/PDF RTL belum dibuat.
