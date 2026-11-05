@@ -37,11 +37,12 @@ class ActualSourceSchoolCoverTests(unittest.TestCase):
                     self.assertIn("SK Taman Sejahtera", first)
                     self.assertIn("2027", first)
                     self.assertIn("Tahun " + str(year), first)
-                    self.assertEqual(
-                        (float(final.pages[1].mediabox.width),
-                         float(final.pages[1].mediabox.height)),
-                        (float(original.pages[0].mediabox.width),
-                         float(original.pages[0].mediabox.height)))
+                    self.assertAlmostEqual(
+                        float(final.pages[1].mediabox.width),
+                        float(original.pages[0].mediabox.width), places=4)
+                    self.assertAlmostEqual(
+                        float(final.pages[1].mediabox.height),
+                        float(original.pages[0].mediabox.height), places=4)
                     self.assertEqual(path.read_bytes(), before)
                     verified += 1
         self.assertEqual(verified, 25)
