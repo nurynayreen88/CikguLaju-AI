@@ -120,7 +120,7 @@ def build_layout(data,subject_labels):
         "TARIKH":clean(teacher.get("date")) or "________________",
         "MASA":clean(teacher.get("time")) or "________________",
         "KELAS":clean(teacher.get("class")) or "________________",
-        "BILANGAN MURID":"________________",
+        "BILANGAN MURID":clean(teacher.get("students")) or "________________",
         "TAJUK":clean(data.get("unit") or data.get("title")) or "—",
     })
     if teacher.get("date"):
