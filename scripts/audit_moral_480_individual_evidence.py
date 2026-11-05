@@ -62,7 +62,12 @@ def book_verified_pairs() -> set[tuple[int, int]]:
     assert len(y4_pairs) == 30 and not (checked & y4_pairs), "Year4 duplicated audit entries"
     checked.update(y4_pairs)
     assert len(checked) == 150, len(checked)
-    return checked, new_pairs | y2_pairs | y3_pairs | y4_pairs
+    y5 = json.loads((AUDITS / "pendidikan_moral_visual30_y5_u05_u14_20261105.json").read_text(encoding="utf-8"))
+    y5_pairs = {(r["year"], r["lesson"]) for r in y5["records"]}
+    assert len(y5_pairs) == 30 and not (checked & y5_pairs), "Year5 source review overlaps previous evidence"
+    checked.update(y5_pairs)
+    assert len(checked) == 180, len(checked)
+    return checked, new_pairs | y2_pairs | y3_pairs | y4_pairs | y5_pairs
 
 
 def main() -> None:
@@ -141,7 +146,7 @@ def main() -> None:
                 "Telegram_Akaun_Sebenar": "BELUM_UJI_HANTAR_KE_AKAUN_GURU",
             })
     assert len(output) == len(matched) == 480, (len(output), len(matched))
-    assert counts == {"core": 210, "core_book_visual": 150, "supplement": 270, "source_hold": 14}, counts
+    assert counts == {"core": 210, "core_book_visual": 180, "supplement": 270, "source_hold": 14}, counts
     dest.parent.mkdir(parents=True, exist_ok=True)
     with dest.open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=FIELDS)
@@ -150,7 +155,7 @@ def main() -> None:
     assert dest.stat().st_size > 40000, dest.stat().st_size
     print(f"PASS INDIVIDUAL EVIDENCE LEDGER: 480/480 records, {dict(counts)}")
     print(f"Saved: {dest}")
-    print("NOT FINAL READY: source-book activity unverified in 60 core RPH + 270 supplementary; 14 sessions additionally on Y6 unit source hold.")
+    print("NOT FINAL READY: source-book activity unverified in 30 core RPH + 270 supplementary; 14 sessions additionally on Y6 unit source hold.")
     print("Word A4 all-session visual and actual Telegram account delivery are separate release gates.")
 
 

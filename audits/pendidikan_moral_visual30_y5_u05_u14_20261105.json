@@ -1,0 +1,540 @@
+{
+  "status": "SOURCE_ACTIVITY_PAGES_REVIEWED_30_YEAR5_CORE; NOT_FINAL_READY",
+  "date": "2026-11-05",
+  "scope": "30 core RPH Year5 Unit5–14, with source-book page-specific activities. Supplemental 54 per year not included. No actual Telegram delivery, teacher assessment or all-Word A4 certification.",
+  "source_book_file_id": "1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz",
+  "source_pdf_sha256": "b033d4c27e6f214b45f316aaf7d72451a8957dee9d9fef6d107b29f24648e9fa",
+  "source_method": "Direct visual inspection of original scanned textbook unit pages, rather than only TOC; teacher activities adapted, and source book visuals described per RPH.",
+  "records": [
+    {
+      "year": 5,
+      "unit": 5,
+      "lesson": 13,
+      "printed": [
+        40,
+        42
+      ],
+      "pdf": [
+        43,
+        45
+      ],
+      "sp_codes": [
+        "5.1",
+        "5.2"
+      ],
+      "evidence": "Pasar lambak komuniti, adab sopan gambar masyarakat, poster tutur kata, permainan papan, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 5,
+      "lesson": 14,
+      "printed": [
+        43,
+        45
+      ],
+      "pdf": [
+        46,
+        48
+      ],
+      "sp_codes": [
+        "5.3",
+        "5.4"
+      ],
+      "evidence": "Pasar lambak komuniti, adab sopan gambar masyarakat, poster tutur kata, permainan papan, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 5,
+      "lesson": 15,
+      "printed": [
+        46,
+        48
+      ],
+      "pdf": [
+        49,
+        51
+      ],
+      "sp_codes": [
+        "5.5"
+      ],
+      "evidence": "Pasar lambak komuniti, adab sopan gambar masyarakat, poster tutur kata, permainan papan, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 6,
+      "lesson": 16,
+      "printed": [
+        50,
+        52
+      ],
+      "pdf": [
+        53,
+        55
+      ],
+      "sp_codes": [
+        "6.1",
+        "6.2"
+      ],
+      "evidence": "Budaya komuniti, Gawai Dayak dan Pesta Buah, Hormati Kepelbagaian Budaya, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 6,
+      "lesson": 17,
+      "printed": [
+        53,
+        55
+      ],
+      "pdf": [
+        56,
+        58
+      ],
+      "sp_codes": [
+        "6.3",
+        "6.4"
+      ],
+      "evidence": "Budaya komuniti, Gawai Dayak dan Pesta Buah, Hormati Kepelbagaian Budaya, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 6,
+      "lesson": 18,
+      "printed": [
+        56,
+        58
+      ],
+      "pdf": [
+        59,
+        61
+      ],
+      "sp_codes": [
+        "6.5"
+      ],
+      "evidence": "Budaya komuniti, Gawai Dayak dan Pesta Buah, Hormati Kepelbagaian Budaya, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 7,
+      "lesson": 19,
+      "printed": [
+        60,
+        62
+      ],
+      "pdf": [
+        63,
+        65
+      ],
+      "sp_codes": [
+        "7.1",
+        "7.2"
+      ],
+      "evidence": "Sayangi Warga Emas, Kami Prihatin, Projek Kasih Sayang, Sandwic Kasih Sayang, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 7,
+      "lesson": 20,
+      "printed": [
+        63,
+        65
+      ],
+      "pdf": [
+        66,
+        68
+      ],
+      "sp_codes": [
+        "7.3",
+        "7.4"
+      ],
+      "evidence": "Sayangi Warga Emas, Kami Prihatin, Projek Kasih Sayang, Sandwic Kasih Sayang, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 7,
+      "lesson": 21,
+      "printed": [
+        66,
+        68
+      ],
+      "pdf": [
+        69,
+        71
+      ],
+      "sp_codes": [
+        "7.5"
+      ],
+      "evidence": "Sayangi Warga Emas, Kami Prihatin, Projek Kasih Sayang, Sandwic Kasih Sayang, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 8,
+      "lesson": 22,
+      "printed": [
+        70,
+        72
+      ],
+      "pdf": [
+        73,
+        75
+      ],
+      "sp_codes": [
+        "8.1",
+        "8.2"
+      ],
+      "evidence": "Suri Teladan Dicontohi, Amalan Adil Hak Dipelihara, Bersikap Adil Masyarakat Ceria, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 8,
+      "lesson": 23,
+      "printed": [
+        73,
+        75
+      ],
+      "pdf": [
+        76,
+        78
+      ],
+      "sp_codes": [
+        "8.3",
+        "8.4"
+      ],
+      "evidence": "Suri Teladan Dicontohi, Amalan Adil Hak Dipelihara, Bersikap Adil Masyarakat Ceria, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 8,
+      "lesson": 24,
+      "printed": [
+        76,
+        78
+      ],
+      "pdf": [
+        79,
+        81
+      ],
+      "sp_codes": [
+        "8.5"
+      ],
+      "evidence": "Suri Teladan Dicontohi, Amalan Adil Hak Dipelihara, Bersikap Adil Masyarakat Ceria, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 9,
+      "lesson": 25,
+      "printed": [
+        80,
+        82
+      ],
+      "pdf": [
+        83,
+        85
+      ],
+      "sp_codes": [
+        "9.1",
+        "9.2"
+      ],
+      "evidence": "Berani Pertahankan Cabaran, Sang Lebah Berani, Gurindam Keberanian, permainan cabaran, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 9,
+      "lesson": 26,
+      "printed": [
+        83,
+        85
+      ],
+      "pdf": [
+        86,
+        88
+      ],
+      "sp_codes": [
+        "9.3",
+        "9.4"
+      ],
+      "evidence": "Berani Pertahankan Cabaran, Sang Lebah Berani, Gurindam Keberanian, permainan cabaran, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 9,
+      "lesson": 27,
+      "printed": [
+        86,
+        88
+      ],
+      "pdf": [
+        89,
+        91
+      ],
+      "sp_codes": [
+        "9.5"
+      ],
+      "evidence": "Berani Pertahankan Cabaran, Sang Lebah Berani, Gurindam Keberanian, permainan cabaran, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 10,
+      "lesson": 28,
+      "printed": [
+        90,
+        92
+      ],
+      "pdf": [
+        93,
+        95
+      ],
+      "sp_codes": [
+        "10.1",
+        "10.2"
+      ],
+      "evidence": "Beriadah Dengan Jujurnya, Jujur Ketika Bertindak, Berniaga Secara Jujur, Meneroka Kejujuran, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 10,
+      "lesson": 29,
+      "printed": [
+        93,
+        95
+      ],
+      "pdf": [
+        96,
+        98
+      ],
+      "sp_codes": [
+        "10.3",
+        "10.4"
+      ],
+      "evidence": "Beriadah Dengan Jujurnya, Jujur Ketika Bertindak, Berniaga Secara Jujur, Meneroka Kejujuran, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 10,
+      "lesson": 30,
+      "printed": [
+        96,
+        98
+      ],
+      "pdf": [
+        99,
+        101
+      ],
+      "sp_codes": [
+        "10.5"
+      ],
+      "evidence": "Beriadah Dengan Jujurnya, Jujur Ketika Bertindak, Berniaga Secara Jujur, Meneroka Kejujuran, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 11,
+      "lesson": 31,
+      "printed": [
+        100,
+        102
+      ],
+      "pdf": [
+        103,
+        105
+      ],
+      "sp_codes": [
+        "11.1",
+        "11.2"
+      ],
+      "evidence": "Berkat Kerajinan, kalender kebersihan, Projek Jualan Amal, Kempen Jom Sihat, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 11,
+      "lesson": 32,
+      "printed": [
+        103,
+        105
+      ],
+      "pdf": [
+        106,
+        108
+      ],
+      "sp_codes": [
+        "11.3",
+        "11.4"
+      ],
+      "evidence": "Berkat Kerajinan, kalender kebersihan, Projek Jualan Amal, Kempen Jom Sihat, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 11,
+      "lesson": 33,
+      "printed": [
+        106,
+        108
+      ],
+      "pdf": [
+        109,
+        111
+      ],
+      "sp_codes": [
+        "11.5"
+      ],
+      "evidence": "Berkat Kerajinan, kalender kebersihan, Projek Jualan Amal, Kempen Jom Sihat, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 12,
+      "lesson": 34,
+      "printed": [
+        110,
+        112
+      ],
+      "pdf": [
+        113,
+        115
+      ],
+      "sp_codes": [
+        "12.1",
+        "12.2"
+      ],
+      "evidence": "Forum amalan kerjasama, Masyarakat Sepakat, Kerjasama Dipupuk, projek masakan, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 12,
+      "lesson": 35,
+      "printed": [
+        113,
+        115
+      ],
+      "pdf": [
+        116,
+        118
+      ],
+      "sp_codes": [
+        "12.3",
+        "12.4"
+      ],
+      "evidence": "Forum amalan kerjasama, Masyarakat Sepakat, Kerjasama Dipupuk, projek masakan, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 12,
+      "lesson": 36,
+      "printed": [
+        116,
+        118
+      ],
+      "pdf": [
+        119,
+        121
+      ],
+      "sp_codes": [
+        "12.5"
+      ],
+      "evidence": "Forum amalan kerjasama, Masyarakat Sepakat, Kerjasama Dipupuk, projek masakan, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 13,
+      "lesson": 37,
+      "printed": [
+        120,
+        122
+      ],
+      "pdf": [
+        123,
+        125
+      ],
+      "sp_codes": [
+        "13.1",
+        "13.2"
+      ],
+      "evidence": "Bersederhana Menjamin Kebahagiaan, Nikmat Amalan Bersederhana, Tong Sampah Kertas, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 13,
+      "lesson": 38,
+      "printed": [
+        123,
+        125
+      ],
+      "pdf": [
+        126,
+        128
+      ],
+      "sp_codes": [
+        "13.3",
+        "13.4"
+      ],
+      "evidence": "Bersederhana Menjamin Kebahagiaan, Nikmat Amalan Bersederhana, Tong Sampah Kertas, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 13,
+      "lesson": 39,
+      "printed": [
+        126,
+        128
+      ],
+      "pdf": [
+        129,
+        131
+      ],
+      "sp_codes": [
+        "13.5"
+      ],
+      "evidence": "Bersederhana Menjamin Kebahagiaan, Nikmat Amalan Bersederhana, Tong Sampah Kertas, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 14,
+      "lesson": 40,
+      "printed": [
+        130,
+        132
+      ],
+      "pdf": [
+        133,
+        135
+      ],
+      "sp_codes": [
+        "14.1",
+        "14.2"
+      ],
+      "evidence": "Bertolak Ansur Kebajikan Diutamakan, Bertoleransi Elakkan Sengketa, Ejen Toleransi 5.0, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 14,
+      "lesson": 41,
+      "printed": [
+        133,
+        135
+      ],
+      "pdf": [
+        136,
+        138
+      ],
+      "sp_codes": [
+        "14.3",
+        "14.4"
+      ],
+      "evidence": "Bertolak Ansur Kebajikan Diutamakan, Bertoleransi Elakkan Sengketa, Ejen Toleransi 5.0, Uji Diri"
+    },
+    {
+      "year": 5,
+      "unit": 14,
+      "lesson": 42,
+      "printed": [
+        136,
+        138
+      ],
+      "pdf": [
+        139,
+        141
+      ],
+      "sp_codes": [
+        "14.5"
+      ],
+      "evidence": "Bertolak Ansur Kebajikan Diutamakan, Bertoleransi Elakkan Sengketa, Ejen Toleransi 5.0, Uji Diri"
+    }
+  ]
+}
