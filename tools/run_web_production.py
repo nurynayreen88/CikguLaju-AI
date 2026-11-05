@@ -28,6 +28,15 @@ def web_brand_logo():
     return send_file(path, mimetype="image/svg+xml", conditional=True, max_age=86400)
 
 
+@app.get("/assets/teacher-profile.js")
+def teacher_profile_script():
+    """Static browser editor. Personal data remains behind authenticated routes."""
+    from pathlib import Path
+    from flask import send_file
+    file = Path(__file__).resolve().parents[1] / "web_v1_static_preview" / "teacher-profile.js"
+    return send_file(file, mimetype="application/javascript", max_age=1800, conditional=True)
+
+
 @app.get("/healthz")
 def web_liveness():
     """Liveness only: never confuse a booted worker with an approved product."""
