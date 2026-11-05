@@ -13,7 +13,7 @@
       "pdp_id": "MZ-Y4-01",
       "pdp": 1,
       "slot_source_2025": 2,
-      "unit": "SENJA NAN",
+      "unit": "SENJA NAN INDAH",
       "unit_number": 1,
       "sp": [
         "1.1.2"
@@ -31,7 +31,7 @@
       "pdp_id": "MZ-Y4-02",
       "pdp": 2,
       "slot_source_2025": 3,
-      "unit": "SENJA NAN",
+      "unit": "SENJA NAN INDAH",
       "unit_number": 1,
       "sp": [
         "1.1.2"
@@ -49,7 +49,7 @@
       "pdp_id": "MZ-Y4-03",
       "pdp": 3,
       "slot_source_2025": 4,
-      "unit": "SENJA NAN",
+      "unit": "SENJA NAN INDAH",
       "unit_number": 1,
       "sp": [
         "1.1.1"
@@ -264,7 +264,10 @@
         "week": 14,
         "groupA": "11/04–15/04",
         "groupB": "12/04–16/04"
-      }
+      },
+      "flags": [
+        "Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 4.1.1; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL"
+      ]
     },
     {
       "pdp_id": "MZ-Y4-15",
@@ -282,7 +285,10 @@
         "week": 15,
         "groupA": "18/04–22/04",
         "groupB": "19/04–23/04"
-      }
+      },
+      "flags": [
+        "Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 4.1.1; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL"
+      ]
     },
     {
       "pdp_id": "MZ-Y4-16",
@@ -300,13 +306,16 @@
         "week": 16,
         "groupA": "25/04–29/04",
         "groupB": "26/04–30/04"
-      }
+      },
+      "flags": [
+        "Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 4.1.1; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL"
+      ]
     },
     {
       "pdp_id": "MZ-Y4-17",
       "pdp": 17,
       "slot_source_2025": 19,
-      "unit": "LARIAN",
+      "unit": "LARIAN RIANG RIA",
       "unit_number": 6,
       "sp": [
         "2.4.1"
@@ -324,7 +333,7 @@
       "pdp_id": "MZ-Y4-18",
       "pdp": 18,
       "slot_source_2025": 20,
-      "unit": "LARIAN",
+      "unit": "LARIAN RIANG RIA",
       "unit_number": 6,
       "sp": [
         "1.1.1",
@@ -343,7 +352,7 @@
       "pdp_id": "MZ-Y4-19",
       "pdp": 19,
       "slot_source_2025": 21,
-      "unit": "INDAHNYA",
+      "unit": "INDAHNYA DASAR LAUT",
       "unit_number": 7,
       "sp": [
         "2.2.1",
@@ -362,7 +371,7 @@
       "pdp_id": "MZ-Y4-20",
       "pdp": 20,
       "slot_source_2025": 22,
-      "unit": "INDAHNYA",
+      "unit": "INDAHNYA DASAR LAUT",
       "unit_number": 7,
       "sp": [
         "2.2.1",
@@ -381,7 +390,7 @@
       "pdp_id": "MZ-Y4-21",
       "pdp": 21,
       "slot_source_2025": 23,
-      "unit": "INDAHNYA",
+      "unit": "INDAHNYA DASAR LAUT",
       "unit_number": 7,
       "sp": [
         "3.1.2",
@@ -394,13 +403,16 @@
         "week": 21,
         "groupA": "13/06–17/06",
         "groupB": "14/06–18/06"
-      }
+      },
+      "flags": [
+        "Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 3.1.2, 3.1.3; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL"
+      ]
     },
     {
       "pdp_id": "MZ-Y4-22",
       "pdp": 22,
       "slot_source_2025": 24,
-      "unit": "HELO, HELO",
+      "unit": "HELO, HELO APA KHABAR?",
       "unit_number": 8,
       "sp": [
         "2.4.1",
@@ -419,7 +431,7 @@
       "pdp_id": "MZ-Y4-23",
       "pdp": 23,
       "slot_source_2025": 25,
-      "unit": "HELO, HELO",
+      "unit": "HELO, HELO APA KHABAR?",
       "unit_number": 8,
       "sp": [
         "1.1.3",
@@ -438,7 +450,7 @@
       "pdp_id": "MZ-Y4-24",
       "pdp": 24,
       "slot_source_2025": 26,
-      "unit": "HELO, HELO",
+      "unit": "HELO, HELO APA KHABAR?",
       "unit_number": 8,
       "sp": [
         "3.1.1",
@@ -452,7 +464,10 @@
         "week": 24,
         "groupA": "04/07–08/07",
         "groupB": "05/07–09/07"
-      }
+      },
+      "flags": [
+        "Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 3.1.1, 3.1.2, 3.1.3; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL"
+      ]
     },
     {
       "pdp_id": "MZ-Y4-25",
@@ -581,7 +596,11 @@
         "week": 31,
         "groupA": "22/08–26/08",
         "groupB": "23/08–27/08"
-      }
+      },
+      "flags": [
+        "Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 4.1.1; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL",
+        "Halaman buku teks sumber 50 menurun selepas unit terdahulu; semak pada buku asal"
+      ]
     },
     {
       "pdp_id": "MZ-Y4-32",
@@ -600,7 +619,11 @@
         "week": 32,
         "groupA": "05/09–09/09",
         "groupB": "06/09–10/09"
-      }
+      },
+      "flags": [
+        "Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 4.1.1; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL",
+        "Halaman buku teks sumber 52 menurun selepas unit terdahulu; semak pada buku asal"
+      ]
     },
     {
       "pdp_id": "MZ-Y4-33",
@@ -619,7 +642,11 @@
         "week": 33,
         "groupA": "12/09–16/09",
         "groupB": "13/09–17/09"
-      }
+      },
+      "flags": [
+        "Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 4.1.1; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL",
+        "Halaman buku teks sumber 52 menurun selepas unit terdahulu; semak pada buku asal"
+      ]
     },
     {
       "pdp_id": "MZ-Y4-34",
