@@ -85,7 +85,7 @@ def install(ns, *, enabled=None, root=ROOT):
         return False
     if ns.get("PSV_2027_PROVISIONAL_TELEGRAM_ACTIVE"):
         return True
-    required = ("callback", "send", "_rph_rows", "_lesson_to_class_v2439")
+    required = ("callback", "subjects", "send", "_rph_rows", "_lesson_to_class_v2439")
     if not isinstance(ns, dict) or not isinstance(ns.get("state"), dict):
         return False
     if any(not callable(ns.get(name)) for name in required):
@@ -99,7 +99,49 @@ def install(ns, *, enabled=None, root=ROOT):
                 return False
 
     previous_cb, previous_rows = ns["callback"], ns["_rph_rows"]
+    previous_subjects = ns["subjects"]
     send, session = ns["send"], ns["state"]
+
+    def subjects(cid, label):
+        """Remove the old PSV development button for Years 2–6 only.
+
+        Preserve every existing regular subject and all other development
+        entries; secondary classes and Year1 remain with the original menu.
+        """
+        year = _year(label)
+        if year is None:
+            return previous_subjects(cid, label)
+        catalog = ns.get("SUBJECTS_BY_GRADE")
+        if not isinstance(catalog, dict):
+            return previous_subjects(cid, label)
+        session.setdefault(cid, {})["year"] = label
+        regular = list(catalog.get(label, ()) or ())
+        labels = ns.get("SUBJECT_LABEL") or {}
+        development = ns.get("_CIKGULAJU_DEV_SUBJECTS_V2617") or {}
+        buttons = []
+        seen = set()
+        for name in regular:
+            if name in seen:
+                continue
+            seen.add(name)
+            buttons.append({"text": labels.get(name, name),
+                            "callback_data": "sub_" + name})
+        if SUBJECT not in seen:
+            # The old topic catalog lacks PSV even though 210 RPH now exist.
+            buttons.append({"text": "🎨 Pendidikan Seni Visual",
+                            "callback_data": "sub_" + SUBJECT})
+            seen.add(SUBJECT)
+        for name, years in development.items():
+            if name != SUBJECT and year in years and name not in seen:
+                buttons.append({"text": "🚧 " + name + " (Dalam Pembangunan)",
+                                "callback_data": "devsub2617_" + name})
+        kb = [buttons[i:i + 2] for i in range(0, len(buttons), 2)]
+        kb.extend([[{"text": "⬅️ Pilih Tahun/Tingkatan",
+                    "callback_data": "choose_grade"}],
+                   [{"text": "🏠 Menu Utama", "callback_data": "home"}]])
+        return send(cid, "📘 <b>" + label +
+                    "</b>\n\nPilih subjek. 🎨 PSV menyediakan 42 PdP setahun "
+                    "bagi Tahun 2–6; 🚧 subjek lain masih dalam pembangunan.", kb)
 
     def menu(cid, page=0):
         st = session.setdefault(cid, {})
@@ -132,12 +174,15 @@ def install(ns, *, enabled=None, root=ROOT):
     def callback(cid, data):
         value = str(data or "")
         st = session.setdefault(cid, {})
-        if value == "sub_Pendidikan Seni Visual":
+        if value in ("sub_Pendidikan Seni Visual",
+                     "devsub2617_Pendidikan Seni Visual"):
+            # Old keyboards still carry v26.17 development callback data.
+            # Year 1 remains gated and other subjects are untouched.
+            if _year(st.get("year")) is None:
+                return previous_cb(cid, data)
             st["subject"] = SUBJECT
             st.pop(SESSION_KEY, None)
-            if _year(st.get("year")) is not None:
-                return menu(cid)
-            return previous_cb(cid, data)
+            return menu(cid)
         if value.startswith(("psv27page|", "psv27pick|")):
             fields = value.split("|")
             if len(fields) != 3 or not fields[1].isascii() or not fields[1].isdecimal():
@@ -194,6 +239,7 @@ def install(ns, *, enabled=None, root=ROOT):
             print("PSV provisional RPH fallback:", type(exc).__name__, flush=True)
             return base
 
+    ns["subjects"] = subjects
     ns["callback"] = callback
     ns["_rph_rows"] = rows
     ns["PSV_2027_PROVISIONAL_TELEGRAM_ACTIVE"] = True
