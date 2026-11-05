@@ -5,18 +5,17 @@
 **SK:** 1.1; 2.1  
 **SP:** 1.1.3; 2.1.7  
 **Buku Teks:** Pendidikan Seni Visual Tahun 5, ms 74–75 (unit ms 74-81)  
-**BBM:** kadbod, batang kertas, pita, gam, kertas warna  
+**BBM:** BT ms 74–75, foto arca stabail, lakaran kucing, sampel polistirena prapotong guru, kadbod tapak, pita pelekat
 **Tempoh:** 60 minit
 
 ## Objektif dan kriteria kejayaan
-Murid dapat menyatakan dua bahasa seni visual yang hadir pada karya Haiwan Peliharaan serta meneroka dua media. Evidens: dua percubaan media dan dua istilah bahasa seni.
-
+Murid dapat menerangkan dua unsur bahasa seni pada arca stabail kucing serta membandingkan dua bentuk tapak yang stabil. Evidens: dua lakaran kucing dan tapak berlabel, dua istilah seni serta satu alasan pilihan imbangan.
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menunjukkan tema Haiwan Peliharaan; murid menjelaskan satu pemerhatian visual.
-**Aktiviti 1 (15 minit) — Demonstrasi:** Guru menunjukkan BT ms 74–75 dan menjelaskan arca stabail kucing peliharaan dan imbangan pada tapak; murid menunjukkan contoh unsur seni pada imej.
-**Aktiviti 2 (25 minit) — Amali:** Murid meneroka secara amali: Lakar bentuk kucing dan cuba dua cara mengimbangkan bentuk pada batang kertas. Dua sampel dibandingkan dan dicatat.
-**Pengukuhan/Pentaksiran (10 minit):** Guru menilai dua percubaan media dan dua istilah bahasa seni dan merekod kemajuan PBD.
-**Penutup (5 minit):** Murid menyatakan satu kemahiran dan menyimpan karya serta membersihkan ruang.
-**Pembezaan:** Templat langkah bergambar bagi sokongan; murid mahir membanding pilihan reka bentuk.
-**Keselamatan:** Gunakan bahan tidak toksik dan alat tumpul dengan pengawasan guru.
-**Rujukan:** [DSKP Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [Buku Teks Tahun 5](https://anyflip.com/gygr/pity/basic). Aktiviti adalah adaptasi CikguLaju.
+**Set induksi (5 minit):** Guru menunjukkan gambar arca kucing di ruang awam; murid mengenal badan arca dan tapak yang menahan berat.
+**Aktiviti 1 (15 minit) — Demonstrasi:** Guru rujuk BT ms 74–75 dan menerangkan arca stabail yang boleh berdiri sendiri, bentuk 3D dan keseimbangan antara badan dengan tapak.
+**Aktiviti 2 (25 minit) — Amali:** Murid melakar badan kucing dalam dua sudut pandangan, mencuba meletakkan model ringan di atas dua tapak kadbod lebar berbeza dan menilai kestabilan tanpa menggunting polistirena.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menyemak dua tapak yang diuji, istilah bentuk/imbangan dan sebab pemilihan tapak murid.
+**Penutup (5 minit):** Murid memilih satu lakaran kucing dan menandakan kedudukan kaki pada tapak untuk PdP 035.
+**Pembezaan:** Beri kerangka kucing bergambar; murid mahir membuat lakaran pandangan sisi dan hadapan.
+**Keselamatan:** Pemotongan polistirena atau pengendalian alat panas hanya oleh guru; murid guna sampel prapotong.
+**Rujukan:** [DSKP Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [Buku Teks Tahun 5](https://drive.google.com/file/d/1UA9arc9LrigHx-GccSJFpkTtqfskLFpg/view). Aktiviti adalah adaptasi CikguLaju.

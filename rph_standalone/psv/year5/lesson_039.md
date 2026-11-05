@@ -5,7 +5,7 @@
 **Fokus:** Penghasilan Tekat Bunga Kemboja Emas  
 **SK:** 3.1  
 **SP:** 3.1.5  
-**Buku Teks:** Pendidikan Seni Visual Tahun 5, Unit 10, ms 86–87 (rujukan RPT 2026 dan buku teks edisi unit Bunga Kemboja Emas)  
+**Buku Teks:** Pendidikan Seni Visual Tahun 5, Unit 10, ms 86–87 (halaman disemak pada PDF Buku Teks asal)  
 **BBM:** templat motif kemboja, kad mempulur, kain baldu/felt pada ram, benang emas tiruan, benang kapas, jarum sulam tumpul, alas dan gunting hujung bulat  
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
@@ -27,4 +27,4 @@ Murid dapat membina motif mempulur bunga kemboja dan memulakan tekat timbul deng
 
 **Keselamatan:** Hanya jarum sulam tumpul bersaiz sesuai digunakan di bawah pengawasan guru. Jika murid belum sesuai menggunakan jarum, guru bantu tebuk lubang dan murid menyusun benang dengan alat penarik plastik; elakkan jarum tajam atau gam panas.
 
-**Rujukan:** [DSKP PSV Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [RPT PSV Tahun 5 2026](https://anyflip.com/zxzlm/zerp/basic); [Buku Teks PSV Tahun 5 edisi rujukan projek](https://anyflip.com/gygr/pity/basic). Aktiviti amali diolah untuk kesesuaian bilik darjah; semakan paparan cetak masih diperlukan.
+**Rujukan:** [DSKP PSV Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [RPT PSV Tahun 5 2026](https://anyflip.com/zxzlm/zerp/basic); [Buku Teks PSV Tahun 5 edisi rujukan projek](https://drive.google.com/file/d/1UA9arc9LrigHx-GccSJFpkTtqfskLFpg/view). Aktiviti amali diolah untuk kesesuaian bilik darjah; penjana native Telegram staging masih perlu diuji.

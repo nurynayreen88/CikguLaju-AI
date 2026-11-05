@@ -4,19 +4,18 @@
 **Fokus:** Penerokaan visual | **Teknik:** Tembikar  
 **SK:** 1.1; 2.1  
 **SP:** 1.1.4; 2.1.9  
-**Buku Teks:** Pendidikan Seni Visual Tahun 5, ms 38–39 (unit ms 38-45)  
-**BBM:** paper clay atau doh, air, alas kerja, cat poster  
+**Buku Teks:** Pendidikan Seni Visual Tahun 5, ms 38–41 (unit ms 38-45)  
+**BBM:** Buku Teks ms 38–41, contoh tembikar tradisional, paper clay/doh lembut, alas dan alat tekan plastik tumpul
 **Tempoh:** 60 minit
 
 ## Objektif dan kriteria kejayaan
-Murid dapat menyatakan dua bahasa seni visual yang hadir pada karya Pasu Mini serta meneroka dua media. Evidens: dua percubaan media dan dua istilah bahasa seni.
-
+Murid dapat mengenal dua jenis ragam hias tembikar dan menguji picitan serta lingkaran pada dua sampel doh lembut. Evidens: dua sampel berlabel, dua istilah seni visual dan penjelasan fungsi corak tembikar.
 ## Langkah PdP
-**Set induksi (5 minit):** Guru menunjukkan tema Pasu Mini; murid menjelaskan satu pemerhatian visual.
-**Aktiviti 1 (15 minit) — Demonstrasi:** Guru menunjukkan BT ms 38–39 dan menjelaskan bentuk pasu, dinding picitan dan kesatuan hiasan; murid menunjukkan contoh unsur seni pada imej.
-**Aktiviti 2 (25 minit) — Amali:** Murid meneroka secara amali: Uji teknik picitan dan lingkaran pada paper clay serta perhatikan ketebalan dinding. Dua sampel dibandingkan dan dicatat.
-**Pengukuhan/Pentaksiran (10 minit):** Guru menilai dua percubaan media dan dua istilah bahasa seni dan merekod kemajuan PBD.
-**Penutup (5 minit):** Murid menyatakan satu kemahiran dan menyimpan karya serta membersihkan ruang.
-**Pembezaan:** Templat langkah bergambar bagi sokongan; murid mahir membanding pilihan reka bentuk.
-**Keselamatan:** Gunakan bahan tidak toksik dan alat tumpul dengan pengawasan guru.
-**Rujukan:** [DSKP Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [Buku Teks Tahun 5](https://anyflip.com/gygr/pity/basic). Aktiviti adalah adaptasi CikguLaju.
+**Set induksi (5 minit):** Guru mempamerkan gambar tembikar tradisional; murid mengenal bentuk bibir, badan dan pelapik serta kegunaannya.
+**Aktiviti 1 (15 minit) — Demonstrasi:** Guru rujuk BT ms 38–41: banding teknik terapan, gurisan dan timbul; tunjuk bentuk contoh picitan dan lingkaran pada doh bersih.
+**Aktiviti 2 (25 minit) — Amali:** Murid menghasilkan satu sampel bebola doh berpicit dan satu lingkaran doh, memeriksa ketebalan serta lekatan, kemudian menanda kesan jalinan dan memilih kaedah untuk pasu mini.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menyemak dua sampel, ketepatan istilah picitan/lingkaran dan lakaran rupa pasu; murid menerangkan satu pilihan media.
+**Penutup (5 minit):** Murid menyebut satu teknik dan satu sebab pemilihannya; guru menyimpan lakaran bagi PdP 018.
+**Pembezaan:** Beri templat tapak dan doh prabentuk kepada murid sokongan; murid mahir membanding dua cara membentuk bibir.
+**Keselamatan:** Bahan lembut tidak toksik; tidak menggunakan tanah berhabuk, alat tajam atau relau dalam kelas.
+**Rujukan:** [DSKP Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [Buku Teks Tahun 5](https://drive.google.com/file/d/1UA9arc9LrigHx-GccSJFpkTtqfskLFpg/view). Aktiviti adalah adaptasi CikguLaju.

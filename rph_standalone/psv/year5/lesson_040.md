@@ -5,7 +5,7 @@
 **Fokus:** Kemasan dan Apresiasi Bunga Kemboja Emas  
 **SK:** 3.1; 4.1  
 **SP:** 3.1.5; 4.1.1; 4.1.2  
-**Buku Teks:** Pendidikan Seni Visual Tahun 5, Unit 10, ms 88–89 (rujukan RPT 2026 dan buku teks edisi unit Bunga Kemboja Emas)  
+**Buku Teks:** Pendidikan Seni Visual Tahun 5, Unit 10, ms 88–89 (halaman disemak pada PDF Buku Teks asal)  
 **BBM:** panel tekat dari PdP 039, benang hias, jarum sulam tumpul, gunting hujung bulat, kad kriteria dan kad apresiasi  
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
@@ -27,4 +27,4 @@ Murid dapat menyempurnakan susunan benang hias pada motif bunga kemboja serta me
 
 **Keselamatan:** Guru mengawal bilangan jarum tumpul keluar/masuk, mengumpulkan sisa benang dan menyelia semua penggunaan alat; tiada jarum tajam tanpa pengawasan.
 
-**Rujukan:** [DSKP PSV Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [RPT PSV Tahun 5 2026](https://anyflip.com/zxzlm/zerp/basic); [Buku Teks PSV Tahun 5 edisi rujukan projek](https://anyflip.com/gygr/pity/basic). Aktiviti amali diolah untuk kesesuaian bilik darjah; semakan paparan cetak masih diperlukan.
+**Rujukan:** [DSKP PSV Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [RPT PSV Tahun 5 2026](https://anyflip.com/zxzlm/zerp/basic); [Buku Teks PSV Tahun 5 edisi rujukan projek](https://drive.google.com/file/d/1UA9arc9LrigHx-GccSJFpkTtqfskLFpg/view). Aktiviti amali diolah untuk kesesuaian bilik darjah; penjana native Telegram staging masih perlu diuji.

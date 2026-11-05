@@ -300,6 +300,38 @@ class PSVSourceOrderTests(unittest.TestCase):
                 self.assertEqual(row["Objektif"], "Murid dapat " + objective.group(1))
                 self.assertEqual(row["Evidens PBD"], objective.group(2))
 
+    def test_year5_original_textbook_selected_units_use_exact_materials_and_sources(self):
+        """Check visually grounded Year 5 fixes without claiming all 42 pages reviewed."""
+        rows = read_csv(PSV / "RPT_PSV_Tahun_5_2027_DRAF.csv")
+        source = "https://drive.google.com/file/d/1UA9arc9LrigHx-GccSJFpkTtqfskLFpg/view"
+        self.assertEqual(len(rows), 42)
+        self.assertTrue(all(row["Pautan Buku Teks"] == source for row in rows))
+        expected = {
+            17: ("38–41", "terapan", "lingkaran"),
+            18: ("42–43", "tiga lingkaran", "tapak"),
+            19: ("44–45", "timbul", "terapan"),
+            34: ("74–75", "imbangan", "tapak"),
+            35: ("76–77", "polistirena", "tapak"),
+            36: ("78–79", "polistirena", "10 saat"),
+            37: ("80–81", "tapak berlapis", "10 saat"),
+            38: ("82–85", "mempulur", "tekat"),
+            39: ("86–87", "mempulur", "jarum sulam tumpul"),
+            40: ("88–89", "tekat timbul", "benang"),
+        }
+        for number, (page, term_a, term_b) in expected.items():
+            with self.subTest(pdp=number):
+                row = rows[number - 1]
+                raw = (ROOT / row["Fail RPH"]).read_text(encoding="utf-8")
+                self.assertIn("ms " + page, raw)
+                self.assertIn(term_a.lower(), raw.lower())
+                self.assertIn(term_b.lower(), raw.lower())
+                self.assertIn(source, raw)
+                self.assertIn("**Status:** DRAF", raw)
+        for number in range(34, 38):
+            raw = (ROOT / f"rph_standalone/psv/year5/lesson_{number:03d}.md").read_text(encoding="utf-8")
+            self.assertNotIn("batang kertas", raw)
+            self.assertIn("guru", raw.lower())
+
     def test_year5_bunga_kemboja_tekat_is_genuine_couching(self):
         rows = read_csv(PSV / "RPT_PSV_Tahun_5_2027_DRAF.csv")
         keywords = {

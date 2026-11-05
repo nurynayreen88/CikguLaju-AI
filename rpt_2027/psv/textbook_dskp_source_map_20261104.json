@@ -445,7 +445,7 @@
       ]
     },
     "5": {
-      "book": "https://anyflip.com/gygr/pity/basic",
+      "book": "https://drive.google.com/file/d/1UA9arc9LrigHx-GccSJFpkTtqfskLFpg/view",
       "dskp": "https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view",
       "kind": "Pendidikan Seni Visual Tahun 5",
       "units": [
@@ -589,7 +589,9 @@
           5,
           4
         ]
-      ]
+      ],
+      "book_alternative_flipbook": "https://anyflip.com/gygr/pity/basic",
+      "book_verified_pdf": "PENDIDIKAN SENI VISUAL T5 SK.pdf (99 PDF pages; printed pages 1–89; page offset +8)"
     },
     "6": {
       "book": "https://fliphtml5.com/hkvtu/cnbo/Pendidikan_Seni_Visual_Tahun_6/",

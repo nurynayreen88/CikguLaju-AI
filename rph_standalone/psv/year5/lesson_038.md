@@ -5,7 +5,7 @@
 **Fokus:** Eksplorasi Tekat – Bunga Kemboja Emas  
 **SK:** 1.1; 2.1  
 **SP:** 1.1.4; 2.1.10  
-**Buku Teks:** Pendidikan Seni Visual Tahun 5, Unit 10, ms 82–85 (rujukan RPT 2026 dan buku teks edisi unit Bunga Kemboja Emas)  
+**Buku Teks:** Pendidikan Seni Visual Tahun 5, Unit 10, ms 82–85 (halaman disemak pada PDF Buku Teks asal)  
 **BBM:** foto/kad tekat timbul dan tekat gubah, kain baldu/felt, contoh mempulur kad, benang emas tiruan, benang kapas, ram atau bingkai, pensel, gunting hujung bulat  
 **Tempoh:** 60 minit (cadangan, ikut jadual guru)
 
@@ -27,4 +27,4 @@ Murid dapat menjelaskan dua ciri tekat timbul (mempulur dan benang hias) serta m
 
 **Keselamatan:** Gunting hujung bulat dan gam tidak toksik. Penggunaan jarum sebenar belum diperlukan pada sesi ini; semua bahan kecil digunakan dengan pemantauan guru.
 
-**Rujukan:** [DSKP PSV Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [RPT PSV Tahun 5 2026](https://anyflip.com/zxzlm/zerp/basic); [Buku Teks PSV Tahun 5 edisi rujukan projek](https://anyflip.com/gygr/pity/basic). Aktiviti amali diolah untuk kesesuaian bilik darjah; semakan paparan cetak masih diperlukan.
+**Rujukan:** [DSKP PSV Tahun 5](https://drive.google.com/file/d/19zvNNKKbn6mIwF7ES9I87yqNaj1xW2Fx/view); [RPT PSV Tahun 5 2026](https://anyflip.com/zxzlm/zerp/basic); [Buku Teks PSV Tahun 5 edisi rujukan projek](https://drive.google.com/file/d/1UA9arc9LrigHx-GccSJFpkTtqfskLFpg/view). Aktiviti amali diolah untuk kesesuaian bilik darjah; penjana native Telegram staging masih perlu diuji.
