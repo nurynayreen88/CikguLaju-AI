@@ -32,7 +32,8 @@ def _valid_pending_row(row, uid, rid):
     except (InvalidOperation, ValueError, TypeError):
         return False
     return (
-        int(row.get("id") or 0) == rid
+        type(row.get("id")) is int
+        and row["id"] == rid
         and str(row.get("chat_id")) == str(uid)
         and row.get("status") == "pending"
         and amount == Decimal("10.00")
