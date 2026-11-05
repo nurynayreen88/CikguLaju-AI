@@ -286,5 +286,40 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
         self.assertTrue(any("Classical" in " ".join(r.get("flags", [])) for r in y6["pdps"]))
 
 
+
+# Extra staging-only tests live in this already-allowlisted CI audit file.
+import importlib.util as _music_importlib_util
+_MUSIC_PREVIEW_SOURCE = MUSIC / "rpt_rph_2027"
+_music_preview_spec = _music_importlib_util.spec_from_file_location(
+    "music_native_layout_preview_staging", _MUSIC_PREVIEW_SOURCE / "native_layout_preview_staging.py")
+module = _music_importlib_util.module_from_spec(_music_preview_spec)
+_music_preview_spec.loader.exec_module(module)
+SOURCE = _MUSIC_PREVIEW_SOURCE
+
+class MusicNativeLayoutStagingTests(unittest.TestCase):
+    def test_all_175_music_rph_preserve_the_five_pedagogical_parts(self):
+        for year in range(2, 7):
+            for pdp in range(1, 36):
+                with self.subTest(year=year, pdp=pdp):
+                    preview = module.build_staging_preview(SOURCE, year, pdp)
+                    self.assertFalse(preview["approved_for_live"])
+                    self.assertEqual(preview["source_pdp_id"], f"MZ-Y{year}-{pdp:02d}")
+                    self.assertEqual(preview["layout"]["style"], "telegram-native-rph-v1")
+                    self.assertEqual(len(preview["layout"]["header"]), 20)
+                    self.assertEqual(preview["layout"]["activity_header"], module.ACTIVITY_HEADER)
+                    self.assertEqual(len(preview["layout"]["phases"]), 3)
+                    self.assertEqual(len(preview["layout"]["footer"]), 2)
+                    self.assertEqual(preview["layout"]["phases"][0]["activity"], preview["phase_text"]["induction"])
+                    self.assertEqual(preview["layout"]["phases"][2]["activity"], preview["phase_text"]["closure"])
+                    for kind in ("act1", "act2", "assessment"):
+                        self.assertIn(preview["phase_text"][kind], preview["layout"]["phases"][1]["activity"])
+                    self.assertIn("NO_REAL_WORD_PDF_RENDER", preview["warnings"])
+    def test_fail_closed_for_invalid_year_or_pdp(self):
+        for year, pdp in ((1, 1), (7, 1), (2, 0), (3, 36), ("2", 1)):
+            with self.subTest(year=year, pdp=pdp):
+                with self.assertRaises(ValueError):
+                    module.build_staging_preview(SOURCE, year, pdp)
+
+
 if __name__ == "__main__":
     unittest.main()
