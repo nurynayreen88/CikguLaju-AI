@@ -1,0 +1,49 @@
+{
+  "system": "CikguLaju",
+  "subject": "Pendidikan Islam",
+  "version": "V5-integration-staging-20261105",
+  "status": "STAGING_NOT_READY",
+  "rph_count": 696,
+  "rpt_word_count": 5,
+  "rpt_pdf_count": 5,
+  "optional_tasmi_guides_count": 8,
+  "original_rph_changes_from_V3": 0,
+  "publication_status": "DRAF",
+  "user_access": "DO_NOT_DEPLOY",
+  "teacher_approval": "not_yet_completed",
+  "additional_official_sp_created": 0,
+  "quran_supplements_are_proposals_only": true,
+  "source_archive_sha256": {
+    "V3": "6e6ea026034885c80e1c45e4045bc3e26c439224484bb100a6fa41b213f27bae",
+    "V4": "e2c4dc5a34ad401a78369cc5a637fdf7724d58df7c72f90db7f1f5d1041607a9"
+  },
+  "coverage_exceptions": [
+    "T2-L035",
+    "T3-L145",
+    "T5-L141",
+    "T6-L014",
+    "T6-L018",
+    "T6-L026",
+    "T6-L137",
+    "T6-L141"
+  ],
+  "rph_by_year": {
+    "2": 112,
+    "3": 147,
+    "4": 151,
+    "5": 143,
+    "6": 143
+  },
+  "validation_assertions": [
+    "sha256 696 RPH matches v3 audit matrix",
+    "eight optional guide PDFs map to existing lesson IDs",
+    "5 RPT Word/PDF included",
+    "no RPH modified"
+  ],
+  "release_gates_remaining": [
+    "external subject content QA",
+    "teacher review of optional curriculum coverage",
+    "bot integration and staging message delivery",
+    "CI regression on current main"
+  ]
+}
