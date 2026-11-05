@@ -130,6 +130,21 @@ class BroadcastTests(unittest.TestCase):
         self.assertEqual(len(self.menu_updates),1)
         self.assertEqual(self.runtime.callback(42,"home"),"original callback")
 
+    def test_final_admin_menu_preserves_referral_after_previous_wrapper(self):
+        self.runtime.CIKGULAJU_BROADCAST_INSTALLED=False
+        # Reuse the original base menu to emulate the referral wrapper's
+        # sendMessage response (it returns original markup after editing).
+        self.runtime._admin_panel=lambda cid: Response(self.base_menu)
+        self.assertTrue(b.install(self.runtime,preserve_referral=True))
+        self.runtime._admin_panel(999)
+        updated=self.menu_updates[-1]["reply_markup"]["inline_keyboard"]
+        keys=[btn.get("callback_data") for row in updated for btn in row]
+        self.assertIn("admin_ref_points|list|0",keys)
+        self.assertIn(b.BUTTON["callback_data"],keys)
+        self.assertIn("admin_list|all|0",keys)
+        self.assertIn("admin_system",keys)
+        self.assertEqual(self.db.writes,[])
+
     def test_non_admin_cannot_preview_confirm_or_resume(self):
         for key in ("admin_web_broadcast|preview","admin_web_broadcast|resume",
                     "admin_web_broadcast|confirm|1234123412341234"):
