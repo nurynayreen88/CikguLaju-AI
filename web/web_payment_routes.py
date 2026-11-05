@@ -81,6 +81,13 @@ def _source(path, *, expect="json", opener=None):
 def validated_plans(catalog):
     if not isinstance(catalog, dict) or catalog.get("mode") != "manual_receipt_review":
         raise ProfileUnavailable("Katalog bayaran tidak disahkan")
+    # A proof file_id is only readable by the bot that originally uploaded
+    # the file. Refuse any Web payment if the widget bot is not the real
+    # Telegram production bot that owns the QR/admin payment queue.
+    web_token=os.environ.get("CIKGULAJU_WEB_BOT_TOKEN","")
+    match=re.fullmatch(r"([0-9]{5,15}):[A-Za-z0-9_-]{20,}",web_token)
+    if not match or catalog.get("telegram_bot_id") != match.group(1):
+        raise ProfileUnavailable("Bot Web dan Telegram tidak sepadan")
     items = catalog.get("plans")
     if not isinstance(items, list) or len(items) != 2:
         raise ProfileUnavailable("Pakej bayaran tidak disahkan")
