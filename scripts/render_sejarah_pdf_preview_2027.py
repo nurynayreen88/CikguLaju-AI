@@ -54,13 +54,13 @@ def run():
             # HTML already includes a cover before the two RPT group sections.
             if kind=="RPH":
                 assert count==36,("ONE_A4_RPH_PAGE_PER_PDP_FAILED",year,count)
-                assert all(re.search(rf"PdP\\s+{n}(?!\\d)",txt) for n in range(1,37)),("MISSING_RPH_NUMBER",year)
+                assert all(re.search(rf"PdP\s+{n}(?!\d)",txt) for n in range(1,37)),("MISSING_RPH_NUMBER",year)
                 assert "PBD" in txt and "SEJARAH" in txt
             else:
                 assert "Kumpulan A" in txt and "Kumpulan B" in txt,(year,"missing groups")
                 assert "RANCANGAN PENGAJARAN TAHUNAN" in txt,(year,"missing cover")
                 for n in range(1,37):
-                    assert len(re.findall(rf"(?<!\\d){n}(?!\\d)",txt))>=2,(year,"missing RPT row",n)
+                    assert len(re.findall(rf"(?<!\d){n}(?!\d)",txt))>=2,(year,"missing RPT row",n)
             manifest.append({"year":year,"document":kind,"pages":count,"bytes":output.stat().st_size,"orientation":"landscape" if expect_landscape else "portrait","preview":True,"ready":False})
             print(f"{kind} Y{year}: {count} pages, {output.stat().st_size} bytes, PDF searchable, {'landscape' if expect_landscape else 'portrait'}",flush=True)
     (OUT/"manifest.json").write_text(json.dumps({"status":"DRAF_PDF_PREVIEW_ONLY","records":manifest},indent=2)+"\n",encoding="utf-8")
