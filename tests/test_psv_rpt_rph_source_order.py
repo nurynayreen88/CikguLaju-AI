@@ -732,6 +732,26 @@ class PSVSourceOrderTests(unittest.TestCase):
         for unit, term in ((2, "bekas air comel"), (6, "kain putih"), (7, "topeng serkup")):
             self.assertIn(term, canon["years"]["2"]["units"][unit-1][6].lower())
 
+    def test_year2_real_stabail_piala_and_rope_axle_gasing(self):
+        """Book makes two-cup paper trophy and centrally balanced cardboard spinning top."""
+        rows = read_csv(PSV / "RPT_PSV_Tahun_2_2027_DRAF.csv")
+        expected = {
+            11: ("piala saya hebat", "dua cawan"),
+            12: ("piala saya hebat", "imbangan"),
+            15: ("tali tebal", "paksi"),
+            16: ("tali tebal", "putaran"),
+        }
+        for n, terms in expected.items():
+            with self.subTest(pdp=n):
+                body = (ROOT / f"rph_standalone/psv/year2/lesson_{n:03d}.md").read_text(encoding="utf-8").lower()
+                self.assertTrue(all(x in body for x in terms))
+                self.assertIn(rows[n-1]["Objektif"].lower(), body)
+                self.assertIn(rows[n-1]["Evidens PBD"].lower(), body)
+                self.assertEqual(rows[n-1]["Status"], "DRAF_SEMAK")
+        source = json.loads((PSV / "textbook_dskp_source_map_20261104.json").read_text(encoding="utf-8"))
+        self.assertIn("piala saya hebat", source["years"]["2"]["units"][2][6].lower())
+        self.assertIn("tali tebal", source["years"]["2"]["units"][3][6].lower())
+
     def test_20_fixed_source_map_outcomes_do_not_revert_to_generic_art(self):
         """Map is editorial context, not a certificate of 210 visual approvals."""
         m = json.loads((PSV / "textbook_dskp_source_map_20261104.json").read_text(encoding="utf-8"))
@@ -745,7 +765,7 @@ class PSVSourceOrderTests(unittest.TestCase):
             (4,4): "bunga matahari", (4,5): "piring", (4,8): "arnab",
             (5,8): "bingkai gambar", (5,9): "polistirena", (6,5): "roda pemusing",
         }
-        self.assertEqual(m["source_audit_summary"]["unit_corrections"], 23)
+        self.assertEqual(m["source_audit_summary"]["unit_corrections"], 25)
         self.assertEqual(m["source_audit_summary"]["scope"], "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL")
         for (year, unit), keyword in expected.items():
             with self.subTest(year=year, unit=unit):

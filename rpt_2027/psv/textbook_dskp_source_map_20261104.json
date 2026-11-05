@@ -40,11 +40,11 @@
           "Saya Juara",
           "Arca stabail",
           "22-25",
-          "kadbod, kertas warna, gam, pita dan tapak tegar",
+          "dua cawan kertas berlainan saiz, kertas kilat, kad bulat, gam dan tapak pemberat tertutup",
           "bentuk, warna dan imbangan arca stabail",
-          "Bina dua model asas tapak dan tiang; uji titik berat dan kestabilan model sebelum cantuman",
-          "Hasilkan arca piala juara berasaskan tapak kukuh dan bentuk 3D",
-          "Demonstrasikan imbangan dan terangkan unsur bentuk pada arca",
+          "Uji imbangan dua cawan kertas A/B dan lakar Piala Saya Hebat",
+          "Bina arca stabail Piala Saya Hebat daripada dua cawan kertas berbalut kertas kilat dan cantum dasar",
+          "Semak kestabilan tapak, bentuk cawan, kemasan kad bulat dan imbangan",
           3,
           3,
           1,
@@ -54,11 +54,11 @@
           "Pusing Gasing Pusing",
           "Alat permainan gasing",
           "30-33",
-          "kadbod tebal, kertas warna, gam, pita, lidi kertas tumpul",
+          "kadbod bulat prapotong, tali tebal, gam dan paksi kertas tumpul prasiap guru",
           "bentuk, jalinan dan imbangan alat permainan tradisional",
-          "Lakar bulatan sepusat, potong bentuk kadbod dengan bantuan guru, cuba dua bentuk paksi kertas yang tidak tajam",
-          "Hasilkan model gasing berhias motif tradisional dan uji putaran di atas permukaan rata",
-          "Huraikan motif, imbangan dan keselamatan model gasing",
+          "Uji titik pusat paksi dan lilitan tali tebal pada gasing kadbod",
+          "Hasilkan model gasing kadbod berlilit tali tebal dengan paksi di tengah dan uji putaran selamat",
+          "Banding ketahanan putaran, imbangan simetri dan jalinan tali",
           4,
           3,
           1,
@@ -746,7 +746,7 @@
   },
   "updated": "2026-11-05",
   "source_audit_summary": {
-    "unit_corrections": 23,
+    "unit_corrections": 25,
     "scope": "UNIT_TEXT_CHECKED_NOT_PER_PDP_VISUAL_APPROVAL",
     "report": "audits/psv_source_map_reconciliation_20261105.md",
     "corrections": {
@@ -861,6 +861,14 @@
       "2-7": {
         "scope": "TEXTBOOK_PRINTED_PAGE_TEXT_CHECKED_NOT_PER_PDP_VISUAL_CERTIFICATE",
         "after": "Hasilkan Topeng Serkup Si Burung Kenek-kenek berbentuk silinder kad manila dengan mata, paruh kon dan jalinan felt"
+      },
+      "2-3": {
+        "scope": "SOURCE_TEXT_PRODUCT_PAGES_CHECKED_NOT_INDIVIDUAL_VISUAL_CERTIFICATE",
+        "after": "Bina arca stabail Piala Saya Hebat daripada dua cawan kertas berbalut kertas kilat dan cantum dasar"
+      },
+      "2-4": {
+        "scope": "SOURCE_TEXT_PRODUCT_PAGES_CHECKED_NOT_INDIVIDUAL_VISUAL_CERTIFICATE",
+        "after": "Hasilkan model gasing kadbod berlilit tali tebal dengan paksi di tengah dan uji putaran selamat"
       }
     }
   }
