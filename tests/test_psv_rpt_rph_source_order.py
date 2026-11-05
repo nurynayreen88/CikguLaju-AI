@@ -532,6 +532,27 @@ class PSVSourceOrderTests(unittest.TestCase):
             line = next(line for line in html.splitlines() if f"<td>{id}</td>" in line)
             self.assertIn(f"<td>{page}</td>", line)
 
+    def test_year3_serangga_kecil_mobail_matches_book_30_to_35(self):
+        """Concrete asemblaj hanging shapes plus paper-cup tie, not generic cardboard."""
+        checks = {
+            13: ("30–31", "asemblaj", "serangga"),
+            14: ("32–33", "ikatan", "cawan kertas"),
+            15: ("34–35", "cawan kertas", "pratebuk"),
+            16: ("34–35", "simpulan tali", "mobail"),
+        }
+        rpt = read_csv(PSV / "RPT_PSV_Tahun_3_2027_DRAF.csv")
+        html = (PSV / "RPT_PSV_Tahun_3_2027_DRAF.html").read_text(encoding="utf-8")
+        for n, terms in checks.items():
+            with self.subTest(pdp=n):
+                content = (ROOT / f"rph_standalone/psv/year3/lesson_{n:03d}.md").read_text(encoding="utf-8").lower()
+                self.assertTrue(all(w in content for w in terms))
+                self.assertEqual(rpt[n-1]["Status"], "DRAF_SEMAK")
+                self.assertIn(rpt[n-1]["Objektif"].lower(), content)
+                self.assertIn(rpt[n-1]["Evidens PBD"].lower(), content)
+        self.assertEqual(rpt[14]["BT muka surat"], "34–35")
+        self.assertIn("<td>015</td>", html)
+        self.assertIn("<td>34–35</td>", html)
+
     def test_year5_bunga_kemboja_tekat_is_genuine_couching(self):
         rows = read_csv(PSV / "RPT_PSV_Tahun_5_2027_DRAF.csv")
         keywords = {
