@@ -5,7 +5,7 @@
 **SK:** 1.1; 2.1  
 **SP:** 1.1.1; 2.1.1  
 **Buku Teks:** Pendidikan Kesenian Tahun 2 (bahagian Seni Visual), ms 38–39 (unit 38-41)  
-**BBM:** krayon, kertas lukisan, daun dan permukaan berjalinan selamat  
+**BBM:** BT ms 38–39, peralatan sukan, kertas nipis, alas jalinan selamat dan pensel warna
 **Masa:** 60 minit
 
 ## Objektif dan kriteria kejayaan
@@ -13,10 +13,11 @@ Pada akhir PdP, murid dapat mengenal dua istilah bahasa seni pada gosokan dan me
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru memperlihatkan karya bertajuk Bersukan Badan Sihat dan murid menyebut pengalaman atau imej yang berkaitan dengan tema.
-**Aktiviti 1 (15 minit) — Penerangan dan eksplorasi:** Guru menunjukkan buku teks ms 38–39, menjelaskan kesan jalinan gosokan daripada permukaan timbul dan rendah; murid mengenal pasti dua unsur bahasa seni pada contoh.
-**Aktiviti 2 (25 minit) — Amali murid:** Murid memerhati imej buku dan membuat dua sampel: Letak kertas pada tiga permukaan berjalinan; gosok krayon secara mendatar dan bandingkan kesan jalinan. Guru meminta murid merekod kesan teknik serta memilih idea projek.
-**Pengukuhan/Pentaksiran (10 minit):** Kad bahasa seni + dua sampel teknik dengan catatan perbezaan. Guru merekod evidens PBD dan memberi maklum balas mengikut tahap murid.
+**Aktiviti 1 (15 minit) — Penerangan dan eksplorasi:** Guru merujuk BT ms 38–39 tentang rupa dan garisan peralatan sukan serta teknik gosokan sebagai pemindahan jalinan permukaan.
+**Aktiviti 2 (25 minit) — Amali murid:** Murid menggosok pensel warna di atas kertas pada dua permukaan berjalinan, mengenal garisan titik-titik dan putus-putus lalu melakar susunan buah-buahan untuk PdP berikut.
+**Pengukuhan/Pentaksiran (10 minit):** Guru semak dua gosokan, dua jenis garisan dan pemahaman jalinan.
 **Penutup (5 minit):** Murid menyatakan satu pembelajaran dan menyimpan karya serta membersihkan ruang.
 **Pembezaan:** Murid memerlukan bantuan menggunakan contoh langkah berperingkat; murid mahir membandingkan dua teknik dan menerangkan pemilihan sendiri.
 **Keselamatan:** Alat tumpul dan media tidak toksik; aktiviti gunting/cantuman dipantau guru. 
 **Rujukan:** [DSKP PSV Tahun 2](https://drive.google.com/file/d/1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8/view) | [Buku Teks Pendidikan Kesenian Tahun 2 (bahagian Seni Visual)](https://fliphtml5.com/laiqy/thik/Buku_Teks_Pendidikan_Kesenian_Tahun_2/). Aktiviti ialah adaptasi CikguLaju yang berpandukan kandungan unit; bukan salinan arahan buku secara verbatim.
+**Sumber Buku Teks langsung:** https://fliphtml5.com/pssskfc/cmag/PENDIDIKAN_KESENIAN_TAHUN_2_SK_BUKU_TEKS/
