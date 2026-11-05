@@ -179,7 +179,7 @@ def _read_source(row, year, subject):
         return None
     n = row["lesson"]
     if subject == "ENGLISH":
-        if not re.search(r"(?m)^# English Year %d [—–-] Lesson 0*%d(?:\b|[:—])" % (year, n), text):
+        if not re.search(r"(?m)^# English Year %d [—–-] (?:Standalone RPH [—–-] )?Lesson 0*%d(?:\b|[:—])" % (year, n), text):
             return None
     elif subject == "MORAL":
         if not text.startswith(f"# RPH Pendidikan Moral Tahun {year} — PdP {n:03d}"):
