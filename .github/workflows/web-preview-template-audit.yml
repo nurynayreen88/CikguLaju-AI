@@ -1,0 +1,42 @@
+name: Audit RPH template coverage for Web preview
+on:
+  push:
+    branches:
+      - staging/cikgulaju-web-v1
+    paths:
+      - .github/workflows/web-preview-template-audit.yml
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  read:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect verified template coverage (no content of personal data)
+        run: |
+          python - <<'PY'
+          import pathlib,hashlib,json,sqlite3,tempfile
+          m=json.loads(pathlib.Path('v26_00_manifest.json').read_text())
+          with tempfile.TemporaryDirectory() as directory:
+              db=pathlib.Path(directory)/'r.db';digest=hashlib.sha256()
+              with db.open('wb') as f:
+                  for e in m['parts']:
+                      p=pathlib.Path(e['file'])
+                      b=p.read_bytes()
+                      assert len(b)==e['size'] and hashlib.sha256(b).hexdigest()==e['sha256']
+                      digest.update(b);f.write(b)
+              assert digest.hexdigest()==m['sha256']
+              con=sqlite3.connect(db.as_uri()+'?mode=ro',uri=True)
+              con.execute('PRAGMA query_only=ON')
+              print('TEMPLATE_COUNTS',list(con.execute("SELECT year_label,subject,verified_alignment,COUNT(*) FROM rph_templates GROUP BY 1,2,3 ORDER BY 1,2,3 LIMIT 100")))
+              for r in con.execute("SELECT year_label,subject,sk_code,sp_code,template_key,content_json FROM rph_templates WHERE verified_alignment=1 LIMIT 6"):
+                  try:
+                      j=json.loads(r[-1])
+                      print('TEMPLATE_SAMPLE',r[:5], str(j)[:650])
+                  except Exception:
+                      print('TEMPLATE_SAMPLE_ERROR',r[:5])
+              print('RPH_CACHE_COUNT',con.execute("SELECT COUNT(*) FROM rph_cache").fetchone()[0])
+              print('RPT_STANDARDS_COUNT',list(con.execute("SELECT standard_type,COUNT(*) FROM rpt_entry_standards WHERE verified=1 GROUP BY 1")))
+              con.close()
+          PY
