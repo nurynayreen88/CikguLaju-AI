@@ -755,8 +755,9 @@ class PSVSourceOrderTests(unittest.TestCase):
         for row in y2:
             with self.subTest(pdp=row["PdP"]):
                 self.assertNotIn("UNIT_BUKU_ASAL_DIRUJUK", row["Bukti_buku"])
-                self.assertNotEqual(row["Kelulusan_terbit"], "PASSED")
-                self.assertTrue(row["Nota_semakan_terbuka"])
+                self.assertEqual(row["Kelulusan_terbit"], "PASSED")
+                self.assertTrue(row["Bukti_buku"].startswith("BUKU_TEKS_VISUAL_SAH:"))
+                self.assertFalse(row["Nota_semakan_terbuka"])
         rows = read_csv(PSV / "RPT_PSV_Tahun_2_2027_DRAF.csv")
         for n, page in ((20, "4–5"), (21, "4–5"), (41, "46–47"), (42, "46–47")):
             self.assertIn(page, rows[n-1]["BT muka surat"])
@@ -882,7 +883,7 @@ class PSVSourceOrderTests(unittest.TestCase):
                 body = (ROOT / f"rph_standalone/psv/year4/lesson_{n:03d}.md").read_text(encoding="utf-8")
                 self.assertIn("**Status:** DRAF", body)
         for x in audit:
-            if x["Tahun"] in ("2", "3", "6"):
+            if x["Tahun"] in ("3", "6"):
                 self.assertEqual(x["Kelulusan_terbit"], "BELUM_READY")
 
     def test_year5_all_42_visual_textbook_individual_source_reviews_passed(self):
@@ -908,7 +909,28 @@ class PSVSourceOrderTests(unittest.TestCase):
         self.assertIn("mozek", source_map["years"]["5"]["units"][6][6])
         self.assertIn("bingkai", source_map["years"]["5"]["units"][6][6])
         for row in a:
-            if row["Tahun"] in ("2", "3", "6"):
+            if row["Tahun"] in ("3", "6"):
+                self.assertEqual(row["Kelulusan_terbit"], "BELUM_READY")
+
+    def test_year2_original_pdf_full_42_visual_source_audit(self):
+        """A source-scoped individual outcome, not a Telegram release authorization."""
+        data = read_csv(ROOT / "rph_standalone/psv/audits/psv_individual_210_review_20261105.csv")
+        y2 = sorted((r for r in data if r["Tahun"] == "2"), key=lambda r: int(r["PdP"]))
+        self.assertEqual(len(y2), 42)
+        for n, r in enumerate(y2, 1):
+            with self.subTest(pdp=n):
+                self.assertEqual(int(r["PdP"]), n)
+                self.assertEqual(r["Kelulusan_terbit"], "PASSED")
+                self.assertEqual(r["Pemeriksaan_RPH_individu"],
+                                 "RPH_DIBACA;BUKU_TEKS_VISUAL_SAH;DSKP_SEMANTIC_PASSED")
+                self.assertIn("1DpkyrWuIh_u1lWouu5QP-hKuC8d9DyYf", r["Bukti_buku"])
+                self.assertIn("1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8", r["Bukti_buku"])
+                self.assertIn(f"PdP {n:03d}", r["Bukti_buku"])
+                self.assertFalse(r["Nota_semakan_terbuka"])
+                source = (ROOT / f"rph_standalone/psv/year2/lesson_{n:03d}.md").read_text(encoding="utf-8")
+                self.assertIn("**Status:** DRAF", source)
+        for row in data:
+            if row["Tahun"] in ("3", "6"):
                 self.assertEqual(row["Kelulusan_terbit"], "BELUM_READY")
 
     def test_forty_unit_dskp_technique_and_production_semantics(self):
