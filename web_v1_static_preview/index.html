@@ -85,6 +85,28 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
  #workspace #view-rph > *:not(#rph-preview-panel){display:none!important}
 }
 
+
+/* Teacher profile and timetable reuse the shared Telegram-user Supabase account. */
+.teacher-profile-form,.teacher-timetable-section{border:1px solid #dce8ef;border-radius:15px;padding:20px;margin-top:19px;background:#fbfdff}
+.teacher-profile-form h3,.teacher-timetable-section h3{margin:0 0 13px;color:#174766}
+.profile-fields-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px 18px}
+.teacher-profile-form input,.teacher-profile-form select,.teacher-profile-form textarea,.timetable-table input,.timetable-table select{font:inherit;border:1px solid #c4d7e2;border-radius:10px;padding:10px;background:#fff;color:#153d56;max-width:100%;width:100%}
+.teacher-profile-form textarea{resize:vertical;line-height:1.6}
+.profile-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:15px 0 2px}
+.profile-actions button{background:#087568;color:#fff;border:0;border-radius:10px;padding:11px 15px;font:inherit;font-weight:700;cursor:pointer}
+.profile-actions button:disabled{opacity:.55;cursor:not-allowed}
+.profile-actions button:focus-visible,.teacher-profile-form input:focus-visible,.timetable-table select:focus-visible,.timetable-table input:focus-visible{outline:3px solid #ffc84b;outline-offset:2px}
+.profile-actions .notice{margin:0;flex:1 1 200px}
+.timetable-table-wrap{overflow-x:auto}
+.timetable-table{border-collapse:collapse;width:100%;min-width:655px;font-size:.87rem}
+.timetable-table th,.timetable-table td{border:1px solid #d2e1e7;padding:7px;vertical-align:top}
+.timetable-table th{background:#e8f1f5;text-align:left;color:#184965}
+.timetable-table td:nth-child(1){min-width:105px}.timetable-table td:nth-child(4){min-width:120px}.timetable-table td:nth-child(5){min-width:165px}
+.timetable-table input,.timetable-table select{font-size:.87rem;padding:8px 5px}
+.timetable-table .remove-period{background:#fff1f1;color:#9c2121;border:1px solid #f4c9c9;border-radius:8px;padding:8px 10px;cursor:pointer;font:inherit}
+@media(max-width:760px){.profile-fields-grid{grid-template-columns:1fr}.teacher-profile-form,.teacher-timetable-section{padding:13px 11px}}
+@media print{#view-account{display:none!important}}
+
 </style>
 </head>
 <body>
@@ -116,9 +138,47 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 <section id="view-rpt" class="app-view" aria-labelledby="rpt2027-heading" hidden>
 <section id="rpt2027-panel" aria-labelledby="rpt2027-heading"><h3 id="rpt2027-heading">📅 RPT 2027 — Semua Subjek</h3><p>Pilih subjek dan tahun. RPT adalah untuk Rakan Pembangun yang disahkan atau pelanggan berlangganan aktif. Fail bertanda DRAF/SEMENTARA masih dalam semakan.</p><label for="rpt-subject">Subjek RPT</label><select id="rpt-subject" disabled><option value="">Memuatkan senarai subjek…</option></select><label for="rpt-year">Tahun RPT</label><select id="rpt-year" disabled><option value="">Pilih Subjek dahulu</option></select><button id="rpt-download" type="button" disabled>Muat turun RPT 2027 (PDF)</button><p id="rpt-status" class="notice" role="status"></p></section></section>
 <section id="view-account" class="app-view" aria-labelledby="view-account-heading" hidden>
-<h2 id="view-account-heading">Profil &amp; Akses</h2>
-<p>Gunakan akaun Telegram CikguLaju yang telah didaftarkan. Rekod langganan dan akses kekal di sumber pengguna sedia ada.</p>
+<h2 id="view-account-heading">Profil Guru</h2>
+<p>Maklumat guru disimpan dalam akaun CikguLaju yang sama melalui Supabase. Isi sekali untuk memudahkan penyediaan RPH.</p>
 <p id="profile-access-summary" class="profile-access-status" role="status">Memuatkan status akaun…</p>
+<form id="teacher-profile-form" class="teacher-profile-form" autocomplete="on">
+  <h3>Maklumat Diri &amp; Sekolah</h3>
+  <div class="profile-fields-grid">
+    <div><label for="profile-name">Nama guru</label><input id="profile-name" name="display_name" type="text" autocomplete="name" maxlength="100" placeholder="Contoh: Cikgu Ahmad" required></div>
+    <div><label for="profile-school">Nama sekolah</label><input id="profile-school" name="school_name" type="text" maxlength="160" placeholder="Contoh: SK Taman Maju"></div>
+    <div><label for="profile-state">Negeri sekolah</label><select id="profile-state" name="state_name">
+      <option value="">Pilih negeri</option>
+      <option>Johor</option><option>Kedah</option><option>Kelantan</option><option>Melaka</option>
+      <option>Negeri Sembilan</option><option>Pahang</option><option>Perak</option><option>Perlis</option>
+      <option>Pulau Pinang</option><option>Sabah</option><option>Sarawak</option><option>Selangor</option>
+      <option>Terengganu</option><option>Kuala Lumpur</option><option>Putrajaya</option><option>Labuan</option>
+    </select></div>
+  </div>
+  <label for="profile-classes">Senarai kelas yang diajar</label>
+  <textarea id="profile-classes" rows="5" maxlength="1100" placeholder="4 Bestari&#10;5 Amanah&#10;6 Cemerlang" aria-describedby="profile-classes-help"></textarea>
+  <p id="profile-classes-help" class="notice">Satu nama kelas pada setiap baris, maksimum 25 kelas. Senarai ini juga boleh dipilih ketika menyediakan RPH.</p>
+  <div class="profile-actions"><button id="profile-save" type="submit" disabled>Simpan Maklumat Guru</button><span id="profile-save-status" class="notice" role="status" aria-live="polite">Memuatkan profil…</span></div>
+</form>
+<section id="teacher-timetable" class="teacher-timetable-section" aria-labelledby="timetable-heading">
+<h3 id="timetable-heading">Jadual Waktu Mengajar</h3>
+<p>Tambah waktu PdP mengikut hari, masa, kelas dan subjek. Simpan untuk rujukan apabila menyediakan RPH. Hari Ahad dan Sabtu juga disediakan bagi sekolah yang memerlukannya.</p>
+<p class="notice">Jadual disimpan dalam Supabase. Ciri bacaan automatik daripada gambar jadual waktu dan RPH Hari Ini belum diaktifkan pada Web ini.</p>
+<div class="timetable-table-wrap"><table class="timetable-table" aria-label="Jadual waktu guru">
+<thead><tr><th>Hari</th><th>Mula</th><th>Tamat</th><th>Kelas</th><th>Subjek</th><th>Padam</th></tr></thead>
+<tbody id="timetable-rows"></tbody></table></div>
+<datalist id="profile-subject-options">
+  <option value="Bahasa Melayu"></option><option value="English"></option><option value="Matematik"></option>
+  <option value="Sains"></option><option value="Pendidikan Islam"></option><option value="PJPK"></option>
+  <option value="Pendidikan Moral"></option><option value="Pendidikan Seni Visual"></option>
+  <option value="Bahasa Arab"></option><option value="Rehat"></option>
+</datalist>
+<p id="timetable-empty" class="notice">Tiada waktu disimpan. Tekan Tambah Waktu untuk mula.</p>
+<div class="profile-actions">
+  <button id="timetable-add" type="button" disabled>+ Tambah Waktu</button>
+  <button id="timetable-save" type="button" disabled>Simpan Jadual Waktu</button>
+  <span id="timetable-save-status" class="notice" role="status" aria-live="polite">Memuatkan jadual…</span>
+</div>
+</section>
 <p class="notice">Akses RPT dan RPH Web mengikut status Rakan Pembangun atau langganan aktif. Percubaan 10 janaan percuma masih melalui Telegram.</p>
 </section>
 <section id="view-guide" class="app-view" aria-labelledby="view-guide-heading" hidden>
@@ -168,7 +228,7 @@ showWebView("rph");
  const status=document.getElementById("login-status");
  try{
   const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),8000);let session;try{session=await fetch("/api/auth/telegram/session",{credentials:"same-origin",cache:"no-store",signal:controller.signal});}finally{clearTimeout(timeout);}
-  if(session.ok){const account=await session.json();document.querySelector("main.panel").hidden=true;document.getElementById("workspace").hidden=false;document.getElementById("account-access").textContent="Akses akaun: "+(account.status||"Aktif")+" · "+(account.access||"Semakan akses belum tersedia");document.getElementById("account-access").dataset.loaded="1";document.getElementById("profile-access-summary").textContent=document.getElementById("account-access").textContent;document.getElementById("account-access").setAttribute("aria-live","polite");loadRptCatalog();loadTeacherClasses();return;}
+  if(session.ok){const account=await session.json();document.querySelector("main.panel").hidden=true;document.getElementById("workspace").hidden=false;document.getElementById("account-access").textContent="Akses akaun: "+(account.status||"Aktif")+" · "+(account.access||"Semakan akses belum tersedia");document.getElementById("account-access").dataset.loaded="1";loadTeacherProfile();document.getElementById("profile-access-summary").textContent=document.getElementById("account-access").textContent;document.getElementById("account-access").setAttribute("aria-live","polite");loadRptCatalog();loadTeacherClasses();return;}
   const response=await fetch("/api/auth/capabilities",{cache:"no-store"});
   if(session.status===503){status.textContent="Semakan akaun belum tersedia pada pelayan. Cuba log masuk semula selepas konfigurasi disemak.";}
 
