@@ -1,7 +1,8 @@
 # Kit aktiviti Pendidikan Moral Tahun 6 • Unit 14
 
 **Tema:** Saya dan Negara  
-**Unit:** Amalan Toleransi Demi Perpaduan Negara  
+**Unit:** Amalan Toleransi Demi Perpaduan Negara (tajuk SK dalam DSKP)  
+**Tajuk buku teks KSSR Semakan 2017 (DBP 2021):** Amalan Toleransi Menjamin Perpaduan Negara  
 **Nilai:** Toleransi  
 **Status:** DRAF_SEMAK
 
@@ -15,7 +16,7 @@ Masyarakat berbeza budaya berbincang secara aman demi perpaduan.
 ## PdP 1 — Pengetahuan dan cara
 **Tugasan 1 (14.1):** Memberi contoh amalan toleransi demi perpaduan negara.  
 **Tugasan 2 (14.2):** Menghuraikan kepentingan amalan toleransi demi perpaduan negara.  
-**Hasil murid:** kad pandangan dan titik persetujuan; sertakan penerangan pendek atau contoh mengikut kata tugas SP yang dinyatakan.
+**Hasil murid:** kad dialog dua pandangan berbeza dan titik persetujuan; murid menghuraikan dua contoh toleransi serta kepentingannya bagi perpaduan berdasarkan situasi yang munasabah.
 
 ## PdP 2 — Penaakulan dan emosi
 **Tugasan 3 (14.3):** Merumuskan kesan pengabaian amalan toleransi demi perpaduan negara.  
@@ -28,4 +29,4 @@ Masyarakat berbeza budaya berbincang secara aman demi perpaduan.
 **Checklist PBD:** [ ] sesuai dengan situasi [ ] menunjukkan nilai [ ] menghormati keselamatan [ ] refleksi atau sebab wajar.
 
 **Panduan inklusif:** Murid boleh memberi respons lisan, tulisan atau lakonan; tidak perlu mendedahkan pegangan agama, keadaan rumah atau pengalaman sensitif.
-**Sumber:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); buku teks perlu audit halaman. Kit ini cadangan CikguLaju, bukan kandungan rasmi buku teks.
+**Sumber:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view) — SP 14.1–14.5 mengekalkan lafaz DSKP; [Buku Teks Moral Tahun 6 KSSR Semakan 2017, DBP 2021](https://fliphtml5.com/sbinx/haph/) — Unit 14 bermula m/s 132 dan bertajuk Amalan Toleransi Menjamin Perpaduan Negara. Aktiviti diolah CikguLaju, bukan petikan rasmi buku, dan halaman aktiviti khusus setiap SP belum disahkan sepenuhnya.
