@@ -17,14 +17,16 @@ Murid menyiapkan tugasan **SP 10.1** (Menyenaraikan contoh sikap jujur.) dan **S
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Murid menjumpai wang keluarga yang tertinggal di atas meja**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Tugasan 10.1:** Guru membentangkan situasi **Murid menjumpai wang keluarga yang tertinggal di atas meja** dan menyediakan kad/gambar yang relevan dengan unit buku teks **Jujur Selalu** (mula m/s 65; halaman aktiviti belum disahkan). Murid melaksanakan arahan **“Menyenaraikan contoh sikap jujur.”** dengan menghasilkan **senarai tiga contoh atau perkara yang tepat**; pasangan menyemak fakta, bukan hanya memilih tindakan baik atau buruk. Guru merekod satu respons individu.
+**Aktiviti 1 (20 minit) — Aktiviti halaman buku teks:** Guru memaparkan Dikir Barat Kejujuran m/s65 serta cerita robot Dibo m/s66–67. Murid menyenaraikan tiga perlakuan jujur, seperti bercakap benar dan mengaku kesilapan, berdasarkan tindakan watak (SP10.1). Murid menyerahkan bukti jawapan individu; Guru menyemak ketepatan.
 
-**Aktiviti 2 (20 minit) — Tugasan 10.2:** Guru menukar sudut situasi kepada tindakan atau akibat yang boleh diperhatikan. Murid melaksanakan arahan **“Menjelaskan cara bersikap jujur terhadap ahli keluarga.”** dan menyediakan **penjelasan dalam dua ayat serta satu contoh** berdasarkan contoh yang relevan dengan unit. Murid membentangkan hasil dan memperbaiki jawapan selepas pertanyaan lanjut guru.
+**Aktiviti 2 (20 minit) — Aktiviti halaman buku teks:** Guru memaparkan Dibo yang mengakui kerosakan kapal. Murid menerangkan dua cara bercakap benar kepada ibu bapa/abang dan bagaimana meminta maaf jika bersalah (SP10.2). Murid menyerahkan bukti jawapan individu; Guru menyemak ketepatan.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Guru mengutip hasil individu: **senarai tiga contoh atau perkara yang tepat** untuk SP 10.1 dan **penjelasan dalam dua ayat serta satu contoh** untuk SP 10.2; semak ketepatan makna, bukti dan kaitan dengan nilai **Kejujuran**. Murid membetulkan satu jawapan selepas maklum balas.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menilai tiga contoh jujur dan dua cara melaksanakannya, disokong m/s65–67. Murid membuat pembetulan selepas maklum balas Guru.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **kejujuran**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — unit bermula m/s 65 (PDF 74); halaman aktiviti khusus belum dipadankan; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 10, m/s 65–67 (PDF 74–76), padanan tugasan dan ilustrasi visual asal bagi PdP 028. Aktiviti disesuaikan, bukan petikan buku.
+
+**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — aktiviti Unit 10 m/s 65–67 (PDF 74–76) disahkan khusus untuk PdP 28; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
