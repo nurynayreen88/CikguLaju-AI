@@ -5,18 +5,18 @@
 **SK:** 1.1; 2.1  
 **SP:** 1.1.1; 2.1.1  
 **Rujukan Buku Teks:** Pendidikan Kesenian Tahun 3 (bahagian Seni Visual) ms 6–7 (unit 6-9)  
-**BBM:** pensel grafit, pen hitam, kertas lukisan  
+**BBM:** Buku Teks ms 6–7, foto kereta api, pensel grafit, pensel warna, kertas lukisan dan kad contoh garisan
 **Tempoh:** 60 minit
 
 ## Objektif dan kriteria kejayaan
-Pada akhir PdP, murid dapat mengenal pasti dua bahasa seni dan membanding dua sampel media untuk Tut Tut Kereta Api. Evidens PBD: dua percubaan media, dua istilah bahasa seni dan satu pemerhatian.
+Murid dapat mengenal garisan silang pangkah, ruang dan pergerakan melalui dua sampel lukisan kereta api. Evidens PBD: Dua sampel jarak garisan, dua istilah seni dan satu penjelasan kesan ruang.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan contoh Tut Tut Kereta Api dan murid memberi satu pemerhatian tentang bentuk, warna, ruang atau fungsi.
-**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru membuka buku teks ms 6–7 dan menjelaskan garisan silang pangkah, ruang dan kesan tona; murid menamakan unsur visual yang dapat diperhatikan.
-**Aktiviti 2 (25 minit) — Amali:** Murid meneroka secara amali: Lakar lokomotif, roda dan asap; cuba garisan silang pangkah rapat dan jarang untuk menunjukkan kedalaman. Mereka merekod dua perbezaan hasil dan memilih teknik untuk sesi berikutnya.
-**Pengukuhan/Pentaksiran (10 minit):** Guru menilai dua percubaan media, dua istilah bahasa seni dan satu pemerhatian; murid membandingkan hasil dengan kriteria kejayaan dan membuat pembetulan.
+**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru menunjukkan BT ms 6–7 bahawa saiz dan kedudukan roda menampakkan ruang, manakala jarak serta ketebalan silang pangkah mewujudkan tona.
+**Aktiviti 2 (25 minit) — Amali:** Murid melakar lokomotif dan roda, mencuba garisan silang pangkah rapat serta jarang pada dua petak, kemudian membanding kesan gelap-cerah dan ruang.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menyemak dua petak garisan silang pangkah, bentuk roda dan penjelasan kesan jarak garisan.
 **Penutup (5 minit):** Murid menyebut satu teknik yang dipelajari; guru membimbing penyimpanan hasil dan pembersihan.
 **Pembezaan:** Kad langkah bergambar untuk sokongan; murid lanjutan menghuraikan pilihan media dan kesan visual.
-**Keselamatan:** Guna alat tumpul, bahan tidak toksik, dan kendalikan gunting atau cantuman di bawah pengawasan.
-**Sumber:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view); [Buku Teks Pendidikan Kesenian Tahun 3 (bahagian Seni Visual)](https://fliphtml5.com/ubcth/flrm/). Langkah ialah adaptasi PdP CikguLaju berpandukan teknik dan unit buku.
+**Keselamatan:** Pensel dan alat tulis digunakan di meja; guru mengendalikan pengasahan pensel, murid tidak melukis dengan hujung tajam menghala rakan.
+**Sumber:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view); [Buku Teks Pendidikan Kesenian Tahun 3 (bahagian Seni Visual)](https://fliphtml5.com/hkvtu/vifc/Pendidikan_Kesenian_Tahun_3_SK/). Langkah ialah adaptasi PdP CikguLaju berpandukan teknik dan unit buku.

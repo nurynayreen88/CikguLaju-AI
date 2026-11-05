@@ -610,6 +610,22 @@ class PSVSourceOrderTests(unittest.TestCase):
         self.assertIn("secara bertindih", lesson)
         self.assertEqual(rows[23]["BT muka surat"], "52–53")
 
+    def test_year3_original_book_train_roda_smoke_and_crosshatch(self):
+        """Actual train crosshatching uses wheel perspective and smoke movement, not generic lines."""
+        rows = read_csv(PSV / "RPT_PSV_Tahun_3_2027_DRAF.csv")
+        for n in (1, 2, 3, 4):
+            with self.subTest(pdp=n):
+                text = (ROOT / f"rph_standalone/psv/year3/lesson_{n:03d}.md").read_text(encoding="utf-8").lower()
+                self.assertIn("silang pangkah", text)
+                self.assertIn("roda", text)
+                self.assertIn("asap", text)
+                self.assertIn(rows[n-1]["Objektif"].lower(), text)
+                self.assertIn(rows[n-1]["Evidens PBD"].lower(), text)
+                self.assertEqual(rows[n-1]["Status"], "DRAF_SEMAK")
+        self.assertEqual(rows[2]["BT muka surat"], "8–9")
+        body = (ROOT / "rph_standalone/psv/year3/lesson_003.md").read_text(encoding="utf-8")
+        self.assertIn("ms 8–9", body)
+
     def test_year5_bunga_kemboja_tekat_is_genuine_couching(self):
         rows = read_csv(PSV / "RPT_PSV_Tahun_5_2027_DRAF.csv")
         keywords = {

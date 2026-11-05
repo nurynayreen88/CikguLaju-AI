@@ -5,18 +5,18 @@
 **SK:** 3.1; 4.1  
 **SP:** 3.1.1; 4.1.1; 4.1.2  
 **Rujukan Buku Teks:** Pendidikan Kesenian Tahun 3 (bahagian Seni Visual) ms 8–9 (unit 6-9)  
-**BBM:** pensel grafit, pen hitam, kertas lukisan  
+**BBM:** BT ms 8–9, lukisan kereta api PdP003, pensel warna, pembalut lut sinar pilihan dan kad apresiasi
 **Tempoh:** 60 minit
 
 ## Objektif dan kriteria kejayaan
-Pada akhir PdP, murid dapat mengemas karya Tut Tut Kereta Api, menyatakan dua unsur seni dan satu cadangan pembaikan. Evidens PBD: karya siap, apresiasi lisan dua unsur dan satu pembaikan.
+Murid dapat memperkemas lukisan kereta api dan memberi ulasan tentang ruang, pergerakan serta satu pembaikan. Evidens PBD: Lukisan siap, dua istilah seni, satu ulasan rakan dan satu kemasan diperbaiki.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan contoh Tut Tut Kereta Api dan murid memberi satu pemerhatian tentang bentuk, warna, ruang atau fungsi.
-**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru menunjukkan kriteria hasil yang kemas dan berfungsi; murid menilai kualiti karya sebelum menambah baik.
-**Aktiviti 2 (25 minit) — Amali:** Murid membuat kemasan, mempamerkan hasil dan menilai: Huraikan kesan ruang, ritma dan pergerakan pada kereta api. Murid memberi ulasan dua unsur seni dan penambahbaikan.
-**Pengukuhan/Pentaksiran (10 minit):** Guru menilai karya siap, apresiasi lisan dua unsur dan satu pembaikan; murid membandingkan hasil dengan kriteria kejayaan dan membuat pembetulan.
+**Aktiviti 1 (15 minit) — Tunjuk cara:** Guru merujuk BT ms 9 tentang pameran karya dan kemasan menggunakan pembalut lut sinar; murid menyemak garis roda serta asap.
+**Aktiviti 2 (25 minit) — Amali:** Murid menambah silang pangkah pada bahagian kurang jelas, memperkemas garisan roda dan asap, mempamer karya serta menerangkan kesan ruang dan pergerakan kepada rakan.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menyemak karya kemas, istilah ruang/pergerakan dan satu pembetulan selepas ulasan rakan.
 **Penutup (5 minit):** Murid menyebut satu teknik yang dipelajari; guru membimbing penyimpanan hasil dan pembersihan.
 **Pembezaan:** Kad langkah bergambar untuk sokongan; murid lanjutan menghuraikan pilihan media dan kesan visual.
-**Keselamatan:** Guna alat tumpul, bahan tidak toksik, dan kendalikan gunting atau cantuman di bawah pengawasan.
-**Sumber:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view); [Buku Teks Pendidikan Kesenian Tahun 3 (bahagian Seni Visual)](https://fliphtml5.com/ubcth/flrm/). Langkah ialah adaptasi PdP CikguLaju berpandukan teknik dan unit buku.
+**Keselamatan:** Pensel dan alat tulis digunakan di meja; guru mengendalikan pengasahan pensel, murid tidak melukis dengan hujung tajam menghala rakan.
+**Sumber:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view); [Buku Teks Pendidikan Kesenian Tahun 3 (bahagian Seni Visual)](https://fliphtml5.com/hkvtu/vifc/Pendidikan_Kesenian_Tahun_3_SK/). Langkah ialah adaptasi PdP CikguLaju berpandukan teknik dan unit buku.
