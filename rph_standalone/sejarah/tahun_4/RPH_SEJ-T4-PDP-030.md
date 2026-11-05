@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 4 — PdP 030
 
-**Status:** DRAF (semakan halaman aktiviti/kelulusan guru belum selesai)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-08-15–2027-08-19 | **B:** 2027-08-16–2027-08-20  
+**Status:** DRAF (halaman aktiviti buku teks / kelulusan guru belum disahkan)  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu A:** 2027-08-15–2027-08-19 | **Minggu B:** 2027-08-16–2027-08-20  
 **Tema:** Tokoh Terbilang Kesultanan Melayu Melaka | **Tajuk:** Unit 9: Pengasas Kesultanan Melayu Melaka — PdP 030 | **SK:** 5.2  
 **SP:** 5.2.4, K5.2.7 | **Jenis:** PdP Kandungan
 
@@ -10,7 +10,7 @@
 
 **Kriteria kejayaan:** Murid menyiapkan produk 5.2.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.
 
-**Buku teks dan bahan:** Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 9: Pengasas Kesultanan Melayu Melaka, hlm. 120–137 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta perjalanan dan kronologi pengasasan Melaka; kad sumber/lembaran bukti.
+**Buku teks dan BBM:** Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 9: Pengasas Kesultanan Melayu Melaka, hlm. 120–137 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta perjalanan dan kronologi pengasasan Melaka; kad sumber/lembaran bukti.
 
 **Set Induksi (5 min):** Guru mempamerkan imej, peta atau petikan bertajuk “Pengasas Kesultanan Melayu Melaka” dan menyoal “Apakah yang dapat kita buktikan tentang Pengasas Kesultanan Melayu Melaka daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari.
 
@@ -18,12 +18,14 @@
 
 **Aktiviti 2 (20 min):** Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menghuraikan asal usul nama Melaka dari pelbagai sumber, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghuraikan kepentingan sikap taat setia kepada raja dan negara; jawapan mesti disokong bahan.
 
-**Pengukuhan dan PBD (10 min):** Murid menyerahkan hasil 5.2.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K5.2.7.
+**Pengukuhan & PBD (10 min):** Murid menyerahkan hasil 5.2.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K5.2.7.
 
 **Penutup (5 min):** Guru merumus isi penting Unit 9: Pengasas Kesultanan Melayu Melaka. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini.
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
 
-**Bukti sumber:** https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/ (ISBN 978-983-49-2472-0); isi kandungan membuktikan permulaan unit, BUKAN halaman aktiviti individu.
+**Tahap bukti halaman:** UNIT_ISI_KANDUNGAN; rujukan halaman belum (penerbit/buku seperti disertakan).
 
-**Perhatian:** RPH ini ialah draf PdP berpandukan unit dan SP. Tarikh cadangan bukan jadual kelas sebenar; semakan visual aktiviti buku, cuti negeri, dan ujian Word/PDF belum lulus.
+**Sumber semakan:** https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/
+
+**Nota:** RPH draf untuk semakan guru. Rujukan halaman buku atau aktiviti PBD adalah petunjuk sumber, **bukan** kelulusan visual penuh tugasan buku asal untuk setiap PdP.

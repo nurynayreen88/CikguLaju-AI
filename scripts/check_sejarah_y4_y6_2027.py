@@ -23,6 +23,11 @@ for y, (num_sk, num_sp) in EXPECTED.items():
     units = {u["sk"]:u for u in unit_map["units"]}
     assert len(units) == num_sk and set(units) == {s["sk"] for s in cross["standards"]}
     assert len({u["number"] for u in units.values()}) == num_sk
+    audit_path = ROOT/"audits/sejarah_y4_y6_sp_specific_11rph_20261106.json"
+    audit = json.loads(audit_path.read_text())
+    assert audit["count"] == 11
+    audited = {a["id"]:a for a in audit["rows"]}
+    assert len(audited) == 11
     for i, x in enumerate(lesson, 1):
         a0 = date.fromisoformat(x["weeks"]["A"]["start"])
         a1 = date.fromisoformat(x["weeks"]["A"]["end"])
@@ -36,6 +41,14 @@ for y, (num_sk, num_sp) in EXPECTED.items():
         if previous_b: assert b0 > previous_b
         previous_a, previous_b = a1, b1
         r = x["rph"]
+        if x["id"] in audited:
+            ev = r["page_specific_evidence"]
+            target = audited[x["id"]]
+            assert ev["pages"] == target["pages"] and ev["sources"] == target["sources"]
+            assert ev["level"] == target["evidence"]
+            assert ev["teacher_validated"] is False and ev["exact_textbook_activity_approved"] is False
+            assert r["status"].startswith("DRAF")
+            assert r["aktiviti_1"]["activity"] != r["aktiviti_2"]["activity"]
         bt = r["textbook_reference"]
         u = units[r["sk"]]
         assert r["unit_toc_verified"] is True

@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 6 — PdP 017
 
-**Status:** DRAF (semakan halaman aktiviti/kelulusan guru belum selesai)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-05-02–2027-05-06 | **B:** 2027-05-03–2027-05-07  
+**Status:** DRAF (halaman aktiviti buku teks / kelulusan guru belum disahkan)  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu A:** 2027-05-02–2027-05-06 | **Minggu B:** 2027-05-03–2027-05-07  
 **Tema:** Kita Rakyat Malaysia | **Tajuk:** Unit 5: Agama dan Kepercayaan — PdP 017 | **SK:** 11.2  
 **SP:** 11.2.4, K11.2.7 | **Jenis:** PdP Kandungan
 
@@ -10,7 +10,7 @@
 
 **Kriteria kejayaan:** Murid menyiapkan produk 11.2.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.
 
-**Buku teks dan bahan:** Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 5: Agama dan Kepercayaan, hlm. 76–91 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; contoh tempat ibadat dan kepercayaan masyarakat Malaysia; kad sumber/lembaran bukti.
+**Buku teks dan BBM:** Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 5: Agama dan Kepercayaan, hlm. 76–91 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; contoh tempat ibadat dan kepercayaan masyarakat Malaysia; kad sumber/lembaran bukti.
 
 **Set Induksi (5 min):** Guru mempamerkan imej, peta atau petikan bertajuk “Agama dan Kepercayaan” dan menyoal “Apakah yang dapat kita buktikan tentang Agama dan Kepercayaan daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari.
 
@@ -18,12 +18,14 @@
 
 **Aktiviti 2 (20 min):** Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menyenaraikan nama rumah-rumah ibadat di Malaysia, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghuraikan kepentingan menghormati kepelbagaian agama dan kepercayaan bagi mewujudkan perpaduan; jawapan mesti disokong bahan.
 
-**Pengukuhan dan PBD (10 min):** Murid menyerahkan hasil 11.2.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K11.2.7.
+**Pengukuhan & PBD (10 min):** Murid menyerahkan hasil 11.2.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K11.2.7.
 
 **Penutup (5 min):** Guru merumus isi penting Unit 5: Agama dan Kepercayaan. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini.
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
 
-**Bukti sumber:** https://fliphtml5.com/itcew/pnmn (ISBN 978-983-49-3279-4); isi kandungan membuktikan permulaan unit, BUKAN halaman aktiviti individu.
+**Tahap bukti halaman:** UNIT_ISI_KANDUNGAN; rujukan halaman belum (penerbit/buku seperti disertakan).
 
-**Perhatian:** RPH ini ialah draf PdP berpandukan unit dan SP. Tarikh cadangan bukan jadual kelas sebenar; semakan visual aktiviti buku, cuti negeri, dan ujian Word/PDF belum lulus.
+**Sumber semakan:** https://fliphtml5.com/itcew/pnmn
+
+**Nota:** RPH draf untuk semakan guru. Rujukan halaman buku atau aktiviti PBD adalah petunjuk sumber, **bukan** kelulusan visual penuh tugasan buku asal untuk setiap PdP.

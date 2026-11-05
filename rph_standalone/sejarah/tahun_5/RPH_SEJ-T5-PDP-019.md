@@ -1,7 +1,7 @@
 # RPH SEJARAH TAHUN 5 — PdP 019
 
-**Status:** DRAF (semakan halaman aktiviti/kelulusan guru belum selesai)  
-**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu cadangan A:** 2027-05-16–2027-05-20 | **B:** 2027-05-17–2027-05-21  
+**Status:** DRAF (halaman aktiviti buku teks / kelulusan guru belum disahkan)  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu A:** 2027-05-16–2027-05-20 | **Minggu B:** 2027-05-17–2027-05-21  
 **Tema:** Yang di-Pertuan Agong | **Tajuk:** Unit 7: Yang di-Pertuan Agong Teras Kedaulatan Negara — PdP 019 | **SK:** 8.1  
 **SP:** 8.1.1, 8.1.2, K8.1.6 | **Jenis:** PdP Kandungan
 
@@ -11,7 +11,7 @@
 
 **Kriteria kejayaan:** Murid menyiapkan produk 8.1.1–8.1.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.
 
-**Buku teks dan bahan:** Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 7: Yang di-Pertuan Agong Teras Kedaulatan Negara, hlm. 90–107 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; gambar alat kebesaran serta istiadat Yang di-Pertuan Agong; kad sumber/lembaran bukti.
+**Buku teks dan BBM:** Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 7: Yang di-Pertuan Agong Teras Kedaulatan Negara, hlm. 90–107 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; gambar alat kebesaran serta istiadat Yang di-Pertuan Agong; kad sumber/lembaran bukti.
 
 **Set Induksi (5 min):** Guru mempamerkan imej, peta atau petikan bertajuk “Yang di-Pertuan Agong Teras Kedaulatan Negara” dan menyoal “Apakah yang dapat kita buktikan tentang Yang di-Pertuan Agong Teras Kedaulatan Negara daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari.
 
@@ -19,12 +19,14 @@
 
 **Aktiviti 2 (20 min):** Murid menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan peranan Majlis Raja-Raja dalam pemilihan Yang di-Pertuan Agong”, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan kepentingan menghargai Yang di-Pertuan Agong sebagai tonggak perpaduan; jawapan mesti disokong bahan.
 
-**Pengukuhan dan PBD (10 min):** Murid menyerahkan hasil 8.1.1 dan 8.1.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K8.1.6.
+**Pengukuhan & PBD (10 min):** Murid menyerahkan hasil 8.1.1 dan 8.1.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K8.1.6.
 
 **Penutup (5 min):** Guru merumus isi penting Unit 7: Yang di-Pertuan Agong Teras Kedaulatan Negara. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini.
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
 
-**Bukti sumber:** https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/ (ISBN 978-983-49-2829-2); isi kandungan membuktikan permulaan unit, BUKAN halaman aktiviti individu.
+**Tahap bukti halaman:** UNIT_ISI_KANDUNGAN; rujukan halaman belum (penerbit/buku seperti disertakan).
 
-**Perhatian:** RPH ini ialah draf PdP berpandukan unit dan SP. Tarikh cadangan bukan jadual kelas sebenar; semakan visual aktiviti buku, cuti negeri, dan ujian Word/PDF belum lulus.
+**Sumber semakan:** https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/
+
+**Nota:** RPH draf untuk semakan guru. Rujukan halaman buku atau aktiviti PBD adalah petunjuk sumber, **bukan** kelulusan visual penuh tugasan buku asal untuk setiap PdP.
