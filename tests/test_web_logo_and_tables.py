@@ -120,6 +120,35 @@ class WebLogoAndTables(unittest.TestCase):
                 self.assertEqual(word.status_code,200)
                 self.assertEqual(len(Document(BytesIO(word.data)).tables),3)
 
+    @patch("web.unified_rph_web._has_paid_access",return_value=True)
+    @patch("web.unified_rph_web._account",return_value=({"telegram_user_id":123},None))
+    def test_standard_codes_and_real_activity_stay_in_correct_cells(self,*_):
+        examples=(
+            (2,"ENGLISH",None,"MAIN CONTENT STANDARD","4.2",
+             "Model an introduction"),
+            (3,"ENGLISH",None,"MAIN LEARNING STANDARD","1.3.1",
+             "Student's Book"),
+            (5,"ENGLISH",None,"MAIN LEARNING STANDARD","1.2.1",
+             "Listen and identify"),
+            (6,"ENGLISH",None,"PENTAKSIRAN","—",
+             "Main Activities"),
+            (2,"MORAL",None,"STANDARD PEMBELAJARAN","1.1",
+             "Contoh perlakuan"),
+        )
+        for year,subject,component,key,expected,main_term in examples:
+            row=source_records(year,subject,component)[0]
+            query={"year":year,"subject":subject,"unit":row["unit"],"lesson":row["token"]}
+            if component: query["component"]=component
+            with self.subTest(year=year,subject=subject):
+                response=self.client.get("/api/web/rph/preview",query_string=query)
+                self.assertEqual(response.status_code,200,response.get_json())
+                layout=response.get_json()["telegram_layout"]
+                info="\n".join(str(entry["value"]) for entry in layout["header"])
+                main=layout["phases"][1]["activity"]
+                if expected!="—":
+                    self.assertIn(expected,info)
+                self.assertIn(main_term,main)
+
     @patch("web.unified_rph_web._account",return_value=(None,({"error":"login required"},401)))
     def test_anonymous_cannot_download(self,*_):
         self.assertEqual(self.client.get("/api/web/rph/word").status_code,401)
