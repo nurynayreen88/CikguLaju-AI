@@ -16,8 +16,8 @@
 | 09 | 28/02–04/03 | 01/03–05/03 | SERANGGA COMEL | 1.1.1, 1.1.2 | 36-37 |
 | 10 | 14/03–18/03 | 15/03–19/03 | SERANGGA COMEL | 3.1.1, 3.1.3 | 38 |
 | 11 | 21/03–25/03 | 22/03–26/03 | SERANGGA COMEL | 4.1.1 | 39 |
-| 12 | 28/03–01/04 | 29/03–02/04 | Projek Seni Muzik 1 | 5.1.1 | — |
-| 13 | 04/04–08/04 | 05/04–09/04 | Projek Seni Muzik 1 | 5.1.2, 5.1.3 | — |
+| 12 | 28/03–01/04 | 29/03–02/04 | Projek Seni Muzik 1 | 5.1.1 | 4-5 |
+| 13 | 04/04–08/04 | 05/04–09/04 | Projek Seni Muzik 1 | 5.1.2, 5.1.3 | 4-5 |
 | 14 | 11/04–15/04 | 12/04–16/04 | PAHLAWAN KECIL | 2.1.2, 2.3.3 | 44-45 |
 | 15 | 18/04–22/04 | 19/04–23/04 | PAHLAWAN KECIL | 2.1.2, 2.3.3 | 44-45 |
 | 16 | 25/04–29/04 | 26/04–30/04 | PAHLAWAN KECIL | 2.3.3 | 46-47 |
@@ -28,9 +28,9 @@
 | 21 | 13/06–17/06 | 14/06–18/06 | CANTIK BERCAHAYA | 1.2.2, 2.4.1 | 70-71 |
 | 22 | 20/06–24/06 | 21/06–25/06 | CANTIK BERCAHAYA | 2.2.2 | 72-73 |
 | 23 | 27/06–01/07 | 28/06–02/07 | CANTIK BERCAHAYA | 3.1.2, 3.1.3 | 72-73 |
-| 24 | 04/07–08/07 | 05/07–09/07 | Projek Seni Muzik 2 | 5.1.1 | — |
-| 25 | 11/07–15/07 | 12/07–16/07 | Projek Seni Muzik 2 | 5.1.2, 5.1.3 | — |
-| 26 | 18/07–22/07 | 19/07–23/07 | Projek Seni Muzik 2 | 5.1.2, 5.1.3 | — |
+| 24 | 04/07–08/07 | 05/07–09/07 | Projek Seni Muzik 2 | 5.1.1 | 48-49 |
+| 25 | 11/07–15/07 | 12/07–16/07 | Projek Seni Muzik 2 | 5.1.2, 5.1.3 | 48-49 |
+| 26 | 18/07–22/07 | 19/07–23/07 | Projek Seni Muzik 2 | 5.1.2, 5.1.3 | 48-49 |
 | 27 | 25/07–29/07 | 26/07–30/07 | BONEKA MENARI MENCUIT HATI | 2.1.2, 2.1.3 | 80 |
 | 28 | 01/08–05/08 | 02/08–06/08 | BONEKA MENARI MENCUIT HATI | 2.1.2, 2.1.3 | 81 |
 | 29 | 08/08–12/08 | 09/08–13/08 | TAMAK SELALU RUGI | 3.1.1, 3.1.2 | 82-83 |
@@ -50,3 +50,6 @@
 
 
 **Nota audit PdP 27–29 (6 November 2026):** Aktiviti ajuk dan gerak PdP 27 ialah halaman 80, audio **65** bercetak; nyanyian *Boneka* PdP 28 ialah halaman **81**, audio **66–68**; cerita kesan bunyi PdP 29 halaman 82–83 ialah audio **69–70**. Nombor asal RPT bagi PdP 27–28 dipelihara dalam manifest; fail audio sebenar belum disahkan.
+
+
+**Audit projek Tahun 3:** PdP 12–13 projek Penggal Satu buku Kesenian halaman 4–5; PdP 24–26 projek Penggal Dua halaman 48–49 (termasuk latihan boneka dan lagu Kau Sahabatku). Dua PdP pengukuhan 34–35 kekal cadangan, bukan Projek 3. Semua DRAF.

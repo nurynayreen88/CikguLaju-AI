@@ -1,34 +1,30 @@
 # RPH PENDIDIKAN MUZIK TAHUN 3 — PdP 26
 
-**Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** Projek Seni Muzik 2  
-**Bidang:** Projek Seni Muzik  
-**SK / SP (RPT sumber):** 5.1.2, 5.1.3
-**Tempoh cadangan:** 30 minit  
+**Kelas:** __________  **Tarikh:** __________  **Masa:** __________
+**Unit/Tajuk:** Projek Seni Muzik 2
+**Bidang:** Persembahan dan refleksi projek Penggal Dua
+**SK/SP RPT Muzik sumber (dikekalkan):** 5.1.2, 5.1.3
+**Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Mengambil bahagian dalam persembahan muzik dan memenuhi sekurang-kurangnya 3 daripada 4 item senarai semak.
+**Objektif:** Mempersembahkan projek boneka muzik selama satu segmen ringkas serta memberikan satu ulasan kreativiti dan kerjasama.
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Kriteria kejayaan:** Murid melaksanakan tugas projek dengan sekurang-kurangnya tiga daripada empat item senarai semak guru.
 
-**Set Induksi — 4 minit**  
-Guru menyemak contoh persembahan lalu bertanya peranan, disiplin dan penyediaan yang penting.
+**Set Induksi — 4 minit:** Guru menyemak kesediaan alat, peranan, kerjasama serta etika projek.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Kumpulan menyenaraikan peranan, turutan persembahan dan bahan yang diperlukan bagi Membuat persembahan muzik..
+**Aktiviti 1 — Perancangan dan demonstrasi (8 minit):** Murid membuat latihan akhir bahagian nyanyian, boneka dan iringan serta memeriksa keselamatan props seperti cadangan halaman 49.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid membuat latihan atau persembahan mini; guru memberi maklum balas pada ketepatan, koordinasi dan pengurusan alat.
+**Aktiviti 2 — Latihan atau persembahan (10 minit):** Kumpulan mempersembahkan boneka muzikal menggunakan pilihan Unit 6–10; kumpulan lain menilai kreativiti, tempo, kerjasama dan etika, kemudian memberikan satu ulasan membina.
 
-**Pengukuhan & Penilaian — 6 minit**  
-Senarai semak: peranan, disiplin, kejelasan persembahan dan refleksi ringkas.
+**Pengukuhan dan Penilaian — 6 minit:** Guru menilai pelibatan setiap murid, tempo, peranan kumpulan dan kreativiti persembahan atau hasil rancangan menggunakan borang penilaian.
 
-**Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+**Penutup — 2 minit:** Murid berkongsi satu kekuatan dan satu penambahbaikan; guru merekod PBD dan memastikan bahan disimpan selamat.
 
-**Bahan:** Alat persembahan selamat, skor lagu/gerak dan senarai semak kumpulan.  
-**Rujukan sumber:** Halaman buku teks belum tersedia untuk pengesahan. Audio/trek belum dipadankan.
+**Bahan:** Buku Pendidikan Kesenian Tahun 3 halaman 48-49, alat perkusi, prop sedia ada dan senarai semak.
 
-**Catatan pelaksanaan / pemulihan:** __________________________________________
+**Rujukan:** Buku Pendidikan Kesenian Tahun 3 DBP 2018 halaman 48-49; https://anyflip.com/lcinm/flxx/basic (Penggal Dua juga https://anyflip.com/iawvx/rlmd/basic/51-100). Projek buku asal **gabungan seni visual dan muzik**; RPH ini hanya aktiviti muzik. Kod DSKP Muzik tidak diubah; bahan rakaman/lirik penuh tidak diedarkan.
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Catatan refleksi/pemulihan:** ____________________________________________
+
+**Audit:** PROJEK_BUKU_SEMAKAN_TEKSTUAL_20261106; DRAF. Audio, kod silang DSKP, skor visual dan Word/PDF masih belum mendapat kelulusan.

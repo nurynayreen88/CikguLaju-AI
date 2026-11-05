@@ -148,3 +148,7 @@ PdP12,13,26,27 dirujuk kepada buku Tahun 6 halaman 44–45 dan 88–89. **33/35 
 ## 6 Nov 2026 — Tahun 2 projek dan PdP 33
 - PdP 33 sompoton/Tarian Sumazau halaman 95–96, Audio 84–86 bercetak; empat RPH projek Tahun 2 dirujuk kepada buku Kesenian projek Penggal Satu/Dua dengan adaptasi hanya Muzik.
 - Tahun 2 kini **33/35** semakan teks buku, keseluruhan **157/175**, baki **18**; perbezaan kod buku Kesenian–DSKP Muzik masih memerlukan keputusan rasmi. Tidak FINAL READY.
+
+
+## Projek Tahun 3 — 6 Nov 2026
+PdP12–13 dan 24–26 diselaraskan dengan projek terpadu Kesenian Tahun3 halaman 4–5 dan 48–49; buku menyatakan aktiviti nyanyian, perkusi, boneka dan penilaian rakan. Tahun 3 **33/35**, keseluruhan **162/175**, baki **13**, semua belum FINAL READY.

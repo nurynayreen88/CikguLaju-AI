@@ -10,7 +10,7 @@
 | 5 | [Buku Teks Pendidikan Muzik Tahun 5 SK](https://anyflip.com/ziqkn/yatu/basic), DBP 2020 | Teks dan halaman rujukan unit dipadankan bagi 15 PdP; audio nombor cetak sahaja | 35/35 semakan teks terhad |
 | 6 | [Buku Teks Pendidikan Muzik Tahun 6 SK](https://anyflip.com/zcnoa/yxcj/basic), DBP 2021 | Teks dan halaman rujukan unit dipadankan bagi 7 PdP, khusus Classical, Mikroorganisma dan Rindu | 33/35 semakan teks terhad |
 
-Jumlah **157/175 RPH** mempunyai semakan kandungan berasaskan teks buku atau halaman (dengan tahap bukti berbeza); **18 RPH belum melalui audit buku teks individu yang setara**.
+Jumlah **162/175 RPH** mempunyai semakan kandungan berasaskan teks buku atau halaman (dengan tahap bukti berbeza); **13 RPH belum melalui audit buku teks individu yang setara**.
 
 
 ## Pusingan Tahun 2 — bukti baharu (6 November 2026)
@@ -70,3 +70,7 @@ PdP12/13 (halaman 44–45) dan 26/27 (halaman 88–89) kini mempunyai semakan te
 
 ## Tahun 2 — PdP33 dan projek
 PdP33 halaman 95–96 tentang sompoton dan Tarian Sumazau semakan teks telah disahkan terhadap buku; projek muzik beradaptasi daripada buku Kesenian Penggal Satu/Dua halaman 4–5, 46–47. Tahun 2 **33/35**, keseluruhan **157/175** semakan teks terhad; baki **18**. Kod kurikulum, audio, skor dan cetakan masih belum diperakukan.
+
+
+## Projek Tahun 3
+Semakan teks lima RPH projek berdasarkan Buku Kesenian Tahun 3 DBP2018 halaman 4–5 dan 48–49. Tahun 3 **33/35** dan keseluruhan **162/175**, berbaki **13**. Dua PdP pengukuhan bukan projek rasmi tidak diberi status semakan buku.

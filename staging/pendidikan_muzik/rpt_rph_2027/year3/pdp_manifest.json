@@ -311,14 +311,22 @@
       "sp": [
         "5.1.1"
       ],
-      "page": null,
+      "page": "4-5",
       "audio": null,
       "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
       "rpt2027_slot": {
         "week": 12,
         "groupA": "28/03–01/04",
         "groupB": "29/03–02/04"
-      }
+      },
+      "source_rpt_original_page": null,
+      "source_book_text_crosscheck": true,
+      "source_book_crosscheck_scope": "PROJEK_KESENIAN_TERPADU; ADAPTASI_BAHAGIAN_MUZIK",
+      "source_book_textbook": "Pendidikan Kesenian Tahun 3 SK DBP 2018",
+      "source_book_crosscheck_source_url": "https://anyflip.com/lcinm/flxx/basic",
+      "source_book_audio_file_verified": false,
+      "source_book_project_evidence": true,
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_PROJEK_BUKU; BUKAN_FINAL"
     },
     {
       "pdp_id": "MZ-Y3-13",
@@ -330,14 +338,22 @@
         "5.1.2",
         "5.1.3"
       ],
-      "page": null,
+      "page": "4-5",
       "audio": null,
       "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
       "rpt2027_slot": {
         "week": 13,
         "groupA": "04/04–08/04",
         "groupB": "05/04–09/04"
-      }
+      },
+      "source_rpt_original_page": null,
+      "source_book_text_crosscheck": true,
+      "source_book_crosscheck_scope": "PROJEK_KESENIAN_TERPADU; ADAPTASI_BAHAGIAN_MUZIK",
+      "source_book_textbook": "Pendidikan Kesenian Tahun 3 SK DBP 2018",
+      "source_book_crosscheck_source_url": "https://anyflip.com/lcinm/flxx/basic",
+      "source_book_audio_file_verified": false,
+      "source_book_project_evidence": true,
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_PROJEK_BUKU; BUKAN_FINAL"
     },
     {
       "pdp_id": "MZ-Y3-14",
@@ -616,14 +632,22 @@
       "sp": [
         "5.1.1"
       ],
-      "page": null,
+      "page": "48-49",
       "audio": null,
       "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
       "rpt2027_slot": {
         "week": 24,
         "groupA": "04/07–08/07",
         "groupB": "05/07–09/07"
-      }
+      },
+      "source_rpt_original_page": null,
+      "source_book_text_crosscheck": true,
+      "source_book_crosscheck_scope": "PROJEK_KESENIAN_TERPADU; ADAPTASI_BAHAGIAN_MUZIK",
+      "source_book_textbook": "Pendidikan Kesenian Tahun 3 SK DBP 2018",
+      "source_book_crosscheck_source_url": "https://anyflip.com/lcinm/flxx/basic",
+      "source_book_audio_file_verified": false,
+      "source_book_project_evidence": true,
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_PROJEK_BUKU; BUKAN_FINAL"
     },
     {
       "pdp_id": "MZ-Y3-25",
@@ -635,14 +659,22 @@
         "5.1.2",
         "5.1.3"
       ],
-      "page": null,
+      "page": "48-49",
       "audio": null,
       "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
       "rpt2027_slot": {
         "week": 25,
         "groupA": "11/07–15/07",
         "groupB": "12/07–16/07"
-      }
+      },
+      "source_rpt_original_page": null,
+      "source_book_text_crosscheck": true,
+      "source_book_crosscheck_scope": "PROJEK_KESENIAN_TERPADU; ADAPTASI_BAHAGIAN_MUZIK",
+      "source_book_textbook": "Pendidikan Kesenian Tahun 3 SK DBP 2018",
+      "source_book_crosscheck_source_url": "https://anyflip.com/lcinm/flxx/basic",
+      "source_book_audio_file_verified": false,
+      "source_book_project_evidence": true,
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_PROJEK_BUKU; BUKAN_FINAL"
     },
     {
       "pdp_id": "MZ-Y3-26",
@@ -654,14 +686,22 @@
         "5.1.2",
         "5.1.3"
       ],
-      "page": null,
+      "page": "48-49",
       "audio": null,
       "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
       "rpt2027_slot": {
         "week": 26,
         "groupA": "18/07–22/07",
         "groupB": "19/07–23/07"
-      }
+      },
+      "source_rpt_original_page": null,
+      "source_book_text_crosscheck": true,
+      "source_book_crosscheck_scope": "PROJEK_KESENIAN_TERPADU; ADAPTASI_BAHAGIAN_MUZIK",
+      "source_book_textbook": "Pendidikan Kesenian Tahun 3 SK DBP 2018",
+      "source_book_crosscheck_source_url": "https://anyflip.com/lcinm/flxx/basic",
+      "source_book_audio_file_verified": false,
+      "source_book_project_evidence": true,
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_PROJEK_BUKU; BUKAN_FINAL"
     },
     {
       "pdp_id": "MZ-Y3-27",
@@ -914,6 +954,6 @@
   ],
   "dskp_projects_per_year": 2,
   "deprecated_project3_reclassified_count": 2,
-  "partial_textbook_crosscheck_count": 28,
+  "partial_textbook_crosscheck_count": 33,
   "source_textbook_url": "https://anyflip.com/pkots/czbw/basic"
 }
