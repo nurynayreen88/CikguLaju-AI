@@ -1,10 +1,9 @@
 # RPT PENDIDIKAN MUZIK TAHUN 6 — 2027 (KUMPULAN A & B)
 
-**SEKOLAH:** __________ **GURU:** __________ **KURIKULUM:** KSSR Semakan 2017
+**Sekolah:** __________ **Guru:** __________ **Status:** DRAF STAGING — belum FINAL READY.
+**Sumber:** DSKP KSSR Semakan 2017 Tahun 6 dan susunan PdP RPT lama. Slot A/B hanya cadangan, perlu semakan cuti negeri/gantian.
 
-**STATUS: DRAF STAGING.** Disusun sebagai 35 PdP berurutan daripada transkripsi terhad RPT rujukan 2025/2026 dan DSKP. Perlu pengesahan RPT penuh, buku teks, halaman, audio serta tarikh cuti negeri.
-
-| PdP | Slot A | Slot B | Unit/Tajuk | SP | BT m/s* |
+| PdP | Slot A | Slot B | Unit / Tajuk | SP | BT m/s* |
 |---:|---|---|---|---|---|
 | 01 | 04/01–07/01 | 04/01–08/01 | SETIA KAWAN | 2.1.1, 2.1.2 | 4-5 |
 | 02 | 10/01–14/01 | 11/01–15/01 | SETIA KAWAN | 2.2.1, 2.2.2 | 6-9 |
@@ -39,13 +38,9 @@
 | 31 | 22/08–26/08 | 23/08–27/08 | RINDU | 2.3.1 | 80-81 |
 | 32 | 05/09–09/09 | 06/09–10/09 | RINDU | 2.4.1, 2.4.2, 2.2.1 | 82-84 |
 | 33 | 12/09–16/09 | 13/09–17/09 | RINDU | 2.1.1, 2.1.2, 2.2.2, 2.4.1, 2.4.2 | 85-87 |
-| 34 | 19/09–23/09 | 20/09–24/09 | Projek Seni Muzik 3 — Perancangan | 5.1.1, 5.1.2 | — |
-| 35 | 26/09–30/09 | 27/09–01/10 | Projek Seni Muzik 3 — Persembahan | 5.1.3, 5.1.4 | — |
+| 34 | 19/09–23/09 | 20/09–24/09 | Pengukuhan Akhir Tahun — Rekoder Ensemble (cadangan) | 2.4.1, 2.4.2 | — |
+| 35 | 26/09–30/09 | 27/09–01/10 | Penilaian dan Refleksi Akhir — Muzik Klasik Barat (cadangan) | 4.1.1, 4.1.2 | — |
 
-*Rujukan halaman diperoleh daripada RPT perkongsian dan belum disahkan dengan buku teks asal.
+**Nota penting:** DSKP memperuntukkan dua siri Projek Seni Muzik setahun. PdP 34–35 yang dilabel Projek 3 oleh RPT sumber lama kini dibezakan sebagai cadangan pengukuhan/pentaksiran, bukan projek rasmi. Data sumber asal disimpan dalam manifest untuk jejak audit.
 
-**Slot baki selepas PdP ke-35:** M36: A 03/10–07/10; B 04/10–08/10; M37: A 10/10–14/10; B 11/10–15/10; M38: A 17/10–21/10; B 18/10–22/10; M39: A 24/10–28/10; B 25/10–29/10; M40: A 31/10–04/11; B 01/11–05/11; M41: A 07/11–11/11; B 08/11–12/11; M42: A 14/11–18/11; B 15/11–19/11; M43: A 21/11–25/11; B 22/11–26/11; M44: A 28/11–02/12; B 29/11–03/12. Slot ini untuk pemulihan, persembahan dan pentaksiran mengikut keputusan sekolah. Nombor PdP tidak bergantung pada minggu.
-
-**Sumber:** https://www.scribd.com/document/854410603/MZ6 ; DSKP Pendidikan Muzik Tahun 6 dalam Drive CikguLaju. Takwim KPM 2027 bermula 4 Januari untuk Kumpulan A dan B. Semak juga cuti perayaan/cuti negeri.
-
-**Peringatan:** RPT Tahun 6 lama mengandungi kandungan Baroque yang bercanggah dengan DSKP Classical dan julat not rekoder yang tersalin; tanda konflik dikekalkan pada PdP berkaitan.
+*Halaman buku teks hanya rujukan sumber RPT lama kecuali rekod Tahun 4 yang mempunyai `source_book_content_page_checked=true` untuk enam PdP. Fail audio belum disahkan, tarikh 2027 belum disahkan penuh.

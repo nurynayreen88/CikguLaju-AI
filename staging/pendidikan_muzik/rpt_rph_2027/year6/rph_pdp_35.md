@@ -1,28 +1,29 @@
 # RPH PENDIDIKAN MUZIK TAHUN 6 — PdP 35
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** Projek Seni Muzik 3 — Persembahan  
-**Bidang:** Projek Seni Muzik  
-**SK/SP:** 5.1.3, 5.1.4  
-**Tempoh cadangan:** 30 minit  
-**Status:** DRAF STAGING — bukan FINAL READY
+**Unit/Tajuk:** Penilaian dan Refleksi Akhir — Muzik Klasik Barat (cadangan)
+**SK / SP DSKP:** 4.1.1, 4.1.2
+**Status:** DRAF STAGING — PdP cadangan tambahan, bukan Projek Seni Muzik rasmi
+**Tempoh cadangan:** 30 minit
 
-**Objektif:** Murid melengkapkan tugas perancangan, latihan atau persembahan kumpulan dengan sekurang-kurangnya 3 daripada 4 kriteria rubrik.
+**Fokus:** Apresiasi muzik zaman Classical
 
-**Set induksi (4 minit):** Guru menunjukkan contoh persembahan dan bertanya tentang persediaan, peranan ahli serta disiplin.
+**Objektif:** Murid menyatakan tempoh zaman Classical serta memberikan dua maklumat tepat tentang satu karya yang didengar.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Kumpulan mengagihkan peranan dan merancang aktiviti Membuat persembahan muzik. termasuk susunan alat, latihan dan keselamatan.
+**Set induksi (4 minit):** Guru memperdengarkan petikan muzik zaman Classical yang berlesen untuk PdP.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Murid berlatih atau membuat persembahan mini; guru memberi pembetulan tentang koordinasi, ketepatan dan pengurusan pentas.
+**Aktiviti 1 — Ulang kaji berfokus (8 minit):** Murid mengingat semula sekitar 1750–1830 serta mengumpulkan maklumat karya daripada sumber yang disediakan guru.
 
-**Pengukuhan dan pentaksiran (6 minit):** Rubrik 4 aspek: kerjasama, ketepatan kemahiran, komunikasi dan refleksi murid.
+**Aktiviti 2 — Aplikasi dalam muzik (10 minit):** Murid membuat ulasan pendek tentang komposer, negara asal dan judul karya yang benar-benar dimainkan, tanpa meneka rakaman.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Semak dua fakta tepat, kualiti ulasan dan satu sebab berdasarkan pendengaran; catat intervensi lanjut.
 
-**Bahan:** Instrumen muzik, carta latihan/peranan dan rubrik projek.
+**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang sudah dikuasai dan satu sasaran pembaikan; guru membuat rekod PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 6. Halaman buku teks tidak disahkan. Rakaman/trek audio belum disahkan.
+**Bahan:** Bahan dan instrumen sedia ada daripada PdP tahun ini; gunakan audio yang disahkan oleh guru sahaja.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Nota sumber:** RPT lama menamakan projek ketiga dengan SP 5.1.3, 5.1.4. DSKP Pendidikan Muzik Tahun 6 menetapkan dua projek setahun. Kandungan PdP 35 merupakan cadangan pengukuhan CikguLaju yang perlu disahkan guru, bukan sebahagian daripada projek ketiga rasmi.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Refleksi / Tindakan susulan:** ____________________________________________
+
+**Kawalan penerbitan:** Belum FINAL READY, belum diaudit secara Word/PDF/Telegram/Web.

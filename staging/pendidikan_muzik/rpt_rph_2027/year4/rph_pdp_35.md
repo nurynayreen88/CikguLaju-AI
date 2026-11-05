@@ -1,34 +1,29 @@
 # RPH PENDIDIKAN MUZIK TAHUN 4 — PdP 35
 
-**Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** Projek Seni Muzik 3  
-**Bidang:** Projek Seni Muzik  
-**SK / SP (RPT sumber):** 5.1.2, 5.1.3
-**Tempoh cadangan:** 30 minit  
-**Status:** DRAF STAGING — belum FINAL READY
+**Kelas:** __________  **Tarikh:** __________  **Masa:** __________
+**Unit/Tajuk:** Penilaian Akhir — Rekoder dan Perkusi (cadangan)
+**SK / SP DSKP:** 2.4.2, 2.2.2
+**Status:** DRAF STAGING — PdP cadangan tambahan, bukan Projek Seni Muzik rasmi
+**Tempoh cadangan:** 30 minit
 
-**Objektif pembelajaran (draf boleh ukur):** Mengambil bahagian dalam persembahan muzik dan memenuhi sekurang-kurangnya 3 daripada 4 item senarai semak.
+**Fokus:** Pemerhatian kemahiran membaca skor, rekoder dan perkusi
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Objektif:** Murid memainkan satu melodi kaunter pendek dan corak perkusi dengan tempo yang dapat diikuti.
 
-**Set Induksi — 4 minit**  
-Guru menyemak contoh persembahan lalu bertanya peranan, disiplin dan penyediaan yang penting.
+**Set induksi (4 minit):** Guru memaparkan skor mudah not G, A, B, C’ dan D’ serta contoh corak perkusi.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Kumpulan menyenaraikan peranan, turutan persembahan dan bahan yang diperlukan bagi Membuat persembahan muzik..
+**Aktiviti 1 — Ulang kaji berfokus (8 minit):** Murid berlatih penjarian rekoder dan membaca frasa mengikut tempo dengan guru memberi maklum balas.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid membuat latihan atau persembahan mini; guru memberi maklum balas pada ketepatan, koordinasi dan pengurusan alat.
+**Aktiviti 2 — Aplikasi dalam muzik (10 minit):** Kumpulan menggabungkan rekoder dan perkusi mengikut satu pola, kemudian menilai ketepatan dan kerjasama.
 
-**Pengukuhan & Penilaian — 6 minit**  
-Senarai semak: peranan, disiplin, kejelasan persembahan dan refleksi ringkas.
+**Pengukuhan dan pentaksiran (6 minit):** Rekod bacaan skor, penjarian, tempo dan koordinasi; berikan tugas pemulihan mengikut keperluan murid.
 
-**Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang sudah dikuasai dan satu sasaran pembaikan; guru membuat rekod PBD.
 
-**Bahan:** Alat persembahan selamat, skor lagu/gerak dan senarai semak kumpulan.  
-**Rujukan sumber:** Halaman buku teks belum tersedia untuk pengesahan. Audio/trek belum dipadankan.
+**Bahan:** Bahan dan instrumen sedia ada daripada PdP tahun ini; gunakan audio yang disahkan oleh guru sahaja.
 
-**Catatan pelaksanaan / pemulihan:** __________________________________________
+**Nota sumber:** RPT lama menamakan projek ketiga dengan SP 5.1.2, 5.1.3. DSKP Pendidikan Muzik Tahun 4 menetapkan dua projek setahun. Kandungan PdP 35 merupakan cadangan pengukuhan CikguLaju yang perlu disahkan guru, bukan sebahagian daripada projek ketiga rasmi.
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Refleksi / Tindakan susulan:** ____________________________________________
+
+**Kawalan penerbitan:** Belum FINAL READY, belum diaudit secara Word/PDF/Telegram/Web.

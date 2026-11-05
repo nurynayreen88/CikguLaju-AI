@@ -1,10 +1,9 @@
 # RPT PENDIDIKAN MUZIK TAHUN 3 — 2027 (KUMPULAN A & B)
 
-**SEKOLAH:** __________  **GURU:** __________  **STATUS:** DRAF STAGING (bukan FINAL READY).
+**Sekolah:** __________ **Guru:** __________ **Status:** DRAF STAGING — belum FINAL READY.
+**Sumber:** DSKP KSSR Semakan 2017 Tahun 3 dan susunan PdP RPT lama. Slot A/B hanya cadangan, perlu semakan cuti negeri/gantian.
 
-**Kurikulum:** KSSR Semakan 2017; urutan rujukan RPT 2025/26. Slot minggu hanya cadangan, bukan identiti PdP. Halaman buku teks dan nombor audio belum diaudit.
-
-| PdP | Kumpulan A | Kumpulan B | Unit/Tajuk | SP | BT m/s* |
+| PdP | Slot A | Slot B | Unit / Tajuk | SP | BT m/s* |
 |---:|---|---|---|---|---|
 | 01 | 04/01–07/01 | 04/01–08/01 | TUT  TUT  KERETA API | 2.1.1, 2.1.2 | 10-11 |
 | 02 | 10/01–14/01 | 11/01–15/01 | TUT  TUT  KERETA API | 2.2.1 | 12 |
@@ -39,7 +38,9 @@
 | 31 | 22/08–26/08 | 23/08–27/08 | ANYAMAN BERZAMAN | 2.1.2, 2.3.2 | 92-93 |
 | 32 | 05/09–09/09 | 06/09–10/09 | PERMAINAN BUAH LAZAT | 3.1.2 | 94-95 |
 | 33 | 12/09–16/09 | 13/09–17/09 | MUZIK ROCK | 4.1.1 | 96 |
-| 34 | 19/09–23/09 | 20/09–24/09 | Projek Seni Muzik 3 | 5.1.1 | — |
-| 35 | 26/09–30/09 | 27/09–01/10 | Projek Seni Muzik 3 | 5.1.2, 5.1.3 | — |
+| 34 | 19/09–23/09 | 20/09–24/09 | Pengukuhan Akhir Tahun — Rekoder dan Perkusi (cadangan) | 2.4.2, 2.2.1 | — |
+| 35 | 26/09–30/09 | 27/09–01/10 | Penilaian dan Refleksi Muzik Akhir Tahun (cadangan) | 3.1.3, 4.1.1 | — |
 
-*Semua halaman ialah rujukan RPT lama sahaja; pengesahan buku teks, audio dan cuti negeri diperlukan. RPT tidak dinyatakan sebagai READY.
+**Nota penting:** DSKP memperuntukkan dua siri Projek Seni Muzik setahun. PdP 34–35 yang dilabel Projek 3 oleh RPT sumber lama kini dibezakan sebagai cadangan pengukuhan/pentaksiran, bukan projek rasmi. Data sumber asal disimpan dalam manifest untuk jejak audit.
+
+*Halaman buku teks hanya rujukan sumber RPT lama kecuali rekod Tahun 4 yang mempunyai `source_book_content_page_checked=true` untuk enam PdP. Fail audio belum disahkan, tarikh 2027 belum disahkan penuh.

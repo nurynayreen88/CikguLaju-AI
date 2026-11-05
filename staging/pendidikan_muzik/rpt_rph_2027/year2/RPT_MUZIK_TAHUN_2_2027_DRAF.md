@@ -1,10 +1,9 @@
 # RPT PENDIDIKAN MUZIK TAHUN 2 — 2027 (KUMPULAN A & B)
 
-**SEKOLAH:** __________  **GURU:** __________  **STATUS:** DRAF STAGING (bukan FINAL READY).
+**Sekolah:** __________ **Guru:** __________ **Status:** DRAF STAGING — belum FINAL READY.
+**Sumber:** DSKP KSSR Semakan 2017 Tahun 2 dan susunan PdP RPT lama. Slot A/B hanya cadangan, perlu semakan cuti negeri/gantian.
 
-**Kurikulum:** KSSR Semakan 2017; urutan rujukan RPT 2025/26. Slot minggu hanya cadangan, bukan identiti PdP. Halaman buku teks dan nombor audio belum diaudit.
-
-| PdP | Kumpulan A | Kumpulan B | Unit/Tajuk | SP | BT m/s* |
+| PdP | Slot A | Slot B | Unit / Tajuk | SP | BT m/s* |
 |---:|---|---|---|---|---|
 | 01 | 04/01–07/01 | 04/01–08/01 | KAMI SUKA SAYUR | 2.1.3, 2.1.4 | 10 |
 | 02 | 10/01–14/01 | 11/01–15/01 | KAMI SUKA SAYUR | 1.1.1, 1.1.3 | 11 |
@@ -39,7 +38,9 @@
 | 31 | 22/08–26/08 | 23/08–27/08 | SEGARNYA AIR TERJUN | 2.1.3, 2.1.4 | 90-91 |
 | 32 | 05/09–09/09 | 06/09–10/09 | SEGARNYA AIR TERJUN | 3.1.1 | 92-94 |
 | 33 | 12/09–16/09 | 13/09–17/09 | SEGARNYA AIR TERJUN | 4.1.1 | 95-96 |
-| 34 | 19/09–23/09 | 20/09–24/09 | Projek Seni Muzik 3 | 5.1.1 | — |
-| 35 | 26/09–30/09 | 27/09–01/10 | Projek Seni Muzik 3 | 5.1.2, 5.1.3 | — |
+| 34 | 19/09–23/09 | 20/09–24/09 | Pengukuhan Akhir Tahun — Nyanyian dan Gerakan (cadangan) | 2.1.3, 2.3.2 | — |
+| 35 | 26/09–30/09 | 27/09–01/10 | Penilaian dan Refleksi Muzik Akhir Tahun (cadangan) | 3.1.3, 4.1.1 | — |
 
-*Semua halaman ialah rujukan RPT lama sahaja; pengesahan buku teks, audio dan cuti negeri diperlukan. RPT tidak dinyatakan sebagai READY.
+**Nota penting:** DSKP memperuntukkan dua siri Projek Seni Muzik setahun. PdP 34–35 yang dilabel Projek 3 oleh RPT sumber lama kini dibezakan sebagai cadangan pengukuhan/pentaksiran, bukan projek rasmi. Data sumber asal disimpan dalam manifest untuk jejak audit.
+
+*Halaman buku teks hanya rujukan sumber RPT lama kecuali rekod Tahun 4 yang mempunyai `source_book_content_page_checked=true` untuk enam PdP. Fail audio belum disahkan, tarikh 2027 belum disahkan penuh.

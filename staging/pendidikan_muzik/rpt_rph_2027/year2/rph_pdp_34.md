@@ -1,34 +1,29 @@
 # RPH PENDIDIKAN MUZIK TAHUN 2 — PdP 34
 
-**Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** Projek Seni Muzik 3  
-**Bidang:** Projek Seni Muzik  
-**SK / SP (RPT sumber):** 5.1.1
-**Tempoh cadangan:** 30 minit  
-**Status:** DRAF STAGING — belum FINAL READY
+**Kelas:** __________  **Tarikh:** __________  **Masa:** __________
+**Unit/Tajuk:** Pengukuhan Akhir Tahun — Nyanyian dan Gerakan (cadangan)
+**SK / SP DSKP:** 2.1.3, 2.3.2
+**Status:** DRAF STAGING — PdP cadangan tambahan, bukan Projek Seni Muzik rasmi
+**Tempoh cadangan:** 30 minit
 
-**Objektif pembelajaran (draf boleh ukur):** Mengambil bahagian dalam persembahan muzik dan memenuhi sekurang-kurangnya 3 daripada 4 item senarai semak.
+**Fokus:** Pengukuhan tempo dalam nyanyian dan gerakan
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Objektif:** Murid menyanyikan frasa pendek mengikut tempo serta menunjukkan dua jenis gerakan yang sesuai.
 
-**Set Induksi — 4 minit**  
-Guru menyemak contoh persembahan lalu bertanya peranan, disiplin dan penyediaan yang penting.
+**Set induksi (4 minit):** Guru memperdengarkan petikan ringkas dan murid bergerak setempat untuk mengecam tempo cepat dan lambat.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Kumpulan menyenaraikan peranan, turutan persembahan dan bahan yang diperlukan bagi Merancang persembahan muzik..
+**Aktiviti 1 — Ulang kaji berfokus (8 minit):** Murid menyanyi semula lagu pilihan yang telah dipelajari, membezakan dua tempo dan mempraktikkan ayunan atau langkah mengikut detik.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid membuat latihan atau persembahan mini; guru memberi maklum balas pada ketepatan, koordinasi dan pengurusan alat.
+**Aktiviti 2 — Aplikasi dalam muzik (10 minit):** Pasangan membina dua urutan gerakan pendek mengikut tempo sambil guru mengawal keselamatan ruang.
 
-**Pengukuhan & Penilaian — 6 minit**  
-Senarai semak: peranan, disiplin, kejelasan persembahan dan refleksi ringkas.
+**Pengukuhan dan pentaksiran (6 minit):** Senarai semak pic, tempo dan ketepatan pergerakan; lakukan intervensi kepada murid yang masih keliru.
 
-**Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang sudah dikuasai dan satu sasaran pembaikan; guru membuat rekod PBD.
 
-**Bahan:** Alat persembahan selamat, skor lagu/gerak dan senarai semak kumpulan.  
-**Rujukan sumber:** Halaman buku teks belum tersedia untuk pengesahan. Audio/trek belum dipadankan.
+**Bahan:** Bahan dan instrumen sedia ada daripada PdP tahun ini; gunakan audio yang disahkan oleh guru sahaja.
 
-**Catatan pelaksanaan / pemulihan:** __________________________________________
+**Nota sumber:** RPT lama menamakan projek ketiga dengan SP 5.1.1. DSKP Pendidikan Muzik Tahun 2 menetapkan dua projek setahun. Kandungan PdP 34 merupakan cadangan pengukuhan CikguLaju yang perlu disahkan guru, bukan sebahagian daripada projek ketiga rasmi.
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Refleksi / Tindakan susulan:** ____________________________________________
+
+**Kawalan penerbitan:** Belum FINAL READY, belum diaudit secara Word/PDF/Telegram/Web.

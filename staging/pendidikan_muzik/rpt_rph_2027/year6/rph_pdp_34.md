@@ -1,28 +1,29 @@
 # RPH PENDIDIKAN MUZIK TAHUN 6 — PdP 34
- 
+
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
-**Unit/Tajuk:** Projek Seni Muzik 3 — Perancangan  
-**Bidang:** Projek Seni Muzik  
-**SK/SP:** 5.1.1, 5.1.2  
-**Tempoh cadangan:** 30 minit  
-**Status:** DRAF STAGING — bukan FINAL READY
+**Unit/Tajuk:** Pengukuhan Akhir Tahun — Rekoder Ensemble (cadangan)
+**SK / SP DSKP:** 2.4.1, 2.4.2
+**Status:** DRAF STAGING — PdP cadangan tambahan, bukan Projek Seni Muzik rasmi
+**Tempoh cadangan:** 30 minit
 
-**Objektif:** Murid melengkapkan tugas perancangan, latihan atau persembahan kumpulan dengan sekurang-kurangnya 3 daripada 4 kriteria rubrik.
+**Fokus:** Penjarian julat C hingga D’ dan melodi kaunter
 
-**Set induksi (4 minit):** Guru menunjukkan contoh persembahan dan bertanya tentang persediaan, peranan ahli serta disiplin.
+**Objektif:** Murid memainkan melodi kaunter rekoder dengan sekurang-kurangnya tiga daripada empat aspek teknik yang betul.
 
-**Aktiviti 1 — Bimbingan muzik (8 minit):** Kumpulan mengagihkan peranan dan merancang aktiviti Merancang persembahan muzik. termasuk susunan alat, latihan dan keselamatan.
+**Set induksi (4 minit):** Guru menunjukkan beberapa not C hingga D’ pada baluk; murid menamakan dan menunjukkan penjarian yang dipelajari.
 
-**Aktiviti 2 — Amali / pembelajaran aktif (10 minit):** Murid berlatih atau membuat persembahan mini; guru memberi pembetulan tentang koordinasi, ketepatan dan pengurusan pentas.
+**Aktiviti 1 — Ulang kaji berfokus (8 minit):** Murid memperbaiki postur, pernafasan, perlidahan dan penjarian bagi frasa daripada skor yang sah.
 
-**Pengukuhan dan pentaksiran (6 minit):** Rubrik 4 aspek: kerjasama, ketepatan kemahiran, komunikasi dan refleksi murid.
+**Aktiviti 2 — Aplikasi dalam muzik (10 minit):** Dua kumpulan memainkan melodi utama dan kaunter secara bergilir lalu bergabung dalam ensembel kecil.
 
-**Penutup (2 minit):** Murid menunjukkan semula satu kemahiran, guru merumuskan serta mencatat evidens PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Semak ton, penjarian, tempo dan masa masuk sebelum memberi maklum balas.
 
-**Bahan:** Instrumen muzik, carta latihan/peranan dan rubrik projek.
+**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang sudah dikuasai dan satu sasaran pembaikan; guru membuat rekod PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Tahun 6. Halaman buku teks tidak disahkan. Rakaman/trek audio belum disahkan.
+**Bahan:** Bahan dan instrumen sedia ada daripada PdP tahun ini; gunakan audio yang disahkan oleh guru sahaja.
 
-**Refleksi / Pemulihan:** ____________________________________________________
+**Nota sumber:** RPT lama menamakan projek ketiga dengan SP 5.1.1, 5.1.2. DSKP Pendidikan Muzik Tahun 6 menetapkan dua projek setahun. Kandungan PdP 34 merupakan cadangan pengukuhan CikguLaju yang perlu disahkan guru, bukan sebahagian daripada projek ketiga rasmi.
 
-**Kawalan penerbitan:** Nombor PdP kekal; slot kalendar hanya cadangan. Belum diaudit untuk Word/PDF satu muka surat.
+**Refleksi / Tindakan susulan:** ____________________________________________
+
+**Kawalan penerbitan:** Belum FINAL READY, belum diaudit secara Word/PDF/Telegram/Web.

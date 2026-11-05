@@ -687,40 +687,62 @@
       "pdp": 34,
       "slot_source": 36,
       "unit_number": null,
-      "unit": "Projek Seni Muzik 3 — Perancangan",
+      "unit": "Pengukuhan Akhir Tahun — Rekoder Ensemble (cadangan)",
       "sp": [
-        "5.1.1",
-        "5.1.2"
+        "2.4.1",
+        "2.4.2"
       ],
       "page": null,
-      "flags": [],
+      "flags": [
+        "RPT sumber lama menamakan Projek Seni Muzik 3, tetapi DSKP Tahun 6 menyatakan dua projek setahun. PdP ini cadangan tambahan, bukan projek rasmi."
+      ],
       "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
       "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
       "rpt2027_slot": {
         "week": 34,
         "groupA": "19/09–23/09",
         "groupB": "20/09–24/09"
-      }
+      },
+      "source_rpt_original_unit": "Projek Seni Muzik 3 — Perancangan",
+      "source_rpt_original_sp": [
+        "5.1.1",
+        "5.1.2"
+      ],
+      "pdp_kind": "CADANGAN_PENGUKUHAN_BUKAN_PROJEK_RASMI",
+      "source_rpt_project3_conflict": true,
+      "validation_status": "DRAF_CADANGAN_NONOFFICIAL"
     },
     {
       "pdp_id": "MZ-Y6-35",
       "pdp": 35,
       "slot_source": 37,
       "unit_number": null,
-      "unit": "Projek Seni Muzik 3 — Persembahan",
+      "unit": "Penilaian dan Refleksi Akhir — Muzik Klasik Barat (cadangan)",
       "sp": [
-        "5.1.3",
-        "5.1.4"
+        "4.1.1",
+        "4.1.2"
       ],
       "page": null,
-      "flags": [],
+      "flags": [
+        "RPT sumber lama menamakan Projek Seni Muzik 3, tetapi DSKP Tahun 6 menyatakan dua projek setahun. PdP ini cadangan tambahan, bukan projek rasmi."
+      ],
       "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
       "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
       "rpt2027_slot": {
         "week": 35,
         "groupA": "26/09–30/09",
         "groupB": "27/09–01/10"
-      }
+      },
+      "source_rpt_original_unit": "Projek Seni Muzik 3 — Persembahan",
+      "source_rpt_original_sp": [
+        "5.1.3",
+        "5.1.4"
+      ],
+      "pdp_kind": "CADANGAN_PENGUKUHAN_BUKAN_PROJEK_RASMI",
+      "source_rpt_project3_conflict": true,
+      "validation_status": "DRAF_CADANGAN_NONOFFICIAL"
     }
-  ]
+  ],
+  "dskp_projects_per_year": 2,
+  "deprecated_project3_reclassified_count": 2
 }

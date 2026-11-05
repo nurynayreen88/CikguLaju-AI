@@ -1,9 +1,7 @@
-# RANCANGAN PENGAJARAN TAHUNAN PENDIDIKAN MUZIK TAHUN 4 — 2027 (KUMPULAN A & B)
+# RPT PENDIDIKAN MUZIK TAHUN 4 — 2027 (KUMPULAN A & B)
 
-**Sekolah:** __________   **Guru:** __________   **Kurikulum:** KSSR Semakan 2017   
-**Status:** DRAF STAGING — Kumpulan A dan B (tarikh cadangan belum kesahan cuti negeri/gantian).
-
-**Sumber:** DSKP Tahun 4; RPT 2025/26; Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019). Buku yang sepadan dengan unit ini telah ditemukan di Drive: https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view.
+**Sekolah:** __________ **Guru:** __________ **Status:** DRAF STAGING — belum FINAL READY.
+**Sumber:** DSKP KSSR Semakan 2017 Tahun 4 dan susunan PdP RPT lama. Slot A/B hanya cadangan, perlu semakan cuti negeri/gantian.
 
 | PdP | Slot A | Slot B | Unit / Tajuk | SP | BT m/s* |
 |---:|---|---|---|---|---|
@@ -40,9 +38,9 @@
 | 31 | 22/08–26/08 | 23/08–27/08 | HARUM MEWANGI | 4.2.1 | 100-101 |
 | 32 | 05/09–09/09 | 06/09–10/09 | HARUM MEWANGI | 2.3.1 | 102-103 |
 | 33 | 12/09–16/09 | 13/09–17/09 | HARUM MEWANGI | 2.3.1 | 102-103 |
-| 34 | 19/09–23/09 | 20/09–24/09 | Projek Seni Muzik 3 | 5.1.1 | — |
-| 35 | 26/09–30/09 | 27/09–01/10 | Projek Seni Muzik 3 | 5.1.2, 5.1.3 | — |
+| 34 | 19/09–23/09 | 20/09–24/09 | Pengukuhan Akhir Tahun — Kolattam dan Gerakan (cadangan) | 4.2.1, 2.3.1 | — |
+| 35 | 26/09–30/09 | 27/09–01/10 | Penilaian Akhir — Rekoder dan Perkusi (cadangan) | 2.4.2, 2.2.2 | — |
 
-*Hanya **6 PdP** Unit 5 (14–16) dan Unit 10 (31–33) diperiksa secara khusus pada teks buku dalam pusingan ini. Bilangan halaman lain masih calon RPT lama. Buku menggunakan kod SP yang tidak selalu sama dengan DSKP Pendidikan Muzik Tahun 4 dan belum semakan penuh. Audio tidak disahkan.*
+**Nota penting:** DSKP memperuntukkan dua siri Projek Seni Muzik setahun. PdP 34–35 yang dilabel Projek 3 oleh RPT sumber lama kini dibezakan sebagai cadangan pengukuhan/pentaksiran, bukan projek rasmi. Data sumber asal disimpan dalam manifest untuk jejak audit.
 
-**Isu masih terbuka:** Projek seni tahun 4 pada draf sumber lama muncul tiga kali, sedangkan DSKP menyatakan dua projek setahun. Mesti selesai sebelum FINAL READY.
+*Halaman buku teks hanya rujukan sumber RPT lama kecuali rekod Tahun 4 yang mempunyai `source_book_content_page_checked=true` untuk enam PdP. Fail audio belum disahkan, tarikh 2027 belum disahkan penuh.

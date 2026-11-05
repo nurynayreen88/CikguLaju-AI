@@ -625,10 +625,11 @@
       "pdp_id": "MZ-Y2-34",
       "pdp": 34,
       "slot_source_2025": 36,
-      "unit": "Projek Seni Muzik 3",
+      "unit": "Pengukuhan Akhir Tahun — Nyanyian dan Gerakan (cadangan)",
       "unit_number": null,
       "sp": [
-        "5.1.1"
+        "2.1.3",
+        "2.3.2"
       ],
       "page": null,
       "audio": null,
@@ -637,17 +638,27 @@
         "week": 34,
         "groupA": "19/09–23/09",
         "groupB": "20/09–24/09"
-      }
+      },
+      "source_rpt_original_unit": "Projek Seni Muzik 3",
+      "source_rpt_original_sp": [
+        "5.1.1"
+      ],
+      "pdp_kind": "CADANGAN_PENGUKUHAN_BUKAN_PROJEK_RASMI",
+      "source_rpt_project3_conflict": true,
+      "validation_status": "DRAF_CADANGAN_NONOFFICIAL",
+      "flags": [
+        "RPT sumber lama menamakan Projek Seni Muzik 3, tetapi DSKP Tahun 2 menyatakan dua projek setahun. PdP ini cadangan tambahan, bukan projek rasmi."
+      ]
     },
     {
       "pdp_id": "MZ-Y2-35",
       "pdp": 35,
       "slot_source_2025": 37,
-      "unit": "Projek Seni Muzik 3",
+      "unit": "Penilaian dan Refleksi Muzik Akhir Tahun (cadangan)",
       "unit_number": null,
       "sp": [
-        "5.1.2",
-        "5.1.3"
+        "3.1.3",
+        "4.1.1"
       ],
       "page": null,
       "audio": null,
@@ -656,7 +667,20 @@
         "week": 35,
         "groupA": "26/09–30/09",
         "groupB": "27/09–01/10"
-      }
+      },
+      "source_rpt_original_unit": "Projek Seni Muzik 3",
+      "source_rpt_original_sp": [
+        "5.1.2",
+        "5.1.3"
+      ],
+      "pdp_kind": "CADANGAN_PENGUKUHAN_BUKAN_PROJEK_RASMI",
+      "source_rpt_project3_conflict": true,
+      "validation_status": "DRAF_CADANGAN_NONOFFICIAL",
+      "flags": [
+        "RPT sumber lama menamakan Projek Seni Muzik 3, tetapi DSKP Tahun 2 menyatakan dua projek setahun. PdP ini cadangan tambahan, bukan projek rasmi."
+      ]
     }
-  ]
+  ],
+  "dskp_projects_per_year": 2,
+  "deprecated_project3_reclassified_count": 2
 }
