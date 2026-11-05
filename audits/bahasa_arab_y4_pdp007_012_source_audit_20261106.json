@@ -3,7 +3,7 @@
   "year": 4,
   "unit": 1,
   "title": "الشهور الميلادية",
-  "status": "DRAF_SOURCE_REVIEW_NO_MANUAL_RELEASE",
+  "status": "SOURCE_CONTENT_REMEDIATED_DRAF_RELEASE_QA_PENDING",
   "textbook": {
     "edition": "DBP/KPM cetakan pertama 2019",
     "isbn": "978-983-49-2480-5",
@@ -65,13 +65,18 @@
       "sp": "1.4.1",
       "page": "20",
       "scope": "ayat berangkai tentang hari istimewa",
-      "evidence_status": "PRINTED_SP_BUT_RPH_SAMPLE_NOT_SAME_TEXT",
+      "evidence_status": "MATCH_BOOK_PAGE_SP_AFTER_CONTENT_CORRECTION",
       "ready": false,
       "manual_approval": false
     }
   ],
-  "flagged_lessons": [
-    "012"
-  ],
-  "final_ready": 0
+  "flagged_lessons": [],
+  "final_ready": 0,
+  "remediated_conflicts": [
+    {
+      "lesson": "012",
+      "old": "teacher day draft not p20 textbook dialogue",
+      "new": "Arabic Language Day dialogue on p20 with SP 1.4.1"
+    }
+  ]
 }

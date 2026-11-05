@@ -71,3 +71,10 @@ Fail bukti `audits/bahasa_arab_y5_pdp001_012_source_audit_20261106.json` menyimp
 Enam draf tambahan disemak berdasarkan Buku Teks Tahun 4 DBP/KPM 2019 (halaman 10, 15, 25, 15, 16, 20). PdP 007 menulis nama bulan; PdP 008/010 menggunakan dialog hari jadi; PdP 009 intonasi; PdP 011 ucapan hari jadi. **Bendera PdP 012:** buku halaman 20 mengandungi kod SP 1.4.1 untuk dialog berkait, tetapi contoh ayat draf tentang Hari Guru belum sepadan teks buku; jangan tanda READY tanpa adjudikasi.
 
 Fail: `audits/bahasa_arab_y4_pdp007_012_source_audit_20261106.json`. Kini 12/12 draf Unit 1 Tahun 4 mempunyai sumber halaman bercetak pada aras teks, tetapi tiada kelulusan individu akhir atau Word/PDF RTL. **0 FINAL READY**.
+
+## 6 Nov 2026 — Remediasi empat RPH berpandukan buku teks
+- Y5 PdP 002: SP ditukar **1.1.2 → 1.1.3**, dan aktiviti bertumpu membezakan bunyi seakan sama sebagaimana DSKP dan BT halaman 2.
+- Y5 PdP 004: contoh h.3 dipilih semula (ثلاجة، سكين، صحن); kad tambahan سمكة diberi label pengayaan guru. SP 2.1.1 dikekalkan.
+- Y5 PdP 012: draf lama berasaskan contoh p19 diganti dialog ibu-anak tentang memasak yang sepadan dengan latihan berkod 1.4.1 pada h.20.
+- Y4 PdP 012: contoh draf Hari Guru diganti dialog Hari Bahasa Arab pada BT Tahun 4 h.20 (1.4.1).
+- Rekod konflik sumber dikemas kini sebagai dibetulkan pada kandungan, **bukan kelulusan FINAL READY**; turutan 2027 RPT, pemeriksaan halaman imej, Word/PDF RTL dan semakan guru belum selesai.

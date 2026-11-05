@@ -29,5 +29,5 @@
 
 **Status:** DRAF_STAGING / BELUM READY. Bukan bahan LIVE Telegram atau Web. Teks/aktiviti ini merupakan cadangan berpandukan fokus DSKP/RPT, tidak boleh dianggap padanan tepat halaman buku teks, dan belum diuji dalam Word/PDF A4 RTL.
 
-**Audit buku teks (6 Nov 2026):** Unit 1, halaman bercetak **19–20**. Buku Teks Bahasa Arab Tahun 5 DBP/KPM cetakan 2020, ISBN 978-983-49-2838-4; PDF asal Drive: https://drive.google.com/file/d/1OI3RZ8-NXE2bVSOVqSz9bEWCh2tQEN5U/view.
+**Audit buku teks (6 Nov 2026):** Unit 1, halaman bercetak **20**. Buku Teks Bahasa Arab Tahun 5 DBP/KPM cetakan 2020, ISBN 978-983-49-2838-4; PDF asal Drive: https://drive.google.com/file/d/1OI3RZ8-NXE2bVSOVqSz9bEWCh2tQEN5U/view.
 **Tahap sokongan SP/aktiviti:** MATCH_BOOK_PAGE_SP_AFTER_CONTENT_CORRECTION. SP 1.4.1 tercetak pada dialog bersambung h.20, dan draf telah menggantikan contoh lama h.19 dengan aktiviti berdialog berdasarkan h.20. Bukan bukti pemetaan RPT 2027. DRAF / BELUM READY.

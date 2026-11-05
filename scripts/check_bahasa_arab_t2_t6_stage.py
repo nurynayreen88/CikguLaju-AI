@@ -11,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SUBJECT = ROOT / "rph_standalone" / "bahasa_arab"
 RPT = ROOT / "rpt_2027" / "bahasa_arab"
-EXPECTED_SP = {2:["1.1.1","1.1.2","1.2.1","2.1.1","2.2.1","3.1.1","3.2.1","1.3.1","1.3.2","2.3.1","3.3.1","1.4.1"],3:["1.1.1","1.1.2","1.2.1","2.1.1","2.2.1","3.1.1","3.2.1","1.3.1","1.3.2","2.3.5","3.3.1","1.4.1"],4:["1.1.1","1.1.2","1.2.1","2.1.1","2.2.1","3.1.1","3.2.1","1.3.1","1.3.2","2.3.1","3.3.1","1.4.1"],5:["1.1.1","1.1.2","1.2.1","2.1.1","2.2.1","3.2.1","1.3.1","1.3.2","2.3.1","2.3.2","3.3.1","1.4.1"],6:["1.1.1","1.1.2","1.2.1","2.1.2","2.2.1","3.1.1","1.3.1","1.3.2","2.3.1","2.3.2","3.2.1","1.4.1"]}
+EXPECTED_SP = {2:["1.1.1","1.1.2","1.2.1","2.1.1","2.2.1","3.1.1","3.2.1","1.3.1","1.3.2","2.3.1","3.3.1","1.4.1"],3:["1.1.1","1.1.2","1.2.1","2.1.1","2.2.1","3.1.1","3.2.1","1.3.1","1.3.2","2.3.5","3.3.1","1.4.1"],4:["1.1.1","1.1.2","1.2.1","2.1.1","2.2.1","3.1.1","3.2.1","1.3.1","1.3.2","2.3.1","3.3.1","1.4.1"],5:["1.1.1","1.1.3","1.2.1","2.1.1","2.2.1","3.2.1","1.3.1","1.3.2","2.3.1","2.3.2","3.3.1","1.4.1"],6:["1.1.1","1.1.2","1.2.1","2.1.2","2.2.1","3.1.1","1.3.1","1.3.2","2.3.1","2.3.2","3.2.1","1.4.1"]}
 UNIT_1 = {2:"هيا نتعارف",3:"تفضل إلى الفصل",4:"الشهور الميلادية",5:"في المطبخ",6:"حياتنا أجمل بالنظافة"}
 MARKERS = ("Set induksi", "Aktiviti 1", "Aktiviti 2", "Penutup", "BBM",
            "PBD", "Kriteria kejayaan", "Refleksi", "DRAF", "BELUM READY")
@@ -124,14 +124,16 @@ def check() -> None:
     y5_source = json.loads((ROOT / "audits" / "bahasa_arab_y5_pdp001_012_source_audit_20261106.json").read_text(encoding="utf-8"))
     assert y5_source["year"] == 5 and y5_source["all_rph_final_ready"] == 0
     assert y5_source["pdp_source_reviewed"] == 12 and len(y5_source["pdp"]) == 12
-    assert y5_source["flagged_lessons"] == ["002","004","012"]
+    assert y5_source["flagged_lessons"] == []
+    assert [v["lesson"] for v in y5_source["remediated_conflicts"]] == ["002","004","012"]
     assert y5_source["release_blocked"] is True
     assert [x["draft_sp"] for x in y5_source["pdp"]] == EXPECTED_SP[5]
     assert all(x["ready"] is False and x["manual_approval"] is False for x in y5_source["pdp"])
-    assert y5_source["pdp"][1]["evidence_status"] == "SKILL_ONLY_SP_NOT_PRINTED_ON_REFERENCED_PAGE"
-    assert "1.1.2" not in y5_source["pdp"][1]["book_printed_codes"]
-    assert y5_source["pdp"][3]["evidence_status"] == "CODE_PRINTED_BUT_TEXT_EXERCISE_DIFFERS_FROM_DRAFT"
-    assert y5_source["pdp"][11]["evidence_status"] == "RELATED_EXAMPLE_P19_SP_1_4_1_PRINTED_P20"
+    assert y5_source["pdp"][1]["evidence_status"] == "MATCH_BOOK_PAGE_SP_AFTER_CORRECTION"
+    assert y5_source["pdp"][1]["draft_sp"] == "1.1.3"
+    assert "1.1.3" in y5_source["pdp"][1]["book_printed_codes"]
+    assert y5_source["pdp"][3]["evidence_status"] == "BOOK_CODE_AND_EXERCISE_ALIGNED_WITH_TEACHER_EXTENSION"
+    assert y5_source["pdp"][11]["evidence_status"] == "MATCH_BOOK_PAGE_SP_AFTER_CONTENT_CORRECTION"
     assert m["years"]["5"]["source_evidence_pdp001_012"] == "audits/bahasa_arab_y5_pdp001_012_source_audit_20261106.json"
     assert m["years"]["5"]["source_audit_unresolved"] == y5_source["flagged_lessons"]
     assert m["years"]["5"]["textbook"]["source_page_verified"] is False
@@ -145,8 +147,9 @@ def check() -> None:
     assert y4rest["final_ready"] == 0 and len(y4rest["pdp"]) == 6
     assert [x["lesson"] for x in y4rest["pdp"]] == [f"{i:03d}" for i in range(7,13)]
     assert [x["sp"] for x in y4rest["pdp"]] == EXPECTED_SP[4][6:12]
-    assert y4rest["flagged_lessons"] == ["012"]
-    assert y4rest["pdp"][5]["evidence_status"] == "PRINTED_SP_BUT_RPH_SAMPLE_NOT_SAME_TEXT"
+    assert y4rest["flagged_lessons"] == []
+    assert y4rest["remediated_conflicts"][0]["lesson"] == "012"
+    assert y4rest["pdp"][5]["evidence_status"] == "MATCH_BOOK_PAGE_SP_AFTER_CONTENT_CORRECTION"
     assert all(x["ready"] is False and x["manual_approval"] is False for x in y4rest["pdp"])
     assert m["years"]["4"]["source_evidence_pdp007_012"] == "audits/bahasa_arab_y4_pdp007_012_source_audit_20261106.json"
     assert m["years"]["4"]["source_reviewed_drafts_total"] == 12

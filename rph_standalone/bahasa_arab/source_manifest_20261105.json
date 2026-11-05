@@ -156,9 +156,11 @@
       "first_six_source_evidence": "audits/bahasa_arab_y4_textbook_pdp001_006_evidence_20261106.json",
       "source_evidence_pdp007_012": "audits/bahasa_arab_y4_pdp007_012_source_audit_20261106.json",
       "source_reviewed_drafts_total": 12,
-      "source_review_unresolved": [
+      "source_review_unresolved": [],
+      "source_review_remediated": [
         "012"
-      ]
+      ],
+      "source_review_remediation_status": "TEXTBOOK_DIALOG_ALIGNED_STILL_AWAITING_RPT_2027_AND_RELEASE_QA"
     },
     "5": {
       "dskp": {
@@ -213,11 +215,13 @@
       "unit_3_correction_note": "Judul sebenar Unit 3 BT KSSR Tahun 5 ialah aktiviti luar bilik darjah/kokurikulum (اللاصفية), bukan aktiviti dalam kelas (الصفية).",
       "source_evidence_pdp001_012": "audits/bahasa_arab_y5_pdp001_012_source_audit_20261106.json",
       "page_source_reviewed_drafts": 12,
-      "source_audit_unresolved": [
+      "source_audit_unresolved": [],
+      "source_audit_remediated": [
         "002",
         "004",
         "012"
-      ]
+      ],
+      "source_audit_remediation_status": "TEXTBOOK_CODE_AND_ACTIVITY_REVISED_STILL_AWAITING_RPT_2027_AND_RELEASE_QA"
     },
     "6": {
       "dskp": {
