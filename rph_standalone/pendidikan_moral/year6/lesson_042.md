@@ -17,7 +17,7 @@ Murid melaksanakan dua tindakan toleransi semasa aktiviti berpasukan dan menilai
 ## Langkah PdP
 **Set induksi (5 minit):** Guru memperlihatkan risalah toleransi dalam buku teks m/s 138–139 dan latihan kendiri m/s 140; murid memilih satu perlakuan yang boleh diamalkan ketika bekerja dalam kumpulan.
 
-**Aktiviti 1 (20 minit) — Bersikap Toleransi demi Perpaduan Negara:** Berpandukan tugasan risalah m/s 138–139, guru mengagihkan peranan dan memerhati murid mempraktikkan dua perlakuan toleransi seperti memberi giliran bercakap dan menerima pandangan rakan (SP 14.5). Hasil risalah hanya digunakan dalam kelas, tidak dimuat naik ke media sosial.
+**Aktiviti 1 (20 minit) — Bersikap Toleransi demi Perpaduan Negara:** Guru berpandukan tugasan risalah m/s 138–139 untuk mengagihkan peranan kumpulan dan memerhati tindakan murid. Murid mempraktikkan dua perlakuan toleransi, seperti memberi giliran bercakap dan menerima pandangan rakan semasa menyediakan risalah (SP 14.5). Hasil risalah digunakan dalam kelas sahaja, tanpa muat naik ke media sosial.
 
 **Aktiviti 2 (20 minit) — Mari Uji Diri:** Guru meneliti latihan m/s 140 dan meminta murid menyampaikan ucapan ringkas kepada kumpulan. Murid mendengar tanpa mencelah, memberi respons sopan dan membaiki satu tindakan berdasarkan komen pemerhati (SP 14.5).
 
