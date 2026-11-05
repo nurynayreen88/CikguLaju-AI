@@ -58,7 +58,7 @@ def run():
                 assert "PBD" in txt and "SEJARAH" in txt
             else:
                 assert "Kumpulan A" in txt and "Kumpulan B" in txt,(year,"missing groups")
-                assert "RANCANGAN PENGAJARAN TAHUNAN" in txt,(year,"missing cover")
+                assert re.search(r"RANCANGAN\s+PENGAJARAN\s+TAHUNAN",txt),(year,"missing cover")
                 for n in range(1,37):
                     assert len(re.findall(rf"(?<!\d){n}(?!\d)",txt))>=2,(year,"missing RPT row",n)
             manifest.append({"year":year,"document":kind,"pages":count,"bytes":output.stat().st_size,"orientation":"landscape" if expect_landscape else "portrait","preview":True,"ready":False})
