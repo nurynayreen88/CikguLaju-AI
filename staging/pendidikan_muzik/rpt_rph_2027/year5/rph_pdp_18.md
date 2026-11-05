@@ -2,30 +2,32 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** SILAP MATA
-**SK/SP (DSKP Tahun 5):** 2.1.1, 2.1.3
+**SK/SP (DSKP/RPT Tahun 5, dikekalkan):** 2.1.1, 2.1.3
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Fokus PdP:** Nyanyian Silap Mata dengan pic dan tempo.
+**Fokus PdP:** Nyanyian Silap Mata dengan latihan vokal dan frasa dalam nada F minor
 
-**Objektif:** Menyanyikan frasa atau rangkap dengan pic dan tempo tepat dalam sekurang-kurangnya 2 daripada 3 percubaan.
+**Objektif:** Mengajuk dua latihan vokal dan menyanyikan satu frasa Silap Mata dengan pic, sebutan dan tempo tepat pada dua percubaan.
 
-**Set induksi (4 minit):** Guru memperdengarkan satu frasa lagu, murid mengajuk sambil mengetuk detik mengikut tempo.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran sasaran melalui persembahan ringkas atau tugasan yang boleh disemak guru.
 
-**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Guru memodelkan cara mengambil nafas dan menyanyikan frasa; murid mengajuk secara respons-gema sebelum menyanyi bersama.
+**Set induksi (4 minit):** Guru memberi contoh latihan vokal ringkas dan mengingatkan postur serta kawalan nafas.
 
-**Aktiviti 2 — Amali mengikut unit (10 minit):** Kumpulan menyanyikan bahagian lagu secara bergilir dengan penekanan pada pic dan tempo; pasangan memberi pembetulan dan cuba semula. Guru dan murid merujuk tema **SILAP MATA**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
+**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Berpandukan halaman 47, murid melakukan latihan vokal 1 hingga 4 secara ajuk-frasa; guru membimbing artikulasi tanpa memaksa nada tinggi.
 
-**Pengukuhan dan pentaksiran (6 minit):** Guru menyemak pic, tempo dan sebutan dengan senarai semak tiga kriteria; murid mengulang frasa yang belum tepat.
+**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid mengajuk lagu Silap Mata berdasarkan skor halaman 48 dan menyanyikannya secara berkumpulan, kemudian mengulangi frasa yang kurang tepat. Guru menyebut bahawa skor nyanyian ialah dalam nada F minor.
 
-**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Semak dua latihan vokal dan satu frasa lagu dari segi pic, tempo dan kejelasan sebutan.
 
-**Bahan:** Rakaman lagu daripada buku yang sah (jika tersedia), lirik/skor dan pembesar suara.
+**Penutup (2 minit):** Murid menjelaskan satu teknik mengambil nafas pada penghujung frasa. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 46-48; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
+**Bahan:** Buku halaman 46–48, skor guru, kad frasa dan iringan suara guru.
 
-**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 46-48 BELUM disahkan pada buku asal.
+**Rujukan:** Buku Teks Pendidikan Muzik Tahun 5 SK, DBP 2020, halaman 46–48; https://anyflip.com/sgimv/qcts/basic/51-96. RPT 2026: https://anyflip.com/eaqot/basd/basic. Nombor audio **bercetak sahaja**: 83–89; tiada fail audio diperiksa atau diaktifkan dalam Telegram. Kod SP sumber dikekalkan tanpa perubahan automatik.
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_TAHUN5_20261106; aktiviti buku diperincikan tetapi skor visual, audio sebenar dan format Word/PDF belum disahkan.
 
 **Refleksi dan pemulihan:** _________________________________________________
 
-**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.
+**Kawalan penerbitan:** DRAF STAGING sahaja; belum untuk pengguna Telegram/Web.

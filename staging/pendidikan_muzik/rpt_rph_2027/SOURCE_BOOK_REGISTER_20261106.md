@@ -7,10 +7,10 @@
 | 2 | [Buku Teks Pendidikan Kesenian Tahun 2 SK](https://anyflip.com/iawvx/mran/basic), DBP 2017 | Salinan awam mempunyai unit 1 *Kami Suka Sayur* hingga unit 10 *Segarnya Air Terjun*, kandungan belum disemak halaman demi halaman | 28/35 semakan teks buku (11 PdP awal + 17 PdP tambahan); PdP 33 tidak diluluskan |
 | 3 | [Buku Teks Pendidikan Kesenian Tahun 3 SK](https://anyflip.com/iawvx/rlmd/basic), [fail Drive](https://drive.google.com/file/d/13P0maZhBReHBIYSPXI_CPvobj0Ryya6z/view) | Salinan awam muncul dalam indeks dengan Unit 1 *Tut Tut Kereta Api* hingga Unit 10 *Seni Anyaman Berzaman*; teks dalam fail Drive belum dapat dibaca sepenuhnya | 28/35 semakan teks buku: PdP 1–11, 14–23 dan 27–33 mengikut buku DBP 2018 |
 | 4 | [Buku Teks Pendidikan Kesenian Tahun 4 SK di Drive](https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view), DBP 2019 | 22 PdP semakan teks unit/aktiviti + 6 PdP pemeriksaan kandungan halaman terdahulu | 28/35 semakan terhad |
-| 5 | [Buku Teks Pendidikan Muzik Tahun 5 SK](https://anyflip.com/ziqkn/yatu/basic), DBP 2020 | Teks dan halaman rujukan unit dipadankan bagi 15 PdP; audio nombor cetak sahaja | 26/35 semakan teks terhad |
+| 5 | [Buku Teks Pendidikan Muzik Tahun 5 SK](https://anyflip.com/ziqkn/yatu/basic), DBP 2020 | Teks dan halaman rujukan unit dipadankan bagi 15 PdP; audio nombor cetak sahaja | 35/35 semakan teks terhad |
 | 6 | [Buku Teks Pendidikan Muzik Tahun 6 SK](https://anyflip.com/zcnoa/yxcj/basic), DBP 2021 | Teks dan halaman rujukan unit dipadankan bagi 7 PdP, khusus Classical, Mikroorganisma dan Rindu | 7/35 semakan terhad |
 
-Jumlah **117/175 RPH** mempunyai semakan kandungan berasaskan teks buku atau halaman (dengan tahap bukti berbeza); **58 RPH belum melalui audit buku teks individu yang setara**.
+Jumlah **126/175 RPH** mempunyai semakan kandungan berasaskan teks buku atau halaman (dengan tahap bukti berbeza); **49 RPH belum melalui audit buku teks individu yang setara**.
 
 
 ## Pusingan Tahun 2 — bukti baharu (6 November 2026)
@@ -50,3 +50,7 @@ PdP 32–33 turut disemak secara teks terhadap Buku Pendidikan Kesenian Tahun 3 
 
 ## 6 November 2026 — Tahun 5 PdP 01–11
 Buku Teks Muzik Tahun 5 DBP 2020 halaman 2–33 telah diperiksa secara teks untuk 11 lagi RPH. Perincian: `year5/BUKU_TAHUN5_PDP01_11_TEXT_AUDIT_20261106.md`. Semakan teks meningkat kepada **26/35 Tahun 5** dan **117/175 semua Tahun 2–6**, berbaki **58**. Bukan pengesahan skor visual, audio fail, RPT 2027 atau Word/PDF; masih DRAF.
+
+
+## 6 November 2026 — Tahun 5 PdP 18–26
+Buku Teks Muzik Tahun 5 DBP 2020 halaman 46–69 telah diperiksa secara teks untuk sembilan RPH tambahan. Perincian: `year5/BUKU_TAHUN5_PDP18_26_TEXT_AUDIT_20261106.md`. Kini **35/35 Tahun 5** mempunyai semakan teks terhad; **126/175** semua Tahun 2–6, **49** masih belum setara. Tiada pengesahan audio, skor visual, Word/PDF atau Telegram/Web.

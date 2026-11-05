@@ -2,30 +2,32 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** TIP TAP TIP TAP
-**SK/SP (DSKP Tahun 5):** 1.1.2, 1.1.3, 2.3.1
+**SK/SP (DSKP/RPT Tahun 5, dikekalkan):** 1.1.2, 1.1.3, 2.3.1
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Fokus PdP:** Staccato, legato dan pergerakan mengikut tempo.
+**Fokus PdP:** Staccato, legato serta Permainan Lompat Luncur
 
-**Objektif:** Mengenal simbol staccato dan legato serta menggunakannya ketika bergerak mengikut tempo.
+**Objektif:** Membezakan staccato dengan legato dan mempraktikkan dua corak gerakan yang sepadan dalam aktiviti empat stesen.
 
-**Set induksi (4 minit):** Guru menghasilkan bunyi bersambung dan terputus-putus; murid menerangkan perbezaan.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran sasaran melalui persembahan ringkas atau tugasan yang boleh disemak guru.
 
-**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Murid membaca tanda staccato/legato dalam contoh skor lalu mengajuk gerak pendek dan gerak bersambung.
+**Set induksi (4 minit):** Guru menunjukkan dua contoh tepukan/bunyi putus-putus dan bersambung; murid mengelaskan staccato atau legato.
 
-**Aktiviti 2 — Amali mengikut unit (10 minit):** Kumpulan membina pergerakan yang sepadan dengan petikan muzik yang mempunyai dua jenis artikulasi. Guru dan murid merujuk tema **TIP TAP TIP TAP**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
+**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Guru memperkenalkan staccato/legato melalui contoh The Frogs halaman 64, kemudian murid menandakan simbol sesuai pada dua latihan notasi.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak pengenalpastian dan demonstrasi dua bentuk artikulasi secara gerakan.
+**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Empat kumpulan menjalankan Permainan Lompat Luncur halaman 65: setiap kumpulan bergerak mengikut arahan stesen bagi gerakan putus-putus dan gerakan meluncur yang bersambung.
 
-**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Semak dua simbol pada skor dan dua corak pergerakan yang sepadan dengan artikulasi.
 
-**Bahan:** Kad simbol artikulasi, audio dan ruang pergerakan.
+**Penutup (2 minit):** Murid membezakan staccato daripada legato melalui demonstrasi satu gerakan. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 64-65; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
+**Bahan:** Skor The Frogs, kad simbol staccato/legato, ruang empat stesen selamat.
 
-**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 64-65 BELUM disahkan pada buku asal.
+**Rujukan:** Buku Teks Pendidikan Muzik Tahun 5 SK, DBP 2020, halaman 64–65; https://anyflip.com/sgimv/qcts/basic/51-96. RPT 2026: https://anyflip.com/eaqot/basd/basic. Nombor audio **bercetak sahaja**: 117–122; tiada fail audio diperiksa atau diaktifkan dalam Telegram. Kod SP sumber dikekalkan tanpa perubahan automatik.
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_TAHUN5_20261106; aktiviti buku diperincikan tetapi skor visual, audio sebenar dan format Word/PDF belum disahkan.
 
 **Refleksi dan pemulihan:** _________________________________________________
 
-**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.
+**Kawalan penerbitan:** DRAF STAGING sahaja; belum untuk pengguna Telegram/Web.

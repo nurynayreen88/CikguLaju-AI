@@ -2,30 +2,32 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** BURUJ
-**SK/SP (DSKP Tahun 5):** 2.1.1, 2.1.3, 1.1.1
+**SK/SP (DSKP/RPT Tahun 5, dikekalkan):** 2.1.1, 2.1.3, 1.1.1
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Fokus PdP:** Nyanyian Buruj dan pembacaan notasi.
+**Fokus PdP:** Nyanyian Buruj dan Permainan Mencari Not
 
-**Objektif:** Menyanyi pada pic dan tempo sesuai serta mengenal sekurang-kurangnya tiga not dalam skor.
+**Objektif:** Menyanyikan satu frasa Buruj serta mengenal sekurang-kurangnya lima daripada tujuh not B, A, G, C', D', E dan F pada keratan skor.
 
-**Set induksi (4 minit):** Guru menunjukkan tiga not pada baluk; murid menamakan atau meneka ketinggiannya.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran sasaran melalui persembahan ringkas atau tugasan yang boleh disemak guru.
 
-**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Murid membaca sebahagian not pada skor dan mengajuk frasa lagu dengan pic yang betul.
+**Set induksi (4 minit):** Guru memperkenalkan nama empat buruj yang disebut dalam tema lagu dan meminta murid mengenal sebutannya.
 
-**Aktiviti 2 — Amali mengikut unit (10 minit):** Murid menyanyi dan menunjuk not yang sedang berbunyi pada skor secara berpasangan. Guru dan murid merujuk tema **BURUJ**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
+**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Guru membimbing pemanasan vokal dan ajuk frasa Buruj halaman 55 dengan pic dan tempo yang tepat.
 
-**Pengukuhan dan pentaksiran (6 minit):** Nilai pic, tempo dan tiga pengecaman not menggunakan semakan individu.
+**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Kumpulan lima orang menjalankan Permainan Mencari Not halaman 56–57: murid membulatkan not pada keratan skor, menyusun lima keratan dan menyalin not yang ditemui pada baluk.
 
-**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Semak nyanyian satu frasa dan ketepatan pengecaman lima daripada tujuh not pada keratan.
 
-**Bahan:** Skor lagu, kad not dan rakaman yang dibenarkan.
+**Penutup (2 minit):** Murid menyatakan satu not yang sudah boleh dikenali serta satu perkara yang dipelajari tentang buruj. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 54-57; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
+**Bahan:** Skor Buruj halaman 54–57, lima keratan skor, kertas A4 dan lembaran baluk.
 
-**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 54-57 BELUM disahkan pada buku asal.
+**Rujukan:** Buku Teks Pendidikan Muzik Tahun 5 SK, DBP 2020, halaman 54–57; https://anyflip.com/sgimv/qcts/basic/51-96. RPT 2026: https://anyflip.com/eaqot/basd/basic. Nombor audio **bercetak sahaja**: 99–101; tiada fail audio diperiksa atau diaktifkan dalam Telegram. Kod SP sumber dikekalkan tanpa perubahan automatik.
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_TAHUN5_20261106; aktiviti buku diperincikan tetapi skor visual, audio sebenar dan format Word/PDF belum disahkan.
 
 **Refleksi dan pemulihan:** _________________________________________________
 
-**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.
+**Kawalan penerbitan:** DRAF STAGING sahaja; belum untuk pengguna Telegram/Web.

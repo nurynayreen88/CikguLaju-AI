@@ -121,3 +121,9 @@ Fail RPT (.md/.csv), RPH setiap PdP (.md), manifest JSON di `staging/pendidikan_
 - Pembetulan yang penting: *Da Dum* dinamik, Teroka Bunyi, ensembel Waspada Selalu, *Santun di Jalan Raya* dinamik/tempo, meter 3/4, *Busak Pakui*, rekoder *Lightly Row*, *Nama Berirama*, lagu berkembar dan permainan melodi 3/4 vs 4/4.
 - **Tahun 5 26/35** semakan teks, **semua T2–6 117/175**, baki **58** semakan setara; **0 FINAL READY**. Audit lengkap: `year5/BUKU_TAHUN5_PDP01_11_TEXT_AUDIT_20261106.md`.
 - Fail audio sebenar, skor visual, tarikh cuti negeri RPT 2027, pembaca Word/PDF dan integrasi Telegram/Web kekal blocker.
+
+
+## Pemurnian akhir teks buku Tahun 5 — PdP 18–26 (6 November 2026)
+- **9 RPH lagi** disemak berdasarkan halaman buku asal 46–69: *Silap Mata*, *Buruj* dan *Tip Tap Tip Tap*.
+- Tahun 5 kini **35/35 semakan kandungan teks buku** (bukan final); jumlah keseluruhan **126/175**, baki **49 RPH** belum disemak setara. Fail audio sebenar, notasi visual, Word/PDF dan cuti negeri belum disahkan.
+- Lihat `year5/BUKU_TAHUN5_PDP18_26_TEXT_AUDIT_20261106.md`. JANGAN MERGE / DEPLOY.

@@ -2,30 +2,32 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** SILAP MATA
-**SK/SP (DSKP Tahun 5):** 2.4.1
+**SK/SP (DSKP/RPT Tahun 5, dikekalkan):** 2.4.1
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Fokus PdP:** Latihan rekoder dan kualiti ton Silap Mata.
+**Fokus PdP:** Melodi kaunter rekoder Silap Mata dalam nada A minor
 
-**Objektif:** Memainkan satu frasa rekoder dengan 3 daripada 4 aspek teknik (penjarian, ton, tempo, pernafasan) yang betul.
+**Objektif:** Memainkan satu frasa melodi kaunter Silap Mata dengan penjarian, perlidahan dan pernafasan betul dalam dua percubaan.
 
-**Set induksi (4 minit):** Guru memperagakan satu bunyi rekoder yang bersih dan satu yang berhembus kuat; murid menjelaskan perbezaannya.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran sasaran melalui persembahan ringkas atau tugasan yang boleh disemak guru.
 
-**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Murid menunjukkan postur, penjarian, pernafasan dan perlidahan ‘tu’ sebelum memainkan not sasaran E hingga D’ mengikut kemampuan.
+**Set induksi (4 minit):** Guru menerangkan beza antara melodi utama yang dinyanyikan dengan melodi kaunter rekoder yang mengiringinya.
 
-**Aktiviti 2 — Amali mengikut unit (10 minit):** Murid membaca satu frasa skor pendek, memainkan perlahan secara individu dan mengulang secara berpasangan setelah semakan penjarian. Guru dan murid merujuk tema **SILAP MATA**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
+**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Guru membimbing murid membaca skor melodi kaunter Silap Mata halaman 49, memeriksa pernafasan dan penjarian not sebelum meniup rekoder.
 
-**Pengukuhan dan pentaksiran (6 minit):** Guru membuat senarai semak penjarian, ton, tempo dan pernafasan; murid menunjukkan pembaikan pada percubaan kedua.
+**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid menyanyi frasa melodi utama pada pusingan pertama dan memainkan melodi kaunter rekoder pada pusingan kedua. Guru membezakan nada F minor untuk nyanyian dengan A minor untuk rekoder seperti nota guru.
 
-**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Senarai semak penjarian, ketepatan frasa, tiupan bersih dan kebolehan mengekalkan tempo.
 
-**Bahan:** Rekoder bersih, carta penjarian not, skor asas dan alat penentu tempo.
+**Penutup (2 minit):** Murid membersihkan rekoder dan menerangkan fungsi melodi kaunter. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 49; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
+**Bahan:** Buku halaman 49, rekoder individu bersih, skor melodi kaunter rujukan guru.
 
-**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 49 BELUM disahkan pada buku asal.
+**Rujukan:** Buku Teks Pendidikan Muzik Tahun 5 SK, DBP 2020, halaman 49; https://anyflip.com/sgimv/qcts/basic/51-96. RPT 2026: https://anyflip.com/eaqot/basd/basic. Nombor audio **bercetak sahaja**: 90–93; tiada fail audio diperiksa atau diaktifkan dalam Telegram. Kod SP sumber dikekalkan tanpa perubahan automatik.
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_TAHUN5_20261106; aktiviti buku diperincikan tetapi skor visual, audio sebenar dan format Word/PDF belum disahkan.
 
 **Refleksi dan pemulihan:** _________________________________________________
 
-**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.
+**Kawalan penerbitan:** DRAF STAGING sahaja; belum untuk pengguna Telegram/Web.

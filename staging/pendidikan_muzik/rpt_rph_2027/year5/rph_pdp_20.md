@@ -2,30 +2,32 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** SILAP MATA
-**SK/SP (DSKP Tahun 5):** 2.3.1
+**SK/SP (DSKP/RPT Tahun 5, dikekalkan):** 2.3.1
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Fokus PdP:** Pergerakan bermeter dan tempo dalam Silap Mata.
+**Fokus PdP:** Gerakan meter 2/4 melalui Ikut Gerak Gaya dan corak arah bulatan
 
-**Objektif:** Menghasilkan dan mempersembahkan dua urutan gerakan yang mengikut meter serta tempo muzik.
+**Objektif:** Mempersembahkan dua urutan gerak meter 2/4 dengan tekanan detik pertama dan perubahan arah yang tepat.
 
-**Set induksi (4 minit):** Murid menandakan detik dengan langkah setempat ketika guru memperdengarkan petikan muzik.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran sasaran melalui persembahan ringkas atau tugasan yang boleh disemak guru.
 
-**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Guru menunjukkan hubungan meter/tempo dengan pola gerak; murid menguji dua pola yang tidak mengganggu ruang rakan.
+**Set induksi (4 minit):** Guru menepuk dua detik dan mengingatkan murid tekanan pada detik pertama.
 
-**Aktiviti 2 — Amali mengikut unit (10 minit):** Kumpulan merancang formasi, menyusun dua urutan gerak, dan mempersembahkan semula setelah menerima maklum balas. Guru dan murid merujuk tema **SILAP MATA**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
+**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Guru menganjurkan permainan Ikut Gerak Gaya halaman 50–51: kumpulan bergerak melalui tujuh stesen seperti lompat setempat, seret langkah dan berjalan mengikut arahan, dengan kawalan ruang.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak keselarasan tempo, ketepatan meter, koordinasi dan disiplin keselamatan gerakan.
+**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid berlatih corak irama 1–3 halaman 52–53 dengan dua kumpulan bergerak mengikut arah jam dan lawan arah jam sebelum menggabungkannya dalam Corak Irama 4.
 
-**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Semak ketepatan kiraan 2/4, arah pergerakan dan keselamatan murid sepanjang dua urutan.
 
-**Bahan:** Audio muzik dibenarkan, ruang lapang dan kad kiraan/formasi.
+**Penutup (2 minit):** Murid menepuk detik pertama dengan kuat dan menjelaskan cara menukar arah tanpa bertembung. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 50-53; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
+**Bahan:** Kad tujuh stesen, pita penanda kawasan, kad arah jam/lawan arah jam dan kiraan guru.
 
-**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 50-53 BELUM disahkan pada buku asal.
+**Rujukan:** Buku Teks Pendidikan Muzik Tahun 5 SK, DBP 2020, halaman 50–53; https://anyflip.com/sgimv/qcts/basic/51-96. RPT 2026: https://anyflip.com/eaqot/basd/basic. Nombor audio **bercetak sahaja**: 94–98; tiada fail audio diperiksa atau diaktifkan dalam Telegram. Kod SP sumber dikekalkan tanpa perubahan automatik.
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_TAHUN5_20261106; aktiviti buku diperincikan tetapi skor visual, audio sebenar dan format Word/PDF belum disahkan.
 
 **Refleksi dan pemulihan:** _________________________________________________
 
-**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.
+**Kawalan penerbitan:** DRAF STAGING sahaja; belum untuk pengguna Telegram/Web.

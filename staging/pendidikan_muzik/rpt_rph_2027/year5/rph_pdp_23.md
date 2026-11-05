@@ -2,30 +2,32 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** BURUJ
-**SK/SP (DSKP Tahun 5):** 2.2.1
+**SK/SP (DSKP/RPT Tahun 5, dikekalkan):** 2.2.1
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Fokus PdP:** Pengukuhan ketepatan tempo perkusi Buruj.
+**Fokus PdP:** Ensembel perkusi lagu Buruj dengan kastanet, loceng dan dram bes
 
-**Objektif:** Memainkan satu corak irama berpandukan skor dengan tempo tepat pada sekurang-kurangnya 2 daripada 3 percubaan.
+**Objektif:** Memainkan satu bahagian ensembel Buruj selama lapan detik dengan tempo terkawal serta keseimbangan bunyi.
 
-**Set induksi (4 minit):** Guru mengetuk empat detik dan memberi jeda; murid mengajuk dan mengenal pasti tempat berhenti.
+**Kriteria kejayaan:** Murid menunjukkan kemahiran sasaran melalui persembahan ringkas atau tugasan yang boleh disemak guru.
 
-**Aktiviti 1 — Demonstrasi dan pemodelan (8 minit):** Murid membaca skor ringkas, menepuk corak irama serta mengenal pasti tanda rehat sebelum memegang alat.
+**Set induksi (4 minit):** Guru memperagakan kesan permainan perkusi terlalu kuat berbanding seimbang bersama nyanyian.
 
-**Aktiviti 2 — Amali mengikut unit (10 minit):** Kumpulan memainkan corak bergilir dan bersama-sama; guru memberi isyarat masuk/henti serta murid menilai ketepatan tempo. Guru dan murid merujuk tema **BURUJ**; aktiviti dipilih supaya bersesuaian dengan kandungan PdP.
+**Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Murid membaca skor ensembel Buruj halaman 60–61; guru membahagikan kepada kastanet, loceng dan dram bes, kemudian melatih kumpulan secara berasingan.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak tiga percubaan dari segi detik, bacaan skor dan rehat; kumpulan mengulang pola yang tidak seragam.
+**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Kumpulan menyatukan iringan perkusi untuk menyokong lagu Buruj; ketua kumpulan memberi isyarat mula/henti dan murid mengurangkan kelantangan jika alat menenggelamkan nyanyian.
 
-**Penutup (2 minit):** Murid menyebut kemahiran yang baru dicuba, menunjukkan satu contoh ringkas dan menyatakan pembaikan yang perlu. Guru merekod pemerhatian PBD.
+**Pengukuhan dan pentaksiran (6 minit):** Guru memeriksa pola tepat, tempo, keseimbangan kelantangan dan koordinasi ensembel.
 
-**Bahan:** Alat perkusi, skor/ikon irama dan metronom atau tepukan kiraan.
+**Penutup (2 minit):** Murid menjelaskan satu cara menjaga keseimbangan bunyi dalam persembahan. Guru merekod pemerhatian PBD.
 
-**Rujukan:** DSKP KSSR Semakan 2017 Pendidikan Muzik Tahun 5. RPT 2026 mencadangkan Buku Teks m/s 60-61; **belum disahkan terhadap buku teks asal**. RPT rujukan 2026: https://anyflip.com/eaqot/basd/basic. Audio/trek dan skor daripada buku teks belum disahkan.
+**Bahan:** Skor Buruj halaman 60–61, kastanet/loceng/dram bes atau alternatif setara.
 
-**Audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 60-61 BELUM disahkan pada buku asal.
+**Rujukan:** Buku Teks Pendidikan Muzik Tahun 5 SK, DBP 2020, halaman 60–61; https://anyflip.com/sgimv/qcts/basic/51-96. RPT 2026: https://anyflip.com/eaqot/basd/basic. Nombor audio **bercetak sahaja**: 110–113; tiada fail audio diperiksa atau diaktifkan dalam Telegram. Kod SP sumber dikekalkan tanpa perubahan automatik.
+
+**Audit:** SEMAKAN_TEKSTUAL_BUKU_TAHUN5_20261106; aktiviti buku diperincikan tetapi skor visual, audio sebenar dan format Word/PDF belum disahkan.
 
 **Refleksi dan pemulihan:** _________________________________________________
 
-**Kawalan penerbitan:** Draf PdP; tidak boleh dijadikan bukti kesahan halaman buku atau audio. Format Word/PDF selepas revisi belum diuji.
+**Kawalan penerbitan:** DRAF STAGING sahaja; belum untuk pengguna Telegram/Web.
