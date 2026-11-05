@@ -8,6 +8,10 @@ from hashlib import sha256
 import json
 from pathlib import Path
 import subprocess
+import sys
+
+ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT))
 
 from pypdf import PdfReader
 from tools.audit_english_rph_word_a4_layout import (
@@ -15,7 +19,6 @@ from tools.audit_english_rph_word_a4_layout import (
 )
 from tools.verify_english_800_word_a4 import all_text
 
-ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"output/english_y5_l029_l030_physical_word_a4_20261105"
 DOCS=OUT/"docx"
 PDFS=OUT/"pdf"
