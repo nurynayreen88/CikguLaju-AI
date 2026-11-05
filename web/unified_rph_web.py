@@ -209,7 +209,7 @@ def _read_source(row, year, subject):
     elif subject == "PSV":
         if not text.startswith(f"# RPH Pendidikan Seni Visual Tahun {year} — PdP {n:03d}"):
             return None
-        if not re.search(r"(?m)^\\*\\*Status:\\*\\*\\s*READY\\s*$", text):
+        if not re.search(r"(?m)^\*\*Status:\*\*\s*READY\s*$", text):
             return None
     return text
 
