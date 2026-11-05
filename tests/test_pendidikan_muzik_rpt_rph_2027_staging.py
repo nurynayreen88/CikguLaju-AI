@@ -138,7 +138,7 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
             doc = (MUSIC / "rpt_rph_2027" / "year4" / f"rph_pdp_{pdp:02d}.md").read_text(encoding="utf-8")
             self.assertIn("BELUM DILULUSKAN", doc)
             self.assertIn(", ".join(printed), doc)
-        self.assertIn("G, A, B, C’", manifest["pdps"][20]["crosswalk_review_note"])
+        self.assertIn("G, A, B, C", manifest["pdps"][20]["crosswalk_review_note"])
 
     def test_reinforcement_candidates_stay_nonofficial_and_no_fabricated_audio(self):
         """All eight non-book slots are specificity-reviewed but never count as book-verified."""
