@@ -59,3 +59,10 @@ Enam draf RPH Tahun 4 PdP 001–006 dikemaskini dengan bukti contoh muka surat B
 
 ## Pembetulan Tahun 5 Unit 3 — 6 Nov 2026
 Tajuk Buku Teks Tahun 5 Unit 3 ialah **هيا نشترك في الأنشطة اللاصفية** (Aktiviti Kokurikulum / Luar Bilik Darjah), bukan **هيا نشترك في الأنشطة الصفية**. Bank aktiviti kini menggunakan contoh kelab/persatuan/unit beruniform. Disahkan silang menggunakan bahan PdP sekolah yang menyebut buku teks halaman 65 dan RPT 2024/25. Buku Teks Tahun 5 DBP/KPM 2020 masih sumber asas; halaman individu PdP untuk unit ini belum diluluskan. Indeks CSV, manifest, bibliografi dan bank aktiviti diseragamkan tanpa menukar status READY.
+
+## Semakan sumber 6 November 2026 — Tahun 5 PdP 001–012
+Buku teks DBP/KPM cetakan pertama 2020 ISBN 978-983-49-2838-4 dan DSKP asal dalam Drive telah dipadankan pada aras teks untuk 12 RPH draf Unit 1 `في المطبخ`. Setiap RPH mendapat rujukan halaman bercetak: **2, 2, 4+6, 3, 7–9, 10, 13–14, 15, 15, 14–15, 16, 19–20**. PBD dan tindakan guru-murid dikekalkan. Dialog serta tulisan PdP 007–011 diselaraskan dengan aktiviti buku.
+
+**Bendera belum selesai:** (1) PdP 002 kod 1.1.2 DSKP tiada pada latihan buku h.2; (2) PdP 004 buku h.3 berfokus huruf ب/ن sedangkan draf berfokus bunyi ث/س/ص; (3) PdP 012 contoh p19 berbeza daripada SP 1.4.1 yang tercetak di p20. Perlu pengesahan SK/SP dan pemetaan RPT individu, tidak boleh auto-READY.
+
+Fail bukti `audits/bahasa_arab_y5_pdp001_012_source_audit_20261106.json` menyimpan kod buku dan had pengesahan; pembetulan tidak menukar status **0 FINAL READY**. Word/PDF RTL A4 belum diuji.

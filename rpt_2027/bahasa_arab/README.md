@@ -33,3 +33,7 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 - Bukti halaman spesifik ini **tidak** menukar status keseluruhan kepada READY; Word/PDF RTL dan kelulusan guru belum dibuat.
 
 - Tahun 5 Unit 3 tajuk rasmi **هيا نشترك في الأنشطة اللاصفية** (kokurikulum), bukan **هيا نشترك في الأنشطة الصفية**. Sumber indeks dan bank aktiviti staging diselaraskan (6 Nov 2026).
+
+## Audit sumber awal Tahun 5 (6 Nov 2026)
+- 12 RPH PdP 001–012 bagi Unit 1 telah mendapat rujukan halaman buku dan catatan sokongan kod SP, `audits/bahasa_arab_y5_pdp001_012_source_audit_20261106.json`.
+- **Bendera:** PdP 002, 004, 012 perlu semakan kandungan/SP dengan lebih teliti. Semakan halaman sumber **tidak** membuktikan RPT 2027 atau kelulusan akhir.

@@ -121,6 +121,26 @@ def check() -> None:
         assert "**Bukti padanan buku teks yang dikenal pasti:**" in content
         assert "BELUM READY" in content
     assert m["years"]["4"]["first_six_source_evidence"] == "audits/bahasa_arab_y4_textbook_pdp001_006_evidence_20261106.json"
+    y5_source = json.loads((ROOT / "audits" / "bahasa_arab_y5_pdp001_012_source_audit_20261106.json").read_text(encoding="utf-8"))
+    assert y5_source["year"] == 5 and y5_source["all_rph_final_ready"] == 0
+    assert y5_source["pdp_source_reviewed"] == 12 and len(y5_source["pdp"]) == 12
+    assert y5_source["flagged_lessons"] == ["002","004","012"]
+    assert y5_source["release_blocked"] is True
+    assert [x["draft_sp"] for x in y5_source["pdp"]] == EXPECTED_SP[5]
+    assert all(x["ready"] is False and x["manual_approval"] is False for x in y5_source["pdp"])
+    assert y5_source["pdp"][1]["evidence_status"] == "SKILL_ONLY_SP_NOT_PRINTED_ON_REFERENCED_PAGE"
+    assert "1.1.2" not in y5_source["pdp"][1]["book_printed_codes"]
+    assert y5_source["pdp"][3]["evidence_status"] == "CODE_PRINTED_BUT_TEXT_EXERCISE_DIFFERS_FROM_DRAFT"
+    assert y5_source["pdp"][11]["evidence_status"] == "RELATED_EXAMPLE_P19_SP_1_4_1_PRINTED_P20"
+    assert m["years"]["5"]["source_evidence_pdp001_012"] == "audits/bahasa_arab_y5_pdp001_012_source_audit_20261106.json"
+    assert m["years"]["5"]["source_audit_unresolved"] == y5_source["flagged_lessons"]
+    assert m["years"]["5"]["textbook"]["source_page_verified"] is False
+    for i, record in enumerate(y5_source["pdp"],1):
+        rph = (SUBJECT / "year5" / f"lesson_{i:03d}.md").read_text(encoding="utf-8")
+        assert "**Audit buku teks (6 Nov 2026):**" in rph
+        assert "BELUM READY" in rph and record["draft_sp"] in rph
+        assert f"**{record['source_printed_pages']}**" in rph
+        assert record["evidence_status"] in rph
     print("PASSED: 20 unit indexes, 60 crosswalks, 60 RPH draft files, 15 banks.")
     print("RELEASE BLOCKED: 0 READY; page-level textbook, A4 RTL and manual review missing.")
 

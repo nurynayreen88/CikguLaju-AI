@@ -205,7 +205,14 @@
       "external_dskp_portal": "https://sites.google.com/moe-dl.edu.my/unitbahasaprogram-pso-2021/mata-pelajaran-unit-bahasa/bahasa-arab/sekolah-rendah/dskp",
       "external_rpt_2026_portal": "https://sites.google.com/moe-dl.edu.my/panitia-bahasa-arab-sksn/induk/rptdskp",
       "unit_3_title_corrected": "هيا نشترك في الأنشطة اللاصفية",
-      "unit_3_correction_note": "Judul sebenar Unit 3 BT KSSR Tahun 5 ialah aktiviti luar bilik darjah/kokurikulum (اللاصفية), bukan aktiviti dalam kelas (الصفية)."
+      "unit_3_correction_note": "Judul sebenar Unit 3 BT KSSR Tahun 5 ialah aktiviti luar bilik darjah/kokurikulum (اللاصفية), bukan aktiviti dalam kelas (الصفية).",
+      "source_evidence_pdp001_012": "audits/bahasa_arab_y5_pdp001_012_source_audit_20261106.json",
+      "page_source_reviewed_drafts": 12,
+      "source_audit_unresolved": [
+        "002",
+        "004",
+        "012"
+      ]
     },
     "6": {
       "dskp": {
