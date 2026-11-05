@@ -1,0 +1,20 @@
+name: Audit live Telegram RPH Word/PDF layout
+on:
+  push:
+    branches: [feature/telegram-web-shared-teacher-profile-20261105]
+    paths:
+      - tools/inspect_telegram_rph_layout_20261105.py
+      - .github/workflows/inspect-telegram-rph-layout.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  rph-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python tools/inspect_telegram_rph_layout_20261105.py
