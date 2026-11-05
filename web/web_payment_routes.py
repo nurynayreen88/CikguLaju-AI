@@ -110,7 +110,7 @@ def validated_rakan_status(catalog):
     """Only expose Telegram's verified one-decimal percentage, not capacity."""
     percent = catalog.get("progress_percentage") if isinstance(catalog, dict) else None
     open_enrollment = catalog.get("rakan_open") if isinstance(catalog, dict) else None
-    if (not isinstance(percent, str) or not re.fullmatch(r"(?:[0-9]{1,2}\\.[0-9]|100\\.0)%", percent)
+    if (not isinstance(percent, str) or not re.fullmatch(r"(?:[0-9]{1,2}\.[0-9]|100\.0)%", percent)
             or type(open_enrollment) is not bool):
         raise ProfileUnavailable("Peratus Rakan Pembangun belum dapat disahkan")
     value = float(percent[:-1])
