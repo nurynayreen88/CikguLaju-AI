@@ -388,6 +388,33 @@ class PSVSourceOrderTests(unittest.TestCase):
                 self.assertIn("1UA9arc9LrigHx-GccSJFpkTtqfskLFpg".lower(), body)
                 self.assertIn("**status:** draf", body)
 
+    def test_year4_original_pdf_artwork_repairs_remain_staging_only(self):
+        """Textbook-specific source, technique, student product and release gating."""
+        checks = {
+            5: ("mozek", "bersebelahan"), 6: ("paper quilling", "gulung"),
+            7: ("paper quilling", "batang aiskrim"), 8: ("gulungan", "imbangan"),
+            9: ("stensil", "kemeja-t"), 10: ("kemeja-t", "motif"),
+            11: ("kemeja-t", "stensilan"), 12: ("kemeja-t", "beg"),
+            13: ("bunga matahari", "penutup botol"),
+            14: ("penutup botol", "kelopak"), 15: ("bunga matahari", "kepala"),
+            16: ("gulungan tisu", "botol"), 17: ("cawan", "piring"),
+            18: ("cawan", "piring"), 19: ("pemegang", "piring"),
+            20: ("ms 4–5", "unit 1"), 21: ("ms 4–5", "unit 1"),
+            30: ("pualaman", "krim"), 31: ("pewarna makanan", "pelarut"),
+            32: ("pualaman", "kering"), 33: ("arnab", "tempat letak telefon"),
+            41: ("ms 54–55", "unit 10"), 42: ("ms 54–55", "unit 10"),
+        }
+        rows = read_csv(PSV / "RPT_PSV_Tahun_4_2027_DRAF.csv")
+        self.assertEqual(len(rows), 42)
+        for n, keywords in checks.items():
+            with self.subTest(pdp=n):
+                body = (ROOT / f"rph_standalone/psv/year4/lesson_{n:03d}.md").read_text(encoding="utf-8").lower()
+                self.assertTrue(all(k in body for k in keywords))
+                self.assertIn("1zpvbjcwogzvqjrsgpmsgd6iymmxcassu", body)
+                self.assertIn("**status:** draf", body)
+                self.assertEqual(rows[n-1]["Status"], "DRAF_SEMAK")
+        self.assertTrue(all(row["Pautan Buku Teks"] == "https://drive.google.com/file/d/1ZPvbJcwogZVQjRSgPMSgD6iymMXcASSU/view" for row in rows))
+
     def test_year5_bunga_kemboja_tekat_is_genuine_couching(self):
         rows = read_csv(PSV / "RPT_PSV_Tahun_5_2027_DRAF.csv")
         keywords = {

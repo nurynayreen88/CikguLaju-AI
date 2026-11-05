@@ -4,7 +4,7 @@
 **Tajuk:** Pameran penggal pertama  
 **SK:** 5.1  
 **SP:** 3.3.1; 3.3.2  
-**Buku Teks:** Projek Kesenian penggal pertama (aktiviti Seni Visual)  
+**Buku Teks:** Projek Kesenian Penggal Satu BT ms 4–5; pameran Seni Visual Unit 1–5 sahaja
 **BBM:** karya murid, kapsyen, pita mesra kertas, meja stabil  
 **Tempoh:** 60 minit
 
@@ -13,10 +13,11 @@ Murid dapat merancang persediaan pameran kumpulan dengan memilih sekurang-kurang
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan susunan galeri selamat.
-**Aktiviti 1 (15 minit):** Guru menunjukkan contoh susun atur galeri dan membimbing pemilihan lokasi, pembahagian tugas serta kapsyen; murid meneliti keselamatan laluan dan senarai karya.
-**Aktiviti 2 (25 minit) — Projek:** Murid memilih karya Unit terdahulu, menyiapkan dua kapsyen, pelan lokasi dan poster promosi.
-**Pengukuhan/Pentaksiran (10 minit):** Guru menilai pelan lokasi, tiga karya dipilih, dua kapsyen lengkap serta peranan ahli kumpulan sebagai bukti PBD.
+**Aktiviti 1 (15 minit):** Guru merujuk BT ms 4–5: pilih karya Unit 1–5, lokasi, kapsyen dan promosi, manakala komponen persembahan muzikal diasingkan.
+**Aktiviti 2 (25 minit) — Projek:** Murid memilih tiga karya Seni Visual Unit 1–5, menyiapkan dua kapsyen media/teknik, melakar pelan galeri dan membahagikan tugas.
+**Pengukuhan/Pentaksiran (10 minit):** Guru menilai tiga karya, kapsyen, pelan pameran serta tanggungjawab kumpulan.
 **Penutup (5 minit):** Murid membuat refleksi dan menyusun semula alatan.
 **Pembezaan:** Sediakan templat kapsyen; murid mahir menjadi pemandu galeri.
 **Keselamatan:** Elak paku tajam, jalur elektrik dan laluan sempit.
 **Rujukan:** [DSKP PSV 4](https://drive.google.com/file/d/1CpSVz8txeDqSnKM7OfOmrjnYH9HBmGy1/view); [Buku Teks](https://fliphtml5.com/jfuhh/hbrx/Buku_Teks_Pendidikan_Kesenian_Tahun_4/).
+**Buku Teks PDF asal:** https://drive.google.com/file/d/1ZPvbJcwogZVQjRSgPMSgD6iymMXcASSU/view
