@@ -95,8 +95,9 @@ def build_native_input(payload):
     The source itself is chosen on Web via verified_preview() and paid
     entitlement; this private endpoint only renders, never chooses a source.
     """
-    if not isinstance(payload,dict) or set(payload)!={
-            "subject","component","year","lesson","unit","teacher","layout","format"}:
+    legacy_keys={"subject","component","year","lesson","unit","teacher","layout","format"}
+    if not isinstance(payload,dict) or set(payload) not in (
+            legacy_keys, legacy_keys | {"source_digest"}):
         raise ValueError("Unexpected RPH input")
     subject=payload["subject"]
     component=payload["component"]
@@ -114,6 +115,17 @@ def build_native_input(payload):
         raise ValueError("Invalid subject/year")
     if type(lesson) is not int or not 1<=lesson<=200:
         raise ValueError("Invalid lesson")
+    # Web and Telegram deploy independently. A live Web must not render a
+    # stale lesson when the Telegram source/mapping was updated.
+    source_digest=payload.get("source_digest")
+    require_parity=os.environ.get("CIKGULAJU_WEB_RPH_SOURCE_PARITY_REQUIRED")=="1"
+    if source_digest is not None or require_parity:
+        if not isinstance(source_digest,str) or not re.fullmatch(r"[a-f0-9]{64}",source_digest):
+            raise ValueError("Missing source identity")
+        from web.rph_shared_source_identity import source_fingerprint
+        expected=source_fingerprint(year,subject,lesson,component)
+        if expected is None or not hmac.compare_digest(expected,source_digest):
+            raise ValueError("Web/Telegram RPH source mismatch")
     if not isinstance(unit,str) or not 0<len(unit)<=300:
         raise ValueError("Invalid unit")
     if fmt not in MIMES:
@@ -199,6 +211,46 @@ def build_native_input(payload):
         )[day.weekday()] if day else ""),
         "rph_students":"",
     }
+    # These are the exact selection markers set by Telegram callbacks. The
+    # PJPK/PSV native row adapters otherwise silently return the older generic
+    # document even though a source file exists on both servers.
+    if subject=="PJPK":
+        from web.pjpk_2027_preview_runtime import _source
+        selected=_source(year,component.lower(),lesson)
+        if selected is None:
+            raise ValueError("PJPK source not available in Telegram")
+        s.update({
+            "task":"quick_material","quick_material_flow":True,
+            "assessment_mode":"formative","rph_mode":"fast_rpt",
+            "pdp_no":lesson,"topic":selected["title"],
+            "unit":selected["title"],"unit_title":selected["title"],
+            "sk_code":selected["sk"][0],"sp_code":selected["sp"][0],
+            "selected_sk":selected["sk"][0],"selected_sp":selected["sp"][0],
+            "selected_sk_codes":list(selected["sk"]),"selected_sp_codes":list(selected["sp"]),
+            "grouped_sk_codes":list(selected["sk"]),"grouped_sp_codes":list(selected["sp"]),
+            "quick_content_v2391":selected["title"],
+            "_pjpk_2027_preview_selection":{
+                "year":year,"subject":component.lower(),"lesson":lesson},
+        })
+    elif subject=="PSV":
+        from web.psv_2027_provisional_runtime import _lesson,SESSION_KEY,SUBJECT
+        selected=_lesson(year,lesson)
+        if selected is None:
+            raise ValueError("PSV source not available in Telegram")
+        sk=selected["sk"].split("; ")
+        sp=selected["sp"].split("; ")
+        s.update({
+            "subject":SUBJECT,"task":"quick_material","quick_material_flow":True,
+            "assessment_mode":"formative","rph_mode":"fast_rpt",
+            "pdp_no":lesson,"topic":selected["title"],
+            "unit":selected["title"],"unit_title":selected["title"],
+            "sk_code":sk[0],"sp_code":sp[0],
+            "selected_sk":sk[0],"selected_sp":sp[0],
+            "selected_sk_codes":sk,"selected_sp_codes":sp,
+            "grouped_sk_codes":sk,"grouped_sp_codes":sp,
+            "quick_content_v2391":selected["title"],
+            SESSION_KEY:{"year":year,"number":lesson,"subject":SUBJECT},
+        })
     return s,ai_text,fmt
 
 
@@ -275,6 +327,22 @@ def create_native_rph_blueprint(runtime):
             state,rph_text,fmt=build_native_input(body)
         except (ValueError,TypeError,KeyError):
             return jsonify({"error":"Invalid source-backed RPH"}),400
+        # A source hash alone is not enough if the native Telegram overlay is
+        # disabled. Refuse a Web-only fallback to generic lesson content.
+        if (body["subject"]=="PJPK"
+                and not getattr(runtime,"PJPK_2027_RPH_INSTALLED",False)):
+            return jsonify({"error":"Telegram PJPK RPH source unavailable"}),503
+        if (body["subject"]=="MORAL"
+                and not getattr(runtime,"MORAL_80_RPH_ACTIVE",False)):
+            return jsonify({"error":"Telegram Moral RPH source unavailable"}),503
+        if (body["subject"]=="PSV"
+                and not getattr(runtime,"PSV_2027_PROVISIONAL_RPH_ACTIVE",False)):
+            return jsonify({"error":"Telegram PSV RPH source unavailable"}),503
+        if body["subject"]=="ENGLISH" and body["year"]==5:
+            from web.english_y5_standalone_runtime import approved_for_telegram
+            if not (getattr(runtime,"CIKGULAJU_ENGLISH_Y5_DRAFT_RPH_ACTIVE",False)
+                    and approved_for_telegram(body["lesson"])):
+                return jsonify({"error":"English Year 5 RPH not approved in Telegram"}),503
         unique="web"+uuid.uuid4().hex
         output=None
         try:
