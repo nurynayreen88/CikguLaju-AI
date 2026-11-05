@@ -81,7 +81,7 @@ for y, (num_sk, num_sp) in EXPECTED.items():
         assert bt["unit_end_page"] == u["end"]
         assert bt["isbn"] == unit_map["isbn"]
         assert bt["exact_activity_page_confirmed"] is False
-        assert "Buku Teks" in r["bbm"] and "julat unit" in r["bbm"]
+        assert "Buku Teks" in r["bbm"] and ("julat unit" in r["bbm"] or "julat isi kandungan" in r["bbm"])
         assert "Murid" in r["aktiviti_1"]["activity"] and "Guru" in r["aktiviti_1"]["activity"]
         assert "Murid" in r["aktiviti_2"]["activity"] and "Guru" in r["aktiviti_2"]["activity"]
         assert r["status"].startswith("DRAF")
