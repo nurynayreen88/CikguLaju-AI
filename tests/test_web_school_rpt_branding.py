@@ -74,6 +74,13 @@ class SchoolLogoTests(unittest.TestCase):
         self.assertTrue(all("/cikgulaju-materials/school-logos/812/logo.png"
                             in req.full_url for req in store.requests))
         self.assertEqual(store.requests[1].get_method(), "POST")
+        self.assertIn("/storage/v1/object/authenticated/cikgulaju-materials/",
+                      store.requests[0].full_url)
+        self.assertIn("/storage/v1/object/authenticated/cikgulaju-materials/",
+                      store.requests[2].full_url)
+        self.assertIn("/storage/v1/object/cikgulaju-materials/",
+                      store.requests[1].full_url)
+        self.assertNotIn("/object/authenticated/", store.requests[1].full_url)
 
     def test_upload_does_not_accept_untrusted_origin_or_anonymous(self):
         app = Flask(__name__)
