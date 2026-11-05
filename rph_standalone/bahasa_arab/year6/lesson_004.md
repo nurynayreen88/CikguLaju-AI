@@ -25,3 +25,5 @@
 **RPT rujukan 2026:** https://anyflip.com/zxzlm/bmaa/basic
 **Padanan buku teks:** Buku Teks Bahasa Arab Tahun 6 DBP/KPM (2021), Unit 1 halaman bercetak 2, latihan mendengar, mengulang dan membaca kata bunyi seakan sama: https://anyflip.com/gcmci/mxcs/basic. DSKP Tahun 6: https://anyflip.com/mhtcw/pstm/basic. Semakan individu belum diluluskan.
 **Status penerbitan:** DRAF_STAGING / BELUM READY. Bukan bahan Telegram/Web LIVE. Semakan halaman teks, pemaparan Arab RTL, Word/PDF A4 serta pengesahan manual masih diperlukan.
+
+**Semakan teks BT Tahun 6 (6 Nov 2026):** Buku Teks Tahun 6 DBP/KPM 2021 ISBN 978-983-49-3300-5, Unit 1 halaman bercetak **2**. Teks sumber: https://anyflip.com/gcmci/mxcs/basic. SP 2.1.2 dan contoh kata ع/أ/ح/ه dicetak pada h2; PdP 004 telah dimurnikan dahulu. Bukti ini menyemak aktiviti/kod buku tetapi tidak mengesahkan penjadualan RPT 2027 atau kelulusan individu. **DRAF / BELUM READY**.

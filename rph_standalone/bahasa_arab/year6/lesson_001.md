@@ -27,3 +27,5 @@
 **Status kawalan:** DRAF_STAGING; BELUM READY; BUKAN bahan LIVE atau bukti pengesahan penuh buku teks/DSKP. Jangan jana Word/PDF kepada pengguna sebelum semakan halaman dan ujian A4.
 
 **Rujukan RPT 2026:** https://anyflip.com/zxzlm/bmaa/basic
+
+**Semakan teks BT Tahun 6 (6 Nov 2026):** Buku Teks Tahun 6 DBP/KPM 2021 ISBN 978-983-49-3300-5, Unit 1 halaman bercetak **2**. Teks sumber: https://anyflip.com/gcmci/mxcs/basic. Fonetik ع/أ dan ح/ه; SP1.1.1 dicetak pada buku h2. Bukti ini menyemak aktiviti/kod buku tetapi tidak mengesahkan penjadualan RPT 2027 atau kelulusan individu. **DRAF / BELUM READY**.

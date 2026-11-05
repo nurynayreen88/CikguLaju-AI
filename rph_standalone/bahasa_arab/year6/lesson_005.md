@@ -25,3 +25,5 @@
 **RPT rujukan 2026:** https://anyflip.com/zxzlm/bmaa/basic
 **Status rujukan buku teks:** Buku teks Tahun 6 PDF imej; halaman khusus belum disahkan; jangan cipta nombor muka surat.
 **Status penerbitan:** DRAF_STAGING / BELUM READY. Bukan bahan Telegram/Web LIVE. Semakan halaman teks, pemaparan Arab RTL, Word/PDF A4 serta pengesahan manual masih diperlukan.
+
+**Semakan teks BT Tahun 6 (6 Nov 2026):** Buku Teks Tahun 6 DBP/KPM 2021 ISBN 978-983-49-3300-5, Unit 1 halaman bercetak **6–9**. Teks sumber: https://anyflip.com/gcmci/mxcs/basic. Latihan membaca peralatan kebersihan pada h6–9 termasuk SP2.2.1. Bukti ini menyemak aktiviti/kod buku tetapi tidak mengesahkan penjadualan RPT 2027 atau kelulusan individu. **DRAF / BELUM READY**.
