@@ -125,7 +125,7 @@ def _native_base():
     return namespace
 
 
-def audit_one(year, pdp, fmt, preview, parse_input, writer, word_output_dir=None):
+def audit_one(year, pdp, fmt, preview, parse_input, writer, word_output_dir=None, review_folder=None):
     meta = {item["label"]: item["value"] for item in preview["layout"]["header"]}
     payload = {
         "subject": "MUZIK", "component": None,
@@ -159,6 +159,8 @@ def audit_one(year, pdp, fmt, preview, parse_input, writer, word_output_dir=None
                 raise RuntimeError("Word section is not A4")
             if word_output_dir is not None:
                 shutil.copy2(path, word_output_dir / f"MZ-Y{year}-{pdp:02d}.docx")
+            if review_folder is not None and (year, pdp) in SELECTED:
+                shutil.copy2(path, review_folder / f"DRAF_SEMAKAN_MZ-Y{year}-{pdp:02d}.docx")
             return {"type": fmt, "bytes": path.stat().st_size, "tables": 3, "a4_section": a4,
                     "page_count": None}
         reader = PdfReader(str(path))
@@ -179,6 +181,8 @@ def audit_one(year, pdp, fmt, preview, parse_input, writer, word_output_dir=None
         box = reader.pages[0].mediabox
         if abs(float(box.width) - 595.28) > 3 or abs(float(box.height) - 841.89) > 3:
             raise RuntimeError("PDF size not A4")
+        if review_folder is not None and (year, pdp) in SELECTED:
+            shutil.copy2(path, review_folder / f"DRAF_SEMAKAN_MZ-Y{year}-{pdp:02d}.pdf")
         return {"type": fmt, "bytes": path.stat().st_size, "pages": pages,
                 "single_page": pages == 1, "a4": True}
     finally:
@@ -201,6 +205,16 @@ def main():
     if converter:
         word_source.mkdir()
         word_pdf.mkdir()
+    review_dir_raw = os.environ.get("MUSIC_REVIEW_SAMPLE_DIR", "").strip()
+    review_folder = Path(review_dir_raw).resolve() if review_dir_raw else None
+    if review_folder is not None:
+        review_folder.mkdir(parents=True, exist_ok=True)
+        (review_folder / "BACA_DULU_DRAF.txt").write_text(
+            "CIKGULAJU MUZIK — BAHAN SEMAKAN DALAMAN / DRAF, BUKAN UNTUK PENGGUNA.\\n"
+            "Diperoleh daripada fungsi asas penjana, bukan runtime penuh.\\n"
+            "Kod SP Tahun 4 PdP21/24, audio/lesen dan kelulusan kurikulum belum final.\\n"
+            "Jangan terbitkan, edar atau guna sebagai bahan FINAL READY.\\n",
+            encoding="utf-8")
     results = []
     for year, pdp in cases:
         preview = preview_mod.build_staging_preview(SOURCE, year, pdp)
@@ -209,7 +223,7 @@ def main():
                   "warnings": preview["warnings"]}
         for fmt in ("word", "pdf"):
             try:
-                record[fmt] = audit_one(year, pdp, fmt, preview, parser, native, word_source if converter else None)
+                record[fmt] = audit_one(year, pdp, fmt, preview, parser, native, word_source if converter else None, review_folder)
             except Exception as error:
                 record[fmt] = {"error": type(error).__name__ + ": " + str(error)}
         results.append(record)
@@ -245,6 +259,9 @@ def main():
                                 "single_page_count": None, "multi_page": [],
                                 "reason": type(error).__name__ + ": " + str(error)}
     scratch.cleanup()
+    review_files = sorted(p.name for p in review_folder.glob("DRAF_SEMAKAN_*") if p.is_file()) if review_folder else []
+    if review_folder is not None and len(review_files) != len(SELECTED) * 2:
+        failed.append({"review_sample_artifact": "Expected 10 review documents, got " + str(len(review_files))})
     report = {
         "scope": "STAGING_BASE_NATIVE_RENDER_SMOKE_NOT_LIVE",
         "fully_covered": args.all,
@@ -252,6 +269,7 @@ def main():
         "pdf_ok": sum("error" not in r["pdf"] for r in results),
         "single_page_pdf": sum(r["pdf"].get("single_page") is True for r in results),
         "word_page_audit": word_page_report,
+        "review_sample_files": review_files,
         "missing_explicit_success_criteria": [
             r["source_id"] for r in results if "NO_EXPLICIT_SUCCESS_CRITERIA" in r["warnings"]
         ],

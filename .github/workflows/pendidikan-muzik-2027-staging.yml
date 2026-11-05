@@ -39,7 +39,16 @@ jobs:
           sudo apt-get install -y -qq --no-install-recommends libreoffice-writer >/dev/null
           libreoffice --version
       - name: Audit 175 RPH Word/PDF menggunakan fungsi asas Telegram tanpa app import
+        env:
+          MUSIC_REVIEW_SAMPLE_DIR: ${{ runner.temp }}/muzik-review-samples
         run: python staging/pendidikan_muzik/rpt_rph_2027/native_base_render_smoke_staging.py --all
+      - name: Simpan 5 pasang contoh Word/PDF Muzik untuk semakan dalaman sahaja
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: muzik-lima-contoh-draf-word-pdf
+          path: ${{ runner.temp }}/muzik-review-samples
+          if-no-files-found: ignore
       - name: Simpan laporan cetakan asas Muzik CI (bukan bahan pengguna)
         if: always()
         uses: actions/upload-artifact@v4
