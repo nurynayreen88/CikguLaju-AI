@@ -81,6 +81,27 @@ class PSVSourceOrderTests(unittest.TestCase):
                 self.assertIn("**SK:** 5.1", content)
                 self.assertIn("**Status:** DRAF", content)
 
+    def test_year6_original_book_kampungku_sisik_ikan_lemon_cross_unit(self):
+        """Independent printed-book checks: p8-9 cactus, p50-51 fish scales, p54-55 lemon wallet."""
+        rows = read_csv(PSV / "RPT_PSV_Tahun_6_2027_DRAF.csv")
+        by_pdp = {row["PdP"]: row for row in rows}
+        cases = {
+            "001": ("8–9", ("kaktus", "silang pangkah", "jingga", "biru"), ("rupa rumah", "garisan laluan")),
+            "018": ("50–51", ("sisik ikan", "separa bulat", "kolaj"), ("motif lemon", "templat dompet")),
+            "020": ("54–55", ("lemon", "resis", "kad busa", "velkro"), ()),
+        }
+        for pdp, (pages, required, excluded) in cases.items():
+            with self.subTest(pdp=pdp):
+                row = by_pdp[pdp]
+                body = (ROOT / row["RPH"]).read_text(encoding="utf-8")
+                self.assertIn("ms " + pages, row["Rujukan BT ms (RPT 2026)"])
+                self.assertIn(row["Objektif"], body)
+                for word in required:
+                    self.assertIn(word, body.casefold())
+                for word in excluded:
+                    self.assertNotIn(word, body.casefold())
+                self.assertIn("**Status:** DRAF", body)
+
     def test_year6_pdp_post_exhibition_standard(self):
         rows = read_csv(PSV / "RPT_PSV_Tahun_6_2027_DRAF.csv")
         by_pdp = {row["PdP"]: row for row in rows}
