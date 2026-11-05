@@ -11,6 +11,7 @@ const payReceipt=document.getElementById("payment-receipt");
 const paySubmit=document.getElementById("payment-submit");
 const payQr=document.getElementById("payment-qr-image");
 const payQrNotice=document.getElementById("payment-qr-notice");
+const payDirectLink=document.getElementById("payment-direct-link");
 const payRefresh=document.getElementById("payment-refresh");
 let payCatalog=null;
 let payQrUrl=null;
@@ -36,6 +37,7 @@ async function paymentApi(path,options={}){
 }
 async function loadWebPayments(){
   payBusy=true;paymentReady();
+  payDirectLink.hidden=true;
   payStatus.textContent="Menyemak permohonan bayaran…";
   payMessage.textContent="";
   try{
@@ -50,6 +52,7 @@ async function loadWebPayments(){
     payPlan.disabled=false;
     const pending=data.status?.pending===true;
     payEntry.hidden=pending;
+    payDirectLink.hidden=true;
     if(pending){
       const status=data.status;
       payStatus.textContent="⌛ RESIT MENUNGGU PENGESAHAN ADMIN\n"
@@ -67,6 +70,7 @@ async function loadWebPayments(){
   }catch(error){
     payCatalog=null;
     payEntry.hidden=true;
+    payDirectLink.hidden=true;
     clearPaymentQr();
     payStatus.textContent="Status pembayaran belum dapat disemak dengan selamat.";
     payMessage.textContent=error.message+" Jangan buat bayaran baharu sehingga status boleh disahkan.";
@@ -96,7 +100,10 @@ payPlan.addEventListener("change",()=>{
   const p=payCatalog?.plans?.find(row=>row.code===payPlan.value);
   payDesc.textContent=p?(p.description+" • RM"+p.amount+" (DuitNow)"):"";
   paymentReady();
-  if(p)void loadPaymentQr();
+  // A plan must be selected and the backend must confirm no pending request
+  // before making the owner's direct payment link accessible.
+  payDirectLink.hidden=!p || payEntry.hidden;
+  if(p && !payEntry.hidden)void loadPaymentQr();
   else {clearPaymentQr();payQrNotice.textContent="Pilih pakej untuk melihat QR DuitNow.";}
 });
 payReceipt.addEventListener("change",()=>{

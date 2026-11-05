@@ -189,6 +189,11 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 .payment-entry #payment-submit:disabled{opacity:.48;cursor:not-allowed}
 #payment-message{font-weight:650;color:#28576b;white-space:pre-wrap}
 @media(max-width:760px){.payment-entry{padding:15px}.payment-qr{padding:13px}}
+.payment-direct-link{display:flex;flex-direction:column;align-items:center;gap:11px;margin:14px 0 0;max-width:480px;text-align:center}
+.payment-direct-link>a{display:inline-flex;align-items:center;justify-content:center;width:min(100%,350px);padding:14px 17px;border-radius:12px;background:#087568;color:white;font-weight:800;text-decoration:none;box-shadow:0 8px 18px #08756822}
+.payment-direct-link>a:hover{background:#075d54}
+.payment-direct-link>a:focus-visible{outline:3px solid #e7a720;outline-offset:4px}
+.payment-direct-link>.notice{max-width:435px;line-height:1.55}
 </style>
 </head>
 <body>
@@ -281,7 +286,13 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <label for="payment-plan">Pilih pakej</label>
   <select id="payment-plan" disabled><option value="">Memuatkan pakej…</option></select>
   <p id="payment-plan-description" class="notice"></p>
-  <div class="payment-qr"><img id="payment-qr-image" alt="Kod QR DuitNow untuk bayaran CikguLaju" hidden><p id="payment-qr-notice" class="notice">Pilih pakej untuk melihat QR rasmi.</p></div>
+  <div class="payment-qr"><img id="payment-qr-image" alt="Kod QR DuitNow untuk bayaran CikguLaju" hidden><p id="payment-qr-notice" class="notice">Pilih pakej untuk melihat QR rasmi.</p>
+    <div id="payment-direct-link" class="payment-direct-link" hidden>
+      <span>Bayar menggunakan telefon? Buka link Touch ’n Go tanpa mengimbas QR.</span>
+      <a id="payment-tng-link" href="https://payment.tngdigital.com.my/sc/bDLocm2K1n" target="_blank" rel="noopener noreferrer external">Buka Link Bayaran Touch ’n Go</a>
+      <span class="notice">Semak nama penerima dan bayar jumlah pakej yang dipilih. Selepas membuat bayaran, kembali ke halaman ini untuk hantar resit.</span>
+    </div>
+  </div>
   <label for="payment-receipt">Muat naik resit bayaran</label>
   <input id="payment-receipt" type="file" accept=".jpg,.jpeg,.png,.webp,.pdf,image/jpeg,image/png,image/webp,application/pdf">
   <p class="notice">PDF atau gambar resit, maksimum 4 MB. Pastikan jumlah bayaran sepadan dengan pakej. Resit baharu akan dihantar kepada bot sebagai bukti untuk semakan admin.</p>
@@ -615,6 +626,6 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/teacher-profile.js?v=payment-refresh-20261105"></script>
-<script src="/assets/web-payment.js?v=proof-first-20261105"></script>
+<script src="/assets/web-payment.js?v=payment-link-20261106"></script>
 </body>
 </html>

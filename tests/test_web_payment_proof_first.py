@@ -150,6 +150,15 @@ class PaymentWebTests(unittest.TestCase):
         self.assertIn('id="payment-refresh"',html)
         self.assertIn("/api/web/payment/receipt",js)
         self.assertNotIn("status=\"approved\"",js)
+        self.assertIn('id="payment-direct-link"',html)
+        self.assertIn('id="payment-tng-link"',html)
+        self.assertIn('href="https://payment.tngdigital.com.my/sc/bDLocm2K1n"',html)
+        self.assertIn('rel="noopener noreferrer external"',html)
+        self.assertIn('id="payment-direct-link" class="payment-direct-link" hidden',html)
+        self.assertIn('payDirectLink.hidden=!p || payEntry.hidden;',js)
+        self.assertIn('payDirectLink.hidden=true;',js)
+        self.assertIn('v=payment-link-20261106',html)
+        self.assertIn("hantar resit",html.lower())
 
 
 if __name__=="__main__":
