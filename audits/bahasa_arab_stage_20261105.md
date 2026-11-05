@@ -90,3 +90,8 @@ Semua 12 draf Tahun 3 Unit 1 menerima catatan halaman bercetak Buku Teks DBP/KPM
 - 12 draf RPH Tahun 2 Unit 1 kini ada rujukan halaman bercetak secara spesifik: **2+4; 2+4; 3+5; 2+4; 3+5; 6; 6; 8; 8; 9–11; 17; 12–14**. Pemetaan SK/SP dibanding dengan PDF DSKP Tahun 2 yang mengekalkan identifier Arab dengan betul: https://cdn1.get-qr.com/files/67c8ee65569c40f8cc02dedb/1741221735772-edfd2d1acbd2cca80728a1fbd9edcc66.pdf.
 - **Empat bendera OCR kod buku** PdP 002,004,010,011. Pemadanan kemahiran didapati relevan dan SP DSKP sah, tetapi jangan dakwa cetakan SP dalam buku telah diluluskan sehingga semak halaman imej asal.
 - Fail bukti `audits/bahasa_arab_y2_pdp001_012_text_source_audit_20261106.json`. Sekarang **60/60 draf awal mendapat semakan teks sumber**; ini TIDAK bermakna tahun lengkap / siap diterbitkan. **0 FINAL READY** dan 15 unit Unit2–4 belum RPH.
+
+## Tahun 4 Unit 2: 12 RPH individu tambahan (6 Nov 2026)
+- `rph_standalone/bahasa_arab/year4/lesson_013.md` hingga `lesson_024.md` disediakan berdasarkan latihan Buku Teks asal DBP 2019, Unit 2 **من في المدرسة؟** halaman bercetak 30,30,31,31,32,32,34,36,38,42,44,48 dan kod SP pada setiap latihan.
+- Setiap RPH mempunyai set induksi, aktiviti utama (tindakan guru+murid), BBM, PBD, penutup, refleksi dan sumber. Fail peta cadangan `rpt_2027/bahasa_arab/year4_unit2_pdp013_024_DRAF.csv`; bukti `audits/bahasa_arab_y4_unit2_pdp013_024_text_source_audit_20261106.json`.
+- **Penjadualan 013–024 ialah cadangan**, bukan jumlah PdP Unit 2 rasmi. Halaman 49–56 masih belum dipetakan. Keseluruhan kini **72 RPH draf**, 15 bank unit dan **0 FINAL READY**.

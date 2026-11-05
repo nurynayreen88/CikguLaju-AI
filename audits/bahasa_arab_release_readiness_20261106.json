@@ -5,10 +5,10 @@
   "pr_url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/336",
   "completed": {
     "unit_indexes": 20,
-    "draft_rph": 60,
+    "draft_rph": 72,
     "unit2_4_activity_banks": 15,
     "draft_crosswalk": 60,
-    "source_page_draft_reviewed": 60,
+    "source_page_draft_reviewed": 72,
     "preliminary_year6_page_candidates": 0,
     "one_page_A4_docx_pdf_ci_verified": true,
     "render_check_ci": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42115776091",
@@ -16,7 +16,10 @@
     "pdf_generated_in_ci": 60,
     "year6_text_source_reviewed": 12,
     "year2_text_source_reviewed": 12,
-    "year2_sp_book_ocr_ambiguous": 4
+    "year2_sp_book_ocr_ambiguous": 4,
+    "year4_unit2_candidate_rph": 12,
+    "year4_unit2_page_text_covered_range": "30–48",
+    "verified_a4_render_for_new_12": false
   },
   "release_checks": [
     {
@@ -32,17 +35,17 @@
     {
       "id": "full_pdp_coverage",
       "status": "BLOCKED",
-      "detail": "Only first 12 PdP per year are authored as RPH draft, all Unit 1. Unit 2–4 have only activity banks. No validated annual PdP counts."
+      "detail": "Unit1: 12 RPH drafts per year (60), plus Year4 Unit2: 12 additional provisional PdP013–024 covering printed pages 30–48 only. Remaining 14 units have no RPH individually; Year4 Unit2 pages 49–56 remain unmapped. Annual PdP totals unverified."
     },
     {
       "id": "sk_sp",
       "status": "PARTIAL",
-      "detail": "Year 2–6 60 draft SP codes were crosschecked against DSKP/page-text context. Four Year 2 textbook printed-SP identifiers are unclear in OCR (002,004,010,011); none teacher-approved."
+      "detail": "72 candidate RPH codes associated with source text. Four Year2 SP prints remain ambiguous; 12 new Year4 Unit2 source-page codes checked at text level. No teacher approvals or 2027 RPT sequence signoff."
     },
     {
       "id": "textbook_page_to_pdp",
       "status": "PARTIAL",
-      "detail": "All 60 Unit 1 draft RPH now carry source-page textual evidence (12 per year), but four Year 2 book-SP OCR codes unresolved; visual, 2027 annual sequence and manual approvals outstanding."
+      "detail": "72 draft RPH carry printed-page textual source evidence (Year2–6 first 12 each, plus Year4 Unit2 12). Year4 Unit2 only partially covers book, and no visual or manual final validation completed."
     },
     {
       "id": "rpt_2027_group_A_B",
@@ -52,7 +55,7 @@
     {
       "id": "word_pdf_programmatic_a4",
       "status": "PASS_TECHNICAL_ONLY",
-      "detail": "CI generated 60 DOCX and 60 PDFs, each PDF one A4 page; automated Arabic and structure checks passed; individual visual proofreading not complete."
+      "detail": "Previous 60 DOCX/PDF one-page A4 passed. A4 render test for expanded 72 drafts is scheduled in CI; do not label 72 passed yet."
     },
     {
       "id": "manual_pedagogic_approval",
@@ -63,6 +66,11 @@
       "id": "telegram_web_runtime_parity",
       "status": "NOT_STARTED",
       "detail": "Staging RPH generator is offline, not connected to runtime; no changes to production apps, SQLite/Supabase user data."
+    },
+    {
+      "id": "year4_unit2_partial",
+      "status": "PARTIAL",
+      "detail": "12 draft lessons 013–024 linked to textbook pages 30–48, but no approved annual RPT indexing and rest of Unit2 pages 49–56 unallocated."
     }
   ],
   "years": [
@@ -96,14 +104,16 @@
       "year": 4,
       "units": 4,
       "unit1_draft_rph": 12,
-      "source_page_reviewed_rph": 12,
+      "source_page_reviewed_rph": 24,
       "preliminary_mapping_only": 0,
       "unwritten_units": [
-        2,
         3,
         4
       ],
-      "textbook_issue": "Year 4 source pages reviewed as text; no final approved RPT year-course mapping or manual teacher sign-off."
+      "textbook_issue": "Year4 Unit1 12 source-reviewed drafts plus 12 Unit2 provisional drafts cover BT pp30–48 only; pages 49–56 remain, exact annual RPT sequence and manual pedagogical signoff not confirmed.",
+      "incomplete_units": [
+        2
+      ]
     },
     {
       "year": 5,

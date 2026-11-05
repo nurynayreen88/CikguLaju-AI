@@ -58,3 +58,8 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 - Buku Teks DBP 2017 dengan ISBN 978-983-49-1589-6 ditemui secara teks boleh baca: https://anyflip.com/slrpb/qzcr/basic.
 - PdP001–012 menerima nota halaman sumber cetak dan kod DSKP. Empat identifier SP pada **cetakan buku** masih kabur dalam OCR: 002,004,010,011; DSKP kod disahkan.
 - **60/60 draf Unit 1** Tahun 2–6 kini telah diaudit pada tahap teks sumber dan mempunyai bukti halaman. Ini ialah audit awal satu unit sahaja, bukan liputan tahunan penuh atau FINAL READY.
+
+## Tambahan Tahun 4 Unit 2 (6 Nov 2026)
+- 12 RPH baharu draf PdP 013–024 berdasarkan buku asal 2019 dan DSKP Tahun 4: dengar/kenal ال, kosa kata warga sekolah, baca/tulis kata, dialog dan ayat bersambung.
+- Lihat `rpt_2027/bahasa_arab/year4_unit2_pdp013_024_DRAF.csv` dan `audits/bahasa_arab_y4_unit2_pdp013_024_text_source_audit_20261106.json`.
+- Unit 2 masih SEPARA; halaman 49–56 dan agihan tahunan belum diluluskan. Kini **72 RPH draf**, bukannya 72 bahan READY. Ujian Word/PDF perlu dijalankan semula untuk 72 fail.

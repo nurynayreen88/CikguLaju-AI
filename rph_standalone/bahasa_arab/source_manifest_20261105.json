@@ -190,12 +190,17 @@
       "external_rpt_2026_portal": "https://sites.google.com/moe-dl.edu.my/panitia-bahasa-arab-sksn/induk/rptdskp",
       "first_six_source_evidence": "audits/bahasa_arab_y4_textbook_pdp001_006_evidence_20261106.json",
       "source_evidence_pdp007_012": "audits/bahasa_arab_y4_pdp007_012_source_audit_20261106.json",
-      "source_reviewed_drafts_total": 12,
+      "source_reviewed_drafts_total": 24,
       "source_review_unresolved": [],
       "source_review_remediated": [
         "012"
       ],
-      "source_review_remediation_status": "TEXTBOOK_DIALOG_ALIGNED_STILL_AWAITING_RPT_2027_AND_RELEASE_QA"
+      "source_review_remediation_status": "TEXTBOOK_DIALOG_ALIGNED_STILL_AWAITING_RPT_2027_AND_RELEASE_QA",
+      "unit2_candidate_rph_count": 12,
+      "unit2_candidate_rph_pdp_range": "013–024",
+      "unit2_source_evidence_file": "audits/bahasa_arab_y4_unit2_pdp013_024_text_source_audit_20261106.json",
+      "unit2_coverage_status": "DRAF_PARTIAL_ONLY_PAGES_30_48__REMAINING_PAGES_49_56_NOT_MAPPED",
+      "unit2_release_approved": false
     },
     "5": {
       "dskp": {
@@ -335,7 +340,7 @@
     "Ujian integrasi, hash, FK/orphan dan tiada penggantian data sedia ada",
     "Kelulusan manual individu dan pengaktifan hanya selepas CI lulus"
   ],
-  "stage_progress_note": "60 RPH DRAF (PdP 001–012, 12 setiap tahun); 20 unit dalam indeks, 15 bank aktiviti Unit 2–4. Semua DRAF; 0 FINAL READY.",
+  "stage_progress_note": "60 RPH DRAF (PdP 001–012, 12 setiap tahun); 20 unit dalam indeks, 15 bank aktiviti Unit 2–4. Semua DRAF; 0 FINAL READY. | 6 Nov 2026: 12 additional Year4 Unit2 provisional drafts PdP013–024, non-final.",
   "additional_unit_activity_bank_count": 15,
   "additional_unit_activity_bank_status": "DRAF_SEMAK_BELUM_READY",
   "primary_crosswalk_file": "rpt_2027/bahasa_arab/pdp_001_012_DRAF.csv",
@@ -343,5 +348,6 @@
   "external_source_index_google_doc": "https://docs.google.com/document/d/1z5rz0j-xtIwm1JF8-p0sc5BQvk8q_W_UOZR3yFAnl7A/edit?usp=drivesdk",
   "external_source_registry_path": "audits/bahasa_arab_external_reference_index_20261105.json",
   "external_source_status": "WEB_REFERENCE_DISCOVERED; link cataloged in Drive only, no textbook PDFs copied from public internet",
-  "bibliography_file": "audits/bahasa_arab_buku_teks_bibliography_20261105.json"
+  "bibliography_file": "audits/bahasa_arab_buku_teks_bibliography_20261105.json",
+  "total_provisional_rph_count": 72
 }
