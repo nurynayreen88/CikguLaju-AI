@@ -369,6 +369,19 @@ def create_blueprint():
                 "code": "RPH_TELEGRAM_LAYOUT_INCOMPLETE"}), 503)
         return result, None
 
+    @bp.get("/api/web/rph/availability")
+    def availability():
+        """Confirm a selected, paid RPH has a complete source-backed layout.
+
+        This is a lightweight readiness check, not a preview: never send
+        teaching content, server-side source paths, or download tokens.
+        The real Word/PDF routes repeat all checks when the user downloads.
+        """
+        selected, err = selected_rph()
+        if err is not None:
+            return err
+        return jsonify({"available": True, "generator": "telegram-native"})
+
     @bp.get("/api/web/rph/preview")
     def preview():
         selected, err = selected_rph()
