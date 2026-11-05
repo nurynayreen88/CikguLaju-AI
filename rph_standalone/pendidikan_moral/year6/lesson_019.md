@@ -17,9 +17,9 @@ Murid menyiapkan tugasan **SP 7.1** (Menyenaraikan contoh amalan cinta akan nega
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Tugasan 7.1:** Guru membentangkan situasi **Murid menjelaskan cara menunjukkan cinta akan negara dalam kehidupan** dan menyediakan gambar Jalur Gemilang, Rukun Negara dan sambutan kebangsaan menurut cadangan aktiviti DSKP SK 7.0 (bukan aktiviti buku teks Unit 7). Murid melaksanakan arahan **“Menyenaraikan contoh amalan cinta akan negara.”** dengan menghasilkan **senarai tiga contoh atau perkara yang tepat**; pasangan menyemak fakta, bukan hanya memilih tindakan baik atau buruk. Guru merekod satu respons individu.
+**Aktiviti 1 (20 minit) — Baca laman sosial patriotik:** Guru memaparkan buku teks Semakan 2017 m/s 62–63 'Sebarkan Semangat Cinta akan Negara', termasuk sepanduk Hari Kebangsaan, penanda buku dan lawatan muzium. Murid menyenaraikan tiga amalan cinta akan negara dengan bukti daripada perbualan (SP 7.1); guru menyemak jawapan individu.
 
-**Aktiviti 2 (20 minit) — Tugasan 7.2:** Guru menukar sudut situasi kepada tindakan atau akibat yang boleh diperhatikan. Murid melaksanakan arahan **“Menghuraikan cara memupuk amalan cinta akan negara.”** dan menyediakan **dua huraian yang disokong sebab** berdasarkan contoh yang relevan dengan unit. Murid membentangkan hasil dan memperbaiki jawapan selepas pertanyaan lanjut guru.
+**Aktiviti 2 (20 minit) — Cara memupuk patriotisme:** Guru merujuk teks m/s 62–64 tentang menghargai tokoh negara, menyertai sambutan dan menjaga perpaduan. Murid menghasilkan peta dua amalan dan huraian cara melaksanakannya di sekolah tanpa paksaan berkongsi pengalaman peribadi (SP 7.2). Guru meminta sebab yang menunjukkan hubungan dengan cinta akan negara.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Guru mengutip hasil individu: **senarai tiga contoh atau perkara yang tepat** untuk SP 7.1 dan **dua huraian yang disokong sebab** untuk SP 7.2; semak ketepatan makna, bukti dan kaitan dengan nilai **Kasih sayang**. Murid membetulkan satu jawapan selepas maklum balas.
 
@@ -27,4 +27,8 @@ Murid menyiapkan tugasan **SP 7.1** (Menyenaraikan contoh amalan cinta akan nega
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [buku teks Tahun 6](https://drive.google.com/file/d/12YjwUWy6DdVsqP5_azEp987jfvZ6PROo/view) — Buku Teks Unit 7 m/s 59–68 berfokus kasih sayang terhadap alam sekitar, bukan SK 7.0 Cinta Akan Negara; langkah ini berdasarkan DSKP, bukan padanan halaman buku teks; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Pengesahan sumber Semakan 2017 (2026-11-05):** Unit 7, m/s 62–64 (halaman flipbook 72–74), merujuk Laman sosial cinta negara, sepanduk kebangsaan dan lawatan muzium. Rujukan aktiviti dan kod SP buku telah disemak terhadap versi teks digital edisi semakan; belum diuji kepada kelas sebenar.
+
+**Catatan perbezaan edisi:** Buku Teks Unit 7 edisi KSSR lama memfokus 'Sayangilah Alam, Hargai Kehidupan'; versi Semakan 2017 yang digunakan ialah 'Cinta Akan Negara'. Buku PDF lama dalam Drive tidak digunakan sebagai sumber halaman bagi PdP ini.
+
+**Rujukan:** [DSKP SK Tahun 6](https://drive.google.com/file/d/1lE4-LxIbHQu1-oe-CgI_6sHBU54FYKUA/view); [Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017](https://fliphtml5.com/sbinx/haph/) — Unit 7, m/s bercetak 62–64 (flipbook halaman 72–74) ialah sumber aktiviti Semakan 2017 yang sepadan dengan DSKP; [RPT SK 2026](https://www.scribd.com/document/978981614/Rpt-Pmrl-Thn-6-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
