@@ -29,6 +29,7 @@ Murid dapat **mempraktikkan dua tindakan menerima dan menghormati kepelbagaian k
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Semakan visual sumber:** m/s 2–4 (PDF 5–7); aktiviti di atas dirujuk pada halaman buku teks tersebut. Halaman SP lain dalam unit belum diaudit.
 
-**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — halaman belum dipadankan; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 1, m/s 4–8 (PDF 7–11). Halaman diperiksa: Program kebajikan, contoh ajaran agama yang diamalkan dan Uji Diri kesan harmoni. PdP ialah aktiviti olahan berdasarkan kandungan asal, bukan petikan verbatim atau bukti amalan murid di luar kelas.
+
+**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — Unit 1, m/s 4–8 (PDF 7–11) diperiksa secara visual untuk aktiviti PdP ini; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

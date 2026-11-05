@@ -27,6 +27,7 @@ Murid dapat **menjelaskan tiga ciri masyarakat** dan **mengenal pasti dua amalan
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Semakan visual buku teks untuk PdP 001:** Unit 1, m/s 2–4 (PDF 5–7) **Keunikan Masyarakatku / Ajaran Agama Tunjang Masyarakatku** diperiksa.
 
-**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — halaman belum dipadankan; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 1, m/s 2–4 (PDF 5–7). Halaman diperiksa: Ciri hidup berkelompok, interaksi masyarakat dan kegiatan kebajikan merentas kepercayaan. PdP ialah aktiviti olahan berdasarkan kandungan asal, bukan petikan verbatim atau bukti amalan murid di luar kelas.
+
+**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — Unit 1, m/s 2–4 (PDF 5–7) diperiksa secara visual untuk aktiviti PdP ini; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

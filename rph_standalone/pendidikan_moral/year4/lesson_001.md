@@ -27,6 +27,7 @@ Murid dapat **memberikan dua contoh amalan agama/kepercayaan yang dihormati dala
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Semakan visual buku teks untuk PdP 001:** Unit 1, m/s 2–3 (PDF 8–9) tentang amalan agama dan kepercayaan sesama jiran diperiksa. Contoh aktiviti ialah cadangan PdP, bukan petikan aktiviti rasmi.
 
-**Rujukan:** [DSKP SK Tahun 4](https://drive.google.com/file/d/1nNUL3EA3TTtuq9mG5fYBpbnGTJuOw-pd/view); [buku teks Tahun 4](https://drive.google.com/file/d/1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j/view) — halaman belum dipadankan; [RPT SK 2026](https://id.scribd.com/document/1032116415/RPT-PMRL-THN-4-SK-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 1, m/s 2–3 (PDF 8–9). Halaman diperiksa: Gambar jiran mengamalkan kepercayaan berlainan, menjaga kebersihan dan menghormati ruang jiran. PdP ialah aktiviti olahan berdasarkan kandungan asal, bukan petikan verbatim atau bukti amalan murid di luar kelas.
+
+**Rujukan:** [DSKP SK Tahun 4](https://drive.google.com/file/d/1nNUL3EA3TTtuq9mG5fYBpbnGTJuOw-pd/view); [buku teks Tahun 4](https://drive.google.com/file/d/1P1q2NOrmdNmUaYCu0o8SyNE94P6vx28j/view) — Unit 1, m/s 2–3 (PDF 8–9) diperiksa secara visual untuk aktiviti PdP ini; [RPT SK 2026](https://id.scribd.com/document/1032116415/RPT-PMRL-THN-4-SK-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
