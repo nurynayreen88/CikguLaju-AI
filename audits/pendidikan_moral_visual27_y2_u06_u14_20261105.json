@@ -1,0 +1,487 @@
+{
+  "status": "TEXTBOOK_ACTIVITY_PAGE_VISUAL_VERIFIED_27_CORE_Y2; NOT_FINAL_READY",
+  "date": "2026-11-05",
+  "method": "Visual inspection of all Year 2 book scans for Units 6–14. Each RPH rewritten to connect its two teacher/pupil activities to the illustrated page tasks. Automated ledger checks separately confirm pages and DSKP SP.",
+  "source_book_file_id": "1HfrXEKYWSDvjClcArAwdCR5yglIRip2b",
+  "source_pdf_sha256": "482d032d82a5f3ee8e718da5d7ca3a335c156b8cef63987dd399e76ae3b8dba0",
+  "scope": "27 Year2 core RPH, units 6-14 only. Supplementary RPH have NOT been visually verified against textbook activity pages.",
+  "records": [
+    {
+      "year": 2,
+      "unit": 6,
+      "lesson": 16,
+      "printed": [
+        33,
+        35
+      ],
+      "pdf": [
+        42,
+        44
+      ],
+      "sp_codes": [
+        "6.1",
+        "6.2"
+      ],
+      "evidence": "Puisi hormati keluarga; gambar adab keluarga; cerita Nino; Uji Diri"
+    },
+    {
+      "year": 2,
+      "unit": 6,
+      "lesson": 17,
+      "printed": [
+        36,
+        38
+      ],
+      "pdf": [
+        45,
+        47
+      ],
+      "sp_codes": [
+        "6.3",
+        "6.4"
+      ],
+      "evidence": "Puisi hormati keluarga; gambar adab keluarga; cerita Nino; Uji Diri"
+    },
+    {
+      "year": 2,
+      "unit": 6,
+      "lesson": 18,
+      "printed": [
+        39,
+        40
+      ],
+      "pdf": [
+        48,
+        49
+      ],
+      "sp_codes": [
+        "6.5"
+      ],
+      "evidence": "Puisi hormati keluarga; gambar adab keluarga; cerita Nino; Uji Diri"
+    },
+    {
+      "year": 2,
+      "unit": 7,
+      "lesson": 19,
+      "printed": [
+        41,
+        43
+      ],
+      "pdf": [
+        50,
+        52
+      ],
+      "sp_codes": [
+        "7.1",
+        "7.2"
+      ],
+      "evidence": "Anugerah Keluarga Bahagia; dialog Keluargaku Syurgaku; Bunga Kesayangan; permainan Jelajah Dunia; Uji Diri"
+    },
+    {
+      "year": 2,
+      "unit": 7,
+      "lesson": 20,
+      "printed": [
+        44,
+        45
+      ],
+      "pdf": [
+        53,
+        54
+      ],
+      "sp_codes": [
+        "7.3",
+        "7.4"
+      ],
+      "evidence": "Anugerah Keluarga Bahagia; dialog Keluargaku Syurgaku; Bunga Kesayangan; permainan Jelajah Dunia; Uji Diri"
+    },
+    {
+      "year": 2,
+      "unit": 7,
+      "lesson": 21,
+      "printed": [
+        46,
+        48
+      ],
+      "pdf": [
+        55,
+        57
+      ],
+      "sp_codes": [
+        "7.5"
+      ],
+      "evidence": "Anugerah Keluarga Bahagia; dialog Keluargaku Syurgaku; Bunga Kesayangan; permainan Jelajah Dunia; Uji Diri"
+    },
+    {
+      "year": 2,
+      "unit": 8,
+      "lesson": 22,
+      "printed": [
+        49,
+        51
+      ],
+      "pdf": [
+        58,
+        60
+      ],
+      "sp_codes": [
+        "8.1",
+        "8.2"
+      ],
+      "evidence": "Pantun keluarga adil; kisah Ray membahagi tugas; Roda Adil; tiga situasi adil; Uji Diri"
+    },
+    {
+      "year": 2,
+      "unit": 8,
+      "lesson": 23,
+      "printed": [
+        52,
+        53
+      ],
+      "pdf": [
+        61,
+        62
+      ],
+      "sp_codes": [
+        "8.3",
+        "8.4"
+      ],
+      "evidence": "Pantun keluarga adil; kisah Ray membahagi tugas; Roda Adil; tiga situasi adil; Uji Diri"
+    },
+    {
+      "year": 2,
+      "unit": 8,
+      "lesson": 24,
+      "printed": [
+        54,
+        56
+      ],
+      "pdf": [
+        63,
+        65
+      ],
+      "sp_codes": [
+        "8.5"
+      ],
+      "evidence": "Pantun keluarga adil; kisah Ray membahagi tugas; Roda Adil; tiga situasi adil; Uji Diri"
+    },
+    {
+      "year": 2,
+      "unit": 9,
+      "lesson": 25,
+      "printed": [
+        57,
+        59
+      ],
+      "pdf": [
+        66,
+        68
+      ],
+      "sp_codes": [
+        "9.1",
+        "9.2"
+      ],
+      "evidence": "Situasi menjaga nama baik; surat ayah; Kotak Keberanian; dialog menegur salah laku; Uji Diri"
+    },
+    {
+      "year": 2,
+      "unit": 9,
+      "lesson": 26,
+      "printed": [
+        60,
+        61
+      ],
+      "pdf": [
+        69,
+        70
+      ],
+      "sp_codes": [
+        "9.3",
+        "9.4"
+      ],
+      "evidence": "Situasi menjaga nama baik; surat ayah; Kotak Keberanian; dialog menegur salah laku; Uji Diri"
+    },
+    {
+      "year": 2,
+      "unit": 9,
+      "lesson": 27,
+      "printed": [
+        62,
+        64
+      ],
+      "pdf": [
+        71,
+        73
+      ],
+      "sp_codes": [
+        "9.5"
+      ],
+      "evidence": "Situasi menjaga nama baik; surat ayah; Kotak Keberanian; dialog menegur salah laku; Uji Diri"
+    },
+    {
+      "year": 2,
+      "unit": 10,
+      "lesson": 28,
+      "printed": [
+        65,
+        67
+      ],
+      "pdf": [
+        74,
+        76
+      ],
+      "sp_codes": [
+        "10.1",
+        "10.2"
+      ],
+      "evidence": "Dikir Barat Kejujuran; kisah robot Dibo; Permainan Gelung Kejujuran; Kejujuran Amalan Keluarga; Uji Diri"
+    },
+    {
+      "year": 2,
+      "unit": 10,
+      "lesson": 29,
+      "printed": [
+        68,
+        70
+      ],
+      "pdf": [
+        77,
+        79
+      ],
+      "sp_codes": [
+        "10.3",
+        "10.4"
+      ],
+      "evidence": "Dikir Barat Kejujuran; kisah robot Dibo; Permainan Gelung Kejujuran; Kejujuran Amalan Keluarga; Uji Diri"
+    },
+    {
+      "year": 2,
+      "unit": 10,
+      "lesson": 30,
+      "printed": [
+        71,
+        72
+      ],
+      "pdf": [
+        80,
+        81
+      ],
+      "sp_codes": [
+        "10.5"
+      ],
+      "evidence": "Dikir Barat Kejujuran; kisah robot Dibo; Permainan Gelung Kejujuran; Kejujuran Amalan Keluarga; Uji Diri"
+    },
+    {
+      "year": 2,
+      "unit": 11,
+      "lesson": 31,
+      "printed": [
+        73,
+        75
+      ],
+      "pdf": [
+        82,
+        84
+      ],
+      "sp_codes": [
+        "11.1",
+        "11.2"
+      ],
+      "evidence": "Kacuma yang rajin bercucuk tanam; Sang Kancil yang gigih; keluarga Ades; Kolam Impian; Uji Diri"
+    },
+    {
+      "year": 2,
+      "unit": 11,
+      "lesson": 32,
+      "printed": [
+        76,
+        77
+      ],
+      "pdf": [
+        85,
+        86
+      ],
+      "sp_codes": [
+        "11.3",
+        "11.4"
+      ],
+      "evidence": "Kacuma yang rajin bercucuk tanam; Sang Kancil yang gigih; keluarga Ades; Kolam Impian; Uji Diri"
+    },
+    {
+      "year": 2,
+      "unit": 11,
+      "lesson": 33,
+      "printed": [
+        78,
+        80
+      ],
+      "pdf": [
+        87,
+        89
+      ],
+      "sp_codes": [
+        "11.5"
+      ],
+      "evidence": "Kacuma yang rajin bercucuk tanam; Sang Kancil yang gigih; keluarga Ades; Kolam Impian; Uji Diri"
+    },
+    {
+      "year": 2,
+      "unit": 12,
+      "lesson": 34,
+      "printed": [
+        81,
+        83
+      ],
+      "pdf": [
+        90,
+        92
+      ],
+      "sp_codes": [
+        "12.1",
+        "12.2"
+      ],
+      "evidence": "Persiapan perkahwinan keluarga Kamala; emel kerjasama; Poster Kerjasama; Gotong-royong Keluarga; Uji Diri"
+    },
+    {
+      "year": 2,
+      "unit": 12,
+      "lesson": 35,
+      "printed": [
+        84,
+        85
+      ],
+      "pdf": [
+        93,
+        94
+      ],
+      "sp_codes": [
+        "12.3",
+        "12.4"
+      ],
+      "evidence": "Persiapan perkahwinan keluarga Kamala; emel kerjasama; Poster Kerjasama; Gotong-royong Keluarga; Uji Diri"
+    },
+    {
+      "year": 2,
+      "unit": 12,
+      "lesson": 36,
+      "printed": [
+        86,
+        88
+      ],
+      "pdf": [
+        95,
+        97
+      ],
+      "sp_codes": [
+        "12.5"
+      ],
+      "evidence": "Persiapan perkahwinan keluarga Kamala; emel kerjasama; Poster Kerjasama; Gotong-royong Keluarga; Uji Diri"
+    },
+    {
+      "year": 2,
+      "unit": 13,
+      "lesson": 37,
+      "printed": [
+        89,
+        91
+      ],
+      "pdf": [
+        98,
+        100
+      ],
+      "sp_codes": [
+        "13.1",
+        "13.2"
+      ],
+      "evidence": "Dialog tentang pembaziran; infografik cara sederhana; Warna Ajaib; Kotak Pelbagai Guna; menu restoran; 3R"
+    },
+    {
+      "year": 2,
+      "unit": 13,
+      "lesson": 38,
+      "printed": [
+        92,
+        93
+      ],
+      "pdf": [
+        101,
+        102
+      ],
+      "sp_codes": [
+        "13.3",
+        "13.4"
+      ],
+      "evidence": "Dialog tentang pembaziran; infografik cara sederhana; Warna Ajaib; Kotak Pelbagai Guna; menu restoran; 3R"
+    },
+    {
+      "year": 2,
+      "unit": 13,
+      "lesson": 39,
+      "printed": [
+        94,
+        96
+      ],
+      "pdf": [
+        103,
+        105
+      ],
+      "sp_codes": [
+        "13.5"
+      ],
+      "evidence": "Dialog tentang pembaziran; infografik cara sederhana; Warna Ajaib; Kotak Pelbagai Guna; menu restoran; 3R"
+    },
+    {
+      "year": 2,
+      "unit": 14,
+      "lesson": 40,
+      "printed": [
+        97,
+        99
+      ],
+      "pdf": [
+        106,
+        108
+      ],
+      "sp_codes": [
+        "14.1",
+        "14.2"
+      ],
+      "evidence": "Dialog tempat duduk dan Suresh meminjam basikal; peta dakap toleransi; buku skrap; nota toleransi; pilihan percutian; Uji Diri"
+    },
+    {
+      "year": 2,
+      "unit": 14,
+      "lesson": 41,
+      "printed": [
+        100,
+        103
+      ],
+      "pdf": [
+        109,
+        112
+      ],
+      "sp_codes": [
+        "14.3",
+        "14.4"
+      ],
+      "evidence": "Dialog tempat duduk dan Suresh meminjam basikal; peta dakap toleransi; buku skrap; nota toleransi; pilihan percutian; Uji Diri"
+    },
+    {
+      "year": 2,
+      "unit": 14,
+      "lesson": 42,
+      "printed": [
+        104,
+        106
+      ],
+      "pdf": [
+        113,
+        115
+      ],
+      "sp_codes": [
+        "14.5"
+      ],
+      "evidence": "Dialog tempat duduk dan Suresh meminjam basikal; peta dakap toleransi; buku skrap; nota toleransi; pilihan percutian; Uji Diri"
+    }
+  ]
+}
