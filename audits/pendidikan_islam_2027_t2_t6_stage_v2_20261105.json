@@ -1,0 +1,43 @@
+{
+  "subject": "Pendidikan Islam",
+  "release": "STAGING_ONLY_DRAF_NOT_READY",
+  "date": "2026-11-05",
+  "counts": {
+    "rph": 696,
+    "rpt_word": 5,
+    "rpt_pdf": 5,
+    "candidate_draft": 661,
+    "priority": 29,
+    "hold": 6
+  },
+  "hold": [
+    "T2 L035",
+    "T6 L006",
+    "T6 L014",
+    "T6 L018",
+    "T6 L060",
+    "T6 L117"
+  ],
+  "edits": [
+    {
+      "year": 5,
+      "lesson": 134,
+      "scope": "objective number 2->3",
+      "semantic_change": false
+    }
+  ],
+  "unchanged_rph": 695,
+  "sha256": "f5913d65f561cfaa26f4e6db24f3e849b847ce71048136aeed62fe4f1e444733",
+  "pdf_pages": {
+    "2": 41,
+    "3": 52,
+    "4": 53,
+    "5": 50,
+    "6": 51
+  },
+  "release_guard": {
+    "can_deploy": false,
+    "can_merge_main": false,
+    "semantic_verified": false
+  }
+}
