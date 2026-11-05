@@ -168,6 +168,14 @@ def audit_one(year, pdp, fmt, preview, parse_input, writer, word_output_dir=None
         text = "\n".join(p.extract_text() or "" for p in reader.pages)
         if "RANCANGAN PENGAJARAN HARIAN" not in text:
             raise RuntimeError("PDF main heading lost")
+        for marker in ("Aktiviti 1", "Aktiviti 2", "Pengukuhan"):
+            if marker not in text:
+                raise RuntimeError("PDF lost a lesson-specific activity: " + marker)
+        for code in meta["Standard Pembelajaran"].split("; "):
+            if code not in text:
+                raise RuntimeError("PDF lost source SP code: " + code)
+        if "DRAF STAGING" in text or "Kawalan penerbitan" in text:
+            raise RuntimeError("Technical staging audit note leaked into PDF")
         box = reader.pages[0].mediabox
         if abs(float(box.width) - 595.28) > 3 or abs(float(box.height) - 841.89) > 3:
             raise RuntimeError("PDF size not A4")
@@ -197,7 +205,8 @@ def main():
     for year, pdp in cases:
         preview = preview_mod.build_staging_preview(SOURCE, year, pdp)
         record = {"year": year, "pdp": pdp, "source_id": preview["source_pdp_id"],
-                  "approved_for_live": False, "render_kind": "BASE_FUNCTION_AST_ONLY"}
+                  "approved_for_live": False, "render_kind": "BASE_FUNCTION_AST_ONLY",
+                  "warnings": preview["warnings"]}
         for fmt in ("word", "pdf"):
             try:
                 record[fmt] = audit_one(year, pdp, fmt, preview, parser, native, word_source if converter else None)
@@ -243,12 +252,17 @@ def main():
         "pdf_ok": sum("error" not in r["pdf"] for r in results),
         "single_page_pdf": sum(r["pdf"].get("single_page") is True for r in results),
         "word_page_audit": word_page_report,
+        "missing_explicit_success_criteria": [
+            r["source_id"] for r in results if "NO_EXPLICIT_SUCCESS_CRITERIA" in r["warnings"]
+        ],
         "errors": failed,
         "disclaimer": "AST-extracted base RPH functions are not the full Telegram production wrapper chain; LibreOffice Word-page measurements when present are staging-only and cross-platform release remains unverified.",
     }
     path = Path(os.getenv("MUSIC_SMOKE_REPORT", "/tmp/music_native_base_render_smoke.json"))
     path.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
-    print("AUDIT SUMMARY " + json.dumps({k: v for k, v in report.items() if k != "errors"}, ensure_ascii=False))
+    summary = {k: v for k, v in report.items() if k not in ("errors", "missing_explicit_success_criteria")}
+    summary["missing_explicit_success_criteria_count"] = len(report["missing_explicit_success_criteria"])
+    print("AUDIT SUMMARY " + json.dumps(summary, ensure_ascii=False))
     if failed:
         raise SystemExit(f"BASE_RENDER_SMOKE FAILED: {len(failed)} case(s)")
 
