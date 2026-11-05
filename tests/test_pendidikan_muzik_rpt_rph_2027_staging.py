@@ -88,6 +88,20 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
             {"3.2.1", "3.2.2", "3.2.3", "4.2.1"},
         )
 
+    def test_only_two_official_music_projects_each_year(self):
+        for year in YEAR_COUNTS:
+            directory = MUSIC / "rpt_rph_2027" / f"year{year}"
+            manifest = json.loads((directory / "pdp_manifest.json").read_text(encoding="utf-8"))
+            project_names = {row["unit"].split(" — ")[0] for row in manifest["pdps"] if row["unit"].startswith("Projek Seni Muzik")}
+            self.assertEqual(project_names, {"Projek Seni Muzik 1", "Projek Seni Muzik 2"})
+            self.assertFalse(any("Projek Seni Muzik 3" in row["unit"] for row in manifest["pdps"]))
+            if year != 5:
+                self.assertEqual(manifest["deprecated_project3_reclassified_count"], 2)
+                extra = manifest["pdps"][-2:]
+                self.assertTrue(all(row["pdp_kind"] == "CADANGAN_PENGUKUHAN_BUKAN_PROJEK_RASMI" for row in extra))
+                self.assertTrue(all("Projek Seni Muzik 3" in row["source_rpt_original_unit"] for row in extra))
+                self.assertTrue(all(row["validation_status"].startswith("DRAF") for row in extra))
+
     def test_year_5_6_risks_remain_visible(self):
         y5 = json.loads((MUSIC / "rpt_rph_2027" / "year5" / "pdp_manifest.json").read_text(encoding="utf-8"))
         y6 = json.loads((MUSIC / "rpt_rph_2027" / "year6" / "pdp_manifest.json").read_text(encoding="utf-8"))
