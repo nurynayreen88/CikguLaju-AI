@@ -11,7 +11,7 @@ import os
 from urllib.parse import urlsplit
 from urllib.request import Request, build_opener, HTTPRedirectHandler, HTTPSHandler
 from urllib.error import HTTPError, URLError
-from zipfile import ZipFile
+from zipfile import ZipFile, BadZipFile
 
 MIMES = {
     "word": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
@@ -87,6 +87,6 @@ def request_native_rph(data, fmt, *, opener=None):
             with ZipFile(io.BytesIO(content)) as document:
                 if document.testzip() or "word/document.xml" not in document.namelist():
                     raise NativeRPHUnavailable("Corrupt native Word file")
-        except (OSError,ValueError):
+        except (OSError,ValueError,BadZipFile):
             raise NativeRPHUnavailable("Invalid native Word file") from None
     return io.BytesIO(content)
