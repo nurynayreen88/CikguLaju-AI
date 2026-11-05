@@ -20,7 +20,7 @@
 2. **Year 4 L29** — TB p193/SB p129 menetapkan CD3 Tracks35/36, sedangkan kod lama memetakan CD1 WMA. Sumber pembetulan serta cadangan sekatan audio sahaja disimpan dalam PR #277; RPH Word/PDF perlu kekal.
 3. **Year 4 L30** — TB p39/SB p20 CD1 Track29, disahkan pengguna, sedangkan SOW dan peta lama menyatakan CD2. Kes berasingan dalam PR #275.
 4. **Year 4 L103–104** — dua Track 27/28 tersalah berada bersama Lesson103 dalam peta lama; SOW merujuknya pada Lesson104.
-5. **Year 6 sumber audio** — folder `Academy_Stars_Year6_Audio` dalam Drive mengandungi `Academy_Stars_5_Audio_www.frenglish.ru` dengan 51 fail `AS5_Uxx...`. Kena sahkan sama ada terdapat folder Year6 yang lain dan sama ada kod bot memang menggunakan fail tersebut. **Label yang salah bukan bukti bahawa bot menghantar audio yang salah.**
+5. **Year 6 sumber audio** — folder `Academy_Stars_Year6_Audio` dalam Drive mengandungi `Academy_Stars_5_Audio_www.frenglish.ru` dengan **49 fail MP3 `AS5_Uxx...` serta 2 fail bukan audio** (51 entri keseluruhan). Kena sahkan sama ada terdapat folder Year6 yang lain dan sama ada kod bot memang menggunakan fail tersebut. **Label yang salah bukan bukti bahawa bot menghantar audio yang salah.**
 6. **Year 5 sumber audio** — folder `English Plus 1 Audio Year 5` memaparkan hanya 100 fail pertama. SOW L29 CD3.02/03 dan L30 CD3.04 mempunyai fail MP3 dengan nombor yang sepadan dalam sampel ini; kandungan rakaman belum dibandingkan dengan skrip TB.
 
 ## Larangan automatik
