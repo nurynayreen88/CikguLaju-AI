@@ -21,7 +21,7 @@ Murid menunjukkan penguasaan SP **4.1; 4.2** dengan menghasilkan dua contoh tind
 
 **Aktiviti 1 (20 minit) — Tinjauan galeri keunikan:** Guru merujuk buku Semakan 2017 Unit 4 m/s 32–35: boria, Stadthuys, wau dan budaya Baba-Nyonya. Murid dalam kumpulan mencatat tiga keunikan dan memadankannya dengan kategori seni, warisan dan budaya (SP 4.1).
 
-**Aktiviti 2 (20 minit) — Kad tindakan menghargai:** Guru menyediakan empat kad berpandukan buku; murid menulis dua cara melindungi atau memperkenalkan warisan tersebut, membentangkan sebab dan memperbaik satu jawapan selepas semakan (SP 4.2).
+**Aktiviti 2 (20 minit) — Kad tindakan menghargai:** Guru menyediakan empat kad berpandukan buku; murid menulis dua cara melindungi atau memperkenalkan warisan tersebut, membentangkan sebab dan memperbaik satu jawapan selepas semakan (SP 4.2). Murid menilai semula contoh daripada buku teks dan membetulkan satu pilihan tindakan (SP 4.2).
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Dua contoh tindakan, dua cara pelaksanaan dan satu alasan dinilai melalui kad individu. Guru memeriksa hasil murid seorang demi seorang, mencatat kelemahan tertentu dan tidak menetapkan TP berdasarkan lakonan semata-mata.
 

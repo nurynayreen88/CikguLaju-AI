@@ -21,7 +21,7 @@ Murid menunjukkan penguasaan SP **7.3** dengan menghasilkan dua alasan atau kesa
 
 **Aktiviti 1 (20 minit) — Kesan mengabaikan negara:** Guru menggunakan peristiwa daripada sajak 'Malaysia Negaraku Tercinta' m/s 64–65 yang menyentuh perpaduan dan maruah negara. Murid menyusun dua akibat pengabaian serta alasan yang munasabah (SP 7.3).
 
-**Aktiviti 2 (20 minit) — Projek warisan dan rumusan:** Murid merujuk kad tempat bersejarah m/s 66–67, merumuskan dua kesan jika tempat bersejarah diabaikan dan membetulkan peta sebab-akibat selepas maklum balas guru (SP 7.3).
+**Aktiviti 2 (20 minit) — Projek warisan dan rumusan:** Murid merujuk kad tempat bersejarah m/s 66–67, merumuskan dua kesan jika tempat bersejarah diabaikan dan membetulkan peta sebab-akibat selepas maklum balas guru (SP 7.3). Guru merekod dua rumusan individu dan membimbing alasan bagi kesan yang masih terlalu umum (SP 7.3).
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Sekurang-kurangnya dua alasan/kesan yang bersebab dengan bukti respons individu. Guru memeriksa hasil murid seorang demi seorang, mencatat kelemahan tertentu dan tidak menetapkan TP berdasarkan lakonan semata-mata.
 

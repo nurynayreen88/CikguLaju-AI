@@ -21,7 +21,7 @@ Murid menunjukkan penguasaan SP **7.5** dengan menghasilkan dua perlakuan yang d
 
 **Aktiviti 1 (20 minit) — Amalan cinta negara melalui kempen:** Guru merujuk projek e-poster Hari Kebangsaan m/s 68 dan Kempen Amalan Hijau m/s 69. Murid memilih satu kempen, merancang dua perlakuan yang menunjukkan sikap cinta negara dan menyediakan bahan poster (SP 7.5).
 
-**Aktiviti 2 (20 minit) — Laksana, perhati dan nilai:** Murid memperagakan dua tindakan cinta negara dalam simulasi kempen; guru mencatat tingkah laku yang dilihat, memandu pembetulan dan menggunakan latihan m/s 70 sebagai refleksi. Produk poster bukan bukti amalan konsisten (SP 7.5).
+**Aktiviti 2 (20 minit) — Laksana, perhati dan nilai:** Murid memperagakan dua tindakan cinta negara dalam simulasi kempen; guru mencatat tingkah laku yang dilihat, memandu pembetulan dan menggunakan latihan m/s 70 sebagai refleksi. Produk poster bukan bukti amalan konsisten (SP 7.5). Guru menyemak dua bukti amalan dalam simulasi berasingan daripada hasil poster, dan membimbing satu pembetulan (SP 7.5).
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Dua perlakuan yang benar-benar diperagakan, satu sebab dan refleksi; simulasi tidak membuktikan amalan harian. Guru memeriksa hasil murid seorang demi seorang, mencatat kelemahan tertentu dan tidak menetapkan TP berdasarkan lakonan semata-mata.
 
