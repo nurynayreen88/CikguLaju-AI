@@ -575,6 +575,24 @@ class PSVSourceOrderTests(unittest.TestCase):
         body = (ROOT / "rph_standalone/psv/year3/lesson_036.md").read_text(encoding="utf-8").lower()
         self.assertNotIn("boneka tongkat", body)
 
+    def test_year3_kad_untukmu_burung_merak_source_specific(self):
+        """Year 3 unit 7 produces a scratched greeting card, not a generic drawing."""
+        rows = read_csv(PSV / "RPT_PSV_Tahun_3_2027_DRAF.csv")
+        for n in (26, 27, 28, 29):
+            with self.subTest(pdp=n):
+                content = (ROOT / f"rph_standalone/psv/year3/lesson_{n:03d}.md").read_text(encoding="utf-8").lower()
+                self.assertIn("oil pastel", content)
+                self.assertIn("batang aiskrim", content)
+                self.assertIn("gurisan", content)
+                self.assertIn(rows[n-1]["Objektif"].lower(), content)
+                self.assertIn(rows[n-1]["Evidens PBD"].lower(), content)
+                self.assertIn("**status:** draf", content)
+        card = (ROOT / "rph_standalone/psv/year3/lesson_028.md").read_text(encoding="utf-8").lower()
+        self.assertIn("kad untukmu", card)
+        self.assertIn("burung merak", card)
+        self.assertIn("ms 60–61", card)
+        self.assertEqual(rows[27]["BT muka surat"], "60–61")
+
     def test_year5_bunga_kemboja_tekat_is_genuine_couching(self):
         rows = read_csv(PSV / "RPT_PSV_Tahun_5_2027_DRAF.csv")
         keywords = {
