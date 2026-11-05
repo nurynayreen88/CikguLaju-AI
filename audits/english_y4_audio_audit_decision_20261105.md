@@ -3,6 +3,15 @@
 **Skop:** semua 160 Lesson English Year 4; KPM Primary Year 4 SK SOW PDF asal; peta legacy sebenar `app.py` v25.257–259; lima folder Google Drive asal (CD1/CD2/CD3 MP3 dan CD1/CD2 WMA).  
 **Status:** AUDIT STAGING SAHAJA. **BUKAN** kelulusan semua RPH/audio atau bukti audio berjaya dihantar Telegram.
 
+## PEMBETULAN KRITIKAL SUMBER AUDIO (5 Nov 2026)
+
+Pengesahan struktur folder Google Drive menunjukkan **SEMUA 24 rujukan WMA** dalam peta legacy Year 4 sebenarnya berada di bawah `Super Minds 1 Audio Unzipped/CD1` dan `Super Minds 1 Audio Unzipped/CD2`. Ini **bukan folder sumber Get Smart Plus 4**, buku teks English Year 4.
+
+- **14 rujukan:** folder CD1 `1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50`
+- **10 rujukan:** folder CD2 `1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv`
+
+**Keputusan diperketat:** 24/24 rujukan dianggap `WRONG_TEXTBOOK_SOURCE_HOLD`. Isu itu merangkumi **buku teks berlainan + format WMA**, bukan sekadar format. Menamakan semula atau menukar WMA ke MP3 **tidak** membetulkan kandungan audio. Fail calon MP3 yang sepadan nombor dalam folder Get Smart Plus 4 masih **CANDIDATE**, hanya boleh diluluskan selepas semakan TB/SB, kandungan rakaman dan penghantaran sebenar.
+
 ## Apa yang telah diperiksa
 - **160/160** Lesson dikenal pasti daripada SOW asal; tiada Lesson tercicir daripada indeks.
 - **65** Lesson menyebut nombor Track dalam SOW. Ini **tidak** bermaksud semua Lesson lain langsung tiada audio dalam Teacher's Book.
