@@ -17,14 +17,16 @@ Murid menghuraikan atau menilai berdasarkan **14.3: Menghuraikan manfaat bertole
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Adik-beradik berbeza pandangan tentang aktiviti hujung minggu**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Peta akibat:** Guru beri dua penghujung kepada situasi. Murid bina peta **pilihan → kesan → alasan**, merujuk SP 14.3 (**Menghuraikan manfaat bertoleransi terhadap ahli keluarga.**). Bandingkan akibat kepada watak yang terlibat dan bincang soalan: **Bagaimana menyelesaikan perbezaan tanpa menyakiti pihak lain?**
+**Aktiviti 1 (20 minit) — Tugasan buku teks:** Guru menunjukkan Buku Skrap Toleransi m/s100–101 dan empat situasi Nota Toleransi m/s102–103 (berkongsi makanan, alat permainan, tempat duduk). Murid menghuraikan dua manfaat bertolak ansur kepada keharmonian keluarga (SP14.3). Guru menyemak hasil individu murid.
 
-**Aktiviti 2 (20 minit) — Dialog dan emosi:** Murid menjalankan dialog ringkas dua versi, menyatakan kesan kedua-duanya dan menulis satu ayat perspektif pihak yang terlibat untuk SP 14.4 (**Melahirkan perasaan apabila dapat bertoleransi terhadap ahli keluarga.**). Guru semak hubungan alasan, emosi dan nilai.
+**Aktiviti 2 (20 minit) — Tugasan buku teks:** Guru mengajak murid menganalisis pilihan bertolak ansur di m/s102–103. Murid melahirkan satu perasaan bersebab selepas berkongsi atau memberi peluang kepada adik dan kakak (SP14.4). Guru menyemak hasil individu murid.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Semak justifikasi serta dua kesan bagi SP 14.3 dan ayat perasaan yang sesuai bagi SP 14.4. Guru memberikan maklum balas berpandukan evidens penaakulan, emosi serta perlakuan moral.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menilai dua manfaat dan satu ayat perasaan yang berasas (SP14.3–14.4). Murid membaiki jawapan selepas maklum balas Guru.
 
 **Penutup (5 minit):** Murid menyatakan satu keputusan atau tindakan yang menunjukkan nilai **toleransi**. Guru merumuskan tindakan yang berhemah, hormat dan selamat.
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — halaman belum dipadankan; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 14, m/s 100–103 (PDF 109–112), semakan visual aktiviti dan cadangan olahan PdP 041; bukti ini tidak bermaksud murid menguasai kemahiran tanpa penilaian guru.
+
+**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — Unit 14 m/s 100–103 (PDF 109–112) aktiviti disahkan bagi PdP 41; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
