@@ -1,10 +1,11 @@
 # RPT PENDIDIKAN MUZIK TAHUN 2 — 2027 (KUMPULAN A & B)
 
-**Sekolah:** __________  **Guru:** __________  
-**Status:** DRAF STAGING — bukan FINAL READY.  
-**Kurikulum:** DSKP Pendidikan Muzik Tahun 2 KSSR Semakan 2017. **Buku:** Pendidikan Kesenian Tahun 2 SK, https://anyflip.com/iawvx/mran/basic.
+**Sekolah:** __________ **Guru:** __________  
+**Kurikulum:** DSKP Pendidikan Muzik Tahun 2 (KSSR Semakan 2017).  
+**Status:** DRAF STAGING, belum FINAL READY.  
+**Buku:** Pendidikan Kesenian Tahun 2 SK; https://anyflip.com/iawvx/mran/basic/51-100.
 
-| PdP | Slot A | Slot B | Unit/Tajuk | SP | Buku teks m/s* |
+| PdP | Slot A | Slot B | Unit/Tajuk | SP | BT m/s* |
 |---:|---|---|---|---|---|
 | 01 | 04/01–07/01 | 04/01–08/01 | KAMI SUKA SAYUR | 2.1.3, 2.1.4 | 10 |
 | 02 | 10/01–14/01 | 11/01–15/01 | KAMI SUKA SAYUR | 1.1.1, 1.1.3 | 11 |
@@ -42,4 +43,4 @@
 | 34 | 19/09–23/09 | 20/09–24/09 | Pengukuhan Akhir Tahun — Nyanyian dan Gerakan (cadangan) | 2.1.3, 2.3.2 | — |
 | 35 | 26/09–30/09 | 27/09–01/10 | Penilaian dan Refleksi Muzik Akhir Tahun (cadangan) | 3.1.3, 4.1.1 | — |
 
-*Semakan isi teks buku dilakukan bagi PdP 01–11; halaman PdP 11 dibetulkan **32–33 → 36–37** untuk skor perkusi lagu Main Gasing. Halaman lain daripada RPT masih belum disahkan. Nombor audio ialah rujukan cetakan sahaja, bukan bukti fail audio. Cuti negeri dan cuti gantian 2027 belum disahkan.
+*28 PdP telah melalui pemadanan isi teks buku. PdP 33 rujukan halaman 95–96 belum lengkap, begitu juga empat PdP projek dan dua PdP cadangan hujung tahun. PdP 11 telah diperbetulkan ke 36–37 (asal 32–33). Audio bercetak bukan bukti fail. Tarikh A/B hanyalah slot cadangan tertakluk takwim/cuti negeri.

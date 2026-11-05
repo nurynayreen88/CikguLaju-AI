@@ -4,7 +4,7 @@
   "academic_year": 2027,
   "source_doc_id": "1GHbsB2aL-KAXu3XyNszoT_htAMpDZIs-",
   "source_type": "RPT_2025_26",
-  "status": "DRAF_STAGING_11_TAHUN2_BOOK_TEXT_MATCHED",
+  "status": "DRAF_STAGING_28_TAHUN2_BOOK_TEXT_MATCHED",
   "textbook_verified": false,
   "audio_verified": false,
   "rph_word_pdf_verified": false,
@@ -353,7 +353,14 @@
         "week": 14,
         "groupA": "11/04–15/04",
         "groupB": "12/04–16/04"
-      }
+      },
+      "focus_pdp": "Bersenam Jaga Kesihatan — iringan perkusi",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic/51-100",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SIGNOFF",
+      "source_book_audio_numbers_printed": "33–35",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISEMAK"
     },
     {
       "pdp_id": "MZ-Y2-15",
@@ -372,7 +379,14 @@
         "week": 15,
         "groupA": "18/04–22/04",
         "groupB": "19/04–23/04"
-      }
+      },
+      "focus_pdp": "Permainan Gerak Irama — corak ciptaan",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic/51-100",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SIGNOFF",
+      "source_book_audio_numbers_printed": "Tiada audio khusus halaman 43",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISEMAK"
     },
     {
       "pdp_id": "MZ-Y2-16",
@@ -390,7 +404,14 @@
         "week": 16,
         "groupA": "25/04–29/04",
         "groupB": "26/04–30/04"
-      }
+      },
+      "focus_pdp": "Pak Pak Bung Bung — apresiasi kompang",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic/51-100",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SIGNOFF",
+      "source_book_audio_numbers_printed": "36",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISEMAK"
     },
     {
       "pdp_id": "MZ-Y2-17",
@@ -409,7 +430,14 @@
         "week": 17,
         "groupA": "02/05–06/05",
         "groupB": "03/05–07/05"
-      }
+      },
+      "focus_pdp": "Cantik Menawan — gerak melodi dan tempo",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic/51-100",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SIGNOFF",
+      "source_book_audio_numbers_printed": "37–43",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISEMAK"
     },
     {
       "pdp_id": "MZ-Y2-18",
@@ -428,7 +456,14 @@
         "week": 18,
         "groupA": "09/05–13/05",
         "groupB": "10/05–14/05"
-      }
+      },
+      "focus_pdp": "Dengar Susun Ajuk Tepuk — ikon irama",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic/51-100",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SIGNOFF",
+      "source_book_audio_numbers_printed": "44–47",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISEMAK"
     },
     {
       "pdp_id": "MZ-Y2-19",
@@ -447,7 +482,14 @@
         "week": 19,
         "groupA": "16/05–20/05",
         "groupB": "17/05–21/05"
-      }
+      },
+      "focus_pdp": "Pengukuhan corak Dengar Susun Ajuk Tepuk",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic/51-100",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SIGNOFF",
+      "source_book_audio_numbers_printed": "RPT lama: 48; perlu pengesahan audio halaman 55",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISEMAK"
     },
     {
       "pdp_id": "MZ-Y2-20",
@@ -465,7 +507,14 @@
         "week": 20,
         "groupA": "06/06–10/06",
         "groupB": "07/06–11/06"
-      }
+      },
+      "focus_pdp": "Kisah Seekor Burung Belatuk — kesan bunyi",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic/51-100",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SIGNOFF",
+      "source_book_audio_numbers_printed": "49–56",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISEMAK"
     },
     {
       "pdp_id": "MZ-Y2-21",
@@ -483,7 +532,14 @@
         "week": 21,
         "groupA": "13/06–17/06",
         "groupB": "14/06–18/06"
-      }
+      },
+      "focus_pdp": "Burung Kenek-Kenek — nyanyian mengikut pic",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic/51-100",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SIGNOFF",
+      "source_book_audio_numbers_printed": "57–59",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISEMAK"
     },
     {
       "pdp_id": "MZ-Y2-22",
@@ -501,7 +557,15 @@
         "week": 22,
         "groupA": "20/06–24/06",
         "groupB": "21/06–25/06"
-      }
+      },
+      "focus_pdp": "Burung Kenek-Kenek — iringan kastanet dan loceng",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic/51-100",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SIGNOFF",
+      "source_book_audio_numbers_printed": "60–66 (berbeza rujukan RPT 57–59)",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISEMAK",
+      "source_rpt_audio_note": "RPT mencatat 57–59 lagu; halaman 62–63 buku sebenarnya membekalkan Audio 60–66 untuk skor perkusi. Nombor sumber asal dikekalkan."
     },
     {
       "pdp_id": "MZ-Y2-23",
@@ -520,7 +584,14 @@
         "week": 23,
         "groupA": "27/06–01/07",
         "groupB": "28/06–02/07"
-      }
+      },
+      "focus_pdp": "Tembikar Cantik — nyanyian berirama",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic/51-100",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SIGNOFF",
+      "source_book_audio_numbers_printed": "67–69",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISEMAK"
     },
     {
       "pdp_id": "MZ-Y2-24",
@@ -538,7 +609,14 @@
         "week": 24,
         "groupA": "04/07–08/07",
         "groupB": "05/07–09/07"
-      }
+      },
+      "focus_pdp": "Tembikar Cantik — ketuk detik dan tukar pasangan",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic/51-100",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SIGNOFF",
+      "source_book_audio_numbers_printed": "70–72",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISEMAK"
     },
     {
       "pdp_id": "MZ-Y2-25",
@@ -556,7 +634,14 @@
         "week": 25,
         "groupA": "11/07–15/07",
         "groupB": "12/07–16/07"
-      }
+      },
+      "focus_pdp": "Konduktor Muda — ensembel improvisasi",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic/51-100",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SIGNOFF",
+      "source_book_audio_numbers_printed": "Tiada audio baharu pada halaman ini",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISEMAK"
     },
     {
       "pdp_id": "MZ-Y2-26",
@@ -611,7 +696,14 @@
         "week": 28,
         "groupA": "01/08–05/08",
         "groupB": "02/08–06/08"
-      }
+      },
+      "focus_pdp": "Taman Mini — nyanyian mengikut tempo",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic/51-100",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SIGNOFF",
+      "source_book_audio_numbers_printed": "73–75",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISEMAK"
     },
     {
       "pdp_id": "MZ-Y2-29",
@@ -629,7 +721,14 @@
         "week": 29,
         "groupA": "08/08–12/08",
         "groupB": "09/08–13/08"
-      }
+      },
+      "focus_pdp": "Taman Mini — gerakan bunga dan rama-rama",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic/51-100",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SIGNOFF",
+      "source_book_audio_numbers_printed": "76–78",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISEMAK"
     },
     {
       "pdp_id": "MZ-Y2-30",
@@ -647,7 +746,14 @@
         "week": 30,
         "groupA": "15/08–19/08",
         "groupB": "16/08–20/08"
-      }
+      },
+      "focus_pdp": "Singa Menari — apresiasi tarian singa",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic/51-100",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SIGNOFF",
+      "source_book_audio_numbers_printed": "79",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISEMAK"
     },
     {
       "pdp_id": "MZ-Y2-31",
@@ -666,7 +772,14 @@
         "week": 31,
         "groupA": "22/08–26/08",
         "groupB": "23/08–27/08"
-      }
+      },
+      "focus_pdp": "Nyamannya di Air Terjun — nyanyian/perubahan tempo",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic/51-100",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SIGNOFF",
+      "source_book_audio_numbers_printed": "80–83",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISEMAK"
     },
     {
       "pdp_id": "MZ-Y2-32",
@@ -684,7 +797,14 @@
         "week": 32,
         "groupA": "05/09–09/09",
         "groupB": "06/09–10/09"
-      }
+      },
+      "focus_pdp": "Pemuzik Cilik dan Ikut Iramaku — ensembel",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic/51-100",
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SIGNOFF",
+      "source_book_audio_numbers_printed": "Tiada audio khusus baharu halaman 92–94",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISEMAK"
     },
     {
       "pdp_id": "MZ-Y2-33",
@@ -702,7 +822,18 @@
         "week": 33,
         "groupA": "12/09–16/09",
         "groupB": "13/09–17/09"
-      }
+      },
+      "focus_pdp": "Apresiasi muzik dan budaya setempat (calon halaman 95–96)",
+      "source_book_url": "https://anyflip.com/iawvx/mran/basic/51-100",
+      "source_book_text_crosscheck": false,
+      "source_book_verification_level": "RPT_REFERENCE_ONLY_PENDING_TEXTBOOK_PAGE_CONFIRM",
+      "pending_book_page_crosscheck": true,
+      "source_book_audio_numbers_printed": "84–86 — rujukan RPT lama belum semak pada buku sebenar",
+      "source_book_audio_file_verified": false,
+      "rph_specificity_status": "PDP_DRAFT_APRESIASI_PENDING_BOOK",
+      "flags": [
+        "Halaman 95–96 dan Audio 84–86 masih rujukan RPT; kandungan buku belum sempat disahkan. Jangan tandakan sebagai book crosschecked."
+      ]
     },
     {
       "pdp_id": "MZ-Y2-34",
@@ -768,5 +899,5 @@
   "deprecated_project3_reclassified_count": 2,
   "source_textbook_url": "https://anyflip.com/iawvx/mran/basic",
   "source_textbook_edition": "Buku Teks Pendidikan Kesenian Tahun 2 SK KSSR Semakan",
-  "partial_textbook_crosscheck_count": 11
+  "partial_textbook_crosscheck_count": 28
 }

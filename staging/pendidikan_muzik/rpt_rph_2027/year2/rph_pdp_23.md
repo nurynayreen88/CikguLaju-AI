@@ -1,34 +1,33 @@
 # RPH PENDIDIKAN MUZIK TAHUN 2 — PdP 23
 
-**Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** ULI-ULI TEMBIKAR  
-**Bidang:** Bahasa Muzik dan Notasi  
-**SK / SP (RPT sumber):** 1.1.3, 2.1.3
-**Tempoh cadangan:** 30 minit  
+**Kelas:** __________  **Tarikh:** __________  **Masa:** __________
+**Unit/Tajuk:** ULI-ULI TEMBIKAR
+**SK / SP DSKP:** 1.1.3, 2.1.3
+**Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Mengenal sekurang-kurangnya 3 daripada 4 contoh elemen atau notasi muzik, serta mengaplikasikan satu contoh dengan betul.
+**Fokus:** Tembikar Cantik — nyanyian berirama
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Objektif:** Murid menyanyikan satu frasa Tembikar Cantik pada tempo yang betul.
 
-**Set Induksi — 4 minit**  
-Guru memainkan dua petikan bunyi atau menunjukkan dua simbol pada baluk; murid meneka perbezaan dan memberikan sebab.
+**Set induksi (4 minit):** Guru memperkenalkan contoh lagu, pola bunyi atau gambar berkaitan ULI-ULI TEMBIKAR; murid menunjukkan respons awal.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru menunjukkan contoh notasi/elemen muzik (Mengaplikasikan pemahaman berkaitan tempo cepat dan lambat menerusi aktiviti muzik .); murid mengecamnya pada tiga kad atau corak dengar.
+**Aktiviti 1 — Eksplorasi (8 minit):** Guru menunjukkan skor lagu Tembikar Cantik dan mengetuk tempo secara seragam.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid melukis, menulis atau melaksanakan elemen/notasi tersebut secara berpasangan dan saling membetulkan hasil.
+**Aktiviti 2 — Aplikasi muzikal (10 minit):** Murid mengajuk frasa, menyanyi secara bergilir dan mengulangi rangkap dengan tempo tetap.
 
-**Pengukuhan & Penilaian — 6 minit**  
-Semak 3 item pengecaman dan satu aplikasi pada skor/nyanyian/pergerakan; rekod 0–4 hasil tepat.
+**Pengukuhan dan pentaksiran (6 minit):** Semak pic, tempo dan artikulasi dua percubaan.
 
-**Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+**Penutup (2 minit):** Murid melakukan satu contoh kemahiran, memberi refleksi dan menyatakan aspek yang mahu diperbaiki. Guru merekod pemerhatian PBD.
 
-**Bahan:** Kad notasi, papan baluk, audio contoh dan alat perkusi mudah.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 70; **belum disahkan pada halaman buku asal**. RPT sumber menyebut Audio 67-69; **nombor trek belum diaudit dengan fail audio**.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 70; audio berlesen jika telah diperiksa, kad atau alat muzik yang sesuai.
 
-**Catatan pelaksanaan / pemulihan:** __________________________________________
+**Rujukan:** https://anyflip.com/iawvx/mran/basic/51-100. Teks buku/unit berkaitan telah dirujuk; semakan visual semua halaman belum lengkap.
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Audio bercetak / rujukan RPT:** 67–69. **Tidak menandakan ketersediaan fail audio.**
+
+**Nota audit:** SP dan aktiviti perlu kelulusan guru individu.
+
+**Refleksi / pemulihan:** ________________________________________
+
+**Kawalan penerbitan:** Kekal staging; tidak layak FINAL READY tanpa audit buku, audio, format Word/PDF dan ujian Telegram/Web.

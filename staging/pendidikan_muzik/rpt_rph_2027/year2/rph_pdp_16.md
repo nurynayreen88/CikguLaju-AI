@@ -1,34 +1,33 @@
 # RPH PENDIDIKAN MUZIK TAHUN 2 — PdP 16
 
-**Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** BERSUKAN BADAN SIHAT  
-**Bidang:** Apresiasi Muzik  
-**SK / SP (RPT sumber):** 4.1.1
-**Tempoh cadangan:** 30 minit  
+**Kelas:** __________  **Tarikh:** __________  **Masa:** __________
+**Unit/Tajuk:** BERSUKAN BADAN SIHAT
+**SK / SP DSKP:** 4.1.1
+**Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Memberi ulasan tentang muzik yang didengar dengan sekurang-kurangnya dua maklumat tepat dan satu alasan.
+**Fokus:** Pak Pak Bung Bung — apresiasi kompang
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Objektif:** Murid membezakan bunyi pak dan bung serta menyatakan dua ciri permainan kompang.
 
-**Set Induksi — 4 minit**  
-Guru memperdengarkan satu petikan muzik dan meminta murid menyatakan dua perkara yang didengar.
+**Set induksi (4 minit):** Guru memperkenalkan contoh lagu, pola bunyi atau gambar berkaitan BERSUKAN BADAN SIHAT; murid menunjukkan respons awal.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru memperkenalkan kosa kata apresiasi yang berkaitan: Membuat ulasan terhadap Muzik Masyarakat Malaysia yang didengar daripada aspek: (i) jenis muzik (ii) masyarakat yang mengamalkan muzik tersebut (iii) fungsi muzik. Murid membuat pemerhatian berpandukan tiga soalan dengar.
+**Aktiviti 1 — Eksplorasi (8 minit):** Guru memperkenalkan gambar kompang dan memodelkan dua bunyi pak dan bung dengan tepukan selamat.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid berbincang secara pasangan, menyusun ulasan dua ayat dengan bukti daripada rakaman, kemudian berkongsi respons.
+**Aktiviti 2 — Aplikasi muzikal (10 minit):** Murid mencuba dua pola tepukan pak-bung dan membincangkan fungsi kompang dalam persembahan berkumpulan.
 
-**Pengukuhan & Penilaian — 6 minit**  
-Semak ketepatan sekurang-kurangnya 2 fakta/unsur muzik dalam ulasan dan satu alasan berasaskan pendengaran.
+**Pengukuhan dan pentaksiran (6 minit):** Rubrik dua pola, dua fakta kompang dan respons apresiasi.
 
-**Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+**Penutup (2 minit):** Murid melakukan satu contoh kemahiran, memberi refleksi dan menyatakan aspek yang mahu diperbaiki. Guru merekod pemerhatian PBD.
 
-**Bahan:** Rakaman muzik yang berlesen/diizinkan, gambar alat muzik dan lembaran respons.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 44-45; **belum disahkan pada halaman buku asal**. RPT sumber menyebut Audio 36; **nombor trek belum diaudit dengan fail audio**.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 44-45; audio berlesen jika telah diperiksa, kad atau alat muzik yang sesuai.
 
-**Catatan pelaksanaan / pemulihan:** __________________________________________
+**Rujukan:** https://anyflip.com/iawvx/mran/basic/51-100. Teks buku/unit berkaitan telah dirujuk; semakan visual semua halaman belum lengkap.
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Audio bercetak / rujukan RPT:** 36. **Tidak menandakan ketersediaan fail audio.**
+
+**Nota audit:** SP dan aktiviti perlu kelulusan guru individu.
+
+**Refleksi / pemulihan:** ________________________________________
+
+**Kawalan penerbitan:** Kekal staging; tidak layak FINAL READY tanpa audit buku, audio, format Word/PDF dan ujian Telegram/Web.

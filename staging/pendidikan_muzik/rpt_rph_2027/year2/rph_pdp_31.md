@@ -1,34 +1,33 @@
 # RPH PENDIDIKAN MUZIK TAHUN 2 — PdP 31
 
-**Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** SEGARNYA AIR TERJUN  
-**Bidang:** Nyanyian  
-**SK / SP (RPT sumber):** 2.1.3, 2.1.4
-**Tempoh cadangan:** 30 minit  
+**Kelas:** __________  **Tarikh:** __________  **Masa:** __________
+**Unit/Tajuk:** SEGARNYA AIR TERJUN
+**SK / SP DSKP:** 2.1.3, 2.1.4
+**Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Menyanyikan satu rangkap atau frasa dengan sekurang-kurangnya 2 daripada 3 aspek pic, tempo dan teknik yang betul.
+**Fokus:** Nyamannya di Air Terjun — nyanyian/perubahan tempo
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Objektif:** Murid menyanyikan satu rangkap dengan tempo betul dan mengubah tempo apabila diberi isyarat.
 
-**Set Induksi — 4 minit**  
-Guru memainkan frasa lagu pendek dan meminta murid meniru satu frasa mengikut pic serta tempo.
+**Set induksi (4 minit):** Guru memperkenalkan contoh lagu, pola bunyi atau gambar berkaitan SEGARNYA AIR TERJUN; murid menunjukkan respons awal.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru memodelkan latihan vokal bersesuaian: Bernyanyi mengikut tempo.. Murid berlatih secara respons-gema dalam dua pusingan.
+**Aktiviti 1 — Eksplorasi (8 minit):** Guru memperdengarkan contoh Nyamannya di Air Terjun dan menunjukkan ketukan tempo dengan tepukan.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid menyanyikan bahagian lagu daripada unit SEGARNYA AIR TERJUN secara berkumpulan, kemudian mencuba semula setelah maklum balas pic/tempo/postur.
+**Aktiviti 2 — Aplikasi muzikal (10 minit):** Murid bermain Permainan Tempo secara bulatan: menyanyi, menepuk dan menyambung gerak apabila tempo bertukar.
 
-**Pengukuhan & Penilaian — 6 minit**  
-Rubrik pemerhatian: pic, tempo dan kemahiran utama SP (3 kriteria); murid menunjukkan pembaikan pada percubaan kedua.
+**Pengukuhan dan pentaksiran (6 minit):** Nilai ketepatan tempo dan respons terhadap perubahan dalam dua pusingan.
 
-**Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+**Penutup (2 minit):** Murid melakukan satu contoh kemahiran, memberi refleksi dan menyatakan aspek yang mahu diperbaiki. Guru merekod pemerhatian PBD.
 
-**Bahan:** Audio lagu yang sah, lirik rujukan guru, pembesar suara dan alat iringan jika ada.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 90-91; **belum disahkan pada halaman buku asal**. RPT sumber menyebut Audio 80-83; **nombor trek belum diaudit dengan fail audio**.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 90-91; audio berlesen jika telah diperiksa, kad atau alat muzik yang sesuai.
 
-**Catatan pelaksanaan / pemulihan:** __________________________________________
+**Rujukan:** https://anyflip.com/iawvx/mran/basic/51-100. Teks buku/unit berkaitan telah dirujuk; semakan visual semua halaman belum lengkap.
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Audio bercetak / rujukan RPT:** 80–83. **Tidak menandakan ketersediaan fail audio.**
+
+**Nota audit:** SP dan aktiviti perlu kelulusan guru individu.
+
+**Refleksi / pemulihan:** ________________________________________
+
+**Kawalan penerbitan:** Kekal staging; tidak layak FINAL READY tanpa audit buku, audio, format Word/PDF dan ujian Telegram/Web.

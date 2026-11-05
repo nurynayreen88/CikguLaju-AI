@@ -1,34 +1,33 @@
 # RPH PENDIDIKAN MUZIK TAHUN 2 — PdP 18
 
-**Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** CANTIK MENAWAN  
-**Bidang:** Kreativiti Muzik  
-**SK / SP (RPT sumber):** 3.1.2, 3.1.3
-**Tempoh cadangan:** 30 minit  
+**Kelas:** __________  **Tarikh:** __________  **Masa:** __________
+**Unit/Tajuk:** CANTIK MENAWAN
+**SK / SP DSKP:** 3.1.2, 3.1.3
+**Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Menghasilkan dan mempersembahkan satu corak irama/melodi ringkas yang memenuhi 3 kriteria rubrik.
+**Fokus:** Dengar Susun Ajuk Tepuk — ikon irama
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Objektif:** Murid menyusun corak irama daripada sekurang-kurangnya empat ikon setelah mendengar contoh.
 
-**Set Induksi — 4 minit**  
-Guru menepuk corak empat detik; murid menyambung dengan corak yang berbeza sebagai respons.
+**Set induksi (4 minit):** Guru memperkenalkan contoh lagu, pola bunyi atau gambar berkaitan CANTIK MENAWAN; murid menunjukkan respons awal.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru membimbing murid meneroka bunyi dan mencipta contoh berdasarkan Mencipta corak irama mudah mengunakan ikon mewakili nilai. Murid menyusun empat kad corak/not.
+**Aktiviti 1 — Eksplorasi (8 minit):** Guru memodelkan empat corak irama dan cara memadankan bunyi dengan ikon ta, ti-ti dan sa.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Murid mencipta satu corak atau frasa sendiri, menotasi dengan kad/ikon dan mempersembahkannya di hadapan pasangan.
+**Aktiviti 2 — Aplikasi muzikal (10 minit):** Murid mengambil kad ikon mengikut bunyi, menyusun di papan dan menepuk pola dalam kumpulan.
 
-**Pengukuhan & Penilaian — 6 minit**  
-Semak 3 aspek: bilangan detik tepat, kesesuaian bunyi/not dan keupayaan mempersembahkan ciptaan.
+**Pengukuhan dan pentaksiran (6 minit):** Semak pemadanan, ketepatan tepuk dan satu corak hasil ciptaan murid.
 
-**Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+**Penutup (2 minit):** Murid melakukan satu contoh kemahiran, memberi refleksi dan menyatakan aspek yang mahu diperbaiki. Guru merekod pemerhatian PBD.
 
-**Bahan:** Kad ikon/not, alat perkusi atau rekoder mengikut SP, bahan improvisasi selamat.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 54; **belum disahkan pada halaman buku asal**. RPT sumber menyebut Audio 44-47; **nombor trek belum diaudit dengan fail audio**.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 54; audio berlesen jika telah diperiksa, kad atau alat muzik yang sesuai.
 
-**Catatan pelaksanaan / pemulihan:** __________________________________________
+**Rujukan:** https://anyflip.com/iawvx/mran/basic/51-100. Teks buku/unit berkaitan telah dirujuk; semakan visual semua halaman belum lengkap.
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Audio bercetak / rujukan RPT:** 44–47. **Tidak menandakan ketersediaan fail audio.**
+
+**Nota audit:** SP dan aktiviti perlu kelulusan guru individu.
+
+**Refleksi / pemulihan:** ________________________________________
+
+**Kawalan penerbitan:** Kekal staging; tidak layak FINAL READY tanpa audit buku, audio, format Word/PDF dan ujian Telegram/Web.

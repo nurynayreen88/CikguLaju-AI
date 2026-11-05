@@ -1,34 +1,33 @@
 # RPH PENDIDIKAN MUZIK TAHUN 2 — PdP 22
 
-**Kelas:** __________  **Tarikh:** __________  **Masa:** __________  
-**Unit / Tajuk:** BURUNG KENEK-KENEK  
-**Bidang:** Permainan Alat Perkusi  
-**SK / SP (RPT sumber):** 2.2.3
-**Tempoh cadangan:** 30 minit  
+**Kelas:** __________  **Tarikh:** __________  **Masa:** __________
+**Unit/Tajuk:** BURUNG KENEK-KENEK
+**SK / SP DSKP:** 2.2.3
+**Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif pembelajaran (draf boleh ukur):** Memainkan corak irama empat detik dengan betul dalam sekurang-kurangnya 2 daripada 3 percubaan.
+**Fokus:** Burung Kenek-Kenek — iringan kastanet dan loceng
 
-**Kriteria kejayaan:** Pemerhatian guru memenuhi sasaran objektif dan murid mampu memperagakan kemahiran yang dipelajari.
+**Objektif:** Murid memainkan skor iringan kastanet dan loceng bersama nyanyian pada tempo seragam.
 
-**Set Induksi — 4 minit**  
-Guru mengetuk empat detik; murid menepuk semula dengan stabil dan meneka perubahan tempo/dinamik.
+**Set induksi (4 minit):** Guru memperkenalkan contoh lagu, pola bunyi atau gambar berkaitan BURUNG KENEK-KENEK; murid menunjukkan respons awal.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit)**  
-Guru menerangkan skor ikon/corak irama dengan penekanan pada Memainkan alat perkusi mengikut corak irama berdasarkan skor ikon yang mewakili nilai   Mengenal ikon berdasarkan nilai not.. Murid berlatih melalui tepukan dan kiraan sebelum menggunakan alat.
+**Aktiviti 1 — Eksplorasi (8 minit):** Guru memodelkan sebutan irama alat dan membimbing murid menepuk corak sebelum mengambil alat.
 
-**Aktiviti 2 — Latih tubi / penerapan dalam muzik (10 minit)**  
-Kumpulan kecil memainkan 2–3 ulangan corak irama berpandukan skor; ketua kumpulan memberi isyarat mula, henti dan tempo.
+**Aktiviti 2 — Aplikasi muzikal (10 minit):** Kumpulan kastanet dan loceng memainkan pola secara berasingan lalu bergabung mengiringi nyanyian.
 
-**Pengukuhan & Penilaian — 6 minit**  
-Periksa ketepatan pola empat detik dalam 3 percubaan dan penglibatan setiap murid.
+**Pengukuhan dan pentaksiran (6 minit):** Semak tempo, skor, koordinasi dan pertukaran peranan.
 
-**Penutup — 2 minit**  
-Guru meminta murid menunjukkan satu contoh kemahiran yang telah dipelajari. Murid memberi refleksi satu ayat; guru merekod pemerhatian PBD.
+**Penutup (2 minit):** Murid melakukan satu contoh kemahiran, memberi refleksi dan menyatakan aspek yang mahu diperbaiki. Guru merekod pemerhatian PBD.
 
-**Bahan:** Alat perkusi, skor ikon atau notasi ringkas, kad detik dan audio iringan.  
-**Rujukan sumber:** RPT sumber mencadangkan Buku Teks m/s 62-63; **belum disahkan pada halaman buku asal**. RPT sumber menyebut Audio 57, 58, 59; **nombor trek belum diaudit dengan fail audio**.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 62-63; audio berlesen jika telah diperiksa, kad atau alat muzik yang sesuai.
 
-**Catatan pelaksanaan / pemulihan:** __________________________________________
+**Rujukan:** https://anyflip.com/iawvx/mran/basic/51-100. Teks buku/unit berkaitan telah dirujuk; semakan visual semua halaman belum lengkap.
 
-**Audit:** RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED; sumber DSKP KSSR Semakan 2017, urutan RPT 2025/2026 (jika tersedia); belum diuji keluaran Word/PDF 1 halaman.
+**Audio bercetak / rujukan RPT:** 60–66 (berbeza rujukan RPT 57–59). **Tidak menandakan ketersediaan fail audio.**
+
+**Nota audit:** RPT mencatat 57–59 lagu; halaman 62–63 buku sebenarnya membekalkan Audio 60–66 untuk skor perkusi. Nombor sumber asal dikekalkan.
+
+**Refleksi / pemulihan:** ________________________________________
+
+**Kawalan penerbitan:** Kekal staging; tidak layak FINAL READY tanpa audit buku, audio, format Word/PDF dan ujian Telegram/Web.
