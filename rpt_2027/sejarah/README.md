@@ -28,3 +28,14 @@
 Jalankan: `python scripts/check_sejarah_y4_y6_2027.py`.
 
 Nota: RPH ialah draf khusus topik dan SP, bukan pengesahan pedagogi seorang demi seorang.
+
+## Kemajuan teknikal terkini (6 November 2026)
+
+- **108/108 RPH** dan **36 PdP/Tahun** lengkap sebagai bahan draf unit/SP, 33 SK dan 228 SP; RPT 2027 Kumpulan A/B disemak minggu cuti penggal/perayaan.
+- **Word preview** telah dijana dan diuji di GitHub Actions; 108 RPH sebenar dalam Word dibaca semula selepas penukaran PDF, **satu A4 setiap PdP**. 3 RPT landscape Word/PDF, 5 halaman setahun. Pembetulan font, lebar dan jadual RPT telah diuji; sampel visual diperiksa.
+- **PDF preview** daripada HTML turut lulus. Tiga workflow Sejarah terbaru lulus pada commit `bd170c29bda6217220b9379e229eb435237accc6`.
+- **Fail-closed source contract:** `web/sejarah_2027_staging_source.py` dan `scripts/check_sejarah_release_gates_2027.py` memastikan 108/108 RPH DRAF tidak boleh dibuka sebagai eksport pengguna.
+- Status individu 108 RPH dan pagar kelulusan: `audits/sejarah_y4_y6_release_approval_manifest_20261106.json` dan `.md`.
+- **Belum FINAL READY:** halaman aktiviti sebenar BT setiap PdP, kelulusan pedagogi individu, suntikan logo sekolah sebenar, kalendar negeri/jadual guru dan ujian enjin natif Telegram–Web belum disahkan. Word/PDF yang berjaya diuji ialah **penjana pratonton berasingan**, bukan pengesahan runtime produksi.
+
+Semua kerja masih pada PR #341 DRAF. Jangan gabung atau deploy atas keputusan QA teknikal sahaja.
