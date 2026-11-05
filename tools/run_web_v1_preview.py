@@ -125,10 +125,36 @@ def options():
                 from web.authoritative_curriculum_source import SharedSourceUnavailable
                 try:
                     source = AuthoritativeHttpCurriculumSource(source_url, source_token)
+                    # Prove the live Telegram source is available before resolving
+                    # any Web lesson; never fall back silently to a stale copy.
+                    shared_subjects = source.list_subjects(year)
                     if kind == "subjects":
-                        return jsonify(source.list_subjects(year))
+                        items = list(shared_subjects)
+                        if year in range(2, 7):
+                            from web.unified_rph_web import source_records
+                            for code, label in (("MORAL", "Pendidikan Moral"),
+                                                ("PJPK", "PJPK"),
+                                                ("PSV", "Pendidikan Seni Visual")):
+                                if any(row.get("value") == code for row in items):
+                                    continue
+                                available = bool(
+                                    source_records(year, code, "PJ")
+                                    or source_records(year, code, "PK")
+                                ) if code == "PJPK" else bool(source_records(year, code))
+                                if available:
+                                    items.append({"value": code, "label": label})
+                        return jsonify(items)
                     subject = request.args.get("subject", "")
                     component = request.args.get("component")
+                    if year in range(2, 7):
+                        from web.unified_rph_web import SOURCE_SUBJECTS
+                        if subject in SOURCE_SUBJECTS:
+                            from web.unified_rph_web import unit_options as source_units, pdp_options as source_pdp
+                            if kind == "units":
+                                return jsonify(source_units(year, subject, component))
+                            if kind == "pdp":
+                                return jsonify(source_pdp(year, subject,
+                                    request.args.get("unit", ""), component))
                     if kind == "units":
                         return jsonify(source.list_units(year, subject, component))
                     if kind == "pdp":
