@@ -109,7 +109,8 @@ class UnifiedWebRPHTests(unittest.TestCase):
                 continue
             self.assertEqual(result.status_code, 200, result.get_json())
             self.assertEqual(result.get_json()["teacher"], {
-                "class": "5 Bestari", "date": "2027-03-08", "time": "08:30"})
+                "class": "5 Bestari", "date": "2027-03-08", "time": "08:30",
+                "students": ""})
             docx = self.client.get("/api/web/rph/word", query_string=query)
             self.assertEqual(docx.status_code, 200)
             with ZipFile(__import__("io").BytesIO(docx.data)) as z:
