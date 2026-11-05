@@ -2,7 +2,7 @@
 **Status:** DRAF SEMAK  
 **Unit:** Projek Seni Visual penggal kedua  
 **Tajuk:** Pameran penggal kedua  
-**SK:** 3.3 — Projek Persembahan Kesenian  
+**SK:** 5.1 — Persembahan hasil karya  
 **SP:** 3.3.1; 3.3.2  
 **Rujukan Buku Teks:** Projek Kesenian Penggal Dua BT ms 48–49; pameran Seni Visual selepas Unit 10 ialah adaptasi CikguLaju
 **BBM:** BT ms 48–49, karya Unit 6–10, kad label, pelan meja, pita dan bahan promosi
@@ -19,5 +19,5 @@ Murid dapat menghasilkan satu pelan susun atur pameran dengan sekurang-kurangnya
 **Penutup (5 minit):** Murid menyusun semula alatan atau mengesahkan persediaan pameran.
 **Pembezaan:** Sediakan templat kapsyen dan kad peranan; murid lanjutan menjadi pemandu galeri.
 **Keselamatan:** Laluan bebas halangan; karya ringan dipamer pada permukaan stabil tanpa paku.
-**Nota pemetaan DSKP:** SK 3.3 dipadankan dengan SP 3.3.1–3.3.5 bagi komponen Seni Visual dalam DSKP Pendidikan Kesenian Tahun 3, halaman 38–39. Susunan projek ini ialah adaptasi CikguLaju, bukan urutan literal buku teks.
+**Nota sumber:** DSKP KSSR Semakan 2017 Pendidikan Seni Visual Tahun 3, ms 35–36 (cetak), menyenaraikan SK 5.1 Persembahan hasil karya bersama SP 3.3.1–3.3.5. Penomboran ini dikekalkan seperti dokumen asal; susunan dua projek ialah adaptasi CikguLaju.
 **Sumber:** [DSKP PSV Tahun 3](https://drive.google.com/file/d/1asgoqHa5EPOTzhcDz9k5G4WzdGSAg8tY/view); [Buku Teks Pendidikan Kesenian Tahun 3 (bahagian Seni Visual)](https://fliphtml5.com/hkvtu/vifc/Pendidikan_Kesenian_Tahun_3_SK/).
