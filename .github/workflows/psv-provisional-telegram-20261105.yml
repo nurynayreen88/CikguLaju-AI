@@ -1,0 +1,33 @@
+name: PSV provisional Telegram RPH source and navigation
+on:
+  push:
+    branches:
+      - staging/psv-provisional-telegram-20261105
+      - main
+    paths:
+      - 'web/psv_2027_provisional_runtime.py'
+      - 'tests/test_psv_provisional_telegram_20261105.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - '.github/workflows/psv-provisional-telegram-20261105.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'web/psv_2027_provisional_runtime.py'
+      - 'tests/test_psv_provisional_telegram_20261105.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+permissions:
+  contents: read
+jobs:
+  test-psv-provisional:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Compile isolated files
+        run: python -m py_compile web/psv_2027_provisional_runtime.py tests/test_psv_provisional_telegram_20261105.py
+      - name: All 210 PSV Telegram route selections, audit and strict-gate tests
+        run: python -m unittest -v tests.test_psv_provisional_telegram_20261105 tests.test_psv_runtime_bridge_candidate
