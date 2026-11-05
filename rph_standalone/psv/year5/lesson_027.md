@@ -9,7 +9,7 @@
 **Tempoh:** 60 minit
 
 ## Objektif dan kriteria kejayaan
-Murid dapat menghasilkan dua lakaran Bunga Kekwa Mekar dan memilih media catan serta mozek untuk bingkai. Evidens PBD: Dua lakaran berlabel, satu sampel latar cat dan satu ujian mozek bingkai.
+Murid dapat menghasilkan dua lakaran Bunga Kekwa Mekar dan memilih media catan serta mozek untuk bingkai. Kriteria kejayaan: Dua lakaran berlabel, satu sampel latar cat dan satu ujian mozek bingkai.
 
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menunjukkan tema Bunga Kekwa Mekar; murid menjelaskan satu pemerhatian visual.
