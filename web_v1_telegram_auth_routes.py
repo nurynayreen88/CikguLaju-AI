@@ -102,3 +102,38 @@ def telegram_logout():
     response = make_response(jsonify({"authenticated": False}))
     response.delete_cookie(COOKIE, path="/", secure=True, httponly=True, samesite="Lax")
     return response
+
+
+@auth_blueprint.get("/api/web/teacher/classes")
+def teacher_class_suggestions():
+    """Return only this session's saved class names; never a user directory."""
+    config = _config()
+    if config is None:
+        return jsonify({"error": "login not configured"}), 503
+    uid = verify_session_ticket(
+        request.cookies.get(COOKIE), config["CIKGULAJU_WEB_SESSION_SECRET"])
+    if uid is None:
+        return jsonify({"error": "authentication required"}), 401
+    if request.args:
+        return jsonify({"error": "unexpected query parameters"}), 400
+    try:
+        account = _lookup(config, uid)
+    except Exception:
+        current_app.logger.exception("Web teacher profile account validation failed")
+        return jsonify({"error": "account lookup unavailable"}), 503
+    if not account or account.get("telegram_user_id") != uid:
+        return jsonify({"error": "existing account required"}), 403
+    if config.get("account_backend") != "supabase":
+        return jsonify({"error": "saved classes source unavailable"}), 503
+    try:
+        from web.teacher_class_choices import get_existing_teacher_classes
+        items = get_existing_teacher_classes(
+            config["supabase_url"], config["supabase_key"], uid)
+    except Exception:
+        current_app.logger.exception("Web teacher class suggestions unavailable")
+        return jsonify({"error": "saved classes temporarily unavailable"}), 503
+    response = make_response(jsonify({"items": items}))
+    response.headers["Cache-Control"] = "no-store, private"
+    response.headers["Vary"] = "Cookie"
+    response.headers["X-Content-Type-Options"] = "nosniff"
+    return response
