@@ -39,6 +39,16 @@ def teacher_profile_script():
     return send_file(file, mimetype="application/javascript", max_age=1800, conditional=True)
 
 
+@app.get("/assets/web-payment.js")
+def web_payment_script():
+    """Same-origin payment UI; no credentials or payment state in static JS."""
+    from pathlib import Path
+    from flask import send_file
+    file = Path(__file__).resolve().parents[1] / "web_v1_static_preview" / "web-payment.js"
+    return send_file(file, mimetype="application/javascript", max_age=1800,
+                     conditional=True)
+
+
 @app.get("/healthz")
 def web_liveness():
     """Liveness only: never confuse a booted worker with an approved product."""
