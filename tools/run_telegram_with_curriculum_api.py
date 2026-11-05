@@ -358,3 +358,17 @@ except Exception as _manual_exc:
     USER_MANUAL_MENU_ACTIVE = False
     print("Public user manual menu unavailable:",
           type(_manual_exc).__name__, flush=True)
+
+
+# Owner-approved provisional PSV 2027 RPH access (Years 2–6, 210 PdP).
+# This uses existing Telegram subject -> numbered PdP -> class/date -> PDF/Word
+# and original subscription/credit checks. Source RPH remains DRAF, the formal
+# 210-signoff release bridge stays fail-closed, and no user/DB fields are changed.
+# Emergency opt-out: CIKGULAJU_PSV_PROVISIONAL_ENABLED=0.
+try:
+    from web.psv_2027_provisional_runtime import install as install_psv_provisional
+    PSV_2027_PROVISIONAL_RPH_ACTIVE = bool(install_psv_provisional(vars(telegram_runtime)))
+except Exception as _psv_provisional_exc:
+    PSV_2027_PROVISIONAL_RPH_ACTIVE = False
+    print("PSV provisional RPH route unavailable:",
+          type(_psv_provisional_exc).__name__, flush=True)
