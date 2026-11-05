@@ -27,6 +27,7 @@ Murid dapat **menyenaraikan sekurang-kurangnya empat perayaan di Malaysia** dan 
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Semakan visual buku teks untuk PdP 001:** Unit 1, m/s 1–3 (PDF 7–9), gambar perayaan dan dialog pameran sekolah telah diperiksa; rujukan ini khusus PdP 001.
 
-**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — halaman belum dipadankan; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 1, m/s 1–3 (PDF 7–9). Halaman yang diperiksa mengandungi Gambar Aidilfitri, Krismas, Deepavali, Wesak serta pameran Maulidur Rasul, Gawai, Jis Pai dan Ponggal. Langkah PdP ini ialah olahan guru berdasarkan contoh dan tugasan sebenar, bukan petikan buku atau pengesahan pelaksanaan PBD.
+
+**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — Unit 1, m/s 1–3 (PDF 7–9) sudah disemak secara visual untuk aktiviti PdP ini; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

@@ -21,7 +21,7 @@ Murid dapat **mempraktikkan dua tindakan menerima dan menghormati kepelbagaian k
 
 **Aktiviti 1 (20 minit) — Rancang bantuan tanpa pilih kasih:** Guru menunjukkan kegiatan kebajikan pada **m/s 4 (PDF 7)**. Murid merancang agihan peralatan sekolah bagi penerima daripada latar berbeza; setiap kumpulan menetapkan giliran, bahasa layanan dan langkah menghormati keperluan semua penerima. Guru menegaskan tiada syarat penyertaan aktiviti keagamaan untuk mendapat bantuan.
 
-**Aktiviti 2 (20 minit) — Simulasi khidmat masyarakat:** Murid melaksanakan agihan kad barangan kepada penerima pelbagai latar secara adil, mendengar permintaan dengan sopan dan mengurus perbezaan pendapat. Pemerhati mencatat dua tindakan hormat dan satu penambahbaikan; murid mengulang lakonan selepas maklum balas (SP 1.5).
+**Aktiviti 2 (20 minit) — Simulasi khidmat masyarakat:** Murid melaksanakan agihan kad barangan kepada penerima pelbagai latar secara adil, mendengar permintaan dengan sopan dan mengurus perbezaan pendapat. Pemerhati mencatat dua tindakan hormat dan satu penambahbaikan; murid mengulang lakonan selepas maklum balas (SP 1.5). Guru mencatat dua tindakan saksama yang diperagakan serta satu pembetulan berdasarkan situasi kebajikan dalam buku teks.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Evidens individu: dua tingkah laku menerima dan menghormati orang lain, serta satu cadangan pengurusan adil (SP 1.5). Prestasi lakonan tidak dianggap sebagai bukti amalan di luar kelas.
 
@@ -29,6 +29,7 @@ Murid dapat **mempraktikkan dua tindakan menerima dan menghormati kepelbagaian k
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Semakan visual sumber:** m/s 2–4 (PDF 5–7); aktiviti di atas dirujuk pada halaman buku teks tersebut. Halaman SP lain dalam unit belum diaudit.
 
-**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — halaman belum dipadankan; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 1, m/s 4–8 (PDF 7–11). Halaman diperiksa: Program kebajikan, contoh ajaran agama yang diamalkan dan Uji Diri kesan harmoni. PdP ialah aktiviti olahan berdasarkan kandungan asal, bukan petikan verbatim atau bukti amalan murid di luar kelas.
+
+**Rujukan:** [DSKP SK Tahun 5](https://drive.google.com/file/d/1K4qxxpvanon2YfjVHZqZbyEYKyJbQSsD/view); [buku teks Tahun 5](https://drive.google.com/file/d/1l4p3kzkuvz1XKjT38ACm7l06iWemS2lz/view) — Unit 1, m/s 4–8 (PDF 7–11) diperiksa secara visual untuk aktiviti PdP ini; [RPT SK 2026](https://id.scribd.com/document/1077746849/Rpt-Pmrl-Thn-5-Sk-2026) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

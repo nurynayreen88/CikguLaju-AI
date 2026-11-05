@@ -21,7 +21,7 @@ Murid dapat **memperagakan dua tindakan patuh** yang sesuai untuk keadaan keluar
 
 **Aktiviti 1 (20 minit) — Pilih tindakan keluarga:** Guru menayangkan contoh buku teks **m/s 1–3**: mengucap salam, menghormati ibu bapa, berdoa sebelum makan dan membantu menjaga hubungan kekeluargaan. Murid memilih **dua tindakan** yang boleh dilakonkan dengan selamat tanpa meniru amalan agama tertentu. Guru menyemak kesesuaian tindakan bagi keluarga yang berbeza.
 
-**Aktiviti 2 (20 minit) — Amalkan dan maklum balas:** Murid berpasangan melakonkan situasi meminta izin, menghormati ibu bapa atau membantu ahli keluarga. Pemerhati mencatat dua tingkah laku yang kelihatan, memberi maklum balas, kemudian murid membetulkan perlakuan dan menyatakan sebab tindakan itu wajar. Murid tidak diminta mengisahkan amalan peribadi.
+**Aktiviti 2 (20 minit) — Amalkan dan maklum balas:** Murid berpasangan melakonkan situasi meminta izin, menghormati ibu bapa atau membantu ahli keluarga. Pemerhati mencatat dua tingkah laku yang kelihatan, memberi maklum balas, kemudian murid membetulkan perlakuan dan menyatakan sebab tindakan itu wajar. Murid tidak diminta mengisahkan amalan peribadi. Guru memerhati dua tingkah laku sopan yang dipraktikkan, memberi maklum balas dan merekod bukti individu untuk SP 1.5.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Guru menyemak **dua tindakan yang dipraktikkan**, respons berhemah dan satu ayat refleksi (SP 1.5). Lakonan ialah evidens bilik darjah; amalan sebenar di rumah tidak dianggap telah dibuktikan tanpa evidens tambahan.
 
@@ -29,6 +29,7 @@ Murid dapat **memperagakan dua tindakan patuh** yang sesuai untuk keadaan keluar
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Semakan visual sumber:** m/s 1–3 (PDF 10–12); contoh aktiviti di atas dipadankan pada halaman yang diperiksa. Halaman untuk SP lain dalam unit ini belum diaudit.
 
-**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — unit buku teks **Ajaran Agama Keluarga Saya** bermula pada **m/s 1 (halaman PDF 10)**, disahkan melalui halaman kandungan; halaman aktiviti khusus SP belum dipadankan; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 1, m/s 3–6 (PDF 12–15). Halaman yang diperiksa mengandungi Contoh patuh, borang temu bual m/s 5 dan Uji Diri m/s 6. Langkah PdP ini ialah olahan guru berdasarkan contoh dan tugasan sebenar, bukan petikan buku atau pengesahan pelaksanaan PBD.
+
+**Rujukan:** [DSKP SK Tahun 2](https://drive.google.com/file/d/1Dty9zBeUefMVqlT2Po2CHN_YQeMFtI4E/view); [buku teks Tahun 2](https://drive.google.com/file/d/1HfrXEKYWSDvjClcArAwdCR5yglIRip2b/view) — Unit 1, m/s 3–6 (PDF 12–15) sudah disemak secara visual untuk aktiviti PdP ini; [RPT SK 2026](https://anyflip.com/jhshr/iihq/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.

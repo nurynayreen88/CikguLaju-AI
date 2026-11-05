@@ -41,7 +41,13 @@ def book_verified_pairs() -> set[tuple[int, int]]:
         assert pair not in checked, pair
         checked.add(pair)
     assert len(checked) == 45, len(checked)
-    return checked
+    third = json.loads((AUDITS / "pendidikan_moral_visual21_unit1_unit5_20261105.json").read_text(encoding="utf-8"))
+    new_pairs = {(r["year"], r["lesson"]) for r in third["records"]}
+    assert len(new_pairs) == len(third["records"]) == 21
+    assert not (checked & new_pairs), "newly verified book RPH overlap prior evidence"
+    checked.update(new_pairs)
+    assert len(checked) == 66, len(checked)
+    return checked, new_pairs
 
 
 def main() -> None:
@@ -56,7 +62,7 @@ def main() -> None:
     from check_moral_official_dskp_350sp import run as verify_dskp
     verify_dskp()
 
-    visual = book_verified_pairs()
+    visual, new_visual = book_verified_pairs()
     output = []
     counts = Counter()
     matched = set()
@@ -88,7 +94,7 @@ def main() -> None:
                 lesson = int(r["PdP_Teras_Asal"])
                 assert f"PdP {lesson:03d}" in source
                 key = (year, lesson)
-                book_activity = "VISUAL_REKOD_SP_20261104" if key in visual else "BELUM_DISAHKAN_HALAMAN_AKTIVITI"
+                book_activity = ("VISUAL_REKOD_SP_20261105" if key in new_visual else "VISUAL_REKOD_SP_20261104") if key in visual else "BELUM_DISAHKAN_HALAMAN_AKTIVITI"
                 counts["core"] += 1
                 if key in visual:
                     counts["core_book_visual"] += 1
@@ -120,7 +126,7 @@ def main() -> None:
                 "Telegram_Akaun_Sebenar": "BELUM_UJI_HANTAR_KE_AKAUN_GURU",
             })
     assert len(output) == len(matched) == 480, (len(output), len(matched))
-    assert counts == {"core": 210, "core_book_visual": 45, "supplement": 270, "source_hold": 14}, counts
+    assert counts == {"core": 210, "core_book_visual": 66, "supplement": 270, "source_hold": 14}, counts
     dest.parent.mkdir(parents=True, exist_ok=True)
     with dest.open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=FIELDS)
@@ -129,7 +135,7 @@ def main() -> None:
     assert dest.stat().st_size > 40000, dest.stat().st_size
     print(f"PASS INDIVIDUAL EVIDENCE LEDGER: 480/480 records, {dict(counts)}")
     print(f"Saved: {dest}")
-    print("NOT FINAL READY: source-book activity unverified in 165 core RPH + 270 supplementary; 14 sessions additionally on Y6 unit source hold.")
+    print("NOT FINAL READY: source-book activity unverified in 144 core RPH + 270 supplementary; 14 sessions additionally on Y6 unit source hold.")
     print("Word A4 all-session visual and actual Telegram account delivery are separate release gates.")
 
 

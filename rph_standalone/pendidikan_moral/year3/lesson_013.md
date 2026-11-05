@@ -17,9 +17,9 @@ Murid menyiapkan tugasan **SP 5.1** (Menyenaraikan contoh pertuturan dan perlaku
 ## Langkah PdP
 **Set induksi (5 minit):** Guru menceritakan situasi **Murid menyapa pekerja sekolah dan pelawat dengan bahasa sopan**. Murid mengenal pasti pihak terlibat dan tindakan yang perlu dipertimbangkan.
 
-**Aktiviti 1 (20 minit) — Tugasan 5.1:** Guru membentangkan situasi **Murid menyapa pekerja sekolah dan pelawat dengan bahasa sopan** dan menyediakan kad/gambar yang relevan dengan unit buku teks **Beradab Sopan Pekerti Terpuji** (mula m/s 33; halaman aktiviti belum disahkan). Murid melaksanakan arahan **“Menyenaraikan contoh pertuturan dan perlakuan yang sopan terhadap warga sekolah.”** dengan menghasilkan **senarai tiga contoh atau perkara yang tepat**; pasangan menyemak fakta, bukan hanya memilih tindakan baik atau buruk. Guru merekod satu respons individu.
+**Aktiviti 1 (20 minit) — Sopan terhadap warga sekolah:** Guru memaparkan buku teks m/s 33–35: murid memberi salam kepada guru dan kakitangan, meminta izin duduk serta meminta maaf selepas lewat. Murid menyenaraikan tiga ucapan dan dua perlakuan sopan terhadap warga sekolah (SP 5.1).
 
-**Aktiviti 2 (20 minit) — Tugasan 5.2:** Guru menukar sudut situasi kepada tindakan atau akibat yang boleh diperhatikan. Murid melaksanakan arahan **“Mengenal pasti kepentingan bersikap sopan dan berbudi pekerti mulia terhadap warga sekolah.”** dan menyediakan **jadual dua contoh dengan label atau alasan** berdasarkan contoh yang relevan dengan unit. Murid membentangkan hasil dan memperbaiki jawapan selepas pertanyaan lanjut guru.
+**Aktiviti 2 (20 minit) — Kepentingan tutur kata:** Murid membandingkan sambutan guru, kerani dan pengawal dalam m/s 33–35 dan melengkapkan jadual dua sikap sopan serta dua kepentingannya, seperti mengekalkan hubungan mesra dan memudahkan urusan sekolah (SP 5.2). Guru meminta alasan, bukan label 'baik' sahaja.
 
 **Pengukuhan/Pentaksiran PBD (10 minit):** Guru mengutip hasil individu: **senarai tiga contoh atau perkara yang tepat** untuk SP 5.1 dan **jadual dua contoh dengan label atau alasan** untuk SP 5.2; semak ketepatan makna, bukti dan kaitan dengan nilai **Hemah tinggi**. Murid membetulkan satu jawapan selepas maklum balas.
 
@@ -27,4 +27,6 @@ Murid menyiapkan tugasan **SP 5.1** (Menyenaraikan contoh pertuturan dan perlaku
 
 **Pembezaan:** Murid memerlukan sokongan dibantu dengan pilihan ayat/gambar; murid maju memberi satu justifikasi tambahan. Tidak meminta pendedahan pengalaman peribadi.
 
-**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — unit bermula m/s 33 (PDF 39); halaman aktiviti khusus belum dipadankan; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
+**Bukti visual buku teks (audit 2026-11-05):** Unit 5, m/s 33–35 (PDF 39–41). Halaman diperiksa: Ucapan sopan terhadap guru, kerani, pengawal dan perbualan semasa hari persekolahan. Padanan contoh aktiviti dengan SP dinilai secara khusus bagi PdP 013; aktiviti dalam RPH ialah olahan CikguLaju, bukan petikan verbatim.
+
+**Rujukan:** [DSKP SK Tahun 3](https://drive.google.com/file/d/1OK5X81O0HspAwLMbFJK4xYQHc0kfZTqv/view); [buku teks Tahun 3](https://drive.google.com/file/d/1kN_tVetQkc5SUDzXBRag9S7_u78Ep7jl/view) — Unit 5, m/s 33–35 (PDF 39–41) disemak secara visual dan langkah PdP diolah daripada contoh aktiviti; [RPT SK 2026](https://anyflip.com/aspgm/fypj/basic) sebagai rujukan urutan, bukan tarikh 2027. Aktiviti ialah cadangan CikguLaju dan masih perlu kelulusan.
