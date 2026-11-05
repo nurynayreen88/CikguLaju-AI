@@ -1,0 +1,35 @@
+# English Year 4 — Lesson 107: Listening 21
+
+**Topic:** Helping out  
+**Main SP:** 1.2.3  
+**Complementary SP:** 3.3.1  
+**Duration:** 60 minutes  
+**References:** SB pp.66–67; TB pp.118–119; Class CD2 Track 32 (story Activity 1, TB p.118); Primary Year 4 SK SOW Lesson 107
+
+## Set induction (10 minutes)
+**Teacher:** Display Part One story pictures and elicit the events pupils remember before sequencing.
+**Pupils:** Recall pictures from Part One.
+
+## Activity 1 (15 minutes)
+**Teacher:** Model sequencing one Part One picture, then ask groups to order the rest and recall their predicted endings.
+**Pupils:** Sequence pictures and recall the predicted ending.
+
+## Activity 2 (20 minutes)
+**Teacher:** Play the next part of the story, ask pupils to check their earlier predictions, then replay the key section to confirm what actually happened.
+**Pupils:** Listen to Track 32 and compare events with predictions.
+
+## PBD / reinforcement (10 minutes)
+**Teacher:** Guide shared reading of the story events and ask pupils to name one event supported by the recording. Replay Track 32 as needed and record pupils' listening responses.
+**Pupils:** Read together and discuss story details.
+
+
+
+## Closure (5 minutes)
+**Teacher:** Invite pupils to explain one similarity or difference between their prediction and the story's actual events.
+**Pupils:** Name one difference from the prediction.
+
+**PBD:** Check pupils' comparison of events heard in story Track 32 with their earlier predictions for main Listening SP 1.2.3; observe their supported shared reading of the printed story for complementary Reading SP 3.3.1. Keep the SOW-listed SB pp.66–67 and TB pp.118–119 pending source inspection; Class CD2 Track 32 is verified in TB p.118; MP3 playback remains untested.  
+**Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

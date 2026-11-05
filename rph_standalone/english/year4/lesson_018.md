@@ -1,0 +1,35 @@
+# English Year 4 — Lesson 018: Speaking 4
+
+**Topic:** My Week  
+**Main SP:** Speaking 2.1.1  
+**Complementary SP:** Listening 1.2.5  
+**References:** SB p.15 Activity 3; TB p.33; timetable  
+**Duration:** 60 minutes
+
+## Set induction (10 minutes)
+**Teacher:** Review challenging subject names using timetable flashcards.
+**Pupils:** Name school subjects from timetable flashcards.
+
+## Activity 1 (15 minutes)
+**Teacher:** Pupils list three subjects they like and practise 'What's your favourite subject?'
+**Pupils:** List three preferred subjects and practise the model question.
+
+## Activity 2 (20 minutes)
+**Teacher:** Model a favourite-subject answer using because, then guide pairs through TB Activity 3 and ask them to explain their preferences.
+**Pupils:** Ask about favourite subjects and explain reasons using because.
+
+## PBD and reinforcement (10 minutes)
+**Teacher:** Pupils complete the optional TB activity; teacher observes question comprehension and reasons.
+**Pupils:** Complete the optional speaking task and respond to questions.
+**Teacher:** Use Workbook p.12, Activity 1 according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
+**Pupils:** Complete Workbook p.12, Activity 1; read the school timetable and identify the subjects shown.
+
+## Closure (5 minutes)
+**Teacher:** Invite pairs to report a favourite subject using because to explain the choice.
+**Pupils:** Share a favourite subject and a reason.
+
+**PBD:** Check task responses against Speaking 2.1.1 and Listening 1.2.5, recording individual progress.  
+**Differentiation:** Provide question frames and check spellings against SB.  
+**SOW source:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

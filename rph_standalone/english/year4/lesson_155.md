@@ -1,0 +1,33 @@
+# English Year 4 — Lesson 155: Listening 30
+
+**Topic:** What's the matter?  
+**Main SP:** 1.2.2  
+**Complementary SP:** 2.1.1  
+**Duration:** 60 minutes  
+**References:** resources/lesson_155_home_safety_listening_advice_pbd_DRAFT.md; SB p.107 Activities 3–4; TB p.157; Activity 4 CD2 Track 78; Primary Year 4 SOW Lesson 155
+
+## Set induction (10 minutes)
+**Teacher:** Use two symptom cards to review health vocabulary before introducing home-safety situations.
+**Pupils:** Identify home safety hazards.
+
+## Activity 1 (15 minutes)
+**Teacher:** Review home-safety vocabulary and the Activity 3 pictures.
+**Pupils:** Listen and repeat vocabulary.
+
+## Activity 2 (20 minutes)
+**Teacher:** Use SB Activity 3 to prepare pupils, then play CD2 Track 78 for Activity 4; pause to check key home-safety details and ask pupils to explain their answers.
+**Pupils:** Complete listening tasks.
+
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Assign Workbook p.88, Activity 3 as the main Workbook exercise in Assessment/PBD. Follow its printed instructions and check answers. During the listening task in Activity 1/2, check pupils' responses to spoken input as evidence for the main Listening SP.
+**Pupils:** Complete Workbook p.88, Activity 3; look at the pictures and write health advice using should or shouldn't.
+
+## Closure (5 minutes)
+**Teacher:** Ask pupils to state one home-safety detail they heard and explain its importance.
+**Pupils:** Share one safety rule.
+
+**PBD:** Check pupils' accurate responses to specific home-safety details heard in CD2 Track 78 for main Listening SP 1.2.2; observe their spoken advice and reasons for complementary Speaking SP 2.1.1. Workbook p.88 is written health-advice practice, not a substitute for listening evidence.  
+**Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

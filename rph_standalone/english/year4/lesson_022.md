@@ -1,0 +1,33 @@
+# English Year 4 — Lesson 022: Listening 5
+
+**Topic:** My Week  
+**Main SP:** Listening 1.2.5  
+**Complementary SP:** Listening 1.2.3  
+**References:** SB pp.16–17 Activity 1; TB p.34 Activity 1 — Class CD1 Track 22 (printed source; recorded speech and Telegram delivery remain unverified); sentence strips  
+**Duration:** 60 minutes
+
+## Set induction (10 minutes)
+**Teacher:** Play an activities-vocabulary review game.
+**Pupils:** Recall activity words in a vocabulary game.
+
+## Activity 1 (15 minutes)
+**Teacher:** Replay Class CD1 Track 22; pupils listen for why the girls enter the wrong classroom.
+**Pupils:** Listen to Class CD1 Track 22 for why the girls enter the wrong classroom.
+
+## Activity 2 (20 minutes)
+**Teacher:** Ask how the girls feel and whether the problem is solved; pupils respond to supported questions.
+**Pupils:** Explain the girls' feelings and whether the problem is solved.
+
+## PBD and reinforcement (10 minutes)
+**Teacher:** Demonstrate sequencing the first event, then distribute sentence strips for pupils to order and check in pairs.
+**Pupils:** Order sentence strips and compare the sequence. The teacher checks the order against the spoken sequence as the main Listening PBD evidence for SP 1.2.5; no Workbook activity is assigned until its printed page and task are verified.
+
+## Closure (5 minutes)
+**Teacher:** Invite groups to recount the story in order and explain one correction to their sequence.
+**Pupils:** Retell the story in order and correct errors.
+
+**PBD:** Check task responses against Listening 1.2.5 and Listening 1.2.3, recording individual progress.  
+**Differentiation:** Offer shorter or partly ordered sentence strips for support.  
+**SOW source:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

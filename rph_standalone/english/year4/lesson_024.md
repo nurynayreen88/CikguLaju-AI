@@ -1,0 +1,33 @@
+# English Year 4 — Lesson 024: Reading 5
+
+**Topic:** My Week  
+**Main SP:** Reading 3.2.2  
+**Complementary SP:** Reading 3.2.3  
+**References:** SB pp.18–19 Activities 1–2; TB pp.36–37; Class CD1 Track 25 (printed TB p.36 Activity 1; recording content/Telegram delivery unverified)  
+**Duration:** 60 minutes
+
+## Set induction (10 minutes)
+**Teacher:** Mime household chores and follow TB warm-up without preteaching 'feed' or 'jobs'.
+**Pupils:** Name chores shown through mime.
+
+## Activity 1 (15 minutes)
+**Teacher:** Set a personal-response question before pupils read and listen to Class CD1 Track 25, then check which child they identify with.
+**Pupils:** Read and listen to Track 25; choose a child they relate to.
+
+## Activity 2 (20 minutes)
+**Teacher:** Model using a sentence clue to infer one unfamiliar word, then guide pupils to complete TB Activity 1.
+**Pupils:** Infer unfamiliar words from context and complete Activity 1.
+
+## PBD and reinforcement (10 minutes)
+**Teacher:** Guide Activity 2, ask pupils to point to supporting reading details and explain their answers; omit the bottom-page writing task.
+**Pupils:** Locate reading details in Activity 2 and justify guesses. Pupils explain the reading details using the Student Book text. The previously cited Workbook p.12, Activity 1 is a school-timetable exercise and is not assigned for this household-chores lesson.
+
+## Closure (5 minutes)
+**Teacher:** Play a personalised 'have to' question game.
+**Pupils:** Ask and answer a personal have to question.
+
+**PBD:** Check task responses against Reading 3.2.2 and Reading 3.2.3, recording individual progress.  
+**Differentiation:** Connect chores to pupils' lives while acknowledging different family responsibilities.  
+**SOW source:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

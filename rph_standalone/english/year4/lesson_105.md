@@ -1,0 +1,35 @@
+# English Year 4 — Lesson 105: Writing 20
+
+**Topic:** Helping out  
+**Main SP:** 4.2.3  
+**Complementary SP:** 4.3.2  
+**Duration:** 60 minutes  
+**References:** SB p.75 Activities 3–4; TB p.113; Class CD2 Track 29 (Activity 4, Teacher's Book p.113; optional in this RPH); Primary Year 4 SK SOW Lesson 105
+
+## Set induction (10 minutes)
+**Teacher:** Review recycling and indefinite pronouns.
+**Pupils:** Recall recycling words and indefinite pronouns.
+
+## Activity 1 (15 minutes)
+**Teacher:** Lead a short spelling challenge using recycling words, then model an indefinite pronoun from the Grammar Box.
+**Pupils:** Play the spelling game and practise Grammar Box examples.
+
+## Activity 2 (20 minutes)
+**Teacher:** Model one true and one false sentence about recycling, then guide pupils through Activity 3 and ask them to write their own sentences.
+**Pupils:** Write true and false sentences about recycling habits.
+
+## PBD / reinforcement (10 minutes)
+**Teacher:** Organise partner exchanges in which pupils identify true sentences, explain their choices and correct one spelling or grammar error. Use Track 29 if required by the source activity.
+**Pupils:** Exchange sentences and identify which are true.
+
+
+
+## Closure (5 minutes)
+**Teacher:** Invite pupils to describe one practical recycling habit and explain how it helps.
+**Pupils:** Share one recycling habit.
+
+**PBD:** Assess pupils' original true/false sentences about recycling habits for main Writing SP 4.2.3, including clarity of meaning; check accurate spelling and revisions after partner feedback for complementary Writing SP 4.3.2. Optional Class CD2 Track 29 is verified in TB p.113; MP3 playback remains untested.  
+**Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

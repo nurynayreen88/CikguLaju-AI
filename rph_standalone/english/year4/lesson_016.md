@@ -1,0 +1,37 @@
+# English Year 4 — Lesson 016: Language Awareness 1
+
+**Main SP:** Teacher-selected DSKP SP  
+**Complementary SP:** Teacher-selected DSKP SP  
+**Topic:** Where are you from?  
+**References:** Get Smart Plus 4 Revision 1, TB Warm-up and Activities 1–3; SOW self-assessment  
+**Audio:** No track fixed by SOW  
+**Duration:** 60 minutes
+
+## Set induction (10 minutes)
+**Teacher:** Review Unit 1 countries, routines and free-time language.
+**Pupils:** Answer questions reviewing countries, routines and free time.
+
+## Activity 1 (15 minutes)
+**Teacher:** Follow TB Revision 1 Warm-up and Activity 1.
+**Pupils:** Complete Revision 1 Activity 1 with a partner.
+
+## Activity 2 (20 minutes)
+**Teacher:** Complete Revision 1 Activities 2–3; practise language needing reinforcement.
+**Pupils:** Complete Activities 2–3 and compare answers.
+
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Distribute the SOW 'How did I do in Unit 1?' checklist and guide pupils to assess their progress.
+**Pupils:** Rate their learning in the SOW Unit 1 self-assessment. 
+**Teacher:** Use Workbook p.9, 'Now I Can 1' according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
+**Pupils:** Complete Workbook p.9, 'Now I Can 1'; review countries, nationalities and action words to identify what they can do.
+
+## Closure (5 minutes)
+**Teacher:** Collect self-assessment checklists, identify a common learning need and help pupils set one specific goal for the next unit.
+**Pupils:** State one strength and one learning goal.
+
+## PBD and differentiation
+Assess the relevant activity responses against main SP Teacher-selected DSKP SP and complementary SP Teacher-selected DSKP SP. Offer modelling, picture cues, sentence frames and mixed-ability support; extend tasks for pupils ready for more independent work.
+
+**SOW reference:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** DRAF — teacher-selected learning standards and classroom activities require teacher approval; applicable book/audio, Word/PDF and Telegram delivery checks remain pending. Do not expose as FINAL READY.

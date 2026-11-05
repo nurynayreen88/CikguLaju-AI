@@ -1,0 +1,33 @@
+# English Year 4 — Lesson 042: Language Arts 8
+
+**Topic:** Sand Castle (Poem)  
+**Main SP:** Language Arts 5.2.1  
+**Complementary SP:** Speaking 2.1.2  
+**Duration:** 60 minutes  
+**Resources:** CCL Poetry Guide p.85, pp.86–89, pp.96–97
+
+## Set induction (10 minutes)
+**Teacher:** Introduce beach vocabulary using CCL Activity 1.
+**Pupils:** Name familiar beach words.
+
+## Activity 1 (15 minutes)
+**Teacher:** Explain CCL Activity 2, model one past-tense sentence and invite pupils to describe their beach experiences.
+**Pupils:** Describe a past experience at the beach.
+
+## Activity 2 (20 minutes)
+**Teacher:** Ask pupils how the Sand Castle story makes them feel and prompt them to support their responses with a story detail.
+**Pupils:** Explain a feeling about Sand Castle.
+
+## PBD and reinforcement (10 minutes)
+**Teacher:** Use CCL Activity 3 and Activity 5 for advanced pupils or Activity 6 for others.
+**Pupils:** Complete a suitable CCL activity and share answers.
+
+## Closure (5 minutes)
+**Teacher:** Ask pupils to name one feeling and describe a past event from the story that explains it.
+**Pupils:** Share one feeling and one past event.
+
+**PBD:** Observe pupils' explanation of feelings about Sand Castle and description of a past beach experience (Language Arts 5.2.1; Speaking 2.1.2).  
+**Differentiation:** Use guidebook activities matched to pupil proficiency.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

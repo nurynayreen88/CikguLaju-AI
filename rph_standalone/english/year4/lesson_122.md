@@ -1,0 +1,35 @@
+# English Year 4 — Lesson 122: Language Arts 23
+
+**Topic:** The Jungle Book  
+**Main SP:** 5.2.1  
+**Complementary SP:** 3.3.1  
+**Duration:** 60 minutes  
+**References:** Year 4 SOW Lesson 122; Graphic Novel Teaching Guidebook p.48, steps 1–5; The Jungle Book; resources/lesson_122_jungle_book_reading_response_pbd_DRAFT.md
+
+## Set induction (10 minutes)
+**Teacher:** Review the graphic novel's characters and earlier events.
+**Pupils:** Recall characters and important events.
+
+## Activity 1 (15 minutes)
+**Teacher:** Explain Teaching Guidebook p.48 steps 1–5, assign group roles and check pupils' understanding before discussion.
+**Pupils:** Follow the guidebook group task and refer to the graphic novel.
+
+## Activity 2 (20 minutes)
+**Teacher:** Ask groups to discuss character feelings and events; prompt for textual support.
+**Pupils:** Discuss characters' feelings and support opinions with story details.
+
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Invite pupils to explain personal responses and provide specific feedback.
+**Pupils:** Explain their responses to the story and revise ideas after feedback.
+
+Pupils complete a follow-up task based on The Jungle Book and the Teaching Guidebook; no specific Workbook page is prescribed for this literature lesson.
+
+## Closure (5 minutes)
+**Teacher:** Ask pupils to name their favourite scene and explain which character action influenced their choice.
+**Pupils:** Share a favourite part of the story and a reason.
+
+**PBD:** Assess pupils' personal responses to characters and events in The Jungle Book, supported by reasons, for main Language Arts SP 5.2.1; observe their independent reading of relevant graphic-novel passages for complementary Reading SP 3.3.1. Use the Graphic Novel Teaching Guidebook rather than an invented Workbook task.  
+**Differentiation:** Offer picture prompts, sentence starters and supported group discussion.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

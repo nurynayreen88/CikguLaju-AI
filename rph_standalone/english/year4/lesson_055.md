@@ -1,0 +1,35 @@
+# English Year 4 — Lesson 055
+
+**Topic:** Celebrations  
+**Main SP:** 2.2.2  
+**Complementary SP:** 2.1.1  
+**Duration:** 60 minutes  
+**References:** SB p.39 Activity 5; TB p.65; CD1 Track 58; Year 4 SOW Lesson 55
+
+## Set induction (10 minutes)
+**Teacher:** Introduce tomorrow and next week.
+**Pupils:** Use future time expressions in short responses.
+
+## Activity 1 (15 minutes)
+**Teacher:** Follow Activity 5 with Track 58 and model clarification.
+**Pupils:** Listen and ask for clarification about task steps.
+
+## Activity 2 (20 minutes)
+**Teacher:** Provide interview prompts about tomorrow's plans, model a going to question and organise pupils into interview pairs.
+**Pupils:** Interview a partner and fill in a plan table.
+
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Ask pupils to swap interviewer roles and report one partner's plan using a complete sentence.
+**Pupils:** Swap roles, report plans and check task completion.
+**Teacher:** Use Workbook p.32, Our world future-plans prompts, according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
+**Pupils:** Complete Workbook p.32, Our world future-plans prompts; ask and answer questions about future plans.
+
+## Closure (5 minutes)
+**Teacher:** Invite a pair to demonstrate a going to question and a suitable clarification response.
+**Pupils:** Use going to and one polite clarification question.
+
+**PBD:** Observe pupils' requests for clarification about the interview task for main Speaking SP 2.2.2 and their questions, answers and opinions about future plans for complementary Speaking SP 2.1.1. Workbook p.32 provides the main written practice; spoken evidence must be observed separately.  
+**Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

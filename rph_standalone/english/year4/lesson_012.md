@@ -1,0 +1,35 @@
+# English Year 4 — Lesson 012: Speaking 3
+
+**Main SP:** 2.1.5  
+**Complementary SP:** Listening 1.2.5  
+**Topic:** Where are you from?  
+**References:** SB p.14; TB p.30 Revision and Activity 1  
+**Audio:** Class CD1 Track 17 (printed TB p.30 Activity 1; recording content/Telegram delivery unverified)  
+**Duration:** 60 minutes
+
+## Set induction (10 minutes)
+**Teacher:** Review flags and present continuous actions using pictures.
+**Pupils:** Name a country and describe an action in a picture.
+
+## Activity 1 (15 minutes)
+**Teacher:** Follow TB Revision and Activity 1 with Class CD1 Track 17; pupils answer supported questions.
+**Pupils:** Listen to Class CD1 Track 17 and answer supported present continuous questions.
+
+## Activity 2 (20 minutes)
+**Teacher:** Demonstrate an action card and the exchange 'What is he doing?' / 'He's ...ing', then guide pupils to prepare two cards and practise in pairs.
+**Pupils:** Make two cards and practise questions and answers about actions.
+
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Small groups play an action guessing game; teacher observes descriptions and understanding.
+**Pupils:** Play the card guessing game and describe what pictured people are doing. The teacher assesses pupils' spoken descriptions of pictured actions for main Speaking SP 2.1.5. No Workbook activity is assigned until its printed page and task are verified.
+
+## Closure (5 minutes)
+**Teacher:** Invite pupils to demonstrate one question-and-answer exchange using a present-continuous action card.
+**Pupils:** Ask and answer one final question.
+
+## PBD and differentiation
+Assess the relevant activity responses against main SP 2.1.5 and complementary SP Listening 1.2.5. Offer modelling, picture cues, sentence frames and mixed-ability support; extend tasks for pupils ready for more independent work.
+
+**SOW reference:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

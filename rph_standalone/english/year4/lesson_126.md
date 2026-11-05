@@ -1,0 +1,35 @@
+# English Year 4 — Lesson 126: Writing 24
+
+**Topic:** Amazing animals  
+**Main SP:** 4.2.5  
+**Complementary SP:** 4.3.3  
+**Duration:** 60 minutes  
+**References:** resources/lesson_126_favourite_animal_paragraph_pbd_DRAFT.md; SB p.87 Activities 1–2; TB pp.130–131; animal pictures; Year 4 SOW Lesson 126
+
+## Set induction (10 minutes)
+**Teacher:** Elicit animal appearance, habitat and ability words for pupils to reuse in their paragraph plans.
+**Pupils:** Name favourite animals.
+
+## Activity 1 (15 minutes)
+**Teacher:** Guide Activities 1–2 and highlight linking words in the model paragraph.
+**Pupils:** Find conjunctions in the model.
+
+## Activity 2 (20 minutes)
+**Teacher:** Model a mind map with the animal's appearance, habitat and abilities, then guide pupils to plan a paragraph using Activity 2.
+**Pupils:** Plan a paragraph using a mind map.
+
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Ask pupils to write a short paragraph from their mind map. Display a checklist for conjunctions, connected ideas and punctuation, then guide one revision after partner feedback.
+**Pupils:** Write and revise the paragraph.
+
+
+
+## Closure (5 minutes)
+**Teacher:** Invite two pupils to read an improved sentence and explain which conjunction connects their ideas.
+**Pupils:** Read one improved sentence.
+
+**PBD:** Assess pupils' favourite-animal paragraph for linked ideas and suitable conjunctions for main Writing SP 4.2.5; check organisation and revisions that improve clarity for complementary Writing SP 4.3.3. Use the SB writing model without inventing a Workbook page.  
+**Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

@@ -1,0 +1,37 @@
+# English Year 4 — Lesson 066: Speaking 13
+
+**Topic:** Eating right  
+**Main SP:** 2.2.1  
+**Complementary SP:** 1.2.5  
+**Duration:** 60 minutes  
+**References:** SB p.49 Activity 3; TB p.79; CD1 Track 72; Year 4 SOW Lesson 66
+
+## Set induction (10 minutes)
+**Teacher:** Review countable and uncountable food nouns with examples.
+**Pupils:** Classify food nouns and give examples.
+
+## Activity 1 (15 minutes)
+**Teacher:** Use the Grammar Box to model want and need.
+**Pupils:** Make short sentences about ingredients using want and need.
+
+## Activity 2 (20 minutes)
+**Teacher:** Play Track 72 for Activity 3, pause for ingredient details and ask pupils to explain which ingredients they heard.
+**Pupils:** Listen and discuss ingredients needed for different foods.
+
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Model a polite request to clarify an ingredient, then ask pairs to adapt the dialogue with different food items.
+**Pupils:** Ask clarification questions and respond appropriately in pairs.
+
+**Teacher:** Use Workbook p.39, Activity 2 according to the printed instructions. Treat this as the main written practice and check pupils' answers; assess the lesson's main SP through its relevant task evidence.
+**Pupils:** Complete Workbook p.39, Activity 2; complete sentences using a, an or some with the food nouns.
+
+## Closure (5 minutes)
+**Teacher:** Invite pupils to describe a favourite dish using want or need and at least one ingredient word.
+**Pupils:** Name ingredients needed for a favourite dish.
+
+**PBD:** Observe pupils asking clarification questions and responding in pairs for main Speaking SP 2.2.1; check comprehension of spoken ingredients and instructions for complementary Listening SP 1.2.5. Workbook p.39 is written grammar practice, not a substitute for speaking evidence.  
+**Differentiation:** Provide ingredient pictures, sentence frames and extension questions.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view  
+**Workbook:** p.39, Activity 2; assessment follow-up.
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

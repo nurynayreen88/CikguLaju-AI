@@ -1,0 +1,35 @@
+# English Year 4 — Lesson 150: Listening 29
+
+**Topic:** What's the matter?  
+**Main SP:** 1.2.2  
+**Complementary SP:** 2.1.1  
+**Duration:** 60 minutes  
+**References:** resources/lesson_150_health_characters_listening_advice_pbd_DRAFT.md; SB p.105 Activities 4–5; TB p.155; Activity 4 CD2 Track 73; Activity 5 CD2 Track 74; character pictures; Primary Year 4 SOW Lesson 150
+
+## Set induction (10 minutes)
+**Teacher:** Review health vocabulary with character pictures.
+**Pupils:** Name health problems.
+
+## Activity 1 (15 minutes)
+**Teacher:** Preview the health-picture choices, play CD2 Track 73 for Activity 4 and check pupils' listening responses.
+**Pupils:** Listen to the first recording.
+
+## Activity 2 (20 minutes)
+**Teacher:** Ask pupils to match each health problem to the correct pictured person and justify their answers using information they heard.
+**Pupils:** Match people with their health problems.
+
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Play CD2 Track 74 for Activity 5, model an advice sentence with should and invite pupils to explain suitable advice for each problem.
+**Pupils:** Listen again and give advice.
+
+
+
+## Closure (5 minutes)
+**Teacher:** Ask pupils to recall one health problem from the recording and give suitable advice using should.
+**Pupils:** Recall one listening detail.
+
+**PBD:** Check pupils' accurate matching of characters to health problems using information heard in CD2 Track 73 for main Listening SP 1.2.2; observe spoken advice with relevant reasons after CD2 Track 74 for complementary Speaking SP 2.1.1. Do not treat advice writing alone as listening evidence.  
+**Differentiation:** Provide picture cues, word banks, peer support and optional extensions.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

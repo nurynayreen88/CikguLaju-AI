@@ -1,0 +1,33 @@
+# English Year 4 — Lesson 062: Writing 12
+
+**Topic:** Celebrations  
+**Main SP:** 4.2.5  
+**Complementary SP:** 4.2.2  
+**Duration:** 60 minutes  
+**References:** SB p.43; TB p.70; model diary entry; Year 4 SOW Lesson 62
+
+## Set induction (10 minutes)
+**Teacher:** Review birthdays and celebrations.
+**Pupils:** Recall language for celebration plans.
+
+## Activity 1 (15 minutes)
+**Teacher:** Give pairs a celebration prompt and listen for a date and one planned activity in each response.
+**Pupils:** Discuss plans for a celebration with a partner.
+
+## Activity 2 (20 minutes)
+**Teacher:** Model and, but, because and reference pronouns in a diary entry.
+**Pupils:** Practise linking ideas and using reference pronouns.
+
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Model a short diary entry and invitation response, then guide pupils to write their own entries and polite acceptance or refusal.
+**Pupils:** Write a diary entry and a polite invitation response.
+
+## Closure (5 minutes)
+**Teacher:** Ask pupils to identify one conjunction that connects their sentences and explain its purpose.
+**Pupils:** Improve one sentence link.
+
+**PBD:** Assess diary entries and invitation responses for connected ideas and appropriate language (SP 4.2.5, 4.2.2).  
+**Differentiation:** Provide models, picture prompts, peer support and extension tasks as appropriate.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

@@ -1,0 +1,35 @@
+# English Year 4 — Lesson 127: Language Arts 24
+
+**Topic:** The Jungle Book  
+**Main SP:** 5.3.1  
+**Complementary SP:** 4.3.2  
+**Duration:** 60 minutes  
+**References:** resources/lesson_127_jazz_chant_performance_pbd_DRAFT.md; Graphic Novel Teaching Guidebook p.62; jazz chant model; Year 4 SOW Lesson 127
+
+## Set induction (10 minutes)
+**Teacher:** Act out verbs from cards; classmates name the actions.
+**Pupils:** Mime action verbs and identify classmates' actions.
+
+## Activity 1 (15 minutes)
+**Teacher:** Read the sample jazz chant on guidebook p.62 with clear rhythm and ask pupils to identify the repeated action verbs.
+**Pupils:** Read and practise the jazz chant.
+
+## Activity 2 (20 minutes)
+**Teacher:** Model replacing one action verb in the sample chant, then guide groups through steps 1–4 to compose their own chant.
+**Pupils:** Replace verbs and compose a group chant.
+
+## Reinforcement / PBD (10 minutes)
+**Teacher:** Invite each group to perform its chant and use a checklist to assess suitable verbs, spelling and clear delivery.
+**Pupils:** Perform the chant and check spelling.
+
+Pupils rehearse their jazz chant and review expression and rhythm using the Teaching Guidebook; no specific Workbook page is prescribed for this literature lesson.
+
+## Closure (5 minutes)
+**Teacher:** Organise a gallery walk and prompt pupils to give one specific strength and one constructive suggestion about a chant.
+**Pupils:** Give stars and wishes during the gallery walk.
+
+**PBD:** Assess pupils' original group jazz chant and performance for main Language Arts SP 5.3.1; check spelling of substituted action verbs in the written chant for complementary Writing SP 4.3.2. Use the Graphic Novel Teaching Guidebook chant task, not an invented Workbook activity.  
+**Differentiation:** Provide picture cues, word banks, paired support and extensions where needed.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

@@ -1,0 +1,33 @@
+# English Year 4 — Lesson 046: Writing 9
+
+**Topic:** In the Past  
+**Main SP:** Writing 4.2.5  
+**Complementary SP:** Reading 3.2.2  
+**Duration:** 60 minutes  
+**Resources:** SB p.33 Activities 1–2; TB p.56; CD1 Track 49
+
+## Set induction (10 minutes)
+**Teacher:** Discuss sending and receiving emails.
+**Pupils:** Describe how emails are sent and received.
+
+## Activity 1 (15 minutes)
+**Teacher:** Follow TB Activity 1 with Track 49 and Activity 2.
+**Pupils:** Follow Activity 1 with Track 49 and complete Activity 2.
+
+## Activity 2 (20 minutes)
+**Teacher:** Guide pupils to identify four Writing Tip features in the model email and explain their purpose.
+**Pupils:** Identify four Writing Tip points in the model email.
+
+## PBD and reinforcement (10 minutes)
+**Teacher:** Model an email opening and a sentence joined with and or but, then guide pupils to draft, exchange and review emails about past trips.
+**Pupils:** Write and peer-review an email about a past trip using and/but. Pupils may complete a matching Workbook writing task on past trips, if available; teacher checks their sentences.
+
+## Closure (5 minutes)
+**Teacher:** Invite pupils to revise one connected sentence after peer feedback and explain their choice of conjunction.
+**Pupils:** Improve one connected sentence.
+
+**PBD:** Assess a past-trip email for relevant details, appropriate use of and/but and revision after feedback (Writing 4.2.5; Reading 3.2.2).  
+**Differentiation:** Vary writing length targets but retain the email format.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

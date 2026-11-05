@@ -1,0 +1,35 @@
+# English Year 4 — Lesson 104: Reading 20
+
+**Topic:** Helping out  
+**Main SP:** 3.2.1  
+**Complementary SP:** 3.2.2  
+**Duration:** 60 minutes  
+**References:** SB pp.74–75 Activities 1–2; TB pp.112–113; Class CD2 Track 27 (vocabulary) and Class CD2 Track 28 (Activity 1), TB p.112; Primary Year 4 SK SOW Lesson 104
+
+## Set induction (10 minutes)
+**Teacher:** Show a recycling picture, elicit pupils' existing knowledge and record two questions to investigate in the text.
+**Pupils:** Describe a recycling picture.
+
+## Activity 1 (15 minutes)
+**Teacher:** Use Track 27 to introduce recycling vocabulary, then display paragraph headings and ask pupils to predict each section's focus.
+**Pupils:** Listen to Track 27 and identify recycling words.
+
+## Activity 2 (20 minutes)
+**Teacher:** Model matching the first paragraph to a heading by identifying its main idea, then guide pupils to read the remaining paragraphs and match their headings.
+**Pupils:** Read and match headings to recycling paragraphs.
+
+## PBD / reinforcement (10 minutes)
+**Teacher:** Use the relevant Activity 1 and 2 questions to check whether pupils can identify the main idea and point to supporting details. Follow the TB guidance for the recording and Grammar Box where applicable.
+**Pupils:** Complete Activities 1–2 with Track 28.
+
+
+
+## Closure (5 minutes)
+**Teacher:** Ask pupils to state one recycling fact and identify the paragraph where they found it.
+**Pupils:** State one fact about recycling.
+
+**PBD:** Check pupils' identification of the recycling text's main idea and matching of paragraph headings for main Reading SP 3.2.1; assess answers supported by specific details in the printed text for complementary Reading SP 3.2.2. Class CD2 Tracks 27–28 support the lesson (TB p.112 verified); MP3 playback remains untested.  
+**Differentiation:** Provide word banks, teacher models, peer support and optional extension.  
+**SOW:** https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view
+
+**QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.
