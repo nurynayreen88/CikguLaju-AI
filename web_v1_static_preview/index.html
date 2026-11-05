@@ -81,7 +81,7 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 @media print{
  #workspace > .app-shell:not(#rph-preview-panel){display:block!important}
  #workspace .app-main,#workspace #view-rph{display:block!important;border:0!important;box-shadow:none!important;padding:0!important;margin:0!important}
- #workspace .app-sidebar,#workspace #view-rpt,#workspace #view-account,#workspace #view-guide{display:none!important}
+ #workspace .app-sidebar,#workspace #view-rpt,#workspace #view-account,#workspace #view-payment,#workspace #view-guide{display:none!important}
  #workspace #view-rph > *:not(#rph-preview-panel){display:none!important}
 }
 
@@ -178,6 +178,17 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 .school-logo-content .profile-actions{margin-top:12px}
 .school-logo-content #school-logo-upload{background:#126e78}
 @media(max-width:760px){.site-header{padding:12px 15px;border-radius:16px;min-height:76px}.site-header-brand img{width:47px;height:47px}.site-header-brand strong{font-size:1.02rem}.site-header-chip{font-size:.7rem;padding:7px 9px}.app-shell{grid-template-columns:minmax(0,1fr);gap:13px}.sidebar-brand{padding-bottom:12px;margin-bottom:11px}#sidebar-teacher-name,#sidebar-school-name{max-width:min(55vw,340px)}.workspace-ready{display:none}.school-logo-card{grid-template-columns:1fr}.school-logo-preview{width:120px;height:120px}.workspace-intro{margin-bottom:16px}}
+
+/* Same-queue Web payment, manual DuitNow receipt flow. */
+.payment-current-status{padding:17px 19px;border-radius:14px;border:1px solid #b8dbd9;background:#eef9f6;font-weight:700;white-space:pre-wrap;color:#15574e;margin:15px 0}
+.payment-entry{padding:20px 22px;border:1px solid #d6e6ee;border-radius:17px;background:#fafdfe;margin:17px 0}
+.payment-entry input[type=file]{display:block;width:100%;max-width:580px;border:1px dashed #adcbd4;background:#fff;padding:12px;border-radius:12px;color:#21475a;font:inherit}
+.payment-qr{min-height:90px;margin:18px 0;display:flex;flex-direction:column;justify-content:center;align-items:center;border-radius:14px;padding:20px;background:#fff;border:1px solid #dae9e8}
+.payment-qr img{width:min(320px,100%);max-height:355px;object-fit:contain}
+.payment-entry #payment-submit{margin:17px 0 5px;padding:13px 20px;border:0;background:#087568;color:#fff;border-radius:12px;font:inherit;font-weight:750;cursor:pointer}
+.payment-entry #payment-submit:disabled{opacity:.48;cursor:not-allowed}
+#payment-message{font-weight:650;color:#28576b;white-space:pre-wrap}
+@media(max-width:760px){.payment-entry{padding:15px}.payment-qr{padding:13px}}
 </style>
 </head>
 <body>
@@ -199,6 +210,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
     <button type="button" class="sidebar-tab is-active" data-web-view="rph" aria-controls="view-rph" aria-current="page"><span aria-hidden="true">📘</span> Sediakan RPH</button>
     <button type="button" class="sidebar-tab" data-web-view="rpt" aria-controls="view-rpt"><span aria-hidden="true">📅</span> RPT 2027</button>
     <button type="button" class="sidebar-tab" data-web-view="account" aria-controls="view-account"><span aria-hidden="true">👤</span> Profil &amp; Akses</button>
+    <button type="button" class="sidebar-tab" data-web-view="payment" aria-controls="view-payment"><span aria-hidden="true">💳</span> Bayaran &amp; Langganan</button>
     <button type="button" class="sidebar-tab" data-web-view="guide" aria-controls="view-guide"><span aria-hidden="true">📖</span> Panduan</button>
   </nav>
   <button id="logout" type="button" class="sidebar-logout">Log keluar</button>
@@ -212,7 +224,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <section id="view-account" class="app-view" aria-labelledby="view-account-heading" hidden>
 <h2 id="view-account-heading">Profil Guru</h2>
 <p>Maklumat guru yang sama boleh dilihat dan dikemas kini melalui Telegram atau Web. Isi sekali untuk memudahkan penyediaan RPH.</p>
-<p id="profile-access-summary" class="profile-access-status" role="status">Memuatkan status akaun…</p><p><button type="button" id="profile-refresh" class="profile-refresh" aria-label="Segar semula profil dari Telegram atau Web">🔄 Segar Semula Profil &amp; Jadual</button></p>
+<p id="profile-access-summary" class="profile-access-status" role="status">Memuatkan status akaun…</p><p><button type="button" id="profile-refresh" class="profile-refresh" aria-label="Refresh profil dari Telegram atau Web">🔄 Refresh Profil &amp; Jadual</button></p>
 <form id="teacher-profile-form" class="teacher-profile-form" autocomplete="on">
   <h3>Maklumat Diri &amp; Sekolah</h3>
   <div class="profile-fields-grid">
@@ -261,6 +273,24 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </section>
 <p class="notice">Akses RPT dan RPH Web mengikut status Rakan Pembangun atau langganan aktif. Percubaan 10 janaan percuma masih melalui Telegram.</p>
 </section>
+<section id="view-payment" class="app-view" aria-labelledby="view-payment-heading" hidden>
+<h2 id="view-payment-heading">💳 Bayaran &amp; Langganan</h2>
+<p>Bayar melalui DuitNow dan hantar resit terus di Web. Akaun, senarai Pending dan pengesahan admin adalah sama seperti dalam bot Telegram. <strong>Membuka QR tidak akan membuat permohonan bayaran.</strong></p>
+<div id="web-payment-status" class="payment-current-status" role="status" aria-live="polite">Memuatkan status bayaran…</div>
+<section id="payment-entry" class="payment-entry" hidden>
+  <label for="payment-plan">Pilih pakej</label>
+  <select id="payment-plan" disabled><option value="">Memuatkan pakej…</option></select>
+  <p id="payment-plan-description" class="notice"></p>
+  <div class="payment-qr"><img id="payment-qr-image" alt="Kod QR DuitNow untuk bayaran CikguLaju" hidden><p id="payment-qr-notice" class="notice">Pilih pakej untuk melihat QR rasmi.</p></div>
+  <label for="payment-receipt">Muat naik resit bayaran</label>
+  <input id="payment-receipt" type="file" accept=".jpg,.jpeg,.png,.webp,.pdf,image/jpeg,image/png,image/webp,application/pdf">
+  <p class="notice">PDF atau gambar resit, maksimum 4 MB. Pastikan jumlah bayaran sepadan dengan pakej. Resit baharu akan dihantar kepada bot sebagai bukti untuk semakan admin.</p>
+  <button type="button" id="payment-submit" disabled>Hantar Resit Untuk Pengesahan</button>
+</section>
+<p id="payment-message" class="notice" role="status" aria-live="polite"></p>
+<p class="notice">Akses hanya dibuka selepas admin mengesahkan bayaran. Jika bayaran sudah dibuat tetapi terdapat masalah, jangan bayar sekali lagi—semak status dan hubungi admin.</p>
+<button type="button" id="payment-refresh" class="profile-refresh">🔄 Refresh Status Bayaran</button>
+</section>
 <section id="view-guide" class="app-view" aria-labelledby="view-guide-heading" hidden>
 <h2 id="view-guide-heading">Panduan Penggunaan</h2>
 <div class="guide-steps">
@@ -268,6 +298,8 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <p>Pilih Sediakan RPH → Tahun → Subjek → Unit/Tajuk → Lesson/PdP. Tekan Jana RPH Word atau Jana RPH PDF untuk memuat turun fail terus daripada penjana Telegram. Kelas, tarikh dan masa boleh diisi sebelum muat turun.</p>
 <h3>Cara memuat turun RPT 2027</h3>
 <p>Tekan menu RPT 2027 di sebelah. Pilih Subjek dan Tahun, kemudian tekan Muat turun RPT 2027 (PDF). Fail yang belum tersedia tidak akan digantikan dengan fail subjek lain.</p>
+<h3>Bayaran di Web</h3>
+<p>Tekan menu Bayaran &amp; Langganan, pilih pakej, imbas QR DuitNow, kemudian muat naik resit yang sebenar. Permohonan Pending hanya direkod selepas resit diterima; admin akan meluluskan akses melalui sistem Telegram yang sama.</p>
 <h3>Akses &amp; keselamatan</h3>
 <p>Log masuk menggunakan Telegram. Hanya akaun yang mempunyai akses berbayar boleh menggunakan RPT dan janaan RPH Web yang tersedia. Kandungan yang masih dalam semakan ditunjukkan mengikut status sebenarnya.</p>
 </div>
@@ -288,7 +320,7 @@ window.onCikguLajuTelegramAuth=async function(user){
  }catch(error){status.textContent=error.message;}
 };
 const webViewButtons=Array.from(document.querySelectorAll("[data-web-view]"));
-const webViews=new Map([["rph","view-rph"],["rpt","view-rpt"],["account","view-account"],["guide","view-guide"]]);
+const webViews=new Map([["rph","view-rph"],["rpt","view-rpt"],["account","view-account"],["payment","view-payment"],["guide","view-guide"]]);
 function showWebView(name){
  if(!webViews.has(name))return;
  for(const [key,id] of webViews){
@@ -583,5 +615,6 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/teacher-profile.js?v=school-rpt-20261105"></script>
+<script src="/assets/web-payment.js?v=proof-first-20261105"></script>
 </body>
 </html>
