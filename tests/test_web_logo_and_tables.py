@@ -88,7 +88,7 @@ class WebLogoAndTables(unittest.TestCase):
                     for index,phase in enumerate(layout["phases"],1):
                         self.assertEqual(activity.cell(index,0).text,phase["label"])
                         self.assertEqual(activity.cell(index,1).text,phase["activity"])
-                        self.assertEqual(activity.cell(index,2).text,phase["notes"] or " ")
+                        self.assertEqual(activity.cell(index,2).text,phase["notes"])
                     self.assertIn("4 Bestari",[r.cells[1].text for r in info.rows])
                     self.assertIn("2027-03-08",[r.cells[1].text for r in info.rows])
                     self.assertIn("09:15",[r.cells[1].text for r in info.rows])
