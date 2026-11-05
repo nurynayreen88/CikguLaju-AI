@@ -14,6 +14,7 @@ class ProductionSourceInventory(unittest.TestCase):
         self.assertEqual(client.get("/api/web/teacher/classes").status_code,503 if __import__('web_v1_telegram_auth_routes')._config() is None else 401)
         self.assertIn("/api/web/rph/preview",{r.rule for r in app.url_map.iter_rules()})
         self.assertIn("/api/web/rph/word",{r.rule for r in app.url_map.iter_rules()})
+        self.assertIn("/api/web/rph/pdf",{r.rule for r in app.url_map.iter_rules()})
 
     def test_main_source_files_retained(self):
         from web.unified_rph_web import source_records
@@ -46,7 +47,9 @@ class ProductionSourceInventory(unittest.TestCase):
         html=(ROOT/"web_v1_static_preview"/"index.html").read_text(encoding="utf8")
         self.assertIn("CikguLaju AI · Web",html)
         self.assertNotIn("Web staging",html)
-        self.assertIn('id="rph-preview-button"',html)
+        self.assertNotIn('id="rph-preview-button"',html)
+        self.assertIn('id="rph-word"',html)
+        self.assertIn('id="rph-pdf"',html)
 
 if __name__=="__main__":
     unittest.main()
