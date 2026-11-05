@@ -399,7 +399,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Warisan Negara Kita",
         "sk": "6.2",
@@ -430,28 +430,28 @@
           "Murid dapat memerihalkan latar belakang agama dan kepercayaan masyarakat di Tanah Melayu.",
           "Murid dapat menyatakan sejarah kedatangan agama Islam dalam Kesultanan Melayu Melaka."
         ],
-        "success_criteria": "Murid menyiapkan produk 6.2.1–6.2.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan peta konsep latar kepercayaan dan dua fakta kedatangan Islam, dengan maklumat bersumber yang memenuhi SP 6.2.1, 6.2.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 2: Agama Islam di Malaysia, hlm. 16–29 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; petikan ringkas Perlembagaan Persekutuan dan sejarah Kesultanan Melayu Melaka; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 2: Agama Islam di Malaysia, hlm. 16–29 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: jadual kepercayaan masyarakat awal Tanah Melayu dan peta Melaka; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Agama Islam di Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Agama Islam di Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan jadual kepercayaan masyarakat awal Tanah Melayu dan peta Melaka. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 2: Agama Islam di Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 2, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Memerihalkan latar belakang agama dan kepercayaan masyarakat di Tanah Melayu”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan bentuk kepercayaan awal dengan pernyataan yang tepat dan beradab. Guru menyemak jawapan awal berpandukan 6.2.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan sejarah kedatangan agama Islam dalam Kesultanan Melayu Melaka”, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan nilai-nilai keagamaan yang diamalkan ke arah masyarakat harmoni; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 2. Murid menyusun garis masa kedatangan serta perkembangan Islam dalam Kesultanan Melayu Melaka. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan nilai-nilai keagamaan yang diamalkan ke arah masyarakat harmoni.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 6.2.1 dan 6.2.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K6.2.6."
+          "activity": "Murid menghasilkan peta konsep latar kepercayaan dan dua fakta kedatangan Islam. Guru menyemak secara individu menggunakan kata tugas SP 6.2.1, 6.2.2 dan nilai K6.2.6, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 2: Agama Islam di Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 2. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -469,7 +469,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "jadual kepercayaan masyarakat awal Tanah Melayu dan peta Melaka",
+          "task1": "mengelaskan bentuk kepercayaan awal dengan pernyataan yang tepat dan beradab",
+          "task2": "menyusun garis masa kedatangan serta perkembangan Islam dalam Kesultanan Melayu Melaka",
+          "pbd_evidence": "peta konsep latar kepercayaan dan dua fakta kedatangan Islam",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -490,7 +501,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Warisan Negara Kita",
         "sk": "6.2",
@@ -521,28 +532,28 @@
           "Murid dapat menerangkan kedudukan agama Islam dalam pentadbiran negeri-negeri Melayu sehingga merdeka.",
           "Murid dapat menjelaskan kedudukan agama Islam sebagai agama Persekutuan."
         ],
-        "success_criteria": "Murid menyiapkan produk 6.2.3–6.2.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan jadual perubahan kedudukan agama berserta dua fakta Perlembagaan, dengan maklumat bersumber yang memenuhi SP 6.2.3, 6.2.4.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 2: Agama Islam di Malaysia, hlm. 16–29 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; petikan ringkas Perlembagaan Persekutuan dan sejarah Kesultanan Melayu Melaka; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 2: Agama Islam di Malaysia, hlm. 16–29 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: petikan berlabel daripada undang-undang negeri Melayu dan Perlembagaan Persekutuan; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Agama Islam di Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Agama Islam di Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan petikan berlabel daripada undang-undang negeri Melayu dan Perlembagaan Persekutuan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 2: Agama Islam di Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 2, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menerangkan kedudukan agama Islam dalam pentadbiran negeri-negeri Melayu sehingga merdeka” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menghubungkan kedudukan Islam dalam pentadbiran negeri Melayu dengan garis masa sebelum merdeka. Guru menyemak jawapan awal berpandukan 6.2.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan kedudukan agama Islam sebagai agama Persekutuan” dengan contoh daripada sumber, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menerangkan kepentingan mendaulatkan agama Islam sebagai agama Persekutuan; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 2. Murid membandingkan kedudukan Islam sebagai agama Persekutuan dengan kebebasan agama lain secara tepat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menerangkan kepentingan mendaulatkan agama Islam sebagai agama Persekutuan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 6.2.3 dan 6.2.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K6.2.7."
+          "activity": "Murid menghasilkan jadual perubahan kedudukan agama berserta dua fakta Perlembagaan. Guru menyemak secara individu menggunakan kata tugas SP 6.2.3, 6.2.4 dan nilai K6.2.7, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 2: Agama Islam di Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 2. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -560,7 +571,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "petikan berlabel daripada undang-undang negeri Melayu dan Perlembagaan Persekutuan",
+          "task1": "menghubungkan kedudukan Islam dalam pentadbiran negeri Melayu dengan garis masa sebelum merdeka",
+          "task2": "membandingkan kedudukan Islam sebagai agama Persekutuan dengan kebebasan agama lain secara tepat",
+          "pbd_evidence": "jadual perubahan kedudukan agama berserta dua fakta Perlembagaan",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -581,7 +603,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Warisan Negara Kita",
         "sk": "6.2",
@@ -606,28 +628,28 @@
         "objective": [
           "Murid dapat menghuraikan peranan agama Islam dalam membentuk perpaduan."
         ],
-        "success_criteria": "Murid menyiapkan produk 6.2.5 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan kad tindakan perpaduan dengan dua justifikasi toleransi, dengan maklumat bersumber yang memenuhi SP 6.2.5.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 2: Agama Islam di Malaysia, hlm. 16–29 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; petikan ringkas Perlembagaan Persekutuan dan sejarah Kesultanan Melayu Melaka; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 2: Agama Islam di Malaysia, hlm. 16–29 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: contoh aktiviti muafakat komuniti pelbagai agama; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Agama Islam di Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Agama Islam di Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan contoh aktiviti muafakat komuniti pelbagai agama. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 2: Agama Islam di Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 2, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menghuraikan peranan agama Islam dalam membentuk perpaduan” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengenal pasti sumbangan nilai agama kepada kerjasama dalam masyarakat. Guru menyemak jawapan awal berpandukan 6.2.5."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menghuraikan peranan agama Islam dalam membentuk perpaduan, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan kepentingan membenarkan agama lain diamalkan dengan aman dan damai; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 2. Murid menilai dua situasi hormat terhadap agama berbeza dan membina peraturan perbincangan beradab. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menjelaskan kepentingan membenarkan agama lain diamalkan dengan aman dan damai.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 6.2.5 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K6.2.8."
+          "activity": "Murid menghasilkan kad tindakan perpaduan dengan dua justifikasi toleransi. Guru menyemak secara individu menggunakan kata tugas SP 6.2.5 dan nilai K6.2.8, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 2: Agama Islam di Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 2. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -645,7 +667,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "contoh aktiviti muafakat komuniti pelbagai agama",
+          "task1": "mengenal pasti sumbangan nilai agama kepada kerjasama dalam masyarakat",
+          "task2": "menilai dua situasi hormat terhadap agama berbeza dan membina peraturan perbincangan beradab",
+          "pbd_evidence": "kad tindakan perpaduan dengan dua justifikasi toleransi",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -666,7 +699,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Warisan Negara Kita",
         "sk": "6.3",
@@ -702,28 +735,28 @@
           "Murid dapat menyatakan susur galur bahasa Melayu.",
           "Murid dapat menerangkan wilayah penutur bahasa Melayu di dunia."
         ],
-        "success_criteria": "Murid menyiapkan produk 6.3.1–6.3.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan peta wilayah dan garis masa perkembangan bahasa dengan sumber, dengan maklumat bersumber yang memenuhi SP 6.3.1, 6.3.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 3: Bahasa Melayu Warisan Kita, hlm. 30–43 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta wilayah penutur bahasa Melayu; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 3: Bahasa Melayu Warisan Kita, hlm. 30–43 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: peta wilayah penutur bahasa Melayu dan contoh prasasti atau manuskrip; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Bahasa Melayu Warisan Kita” dan menyoal “Apakah yang dapat kita buktikan tentang Bahasa Melayu Warisan Kita daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan peta wilayah penutur bahasa Melayu dan contoh prasasti atau manuskrip. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 3: Bahasa Melayu Warisan Kita."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 3, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan susur galur bahasa Melayu”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun garis ringkas asal usul dan perkembangan bahasa Melayu daripada petikan. Guru menyemak jawapan awal berpandukan 6.3.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menerangkan wilayah penutur bahasa Melayu di dunia” dengan contoh daripada sumber, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan kepentingan bahasa Melayu sebagai warisan negara yang dibanggakan; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid menandakan kawasan utama penutur bahasa Melayu dalam peta dan memberi contoh penggunaannya. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan bahasa Melayu sebagai warisan negara yang dibanggakan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 6.3.1 dan 6.3.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K6.3.4, K6.3.6."
+          "activity": "Murid menghasilkan peta wilayah dan garis masa perkembangan bahasa dengan sumber. Guru menyemak secara individu menggunakan kata tugas SP 6.3.1, 6.3.2 dan nilai K6.3.4, K6.3.6, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 3: Bahasa Melayu Warisan Kita. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 3. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -741,7 +774,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "peta wilayah penutur bahasa Melayu dan contoh prasasti atau manuskrip",
+          "task1": "menyusun garis ringkas asal usul dan perkembangan bahasa Melayu daripada petikan",
+          "task2": "menandakan kawasan utama penutur bahasa Melayu dalam peta dan memberi contoh penggunaannya",
+          "pbd_evidence": "peta wilayah dan garis masa perkembangan bahasa dengan sumber",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -762,7 +806,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Warisan Negara Kita",
         "sk": "6.3",
@@ -792,28 +836,28 @@
         "objective": [
           "Murid dapat menjelaskan peranan bahasa Melayu dahulu dan kini."
         ],
-        "success_criteria": "Murid menyiapkan produk 6.3.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan jadual dua zaman dengan tiga fungsi bahasa Melayu, dengan maklumat bersumber yang memenuhi SP 6.3.3.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 3: Bahasa Melayu Warisan Kita, hlm. 30–43 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta wilayah penutur bahasa Melayu; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 3: Bahasa Melayu Warisan Kita, hlm. 30–43 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: dua petikan penggunaan bahasa Melayu dalam perdagangan dahulu dan pentadbiran kini; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Bahasa Melayu Warisan Kita” dan menyoal “Apakah yang dapat kita buktikan tentang Bahasa Melayu Warisan Kita daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan dua petikan penggunaan bahasa Melayu dalam perdagangan dahulu dan pentadbiran kini. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 3: Bahasa Melayu Warisan Kita."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 3, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan peranan bahasa Melayu dahulu dan kini” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membandingkan peranan bahasa Melayu sebagai lingua franca dengan fungsi kebangsaan masa kini. Guru menyemak jawapan awal berpandukan 6.3.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menjelaskan peranan bahasa Melayu dahulu dan kini, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menerangkan kepentingan bahasa Melayu sebagai bahasa perpaduan; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid menyusun peta peranan bahasa dalam perpaduan dan pendidikan sambil menghormati bahasa ibunda. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menerangkan kepentingan bahasa Melayu sebagai bahasa perpaduan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 6.3.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K6.3.5, K6.3.7."
+          "activity": "Murid menghasilkan jadual dua zaman dengan tiga fungsi bahasa Melayu. Guru menyemak secara individu menggunakan kata tugas SP 6.3.3 dan nilai K6.3.5, K6.3.7, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 3: Bahasa Melayu Warisan Kita. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 3. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -831,7 +875,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "dua petikan penggunaan bahasa Melayu dalam perdagangan dahulu dan pentadbiran kini",
+          "task1": "membandingkan peranan bahasa Melayu sebagai lingua franca dengan fungsi kebangsaan masa kini",
+          "task2": "menyusun peta peranan bahasa dalam perpaduan dan pendidikan sambil menghormati bahasa ibunda",
+          "pbd_evidence": "jadual dua zaman dengan tiga fungsi bahasa Melayu",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -852,7 +907,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KAJIAN_KES",
         "tema": "Warisan Negara Kita",
         "sk": "6.3",
@@ -883,28 +938,28 @@
           "Membina satu soalan inkuiri berkenaan Bahasa Melayu.",
           "Mengenal pasti sekurang-kurangnya dua bukti relevan dan menerangkan kesimpulan secara beralasan."
         ],
-        "success_criteria": "Murid membina persoalan kajian, menyatakan dua bukti relevan dan menjelaskan satu rumusan yang disokong bukti.",
+        "success_criteria": "Murid dapat menghasilkan laporan kes satu persoalan, dua bukti, satu tindakan bahasa, dengan maklumat bersumber yang memenuhi SP 6.3.1, 6.3.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 3: Bahasa Melayu Warisan Kita, hlm. 30–43 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta wilayah penutur bahasa Melayu; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 3: Bahasa Melayu Warisan Kita, hlm. 30–43 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: contoh manuskrip lama, peta penutur bahasa dan keratan penggunaan bahasa; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Bahasa Melayu Warisan Kita” dan menyoal “Apakah bukti yang menyokong persoalan kajian tentang Bahasa Melayu Warisan Kita?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan contoh manuskrip lama, peta penutur bahasa dan keratan penggunaan bahasa. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 3: Bahasa Melayu Warisan Kita."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membantu murid membina soalan kajian “Bahasa Melayu Warisan Kita”, mencari dua sumber berbeza dan membezakan fakta dengan pendapat. Murid melengkapkan jadual soalan–sumber–bukti, tanpa menyalin bulat-bulat teks sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina persoalan kajian tentang perubahan peranan bahasa Melayu. Guru menyemak jawapan awal berpandukan 6.3.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid membandingkan dua sumber berkaitan Bahasa Melayu Warisan Kita, menyusun maklumat mengikut kronologi atau kategori, lalu merumus satu dapatan dan batas bukti. Guru membimbing murid menghubungkan iktibar dengan nilai sivik secara beralasan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid membandingkan dua sumber daripada masa berlainan dan mencadangkan usaha memartabatkan bahasa. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan bahasa Melayu sebagai warisan negara yang dibanggakan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Pembentangan kajian ringkas: satu persoalan, dua bukti, satu rumusan. Guru menilai kesahan fakta, kesesuaian bukti, tafsiran dan komunikasi murid; beri maklum balas individu."
+          "activity": "Murid menghasilkan laporan kes satu persoalan, dua bukti, satu tindakan bahasa. Guru menyemak secara individu menggunakan kata tugas SP 6.3.1, 6.3.2 dan nilai K6.3.4, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 3: Bahasa Melayu Warisan Kita. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 3. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -922,7 +977,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "contoh manuskrip lama, peta penutur bahasa dan keratan penggunaan bahasa",
+          "task1": "membina persoalan kajian tentang perubahan peranan bahasa Melayu",
+          "task2": "membandingkan dua sumber daripada masa berlainan dan mencadangkan usaha memartabatkan bahasa",
+          "pbd_evidence": "laporan kes satu persoalan, dua bukti, satu tindakan bahasa",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -943,7 +1009,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Perjuangan Kemerdekaan Negara",
         "sk": "7.1",
@@ -974,28 +1040,28 @@
           "Murid dapat menyatakan istilah campur tangan, penjajahan dan naungan.",
           "Murid dapat menyenaraikan kuasa asing yang campur tangan dan menjajah di negara kita."
         ],
-        "success_criteria": "Murid menyiapkan produk 7.1.1–7.1.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan jadual tiga istilah dan garis masa kuasa asing, dengan maklumat bersumber yang memenuhi SP 7.1.1, 7.1.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 4: Kedaulatan Negara Dicabar, hlm. 44–57 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta campur tangan kuasa asing dan garis masa; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 4: Kedaulatan Negara Dicabar, hlm. 44–57 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: peta kedatangan kuasa asing serta kad istilah campur tangan, penjajahan, naungan; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Kedaulatan Negara Dicabar” dan menyoal “Apakah yang dapat kita buktikan tentang Kedaulatan Negara Dicabar daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan peta kedatangan kuasa asing serta kad istilah campur tangan, penjajahan, naungan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 4: Kedaulatan Negara Dicabar."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 4, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan istilah campur tangan, penjajahan dan naungan”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan istilah dengan maksud dan contoh sejarah yang tepat. Guru menyemak jawapan awal berpandukan 7.1.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan senarai fakta atau nama berserta label dan rujukan bagi fokus “Menyenaraikan kuasa asing yang campur tangan dan menjajah di negara kita”, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan kepentingan jati diri yang tinggi dalam kalangan generasi muda; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid membina kronologi kuasa asing yang terlibat mengikut lokasi serta tempoh. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan jati diri yang tinggi dalam kalangan generasi muda.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 7.1.1 dan 7.1.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K7.1.5."
+          "activity": "Murid menghasilkan jadual tiga istilah dan garis masa kuasa asing. Guru menyemak secara individu menggunakan kata tugas SP 7.1.1, 7.1.2 dan nilai K7.1.5, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 4: Kedaulatan Negara Dicabar. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 4. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -1013,7 +1079,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "peta kedatangan kuasa asing serta kad istilah campur tangan, penjajahan, naungan",
+          "task1": "memadankan istilah dengan maksud dan contoh sejarah yang tepat",
+          "task2": "membina kronologi kuasa asing yang terlibat mengikut lokasi serta tempoh",
+          "pbd_evidence": "jadual tiga istilah dan garis masa kuasa asing",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -1034,7 +1111,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Perjuangan Kemerdekaan Negara",
         "sk": "7.1",
@@ -1059,28 +1136,28 @@
         "objective": [
           "Murid dapat menyatakan faktor kedatangan kuasa asing ke negara kita."
         ],
-        "success_criteria": "Murid menyiapkan produk 7.1.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan dua faktor kedatangan kuasa asing dengan bukti, dengan maklumat bersumber yang memenuhi SP 7.1.3.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 4: Kedaulatan Negara Dicabar, hlm. 44–57 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta campur tangan kuasa asing dan garis masa; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 4: Kedaulatan Negara Dicabar, hlm. 44–57 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: gambar pelabuhan dan kad kepentingan ekonomi/strategik Tanah Melayu; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Kedaulatan Negara Dicabar” dan menyoal “Apakah yang dapat kita buktikan tentang Kedaulatan Negara Dicabar daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan gambar pelabuhan dan kad kepentingan ekonomi/strategik Tanah Melayu. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 4: Kedaulatan Negara Dicabar."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 4, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan faktor kedatangan kuasa asing ke negara kita”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan faktor kedatangan kuasa asing kepada ekonomi, politik atau lokasi. Guru menyemak jawapan awal berpandukan 7.1.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menyatakan faktor kedatangan kuasa asing ke negara kita, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menerangkan kepentingan semangat patriotisme dalam mempertahankan kedaulatan negara; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid membina peta sebab-akibat yang menghubungkan faktor dengan tindakan penjajahan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menerangkan kepentingan semangat patriotisme dalam mempertahankan kedaulatan negara.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 7.1.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K7.1.6."
+          "activity": "Murid menghasilkan dua faktor kedatangan kuasa asing dengan bukti. Guru menyemak secara individu menggunakan kata tugas SP 7.1.3 dan nilai K7.1.6, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 4: Kedaulatan Negara Dicabar. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 4. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -1098,7 +1175,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "gambar pelabuhan dan kad kepentingan ekonomi/strategik Tanah Melayu",
+          "task1": "mengelaskan faktor kedatangan kuasa asing kepada ekonomi, politik atau lokasi",
+          "task2": "membina peta sebab-akibat yang menghubungkan faktor dengan tindakan penjajahan",
+          "pbd_evidence": "dua faktor kedatangan kuasa asing dengan bukti",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -1119,7 +1207,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Perjuangan Kemerdekaan Negara",
         "sk": "7.1",
@@ -1144,28 +1232,28 @@
         "objective": [
           "Murid dapat menyatakan kesan campur tangan dan penjajahan kuasa asing terhadap pentadbiran dan sosioekonomi."
         ],
-        "success_criteria": "Murid menyiapkan produk 7.1.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan jadual dua perubahan pentadbiran serta dua kesan sosioekonomi, dengan maklumat bersumber yang memenuhi SP 7.1.4.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 4: Kedaulatan Negara Dicabar, hlm. 44–57 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta campur tangan kuasa asing dan garis masa; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 4: Kedaulatan Negara Dicabar, hlm. 44–57 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: petikan perubahan pentadbiran dan gambaran kegiatan ekonomi ketika penjajahan; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Kedaulatan Negara Dicabar” dan menyoal “Apakah yang dapat kita buktikan tentang Kedaulatan Negara Dicabar daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan petikan perubahan pentadbiran dan gambaran kegiatan ekonomi ketika penjajahan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 4: Kedaulatan Negara Dicabar."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 4, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan kesan campur tangan dan penjajahan kuasa asing terhadap pentadbiran dan sosioekonomi”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membandingkan struktur pentadbiran sebelum dan selepas campur tangan asing. Guru menyemak jawapan awal berpandukan 7.1.4."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menyatakan kesan campur tangan dan penjajahan kuasa asing terhadap pentadbiran dan sosioekonomi, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghuraikan kepentingan mengekalkan kedaulatan dan kemakmuran negara kita; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid membina carta kesan sosioekonomi yang membezakan manfaat terhad dan kesan negatif terhadap masyarakat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menghuraikan kepentingan mengekalkan kedaulatan dan kemakmuran negara kita.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 7.1.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K7.1.7."
+          "activity": "Murid menghasilkan jadual dua perubahan pentadbiran serta dua kesan sosioekonomi. Guru menyemak secara individu menggunakan kata tugas SP 7.1.4 dan nilai K7.1.7, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 4: Kedaulatan Negara Dicabar. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 4. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -1183,7 +1271,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "petikan perubahan pentadbiran dan gambaran kegiatan ekonomi ketika penjajahan",
+          "task1": "membandingkan struktur pentadbiran sebelum dan selepas campur tangan asing",
+          "task2": "membina carta kesan sosioekonomi yang membezakan manfaat terhad dan kesan negatif terhadap masyarakat",
+          "pbd_evidence": "jadual dua perubahan pentadbiran serta dua kesan sosioekonomi",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -1204,7 +1303,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Perjuangan Kemerdekaan Negara",
         "sk": "7.2",
@@ -1240,28 +1339,28 @@
           "Murid dapat menyenaraikan tokoh tempatan yang menentang campur tangan dan penjajahan kuasa asing.",
           "Murid dapat menyatakan sebab penentangan tokoh tempatan terhadap campur tangan dan penjajahan kuasa asing."
         ],
-        "success_criteria": "Murid menyiapkan produk 7.2.1–7.2.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan jadual sekurang-kurangnya tiga tokoh dan sebab penentangan, dengan maklumat bersumber yang memenuhi SP 7.2.1, 7.2.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 5: Bangkit Berjuang Penjajah Ditentang, hlm. 58–73 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; kad maklumat tokoh penentangan tempatan; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 5: Bangkit Berjuang Penjajah Ditentang, hlm. 58–73 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: kad tokoh penentangan seperti Dol Said, Rentap dan Tok Janggut dengan sumber; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Bangkit Berjuang Penjajah Ditentang” dan menyoal “Apakah yang dapat kita buktikan tentang Bangkit Berjuang Penjajah Ditentang daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan kad tokoh penentangan seperti Dol Said, Rentap dan Tok Janggut dengan sumber. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 5: Bangkit Berjuang Penjajah Ditentang."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 5, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan senarai fakta atau nama berserta label dan rujukan bagi fokus “Menyenaraikan tokoh tempatan yang menentang campur tangan dan penjajahan kuasa asing”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan tokoh dengan tempat serta sebab penentangan yang berkaitan. Guru menyemak jawapan awal berpandukan 7.2.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan sebab penentangan tokoh tempatan terhadap campur tangan dan penjajahan kuasa asing”, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan iktibar yang diperoleh daripada perjuangan tokoh terdahulu; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 5. Murid menyusun matriks tokoh, tindakan kuasa asing dan alasan perjuangan tanpa mencampurkan zaman. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan iktibar yang diperoleh daripada perjuangan tokoh terdahulu.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 7.2.1 dan 7.2.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K7.2.4, K7.2.6."
+          "activity": "Murid menghasilkan jadual sekurang-kurangnya tiga tokoh dan sebab penentangan. Guru menyemak secara individu menggunakan kata tugas SP 7.2.1, 7.2.2 dan nilai K7.2.4, K7.2.6, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 5: Bangkit Berjuang Penjajah Ditentang. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 5. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -1279,7 +1378,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "kad tokoh penentangan seperti Dol Said, Rentap dan Tok Janggut dengan sumber",
+          "task1": "memadankan tokoh dengan tempat serta sebab penentangan yang berkaitan",
+          "task2": "menyusun matriks tokoh, tindakan kuasa asing dan alasan perjuangan tanpa mencampurkan zaman",
+          "pbd_evidence": "jadual sekurang-kurangnya tiga tokoh dan sebab penentangan",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -1300,7 +1410,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Perjuangan Kemerdekaan Negara",
         "sk": "7.2",
@@ -1325,28 +1435,28 @@
         "objective": [
           "Murid dapat menerangkan peristiwa penentangan tokoh terhadap campur tangan dan penjajahan kuasa asing."
         ],
-        "success_criteria": "Murid menyiapkan produk 7.2.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan dua garis masa ringkas dan dua pengajaran perjuangan, dengan maklumat bersumber yang memenuhi SP 7.2.3.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 5: Bangkit Berjuang Penjajah Ditentang, hlm. 58–73 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; kad maklumat tokoh penentangan tempatan; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 5: Bangkit Berjuang Penjajah Ditentang, hlm. 58–73 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: garis masa perjuangan tokoh tempatan dan peta lokasi penentangan; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Bangkit Berjuang Penjajah Ditentang” dan menyoal “Apakah yang dapat kita buktikan tentang Bangkit Berjuang Penjajah Ditentang daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan garis masa perjuangan tokoh tempatan dan peta lokasi penentangan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 5: Bangkit Berjuang Penjajah Ditentang."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 5, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menerangkan peristiwa penentangan tokoh terhadap campur tangan dan penjajahan kuasa asing” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun dua siri peristiwa penentangan mengikut urutan dan lokasi. Guru menyemak jawapan awal berpandukan 7.2.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menerangkan peristiwa penentangan tokoh terhadap campur tangan dan penjajahan kuasa asing, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan kepentingan menghargai perjuangan pemimpin terdahulu; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 5. Murid membandingkan strategi yang digunakan serta iktibar menghargai pejuang. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menjelaskan kepentingan menghargai perjuangan pemimpin terdahulu.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 7.2.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K7.2.5."
+          "activity": "Murid menghasilkan dua garis masa ringkas dan dua pengajaran perjuangan. Guru menyemak secara individu menggunakan kata tugas SP 7.2.3 dan nilai K7.2.5, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 5: Bangkit Berjuang Penjajah Ditentang. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 5. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -1364,7 +1474,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "garis masa perjuangan tokoh tempatan dan peta lokasi penentangan",
+          "task1": "menyusun dua siri peristiwa penentangan mengikut urutan dan lokasi",
+          "task2": "membandingkan strategi yang digunakan serta iktibar menghargai pejuang",
+          "pbd_evidence": "dua garis masa ringkas dan dua pengajaran perjuangan",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -1385,7 +1506,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Perjuangan Kemerdekaan Negara",
         "sk": "7.3",
@@ -1421,28 +1542,28 @@
           "Murid dapat menamakan tokoh yang berjuang ke arah kemerdekaan.",
           "Murid dapat menyatakan usaha-usaha ke arah kemerdekaan."
         ],
-        "success_criteria": "Murid menyiapkan produk 7.3.1–7.3.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan peta tokoh-usaha dan kronologi tiga langkah kemerdekaan, dengan maklumat bersumber yang memenuhi SP 7.3.1, 7.3.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 6: Sejarah Kemerdekaan, hlm. 74–89 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; garis masa perjuangan kemerdekaan; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 6: Sejarah Kemerdekaan, hlm. 74–89 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: foto pemimpin kemerdekaan dan kad usaha rundingan atau gerakan politik; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Sejarah Kemerdekaan” dan menyoal “Apakah yang dapat kita buktikan tentang Sejarah Kemerdekaan daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan foto pemimpin kemerdekaan dan kad usaha rundingan atau gerakan politik. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 6: Sejarah Kemerdekaan."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 6, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan senarai fakta atau nama berserta label dan rujukan bagi fokus “Menamakan tokoh yang berjuang ke arah kemerdekaan”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan tokoh kemerdekaan dengan sumbangan yang disokong sumber. Guru menyemak jawapan awal berpandukan 7.3.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan usaha-usaha ke arah kemerdekaan”, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan pengorbanan tokoh pejuang kemerdekaan yang boleh dicontohi; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 6. Murid menyusun langkah rundingan, perpaduan parti dan persediaan menuju kemerdekaan dalam carta. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan pengorbanan tokoh pejuang kemerdekaan yang boleh dicontohi.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 7.3.1 dan 7.3.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K7.3.4, K7.3.6."
+          "activity": "Murid menghasilkan peta tokoh-usaha dan kronologi tiga langkah kemerdekaan. Guru menyemak secara individu menggunakan kata tugas SP 7.3.1, 7.3.2 dan nilai K7.3.4, K7.3.6, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 6: Sejarah Kemerdekaan. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 6. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -1460,7 +1581,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "foto pemimpin kemerdekaan dan kad usaha rundingan atau gerakan politik",
+          "task1": "memadankan tokoh kemerdekaan dengan sumbangan yang disokong sumber",
+          "task2": "menyusun langkah rundingan, perpaduan parti dan persediaan menuju kemerdekaan dalam carta",
+          "pbd_evidence": "peta tokoh-usaha dan kronologi tiga langkah kemerdekaan",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -1481,7 +1613,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Perjuangan Kemerdekaan Negara",
         "sk": "7.3",
@@ -1506,28 +1638,28 @@
         "objective": [
           "Murid dapat menerangkan detik-detik pengisytiharan kemerdekaan."
         ],
-        "success_criteria": "Murid menyiapkan produk 7.3.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan garis masa lengkap dengan lokasi dan dua detik pengisytiharan, dengan maklumat bersumber yang memenuhi SP 7.3.3.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 6: Sejarah Kemerdekaan, hlm. 74–89 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; garis masa perjuangan kemerdekaan; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 6: Sejarah Kemerdekaan, hlm. 74–89 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: gambar laungan kemerdekaan dan salinan atur cara rasmi bertarikh; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Sejarah Kemerdekaan” dan menyoal “Apakah yang dapat kita buktikan tentang Sejarah Kemerdekaan daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan gambar laungan kemerdekaan dan salinan atur cara rasmi bertarikh. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 6: Sejarah Kemerdekaan."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 6, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menerangkan detik-detik pengisytiharan kemerdekaan” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan peristiwa menjelang 31 Ogos 1957 mengikut urutan. Guru menyemak jawapan awal berpandukan 7.3.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menerangkan detik-detik pengisytiharan kemerdekaan, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan kepentingan permuafakatan dalam perjuangan menuntut kemerdekaan; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 6. Murid menghasilkan garis masa pengisytiharan kemerdekaan dan menjelaskan kepentingan peristiwa. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menjelaskan kepentingan permuafakatan dalam perjuangan menuntut kemerdekaan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 7.3.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K7.3.5."
+          "activity": "Murid menghasilkan garis masa lengkap dengan lokasi dan dua detik pengisytiharan. Guru menyemak secara individu menggunakan kata tugas SP 7.3.3 dan nilai K7.3.5, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 6: Sejarah Kemerdekaan. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 6. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -1545,7 +1677,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "gambar laungan kemerdekaan dan salinan atur cara rasmi bertarikh",
+          "task1": "mengelaskan peristiwa menjelang 31 Ogos 1957 mengikut urutan",
+          "task2": "menghasilkan garis masa pengisytiharan kemerdekaan dan menjelaskan kepentingan peristiwa",
+          "pbd_evidence": "garis masa lengkap dengan lokasi dan dua detik pengisytiharan",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -1566,7 +1709,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KAJIAN_KES",
         "tema": "Perjuangan Kemerdekaan Negara",
         "sk": "7.3",
@@ -1597,28 +1740,28 @@
           "Membina satu soalan inkuiri berkenaan Sejarah Kemerdekaan 1957.",
           "Mengenal pasti sekurang-kurangnya dua bukti relevan dan menerangkan kesimpulan secara beralasan."
         ],
-        "success_criteria": "Murid membina persoalan kajian, menyatakan dua bukti relevan dan menjelaskan satu rumusan yang disokong bukti.",
+        "success_criteria": "Murid dapat menghasilkan laporan kajian kes dua sumber, dua tokoh, satu rumusan iktibar, dengan maklumat bersumber yang memenuhi SP 7.3.1, 7.3.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 6: Sejarah Kemerdekaan, hlm. 74–89 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; garis masa perjuangan kemerdekaan; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 6: Sejarah Kemerdekaan, hlm. 74–89 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: dua sumber kemerdekaan seperti pengisytiharan dan foto perhimpunan; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Sejarah Kemerdekaan” dan menyoal “Apakah bukti yang menyokong persoalan kajian tentang Sejarah Kemerdekaan?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan dua sumber kemerdekaan seperti pengisytiharan dan foto perhimpunan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 6: Sejarah Kemerdekaan."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membantu murid membina soalan kajian “Sejarah Kemerdekaan”, mencari dua sumber berbeza dan membezakan fakta dengan pendapat. Murid melengkapkan jadual soalan–sumber–bukti, tanpa menyalin bulat-bulat teks sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina soalan kajian tentang bagaimana perpaduan menyokong kemerdekaan. Guru menyemak jawapan awal berpandukan 7.3.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid membandingkan dua sumber berkaitan Sejarah Kemerdekaan, menyusun maklumat mengikut kronologi atau kategori, lalu merumus satu dapatan dan batas bukti. Guru membimbing murid menghubungkan iktibar dengan nilai sivik secara beralasan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 6. Murid membandingkan dua sumber dan membentang sumbangan dua tokoh serta batas maklumat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan pengorbanan tokoh pejuang kemerdekaan yang boleh dicontohi.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Pembentangan kajian ringkas: satu persoalan, dua bukti, satu rumusan. Guru menilai kesahan fakta, kesesuaian bukti, tafsiran dan komunikasi murid; beri maklum balas individu."
+          "activity": "Murid menghasilkan laporan kajian kes dua sumber, dua tokoh, satu rumusan iktibar. Guru menyemak secara individu menggunakan kata tugas SP 7.3.1, 7.3.2 dan nilai K7.3.4, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 6: Sejarah Kemerdekaan. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 6. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -1636,7 +1779,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "dua sumber kemerdekaan seperti pengisytiharan dan foto perhimpunan",
+          "task1": "membina soalan kajian tentang bagaimana perpaduan menyokong kemerdekaan",
+          "task2": "membandingkan dua sumber dan membentang sumbangan dua tokoh serta batas maklumat",
+          "pbd_evidence": "laporan kajian kes dua sumber, dua tokoh, satu rumusan iktibar",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -1657,7 +1811,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Yang di-Pertuan Agong",
         "sk": "8.1",
@@ -1688,28 +1842,28 @@
           "Murid dapat menyatakan kedudukan Yang di-Pertuan Agong sebagai Ketua Utama Negara.",
           "Murid dapat menyatakan peranan Majlis Raja-Raja dalam pemilihan Yang di-Pertuan Agong."
         ],
-        "success_criteria": "Murid menyiapkan produk 8.1.1–8.1.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan carta fungsi Majlis Raja-Raja dan kedudukan Agong, dengan maklumat bersumber yang memenuhi SP 8.1.1, 8.1.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 7: Yang di-Pertuan Agong Teras Kedaulatan Negara, hlm. 90–107 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; gambar alat kebesaran serta istiadat Yang di-Pertuan Agong; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 7: Yang di-Pertuan Agong Teras Kedaulatan Negara, hlm. 90–107 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: gambar Yang di-Pertuan Agong dan diagram Majlis Raja-Raja; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Yang di-Pertuan Agong Teras Kedaulatan Negara” dan menyoal “Apakah yang dapat kita buktikan tentang Yang di-Pertuan Agong Teras Kedaulatan Negara daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan gambar Yang di-Pertuan Agong dan diagram Majlis Raja-Raja. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 7: Yang di-Pertuan Agong Teras Kedaulatan Negara."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 7, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan kedudukan Yang di-Pertuan Agong sebagai Ketua Utama Negara”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membezakan Ketua Utama Negara dengan ketua kerajaan tanpa mencampurkan bidang kuasa. Guru menyemak jawapan awal berpandukan 8.1.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan peranan Majlis Raja-Raja dalam pemilihan Yang di-Pertuan Agong”, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan kepentingan menghargai Yang di-Pertuan Agong sebagai tonggak perpaduan; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid membina carta ringkas pemilihan Yang di-Pertuan Agong oleh Majlis Raja-Raja berdasarkan teks. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan menghargai Yang di-Pertuan Agong sebagai tonggak perpaduan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 8.1.1 dan 8.1.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K8.1.6."
+          "activity": "Murid menghasilkan carta fungsi Majlis Raja-Raja dan kedudukan Agong. Guru menyemak secara individu menggunakan kata tugas SP 8.1.1, 8.1.2 dan nilai K8.1.6, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 7: Yang di-Pertuan Agong Teras Kedaulatan Negara. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 7. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -1727,7 +1881,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "gambar Yang di-Pertuan Agong dan diagram Majlis Raja-Raja",
+          "task1": "membezakan Ketua Utama Negara dengan ketua kerajaan tanpa mencampurkan bidang kuasa",
+          "task2": "membina carta ringkas pemilihan Yang di-Pertuan Agong oleh Majlis Raja-Raja berdasarkan teks",
+          "pbd_evidence": "carta fungsi Majlis Raja-Raja dan kedudukan Agong",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -1748,7 +1913,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Yang di-Pertuan Agong",
         "sk": "8.1",
@@ -1779,28 +1944,28 @@
           "Murid dapat menyatakan istiadat pertabalan Yang di-Pertuan Agong.",
           "Murid dapat menyenaraikan bidang kuasa Yang di-Pertuan Agong."
         ],
-        "success_criteria": "Murid menyiapkan produk 8.1.3–8.1.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan senarai langkah istiadat dan jadual bidang kuasa, dengan maklumat bersumber yang memenuhi SP 8.1.3, 8.1.4.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 7: Yang di-Pertuan Agong Teras Kedaulatan Negara, hlm. 90–107 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; gambar alat kebesaran serta istiadat Yang di-Pertuan Agong; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 7: Yang di-Pertuan Agong Teras Kedaulatan Negara, hlm. 90–107 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: gambar istiadat pertabalan dan petikan bidang kuasa Perlembagaan; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Yang di-Pertuan Agong Teras Kedaulatan Negara” dan menyoal “Apakah yang dapat kita buktikan tentang Yang di-Pertuan Agong Teras Kedaulatan Negara daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan gambar istiadat pertabalan dan petikan bidang kuasa Perlembagaan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 7: Yang di-Pertuan Agong Teras Kedaulatan Negara."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 7, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan istiadat pertabalan Yang di-Pertuan Agong”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun tertib umum istiadat pertabalan dengan rujukan rasmi. Guru menyemak jawapan awal berpandukan 8.1.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan senarai fakta atau nama berserta label dan rujukan bagi fokus “Menyenaraikan bidang kuasa Yang di-Pertuan Agong”, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menerangkan kepentingan mengekalkan institusi Yang di-Pertuan Agong; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid mengkategorikan bidang kuasa Yang di-Pertuan Agong serta menerangkan prinsip raja berperlembagaan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menerangkan kepentingan mengekalkan institusi Yang di-Pertuan Agong.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 8.1.3 dan 8.1.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K8.1.7."
+          "activity": "Murid menghasilkan senarai langkah istiadat dan jadual bidang kuasa. Guru menyemak secara individu menggunakan kata tugas SP 8.1.3, 8.1.4 dan nilai K8.1.7, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 7: Yang di-Pertuan Agong Teras Kedaulatan Negara. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 7. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -1818,7 +1983,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "gambar istiadat pertabalan dan petikan bidang kuasa Perlembagaan",
+          "task1": "menyusun tertib umum istiadat pertabalan dengan rujukan rasmi",
+          "task2": "mengkategorikan bidang kuasa Yang di-Pertuan Agong serta menerangkan prinsip raja berperlembagaan",
+          "pbd_evidence": "senarai langkah istiadat dan jadual bidang kuasa",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -1839,7 +2015,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Yang di-Pertuan Agong",
         "sk": "8.1",
@@ -1864,28 +2040,28 @@
         "objective": [
           "Murid dapat menyenaraikan alat-alat kebesaran Yang di-Pertuan Agong dan Raja Permaisuri Agong."
         ],
-        "success_criteria": "Murid menyiapkan produk 8.1.5 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan tiga kad alat kebesaran dengan nama, fungsi dan adab, dengan maklumat bersumber yang memenuhi SP 8.1.5.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 7: Yang di-Pertuan Agong Teras Kedaulatan Negara, hlm. 90–107 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; gambar alat kebesaran serta istiadat Yang di-Pertuan Agong; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 7: Yang di-Pertuan Agong Teras Kedaulatan Negara, hlm. 90–107 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: gambar keris panjang diraja, tengkolok dan alat kebesaran rasmi; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Yang di-Pertuan Agong Teras Kedaulatan Negara” dan menyoal “Apakah yang dapat kita buktikan tentang Yang di-Pertuan Agong Teras Kedaulatan Negara daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan gambar keris panjang diraja, tengkolok dan alat kebesaran rasmi. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 7: Yang di-Pertuan Agong Teras Kedaulatan Negara."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 7, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan senarai fakta atau nama berserta label dan rujukan bagi fokus “Menyenaraikan alat-alat kebesaran Yang di-Pertuan Agong dan Raja Permaisuri Agong”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan nama alat kebesaran dengan rupa serta fungsi istiadat. Guru menyemak jawapan awal berpandukan 8.1.5."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menyenaraikan alat-alat kebesaran Yang di-Pertuan Agong dan Raja Permaisuri Agong, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghuraikan kepentingan taat setia kepada raja dan negara; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid membina galeri kad maklumat alat kebesaran sambil menjelaskan cara menghormati lambang negara. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menghuraikan kepentingan taat setia kepada raja dan negara.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 8.1.5 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K8.1.8."
+          "activity": "Murid menghasilkan tiga kad alat kebesaran dengan nama, fungsi dan adab. Guru menyemak secara individu menggunakan kata tugas SP 8.1.5 dan nilai K8.1.8, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 7: Yang di-Pertuan Agong Teras Kedaulatan Negara. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 7. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -1903,7 +2079,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "gambar keris panjang diraja, tengkolok dan alat kebesaran rasmi",
+          "task1": "memadankan nama alat kebesaran dengan rupa serta fungsi istiadat",
+          "task2": "membina galeri kad maklumat alat kebesaran sambil menjelaskan cara menghormati lambang negara",
+          "pbd_evidence": "tiga kad alat kebesaran dengan nama, fungsi dan adab",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -1924,7 +2111,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Identiti Negara Kita",
         "sk": "9.1",
@@ -1960,28 +2147,28 @@
           "Murid dapat menyatakan sejarah Jata Negara.",
           "Murid dapat menyenaraikan lambang pada Jata Negara."
         ],
-        "success_criteria": "Murid menyiapkan produk 9.1.1–9.1.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan garis masa Jata Negara dan rajah lambang berlabel, dengan maklumat bersumber yang memenuhi SP 9.1.1, 9.1.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 8: Jata Negara, hlm. 108–119 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; imej Jata Negara daripada sumber rasmi; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 8: Jata Negara, hlm. 108–119 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: imej rasmi Jata Negara dan garis masa penggunaannya; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Jata Negara” dan menyoal “Apakah yang dapat kita buktikan tentang Jata Negara daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan imej rasmi Jata Negara dan garis masa penggunaannya. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 8: Jata Negara."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 8, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan sejarah Jata Negara”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengenal pasti latar sejarah penggunaan Jata Negara daripada sumber. Guru menyemak jawapan awal berpandukan 9.1.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan senarai fakta atau nama berserta label dan rujukan bagi fokus “Menyenaraikan lambang pada Jata Negara”, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan kepentingan menghormati Jata Negara; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 8. Murid melabel unsur utama pada Jata Negara tanpa mencampurkan simbol negeri dan negara. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan menghormati Jata Negara.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 9.1.1 dan 9.1.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K9.1.4, K9.1.6."
+          "activity": "Murid menghasilkan garis masa Jata Negara dan rajah lambang berlabel. Guru menyemak secara individu menggunakan kata tugas SP 9.1.1, 9.1.2 dan nilai K9.1.4, K9.1.6, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 8: Jata Negara. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 8. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -1999,7 +2186,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "imej rasmi Jata Negara dan garis masa penggunaannya",
+          "task1": "mengenal pasti latar sejarah penggunaan Jata Negara daripada sumber",
+          "task2": "melabel unsur utama pada Jata Negara tanpa mencampurkan simbol negeri dan negara",
+          "pbd_evidence": "garis masa Jata Negara dan rajah lambang berlabel",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -2020,7 +2218,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Identiti Negara Kita",
         "sk": "9.1",
@@ -2045,28 +2243,28 @@
         "objective": [
           "Murid dapat menerangkan makna lambang pada Jata Negara."
         ],
-        "success_criteria": "Murid menyiapkan produk 9.1.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan rajah sekurang-kurangnya tiga unsur dan maksudnya, dengan maklumat bersumber yang memenuhi SP 9.1.3.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 8: Jata Negara, hlm. 108–119 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; imej Jata Negara daripada sumber rasmi; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 8: Jata Negara, hlm. 108–119 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: imej rasmi Jata Negara dengan unsur harimau, perisai dan bulan sabit; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Jata Negara” dan menyoal “Apakah yang dapat kita buktikan tentang Jata Negara daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan imej rasmi Jata Negara dengan unsur harimau, perisai dan bulan sabit. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 8: Jata Negara."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 8, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menerangkan makna lambang pada Jata Negara” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan unsur Jata Negara dengan maksud yang dinyatakan dalam sumber. Guru menyemak jawapan awal berpandukan 9.1.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menerangkan makna lambang pada Jata Negara, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menerangkan kepentingan Jata Negara sebagai identiti negara; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 8. Murid membina kad penerangan mengapa identiti rasmi perlu dihormati. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menerangkan kepentingan Jata Negara sebagai identiti negara."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 9.1.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K9.1.5."
+          "activity": "Murid menghasilkan rajah sekurang-kurangnya tiga unsur dan maksudnya. Guru menyemak secara individu menggunakan kata tugas SP 9.1.3 dan nilai K9.1.5, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 8: Jata Negara. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 8. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -2084,7 +2282,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "imej rasmi Jata Negara dengan unsur harimau, perisai dan bulan sabit",
+          "task1": "memadankan unsur Jata Negara dengan maksud yang dinyatakan dalam sumber",
+          "task2": "membina kad penerangan mengapa identiti rasmi perlu dihormati",
+          "pbd_evidence": "rajah sekurang-kurangnya tiga unsur dan maksudnya",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -2105,7 +2314,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Identiti Negara Kita",
         "sk": "9.2",
@@ -2136,28 +2345,28 @@
           "Murid dapat menyatakan sejarah bendera kebangsaan.",
           "Murid dapat menyatakan nama bendera kebangsaan."
         ],
-        "success_criteria": "Murid menyiapkan produk 9.2.1–9.2.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan garis masa dua perubahan dan nama bendera, dengan maklumat bersumber yang memenuhi SP 9.2.1, 9.2.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 9: Bendera Kebangsaan Malaysia, hlm. 120–133 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; imej Jalur Gemilang daripada sumber rasmi; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 9: Bendera Kebangsaan Malaysia, hlm. 120–133 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: imej bendera kebangsaan pada beberapa tahun serta garis masa; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Bendera Kebangsaan Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Bendera Kebangsaan Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan imej bendera kebangsaan pada beberapa tahun serta garis masa. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 9: Bendera Kebangsaan Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 9, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan sejarah bendera kebangsaan”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun fakta sejarah penciptaan dan perubahan bendera kebangsaan. Guru menyemak jawapan awal berpandukan 9.2.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan nama bendera kebangsaan”, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan kepentingan bendera kebangsaan dikibarkan; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid menghubungkan nama Jalur Gemilang dengan sejarah serta peristiwa penggunaan bendera. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan bendera kebangsaan dikibarkan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 9.2.1 dan 9.2.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K9.2.5."
+          "activity": "Murid menghasilkan garis masa dua perubahan dan nama bendera. Guru menyemak secara individu menggunakan kata tugas SP 9.2.1, 9.2.2 dan nilai K9.2.5, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 9: Bendera Kebangsaan Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 9. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -2175,7 +2384,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "imej bendera kebangsaan pada beberapa tahun serta garis masa",
+          "task1": "menyusun fakta sejarah penciptaan dan perubahan bendera kebangsaan",
+          "task2": "menghubungkan nama Jalur Gemilang dengan sejarah serta peristiwa penggunaan bendera",
+          "pbd_evidence": "garis masa dua perubahan dan nama bendera",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -2196,7 +2416,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Identiti Negara Kita",
         "sk": "9.2",
@@ -2221,28 +2441,28 @@
         "objective": [
           "Murid dapat menerangkan makna warna dan lambang pada bendera kebangsaan."
         ],
-        "success_criteria": "Murid menyiapkan produk 9.2.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan empat padanan warna/lambang dengan makna tepat, dengan maklumat bersumber yang memenuhi SP 9.2.3.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 9: Bendera Kebangsaan Malaysia, hlm. 120–133 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; imej Jalur Gemilang daripada sumber rasmi; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 9: Bendera Kebangsaan Malaysia, hlm. 120–133 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: imej Jalur Gemilang warna sebenar dan panduan lambang rasmi; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Bendera Kebangsaan Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Bendera Kebangsaan Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan imej Jalur Gemilang warna sebenar dan panduan lambang rasmi. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 9: Bendera Kebangsaan Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 9, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menerangkan makna warna dan lambang pada bendera kebangsaan” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid melabel warna, jalur, bulan dan bintang pada imej bendera. Guru menyemak jawapan awal berpandukan 9.2.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menerangkan makna warna dan lambang pada bendera kebangsaan, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan kepentingan menghormati bendera kebangsaan; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid membina jadual makna simbol dan membetulkan contoh tafsiran yang salah. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menjelaskan kepentingan menghormati bendera kebangsaan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 9.2.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K9.2.6."
+          "activity": "Murid menghasilkan empat padanan warna/lambang dengan makna tepat. Guru menyemak secara individu menggunakan kata tugas SP 9.2.3 dan nilai K9.2.6, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 9: Bendera Kebangsaan Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 9. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -2260,7 +2480,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "imej Jalur Gemilang warna sebenar dan panduan lambang rasmi",
+          "task1": "melabel warna, jalur, bulan dan bintang pada imej bendera",
+          "task2": "membina jadual makna simbol dan membetulkan contoh tafsiran yang salah",
+          "pbd_evidence": "empat padanan warna/lambang dengan makna tepat",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -2281,7 +2512,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Identiti Negara Kita",
         "sk": "9.2",
@@ -2306,28 +2537,28 @@
         "objective": [
           "Murid dapat menjelaskan etika penggunaan bendera kebangsaan."
         ],
-        "success_criteria": "Murid menyiapkan produk 9.2.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan senarai semak etika sekurang-kurangnya empat perkara, dengan maklumat bersumber yang memenuhi SP 9.2.4.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 9: Bendera Kebangsaan Malaysia, hlm. 120–133 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; imej Jalur Gemilang daripada sumber rasmi; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 9: Bendera Kebangsaan Malaysia, hlm. 120–133 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: poster panduan penggunaan dan pelupusan bendera secara hormat; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Bendera Kebangsaan Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Bendera Kebangsaan Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan poster panduan penggunaan dan pelupusan bendera secara hormat. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 9: Bendera Kebangsaan Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 9, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan etika penggunaan bendera kebangsaan” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengkategorikan situasi menaikkan, mempamer dan menyimpan bendera dengan betul. Guru menyemak jawapan awal berpandukan 9.2.4."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menjelaskan etika penggunaan bendera kebangsaan, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghuraikan kepentingan bendera kebangsaan sebagai simbol perpaduan; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid melakonkan cara menegur penggunaan bendera yang tidak tepat dengan beradab. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menghuraikan kepentingan bendera kebangsaan sebagai simbol perpaduan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 9.2.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K9.2.7."
+          "activity": "Murid menghasilkan senarai semak etika sekurang-kurangnya empat perkara. Guru menyemak secara individu menggunakan kata tugas SP 9.2.4 dan nilai K9.2.7, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 9: Bendera Kebangsaan Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 9. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -2345,7 +2576,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "poster panduan penggunaan dan pelupusan bendera secara hormat",
+          "task1": "mengkategorikan situasi menaikkan, mempamer dan menyimpan bendera dengan betul",
+          "task2": "melakonkan cara menegur penggunaan bendera yang tidak tepat dengan beradab",
+          "pbd_evidence": "senarai semak etika sekurang-kurangnya empat perkara",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -2366,7 +2608,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KAJIAN_KES",
         "tema": "Identiti Negara Kita",
         "sk": "9.2",
@@ -2397,28 +2639,28 @@
           "Membina satu soalan inkuiri berkenaan Bendera Kebangsaan.",
           "Mengenal pasti sekurang-kurangnya dua bukti relevan dan menerangkan kesimpulan secara beralasan."
         ],
-        "success_criteria": "Murid membina persoalan kajian, menyatakan dua bukti relevan dan menjelaskan satu rumusan yang disokong bukti.",
+        "success_criteria": "Murid dapat menghasilkan laporan kes dua sumber, satu kronologi dan etika bendera, dengan maklumat bersumber yang memenuhi SP 9.2.1, 9.2.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 9: Bendera Kebangsaan Malaysia, hlm. 120–133 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; imej Jalur Gemilang daripada sumber rasmi; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 9: Bendera Kebangsaan Malaysia, hlm. 120–133 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: dua imej bendera dari konteks sejarah berbeza dan garis masa; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Bendera Kebangsaan Malaysia” dan menyoal “Apakah bukti yang menyokong persoalan kajian tentang Bendera Kebangsaan Malaysia?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan dua imej bendera dari konteks sejarah berbeza dan garis masa. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 9: Bendera Kebangsaan Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membantu murid membina soalan kajian “Bendera Kebangsaan Malaysia”, mencari dua sumber berbeza dan membezakan fakta dengan pendapat. Murid melengkapkan jadual soalan–sumber–bukti, tanpa menyalin bulat-bulat teks sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina persoalan inkuiri tentang asal usul Jalur Gemilang. Guru menyemak jawapan awal berpandukan 9.2.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid membandingkan dua sumber berkaitan Bendera Kebangsaan Malaysia, menyusun maklumat mengikut kronologi atau kategori, lalu merumus satu dapatan dan batas bukti. Guru membimbing murid menghubungkan iktibar dengan nilai sivik secara beralasan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid menilai dua bukti, menghasilkan garis masa dan mencadangkan amalan menghormati bendera. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan bendera kebangsaan dikibarkan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Pembentangan kajian ringkas: satu persoalan, dua bukti, satu rumusan. Guru menilai kesahan fakta, kesesuaian bukti, tafsiran dan komunikasi murid; beri maklum balas individu."
+          "activity": "Murid menghasilkan laporan kes dua sumber, satu kronologi dan etika bendera. Guru menyemak secara individu menggunakan kata tugas SP 9.2.1, 9.2.2 dan nilai K9.2.5, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 9: Bendera Kebangsaan Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 9. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -2436,7 +2678,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "dua imej bendera dari konteks sejarah berbeza dan garis masa",
+          "task1": "membina persoalan inkuiri tentang asal usul Jalur Gemilang",
+          "task2": "menilai dua bukti, menghasilkan garis masa dan mencadangkan amalan menghormati bendera",
+          "pbd_evidence": "laporan kes dua sumber, satu kronologi dan etika bendera",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -2457,7 +2710,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Identiti Negara Kita",
         "sk": "9.3",
@@ -2488,28 +2741,28 @@
           "Murid dapat menyatakan sejarah penciptaan lagu kebangsaan Malaysia.",
           "Murid dapat menyatakan nama lagu kebangsaan Malaysia."
         ],
-        "success_criteria": "Murid menyiapkan produk 9.3.1–9.3.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan garis masa sejarah dan nama lagu Negaraku, dengan maklumat bersumber yang memenuhi SP 9.3.1, 9.3.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 10: Lagu Kebangsaan Malaysia, hlm. 134–147 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; maklumat sejarah dan etika Lagu Negaraku; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 10: Lagu Kebangsaan Malaysia, hlm. 134–147 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: rakaman rasmi atau maklumat sejarah penggubalan lagu Negaraku; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Lagu Kebangsaan Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Lagu Kebangsaan Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan rakaman rasmi atau maklumat sejarah penggubalan lagu Negaraku. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 10: Lagu Kebangsaan Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 10, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan sejarah penciptaan lagu kebangsaan Malaysia”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun peristiwa asal usul lagu kebangsaan dan menamakan lagu. Guru menyemak jawapan awal berpandukan 9.3.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan nama lagu kebangsaan Malaysia”, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan kepentingan etika ketika menyanyi dan mendengar lagu kebangsaan Malaysia; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid membina kad fakta penciptaan dan kegunaan lagu kebangsaan dengan sumber. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan etika ketika menyanyi dan mendengar lagu kebangsaan Malaysia.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 9.3.1 dan 9.3.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K9.3.6."
+          "activity": "Murid menghasilkan garis masa sejarah dan nama lagu Negaraku. Guru menyemak secara individu menggunakan kata tugas SP 9.3.1, 9.3.2 dan nilai K9.3.6, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 10: Lagu Kebangsaan Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 10. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -2527,7 +2780,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "rakaman rasmi atau maklumat sejarah penggubalan lagu Negaraku",
+          "task1": "menyusun peristiwa asal usul lagu kebangsaan dan menamakan lagu",
+          "task2": "membina kad fakta penciptaan dan kegunaan lagu kebangsaan dengan sumber",
+          "pbd_evidence": "garis masa sejarah dan nama lagu Negaraku",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -2548,7 +2812,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Identiti Negara Kita",
         "sk": "9.3",
@@ -2579,28 +2843,28 @@
           "Murid dapat menerangkan lirik dan maksud lagu Negaraku.",
           "Murid dapat menjelaskan etika menyanyikan dan mendengar lagu kebangsaan."
         ],
-        "success_criteria": "Murid menyiapkan produk 9.3.3–9.3.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan dua penjelasan maksud dan tiga etika dengan contoh, dengan maklumat bersumber yang memenuhi SP 9.3.3, 9.3.4.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 10: Lagu Kebangsaan Malaysia, hlm. 134–147 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; maklumat sejarah dan etika Lagu Negaraku; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 10: Lagu Kebangsaan Malaysia, hlm. 134–147 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: petikan rasmi maksud lagu Negaraku dan panduan adab semasa dimainkan; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Lagu Kebangsaan Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Lagu Kebangsaan Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan petikan rasmi maksud lagu Negaraku dan panduan adab semasa dimainkan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 10: Lagu Kebangsaan Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 10, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menerangkan lirik dan maksud lagu Negaraku” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mentafsir tema utama lagu tanpa menyalin keseluruhan lirik. Guru menyemak jawapan awal berpandukan 9.3.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan etika menyanyikan dan mendengar lagu kebangsaan” dengan contoh daripada sumber, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan kepentingan menghayati dan menjiwai lagu kebangsaan Malaysia; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid memerhati demonstrasi berdiri hormat dan menghasilkan carta etika ketika menyanyi atau mendengar. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menjelaskan kepentingan menghayati dan menjiwai lagu kebangsaan Malaysia.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 9.3.3 dan 9.3.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K9.3.7."
+          "activity": "Murid menghasilkan dua penjelasan maksud dan tiga etika dengan contoh. Guru menyemak secara individu menggunakan kata tugas SP 9.3.3, 9.3.4 dan nilai K9.3.7, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 10: Lagu Kebangsaan Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 10. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -2618,7 +2882,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "petikan rasmi maksud lagu Negaraku dan panduan adab semasa dimainkan",
+          "task1": "mentafsir tema utama lagu tanpa menyalin keseluruhan lirik",
+          "task2": "memerhati demonstrasi berdiri hormat dan menghasilkan carta etika ketika menyanyi atau mendengar",
+          "pbd_evidence": "dua penjelasan maksud dan tiga etika dengan contoh",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -2639,7 +2914,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Identiti Negara Kita",
         "sk": "9.3",
@@ -2664,28 +2939,28 @@
         "objective": [
           "Murid dapat menghuraikan peranan lagu kebangsaan dalam membentuk jati diri."
         ],
-        "success_criteria": "Murid menyiapkan produk 9.3.5 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan dua sebab peranan lagu dalam pembinaan jati diri, dengan maklumat bersumber yang memenuhi SP 9.3.5.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 10: Lagu Kebangsaan Malaysia, hlm. 134–147 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; maklumat sejarah dan etika Lagu Negaraku; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 10: Lagu Kebangsaan Malaysia, hlm. 134–147 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: contoh suasana perhimpunan rasmi dan acara sukan antarabangsa; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Lagu Kebangsaan Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Lagu Kebangsaan Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan contoh suasana perhimpunan rasmi dan acara sukan antarabangsa. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 10: Lagu Kebangsaan Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 10, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menghuraikan peranan lagu kebangsaan dalam membentuk jati diri” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengenal pasti fungsi Negaraku dalam peristiwa rasmi. Guru menyemak jawapan awal berpandukan 9.3.5."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menghuraikan peranan lagu kebangsaan dalam membentuk jati diri, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghuraikan kepentingan lagu kebangsaan Malaysia sebagai simbol perpaduan; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid membina peta kaitan lagu kebangsaan, identiti dan perpaduan rakyat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menghuraikan kepentingan lagu kebangsaan Malaysia sebagai simbol perpaduan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 9.3.5 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K9.3.8."
+          "activity": "Murid menghasilkan dua sebab peranan lagu dalam pembinaan jati diri. Guru menyemak secara individu menggunakan kata tugas SP 9.3.5 dan nilai K9.3.8, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 10: Lagu Kebangsaan Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 10. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -2703,7 +2978,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "contoh suasana perhimpunan rasmi dan acara sukan antarabangsa",
+          "task1": "mengenal pasti fungsi Negaraku dalam peristiwa rasmi",
+          "task2": "membina peta kaitan lagu kebangsaan, identiti dan perpaduan rakyat",
+          "pbd_evidence": "dua sebab peranan lagu dalam pembinaan jati diri",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -2724,7 +3010,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Identiti Negara Kita",
         "sk": "9.4",
@@ -2755,28 +3041,28 @@
           "Murid dapat menyatakan kedudukan bahasa kebangsaan dan bahasa lain dalam Perlembagaan Persekutuan.",
           "Murid dapat menerangkan peranan bahasa kebangsaan."
         ],
-        "success_criteria": "Murid menyiapkan produk 9.4.1–9.4.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan jadual kedudukan perlembagaan dan dua peranan bahasa, dengan maklumat bersumber yang memenuhi SP 9.4.1, 9.4.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 11: Bahasa Kebangsaan, hlm. 148–161 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; petikan ringkas berkaitan bahasa kebangsaan; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 11: Bahasa Kebangsaan, hlm. 148–161 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: petikan Perkara 152 Perlembagaan dan contoh penggunaan bahasa di ruang awam; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Bahasa Kebangsaan” dan menyoal “Apakah yang dapat kita buktikan tentang Bahasa Kebangsaan daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan petikan Perkara 152 Perlembagaan dan contoh penggunaan bahasa di ruang awam. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 11: Bahasa Kebangsaan."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 11, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan kedudukan bahasa kebangsaan dan bahasa lain dalam Perlembagaan Persekutuan”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membezakan kedudukan bahasa kebangsaan dengan penggunaan bahasa lain. Guru menyemak jawapan awal berpandukan 9.4.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menerangkan peranan bahasa kebangsaan” dengan contoh daripada sumber, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan kepentingan memartabatkan bahasa kebangsaan; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 11. Murid membina peta peranan bahasa kebangsaan sebagai alat perpaduan dan ilmu. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan memartabatkan bahasa kebangsaan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 9.4.1 dan 9.4.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K9.4.5."
+          "activity": "Murid menghasilkan jadual kedudukan perlembagaan dan dua peranan bahasa. Guru menyemak secara individu menggunakan kata tugas SP 9.4.1, 9.4.2 dan nilai K9.4.5, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 11: Bahasa Kebangsaan. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 11. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -2794,7 +3080,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "petikan Perkara 152 Perlembagaan dan contoh penggunaan bahasa di ruang awam",
+          "task1": "membezakan kedudukan bahasa kebangsaan dengan penggunaan bahasa lain",
+          "task2": "membina peta peranan bahasa kebangsaan sebagai alat perpaduan dan ilmu",
+          "pbd_evidence": "jadual kedudukan perlembagaan dan dua peranan bahasa",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -2815,7 +3112,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Identiti Negara Kita",
         "sk": "9.4",
@@ -2840,28 +3137,28 @@
         "objective": [
           "Murid dapat menjelaskan institusi yang terlibat dalam mempertahankan kedudukan bahasa kebangsaan."
         ],
-        "success_criteria": "Murid menyiapkan produk 9.4.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan kad institusi-fungsi dan satu cadangan program, dengan maklumat bersumber yang memenuhi SP 9.4.3.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 11: Bahasa Kebangsaan, hlm. 148–161 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; petikan ringkas berkaitan bahasa kebangsaan; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 11: Bahasa Kebangsaan, hlm. 148–161 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: gambar Dewan Bahasa dan Pustaka dan bahan penerbitan bahasa; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Bahasa Kebangsaan” dan menyoal “Apakah yang dapat kita buktikan tentang Bahasa Kebangsaan daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan gambar Dewan Bahasa dan Pustaka dan bahan penerbitan bahasa. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 11: Bahasa Kebangsaan."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 11, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan institusi yang terlibat dalam mempertahankan kedudukan bahasa kebangsaan” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan institusi berkaitan bahasa dengan tugas khusus yang diketahui. Guru menyemak jawapan awal berpandukan 9.4.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menjelaskan institusi yang terlibat dalam mempertahankan kedudukan bahasa kebangsaan, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menerangkan kepentingan menggunakan bahasa kebangsaan dengan betul dalam pertuturan dan penulisan; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 11. Murid mencadangkan satu program sekolah memartabatkan penggunaan bahasa Melayu yang berhemah. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menerangkan kepentingan menggunakan bahasa kebangsaan dengan betul dalam pertuturan dan penulisan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 9.4.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K9.4.6."
+          "activity": "Murid menghasilkan kad institusi-fungsi dan satu cadangan program. Guru menyemak secara individu menggunakan kata tugas SP 9.4.3 dan nilai K9.4.6, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 11: Bahasa Kebangsaan. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 11. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -2879,7 +3176,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "gambar Dewan Bahasa dan Pustaka dan bahan penerbitan bahasa",
+          "task1": "memadankan institusi berkaitan bahasa dengan tugas khusus yang diketahui",
+          "task2": "mencadangkan satu program sekolah memartabatkan penggunaan bahasa Melayu yang berhemah",
+          "pbd_evidence": "kad institusi-fungsi dan satu cadangan program",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -2900,7 +3208,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Identiti Negara Kita",
         "sk": "9.4",
@@ -2925,28 +3233,28 @@
         "objective": [
           "Murid dapat menghuraikan cabaran penggunaan bahasa Melayu sebagai bahasa kebangsaan."
         ],
-        "success_criteria": "Murid menyiapkan produk 9.4.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan peta cabaran dan dua tindakan penyelesaian, dengan maklumat bersumber yang memenuhi SP 9.4.4.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 11: Bahasa Kebangsaan, hlm. 148–161 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; petikan ringkas berkaitan bahasa kebangsaan; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 11: Bahasa Kebangsaan, hlm. 148–161 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: dua contoh komunikasi yang berlainan laras bahasa di sekolah dan media; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Bahasa Kebangsaan” dan menyoal “Apakah yang dapat kita buktikan tentang Bahasa Kebangsaan daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan dua contoh komunikasi yang berlainan laras bahasa di sekolah dan media. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 11: Bahasa Kebangsaan."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 11, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menghuraikan cabaran penggunaan bahasa Melayu sebagai bahasa kebangsaan” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan cabaran penggunaan bahasa kebangsaan dalam konteks harian. Guru menyemak jawapan awal berpandukan 9.4.4."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menghuraikan cabaran penggunaan bahasa Melayu sebagai bahasa kebangsaan, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghuraikan kepentingan menghayati dan menjiwai bahasa kebangsaan; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 11. Murid menilai cadangan memperbaik penggunaan bahasa Melayu tanpa merendahkan bahasa lain. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menghuraikan kepentingan menghayati dan menjiwai bahasa kebangsaan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 9.4.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K9.4.7."
+          "activity": "Murid menghasilkan peta cabaran dan dua tindakan penyelesaian. Guru menyemak secara individu menggunakan kata tugas SP 9.4.4 dan nilai K9.4.7, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 11: Bahasa Kebangsaan. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 11. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -2964,7 +3272,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "dua contoh komunikasi yang berlainan laras bahasa di sekolah dan media",
+          "task1": "mengelaskan cabaran penggunaan bahasa kebangsaan dalam konteks harian",
+          "task2": "menilai cadangan memperbaik penggunaan bahasa Melayu tanpa merendahkan bahasa lain",
+          "pbd_evidence": "peta cabaran dan dua tindakan penyelesaian",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -2985,7 +3304,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Identiti Negara Kita",
         "sk": "9.5",
@@ -3021,28 +3340,28 @@
           "Murid dapat menyatakan latar belakang pemilihan bunga raya sebagai bunga kebangsaan.",
           "Murid dapat menyatakan nama dan makna warna merah bunga kebangsaan negara kita."
         ],
-        "success_criteria": "Murid menyiapkan produk 9.5.1–9.5.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan kad fakta sejarah pemilihan bunga raya serta makna warna, dengan maklumat bersumber yang memenuhi SP 9.5.1, 9.5.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 12: Bunga Raya Bunga Kebangsaan, hlm. 162 hingga akhir unit (had belum disahkan) — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; imej bunga raya dan sejarah pemilihannya; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 12: Bunga Raya Bunga Kebangsaan, hlm. 162 ke akhir unit (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: foto bunga raya dan garis masa pemilihan bunga kebangsaan; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Bunga Raya Bunga Kebangsaan” dan menyoal “Apakah yang dapat kita buktikan tentang Bunga Raya Bunga Kebangsaan daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan foto bunga raya dan garis masa pemilihan bunga kebangsaan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 12: Bunga Raya Bunga Kebangsaan."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 12, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan latar belakang pemilihan bunga raya sebagai bunga kebangsaan”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyatakan latar belakang pemilihan bunga raya daripada bahan bersumber. Guru menyemak jawapan awal berpandukan 9.5.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan nama dan makna warna merah bunga kebangsaan negara kita”, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan kepentingan bunga raya sebagai bunga kebangsaan; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 12. Murid menanda warna bunga dan menjelaskan sebab bunga kebangsaan menjadi lambang identiti. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan bunga raya sebagai bunga kebangsaan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 9.5.1 dan 9.5.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K9.5.4, K9.5.6."
+          "activity": "Murid menghasilkan kad fakta sejarah pemilihan bunga raya serta makna warna. Guru menyemak secara individu menggunakan kata tugas SP 9.5.1, 9.5.2 dan nilai K9.5.4, K9.5.6, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 12: Bunga Raya Bunga Kebangsaan. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 12. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -3060,7 +3379,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "foto bunga raya dan garis masa pemilihan bunga kebangsaan",
+          "task1": "menyatakan latar belakang pemilihan bunga raya daripada bahan bersumber",
+          "task2": "menanda warna bunga dan menjelaskan sebab bunga kebangsaan menjadi lambang identiti",
+          "pbd_evidence": "kad fakta sejarah pemilihan bunga raya serta makna warna",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -3081,7 +3411,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Identiti Negara Kita",
         "sk": "9.5",
@@ -3106,28 +3436,28 @@
         "objective": [
           "Murid dapat menjelaskan perlambangan kelopak bunga kebangsaan dengan prinsip-prinsip Rukun Negara."
         ],
-        "success_criteria": "Murid menyiapkan produk 9.5.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan poster lima prinsip dan satu contoh amalan, dengan maklumat bersumber yang memenuhi SP 9.5.3.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 12: Bunga Raya Bunga Kebangsaan, hlm. 162 hingga akhir unit (had belum disahkan) — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; imej bunga raya dan sejarah pemilihannya; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 12: Bunga Raya Bunga Kebangsaan, hlm. 162 ke akhir unit (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: ilustrasi lima kelopak bunga raya dan teks lima prinsip Rukun Negara; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Bunga Raya Bunga Kebangsaan” dan menyoal “Apakah yang dapat kita buktikan tentang Bunga Raya Bunga Kebangsaan daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan ilustrasi lima kelopak bunga raya dan teks lima prinsip Rukun Negara. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 12: Bunga Raya Bunga Kebangsaan."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 12, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan perlambangan kelopak bunga kebangsaan dengan prinsip-prinsip Rukun Negara” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan lima kelopak dengan lima prinsip Rukun Negara tanpa menokok simbol baharu. Guru menyemak jawapan awal berpandukan 9.5.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menjelaskan perlambangan kelopak bunga kebangsaan dengan prinsip-prinsip Rukun Negara, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menerangkan kepentingan bunga kebangsaan sebagai lambang perpaduan; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 12. Murid membina poster nilai yang menghubungkan prinsip Rukun Negara dengan situasi murid. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menerangkan kepentingan bunga kebangsaan sebagai lambang perpaduan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 9.5.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K9.5.5."
+          "activity": "Murid menghasilkan poster lima prinsip dan satu contoh amalan. Guru menyemak secara individu menggunakan kata tugas SP 9.5.3 dan nilai K9.5.5, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 12: Bunga Raya Bunga Kebangsaan. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 12. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -3145,7 +3475,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "ilustrasi lima kelopak bunga raya dan teks lima prinsip Rukun Negara",
+          "task1": "memadankan lima kelopak dengan lima prinsip Rukun Negara tanpa menokok simbol baharu",
+          "task2": "membina poster nilai yang menghubungkan prinsip Rukun Negara dengan situasi murid",
+          "pbd_evidence": "poster lima prinsip dan satu contoh amalan",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -3166,7 +3507,7 @@
         "year": 5,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KAJIAN_KES",
         "tema": "Identiti Negara Kita",
         "sk": "9.5",
@@ -3197,28 +3538,28 @@
           "Membina satu soalan inkuiri berkenaan Bunga Kebangsaan.",
           "Mengenal pasti sekurang-kurangnya dua bukti relevan dan menerangkan kesimpulan secara beralasan."
         ],
-        "success_criteria": "Murid membina persoalan kajian, menyatakan dua bukti relevan dan menjelaskan satu rumusan yang disokong bukti.",
+        "success_criteria": "Murid dapat menghasilkan laporan kes dua sumber, sebab pemilihan dan satu pengajaran, dengan maklumat bersumber yang memenuhi SP 9.5.1, 9.5.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 12: Bunga Raya Bunga Kebangsaan, hlm. 162 hingga akhir unit (had belum disahkan) — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; imej bunga raya dan sejarah pemilihannya; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 12: Bunga Raya Bunga Kebangsaan, hlm. 162 ke akhir unit (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: dua bahan sejarah pemilihan bunga raya dan imej rasmi lambang negara; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Bunga Raya Bunga Kebangsaan” dan menyoal “Apakah bukti yang menyokong persoalan kajian tentang Bunga Raya Bunga Kebangsaan?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan dua bahan sejarah pemilihan bunga raya dan imej rasmi lambang negara. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 12: Bunga Raya Bunga Kebangsaan."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membantu murid membina soalan kajian “Bunga Raya Bunga Kebangsaan”, mencari dua sumber berbeza dan membezakan fakta dengan pendapat. Murid melengkapkan jadual soalan–sumber–bukti, tanpa menyalin bulat-bulat teks sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina soalan kajian mengapa bunga raya dipilih sebagai simbol negara. Guru menyemak jawapan awal berpandukan 9.5.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid membandingkan dua sumber berkaitan Bunga Raya Bunga Kebangsaan, menyusun maklumat mengikut kronologi atau kategori, lalu merumus satu dapatan dan batas bukti. Guru membimbing murid menghubungkan iktibar dengan nilai sivik secara beralasan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 12. Murid membandingkan sumber dan membentang kaitan warna serta lima kelopak dengan jati diri. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan bunga raya sebagai bunga kebangsaan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Pembentangan kajian ringkas: satu persoalan, dua bukti, satu rumusan. Guru menilai kesahan fakta, kesesuaian bukti, tafsiran dan komunikasi murid; beri maklum balas individu."
+          "activity": "Murid menghasilkan laporan kes dua sumber, sebab pemilihan dan satu pengajaran. Guru menyemak secara individu menggunakan kata tugas SP 9.5.1, 9.5.2 dan nilai K9.5.4, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 12: Bunga Raya Bunga Kebangsaan. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 12. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
@@ -3236,7 +3577,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "dua bahan sejarah pemilihan bunga raya dan imej rasmi lambang negara",
+          "task1": "membina soalan kajian mengapa bunga raya dipilih sebagai simbol negara",
+          "task2": "membandingkan sumber dan membentang kaitan warna serta lima kelopak dengan jati diri",
+          "pbd_evidence": "laporan kes dua sumber, sebab pemilihan dan satu pengajaran",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {

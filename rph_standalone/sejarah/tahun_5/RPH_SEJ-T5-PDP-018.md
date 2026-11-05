@@ -1,6 +1,6 @@
 # RPH SEJARAH TAHUN 5 — PdP 018
 
-**Status:** DRAF (halaman aktiviti buku teks / kelulusan guru belum disahkan)  
+**Status:** DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS; belum semakan akhir guru / buku teks  
 **Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu A:** 2027-05-09–2027-05-13 | **Minggu B:** 2027-05-10–2027-05-14  
 **Tema:** Perjuangan Kemerdekaan Negara | **Tajuk:** Unit 6: Sejarah Kemerdekaan — PdP 018 | **SK:** 7.3  
 **SP:** 7.3.1, 7.3.2, K7.3.4 | **Jenis:** Kajian Kes
@@ -9,24 +9,24 @@
 - Membina satu soalan inkuiri berkenaan Sejarah Kemerdekaan 1957.
 - Mengenal pasti sekurang-kurangnya dua bukti relevan dan menerangkan kesimpulan secara beralasan.
 
-**Kriteria kejayaan:** Murid membina persoalan kajian, menyatakan dua bukti relevan dan menjelaskan satu rumusan yang disokong bukti.
+**Kriteria kejayaan:** Murid dapat menghasilkan laporan kajian kes dua sumber, dua tokoh, satu rumusan iktibar, dengan maklumat bersumber yang memenuhi SP 7.3.1, 7.3.2.
 
-**Buku teks dan BBM:** Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 6: Sejarah Kemerdekaan, hlm. 74–89 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; garis masa perjuangan kemerdekaan; kad sumber/lembaran bukti.
+**BBM:** Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 6: Sejarah Kemerdekaan, hlm. 74–89 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: dua sumber kemerdekaan seperti pengisytiharan dan foto perhimpunan; kad tugasan dan lembaran rekod PBD.
 
-**Set Induksi (5 min):** Guru mempamerkan imej, peta atau petikan bertajuk “Sejarah Kemerdekaan” dan menyoal “Apakah bukti yang menyokong persoalan kajian tentang Sejarah Kemerdekaan?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari.
+**Set Induksi (5 min):** Guru mempamerkan dua sumber kemerdekaan seperti pengisytiharan dan foto perhimpunan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 6: Sejarah Kemerdekaan.
 
-**Aktiviti 1 (20 min):** Guru membantu murid membina soalan kajian “Sejarah Kemerdekaan”, mencari dua sumber berbeza dan membezakan fakta dengan pendapat. Murid melengkapkan jadual soalan–sumber–bukti, tanpa menyalin bulat-bulat teks sumber.
+**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina soalan kajian tentang bagaimana perpaduan menyokong kemerdekaan. Guru menyemak jawapan awal berpandukan 7.3.1.
 
-**Aktiviti 2 (20 min):** Murid membandingkan dua sumber berkaitan Sejarah Kemerdekaan, menyusun maklumat mengikut kronologi atau kategori, lalu merumus satu dapatan dan batas bukti. Guru membimbing murid menghubungkan iktibar dengan nilai sivik secara beralasan.
+**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 6. Murid membandingkan dua sumber dan membentang sumbangan dua tokoh serta batas maklumat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan pengorbanan tokoh pejuang kemerdekaan yang boleh dicontohi..
 
-**Pengukuhan & PBD (10 min):** Pembentangan kajian ringkas: satu persoalan, dua bukti, satu rumusan. Guru menilai kesahan fakta, kesesuaian bukti, tafsiran dan komunikasi murid; beri maklum balas individu.
+**Pengukuhan dan PBD (10 min):** Murid menghasilkan laporan kajian kes dua sumber, dua tokoh, satu rumusan iktibar. Guru menyemak secara individu menggunakan kata tugas SP 7.3.1, 7.3.2 dan nilai K7.3.4, kemudian memberi intervensi kepada murid yang belum tepat.
 
-**Penutup (5 min):** Guru merumus isi penting Unit 6: Sejarah Kemerdekaan. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini.
+**Penutup (5 min):** Guru merumus peristiwa, bukti dan pengajaran dalam Unit 6. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk.
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
 
-**Tahap bukti halaman:** UNIT_ISI_KANDUNGAN; rujukan halaman belum (penerbit/buku seperti disertakan).
+**Tahap sumber:** DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.; latihan buku teks sebenar belum disahkan
 
-**Sumber semakan:** https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/
+**Rujukan buku teks:** https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/ (ISBN 978-983-49-2829-2); halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
 
-**Nota:** RPH draf untuk semakan guru. Rujukan halaman buku atau aktiviti PBD adalah petunjuk sumber, **bukan** kelulusan visual penuh tugasan buku asal untuk setiap PdP.
+**Peringatan:** Semak kebolehlaksanaan aktiviti dengan situasi kelas, halaman buku teks sebenar, kalendar/cuti negeri, dan hasil cetakan Word/PDF sebelum kelulusan atau penerbitan.

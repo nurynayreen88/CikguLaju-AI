@@ -307,7 +307,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Negara Malaysia",
         "sk": "10.2",
@@ -338,28 +338,28 @@
           "Murid dapat mengenali nama negeri-negeri di Malaysia.",
           "Murid dapat menamakan ketua negeri bagi negeri-negeri di Malaysia."
         ],
-        "success_criteria": "Murid menyiapkan produk 10.2.1–10.2.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan peta negeri lengkap dan jadual dua jenis gelaran ketua negeri, dengan maklumat bersumber yang memenuhi SP 10.2.1, 10.2.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 2: Negeri-negeri di Malaysia, hlm. 20–33 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta negeri, bendera dan jata rasmi negeri; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 2: Negeri-negeri di Malaysia, hlm. 20–33 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: peta Malaysia serta kad ketua negeri yang disemak semasa sesi; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Negeri-negeri di Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Negeri-negeri di Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan peta Malaysia serta kad ketua negeri yang disemak semasa sesi. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 2: Negeri-negeri di Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 2, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan kad klasifikasi/peta berlabel untuk fokus “Mengenali nama negeri-negeri di Malaysia”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid melabel negeri-negeri Malaysia pada peta kosong. Guru menyemak jawapan awal berpandukan 10.2.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan senarai fakta atau nama berserta label dan rujukan bagi fokus “Menamakan ketua negeri bagi negeri-negeri di Malaysia”, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan kepentingan taat setia dan menghormati ketua negeri; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 2. Murid memadankan institusi ketua negeri dengan negeri masing-masing tanpa menyamakan gelaran. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan taat setia dan menghormati ketua negeri.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 10.2.1 dan 10.2.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K10.2.5."
+          "activity": "Murid menghasilkan peta negeri lengkap dan jadual dua jenis gelaran ketua negeri. Guru menyemak secara individu menggunakan kata tugas SP 10.2.1, 10.2.2 dan nilai K10.2.5, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 2: Negeri-negeri di Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 2. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -377,7 +377,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "peta Malaysia serta kad ketua negeri yang disemak semasa sesi",
+          "task1": "melabel negeri-negeri Malaysia pada peta kosong",
+          "task2": "memadankan institusi ketua negeri dengan negeri masing-masing tanpa menyamakan gelaran",
+          "pbd_evidence": "peta negeri lengkap dan jadual dua jenis gelaran ketua negeri",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -398,7 +409,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Negara Malaysia",
         "sk": "10.2",
@@ -423,28 +434,28 @@
         "objective": [
           "Murid dapat menyenaraikan ibu negeri dan bandar diraja."
         ],
-        "success_criteria": "Murid menyiapkan produk 10.2.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan jadual ibu negeri dan bandar diraja yang tidak dikelirukan, dengan maklumat bersumber yang memenuhi SP 10.2.3.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 2: Negeri-negeri di Malaysia, hlm. 20–33 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta negeri, bendera dan jata rasmi negeri; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 2: Negeri-negeri di Malaysia, hlm. 20–33 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: peta pentadbiran negeri Malaysia dengan tanda ibu negeri dan bandar diraja; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Negeri-negeri di Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Negeri-negeri di Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan peta pentadbiran negeri Malaysia dengan tanda ibu negeri dan bandar diraja. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 2: Negeri-negeri di Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 2, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan senarai fakta atau nama berserta label dan rujukan bagi fokus “Menyenaraikan ibu negeri dan bandar diraja”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan ibu negeri dengan negeri yang berkenaan menggunakan atlas. Guru menyemak jawapan awal berpandukan 10.2.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menyenaraikan ibu negeri dan bandar diraja, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan kepentingan menghormati lambang negeri; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 2. Murid membandingkan ibu negeri dan bandar diraja, serta menjelaskan negeri yang tidak mempunyai bandar diraja. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menjelaskan kepentingan menghormati lambang negeri.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 10.2.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K10.2.6."
+          "activity": "Murid menghasilkan jadual ibu negeri dan bandar diraja yang tidak dikelirukan. Guru menyemak secara individu menggunakan kata tugas SP 10.2.3 dan nilai K10.2.6, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 2: Negeri-negeri di Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 2. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -462,7 +473,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "peta pentadbiran negeri Malaysia dengan tanda ibu negeri dan bandar diraja",
+          "task1": "memadankan ibu negeri dengan negeri yang berkenaan menggunakan atlas",
+          "task2": "membandingkan ibu negeri dan bandar diraja, serta menjelaskan negeri yang tidak mempunyai bandar diraja",
+          "pbd_evidence": "jadual ibu negeri dan bandar diraja yang tidak dikelirukan",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -483,7 +505,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Negara Malaysia",
         "sk": "10.2",
@@ -508,28 +530,28 @@
         "objective": [
           "Murid dapat menjelaskan bendera, lagu dan jata sebagai lambang negeri."
         ],
-        "success_criteria": "Murid menyiapkan produk 10.2.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan tiga kad identiti negeri dengan bendera, lagu dan jata, dengan maklumat bersumber yang memenuhi SP 10.2.4.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 2: Negeri-negeri di Malaysia, hlm. 20–33 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta negeri, bendera dan jata rasmi negeri; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 2: Negeri-negeri di Malaysia, hlm. 20–33 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: kad bendera dan jata negeri serta contoh lagu negeri dari sumber rasmi; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Negeri-negeri di Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Negeri-negeri di Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan kad bendera dan jata negeri serta contoh lagu negeri dari sumber rasmi. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 2: Negeri-negeri di Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 2, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan bendera, lagu dan jata sebagai lambang negeri” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan tiga simbol negeri dengan negeri yang betul. Guru menyemak jawapan awal berpandukan 10.2.4."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menjelaskan bendera, lagu dan jata sebagai lambang negeri, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan rasa bangga terhadap warisan negeri-negeri di Malaysia; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 2. Murid membina galeri lambang negeri dan menjelaskan cara menghormati simbol negeri. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menjelaskan rasa bangga terhadap warisan negeri-negeri di Malaysia.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 10.2.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K10.2.7."
+          "activity": "Murid menghasilkan tiga kad identiti negeri dengan bendera, lagu dan jata. Guru menyemak secara individu menggunakan kata tugas SP 10.2.4 dan nilai K10.2.7, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 2: Negeri-negeri di Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 2. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -547,7 +569,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "kad bendera dan jata negeri serta contoh lagu negeri dari sumber rasmi",
+          "task1": "memadankan tiga simbol negeri dengan negeri yang betul",
+          "task2": "membina galeri lambang negeri dan menjelaskan cara menghormati simbol negeri",
+          "pbd_evidence": "tiga kad identiti negeri dengan bendera, lagu dan jata",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -568,7 +601,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Negara Malaysia",
         "sk": "10.3",
@@ -593,28 +626,28 @@
         "objective": [
           "Murid dapat menyatakan sebab-sebab pengenalan Rukun Negara."
         ],
-        "success_criteria": "Murid menyiapkan produk 10.3.1 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan dua sebab pengenalan Rukun Negara dengan bukti, dengan maklumat bersumber yang memenuhi SP 10.3.1.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 3: Rukun Negara, hlm. 34–49 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; teks prinsip Rukun Negara; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 3: Rukun Negara, hlm. 34–49 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: garis masa peristiwa perpaduan menjelang pengisytiharan Rukun Negara; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Rukun Negara” dan menyoal “Apakah yang dapat kita buktikan tentang Rukun Negara daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan garis masa peristiwa perpaduan menjelang pengisytiharan Rukun Negara. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 3: Rukun Negara."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 3, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan sebab-sebab pengenalan Rukun Negara”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyatakan sebab Rukun Negara diperkenalkan selepas peristiwa sejarah relevan. Guru menyemak jawapan awal berpandukan 10.3.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menyatakan sebab-sebab pengenalan Rukun Negara, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan kepentingan menghayati matlamat dan prinsip Rukun Negara; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid membina rantaian sebab–matlamat–harapan masyarakat berasaskan sumber. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan menghayati matlamat dan prinsip Rukun Negara.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 10.3.1 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K10.3.4."
+          "activity": "Murid menghasilkan dua sebab pengenalan Rukun Negara dengan bukti. Guru menyemak secara individu menggunakan kata tugas SP 10.3.1 dan nilai K10.3.4, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 3: Rukun Negara. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 3. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -632,7 +665,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "garis masa peristiwa perpaduan menjelang pengisytiharan Rukun Negara",
+          "task1": "menyatakan sebab Rukun Negara diperkenalkan selepas peristiwa sejarah relevan",
+          "task2": "membina rantaian sebab–matlamat–harapan masyarakat berasaskan sumber",
+          "pbd_evidence": "dua sebab pengenalan Rukun Negara dengan bukti",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -653,7 +697,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Negara Malaysia",
         "sk": "10.3",
@@ -678,28 +722,28 @@
         "objective": [
           "Murid dapat menerangkan matlamat dan prinsip Rukun Negara."
         ],
-        "success_criteria": "Murid menyiapkan produk 10.3.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan jadual matlamat dan lima prinsip dengan penerangan, dengan maklumat bersumber yang memenuhi SP 10.3.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 3: Rukun Negara, hlm. 34–49 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; teks prinsip Rukun Negara; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 3: Rukun Negara, hlm. 34–49 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: teks rasmi Rukun Negara beserta matlamat dan lima prinsip; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Rukun Negara” dan menyoal “Apakah yang dapat kita buktikan tentang Rukun Negara daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan teks rasmi Rukun Negara beserta matlamat dan lima prinsip. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 3: Rukun Negara."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 3, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menerangkan matlamat dan prinsip Rukun Negara” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan matlamat Rukun Negara dengan prinsip yang menyokongnya. Guru menyemak jawapan awal berpandukan 10.3.2."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menerangkan matlamat dan prinsip Rukun Negara, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menerangkan kepentingan mengamalkan matlamat dan prinsip Rukun Negara dalam kehidupan; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid melakar peta konsep lima prinsip dan menjelaskan maksud dua prinsip pilihan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menerangkan kepentingan mengamalkan matlamat dan prinsip Rukun Negara dalam kehidupan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 10.3.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K10.3.5."
+          "activity": "Murid menghasilkan jadual matlamat dan lima prinsip dengan penerangan. Guru menyemak secara individu menggunakan kata tugas SP 10.3.2 dan nilai K10.3.5, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 3: Rukun Negara. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 3. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -717,7 +761,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "teks rasmi Rukun Negara beserta matlamat dan lima prinsip",
+          "task1": "memadankan matlamat Rukun Negara dengan prinsip yang menyokongnya",
+          "task2": "melakar peta konsep lima prinsip dan menjelaskan maksud dua prinsip pilihan",
+          "pbd_evidence": "jadual matlamat dan lima prinsip dengan penerangan",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -738,7 +793,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Negara Malaysia",
         "sk": "10.3",
@@ -763,28 +818,28 @@
         "objective": [
           "Murid dapat menjelaskan peranan Rukun Negara dalam kehidupan seharian."
         ],
-        "success_criteria": "Murid menyiapkan produk 10.3.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan dua situasi, prinsip berkaitan dan tindakan yang sesuai, dengan maklumat bersumber yang memenuhi SP 10.3.3.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 3: Rukun Negara, hlm. 34–49 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; teks prinsip Rukun Negara; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 3: Rukun Negara, hlm. 34–49 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: kad situasi sekolah seperti menghormati undang-undang dan menjaga kesopanan; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Rukun Negara” dan menyoal “Apakah yang dapat kita buktikan tentang Rukun Negara daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan kad situasi sekolah seperti menghormati undang-undang dan menjaga kesopanan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 3: Rukun Negara."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 3, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan peranan Rukun Negara dalam kehidupan seharian” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan tindakan harian mengikut prinsip Rukun Negara yang berkaitan. Guru menyemak jawapan awal berpandukan 10.3.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menjelaskan peranan Rukun Negara dalam kehidupan seharian, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghuraikan kepentingan Rukun Negara dalam membentuk jati diri rakyat Malaysia; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid melakonkan penyelesaian konflik kecil secara adil dan menghormati rakan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menghuraikan kepentingan Rukun Negara dalam membentuk jati diri rakyat Malaysia.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 10.3.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K10.3.6."
+          "activity": "Murid menghasilkan dua situasi, prinsip berkaitan dan tindakan yang sesuai. Guru menyemak secara individu menggunakan kata tugas SP 10.3.3 dan nilai K10.3.6, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 3: Rukun Negara. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 3. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -802,7 +857,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "kad situasi sekolah seperti menghormati undang-undang dan menjaga kesopanan",
+          "task1": "mengelaskan tindakan harian mengikut prinsip Rukun Negara yang berkaitan",
+          "task2": "melakonkan penyelesaian konflik kecil secara adil dan menghormati rakan",
+          "pbd_evidence": "dua situasi, prinsip berkaitan dan tindakan yang sesuai",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -823,7 +889,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KAJIAN_KES",
         "tema": "Negara Malaysia",
         "sk": "10.3",
@@ -854,28 +920,28 @@
           "Membina satu soalan inkuiri berkenaan Rukun Negara.",
           "Mengenal pasti sekurang-kurangnya dua bukti relevan dan menerangkan kesimpulan secara beralasan."
         ],
-        "success_criteria": "Murid membina persoalan kajian, menyatakan dua bukti relevan dan menjelaskan satu rumusan yang disokong bukti.",
+        "success_criteria": "Murid dapat menghasilkan laporan kajian kes dua sumber dan tiga aplikasi prinsip, dengan maklumat bersumber yang memenuhi SP 10.3.1, 10.3.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 3: Rukun Negara, hlm. 34–49 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; teks prinsip Rukun Negara; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 3: Rukun Negara, hlm. 34–49 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: petikan pengisytiharan Rukun Negara dan gambar kegiatan pelbagai kaum; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Rukun Negara” dan menyoal “Apakah bukti yang menyokong persoalan kajian tentang Rukun Negara?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan petikan pengisytiharan Rukun Negara dan gambar kegiatan pelbagai kaum. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 3: Rukun Negara."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membantu murid membina soalan kajian “Rukun Negara”, mencari dua sumber berbeza dan membezakan fakta dengan pendapat. Murid melengkapkan jadual soalan–sumber–bukti, tanpa menyalin bulat-bulat teks sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina persoalan kajian tentang perpaduan sebelum dan selepas Rukun Negara. Guru menyemak jawapan awal berpandukan 10.3.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid membandingkan dua sumber berkaitan Rukun Negara, menyusun maklumat mengikut kronologi atau kategori, lalu merumus satu dapatan dan batas bukti. Guru membimbing murid menghubungkan iktibar dengan nilai sivik secara beralasan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid membandingkan dua sumber dan membentang tiga contoh amalan prinsip di sekolah. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan menghayati matlamat dan prinsip Rukun Negara.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Pembentangan kajian ringkas: satu persoalan, dua bukti, satu rumusan. Guru menilai kesahan fakta, kesesuaian bukti, tafsiran dan komunikasi murid; beri maklum balas individu."
+          "activity": "Murid menghasilkan laporan kajian kes dua sumber dan tiga aplikasi prinsip. Guru menyemak secara individu menggunakan kata tugas SP 10.3.1, 10.3.2 dan nilai K10.3.4, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 3: Rukun Negara. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 3. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -893,7 +959,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "petikan pengisytiharan Rukun Negara dan gambar kegiatan pelbagai kaum",
+          "task1": "membina persoalan kajian tentang perpaduan sebelum dan selepas Rukun Negara",
+          "task2": "membandingkan dua sumber dan membentang tiga contoh amalan prinsip di sekolah",
+          "pbd_evidence": "laporan kajian kes dua sumber dan tiga aplikasi prinsip",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -914,7 +991,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Kita Rakyat Malaysia",
         "sk": "11.1",
@@ -945,28 +1022,28 @@
           "Murid dapat menyatakan kepelbagaian kaum di Malaysia.",
           "Murid dapat menyatakan petempatan serta kegiatan ekonomi masyarakat Malaysia dahulu dan kini."
         ],
-        "success_criteria": "Murid menyiapkan produk 11.1.1–11.1.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan jadual petempatan dan perubahan kegiatan ekonomi berserta bukti, dengan maklumat bersumber yang memenuhi SP 11.1.1, 11.1.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 4: Kaum di Malaysia, hlm. 50–75 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta petempatan serta bahan warisan budaya masyarakat Malaysia; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 4: Kaum di Malaysia, hlm. 50–75 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: peta petempatan masyarakat Malaysia dahulu dan kini bersama kad kegiatan ekonomi; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Kaum di Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Kaum di Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan peta petempatan masyarakat Malaysia dahulu dan kini bersama kad kegiatan ekonomi. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 4: Kaum di Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 4, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan kepelbagaian kaum di Malaysia”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengenal pasti kepelbagaian kaum serta lokasi petempatan melalui peta. Guru menyemak jawapan awal berpandukan 11.1.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan petempatan serta kegiatan ekonomi masyarakat Malaysia dahulu dan kini”, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan kepentingan bertoleransi antara kaum sebagai asas perpaduan; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid membandingkan corak kegiatan ekonomi tradisional dengan aktiviti masa kini tanpa stereotaip. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan bertoleransi antara kaum sebagai asas perpaduan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 11.1.1 dan 11.1.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K11.1.6."
+          "activity": "Murid menghasilkan jadual petempatan dan perubahan kegiatan ekonomi berserta bukti. Guru menyemak secara individu menggunakan kata tugas SP 11.1.1, 11.1.2 dan nilai K11.1.6, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 4: Kaum di Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 4. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -984,7 +1061,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "peta petempatan masyarakat Malaysia dahulu dan kini bersama kad kegiatan ekonomi",
+          "task1": "mengenal pasti kepelbagaian kaum serta lokasi petempatan melalui peta",
+          "task2": "membandingkan corak kegiatan ekonomi tradisional dengan aktiviti masa kini tanpa stereotaip",
+          "pbd_evidence": "jadual petempatan dan perubahan kegiatan ekonomi berserta bukti",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -1005,7 +1093,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Kita Rakyat Malaysia",
         "sk": "11.1",
@@ -1030,28 +1118,28 @@
         "objective": [
           "Murid dapat menyenaraikan alat muzik dan tarian tradisional masyarakat di Malaysia."
         ],
-        "success_criteria": "Murid menyiapkan produk 11.1.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan tiga kad alat muzik atau tarian dengan nama dan sumber, dengan maklumat bersumber yang memenuhi SP 11.1.3.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 4: Kaum di Malaysia, hlm. 50–75 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta petempatan serta bahan warisan budaya masyarakat Malaysia; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 4: Kaum di Malaysia, hlm. 50–75 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: gambar alat muzik dan tarian daripada komuniti berbeza dengan label sumber; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Kaum di Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Kaum di Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan gambar alat muzik dan tarian daripada komuniti berbeza dengan label sumber. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 4: Kaum di Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 4, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan senarai fakta atau nama berserta label dan rujukan bagi fokus “Menyenaraikan alat muzik dan tarian tradisional masyarakat di Malaysia”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan contoh alat muzik atau tarian dengan komuniti yang mengamalkannya. Guru menyemak jawapan awal berpandukan 11.1.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menyenaraikan alat muzik dan tarian tradisional masyarakat di Malaysia, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menerangkan kepentingan menghargai keunikan budaya tempatan; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid membina galeri budaya yang menerangkan fungsi persembahan dan kepelbagaian amalan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menerangkan kepentingan menghargai keunikan budaya tempatan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 11.1.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K11.1.7."
+          "activity": "Murid menghasilkan tiga kad alat muzik atau tarian dengan nama dan sumber. Guru menyemak secara individu menggunakan kata tugas SP 11.1.3 dan nilai K11.1.7, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 4: Kaum di Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 4. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -1069,7 +1157,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "gambar alat muzik dan tarian daripada komuniti berbeza dengan label sumber",
+          "task1": "memadankan contoh alat muzik atau tarian dengan komuniti yang mengamalkannya",
+          "task2": "membina galeri budaya yang menerangkan fungsi persembahan dan kepelbagaian amalan",
+          "pbd_evidence": "tiga kad alat muzik atau tarian dengan nama dan sumber",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -1090,7 +1189,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Kita Rakyat Malaysia",
         "sk": "11.1",
@@ -1115,28 +1214,28 @@
         "objective": [
           "Murid dapat menyenaraikan jenis permainan tradisional masyarakat di Malaysia."
         ],
-        "success_criteria": "Murid menyiapkan produk 11.1.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan tiga nama permainan dan satu penerangan peraturan tepat, dengan maklumat bersumber yang memenuhi SP 11.1.4.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 4: Kaum di Malaysia, hlm. 50–75 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta petempatan serta bahan warisan budaya masyarakat Malaysia; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 4: Kaum di Malaysia, hlm. 50–75 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: gambar permainan congkak, gasing, sepak raga dan permainan tradisional lain; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Kaum di Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Kaum di Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan gambar permainan congkak, gasing, sepak raga dan permainan tradisional lain. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 4: Kaum di Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 4, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan senarai fakta atau nama berserta label dan rujukan bagi fokus “Menyenaraikan jenis permainan tradisional masyarakat di Malaysia”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan jenis permainan tradisional mengikut bahan dan cara bermain. Guru menyemak jawapan awal berpandukan 11.1.4."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menyenaraikan jenis permainan tradisional masyarakat di Malaysia, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghuraikan kepentingan perkongsian maklumat tentang kepelbagaian kaum di Malaysia; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid membina arahan ringkas satu permainan dan membandingkan nilai kerjasama atau kesukanan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menghuraikan kepentingan perkongsian maklumat tentang kepelbagaian kaum di Malaysia.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 11.1.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K11.1.8."
+          "activity": "Murid menghasilkan tiga nama permainan dan satu penerangan peraturan tepat. Guru menyemak secara individu menggunakan kata tugas SP 11.1.4 dan nilai K11.1.8, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 4: Kaum di Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 4. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -1154,7 +1253,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "gambar permainan congkak, gasing, sepak raga dan permainan tradisional lain",
+          "task1": "mengelaskan jenis permainan tradisional mengikut bahan dan cara bermain",
+          "task2": "membina arahan ringkas satu permainan dan membandingkan nilai kerjasama atau kesukanan",
+          "pbd_evidence": "tiga nama permainan dan satu penerangan peraturan tepat",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -1175,7 +1285,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Kita Rakyat Malaysia",
         "sk": "11.1",
@@ -1194,28 +1304,28 @@
         "objective": [
           "Murid dapat menghuraikan cerita rakyat berunsur tempatan dalam masyarakat di Malaysia."
         ],
-        "success_criteria": "Murid menyiapkan produk 11.1.5 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan ringkasan cerita empat urutan dan satu nilai murni, dengan maklumat bersumber yang memenuhi SP 11.1.5.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 4: Kaum di Malaysia, hlm. 50–75 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta petempatan serta bahan warisan budaya masyarakat Malaysia; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 4: Kaum di Malaysia, hlm. 50–75 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: petikan cerita rakyat yang dikenal pasti sumbernya; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Kaum di Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Kaum di Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan petikan cerita rakyat yang dikenal pasti sumbernya. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 4: Kaum di Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 4, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menghuraikan cerita rakyat berunsur tempatan dalam masyarakat di Malaysia” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun peristiwa penting cerita rakyat menurut urutan naratif. Guru menyemak jawapan awal berpandukan 11.1.5."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menghuraikan cerita rakyat berunsur tempatan dalam masyarakat di Malaysia, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta dan sebab-akibat; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid membezakan pengajaran moral cerita dengan fakta sejarah yang memerlukan sumber tambahan. Guru membimbing pembetulan salah faham menggunakan bukti."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 11.1.5 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu."
+          "activity": "Murid menghasilkan ringkasan cerita empat urutan dan satu nilai murni. Guru menyemak secara individu menggunakan kata tugas SP 11.1.5, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 4: Kaum di Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 4. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -1233,7 +1343,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "petikan cerita rakyat yang dikenal pasti sumbernya",
+          "task1": "menyusun peristiwa penting cerita rakyat menurut urutan naratif",
+          "task2": "membezakan pengajaran moral cerita dengan fakta sejarah yang memerlukan sumber tambahan",
+          "pbd_evidence": "ringkasan cerita empat urutan dan satu nilai murni",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -1254,7 +1375,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Kita Rakyat Malaysia",
         "sk": "11.2",
@@ -1285,28 +1406,28 @@
           "Murid dapat menyatakan pelbagai agama dan kepercayaan masyarakat di Malaysia.",
           "Murid dapat menyatakan kedudukan agama Islam sebagai agama Persekutuan."
         ],
-        "success_criteria": "Murid menyiapkan produk 11.2.1–11.2.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan jadual pelbagai agama dan satu fakta perlembagaan, dengan maklumat bersumber yang memenuhi SP 11.2.1, 11.2.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 5: Agama dan Kepercayaan, hlm. 76–91 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; contoh tempat ibadat dan kepercayaan masyarakat Malaysia; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 5: Agama dan Kepercayaan, hlm. 76–91 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: imej tempat ibadat pelbagai agama dan petikan Perlembagaan; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Agama dan Kepercayaan” dan menyoal “Apakah yang dapat kita buktikan tentang Agama dan Kepercayaan daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan imej tempat ibadat pelbagai agama dan petikan Perlembagaan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 5: Agama dan Kepercayaan."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 5, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan pelbagai agama dan kepercayaan masyarakat di Malaysia”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menamakan kepelbagaian agama serta kepercayaan masyarakat secara hormat. Guru menyemak jawapan awal berpandukan 11.2.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan kedudukan agama Islam sebagai agama Persekutuan”, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan kepentingan memahami adab ketika berada di rumah ibadat; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 5. Murid menerangkan kedudukan Islam sebagai agama Persekutuan dengan teks yang betul. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan memahami adab ketika berada di rumah ibadat.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 11.2.1 dan 11.2.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K11.2.5."
+          "activity": "Murid menghasilkan jadual pelbagai agama dan satu fakta perlembagaan. Guru menyemak secara individu menggunakan kata tugas SP 11.2.1, 11.2.2 dan nilai K11.2.5, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 5: Agama dan Kepercayaan. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 5. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -1324,7 +1445,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "imej tempat ibadat pelbagai agama dan petikan Perlembagaan",
+          "task1": "menamakan kepelbagaian agama serta kepercayaan masyarakat secara hormat",
+          "task2": "menerangkan kedudukan Islam sebagai agama Persekutuan dengan teks yang betul",
+          "pbd_evidence": "jadual pelbagai agama dan satu fakta perlembagaan",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -1345,7 +1477,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Kita Rakyat Malaysia",
         "sk": "11.2",
@@ -1370,28 +1502,28 @@
         "objective": [
           "Murid dapat menyatakan kedudukan agama lain dalam perlembagaan."
         ],
-        "success_criteria": "Murid menyiapkan produk 11.2.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan dua contoh amalan menghormati hak beragama, dengan maklumat bersumber yang memenuhi SP 11.2.3.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 5: Agama dan Kepercayaan, hlm. 76–91 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; contoh tempat ibadat dan kepercayaan masyarakat Malaysia; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 5: Agama dan Kepercayaan, hlm. 76–91 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: petikan Perlembagaan Persekutuan tentang amalan agama lain; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Agama dan Kepercayaan” dan menyoal “Apakah yang dapat kita buktikan tentang Agama dan Kepercayaan daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan petikan Perlembagaan Persekutuan tentang amalan agama lain. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 5: Agama dan Kepercayaan."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 5, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan kedudukan agama lain dalam perlembagaan”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membezakan kedudukan agama Persekutuan dengan kebebasan beragama. Guru menyemak jawapan awal berpandukan 11.2.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menyatakan kedudukan agama lain dalam perlembagaan, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghubungkait kepentingan amalan agama dan kepercayaan dalam kehidupan; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 5. Murid membincangkan situasi hormat terhadap amalan agama yang berbeza tanpa memaksa murid berkongsi kepercayaan sendiri. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menghubungkait kepentingan amalan agama dan kepercayaan dalam kehidupan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 11.2.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K11.2.6."
+          "activity": "Murid menghasilkan dua contoh amalan menghormati hak beragama. Guru menyemak secara individu menggunakan kata tugas SP 11.2.3 dan nilai K11.2.6, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 5: Agama dan Kepercayaan. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 5. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -1409,7 +1541,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "petikan Perlembagaan Persekutuan tentang amalan agama lain",
+          "task1": "membezakan kedudukan agama Persekutuan dengan kebebasan beragama",
+          "task2": "membincangkan situasi hormat terhadap amalan agama yang berbeza tanpa memaksa murid berkongsi kepercayaan sendiri",
+          "pbd_evidence": "dua contoh amalan menghormati hak beragama",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -1430,7 +1573,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Kita Rakyat Malaysia",
         "sk": "11.2",
@@ -1455,28 +1598,28 @@
         "objective": [
           "Murid dapat menyenaraikan nama rumah-rumah ibadat di Malaysia."
         ],
-        "success_criteria": "Murid menyiapkan produk 11.2.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan empat padanan tempat ibadat dan dua peraturan hormat, dengan maklumat bersumber yang memenuhi SP 11.2.4.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 5: Agama dan Kepercayaan, hlm. 76–91 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; contoh tempat ibadat dan kepercayaan masyarakat Malaysia; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 5: Agama dan Kepercayaan, hlm. 76–91 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: gambar masjid, kuil, gereja, tokong dan tempat ibadat yang relevan; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Agama dan Kepercayaan” dan menyoal “Apakah yang dapat kita buktikan tentang Agama dan Kepercayaan daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan gambar masjid, kuil, gereja, tokong dan tempat ibadat yang relevan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 5: Agama dan Kepercayaan."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 5, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan senarai fakta atau nama berserta label dan rujukan bagi fokus “Menyenaraikan nama rumah-rumah ibadat di Malaysia”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan nama rumah ibadat dengan gambar yang dilabel tepat. Guru menyemak jawapan awal berpandukan 11.2.4."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menyenaraikan nama rumah-rumah ibadat di Malaysia, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghuraikan kepentingan menghormati kepelbagaian agama dan kepercayaan bagi mewujudkan perpaduan; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 5. Murid merangka peraturan lawatan pendidikan yang menghormati kesucian tempat ibadat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menghuraikan kepentingan menghormati kepelbagaian agama dan kepercayaan bagi mewujudkan perpaduan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 11.2.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K11.2.7."
+          "activity": "Murid menghasilkan empat padanan tempat ibadat dan dua peraturan hormat. Guru menyemak secara individu menggunakan kata tugas SP 11.2.4 dan nilai K11.2.7, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 5: Agama dan Kepercayaan. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 5. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -1494,7 +1637,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "gambar masjid, kuil, gereja, tokong dan tempat ibadat yang relevan",
+          "task1": "memadankan nama rumah ibadat dengan gambar yang dilabel tepat",
+          "task2": "merangka peraturan lawatan pendidikan yang menghormati kesucian tempat ibadat",
+          "pbd_evidence": "empat padanan tempat ibadat dan dua peraturan hormat",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -1515,7 +1669,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KAJIAN_KES",
         "tema": "Kita Rakyat Malaysia",
         "sk": "11.2",
@@ -1546,28 +1700,28 @@
           "Membina satu soalan inkuiri berkenaan Agama dan Kepercayaan di Malaysia.",
           "Mengenal pasti sekurang-kurangnya dua bukti relevan dan menerangkan kesimpulan secara beralasan."
         ],
-        "success_criteria": "Murid membina persoalan kajian, menyatakan dua bukti relevan dan menjelaskan satu rumusan yang disokong bukti.",
+        "success_criteria": "Murid dapat menghasilkan laporan kes dua sumber dan tiga amalan keharmonian, dengan maklumat bersumber yang memenuhi SP 11.2.1, 11.2.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 5: Agama dan Kepercayaan, hlm. 76–91 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; contoh tempat ibadat dan kepercayaan masyarakat Malaysia; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 5: Agama dan Kepercayaan, hlm. 76–91 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: dua bahan info rasmi tentang masyarakat berbilang agama; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Agama dan Kepercayaan” dan menyoal “Apakah bukti yang menyokong persoalan kajian tentang Agama dan Kepercayaan?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan dua bahan info rasmi tentang masyarakat berbilang agama. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 5: Agama dan Kepercayaan."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membantu murid membina soalan kajian “Agama dan Kepercayaan”, mencari dua sumber berbeza dan membezakan fakta dengan pendapat. Murid melengkapkan jadual soalan–sumber–bukti, tanpa menyalin bulat-bulat teks sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina soalan kajian bagaimana kepelbagaian agama dipelihara secara aman. Guru menyemak jawapan awal berpandukan 11.2.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid membandingkan dua sumber berkaitan Agama dan Kepercayaan, menyusun maklumat mengikut kronologi atau kategori, lalu merumus satu dapatan dan batas bukti. Guru membimbing murid menghubungkan iktibar dengan nilai sivik secara beralasan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 5. Murid membandingkan bukti perlembagaan dan contoh aktiviti muafakat komuniti. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan memahami adab ketika berada di rumah ibadat.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Pembentangan kajian ringkas: satu persoalan, dua bukti, satu rumusan. Guru menilai kesahan fakta, kesesuaian bukti, tafsiran dan komunikasi murid; beri maklum balas individu."
+          "activity": "Murid menghasilkan laporan kes dua sumber dan tiga amalan keharmonian. Guru menyemak secara individu menggunakan kata tugas SP 11.2.1, 11.2.2 dan nilai K11.2.5, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 5: Agama dan Kepercayaan. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 5. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -1585,7 +1739,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "dua bahan info rasmi tentang masyarakat berbilang agama",
+          "task1": "membina soalan kajian bagaimana kepelbagaian agama dipelihara secara aman",
+          "task2": "membandingkan bukti perlembagaan dan contoh aktiviti muafakat komuniti",
+          "pbd_evidence": "laporan kes dua sumber dan tiga amalan keharmonian",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -1606,7 +1771,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Kita Rakyat Malaysia",
         "sk": "11.3",
@@ -1631,28 +1796,28 @@
         "objective": [
           "Murid dapat menyatakan perayaan utama masyarakat di Malaysia."
         ],
-        "success_criteria": "Murid menyiapkan produk 11.3.1 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan kalendar empat perayaan dengan nama dan komuniti berkaitan, dengan maklumat bersumber yang memenuhi SP 11.3.1.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 6: Perayaan Masyarakat di Malaysia, hlm. 92–105 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; gambar perayaan masyarakat Malaysia; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 6: Perayaan Masyarakat di Malaysia, hlm. 92–105 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: gambar dan kalendar perayaan masyarakat Malaysia yang berlainan; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Perayaan Masyarakat di Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Perayaan Masyarakat di Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan gambar dan kalendar perayaan masyarakat Malaysia yang berlainan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 6: Perayaan Masyarakat di Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 6, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan perayaan utama masyarakat di Malaysia”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan perayaan utama mengikut komuniti yang menyambutnya tanpa menyamaratakan semua individu. Guru menyemak jawapan awal berpandukan 11.3.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menyatakan perayaan utama masyarakat di Malaysia, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan kepentingan sambutan perayaan dalam keluarga; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 6. Murid menghasilkan kalendar perayaan berserta penjelasan sumber tarikh yang boleh berubah. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan sambutan perayaan dalam keluarga.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 11.3.1 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K11.3.4."
+          "activity": "Murid menghasilkan kalendar empat perayaan dengan nama dan komuniti berkaitan. Guru menyemak secara individu menggunakan kata tugas SP 11.3.1 dan nilai K11.3.4, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 6: Perayaan Masyarakat di Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 6. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -1670,7 +1835,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "gambar dan kalendar perayaan masyarakat Malaysia yang berlainan",
+          "task1": "mengelaskan perayaan utama mengikut komuniti yang menyambutnya tanpa menyamaratakan semua individu",
+          "task2": "menghasilkan kalendar perayaan berserta penjelasan sumber tarikh yang boleh berubah",
+          "pbd_evidence": "kalendar empat perayaan dengan nama dan komuniti berkaitan",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -1691,7 +1867,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Kita Rakyat Malaysia",
         "sk": "11.3",
@@ -1716,28 +1892,28 @@
         "objective": [
           "Murid dapat menerangkan tujuan sambutan perayaan di Malaysia."
         ],
-        "success_criteria": "Murid menyiapkan produk 11.3.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan jadual dua perayaan, tujuan dan satu persamaan, dengan maklumat bersumber yang memenuhi SP 11.3.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 6: Perayaan Masyarakat di Malaysia, hlm. 92–105 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; gambar perayaan masyarakat Malaysia; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 6: Perayaan Masyarakat di Malaysia, hlm. 92–105 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: kad cerita tujuan sambutan beberapa perayaan; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Perayaan Masyarakat di Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Perayaan Masyarakat di Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan kad cerita tujuan sambutan beberapa perayaan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 6: Perayaan Masyarakat di Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 6, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menerangkan tujuan sambutan perayaan di Malaysia” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan tujuan sambutan dengan tradisi perayaan yang sepadan. Guru menyemak jawapan awal berpandukan 11.3.2."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menerangkan tujuan sambutan perayaan di Malaysia, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan kepentingan menghormati kepelbagaian sambutan dan adab perayaan; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 6. Murid membandingkan nilai kekeluargaan, kesyukuran dan kebersamaan dalam dua perayaan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menjelaskan kepentingan menghormati kepelbagaian sambutan dan adab perayaan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 11.3.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K11.3.5."
+          "activity": "Murid menghasilkan jadual dua perayaan, tujuan dan satu persamaan. Guru menyemak secara individu menggunakan kata tugas SP 11.3.2 dan nilai K11.3.5, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 6: Perayaan Masyarakat di Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 6. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -1755,7 +1931,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "kad cerita tujuan sambutan beberapa perayaan",
+          "task1": "memadankan tujuan sambutan dengan tradisi perayaan yang sepadan",
+          "task2": "membandingkan nilai kekeluargaan, kesyukuran dan kebersamaan dalam dua perayaan",
+          "pbd_evidence": "jadual dua perayaan, tujuan dan satu persamaan",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -1776,7 +1963,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Kita Rakyat Malaysia",
         "sk": "11.3",
@@ -1801,28 +1988,28 @@
         "objective": [
           "Murid dapat menjelaskan cara sambutan perayaan dahulu dan kini."
         ],
-        "success_criteria": "Murid menyiapkan produk 11.3.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan poster dua perubahan perayaan dan satu amalan perpaduan, dengan maklumat bersumber yang memenuhi SP 11.3.3.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 6: Perayaan Masyarakat di Malaysia, hlm. 92–105 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; gambar perayaan masyarakat Malaysia; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 6: Perayaan Masyarakat di Malaysia, hlm. 92–105 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: gambar sambutan perayaan dahulu dan kini daripada sumber berlabel tahun; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Perayaan Masyarakat di Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Perayaan Masyarakat di Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan gambar sambutan perayaan dahulu dan kini daripada sumber berlabel tahun. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 6: Perayaan Masyarakat di Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 6, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan cara sambutan perayaan dahulu dan kini” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membandingkan cara sambutan perayaan dari aspek pakaian, komunikasi dan ziarah. Guru menyemak jawapan awal berpandukan 11.3.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menjelaskan cara sambutan perayaan dahulu dan kini, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghuraikan kepentingan warisan perayaan masyarakat di Malaysia; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 6. Murid menghasilkan poster perubahan dengan penekanan kepada hormat budaya dan mengelak stereotaip. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menghuraikan kepentingan warisan perayaan masyarakat di Malaysia.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 11.3.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K11.3.6."
+          "activity": "Murid menghasilkan poster dua perubahan perayaan dan satu amalan perpaduan. Guru menyemak secara individu menggunakan kata tugas SP 11.3.3 dan nilai K11.3.6, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 6: Perayaan Masyarakat di Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 6. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -1840,7 +2027,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "gambar sambutan perayaan dahulu dan kini daripada sumber berlabel tahun",
+          "task1": "membandingkan cara sambutan perayaan dari aspek pakaian, komunikasi dan ziarah",
+          "task2": "menghasilkan poster perubahan dengan penekanan kepada hormat budaya dan mengelak stereotaip",
+          "pbd_evidence": "poster dua perubahan perayaan dan satu amalan perpaduan",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -1861,7 +2059,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Pencapaian dan Kebanggaan Negara",
         "sk": "12.1",
@@ -1886,28 +2084,28 @@
         "objective": [
           "Murid dapat menyenaraikan nama-nama dan biodata ringkas Perdana Menteri Malaysia mengikut urutan."
         ],
-        "success_criteria": "Murid menyiapkan produk 12.1.1 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan jadual urutan Perdana Menteri bersumber dan garis masa, dengan maklumat bersumber yang memenuhi SP 12.1.1.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 7: Pemimpin Negara Malaysia, hlm. 106–123 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; garis masa Perdana Menteri Malaysia daripada sumber yang disemak tarikhnya; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 7: Pemimpin Negara Malaysia, hlm. 106–123 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: kad biodata Perdana Menteri dan garis masa pelantikan daripada sumber rasmi bertarikh; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Pemimpin Negara Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Pemimpin Negara Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan kad biodata Perdana Menteri dan garis masa pelantikan daripada sumber rasmi bertarikh. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 7: Pemimpin Negara Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 7, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan senarai fakta atau nama berserta label dan rujukan bagi fokus “Menyenaraikan nama-nama dan biodata ringkas Perdana Menteri Malaysia mengikut urutan”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun nama Perdana Menteri Malaysia mengikut urutan yang disemak tarikh. Guru menyemak jawapan awal berpandukan 12.1.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menyenaraikan nama-nama dan biodata ringkas Perdana Menteri Malaysia mengikut urutan, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan kepentingan pemimpin yang memiliki ciri-ciri kepimpinan yang berwibawa; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid membina garis masa dan menyatakan satu biodata ringkas bagi beberapa pemimpin. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan pemimpin yang memiliki ciri-ciri kepimpinan yang berwibawa.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 12.1.1 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K12.1.4."
+          "activity": "Murid menghasilkan jadual urutan Perdana Menteri bersumber dan garis masa. Guru menyemak secara individu menggunakan kata tugas SP 12.1.1 dan nilai K12.1.4, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 7: Pemimpin Negara Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 7. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -1925,7 +2123,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "kad biodata Perdana Menteri dan garis masa pelantikan daripada sumber rasmi bertarikh",
+          "task1": "menyusun nama Perdana Menteri Malaysia mengikut urutan yang disemak tarikh",
+          "task2": "membina garis masa dan menyatakan satu biodata ringkas bagi beberapa pemimpin",
+          "pbd_evidence": "jadual urutan Perdana Menteri bersumber dan garis masa",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -1946,7 +2155,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Pencapaian dan Kebanggaan Negara",
         "sk": "12.1",
@@ -1971,28 +2180,28 @@
         "objective": [
           "Murid dapat menerangkan bidang tugas Perdana Menteri."
         ],
-        "success_criteria": "Murid menyiapkan produk 12.1.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan carta bidang tugas Perdana Menteri dengan tiga contoh, dengan maklumat bersumber yang memenuhi SP 12.1.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 7: Pemimpin Negara Malaysia, hlm. 106–123 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; garis masa Perdana Menteri Malaysia daripada sumber yang disemak tarikhnya; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 7: Pemimpin Negara Malaysia, hlm. 106–123 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: rajah institusi eksekutif dan petikan fungsi Perdana Menteri; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Pemimpin Negara Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Pemimpin Negara Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan rajah institusi eksekutif dan petikan fungsi Perdana Menteri. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 7: Pemimpin Negara Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 7, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menerangkan bidang tugas Perdana Menteri” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan tugas Perdana Menteri dalam pentadbiran, dasar dan penyelarasan kerajaan. Guru menyemak jawapan awal berpandukan 12.1.2."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menerangkan bidang tugas Perdana Menteri, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan penghargaan terhadap pemimpin negara; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid melakonkan mesyuarat kabinet contoh untuk menunjukkan peranan ketua kerajaan secara tepat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan penghargaan terhadap pemimpin negara.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 12.1.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K12.1.5."
+          "activity": "Murid menghasilkan carta bidang tugas Perdana Menteri dengan tiga contoh. Guru menyemak secara individu menggunakan kata tugas SP 12.1.2 dan nilai K12.1.5, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 7: Pemimpin Negara Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 7. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -2010,7 +2219,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "rajah institusi eksekutif dan petikan fungsi Perdana Menteri",
+          "task1": "mengelaskan tugas Perdana Menteri dalam pentadbiran, dasar dan penyelarasan kerajaan",
+          "task2": "melakonkan mesyuarat kabinet contoh untuk menunjukkan peranan ketua kerajaan secara tepat",
+          "pbd_evidence": "carta bidang tugas Perdana Menteri dengan tiga contoh",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -2031,7 +2251,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Pencapaian dan Kebanggaan Negara",
         "sk": "12.1",
@@ -2056,28 +2276,28 @@
         "objective": [
           "Murid dapat menjelaskan pencapaian negara di bawah kepimpinan Perdana Menteri."
         ],
-        "success_criteria": "Murid menyiapkan produk 12.1.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan dua kad pencapaian negara dengan tarikh, sumber dan kesan, dengan maklumat bersumber yang memenuhi SP 12.1.3.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 7: Pemimpin Negara Malaysia, hlm. 106–123 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; garis masa Perdana Menteri Malaysia daripada sumber yang disemak tarikhnya; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 7: Pemimpin Negara Malaysia, hlm. 106–123 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: garis masa dasar atau pencapaian negara di bawah pentadbiran Perdana Menteri berbeza; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Pemimpin Negara Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Pemimpin Negara Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan garis masa dasar atau pencapaian negara di bawah pentadbiran Perdana Menteri berbeza. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 7: Pemimpin Negara Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 7, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan pencapaian negara di bawah kepimpinan Perdana Menteri” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan inisiatif negara dengan era kepimpinan yang sesuai berdasarkan bukti. Guru menyemak jawapan awal berpandukan 12.1.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menjelaskan pencapaian negara di bawah kepimpinan Perdana Menteri, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghuraikan kepentingan memberi sokongan kepada kepemimpinan negara; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid membandingkan dua pencapaian serta menilai kesannya tanpa mengutamakan parti politik. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menghuraikan kepentingan memberi sokongan kepada kepemimpinan negara.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 12.1.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K12.1.6."
+          "activity": "Murid menghasilkan dua kad pencapaian negara dengan tarikh, sumber dan kesan. Guru menyemak secara individu menggunakan kata tugas SP 12.1.3 dan nilai K12.1.6, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 7: Pemimpin Negara Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 7. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -2095,7 +2315,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "garis masa dasar atau pencapaian negara di bawah pentadbiran Perdana Menteri berbeza",
+          "task1": "memadankan inisiatif negara dengan era kepimpinan yang sesuai berdasarkan bukti",
+          "task2": "membandingkan dua pencapaian serta menilai kesannya tanpa mengutamakan parti politik",
+          "pbd_evidence": "dua kad pencapaian negara dengan tarikh, sumber dan kesan",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -2116,7 +2347,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Pencapaian dan Kebanggaan Negara",
         "sk": "12.2",
@@ -2141,28 +2372,28 @@
         "objective": [
           "Murid dapat menyatakan perkembangan awal ekonomi di Malaysia mengikut sektor."
         ],
-        "success_criteria": "Murid menyiapkan produk 12.2.1 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan garis masa tiga sektor dengan contoh perkembangan, dengan maklumat bersumber yang memenuhi SP 12.2.1.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 8: Kemajuan Ekonomi Malaysia, hlm. 124–141 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; graf perkembangan sektor ekonomi negara; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 8: Kemajuan Ekonomi Malaysia, hlm. 124–141 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: foto kegiatan pertanian, perlombongan dan perdagangan awal Malaysia; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Kemajuan Ekonomi Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Kemajuan Ekonomi Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan foto kegiatan pertanian, perlombongan dan perdagangan awal Malaysia. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 8: Kemajuan Ekonomi Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 8, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan perkembangan awal ekonomi di Malaysia mengikut sektor”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun perkembangan sektor utama ekonomi mengikut urutan masa. Guru menyemak jawapan awal berpandukan 12.2.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menyatakan perkembangan awal ekonomi di Malaysia mengikut sektor, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan kepentingan kemajuan ekonomi bagi mengekalkan kemakmuran negara; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 8. Murid menghasilkan carta perubahan daripada kegiatan tradisional kepada sektor moden. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan kemajuan ekonomi bagi mengekalkan kemakmuran negara.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 12.2.1 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K12.2.4."
+          "activity": "Murid menghasilkan garis masa tiga sektor dengan contoh perkembangan. Guru menyemak secara individu menggunakan kata tugas SP 12.2.1 dan nilai K12.2.4, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 8: Kemajuan Ekonomi Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 8. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -2180,7 +2411,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "foto kegiatan pertanian, perlombongan dan perdagangan awal Malaysia",
+          "task1": "menyusun perkembangan sektor utama ekonomi mengikut urutan masa",
+          "task2": "menghasilkan carta perubahan daripada kegiatan tradisional kepada sektor moden",
+          "pbd_evidence": "garis masa tiga sektor dengan contoh perkembangan",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -2201,7 +2443,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Pencapaian dan Kebanggaan Negara",
         "sk": "12.2",
@@ -2226,28 +2468,28 @@
         "objective": [
           "Murid dapat menyenaraikan kegiatan ekonomi yang menyumbang kepada kemajuan negara."
         ],
-        "success_criteria": "Murid menyiapkan produk 12.2.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan jadual empat sektor dengan contoh dan peranan, dengan maklumat bersumber yang memenuhi SP 12.2.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 8: Kemajuan Ekonomi Malaysia, hlm. 124–141 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; graf perkembangan sektor ekonomi negara; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 8: Kemajuan Ekonomi Malaysia, hlm. 124–141 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: kad perkilangan, perkhidmatan, pertanian dan pelancongan serta peta ekonomi; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Kemajuan Ekonomi Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Kemajuan Ekonomi Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan kad perkilangan, perkhidmatan, pertanian dan pelancongan serta peta ekonomi. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 8: Kemajuan Ekonomi Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 8, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan senarai fakta atau nama berserta label dan rujukan bagi fokus “Menyenaraikan kegiatan ekonomi yang menyumbang kepada kemajuan negara”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan contoh kegiatan ekonomi mengikut sektor utama. Guru menyemak jawapan awal berpandukan 12.2.2."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menyenaraikan kegiatan ekonomi yang menyumbang kepada kemajuan negara, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menerangkan kepentingan menyokong usaha meningkatkan ekonomi negara; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 8. Murid membina peta sumbangan sektor kepada pekerjaan dan pembangunan setempat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menerangkan kepentingan menyokong usaha meningkatkan ekonomi negara.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 12.2.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K12.2.5."
+          "activity": "Murid menghasilkan jadual empat sektor dengan contoh dan peranan. Guru menyemak secara individu menggunakan kata tugas SP 12.2.2 dan nilai K12.2.5, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 8: Kemajuan Ekonomi Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 8. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -2265,7 +2507,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "kad perkilangan, perkhidmatan, pertanian dan pelancongan serta peta ekonomi",
+          "task1": "mengelaskan contoh kegiatan ekonomi mengikut sektor utama",
+          "task2": "membina peta sumbangan sektor kepada pekerjaan dan pembangunan setempat",
+          "pbd_evidence": "jadual empat sektor dengan contoh dan peranan",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -2286,7 +2539,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Pencapaian dan Kebanggaan Negara",
         "sk": "12.2",
@@ -2311,28 +2564,28 @@
         "objective": [
           "Murid dapat menjelaskan pencapaian ekonomi negara."
         ],
-        "success_criteria": "Murid menyiapkan produk 12.2.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan dua pernyataan pencapaian ekonomi berserta bukti data, dengan maklumat bersumber yang memenuhi SP 12.2.3.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 8: Kemajuan Ekonomi Malaysia, hlm. 124–141 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; graf perkembangan sektor ekonomi negara; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 8: Kemajuan Ekonomi Malaysia, hlm. 124–141 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: graf pencapaian ekonomi Malaysia daripada penerbitan rasmi dengan tahun dinyatakan; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Kemajuan Ekonomi Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Kemajuan Ekonomi Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan graf pencapaian ekonomi Malaysia daripada penerbitan rasmi dengan tahun dinyatakan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 8: Kemajuan Ekonomi Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 8, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan pencapaian ekonomi negara” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mentafsir satu graf pertumbuhan atau keluaran industri tanpa mengubah data asal. Guru menyemak jawapan awal berpandukan 12.2.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menjelaskan pencapaian ekonomi negara, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan kepentingan rasa bangga terhadap barangan buatan Malaysia; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 8. Murid membina kapsyen dua pencapaian ekonomi yang menyatakan tahun, sektor dan manfaat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menjelaskan kepentingan rasa bangga terhadap barangan buatan Malaysia.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 12.2.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K12.2.6."
+          "activity": "Murid menghasilkan dua pernyataan pencapaian ekonomi berserta bukti data. Guru menyemak secara individu menggunakan kata tugas SP 12.2.3 dan nilai K12.2.6, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 8: Kemajuan Ekonomi Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 8. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -2350,7 +2603,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "graf pencapaian ekonomi Malaysia daripada penerbitan rasmi dengan tahun dinyatakan",
+          "task1": "mentafsir satu graf pertumbuhan atau keluaran industri tanpa mengubah data asal",
+          "task2": "membina kapsyen dua pencapaian ekonomi yang menyatakan tahun, sektor dan manfaat",
+          "pbd_evidence": "dua pernyataan pencapaian ekonomi berserta bukti data",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -2371,7 +2635,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KAJIAN_KES",
         "tema": "Pencapaian dan Kebanggaan Negara",
         "sk": "12.2",
@@ -2402,28 +2666,28 @@
           "Membina satu soalan inkuiri berkenaan Kemajuan Ekonomi di Malaysia.",
           "Mengenal pasti sekurang-kurangnya dua bukti relevan dan menerangkan kesimpulan secara beralasan."
         ],
-        "success_criteria": "Murid membina persoalan kajian, menyatakan dua bukti relevan dan menjelaskan satu rumusan yang disokong bukti.",
+        "success_criteria": "Murid dapat menghasilkan laporan kes dua bukti data, satu perubahan dan satu kesimpulan, dengan maklumat bersumber yang memenuhi SP 12.2.1, 12.2.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 8: Kemajuan Ekonomi Malaysia, hlm. 124–141 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; graf perkembangan sektor ekonomi negara; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 8: Kemajuan Ekonomi Malaysia, hlm. 124–141 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: dua sumber data tentang perubahan sektor ekonomi Malaysia; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Kemajuan Ekonomi Malaysia” dan menyoal “Apakah bukti yang menyokong persoalan kajian tentang Kemajuan Ekonomi Malaysia?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan dua sumber data tentang perubahan sektor ekonomi Malaysia. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 8: Kemajuan Ekonomi Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membantu murid membina soalan kajian “Kemajuan Ekonomi Malaysia”, mencari dua sumber berbeza dan membezakan fakta dengan pendapat. Murid melengkapkan jadual soalan–sumber–bukti, tanpa menyalin bulat-bulat teks sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina persoalan kajian tentang perubahan ekonomi dahulu dan kini. Guru menyemak jawapan awal berpandukan 12.2.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid membandingkan dua sumber berkaitan Kemajuan Ekonomi Malaysia, menyusun maklumat mengikut kronologi atau kategori, lalu merumus satu dapatan dan batas bukti. Guru membimbing murid menghubungkan iktibar dengan nilai sivik secara beralasan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 8. Murid membandingkan graf atau peta sektor dari dua tempoh dan menghuraikan peluang serta cabaran. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan kemajuan ekonomi bagi mengekalkan kemakmuran negara.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Pembentangan kajian ringkas: satu persoalan, dua bukti, satu rumusan. Guru menilai kesahan fakta, kesesuaian bukti, tafsiran dan komunikasi murid; beri maklum balas individu."
+          "activity": "Murid menghasilkan laporan kes dua bukti data, satu perubahan dan satu kesimpulan. Guru menyemak secara individu menggunakan kata tugas SP 12.2.1, 12.2.2 dan nilai K12.2.4, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 8: Kemajuan Ekonomi Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 8. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -2441,7 +2705,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "dua sumber data tentang perubahan sektor ekonomi Malaysia",
+          "task1": "membina persoalan kajian tentang perubahan ekonomi dahulu dan kini",
+          "task2": "membandingkan graf atau peta sektor dari dua tempoh dan menghuraikan peluang serta cabaran",
+          "pbd_evidence": "laporan kes dua bukti data, satu perubahan dan satu kesimpulan",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -2462,7 +2737,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Pencapaian dan Kebanggaan Negara",
         "sk": "12.3",
@@ -2493,28 +2768,28 @@
           "Murid dapat menyatakan pencapaian Malaysia dalam bidang sukan di peringkat kebangsaan dan antarabangsa.",
           "Murid dapat menerangkan peranan sukan sebagai alat perpaduan."
         ],
-        "success_criteria": "Murid menyiapkan produk 12.3.1–12.3.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan dua contoh pencapaian dan tiga langkah perpaduan melalui sukan, dengan maklumat bersumber yang memenuhi SP 12.3.1, 12.3.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 9: Sukan Kebanggaan Malaysia, hlm. 142–159 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; gambar pencapaian sukan Malaysia berserta tarikh sumber; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 9: Sukan Kebanggaan Malaysia, hlm. 142–159 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: foto kejayaan atlet Malaysia dan pertandingan peringkat berbeza dengan tarikh; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Sukan Kebanggaan Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Sukan Kebanggaan Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan foto kejayaan atlet Malaysia dan pertandingan peringkat berbeza dengan tarikh. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 9: Sukan Kebanggaan Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 9, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan pencapaian Malaysia dalam bidang sukan di peringkat kebangsaan dan antarabangsa”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan pencapaian sukan dengan sukan serta peringkat pertandingan yang betul. Guru menyemak jawapan awal berpandukan 12.3.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menerangkan peranan sukan sebagai alat perpaduan” dengan contoh daripada sumber, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan kepentingan pelibatan pelbagai kaum mengharumkan nama negara dalam bidang sukan; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid menganalisis bagaimana aktiviti sukan boleh menyatukan rakyat pelbagai latar. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan pelibatan pelbagai kaum mengharumkan nama negara dalam bidang sukan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 12.3.1 dan 12.3.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K12.3.5."
+          "activity": "Murid menghasilkan dua contoh pencapaian dan tiga langkah perpaduan melalui sukan. Guru menyemak secara individu menggunakan kata tugas SP 12.3.1, 12.3.2 dan nilai K12.3.5, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 9: Sukan Kebanggaan Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 9. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -2532,7 +2807,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "foto kejayaan atlet Malaysia dan pertandingan peringkat berbeza dengan tarikh",
+          "task1": "memadankan pencapaian sukan dengan sukan serta peringkat pertandingan yang betul",
+          "task2": "menganalisis bagaimana aktiviti sukan boleh menyatukan rakyat pelbagai latar",
+          "pbd_evidence": "dua contoh pencapaian dan tiga langkah perpaduan melalui sukan",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -2553,7 +2839,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Pencapaian dan Kebanggaan Negara",
         "sk": "12.3",
@@ -2578,28 +2864,28 @@
         "objective": [
           "Murid dapat menjelaskan peranan Malaysia dalam penganjuran sukan antarabangsa."
         ],
-        "success_criteria": "Murid menyiapkan produk 12.3.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan jadual dua penganjuran dengan tahun dan peranan Malaysia, dengan maklumat bersumber yang memenuhi SP 12.3.3.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 9: Sukan Kebanggaan Malaysia, hlm. 142–159 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; gambar pencapaian sukan Malaysia berserta tarikh sumber; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 9: Sukan Kebanggaan Malaysia, hlm. 142–159 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: poster atau garis masa acara sukan antarabangsa yang pernah dianjur Malaysia; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Sukan Kebanggaan Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Sukan Kebanggaan Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan poster atau garis masa acara sukan antarabangsa yang pernah dianjur Malaysia. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 9: Sukan Kebanggaan Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 9, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan peranan Malaysia dalam penganjuran sukan antarabangsa” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun acara utama mengikut tahun dan jenis sukan. Guru menyemak jawapan awal berpandukan 12.3.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menjelaskan peranan Malaysia dalam penganjuran sukan antarabangsa, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan kepentingan sukan kepada pembangunan negara; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid menghasilkan peta impak penganjuran kepada ekonomi, kemudahan dan imej negara. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menjelaskan kepentingan sukan kepada pembangunan negara.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 12.3.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K12.3.6."
+          "activity": "Murid menghasilkan jadual dua penganjuran dengan tahun dan peranan Malaysia. Guru menyemak secara individu menggunakan kata tugas SP 12.3.3 dan nilai K12.3.6, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 9: Sukan Kebanggaan Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 9. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -2617,7 +2903,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "poster atau garis masa acara sukan antarabangsa yang pernah dianjur Malaysia",
+          "task1": "menyusun acara utama mengikut tahun dan jenis sukan",
+          "task2": "menghasilkan peta impak penganjuran kepada ekonomi, kemudahan dan imej negara",
+          "pbd_evidence": "jadual dua penganjuran dengan tahun dan peranan Malaysia",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -2638,7 +2935,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Pencapaian dan Kebanggaan Negara",
         "sk": "12.3",
@@ -2663,28 +2960,28 @@
         "objective": [
           "Murid dapat menghubungkait tokoh-tokoh sukan negara terdahulu yang memberi inspirasi kepada sukan masa kini."
         ],
-        "success_criteria": "Murid menyiapkan produk 12.3.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan dua tokoh terdahulu dan satu hubungan inspirasi bersumber, dengan maklumat bersumber yang memenuhi SP 12.3.4.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 9: Sukan Kebanggaan Malaysia, hlm. 142–159 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; gambar pencapaian sukan Malaysia berserta tarikh sumber; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 9: Sukan Kebanggaan Malaysia, hlm. 142–159 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: kad tokoh sukan Malaysia dahulu dan kejayaan atlet masa kini; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Sukan Kebanggaan Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Sukan Kebanggaan Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan kad tokoh sukan Malaysia dahulu dan kejayaan atlet masa kini. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 9: Sukan Kebanggaan Malaysia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 9, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menghubungkait tokoh-tokoh sukan negara terdahulu yang memberi inspirasi kepada sukan masa kini” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan kisah usaha tokoh terdahulu dengan nilai latihan dan ketekunan. Guru menyemak jawapan awal berpandukan 12.3.4."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menghubungkait tokoh-tokoh sukan negara terdahulu yang memberi inspirasi kepada sukan masa kini, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghuraikan kepentingan nilai sahsiah dan etika dalam mempamerkan semangat kesukanan; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid membina carta pengaruh tokoh sukan kepada penyertaan generasi baharu. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menghuraikan kepentingan nilai sahsiah dan etika dalam mempamerkan semangat kesukanan.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 12.3.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K12.3.7."
+          "activity": "Murid menghasilkan dua tokoh terdahulu dan satu hubungan inspirasi bersumber. Guru menyemak secara individu menggunakan kata tugas SP 12.3.4 dan nilai K12.3.7, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 9: Sukan Kebanggaan Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 9. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -2702,7 +2999,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "kad tokoh sukan Malaysia dahulu dan kejayaan atlet masa kini",
+          "task1": "memadankan kisah usaha tokoh terdahulu dengan nilai latihan dan ketekunan",
+          "task2": "membina carta pengaruh tokoh sukan kepada penyertaan generasi baharu",
+          "pbd_evidence": "dua tokoh terdahulu dan satu hubungan inspirasi bersumber",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -2723,7 +3031,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Pencapaian dan Kebanggaan Negara",
         "sk": "12.4",
@@ -2754,28 +3062,28 @@
           "Murid dapat menyenaraikan pertubuhan serantau dan antarabangsa yang dianggotai oleh Malaysia.",
           "Murid dapat menerangkan pelibatan Malaysia dalam Persatuan Negara-negara Asia Tenggara (ASEAN)."
         ],
-        "success_criteria": "Murid menyiapkan produk 12.4.1–12.4.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan peta organisasi dan dua peranan Malaysia dalam ASEAN, dengan maklumat bersumber yang memenuhi SP 12.4.1, 12.4.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 10: Malaysia dan Dunia, hlm. 160–176 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta dunia dan logo pertubuhan serantau serta antarabangsa; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 10: Malaysia dan Dunia, hlm. 160–176 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: peta Asia Tenggara dan simbol ASEAN serta organisasi antarabangsa; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Malaysia dan Dunia” dan menyoal “Apakah yang dapat kita buktikan tentang Malaysia dan Dunia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan peta Asia Tenggara dan simbol ASEAN serta organisasi antarabangsa. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 10: Malaysia dan Dunia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 10, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan senarai fakta atau nama berserta label dan rujukan bagi fokus “Menyenaraikan pertubuhan serantau dan antarabangsa yang dianggotai oleh Malaysia”."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid melabel negara anggota ASEAN mengikut sumber semasa yang dinyatakan tahun. Guru menyemak jawapan awal berpandukan 12.4.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menerangkan pelibatan Malaysia dalam Persatuan Negara-negara Asia Tenggara (ASEAN)” dengan contoh daripada sumber, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan kepentingan menjalinkan hubungan baik dengan negara luar; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid membina rajah peranan Malaysia dalam kerjasama ASEAN dan membezakan organisasi serantau/antarabangsa. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan menjalinkan hubungan baik dengan negara luar.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 12.4.1 dan 12.4.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K12.4.6."
+          "activity": "Murid menghasilkan peta organisasi dan dua peranan Malaysia dalam ASEAN. Guru menyemak secara individu menggunakan kata tugas SP 12.4.1, 12.4.2 dan nilai K12.4.6, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 10: Malaysia dan Dunia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 10. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -2793,7 +3101,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "peta Asia Tenggara dan simbol ASEAN serta organisasi antarabangsa",
+          "task1": "melabel negara anggota ASEAN mengikut sumber semasa yang dinyatakan tahun",
+          "task2": "membina rajah peranan Malaysia dalam kerjasama ASEAN dan membezakan organisasi serantau/antarabangsa",
+          "pbd_evidence": "peta organisasi dan dua peranan Malaysia dalam ASEAN",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -2814,7 +3133,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Pencapaian dan Kebanggaan Negara",
         "sk": "12.4",
@@ -2839,28 +3158,28 @@
         "objective": [
           "Murid dapat menerangkan pelibatan Malaysia dalam Komanwel."
         ],
-        "success_criteria": "Murid menyiapkan produk 12.4.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan kad kerjasama Malaysia dalam Komanwel dengan dua contoh, dengan maklumat bersumber yang memenuhi SP 12.4.3.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 10: Malaysia dan Dunia, hlm. 160–176 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta dunia dan logo pertubuhan serantau serta antarabangsa; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 10: Malaysia dan Dunia, hlm. 160–176 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: gambar simbol Komanwel serta sumber penyertaan Malaysia; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Malaysia dan Dunia” dan menyoal “Apakah yang dapat kita buktikan tentang Malaysia dan Dunia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan gambar simbol Komanwel serta sumber penyertaan Malaysia. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 10: Malaysia dan Dunia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 10, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menerangkan pelibatan Malaysia dalam Komanwel” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengenal pasti latar hubungan Malaysia dengan negara anggota Komanwel. Guru menyemak jawapan awal berpandukan 12.4.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menerangkan pelibatan Malaysia dalam Komanwel, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan kepentingan sumbangan Malaysia untuk keamanan dunia; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid menyusun contoh kerjasama pendidikan, sukan atau hubungan negara anggota mengikut sumber. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menjelaskan kepentingan sumbangan Malaysia untuk keamanan dunia.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 12.4.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K12.4.7."
+          "activity": "Murid menghasilkan kad kerjasama Malaysia dalam Komanwel dengan dua contoh. Guru menyemak secara individu menggunakan kata tugas SP 12.4.3 dan nilai K12.4.7, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 10: Malaysia dan Dunia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 10. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -2878,7 +3197,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "gambar simbol Komanwel serta sumber penyertaan Malaysia",
+          "task1": "mengenal pasti latar hubungan Malaysia dengan negara anggota Komanwel",
+          "task2": "menyusun contoh kerjasama pendidikan, sukan atau hubungan negara anggota mengikut sumber",
+          "pbd_evidence": "kad kerjasama Malaysia dalam Komanwel dengan dua contoh",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -2899,7 +3229,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Pencapaian dan Kebanggaan Negara",
         "sk": "12.4",
@@ -2924,28 +3254,28 @@
         "objective": [
           "Murid dapat menjelaskan pelibatan Malaysia dalam Persidangan Negara-Negara Islam (OIC)."
         ],
-        "success_criteria": "Murid menyiapkan produk 12.4.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan dua peranan Malaysia dalam OIC yang dapat disokong sumber, dengan maklumat bersumber yang memenuhi SP 12.4.4.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 10: Malaysia dan Dunia, hlm. 160–176 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta dunia dan logo pertubuhan serantau serta antarabangsa; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 10: Malaysia dan Dunia, hlm. 160–176 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: logo OIC dan ringkasan sejarah penyertaan Malaysia daripada sumber rasmi; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Malaysia dan Dunia” dan menyoal “Apakah yang dapat kita buktikan tentang Malaysia dan Dunia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan logo OIC dan ringkasan sejarah penyertaan Malaysia daripada sumber rasmi. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 10: Malaysia dan Dunia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 10, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan pelibatan Malaysia dalam Persidangan Negara-Negara Islam (OIC)” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menamakan tujuan utama OIC menggunakan bukti sumber. Guru menyemak jawapan awal berpandukan 12.4.4."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menjelaskan pelibatan Malaysia dalam Persidangan Negara-Negara Islam (OIC), kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghuraikan kepentingan mengekalkan pengiktirafan negara luar terhadap Malaysia; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid membina carta pelibatan Malaysia melalui dialog atau kerjasama negara anggota. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menghuraikan kepentingan mengekalkan pengiktirafan negara luar terhadap Malaysia.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 12.4.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K12.4.8."
+          "activity": "Murid menghasilkan dua peranan Malaysia dalam OIC yang dapat disokong sumber. Guru menyemak secara individu menggunakan kata tugas SP 12.4.4 dan nilai K12.4.8, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 10: Malaysia dan Dunia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 10. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -2963,7 +3293,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "logo OIC dan ringkasan sejarah penyertaan Malaysia daripada sumber rasmi",
+          "task1": "menamakan tujuan utama OIC menggunakan bukti sumber",
+          "task2": "membina carta pelibatan Malaysia melalui dialog atau kerjasama negara anggota",
+          "pbd_evidence": "dua peranan Malaysia dalam OIC yang dapat disokong sumber",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -2984,7 +3325,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KANDUNGAN",
         "tema": "Pencapaian dan Kebanggaan Negara",
         "sk": "12.4",
@@ -3003,28 +3344,28 @@
         "objective": [
           "Murid dapat menghuraikan pelibatan Malaysia dalam Pertubuhan Bangsa-Bangsa Bersatu (PBB)."
         ],
-        "success_criteria": "Murid menyiapkan produk 12.4.5 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.",
+        "success_criteria": "Murid dapat menghasilkan jadual dua bentuk pelibatan Malaysia dalam PBB, dengan maklumat bersumber yang memenuhi SP 12.4.5.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 10: Malaysia dan Dunia, hlm. 160–176 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta dunia dan logo pertubuhan serantau serta antarabangsa; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 10: Malaysia dan Dunia, hlm. 160–176 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: gambar persidangan PBB dan petikan fungsi pertubuhan; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Malaysia dan Dunia” dan menyoal “Apakah yang dapat kita buktikan tentang Malaysia dan Dunia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan gambar persidangan PBB dan petikan fungsi pertubuhan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 10: Malaysia dan Dunia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru menunjukkan cara mencari maklumat dalam Unit 10, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menghuraikan pelibatan Malaysia dalam Pertubuhan Bangsa-Bangsa Bersatu (PBB)” dengan contoh daripada sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membezakan peranan PBB daripada organisasi ASEAN, Komanwel dan OIC. Guru menyemak jawapan awal berpandukan 12.4.5."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menghuraikan pelibatan Malaysia dalam Pertubuhan Bangsa-Bangsa Bersatu (PBB), kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta dan sebab-akibat; jawapan mesti disokong bahan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid menerangkan satu penglibatan Malaysia dalam usaha antarabangsa berdasarkan sumber bertarikh. Guru membimbing pembetulan salah faham menggunakan bukti."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Murid menyerahkan hasil 12.4.5 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu."
+          "activity": "Murid menghasilkan jadual dua bentuk pelibatan Malaysia dalam PBB. Guru menyemak secara individu menggunakan kata tugas SP 12.4.5, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 10: Malaysia dan Dunia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 10. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -3042,7 +3383,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "gambar persidangan PBB dan petikan fungsi pertubuhan",
+          "task1": "membezakan peranan PBB daripada organisasi ASEAN, Komanwel dan OIC",
+          "task2": "menerangkan satu penglibatan Malaysia dalam usaha antarabangsa berdasarkan sumber bertarikh",
+          "pbd_evidence": "jadual dua bentuk pelibatan Malaysia dalam PBB",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {
@@ -3063,7 +3415,7 @@
         "year": 6,
         "academic_year": 2027,
         "subject": "Sejarah",
-        "status": "DRAF_SEMAKAN_BUKU_TEKS_AKTIVITI_BELUM_SELESAI",
+        "status": "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS",
         "type": "KAJIAN_KES",
         "tema": "Pencapaian dan Kebanggaan Negara",
         "sk": "12.4",
@@ -3094,28 +3446,28 @@
           "Membina satu soalan inkuiri berkenaan Malaysia dan Dunia.",
           "Mengenal pasti sekurang-kurangnya dua bukti relevan dan menerangkan kesimpulan secara beralasan."
         ],
-        "success_criteria": "Murid membina persoalan kajian, menyatakan dua bukti relevan dan menjelaskan satu rumusan yang disokong bukti.",
+        "success_criteria": "Murid dapat menghasilkan laporan kes dua organisasi, dua bukti dan satu iktibar, dengan maklumat bersumber yang memenuhi SP 12.4.1, 12.4.2.",
         "duration_minutes": 60,
-        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 10: Malaysia dan Dunia, hlm. 160–176 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta dunia dan logo pertubuhan serantau serta antarabangsa; kad sumber/lembaran bukti.",
+        "bbm": "Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 10: Malaysia dan Dunia, hlm. 160–176 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: peta organisasi antarabangsa dan dua berita kegiatan kerjasama Malaysia yang bertarikh; kad tugasan dan lembaran rekod PBD.",
         "set_induksi": {
           "min": 5,
-          "activity": "Guru mempamerkan imej, peta atau petikan bertajuk “Malaysia dan Dunia” dan menyoal “Apakah bukti yang menyokong persoalan kajian tentang Malaysia dan Dunia?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari."
+          "activity": "Guru mempamerkan peta organisasi antarabangsa dan dua berita kegiatan kerjasama Malaysia yang bertarikh. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 10: Malaysia dan Dunia."
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membantu murid membina soalan kajian “Malaysia dan Dunia”, mencari dua sumber berbeza dan membezakan fakta dengan pendapat. Murid melengkapkan jadual soalan–sumber–bukti, tanpa menyalin bulat-bulat teks sumber."
+          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina persoalan kajian tentang cara Malaysia menyumbang di peringkat dunia. Guru menyemak jawapan awal berpandukan 12.4.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Murid membandingkan dua sumber berkaitan Malaysia dan Dunia, menyusun maklumat mengikut kronologi atau kategori, lalu merumus satu dapatan dan batas bukti. Guru membimbing murid menghubungkan iktibar dengan nilai sivik secara beralasan."
+          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid membandingkan bukti pelibatan dalam dua organisasi dan menyimpulkan faedah kerjasama. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan menjalinkan hubungan baik dengan negara luar.."
         },
         "pengukuhan_pbd": {
           "min": 10,
-          "activity": "Pembentangan kajian ringkas: satu persoalan, dua bukti, satu rumusan. Guru menilai kesahan fakta, kesesuaian bukti, tafsiran dan komunikasi murid; beri maklum balas individu."
+          "activity": "Murid menghasilkan laporan kes dua organisasi, dua bukti dan satu iktibar. Guru menyemak secara individu menggunakan kata tugas SP 12.4.1, 12.4.2 dan nilai K12.4.6, kemudian memberi intervensi kepada murid yang belum tepat."
         },
         "penutup": {
           "min": 5,
-          "activity": "Guru merumus isi penting Unit 10: Malaysia dan Dunia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini."
+          "activity": "Guru merumus peristiwa, bukti dan pengajaran dalam Unit 10. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk."
         },
         "reflection": "____ / ____ murid mencapai objektif; tindakan susulan: __________________",
         "source_dskp": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
@@ -3133,7 +3485,18 @@
           "page_evidence_level": "ISI_KANDUNGAN_BUKU_TEKS_UNIT_SAHAJA",
           "exact_activity_page_confirmed": false
         },
-        "unit_toc_verified": true
+        "unit_toc_verified": true,
+        "context_specific_activity": {
+          "batch_id": "SEJARAH_97_20261106",
+          "stimulus": "peta organisasi antarabangsa dan dua berita kegiatan kerjasama Malaysia yang bertarikh",
+          "task1": "membina persoalan kajian tentang cara Malaysia menyumbang di peringkat dunia",
+          "task2": "membandingkan bukti pelibatan dalam dua organisasi dan menyimpulkan faedah kerjasama",
+          "pbd_evidence": "laporan kes dua organisasi, dua bukti dan satu iktibar",
+          "source_basis": "DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.",
+          "exact_textbook_exercise_checked": false,
+          "teacher_approval": false,
+          "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        }
       },
       "weeks": {
         "A": {

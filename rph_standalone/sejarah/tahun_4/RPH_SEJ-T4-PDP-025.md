@@ -1,6 +1,6 @@
 # RPH SEJARAH TAHUN 4 — PdP 025
 
-**Status:** DRAF (halaman aktiviti buku teks / kelulusan guru belum disahkan)  
+**Status:** DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS; belum semakan akhir guru / buku teks  
 **Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu A:** 2027-07-11–2027-07-15 | **Minggu B:** 2027-07-12–2027-07-16  
 **Tema:** Tokoh Terbilang Kesultanan Melayu Melaka | **Tajuk:** Unit 8: Tokoh Terbilang Kesultanan Melayu Melaka — PdP 025 | **SK:** 5.1  
 **SP:** 5.1.1, 5.1.2, K5.1.5 | **Jenis:** PdP Kandungan
@@ -9,24 +9,24 @@
 - Murid dapat menyatakan struktur masyarakat Zaman Kesultanan Melayu Melaka.
 - Murid dapat menjelaskan maksud tokoh terbilang dalam Kesultanan Melayu Melaka.
 
-**Kriteria kejayaan:** Murid menyiapkan produk 5.1.1–5.1.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.
+**Kriteria kejayaan:** Murid dapat menghasilkan rajah struktur dan dua ciri tokoh terbilang dengan sumber, dengan maklumat bersumber yang memenuhi SP 5.1.1, 5.1.2.
 
-**Buku teks dan BBM:** Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 8: Tokoh Terbilang Kesultanan Melayu Melaka, hlm. 104–119 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; ilustrasi struktur pentadbiran Melaka; kad sumber/lembaran bukti.
+**BBM:** Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 8: Tokoh Terbilang Kesultanan Melayu Melaka, hlm. 104–119 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: rajah hierarki masyarakat Kesultanan Melayu Melaka; kad tugasan dan lembaran rekod PBD.
 
-**Set Induksi (5 min):** Guru mempamerkan imej, peta atau petikan bertajuk “Tokoh Terbilang Kesultanan Melayu Melaka” dan menyoal “Apakah yang dapat kita buktikan tentang Tokoh Terbilang Kesultanan Melayu Melaka daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari.
+**Set Induksi (5 min):** Guru mempamerkan rajah hierarki masyarakat Kesultanan Melayu Melaka. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 8: Tokoh Terbilang Kesultanan Melayu Melaka.
 
-**Aktiviti 1 (20 min):** Guru menunjukkan cara mencari maklumat dalam Unit 8, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan struktur masyarakat Zaman Kesultanan Melayu Melaka”.
+**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid melengkapkan struktur masyarakat pemerintah dan diperintah serta mendefinisi tokoh terbilang. Guru menyemak jawapan awal berpandukan 5.1.1.
 
-**Aktiviti 2 (20 min):** Murid menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan maksud tokoh terbilang dalam Kesultanan Melayu Melaka” dengan contoh daripada sumber, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan kepentingan mencontohi nilai murni tokoh terbilang; jawapan mesti disokong bahan.
+**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 8. Murid menilai mengapa peranan tertentu dianggap penting dalam sejarah Melaka. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menjelaskan kepentingan mencontohi nilai murni tokoh terbilang..
 
-**Pengukuhan & PBD (10 min):** Murid menyerahkan hasil 5.1.1 dan 5.1.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K5.1.5.
+**Pengukuhan dan PBD (10 min):** Murid menghasilkan rajah struktur dan dua ciri tokoh terbilang dengan sumber. Guru menyemak secara individu menggunakan kata tugas SP 5.1.1, 5.1.2 dan nilai K5.1.5, kemudian memberi intervensi kepada murid yang belum tepat.
 
-**Penutup (5 min):** Guru merumus isi penting Unit 8: Tokoh Terbilang Kesultanan Melayu Melaka. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini.
+**Penutup (5 min):** Guru merumus peristiwa, bukti dan pengajaran dalam Unit 8. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk.
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
 
-**Tahap bukti halaman:** UNIT_ISI_KANDUNGAN; rujukan halaman belum (penerbit/buku seperti disertakan).
+**Tahap sumber:** DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.; latihan buku teks sebenar belum disahkan
 
-**Sumber semakan:** https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/
+**Rujukan buku teks:** https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/ (ISBN 978-983-49-2472-0); halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
 
-**Nota:** RPH draf untuk semakan guru. Rujukan halaman buku atau aktiviti PBD adalah petunjuk sumber, **bukan** kelulusan visual penuh tugasan buku asal untuk setiap PdP.
+**Peringatan:** Semak kebolehlaksanaan aktiviti dengan situasi kelas, halaman buku teks sebenar, kalendar/cuti negeri, dan hasil cetakan Word/PDF sebelum kelulusan atau penerbitan.

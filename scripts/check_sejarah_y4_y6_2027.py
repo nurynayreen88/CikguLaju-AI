@@ -26,6 +26,11 @@ for y, (num_sk, num_sp) in EXPECTED.items():
     audit_path = ROOT/"audits/sejarah_y4_y6_sp_specific_11rph_20261106.json"
     audit = json.loads(audit_path.read_text())
     assert audit["count"] == 11
+    matrix = json.loads((ROOT/"curriculum/sejarah/sejarah_97_rph_aktiviti_sp_context_20261106.json").read_text())
+    assert matrix["total"] == 97 and len(matrix["records"]) == 97
+    all_matrix = {m["id"]:m for m in matrix["records"]}
+    assert len(all_matrix) == 97
+    assert len([m for m in matrix["records"] if m["year"] == y]) == (33 if y == 6 else 32)
     audited = {a["id"]:a for a in audit["rows"]}
     assert len(audited) == 11
     for i, x in enumerate(lesson, 1):
@@ -41,6 +46,21 @@ for y, (num_sk, num_sp) in EXPECTED.items():
         if previous_b: assert b0 > previous_b
         previous_a, previous_b = a1, b1
         r = x["rph"]
+        if x["id"] in all_matrix:
+            m = all_matrix[x["id"]]
+            context = r["context_specific_activity"]
+            assert m["year"] == y and m["number"] == i
+            assert all(context[k] == m[v] for k, v in (("stimulus","stimulus"),("task1","task1"),("task2","task2"),("pbd_evidence","pbd_evidence")))
+            assert r["status"] == "DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS"
+            assert context["exact_textbook_exercise_checked"] is False and context["teacher_approval"] is False
+            assert context["quality_state"].startswith("DRAF")
+            assert m["task1"] in r["aktiviti_1"]["activity"]
+            assert m["task2"] in r["aktiviti_2"]["activity"]
+            assert m["pbd_evidence"] in r["pengukuhan_pbd"]["activity"]
+            assert "Guru" in r["set_induksi"]["activity"] and "Murid" in r["set_induksi"]["activity"]
+            assert "Guru" in r["penutup"]["activity"] and "Murid" in r["penutup"]["activity"]
+            assert r["aktiviti_1"]["activity"] != r["aktiviti_2"]["activity"]
+            assert len(r["success_criteria"]) > 70
         if x["id"] in audited:
             ev = r["page_specific_evidence"]
             target = audited[x["id"]]
@@ -76,6 +96,8 @@ for y, (num_sk, num_sp) in EXPECTED.items():
         assert x["weeks"]["B"]["start"] == rpt[i-1]["Kumpulan B minggu mula"]
         path = ROOT/f"rph_standalone/sejarah/tahun_{y}/RPH_{x['id']}.md"
         assert path.is_file() and "Set Induksi" in path.read_text()
+    assert all((x["id"] in all_matrix) ^ (x["id"] in audited) for x in lesson)
+    assert len({(x["rph"].get("context_specific_activity") or {}).get("pbd_evidence") for x in lesson if x["id"] in all_matrix}) == (33 if y == 6 else 32)
     assert all(row["Unit Buku Teks"] == units[lesson[i]["rph"]["sk"]]["name"] for i, row in enumerate(rpt))
     assert (ROOT/f"rpt_2027/sejarah/RPT_SEJARAH_TAHUN_{y}_2027_A_B_DRAF.html").is_file()
     html = (ROOT/f"rpt_2027/sejarah/RPT_SEJARAH_TAHUN_{y}_2027_A_B_DRAF.html").read_text()
@@ -85,4 +107,5 @@ for y, (num_sk, num_sp) in EXPECTED.items():
 
     assert (ROOT/f"rph_standalone/sejarah/RPH_SEJARAH_TAHUN_{y}_2027_DRAF.html").is_file()
     print(f"Tahun {y}: {num_sk} SK / {num_sp} SP / 36 PdP / 36 RPH — LULUS semakan struktur")
+print("Semakan matriks 97/97 aktiviti spesifik termasuk variasi, 11 RPH asal, SP, dokumen sumber: LULUS struktur.")
 print("Nota: semakan struktur BUKAN pengesahan halaman buku teks, pedagogi individu, PDF Word atau Telegram.")

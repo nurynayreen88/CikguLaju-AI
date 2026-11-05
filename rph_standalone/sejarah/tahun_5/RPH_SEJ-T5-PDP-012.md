@@ -1,6 +1,6 @@
 # RPH SEJARAH TAHUN 5 — PdP 012
 
-**Status:** DRAF (halaman aktiviti buku teks / kelulusan guru belum disahkan)  
+**Status:** DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS; belum semakan akhir guru / buku teks  
 **Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu A:** 2027-03-28–2027-04-01 | **Minggu B:** 2027-03-29–2027-04-02  
 **Tema:** Perjuangan Kemerdekaan Negara | **Tajuk:** Unit 4: Kedaulatan Negara Dicabar — PdP 012 | **SK:** 7.1  
 **SP:** 7.1.3, K7.1.6 | **Jenis:** PdP Kandungan
@@ -8,24 +8,24 @@
 **Objektif:**
 - Murid dapat menyatakan faktor kedatangan kuasa asing ke negara kita.
 
-**Kriteria kejayaan:** Murid menyiapkan produk 7.1.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.
+**Kriteria kejayaan:** Murid dapat menghasilkan dua faktor kedatangan kuasa asing dengan bukti, dengan maklumat bersumber yang memenuhi SP 7.1.3.
 
-**Buku teks dan BBM:** Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 4: Kedaulatan Negara Dicabar, hlm. 44–57 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta campur tangan kuasa asing dan garis masa; kad sumber/lembaran bukti.
+**BBM:** Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 4: Kedaulatan Negara Dicabar, hlm. 44–57 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: gambar pelabuhan dan kad kepentingan ekonomi/strategik Tanah Melayu; kad tugasan dan lembaran rekod PBD.
 
-**Set Induksi (5 min):** Guru mempamerkan imej, peta atau petikan bertajuk “Kedaulatan Negara Dicabar” dan menyoal “Apakah yang dapat kita buktikan tentang Kedaulatan Negara Dicabar daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari.
+**Set Induksi (5 min):** Guru mempamerkan gambar pelabuhan dan kad kepentingan ekonomi/strategik Tanah Melayu. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 4: Kedaulatan Negara Dicabar.
 
-**Aktiviti 1 (20 min):** Guru menunjukkan cara mencari maklumat dalam Unit 4, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan faktor kedatangan kuasa asing ke negara kita”.
+**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan faktor kedatangan kuasa asing kepada ekonomi, politik atau lokasi. Guru menyemak jawapan awal berpandukan 7.1.3.
 
-**Aktiviti 2 (20 min):** Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menyatakan faktor kedatangan kuasa asing ke negara kita, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menerangkan kepentingan semangat patriotisme dalam mempertahankan kedaulatan negara; jawapan mesti disokong bahan.
+**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid membina peta sebab-akibat yang menghubungkan faktor dengan tindakan penjajahan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menerangkan kepentingan semangat patriotisme dalam mempertahankan kedaulatan negara..
 
-**Pengukuhan & PBD (10 min):** Murid menyerahkan hasil 7.1.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K7.1.6.
+**Pengukuhan dan PBD (10 min):** Murid menghasilkan dua faktor kedatangan kuasa asing dengan bukti. Guru menyemak secara individu menggunakan kata tugas SP 7.1.3 dan nilai K7.1.6, kemudian memberi intervensi kepada murid yang belum tepat.
 
-**Penutup (5 min):** Guru merumus isi penting Unit 4: Kedaulatan Negara Dicabar. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini.
+**Penutup (5 min):** Guru merumus peristiwa, bukti dan pengajaran dalam Unit 4. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk.
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
 
-**Tahap bukti halaman:** UNIT_ISI_KANDUNGAN; rujukan halaman belum (penerbit/buku seperti disertakan).
+**Tahap sumber:** DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.; latihan buku teks sebenar belum disahkan
 
-**Sumber semakan:** https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/
+**Rujukan buku teks:** https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/ (ISBN 978-983-49-2829-2); halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
 
-**Nota:** RPH draf untuk semakan guru. Rujukan halaman buku atau aktiviti PBD adalah petunjuk sumber, **bukan** kelulusan visual penuh tugasan buku asal untuk setiap PdP.
+**Peringatan:** Semak kebolehlaksanaan aktiviti dengan situasi kelas, halaman buku teks sebenar, kalendar/cuti negeri, dan hasil cetakan Word/PDF sebelum kelulusan atau penerbitan.

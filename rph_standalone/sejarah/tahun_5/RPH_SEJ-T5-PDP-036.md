@@ -1,6 +1,6 @@
 # RPH SEJARAH TAHUN 5 — PdP 036
 
-**Status:** DRAF (halaman aktiviti buku teks / kelulusan guru belum disahkan)  
+**Status:** DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS; belum semakan akhir guru / buku teks  
 **Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu A:** 2027-10-03–2027-10-07 | **Minggu B:** 2027-10-04–2027-10-08  
 **Tema:** Identiti Negara Kita | **Tajuk:** Unit 12: Bunga Raya Bunga Kebangsaan — PdP 036 | **SK:** 9.5  
 **SP:** 9.5.1, 9.5.2, K9.5.4 | **Jenis:** Kajian Kes
@@ -9,24 +9,24 @@
 - Membina satu soalan inkuiri berkenaan Bunga Kebangsaan.
 - Mengenal pasti sekurang-kurangnya dua bukti relevan dan menerangkan kesimpulan secara beralasan.
 
-**Kriteria kejayaan:** Murid membina persoalan kajian, menyatakan dua bukti relevan dan menjelaskan satu rumusan yang disokong bukti.
+**Kriteria kejayaan:** Murid dapat menghasilkan laporan kes dua sumber, sebab pemilihan dan satu pengajaran, dengan maklumat bersumber yang memenuhi SP 9.5.1, 9.5.2.
 
-**Buku teks dan BBM:** Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 12: Bunga Raya Bunga Kebangsaan, hlm. 162 hingga akhir unit (had belum disahkan) — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; imej bunga raya dan sejarah pemilihannya; kad sumber/lembaran bukti.
+**BBM:** Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 12: Bunga Raya Bunga Kebangsaan, hlm. 162 ke akhir unit (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: dua bahan sejarah pemilihan bunga raya dan imej rasmi lambang negara; kad tugasan dan lembaran rekod PBD.
 
-**Set Induksi (5 min):** Guru mempamerkan imej, peta atau petikan bertajuk “Bunga Raya Bunga Kebangsaan” dan menyoal “Apakah bukti yang menyokong persoalan kajian tentang Bunga Raya Bunga Kebangsaan?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari.
+**Set Induksi (5 min):** Guru mempamerkan dua bahan sejarah pemilihan bunga raya dan imej rasmi lambang negara. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 12: Bunga Raya Bunga Kebangsaan.
 
-**Aktiviti 1 (20 min):** Guru membantu murid membina soalan kajian “Bunga Raya Bunga Kebangsaan”, mencari dua sumber berbeza dan membezakan fakta dengan pendapat. Murid melengkapkan jadual soalan–sumber–bukti, tanpa menyalin bulat-bulat teks sumber.
+**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina soalan kajian mengapa bunga raya dipilih sebagai simbol negara. Guru menyemak jawapan awal berpandukan 9.5.1.
 
-**Aktiviti 2 (20 min):** Murid membandingkan dua sumber berkaitan Bunga Raya Bunga Kebangsaan, menyusun maklumat mengikut kronologi atau kategori, lalu merumus satu dapatan dan batas bukti. Guru membimbing murid menghubungkan iktibar dengan nilai sivik secara beralasan.
+**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 12. Murid membandingkan sumber dan membentang kaitan warna serta lima kelopak dengan jati diri. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan bunga raya sebagai bunga kebangsaan..
 
-**Pengukuhan & PBD (10 min):** Pembentangan kajian ringkas: satu persoalan, dua bukti, satu rumusan. Guru menilai kesahan fakta, kesesuaian bukti, tafsiran dan komunikasi murid; beri maklum balas individu.
+**Pengukuhan dan PBD (10 min):** Murid menghasilkan laporan kes dua sumber, sebab pemilihan dan satu pengajaran. Guru menyemak secara individu menggunakan kata tugas SP 9.5.1, 9.5.2 dan nilai K9.5.4, kemudian memberi intervensi kepada murid yang belum tepat.
 
-**Penutup (5 min):** Guru merumus isi penting Unit 12: Bunga Raya Bunga Kebangsaan. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini.
+**Penutup (5 min):** Guru merumus peristiwa, bukti dan pengajaran dalam Unit 12. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk.
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
 
-**Tahap bukti halaman:** UNIT_ISI_KANDUNGAN; rujukan halaman belum (penerbit/buku seperti disertakan).
+**Tahap sumber:** DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.; latihan buku teks sebenar belum disahkan
 
-**Sumber semakan:** https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/
+**Rujukan buku teks:** https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/ (ISBN 978-983-49-2829-2); halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
 
-**Nota:** RPH draf untuk semakan guru. Rujukan halaman buku atau aktiviti PBD adalah petunjuk sumber, **bukan** kelulusan visual penuh tugasan buku asal untuk setiap PdP.
+**Peringatan:** Semak kebolehlaksanaan aktiviti dengan situasi kelas, halaman buku teks sebenar, kalendar/cuti negeri, dan hasil cetakan Word/PDF sebelum kelulusan atau penerbitan.

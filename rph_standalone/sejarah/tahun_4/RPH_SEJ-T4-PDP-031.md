@@ -1,6 +1,6 @@
 # RPH SEJARAH TAHUN 4 — PdP 031
 
-**Status:** DRAF (halaman aktiviti buku teks / kelulusan guru belum disahkan)  
+**Status:** DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS; belum semakan akhir guru / buku teks  
 **Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu A:** 2027-08-22–2027-08-26 | **Minggu B:** 2027-08-23–2027-08-27  
 **Tema:** Tokoh Terbilang Kesultanan Melayu Melaka | **Tajuk:** Unit 9: Pengasas Kesultanan Melayu Melaka — PdP 031 | **SK:** 5.2  
 **SP:** 5.2.1, 5.2.2, K5.2.5 | **Jenis:** Kajian Kes
@@ -9,24 +9,24 @@
 - Membina satu soalan inkuiri berkenaan Pengasas Kesultanan Melayu Melaka.
 - Mengenal pasti sekurang-kurangnya dua bukti relevan dan menerangkan kesimpulan secara beralasan.
 
-**Kriteria kejayaan:** Murid membina persoalan kajian, menyatakan dua bukti relevan dan menjelaskan satu rumusan yang disokong bukti.
+**Kriteria kejayaan:** Murid dapat menghasilkan laporan kes dengan persoalan, dua sumber dan kesimpulan berasas, dengan maklumat bersumber yang memenuhi SP 5.2.1, 5.2.2.
 
-**Buku teks dan BBM:** Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 9: Pengasas Kesultanan Melayu Melaka, hlm. 120–137 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; peta perjalanan dan kronologi pengasasan Melaka; kad sumber/lembaran bukti.
+**BBM:** Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 9: Pengasas Kesultanan Melayu Melaka, hlm. 120–137 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: peta perjalanan pengasas dan dua petikan sejarah Melaka; kad tugasan dan lembaran rekod PBD.
 
-**Set Induksi (5 min):** Guru mempamerkan imej, peta atau petikan bertajuk “Pengasas Kesultanan Melayu Melaka” dan menyoal “Apakah bukti yang menyokong persoalan kajian tentang Pengasas Kesultanan Melayu Melaka?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari.
+**Set Induksi (5 min):** Guru mempamerkan peta perjalanan pengasas dan dua petikan sejarah Melaka. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 9: Pengasas Kesultanan Melayu Melaka.
 
-**Aktiviti 1 (20 min):** Guru membantu murid membina soalan kajian “Pengasas Kesultanan Melayu Melaka”, mencari dua sumber berbeza dan membezakan fakta dengan pendapat. Murid melengkapkan jadual soalan–sumber–bukti, tanpa menyalin bulat-bulat teks sumber.
+**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menggubal soalan kajian tentang mengapa lokasi Melaka dipilih. Guru menyemak jawapan awal berpandukan 5.2.1.
 
-**Aktiviti 2 (20 min):** Murid membandingkan dua sumber berkaitan Pengasas Kesultanan Melayu Melaka, menyusun maklumat mengikut kronologi atau kategori, lalu merumus satu dapatan dan batas bukti. Guru membimbing murid menghubungkan iktibar dengan nilai sivik secara beralasan.
+**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid membandingkan keterangan sumber lalu membina kronologi dan simpulan yang menandakan unsur legenda. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menerangkan kepentingan sifat-sifat kepimpinan tokoh yang boleh dicontohi..
 
-**Pengukuhan & PBD (10 min):** Pembentangan kajian ringkas: satu persoalan, dua bukti, satu rumusan. Guru menilai kesahan fakta, kesesuaian bukti, tafsiran dan komunikasi murid; beri maklum balas individu.
+**Pengukuhan dan PBD (10 min):** Murid menghasilkan laporan kes dengan persoalan, dua sumber dan kesimpulan berasas. Guru menyemak secara individu menggunakan kata tugas SP 5.2.1, 5.2.2 dan nilai K5.2.5, kemudian memberi intervensi kepada murid yang belum tepat.
 
-**Penutup (5 min):** Guru merumus isi penting Unit 9: Pengasas Kesultanan Melayu Melaka. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini.
+**Penutup (5 min):** Guru merumus peristiwa, bukti dan pengajaran dalam Unit 9. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk.
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
 
-**Tahap bukti halaman:** UNIT_ISI_KANDUNGAN; rujukan halaman belum (penerbit/buku seperti disertakan).
+**Tahap sumber:** DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.; latihan buku teks sebenar belum disahkan
 
-**Sumber semakan:** https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/
+**Rujukan buku teks:** https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/ (ISBN 978-983-49-2472-0); halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
 
-**Nota:** RPH draf untuk semakan guru. Rujukan halaman buku atau aktiviti PBD adalah petunjuk sumber, **bukan** kelulusan visual penuh tugasan buku asal untuk setiap PdP.
+**Peringatan:** Semak kebolehlaksanaan aktiviti dengan situasi kelas, halaman buku teks sebenar, kalendar/cuti negeri, dan hasil cetakan Word/PDF sebelum kelulusan atau penerbitan.

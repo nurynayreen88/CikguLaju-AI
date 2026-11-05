@@ -1,6 +1,6 @@
 # RPH SEJARAH TAHUN 4 — PdP 007
 
-**Status:** DRAF (halaman aktiviti buku teks / kelulusan guru belum disahkan)  
+**Status:** DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS; belum semakan akhir guru / buku teks  
 **Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu A:** 2027-02-14–2027-02-18 | **Minggu B:** 2027-02-15–2027-02-19  
 **Tema:** Mari Belajar Sejarah | **Tajuk:** Unit 2: Saya dan Keluarga — PdP 007 | **SK:** 1.2  
 **SP:** 1.2.4, K1.2.7 | **Jenis:** PdP Kandungan
@@ -8,24 +8,24 @@
 **Objektif:**
 - Murid dapat menghuraikan perkembangan diri mengikut garis masa.
 
-**Kriteria kejayaan:** Murid menyiapkan produk 1.2.4 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.
+**Kriteria kejayaan:** Murid dapat menghasilkan garis masa empat peristiwa serta satu pengajaran tentang hubungan keluarga, dengan maklumat bersumber yang memenuhi SP 1.2.4.
 
-**Buku teks dan BBM:** Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 2: Saya dan Keluarga, hlm. 16–29 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; contoh salasilah dan garis masa keluarga tanpa mendedahkan data peribadi; kad sumber/lembaran bukti.
+**BBM:** Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 2: Saya dan Keluarga, hlm. 16–29 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: contoh garis masa perkembangan kanak-kanak yang direka; kad tugasan dan lembaran rekod PBD.
 
-**Set Induksi (5 min):** Guru mempamerkan imej, peta atau petikan bertajuk “Saya dan Keluarga” dan menyoal “Apakah yang dapat kita buktikan tentang Saya dan Keluarga daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari. Gunakan contoh rekaan, bukan dokumen identiti murid.
+**Set Induksi (5 min):** Guru mempamerkan contoh garis masa perkembangan kanak-kanak yang direka. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 2: Saya dan Keluarga.
 
-**Aktiviti 1 (20 min):** Guru menunjukkan cara mencari maklumat dalam Unit 2, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menghuraikan perkembangan diri mengikut garis masa” dengan contoh daripada sumber.
+**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun peristiwa perkembangan mengikut urutan usia dan menanda selang masa. Guru menyemak jawapan awal berpandukan 1.2.4.
 
-**Aktiviti 2 (20 min):** Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menghuraikan perkembangan diri mengikut garis masa, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menghuraikan kepentingan akhlak yang mulia untuk mewujudkan hubungan kekeluargaan yang harmoni; jawapan mesti disokong bahan.
+**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 2. Murid menghasilkan garis masa diri dengan pilihan butiran tidak sensitif atau watak rekaan dan menerangkan perubahannya. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menghuraikan kepentingan akhlak yang mulia untuk mewujudkan hubungan kekeluargaan yang harmoni..
 
-**Pengukuhan & PBD (10 min):** Murid menyerahkan hasil 1.2.4 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K1.2.7.
+**Pengukuhan dan PBD (10 min):** Murid menghasilkan garis masa empat peristiwa serta satu pengajaran tentang hubungan keluarga. Guru menyemak secara individu menggunakan kata tugas SP 1.2.4 dan nilai K1.2.7, kemudian memberi intervensi kepada murid yang belum tepat.
 
-**Penutup (5 min):** Guru merumus isi penting Unit 2: Saya dan Keluarga. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini.
+**Penutup (5 min):** Guru merumus peristiwa, bukti dan pengajaran dalam Unit 2. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk.
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
 
-**Tahap bukti halaman:** UNIT_ISI_KANDUNGAN; rujukan halaman belum (penerbit/buku seperti disertakan).
+**Tahap sumber:** DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.; latihan buku teks sebenar belum disahkan
 
-**Sumber semakan:** https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/
+**Rujukan buku teks:** https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/ (ISBN 978-983-49-2472-0); halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
 
-**Nota:** RPH draf untuk semakan guru. Rujukan halaman buku atau aktiviti PBD adalah petunjuk sumber, **bukan** kelulusan visual penuh tugasan buku asal untuk setiap PdP.
+**Peringatan:** Semak kebolehlaksanaan aktiviti dengan situasi kelas, halaman buku teks sebenar, kalendar/cuti negeri, dan hasil cetakan Word/PDF sebelum kelulusan atau penerbitan.

@@ -1,6 +1,6 @@
 # RPH SEJARAH TAHUN 6 — PdP 007
 
-**Status:** DRAF (halaman aktiviti buku teks / kelulusan guru belum disahkan)  
+**Status:** DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS; belum semakan akhir guru / buku teks  
 **Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu A:** 2027-02-14–2027-02-18 | **Minggu B:** 2027-02-15–2027-02-19  
 **Tema:** Negara Malaysia | **Tajuk:** Unit 3: Rukun Negara — PdP 007 | **SK:** 10.3  
 **SP:** 10.3.1, K10.3.4 | **Jenis:** PdP Kandungan
@@ -8,24 +8,24 @@
 **Objektif:**
 - Murid dapat menyatakan sebab-sebab pengenalan Rukun Negara.
 
-**Kriteria kejayaan:** Murid menyiapkan produk 10.3.1 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.
+**Kriteria kejayaan:** Murid dapat menghasilkan dua sebab pengenalan Rukun Negara dengan bukti, dengan maklumat bersumber yang memenuhi SP 10.3.1.
 
-**Buku teks dan BBM:** Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 3: Rukun Negara, hlm. 34–49 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; teks prinsip Rukun Negara; kad sumber/lembaran bukti.
+**BBM:** Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 3: Rukun Negara, hlm. 34–49 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: garis masa peristiwa perpaduan menjelang pengisytiharan Rukun Negara; kad tugasan dan lembaran rekod PBD.
 
-**Set Induksi (5 min):** Guru mempamerkan imej, peta atau petikan bertajuk “Rukun Negara” dan menyoal “Apakah yang dapat kita buktikan tentang Rukun Negara daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari.
+**Set Induksi (5 min):** Guru mempamerkan garis masa peristiwa perpaduan menjelang pengisytiharan Rukun Negara. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 3: Rukun Negara.
 
-**Aktiviti 1 (20 min):** Guru menunjukkan cara mencari maklumat dalam Unit 3, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan sebab-sebab pengenalan Rukun Negara”.
+**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyatakan sebab Rukun Negara diperkenalkan selepas peristiwa sejarah relevan. Guru menyemak jawapan awal berpandukan 10.3.1.
 
-**Aktiviti 2 (20 min):** Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menyatakan sebab-sebab pengenalan Rukun Negara, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menyatakan kepentingan menghayati matlamat dan prinsip Rukun Negara; jawapan mesti disokong bahan.
+**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid membina rantaian sebab–matlamat–harapan masyarakat berasaskan sumber. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menyatakan kepentingan menghayati matlamat dan prinsip Rukun Negara..
 
-**Pengukuhan & PBD (10 min):** Murid menyerahkan hasil 10.3.1 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K10.3.4.
+**Pengukuhan dan PBD (10 min):** Murid menghasilkan dua sebab pengenalan Rukun Negara dengan bukti. Guru menyemak secara individu menggunakan kata tugas SP 10.3.1 dan nilai K10.3.4, kemudian memberi intervensi kepada murid yang belum tepat.
 
-**Penutup (5 min):** Guru merumus isi penting Unit 3: Rukun Negara. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini.
+**Penutup (5 min):** Guru merumus peristiwa, bukti dan pengajaran dalam Unit 3. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk.
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
 
-**Tahap bukti halaman:** UNIT_ISI_KANDUNGAN; rujukan halaman belum (penerbit/buku seperti disertakan).
+**Tahap sumber:** DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.; latihan buku teks sebenar belum disahkan
 
-**Sumber semakan:** https://fliphtml5.com/itcew/pnmn
+**Rujukan buku teks:** https://fliphtml5.com/itcew/pnmn (ISBN 978-983-49-3279-4); halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
 
-**Nota:** RPH draf untuk semakan guru. Rujukan halaman buku atau aktiviti PBD adalah petunjuk sumber, **bukan** kelulusan visual penuh tugasan buku asal untuk setiap PdP.
+**Peringatan:** Semak kebolehlaksanaan aktiviti dengan situasi kelas, halaman buku teks sebenar, kalendar/cuti negeri, dan hasil cetakan Word/PDF sebelum kelulusan atau penerbitan.

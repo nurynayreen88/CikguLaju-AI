@@ -1,6 +1,6 @@
 # RPH SEJARAH TAHUN 5 — PdP 025
 
-**Status:** DRAF (halaman aktiviti buku teks / kelulusan guru belum disahkan)  
+**Status:** DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS; belum semakan akhir guru / buku teks  
 **Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu A:** 2027-07-11–2027-07-15 | **Minggu B:** 2027-07-12–2027-07-16  
 **Tema:** Identiti Negara Kita | **Tajuk:** Unit 9: Bendera Kebangsaan Malaysia — PdP 025 | **SK:** 9.2  
 **SP:** 9.2.3, K9.2.6 | **Jenis:** PdP Kandungan
@@ -8,24 +8,24 @@
 **Objektif:**
 - Murid dapat menerangkan makna warna dan lambang pada bendera kebangsaan.
 
-**Kriteria kejayaan:** Murid menyiapkan produk 9.2.3 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.
+**Kriteria kejayaan:** Murid dapat menghasilkan empat padanan warna/lambang dengan makna tepat, dengan maklumat bersumber yang memenuhi SP 9.2.3.
 
-**Buku teks dan BBM:** Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 9: Bendera Kebangsaan Malaysia, hlm. 120–133 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; imej Jalur Gemilang daripada sumber rasmi; kad sumber/lembaran bukti.
+**BBM:** Buku Teks Sejarah Tahun 5 (DBP 2020, KSSR Semakan 2017), Unit 9: Bendera Kebangsaan Malaysia, hlm. 120–133 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: imej Jalur Gemilang warna sebenar dan panduan lambang rasmi; kad tugasan dan lembaran rekod PBD.
 
-**Set Induksi (5 min):** Guru mempamerkan imej, peta atau petikan bertajuk “Bendera Kebangsaan Malaysia” dan menyoal “Apakah yang dapat kita buktikan tentang Bendera Kebangsaan Malaysia daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari.
+**Set Induksi (5 min):** Guru mempamerkan imej Jalur Gemilang warna sebenar dan panduan lambang rasmi. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 9: Bendera Kebangsaan Malaysia.
 
-**Aktiviti 1 (20 min):** Guru menunjukkan cara mencari maklumat dalam Unit 9, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menerangkan makna warna dan lambang pada bendera kebangsaan” dengan contoh daripada sumber.
+**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid melabel warna, jalur, bulan dan bintang pada imej bendera. Guru menyemak jawapan awal berpandukan 9.2.3.
 
-**Aktiviti 2 (20 min):** Murid menghasilkan satu jawapan beralasan dengan bukti daripada unit bagi Menerangkan makna warna dan lambang pada bendera kebangsaan, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Menjelaskan kepentingan menghormati bendera kebangsaan; jawapan mesti disokong bahan.
+**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid membina jadual makna simbol dan membetulkan contoh tafsiran yang salah. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Menjelaskan kepentingan menghormati bendera kebangsaan..
 
-**Pengukuhan & PBD (10 min):** Murid menyerahkan hasil 9.2.3 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K9.2.6.
+**Pengukuhan dan PBD (10 min):** Murid menghasilkan empat padanan warna/lambang dengan makna tepat. Guru menyemak secara individu menggunakan kata tugas SP 9.2.3 dan nilai K9.2.6, kemudian memberi intervensi kepada murid yang belum tepat.
 
-**Penutup (5 min):** Guru merumus isi penting Unit 9: Bendera Kebangsaan Malaysia. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini.
+**Penutup (5 min):** Guru merumus peristiwa, bukti dan pengajaran dalam Unit 9. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk.
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
 
-**Tahap bukti halaman:** UNIT_ISI_KANDUNGAN; rujukan halaman belum (penerbit/buku seperti disertakan).
+**Tahap sumber:** DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.; latihan buku teks sebenar belum disahkan
 
-**Sumber semakan:** https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/
+**Rujukan buku teks:** https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/ (ISBN 978-983-49-2829-2); halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
 
-**Nota:** RPH draf untuk semakan guru. Rujukan halaman buku atau aktiviti PBD adalah petunjuk sumber, **bukan** kelulusan visual penuh tugasan buku asal untuk setiap PdP.
+**Peringatan:** Semak kebolehlaksanaan aktiviti dengan situasi kelas, halaman buku teks sebenar, kalendar/cuti negeri, dan hasil cetakan Word/PDF sebelum kelulusan atau penerbitan.

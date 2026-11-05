@@ -1,6 +1,6 @@
 # RPH SEJARAH TAHUN 4 — PdP 034
 
-**Status:** DRAF (halaman aktiviti buku teks / kelulusan guru belum disahkan)  
+**Status:** DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS; belum semakan akhir guru / buku teks  
 **Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu A:** 2027-09-19–2027-09-23 | **Minggu B:** 2027-09-20–2027-09-24  
 **Tema:** Tokoh Terbilang Kesultanan Melayu Melaka | **Tajuk:** Unit 11: Hang Tuah Laksamana Terbilang — PdP 034 | **SK:** 5.4  
 **SP:** 5.4.1, 5.4.2, K5.4.4, K5.4.6 | **Jenis:** PdP Kandungan
@@ -9,24 +9,24 @@
 - Murid dapat menyatakan riwayat hidup Hang Tuah.
 - Murid dapat menjelaskan kualiti diri Hang Tuah sebagai Laksamana Melaka.
 
-**Kriteria kejayaan:** Murid menyiapkan produk 5.4.1–5.4.2 mengikut kata tugas, menggunakan sekurang-kurangnya satu bukti daripada sumber dan memberi respons individu semasa PBD.
+**Kriteria kejayaan:** Murid dapat menghasilkan garis masa Hang Tuah dan dua kualiti diri dengan contoh, dengan maklumat bersumber yang memenuhi SP 5.4.1, 5.4.2.
 
-**Buku teks dan BBM:** Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 11: Hang Tuah Laksamana Terbilang, hlm. 154–168 — julat unit berdasarkan isi kandungan, bukan halaman aktiviti; petikan sumber berkaitan Hang Tuah; kad sumber/lembaran bukti.
+**BBM:** Buku Teks Sejarah Tahun 4 (DBP 2019, KSSR Semakan 2017), Unit 11: Hang Tuah Laksamana Terbilang, hlm. 154–168 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: kad riwayat Hang Tuah dan gambaran peranan Laksamana Melaka; kad tugasan dan lembaran rekod PBD.
 
-**Set Induksi (5 min):** Guru mempamerkan imej, peta atau petikan bertajuk “Hang Tuah Laksamana Terbilang” dan menyoal “Apakah yang dapat kita buktikan tentang Hang Tuah Laksamana Terbilang daripada bahan sejarah ini?”. Murid meneka maklumat awal, kemudian menyatakan bukti yang perlu dicari.
+**Set Induksi (5 min):** Guru mempamerkan kad riwayat Hang Tuah dan gambaran peranan Laksamana Melaka. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 11: Hang Tuah Laksamana Terbilang.
 
-**Aktiviti 1 (20 min):** Guru menunjukkan cara mencari maklumat dalam Unit 11, membanding sumber dengan soalan panduan dan menandakan satu bukti. Murid berpasangan menghasilkan catatan ringkas 2–3 fakta bersumber bagi fokus “Menyatakan riwayat hidup Hang Tuah”.
+**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun peristiwa utama riwayat Hang Tuah menurut sumber. Guru menyemak jawapan awal berpandukan 5.4.1.
 
-**Aktiviti 2 (20 min):** Murid menghasilkan peta sebab-akibat, kronologi atau peta konsep yang menerangkan fokus “Menjelaskan kualiti diri Hang Tuah sebagai Laksamana Melaka” dengan contoh daripada sumber, kemudian membentangkan dapatan. Guru memandu semakan kronologi, konteks, ketepatan fakta; murid mengaitkan satu pengajaran dengan Mencontohi kesetiaan Hang Tuah sebagai Laksamana Melaka; jawapan mesti disokong bahan.
+**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 11. Murid mengenal pasti kualiti diri yang digambarkan dalam naratif dan membezakan teladan dengan kepastian sejarah. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengaitkan dapatan dengan nilai sivik: Mencontohi kesetiaan Hang Tuah sebagai Laksamana Melaka..
 
-**Pengukuhan & PBD (10 min):** Murid menyerahkan hasil 5.4.1 dan 5.4.2 beserta satu fakta tepat dan sumber yang dirujuk. Guru menilai hasil mengikut kata tugas SP, membetulkan kesilapan fakta dan merekod penguasaan individu serta nilai K5.4.4, K5.4.6.
+**Pengukuhan dan PBD (10 min):** Murid menghasilkan garis masa Hang Tuah dan dua kualiti diri dengan contoh. Guru menyemak secara individu menggunakan kata tugas SP 5.4.1, 5.4.2 dan nilai K5.4.4, K5.4.6, kemudian memberi intervensi kepada murid yang belum tepat.
 
-**Penutup (5 min):** Guru merumus isi penting Unit 11: Hang Tuah Laksamana Terbilang. Murid menyatakan satu dapatan sejarah, satu bukti yang menyokongnya dan satu iktibar untuk kehidupan kini.
+**Penutup (5 min):** Guru merumus peristiwa, bukti dan pengajaran dalam Unit 11. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk.
 
 **Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
 
-**Tahap bukti halaman:** UNIT_ISI_KANDUNGAN; rujukan halaman belum (penerbit/buku seperti disertakan).
+**Tahap sumber:** DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.; latihan buku teks sebenar belum disahkan
 
-**Sumber semakan:** https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/
+**Rujukan buku teks:** https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/ (ISBN 978-983-49-2472-0); halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
 
-**Nota:** RPH draf untuk semakan guru. Rujukan halaman buku atau aktiviti PBD adalah petunjuk sumber, **bukan** kelulusan visual penuh tugasan buku asal untuk setiap PdP.
+**Peringatan:** Semak kebolehlaksanaan aktiviti dengan situasi kelas, halaman buku teks sebenar, kalendar/cuti negeri, dan hasil cetakan Word/PDF sebelum kelulusan atau penerbitan.
