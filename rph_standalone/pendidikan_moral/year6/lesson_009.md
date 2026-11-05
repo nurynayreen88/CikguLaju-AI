@@ -12,16 +12,16 @@
 **BBM:** Buku Teks Pendidikan Moral Tahun 6 KSSR Semakan 2017 (DBP 2021), Unit 3: Tanggungjawab sebagai Warganegara, m/s 28–30 (flipbook halaman 38–40); kad situasi, lembaran jawapan dan senarai semak; fail `materials/pendidikan_moral/year6/unit_03_kad_aktiviti.md`.
 
 ## Objektif dan kriteria kejayaan
-Murid menunjukkan dua tindakan bertanggungjawab dalam simulasi kempen kemanusiaan dan membuat refleksi. Kriteria kejayaan: Rekod dua tindakan kumpulan, satu produk kempen dan refleksi kendiri; tindakan sebenar di luar kelas memerlukan bukti lanjut.
+Murid memperagakan dua tindakan bertanggungjawab sebagai warganegara melalui simulasi menjaga keselamatan dan kelestarian serta membuat refleksi. Kriteria kejayaan: dua tindakan yang dapat diperhatikan dan satu refleksi; amalan sebenar di luar kelas hanya disahkan dengan bukti berasingan.
 
 ## Langkah PdP
-**Set induksi (5 minit):** Guru memperlihatkan tajuk **Tanggungjawab sebagai Warganegara** dalam buku teks KSSR Semakan 2017, m/s 28, dan mengemukakan situasi berkaitan nilai unit. Murid mengenal pasti watak, tindakan serta satu keputusan yang munasabah mengikut SP PdP.
+**Set induksi (5 minit):** Guru memaparkan situasi **Jaga Diri Lindungi Negara** (m/s 28) dan poster Kempen E-waste dalam **Mari Uji Diri** (m/s 30). Murid memilih satu tindakan warga negara yang selamat serta menerangkan sebabnya.
 
-**Aktiviti 1 (20 minit) — Jaga Diri Lindungi Negara:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 3, m/s 28–30, bahagian **Jaga Diri Lindungi Negara** sebagai rangsangan. Murid merancang situasi memeriksa kesahihan berita dan menjaga kemudahan awam sebagai tanggungjawab warga tanpa berkongsi data peribadi (SP 3.5). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
+**Aktiviti 1 (20 minit) — Jaga Diri Lindungi Negara:** Guru menggunakan buku teks Tahun 6 KSSR Semakan 2017 Unit 3, m/s 28–30, bahagian **Jaga Diri Lindungi Negara** sebagai rangsangan. Murid memperagakan dua tindakan daripada konteks m/s 28–29, contohnya menjaga keselamatan diri dan membuat pilihan bertanggungjawab terhadap alam sekitar; aktiviti dilaksanakan melalui kad situasi tanpa mendedahkan data peribadi (SP 3.5). Guru menyemak ketepatan evidens individu berdasarkan kata tugas SP dan membimbing murid yang memerlukan sokongan.
 
-**Aktiviti 2 (20 minit) — Mari Uji Diri:** Guru merujuk bahagian **Mari Uji Diri** dalam unit yang sama dan menyediakan kad aktiviti berkaitan. Murid melaksanakan simulasi dua tindakan bertanggungjawab, menerima penilaian rakan dan membaiki satu keputusan berasaskan keselamatan (SP 3.5). Guru memberikan maklum balas terhadap sebab, tindakan atau refleksi, kemudian meminta pembetulan yang boleh diperhatikan.
+**Aktiviti 2 (20 minit) — Mari Uji Diri:** Guru merujuk bahagian **Mari Uji Diri** dalam unit yang sama dan menyediakan kad aktiviti berkaitan. Murid meneliti poster **Kempen E-waste** m/s 30 dan memainkan peranan menerangkan cara menyokong pelupusan e-waste melalui saluran yang sesuai; tidak mengendalikan bateri atau peralatan elektronik rosak. Rakan menilai tindakan dan murid membaiki satu keputusan (SP 3.5). Guru memberikan maklum balas terhadap sebab, tindakan atau refleksi, kemudian meminta pembetulan yang boleh diperhatikan.
 
-**Pengukuhan/Pentaksiran PBD (10 minit):** Rekod dua tindakan kumpulan, satu produk kempen dan refleksi kendiri; tindakan sebenar di luar kelas memerlukan bukti lanjut. Guru merekod pencapaian berdasarkan respons individu dan memberi maklum balas terhadap penjelasan atau tingkah laku yang dapat diperhatikan.
+**Pengukuhan/Pentaksiran PBD (10 minit):** Guru menggunakan senarai semak dua tindakan simulasi bertanggungjawab dan satu refleksi individu berkaitan soalan Kempen E-waste m/s 30; tiada amalan di luar kelas dianggap terbukti tanpa evidens. Guru merekod pencapaian berdasarkan respons individu dan memberi maklum balas terhadap penjelasan atau tingkah laku yang dapat diperhatikan.
 
 **Penutup (5 minit):** Murid menyatakan satu tindakan yang boleh diamalkan secara selamat berdasarkan nilai unit. Guru merumuskan pembelajaran dan mengingatkan murid agar menghormati keadaan keluarga, sekolah dan komuniti yang berbeza.
 
