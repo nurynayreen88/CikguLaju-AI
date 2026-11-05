@@ -1,0 +1,9 @@
+# Web V1 isolated Render dependency set
+# Install on the Web staging service only:
+# pip install -r requirements-web-v1.txt
+# Do not use the production bot's heavyweight requirements.txt.
+Flask==3.1.0
+gunicorn==23.0.0
+requests==2.32.3
+python-docx==1.1.2
+reportlab==4.2.5
