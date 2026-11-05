@@ -30,12 +30,15 @@ class SharedCatalogHttpTests(unittest.TestCase):
             path = Path(folder) / "catalog.sqlite"
             path.write_bytes(b"fixture")
             with patch.dict(os.environ, {
+                "CIKGULAJU_WEB_CATALOG_MODE": "telegram-api",
+                "CIKGULAJU_AUTHORITATIVE_API_URL": "",
+                "CIKGULAJU_AUTHORITATIVE_API_TOKEN": "",
                 "CIKGULAJU_WEB_PREVIEW_DB": str(path),
                 "CIKGULAJU_SHARED_CATALOG_DB": str(path)}):
                 response = self.client.get("/api/source/status")
-            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.status_code, 503)
             self.assertFalse(response.get_json()["shared_source_verified"])
-            self.assertTrue(response.get_json()["same_local_file"])
+            self.assertFalse(response.get_json()["telegram_parity_verified"])
             self.assertNotIn(str(path), response.get_data(as_text=True))
 
 
