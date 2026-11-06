@@ -79,5 +79,25 @@
   "rpt_final_ready": false,
   "teacher_approved": false,
   "release_authorized": false,
-  "date_rule": "All PdP dates intentionally blank pending calendar KPM appendix, state public holidays and substitutions, school holidays, teacher timetable and approved annual subject period quota."
+  "date_rule": "All PdP dates intentionally blank pending calendar KPM appendix, state public holidays and substitutions, school holidays, teacher timetable and approved annual subject period quota.",
+  "kpm_school_calendar_check_20261106": {
+    "status": "SCHOOL_YEAR_OPEN_AND_CLOSE_DATES_VERIFIED_ONLY",
+    "verified_on": "2026-11-06",
+    "evidence": [
+      "https://www.moe.gov.my/index.php/kalendar-akademik-semasa",
+      "https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/kpm-umum-sesi-persekolahan-2027-bermula-4-januari/",
+      "https://web26.bernama.com/radio/news.php?id=2614792"
+    ],
+    "school_year_start": "2027-01-04",
+    "group_A_end": "2027-12-02",
+    "group_B_end": "2027-12-03",
+    "term_holidays_source_status": "CALENDAR_REFERENCE_PRESENT; HOLIDAY_APPENDIX_NOT_INDEPENDENTLY_SIGNED_OFF",
+    "state_public_holidays_verified": false,
+    "replacement_holidays_verified": false,
+    "national_festive_extra_days_verified": false,
+    "period_quota_verified": false,
+    "teacher_timetable_verified": false,
+    "rpt_per_pdp_final_dates_verified": false,
+    "note": "Permulaan dan penamat tahun persekolahan disahkan daripada pengumuman KPM yang dilaporkan oleh RTM/Bernama. Jangan tafsir ini sebagai pengesahan semua cuti, pemetaan waktu atau tarikh RPT individu."
+  }
 }
