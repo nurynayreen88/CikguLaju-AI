@@ -1,0 +1,38 @@
+name: RPH activity heading typography QA
+
+on:
+  pull_request:
+    paths:
+      - 'web/rph_activity_headings_typography.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - 'tests/test_rph_activity_headings_typography_20261106.py'
+      - '.github/workflows/rph-activity-headings-typography-qa.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'web/rph_activity_headings_typography.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - 'tests/test_rph_activity_headings_typography_20261106.py'
+      - '.github/workflows/rph-activity-headings-typography-qa.yml'
+permissions:
+  contents: read
+jobs:
+  rph-headings:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install python-docx==1.2.0
+      - run: python -m py_compile web/rph_activity_headings_typography.py tests/test_rph_activity_headings_typography_20261106.py
+      - run: python -m unittest tests.test_rph_activity_headings_typography_20261106 -v
+      - name: Ensure renderer patch is registered after other Telegram adapters
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          launcher=Path('tools/run_telegram_with_curriculum_api.py').read_text('utf-8')
+          assert launcher.index('from web.rph_activity_headings_typography import install') > launcher.index('TELEGRAM_WEB_LINK_MENU_ACTIVE')
+          assert 'RPH_ACTIVITY_HEADING_BOLD_INSTALLED' in launcher
+          PY
