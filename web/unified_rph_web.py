@@ -134,12 +134,68 @@ def _moral_records(year):
                         "path": path, "status": "PRATONTON BELUM MUKTAMAD"})
     return entries
 
+# PJ only: the existing 2027 339-PdP source stores one *lesson title* per
+# manifest row, NOT a canonical unit title. Group the unchanged PdP sequence
+# against the printed PJ textbook unit contents (Years 2–6). Each tuple is
+# (last inclusive PdP, printed unit number, printed unit title). Some units
+# have no drafted PdP and must not be invented in the menu.
+# The original RPH, SK/SP, page reference, and PdP token remain untouched.
+PJ_TEXTBOOK_UNIT_SEGMENTS = {
+    2: ((2, 1, "Cabaran Ruang"), (17, 2, "Mari Bersenam"),
+        (19, 3, "Senamrobik"), (27, 4, "Sarkas"),
+        (29, 6, "Santai Ria"), (30, 7, "Semangat Membara"),
+        (37, 8, "Larian Cergas")),
+    3: ((4, 1, "Gimnas Gemilang"), (6, 2, "Langkah Berirama"),
+        (9, 3, "Serang Sampai Menang"), (13, 4, "Semangat Berjuang"),
+        (16, 5, "Hebat Balingan, Hebat Pukulan"),
+        (21, 6, "Olahragawan Harapan"), (23, 7, "Keyakinan di Air"),
+        (28, 8, "Ceria dan Sihat"), (30, 9, "Cergas Teratur"),
+        (38, 10, "Jom Senam untuk Sihat")),
+    4: ((7, 1, "Gerak Gimnas"), (8, 2, "Gerak Kreatif Bertema"),
+        (12, 3, "Johan Kategori Serangan"), (16, 4, "Sedia Bertarung"),
+        (18, 5, "Pemukul Hebat Pemadang Cekap"),
+        (24, 6, "Mengejar Juara"), (26, 7, "Keselamatan Diutamakan"),
+        (28, 8, "Rekreasi Berilmu"), (34, 9, "Kecergasan Diri")),
+    5: ((8, 1, "Jadi Yang Terbaik"), (10, 2, "Riang Ria di Dasar Lautan"),
+        (14, 3, "Serang Menang"), (17, 4, "Handal Jaring"),
+        (21, 5, "Rondas Kampung"), (27, 6, "Olahraga Asas"),
+        (31, 8, "Permainan Warisan"), (32, 9, "Cergas Selalu"),
+        (33, 10, "Cergas dan Sihat")),
+    6: ((7, 1, "Gimnastik Asas"), (9, 2, "Pergerakan Berirama"),
+        (12, 3, "Kategori Serangan"), (15, 4, "Kategori Jaring"),
+        (19, 5, "Kategori Pukul dan Memadang"),
+        (25, 6, "Olahraga Asas"), (28, 8, "Cabaran Rekreasi"),
+        (29, 9, "Konsep Kecergasan"), (34, 10, "Kekal Aktif")),
+}
+
+
+def _pj_canonical_unit(year, pdp):
+    """Return a published textbook unit, never an individual RPH title."""
+    for last_pdp, number, title in PJ_TEXTBOOK_UNIT_SEGMENTS.get(year, ()):
+        if pdp <= last_pdp:
+            return f"Unit {number}: {title}"
+    return None
+
+
+def _pj_activity_title(title):
+    """Move the title after an embedded UNIT prefix into the PdP choice."""
+    if re.match(r"(?i)^\s*UNIT\s+\d+\b", title):
+        found = re.search(r"(?i)\bTAJUK\s*:?\s*", title)
+        if found and title[found.end():].strip():
+            return title[found.end():].strip(" |:-")
+    return title
+
+
 def _pjpk_records(year, component):
     if component not in ("PJ", "PK"):
         return []
     from web.pjpk_2027_preview_runtime import MAXIMUM, _source
     short = component.lower()
     entries = []
+    if component == "PJ" and (
+            not PJ_TEXTBOOK_UNIT_SEGMENTS.get(year)
+            or PJ_TEXTBOOK_UNIT_SEGMENTS[year][-1][0] != MAXIMUM["pj"][year]):
+        return []
     for n in range(1, MAXIMUM[short][year] + 1):
         candidate = _source(year, short, n, root=ROOT)
         if candidate is None:
@@ -148,7 +204,11 @@ def _pjpk_records(year, component):
         path = ROOT / "rph_standalone" / "pjpk" / f"year{year}_{short}" / f"lesson_{n:03d}.md"
         if not path.is_file():
             continue
-        entries.append({"unit": str(title), "label": f"PdP {n:03d} — {title}",
+        unit = _pj_canonical_unit(year, n) if component == "PJ" else str(title)
+        if not unit:
+            continue
+        activity = _pj_activity_title(title) if component == "PJ" else title
+        entries.append({"unit": unit, "label": f"PdP {n:03d} — {activity}",
                         "lesson": n, "token": f"p-{year}-{component}-{n:03d}",
                         "path": path, "status": "PRATONTON BELUM MUKTAMAD"})
     return entries
