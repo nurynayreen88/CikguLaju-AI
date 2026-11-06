@@ -53,6 +53,7 @@ class NativeMathScienceTests(unittest.TestCase):
         self.assertEqual(state["selected_sp_codes"],["2.1.1","2.1.2"])
         self.assertEqual(state["pdp_title"],"Tambah dengan mengumpul semula")
         self.assertEqual(state["rph_students"],"32")
+        self.assertEqual(state["rph_date"],"06/11/2026")
 
     def test_wrong_unit_or_pdp_is_rejected(self):
         for unit, pdp in (("u"+"0"*24,"M2-PDP-007"),
