@@ -8,6 +8,7 @@ from __future__ import annotations
 import json
 import re
 from pathlib import Path
+from tools.sains_buku_aktiviti_mapping_20261107 import activity_for
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "audits/sains_y3_v2582_45_textbook_page_candidates_20261106.json"
@@ -459,6 +460,7 @@ def adapt_rows(state, original):
         return original
     if str(state.get("sk_code") or "")!=sp.rsplit(".",1)[0]:
         return original
+    book_activity=activity_for(3,code,sp)
     if item.get("visual_layout_check")!="PENDING":
         return original  # strict gate: release manifest must be implemented separately
     label=item["source_pdp_title_unverified"]
@@ -490,6 +492,12 @@ def adapt_rows(state, original):
     if extra:
         materials=materials+"; "+extra["materials"]
     page_text=", ".join(str(x) for x in item["printed_book_page_candidates"])
+    ba_text=(f"Buku Aktiviti Sains Tahun 3, aktiviti "
+             f"'{book_activity['activity_title']}', m/s bercetak "
+             f"{book_activity['workbook_printed_page']} "
+             f"(PDF halaman {book_activity['workbook_pdf_page']}).")
+    ba_pbd=(" Murid melengkapkan latihan Buku Aktiviti; "
+            "guru menyemak jawapan individu sebagai bukti PBD.")
     updated=dict(original)
     updated.update({
         "TAJUK":label,
@@ -500,11 +508,13 @@ def adapt_rows(state, original):
         "PENGETAHUAN SEDIA ADA":f"Murid berkongsi pengalaman berkaitan {hook.lower()}.",
         "SET INDUKSI":f"Guru menunjukkan {hook.lower()}; murid menyatakan satu ramalan/pemerhatian awal.",
         "AKTIVITI UTAMA":main,
-        "PENTAKSIRAN":all_pbd+". Guru mengambil bukti bagi setiap murid melalui jawapan, jadual, lakaran atau demonstrasi yang sepadan dengan tugasan dan merekod murid yang perlu pemulihan.",
+        "PENTAKSIRAN":all_pbd+". Guru mengambil bukti bagi setiap murid melalui jawapan, jadual, lakaran atau demonstrasi yang sepadan dengan tugasan dan merekod murid yang perlu pemulihan."+ba_pbd,
         "PENUTUP":closing,
         "KEMAHIRAN PROSES SAINS":kps_desc,
         "KEMAHIRAN MANIPULATIF DAN KESELAMATAN":manip_desc,
-        "BAHAN BANTU MENGAJAR":f"{materials}. Buku Teks Sains Tahun 3, halaman bercetak {page_text} (petunjuk sumber; semak sebelum cetak).",
+        "BAHAN BANTU MENGAJAR":f"{materials}. Buku Teks Sains Tahun 3, halaman bercetak {page_text} (petunjuk sumber; semak sebelum cetak). "+ba_text,
+        "BUKU AKTIVITI / LATIHAN":ba_text+" Padanan latihan dengan SP masih DRAF untuk pengesahan guru.",
+        "BUKU AKTIVITI URL":book_activity["workbook_url"],
         "PEMULIHAN / PENGAYAAN":"Pemulihan: guru membimbing dengan kad/objek berlabel. Pengayaan: murid menjelaskan bukti tambahan daripada tugasan.",
     })
     return updated
