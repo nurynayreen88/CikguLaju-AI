@@ -52,11 +52,20 @@ Audit statik app.py (run [#42178437704](https://github.com/nurynayreen88/CikguLa
 
 ## Pemeriksaan asas kualiti checkpoint v25.68
 
-Pemeriksaan baca sahaja (run [#421785…](https://github.com/nurynayreen88/CikguLaju-AI/pull/406/checks)) mengesahkan:
+Pemeriksaan baca sahaja (run [#42178770339](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42178770339)) mengesahkan:
 
 - **385/385** rekod Sains mempunyai kod SK dan SP tidak kosong (tidak bermakna kod itu sudah dibandingkan dengan dokumen rasmi).
 - **385/385** rekod mempunyai medan textbook_ref kosong. Rujukan halaman **belum** boleh didakwa tersedia dalam Sains checkpoint ini.
 - Status rekod: 319 USABLE_BASELINE, 43 USABLE_CANONICAL_BASELINE, **23 PDP_BOUNDARY_QA_PENDING**. Label usable bukan kelulusan akademik individu.
+
+**Semua 23 pending ialah Sains Tahun 3**, kod SCI-Y3-PDP-001 hingga SCI-Y3-PDP-023; pecahan topik:
+- Asid dan Alkali — PdP 001–004 (4).
+- Manusia: Gigi — PdP 005–009 (5).
+- Manusia: Kelas Makanan — PdP 010–013 (4).
+- Mesin: Takal — PdP 014–018 (5).
+- Sistem Suria — PdP 019–023 (5).
+
+Perhatian QA: PdP 021 dan 022 mempunyai teks tajuk yang sama dalam checkpoint; **calon semakan sempadan**, bukan bukti automatik kedua-duanya pendua. Semua 385 mempunyai source_url/notes/skill_metadata, tetapi medan textbook_ref dan activitybook_ref kosong. Belum sepadan dengan halaman buku teks asli.
 - Susulan wajib: audit sempadan 23 PdP dan halaman Buku Teks asal untuk semua tahun sebelum label FINAL.
 
 ## Rujukan bahan dalam Google Drive (lokasi, bukan pengesahan halaman)
