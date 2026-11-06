@@ -1,0 +1,104 @@
+{
+  "project": "CikguLaju AI",
+  "subject": "Bahasa Arab",
+  "year_span": "Tahun 2–6",
+  "version": "2026-11-06-boleh-guna-premerge-v1",
+  "archived_on": "2026-11-06",
+  "google_drive_folder_url": "https://drive.google.com/drive/folders/1WLl4hyPF-o5ziP0pW8T_fOa8_wjteAJT",
+  "google_drive_folder_id": "1WLl4hyPF-o5ziP0pW8T_fOa8_wjteAJT",
+  "google_drive_manifest_file_id": "1DP1P3bJW1uU3wNWqCXEzWMXZEKpaOgBe",
+  "source_branch": "staging/bahasa-arab-rpt2027-crosswalk-20261106",
+  "source_commit_at_archive": "6dd00ad7993ab164fd02870b731ea3d3de3c4195",
+  "original_generator_ci": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42162976515",
+  "counts": {
+    "year2": 60,
+    "year3": 60,
+    "year4": 58,
+    "year5": 60,
+    "year6": 60,
+    "total_unique_rph": 298,
+    "docx_in_combined": 298,
+    "pdf_in_combined": 298
+  },
+  "files": [
+    {
+      "scope": "all",
+      "filename": "CikguLaju_Bahasa_Arab_RPH_Tahun2-6_Boleh_Guna.zip",
+      "google_drive_file_id": "13xrLwjCOP0AeSUC9fYoo7QKPYo0HHhBH",
+      "url": "https://drive.google.com/file/d/13xrLwjCOP0AeSUC9fYoo7QKPYo0HHhBH/view",
+      "sha256": "c40546790225c990e085b60165a1c07641100569633344eb8bc2e639dad2a36f",
+      "size_bytes": 21373037,
+      "docx_count": 298,
+      "pdf_count": 298,
+      "archive_integrity": "PASS"
+    },
+    {
+      "scope": "2",
+      "filename": "CikguLaju_Bahasa_Arab_RPH_Tahun2_Boleh_Guna.zip",
+      "google_drive_file_id": "1TIAEFed32sWAjv7oTJJtg9xywE1_7Ixe",
+      "url": "https://drive.google.com/file/d/1TIAEFed32sWAjv7oTJJtg9xywE1_7Ixe/view",
+      "sha256": "855a15d93dc17fa7390dce2d8937d12213c9a8b094a2b69b9ab8f06becc0720b",
+      "size_bytes": 4291668,
+      "docx_count": 60,
+      "pdf_count": 60,
+      "archive_integrity": "PASS"
+    },
+    {
+      "scope": "3",
+      "filename": "CikguLaju_Bahasa_Arab_RPH_Tahun3_Boleh_Guna.zip",
+      "google_drive_file_id": "1ANHFVHz12098md7ap-RN_wrNazfxm8U9",
+      "url": "https://drive.google.com/file/d/1ANHFVHz12098md7ap-RN_wrNazfxm8U9/view",
+      "sha256": "47be3f006fc9039f2f9dfe1fe99f611981a5f0439c95cc2999c317fbd5a2a7e1",
+      "size_bytes": 4283248,
+      "docx_count": 60,
+      "pdf_count": 60,
+      "archive_integrity": "PASS"
+    },
+    {
+      "scope": "4",
+      "filename": "CikguLaju_Bahasa_Arab_RPH_Tahun4_Boleh_Guna.zip",
+      "google_drive_file_id": "1r3FVLoE-SwHdT0sLrrfHmilLsdLcWbRp",
+      "url": "https://drive.google.com/file/d/1r3FVLoE-SwHdT0sLrrfHmilLsdLcWbRp/view",
+      "sha256": "031b62dc9b73db6c46c321020fac5e68461f0c5968cdd3ce5e7522235b7b0c1e",
+      "size_bytes": 4160487,
+      "docx_count": 58,
+      "pdf_count": 58,
+      "archive_integrity": "PASS"
+    },
+    {
+      "scope": "5",
+      "filename": "CikguLaju_Bahasa_Arab_RPH_Tahun5_Boleh_Guna.zip",
+      "google_drive_file_id": "1HfKFt-5dmAi1ED3NcxFqb2TrbzdB0WZc",
+      "url": "https://drive.google.com/file/d/1HfKFt-5dmAi1ED3NcxFqb2TrbzdB0WZc/view",
+      "sha256": "a1b41aed43b23acd66bfbc6417c57ba2bbb2cb2de3980e66f62fc3c9e1b42ebc",
+      "size_bytes": 4329845,
+      "docx_count": 60,
+      "pdf_count": 60,
+      "archive_integrity": "PASS"
+    },
+    {
+      "scope": "6",
+      "filename": "CikguLaju_Bahasa_Arab_RPH_Tahun6_Boleh_Guna.zip",
+      "google_drive_file_id": "1bfHJyYFKarghrV55WcQlZvg29yHa7EjO",
+      "url": "https://drive.google.com/file/d/1bfHJyYFKarghrV55WcQlZvg29yHa7EjO/view",
+      "sha256": "a30dac8a5d9f3e59f5df226a9ad6e4d50da7fc43fd1c779e1492b2e4b09926cb",
+      "size_bytes": 4297942,
+      "docx_count": 60,
+      "pdf_count": 60,
+      "archive_integrity": "PASS"
+    }
+  ],
+  "status": {
+    "drive_uploaded_and_listed": true,
+    "github_source_materials_present_in_staging": true,
+    "print_pack_available": true,
+    "content_and_pedagogical_final_verified": false,
+    "rpt_2027_with_dated_group_a_b_verified": false,
+    "telegram_web_live_connected": false,
+    "release_authorized": false,
+    "do_not_merge": true,
+    "do_not_deploy": true
+  },
+  "note": "This manifest records exact archived ZIP versions for future technical merge. ZIP binaries live in Google Drive rather than being committed repeatedly into the Git repository. All 298 Markdown RPH and RPT crosswalk CSV remain in existing staging branch; avoid replacing or resetting master DB.",
+  "caveat": "Teacher-facing Word/PDF is technically usable; not a claim of full pedagogical validation of 298 lesson plans."
+}
