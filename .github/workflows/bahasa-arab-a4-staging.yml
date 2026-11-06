@@ -6,7 +6,14 @@ on:
     paths:
       - "rph_standalone/bahasa_arab/**"
       - "scripts/render_bahasa_arab_staging.py"
+      - "scripts/check_bahasa_arab_printable_stage.py"
       - ".github/workflows/bahasa-arab-a4-staging.yml"
+  pull_request:
+    paths:
+      - 'rph_standalone/bahasa_arab/**'
+      - 'scripts/render_bahasa_arab_staging.py'
+      - 'scripts/check_bahasa_arab_printable_stage.py'
+      - '.github/workflows/bahasa-arab-a4-staging.yml'
   workflow_dispatch:
 
 jobs:
@@ -30,6 +37,8 @@ jobs:
           python scripts/render_bahasa_arab_staging.py --input-dir rph_standalone/bahasa_arab --output-dir /tmp/ba-rph-previews --pdf-check
           test "$(find /tmp/ba-rph-previews -maxdepth 1 -name '*.docx' | wc -l)" -eq 298
           test "$(find /tmp/ba-rph-previews/_pdf_previews -name '*.pdf' | wc -l)" -eq 298
+      - name: Validate teacher-facing documents have no audit leakage or missing Arabic
+        run: python scripts/check_bahasa_arab_printable_stage.py /tmp/ba-rph-previews
       - name: Archive previews for manual inspection (not deployed)
         if: success()
         uses: actions/upload-artifact@v4

@@ -11,12 +11,12 @@
     "source_page_draft_reviewed": 298,
     "preliminary_year6_page_candidates": 0,
     "one_page_A4_docx_pdf_ci_verified": true,
-    "render_check_ci": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42140759459",
-    "word_generated_in_ci": 218,
-    "pdf_generated_in_ci": 218,
+    "render_check_ci": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42147097355",
+    "word_generated_in_ci": 298,
+    "pdf_generated_in_ci": 298,
     "year6_text_source_reviewed": 12,
     "year2_text_source_reviewed": 12,
-    "year2_sp_book_ocr_ambiguous": 4,
+    "year2_sp_book_ocr_ambiguous": 0,
     "year4_unit2_candidate_rph": 16,
     "year4_unit2_page_text_covered_range": "30–48",
     "verified_a4_render_for_new_12": true,
@@ -49,13 +49,17 @@
     "year6_unit3_candidate_rph": 16,
     "verified_a4_render_for_all_282": false,
     "year6_unit4_candidate_rph": 16,
-    "verified_a4_render_for_all_298": false
+    "verified_a4_render_for_all_298": true,
+    "year2_sp_book_html_code_corroborated": 2,
+    "year2_sp_book_visual_confirmed": 12,
+    "year2_original_book_edition_pdf_visual_verified": true,
+    "year2_unit1_all_12_sp_print_codes_visual_verified": true
   },
   "release_checks": [
     {
       "id": "source_book_editions",
       "status": "PARTIAL",
-      "detail": "Year6 WRONG 6-unit Drive KSSR PDF quarantined. Verified correct 2021 DBP ISBN 978-983-49-3300-5 4-unit original public ebook HTML used for Unit2 text. Original page image not yet visually validated."
+      "detail": "Year6 WRONG 6-unit Drive KSSR PDF quarantined. Verified correct 2021 DBP ISBN 978-983-49-3300-5 4-unit original public ebook HTML used for Unit2 text. Original page image not yet visually validated. Buku Teks Tahun 2 dalam Drive disahkan secara visual: DBP/KPM, ISBN 978-983-49-1589-6, Cetakan Pertama 2017."
     },
     {
       "id": "unit_index",
@@ -70,7 +74,7 @@
     {
       "id": "sk_sp",
       "status": "PARTIAL",
-      "detail": "170 candidate source-aligned SP codes including 16 visually checked Year3 Unit2; four Year2 scanned printed SP ambiguities pending; no final approval."
+      "detail": "Tahun 2 Unit 1: 12/12 SP PdP001–012 visually checked in printed teacher-guide panels of original DBP/KPM 2017 textbook PDF; SP source evidence only. All 298 RPH still need linguistic/pedagogic individual approval and full RPT2027 verification."
     },
     {
       "id": "textbook_page_to_pdp",
@@ -85,7 +89,7 @@
     {
       "id": "word_pdf_programmatic_a4",
       "status": "PASS_TECHNICAL_ONLY",
-      "detail": "250 DOCX and 250 one-page A4 PDFs passed last verified technical CI https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42144998331. 298 new candidate batch requires full CI and page count."
+      "detail": "298 DOCX and 298 single-page A4 PDFs verified in https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42147097355. This is a technical-only pass; 0 teacher/content/RPT2027 approvals."
     },
     {
       "id": "manual_pedagogic_approval",
@@ -256,12 +260,12 @@
   "telegram_live_touched": false,
   "web_live_touched": false,
   "release_next_actions": [
-    "Replace Year6 source with verified KSSR Semakan 2017 DBP 2021 ebook before any Year6 full unit drafting; do not use old Drive PDF.",
-    "Audit original Year 2 textbook Unit 1 per printed page and DSKP",
-    "Audit Year 6 Unit 1 all 12 SP/page links individually, not candidate-only",
-    "Complete and review full-year PdP/RPH coverage for Units 2, 3, 4 across Years 2–6",
-    "Generate dated RPT 2027 Group A and B with school calendar and school profile",
-    "Proofread A4 Arabic RTL Word/PDF samples and all release-critical pages",
-    "Approve materials individually against DSKP/book pages and test Telegram-Web parity with DB backup"
+    "Year2 Unit1 12/12 source printed SP checks completed by original PDF visual audit. Proceed with pedagogic/language/PBD, remaining units, annual RPT2027 and Telegram-Web release gates; keep 0 READY.",
+    "Semak penuh semua 298 calon RPH satu persatu dari segi tatabahasa Arab, harakat, objektif, aktiviti, PBD, SK/SP dan muka surat buku asal.",
+    "Tahun 6 sudah mempunyai 60 draf 4 unit berpandukan eBook DBP/KPM 2021 yang betul; sahkan imej halaman penuh, bukan PDF enam unit lama di Drive.",
+    "Sahkan bilangan dan urutan PdP tahunan Tahun 2–6 berbanding RPT 2026/DSKP, termasuk agihan waktu rasmi; jangan reka tarikh.",
+    "Lengkapkan RPT bertarikh Kumpulan A/B selepas sahkan takwim KPM, cuti negeri/gantian dan jadual sebenar guru.",
+    "Semak paparan Arab RTL Word/PDF sebenar dan lakukan ujian parity Telegram–Web dengan sandaran DB v26.00 sebelum penerbitan.",
+    "Dapatkan kelulusan guru pada setiap RPH; kekalkan semua READY=FALSE sehingga layak dilepaskan."
   ]
 }

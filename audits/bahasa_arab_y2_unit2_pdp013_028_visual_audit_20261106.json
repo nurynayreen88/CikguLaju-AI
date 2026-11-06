@@ -33,13 +33,14 @@
       "pdp": "014",
       "printed_page": 27,
       "pdf_page_1_based": 39,
-      "sp_candidate": "2.1.1",
-      "focus": "Membaca dan membina kata berhuruf و",
+      "sp_candidate": "2.2.2",
+      "focus": "Mengenal pasti suku kata و berbaris dalam perkataan",
       "source_page_visual_inspected": true,
-      "printed_code_final_verified": false,
+      "printed_code_final_verified": true,
       "manual_teacher_approval": false,
       "ready": false,
-      "annual_rpt_2027_verified": false
+      "annual_rpt_2027_verified": false,
+      "printed_code_derived_from": "Direct source original PDF KPM/DBP 2017 SP panel and KPM DPK 2.0 skill definitions (content still not teacher approved)"
     },
     {
       "pdp": "015",
@@ -57,13 +58,14 @@
       "pdp": "016",
       "printed_page": 29,
       "pdf_page_1_based": 41,
-      "sp_candidate": "2.1.1",
-      "focus": "Membaca segmen perkataan huruf س",
+      "sp_candidate": "2.2.2",
+      "focus": "Mengenal pasti suku kata berhuruf س dalam perkataan",
       "source_page_visual_inspected": true,
-      "printed_code_final_verified": false,
+      "printed_code_final_verified": true,
       "manual_teacher_approval": false,
       "ready": false,
-      "annual_rpt_2027_verified": false
+      "annual_rpt_2027_verified": false,
+      "printed_code_derived_from": "Direct source original PDF KPM/DBP 2017 SP panel and KPM DPK 2.0 skill definitions (content still not teacher approved)"
     },
     {
       "pdp": "017",
@@ -93,25 +95,27 @@
       "pdp": "019",
       "printed_page": 32,
       "pdf_page_1_based": 44,
-      "sp_candidate": "1.2.1",
-      "focus": "Mendengar nama ahli keluarga terdekat",
+      "sp_candidate": "1.3.1",
+      "focus": "Mendengar, meniru dan menyebut perkataan ahli keluarga terdekat",
       "source_page_visual_inspected": true,
-      "printed_code_final_verified": false,
+      "printed_code_final_verified": true,
       "manual_teacher_approval": false,
       "ready": false,
-      "annual_rpt_2027_verified": false
+      "annual_rpt_2027_verified": false,
+      "printed_code_derived_from": "Original DBP/KPM 2017 textbook teacher-panel (source page 32/33); KPM DPK 2.0 defines 1.3 word listening"
     },
     {
       "pdp": "020",
       "printed_page": 33,
       "pdf_page_1_based": 45,
-      "sp_candidate": "1.2.2",
-      "focus": "Mendengar dan membezakan ahli keluarga luas",
+      "sp_candidate": "1.3.2",
+      "focus": "Mendengar dan mengenal pasti perkataan ahli keluarga luas",
       "source_page_visual_inspected": true,
-      "printed_code_final_verified": false,
+      "printed_code_final_verified": true,
       "manual_teacher_approval": false,
       "ready": false,
-      "annual_rpt_2027_verified": false
+      "annual_rpt_2027_verified": false,
+      "printed_code_derived_from": "Original DBP/KPM 2017 textbook teacher-panel (source page 32/33); KPM DPK 2.0 defines 1.3 word listening"
     },
     {
       "pdp": "021",
@@ -141,25 +145,27 @@
       "pdp": "023",
       "printed_page": 37,
       "pdf_page_1_based": 49,
-      "sp_candidate": "1.3.1",
-      "focus": "Mendengar dan menyebut identiti anak lelaki/perempuan",
+      "sp_candidate": "1.4.1",
+      "focus": "Mendengar, meniru dan menyebut frasa identiti anak lelaki/perempuan",
       "source_page_visual_inspected": true,
-      "printed_code_final_verified": false,
+      "printed_code_final_verified": true,
       "manual_teacher_approval": false,
       "ready": false,
-      "annual_rpt_2027_verified": false
+      "annual_rpt_2027_verified": false,
+      "printed_code_derived_from": "Direct source original PDF KPM/DBP 2017 SP panel and KPM DPK 2.0 skill definitions (content still not teacher approved)"
     },
     {
       "pdp": "024",
       "printed_page": 38,
       "pdf_page_1_based": 50,
-      "sp_candidate": "1.3.2",
-      "focus": "Kata tunjuk هذا/هذه bagi datuk dan nenek",
+      "sp_candidate": "1.4.5",
+      "focus": "Melakonkan ungkapan kata tunjuk هذا/هذه bagi ahli keluarga",
       "source_page_visual_inspected": true,
-      "printed_code_final_verified": false,
+      "printed_code_final_verified": true,
       "manual_teacher_approval": false,
       "ready": false,
-      "annual_rpt_2027_verified": false
+      "annual_rpt_2027_verified": false,
+      "printed_code_derived_from": "Direct source original PDF KPM/DBP 2017 SP panel and KPM DPK 2.0 skill definitions (content still not teacher approved)"
     },
     {
       "pdp": "025",
@@ -177,37 +183,40 @@
       "pdp": "026",
       "printed_page": 40,
       "pdf_page_1_based": 52,
-      "sp_candidate": "3.3.1",
-      "focus": "Menulis ayat kata tunjuk tentang keluarga",
+      "sp_candidate": "3.4.1",
+      "focus": "Menyalin frasa kata tunjuk tentang keluarga",
       "source_page_visual_inspected": true,
-      "printed_code_final_verified": false,
+      "printed_code_final_verified": true,
       "manual_teacher_approval": false,
       "ready": false,
-      "annual_rpt_2027_verified": false
+      "annual_rpt_2027_verified": false,
+      "printed_code_derived_from": "Original DBP/KPM 2017 page40, PDF page52, teacher SP 3.4.1 and DPK KPM 2.0 clause 3.4"
     },
     {
       "pdp": "027",
       "printed_page": 41,
       "pdf_page_1_based": 53,
-      "sp_candidate": "1.4.1",
-      "focus": "Bertanya dan menjawab 'siapakah ini?'",
+      "sp_candidate": "1.4.5",
+      "focus": "Melakonkan soal jawab spontan مَنْ هَذَا؟ / مَنْ هَذِهِ؟",
       "source_page_visual_inspected": true,
-      "printed_code_final_verified": false,
+      "printed_code_final_verified": true,
       "manual_teacher_approval": false,
       "ready": false,
-      "annual_rpt_2027_verified": false
+      "annual_rpt_2027_verified": false,
+      "printed_code_derived_from": "Direct source original PDF KPM/DBP 2017 SP panel and KPM DPK 2.0 skill definitions (content still not teacher approved)"
     },
     {
       "pdp": "028",
       "printed_page": 43,
       "pdf_page_1_based": 55,
-      "sp_candidate": "3.2.1",
-      "focus": "Mengenal dan menulis nombor tiga belas hingga enam belas",
+      "sp_candidate": "2.5.1",
+      "focus": "Membaca dan menyebut nombor tiga belas hingga enam belas",
       "source_page_visual_inspected": true,
-      "printed_code_final_verified": false,
+      "printed_code_final_verified": true,
       "manual_teacher_approval": false,
       "ready": false,
-      "annual_rpt_2027_verified": false
+      "annual_rpt_2027_verified": false,
+      "printed_code_derived_from": "Direct source original PDF KPM/DBP 2017 SP panel and KPM DPK 2.0 skill definitions (content still not teacher approved)"
     }
   ],
   "release_authorized": false,

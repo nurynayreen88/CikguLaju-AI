@@ -11,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SUBJECT = ROOT / "rph_standalone" / "bahasa_arab"
 RPT = ROOT / "rpt_2027" / "bahasa_arab"
-EXPECTED_SP = {2:["1.1.1","1.1.2","1.2.1","2.1.1","2.2.1","3.1.1","3.2.1","1.3.1","1.3.2","2.3.1","3.3.1","1.4.1"],3:["1.1.1","1.1.2","1.2.1","2.1.1","2.2.1","3.1.1","3.2.1","1.3.1","1.3.2","2.3.5","3.3.1","1.4.1"],4:["1.1.1","1.1.2","1.2.1","2.1.1","2.2.1","3.1.1","3.2.1","1.3.1","1.3.2","2.3.1","3.3.1","1.4.1"],5:["1.1.1","1.1.3","1.2.1","2.1.1","2.2.1","3.2.1","1.3.1","1.3.2","2.3.1","2.3.2","3.3.1","1.4.1"],6:["1.1.1","1.1.2","1.2.1","2.1.2","2.2.1","3.1.1","1.3.1","1.3.2","2.3.1","2.3.2","3.2.1","1.4.1"]}
+EXPECTED_SP = {2:["1.1.1","1.1.2","1.2.1","2.1.1","2.2.1","3.1.1","3.2.1","1.3.1","1.3.2","2.3.5","3.4.1","1.4.1"],3:["1.1.1","1.1.2","1.2.1","2.1.1","2.2.1","3.1.1","3.2.1","1.3.1","1.3.2","2.3.5","3.3.1","1.4.1"],4:["1.1.1","1.1.2","1.2.1","2.1.1","2.2.1","3.1.1","3.2.1","1.3.1","1.3.2","2.3.1","3.3.1","1.4.1"],5:["1.1.1","1.1.3","1.2.1","2.1.1","2.2.1","3.2.1","1.3.1","1.3.2","2.3.1","2.3.2","3.3.1","1.4.1"],6:["1.1.1","1.1.2","1.2.1","2.1.2","2.2.1","3.1.1","1.3.1","1.3.2","2.3.1","2.3.2","3.2.1","1.4.1"]}
 UNIT_1 = {2:"هيا نتعارف",3:"تفضل إلى الفصل",4:"الشهور الميلادية",5:"في المطبخ",6:"حياتنا أجمل بالنظافة"}
 MARKERS = ("Set induksi", "Aktiviti 1", "Aktiviti 2", "Penutup", "BBM",
            "PBD", "Kriteria kejayaan", "Refleksi", "DRAF", "BELUM READY")
@@ -203,13 +203,33 @@ def check() -> None:
     assert y2_source["source_page_reviewed_draft_count"] == 12
     assert len(y2_source["items"]) == 12 and y2_source["final_ready"] == 0
     assert [x["sp"] for x in y2_source["items"]] == EXPECTED_SP[2]
-    assert y2_source["ambiguous_book_sp_pdp"] == ["002","004","010","011"]
+    # 2026-11-06 correction: read word != read syllable; copy phrase != copy word.
+    assert y2_source["items"][9]["sp"] == "2.3.5"
+    assert y2_source["items"][10]["sp"] == "3.4.1"
+    assert "frasa" in y2_source["items"][10]["focus"].lower()
+    assert all(x["sp_printed_on_book_confirmed"] for x in y2_source["items"])
+    assert y2_source["ambiguous_book_sp_pdp"] == []
+    assert y2_source["book_sp_print_visual_resolved_pdp"] == [f"{i:03d}" for i in range(1,13)]
+    assert y2_source["text_source_corrob_sp_pdp"] == ["010","011"]
+    assert y2_source["book_sp_print_visual_unresolved"] == []
+    assert all(y2_source["items"][i]["book_ebook_html_sp_corroborated"]
+               and y2_source["items"][i]["book_ebook_html_sp_code"] == y2_source["items"][i]["sp"]
+               and y2_source["items"][i]["sp_printed_on_book_confirmed"]
+               for i in (9,10))
+    assert readiness["completed"]["year2_sp_book_html_code_corroborated"] == 2
+    assert m["years"]["2"]["source_book_sp_html_code_corroborated"] == ["010","011"]
+    assert m["years"]["2"]["source_book_sp_print_visual_resolved"] == [f"{i:03d}" for i in range(1,13)]
+    rph4 = (SUBJECT / "year2" / "lesson_004.md").read_text(encoding="utf-8")
+    assert "SP 2.1.1" in rph4 and "meniru dan mengulang bacaan huruf" in rph4
+    assert "sekurang-kurangnya 4 daripada 5 sebutan" in rph4
     assert all(x["teacher_approval"] is False and x["ready"] is False for x in y2_source["items"])
     assert y2_source["release_authorized"] is False
     assert m["years"]["2"]["source_evidence_pdp001_012"] == "audits/bahasa_arab_y2_pdp001_012_text_source_audit_20261106.json"
     assert m["years"]["2"]["source_text_reviewed_drafts"] == 12
     assert m["years"]["2"]["textbook"]["source_page_verified"] is False
-    assert readiness["completed"]["year2_sp_book_ocr_ambiguous"] == 4
+    assert readiness["completed"]["year2_sp_book_ocr_ambiguous"] == 0
+    assert readiness["completed"]["year2_sp_book_visual_confirmed"] == 12
+    assert all(x["book_pdf_visual_sp_confirmed"] for x in y2_source["items"])
     for i, record in enumerate(y2_source["items"], start=1):
         text = (SUBJECT / "year2" / f"lesson_{i:03d}.md").read_text(encoding="utf-8")
         assert "**Semakan Buku Teks asal Tahun 2 (6 Nov 2026):**" in text
@@ -257,8 +277,8 @@ def check() -> None:
     assert m["years"]["4"]["unit3_release_approved"] is False
     assert readiness["completed"]["year4_unit3_candidate_rph"] == 14
     assert readiness["completed"]["verified_a4_render_for_all_90"] is True
-    assert readiness["completed"]["word_generated_in_ci"] == 218
-    assert readiness["completed"]["pdf_generated_in_ci"] == 218
+    assert readiness["completed"]["word_generated_in_ci"] == 298
+    assert readiness["completed"]["pdf_generated_in_ci"] == 298
     assert readiness["total_ready_rph"] == 0
     assert m["latest_technical_a4_validation"]["status"] == "PASSED_OFFLINE_TECHNICAL_ONLY"
     assert m["latest_technical_a4_validation"]["release_approval"] is False
@@ -308,8 +328,8 @@ def check() -> None:
     assert m["years"]["5"]["unit2_release_approved"] is False
     assert readiness["completed"]["year5_unit2_candidate_rph"] == 16
     assert readiness["completed"]["verified_a4_render_for_all_122"] is True
-    assert readiness["completed"]["word_generated_in_ci"] == 218
-    assert readiness["completed"]["pdf_generated_in_ci"] == 218
+    assert readiness["completed"]["word_generated_in_ci"] == 298
+    assert readiness["completed"]["pdf_generated_in_ci"] == 298
     assert m["latest_technical_a4_validation"]["status"] == "PASSED_OFFLINE_TECHNICAL_ONLY"
     assert m["latest_technical_a4_validation"]["release_approval"] is False
     for n,row in zip(range(13,29),y5rows):
@@ -336,8 +356,8 @@ def check() -> None:
     assert m["years"]["5"]["unit3_release_approved"] is False
     assert readiness["completed"]["year5_unit3_candidate_rph"] == 16
     assert readiness["completed"]["verified_a4_render_for_all_138"] is True
-    assert readiness["completed"]["word_generated_in_ci"] == 218
-    assert readiness["completed"]["pdf_generated_in_ci"] == 218
+    assert readiness["completed"]["word_generated_in_ci"] == 298
+    assert readiness["completed"]["pdf_generated_in_ci"] == 298
     assert m["latest_technical_a4_validation"]["status"] == "PASSED_OFFLINE_TECHNICAL_ONLY"
     assert m["latest_technical_a4_validation"]["release_approval"] is False
     for n,r in zip(range(29,45),y5u3rows):
@@ -439,8 +459,8 @@ def check() -> None:
     assert m["years"]["2"]["source_reviewed_drafts_total"] == 60
     assert readiness["completed"]["year2_unit4_candidate_rph"] == 16
     assert readiness["completed"]["verified_a4_render_for_all_218"] is True
-    assert m["latest_technical_a4_validation"]["word_document_count"] == 218
-    assert m["latest_technical_a4_validation"]["pdf_document_count"] == 218
+    assert m["latest_technical_a4_validation"]["word_document_count"] == 298
+    assert m["latest_technical_a4_validation"]["pdf_document_count"] == 298
     assert m["latest_technical_a4_validation"]["release_approval"] is False
     for n,r in zip(range(45,61),y2u4rows):
         txt = (SUBJECT / "year2" / f"lesson_{n:03d}.md").read_text(encoding="utf-8")
@@ -534,7 +554,7 @@ def check() -> None:
     assert m["years"]["6"]["source_reviewed_drafts_total"] == 60
     assert m["years"]["6"]["all_four_units_candidate_pdp"] is True
     assert readiness["completed"]["year6_unit4_candidate_rph"] == 16
-    assert readiness["completed"]["verified_a4_render_for_all_298"] is False
+    assert readiness["completed"]["verified_a4_render_for_all_298"] is True
     for n,r in zip(range(45,61),rows6u4):
         txt = (SUBJECT / "year6" / f"lesson_{n:03d}.md").read_text(encoding="utf-8")
         assert len(txt) > 2100 and all(mark in txt for mark in MARKERS)
@@ -543,7 +563,7 @@ def check() -> None:
         assert "BELUM READY" in txt and "2021" in txt
     assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 298
     print("PASSED: 20 unit indexes, 298 candidate RPH across Year2–6 all 4 units/year, 15 banks.")
-    print("RELEASE BLOCKED: 0 READY; 298 preview pending, 2027 RPT, per-PdP teacher/manual approvals and runtime parity incomplete.")
+    print("RELEASE BLOCKED: 0 READY; 298 A4 DOCX/PDF CI passed technically, 2027 RPT, per-PdP teacher/manual approvals and runtime parity incomplete.")
 
 if __name__ == "__main__":
     check()

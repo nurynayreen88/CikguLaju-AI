@@ -9,7 +9,12 @@
     "copyright_publication_year": 2017,
     "isbn": "978-983-49-1589-6",
     "public_textbook_text": "https://anyflip.com/slrpb/qzcr/basic",
-    "same_edition_as_original_drive_pdf_verified": false
+    "same_edition_as_original_drive_pdf_verified": true,
+    "original_drive_pdf_source": "https://drive.google.com/file/d/13CqpBb4HosAM_-HTEN-hhBCt2W5wVXCZ/view",
+    "original_pdf_book_isbn_visual_verified": "978-983-49-1589-6",
+    "original_pdf_printing_visual_verified": "Cetakan Pertama 2017",
+    "original_pdf_printed_to_pdf_page_offset_1based": 12,
+    "original_pdf_file_pages": 115
   },
   "dskp": {
     "title": "DSKP KSSR Bahasa Arab Tahun 2",
@@ -19,7 +24,7 @@
     "note": "Source PDF text displays SP numbers clearly; a separate existing Drive text extraction may collapse numeric identifiers due bidirectional-text OCR."
   },
   "teacher_support_page": "https://sites.google.com/moe-dl.edu.my/fcpi/bahasa-arab/tahun-2-bahasa-arab/%D8%A7%D9%84%D9%88%D8%AD%D8%AF%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-1",
-  "source_review_basis": "Textbook printed pages 2–17 from public school-hosted AnyFlip HTML text plus original DSKP readable PDF, not downloadable original-book-page visual signoff. SP book print OCR ambiguous in four cases.",
+  "source_review_basis": "All 12 candidate SP codes were inspected directly in the teacher guidance code panels on the original 2017 DBP/KPM textbook PDF, printed pages 2,3,4,5,6,8,11,12,13,17. Code source verified, not individual RPH/pedagogic or annual RPT approval.",
   "items": [
     {
       "pdp": "001",
@@ -31,7 +36,18 @@
       "sp_from_dskp_original": true,
       "sp_printed_on_book_confirmed": true,
       "teacher_approval": false,
-      "ready": false
+      "ready": false,
+      "book_pdf_visual_sp_confirmed": true,
+      "book_pdf_printed_pages_inspected": [
+        2,
+        4
+      ],
+      "book_pdf_pages_1based": [
+        14,
+        16
+      ],
+      "book_pdf_edition_verified": true,
+      "book_pdf_visual_verified_date": "2026-11-06"
     },
     {
       "pdp": "002",
@@ -39,11 +55,23 @@
       "sp": "1.1.2",
       "book_printed_page_text": "2 & 4",
       "focus": "Mengenal bunyi ل/ي daripada pendengaran",
-      "evidence_status": "BOOK_EXERCISE_DSKP_SP_ALIGNED_PRINTED_CODE_NOT_CLEARED",
+      "evidence_status": "BOOK_PDF_VISUAL_1_1_2_SP_CONFIRMED_TEACHER_PENDING",
       "sp_from_dskp_original": true,
-      "sp_printed_on_book_confirmed": false,
+      "sp_printed_on_book_confirmed": true,
       "teacher_approval": false,
-      "ready": false
+      "ready": false,
+      "book_pdf_visual_sp_confirmed": true,
+      "book_pdf_printed_pages_inspected": [
+        2,
+        4
+      ],
+      "book_pdf_pages_1based": [
+        14,
+        16
+      ],
+      "book_pdf_sp_panel_codes": "1.1.1/1.1.2 serta 2.1.1/2.1.2",
+      "book_pdf_edition_verified": true,
+      "book_pdf_visual_verified_date": "2026-11-06"
     },
     {
       "pdp": "003",
@@ -55,7 +83,18 @@
       "sp_from_dskp_original": true,
       "sp_printed_on_book_confirmed": true,
       "teacher_approval": false,
-      "ready": false
+      "ready": false,
+      "book_pdf_visual_sp_confirmed": true,
+      "book_pdf_printed_pages_inspected": [
+        3,
+        5
+      ],
+      "book_pdf_pages_1based": [
+        15,
+        17
+      ],
+      "book_pdf_edition_verified": true,
+      "book_pdf_visual_verified_date": "2026-11-06"
     },
     {
       "pdp": "004",
@@ -63,11 +102,23 @@
       "sp": "2.1.1",
       "book_printed_page_text": "2 & 4",
       "focus": "Baca huruf ل/ي pada kata",
-      "evidence_status": "BOOK_SKILL_MATCH_PRINTED_CODE_REQUIRES_VISUAL_CHECK",
+      "evidence_status": "BOOK_PDF_VISUAL_2_1_1_SP_CONFIRMED_TEACHER_PENDING",
       "sp_from_dskp_original": true,
-      "sp_printed_on_book_confirmed": false,
+      "sp_printed_on_book_confirmed": true,
       "teacher_approval": false,
-      "ready": false
+      "ready": false,
+      "book_pdf_visual_sp_confirmed": true,
+      "book_pdf_printed_pages_inspected": [
+        2,
+        4
+      ],
+      "book_pdf_pages_1based": [
+        14,
+        16
+      ],
+      "book_pdf_sp_panel_codes": "1.1.1/1.1.2 serta 2.1.1/2.1.2",
+      "book_pdf_edition_verified": true,
+      "book_pdf_visual_verified_date": "2026-11-06"
     },
     {
       "pdp": "005",
@@ -79,7 +130,18 @@
       "sp_from_dskp_original": true,
       "sp_printed_on_book_confirmed": true,
       "teacher_approval": false,
-      "ready": false
+      "ready": false,
+      "book_pdf_visual_sp_confirmed": true,
+      "book_pdf_printed_pages_inspected": [
+        3,
+        5
+      ],
+      "book_pdf_pages_1based": [
+        15,
+        17
+      ],
+      "book_pdf_edition_verified": true,
+      "book_pdf_visual_verified_date": "2026-11-06"
     },
     {
       "pdp": "006",
@@ -91,7 +153,16 @@
       "sp_from_dskp_original": true,
       "sp_printed_on_book_confirmed": true,
       "teacher_approval": false,
-      "ready": false
+      "ready": false,
+      "book_pdf_visual_sp_confirmed": true,
+      "book_pdf_printed_pages_inspected": [
+        6
+      ],
+      "book_pdf_pages_1based": [
+        18
+      ],
+      "book_pdf_edition_verified": true,
+      "book_pdf_visual_verified_date": "2026-11-06"
     },
     {
       "pdp": "007",
@@ -103,7 +174,16 @@
       "sp_from_dskp_original": true,
       "sp_printed_on_book_confirmed": true,
       "teacher_approval": false,
-      "ready": false
+      "ready": false,
+      "book_pdf_visual_sp_confirmed": true,
+      "book_pdf_printed_pages_inspected": [
+        6
+      ],
+      "book_pdf_pages_1based": [
+        18
+      ],
+      "book_pdf_edition_verified": true,
+      "book_pdf_visual_verified_date": "2026-11-06"
     },
     {
       "pdp": "008",
@@ -115,7 +195,16 @@
       "sp_from_dskp_original": true,
       "sp_printed_on_book_confirmed": true,
       "teacher_approval": false,
-      "ready": false
+      "ready": false,
+      "book_pdf_visual_sp_confirmed": true,
+      "book_pdf_printed_pages_inspected": [
+        8
+      ],
+      "book_pdf_pages_1based": [
+        20
+      ],
+      "book_pdf_edition_verified": true,
+      "book_pdf_visual_verified_date": "2026-11-06"
     },
     {
       "pdp": "009",
@@ -127,31 +216,76 @@
       "sp_from_dskp_original": true,
       "sp_printed_on_book_confirmed": true,
       "teacher_approval": false,
-      "ready": false
+      "ready": false,
+      "book_pdf_visual_sp_confirmed": true,
+      "book_pdf_printed_pages_inspected": [
+        8
+      ],
+      "book_pdf_pages_1based": [
+        20
+      ],
+      "book_pdf_edition_verified": true,
+      "book_pdf_visual_verified_date": "2026-11-06"
     },
     {
       "pdp": "010",
       "sk": "2.3",
-      "sp": "2.3.1",
+      "sp": "2.3.5",
       "book_printed_page_text": "9–11",
-      "focus": "Baca kosa kata perkenalan",
-      "evidence_status": "BOOK_EXERCISE_DSKP_SP_ALIGNED_PRINTED_CODE_NOT_CLEARED",
+      "focus": "Membaca perkataan perkenalan",
+      "evidence_status": "BOOK_PDF_VISUAL_2_3_5_SP_CONFIRMED_TEACHER_PENDING",
       "sp_from_dskp_original": true,
-      "sp_printed_on_book_confirmed": false,
+      "sp_printed_on_book_confirmed": true,
       "teacher_approval": false,
-      "ready": false
+      "ready": false,
+      "corrected_at": "2026-11-06",
+      "correction_basis": "DPS/DPK mapping against Book Text DBP 2017 (printed p9-11 word reading; p17 phrase copying), no full-resolution visual or teacher signoff",
+      "book_ebook_html_sp_corroborated": true,
+      "book_ebook_html_sp_code": "2.3.5",
+      "book_ebook_html_printed_page": "11",
+      "book_ebook_html_evidence_url": "https://anyflip.com/slrpb/qzcr/basic",
+      "dpk_sp_meaning_confirmed": true,
+      "dpk_source_url": "https://www.tcer.my/wp-content/uploads/2021/01/4_DPK_Bahasa-Arab-KSSR-Tahun-2-Edisi-2-1.pdf",
+      "book_pdf_visual_sp_confirmed": true,
+      "book_pdf_printed_pages_inspected": [
+        11
+      ],
+      "book_pdf_pages_1based": [
+        23
+      ],
+      "book_pdf_sp_panel_codes": "2.1.2/2.3.5",
+      "book_pdf_edition_verified": true,
+      "book_pdf_visual_verified_date": "2026-11-06"
     },
     {
       "pdp": "011",
-      "sk": "3.3",
-      "sp": "3.3.1",
+      "sk": "3.4",
+      "sp": "3.4.1",
       "book_printed_page_text": "17",
-      "focus": "Salin kata perkenalan",
-      "evidence_status": "BOOK_COPY_EXERCISE_SP_PRINTED_CODE_REQUIRES_VISUAL_CHECK",
+      "focus": "Menyalin frasa perkenalan",
+      "evidence_status": "BOOK_PDF_VISUAL_3_4_1_SP_CONFIRMED_TEACHER_PENDING",
       "sp_from_dskp_original": true,
-      "sp_printed_on_book_confirmed": false,
+      "sp_printed_on_book_confirmed": true,
       "teacher_approval": false,
-      "ready": false
+      "ready": false,
+      "corrected_at": "2026-11-06",
+      "correction_basis": "DPS/DPK mapping against Book Text DBP 2017 (printed p9-11 word reading; p17 phrase copying), no full-resolution visual or teacher signoff",
+      "book_ebook_html_sp_corroborated": true,
+      "book_ebook_html_sp_code": "3.4.1",
+      "book_ebook_html_printed_page": "17",
+      "book_ebook_html_evidence_url": "https://anyflip.com/slrpb/qzcr/basic",
+      "dpk_sp_meaning_confirmed": true,
+      "dpk_source_url": "https://www.tcer.my/wp-content/uploads/2021/01/4_DPK_Bahasa-Arab-KSSR-Tahun-2-Edisi-2-1.pdf",
+      "book_pdf_visual_sp_confirmed": true,
+      "book_pdf_printed_pages_inspected": [
+        17
+      ],
+      "book_pdf_pages_1based": [
+        29
+      ],
+      "book_pdf_sp_panel_codes": "2.3.5/3.4.1",
+      "book_pdf_edition_verified": true,
+      "book_pdf_visual_verified_date": "2026-11-06"
     },
     {
       "pdp": "012",
@@ -163,16 +297,44 @@
       "sp_from_dskp_original": true,
       "sp_printed_on_book_confirmed": true,
       "teacher_approval": false,
-      "ready": false
+      "ready": false,
+      "book_pdf_visual_sp_confirmed": true,
+      "book_pdf_printed_pages_inspected": [
+        12,
+        13
+      ],
+      "book_pdf_pages_1based": [
+        24,
+        25
+      ],
+      "book_pdf_edition_verified": true,
+      "book_pdf_visual_verified_date": "2026-11-06"
     }
   ],
   "source_page_reviewed_draft_count": 12,
-  "ambiguous_book_sp_pdp": [
-    "002",
-    "004",
+  "ambiguous_book_sp_pdp": [],
+  "final_ready": 0,
+  "release_authorized": false,
+  "text_source_corrob_sp_pdp": [
     "010",
     "011"
   ],
-  "final_ready": 0,
-  "release_authorized": false
+  "book_sp_print_visual_unresolved": [],
+  "book_sp_print_visual_resolved_pdp": [
+    "001",
+    "002",
+    "003",
+    "004",
+    "005",
+    "006",
+    "007",
+    "008",
+    "009",
+    "010",
+    "011",
+    "012"
+  ],
+  "four_sp_approved_at_book_visual_level": true,
+  "visual_original_pdf_all_unit1_candidates_checked": 12,
+  "sp_print_visual_review_scope": "SP visible on at least one printed source page supporting the candidate PdP; not full pedagogic audit."
 }
