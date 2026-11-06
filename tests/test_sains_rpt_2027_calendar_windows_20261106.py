@@ -30,7 +30,7 @@ class SainsRPTCalendarWindowsTests(unittest.TestCase):
         data=json.loads((ROOT/"audits/sains_rpt_2027_calendar_windows_20261106.json")
                         .read_text(encoding="utf-8"))
         self.assertIn("PENDING",data["status"])
-        self.assertIn("do not", " ".join(data["release_constraints"]).lower())
+        self.assertIn("must not", " ".join(data["release_constraints"]).lower())
         with self.assertRaises(ValueError):calendar_for("X")
 
     def test_ten_word_pdf_drafts_keep_group_specific_breaks_and_342_source_pdp(self):
