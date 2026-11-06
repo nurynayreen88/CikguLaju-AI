@@ -302,6 +302,19 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 .daily-rph-footer .notice{margin:0;flex:1 1 220px}
 @media(max-width:560px){.daily-rph-toolbar{align-items:stretch}.daily-rph-toolbar button{width:100%}.daily-rph-card-top{align-items:flex-start}}
 </style>
+<style>
+/* Same visual language as the standard RPH screen; independent source flow. */
+.special-fields-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 18px}
+.special-fields-grid label{margin:13px 0 6px}
+.special-fields-grid input,.special-fields-grid select{width:100%;max-width:100%;padding:12px;border:1px solid #c4d7e2;border-radius:10px;background:white;font:inherit}
+.special-teacher-info{padding:16px 18px;border:1px solid #dce8ef;border-radius:14px;background:#fbfdff;margin:20px 0}
+.special-teacher-info h3{margin:0}
+#special-show{padding:12px 18px;border:0;border-radius:10px;background:#087568;color:white;font:inherit;font-weight:750;cursor:pointer}
+#special-show:disabled{opacity:.5;cursor:not-allowed}
+.special-materials{border:1px solid #cfe3e4;padding:17px;border-radius:15px;background:#fbfcfc;margin-top:18px}
+.special-materials ul{padding:0;display:grid;gap:10px;list-style:none}
+@media(max-width:700px){.special-fields-grid{grid-template-columns:1fr}.special-teacher-info{padding:12px}}
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -322,6 +335,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
     <button type="button" class="sidebar-tab" data-web-view="account" aria-controls="view-account"><span aria-hidden="true">👤</span> Profil &amp; Akses</button>
     <button type="button" class="sidebar-tab is-active" data-web-view="today" aria-controls="view-today" aria-current="page"><span aria-hidden="true">📆</span> RPH Hari Ini</button>
     <button type="button" class="sidebar-tab" data-web-view="rph" aria-controls="view-rph"><span aria-hidden="true">📘</span> Sediakan RPH</button>
+    <button type="button" class="sidebar-tab" data-web-view="special" aria-controls="view-special"><span aria-hidden="true">🌱</span> RPH Aktiviti Khas</button>
     <button type="button" class="sidebar-tab" data-web-view="rpt" aria-controls="view-rpt"><span aria-hidden="true">📅</span> RPT 2027</button>
     <button type="button" class="sidebar-tab" data-web-view="payment" aria-controls="view-payment"><span aria-hidden="true">🏆</span> Rakan Pembangun</button>
     <button type="button" class="sidebar-tab" data-web-view="referral" aria-controls="view-referral"><span aria-hidden="true">🎁</span> Referral Saya</button>
@@ -353,6 +367,36 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </section>
 <section id="view-rph" class="app-view" aria-labelledby="view-rph-heading">
 <h2 id="view-rph-heading">Sediakan RPH</h2><p id="account-access" class="notice" role="status"></p><section class="rph-guide" aria-label="Cara menyediakan RPH"><h3>Cara menyediakan RPH</h3><p><strong>1.</strong> Pilih Tahun → Subjek → Unit/Tajuk → Lesson/PdP.</p><p><strong>2.</strong> Pilih kelas, tarikh, waktu mula/tamat dan bilangan murid jika perlu.</p><p><strong>3.</strong> Tekan <strong>Jana Bahan</strong> untuk melihat RPH PDF, RPH Word, Buku Teks, Audio dan Buku Aktiviti yang tersedia bagi Lesson/PdP ini, kemudian muat turun bahan pilihan.</p><p class="notice">Hanya RPH yang mempunyai sumber lengkap tersedia. 10 janaan RPH percuma dikongsi antara Web dan Telegram. Rakan Pembangun yang aktif mendapat akses tanpa had.</p></section><p id="selection-help" class="selection-help" role="status">Mula di bawah dengan memilih Tahun.</p><label for="year">Langkah 1 — Pilih Tahun</label><select id="year"><option value="">Pilih Tahun</option><option value="1">Tahun 1</option><option value="2">Tahun 2</option><option value="3">Tahun 3</option><option value="4">Tahun 4</option><option value="5">Tahun 5</option><option value="6">Tahun 6</option></select><label for="subject">Langkah 2 — Pilih Subjek</label><select id="subject" disabled><option value="">Pilih Tahun dahulu</option></select><label for="component" id="component-label" hidden>Pilih komponen PJPK (PJ atau PK)</label><select id="component" hidden disabled><option value="">Pilih PJ atau PK</option></select><label for="theme" id="theme-label" hidden>Langkah 3 — Pilih Tema</label><select id="theme" hidden disabled><option value="">Pilih Tema</option></select><label for="unit" id="unit-label" hidden>Langkah 3 — Pilih Unit/Tajuk</label><select id="unit" hidden disabled><option value="">Pilih Subjek dahulu</option></select><label for="topic" id="topic-label" hidden>Langkah 5 — Pilih Tajuk</label><select id="topic" hidden disabled><option value="">Pilih Tajuk</option></select><label for="lesson" id="lesson-label" hidden>Langkah 4 — Pilih Lesson/PdP</label><select id="lesson" hidden disabled><option value="">Pilih Subjek dahulu</option></select><p id="catalog-status" class="notice" role="status"></p><p id="lesson-source-pages" class="notice" role="status" hidden></p><button id="show-materials" type="button" hidden disabled>Jana Bahan</button><section id="teacher-info" hidden aria-label="Maklumat kelas, masa dan murid"><h3>Langkah 5 — Maklumat RPH</h3><p>Isi maklumat PdP jika ada. Maklumat yang diisi akan dicetak dalam RPH Word atau PDF.</p><label for="teacher-class">Pilih Kelas</label><select id="teacher-class"><option value="">Pilih kelas (pilihan)</option><option value="__other__">+ Isi nama kelas lain</option></select><div id="teacher-class-other-wrap" hidden><label for="teacher-class-other">Nama Kelas Lain</label><input id="teacher-class-other" type="text" maxlength="40" autocomplete="off" placeholder="Contoh: 4 Bestari"></div><p class="notice" id="teacher-class-hint">Kelas yang disimpan dalam Profil Guru akan disenaraikan secara automatik.</p><label for="teacher-date">Tarikh PdP</label><input id="teacher-date" type="date"><div class="rph-time-fields"><div><label for="teacher-time-start">Waktu Mula</label><input id="teacher-time-start" type="time" step="60"></div><div><label for="teacher-time-end">Waktu Tamat</label><input id="teacher-time-end" type="time" step="60"></div></div><p class="notice">Jika isi masa, lengkapkan kedua-dua waktu mula dan tamat. Waktu tamat mestilah selepas waktu mula.</p><label for="teacher-students">Bilangan Murid</label><input id="teacher-students" type="number" min="1" max="200" step="1" inputmode="numeric" placeholder="Contoh: 32"><p class="notice">Bilangan murid adalah pilihan; masukkan jumlah sebenar kelas (1–200).</p></section><div id="rph-download-actions" hidden><button id="rph-word" type="button" disabled>Jana RPH Word</button> <button id="rph-pdf" type="button" disabled>Jana RPH PDF</button></div><p id="rph-download-status" class="notice" role="status" aria-live="polite"></p><section id="materials-panel" hidden aria-live="polite"><h3>Bahan untuk Lesson/PdP dipilih</h3><p id="materials-status" class="notice" role="status"></p><ul id="materials-list"></ul><button id="download-all" type="button" hidden disabled>Muat Turun Semua</button></section></section>
+<section id="view-special" class="app-view" aria-labelledby="view-special-heading" hidden>
+ <h2 id="view-special-heading">RPH Aktiviti Khas</h2>
+ <p>Pilih <strong>Program Transisi Tahun 1</strong> atau <strong>Selepas Tamat Sukatan</strong>. Ini aktiviti tambahan; bukan Unit, Lesson/PdP atau SK/SP rasmi. Sumber Telegram dan Web adalah sama.</p>
+ <p class="notice"><strong>DRAF UNTUK SEMAKAN GURU:</strong> 20 aktiviti Transisi Tahun 1 dan 39 aktiviti Tamat Sukatan mengikut 13 subjek serta tahap Tahun 1–2, 3–4 dan 5–6. Fail Word/PDF memaparkan label DRAF.</p>
+ <div class="special-fields-grid">
+  <div><label for="special-kind">Jenis Aktiviti</label><select id="special-kind"><option value="">Pilih Jenis</option><option value="TRANSISI_TAHUN_1">Minggu Transisi Tahun 1</option><option value="SELEPAS_TAMAT_SUKATAN">Selepas Tamat Sukatan</option></select></div>
+  <div><label for="special-year">Tahun</label><select id="special-year" disabled><option value="">Pilih Jenis dahulu</option></select></div>
+  <div id="special-phase-wrap" hidden><label for="special-phase">Fasa Transisi</label><select id="special-phase" disabled><option value="">Pilih Fasa</option></select></div>
+  <div id="special-subject-wrap" hidden><label for="special-subject">Subjek</label><select id="special-subject" disabled><option value="">Pilih Subjek</option></select></div>
+  <div id="special-activity-wrap" hidden><label for="special-activity">Aktiviti</label><select id="special-activity" disabled><option value="">Pilih Aktiviti</option></select></div>
+ </div>
+ <p id="special-status" class="notice" role="status" aria-live="polite">Pilih jenis aktiviti dan Tahun.</p>
+ <section class="special-teacher-info" aria-label="Maklumat RPH Aktiviti Khas">
+  <h3>Maklumat RPH</h3>
+  <p class="notice">Nama kelas boleh dipilih daripada kelas yang disimpan di Profil Guru. Tarikh dalam Word/PDF dicetak sebagai DD/MM/YYYY.</p>
+  <div class="special-fields-grid">
+   <div><label for="special-class">Nama Kelas</label><input id="special-class" type="text" maxlength="40" autocomplete="off" list="special-class-hints" placeholder="Contoh: 4 Bestari"><datalist id="special-class-hints"></datalist></div>
+   <div><label for="special-date">Tarikh PdP</label><input id="special-date" type="date"></div>
+   <div><label for="special-start">Waktu Mula</label><input id="special-start" type="time"></div>
+   <div><label for="special-end">Waktu Tamat</label><input id="special-end" type="time"></div>
+   <div><label for="special-students">Bilangan Murid</label><input id="special-students" type="number" min="1" max="200" step="1" placeholder="Contoh: 32"></div>
+  </div>
+ </section>
+ <button type="button" id="special-show" disabled>Jana Bahan</button>
+ <section id="special-materials" class="special-materials" hidden aria-live="polite">
+  <h3>Bahan untuk aktiviti dipilih</h3>
+  <ul id="special-materials-list"></ul>
+  <p class="notice" id="special-materials-note" role="status"></p>
+ </section>
+</section>
 <section id="view-rpt" class="app-view" aria-labelledby="rpt2027-heading" hidden>
 <section id="rpt2027-panel" aria-labelledby="rpt2027-heading"><h3 id="rpt2027-heading">📅 RPT 2027 — Semua Subjek</h3><p>Pilih subjek dan tahun. <strong>Nama dan logo sekolah daripada Profil Guru akan dimasukkan secara automatik pada lembaran pertama RPT.</strong> RPT adalah untuk Rakan Pembangun yang disahkan atau pelanggan berlangganan aktif. Fail bertanda DRAF/SEMENTARA masih dalam semakan.</p><label for="rpt-subject">Subjek RPT</label><select id="rpt-subject" disabled><option value="">Memuatkan senarai subjek…</option></select><label for="rpt-year">Tahun RPT</label><select id="rpt-year" disabled><option value="">Pilih Subjek dahulu</option></select><button id="rpt-download" type="button" disabled>Muat turun RPT 2027 (PDF)</button><a id="rpt-download-mobile" href="#" target="_blank" rel="noopener" aria-label="Muat turun RPT 2027 PDF melalui pautan terus" hidden>📥 Muat Turun RPT 2027 (PDF)</a><p id="rpt-status" class="notice" role="status"></p><p class="notice rpt-phone-help">Pada telefon, PDF boleh dibuka pada tab baharu atau disimpan terus mengikut tetapan pelayar. Jika PDF dibuka, pilih Simpan atau Muat Turun dalam menu pelayar.</p></section></section>
 <section id="view-account" class="app-view" aria-labelledby="view-account-heading" hidden>
@@ -502,7 +546,7 @@ function canGenerateRph(){
   (rphAccessMode==="trial"&&rphTrialRemaining!==null&&rphTrialRemaining>0);
 }
 const webViewButtons=Array.from(document.querySelectorAll("[data-web-view]"));
-const webViews=new Map([["today","view-today"],["rph","view-rph"],["rpt","view-rpt"],["account","view-account"],["payment","view-payment"],["referral","view-referral"],["guide","view-guide"]]);
+const webViews=new Map([["today","view-today"],["rph","view-rph"],["special","view-special"],["rpt","view-rpt"],["account","view-account"],["payment","view-payment"],["referral","view-referral"],["guide","view-guide"]]);
 /* Only the original curriculum dropdowns and material actions are moved
  * into a timetable card. The "Sediakan RPH" page itself NEVER moves, opens
  * or renders inside RPH Hari Ini. Event listeners and native APIs are reused.
@@ -1227,5 +1271,6 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 <script src="/assets/teacher-profile.js?v=profile-no-avatar-20261106"></script>
 <script src="/assets/web-payment.js?v=rakan-only-percent-20261106"></script>
 <script src="/assets/web-referral.js?v=20261106"></script>
+<script src="/assets/special-activities.js?v=source-draft-20261106"></script>
 </body>
 </html>
