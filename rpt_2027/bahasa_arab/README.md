@@ -89,3 +89,8 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 - Staging kini 138 RPH DRAF; unit4 Y5 masih tiada RPH, RPT 2027/kelulusan individu belum disahkan. Ujian A4 138 dokumen perlu dijalankan.
 
 - [Ujian teknikal 138 RPH Word + PDF A4 berjaya](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42132565716). Kemahiran Arab, sumber visual, susunan RPT 2027 dan kelulusan PdP demi PdP belum FINAL READY.
+
+## Tahun 5 Unit 4 (6 November 2026)
+- 16 draf baharu PdP045–060 Unit **رفقا بالحيوانات!** berdasarkan latihan buku teks DBP/KPM 2020 pp86–110 dan kod SP cadangan; peta `year5_unit4_pdp045_060_DRAF.csv` dan bukti `audits/bahasa_arab_y5_unit4_pdp045_060_text_source_audit_20261106.json`.
+- 154 RPH keseluruhan, 60 Tahun5 merentasi empat unit, **0 FINAL READY**. RPT 2027/Kumpulan A/B dan kelulusan guru belum selesai. CI 138 lulus; tambahan sehingga 154 belum diujikan A4.
+- Cabang semakan berasingan; tiada deploy Telegram/Web/DB.

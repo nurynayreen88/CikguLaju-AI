@@ -5,10 +5,10 @@
   "pr_url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/336",
   "completed": {
     "unit_indexes": 20,
-    "draft_rph": 138,
+    "draft_rph": 154,
     "unit2_4_activity_banks": 15,
     "draft_crosswalk": 60,
-    "source_page_draft_reviewed": 138,
+    "source_page_draft_reviewed": 154,
     "preliminary_year6_page_candidates": 0,
     "one_page_A4_docx_pdf_ci_verified": true,
     "render_check_ci": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42132565716",
@@ -27,7 +27,9 @@
     "year5_unit2_candidate_rph": 16,
     "verified_a4_render_for_all_122": true,
     "year5_unit3_candidate_rph": 16,
-    "verified_a4_render_for_all_138": true
+    "verified_a4_render_for_all_138": true,
+    "year5_unit4_candidate_rph": 16,
+    "verified_a4_render_for_all_154": false
   },
   "release_checks": [
     {
@@ -43,17 +45,17 @@
     {
       "id": "full_pdp_coverage",
       "status": "BLOCKED",
-      "detail": "138 draft candidates: Unit1 60 Year2–6; Year4 extra 46 for Units2–4; Year5 Unit2 16, Unit3 16. Year5 Unit4 and Years2,3,6 Units2–4 not authored. All session numbers proposed, not annual RPT 2027 certified."
+      "detail": "154 RPH draft candidates: 60 initial Unit1 across Year2–6, Year4 extra 46 and Year5 Units2–4 extra 48. Years2/3/6 Units2–4 still unwritten. 2027 official annual lesson counts unverified."
     },
     {
       "id": "sk_sp",
       "status": "PARTIAL",
-      "detail": "138 draft SP codes linked to textbook exercise text. Y5 extracurricular Unit3 activity codes checked on printed pages 58–84. Four Year2 SP print OCR uncertainties remain; none individually teacher approved."
+      "detail": "154 candidate code/page mappings (16 new Year5 Unit4 pp86–110); four Year2 printed SP OCR issues and final teacher approvals unresolved."
     },
     {
       "id": "textbook_page_to_pdp",
       "status": "PARTIAL",
-      "detail": "138 draft RPH reference printed pages from source texts. Year5 Unit3 16 new candidates; graphical per-page cross-check and annual RPT 2027 map still missing."
+      "detail": "154 candidate mappings based on source page text; original visual pages, accurate total annual sequence and manual sign-off are pending."
     },
     {
       "id": "rpt_2027_group_A_B",
@@ -63,7 +65,7 @@
     {
       "id": "word_pdf_programmatic_a4",
       "status": "PASS_TECHNICAL_ONLY",
-      "detail": "138 Word and 138 one-page A4 PDF documents generated successfully on https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42132565716. This is technical format testing, not pedagogical/linguistic/manual RPT 2027 approval."
+      "detail": "Historical 138 A4 DOCX+PDF technical pass, run https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42132565716. New total154 NOT yet A4-tested."
     },
     {
       "id": "manual_pedagogic_approval",
@@ -99,6 +101,11 @@
       "id": "year5_unit3_candidate",
       "status": "PARTIAL",
       "detail": "16 source-linked Year5 extracurricular Unit3 draft RPH (PdP029–044) from pp58–84; RPT 2027 total/time and individual visual/pedagogical approval pending."
+    },
+    {
+      "id": "year5_unit4_candidate",
+      "status": "PARTIAL",
+      "detail": "16 provisional Year5 Unit4 drafts from page text 86–110, 0 teacher approved, A4 verification for 154 pending."
     }
   ],
   "years": [
@@ -146,15 +153,14 @@
       "year": 5,
       "units": 4,
       "unit1_draft_rph": 12,
-      "source_page_reviewed_rph": 44,
+      "source_page_reviewed_rph": 60,
       "preliminary_mapping_only": 0,
-      "unwritten_units": [
-        4
-      ],
-      "textbook_issue": "Year5 Unit1 12 text source-reviewed drafts; Unit2 16 candidates pp30–56; Unit3 16 candidates pp58–84 titled extracurricular activities (الأنشطة اللاصفية). Unit4 not authored. RPT 2027 and pedagogical manual approval still pending.",
+      "unwritten_units": [],
+      "textbook_issue": "Year5 60 provisional candidate RPH across four units, including Unit4 pp86–110. Annual RPT 2027, visual page and teacher approval incomplete.",
       "incomplete_units": [
         2,
-        3
+        3,
+        4
       ]
     },
     {
@@ -182,6 +188,7 @@
     "Complete and review full-year PdP/RPH coverage for Units 2, 3, 4 across Years 2–6",
     "Generate dated RPT 2027 Group A and B with school calendar and school profile",
     "Proofread A4 Arabic RTL Word/PDF samples and all release-critical pages",
-    "Approve materials individually against DSKP/book pages and test Telegram-Web parity with DB backup"
+    "Approve materials individually against DSKP/book pages and test Telegram-Web parity with DB backup",
+    "Run A4 DOCX+PDF CI for all 154 drafts; preserve 138 historic result, do not assert success before verified."
   ]
 }
