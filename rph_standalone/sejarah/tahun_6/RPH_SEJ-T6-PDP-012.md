@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan gambar alat muzik dan tarian daripada komuniti berbeza dengan label sumber. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 4: Kaum di Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan contoh alat muzik atau tarian dengan komuniti yang mengamalkannya. Guru menyemak jawapan awal berpandukan 11.1.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 58–63: Alat muzik dan tarian tradisional pelbagai kaum termasuk. Murid memadankan contoh alat muzik atau tarian dengan komuniti yang mengamalkannya. Guru menyemak jawapan awal berpandukan 11.1.3.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid membina galeri budaya yang menerangkan fungsi persembahan dan kepelbagaian amalan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan menghargai keunikan budaya tempatan.
+**Aktiviti 2 (20 min):** Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 58–63. Murid membina galeri budaya yang menerangkan fungsi persembahan dan kepelbagaian amalan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan menghargai keunikan budaya tempatan.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan tiga kad alat muzik atau tarian dengan nama dan sumber. Guru menyemak secara individu menggunakan kata tugas SP 11.1.3 dan nilai K11.1.7, kemudian memberi intervensi kepada murid yang belum tepat.
 

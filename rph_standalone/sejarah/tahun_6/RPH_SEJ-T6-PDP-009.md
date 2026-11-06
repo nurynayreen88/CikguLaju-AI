@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan kad situasi sekolah seperti menghormati undang-undang dan menjaga kesopanan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 3: Rukun Negara.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan tindakan harian mengikut prinsip Rukun Negara yang berkaitan. Guru menyemak jawapan awal berpandukan 10.3.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 44–46: Peranan Rukun Negara dalam perpaduan, toleransi, patriotisme. Murid mengelaskan tindakan harian mengikut prinsip Rukun Negara yang berkaitan. Guru menyemak jawapan awal berpandukan 10.3.3.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid melakonkan penyelesaian konflik kecil secara adil dan menghormati rakan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan Rukun Negara dalam membentuk jati diri rakyat Malaysia.
+**Aktiviti 2 (20 min):** Guru menyediakan soalan semak fakta hlm. 44–46 sebelum pembentangan. Murid melakonkan penyelesaian konflik kecil secara adil dan menghormati rakan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan Rukun Negara dalam membentuk jati diri rakyat Malaysia.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan dua situasi, prinsip berkaitan dan tindakan yang sesuai. Guru menyemak secara individu menggunakan kata tugas SP 10.3.3 dan nilai K10.3.6, kemudian memberi intervensi kepada murid yang belum tepat.
 

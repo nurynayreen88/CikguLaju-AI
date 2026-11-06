@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan peta pentadbiran negeri Malaysia dengan tanda ibu negeri dan bandar diraja. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 2: Negeri-negeri di Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan ibu negeri dengan negeri yang berkenaan menggunakan atlas. Guru menyemak jawapan awal berpandukan 10.2.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 27: perbezaan ibu negeri dan bandar diraja serta peta lokasi dan. Murid memadankan ibu negeri dengan negeri yang berkenaan menggunakan atlas. Guru menyemak jawapan awal berpandukan 10.2.3.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 2. Murid membandingkan ibu negeri dan bandar diraja, serta menjelaskan negeri yang tidak mempunyai bandar diraja. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan menghormati lambang negeri.
+**Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 27 bagi menyokong perbandingan. Murid membandingkan ibu negeri dan bandar diraja, serta menjelaskan negeri yang tidak mempunyai bandar diraja. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan menghormati lambang negeri.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan jadual ibu negeri dan bandar diraja yang tidak dikelirukan. Guru menyemak secara individu menggunakan kata tugas SP 10.2.3 dan nilai K10.2.6, kemudian memberi intervensi kepada murid yang belum tepat.
 

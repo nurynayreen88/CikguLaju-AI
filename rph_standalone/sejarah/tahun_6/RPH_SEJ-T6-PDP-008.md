@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan teks rasmi Rukun Negara beserta matlamat dan lima prinsip. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 3: Rukun Negara.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan matlamat Rukun Negara dengan prinsip yang menyokongnya. Guru menyemak jawapan awal berpandukan 10.3.2.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 39–43: Matlamat dan lima prinsip Rukun Negara, maksud prinsip serta. Murid memadankan matlamat Rukun Negara dengan prinsip yang menyokongnya. Guru menyemak jawapan awal berpandukan 10.3.2.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid melakar peta konsep lima prinsip dan menjelaskan maksud dua prinsip pilihan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan mengamalkan matlamat dan prinsip Rukun Negara dalam kehidupan.
+**Aktiviti 2 (20 min):** Guru menyoal bukti konkrit hlm. 39–43 untuk menguji dapatan murid. Murid melakar peta konsep lima prinsip dan menjelaskan maksud dua prinsip pilihan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan mengamalkan matlamat dan prinsip Rukun Negara dalam kehidupan.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan jadual matlamat dan lima prinsip dengan penerangan. Guru menyemak secara individu menggunakan kata tugas SP 10.3.2 dan nilai K10.3.5, kemudian memberi intervensi kepada murid yang belum tepat.
 

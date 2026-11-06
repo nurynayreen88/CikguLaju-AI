@@ -15,9 +15,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan petikan pengisytiharan Rukun Negara dan gambar kegiatan pelbagai kaum. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 3: Rukun Negara.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina persoalan kajian tentang perpaduan sebelum dan selepas Rukun Negara. Guru menyemak jawapan awal berpandukan 10.3.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 35–46: Kajian kes Rukun Negara ialah olahan guru berpandukan latar. Murid membina persoalan kajian tentang perpaduan sebelum dan selepas Rukun Negara. Guru menyemak jawapan awal berpandukan 10.3.1.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid membandingkan dua sumber dan membentang tiga contoh amalan prinsip di sekolah. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menghayati matlamat dan prinsip Rukun Negara.
+**Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 35–46 bagi menyokong perbandingan. Murid membandingkan dua sumber dan membentang tiga contoh amalan prinsip di sekolah. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menghayati matlamat dan prinsip Rukun Negara.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan laporan kajian kes dua sumber dan tiga aplikasi prinsip. Guru menyemak secara individu menggunakan kata tugas SP 10.3.1, 10.3.2 dan nilai K10.3.4, kemudian memberi intervensi kepada murid yang belum tepat.
 

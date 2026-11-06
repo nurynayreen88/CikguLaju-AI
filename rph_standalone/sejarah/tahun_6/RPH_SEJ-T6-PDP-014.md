@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan petikan cerita rakyat yang dikenal pasti sumbernya. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 4: Kaum di Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun peristiwa penting cerita rakyat menurut urutan naratif. Guru menyemak jawapan awal berpandukan 11.1.5.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 68–71: Cerita rakyat tempatan seperti Si Luncai dan legenda Puteri. Murid menyusun peristiwa penting cerita rakyat menurut urutan naratif. Guru menyemak jawapan awal berpandukan 11.1.5.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid membezakan pengajaran moral cerita dengan fakta sejarah yang memerlukan sumber tambahan. Guru membimbing pembetulan salah faham menggunakan bukti.
+**Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 68–71 bagi menyokong perbandingan. Murid membezakan pengajaran moral cerita dengan fakta sejarah yang memerlukan sumber tambahan. Guru membimbing pembetulan salah faham menggunakan bukti.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan ringkasan cerita empat urutan dan satu nilai murni. Guru menyemak secara individu menggunakan kata tugas SP 11.1.5, kemudian memberi intervensi kepada murid yang belum tepat.
 

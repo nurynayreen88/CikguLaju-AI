@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan kad bendera dan jata negeri serta contoh lagu negeri dari sumber rasmi. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 2: Negeri-negeri di Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan tiga simbol negeri dengan negeri yang betul. Guru menyemak jawapan awal berpandukan 10.2.4.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 28–30: Halaman 28–30 mengenal pasti bendera, lagu dan jata negeri. Murid memadankan tiga simbol negeri dengan negeri yang betul. Guru menyemak jawapan awal berpandukan 10.2.4.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 2. Murid membina galeri lambang negeri dan menjelaskan cara menghormati simbol negeri. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan rasa bangga terhadap warisan negeri-negeri di Malaysia.
+**Aktiviti 2 (20 min):** Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 28–30. Murid membina galeri lambang negeri dan menjelaskan cara menghormati simbol negeri. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan rasa bangga terhadap warisan negeri-negeri di Malaysia.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan tiga kad identiti negeri dengan bendera, lagu dan jata. Guru menyemak secara individu menggunakan kata tugas SP 10.2.4 dan nilai K10.2.7, kemudian memberi intervensi kepada murid yang belum tepat.
 
