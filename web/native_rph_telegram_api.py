@@ -377,6 +377,9 @@ def create_native_rph_blueprint(runtime):
             data=path.read_bytes()
             if fmt=="word":
                 data=compact_web_word_notes(data)
+                if body["subject"]=="SEJARAH":
+                    from web.sejarah_2027_word_compact import compact_sejarah_native_word
+                    data=compact_sejarah_native_word(data)
             if fmt=="pdf":
                 if not data.startswith(b"%PDF-"):
                     raise ValueError("Invalid PDF")

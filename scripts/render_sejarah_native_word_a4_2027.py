@@ -20,6 +20,8 @@ sys.path.insert(0,str(ROOT))
 from qa.english_word_builder_snapshot import _create_rph_word
 from tools.audit_english_rph_word_a4_layout import validate_word_function_snapshot
 from web.sejarah_2027_native_layout_adapter import internal_preview_layout
+from web.sejarah_2027_word_compact import compact_sejarah_native_word
+from web.native_rph_telegram_api import compact_web_word_notes
 
 OUT=ROOT/"output"/"sejarah_native_word_a4_qa"
 TEACHER={"class":"4 Amanah","date":"2027-03-22","time":"08:00-09:00"}
@@ -55,6 +57,11 @@ def run():
             name=f"SEJ_T{y}_PDP_{pdp:03d}"
             target=word/(name+".docx")
             _create_rph_word(doc,sec,state,rows,str(target))
+            # Reproduce the Web-to-Telegram postprocessing on this same
+            # native table document; leave all content intact.
+            raw=target.read_bytes()
+            native=compact_web_word_notes(raw)
+            target.write_bytes(compact_sejarah_native_word(native))
             records.append({"year":y,"pdp":pdp,"name":name,"input_main_chars":len(rows["AKTIVITI UTAMA"])})
     lo=shutil.which("libreoffice") or shutil.which("soffice")
     if not lo:raise RuntimeError("LibreOffice required to measure native Word pagination")
