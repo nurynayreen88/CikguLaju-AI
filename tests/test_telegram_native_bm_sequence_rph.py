@@ -8,7 +8,7 @@ from unittest.mock import Mock, patch
 
 from flask import Flask
 from docx import Document
-from tests.test_telegram_bm_hierarchy_web import seed_native_bm
+from test_telegram_bm_hierarchy_web import seed_native_bm
 from web_v1_dropdown_catalog import bm_sequence_token
 from web.telegram_native_bm_sequence_rph_bridge import (
     _select, _state, create_native_bm_rph_blueprint, SourceUnavailable,
