@@ -225,7 +225,7 @@ def main():
             "textbook_source":"CANDIDATE_NOT_VISUALLY_APPROVED",
             "activity_book_ref":fields["BUKU AKTIVITI / LATIHAN"],
             "activity_book_url":fields["BUKU AKTIVITI URL"],
-            "activity_book_review_status":"TOC_PAGE_VERIFIED_SP_PEDAGOGY_HOLD",
+            "activity_book_review_status":"PRINTED_SP_CODE_MATCH__TEACHER_SIGNOFF_PENDING",
             "rph_academic_status":"DRAF_NOT_APPROVED",
         })
     with (OUTPUT/"MANIFEST_DRAF.csv").open("w",encoding="utf-8-sig",newline="") as f:
