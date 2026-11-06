@@ -39,8 +39,8 @@ class TestScienceYear5SourceBank(unittest.TestCase):
         self.assertIn("Matahari",BANK["3.3.3"]["pupil1"])
         self.assertIn("suis",BANK["5.2.4"]["safety"])
         self.assertIn("guru",BANK["6.1.3"]["safety"])
-        self.assertIn("tidak",BANK["7.1.3"]["safety"])
-        self.assertIn("tidak",BANK["9.1.1"]["safety"])
+        self.assertIn("guru",BANK["7.1.3"]["safety"])
+        self.assertIn("Jangan",BANK["9.1.1"]["safety"])
         self.assertIn("haba",BANK["8.2.2"]["pupil1"])
 
     def test_no_fictional_textbook_pages_and_draft_label(self):
