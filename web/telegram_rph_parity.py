@@ -117,7 +117,7 @@ def build_layout(data,subject_labels):
     meta.update({
         "MATA PELAJARAN":subject_labels[data["subject"]],
         "TAHUN/TINGKATAN":("Year " if english else "Tahun ")+str(data["year"]),
-        "TARIKH":clean(teacher.get("date")) or "________________",
+        "TARIKH":date.fromisoformat(teacher["date"]).strftime("%d/%m/%Y") if teacher.get("date") else "________________",
         "MASA":clean(teacher.get("time")) or "________________",
         "KELAS":clean(teacher.get("class")) or "________________",
         "BILANGAN MURID":clean(teacher.get("students")) or "________________",
