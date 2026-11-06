@@ -200,8 +200,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat menghasilkan lakaran artikel jahitan sarung botol air yang menunjukkan ukuran, kedudukan jahitan, bukaan dan bahan mengikut SP 4.3.3.",
-      "kriteria_kejayaan": "Murid menunjukkan lakaran artikel jahitan dengan ukuran, jenis mata jahitan dan bahan berlabel berdasarkan SP 4.3.3; guru menilai ketepatan reka bentuk dan bukti pembelajaran.",
+      "objektif": "Pada akhir PdP, murid dapat menghasilkan atau menerangkan lakaran artikel jahitan berukuran secara tepat mengikut SP 4.3.3.",
+      "kriteria_kejayaan": "Murid menunjukkan lakaran artikel jahitan berukuran yang mengikut SP 4.3.3 dengan langkah kerja, label dan keselamatan yang sesuai.",
       "bbm": "Contoh jahitan tangan, fabrik perca, jarum dan benang, gunting fabrik, pita ukur, kertas pola; guru menyelia alat tajam",
       "langkah": {
         "set_induksi": {
@@ -210,22 +210,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan contoh lakaran bermaklumat/carta alir dengan label yang diperlukan untuk artikel jahitan sarung botol air. Murid menghasilkan draf pertama berdasarkan keperluan SP 4.3.3."
+          "aktiviti": "Guru mempamerkan lakaran sarung botol air dan artikel jahitan sebenar, membimbing murid menanda ukuran, bukaan, kedudukan sambungan, jenis mata jahitan serta cadangan fabrik. (SP 4.3.3)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid bertukar draf dengan rakan, menyemak label dan urutan menggunakan senarai semak, lalu menghasilkan versi kedua dengan sekurang-kurangnya satu pembetulan bagi SP 4.3.3. Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru."
+          "aktiviti": "Murid melakar artikel jahitan sarung botol air berpandukan ukur lilit dan tinggi botol, melabel tepi sambungan, mata jahitan pilihan dan bahan; rakan menguji kefahaman lakaran. (SP 4.3.3). Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 4.3.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik."
+          "aktiviti": "Guru menyemak lakaran artikel jahitan berukuran sebagai evidens SP 4.3.3; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menunjuk label atau urutan utama dalam lakaran/algoritma yang disiapkan. Guru menyemak bukti SP 4.3.3 dan menyimpan draf."
+          "aktiviti": "Murid menyatakan satu kemahiran daripada Melakar reka bentuk artikel jahitan yang akan dihasilkan dan menunjukkan bukti kerja. Guru merumuskan SP 4.3.3, meminta murid menyimpan hasil dan mengemas alatan."
         }
       },
-      "pbd_evidens": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 4.3.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik.",
+      "pbd_evidens": "Guru menyemak lakaran artikel jahitan berukuran sebagai evidens SP 4.3.3; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan.",
       "keselamatan": "Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -262,13 +262,13 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "lakaran artikel jahitan dengan ukuran, jenis mata jahitan dan bahan berlabel",
+      "artefak_khusus": "lakaran artikel jahitan berukuran",
       "rubrik_pbd_khusus": "kecukupan label, kesesuaian fungsi, logik ukuran dan justifikasi",
       "contoh_projek_cikgulaju": "artikel jahitan sarung botol air",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Artikel Jahitan",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "status_semakan_kualiti": "DRAF_AKTIVITI_SP_DIPERINCI_SEMANTIK_BUKAN_KELULUSAN_VISUAL",
       "specific_sp_task_types": [
         {
           "code": "4.3.3",
@@ -276,8 +276,9 @@
         }
       ],
       "audit_pemurnian_20261106": {
-        "objective_no_unrelated_programming": true,
-        "visual_textbook_individual_approved": false
+        "editorial_specific_activities": true,
+        "teacher_individual_approval": false,
+        "textbook_activity_visual_approved": false
       }
     },
     {
@@ -305,8 +306,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 4.3.4 melalui rubrik semak serta lakaran atau kod yang telah dibaiki, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan rubrik semak serta lakaran atau kod yang telah dibaiki bagi SP 4.3.4; guru menilai kejelasan kelemahan, sebab dan pembetulan.",
+      "objektif": "Pada akhir PdP, murid dapat menghasilkan atau menerangkan lakaran sebelum dan selepas penambahbaikan secara tepat mengikut SP 4.3.4.",
+      "kriteria_kejayaan": "Murid menunjukkan lakaran sebelum dan selepas penambahbaikan yang mengikut SP 4.3.4 dengan langkah kerja, label dan keselamatan yang sesuai.",
       "bbm": "Contoh jahitan tangan, fabrik perca, jarum dan benang, gunting fabrik, pita ukur, kertas pola; guru menyelia alat tajam",
       "langkah": {
         "set_induksi": {
@@ -315,22 +316,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memodelkan penggunaan rubrik untuk menilai dua ciri artikel jahitan sarung botol air. Murid menanda kekuatan dan dua kelemahan pada contoh lakaran/produk bagi SP 4.3.4."
+          "aktiviti": "Guru mempamerkan dua lakaran sarung botol air yang berbeza saiz, jenis bukaan dan ketahanan jahitan; murid memilih tiga kriteria untuk menilai kesesuaian produk. (SP 4.3.4)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menambah baik lakaran, atur cara atau komponen berdasarkan analisis, membandingkan sebelum dan selepas serta menjelaskan sebab keputusan bagi SP 4.3.4. Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru."
+          "aktiviti": "Murid menanda kekuatan dan kelemahan lakaran sendiri, membetulkan kedudukan bukaan atau ukuran, dan menulis sebab penambahbaikan berdasarkan fungsi serta keselamatan pengguna. (SP 4.3.4). Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 4.3.4 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik."
+          "aktiviti": "Guru menyemak lakaran sebelum dan selepas penambahbaikan sebagai evidens SP 4.3.4; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid membandingkan satu perkara sebelum dan selepas pembetulan, kemudian menulis alasan. Guru mengesahkan langkah kerja seterusnya."
+          "aktiviti": "Murid menyatakan satu kemahiran daripada Menilai lakaran yang dipilih dan membuat penambahbaikan dan menunjukkan bukti kerja. Guru merumuskan SP 4.3.4, meminta murid menyimpan hasil dan mengemas alatan."
         }
       },
-      "pbd_evidens": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 4.3.4 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik.",
+      "pbd_evidens": "Guru menyemak lakaran sebelum dan selepas penambahbaikan sebagai evidens SP 4.3.4; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan.",
       "keselamatan": "Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -366,19 +367,24 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "rubrik semak serta lakaran atau kod yang telah dibaiki",
+      "artefak_khusus": "lakaran sebelum dan selepas penambahbaikan",
       "rubrik_pbd_khusus": "kejelasan kelemahan, sebab dan pembetulan",
       "contoh_projek_cikgulaju": "artikel jahitan sarung botol air",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Artikel Jahitan",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "status_semakan_kualiti": "DRAF_AKTIVITI_SP_DIPERINCI_SEMANTIK_BUKAN_KELULUSAN_VISUAL",
       "specific_sp_task_types": [
         {
           "code": "4.3.4",
           "stage": "improve"
         }
-      ]
+      ],
+      "audit_pemurnian_20261106": {
+        "editorial_specific_activities": true,
+        "teacher_individual_approval": false,
+        "textbook_activity_visual_approved": false
+      }
     },
     {
       "pdp": 4,
@@ -505,8 +511,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "amali",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 4.3.6 melalui bukti hasil kerja peringkat semasa dan catatan ujian fungsi, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan bukti hasil kerja peringkat semasa dan catatan ujian fungsi bagi SP 4.3.6; guru menilai pematuhan langkah, keselamatan dan fungsi peringkat semasa.",
+      "objektif": "Pada akhir PdP, murid dapat menghasilkan atau menerangkan artikel jahitan dan senarai semak kemasan secara tepat mengikut SP 4.3.6.",
+      "kriteria_kejayaan": "Murid menunjukkan artikel jahitan dan senarai semak kemasan yang mengikut SP 4.3.6 dengan langkah kerja, label dan keselamatan yang sesuai.",
       "bbm": "Contoh jahitan tangan, fabrik perca, jarum dan benang, gunting fabrik, pita ukur, kertas pola; guru menyelia alat tajam",
       "langkah": {
         "set_induksi": {
@@ -515,22 +521,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk artikel jahitan sarung botol air. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 4.3.6)."
+          "aktiviti": "Guru menunjukkan urutan mengukur fabrik, menanda pola, mencantum dengan mata jahitan tangan dan membuat kemasan; murid menyemak pola serta jarum dan gunting di bawah seliaan. (SP 4.3.6)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid meneruskan bahagian kerja untuk artikel jahitan sarung botol air yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 4.3.6); bukan wajib menyiapkan keseluruhan projek. Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru."
+          "aktiviti": "Murid menghasilkan artikel jahitan bersaiz kecil mengikut pola, memeriksa kekuatan satu sambungan dan kemasan benang; murid merekod pembetulan sebelum menyimpan semua alat tajam. (SP 4.3.6). Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 4.3.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
+          "aktiviti": "Guru menyemak artikel jahitan dan senarai semak kemasan sebagai evidens SP 4.3.6; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menunjukkan hasil atau fungsi bahagian yang disiapkan, mencatat ujian dan mengemas peralatan. Guru merekod tahap penguasaan sesi ini."
+          "aktiviti": "Murid menyatakan satu kemahiran daripada Menghasilkan artikel jahitan secara sistematik dan menggunakan bahan serta alatan yang ses dan menunjukkan bukti kerja. Guru merumuskan SP 4.3.6, meminta murid menyimpan hasil dan mengemas alatan."
         }
       },
-      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 4.3.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
+      "pbd_evidens": "Guru menyemak artikel jahitan dan senarai semak kemasan sebagai evidens SP 4.3.6; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan.",
       "keselamatan": "Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -567,19 +573,24 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "bukti hasil kerja peringkat semasa dan catatan ujian fungsi",
+      "artefak_khusus": "artikel jahitan dan senarai semak kemasan",
       "rubrik_pbd_khusus": "pematuhan langkah, keselamatan dan fungsi peringkat semasa",
       "contoh_projek_cikgulaju": "artikel jahitan sarung botol air",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Artikel Jahitan",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "status_semakan_kualiti": "DRAF_AKTIVITI_SP_DIPERINCI_SEMANTIK_BUKAN_KELULUSAN_VISUAL",
       "specific_sp_task_types": [
         {
           "code": "4.3.6",
           "stage": "make"
         }
-      ]
+      ],
+      "audit_pemurnian_20261106": {
+        "editorial_specific_activities": true,
+        "teacher_individual_approval": false,
+        "textbook_activity_visual_approved": false
+      }
     },
     {
       "pdp": 6,
@@ -605,9 +616,9 @@
       ],
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
-      "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 4.3.7 melalui pembentangan hasil atau dokumentasi proses dan respons soalan, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan pembentangan hasil atau dokumentasi proses dan respons soalan bagi SP 4.3.7; guru menilai kejelasan hujah, bukti ujian dan maklum balas.",
+      "aktiviti_kategori": "pembentangan",
+      "objektif": "Pada akhir PdP, murid dapat menghasilkan atau menerangkan pembentangan artikel jahitan serta respons soalan secara tepat mengikut SP 4.3.7.",
+      "kriteria_kejayaan": "Murid menunjukkan pembentangan artikel jahitan serta respons soalan yang mengikut SP 4.3.7 dengan langkah kerja, label dan keselamatan yang sesuai.",
       "bbm": "Contoh jahitan tangan, fabrik perca, jarum dan benang, gunting fabrik, pita ukur, kertas pola; guru menyelia alat tajam",
       "langkah": {
         "set_induksi": {
@@ -616,22 +627,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan susunan pembentangan produk artikel jahitan sarung botol air: masalah, idea, lakaran, proses kerja, ujian dan penambahbaikan. Murid menyediakan tiga poin serta memilih bukti hasil (SP 4.3.7)."
+          "aktiviti": "Guru menunjukkan contoh sesi demonstrasi artikel jahitan, meminta murid menyusun bukti lakaran, bahan, kos, teknik jahitan dan hasil akhir dalam urutan mudah. (SP 4.3.7)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid mempersembahkan hasil secara lisan, poster atau demonstrasi, menjawab satu soalan rakan dan menulis maklum balas untuk penambahbaikan (SP 4.3.7). Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru."
+          "aktiviti": "Murid memperagakan sarung botol air atau sampel jahitan, menerangkan fungsi mata jahitan yang digunakan, menjawab satu soalan rakan dan mencatat satu penambahbaikan. (SP 4.3.7). Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 4.3.7 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik."
+          "aktiviti": "Guru menyemak pembentangan artikel jahitan serta respons soalan sebagai evidens SP 4.3.7; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu maklum balas daripada pembentangan dan satu tindakan penambahbaikan. Guru menyimpan hasil dokumentasi atau bukti demonstrasi."
+          "aktiviti": "Murid menyatakan satu kemahiran daripada Membuat pembentangan artikel jahitan yang telah dihasilkan dan menunjukkan bukti kerja. Guru merumuskan SP 4.3.7, meminta murid menyimpan hasil dan mengemas alatan."
         }
       },
-      "pbd_evidens": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 4.3.7 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik.",
+      "pbd_evidens": "Guru menyemak pembentangan artikel jahitan serta respons soalan sebagai evidens SP 4.3.7; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan.",
       "keselamatan": "Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -667,19 +678,24 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "pembentangan hasil atau dokumentasi proses dan respons soalan",
+      "artefak_khusus": "pembentangan artikel jahitan serta respons soalan",
       "rubrik_pbd_khusus": "kejelasan hujah, bukti ujian dan maklum balas",
       "contoh_projek_cikgulaju": "artikel jahitan sarung botol air",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Artikel Jahitan",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "status_semakan_kualiti": "DRAF_AKTIVITI_SP_DIPERINCI_SEMANTIK_BUKAN_KELULUSAN_VISUAL",
       "specific_sp_task_types": [
         {
           "code": "4.3.7",
           "stage": "present"
         }
-      ]
+      ],
+      "audit_pemurnian_20261106": {
+        "editorial_specific_activities": true,
+        "teacher_individual_approval": false,
+        "textbook_activity_visual_approved": false
+      }
     },
     {
       "pdp": 7,
@@ -825,8 +841,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat menghasilkan lakaran model kipas solar yang menunjukkan saiz, susunan sel solar, motor dan bilah yang selamat mengikut SP 5.1.3.",
-      "kriteria_kejayaan": "Murid menunjukkan lakaran produk tenaga boleh baharu dengan sambungan komponen dan ukuran anggaran berdasarkan SP 5.1.3; guru menilai ketepatan reka bentuk dan bukti pembelajaran.",
+      "objektif": "Pada akhir PdP, murid dapat menghasilkan atau menerangkan lakaran kipas solar berlabel secara tepat mengikut SP 5.1.3.",
+      "kriteria_kejayaan": "Murid menunjukkan lakaran kipas solar berlabel yang mengikut SP 5.1.3 dengan langkah kerja, label dan keselamatan yang sesuai.",
       "bbm": "Gambar kincir air/angin/sel solar, lakaran, komponen voltan rendah, kad kos, bahan kitar semula",
       "langkah": {
         "set_induksi": {
@@ -835,22 +851,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan contoh lakaran bermaklumat/carta alir dengan label yang diperlukan untuk model kipas kecil menggunakan sel solar. Murid menghasilkan draf pertama berdasarkan keperluan SP 5.1.3."
+          "aktiviti": "Guru menunjukkan lakaran model kipas kecil berkuasa solar dan membincangkan kedudukan sel solar, suis, motor DC, bilah ringan serta cara menyokong komponen dengan selamat. (SP 5.1.3)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid bertukar draf dengan rakan, menyemak label dan urutan menggunakan senarai semak, lalu menghasilkan versi kedua dengan sekurang-kurangnya satu pembetulan bagi SP 5.1.3. Gunakan komponen voltan rendah dan bilah plastik lembut; tidak disambung ke soket utama."
+          "aktiviti": "Murid menghasilkan dua lakaran produk dengan susun atur alternatif, memilih satu reka bentuk dan melabel ukuran, laluan sambungan voltan rendah serta sumber tenaga boleh baharu. (SP 5.1.3). Gunakan komponen voltan rendah dan bilah plastik lembut; tidak disambung ke soket utama."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 5.1.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik."
+          "aktiviti": "Guru menyemak lakaran kipas solar berlabel sebagai evidens SP 5.1.3; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menunjuk label atau urutan utama dalam lakaran/algoritma yang disiapkan. Guru menyemak bukti SP 5.1.3 dan menyimpan draf."
+          "aktiviti": "Murid menyatakan satu kemahiran daripada Melakar reka bentuk produk yang menggunakan tenaga boleh baharu dan menunjukkan bukti kerja. Guru merumuskan SP 5.1.3, meminta murid menyimpan hasil dan mengemas alatan."
         }
       },
-      "pbd_evidens": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 5.1.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik.",
+      "pbd_evidens": "Guru menyemak lakaran kipas solar berlabel sebagai evidens SP 5.1.3; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan.",
       "keselamatan": "Gunakan komponen voltan rendah dan bilah plastik lembut; tidak disambung ke soket utama.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -887,13 +903,13 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "lakaran produk tenaga boleh baharu dengan sambungan komponen dan ukuran anggaran",
+      "artefak_khusus": "lakaran kipas solar berlabel",
       "rubrik_pbd_khusus": "kecukupan label, kesesuaian fungsi, logik ukuran dan justifikasi",
       "contoh_projek_cikgulaju": "model kipas kecil menggunakan sel solar",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "status_semakan_kualiti": "DRAF_AKTIVITI_SP_DIPERINCI_SEMANTIK_BUKAN_KELULUSAN_VISUAL",
       "specific_sp_task_types": [
         {
           "code": "5.1.3",
@@ -901,8 +917,9 @@
         }
       ],
       "audit_pemurnian_20261106": {
-        "objective_no_unrelated_programming": true,
-        "visual_textbook_individual_approved": false
+        "editorial_specific_activities": true,
+        "teacher_individual_approval": false,
+        "textbook_activity_visual_approved": false
       }
     },
     {
@@ -930,8 +947,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 5.1.4 melalui rubrik semak serta lakaran atau kod yang telah dibaiki, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan rubrik semak serta lakaran atau kod yang telah dibaiki bagi SP 5.1.4; guru menilai kejelasan kelemahan, sebab dan pembetulan.",
+      "objektif": "Pada akhir PdP, murid dapat menghasilkan atau menerangkan lakaran kipas solar ditambah baik secara tepat mengikut SP 5.1.4.",
+      "kriteria_kejayaan": "Murid menunjukkan lakaran kipas solar ditambah baik yang mengikut SP 5.1.4 dengan langkah kerja, label dan keselamatan yang sesuai.",
       "bbm": "Gambar kincir air/angin/sel solar, lakaran, komponen voltan rendah, kad kos, bahan kitar semula",
       "langkah": {
         "set_induksi": {
@@ -940,22 +957,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memodelkan penggunaan rubrik untuk menilai dua ciri model kipas kecil menggunakan sel solar. Murid menanda kekuatan dan dua kelemahan pada contoh lakaran/produk bagi SP 5.1.4."
+          "aktiviti": "Guru memodelkan penilaian lakaran kipas solar dari segi kestabilan tapak, kedudukan sel solar, perlindungan bilah dan kesesuaian bekalan tenaga. (SP 5.1.4)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menambah baik lakaran, atur cara atau komponen berdasarkan analisis, membandingkan sebelum dan selepas serta menjelaskan sebab keputusan bagi SP 5.1.4. Gunakan komponen voltan rendah dan bilah plastik lembut; tidak disambung ke soket utama."
+          "aktiviti": "Murid menggunakan borang sesuai/tidak sesuai, memperbaiki satu kekurangan pada lakaran dan membandingkan perubahan untuk fungsi serta keselamatan sebelum pembinaan. (SP 5.1.4). Gunakan komponen voltan rendah dan bilah plastik lembut; tidak disambung ke soket utama."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 5.1.4 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik."
+          "aktiviti": "Guru menyemak lakaran kipas solar ditambah baik sebagai evidens SP 5.1.4; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid membandingkan satu perkara sebelum dan selepas pembetulan, kemudian menulis alasan. Guru mengesahkan langkah kerja seterusnya."
+          "aktiviti": "Murid menyatakan satu kemahiran daripada Menilai lakaran yang dipilih dan membuat penambahbaikan dan menunjukkan bukti kerja. Guru merumuskan SP 5.1.4, meminta murid menyimpan hasil dan mengemas alatan."
         }
       },
-      "pbd_evidens": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 5.1.4 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik.",
+      "pbd_evidens": "Guru menyemak lakaran kipas solar ditambah baik sebagai evidens SP 5.1.4; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan.",
       "keselamatan": "Gunakan komponen voltan rendah dan bilah plastik lembut; tidak disambung ke soket utama.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -991,19 +1008,24 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "rubrik semak serta lakaran atau kod yang telah dibaiki",
+      "artefak_khusus": "lakaran kipas solar ditambah baik",
       "rubrik_pbd_khusus": "kejelasan kelemahan, sebab dan pembetulan",
       "contoh_projek_cikgulaju": "model kipas kecil menggunakan sel solar",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "status_semakan_kualiti": "DRAF_AKTIVITI_SP_DIPERINCI_SEMANTIK_BUKAN_KELULUSAN_VISUAL",
       "specific_sp_task_types": [
         {
           "code": "5.1.4",
           "stage": "improve"
         }
-      ]
+      ],
+      "audit_pemurnian_20261106": {
+        "editorial_specific_activities": true,
+        "teacher_individual_approval": false,
+        "textbook_activity_visual_approved": false
+      }
     },
     {
       "pdp": 10,
@@ -1148,8 +1170,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "amali",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 5.1.7 melalui bukti hasil kerja peringkat semasa dan catatan ujian fungsi, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan bukti hasil kerja peringkat semasa dan catatan ujian fungsi bagi SP 5.1.7; guru menilai pematuhan langkah, keselamatan dan fungsi peringkat semasa.",
+      "objektif": "Pada akhir PdP, murid dapat menghasilkan atau menerangkan model kipas solar dan rekod ujian secara tepat mengikut SP 5.1.7.",
+      "kriteria_kejayaan": "Murid menunjukkan model kipas solar dan rekod ujian yang mengikut SP 5.1.7 dengan langkah kerja, label dan keselamatan yang sesuai.",
       "bbm": "Gambar kincir air/angin/sel solar, lakaran, komponen voltan rendah, kad kos, bahan kitar semula",
       "langkah": {
         "set_induksi": {
@@ -1158,22 +1180,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk model kipas kecil menggunakan sel solar. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 5.1.7)."
+          "aktiviti": "Guru mengulang semak lakaran kipas solar, memodelkan urutan membuat tapak, pemegang motor, bilah ringan dan kedudukan sel solar; murid mengesahkan senarai bahan serta prosedur keselamatan. (SP 5.1.7)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid meneruskan bahagian kerja untuk model kipas kecil menggunakan sel solar yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 5.1.7); bukan wajib menyiapkan keseluruhan projek. Gunakan komponen voltan rendah dan bilah plastik lembut; tidak disambung ke soket utama."
+          "aktiviti": "Murid memasang komponen voltan rendah pada model, memeriksa sambungan sebelum ujian di bawah cahaya sesuai, mencatat sama ada bilah berpusing dan membaiki satu punca gangguan. (SP 5.1.7). Gunakan komponen voltan rendah dan bilah plastik lembut; tidak disambung ke soket utama."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 5.1.7 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
+          "aktiviti": "Guru menyemak model kipas solar dan rekod ujian sebagai evidens SP 5.1.7; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menunjukkan hasil atau fungsi bahagian yang disiapkan, mencatat ujian dan mengemas peralatan. Guru merekod tahap penguasaan sesi ini."
+          "aktiviti": "Murid menyatakan satu kemahiran daripada Membina produk yang menggunakan tenaga boleh baharu berdasarkan lakaran dan menunjukkan bukti kerja. Guru merumuskan SP 5.1.7, meminta murid menyimpan hasil dan mengemas alatan."
         }
       },
-      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 5.1.7 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
+      "pbd_evidens": "Guru menyemak model kipas solar dan rekod ujian sebagai evidens SP 5.1.7; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan.",
       "keselamatan": "Gunakan komponen voltan rendah dan bilah plastik lembut; tidak disambung ke soket utama.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1210,19 +1232,24 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "bukti hasil kerja peringkat semasa dan catatan ujian fungsi",
+      "artefak_khusus": "model kipas solar dan rekod ujian",
       "rubrik_pbd_khusus": "pematuhan langkah, keselamatan dan fungsi peringkat semasa",
       "contoh_projek_cikgulaju": "model kipas kecil menggunakan sel solar",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "status_semakan_kualiti": "DRAF_AKTIVITI_SP_DIPERINCI_SEMANTIK_BUKAN_KELULUSAN_VISUAL",
       "specific_sp_task_types": [
         {
           "code": "5.1.7",
           "stage": "make"
         }
-      ]
+      ],
+      "audit_pemurnian_20261106": {
+        "editorial_specific_activities": true,
+        "teacher_individual_approval": false,
+        "textbook_activity_visual_approved": false
+      }
     },
     {
       "pdp": 12,
@@ -1233,7 +1260,7 @@
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 2,
       "unit_label": "Unit 2: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
-      "tajuk": "PdP 012: Membentangkan produk yang menggunakan tenaga boleh baharu yang dihasilkan. Cadangan Produk",
+      "tajuk": "PdP 012: Membentangkan produk menggunakan tenaga boleh baharu",
       "sk": [
         "5.1"
       ],
@@ -1249,8 +1276,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "pembentangan",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 5.1.8 melalui pembentangan hasil atau dokumentasi proses dan respons soalan, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan pembentangan hasil atau dokumentasi proses dan respons soalan bagi SP 5.1.8; guru menilai kejelasan hujah, bukti ujian dan maklum balas.",
+      "objektif": "Pada akhir PdP, murid dapat menghasilkan atau menerangkan demonstrasi tenaga boleh baharu dan jawapan soal jawab secara tepat mengikut SP 5.1.8.",
+      "kriteria_kejayaan": "Murid menunjukkan demonstrasi tenaga boleh baharu dan jawapan soal jawab yang mengikut SP 5.1.8 dengan langkah kerja, label dan keselamatan yang sesuai.",
       "bbm": "Gambar kincir air/angin/sel solar, lakaran, komponen voltan rendah, kad kos, bahan kitar semula",
       "langkah": {
         "set_induksi": {
@@ -1259,22 +1286,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan susunan pembentangan produk model kipas kecil menggunakan sel solar: masalah, idea, lakaran, proses kerja, ujian dan penambahbaikan. Murid menyediakan tiga poin serta memilih bukti hasil (SP 5.1.8)."
+          "aktiviti": "Guru menyusun bukti projek tenaga boleh baharu: masalah penggunaan tenaga, pilihan sel solar, lakaran, sambungan, ujian fungsi dan rekod kos; murid berlatih penerangan dua minit. (SP 5.1.8)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid mempersembahkan hasil secara lisan, poster atau demonstrasi, menjawab satu soalan rakan dan menulis maklum balas untuk penambahbaikan (SP 5.1.8). Gunakan komponen voltan rendah dan bilah plastik lembut; tidak disambung ke soket utama."
+          "aktiviti": "Murid mendemonstrasikan model kipas solar atau simulasi, menerangkan bagaimana tenaga cahaya digunakan, menjawab pertanyaan rakan dan mencadangkan satu pembaikan fungsi. (SP 5.1.8). Gunakan komponen voltan rendah dan bilah plastik lembut; tidak disambung ke soket utama."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 5.1.8 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik."
+          "aktiviti": "Guru menyemak demonstrasi tenaga boleh baharu dan jawapan soal jawab sebagai evidens SP 5.1.8; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu maklum balas daripada pembentangan dan satu tindakan penambahbaikan. Guru menyimpan hasil dokumentasi atau bukti demonstrasi."
+          "aktiviti": "Murid menyatakan satu kemahiran daripada Membentangkan produk yang menggunakan tenaga boleh baharu yang dihasilkan Cadangan Produk dan menunjukkan bukti kerja. Guru merumuskan SP 5.1.8, meminta murid menyimpan hasil dan mengemas alatan."
         }
       },
-      "pbd_evidens": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 5.1.8 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik.",
+      "pbd_evidens": "Guru menyemak demonstrasi tenaga boleh baharu dan jawapan soal jawab sebagai evidens SP 5.1.8; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan.",
       "keselamatan": "Gunakan komponen voltan rendah dan bilah plastik lembut; tidak disambung ke soket utama.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1310,19 +1337,24 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "pembentangan hasil atau dokumentasi proses dan respons soalan",
+      "artefak_khusus": "demonstrasi tenaga boleh baharu dan jawapan soal jawab",
       "rubrik_pbd_khusus": "kejelasan hujah, bukti ujian dan maklum balas",
       "contoh_projek_cikgulaju": "model kipas kecil menggunakan sel solar",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "status_semakan_kualiti": "DRAF_AKTIVITI_SP_DIPERINCI_SEMANTIK_BUKAN_KELULUSAN_VISUAL",
       "specific_sp_task_types": [
         {
           "code": "5.1.8",
           "stage": "present"
         }
-      ]
+      ],
+      "audit_pemurnian_20261106": {
+        "editorial_specific_activities": true,
+        "teacher_individual_approval": false,
+        "textbook_activity_visual_approved": false
+      }
     },
     {
       "pdp": 13,
@@ -1473,8 +1505,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.3.3, 6.3.4 melalui dua penerangan fungsi atau sebab dalam jadual banding beza; lakaran berlabel atau algoritma/carta alir berurutan, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan dua penerangan fungsi atau sebab dalam jadual banding beza; lakaran berlabel atau algoritma/carta alir berurutan bagi SP 6.3.3, 6.3.4; guru menilai ketepatan penerangan dan satu justifikasi; kelengkapan maklumat dan langkah reka bentuk.",
+      "objektif": "Pada akhir PdP, murid dapat menghasilkan atau menerangkan pseudokod atau carta alir pilihan/ulangan secara tepat mengikut SP 6.3.3, 6.3.4.",
+      "kriteria_kejayaan": "Murid menunjukkan pseudokod atau carta alir pilihan/ulangan yang mengikut SP 6.3.3, 6.3.4 dengan langkah kerja, label dan keselamatan yang sesuai.",
       "bbm": "Kad pseudokod dan carta alir, komputer atau simulasi, mikropengawal, papan uji, LED, motor DC kecil, wayar voltan rendah",
       "langkah": {
         "set_induksi": {
@@ -1483,22 +1515,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 6.3.3 menggunakan Kad pseudokod dan carta alir, komputer atau simulasi, mikropengawal, papan uji, LED, motor DC kecil, wayar voltan rendah. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 6.3.3 menggunakan dua contoh dan satu sebab yang munasabah."
+          "aktiviti": "Guru menyediakan tiga contoh algoritma mudah: jujukan menyalakan LED, pilihan jika butang ditekan, dan ulangan lampu berkelip; murid mengelaskan aliran kawalan serta menjelaskan bezanya. (SP 6.3.3)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 6.3.4 dan merekod pemerhatian. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 6.3.4 dan menyemak ketepatan maklumatnya. Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
+          "aktiviti": "Murid memilih satu situasi lampu amaran lalu menulis pseudokod atau melakar carta alir yang memasukkan syarat pilihan dan ulangan dengan simbol yang sesuai; rakan menyemak urutan serta syarat. (SP 6.3.3, 6.3.4). Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza; lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak ketepatan penerangan dan satu justifikasi; kelengkapan maklumat dan langkah reka bentuk mengikut SP 6.3.3, 6.3.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak pseudokod atau carta alir pilihan/ulangan sebagai evidens SP 6.3.3, 6.3.4; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menunjuk label atau urutan utama dalam lakaran/algoritma yang disiapkan. Guru menyemak bukti SP 6.3.3, 6.3.4 dan menyimpan draf."
+          "aktiviti": "Murid menyatakan satu kemahiran daripada Membezakan struktur kawalan jujukan, pilihan dan ulangan melalui algoritma dengan kaedah p dan menunjukkan bukti kerja. Guru merumuskan SP 6.3.3, 6.3.4, meminta murid menyimpan hasil dan mengemas alatan."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza; lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak ketepatan penerangan dan satu justifikasi; kelengkapan maklumat dan langkah reka bentuk mengikut SP 6.3.3, 6.3.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak pseudokod atau carta alir pilihan/ulangan sebagai evidens SP 6.3.3, 6.3.4; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan.",
       "keselamatan": "Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1544,13 +1576,13 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "dua penerangan fungsi atau sebab dalam jadual banding beza; lakaran berlabel atau algoritma/carta alir berurutan",
+      "artefak_khusus": "pseudokod atau carta alir pilihan/ulangan",
       "rubrik_pbd_khusus": "ketepatan penerangan dan satu justifikasi; kelengkapan maklumat dan langkah reka bentuk",
       "contoh_projek_cikgulaju": "atur cara lampu amaran dan pembaz mikropengawal",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Pengaturcaraan",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "DRAF_AKTIVITI_SP_DIPERINCI_SEMANTIK_BUKAN_KELULUSAN_VISUAL",
       "specific_sp_task_types": [
         {
           "code": "6.3.3",
@@ -1560,7 +1592,12 @@
           "code": "6.3.4",
           "stage": "sketch"
         }
-      ]
+      ],
+      "audit_pemurnian_20261106": {
+        "editorial_specific_activities": true,
+        "teacher_individual_approval": false,
+        "textbook_activity_visual_approved": false
+      }
     },
     {
       "pdp": 15,
@@ -1686,9 +1723,9 @@
       ],
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
-      "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.3.6 melalui pembentangan hasil atau dokumentasi proses dan respons soalan, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan pembentangan hasil atau dokumentasi proses dan respons soalan bagi SP 6.3.6; guru menilai kejelasan hujah, bukti ujian dan maklum balas.",
+      "aktiviti_kategori": "pembentangan",
+      "objektif": "Pada akhir PdP, murid dapat menghasilkan atau menerangkan pembentangan pembetulan algoritma secara tepat mengikut SP 6.3.6.",
+      "kriteria_kejayaan": "Murid menunjukkan pembentangan pembetulan algoritma yang mengikut SP 6.3.6 dengan langkah kerja, label dan keselamatan yang sesuai.",
       "bbm": "Kad pseudokod dan carta alir, komputer atau simulasi, mikropengawal, papan uji, LED, motor DC kecil, wayar voltan rendah",
       "langkah": {
         "set_induksi": {
@@ -1697,22 +1734,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan susunan pembentangan produk atur cara lampu amaran dan pembaz mikropengawal: masalah, idea, lakaran, proses kerja, ujian dan penambahbaikan. Murid menyediakan tiga poin serta memilih bukti hasil (SP 6.3.6)."
+          "aktiviti": "Guru mempamerkan contoh pseudokod dan carta alir sebelum/selepas ralat dibetulkan, membimbing murid menyusun isi penting: situasi, ralat, pembaikan dan kesan kepada output. (SP 6.3.6)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid mempersembahkan hasil secara lisan, poster atau demonstrasi, menjawab satu soalan rakan dan menulis maklum balas untuk penambahbaikan (SP 6.3.6). Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
+          "aktiviti": "Murid membentangkan algoritma yang ditambah baik secara lisan atau poster, menerangkan satu ralat yang dikesan serta cara membetulkannya, kemudian menjawab satu soalan rakan. (SP 6.3.6). Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 6.3.6 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik."
+          "aktiviti": "Guru menyemak pembentangan pembetulan algoritma sebagai evidens SP 6.3.6; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu maklum balas daripada pembentangan dan satu tindakan penambahbaikan. Guru menyimpan hasil dokumentasi atau bukti demonstrasi."
+          "aktiviti": "Murid menyatakan satu kemahiran daripada Membuat pembentangan hasil yang telah ditambahbaik dan menunjukkan bukti kerja. Guru merumuskan SP 6.3.6, meminta murid menyimpan hasil dan mengemas alatan."
         }
       },
-      "pbd_evidens": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 6.3.6 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik.",
+      "pbd_evidens": "Guru menyemak pembentangan pembetulan algoritma sebagai evidens SP 6.3.6; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan.",
       "keselamatan": "Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1748,19 +1785,24 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "pembentangan hasil atau dokumentasi proses dan respons soalan",
+      "artefak_khusus": "pembentangan pembetulan algoritma",
       "rubrik_pbd_khusus": "kejelasan hujah, bukti ujian dan maklum balas",
       "contoh_projek_cikgulaju": "atur cara lampu amaran dan pembaz mikropengawal",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Pengaturcaraan",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "status_semakan_kualiti": "DRAF_AKTIVITI_SP_DIPERINCI_SEMANTIK_BUKAN_KELULUSAN_VISUAL",
       "specific_sp_task_types": [
         {
           "code": "6.3.6",
           "stage": "present"
         }
-      ]
+      ],
+      "audit_pemurnian_20261106": {
+        "editorial_specific_activities": true,
+        "teacher_individual_approval": false,
+        "textbook_activity_visual_approved": false
+      }
     },
     {
       "pdp": 17,
@@ -1988,8 +2030,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.4.3 melalui lakaran berlabel atau algoritma/carta alir berurutan, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan lakaran berlabel atau algoritma/carta alir berurutan bagi SP 6.4.3; guru menilai kelengkapan maklumat dan langkah reka bentuk.",
+      "objektif": "Pada akhir PdP, murid dapat menghasilkan atau menerangkan carta alir mikropengawal cahaya-bunyi-pergerakan secara tepat mengikut SP 6.4.3.",
+      "kriteria_kejayaan": "Murid menunjukkan carta alir mikropengawal cahaya-bunyi-pergerakan yang mengikut SP 6.4.3 dengan langkah kerja, label dan keselamatan yang sesuai.",
       "bbm": "Kad pseudokod dan carta alir, komputer atau simulasi, mikropengawal, papan uji, LED, motor DC kecil, wayar voltan rendah",
       "langkah": {
         "set_induksi": {
@@ -1998,22 +2040,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan contoh lakaran bermaklumat/carta alir dengan label yang diperlukan untuk atur cara lampu amaran dan pembaz mikropengawal. Murid menghasilkan draf pertama berdasarkan keperluan SP 6.4.3."
+          "aktiviti": "Guru menunjukkan carta alir kawalan mikropengawal yang menghidupkan LED, pembaz dan motor kecil mengikut satu input; murid mengenal pasti simbol mula, proses, keputusan dan aliran. (SP 6.4.3)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid bertukar draf dengan rakan, menyemak label dan urutan menggunakan senarai semak, lalu menghasilkan versi kedua dengan sekurang-kurangnya satu pembetulan bagi SP 6.4.3. Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
+          "aktiviti": "Murid menghasilkan carta alir berlabel untuk satu senario cahaya, bunyi dan pergerakan, menelusuri laluan input-output secara berpasangan dan membetulkan satu cabang yang salah. (SP 6.4.3). Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 6.4.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik."
+          "aktiviti": "Guru menyemak carta alir mikropengawal cahaya-bunyi-pergerakan sebagai evidens SP 6.4.3; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menunjuk label atau urutan utama dalam lakaran/algoritma yang disiapkan. Guru menyemak bukti SP 6.4.3 dan menyimpan draf."
+          "aktiviti": "Murid menyatakan satu kemahiran daripada Menghasilkan carta alir kawalan perkakasan yang mengeluarkan cahaya, bunyi dan pergerakan dan menunjukkan bukti kerja. Guru merumuskan SP 6.4.3, meminta murid menyimpan hasil dan mengemas alatan."
         }
       },
-      "pbd_evidens": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 6.4.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik.",
+      "pbd_evidens": "Guru menyemak carta alir mikropengawal cahaya-bunyi-pergerakan sebagai evidens SP 6.4.3; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan.",
       "keselamatan": "Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2050,19 +2092,24 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "lakaran berlabel atau algoritma/carta alir berurutan",
+      "artefak_khusus": "carta alir mikropengawal cahaya-bunyi-pergerakan",
       "rubrik_pbd_khusus": "kelengkapan maklumat dan langkah reka bentuk",
       "contoh_projek_cikgulaju": "atur cara lampu amaran dan pembaz mikropengawal",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Pengaturcaraan",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "status_semakan_kualiti": "DRAF_AKTIVITI_SP_DIPERINCI_SEMANTIK_BUKAN_KELULUSAN_VISUAL",
       "specific_sp_task_types": [
         {
           "code": "6.4.3",
           "stage": "sketch"
         }
-      ]
+      ],
+      "audit_pemurnian_20261106": {
+        "editorial_specific_activities": true,
+        "teacher_individual_approval": false,
+        "textbook_activity_visual_approved": false
+      }
     },
     {
       "pdp": 20,
@@ -2089,8 +2136,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "uji_atur_cara",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.4.4 melalui bukti hasil kerja peringkat semasa dan catatan ujian fungsi, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan bukti hasil kerja peringkat semasa dan catatan ujian fungsi bagi SP 6.4.4; guru menilai pematuhan langkah, keselamatan dan fungsi peringkat semasa.",
+      "objektif": "Pada akhir PdP, murid dapat menghasilkan atau menerangkan atur cara dan keputusan simulasi secara tepat mengikut SP 6.4.4.",
+      "kriteria_kejayaan": "Murid menunjukkan atur cara dan keputusan simulasi yang mengikut SP 6.4.4 dengan langkah kerja, label dan keselamatan yang sesuai.",
       "bbm": "Kad pseudokod dan carta alir, komputer atau simulasi, mikropengawal, papan uji, LED, motor DC kecil, wayar voltan rendah",
       "langkah": {
         "set_induksi": {
@@ -2099,22 +2146,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk atur cara lampu amaran dan pembaz mikropengawal. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 6.4.4)."
+          "aktiviti": "Guru memodelkan pemindahan setiap langkah carta alir kepada blok kod atau arahan dalam perisian mikropengawal; murid menandakan tiga blok yang sepadan dengan output LED, pembaz dan motor. (SP 6.4.4)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid meneruskan bahagian kerja untuk atur cara lampu amaran dan pembaz mikropengawal yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 6.4.4); bukan wajib menyiapkan keseluruhan projek. Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
+          "aktiviti": "Murid membina atur cara mengikut carta alir, menjalankan simulasi atau ujian tanpa perkakasan kuasa utama, dan mencatat satu penambahbaikan pada turutan atau tempoh output. (SP 6.4.4). Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 6.4.4 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
+          "aktiviti": "Guru menyemak atur cara dan keputusan simulasi sebagai evidens SP 6.4.4; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menunjukkan hasil atau fungsi bahagian yang disiapkan, mencatat ujian dan mengemas peralatan. Guru merekod tahap penguasaan sesi ini."
+          "aktiviti": "Murid menyatakan satu kemahiran daripada Membina atur cara yang dikehendaki berpandukan carta alir yang dibuat dan menunjukkan bukti kerja. Guru merumuskan SP 6.4.4, meminta murid menyimpan hasil dan mengemas alatan."
         }
       },
-      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 6.4.4 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
+      "pbd_evidens": "Guru menyemak atur cara dan keputusan simulasi sebagai evidens SP 6.4.4; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan.",
       "keselamatan": "Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2151,19 +2198,24 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "bukti hasil kerja peringkat semasa dan catatan ujian fungsi",
+      "artefak_khusus": "atur cara dan keputusan simulasi",
       "rubrik_pbd_khusus": "pematuhan langkah, keselamatan dan fungsi peringkat semasa",
       "contoh_projek_cikgulaju": "atur cara lampu amaran dan pembaz mikropengawal",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Pengaturcaraan",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "status_semakan_kualiti": "DRAF_AKTIVITI_SP_DIPERINCI_SEMANTIK_BUKAN_KELULUSAN_VISUAL",
       "specific_sp_task_types": [
         {
           "code": "6.4.4",
           "stage": "make"
         }
-      ]
+      ],
+      "audit_pemurnian_20261106": {
+        "editorial_specific_activities": true,
+        "teacher_individual_approval": false,
+        "textbook_activity_visual_approved": false
+      }
     },
     {
       "pdp": 21,
@@ -2189,9 +2241,9 @@
       ],
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
-      "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.4.5 melalui bukti hasil kerja peringkat semasa dan catatan ujian fungsi, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan bukti hasil kerja peringkat semasa dan catatan ujian fungsi bagi SP 6.4.5; guru menilai pematuhan langkah, keselamatan dan fungsi peringkat semasa.",
+      "aktiviti_kategori": "amali",
+      "objektif": "Pada akhir PdP, murid dapat menghasilkan atau menerangkan susun atur sambungan papan uji disemak guru secara tepat mengikut SP 6.4.5.",
+      "kriteria_kejayaan": "Murid menunjukkan susun atur sambungan papan uji disemak guru yang mengikut SP 6.4.5 dengan langkah kerja, label dan keselamatan yang sesuai.",
       "bbm": "Kad pseudokod dan carta alir, komputer atau simulasi, mikropengawal, papan uji, LED, motor DC kecil, wayar voltan rendah",
       "langkah": {
         "set_induksi": {
@@ -2200,22 +2252,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk atur cara lampu amaran dan pembaz mikropengawal. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 6.4.5)."
+          "aktiviti": "Guru menunjukkan susunan papan uji, wayar jumper, LED dan pembaz berkuasa rendah; murid melakar titik sambungan, memeriksa polariti dan merancang kedudukan motor kecil. (SP 6.4.5)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid meneruskan bahagian kerja untuk atur cara lampu amaran dan pembaz mikropengawal yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 6.4.5); bukan wajib menyiapkan keseluruhan projek. Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
+          "aktiviti": "Murid membina sambungan perkakasan pada papan uji berdasarkan pelan, menguji kesinambungan atau kedudukan wayar tanpa menghidupkan bekalan utama serta meminta guru memeriksa sebelum kuasa rendah diaktifkan. (SP 6.4.5). Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 6.4.5 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
+          "aktiviti": "Guru menyemak susun atur sambungan papan uji disemak guru sebagai evidens SP 6.4.5; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menunjukkan hasil atau fungsi bahagian yang disiapkan, mencatat ujian dan mengemas peralatan. Guru merekod tahap penguasaan sesi ini."
+          "aktiviti": "Murid menyatakan satu kemahiran daripada Menghasilkan sambungan perkakasan yang mengeluarkan cahaya, bunyi dan pergerakan dan menunjukkan bukti kerja. Guru merumuskan SP 6.4.5, meminta murid menyimpan hasil dan mengemas alatan."
         }
       },
-      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 6.4.5 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
+      "pbd_evidens": "Guru menyemak susun atur sambungan papan uji disemak guru sebagai evidens SP 6.4.5; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan.",
       "keselamatan": "Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2252,19 +2304,24 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "bukti hasil kerja peringkat semasa dan catatan ujian fungsi",
+      "artefak_khusus": "susun atur sambungan papan uji disemak guru",
       "rubrik_pbd_khusus": "pematuhan langkah, keselamatan dan fungsi peringkat semasa",
       "contoh_projek_cikgulaju": "atur cara lampu amaran dan pembaz mikropengawal",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Pengaturcaraan",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "status_semakan_kualiti": "DRAF_AKTIVITI_SP_DIPERINCI_SEMANTIK_BUKAN_KELULUSAN_VISUAL",
       "specific_sp_task_types": [
         {
           "code": "6.4.5",
           "stage": "make"
         }
-      ]
+      ],
+      "audit_pemurnian_20261106": {
+        "editorial_specific_activities": true,
+        "teacher_individual_approval": false,
+        "textbook_activity_visual_approved": false
+      }
     },
     {
       "pdp": 22,
@@ -2805,8 +2862,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melakar sistem penanaman takungan berpandukan jenis bekas, ruang air dan medium penanaman yang dipilih mengikut SP 7.1.3.",
-      "kriteria_kejayaan": "Murid menunjukkan lakaran takungan berlabel bekas, medium, saluran/resapan air serta ukuran anggaran berdasarkan SP 7.1.3; guru menilai ketepatan reka bentuk dan bukti pembelajaran.",
+      "objektif": "Pada akhir PdP, murid dapat menghasilkan atau menerangkan lakaran sistem tanaman takungan berlabel secara tepat mengikut SP 7.1.3.",
+      "kriteria_kejayaan": "Murid menunjukkan lakaran sistem tanaman takungan berlabel yang mengikut SP 7.1.3 dengan langkah kerja, label dan keselamatan yang sesuai.",
       "bbm": "Contoh sistem tanaman takungan, bekas tanaman, medium sesuai, benih, pembaris, lakaran dan rekod pertumbuhan",
       "langkah": {
         "set_induksi": {
@@ -2815,22 +2872,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan contoh lakaran bermaklumat/carta alir dengan label yang diperlukan untuk sistem tanaman takungan bersumbu. Murid menghasilkan draf pertama berdasarkan keperluan SP 7.1.3."
+          "aktiviti": "Guru menunjukkan model tanaman takungan bersumbu dan lakaran berlabel bekas, ruang simpanan air, medium, saluran resapan dan kedudukan tanaman. (SP 7.1.3)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid bertukar draf dengan rakan, menyemak label dan urutan menggunakan senarai semak, lalu menghasilkan versi kedua dengan sekurang-kurangnya satu pembetulan bagi SP 7.1.3. Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti."
+          "aktiviti": "Murid melakar sistem takungan yang dipilih dengan ukuran kasar dan label, kemudian membandingkan susun atur dengan contoh sebelum membaiki laluan air atau ruang medium. (SP 7.1.3). Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 7.1.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik."
+          "aktiviti": "Guru menyemak lakaran sistem tanaman takungan berlabel sebagai evidens SP 7.1.3; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menunjuk label atau urutan utama dalam lakaran/algoritma yang disiapkan. Guru menyemak bukti SP 7.1.3 dan menyimpan draf."
+          "aktiviti": "Murid menyatakan satu kemahiran daripada Melakar reka bentuk sistem penanaman secara takungan yang dipilih dan menunjukkan bukti kerja. Guru merumuskan SP 7.1.3, meminta murid menyimpan hasil dan mengemas alatan."
         }
       },
-      "pbd_evidens": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 7.1.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik.",
+      "pbd_evidens": "Guru menyemak lakaran sistem tanaman takungan berlabel sebagai evidens SP 7.1.3; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan.",
       "keselamatan": "Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2867,13 +2924,13 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "lakaran takungan berlabel bekas, medium, saluran/resapan air serta ukuran anggaran",
+      "artefak_khusus": "lakaran sistem tanaman takungan berlabel",
       "rubrik_pbd_khusus": "kecukupan label, kesesuaian fungsi, logik ukuran dan justifikasi",
       "contoh_projek_cikgulaju": "sistem tanaman takungan bersumbu",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Teknologi Pertanian Bandar",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "status_semakan_kualiti": "DRAF_AKTIVITI_SP_DIPERINCI_SEMANTIK_BUKAN_KELULUSAN_VISUAL",
       "specific_sp_task_types": [
         {
           "code": "7.1.3",
@@ -2881,8 +2938,9 @@
         }
       ],
       "audit_pemurnian_20261106": {
-        "objective_no_unrelated_programming": true,
-        "visual_textbook_individual_approved": false
+        "editorial_specific_activities": true,
+        "teacher_individual_approval": false,
+        "textbook_activity_visual_approved": false
       }
     },
     {
@@ -2910,8 +2968,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 7.1.4 melalui rubrik semak serta lakaran atau kod yang telah dibaiki, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan rubrik semak serta lakaran atau kod yang telah dibaiki bagi SP 7.1.4; guru menilai kejelasan kelemahan, sebab dan pembetulan.",
+      "objektif": "Pada akhir PdP, murid dapat menghasilkan atau menerangkan lakaran sistem takungan sebelum/selepas pembetulan secara tepat mengikut SP 7.1.4.",
+      "kriteria_kejayaan": "Murid menunjukkan lakaran sistem takungan sebelum/selepas pembetulan yang mengikut SP 7.1.4 dengan langkah kerja, label dan keselamatan yang sesuai.",
       "bbm": "Contoh sistem tanaman takungan, bekas tanaman, medium sesuai, benih, pembaris, lakaran dan rekod pertumbuhan",
       "langkah": {
         "set_induksi": {
@@ -2920,22 +2978,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memodelkan penggunaan rubrik untuk menilai dua ciri sistem tanaman takungan bersumbu. Murid menanda kekuatan dan dua kelemahan pada contoh lakaran/produk bagi SP 7.1.4."
+          "aktiviti": "Guru membimbing semakan lakaran sistem takungan berdasarkan kestabilan bekas, kuantiti air, kedudukan medium, keselamatan dan kemudahan penyelenggaraan. (SP 7.1.4)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menambah baik lakaran, atur cara atau komponen berdasarkan analisis, membandingkan sebelum dan selepas serta menjelaskan sebab keputusan bagi SP 7.1.4. Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti."
+          "aktiviti": "Murid mengenal pasti dua masalah dalam lakaran, membetulkan kedudukan takungan atau medium, dan menerangkan sebab perubahan itu membolehkan penyaluran air yang lebih baik. (SP 7.1.4). Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 7.1.4 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik."
+          "aktiviti": "Guru menyemak lakaran sistem takungan sebelum/selepas pembetulan sebagai evidens SP 7.1.4; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid membandingkan satu perkara sebelum dan selepas pembetulan, kemudian menulis alasan. Guru mengesahkan langkah kerja seterusnya."
+          "aktiviti": "Murid menyatakan satu kemahiran daripada Menilai lakaran yang dipilih untuk membuat penambahbaikan dan menunjukkan bukti kerja. Guru merumuskan SP 7.1.4, meminta murid menyimpan hasil dan mengemas alatan."
         }
       },
-      "pbd_evidens": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 7.1.4 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik.",
+      "pbd_evidens": "Guru menyemak lakaran sistem takungan sebelum/selepas pembetulan sebagai evidens SP 7.1.4; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan.",
       "keselamatan": "Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2972,19 +3030,24 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "rubrik semak serta lakaran atau kod yang telah dibaiki",
+      "artefak_khusus": "lakaran sistem takungan sebelum/selepas pembetulan",
       "rubrik_pbd_khusus": "kejelasan kelemahan, sebab dan pembetulan",
       "contoh_projek_cikgulaju": "sistem tanaman takungan bersumbu",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Teknologi Pertanian Bandar",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "status_semakan_kualiti": "DRAF_AKTIVITI_SP_DIPERINCI_SEMANTIK_BUKAN_KELULUSAN_VISUAL",
       "specific_sp_task_types": [
         {
           "code": "7.1.4",
           "stage": "improve"
         }
-      ]
+      ],
+      "audit_pemurnian_20261106": {
+        "editorial_specific_activities": true,
+        "teacher_individual_approval": false,
+        "textbook_activity_visual_approved": false
+      }
     },
     {
       "pdp": 29,
@@ -2995,7 +3058,7 @@
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 4,
       "unit_label": "Unit 4: Teknologi Pertanian",
-      "tajuk": "PdP 029: Memilih peralatan, perkakasan dan medium penanaman untuk menghasilkan reka bentuk sistem p",
+      "tajuk": "PdP 029: Memilih alatan, perkakasan dan medium tanaman takungan",
       "sk": [
         "7.1"
       ],
@@ -3011,8 +3074,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "amali",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 7.1.5 melalui jadual bahan, kuantiti, kos seunit dan anggaran jumlah, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan jadual bahan, kuantiti, kos seunit dan anggaran jumlah bagi SP 7.1.5; guru menilai ketepatan kos dan kesesuaian pilihan.",
+      "objektif": "Pada akhir PdP, murid dapat menghasilkan atau menerangkan senarai peralatan dan medium takungan dengan alasan secara tepat mengikut SP 7.1.5.",
+      "kriteria_kejayaan": "Murid menunjukkan senarai peralatan dan medium takungan dengan alasan yang mengikut SP 7.1.5 dengan langkah kerja, label dan keselamatan yang sesuai.",
       "bbm": "Contoh sistem tanaman takungan, bekas tanaman, medium sesuai, benih, pembaris, lakaran dan rekod pertumbuhan",
       "langkah": {
         "set_induksi": {
@@ -3021,22 +3084,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan cara mengira kuantiti × harga seunit dalam jadual bagi sistem tanaman takungan bersumbu. Murid menyenaraikan bahan dan membuat dua pengiraan berpandu bagi SP 7.1.5."
+          "aktiviti": "Guru mempamerkan bekas tanaman, bahan kapilari seperti sumbu, medium seperti peatmoss atau perlite, dan alat ukuran; murid memadankan fungsi setiap bahan kepada lakaran takungan. (SP 7.1.5)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid melengkapkan anggaran kos bahan keseluruhan, menyemak jumlah dengan pasangan dan mencadangkan satu alternatif bahan yang lebih jimat serta sesuai bagi SP 7.1.5. Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti."
+          "aktiviti": "Murid menyediakan senarai peralatan, perkakasan dan medium yang benar-benar diperlukan, membandingkan dua pilihan medium mengikut aliran air serta ketersediaan, lalu memberi alasan pilihan sebelum pembinaan. (SP 7.1.5). Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak jadual bahan, kuantiti, kos seunit dan anggaran jumlah mengikut SP 7.1.5 dan menggunakan kriteria ketepatan kos dan kesesuaian pilihan. Murid merekod satu tindakan susulan yang realistik."
+          "aktiviti": "Guru menyemak senarai peralatan dan medium takungan dengan alasan sebagai evidens SP 7.1.5; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan jumlah anggaran kos dan satu cara mengurangkan pembaziran tanpa menjejaskan keselamatan. Guru menyemak rekod kos."
+          "aktiviti": "Murid menyatakan satu kemahiran daripada Memilih peralatan, perkakasan dan medium penanaman untuk menghasilkan reka bentuk sistem p dan menunjukkan bukti kerja. Guru merumuskan SP 7.1.5, meminta murid menyimpan hasil dan mengemas alatan."
         }
       },
-      "pbd_evidens": "Guru menyemak jadual bahan, kuantiti, kos seunit dan anggaran jumlah mengikut SP 7.1.5 dan menggunakan kriteria ketepatan kos dan kesesuaian pilihan. Murid merekod satu tindakan susulan yang realistik.",
+      "pbd_evidens": "Guru menyemak senarai peralatan dan medium takungan dengan alasan sebagai evidens SP 7.1.5; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan.",
       "keselamatan": "Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -3072,19 +3135,24 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "jadual bahan, kuantiti, kos seunit dan anggaran jumlah",
+      "artefak_khusus": "senarai peralatan dan medium takungan dengan alasan",
       "rubrik_pbd_khusus": "ketepatan kos dan kesesuaian pilihan",
       "contoh_projek_cikgulaju": "sistem tanaman takungan bersumbu",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Teknologi Pertanian Bandar",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "status_semakan_kualiti": "DRAF_AKTIVITI_SP_DIPERINCI_SEMANTIK_BUKAN_KELULUSAN_VISUAL",
       "specific_sp_task_types": [
         {
           "code": "7.1.5",
           "stage": "cost"
         }
-      ]
+      ],
+      "audit_pemurnian_20261106": {
+        "editorial_specific_activities": true,
+        "teacher_individual_approval": false,
+        "textbook_activity_visual_approved": false
+      }
     },
     {
       "pdp": 30,
