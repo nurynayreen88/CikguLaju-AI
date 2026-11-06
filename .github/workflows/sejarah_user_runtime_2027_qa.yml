@@ -1,0 +1,37 @@
+name: Sejarah 2027 user RPH isolated runtime QA
+on:
+  push:
+    paths:
+      - 'web/sejarah_2027_user_runtime.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - 'tests/test_sejarah_2027_user_runtime.py'
+      - 'curriculum/sejarah/**'
+      - 'rph_standalone/sejarah/**'
+      - 'rpt_2027/sejarah/**'
+      - '.github/workflows/sejarah_user_runtime_2027_qa.yml'
+  pull_request:
+    paths:
+      - 'web/sejarah_2027_user_runtime.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - 'tests/test_sejarah_2027_user_runtime.py'
+      - 'curriculum/sejarah/**'
+      - 'rph_standalone/sejarah/**'
+      - 'rpt_2027/sejarah/**'
+      - '.github/workflows/sejarah_user_runtime_2027_qa.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify source and user-facing Telegram unit/PdP flow
+        run: python -m unittest -v tests.test_sejarah_2027_user_runtime
+      - name: Ensure no accidental app.py or database change in this feature branch
+        run: |
+          test -f web/sejarah_2027_user_runtime.py
+          git diff --name-only HEAD~1 HEAD | grep -E 'app.py|\.db$' && exit 1 || true
