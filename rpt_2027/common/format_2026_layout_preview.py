@@ -91,6 +91,24 @@ def week_merge_ranges(records):
     return ranges
 
 
+def normalize_pdf_text(value):
+    """Render original DSKP private-use bullets without dropping their meaning.
+
+    Original crosswalk text remains unchanged for source comparison. Unmapped
+    PDF private-use characters must not silently produce blank glyphs.
+    """
+    source = str(value or "")
+    printable = source.translate({
+        0xF0B7: " • ",  # KPM DSKP PDF bullet character
+        0xF02D: " - ",  # KPM DSKP PDF list hyphen
+    })
+    if any(0xE000 <= ord(char) <= 0xF8FF for char in printable):
+        raise ValueError("Unmapped private-use glyph in DSKP statement")
+    if any(ord(char) < 32 and char not in "\\t\\n\\r" for char in printable):
+        raise ValueError("Nonprinting control character in RPT text")
+    return printable
+
+
 def build_preview(subject, year, records, destination, *, logo_path=None, school_name="", teacher_name=""):
     """Create compact, multi-page landscape PDF using only trusted row content.
 
@@ -134,7 +152,7 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
             fontSize=size, leading=leading, textColor=colors.HexColor(color),
             wordWrap="CJK", spaceBefore=0, spaceAfter=0, alignment=1 if center else 0
         )
-        return Paragraph(escape(str(text or "")).replace("\n", "<br/>"), style)
+        return Paragraph(escape(normalize_pdf_text(text)).replace("\n", "<br/>"), style)
 
     def cell(text, strong=False):
         return p(text, strong=strong)
