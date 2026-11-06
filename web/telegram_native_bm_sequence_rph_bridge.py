@@ -134,15 +134,20 @@ def _numbered_bm_activity_lines(document):
                 for a, b in zip(hits, hits[1:])):
             output.append(line)
             continue
-        positions = [hits[0]]
-        for hit in hits[1:]:
-            if int(hit.group(1)) == int(positions[-1].group(1)) + 1:
-                positions.append(hit)
-            else:
-                break
-        if len(positions) < 2:
+        # Other numbered references may precede the actual steps, so locate
+        # the first *consecutive* sequence rather than assuming the first
+        # numbered expression is an activity step.
+        starts = [i for i in range(len(hits) - 1)
+                  if int(hits[i + 1].group(1)) == int(hits[i].group(1)) + 1]
+        if not starts:
             output.append(line)
             continue
+        start = starts[0]
+        positions = [hits[start]]
+        for hit in hits[start + 1:]:
+            if int(hit.group(1)) != int(positions[-1].group(1)) + 1:
+                break
+            positions.append(hit)
         parts = []
         prefix = line[:positions[0].start()].rstrip()
         if prefix:
