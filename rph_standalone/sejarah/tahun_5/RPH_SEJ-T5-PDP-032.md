@@ -14,7 +14,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan gambar Dewan Bahasa dan Pustaka dan bahan penerbitan bahasa. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 11: Bahasa Kebangsaan.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 155–158: DBP, institusi pendidikan dan program memartabatkan bahasa. Murid memadankan institusi berkaitan bahasa dengan tugas khusus yang diketahui. Guru menyemak jawapan awal berpandukan 9.4.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 155–158: DBP, institusi pendidikan dan program memartabatkan bahasa kebangsaan. Murid memadankan institusi berkaitan bahasa dengan tugas khusus yang diketahui. Guru menyemak jawapan awal berpandukan 9.4.3.
 
 **Aktiviti 2 (20 min):** Guru menyoal bukti konkrit hlm. 155–158 untuk menguji dapatan murid. Murid mencadangkan satu program sekolah memartabatkan penggunaan bahasa Melayu yang berhemah. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan menggunakan bahasa kebangsaan dengan betul dalam pertuturan dan penulisan.
 
