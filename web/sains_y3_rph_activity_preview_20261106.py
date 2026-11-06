@@ -446,14 +446,14 @@ def adapt_rows(state, original):
     hook,a1,p1,a2,p2,pbd,materials=BANK[sp]
     extra=INTEGRATED_SP_DRAFT.get(sp)
     # Numbered actions start on separate lines; keep two distinct activities.
-    main=(f"Aktiviti 1 — Penerokaan: {hook}\\n"
-          f"1. Guru {a1}.\\n"
-          f"2. Murid {p1}.\\n\\n"
-          f"Aktiviti 2 — Aplikasi dan PBD\\n"
-          f"1. Guru {a2}.\\n"
+    main=(f"Aktiviti 1 — Penerokaan: {hook}\n"
+          f"1. Guru {a1}.\n"
+          f"2. Murid {p1}.\n\n"
+          f"Aktiviti 2 — Aplikasi dan PBD\n"
+          f"1. Guru {a2}.\n"
           f"2. Murid {p2}.")
     if extra:
-        main+=(f"\\n3. Guru {extra['teacher']}.\\n"
+        main+=(f"\n3. Guru {extra['teacher']}.\n"
                f"4. Murid {extra['pupil']}.")
     all_sp=sp+((", "+extra["sp"]) if extra else "")
     all_pbd=pbd+(("; "+extra["pbd"]) if extra else "")
