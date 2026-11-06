@@ -15,6 +15,7 @@ from tools.render_sains_rpt_2027_ab_review_20261106 import (
     ROOT, OUT, calendar_for, calendar_cover_lines, EXPECTED,
     year3_overlay_sources, YEAR3_INTEGRATED_SP_CANDIDATE,
 )
+from web.sains_y3_rph_activity_preview_20261106 import adapt_rows, source_ledgers
 class SainsRPTCalendarWindowsTests(unittest.TestCase):
     def test_official_group_windows_are_distinct_and_unscheduled(self):
         a,b=calendar_for("A"),calendar_for("B")
@@ -81,6 +82,47 @@ class SainsRPTCalendarWindowsTests(unittest.TestCase):
                 source=by_code[code]
                 self.assertEqual(row.cells[3].text,source["SP"])
                 self.assertEqual(row.cells[4].text,source["Fokus PdP (draf QA)"])
+
+    def test_all_45_year3_rpt_and_rph_word_pdf_share_one_sp_title_source(self):
+        # Integration guard between two draft PR streams, no production edits.
+        src,fixes=source_ledgers()
+        with (OUT/"SAINS_TAHUN_3_SOURCE_DRAF.csv").open(encoding="utf-8-sig",newline="") as f:
+            rpt={row["Kod sumber"]:row for row in csv.DictReader(f)}
+        rphroot=ROOT/"build/sains_y3_45_rph_REVIEW_ONLY_20261106"
+        with (rphroot/"MANIFEST_DRAF.csv").open(encoding="utf-8-sig",newline="") as f:
+            manifest={row["pdp"]:row for row in csv.DictReader(f)}
+        self.assertEqual(set(rpt),set(src))
+        self.assertEqual(set(manifest),set(src))
+        self.assertEqual(len(src),45)
+        for n in range(1,46):
+            code=f"SCI-Y3-PDP-{n:03d}"
+            primary=src[code]["sp_code"]
+            state={"subject":"Sains","year":"Tahun 3","year_label":"Tahun 3",
+                   "pdp_sequence_code":code,
+                   "sk_code":primary.rsplit(".",1)[0],"sp_code":primary}
+            rendered=adapt_rows(state,{})
+            row=rpt[code]
+            with self.subTest(pdp=code):
+                self.assertEqual(row["SP"],rendered["STANDARD PEMBELAJARAN"])
+                self.assertEqual(row["Fokus PdP (draf QA)"],rendered["TAJUK"])
+                self.assertEqual(manifest[code]["title"],rendered["TAJUK"])
+                word=Document(rphroot/f"SAINS_T3_PDP_{n:03d}_DRAF.docx")
+                self.assertEqual(word.tables[1].cell(1,1).text,rendered["TAJUK"])
+                self.assertIn(rendered["STANDARD PEMBELAJARAN"],word.tables[1].cell(2,1).text)
+                self.assertIn("Guru",word.tables[2].cell(1,1).text)
+                self.assertIn("Murid",word.tables[2].cell(1,1).text)
+                pdf=PdfReader(str(rphroot/f"SAINS_T3_PDP_{n:03d}_DRAF.pdf"))
+                self.assertEqual(len(pdf.pages),1)
+                txt=re.sub(r"\\s+"," ",pdf.pages[0].extract_text())
+                for codepart in rendered["STANDARD PEMBELAJARAN"].split(", "):
+                    self.assertIn(codepart,txt)
+                if primary in YEAR3_INTEGRATED_SP_CANDIDATE:
+                    self.assertIn("3. Guru",word.tables[2].cell(1,1).text)
+                    self.assertIn("4. Murid",word.tables[2].cell(1,1).text)
+                    self.assertIn(YEAR3_INTEGRATED_SP_CANDIDATE[primary],txt)
+                else:
+                    self.assertNotIn("3. Guru",word.tables[2].cell(1,1).text)
+        self.assertEqual(len(fixes),12)
 
     def test_years_two_four_five_six_are_not_silently_rewritten(self):
         for year in [2,4,5,6]:
