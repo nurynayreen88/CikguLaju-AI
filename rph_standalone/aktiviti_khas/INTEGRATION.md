@@ -44,6 +44,17 @@ Sediakan Bahan PdP → RPH Aktiviti Khas → [Transisi Tahun 1 / Tamat Sukatan] 
 - Aktiviti Khas bukan PdP rasmi dalam RPT; jangan cipta SK/SP atau nombor Unit/Lesson.
 - Gunakan sumber yang sama untuk Telegram dan Web. Tiada AI runtime.
 
+## Antara muka data yang siap untuk integrasi
+
+Semua route di bawah API **dalaman Telegram sahaja** dan memerlukan Bearer token yang tidak boleh dihantar kepada browser. Sila guna Web proxy yang telah mengesahkan pengguna dan entitlement apabila benar-benar disambungkan.
+
+1. GET /internal/rph/v1/aktiviti-khas/subjects?kind=SELEPAS_TAMAT_SUKATAN&year=6 -> 13 nama subjek.
+2. GET /internal/rph/v1/aktiviti-khas/options?kind=SELEPAS_TAMAT_SUKATAN&year=6&subject=Matematik -> ID S03C.
+3. GET /internal/rph/v1/aktiviti-khas/preview?kind=SELEPAS_TAMAT_SUKATAN&year=6&subject=Matematik&activity_id=S03C&source_digest=<hash> -> objektif, BBM, enam fasa beserta tempoh, pentaksiran dan status DRAF. Preview baca sahaja; **tidak menggunakan kuota**.
+4. POST /internal/rph/v1/aktiviti-khas/render -> Word/PDF untuk pilihan dan digest yang sama; jangan benarkan pengguna memuat turun melalui API dalaman tanpa laluan kebenaran sedia ada.
+
+Fail sampel untuk audit manusia: GitHub Actions 'RPH Aktiviti Khas - Review Pack' menjana satu ZIP DRAF berisi 59 Word, 59 PDF, MANIFEST.json (SHA-256 setiap fail) dan BACA_DAHULU.txt. Semak aktiviti secara individu sebelum menandakan READY. Pakej ini **bukan** pengganti muat turun berbayar pada sistem produksi.
+
 ## Pintu kelulusan sebelum LIVE
 
 - [x] 59 kandungan berstruktur dan ID unik.
