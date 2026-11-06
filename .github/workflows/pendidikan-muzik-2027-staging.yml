@@ -56,6 +56,17 @@ jobs:
           name: muzik-native-base-smoke-report
           path: /tmp/music_native_base_render_smoke.json
           if-no-files-found: ignore
+      - name: Jana 5 RPT Muzik 2027 draf Word/PDF berserta muka depan
+        env:
+          MUSIC_RPT_DRAFT_DIR: ${{ runner.temp }}/muzik-rpt-draf
+        run: python staging/pendidikan_muzik/rpt_rph_2027/build_rpt_music_staging.py
+      - name: Simpan lima RPT Muzik Word/PDF draf untuk QA
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: muzik-lima-rpt-2027-draf-word-pdf
+          path: ${{ runner.temp }}/muzik-rpt-draf
+          if-no-files-found: ignore
       - name: Pastikan hanya perubahan PR Muzik dinilai, bukan perubahan main serentak
         if: github.event_name == 'pull_request'
         env:
