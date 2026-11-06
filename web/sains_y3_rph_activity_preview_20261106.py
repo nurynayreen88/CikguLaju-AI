@@ -380,6 +380,31 @@ BANK = {
 "Model takal, kad rekod dan kertas poster"),
 }
 
+# Crosswalk evidence: audits/sains_y3_dskp_sp_crosswalk_20261106.json.
+# These three SP are absent as primary records; candidate coverage is added
+# inside existing PdP for review only, not as invented extra lesson numbers.
+# The pairing and book pages remain academically unapproved (HOLD).
+INTEGRATED_SP_DRAFT = {
+    "3.2.1": {
+        "sp": "3.2.5",
+        "teacher": "meminta laporan pemerhatian hasil pengelasan kelas makanan",
+        "pupil": "menulis jadual berlabel dan menyampaikan dua dapatan tentang kelas makanan",
+        "pbd": "Jadual dan laporan pemerhatian kelas makanan dengan dua dapatan",
+    },
+    "3.3.1": {
+        "sp": "3.3.3",
+        "teacher": "menyoal tentang makanan yang tidak diperlukan badan selepas proses pencernaan",
+        "pupil": "merumus bahan yang tidak digunakan badan dan cara sisa disingkirkan",
+        "pbd": "Rumusan makanan tidak diperlukan badan berpandukan rajah pencernaan",
+    },
+    "3.3.2": {
+        "sp": "3.3.4",
+        "teacher": "meminta komunikasi pemerhatian tentang laluan dan proses pencernaan",
+        "pupil": "melakar laluan makanan berlabel lalu menerangkan pemerhatian kepada pasangan",
+        "pbd": "Lakaran pencernaan berlabel dan penerangan pemerhatian yang tepat",
+    },
+}
+
 def source_ledgers():
     p=json.loads(LEDGER.read_text(encoding="utf-8"))
     f=json.loads(FIXES.read_text(encoding="utf-8"))
@@ -419,25 +444,31 @@ def adapt_rows(state, original):
             return original
         label=change["ds_kpm_official_sp_text"]
     hook,a1,p1,a2,p2,pbd,materials=BANK[sp]
-    # Source-specific activity; each "1." and "2." begins on its own line.
-    main=(f"Aktiviti 1 — Penerokaan: {hook}\n"
-          f"1. Guru {a1}.\n"
-          f"2. Murid {p1}.\n\n"
-          f"Aktiviti 2 — Aplikasi dan PBD\n"
-          f"1. Guru {a2}.\n"
+    extra=INTEGRATED_SP_DRAFT.get(sp)
+    # Numbered actions start on separate lines; keep two distinct activities.
+    main=(f"Aktiviti 1 — Penerokaan: {hook}\\n"
+          f"1. Guru {a1}.\\n"
+          f"2. Murid {p1}.\\n\\n"
+          f"Aktiviti 2 — Aplikasi dan PBD\\n"
+          f"1. Guru {a2}.\\n"
           f"2. Murid {p2}.")
+    if extra:
+        main+=(f"\\n3. Guru {extra['teacher']}.\\n"
+               f"4. Murid {extra['pupil']}.")
+    all_sp=sp+((", "+extra["sp"]) if extra else "")
+    all_pbd=pbd+(("; "+extra["pbd"]) if extra else "")
     page_text=", ".join(str(x) for x in item["printed_book_page_candidates"])
     updated=dict(original)
     updated.update({
         "TAJUK":label,
         "STANDARD KANDUNGAN":sp.rsplit(".",1)[0],
-        "STANDARD PEMBELAJARAN":sp,
+        "STANDARD PEMBELAJARAN":all_sp,
         "OBJEKTIF PEMBELAJARAN":f"Pada akhir PdP, murid dapat {label[0].lower()+label[1:].rstrip('.')}.",
-        "KRITERIA KEJAYAAN":pbd+".",
+        "KRITERIA KEJAYAAN":all_pbd+".",
         "PENGETAHUAN SEDIA ADA":f"Murid berkongsi pengalaman berkaitan {hook.lower()}.",
         "SET INDUKSI":f"Guru menunjukkan {hook.lower()}; murid menyatakan satu ramalan/pemerhatian awal.",
         "AKTIVITI UTAMA":main,
-        "PENTAKSIRAN":pbd+". Guru menyemak hasil individu atau pasangan.",
+        "PENTAKSIRAN":all_pbd+". Guru menyemak hasil individu atau pasangan.",
         "PENUTUP":f"Murid menyatakan satu dapatan tentang {hook.lower()}; guru merumus kaitan dengan SP {sp}.",
         "BAHAN BANTU MENGAJAR":f"{materials}. Buku Teks Sains Tahun 3, halaman bercetak {page_text} (petunjuk sumber; semak sebelum cetak).",
         "PEMULIHAN / PENGAYAAN":"Pemulihan: guru membimbing dengan kad/objek berlabel. Pengayaan: murid menjelaskan bukti tambahan daripada tugasan.",
