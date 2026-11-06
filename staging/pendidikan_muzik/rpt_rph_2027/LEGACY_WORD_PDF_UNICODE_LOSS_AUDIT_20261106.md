@@ -1,0 +1,9 @@
+# Pendidikan Muzik — Isu tanda baca hilang dalam Word/PDF dan kawalan staging (6 Nov 2026)
+
+**Bukti regresi pertama:** [GitHub Actions 42137483516](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42137483516) gagal pada **78/175 PdP** apabila pemeriksaan kandungan medan RPH menjadi lebih ketat. Punca ditemui dalam fungsi sedia ada `app.py: clean_doc_text`, yang membuang kod Unicode di luar julat ASCII/Latin; akibatnya **`halaman 4–5` boleh menjadi `halaman 45`**, `8–16 detik` menjadi `816 detik`, dan `melodi—menaik` menjadi `melodimenaik`. Sebelumnya ujian satu halaman lulus kerana tidak membandingkan semua medan teks.
+
+**Pembetulan ujian staging:** Modul `legacy_doc_text_safe_staging.py` **menukarkan sengkang/noktah/tanda petik yang diketahui kepada ASCII yang mengekalkan pemisahan** sebelum menyerah kepada fungsi asas Word/PDF, contohnya `4–5` → `4-5`, `melodi—menaik` → `melodi - menaik`. Aksara tidak dikenali yang akan dibuang oleh renderer legacy menyebabkan ralat (fail closed), **bukannya hilang tanpa diketahui**. Unit test meliputi contoh halaman, julat masa, tanda petik dan muzik Unicode.
+
+**Semakan penuh:** Skrip smoke 175 RPH kini memeriksa **OBJEKTIF PEMBELAJARAN, KRITERIA KEJAYAAN, BAHAN BANTU MENGAJAR dan PENTAKSIRAN** dalam DOCX, serta petikan lima perkataan bagi medan yang sama dalam PDF. Pemeriksaan ini tambahan kepada bilangan halaman A4, kod SP, aktiviti dan notasi sumber.
+
+**Had keselamatan:** Perubahan hanya pada adapter ujian staging, **tidak pada `app.py` produksi**. Sebelum Web/Telegram Muzik boleh digunakan, kaedah penukaran tanda baca perlu disambung melalui laluan runtime yang sama, diuji merentas kedua-dua platform, dan tidak boleh mengubah persembahan bahan subjek lain. Audio, DSKP T4 dan lesen masih belum final. Fail RPH asal tidak diubah.
