@@ -8,7 +8,7 @@
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — bukan FINAL READY
 
-**Objektif:** Menghasilkan jawapan melodi untuk satu soalan melodi dan mempersembahkannya menggunakan suara atau alat.
+**Objektif:** Mencipta satu corak irama dan satu jawapan melodi ringkas menggunakan not B, A dan G, kemudian mempersembahkannya mengikut detik.
 
 **Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **HELO, HELO APA KHABAR?**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
 
@@ -22,7 +22,7 @@
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
 
-**Rujukan buku teks:** m/s 82 daripada RPT rujukan yang padan dengan tema buku Kesenian Tahun 4. **Semakan teks unit/aktiviti dibuat, tetapi halaman penuh belum disahkan secara visual.** Sumber: https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view
+**Rujukan buku teks:** m/s 82–84 bagi contoh soalan-jawapan dan permainan Cipta Melodi dalam Buku Teks Pendidikan Kesenian Tahun 4 (RPT lama hanya menyebut m/s 82). **Semakan teks unit/aktiviti dibuat, tetapi halaman penuh belum disahkan secara visual.** Sumber: https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view
 
 **Rujukan audio bercetak:** 90–92. **Belum disahkan sama ada fail trek tersedia atau sepadan dengan laluan penghantaran.**
 
