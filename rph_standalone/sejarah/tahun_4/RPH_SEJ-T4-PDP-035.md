@@ -14,7 +14,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan peta pelayaran dan petikan peranan Hang Tuah di Melaka. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 11: Hang Tuah Laksamana Terbilang.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 160–162: Peranan Hang Tuah menjaga perairan dan pedagang serta mengetuai. Murid mengkategorikan peranan Hang Tuah dalam pertahanan, diplomasi dan kesetiaan. Guru menyemak jawapan awal berpandukan 5.4.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 160–162: Peranan Hang Tuah menjaga perairan dan pedagang serta mengetuai utusan. Murid mengkategorikan peranan Hang Tuah dalam pertahanan, diplomasi dan kesetiaan. Guru menyemak jawapan awal berpandukan 5.4.3.
 
 **Aktiviti 2 (20 min):** Guru menyoal bukti konkrit hlm. 160–162 untuk menguji dapatan murid. Murid membincangkan kesan peranannya serta batas sumber hikayat terhadap fakta sejarah. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kebijaksanaan tokoh dalam menyelesaikan sesuatu masalah.
 
