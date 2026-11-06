@@ -15,6 +15,57 @@ REQUIRED = (
 
 
 class MusicRPTAndRPHStagingQA(unittest.TestCase):
+    def test_rpt_manifest_identity_unit_sp_pages_and_group_slots_all_175(self):
+        """Keep lesson source and printed RPT synchronized without altering records."""
+        columns = {
+            2: ("Slot A", "Slot B", "Unit", "SP DSKP", "BT m/s"),
+            3: ("Kumpulan A slot 2027", "Kumpulan B slot 2027",
+                "Unit/Tajuk", "SP", "RPT halaman BT (belum sah)"),
+            4: ("Kumpulan A slot 2027", "Kumpulan B slot 2027",
+                "Unit/Tajuk", "SP", "RPT halaman BT (belum sah)"),
+            5: ("Slot Kumpulan A", "Slot Kumpulan B",
+                "Unit/Tajuk", "Kod SP", "Buku Teks m/s"),
+            6: ("Kumpulan A slot 2027", "Kumpulan B slot 2027",
+                "Unit/Tajuk", "SP", "RPT halaman BT (belum sah)"),
+        }
+        seen = set()
+        for year, (col_a, col_b, col_unit, col_sp, col_page) in columns.items():
+            folder = MUSIC / "rpt_rph_2027" / f"year{year}"
+            manifest = json.loads((folder / "pdp_manifest.json").read_text(encoding="utf-8"))
+            with (folder / f"RPT_MUZIK_TAHUN_{year}_2027_DRAF.csv").open(
+                encoding="utf-8-sig", newline=""
+            ) as handle:
+                rpt = list(csv.DictReader(handle))
+            self.assertEqual(len(rpt), 35, f"RPT rows Year {year}")
+            self.assertEqual(len(manifest["pdps"]), 35, f"Manifest Year {year}")
+            for row, source in zip(rpt, manifest["pdps"]):
+                ident = source["pdp_id"]
+                with self.subTest(ident=ident):
+                    self.assertNotIn(ident, seen, f"Duplicate across years: {ident}")
+                    seen.add(ident)
+                    self.assertEqual(row["PdP ID"], ident)
+                    self.assertEqual(row["PdP"], str(source["pdp"]))
+                    self.assertEqual(
+                        " ".join(row[col_unit].split()).casefold(),
+                        " ".join(source["unit"].split()).casefold(),
+                    )
+                    self.assertEqual(
+                        [v.strip() for v in row[col_sp].split(";") if v.strip()],
+                        source["sp"],
+                        f"SP mismatch {ident}",
+                    )
+                    # The RPT may cite an old page without book-image proof;
+                    # equal page text is not itself verification of the book.
+                    self.assertEqual(
+                        row[col_page].replace("–", "-").strip(),
+                        str(source.get("page") or "").replace("–", "-").strip(),
+                    )
+                    self.assertEqual(row[col_a], source["rpt2027_slot"]["groupA"])
+                    self.assertEqual(row[col_b], source["rpt2027_slot"]["groupB"])
+            self.assertFalse(manifest["textbook_verified"])
+            self.assertFalse(manifest["rph_word_pdf_verified"])
+        self.assertEqual(len(seen), 175)
+
     def test_audit_summary_status_matches_current_source_evidence(self):
         """Prevent stale 3/28/15 counts being reported as the current QA state."""
         register = (MUSIC / "rpt_rph_2027" / "SOURCE_BOOK_REGISTER_20261106.md").read_text(
