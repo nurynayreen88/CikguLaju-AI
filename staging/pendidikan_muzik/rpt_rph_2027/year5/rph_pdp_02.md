@@ -16,7 +16,7 @@
 
 **Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Guru menganjurkan empat stesen Permainan Teroka Bunyi halaman 6; setiap kumpulan empat orang bergerak mengikut kad bernombor dan menilai cara bermain alat dengan selamat.
 
-**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid menepuk Corak Irama 1 dan 2 halaman 7 sebelum mengikut kumpulan alat dan memainkan pola secara bergilir menggunakan kiraan guru; tidak menganggap audio 10–17 sebagai fail yang telah tersedia.
+**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid menepuk Corak Irama 1 dan 2 (m/s 7), kemudian memainkan pola mengikut kumpulan alat secara bergilir menggunakan kiraan dan isyarat guru.
 
 **Pengukuhan dan pentaksiran (6 minit):** Guru menyemak ketepatan tepukan, tempo dan kendalian alat dalam dua pusingan.
 
