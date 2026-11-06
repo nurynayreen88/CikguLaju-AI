@@ -1,0 +1,30 @@
+name: Sains v26.00 read-only source inventory
+
+on:
+  pull_request:
+    paths:
+      - "tools/audit_sains_v26_readonly_20261106.py"
+      - "tests/test_sains_v26_source_inventory_20261106.py"
+      - ".github/workflows/sains-v2600-readonly-audit-20261106.yml"
+      - "v26_00_manifest.json"
+      - "v26_00_part*.bin"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inventory-not-final-ready:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test no-write source contract
+        run: |
+          python -m py_compile tools/audit_sains_v26_readonly_20261106.py
+          python -m unittest discover -s tests -p 'test_sains_v26_source_inventory_20261106.py' -v
+      - name: Inventory actual Sains grouped PdP from hashed master
+        run: python tools/audit_sains_v26_readonly_20261106.py
