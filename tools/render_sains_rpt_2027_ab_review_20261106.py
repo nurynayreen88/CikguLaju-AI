@@ -93,6 +93,14 @@ def calendar_cover_lines(group):
     lines.append("Cuti negeri/gantian, jadual sekolah dan tarikh setiap PdP: BELUM DISAHKAN.")
     return lines
 
+def curriculum_ref(year):
+    if year in (2,3):
+        return ("Sains KSSR Semakan 2017 (v25.82). Edisi 3 Tahap I ialah "
+                "PILIHAN guru dan BELUM DIPADANKAN — Surat KPM Bil. 6/2024.")
+    if year in (4,5,6):
+        return "Sains KSSR Semakan 2017 (v25.82), Tahap II; Edisi 3 Tahap I tidak diterapkan."
+    raise ValueError("Do not reuse Sains KSSR for KP2027 Year1")
+
 def safe_text(value):
     return str(value or "").strip()
 
@@ -172,7 +180,7 @@ def docx_file(path,year,group,rows):
         "STATUS: DRAF INDEKS PDP — BELUM SIAP UNTUK PENGGUNA",
         "Nama guru: ____________________________________",
         "Nama sekolah: ____________________________________",
-        "Rujukan: Sains KSSR (Semakan 2017), sumber PdP v25.82.",
+        curriculum_ref(year),
         *calendar_cover_lines(group),
         "Perhatian: Tahun 1 KP2027 menggunakan sumber Alam dan Manusia yang berasingan.",
     ]:
@@ -227,7 +235,7 @@ def pdf_file(path,year,group,rows):
            Paragraph("Nama guru: ___________________________________________",subtitle),
            Paragraph("Nama sekolah: _________________________________________",subtitle),
            *[Paragraph(escape(line),subtitle) for line in calendar_cover_lines(group)],
-           Paragraph("Sumber v25.82. Kod PdP, SK dan SP asal dipelihara. Tahun 1 KP2027 tidak termasuk.",subtitle),
+           Paragraph(escape(curriculum_ref(year)+" Tahun 1 KP2027 tidak termasuk."),subtitle),
            PageBreak(),
            Paragraph(f"Sains Tahun {year} | Kumpulan {group} | {len(rows)} PdP (DRAF)",subtitle)]
     header=["PdP","Unit buku teks","SK","SP","Tajuk/Fokus sumber","BT ms*","Minggu/tarikh"]
