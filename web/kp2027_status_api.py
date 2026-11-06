@@ -57,9 +57,11 @@ def create_kp2027_status_blueprint():
         try:
             args = _params({"level"})
             subjects, digest = subjects_for(args["level"])
+        except KP2027SourceUnverified:
+            return jsonify({"error": "KP2027 inventory unavailable"}), 503
         except ValueError:
             return jsonify({"error": "Year/Tingkatan not supported"}), 400
-        except (KP2027SourceUnverified, OSError):
+        except OSError:
             return jsonify({"error": "KP2027 inventory unavailable"}), 503
         return jsonify({"items": subjects, "source_digest": digest,
                         "status": STATUS, "rph_available": False,
@@ -70,10 +72,12 @@ def create_kp2027_status_blueprint():
         try:
             args = _params({"level", "subject", "source_digest"})
             info = status_for(args["level"], args["subject"], args["source_digest"])
+        except KP2027SourceUnverified:
+            return jsonify({"error": "Source not available or changed"}), 409
         except ValueError:
             return jsonify({"error": "Invalid KP2027 subject"}), 400
-        except (KP2027SourceUnverified, OSError):
-            return jsonify({"error": "Source not available or changed"}), 409
+        except OSError:
+            return jsonify({"error": "KP2027 inventory unavailable"}), 503
         return jsonify(info)
 
     @bp.get("/internal/kp2027/v1/standards")
@@ -81,10 +85,12 @@ def create_kp2027_status_blueprint():
         try:
             args = _params({"level", "subject"})
             verified_standards_for(args["level"], args["subject"])
+        except KP2027SourceUnverified:
+            return jsonify({"error": "KP2027 original DK not audited; standards unavailable"}), 503
         except ValueError:
             return jsonify({"error": "Invalid selection"}), 400
-        except (KP2027SourceUnverified, OSError):
-            return jsonify({"error": "KP2027 original DK not audited; standards unavailable"}), 503
+        except OSError:
+            return jsonify({"error": "KP2027 inventory unavailable"}), 503
         return jsonify({"error": "No verified KP2027 standards"}), 503
 
     @bp.post("/internal/kp2027/v1/render")
