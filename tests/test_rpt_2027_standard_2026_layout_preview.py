@@ -78,9 +78,15 @@ class RPT2026LayoutQA(unittest.TestCase):
                     cover=pdf.pages[0].extract_text()
                     body="\n".join(p.extract_text() for p in pdf.pages[1:])
                     self.assertIn("RANCANGAN PENGAJARAN TAHUNAN",cover)
+                    self.assertIn("LOGO SEKOLAH",cover)
                     self.assertIn("NAMA SEKOLAH",cover)
                     self.assertIn("NAMA GURU",cover)
-                    self.assertIn("KUMPULAN A",cover)
+                    self.assertIn("2027",cover)
+                    for unwanted in ("ALAMAT SEKOLAH", "KELAS", "NEGERI / KUMPULAN",
+                                     "KUMPULAN A", "KUMPULAN B", "RUJUKAN",
+                                     "Sumber:", "DRAF", "Halaman 1", "CIKGULAJU"):
+                        self.assertNotIn(unwanted,cover)
+                    self.assertNotIn("LOGO SEKOLAH",body)
                     for head in ("MINGGU / TARIKH","SK",
                                  "SP","CATATAN / BAHAN"):
                         self.assertIn(head,body)
@@ -95,6 +101,30 @@ class RPT2026LayoutQA(unittest.TestCase):
                     self.assertNotIn(".. Buku teks:",body)
                     self.assertNotIn(".. Tarikh",body)
             self.assertEqual(counts,{"psv":5,"rbt":3,"moral":5})
+
+    def test_school_cover_fields_and_optional_logo_image(self):
+        from PIL import Image as PILImage
+        with tempfile.TemporaryDirectory() as tmp:
+            folder = Path(tmp)
+            logo = folder / "school.png"
+            PILImage.new("RGB", (160, 96), (23, 78, 92)).save(logo)
+            output = folder / "personalized.pdf"
+            build_preview("psv", 2, psv_records(2), output,
+                          logo_path=logo, school_name="SEKOLAH CONTOH",
+                          teacher_name="GURU CONTOH")
+            reader = PdfReader(str(output))
+            cover = reader.pages[0].extract_text()
+            self.assertIn("SEKOLAH CONTOH", cover)
+            self.assertIn("GURU CONTOH", cover)
+            self.assertNotIn("LOGO SEKOLAH", cover)
+            self.assertGreaterEqual(len(reader.pages[0].images), 1)
+            self.assertNotIn("KUMPULAN A", cover)
+            self.assertIn("KUMPULAN A", reader.pages[1].extract_text())
+
+        with tempfile.TemporaryDirectory() as tmp:
+            with self.assertRaises(ValueError):
+                build_preview("psv", 2, psv_records(2), Path(tmp) / "bad.pdf",
+                              logo_path=Path(tmp) / "not-found.png")
 
     def test_preview_not_exposed_as_new_live_rpt(self):
         root=Path(__file__).resolve().parents[1]
