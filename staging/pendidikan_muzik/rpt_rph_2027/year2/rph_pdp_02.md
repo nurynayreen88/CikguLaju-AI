@@ -14,7 +14,7 @@
 
 **Aktiviti 1 — Demonstrasi/eksplorasi (8 minit):** Guru memperkenalkan permainan kad tempo dengan imej arnab dan kura-kura sambil memberi dua contoh ketukan.
 
-**Aktiviti 2 — Aplikasi dan amali (10 minit):** Murid mengangkat kad yang sepadan apabila mendengar ketukan/audio dan bergerak setempat mengikut perubahan cepat atau lambat.
+**Aktiviti 2 — Aplikasi dan amali (10 minit):** Murid mengangkat kad arnab atau kura-kura apabila guru mengetuk tempo cepat atau lambat secara langsung, kemudian bergerak setempat mengikut perubahan tempo; aktiviti boleh dijalankan tanpa audio.
 
 **Pengukuhan dan pentaksiran (6 minit):** Guru membuat empat pemerhatian pilihan kad dan ketepatan perubahan gerak.
 
