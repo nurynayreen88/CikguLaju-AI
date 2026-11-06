@@ -14,15 +14,32 @@ ROOT = Path(__file__).resolve().parent
 OUT = Path(os.environ.get("MUSIC_RPT_DRAFT_DIR", "/tmp/muzik-rpt-2027-draf"))
 
 
+ALIASES = {
+    "slot_a": ("Slot A", "Slot Kumpulan A", "Kumpulan A slot 2027"),
+    "slot_b": ("Slot B", "Slot Kumpulan B", "Kumpulan B slot 2027"),
+    "unit": ("Unit", "Unit/Tajuk"),
+    "sp": ("SP DSKP", "Kod SP", "SP"),
+    "book": ("BT m/s", "Buku Teks m/s", "RPT halaman BT (belum sah)"),
+    "status": ("Semakan", "Status Semakan", "Status tambahan"),
+}
+
+
+def pick(row, key):
+    for field in ALIASES[key]:
+        if field in row:
+            return row[field]
+    raise ValueError(f"Missing RPT column for {key}: {sorted(row)}")
+
+
 def make_rpt(year: int) -> tuple[Path, Path]:
     path = ROOT / f"year{year}" / f"RPT_MUZIK_TAHUN_{year}_2027_DRAF.csv"
     with path.open(encoding="utf-8-sig", newline="") as fh:
         rows = list(csv.DictReader(fh))
     assert len(rows) == 35, f"Year {year} missing PdP"
     assert [r["PdP ID"] for r in rows] == [f"MZ-Y{year}-{i:02d}" for i in range(1, 36)]
-    assert all(r["Slot A"] and r["Slot B"] and r["SP DSKP"] and r["Unit"] for r in rows)
+    assert all(pick(r, "slot_a") and pick(r, "slot_b") and pick(r, "sp") and pick(r, "unit") for r in rows)
     for number in (6, 19):
-        assert "PDP ANJAL" in rows[number - 1]["Semakan"]
+        assert "PDP ANJAL" in pick(rows[number - 1], "status")
 
     doc = Document()
     section = doc.sections[0]
@@ -65,13 +82,13 @@ def make_rpt(year: int) -> tuple[Path, Path]:
         table.rows[0].cells[col].text = name
     for idx, row in enumerate(rows, start=1):
         cells = table.add_row().cells
-        sp_codes = [p.strip() for p in row["SP DSKP"].split(";") if p.strip()]
+        sp_codes = [p.strip() for p in pick(row, "sp").split(";") if p.strip()]
         sk_codes = list(dict.fromkeys(".".join(code.split(".")[:2]) for code in sp_codes))
         values = [
-            f"{idx:02d}", row["Slot A"], row["Slot B"],
-            row["Unit"] + ("  [ANJAL]" if idx in (6, 19) else ""),
+            f"{idx:02d}", pick(row, "slot_a"), pick(row, "slot_b"),
+            pick(row, "unit") + ("  [ANJAL]" if idx in (6, 19) else ""),
             "SK: " + ", ".join(sk_codes) + "\nSP: " + ", ".join(sp_codes),
-            row["BT m/s"] or "-",
+            pick(row, "book") or "-",
         ]
         for i, value in enumerate(values):
             cells[i].text = value
