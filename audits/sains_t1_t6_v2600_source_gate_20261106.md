@@ -10,6 +10,40 @@
 - RPT dan PDF Sains 2027 masih tiada dalam direktori khusus rpt_2027/sains pada cabang main semasa audit.
 - Audit sumber statik tidak mengesahkan kandungan RPH, render A4, atau muat turun Web/Telegram secara langsung.
 
+## Keputusan CI audit sebenar (6 November 2026)
+
+Rujukan: [GitHub Actions run #42177830409](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42177830409).
+
+- v26.00: manifest 3 bahagian dan SHA256 sepadan, SQLite quick_check OK.
+- Jadual verified_pdp_sequence v26.00 **tiada** lajur pdp_sequence_code dan **0 baris Sains**.
+  Tidak boleh menganggap isi RPT atau SK/SP sebagai PdP verified.
+- v26.00 masih mempunyai **437 rekod curriculum_standards Sains Tahun 1–6** dan
+  **67 entri rpt_entries Sains Tahun 1–6**. Itu ialah rekod standard/entri topik,
+  **bukan** 437 atau 67 PdP lengkap.
+- Checkpoint v25.68 (rujukan sejarah, bukan sumber runtime yang diluluskan):
+  SQLite quick_check OK, saiz 27,848,704 bait, 385 rekod Sains dan 385 kod
+  pdp_sequence_code unik. SHA yang *diperhatikan*:
+  79845954db3f8a7c9e9b83ac1eb13477b64a92d0b9c12cfcd5ddd799b0f3f53b.
+  Tidak ada manifest SHA rujukan bebas untuk checkpoint ini.
+- Audit automatik berjaya dijalankan tetapi keputusan akademik **HOLD**.
+  Kod menjalankan semakan baca sahaja dan tidak memindahkan 385 rekod itu ke v26.
+
+| Tahun | Sasaran kerja, belum disahkan | Kod PdP unik v25.68 | Rekod sequence Sains v26.00 |
+|---|---:|---:|---:|
+| 1 | 92 | 43 | 0 |
+| 2 | 92 | 51 | 0 |
+| 3 | 103 | 45 | 0 |
+| 4 | 88 | 79 | 0 |
+| 5 | 116 | 83 | 0 |
+| 6 | 96 | 84 | 0 |
+| **Jumlah** | **587** | **385** | **0** |
+
+**Tindakan teknikal berikutnya:** pastikan enjin Telegram yang aktif membaca
+sumber urutan Sains yang mana; jangan hidupkan fallback senyap atau menampal
+385 rekod daripada snapshot lama tanpa padanan RPT/DSKP/BT dan semakan integriti.
+Setiap pembaikan hendaklah migration bertambah dengan backup dan ujian rollback,
+bukan overwrite master. Semak secara individu semua RPH sebelum penerbitan.
+
 ## Rujukan bahan dalam Google Drive (lokasi, bukan pengesahan halaman)
 
 | Tahun | DSKP | Buku teks |
