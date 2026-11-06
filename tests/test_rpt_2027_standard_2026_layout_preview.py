@@ -105,11 +105,11 @@ class RPT2026LayoutQA(unittest.TestCase):
     def test_dskp_private_use_bullets_do_not_render_as_blank_glyphs(self):
         self.assertEqual(normalize_pdf_text("A\uf0b7 B"), "A •  B")
         self.assertEqual(normalize_pdf_text("A\uf02d B"), "A -  B")
-        self.assertEqual(normalize_pdf_text("Line 1\\nLine 2"), "Line 1\\nLine 2")
+        self.assertEqual(normalize_pdf_text("Line 1" + chr(10) + "Line 2"), "Line 1" + chr(10) + "Line 2")
         with self.assertRaises(ValueError):
             normalize_pdf_text("Unknown \ue000 character")
         with self.assertRaises(ValueError):
-            normalize_pdf_text("Invalid \\x00 character")
+            normalize_pdf_text("Invalid " + chr(0) + " character")
 
     def test_school_cover_fields_and_optional_logo_image(self):
         from PIL import Image as PILImage
