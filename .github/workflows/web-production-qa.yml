@@ -10,6 +10,11 @@ on:
       - 'web/**'
       - 'web_v1_static_preview/**'
       - 'web_v1_telegram_login.py'
+      - 'web_v1_telegram_auth_routes.py'
+      - 'web_v1_sqlite_account_adapter.py'
+      - 'web_v1_supabase_account_adapter.py'
+      - 'tests/test_web_v1_telegram_auth_routes.py'
+      - 'tests/test_web_direct_telegram_registration.py'
       - 'tests/test_web_production_inventory.py'
       - 'rph_standalone/**'
   workflow_dispatch:
@@ -34,6 +39,7 @@ jobs:
           python -m unittest discover -s tests -p 'test_web_saved_classes.py' -v
           python -m unittest discover -s tests -p 'test_web_v1_telegram_login.py' -v
           python -m unittest discover -s tests -p 'test_web_v1_telegram_auth_routes.py' -v
+          python -m unittest discover -s tests -p 'test_web_direct_telegram_registration.py' -v
           python -m unittest discover -s tests -p 'test_web_rpt_2027_all.py' -v
       - name: Validate actual Web script
         run: |
