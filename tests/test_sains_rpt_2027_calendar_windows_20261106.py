@@ -109,11 +109,15 @@ class SainsRPTCalendarWindowsTests(unittest.TestCase):
                 word=Document(rphroot/f"SAINS_T3_PDP_{n:03d}_DRAF.docx")
                 self.assertEqual(word.tables[1].cell(1,1).text,rendered["TAJUK"])
                 self.assertIn(rendered["STANDARD PEMBELAJARAN"],word.tables[1].cell(2,1).text)
+                self.assertEqual(word.tables[1].cell(3,1).text,rendered["KEMAHIRAN PROSES SAINS"])
                 self.assertIn("Guru",word.tables[2].cell(1,1).text)
                 self.assertIn("Murid",word.tables[2].cell(1,1).text)
                 pdf=PdfReader(str(rphroot/f"SAINS_T3_PDP_{n:03d}_DRAF.pdf"))
                 self.assertEqual(len(pdf.pages),1)
                 txt=re.sub(r"\\s+"," ",pdf.pages[0].extract_text())
+                self.assertIn("KPS diintegrasi",txt)
+                for codepart in rendered["KEMAHIRAN PROSES SAINS"].split("; "):
+                    self.assertIn(codepart.split(" ",1)[0],txt)
                 for codepart in rendered["STANDARD PEMBELAJARAN"].split(", "):
                     self.assertIn(codepart,txt)
                 if primary in YEAR3_INTEGRATED_SP_CANDIDATE:
