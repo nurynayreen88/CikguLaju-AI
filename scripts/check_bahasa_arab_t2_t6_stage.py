@@ -207,9 +207,9 @@ def check() -> None:
     assert y2_source["items"][9]["sp"] == "2.3.5"
     assert y2_source["items"][10]["sp"] == "3.4.1"
     assert "frasa" in y2_source["items"][10]["focus"].lower()
-    assert all(y2_source["items"][i]["sp_printed_on_book_confirmed"] for i in (1,3,9,10))
+    assert all(x["sp_printed_on_book_confirmed"] for x in y2_source["items"])
     assert y2_source["ambiguous_book_sp_pdp"] == []
-    assert y2_source["book_sp_print_visual_resolved_pdp"] == ["002","004","010","011"]
+    assert y2_source["book_sp_print_visual_resolved_pdp"] == [f"{i:03d}" for i in range(1,13)]
     assert y2_source["text_source_corrob_sp_pdp"] == ["010","011"]
     assert y2_source["book_sp_print_visual_unresolved"] == []
     assert all(y2_source["items"][i]["book_ebook_html_sp_corroborated"]
@@ -218,7 +218,7 @@ def check() -> None:
                for i in (9,10))
     assert readiness["completed"]["year2_sp_book_html_code_corroborated"] == 2
     assert m["years"]["2"]["source_book_sp_html_code_corroborated"] == ["010","011"]
-    assert m["years"]["2"]["source_book_sp_print_visual_resolved"] == ["002","004","010","011"]
+    assert m["years"]["2"]["source_book_sp_print_visual_resolved"] == [f"{i:03d}" for i in range(1,13)]
     rph4 = (SUBJECT / "year2" / "lesson_004.md").read_text(encoding="utf-8")
     assert "SP 2.1.1" in rph4 and "meniru dan mengulang bacaan huruf" in rph4
     assert "sekurang-kurangnya 4 daripada 5 sebutan" in rph4
@@ -228,8 +228,8 @@ def check() -> None:
     assert m["years"]["2"]["source_text_reviewed_drafts"] == 12
     assert m["years"]["2"]["textbook"]["source_page_verified"] is False
     assert readiness["completed"]["year2_sp_book_ocr_ambiguous"] == 0
-    assert readiness["completed"]["year2_sp_book_visual_confirmed"] == 4
-    assert all(y2_source["items"][i]["book_pdf_visual_sp_confirmed"] for i in (1,3,9,10))
+    assert readiness["completed"]["year2_sp_book_visual_confirmed"] == 12
+    assert all(x["book_pdf_visual_sp_confirmed"] for x in y2_source["items"])
     for i, record in enumerate(y2_source["items"], start=1):
         text = (SUBJECT / "year2" / f"lesson_{i:03d}.md").read_text(encoding="utf-8")
         assert "**Semakan Buku Teks asal Tahun 2 (6 Nov 2026):**" in text
