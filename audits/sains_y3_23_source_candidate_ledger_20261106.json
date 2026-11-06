@@ -1,0 +1,504 @@
+{
+  "document_type": "Sains Year3 23 historical pending PdP: source ledger",
+  "date": "2026-11-06",
+  "status": "DRAF_SOURCE_CROSSCHECK_ONLY_NOT_DB_EDIT",
+  "checkpoint": "CikguLaju_Curriculum_Master_v25_68_SCIENCE_MATH_UPLOAD_READY.db.part00-02",
+  "dskp_url": "https://drive.google.com/file/d/1n4OM7x2e1_LIaBQDIxyeHmXglImtu5Yb/view",
+  "textbook_url": "https://drive.google.com/file/d/17QNqKZjSF7V9GzzkXkz46bDJGnyKYq-F/view",
+  "evidence_scope": "Literal SP wording verified in DSKP 2017 text and each SP code exists in BT Year3 2018 text. Printed page cues from TOC or adjacent SP tags. NOT visual page validation, page range proof, content quality audit, or RPH-ready approval.",
+  "summary": {
+    "pending": 23,
+    "wording_matches": 18,
+    "candidate_title_fixes": 5,
+    "candidate_codes": [
+      "SCI-Y3-PDP-002",
+      "SCI-Y3-PDP-005",
+      "SCI-Y3-PDP-011",
+      "SCI-Y3-PDP-020",
+      "SCI-Y3-PDP-021"
+    ],
+    "db_textbook_ref_blank": 23
+  },
+  "hold_reasons": [
+    "Year3 course sequence appears out of textbook order (Unit8 before Unit3, Unit10 before Unit9); verify actual year RPT before adjusting.",
+    "Check safety: SP8.1.2 should not invite tasting or touching unidentified chemicals.",
+    "Original 9.1.2 text wrongly describes orbital motion rather than temperature; original 9.1.3 describes revolution period rather than orbit.",
+    "Do not infer that original PdP021/PdP022 duplicate remains after correcting distinct SP9.1.3 vs 9.1.4.",
+    "Do not patch DB or release a RPH until teacher review and actual Word/PDF download."
+  ],
+  "records": [
+    {
+      "historical_row_id": 282,
+      "pdp_code": "SCI-Y3-PDP-001",
+      "original_pdp_title": "Menguji bahan yang berasid, beralkali dan neutral dari segi perubahan warna kertas litmus dengan menjalankan penyiasatan.",
+      "sk_code": "8.1",
+      "source_sequence_no": 1,
+      "sp_code": "8.1.1",
+      "unit": "Asid dan Alkali / 8.1",
+      "dskp_sp_text": "Menguji bahan yang berasid, beralkali dan neutral dari segi perubahan warna kertas litmus dengan menjalankan penyiasatan.",
+      "original_title_matches_dskp": true,
+      "candidate_pdp_title": "Menguji bahan yang berasid, beralkali dan neutral dari segi perubahan warna kertas litmus dengan menjalankan penyiasatan.",
+      "dskp_printed_page": 66,
+      "textbook_printed_pages_evidence": [
+        106
+      ],
+      "textbook_sp_code_observed": true,
+      "source_confirmation": "DSKP printed text + textbook SP code + printed TOC/page cue",
+      "manual_visual_page_and_activities_check": "PENDING",
+      "release_decision": "HOLD"
+    },
+    {
+      "historical_row_id": 283,
+      "pdp_code": "SCI-Y3-PDP-002",
+      "original_pdp_title": "Menerangkan bahan yang berasid, beralkali dan neutral dari aspek rasa dan sentuhan dengan menguji beberapa contoh bahan.",
+      "sk_code": "8.1",
+      "source_sequence_no": 2,
+      "sp_code": "8.1.2",
+      "unit": "Asid dan Alkali / 8.1",
+      "dskp_sp_text": "Mengitlak bahan yang berasid, beralkali dan neutral dari aspek rasa dan sentuhan dengan menguji beberapa contoh bahan.",
+      "original_title_matches_dskp": false,
+      "candidate_pdp_title": "Mengitlak bahan yang berasid, beralkali dan neutral dari aspek rasa dan sentuhan dengan menguji beberapa contoh bahan.",
+      "dskp_printed_page": 66,
+      "textbook_printed_pages_evidence": [
+        109,
+        110
+      ],
+      "textbook_sp_code_observed": true,
+      "source_confirmation": "DSKP printed text + textbook SP code + printed TOC/page cue",
+      "manual_visual_page_and_activities_check": "PENDING",
+      "release_decision": "HOLD"
+    },
+    {
+      "historical_row_id": 284,
+      "pdp_code": "SCI-Y3-PDP-003",
+      "original_pdp_title": "Meneroka bahan lain yang boleh menguji bahan berasid, beralkali dan neutral.",
+      "sk_code": "8.1",
+      "source_sequence_no": 3,
+      "sp_code": "8.1.3",
+      "unit": "Asid dan Alkali / 8.1",
+      "dskp_sp_text": "Meneroka bahan lain yang boleh menguji bahan berasid, beralkali dan neutral.",
+      "original_title_matches_dskp": true,
+      "candidate_pdp_title": "Meneroka bahan lain yang boleh menguji bahan berasid, beralkali dan neutral.",
+      "dskp_printed_page": 66,
+      "textbook_printed_pages_evidence": [
+        112
+      ],
+      "textbook_sp_code_observed": true,
+      "source_confirmation": "DSKP printed text + textbook SP code + printed TOC/page cue",
+      "manual_visual_page_and_activities_check": "PENDING",
+      "release_decision": "HOLD"
+    },
+    {
+      "historical_row_id": 285,
+      "pdp_code": "SCI-Y3-PDP-004",
+      "original_pdp_title": "Menjelaskan pemerhatian tentang asid dan alkali melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sk_code": "8.1",
+      "source_sequence_no": 4,
+      "sp_code": "8.1.4",
+      "unit": "Asid dan Alkali / 8.1",
+      "dskp_sp_text": "Menjelaskan pemerhatian tentang asid dan alkali melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_title_matches_dskp": true,
+      "candidate_pdp_title": "Menjelaskan pemerhatian tentang asid dan alkali melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp_printed_page": 66,
+      "textbook_printed_pages_evidence": [
+        110,
+        111
+      ],
+      "textbook_sp_code_observed": true,
+      "source_confirmation": "DSKP printed text + textbook SP code + printed TOC/page cue",
+      "manual_visual_page_and_activities_check": "PENDING",
+      "release_decision": "HOLD"
+    },
+    {
+      "historical_row_id": 286,
+      "pdp_code": "SCI-Y3-PDP-005",
+      "original_pdp_title": "Menyatakan jenis gigi dan fungsinya.",
+      "sk_code": "3.1",
+      "source_sequence_no": 5,
+      "sp_code": "3.1.1",
+      "unit": "Manusia / 3.1 Gigi",
+      "dskp_sp_text": "Memerihalkan jenis gigi dan fungsinya.",
+      "original_title_matches_dskp": false,
+      "candidate_pdp_title": "Memerihalkan jenis gigi dan fungsinya.",
+      "dskp_printed_page": 54,
+      "textbook_printed_pages_evidence": [
+        30
+      ],
+      "textbook_sp_code_observed": true,
+      "source_confirmation": "DSKP printed text + textbook SP code + printed TOC/page cue",
+      "manual_visual_page_and_activities_check": "PENDING",
+      "release_decision": "HOLD"
+    },
+    {
+      "historical_row_id": 287,
+      "pdp_code": "SCI-Y3-PDP-006",
+      "original_pdp_title": "Melabelkan struktur gigi.",
+      "sk_code": "3.1",
+      "source_sequence_no": 6,
+      "sp_code": "3.1.2",
+      "unit": "Manusia / 3.1 Gigi",
+      "dskp_sp_text": "Melabelkan struktur gigi.",
+      "original_title_matches_dskp": true,
+      "candidate_pdp_title": "Melabelkan struktur gigi.",
+      "dskp_printed_page": 54,
+      "textbook_printed_pages_evidence": [
+        32
+      ],
+      "textbook_sp_code_observed": true,
+      "source_confirmation": "DSKP printed text + textbook SP code + printed TOC/page cue",
+      "manual_visual_page_and_activities_check": "PENDING",
+      "release_decision": "HOLD"
+    },
+    {
+      "historical_row_id": 288,
+      "pdp_code": "SCI-Y3-PDP-007",
+      "original_pdp_title": "Membanding dan membezakan set gigi susu dan set gigi kekal.",
+      "sk_code": "3.1",
+      "source_sequence_no": 7,
+      "sp_code": "3.1.3",
+      "unit": "Manusia / 3.1 Gigi",
+      "dskp_sp_text": "Membanding dan membezakan set gigi susu dan set gigi kekal.",
+      "original_title_matches_dskp": true,
+      "candidate_pdp_title": "Membanding dan membezakan set gigi susu dan set gigi kekal.",
+      "dskp_printed_page": 54,
+      "textbook_printed_pages_evidence": [
+        34,
+        36
+      ],
+      "textbook_sp_code_observed": true,
+      "source_confirmation": "DSKP printed text + textbook SP code + printed TOC/page cue",
+      "manual_visual_page_and_activities_check": "PENDING",
+      "release_decision": "HOLD"
+    },
+    {
+      "historical_row_id": 289,
+      "pdp_code": "SCI-Y3-PDP-008",
+      "original_pdp_title": "Menghubung kait penjagaan kesihatan gigi dengan struktur gigi.",
+      "sk_code": "3.1",
+      "source_sequence_no": 8,
+      "sp_code": "3.1.4",
+      "unit": "Manusia / 3.1 Gigi",
+      "dskp_sp_text": "Menghubung kait penjagaan kesihatan gigi dengan struktur gigi.",
+      "original_title_matches_dskp": true,
+      "candidate_pdp_title": "Menghubung kait penjagaan kesihatan gigi dengan struktur gigi.",
+      "dskp_printed_page": 54,
+      "textbook_printed_pages_evidence": [
+        37,
+        38
+      ],
+      "textbook_sp_code_observed": true,
+      "source_confirmation": "DSKP printed text + textbook SP code + printed TOC/page cue",
+      "manual_visual_page_and_activities_check": "PENDING",
+      "release_decision": "HOLD"
+    },
+    {
+      "historical_row_id": 290,
+      "pdp_code": "SCI-Y3-PDP-009",
+      "original_pdp_title": "Menjelaskan pemerhatian tentang gigi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sk_code": "3.1",
+      "source_sequence_no": 9,
+      "sp_code": "3.1.5",
+      "unit": "Manusia / 3.1 Gigi",
+      "dskp_sp_text": "Menjelaskan pemerhatian tentang gigi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_title_matches_dskp": true,
+      "candidate_pdp_title": "Menjelaskan pemerhatian tentang gigi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp_printed_page": 54,
+      "textbook_printed_pages_evidence": [
+        36,
+        38
+      ],
+      "textbook_sp_code_observed": true,
+      "source_confirmation": "DSKP printed text + textbook SP code + printed TOC/page cue",
+      "manual_visual_page_and_activities_check": "PENDING",
+      "release_decision": "HOLD"
+    },
+    {
+      "historical_row_id": 291,
+      "pdp_code": "SCI-Y3-PDP-010",
+      "original_pdp_title": "Memberi contoh makanan bagi setiap kelas makanan.",
+      "sk_code": "3.2",
+      "source_sequence_no": 10,
+      "sp_code": "3.2.1",
+      "unit": "Manusia / 3.2 Kelas Makanan",
+      "dskp_sp_text": "Memberi contoh makanan bagi setiap kelas makanan.",
+      "original_title_matches_dskp": true,
+      "candidate_pdp_title": "Memberi contoh makanan bagi setiap kelas makanan.",
+      "dskp_printed_page": 55,
+      "textbook_printed_pages_evidence": [
+        40,
+        41
+      ],
+      "textbook_sp_code_observed": true,
+      "source_confirmation": "DSKP printed text + textbook SP code + printed TOC/page cue",
+      "manual_visual_page_and_activities_check": "PENDING",
+      "release_decision": "HOLD"
+    },
+    {
+      "historical_row_id": 292,
+      "pdp_code": "SCI-Y3-PDP-011",
+      "original_pdp_title": "Menyatakan kepentingan makanan mengikut kelasnya kepada tubuh manusia.",
+      "sk_code": "3.2",
+      "source_sequence_no": 11,
+      "sp_code": "3.2.2",
+      "unit": "Manusia / 3.2 Kelas Makanan",
+      "dskp_sp_text": "Mengitlak kepentingan makanan mengikut kelasnya kepada tubuh manusia.",
+      "original_title_matches_dskp": false,
+      "candidate_pdp_title": "Mengitlak kepentingan makanan mengikut kelasnya kepada tubuh manusia.",
+      "dskp_printed_page": 55,
+      "textbook_printed_pages_evidence": [
+        42
+      ],
+      "textbook_sp_code_observed": true,
+      "source_confirmation": "DSKP printed text + textbook SP code + printed TOC/page cue",
+      "manual_visual_page_and_activities_check": "PENDING",
+      "release_decision": "HOLD"
+    },
+    {
+      "historical_row_id": 293,
+      "pdp_code": "SCI-Y3-PDP-012",
+      "original_pdp_title": "Menjelas dengan contoh makanan seimbang berdasarkan piramid makanan.",
+      "sk_code": "3.2",
+      "source_sequence_no": 12,
+      "sp_code": "3.2.3",
+      "unit": "Manusia / 3.2 Kelas Makanan",
+      "dskp_sp_text": "Menjelas dengan contoh makanan seimbang berdasarkan piramid makanan.",
+      "original_title_matches_dskp": true,
+      "candidate_pdp_title": "Menjelas dengan contoh makanan seimbang berdasarkan piramid makanan.",
+      "dskp_printed_page": 55,
+      "textbook_printed_pages_evidence": [
+        44
+      ],
+      "textbook_sp_code_observed": true,
+      "source_confirmation": "DSKP printed text + textbook SP code + printed TOC/page cue",
+      "manual_visual_page_and_activities_check": "PENDING",
+      "release_decision": "HOLD"
+    },
+    {
+      "historical_row_id": 294,
+      "pdp_code": "SCI-Y3-PDP-013",
+      "original_pdp_title": "Menaakul kesan pengambilan makanan yang tidak seimbang.",
+      "sk_code": "3.2",
+      "source_sequence_no": 13,
+      "sp_code": "3.2.4",
+      "unit": "Manusia / 3.2 Kelas Makanan",
+      "dskp_sp_text": "Menaakul kesan pengambilan makanan yang tidak seimbang.",
+      "original_title_matches_dskp": true,
+      "candidate_pdp_title": "Menaakul kesan pengambilan makanan yang tidak seimbang.",
+      "dskp_printed_page": 55,
+      "textbook_printed_pages_evidence": [
+        47
+      ],
+      "textbook_sp_code_observed": true,
+      "source_confirmation": "DSKP printed text + textbook SP code + printed TOC/page cue",
+      "manual_visual_page_and_activities_check": "PENDING",
+      "release_decision": "HOLD"
+    },
+    {
+      "historical_row_id": 295,
+      "pdp_code": "SCI-Y3-PDP-014",
+      "original_pdp_title": "Menyatakan maksud dan kegunaan takal.",
+      "sk_code": "10.1",
+      "source_sequence_no": 14,
+      "sp_code": "10.1.1",
+      "unit": "Mesin / 10.1 Takal",
+      "dskp_sp_text": "Menyatakan maksud dan kegunaan takal.",
+      "original_title_matches_dskp": true,
+      "candidate_pdp_title": "Menyatakan maksud dan kegunaan takal.",
+      "dskp_printed_page": 70,
+      "textbook_printed_pages_evidence": [
+        128
+      ],
+      "textbook_sp_code_observed": true,
+      "source_confirmation": "DSKP printed text + textbook SP code + printed TOC/page cue",
+      "manual_visual_page_and_activities_check": "PENDING",
+      "release_decision": "HOLD"
+    },
+    {
+      "historical_row_id": 296,
+      "pdp_code": "SCI-Y3-PDP-015",
+      "original_pdp_title": "Memerihalkan cara takal tetap berfungsi dengan menggunakan model.",
+      "sk_code": "10.1",
+      "source_sequence_no": 15,
+      "sp_code": "10.1.2",
+      "unit": "Mesin / 10.1 Takal",
+      "dskp_sp_text": "Memerihalkan cara takal tetap berfungsi dengan menggunakan model.",
+      "original_title_matches_dskp": true,
+      "candidate_pdp_title": "Memerihalkan cara takal tetap berfungsi dengan menggunakan model.",
+      "dskp_printed_page": 70,
+      "textbook_printed_pages_evidence": [
+        129
+      ],
+      "textbook_sp_code_observed": true,
+      "source_confirmation": "DSKP printed text + textbook SP code + printed TOC/page cue",
+      "manual_visual_page_and_activities_check": "PENDING",
+      "release_decision": "HOLD"
+    },
+    {
+      "historical_row_id": 297,
+      "pdp_code": "SCI-Y3-PDP-016",
+      "original_pdp_title": "Memberi contoh aplikasi takal dalam kehidupan.",
+      "sk_code": "10.1",
+      "source_sequence_no": 16,
+      "sp_code": "10.1.3",
+      "unit": "Mesin / 10.1 Takal",
+      "dskp_sp_text": "Memberi contoh aplikasi takal dalam kehidupan.",
+      "original_title_matches_dskp": true,
+      "candidate_pdp_title": "Memberi contoh aplikasi takal dalam kehidupan.",
+      "dskp_printed_page": 70,
+      "textbook_printed_pages_evidence": [
+        131,
+        135
+      ],
+      "textbook_sp_code_observed": true,
+      "source_confirmation": "DSKP printed text + textbook SP code + printed TOC/page cue",
+      "manual_visual_page_and_activities_check": "PENDING",
+      "release_decision": "HOLD"
+    },
+    {
+      "historical_row_id": 298,
+      "pdp_code": "SCI-Y3-PDP-017",
+      "original_pdp_title": "Mereka cipta model takal yang berfungsi.",
+      "sk_code": "10.1",
+      "source_sequence_no": 17,
+      "sp_code": "10.1.4",
+      "unit": "Mesin / 10.1 Takal",
+      "dskp_sp_text": "Mereka cipta model takal yang berfungsi.",
+      "original_title_matches_dskp": true,
+      "candidate_pdp_title": "Mereka cipta model takal yang berfungsi.",
+      "dskp_printed_page": 70,
+      "textbook_printed_pages_evidence": [
+        133
+      ],
+      "textbook_sp_code_observed": true,
+      "source_confirmation": "DSKP printed text + textbook SP code + printed TOC/page cue",
+      "manual_visual_page_and_activities_check": "PENDING",
+      "release_decision": "HOLD"
+    },
+    {
+      "historical_row_id": 299,
+      "pdp_code": "SCI-Y3-PDP-018",
+      "original_pdp_title": "Menjelaskan pemerhatian tentang takal melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sk_code": "10.1",
+      "source_sequence_no": 18,
+      "sp_code": "10.1.5",
+      "unit": "Mesin / 10.1 Takal",
+      "dskp_sp_text": "Menjelaskan pemerhatian tentang takal melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_title_matches_dskp": true,
+      "candidate_pdp_title": "Menjelaskan pemerhatian tentang takal melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp_printed_page": 70,
+      "textbook_printed_pages_evidence": [
+        133,
+        135
+      ],
+      "textbook_sp_code_observed": true,
+      "source_confirmation": "DSKP printed text + textbook SP code + printed TOC/page cue",
+      "manual_visual_page_and_activities_check": "PENDING",
+      "release_decision": "HOLD"
+    },
+    {
+      "historical_row_id": 300,
+      "pdp_code": "SCI-Y3-PDP-019",
+      "original_pdp_title": "Menyenaraikan ahli dalam Sistem Suria melalui pemerhatian menerusi pelbagai media.",
+      "sk_code": "9.1",
+      "source_sequence_no": 19,
+      "sp_code": "9.1.1",
+      "unit": "Sistem Suria / 9.1",
+      "dskp_sp_text": "Menyenaraikan ahli dalam Sistem Suria melalui pemerhatian menerusi pelbagai media.",
+      "original_title_matches_dskp": true,
+      "candidate_pdp_title": "Menyenaraikan ahli dalam Sistem Suria melalui pemerhatian menerusi pelbagai media.",
+      "dskp_printed_page": 68,
+      "textbook_printed_pages_evidence": [
+        116,
+        118
+      ],
+      "textbook_sp_code_observed": true,
+      "source_confirmation": "DSKP printed text + textbook SP code + printed TOC/page cue",
+      "manual_visual_page_and_activities_check": "PENDING",
+      "release_decision": "HOLD"
+    },
+    {
+      "historical_row_id": 301,
+      "pdp_code": "SCI-Y3-PDP-020",
+      "original_pdp_title": "Menerangkan planet beredar mengelilingi Matahari mengikut orbit.",
+      "sk_code": "9.1",
+      "source_sequence_no": 20,
+      "sp_code": "9.1.2",
+      "unit": "Sistem Suria / 9.1",
+      "dskp_sp_text": "Mengitlak suhu planet berdasarkan urutan dalam Sistem Suria.",
+      "original_title_matches_dskp": false,
+      "candidate_pdp_title": "Mengitlak suhu planet berdasarkan urutan dalam Sistem Suria.",
+      "dskp_printed_page": 68,
+      "textbook_printed_pages_evidence": [
+        120
+      ],
+      "textbook_sp_code_observed": true,
+      "source_confirmation": "DSKP printed text + textbook SP code + printed TOC/page cue",
+      "manual_visual_page_and_activities_check": "PENDING",
+      "release_decision": "HOLD"
+    },
+    {
+      "historical_row_id": 302,
+      "pdp_code": "SCI-Y3-PDP-021",
+      "original_pdp_title": "Menghubung kait kedudukan planet dari Matahari dengan masa planet beredar mengelilingi Matahari.",
+      "sk_code": "9.1",
+      "source_sequence_no": 21,
+      "sp_code": "9.1.3",
+      "unit": "Sistem Suria / 9.1",
+      "dskp_sp_text": "Memerihalkan planet beredar mengelilingi Matahari mengikut orbit.",
+      "original_title_matches_dskp": false,
+      "candidate_pdp_title": "Memerihalkan planet beredar mengelilingi Matahari mengikut orbit.",
+      "dskp_printed_page": 68,
+      "textbook_printed_pages_evidence": [
+        122,
+        123
+      ],
+      "textbook_sp_code_observed": true,
+      "source_confirmation": "DSKP printed text + textbook SP code + printed TOC/page cue",
+      "manual_visual_page_and_activities_check": "PENDING",
+      "release_decision": "HOLD"
+    },
+    {
+      "historical_row_id": 303,
+      "pdp_code": "SCI-Y3-PDP-022",
+      "original_pdp_title": "Menghubung kait kedudukan planet dari Matahari dengan masa planet beredar mengelilingi Matahari.",
+      "sk_code": "9.1",
+      "source_sequence_no": 22,
+      "sp_code": "9.1.4",
+      "unit": "Sistem Suria / 9.1",
+      "dskp_sp_text": "Menghubung kait kedudukan planet dari Matahari dengan masa planet beredar mengelilingi Matahari.",
+      "original_title_matches_dskp": true,
+      "candidate_pdp_title": "Menghubung kait kedudukan planet dari Matahari dengan masa planet beredar mengelilingi Matahari.",
+      "dskp_printed_page": 68,
+      "textbook_printed_pages_evidence": [
+        124,
+        125
+      ],
+      "textbook_sp_code_observed": true,
+      "source_confirmation": "DSKP printed text + textbook SP code + printed TOC/page cue",
+      "manual_visual_page_and_activities_check": "PENDING",
+      "release_decision": "HOLD"
+    },
+    {
+      "historical_row_id": 304,
+      "pdp_code": "SCI-Y3-PDP-023",
+      "original_pdp_title": "Menjelaskan pemerhatian tentang sistem suria melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "sk_code": "9.1",
+      "source_sequence_no": 23,
+      "sp_code": "9.1.5",
+      "unit": "Sistem Suria / 9.1",
+      "dskp_sp_text": "Menjelaskan pemerhatian tentang sistem suria melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_title_matches_dskp": true,
+      "candidate_pdp_title": "Menjelaskan pemerhatian tentang sistem suria melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "dskp_printed_page": 68,
+      "textbook_printed_pages_evidence": [
+        118,
+        123,
+        125
+      ],
+      "textbook_sp_code_observed": true,
+      "source_confirmation": "DSKP printed text + textbook SP code + printed TOC/page cue",
+      "manual_visual_page_and_activities_check": "PENDING",
+      "release_decision": "HOLD"
+    }
+  ]
+}
