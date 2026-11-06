@@ -412,7 +412,7 @@
   if(generateAll.disabled)return;
   const selected=choices.filter(c=>c.slot.can_prepare);
   if(!selected.length||selected.some(c=>!c.controls.lesson.value))return;
-  reviewing=true;generateAll.disabled=true;
+  reviewing=true;generateAll.disabled=true;updateAll();
   const epoch=++batchEpoch;
   allStatus.textContent="Menyemak bahan bagi "+selected.length+" Lesson/PdP yang dipilih…";
   const queue=selected.slice();
@@ -432,7 +432,7 @@
   }
  }
  confirm.addEventListener("change",()=>{
-  if(!confirm.checked)clearResults();
+  if(!confirm.checked){reviewing=false;clearResults();}
   updateAll();
  });
  refresh.addEventListener("click",()=>{void load(dateInput.value);});
