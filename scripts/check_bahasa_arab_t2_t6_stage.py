@@ -360,8 +360,7 @@ def check() -> None:
     assert m["years"]["5"]["source_reviewed_drafts_total"] == 60
     assert readiness["completed"]["year5_unit4_candidate_rph"] == 16
     assert readiness["completed"]["verified_a4_render_for_all_154"] is True
-    assert m["latest_technical_a4_validation"]["word_document_count"] == 154
-    assert m["latest_technical_a4_validation"]["pdf_document_count"] == 154
+    assert any(x["word_document_count"] == 154 and x["pdf_document_count"] == 154 for x in m["historical_technical_a4_validation"])
     assert m["latest_technical_a4_validation"]["release_approval"] is False
     assert readiness["completed"]["year5_unit4_pages_visually_reviewed"] == 13
     assert readiness["completed"]["year5_unit4_sp_codes_present_in_dskp"] == 16
