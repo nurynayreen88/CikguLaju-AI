@@ -30,18 +30,31 @@ def psv_records(year):
         ident=f"{n:03d}"
         if r.get("PdP")!=ident or week.get("PdP")!=ident:
             raise ValueError("PSV calendar source PdP order mismatch")
+        raw_week=r.get("Minggu PdP (cadangan)") or r.get("Turutan PdP cadangan")
+        raw_unit=(r.get("Unit") or r.get("Unit 2026") or "").strip()
+        unit_name=(r.get("Bidang") or r.get("Tajuk unit") or "").strip()
+        if not raw_week or not raw_unit or not unit_name:
+            raise ValueError("PSV source missing year-specific week/unit fields")
+        unit=raw_unit if raw_unit.lower().startswith("unit ") else "Unit "+raw_unit
+        if unit_name.casefold() not in unit.casefold():
+            unit+=": "+unit_name
+        focus=(r.get("Fokus") or r.get("Modul") or "").strip()
+        topic=(r.get("Tajuk karya cadangan") or r.get("Tajuk/aktiviti PdP") or "").strip()
+        book=(r.get("BT muka surat") or r.get("Rujukan BT ms (RPT 2026)") or "").strip()
+        technique=r.get("Teknik","").strip()
         output.append({
             "id":ident,
-            "week":("M"+str(r["Minggu PdP (cadangan)"]).zfill(2)),
+            "week":"M"+str(raw_week).zfill(2),
             "a_start":week["Minggu_A_mulai"],"a_end":week["Minggu_A_hingga"],
             "b_start":week["Minggu_B_mulai"],"b_end":week["Minggu_B_hingga"],
-            "unit":f"Unit {r['Unit']}: {r['Bidang']}",
-            "topic":(r.get("Tajuk karya cadangan","") + " | " + r["Fokus"]).strip(" |"),
+            "unit":unit,
+            "topic":topic+(" | Fokus: "+focus if focus else ""),
             "sk":r["SK"],"sp":r["SP"],
-            "note":("Teknik: "+r["Teknik"]+". Objektif: "+r["Objektif"]+
+            "note":(("Teknik: "+technique+". ") if technique else "")+
+                    "Objektif: "+r["Objektif"]+
                     ". PBD: "+r["Evidens PBD"]+
-                    (". Buku teks m/s "+r["BT muka surat"] if r["BT muka surat"] else "")+
-                    ". Tarikh dan halaman BT: cadangan, perlu disemak.")
+                    (". Buku teks: "+book if book else "")+
+                    ". Tarikh dan halaman BT: cadangan, perlu disemak."
         })
     validate_rows("psv",year,output)
     return output
