@@ -3,7 +3,7 @@ import unittest
 import json
 from pathlib import Path
 from web.sains_y3_rph_activity_preview_20261106 import (
-    BANK,INTEGRATED_SP_DRAFT,KPS_LABELS,KPS_BY_SP,adapt_rows,source_ledgers,
+    BANK,INTEGRATED_SP_DRAFT,KPS_LABELS,KPS_BY_SP,MANIP_LABELS,MANIP_BY_SP,adapt_rows,source_ledgers,
 )
 
 class SainsY3ActivityCoverageTests(unittest.TestCase):
@@ -70,6 +70,33 @@ class SainsY3ActivityCoverageTests(unittest.TestCase):
                 self.assertEqual(out["KEMAHIRAN PROSES SAINS"],expected)
             all_skills.update(codes)
         self.assertEqual(all_skills,set(KPS_LABELS))
+
+    def test_14_hands_on_lessons_map_dskp_manipulative_and_lab_rules(self):
+        self.assertEqual(len(MANIP_BY_SP),14)
+        self.assertEqual(set(MANIP_LABELS),
+            {"1.2.1","1.2.2","1.2.3","1.2.4","1.2.5","2.1.1"})
+        self.assertEqual(set(MANIP_BY_SP)-set(BANK),set())
+        assigned=0
+        for row in self.ledger.values():
+            sp=row["sp_code"]
+            state={"subject":"Sains","year":"Tahun 3","sp_code":sp,
+                   "sk_code":sp.rsplit(".",1)[0],
+                   "pdp_sequence_code":row["pdp_code"]}
+            revised=adapt_rows(state,{})
+            assigned_codes=MANIP_BY_SP.get(sp,[])
+            expected=", ".join(assigned_codes)
+            with self.subTest(sp=sp):
+                self.assertEqual(revised["KEMAHIRAN MANIPULATIF DAN KESELAMATAN"],expected)
+                if assigned_codes:
+                    assigned+=1
+                if "2.1.1" in assigned_codes:
+                    self.assertIn("mematuhi peraturan bilik sains",revised["PENUTUP"])
+                    self.assertIn("mengemas alatan",revised["PENUTUP"])
+                else:
+                    self.assertNotIn("mengemas alatan",revised["PENUTUP"])
+        self.assertEqual(assigned,14)
+        used={code for values in MANIP_BY_SP.values() for code in values}
+        self.assertEqual(used,set(MANIP_LABELS))
 
     def test_twelve_dskp_corrections_win_over_outdated_titles(self):
         for code,f in self.fixes.items():
