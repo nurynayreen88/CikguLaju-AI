@@ -26,7 +26,7 @@ Senarai semak: jumlah lapan detik, ketepatan tepukan dan sumbangan ahli kumpulan
 **Penutup — 2 minit**  
 Setiap kumpulan menamakan satu pembetulan pada susunan kad atau ketepatan tepukannya.
 
-**Bahan:** Buku teks halaman 28–29, kad ikon not, roda pilihan atau kad cabutan, papan kiraan; Audio 24–25 belum dibuktikan sebagai fail.  
+**Bahan:** Buku teks m/s 28–29, kad ikon not, roda pilihan atau kad cabutan, papan kiraan dan contoh detik yang ditepuk guru.  
 **Rujukan sumber:** Buku Teks Pendidikan Kesenian Tahun 3 SK (DBP 2018), halaman 28–29; teks aktiviti disemak terhadap salinan https://anyflip.com/lcinm/flxx/basic. Kod dicetak dalam buku gabungan: 3.2.2, 3.2.3; **bukan pengesahan kod DSKP Pendidikan Muzik berdiri sendiri**. Audio tercetak: 24–25; **fail audio/trek belum diperiksa**.
 
 **Catatan pelaksanaan / pemulihan:** __________________________________________
