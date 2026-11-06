@@ -160,6 +160,43 @@ def profile_rows_without_sequence_code(conn: sqlite3.Connection) -> dict:
     }
 
 
+def profile_science_candidate_tables(conn: sqlite3.Connection) -> dict:
+    """Find other science sources without promoting RPT weeks to PdP identity."""
+    preferred = (
+        "rpt_entries", "rpt_entry_standards", "rpt_source_catalog",
+        "rpt_subject_profiles", "pdp_flow_profile", "rpt_lesson_mapping_status",
+        "curriculum_standards",
+    )
+    existing = {r[0] for r in conn.execute(
+        "SELECT name FROM sqlite_master WHERE type='table'")}
+    out = {}
+    for name in preferred:
+        if name not in existing:
+            continue
+        cols = [r[1] for r in conn.execute(f'PRAGMA table_info("{name}")')]
+        info = {"columns": cols}
+        if "subject" in cols:
+            sql = f'SELECT * FROM "{name}" WHERE lower(trim(subject)) LIKE ? LIMIT 20001'
+            found = [dict(r) for r in conn.execute(sql, ("%sains%",))]
+            info["science_named_rows_UP_TO_20001"] = len(found)
+            info["truncated"] = len(found) == 20001
+            ycol = next((c for c in ("year_label", "grade", "year", "academic_year")
+                         if c in cols), None)
+            if ycol:
+                info["year_value_counts"] = dict(Counter(str(r.get(ycol) or "")
+                                                         for r in found))
+            info["first_two_rows"] = [
+                {key: r.get(key) for key in (
+                    "id", "year_label", "grade", "week_no", "unit_code",
+                    "unit_title", "topic", "pdp_title", "sk_code", "sp_code",
+                    "textbook_ref", "verification_status")
+                 if key in cols}
+                for r in found[:2]
+            ]
+        out[name] = info
+    return out
+
+
 def audit(conn: sqlite3.Connection) -> dict:
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA query_only=ON")
@@ -178,6 +215,7 @@ def audit(conn: sqlite3.Connection) -> dict:
                 "reason": "verified_pdp_sequence schema differs",
                 "missing_columns": sorted(required_cols - cols),
                 "raw_source_profile": profile_rows_without_sequence_code(conn),
+                "candidate_science_tables": profile_science_candidate_tables(conn),
                 "available_columns": sorted(cols),
                 "related_tables": sorted(t for t in tables if any(
                     k in t.lower() for k in ("sci", "sains", "pdp", "rpt", "sequence")))}
