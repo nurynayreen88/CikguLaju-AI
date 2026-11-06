@@ -177,7 +177,7 @@ def check() -> None:
     assert readiness["completed"]["source_page_draft_reviewed"] == 154
     assert readiness["completed"]["draft_rph"] == 154
     assert sum(y["source_page_reviewed_rph"] for y in readiness["years"]) == 154
-    assert all(y["unwritten_units"] == ([] if y["year"] == 4 else ([4] if y["year"] == 5 else [2,3,4])) for y in readiness["years"])
+    assert all(y["unwritten_units"] == ([] if y["year"] in (4,5) else [2,3,4]) for y in readiness["years"])
     assert readiness["total_ready_rph"] == 0 and readiness["release_authorized"] is False
     assert all(readiness[k] is False for k in ("production_db_touched","telegram_live_touched","web_live_touched"))
     assert any(x["id"] == "full_pdp_coverage" and x["status"] == "BLOCKED" for x in readiness["release_checks"])
