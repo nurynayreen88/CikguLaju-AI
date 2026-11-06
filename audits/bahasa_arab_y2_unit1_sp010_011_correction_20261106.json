@@ -46,7 +46,7 @@
     "crosswalk provenance audit",
     "staging structural test"
   ],
-  "printed_code_visual_verified": false,
+  "printed_code_visual_verified": true,
   "teacher_approved": false,
   "final_ready": false,
   "release_authorized": false,
@@ -74,8 +74,14 @@
       }
     ],
     "dpk_url": "https://www.tcer.my/wp-content/uploads/2021/01/4_DPK_Bahasa-Arab-KSSR-Tahun-2-Edisi-2-1.pdf",
-    "source_visual_approval": false,
+    "source_visual_approval": true,
     "teacher_approval": false,
-    "ready": false
+    "ready": false,
+    "visually_verified_on": "2026-11-06",
+    "original_pdf_source": "https://drive.google.com/file/d/13CqpBb4HosAM_-HTEN-hhBCt2W5wVXCZ/view",
+    "pdf_pages_1based": {
+      "010": 23,
+      "011": 29
+    }
   }
 }
