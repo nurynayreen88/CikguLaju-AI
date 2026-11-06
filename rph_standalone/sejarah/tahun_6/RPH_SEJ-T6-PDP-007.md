@@ -14,7 +14,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan garis masa peristiwa perpaduan menjelang pengisytiharan Rukun Negara. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 3: Rukun Negara.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 35–38: Asal-usul Rukun Negara selepas peristiwa 13 Mei 1969, penubuhan. Murid menyatakan sebab Rukun Negara diperkenalkan selepas peristiwa sejarah relevan. Guru menyemak jawapan awal berpandukan 10.3.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 35–38: Asal-usul Rukun Negara selepas peristiwa 13 Mei 1969. Murid menyatakan sebab Rukun Negara diperkenalkan selepas peristiwa sejarah relevan. Guru menyemak jawapan awal berpandukan 10.3.1.
 
 **Aktiviti 2 (20 min):** Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 35–38. Murid membina rantaian sebab–matlamat–harapan masyarakat berasaskan sumber. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menghayati matlamat dan prinsip Rukun Negara.
 
