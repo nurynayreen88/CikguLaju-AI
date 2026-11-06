@@ -190,7 +190,8 @@ class DailyTimetableRouteTests(TestCase):
         self.assertIn('if(!formats.includes(format))continue;',daily)
         self.assertIn('Tiada bahan yang disahkan tersedia',page)
         self.assertIn('Tiada bahan yang disahkan tersedia',daily)
-        self.assertIn('if(!confirm.checked)clearResults()',daily)
+        self.assertIn('if(!confirm.checked){reviewing=false;clearResults();}',daily)
+        self.assertIn('reviewing=true;generateAll.disabled=true;updateAll()',daily)
         self.assertIn('if(epoch!==batchEpoch||key!==selectedKey(c))return',daily)
 
 
