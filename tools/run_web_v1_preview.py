@@ -154,6 +154,22 @@ def options():
                                     items.append({"value":"SEJARAH","label":"Sejarah"})
                             except (NativeRPHUnavailable, ValueError):
                                 pass  # Never advertise unavailable Telegram RPH.
+                        if year in range(2, 7):
+                            from web.native_telegram_other_draft_client import (
+                                list_draft_units, NativeRPHUnavailable,
+                            )
+                            for draft_code, draft_label in (
+                                ("ARAB", "Bahasa Arab (DRAF)"),
+                                ("MUZIK", "Pendidikan Muzik (DRAF)"),
+                            ):
+                                if any(row.get("value")==draft_code for row in items):
+                                    continue
+                                try:
+                                    if list_draft_units(year,draft_code):
+                                        items.append({"value":draft_code,
+                                                      "label":draft_label})
+                                except (NativeRPHUnavailable,ValueError):
+                                    pass  # Never show an unavailable Telegram source.
                         return jsonify(items)
                     subject = request.args.get("subject", "")
                     component = request.args.get("component")
@@ -195,6 +211,23 @@ def options():
                                 "error":"Telegram Sejarah unit/PdP unavailable",
                                 "code":"TELEGRAM_SEJARAH_SOURCE_UNAVAILABLE",
                             }), 503
+                        return jsonify(choices)
+                    if subject in ("ARAB", "MUZIK") and kind in ("units","pdp"):
+                        from web.native_telegram_other_draft_client import (
+                            list_draft_units, list_draft_lessons,
+                            NativeRPHUnavailable,
+                        )
+                        if year not in range(2,7) or component not in (None,""):
+                            return jsonify({"error":"Invalid DRAF subject/year"}),400
+                        try:
+                            choices=(list_draft_units(year,subject) if kind=="units"
+                                     else list_draft_lessons(
+                                         year,subject,request.args.get("unit","")))
+                        except (NativeRPHUnavailable,ValueError):
+                            return jsonify({
+                                "error":"Sumber PdP DRAF di Telegram belum tersedia.",
+                                "code":"TELEGRAM_OTHER_DRAFT_SOURCE_UNAVAILABLE",
+                            }),503
                         return jsonify(choices)
                     # Mathematics and Science have an independent, grouped
                     # native PdP sequence. Never substitute weekly RPT IDs.
