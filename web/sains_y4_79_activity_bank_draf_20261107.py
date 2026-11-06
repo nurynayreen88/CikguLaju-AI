@@ -92,7 +92,7 @@ _ROWS=r"""2.1.1|Gambar rajah sistem pernafasan|menunjuk hidung, trakea dan pepar
 """
 def parse_rows(text):
     result={}
-    for index,line in enumerate(text.strip().splitlines(),1):
+    for index,line in enumerate((x for x in text.splitlines() if x.strip()),1):
         fields=tuple(v.strip() for v in line.split("|"))
         if len(fields)!=9:raise ValueError(f"Year4 {index} expected 9 activity fields")
         sp=fields[0]
