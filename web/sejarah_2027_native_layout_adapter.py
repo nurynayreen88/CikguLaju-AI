@@ -52,7 +52,7 @@ def _layout(row, teacher):
         ("OBJEKTIF PEMBELAJARAN","; ".join(r["objective"])),
         ("KRITERIA KEJAYAAN",r["success_criteria"]),
         ("PENGETAHUAN SEDIA ADA","Pengetahuan sedia ada murid tentang "+r["textbook_reference"]["unit_title"]),
-        ("BAHAN BANTU MENGAJAR",r["bbm"]),
+        ("BAHAN BANTU MENGAJAR",bbm),
         ("EMK / NILAI","; ".join(x["text"] for x in r["values_sp"]) or "Patriotisme; hormat"),
         ("KBAT / PAK21","Kemahiran Pemikiran Sejarah; menilai bukti dan membuat inferens"),
         ("PENTAKSIRAN",r["pengukuhan_pbd"]["activity"]),
