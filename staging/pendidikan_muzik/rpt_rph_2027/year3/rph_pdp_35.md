@@ -12,7 +12,7 @@
 
 **Kriteria kejayaan:** Murid menunjukkan kemahiran dan hasil yang boleh diukur melalui aktiviti/penilaian guru.
 
-**Set Induksi — 4 minit:** Guru mengimbas maklumat Muzik Rock buku Kesenian Tahun 3 halaman 96 melalui kad gambar, tanpa memainkan fail audio belum disahkan.
+**Set Induksi — 4 minit:** Guru mengimbas ciri Muzik Rock berdasarkan buku Kesenian Tahun 3 m/s 96 melalui kad gambar dan corak detik yang ditunjukkan secara langsung.
 
 **Aktiviti 1 — Ulang kaji khusus (8 minit):** Murid menyusun kad ikon sepanjang lapan detik dan menepuk corak ciptaan; kumpulan menyemak jumlah detik dan memperbaiki satu kesilapan.
 
