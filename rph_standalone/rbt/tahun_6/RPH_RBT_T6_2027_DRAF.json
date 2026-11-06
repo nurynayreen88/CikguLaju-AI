@@ -80,22 +80,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 5.2.1 menggunakan Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia. Murid mengenal pasti ciri/komponen berdasarkan contoh sebenar berkaitan model kereta kawalan jauh dengan motor voltan rendah lalu melengkapkan kad pengelasan berlabel (SP 5.2.1)."
+          "aktiviti": "Guru mempamerkan contoh dan bukan contoh berkaitan model kereta kawalan jauh dengan motor voltan rendah, kemudian membimbing murid mengelaskan tiga komponen/ciri mengikut SP 5.2.1. Murid menyusun kad dan menyatakan sebab bagi satu padanan."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 5.2.1 dan merekod pemerhatian. Murid mengenal pasti ciri/komponen berdasarkan contoh sebenar berkaitan model kereta kawalan jauh dengan motor voltan rendah lalu melengkapkan kad pengelasan berlabel (SP 5.2.1). Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
+          "aktiviti": "Murid secara individu mengelaskan empat contoh baharu, membetulkan satu padanan yang salah melalui perbincangan pasangan, lalu menghasilkan jadual pengelasan ringkas bagi SP 5.2.1. Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: kad pengelasan atau senarai contoh berlabel. Guru menyemak ketepatan pilihan dan pengelasan mengikut SP 5.2.1; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak kad pengelasan atau senarai contoh berlabel mengikut SP 5.2.1 dan menggunakan kriteria ketepatan pilihan dan pengelasan. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi model kereta kawalan jauh berelemen elektromekanikal."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: kad pengelasan atau senarai contoh berlabel. Guru menyemak ketepatan pilihan dan pengelasan mengikut SP 5.2.1; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak kad pengelasan atau senarai contoh berlabel mengikut SP 5.2.1 dan menggunakan kriteria ketepatan pilihan dan pengelasan. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Elakkan gear atau roda menyepit jari; gunakan voltan rendah.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -140,7 +140,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Produk Elektromekanikal",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "5.2.1",
@@ -183,22 +183,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 5.2.2 menggunakan Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 5.2.2 menggunakan dua contoh dan satu sebab yang munasabah."
+          "aktiviti": "Guru menunjukkan contoh fungsi atau konsep bagi model kereta kawalan jauh dengan motor voltan rendah. Murid membina peta hubungan sebab dan kesan bagi fokus SP 5.2.2 melalui soal jawab."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 5.2.2 dan merekod pemerhatian. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 5.2.2 menggunakan dua contoh dan satu sebab yang munasabah. Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
+          "aktiviti": "Murid menerangkan dua pilihan dalam situasi baharu, mengenal pasti kelebihan dan kekurangan serta menulis satu justifikasi yang munasabah bagi SP 5.2.2. Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan penerangan dan satu justifikasi mengikut SP 5.2.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak dua penerangan fungsi atau sebab dalam jadual banding beza mengikut SP 5.2.2 dan menggunakan kriteria ketepatan penerangan dan satu justifikasi. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi model kereta kawalan jauh berelemen elektromekanikal."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan penerangan dan satu justifikasi mengikut SP 5.2.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak dua penerangan fungsi atau sebab dalam jadual banding beza mengikut SP 5.2.2 dan menggunakan kriteria ketepatan penerangan dan satu justifikasi. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Elakkan gear atau roda menyepit jari; gunakan voltan rendah.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -244,7 +244,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Produk Elektromekanikal",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "5.2.2",
@@ -287,22 +287,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 5.2.3 menggunakan Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 5.2.3 dan menyemak ketepatan maklumatnya."
+          "aktiviti": "Guru menunjukkan contoh lakaran bermaklumat/carta alir dengan label yang diperlukan untuk model kereta kawalan jauh dengan motor voltan rendah. Murid menghasilkan draf pertama berdasarkan keperluan SP 5.2.3."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 5.2.3 dan merekod pemerhatian. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 5.2.3 dan menyemak ketepatan maklumatnya. Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
+          "aktiviti": "Murid bertukar draf dengan rakan, menyemak label dan urutan menggunakan senarai semak, lalu menghasilkan versi kedua dengan sekurang-kurangnya satu pembetulan bagi SP 5.2.3. Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 5.2.3; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 5.2.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi model kereta kawalan jauh berelemen elektromekanikal."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 5.2.3; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 5.2.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Elakkan gear atau roda menyepit jari; gunakan voltan rendah.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -348,7 +348,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Produk Elektromekanikal",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "5.2.3",
@@ -391,22 +391,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 5.2.3 menggunakan Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 5.2.3 dan menyemak ketepatan maklumatnya."
+          "aktiviti": "Guru menunjukkan contoh lakaran bermaklumat/carta alir dengan label yang diperlukan untuk model kereta kawalan jauh dengan motor voltan rendah. Murid menghasilkan draf pertama berdasarkan keperluan SP 5.2.3."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 5.2.3 dan merekod pemerhatian. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 5.2.3 dan menyemak ketepatan maklumatnya. Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
+          "aktiviti": "Murid bertukar draf dengan rakan, menyemak label dan urutan menggunakan senarai semak, lalu menghasilkan versi kedua dengan sekurang-kurangnya satu pembetulan bagi SP 5.2.3. Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 5.2.3; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 5.2.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi model kereta kawalan jauh berelemen elektromekanikal."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 5.2.3; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 5.2.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Elakkan gear atau roda menyepit jari; gunakan voltan rendah.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -452,7 +452,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Produk Elektromekanikal",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "5.2.3",
@@ -495,22 +495,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 5.2.4 menggunakan Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia. Murid menilai lakaran atau atur cara menggunakan kriteria, mengenal pasti dua kelemahan serta melakukan satu penambahbaikan yang boleh dibuktikan (SP 5.2.4)."
+          "aktiviti": "Guru memodelkan penggunaan rubrik untuk menilai dua ciri model kereta kawalan jauh dengan motor voltan rendah. Murid menanda kekuatan dan dua kelemahan pada contoh lakaran/produk bagi SP 5.2.4."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 5.2.4 dan merekod pemerhatian. Murid menilai lakaran atau atur cara menggunakan kriteria, mengenal pasti dua kelemahan serta melakukan satu penambahbaikan yang boleh dibuktikan (SP 5.2.4). Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
+          "aktiviti": "Murid menambah baik lakaran, atur cara atau komponen berdasarkan analisis, membandingkan sebelum dan selepas serta menjelaskan sebab keputusan bagi SP 5.2.4. Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: rubrik semak serta lakaran atau kod yang telah dibaiki. Guru menyemak kejelasan kelemahan, sebab dan pembetulan mengikut SP 5.2.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 5.2.4 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi model kereta kawalan jauh berelemen elektromekanikal."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: rubrik semak serta lakaran atau kod yang telah dibaiki. Guru menyemak kejelasan kelemahan, sebab dan pembetulan mengikut SP 5.2.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 5.2.4 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Elakkan gear atau roda menyepit jari; gunakan voltan rendah.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -556,7 +556,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Produk Elektromekanikal",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "5.2.4",
@@ -599,22 +599,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 5.2.4 menggunakan Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia. Murid menilai lakaran atau atur cara menggunakan kriteria, mengenal pasti dua kelemahan serta melakukan satu penambahbaikan yang boleh dibuktikan (SP 5.2.4)."
+          "aktiviti": "Guru memodelkan penggunaan rubrik untuk menilai dua ciri model kereta kawalan jauh dengan motor voltan rendah. Murid menanda kekuatan dan dua kelemahan pada contoh lakaran/produk bagi SP 5.2.4."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 5.2.4 dan merekod pemerhatian. Murid menilai lakaran atau atur cara menggunakan kriteria, mengenal pasti dua kelemahan serta melakukan satu penambahbaikan yang boleh dibuktikan (SP 5.2.4). Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
+          "aktiviti": "Murid menambah baik lakaran, atur cara atau komponen berdasarkan analisis, membandingkan sebelum dan selepas serta menjelaskan sebab keputusan bagi SP 5.2.4. Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: rubrik semak serta lakaran atau kod yang telah dibaiki. Guru menyemak kejelasan kelemahan, sebab dan pembetulan mengikut SP 5.2.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 5.2.4 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi model kereta kawalan jauh berelemen elektromekanikal."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: rubrik semak serta lakaran atau kod yang telah dibaiki. Guru menyemak kejelasan kelemahan, sebab dan pembetulan mengikut SP 5.2.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 5.2.4 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Elakkan gear atau roda menyepit jari; gunakan voltan rendah.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -660,7 +660,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Produk Elektromekanikal",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "5.2.4",
@@ -703,22 +703,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 5.2.5 menggunakan Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia. Murid menghasilkan peringkat kerja model kereta kawalan jauh dengan motor voltan rendah yang benar-benar diminta oleh SP 5.2.5, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah."
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk model kereta kawalan jauh dengan motor voltan rendah. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 5.2.5)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 5.2.5 dan merekod pemerhatian. Murid menghasilkan peringkat kerja model kereta kawalan jauh dengan motor voltan rendah yang benar-benar diminta oleh SP 5.2.5, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah. Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
+          "aktiviti": "Murid meneruskan bahagian kerja untuk model kereta kawalan jauh dengan motor voltan rendah yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 5.2.5); bukan wajib menyiapkan keseluruhan projek. Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 5.2.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 5.2.5 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi model kereta kawalan jauh berelemen elektromekanikal."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 5.2.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 5.2.5 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Elakkan gear atau roda menyepit jari; gunakan voltan rendah.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -764,7 +764,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Produk Elektromekanikal",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "5.2.5",
@@ -807,22 +807,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 5.2.5 menggunakan Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia. Murid menghasilkan peringkat kerja model kereta kawalan jauh dengan motor voltan rendah yang benar-benar diminta oleh SP 5.2.5, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah."
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk model kereta kawalan jauh dengan motor voltan rendah. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 5.2.5)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 5.2.5 dan merekod pemerhatian. Murid menghasilkan peringkat kerja model kereta kawalan jauh dengan motor voltan rendah yang benar-benar diminta oleh SP 5.2.5, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah. Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
+          "aktiviti": "Murid meneruskan bahagian kerja untuk model kereta kawalan jauh dengan motor voltan rendah yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 5.2.5); bukan wajib menyiapkan keseluruhan projek. Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 5.2.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 5.2.5 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi model kereta kawalan jauh berelemen elektromekanikal."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 5.2.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 5.2.5 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Elakkan gear atau roda menyepit jari; gunakan voltan rendah.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -868,7 +868,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Produk Elektromekanikal",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "5.2.5",
@@ -911,22 +911,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 5.2.5 menggunakan Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia. Murid menghasilkan peringkat kerja model kereta kawalan jauh dengan motor voltan rendah yang benar-benar diminta oleh SP 5.2.5, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah."
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk model kereta kawalan jauh dengan motor voltan rendah. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 5.2.5)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 5.2.5 dan merekod pemerhatian. Murid menghasilkan peringkat kerja model kereta kawalan jauh dengan motor voltan rendah yang benar-benar diminta oleh SP 5.2.5, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah. Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
+          "aktiviti": "Murid meneruskan bahagian kerja untuk model kereta kawalan jauh dengan motor voltan rendah yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 5.2.5); bukan wajib menyiapkan keseluruhan projek. Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 5.2.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 5.2.5 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi model kereta kawalan jauh berelemen elektromekanikal."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 5.2.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 5.2.5 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Elakkan gear atau roda menyepit jari; gunakan voltan rendah.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -972,7 +972,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Produk Elektromekanikal",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "5.2.5",
@@ -1015,22 +1015,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 5.2.6 menggunakan Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia. Murid membentangkan hasil semasa dan dokumentasi model kereta kawalan jauh dengan motor voltan rendah, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 5.2.6)."
+          "aktiviti": "Guru menunjukkan susunan pembentangan produk model kereta kawalan jauh dengan motor voltan rendah: masalah, idea, lakaran, proses kerja, ujian dan penambahbaikan. Murid menyediakan tiga poin serta memilih bukti hasil (SP 5.2.6)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 5.2.6 dan merekod pemerhatian. Murid membentangkan hasil semasa dan dokumentasi model kereta kawalan jauh dengan motor voltan rendah, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 5.2.6). Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
+          "aktiviti": "Murid mempersembahkan hasil secara lisan, poster atau demonstrasi, menjawab satu soalan rakan dan menulis maklum balas untuk penambahbaikan (SP 5.2.6). Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak kejelasan hujah, bukti ujian dan maklum balas mengikut SP 5.2.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 5.2.6 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi model kereta kawalan jauh berelemen elektromekanikal."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak kejelasan hujah, bukti ujian dan maklum balas mengikut SP 5.2.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 5.2.6 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Elakkan gear atau roda menyepit jari; gunakan voltan rendah.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1076,7 +1076,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Produk Elektromekanikal",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "5.2.6",
@@ -1119,22 +1119,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 6.5.1 menggunakan Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi. Murid mengenal pasti ciri/komponen berdasarkan contoh sebenar berkaitan robot penjaga air tanaman lalu melengkapkan kad pengelasan berlabel (SP 6.5.1)."
+          "aktiviti": "Guru mempamerkan contoh dan bukan contoh berkaitan robot penjaga air tanaman, kemudian membimbing murid mengelaskan tiga komponen/ciri mengikut SP 6.5.1. Murid menyusun kad dan menyatakan sebab bagi satu padanan."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 6.5.1 dan merekod pemerhatian. Murid mengenal pasti ciri/komponen berdasarkan contoh sebenar berkaitan robot penjaga air tanaman lalu melengkapkan kad pengelasan berlabel (SP 6.5.1). Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
+          "aktiviti": "Murid secara individu mengelaskan empat contoh baharu, membetulkan satu padanan yang salah melalui perbincangan pasangan, lalu menghasilkan jadual pengelasan ringkas bagi SP 6.5.1. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: kad pengelasan atau senarai contoh berlabel. Guru menyemak ketepatan pilihan dan pengelasan mengikut SP 6.5.1; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak kad pengelasan atau senarai contoh berlabel mengikut SP 6.5.1 dan menggunakan kriteria ketepatan pilihan dan pengelasan. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi robot pengesan keadaan tanaman."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: kad pengelasan atau senarai contoh berlabel. Guru menyemak ketepatan pilihan dan pengelasan mengikut SP 6.5.1; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak kad pengelasan atau senarai contoh berlabel mengikut SP 6.5.1 dan menggunakan kriteria ketepatan pilihan dan pengelasan. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Ujian dilakukan di kawasan kering dan komponen bergerak diawasi.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1180,7 +1180,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Pengenalan Asas Sistem Robotik",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "6.5.1",
@@ -1223,22 +1223,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 6.5.2 menggunakan Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 6.5.2 menggunakan dua contoh dan satu sebab yang munasabah."
+          "aktiviti": "Guru menunjukkan contoh fungsi atau konsep bagi robot penjaga air tanaman. Murid membina peta hubungan sebab dan kesan bagi fokus SP 6.5.2 melalui soal jawab."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 6.5.2 dan merekod pemerhatian. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 6.5.2 menggunakan dua contoh dan satu sebab yang munasabah. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
+          "aktiviti": "Murid menerangkan dua pilihan dalam situasi baharu, mengenal pasti kelebihan dan kekurangan serta menulis satu justifikasi yang munasabah bagi SP 6.5.2. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan penerangan dan satu justifikasi mengikut SP 6.5.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak dua penerangan fungsi atau sebab dalam jadual banding beza mengikut SP 6.5.2 dan menggunakan kriteria ketepatan penerangan dan satu justifikasi. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi robot pengesan keadaan tanaman."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan penerangan dan satu justifikasi mengikut SP 6.5.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak dua penerangan fungsi atau sebab dalam jadual banding beza mengikut SP 6.5.2 dan menggunakan kriteria ketepatan penerangan dan satu justifikasi. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Ujian dilakukan di kawasan kering dan komponen bergerak diawasi.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1284,7 +1284,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Pengenalan Asas Sistem Robotik",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "6.5.2",
@@ -1327,22 +1327,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 6.5.3 menggunakan Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 6.5.3 menggunakan dua contoh dan satu sebab yang munasabah."
+          "aktiviti": "Guru menunjukkan contoh fungsi atau konsep bagi robot penjaga air tanaman. Murid membina peta hubungan sebab dan kesan bagi fokus SP 6.5.3 melalui soal jawab."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 6.5.3 dan merekod pemerhatian. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 6.5.3 menggunakan dua contoh dan satu sebab yang munasabah. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
+          "aktiviti": "Murid menerangkan dua pilihan dalam situasi baharu, mengenal pasti kelebihan dan kekurangan serta menulis satu justifikasi yang munasabah bagi SP 6.5.3. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan penerangan dan satu justifikasi mengikut SP 6.5.3; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak dua penerangan fungsi atau sebab dalam jadual banding beza mengikut SP 6.5.3 dan menggunakan kriteria ketepatan penerangan dan satu justifikasi. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi robot pengesan keadaan tanaman."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan penerangan dan satu justifikasi mengikut SP 6.5.3; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak dua penerangan fungsi atau sebab dalam jadual banding beza mengikut SP 6.5.3 dan menggunakan kriteria ketepatan penerangan dan satu justifikasi. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Ujian dilakukan di kawasan kering dan komponen bergerak diawasi.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1387,7 +1387,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Pengenalan Asas Sistem Robotik",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "6.5.3",
@@ -1430,22 +1430,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 6.5.4 menggunakan Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 6.5.4 dan menyemak ketepatan maklumatnya."
+          "aktiviti": "Guru menunjukkan contoh lakaran bermaklumat/carta alir dengan label yang diperlukan untuk robot penjaga air tanaman. Murid menghasilkan draf pertama berdasarkan keperluan SP 6.5.4."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 6.5.4 dan merekod pemerhatian. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 6.5.4 dan menyemak ketepatan maklumatnya. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
+          "aktiviti": "Murid bertukar draf dengan rakan, menyemak label dan urutan menggunakan senarai semak, lalu menghasilkan versi kedua dengan sekurang-kurangnya satu pembetulan bagi SP 6.5.4. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 6.5.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 6.5.4 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi robot pengesan keadaan tanaman."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 6.5.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 6.5.4 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Ujian dilakukan di kawasan kering dan komponen bergerak diawasi.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1491,7 +1491,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Pengenalan Asas Sistem Robotik",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "6.5.4",
@@ -1534,22 +1534,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 6.5.5 menggunakan Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi. Murid menilai lakaran atau atur cara menggunakan kriteria, mengenal pasti dua kelemahan serta melakukan satu penambahbaikan yang boleh dibuktikan (SP 6.5.5)."
+          "aktiviti": "Guru memodelkan penggunaan rubrik untuk menilai dua ciri robot penjaga air tanaman. Murid menanda kekuatan dan dua kelemahan pada contoh lakaran/produk bagi SP 6.5.5."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 6.5.5 dan merekod pemerhatian. Murid menilai lakaran atau atur cara menggunakan kriteria, mengenal pasti dua kelemahan serta melakukan satu penambahbaikan yang boleh dibuktikan (SP 6.5.5). Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
+          "aktiviti": "Murid menambah baik lakaran, atur cara atau komponen berdasarkan analisis, membandingkan sebelum dan selepas serta menjelaskan sebab keputusan bagi SP 6.5.5. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: rubrik semak serta lakaran atau kod yang telah dibaiki. Guru menyemak kejelasan kelemahan, sebab dan pembetulan mengikut SP 6.5.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 6.5.5 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi robot pengesan keadaan tanaman."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: rubrik semak serta lakaran atau kod yang telah dibaiki. Guru menyemak kejelasan kelemahan, sebab dan pembetulan mengikut SP 6.5.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 6.5.5 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Ujian dilakukan di kawasan kering dan komponen bergerak diawasi.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1594,7 +1594,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Pengenalan Asas Sistem Robotik",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "6.5.5",
@@ -1637,22 +1637,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 6.5.6 menggunakan Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 6.5.6 dan menyemak ketepatan maklumatnya."
+          "aktiviti": "Guru menunjukkan contoh lakaran bermaklumat/carta alir dengan label yang diperlukan untuk robot penjaga air tanaman. Murid menghasilkan draf pertama berdasarkan keperluan SP 6.5.6."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 6.5.6 dan merekod pemerhatian. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 6.5.6 dan menyemak ketepatan maklumatnya. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
+          "aktiviti": "Murid bertukar draf dengan rakan, menyemak label dan urutan menggunakan senarai semak, lalu menghasilkan versi kedua dengan sekurang-kurangnya satu pembetulan bagi SP 6.5.6. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 6.5.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 6.5.6 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi robot pengesan keadaan tanaman."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 6.5.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 6.5.6 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Ujian dilakukan di kawasan kering dan komponen bergerak diawasi.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1697,7 +1697,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Pengenalan Asas Sistem Robotik",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "6.5.6",
@@ -1740,22 +1740,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 6.5.7 menggunakan Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi. Murid menghasilkan peringkat kerja robot penjaga air tanaman yang benar-benar diminta oleh SP 6.5.7, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah."
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk robot penjaga air tanaman. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 6.5.7)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 6.5.7 dan merekod pemerhatian. Murid menghasilkan peringkat kerja robot penjaga air tanaman yang benar-benar diminta oleh SP 6.5.7, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
+          "aktiviti": "Murid meneruskan bahagian kerja untuk robot penjaga air tanaman yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 6.5.7); bukan wajib menyiapkan keseluruhan projek. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 6.5.7; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 6.5.7 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi robot pengesan keadaan tanaman."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 6.5.7; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 6.5.7 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Ujian dilakukan di kawasan kering dan komponen bergerak diawasi.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1801,7 +1801,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Pengenalan Asas Sistem Robotik",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "6.5.7",
@@ -1844,22 +1844,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 6.5.8 menggunakan Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi. Murid menghasilkan peringkat kerja robot penjaga air tanaman yang benar-benar diminta oleh SP 6.5.8, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah."
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk robot penjaga air tanaman. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 6.5.8)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 6.5.8 dan merekod pemerhatian. Murid menghasilkan peringkat kerja robot penjaga air tanaman yang benar-benar diminta oleh SP 6.5.8, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
+          "aktiviti": "Murid meneruskan bahagian kerja untuk robot penjaga air tanaman yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 6.5.8); bukan wajib menyiapkan keseluruhan projek. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 6.5.8; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 6.5.8 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi robot pengesan keadaan tanaman."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 6.5.8; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 6.5.8 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Ujian dilakukan di kawasan kering dan komponen bergerak diawasi.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1905,7 +1905,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Pengenalan Asas Sistem Robotik",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "6.5.8",
@@ -1948,22 +1948,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 6.5.9 menggunakan Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi. Murid menghasilkan peringkat kerja robot penjaga air tanaman yang benar-benar diminta oleh SP 6.5.9, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah."
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk robot penjaga air tanaman. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 6.5.9)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 6.5.9 dan merekod pemerhatian. Murid menghasilkan peringkat kerja robot penjaga air tanaman yang benar-benar diminta oleh SP 6.5.9, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
+          "aktiviti": "Murid meneruskan bahagian kerja untuk robot penjaga air tanaman yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 6.5.9); bukan wajib menyiapkan keseluruhan projek. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 6.5.9; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 6.5.9 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi robot pengesan keadaan tanaman."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 6.5.9; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 6.5.9 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Ujian dilakukan di kawasan kering dan komponen bergerak diawasi.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2009,7 +2009,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Pengenalan Asas Sistem Robotik",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "6.5.9",
@@ -2052,22 +2052,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 6.5.10 menggunakan Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi. Murid membentangkan hasil semasa dan dokumentasi robot penjaga air tanaman, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 6.5.10)."
+          "aktiviti": "Guru menunjukkan susunan pembentangan produk robot penjaga air tanaman: masalah, idea, lakaran, proses kerja, ujian dan penambahbaikan. Murid menyediakan tiga poin serta memilih bukti hasil (SP 6.5.10)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 6.5.10 dan merekod pemerhatian. Murid membentangkan hasil semasa dan dokumentasi robot penjaga air tanaman, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 6.5.10). Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
+          "aktiviti": "Murid mempersembahkan hasil secara lisan, poster atau demonstrasi, menjawab satu soalan rakan dan menulis maklum balas untuk penambahbaikan (SP 6.5.10). Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak kejelasan hujah, bukti ujian dan maklum balas mengikut SP 6.5.10; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 6.5.10 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi robot pengesan keadaan tanaman."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak kejelasan hujah, bukti ujian dan maklum balas mengikut SP 6.5.10; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 6.5.10 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Ujian dilakukan di kawasan kering dan komponen bergerak diawasi.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2112,7 +2112,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Pengenalan Asas Sistem Robotik",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "6.5.10",
@@ -2155,22 +2155,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 8.1.1 menggunakan Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi. Murid mengenal pasti ciri/komponen berdasarkan contoh sebenar berkaitan model tabung duit automatik gabungan sensor dan servo lalu melengkapkan kad pengelasan berlabel (SP 8.1.1)."
+          "aktiviti": "Guru mempamerkan contoh dan bukan contoh berkaitan model tabung duit automatik gabungan sensor dan servo, kemudian membimbing murid mengelaskan tiga komponen/ciri mengikut SP 8.1.1. Murid menyusun kad dan menyatakan sebab bagi satu padanan."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 8.1.1 dan merekod pemerhatian. Murid mengenal pasti ciri/komponen berdasarkan contoh sebenar berkaitan model tabung duit automatik gabungan sensor dan servo lalu melengkapkan kad pengelasan berlabel (SP 8.1.1). Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
+          "aktiviti": "Murid secara individu mengelaskan empat contoh baharu, membetulkan satu padanan yang salah melalui perbincangan pasangan, lalu menghasilkan jadual pengelasan ringkas bagi SP 8.1.1. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: kad pengelasan atau senarai contoh berlabel. Guru menyemak ketepatan pilihan dan pengelasan mengikut SP 8.1.1; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak kad pengelasan atau senarai contoh berlabel mengikut SP 8.1.1 dan menggunakan kriteria ketepatan pilihan dan pengelasan. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi tabung duit automatik menggunakan sensor dan servo."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: kad pengelasan atau senarai contoh berlabel. Guru menyemak ketepatan pilihan dan pengelasan mengikut SP 8.1.1; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak kad pengelasan atau senarai contoh berlabel mengikut SP 8.1.1 dan menggunakan kriteria ketepatan pilihan dan pengelasan. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2216,7 +2216,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Penghasilan Produk",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "8.1.1",
@@ -2259,22 +2259,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 8.1.2 menggunakan Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 8.1.2 menggunakan dua contoh dan satu sebab yang munasabah."
+          "aktiviti": "Guru menunjukkan contoh fungsi atau konsep bagi model tabung duit automatik gabungan sensor dan servo. Murid membina peta hubungan sebab dan kesan bagi fokus SP 8.1.2 melalui soal jawab."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 8.1.2 dan merekod pemerhatian. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 8.1.2 menggunakan dua contoh dan satu sebab yang munasabah. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
+          "aktiviti": "Murid menerangkan dua pilihan dalam situasi baharu, mengenal pasti kelebihan dan kekurangan serta menulis satu justifikasi yang munasabah bagi SP 8.1.2. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan penerangan dan satu justifikasi mengikut SP 8.1.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak dua penerangan fungsi atau sebab dalam jadual banding beza mengikut SP 8.1.2 dan menggunakan kriteria ketepatan penerangan dan satu justifikasi. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi tabung duit automatik menggunakan sensor dan servo."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan penerangan dan satu justifikasi mengikut SP 8.1.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak dua penerangan fungsi atau sebab dalam jadual banding beza mengikut SP 8.1.2 dan menggunakan kriteria ketepatan penerangan dan satu justifikasi. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2320,7 +2320,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Penghasilan Produk",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "8.1.2",
@@ -2363,22 +2363,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 8.1.3 menggunakan Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 8.1.3 dan menyemak ketepatan maklumatnya."
+          "aktiviti": "Guru menunjukkan contoh lakaran bermaklumat/carta alir dengan label yang diperlukan untuk model tabung duit automatik gabungan sensor dan servo. Murid menghasilkan draf pertama berdasarkan keperluan SP 8.1.3."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 8.1.3 dan merekod pemerhatian. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 8.1.3 dan menyemak ketepatan maklumatnya. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
+          "aktiviti": "Murid bertukar draf dengan rakan, menyemak label dan urutan menggunakan senarai semak, lalu menghasilkan versi kedua dengan sekurang-kurangnya satu pembetulan bagi SP 8.1.3. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 8.1.3; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 8.1.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi tabung duit automatik menggunakan sensor dan servo."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 8.1.3; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 8.1.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2424,7 +2424,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Penghasilan Produk",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "8.1.3",
@@ -2467,22 +2467,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 8.1.3 menggunakan Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 8.1.3 dan menyemak ketepatan maklumatnya."
+          "aktiviti": "Guru menunjukkan contoh lakaran bermaklumat/carta alir dengan label yang diperlukan untuk model tabung duit automatik gabungan sensor dan servo. Murid menghasilkan draf pertama berdasarkan keperluan SP 8.1.3."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 8.1.3 dan merekod pemerhatian. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 8.1.3 dan menyemak ketepatan maklumatnya. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
+          "aktiviti": "Murid bertukar draf dengan rakan, menyemak label dan urutan menggunakan senarai semak, lalu menghasilkan versi kedua dengan sekurang-kurangnya satu pembetulan bagi SP 8.1.3. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 8.1.3; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 8.1.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi tabung duit automatik menggunakan sensor dan servo."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 8.1.3; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 8.1.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2528,7 +2528,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Penghasilan Produk",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "8.1.3",
@@ -2571,22 +2571,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 8.1.4 menggunakan Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi. Murid menilai lakaran atau atur cara menggunakan kriteria, mengenal pasti dua kelemahan serta melakukan satu penambahbaikan yang boleh dibuktikan (SP 8.1.4)."
+          "aktiviti": "Guru memodelkan penggunaan rubrik untuk menilai dua ciri model tabung duit automatik gabungan sensor dan servo. Murid menanda kekuatan dan dua kelemahan pada contoh lakaran/produk bagi SP 8.1.4."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 8.1.4 dan merekod pemerhatian. Murid menilai lakaran atau atur cara menggunakan kriteria, mengenal pasti dua kelemahan serta melakukan satu penambahbaikan yang boleh dibuktikan (SP 8.1.4). Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
+          "aktiviti": "Murid menambah baik lakaran, atur cara atau komponen berdasarkan analisis, membandingkan sebelum dan selepas serta menjelaskan sebab keputusan bagi SP 8.1.4. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: rubrik semak serta lakaran atau kod yang telah dibaiki. Guru menyemak kejelasan kelemahan, sebab dan pembetulan mengikut SP 8.1.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 8.1.4 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi tabung duit automatik menggunakan sensor dan servo."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: rubrik semak serta lakaran atau kod yang telah dibaiki. Guru menyemak kejelasan kelemahan, sebab dan pembetulan mengikut SP 8.1.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 8.1.4 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2632,7 +2632,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Penghasilan Produk",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "8.1.4",
@@ -2675,22 +2675,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 8.1.5 menggunakan Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi. Murid menyediakan jadual bahan, kuantiti, kos seunit dan jumlah anggaran bagi model tabung duit automatik gabungan sensor dan servo serta menyemak ketepatan kiraan (SP 8.1.5)."
+          "aktiviti": "Guru menunjukkan cara mengira kuantiti × harga seunit dalam jadual bagi model tabung duit automatik gabungan sensor dan servo. Murid menyenaraikan bahan dan membuat dua pengiraan berpandu bagi SP 8.1.5."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 8.1.5 dan merekod pemerhatian. Murid menyediakan jadual bahan, kuantiti, kos seunit dan jumlah anggaran bagi model tabung duit automatik gabungan sensor dan servo serta menyemak ketepatan kiraan (SP 8.1.5). Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
+          "aktiviti": "Murid melengkapkan anggaran kos bahan keseluruhan, menyemak jumlah dengan pasangan dan mencadangkan satu alternatif bahan yang lebih jimat serta sesuai bagi SP 8.1.5. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: jadual bahan, kuantiti, kos seunit dan anggaran jumlah. Guru menyemak ketepatan kos dan kesesuaian pilihan mengikut SP 8.1.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak jadual bahan, kuantiti, kos seunit dan anggaran jumlah mengikut SP 8.1.5 dan menggunakan kriteria ketepatan kos dan kesesuaian pilihan. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi tabung duit automatik menggunakan sensor dan servo."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: jadual bahan, kuantiti, kos seunit dan anggaran jumlah. Guru menyemak ketepatan kos dan kesesuaian pilihan mengikut SP 8.1.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak jadual bahan, kuantiti, kos seunit dan anggaran jumlah mengikut SP 8.1.5 dan menggunakan kriteria ketepatan kos dan kesesuaian pilihan. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2736,7 +2736,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Penghasilan Produk",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "8.1.5",
@@ -2779,22 +2779,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 8.1.6 menggunakan Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi. Murid menghasilkan peringkat kerja model tabung duit automatik gabungan sensor dan servo yang benar-benar diminta oleh SP 8.1.6, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah."
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk model tabung duit automatik gabungan sensor dan servo. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 8.1.6)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 8.1.6 dan merekod pemerhatian. Murid menghasilkan peringkat kerja model tabung duit automatik gabungan sensor dan servo yang benar-benar diminta oleh SP 8.1.6, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
+          "aktiviti": "Murid meneruskan bahagian kerja untuk model tabung duit automatik gabungan sensor dan servo yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 8.1.6); bukan wajib menyiapkan keseluruhan projek. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 8.1.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 8.1.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi tabung duit automatik menggunakan sensor dan servo."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 8.1.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 8.1.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2840,7 +2840,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Penghasilan Produk",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "8.1.6",
@@ -2883,22 +2883,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 8.1.6 menggunakan Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi. Murid menghasilkan peringkat kerja model tabung duit automatik gabungan sensor dan servo yang benar-benar diminta oleh SP 8.1.6, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah."
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk model tabung duit automatik gabungan sensor dan servo. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 8.1.6)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 8.1.6 dan merekod pemerhatian. Murid menghasilkan peringkat kerja model tabung duit automatik gabungan sensor dan servo yang benar-benar diminta oleh SP 8.1.6, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
+          "aktiviti": "Murid meneruskan bahagian kerja untuk model tabung duit automatik gabungan sensor dan servo yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 8.1.6); bukan wajib menyiapkan keseluruhan projek. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 8.1.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 8.1.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi tabung duit automatik menggunakan sensor dan servo."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 8.1.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 8.1.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2944,7 +2944,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Penghasilan Produk",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "8.1.6",
@@ -2987,22 +2987,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 8.1.6 menggunakan Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi. Murid menghasilkan peringkat kerja model tabung duit automatik gabungan sensor dan servo yang benar-benar diminta oleh SP 8.1.6, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah."
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk model tabung duit automatik gabungan sensor dan servo. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 8.1.6)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 8.1.6 dan merekod pemerhatian. Murid menghasilkan peringkat kerja model tabung duit automatik gabungan sensor dan servo yang benar-benar diminta oleh SP 8.1.6, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
+          "aktiviti": "Murid meneruskan bahagian kerja untuk model tabung duit automatik gabungan sensor dan servo yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 8.1.6); bukan wajib menyiapkan keseluruhan projek. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 8.1.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 8.1.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi tabung duit automatik menggunakan sensor dan servo."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 8.1.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 8.1.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -3048,7 +3048,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Penghasilan Produk",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "8.1.6",
@@ -3091,22 +3091,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 8.1.6 menggunakan Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi. Murid menghasilkan peringkat kerja model tabung duit automatik gabungan sensor dan servo yang benar-benar diminta oleh SP 8.1.6, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah."
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk model tabung duit automatik gabungan sensor dan servo. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 8.1.6)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 8.1.6 dan merekod pemerhatian. Murid menghasilkan peringkat kerja model tabung duit automatik gabungan sensor dan servo yang benar-benar diminta oleh SP 8.1.6, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
+          "aktiviti": "Murid meneruskan bahagian kerja untuk model tabung duit automatik gabungan sensor dan servo yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 8.1.6); bukan wajib menyiapkan keseluruhan projek. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 8.1.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 8.1.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi tabung duit automatik menggunakan sensor dan servo."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 8.1.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 8.1.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -3152,7 +3152,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Penghasilan Produk",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "8.1.6",
@@ -3195,22 +3195,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 8.1.7 menggunakan Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi. Murid membentangkan hasil semasa dan dokumentasi model tabung duit automatik gabungan sensor dan servo, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 8.1.7)."
+          "aktiviti": "Guru menunjukkan susunan pembentangan produk model tabung duit automatik gabungan sensor dan servo: masalah, idea, lakaran, proses kerja, ujian dan penambahbaikan. Murid menyediakan tiga poin serta memilih bukti hasil (SP 8.1.7)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 8.1.7 dan merekod pemerhatian. Murid membentangkan hasil semasa dan dokumentasi model tabung duit automatik gabungan sensor dan servo, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 8.1.7). Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
+          "aktiviti": "Murid mempersembahkan hasil secara lisan, poster atau demonstrasi, menjawab satu soalan rakan dan menulis maklum balas untuk penambahbaikan (SP 8.1.7). Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak kejelasan hujah, bukti ujian dan maklum balas mengikut SP 8.1.7; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 8.1.7 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi tabung duit automatik menggunakan sensor dan servo."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak kejelasan hujah, bukti ujian dan maklum balas mengikut SP 8.1.7; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 8.1.7 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -3255,7 +3255,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Penghasilan Produk",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "8.1.7",
@@ -3298,22 +3298,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 8.1.7 menggunakan Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi. Murid membentangkan hasil semasa dan dokumentasi model tabung duit automatik gabungan sensor dan servo, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 8.1.7)."
+          "aktiviti": "Guru menunjukkan susunan pembentangan produk model tabung duit automatik gabungan sensor dan servo: masalah, idea, lakaran, proses kerja, ujian dan penambahbaikan. Murid menyediakan tiga poin serta memilih bukti hasil (SP 8.1.7)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 8.1.7 dan merekod pemerhatian. Murid membentangkan hasil semasa dan dokumentasi model tabung duit automatik gabungan sensor dan servo, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 8.1.7). Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
+          "aktiviti": "Murid mempersembahkan hasil secara lisan, poster atau demonstrasi, menjawab satu soalan rakan dan menulis maklum balas untuk penambahbaikan (SP 8.1.7). Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak kejelasan hujah, bukti ujian dan maklum balas mengikut SP 8.1.7; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 8.1.7 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi tabung duit automatik menggunakan sensor dan servo."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak kejelasan hujah, bukti ujian dan maklum balas mengikut SP 8.1.7; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 8.1.7 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -3358,7 +3358,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Penghasilan Produk",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "8.1.7",
