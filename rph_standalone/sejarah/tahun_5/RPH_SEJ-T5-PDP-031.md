@@ -15,9 +15,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan petikan Perkara 152 Perlembagaan dan contoh penggunaan bahasa di ruang awam. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 11: Bahasa Kebangsaan.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membezakan kedudukan bahasa kebangsaan dengan penggunaan bahasa lain. Guru menyemak jawapan awal berpandukan 9.4.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 150–154: Perkara 152 Perlembagaan dan fungsi bahasa Melayu sebagai. Murid membezakan kedudukan bahasa kebangsaan dengan penggunaan bahasa lain. Guru menyemak jawapan awal berpandukan 9.4.1.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 11. Murid membina peta peranan bahasa kebangsaan sebagai alat perpaduan dan ilmu. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan memartabatkan bahasa kebangsaan.
+**Aktiviti 2 (20 min):** Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 150–154. Murid membina peta peranan bahasa kebangsaan sebagai alat perpaduan dan ilmu. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan memartabatkan bahasa kebangsaan.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan jadual kedudukan perlembagaan dan dua peranan bahasa. Guru menyemak secara individu menggunakan kata tugas SP 9.4.1, 9.4.2 dan nilai K9.4.5, kemudian memberi intervensi kepada murid yang belum tepat.
 

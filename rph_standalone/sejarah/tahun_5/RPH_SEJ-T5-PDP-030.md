@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan contoh suasana perhimpunan rasmi dan acara sukan antarabangsa. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 10: Lagu Kebangsaan Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengenal pasti fungsi Negaraku dalam peristiwa rasmi. Guru menyemak jawapan awal berpandukan 9.3.5.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 145–146: Kaitan lagu kebangsaan dengan pembentukan jati diri dan. Murid mengenal pasti fungsi Negaraku dalam peristiwa rasmi. Guru menyemak jawapan awal berpandukan 9.3.5.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid membina peta kaitan lagu kebangsaan, identiti dan perpaduan rakyat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan lagu kebangsaan Malaysia sebagai simbol perpaduan.
+**Aktiviti 2 (20 min):** Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 145–146. Murid membina peta kaitan lagu kebangsaan, identiti dan perpaduan rakyat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan lagu kebangsaan Malaysia sebagai simbol perpaduan.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan dua sebab peranan lagu dalam pembinaan jati diri. Guru menyemak secara individu menggunakan kata tugas SP 9.3.5 dan nilai K9.3.8, kemudian memberi intervensi kepada murid yang belum tepat.
 

@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan ilustrasi lima kelopak bunga raya dan teks lima prinsip Rukun Negara. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 12: Bunga Raya Bunga Kebangsaan.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan lima kelopak dengan lima prinsip Rukun Negara tanpa menokok simbol baharu. Guru menyemak jawapan awal berpandukan 9.5.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 167–169: Makna lima kelopak bunga raya dengan lima prinsip Rukun Negara. Murid memadankan lima kelopak dengan lima prinsip Rukun Negara tanpa menokok simbol baharu. Guru menyemak jawapan awal berpandukan 9.5.3.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 12. Murid membina poster nilai yang menghubungkan prinsip Rukun Negara dengan situasi murid. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan bunga kebangsaan sebagai lambang perpaduan.
+**Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 167–169 bagi menyokong perbandingan. Murid membina poster nilai yang menghubungkan prinsip Rukun Negara dengan situasi murid. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan bunga kebangsaan sebagai lambang perpaduan.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan poster lima prinsip dan satu contoh amalan. Guru menyemak secara individu menggunakan kata tugas SP 9.5.3 dan nilai K9.5.5, kemudian memberi intervensi kepada murid yang belum tepat.
 

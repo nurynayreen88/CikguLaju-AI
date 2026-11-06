@@ -15,9 +15,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan dua bahan sejarah pemilihan bunga raya dan imej rasmi lambang negara. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 12: Bunga Raya Bunga Kebangsaan.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina soalan kajian mengapa bunga raya dipilih sebagai simbol negara. Guru menyemak jawapan awal berpandukan 9.5.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 164–174: Kajian kes cadangan tentang sejarah dan perlambangan bunga raya. Murid membina soalan kajian mengapa bunga raya dipilih sebagai simbol negara. Guru menyemak jawapan awal berpandukan 9.5.1.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 12. Murid membandingkan sumber dan membentang kaitan warna serta lima kelopak dengan jati diri. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan bunga raya sebagai bunga kebangsaan.
+**Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 164–174 bagi menyokong perbandingan. Murid membandingkan sumber dan membentang kaitan warna serta lima kelopak dengan jati diri. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan bunga raya sebagai bunga kebangsaan.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan laporan kes dua sumber, sebab pemilihan dan satu pengajaran. Guru menyemak secara individu menggunakan kata tugas SP 9.5.1, 9.5.2 dan nilai K9.5.4, kemudian memberi intervensi kepada murid yang belum tepat.
 

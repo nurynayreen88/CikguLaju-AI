@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan dua contoh komunikasi yang berlainan laras bahasa di sekolah dan media. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 11: Bahasa Kebangsaan.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan cabaran penggunaan bahasa kebangsaan dalam konteks harian. Guru menyemak jawapan awal berpandukan 9.4.4.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 159–160: Cabaran penggunaan bahasa Melayu dan usaha mengatasinya. Murid mengelaskan cabaran penggunaan bahasa kebangsaan dalam konteks harian. Guru menyemak jawapan awal berpandukan 9.4.4.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 11. Murid menilai cadangan memperbaik penggunaan bahasa Melayu tanpa merendahkan bahasa lain. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan menghayati dan menjiwai bahasa kebangsaan.
+**Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 159–160 bagi menyokong perbandingan. Murid menilai cadangan memperbaik penggunaan bahasa Melayu tanpa merendahkan bahasa lain. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan menghayati dan menjiwai bahasa kebangsaan.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan peta cabaran dan dua tindakan penyelesaian. Guru menyemak secara individu menggunakan kata tugas SP 9.4.4 dan nilai K9.4.7, kemudian memberi intervensi kepada murid yang belum tepat.
 

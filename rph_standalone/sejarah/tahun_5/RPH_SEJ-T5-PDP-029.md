@@ -15,9 +15,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan petikan rasmi maksud lagu Negaraku dan panduan adab semasa dimainkan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 10: Lagu Kebangsaan Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mentafsir tema utama lagu tanpa menyalin keseluruhan lirik. Guru menyemak jawapan awal berpandukan 9.3.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 141–144: Maksud Negaraku dan etika menyanyi atau mendengar lagu. Murid mentafsir tema utama lagu tanpa menyalin keseluruhan lirik. Guru menyemak jawapan awal berpandukan 9.3.3.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid memerhati demonstrasi berdiri hormat dan menghasilkan carta etika ketika menyanyi atau mendengar. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan menghayati dan menjiwai lagu kebangsaan Malaysia.
+**Aktiviti 2 (20 min):** Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 141–144. Murid memerhati demonstrasi berdiri hormat dan menghasilkan carta etika ketika menyanyi atau mendengar. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan menghayati dan menjiwai lagu kebangsaan Malaysia.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan dua penjelasan maksud dan tiga etika dengan contoh. Guru menyemak secara individu menggunakan kata tugas SP 9.3.3, 9.3.4 dan nilai K9.3.7, kemudian memberi intervensi kepada murid yang belum tepat.
 
