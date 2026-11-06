@@ -49,7 +49,8 @@
     "year6_unit3_candidate_rph": 16,
     "verified_a4_render_for_all_282": false,
     "year6_unit4_candidate_rph": 16,
-    "verified_a4_render_for_all_298": true
+    "verified_a4_render_for_all_298": true,
+    "year2_sp_book_html_code_corroborated": 2
   },
   "release_checks": [
     {
@@ -70,7 +71,7 @@
     {
       "id": "sk_sp",
       "status": "PARTIAL",
-      "detail": "170 candidate source-aligned SP codes including 16 visually checked Year3 Unit2; four Year2 scanned printed SP ambiguities pending; no final approval."
+      "detail": "298 calon RPH mempunyai SK/SP yang dipautkan pada fail sumber. Tahun 2 PdP010 (2.3.5) dan PdP011 (3.4.1) disokong lagi oleh kod yang terbaca dalam teks eBook serta DPK KPM. Empat kes Tahun 2 (002/004/010/011) masih tanpa pengesahan visual imej asal dan kelulusan guru. Tiada pengesahan individu akhir."
     },
     {
       "id": "textbook_page_to_pdp",
@@ -256,12 +257,12 @@
   "telegram_live_touched": false,
   "web_live_touched": false,
   "release_next_actions": [
-    "Replace Year6 source with verified KSSR Semakan 2017 DBP 2021 ebook before any Year6 full unit drafting; do not use old Drive PDF.",
-    "Audit original Year 2 textbook Unit 1 per printed page and DSKP",
-    "Audit Year 6 Unit 1 all 12 SP/page links individually, not candidate-only",
-    "Complete and review full-year PdP/RPH coverage for Units 2, 3, 4 across Years 2–6",
-    "Generate dated RPT 2027 Group A and B with school calendar and school profile",
-    "Proofread A4 Arabic RTL Word/PDF samples and all release-critical pages",
-    "Approve materials individually against DSKP/book pages and test Telegram-Web parity with DB backup"
+    "Sahkan imej halaman asal dan kod bercetak PdP002/004/010/011 Tahun 2; padanan makna SP 010/011 telah disokong oleh teks eBook dan DPK.",
+    "Semak penuh semua 298 calon RPH satu persatu dari segi tatabahasa Arab, harakat, objektif, aktiviti, PBD, SK/SP dan muka surat buku asal.",
+    "Tahun 6 sudah mempunyai 60 draf 4 unit berpandukan eBook DBP/KPM 2021 yang betul; sahkan imej halaman penuh, bukan PDF enam unit lama di Drive.",
+    "Sahkan bilangan dan urutan PdP tahunan Tahun 2–6 berbanding RPT 2026/DSKP, termasuk agihan waktu rasmi; jangan reka tarikh.",
+    "Lengkapkan RPT bertarikh Kumpulan A/B selepas sahkan takwim KPM, cuti negeri/gantian dan jadual sebenar guru.",
+    "Semak paparan Arab RTL Word/PDF sebenar dan lakukan ujian parity Telegram–Web dengan sandaran DB v26.00 sebelum penerbitan.",
+    "Dapatkan kelulusan guru pada setiap RPH; kekalkan semua READY=FALSE sehingga layak dilepaskan."
   ]
 }
