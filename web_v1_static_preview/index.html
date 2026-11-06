@@ -635,7 +635,7 @@ lesson.addEventListener("change",()=>{
  if(lesson.value){
   document.getElementById("show-materials").hidden=false;
   document.getElementById("show-materials").disabled=false;
-  catalogStatus.textContent="Lesson/PdP dipilih.";updateSelectionHelp("Menyemak ketersediaan RPH. Kelas, tarikh, waktu mula/tamat dan bilangan murid boleh diisi jika perlu.");
+  catalogStatus.textContent="Lesson/PdP dipilih.";updateSelectionHelp("Tekan Jana Bahan untuk melihat senarai bahan. Kelas, tarikh, waktu mula/tamat dan bilangan murid boleh diisi untuk RPH.");
   void checkRphAvailability();
  }
 });
@@ -822,13 +822,15 @@ async function checkRphAvailability(){
    throw Error("Sumber RPH belum tersedia.");
   verifiedRphKey=selectedKey;
   showRphAction();
-  downloadStatus.textContent="RPH tersedia. Tekan Jana RPH Word atau Jana RPH PDF.";
-  updateSelectionHelp("Isi kelas, tarikh, waktu mula/tamat dan bilangan murid jika perlu, kemudian jana RPH.");
+  downloadStatus.textContent="RPH disahkan tersedia melalui Telegram.";
+  updateSelectionHelp("Selepas melengkapkan maklumat RPH jika perlu, tekan Jana Bahan.");
+  if(!materialPanel.hidden)void populateMaterialList();
  }catch(error){
   if(currentRphLessonKey()!==selectedKey)return;
   downloadStatus.textContent=error.message;
   showRphAction();
-  updateSelectionHelp("Pilih Lesson/PdP lain yang mempunyai sumber RPH tersedia.");
+  updateSelectionHelp("Tekan Jana Bahan untuk menyemak bahan yang tersedia bagi Lesson/PdP ini.");
+  if(!materialPanel.hidden)void populateMaterialList();
  }
 }
 let rphDownloadBusy=false;
