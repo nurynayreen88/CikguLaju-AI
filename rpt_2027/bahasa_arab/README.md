@@ -1,5 +1,9 @@
 # Bahasa Arab Tahun 2–6 — RPT 2027 dan RPH (staging sahaja)
 
+> **Status semasa (6 November 2026):** 298 RPH calon (T2=60, T3=60, T4=58, T5=60, T6=60) meliputi 20 unit, 596 rekod indeks RPT Kumpulan A/B. Pemeriksaan QA struktur/padanan sumber *setiap* 298 RPH dalam [PR #378](https://github.com/nurynayreen88/CikguLaju-AI/pull/378) menghasilkan **0 ralat struktur dan 0 amaran padanan halaman**. Semakan ini tidak mengesahkan kandungan pedagogi/DSKP individu, keseluruhan tarikh RPT, atau kelulusan guru. **0 FINAL READY; jangan deploy Telegram/Web atau menyentuh data pengguna.**
+
+## Catatan kerja terdahulu (checkpoint sejarah)
+
 **Pencapaian 5 Nov 2026:** 60 RPH Markdown **DRAF** (PdP 001–012, 12 setiap tahun), 20 unit RPT yang dikenal pasti, 60 pemetaan PdP awal serta 15 bank aktiviti Unit 2–4. **0 FINAL READY.**
 
 - `unit_sequence_DRAF_20261105.csv`: urutan 4 unit bagi setiap tahun daripada sumber RPT 2026/buku teks; belum ditetapkan tarikh.
