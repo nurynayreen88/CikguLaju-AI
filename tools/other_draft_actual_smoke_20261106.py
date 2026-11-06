@@ -55,6 +55,17 @@ def main():
             assert avail.status_code==200,(subject,year,avail.status_code,avail.json)
             assert avail.json["status"]=="DRAF"
             formats=avail.json["formats"]
+            if subject=="MUZIK":
+                from web.telegram_provisional_arab_music_api import _selected,_music_state
+                src=_selected(year,subject,first["value"],lesson)
+                state,text=_music_state(src,{"class":"2 Bestari","date":"2026-11-06",
+                                        "time":"08:00 - 09:00","students":"30"})
+                parsed=runtime._rph_rows(state,text)
+                core=src["music"]["preview"]["layout"]["phases"][1]["activity"]
+                print("MUZIK NATIVE DIAG",year,"source_sp",src["music"]["sp"],
+                      "render_sp",str(parsed.get("STANDARD PEMBELAJARAN",""))[:160],
+                      "source_act",repr(core[:85]),
+                      "render_act",repr(str(parsed.get("AKTIVITI UTAMA",""))[:160]),flush=True)
             for fmt in formats:
                 result=c.post("/internal/rph/v1/other-drafts/render",
                               headers=auth,json={
