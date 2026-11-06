@@ -93,25 +93,27 @@
       "pdp": "019",
       "printed_page": 32,
       "pdf_page_1_based": 44,
-      "sp_candidate": "1.2.1",
-      "focus": "Mendengar nama ahli keluarga terdekat",
+      "sp_candidate": "1.3.1",
+      "focus": "Mendengar, meniru dan menyebut perkataan ahli keluarga terdekat",
       "source_page_visual_inspected": true,
-      "printed_code_final_verified": false,
+      "printed_code_final_verified": true,
       "manual_teacher_approval": false,
       "ready": false,
-      "annual_rpt_2027_verified": false
+      "annual_rpt_2027_verified": false,
+      "printed_code_derived_from": "Original DBP/KPM 2017 textbook teacher-panel (source page 32/33); KPM DPK 2.0 defines 1.3 word listening"
     },
     {
       "pdp": "020",
       "printed_page": 33,
       "pdf_page_1_based": 45,
-      "sp_candidate": "1.2.2",
-      "focus": "Mendengar dan membezakan ahli keluarga luas",
+      "sp_candidate": "1.3.2",
+      "focus": "Mendengar dan mengenal pasti perkataan ahli keluarga luas",
       "source_page_visual_inspected": true,
-      "printed_code_final_verified": false,
+      "printed_code_final_verified": true,
       "manual_teacher_approval": false,
       "ready": false,
-      "annual_rpt_2027_verified": false
+      "annual_rpt_2027_verified": false,
+      "printed_code_derived_from": "Original DBP/KPM 2017 textbook teacher-panel (source page 32/33); KPM DPK 2.0 defines 1.3 word listening"
     },
     {
       "pdp": "021",
