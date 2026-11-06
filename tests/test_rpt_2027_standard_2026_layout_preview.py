@@ -68,6 +68,11 @@ class RPT2026LayoutQA(unittest.TestCase):
                                      f"{subject} {year} missing/mixed PdP")
                     if subject=="rbt":
                         self.assertIn("Belum ditentukan",body)
+                    if subject=="moral":
+                        self.assertNotIn("RPH_TERSEDIA_BETA80",body)
+                        self.assertNotIn("RPH_PENGUKUHAN_DRAF_SUMBER_TOC",body)
+                    self.assertNotIn(".. Buku teks:",body)
+                    self.assertNotIn(".. Tarikh",body)
             self.assertEqual(counts,{"psv":5,"rbt":3,"moral":5})
 
     def test_preview_not_exposed_as_new_live_rpt(self):
