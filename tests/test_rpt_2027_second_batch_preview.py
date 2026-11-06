@@ -53,6 +53,35 @@ class RPT2027SecondBatchQA(unittest.TestCase):
                 self.assertNotEqual(pj["sp_display"], pk["sp_display"])
                 self.assertTrue(all("BT m/s Rujuk DSKP" not in r["note"] for r in rows))
 
+    def test_pk_sp_does_not_contain_performance_table_spillover(self):
+        import json
+        from pathlib import Path
+        root = Path(__file__).resolve().parents[1]
+        expected = {2: 10, 3: 7, 4: 8, 5: 8, 6: 8}
+        total = 0
+        for year in range(2, 7):
+            with self.subTest(year=year):
+                src = json.loads((root / "rpt_2027/pjpk" /
+                                  f"dskp_full_standard_texts_y{year}_20261107_DRAF.json"
+                                 ).read_text(encoding="utf-8"))
+                fixed = src.get("extraction_corrections", [])
+                self.assertEqual(len(fixed), expected[year])
+                total += len(fixed)
+                for item in fixed:
+                    code = item["sp_code"]
+                    self.assertEqual(src["components"]["PK"]["sp"][code],
+                                     item["corrected_sp_text"])
+                    self.assertIn(item["removed_standard_prestasi_text"],
+                                  item["original_dskp_extraction"])
+                for code, statement in src["components"]["PK"]["sp"].items():
+                    self.assertNotRegex(
+                        statement,
+                        r"\\s+(?:\\d+\\.\\d+\\s+)?1\\s+"
+                        r"(?:Menyatakan|Mengenal|Menjelaskan|Menerangkan|Mengetahui)\\b",
+                        msg=f"PK Year {year} SP {code} still contains PBD text"
+                    )
+        self.assertEqual(total, 41)
+
     def test_merge_week_cell_only_when_week_and_dates_match(self):
         rows = pjpk_records(3)
         spans = week_merge_ranges(rows)
