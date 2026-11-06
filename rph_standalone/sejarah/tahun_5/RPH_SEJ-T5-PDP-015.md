@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan garis masa perjuangan tokoh tempatan dan peta lokasi penentangan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 5: Bangkit Berjuang Penjajah Ditentang.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun dua siri peristiwa penentangan mengikut urutan dan lokasi. Guru menyemak jawapan awal berpandukan 7.2.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 64–68: Urutan peristiwa penentangan tokoh tempatan terhadap kuasa. Murid menyusun dua siri peristiwa penentangan mengikut urutan dan lokasi. Guru menyemak jawapan awal berpandukan 7.2.3.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 5. Murid membandingkan strategi yang digunakan serta iktibar menghargai pejuang. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan menghargai perjuangan pemimpin terdahulu.
+**Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 64–68 bagi menyokong perbandingan. Murid membandingkan strategi yang digunakan serta iktibar menghargai pejuang. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan menghargai perjuangan pemimpin terdahulu.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan dua garis masa ringkas dan dua pengajaran perjuangan. Guru menyemak secara individu menggunakan kata tugas SP 7.2.3 dan nilai K7.2.5, kemudian memberi intervensi kepada murid yang belum tepat.
 

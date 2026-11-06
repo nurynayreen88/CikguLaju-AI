@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan petikan perubahan pentadbiran dan gambaran kegiatan ekonomi ketika penjajahan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 4: Kedaulatan Negara Dicabar.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membandingkan struktur pentadbiran sebelum dan selepas campur tangan asing. Guru menyemak jawapan awal berpandukan 7.1.4.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 53–56: Kesan pentadbiran Negeri-negeri Selat/Bersekutu, ekonomi dan. Murid membandingkan struktur pentadbiran sebelum dan selepas campur tangan asing. Guru menyemak jawapan awal berpandukan 7.1.4.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid membina carta kesan sosioekonomi yang membezakan manfaat terhad dan kesan negatif terhadap masyarakat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan mengekalkan kedaulatan dan kemakmuran negara kita.
+**Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 53–56 bagi menyokong perbandingan. Murid membina carta kesan sosioekonomi yang membezakan manfaat terhad dan kesan negatif terhadap masyarakat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan mengekalkan kedaulatan dan kemakmuran negara kita.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan jadual dua perubahan pentadbiran serta dua kesan sosioekonomi. Guru menyemak secara individu menggunakan kata tugas SP 7.1.4 dan nilai K7.1.7, kemudian memberi intervensi kepada murid yang belum tepat.
 

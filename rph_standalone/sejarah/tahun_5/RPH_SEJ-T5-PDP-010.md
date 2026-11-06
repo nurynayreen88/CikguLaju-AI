@@ -15,9 +15,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan contoh manuskrip lama, peta penutur bahasa dan keratan penggunaan bahasa. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 3: Bahasa Melayu Warisan Kita.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina persoalan kajian tentang perubahan peranan bahasa Melayu. Guru menyemak jawapan awal berpandukan 6.3.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 32–43: Kajian kes cadangan bahasa Melayu: susur galur dan sebaran. Murid membina persoalan kajian tentang perubahan peranan bahasa Melayu. Guru menyemak jawapan awal berpandukan 6.3.1.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid membandingkan dua sumber daripada masa berlainan dan mencadangkan usaha memartabatkan bahasa. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan bahasa Melayu sebagai warisan negara yang dibanggakan.
+**Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 32–43 bagi menyokong perbandingan. Murid membandingkan dua sumber daripada masa berlainan dan mencadangkan usaha memartabatkan bahasa. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan bahasa Melayu sebagai warisan negara yang dibanggakan.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan laporan kes satu persoalan, dua bukti, satu tindakan bahasa. Guru menyemak secara individu menggunakan kata tugas SP 6.3.1, 6.3.2 dan nilai K6.3.4, kemudian memberi intervensi kepada murid yang belum tepat.
 

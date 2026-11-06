@@ -15,9 +15,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan jadual kepercayaan masyarakat awal Tanah Melayu dan peta Melaka. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 2: Agama Islam di Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan bentuk kepercayaan awal dengan pernyataan yang tepat dan beradab. Guru menyemak jawapan awal berpandukan 6.2.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 18–21: Pengenalan agama dan kepercayaan masyarakat, batu bersurat. Murid mengelaskan bentuk kepercayaan awal dengan pernyataan yang tepat dan beradab. Guru menyemak jawapan awal berpandukan 6.2.1.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 2. Murid menyusun garis masa kedatangan serta perkembangan Islam dalam Kesultanan Melayu Melaka. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan nilai-nilai keagamaan yang diamalkan ke arah masyarakat harmoni.
+**Aktiviti 2 (20 min):** Guru meminta murid memeriksa urutan dan fakta pada hlm. 18–21. Murid menyusun garis masa kedatangan serta perkembangan Islam dalam Kesultanan Melayu Melaka. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan nilai-nilai keagamaan yang diamalkan ke arah masyarakat harmoni.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan peta konsep latar kepercayaan dan dua fakta kedatangan Islam. Guru menyemak secara individu menggunakan kata tugas SP 6.2.1, 6.2.2 dan nilai K6.2.6, kemudian memberi intervensi kepada murid yang belum tepat.
 

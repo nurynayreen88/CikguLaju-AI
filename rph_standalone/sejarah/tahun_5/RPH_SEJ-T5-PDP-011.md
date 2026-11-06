@@ -15,9 +15,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan peta kedatangan kuasa asing serta kad istilah campur tangan, penjajahan, naungan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 4: Kedaulatan Negara Dicabar.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan istilah dengan maksud dan contoh sejarah yang tepat. Guru menyemak jawapan awal berpandukan 7.1.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 45–49: Naungan, campur tangan, penjajahan dan kuasa Siam, Portugis. Murid memadankan istilah dengan maksud dan contoh sejarah yang tepat. Guru menyemak jawapan awal berpandukan 7.1.1.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid membina kronologi kuasa asing yang terlibat mengikut lokasi serta tempoh. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan jati diri yang tinggi dalam kalangan generasi muda.
+**Aktiviti 2 (20 min):** Guru meminta murid memeriksa urutan dan fakta pada hlm. 45–49. Murid membina kronologi kuasa asing yang terlibat mengikut lokasi serta tempoh. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan jati diri yang tinggi dalam kalangan generasi muda.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan jadual tiga istilah dan garis masa kuasa asing. Guru menyemak secara individu menggunakan kata tugas SP 7.1.1, 7.1.2 dan nilai K7.1.5, kemudian memberi intervensi kepada murid yang belum tepat.
 

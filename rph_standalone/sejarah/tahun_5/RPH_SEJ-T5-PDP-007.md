@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan contoh aktiviti muafakat komuniti pelbagai agama. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 2: Agama Islam di Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengenal pasti sumbangan nilai agama kepada kerjasama dalam masyarakat. Guru menyemak jawapan awal berpandukan 6.2.5.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 25: Aktiviti kumpulan empat yang membincangkan nilai sejagat. Murid mengenal pasti sumbangan nilai agama kepada kerjasama dalam masyarakat. Guru menyemak jawapan awal berpandukan 6.2.5.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 2. Murid menilai dua situasi hormat terhadap agama berbeza dan membina peraturan perbincangan beradab. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan membenarkan agama lain diamalkan dengan aman dan damai.
+**Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 25 bagi menyokong perbandingan. Murid menilai dua situasi hormat terhadap agama berbeza dan membina peraturan perbincangan beradab. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan membenarkan agama lain diamalkan dengan aman dan damai.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan kad tindakan perpaduan dengan dua justifikasi toleransi. Guru menyemak secara individu menggunakan kata tugas SP 6.2.5 dan nilai K6.2.8, kemudian memberi intervensi kepada murid yang belum tepat.
 
