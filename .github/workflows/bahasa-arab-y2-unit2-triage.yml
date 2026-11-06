@@ -1,0 +1,27 @@
+name: BA Y2 Unit2 source SP triage (read-only)
+on:
+  push:
+    branches:
+      - staging/bahasa-arab-y2-unit2-sp-triage-20261106
+    paths:
+      - "audits/bahasa_arab_y2_unit2_pdp013_028_sp_mismatch_triage_20261106.json"
+      - "scripts/check_bahasa_arab_y2_unit2_sp_triage_stage.py"
+      - ".github/workflows/bahasa-arab-y2-unit2-triage.yml"
+  pull_request:
+    paths:
+      - "audits/bahasa_arab_y2_unit2_pdp013_028_sp_mismatch_triage_20261106.json"
+      - "scripts/check_bahasa_arab_y2_unit2_sp_triage_stage.py"
+      - ".github/workflows/bahasa-arab-y2-unit2-triage.yml"
+  workflow_dispatch:
+jobs:
+  verify-audit:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Check 16 source candidate IDs and prevent premature READY
+        run: python scripts/check_bahasa_arab_y2_unit2_sp_triage_stage.py
