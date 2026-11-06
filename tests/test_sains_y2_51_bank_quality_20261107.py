@@ -2,6 +2,7 @@
 import unittest
 
 from web.sains_y2_51_activities_draf_20261107 import BANK
+from tools.sains_buku_aktiviti_mapping_20261107 import activity_for
 from tools.render_sains_y2_51_rph_draf_20261107 import (
     Y2_SOURCE_CONFLICTS, CORRECTED_CANDIDATE_TITLE, markdown, kps_for, book_page_cues
 )
@@ -55,7 +56,8 @@ class TestYear2ScienceBank(unittest.TestCase):
           "pdp_number":3,"unit":"Unit 3: Manusia","candidate_title":
           CORRECTED_CANDIDATE_TITLE["3.1.3"],
           "sp":"3.1.3","tajuk":"legacy inheritance",
-          "kps":kps_for("3.1.3"), "book_page_cue":"28", "source_discrepancy":
+          "kps":kps_for("3.1.3"), "book_page_cue":"28",
+          "activity_book":activity_for(2,"SCI-Y2-PDP-003","3.1.3"), "source_discrepancy":
           Y2_SOURCE_CONFLICTS["3.1.3"], **BANK["3.1.3"],
         }
         md=markdown(item)
