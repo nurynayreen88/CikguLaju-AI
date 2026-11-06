@@ -32,6 +32,7 @@ SUBJECT_LABELS = {
     "PJPK": "PJPK",
     "MORAL": "Pendidikan Moral",
     "PSV": "Pendidikan Seni Visual",
+    "SEJARAH": "Sejarah",
 }
 SOURCE_SUBJECTS = frozenset(("ENGLISH", "MORAL", "PJPK", "PSV"))
 MAX_TOKEN = 40
@@ -482,6 +483,25 @@ def create_blueprint():
                 "year": year, "subject": subject, "unit": unit,
                 "lesson": token, "teacher": teacher,
             }, None
+        if subject == "SEJARAH":
+            if year not in (4,5,6) or component not in (None, ""):
+                return None, (jsonify({"error":"Sejarah tersedia untuk Tahun 4–6 sahaja"}),400)
+            from web.native_telegram_sejarah_2027_client import (
+                sejarah_available, NativeRPHUnavailable,
+            )
+            try:
+                sejarah_available(year, unit, token)
+            except (NativeRPHUnavailable, ValueError):
+                return None, (jsonify({
+                    "error": "Sumber RPH Sejarah untuk Unit/PdP ini belum aktif pada Telegram.",
+                    "code": "TELEGRAM_SEJARAH_SOURCE_UNAVAILABLE",
+                }), 503)
+            return {
+                "source": "telegram-native-sejarah-2027",
+                "year": year, "subject": subject,
+                "unit": unit, "lesson": token, "teacher": teacher,
+                "status": "DRAF CADANGAN",
+            }, None
         result = verified_preview(year, subject, unit, token, component)
         if result is None:
             return None, (jsonify({"error": "RPH tepat untuk Lesson/PdP ini belum tersedia di Web. Tiada RPH generik atau daripada tajuk lain digunakan.",
@@ -554,6 +574,9 @@ def create_blueprint():
             elif selected.get("source") == "telegram-verified-rpt-master":
                 from web.native_verified_rpt_rph_client import request_verified_rpt_rph
                 document = request_verified_rpt_rph(selected, fmt)
+            elif selected.get("source") == "telegram-native-sejarah-2027":
+                from web.native_telegram_sejarah_2027_client import request_sejarah_rph
+                document = request_sejarah_rph(selected, fmt)
             elif selected.get("source") == "telegram-native-pdp-sequence":
                 from web.native_telegram_sequence_rph_client import request_native_sequence_rph
                 document = request_native_sequence_rph(selected, fmt)
