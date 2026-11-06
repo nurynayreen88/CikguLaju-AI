@@ -738,7 +738,7 @@ theme.addEventListener("change",async()=>{
  }catch(error){if(theme.value===selected)catalogStatus.textContent=error.message;}
 });
 unit.addEventListener("change",async()=>{
- const selected=unit.value,code=subject.value,targetTheme=theme.value,targetYear=year.value;
+ const selected=unit.value,code=subject.value,targetTheme=theme.value,targetYear=year.value,targetComponent=component.value;
  resetSelect(topic,"Pilih Tajuk");resetSelect(lesson,"Pilih Lesson/PdP");
  showStep(topic,code==="BM"&&!!selected);showStep(lesson,code!=="BM"&&!!selected);
  resetMaterials();resetRphPreview();displayBookReference();
@@ -751,7 +751,7 @@ unit.addEventListener("change",async()=>{
    const extra={subject:code,unit:selected};
    if(code==="PJPK"){if(!component.value)return;extra.component=component.value;}
    await loadFinalLesson("pdp",extra,
-    ()=>year.value===targetYear&&subject.value===code&&unit.value===selected);
+    ()=>year.value===targetYear&&subject.value===code&&unit.value===selected&&(code!=="PJPK"||component.value===targetComponent));
   }
  }catch(error){if(unit.value===selected)catalogStatus.textContent=error.message;}
 });
