@@ -8,7 +8,7 @@ from __future__ import annotations
 import json
 import re
 from pathlib import Path
-from tools.sains_buku_aktiviti_mapping_20261107 import activity_for
+from tools.sains_buku_aktiviti_mapping_20261107 import activity_for, is_direct_sp_match, activity_short_note
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "audits/sains_y3_v2582_45_textbook_page_candidates_20261106.json"
@@ -492,12 +492,9 @@ def adapt_rows(state, original):
     if extra:
         materials=materials+"; "+extra["materials"]
     page_text=", ".join(str(x) for x in item["printed_book_page_candidates"])
-    ba_text=(f"Buku Aktiviti Sains Tahun 3, aktiviti "
-             f"'{book_activity['activity_title']}', m/s bercetak "
-             f"{book_activity['workbook_printed_page']} "
-             f"(PDF halaman {book_activity['workbook_pdf_page']}).")
-    ba_pbd=(" Murid melengkapkan latihan Buku Aktiviti; "
-            "guru menyemak jawapan individu sebagai bukti PBD.")
+    ba_text=activity_short_note(book_activity,3)
+    ba_pbd=(" Murid boleh melengkapkan latihan Buku Aktiviti selepas semakan guru; "
+            "guru menilai jawapan individu." if is_direct_sp_match(book_activity) else "")
     updated=dict(original)
     updated.update({
         "TAJUK":label,
@@ -513,8 +510,10 @@ def adapt_rows(state, original):
         "KEMAHIRAN PROSES SAINS":kps_desc,
         "KEMAHIRAN MANIPULATIF DAN KESELAMATAN":manip_desc,
         "BAHAN BANTU MENGAJAR":f"{materials}. Buku Teks Sains Tahun 3, halaman bercetak {page_text} (petunjuk sumber; semak sebelum cetak). "+ba_text,
-        "BUKU AKTIVITI / LATIHAN":ba_text+" Padanan latihan dengan SP masih DRAF untuk pengesahan guru.",
+        "BUKU AKTIVITI / LATIHAN":ba_text,
         "BUKU AKTIVITI URL":book_activity["workbook_url"],
+        "BUKU AKTIVITI MATCH":book_activity["matching_status"],
+        "BUKU AKTIVITI SP BERCETAK":", ".join(book_activity["workbook_printed_sp_codes"]),
         "PEMULIHAN / PENGAYAAN":"Pemulihan: guru membimbing dengan kad/objek berlabel. Pengayaan: murid menjelaskan bukti tambahan daripada tugasan.",
     })
     return updated
