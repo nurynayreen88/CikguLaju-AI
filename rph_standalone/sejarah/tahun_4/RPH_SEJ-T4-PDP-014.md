@@ -14,7 +14,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan kad biodata tokoh komuniti yang disahkan sekolah atau muzium tempatan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 4: Sejarah Tempat Tinggal.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 52–54: Takrif tokoh setempat, contoh malim gunung, guru dan usahawan. Murid menyaring sumbangan tokoh setempat daripada petikan dan foto sumber. Guru menyemak jawapan awal berpandukan 1.4.4.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 52–54: Takrif tokoh setempat, contoh malim gunung, guru dan usahawan serta rangka kajian kes. Murid menyaring sumbangan tokoh setempat daripada petikan dan foto sumber. Guru menyemak jawapan awal berpandukan 1.4.4.
 
 **Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 52–54 bagi menyokong perbandingan. Murid menghasilkan poster tokoh yang membezakan biografi daripada sumbangan kepada masyarakat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan sikap menghargai kawasan tempat tinggal.
 

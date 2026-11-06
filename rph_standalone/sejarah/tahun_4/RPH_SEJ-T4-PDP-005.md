@@ -15,7 +15,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan contoh profil murid rekaan dan carta keluarga asas/kembangan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 2: Saya dan Keluarga.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 18–21: biodata dan contoh peta minda. Murid melengkapkan profil rekaan dan menandakan hubungan dalam dua carta keluarga. Guru menyemak jawapan awal berpandukan 1.2.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 18–21: Halaman 18–19 menjelaskan biodata dan contoh peta minda. Murid melengkapkan profil rekaan dan menandakan hubungan dalam dua carta keluarga. Guru menyemak jawapan awal berpandukan 1.2.1.
 
 **Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 18–21 bagi menyokong perbandingan. Murid membandingkan ciri keluarga asas dengan keluarga kembangan melalui dua contoh. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menunjuk cara adab yang perlu diamalkan dalam keluarga.
 

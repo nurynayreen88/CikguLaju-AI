@@ -15,7 +15,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan pelan sekolah contoh dan gambar lokasi kemudahan awam. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 3: Sejarah Sekolah.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 32–35: Nama, alamat, lokasi sekolah dan mercu tanda melalui peta serta. Murid menandakan lokasi sekolah pada peta setempat tanpa mendedahkan alamat rumah murid. Guru menyemak jawapan awal berpandukan 1.3.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 32–35: Nama, alamat, lokasi sekolah dan mercu tanda melalui peta serta pelan. Murid menandakan lokasi sekolah pada peta setempat tanpa mendedahkan alamat rumah murid. Guru menyemak jawapan awal berpandukan 1.3.1.
 
 **Aktiviti 2 (20 min):** Guru menyoal bukti konkrit hlm. 32–35 untuk menguji dapatan murid. Murid melakar pelan ringkas ruang sekolah dan menamakan peranan satu kemudahan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan tanggungjawab murid terhadap sekolah.
 

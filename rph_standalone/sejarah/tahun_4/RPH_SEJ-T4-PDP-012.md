@@ -15,7 +15,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan peta fizikal daerah contoh serta gambar bentuk muka bumi. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 4: Sejarah Tempat Tinggal.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 46–49: Maklumat kawasan tempat tinggal dan contoh bentuk bumi tanah. Murid mencari kedudukan kawasan tempat tinggal pada peta umum tanpa alamat rumah individu. Guru menyemak jawapan awal berpandukan 1.4.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 46–49: Maklumat kawasan tempat tinggal dan contoh bentuk bumi tanah tinggi, tanah pamah. Murid mencari kedudukan kawasan tempat tinggal pada peta umum tanpa alamat rumah individu. Guru menyemak jawapan awal berpandukan 1.4.1.
 
 **Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 46–49 bagi menyokong perbandingan. Murid mengaitkan bentuk muka bumi seperti sungai, bukit atau dataran dengan ciri kawasan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menjaga kemudahan awam di tempat tinggal.
 

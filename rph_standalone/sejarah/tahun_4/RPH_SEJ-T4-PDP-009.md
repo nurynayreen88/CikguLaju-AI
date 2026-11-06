@@ -14,7 +14,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan foto sekolah dahulu dan kini serta petikan buku tahunan sekolah. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 3: Sejarah Sekolah.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 36–37: Sejarah sekolah, garis masa perubahan bangunan dan bukti. Murid menyusun dua atau tiga peristiwa sekolah berdasarkan sumber bertarikh. Guru menyemak jawapan awal berpandukan 1.3.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 36–37: Sejarah sekolah, garis masa perubahan bangunan dan bukti pencapaian. Murid menyusun dua atau tiga peristiwa sekolah berdasarkan sumber bertarikh. Guru menyemak jawapan awal berpandukan 1.3.3.
 
 **Aktiviti 2 (20 min):** Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 36–37. Murid menghasilkan kapsyen peristiwa sekolah dan menyatakan jasa warga sekolah yang relevan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan mengiktiraf jasa dan sumbangan sekolah kepada diri serta masyarakat.
 

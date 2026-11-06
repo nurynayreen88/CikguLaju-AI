@@ -15,7 +15,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan dua foto sekolah dari masa berbeza dan maklumat arkib sekolah yang dibenarkan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 3: Sejarah Sekolah.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 32–40: Sumber lokasi, identiti dan sejarah sekolah sebagai bahan. Murid membina persoalan inkuiri tentang perubahan sekolah dan jadual dua sumber. Guru menyemak jawapan awal berpandukan 1.3.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 32–40: Sumber lokasi, identiti dan sejarah sekolah sebagai bahan kajian kes cadangan guru. Murid membina persoalan inkuiri tentang perubahan sekolah dan jadual dua sumber. Guru menyemak jawapan awal berpandukan 1.3.1.
 
 **Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 32–40 bagi menyokong perbandingan. Murid membandingkan keadaan sekolah dahulu dan kini serta membentang dapatan dan batas bukti. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan tanggungjawab murid terhadap sekolah.
 
