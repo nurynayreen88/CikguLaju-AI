@@ -144,6 +144,16 @@ def options():
                                 ) if code == "PJPK" else bool(source_records(year, code))
                                 if available:
                                     items.append({"value": code, "label": label})
+                        if year in (4, 5, 6) and not any(
+                                row.get("value") == "SEJARAH" for row in items):
+                            from web.native_telegram_sejarah_2027_client import (
+                                list_sejarah_units, NativeRPHUnavailable,
+                            )
+                            try:
+                                if list_sejarah_units(year):
+                                    items.append({"value":"SEJARAH","label":"Sejarah"})
+                            except (NativeRPHUnavailable, ValueError):
+                                pass  # Never advertise unavailable Telegram RPH.
                         return jsonify(items)
                     subject = request.args.get("subject", "")
                     component = request.args.get("component")
@@ -167,6 +177,25 @@ def options():
                     if subject == "BM" and kind in ("units", "pdp"):
                         return jsonify({"error": "Use BM Tema / Unit / Tajuk",
                                         "code": "BM_HIERARCHY_REQUIRED"}), 400
+                    # Sejarah Year 4–6 follows its own verified Telegram
+                    # Unit/PdP source, never a copied RPT week or generic Web RPH.
+                    if subject == "SEJARAH" and kind in ("units", "pdp"):
+                        from web.native_telegram_sejarah_2027_client import (
+                            list_sejarah_units, list_sejarah_lessons,
+                            NativeRPHUnavailable,
+                        )
+                        if year not in (4,5,6) or component not in (None, ""):
+                            return jsonify({"error":"Invalid Sejarah selection"}), 400
+                        try:
+                            choices = (list_sejarah_units(year) if kind == "units"
+                                       else list_sejarah_lessons(
+                                            year, request.args.get("unit", "")))
+                        except (NativeRPHUnavailable, ValueError):
+                            return jsonify({
+                                "error":"Telegram Sejarah unit/PdP unavailable",
+                                "code":"TELEGRAM_SEJARAH_SOURCE_UNAVAILABLE",
+                            }), 503
+                        return jsonify(choices)
                     # Mathematics and Science have an independent, grouped
                     # native PdP sequence. Never substitute weekly RPT IDs.
                     if subject in ("MATH", "SCIENCE") and kind in ("units", "pdp"):
