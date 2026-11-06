@@ -31,13 +31,10 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: Sejarah-2027-Telegram-Native-Word-DRAF-A4-Audit
+          name: Sejarah-2027-108-RPH-Individu-Word-PDF-DRAF
+          retention-days: 30
           path: |
             output/sejarah_native_word_a4_qa/manifest.json
-            output/sejarah_native_word_a4_qa/docx/SEJ_T4_PDP_001.docx
-            output/sejarah_native_word_a4_qa/docx/SEJ_T5_PDP_001.docx
-            output/sejarah_native_word_a4_qa/docx/SEJ_T6_PDP_001.docx
-            output/sejarah_native_word_a4_qa/pdf/SEJ_T4_PDP_001.pdf
-            output/sejarah_native_word_a4_qa/pdf/SEJ_T5_PDP_001.pdf
-            output/sejarah_native_word_a4_qa/pdf/SEJ_T6_PDP_001.pdf
+            output/sejarah_native_word_a4_qa/docx/*.docx
+            output/sejarah_native_word_a4_qa/pdf/*.pdf
           if-no-files-found: warn
