@@ -387,21 +387,24 @@ BANK = {
 INTEGRATED_SP_DRAFT = {
     "3.2.1": {
         "sp": "3.2.5",
-        "teacher": "meminta laporan pemerhatian hasil pengelasan kelas makanan",
-        "pupil": "menulis jadual berlabel dan menyampaikan dua dapatan tentang kelas makanan",
-        "pbd": "Jadual dan laporan pemerhatian kelas makanan dengan dua dapatan",
+        "teacher": "membimbing peta pokok tujuh kelas makanan pada kertas mahjung untuk dipamerkan",
+        "pupil": "mempamerkan peta pokok dan menerangkan dua dapatan melalui Gallery Walk",
+        "pbd": "Peta pokok kelas makanan dan penerangan dua dapatan pemerhatian",
+        "materials": "Kertas mahjung, gambar hidangan makanan dan pen penanda",
     },
     "3.3.1": {
         "sp": "3.3.3",
-        "teacher": "menyoal tentang makanan yang tidak diperlukan badan selepas proses pencernaan",
-        "pupil": "merumus bahan yang tidak digunakan badan dan cara sisa disingkirkan",
-        "pbd": "Rumusan makanan tidak diperlukan badan berpandukan rajah pencernaan",
+        "teacher": "meminta murid meneliti penyerapan nutrien serta sisa makanan pada rajah pencernaan",
+        "pupil": "merumus bahawa nutrien diserap di usus manakala sisa tidak diperlukan disingkirkan melalui dubur",
+        "pbd": "Rumusan penyerapan nutrien dan penyingkiran sisa berdasarkan rajah",
+        "materials": "Rajah penyerapan nutrien dan laluan makanan hingga dubur",
     },
     "3.3.2": {
         "sp": "3.3.4",
-        "teacher": "meminta komunikasi pemerhatian tentang laluan dan proses pencernaan",
-        "pupil": "melakar laluan makanan berlabel lalu menerangkan pemerhatian kepada pasangan",
-        "pbd": "Lakaran pencernaan berlabel dan penerangan pemerhatian yang tepat",
+        "teacher": "membimbing kumpulan membina model salur pencernaan dengan tanah liat berwarna atas kad manila",
+        "pupil": "melabel model dan menerangkan pemerhatian urutan pencernaan kepada rakan",
+        "pbd": "Model salur pencernaan berlabel dan penerangan urutan yang tepat",
+        "materials": "Tanah liat pelbagai warna, kad manila dan pen penanda",
     },
 }
 
@@ -457,6 +460,8 @@ def adapt_rows(state, original):
                f"4. Murid {extra['pupil']}.")
     all_sp=sp+((", "+extra["sp"]) if extra else "")
     all_pbd=pbd+(("; "+extra["pbd"]) if extra else "")
+    if extra:
+        materials=materials+"; "+extra["materials"]
     page_text=", ".join(str(x) for x in item["printed_book_page_candidates"])
     updated=dict(original)
     updated.update({
