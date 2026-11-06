@@ -15,7 +15,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan dua petikan hikayat atau naratif tentang Hang Tuah yang dilabel jelas. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 11: Hang Tuah Laksamana Terbilang.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 156–167: Kajian kes cadangan guru yang membezakan hikayat Hang Tuah. Murid menggubal soalan inkuiri tentang nilai kepimpinan Hang Tuah dan jenis sumber. Guru menyemak jawapan awal berpandukan 5.4.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 156–167: Kajian kes cadangan guru yang membezakan hikayat Hang Tuah daripada bukti lain. Murid menggubal soalan inkuiri tentang nilai kepimpinan Hang Tuah dan jenis sumber. Guru menyemak jawapan awal berpandukan 5.4.1.
 
 **Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 156–167 bagi menyokong perbandingan. Murid membandingkan fakta, legenda dan inferens kemudian membentang dua pengajaran yang beralasan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mencontohi kesetiaan Hang Tuah sebagai Laksamana Melaka.
 
