@@ -24,12 +24,13 @@ def _layout(row, teacher):
     y=r["year"]
     sp=", ".join(r["sp_codes"])
     date_str=t["date"]
+    entered_date=date.fromisoformat(date_str) if date_str else None
     day=("Isnin","Selasa","Rabu","Khamis","Jumaat","Sabtu","Ahad")[
-        date.fromisoformat(date_str).weekday()] if date_str else ""
+        entered_date.weekday()] if entered_date else ""
     header=[
         ("MATA PELAJARAN","Sejarah"),
         ("TAHUN/TINGKATAN","Tahun "+str(y)),
-        ("TARIKH",date_str),
+        ("TARIKH",entered_date.strftime("%d/%m/%Y") if entered_date else ""),
         ("HARI",day),
         ("MASA",t["time"]),
         ("KELAS",t["class"]),
