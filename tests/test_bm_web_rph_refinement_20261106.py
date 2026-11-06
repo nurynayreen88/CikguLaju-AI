@@ -1,11 +1,15 @@
 """BM Web-native source refinement: explicit SP tasks, real line breaks."""
 import re
+import sqlite3
+import tempfile
 import unittest
+from pathlib import Path
 from types import SimpleNamespace
 from unittest.mock import Mock
 
 from web.bm_web_rph_refinement import (
     _family, refine_web_bm_rows, split_numbered_steps, install,
+    complete_verified_bm_standards,
 )
 
 SOURCE = "verified_pdp_sequence"
@@ -114,6 +118,52 @@ class BMWebQualityTest(unittest.TestCase):
         )})
         self.assertIn("Guru menyebut frasa", out["AKTIVITI UTAMA"])
         self.assertIn("dialog atau soal jawab", out["AKTIVITI UTAMA"])
+
+    def test_backfill_verified_sp_only_from_exact_bm_year_sk_sp(self):
+        with tempfile.TemporaryDirectory() as td:
+            db=Path(td)/"curriculum.db"
+            with sqlite3.connect(db) as con:
+                con.executescript("""CREATE TABLE curriculum_standards(
+                   year_label TEXT, subject TEXT, sk_code TEXT, sp_code TEXT,
+                   sk_text TEXT, sp_text TEXT, verified INTEGER
+                );""")
+                rows=[
+                    ("Tahun 2","Matematik","1.1","1.1.2","Wrong SK","Wrong math text",1),
+                    ("Tahun 3","Bahasa Melayu","1.1","1.1.2","Wrong year","Wrong year BM",1),
+                    ("Tahun 2","Bahasa Melayu","1.1","1.1.2","BM SK","Mendengar dan memberikan respons terhadap soalan, suruhan, pesanan dan permintaan.",1),
+                    ("Tahun 2","Bahasa Melayu","1.1","1.1.3","Other","Unverified SP",0),
+                ]
+                con.executemany("INSERT INTO curriculum_standards VALUES (?,?,?,?,?,?,?)",rows)
+            source=({"sk_code":"1.1","sp_code":"1.1.2","sp_text":"","sk_text":""},)
+            got=complete_verified_bm_standards(db,2,source)
+            self.assertEqual(got[0]["sp_text"],rows[2][5])
+            self.assertEqual(got[0]["sk_text"],"BM SK")
+            self.assertEqual(source[0]["sp_text"],"")
+            self.assertEqual(complete_verified_bm_standards(
+                db,2,({"sk_code":"1.1","sp_code":"1.1.3","sp_text":""},)
+            )[0]["sp_text"],"")
+
+    def test_genuine_bm_sp_semantics_are_expressed_in_refined_activities(self):
+        cases=(
+            ({"sp_code":"1.1.2","sp_text":"Mendengar, memahami dan memberikan respons terhadap soalan, suruhan, pesanan dan permintaan"},
+             "Kenali Rakan", ("soalan","suruhan","pesanan","permintaan")),
+            ({"sp_code":"1.1.1","sp_text":"Mendengar dan mengecam sebutan ayat tunggal dan ayat majmuk"},
+             "Suria Pagi", ("ayat tunggal","ayat majmuk")),
+            ({"sp_code":"4.1.1","sp_text":"Bercerita dan mengujarkan dialog yang mengandungi peribahasa"},
+             "Program Kebun Komuniti", ("peribahasa","dialog")),
+        )
+        for sp,topic,markers in cases:
+            with self.subTest(topic=topic):
+                state=bm_state(details=(sp,),topic=topic)
+                result=refine_web_bm_rows(state,{
+                    "AKTIVITI UTAMA":"Aktiviti 1  Dengar untuk Maklumat (12 minit) "
+                                    "Aktiviti 2  Latihan Kreatif (15 minit).",
+                })
+                for marker in markers:
+                    self.assertIn(marker,result["AKTIVITI UTAMA"].lower())
+                self.assertIn(topic,result["AKTIVITI UTAMA"])
+                self.assertIn("\\n2. ",result["AKTIVITI UTAMA"])
+                self.assertIn("\\n3. ",result["AKTIVITI UTAMA"])
 
     def test_idempotent_installer_preserves_original_renderer(self):
         def previous(state, *_):
