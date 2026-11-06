@@ -40,6 +40,9 @@ def check():
         assert len(all_sp) == expected["sp"], (year, len(all_sp))
         unique_all.update((year, code) for code in all_sp)
 
+        source_page_refs={ref["sp"] for l in lessons for ref in l["rujukan_buku_teks"].get("calon_muka_surat_mengikut_sp", [])}
+        if year in (5,6):
+            assert source_page_refs == all_sp, (year,len(source_page_refs),len(all_sp))
         for lesson in lessons:
             assert lesson["review"]["release_ready"] is False, lesson["id"]
             assert lesson["review"]["pedagogi_disahkan_individu"] is False
@@ -89,6 +92,8 @@ def check():
     assert approvals["approvals_granted"] == approvals["release_ready_count"] == 0
     assert len(approvals["individual_review"]) == 96
     assert len({a["id"] for a in approvals["individual_review"]}) == 96
+    assert all(a["bukti_halaman_teks"] and
+               a["buku_teks_hal_bercetak_calon"] for a in approvals["individual_review"])
     for a in approvals["individual_review"]:
         assert a["release_ready"] is False and a["semakan_individu_guru"] is False
         assert a["aktiviti_dalam_buku_diluluskan"] is False
@@ -96,8 +101,8 @@ def check():
         assert a["rt_web_telegram_verified"] is False
         assert len(a["pending"]) >= 6
     print("PASS 96/96 RPH project-specific (technical checks only).")
-    print("Buku Teks T4: 32/32 PdP have printed-page candidates, "
-          "0/32 independently approved visual tasks.")
+    print("Buku Teks T4–6: 96/96 PdP have printed-page candidates, "
+          "0/96 independently approved visual tasks.")
     print("NOT FINAL READY. No native Word/PDF or production tests conducted.")
 
 
