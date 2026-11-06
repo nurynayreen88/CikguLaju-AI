@@ -12,7 +12,7 @@
 
 **Set induksi (4 minit):** Guru memperkenalkan satu contoh bunyi, skor atau pergerakan yang berkait dengan kemahiran PdP; murid mengajuk atau mengemukakan respons ringkas.
 
-**Aktiviti 1 — Penerokaan (8 minit):** Murid menyemak tugas, audio/alat dan urutan sebelum latihan akhir.
+**Aktiviti 1 — Penerokaan (8 minit):** Murid menyemak tugas kumpulan, alat muzik, isyarat mula/henti dan urutan persembahan sebelum latihan akhir; persembahan tidak memerlukan fail audio.
 
 **Aktiviti 2 — Amali / aplikasi (10 minit):** Kumpulan membuat persembahan, kemudian mengisi penilaian kendiri dan rakan.
 
