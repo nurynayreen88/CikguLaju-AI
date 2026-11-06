@@ -200,8 +200,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 4.3.3 melalui lakaran berlabel atau algoritma/carta alir berurutan, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan lakaran berlabel atau algoritma/carta alir berurutan bagi SP 4.3.3; guru menilai kelengkapan maklumat dan langkah reka bentuk.",
+      "objektif": "Pada akhir PdP, murid dapat menghasilkan lakaran artikel jahitan sarung botol air yang menunjukkan ukuran, kedudukan jahitan, bukaan dan bahan mengikut SP 4.3.3.",
+      "kriteria_kejayaan": "Murid menunjukkan lakaran artikel jahitan dengan ukuran, jenis mata jahitan dan bahan berlabel berdasarkan SP 4.3.3; guru menilai ketepatan reka bentuk dan bukti pembelajaran.",
       "bbm": "Contoh jahitan tangan, fabrik perca, jarum dan benang, gunting fabrik, pita ukur, kertas pola; guru menyelia alat tajam",
       "langkah": {
         "set_induksi": {
@@ -262,8 +262,8 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "lakaran berlabel atau algoritma/carta alir berurutan",
-      "rubrik_pbd_khusus": "kelengkapan maklumat dan langkah reka bentuk",
+      "artefak_khusus": "lakaran artikel jahitan dengan ukuran, jenis mata jahitan dan bahan berlabel",
+      "rubrik_pbd_khusus": "kecukupan label, kesesuaian fungsi, logik ukuran dan justifikasi",
       "contoh_projek_cikgulaju": "artikel jahitan sarung botol air",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Artikel Jahitan",
@@ -274,7 +274,11 @@
           "code": "4.3.3",
           "stage": "sketch"
         }
-      ]
+      ],
+      "audit_pemurnian_20261106": {
+        "objective_no_unrelated_programming": true,
+        "visual_textbook_individual_approved": false
+      }
     },
     {
       "pdp": 3,
@@ -821,8 +825,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 5.1.3 melalui lakaran berlabel atau algoritma/carta alir berurutan, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan lakaran berlabel atau algoritma/carta alir berurutan bagi SP 5.1.3; guru menilai kelengkapan maklumat dan langkah reka bentuk.",
+      "objektif": "Pada akhir PdP, murid dapat menghasilkan lakaran model kipas solar yang menunjukkan saiz, susunan sel solar, motor dan bilah yang selamat mengikut SP 5.1.3.",
+      "kriteria_kejayaan": "Murid menunjukkan lakaran produk tenaga boleh baharu dengan sambungan komponen dan ukuran anggaran berdasarkan SP 5.1.3; guru menilai ketepatan reka bentuk dan bukti pembelajaran.",
       "bbm": "Gambar kincir air/angin/sel solar, lakaran, komponen voltan rendah, kad kos, bahan kitar semula",
       "langkah": {
         "set_induksi": {
@@ -883,8 +887,8 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "lakaran berlabel atau algoritma/carta alir berurutan",
-      "rubrik_pbd_khusus": "kelengkapan maklumat dan langkah reka bentuk",
+      "artefak_khusus": "lakaran produk tenaga boleh baharu dengan sambungan komponen dan ukuran anggaran",
+      "rubrik_pbd_khusus": "kecukupan label, kesesuaian fungsi, logik ukuran dan justifikasi",
       "contoh_projek_cikgulaju": "model kipas kecil menggunakan sel solar",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu",
@@ -895,7 +899,11 @@
           "code": "5.1.3",
           "stage": "sketch"
         }
-      ]
+      ],
+      "audit_pemurnian_20261106": {
+        "objective_no_unrelated_programming": true,
+        "visual_textbook_individual_approved": false
+      }
     },
     {
       "pdp": 9,
@@ -2797,8 +2805,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 7.1.3 melalui lakaran berlabel atau algoritma/carta alir berurutan, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan lakaran berlabel atau algoritma/carta alir berurutan bagi SP 7.1.3; guru menilai kelengkapan maklumat dan langkah reka bentuk.",
+      "objektif": "Pada akhir PdP, murid dapat melakar sistem penanaman takungan berpandukan jenis bekas, ruang air dan medium penanaman yang dipilih mengikut SP 7.1.3.",
+      "kriteria_kejayaan": "Murid menunjukkan lakaran takungan berlabel bekas, medium, saluran/resapan air serta ukuran anggaran berdasarkan SP 7.1.3; guru menilai ketepatan reka bentuk dan bukti pembelajaran.",
       "bbm": "Contoh sistem tanaman takungan, bekas tanaman, medium sesuai, benih, pembaris, lakaran dan rekod pertumbuhan",
       "langkah": {
         "set_induksi": {
@@ -2859,8 +2867,8 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "lakaran berlabel atau algoritma/carta alir berurutan",
-      "rubrik_pbd_khusus": "kelengkapan maklumat dan langkah reka bentuk",
+      "artefak_khusus": "lakaran takungan berlabel bekas, medium, saluran/resapan air serta ukuran anggaran",
+      "rubrik_pbd_khusus": "kecukupan label, kesesuaian fungsi, logik ukuran dan justifikasi",
       "contoh_projek_cikgulaju": "sistem tanaman takungan bersumbu",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Teknologi Pertanian Bandar",
@@ -2871,7 +2879,11 @@
           "code": "7.1.3",
           "stage": "sketch"
         }
-      ]
+      ],
+      "audit_pemurnian_20261106": {
+        "objective_no_unrelated_programming": true,
+        "visual_textbook_individual_approved": false
+      }
     },
     {
       "pdp": 28,
