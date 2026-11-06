@@ -114,6 +114,12 @@ def run():
                 assert res.status_code==200,(y,u,res.get_json())
                 lessons=res.get_json()["items"]
                 assert lessons and all(l["status"]=="DRAF" for l in lessons)
+                if y==5 and u["value"]=="u04":
+                    p30=next(x for x in lessons if x["value"]=="030")
+                    assert "7.1.6 hlm. 77–81" in p30["textbook_ref"], p30
+                if y==6 and u["value"]=="u03":
+                    p27=next(x for x in lessons if x["value"]=="027")
+                    assert "8.1.6 hlm. 56–65" in p27["textbook_ref"],p27
                 all_pdp.extend(int(l["value"]) for l in lessons)
                 count+=len(lessons)
             assert sorted(all_pdp)==list(range(1,33))
