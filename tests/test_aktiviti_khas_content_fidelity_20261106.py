@@ -45,6 +45,10 @@ class CompleteContentTests(unittest.TestCase):
                     self.assertEqual(actual_text, original)
                 self.assertEqual(compact(doc.tables[1].rows[0].cells[1].text),
                                  compact(row["title"]))
+                self.assertEqual(doc.tables[1].rows[3].cells[1].text,
+                                 row["assessment_evidence"])
+                self.assertNotEqual(row["assessment_evidence"],
+                                    row["pengukuhan_penilaian"])
 
     def test_pdf_keeps_all_three_full_detailed_steps(self):
         for row in self.records:
@@ -60,6 +64,7 @@ class CompleteContentTests(unittest.TestCase):
                     self.assertIn(compact(part), extracted)
                 self.assertIn(compact(row["learning_objective"]), extracted)
                 self.assertIn(compact(row["bbm"]), extracted)
+                self.assertIn(compact(row["assessment_evidence"]), extracted)
 
     def test_subjects_have_distinct_rph_instructions_at_all_stages(self):
         rows = [r for r in self.records
