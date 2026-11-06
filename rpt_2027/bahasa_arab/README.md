@@ -136,3 +136,8 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 - **16 RPH DRAF** PdP013–028 bagi `الشباب أمل الأمة` menggunakan eBook **DBP 2021 KSSR Semakan 2017 ISBN 978-983-49-3300-5** (sumber HTML teks tersedia, imej asal belum lulus): https://anyflip.com/ulcnq/mffz/basic dan https://anyflip.com/ulcnq/mffz/basic/51-100.
 - **PDF Tahun6 sedia ada di Drive ialah KSSR edisi lama enam unit; KUARANTIN, JANGAN GUNA**. Tahun6 yang benar menggunakan empat unit. Fail audit `audits/bahasa_arab_y6_unit2_pdp013_028_2021_text_source_audit_20261106.json` dan CSV `year6_unit2_pdp013_028_DRAF.csv`.
 - Jumlah **266 RPH DRAF**, 0 FINAL READY; Tahun6 Unit3/4 belum lengkap. Ujian 250 Word/PDF A4 lulus, 266 belum ketika commit. RPT2027, pemeriksaan visual, DSKP SP, guru dan Telegram/Web belum lulus.
+
+## Tahun6 Unit3 `رحلة سعيدة` — 6 Nov 2026
+- 16 draf PdP029–044 berfokus bunyi ذ/ظ, pengangkutan, perbualan destinasi/waktu dan penerangan kenderaan daripada **Buku Teks DBP 2021 KSSR Semakan 2017**: https://anyflip.com/ulcnq/mffz/basic/51-100 (halaman bercetak 62–79).
+- Bukti source-text `audits/bahasa_arab_y6_unit3_pdp029_044_correct2021_text_audit_20261106.json`; CSV `year6_unit3_pdp029_044_DRAF.csv`.
+- **282 DRAF** Tahun2–6, Tahun6 44 PdP calon Unit1–3, 0 FINAL READY; tidak menggunakan PDF Tahun6 Drive versi KSSR lama, visual halaman asal/guru/RPT2027 masih perlu disahkan. CI 282 perlu ujian.

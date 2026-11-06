@@ -1,0 +1,199 @@
+{
+  "date": "2026-11-06",
+  "year": 6,
+  "unit": 3,
+  "title": "رحلة سعيدة",
+  "source": {
+    "ebook": "https://anyflip.com/ulcnq/mffz/basic/51-100",
+    "isbn": "978-983-49-3300-5",
+    "edition": "2021 DBP/KPM KSSR Semakan 2017 (four units)",
+    "printed_unit_pages": "61–90",
+    "text_based_referenced_pages": true,
+    "original_visual_page_approval": false,
+    "wrong_old_drive_pdf_blocked": true
+  },
+  "dskp": "https://anyflip.com/mhtcw/pstm/basic",
+  "range": "029–044",
+  "candidate_count": 16,
+  "items": [
+    {
+      "pdp": "029",
+      "printed_page": 62,
+      "sp_candidate": "1.1.1",
+      "focus": "Bunyi hampir sama ذ dan ظ",
+      "book_text_drill_checked": true,
+      "original_page_visual_checked": false,
+      "manual_teacher_approved": false,
+      "annual_rpt2027_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "030",
+      "printed_page": 63,
+      "sp_candidate": "1.1.4",
+      "focus": "Membina perkataan daripada huruf ذ/ظ",
+      "book_text_drill_checked": true,
+      "original_page_visual_checked": false,
+      "manual_teacher_approved": false,
+      "annual_rpt2027_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "031",
+      "printed_page": 64,
+      "sp_candidate": "1.2.1",
+      "focus": "Mendengar nama pengangkutan darat dan udara",
+      "book_text_drill_checked": true,
+      "original_page_visual_checked": false,
+      "manual_teacher_approved": false,
+      "annual_rpt2027_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "032",
+      "printed_page": 65,
+      "sp_candidate": "1.2.2",
+      "focus": "Mengelaskan kenderaan di darat dan udara",
+      "book_text_drill_checked": true,
+      "original_page_visual_checked": false,
+      "manual_teacher_approved": false,
+      "annual_rpt2027_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "033",
+      "printed_page": 66,
+      "sp_candidate": "1.2.4",
+      "focus": "Mendengar nama pengangkutan air",
+      "book_text_drill_checked": true,
+      "original_page_visual_checked": false,
+      "manual_teacher_approved": false,
+      "annual_rpt2027_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "034",
+      "printed_page": 67,
+      "sp_candidate": "2.2.1",
+      "focus": "Membaca nama kenderaan bermotor",
+      "book_text_drill_checked": true,
+      "original_page_visual_checked": false,
+      "manual_teacher_approved": false,
+      "annual_rpt2027_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "035",
+      "printed_page": 68,
+      "sp_candidate": "2.2.4",
+      "focus": "Mengenal pengangkutan udara dan darat",
+      "book_text_drill_checked": true,
+      "original_page_visual_checked": false,
+      "manual_teacher_approved": false,
+      "annual_rpt2027_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "036",
+      "printed_page": 69,
+      "sp_candidate": "2.2.5",
+      "focus": "Membaca kosa kata perjalanan laut dan rel",
+      "book_text_drill_checked": true,
+      "original_page_visual_checked": false,
+      "manual_teacher_approved": false,
+      "annual_rpt2027_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "037",
+      "printed_page": 70,
+      "sp_candidate": "3.1.1",
+      "focus": "Menyemak ejaan kosa kata pengangkutan",
+      "book_text_drill_checked": true,
+      "original_page_visual_checked": false,
+      "manual_teacher_approved": false,
+      "annual_rpt2027_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "038",
+      "printed_page": 71,
+      "sp_candidate": "2.2.1",
+      "focus": "Permainan ulang kaji kenderaan",
+      "book_text_drill_checked": true,
+      "original_page_visual_checked": false,
+      "manual_teacher_approved": false,
+      "annual_rpt2027_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "039",
+      "printed_page": 72,
+      "sp_candidate": "3.1.1",
+      "focus": "Menulis dan mengelaskan alat pengangkutan",
+      "book_text_drill_checked": true,
+      "original_page_visual_checked": false,
+      "manual_teacher_approved": false,
+      "annual_rpt2027_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "040",
+      "printed_page": 73,
+      "sp_candidate": "1.3.1",
+      "focus": "Bertanya dan menjawab kenderaan yang dinaiki",
+      "book_text_drill_checked": true,
+      "original_page_visual_checked": false,
+      "manual_teacher_approved": false,
+      "annual_rpt2027_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "041",
+      "printed_page": 74,
+      "sp_candidate": "1.3.4",
+      "focus": "Menyatakan destinasi dan masa perjalanan",
+      "book_text_drill_checked": true,
+      "original_page_visual_checked": false,
+      "manual_teacher_approved": false,
+      "annual_rpt2027_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "042",
+      "printed_page": 75,
+      "sp_candidate": "1.3.2",
+      "focus": "Menjelaskan cara perjalanan dan pengalaman",
+      "book_text_drill_checked": true,
+      "original_page_visual_checked": false,
+      "manual_teacher_approved": false,
+      "annual_rpt2027_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "043",
+      "printed_page": 76,
+      "sp_candidate": "3.2.1",
+      "focus": "Menulis ayat perjalanan pada waktu tertentu",
+      "book_text_drill_checked": true,
+      "original_page_visual_checked": false,
+      "manual_teacher_approved": false,
+      "annual_rpt2027_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "044",
+      "printed_page": 79,
+      "sp_candidate": "1.4.1",
+      "focus": "Membaca ayat berangkai tentang pengangkutan",
+      "book_text_drill_checked": true,
+      "original_page_visual_checked": false,
+      "manual_teacher_approved": false,
+      "annual_rpt2027_approved": false,
+      "ready": false
+    }
+  ],
+  "final_ready": 0,
+  "release_authorized": false,
+  "notes": "A book-derived candidate only. Full official year count and all page images/teacher signoff pending."
+}
