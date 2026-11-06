@@ -1,5 +1,7 @@
 """QA 45 fully distinct Sains Y3 draft RPH activities, no app import."""
 import unittest
+import json
+from pathlib import Path
 from web.sains_y3_rph_activity_preview_20261106 import (
     BANK,INTEGRATED_SP_DRAFT,adapt_rows,source_ledgers,
 )
@@ -98,6 +100,27 @@ class SainsY3ActivityCoverageTests(unittest.TestCase):
                     self.assertEqual(revised["STANDARD PEMBELAJARAN"],sp)
                     self.assertNotIn("\n3. Guru ",revised["AKTIVITI UTAMA"])
                     self.assertNotIn("\n4. Murid ",revised["AKTIVITI UTAMA"])
+
+    def test_three_integrated_sp_have_textbook_dskp_evidence_but_not_release(self):
+        path=Path(__file__).resolve().parents[1] / "audits/sains_y3_three_integrated_sp_book_text_20261106.json"
+        evidence=json.loads(path.read_text(encoding="utf-8"))
+        self.assertEqual(
+            evidence["review_status"],
+            "TEXT_LAYER_CONFIRMED__VISUAL_PAGE_AND_TEACHER_REVIEW_PENDING",
+        )
+        self.assertIn("NOT_PRODUCTION_RELEASE",evidence["intended_use"])
+        self.assertEqual(len(evidence["evidence"]),3)
+        self.assertEqual(
+            {(e["primary_sp"],e["integrated_sp"]) for e in evidence["evidence"]},
+            {(primary, data["sp"]) for primary,data in INTEGRATED_SP_DRAFT.items()},
+        )
+        self.assertEqual(
+            {e["pdp_code"] for e in evidence["evidence"]},
+            {"SCI-Y3-PDP-006","SCI-Y3-PDP-010","SCI-Y3-PDP-011"},
+        )
+        for e in evidence["evidence"]:
+            self.assertEqual(e["qa"],"TEXT_MATCH__VISUAL_PENDING")
+            self.assertTrue(e["book_printed_pages"])
 
     def test_acid_demos_do_not_invite_chemical_tasting_or_touching(self):
         for sp in ("8.1.1","8.1.2","8.1.3","8.1.4"):
