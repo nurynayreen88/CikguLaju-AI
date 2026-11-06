@@ -125,7 +125,7 @@ def main():
                         lines = "\n".join(page.extract_text() or "" for page in pages).splitlines()
                         assert any("Aktiviti 2" in line for line in lines), (
                             "PDF missing Activity 2 heading", year)
-                        assert any(re.match(r"^\\s*2\\.\\s+", line)
+                        assert any(re.match(r"^\s*2\.\s+", line)
                                    for line in lines), (
                             "Numbered steps merged in actual PDF layout", year, lines[-30:])
                 print("PASS BM genuine source RPH", year, fmt,
