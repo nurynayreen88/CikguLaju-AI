@@ -104,4 +104,9 @@
  dateInput.addEventListener("change",()=>{void load(dateInput.value);});
  manual.addEventListener("click",()=>showWebView("rph"));
  window.rphTodayLoad=()=>{void load(dateInput.value);};
+ // In case the Telegram session resolved before this script loaded, render
+ // the active home page once the timetable controls are ready.
+ const workspace=document.getElementById("workspace");
+ const todayView=document.getElementById("view-today");
+ if(workspace&&!workspace.hidden&&todayView&&!todayView.hidden)void load(dateInput.value);
 })();
