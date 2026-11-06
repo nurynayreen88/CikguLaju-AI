@@ -1,0 +1,47 @@
+name: Web RPH Hari Ini shared timetable and native selection QA
+on:
+  push:
+    branches: [production/cikgulaju-web-20261105, feat/rph-hari-ini-web-20261106]
+    paths:
+      - 'web/rph_hari_ini_web.py'
+      - 'web_v1_static_preview/rph-today.js'
+      - 'web_v1_static_preview/index.html'
+      - 'tools/run_web_production.py'
+      - 'tests/test_web_rph_hari_ini_20261106.py'
+      - '.github/workflows/web-rph-hari-ini-qa.yml'
+  pull_request:
+    paths:
+      - 'web/rph_hari_ini_web.py'
+      - 'web_v1_static_preview/rph-today.js'
+      - 'web_v1_static_preview/index.html'
+      - 'tools/run_web_production.py'
+      - 'tests/test_web_rph_hari_ini_20261106.py'
+      - '.github/workflows/web-rph-hari-ini-qa.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: pip install 'flask==3.1.3' 'python-docx==1.2.0' 'lxml==5.4.0'
+      - run: PYTHONPATH=tests:. python -m unittest -v tests.test_web_rph_hari_ini_20261106 tests.test_web_teacher_profile_timetable
+      - run: node --check web_v1_static_preview/rph-today.js
+      - name: Syntax-check existing main Web script after embedding daily handoff
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          s=Path("web_v1_static_preview/index.html").read_text("utf8")
+          prefix='<script>\n"use strict";'
+          assert s.count(prefix)==1
+          raw=s.split(prefix,1)[1].split("</script>",1)[0]
+          Path("/tmp/cikgulaju-rph-today-inline.js").write_text('"use strict";'+raw)
+          PY
+          node --check /tmp/cikgulaju-rph-today-inline.js

@@ -9,6 +9,8 @@ from tools.run_web_v1_preview import app
 from web_v1_telegram_auth_routes import _config
 from web.teacher_profile_routes import bp as teacher_profile_bp
 app.register_blueprint(teacher_profile_bp)
+from web.rph_hari_ini_web import bp as rph_hari_ini_bp
+app.register_blueprint(rph_hari_ini_bp)
 from web.web_payment_routes import bp as web_payment_bp
 app.register_blueprint(web_payment_bp)
 from web.web_referral_routes import install as install_web_referral
@@ -31,6 +33,15 @@ def web_brand_logo():
     from flask import send_file
     path = Path(__file__).resolve().parents[1] / "web_v1_static_preview" / "cikgulaju-logo.svg"
     return send_file(path, mimetype="image/svg+xml", conditional=True, max_age=86400)
+
+
+@app.get("/assets/rph-today.js")
+def daily_rph_script():
+    """Read-only timetable UI; RPH generation remains the existing native flow."""
+    from pathlib import Path
+    from flask import send_file
+    file = Path(__file__).resolve().parents[1] / "web_v1_static_preview" / "rph-today.js"
+    return send_file(file, mimetype="application/javascript", max_age=1800, conditional=True)
 
 
 @app.get("/assets/teacher-profile.js")
