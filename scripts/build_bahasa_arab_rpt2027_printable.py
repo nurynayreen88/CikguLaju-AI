@@ -212,9 +212,11 @@ def create_one(group, year, records, titles, output):
     width = (Cm(1.6), Cm(11.25), Cm(1.85), Cm(2.0), Cm(3.4), Cm(3.15), Cm(3.45))
     for unit in range(1, 5):
         unit_rows = sorted((r for r in records if int(r["unit"]) == unit), key=lambda r: int(r["pdp"]))
+        unit_heading = add_text(doc, f"UNIT {unit}  •  {titles[(year, unit)]}", bold=True, size=14, color=NAVY, space_after=4)
+        # Page-break-before never creates an orphan blank page when the prior
+        # unit fills its final page (unlike an extra empty break paragraph).
         if unit != 1:
-            doc.add_page_break()
-        add_text(doc, f"UNIT {unit}  •  {titles[(year, unit)]}", bold=True, size=14, color=NAVY, space_after=4)
+            unit_heading.paragraph_format.page_break_before = True
         add_text(doc, f"Tahun {year}  |  Kumpulan {group}  |  {len(unit_rows)} PdP  |  Tarikh diisi oleh guru mengikut jadual sebenar",
                  size=8.8, color=GREY, space_after=9)
         table = doc.add_table(rows=1, cols=7)
