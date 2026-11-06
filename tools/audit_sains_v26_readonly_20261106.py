@@ -117,6 +117,49 @@ def summarize_rows(rows: list[dict]) -> dict:
     return report
 
 
+def profile_rows_without_sequence_code(conn: sqlite3.Connection) -> dict:
+    """Report observed DB row facts only; DO NOT equate rows/weeks with PdP."""
+    conn.row_factory = sqlite3.Row
+    rows = [dict(r) for r in conn.execute(
+        """SELECT * FROM verified_pdp_sequence
+           WHERE lower(trim(subject)) IN ('sains', 'science')
+           ORDER BY id"""
+    )]
+    per_year = {}
+    for year in WORKING_TARGETS:
+        sample = [r for r in rows if str(r.get("year_label") or "").strip() == f"Tahun {year}"]
+        statuses = Counter(str(r.get("verification_status") or "").strip() or "(empty)"
+                           for r in sample)
+        sources = Counter(str(r.get("source_kind") or "").strip() or "(empty)"
+                          for r in sample)
+        possible = {(str(r.get("week_no") or ""), str(r.get("unit_code") or ""),
+                     str(r.get("unit_title") or ""), str(r.get("pdp_title") or ""))
+                    for r in sample}
+        per_year[str(year)] = {
+            "db_source_rows_NOT_PDP": len(sample),
+            "distinct_row_ids": len({r.get("id") for r in sample}),
+            "distinct_week_unit_title_combinations_NOT_PDP": len(possible),
+            "weak_sksp_rows": sum(not str(r.get("sk_code") or "").strip()
+                                   or not str(r.get("sp_code") or "").strip()
+                                   for r in sample),
+            "rows_without_textbook_ref": sum(not str(r.get("textbook_ref") or "").strip()
+                                             for r in sample),
+            "status_counts": dict(statuses),
+            "source_kind_counts": dict(sources),
+            "first_two_rows": [
+                {k: r.get(k) for k in (
+                    "id", "week_no", "theme", "unit_code", "unit_title",
+                    "pdp_title", "sk_code", "sp_code", "textbook_ref")}
+                for r in sample[:2]
+            ],
+        }
+    return {
+        "yearly_raw_source_profile": per_year,
+        "raw_source_rows_total_NOT_PDP": len(rows),
+        "note": "Source rows, titles and weeks CANNOT certify number of distinct RPH/PdP. Resolve native Telegram sequence first.",
+    }
+
+
 def audit(conn: sqlite3.Connection) -> dict:
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA query_only=ON")
@@ -134,6 +177,7 @@ def audit(conn: sqlite3.Connection) -> dict:
         return {"source": "v26.00", "release_decision": "HOLD",
                 "reason": "verified_pdp_sequence schema differs",
                 "missing_columns": sorted(required_cols - cols),
+                "raw_source_profile": profile_rows_without_sequence_code(conn),
                 "available_columns": sorted(cols),
                 "related_tables": sorted(t for t in tables if any(
                     k in t.lower() for k in ("sci", "sains", "pdp", "rpt", "sequence")))}
