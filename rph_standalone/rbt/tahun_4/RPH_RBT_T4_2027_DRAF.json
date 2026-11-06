@@ -278,7 +278,7 @@
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 1,
       "unit_label": "Unit 1: Keselamatan Bengkel",
-      "tajuk": "PdP 003: Membincangkan amalan keselamatan di bengkel: i. Kebersihan bengkel ii. Penyelenggaraan per",
+      "tajuk": "PdP 003: Membincangkan kebersihan bengkel, penyelenggaraan dan kesan kecuaian",
       "sk": [
         "1.1"
       ],
@@ -1941,7 +1941,7 @@
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 4,
       "unit_label": "Unit 4: Reka Bentuk Pembungkusan",
-      "tajuk": "PdP 019: Menghasilkan reka bentuk pembungkusan mengikut lakaran yang dibuat menggunakan bahan dan a",
+      "tajuk": "PdP 019: Membina dan membentangkan pembungkusan mengikut lakaran",
       "sk": [
         "4.1"
       ],
@@ -2149,7 +2149,7 @@
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 5,
       "unit_label": "Unit 5: Reka Bentuk Makanan",
-      "tajuk": "PdP 021: Menjana idea bagi menghasilkan lakaran bermaklumat reka bentuk makanan yang akan dihasilka",
+      "tajuk": "PdP 021: Menjana idea dan lakaran bermaklumat reka bentuk makanan",
       "sk": [
         "5.1"
       ],
@@ -3046,7 +3046,7 @@
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 6,
       "unit_label": "Unit 6: Reka Bentuk Pengaturcaraan",
-      "tajuk": "PdP 030: Menggunakan fitur-fitur untuk menggerakkan objek, memasukkan dialog, bunyi dan objek bahar",
+      "tajuk": "PdP 030: Menggunakan blok gerakan, dialog, bunyi dan watak baharu dalam Scratch",
       "sk": [
         "6.2"
       ],
