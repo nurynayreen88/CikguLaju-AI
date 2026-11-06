@@ -67,32 +67,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.2.1 melalui tugasan penerokaan serta penerangan konsep dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 5.2.1.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 5.2.1 melalui lakaran elektromekanikal, model palang, log ujian serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan, memenuhi kriteria fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang reka bentuk produk elektromekanikal; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan palang parkir dan mekanisme gear/motor dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (5.2.1) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 5.2.1. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran elektromekanikal, model palang, log ujian, memodelkan satu langkah, kemudian membimbing murid. Murid memerhati palang parkir dan mekanisme gear/motor, memilih sekurang-kurangnya tiga contoh yang tepat bagi model palang parkir bermotor voltan rendah, dan melabel ciri pada kad jawapan (SP 5.2.1)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid mengelaskan contoh, menjawab soalan situasi dan menghasilkan nota visual ringkas dengan sekurang-kurangnya dua sebab atau bukti. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid memerhati palang parkir dan mekanisme gear/motor, memilih sekurang-kurangnya tiga contoh yang tepat bagi model palang parkir bermotor voltan rendah, dan melabel ciri pada kad jawapan (SP 5.2.1). Elakkan palang menyepit jari; gunakan sumber kuasa voltan rendah."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.1."
+          "aktiviti": "Murid menyerahkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan. Guru merekod pencapaian SP 5.2.1 berdasarkan fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran model palang parkir bermotor voltan rendah, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.1.",
+      "pbd_evidens": "Murid menyerahkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan. Guru merekod pencapaian SP 5.2.1 berdasarkan fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -106,12 +106,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan",
+      "rubrik_pbd_khusus": "fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi",
+      "contoh_projek_cikgulaju": "model palang parkir bermotor voltan rendah",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 2,
@@ -138,32 +142,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.2.2 melalui tugasan penerokaan serta penerangan konsep dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 5.2.2.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 5.2.2 melalui lakaran elektromekanikal, model palang, log ujian serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan, memenuhi kriteria fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang reka bentuk produk elektromekanikal; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan palang parkir dan mekanisme gear/motor dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (5.2.2) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 5.2.2. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran elektromekanikal, model palang, log ujian, memodelkan satu langkah, kemudian membimbing murid. Secara berpasangan, murid membandingkan dua pilihan dalam situasi palang parkir dan mekanisme gear/motor, kemudian menyatakan fungsi dan justifikasi pilihan untuk model palang parkir bermotor voltan rendah (SP 5.2.2)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid mengelaskan contoh, menjawab soalan situasi dan menghasilkan nota visual ringkas dengan sekurang-kurangnya dua sebab atau bukti. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Secara berpasangan, murid membandingkan dua pilihan dalam situasi palang parkir dan mekanisme gear/motor, kemudian menyatakan fungsi dan justifikasi pilihan untuk model palang parkir bermotor voltan rendah (SP 5.2.2). Elakkan palang menyepit jari; gunakan sumber kuasa voltan rendah."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.2."
+          "aktiviti": "Murid menyerahkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan. Guru merekod pencapaian SP 5.2.2 berdasarkan fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran model palang parkir bermotor voltan rendah, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.2.",
+      "pbd_evidens": "Murid menyerahkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan. Guru merekod pencapaian SP 5.2.2 berdasarkan fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -177,12 +181,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan",
+      "rubrik_pbd_khusus": "fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi",
+      "contoh_projek_cikgulaju": "model palang parkir bermotor voltan rendah",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 3,
@@ -209,32 +217,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.2.3 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 5.2.3.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 5.2.3 melalui lakaran elektromekanikal, model palang, log ujian serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan, memenuhi kriteria fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang reka bentuk produk elektromekanikal; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan palang parkir dan mekanisme gear/motor dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (5.2.3) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 5.2.3. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran elektromekanikal, model palang, log ujian, memodelkan satu langkah, kemudian membimbing murid. Murid membina lakaran elektromekanikal, model palang, log ujian bagi model palang parkir bermotor voltan rendah, melabel setiap fungsi/arah aliran dan menyemak semula ketepatan sebelum menyerahkannya (SP 5.2.3)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid membina lakaran elektromekanikal, model palang, log ujian bagi model palang parkir bermotor voltan rendah, melabel setiap fungsi/arah aliran dan menyemak semula ketepatan sebelum menyerahkannya (SP 5.2.3). Elakkan palang menyepit jari; gunakan sumber kuasa voltan rendah."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.3."
+          "aktiviti": "Murid menyerahkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan. Guru merekod pencapaian SP 5.2.3 berdasarkan fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran model palang parkir bermotor voltan rendah, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.3.",
+      "pbd_evidens": "Murid menyerahkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan. Guru merekod pencapaian SP 5.2.3 berdasarkan fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -248,12 +256,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan",
+      "rubrik_pbd_khusus": "fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi",
+      "contoh_projek_cikgulaju": "model palang parkir bermotor voltan rendah",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 4,
@@ -280,32 +292,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 2,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.2.3 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 5.2.3.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 5.2.3 melalui lakaran elektromekanikal, model palang, log ujian serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan, memenuhi kriteria fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang reka bentuk produk elektromekanikal; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan palang parkir dan mekanisme gear/motor dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (5.2.3) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 5.2.3. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran elektromekanikal, model palang, log ujian, memodelkan satu langkah, kemudian membimbing murid. Murid membina lakaran elektromekanikal, model palang, log ujian bagi model palang parkir bermotor voltan rendah, melabel setiap fungsi/arah aliran dan menyemak semula ketepatan sebelum menyerahkannya (SP 5.2.3)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Ini sesi susulan amali/penambahbaikan ke-2; murid menggunakan rekod percubaan sebelumnya dan memperincikan hasil baharu, bukan mengulang penerangan awal. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid membina lakaran elektromekanikal, model palang, log ujian bagi model palang parkir bermotor voltan rendah, melabel setiap fungsi/arah aliran dan menyemak semula ketepatan sebelum menyerahkannya (SP 5.2.3). Elakkan palang menyepit jari; gunakan sumber kuasa voltan rendah."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.3."
+          "aktiviti": "Murid menyerahkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan. Guru merekod pencapaian SP 5.2.3 berdasarkan fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran model palang parkir bermotor voltan rendah, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.3.",
+      "pbd_evidens": "Murid menyerahkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan. Guru merekod pencapaian SP 5.2.3 berdasarkan fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -319,12 +331,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan",
+      "rubrik_pbd_khusus": "fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi",
+      "contoh_projek_cikgulaju": "model palang parkir bermotor voltan rendah",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 5,
@@ -351,32 +367,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.2.4 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 5.2.4.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 5.2.4 melalui lakaran elektromekanikal, model palang, log ujian serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan, memenuhi kriteria fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang reka bentuk produk elektromekanikal; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan palang parkir dan mekanisme gear/motor dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (5.2.4) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 5.2.4. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran elektromekanikal, model palang, log ujian, memodelkan satu langkah, kemudian membimbing murid. Murid menggunakan rubrik ringkas (fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi) untuk menilai dua versi lakaran elektromekanikal, model palang, log ujian; mereka menanda satu masalah, mencatat sebabnya dan membaiki pilihan (SP 5.2.4)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid menggunakan rubrik ringkas (fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi) untuk menilai dua versi lakaran elektromekanikal, model palang, log ujian; mereka menanda satu masalah, mencatat sebabnya dan membaiki pilihan (SP 5.2.4). Elakkan palang menyepit jari; gunakan sumber kuasa voltan rendah."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.4."
+          "aktiviti": "Murid menyerahkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan. Guru merekod pencapaian SP 5.2.4 berdasarkan fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran model palang parkir bermotor voltan rendah, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.4.",
+      "pbd_evidens": "Murid menyerahkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan. Guru merekod pencapaian SP 5.2.4 berdasarkan fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -390,12 +406,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan",
+      "rubrik_pbd_khusus": "fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi",
+      "contoh_projek_cikgulaju": "model palang parkir bermotor voltan rendah",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 6,
@@ -422,32 +442,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 2,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.2.4 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 5.2.4.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 5.2.4 melalui lakaran elektromekanikal, model palang, log ujian serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan, memenuhi kriteria fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang reka bentuk produk elektromekanikal; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan palang parkir dan mekanisme gear/motor dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (5.2.4) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 5.2.4. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran elektromekanikal, model palang, log ujian, memodelkan satu langkah, kemudian membimbing murid. Murid menggunakan rubrik ringkas (fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi) untuk menilai dua versi lakaran elektromekanikal, model palang, log ujian; mereka menanda satu masalah, mencatat sebabnya dan membaiki pilihan (SP 5.2.4)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Ini sesi susulan amali/penambahbaikan ke-2; murid menggunakan rekod percubaan sebelumnya dan memperincikan hasil baharu, bukan mengulang penerangan awal. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid menggunakan rubrik ringkas (fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi) untuk menilai dua versi lakaran elektromekanikal, model palang, log ujian; mereka menanda satu masalah, mencatat sebabnya dan membaiki pilihan (SP 5.2.4). Elakkan palang menyepit jari; gunakan sumber kuasa voltan rendah."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.4."
+          "aktiviti": "Murid menyerahkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan. Guru merekod pencapaian SP 5.2.4 berdasarkan fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran model palang parkir bermotor voltan rendah, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.4.",
+      "pbd_evidens": "Murid menyerahkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan. Guru merekod pencapaian SP 5.2.4 berdasarkan fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -461,12 +481,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan",
+      "rubrik_pbd_khusus": "fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi",
+      "contoh_projek_cikgulaju": "model palang parkir bermotor voltan rendah",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 7,
@@ -493,32 +517,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.2.5 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 5.2.5.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 5.2.5 melalui lakaran elektromekanikal, model palang, log ujian serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan, memenuhi kriteria fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang reka bentuk produk elektromekanikal; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan palang parkir dan mekanisme gear/motor dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (5.2.5) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 5.2.5. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran elektromekanikal, model palang, log ujian, memodelkan satu langkah, kemudian membimbing murid. Murid menyiapkan atau menguji lakaran elektromekanikal, model palang, log ujian mengikut lakaran dan urutan kerja; uji kefungsian model palang parkir bermotor voltan rendah dua kali, rekod dapatan dan kemaskan hasil (SP 5.2.5)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid menyiapkan atau menguji lakaran elektromekanikal, model palang, log ujian mengikut lakaran dan urutan kerja; uji kefungsian model palang parkir bermotor voltan rendah dua kali, rekod dapatan dan kemaskan hasil (SP 5.2.5). Elakkan palang menyepit jari; gunakan sumber kuasa voltan rendah."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.5."
+          "aktiviti": "Murid menyerahkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan. Guru merekod pencapaian SP 5.2.5 berdasarkan fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran model palang parkir bermotor voltan rendah, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.5.",
+      "pbd_evidens": "Murid menyerahkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan. Guru merekod pencapaian SP 5.2.5 berdasarkan fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -532,12 +556,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan",
+      "rubrik_pbd_khusus": "fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi",
+      "contoh_projek_cikgulaju": "model palang parkir bermotor voltan rendah",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 8,
@@ -564,32 +592,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 2,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.2.5 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 5.2.5.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 5.2.5 melalui lakaran elektromekanikal, model palang, log ujian serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan, memenuhi kriteria fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang reka bentuk produk elektromekanikal; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan palang parkir dan mekanisme gear/motor dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (5.2.5) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 5.2.5. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran elektromekanikal, model palang, log ujian, memodelkan satu langkah, kemudian membimbing murid. Murid menyiapkan atau menguji lakaran elektromekanikal, model palang, log ujian mengikut lakaran dan urutan kerja; uji kefungsian model palang parkir bermotor voltan rendah dua kali, rekod dapatan dan kemaskan hasil (SP 5.2.5). Sesi sambungan 2: kemas kini selepas dapatan PdP terdahulu."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Ini sesi susulan amali/penambahbaikan ke-2; murid menggunakan rekod percubaan sebelumnya dan memperincikan hasil baharu, bukan mengulang penerangan awal. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid menyiapkan atau menguji lakaran elektromekanikal, model palang, log ujian mengikut lakaran dan urutan kerja; uji kefungsian model palang parkir bermotor voltan rendah dua kali, rekod dapatan dan kemaskan hasil (SP 5.2.5). Sesi sambungan 2: kemas kini selepas dapatan PdP terdahulu. Elakkan palang menyepit jari; gunakan sumber kuasa voltan rendah."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.5."
+          "aktiviti": "Murid menyerahkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan. Guru merekod pencapaian SP 5.2.5 berdasarkan fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran model palang parkir bermotor voltan rendah, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.5.",
+      "pbd_evidens": "Murid menyerahkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan. Guru merekod pencapaian SP 5.2.5 berdasarkan fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -603,12 +631,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan",
+      "rubrik_pbd_khusus": "fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi",
+      "contoh_projek_cikgulaju": "model palang parkir bermotor voltan rendah",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 9,
@@ -635,32 +667,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 3,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.2.5 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 5.2.5.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 5.2.5 melalui lakaran elektromekanikal, model palang, log ujian serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan, memenuhi kriteria fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang reka bentuk produk elektromekanikal; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan palang parkir dan mekanisme gear/motor dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (5.2.5) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 5.2.5. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran elektromekanikal, model palang, log ujian, memodelkan satu langkah, kemudian membimbing murid. Murid menyiapkan atau menguji lakaran elektromekanikal, model palang, log ujian mengikut lakaran dan urutan kerja; uji kefungsian model palang parkir bermotor voltan rendah dua kali, rekod dapatan dan kemaskan hasil (SP 5.2.5). Sesi sambungan 3: kemas kini selepas dapatan PdP terdahulu."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Ini sesi susulan amali/penambahbaikan ke-3; murid menggunakan rekod percubaan sebelumnya dan memperincikan hasil baharu, bukan mengulang penerangan awal. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid menyiapkan atau menguji lakaran elektromekanikal, model palang, log ujian mengikut lakaran dan urutan kerja; uji kefungsian model palang parkir bermotor voltan rendah dua kali, rekod dapatan dan kemaskan hasil (SP 5.2.5). Sesi sambungan 3: kemas kini selepas dapatan PdP terdahulu. Elakkan palang menyepit jari; gunakan sumber kuasa voltan rendah."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.5."
+          "aktiviti": "Murid menyerahkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan. Guru merekod pencapaian SP 5.2.5 berdasarkan fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran model palang parkir bermotor voltan rendah, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.5.",
+      "pbd_evidens": "Murid menyerahkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan. Guru merekod pencapaian SP 5.2.5 berdasarkan fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -674,12 +706,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan",
+      "rubrik_pbd_khusus": "fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi",
+      "contoh_projek_cikgulaju": "model palang parkir bermotor voltan rendah",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 10,
@@ -706,32 +742,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "pembentangan",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.2.6 melalui tugasan penerangan hasil kerja dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 5.2.6.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 5.2.6 melalui lakaran elektromekanikal, model palang, log ujian serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan, memenuhi kriteria fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang reka bentuk produk elektromekanikal; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan palang parkir dan mekanisme gear/motor dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (5.2.6) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 5.2.6. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran elektromekanikal, model palang, log ujian, memodelkan satu langkah, kemudian membimbing murid. Murid mempamerkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan, menerangkan keputusan dan bukti ujian, kemudian menjawab satu soalan rakan dan merekod penambahbaikan (SP 5.2.6)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid membentangkan hasil kerja secara ringkas, menunjukkan bukti/fungsi, menjawab satu soalan rakan dan merekod satu cadangan penambahbaikan. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid mempamerkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan, menerangkan keputusan dan bukti ujian, kemudian menjawab satu soalan rakan dan merekod penambahbaikan (SP 5.2.6). Elakkan palang menyepit jari; gunakan sumber kuasa voltan rendah."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (rubrik pembentangan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.6."
+          "aktiviti": "Murid menyerahkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan. Guru merekod pencapaian SP 5.2.6 berdasarkan fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran model palang parkir bermotor voltan rendah, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (rubrik pembentangan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.6.",
+      "pbd_evidens": "Murid menyerahkan prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan. Guru merekod pencapaian SP 5.2.6 berdasarkan fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -745,12 +781,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "prototip yang bergerak, lakaran berlabel dan catatan penambahbaikan",
+      "rubrik_pbd_khusus": "fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi",
+      "contoh_projek_cikgulaju": "model palang parkir bermotor voltan rendah",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 11,
@@ -777,32 +817,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.5.1 melalui tugasan penerokaan serta penerangan konsep dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 6.5.1.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 6.5.1 melalui lakaran robot, carta alir, sambungan sensor dan atur cara serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan log uji sensor/gerakan dan demo prototaip atau simulasi, memenuhi kriteria fungsi sensor, logik kawalan dan uji lari berulang, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang pengenalan asas sistem robotik; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan robot berhenti apabila sensor mengesan objek dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (6.5.1) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 6.5.1. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran robot, carta alir, sambungan sensor dan atur cara, memodelkan satu langkah, kemudian membimbing murid. Murid memerhati robot berhenti apabila sensor mengesan objek, memilih sekurang-kurangnya tiga contoh yang tepat bagi robot model pengesan halangan, dan melabel ciri pada kad jawapan (SP 6.5.1)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid mengelaskan contoh, menjawab soalan situasi dan menghasilkan nota visual ringkas dengan sekurang-kurangnya dua sebab atau bukti. Guru memastikan perisian, peralatan dan bahan digunakan mengikut tatacara keselamatan."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid memerhati robot berhenti apabila sensor mengesan objek, memilih sekurang-kurangnya tiga contoh yang tepat bagi robot model pengesan halangan, dan melabel ciri pada kad jawapan (SP 6.5.1). Gunakan kit voltan rendah; uji di kawasan bebas halangan dan awasi komponen bergerak."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.1."
+          "aktiviti": "Murid menyerahkan log uji sensor/gerakan dan demo prototaip atau simulasi. Guru merekod pencapaian SP 6.5.1 berdasarkan fungsi sensor, logik kawalan dan uji lari berulang; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran robot model pengesan halangan, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.1.",
+      "pbd_evidens": "Murid menyerahkan log uji sensor/gerakan dan demo prototaip atau simulasi. Guru merekod pencapaian SP 6.5.1 berdasarkan fungsi sensor, logik kawalan dan uji lari berulang; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -816,12 +856,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "log uji sensor/gerakan dan demo prototaip atau simulasi",
+      "rubrik_pbd_khusus": "fungsi sensor, logik kawalan dan uji lari berulang",
+      "contoh_projek_cikgulaju": "robot model pengesan halangan",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 12,
@@ -848,32 +892,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.5.2 melalui tugasan penerokaan serta penerangan konsep dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 6.5.2.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 6.5.2 melalui lakaran robot, carta alir, sambungan sensor dan atur cara serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan log uji sensor/gerakan dan demo prototaip atau simulasi, memenuhi kriteria fungsi sensor, logik kawalan dan uji lari berulang, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang pengenalan asas sistem robotik; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan robot berhenti apabila sensor mengesan objek dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (6.5.2) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 6.5.2. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran robot, carta alir, sambungan sensor dan atur cara, memodelkan satu langkah, kemudian membimbing murid. Secara berpasangan, murid membandingkan dua pilihan dalam situasi robot berhenti apabila sensor mengesan objek, kemudian menyatakan fungsi dan justifikasi pilihan untuk robot model pengesan halangan (SP 6.5.2)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid mengelaskan contoh, menjawab soalan situasi dan menghasilkan nota visual ringkas dengan sekurang-kurangnya dua sebab atau bukti. Guru memastikan perisian, peralatan dan bahan digunakan mengikut tatacara keselamatan."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Secara berpasangan, murid membandingkan dua pilihan dalam situasi robot berhenti apabila sensor mengesan objek, kemudian menyatakan fungsi dan justifikasi pilihan untuk robot model pengesan halangan (SP 6.5.2). Gunakan kit voltan rendah; uji di kawasan bebas halangan dan awasi komponen bergerak."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.2."
+          "aktiviti": "Murid menyerahkan log uji sensor/gerakan dan demo prototaip atau simulasi. Guru merekod pencapaian SP 6.5.2 berdasarkan fungsi sensor, logik kawalan dan uji lari berulang; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran robot model pengesan halangan, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.2.",
+      "pbd_evidens": "Murid menyerahkan log uji sensor/gerakan dan demo prototaip atau simulasi. Guru merekod pencapaian SP 6.5.2 berdasarkan fungsi sensor, logik kawalan dan uji lari berulang; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -887,12 +931,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "log uji sensor/gerakan dan demo prototaip atau simulasi",
+      "rubrik_pbd_khusus": "fungsi sensor, logik kawalan dan uji lari berulang",
+      "contoh_projek_cikgulaju": "robot model pengesan halangan",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 13,
@@ -919,32 +967,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.5.3 melalui tugasan penerokaan serta penerangan konsep dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 6.5.3.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 6.5.3 melalui lakaran robot, carta alir, sambungan sensor dan atur cara serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan log uji sensor/gerakan dan demo prototaip atau simulasi, memenuhi kriteria fungsi sensor, logik kawalan dan uji lari berulang, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang pengenalan asas sistem robotik; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan robot berhenti apabila sensor mengesan objek dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (6.5.3) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 6.5.3. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran robot, carta alir, sambungan sensor dan atur cara, memodelkan satu langkah, kemudian membimbing murid. Secara berpasangan, murid membandingkan dua pilihan dalam situasi robot berhenti apabila sensor mengesan objek, kemudian menyatakan fungsi dan justifikasi pilihan untuk robot model pengesan halangan (SP 6.5.3)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid mengelaskan contoh, menjawab soalan situasi dan menghasilkan nota visual ringkas dengan sekurang-kurangnya dua sebab atau bukti. Guru memastikan perisian, peralatan dan bahan digunakan mengikut tatacara keselamatan."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Secara berpasangan, murid membandingkan dua pilihan dalam situasi robot berhenti apabila sensor mengesan objek, kemudian menyatakan fungsi dan justifikasi pilihan untuk robot model pengesan halangan (SP 6.5.3). Gunakan kit voltan rendah; uji di kawasan bebas halangan dan awasi komponen bergerak."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.3."
+          "aktiviti": "Murid menyerahkan log uji sensor/gerakan dan demo prototaip atau simulasi. Guru merekod pencapaian SP 6.5.3 berdasarkan fungsi sensor, logik kawalan dan uji lari berulang; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran robot model pengesan halangan, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.3.",
+      "pbd_evidens": "Murid menyerahkan log uji sensor/gerakan dan demo prototaip atau simulasi. Guru merekod pencapaian SP 6.5.3 berdasarkan fungsi sensor, logik kawalan dan uji lari berulang; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -958,12 +1006,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "log uji sensor/gerakan dan demo prototaip atau simulasi",
+      "rubrik_pbd_khusus": "fungsi sensor, logik kawalan dan uji lari berulang",
+      "contoh_projek_cikgulaju": "robot model pengesan halangan",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 14,
@@ -990,32 +1042,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.5.4 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 6.5.4.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 6.5.4 melalui lakaran robot, carta alir, sambungan sensor dan atur cara serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan log uji sensor/gerakan dan demo prototaip atau simulasi, memenuhi kriteria fungsi sensor, logik kawalan dan uji lari berulang, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang pengenalan asas sistem robotik; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan robot berhenti apabila sensor mengesan objek dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (6.5.4) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 6.5.4. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran robot, carta alir, sambungan sensor dan atur cara, memodelkan satu langkah, kemudian membimbing murid. Murid membina lakaran robot, carta alir, sambungan sensor dan atur cara bagi robot model pengesan halangan, melabel setiap fungsi/arah aliran dan menyemak semula ketepatan sebelum menyerahkannya (SP 6.5.4)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Guru memastikan perisian, peralatan dan bahan digunakan mengikut tatacara keselamatan."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid membina lakaran robot, carta alir, sambungan sensor dan atur cara bagi robot model pengesan halangan, melabel setiap fungsi/arah aliran dan menyemak semula ketepatan sebelum menyerahkannya (SP 6.5.4). Gunakan kit voltan rendah; uji di kawasan bebas halangan dan awasi komponen bergerak."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.4."
+          "aktiviti": "Murid menyerahkan log uji sensor/gerakan dan demo prototaip atau simulasi. Guru merekod pencapaian SP 6.5.4 berdasarkan fungsi sensor, logik kawalan dan uji lari berulang; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran robot model pengesan halangan, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.4.",
+      "pbd_evidens": "Murid menyerahkan log uji sensor/gerakan dan demo prototaip atau simulasi. Guru merekod pencapaian SP 6.5.4 berdasarkan fungsi sensor, logik kawalan dan uji lari berulang; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1029,12 +1081,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "log uji sensor/gerakan dan demo prototaip atau simulasi",
+      "rubrik_pbd_khusus": "fungsi sensor, logik kawalan dan uji lari berulang",
+      "contoh_projek_cikgulaju": "robot model pengesan halangan",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 15,
@@ -1061,32 +1117,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.5.5 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 6.5.5.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 6.5.5 melalui lakaran robot, carta alir, sambungan sensor dan atur cara serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan log uji sensor/gerakan dan demo prototaip atau simulasi, memenuhi kriteria fungsi sensor, logik kawalan dan uji lari berulang, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang pengenalan asas sistem robotik; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan robot berhenti apabila sensor mengesan objek dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (6.5.5) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 6.5.5. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran robot, carta alir, sambungan sensor dan atur cara, memodelkan satu langkah, kemudian membimbing murid. Murid menggunakan rubrik ringkas (fungsi sensor, logik kawalan dan uji lari berulang) untuk menilai dua versi lakaran robot, carta alir, sambungan sensor dan atur cara; mereka menanda satu masalah, mencatat sebabnya dan membaiki pilihan (SP 6.5.5)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Guru memastikan perisian, peralatan dan bahan digunakan mengikut tatacara keselamatan."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid menggunakan rubrik ringkas (fungsi sensor, logik kawalan dan uji lari berulang) untuk menilai dua versi lakaran robot, carta alir, sambungan sensor dan atur cara; mereka menanda satu masalah, mencatat sebabnya dan membaiki pilihan (SP 6.5.5). Gunakan kit voltan rendah; uji di kawasan bebas halangan dan awasi komponen bergerak."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.5."
+          "aktiviti": "Murid menyerahkan log uji sensor/gerakan dan demo prototaip atau simulasi. Guru merekod pencapaian SP 6.5.5 berdasarkan fungsi sensor, logik kawalan dan uji lari berulang; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran robot model pengesan halangan, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.5.",
+      "pbd_evidens": "Murid menyerahkan log uji sensor/gerakan dan demo prototaip atau simulasi. Guru merekod pencapaian SP 6.5.5 berdasarkan fungsi sensor, logik kawalan dan uji lari berulang; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1100,12 +1156,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "log uji sensor/gerakan dan demo prototaip atau simulasi",
+      "rubrik_pbd_khusus": "fungsi sensor, logik kawalan dan uji lari berulang",
+      "contoh_projek_cikgulaju": "robot model pengesan halangan",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 16,
@@ -1132,32 +1192,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.5.6 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 6.5.6.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 6.5.6 melalui lakaran robot, carta alir, sambungan sensor dan atur cara serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan log uji sensor/gerakan dan demo prototaip atau simulasi, memenuhi kriteria fungsi sensor, logik kawalan dan uji lari berulang, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang pengenalan asas sistem robotik; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan robot berhenti apabila sensor mengesan objek dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (6.5.6) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 6.5.6. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran robot, carta alir, sambungan sensor dan atur cara, memodelkan satu langkah, kemudian membimbing murid. Murid membina lakaran robot, carta alir, sambungan sensor dan atur cara bagi robot model pengesan halangan, melabel setiap fungsi/arah aliran dan menyemak semula ketepatan sebelum menyerahkannya (SP 6.5.6)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Guru memastikan perisian, peralatan dan bahan digunakan mengikut tatacara keselamatan."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid membina lakaran robot, carta alir, sambungan sensor dan atur cara bagi robot model pengesan halangan, melabel setiap fungsi/arah aliran dan menyemak semula ketepatan sebelum menyerahkannya (SP 6.5.6). Gunakan kit voltan rendah; uji di kawasan bebas halangan dan awasi komponen bergerak."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.6."
+          "aktiviti": "Murid menyerahkan log uji sensor/gerakan dan demo prototaip atau simulasi. Guru merekod pencapaian SP 6.5.6 berdasarkan fungsi sensor, logik kawalan dan uji lari berulang; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran robot model pengesan halangan, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.6.",
+      "pbd_evidens": "Murid menyerahkan log uji sensor/gerakan dan demo prototaip atau simulasi. Guru merekod pencapaian SP 6.5.6 berdasarkan fungsi sensor, logik kawalan dan uji lari berulang; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1171,12 +1231,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "log uji sensor/gerakan dan demo prototaip atau simulasi",
+      "rubrik_pbd_khusus": "fungsi sensor, logik kawalan dan uji lari berulang",
+      "contoh_projek_cikgulaju": "robot model pengesan halangan",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 17,
@@ -1203,32 +1267,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.5.7 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 6.5.7.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 6.5.7 melalui lakaran robot, carta alir, sambungan sensor dan atur cara serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan log uji sensor/gerakan dan demo prototaip atau simulasi, memenuhi kriteria fungsi sensor, logik kawalan dan uji lari berulang, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang pengenalan asas sistem robotik; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan robot berhenti apabila sensor mengesan objek dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (6.5.7) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 6.5.7. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran robot, carta alir, sambungan sensor dan atur cara, memodelkan satu langkah, kemudian membimbing murid. Murid membina lakaran robot, carta alir, sambungan sensor dan atur cara bagi robot model pengesan halangan, melabel setiap fungsi/arah aliran dan menyemak semula ketepatan sebelum menyerahkannya (SP 6.5.7)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Guru memastikan perisian, peralatan dan bahan digunakan mengikut tatacara keselamatan."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid membina lakaran robot, carta alir, sambungan sensor dan atur cara bagi robot model pengesan halangan, melabel setiap fungsi/arah aliran dan menyemak semula ketepatan sebelum menyerahkannya (SP 6.5.7). Gunakan kit voltan rendah; uji di kawasan bebas halangan dan awasi komponen bergerak."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.7."
+          "aktiviti": "Murid menyerahkan log uji sensor/gerakan dan demo prototaip atau simulasi. Guru merekod pencapaian SP 6.5.7 berdasarkan fungsi sensor, logik kawalan dan uji lari berulang; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran robot model pengesan halangan, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.7.",
+      "pbd_evidens": "Murid menyerahkan log uji sensor/gerakan dan demo prototaip atau simulasi. Guru merekod pencapaian SP 6.5.7 berdasarkan fungsi sensor, logik kawalan dan uji lari berulang; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1242,12 +1306,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "log uji sensor/gerakan dan demo prototaip atau simulasi",
+      "rubrik_pbd_khusus": "fungsi sensor, logik kawalan dan uji lari berulang",
+      "contoh_projek_cikgulaju": "robot model pengesan halangan",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 18,
@@ -1274,32 +1342,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "amali",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.5.8 melalui tugasan penghasilan dan ujian produk dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 6.5.8.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 6.5.8 melalui lakaran robot, carta alir, sambungan sensor dan atur cara serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan log uji sensor/gerakan dan demo prototaip atau simulasi, memenuhi kriteria fungsi sensor, logik kawalan dan uji lari berulang, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang pengenalan asas sistem robotik; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan robot berhenti apabila sensor mengesan objek dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (6.5.8) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 6.5.8. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran robot, carta alir, sambungan sensor dan atur cara, memodelkan satu langkah, kemudian membimbing murid. Murid menyiapkan atau menguji lakaran robot, carta alir, sambungan sensor dan atur cara mengikut lakaran dan urutan kerja; uji kefungsian robot model pengesan halangan dua kali, rekod dapatan dan kemaskan hasil (SP 6.5.8)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menyiapkan bahagian projek berdasarkan lakaran dan urutan kerja, menguji hasil, merekod penambahbaikan serta mengemas alat dengan selamat. Guru memastikan perisian, peralatan dan bahan digunakan mengikut tatacara keselamatan."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid menyiapkan atau menguji lakaran robot, carta alir, sambungan sensor dan atur cara mengikut lakaran dan urutan kerja; uji kefungsian robot model pengesan halangan dua kali, rekod dapatan dan kemaskan hasil (SP 6.5.8). Gunakan kit voltan rendah; uji di kawasan bebas halangan dan awasi komponen bergerak."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (fungsi prototaip dan rekod ujian) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.8."
+          "aktiviti": "Murid menyerahkan log uji sensor/gerakan dan demo prototaip atau simulasi. Guru merekod pencapaian SP 6.5.8 berdasarkan fungsi sensor, logik kawalan dan uji lari berulang; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran robot model pengesan halangan, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (fungsi prototaip dan rekod ujian) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.8.",
+      "pbd_evidens": "Murid menyerahkan log uji sensor/gerakan dan demo prototaip atau simulasi. Guru merekod pencapaian SP 6.5.8 berdasarkan fungsi sensor, logik kawalan dan uji lari berulang; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1313,12 +1381,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "log uji sensor/gerakan dan demo prototaip atau simulasi",
+      "rubrik_pbd_khusus": "fungsi sensor, logik kawalan dan uji lari berulang",
+      "contoh_projek_cikgulaju": "robot model pengesan halangan",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 19,
@@ -1345,32 +1417,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "amali",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.5.9 melalui tugasan penghasilan dan ujian produk dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 6.5.9.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 6.5.9 melalui lakaran robot, carta alir, sambungan sensor dan atur cara serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan log uji sensor/gerakan dan demo prototaip atau simulasi, memenuhi kriteria fungsi sensor, logik kawalan dan uji lari berulang, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang pengenalan asas sistem robotik; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan robot berhenti apabila sensor mengesan objek dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (6.5.9) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 6.5.9. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran robot, carta alir, sambungan sensor dan atur cara, memodelkan satu langkah, kemudian membimbing murid. Murid menyiapkan atau menguji lakaran robot, carta alir, sambungan sensor dan atur cara mengikut lakaran dan urutan kerja; uji kefungsian robot model pengesan halangan dua kali, rekod dapatan dan kemaskan hasil (SP 6.5.9)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menyiapkan bahagian projek berdasarkan lakaran dan urutan kerja, menguji hasil, merekod penambahbaikan serta mengemas alat dengan selamat. Guru memastikan perisian, peralatan dan bahan digunakan mengikut tatacara keselamatan."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid menyiapkan atau menguji lakaran robot, carta alir, sambungan sensor dan atur cara mengikut lakaran dan urutan kerja; uji kefungsian robot model pengesan halangan dua kali, rekod dapatan dan kemaskan hasil (SP 6.5.9). Gunakan kit voltan rendah; uji di kawasan bebas halangan dan awasi komponen bergerak."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (fungsi prototaip dan rekod ujian) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.9."
+          "aktiviti": "Murid menyerahkan log uji sensor/gerakan dan demo prototaip atau simulasi. Guru merekod pencapaian SP 6.5.9 berdasarkan fungsi sensor, logik kawalan dan uji lari berulang; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran robot model pengesan halangan, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (fungsi prototaip dan rekod ujian) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.9.",
+      "pbd_evidens": "Murid menyerahkan log uji sensor/gerakan dan demo prototaip atau simulasi. Guru merekod pencapaian SP 6.5.9 berdasarkan fungsi sensor, logik kawalan dan uji lari berulang; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1384,12 +1456,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "log uji sensor/gerakan dan demo prototaip atau simulasi",
+      "rubrik_pbd_khusus": "fungsi sensor, logik kawalan dan uji lari berulang",
+      "contoh_projek_cikgulaju": "robot model pengesan halangan",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 20,
@@ -1416,32 +1492,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "pembentangan",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.5.10 melalui tugasan penerangan hasil kerja dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 6.5.10.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 6.5.10 melalui lakaran robot, carta alir, sambungan sensor dan atur cara serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan log uji sensor/gerakan dan demo prototaip atau simulasi, memenuhi kriteria fungsi sensor, logik kawalan dan uji lari berulang, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang pengenalan asas sistem robotik; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan robot berhenti apabila sensor mengesan objek dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (6.5.10) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 6.5.10. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran robot, carta alir, sambungan sensor dan atur cara, memodelkan satu langkah, kemudian membimbing murid. Murid mempamerkan log uji sensor/gerakan dan demo prototaip atau simulasi, menerangkan keputusan dan bukti ujian, kemudian menjawab satu soalan rakan dan merekod penambahbaikan (SP 6.5.10)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid membentangkan hasil kerja secara ringkas, menunjukkan bukti/fungsi, menjawab satu soalan rakan dan merekod satu cadangan penambahbaikan. Guru memastikan perisian, peralatan dan bahan digunakan mengikut tatacara keselamatan."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid mempamerkan log uji sensor/gerakan dan demo prototaip atau simulasi, menerangkan keputusan dan bukti ujian, kemudian menjawab satu soalan rakan dan merekod penambahbaikan (SP 6.5.10). Gunakan kit voltan rendah; uji di kawasan bebas halangan dan awasi komponen bergerak."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (rubrik pembentangan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.10."
+          "aktiviti": "Murid menyerahkan log uji sensor/gerakan dan demo prototaip atau simulasi. Guru merekod pencapaian SP 6.5.10 berdasarkan fungsi sensor, logik kawalan dan uji lari berulang; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran robot model pengesan halangan, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (rubrik pembentangan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.10.",
+      "pbd_evidens": "Murid menyerahkan log uji sensor/gerakan dan demo prototaip atau simulasi. Guru merekod pencapaian SP 6.5.10 berdasarkan fungsi sensor, logik kawalan dan uji lari berulang; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1455,12 +1531,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "log uji sensor/gerakan dan demo prototaip atau simulasi",
+      "rubrik_pbd_khusus": "fungsi sensor, logik kawalan dan uji lari berulang",
+      "contoh_projek_cikgulaju": "robot model pengesan halangan",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 21,
@@ -1487,32 +1567,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 8.1.1 melalui tugasan penerokaan serta penerangan konsep dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 8.1.1.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 8.1.1 melalui lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi, memenuhi kriteria padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang penghasilan produk; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan bekas tanaman dengan pengesan aras air dan lampu amaran dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (8.1.1) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 8.1.1. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi, memodelkan satu langkah, kemudian membimbing murid. Murid memerhati bekas tanaman dengan pengesan aras air dan lampu amaran, memilih sekurang-kurangnya tiga contoh yang tepat bagi model penunjuk paras air automatik untuk tanaman, dan melabel ciri pada kad jawapan (SP 8.1.1)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid mengelaskan contoh, menjawab soalan situasi dan menghasilkan nota visual ringkas dengan sekurang-kurangnya dua sebab atau bukti. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid memerhati bekas tanaman dengan pengesan aras air dan lampu amaran, memilih sekurang-kurangnya tiga contoh yang tepat bagi model penunjuk paras air automatik untuk tanaman, dan melabel ciri pada kad jawapan (SP 8.1.1). Bahagian elektrik kekal voltan rendah serta diasingkan daripada air."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.1."
+          "aktiviti": "Murid menyerahkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi. Guru merekod pencapaian SP 8.1.1 berdasarkan padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran model penunjuk paras air automatik untuk tanaman, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.1.",
+      "pbd_evidens": "Murid menyerahkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi. Guru merekod pencapaian SP 8.1.1 berdasarkan padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1526,12 +1606,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi",
+      "rubrik_pbd_khusus": "padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan",
+      "contoh_projek_cikgulaju": "model penunjuk paras air automatik untuk tanaman",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 22,
@@ -1558,32 +1642,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 8.1.2 melalui tugasan penerokaan serta penerangan konsep dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 8.1.2.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 8.1.2 melalui lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi, memenuhi kriteria padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang penghasilan produk; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan bekas tanaman dengan pengesan aras air dan lampu amaran dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (8.1.2) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 8.1.2. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi, memodelkan satu langkah, kemudian membimbing murid. Secara berpasangan, murid membandingkan dua pilihan dalam situasi bekas tanaman dengan pengesan aras air dan lampu amaran, kemudian menyatakan fungsi dan justifikasi pilihan untuk model penunjuk paras air automatik untuk tanaman (SP 8.1.2)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid mengelaskan contoh, menjawab soalan situasi dan menghasilkan nota visual ringkas dengan sekurang-kurangnya dua sebab atau bukti. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Secara berpasangan, murid membandingkan dua pilihan dalam situasi bekas tanaman dengan pengesan aras air dan lampu amaran, kemudian menyatakan fungsi dan justifikasi pilihan untuk model penunjuk paras air automatik untuk tanaman (SP 8.1.2). Bahagian elektrik kekal voltan rendah serta diasingkan daripada air."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.2."
+          "aktiviti": "Murid menyerahkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi. Guru merekod pencapaian SP 8.1.2 berdasarkan padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran model penunjuk paras air automatik untuk tanaman, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.2.",
+      "pbd_evidens": "Murid menyerahkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi. Guru merekod pencapaian SP 8.1.2 berdasarkan padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1597,12 +1681,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi",
+      "rubrik_pbd_khusus": "padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan",
+      "contoh_projek_cikgulaju": "model penunjuk paras air automatik untuk tanaman",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 23,
@@ -1629,32 +1717,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 8.1.3 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 8.1.3.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 8.1.3 melalui lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi, memenuhi kriteria padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang penghasilan produk; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan bekas tanaman dengan pengesan aras air dan lampu amaran dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (8.1.3) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 8.1.3. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi, memodelkan satu langkah, kemudian membimbing murid. Murid membina lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi bagi model penunjuk paras air automatik untuk tanaman, melabel setiap fungsi/arah aliran dan menyemak semula ketepatan sebelum menyerahkannya (SP 8.1.3)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid membina lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi bagi model penunjuk paras air automatik untuk tanaman, melabel setiap fungsi/arah aliran dan menyemak semula ketepatan sebelum menyerahkannya (SP 8.1.3). Bahagian elektrik kekal voltan rendah serta diasingkan daripada air."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.3."
+          "aktiviti": "Murid menyerahkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi. Guru merekod pencapaian SP 8.1.3 berdasarkan padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran model penunjuk paras air automatik untuk tanaman, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.3.",
+      "pbd_evidens": "Murid menyerahkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi. Guru merekod pencapaian SP 8.1.3 berdasarkan padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1668,12 +1756,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi",
+      "rubrik_pbd_khusus": "padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan",
+      "contoh_projek_cikgulaju": "model penunjuk paras air automatik untuk tanaman",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 24,
@@ -1700,32 +1792,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 2,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 8.1.3 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 8.1.3.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 8.1.3 melalui lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi, memenuhi kriteria padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang penghasilan produk; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan bekas tanaman dengan pengesan aras air dan lampu amaran dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (8.1.3) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 8.1.3. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi, memodelkan satu langkah, kemudian membimbing murid. Murid membina lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi bagi model penunjuk paras air automatik untuk tanaman, melabel setiap fungsi/arah aliran dan menyemak semula ketepatan sebelum menyerahkannya (SP 8.1.3)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Ini sesi susulan amali/penambahbaikan ke-2; murid menggunakan rekod percubaan sebelumnya dan memperincikan hasil baharu, bukan mengulang penerangan awal. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid membina lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi bagi model penunjuk paras air automatik untuk tanaman, melabel setiap fungsi/arah aliran dan menyemak semula ketepatan sebelum menyerahkannya (SP 8.1.3). Bahagian elektrik kekal voltan rendah serta diasingkan daripada air."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.3."
+          "aktiviti": "Murid menyerahkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi. Guru merekod pencapaian SP 8.1.3 berdasarkan padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran model penunjuk paras air automatik untuk tanaman, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.3.",
+      "pbd_evidens": "Murid menyerahkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi. Guru merekod pencapaian SP 8.1.3 berdasarkan padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1739,12 +1831,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi",
+      "rubrik_pbd_khusus": "padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan",
+      "contoh_projek_cikgulaju": "model penunjuk paras air automatik untuk tanaman",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 25,
@@ -1771,32 +1867,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 8.1.4 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 8.1.4.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 8.1.4 melalui lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi, memenuhi kriteria padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang penghasilan produk; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan bekas tanaman dengan pengesan aras air dan lampu amaran dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (8.1.4) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 8.1.4. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi, memodelkan satu langkah, kemudian membimbing murid. Murid menggunakan rubrik ringkas (padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan) untuk menilai dua versi lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi; mereka menanda satu masalah, mencatat sebabnya dan membaiki pilihan (SP 8.1.4)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid menggunakan rubrik ringkas (padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan) untuk menilai dua versi lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi; mereka menanda satu masalah, mencatat sebabnya dan membaiki pilihan (SP 8.1.4). Bahagian elektrik kekal voltan rendah serta diasingkan daripada air."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.4."
+          "aktiviti": "Murid menyerahkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi. Guru merekod pencapaian SP 8.1.4 berdasarkan padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran model penunjuk paras air automatik untuk tanaman, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.4.",
+      "pbd_evidens": "Murid menyerahkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi. Guru merekod pencapaian SP 8.1.4 berdasarkan padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1810,12 +1906,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi",
+      "rubrik_pbd_khusus": "padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan",
+      "contoh_projek_cikgulaju": "model penunjuk paras air automatik untuk tanaman",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 26,
@@ -1842,32 +1942,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "kos",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 8.1.5 melalui tugasan pengiraan kos bahan dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 8.1.5.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 8.1.5 melalui lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi, memenuhi kriteria padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang penghasilan produk; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan bekas tanaman dengan pengesan aras air dan lampu amaran dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (8.1.5) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 8.1.5. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi, memodelkan satu langkah, kemudian membimbing murid. Murid menyenaraikan bahan sebenar yang diperlukan untuk model penunjuk paras air automatik untuk tanaman, kuantiti, harga seunit dan jumlah; mereka menyemak pilihan yang lebih jimat serta selamat (SP 8.1.5)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menyenaraikan bahan/komponen, kuantiti dan anggaran kos dalam jadual serta menyemak jumlah dan kesesuaian pilihan. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid menyenaraikan bahan sebenar yang diperlukan untuk model penunjuk paras air automatik untuk tanaman, kuantiti, harga seunit dan jumlah; mereka menyemak pilihan yang lebih jimat serta selamat (SP 8.1.5). Bahagian elektrik kekal voltan rendah serta diasingkan daripada air."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (jadual anggaran kos) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.5."
+          "aktiviti": "Murid menyerahkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi. Guru merekod pencapaian SP 8.1.5 berdasarkan padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran model penunjuk paras air automatik untuk tanaman, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (jadual anggaran kos) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.5.",
+      "pbd_evidens": "Murid menyerahkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi. Guru merekod pencapaian SP 8.1.5 berdasarkan padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1881,12 +1981,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi",
+      "rubrik_pbd_khusus": "padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan",
+      "contoh_projek_cikgulaju": "model penunjuk paras air automatik untuk tanaman",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 27,
@@ -1913,32 +2017,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "amali",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 8.1.6 melalui tugasan penghasilan dan ujian produk dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 8.1.6.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 8.1.6 melalui lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi, memenuhi kriteria padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang penghasilan produk; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan bekas tanaman dengan pengesan aras air dan lampu amaran dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (8.1.6) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 8.1.6. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi, memodelkan satu langkah, kemudian membimbing murid. Murid menyiapkan atau menguji lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi mengikut lakaran dan urutan kerja; uji kefungsian model penunjuk paras air automatik untuk tanaman dua kali, rekod dapatan dan kemaskan hasil (SP 8.1.6)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menyiapkan bahagian projek berdasarkan lakaran dan urutan kerja, menguji hasil, merekod penambahbaikan serta mengemas alat dengan selamat. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid menyiapkan atau menguji lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi mengikut lakaran dan urutan kerja; uji kefungsian model penunjuk paras air automatik untuk tanaman dua kali, rekod dapatan dan kemaskan hasil (SP 8.1.6). Bahagian elektrik kekal voltan rendah serta diasingkan daripada air."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (fungsi prototaip dan rekod ujian) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.6."
+          "aktiviti": "Murid menyerahkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi. Guru merekod pencapaian SP 8.1.6 berdasarkan padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran model penunjuk paras air automatik untuk tanaman, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (fungsi prototaip dan rekod ujian) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.6.",
+      "pbd_evidens": "Murid menyerahkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi. Guru merekod pencapaian SP 8.1.6 berdasarkan padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1952,12 +2056,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi",
+      "rubrik_pbd_khusus": "padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan",
+      "contoh_projek_cikgulaju": "model penunjuk paras air automatik untuk tanaman",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 28,
@@ -1984,32 +2092,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 2,
       "aktiviti_kategori": "amali",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 8.1.6 melalui tugasan penghasilan dan ujian produk dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 8.1.6.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 8.1.6 melalui lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi, memenuhi kriteria padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang penghasilan produk; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan bekas tanaman dengan pengesan aras air dan lampu amaran dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (8.1.6) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 8.1.6. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi, memodelkan satu langkah, kemudian membimbing murid. Murid menyiapkan atau menguji lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi mengikut lakaran dan urutan kerja; uji kefungsian model penunjuk paras air automatik untuk tanaman dua kali, rekod dapatan dan kemaskan hasil (SP 8.1.6). Sesi sambungan 2: kemas kini selepas dapatan PdP terdahulu."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menyiapkan bahagian projek berdasarkan lakaran dan urutan kerja, menguji hasil, merekod penambahbaikan serta mengemas alat dengan selamat. Ini sesi susulan amali/penambahbaikan ke-2; murid menggunakan rekod percubaan sebelumnya dan memperincikan hasil baharu, bukan mengulang penerangan awal. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid menyiapkan atau menguji lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi mengikut lakaran dan urutan kerja; uji kefungsian model penunjuk paras air automatik untuk tanaman dua kali, rekod dapatan dan kemaskan hasil (SP 8.1.6). Sesi sambungan 2: kemas kini selepas dapatan PdP terdahulu. Bahagian elektrik kekal voltan rendah serta diasingkan daripada air."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (fungsi prototaip dan rekod ujian) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.6."
+          "aktiviti": "Murid menyerahkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi. Guru merekod pencapaian SP 8.1.6 berdasarkan padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran model penunjuk paras air automatik untuk tanaman, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (fungsi prototaip dan rekod ujian) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.6.",
+      "pbd_evidens": "Murid menyerahkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi. Guru merekod pencapaian SP 8.1.6 berdasarkan padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2023,12 +2131,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi",
+      "rubrik_pbd_khusus": "padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan",
+      "contoh_projek_cikgulaju": "model penunjuk paras air automatik untuk tanaman",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 29,
@@ -2055,32 +2167,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 3,
       "aktiviti_kategori": "amali",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 8.1.6 melalui tugasan penghasilan dan ujian produk dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 8.1.6.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 8.1.6 melalui lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi, memenuhi kriteria padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang penghasilan produk; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan bekas tanaman dengan pengesan aras air dan lampu amaran dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (8.1.6) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 8.1.6. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi, memodelkan satu langkah, kemudian membimbing murid. Murid menyiapkan atau menguji lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi mengikut lakaran dan urutan kerja; uji kefungsian model penunjuk paras air automatik untuk tanaman dua kali, rekod dapatan dan kemaskan hasil (SP 8.1.6). Sesi sambungan 3: kemas kini selepas dapatan PdP terdahulu."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menyiapkan bahagian projek berdasarkan lakaran dan urutan kerja, menguji hasil, merekod penambahbaikan serta mengemas alat dengan selamat. Ini sesi susulan amali/penambahbaikan ke-3; murid menggunakan rekod percubaan sebelumnya dan memperincikan hasil baharu, bukan mengulang penerangan awal. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid menyiapkan atau menguji lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi mengikut lakaran dan urutan kerja; uji kefungsian model penunjuk paras air automatik untuk tanaman dua kali, rekod dapatan dan kemaskan hasil (SP 8.1.6). Sesi sambungan 3: kemas kini selepas dapatan PdP terdahulu. Bahagian elektrik kekal voltan rendah serta diasingkan daripada air."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (fungsi prototaip dan rekod ujian) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.6."
+          "aktiviti": "Murid menyerahkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi. Guru merekod pencapaian SP 8.1.6 berdasarkan padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran model penunjuk paras air automatik untuk tanaman, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (fungsi prototaip dan rekod ujian) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.6.",
+      "pbd_evidens": "Murid menyerahkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi. Guru merekod pencapaian SP 8.1.6 berdasarkan padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2094,12 +2206,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi",
+      "rubrik_pbd_khusus": "padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan",
+      "contoh_projek_cikgulaju": "model penunjuk paras air automatik untuk tanaman",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 30,
@@ -2126,32 +2242,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 4,
       "aktiviti_kategori": "amali",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 8.1.6 melalui tugasan penghasilan dan ujian produk dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 8.1.6.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 8.1.6 melalui lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi, memenuhi kriteria padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang penghasilan produk; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan bekas tanaman dengan pengesan aras air dan lampu amaran dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (8.1.6) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 8.1.6. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi, memodelkan satu langkah, kemudian membimbing murid. Murid menyiapkan atau menguji lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi mengikut lakaran dan urutan kerja; uji kefungsian model penunjuk paras air automatik untuk tanaman dua kali, rekod dapatan dan kemaskan hasil (SP 8.1.6). Sesi sambungan 4: kemas kini selepas dapatan PdP terdahulu."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menyiapkan bahagian projek berdasarkan lakaran dan urutan kerja, menguji hasil, merekod penambahbaikan serta mengemas alat dengan selamat. Ini sesi susulan amali/penambahbaikan ke-4; murid menggunakan rekod percubaan sebelumnya dan memperincikan hasil baharu, bukan mengulang penerangan awal. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid menyiapkan atau menguji lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi mengikut lakaran dan urutan kerja; uji kefungsian model penunjuk paras air automatik untuk tanaman dua kali, rekod dapatan dan kemaskan hasil (SP 8.1.6). Sesi sambungan 4: kemas kini selepas dapatan PdP terdahulu. Bahagian elektrik kekal voltan rendah serta diasingkan daripada air."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (fungsi prototaip dan rekod ujian) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.6."
+          "aktiviti": "Murid menyerahkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi. Guru merekod pencapaian SP 8.1.6 berdasarkan padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran model penunjuk paras air automatik untuk tanaman, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (fungsi prototaip dan rekod ujian) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.6.",
+      "pbd_evidens": "Murid menyerahkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi. Guru merekod pencapaian SP 8.1.6 berdasarkan padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2165,12 +2281,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi",
+      "rubrik_pbd_khusus": "padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan",
+      "contoh_projek_cikgulaju": "model penunjuk paras air automatik untuk tanaman",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 31,
@@ -2197,32 +2317,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 8.1.7 melalui tugasan penerokaan serta penerangan konsep dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 8.1.7.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 8.1.7 melalui lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi, memenuhi kriteria padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang penghasilan produk; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan bekas tanaman dengan pengesan aras air dan lampu amaran dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (8.1.7) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 8.1.7. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi, memodelkan satu langkah, kemudian membimbing murid. Murid mempamerkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi, menerangkan keputusan dan bukti ujian, kemudian menjawab satu soalan rakan dan merekod penambahbaikan (SP 8.1.7)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid mengelaskan contoh, menjawab soalan situasi dan menghasilkan nota visual ringkas dengan sekurang-kurangnya dua sebab atau bukti. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid mempamerkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi, menerangkan keputusan dan bukti ujian, kemudian menjawab satu soalan rakan dan merekod penambahbaikan (SP 8.1.7). Bahagian elektrik kekal voltan rendah serta diasingkan daripada air."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.7."
+          "aktiviti": "Murid menyerahkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi. Guru merekod pencapaian SP 8.1.7 berdasarkan padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran model penunjuk paras air automatik untuk tanaman, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.7.",
+      "pbd_evidens": "Murid menyerahkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi. Guru merekod pencapaian SP 8.1.7 berdasarkan padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2236,12 +2356,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi",
+      "rubrik_pbd_khusus": "padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan",
+      "contoh_projek_cikgulaju": "model penunjuk paras air automatik untuk tanaman",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     },
     {
       "pdp": 32,
@@ -2268,32 +2392,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 2,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 8.1.7 melalui tugasan penerokaan serta penerangan konsep dengan bimbingan guru.",
-      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 8.1.7.",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan hasil pembelajaran SP 8.1.7 melalui lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi serta menjelaskan sekurang-kurangnya satu sebab keputusan reka bentuk.",
+      "kriteria_kejayaan": "Murid menghasilkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi, memenuhi kriteria padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan, dan menunjukkan amalan kerja selamat mengikut kesesuaian tugasan.",
       "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang penghasilan produk; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+          "aktiviti": "Guru memaparkan bekas tanaman dengan pengesan aras air dan lampu amaran dan meminta murid menyatakan satu keperluan pengguna. Guru menerangkan hasil PdP (8.1.7) serta mengingatkan tatacara keselamatan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 8.1.7. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+          "aktiviti": "Guru menunjukkan contoh lakaran gabungan teknologi, jadual kos, prototaip dan dokumentasi, memodelkan satu langkah, kemudian membimbing murid. Murid mempamerkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi, menerangkan keputusan dan bukti ujian, kemudian menjawab satu soalan rakan dan merekod penambahbaikan (SP 8.1.7)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid mengelaskan contoh, menjawab soalan situasi dan menghasilkan nota visual ringkas dengan sekurang-kurangnya dua sebab atau bukti. Ini sesi susulan amali/penambahbaikan ke-2; murid menggunakan rekod percubaan sebelumnya dan memperincikan hasil baharu, bukan mengulang penerangan awal. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+          "aktiviti": "Guru memantau kerja amali dan menyemak prosedur. Murid mempamerkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi, menerangkan keputusan dan bukti ujian, kemudian menjawab satu soalan rakan dan merekod penambahbaikan (SP 8.1.7). Bahagian elektrik kekal voltan rendah serta diasingkan daripada air."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.7."
+          "aktiviti": "Murid menyerahkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi. Guru merekod pencapaian SP 8.1.7 berdasarkan padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+          "aktiviti": "Murid menerangkan satu keputusan reka bentuk dan sebabnya; guru merumuskan pembelajaran model penunjuk paras air automatik untuk tanaman, mengarahkan bahan disimpan/dibersihkan dan mengingatkan langkah kerja sesi seterusnya."
         }
       },
-      "pbd_evidens": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.7.",
+      "pbd_evidens": "Murid menyerahkan produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi. Guru merekod pencapaian SP 8.1.7 berdasarkan padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan; murid menyatakan satu bukti kerja dan satu perkara yang perlu dibaiki.",
       "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2307,12 +2431,16 @@
         "sp_exact_text_not_redistributed": true
       },
       "review": {
-        "status": "DRAF",
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
         "release_ready": false,
         "pedagogi_disahkan_individu": false,
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
-      }
+      },
+      "artefak_khusus": "produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi",
+      "rubrik_pbd_khusus": "padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan",
+      "contoh_projek_cikgulaju": "model penunjuk paras air automatik untuk tanaman",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
     }
   ]
 }
