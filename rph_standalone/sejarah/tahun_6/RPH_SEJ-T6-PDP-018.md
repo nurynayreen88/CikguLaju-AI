@@ -15,7 +15,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan dua bahan info rasmi tentang masyarakat berbilang agama. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 5: Agama dan Kepercayaan.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 78–89: Kajian kes cadangan tentang keharmonian masyarakat berbilang. Murid membina soalan kajian bagaimana kepelbagaian agama dipelihara secara aman. Guru menyemak jawapan awal berpandukan 11.2.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 78–89: Kajian kes cadangan tentang keharmonian masyarakat berbilang agama. Murid membina soalan kajian bagaimana kepelbagaian agama dipelihara secara aman. Guru menyemak jawapan awal berpandukan 11.2.1.
 
 **Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 78–89 bagi menyokong perbandingan. Murid membandingkan bukti perlembagaan dan contoh aktiviti muafakat komuniti. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan memahami adab ketika berada di rumah ibadat.
 
