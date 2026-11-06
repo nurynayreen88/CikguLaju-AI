@@ -60,8 +60,8 @@ class RPT2026LayoutQA(unittest.TestCase):
                     self.assertIn("NAMA SEKOLAH",cover)
                     self.assertIn("NAMA GURU",cover)
                     self.assertIn("KUMPULAN A",cover)
-                    for head in ("MINGGU / TARIKH","STANDARD KANDUNGAN",
-                                 "STANDARD PEMBELAJARAN","CATATAN / BAHAN"):
+                    for head in ("MINGGU / TARIKH","SK",
+                                 "SP","CATATAN / BAHAN"):
                         self.assertIn(head,body)
                     numbers=[int(v) for v in re.findall(r"PdP\s+(\d{3})",body)]
                     self.assertEqual(numbers,list(range(1,count+1)),
