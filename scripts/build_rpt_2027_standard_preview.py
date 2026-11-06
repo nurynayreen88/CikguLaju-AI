@@ -53,7 +53,7 @@ def psv_records(year):
             "sk":r["SK"],"sp":r["SP"],
             "note":(("Teknik: "+technique+". ") if technique else "")+
                     "Objektif: "+r["Objektif"]+
-                    ". PBD: "+r["Evidens PBD"]+
+                    ". PBD: "+r["Evidens PBD"].strip().rstrip(" .")+
                     (". Buku teks: "+book if book else "")+
                     ". Tarikh dan halaman BT: cadangan, perlu disemak."
         })
@@ -110,8 +110,7 @@ def moral_records(year):
             "sk":left["SK"],"sp":left["SP"],
             "note":("Modul: "+left["Modul"]+". Aktiviti guru: "+left["Aktiviti_Guru"]+
                     " Aktiviti murid: "+left["Aktiviti_Murid"]+
-                    " PBD: "+left["Evidens_PBD"]+
-                    ". Status: "+left["Status_Dalaman"]+".")
+                    " PBD: "+left["Evidens_PBD"].strip().rstrip(" .")+".")
         })
     validate_rows("moral",year,output)
     return output
