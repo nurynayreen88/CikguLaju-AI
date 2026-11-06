@@ -219,17 +219,51 @@ def _bm_verified_structured_rows(database_path, year):
     ]
 
 
+_BM_NUMBERED_THEME_RE = re.compile(
+    r"^(?:TEMA\s*)?([1-9]\d?)\s*[.:\-–—)]\s*(\S.*)$", re.I,
+)
+
+
+def bm_theme_identity(raw):
+    """Semantic identity ONLY when both official theme number and title match.
+
+    Source rows are never modified. Different titles under the same theme
+    number (which exist in Year 5 master data) deliberately remain distinct.
+    """
+    title = re.sub(r"\s+", " ", str(raw or "")).strip()
+    match = _BM_NUMBERED_THEME_RE.fullmatch(title)
+    if match:
+        return ("numbered", int(match[1]), match[2].casefold())
+    return ("verbatim", title.casefold())
+
+
+def bm_theme_display(raw):
+    title = re.sub(r"\s+", " ", str(raw or "")).strip()
+    match = _BM_NUMBERED_THEME_RE.fullmatch(title)
+    if not match:
+        return title
+    name = match[2].strip()
+    # Keep source spelling for mixed-case titles and existing acronyms.
+    if name.isupper():
+        name = name.title()
+    return f"Tema {int(match[1])}: {name}"
+
+
 def bm_theme_options(database_path, year):
     rows = _bm_verified_structured_rows(database_path, year)
-    return [{"value": title, "label": title}
-            for title in dict.fromkeys(r["theme"] for r in rows)]
+    found = {}
+    for r in rows:
+        raw = r["theme"]
+        found.setdefault(bm_theme_identity(raw), bm_theme_display(raw))
+    return [{"value": title, "label": title} for title in found.values()]
 
 
 def bm_unit_options(database_path, year, theme):
     if not isinstance(theme, str) or not 0 < len(theme) <= 300:
         raise ValueError("Invalid BM theme")
+    identity = bm_theme_identity(theme)
     rows = [r for r in _bm_verified_structured_rows(database_path, year)
-            if r["theme"] == theme]
+            if bm_theme_identity(r["theme"]) == identity]
     if not rows:
         return []
     result = []
@@ -243,8 +277,10 @@ def bm_unit_options(database_path, year, theme):
 def bm_topic_options(database_path, year, theme, unit):
     if not isinstance(unit, str) or not 0 < len(unit) <= 300:
         raise ValueError("Invalid BM unit")
+    identity = bm_theme_identity(theme)
     rows = [r for r in _bm_verified_structured_rows(database_path, year)
-            if r["theme"] == theme and r["unit_title"] == unit]
+            if bm_theme_identity(r["theme"]) == identity
+            and r["unit_title"] == unit]
     return [{"value": title, "label": title}
             for title in dict.fromkeys(r["topic"] for r in rows)]
 
@@ -263,7 +299,7 @@ def bm_pdp_options(database_path, year, theme, unit, topic):
     choices = []
     for idx, (key, members) in enumerate(groups.items(), 1):
         t, code, title, name = key
-        if (t, title, name) != (theme, unit, topic):
+        if (bm_theme_identity(t), title, name) != (bm_theme_identity(theme), unit, topic):
             continue
         if not any(str(r.get("sk_code") or "").strip()
                    and str(r.get("sp_code") or "").strip() for r in members):
