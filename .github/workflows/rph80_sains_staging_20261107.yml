@@ -8,6 +8,8 @@ on:
     paths:
       - "web/sains_y3_rph_activity_preview_20261106.py"
       - "tools/audit_rph80_sains_first_20261107.py"
+      - "tools/audit_rph80_all_subject_sources_20261107.py"
+      - "tests/test_rph80_all_subject_source_scan_20261107.py"
       - "audits/rph80_program_20261107.md"
       - "tests/test_rph80_sains_quality_gate_20261107.py"
       - ".github/workflows/rph80_sains_staging_20261107.yml"
@@ -31,6 +33,10 @@ jobs:
           python -m pip install python-docx pypdf reportlab
       - name: Validate false-ready gate and Sains Year3 pedagogy
         run: python -m unittest discover -s tests -p 'test_rph80_sains_quality_gate_20261107.py' -v
+      - name: Inventory all 13 subject source formats without quality claims
+        run: |
+          python -m unittest discover -s tests -p 'test_rph80_all_subject_source_scan_20261107.py' -v
+          python -m tools.audit_rph80_all_subject_sources_20261107
       - name: Build verified-source Sains A/B staging draft indices
         run: python -m tools.render_sains_rpt_2027_ab_review_20261106
       - name: Audit 342 unique Sains PdP and export review queue
@@ -44,3 +50,5 @@ jobs:
           path: |
             build/rph80_sains_20261107/*.csv
             build/rph80_sains_20261107/*.json
+            build/rph80_all_subjects_20261107/*.csv
+            build/rph80_all_subjects_20261107/*.json
