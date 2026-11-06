@@ -97,6 +97,53 @@ def _catalog(path=CATALOG):
     return data, hashlib.sha256(raw).hexdigest()
 
 
+SPECIAL_SUBJECTS = (
+    "Bahasa Melayu", "Bahasa Inggeris", "Matematik", "Sains",
+    "Pendidikan Islam", "Pendidikan Moral", "Pendidikan Seni Visual",
+    "Pendidikan Jasmani", "Pendidikan Kesihatan", "Pendidikan Muzik",
+    "Bahasa Arab", "Sejarah", "Reka Bentuk dan Teknologi",
+)
+
+
+def list_subjects(kind, year, *, path=CATALOG):
+    """Only expose subject choices that exist for the selected school year."""
+    if kind != SELEPAS or type(year) is not int or year not in range(1, 7):
+        raise ValueError("Subjects only apply to post-syllabus Year 1-6")
+    source, digest = _catalog(path)
+    rows = [r for r in source["activities"] if r["category"] == SELEPAS
+            and year in r["years"]]
+    subjects = [r["subject_options"][0] for r in rows]
+    if len(subjects) != len(SPECIAL_SUBJECTS) or set(subjects) != set(SPECIAL_SUBJECTS):
+        raise SourceUnavailable("Incomplete subject-specific activity selection")
+    return [{"value": name, "label": name} for name in SPECIAL_SUBJECTS], digest
+
+
+def preview(kind, year, activity_id, digest, *, subject=None, path=CATALOG):
+    """Trusted read-only preview for Telegram and Web before download."""
+    row = select(kind, year, activity_id, digest, path=path)
+    if row["category"] == TRANSISI:
+        if subject is not None:
+            raise ValueError("Transition does not have subject selection")
+        display_subject = "Program Transisi Tahun Satu"
+    else:
+        if subject != row["subject_options"][0]:
+            raise ValueError("Wrong subject for selected activity")
+        display_subject = subject
+    parts = [row["set_induksi"], *row["aktiviti_utama"],
+             row["pengukuhan_penilaian"], row["penutup"]]
+    return {
+        "id": row["id"], "title": row["title"], "year": year,
+        "subject": display_subject, "category": row["category"],
+        "phase": row["phase"], "duration_minutes": row["duration_minutes"],
+        "objective": row["learning_objective"], "bbm": row["bbm"],
+        "phases": [{"label": label, "minutes": minute, "activity": description}
+                   for (label, minute), description in zip(STEPS, parts)],
+        "assessment_evidence": row["assessment_evidence"],
+        "status": STATUS, "source_digest": digest,
+        "official_sk_sp_attached": False,
+    }
+
+
 def list_options(kind, year, *, phase=None, subject=None, path=CATALOG):
     if kind not in (TRANSISI, SELEPAS) or type(year) is not int or year not in range(1, 7):
         raise ValueError("Invalid category/year")
