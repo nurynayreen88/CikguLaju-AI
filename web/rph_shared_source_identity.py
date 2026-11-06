@@ -56,6 +56,9 @@ def source_paths(year, subject, lesson, component=None):
 
 def source_fingerprint(year, subject, lesson, component=None, *, root=ROOT):
     """A digest of exact source bytes, not a generic topic/RPT identifier."""
+    if subject=="SEJARAH" and component is None:
+        from web.sejarah_2027_source_hash import fingerprint
+        return fingerprint(year,lesson,root=root)
     paths = source_paths(year, subject, lesson, component)
     if not paths:
         return None

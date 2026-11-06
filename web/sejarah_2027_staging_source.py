@@ -24,27 +24,16 @@ def _validate(year,pdp):
 
 def source_paths(year,pdp):
     _validate(year,pdp)
-    return (
-        "rph_standalone/sejarah/tahun_%d/RPH_SEJ-T%d-PDP-%03d.md" % (year,year,pdp),
-        "rph_standalone/sejarah/y%d_2027_rph_DRAF.json" % year,
-        "curriculum/sejarah/y%d_dskp_crosswalk_DRAF.json" % year,
-        "curriculum/sejarah/y%d_buku_teks_unit_map_20261106.json" % year,
-        "curriculum/sejarah/kalender_sejarah_2027_kumpulan_a_b.json",
-        "rpt_2027/sejarah/RPT_SEJARAH_TAHUN_%d_2027_A_B_DRAF.csv" % year,
-    )
+    from web.sejarah_2027_source_hash import source_paths as identity_paths
+    return identity_paths(year,pdp)
 
 def source_fingerprint(year,pdp,*,root=ROOT):
-    base=Path(root).resolve()
-    digest=sha256()
-    for rel in source_paths(year,pdp):
-        path=base/rel
-        if path.is_symlink() or not path.is_file() or path.stat().st_size>4_000_000:
-            raise SejarahNotReady("Sumber Sejarah tidak lengkap")
-        raw=path.read_bytes()
-        if not raw:
-            raise SejarahNotReady("Sumber Sejarah kosong")
-        digest.update(rel.encode("utf-8")+b"\x00"+raw+b"\x00")
-    return digest.hexdigest()
+    _validate(year,pdp)
+    from web.sejarah_2027_source_hash import fingerprint
+    digest=fingerprint(year,pdp,root=root)
+    if not digest:
+        raise SejarahNotReady("Sumber Sejarah tidak lengkap atau cap jari tidak sah")
+    return digest
 
 def lesson(year,pdp,*,root=ROOT):
     """Return a copied source row for QA only, never a live RPH export."""
