@@ -155,13 +155,15 @@ def build_preview(subject, year, records, destination):
         p(f"Rujukan Kumpulan A: {GROUP_A}",size=8.5,leading=15),
         p(f"Rujukan Kumpulan B: {GROUP_B}",size=8.5,leading=15),
         Spacer(1,12),
+        p("SK = Standard Kandungan. SP = Standard Pembelajaran. Satu baris = satu PdP.",size=8,leading=12,strong=True),
+        Spacer(1,6),
         p("DRAF UNTUK SEMAKAN GURU. Minggu dan tarikh dalam jadual ialah panduan "
           "sumber sahaja. Semak cuti negeri/gantian, jadual waktu, DSKP dan "
           "halaman buku sebelum pelaksanaan.",size=8,leading=13,color="#735d36"),
         PageBreak()
     ]
     headings = ("MINGGU / TARIKH", "UNIT / TAJUK / PDP",
-                "STANDARD KANDUNGAN", "STANDARD PEMBELAJARAN", "CATATAN / BAHAN")
+                "SK", "SP", "CATATAN / BAHAN")
     table_rows = [[p(t,size=7.2,leading=10,strong=True,color="#ffffff") for t in headings]]
     for row in records:
         week = row.get("week","").strip() or "Belum ditetapkan"
