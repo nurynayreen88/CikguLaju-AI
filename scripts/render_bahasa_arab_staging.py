@@ -49,23 +49,40 @@ def first(src: dict[str, str], *candidates: str) -> str:
             return value
     return ""
 
+def display_sk_sp(raw: str) -> str:
+    """Expose only validated numeric codes in teacher-facing Word/PDF.
+
+    The draft/source audit explanations remain available in Markdown and
+    audit JSON; they must never leak into a printable teacher RPH.
+    """
+    match = re.match(r"^\\s*(\\d+\\.\\d+)\\s*/\\s*(\\d+\\.\\d+\\.\\d+)", str(raw or ""))
+    if not match or not match.group(2).startswith(match.group(1) + "."):
+        raise ValueError("Invalid or incomplete source SK/SP; refusing printable RPH")
+    return match.group(1) + " / " + match.group(2)
+
+
 def font_run(paragraph, value: str, size=9.0, bold=False):
-    run = paragraph.add_run(value)
-    run.font.size = Pt(size + 0.3 if ARABIC.search(value) else size)
-    run.bold = bold
-    if ARABIC.search(value):
-        run.font.name = "Amiri"
-        rpr = run._element.get_or_add_rPr()
-        fonts = rpr.rFonts
-        if fonts is None:
-            fonts = OxmlElement("w:rFonts")
-            rpr.insert(0, fonts)
-        fonts.set(qn("w:cs"), "Amiri")
-        rtl = OxmlElement("w:rtl")
-        rtl.set(qn("w:val"), "1")
-        rpr.append(rtl)
-    else:
-        run.font.name = "Aptos"
+    """Keep Malay/Latin in a clear sans font; isolate Arabic RTL runs."""
+    pieces = re.split(r"([\\u0600-\\u06FF\\u0750-\\u077F\\u08A0-\\u08FF]+)", value)
+    for segment in pieces:
+        if not segment:
+            continue
+        arabic = bool(ARABIC.search(segment))
+        run = paragraph.add_run(segment)
+        run.font.size = Pt(size + 0.4 if arabic else size)
+        run.bold = bold
+        run.font.name = "Amiri" if arabic else "Carlito"
+        if arabic:
+            rpr = run._element.get_or_add_rPr()
+            fonts = rpr.rFonts
+            if fonts is None:
+                fonts = OxmlElement("w:rFonts")
+                rpr.insert(0, fonts)
+            fonts.set(qn("w:cs"), "Amiri")
+            rtl = OxmlElement("w:rtl")
+            rtl.set(qn("w:val"), "1")
+            rpr.append(rtl)
+
 
 def cell_text(cell, value: str, size=8.8, bold=False):
     p = cell.paragraphs[0]
@@ -103,7 +120,7 @@ def render_one(text: str, dest: Path) -> dict:
     sec.header_distance = Cm(0.5)
     sec.footer_distance = Cm(0.5)
     normal = doc.styles["Normal"]
-    normal.font.name = "Aptos"
+    normal.font.name = "Carlito"
     normal.font.size = Pt(9)
     normal.paragraph_format.space_after = Pt(0)
     heading = doc.add_paragraph()
@@ -120,8 +137,8 @@ def render_one(text: str, dest: Path) -> dict:
         ("Subjek", first(d, "Subjek")),
         ("Unit / Tajuk", first(d, "Unit")),
         ("Fokus PdP", first(d, "Fokus PdP", "Fokus")),
-        ("SK / SP", first(d, "DSKP SK/SP", "Kod SK/SP", "SK/SP cadangan")),
-        ("Tarikh / Masa / Kelas", first(d, "Masa/Tarikh/Kelas", "Tarikh / masa / kelas", "Tarikh, masa dan kelas")),
+        ("SK / SP", display_sk_sp(first(d, "DSKP SK/SP", "Kod SK/SP", "SK/SP cadangan"))),
+        ("Tarikh / Masa / Kelas", "Tarikh: ____ / ____ / ______    Mula: ______    Tamat: ______    Kelas: ______________"),
         ("Objektif", first(d, "Objektif PdP", "Objektif pembelajaran", "Objektif")),
         ("Kriteria kejayaan", first(d, "Kriteria kejayaan")),
     ]
