@@ -1,0 +1,38 @@
+name: RBT 2027 staging-only QA
+on:
+  pull_request:
+    paths:
+      - 'rpt_2027/rbt/**'
+      - 'rph_standalone/rbt/**'
+      - 'audits/rbt_*'
+      - 'scripts/check_rbt_t4_t6_2027.py'
+      - 'scripts/render_rbt_2027_previews.py'
+      - '.github/workflows/rbt-2027-staging-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rbt-staging-verify:
+    name: Check RBT draft integrity and build HTML previews (no deploy)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check 96 draft RPH and fail-closed gates
+        run: python scripts/check_rbt_t4_t6_2027.py
+      - name: Build draft A4 HTML previews
+        run: python scripts/render_rbt_2027_previews.py --year all --out /tmp/cikgulaju-rbt-draf
+      - name: Verify all six preview pages exist and remain labelled draft
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          folder=Path('/tmp/cikgulaju-rbt-draf')
+          files=sorted(folder.glob('*.html'))
+          assert len(files)==6, [p.name for p in files]
+          for p in files:
+              s=p.read_text(encoding='utf-8')
+              assert 'DRAF' in s and 'A4' in s
+              assert '<!doctype html>' in s
+          print('PASS: six staging-only draft previews; no production changes.')
+          PY
