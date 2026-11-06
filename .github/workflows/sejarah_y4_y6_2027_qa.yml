@@ -7,6 +7,7 @@ on:
       - 'rph_standalone/sejarah/**'
       - 'scripts/check_sejarah_y4_y6_2027.py'
       - 'scripts/check_sejarah_crossformat_2027.py'
+      - 'scripts/check_sejarah_edition_guard_2027.py'
       - 'scripts/check_sejarah_release_gates_2027.py'
       - 'scripts/check_sejarah_hash_stability_2027.py'
       - 'scripts/check_sejarah_fake_ready_gate_2027.py'
@@ -26,6 +27,7 @@ on:
       - 'rph_standalone/sejarah/**'
       - 'scripts/check_sejarah_y4_y6_2027.py'
       - 'scripts/check_sejarah_crossformat_2027.py'
+      - 'scripts/check_sejarah_edition_guard_2027.py'
       - '.github/workflows/sejarah_y4_y6_2027_qa.yml'
 jobs:
   validate:
@@ -37,6 +39,7 @@ jobs:
           python-version: '3.11'
       - run: python scripts/check_sejarah_y4_y6_2027.py
       - run: python scripts/check_sejarah_crossformat_2027.py
+      - run: python scripts/check_sejarah_edition_guard_2027.py
       - run: python scripts/check_sejarah_release_gates_2027.py
       - run: python scripts/check_sejarah_hash_stability_2027.py
       - run: python scripts/check_sejarah_fake_ready_gate_2027.py
