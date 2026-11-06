@@ -153,6 +153,16 @@ def audit_one(year, pdp, fmt, preview, parse_input, writer, word_output_dir=None
             sp_text = document.tables[0].cell(9, 1).text
             if not all(v in sp_text for v in meta["Standard Pembelajaran"].split("; ")):
                 raise RuntimeError("Word SP source text lost")
+            # Verify real source values in exact Word metadata cells, not only
+            # document size / presence of field labels.
+            for label, row_index in (("OBJEKTIF PEMBELAJARAN", 10),
+                                     ("KRITERIA KEJAYAAN", 11),
+                                     ("BAHAN BANTU MENGAJAR", 13),
+                                     ("PENTAKSIRAN", 16)):
+                expected = " ".join(str(meta[label]).split())
+                actual = " ".join(document.tables[0].cell(row_index, 1).text.split())
+                if not expected or expected == "—" or actual != expected:
+                    raise RuntimeError(f"Word missing/truncated {label}: expected={expected[:80]!r} actual={actual[:80]!r}")
             section = document.sections[0]
             a4 = abs(section.page_width.cm - 21.0) < 0.15 and abs(section.page_height.cm - 29.7) < 0.15
             if not a4:
@@ -162,7 +172,7 @@ def audit_one(year, pdp, fmt, preview, parse_input, writer, word_output_dir=None
             if review_folder is not None and (year, pdp) in SELECTED:
                 shutil.copy2(path, review_folder / f"DRAF_SEMAKAN_MZ-Y{year}-{pdp:02d}.docx")
             return {"type": fmt, "bytes": path.stat().st_size, "tables": 3, "a4_section": a4,
-                    "page_count": None}
+                    "pedagogical_fields_checked": 4, "page_count": None}
         reader = PdfReader(str(path))
         pages = len(reader.pages)
         if pages < 1:
@@ -176,6 +186,17 @@ def audit_one(year, pdp, fmt, preview, parse_input, writer, word_output_dir=None
         for code in meta["Standard Pembelajaran"].split("; "):
             if code not in text:
                 raise RuntimeError("PDF lost source SP code: " + code)
+        # PDF extraction can vary in whitespace/newline wrapping; compare a
+        # meaningful source prefix for each essential pedagogical field.
+        text_compact = " ".join(text.split()).casefold()
+        for label in ("OBJEKTIF PEMBELAJARAN", "KRITERIA KEJAYAAN",
+                      "BAHAN BANTU MENGAJAR", "PENTAKSIRAN"):
+            source_text = " ".join(str(meta[label]).split())
+            if not source_text or source_text == "—":
+                raise RuntimeError("Missing source pedagogical field: " + label)
+            probe = " ".join(source_text.split()[:5]).casefold()
+            if probe not in text_compact:
+                raise RuntimeError("PDF missing pedagogical text " + label + ": " + probe)
         if "DRAF STAGING" in text or "Kawalan penerbitan" in text:
             raise RuntimeError("Technical staging audit note leaked into PDF")
         box = reader.pages[0].mediabox
@@ -184,6 +205,7 @@ def audit_one(year, pdp, fmt, preview, parse_input, writer, word_output_dir=None
         if review_folder is not None and (year, pdp) in SELECTED:
             shutil.copy2(path, review_folder / f"DRAF_SEMAKAN_MZ-Y{year}-{pdp:02d}.pdf")
         return {"type": fmt, "bytes": path.stat().st_size, "pages": pages,
+                "pedagogical_fields_checked": 4,
                 "single_page": pages == 1, "a4": True}
     finally:
         if path is not None and path.exists():
