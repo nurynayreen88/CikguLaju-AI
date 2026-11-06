@@ -19,7 +19,7 @@
     "note": "Source PDF text displays SP numbers clearly; a separate existing Drive text extraction may collapse numeric identifiers due bidirectional-text OCR."
   },
   "teacher_support_page": "https://sites.google.com/moe-dl.edu.my/fcpi/bahasa-arab/tahun-2-bahasa-arab/%D8%A7%D9%84%D9%88%D8%AD%D8%AF%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-1",
-  "source_review_basis": "Textbook printed pages 2–17 from public school-hosted AnyFlip HTML text plus original DSKP readable PDF, not downloadable original-book-page visual signoff. SP book print OCR ambiguous in four cases. PdP010/011 SP diselaraskan mengikut fokus kemahiran (baca kata/salin frasa) tetapi imej kod bercetak dan kelulusan guru masih tertangguh.",
+  "source_review_basis": "Textbook printed pages 2–17 from public school-hosted AnyFlip HTML text plus original DSKP readable PDF, not downloadable original-book-page visual signoff. SP book print OCR ambiguous in four cases. PdP010/011 SP diselaraskan mengikut fokus kemahiran (baca kata/salin frasa) tetapi imej kod bercetak dan kelulusan guru masih tertangguh. Additional HTML eBook text crosscheck confirms matching numeric codes for PdP010 and PdP011 (not visual page approval).",
   "items": [
     {
       "pdp": "001",
@@ -141,7 +141,13 @@
       "teacher_approval": false,
       "ready": false,
       "corrected_at": "2026-11-06",
-      "correction_basis": "DPS/DPK mapping against Book Text DBP 2017 (printed p9-11 word reading; p17 phrase copying), no full-resolution visual or teacher signoff"
+      "correction_basis": "DPS/DPK mapping against Book Text DBP 2017 (printed p9-11 word reading; p17 phrase copying), no full-resolution visual or teacher signoff",
+      "book_ebook_html_sp_corroborated": true,
+      "book_ebook_html_sp_code": "2.3.5",
+      "book_ebook_html_printed_page": "11",
+      "book_ebook_html_evidence_url": "https://anyflip.com/slrpb/qzcr/basic",
+      "dpk_sp_meaning_confirmed": true,
+      "dpk_source_url": "https://www.tcer.my/wp-content/uploads/2021/01/4_DPK_Bahasa-Arab-KSSR-Tahun-2-Edisi-2-1.pdf"
     },
     {
       "pdp": "011",
@@ -155,7 +161,13 @@
       "teacher_approval": false,
       "ready": false,
       "corrected_at": "2026-11-06",
-      "correction_basis": "DPS/DPK mapping against Book Text DBP 2017 (printed p9-11 word reading; p17 phrase copying), no full-resolution visual or teacher signoff"
+      "correction_basis": "DPS/DPK mapping against Book Text DBP 2017 (printed p9-11 word reading; p17 phrase copying), no full-resolution visual or teacher signoff",
+      "book_ebook_html_sp_corroborated": true,
+      "book_ebook_html_sp_code": "3.4.1",
+      "book_ebook_html_printed_page": "17",
+      "book_ebook_html_evidence_url": "https://anyflip.com/slrpb/qzcr/basic",
+      "dpk_sp_meaning_confirmed": true,
+      "dpk_source_url": "https://www.tcer.my/wp-content/uploads/2021/01/4_DPK_Bahasa-Arab-KSSR-Tahun-2-Edisi-2-1.pdf"
     },
     {
       "pdp": "012",
@@ -178,5 +190,15 @@
     "011"
   ],
   "final_ready": 0,
-  "release_authorized": false
+  "release_authorized": false,
+  "text_source_corrob_sp_pdp": [
+    "010",
+    "011"
+  ],
+  "book_sp_print_visual_unresolved": [
+    "002",
+    "004",
+    "010",
+    "011"
+  ]
 }
