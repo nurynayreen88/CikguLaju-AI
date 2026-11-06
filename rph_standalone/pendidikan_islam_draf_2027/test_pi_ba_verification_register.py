@@ -41,6 +41,27 @@ class TestBookVerificationRegister(unittest.TestCase):
         self.assertEqual(self.rows["T3-L004"]["original_book_printed_page"], "")
         self.assertEqual(self.rows["T2-L042"]["book_code_KPM"], "BA102001")
 
+
+    def test_persistent_editor_csv_has_174_records_and_source_urls(self):
+        path = Path(__file__).parent / "PI_BA_REVIEW_REGISTER_174_STAGING.csv"
+        with path.open("r", encoding="utf-8-sig", newline="") as handle:
+            rows = list(csv.DictReader(handle))
+        self.assertEqual(len(rows), 174)
+        index = {r["Lesson"]:r for r in rows}
+        self.assertEqual(set(index), set(self.rows))
+        self.assertEqual(sum(bool(r["Sumber bukti asal"]) for r in rows), 42)
+        for row in rows:
+            ref = self.rows[row["Lesson"]]
+            self.assertEqual(row["Kod Buku Aktiviti KPM"], ref["book_code_KPM"])
+            self.assertEqual(row["Tahun"], str(ref["year"]))
+            self.assertEqual(row["Status"], "HOLD")
+            self.assertEqual(row["Halaman bercetak diperiksa"], "")
+            self.assertEqual(row["Arahan latihan diperiksa"], "")
+            self.assertEqual(row["Pengesah"], "")
+            self.assertEqual(bool(row["Sumber bukti asal"]),bool(ref["secondary_source_count"]))
+        self.assertIn("Konflik", index["T3-L004"]["Nota"])
+        self.assertTrue(index["T3-L097"]["Sumber bukti asal"].startswith("https://"))
+
     def test_csv_written_with_stable_columns(self):
         with TemporaryDirectory() as tmp:
             dest = Path(tmp)/"BA_174_review.csv"
