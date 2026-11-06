@@ -15,6 +15,8 @@ on:
       - "tools/render_sains_y3_45_review_pack_20261106.py"
       - "tools/check_sains_y3_word_pages_20261106.py"
       - "tools/render_sains_rpt_2027_ab_review_20261106.py"
+      - "audits/sains_rpt_2027_calendar_windows_20261106.json"
+      - "tests/test_sains_rpt_2027_calendar_windows_20261106.py"
       - "tools/audit_sains_25_82_delta_20261106.py"
       - "tools/audit_sains_v2582_y3_actual_20261106.py"
       - "tools/simulate_sains_v2582_12_title_fix_20261106.py"
@@ -81,6 +83,8 @@ jobs:
         run: python tools/render_sains_y3_45_review_pack_20261106.py
       - name: Render Sains RPT 2027 Years2-6 A/B draft source index with cover
         run: python tools/render_sains_rpt_2027_ab_review_20261106.py
+      - name: Verify RPT 2027 A/B group calendar windows and draft document covers
+        run: python -m unittest discover -s tests -p 'test_sains_rpt_2027_calendar_windows_20261106.py' -v
       - name: Upload RPT A/B review-only documents
         uses: actions/upload-artifact@v4
         with:
