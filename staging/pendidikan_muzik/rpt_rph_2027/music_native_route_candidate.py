@@ -11,6 +11,7 @@ from pathlib import Path
 import re
 
 from .native_layout_preview_staging import build_staging_preview
+from .external_audio_links_staging import audio_link_action
 
 ROOT=Path(__file__).resolve().parent
 SUBJECT="Pendidikan Muzik"
@@ -166,8 +167,11 @@ def install(ns,*,root=ROOT):
             row=load(year,pdp,root=root)
             if row is None:
                 return send(cid,"Sumber Muzik tidak sepadan. Pilih semula subjek.")
-            kb.append([{"text":(f"PdP {pdp:02d} — {row['title']}")[:64],
-                        "callback_data":f"muzik27pick|{year}|{pdp:02d}"}])
+            buttons = [{"text":(f"PdP {pdp:02d} — {row['title']}")[:52],
+                        "callback_data":f"muzik27pick|{year}|{pdp:02d}"}]
+            if audio_link_action(year,pdp,root=root)["available"]:
+                buttons.append({"text":"🔊","callback_data":f"muzik27audio|{year}|{pdp:02d}|0"})
+            kb.append(buttons)
         nav=[]
         if page>0:
             nav.append({"text":"⬅️","callback_data":f"muzik27page|{year}|{page-1}"})
@@ -203,6 +207,39 @@ def install(ns,*,root=ROOT):
                    [{"text":"🏠 Menu Utama","callback_data":"home"}]])
         return send(cid,f"📘 <b>{label}</b>\n\nPilih subjek.",kb)
 
+    def audio_menu(cid,year,pdp,page=0):
+        """Show source-view URLs, never a CikguLaju download endpoint."""
+        st=session.setdefault(cid,{})
+        if _year(st.get("year"))!=year or st.get("subject")!=SUBJECT:
+            return send(cid,"Pilihan audio tidak sepadan dengan Tahun/Subjek. Pilih semula.")
+        if load(year,pdp,root=root) is None:
+            return send(cid,"Sumber PdP Muzik belum dapat disahkan.")
+        audio=audio_link_action(year,pdp,root=root)
+        if not audio["available"]:
+            return send(cid,"Audio untuk PdP ini belum mempunyai pautan sumber yang jelas.")
+        links=audio["links"]
+        if type(page) is not int or not 0<=page<=(len(links)-1)//6:
+            return send(cid,"Halaman audio tidak sah.")
+        start=page*6
+        kb=[[{"text":("🔊 Audio %03d • %s" % (x["track"],x["title"]))[:63],
+              "url":x["url"]}] for x in links[start:start+6]]
+        nav=[]
+        if page:
+            nav.append({"text":"⬅️ Audio sebelumnya",
+                        "callback_data":f"muzik27audio|{year}|{pdp:02d}|{page-1}"})
+        if start+6<len(links):
+            nav.append({"text":"➡️ Audio seterusnya",
+                        "callback_data":f"muzik27audio|{year}|{pdp:02d}|{page+1}"})
+        if nav:
+            kb.append(nav)
+        kb.append([{"text":"⬅️ Senarai PdP Muzik",
+                    "callback_data":f"muzik27page|{year}|{(pdp-1)//7}"}])
+        return send(cid,
+            "🎵 <b>Audio sumber • Tahun %d • PdP %02d</b>\n\n"
+            "Pautan Google Drive asal sahaja. Padanan nombor belum membuktikan "
+            "rakaman tepat; akses serta kebenaran edaran belum disahkan. "
+            "Gunakan fungsi pemilik Google Drive jika muat turun dibenarkan." % (year,pdp),kb)
+
     def callback(cid,data):
         value=str(data or "")
         st=session.setdefault(cid,{})
@@ -212,6 +249,12 @@ def install(ns,*,root=ROOT):
             st["subject"]=SUBJECT
             st.pop(SESSION_KEY,None)
             return menu(cid)
+        if value.startswith("muzik27audio|"):
+            parts=value.split("|")
+            if (len(parts)!=4 or not all(x.isascii() and x.isdecimal() for x in parts[1:])
+                    or len(parts[2])!=2):
+                return send(cid,"Pilihan audio Muzik tidak sah.")
+            return audio_menu(cid,int(parts[1]),int(parts[2]),int(parts[3]))
         if value.startswith(("muzik27page|","muzik27pick|")):
             parts=value.split("|")
             if (len(parts)!=3 or not all(part.isascii() and part.isdecimal()
