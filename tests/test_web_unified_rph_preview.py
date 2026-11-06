@@ -26,7 +26,7 @@ class UnifiedWebRPHTests(unittest.TestCase):
     def test_all_subject_codes_have_one_shared_entry_point(self):
         self.assertEqual(set(SUBJECT_LABELS), {
             "ENGLISH", "BM", "MATH", "SCIENCE", "PI",
-            "PJPK", "MORAL", "PSV", "SEJARAH",
+            "PJPK", "MORAL", "PSV", "SEJARAH", "ARAB", "MUZIK",
         })
         self.assertEqual(sum(k.startswith("6/") for k in english_index()), 160)
         self.assertEqual(len(source_records(6, "ENGLISH")), 160)
