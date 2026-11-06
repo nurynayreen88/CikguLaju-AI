@@ -14,7 +14,7 @@
 
 **Set Induksi — 4 minit:** Guru menyanyikan atau membunyikan dua contoh tempo menggunakan suara dan tepukan; murid mengelaskan lambat dan cepat.
 
-**Aktiviti 1 — Ulang kaji khusus (8 minit):** Murid mengimbas lagu yang telah dipelajari sepanjang Tahun 2; guru membimbing dua frasa nyanyian dan tepukan empat detik pada dua tempo tanpa menggunakan audio belum disahkan.
+**Aktiviti 1 — Ulang kaji khusus (8 minit):** Murid mengimbas lagu yang dipelajari sepanjang Tahun 2; guru membimbing nyanyian dua frasa serta tepukan empat detik pada dua tempo menggunakan suara dan isyarat tangan.
 
 **Aktiviti 2 — Aplikasi kemahiran (10 minit):** Pasangan murid membina gerak maju–setempat–undur dan satu gerak tangan selama empat detik. Murid menyelaraskan gerakan dengan nyanyian, kemudian membetulkan kesilapan tempo.
 
