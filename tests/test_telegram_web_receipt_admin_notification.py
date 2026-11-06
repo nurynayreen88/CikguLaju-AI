@@ -99,7 +99,8 @@ class WebReceiptNoticeTests(unittest.TestCase):
         buttons=req["json"]["reply_markup"]["inline_keyboard"]
         self.assertEqual(buttons,_keyboard(41)["inline_keyboard"])
         self.assertEqual(buttons[0][0]["callback_data"],"pioneer_review|41")
-        self.assertEqual(buttons[1][0]["callback_data"],"admin_receipt|41")
+        self.assertEqual(buttons[1][0]["callback_data"],"admin_pending_all")
+        self.assertNotIn("admin_receipt|",str(buttons))
         self.assertNotIn("admin_approve",repr(req))
 
     def test_fallback_maintains_exact_review_when_receipt_copy_fails(self):
@@ -110,7 +111,7 @@ class WebReceiptNoticeTests(unittest.TestCase):
         self.assertEqual(response.json["delivery"],"review_buttons")
         self.assertEqual(self.sent[0]["uid"],ADMIN)
         self.assertEqual(self.sent[0]["kb"][0][0]["callback_data"],"pioneer_review|41")
-        self.assertEqual(self.sent[0]["kb"][1][0]["callback_data"],"admin_receipt|41")
+        self.assertEqual(self.sent[0]["kb"][1][0]["callback_data"],"admin_pending_all")
 
     def test_no_false_success_when_both_telegram_methods_fail(self):
         with patch("web.telegram_web_receipt_admin_notification.requests.post",
