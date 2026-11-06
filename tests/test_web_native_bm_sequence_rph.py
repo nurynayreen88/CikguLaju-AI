@@ -32,7 +32,23 @@ class WebBMNativeTests(unittest.TestCase):
     def test_available_native_bm_uses_actual_source(self, *_):
         r=self.client.get("/api/web/rph/availability", query_string=self.query)
         self.assertEqual(r.status_code,200,r.get_json())
-        self.assertEqual(r.get_json(),{"available":True,"generator":"telegram-native"})
+        self.assertEqual(r.get_json(),{"available":True,"generator":"telegram-native",
+                                       "download_allowed":True,"access_status":"paid"})
+
+    @patch("web.native_telegram_bm_rph_client.verified_native_bm_available", return_value=True)
+    @patch("web.unified_rph_web._has_paid_access", return_value=False)
+    @patch("web.unified_rph_web._account", return_value=(
+        {"telegram_user_id":123,"authenticated":True,"free_remaining":0},None))
+    def test_bm_rph_exists_when_trial_exhausted_but_download_is_protected(self, *_):
+        r=self.client.get("/api/web/rph/availability",query_string=self.query)
+        self.assertEqual(r.status_code,200,r.get_json())
+        self.assertEqual(r.get_json()["download_allowed"],False)
+        self.assertEqual(r.get_json()["access_status"],"exhausted")
+        with patch("web.native_telegram_bm_rph_client.request_native_bm_rph") as native:
+            doc=self.client.get("/api/web/rph/word",query_string=self.query)
+        self.assertEqual(doc.status_code,403,doc.get_json())
+        self.assertEqual(doc.get_json()["code"],"FREE_TRIAL_EXHAUSTED")
+        native.assert_not_called()
 
     @patch("web.native_telegram_bm_rph_client.verified_native_bm_available", return_value=True)
     @patch("web.unified_rph_web._has_paid_access", return_value=True)

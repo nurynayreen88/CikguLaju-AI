@@ -406,7 +406,11 @@ def create_blueprint():
         resp.headers["Vary"] = "Cookie"
         return resp
 
-    def selected_rph():
+    def selected_rph(*, require_generation_access=True):
+        """Authenticate every request; check quota only for actual paid/trial
+        preview and document generation, not read-only source availability.
+        No RPH content or file bytes leave the availability endpoint.
+        """
         account, error = _account()
         if error is not None:
             return None, error
@@ -415,11 +419,11 @@ def create_blueprint():
         # strictly typed positive balance. Do not provision credits here.
         paid = _has_paid_access(account)
         credits = account.get("free_remaining") if isinstance(account, dict) else None
-        if not paid and (type(credits) is not int or not 0 <= credits <= 10):
+        if require_generation_access and not paid and (type(credits) is not int or not 0 <= credits <= 10):
             return None, (jsonify({
                 "error": "Baki janaan percuma belum dapat disahkan. Cuba Refresh.",
                 "code": "RPH_TRIAL_BALANCE_UNAVAILABLE"}), 503)
-        if not paid and credits == 0:
+        if require_generation_access and not paid and credits == 0:
             return None, (jsonify({
                 "error": "10 janaan RPH percuma telah habis. Aktifkan Rakan Pembangun untuk akses tanpa had.",
                 "code": "FREE_TRIAL_EXHAUSTED", "remaining": 0}), 403)
@@ -542,10 +546,22 @@ def create_blueprint():
         teaching content, server-side source paths, or download tokens.
         The real Word/PDF routes repeat all checks when the user downloads.
         """
-        selected, err = selected_rph()
+        selected, err = selected_rph(require_generation_access=False)
         if err is not None:
             return err
-        return jsonify({"available": True, "generator": "telegram-native"})
+        # This endpoint only confirms SOURCE readiness to the authenticated
+        # account. It does not release material, alter quota or bypass payment.
+        account = g.cikgulaju_rph_account
+        credits = account.get("free_remaining")
+        paid = bool(g.cikgulaju_rph_paid)
+        valid_credits = type(credits) is int and 0 <= credits <= 10
+        allowed = paid or (valid_credits and credits > 0)
+        access = ("paid" if paid else
+                  "trial" if valid_credits and credits > 0 else
+                  "exhausted" if valid_credits and credits == 0 else
+                  "unavailable")
+        return jsonify({"available": True, "generator": "telegram-native",
+                        "download_allowed": allowed, "access_status": access})
 
     @bp.get("/api/web/rph/preview")
     def preview():

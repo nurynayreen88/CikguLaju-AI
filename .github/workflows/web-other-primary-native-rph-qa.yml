@@ -1,7 +1,7 @@
 name: Web BM PI Matematik Sains Native RPH QA
 on:
   push:
-    branches: [production/cikgulaju-web-20261105, feature/web-db-rph-bridge-bm-pi-20261106, feature/web-bm-hierarchy-unit-page-pdp-labels-20261106, fix/web-bm-native-sequence-20261106]
+    branches: [production/cikgulaju-web-20261105, feature/web-db-rph-bridge-bm-pi-20261106, feature/web-bm-hierarchy-unit-page-pdp-labels-20261106, fix/web-bm-native-sequence-20261106, fix/web-bm-theme-access-status-20261106]
     paths:
       - web/unified_rph_web.py
       - web/authoritative_http_source.py
@@ -12,6 +12,7 @@ on:
       - web/native_telegram_sequence_rph_client.py
       - web/native_telegram_bm_rph_client.py
       - tests/test_web_native_bm_sequence_rph.py
+      - tests/test_web_rph_availability.py
       - tools/run_web_v1_preview.py
       - tests/test_web_native_rpt_rph_bm_pi.py
       - tests/test_web_native_sequence_rph_bridge.py

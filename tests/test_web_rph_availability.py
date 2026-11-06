@@ -24,7 +24,9 @@ class ReadinessTests(unittest.TestCase):
     def test_readiness_has_no_rph_content_or_private_data(self, *_):
         response = self.client.get("/api/web/rph/availability", query_string=self.query)
         self.assertEqual(response.status_code, 200, response.get_json())
-        self.assertEqual(response.get_json(), {"available": True, "generator": "telegram-native"})
+        self.assertEqual(response.get_json(), {"available": True, "generator": "telegram-native",
+                                              "download_allowed": True,
+                                              "access_status": "paid"})
         self.assertEqual(response.headers["Cache-Control"], "no-store, private")
         self.assertNotIn(b"telegram_layout", response.data)
         self.assertNotIn(b"teacher", response.data)
@@ -33,10 +35,18 @@ class ReadinessTests(unittest.TestCase):
     @patch("web.unified_rph_web._has_paid_access", return_value=False)
     @patch("web.unified_rph_web._account", return_value=(
         {"authenticated":True,"telegram_user_id":123,"free_remaining":0},None))
-    def test_readiness_rejects_exhausted_trial(self, *_):
+    def test_readiness_distinguishes_source_from_exhausted_trial(self, *_):
         response = self.client.get("/api/web/rph/availability", query_string=self.query)
-        self.assertEqual(response.status_code, 403)
-        self.assertEqual(response.get_json()["code"],"FREE_TRIAL_EXHAUSTED")
+        self.assertEqual(response.status_code, 200, response.get_json())
+        self.assertEqual(response.get_json(), {
+            "available": True, "generator": "telegram-native",
+            "download_allowed": False, "access_status": "exhausted"})
+        # Native Word/PDF remain gated; a read-only check spends zero credits.
+        with patch("web.native_telegram_rph_client.request_native_rph") as renderer:
+            word = self.client.get("/api/web/rph/word", query_string=self.query)
+        self.assertEqual(word.status_code, 403)
+        self.assertEqual(word.get_json()["code"], "FREE_TRIAL_EXHAUSTED")
+        renderer.assert_not_called()
 
     @patch("web.unified_rph_web._has_paid_access", return_value=False)
     @patch("web.unified_rph_web._account", return_value=(
@@ -44,7 +54,8 @@ class ReadinessTests(unittest.TestCase):
     def test_readiness_allows_existing_trial_but_never_consumes_it(self, *_):
         response = self.client.get("/api/web/rph/availability", query_string=self.query)
         self.assertEqual(response.status_code,200,response.get_json())
-        self.assertEqual(response.get_json(),{"available":True,"generator":"telegram-native"})
+        self.assertEqual(response.get_json(),{"available":True,"generator":"telegram-native",
+                                              "download_allowed":True,"access_status":"trial"})
 
     @patch("web.unified_rph_web._account", return_value=(None, ({"error":"login"},401)))
     def test_readiness_rejects_anonymous(self, *_):
@@ -78,6 +89,9 @@ class ReadinessTests(unittest.TestCase):
         self.assertIn('void checkRphAvailability();', page)
         self.assertIn('generateRphFile("word")', page)
         self.assertIn('generateRphFile("pdf")', page)
+        self.assertIn('body.download_allowed===false', page)
+        self.assertIn('Akses diperlukan', page)
+        self.assertIn('RPH disahkan ada dalam Telegram', page)
         self.assertNotIn('id="rph-preview-panel"', page)
         # Error messages remain visible even when unavailable RPH actions are hidden.
         status=page.index('id="rph-download-status"')
