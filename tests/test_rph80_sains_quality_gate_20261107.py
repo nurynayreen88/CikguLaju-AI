@@ -67,7 +67,7 @@ class TestSainsY3Pedagogy(unittest.TestCase):
         self.assertIn("tidak merasa", BANK["7.1.3"][1])
         self.assertIn("bekas penyukat plastik", BANK["6.1.6"][6].lower())
         self.assertIn("tidak berada di bawah beban", BANK["10.1.4"][1])
-        self.assertIn("Zuhrah lebih panas daripada Utarid", BANK["9.1.2"][3])
+        self.assertIn("Zuhrah lebih panas daripada Utarid", BANK["9.1.2"][2])
 
     def test_existing_pdp_identity_preserved_and_individual_pbd(self):
         pages, _fixes = source_ledgers()
