@@ -22,7 +22,7 @@ class WebBMNativeTests(unittest.TestCase):
 
     def test_exact_opaque_token_not_rpt_row_id(self):
         self.assertEqual(_selection(2,"Keluargaku Sayang",TOKEN)["lesson"],TOKEN)
-        for bad in ("123","b"+"z"*24,"e-2-001","", "b"*25):
+        for bad in ("123","b"+"z"*24,"e-2-001","", "b"*26):
             with self.subTest(bad=bad), self.assertRaises(ValueError):
                 _selection(2,"Keluargaku Sayang",bad)
 
