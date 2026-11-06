@@ -84,11 +84,17 @@
       "unit2_release_approved": false,
       "unit2_textbook_pdf_page_offset_1based": 12,
       "unit2_source_url": "https://drive.google.com/file/d/13CqpBb4HosAM_-HTEN-hhBCt2W5wVXCZ/view",
-      "source_reviewed_drafts_total": 44,
+      "source_reviewed_drafts_total": 60,
       "unit3_candidate_rph_count": 16,
       "unit3_candidate_pdp_range": "029–044",
       "unit3_source_evidence_file": "audits/bahasa_arab_y2_unit3_pdp029_044_visual_audit_20261106.json",
-      "unit3_release_approved": false
+      "unit3_release_approved": false,
+      "unit4_candidate_rph_count": 16,
+      "unit4_candidate_pdp_range": "045–060",
+      "unit4_source_evidence_file": "audits/bahasa_arab_y2_unit4_pdp045_060_visual_audit_20261106.json",
+      "unit4_release_approved": false,
+      "all_four_units_candidate_pdp": true,
+      "year2_final_ready": false
     },
     "3": {
       "dskp": {
@@ -395,7 +401,7 @@
     "Ujian integrasi, hash, FK/orphan dan tiada penggantian data sedia ada",
     "Kelulusan manual individu dan pengaktifan hanya selepas CI lulus"
   ],
-  "stage_progress_note": "60 RPH DRAF (PdP 001–012, 12 setiap tahun); 20 unit dalam indeks, 15 bank aktiviti Unit 2–4. Semua DRAF; 0 FINAL READY. | 6 Nov 2026: 12 additional Year4 Unit2 provisional drafts PdP013–024, non-final. | 6 Nov: separate review branch +16 Y5 Unit4 candidate RPH PdP045–060; 154 total drafts, 0 READY; historical 138 CI passed, 154 pending. | 6 Nov: new isolated Year3 Unit2 16 visual-book-backed drafts; now 170 total, 0 READY; Year6 Drive PDF edition mismatch quarantined. | 6 Nov: Year2 Unit2 candidate PdP013–028 using original 2017 Semakan PDF; printed pp26–43, physical PDF page=printed+12. 186 drafts, 0 READY. | 6 Nov Year2 Unit3 16 candidate RPH, 202 total, 0 ready; graphic source pages p50–69 viewed; CI202 pending.",
+  "stage_progress_note": "60 RPH DRAF (PdP 001–012, 12 setiap tahun); 20 unit dalam indeks, 15 bank aktiviti Unit 2–4. Semua DRAF; 0 FINAL READY. | 6 Nov 2026: 12 additional Year4 Unit2 provisional drafts PdP013–024, non-final. | 6 Nov: separate review branch +16 Y5 Unit4 candidate RPH PdP045–060; 154 total drafts, 0 READY; historical 138 CI passed, 154 pending. | 6 Nov: new isolated Year3 Unit2 16 visual-book-backed drafts; now 170 total, 0 READY; Year6 Drive PDF edition mismatch quarantined. | 6 Nov: Year2 Unit2 candidate PdP013–028 using original 2017 Semakan PDF; printed pp26–43, physical PDF page=printed+12. 186 drafts, 0 READY. | 6 Nov Year2 Unit3 16 candidate RPH, 202 total, 0 ready; graphic source pages p50–69 viewed; CI202 pending. | 6 Nov Year2 Unit4 16 proposals: 218 draft total, Year2 60 candidate PdP Unit1–4, 0 READY; 218 RTL A4 pending.",
   "additional_unit_activity_bank_count": 15,
   "additional_unit_activity_bank_status": "DRAF_SEMAK_BELUM_READY",
   "primary_crosswalk_file": "rpt_2027/bahasa_arab/pdp_001_012_DRAF.csv",
@@ -404,12 +410,12 @@
   "external_source_registry_path": "audits/bahasa_arab_external_reference_index_20261105.json",
   "external_source_status": "WEB_REFERENCE_DISCOVERED; link cataloged in Drive only, no textbook PDFs copied from public internet",
   "bibliography_file": "audits/bahasa_arab_buku_teks_bibliography_20261105.json",
-  "total_provisional_rph_count": 202,
+  "total_provisional_rph_count": 218,
   "latest_technical_a4_validation": {
-    "source_commit": "2e8aee781024c49a6e1af867f39fc447bf0f8199",
-    "github_actions_run": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42134760787",
-    "word_document_count": 154,
-    "pdf_document_count": 154,
+    "source_commit": "40fa8694a3848be110a81bf41dc1714a17bb7cbf",
+    "github_actions_run": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42140759459",
+    "word_document_count": 218,
+    "pdf_document_count": 218,
     "pdf_pages_each": 1,
     "status": "PASSED_OFFLINE_TECHNICAL_ONLY",
     "release_approval": false
@@ -420,6 +426,15 @@
       "github_actions_run": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42132565716",
       "word_document_count": 138,
       "pdf_document_count": 138,
+      "pdf_pages_each": 1,
+      "status": "PASSED_OFFLINE_TECHNICAL_ONLY",
+      "release_approval": false
+    },
+    {
+      "source_commit": "2e8aee781024c49a6e1af867f39fc447bf0f8199",
+      "github_actions_run": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42134760787",
+      "word_document_count": 154,
+      "pdf_document_count": 154,
       "pdf_pages_each": 1,
       "status": "PASSED_OFFLINE_TECHNICAL_ONLY",
       "release_approval": false

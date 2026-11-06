@@ -206,5 +206,15 @@
   ],
   "final_ready": 0,
   "release_authorized": false,
-  "review_limitations": "Candidate code and actual year 2027 distribution unapproved; source page image inspection of printed pages, no official/teacher certification."
+  "review_limitations": "Candidate code and actual year 2027 distribution unapproved; source page image inspection of printed pages, no official/teacher certification.",
+  "corrections": [
+    {
+      "pdp": "040",
+      "page_printed": 62,
+      "old_phrase": "هَذَا رِجْل",
+      "corrected_phrase": "هَذِهِ رِجْل",
+      "reason": "الرِّجْل feminine noun; matching demonstrative هذه",
+      "date": "2026-11-06"
+    }
+  ]
 }

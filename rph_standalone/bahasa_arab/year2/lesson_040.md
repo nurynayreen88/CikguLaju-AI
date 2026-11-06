@@ -4,11 +4,11 @@
 **Fokus PdP:** Ayat mudah tentang anggota dan kebersihan
 **SK/SP cadangan:** 1.3 / 1.3.2; pilihan awal berdasarkan kemahiran latihan pada halaman bercetak 62, belum padanan RPT 2027 atau kelulusan DSKP individu.
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
-**Kosa kata / ayat:** هَذِهِ عَيْن، هَذِهِ أُذُن، هَذَا رِجْل، هَذِهِ أَسْنَان
+**Kosa kata / ayat:** هَذِهِ عَيْن، هَذِهِ أُذُن، هَذِهِ رِجْل، هَذِهِ أَسْنَان
 **Objektif pembelajaran:** Menyatakan dua daripada tiga ayat lengkap berdasarkan gambar.
 **Kriteria kejayaan:** Murid menunjukkan penguasaan minimum berdasarkan objektif dan penilaian individu; tindakan pemulihan direkod oleh guru.
 
-**Set induksi:** Guru memaparkan gambar mata, tangan dan gigi, murid meneka ayat Arab.
+**Set induksi:** Guru memaparkan gambar mata, telinga, kaki dan gigi, murid meneka ayat Arab.
 
 **Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan ayat anggota dalam h62 dan membimbing murid memadankan kata tunjuk serta kata nama yang tepat.
 
