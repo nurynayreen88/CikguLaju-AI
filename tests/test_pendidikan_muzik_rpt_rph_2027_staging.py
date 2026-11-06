@@ -721,6 +721,23 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
                          {f"MZ-Y{year}-{pdp:02d}" for year in (2, 3, 4, 6) for pdp in (34, 35)})
         self.assertFalse(audio_released)
 
+    def test_teacher_facing_music_sections_exclude_internal_audio_audit_notes(self):
+        """Audit notes belong in source metadata, not teacher classroom instructions."""
+        heading = re.compile(r"^\\*\\*(Objektif|Set [Ii]nduksi|Aktiviti [12]|Pengukuhan dan pentaksiran|Penutup|Bahan)[^*]*\\*\\*", re.I)
+        internal = re.compile(
+            r"audio.{0,50}belum|belum.{0,50}(?:audio|fail)|"
+            r"RPT lama|bukti audio|kod SP.{0,40}menunggu|"
+            r"tanpa mereka-reka nama|tertakluk semakan DSKP",
+            re.I,
+        )
+        for year in range(2, 7):
+            for pdp in range(1, 36):
+                path = MUSIC / "rpt_rph_2027" / f"year{year}" / f"rph_pdp_{pdp:02d}.md"
+                for line in path.read_text(encoding="utf-8").splitlines():
+                    if heading.match(line):
+                        self.assertIsNone(internal.search(line),
+                                          f"Teacher-facing audit note in Y{year} PdP{pdp:02d}: {line}")
+
     def test_rpt_y2_y5_review_notes_match_evidence(self):
         base = MUSIC / "rpt_rph_2027"
         for year in (2, 5):
