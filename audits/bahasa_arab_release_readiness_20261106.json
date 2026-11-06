@@ -11,9 +11,9 @@
     "source_page_draft_reviewed": 218,
     "preliminary_year6_page_candidates": 0,
     "one_page_A4_docx_pdf_ci_verified": true,
-    "render_check_ci": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42134760787",
-    "word_generated_in_ci": 154,
-    "pdf_generated_in_ci": 154,
+    "render_check_ci": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42140759459",
+    "word_generated_in_ci": 218,
+    "pdf_generated_in_ci": 218,
     "year6_text_source_reviewed": 12,
     "year2_text_source_reviewed": 12,
     "year2_sp_book_ocr_ambiguous": 4,
@@ -39,7 +39,7 @@
     "year2_unit3_candidate_rph": 16,
     "verified_a4_render_for_all_202": false,
     "year2_unit4_candidate_rph": 16,
-    "verified_a4_render_for_all_218": false
+    "verified_a4_render_for_all_218": true
   },
   "release_checks": [
     {
@@ -75,7 +75,7 @@
     {
       "id": "word_pdf_programmatic_a4",
       "status": "PASS_TECHNICAL_ONLY",
-      "detail": "Historical 202 DOCX+PDF one A4 technical passed https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42140092450. 218 new collection not yet passed."
+      "detail": "218 Word + 218 PDFs exactly 1 A4 page passed offline technical preview, https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42140759459. Pedagogic, Arabic, and RPT 2027 readiness still blocked."
     },
     {
       "id": "manual_pedagogic_approval",

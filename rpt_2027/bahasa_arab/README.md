@@ -117,3 +117,8 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 ## Tahun 2 Unit 4 — 6 Nov 2026
 - **16 RPH DRAF** PdP045–060 bagi `أحافظ على الأدوات الدراسية` menggunakan ilustrasi Buku Teks asal KSSR Semakan 2017 bercetak 76–94, PDF page+12. Fail `year2_unit4_pdp045_060_DRAF.csv` dan `audits/bahasa_arab_y2_unit4_pdp045_060_visual_audit_20261106.json`.
 - Tahun2 mempunyai **60 calon PdP merentas 4 unit**, belum dibuktikan sebagai RPT 2027 tahunan lengkap atau READY. Keseluruhan 218 draf Tahun2–6, 0 FINAL READY. CI baru 218 masih perlu diperiksa.
+
+### 218-doc QA teknikal dan pembetulan bahasa (6 Nov 2026)
+- [218 DOCX + 218 PDF tepat satu halaman A4 LULUS](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42140759459), tahap teknikal sahaja. Struktur staging juga lulus (run 42140793745).
+- RPH Tahun2 PdP040 Unit3 h62: `هَذَا رِجْل` dibetulkan kepada `هَذِهِ رِجْل` (kata nama feminin), tanpa mengubah struktur PdP.
+- **0 FINAL READY** kerana keseluruhan RPT 2027, kod SP dan bukti buku halaman individu, guru/semakan bahasa serta parity Telegram/Web belum lulus; produksi tidak diubah.
