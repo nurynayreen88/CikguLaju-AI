@@ -260,7 +260,10 @@ def create_native_db_rph_blueprint(runtime):
                 "unit": args["unit"],
                 "lesson": int(args["lesson"]),
             }
-            _resolve_verified_rpt(runtime, selection)
+            state = _native_state(runtime, selection, {
+                "class": "", "date": "", "time": "", "students": "",
+            })
+            _native_text(runtime, state)
         except (ValueError, SourceUnavailable):
             return jsonify({"available": False}), 404
         return jsonify({"available": True, "generator": "telegram-native"})
