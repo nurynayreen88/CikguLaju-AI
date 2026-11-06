@@ -61,7 +61,8 @@
     if(!confirm.checked||!slot.can_prepare||loading)return;
     btn.disabled=true;
     try{
-     await window.prepareRphFromToday(slot,loadedDate,editor);
+     const opened=await window.prepareRphFromToday(slot,loadedDate,editor);
+     if(!opened)return;
      for(const other of list.querySelectorAll(".daily-rph-prepare")){
       const chosen=other===btn;
       other.textContent=chosen?"Tukar Tajuk/Lesson":"Pilih Tajuk/Lesson";
@@ -111,7 +112,13 @@
   }
  }
  confirm.addEventListener("change",()=>{
-  if(!confirm.checked)window.closeRphFromToday?.();
+  if(!confirm.checked){
+   window.closeRphFromToday?.();
+   for(const btn of list.querySelectorAll(".daily-rph-prepare")){
+    btn.setAttribute("aria-expanded","false");
+    btn.textContent="Pilih Tajuk/Lesson";
+   }
+  }
   refreshButtons();
  });
  refresh.addEventListener("click",()=>{void load(dateInput.value);});
