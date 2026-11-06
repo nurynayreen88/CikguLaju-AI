@@ -19,9 +19,13 @@ jobs:
         run: python -m unittest discover -s rph_standalone/pendidikan_islam_draf_2027 -p 'test_pi*.py' -v
       - name: Generate all-lesson QA ledger with academic NO-GO
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_quality_audit.py --output pi_quality_audit_696.json
-      - name: Upload isolated QA ledger (not teacher material)
+      - name: Prepare 690 domain-specific editor suggestions (not RPH)
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_pedagogy_review.py --output pi_pedagogy_proposals_690.json
+      - name: Upload isolated QA ledger and review queue (not teacher material)
         uses: actions/upload-artifact@v4
         with:
           name: pi-2027-696-staging-quality-audit
-          path: pi_quality_audit_696.json
+          path: |
+            pi_quality_audit_696.json
+            pi_pedagogy_proposals_690.json
           retention-days: 30
