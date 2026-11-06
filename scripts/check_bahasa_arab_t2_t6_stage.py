@@ -209,6 +209,17 @@ def check() -> None:
     assert "frasa" in y2_source["items"][10]["focus"].lower()
     assert all(not y2_source["items"][i]["sp_printed_on_book_confirmed"] for i in (9,10))
     assert y2_source["ambiguous_book_sp_pdp"] == ["002","004","010","011"]
+    assert y2_source["text_source_corrob_sp_pdp"] == ["010","011"]
+    assert y2_source["book_sp_print_visual_unresolved"] == ["002","004","010","011"]
+    assert all(y2_source["items"][i]["book_ebook_html_sp_corroborated"]
+               and y2_source["items"][i]["book_ebook_html_sp_code"] == y2_source["items"][i]["sp"]
+               and not y2_source["items"][i]["sp_printed_on_book_confirmed"]
+               for i in (9,10))
+    assert readiness["completed"]["year2_sp_book_html_code_corroborated"] == 2
+    assert m["years"]["2"]["source_book_sp_html_code_corroborated"] == ["010","011"]
+    rph4 = (SUBJECT / "year2" / "lesson_004.md").read_text(encoding="utf-8")
+    assert "SP 2.1.1" in rph4 and "meniru dan mengulang bacaan huruf" in rph4
+    assert "sekurang-kurangnya 4 daripada 5 sebutan" in rph4
     assert all(x["teacher_approval"] is False and x["ready"] is False for x in y2_source["items"])
     assert y2_source["release_authorized"] is False
     assert m["years"]["2"]["source_evidence_pdp001_012"] == "audits/bahasa_arab_y2_pdp001_012_text_source_audit_20261106.json"
