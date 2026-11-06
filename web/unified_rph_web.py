@@ -832,4 +832,81 @@ def create_blueprint():
             response.headers["X-RPH-Trial-Remaining"] = str(trial_remaining)
         return response
 
+    # Extra teaching resources are independent of RPH generation credits.
+    # Selection is still bound to the exact logged-in user's source catalog.
+    # The Web never guesses an RPT ID, exposes Telegram credentials or
+    # copies files from an unsynchronized Web-side legacy database.
+    def _extra_selection():
+        if set(request.args) != {"year", "subject", "unit", "lesson"}:
+            raise ValueError("Unexpected extra resource selection")
+        year, sub, unit, lesson, component = _selection()
+        if component is not None:
+            raise ValueError("Unsupported extra resource component")
+        if sub == "ENGLISH" and year in (2, 3, 4):
+            found = [row for row in source_records(year, sub)
+                     if row["unit"] == unit and row["token"] == lesson]
+            if len(found) != 1:
+                raise ValueError("English Lesson identity mismatch")
+            return year, sub, unit, lesson, found[0]["lesson"]
+        if sub == "MUZIK" and year in range(2, 7):
+            return year, sub, unit, lesson, None
+        raise ValueError("No verified source for optional resources")
+
+    @bp.get("/api/web/rph/extra-materials")
+    def extra_materials():
+        account, error = _account()
+        if error is not None:
+            return error
+        try:
+            year, sub, unit, token, number = _extra_selection()
+        except (ValueError, TypeError):
+            # Other subjects genuinely have no extra-material bridge yet.
+            return jsonify({"items": [], "status": "BELUM_TERSEDIA"})
+        try:
+            from web.native_telegram_extra_materials_20261106 import (
+                english_workbook_metadata, music_source_links,
+            )
+            if sub == "ENGLISH":
+                label = english_workbook_metadata(year, number)
+                items = []
+                if label:
+                    from urllib.parse import urlencode
+                    params = urlencode({"year":year, "subject":sub,
+                                      "unit":unit, "lesson":token})
+                    items.append({"type":"workbook", "title":label,
+                                  "url":"/api/web/rph/english-workbook?"+params,
+                                  "action":"Download"})
+            else:
+                # Telegram verifies the Music Unit/PdP pair and returns only
+                # original owner-hosted Google Drive VIEW links.
+                items = music_source_links(year, unit, token)
+        except Exception:
+            return jsonify({"items": [],"error":
+                            "Sumber bahan tambahan Telegram belum dapat disahkan."}), 503
+        return jsonify({"items": items, "status":"SUMBER_ASAL",
+                        "note": ("Pautan audio luar: akses, kandungan dan hak edar "
+                                 "belum disahkan." if sub == "MUZIK" else
+                                 "Buku Aktiviti dipetik daripada halaman sumber yang dipadankan; "
+                                 "tiada janaan RPH digunakan.")})
+
+    @bp.get("/api/web/rph/english-workbook")
+    def english_workbook():
+        account, error = _account()
+        if error is not None:
+            return error
+        try:
+            year, sub, unit, token, number = _extra_selection()
+            if sub != "ENGLISH":
+                raise ValueError("Wrong resource")
+        except (ValueError, TypeError):
+            return jsonify({"error":"Pilihan Lesson Buku Aktiviti tidak sah"}), 400
+        try:
+            from web.native_telegram_extra_materials_20261106 import english_workbook_pdf
+            content = english_workbook_pdf(year, number)
+        except Exception:
+            return jsonify({"error":"Fail Buku Aktiviti dari Telegram belum tersedia"}), 503
+        return send_file(BytesIO(content), mimetype="application/pdf",
+                         as_attachment=True, conditional=False,
+                         download_name=f"CikguLaju_English_Y{year}_Lesson_{number:03d}_Workbook.pdf")
+
     return bp
