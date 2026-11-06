@@ -11,6 +11,9 @@ from web.teacher_profile_routes import bp as teacher_profile_bp
 app.register_blueprint(teacher_profile_bp)
 from web.web_payment_routes import bp as web_payment_bp
 app.register_blueprint(web_payment_bp)
+from web.web_referral_routes import install as install_web_referral
+install_web_referral(app)
+
 
 
 def _web_config_status():
@@ -47,6 +50,15 @@ def web_payment_script():
     file = Path(__file__).resolve().parents[1] / "web_v1_static_preview" / "web-payment.js"
     return send_file(file, mimetype="application/javascript", max_age=1800,
                      conditional=True)
+
+
+@app.get("/assets/web-referral.js")
+def web_referral_script():
+    """Private referral sharing UI, authenticated API only."""
+    from pathlib import Path
+    from flask import send_file
+    path = Path(__file__).resolve().parents[1] / "web_v1_static_preview" / "web-referral.js"
+    return send_file(path, mimetype="application/javascript", max_age=1800, conditional=True)
 
 
 @app.get("/healthz")

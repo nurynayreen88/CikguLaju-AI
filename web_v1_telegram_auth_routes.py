@@ -70,6 +70,14 @@ def telegram_widget_callback():
         return jsonify({"error": "account lookup unavailable"}), 503
     if not account or account.get("telegram_user_id") != uid:
         return jsonify({"error": "existing account required"}), 403
+    # Capture only after a cryptographically verified Telegram login and
+    # a successful lookup of this existing user in shared Supabase.
+    try:
+        from web.web_referral_routes import capture_after_verified_login
+        capture_after_verified_login(uid)
+    except Exception:
+        # Referral must never block a valid account login.
+        current_app.logger.warning("Web referral bridge unavailable")
     ticket = issue_session_ticket(uid, config["CIKGULAJU_WEB_SESSION_SECRET"])
     response = make_response(jsonify({"authenticated": True}), 200)
     response.set_cookie(COOKIE, ticket, secure=True, httponly=True, samesite="Lax",
