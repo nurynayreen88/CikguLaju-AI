@@ -24,7 +24,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y --no-install-recommends libreoffice-writer
-          python -m pip install 'python-docx==1.1.2' 'pypdf==5.1.0'
+          python -m pip install 'python-docx==1.1.2' 'pypdf==5.1.0' 'flask>=3.0,<4'
       - name: Render all 108 RPH through exact native Word-table snapshot
         run: python scripts/render_sejarah_native_word_a4_2027.py
       - name: Preserve internal output for failed or successful QA
