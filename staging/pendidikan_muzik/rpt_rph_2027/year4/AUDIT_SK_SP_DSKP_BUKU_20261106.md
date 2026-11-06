@@ -1,3 +1,8 @@
+
+## 6 November 2026 — keputusan kerja staging
+
+Kod bercetak DSKP Muzik dan buku teks telah diselaraskan pada draf RPH/RPT Tahun 4: PdP21 `3.2.2/3.2.3`, PdP24 `3.2.1/3.2.2/3.2.3`. Kod sumber RPT lama kekal pada `sp_rpt_source` dalam manifest. Bagi PdP21, teras mencipta melodi dihadkan kepada B/A/G; C’ daripada aktiviti buku teks hanya pengayaan pilihan. Ini **bukan kelulusan akhir** kerana SK 3.1 dan SP 3.2.x pada cetakan DSKP masih tidak seragam, skor visual belum disahkan dan tiada sign-off kurikulum. Produksi tidak berubah.
+
 # Pendidikan Muzik Tahun 4 — Audit Silang SK/SP DSKP dan Buku Teks (6 Nov 2026)
 
 **Sumber PDF DSKP:** [GuruBesar_DSKP_Pendidikan_Muzik_Tahun_4.pdf](https://drive.google.com/file/d/1C0e_KVtPA3bx7dlFiFEaAyT94RWzQVob/view) (KSSR Semakan, terbit 2019). **Buku:** [GuruBesar_BukuTeks_Pendidikan_Kesenian_T4_SK.pdf](https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view) (DBP2019).
