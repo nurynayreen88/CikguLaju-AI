@@ -60,6 +60,32 @@ def validate_rows(subject, year, records):
     return True
 
 
+def week_merge_ranges(records):
+    """Contiguous table-row ranges (1-indexed; row 0 is the table header).
+
+    Only merge records that share an *explicit* week label and identical A/B
+    ranges. Missing/placeholder weeks must remain separate to prevent all
+    unallocated PdP (for example RBT) being incorrectly grouped together.
+    """
+    ranges = []
+    start = 0
+    def key(row):
+        week = (row.get("week") or "").strip()
+        if week.casefold() in ("", "belum ditetapkan", "belum ditentukan", "agihan cadangan"):
+            return None
+        return (week, *(row.get(f"{group}_{end}") or "" for group in ("a", "b")
+                        for end in ("start", "end")))
+    while start < len(records):
+        current = key(records[start])
+        end = start
+        if current is not None:
+            while end + 1 < len(records) and key(records[end + 1]) == current:
+                end += 1
+        ranges.append((start + 1, end + 1))
+        start = end + 1
+    return ranges
+
+
 def build_preview(subject, year, records, destination):
     """Create compact, multi-page landscape PDF using only trusted row content.
 
@@ -172,7 +198,9 @@ def build_preview(subject, year, records, destination):
     headings = ("MINGGU / TARIKH", "UNIT / TAJUK / PDP",
                 "SK", "SP", "CATATAN / BAHAN")
     table_rows = [[p(t,size=8.0,leading=11.7,strong=True,color="#25323a") for t in headings]]
-    for row in records:
+    week_ranges = week_merge_ranges(records)
+    grouped_followers = {index for first, last in week_ranges for index in range(first + 1, last + 1)}
+    for index, row in enumerate(records, 1):
         week = row.get("week","").strip() or "Belum ditetapkan"
         weektext = (f"{week}\nKumpulan A:\n{range_text(row,'a')}"
                     f"\nKumpulan B:\n{range_text(row,'b')}")
@@ -183,7 +211,7 @@ def build_preview(subject, year, records, destination):
         if row.get("topic","").strip():
             unit_lines.append(p(row["topic"].strip(),size=7.8,leading=11.6))
         table_rows.append([
-            p(weektext,size=7.0,leading=11.3),
+            "" if index in grouped_followers else p(weektext,size=7.0,leading=11.3),
             unit_lines,
             p(row["sk"],size=8,leading=12),
             p(row["sp"],size=7.8,leading=11.8),
@@ -205,10 +233,20 @@ def build_preview(subject, year, records, destination):
         ("BOTTOMPADDING",(0,0),(-1,0),9),
         ("TOPPADDING",(0,1),(-1,-1),9),
         ("BOTTOMPADDING",(0,1),(-1,-1),9),
-        ("LINEBELOW",(0,0),(-1,-1),0.35,line),
+        ("LINEBELOW",(0,0),(-1,0),0.5,line),
+        ("LINEBELOW",(1,1),(-1,-1),0.35,line),
         ("LINEBEFORE",(1,0),(-1,-1),0.3,line),
         ("BOX",(0,0),(-1,-1),0.6,ink)
     ]))
+    # The first column is a genuine vertical table merge (rowspan) for
+    # consecutive lessons within the same sourced week. Lesson/PdP, SK and SP
+    # stay on their own rows in columns 2-5.
+    for first, last in week_ranges:
+        tbl.setStyle(TableStyle([
+            ("BACKGROUND", (0, first), (0, last), colors.HexColor("#eaf1e3")),
+            ("VALIGN", (0, first), (0, last), "MIDDLE"),
+            ("LINEBELOW", (0, last), (0, last), 0.35, line),
+        ] + ([("SPAN", (0, first), (0, last))] if last > first else [])))
     story = cover + [tbl]
     doc.build(story, onFirstPage=header, onLaterPages=header)
     if not out.is_file() or out.stat().st_size < 5000:
