@@ -121,6 +121,41 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
             {"3.2.1", "3.2.2", "3.2.3", "4.2.1"},
         )
 
+    def test_dskp_code_presence_exact_conflict_allowlist_and_release_gate(self):
+        """Fail closed if a new unknown SP or premature approval appears."""
+        root = MUSIC / "rpt_rph_2027"
+        audit = json.loads((root / "DSKP_SP_CODE_PRESENCE_175_20261106.json").read_text(encoding="utf-8"))
+        allowed = {
+            "MZ-Y4-21": ["3.1.2", "3.1.3"],
+            "MZ-Y4-24": ["3.1.1", "3.1.2", "3.1.3"],
+        }
+        self.assertEqual(audit["summary"]["rph_count"], 175)
+        self.assertEqual(audit["summary"]["sp_present_rph"], 173)
+        self.assertEqual(audit["summary"]["sp_absent_rph"], 2)
+        self.assertEqual(set(audit["summary"]["conflicted_pdps"]), set(allowed))
+        self.assertEqual(len(audit["records"]), 175)
+
+        manifests = {year: json.loads((root / f"year{year}" / "pdp_manifest.json").read_text(encoding="utf-8")) for year in YEAR_COUNTS}
+        seen = set()
+        mismatches = {}
+        for record in audit["records"]:
+            identity = record["pdp_id"]
+            self.assertNotIn(identity, seen)
+            seen.add(identity)
+            year, pdp = record["year"], record["pdp"]
+            manifest = manifests[year]["pdps"][pdp - 1]
+            self.assertEqual(manifest["pdp_id"], identity)
+            self.assertEqual(record["manifest_sp"], manifest["sp"])
+            self.assertFalse(record["official_approval"], identity)
+            self.assertFalse(record["semantic_alignment_verified"], identity)
+            if record["sp_not_found_in_source"]:
+                mismatches[identity] = record["sp_not_found_in_source"]
+                self.assertEqual(year, 4)
+                self.assertEqual(record["sp_not_found_in_source"], allowed[identity])
+                self.assertFalse(manifest["dskp_crosswalk_approved"])
+        self.assertEqual(seen, {f"MZ-Y{year}-{pdp:02d}" for year in YEAR_COUNTS for pdp in range(1, 36)})
+        self.assertEqual(mismatches, allowed)
+
     def test_year4_crosswalk_sources_preserved_and_not_approved(self):
         manifest = json.loads((MUSIC / "rpt_rph_2027" / "year4" / "pdp_manifest.json").read_text(encoding="utf-8"))
         expected = {
