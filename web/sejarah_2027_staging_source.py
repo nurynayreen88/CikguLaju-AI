@@ -59,6 +59,16 @@ def lesson(year,pdp,*,root=ROOT):
         plan=list(csv.DictReader(fh))
     if len(plan)!=36 or plan[pdp-1]["ID"]!=row["id"]:
         raise SejarahNotReady("RPT dan RPH tidak sepadan")
+    # One lesson can only be READY if its RPH, individual Markdown and RPT
+    # row agree. A valid standalone JSON flag is not a release on its own.
+    if plan[pdp-1].get("Status")!="READY":
+        raise SejarahNotReady("RPT PdP masih DRAF")
+    md_path=base/source_paths(year,pdp)[0]
+    if md_path.is_symlink() or not md_path.is_file() or md_path.stat().st_size>100_000:
+        raise SejarahNotReady("RPH individu belum disediakan")
+    text=md_path.read_text(encoding="utf-8")
+    if not any(line.strip()=="**Status:** FINAL_READY" for line in text.splitlines()):
+        raise SejarahNotReady("RPH individu belum mempunyai status READY yang disahkan")
     # Independently curated release ledger: editing a lesson's own READY flags
     # can never make it deliverable. Both per-lesson and ledger approvals are required.
     manifest_path = base/"audits/sejarah_y4_y6_release_approval_manifest_20261106.json"
