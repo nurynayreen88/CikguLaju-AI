@@ -31,7 +31,7 @@ class SpecialRphWebTests(unittest.TestCase):
 
     def test_unauthenticated_user_sees_no_source_or_document(self):
         with patch("web.special_activities_web._account",
-                   return_value=(None,(jsonify({"error":"Log masuk dahulu"}),401))):
+                   side_effect=lambda: (None,(jsonify({"error":"Log masuk dahulu"}),401))):
             for endpoint in ("options","subjects","word","pdf"):
                 with self.subTest(endpoint=endpoint):
                     url="/api/web/aktiviti-khas/"+endpoint
@@ -116,9 +116,13 @@ class SpecialRphWebTests(unittest.TestCase):
             quota.assert_not_called()
 
     def test_digest_and_subject_cannot_be_forged(self):
+        def trusted_source(endpoint,**kw):
+            if (kw.get("query") or {}).get("subject")=="Sejarah":
+                return {"status":"DRAFT_REVIEW","source_digest":DIGEST,"items":[]}
+            return SOURCE
         with patch("web.special_activities_web._account",return_value=(self.account,None)),\
              patch("web.special_activities_web._has_paid_access",return_value=True),\
-             patch("web.special_activities_web._private_request",return_value=SOURCE) as up:
+             patch("web.special_activities_web._private_request",side_effect=trusted_source) as up:
             a=self.client.get("/api/web/aktiviti-khas/pdf",
                               query_string=self.qs(source_digest="f"*64))
             self.assertEqual(a.status_code,503)
@@ -152,7 +156,7 @@ class SpecialRphWebTests(unittest.TestCase):
         self.assertIn('"/api/web/aktiviti-khas/"+fmt+"?"',js)
         self.assertIn('source_digest',js)
         self.assertIn('DRAF',html)
-        self.assertIn("59",html) if "59" in html else None
+        self.assertIn("39 aktiviti Tamat Sukatan",html)
         self.assertNotIn("app.py",js)
 
 
