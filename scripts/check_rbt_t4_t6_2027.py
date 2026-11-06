@@ -84,6 +84,17 @@ def check():
     assert record["visual_lesson_approvals"] == 0
     assert pages_mapped_year4 == 32
     assert total == 96 and len(unique_all) == 114
+    approvals = json.loads((ROOT / "audits/rbt_t4_t6_manual_release_approval_manifest_20261106.json").read_text(encoding="utf-8"))
+    assert approvals["item_count"] == 96
+    assert approvals["approvals_granted"] == approvals["release_ready_count"] == 0
+    assert len(approvals["individual_review"]) == 96
+    assert len({a["id"] for a in approvals["individual_review"]}) == 96
+    for a in approvals["individual_review"]:
+        assert a["release_ready"] is False and a["semakan_individu_guru"] is False
+        assert a["aktiviti_dalam_buku_diluluskan"] is False
+        assert a["docx_pdf_native_a4_disahkan"] is False
+        assert a["rt_web_telegram_verified"] is False
+        assert len(a["pending"]) >= 6
     print("PASS 96/96 RPH project-specific (technical checks only).")
     print("Buku Teks T4: 32/32 PdP have printed-page candidates, "
           "0/32 independently approved visual tasks.")
