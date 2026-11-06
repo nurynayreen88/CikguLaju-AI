@@ -22,7 +22,7 @@ class PioneerSupabaseTests(unittest.TestCase):
         calls = []
         def request(method, path, **kwargs):
             calls.append((method,path,kwargs))
-            return {"approved":True,"count":1,"remaining":499}
+            return {"approved":True,"count":1,"remaining":199}
         grant_pioneer(request, 42, "ref", 7, True)
         self.assertEqual(len(calls),1)
         self.assertEqual(calls[0][1],"rpc/approve_pioneer_early_bird")
@@ -51,8 +51,8 @@ class PioneerSupabaseTests(unittest.TestCase):
                         request,42,"a-new-ref",7,payment_id,verified=verified)
 
     def test_quota(self):
-        def request(method, path, **kwargs): return 499
-        self.assertEqual(pioneer_availability(request),(499,1))
+        def request(method, path, **kwargs): return 199
+        self.assertEqual(pioneer_availability(request),(199,1))
 
     def test_count_failure_closed(self):
         with self.assertRaises(RuntimeError):

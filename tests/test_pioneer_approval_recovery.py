@@ -92,17 +92,30 @@ class TestStalePioneerApproval(unittest.TestCase):
             "No premature payment note allowed")
         self.ns["_latest_pending_payment"] = lambda cid: None
         telegram = SimpleNamespace(ok=True)
-        with patch("pioneer_telegram.pioneer_availability", return_value=(0, 10)):
+        with patch("pioneer_telegram.pioneer_availability", return_value=(0, 200)):
             with patch("requests.post", return_value=telegram) as sent:
                 self.ns["callback"](PAYER, "pioneer_pay")
         self.assertEqual(sent.call_count, 1)
         self.assertEqual(self.ns["state"][PAYER]["waiting"], "payment_proof")
         self.assertEqual(self.ns["state"][PAYER]["payment_amount"], 10.0)
         self.ns["state"][PAYER].clear()
-        self.ns["callback"](PAYER, "pioneer_receipt")
+        with patch("pioneer_telegram.pioneer_availability", return_value=(0, 200)):
+            self.ns["callback"](PAYER, "pioneer_receipt")
         self.assertEqual(self.ns["state"][PAYER]["payment_amount"], 10.0)
         self.assertEqual(self.ns["state"][PAYER]["waiting"], "payment_proof")
         self.assertEqual(self.bot.marked, [])
+
+    def test_full_batch_blocks_new_join_receipt_and_qr(self):
+        self.ns["_latest_pending_payment"]=lambda cid: None
+        with patch("pioneer_telegram.pioneer_availability", return_value=(200, 0)):
+            self.ns["callback"](PAYER, "pioneer_join")
+            self.assertIn("sudah penuh",self.bot.messages[-1][1])
+            self.assertNotIn("pioneer_pay",self.buttons())
+            self.ns["callback"](PAYER, "pioneer_receipt")
+            self.assertIn("penuh",self.bot.messages[-1][1])
+            self.ns["callback"](PAYER, "pioneer_pay")
+            self.assertIn("penuh",self.bot.messages[-1][1])
+        self.assertNotIn("payment_proof",str(self.ns["state"]))
 
     def test_two_part_legacy_button_reopens_current_card_but_never_approves(self):
         self.ns["callback"](ADMIN, "admin_approve|1")

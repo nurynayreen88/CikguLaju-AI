@@ -4,7 +4,7 @@ The caller MUST enforce admin identity and verify the actual bank transaction.
 This module never accepts a receipt upload as proof of payment on its own.
 """
 PIONEER_PLAN = "PIONEER_LIFETIME"
-PIONEER_LIMIT = 500
+PIONEER_LIMIT = 200
 
 
 def pioneer_count(sb_request):
@@ -46,7 +46,7 @@ def grant_pioneer(sb_request, telegram_user_id, payment_reference,
     admin = int(approved_by)
     if uid <= 0 or admin <= 0:
         raise ValueError("Valid user and admin IDs required")
-    # Database RPC serializes grants, preventing two admins exceeding 500.
+    # Database RPC serializes grants, preventing two admins exceeding 200.
     return sb_request("POST", "rpc/approve_pioneer_early_bird", json={
         "p_telegram_user_id": uid,
         "p_payment_reference": reference,

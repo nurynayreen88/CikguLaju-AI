@@ -166,6 +166,10 @@ def install(ns):
                 return send(cid, "🏆 <b>Status Rakan Pembangun anda: AKTIF</b>\n\n" + progress + "\n\n♾️ Akses sepanjang CikguLaju AI beroperasi.",
                             [[{"text": "🏠 Menu Utama", "callback_data": "home"}]])
             count, remaining = pioneer_availability(sb)
+            if remaining == 0:
+                return send(cid, "⛔ <b>Rakan Pembangun batch pertama sudah penuh.</b>\n"
+                            "Pendaftaran baharu RM10 telah ditutup.",
+                            [[{"text":"🏠 Menu Utama","callback_data":"home"}]])
             return send(cid, "🏆 <b>RAKAN PEMBANGUN EARLY BIRD CIKGULAJU — RM10 SEKALI SAHAJA</b>\n"
                         "<b>Kelebihan Rakan Pembangun:</b>\n✅ Bayar RM10 sekali sahaja.\n✅ Guna CikguLaju AI tanpa perlu bayar langganan bulanan atau tahunan.\n♾️ Akses Rakan Pembangun seumur hidup.\n👩‍🏫 Sediakan RPH untuk pelbagai subjek.\n\n" + quota_text() + "\n"
                         "Status Rakan Pembangun kekal walaupun sistem dikemas kini.",
@@ -179,6 +183,9 @@ def install(ns):
                 return send(cid, "⚠️ Ada permohonan bayaran lain yang masih menunggu semakan.")
             if pending and pending.get("notes") == "proof_received_admin_notified":
                 return send(cid, "⌛ Resit Rakan Pembangun RM10 sudah diterima. Tunggu semakan admin; tidak perlu hantar semula.")
+            if not pending and pioneer_availability(sb)[1] == 0:
+                return send(cid, "⛔ Kuota Rakan Pembangun batch pertama sudah penuh. "
+                            "Permohonan baharu dan muat naik resit baharu ditutup.")
             # Selecting upload is a draft intent, NOT a payment request.
             draft = state.setdefault(cid, {})
             draft["waiting"] = "payment_proof"
