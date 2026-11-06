@@ -23,6 +23,13 @@ class RPT2026LayoutQA(unittest.TestCase):
                                 and len(row["sp_display"]) > len(row["sp"]) + 12
                                 for row in rows))
         self.assertEqual(len(rbt_records(4)),32)
+        for year in (4, 5, 6):
+            rows = rbt_records(year)
+            self.assertEqual(len(rows), 32)
+            self.assertTrue(all(row["sk_display"].startswith(row["sk"].split("/")[0].strip() + " — ") for row in rows))
+            self.assertTrue(all(row["sp_display"].startswith(row["sp"].split("/")[0].strip() + " — ") for row in rows))
+            self.assertTrue(all(len(row["sk_display"]) > len(row["sk"]) + 5
+                                and len(row["sp_display"]) > len(row["sp"]) + 8 for row in rows))
         self.assertEqual(len(moral_records(3)),96)
         for subject,year,loader in (
             ("psv",2,psv_records),("rbt",4,rbt_records),("moral",3,moral_records)
