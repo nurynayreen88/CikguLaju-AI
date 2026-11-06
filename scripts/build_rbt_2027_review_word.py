@@ -167,7 +167,7 @@ def main():
         assert len(lessons)==32 and all(not l["review"]["release_ready"] for l in lessons)
         folder=root/f"tahun_{y}";folder.mkdir(exist_ok=True)
         for l in lessons:
-            p=folder/(l["id"]+"_DRAF.docx")
+            p=folder/("RPH_"+l["id"].replace("-","_")+"_DRAF.docx")
             rph_doc(l).save(p)
             total+=1
         with (ROOT/f"rpt_2027/rbt/RPT_RBT_T{y}_2027_DRAF.csv").open(encoding="utf-8-sig",newline="") as f:
