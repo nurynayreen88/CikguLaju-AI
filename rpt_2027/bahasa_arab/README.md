@@ -104,3 +104,8 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 - 16 draf individu `year3/lesson_013..028.md` bagi **ملابسي الجميلة**, disemak pada imej Buku Teks asal Tahun3 (KSSR Semakan 2017) cetakan 2018; nota `audits/bahasa_arab_y3_unit2_pdp013_028_visual_audit_20261106.json` dan peta `rpt_2027/bahasa_arab/year3_unit2_pdp013_028_DRAF.csv`.
 - **AWAS Tahun6**: Fail Drive `GuruBesar_BukuTeks_Bahasa_Arab_T6.pdf` mempunyai enam unit KSSR LAMA (antaranya اليوم الرياضي المدرسي) dan **bukan** edisi DBP/KPM 2021 KSSR Semakan (empat unit bermula حياتنا أجمل بالنظافة). Jangan jadikan PDF Drive ini sumber untuk membina Tahun6 Semakan. Cari teks edisi DBP 2021 yang sepadan ISBN 978-983-49-3300-5.
 - **170 RPH DRAF** keseluruhan, **0 FINAL READY**. Ujian teknikal untuk 170 belum lulus ketika penambahan; RPT tahunan, guru dan integrasi Telegram/Web/DB kekal diblok.
+
+## Tahun2 Unit2 — sambungan 6 Nov 2026
+- Buku Teks **KSSR Semakan 2017** Tahun2 DBP cetakan 2017 ISBN 978-983-49-1589-6 ditemui melalui sumber Drive berasingan: https://drive.google.com/file/d/13CqpBb4HosAM_-HTEN-hhBCt2W5wVXCZ/view. **Rujukan halaman bercetak (offset PDF +12)** ditetapkan supaya tiada salah peta.
+- 16 RPH individu `year2/lesson_013..028.md` Unit2 **أحب أسرتي** dengan cadangan halaman bercetak 26–43, indeks `year2_unit2_pdp013_028_DRAF.csv`, bukti `audits/bahasa_arab_y2_unit2_pdp013_028_visual_audit_20261106.json`.
+- Jumlah **186 RPH DRAF**, **0 FINAL READY**, Year2 Unit3/4 dan Year3 Unit3/4 serta Year6 Unit2/3/4 masih belum ditulis. Kod SP cetakan pada halaman, RPT 2027 dan kelulusan guru perlu disemak individu. CI 186 belum selesai semasa commit ini.
