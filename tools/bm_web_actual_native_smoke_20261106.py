@@ -6,6 +6,7 @@ payment, user mutation, AI, or production database writes.
 import io
 import os
 import uuid
+from collections import Counter
 from pathlib import Path
 from zipfile import ZipFile
 from lxml import etree
@@ -119,7 +120,56 @@ def main():
                     assert b.startswith(b"%PDF-")
                 print("PASS BM genuine source RPH", year, fmt,
                       path.stat().st_size, flush=True)
+        assert refined == len(cases), ("Real v26 BM source content did not improve", refined)
         print("BM content refined in genuine source samples", refined, flush=True)
+
+        # Read-only all-year source audit: navigation identity, actual Telegram
+        # lesson composer and native row formatter. Do not write documents or
+        # debit users in this pass. Log unresolved source cases honestly.
+        checked = Counter()
+        heading_counts = Counter()
+        errors = []
+        for year in range(2, 7):
+            groups = dict.fromkeys((
+                r["theme"], r["unit_code"], r["unit_title"], r["topic"]
+            ) for r in _bm_verified_structured_rows(db, year))
+            checked[f"year_{year}_groups"] = len(groups)
+            for theme, code, unit, topic in groups:
+                try:
+                    token = bm_sequence_token(year, theme, code, unit, topic)
+                    state = _state(runtime, year, unit, token, {
+                        "class": f"{year} Bestari", "date": "2026-11-06",
+                        "time": "08:00 - 09:00", "students": "30",
+                    })
+                    content = _content(runtime, state)
+                    before = base_rows(state, content)
+                    after = runtime._rph_rows(state, content)
+                    checked["rendered"] += 1
+                    if after["STANDARD PEMBELAJARAN"] != before["STANDARD PEMBELAJARAN"]:
+                        raise AssertionError("SP modified")
+                    if after["STANDARD KANDUNGAN"] != before["STANDARD KANDUNGAN"]:
+                        raise AssertionError("SK modified")
+                    body = str(before.get("AKTIVITI UTAMA") or "")
+                    head = body.splitlines()[0].strip()
+                    heading_counts[head[:90]] += 1
+                    if any(cue in body.casefold() for cue in _GENERIC_CUES):
+                        checked["template_detected"] += 1
+                        if _confirmed_families(state):
+                            if after["AKTIVITI UTAMA"] == before["AKTIVITI UTAMA"]:
+                                raise AssertionError("Generic BM activity with verified SP not refined")
+                            checked["template_refined"] += 1
+                        else:
+                            checked["template_no_sp_family"] += 1
+                    if after.get("AKTIVITI UTAMA") != before.get("AKTIVITI UTAMA"):
+                        checked["changed_any"] += 1
+                except Exception as exc:
+                    errors.append((year, unit, topic, type(exc).__name__, str(exc)[:150]))
+        print("BM source audit groups", dict(checked), flush=True)
+        print("BM common initial headings", heading_counts.most_common(25), flush=True)
+        print("BM source audit exceptions", errors[:25], "total", len(errors), flush=True)
+        assert checked["rendered"] >= 100, "Insufficient BM source coverage"
+        assert not errors, "Some real BM Web PdPs remain unverified"
+
     finally:
         for p in paths:
             try:
