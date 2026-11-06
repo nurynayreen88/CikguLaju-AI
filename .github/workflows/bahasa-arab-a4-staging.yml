@@ -2,7 +2,7 @@ name: BA Year 2–6 A4 RTL staging previews
 
 on:
   push:
-    branches: [staging/bahasa-arab-t2-t6-21861105, staging/bahasa-arab-y5-unit4-review-21861106, staging/bahasa-arab-y3-unit2-21861106, staging/bahasa-arab-y2-unit2-21861106, staging/bahasa-arab-y2-unit3-21861106, staging/bahasa-arab-y2-unit4-21861106]
+    branches: [staging/bahasa-arab-t2-t6-20261105, staging/bahasa-arab-y5-unit4-review-20261106, staging/bahasa-arab-y3-unit2-20261106, staging/bahasa-arab-y2-unit2-20261106, staging/bahasa-arab-y2-unit3-20261106, staging/bahasa-arab-y2-unit4-20261106]
     paths:
       - "rph_standalone/bahasa_arab/**"
       - "scripts/render_bahasa_arab_staging.py"
