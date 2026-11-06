@@ -193,35 +193,35 @@
         "1.1.2": "Membincangkan dan memerihal perubahan fizikal lelaki serta perempuan apabila akil baligh.",
         "1.1.3": "Menyatakan contoh simptom yang mungkin dialami ketika haid.",
         "1.1.4": "Membincangkan dan memerihal mitos berkaitan haid serta ihtilam.",
-        "1.1.5": "Menilai amalan terbaik pengurusan diri apabila akil baligh. 1 Menyatakan maksud akil baligh.",
+        "1.1.5": "Menilai amalan terbaik pengurusan diri apabila akil baligh.",
         "1.2.1": "Membincangkan cara menghargai dan menghormati perubahan fizikal diri sendiri.",
         "1.2.2": "Membincangkan cara menghargai dan menghormati perubahan fizikal orang lain. 1 Menyenaraikan cara menghargai dan menghormati perubahan fizikal diri sendiri.",
         "2.1.1": "Mengetahui maksud alkohol.",
         "2.1.2": "Menganalisis kesan pengambilan alkohol.",
-        "2.1.3": "Mengaplikasikan cara mengelakkan diri daripada pengambilan alkohol dalam makanan dan minuman. 1 Menyatakan maksud alkohol.",
+        "2.1.3": "Mengaplikasikan cara mengelakkan diri daripada pengambilan alkohol dalam makanan dan minuman.",
         "3.1.1": "Menyatakan maksud konflik dan stres.",
         "3.1.2": "Mengenal pasti punca konflik dan stres dalam diri sendiri.",
         "3.1.3": "Menilai kesan konflik dan stres terhadap diri sendiri.",
-        "3.1.4": "Menjana idea dan mengamalkan cara mengurus konflik dan stres. 4.2 1 Menyatakan maksud konflik dan stres.",
+        "3.1.4": "Menjana idea dan mengamalkan cara mengurus konflik dan stres.",
         "4.1.1": "Menjelaskan contoh gejala sosial.",
         "4.1.2": "Membincangkan peranan dan tanggungjawab ahli keluarga dalam menangani gejala sosial.",
-        "4.1.3": "Menilai kepentingan sokongan ahli keluarga dalam menangani gejala sosial. 1 Menyatakan contoh gejala sosial.",
+        "4.1.3": "Menilai kepentingan sokongan ahli keluarga dalam menangani gejala sosial.",
         "5.1.1": "Menyatakan kepentingan menyayangi diri sendiri dan orang lain.",
         "5.1.2": "Menunjuk cara meluahkan perasaan kasih sayang kepada orang lain.",
-        "5.1.3": "Mengesyorkan cara meluahkan perasaan yang sesuai dalam kehidupan harian. 1 Menyatakan kepentingan menyayangi diri sendiri, ahli keluarga dan orang lain.",
+        "5.1.3": "Mengesyorkan cara meluahkan perasaan yang sesuai dalam kehidupan harian.",
         "6.1.1": "Menyatakan contoh penyakit tidak berjangkit.",
         "6.1.2": "Menghubungkait punca dan kesan penyakit tidak berjangkit.",
-        "6.1.3": "Berkomunikasi mengenai cara pencegahan penyakit tidak berjangkit. 1 Menyatakan punca penyakit tidak berjangkit seperti penyakit jantung, asma, penyakit buah pinggang dan diabetes.",
+        "6.1.3": "Berkomunikasi mengenai cara pencegahan penyakit tidak berjangkit.",
         "7.1.1": "Menyatakan maksud pengantunan kanak- kanak.",
         "7.1.2": "Memberi contoh situasi pengantunan kanak- kanak.",
         "7.1.3": "Mengaplikasikan cara mengelak daripada pengantunan kanak- kanak.",
-        "7.1.4": "Berkomunikasi dengan berkesan cara mengelak daripada situasi pengantunan kanak-kanak. 1 Menyatakan maksud pengantunan kanak-kanak.",
+        "7.1.4": "Berkomunikasi dengan berkesan cara mengelak daripada situasi pengantunan kanak-kanak.",
         "8.1.1": "Mengenal pasti jenis makanan mengikut aras Piramid Makanan Malaysia.",
         "8.1.2": "Membincangkan fungsi setiap aras Piramid Makanan Malaysia.",
         "8.1.3": "Menjelaskan dengan contoh kepentingan memilih dan mengambil pelbagai jenis makanan sihat berdasarkan Piramid Makanan Malaysia. 1 Melakar dan melabel Piramid Makanan Malaysia.",
         "9.1.1": "Menyatakan punca kecederaan lebam dan terseliuh.",
         "9.1.2": "Membincangkan cara memberi bantu mula untuk kecederaan lebam dan terseliuh.",
-        "9.1.3": "Mengaplikasikan kemahiran bantu mula untuk kecederaan lebam dan terseliuh. 1 Menyatakan perbezaan kecederaan lebam dan terseliuh."
+        "9.1.3": "Mengaplikasikan kemahiran bantu mula untuk kecederaan lebam dan terseliuh."
       }
     }
   },
@@ -242,5 +242,72 @@
     "5.3.3",
     "5.2.1",
     "1.1.1"
-  ]
+  ],
+  "extraction_corrections": [
+    {
+      "component": "PK",
+      "sp_code": "1.1.5",
+      "original_dskp_extraction": "Menilai amalan terbaik pengurusan diri apabila akil baligh. 1 Menyatakan maksud akil baligh.",
+      "removed_standard_prestasi_text": "1 Menyatakan maksud akil baligh.",
+      "corrected_sp_text": "Menilai amalan terbaik pengurusan diri apabila akil baligh.",
+      "reason": "DSKP source PDF table text extraction merged Standard Pembelajaran with Standard Prestasi Tahap 1; page-level manual approval still pending."
+    },
+    {
+      "component": "PK",
+      "sp_code": "2.1.3",
+      "original_dskp_extraction": "Mengaplikasikan cara mengelakkan diri daripada pengambilan alkohol dalam makanan dan minuman. 1 Menyatakan maksud alkohol.",
+      "removed_standard_prestasi_text": "1 Menyatakan maksud alkohol.",
+      "corrected_sp_text": "Mengaplikasikan cara mengelakkan diri daripada pengambilan alkohol dalam makanan dan minuman.",
+      "reason": "DSKP source PDF table text extraction merged Standard Pembelajaran with Standard Prestasi Tahap 1; page-level manual approval still pending."
+    },
+    {
+      "component": "PK",
+      "sp_code": "3.1.4",
+      "original_dskp_extraction": "Menjana idea dan mengamalkan cara mengurus konflik dan stres. 4.2 1 Menyatakan maksud konflik dan stres.",
+      "removed_standard_prestasi_text": "4.2 1 Menyatakan maksud konflik dan stres.",
+      "corrected_sp_text": "Menjana idea dan mengamalkan cara mengurus konflik dan stres.",
+      "reason": "DSKP source PDF table text extraction merged Standard Pembelajaran with Standard Prestasi Tahap 1; page-level manual approval still pending."
+    },
+    {
+      "component": "PK",
+      "sp_code": "4.1.3",
+      "original_dskp_extraction": "Menilai kepentingan sokongan ahli keluarga dalam menangani gejala sosial. 1 Menyatakan contoh gejala sosial.",
+      "removed_standard_prestasi_text": "1 Menyatakan contoh gejala sosial.",
+      "corrected_sp_text": "Menilai kepentingan sokongan ahli keluarga dalam menangani gejala sosial.",
+      "reason": "DSKP source PDF table text extraction merged Standard Pembelajaran with Standard Prestasi Tahap 1; page-level manual approval still pending."
+    },
+    {
+      "component": "PK",
+      "sp_code": "5.1.3",
+      "original_dskp_extraction": "Mengesyorkan cara meluahkan perasaan yang sesuai dalam kehidupan harian. 1 Menyatakan kepentingan menyayangi diri sendiri, ahli keluarga dan orang lain.",
+      "removed_standard_prestasi_text": "1 Menyatakan kepentingan menyayangi diri sendiri, ahli keluarga dan orang lain.",
+      "corrected_sp_text": "Mengesyorkan cara meluahkan perasaan yang sesuai dalam kehidupan harian.",
+      "reason": "DSKP source PDF table text extraction merged Standard Pembelajaran with Standard Prestasi Tahap 1; page-level manual approval still pending."
+    },
+    {
+      "component": "PK",
+      "sp_code": "6.1.3",
+      "original_dskp_extraction": "Berkomunikasi mengenai cara pencegahan penyakit tidak berjangkit. 1 Menyatakan punca penyakit tidak berjangkit seperti penyakit jantung, asma, penyakit buah pinggang dan diabetes.",
+      "removed_standard_prestasi_text": "1 Menyatakan punca penyakit tidak berjangkit seperti penyakit jantung, asma, penyakit buah pinggang dan diabetes.",
+      "corrected_sp_text": "Berkomunikasi mengenai cara pencegahan penyakit tidak berjangkit.",
+      "reason": "DSKP source PDF table text extraction merged Standard Pembelajaran with Standard Prestasi Tahap 1; page-level manual approval still pending."
+    },
+    {
+      "component": "PK",
+      "sp_code": "7.1.4",
+      "original_dskp_extraction": "Berkomunikasi dengan berkesan cara mengelak daripada situasi pengantunan kanak-kanak. 1 Menyatakan maksud pengantunan kanak-kanak.",
+      "removed_standard_prestasi_text": "1 Menyatakan maksud pengantunan kanak-kanak.",
+      "corrected_sp_text": "Berkomunikasi dengan berkesan cara mengelak daripada situasi pengantunan kanak-kanak.",
+      "reason": "DSKP source PDF table text extraction merged Standard Pembelajaran with Standard Prestasi Tahap 1; page-level manual approval still pending."
+    },
+    {
+      "component": "PK",
+      "sp_code": "9.1.3",
+      "original_dskp_extraction": "Mengaplikasikan kemahiran bantu mula untuk kecederaan lebam dan terseliuh. 1 Menyatakan perbezaan kecederaan lebam dan terseliuh.",
+      "removed_standard_prestasi_text": "1 Menyatakan perbezaan kecederaan lebam dan terseliuh.",
+      "corrected_sp_text": "Mengaplikasikan kemahiran bantu mula untuk kecederaan lebam dan terseliuh.",
+      "reason": "DSKP source PDF table text extraction merged Standard Pembelajaran with Standard Prestasi Tahap 1; page-level manual approval still pending."
+    }
+  ],
+  "extraction_quality_status": "DRAF_REQUIRES_SOURCE_PAGE_REVIEW"
 }
