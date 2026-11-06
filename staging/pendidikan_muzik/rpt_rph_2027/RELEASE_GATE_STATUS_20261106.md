@@ -1,3 +1,12 @@
+## 6 November 2026 — Calon laluan RPH Telegram tanpa ganggu pengguna
+
+- Modul `music_native_route_candidate.py` kini membina laluan **Tahun → Pendidikan Muzik → PdP 01–35 → pilih kelas → _rph_rows native_** secara simulasi. Sumber dibaca semula daripada fail RPH, manifest, RPT, kriteria kejayaan dan matriks kod DSKP; fingerprint SHA-256 menjadikan pilihan lama gagal apabila kandungan berubah.
+- **175/175** calon PdP diuji boleh dimuat, menu dapat memaparkan Tahun 4 PdP06, sumber lama/ubah gagal, subjek lain dikekalkan. Pelaksanaan terhad kepada staging dan gerbang dua flag berasingan yang kedua-duanya tidak aktif secara default.
+- **GitHub Actions #42163129667 LULUS keseluruhan**, termasuk ujian calon menu, janaan Word/PDF dan RPT. Ini ujian simulasi callback, **bukan** klik sebenar dalam bot.
+- Belum ada pemautan di WSGI LIVE atau cabang Web produksi. **Jangan set flag / jangan claim user live** tanpa kedua-dua server menerima sumber sama dan entitlement diuji, serta isu kesahihan skor selesai.
+
+---
+
 ## 6 November 2026 — Pakej penggunaan manual untuk SEMAKAN DALAMAN
 
 - Run **#42161919427 telah LULUS** selepas pembetulan RPH Tahun 2 PdP02, Tahun 4 PdP06 dan Tahun 5 PdP12/35 supaya guru boleh menjalankan aktiviti tanpa fail audio rasmi.
