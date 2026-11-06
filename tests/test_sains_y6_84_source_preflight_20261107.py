@@ -35,7 +35,7 @@ class TestYear6Preflight(unittest.TestCase):
         self.assertIn("kultur",RISK_NOTES["3.1"].lower())
         self.assertIn("makanan",RISK_NOTES["8.2"].lower())
         self.assertIn("matahari",RISK_NOTES["10.1"].lower())
-        self.assertIn("reproduksi",RISK_NOTES["2.1"].lower().replace("pembiakan","reproduksi"))
+        self.assertIn("pembiakan",RISK_NOTES["2.1"].lower())
 
 if __name__=="__main__":
     unittest.main()
