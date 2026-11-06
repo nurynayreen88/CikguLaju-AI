@@ -11,6 +11,9 @@ on:
       - "tools/sains_buku_aktiviti_mapping_20261107.py"
       - "audits/sains_y2_y3_buku_aktiviti_mapping_20261107.json"
       - "tests/test_sains_buku_aktiviti_y2_y3_20261107.py"
+      - "web/sains_buku_aktiviti_resources_20261107.py"
+      - "tests/test_sains_buku_aktiviti_resources_20261107.py"
+      - "audits/sains_y2_y3_buku_aktiviti_integration_20261107.md"
       - "tools/audit_rph80_sains_first_20261107.py"
       - "tools/audit_rph80_all_subject_sources_20261107.py"
       - "web/sains_y2_51_activities_draf_20261107.py"
@@ -60,6 +63,7 @@ jobs:
         run: |
           python -m unittest discover -s tests -p 'test_sains_buku_aktiviti_y2_y3_20261107.py' -v
           python -m tools.sains_buku_aktiviti_mapping_20261107
+          python -m unittest discover -s tests -p 'test_sains_buku_aktiviti_resources_20261107.py' -v
       - name: Test authored Science Year2 51 distinct activities
         run: python -m unittest discover -s tests -p 'test_sains_y2_51_bank_quality_20261107.py' -v
       - name: Render Science Year2 51 source-specific DRAF Markdown Word PDF
