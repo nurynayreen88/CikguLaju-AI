@@ -1,0 +1,3385 @@
+{
+  "subject": "Reka Bentuk dan Teknologi",
+  "branch": "staging/rbt-t4-t6-dskp-rpt-rph-2027-20261106",
+  "created": "2026-11-06",
+  "status": "STAGING_DRAF_FAIL_CLOSED",
+  "notes": "Kehadiran kod SK/SP dan kod halaman buku tidak bermaksud aktiviti murid atau pedagogi diluluskan.",
+  "item_count": 96,
+  "approvals_granted": 0,
+  "release_ready_count": 0,
+  "individual_review": [
+    {
+      "id": "RBT-T4-PDP-001",
+      "tahun": 4,
+      "pdp": 1,
+      "unit": "Unit 1: Keselamatan Bengkel",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.1",
+        "1.1.2"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        4,
+        7
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-002",
+      "tahun": 4,
+      "pdp": 2,
+      "unit": "Unit 1: Keselamatan Bengkel",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.3"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        9
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-003",
+      "tahun": 4,
+      "pdp": 3,
+      "unit": "Unit 1: Keselamatan Bengkel",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.4",
+        "1.1.5"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        11,
+        12
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-004",
+      "tahun": 4,
+      "pdp": 4,
+      "unit": "Unit 2: Pengenalan kepada Reka Bentuk",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        16,
+        17
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-005",
+      "tahun": 4,
+      "pdp": 5,
+      "unit": "Unit 2: Pengenalan kepada Reka Bentuk",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.3",
+        "2.1.4",
+        "2.1.5"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        19,
+        20,
+        21
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-006",
+      "tahun": 4,
+      "pdp": 6,
+      "unit": "Unit 2: Pengenalan kepada Reka Bentuk",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1",
+        "2.2.2"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        24,
+        26
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-007",
+      "tahun": 4,
+      "pdp": 7,
+      "unit": "Unit 2: Pengenalan kepada Reka Bentuk",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.3",
+        "2.2.4"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        28,
+        29
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-008",
+      "tahun": 4,
+      "pdp": 8,
+      "unit": "Unit 2: Pengenalan kepada Reka Bentuk",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.5"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        30
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-009",
+      "tahun": 4,
+      "pdp": 9,
+      "unit": "Unit 2: Pengenalan kepada Reka Bentuk",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.6",
+        "2.2.7"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        31,
+        32
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-010",
+      "tahun": 4,
+      "pdp": 10,
+      "unit": "Unit 2: Pengenalan kepada Reka Bentuk",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.8"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        36
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-011",
+      "tahun": 4,
+      "pdp": 11,
+      "unit": "Unit 3: Pengenalan kepada Teknologi",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1",
+        "3.1.2"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        40,
+        42
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-012",
+      "tahun": 4,
+      "pdp": 12,
+      "unit": "Unit 3: Pengenalan kepada Teknologi",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.3",
+        "3.1.4"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        44,
+        45,
+        46
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-013",
+      "tahun": 4,
+      "pdp": 13,
+      "unit": "Unit 3: Pengenalan kepada Teknologi",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.5",
+        "3.1.6"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        47,
+        48
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-014",
+      "tahun": 4,
+      "pdp": 14,
+      "unit": "Unit 3: Pengenalan kepada Teknologi",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.7",
+        "3.1.8"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        49,
+        52
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-015",
+      "tahun": 4,
+      "pdp": 15,
+      "unit": "Unit 4: Reka Bentuk Pembungkusan",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.1",
+        "4.1.2"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        56,
+        57
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-016",
+      "tahun": 4,
+      "pdp": 16,
+      "unit": "Unit 4: Reka Bentuk Pembungkusan",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.3",
+        "4.1.4"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        58
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-017",
+      "tahun": 4,
+      "pdp": 17,
+      "unit": "Unit 4: Reka Bentuk Pembungkusan",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.5",
+        "4.1.6"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        59
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-018",
+      "tahun": 4,
+      "pdp": 18,
+      "unit": "Unit 4: Reka Bentuk Pembungkusan",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.7",
+        "4.1.8"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        59,
+        60
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-019",
+      "tahun": 4,
+      "pdp": 19,
+      "unit": "Unit 4: Reka Bentuk Pembungkusan",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.9",
+        "4.1.10"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        61,
+        64
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-020",
+      "tahun": 4,
+      "pdp": 20,
+      "unit": "Unit 5: Reka Bentuk Makanan",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.1",
+        "5.1.2"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        68,
+        69
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-021",
+      "tahun": 4,
+      "pdp": 21,
+      "unit": "Unit 5: Reka Bentuk Makanan",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.3",
+        "5.1.4"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        70
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-022",
+      "tahun": 4,
+      "pdp": 22,
+      "unit": "Unit 5: Reka Bentuk Makanan",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.5",
+        "5.1.6"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        70,
+        71
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-023",
+      "tahun": 4,
+      "pdp": 23,
+      "unit": "Unit 5: Reka Bentuk Makanan",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.7",
+        "5.1.8"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        71,
+        73
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-024",
+      "tahun": 4,
+      "pdp": 24,
+      "unit": "Unit 5: Reka Bentuk Makanan",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.9"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        74
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-025",
+      "tahun": 4,
+      "pdp": 25,
+      "unit": "Unit 6: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.1",
+        "6.1.2"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        78,
+        81
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-026",
+      "tahun": 4,
+      "pdp": 26,
+      "unit": "Unit 6: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.3"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        82
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-027",
+      "tahun": 4,
+      "pdp": 27,
+      "unit": "Unit 6: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.4",
+        "6.1.5"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        83,
+        84
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-028",
+      "tahun": 4,
+      "pdp": 28,
+      "unit": "Unit 6: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.6"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        85
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-029",
+      "tahun": 4,
+      "pdp": 29,
+      "unit": "Unit 6: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.2"
+      ],
+      "sp": [
+        "6.2.1"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        86
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-030",
+      "tahun": 4,
+      "pdp": 30,
+      "unit": "Unit 6: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.2"
+      ],
+      "sp": [
+        "6.2.2",
+        "6.2.3"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        88,
+        91,
+        92
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-031",
+      "tahun": 4,
+      "pdp": 31,
+      "unit": "Unit 6: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.2"
+      ],
+      "sp": [
+        "6.2.4",
+        "6.2.5"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        95,
+        96
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T4-PDP-032",
+      "tahun": 4,
+      "pdp": 32,
+      "unit": "Unit 6: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.2"
+      ],
+      "sp": [
+        "6.2.6"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        97
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-001",
+      "tahun": 5,
+      "pdp": 1,
+      "unit": "Unit 1: Teknologi Rumah Tangga",
+      "sk": [
+        "4.3"
+      ],
+      "sp": [
+        "4.3.1",
+        "4.3.2"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        4,
+        6,
+        7,
+        9
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Artikel Jahitan",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-002",
+      "tahun": 5,
+      "pdp": 2,
+      "unit": "Unit 1: Teknologi Rumah Tangga",
+      "sk": [
+        "4.3"
+      ],
+      "sp": [
+        "4.3.3"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        10,
+        11
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Artikel Jahitan",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-003",
+      "tahun": 5,
+      "pdp": 3,
+      "unit": "Unit 1: Teknologi Rumah Tangga",
+      "sk": [
+        "4.3"
+      ],
+      "sp": [
+        "4.3.4"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        12
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Artikel Jahitan",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-004",
+      "tahun": 5,
+      "pdp": 4,
+      "unit": "Unit 1: Teknologi Rumah Tangga",
+      "sk": [
+        "4.3"
+      ],
+      "sp": [
+        "4.3.5"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        13
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Artikel Jahitan",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-005",
+      "tahun": 5,
+      "pdp": 5,
+      "unit": "Unit 1: Teknologi Rumah Tangga",
+      "sk": [
+        "4.3"
+      ],
+      "sp": [
+        "4.3.6"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        14,
+        17
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Artikel Jahitan",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-006",
+      "tahun": 5,
+      "pdp": 6,
+      "unit": "Unit 1: Teknologi Rumah Tangga",
+      "sk": [
+        "4.3"
+      ],
+      "sp": [
+        "4.3.7"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        18
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Artikel Jahitan",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-007",
+      "tahun": 5,
+      "pdp": 7,
+      "unit": "Unit 2: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.1",
+        "5.1.2"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        21,
+        23,
+        24,
+        25
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-008",
+      "tahun": 5,
+      "pdp": 8,
+      "unit": "Unit 2: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.3"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        26,
+        28
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-009",
+      "tahun": 5,
+      "pdp": 9,
+      "unit": "Unit 2: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.4"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        29
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-010",
+      "tahun": 5,
+      "pdp": 10,
+      "unit": "Unit 2: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.5",
+        "5.1.6"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        30,
+        31,
+        32
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-011",
+      "tahun": 5,
+      "pdp": 11,
+      "unit": "Unit 2: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.7"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        33,
+        35
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-012",
+      "tahun": 5,
+      "pdp": 12,
+      "unit": "Unit 2: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.8"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        36
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-013",
+      "tahun": 5,
+      "pdp": 13,
+      "unit": "Unit 3: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.3"
+      ],
+      "sp": [
+        "6.3.1",
+        "6.3.2"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        39,
+        40,
+        41,
+        42
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Pengaturcaraan",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-014",
+      "tahun": 5,
+      "pdp": 14,
+      "unit": "Unit 3: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.3"
+      ],
+      "sp": [
+        "6.3.3",
+        "6.3.4"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        43,
+        44,
+        45,
+        46
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Pengaturcaraan",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-015",
+      "tahun": 5,
+      "pdp": 15,
+      "unit": "Unit 3: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.3"
+      ],
+      "sp": [
+        "6.3.5"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        47
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Pengaturcaraan",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-016",
+      "tahun": 5,
+      "pdp": 16,
+      "unit": "Unit 3: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.3"
+      ],
+      "sp": [
+        "6.3.6"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        48
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Pengaturcaraan",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-017",
+      "tahun": 5,
+      "pdp": 17,
+      "unit": "Unit 3: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.4"
+      ],
+      "sp": [
+        "6.4.1"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        49,
+        50
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Pengaturcaraan",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-018",
+      "tahun": 5,
+      "pdp": 18,
+      "unit": "Unit 3: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.4"
+      ],
+      "sp": [
+        "6.4.2"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        51
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Pengaturcaraan",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-019",
+      "tahun": 5,
+      "pdp": 19,
+      "unit": "Unit 3: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.4"
+      ],
+      "sp": [
+        "6.4.3"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        52,
+        53
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Pengaturcaraan",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-020",
+      "tahun": 5,
+      "pdp": 20,
+      "unit": "Unit 3: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.4"
+      ],
+      "sp": [
+        "6.4.4"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        54,
+        55
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Pengaturcaraan",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-021",
+      "tahun": 5,
+      "pdp": 21,
+      "unit": "Unit 3: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.4"
+      ],
+      "sp": [
+        "6.4.5"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        56,
+        59
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Pengaturcaraan",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-022",
+      "tahun": 5,
+      "pdp": 22,
+      "unit": "Unit 3: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.4"
+      ],
+      "sp": [
+        "6.4.6"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        60
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Pengaturcaraan",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-023",
+      "tahun": 5,
+      "pdp": 23,
+      "unit": "Unit 3: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.4"
+      ],
+      "sp": [
+        "6.4.6"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        60
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Pengaturcaraan",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-024",
+      "tahun": 5,
+      "pdp": 24,
+      "unit": "Unit 3: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.4"
+      ],
+      "sp": [
+        "6.4.7"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        61
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Pengaturcaraan",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-025",
+      "tahun": 5,
+      "pdp": 25,
+      "unit": "Unit 4: Teknologi Pertanian",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.1"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        65,
+        68
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Teknologi Pertanian Bandar",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-026",
+      "tahun": 5,
+      "pdp": 26,
+      "unit": "Unit 4: Teknologi Pertanian",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.2"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        69,
+        71
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Teknologi Pertanian Bandar",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-027",
+      "tahun": 5,
+      "pdp": 27,
+      "unit": "Unit 4: Teknologi Pertanian",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.3"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        72,
+        73
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Teknologi Pertanian Bandar",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-028",
+      "tahun": 5,
+      "pdp": 28,
+      "unit": "Unit 4: Teknologi Pertanian",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.4"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        74,
+        75
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Teknologi Pertanian Bandar",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-029",
+      "tahun": 5,
+      "pdp": 29,
+      "unit": "Unit 4: Teknologi Pertanian",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.5"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        76
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Teknologi Pertanian Bandar",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-030",
+      "tahun": 5,
+      "pdp": 30,
+      "unit": "Unit 4: Teknologi Pertanian",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.6"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        77,
+        80
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Teknologi Pertanian Bandar",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-031",
+      "tahun": 5,
+      "pdp": 31,
+      "unit": "Unit 4: Teknologi Pertanian",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.6"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        77,
+        80
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Teknologi Pertanian Bandar",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T5-PDP-032",
+      "tahun": 5,
+      "pdp": 32,
+      "unit": "Unit 4: Teknologi Pertanian",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.6"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        77,
+        80
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Teknologi Pertanian Bandar",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-001",
+      "tahun": 6,
+      "pdp": 1,
+      "unit": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.1"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        2
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Produk Elektromekanikal",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-002",
+      "tahun": 6,
+      "pdp": 2,
+      "unit": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.2"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        3,
+        5
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Produk Elektromekanikal",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-003",
+      "tahun": 6,
+      "pdp": 3,
+      "unit": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.3"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        6,
+        8
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Produk Elektromekanikal",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-004",
+      "tahun": 6,
+      "pdp": 4,
+      "unit": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.3"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        6,
+        8
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Produk Elektromekanikal",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-005",
+      "tahun": 6,
+      "pdp": 5,
+      "unit": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.4"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        9,
+        10
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Produk Elektromekanikal",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-006",
+      "tahun": 6,
+      "pdp": 6,
+      "unit": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.4"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        9,
+        10
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Produk Elektromekanikal",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-007",
+      "tahun": 6,
+      "pdp": 7,
+      "unit": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.5"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        11,
+        20
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Produk Elektromekanikal",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-008",
+      "tahun": 6,
+      "pdp": 8,
+      "unit": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.5"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        11,
+        20
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Produk Elektromekanikal",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-009",
+      "tahun": 6,
+      "pdp": 9,
+      "unit": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.5"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        11,
+        20
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Produk Elektromekanikal",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-010",
+      "tahun": 6,
+      "pdp": 10,
+      "unit": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.6"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        21,
+        22
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Reka Bentuk Produk Elektromekanikal",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-011",
+      "tahun": 6,
+      "pdp": 11,
+      "unit": "Unit 2: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.5"
+      ],
+      "sp": [
+        "6.5.1"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        24,
+        25
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Pengenalan Asas Sistem Robotik",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-012",
+      "tahun": 6,
+      "pdp": 12,
+      "unit": "Unit 2: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.5"
+      ],
+      "sp": [
+        "6.5.2"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        25,
+        26
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Pengenalan Asas Sistem Robotik",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-013",
+      "tahun": 6,
+      "pdp": 13,
+      "unit": "Unit 2: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.5"
+      ],
+      "sp": [
+        "6.5.3"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        27
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Pengenalan Asas Sistem Robotik",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-014",
+      "tahun": 6,
+      "pdp": 14,
+      "unit": "Unit 2: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.5"
+      ],
+      "sp": [
+        "6.5.4"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        28,
+        29
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Pengenalan Asas Sistem Robotik",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-015",
+      "tahun": 6,
+      "pdp": 15,
+      "unit": "Unit 2: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.5"
+      ],
+      "sp": [
+        "6.5.5"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        30
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Pengenalan Asas Sistem Robotik",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-016",
+      "tahun": 6,
+      "pdp": 16,
+      "unit": "Unit 2: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.5"
+      ],
+      "sp": [
+        "6.5.6"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        31
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Pengenalan Asas Sistem Robotik",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-017",
+      "tahun": 6,
+      "pdp": 17,
+      "unit": "Unit 2: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.5"
+      ],
+      "sp": [
+        "6.5.7"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        32,
+        34
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Pengenalan Asas Sistem Robotik",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-018",
+      "tahun": 6,
+      "pdp": 18,
+      "unit": "Unit 2: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.5"
+      ],
+      "sp": [
+        "6.5.8"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        35,
+        39
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Pengenalan Asas Sistem Robotik",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-019",
+      "tahun": 6,
+      "pdp": 19,
+      "unit": "Unit 2: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.5"
+      ],
+      "sp": [
+        "6.5.9"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        40,
+        41
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Pengenalan Asas Sistem Robotik",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-020",
+      "tahun": 6,
+      "pdp": 20,
+      "unit": "Unit 2: Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.5"
+      ],
+      "sp": [
+        "6.5.10"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        42
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Pengenalan Asas Sistem Robotik",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-021",
+      "tahun": 6,
+      "pdp": 21,
+      "unit": "Unit 3: Pembangunan Produk",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.1"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        45,
+        46
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Penghasilan Produk",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-022",
+      "tahun": 6,
+      "pdp": 22,
+      "unit": "Unit 3: Pembangunan Produk",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.2"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        47,
+        48
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Penghasilan Produk",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-023",
+      "tahun": 6,
+      "pdp": 23,
+      "unit": "Unit 3: Pembangunan Produk",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.3"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        49,
+        50
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Penghasilan Produk",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-024",
+      "tahun": 6,
+      "pdp": 24,
+      "unit": "Unit 3: Pembangunan Produk",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.3"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        49,
+        50
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Penghasilan Produk",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-025",
+      "tahun": 6,
+      "pdp": 25,
+      "unit": "Unit 3: Pembangunan Produk",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.4"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        50,
+        52
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Penghasilan Produk",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-026",
+      "tahun": 6,
+      "pdp": 26,
+      "unit": "Unit 3: Pembangunan Produk",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.5"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        53,
+        56
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Penghasilan Produk",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-027",
+      "tahun": 6,
+      "pdp": 27,
+      "unit": "Unit 3: Pembangunan Produk",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.6"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        56,
+        65
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Penghasilan Produk",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-028",
+      "tahun": 6,
+      "pdp": 28,
+      "unit": "Unit 3: Pembangunan Produk",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.6"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        56,
+        65
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Penghasilan Produk",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-029",
+      "tahun": 6,
+      "pdp": 29,
+      "unit": "Unit 3: Pembangunan Produk",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.6"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        56,
+        65
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Penghasilan Produk",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-030",
+      "tahun": 6,
+      "pdp": 30,
+      "unit": "Unit 3: Pembangunan Produk",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.6"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        56,
+        65
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Penghasilan Produk",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-031",
+      "tahun": 6,
+      "pdp": 31,
+      "unit": "Unit 3: Pembangunan Produk",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.7"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        66
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Penghasilan Produk",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    },
+    {
+      "id": "RBT-T6-PDP-032",
+      "tahun": 6,
+      "pdp": 32,
+      "unit": "Unit 3: Pembangunan Produk",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.7"
+      ],
+      "dskp_sp_code_present": true,
+      "buku_teks_hal_bercetak_calon": [
+        66
+      ],
+      "bukti_halaman_teks": true,
+      "aktiviti_dalam_buku_diluluskan": false,
+      "keselamatan_amali_disahkan": false,
+      "semakan_individu_guru": false,
+      "docx_pdf_native_a4_disahkan": false,
+      "rt_web_telegram_verified": false,
+      "release_ready": false,
+      "pending": [
+        "halaman_visual",
+        "ketepatan_aktiviti",
+        "keselamatan_alatan",
+        "semakan_guru",
+        "Word_PDF_natif",
+        "Telegram_Web"
+      ],
+      "subtopik": "Penghasilan Produk",
+      "pedagogical_specificity_improved": true,
+      "source_crosswalk_only": true
+    }
+  ],
+  "evidence_status": "96 PdP mempunyai calon muka surat; 114 SP mempunyai kod rujukan buku, namun 0 visual/kelulusan manual."
+}
