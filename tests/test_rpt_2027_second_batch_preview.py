@@ -20,6 +20,7 @@ class RPT2027SecondBatchQA(unittest.TestCase):
                 self.assertTrue(validate_rows("sejarah", year, rows))
                 self.assertTrue(all(r["sk"] and r["sp"] and r["a_start"] and r["b_start"]
                                     for r in rows))
+                self.assertTrue(all(r["week"] == "Agihan cadangan" for r in rows))
                 self.assertEqual([r["id"] for r in rows],
                                  [f"{i:03d}" for i in range(1, 37)])
                 self.assertTrue(all("bukan halaman aktiviti disahkan" in r["note"]
@@ -40,6 +41,7 @@ class RPT2027SecondBatchQA(unittest.TestCase):
                 self.assertIn("PK PdP 001", [r["display_id"] for r in rows])
                 self.assertTrue(all(r["week"].endswith("(cadangan)") for r in rows))
                 self.assertTrue(all(r["sk"] and r["sp"] for r in rows))
+                self.assertTrue(all("BT m/s Rujuk DSKP" not in r["note"] for r in rows))
 
     def test_reject_duplicate_display_identity(self):
         rows = pjpk_records(2)
