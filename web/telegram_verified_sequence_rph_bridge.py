@@ -239,7 +239,17 @@ def create_native_sequence_rph_blueprint(runtime):
                          "PdP • ") + title
                 if len(code) > 100 or not code or len(label) > 300:
                     continue
-                items.append({"value": code, "label": label})
+                # Keep only lesson-specific textbook references recorded by
+                # the verified Telegram native sequence. No inferred pages.
+                refs = []
+                for item in rows:
+                    value = str(item.get("textbook_ref") or "").strip()
+                    if value and len(value) <= 120 and value not in refs:
+                        refs.append(value)
+                entry = {"value": code, "label": label}
+                if refs:
+                    entry["textbook_ref"] = " • ".join(refs[:3])
+                items.append(entry)
         except (ValueError, SourceUnavailable):
             return jsonify({"error": "Native PdP choices unavailable"}), 503
         return jsonify({"source": "telegram-runtime-v1", "items": items})
