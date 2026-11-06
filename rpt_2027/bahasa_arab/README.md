@@ -141,3 +141,8 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 - 16 draf PdP029–044 berfokus bunyi ذ/ظ, pengangkutan, perbualan destinasi/waktu dan penerangan kenderaan daripada **Buku Teks DBP 2021 KSSR Semakan 2017**: https://anyflip.com/ulcnq/mffz/basic/51-100 (halaman bercetak 62–79).
 - Bukti source-text `audits/bahasa_arab_y6_unit3_pdp029_044_correct2021_text_audit_20261106.json`; CSV `year6_unit3_pdp029_044_DRAF.csv`.
 - **282 DRAF** Tahun2–6, Tahun6 44 PdP calon Unit1–3, 0 FINAL READY; tidak menggunakan PDF Tahun6 Drive versi KSSR lama, visual halaman asal/guru/RPT2027 masih perlu disahkan. CI 282 perlu ujian.
+
+## Tahun6 Unit4 `فدائي يا وطني` — 6 November 2026
+- 16 RPH calon individu PdP045–060 daripada eBook KSSR Semakan 2017 Tahun6 DBP/KPM Cetakan 2021 ISBN 978-983-49-3300-5, Unit4 halaman bercetak 92–114: https://anyflip.com/gcmci/mxcs/basic/101-140. Semua cadangan sumber teks eBook, imej halaman asal dan padanan SP guru belum diluluskan.
+- Audit `audits/bahasa_arab_y6_unit4_pdp045_060_correct2021_text_source_audit_20261106.json`, CSV `year6_unit4_pdp045_060_DRAF.csv`.
+- **298 RPH DRAF untuk 20/20 unit** Tahun2–6. Penulisan calon semua unit ini **bukan RPT tahunan penuh** dan **0 FINAL READY**. Ujian DOCX/PDF untuk 298, audit individual SP, semakan tatabahasa/pedagogi, jadual RPT2027 kumpulan A/B, dan integrasi Web/Telegram kekal perlu siap. Tiada perubahan data produksi.
