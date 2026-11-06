@@ -14,7 +14,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan imej rasmi Jata Negara dengan unsur harimau, perisai dan bulan sabit. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 8: Jata Negara.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 116–119: Makna warna, harimau, bintang, bulan sabit dan cogan kata Jata. Murid memadankan unsur Jata Negara dengan maksud yang dinyatakan dalam sumber. Guru menyemak jawapan awal berpandukan 9.1.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 116–119: Makna warna, harimau, bintang, bulan sabit dan cogan kata Jata Negara. Murid memadankan unsur Jata Negara dengan maksud yang dinyatakan dalam sumber. Guru menyemak jawapan awal berpandukan 9.1.3.
 
 **Aktiviti 2 (20 min):** Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 116–119. Murid membina kad penerangan mengapa identiti rasmi perlu dihormati. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan Jata Negara sebagai identiti negara.
 
