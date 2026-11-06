@@ -1,4 +1,4 @@
-"""Render 50 draft RPH in Word and PDF and verify all are one A4 page.
+"""Render 59 draft RPH in Word and PDF and verify all are one A4 page.
 
 Run in CI with LibreOffice (Word-to-PDF check); no DB, webhook or deploy access.
 """
@@ -41,9 +41,9 @@ def main():
         converted.mkdir()
         for row in rows:
             year = row["years"][0]
-            content = render(row, year, TEACHER, "word")
+            content = render(row, year, TEACHER, "word", subject=(row["subject_options"][0] if "subject_options" in row else None))
             (docx_dir / (row["id"] + ".docx")).write_bytes(content)
-            own_pdf = render(row, year, TEACHER, "pdf")
+            own_pdf = render(row, year, TEACHER, "pdf", subject=(row["subject_options"][0] if "subject_options" in row else None))
             text = assert_a4_single_page(own_pdf, row["id"])
             if row["title"] not in text:
                 raise AssertionError(f"{row['id']}: missing PDF title")
@@ -55,13 +55,13 @@ def main():
         if result.returncode:
             raise AssertionError("LibreOffice render failed: " + result.stderr[:1000])
         pdfs = sorted(converted.glob("*.pdf"))
-        if len(pdfs) != 50:
-            raise AssertionError(f"Expected 50 Word-to-PDF conversions, got {len(pdfs)}")
+        if len(pdfs) != 59:
+            raise AssertionError(f"Expected 59 Word-to-PDF conversions, got {len(pdfs)}")
         for pdf in pdfs:
             text = assert_a4_single_page(pdf.read_bytes(), pdf.stem)
             if "Aktiviti 1" not in text or "Aktiviti 2" not in text or "Aktiviti 3" not in text:
                 raise AssertionError(f"{pdf.stem}: numbered activities lost")
-    print("PASS: 50 original PDF and 50 Word-converted PDF are each one A4 page")
+    print("PASS: 59 original PDF and 59 Word-converted PDF are each one A4 page")
 
 
 if __name__ == "__main__":
