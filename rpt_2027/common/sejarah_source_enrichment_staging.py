@@ -14,9 +14,25 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 EVIDENCE = ROOT / "audits/sejarah_y4_y6_primary_textbook_page_evidence_20261106.json"
 MASTER = ROOT / "rpt_2027/common/calendar_week_2027_a_b_snapshot_20261107_DRAF.json"
+HOLIDAY = ROOT / "rpt_2027/common/sejarah_group_a_2027_03_14_holiday_index_evidence_DRAF.json"
 
 def _read(path):
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _holiday_explains_group_a_first_day(date_iso):
+    """Validate exact KPM-index source evidence; never infer a holiday."""
+    src = _read(HOLIDAY)
+    states = src.get("a_states", [])
+    return (
+        src.get("status") == "SOURCE_EVIDENCE_DRAF_RELEASE_SIGNOFF_PENDING"
+        and src.get("date") == date_iso == "2027-03-14"
+        and src.get("school_group") == "A"
+        and {s.get("name") for s in states} == {"Kedah", "Kelantan", "Terengganu"}
+        and all(s.get("kpm_holiday") == "Hari Raya Puasa"
+                and s.get("pdp_status") == "BUKAN PDP - CUTI RASMI BKPP/KPM"
+                for s in states)
+    )
 
 
 def _week_candidates(row, master):
@@ -38,8 +54,9 @@ def _week_candidates(row, master):
         elif b_exact and row["a_end"] == a["end"]:
             a_start = date.fromisoformat(row["a_start"])
             expected = date.fromisoformat(a["start"])
-            if a_start == expected + timedelta(days=1):
-                candidates.append((a_week, "GROUP_A_ONE_DAY_LATE_SOURCE"))
+            if (a_start == expected + timedelta(days=1) and
+                    _holiday_explains_group_a_first_day(expected.isoformat())):
+                candidates.append((a_week, "GROUP_A_FIRST_DAY_KPM_HOLIDAY_INDEXED"))
     return candidates
 
 
@@ -98,9 +115,9 @@ def enrich_sejarah_source_week_and_book(year, records):
             raise ValueError(f"Sejarah {year} PdP {number:03d}: source page note unknown")
         row["note"] = (f"Buku teks m/s {pages} (padanan teks digital DRAF; "
                        "gambar/latihan belum disahkan). " + tail)
-        if match_type != "EXACT_SOURCE_DATE_PAIR":
+        if match_type == "GROUP_A_FIRST_DAY_KPM_HOLIDAY_INDEXED":
             row["note"] += (
-                " SEMAK: Kumpulan A bermula sehari selepas tarikh mula "
-                "minggu induk; jangan anggap hari itu cuti tanpa pengesahan."
+                " Kalendar: 14/03/2027 cuti tambahan KPM Hari Raya Puasa Kumpulan A; "
+                "PdP calon bermula 15/03/2027. Sahkan jadual guru sebelum diterbitkan."
             )
     return records
