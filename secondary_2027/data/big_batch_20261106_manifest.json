@@ -10,9 +10,11 @@
       "file": "bm_t2_pdp_001_120_staging.json",
       "source": "https://docs.google.com/document/d/19Hb9U6gY_ghzVUF-B6_U-ks6C64v7qEC/edit",
       "source_dskp": "https://drive.google.com/file/d/1xtVFZirPVpMV6GMCs2ZNO46dBX0xl4iw/view",
-      "flagged_count": 2,
+      "flagged_count": 7,
       "issues": {
-        "PAGE_ORDER_REVIEW": 2
+        "PAGE_ORDER_REVIEW": 2,
+        "CURATED_ORIGINAL_PILOT": 5,
+        "BOOK_TEXT_PENDING": 5
       },
       "distinct_title_count": 120
     },
@@ -40,7 +42,7 @@
       4,
       5
     ],
-    "action": "Pilot 5 is archival only; excluded from import manifest; bulk replaces it at release selection, not destructive deletion."
+    "action": "PDP 1-5 are included with their individually authored activities in the 120-record pack. Keep the separate pilot as archive; import only the 120-record pack when approved."
   },
   "rollout": "Manual audit each record; validate source book and the actual SP text, then QA render Word/PDF and integrate additive; no Telegram/Web changes in this PR."
 }
