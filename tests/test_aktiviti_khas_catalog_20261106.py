@@ -15,8 +15,8 @@ class TestAktivitiKhasCatalog(unittest.TestCase):
         cls.rows = cls.payload["activities"]
 
     def test_catalog_count_and_unique_ids(self):
-        self.assertEqual(len(self.rows), 50)
-        self.assertEqual(len({r["id"] for r in self.rows}), 50)
+        self.assertEqual(len(self.rows), 59)
+        self.assertEqual(len({r["id"] for r in self.rows}), 59)
         self.assertEqual(self.payload["release_status"], "DRAFT_REVIEW")
 
     def test_phase_and_year_guard(self):
@@ -30,13 +30,13 @@ class TestAktivitiKhasCatalog(unittest.TestCase):
 
     def test_three_levels_and_ten_distinct_themes(self):
         end = [r for r in self.rows if r["category"] == "SELEPAS_TAMAT_SUKATAN"]
-        self.assertEqual(len(end), 30)
+        self.assertEqual(len(end), 39)
         by_level = Counter(tuple(r["years"]) for r in end)
-        self.assertEqual(by_level, {(1, 2): 10, (3, 4): 10, (5, 6): 10})
+        self.assertEqual(by_level, {(1, 2): 13, (3, 4): 13, (5, 6): 13})
         by_title = defaultdict(list)
         for row in end:
             by_title[row["title"]].append(row)
-        self.assertEqual(len(by_title), 10)
+        self.assertEqual(len(by_title), 13)
         for title, variants in by_title.items():
             with self.subTest(title=title):
                 self.assertEqual(len(variants), 3)
@@ -52,10 +52,21 @@ class TestAktivitiKhasCatalog(unittest.TestCase):
                     self.assertIsInstance(row[key], str)
                     self.assertTrue(row[key].strip())
                 self.assertEqual(len(row["aktiviti_utama"]), 3)
+                self.assertTrue(all(len(s.strip()) >= 185 for s in row["aktiviti_utama"]))
                 self.assertTrue(all(s.strip() for s in row["aktiviti_utama"]))
                 self.assertEqual(len(set(row["aktiviti_utama"])), 3)
                 self.assertEqual(row["duration_minutes"], 60)
                 self.assertNotIn("lesson", row["id"].lower())
+
+    def test_specific_subjects(self):
+        rows = [r for r in self.rows if r["category"] == "SELEPAS_TAMAT_SUKATAN"]
+        expected = {"Bahasa Melayu", "Bahasa Inggeris", "Matematik", "Sains",
+                    "Pendidikan Islam", "Pendidikan Moral", "Pendidikan Seni Visual",
+                    "Pendidikan Jasmani", "Pendidikan Kesihatan", "Pendidikan Muzik",
+                    "Bahasa Arab", "Sejarah", "Reka Bentuk dan Teknologi"}
+        self.assertEqual({r["subject_options"][0] for r in rows}, expected)
+        self.assertTrue(all(len(r["subject_options"]) == 1 for r in rows))
+        self.assertTrue(all(r["subject_options"] != ["Semua subjek"] for r in rows))
 
     def test_time_budget(self):
         self.assertEqual(sum(self.payload["rph_minute_plan"].values()), 60)
