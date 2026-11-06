@@ -183,13 +183,14 @@
       "pdp": "026",
       "printed_page": 40,
       "pdf_page_1_based": 52,
-      "sp_candidate": "3.3.1",
-      "focus": "Menulis ayat kata tunjuk tentang keluarga",
+      "sp_candidate": "3.4.1",
+      "focus": "Menyalin frasa kata tunjuk tentang keluarga",
       "source_page_visual_inspected": true,
-      "printed_code_final_verified": false,
+      "printed_code_final_verified": true,
       "manual_teacher_approval": false,
       "ready": false,
-      "annual_rpt_2027_verified": false
+      "annual_rpt_2027_verified": false,
+      "printed_code_derived_from": "Original DBP/KPM 2017 page40, PDF page52, teacher SP 3.4.1 and DPK KPM 2.0 clause 3.4"
     },
     {
       "pdp": "027",
