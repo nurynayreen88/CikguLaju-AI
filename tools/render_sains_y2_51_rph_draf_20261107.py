@@ -26,6 +26,7 @@ from web.sains_y2_51_activities_draf_20261107 import BANK
 OUT = ROOT / "build" / "sains_y2_51_rph_DRAF_20261107"
 DSKP = "https://drive.google.com/file/d/1rr4CjNvhtI13ioiVSTZi65cvap7j1U6Z/view"
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+PAGES = ROOT / "audits/sains_y2_51_book_text_page_cues_20261107.json"
 KPS = {"1.1.1":"Memerhati", "1.1.2":"Mengelas",
        "1.1.3":"Mengukur dan menggunakan nombor", "1.1.4":"Berkomunikasi"}
 Y2_SOURCE_CONFLICTS = {
@@ -54,8 +55,20 @@ def kps_for(sp):
     return f"{code} {KPS[code]}; 1.1.4 {KPS['1.1.4']} (cadangan integrasi)"
 
 
+def book_page_cues():
+    data=json.loads(PAGES.read_text(encoding="utf-8"))
+    if (data["year"]!=2 or data["status"]!="DRAF_HOLD_TEACHER_VISUAL_REVIEW"
+            or data["not_to_be_used_as_certain_pages"] is not True):
+        raise ValueError("Year2 book page cues are not approved")
+    cues={r["sp"]:r for r in data["items"]}
+    if len(cues)!=51 or any(not r["printed_page_candidates"] for r in cues.values()):
+        raise ValueError("Year2 book page candidates missing or duplicated")
+    return cues
+
+
 def get_y2_records():
     source, _ = analyze()
+    pages=book_page_cues()
     y2 = [r for r in source if r["tahun"] == 2]
     if len(y2) != 51 or {r["sp"] for r in y2} != set(BANK):
         raise ValueError("Year2 Sains source SP set differs from 51 manually authored tasks")
@@ -72,6 +85,8 @@ def get_y2_records():
             "candidate_title": candidate,
             "kps": kps_for(sp),
             "source_discrepancy": Y2_SOURCE_CONFLICTS.get(sp, ""),
+            "book_page_cue": ", ".join(map(str,pages[sp]["printed_page_candidates"])),
+            "book_page_status": "TEXT_CUE_ONLY__NOT_VISUALLY_VERIFIED",
             "quality_score_percent": None,
             "release": "DRAF_HOLD",
         })
@@ -88,7 +103,8 @@ def markdown(item):
         f"**Tajuk PdP (cadangan):** {item['candidate_title']}\n"
         f"**SK:** {sp.rsplit('.',1)[0]}\n"
         f"**SP asal sumber:** {sp}\n"
-        f"**Rujukan:** DSKP asal Sains Tahun 2; Buku Teks Tahun 2 halaman belum disahkan.\n"
+        f"**Rujukan:** DSKP asal Sains Tahun 2; Buku Teks Tahun 2 halaman belum disahkan. "
+        f"Petunjuk m/s bercetak: {item['book_page_cue']} (teks PDF, belum disemak secara visual).\n"
         f"**Tempoh:** 60 minit (cadangan; ikut jadual sebenar)\n"
         f"**Objektif:** Murid menghasilkan bukti berikut: {item['pbd']}.\n"
         f"**Kriteria kejayaan/PBD:** {item['pbd']}.\n"
@@ -157,7 +173,7 @@ def write_docx(path,item):
       ("Penutup (5m)","Murid menyatakan satu dapatan; guru merumus kaitan dengan SP "+item["sp"]+"."),
       ("BBM",item["materials"]),
       ("Keselamatan/etika",item["safety"]),
-      ("Buku teks / Status","Halaman belum disahkan • DRAF/HOLD • semak buku teks asal"),
+      ("Buku teks / Status",f"Petunjuk m/s {item['book_page_cue']} (belum sah visual) • DRAF/HOLD"),
     ]
     for i,(name,val) in enumerate(fields):
         _docx_cell(phases.cell(i,0),name,strong=True)
@@ -199,7 +215,7 @@ def write_pdf(path,item):
       ("Penutup 5m","Murid menyatakan dapatan; guru merumus SP "+item["sp"]+"."),
       ("BBM",item["materials"]),
       ("Keselamatan",item["safety"]),
-      ("Rujukan/Status","DSKP asal; BT halaman belum sah • DRAF/HOLD"),
+      ("Rujukan/Status",f"DSKP asal; BT m/s calon {item['book_page_cue']} belum sah visual • DRAF/HOLD"),
       ("Refleksi","____ / ____ murid mencapai objektif."),
     ]
     cells=[[p(a),p(b)] for a,b in fields]
@@ -243,6 +259,7 @@ def main():
             "pdp_code":item["pdp_code"],"sp":item["sp"],
             "source_title":item["tajuk"],"candidate_title":item["candidate_title"],
             "source_conflict":item["source_discrepancy"],
+            "book_page_cue":item["book_page_cue"],
             "word_a4":"DOCX_A4_NO_PAGINATION_PROOF",
             "pdf_a4":"ONE_PAGE_PASS",
             "textbook_page":"NOT_VISUALLY_VERIFIED",
