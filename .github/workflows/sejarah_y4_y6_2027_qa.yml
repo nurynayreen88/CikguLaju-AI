@@ -15,6 +15,7 @@ on:
       - 'scripts/check_sejarah_native_delivery_gate_2027.py'
       - 'web/native_rph_telegram_api.py'
       - 'web/sejarah_2027_native_layout_adapter.py'
+      - 'web/sejarah_2027_word_compact.py'
       - 'web/sejarah_2027_staging_source.py'
       - '.github/workflows/sejarah_y4_y6_2027_qa.yml'
   pull_request:

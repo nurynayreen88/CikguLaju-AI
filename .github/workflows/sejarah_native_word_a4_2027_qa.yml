@@ -4,6 +4,8 @@ on:
     paths:
       - 'rph_standalone/sejarah/**'
       - 'web/sejarah_2027_native_layout_adapter.py'
+      - 'web/sejarah_2027_word_compact.py'
+      - 'web/native_rph_telegram_api.py'
       - 'scripts/render_sejarah_native_word_a4_2027.py'
       - '.github/workflows/sejarah_native_word_a4_2027_qa.yml'
   workflow_dispatch:
