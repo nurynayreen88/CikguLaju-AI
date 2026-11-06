@@ -74,7 +74,7 @@ class RPT2026LayoutQA(unittest.TestCase):
         root=Path(__file__).resolve().parents[1]
         names=("rpt_2027/common/format_2026_layout_preview.py",
                "scripts/build_rpt_2027_standard_preview.py")
-        for server in ("web/rpt_2027_all_http.py",
+        for server in ("rpt_2027/english/telegram_downloads.py",
                        "tools/run_telegram_with_curriculum_api.py"):
             text=(root/server).read_text("utf-8")
             self.assertTrue(all(n not in text for n in names))
