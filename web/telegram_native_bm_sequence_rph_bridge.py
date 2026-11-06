@@ -113,6 +113,10 @@ def _state(runtime, year, unit, token, teacher):
     state["selected_sp_codes"] = list(state.get("grouped_sp_codes") or [])
     if not state.get("sk_code") or not state.get("sp_code"):
         raise SourceUnavailable("Native BM RPH standards unavailable")
+    # Opt in to Web-only BM activity refinement with identity from the live,
+    # read-only Telegram master source, never from browser-supplied prose.
+    state["_bm_web_native_source"] = "verified_pdp_sequence"
+    state["_bm_web_verified_standards"] = tuple(dict(item) for item in standards)
     return state
 
 
@@ -135,6 +139,11 @@ def create_native_bm_rph_blueprint(runtime):
         if not callable(getattr(runtime, name, None)):
             raise TypeError("Telegram BM RPH engine incomplete")
 
+    # Hook the existing Word/PDF row boundary once. Every other Telegram flow
+    # remains unchanged because only this endpoint sets the BM Web source flag.
+    from web.bm_web_rph_refinement import install as install_bm_web_refinement
+    if not install_bm_web_refinement(runtime):
+        raise TypeError("BM Web row refinement not installed")
     bp = Blueprint("telegram_native_bm_sequence_rph", __name__)
 
     @bp.after_request
