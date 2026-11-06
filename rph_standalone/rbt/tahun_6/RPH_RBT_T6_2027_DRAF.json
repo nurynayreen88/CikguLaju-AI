@@ -15,30 +15,33 @@
   "modul": [
     {
       "unit": 1,
-      "tajuk": "Reka Bentuk Produk Elektromekanikal",
+      "tajuk": "Aplikasi Reka Bentuk Teknologi Kejuruteraan",
       "sk": [
         "5.2"
       ],
       "jam_dskp": 10,
-      "pdp_cadangan": 10
+      "pdp_cadangan": 10,
+      "subtopik_sp": "Reka Bentuk Produk Elektromekanikal"
     },
     {
       "unit": 2,
-      "tajuk": "Pengenalan Asas Sistem Robotik",
+      "tajuk": "Reka Bentuk Pengaturcaraan",
       "sk": [
         "6.5"
       ],
       "jam_dskp": 10,
-      "pdp_cadangan": 10
+      "pdp_cadangan": 10,
+      "subtopik_sp": "Pengenalan Asas Sistem Robotik"
     },
     {
       "unit": 3,
-      "tajuk": "Penghasilan Produk",
+      "tajuk": "Pembangunan Produk",
       "sk": [
         "8.1"
       ],
       "jam_dskp": 12,
-      "pdp_cadangan": 12
+      "pdp_cadangan": 12,
+      "subtopik_sp": "Penghasilan Produk"
     }
   ],
   "pelajaran": [
@@ -50,7 +53,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 1,
-      "unit_label": "Unit 1: Reka Bentuk Produk Elektromekanikal",
+      "unit_label": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
       "tajuk": "PdP 001: elemen elektromekanikal",
       "sk": [
         "5.2"
@@ -117,7 +120,8 @@
       "artefak_khusus": "prototip kereta yang bergerak, lakaran berlabel dan catatan penambahbaikan",
       "rubrik_pbd_khusus": "fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi",
       "contoh_projek_cikgulaju": "model kereta kawalan jauh dengan motor voltan rendah",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Elektromekanikal"
     },
     {
       "pdp": 2,
@@ -127,7 +131,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 1,
-      "unit_label": "Unit 1: Reka Bentuk Produk Elektromekanikal",
+      "unit_label": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
       "tajuk": "PdP 002: elemen elektromekanikal",
       "sk": [
         "5.2"
@@ -194,7 +198,8 @@
       "artefak_khusus": "prototip kereta yang bergerak, lakaran berlabel dan catatan penambahbaikan",
       "rubrik_pbd_khusus": "fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi",
       "contoh_projek_cikgulaju": "model kereta kawalan jauh dengan motor voltan rendah",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Elektromekanikal"
     },
     {
       "pdp": 3,
@@ -204,7 +209,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 1,
-      "unit_label": "Unit 1: Reka Bentuk Produk Elektromekanikal",
+      "unit_label": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
       "tajuk": "PdP 003: reka bentuk produk eletromekanikal yang akan dihasilkan",
       "sk": [
         "5.2"
@@ -271,7 +276,8 @@
       "artefak_khusus": "prototip kereta yang bergerak, lakaran berlabel dan catatan penambahbaikan",
       "rubrik_pbd_khusus": "fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi",
       "contoh_projek_cikgulaju": "model kereta kawalan jauh dengan motor voltan rendah",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Elektromekanikal"
     },
     {
       "pdp": 4,
@@ -281,7 +287,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 1,
-      "unit_label": "Unit 1: Reka Bentuk Produk Elektromekanikal",
+      "unit_label": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
       "tajuk": "PdP 004: reka bentuk produk eletromekanikal yang akan dihasilkan (sesi sambungan 2)",
       "sk": [
         "5.2"
@@ -348,7 +354,8 @@
       "artefak_khusus": "prototip kereta yang bergerak, lakaran berlabel dan catatan penambahbaikan",
       "rubrik_pbd_khusus": "fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi",
       "contoh_projek_cikgulaju": "model kereta kawalan jauh dengan motor voltan rendah",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Elektromekanikal"
     },
     {
       "pdp": 5,
@@ -358,7 +365,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 1,
-      "unit_label": "Unit 1: Reka Bentuk Produk Elektromekanikal",
+      "unit_label": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
       "tajuk": "PdP 005: lakaran yang dipilih untuk membuat penambahbaikan",
       "sk": [
         "5.2"
@@ -425,7 +432,8 @@
       "artefak_khusus": "prototip kereta yang bergerak, lakaran berlabel dan catatan penambahbaikan",
       "rubrik_pbd_khusus": "fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi",
       "contoh_projek_cikgulaju": "model kereta kawalan jauh dengan motor voltan rendah",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Elektromekanikal"
     },
     {
       "pdp": 6,
@@ -435,7 +443,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 1,
-      "unit_label": "Unit 1: Reka Bentuk Produk Elektromekanikal",
+      "unit_label": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
       "tajuk": "PdP 006: lakaran yang dipilih untuk membuat penambahbaikan (sesi sambungan 2)",
       "sk": [
         "5.2"
@@ -502,7 +510,8 @@
       "artefak_khusus": "prototip kereta yang bergerak, lakaran berlabel dan catatan penambahbaikan",
       "rubrik_pbd_khusus": "fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi",
       "contoh_projek_cikgulaju": "model kereta kawalan jauh dengan motor voltan rendah",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Elektromekanikal"
     },
     {
       "pdp": 7,
@@ -512,7 +521,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 1,
-      "unit_label": "Unit 1: Reka Bentuk Produk Elektromekanikal",
+      "unit_label": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
       "tajuk": "PdP 007: produk berdasarkan lakaran dengan menggunakan bahan dan peralatan yang sesuai",
       "sk": [
         "5.2"
@@ -579,7 +588,8 @@
       "artefak_khusus": "prototip kereta yang bergerak, lakaran berlabel dan catatan penambahbaikan",
       "rubrik_pbd_khusus": "fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi",
       "contoh_projek_cikgulaju": "model kereta kawalan jauh dengan motor voltan rendah",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Elektromekanikal"
     },
     {
       "pdp": 8,
@@ -589,7 +599,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 1,
-      "unit_label": "Unit 1: Reka Bentuk Produk Elektromekanikal",
+      "unit_label": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
       "tajuk": "PdP 008: produk berdasarkan lakaran dengan menggunakan bahan dan peralatan yang sesuai (sesi sambungan 2)",
       "sk": [
         "5.2"
@@ -656,7 +666,8 @@
       "artefak_khusus": "prototip kereta yang bergerak, lakaran berlabel dan catatan penambahbaikan",
       "rubrik_pbd_khusus": "fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi",
       "contoh_projek_cikgulaju": "model kereta kawalan jauh dengan motor voltan rendah",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Elektromekanikal"
     },
     {
       "pdp": 9,
@@ -666,7 +677,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 1,
-      "unit_label": "Unit 1: Reka Bentuk Produk Elektromekanikal",
+      "unit_label": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
       "tajuk": "PdP 009: produk berdasarkan lakaran dengan menggunakan bahan dan peralatan yang sesuai (sesi sambungan 3)",
       "sk": [
         "5.2"
@@ -733,7 +744,8 @@
       "artefak_khusus": "prototip kereta yang bergerak, lakaran berlabel dan catatan penambahbaikan",
       "rubrik_pbd_khusus": "fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi",
       "contoh_projek_cikgulaju": "model kereta kawalan jauh dengan motor voltan rendah",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Elektromekanikal"
     },
     {
       "pdp": 10,
@@ -743,7 +755,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 1,
-      "unit_label": "Unit 1: Reka Bentuk Produk Elektromekanikal",
+      "unit_label": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
       "tajuk": "PdP 010: produk yang dihasilkan",
       "sk": [
         "5.2"
@@ -810,7 +822,8 @@
       "artefak_khusus": "prototip kereta yang bergerak, lakaran berlabel dan catatan penambahbaikan",
       "rubrik_pbd_khusus": "fungsi motor dan penghantaran gerak, ketepatan lakaran, ujian fungsi",
       "contoh_projek_cikgulaju": "model kereta kawalan jauh dengan motor voltan rendah",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Elektromekanikal"
     },
     {
       "pdp": 11,
@@ -820,7 +833,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 2,
-      "unit_label": "Unit 2: Pengenalan Asas Sistem Robotik",
+      "unit_label": "Unit 2: Reka Bentuk Pengaturcaraan",
       "tajuk": "PdP 011: elemen sistem robotik",
       "sk": [
         "6.5"
@@ -887,7 +900,8 @@
       "artefak_khusus": "rekod uji sensor air dan demonstrasi tindak balas robot atau simulasi",
       "rubrik_pbd_khusus": "fungsi sensor, logik kawalan dan uji lari berulang",
       "contoh_projek_cikgulaju": "robot penjaga air tanaman",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Pengenalan Asas Sistem Robotik"
     },
     {
       "pdp": 12,
@@ -897,7 +911,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 2,
-      "unit_label": "Unit 2: Pengenalan Asas Sistem Robotik",
+      "unit_label": "Unit 2: Reka Bentuk Pengaturcaraan",
       "tajuk": "PdP 012: elemen sistem robotik yang terdapat pada robot",
       "sk": [
         "6.5"
@@ -964,7 +978,8 @@
       "artefak_khusus": "rekod uji sensor air dan demonstrasi tindak balas robot atau simulasi",
       "rubrik_pbd_khusus": "fungsi sensor, logik kawalan dan uji lari berulang",
       "contoh_projek_cikgulaju": "robot penjaga air tanaman",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Pengenalan Asas Sistem Robotik"
     },
     {
       "pdp": 13,
@@ -974,7 +989,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 2,
-      "unit_label": "Unit 2: Pengenalan Asas Sistem Robotik",
+      "unit_label": "Unit 2: Reka Bentuk Pengaturcaraan",
       "tajuk": "PdP 013: pemasangan perkakasan pada reka bentuk sebuah robot",
       "sk": [
         "6.5"
@@ -1041,7 +1056,8 @@
       "artefak_khusus": "rekod uji sensor air dan demonstrasi tindak balas robot atau simulasi",
       "rubrik_pbd_khusus": "fungsi sensor, logik kawalan dan uji lari berulang",
       "contoh_projek_cikgulaju": "robot penjaga air tanaman",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Pengenalan Asas Sistem Robotik"
     },
     {
       "pdp": 14,
@@ -1051,7 +1067,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 2,
-      "unit_label": "Unit 2: Pengenalan Asas Sistem Robotik",
+      "unit_label": "Unit 2: Reka Bentuk Pengaturcaraan",
       "tajuk": "PdP 014: reka bentuk produk yang mempunyai elemen sistem robotik",
       "sk": [
         "6.5"
@@ -1118,7 +1134,8 @@
       "artefak_khusus": "rekod uji sensor air dan demonstrasi tindak balas robot atau simulasi",
       "rubrik_pbd_khusus": "fungsi sensor, logik kawalan dan uji lari berulang",
       "contoh_projek_cikgulaju": "robot penjaga air tanaman",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Pengenalan Asas Sistem Robotik"
     },
     {
       "pdp": 15,
@@ -1128,7 +1145,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 2,
-      "unit_label": "Unit 2: Pengenalan Asas Sistem Robotik",
+      "unit_label": "Unit 2: Reka Bentuk Pengaturcaraan",
       "tajuk": "PdP 015: lakaran yang dipilih untuk membuat penambahbaikan",
       "sk": [
         "6.5"
@@ -1195,7 +1212,8 @@
       "artefak_khusus": "rekod uji sensor air dan demonstrasi tindak balas robot atau simulasi",
       "rubrik_pbd_khusus": "fungsi sensor, logik kawalan dan uji lari berulang",
       "contoh_projek_cikgulaju": "robot penjaga air tanaman",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Pengenalan Asas Sistem Robotik"
     },
     {
       "pdp": 16,
@@ -1205,7 +1223,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 2,
-      "unit_label": "Unit 2: Pengenalan Asas Sistem Robotik",
+      "unit_label": "Unit 2: Reka Bentuk Pengaturcaraan",
       "tajuk": "PdP 016: carta alir sebuah robot yang akan dibina",
       "sk": [
         "6.5"
@@ -1272,7 +1290,8 @@
       "artefak_khusus": "rekod uji sensor air dan demonstrasi tindak balas robot atau simulasi",
       "rubrik_pbd_khusus": "fungsi sensor, logik kawalan dan uji lari berulang",
       "contoh_projek_cikgulaju": "robot penjaga air tanaman",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Pengenalan Asas Sistem Robotik"
     },
     {
       "pdp": 17,
@@ -1282,7 +1301,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 2,
-      "unit_label": "Unit 2: Pengenalan Asas Sistem Robotik",
+      "unit_label": "Unit 2: Reka Bentuk Pengaturcaraan",
       "tajuk": "PdP 017: atur cara yang dikehendaki berpandukan carta alir yang dibuat",
       "sk": [
         "6.5"
@@ -1349,7 +1368,8 @@
       "artefak_khusus": "rekod uji sensor air dan demonstrasi tindak balas robot atau simulasi",
       "rubrik_pbd_khusus": "fungsi sensor, logik kawalan dan uji lari berulang",
       "contoh_projek_cikgulaju": "robot penjaga air tanaman",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Pengenalan Asas Sistem Robotik"
     },
     {
       "pdp": 18,
@@ -1359,7 +1379,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 2,
-      "unit_label": "Unit 2: Pengenalan Asas Sistem Robotik",
+      "unit_label": "Unit 2: Reka Bentuk Pengaturcaraan",
       "tajuk": "PdP 018: reka bentuk produk dan penyambungan perkakasan berdasarkan lakaran yang dibuat menggunakan peralatan",
       "sk": [
         "6.5"
@@ -1426,7 +1446,8 @@
       "artefak_khusus": "rekod uji sensor air dan demonstrasi tindak balas robot atau simulasi",
       "rubrik_pbd_khusus": "fungsi sensor, logik kawalan dan uji lari berulang",
       "contoh_projek_cikgulaju": "robot penjaga air tanaman",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Pengenalan Asas Sistem Robotik"
     },
     {
       "pdp": 19,
@@ -1436,7 +1457,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 2,
-      "unit_label": "Unit 2: Pengenalan Asas Sistem Robotik",
+      "unit_label": "Unit 2: Reka Bentuk Pengaturcaraan",
       "tajuk": "PdP 019: atur cara yang telah dihasilkan pada perkakasan dan menguji kefungsiannya",
       "sk": [
         "6.5"
@@ -1503,7 +1524,8 @@
       "artefak_khusus": "rekod uji sensor air dan demonstrasi tindak balas robot atau simulasi",
       "rubrik_pbd_khusus": "fungsi sensor, logik kawalan dan uji lari berulang",
       "contoh_projek_cikgulaju": "robot penjaga air tanaman",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Pengenalan Asas Sistem Robotik"
     },
     {
       "pdp": 20,
@@ -1513,7 +1535,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 2,
-      "unit_label": "Unit 2: Pengenalan Asas Sistem Robotik",
+      "unit_label": "Unit 2: Reka Bentuk Pengaturcaraan",
       "tajuk": "PdP 020: rumusan dan membentangkan produk yang telah dibina",
       "sk": [
         "6.5"
@@ -1580,7 +1602,8 @@
       "artefak_khusus": "rekod uji sensor air dan demonstrasi tindak balas robot atau simulasi",
       "rubrik_pbd_khusus": "fungsi sensor, logik kawalan dan uji lari berulang",
       "contoh_projek_cikgulaju": "robot penjaga air tanaman",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Pengenalan Asas Sistem Robotik"
     },
     {
       "pdp": 21,
@@ -1590,7 +1613,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 3,
-      "unit_label": "Unit 3: Penghasilan Produk",
+      "unit_label": "Unit 3: Pembangunan Produk",
       "tajuk": "PdP 021: produk yang hendak dibina berdasarkan situasi",
       "sk": [
         "8.1"
@@ -1657,7 +1680,8 @@
       "artefak_khusus": "produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi",
       "rubrik_pbd_khusus": "padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan",
       "contoh_projek_cikgulaju": "model tabung duit automatik gabungan sensor dan servo",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Penghasilan Produk"
     },
     {
       "pdp": 22,
@@ -1667,7 +1691,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 3,
-      "unit_label": "Unit 3: Penghasilan Produk",
+      "unit_label": "Unit 3: Pembangunan Produk",
       "tajuk": "PdP 022: gabungan asas teknologi yang sesuai digunakan dengan reka bentuk produk yang akan dibina",
       "sk": [
         "8.1"
@@ -1734,7 +1758,8 @@
       "artefak_khusus": "produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi",
       "rubrik_pbd_khusus": "padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan",
       "contoh_projek_cikgulaju": "model tabung duit automatik gabungan sensor dan servo",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Penghasilan Produk"
     },
     {
       "pdp": 23,
@@ -1744,7 +1769,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 3,
-      "unit_label": "Unit 3: Penghasilan Produk",
+      "unit_label": "Unit 3: Pembangunan Produk",
       "tajuk": "PdP 023: reka bentuk produk yang hendak dibina",
       "sk": [
         "8.1"
@@ -1811,7 +1836,8 @@
       "artefak_khusus": "produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi",
       "rubrik_pbd_khusus": "padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan",
       "contoh_projek_cikgulaju": "model tabung duit automatik gabungan sensor dan servo",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Penghasilan Produk"
     },
     {
       "pdp": 24,
@@ -1821,7 +1847,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 3,
-      "unit_label": "Unit 3: Penghasilan Produk",
+      "unit_label": "Unit 3: Pembangunan Produk",
       "tajuk": "PdP 024: reka bentuk produk yang hendak dibina (sesi sambungan 2)",
       "sk": [
         "8.1"
@@ -1888,7 +1914,8 @@
       "artefak_khusus": "produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi",
       "rubrik_pbd_khusus": "padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan",
       "contoh_projek_cikgulaju": "model tabung duit automatik gabungan sensor dan servo",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Penghasilan Produk"
     },
     {
       "pdp": 25,
@@ -1898,7 +1925,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 3,
-      "unit_label": "Unit 3: Penghasilan Produk",
+      "unit_label": "Unit 3: Pembangunan Produk",
       "tajuk": "PdP 025: dan membuat penambahbaikan pada lakaran yang dipilih",
       "sk": [
         "8.1"
@@ -1965,7 +1992,8 @@
       "artefak_khusus": "produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi",
       "rubrik_pbd_khusus": "padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan",
       "contoh_projek_cikgulaju": "model tabung duit automatik gabungan sensor dan servo",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Penghasilan Produk"
     },
     {
       "pdp": 26,
@@ -1975,7 +2003,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 3,
-      "unit_label": "Unit 3: Penghasilan Produk",
+      "unit_label": "Unit 3: Pembangunan Produk",
       "tajuk": "PdP 026: senarai peralatan, bahan, anggaran kos dan jadual kerja",
       "sk": [
         "8.1"
@@ -2042,7 +2070,8 @@
       "artefak_khusus": "produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi",
       "rubrik_pbd_khusus": "padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan",
       "contoh_projek_cikgulaju": "model tabung duit automatik gabungan sensor dan servo",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Penghasilan Produk"
     },
     {
       "pdp": 27,
@@ -2052,7 +2081,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 3,
-      "unit_label": "Unit 3: Penghasilan Produk",
+      "unit_label": "Unit 3: Pembangunan Produk",
       "tajuk": "PdP 027: produk berfungsi berdasarkan lakaran yang dibuat",
       "sk": [
         "8.1"
@@ -2119,7 +2148,8 @@
       "artefak_khusus": "produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi",
       "rubrik_pbd_khusus": "padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan",
       "contoh_projek_cikgulaju": "model tabung duit automatik gabungan sensor dan servo",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Penghasilan Produk"
     },
     {
       "pdp": 28,
@@ -2129,7 +2159,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 3,
-      "unit_label": "Unit 3: Penghasilan Produk",
+      "unit_label": "Unit 3: Pembangunan Produk",
       "tajuk": "PdP 028: produk berfungsi berdasarkan lakaran yang dibuat (sesi sambungan 2)",
       "sk": [
         "8.1"
@@ -2196,7 +2226,8 @@
       "artefak_khusus": "produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi",
       "rubrik_pbd_khusus": "padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan",
       "contoh_projek_cikgulaju": "model tabung duit automatik gabungan sensor dan servo",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Penghasilan Produk"
     },
     {
       "pdp": 29,
@@ -2206,7 +2237,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 3,
-      "unit_label": "Unit 3: Penghasilan Produk",
+      "unit_label": "Unit 3: Pembangunan Produk",
       "tajuk": "PdP 029: produk berfungsi berdasarkan lakaran yang dibuat (sesi sambungan 3)",
       "sk": [
         "8.1"
@@ -2273,7 +2304,8 @@
       "artefak_khusus": "produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi",
       "rubrik_pbd_khusus": "padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan",
       "contoh_projek_cikgulaju": "model tabung duit automatik gabungan sensor dan servo",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Penghasilan Produk"
     },
     {
       "pdp": 30,
@@ -2283,7 +2315,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 3,
-      "unit_label": "Unit 3: Penghasilan Produk",
+      "unit_label": "Unit 3: Pembangunan Produk",
       "tajuk": "PdP 030: produk berfungsi berdasarkan lakaran yang dibuat (sesi sambungan 4)",
       "sk": [
         "8.1"
@@ -2350,7 +2382,8 @@
       "artefak_khusus": "produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi",
       "rubrik_pbd_khusus": "padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan",
       "contoh_projek_cikgulaju": "model tabung duit automatik gabungan sensor dan servo",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Penghasilan Produk"
     },
     {
       "pdp": 31,
@@ -2360,7 +2393,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 3,
-      "unit_label": "Unit 3: Penghasilan Produk",
+      "unit_label": "Unit 3: Pembangunan Produk",
       "tajuk": "PdP 031: dokumentasi mudah proses penghasilan produk dan pembentangan",
       "sk": [
         "8.1"
@@ -2427,7 +2460,8 @@
       "artefak_khusus": "produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi",
       "rubrik_pbd_khusus": "padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan",
       "contoh_projek_cikgulaju": "model tabung duit automatik gabungan sensor dan servo",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Penghasilan Produk"
     },
     {
       "pdp": 32,
@@ -2437,7 +2471,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 3,
-      "unit_label": "Unit 3: Penghasilan Produk",
+      "unit_label": "Unit 3: Pembangunan Produk",
       "tajuk": "PdP 032: dokumentasi mudah proses penghasilan produk dan pembentangan (sesi sambungan 2)",
       "sk": [
         "8.1"
@@ -2504,7 +2538,8 @@
       "artefak_khusus": "produk dengan sekurang-kurangnya dua teknologi, log ujian dan dokumentasi",
       "rubrik_pbd_khusus": "padanan masalah-fungsi, pelaksanaan jadual kerja, bukti ujian dan penambahbaikan",
       "contoh_projek_cikgulaju": "model tabung duit automatik gabungan sensor dan servo",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Penghasilan Produk"
     }
   ]
 }
