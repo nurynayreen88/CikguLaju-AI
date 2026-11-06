@@ -46,34 +46,38 @@
       "file": "bm_t4_dskp_54sp_108rph_draft.json",
       "rph_count": 108,
       "unique_sp": 54,
-      "source_mode": "DSKP_SP_COVERAGE_2_VARIANTS_PER_SP_NOT_RPT_SEQUENCE",
+      "source_mode": "DSKP_SP_COVERAGE_AND_TEXTBOOK_SP_PAGE_CROSSWALK_NOT_RPT_SEQUENCE",
       "source_rpt": null,
       "source_dskp": "https://drive.google.com/file/d/1j0hOd_RQYd4w3p8fj3yCmxc-UyabDQO5/view",
       "flags": {
+        "TEXTBOOK_SP_PAGE_MATCHED": 108,
         "RPT_SEQUENCE_UNVERIFIED": 108,
-        "TEXTBOOK_PAGE_NOT_VERIFIED": 108
+        "ACTIVITIES_REQUIRE_MANUAL_BOOK_QA": 108
       },
-      "release_state": "DRAF_RPT_BUKU_BELUM_SEMAK"
+      "release_state": "DRAF_BUKU_DIPADAN_RPT_BELUM_SEMAK",
+      "textbook_anchor_index": "bm_t4_t5_textbook_sp_102_anchor_index.json"
     },
     {
       "tingkatan": 5,
       "file": "bm_t5_dskp_48sp_96rph_draft.json",
       "rph_count": 96,
       "unique_sp": 48,
-      "source_mode": "DSKP_SP_COVERAGE_2_VARIANTS_PER_SP_NOT_RPT_SEQUENCE",
+      "source_mode": "DSKP_SP_COVERAGE_AND_TEXTBOOK_SP_PAGE_CROSSWALK_NOT_RPT_SEQUENCE",
       "source_rpt": "https://docs.google.com/document/d/1C8M2i8ENdbKS-jFohrJBq4SJxZ98gkv3/edit",
       "source_dskp": "https://drive.google.com/file/d/1j0hOd_RQYd4w3p8fj3yCmxc-UyabDQO5/view",
       "flags": {
+        "TEXTBOOK_SP_PAGE_MATCHED": 96,
         "RPT_SEQUENCE_UNVERIFIED": 96,
-        "TEXTBOOK_PAGE_NOT_VERIFIED": 96
+        "ACTIVITIES_REQUIRE_MANUAL_BOOK_QA": 96
       },
-      "release_state": "DRAF_RPT_BUKU_BELUM_SEMAK"
+      "release_state": "DRAF_BUKU_DIPADAN_RPT_BELUM_SEMAK",
+      "textbook_anchor_index": "bm_t4_t5_textbook_sp_102_anchor_index.json"
     }
   ],
   "source_policy": {
     "tingkatan1": "KP2027 separated; no verified official SP textbook import yet; DO NOT use KSSM T1 as 2027",
     "tingkatan2and3": "RPT 2025 lesson source cues; lesson numbers here are source-sequence proposals, NOT school-year scheduled dates. SP codes require individual cross-check and book original.",
-    "tingkatan4and5": "2 draft RPH variations per official SP, not full school-year RPT. Align to official RPT and actual textbook before READY; no page numbers invented."
+    "tingkatan4and5": "Every DSKP SP now has a verified occurrence and printed page/topic anchor in the corresponding searchable KSSM textbook (54 T4, 48 T5). The two RPH variants per SP remain curriculum coverage examples, not actual 2027 RPT order. Page-specific activity suitability, PBD, and DOCX/PDF must be reviewed manually."
   },
   "non_destructive": {
     "telegram": false,
@@ -96,8 +100,9 @@
   ],
   "open_issues": [
     "T2 and T3 RPT have source discrepancies and repeated entries; audit flags in each lesson.",
-    "BM4 independent RPT source mapping and textbook pages unverified.",
+    "BM4 RPT source order still not integrated. Textbook SP/page title is available but lesson activity content remains manual-QA pending.",
     "BM5 SP 1.5.2 absent from retrieved RPT 2025, but present in DSKP; must not silently omit.",
-    "Tingkatan 1 KP2027 BM official final curriculum / textbook not yet verified."
+    "Tingkatan 1 KP2027 BM official final curriculum / textbook not yet verified.",
+    "Textbook digital text contains three malformed extra SP strings (T4 2.3.12 and 4.2.14, T5 2.3.22); excluded from 102 official SP index."
   ]
 }
