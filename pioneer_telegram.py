@@ -216,7 +216,7 @@ def install(ns):
                 return send(cid, f"⚠️ Permohonan #{rid} tidak ditemui pada rekod semasa. "
                             "Semak panel admin. Jangan minta pelanggan bayar semula.",
                             [[{"text": "🛠️ Panel Admin", "callback_data": "admin_panel"}]])
-            return admin_card(cid, rid)
+            return ns["_admin_pending_card"](cid, rid)
         if str(d).startswith("admin_approve|"):
             if not ns["_is_admin"](cid):
                 return send(cid, "⛔ Admin sahaja.")
@@ -241,7 +241,7 @@ def install(ns):
                     # Legacy 'admin_approve|id' has no payer binding.
                     # Show the current card and a fresh ID-bound approval button.
                     # Never silently grant from this stale button.
-                    return admin_card(cid, rid)
+                    return ns["_admin_pending_card"](cid, rid)
                 current_uid = int(req["chat_id"])
                 if current_uid != expected_uid:
                     # IDs can be reused when SQLite restarts. Show both owners
@@ -269,7 +269,7 @@ def install(ns):
                         f"✅ Rakan Pembangun pengguna {req['chat_id']} sudah AKTIF.\\n"
                         "Rekod permohonan tempatan diselaraskan; tiada bayaran semula diperlukan.")
                 if req["status"] != "pending":
-                    return admin_card(cid, rid)
+                    return ns["_admin_pending_card"](cid, rid)
                 if not _has_recorded_payment_proof(req):
                     return send(cid, "⚠️ Resit belum direkodkan. Jangan aktifkan Rakan Pembangun.")
                 # Admin has manually verified the bank transaction before clicking Approve.

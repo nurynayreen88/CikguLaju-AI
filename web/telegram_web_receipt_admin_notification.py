@@ -50,8 +50,6 @@ def _keyboard(rid):
     return {"inline_keyboard": [
         [{"text": "🧾 Semak & Sahkan Bayaran",
           "callback_data": f"pioneer_review|{rid}"}],
-        [{"text": "📎 Papar Resit",
-          "callback_data": f"admin_receipt|{rid}"}],
         [{"text": "📋 Semua Pending",
           "callback_data": "admin_pending_all"}],
     ]}
