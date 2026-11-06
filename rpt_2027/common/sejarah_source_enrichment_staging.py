@@ -103,7 +103,7 @@ def enrich_sejarah_source_week_and_book(year, records):
         row["textbook_page_source_urls"] = evidence.get("page_urls", [])
         original_note = row["note"]
         row["source_unit_page_note"] = original_note
-        match = re.match(r"^Buku teks: julat halaman UNIT [\d]+-[\d]+ "
+        match = re.match(r"^Buku teks: julat halaman UNIT [^()\\n]{3,60} "
                          r"\(bukan halaman aktiviti disahkan\)\. ", original_note)
         if match:
             tail = original_note[match.end():]
