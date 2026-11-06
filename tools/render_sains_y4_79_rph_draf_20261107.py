@@ -26,6 +26,7 @@ from web.sains_y4_79_activity_bank_draf_20261107 import BANK
 
 OUT = ROOT / "build" / "sains_y4_79_rph_DRAF_20261107"
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+BOLD_FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 DSKP_SOURCE = "https://drive.google.com/file/d/1eXDdb_qSfCKyqoVtl9T4q2I4rKyHtk9D/view"
 BOOK_SOURCE = "https://drive.google.com/file/d/1Y2Uf44WX5bFhAaaEx55Is7cZpJfrn7Ms/view"
 TEXTBOOK_STATUS = "ASAL_337MB_TEXT_EXTRACTION_EMPTY__NO_PAGE_REFERENCE_APPROVED"
@@ -125,7 +126,7 @@ def _cell(cell, text, bold=False):
     for index, line in enumerate(str(text).split("\n")):
         run=paragraph.add_run(line)
         run.bold=bold
-        run.font.size=Pt(7.1)
+        run.font.size=Pt(8.15)
         if index<len(str(text).split("\n"))-1:run.add_break()
 
 
@@ -136,7 +137,7 @@ def word_doc(path,item):
     sec.top_margin=Cm(0.9);sec.bottom_margin=Cm(0.9)
     sec.left_margin=Cm(1.1);sec.right_margin=Cm(1.1)
     normal=doc.styles["Normal"]
-    normal.font.name="Arial";normal.font.size=Pt(7.1)
+    normal.font.name="Arial";normal.font.size=Pt(8.15)
     normal.paragraph_format.space_after=Pt(0)
     headline=doc.add_paragraph()
     headline.paragraph_format.space_after=Pt(3)
@@ -166,7 +167,7 @@ def word_doc(path,item):
         _cell(phases.cell(i,0),label,bold=True)
         _cell(phases.cell(i,1),body)
     p=doc.add_paragraph("Refleksi: ____/____ murid mencapai objektif. Susulan: ____________________")
-    for run in p.runs:run.font.size=Pt(7)
+    for run in p.runs:run.font.size=Pt(8)
     doc.save(path)
     verify=Document(path)
     if len(verify.tables)!=2 or abs(verify.sections[0].page_width.cm-21)>0.05:
@@ -178,9 +179,13 @@ def pdf_doc(path,item):
         raise RuntimeError("Unicode Malay font unavailable")
     if "SainsYear4" not in pdfmetrics.getRegisteredFontNames():
         pdfmetrics.registerFont(TTFont("SainsYear4",FONT))
-    body=ParagraphStyle("y4_body",fontName="SainsYear4",fontSize=7.25,leading=9.5)
-    headline=ParagraphStyle("y4_headline",parent=body,fontSize=11,leading=13,
-                             alignment=1,spaceAfter=3)
+    if "SainsYear4Bold" not in pdfmetrics.getRegisteredFontNames():
+        pdfmetrics.registerFont(TTFont("SainsYear4Bold",BOLD_FONT))
+    body=ParagraphStyle("y4_body",fontName="SainsYear4",fontSize=8.5,leading=12.1)
+    label=ParagraphStyle("y4_label",parent=body,fontName="SainsYear4Bold",
+                         fontSize=8.3,leading=12)
+    headline=ParagraphStyle("y4_headline",parent=body,fontSize=13,leading=16,
+                             alignment=1,spaceAfter=5)
     def p(v,style=body):
         return Paragraph(escape(str(v)).replace("\n","<br/>"),style)
     fields=[
@@ -200,22 +205,22 @@ def pdf_doc(path,item):
       ("Rujukan/Status","DSKP KPM. Halaman BT belum disahkan. DRAF/HOLD"),
       ("Refleksi","____/____ murid mencapai objektif."),
     ]
-    rows=[[p(k),p(v)] for k,v in fields]
+    rows=[[p(k,label),p(v)] for k,v in fields]
     tbl=Table(rows,colWidths=[117,426],hAlign="LEFT")
     tbl.setStyle(TableStyle([
         ("GRID",(0,0),(-1,-1),0.27,colors.grey),
         ("BACKGROUND",(0,0),(0,-1),colors.whitesmoke),
         ("VALIGN",(0,0),(-1,-1),"TOP"),
-        ("LEFTPADDING",(0,0),(-1,-1),4),
-        ("RIGHTPADDING",(0,0),(-1,-1),4),
-        ("TOPPADDING",(0,0),(-1,-1),2.8),
-        ("BOTTOMPADDING",(0,0),(-1,-1),2.8),
+        ("LEFTPADDING",(0,0),(-1,-1),5),
+        ("RIGHTPADDING",(0,0),(-1,-1),5),
+        ("TOPPADDING",(0,0),(-1,-1),4.8),
+        ("BOTTOMPADDING",(0,0),(-1,-1),4.8),
     ]))
     doc=SimpleDocTemplate(str(path),pagesize=A4,leftMargin=24,rightMargin=24,
                           topMargin=24,bottomMargin=24,
                           title="Science Year4 RPH staged review")
     doc.build([p(f"RPH SAINS TAHUN 4 — PDP {int(item['pdp_number']):03d} • DRAF",headline),
-               Spacer(1,4),tbl])
+               Spacer(1,7),tbl])
     pdf=PdfReader(str(path))
     if len(pdf.pages)!=1:
         raise RuntimeError("Year4 PDF overflow "+item["pdp_code"]+" : "+str(len(pdf.pages)))
