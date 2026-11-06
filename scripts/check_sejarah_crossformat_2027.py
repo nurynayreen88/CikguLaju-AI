@@ -46,16 +46,21 @@ for year in (4, 5, 6):
             assert "hlm. " in rph["aktiviti_2"]["activity"], ident
             # Every printed-page citation must fall inside this lesson's
             # documented textbook text crosswalk; a unit index alone is not proof.
-            printed=[int(n) for n in re.findall(r"\\d+", scope["printed_page_range"])]
-            assert 1<=len(printed)<=2, ("Invalid printed page span",ident)
-            low,high=min(printed),max(printed)
+            # Crosswalks may contain disjoint spans such as 109, 117–119.
+            allowed_pages=set()
+            for span in re.split(r"[,;]",scope["printed_page_range"]):
+                endpoints=[int(n) for n in re.findall(r"\d+",span)]
+                assert 1<=len(endpoints)<=2, ("Invalid printed page span",ident,span)
+                first,last=endpoints[0],endpoints[-1]
+                assert 0<first<=last<=300, ("Invalid printed page range",ident,span)
+                allowed_pages.update(range(first,last+1))
             for part in ("aktiviti_1","aktiviti_2"):
                 citations=re.findall(r"hlm\\.\\s*(\\d+)(?:\\s*[–-]\\s*(\\d+))?",rph[part]["activity"])
                 assert citations, ("Missing printed textbook page",ident,part)
                 for pair in citations:
                     for page in pair:
                         if page:
-                            assert low<=int(page)<=high, ("Page outside checked textbook range",ident,part,page,low,high)
+                            assert int(page) in allowed_pages, ("Page outside checked textbook range",ident,part,page,sorted(allowed_pages))
 assert len(seen) == 108
 assert modified == 97, modified
 print(f"Sejarah staging crossformat: {len(seen)}/108 JSON–Markdown–HTML aligned; {modified}/97 evidence-guided; 0 released")
