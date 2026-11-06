@@ -8,6 +8,7 @@ on:
       - 'tests/test_aktiviti_khas_catalog_20261106.py'
       - 'tests/test_aktiviti_khas_render_20261106.py'
       - 'tests/test_aktiviti_khas_preview_20261106.py'
+      - 'tests/test_aktiviti_khas_content_fidelity_20261106.py'
       - '.github/workflows/rph_aktiviti_khas_pr.yml'
   workflow_dispatch:
 
@@ -29,3 +30,4 @@ jobs:
           python -m unittest discover -s tests -p 'test_aktiviti_khas_catalog_20261106.py' -v
           python -m unittest discover -s tests -p 'test_aktiviti_khas_render_20261106.py' -v
           python -m unittest discover -s tests -p 'test_aktiviti_khas_preview_20261106.py' -v
+          python -m unittest discover -s tests -p 'test_aktiviti_khas_content_fidelity_20261106.py' -v
