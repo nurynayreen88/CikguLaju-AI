@@ -1,7 +1,7 @@
 {
-  "title": "Pendidikan Muzik Tahun 2–6, 81 kriteria kejayaan: semakan silang teks sahaja",
+  "title": "Pendidikan Muzik Tahun 2–6: 81 kriteria — semakan teks editorial CikguLaju",
   "date": "2026-11-06",
-  "method": "Padanan perkataan utama (normalized approximate lexical overlap) antara kriteria kejayaan draf dengan objektif, pentaksiran, aktiviti 1 dan aktiviti 2 sumber RPH PR335. Bukan bukti ketepatan skor/notasi, tiada semakan guru pakar, dan bukan kelulusan editorial.",
+  "method": "Padanan perkataan utama (normalized approximate lexical overlap) antara kriteria kejayaan draf dengan objektif, pentaksiran, aktiviti 1 dan aktiviti 2 sumber RPH PR335. Bukan bukti ketepatan skor/notasi, tiada semakan guru pakar, dan bukan kelulusan editorial.; semakan editorial manual silang ke atas 81 pasangan kriteria, objektif dan pentaksiran pada 6 November 2026. Lulus kesesuaian teks/kemahiran sahaja; ketepatan skor notasi dan kelulusan profesional/DSKP menyeluruh belum disahkan.",
   "summary": {
     "total": 81,
     "year_counts": {
@@ -14,7 +14,9 @@
     "min_alignment": 0.571,
     "max_alignment": 1,
     "needs_score_review": 81,
-    "editorially_approved": 0
+    "editorially_approved": 81,
+    "source_score_visual_reviewed": 0,
+    "external_curriculum_signoff": 0
   },
   "records": {
     "MZ-Y2-01": {
@@ -24,8 +26,10 @@
       "lexical_alignment_score": 0.833,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-02": {
       "objective": "Murid membezakan tempo cepat/lambat pada tiga daripada empat contoh dan menyesuaikan gerakan mengikut tempo.",
@@ -34,8 +38,10 @@
       "lexical_alignment_score": 0.571,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-03": {
       "objective": "Murid menghasilkan dua jenis bunyi menggunakan bahan improvisasi dan menjelaskan perbezaan bunyinya.",
@@ -44,8 +50,10 @@
       "lexical_alignment_score": 0.625,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-04": {
       "objective": "Murid menunjukkan postur nyanyian duduk serta berdiri yang betul dan menyanyikan satu frasa dengan pic tepat.",
@@ -54,8 +62,10 @@
       "lexical_alignment_score": 0.875,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-05": {
       "objective": "Murid menyusun sekurang-kurangnya empat kad ikon membentuk corak irama dan mempersembahkannya tepat.",
@@ -64,8 +74,10 @@
       "lexical_alignment_score": 0.75,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-06": {
       "objective": "Murid menyenandungkan frasa dan menyanyi mengikut pic yang betul dalam dua percubaan.",
@@ -74,8 +86,10 @@
       "lexical_alignment_score": 1,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-07": {
       "objective": "Murid mencipta satu corak irama daripada kad ikon dan memainkannya dengan bahan improvisasi secara berkumpulan.",
@@ -84,8 +98,10 @@
       "lexical_alignment_score": 0.727,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-08": {
       "objective": "Murid mengenal melodi menaik, menurun dan mendatar pada tiga contoh serta mengajuknya menggunakan suku kata la.",
@@ -94,8 +110,10 @@
       "lexical_alignment_score": 0.857,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-09": {
       "objective": "Murid menyanyikan satu rangkap Main Gasing sambil mengekalkan tempo dan menukar tempo apabila diminta.",
@@ -104,8 +122,10 @@
       "lexical_alignment_score": 0.636,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-10": {
       "objective": "Murid menghasilkan dan mengelaskan bunyi kuat/perlahan daripada sekurang-kurangnya tiga bahan improvisasi.",
@@ -114,8 +134,10 @@
       "lexical_alignment_score": 0.7,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-11": {
       "objective": "Murid memainkan corak irama melalui dua alat perkusi mengikut skor ikon pada tempo yang seragam dalam dua percubaan.",
@@ -124,8 +146,10 @@
       "lexical_alignment_score": 1,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-14": {
       "objective": "Murid memainkan satu irama perkusi mengikut skor dan menekankan detik yang bertanda.",
@@ -134,8 +158,10 @@
       "lexical_alignment_score": 0.8,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-15": {
       "objective": "Murid mencipta satu pola daripada ikon dan memainkannya dalam kumpulan.",
@@ -144,8 +170,10 @@
       "lexical_alignment_score": 0.7,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-16": {
       "objective": "Murid membezakan bunyi pak dan bung serta menyatakan dua ciri permainan kompang.",
@@ -154,8 +182,10 @@
       "lexical_alignment_score": 0.9,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-17": {
       "objective": "Murid menggayakan tiga arah melodi menaik, mendatar dan menurun mengikut tempo.",
@@ -164,8 +194,10 @@
       "lexical_alignment_score": 0.667,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-18": {
       "objective": "Murid menyusun corak irama daripada sekurang-kurangnya empat ikon setelah mendengar contoh.",
@@ -174,8 +206,10 @@
       "lexical_alignment_score": 0.714,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-19": {
       "objective": "Murid mencipta dan memainkan satu corak irama baharu menggunakan kad ikon.",
@@ -184,8 +218,10 @@
       "lexical_alignment_score": 0.9,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-20": {
       "objective": "Murid menghasilkan tiga kesan bunyi yang sesuai untuk tiga peristiwa dalam cerita.",
@@ -194,8 +230,10 @@
       "lexical_alignment_score": 0.875,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-21": {
       "objective": "Murid menyanyikan satu rangkap Burung Kenek-Kenek dengan pic yang tepat.",
@@ -204,8 +242,10 @@
       "lexical_alignment_score": 1,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-22": {
       "objective": "Murid memainkan skor iringan kastanet dan loceng bersama nyanyian pada tempo seragam.",
@@ -214,8 +254,10 @@
       "lexical_alignment_score": 0.75,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-23": {
       "objective": "Murid menyanyikan satu frasa Tembikar Cantik pada tempo yang betul.",
@@ -224,8 +266,10 @@
       "lexical_alignment_score": 0.875,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-24": {
       "objective": "Murid mengekalkan detik lagu pada dua tempo menggunakan ketukan kayu irama dalam pasangan.",
@@ -234,8 +278,10 @@
       "lexical_alignment_score": 0.818,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-25": {
       "objective": "Murid memainkan irama dalam kumpulan mengikut isyarat konduktor dan bertukar peranan.",
@@ -244,8 +290,10 @@
       "lexical_alignment_score": 0.75,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-28": {
       "objective": "Murid menyanyikan satu rangkap Taman Mini pada tempo yang ditetapkan.",
@@ -254,8 +302,10 @@
       "lexical_alignment_score": 0.875,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-29": {
       "objective": "Murid menyanyi sambil bergerak mengikut tempo cepat, lambat dan perubahan tempo.",
@@ -264,8 +314,10 @@
       "lexical_alignment_score": 0.818,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-30": {
       "objective": "Murid menyatakan dua ciri muzik tarian singa serta satu alat pengiringnya.",
@@ -274,8 +326,10 @@
       "lexical_alignment_score": 0.667,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-31": {
       "objective": "Murid menyanyikan satu rangkap dengan tempo betul dan mengubah tempo apabila diberi isyarat.",
@@ -284,8 +338,10 @@
       "lexical_alignment_score": 0.778,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y2-32": {
       "objective": "Murid mencipta corak irama empat detik dan memainkannya bersama nyanyian secara kumpulan.",
@@ -294,8 +350,10 @@
       "lexical_alignment_score": 1,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y3-01": {
       "objective": "Murid melakukan latihan pernafasan 8–16 detik mengikut kemampuan serta menyanyi satu frasa dengan pic sesuai.",
@@ -304,8 +362,10 @@
       "lexical_alignment_score": 1,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y3-02": {
       "objective": "Murid memainkan kastanet pada setiap detik lagu Tut Tut Kereta Api dengan tempo stabil dalam dua percubaan.",
@@ -314,8 +374,10 @@
       "lexical_alignment_score": 1,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y3-03": {
       "objective": "Murid bergerak dalam formasi kereta api mengikut tempo lagu dan mengubah halaju apabila isyarat berubah.",
@@ -324,8 +386,10 @@
       "lexical_alignment_score": 0.769,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-01": {
       "objective": "Mengenal not G, A dan B serta menunjukkan tiga kedudukannya pada baluk dengan betul.",
@@ -334,8 +398,10 @@
       "lexical_alignment_score": 0.571,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-02": {
       "objective": "Mengenal dan menulis sekurang-kurangnya tiga daripada empat simbol muzik dengan betul.",
@@ -344,8 +410,10 @@
       "lexical_alignment_score": 1,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-03": {
       "objective": "Menulis dan menamakan not C’ dan D’ pada baluk serta melengkapkan sekurang-kurangnya tiga daripada empat item latihan.",
@@ -354,8 +422,10 @@
       "lexical_alignment_score": 1,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-04": {
       "objective": "Menepuk satu corak irama dengan tanda rehat dan mengikut skor yang disediakan secara tepat dalam dua percubaan.",
@@ -364,8 +434,10 @@
       "lexical_alignment_score": 0.889,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-05": {
       "objective": "Menghasilkan satu iringan alat perkusi mengikut tempo berdasarkan skor dengan dua daripada tiga kriteria tepat.",
@@ -374,8 +446,10 @@
       "lexical_alignment_score": 0.875,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-06": {
       "objective": "Mengajuk frasa melodi dengan pic betul dan menyanyikan satu rangkap secara berkumpulan.",
@@ -384,8 +458,10 @@
       "lexical_alignment_score": 0.818,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-07": {
       "objective": "Menyanyikan frasa lagu dengan pic dan tempo tepat dalam dua daripada tiga percubaan.",
@@ -394,8 +470,10 @@
       "lexical_alignment_score": 0.75,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-08": {
       "objective": "Memainkan dua corak irama yang berbeza mengikut tempo lagu secara ensembel ringkas.",
@@ -404,8 +482,10 @@
       "lexical_alignment_score": 0.778,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-09": {
       "objective": "Membezakan serta melaksanakan legato dan staccato dalam nyanyian pada dua frasa contoh.",
@@ -414,8 +494,10 @@
       "lexical_alignment_score": 0.571,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-10": {
       "objective": "Memainkan corak irama berdasarkan skor lagu dengan tempo stabil dalam sekurang-kurangnya dua ulangan.",
@@ -424,8 +506,10 @@
       "lexical_alignment_score": 0.8,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-11": {
       "objective": "Mengenal bentuk lagu AA dan AB serta menunjukkan dua pola gerak mengikut bahagian muzik.",
@@ -434,8 +518,10 @@
       "lexical_alignment_score": 0.75,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-14": {
       "objective": "Murid mengenal tiga alat muzik dalam ensembel Tagunggu dan menyatakan keluarga bagi sekurang-kurangnya dua alat dengan betul.",
@@ -444,8 +530,10 @@
       "lexical_alignment_score": 0.8,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-15": {
       "objective": "Murid melakukan dua urutan gerak Gemalai secara selaras dengan detik muzik dalam dua percubaan.",
@@ -454,8 +542,10 @@
       "lexical_alignment_score": 0.7,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-16": {
       "objective": "Murid mempersembahkan urutan Gemalai dan memberikan satu ulasan berdasarkan koordinasi serta kreativiti gerakan.",
@@ -464,8 +554,10 @@
       "lexical_alignment_score": 0.778,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-17": {
       "objective": "Memainkan frasa rekoder menggunakan penjarian G, A, B dan C’ dengan ton yang baik.",
@@ -474,8 +566,10 @@
       "lexical_alignment_score": 0.875,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-18": {
       "objective": "Melengkapkan empat daripada lima item meter, garis bar atau tanda rehat pada baluk.",
@@ -484,8 +578,10 @@
       "lexical_alignment_score": 0.778,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-19": {
       "objective": "Mengiringi satu rangkap lagu menggunakan perkusi badan mengikut tempo pada dua ulangan.",
@@ -494,8 +590,10 @@
       "lexical_alignment_score": 0.889,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-20": {
       "objective": "Memainkan corak irama mudah menggunakan tepukan/perkusi badan pada dua tempo berbeza.",
@@ -504,8 +602,10 @@
       "lexical_alignment_score": 0.889,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-21": {
       "objective": "Mencipta dan mempersembahkan frasa melodi menggunakan not B, A dan G.",
@@ -514,8 +614,10 @@
       "lexical_alignment_score": 0.6,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-22": {
       "objective": "Memainkan not D’ dengan penjarian dan ton yang betul serta mencuba satu frasa kaunter pendek.",
@@ -524,8 +626,10 @@
       "lexical_alignment_score": 0.909,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-23": {
       "objective": "Mengenal dua bunyi alat perkusi dan memainkan satu pola iringan mengikut skor secara konsisten.",
@@ -534,8 +638,10 @@
       "lexical_alignment_score": 0.9,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-24": {
       "objective": "Mencipta satu corak irama dan satu jawapan melodi ringkas menggunakan not B, A dan G, kemudian mempersembahkannya mengikut detik.",
@@ -544,8 +650,10 @@
       "lexical_alignment_score": 1,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-28": {
       "objective": "Menyanyikan satu rangkap Desaku Tercinta pada pic dan tempo tepat.",
@@ -554,8 +662,10 @@
       "lexical_alignment_score": 1,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-29": {
       "objective": "Memainkan iringan perkusi berdasarkan skor dengan dua pilihan tempo secara tepat.",
@@ -564,8 +674,10 @@
       "lexical_alignment_score": 1,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-30": {
       "objective": "Mempersembahkan dua bahagian lagu pusingan secara berkumpulan dengan masuk pada bar yang ditetapkan.",
@@ -574,8 +686,10 @@
       "lexical_alignment_score": 0.9,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-31": {
       "objective": "Murid mengenal sekurang-kurangnya tiga alat muzik yang mengiringi Kolattam dan menerangkan dua ciri alat dengan tepat.",
@@ -584,8 +698,10 @@
       "lexical_alignment_score": 0.875,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-32": {
       "objective": "Murid melaksanakan dua corak gerakan selaras tempo secara selamat dalam kumpulan.",
@@ -594,8 +710,10 @@
       "lexical_alignment_score": 0.917,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y4-33": {
       "objective": "Murid mempersembahkan satu urutan gerak berirama dan menilai kumpulan rakan melalui dua kriteria.",
@@ -604,8 +722,10 @@
       "lexical_alignment_score": 0.727,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y5-12": {
       "objective": "Murid memadankan sekurang-kurangnya dua komposer Baroque dengan karya mereka.",
@@ -614,8 +734,10 @@
       "lexical_alignment_score": 0.875,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y5-13": {
       "objective": "Murid menyanyi satu frasa dengan pic dan tempo yang tepat.",
@@ -624,8 +746,10 @@
       "lexical_alignment_score": 0.714,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y5-14": {
       "objective": "Murid memainkan frasa not F/E dengan penjarian dan ton baik.",
@@ -634,8 +758,10 @@
       "lexical_alignment_score": 0.857,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y5-15": {
       "objective": "Kumpulan menyediakan tugasan, bahan dan jadual latihan persembahan Unit 1–5.",
@@ -644,8 +770,10 @@
       "lexical_alignment_score": 0.7,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y5-16": {
       "objective": "Kumpulan mempersembah sekurang-kurangnya tiga komponen rubrik projek dengan baik.",
@@ -654,8 +782,10 @@
       "lexical_alignment_score": 0.7,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y5-17": {
       "objective": "Murid memainkan melodi kaunter dengan masa masuk dan penjarian betul.",
@@ -664,8 +794,10 @@
       "lexical_alignment_score": 1,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y5-27": {
       "objective": "Murid menyanyi satu frasa Adiwira dengan pic serta perubahan tempo tepat.",
@@ -674,8 +806,10 @@
       "lexical_alignment_score": 1,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y5-28": {
       "objective": "Murid memainkan satu iringan perkusi dengan simbol dinamik mengikut skor.",
@@ -684,8 +818,10 @@
       "lexical_alignment_score": 0.818,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y5-29": {
       "objective": "Murid mempersembahkan dua pola gerakan selaras cerita dan perubahan tempo.",
@@ -694,8 +830,10 @@
       "lexical_alignment_score": 0.818,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y5-30": {
       "objective": "Murid menyanyi frasa Joget Khatulistiwa dengan pic, tempo dan tempat nafas betul.",
@@ -704,8 +842,10 @@
       "lexical_alignment_score": 1,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y5-31": {
       "objective": "Murid memainkan satu latihan rekoder dengan penjarian dan perlidahan 'tu' tepat.",
@@ -714,8 +854,10 @@
       "lexical_alignment_score": 1,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y5-32": {
       "objective": "Murid memainkan satu frasa kaunter dengan dinamik dan masa masuk yang seragam.",
@@ -724,8 +866,10 @@
       "lexical_alignment_score": 0.9,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y5-33": {
       "objective": "Murid bermain pola perkusi dengan tempo serta dinamik p/f yang tepat.",
@@ -734,8 +878,10 @@
       "lexical_alignment_score": 0.7,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y5-34": {
       "objective": "Murid menyediakan pelan persembahan dengan tugasan untuk empat kumpulan.",
@@ -744,8 +890,10 @@
       "lexical_alignment_score": 0.625,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y5-35": {
       "objective": "Murid menghasilkan persembahan muzik dan refleksi secara berkumpulan.",
@@ -754,8 +902,10 @@
       "lexical_alignment_score": 0.667,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y6-11": {
       "objective": "Murid mengenal tiga komposer Klasikal dan dua pasangan komposer–karya yang betul.",
@@ -764,8 +914,10 @@
       "lexical_alignment_score": 0.7,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y6-14": {
       "objective": "Murid menyanyi frasa Mikroorganisma dengan pic, tempo dan dinamik pada skor yang betul.",
@@ -774,8 +926,10 @@
       "lexical_alignment_score": 0.778,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y6-15": {
       "objective": "Murid memainkan not D dan C pada rekoder serta satu frasa melodi kaunter dengan ton terkawal.",
@@ -784,8 +938,10 @@
       "lexical_alignment_score": 1,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y6-30": {
       "objective": "Murid menyanyikan frasa Rindu dengan pic dan tempo serta ayunan irama swing.",
@@ -794,8 +950,10 @@
       "lexical_alignment_score": 0.889,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y6-31": {
       "objective": "Murid mencipta empat gerak lapan detik dan mempersembahkan satu turutan yang sepadan dengan tempo.",
@@ -804,8 +962,10 @@
       "lexical_alignment_score": 0.889,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y6-32": {
       "objective": "Murid memainkan latihan rekoder C hingga D’ dan corak irama dengan tiga daripada empat kriteria tepat.",
@@ -814,8 +974,10 @@
       "lexical_alignment_score": 0.8,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     },
     "MZ-Y6-33": {
       "objective": "Murid mempersembahkan bahagian ensembel Rindu dan menunjukkan tempo yang tepat dalam dua ulangan.",
@@ -824,8 +986,10 @@
       "lexical_alignment_score": 0.909,
       "screening": "PASS_TEXT_ALIGNMENT_ONLY",
       "source_score_visual_review": "PENDING",
-      "editorial_approval": "NOT_GIVEN",
-      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY"
+      "editorial_approval": "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED",
+      "source_kind": "GITHUB_PR335_RPH_MD_AND_CRITERION_OVERLAY",
+      "editorial_review_date": "2026-11-06",
+      "review_limit": "NOT_A_SCORE_VISUAL_REVIEW_OR_OFFICIAL_KPM_APPROVAL"
     }
   }
 }
