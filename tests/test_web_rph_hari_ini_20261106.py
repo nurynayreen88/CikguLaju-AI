@@ -91,8 +91,10 @@ class DailyTimetableRouteTests(TestCase):
         self.conf={"supabase_url":"https://example.supabase.co","supabase_key":"secret"}
 
     def test_authentication_required_before_reading_profile(self):
+        with self.app.app_context():
+            unauthenticated=(jsonify({"error":"login"}),401)
         with patch("web.rph_hari_ini_web._auth",
-                   return_value=(None,None,(jsonify({"error":"login"}),401))),patch(
+                   return_value=(None,None,unauthenticated)),patch(
                    "web.rph_hari_ini_web.get_schedule") as schedule:
             reply=self.client.get("/api/web/rph/hari-ini")
         self.assertEqual(reply.status_code,401)
