@@ -19,3 +19,7 @@ DSKP sebenar mencetak **SK 3.1 Pengkaryaan Muzik** dengan SP **3.2.1–3.2.3**. 
 **Kod apresiasi juga memerlukan perhatian:** Pada bahagian DSKP Tahun 4, **SK 4.1 Penghayatan Karya Muzik** dicetak dengan SP **4.2.1**. PdP34 cadangan Kolattam menggunakan kod tersebut dalam RPT draf tetapi kekal *cadangan bukan rasmi*; tiada normalisasi kepada 4.1.1.
 
 **Status pengesahan:** perbezaan nombor dan kandungan telah dikenal pasti menggunakan teks DSKP & buku, **bukan** kelulusan penyelarasan atau verifikasi imej skor muzik. RPH21 dan RPH24 berstatus DRAF STAGING; penerbitan disekat sehingga keputusan dibuat. Semua nilai asal dikekalkan untuk audit.
+
+## Sumber silang tambahan: DSKP Pendidikan Kesenian Tahun 4 (2018)
+
+DSKP gabungan Pendidikan Kesenian Tahun 4 (KPM/BPK 2018, [salinan PDF](https://skpktaiping.home.blog/wp-content/uploads/2019/02/dskp-kssr-semakan-2017-pendidikan-kesenian-tahun-4.pdf), halaman bercetak 37) mencetak **SK 3.2 Penghasilan idea muzikal** dengan **SP 3.2.1–3.2.3**, selaras nombor dengan Buku Teks Pendidikan Kesenian 2019. DSKP berasingan **Pendidikan Muzik Tahun 4 (KPM/BPK 2019)** pula mencetak **SK 3.1 Pengkaryaan Muzik** tetapi meletakkan **SP 3.2.1–3.2.3** di bawahnya. Oleh itu dua dokumen rasmi berbeza pada label SK, bukan pada kod SP bercetak. Dalam draf CikguLaju, SK 3.1 masih dilabel mengikut DSKP Muzik berasingan, SP 3.2.x mengikut cetakan kedua-duanya; ia **bukan normalisasi SK yang telah diluluskan**. Perlu pengesahan versi kurikulum yang digunakan sekolah sebelum FINAL READY.
