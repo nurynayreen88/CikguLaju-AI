@@ -15,7 +15,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan peta organisasi antarabangsa dan dua berita kegiatan kerjasama Malaysia yang bertarikh. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 10: Malaysia dan Dunia.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 162–172: Kajian kes cadangan tentang kerjasama Malaysia dalam organisasi. Murid membina persoalan kajian tentang cara Malaysia menyumbang di peringkat dunia. Guru menyemak jawapan awal berpandukan 12.4.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 162–172: Kajian kes cadangan tentang kerjasama Malaysia dalam organisasi dunia. Murid membina persoalan kajian tentang cara Malaysia menyumbang di peringkat dunia. Guru menyemak jawapan awal berpandukan 12.4.1.
 
 **Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 162–172 bagi menyokong perbandingan. Murid membandingkan bukti pelibatan dalam dua organisasi dan menyimpulkan faedah kerjasama. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menjalinkan hubungan baik dengan negara luar.
 
