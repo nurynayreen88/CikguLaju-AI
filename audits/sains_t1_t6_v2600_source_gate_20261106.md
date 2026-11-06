@@ -121,7 +121,7 @@ Bukti terperinci disimpan dalam dua fail audit staging:
 | 3 | [DSKP](https://drive.google.com/file/d/1n4OM7x2e1_LIaBQDIxyeHmXglImtu5Yb/view) | [BT](https://drive.google.com/file/d/17QNqKZjSF7V9GzzkXkz46bDJGnyKYq-F/view) |
 | 4 | [DSKP](https://drive.google.com/file/d/1eXDdb_qSfCKyqoVtl9T4q2I4rKyHtk9D/view) | [BT](https://drive.google.com/file/d/1Y2Uf44WX5bFhAaaEx55Is7cZpJfrn7Ms/view) |
 | 5 | [DSKP](https://drive.google.com/file/d/1YkiK-pVo4UUzyOUvv_Vrico58eQyddCz/view) | [BT](https://drive.google.com/file/d/1m5k8gVkNImT8QEdw6fCEVpQh_tNkUKUT/view) |
-| 6 | **Belum ditemui dalam folder sumber semasa** | [BT](https://drive.google.com/file/d/14yto0qTq87FIeo6UtJuDef8D2xGwiPLd/view) |
+| 6 | [DSKP KSSR Semakan 2017 (salinan awam BPK 2021)](https://beebeeclassroom.com/wp-content/uploads/2022/04/DSKP-KSSR-Semakan-2017-Sains-Tahun-6_ISBN_.pdf) — sumber tambahan awam, bukan fail Drive asal | [BT dalam Drive](https://drive.google.com/file/d/14yto0qTq87FIeo6UtJuDef8D2xGwiPLd/view) — fetch gagal pada semakan, belum disahkan dapat dibaca |
 
 Sumber PDF belum diaudit halaman demi halaman; pautan di sini tidak mengesahkan SK/SP atau nombor halaman. Tahun 1 memerlukan semakan berasingan terhadap pelaksanaan KP2027 sebelum penerbitan guru.
 
