@@ -54,4 +54,22 @@ with patch.dict(os.environ,{"CIKGULAJU_WEB_NATIVE_RPH_ENABLED":"1","CIKGULAJU_AU
             count+=1
     assert renderer.calls==0
 assert count==108
+# Positive parser contract with a TEMPORARY MOCK ONLY. Never changes any
+# approval in the source, and cannot activate the user-facing endpoint.
+from web.sejarah_2027_staging_source import preview_only
+mock_row=preview_only(4,1)
+mock_payload={
+    "subject":"SEJARAH","component":None,"year":4,"lesson":1,
+    "unit":mock_row["rph"]["textbook_reference"]["unit_title"],
+    "teacher":teacher,"layout":internal_preview_layout(4,1,teacher),
+    "format":"word","source_digest":source_fingerprint(4,"SEJARAH",1),
+}
+with patch("web.sejarah_2027_staging_source.lesson",return_value=mock_row):
+    state,rph_text,fmt=build_native_input(mock_payload)
+assert fmt=="word"
+assert state["rph_date"]=="22/03/2027",state["rph_date"]
+assert state["rph_day"]=="Isnin"
+assert "rph"==state["task"]
+assert renderer.calls==0
 print("Sejarah native authenticated endpoint: 108/108 drafts rejected; zero renderer calls")
+print("Sejarah mock-only positive parser: native Word date 22/03/2027; other subject paths unchanged")
