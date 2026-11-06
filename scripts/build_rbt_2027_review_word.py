@@ -83,8 +83,11 @@ def rph_doc(lesson):
       ("Kriteria Kejayaan",lesson["kriteria_kejayaan"]),
       ("BBM",lesson["bbm"]),
       ("Rujukan Buku Teks",
-       "Calon m/s: "+", ".join(str(x) for x in lesson["rujukan_buku_teks"].get("calon_muka_surat_teks_digital",[]))+
-       " (belum sah visual)" if lesson["rujukan_buku_teks"].get("calon_muka_surat_teks_digital") else
+       "Calon rujukan: "+("; ".join(
+            ref["sp"]+" (hlm. "+"–".join(map(str,ref["muka_surat_bercetak_calon"]))+")"
+            for ref in lesson["rujukan_buku_teks"].get("calon_muka_surat_mengikut_sp",[])
+        ) or ", ".join(str(x) for x in lesson["rujukan_buku_teks"].get("calon_muka_surat_teks_digital",[])))+
+       " — belum sah aktiviti visual" if lesson["rujukan_buku_teks"].get("calon_muka_surat_teks_digital") else
        "Halaman Buku Teks masih perlu pengesahan")
     ]
     for k,v in values:
