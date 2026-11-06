@@ -129,6 +129,7 @@ def main():
         checked = Counter()
         heading_counts = Counter()
         errors = []
+        missing_families = []
         for year in range(2, 7):
             groups = dict.fromkeys((
                 r["theme"], r["unit_code"], r["unit_title"], r["topic"]
@@ -160,6 +161,8 @@ def main():
                             checked["template_refined"] += 1
                         else:
                             checked["template_no_sp_family"] += 1
+                            if len(missing_families) < 35:
+                                missing_families.append((year, topic, [(x.get("sp_code"), str(x.get("sp_text") or "")[:180]) for x in state.get("_bm_web_verified_standards", ())]))
                     if after.get("AKTIVITI UTAMA") != before.get("AKTIVITI UTAMA"):
                         checked["changed_any"] += 1
                 except Exception as exc:
@@ -167,6 +170,7 @@ def main():
         print("BM source audit groups", dict(checked), flush=True)
         print("BM common initial headings", heading_counts.most_common(25), flush=True)
         print("BM source audit exceptions", errors[:25], "total", len(errors), flush=True)
+        print("BM source missing action families", missing_families, flush=True)
         assert checked["rendered"] >= 100, "Insufficient BM source coverage"
         assert not errors, "Some real BM Web PdPs remain unverified"
 
