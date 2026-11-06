@@ -38,6 +38,14 @@ LABELS={"TAJUK":"Tajuk","OBJEKTIF PEMBELAJARAN":"Objektif",
         "SET INDUKSI":"Set induksi","AKTIVITI UTAMA":"Aktiviti utama",
         "PENTAKSIRAN":"Penilaian/PBD","PENUTUP":"Penutup"}
 
+def skill_summary(rows):
+    """Compact DSKP science process and hands-on skill evidence for one-page RPH."""
+    out=rows["KEMAHIRAN PROSES SAINS"]
+    manip=rows.get("KEMAHIRAN MANIPULATIF DAN KESELAMATAN","")
+    if manip:
+        out+="\\nManipulatif/peraturan: "+manip
+    return out
+
 def source_state(rec):
     sp=rec["sp_code"]
     return {"subject":"Sains","year":"Tahun 3","year_label":"Tahun 3",
@@ -101,7 +109,7 @@ def word_doc(path,number,unit,state,rows):
         ("Unit",unit),
         ("Tajuk",rows["TAJUK"]),
         ("SK / SP",f'{state["sk_code"]}  /  {rows.get("STANDARD PEMBELAJARAN", state["sp_code"])}'),
-        ("KPS diintegrasi",rows["KEMAHIRAN PROSES SAINS"]),
+        ("KPS diintegrasi",skill_summary(rows)),
         ("Objektif / Kriteria",rows["OBJEKTIF PEMBELAJARAN"]+"\n"+rows["KRITERIA KEJAYAAN"]),
     ]
     for ri,(k,v) in enumerate(det):
@@ -158,7 +166,7 @@ def pdf_doc(path,number,unit,state,rows):
     fields=[
         ("Unit",unit),
         ("Tajuk",rows["TAJUK"]),
-        ("KPS diintegrasi",rows["KEMAHIRAN PROSES SAINS"]),
+        ("KPS diintegrasi",skill_summary(rows)),
         ("Objektif",rows["OBJEKTIF PEMBELAJARAN"]),
         ("Kriteria kejayaan",rows["KRITERIA KEJAYAAN"]),
         ("Set induksi",rows["SET INDUKSI"]),
