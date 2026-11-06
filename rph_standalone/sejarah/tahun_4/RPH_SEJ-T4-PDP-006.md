@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan kad tanggungjawab anggota keluarga yang pelbagai. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 2: Saya dan Keluarga.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan peranan beberapa anggota keluarga dengan situasi rumah. Guru menyemak jawapan awal berpandukan 1.2.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 22–23: Buku menghuraikan peranan ibu bapa dan anak-anak serta aktiviti. Murid memadankan peranan beberapa anggota keluarga dengan situasi rumah. Guru menyemak jawapan awal berpandukan 1.2.3.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 2. Murid menyusun jadual persamaan dan perbezaan peranan lalu menjelaskan amalan menghormati semua anggota. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan menghormati peranan setiap ahli keluarga.
+**Aktiviti 2 (20 min):** Guru meminta murid memeriksa urutan dan fakta pada hlm. 22–23. Murid menyusun jadual persamaan dan perbezaan peranan lalu menjelaskan amalan menghormati semua anggota. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan menghormati peranan setiap ahli keluarga.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan jadual banding beza tiga peranan keluarga dengan satu contoh adab. Guru menyemak secara individu menggunakan kata tugas SP 1.2.3 dan nilai K1.2.6, kemudian memberi intervensi kepada murid yang belum tepat.
 

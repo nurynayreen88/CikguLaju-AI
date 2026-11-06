@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan contoh garis masa perkembangan kanak-kanak yang direka. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 2: Saya dan Keluarga.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun peristiwa perkembangan mengikut urutan usia dan menanda selang masa. Guru menyemak jawapan awal berpandukan 1.2.4.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 24: riwayat perkembangan diri dalam bentuk garis masa, peristiwa. Murid menyusun peristiwa perkembangan mengikut urutan usia dan menanda selang masa. Guru menyemak jawapan awal berpandukan 1.2.4.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 2. Murid menghasilkan garis masa diri dengan pilihan butiran tidak sensitif atau watak rekaan dan menerangkan perubahannya. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan akhlak yang mulia untuk mewujudkan hubungan kekeluargaan yang harmoni.
+**Aktiviti 2 (20 min):** Guru meminta murid memeriksa urutan dan fakta pada hlm. 24. Murid menghasilkan garis masa diri dengan pilihan butiran tidak sensitif atau watak rekaan dan menerangkan perubahannya. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan akhlak yang mulia untuk mewujudkan hubungan kekeluargaan yang harmoni.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan garis masa empat peristiwa serta satu pengajaran tentang hubungan keluarga. Guru menyemak secara individu menggunakan kata tugas SP 1.2.4 dan nilai K1.2.7, kemudian memberi intervensi kepada murid yang belum tepat.
 

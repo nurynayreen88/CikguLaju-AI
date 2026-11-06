@@ -15,9 +15,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan dua foto sekolah dari masa berbeza dan maklumat arkib sekolah yang dibenarkan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 3: Sejarah Sekolah.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina persoalan inkuiri tentang perubahan sekolah dan jadual dua sumber. Guru menyemak jawapan awal berpandukan 1.3.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 32–40: Sumber lokasi, identiti dan sejarah sekolah sebagai bahan. Murid membina persoalan inkuiri tentang perubahan sekolah dan jadual dua sumber. Guru menyemak jawapan awal berpandukan 1.3.1.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid membandingkan keadaan sekolah dahulu dan kini serta membentang dapatan dan batas bukti. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan tanggungjawab murid terhadap sekolah.
+**Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 32–40 bagi menyokong perbandingan. Murid membandingkan keadaan sekolah dahulu dan kini serta membentang dapatan dan batas bukti. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan tanggungjawab murid terhadap sekolah.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan laporan kajian kes satu persoalan, dua bukti, satu perubahan dan iktibar. Guru menyemak secara individu menggunakan kata tugas SP 1.3.1, 1.3.2 dan nilai K1.3.5, kemudian memberi intervensi kepada murid yang belum tepat.
 

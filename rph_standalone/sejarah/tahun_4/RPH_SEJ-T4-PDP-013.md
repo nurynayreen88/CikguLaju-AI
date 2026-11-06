@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan dua peta lama dan baharu atau foto kawasan setempat. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 4: Sejarah Tempat Tinggal.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengenal pasti satu perubahan setempat melalui sumber yang bertarikh. Guru menyemak jawapan awal berpandukan 1.4.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 50–51: Contoh perubahan nama tempat Tanjung Puteri kepada Johor Bahru. Murid mengenal pasti satu perubahan setempat melalui sumber yang bertarikh. Guru menyemak jawapan awal berpandukan 1.4.3.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid menyusun kronologi kawasan dan menjelaskan bagaimana kemudahan berkembang. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan menjaga kebersihan dan keindahan di tempat tinggal.
+**Aktiviti 2 (20 min):** Guru meminta murid memeriksa urutan dan fakta pada hlm. 50–51. Murid menyusun kronologi kawasan dan menjelaskan bagaimana kemudahan berkembang. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan menjaga kebersihan dan keindahan di tempat tinggal.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan garis masa kawasan dengan dua bukti perubahan dan sumber. Guru menyemak secara individu menggunakan kata tugas SP 1.4.3 dan nilai K1.4.6, kemudian memberi intervensi kepada murid yang belum tepat.
 

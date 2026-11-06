@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan contoh carta organisasi dan rekod pencapaian sekolah. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 3: Sejarah Sekolah.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengkategorikan maklumat sekolah seperti lokasi, pentadbiran, simbol dan pencapaian. Guru menyemak jawapan awal berpandukan 1.3.4.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 38–40: Lencana, bendera, lagu, cogan kata serta carta organisasi. Murid mengkategorikan maklumat sekolah seperti lokasi, pentadbiran, simbol dan pencapaian. Guru menyemak jawapan awal berpandukan 1.3.4.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid menyediakan kad profil sekolah menggunakan sumber yang diberi guru, tanpa data peribadi. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan sekolah sebagai sebuah institusi yang membina masyarakat dan negara.
+**Aktiviti 2 (20 min):** Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 38–40. Murid menyediakan kad profil sekolah menggunakan sumber yang diberi guru, tanpa data peribadi. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan sekolah sebagai sebuah institusi yang membina masyarakat dan negara.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan kad maklumat sekolah lengkap dengan sumber bagi setiap fakta utama. Guru menyemak secara individu menggunakan kata tugas SP 1.3.4 dan nilai K1.3.7, kemudian memberi intervensi kepada murid yang belum tepat.
 
