@@ -28,17 +28,26 @@ EVIDENCE = (
     ("T3-L004", (49,50,51), "اولن", VIDEO_JAWI_AWALAN, "Jawi imbuhan awalan"),
     ("T3-L008", (50,), "اولن", PDPR_2021, "Jawi awalan di/se/ke"),
     ("T3-L047", (120,121,122), "تيدور", PDPR_2021, "Adab tidur: kepentingan"),
+    ("T3-L055", (85,86,87), "صلاة", PDPR_2021, "Solat sempurna: perkara membatalkan solat, cakupan halaman PdPR"),
+    ("T3-L059", (85,86,87), "صلاة", PDPR_2021, "Solat sempurna: permasalahan membatalkan solat, cakupan halaman PdPR"),
     ("T3-L051", (85,86,87), "صلاة", PDPR_2021, "Perkara membatalkan solat"),
     ("T3-L053", (26,), "الفاتحة", PDPR_2021, "Pengenalan Surah Al-Fatihah"),
     ("T3-L057", (28,29,30), "الفاتحة", PDPR_2021, "Kefahaman Surah Al-Fatihah"),
     ("T3-L060", (54,55), "اخيرن", PDPR_2021, "Jawi imbuhan akhiran"),
     ("T3-L063", (106,107), "تبليغ", PDPR_2021, "Sirah sifat tabligh"),
+    ("T3-L067", (106,107), "تبليغ", PDPR_2021, "Sirah sifat tabligh: keunggulan dan kepentingan"),
     ("T3-L068", (52,), "اخيرن", PDPR_2020, "Jawi menulis imbuhan akhiran"),
     ("T3-L075", (38,39), "حديث", PDPR_2021, "Yang muda dikasihi, yang tua dihormati"),
+    ("T3-L079", (38,39), "حديث", PDPR_2021, "Yang muda dikasihi, yang tua dihormati: teks dan terjemahan"),
     ("T3-L084", (58,59,60), "اڤيتن", VIDEO_JAWI_APITAN, "Jawi negeri cantik budaya menarik"),
     ("T3-L087", (124,125), "علمو", PDPR_2020, "Menuntut ilmu: fardu ain dan fardu kifayah"),
     ("T3-L091", (124,125,126,127), "علمو", PDPR_2021, "Adab menuntut ilmu"),
     ("T3-L095", (126,), "علمو", PDPR_2020, "Kepentingan adab menuntut ilmu"),
+    ("T3-L111", (90,91,92,93,94,95,96), "ابعاض", PDPR_2021, "Sunat Ab\'adh dan Hai\'at: julat latihan PdPR, bukan pilihan latihan tertentu"),
+    ("T3-L114", (90,91,92,93,94,95,96), "ابعاض", PDPR_2021, "Sunat Ab\'adh dan Hai\'at: julat latihan PdPR, bukan pilihan latihan tertentu"),
+    ("T3-L118", (90,91,92,93,94,95,96), "ابعاض", PDPR_2021, "Sunat Ab\'adh dan Hai\'at: julat latihan PdPR, bukan pilihan latihan tertentu"),
+    ("T3-L128", (28,29,30), "الفاتحة", PDPR_2021, "Kefahaman Surah Al-Fatihah: makna dan pengajaran"),
+    ("T3-L123", (59,), "اڤيتن", PDPR_2020, "Jawi imbuhan apitan: latihan menulis"),
     ("T3-L097", (35,), "إخفاء حقيقي", PDPR_2020, "Tajwid ikhfa hakiki"),
     ("T3-L099", (72,), "كتاب", PDPR_2020, "Beriman kepada kitab: pengertian dan dalil"),
     ("T3-L103", (73,), "كتاب", PDPR_2020, "Beriman kepada kitab: nama kitab"),
@@ -58,6 +67,7 @@ def evidence_queue(root=None):
         assert row["disposition"] == NEEDS_PAGE, (id_, row["disposition"])
         assert marker in row["sp_original"], (id_, marker)
         assert all(1 <= p <= 250 for p in pages) and len(set(pages)) == len(pages)
+        conflict = (id_ == "T3-L004")
         result.append({
             "lesson_id": id_,
             "year": row["year"],
@@ -66,6 +76,14 @@ def evidence_queue(root=None):
             "topic_correspondence": topic,
             "secondary_source_url": link,
             "page_numbers_reported_by_secondary_source": list(pages),
+            "cross_source_conflict_detected": conflict,
+            "conflicting_source_url": PDPR_2021 if conflict else None,
+            "conflict_note": (
+                "PdPR 2021 menyenaraikan p65-66 untuk Jawi awalan walaupun "
+                "p65-66 juga disenaraikan bagi topik Akidah dalam bahan sama; "
+                "p49-51 hanyalah petunjuk daripada video guru, perlu semak buku asal."
+                if conflict else None
+            ),
             "page_number_is_verified_in_original_book": False,
             "actual_printed_book_seen_at_page": False,
             "exercise_instruction_verified": False,
@@ -79,7 +97,7 @@ def evidence_queue(root=None):
             "review_next": "Inspect original book on reported printed page, verify exact exercise and "
                            "SP fit, obtain signoff and only then propose one concise RPH sentence.",
         })
-    assert len(result) == 21
+    assert len(result) == 30
     return {
         "year2_year3_candidate_lessons": a["refined_page_review_candidates"],
         "secondary_page_hints": len(result),
