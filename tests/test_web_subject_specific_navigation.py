@@ -60,6 +60,8 @@ class SubjectNavigationQA(unittest.TestCase):
             self.assertEqual(_english_page_reference(p), "")
             p.write_text("**Materials:** SB p.19; Teacher's Book p.23",
                          encoding="utf-8")
+            # Clear the source cache when intentionally editing this test fixture.
+            _english_page_reference.cache_clear()
             self.assertEqual(_english_page_reference(p), "Student's Book m/s 19")
 
 
