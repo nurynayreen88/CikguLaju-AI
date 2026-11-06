@@ -1,3 +1,13 @@
+## 6 November 2026 — Pakej penggunaan manual untuk SEMAKAN DALAMAN
+
+- Run **#42161919427 telah LULUS** selepas pembetulan RPH Tahun 2 PdP02, Tahun 4 PdP06 dan Tahun 5 PdP12/35 supaya guru boleh menjalankan aktiviti tanpa fail audio rasmi.
+- Artifak dari CI yang sama tersedia sebagai **175 RPH Word + 175 PDF**, dan **5 RPT Word + 5 PDF**: [GitHub Actions](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42161919427). Pakej Word boleh disunting guru; tarikh, kelas dan masa masih perlu diisi.
+- Pengesahan bebas ZIP: **175 PDF RPH = 1 halaman A4 setiap satu**, **5 PDF RPT = 3 halaman A4 landskap setiap satu**, 180 DOCX mempunyai OOXML ZIP sah, tiada fail gagal PDF parse. Sampel RPH Tahun 4 PdP06 telah dirender secara visual dalam LibreOffice, bertabulator dan tanpa limpahan halaman.
+- Semua PDF RPT bertanda **DRAF STAGING — BUKAN UNTUK EDARAN**. Pakej di atas hanya sesuai untuk semakan dan persediaan manual sehingga disahkan; **bukan akses Telegram/Web dan bukan kebenaran edaran umum**.
+- Syarat penerbitan masih seperti dahulu: semak skor/notasi, SK/SP cetakan berkonflik, 8 cadangan PdP, 10 slot tarikh anjal serta parity Web–Telegram. Kekalkan PR dalam staging.
+
+---
+
 ## 6 November 2026 — Gerbang 90% kualiti bukti teks/struktur staging
 
 - **LULUS QA 90% bagi skop terhad** melalui `quality_90_text_staging.py`: 167/175 = **95.4%** PdP mempunyai semakan teks buku atau bukti halaman; 175/175 pratonton mempunyai struktur fasa dan kriteria kejayaan; 175/175 kod SP hadir dalam teks DSKP bagi tahun masing-masing; 5/5 RPT mengandungi 35 PdP unik.
