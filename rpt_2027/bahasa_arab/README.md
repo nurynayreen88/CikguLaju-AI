@@ -109,3 +109,7 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 - Buku Teks **KSSR Semakan 2017** Tahun2 DBP cetakan 2017 ISBN 978-983-49-1589-6 ditemui melalui sumber Drive berasingan: https://drive.google.com/file/d/13CqpBb4HosAM_-HTEN-hhBCt2W5wVXCZ/view. **Rujukan halaman bercetak (offset PDF +12)** ditetapkan supaya tiada salah peta.
 - 16 RPH individu `year2/lesson_013..028.md` Unit2 **أحب أسرتي** dengan cadangan halaman bercetak 26–43, indeks `year2_unit2_pdp013_028_DRAF.csv`, bukti `audits/bahasa_arab_y2_unit2_pdp013_028_visual_audit_20261106.json`.
 - Jumlah **186 RPH DRAF**, **0 FINAL READY**, Year2 Unit3/4 dan Year3 Unit3/4 serta Year6 Unit2/3/4 masih belum ditulis. Kod SP cetakan pada halaman, RPT 2027 dan kelulusan guru perlu disemak individu. CI 186 belum selesai semasa commit ini.
+
+## Tahun 2 Unit 3 — 6 November 2026
+- 16 RPH cadangan individu PdP029–044 `جسمي السليم` dengan sokongan visual Buku Teks 2017 Semakan asal, halaman bercetak 50–69 (PDF fizikal h+12). Peta `year2_unit3_pdp029_044_DRAF.csv` serta audit `audits/bahasa_arab_y2_unit3_pdp029_044_visual_audit_20261106.json`.
+- **202 RPH DRAF**, **0 FINAL READY**. Lulus 186 A4 dahulu, 202 belum disahkan ketika commit. Year2 Unit4, Year3 Units3/4, Year6 Units2–4 masih belum dilengkapkan, tidak mengubah produksi.

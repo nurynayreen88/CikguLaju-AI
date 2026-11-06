@@ -5,10 +5,10 @@
   "pr_url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/336",
   "completed": {
     "unit_indexes": 20,
-    "draft_rph": 186,
+    "draft_rph": 202,
     "unit2_4_activity_banks": 15,
     "draft_crosswalk": 60,
-    "source_page_draft_reviewed": 186,
+    "source_page_draft_reviewed": 202,
     "preliminary_year6_page_candidates": 0,
     "one_page_A4_docx_pdf_ci_verified": true,
     "render_check_ci": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42134760787",
@@ -35,7 +35,9 @@
     "year3_unit2_candidate_rph": 16,
     "verified_a4_render_for_all_170": false,
     "year2_unit2_candidate_rph": 16,
-    "verified_a4_render_for_all_186": false
+    "verified_a4_render_for_all_186": false,
+    "year2_unit3_candidate_rph": 16,
+    "verified_a4_render_for_all_202": false
   },
   "release_checks": [
     {
@@ -51,7 +53,7 @@
     {
       "id": "full_pdp_coverage",
       "status": "BLOCKED",
-      "detail": "186 draft candidates, new Year2 Unit2 16. Year2 Units3/4, Year3 Units3/4 and Year6 Units2–4 unwritten; annual 2027 RPT session totals unverified."
+      "detail": "202 individual candidate drafts after Year2 Unit3 +16. Year2 Unit4, Year3 Units3/4 and Year6 Units2–4 unwritten. No official full-year RPT 2027."
     },
     {
       "id": "sk_sp",
@@ -61,7 +63,7 @@
     {
       "id": "textbook_page_to_pdp",
       "status": "PARTIAL",
-      "detail": "186 candidate source page links. Year2 Unit2 16 visual original book pp26–43 mapped with physical PDF offset+12. All source page and SP decisions require teacher and official RPT verification."
+      "detail": "202 candidate source page references, Year2 Unit3 p50-69 source visual coverage, PDF page offset+12, manual SP and year schedule checks outstanding."
     },
     {
       "id": "rpt_2027_group_A_B",
@@ -71,7 +73,7 @@
     {
       "id": "word_pdf_programmatic_a4",
       "status": "PASS_TECHNICAL_ONLY",
-      "detail": "Historical 170 DOCX/PDF each A4 passed run https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42137636888; new 186 batch not yet tested."
+      "detail": "Historical 186 DOCX+PDF one A4 technical pass https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42139501949. New total 202 not yet tested."
     },
     {
       "id": "manual_pedagogic_approval",
@@ -127,6 +129,11 @@
       "id": "year2_unit2_original_pdf_source",
       "status": "PARTIAL",
       "detail": "Original Tahun2 KSSR Semakan 2017 2017-book original 65MB visually read, 16 unit2 candidate RPH; PDF 1-based page=printed page+12, 0 teacher ready and SP printed code audit pending."
+    },
+    {
+      "id": "year2_unit3_book_visual_candidate",
+      "status": "PARTIAL",
+      "detail": "16 Year2 Unit3 candidates visually connected to printed h50-69 of original 2017 KSSR Semakan textbook. No Year2 final RPT, SP code or manual approved."
     }
   ],
   "years": [
@@ -134,15 +141,15 @@
       "year": 2,
       "units": 4,
       "unit1_draft_rph": 12,
-      "source_page_reviewed_rph": 28,
+      "source_page_reviewed_rph": 44,
       "preliminary_mapping_only": 0,
       "unwritten_units": [
-        3,
         4
       ],
-      "textbook_issue": "Year2 28 provisional draft RPH, Unit2 new 16 against visual original KSSR Semakan 2017 pp26–43 (PDF physical page +12). Exact book printed SP, formal RPT2027 and teacher approval pending. Four earlier Unit1 SP issues still unresolved.",
+      "textbook_issue": "Year2 44 candidate drafts, Unit2/3 source visual page coverage using original ISBN 978-983-49-1589-6. SP exact graphic and RPT2027/manual approval still missing.",
       "incomplete_units": [
-        2
+        2,
+        3
       ]
     },
     {
