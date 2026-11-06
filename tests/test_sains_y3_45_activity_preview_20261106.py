@@ -3,7 +3,7 @@ import unittest
 import json
 from pathlib import Path
 from web.sains_y3_rph_activity_preview_20261106 import (
-    BANK,INTEGRATED_SP_DRAFT,adapt_rows,source_ledgers,
+    BANK,INTEGRATED_SP_DRAFT,KPS_LABELS,KPS_BY_SP,adapt_rows,source_ledgers,
 )
 
 class SainsY3ActivityCoverageTests(unittest.TestCase):
@@ -46,6 +46,30 @@ class SainsY3ActivityCoverageTests(unittest.TestCase):
                 self.assertNotIn("penerokaan konsep",revised["AKTIVITI UTAMA"].lower())
                 seen.add(revised["AKTIVITI UTAMA"])
         self.assertEqual(len(seen),45)
+
+    def test_exact_45_dskp_year3_kps_activities_integrated(self):
+        self.assertEqual(set(KPS_BY_SP),set(BANK))
+        self.assertEqual(KPS_LABELS,{
+            "1.1.1":"Memerhati","1.1.2":"Mengelas",
+            "1.1.3":"Mengukur dan menggunakan nombor",
+            "1.1.4":"Membuat inferens","1.1.5":"Meramal",
+            "1.1.6":"Berkomunikasi",
+        })
+        all_skills=set()
+        for rec in self.ledger.values():
+            sp=rec["sp_code"]
+            state={"subject":"Sains","year":"Tahun 3",
+                   "pdp_sequence_code":rec["pdp_code"],"sp_code":sp,
+                   "sk_code":sp.rsplit(".",1)[0]}
+            out=adapt_rows(state,{})
+            codes=KPS_BY_SP[sp]
+            self.assertGreaterEqual(len(codes),2)
+            self.assertEqual(len(codes),len(set(codes)))
+            expected="; ".join(f"{code} {KPS_LABELS[code]}" for code in codes)
+            with self.subTest(sp=sp):
+                self.assertEqual(out["KEMAHIRAN PROSES SAINS"],expected)
+            all_skills.update(codes)
+        self.assertEqual(all_skills,set(KPS_LABELS))
 
     def test_twelve_dskp_corrections_win_over_outdated_titles(self):
         for code,f in self.fixes.items():
