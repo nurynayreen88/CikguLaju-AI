@@ -738,9 +738,9 @@ window.prepareRphFromToday=async function(slot,dateIso){
     !Number.isInteger(slot.year)||slot.year<1||slot.year>6||
     typeof slot.subject_code!=="string"||
     typeof slot.class_name!=="string"||
-    !/^20\\d{2}-\\d{2}-\\d{2}$/.test(dateIso)||
-    !/^\\d{2}:\\d{2}$/.test(slot.start)||
-    !/^\\d{2}:\\d{2}$/.test(slot.end))throw Error("Jadual yang dipilih tidak sah.");
+    !/^20\d{2}-\d{2}-\d{2}$/.test(dateIso)||
+    !/^\d{2}:\d{2}$/.test(slot.start)||
+    !/^\d{2}:\d{2}$/.test(slot.end))throw Error("Jadual yang dipilih tidak sah.");
  todayPrepareBusy=true;
  try{
   showWebView("rph");
