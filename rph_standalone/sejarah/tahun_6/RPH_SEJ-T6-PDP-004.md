@@ -15,7 +15,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan peta Malaysia serta kad ketua negeri yang disemak semasa sesi. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 2: Negeri-negeri di Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 25–26: asal-usul nama negeri termasuk Sabah dan Sarawak. Murid melabel negeri-negeri Malaysia pada peta kosong. Guru menyemak jawapan awal berpandukan 10.2.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 25–26: Halaman 25 membincangkan asal-usul nama negeri termasuk Sabah dan Sarawak. Murid melabel negeri-negeri Malaysia pada peta kosong. Guru menyemak jawapan awal berpandukan 10.2.1.
 
 **Aktiviti 2 (20 min):** Guru memandu semakan padanan berdasarkan bukti pada hlm. 25–26. Murid memadankan institusi ketua negeri dengan negeri masing-masing tanpa menyamakan gelaran. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan taat setia dan menghormati ketua negeri.
 
