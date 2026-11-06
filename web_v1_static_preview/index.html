@@ -684,8 +684,9 @@ async function loadFinalLesson(kind,extra,unchanged){
  const items=await loadOptions(kind,extra);
  if(!unchanged())return;
  fillSelect(lesson,items,"Pilih "+(subject.value==="ENGLISH"?"Lesson":"PdP"));
- catalogStatus.textContent=items.length+" "+(subject.value==="ENGLISH"?"Lesson":"PdP")+" tersedia dalam katalog.";
- if(items.length===0)updateSelectionHelp("Tiada PdP/Lesson bernombor bagi pilihan ini; tidak akan mereka nombor.");
+ const numberedCount=lesson.options.length-1;
+ catalogStatus.textContent=numberedCount+" "+(subject.value==="ENGLISH"?"Lesson":"PdP")+" bernombor tersedia dalam katalog.";
+ if(numberedCount===0)updateSelectionHelp("Tiada PdP/Lesson bernombor bagi pilihan ini; tidak akan mereka nombor.");
 }
 year.addEventListener("change",async()=>{
  const targetYear=year.value;
