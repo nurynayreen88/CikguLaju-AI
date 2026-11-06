@@ -89,7 +89,7 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_sains_rpt_2027_calendar_windows_20261106.py' -v
       - name: Audit all 342 source PdP against explicit readiness blockers
         run: |
-          python tools/audit_sains_342_pdp_release_gate_20261106.py
+          python -m tools.audit_sains_342_pdp_release_gate_20261106
           python -m unittest discover -s tests -p 'test_sains_342_pdp_release_gate_20261106.py' -v
       - name: Upload all 342 PdP source-only release audit
         uses: actions/upload-artifact@v4
