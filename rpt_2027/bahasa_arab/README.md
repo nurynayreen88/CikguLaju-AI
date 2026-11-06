@@ -127,3 +127,7 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 - **16 RPH calon** PdP029–044 `الألوان حولنا` berpandukan imej Buku Teks Tahun3 DBP/KPM 2018 (KSSR Semakan, ISBN 978-983-49-2033-3) h60–85, bunyi huruf kepada warna dan dialog.
 - Bukti visual asal disimpan sebagai metadata rujukan dalam `audits/bahasa_arab_y3_unit3_pdp029_044_visual_source_audit_20261106.json`; peta CSV `rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv`. Tiada halaman asli disalin ke repo.
 - Jumlah **234 RPH DRAF**, **0 FINAL READY**; Tahun3 Unit4 dan Tahun6 Units2–4, RPT2027, SP halaman individu, bahasa Arab akhir/kelulusan guru dan Telegram/Web parity belum disahkan. Ujian 234 PDF/DOCX masih perlu lulus selepas commit.
+
+## Tahun 3 Unit 4 — 6 Nov 2026
+- 16 RPH draf PdP045–060 Unit4 `الوقت كالذهب` dari Buku Teks asal KSSR Semakan 2017 DBP 2018, cetakan ISBN 978-983-49-2033-3, h88–117 (PDF 0-index=h+7). Bukti `audits/bahasa_arab_y3_unit4_pdp045_060_visual_source_audit_20261106.json`, CSV `year3_unit4_pdp045_060_DRAF.csv`.
+- Tahun3 memiliki **60 calon RPH merangkumi empat unit**, tetapi bukan bukti 60 ialah bilangan PdP tahunan rasmi. Total 250 calon Tahun2–6 dan **0 FINAL READY**. Masih ada Tahun6 Unit2–4, RPT2027 A/B, bahasa, SP halaman, signoff dan parity runtime. CI 250 belum diumum lulus sehingga benar-benar diuji.

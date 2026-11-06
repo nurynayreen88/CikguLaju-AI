@@ -5,10 +5,10 @@
   "pr_url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/336",
   "completed": {
     "unit_indexes": 20,
-    "draft_rph": 234,
+    "draft_rph": 250,
     "unit2_4_activity_banks": 15,
     "draft_crosswalk": 60,
-    "source_page_draft_reviewed": 234,
+    "source_page_draft_reviewed": 250,
     "preliminary_year6_page_candidates": 0,
     "one_page_A4_docx_pdf_ci_verified": true,
     "render_check_ci": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42140759459",
@@ -41,7 +41,9 @@
     "year2_unit4_candidate_rph": 16,
     "verified_a4_render_for_all_218": true,
     "year3_unit3_candidate_rph": 16,
-    "verified_a4_render_for_all_234": false
+    "verified_a4_render_for_all_234": false,
+    "year3_unit4_candidate_rph": 16,
+    "verified_a4_render_for_all_250": false
   },
   "release_checks": [
     {
@@ -57,7 +59,7 @@
     {
       "id": "full_pdp_coverage",
       "status": "BLOCKED",
-      "detail": "234 draft candidates. Year2/4/5 all units have candidates, Year3 Unit4 and Year6 Units2–4 unwritten. No official annual 2027 RPT session counts verified."
+      "detail": "250 draft candidates, Years2/3/4/5 have candidates for all four textbook units; Year6 Units2–4 unwritten. Per-year 60/58 etc are NOT validated official annual RPT2027 coverage."
     },
     {
       "id": "sk_sp",
@@ -67,7 +69,7 @@
     {
       "id": "textbook_page_to_pdp",
       "status": "PARTIAL",
-      "detail": "234 page-linked draft candidates, new 16 Year3 Unit3 from original scanned PDF printed h60–85 with PDF index offset+7; SP exact matching/RPT 2027/manual signoff pending."
+      "detail": "250 candidate source-page links, Year3 Unit4 new 16 based on imaged original book pp88–117; printed SP, teacher manual/linguistic approval and annual RPT still blocked."
     },
     {
       "id": "rpt_2027_group_A_B",
@@ -77,7 +79,7 @@
     {
       "id": "word_pdf_programmatic_a4",
       "status": "PASS_TECHNICAL_ONLY",
-      "detail": "Past 218 DOCX and PDF one-page A4 passed https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42141105238. New 234-file batch requires CI."
+      "detail": "218 DOCX+PDF one-page A4 technically passed before Year3 Units3/4. Current 250-file render still pending CI."
     },
     {
       "id": "manual_pedagogic_approval",
@@ -148,6 +150,11 @@
       "id": "year3_unit3_visual_candidate",
       "status": "PARTIAL",
       "detail": "16 Year3 Unit3 draft lessons (phonics and colors, printed h60–85) from original 2018 KSSR Semakan visual source and DSKP code membership; neither teacher-approved nor 2027 annual RPT proved."
+    },
+    {
+      "id": "year3_unit4_source_candidate",
+      "status": "PARTIAL",
+      "detail": "Year3 Unit4 16 visually grounded proposals spanning phonics, day/time, daily routine, map/numbers. 0 teacher approvals and no final RPT2027."
     }
   ],
   "years": [
@@ -169,15 +176,14 @@
       "year": 3,
       "units": 4,
       "unit1_draft_rph": 12,
-      "source_page_reviewed_rph": 44,
+      "source_page_reviewed_rph": 60,
       "preliminary_mapping_only": 0,
-      "unwritten_units": [
-        4
-      ],
-      "textbook_issue": "Year3 now 44 draft proposals including Unit3 16 based on visually inspected original 2018 Semakan textbook. Printed book SP, official RPT2027 count, manual Arabic proof and teacher approvals outstanding.",
+      "unwritten_units": [],
+      "textbook_issue": "Year3 60 candidate drafts across all four units including Unit4 16 visual-source-based pp88–117. Neither official annual 2027 PdP allocation nor teacher/grammar/printed SP approval is complete.",
       "incomplete_units": [
         2,
-        3
+        3,
+        4
       ]
     },
     {

@@ -168,12 +168,45 @@ def main() -> None:
             raise SystemExit("LibreOffice and pdfinfo required for PDF validation")
         pdfdir = args.output_dir / "_pdf_previews"
         pdfdir.mkdir(exist_ok=True)
-        cmd = ["libreoffice", "-env:UserInstallation=file:///tmp/lo_arabic_rph_staging",
-               "--headless", "--convert-to", "pdf", "--outdir", str(pdfdir)]
-        cmd += [str(path) for path in args.output_dir.glob("*.docx")]
-        res = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
-        if res.returncode:
-            raise SystemExit("PDF conversion failed: " + res.stderr)
+        # LibreOffice can silently omit files when hundreds of input paths are
+        # supplied in a single invocation, even with returncode 0.
+        # Convert bounded batches with isolated profiles, then retry any omissions
+        # individually. This is an offline, staging-only renderer.
+        docx_files = sorted(args.output_dir.glob("*.docx"))
+        batch_size = 24
+        for batch_start in range(0, len(docx_files), batch_size):
+            batch_num = batch_start // batch_size
+            cmd = [
+                "libreoffice",
+                f"-env:UserInstallation=file:///tmp/lo_arabic_rph_staging_batch_{batch_num}",
+                "--headless", "--convert-to", "pdf",
+                "--outdir", str(pdfdir),
+                *[str(p) for p in docx_files[batch_start:batch_start + batch_size]],
+            ]
+            res = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
+            if res.returncode:
+                raise SystemExit(
+                    f"PDF batch {batch_num} failed ({res.returncode}): "
+                    + (res.stderr or res.stdout)[-2000:]
+                )
+        missing = [
+            p for p in docx_files
+            if not (pdfdir / p.with_suffix(".pdf").name).exists()
+        ]
+        for retry_no, source in enumerate(missing):
+            cmd = [
+                "libreoffice",
+                f"-env:UserInstallation=file:///tmp/lo_arabic_rph_retry_{retry_no}",
+                "--headless", "--convert-to", "pdf",
+                "--outdir", str(pdfdir), str(source),
+            ]
+            res = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
+            if res.returncode or not (pdfdir / source.with_suffix(".pdf").name).exists():
+                raise SystemExit(
+                    "Missing PDF after individual retry: " + str(source)
+                    + "; stdout: " + res.stdout[-1000:]
+                    + "; stderr: " + res.stderr[-1000:]
+                )
         for row in results:
             pdf = pdfdir / Path(row["file"]).with_suffix(".pdf")
             if not pdf.exists():
