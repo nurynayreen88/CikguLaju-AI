@@ -7,6 +7,8 @@ on:
       - "tools/audit_sains_native_reader_ast_20261106.py"
       - "tests/test_sains_v26_source_inventory_20261106.py"
       - "tests/test_sains_y3_23_source_ledger_20261106.py"
+      - "tests/test_sains_y3_dskp_crosswalk_20261106.py"
+      - "audits/sains_y3_dskp_sp_crosswalk_20261106.json"
       - "audits/sains_y3_23_source_candidate_ledger_20261106.json"
       - ".github/workflows/sains-v2600-readonly-audit-20261106.yml"
       - "v26_00_manifest.json"
@@ -30,6 +32,7 @@ jobs:
           python -m py_compile tools/audit_sains_v26_readonly_20261106.py
           python -m unittest discover -s tests -p 'test_sains_v26_source_inventory_20261106.py' -v
           python -m unittest discover -s tests -p 'test_sains_y3_23_source_ledger_20261106.py' -v
+          python -m unittest discover -s tests -p 'test_sains_y3_dskp_crosswalk_20261106.py' -v
       - name: Inventory actual Sains grouped PdP from hashed master
         run: python tools/audit_sains_v26_readonly_20261106.py
       - name: Inspect Telegram native reader without importing bot
