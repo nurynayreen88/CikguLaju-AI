@@ -10,7 +10,7 @@ import re
 from pathlib import Path
 
 from rpt_2027.common.format_2026_layout_preview import build_preview, validate_rows
-from rpt_2027.common.standard_text_enrichment import enrich_moral, enrich_psv
+from rpt_2027.common.standard_text_enrichment import enrich_moral, enrich_psv, enrich_rbt
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "staging" / "rpt_2027_seragam_2026" / "pdf"
@@ -84,6 +84,7 @@ def rbt_records(year):
                     (r.get("Rujukan Buku Teks m/s") or "belum disahkan")+
                     ". Tarikh A/B belum dinyatakan dalam sumber; tidak diandaikan.")
         })
+    enrich_rbt(year,output)
     validate_rows("rbt",year,output)
     return output
 
