@@ -5,7 +5,7 @@ import unittest
 
 from pypdf import PdfReader
 
-from rpt_2027.common.format_2026_layout_preview import validate_rows
+from rpt_2027.common.format_2026_layout_preview import validate_rows, week_merge_ranges
 from scripts.build_rpt_2027_second_batch_preview import (
     build_all, pjpk_records, sejarah_records, SUBJECT_ROW_COUNTS
 )
@@ -42,6 +42,42 @@ class RPT2027SecondBatchQA(unittest.TestCase):
                 self.assertTrue(all(r["week"].endswith("(cadangan)") for r in rows))
                 self.assertTrue(all(r["sk"] and r["sp"] for r in rows))
                 self.assertTrue(all("BT m/s Rujuk DSKP" not in r["note"] for r in rows))
+
+    def test_merge_week_cell_only_when_week_and_dates_match(self):
+        rows = pjpk_records(3)
+        spans = week_merge_ranges(rows)
+        self.assertEqual(sum(end - start + 1 for start, end in spans), len(rows))
+        self.assertTrue(any(end > start for start, end in spans))
+        for start, end in spans:
+            members = rows[start - 1:end]
+            if end > start:
+                self.assertEqual(len({r["week"] for r in members}), 1)
+                for field in ("a_start", "a_end", "b_start", "b_end"):
+                    self.assertEqual(len({r[field] for r in members}), 1)
+        # RBT records have no confirmed week: never coalesce all 32 PdP.
+        from scripts.build_rpt_2027_standard_preview import rbt_records
+        self.assertTrue(all(a == b for a, b in week_merge_ranges(rbt_records(4))))
+        # A repeated week number with different dates may not be merged.
+        example = [dict(rows[0]), dict(rows[1])]
+        example[1]["week"] = example[0]["week"]
+        example[1]["a_start"] = "2027-12-01"
+        self.assertEqual(week_merge_ranges(example), [(1, 1), (2, 2)])
+
+    def test_single_week_label_for_multi_lesson_group(self):
+        from rpt_2027.common.format_2026_layout_preview import build_preview
+        records = pjpk_records(3)
+        start, end = next((a, b) for a, b in week_merge_ranges(records) if b > a)
+        with tempfile.TemporaryDirectory() as temp:
+            target = __import__("pathlib").Path(temp) / "week_merge.pdf"
+            build_preview("pjpk", 3, records, target)
+            text = "\n".join(page.extract_text() for page in PdfReader(str(target)).pages[1:])
+            label = records[start - 1]["week"]
+            # Week label occurs once for the merged block, not per PJ/PK lesson.
+            self.assertEqual(text.count(label), sum(
+                records[s - 1]["week"] == label for s, _ in week_merge_ranges(records)
+            ))
+            self.assertIn(records[start - 1]["display_id"], text)
+            self.assertIn(records[end - 1]["display_id"], text)
 
     def test_reject_duplicate_display_identity(self):
         rows = pjpk_records(2)
