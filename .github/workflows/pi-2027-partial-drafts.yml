@@ -25,8 +25,12 @@ jobs:
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_activity_book_audit.py --output pi_buku_aktiviti_audit_696.json
       - name: Produce 258 per-Lesson BA mapping proposals (174 review, 84 oral)
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_ba_match_queue.py --output pi_ba_candidate_queue_258.json
-      - name: Collect 21 second-hand workbook page hints (NO direct verification)
-        run: python rph_standalone/pendidikan_islam_draf_2027/pi_ba_secondary_evidence.py --output pi_ba_secondary_evidence_21.json
+      - name: Collect 42 second-hand workbook page hints (NO direct verification)
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_ba_secondary_evidence.py --output pi_ba_secondary_evidence_42.json
+      - name: Reject cross-curriculum KSSRPK workbook candidates
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_ba_source_integrity.py --output pi_ba_source_integrity.json
+      - name: Prepare 174 conditional Jawi activity-book cues (not teacher material)
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_ba_sentence_candidates.py --output pi_ba_sentence_candidates_174.json
       - name: Upload isolated QA ledger and review queue (not teacher material)
         uses: actions/upload-artifact@v4
         with:
