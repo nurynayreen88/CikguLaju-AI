@@ -37,6 +37,26 @@ OUT=ROOT/"build/sains_rpt_2027_AB_REVIEW_ONLY_20261106"
 FONT="/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 EXPECTED={2:51,3:45,4:79,5:83,6:84}
 CALENDAR_SOURCE=ROOT/"audits/sains_rpt_2027_calendar_windows_20261106.json"
+YEAR3_TITLE_FIXES=ROOT/"audits/sains_y3_v2582_12_dskp_title_corrections_20261106.json"
+YEAR3_SP_CROSSWALK=ROOT/"audits/sains_y3_dskp_sp_crosswalk_20261106.json"
+# DSKP/BT text-layer evidence paired in the draft RPH PR #419.
+# These are supplemental SP in existing PdP; NOT additional lesson IDs.
+YEAR3_INTEGRATED_SP_CANDIDATE={"3.2.1":"3.2.5","3.3.1":"3.3.3","3.3.2":"3.3.4"}
+
+def year3_overlay_sources():
+    fixes_doc=json.loads(YEAR3_TITLE_FIXES.read_text(encoding="utf-8"))
+    cross_doc=json.loads(YEAR3_SP_CROSSWALK.read_text(encoding="utf-8"))
+    fixes={row["pdp_code"]:row for row in fixes_doc["changes"]}
+    evidence={row["sp"]:row for row in cross_doc["missing_content_sp_candidates"]}
+    if len(fixes)!=12 or fixes_doc["changes_count"]!=12:
+        raise RuntimeError("Expected exactly 12 Year3 DSKP title corrections")
+    if len(evidence)!=3 or set(evidence)!=set(YEAR3_INTEGRATED_SP_CANDIDATE.values()):
+        raise RuntimeError("Missing official Year3 supplemental SP evidence")
+    if cross_doc["counts"]["missing_content_related_sp"]!=3:
+        raise RuntimeError("DSKP source crosswalk has changed")
+    if any(x["staging_action"]!="PROPOSE_ONLY" or not x["verified_directly_in_DSKP_pdf_text"] for x in fixes.values()):
+        raise RuntimeError("Unapproved DSKP title correction")
+    return fixes,evidence
 
 def calendar_for(group):
     """KPM group windows are reference dates, NEVER automatic PdP slots."""
@@ -80,30 +100,56 @@ def enrich_rows(rows,year,pages):
     canonical,_=canonical_science_year(rows,year,2027)
     result=[]
     seen=set()
+    seen_fixes=set()
+    seen_integrated=set()
+    corrections,evidence=year3_overlay_sources() if year==3 else ({},{})
     for row in sorted(canonical,key=lambda x:int(x["source_sequence_no"])):
         code=row["pdp_sequence_code"]
         if code in seen:raise RuntimeError("Duplicate source PdP: "+code)
         seen.add(code)
         title=row["pdp_title"]
+        original_sp=row["sp_code"]
+        presented_sp=original_sp
         candidates=""
+        qa_notes=[]
         if year==3:
-            match=pages[code]
-            if match["sp_code"]!=row["sp_code"]:
-                raise ValueError("RPT/Page source version mismatch")
+            match=pages.get(code)
+            if not match or match["sp_code"]!=original_sp or match["source_pdp_title_unverified"]!=title:
+                raise ValueError("RPT/Page title or SP source version mismatch for "+code)
             candidates=", ".join(map(str,match["printed_book_page_candidates"]))
+            if code in corrections:
+                fix=corrections[code]
+                if fix["sp_code"]!=original_sp or fix["original_title"]!=title:
+                    raise ValueError("RPT/DSKP title source version mismatch for "+code)
+                title=fix["ds_kpm_official_sp_text"]
+                qa_notes.append("DSKP_TITLE_CANDIDATE")
+                seen_fixes.add(code)
+            if original_sp in YEAR3_INTEGRATED_SP_CANDIDATE:
+                extra=YEAR3_INTEGRATED_SP_CANDIDATE[original_sp]
+                if not evidence[extra]["textbook_printed_page_cues"]:
+                    raise ValueError("Missing source textbook page cue for "+extra)
+                presented_sp=original_sp+", "+extra
+                qa_notes.append("DSKP_EXTRA_SP_CANDIDATE")
+                seen_integrated.add(original_sp)
         result.append({
             "PdP asal":str(row["source_sequence_no"]),
             "Kod sumber":code,
             "Unit":row["unit_title"],
             "SK":row["sk_code"],
-            "SP":row["sp_code"],
-            "Fokus PdP (sumber, perlu QA)":title,
+            "SP asal":original_sp,
+            "SP":presented_sp,
+            "Fokus asal (v25.82)":row["pdp_title"],
+            "Fokus PdP (draf QA)":title,
             "BT ms (cadangan)":candidates,
             "Minggu/tarikh":"BELUM DIJADUAL",
             "Status":"DRAF_SEMAK",
+            "Catatan QA":", ".join(qa_notes) or "SOURCE_AS_IS_NOT_ACADEMICALLY_APPROVED",
         })
     if len(result)!=EXPECTED[year]:
         raise ValueError(f"Year {year} source row count changed")
+    if year==3 and (seen_fixes!=set(corrections) or
+                    seen_integrated!=set(YEAR3_INTEGRATED_SP_CANDIDATE)):
+        raise ValueError("Not all Year3 official corrections were applied exactly once")
     return result
 
 def docx_file(path,year,group,rows):
@@ -146,13 +192,14 @@ def docx_file(path,year,group,rows):
         cells=t.add_row().cells
         for cell,value in zip(cells,[
             row["PdP asal"],row["Unit"],row["SK"],row["SP"],
-            row["Fokus PdP (sumber, perlu QA)"],row["BT ms (cadangan)"],"Belum dijadual"
+            row["Fokus PdP (draf QA)"],row["BT ms (cadangan)"],"Belum dijadual"
         ]):
             cell.text=value
             for p in cell.paragraphs:
                 p.paragraph_format.space_after=Pt(0)
                 for r in p.runs:r.font.size=Pt(7.3)
     doc.add_paragraph("* Nombor halaman BT Tahun 3 ialah petunjuk sumber yang masih perlu disahkan; tahun lain kosong, bukan diteka.")
+    doc.add_paragraph("Tahun 3: 12 pembetulan teks DSKP dan tiga SP integrasi ialah CADANGAN yang belum disahkan secara visual.")
     doc.add_paragraph("Dokumen ini ialah indeks DRAF untuk penyusunan RPT; bukan RPT sekolah yang telah diluluskan.")
     doc.save(path)
     check=Document(path)
@@ -188,7 +235,7 @@ def pdf_file(path,year,group,rows):
     for row in rows:
         cells.append([pg(x) for x in [
             row["PdP asal"],row["Unit"],row["SK"],row["SP"],
-            row["Fokus PdP (sumber, perlu QA)"],row["BT ms (cadangan)"],
+            row["Fokus PdP (draf QA)"],row["BT ms (cadangan)"],
             "Belum dijadual"]])
     width=[36,127,42,47,292,50,95]
     tab=LongTable(cells,colWidths=width,repeatRows=1,hAlign="LEFT")
@@ -201,6 +248,7 @@ def pdf_file(path,year,group,rows):
     ]))
     story.append(tab)
     story.append(Paragraph("* Halaman Tahun 3 ialah cadangan perlu semakan visual; tahun lain belum dipadankan.",style))
+    story.append(Paragraph("Tahun 3: 12 pembetulan DSKP dan tiga SP tambahan ialah DRAF perlu semakan akademik.",style))
     doc.build(story)
     pdf=PdfReader(str(path))
     if len(pdf.pages)<2:raise RuntimeError("RPT cover or table missing")
