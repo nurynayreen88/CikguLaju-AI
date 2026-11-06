@@ -26,7 +26,7 @@ Senarai semak tempo, ketepatan gerakan dan keselamatan ruang; murid mengulangi b
 **Penutup — 2 minit**  
 Murid berkongsi satu cara memadankan gerak dengan nyanyian rakan.
 
-**Bahan:** Ilustrasi buku halaman 45, ruang lapang dan iringan detik oleh guru; audio sebenar belum diperiksa.  
+**Bahan:** Ilustrasi buku m/s 45, ruang lapang dan iringan detik menggunakan suara atau tepukan guru.  
 **Rujukan sumber:** Buku Teks Pendidikan Kesenian Tahun 3 SK, DBP 2018, halaman 45; disemak secara teks terhadap https://anyflip.com/lcinm/flxx/basic/51-100 . Kod buku Kesenian yang dicetak: 2.2.8(ii); **jangan gantikan kod DSKP Muzik tanpa pengesahan crosswalk**. Audio bercetak: 41–45; **tiada fail audio disahkan**.
 
 **Catatan pelaksanaan / pemulihan:** __________________________________________
