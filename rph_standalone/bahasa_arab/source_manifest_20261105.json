@@ -99,13 +99,23 @@
         "010",
         "011"
       ],
-      "source_book_sp_print_unresolved_note": "Empat kes sumber cetakan telah disahkan pada imej asal PDF DBP 2017; pengesahan buku tidak sama dengan kelulusan RPH.",
+      "source_book_sp_print_unresolved_note": "12/12 codes visibly present on original 2017 textbook PDF, but RPH quality and teacher signoff remain unapproved.",
       "source_book_sp_print_visual_resolved": [
+        "001",
         "002",
+        "003",
         "004",
+        "005",
+        "006",
+        "007",
+        "008",
+        "009",
         "010",
-        "011"
-      ]
+        "011",
+        "012"
+      ],
+      "unit1_sp_visual_confirmed": 12,
+      "unit1_sp_visual_audit_path": "audits/bahasa_arab_y2_unit1_pdp001_012_original_pdf_visual_20261106.json"
     },
     "3": {
       "dskp": {
