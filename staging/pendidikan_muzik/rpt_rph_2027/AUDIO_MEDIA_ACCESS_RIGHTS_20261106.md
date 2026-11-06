@@ -1,3 +1,13 @@
+## 6 November 2026 — Percubaan pautan Audio Sumber dalam menu Muzik staging
+
+- **617 rekod** sumber Google Drive asal disalin sebagai **metadata pautan sahaja** (lima `audio_source_index_year{2..6}_20261106.json`); fail WAV/MP3 tidak disalin ke repositori, Drive CikguLaju atau database.
+- `external_audio_links_staging.py` menyemak bentuk Google Drive view URL, ID fail, tahun, manifest PdP, julat nombor bercetak, dan menolak lagu bernombor khas / pilihan trek / rekod bertindih. Ia memulangkan **Buka Audio Sumber**, bukan **Muat Turun**.
+- Calon menu `music_native_route_candidate.py` kini boleh menunjukkan ikon **🔊** di sebelah PdP dengan sumber yang mempunyai padanan nombor lengkap. Butang membuka senarai 6 fail asal setiap halaman dengan URL milik pemegang sumber, atau memaparkan alasan ringkas apabila tiada padanan.
+- Semua pautan diberi status **akses, rakaman dan hak edar belum disahkan**. Akses ialah tertakluk kepada tetapan Google Drive pemilik asal. Tiada perantara muat turun, muat naik semula, token CikguLaju, transaksi, atau pengurangan kuota.
+- **GitHub Actions #42166906143 berjaya** selepas menambah ujian 617 indeks dan simulasi butang audio dalam aliran Muzik. Penerbitan masih **DRAF STAGING / tidak aktif di Web & Telegram LIVE** sehingga semakan sumber dan parity dua platform lulus.
+
+---
+
 # Kemas kini penemuan audio komuniti — 6 November 2026
 
 **Berjaya ditemui, BELUM dibenarkan untuk agihan CikguLaju:** 617 fail audio calon dalam folder Google Drive asal yang dikongsi melalui komuniti guru [Pendidikan Muzik Malaysia](https://t.me/s/pendidikanmuzikmalaysia?after=5805). Metadata fail dapat dibaca; kandungan/audio setiap fail, versi buku, hak pemilikan dan hak muat naik semula **belum disahkan**.
