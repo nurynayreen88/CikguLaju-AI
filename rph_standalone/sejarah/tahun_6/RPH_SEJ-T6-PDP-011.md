@@ -15,7 +15,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan peta petempatan masyarakat Malaysia dahulu dan kini bersama kad kegiatan ekonomi. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 4: Kaum di Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 52–57: Pengenalan kepelbagaian kaum dan perbandingan petempatan serta. Murid mengenal pasti kepelbagaian kaum serta lokasi petempatan melalui peta. Guru menyemak jawapan awal berpandukan 11.1.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 52–57: Pengenalan kepelbagaian kaum dan perbandingan petempatan serta kegiatan ekonomi masyarakat dahulu berbanding kini. Murid mengenal pasti kepelbagaian kaum serta lokasi petempatan melalui peta. Guru menyemak jawapan awal berpandukan 11.1.1.
 
 **Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 52–57 bagi menyokong perbandingan. Murid membandingkan corak kegiatan ekonomi tradisional dengan aktiviti masa kini tanpa stereotaip. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan bertoleransi antara kaum sebagai asas perpaduan.
 
