@@ -46,14 +46,45 @@ class SharedRuntimeFlowTests(unittest.TestCase):
         source.return_value.list_lessons.assert_not_called()
 
     @patch("web.authoritative_http_source.AuthoritativeHttpCurriculumSource")
-    def test_non_standalone_rpt_subject_from_live_telegram_only(self,source):
+    def test_bm_uses_only_native_hierarchy_never_skill_dropdown(self,source):
         source.return_value.list_subjects.return_value=[
             {"value":"BM","label":"Bahasa Melayu"}]
-        source.return_value.list_units.return_value=[{"value":"Unit 1","label":"Unit 1"}]
-        r=self.client.get("/api/options?kind=units&year=4&subject=BM")
-        self.assertEqual(r.status_code,200,r.get_json())
-        self.assertEqual(r.get_json()[0]["value"],"Unit 1")
-        source.return_value.list_units.assert_called_once_with(4,"BM",None)
+        source.return_value.list_bm_themes.return_value=[
+            {"value":"Tema 1: Kekeluargaan","label":"Tema 1: Kekeluargaan"}]
+        source.return_value.list_bm_units.return_value=[
+            {"value":"Keluargaku","label":"Unit 1: Keluargaku"}]
+        source.return_value.list_bm_topics.return_value=[
+            {"value":"Ceria Pagi","label":"Ceria Pagi"}]
+        source.return_value.list_bm_pdps.return_value=[
+            {"value":"128","label":"PdP 001 — Mendengar","textbook_ref":"Buku Teks m/s 3"}]
+        theme=self.client.get("/api/options?kind=bm-themes&year=4&subject=BM")
+        self.assertEqual(theme.status_code,200,theme.get_json())
+        self.assertEqual(theme.get_json()[0]["value"],"Tema 1: Kekeluargaan")
+        unit=self.client.get(
+            "/api/options?kind=bm-units&year=4&subject=BM&theme=Tema%201%3A%20Kekeluargaan")
+        self.assertEqual(unit.status_code,200,unit.get_json())
+        topic=self.client.get(
+            "/api/options?kind=bm-topics&year=4&subject=BM"
+            "&theme=Tema%201%3A%20Kekeluargaan&unit=Keluargaku")
+        self.assertEqual(topic.status_code,200,topic.get_json())
+        pdp=self.client.get(
+            "/api/options?kind=bm-pdp&year=4&subject=BM"
+            "&theme=Tema%201%3A%20Kekeluargaan"
+            "&unit=Keluargaku&topic=Ceria%20Pagi")
+        self.assertEqual(pdp.status_code,200,pdp.get_json())
+        self.assertEqual(pdp.get_json()[0]["value"],"128")
+        self.assertEqual(pdp.get_json()[0]["textbook_ref"],"Buku Teks m/s 3")
+        source.return_value.list_bm_themes.assert_called_once_with(4)
+        source.return_value.list_bm_units.assert_called_once_with(4,"Tema 1: Kekeluargaan")
+        source.return_value.list_bm_topics.assert_called_once_with(
+            4,"Tema 1: Kekeluargaan","Keluargaku")
+        source.return_value.list_bm_pdps.assert_called_once_with(
+            4,"Tema 1: Kekeluargaan","Keluargaku","Ceria Pagi")
+        for kind in ("units","pdp"):
+            old=self.client.get("/api/options?kind="+kind+"&year=4&subject=BM")
+            self.assertEqual(old.status_code,400)
+            self.assertEqual(old.get_json()["code"],"BM_HIERARCHY_REQUIRED")
+        source.return_value.list_units.assert_not_called()
 
     @patch("web.authoritative_http_source.AuthoritativeHttpCurriculumSource")
     def test_no_local_source_on_live_failure(self,source):
