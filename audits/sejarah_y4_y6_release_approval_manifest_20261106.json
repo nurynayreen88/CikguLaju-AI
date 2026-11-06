@@ -18,7 +18,17 @@
     "textbook_digital_text_topic_crosswalk": 108,
     "textbook_exercise_page_visual_checks_passed": 0,
     "teacher_individual_signoffs_passed": 0,
-    "sejarah_telegram_web_native_delivery_checked": false
+    "sejarah_telegram_web_native_delivery_checked": false,
+    "sejarah_native_word_snapshot": {
+      "total": 108,
+      "one_page_a4": 108,
+      "failed": 0,
+      "method": "active Telegram Word-table AST-matched snapshot + lossless Sejarah-only postprocessing; LibreOffice PDF pagination",
+      "run_id": 42138698755,
+      "audited_commit": "b836113924091d52b1093035e9eb1b498b9fadcf",
+      "actual_live_telegram_web_end_to_end_verified": false,
+      "status": "STAGING_FORMAT_QA_ONLY_NOT_PEDAGOGICAL_RELEASE"
+    }
   },
   "release_blockers": [
     "textbook exercise page per lesson",

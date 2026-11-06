@@ -63,3 +63,8 @@ Semua kerja masih pada PR #341 DRAF. Jangan gabung atau deploy atas keputusan QA
 - Semua **108/108** cap jari pelajaran Sejarah kini boleh dijana melalui `web/rph_shared_source_identity.source_fingerprint(year, "SEJARAH", pdp)`, menggunakan fail yang **sama dan susunan yang sama** dengan `web/sejarah_2027_staging_source.source_fingerprint()`. Ujian membandingkan kedua-duanya.
 - Manifest kelulusan bebas merekod 108 rekod padanan buku teks, tetapi **0 kelulusan visual latihan dan 0 kelulusan guru**. Cap jari adalah identiti bahan, bukan surat kelulusan. Laluan eksport awam kekal disekat.
 - Ini tidak mengaktifkan Sejarah dalam endpoint natif Telegram atau Web; ujian pengguna dan adapter natif masih diperlukan.
+
+## Penutupan isu Word natif dua halaman (6 November 2026)
+
+- Dikesan 46 RPH menjadi dua halaman dalam fungsi Word natif Telegram. Pemadatan khusus Sejarah memulihkan **108/108 satu A4** tanpa kehilangan teks dan tanpa mengubah Word subjek lain. Ujian GitHub Actions: https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42138698755 .
+- Semakan ini hanya format staging. Integrasi Telegram/Web pada akaun sebenar dan pengesahan visual tugasan buku teks/guru masih belum diluluskan. **Status DRAF kekal.**
