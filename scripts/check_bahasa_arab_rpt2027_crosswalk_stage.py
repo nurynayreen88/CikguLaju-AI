@@ -21,6 +21,45 @@ def main():
             assert key not in originals, f"duplicate source: {key}"
             originals[key]=row
     assert len(originals)==298
+    # Final release-candidate QA: read every source-backed RPH and detect unsafe gaps.
+    # This is a structural gate only, never teacher/DSKP/pedagogic approval.
+    units = rows(RPT/"unit_sequence_DRAF_20261105.csv")
+    titles = {(r["tahun"], r["unit"]):r["tajuk_arab"] for r in units}
+    assert len(titles)==20
+    required = ("Set induksi", "Aktiviti 1", "Aktiviti 2",
+                "Penutup", "BBM", "Refleksi", "Objektif", "Kriteria kejayaan")
+    complete = {2:60, 3:60, 4:58, 5:60, 6:60}
+    by_year = Counter()
+    problems = []
+    warnings = []
+    for (year, pdp), row in sorted(originals.items()):
+        y, n = int(year), int(pdp)
+        by_year[y] += 1
+        p = BASE/"rph_standalone"/"bahasa_arab"/f"year{y}"/f"lesson_{n:03d}.md"
+        if not p.is_file():
+            problems.append(f"Year{y} PdP{n:03d}: missing document")
+            continue
+        content = p.read_text(encoding="utf-8")
+        absent = [word for word in required if word not in content]
+        if absent: problems.append(f"Year{y} PdP{n:03d}: missing sections {absent}")
+        if (f"Bahasa Arab Tahun {y}" not in content or f"PdP {n:03d}" not in content
+                or titles.get((year,row["unit"])) not in content):
+            problems.append(f"Year{y} PdP{n:03d}: wrong year/unit/PdP")
+        if row["sp"] not in content or row["sk"] not in content:
+            problems.append(f"Year{y} PdP{n:03d}: missing proposed SK/SP")
+        if "DRAF" not in content or "BELUM READY" not in content:
+            problems.append(f"Year{y} PdP{n:03d}: unapproved status escaped")
+        if y==6 and ("2021" not in content or "978-983-49-3300-5" not in content):
+            problems.append(f"Year6 PdP{n:03d}: correct DBP 2021 book not identified")
+        page = row.get("halaman_buku_teks_dicadang", "")
+        if not page: warnings.append(f"Year{y} PdP{n:03d}: page provenance not populated")
+        elif page not in content: warnings.append(f"Year{y} PdP{n:03d}: page {page!r} needs manual crosscheck")
+    assert dict(sorted(by_year.items()))==complete, by_year
+    assert len(list((BASE/"rph_standalone"/"bahasa_arab").glob("year[2-6]/lesson_*.md")))==298
+    print(f"QA all 298 candidate RPH: structural_errors={len(problems)}, source_page_review_warnings={len(warnings)}")
+    for item in problems[:30]: print("BLOCKER:",item)
+    for item in warnings[:15]: print("SOURCE_REVIEW:",item)
+    assert not problems, "Structural QA blocked. Drafts must not be released."
     # Unit 1 source pages have existing audit provenance, but are still candidates.
     unit1=[r for r in originals.values() if int(r["pdp"]) <= 12]
     assert len(unit1)==60
