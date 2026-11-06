@@ -95,3 +95,28 @@ def enrich_moral(year, records):
         row["sk_display"] = f"{sk} — {title}"
         row["sp_display"] = "\n".join(lines)
     return records
+
+
+def enrich_psv(year, records):
+    """PSV 2-6: DSKP SK titles and every source-numbered SP statement.
+
+    A DRAF extraction from original KPM DSKP PDFs; not a signed approval.
+    """
+    if year not in range(2, 7):
+        raise ValueError("PSV DSKP mapping absent for year")
+    source = _read_json(ROOT / "rpt_2027" / "psv" /
+                        f"dskp_full_standard_texts_y{year}_20261107_DRAF.json")
+    if (source.get("subject") != "PSV" or source.get("year") != year or
+            source.get("status") != "DRAF_CROSSWALK_FULL_DSKP_TEXT"):
+        raise ValueError("Unapproved PSV source mapping")
+    sk_map, sp_map = source["sk"], source["sp"]
+    for row in records:
+        sk_codes = _codes(row["sk"])
+        sp_codes = _codes(row["sp"])
+        if any(code not in sk_map for code in sk_codes):
+            raise ValueError(f"PSV T{year} PdP {row['id']} has unknown SK")
+        if any(code not in sp_map for code in sp_codes):
+            raise ValueError(f"PSV T{year} PdP {row['id']} has unknown SP")
+        row["sk_display"] = "\n".join(f"{code} — {sk_map[code]}" for code in sk_codes)
+        row["sp_display"] = "\n".join(f"{code} — {sp_map[code]}" for code in sp_codes)
+    return records
