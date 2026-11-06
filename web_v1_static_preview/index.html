@@ -784,13 +784,13 @@ const MATERIAL_CATEGORIES = Object.freeze([
 ]);
 const materialPanel=document.getElementById("materials-panel");
 let materialsRequestKey="";
-function materialRow(title,{onDownload=null,url=null,ready=false,statusLabel="Belum tersedia"}={}){
+function materialRow(title,{onDownload=null,url=null,ready=false,statusLabel="Belum tersedia",actionLabel="Download"}={}){
  const li=document.createElement("li");
  li.className="material-download-row";
  const name=document.createElement("span");name.className="material-download-name";name.textContent=title;
  const action=document.createElement(ready&&url?"a":"button");
  action.className="material-download-action";
- action.textContent=ready?"Download":statusLabel;
+ action.textContent=ready?actionLabel:statusLabel;
  if(action.tagName==="BUTTON"){action.type="button";action.disabled=!ready;}
  if(ready&&url){action.href=url;action.rel="noopener";action.target="_blank";}
  else if(ready&&onDownload){action.addEventListener("click",onDownload);}
@@ -825,25 +825,30 @@ async function populateMaterialList(){
  const placeholders={textbook:"Buku Teks",audio:"Audio",workbook:"Buku Aktiviti"};
  const discovered={textbook:[],audio:[],workbook:[]};
  let sourceError="";
+ let extraNotice="";
  try{
-  // The Telegram materials API accepts a verified RPT entry ID, never a
-  // stand-alone Lesson number. A source token must not be guessed as an ID.
-  const lessonNumber=/^[1-9][0-9]{0,11}$/.test(lesson.value)?lesson.value:"";
-  if(!lessonNumber)throw Error("Pemetaan ID Lesson Telegram belum disahkan.");
-  const params=new URLSearchParams({year:year.value,subject:subject.value,lesson:lessonNumber});
-  const response=await fetch("/api/materials?"+params,{credentials:"same-origin",cache:"no-store",redirect:"error"});
-  if(!response.ok)throw Error("Sumber fail tambahan Telegram belum membenarkan muat turun untuk pilihan ini.");
-  const data=await response.json();
-  if(!Array.isArray(data.items))throw Error("Senarai sumber Telegram tidak sah.");
-  if(data.download_enabled===true){
-   for(const item of data.items){
-    if(!item||item.approved!==true||item.download_enabled!==true||!item.id)continue;
-    const type=({activity:"workbook",media:"audio"})[item.type]||item.type;
-    if(!Object.hasOwn(discovered,type))continue;
-    if(!/^[A-Za-z0-9_-]{1,128}$/.test(String(item.id)))continue;
-    discovered[type].push({name:String(item.title||placeholders[type]),id:String(item.id)});
-   }
-  }else sourceError="Sumber Telegram mengesahkan metadata sahaja; muat turun belum diaktifkan.";
+  // Native source token is the canonical Year+Unit+Lesson selector.
+  // Never reinterpret English e-2-001 as a weekly RPT row id.
+  const params=new URLSearchParams({year:year.value,subject:subject.value,
+                                    unit:unit.value,lesson:lesson.value});
+  const response=await fetch("/api/web/rph/extra-materials?"+params,
+                             {credentials:"same-origin",cache:"no-store",redirect:"error"});
+  const data=await response.json().catch(()=>({}));
+  if(!response.ok)throw Error(data.error||"Bahan tambahan belum boleh disemak.");
+  if(!Array.isArray(data.items)||data.items.length>30)throw Error("Senarai bahan sumber tidak sah.");
+  extraNotice=String(data.note||"");
+  for(const item of data.items){
+   if(!item||!Object.hasOwn(discovered,item.type)||
+      typeof item.url!=="string"||typeof item.title!=="string")continue;
+   const ownWorkbook=item.type==="workbook"&&
+       item.url.startsWith("/api/web/rph/english-workbook?");
+   const externalMusic=item.type==="audio"&&
+       /^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]{10,100}\/view\?usp=drivesdk$/.test(item.url);
+   if(!ownWorkbook&&!externalMusic)continue;
+   discovered[item.type].push({
+    name:item.title, url:item.url,
+    action:externalMusic?"Buka Audio Sumber":"Download"});
+  }
  }catch(e){sourceError=e.message;}
  if(materialsRequestKey!==key||currentRphLessonKey()!==key)return;
  for(const cat of ["textbook","audio","workbook"]){
@@ -851,13 +856,13 @@ async function populateMaterialList(){
   if(!items.length){list.append(materialRow(placeholders[cat]));continue;}
   for(const item of items){
    list.append(materialRow(item.name,{ready:true,
-      url:"/api/materials/download/"+encodeURIComponent(item.id)}));
+      url:item.url,actionLabel:item.action}));
   }
  }
  const accessNote=locked?"RPH tersedia, tetapi muat turun memerlukan janaan percuma berbaki atau langganan aktif. ":"";
  status.textContent=accessNote+(sourceError?
    "Bahan lain: "+sourceError+" Fail yang belum disahkan tidak boleh dimuat turun.":
-   "Bahan yang disahkan tersedia untuk dimuat turun secara individu.");
+   extraNotice||"Bahan yang dipadankan tersedia; yang lain kekal belum tersedia.");
 }
 document.getElementById("show-materials").addEventListener("click",()=>{void populateMaterialList();});
 const rptSubject=document.getElementById("rpt-subject"),rptYear=document.getElementById("rpt-year"),rptDownload=document.getElementById("rpt-download"),rptMobileLink=document.getElementById("rpt-download-mobile"),rptStatus=document.getElementById("rpt-status");
