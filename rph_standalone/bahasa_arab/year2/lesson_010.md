@@ -2,7 +2,7 @@
 
 **Tahun:** 2 | **Subjek:** Bahasa Arab KSSR Semakan 2017 | **Unit:** هيا نتعارف
 **Fokus PdP:** Membaca kosa kata perkenalan
-**SK/SP cadangan:** 2.3 / 2.3.1 — berdasarkan DSKP dan urutan kemahiran RPT 2026, masih menunggu semakan individu terhadap buku teks.
+**SK/SP cadangan:** 2.3 / 2.3.5 — berdasarkan DSKP dan urutan kemahiran RPT 2026, masih menunggu semakan individu terhadap buku teks.
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
 **Kosa kata / ayat:** اسم، أنا، أنت، تلميذ، تلميذة، معلم
 **Objektif pembelajaran:** Murid meniru bacaan sekurang-kurangnya 5 daripada 6 kad kosa kata.
@@ -29,4 +29,4 @@
 
 **Status:** DRAF_STAGING / BELUM READY. Bukan bahan LIVE Telegram atau Web. Teks/aktiviti ini merupakan cadangan berpandukan fokus DSKP/RPT, tidak boleh dianggap padanan tepat halaman buku teks, dan belum diuji dalam Word/PDF A4 RTL.
 
-**Semakan Buku Teks asal Tahun 2 (6 Nov 2026):** Buku Teks Bahasa Arab Tahun 2 DBP untuk KPM cetakan 2017, ISBN 978-983-49-1589-6, Unit 1 هيا نتعارف, halaman bercetak **9–11**. Teks buku: https://anyflip.com/slrpb/qzcr/basic; DSKP asal: https://drive.google.com/file/d/1WY_c69UshDm3jHzVK86G2xfu77UUkGYO/view. Latihan baca kata perkenalan pada hlm 9, ganti nama pada hlm 10 dan lengkapkan perkataan pada hlm 11. **Kategori bukti:** BOOK_EXERCISE_DSKP_SP_ALIGNED_PRINTED_CODE_NOT_CLEARED. Pemetaan turutan PdP RPT 2027 dan semakan visual kod buku masih belum diluluskan. **DRAF / BELUM READY**.
+**Semakan Buku Teks asal Tahun 2 (6 Nov 2026):** Buku Teks Bahasa Arab Tahun 2 DBP untuk KPM cetakan 2017, ISBN 978-983-49-1589-6, Unit 1 هيا نتعارف, halaman bercetak **9–11**. Teks buku: https://anyflip.com/slrpb/qzcr/basic; DSKP asal: https://drive.google.com/file/d/1WY_c69UshDm3jHzVK86G2xfu77UUkGYO/view. Latihan baca kata perkenalan pada hlm 9, ganti nama pada hlm 10 dan lengkapkan perkataan pada hlm 11. **Kategori bukti:** BOOK_WORD_READING_SP_2_3_5_ALIGNED_WITH_DPK_BOOK_PRINT_VISUAL_PENDING. Pembetulan calon SP daripada 2.3.1 kepada 2.3.5 kerana aktiviti membaca perkataan, bukan meniru bacaan suku kata; padanan kod bercetak masih perlu semakan imej. Pemetaan turutan PdP RPT 2027 dan semakan visual kod buku masih belum diluluskan. **DRAF / BELUM READY**.
