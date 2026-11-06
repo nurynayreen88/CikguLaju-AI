@@ -68,6 +68,27 @@ Pemeriksaan baca sahaja (run [#42178770339](https://github.com/nurynayreen88/Cik
 Perhatian QA: PdP 021 dan 022 mempunyai teks tajuk yang sama dalam checkpoint; **calon semakan sempadan**, bukan bukti automatik kedua-duanya pendua. Semua 385 mempunyai source_url/notes/skill_metadata, tetapi medan textbook_ref dan activitybook_ref kosong. Belum sepadan dengan halaman buku teks asli.
 - Susulan wajib: audit sempadan 23 PdP dan halaman Buku Teks asal untuk semua tahun sebelum label FINAL.
 
+## Susulan audit sumber Tahun 3 — 6 November 2026
+
+Bukti terperinci disimpan dalam dua fail audit staging:
+
+- [23 PdP berstatus sempadan](sains_y3_23_source_candidate_ledger_20261106.json): **18/23 tajuk sepadan dengan SP DSKP**, manakala **5 calon pembetulan** ialah PdP 002, 005, 011, 020 dan 021. Dua daripadanya (020/021) mengelirukan suhu planet dengan orbit/peredaran. Cadangan tajuk asal DSKP disimpan tetapi **belum dilaksanakan** pada DB atau RPH. Petunjuk halaman Buku Teks ialah rujukan awal; pemeriksaan visual dan aktiviti belum lengkap.
+- [Padanan DSKP Tahun 3](sains_y3_dskp_sp_crosswalk_20261106.json): terdapat **60 kod SP unik** dalam DSKP Tahun 3 (teks PDF) tetapi hanya **45 kod berbeza** di rekod PdP checkpoint v25.68. Baki **15 kod** dibahagikan kepada **3 SP kandungan** (3.2.5, 3.3.3, 3.3.4) dan **12 SP kemahiran proses/manipulatif/peraturan bilik sains**. Dua belas SP itu mungkin perlu diintegrasi dalam aktiviti dan tidak semestinya memerlukan 12 PdP baharu.
+
+| SP kandungan yang belum ada sebagai kod PdP v25.68 | Sumber Buku Teks Tahun 3 | Langkah seterusnya |
+|---|---|---|
+| 3.2.5 — laporan pemerhatian Kelas Makanan | Halaman bercetak 41 | Semak aktiviti Gallery Walk dan bukti dalam RPH 3.2 sedia ada |
+| 3.3.3 — rumusan makanan tercerna | Halaman bercetak 52 | Semak RPH Pencernaan dan pentaksiran |
+| 3.3.4 — komunikasi pemerhatian Pencernaan | Halaman bercetak 51, 54 | Semak aktiviti model/komunikasi dalam RPH 3.3 sedia ada |
+
+**Jangan** menyamakan 60 SP dengan 60 RPH. SP kemahiran proses sains dan keselamatan bilik sains boleh merentasi beberapa PdP. Jangan juga menganggap semua halaman sudah divalidasi secara visual atau semua aktiviti RPH sudah sepadan.
+
+**Isu susunan:** PdP 001–004 bermula pada Unit 8, diikuti Unit 3, Unit 10, kemudian Unit 9; semakan RPT 2026 asal wajib sebelum menukar urutan. Susunan 24–45 juga tidak mengikut unit menaik sepenuhnya. Semua 45 kod PdP sejarah dikekalkan.
+
+**Keselamatan:** Bagi SP 8.1.2, aktiviti tidak boleh mengarahkan murid merasa atau menyentuh bahan kimia/cecair yang tidak dikenali. Data pemerhatian dan contoh bahan makanan selamat boleh digunakan mengikut arahan guru.
+
+**Keputusan:** HOLD. Lulusnya ujian sumber/CI bukan kelulusan guru, RPH, dokumen Word/PDF atau deployment.
+
 ## Rujukan bahan dalam Google Drive (lokasi, bukan pengesahan halaman)
 
 | Tahun | DSKP | Buku teks |
