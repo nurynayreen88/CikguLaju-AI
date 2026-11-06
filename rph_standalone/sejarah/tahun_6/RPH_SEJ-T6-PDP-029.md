@@ -15,7 +15,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan foto kejayaan atlet Malaysia dan pertandingan peringkat berbeza dengan tarikh. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 9: Sukan Kebanggaan Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 144–148: Pencapaian sukan Malaysia dan peranan sukan menyatupadukan. Murid memadankan pencapaian sukan dengan sukan serta peringkat pertandingan yang betul. Guru menyemak jawapan awal berpandukan 12.3.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 144–148: Pencapaian sukan Malaysia dan peranan sukan menyatupadukan rakyat. Murid memadankan pencapaian sukan dengan sukan serta peringkat pertandingan yang betul. Guru menyemak jawapan awal berpandukan 12.3.1.
 
 **Aktiviti 2 (20 min):** Guru menyoal bukti konkrit hlm. 144–148 untuk menguji dapatan murid. Murid menganalisis bagaimana aktiviti sukan boleh menyatukan rakyat pelbagai latar. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan pelibatan pelbagai kaum mengharumkan nama negara dalam bidang sukan.
 
