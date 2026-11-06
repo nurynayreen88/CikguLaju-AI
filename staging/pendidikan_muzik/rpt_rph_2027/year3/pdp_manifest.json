@@ -165,7 +165,16 @@
       "source_book_audio_file_verified": false,
       "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL",
       "source_rpt_original_audio": "15-17",
-      "source_rpt_original_page": "20"
+      "source_rpt_original_page": "20",
+      "rpt2027_day_audit": {
+        "status": "ZERO_CALON_PDP_IN_ALL_16_STATES",
+        "indexed_candidate_days_all_states": 0,
+        "indexed_state_count": 16,
+        "source_read_only": "KALENDAR_2027_HARI_PDP_16_NEGERI_AUDIT.json",
+        "action": "PDP_ANJAL_TARIKH_GURU_PERLU_SAHKAN",
+        "automatic_shift_or_skip_forbidden": true,
+        "approval": "DRAF_SEMAKAN_KALENDAR_NEGERI_BELUM_FINAL"
+      }
     },
     {
       "pdp_id": "MZ-Y3-07",
@@ -513,7 +522,16 @@
       "source_book_audio_file_verified": false,
       "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL",
       "source_book_sp_printed": "2.2.2",
-      "source_book_audio_numbers_printed": "54–57"
+      "source_book_audio_numbers_printed": "54–57",
+      "rpt2027_day_audit": {
+        "status": "ZERO_CALON_PDP_IN_ALL_16_STATES",
+        "indexed_candidate_days_all_states": 0,
+        "indexed_state_count": 16,
+        "source_read_only": "KALENDAR_2027_HARI_PDP_16_NEGERI_AUDIT.json",
+        "action": "PDP_ANJAL_TARIKH_GURU_PERLU_SAHKAN",
+        "automatic_shift_or_skip_forbidden": true,
+        "approval": "DRAF_SEMAKAN_KALENDAR_NEGERI_BELUM_FINAL"
+      }
     },
     {
       "pdp_id": "MZ-Y3-20",

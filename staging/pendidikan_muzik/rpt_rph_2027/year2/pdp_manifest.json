@@ -161,7 +161,16 @@
       "source_book_url": "https://anyflip.com/iawvx/mran/basic",
       "source_book_audio_numbers_printed": "17–19",
       "source_book_audio_file_verified": false,
-      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISUSUN_SP"
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISUSUN_SP",
+      "rpt2027_day_audit": {
+        "status": "ZERO_CALON_PDP_IN_ALL_16_STATES",
+        "indexed_candidate_days_all_states": 0,
+        "indexed_state_count": 16,
+        "source_read_only": "KALENDAR_2027_HARI_PDP_16_NEGERI_AUDIT.json",
+        "action": "PDP_ANJAL_TARIKH_GURU_PERLU_SAHKAN",
+        "automatic_shift_or_skip_forbidden": true,
+        "approval": "DRAF_SEMAKAN_KALENDAR_NEGERI_BELUM_FINAL"
+      }
     },
     {
       "pdp_id": "MZ-Y2-07",
@@ -507,7 +516,16 @@
       "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SIGNOFF",
       "source_book_audio_numbers_printed": "RPT lama: 48; perlu pengesahan audio halaman 55",
       "source_book_audio_file_verified": false,
-      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISEMAK"
+      "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISEMAK",
+      "rpt2027_day_audit": {
+        "status": "ZERO_CALON_PDP_IN_ALL_16_STATES",
+        "indexed_candidate_days_all_states": 0,
+        "indexed_state_count": 16,
+        "source_read_only": "KALENDAR_2027_HARI_PDP_16_NEGERI_AUDIT.json",
+        "action": "PDP_ANJAL_TARIKH_GURU_PERLU_SAHKAN",
+        "automatic_shift_or_skip_forbidden": true,
+        "approval": "DRAF_SEMAKAN_KALENDAR_NEGERI_BELUM_FINAL"
+      }
     },
     {
       "pdp_id": "MZ-Y2-20",

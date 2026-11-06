@@ -47,3 +47,6 @@
 
 
 **Audit 6 Nov 2026:** PdP12–13 projek berasaskan projek Kesenian Penggal Satu halaman 4–5 dan PdP26–27 projek Penggal Dua halaman 46–47, diadaptasi untuk Muzik sahaja. PdP33 semakan teks sompoton/Tarian Sumazau halaman 95–96, Audio 84–86 bercetak. Kod buku gabungan berbeza dengan DSKP Muzik dan belum diselaraskan rasmi. Status DRAF.
+
+
+**AMARAN KALENDAR M06/M19: PdP 06 dan 19 Tahun 2** jatuh pada minggu **0 hari calon PdP bagi 16 negeri** menurut indeks CikguLaju 2027 (M06: A 7–11 Feb / B 8–12 Feb; M19: A 16–20 Mei / B 17–21 Mei). Tarikh slot asal dikekalkan untuk audit, **bukan tarikh PdP disahkan**. Guru sahkan tarikh mengikut negeri dan jadual kelas. **PdP anjal, jangan gugurkan/anjak automatik.** Rujuk `../KALENDAR_2027_HARI_PDP_NEGERI_AUDIT_20261106.md`. Semua masih DRAF.

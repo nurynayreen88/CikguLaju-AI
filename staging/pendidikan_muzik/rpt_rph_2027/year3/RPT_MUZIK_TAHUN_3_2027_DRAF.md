@@ -53,3 +53,6 @@
 
 
 **Audit projek Tahun 3:** PdP 12–13 projek Penggal Satu buku Kesenian halaman 4–5; PdP 24–26 projek Penggal Dua halaman 48–49 (termasuk latihan boneka dan lagu Kau Sahabatku). Dua PdP pengukuhan 34–35 kekal cadangan, bukan Projek 3. Semua DRAF.
+
+
+**AMARAN KALENDAR M06/M19: PdP 06 dan 19 Tahun 3** jatuh pada minggu **0 hari calon PdP bagi 16 negeri** menurut indeks CikguLaju 2027 (M06: A 7–11 Feb / B 8–12 Feb; M19: A 16–20 Mei / B 17–21 Mei). Tarikh slot asal dikekalkan untuk audit, **bukan tarikh PdP disahkan**. Guru sahkan tarikh mengikut negeri dan jadual kelas. **PdP anjal, jangan gugurkan/anjak automatik.** Rujuk `../KALENDAR_2027_HARI_PDP_NEGERI_AUDIT_20261106.md`. Semua masih DRAF.
