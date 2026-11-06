@@ -94,7 +94,12 @@
       "unit4_source_evidence_file": "audits/bahasa_arab_y2_unit4_pdp045_060_visual_audit_20261106.json",
       "unit4_release_approved": false,
       "all_four_units_candidate_pdp": true,
-      "year2_final_ready": false
+      "year2_final_ready": false,
+      "source_book_sp_html_code_corroborated": [
+        "010",
+        "011"
+      ],
+      "source_book_sp_print_unresolved_note": "Empat kes belum disahkan secara visual pada imej asal; PdP010/011 sudah disokong oleh kod teks eBook DBP 2017 & DPK, tetapi bukti HTML bukan pengesahan visual."
     },
     "3": {
       "dskp": {
