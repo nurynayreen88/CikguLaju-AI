@@ -500,11 +500,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan bentuk kepercayaan awal dengan pernyataan yang tepat dan beradab. Guru menyemak jawapan awal berpandukan 6.2.1."
+          "activity": "Guru membimbing semakan bukti hlm. 18–21: Pengenalan agama dan kepercayaan masyarakat, batu bersurat. Murid mengelaskan bentuk kepercayaan awal dengan pernyataan yang tepat dan beradab. Guru menyemak jawapan awal berpandukan 6.2.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 2. Murid menyusun garis masa kedatangan serta perkembangan Islam dalam Kesultanan Melayu Melaka. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan nilai-nilai keagamaan yang diamalkan ke arah masyarakat harmoni."
+          "activity": "Guru meminta murid memeriksa urutan dan fakta pada hlm. 18–21. Murid menyusun garis masa kedatangan serta perkembangan Islam dalam Kesultanan Melayu Melaka. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan nilai-nilai keagamaan yang diamalkan ke arah masyarakat harmoni."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -559,6 +559,21 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "18–21",
+          "sources": [
+            "https://online.anyflip.com/iawvx/fevz/files/basic-html/page24.html",
+            "https://online.anyflip.com/iawvx/fevz/files/basic-html/page25.html",
+            "https://online.anyflip.com/iawvx/fevz/files/basic-html/page26.html",
+            "https://online.anyflip.com/iawvx/fevz/files/basic-html/page27.html"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -620,11 +635,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menghubungkan kedudukan Islam dalam pentadbiran negeri Melayu dengan garis masa sebelum merdeka. Guru menyemak jawapan awal berpandukan 6.2.3."
+          "activity": "Guru membimbing semakan bukti hlm. 22–24: Pentadbiran dan perundangan negeri Melayu, dasar penjajahan dan. Murid menghubungkan kedudukan Islam dalam pentadbiran negeri Melayu dengan garis masa sebelum merdeka. Guru menyemak jawapan awal berpandukan 6.2.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 2. Murid membandingkan kedudukan Islam sebagai agama Persekutuan dengan kebebasan agama lain secara tepat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan mendaulatkan agama Islam sebagai agama Persekutuan."
+          "activity": "Guru meminta dua bukti dari hlm. 22–24 bagi menyokong perbandingan. Murid membandingkan kedudukan Islam sebagai agama Persekutuan dengan kebebasan agama lain secara tepat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan mendaulatkan agama Islam sebagai agama Persekutuan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -678,6 +693,20 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "22–24",
+          "sources": [
+            "https://online.anyflip.com/iawvx/fevz/files/basic-html/page28.html",
+            "https://online.anyflip.com/iawvx/fevz/files/basic-html/page29.html",
+            "https://online.anyflip.com/iawvx/fevz/files/basic-html/page30.html"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -733,11 +762,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengenal pasti sumbangan nilai agama kepada kerjasama dalam masyarakat. Guru menyemak jawapan awal berpandukan 6.2.5."
+          "activity": "Guru membimbing semakan bukti hlm. 25: Aktiviti kumpulan empat yang membincangkan nilai sejagat. Murid mengenal pasti sumbangan nilai agama kepada kerjasama dalam masyarakat. Guru menyemak jawapan awal berpandukan 6.2.5."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 2. Murid menilai dua situasi hormat terhadap agama berbeza dan membina peraturan perbincangan beradab. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan membenarkan agama lain diamalkan dengan aman dan damai."
+          "activity": "Guru meminta dua bukti dari hlm. 25 bagi menyokong perbandingan. Murid menilai dua situasi hormat terhadap agama berbeza dan membina peraturan perbincangan beradab. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan membenarkan agama lain diamalkan dengan aman dan damai."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -788,6 +817,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "25",
+          "sources": [
+            "https://online.anyflip.com/iawvx/fevz/files/basic-html/page31.html"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -854,11 +895,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun garis ringkas asal usul dan perkembangan bahasa Melayu daripada petikan. Guru menyemak jawapan awal berpandukan 6.3.1."
+          "activity": "Guru membimbing semakan bukti hlm. 32, 34: Halaman bercetak 32 membincangkan susur galur bahasa Melayu dan. Murid menyusun garis ringkas asal usul dan perkembangan bahasa Melayu daripada petikan. Guru menyemak jawapan awal berpandukan 6.3.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid menandakan kawasan utama penutur bahasa Melayu dalam peta dan memberi contoh penggunaannya. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan bahasa Melayu sebagai warisan negara yang dibanggakan."
+          "activity": "Guru menyoal bukti konkrit hlm. 32, 34 untuk menguji dapatan murid. Murid menandakan kawasan utama penutur bahasa Melayu dalam peta dan memberi contoh penggunaannya. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan bahasa Melayu sebagai warisan negara yang dibanggakan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -911,6 +952,19 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "32, 34",
+          "sources": [
+            "https://online.anyflip.com/iawvx/fevz/files/basic-html/page38.html",
+            "https://online.anyflip.com/iawvx/fevz/files/basic-html/page40.html"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -971,11 +1025,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membandingkan peranan bahasa Melayu sebagai lingua franca dengan fungsi kebangsaan masa kini. Guru menyemak jawapan awal berpandukan 6.3.3."
+          "activity": "Guru membimbing semakan bukti hlm. 37, 39: Halaman 37 menyenaraikan peranan bahasa Melayu dalam kehidupan. Murid membandingkan peranan bahasa Melayu sebagai lingua franca dengan fungsi kebangsaan masa kini. Guru menyemak jawapan awal berpandukan 6.3.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid menyusun peta peranan bahasa dalam perpaduan dan pendidikan sambil menghormati bahasa ibunda. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan bahasa Melayu sebagai bahasa perpaduan."
+          "activity": "Guru meminta murid memeriksa urutan dan fakta pada hlm. 37, 39. Murid menyusun peta peranan bahasa dalam perpaduan dan pendidikan sambil menghormati bahasa ibunda. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan bahasa Melayu sebagai bahasa perpaduan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1027,6 +1081,19 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "37, 39",
+          "sources": [
+            "https://online.anyflip.com/iawvx/fevz/files/basic-html/page43.html",
+            "https://online.anyflip.com/iawvx/fevz/files/basic-html/page45.html"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1088,11 +1155,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina persoalan kajian tentang perubahan peranan bahasa Melayu. Guru menyemak jawapan awal berpandukan 6.3.1."
+          "activity": "Guru membimbing semakan bukti hlm. 32–43: Kajian kes cadangan bahasa Melayu: susur galur dan sebaran. Murid membina persoalan kajian tentang perubahan peranan bahasa Melayu. Guru menyemak jawapan awal berpandukan 6.3.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid membandingkan dua sumber daripada masa berlainan dan mencadangkan usaha memartabatkan bahasa. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan bahasa Melayu sebagai warisan negara yang dibanggakan."
+          "activity": "Guru meminta dua bukti dari hlm. 32–43 bagi menyokong perbandingan. Murid membandingkan dua sumber daripada masa berlainan dan mencadangkan usaha memartabatkan bahasa. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan bahasa Melayu sebagai warisan negara yang dibanggakan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1145,6 +1212,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "32–43",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1206,11 +1285,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan istilah dengan maksud dan contoh sejarah yang tepat. Guru menyemak jawapan awal berpandukan 7.1.1."
+          "activity": "Guru membimbing semakan bukti hlm. 45–49: Naungan, campur tangan, penjajahan dan kuasa Siam, Portugis. Murid memadankan istilah dengan maksud dan contoh sejarah yang tepat. Guru menyemak jawapan awal berpandukan 7.1.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid membina kronologi kuasa asing yang terlibat mengikut lokasi serta tempoh. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan jati diri yang tinggi dalam kalangan generasi muda."
+          "activity": "Guru meminta murid memeriksa urutan dan fakta pada hlm. 45–49. Murid membina kronologi kuasa asing yang terlibat mengikut lokasi serta tempoh. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan jati diri yang tinggi dalam kalangan generasi muda."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1263,6 +1342,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "45–49",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1318,11 +1409,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan faktor kedatangan kuasa asing kepada ekonomi, politik atau lokasi. Guru menyemak jawapan awal berpandukan 7.1.3."
+          "activity": "Guru membimbing semakan bukti hlm. 50–52: Kedudukan strategik, hasil bumi, penyebaran agama dan Revolusi. Murid mengelaskan faktor kedatangan kuasa asing kepada ekonomi, politik atau lokasi. Guru menyemak jawapan awal berpandukan 7.1.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid membina peta sebab-akibat yang menghubungkan faktor dengan tindakan penjajahan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan semangat patriotisme dalam mempertahankan kedaulatan negara."
+          "activity": "Guru meminta dua bukti dari hlm. 50–52 bagi menyokong perbandingan. Murid membina peta sebab-akibat yang menghubungkan faktor dengan tindakan penjajahan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan semangat patriotisme dalam mempertahankan kedaulatan negara."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1374,6 +1465,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "50–52",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1429,11 +1532,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membandingkan struktur pentadbiran sebelum dan selepas campur tangan asing. Guru menyemak jawapan awal berpandukan 7.1.4."
+          "activity": "Guru membimbing semakan bukti hlm. 53–56: Kesan pentadbiran Negeri-negeri Selat/Bersekutu, ekonomi dan. Murid membandingkan struktur pentadbiran sebelum dan selepas campur tangan asing. Guru menyemak jawapan awal berpandukan 7.1.4."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid membina carta kesan sosioekonomi yang membezakan manfaat terhad dan kesan negatif terhadap masyarakat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan mengekalkan kedaulatan dan kemakmuran negara kita."
+          "activity": "Guru meminta dua bukti dari hlm. 53–56 bagi menyokong perbandingan. Murid membina carta kesan sosioekonomi yang membezakan manfaat terhad dan kesan negatif terhadap masyarakat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan mengekalkan kedaulatan dan kemakmuran negara kita."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1485,6 +1588,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "53–56",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1551,11 +1666,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan tokoh dengan tempat serta sebab penentangan yang berkaitan. Guru menyemak jawapan awal berpandukan 7.2.1."
+          "activity": "Guru membimbing semakan bukti hlm. 60–63: Tokoh tempatan dan sebab penentangan, termasuk Dol Said, Rentap. Murid memadankan tokoh dengan tempat serta sebab penentangan yang berkaitan. Guru menyemak jawapan awal berpandukan 7.2.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 5. Murid menyusun matriks tokoh, tindakan kuasa asing dan alasan perjuangan tanpa mencampurkan zaman. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan iktibar yang diperoleh daripada perjuangan tokoh terdahulu."
+          "activity": "Guru meminta murid memeriksa urutan dan fakta pada hlm. 60–63. Murid menyusun matriks tokoh, tindakan kuasa asing dan alasan perjuangan tanpa mencampurkan zaman. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan iktibar yang diperoleh daripada perjuangan tokoh terdahulu."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1608,6 +1723,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "60–63",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1663,11 +1790,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun dua siri peristiwa penentangan mengikut urutan dan lokasi. Guru menyemak jawapan awal berpandukan 7.2.3."
+          "activity": "Guru membimbing semakan bukti hlm. 64–68: Urutan peristiwa penentangan tokoh tempatan terhadap kuasa. Murid menyusun dua siri peristiwa penentangan mengikut urutan dan lokasi. Guru menyemak jawapan awal berpandukan 7.2.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 5. Murid membandingkan strategi yang digunakan serta iktibar menghargai pejuang. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan menghargai perjuangan pemimpin terdahulu."
+          "activity": "Guru meminta dua bukti dari hlm. 64–68 bagi menyokong perbandingan. Murid membandingkan strategi yang digunakan serta iktibar menghargai pejuang. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan menghargai perjuangan pemimpin terdahulu."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1719,6 +1846,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "64–68",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1785,11 +1924,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan tokoh kemerdekaan dengan sumbangan yang disokong sumber. Guru menyemak jawapan awal berpandukan 7.3.1."
+          "activity": "Guru membimbing semakan bukti hlm. 76–79: Tokoh kemerdekaan dan usaha menuju merdeka termasuk Dato' Onn. Murid memadankan tokoh kemerdekaan dengan sumbangan yang disokong sumber. Guru menyemak jawapan awal berpandukan 7.3.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 6. Murid menyusun langkah rundingan, perpaduan parti dan persediaan menuju kemerdekaan dalam carta. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan pengorbanan tokoh pejuang kemerdekaan yang boleh dicontohi."
+          "activity": "Guru meminta murid memeriksa urutan dan fakta pada hlm. 76–79. Murid menyusun langkah rundingan, perpaduan parti dan persediaan menuju kemerdekaan dalam carta. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan pengorbanan tokoh pejuang kemerdekaan yang boleh dicontohi."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1842,6 +1981,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "76–79",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1897,11 +2048,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan peristiwa menjelang 31 Ogos 1957 mengikut urutan. Guru menyemak jawapan awal berpandukan 7.3.3."
+          "activity": "Guru membimbing semakan bukti hlm. 80–85: Detik pemasyhuran kemerdekaan pada 31 Ogos 1957 di Stadium. Murid mengelaskan peristiwa menjelang 31 Ogos 1957 mengikut urutan. Guru menyemak jawapan awal berpandukan 7.3.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 6. Murid menghasilkan garis masa pengisytiharan kemerdekaan dan menjelaskan kepentingan peristiwa. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan permuafakatan dalam perjuangan menuntut kemerdekaan."
+          "activity": "Guru meminta murid memeriksa urutan dan fakta pada hlm. 80–85. Murid menghasilkan garis masa pengisytiharan kemerdekaan dan menjelaskan kepentingan peristiwa. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan permuafakatan dalam perjuangan menuntut kemerdekaan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1953,6 +2104,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "80–85",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2014,11 +2177,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina soalan kajian tentang bagaimana perpaduan menyokong kemerdekaan. Guru menyemak jawapan awal berpandukan 7.3.1."
+          "activity": "Guru membimbing semakan bukti hlm. 76–88: Kajian kes cadangan tentang sumber pengisytiharan, tokoh dan. Murid membina soalan kajian tentang bagaimana perpaduan menyokong kemerdekaan. Guru menyemak jawapan awal berpandukan 7.3.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 6. Murid membandingkan dua sumber dan membentang sumbangan dua tokoh serta batas maklumat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan pengorbanan tokoh pejuang kemerdekaan yang boleh dicontohi."
+          "activity": "Guru meminta dua bukti dari hlm. 76–88 bagi menyokong perbandingan. Murid membandingkan dua sumber dan membentang sumbangan dua tokoh serta batas maklumat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan pengorbanan tokoh pejuang kemerdekaan yang boleh dicontohi."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2071,6 +2234,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "76–88",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2132,11 +2307,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membezakan Ketua Utama Negara dengan ketua kerajaan tanpa mencampurkan bidang kuasa. Guru menyemak jawapan awal berpandukan 8.1.1."
+          "activity": "Guru membimbing semakan bukti hlm. 92–96: Kedudukan Yang di-Pertuan Agong sebagai Ketua Utama Negara dan. Murid membezakan Ketua Utama Negara dengan ketua kerajaan tanpa mencampurkan bidang kuasa. Guru menyemak jawapan awal berpandukan 8.1.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid membina carta ringkas pemilihan Yang di-Pertuan Agong oleh Majlis Raja-Raja berdasarkan teks. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menghargai Yang di-Pertuan Agong sebagai tonggak perpaduan."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 92–96. Murid membina carta ringkas pemilihan Yang di-Pertuan Agong oleh Majlis Raja-Raja berdasarkan teks. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menghargai Yang di-Pertuan Agong sebagai tonggak perpaduan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2189,6 +2364,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "92–96",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2250,11 +2437,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun tertib umum istiadat pertabalan dengan rujukan rasmi. Guru menyemak jawapan awal berpandukan 8.1.3."
+          "activity": "Guru membimbing semakan bukti hlm. 97–100: Istiadat pertabalan dan kuasa perundangan, eksekutif serta. Murid menyusun tertib umum istiadat pertabalan dengan rujukan rasmi. Guru menyemak jawapan awal berpandukan 8.1.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid mengkategorikan bidang kuasa Yang di-Pertuan Agong serta menerangkan prinsip raja berperlembagaan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan mengekalkan institusi Yang di-Pertuan Agong."
+          "activity": "Guru menyoal bukti konkrit hlm. 97–100 untuk menguji dapatan murid. Murid mengkategorikan bidang kuasa Yang di-Pertuan Agong serta menerangkan prinsip raja berperlembagaan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan mengekalkan institusi Yang di-Pertuan Agong."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2307,6 +2494,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "97–100",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2362,11 +2561,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan nama alat kebesaran dengan rupa serta fungsi istiadat. Guru menyemak jawapan awal berpandukan 8.1.5."
+          "activity": "Guru membimbing semakan bukti hlm. 101–106: Tengkolok Diraja, Keris Panjang Diraja, Cogan Alam dan alat. Murid memadankan nama alat kebesaran dengan rupa serta fungsi istiadat. Guru menyemak jawapan awal berpandukan 8.1.5."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid membina galeri kad maklumat alat kebesaran sambil menjelaskan cara menghormati lambang negara. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan taat setia kepada raja dan negara."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 101–106. Murid membina galeri kad maklumat alat kebesaran sambil menjelaskan cara menghormati lambang negara. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan taat setia kepada raja dan negara."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2418,6 +2617,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "101–106",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2484,11 +2695,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengenal pasti latar sejarah penggunaan Jata Negara daripada sumber. Guru menyemak jawapan awal berpandukan 9.1.1."
+          "activity": "Guru membimbing semakan bukti hlm. 110–115: Perubahan sejarah Jata Negara dan pengenalan lambang pada. Murid mengenal pasti latar sejarah penggunaan Jata Negara daripada sumber. Guru menyemak jawapan awal berpandukan 9.1.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 8. Murid melabel unsur utama pada Jata Negara tanpa mencampurkan simbol negeri dan negara. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menghormati Jata Negara."
+          "activity": "Guru memandu semakan padanan berdasarkan bukti pada hlm. 110–115. Murid melabel unsur utama pada Jata Negara tanpa mencampurkan simbol negeri dan negara. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menghormati Jata Negara."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2541,6 +2752,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "110–115",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2596,11 +2819,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan unsur Jata Negara dengan maksud yang dinyatakan dalam sumber. Guru menyemak jawapan awal berpandukan 9.1.3."
+          "activity": "Guru membimbing semakan bukti hlm. 116–119: Makna warna, harimau, bintang, bulan sabit dan cogan kata Jata. Murid memadankan unsur Jata Negara dengan maksud yang dinyatakan dalam sumber. Guru menyemak jawapan awal berpandukan 9.1.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 8. Murid membina kad penerangan mengapa identiti rasmi perlu dihormati. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan Jata Negara sebagai identiti negara."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 116–119. Murid membina kad penerangan mengapa identiti rasmi perlu dihormati. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan Jata Negara sebagai identiti negara."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2652,6 +2875,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "116–119",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2713,11 +2948,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun fakta sejarah penciptaan dan perubahan bendera kebangsaan. Guru menyemak jawapan awal berpandukan 9.2.1."
+          "activity": "Guru membimbing semakan bukti hlm. 122–124: Sejarah bendera kebangsaan dan nama Jalur Gemilang. Murid menyusun fakta sejarah penciptaan dan perubahan bendera kebangsaan. Guru menyemak jawapan awal berpandukan 9.2.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid menghubungkan nama Jalur Gemilang dengan sejarah serta peristiwa penggunaan bendera. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan bendera kebangsaan dikibarkan."
+          "activity": "Guru meminta dua bukti dari hlm. 122–124 bagi menyokong perbandingan. Murid menghubungkan nama Jalur Gemilang dengan sejarah serta peristiwa penggunaan bendera. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan bendera kebangsaan dikibarkan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2770,6 +3005,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "122–124",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2825,11 +3072,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid melabel warna, jalur, bulan dan bintang pada imej bendera. Guru menyemak jawapan awal berpandukan 9.2.3."
+          "activity": "Guru membimbing semakan bukti hlm. 125–129: Makna jalur, warna, bulan sabit dan bintang pada Jalur Gemilang. Murid melabel warna, jalur, bulan dan bintang pada imej bendera. Guru menyemak jawapan awal berpandukan 9.2.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid membina jadual makna simbol dan membetulkan contoh tafsiran yang salah. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan menghormati bendera kebangsaan."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 125–129. Murid membina jadual makna simbol dan membetulkan contoh tafsiran yang salah. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan menghormati bendera kebangsaan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2881,6 +3128,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "125–129",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2936,11 +3195,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengkategorikan situasi menaikkan, mempamer dan menyimpan bendera dengan betul. Guru menyemak jawapan awal berpandukan 9.2.4."
+          "activity": "Guru membimbing semakan bukti hlm. 130–132: Etika mempamer, menaik dan menjaga bendera kebangsaan. Murid mengkategorikan situasi menaikkan, mempamer dan menyimpan bendera dengan betul. Guru menyemak jawapan awal berpandukan 9.2.4."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid melakonkan cara menegur penggunaan bendera yang tidak tepat dengan beradab. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan bendera kebangsaan sebagai simbol perpaduan."
+          "activity": "Guru menyediakan soalan semak fakta hlm. 130–132 sebelum pembentangan. Murid melakonkan cara menegur penggunaan bendera yang tidak tepat dengan beradab. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan bendera kebangsaan sebagai simbol perpaduan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2992,6 +3251,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "130–132",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3053,11 +3324,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina persoalan inkuiri tentang asal usul Jalur Gemilang. Guru menyemak jawapan awal berpandukan 9.2.1."
+          "activity": "Guru membimbing semakan bukti hlm. 122–132: Kajian kes cadangan tentang asal usul dan penghormatan Jalur. Murid membina persoalan inkuiri tentang asal usul Jalur Gemilang. Guru menyemak jawapan awal berpandukan 9.2.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid menilai dua bukti, menghasilkan garis masa dan mencadangkan amalan menghormati bendera. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan bendera kebangsaan dikibarkan."
+          "activity": "Guru meminta dua bukti dari hlm. 122–132 bagi menyokong perbandingan. Murid menilai dua bukti, menghasilkan garis masa dan mencadangkan amalan menghormati bendera. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan bendera kebangsaan dikibarkan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3110,6 +3381,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "122–132",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3171,11 +3454,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun peristiwa asal usul lagu kebangsaan dan menamakan lagu. Guru menyemak jawapan awal berpandukan 9.3.1."
+          "activity": "Guru membimbing semakan bukti hlm. 136–140: Sejarah lagu Negaraku daripada lagu kebesaran Perak dan. Murid menyusun peristiwa asal usul lagu kebangsaan dan menamakan lagu. Guru menyemak jawapan awal berpandukan 9.3.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid membina kad fakta penciptaan dan kegunaan lagu kebangsaan dengan sumber. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan etika ketika menyanyi dan mendengar lagu kebangsaan Malaysia."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 136–140. Murid membina kad fakta penciptaan dan kegunaan lagu kebangsaan dengan sumber. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan etika ketika menyanyi dan mendengar lagu kebangsaan Malaysia."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3228,6 +3511,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "136–140",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3289,11 +3584,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mentafsir tema utama lagu tanpa menyalin keseluruhan lirik. Guru menyemak jawapan awal berpandukan 9.3.3."
+          "activity": "Guru membimbing semakan bukti hlm. 141–144: Maksud Negaraku dan etika menyanyi atau mendengar lagu. Murid mentafsir tema utama lagu tanpa menyalin keseluruhan lirik. Guru menyemak jawapan awal berpandukan 9.3.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid memerhati demonstrasi berdiri hormat dan menghasilkan carta etika ketika menyanyi atau mendengar. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan menghayati dan menjiwai lagu kebangsaan Malaysia."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 141–144. Murid memerhati demonstrasi berdiri hormat dan menghasilkan carta etika ketika menyanyi atau mendengar. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan menghayati dan menjiwai lagu kebangsaan Malaysia."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3346,6 +3641,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "141–144",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3401,11 +3708,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengenal pasti fungsi Negaraku dalam peristiwa rasmi. Guru menyemak jawapan awal berpandukan 9.3.5."
+          "activity": "Guru membimbing semakan bukti hlm. 145–146: Kaitan lagu kebangsaan dengan pembentukan jati diri dan. Murid mengenal pasti fungsi Negaraku dalam peristiwa rasmi. Guru menyemak jawapan awal berpandukan 9.3.5."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid membina peta kaitan lagu kebangsaan, identiti dan perpaduan rakyat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan lagu kebangsaan Malaysia sebagai simbol perpaduan."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 145–146. Murid membina peta kaitan lagu kebangsaan, identiti dan perpaduan rakyat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan lagu kebangsaan Malaysia sebagai simbol perpaduan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3457,6 +3764,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "145–146",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3518,11 +3837,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membezakan kedudukan bahasa kebangsaan dengan penggunaan bahasa lain. Guru menyemak jawapan awal berpandukan 9.4.1."
+          "activity": "Guru membimbing semakan bukti hlm. 150–154: Perkara 152 Perlembagaan dan fungsi bahasa Melayu sebagai. Murid membezakan kedudukan bahasa kebangsaan dengan penggunaan bahasa lain. Guru menyemak jawapan awal berpandukan 9.4.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 11. Murid membina peta peranan bahasa kebangsaan sebagai alat perpaduan dan ilmu. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan memartabatkan bahasa kebangsaan."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 150–154. Murid membina peta peranan bahasa kebangsaan sebagai alat perpaduan dan ilmu. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan memartabatkan bahasa kebangsaan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3575,6 +3894,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "150–154",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3630,11 +3961,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan institusi berkaitan bahasa dengan tugas khusus yang diketahui. Guru menyemak jawapan awal berpandukan 9.4.3."
+          "activity": "Guru membimbing semakan bukti hlm. 155–158: DBP, institusi pendidikan dan program memartabatkan bahasa. Murid memadankan institusi berkaitan bahasa dengan tugas khusus yang diketahui. Guru menyemak jawapan awal berpandukan 9.4.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 11. Murid mencadangkan satu program sekolah memartabatkan penggunaan bahasa Melayu yang berhemah. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan menggunakan bahasa kebangsaan dengan betul dalam pertuturan dan penulisan."
+          "activity": "Guru menyoal bukti konkrit hlm. 155–158 untuk menguji dapatan murid. Murid mencadangkan satu program sekolah memartabatkan penggunaan bahasa Melayu yang berhemah. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan menggunakan bahasa kebangsaan dengan betul dalam pertuturan dan penulisan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3686,6 +4017,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "155–158",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3741,11 +4084,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan cabaran penggunaan bahasa kebangsaan dalam konteks harian. Guru menyemak jawapan awal berpandukan 9.4.4."
+          "activity": "Guru membimbing semakan bukti hlm. 159–160: Cabaran penggunaan bahasa Melayu dan usaha mengatasinya. Murid mengelaskan cabaran penggunaan bahasa kebangsaan dalam konteks harian. Guru menyemak jawapan awal berpandukan 9.4.4."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 11. Murid menilai cadangan memperbaik penggunaan bahasa Melayu tanpa merendahkan bahasa lain. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan menghayati dan menjiwai bahasa kebangsaan."
+          "activity": "Guru meminta dua bukti dari hlm. 159–160 bagi menyokong perbandingan. Murid menilai cadangan memperbaik penggunaan bahasa Melayu tanpa merendahkan bahasa lain. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan menghayati dan menjiwai bahasa kebangsaan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3797,6 +4140,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "159–160",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3863,11 +4218,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyatakan latar belakang pemilihan bunga raya daripada bahan bersumber. Guru menyemak jawapan awal berpandukan 9.5.1."
+          "activity": "Guru membimbing semakan bukti hlm. 164–166: Pemilihan bunga raya sebagai bunga kebangsaan, makna warna. Murid menyatakan latar belakang pemilihan bunga raya daripada bahan bersumber. Guru menyemak jawapan awal berpandukan 9.5.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 12. Murid menanda warna bunga dan menjelaskan sebab bunga kebangsaan menjadi lambang identiti. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan bunga raya sebagai bunga kebangsaan."
+          "activity": "Guru menyoal bukti konkrit hlm. 164–166 untuk menguji dapatan murid. Murid menanda warna bunga dan menjelaskan sebab bunga kebangsaan menjadi lambang identiti. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan bunga raya sebagai bunga kebangsaan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3920,6 +4275,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "164–166",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3975,11 +4342,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan lima kelopak dengan lima prinsip Rukun Negara tanpa menokok simbol baharu. Guru menyemak jawapan awal berpandukan 9.5.3."
+          "activity": "Guru membimbing semakan bukti hlm. 167–169: Makna lima kelopak bunga raya dengan lima prinsip Rukun Negara. Murid memadankan lima kelopak dengan lima prinsip Rukun Negara tanpa menokok simbol baharu. Guru menyemak jawapan awal berpandukan 9.5.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 12. Murid membina poster nilai yang menghubungkan prinsip Rukun Negara dengan situasi murid. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan bunga kebangsaan sebagai lambang perpaduan."
+          "activity": "Guru meminta dua bukti dari hlm. 167–169 bagi menyokong perbandingan. Murid membina poster nilai yang menghubungkan prinsip Rukun Negara dengan situasi murid. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan bunga kebangsaan sebagai lambang perpaduan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -4031,6 +4398,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "167–169",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -4092,11 +4471,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina soalan kajian mengapa bunga raya dipilih sebagai simbol negara. Guru menyemak jawapan awal berpandukan 9.5.1."
+          "activity": "Guru membimbing semakan bukti hlm. 164–174: Kajian kes cadangan tentang sejarah dan perlambangan bunga raya. Murid membina soalan kajian mengapa bunga raya dipilih sebagai simbol negara. Guru menyemak jawapan awal berpandukan 9.5.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 12. Murid membandingkan sumber dan membentang kaitan warna serta lima kelopak dengan jati diri. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan bunga raya sebagai bunga kebangsaan."
+          "activity": "Guru meminta dua bukti dari hlm. 164–174 bagi menyokong perbandingan. Murid membandingkan sumber dan membentang kaitan warna serta lima kelopak dengan jati diri. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan bunga raya sebagai bunga kebangsaan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -4149,6 +4528,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "164–174",
+          "sources": [
+            "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {

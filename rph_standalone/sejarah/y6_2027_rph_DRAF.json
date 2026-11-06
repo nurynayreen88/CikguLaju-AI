@@ -393,11 +393,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid melabel negeri-negeri Malaysia pada peta kosong. Guru menyemak jawapan awal berpandukan 10.2.1."
+          "activity": "Guru membimbing semakan bukti hlm. 25–26: asal-usul nama negeri termasuk Sabah dan Sarawak. Murid melabel negeri-negeri Malaysia pada peta kosong. Guru menyemak jawapan awal berpandukan 10.2.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 2. Murid memadankan institusi ketua negeri dengan negeri masing-masing tanpa menyamakan gelaran. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan taat setia dan menghormati ketua negeri."
+          "activity": "Guru memandu semakan padanan berdasarkan bukti pada hlm. 25–26. Murid memadankan institusi ketua negeri dengan negeri masing-masing tanpa menyamakan gelaran. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan taat setia dan menghormati ketua negeri."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -449,6 +449,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "25–26",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -504,11 +516,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan ibu negeri dengan negeri yang berkenaan menggunakan atlas. Guru menyemak jawapan awal berpandukan 10.2.3."
+          "activity": "Guru membimbing semakan bukti hlm. 27: perbezaan ibu negeri dan bandar diraja serta peta lokasi dan. Murid memadankan ibu negeri dengan negeri yang berkenaan menggunakan atlas. Guru menyemak jawapan awal berpandukan 10.2.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 2. Murid membandingkan ibu negeri dan bandar diraja, serta menjelaskan negeri yang tidak mempunyai bandar diraja. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan menghormati lambang negeri."
+          "activity": "Guru meminta dua bukti dari hlm. 27 bagi menyokong perbandingan. Murid membandingkan ibu negeri dan bandar diraja, serta menjelaskan negeri yang tidak mempunyai bandar diraja. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan menghormati lambang negeri."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -559,6 +571,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "27",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -614,11 +638,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan tiga simbol negeri dengan negeri yang betul. Guru menyemak jawapan awal berpandukan 10.2.4."
+          "activity": "Guru membimbing semakan bukti hlm. 28–30: Halaman 28–30 mengenal pasti bendera, lagu dan jata negeri. Murid memadankan tiga simbol negeri dengan negeri yang betul. Guru menyemak jawapan awal berpandukan 10.2.4."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 2. Murid membina galeri lambang negeri dan menjelaskan cara menghormati simbol negeri. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan rasa bangga terhadap warisan negeri-negeri di Malaysia."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 28–30. Murid membina galeri lambang negeri dan menjelaskan cara menghormati simbol negeri. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan rasa bangga terhadap warisan negeri-negeri di Malaysia."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -669,6 +693,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "28–30",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -724,11 +760,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyatakan sebab Rukun Negara diperkenalkan selepas peristiwa sejarah relevan. Guru menyemak jawapan awal berpandukan 10.3.1."
+          "activity": "Guru membimbing semakan bukti hlm. 35–38: Asal-usul Rukun Negara selepas peristiwa 13 Mei 1969, penubuhan. Murid menyatakan sebab Rukun Negara diperkenalkan selepas peristiwa sejarah relevan. Guru menyemak jawapan awal berpandukan 10.3.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid membina rantaian sebab–matlamat–harapan masyarakat berasaskan sumber. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menghayati matlamat dan prinsip Rukun Negara."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 35–38. Murid membina rantaian sebab–matlamat–harapan masyarakat berasaskan sumber. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menghayati matlamat dan prinsip Rukun Negara."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -779,6 +815,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "35–38",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -834,11 +882,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan matlamat Rukun Negara dengan prinsip yang menyokongnya. Guru menyemak jawapan awal berpandukan 10.3.2."
+          "activity": "Guru membimbing semakan bukti hlm. 39–43: Matlamat dan lima prinsip Rukun Negara, maksud prinsip serta. Murid memadankan matlamat Rukun Negara dengan prinsip yang menyokongnya. Guru menyemak jawapan awal berpandukan 10.3.2."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid melakar peta konsep lima prinsip dan menjelaskan maksud dua prinsip pilihan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan mengamalkan matlamat dan prinsip Rukun Negara dalam kehidupan."
+          "activity": "Guru menyoal bukti konkrit hlm. 39–43 untuk menguji dapatan murid. Murid melakar peta konsep lima prinsip dan menjelaskan maksud dua prinsip pilihan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan mengamalkan matlamat dan prinsip Rukun Negara dalam kehidupan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -889,6 +937,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "39–43",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -944,11 +1004,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan tindakan harian mengikut prinsip Rukun Negara yang berkaitan. Guru menyemak jawapan awal berpandukan 10.3.3."
+          "activity": "Guru membimbing semakan bukti hlm. 44–46: Peranan Rukun Negara dalam perpaduan, toleransi, patriotisme. Murid mengelaskan tindakan harian mengikut prinsip Rukun Negara yang berkaitan. Guru menyemak jawapan awal berpandukan 10.3.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid melakonkan penyelesaian konflik kecil secara adil dan menghormati rakan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan Rukun Negara dalam membentuk jati diri rakyat Malaysia."
+          "activity": "Guru menyediakan soalan semak fakta hlm. 44–46 sebelum pembentangan. Murid melakonkan penyelesaian konflik kecil secara adil dan menghormati rakan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan Rukun Negara dalam membentuk jati diri rakyat Malaysia."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -999,6 +1059,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "44–46",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1060,11 +1132,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina persoalan kajian tentang perpaduan sebelum dan selepas Rukun Negara. Guru menyemak jawapan awal berpandukan 10.3.1."
+          "activity": "Guru membimbing semakan bukti hlm. 35–46: Kajian kes Rukun Negara ialah olahan guru berpandukan latar. Murid membina persoalan kajian tentang perpaduan sebelum dan selepas Rukun Negara. Guru menyemak jawapan awal berpandukan 10.3.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid membandingkan dua sumber dan membentang tiga contoh amalan prinsip di sekolah. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menghayati matlamat dan prinsip Rukun Negara."
+          "activity": "Guru meminta dua bukti dari hlm. 35–46 bagi menyokong perbandingan. Murid membandingkan dua sumber dan membentang tiga contoh amalan prinsip di sekolah. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menghayati matlamat dan prinsip Rukun Negara."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1116,6 +1188,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "35–46",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1177,11 +1261,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengenal pasti kepelbagaian kaum serta lokasi petempatan melalui peta. Guru menyemak jawapan awal berpandukan 11.1.1."
+          "activity": "Guru membimbing semakan bukti hlm. 52–57: Pengenalan kepelbagaian kaum dan perbandingan petempatan serta. Murid mengenal pasti kepelbagaian kaum serta lokasi petempatan melalui peta. Guru menyemak jawapan awal berpandukan 11.1.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid membandingkan corak kegiatan ekonomi tradisional dengan aktiviti masa kini tanpa stereotaip. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan bertoleransi antara kaum sebagai asas perpaduan."
+          "activity": "Guru meminta dua bukti dari hlm. 52–57 bagi menyokong perbandingan. Murid membandingkan corak kegiatan ekonomi tradisional dengan aktiviti masa kini tanpa stereotaip. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan bertoleransi antara kaum sebagai asas perpaduan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1233,6 +1317,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "52–57",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1288,11 +1384,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan contoh alat muzik atau tarian dengan komuniti yang mengamalkannya. Guru menyemak jawapan awal berpandukan 11.1.3."
+          "activity": "Guru membimbing semakan bukti hlm. 58–63: Alat muzik dan tarian tradisional pelbagai kaum termasuk. Murid memadankan contoh alat muzik atau tarian dengan komuniti yang mengamalkannya. Guru menyemak jawapan awal berpandukan 11.1.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid membina galeri budaya yang menerangkan fungsi persembahan dan kepelbagaian amalan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan menghargai keunikan budaya tempatan."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 58–63. Murid membina galeri budaya yang menerangkan fungsi persembahan dan kepelbagaian amalan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan menghargai keunikan budaya tempatan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1343,6 +1439,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "58–63",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1398,11 +1506,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan jenis permainan tradisional mengikut bahan dan cara bermain. Guru menyemak jawapan awal berpandukan 11.1.4."
+          "activity": "Guru membimbing semakan bukti hlm. 64–67: Permainan tradisional seperti sepak raga, kabaddi, chap teh dan. Murid mengelaskan jenis permainan tradisional mengikut bahan dan cara bermain. Guru menyemak jawapan awal berpandukan 11.1.4."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid membina arahan ringkas satu permainan dan membandingkan nilai kerjasama atau kesukanan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan perkongsian maklumat tentang kepelbagaian kaum di Malaysia."
+          "activity": "Guru meminta dua bukti dari hlm. 64–67 bagi menyokong perbandingan. Murid membina arahan ringkas satu permainan dan membandingkan nilai kerjasama atau kesukanan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan perkongsian maklumat tentang kepelbagaian kaum di Malaysia."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1453,6 +1561,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "64–67",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1502,11 +1622,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun peristiwa penting cerita rakyat menurut urutan naratif. Guru menyemak jawapan awal berpandukan 11.1.5."
+          "activity": "Guru membimbing semakan bukti hlm. 68–71: Cerita rakyat tempatan seperti Si Luncai dan legenda Puteri. Murid menyusun peristiwa penting cerita rakyat menurut urutan naratif. Guru menyemak jawapan awal berpandukan 11.1.5."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid membezakan pengajaran moral cerita dengan fakta sejarah yang memerlukan sumber tambahan. Guru membimbing pembetulan salah faham menggunakan bukti."
+          "activity": "Guru meminta dua bukti dari hlm. 68–71 bagi menyokong perbandingan. Murid membezakan pengajaran moral cerita dengan fakta sejarah yang memerlukan sumber tambahan. Guru membimbing pembetulan salah faham menggunakan bukti."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1557,6 +1677,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "68–71",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1618,11 +1750,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menamakan kepelbagaian agama serta kepercayaan masyarakat secara hormat. Guru menyemak jawapan awal berpandukan 11.2.1."
+          "activity": "Guru membimbing semakan bukti hlm. 78–83: Agama dan kepercayaan pelbagai masyarakat serta kedudukan Islam. Murid menamakan kepelbagaian agama serta kepercayaan masyarakat secara hormat. Guru menyemak jawapan awal berpandukan 11.2.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 5. Murid menerangkan kedudukan Islam sebagai agama Persekutuan dengan teks yang betul. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan memahami adab ketika berada di rumah ibadat."
+          "activity": "Guru menyoal bukti konkrit hlm. 78–83 untuk menguji dapatan murid. Murid menerangkan kedudukan Islam sebagai agama Persekutuan dengan teks yang betul. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan memahami adab ketika berada di rumah ibadat."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1675,6 +1807,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "78–83",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1730,11 +1874,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membezakan kedudukan agama Persekutuan dengan kebebasan beragama. Guru menyemak jawapan awal berpandukan 11.2.3."
+          "activity": "Guru membimbing semakan bukti hlm. 84–85: Hak amalan agama lain dalam Perlembagaan, termasuk Perkara 11. Murid membezakan kedudukan agama Persekutuan dengan kebebasan beragama. Guru menyemak jawapan awal berpandukan 11.2.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 5. Murid membincangkan situasi hormat terhadap amalan agama yang berbeza tanpa memaksa murid berkongsi kepercayaan sendiri. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghubungkait kepentingan amalan agama dan kepercayaan dalam kehidupan."
+          "activity": "Guru menyoal bukti konkrit hlm. 84–85 untuk menguji dapatan murid. Murid membincangkan situasi hormat terhadap amalan agama yang berbeza tanpa memaksa murid berkongsi kepercayaan sendiri. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghubungkait kepentingan amalan agama dan kepercayaan dalam kehidupan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1786,6 +1930,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "84–85",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1841,11 +1997,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan nama rumah ibadat dengan gambar yang dilabel tepat. Guru menyemak jawapan awal berpandukan 11.2.4."
+          "activity": "Guru membimbing semakan bukti hlm. 86–88: Masjid, gereja, tokong, wat, kuil dan gurdwara serta adab. Murid memadankan nama rumah ibadat dengan gambar yang dilabel tepat. Guru menyemak jawapan awal berpandukan 11.2.4."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 5. Murid merangka peraturan lawatan pendidikan yang menghormati kesucian tempat ibadat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan menghormati kepelbagaian agama dan kepercayaan bagi mewujudkan perpaduan."
+          "activity": "Guru menyoal bukti konkrit hlm. 86–88 untuk menguji dapatan murid. Murid merangka peraturan lawatan pendidikan yang menghormati kesucian tempat ibadat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan menghormati kepelbagaian agama dan kepercayaan bagi mewujudkan perpaduan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1897,6 +2053,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "86–88",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1958,11 +2126,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina soalan kajian bagaimana kepelbagaian agama dipelihara secara aman. Guru menyemak jawapan awal berpandukan 11.2.1."
+          "activity": "Guru membimbing semakan bukti hlm. 78–89: Kajian kes cadangan tentang keharmonian masyarakat berbilang. Murid membina soalan kajian bagaimana kepelbagaian agama dipelihara secara aman. Guru menyemak jawapan awal berpandukan 11.2.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 5. Murid membandingkan bukti perlembagaan dan contoh aktiviti muafakat komuniti. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan memahami adab ketika berada di rumah ibadat."
+          "activity": "Guru meminta dua bukti dari hlm. 78–89 bagi menyokong perbandingan. Murid membandingkan bukti perlembagaan dan contoh aktiviti muafakat komuniti. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan memahami adab ketika berada di rumah ibadat."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2015,6 +2183,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "78–89",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2070,11 +2250,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan perayaan utama mengikut komuniti yang menyambutnya tanpa menyamaratakan semua individu. Guru menyemak jawapan awal berpandukan 11.3.1."
+          "activity": "Guru membimbing semakan bukti hlm. 94–96: Perayaan utama masyarakat Malaysia mengikut komuniti dan. Murid mengelaskan perayaan utama mengikut komuniti yang menyambutnya tanpa menyamaratakan semua individu. Guru menyemak jawapan awal berpandukan 11.3.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 6. Murid menghasilkan kalendar perayaan berserta penjelasan sumber tarikh yang boleh berubah. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan sambutan perayaan dalam keluarga."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 94–96. Murid menghasilkan kalendar perayaan berserta penjelasan sumber tarikh yang boleh berubah. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan sambutan perayaan dalam keluarga."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2126,6 +2306,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "94–96",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2181,11 +2373,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan tujuan sambutan dengan tradisi perayaan yang sepadan. Guru menyemak jawapan awal berpandukan 11.3.2."
+          "activity": "Guru membimbing semakan bukti hlm. 96–98: Tujuan sambutan dan nilai kekeluargaan, kejiranan serta. Murid memadankan tujuan sambutan dengan tradisi perayaan yang sepadan. Guru menyemak jawapan awal berpandukan 11.3.2."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 6. Murid membandingkan nilai kekeluargaan, kesyukuran dan kebersamaan dalam dua perayaan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan menghormati kepelbagaian sambutan dan adab perayaan."
+          "activity": "Guru meminta dua bukti dari hlm. 96–98 bagi menyokong perbandingan. Murid membandingkan nilai kekeluargaan, kesyukuran dan kebersamaan dalam dua perayaan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan menghormati kepelbagaian sambutan dan adab perayaan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2237,6 +2429,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "96–98",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2292,11 +2496,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membandingkan cara sambutan perayaan dari aspek pakaian, komunikasi dan ziarah. Guru menyemak jawapan awal berpandukan 11.3.3."
+          "activity": "Guru membimbing semakan bukti hlm. 99–101: Sambutan perayaan dahulu dan kini serta analisis SWOT warisan. Murid membandingkan cara sambutan perayaan dari aspek pakaian, komunikasi dan ziarah. Guru menyemak jawapan awal berpandukan 11.3.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 6. Murid menghasilkan poster perubahan dengan penekanan kepada hormat budaya dan mengelak stereotaip. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan warisan perayaan masyarakat di Malaysia."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 99–101. Murid menghasilkan poster perubahan dengan penekanan kepada hormat budaya dan mengelak stereotaip. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan warisan perayaan masyarakat di Malaysia."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2348,6 +2552,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "99–101",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2403,11 +2619,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun nama Perdana Menteri Malaysia mengikut urutan yang disemak tarikh. Guru menyemak jawapan awal berpandukan 12.1.1. Guru menjelaskan buku 2021 sudah menyenaraikan PM ke-9, tetapi rujukan rasmi 2026 diperlukan untuk PM ke-10."
+          "activity": "Guru membimbing semakan bukti hlm. 108–115: Urutan Perdana Menteri. Murid menyusun nama Perdana Menteri Malaysia mengikut urutan yang disemak tarikh. Guru menyemak jawapan awal berpandukan 12.1.1. Guru menjelaskan buku 2021 sudah menyenaraikan PM ke-9, tetapi rujukan rasmi 2026 diperlukan untuk PM ke-10."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid membina garis masa dan menyatakan satu biodata ringkas bagi beberapa pemimpin. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan pemimpin yang memiliki ciri-ciri kepimpinan yang berwibawa. Murid menambah PM ke-10, Anwar Ibrahim (24 November 2022), dan melabel tarikh serta sumber rasmi."
+          "activity": "Guru meminta murid memeriksa urutan dan fakta pada hlm. 108–115. Murid membina garis masa dan menyatakan satu biodata ringkas bagi beberapa pemimpin. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan pemimpin yang memiliki ciri-ciri kepimpinan yang berwibawa. Murid menambah PM ke-10, Anwar Ibrahim (24 November 2022), dan melabel tarikh serta sumber rasmi."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2465,6 +2681,18 @@
           "checked_date": "2026-11-06",
           "summary": "Buku DBP 2021 menyenaraikan PM1–9; BKPP JPM menyenaraikan Anwar Ibrahim sebagai PM ke-10 bermula 24 Nov 2022.",
           "status": "OFFICIAL_CONTEXT_CHECKED_NOT_TEACHER_APPROVED"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "108–115",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2520,11 +2748,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan tugas Perdana Menteri dalam pentadbiran, dasar dan penyelarasan kerajaan. Guru menyemak jawapan awal berpandukan 12.1.2."
+          "activity": "Guru membimbing semakan bukti hlm. 116–117: Tugas Perdana Menteri dalam pentadbiran dan kepimpinan kerajaan. Murid mengelaskan tugas Perdana Menteri dalam pentadbiran, dasar dan penyelarasan kerajaan. Guru menyemak jawapan awal berpandukan 12.1.2."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid melakonkan mesyuarat kabinet contoh untuk menunjukkan peranan ketua kerajaan secara tepat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan penghargaan terhadap pemimpin negara."
+          "activity": "Guru menyediakan soalan semak fakta hlm. 116–117 sebelum pembentangan. Murid melakonkan mesyuarat kabinet contoh untuk menunjukkan peranan ketua kerajaan secara tepat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan penghargaan terhadap pemimpin negara."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2576,6 +2804,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "116–117",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2631,11 +2871,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan inisiatif negara dengan era kepimpinan yang sesuai berdasarkan bukti. Guru menyemak jawapan awal berpandukan 12.1.3."
+          "activity": "Guru membimbing semakan bukti hlm. 118–120: Pencapaian negara di bawah pentadbiran Perdana Menteri berbeza. Murid memadankan inisiatif negara dengan era kepimpinan yang sesuai berdasarkan bukti. Guru menyemak jawapan awal berpandukan 12.1.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid membandingkan dua pencapaian serta menilai kesannya tanpa mengutamakan parti politik. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan memberi sokongan kepada kepemimpinan negara."
+          "activity": "Guru meminta dua bukti dari hlm. 118–120 bagi menyokong perbandingan. Murid membandingkan dua pencapaian serta menilai kesannya tanpa mengutamakan parti politik. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan memberi sokongan kepada kepemimpinan negara."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2687,6 +2927,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "118–120",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2742,11 +2994,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun perkembangan sektor utama ekonomi mengikut urutan masa. Guru menyemak jawapan awal berpandukan 12.2.1."
+          "activity": "Guru membimbing semakan bukti hlm. 126–128: Sektor pertanian, perlombongan dan ekonomi. Murid menyusun perkembangan sektor utama ekonomi mengikut urutan masa. Guru menyemak jawapan awal berpandukan 12.2.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 8. Murid menghasilkan carta perubahan daripada kegiatan tradisional kepada sektor moden. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan kemajuan ekonomi bagi mengekalkan kemakmuran negara."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 126–128. Murid menghasilkan carta perubahan daripada kegiatan tradisional kepada sektor moden. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan kemajuan ekonomi bagi mengekalkan kemakmuran negara."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2798,6 +3050,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "126–128",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2853,11 +3117,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan contoh kegiatan ekonomi mengikut sektor utama. Guru menyemak jawapan awal berpandukan 12.2.2."
+          "activity": "Guru membimbing semakan bukti hlm. 129–133: Pertanian, pembuatan, petroleum dan kegiatan penyumbang ekonomi. Murid mengelaskan contoh kegiatan ekonomi mengikut sektor utama. Guru menyemak jawapan awal berpandukan 12.2.2."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 8. Murid membina peta sumbangan sektor kepada pekerjaan dan pembangunan setempat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan menyokong usaha meningkatkan ekonomi negara."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 129–133. Murid membina peta sumbangan sektor kepada pekerjaan dan pembangunan setempat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan menyokong usaha meningkatkan ekonomi negara."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2909,6 +3173,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "129–133",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2964,11 +3240,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mentafsir satu graf pertumbuhan atau keluaran industri tanpa mengubah data asal. Guru menyemak jawapan awal berpandukan 12.2.3."
+          "activity": "Guru membimbing semakan bukti hlm. 134–139: Pencapaian ekonomi negara termasuk PETRONAS dan perkembangan. Murid mentafsir satu graf pertumbuhan atau keluaran industri tanpa mengubah data asal. Guru menyemak jawapan awal berpandukan 12.2.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 8. Murid membina kapsyen dua pencapaian ekonomi yang menyatakan tahun, sektor dan manfaat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan rasa bangga terhadap barangan buatan Malaysia."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 134–139. Murid membina kapsyen dua pencapaian ekonomi yang menyatakan tahun, sektor dan manfaat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan rasa bangga terhadap barangan buatan Malaysia."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3020,6 +3296,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "134–139",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3081,11 +3369,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina persoalan kajian tentang perubahan ekonomi dahulu dan kini. Guru menyemak jawapan awal berpandukan 12.2.1."
+          "activity": "Guru membimbing semakan bukti hlm. 126–139: Kajian kes cadangan tentang perubahan sektor dan bukti ekonomi. Murid membina persoalan kajian tentang perubahan ekonomi dahulu dan kini. Guru menyemak jawapan awal berpandukan 12.2.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 8. Murid membandingkan graf atau peta sektor dari dua tempoh dan menghuraikan peluang serta cabaran. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan kemajuan ekonomi bagi mengekalkan kemakmuran negara."
+          "activity": "Guru meminta dua bukti dari hlm. 126–139 bagi menyokong perbandingan. Murid membandingkan graf atau peta sektor dari dua tempoh dan menghuraikan peluang serta cabaran. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan kemajuan ekonomi bagi mengekalkan kemakmuran negara."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3138,6 +3426,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "126–139",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3199,11 +3499,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan pencapaian sukan dengan sukan serta peringkat pertandingan yang betul. Guru menyemak jawapan awal berpandukan 12.3.1."
+          "activity": "Guru membimbing semakan bukti hlm. 144–148: Pencapaian sukan Malaysia dan peranan sukan menyatupadukan. Murid memadankan pencapaian sukan dengan sukan serta peringkat pertandingan yang betul. Guru menyemak jawapan awal berpandukan 12.3.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid menganalisis bagaimana aktiviti sukan boleh menyatukan rakyat pelbagai latar. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan pelibatan pelbagai kaum mengharumkan nama negara dalam bidang sukan."
+          "activity": "Guru menyoal bukti konkrit hlm. 144–148 untuk menguji dapatan murid. Murid menganalisis bagaimana aktiviti sukan boleh menyatukan rakyat pelbagai latar. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan pelibatan pelbagai kaum mengharumkan nama negara dalam bidang sukan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3256,6 +3556,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "144–148",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3311,11 +3623,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun acara utama mengikut tahun dan jenis sukan. Guru menyemak jawapan awal berpandukan 12.3.3."
+          "activity": "Guru membimbing semakan bukti hlm. 149–152: Peranan Malaysia menganjur acara sukan antarabangsa. Murid menyusun acara utama mengikut tahun dan jenis sukan. Guru menyemak jawapan awal berpandukan 12.3.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid menghasilkan peta impak penganjuran kepada ekonomi, kemudahan dan imej negara. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan sukan kepada pembangunan negara."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 149–152. Murid menghasilkan peta impak penganjuran kepada ekonomi, kemudahan dan imej negara. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan sukan kepada pembangunan negara."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3367,6 +3679,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "149–152",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3422,11 +3746,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan kisah usaha tokoh terdahulu dengan nilai latihan dan ketekunan. Guru menyemak jawapan awal berpandukan 12.3.4."
+          "activity": "Guru membimbing semakan bukti hlm. 153–157: Tokoh sukan negara dahulu dan inspirasi generasi masa kini. Murid memadankan kisah usaha tokoh terdahulu dengan nilai latihan dan ketekunan. Guru menyemak jawapan awal berpandukan 12.3.4."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid membina carta pengaruh tokoh sukan kepada penyertaan generasi baharu. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan nilai sahsiah dan etika dalam mempamerkan semangat kesukanan."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 153–157. Murid membina carta pengaruh tokoh sukan kepada penyertaan generasi baharu. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan nilai sahsiah dan etika dalam mempamerkan semangat kesukanan."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3478,6 +3802,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "153–157",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3539,11 +3875,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid melabel negara anggota ASEAN mengikut sumber semasa yang dinyatakan tahun. Guru menyemak jawapan awal berpandukan 12.4.1. Guru menegaskan Timor-Leste diterima sebagai anggota ASEAN ke-11 pada 26 Oktober 2025; peta terkini perlu mencerminkan perubahan ini."
+          "activity": "Guru membimbing semakan bukti hlm. 162–165: ASEAN dan pelibatan Malaysia, dengan suplemen keanggotaan. Murid melabel negara anggota ASEAN mengikut sumber semasa yang dinyatakan tahun. Guru menyemak jawapan awal berpandukan 12.4.1. Guru menegaskan Timor-Leste diterima sebagai anggota ASEAN ke-11 pada 26 Oktober 2025; peta terkini perlu mencerminkan perubahan ini."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid membina rajah peranan Malaysia dalam kerjasama ASEAN dan membezakan organisasi serantau/antarabangsa. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menjalinkan hubungan baik dengan negara luar."
+          "activity": "Guru meminta dua bukti dari hlm. 162–165 bagi menyokong perbandingan. Murid membina rajah peranan Malaysia dalam kerjasama ASEAN dan membezakan organisasi serantau/antarabangsa. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menjalinkan hubungan baik dengan negara luar."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3602,6 +3938,18 @@
           "checked_date": "2026-11-06",
           "summary": "Timor-Leste anggota ASEAN ke-11 sejak 26 Okt 2025 menurut Sekretariat ASEAN; buku DBP 2021 merupakan snapshot sejarah terdahulu.",
           "status": "OFFICIAL_CONTEXT_CHECKED_NOT_TEACHER_APPROVED"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "162–165",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3657,11 +4005,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengenal pasti latar hubungan Malaysia dengan negara anggota Komanwel. Guru menyemak jawapan awal berpandukan 12.4.3."
+          "activity": "Guru membimbing semakan bukti hlm. 166–167: Pelibatan Malaysia dalam Komanwel dan kerjasama Sukan Komanwel. Murid mengenal pasti latar hubungan Malaysia dengan negara anggota Komanwel. Guru menyemak jawapan awal berpandukan 12.4.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid menyusun contoh kerjasama pendidikan, sukan atau hubungan negara anggota mengikut sumber. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan sumbangan Malaysia untuk keamanan dunia."
+          "activity": "Guru meminta murid memeriksa urutan dan fakta pada hlm. 166–167. Murid menyusun contoh kerjasama pendidikan, sukan atau hubungan negara anggota mengikut sumber. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan sumbangan Malaysia untuk keamanan dunia."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3713,6 +4061,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "166–167",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3768,11 +4128,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menamakan tujuan utama OIC menggunakan bukti sumber. Guru menyemak jawapan awal berpandukan 12.4.4."
+          "activity": "Guru membimbing semakan bukti hlm. 168–169: Malaysia dalam Pertubuhan Kerjasama Islam (OIC). Murid menamakan tujuan utama OIC menggunakan bukti sumber. Guru menyemak jawapan awal berpandukan 12.4.4."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid membina carta pelibatan Malaysia melalui dialog atau kerjasama negara anggota. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan mengekalkan pengiktirafan negara luar terhadap Malaysia."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 168–169. Murid membina carta pelibatan Malaysia melalui dialog atau kerjasama negara anggota. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan mengekalkan pengiktirafan negara luar terhadap Malaysia."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3824,6 +4184,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "168–169",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3873,11 +4245,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membezakan peranan PBB daripada organisasi ASEAN, Komanwel dan OIC. Guru menyemak jawapan awal berpandukan 12.4.5."
+          "activity": "Guru membimbing semakan bukti hlm. 170–172: Malaysia dalam PBB serta peranan keselamatan dan kerjasama. Murid membezakan peranan PBB daripada organisasi ASEAN, Komanwel dan OIC. Guru menyemak jawapan awal berpandukan 12.4.5."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid menerangkan satu penglibatan Malaysia dalam usaha antarabangsa berdasarkan sumber bertarikh. Guru membimbing pembetulan salah faham menggunakan bukti."
+          "activity": "Guru menyoal bukti konkrit hlm. 170–172 untuk menguji dapatan murid. Murid menerangkan satu penglibatan Malaysia dalam usaha antarabangsa berdasarkan sumber bertarikh. Guru membimbing pembetulan salah faham menggunakan bukti."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3929,6 +4301,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "170–172",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3990,11 +4374,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina persoalan kajian tentang cara Malaysia menyumbang di peringkat dunia. Guru menyemak jawapan awal berpandukan 12.4.1."
+          "activity": "Guru membimbing semakan bukti hlm. 162–172: Kajian kes cadangan tentang kerjasama Malaysia dalam organisasi. Murid membina persoalan kajian tentang cara Malaysia menyumbang di peringkat dunia. Guru menyemak jawapan awal berpandukan 12.4.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid membandingkan bukti pelibatan dalam dua organisasi dan menyimpulkan faedah kerjasama. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menjalinkan hubungan baik dengan negara luar."
+          "activity": "Guru meminta dua bukti dari hlm. 162–172 bagi menyokong perbandingan. Murid membandingkan bukti pelibatan dalam dua organisasi dan menyimpulkan faedah kerjasama. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menjalinkan hubungan baik dengan negara luar."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -4047,6 +4431,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "162–172",
+          "sources": [
+            "https://fliphtml5.com/itcew/pnmn"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {

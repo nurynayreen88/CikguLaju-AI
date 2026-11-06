@@ -503,11 +503,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid melengkapkan profil rekaan dan menandakan hubungan dalam dua carta keluarga. Guru menyemak jawapan awal berpandukan 1.2.1."
+          "activity": "Guru membimbing semakan bukti hlm. 18–21: biodata dan contoh peta minda. Murid melengkapkan profil rekaan dan menandakan hubungan dalam dua carta keluarga. Guru menyemak jawapan awal berpandukan 1.2.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 2. Murid membandingkan ciri keluarga asas dengan keluarga kembangan melalui dua contoh. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menunjuk cara adab yang perlu diamalkan dalam keluarga."
+          "activity": "Guru meminta dua bukti dari hlm. 18–21 bagi menyokong perbandingan. Murid membandingkan ciri keluarga asas dengan keluarga kembangan melalui dua contoh. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menunjuk cara adab yang perlu diamalkan dalam keluarga."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -559,6 +559,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "18–21",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -614,11 +626,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan peranan beberapa anggota keluarga dengan situasi rumah. Guru menyemak jawapan awal berpandukan 1.2.3."
+          "activity": "Guru membimbing semakan bukti hlm. 22–23: Buku menghuraikan peranan ibu bapa dan anak-anak serta aktiviti. Murid memadankan peranan beberapa anggota keluarga dengan situasi rumah. Guru menyemak jawapan awal berpandukan 1.2.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 2. Murid menyusun jadual persamaan dan perbezaan peranan lalu menjelaskan amalan menghormati semua anggota. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan menghormati peranan setiap ahli keluarga."
+          "activity": "Guru meminta murid memeriksa urutan dan fakta pada hlm. 22–23. Murid menyusun jadual persamaan dan perbezaan peranan lalu menjelaskan amalan menghormati semua anggota. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan menghormati peranan setiap ahli keluarga."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -669,6 +681,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "22–23",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -724,11 +748,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun peristiwa perkembangan mengikut urutan usia dan menanda selang masa. Guru menyemak jawapan awal berpandukan 1.2.4."
+          "activity": "Guru membimbing semakan bukti hlm. 24: riwayat perkembangan diri dalam bentuk garis masa, peristiwa. Murid menyusun peristiwa perkembangan mengikut urutan usia dan menanda selang masa. Guru menyemak jawapan awal berpandukan 1.2.4."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 2. Murid menghasilkan garis masa diri dengan pilihan butiran tidak sensitif atau watak rekaan dan menerangkan perubahannya. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan akhlak yang mulia untuk mewujudkan hubungan kekeluargaan yang harmoni."
+          "activity": "Guru meminta murid memeriksa urutan dan fakta pada hlm. 24. Murid menghasilkan garis masa diri dengan pilihan butiran tidak sensitif atau watak rekaan dan menerangkan perubahannya. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan akhlak yang mulia untuk mewujudkan hubungan kekeluargaan yang harmoni."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -779,6 +803,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "24",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -840,11 +876,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menandakan lokasi sekolah pada peta setempat tanpa mendedahkan alamat rumah murid. Guru menyemak jawapan awal berpandukan 1.3.1."
+          "activity": "Guru membimbing semakan bukti hlm. 32–35: Nama, alamat, lokasi sekolah dan mercu tanda melalui peta serta. Murid menandakan lokasi sekolah pada peta setempat tanpa mendedahkan alamat rumah murid. Guru menyemak jawapan awal berpandukan 1.3.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid melakar pelan ringkas ruang sekolah dan menamakan peranan satu kemudahan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan tanggungjawab murid terhadap sekolah."
+          "activity": "Guru menyoal bukti konkrit hlm. 32–35 untuk menguji dapatan murid. Murid melakar pelan ringkas ruang sekolah dan menamakan peranan satu kemudahan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan tanggungjawab murid terhadap sekolah."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -896,6 +932,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "32–35",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -951,11 +999,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun dua atau tiga peristiwa sekolah berdasarkan sumber bertarikh. Guru menyemak jawapan awal berpandukan 1.3.3."
+          "activity": "Guru membimbing semakan bukti hlm. 36–37: Sejarah sekolah, garis masa perubahan bangunan dan bukti. Murid menyusun dua atau tiga peristiwa sekolah berdasarkan sumber bertarikh. Guru menyemak jawapan awal berpandukan 1.3.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid menghasilkan kapsyen peristiwa sekolah dan menyatakan jasa warga sekolah yang relevan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan mengiktiraf jasa dan sumbangan sekolah kepada diri serta masyarakat."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 36–37. Murid menghasilkan kapsyen peristiwa sekolah dan menyatakan jasa warga sekolah yang relevan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan mengiktiraf jasa dan sumbangan sekolah kepada diri serta masyarakat."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1006,6 +1054,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "36–37",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1061,11 +1121,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengkategorikan maklumat sekolah seperti lokasi, pentadbiran, simbol dan pencapaian. Guru menyemak jawapan awal berpandukan 1.3.4."
+          "activity": "Guru membimbing semakan bukti hlm. 38–40: Lencana, bendera, lagu, cogan kata serta carta organisasi. Murid mengkategorikan maklumat sekolah seperti lokasi, pentadbiran, simbol dan pencapaian. Guru menyemak jawapan awal berpandukan 1.3.4."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid menyediakan kad profil sekolah menggunakan sumber yang diberi guru, tanpa data peribadi. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan sekolah sebagai sebuah institusi yang membina masyarakat dan negara."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 38–40. Murid menyediakan kad profil sekolah menggunakan sumber yang diberi guru, tanpa data peribadi. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan sekolah sebagai sebuah institusi yang membina masyarakat dan negara."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1116,6 +1176,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "38–40",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1177,11 +1249,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina persoalan inkuiri tentang perubahan sekolah dan jadual dua sumber. Guru menyemak jawapan awal berpandukan 1.3.1."
+          "activity": "Guru membimbing semakan bukti hlm. 32–40: Sumber lokasi, identiti dan sejarah sekolah sebagai bahan. Murid membina persoalan inkuiri tentang perubahan sekolah dan jadual dua sumber. Guru menyemak jawapan awal berpandukan 1.3.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 3. Murid membandingkan keadaan sekolah dahulu dan kini serta membentang dapatan dan batas bukti. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan tanggungjawab murid terhadap sekolah."
+          "activity": "Guru meminta dua bukti dari hlm. 32–40 bagi menyokong perbandingan. Murid membandingkan keadaan sekolah dahulu dan kini serta membentang dapatan dan batas bukti. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan tanggungjawab murid terhadap sekolah."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1233,6 +1305,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "32–40",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1294,11 +1378,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mencari kedudukan kawasan tempat tinggal pada peta umum tanpa alamat rumah individu. Guru menyemak jawapan awal berpandukan 1.4.1."
+          "activity": "Guru membimbing semakan bukti hlm. 46–49: Maklumat kawasan tempat tinggal dan contoh bentuk bumi tanah. Murid mencari kedudukan kawasan tempat tinggal pada peta umum tanpa alamat rumah individu. Guru menyemak jawapan awal berpandukan 1.4.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid mengaitkan bentuk muka bumi seperti sungai, bukit atau dataran dengan ciri kawasan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menjaga kemudahan awam di tempat tinggal."
+          "activity": "Guru meminta dua bukti dari hlm. 46–49 bagi menyokong perbandingan. Murid mengaitkan bentuk muka bumi seperti sungai, bukit atau dataran dengan ciri kawasan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menjaga kemudahan awam di tempat tinggal."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1350,6 +1434,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "46–49",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1405,11 +1501,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengenal pasti satu perubahan setempat melalui sumber yang bertarikh. Guru menyemak jawapan awal berpandukan 1.4.3."
+          "activity": "Guru membimbing semakan bukti hlm. 50–51: Contoh perubahan nama tempat Tanjung Puteri kepada Johor Bahru. Murid mengenal pasti satu perubahan setempat melalui sumber yang bertarikh. Guru menyemak jawapan awal berpandukan 1.4.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid menyusun kronologi kawasan dan menjelaskan bagaimana kemudahan berkembang. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan menjaga kebersihan dan keindahan di tempat tinggal."
+          "activity": "Guru meminta murid memeriksa urutan dan fakta pada hlm. 50–51. Murid menyusun kronologi kawasan dan menjelaskan bagaimana kemudahan berkembang. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan menjaga kebersihan dan keindahan di tempat tinggal."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1460,6 +1556,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "50–51",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1515,11 +1623,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyaring sumbangan tokoh setempat daripada petikan dan foto sumber. Guru menyemak jawapan awal berpandukan 1.4.4."
+          "activity": "Guru membimbing semakan bukti hlm. 52–54: Takrif tokoh setempat, contoh malim gunung, guru dan usahawan. Murid menyaring sumbangan tokoh setempat daripada petikan dan foto sumber. Guru menyemak jawapan awal berpandukan 1.4.4."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 4. Murid menghasilkan poster tokoh yang membezakan biografi daripada sumbangan kepada masyarakat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan sikap menghargai kawasan tempat tinggal."
+          "activity": "Guru meminta dua bukti dari hlm. 52–54 bagi menyokong perbandingan. Murid menghasilkan poster tokoh yang membezakan biografi daripada sumbangan kepada masyarakat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan sikap menghargai kawasan tempat tinggal."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1570,6 +1678,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "52–54",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1631,11 +1751,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membezakan maksud Zaman Air Batu dengan dua ciri keadaan bumi. Guru menyemak jawapan awal berpandukan 2.1.1."
+          "activity": "Guru membimbing semakan bukti hlm. 60–63: Epok Pleistosen/Holosen, pengertian dan garis masa Zaman Air. Murid membezakan maksud Zaman Air Batu dengan dua ciri keadaan bumi. Guru menyemak jawapan awal berpandukan 2.1.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 5. Murid menyusun garis masa perubahan suhu, pencairan ais dan kenaikan paras laut secara berperingkat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan mengambil iktibar perubahan zaman dalam kehidupan manusia."
+          "activity": "Guru meminta murid memeriksa urutan dan fakta pada hlm. 60–63. Murid menyusun garis masa perubahan suhu, pencairan ais dan kenaikan paras laut secara berperingkat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan mengambil iktibar perubahan zaman dalam kehidupan manusia."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1687,6 +1807,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "60–63",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1742,11 +1874,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menandakan ciri Zaman Air Batu Akhir pada jadual sebelum/selepas. Guru menyemak jawapan awal berpandukan 2.1.3."
+          "activity": "Guru membimbing semakan bukti hlm. 64–65: Perubahan suhu, pencairan, bentuk bumi dan habitat. Murid menandakan ciri Zaman Air Batu Akhir pada jadual sebelum/selepas. Guru menyemak jawapan awal berpandukan 2.1.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 5. Murid membuat inferens berasaskan rajah tentang perubahan habitat apabila suhu meningkat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan langkah memelihara dan memulihara alam sekitar."
+          "activity": "Guru menyoal bukti konkrit hlm. 64–65 untuk menguji dapatan murid. Murid membuat inferens berasaskan rajah tentang perubahan habitat apabila suhu meningkat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan langkah memelihara dan memulihara alam sekitar."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1797,6 +1929,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "64–65",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1852,11 +1996,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid melabel kawasan daratan bersambung dalam peta Pentas Sunda. Guru menyemak jawapan awal berpandukan 2.1.4."
+          "activity": "Guru membimbing semakan bukti hlm. 66–67: Kesan paras laut terhadap Pentas Sunda, perpindahan. Murid melabel kawasan daratan bersambung dalam peta Pentas Sunda. Guru menyemak jawapan awal berpandukan 2.1.4."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 5. Murid menerangkan hubungan kenaikan paras laut, pulau, sungai dan pergerakan manusia/haiwan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan usaha mengekalkan kelestarian alam sekitar."
+          "activity": "Guru menyoal bukti konkrit hlm. 66–67 untuk menguji dapatan murid. Murid menerangkan hubungan kenaikan paras laut, pulau, sungai dan pergerakan manusia/haiwan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan usaha mengekalkan kelestarian alam sekitar."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -1907,6 +2051,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "66–67",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -1968,11 +2124,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyatakan maksud Zaman Prasejarah melalui petunjuk ketiadaan tulisan. Guru menyemak jawapan awal berpandukan 3.1.1."
+          "activity": "Guru membimbing semakan bukti hlm. 74–77: Takrif Zaman Prasejarah dan peta Bukit Jawa, Gua Niah, Bukit. Murid menyatakan maksud Zaman Prasejarah melalui petunjuk ketiadaan tulisan. Guru menyemak jawapan awal berpandukan 3.1.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 6. Murid mengenal pasti lokasi tapak prasejarah dalam peta dan mencatat bukti artifak untuk setiap lokasi. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan memulihara artifak Zaman Prasejarah."
+          "activity": "Guru menyoal bukti konkrit hlm. 74–77 untuk menguji dapatan murid. Murid mengenal pasti lokasi tapak prasejarah dalam peta dan mencatat bukti artifak untuk setiap lokasi. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan memulihara artifak Zaman Prasejarah."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2024,6 +2180,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "74–77",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2079,11 +2247,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan aktiviti sosial serta ekonomi bagi beberapa tahap zaman prasejarah. Guru menyemak jawapan awal berpandukan 3.1.3."
+          "activity": "Guru membimbing semakan bukti hlm. 78–79: Perbandingan sosial/ekonomi zaman Paleolitik, Mesolitik. Murid mengelaskan aktiviti sosial serta ekonomi bagi beberapa tahap zaman prasejarah. Guru menyemak jawapan awal berpandukan 3.1.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 6. Murid membanding perubahan cara hidup memburu, mengumpul hasil, bercucuk tanam dan menetap. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan sikap bersedia untuk menghadapi perubahan persekitaran."
+          "activity": "Guru menyoal bukti konkrit hlm. 78–79 untuk menguji dapatan murid. Murid membanding perubahan cara hidup memburu, mengumpul hasil, bercucuk tanam dan menetap. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan sikap bersedia untuk menghadapi perubahan persekitaran."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2134,6 +2302,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "78–79",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2189,11 +2369,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan alat prasejarah dengan fungsi dan keperluan manusia ketika itu. Guru menyemak jawapan awal berpandukan 3.1.4."
+          "activity": "Guru membimbing semakan bukti hlm. 80–82: Teknologi prasejarah ke kini: pertanian, komunikasi. Murid memadankan alat prasejarah dengan fungsi dan keperluan manusia ketika itu. Guru menyemak jawapan awal berpandukan 3.1.4."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 6. Murid membina carta dahulu–kini yang menjelaskan kesinambungan inovasi serta kesesuaian bukti. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan sumbangan Zaman Prasejarah terhadap peradaban negara."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 80–82. Murid membina carta dahulu–kini yang menjelaskan kesinambungan inovasi serta kesesuaian bukti. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan sumbangan Zaman Prasejarah terhadap peradaban negara."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2244,6 +2424,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "80–82",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2305,11 +2497,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menggubal persoalan kajian tentang bagaimana artifak menunjukkan kehidupan prasejarah. Guru menyemak jawapan awal berpandukan 3.1.1."
+          "activity": "Guru membimbing semakan bukti hlm. 74–84: Kajian kes cadangan guru daripada lokasi dan artifak prasejarah. Murid menggubal persoalan kajian tentang bagaimana artifak menunjukkan kehidupan prasejarah. Guru menyemak jawapan awal berpandukan 3.1.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 6. Murid menilai dua jenis bukti, membezakan fakta dengan inferens dan membentang rumusan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan memulihara artifak Zaman Prasejarah."
+          "activity": "Guru meminta dua bukti dari hlm. 74–84 bagi menyokong perbandingan. Murid menilai dua jenis bukti, membezakan fakta dengan inferens dan membentang rumusan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan memulihara artifak Zaman Prasejarah."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2361,6 +2553,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "74–84",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2422,11 +2626,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan nama kerajaan awal dengan kedudukan pada peta serantau. Guru menyemak jawapan awal berpandukan 4.1.1."
+          "activity": "Guru membimbing semakan bukti hlm. 88–91: Kerajaan Melayu awal mengikut kronologi dan peta kedudukan. Murid memadankan nama kerajaan awal dengan kedudukan pada peta serantau. Guru menyemak jawapan awal berpandukan 4.1.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid membina peta berlabel serta menyatakan kepentingan lokasi laluan maritim. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan menjalin hubungan diplomatik."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 88–91. Murid membina peta berlabel serta menyatakan kepentingan lokasi laluan maritim. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan menjalin hubungan diplomatik."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2478,6 +2682,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "88–91",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2533,11 +2749,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengasingkan contoh hubungan diplomatik daripada pertukaran perdagangan. Guru menyemak jawapan awal berpandukan 4.1.3."
+          "activity": "Guru membimbing semakan bukti hlm. 92–94: Hubungan diplomatik kerajaan awal dengan China dan India. Murid mengasingkan contoh hubungan diplomatik daripada pertukaran perdagangan. Guru menyemak jawapan awal berpandukan 4.1.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid menyusun rajah hubungan kerajaan awal dengan kuasa luar dan menjelaskan tujuan hubungan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan perdagangan jalan laut kepada negara."
+          "activity": "Guru meminta murid memeriksa urutan dan fakta pada hlm. 92–94. Murid menyusun rajah hubungan kerajaan awal dengan kuasa luar dan menjelaskan tujuan hubungan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan perdagangan jalan laut kepada negara."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2588,6 +2804,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "92–94",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2643,11 +2871,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan hasil ekonomi kerajaan awal seperti pertanian, perdagangan dan hasil hutan. Guru menyemak jawapan awal berpandukan 4.1.4."
+          "activity": "Guru membimbing semakan bukti hlm. 95–98: Kegiatan pertanian, perdagangan, hasil hutan/laut, perlombongan. Murid mengelaskan hasil ekonomi kerajaan awal seperti pertanian, perdagangan dan hasil hutan. Guru menyemak jawapan awal berpandukan 4.1.4."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid melakar laluan barang dari kawasan pengeluaran ke pusat perdagangan dan menjelaskan kepentingannya. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan sumbangan Kerajaan Melayu Awal terhadap ekonomi negara."
+          "activity": "Guru menyoal bukti konkrit hlm. 95–98 untuk menguji dapatan murid. Murid melakar laluan barang dari kawasan pengeluaran ke pusat perdagangan dan menjelaskan kepentingannya. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan sumbangan Kerajaan Melayu Awal terhadap ekonomi negara."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2698,6 +2926,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "95–98",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2759,11 +2999,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid melengkapkan struktur masyarakat pemerintah dan diperintah serta mendefinisi tokoh terbilang. Guru menyemak jawapan awal berpandukan 5.1.1."
+          "activity": "Guru membimbing semakan bukti hlm. 106–109: Struktur pemerintah/diperintah dan ciri tokoh terbilang Melaka. Murid melengkapkan struktur masyarakat pemerintah dan diperintah serta mendefinisi tokoh terbilang. Guru menyemak jawapan awal berpandukan 5.1.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 8. Murid menilai mengapa peranan tertentu dianggap penting dalam sejarah Melaka. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan mencontohi nilai murni tokoh terbilang."
+          "activity": "Guru meminta dua bukti dari hlm. 106–109 bagi menyokong perbandingan. Murid menilai mengapa peranan tertentu dianggap penting dalam sejarah Melaka. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan mencontohi nilai murni tokoh terbilang."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2815,6 +3055,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "106–109",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2870,11 +3122,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan tugas tiga jawatan utama mengikut bidang kuasa. Guru menyemak jawapan awal berpandukan 5.1.3."
+          "activity": "Guru membimbing semakan bukti hlm. 110–115: Peranan Sultan, Bendahara, Laksamana. Murid mengelaskan tugas tiga jawatan utama mengikut bidang kuasa. Guru menyemak jawapan awal berpandukan 5.1.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 8. Murid melakonkan mesyuarat istana ringkas dengan tugas setiap jawatan yang tepat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan menghargai sumbangan tokoh."
+          "activity": "Guru menyediakan soalan semak fakta hlm. 110–115 sebelum pembentangan. Murid melakonkan mesyuarat istana ringkas dengan tugas setiap jawatan yang tepat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan menghargai sumbangan tokoh."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -2925,6 +3177,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "110–115",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -2974,11 +3238,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memilih dua sifat tokoh yang boleh dicontohi berdasarkan tindakan bersumber. Guru menyemak jawapan awal berpandukan 5.1.4."
+          "activity": "Guru membimbing semakan bukti hlm. 109, 117–119: Perbincangan menghargai keistimewaan tokoh dan nilai. Murid memilih dua sifat tokoh yang boleh dicontohi berdasarkan tindakan bersumber. Guru menyemak jawapan awal berpandukan 5.1.4."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 8. Murid menghasilkan kad penghargaan yang menyatakan sumbangan serta kaitan dengan tanggungjawab hari ini. Guru membimbing pembetulan salah faham menggunakan bukti."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 109, 117–119. Murid menghasilkan kad penghargaan yang menyatakan sumbangan serta kaitan dengan tanggungjawab hari ini. Guru membimbing pembetulan salah faham menggunakan bukti."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3029,6 +3293,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "109, 117–119",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3090,11 +3366,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun rentetan perjalanan pengasas Kesultanan Melayu Melaka mengikut kronologi. Guru menyemak jawapan awal berpandukan 5.2.1."
+          "activity": "Guru membimbing semakan bukti hlm. 122–125: Sulalatus Salatin dan Suma Oriental tentang pengasas Melaka. Murid menyusun rentetan perjalanan pengasas Kesultanan Melayu Melaka mengikut kronologi. Guru menyemak jawapan awal berpandukan 5.2.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid melakar laluan perpindahan pada peta dan menghuraikan keadaan yang mendorong pilihan lokasi. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan sifat-sifat kepimpinan tokoh yang boleh dicontohi."
+          "activity": "Guru menyoal bukti konkrit hlm. 122–125 untuk menguji dapatan murid. Murid melakar laluan perpindahan pada peta dan menghuraikan keadaan yang mendorong pilihan lokasi. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan sifat-sifat kepimpinan tokoh yang boleh dicontohi."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3146,6 +3422,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "122–125",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3201,11 +3489,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengenal pasti peristiwa utama pembukaan Melaka menurut buku teks. Guru menyemak jawapan awal berpandukan 5.2.3."
+          "activity": "Guru membimbing semakan bukti hlm. 126–127: Pembukaan Melaka di Sungai Bertam dan naratif pelanduk putih. Murid mengenal pasti peristiwa utama pembukaan Melaka menurut buku teks. Guru menyemak jawapan awal berpandukan 5.2.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid menghasilkan urutan gambar peristiwa dan menilai faktor strategik lokasi Melaka. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan sumbangan pengasas Kesultanan Melayu Melaka."
+          "activity": "Guru meminta dua bukti dari hlm. 126–127 bagi menyokong perbandingan. Murid menghasilkan urutan gambar peristiwa dan menilai faktor strategik lokasi Melaka. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan sumbangan pengasas Kesultanan Melayu Melaka."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3256,6 +3544,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "126–127",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3311,11 +3611,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membezakan kandungan cerita dalam dua sumber dengan mencatat persamaan. Guru menyemak jawapan awal berpandukan 5.2.4."
+          "activity": "Guru membimbing semakan bukti hlm. 128–131: Asal usul nama Melaka menurut sumber tempatan, Arab dan India. Murid membezakan kandungan cerita dalam dua sumber dengan mencatat persamaan. Guru menyemak jawapan awal berpandukan 5.2.4."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid menyediakan jadual tafsiran berbeza tanpa menetapkan cerita legenda sebagai bukti tunggal. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan sikap taat setia kepada raja dan negara."
+          "activity": "Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 128–131. Murid menyediakan jadual tafsiran berbeza tanpa menetapkan cerita legenda sebagai bukti tunggal. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan sikap taat setia kepada raja dan negara."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3366,6 +3666,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "128–131",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3427,11 +3739,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menggubal soalan kajian tentang mengapa lokasi Melaka dipilih. Guru menyemak jawapan awal berpandukan 5.2.1."
+          "activity": "Guru membimbing semakan bukti hlm. 122–131: Kajian kes cadangan guru membanding sumber pengasas, legenda. Murid menggubal soalan kajian tentang mengapa lokasi Melaka dipilih. Guru menyemak jawapan awal berpandukan 5.2.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid membandingkan keterangan sumber lalu membina kronologi dan simpulan yang menandakan unsur legenda. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan sifat-sifat kepimpinan tokoh yang boleh dicontohi."
+          "activity": "Guru meminta dua bukti dari hlm. 122–131 bagi menyokong perbandingan. Murid membandingkan keterangan sumber lalu membina kronologi dan simpulan yang menandakan unsur legenda. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan sifat-sifat kepimpinan tokoh yang boleh dicontohi."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3483,6 +3795,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "122–131",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3549,11 +3873,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina garis masa ringkas latar hidup Tun Perak berpandukan sumber. Guru menyemak jawapan awal berpandukan 5.3.1."
+          "activity": "Guru membimbing semakan bukti hlm. 140–145: Riwayat Tun Perak dan tugas ketua pembesar, penasihat, diplomat. Murid membina garis masa ringkas latar hidup Tun Perak berpandukan sumber. Guru menyemak jawapan awal berpandukan 5.3.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid menghubungkan peranan Bendahara dengan kebijaksanaan pentadbiran menggunakan bukti peristiwa. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengambarkan cara menyatakan penghargaan terhadap jasa dan sumbangan Tun Perak."
+          "activity": "Guru meminta dua bukti dari hlm. 140–145 bagi menyokong perbandingan. Murid menghubungkan peranan Bendahara dengan kebijaksanaan pentadbiran menggunakan bukti peristiwa. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengambarkan cara menyatakan penghargaan terhadap jasa dan sumbangan Tun Perak."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3605,6 +3929,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "140–145",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3660,11 +3996,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan keputusan politik, pertahanan dan diplomasi Tun Perak. Guru menyemak jawapan awal berpandukan 5.3.3."
+          "activity": "Guru membimbing semakan bukti hlm. 146–148: Strategi jamung Tun Perak, hubungan dengan Siam dan keputusan. Murid mengelaskan keputusan politik, pertahanan dan diplomasi Tun Perak. Guru menyemak jawapan awal berpandukan 5.3.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid menilai kesan keputusan tersebut terhadap kegemilangan Melaka melalui peta sebab-akibat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan nilai kepimpinan Tun Perak yang boleh dicontohi."
+          "activity": "Guru meminta dua bukti dari hlm. 146–148 bagi menyokong perbandingan. Murid menilai kesan keputusan tersebut terhadap kegemilangan Melaka melalui peta sebab-akibat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan nilai kepimpinan Tun Perak yang boleh dicontohi."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3715,6 +4051,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "146–148",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3781,11 +4129,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun peristiwa utama riwayat Hang Tuah menurut sumber. Guru menyemak jawapan awal berpandukan 5.4.1."
+          "activity": "Guru membimbing semakan bukti hlm. 156–159: Riwayat Hang Tuah berasaskan hikayat, ciri jujur, amanah. Murid menyusun peristiwa utama riwayat Hang Tuah menurut sumber. Guru menyemak jawapan awal berpandukan 5.4.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 11. Murid mengenal pasti kualiti diri yang digambarkan dalam naratif dan membezakan teladan dengan kepastian sejarah. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mencontohi kesetiaan Hang Tuah sebagai Laksamana Melaka."
+          "activity": "Guru meminta dua bukti dari hlm. 156–159 bagi menyokong perbandingan. Murid mengenal pasti kualiti diri yang digambarkan dalam naratif dan membezakan teladan dengan kepastian sejarah. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mencontohi kesetiaan Hang Tuah sebagai Laksamana Melaka."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3837,6 +4185,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "156–159",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -3892,11 +4252,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengkategorikan peranan Hang Tuah dalam pertahanan, diplomasi dan kesetiaan. Guru menyemak jawapan awal berpandukan 5.4.3."
+          "activity": "Guru membimbing semakan bukti hlm. 160–162: Peranan Hang Tuah menjaga perairan dan pedagang serta mengetuai. Murid mengkategorikan peranan Hang Tuah dalam pertahanan, diplomasi dan kesetiaan. Guru menyemak jawapan awal berpandukan 5.4.3."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 11. Murid membincangkan kesan peranannya serta batas sumber hikayat terhadap fakta sejarah. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kebijaksanaan tokoh dalam menyelesaikan sesuatu masalah."
+          "activity": "Guru menyoal bukti konkrit hlm. 160–162 untuk menguji dapatan murid. Murid membincangkan kesan peranannya serta batas sumber hikayat terhadap fakta sejarah. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kebijaksanaan tokoh dalam menyelesaikan sesuatu masalah."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -3947,6 +4307,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "160–162",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
@@ -4008,11 +4380,11 @@
         },
         "aktiviti_1": {
           "min": 20,
-          "activity": "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menggubal soalan inkuiri tentang nilai kepimpinan Hang Tuah dan jenis sumber. Guru menyemak jawapan awal berpandukan 5.4.1."
+          "activity": "Guru membimbing semakan bukti hlm. 156–167: Kajian kes cadangan guru yang membezakan hikayat Hang Tuah. Murid menggubal soalan inkuiri tentang nilai kepimpinan Hang Tuah dan jenis sumber. Guru menyemak jawapan awal berpandukan 5.4.1."
         },
         "aktiviti_2": {
           "min": 20,
-          "activity": "Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 11. Murid membandingkan fakta, legenda dan inferens kemudian membentang dua pengajaran yang beralasan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mencontohi kesetiaan Hang Tuah sebagai Laksamana Melaka."
+          "activity": "Guru meminta dua bukti dari hlm. 156–167 bagi menyokong perbandingan. Murid membandingkan fakta, legenda dan inferens kemudian membentang dua pengajaran yang beralasan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mencontohi kesetiaan Hang Tuah sebagai Laksamana Melaka."
         },
         "pengukuhan_pbd": {
           "min": 10,
@@ -4064,6 +4436,18 @@
           "exact_textbook_exercise_checked": false,
           "teacher_approval": false,
           "quality_state": "DRAF_EDITORIAL_KONTEKS_SP"
+        },
+        "page_specific_evidence": {
+          "level": "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE",
+          "pages": "156–167",
+          "sources": [
+            "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/"
+          ],
+          "teacher_validated": false,
+          "actual_textbook_visual_page_checked": false,
+          "exact_textbook_activity_approved": false,
+          "textbook_html_page_text_read": false,
+          "primary_textbook_page_text_checked": true
         }
       },
       "weeks": {
