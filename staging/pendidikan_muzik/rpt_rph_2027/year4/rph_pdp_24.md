@@ -20,9 +20,9 @@
 
 **Penutup (2 minit):** Dua pasangan berkongsi satu jawapan melodi; murid menyebut perbezaan antara pola soalan dan jawapan sebelum guru memberi maklum balas PBD.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK m/s 82–84, empat kad notasi bagi setiap kumpulan, kad B/A/G, papan baluk dan rekoder.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK m/s 82–83, empat kad notasi bagi setiap kumpulan, kad B/A/G, papan baluk dan rekoder.
 
-**Rujukan buku teks:** m/s 82–84 bagi contoh soalan-jawapan dan permainan Cipta Melodi dalam Buku Teks Pendidikan Kesenian Tahun 4 (RPT lama hanya menyebut m/s 82). **Semakan teks unit/aktiviti dibuat, tetapi halaman penuh belum disahkan secara visual.** Sumber: https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view
+**Rujukan buku teks:** m/s 82–83 bagi contoh soalan-jawapan dan permainan Cipta Melodi dalam Buku Teks Pendidikan Kesenian Tahun 4 (RPT lama hanya menyebut m/s 82). **Semakan visual halaman 82–83 dibuat pada 6 November 2026: contoh skor soalan/jawapan dan permainan empat kad notasi diperiksa. Halaman 84 ialah unit Seni Visual Kota Ceria, bukan kandungan PdP Muzik ini.** Sumber: https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view
 
 **Rujukan audio bercetak:** 90–92. **Belum disahkan sama ada fail trek tersedia atau sepadan dengan laluan penghantaran.**
 
