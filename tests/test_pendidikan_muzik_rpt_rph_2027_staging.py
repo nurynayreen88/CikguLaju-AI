@@ -442,6 +442,10 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
                     matched += 1
                     self.assertEqual(criterion, overlay[ident]["criterion"])
                     self.assertEqual(overlay[ident]["approval"], "DRAF_EDITORIAL_BELUM_DISAHKAN")
+                    self.assertFalse(
+                        re.search(r"(?i)\\b(?:belum disahkan|menunggu penyelarasan|tertakluk semakan|kod SP|RPT lama)\\b", criterion),
+                        f"Internal source-audit caveat must not leak into pedagogical criteria for {ident}"
+                    )
                     self.assertIn("EDITORIAL_DRAFT_CRITERION_OVERLAY_NOT_APPROVED", result["warnings"])
                 else:
                     self.assertNotIn("EDITORIAL_DRAFT_CRITERION_OVERLAY_NOT_APPROVED", result["warnings"])
