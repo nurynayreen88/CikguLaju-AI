@@ -14,7 +14,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan kad cerita tujuan sambutan beberapa perayaan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 6: Perayaan Masyarakat di Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 96–98: Tujuan sambutan dan nilai kekeluargaan, kejiranan serta. Murid memadankan tujuan sambutan dengan tradisi perayaan yang sepadan. Guru menyemak jawapan awal berpandukan 11.3.2.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 96–98: Tujuan sambutan dan nilai kekeluargaan, kejiranan serta perpaduan. Murid memadankan tujuan sambutan dengan tradisi perayaan yang sepadan. Guru menyemak jawapan awal berpandukan 11.3.2.
 
 **Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 96–98 bagi menyokong perbandingan. Murid membandingkan nilai kekeluargaan, kesyukuran dan kebersamaan dalam dua perayaan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan menghormati kepelbagaian sambutan dan adab perayaan.
 
