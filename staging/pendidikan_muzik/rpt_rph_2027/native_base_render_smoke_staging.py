@@ -193,17 +193,25 @@ def audit_one(year, pdp, fmt, preview, parse_input, writer, word_output_dir=None
         for code in meta["Standard Pembelajaran"].split("; "):
             if code not in text:
                 raise RuntimeError("PDF lost source SP code: " + code)
-        # PDF extraction can vary in whitespace/newline wrapping; compare a
-        # meaningful source prefix for each essential pedagogical field.
+        # Text extraction may wrap at word boundaries. Check beginning,
+        # middle AND end of each pedagogical field instead of accepting just
+        # the first five words (which can hide a truncated assessment).
         text_compact = " ".join(text.split()).casefold()
         for label in ("OBJEKTIF PEMBELAJARAN", "KRITERIA KEJAYAAN",
                       "BAHAN BANTU MENGAJAR", "PENTAKSIRAN"):
             source_text = " ".join(str(meta[label]).split())
             if not source_text or source_text == "—":
                 raise RuntimeError("Missing source pedagogical field: " + label)
-            probe = " ".join(normalize_for_legacy_doc(source_text).split()[:5]).casefold()
-            if probe not in text_compact:
-                raise RuntimeError("PDF missing pedagogical text " + label + ": " + probe)
+            words = normalize_for_legacy_doc(source_text).split()
+            window = min(4, len(words))
+            offsets = sorted({0, (len(words) - window) // 2, len(words) - window})
+            for offset in offsets:
+                probe = " ".join(words[offset:offset + window]).casefold()
+                if probe not in text_compact:
+                    raise RuntimeError(
+                        f"PDF missing/truncated {label} at words {offset + 1}-"
+                        f"{offset + window}: {probe!r}"
+                    )
         if "DRAF STAGING" in text or "Kawalan penerbitan" in text:
             raise RuntimeError("Technical staging audit note leaked into PDF")
         box = reader.pages[0].mediabox
