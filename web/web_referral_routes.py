@@ -71,11 +71,44 @@ def capture_after_verified_login(uid):
     try:
         result = _rest("POST", "rpc/referral_capture_signup",
                        body={"p_referred_user_id": uid, "p_referral_code": code})
-        return isinstance(result, dict) and result.get("captured") is True
+        captured = isinstance(result, dict) and result.get("captured") is True
+        if captured:
+            # Already persisted once by the existing atomic signup RPC. Never
+            # notify for old users or repeat logins.
+            try:
+                _notify_admin_new_web_referral(uid)
+            except Exception as exc:
+                print("WEB REFERRAL admin notice deferred:", type(exc).__name__, flush=True)
+        return captured
     except Exception as exc:
         # Never log credentials/codes or interfere with the login session.
         print("WEB REFERRAL capture temporarily unavailable:", type(exc).__name__, flush=True)
         return False
+
+
+def _notify_admin_new_web_referral(uid):
+    """Only sent after a successful brand-new referral capture in Supabase."""
+    from urllib.parse import urlsplit
+    from urllib.error import URLError, HTTPError
+    base = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_URL", "").strip()
+    token = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_TOKEN", "")
+    parts = urlsplit(base)
+    if (parts.scheme != "https" or not parts.hostname or parts.port is not None
+            or parts.username or parts.password or parts.path not in ("", "/")
+            or parts.query or parts.fragment or len(token) < 32):
+        raise RuntimeError("Telegram authoritative API unavailable")
+    body = json.dumps({"telegram_user_id": uid}).encode("utf-8")
+    req = Request(base.rstrip("/") + "/internal/referral/v1/new-web-signup-notify",
+                  data=body, method="POST", headers={
+                      "Authorization": "Bearer " + token,
+                      "Content-Type": "application/json",
+                      "Accept": "application/json",
+                  })
+    with urlopen(req, timeout=10) as response:
+        if response.status != 200:
+            raise RuntimeError("Telegram admin notification unavailable")
+        message = json.loads(response.read(2048))
+        return message.get("notified") is True
 
 
 def _auth_uid():
