@@ -1,0 +1,91 @@
+{
+  "title": "Sains RPT 2027 — official group-level academic calendar windows (not PdP assignments)",
+  "audited_on": "2026-11-06",
+  "status": "GROUP_PERIODS_CONFIRMED__STATE_DATES_AND_CLASS_TIMETABLE_PENDING",
+  "authoritative_calendar_page": "https://www.moe.gov.my/index.php/kalendar-akademik-semasa",
+  "official_circular": "https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik",
+  "existing_project_source": "https://docs.google.com/document/d/1MO37hjLMT5Afzlnq2--rf3jJQKX9BlTdyejZvU6Yau4/edit",
+  "project_calendar_ledger": "https://docs.google.com/spreadsheets/d/1tf6-B6hmA4U6E0fCROcKpxh-B5uLUQOYBt6TZft_7_k/edit",
+  "caution": "The project ledger itself says some substitute public holidays are BELUM SAH. Do not auto-allocate per-PdP dates or claim state holidays completed.",
+  "groups": {
+    "A": {
+      "states": [
+        "Kedah",
+        "Kelantan",
+        "Terengganu"
+      ],
+      "starts": "2027-01-04",
+      "last_school_day": "2027-12-02",
+      "holiday_windows": [
+        {
+          "name": "Cuti Penggal 1",
+          "start": "2027-03-05",
+          "end": "2027-03-13"
+        },
+        {
+          "name": "Cuti Pertengahan Tahun",
+          "start": "2027-05-21",
+          "end": "2027-06-05"
+        },
+        {
+          "name": "Cuti Penggal 2",
+          "start": "2027-08-27",
+          "end": "2027-09-04"
+        },
+        {
+          "name": "Cuti Akhir Persekolahan",
+          "start": "2027-12-03",
+          "end": "2027-12-31"
+        }
+      ]
+    },
+    "B": {
+      "states": [
+        "Johor",
+        "Melaka",
+        "Negeri Sembilan",
+        "Pahang",
+        "Perak",
+        "Perlis",
+        "Pulau Pinang",
+        "Sabah",
+        "Sarawak",
+        "Selangor",
+        "WP Kuala Lumpur",
+        "WP Labuan",
+        "WP Putrajaya"
+      ],
+      "starts": "2027-01-04",
+      "last_school_day": "2027-12-03",
+      "holiday_windows": [
+        {
+          "name": "Cuti Penggal 1",
+          "start": "2027-03-06",
+          "end": "2027-03-14"
+        },
+        {
+          "name": "Cuti Pertengahan Tahun",
+          "start": "2027-05-22",
+          "end": "2027-06-06"
+        },
+        {
+          "name": "Cuti Penggal 2",
+          "start": "2027-08-28",
+          "end": "2027-09-05"
+        },
+        {
+          "name": "Cuti Akhir Persekolahan",
+          "start": "2027-12-04",
+          "end": "2027-12-31"
+        }
+      ]
+    }
+  },
+  "release_constraints": [
+    "Calendar windows must not be treated as direct individual PdP dates.",
+    "Exclude all group-level breaks, extra KPM festival days and state/public substituted holidays only after authoritative state-level reconciliation.",
+    "Lesson-by-lesson dates require teacher timetable and weekly subject allocation.",
+    "Years 2–6 follow existing Sains KSSR; Year 1 KP2027 Alam dan Manusia is separate.",
+    "Keep status DRAF and preserve original PdP identifiers."
+  ]
+}
