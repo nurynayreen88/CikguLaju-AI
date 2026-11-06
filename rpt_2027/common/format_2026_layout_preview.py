@@ -43,7 +43,7 @@ def validate_rows(subject, year, records):
         for field, source in (("sk_display", "sk"), ("sp_display", "sp")):
             if field in row and (not isinstance(row[field], str) or
                                  not row[field].strip() or
-                                 not row[field].lstrip().startswith(row[source].split(" / ")[0].split(";")[0].strip())):
+                                 not row[field].lstrip().startswith(re.split(r"\s*[/;,]\s*", row[source].strip())[0])):
                 raise ValueError(f"Invalid enriched {field} for PdP {row['id']}")
         ids.append(int(row["id"]))
         for key in ("a_start", "a_end", "b_start", "b_end"):
