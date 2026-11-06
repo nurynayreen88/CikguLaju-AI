@@ -387,6 +387,34 @@ except Exception as _native_rph_error:
           type(_native_rph_error).__name__, flush=True)
 
 
+# Web BM / Pendidikan Islam RPH directly from verified Telegram master RPT.
+# Same native Word/PDF renderer and source DB, never a Web-side RPH copy.
+try:
+    from web.telegram_verified_rpt_rph_bridge import create_native_db_rph_blueprint
+    telegram_runtime.app.register_blueprint(
+        create_native_db_rph_blueprint(telegram_runtime))
+    TELEGRAM_NATIVE_DB_RPH_BRIDGE_REGISTERED = True
+except Exception as _native_db_rph_exc:
+    TELEGRAM_NATIVE_DB_RPH_BRIDGE_REGISTERED = False
+    print("Native verified RPT RPH bridge unavailable:",
+          type(_native_db_rph_exc).__name__, flush=True)
+
+
+# Sains / Matematik: Web units and PdP selections use Telegram's exact
+# grouped verified_pdp_sequence reader, not misleading weekly RPT row IDs.
+try:
+    from web.telegram_verified_sequence_rph_bridge import (
+        create_native_sequence_rph_blueprint,
+    )
+    telegram_runtime.app.register_blueprint(
+        create_native_sequence_rph_blueprint(telegram_runtime))
+    TELEGRAM_NATIVE_SEQUENCE_RPH_REGISTERED = True
+except Exception as _native_sequence_exc:
+    TELEGRAM_NATIVE_SEQUENCE_RPH_REGISTERED = False
+    print("Native sequence RPH unavailable:",
+          type(_native_sequence_exc).__name__, flush=True)
+
+
 # Private source-matched RPT school covers for authenticated Web users. Web
 # checks account entitlement; Telegram re-checks exact PDF bytes before it
 # inserts the logo. The bot's menus, RPH, sources, and credits stay untouched.
