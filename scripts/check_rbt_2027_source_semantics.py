@@ -69,6 +69,12 @@ def run():
             l=lessons[n-1]
             return " ".join(x["aktiviti"] for x in l["langkah"].values()).lower()
         if year==4:
+            assert all(l.get("audit_pemurnian_20261106",{}).get(
+                "objective_success_criteria_induction_aligned_to_activity") is True
+                for l in lessons)
+            assert "pembentang" in lessons[9]["objektif"].lower()
+            assert "membuat penerangan" in lessons[9]["kriteria_kejayaan"].lower()
+            assert "pengelasan" not in lessons[9]["objektif"].lower()
             assert "senario bergambar" in text(2)
             assert "sesi galeri" in text(10)
             assert "jenis garisan" in text(6)
