@@ -21,7 +21,7 @@ STATES = frozenset((
     "W.P. Kuala Lumpur", "W.P. Putrajaya", "W.P. Labuan",
 ))
 SCHEDULE_KEYS = frozenset(("day", "start", "end", "class_name", "subject"))
-PROFILE_KEYS = frozenset(("display_name", "school_name", "state_name", "class_names", "avatar_code", "version"))
+PROFILE_KEYS = frozenset(("display_name", "school_name", "state_name", "class_names", "version"))
 AVATAR_CODES = frozenset(("initials", "teacher", "books", "pencil", "graduation", "art", "science", "math", "music", "star", "sun", "flower"))
 SCHEDULE_PUT_KEYS = frozenset(("entries", "version"))
 MAX_RESPONSE = 65536
@@ -130,15 +130,15 @@ def _validated_name(value, max_len, label, *, required=False):
 
 
 def clean_profile(form):
-    if not isinstance(form, dict) or set(form) != PROFILE_KEYS:
+    if not isinstance(form, dict) or set(form) not in (PROFILE_KEYS, PROFILE_KEYS | {"avatar_code"}):
         raise ProfileValidation("Maklumat profil tidak lengkap")
     name = _validated_name(form["display_name"], 100, "Nama guru", required=True)
     school = _validated_name(form["school_name"], 160, "Nama sekolah")
     state = _validated_name(form["state_name"], 30, "Negeri")
     if state and state not in STATES:
         raise ProfileValidation("Negeri tidak sah")
-    avatar_code = form["avatar_code"]
-    if not isinstance(avatar_code, str) or avatar_code not in AVATAR_CODES:
+    avatar_code = form.get("avatar_code")
+    if avatar_code is not None and (not isinstance(avatar_code, str) or avatar_code not in AVATAR_CODES):
         raise ProfileValidation("Pilihan avatar tidak sah")
     classes = form["class_names"]
     if not isinstance(classes, list) or len(classes) > 25:
@@ -154,9 +154,11 @@ def clean_profile(form):
             raise ProfileValidation("Nama kelas berulang")
         cleaned.append(cls)
         seen.add(cls.casefold())
-    return {"display_name": name, "school_name": school,
-            "state_name": state or None, "class_names": cleaned,
-            "avatar_code": avatar_code}, _version(form["version"])
+    values = {"display_name": name, "school_name": school,
+              "state_name": state or None, "class_names": cleaned}
+    if avatar_code is not None:
+        values["avatar_code"] = avatar_code
+    return values, _version(form["version"])
 
 
 def clean_schedule(form, class_names):
