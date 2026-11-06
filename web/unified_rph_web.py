@@ -103,6 +103,12 @@ def _english_records(year):
         if textbook_ref:
             record["textbook_ref"] = textbook_ref
         result.append(record)
+    # Normalize differences in SOW Unit letter case and whitespace only.
+    # This keeps every original Lesson ID, text, token and file unchanged.
+    canonical = {}
+    for item in result:
+        source_label = " ".join(item["unit"].split())
+        item["unit"] = canonical.setdefault(source_label.casefold(), source_label)
     return result
 
 def _moral_records(year):
