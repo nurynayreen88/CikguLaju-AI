@@ -15,7 +15,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan gambar Yang di-Pertuan Agong dan diagram Majlis Raja-Raja. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 7: Yang di-Pertuan Agong Teras Kedaulatan Negara.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 92–96: Kedudukan Yang di-Pertuan Agong sebagai Ketua Utama Negara dan. Murid membezakan Ketua Utama Negara dengan ketua kerajaan tanpa mencampurkan bidang kuasa. Guru menyemak jawapan awal berpandukan 8.1.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 92–96: Kedudukan Yang di-Pertuan Agong sebagai Ketua Utama Negara dan proses Majlis Raja-Raja. Murid membezakan Ketua Utama Negara dengan ketua kerajaan tanpa mencampurkan bidang kuasa. Guru menyemak jawapan awal berpandukan 8.1.1.
 
 **Aktiviti 2 (20 min):** Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 92–96. Murid membina carta ringkas pemilihan Yang di-Pertuan Agong oleh Majlis Raja-Raja berdasarkan teks. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menghargai Yang di-Pertuan Agong sebagai tonggak perpaduan.
 

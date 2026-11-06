@@ -15,7 +15,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan gambar istiadat pertabalan dan petikan bidang kuasa Perlembagaan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 7: Yang di-Pertuan Agong Teras Kedaulatan Negara.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 97–100: Istiadat pertabalan dan kuasa perundangan, eksekutif serta. Murid menyusun tertib umum istiadat pertabalan dengan rujukan rasmi. Guru menyemak jawapan awal berpandukan 8.1.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 97–100: Istiadat pertabalan dan kuasa perundangan, eksekutif serta kehakiman. Murid menyusun tertib umum istiadat pertabalan dengan rujukan rasmi. Guru menyemak jawapan awal berpandukan 8.1.3.
 
 **Aktiviti 2 (20 min):** Guru menyoal bukti konkrit hlm. 97–100 untuk menguji dapatan murid. Murid mengkategorikan bidang kuasa Yang di-Pertuan Agong serta menerangkan prinsip raja berperlembagaan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan mengekalkan institusi Yang di-Pertuan Agong.
 

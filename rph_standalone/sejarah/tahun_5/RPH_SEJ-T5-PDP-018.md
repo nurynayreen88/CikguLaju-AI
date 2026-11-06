@@ -15,7 +15,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan dua sumber kemerdekaan seperti pengisytiharan dan foto perhimpunan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 6: Sejarah Kemerdekaan.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 76–88: Kajian kes cadangan tentang sumber pengisytiharan, tokoh dan. Murid membina soalan kajian tentang bagaimana perpaduan menyokong kemerdekaan. Guru menyemak jawapan awal berpandukan 7.3.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 76–88: Kajian kes cadangan tentang sumber pengisytiharan, tokoh dan usaha kemerdekaan. Murid membina soalan kajian tentang bagaimana perpaduan menyokong kemerdekaan. Guru menyemak jawapan awal berpandukan 7.3.1.
 
 **Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 76–88 bagi menyokong perbandingan. Murid membandingkan dua sumber dan membentang sumbangan dua tokoh serta batas maklumat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan pengorbanan tokoh pejuang kemerdekaan yang boleh dicontohi.
 
