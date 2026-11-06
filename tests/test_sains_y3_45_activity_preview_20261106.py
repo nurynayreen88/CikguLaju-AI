@@ -89,14 +89,14 @@ class SainsY3ActivityCoverageTests(unittest.TestCase):
                     self.assertEqual(revised["STANDARD PEMBELAJARAN"],sp+", "+extra["sp"])
                     self.assertIn(extra["pbd"],revised["KRITERIA KEJAYAAN"])
                     self.assertIn(extra["pbd"],revised["PENTAKSIRAN"])
-                    self.assertIn("\\n3. Guru ",revised["AKTIVITI UTAMA"])
-                    self.assertIn("\\n4. Murid ",revised["AKTIVITI UTAMA"])
+                    self.assertIn("\n3. Guru ",revised["AKTIVITI UTAMA"])
+                    self.assertIn("\n4. Murid ",revised["AKTIVITI UTAMA"])
                     self.assertIn(extra["teacher"],revised["AKTIVITI UTAMA"])
                     self.assertIn(extra["pupil"],revised["AKTIVITI UTAMA"])
                 else:
                     self.assertEqual(revised["STANDARD PEMBELAJARAN"],sp)
-                    self.assertNotIn("\\n3. Guru ",revised["AKTIVITI UTAMA"])
-                    self.assertNotIn("\\n4. Murid ",revised["AKTIVITI UTAMA"])
+                    self.assertNotIn("\n3. Guru ",revised["AKTIVITI UTAMA"])
+                    self.assertNotIn("\n4. Murid ",revised["AKTIVITI UTAMA"])
 
     def test_acid_demos_do_not_invite_chemical_tasting_or_touching(self):
         for sp in ("8.1.1","8.1.2","8.1.3","8.1.4"):
