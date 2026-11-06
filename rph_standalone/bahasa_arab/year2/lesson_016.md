@@ -1,20 +1,20 @@
 # RPH Bahasa Arab Tahun 2 — PdP 016 (DRAF / BELUM READY)
 
 **Tahun:** 2 | **Subjek:** Bahasa Arab KSSR Semakan 2017 | **Unit:** أحب أسرتي
-**Fokus PdP:** Membaca segmen perkataan huruf س
-**SK/SP cadangan:** 2.1 / 2.1.1 — kemahiran berkaitan dengan latihan Buku Teks Unit 2 halaman bercetak 29; kod individu mesti disemak semula pada halaman dan DSKP sebelum FINAL READY.
+**Fokus PdP:** Mengenal pasti suku kata berhuruf س dalam perkataan
+**SK/SP cadangan:** 2.2 / 2.2.2 — kemahiran berkaitan dengan latihan Buku Teks Unit 2 halaman bercetak 29; kod individu mesti disemak semula pada halaman dan DSKP sebelum FINAL READY.
 **Tarikh / masa / kelas:** Diisi guru mengikut kelas, negeri dan jadual waktu sebenar.
 **Kosa kata / ayat:** سَاحَة، بُسْتَان، رَسَّام، نَسِيم
-**Objektif pembelajaran:** Membina dan membaca tiga kata daripada segmen huruf س yang disediakan.
+**Objektif pembelajaran:** Mengenal pasti sekurang-kurangnya tiga daripada empat segmen suku kata س dalam perkataan yang dibaca.
 **Kriteria kejayaan:** Murid mencapai bukti minimum yang dinyatakan dalam objektif; guru menandakan murid memerlukan pemulihan.
 
 **Set induksi:** Guru menunjukkan gambar laman dan pelukis; murid memilih label yang sesuai.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menunjukkan bagaimana segmen huruf س membentuk سَاحَة، بُسْتَان dan رَسَّام pada h29, menekankan panjang pendek vokal.
+**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memaparkan سَاحَة، بُسْتَان، رَسَّام pada Buku Teks h29, membaca setiap perkataan bersegmen dan menunjuk suku kata berhuruf س yang perlu dikenal pasti.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyusun segmen kepada kata lengkap, membaca kepada pasangan dan mencatat perkataan yang dibetulkan.
+**Aktiviti 2 — Aplikasi murid:** Murid memadankan kad suku kata seperti سَا، سْ، سَّ dengan bahagian sepadan pada perkataan contoh sebelum menerangkan pilihan mereka kepada rakan.
 
-**Pengukuhan / Penilaian (PBD):** Tiga kata terbaca dan dua susunan kad tepat.
+**Pengukuhan / Penilaian (PBD):** Guru menunjukkan empat kad perkataan; murid menandakan sekurang-kurangnya tiga suku kata س yang sepadan.
 
 **Penutup:** Murid menyebut satu kata yang berakhir dengan bunyi س.
 
@@ -28,3 +28,5 @@
 **RPT rujukan 2026:** https://anyflip.com/zxzlm/jffk/basic.
 **Had semakan:** Rujukan visual kandungan topik halaman tersedia, tetapi kesahan SP pada grafik individu, RPT 2027 kumpulan A/B, semakan tatabahasa dan kelulusan setiap PdP belum diputuskan. Ayat aktiviti ialah olahan pedagogi, bukan salinan penuh buku teks.
 **Status:** DRAF_SEMAK / BELUM READY. Staging dan pratonton sahaja; jangan aktifkan dalam Telegram/Web atau database produksi.
+
+**Audit pembetulan calon SK/SP (6 Nov 2026):** Buku Teks Bahasa Arab Tahun 2 DBP/KPM cetakan 2017, h29 (PDF h41) memaparkan aktiviti dan kod SP bersesuaian **2.2.2** dalam panel *مرشد المعلم*. Makna kemahiran disemak dengan DPK KPM 2.0 Tahun 2: https://www.tcer.my/wp-content/uploads/2021/01/4_DPK_Bahasa-Arab-KSSR-Tahun-2-Edisi-2-1.pdf. Pembetulan termasuk objektif, tindakan guru/murid dan PBD; belum kelulusan individu akhir, semakan keseluruhan harakat atau RPT bertarikh. **DRAF / BELUM READY**.

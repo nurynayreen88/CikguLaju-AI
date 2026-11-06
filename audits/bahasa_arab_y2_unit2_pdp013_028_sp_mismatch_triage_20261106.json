@@ -13,7 +13,7 @@
   "source_rph_audit_file": "audits/bahasa_arab_y2_unit2_pdp013_028_visual_audit_20261106.json",
   "method": "Direct visual screening of original PDF teacher-guide pink code panels for candidate source pages 26–43; focused reading of RPH objectives/PBD for flagged cases.",
   "candidate_total": 16,
-  "high_priority_count": 8,
+  "high_priority_count": 0,
   "additional_review_count": 5,
   "ready_count": 0,
   "records": [
@@ -32,12 +32,13 @@
       "pdp": "014",
       "source_printed_page": 27,
       "source_pdf_page_1based": 39,
-      "existing_candidate_sp": "2.1.1",
-      "existing_focus": "Membaca dan membina kata berhuruf و",
-      "audit_status": "HIGH_PRIORITY_CODE_OR_SKILL_MISMATCH",
-      "issue": "p27 panel memaparkan latihan kumpulan suku kata 1.2/2.2; SP 2.1.1 tidak jelas pada panel halaman itu.",
+      "existing_candidate_sp": "2.2.2",
+      "existing_focus": "Mengenal pasti suku kata و berbaris dalam perkataan",
+      "audit_status": "SOURCE_SK_SP_CORRECTED_TEACHER_APPROVAL_PENDING",
+      "issue": "Original textbook teacher-panel and KPM DPK 2.0 source indicate skill mismatch; candidate SP and RPH objective/activities/PBD corrected together, no release approval.",
       "teacher_approved": false,
-      "ready": false
+      "ready": false,
+      "previous_candidate_sp": "2.1.1"
     },
     {
       "pdp": "015",
@@ -54,12 +55,13 @@
       "pdp": "016",
       "source_printed_page": 29,
       "source_pdf_page_1based": 41,
-      "existing_candidate_sp": "2.1.1",
-      "existing_focus": "Membaca segmen perkataan huruf س",
-      "audit_status": "HIGH_PRIORITY_CODE_OR_SKILL_MISMATCH",
-      "issue": "p29 panel memaparkan kumpulan 1.2/2.2, bukan SP 2.1.1; fokus perlu dipadankan dengan latihan silabik.",
+      "existing_candidate_sp": "2.2.2",
+      "existing_focus": "Mengenal pasti suku kata berhuruf س dalam perkataan",
+      "audit_status": "SOURCE_SK_SP_CORRECTED_TEACHER_APPROVAL_PENDING",
+      "issue": "Original textbook teacher-panel and KPM DPK 2.0 source indicate skill mismatch; candidate SP and RPH objective/activities/PBD corrected together, no release approval.",
       "teacher_approved": false,
-      "ready": false
+      "ready": false,
+      "previous_candidate_sp": "2.1.1"
     },
     {
       "pdp": "017",
@@ -87,23 +89,25 @@
       "pdp": "019",
       "source_printed_page": 32,
       "source_pdf_page_1based": 44,
-      "existing_candidate_sp": "1.2.1",
-      "existing_focus": "Mendengar nama ahli keluarga terdekat",
-      "audit_status": "HIGH_PRIORITY_CODE_OR_SKILL_MISMATCH",
-      "issue": "p32 panduan guru memaparkan kumpulan 1.3 untuk kosa kata didengar, bukan SP 1.2.1 (suku kata).",
+      "existing_candidate_sp": "1.3.1",
+      "existing_focus": "Mendengar, meniru dan menyebut perkataan ahli keluarga terdekat",
+      "audit_status": "SOURCE_SK_SP_CORRECTED_TEACHER_APPROVAL_PENDING",
+      "issue": "Previously used syllable-listening group 1.2. Corrected to group 1.3 for word-listening using original book page and KPM DPK; teacher signoff pending.",
       "teacher_approved": false,
-      "ready": false
+      "ready": false,
+      "previous_candidate_sp": "1.2.1"
     },
     {
       "pdp": "020",
       "source_printed_page": 33,
       "source_pdf_page_1based": 45,
-      "existing_candidate_sp": "1.2.2",
-      "existing_focus": "Mendengar dan membezakan ahli keluarga luas",
-      "audit_status": "HIGH_PRIORITY_CODE_OR_SKILL_MISMATCH",
-      "issue": "p33 panduan guru memaparkan kumpulan 1.3, bukan SP 1.2.2 (suku kata).",
+      "existing_candidate_sp": "1.3.2",
+      "existing_focus": "Mendengar dan mengenal pasti perkataan ahli keluarga luas",
+      "audit_status": "SOURCE_SK_SP_CORRECTED_TEACHER_APPROVAL_PENDING",
+      "issue": "Previously used syllable-listening group 1.2. Corrected to group 1.3 for word-listening using original book page and KPM DPK; teacher signoff pending.",
       "teacher_approved": false,
-      "ready": false
+      "ready": false,
+      "previous_candidate_sp": "1.2.2"
     },
     {
       "pdp": "021",
@@ -131,23 +135,25 @@
       "pdp": "023",
       "source_printed_page": 37,
       "source_pdf_page_1based": 49,
-      "existing_candidate_sp": "1.3.1",
-      "existing_focus": "Mendengar dan menyebut identiti anak lelaki/perempuan",
-      "audit_status": "HIGH_PRIORITY_CODE_OR_SKILL_MISMATCH",
-      "issue": "p37 panduan guru memaparkan kumpulan 1.4 untuk frasa lisan, bukan SP 1.3.1 (perkataan).",
+      "existing_candidate_sp": "1.4.1",
+      "existing_focus": "Mendengar, meniru dan menyebut frasa identiti anak lelaki/perempuan",
+      "audit_status": "SOURCE_SK_SP_CORRECTED_TEACHER_APPROVAL_PENDING",
+      "issue": "Original textbook teacher-panel and KPM DPK 2.0 source indicate skill mismatch; candidate SP and RPH objective/activities/PBD corrected together, no release approval.",
       "teacher_approved": false,
-      "ready": false
+      "ready": false,
+      "previous_candidate_sp": "1.3.1"
     },
     {
       "pdp": "024",
       "source_printed_page": 38,
       "source_pdf_page_1based": 50,
-      "existing_candidate_sp": "1.3.2",
-      "existing_focus": "Kata tunjuk هذا/هذه bagi datuk dan nenek",
-      "audit_status": "HIGH_PRIORITY_CODE_OR_SKILL_MISMATCH",
-      "issue": "p38 panduan guru memaparkan kumpulan 1.4 bagi frasa هذا/هذه, bukan SP 1.3.2 (perkataan).",
+      "existing_candidate_sp": "1.4.5",
+      "existing_focus": "Melakonkan ungkapan kata tunjuk هذا/هذه bagi ahli keluarga",
+      "audit_status": "SOURCE_SK_SP_CORRECTED_TEACHER_APPROVAL_PENDING",
+      "issue": "Original textbook teacher-panel and KPM DPK 2.0 source indicate skill mismatch; candidate SP and RPH objective/activities/PBD corrected together, no release approval.",
       "teacher_approved": false,
-      "ready": false
+      "ready": false,
+      "previous_candidate_sp": "1.3.2"
     },
     {
       "pdp": "025",
@@ -175,23 +181,25 @@
       "pdp": "027",
       "source_printed_page": 41,
       "source_pdf_page_1based": 53,
-      "existing_candidate_sp": "1.4.1",
-      "existing_focus": "Bertanya dan menjawab 'siapakah ini?'",
-      "audit_status": "HIGH_PRIORITY_CODE_OR_SKILL_MISMATCH",
-      "issue": "p41 panel bercetak memaparkan kumpulan bacaan 2.4, sedangkan calon SP 1.4.1 ialah kemahiran mendengar/sebut frasa.",
+      "existing_candidate_sp": "1.4.5",
+      "existing_focus": "Melakonkan soal jawab spontan مَنْ هَذَا؟ / مَنْ هَذِهِ؟",
+      "audit_status": "SOURCE_SK_SP_CORRECTED_TEACHER_APPROVAL_PENDING",
+      "issue": "Original textbook teacher-panel and KPM DPK 2.0 source indicate skill mismatch; candidate SP and RPH objective/activities/PBD corrected together, no release approval.",
       "teacher_approved": false,
-      "ready": false
+      "ready": false,
+      "previous_candidate_sp": "1.4.1"
     },
     {
       "pdp": "028",
       "source_printed_page": 43,
       "source_pdf_page_1based": 55,
-      "existing_candidate_sp": "3.2.1",
-      "existing_focus": "Mengenal dan menulis nombor tiga belas hingga enam belas",
-      "audit_status": "HIGH_PRIORITY_CODE_OR_SKILL_MISMATCH",
-      "issue": "p43 panel memaparkan kumpulan nombor 1.5/2.5; SP 3.2.1 menyalin suku kata tidak sepadan fokus nombor 13–16.",
+      "existing_candidate_sp": "2.5.1",
+      "existing_focus": "Membaca dan menyebut nombor tiga belas hingga enam belas",
+      "audit_status": "SOURCE_SK_SP_CORRECTED_TEACHER_APPROVAL_PENDING",
+      "issue": "Original textbook teacher-panel and KPM DPK 2.0 source indicate skill mismatch; candidate SP and RPH objective/activities/PBD corrected together, no release approval.",
       "teacher_approved": false,
-      "ready": false
+      "ready": false,
+      "previous_candidate_sp": "3.2.1"
     }
   ],
   "criteria": "A missing SP code on the named page is a release blocker requiring individual DSKP/page and activity review; it is NOT a license to blindly replace the source SP with another code.",
@@ -204,5 +212,16 @@
   "release_authorized": false,
   "production_db_touched": false,
   "telegram_live_touched": false,
-  "web_live_touched": false
+  "web_live_touched": false,
+  "corrected_source_candidate_count": 8,
+  "corrected_pdp": [
+    "014",
+    "016",
+    "019",
+    "020",
+    "023",
+    "024",
+    "027",
+    "028"
+  ]
 }
