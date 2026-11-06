@@ -1,0 +1,51 @@
+{
+  "title": "Sains SK Year2–6 textbook source file sizes and delivery gate",
+  "date": "2026-11-06",
+  "evidence": "Google Drive metadata sizes (read-only); file existence not proof of authenticated Telegram/Web download success",
+  "release_status": "HOLD_DELIVERY_UNVERIFIED",
+  "year1": "KP2027 Alam dan Manusia is a separate curriculum, no legacy Sains textbook reused",
+  "files": [
+    {
+      "year": 2,
+      "drive_id": "1LkJJWUb-zyFJ1ftpHM-4HIpIcEGLORI9",
+      "bytes": 79464408,
+      "text_layer": "READABLE",
+      "delivery": "UNTETSTED"
+    },
+    {
+      "year": 3,
+      "drive_id": "17QNqKZjSF7V9GzzkXkz46bDJGnyKYq-F",
+      "bytes": 100100997,
+      "text_layer": "READABLE",
+      "delivery": "UNTETSTED"
+    },
+    {
+      "year": 4,
+      "drive_id": "1Y2Uf44WX5bFhAaaEx55Is7cZpJfrn7Ms",
+      "bytes": 337813479,
+      "text_layer": "EMPTY_ON_CONNECTOR_TEXT_FETCH",
+      "delivery": "UNTESTED"
+    },
+    {
+      "year": 5,
+      "drive_id": "1m5k8gVkNImT8QEdw6fCEVpQh_tNkUKUT",
+      "bytes": 91275648,
+      "text_layer": "READABLE",
+      "delivery": "UNTESTED"
+    },
+    {
+      "year": 6,
+      "drive_id": "14yto0qTq87FIeo6UtJuDef8D2xGwiPLd",
+      "bytes": 549031115,
+      "text_layer": "CONNECTOR_TEXT_FETCH_FAILED_BUT_METADATA_EXISTS",
+      "delivery": "UNTESTED"
+    }
+  ],
+  "next_validation": [
+    "Confirm canonical authorized textbook edition and source page numbers per PdP",
+    "Create or locate permission-compatible optimized delivery path if needed; retain originals",
+    "Test authenticated Web/Telegram preview/download on desktop and phone (including the 337MB/549MB cases)",
+    "Verify no phantom Download option is displayed if file is unavailable",
+    "Never transfer/overwrite source Drive PDFs as part of a test"
+  ]
+}
