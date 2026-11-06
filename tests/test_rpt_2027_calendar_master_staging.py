@@ -43,6 +43,26 @@ class CalendarWeekAuditQA(unittest.TestCase):
         self.assertEqual(result["examples"][0]["suggested_master_week_label_only"], "M07")
         self.assertEqual(row, prior, "Read-only calendar audit must never change source rows")
 
+    def test_psv_source_week_preserved_and_display_matches_master(self):
+        from scripts.build_rpt_2027_standard_preview import psv_records
+        from rpt_2027.common.calendar_week_mapping_staging import (
+            matching_master_weeks, load_calendar_weeks
+        )
+        master = load_calendar_weeks()
+        for year in range(2, 7):
+            rows = psv_records(year)
+            self.assertEqual(len(rows), 42)
+            self.assertEqual(sum(bool(x.get("source_week")) for x in rows), 37)
+            self.assertEqual(rows[5]["source_week"], "M06")
+            self.assertEqual(rows[5]["week"], "M07")
+            self.assertEqual(rows[5]["a_start"], "2027-02-14")
+            self.assertEqual(rows[5]["b_start"], "2027-02-15")
+            for row in rows:
+                self.assertEqual(matching_master_weeks(row, master), [row["week"]])
+        report = audit_all()
+        self.assertEqual(report["overall_counts"].get("week_label_reconciled_from_master"), 185)
+        self.assertEqual(report["overall_counts"].get("week_and_date_mismatch", 0), 0)
+
     def test_missing_week_not_invented(self):
         master = read_master()
         sample = {"id": "001", "week": "Agihan cadangan",
