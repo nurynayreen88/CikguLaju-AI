@@ -205,7 +205,18 @@ def _bm_verified_structured_rows(database_path, year):
         r.update({"theme": theme, "unit_code": code,
                   "unit_title": unit, "topic": topic})
         result.append(r)
-    return result
+    # Hide incomplete PdP groups before exposing their Tema or Unit. Telegram
+    # itself refuses to commit such a group until SK/SP is present.
+    valid = {
+        (r["theme"], r["unit_code"], r["unit_title"], r["topic"])
+        for r in result
+        if str(r.get("sk_code") or "").strip()
+        and str(r.get("sp_code") or "").strip()
+    }
+    return [
+        r for r in result
+        if (r["theme"], r["unit_code"], r["unit_title"], r["topic"]) in valid
+    ]
 
 
 def bm_theme_options(database_path, year):
