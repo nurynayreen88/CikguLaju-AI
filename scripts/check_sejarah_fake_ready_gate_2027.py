@@ -68,7 +68,7 @@ with tempfile.TemporaryDirectory(prefix="sejarah-fake-ready-") as td:
     expect_denied(target)
 
     old_md=md_path.read_text(encoding="utf-8")
-    new_md,c=re.subn(r"(?m)^\\*\\*Status:\\*\\*[^\\n]*$",
+    new_md,c=re.subn(r"(?m)^\*\*Status:\*\*[^\n]*$",
                      "**Status:** FINAL_READY",old_md,count=1)
     assert c==1,"Could not set RPH fixture status"
     md_path.write_text(new_md,encoding="utf-8")
