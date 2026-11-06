@@ -1,0 +1,66 @@
+#!/usr/bin/env python3
+"""Staging-only: assert 108 Sejarah RPH are identical across JSON/Markdown/HTML."""
+from html import unescape
+from pathlib import Path
+import json
+import re
+
+ROOT = Path(__file__).resolve().parents[1]
+GENERIC_1 = "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan."
+GENERIC_2 = re.compile(r"Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit [0-9]+[.]")
+modified = 0
+seen = set()
+for year in (4, 5, 6):
+    obj = json.loads((ROOT / f"rph_standalone/sejarah/y{year}_2027_rph_DRAF.json").read_text(encoding="utf-8"))
+    rendered_html = unescape((ROOT / f"rph_standalone/sejarah/RPH_SEJARAH_TAHUN_{year}_2027_DRAF.html").read_text(encoding="utf-8"))
+    assert len(obj["lessons"]) == 36
+    for lesson in obj["lessons"]:
+        rph = lesson["rph"]
+        ident = lesson["id"]
+        assert ident not in seen and ident == rph["id"]
+        seen.add(ident)
+        md_path = ROOT / f"rph_standalone/sejarah/tahun_{year}/RPH_{ident}.md"
+        md = md_path.read_text(encoding="utf-8")
+        for key in ("aktiviti_1", "aktiviti_2", "pengukuhan_pbd"):
+            content = rph[key]["activity"]
+            assert content in md, ("Markdown differs from JSON", ident, key)
+            assert content in rendered_html, ("HTML differs from JSON", ident, key)
+        scope = rph["textbook_reference"]["checked_focus_pages"]
+        assert scope["text_checked"] is True
+        assert scope["teacher_approved"] is False
+        assert scope["exact_exercise_visual_verification"] is False
+        ev = rph["page_specific_evidence"]
+        assert ev["actual_textbook_visual_page_checked"] is False
+        assert ev["exact_textbook_activity_approved"] is False
+        assert ev["teacher_validated"] is False
+        assert not rph["teacher_approval"] and not rph["textbook_page_verified"]
+        assert rph["status"].startswith("DRAF")
+        if rph.get("context_specific_activity"):
+            modified += 1
+            assert ev["level"] == "TEXTBOOK_DIGITAL_TOPIC_CROSSWALK_NOT_VISUAL_EXERCISE", ident
+            assert ev["pages"] == scope["printed_page_range"], ident
+            assert ev["sources"] == scope["source_urls"], ident
+            assert GENERIC_1 not in rph["aktiviti_1"]["activity"], ident
+            assert not GENERIC_2.search(rph["aktiviti_2"]["activity"]), ident
+            assert "hlm. " in rph["aktiviti_1"]["activity"], ident
+            assert "hlm. " in rph["aktiviti_2"]["activity"], ident
+            # Every printed-page citation must fall inside this lesson's
+            # documented textbook text crosswalk; a unit index alone is not proof.
+            # Crosswalks may contain disjoint spans such as 109, 117–119.
+            allowed_pages=set()
+            for span in re.split(r"[,;]",scope["printed_page_range"]):
+                endpoints=[int(n) for n in re.findall(r"\d+",span)]
+                assert 1<=len(endpoints)<=2, ("Invalid printed page span",ident,span)
+                first,last=endpoints[0],endpoints[-1]
+                assert 0<first<=last<=300, ("Invalid printed page range",ident,span)
+                allowed_pages.update(range(first,last+1))
+            for part in ("aktiviti_1","aktiviti_2"):
+                citations=re.findall(r"hlm\.\s*(\d+)(?:\s*[–-]\s*(\d+))?",rph[part]["activity"])
+                assert citations, ("Missing printed textbook page",ident,part)
+                for pair in citations:
+                    for page in pair:
+                        if page:
+                            assert int(page) in allowed_pages, ("Page outside checked textbook range",ident,part,page,sorted(allowed_pages))
+assert len(seen) == 108
+assert modified == 97, modified
+print(f"Sejarah staging crossformat: {len(seen)}/108 JSON–Markdown–HTML aligned; {modified}/97 evidence-guided; 0 released")

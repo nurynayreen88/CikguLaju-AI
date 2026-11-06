@@ -1,0 +1,884 @@
+{
+  "subject": "Sejarah",
+  "academic_year": 2027,
+  "audit_date": "2026-11-06",
+  "status": "FIFTY_THREE_PDP_DIGITAL_TEXT_CROSSWALK_DRAF_NOT_FINAL",
+  "count": 53,
+  "evidence_scope": "Teks buku digital dan topik halaman bercetak, bukan pengesahan visual setiap latihan; tindakan kajian kes merupakan cadangan PdP guru",
+  "sources": {
+    "5": "DBP 2020 ISBN 978-983-49-2829-2",
+    "6": "DBP 2021 ISBN 978-983-49-3279-4"
+  },
+  "rows": [
+    {
+      "year": 5,
+      "pdp": 1,
+      "id": "SEJ-T5-PDP-001",
+      "printed_page_range": "4–6",
+      "sp": [
+        "6.1.1",
+        "6.1.2"
+      ],
+      "textbook_focus": "Maksud raja/kerajaan dan waadat Seri Teri Buana–Demang Lebar Daun",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 2,
+      "id": "SEJ-T5-PDP-002",
+      "printed_page_range": "7",
+      "sp": [
+        "6.1.3"
+      ],
+      "textbook_focus": "Konsep daulat dan derhaka yang dikaitkan dengan perjanjian raja–rakyat",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 3,
+      "id": "SEJ-T5-PDP-003",
+      "printed_page_range": "8–9",
+      "sp": [
+        "6.1.4"
+      ],
+      "textbook_focus": "Perbandingan kuasa institusi raja pada zaman awal, kolonial dan kini",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 4,
+      "id": "SEJ-T5-PDP-004",
+      "printed_page_range": "10",
+      "sp": [
+        "6.1.5"
+      ],
+      "textbook_focus": "Contoh negara dunia yang mengamalkan sistem pemerintahan beraja",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 10,
+      "id": "SEJ-T5-PDP-010",
+      "printed_page_range": "32–43",
+      "sp": [
+        "6.3.1",
+        "6.3.2"
+      ],
+      "textbook_focus": "Kajian kes cadangan bahasa Melayu: susur galur dan sebaran penutur",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 11,
+      "id": "SEJ-T5-PDP-011",
+      "printed_page_range": "45–49",
+      "sp": [
+        "7.1.1",
+        "7.1.2"
+      ],
+      "textbook_focus": "Naungan, campur tangan, penjajahan dan kuasa Siam, Portugis, Belanda, British, Jepun, Brooke",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 12,
+      "id": "SEJ-T5-PDP-012",
+      "printed_page_range": "50–52",
+      "sp": [
+        "7.1.3"
+      ],
+      "textbook_focus": "Kedudukan strategik, hasil bumi, penyebaran agama dan Revolusi Perindustrian",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 13,
+      "id": "SEJ-T5-PDP-013",
+      "printed_page_range": "53–56",
+      "sp": [
+        "7.1.4"
+      ],
+      "textbook_focus": "Kesan pentadbiran Negeri-negeri Selat/Bersekutu, ekonomi dan masyarakat majmuk",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 14,
+      "id": "SEJ-T5-PDP-014",
+      "printed_page_range": "60–63",
+      "sp": [
+        "7.2.1",
+        "7.2.2"
+      ],
+      "textbook_focus": "Tokoh tempatan dan sebab penentangan, termasuk Dol Said, Rentap dan Tok Janggut",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 15,
+      "id": "SEJ-T5-PDP-015",
+      "printed_page_range": "64–68",
+      "sp": [
+        "7.2.3"
+      ],
+      "textbook_focus": "Urutan peristiwa penentangan tokoh tempatan terhadap kuasa asing",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 16,
+      "id": "SEJ-T5-PDP-016",
+      "printed_page_range": "76–79",
+      "sp": [
+        "7.3.1",
+        "7.3.2"
+      ],
+      "textbook_focus": "Tokoh kemerdekaan dan usaha menuju merdeka termasuk Dato' Onn dan rundingan",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 17,
+      "id": "SEJ-T5-PDP-017",
+      "printed_page_range": "80–85",
+      "sp": [
+        "7.3.3"
+      ],
+      "textbook_focus": "Detik pemasyhuran kemerdekaan pada 31 Ogos 1957 di Stadium Merdeka",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 18,
+      "id": "SEJ-T5-PDP-018",
+      "printed_page_range": "76–88",
+      "sp": [
+        "7.3.1",
+        "7.3.2"
+      ],
+      "textbook_focus": "Kajian kes cadangan tentang sumber pengisytiharan, tokoh dan usaha kemerdekaan",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 19,
+      "id": "SEJ-T5-PDP-019",
+      "printed_page_range": "92–96",
+      "sp": [
+        "8.1.1",
+        "8.1.2"
+      ],
+      "textbook_focus": "Kedudukan Yang di-Pertuan Agong sebagai Ketua Utama Negara dan proses Majlis Raja-Raja",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 20,
+      "id": "SEJ-T5-PDP-020",
+      "printed_page_range": "97–100",
+      "sp": [
+        "8.1.3",
+        "8.1.4"
+      ],
+      "textbook_focus": "Istiadat pertabalan dan kuasa perundangan, eksekutif serta kehakiman",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 21,
+      "id": "SEJ-T5-PDP-021",
+      "printed_page_range": "101–106",
+      "sp": [
+        "8.1.5"
+      ],
+      "textbook_focus": "Tengkolok Diraja, Keris Panjang Diraja, Cogan Alam dan alat kebesaran lain",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 22,
+      "id": "SEJ-T5-PDP-022",
+      "printed_page_range": "110–115",
+      "sp": [
+        "9.1.1",
+        "9.1.2"
+      ],
+      "textbook_focus": "Perubahan sejarah Jata Negara dan pengenalan lambang pada perisai",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 23,
+      "id": "SEJ-T5-PDP-023",
+      "printed_page_range": "116–119",
+      "sp": [
+        "9.1.3"
+      ],
+      "textbook_focus": "Makna warna, harimau, bintang, bulan sabit dan cogan kata Jata Negara",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 24,
+      "id": "SEJ-T5-PDP-024",
+      "printed_page_range": "122–124",
+      "sp": [
+        "9.2.1",
+        "9.2.2"
+      ],
+      "textbook_focus": "Sejarah bendera kebangsaan dan nama Jalur Gemilang",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 25,
+      "id": "SEJ-T5-PDP-025",
+      "printed_page_range": "125–129",
+      "sp": [
+        "9.2.3"
+      ],
+      "textbook_focus": "Makna jalur, warna, bulan sabit dan bintang pada Jalur Gemilang",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 26,
+      "id": "SEJ-T5-PDP-026",
+      "printed_page_range": "130–132",
+      "sp": [
+        "9.2.4"
+      ],
+      "textbook_focus": "Etika mempamer, menaik dan menjaga bendera kebangsaan",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 27,
+      "id": "SEJ-T5-PDP-027",
+      "printed_page_range": "122–132",
+      "sp": [
+        "9.2.1",
+        "9.2.2"
+      ],
+      "textbook_focus": "Kajian kes cadangan tentang asal usul dan penghormatan Jalur Gemilang",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 28,
+      "id": "SEJ-T5-PDP-028",
+      "printed_page_range": "136–140",
+      "sp": [
+        "9.3.1",
+        "9.3.2"
+      ],
+      "textbook_focus": "Sejarah lagu Negaraku daripada lagu kebesaran Perak dan penamaan lagu",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 29,
+      "id": "SEJ-T5-PDP-029",
+      "printed_page_range": "141–144",
+      "sp": [
+        "9.3.3",
+        "9.3.4"
+      ],
+      "textbook_focus": "Maksud Negaraku dan etika menyanyi atau mendengar lagu kebangsaan",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 30,
+      "id": "SEJ-T5-PDP-030",
+      "printed_page_range": "145–146",
+      "sp": [
+        "9.3.5"
+      ],
+      "textbook_focus": "Kaitan lagu kebangsaan dengan pembentukan jati diri dan perpaduan",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 31,
+      "id": "SEJ-T5-PDP-031",
+      "printed_page_range": "150–154",
+      "sp": [
+        "9.4.1",
+        "9.4.2"
+      ],
+      "textbook_focus": "Perkara 152 Perlembagaan dan fungsi bahasa Melayu sebagai bahasa kebangsaan",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 32,
+      "id": "SEJ-T5-PDP-032",
+      "printed_page_range": "155–158",
+      "sp": [
+        "9.4.3"
+      ],
+      "textbook_focus": "DBP, institusi pendidikan dan program memartabatkan bahasa kebangsaan",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 33,
+      "id": "SEJ-T5-PDP-033",
+      "printed_page_range": "159–160",
+      "sp": [
+        "9.4.4"
+      ],
+      "textbook_focus": "Cabaran penggunaan bahasa Melayu dan usaha mengatasinya",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 34,
+      "id": "SEJ-T5-PDP-034",
+      "printed_page_range": "164–166",
+      "sp": [
+        "9.5.1",
+        "9.5.2"
+      ],
+      "textbook_focus": "Pemilihan bunga raya sebagai bunga kebangsaan, makna warna merah",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 35,
+      "id": "SEJ-T5-PDP-035",
+      "printed_page_range": "167–169",
+      "sp": [
+        "9.5.3"
+      ],
+      "textbook_focus": "Makna lima kelopak bunga raya dengan lima prinsip Rukun Negara",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 5,
+      "pdp": 36,
+      "id": "SEJ-T5-PDP-036",
+      "printed_page_range": "164–174",
+      "sp": [
+        "9.5.1",
+        "9.5.2"
+      ],
+      "textbook_focus": "Kajian kes cadangan tentang sejarah dan perlambangan bunga raya",
+      "source_url": "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 6,
+      "pdp": 15,
+      "id": "SEJ-T6-PDP-015",
+      "printed_page_range": "78–83",
+      "sp": [
+        "11.2.1",
+        "11.2.2"
+      ],
+      "textbook_focus": "Agama dan kepercayaan pelbagai masyarakat serta kedudukan Islam sebagai agama Persekutuan",
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 6,
+      "pdp": 16,
+      "id": "SEJ-T6-PDP-016",
+      "printed_page_range": "84–85",
+      "sp": [
+        "11.2.3"
+      ],
+      "textbook_focus": "Hak amalan agama lain dalam Perlembagaan, termasuk Perkara 11",
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 6,
+      "pdp": 17,
+      "id": "SEJ-T6-PDP-017",
+      "printed_page_range": "86–88",
+      "sp": [
+        "11.2.4"
+      ],
+      "textbook_focus": "Masjid, gereja, tokong, wat, kuil dan gurdwara serta adab melawat",
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 6,
+      "pdp": 18,
+      "id": "SEJ-T6-PDP-018",
+      "printed_page_range": "78–89",
+      "sp": [
+        "11.2.1",
+        "11.2.2"
+      ],
+      "textbook_focus": "Kajian kes cadangan tentang keharmonian masyarakat berbilang agama",
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 6,
+      "pdp": 19,
+      "id": "SEJ-T6-PDP-019",
+      "printed_page_range": "94–96",
+      "sp": [
+        "11.3.1"
+      ],
+      "textbook_focus": "Perayaan utama masyarakat Malaysia mengikut komuniti dan tradisi",
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 6,
+      "pdp": 20,
+      "id": "SEJ-T6-PDP-020",
+      "printed_page_range": "96–98",
+      "sp": [
+        "11.3.2"
+      ],
+      "textbook_focus": "Tujuan sambutan dan nilai kekeluargaan, kejiranan serta perpaduan",
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 6,
+      "pdp": 21,
+      "id": "SEJ-T6-PDP-021",
+      "printed_page_range": "99–101",
+      "sp": [
+        "11.3.3"
+      ],
+      "textbook_focus": "Sambutan perayaan dahulu dan kini serta analisis SWOT warisan",
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 6,
+      "pdp": 22,
+      "id": "SEJ-T6-PDP-022",
+      "printed_page_range": "108–115",
+      "sp": [
+        "12.1.1"
+      ],
+      "textbook_focus": "Urutan Perdana Menteri; buku 2021 setakat PM9, suplemen sumber rasmi PM10",
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 6,
+      "pdp": 23,
+      "id": "SEJ-T6-PDP-023",
+      "printed_page_range": "116–117",
+      "sp": [
+        "12.1.2"
+      ],
+      "textbook_focus": "Tugas Perdana Menteri dalam pentadbiran dan kepimpinan kerajaan",
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 6,
+      "pdp": 24,
+      "id": "SEJ-T6-PDP-024",
+      "printed_page_range": "118–120",
+      "sp": [
+        "12.1.3"
+      ],
+      "textbook_focus": "Pencapaian negara di bawah pentadbiran Perdana Menteri berbeza",
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 6,
+      "pdp": 25,
+      "id": "SEJ-T6-PDP-025",
+      "printed_page_range": "126–128",
+      "sp": [
+        "12.2.1"
+      ],
+      "textbook_focus": "Sektor pertanian, perlombongan dan ekonomi tradisional/komersial",
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 6,
+      "pdp": 26,
+      "id": "SEJ-T6-PDP-026",
+      "printed_page_range": "129–133",
+      "sp": [
+        "12.2.2"
+      ],
+      "textbook_focus": "Pertanian, pembuatan, petroleum dan kegiatan penyumbang ekonomi",
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 6,
+      "pdp": 27,
+      "id": "SEJ-T6-PDP-027",
+      "printed_page_range": "134–139",
+      "sp": [
+        "12.2.3"
+      ],
+      "textbook_focus": "Pencapaian ekonomi negara termasuk PETRONAS dan perkembangan industri",
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 6,
+      "pdp": 28,
+      "id": "SEJ-T6-PDP-028",
+      "printed_page_range": "126–139",
+      "sp": [
+        "12.2.1",
+        "12.2.2"
+      ],
+      "textbook_focus": "Kajian kes cadangan tentang perubahan sektor dan bukti ekonomi",
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 6,
+      "pdp": 29,
+      "id": "SEJ-T6-PDP-029",
+      "printed_page_range": "144–148",
+      "sp": [
+        "12.3.1",
+        "12.3.2"
+      ],
+      "textbook_focus": "Pencapaian sukan Malaysia dan peranan sukan menyatupadukan rakyat",
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 6,
+      "pdp": 30,
+      "id": "SEJ-T6-PDP-030",
+      "printed_page_range": "149–152",
+      "sp": [
+        "12.3.3"
+      ],
+      "textbook_focus": "Peranan Malaysia menganjur acara sukan antarabangsa",
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 6,
+      "pdp": 31,
+      "id": "SEJ-T6-PDP-031",
+      "printed_page_range": "153–157",
+      "sp": [
+        "12.3.4"
+      ],
+      "textbook_focus": "Tokoh sukan negara dahulu dan inspirasi generasi masa kini",
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 6,
+      "pdp": 32,
+      "id": "SEJ-T6-PDP-032",
+      "printed_page_range": "162–165",
+      "sp": [
+        "12.4.1",
+        "12.4.2"
+      ],
+      "textbook_focus": "ASEAN dan pelibatan Malaysia, dengan suplemen keanggotaan Timor-Leste 2025",
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 6,
+      "pdp": 33,
+      "id": "SEJ-T6-PDP-033",
+      "printed_page_range": "166–167",
+      "sp": [
+        "12.4.3"
+      ],
+      "textbook_focus": "Pelibatan Malaysia dalam Komanwel dan kerjasama Sukan Komanwel",
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 6,
+      "pdp": 34,
+      "id": "SEJ-T6-PDP-034",
+      "printed_page_range": "168–169",
+      "sp": [
+        "12.4.4"
+      ],
+      "textbook_focus": "Malaysia dalam Pertubuhan Kerjasama Islam (OIC)",
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 6,
+      "pdp": 35,
+      "id": "SEJ-T6-PDP-035",
+      "printed_page_range": "170–172",
+      "sp": [
+        "12.4.5"
+      ],
+      "textbook_focus": "Malaysia dalam PBB serta peranan keselamatan dan kerjasama antarabangsa",
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    },
+    {
+      "year": 6,
+      "pdp": 36,
+      "id": "SEJ-T6-PDP-036",
+      "printed_page_range": "162–172",
+      "sp": [
+        "12.4.1",
+        "12.4.2"
+      ],
+      "textbook_focus": "Kajian kes cadangan tentang kerjasama Malaysia dalam organisasi dunia",
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "source_level": "DIGITAL_BOOK_TEXT_TOPIC_PAGE_CROSSWALK",
+      "text_source_accessed": true,
+      "exact_exercise_visual_verified": false,
+      "teacher_approved": false,
+      "release_ready": false
+    }
+  ]
+}

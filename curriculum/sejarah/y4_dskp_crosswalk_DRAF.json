@@ -1,0 +1,391 @@
+{
+  "year": 4,
+  "source": "KPM DSKP KSSR Sejarah Semakan 2017",
+  "drive_file_id": "1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP",
+  "source_url": "https://drive.google.com/file/d/1lKTJr3UpUn-miV_FUwIu46kV4KWZr4zP/view",
+  "extraction": "Text processed from user-connected Drive DSKP; not page-by-page visual validation",
+  "status": "DRAF",
+  "standards": [
+    {
+      "sk": "1.1",
+      "title": "Pengertian dan Kemahiran Ilmu Sejarah",
+      "theme": "Mari Belajar Sejarah",
+      "sp": [
+        {
+          "code": "1.1.1",
+          "text": "Menyatakan pengertian sejarah."
+        },
+        {
+          "code": "1.1.2",
+          "text": "Mengenal pasti sumber dalam sejarah."
+        },
+        {
+          "code": "1.1.3",
+          "text": "Menjelaskan kaedah penyelidikan sejarah."
+        },
+        {
+          "code": "1.1.4",
+          "text": "Membezakan konsep ruang dan masa dalam sejarah."
+        },
+        {
+          "code": "1.1.5",
+          "text": "Menghuraikan sebab dan akibat dalam peristiwa sejarah."
+        },
+        {
+          "code": "K1.1.6",
+          "text": "Menyatakan kepentingan mempelajari sejarah."
+        },
+        {
+          "code": "K1.1.7",
+          "text": "Menerangkan kepentingan mengambil iktibar daripada peristiwa lalu."
+        },
+        {
+          "code": "K1.1.8",
+          "text": "Menjelaskan kepentingan meraikan sesuatu peristiwa sejarah negara."
+        },
+        {
+          "code": "K1.1.9",
+          "text": "Menghurai kepentingan memelihara sumber sejarah untuk generasi akan datang."
+        }
+      ]
+    },
+    {
+      "sk": "1.2",
+      "title": "Pengertian Diri dan Keluarga",
+      "theme": "Mari Belajar Sejarah",
+      "sp": [
+        {
+          "code": "1.2.1",
+          "text": "Menyatakan biodata diri."
+        },
+        {
+          "code": "1.2.2",
+          "text": "Menjelaskan pengertian keluarga asas dan kembangan."
+        },
+        {
+          "code": "1.2.3",
+          "text": "Membandingkan peranan anggota keluarga."
+        },
+        {
+          "code": "1.2.4",
+          "text": "Menghuraikan perkembangan diri mengikut garis masa."
+        },
+        {
+          "code": "K1.2.5",
+          "text": "Menunjuk cara adab yang perlu diamalkan dalam keluarga."
+        },
+        {
+          "code": "K1.2.6",
+          "text": "Menjelaskan kepentingan menghormati peranan setiap ahli keluarga."
+        },
+        {
+          "code": "K1.2.7",
+          "text": "Menghuraikan kepentingan akhlak yang mulia untuk mewujudkan hubungan kekeluargaan yang harmoni."
+        }
+      ]
+    },
+    {
+      "sk": "1.3",
+      "title": "Sejarah Sekolah",
+      "theme": "Mari Belajar Sejarah",
+      "sp": [
+        {
+          "code": "1.3.1",
+          "text": "Menyatakan nama dan alamat sekolah."
+        },
+        {
+          "code": "1.3.2",
+          "text": "Mengenal pasti lokasi sekolah."
+        },
+        {
+          "code": "1.3.3",
+          "text": "Menjelaskan sejarah sekolah."
+        },
+        {
+          "code": "1.3.4",
+          "text": "Menghuraikan maklumat sekolah yang lengkap."
+        },
+        {
+          "code": "K1.3.5",
+          "text": "Menerangkan kepentingan tanggungjawab murid terhadap sekolah."
+        },
+        {
+          "code": "K1.3.6",
+          "text": "Menjelaskan kepentingan mengiktiraf jasa dan sumbangan sekolah kepada diri serta masyarakat."
+        },
+        {
+          "code": "K1.3.7",
+          "text": "Menghuraikan kepentingan sekolah sebagai sebuah institusi yang membina masyarakat dan negara."
+        }
+      ]
+    },
+    {
+      "sk": "1.4",
+      "title": "Kawasan Tempat Tinggal",
+      "theme": "Mari Belajar Sejarah",
+      "sp": [
+        {
+          "code": "1.4.1",
+          "text": "Menyatakan maklumat lengkap mengenai tempat tinggal."
+        },
+        {
+          "code": "1.4.2",
+          "text": "Menerangkan bentuk muka bumi kawasan tempat tinggal."
+        },
+        {
+          "code": "1.4.3",
+          "text": "Menjelaskan sejarah tempat tinggal."
+        },
+        {
+          "code": "1.4.4",
+          "text": "Menghuraikan tokoh setempat di tempat anda."
+        },
+        {
+          "code": "K1.4.5",
+          "text": "Menyatakan kepentingan menjaga kemudahan awam di tempat tinggal."
+        },
+        {
+          "code": "K1.4.6",
+          "text": "Menerangkan kepentingan menjaga kebersihan dan keindahan di tempat tinggal."
+        },
+        {
+          "code": "K1.4.7",
+          "text": "Menjelaskan kepentingan sikap menghargai kawasan tempat tinggal."
+        }
+      ]
+    },
+    {
+      "sk": "2.1",
+      "title": "Zaman Air Batu",
+      "theme": "Zaman Air Batu",
+      "sp": [
+        {
+          "code": "2.1.1",
+          "text": "Menyatakan maksud Zaman Air Batu."
+        },
+        {
+          "code": "2.1.2",
+          "text": "Menyenaraikan garis masa Zaman Air Batu."
+        },
+        {
+          "code": "2.1.3",
+          "text": "Menerangkan perubahan Zaman Air Batu Akhir."
+        },
+        {
+          "code": "2.1.4",
+          "text": "Menghuraikan kesan perubahan Zaman Air Batu Akhir di Asia Tenggara."
+        },
+        {
+          "code": "K2.1.5",
+          "text": "Menerangkan kepentingan mengambil iktibar perubahan zaman dalam kehidupan manusia."
+        },
+        {
+          "code": "K2.1.6",
+          "text": "Menjelaskan kepentingan langkah memelihara dan memulihara alam sekitar."
+        },
+        {
+          "code": "K2.1.7",
+          "text": "Menghuraikan kepentingan usaha mengekalkan kelestarian alam sekitar."
+        }
+      ]
+    },
+    {
+      "sk": "3.1",
+      "title": "Kehidupan Manusia Zaman Prasejarah",
+      "theme": "Zaman Prasejarah",
+      "sp": [
+        {
+          "code": "3.1.1",
+          "text": "Menyatakan maksud Zaman Prasejarah."
+        },
+        {
+          "code": "3.1.2",
+          "text": "Memberi contoh lokasi Zaman Prasejarah di negara kita."
+        },
+        {
+          "code": "3.1.3",
+          "text": "Menghuraikan ciri kehidupan dari aspek kegiatan sosial dan ekonomi manusia Zaman Prasejarah."
+        },
+        {
+          "code": "3.1.4",
+          "text": "Menghuraikan sumbangan teknologi Zaman Prasejarah kepada kemajuan inovasi pada masa kini."
+        },
+        {
+          "code": "K3.1.5",
+          "text": "Menyatakan kepentingan memulihara artifak Zaman Prasejarah."
+        },
+        {
+          "code": "K3.1.6",
+          "text": "Menjelaskan sikap bersedia untuk menghadapi perubahan persekitaran."
+        },
+        {
+          "code": "K3.1.7",
+          "text": "Menghuraikan kepentingan sumbangan Zaman Prasejarah terhadap peradaban negara."
+        }
+      ]
+    },
+    {
+      "sk": "4.1",
+      "title": "Kerajaan Melayu Awal",
+      "theme": "Kerajaan Melayu Awal",
+      "sp": [
+        {
+          "code": "4.1.1",
+          "text": "Menamakan Kerajaan Melayu Awal di Alam Melayu."
+        },
+        {
+          "code": "4.1.2",
+          "text": "Menyatakan lokasi Kerajaan Melayu Awal di Kepulauan Melayu."
+        },
+        {
+          "code": "4.1.3",
+          "text": "Menjelaskan hubungan diplomatik Kerajaan Melayu Awal di Kepulauan Melayu."
+        },
+        {
+          "code": "4.1.4",
+          "text": "Menghuraikan kegiatan ekonomi Kerajaan Melayu Awal di Kepulauan Melayu."
+        },
+        {
+          "code": "K4.1.5",
+          "text": "Menerangkan kepentingan menjalin hubungan diplomatik."
+        },
+        {
+          "code": "K4.1.6",
+          "text": "Menjelaskan kepentingan perdagangan jalan laut kepada negara."
+        },
+        {
+          "code": "K4.1.7",
+          "text": "Menghuraikan kepentingan sumbangan Kerajaan Melayu Awal terhadap ekonomi negara."
+        }
+      ]
+    },
+    {
+      "sk": "5.1",
+      "title": "Tokoh Terbilang Kesultanan Melayu Melaka",
+      "theme": "Tokoh Terbilang Kesultanan Melayu Melaka",
+      "sp": [
+        {
+          "code": "5.1.1",
+          "text": "Menyatakan struktur masyarakat Zaman Kesultanan Melayu Melaka."
+        },
+        {
+          "code": "5.1.2",
+          "text": "Menjelaskan maksud tokoh terbilang dalam Kesultanan Melayu Melaka."
+        },
+        {
+          "code": "5.1.3",
+          "text": "Mengkategorikan peranan Sultan, Bendahara, dan Laksamana dalam Kesultanan Melayu Melaka."
+        },
+        {
+          "code": "5.1.4",
+          "text": "Menerangkan cara menghargai keistimewaan tokoh terbilang Kesultanan Melayu Melaka."
+        },
+        {
+          "code": "K5.1.5",
+          "text": "Menjelaskan kepentingan mencontohi nilai murni tokoh terbilang."
+        },
+        {
+          "code": "K5.1.6",
+          "text": "Menghuraikan kepentingan menghargai sumbangan tokoh."
+        }
+      ]
+    },
+    {
+      "sk": "5.2",
+      "title": "Pengasas Kesultanan Melayu Melaka",
+      "theme": "Tokoh Terbilang Kesultanan Melayu Melaka",
+      "sp": [
+        {
+          "code": "5.2.1",
+          "text": "Menyatakan latar belakang pengasas Kesultanan Melayu Melaka."
+        },
+        {
+          "code": "5.2.2",
+          "text": "Menerangkan rentetan peristiwa perjalanan pengasas Kesultanan Melayu Melaka."
+        },
+        {
+          "code": "5.2.3",
+          "text": "Menjelaskan peristiwa pembukaan Melaka."
+        },
+        {
+          "code": "5.2.4",
+          "text": "Menghuraikan asal usul nama Melaka dari pelbagai sumber."
+        },
+        {
+          "code": "K5.2.5",
+          "text": "Menerangkan kepentingan sifat-sifat kepimpinan tokoh yang boleh dicontohi."
+        },
+        {
+          "code": "K5.2.6",
+          "text": "Menjelaskan kepentingan sumbangan pengasas Kesultanan Melayu Melaka."
+        },
+        {
+          "code": "K5.2.7",
+          "text": "Menghuraikan kepentingan sikap taat setia kepada raja dan negara."
+        }
+      ]
+    },
+    {
+      "sk": "5.3",
+      "title": "Tun Perak Sebagai Bendahara Melaka",
+      "theme": "Tokoh Terbilang Kesultanan Melayu Melaka",
+      "sp": [
+        {
+          "code": "5.3.1",
+          "text": "Menceritakan riwayat hidup Tun Perak."
+        },
+        {
+          "code": "5.3.2",
+          "text": "Menganalisis peranan Tun Perak sebagai Bendahara Melaka."
+        },
+        {
+          "code": "5.3.3",
+          "text": "Menghuraikan kebijaksanaan Tun Perak dalam membina kegemilangan Kesultanan Melayu Melaka."
+        },
+        {
+          "code": "K5.3.4",
+          "text": "Mengambarkan cara menyatakan penghargaan terhadap jasa dan sumbangan Tun Perak."
+        },
+        {
+          "code": "K5.3.5",
+          "text": "Menjelaskan nilai kepimpinan Tun Perak yang boleh dicontohi."
+        },
+        {
+          "code": "K5.3.6",
+          "text": "Menghuraikan kepentingan nilai taat setia kepada pemimpin."
+        }
+      ]
+    },
+    {
+      "sk": "5.4",
+      "title": "Hang Tuah sebagai Laksamana Melaka",
+      "theme": "Tokoh Terbilang Kesultanan Melayu Melaka",
+      "sp": [
+        {
+          "code": "5.4.1",
+          "text": "Menyatakan riwayat hidup Hang Tuah."
+        },
+        {
+          "code": "5.4.2",
+          "text": "Menjelaskan kualiti diri Hang Tuah sebagai Laksamana Melaka."
+        },
+        {
+          "code": "5.4.3",
+          "text": "Menganalisis peranan Hang Tuah sebagai Laksamana Melaka."
+        },
+        {
+          "code": "K5.4.4",
+          "text": "Mencontohi kesetiaan Hang Tuah sebagai Laksamana Melaka."
+        },
+        {
+          "code": "K5.4.5",
+          "text": "Menjelaskan kebijaksanaan tokoh dalam menyelesaikan sesuatu masalah."
+        },
+        {
+          "code": "K5.4.6",
+          "text": "Mencadangkan sikap bertanggungjawab mempertahankan kedaulatan negara."
+        }
+      ]
+    }
+  ]
+}

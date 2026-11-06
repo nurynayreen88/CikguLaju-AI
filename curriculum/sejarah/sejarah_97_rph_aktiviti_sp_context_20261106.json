@@ -1,0 +1,983 @@
+{
+  "date": "2026-11-06",
+  "status": "DRAF_PEDAGOGI_97_SEMUA_UNIT",
+  "description": "97 crafted contextual activity matrices based on KSSR DSKP SP and corresponding textbook units; do not claim visual page validation or official teacher approval. Supplemental examples are not reprints of publisher exercises.",
+  "total": 97,
+  "counts": {
+    "4": 32,
+    "5": 32,
+    "6": 33
+  },
+  "records": [
+    {
+      "year": 4,
+      "number": 5,
+      "id": "SEJ-T4-PDP-005",
+      "stimulus": "contoh profil murid rekaan dan carta keluarga asas/kembangan",
+      "task1": "melengkapkan profil rekaan dan menandakan hubungan dalam dua carta keluarga",
+      "task2": "membandingkan ciri keluarga asas dengan keluarga kembangan melalui dua contoh",
+      "pbd_evidence": "satu carta salasilah tanpa maklumat peribadi sebenar berserta dua perbezaan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 6,
+      "id": "SEJ-T4-PDP-006",
+      "stimulus": "kad tanggungjawab anggota keluarga yang pelbagai",
+      "task1": "memadankan peranan beberapa anggota keluarga dengan situasi rumah",
+      "task2": "menyusun jadual persamaan dan perbezaan peranan lalu menjelaskan amalan menghormati semua anggota",
+      "pbd_evidence": "jadual banding beza tiga peranan keluarga dengan satu contoh adab",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 7,
+      "id": "SEJ-T4-PDP-007",
+      "stimulus": "contoh garis masa perkembangan kanak-kanak yang direka",
+      "task1": "menyusun peristiwa perkembangan mengikut urutan usia dan menanda selang masa",
+      "task2": "menghasilkan garis masa diri dengan pilihan butiran tidak sensitif atau watak rekaan dan menerangkan perubahannya",
+      "pbd_evidence": "garis masa empat peristiwa serta satu pengajaran tentang hubungan keluarga",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 8,
+      "id": "SEJ-T4-PDP-008",
+      "stimulus": "pelan sekolah contoh dan gambar lokasi kemudahan awam",
+      "task1": "menandakan lokasi sekolah pada peta setempat tanpa mendedahkan alamat rumah murid",
+      "task2": "melakar pelan ringkas ruang sekolah dan menamakan peranan satu kemudahan",
+      "pbd_evidence": "pelan sekolah berlabel dengan nama dan alamat sekolah yang disahkan guru",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 9,
+      "id": "SEJ-T4-PDP-009",
+      "stimulus": "foto sekolah dahulu dan kini serta petikan buku tahunan sekolah",
+      "task1": "menyusun dua atau tiga peristiwa sekolah berdasarkan sumber bertarikh",
+      "task2": "menghasilkan kapsyen peristiwa sekolah dan menyatakan jasa warga sekolah yang relevan",
+      "pbd_evidence": "garis masa sejarah sekolah dengan sekurang-kurangnya dua bukti",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 10,
+      "id": "SEJ-T4-PDP-010",
+      "stimulus": "contoh carta organisasi dan rekod pencapaian sekolah",
+      "task1": "mengkategorikan maklumat sekolah seperti lokasi, pentadbiran, simbol dan pencapaian",
+      "task2": "menyediakan kad profil sekolah menggunakan sumber yang diberi guru, tanpa data peribadi",
+      "pbd_evidence": "kad maklumat sekolah lengkap dengan sumber bagi setiap fakta utama",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 11,
+      "id": "SEJ-T4-PDP-011",
+      "stimulus": "dua foto sekolah dari masa berbeza dan maklumat arkib sekolah yang dibenarkan",
+      "task1": "membina persoalan inkuiri tentang perubahan sekolah dan jadual dua sumber",
+      "task2": "membandingkan keadaan sekolah dahulu dan kini serta membentang dapatan dan batas bukti",
+      "pbd_evidence": "laporan kajian kes satu persoalan, dua bukti, satu perubahan dan iktibar",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 12,
+      "id": "SEJ-T4-PDP-012",
+      "stimulus": "peta fizikal daerah contoh serta gambar bentuk muka bumi",
+      "task1": "mencari kedudukan kawasan tempat tinggal pada peta umum tanpa alamat rumah individu",
+      "task2": "mengaitkan bentuk muka bumi seperti sungai, bukit atau dataran dengan ciri kawasan",
+      "pbd_evidence": "peta kawasan berlabel dan dua penerangan bentuk muka bumi",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 13,
+      "id": "SEJ-T4-PDP-013",
+      "stimulus": "dua peta lama dan baharu atau foto kawasan setempat",
+      "task1": "mengenal pasti satu perubahan setempat melalui sumber yang bertarikh",
+      "task2": "menyusun kronologi kawasan dan menjelaskan bagaimana kemudahan berkembang",
+      "pbd_evidence": "garis masa kawasan dengan dua bukti perubahan dan sumber",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 14,
+      "id": "SEJ-T4-PDP-014",
+      "stimulus": "kad biodata tokoh komuniti yang disahkan sekolah atau muzium tempatan",
+      "task1": "menyaring sumbangan tokoh setempat daripada petikan dan foto sumber",
+      "task2": "menghasilkan poster tokoh yang membezakan biografi daripada sumbangan kepada masyarakat",
+      "pbd_evidence": "poster tokoh dengan dua sumbangan dan satu alasan menghargai jasa",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 15,
+      "id": "SEJ-T4-PDP-015",
+      "stimulus": "ilustrasi perubahan iklim Kala Kuaterner dan rajah epok Pleistosen/Holosen",
+      "task1": "membezakan maksud Zaman Air Batu dengan dua ciri keadaan bumi",
+      "task2": "menyusun garis masa perubahan suhu, pencairan ais dan kenaikan paras laut secara berperingkat",
+      "pbd_evidence": "garis masa sekurang-kurangnya tiga perubahan dengan istilah betul",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 16,
+      "id": "SEJ-T4-PDP-016",
+      "stimulus": "gambar perbandingan litupan ais dan bentuk muka bumi",
+      "task1": "menandakan ciri Zaman Air Batu Akhir pada jadual sebelum/selepas",
+      "task2": "membuat inferens berasaskan rajah tentang perubahan habitat apabila suhu meningkat",
+      "pbd_evidence": "jadual tiga perubahan dan penerangan sebab-akibat perubahan iklim",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 17,
+      "id": "SEJ-T4-PDP-017",
+      "stimulus": "peta Pentas Sunda dan Asia Tenggara ketika paras laut berbeza",
+      "task1": "melabel kawasan daratan bersambung dalam peta Pentas Sunda",
+      "task2": "menerangkan hubungan kenaikan paras laut, pulau, sungai dan pergerakan manusia/haiwan",
+      "pbd_evidence": "peta berlabel dan dua kesan perubahan Zaman Air Batu Akhir di Asia Tenggara",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 18,
+      "id": "SEJ-T4-PDP-018",
+      "stimulus": "garis masa prasejarah dan peta tapak arkeologi Malaysia",
+      "task1": "menyatakan maksud Zaman Prasejarah melalui petunjuk ketiadaan tulisan",
+      "task2": "mengenal pasti lokasi tapak prasejarah dalam peta dan mencatat bukti artifak untuk setiap lokasi",
+      "pbd_evidence": "peta dua lokasi prasejarah dengan penerangan satu bukti",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 19,
+      "id": "SEJ-T4-PDP-019",
+      "stimulus": "gambar peralatan batu, tempat perlindungan dan kegiatan sara hidup",
+      "task1": "mengelaskan aktiviti sosial serta ekonomi bagi beberapa tahap zaman prasejarah",
+      "task2": "membanding perubahan cara hidup memburu, mengumpul hasil, bercucuk tanam dan menetap",
+      "pbd_evidence": "jadual kegiatan sosial-ekonomi dengan dua perubahan beralasan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 20,
+      "id": "SEJ-T4-PDP-020",
+      "stimulus": "kad peralatan batu dan hasil ciptaan teknologi masa kini",
+      "task1": "memadankan alat prasejarah dengan fungsi dan keperluan manusia ketika itu",
+      "task2": "membina carta dahulu–kini yang menjelaskan kesinambungan inovasi serta kesesuaian bukti",
+      "pbd_evidence": "dua contoh sumbangan teknologi prasejarah dan satu inovasi moden berkaitan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 21,
+      "id": "SEJ-T4-PDP-021",
+      "stimulus": "foto tinggalan arkeologi dan peta tapak yang mempunyai keterangan sumber",
+      "task1": "menggubal persoalan kajian tentang bagaimana artifak menunjukkan kehidupan prasejarah",
+      "task2": "menilai dua jenis bukti, membezakan fakta dengan inferens dan membentang rumusan",
+      "pbd_evidence": "laporan kes tapak prasejarah dengan dua bukti, satu inferens dan iktibar pemeliharaan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 22,
+      "id": "SEJ-T4-PDP-022",
+      "stimulus": "peta kerajaan awal Alam Melayu dan kad nama kerajaan",
+      "task1": "memadankan nama kerajaan awal dengan kedudukan pada peta serantau",
+      "task2": "membina peta berlabel serta menyatakan kepentingan lokasi laluan maritim",
+      "pbd_evidence": "peta dua kerajaan dengan lokasi dan sumber rujukan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 23,
+      "id": "SEJ-T4-PDP-023",
+      "stimulus": "peta perdagangan dan petikan hubungan diplomatik kerajaan Melayu awal",
+      "task1": "mengasingkan contoh hubungan diplomatik daripada pertukaran perdagangan",
+      "task2": "menyusun rajah hubungan kerajaan awal dengan kuasa luar dan menjelaskan tujuan hubungan",
+      "pbd_evidence": "rajah dua hubungan diplomatik berserta kepentingannya",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 24,
+      "id": "SEJ-T4-PDP-024",
+      "stimulus": "kad barangan dagang, gambar pelabuhan dan laluan perdagangan",
+      "task1": "mengelaskan hasil ekonomi kerajaan awal seperti pertanian, perdagangan dan hasil hutan",
+      "task2": "melakar laluan barang dari kawasan pengeluaran ke pusat perdagangan dan menjelaskan kepentingannya",
+      "pbd_evidence": "peta aliran dua kegiatan ekonomi dan satu kesan kemakmuran",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 25,
+      "id": "SEJ-T4-PDP-025",
+      "stimulus": "rajah hierarki masyarakat Kesultanan Melayu Melaka",
+      "task1": "melengkapkan struktur masyarakat pemerintah dan diperintah serta mendefinisi tokoh terbilang",
+      "task2": "menilai mengapa peranan tertentu dianggap penting dalam sejarah Melaka",
+      "pbd_evidence": "rajah struktur dan dua ciri tokoh terbilang dengan sumber",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 26,
+      "id": "SEJ-T4-PDP-026",
+      "stimulus": "kad jawatan Sultan, Bendahara dan Laksamana dalam istana Melaka",
+      "task1": "mengelaskan tugas tiga jawatan utama mengikut bidang kuasa",
+      "task2": "melakonkan mesyuarat istana ringkas dengan tugas setiap jawatan yang tepat",
+      "pbd_evidence": "jadual tiga jawatan dengan dua tugas dan contoh",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 27,
+      "id": "SEJ-T4-PDP-027",
+      "stimulus": "ilustrasi sumbangan tokoh terbilang Melaka",
+      "task1": "memilih dua sifat tokoh yang boleh dicontohi berdasarkan tindakan bersumber",
+      "task2": "menghasilkan kad penghargaan yang menyatakan sumbangan serta kaitan dengan tanggungjawab hari ini",
+      "pbd_evidence": "kad dua sumbangan dan dua alasan penghargaan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 28,
+      "id": "SEJ-T4-PDP-028",
+      "stimulus": "peta laluan pengasas Melaka dan petikan catatan sumber",
+      "task1": "menyusun rentetan perjalanan pengasas Kesultanan Melayu Melaka mengikut kronologi",
+      "task2": "melakar laluan perpindahan pada peta dan menghuraikan keadaan yang mendorong pilihan lokasi",
+      "pbd_evidence": "garis masa dan peta laluan berserta satu faktor lokasi",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 29,
+      "id": "SEJ-T4-PDP-029",
+      "stimulus": "ilustrasi penemuan tapak pembukaan Melaka dan lokasi muara sungai",
+      "task1": "mengenal pasti peristiwa utama pembukaan Melaka menurut buku teks",
+      "task2": "menghasilkan urutan gambar peristiwa dan menilai faktor strategik lokasi Melaka",
+      "pbd_evidence": "empat kad urutan peristiwa dengan dua alasan lokasi",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 30,
+      "id": "SEJ-T4-PDP-030",
+      "stimulus": "dua versi cerita asal usul nama Melaka daripada sumber yang dikenal pasti",
+      "task1": "membezakan kandungan cerita dalam dua sumber dengan mencatat persamaan",
+      "task2": "menyediakan jadual tafsiran berbeza tanpa menetapkan cerita legenda sebagai bukti tunggal",
+      "pbd_evidence": "jadual dua sumber, dua perbezaan dan catatan had bukti",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 31,
+      "id": "SEJ-T4-PDP-031",
+      "stimulus": "peta perjalanan pengasas dan dua petikan sejarah Melaka",
+      "task1": "menggubal soalan kajian tentang mengapa lokasi Melaka dipilih",
+      "task2": "membandingkan keterangan sumber lalu membina kronologi dan simpulan yang menandakan unsur legenda",
+      "pbd_evidence": "laporan kes dengan persoalan, dua sumber dan kesimpulan berasas",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 32,
+      "id": "SEJ-T4-PDP-032",
+      "stimulus": "kad peristiwa pentadbiran Tun Perak dan peta hubungan Melaka",
+      "task1": "membina garis masa ringkas latar hidup Tun Perak berpandukan sumber",
+      "task2": "menghubungkan peranan Bendahara dengan kebijaksanaan pentadbiran menggunakan bukti peristiwa",
+      "pbd_evidence": "garis masa ringkas dan dua peranan Tun Perak bersumber",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 33,
+      "id": "SEJ-T4-PDP-033",
+      "stimulus": "petikan sumber tentang kepimpinan dan hubungan luar Tun Perak",
+      "task1": "mengelaskan keputusan politik, pertahanan dan diplomasi Tun Perak",
+      "task2": "menilai kesan keputusan tersebut terhadap kegemilangan Melaka melalui peta sebab-akibat",
+      "pbd_evidence": "peta sebab-akibat dua keputusan dan satu nilai kepimpinan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 34,
+      "id": "SEJ-T4-PDP-034",
+      "stimulus": "kad riwayat Hang Tuah dan gambaran peranan Laksamana Melaka",
+      "task1": "menyusun peristiwa utama riwayat Hang Tuah menurut sumber",
+      "task2": "mengenal pasti kualiti diri yang digambarkan dalam naratif dan membezakan teladan dengan kepastian sejarah",
+      "pbd_evidence": "garis masa Hang Tuah dan dua kualiti diri dengan contoh",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 35,
+      "id": "SEJ-T4-PDP-035",
+      "stimulus": "peta pelayaran dan petikan peranan Hang Tuah di Melaka",
+      "task1": "mengkategorikan peranan Hang Tuah dalam pertahanan, diplomasi dan kesetiaan",
+      "task2": "membincangkan kesan peranannya serta batas sumber hikayat terhadap fakta sejarah",
+      "pbd_evidence": "jadual tiga peranan dengan contoh tindakan dan sumber",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 4,
+      "number": 36,
+      "id": "SEJ-T4-PDP-036",
+      "stimulus": "dua petikan hikayat atau naratif tentang Hang Tuah yang dilabel jelas",
+      "task1": "menggubal soalan inkuiri tentang nilai kepimpinan Hang Tuah dan jenis sumber",
+      "task2": "membandingkan fakta, legenda dan inferens kemudian membentang dua pengajaran yang beralasan",
+      "pbd_evidence": "laporan kes dua sumber, tiga kategori bukti dan satu rumusan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 5,
+      "id": "SEJ-T5-PDP-005",
+      "stimulus": "jadual kepercayaan masyarakat awal Tanah Melayu dan peta Melaka",
+      "task1": "mengelaskan bentuk kepercayaan awal dengan pernyataan yang tepat dan beradab",
+      "task2": "menyusun garis masa kedatangan serta perkembangan Islam dalam Kesultanan Melayu Melaka",
+      "pbd_evidence": "peta konsep latar kepercayaan dan dua fakta kedatangan Islam",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 6,
+      "id": "SEJ-T5-PDP-006",
+      "stimulus": "petikan berlabel daripada undang-undang negeri Melayu dan Perlembagaan Persekutuan",
+      "task1": "menghubungkan kedudukan Islam dalam pentadbiran negeri Melayu dengan garis masa sebelum merdeka",
+      "task2": "membandingkan kedudukan Islam sebagai agama Persekutuan dengan kebebasan agama lain secara tepat",
+      "pbd_evidence": "jadual perubahan kedudukan agama berserta dua fakta Perlembagaan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 7,
+      "id": "SEJ-T5-PDP-007",
+      "stimulus": "contoh aktiviti muafakat komuniti pelbagai agama",
+      "task1": "mengenal pasti sumbangan nilai agama kepada kerjasama dalam masyarakat",
+      "task2": "menilai dua situasi hormat terhadap agama berbeza dan membina peraturan perbincangan beradab",
+      "pbd_evidence": "kad tindakan perpaduan dengan dua justifikasi toleransi",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 8,
+      "id": "SEJ-T5-PDP-008",
+      "stimulus": "peta wilayah penutur bahasa Melayu dan contoh prasasti atau manuskrip",
+      "task1": "menyusun garis ringkas asal usul dan perkembangan bahasa Melayu daripada petikan",
+      "task2": "menandakan kawasan utama penutur bahasa Melayu dalam peta dan memberi contoh penggunaannya",
+      "pbd_evidence": "peta wilayah dan garis masa perkembangan bahasa dengan sumber",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 9,
+      "id": "SEJ-T5-PDP-009",
+      "stimulus": "dua petikan penggunaan bahasa Melayu dalam perdagangan dahulu dan pentadbiran kini",
+      "task1": "membandingkan peranan bahasa Melayu sebagai lingua franca dengan fungsi kebangsaan masa kini",
+      "task2": "menyusun peta peranan bahasa dalam perpaduan dan pendidikan sambil menghormati bahasa ibunda",
+      "pbd_evidence": "jadual dua zaman dengan tiga fungsi bahasa Melayu",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 10,
+      "id": "SEJ-T5-PDP-010",
+      "stimulus": "contoh manuskrip lama, peta penutur bahasa dan keratan penggunaan bahasa",
+      "task1": "membina persoalan kajian tentang perubahan peranan bahasa Melayu",
+      "task2": "membandingkan dua sumber daripada masa berlainan dan mencadangkan usaha memartabatkan bahasa",
+      "pbd_evidence": "laporan kes satu persoalan, dua bukti, satu tindakan bahasa",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 11,
+      "id": "SEJ-T5-PDP-011",
+      "stimulus": "peta kedatangan kuasa asing serta kad istilah campur tangan, penjajahan, naungan",
+      "task1": "memadankan istilah dengan maksud dan contoh sejarah yang tepat",
+      "task2": "membina kronologi kuasa asing yang terlibat mengikut lokasi serta tempoh",
+      "pbd_evidence": "jadual tiga istilah dan garis masa kuasa asing",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 12,
+      "id": "SEJ-T5-PDP-012",
+      "stimulus": "gambar pelabuhan dan kad kepentingan ekonomi/strategik Tanah Melayu",
+      "task1": "mengelaskan faktor kedatangan kuasa asing kepada ekonomi, politik atau lokasi",
+      "task2": "membina peta sebab-akibat yang menghubungkan faktor dengan tindakan penjajahan",
+      "pbd_evidence": "dua faktor kedatangan kuasa asing dengan bukti",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 13,
+      "id": "SEJ-T5-PDP-013",
+      "stimulus": "petikan perubahan pentadbiran dan gambaran kegiatan ekonomi ketika penjajahan",
+      "task1": "membandingkan struktur pentadbiran sebelum dan selepas campur tangan asing",
+      "task2": "membina carta kesan sosioekonomi yang membezakan manfaat terhad dan kesan negatif terhadap masyarakat",
+      "pbd_evidence": "jadual dua perubahan pentadbiran serta dua kesan sosioekonomi",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 14,
+      "id": "SEJ-T5-PDP-014",
+      "stimulus": "kad tokoh penentangan seperti Dol Said, Rentap dan Tok Janggut dengan sumber",
+      "task1": "memadankan tokoh dengan tempat serta sebab penentangan yang berkaitan",
+      "task2": "menyusun matriks tokoh, tindakan kuasa asing dan alasan perjuangan tanpa mencampurkan zaman",
+      "pbd_evidence": "jadual sekurang-kurangnya tiga tokoh dan sebab penentangan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 15,
+      "id": "SEJ-T5-PDP-015",
+      "stimulus": "garis masa perjuangan tokoh tempatan dan peta lokasi penentangan",
+      "task1": "menyusun dua siri peristiwa penentangan mengikut urutan dan lokasi",
+      "task2": "membandingkan strategi yang digunakan serta iktibar menghargai pejuang",
+      "pbd_evidence": "dua garis masa ringkas dan dua pengajaran perjuangan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 16,
+      "id": "SEJ-T5-PDP-016",
+      "stimulus": "foto pemimpin kemerdekaan dan kad usaha rundingan atau gerakan politik",
+      "task1": "memadankan tokoh kemerdekaan dengan sumbangan yang disokong sumber",
+      "task2": "menyusun langkah rundingan, perpaduan parti dan persediaan menuju kemerdekaan dalam carta",
+      "pbd_evidence": "peta tokoh-usaha dan kronologi tiga langkah kemerdekaan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 17,
+      "id": "SEJ-T5-PDP-017",
+      "stimulus": "gambar laungan kemerdekaan dan salinan atur cara rasmi bertarikh",
+      "task1": "mengelaskan peristiwa menjelang 31 Ogos 1957 mengikut urutan",
+      "task2": "menghasilkan garis masa pengisytiharan kemerdekaan dan menjelaskan kepentingan peristiwa",
+      "pbd_evidence": "garis masa lengkap dengan lokasi dan dua detik pengisytiharan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 18,
+      "id": "SEJ-T5-PDP-018",
+      "stimulus": "dua sumber kemerdekaan seperti pengisytiharan dan foto perhimpunan",
+      "task1": "membina soalan kajian tentang bagaimana perpaduan menyokong kemerdekaan",
+      "task2": "membandingkan dua sumber dan membentang sumbangan dua tokoh serta batas maklumat",
+      "pbd_evidence": "laporan kajian kes dua sumber, dua tokoh, satu rumusan iktibar",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 19,
+      "id": "SEJ-T5-PDP-019",
+      "stimulus": "gambar Yang di-Pertuan Agong dan diagram Majlis Raja-Raja",
+      "task1": "membezakan Ketua Utama Negara dengan ketua kerajaan tanpa mencampurkan bidang kuasa",
+      "task2": "membina carta ringkas pemilihan Yang di-Pertuan Agong oleh Majlis Raja-Raja berdasarkan teks",
+      "pbd_evidence": "carta fungsi Majlis Raja-Raja dan kedudukan Agong",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 20,
+      "id": "SEJ-T5-PDP-020",
+      "stimulus": "gambar istiadat pertabalan dan petikan bidang kuasa Perlembagaan",
+      "task1": "menyusun tertib umum istiadat pertabalan dengan rujukan rasmi",
+      "task2": "mengkategorikan bidang kuasa Yang di-Pertuan Agong serta menerangkan prinsip raja berperlembagaan",
+      "pbd_evidence": "senarai langkah istiadat dan jadual bidang kuasa",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 21,
+      "id": "SEJ-T5-PDP-021",
+      "stimulus": "gambar keris panjang diraja, tengkolok dan alat kebesaran rasmi",
+      "task1": "memadankan nama alat kebesaran dengan rupa serta fungsi istiadat",
+      "task2": "membina galeri kad maklumat alat kebesaran sambil menjelaskan cara menghormati lambang negara",
+      "pbd_evidence": "tiga kad alat kebesaran dengan nama, fungsi dan adab",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 22,
+      "id": "SEJ-T5-PDP-022",
+      "stimulus": "imej rasmi Jata Negara dan garis masa penggunaannya",
+      "task1": "mengenal pasti latar sejarah penggunaan Jata Negara daripada sumber",
+      "task2": "melabel unsur utama pada Jata Negara tanpa mencampurkan simbol negeri dan negara",
+      "pbd_evidence": "garis masa Jata Negara dan rajah lambang berlabel",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 23,
+      "id": "SEJ-T5-PDP-023",
+      "stimulus": "imej rasmi Jata Negara dengan unsur harimau, perisai dan bulan sabit",
+      "task1": "memadankan unsur Jata Negara dengan maksud yang dinyatakan dalam sumber",
+      "task2": "membina kad penerangan mengapa identiti rasmi perlu dihormati",
+      "pbd_evidence": "rajah sekurang-kurangnya tiga unsur dan maksudnya",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 24,
+      "id": "SEJ-T5-PDP-024",
+      "stimulus": "imej bendera kebangsaan pada beberapa tahun serta garis masa",
+      "task1": "menyusun fakta sejarah penciptaan dan perubahan bendera kebangsaan",
+      "task2": "menghubungkan nama Jalur Gemilang dengan sejarah serta peristiwa penggunaan bendera",
+      "pbd_evidence": "garis masa dua perubahan dan nama bendera",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 25,
+      "id": "SEJ-T5-PDP-025",
+      "stimulus": "imej Jalur Gemilang warna sebenar dan panduan lambang rasmi",
+      "task1": "melabel warna, jalur, bulan dan bintang pada imej bendera",
+      "task2": "membina jadual makna simbol dan membetulkan contoh tafsiran yang salah",
+      "pbd_evidence": "empat padanan warna/lambang dengan makna tepat",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 26,
+      "id": "SEJ-T5-PDP-026",
+      "stimulus": "poster panduan penggunaan dan pelupusan bendera secara hormat",
+      "task1": "mengkategorikan situasi menaikkan, mempamer dan menyimpan bendera dengan betul",
+      "task2": "melakonkan cara menegur penggunaan bendera yang tidak tepat dengan beradab",
+      "pbd_evidence": "senarai semak etika sekurang-kurangnya empat perkara",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 27,
+      "id": "SEJ-T5-PDP-027",
+      "stimulus": "dua imej bendera dari konteks sejarah berbeza dan garis masa",
+      "task1": "membina persoalan inkuiri tentang asal usul Jalur Gemilang",
+      "task2": "menilai dua bukti, menghasilkan garis masa dan mencadangkan amalan menghormati bendera",
+      "pbd_evidence": "laporan kes dua sumber, satu kronologi dan etika bendera",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 28,
+      "id": "SEJ-T5-PDP-028",
+      "stimulus": "rakaman rasmi atau maklumat sejarah penggubalan lagu Negaraku",
+      "task1": "menyusun peristiwa asal usul lagu kebangsaan dan menamakan lagu",
+      "task2": "membina kad fakta penciptaan dan kegunaan lagu kebangsaan dengan sumber",
+      "pbd_evidence": "garis masa sejarah dan nama lagu Negaraku",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 29,
+      "id": "SEJ-T5-PDP-029",
+      "stimulus": "petikan rasmi maksud lagu Negaraku dan panduan adab semasa dimainkan",
+      "task1": "mentafsir tema utama lagu tanpa menyalin keseluruhan lirik",
+      "task2": "memerhati demonstrasi berdiri hormat dan menghasilkan carta etika ketika menyanyi atau mendengar",
+      "pbd_evidence": "dua penjelasan maksud dan tiga etika dengan contoh",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 30,
+      "id": "SEJ-T5-PDP-030",
+      "stimulus": "contoh suasana perhimpunan rasmi dan acara sukan antarabangsa",
+      "task1": "mengenal pasti fungsi Negaraku dalam peristiwa rasmi",
+      "task2": "membina peta kaitan lagu kebangsaan, identiti dan perpaduan rakyat",
+      "pbd_evidence": "dua sebab peranan lagu dalam pembinaan jati diri",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 31,
+      "id": "SEJ-T5-PDP-031",
+      "stimulus": "petikan Perkara 152 Perlembagaan dan contoh penggunaan bahasa di ruang awam",
+      "task1": "membezakan kedudukan bahasa kebangsaan dengan penggunaan bahasa lain",
+      "task2": "membina peta peranan bahasa kebangsaan sebagai alat perpaduan dan ilmu",
+      "pbd_evidence": "jadual kedudukan perlembagaan dan dua peranan bahasa",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 32,
+      "id": "SEJ-T5-PDP-032",
+      "stimulus": "gambar Dewan Bahasa dan Pustaka dan bahan penerbitan bahasa",
+      "task1": "memadankan institusi berkaitan bahasa dengan tugas khusus yang diketahui",
+      "task2": "mencadangkan satu program sekolah memartabatkan penggunaan bahasa Melayu yang berhemah",
+      "pbd_evidence": "kad institusi-fungsi dan satu cadangan program",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 33,
+      "id": "SEJ-T5-PDP-033",
+      "stimulus": "dua contoh komunikasi yang berlainan laras bahasa di sekolah dan media",
+      "task1": "mengelaskan cabaran penggunaan bahasa kebangsaan dalam konteks harian",
+      "task2": "menilai cadangan memperbaik penggunaan bahasa Melayu tanpa merendahkan bahasa lain",
+      "pbd_evidence": "peta cabaran dan dua tindakan penyelesaian",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 34,
+      "id": "SEJ-T5-PDP-034",
+      "stimulus": "foto bunga raya dan garis masa pemilihan bunga kebangsaan",
+      "task1": "menyatakan latar belakang pemilihan bunga raya daripada bahan bersumber",
+      "task2": "menanda warna bunga dan menjelaskan sebab bunga kebangsaan menjadi lambang identiti",
+      "pbd_evidence": "kad fakta sejarah pemilihan bunga raya serta makna warna",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 35,
+      "id": "SEJ-T5-PDP-035",
+      "stimulus": "ilustrasi lima kelopak bunga raya dan teks lima prinsip Rukun Negara",
+      "task1": "memadankan lima kelopak dengan lima prinsip Rukun Negara tanpa menokok simbol baharu",
+      "task2": "membina poster nilai yang menghubungkan prinsip Rukun Negara dengan situasi murid",
+      "pbd_evidence": "poster lima prinsip dan satu contoh amalan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 5,
+      "number": 36,
+      "id": "SEJ-T5-PDP-036",
+      "stimulus": "dua bahan sejarah pemilihan bunga raya dan imej rasmi lambang negara",
+      "task1": "membina soalan kajian mengapa bunga raya dipilih sebagai simbol negara",
+      "task2": "membandingkan sumber dan membentang kaitan warna serta lima kelopak dengan jati diri",
+      "pbd_evidence": "laporan kes dua sumber, sebab pemilihan dan satu pengajaran",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 4,
+      "id": "SEJ-T6-PDP-004",
+      "stimulus": "peta Malaysia serta kad ketua negeri yang disemak semasa sesi",
+      "task1": "melabel negeri-negeri Malaysia pada peta kosong",
+      "task2": "memadankan institusi ketua negeri dengan negeri masing-masing tanpa menyamakan gelaran",
+      "pbd_evidence": "peta negeri lengkap dan jadual dua jenis gelaran ketua negeri",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 5,
+      "id": "SEJ-T6-PDP-005",
+      "stimulus": "peta pentadbiran negeri Malaysia dengan tanda ibu negeri dan bandar diraja",
+      "task1": "memadankan ibu negeri dengan negeri yang berkenaan menggunakan atlas",
+      "task2": "membandingkan ibu negeri dan bandar diraja, serta menjelaskan negeri yang tidak mempunyai bandar diraja",
+      "pbd_evidence": "jadual ibu negeri dan bandar diraja yang tidak dikelirukan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 6,
+      "id": "SEJ-T6-PDP-006",
+      "stimulus": "kad bendera dan jata negeri serta contoh lagu negeri dari sumber rasmi",
+      "task1": "memadankan tiga simbol negeri dengan negeri yang betul",
+      "task2": "membina galeri lambang negeri dan menjelaskan cara menghormati simbol negeri",
+      "pbd_evidence": "tiga kad identiti negeri dengan bendera, lagu dan jata",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 7,
+      "id": "SEJ-T6-PDP-007",
+      "stimulus": "garis masa peristiwa perpaduan menjelang pengisytiharan Rukun Negara",
+      "task1": "menyatakan sebab Rukun Negara diperkenalkan selepas peristiwa sejarah relevan",
+      "task2": "membina rantaian sebab–matlamat–harapan masyarakat berasaskan sumber",
+      "pbd_evidence": "dua sebab pengenalan Rukun Negara dengan bukti",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 8,
+      "id": "SEJ-T6-PDP-008",
+      "stimulus": "teks rasmi Rukun Negara beserta matlamat dan lima prinsip",
+      "task1": "memadankan matlamat Rukun Negara dengan prinsip yang menyokongnya",
+      "task2": "melakar peta konsep lima prinsip dan menjelaskan maksud dua prinsip pilihan",
+      "pbd_evidence": "jadual matlamat dan lima prinsip dengan penerangan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 9,
+      "id": "SEJ-T6-PDP-009",
+      "stimulus": "kad situasi sekolah seperti menghormati undang-undang dan menjaga kesopanan",
+      "task1": "mengelaskan tindakan harian mengikut prinsip Rukun Negara yang berkaitan",
+      "task2": "melakonkan penyelesaian konflik kecil secara adil dan menghormati rakan",
+      "pbd_evidence": "dua situasi, prinsip berkaitan dan tindakan yang sesuai",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 10,
+      "id": "SEJ-T6-PDP-010",
+      "stimulus": "petikan pengisytiharan Rukun Negara dan gambar kegiatan pelbagai kaum",
+      "task1": "membina persoalan kajian tentang perpaduan sebelum dan selepas Rukun Negara",
+      "task2": "membandingkan dua sumber dan membentang tiga contoh amalan prinsip di sekolah",
+      "pbd_evidence": "laporan kajian kes dua sumber dan tiga aplikasi prinsip",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 11,
+      "id": "SEJ-T6-PDP-011",
+      "stimulus": "peta petempatan masyarakat Malaysia dahulu dan kini bersama kad kegiatan ekonomi",
+      "task1": "mengenal pasti kepelbagaian kaum serta lokasi petempatan melalui peta",
+      "task2": "membandingkan corak kegiatan ekonomi tradisional dengan aktiviti masa kini tanpa stereotaip",
+      "pbd_evidence": "jadual petempatan dan perubahan kegiatan ekonomi berserta bukti",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 12,
+      "id": "SEJ-T6-PDP-012",
+      "stimulus": "gambar alat muzik dan tarian daripada komuniti berbeza dengan label sumber",
+      "task1": "memadankan contoh alat muzik atau tarian dengan komuniti yang mengamalkannya",
+      "task2": "membina galeri budaya yang menerangkan fungsi persembahan dan kepelbagaian amalan",
+      "pbd_evidence": "tiga kad alat muzik atau tarian dengan nama dan sumber",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 13,
+      "id": "SEJ-T6-PDP-013",
+      "stimulus": "gambar permainan congkak, gasing, sepak raga dan permainan tradisional lain",
+      "task1": "mengelaskan jenis permainan tradisional mengikut bahan dan cara bermain",
+      "task2": "membina arahan ringkas satu permainan dan membandingkan nilai kerjasama atau kesukanan",
+      "pbd_evidence": "tiga nama permainan dan satu penerangan peraturan tepat",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 14,
+      "id": "SEJ-T6-PDP-014",
+      "stimulus": "petikan cerita rakyat yang dikenal pasti sumbernya",
+      "task1": "menyusun peristiwa penting cerita rakyat menurut urutan naratif",
+      "task2": "membezakan pengajaran moral cerita dengan fakta sejarah yang memerlukan sumber tambahan",
+      "pbd_evidence": "ringkasan cerita empat urutan dan satu nilai murni",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 15,
+      "id": "SEJ-T6-PDP-015",
+      "stimulus": "imej tempat ibadat pelbagai agama dan petikan Perlembagaan",
+      "task1": "menamakan kepelbagaian agama serta kepercayaan masyarakat secara hormat",
+      "task2": "menerangkan kedudukan Islam sebagai agama Persekutuan dengan teks yang betul",
+      "pbd_evidence": "jadual pelbagai agama dan satu fakta perlembagaan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 16,
+      "id": "SEJ-T6-PDP-016",
+      "stimulus": "petikan Perlembagaan Persekutuan tentang amalan agama lain",
+      "task1": "membezakan kedudukan agama Persekutuan dengan kebebasan beragama",
+      "task2": "membincangkan situasi hormat terhadap amalan agama yang berbeza tanpa memaksa murid berkongsi kepercayaan sendiri",
+      "pbd_evidence": "dua contoh amalan menghormati hak beragama",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 17,
+      "id": "SEJ-T6-PDP-017",
+      "stimulus": "gambar masjid, kuil, gereja, tokong dan tempat ibadat yang relevan",
+      "task1": "memadankan nama rumah ibadat dengan gambar yang dilabel tepat",
+      "task2": "merangka peraturan lawatan pendidikan yang menghormati kesucian tempat ibadat",
+      "pbd_evidence": "empat padanan tempat ibadat dan dua peraturan hormat",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 18,
+      "id": "SEJ-T6-PDP-018",
+      "stimulus": "dua bahan info rasmi tentang masyarakat berbilang agama",
+      "task1": "membina soalan kajian bagaimana kepelbagaian agama dipelihara secara aman",
+      "task2": "membandingkan bukti perlembagaan dan contoh aktiviti muafakat komuniti",
+      "pbd_evidence": "laporan kes dua sumber dan tiga amalan keharmonian",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 19,
+      "id": "SEJ-T6-PDP-019",
+      "stimulus": "gambar dan kalendar perayaan masyarakat Malaysia yang berlainan",
+      "task1": "mengelaskan perayaan utama mengikut komuniti yang menyambutnya tanpa menyamaratakan semua individu",
+      "task2": "menghasilkan kalendar perayaan berserta penjelasan sumber tarikh yang boleh berubah",
+      "pbd_evidence": "kalendar empat perayaan dengan nama dan komuniti berkaitan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 20,
+      "id": "SEJ-T6-PDP-020",
+      "stimulus": "kad cerita tujuan sambutan beberapa perayaan",
+      "task1": "memadankan tujuan sambutan dengan tradisi perayaan yang sepadan",
+      "task2": "membandingkan nilai kekeluargaan, kesyukuran dan kebersamaan dalam dua perayaan",
+      "pbd_evidence": "jadual dua perayaan, tujuan dan satu persamaan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 21,
+      "id": "SEJ-T6-PDP-021",
+      "stimulus": "gambar sambutan perayaan dahulu dan kini daripada sumber berlabel tahun",
+      "task1": "membandingkan cara sambutan perayaan dari aspek pakaian, komunikasi dan ziarah",
+      "task2": "menghasilkan poster perubahan dengan penekanan kepada hormat budaya dan mengelak stereotaip",
+      "pbd_evidence": "poster dua perubahan perayaan dan satu amalan perpaduan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 22,
+      "id": "SEJ-T6-PDP-022",
+      "stimulus": "kad biodata Perdana Menteri dan garis masa pelantikan daripada sumber rasmi bertarikh",
+      "task1": "menyusun nama Perdana Menteri Malaysia mengikut urutan yang disemak tarikh",
+      "task2": "membina garis masa dan menyatakan satu biodata ringkas bagi beberapa pemimpin",
+      "pbd_evidence": "jadual urutan Perdana Menteri bersumber dan garis masa",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 23,
+      "id": "SEJ-T6-PDP-023",
+      "stimulus": "rajah institusi eksekutif dan petikan fungsi Perdana Menteri",
+      "task1": "mengelaskan tugas Perdana Menteri dalam pentadbiran, dasar dan penyelarasan kerajaan",
+      "task2": "melakonkan mesyuarat kabinet contoh untuk menunjukkan peranan ketua kerajaan secara tepat",
+      "pbd_evidence": "carta bidang tugas Perdana Menteri dengan tiga contoh",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 24,
+      "id": "SEJ-T6-PDP-024",
+      "stimulus": "garis masa dasar atau pencapaian negara di bawah pentadbiran Perdana Menteri berbeza",
+      "task1": "memadankan inisiatif negara dengan era kepimpinan yang sesuai berdasarkan bukti",
+      "task2": "membandingkan dua pencapaian serta menilai kesannya tanpa mengutamakan parti politik",
+      "pbd_evidence": "dua kad pencapaian negara dengan tarikh, sumber dan kesan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 25,
+      "id": "SEJ-T6-PDP-025",
+      "stimulus": "foto kegiatan pertanian, perlombongan dan perdagangan awal Malaysia",
+      "task1": "menyusun perkembangan sektor utama ekonomi mengikut urutan masa",
+      "task2": "menghasilkan carta perubahan daripada kegiatan tradisional kepada sektor moden",
+      "pbd_evidence": "garis masa tiga sektor dengan contoh perkembangan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 26,
+      "id": "SEJ-T6-PDP-026",
+      "stimulus": "kad perkilangan, perkhidmatan, pertanian dan pelancongan serta peta ekonomi",
+      "task1": "mengelaskan contoh kegiatan ekonomi mengikut sektor utama",
+      "task2": "membina peta sumbangan sektor kepada pekerjaan dan pembangunan setempat",
+      "pbd_evidence": "jadual empat sektor dengan contoh dan peranan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 27,
+      "id": "SEJ-T6-PDP-027",
+      "stimulus": "graf pencapaian ekonomi Malaysia daripada penerbitan rasmi dengan tahun dinyatakan",
+      "task1": "mentafsir satu graf pertumbuhan atau keluaran industri tanpa mengubah data asal",
+      "task2": "membina kapsyen dua pencapaian ekonomi yang menyatakan tahun, sektor dan manfaat",
+      "pbd_evidence": "dua pernyataan pencapaian ekonomi berserta bukti data",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 28,
+      "id": "SEJ-T6-PDP-028",
+      "stimulus": "dua sumber data tentang perubahan sektor ekonomi Malaysia",
+      "task1": "membina persoalan kajian tentang perubahan ekonomi dahulu dan kini",
+      "task2": "membandingkan graf atau peta sektor dari dua tempoh dan menghuraikan peluang serta cabaran",
+      "pbd_evidence": "laporan kes dua bukti data, satu perubahan dan satu kesimpulan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 29,
+      "id": "SEJ-T6-PDP-029",
+      "stimulus": "foto kejayaan atlet Malaysia dan pertandingan peringkat berbeza dengan tarikh",
+      "task1": "memadankan pencapaian sukan dengan sukan serta peringkat pertandingan yang betul",
+      "task2": "menganalisis bagaimana aktiviti sukan boleh menyatukan rakyat pelbagai latar",
+      "pbd_evidence": "dua contoh pencapaian dan tiga langkah perpaduan melalui sukan",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 30,
+      "id": "SEJ-T6-PDP-030",
+      "stimulus": "poster atau garis masa acara sukan antarabangsa yang pernah dianjur Malaysia",
+      "task1": "menyusun acara utama mengikut tahun dan jenis sukan",
+      "task2": "menghasilkan peta impak penganjuran kepada ekonomi, kemudahan dan imej negara",
+      "pbd_evidence": "jadual dua penganjuran dengan tahun dan peranan Malaysia",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 31,
+      "id": "SEJ-T6-PDP-031",
+      "stimulus": "kad tokoh sukan Malaysia dahulu dan kejayaan atlet masa kini",
+      "task1": "memadankan kisah usaha tokoh terdahulu dengan nilai latihan dan ketekunan",
+      "task2": "membina carta pengaruh tokoh sukan kepada penyertaan generasi baharu",
+      "pbd_evidence": "dua tokoh terdahulu dan satu hubungan inspirasi bersumber",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 32,
+      "id": "SEJ-T6-PDP-032",
+      "stimulus": "peta Asia Tenggara dan simbol ASEAN serta organisasi antarabangsa",
+      "task1": "melabel negara anggota ASEAN mengikut sumber semasa yang dinyatakan tahun",
+      "task2": "membina rajah peranan Malaysia dalam kerjasama ASEAN dan membezakan organisasi serantau/antarabangsa",
+      "pbd_evidence": "peta organisasi dan dua peranan Malaysia dalam ASEAN",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 33,
+      "id": "SEJ-T6-PDP-033",
+      "stimulus": "gambar simbol Komanwel serta sumber penyertaan Malaysia",
+      "task1": "mengenal pasti latar hubungan Malaysia dengan negara anggota Komanwel",
+      "task2": "menyusun contoh kerjasama pendidikan, sukan atau hubungan negara anggota mengikut sumber",
+      "pbd_evidence": "kad kerjasama Malaysia dalam Komanwel dengan dua contoh",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 34,
+      "id": "SEJ-T6-PDP-034",
+      "stimulus": "logo OIC dan ringkasan sejarah penyertaan Malaysia daripada sumber rasmi",
+      "task1": "menamakan tujuan utama OIC menggunakan bukti sumber",
+      "task2": "membina carta pelibatan Malaysia melalui dialog atau kerjasama negara anggota",
+      "pbd_evidence": "dua peranan Malaysia dalam OIC yang dapat disokong sumber",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 35,
+      "id": "SEJ-T6-PDP-035",
+      "stimulus": "gambar persidangan PBB dan petikan fungsi pertubuhan",
+      "task1": "membezakan peranan PBB daripada organisasi ASEAN, Komanwel dan OIC",
+      "task2": "menerangkan satu penglibatan Malaysia dalam usaha antarabangsa berdasarkan sumber bertarikh",
+      "pbd_evidence": "jadual dua bentuk pelibatan Malaysia dalam PBB",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    },
+    {
+      "year": 6,
+      "number": 36,
+      "id": "SEJ-T6-PDP-036",
+      "stimulus": "peta organisasi antarabangsa dan dua berita kegiatan kerjasama Malaysia yang bertarikh",
+      "task1": "membina persoalan kajian tentang cara Malaysia menyumbang di peringkat dunia",
+      "task2": "membandingkan bukti pelibatan dalam dua organisasi dan menyimpulkan faedah kerjasama",
+      "pbd_evidence": "laporan kes dua organisasi, dua bukti dan satu iktibar",
+      "evidence_level": "ORIGINAL_PEDAGOGY_DERIVED_FROM_DSKP_AND_TEXTBOOK_UNIT; NOT VERIFIED_EXERCISE"
+    }
+  ]
+}
