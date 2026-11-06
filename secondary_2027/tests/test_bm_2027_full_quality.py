@@ -32,7 +32,7 @@ class BMFullStagingTests(unittest.TestCase):
                     self.assertEqual(rec["tingkatan"],form)
                     self.assertNotEqual(rec["status"],"READY")
                     self.assertEqual(rec["sk"],".".join(rec["sp"].split(".")[:2]))
-                    self.assertTrue(re.fullmatch(r"[1-5]\\.\\d{1,2}\\.\\d{1,2}",rec["sp"]))
+                    self.assertTrue(re.fullmatch(r"[1-5]\.\d{1,2}\.\d{1,2}",rec["sp"]))
                     self.assertNotIn(rec["lesson_id"],ids)
                     ids.add(rec["lesson_id"])
                     for field in FIELDS:
