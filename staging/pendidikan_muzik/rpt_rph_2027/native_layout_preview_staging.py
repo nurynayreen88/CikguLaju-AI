@@ -95,6 +95,9 @@ def build_staging_preview(root, year, pdp):
             or crosswalk.get("official_approval") is not False):
         raise ValueError("Untrusted Muzik DSKP source crosswalk")
     print_code_conflict = bool(crosswalk["sp_not_found_in_source"])
+    source_numbering_unresolved = bool(row.get("dskp_sp_heading_numbering_conflict"))
+    if source_numbering_unresolved and row.get("dskp_crosswalk_approved") is not False:
+        raise ValueError("Unapproved SK/SP source numbering discrepancy")
     if print_code_conflict and (not row.get("dskp_source_printed_sp")
                                 or row.get("dskp_crosswalk_approved") is not False):
         raise ValueError("Missing unapproved Year4 source-code conflict annotation")
@@ -145,6 +148,8 @@ def build_staging_preview(root, year, pdp):
     warnings = ["NOT_PUBLISHED", "NO_REAL_WORD_PDF_RENDER", "NO_CROSS_PLATFORM_PARITY"]
     if print_code_conflict:
         warnings.extend(["SP_CODE_NOT_FOUND_IN_YEAR_DSKP", "DSKP_CROSSWALK_NOT_APPROVED"])
+    if source_numbering_unresolved:
+        warnings.extend(["DSKP_SK_SP_NUMBERING_DISCREPANCY", "DSKP_CROSSWALK_NOT_APPROVED"])
     if candidate_days_zero:
         warnings.extend(["RPT_ZERO_CANDIDATE_SCHOOL_DAYS", "PDP_ANJAL_DO_NOT_AUTO_SHIFT"])
     if not criterion:
@@ -159,5 +164,6 @@ def build_staging_preview(root, year, pdp):
         "phase_text": {key: value for key, (_, value) in labels.items()},
         "warnings": warnings, "approved_for_live": False,
         "source_sp_code_conflict": print_code_conflict,
+        "source_sp_numbering_discrepancy": source_numbering_unresolved,
         "rpt_week_zero_candidate_days": candidate_days_zero,
     }
