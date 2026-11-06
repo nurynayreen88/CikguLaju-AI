@@ -64,6 +64,17 @@ def audit(root=ROOT):
                 flags.append("RUJUKAN_HALAMAN_BELUM_DISAHKAN")
             if domain == "tidak_diketahui":
                 flags.append("BIDANG_TIDAK_DIKENALI")
+            enrichment = record.get("staging_enrichment")
+            if enrichment:
+                # A richer draft is NOT an approved/teacher-ready lesson.
+                assert enrichment.get("content_expert_approved") is False
+                assert enrichment.get("publication") == "HOLD"
+                assert enrichment.get("source_sp_unchanged") is True
+                assert isinstance(enrichment.get("original_activity"), str)
+                assert enrichment["original_activity"].strip()
+                flags.append("PENAMBAHAN_PDP_BELUM_SAH_PAKAR")
+            if record.get("staging_source_review_required") is True:
+                flags.append("SUMBER_KRITIKAL_BELUM_LENGKAP")
             rows.append({"id": record["id"], "domain": domain,
                          "state": record["state"], "flags": flags})
     assert len(rows) == 696
@@ -79,8 +90,14 @@ def audit(root=ROOT):
         "flags": dict(sorted(flag_counts.items())),
         "quality_score_percent": None,
         "quality_80_certified": False,
+        "expanded_activity_draft_count": flag_counts["PENAMBAHAN_PDP_BELUM_SAH_PAKAR"],
+        "short_activity_count": flag_counts["AKTIVITI_TERLALU_RINGKAS_PERLU_SEMAKAN"],
+        "critical_source_review_count": flag_counts["SUMBER_KRITIKAL_BELUM_LENGKAP"],
+        "mechanical_three_step_coverage_percent": round(
+            100 * (690 - flag_counts["AKTIVITI_TERLALU_RINGKAS_PERLU_SEMAKAN"]) / 690, 2
+        ),
         "academic_verification": "BELUM: DSKP, buku teks/mushaf, objektif, PBD & Jawi belum disahkan setiap Lesson",
-        "format_revision": "Nombor Aktiviti Utama dibetulkan tanpa mengubah teks Jawi asal; Word/PDF belum dijana semula",
+        "format_revision": "560 DRAF diperkaya dengan langkah/PBD berdasarkan SP, bukan bukti kandungan tepat; nombor bermula 1; Word/PDF baharu belum diuji",
         "release": "NO_GO",
         "records": rows,
     }
