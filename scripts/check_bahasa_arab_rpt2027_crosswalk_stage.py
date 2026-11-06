@@ -21,6 +21,11 @@ def main():
             assert key not in originals, f"duplicate source: {key}"
             originals[key]=row
     assert len(originals)==298
+    # Unit 1 source pages have existing audit provenance, but are still candidates.
+    unit1=[r for r in originals.values() if int(r["pdp"]) <= 12]
+    assert len(unit1)==60
+    assert all(r.get("halaman_buku_teks_dicadang") for r in unit1), "Missing Unit 1 candidate pages"
+    assert all(r["halaman_buku_disahkan"]=="FALSE" and r["ready"]=="FALSE" for r in unit1)
     counts=Counter(int(k[0]) for k in originals)
     assert dict(sorted(counts.items()))==EXPECTED, counts
     for group in ("A","B"):
