@@ -88,11 +88,16 @@ def enrich_sejarah_source_week_and_book(year, records):
         row["source_unit_page_note"] = original_note
         match = re.match(r"^Buku teks: julat halaman UNIT [\d]+-[\d]+ "
                          r"\(bukan halaman aktiviti disahkan\)\. ", original_note)
-        if not match:
-            raise ValueError(f"Sejarah {year} PdP {number:03d}: unit page note changed")
+        if match:
+            tail = original_note[match.end():]
+        elif original_note.startswith("Halaman buku teks PdP belum disahkan. "):
+            # Some Sejarah source rows intentionally lack a unit page range,
+            # even though the later per-PdP digital crosswalk has source pages.
+            tail = original_note[len("Halaman buku teks PdP belum disahkan. "):]
+        else:
+            raise ValueError(f"Sejarah {year} PdP {number:03d}: source page note unknown")
         row["note"] = (f"Buku teks m/s {pages} (padanan teks digital DRAF; "
-                       "gambar/latihan belum disahkan). " +
-                       original_note[match.end():])
+                       "gambar/latihan belum disahkan). " + tail)
         if match_type != "EXACT_SOURCE_DATE_PAIR":
             row["note"] += (
                 " SEMAK: Kumpulan A bermula sehari selepas tarikh mula "
