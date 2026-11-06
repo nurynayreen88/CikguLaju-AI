@@ -89,6 +89,14 @@ Bukti terperinci disimpan dalam dua fail audit staging:
 
 **Keputusan:** HOLD. Lulusnya ujian sumber/CI bukan kelulusan guru, RPH, dokumen Word/PDF atau deployment.
 
+## RPT 2027 Tahun 3 — sempadan kurikulum & susunan unit
+
+- Indeks yang **belum dijadualkan**: [10 unit Tahun 3](../rpt_2027/sains/tahun3_unit_order_source_candidate_20261106.json), dengan muka surat permulaan Buku Teks asal. Ini bukan RPT 2027 yang boleh dimuat turun.
+- Surat Siaran KPM Bil. 6/2024 (3 Mei 2024) membenarkan **Dokumen Penjajaran KSSR (Semakan 2017) Edisi 3 sebagai pilihan**, bersama DSKP dan MOBIM untuk Sains Tahap I. Rujukan: [surat siaran KPM](https://www.moe.gov.my/storage/files/shares/pekeliling_dan_garis_panduan/surat_siaran/bahagian-pengurusan-sekolah-harian/Surat%20Siaran%20KPM%20Bil.%206%202024%20Pelaksanaan%20Dokumen%20Penjajaran%20Kurikulum%20Standard%20Sekolah%20Rendah%20Edisi%203%20Sains%20Dan%20Math%20Tahap%201.pdf). Perlu nyatakan asas penjajaran yang sekolah/pemilik RPT guna sebelum menulis jadual.
+- RPT 2026 Tahun 3 sumber perbandingan (bukan arahan rasmi KPM): [Rozayus Academy/RPT Sains Tahun 3 SK 2026](https://anyflip.com/plnxv/lfbq/basic). Jangan terus pindahkan minggu 2026 menjadi PdP 2027.
+- Simulasi lima pembetulan tajuk pada salinan sementara DB v25.68 lulus; hanya medan pdp_title berubah semasa transaksi dan rollback berjaya. Laporan [CI](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42181227332). **Belum diterapkan pada DB staging/produksi.**
+- Keperluan seterusnya: pilih RPT 2026/DPK asas yang disahkan, sahkan integrasi kemahiran saintifik dan tiga SP kandungan, reka RPT 2027 A/B landscape+muka depan, kemudian semak Word/PDF setiap PdP.
+
 ## Rujukan bahan dalam Google Drive (lokasi, bukan pengesahan halaman)
 
 | Tahun | DSKP | Buku teks |
