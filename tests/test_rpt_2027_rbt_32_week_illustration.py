@@ -64,7 +64,7 @@ class RBT32WeekIllustrationQA(unittest.TestCase):
                     self.assertIn(phrase, first)
                 self.assertIn("M03 (SIMULASI)", text)
                 self.assertIn("M34 (SIMULASI)", text)
-                self.assertIn("bukan tarikh kelas sebenar", text)
+                self.assertIn("bukan tarikh kelas sebenar", " ".join(text.split()))
                 self.assertIn("1.1" if year == 4 else "4.3" if year == 5 else "5.2", text)
 
 
