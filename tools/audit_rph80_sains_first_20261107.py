@@ -1,0 +1,174 @@
+"""Read-only RPH 80% quality audit queue — start with Sains, 7 Nov 2026.
+
+Works only on the existing staging Sains 342-PdP inventory after its source
+CSV is generated. No Telegram/Web/DB writes, no automatic release approvals.
+A technical pass is NEVER interpreted as an academic quality pass.
+"""
+from __future__ import annotations
+
+import csv
+import json
+import re
+from collections import Counter
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / "build" / "rph80_sains_20261107"
+EXPECTED = {2: 51, 3: 45, 4: 79, 5: 83, 6: 84}
+WEIGHTS = {
+    "sk_sp": 25,
+    "buku_teks_rpt": 25,
+    "aktiviti_pbd": 25,
+    "word_pdf": 15,
+    "telegram_web": 10,
+}
+# Do not call these percentages "quality" while academic evidence is missing.
+BASELINE_EVIDENCE = {
+    "science_pdp_identified": 342,
+    "year3_standalone_draft_word_pdf_ci": 45,
+    "other_years_missing_individual_standalone_qa": 297,
+    "academically_signed_off": 0,
+}
+PRIORITY = {6: 0, 4: 1, 2: 2, 5: 3, 3: 4}
+COLS = (
+    "priority", "tahun", "pdp_code", "pdp_number", "unit", "sp", "tajuk",
+    "source_status", "quality_percent", "dskp_check", "textbook_check",
+    "activities_pbd_check", "word_pdf_check", "telegram_web_check",
+    "teacher_signoff", "blocking_issues", "next_action"
+)
+
+
+def grade_from_evidence(scores, evidence):
+    """Return an academic score only when all five criteria have signed proof.
+
+    Scores are never inferred from file existence, a GitHub CI green tick,
+    a 'DRAF' label, a SOW token or past percentage estimates.
+    """
+    if not isinstance(scores, dict) or not isinstance(evidence, dict):
+        return None
+    required = ("reviewer", "review_date", "dskp", "textbook_pages",
+                "specific_activities_pbd", "rendered_word_pdf", "runtime_parity")
+    if any(not str(evidence.get(k) or "").strip() for k in required):
+        return None
+    if not evidence.get("review_is_for_exact_source_sha"):
+        return None
+    if set(scores) != set(WEIGHTS):
+        return None
+    for item, weight in WEIGHTS.items():
+        score = scores[item]
+        if type(score) is not int or score < 0 or score > weight:
+            return None
+    return sum(scores.values())
+
+
+def build_queue(rows):
+    """Build the per-PdP edit/review queue; preserve all original SK/SP/title."""
+    if not isinstance(rows, list) or len(rows) != 342:
+        raise ValueError("Expected immutable 342 source PdP rows")
+    seen = set()
+    counts = Counter()
+    results = []
+    for row in rows:
+        y = row["tahun"]
+        code = row["pdp_code"]
+        if type(y) is not int or y not in EXPECTED:
+            raise ValueError("Unexpected grade")
+        if (not re.fullmatch(r"SCI-Y[2-6]-PDP-\d{3}", code)
+                or code != f"SCI-Y{y}-PDP-{int(row['pdp_number']):03d}"):
+            raise ValueError("Unexpected source code " + str(code))
+        if code in seen or row["keputusan"] != "HOLD":
+            raise ValueError("Duplicate/approved source in HOLD ledger: " + code)
+        if not row["unit"] or not row["sp"] or not row["tajuk"]:
+            raise ValueError("Incomplete source identity: " + code)
+        seen.add(code)
+        counts[y] += 1
+        if y == 3:
+            status = "EXISTING_45_DRAFTS_NEED_INDIVIDUAL_ACADEMIC_QA"
+            action = ("Semak tugasan guru/murid, bukti PBD dan 23 sempadan PdP; "
+                      "sahkan halaman buku secara visual dan uji Word/PDF serta Web")
+        elif y == 6:
+            status = "NO_INDIVIDUALLY_AUDITED_STANDALONE_RPH"
+            action = ("Sahkan DSKP asal Tahun 6 dan edisi Buku Teks dahulu; "
+                      "bina RPH khusus SP, KPS, aktiviti dan PBD; uji A4")
+        elif y == 4:
+            status = "NO_INDIVIDUALLY_AUDITED_STANDALONE_RPH"
+            action = ("Buka buku teks asal/edisi tepat secara visual; "
+                      "bina RPH khusus SP, KPS, aktiviti dan PBD; uji A4")
+        else:
+            status = "NO_INDIVIDUALLY_AUDITED_STANDALONE_RPH"
+            action = ("Sahkan halaman sebenar buku teks dan SP; bina RPH khusus "
+                      "tanpa pengulangan aktiviti generik, uji A4 dan akses sebenar")
+        results.append({
+            "priority": PRIORITY[y],
+            "tahun": y,
+            "pdp_code": code,
+            "pdp_number": row["pdp_number"],
+            "unit": row["unit"],
+            "sp": row["sp"],
+            "tajuk": row["tajuk"],
+            "source_status": status,
+            "quality_percent": "",  # deliberately NOT measured yet
+            "dskp_check": "TOKEN_ONLY" if y != 6 else "MIRROR_ONLY",
+            "textbook_check": "VISUAL_PENDING",
+            "activities_pbd_check": "DRAFT_YEAR3" if y == 3 else "UNVERIFIED",
+            "word_pdf_check": "YEAR3_45_CI_ONLY" if y == 3 else "UNVERIFIED",
+            "telegram_web_check": "NOT_E2E_TESTED",
+            "teacher_signoff": "MISSING",
+            "blocking_issues": row["isu"],
+            "next_action": action,
+        })
+    if dict(counts) != EXPECTED:
+        raise ValueError("PdP coverage changed or year missing")
+    if sum(r["tahun"] != 3 for r in results) != 297:
+        raise ValueError("Wrong number of records requiring standalone RPH")
+    results.sort(key=lambda r: (r["priority"], int(r["pdp_number"])))
+    return results
+
+
+def main():
+    # Generated from the staged v25.82 immutable source, not a production DB.
+    from tools.audit_sains_342_pdp_release_gate_20261106 import analyze
+    rows, source = analyze()
+    queue = build_queue(rows)
+    OUT.mkdir(parents=True, exist_ok=True)
+    with (OUT / "SAINS_342_QUALITY_REVIEW_QUEUE.csv").open(
+            "w", newline="", encoding="utf-8-sig") as handle:
+        writer = csv.DictWriter(handle, fieldnames=COLS)
+        writer.writeheader()
+        writer.writerows(queue)
+    summary = {
+        "date": "2026-11-07",
+        "scope": "SAINS_Y2_Y6_STAGING_SOURCE_NOT_PRODUCTION",
+        "priority_order_years": [6, 4, 2, 5, 3],
+        "rubric_percent": WEIGHTS,
+        "target_quality_percent": 80,
+        "quality_scores_verified": 0,
+        "quality_score_percent": None,
+        "unverified_quality_must_not_be_assigned": True,
+        "reviewed_source_ids": len(queue),
+        "year_counts": {str(k): EXPECTED[k] for k in EXPECTED},
+        "existing_year3_draft": 45,
+        "not_yet_individually_audited_standalone": 297,
+        "academic_ready": 0,
+        "year1": "OUT_OF_SCOPE_KP2027_ALAM_DAN_MANUSIA",
+        "decision": "HOLD",
+        "source_release_decision": source["decision"],
+        "required_for_80": [
+            "Per-PdP exact DSKP and textbook-page check",
+            "Specific teacher and pupil actions, science process skills and individual PBD",
+            "Native one-page A4 Word and PDF visual smoke tests",
+            "Actual authenticated Telegram and Web source-parity tests",
+            "Human-reviewed rubric, evidence and per-lesson sign-off",
+        ],
+        "no_db_or_runtime_write": True,
+    }
+    (OUT / "SUMMARY_UNSCORED_HOLD.json").write_text(
+        json.dumps(summary, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    print("SAINS_RPH80_STAGING: 342 source entries, 45 Y3 draft, "
+          "297 individual RPH QA missing; 0 quality percentages certified; HOLD")
+
+
+if __name__ == "__main__":
+    main()
