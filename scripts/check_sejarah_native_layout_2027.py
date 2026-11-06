@@ -28,6 +28,10 @@ for y in (4,5,6):
         assert fields["Standard Pembelajaran"]==", ".join(r["sp_codes"])
         assert fields["OBJEKTIF PEMBELAJARAN"]=="; ".join(r["objective"])
         assert fields["PENTAKSIRAN"]==r["pengukuhan_pbd"]["activity"]
+        focus=r["textbook_reference"]["checked_focus_pages"]["printed_page_range"]
+        assert "fokus PdP hlm. "+focus in fields["BAHAN BANTU MENGAJAR"], (y,n,focus)
+        assert "bukan halaman latihan" not in fields["BAHAN BANTU MENGAJAR"]
+        assert "julat unit berdasarkan isi kandungan" not in fields["BAHAN BANTU MENGAJAR"]
         assert layout["activity_header"]==["Fasa / Masa","Aktiviti Pengajaran & Pembelajaran","Catatan"]
         assert len(layout["phases"])==3 and len(layout["footer"])==2
         main=layout["phases"][1]["activity"]
