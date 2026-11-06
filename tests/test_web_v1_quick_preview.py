@@ -29,7 +29,8 @@ class OneClickPreviewTests(unittest.TestCase):
         self.assertNotIn('id="teacher-class" type="text" autocomplete="off" maxlength="40" placeholder="Contoh: 4 Bestari" required', html)
         self.assertNotIn('id="teacher-date" type="date" required', html)
         self.assertNotIn('id="teacher-time" type="time" required', html)
-        self.assertIn('if(!teacherClass.checkValidity()||!teacherDate.checkValidity()||!teacherTime.checkValidity())return null;', html)
+        self.assertIn('if(!teacherClass.checkValidity()||!teacherDate.checkValidity()||', html)
+        self.assertIn('!teacherTimeStart.checkValidity()||!teacherTimeEnd.checkValidity()', html)
         self.assertNotIn('if(!teacherClass.value.trim()||!teacherDate.value||!teacherTime.value', html)
 
     @patch("web.unified_rph_web._has_paid_access", return_value=True)
@@ -41,7 +42,7 @@ class OneClickPreviewTests(unittest.TestCase):
         self.assertEqual(response.status_code, 200, response.get_json())
         payload=response.get_json()
         self.assertEqual(payload["selection"],row["token"])
-        self.assertEqual(payload["teacher"],{"class":"","date":"","time":""})
+        self.assertEqual(payload["teacher"],{"class":"","date":"","time":"","students":""})
         doc=self.client.get("/api/web/rph/word",query_string=args)
         self.assertEqual(doc.status_code,200)
         self.assertTrue(doc.data.startswith(b"PK"))

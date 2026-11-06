@@ -146,6 +146,25 @@ def options():
                         return jsonify(items)
                     subject = request.args.get("subject", "")
                     component = request.args.get("component")
+                    # Mathematics and Science have an independent, grouped
+                    # native PdP sequence. Never substitute weekly RPT IDs.
+                    if subject in ("MATH", "SCIENCE") and kind in ("units", "pdp"):
+                        from web.native_telegram_sequence_rph_client import (
+                            list_native_units, list_native_lessons,
+                            NativeRPHUnavailable,
+                        )
+                        if component not in (None, ""):
+                            return jsonify({"error": "invalid component"}), 400
+                        try:
+                            choices = (list_native_units(year, subject) if kind == "units"
+                                       else list_native_lessons(
+                                           year, subject, request.args.get("unit", "")))
+                        except (NativeRPHUnavailable, ValueError):
+                            return jsonify({
+                                "error": "Telegram native PdP sequence unavailable",
+                                "code": "TELEGRAM_NATIVE_PDP_UNAVAILABLE",
+                            }), 503
+                        return jsonify(choices)
                     if year in range(2, 7):
                         from web.unified_rph_web import SOURCE_SUBJECTS
                         if subject in SOURCE_SUBJECTS:

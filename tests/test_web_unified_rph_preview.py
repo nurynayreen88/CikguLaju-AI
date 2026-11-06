@@ -116,7 +116,7 @@ class UnifiedWebRPHTests(unittest.TestCase):
             with ZipFile(__import__("io").BytesIO(docx.data)) as z:
                 xml = z.read("word/document.xml").decode("utf8")
                 self.assertIn("5 Bestari", xml)
-                self.assertIn("2027-03-08", xml)
+                self.assertIn("08/03/2027", xml)
                 self.assertIn("08:30", xml)
 
     @patch("web.unified_rph_web._has_paid_access", return_value=True)
@@ -146,7 +146,7 @@ class UnifiedWebRPHTests(unittest.TestCase):
     def test_unavailable_subject_is_explicitly_unavailable(self, *_):
         r = self.client.get("/api/web/rph/preview", query_string={"year": 2, "subject": "MATH", "unit": "Unit", "lesson": "33"})
         self.assertEqual(r.status_code, 503)
-        self.assertEqual(r.get_json()["code"], "RPH_SOURCE_NOT_VERIFIED")
+        self.assertEqual(r.get_json()["code"], "TELEGRAM_NATIVE_PDP_RPH_NOT_READY")
         invalid = self.client.get("/api/web/rph/preview", query_string={"year": 2, "subject": "ENGLISH", "unit": "Introduction", "lesson": "e-2-001", "component": "PJ"})
         self.assertEqual(invalid.status_code, 400)
         repeated = self.client.get("/api/web/rph/preview?year=6&year=2&subject=ENGLISH&unit=x&lesson=e-6-001")
