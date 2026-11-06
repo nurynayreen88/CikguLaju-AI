@@ -7,6 +7,7 @@ on:
       - 'rpt_2027/common/calendar_week_2027_a_b_snapshot_20261107_DRAF.json'
       - 'rpt_2027/common/calendar_week_mapping_staging.py'
       - 'rpt_2027/common/sejarah_source_enrichment_staging.py'
+      - 'rpt_2027/common/sejarah_group_a_2027_03_14_holiday_index_evidence_DRAF.json'
       - 'audits/sejarah_y4_y6_primary_textbook_page_evidence_20261106.json'
       - 'scripts/audit_rpt_2027_calendar_master_staging.py'
       - 'tests/test_rpt_2027_calendar_master_staging.py'
