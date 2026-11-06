@@ -30,6 +30,7 @@ from reportlab.lib.enums import TA_CENTER, TA_LEFT
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
 from pypdf import PdfReader
+from legacy_doc_text_safe_staging import normalize_for_legacy_doc, normalize_check
 
 ROOT = Path(__file__).resolve().parents[3]
 SOURCE = ROOT / "staging" / "pendidikan_muzik" / "rpt_rph_2027"
@@ -137,10 +138,13 @@ def audit_one(year, pdp, fmt, preview, parse_input, writer, word_output_dir=None
         state, ai_text, fmt2 = parse_input(payload)
     if fmt2 != fmt:
         raise RuntimeError("Format mismatch")
+    # Preserve page ranges and phrase separators before app.py clean_doc_text.
+    # This is staging-only; production app.py is deliberately left unchanged.
+    adapted_ai_text = normalize_for_legacy_doc(ai_text)
     fn = writer["create_word_file"] if fmt == "word" else writer["create_pdf_file"]
     path = None
     try:
-        path = Path(fn(state, ai_text, f"music_smoke_{year}_{pdp}_{fmt}"))
+        path = Path(fn(state, adapted_ai_text, f"music_smoke_{year}_{pdp}_{fmt}"))
         if not path.is_file() or path.stat().st_size < 1000:
             raise RuntimeError("Empty RPH output")
         if fmt == "word":
@@ -161,7 +165,7 @@ def audit_one(year, pdp, fmt, preview, parse_input, writer, word_output_dir=None
                                      ("PENTAKSIRAN", 16)):
                 expected = " ".join(str(meta[label]).split())
                 actual = " ".join(document.tables[0].cell(row_index, 1).text.split())
-                if not expected or expected == "—" or actual != expected:
+                if not expected or expected == "—" or not normalize_check(expected, actual):
                     raise RuntimeError(f"Word missing/truncated {label}: expected={expected[:80]!r} actual={actual[:80]!r}")
             section = document.sections[0]
             a4 = abs(section.page_width.cm - 21.0) < 0.15 and abs(section.page_height.cm - 29.7) < 0.15
@@ -172,7 +176,8 @@ def audit_one(year, pdp, fmt, preview, parse_input, writer, word_output_dir=None
             if review_folder is not None and (year, pdp) in SELECTED:
                 shutil.copy2(path, review_folder / f"DRAF_SEMAKAN_MZ-Y{year}-{pdp:02d}.docx")
             return {"type": fmt, "bytes": path.stat().st_size, "tables": 3, "a4_section": a4,
-                    "pedagogical_fields_checked": 4, "page_count": None}
+                    "pedagogical_fields_checked": 4, "legacy_punctuation_normalized": adapted_ai_text != ai_text,
+                    "page_count": None}
         reader = PdfReader(str(path))
         pages = len(reader.pages)
         if pages < 1:
@@ -194,7 +199,7 @@ def audit_one(year, pdp, fmt, preview, parse_input, writer, word_output_dir=None
             source_text = " ".join(str(meta[label]).split())
             if not source_text or source_text == "—":
                 raise RuntimeError("Missing source pedagogical field: " + label)
-            probe = " ".join(source_text.split()[:5]).casefold()
+            probe = " ".join(normalize_for_legacy_doc(source_text).split()[:5]).casefold()
             if probe not in text_compact:
                 raise RuntimeError("PDF missing pedagogical text " + label + ": " + probe)
         if "DRAF STAGING" in text or "Kawalan penerbitan" in text:
@@ -205,7 +210,7 @@ def audit_one(year, pdp, fmt, preview, parse_input, writer, word_output_dir=None
         if review_folder is not None and (year, pdp) in SELECTED:
             shutil.copy2(path, review_folder / f"DRAF_SEMAKAN_MZ-Y{year}-{pdp:02d}.pdf")
         return {"type": fmt, "bytes": path.stat().st_size, "pages": pages,
-                "pedagogical_fields_checked": 4,
+                "pedagogical_fields_checked": 4, "legacy_punctuation_normalized": adapted_ai_text != ai_text,
                 "single_page": pages == 1, "a4": True}
     finally:
         if path is not None and path.exists():
@@ -290,6 +295,8 @@ def main():
         "cases": len(results), "docx_ok": sum("error" not in r["word"] for r in results),
         "pdf_ok": sum("error" not in r["pdf"] for r in results),
         "single_page_pdf": sum(r["pdf"].get("single_page") is True for r in results),
+        "punctuation_normalized_word": sum(r["word"].get("legacy_punctuation_normalized") is True for r in results),
+        "punctuation_normalized_pdf": sum(r["pdf"].get("legacy_punctuation_normalized") is True for r in results),
         "word_page_audit": word_page_report,
         "review_sample_files": review_files,
         "missing_explicit_success_criteria": [

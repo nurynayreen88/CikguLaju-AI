@@ -415,6 +415,27 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
             self.assertEqual(matched, counts[year])
         self.assertEqual(len({x["criterion"] for x in overlay.values()}), 81)
 
+    def test_lossless_punctuation_adapter_prevents_wrong_textbook_pages(self):
+        from pathlib import Path
+        spec = _music_importlib_util.spec_from_file_location(
+            "music_legacy_punctuation_staging", SOURCE / "legacy_doc_text_safe_staging.py")
+        adapter = _music_importlib_util.module_from_spec(spec)
+        spec.loader.exec_module(adapter)
+        samples = {
+            "Buku Kesenian halaman 4–5": "Buku Kesenian halaman 4-5",
+            "Buku halaman 46–47, Audio 84–86": "Buku halaman 46-47, Audio 84-86",
+            "melodi—menaik, menurun—serta": "melodi - menaik, menurun - serta",
+            "Guru menyemak peristiwa–bunyi": "Guru menyemak peristiwa-bunyi",
+            "murid ‘menjawab’ “melodi”": "murid 'menjawab' \\"melodi\\"",
+        }
+        for old, expected in samples.items():
+            self.assertEqual(adapter.normalize_for_legacy_doc(old), expected)
+            self.assertTrue(adapter.normalize_check(old, expected))
+        with self.assertRaisesRegex(ValueError, "U\\+266B"):
+            adapter.normalize_for_legacy_doc("simbol ♫ tanpa pengendalian khusus")
+        with self.assertRaises(TypeError):
+            adapter.normalize_for_legacy_doc(None)
+
     def test_music_preview_flags_curriculum_and_calendar_blockers_fail_closed(self):
         """No publication from native staging preview for two invalid SP rows and ten zero-day slots."""
         curriculum, calendar = [], []
