@@ -2,7 +2,9 @@ name: Sejarah 2027 user RPH isolated runtime QA
 on:
   push:
     paths:
-      - 'web/sejarah_2027_user_runtime.py'\n      - 'web/sejarah_2027_native_api.py'\n      - 'tests/test_sejarah_2027_native_api.py'
+      - 'web/sejarah_2027_user_runtime.py'
+      - 'web/sejarah_2027_native_api.py'
+      - 'tests/test_sejarah_2027_native_api.py'
       - 'tests/test_sejarah_2027_native_registration.py'
       - 'tools/run_telegram_with_curriculum_api.py'
       - 'tests/test_sejarah_2027_user_runtime.py'
