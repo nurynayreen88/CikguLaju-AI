@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install 'reportlab==4.2.5' 'pypdf==5.1.0'
+      - run: pip install 'reportlab==4.2.5' 'pypdf==5.1.0' 'PyMuPDF==1.24.14'
       - run: python -m py_compile rpt_2027/common/format_2026_layout_preview.py scripts/build_rpt_2027_standard_preview.py
       - name: Audit source and render each of the 13 A4 landscape PDFs
         run: python -m unittest tests.test_rpt_2027_standard_2026_layout_preview -v
