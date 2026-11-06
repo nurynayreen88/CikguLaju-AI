@@ -1,0 +1,2318 @@
+{
+  "subjek": "Reka Bentuk dan Teknologi",
+  "tahun": 6,
+  "tahun_akademik": 2027,
+  "status": "DRAF_STAGING",
+  "bukan_modul_pengguna": true,
+  "durasi_minit_pdp": 60,
+  "jumlah_jam_minimum_dskp": 32,
+  "bilangan_pdp_cadangan": 32,
+  "dasar": "32 PdP x 60 minit ialah pembahagian editorial CikguLaju berdasarkan 32 jam DSKP, bukan bilangan PdP rasmi KPM.",
+  "struktur_menu": "Tahun → RBT → Unit N: Nama Unit → PdP NNN: Fokus → Jana Bahan",
+  "sumber": [
+    "DSKP KSSR (Semakan 2017) RBT Tahun 6"
+  ],
+  "modul": [
+    {
+      "unit": 1,
+      "tajuk": "Reka Bentuk Produk Elektromekanikal",
+      "sk": [
+        "5.2"
+      ],
+      "jam_dskp": 10,
+      "pdp_cadangan": 10
+    },
+    {
+      "unit": 2,
+      "tajuk": "Pengenalan Asas Sistem Robotik",
+      "sk": [
+        "6.5"
+      ],
+      "jam_dskp": 10,
+      "pdp_cadangan": 10
+    },
+    {
+      "unit": 3,
+      "tajuk": "Penghasilan Produk",
+      "sk": [
+        "8.1"
+      ],
+      "jam_dskp": 12,
+      "pdp_cadangan": 12
+    }
+  ],
+  "pelajaran": [
+    {
+      "pdp": 1,
+      "id": "RBT-T6-PDP-001",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 1,
+      "unit_label": "Unit 1: Reka Bentuk Produk Elektromekanikal",
+      "tajuk": "PdP 001: elemen elektromekanikal",
+      "sk": [
+        "5.2"
+      ],
+      "sp_codes": [
+        "5.2.1"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "5.2.1",
+          "fokus": "Menyatakan elemen elektromekanikal."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "konsep",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.2.1 melalui tugasan penerokaan serta penerangan konsep dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 5.2.1.",
+      "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang reka bentuk produk elektromekanikal; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 5.2.1. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid mengelaskan contoh, menjawab soalan situasi dan menghasilkan nota visual ringkas dengan sekurang-kurangnya dua sebab atau bukti. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.1."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.1.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 2,
+      "id": "RBT-T6-PDP-002",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 1,
+      "unit_label": "Unit 1: Reka Bentuk Produk Elektromekanikal",
+      "tajuk": "PdP 002: elemen elektromekanikal",
+      "sk": [
+        "5.2"
+      ],
+      "sp_codes": [
+        "5.2.2"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "5.2.2",
+          "fokus": "Menerangkan elemen elektromekanikal."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "konsep",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.2.2 melalui tugasan penerokaan serta penerangan konsep dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 5.2.2.",
+      "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang reka bentuk produk elektromekanikal; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 5.2.2. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid mengelaskan contoh, menjawab soalan situasi dan menghasilkan nota visual ringkas dengan sekurang-kurangnya dua sebab atau bukti. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.2."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.2.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 3,
+      "id": "RBT-T6-PDP-003",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 1,
+      "unit_label": "Unit 1: Reka Bentuk Produk Elektromekanikal",
+      "tajuk": "PdP 003: reka bentuk produk eletromekanikal yang akan dihasilkan",
+      "sk": [
+        "5.2"
+      ],
+      "sp_codes": [
+        "5.2.3"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "5.2.3",
+          "fokus": "Melakar reka bentuk produk eletromekanikal yang akan dihasilkan."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.2.3 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 5.2.3.",
+      "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang reka bentuk produk elektromekanikal; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 5.2.3. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.3."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.3.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 4,
+      "id": "RBT-T6-PDP-004",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 1,
+      "unit_label": "Unit 1: Reka Bentuk Produk Elektromekanikal",
+      "tajuk": "PdP 004: reka bentuk produk eletromekanikal yang akan dihasilkan (sesi sambungan 2)",
+      "sk": [
+        "5.2"
+      ],
+      "sp_codes": [
+        "5.2.3"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "5.2.3",
+          "fokus": "Melakar reka bentuk produk eletromekanikal yang akan dihasilkan."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 2,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.2.3 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 5.2.3.",
+      "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang reka bentuk produk elektromekanikal; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 5.2.3. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Ini sesi susulan amali/penambahbaikan ke-2; murid menggunakan rekod percubaan sebelumnya dan memperincikan hasil baharu, bukan mengulang penerangan awal. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.3."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.3.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 5,
+      "id": "RBT-T6-PDP-005",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 1,
+      "unit_label": "Unit 1: Reka Bentuk Produk Elektromekanikal",
+      "tajuk": "PdP 005: lakaran yang dipilih untuk membuat penambahbaikan",
+      "sk": [
+        "5.2"
+      ],
+      "sp_codes": [
+        "5.2.4"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "5.2.4",
+          "fokus": "Menilai lakaran yang dipilih untuk membuat penambahbaikan."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.2.4 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 5.2.4.",
+      "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang reka bentuk produk elektromekanikal; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 5.2.4. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.4."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.4.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 6,
+      "id": "RBT-T6-PDP-006",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 1,
+      "unit_label": "Unit 1: Reka Bentuk Produk Elektromekanikal",
+      "tajuk": "PdP 006: lakaran yang dipilih untuk membuat penambahbaikan (sesi sambungan 2)",
+      "sk": [
+        "5.2"
+      ],
+      "sp_codes": [
+        "5.2.4"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "5.2.4",
+          "fokus": "Menilai lakaran yang dipilih untuk membuat penambahbaikan."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 2,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.2.4 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 5.2.4.",
+      "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang reka bentuk produk elektromekanikal; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 5.2.4. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Ini sesi susulan amali/penambahbaikan ke-2; murid menggunakan rekod percubaan sebelumnya dan memperincikan hasil baharu, bukan mengulang penerangan awal. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.4."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.4.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 7,
+      "id": "RBT-T6-PDP-007",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 1,
+      "unit_label": "Unit 1: Reka Bentuk Produk Elektromekanikal",
+      "tajuk": "PdP 007: produk berdasarkan lakaran dengan menggunakan bahan dan peralatan yang sesuai",
+      "sk": [
+        "5.2"
+      ],
+      "sp_codes": [
+        "5.2.5"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "5.2.5",
+          "fokus": "Membuat produk berdasarkan lakaran dengan menggunakan bahan dan peralatan yang sesuai."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.2.5 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 5.2.5.",
+      "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang reka bentuk produk elektromekanikal; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 5.2.5. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.5."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.5.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 8,
+      "id": "RBT-T6-PDP-008",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 1,
+      "unit_label": "Unit 1: Reka Bentuk Produk Elektromekanikal",
+      "tajuk": "PdP 008: produk berdasarkan lakaran dengan menggunakan bahan dan peralatan yang sesuai (sesi sambungan 2)",
+      "sk": [
+        "5.2"
+      ],
+      "sp_codes": [
+        "5.2.5"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "5.2.5",
+          "fokus": "Membuat produk berdasarkan lakaran dengan menggunakan bahan dan peralatan yang sesuai."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 2,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.2.5 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 5.2.5.",
+      "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang reka bentuk produk elektromekanikal; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 5.2.5. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Ini sesi susulan amali/penambahbaikan ke-2; murid menggunakan rekod percubaan sebelumnya dan memperincikan hasil baharu, bukan mengulang penerangan awal. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.5."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.5.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 9,
+      "id": "RBT-T6-PDP-009",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 1,
+      "unit_label": "Unit 1: Reka Bentuk Produk Elektromekanikal",
+      "tajuk": "PdP 009: produk berdasarkan lakaran dengan menggunakan bahan dan peralatan yang sesuai (sesi sambungan 3)",
+      "sk": [
+        "5.2"
+      ],
+      "sp_codes": [
+        "5.2.5"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "5.2.5",
+          "fokus": "Membuat produk berdasarkan lakaran dengan menggunakan bahan dan peralatan yang sesuai."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 3,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.2.5 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 5.2.5.",
+      "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang reka bentuk produk elektromekanikal; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 5.2.5. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Ini sesi susulan amali/penambahbaikan ke-3; murid menggunakan rekod percubaan sebelumnya dan memperincikan hasil baharu, bukan mengulang penerangan awal. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.5."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.5.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 10,
+      "id": "RBT-T6-PDP-010",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 1,
+      "unit_label": "Unit 1: Reka Bentuk Produk Elektromekanikal",
+      "tajuk": "PdP 010: produk yang dihasilkan",
+      "sk": [
+        "5.2"
+      ],
+      "sp_codes": [
+        "5.2.6"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "5.2.6",
+          "fokus": "Membentangkan produk yang dihasilkan."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "pembentangan",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.2.6 melalui tugasan penerangan hasil kerja dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 5.2.6.",
+      "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang reka bentuk produk elektromekanikal; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 5.2.6. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid membentangkan hasil kerja secara ringkas, menunjukkan bukti/fungsi, menjawab satu soalan rakan dan merekod satu cadangan penambahbaikan. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (rubrik pembentangan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.6."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (rubrik pembentangan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 5.2.6.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 11,
+      "id": "RBT-T6-PDP-011",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 2,
+      "unit_label": "Unit 2: Pengenalan Asas Sistem Robotik",
+      "tajuk": "PdP 011: elemen sistem robotik",
+      "sk": [
+        "6.5"
+      ],
+      "sp_codes": [
+        "6.5.1"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "6.5.1",
+          "fokus": "Menyatakan elemen sistem robotik."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "konsep",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.5.1 melalui tugasan penerokaan serta penerangan konsep dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 6.5.1.",
+      "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang pengenalan asas sistem robotik; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 6.5.1. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid mengelaskan contoh, menjawab soalan situasi dan menghasilkan nota visual ringkas dengan sekurang-kurangnya dua sebab atau bukti. Guru memastikan perisian, peralatan dan bahan digunakan mengikut tatacara keselamatan."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.1."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.1.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 12,
+      "id": "RBT-T6-PDP-012",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 2,
+      "unit_label": "Unit 2: Pengenalan Asas Sistem Robotik",
+      "tajuk": "PdP 012: elemen sistem robotik yang terdapat pada robot",
+      "sk": [
+        "6.5"
+      ],
+      "sp_codes": [
+        "6.5.2"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "6.5.2",
+          "fokus": "Menghuraikan elemen sistem robotik yang terdapat pada robot."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "konsep",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.5.2 melalui tugasan penerokaan serta penerangan konsep dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 6.5.2.",
+      "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang pengenalan asas sistem robotik; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 6.5.2. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid mengelaskan contoh, menjawab soalan situasi dan menghasilkan nota visual ringkas dengan sekurang-kurangnya dua sebab atau bukti. Guru memastikan perisian, peralatan dan bahan digunakan mengikut tatacara keselamatan."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.2."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.2.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 13,
+      "id": "RBT-T6-PDP-013",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 2,
+      "unit_label": "Unit 2: Pengenalan Asas Sistem Robotik",
+      "tajuk": "PdP 013: pemasangan perkakasan pada reka bentuk sebuah robot",
+      "sk": [
+        "6.5"
+      ],
+      "sp_codes": [
+        "6.5.3"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "6.5.3",
+          "fokus": "Menjelaskan pemasangan perkakasan pada reka bentuk sebuah robot."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "konsep",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.5.3 melalui tugasan penerokaan serta penerangan konsep dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 6.5.3.",
+      "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang pengenalan asas sistem robotik; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 6.5.3. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid mengelaskan contoh, menjawab soalan situasi dan menghasilkan nota visual ringkas dengan sekurang-kurangnya dua sebab atau bukti. Guru memastikan perisian, peralatan dan bahan digunakan mengikut tatacara keselamatan."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.3."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.3.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 14,
+      "id": "RBT-T6-PDP-014",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 2,
+      "unit_label": "Unit 2: Pengenalan Asas Sistem Robotik",
+      "tajuk": "PdP 014: reka bentuk produk yang mempunyai elemen sistem robotik",
+      "sk": [
+        "6.5"
+      ],
+      "sp_codes": [
+        "6.5.4"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "6.5.4",
+          "fokus": "Melakar reka bentuk produk yang mempunyai elemen sistem robotik."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.5.4 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 6.5.4.",
+      "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang pengenalan asas sistem robotik; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 6.5.4. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Guru memastikan perisian, peralatan dan bahan digunakan mengikut tatacara keselamatan."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.4."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.4.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 15,
+      "id": "RBT-T6-PDP-015",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 2,
+      "unit_label": "Unit 2: Pengenalan Asas Sistem Robotik",
+      "tajuk": "PdP 015: lakaran yang dipilih untuk membuat penambahbaikan",
+      "sk": [
+        "6.5"
+      ],
+      "sp_codes": [
+        "6.5.5"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "6.5.5",
+          "fokus": "Menilai lakaran yang dipilih untuk membuat penambahbaikan."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.5.5 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 6.5.5.",
+      "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang pengenalan asas sistem robotik; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 6.5.5. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Guru memastikan perisian, peralatan dan bahan digunakan mengikut tatacara keselamatan."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.5."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.5.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 16,
+      "id": "RBT-T6-PDP-016",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 2,
+      "unit_label": "Unit 2: Pengenalan Asas Sistem Robotik",
+      "tajuk": "PdP 016: carta alir sebuah robot yang akan dibina",
+      "sk": [
+        "6.5"
+      ],
+      "sp_codes": [
+        "6.5.6"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "6.5.6",
+          "fokus": "Menghasilkan carta alir sebuah robot yang akan dibina"
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.5.6 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 6.5.6.",
+      "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang pengenalan asas sistem robotik; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 6.5.6. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Guru memastikan perisian, peralatan dan bahan digunakan mengikut tatacara keselamatan."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.6."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.6.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 17,
+      "id": "RBT-T6-PDP-017",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 2,
+      "unit_label": "Unit 2: Pengenalan Asas Sistem Robotik",
+      "tajuk": "PdP 017: atur cara yang dikehendaki berpandukan carta alir yang dibuat",
+      "sk": [
+        "6.5"
+      ],
+      "sp_codes": [
+        "6.5.7"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "6.5.7",
+          "fokus": "Menghasilkan atur cara yang dikehendaki berpandukan carta alir yang dibuat."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.5.7 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 6.5.7.",
+      "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang pengenalan asas sistem robotik; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 6.5.7. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Guru memastikan perisian, peralatan dan bahan digunakan mengikut tatacara keselamatan."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.7."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.7.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 18,
+      "id": "RBT-T6-PDP-018",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 2,
+      "unit_label": "Unit 2: Pengenalan Asas Sistem Robotik",
+      "tajuk": "PdP 018: reka bentuk produk dan penyambungan perkakasan berdasarkan lakaran yang dibuat menggunakan peralatan",
+      "sk": [
+        "6.5"
+      ],
+      "sp_codes": [
+        "6.5.8"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "6.5.8",
+          "fokus": "Membina reka bentuk produk dan penyambungan perkakasan berdasarkan lakaran yang dibuat menggunakan peralatan yang sesuai"
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "amali",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.5.8 melalui tugasan penghasilan dan ujian produk dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 6.5.8.",
+      "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang pengenalan asas sistem robotik; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 6.5.8. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menyiapkan bahagian projek berdasarkan lakaran dan urutan kerja, menguji hasil, merekod penambahbaikan serta mengemas alat dengan selamat. Guru memastikan perisian, peralatan dan bahan digunakan mengikut tatacara keselamatan."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (fungsi prototaip dan rekod ujian) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.8."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (fungsi prototaip dan rekod ujian) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.8.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 19,
+      "id": "RBT-T6-PDP-019",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 2,
+      "unit_label": "Unit 2: Pengenalan Asas Sistem Robotik",
+      "tajuk": "PdP 019: atur cara yang telah dihasilkan pada perkakasan dan menguji kefungsiannya",
+      "sk": [
+        "6.5"
+      ],
+      "sp_codes": [
+        "6.5.9"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "6.5.9",
+          "fokus": "Memindahkan atur cara yang telah dihasilkan pada perkakasan dan menguji kefungsiannya."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "amali",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.5.9 melalui tugasan penghasilan dan ujian produk dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 6.5.9.",
+      "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang pengenalan asas sistem robotik; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 6.5.9. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menyiapkan bahagian projek berdasarkan lakaran dan urutan kerja, menguji hasil, merekod penambahbaikan serta mengemas alat dengan selamat. Guru memastikan perisian, peralatan dan bahan digunakan mengikut tatacara keselamatan."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (fungsi prototaip dan rekod ujian) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.9."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (fungsi prototaip dan rekod ujian) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.9.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 20,
+      "id": "RBT-T6-PDP-020",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 2,
+      "unit_label": "Unit 2: Pengenalan Asas Sistem Robotik",
+      "tajuk": "PdP 020: rumusan dan membentangkan produk yang telah dibina",
+      "sk": [
+        "6.5"
+      ],
+      "sp_codes": [
+        "6.5.10"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "6.5.10",
+          "fokus": "Membuat rumusan dan membentangkan produk yang telah dibina."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "pembentangan",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.5.10 melalui tugasan penerangan hasil kerja dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 6.5.10.",
+      "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang pengenalan asas sistem robotik; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 6.5.10. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid membentangkan hasil kerja secara ringkas, menunjukkan bukti/fungsi, menjawab satu soalan rakan dan merekod satu cadangan penambahbaikan. Guru memastikan perisian, peralatan dan bahan digunakan mengikut tatacara keselamatan."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (rubrik pembentangan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.10."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (rubrik pembentangan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 6.5.10.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 21,
+      "id": "RBT-T6-PDP-021",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 3,
+      "unit_label": "Unit 3: Penghasilan Produk",
+      "tajuk": "PdP 021: produk yang hendak dibina berdasarkan situasi",
+      "sk": [
+        "8.1"
+      ],
+      "sp_codes": [
+        "8.1.1"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "8.1.1",
+          "fokus": "Menyatakan produk yang hendak dibina berdasarkan situasi."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "konsep",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 8.1.1 melalui tugasan penerokaan serta penerangan konsep dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 8.1.1.",
+      "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang penghasilan produk; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 8.1.1. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid mengelaskan contoh, menjawab soalan situasi dan menghasilkan nota visual ringkas dengan sekurang-kurangnya dua sebab atau bukti. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.1."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.1.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 22,
+      "id": "RBT-T6-PDP-022",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 3,
+      "unit_label": "Unit 3: Penghasilan Produk",
+      "tajuk": "PdP 022: gabungan asas teknologi yang sesuai digunakan dengan reka bentuk produk yang akan dibina",
+      "sk": [
+        "8.1"
+      ],
+      "sp_codes": [
+        "8.1.2"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "8.1.2",
+          "fokus": "Menghuraikan gabungan asas teknologi yang sesuai digunakan dengan reka bentuk produk yang akan dibina."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "konsep",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 8.1.2 melalui tugasan penerokaan serta penerangan konsep dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 8.1.2.",
+      "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang penghasilan produk; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 8.1.2. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid mengelaskan contoh, menjawab soalan situasi dan menghasilkan nota visual ringkas dengan sekurang-kurangnya dua sebab atau bukti. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.2."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.2.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 23,
+      "id": "RBT-T6-PDP-023",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 3,
+      "unit_label": "Unit 3: Penghasilan Produk",
+      "tajuk": "PdP 023: reka bentuk produk yang hendak dibina",
+      "sk": [
+        "8.1"
+      ],
+      "sp_codes": [
+        "8.1.3"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "8.1.3",
+          "fokus": "Melakar reka bentuk produk yang hendak dibina."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 8.1.3 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 8.1.3.",
+      "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang penghasilan produk; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 8.1.3. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.3."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.3.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 24,
+      "id": "RBT-T6-PDP-024",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 3,
+      "unit_label": "Unit 3: Penghasilan Produk",
+      "tajuk": "PdP 024: reka bentuk produk yang hendak dibina (sesi sambungan 2)",
+      "sk": [
+        "8.1"
+      ],
+      "sp_codes": [
+        "8.1.3"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "8.1.3",
+          "fokus": "Melakar reka bentuk produk yang hendak dibina."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 2,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 8.1.3 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 8.1.3.",
+      "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang penghasilan produk; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 8.1.3. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Ini sesi susulan amali/penambahbaikan ke-2; murid menggunakan rekod percubaan sebelumnya dan memperincikan hasil baharu, bukan mengulang penerangan awal. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.3."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.3.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 25,
+      "id": "RBT-T6-PDP-025",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 3,
+      "unit_label": "Unit 3: Penghasilan Produk",
+      "tajuk": "PdP 025: dan membuat penambahbaikan pada lakaran yang dipilih",
+      "sk": [
+        "8.1"
+      ],
+      "sp_codes": [
+        "8.1.4"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "8.1.4",
+          "fokus": "Menilai dan membuat penambahbaikan pada lakaran yang dipilih."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 8.1.4 melalui tugasan lakaran/algoritma berlabel dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 8.1.4.",
+      "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang penghasilan produk; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 8.1.4. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menghasilkan lakaran berlabel, pseudokod atau carta alir mengikut fokus PdP. Mereka membandingkan dua pilihan dan menambah satu penjelasan fungsi. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.4."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (lakaran berlabel dan hujah) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.4.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 26,
+      "id": "RBT-T6-PDP-026",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 3,
+      "unit_label": "Unit 3: Penghasilan Produk",
+      "tajuk": "PdP 026: senarai peralatan, bahan, anggaran kos dan jadual kerja",
+      "sk": [
+        "8.1"
+      ],
+      "sp_codes": [
+        "8.1.5"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "8.1.5",
+          "fokus": "Menyediakan senarai peralatan, bahan, anggaran kos dan jadual kerja."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "kos",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 8.1.5 melalui tugasan pengiraan kos bahan dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 8.1.5.",
+      "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang penghasilan produk; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 8.1.5. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menyenaraikan bahan/komponen, kuantiti dan anggaran kos dalam jadual serta menyemak jumlah dan kesesuaian pilihan. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (jadual anggaran kos) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.5."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (jadual anggaran kos) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.5.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 27,
+      "id": "RBT-T6-PDP-027",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 3,
+      "unit_label": "Unit 3: Penghasilan Produk",
+      "tajuk": "PdP 027: produk berfungsi berdasarkan lakaran yang dibuat",
+      "sk": [
+        "8.1"
+      ],
+      "sp_codes": [
+        "8.1.6"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "8.1.6",
+          "fokus": "Membina produk berfungsi berdasarkan lakaran yang dibuat."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "amali",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 8.1.6 melalui tugasan penghasilan dan ujian produk dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 8.1.6.",
+      "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang penghasilan produk; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 8.1.6. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menyiapkan bahagian projek berdasarkan lakaran dan urutan kerja, menguji hasil, merekod penambahbaikan serta mengemas alat dengan selamat. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (fungsi prototaip dan rekod ujian) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.6."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (fungsi prototaip dan rekod ujian) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.6.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 28,
+      "id": "RBT-T6-PDP-028",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 3,
+      "unit_label": "Unit 3: Penghasilan Produk",
+      "tajuk": "PdP 028: produk berfungsi berdasarkan lakaran yang dibuat (sesi sambungan 2)",
+      "sk": [
+        "8.1"
+      ],
+      "sp_codes": [
+        "8.1.6"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "8.1.6",
+          "fokus": "Membina produk berfungsi berdasarkan lakaran yang dibuat."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 2,
+      "aktiviti_kategori": "amali",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 8.1.6 melalui tugasan penghasilan dan ujian produk dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 8.1.6.",
+      "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang penghasilan produk; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 8.1.6. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menyiapkan bahagian projek berdasarkan lakaran dan urutan kerja, menguji hasil, merekod penambahbaikan serta mengemas alat dengan selamat. Ini sesi susulan amali/penambahbaikan ke-2; murid menggunakan rekod percubaan sebelumnya dan memperincikan hasil baharu, bukan mengulang penerangan awal. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (fungsi prototaip dan rekod ujian) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.6."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (fungsi prototaip dan rekod ujian) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.6.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 29,
+      "id": "RBT-T6-PDP-029",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 3,
+      "unit_label": "Unit 3: Penghasilan Produk",
+      "tajuk": "PdP 029: produk berfungsi berdasarkan lakaran yang dibuat (sesi sambungan 3)",
+      "sk": [
+        "8.1"
+      ],
+      "sp_codes": [
+        "8.1.6"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "8.1.6",
+          "fokus": "Membina produk berfungsi berdasarkan lakaran yang dibuat."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 3,
+      "aktiviti_kategori": "amali",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 8.1.6 melalui tugasan penghasilan dan ujian produk dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 8.1.6.",
+      "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang penghasilan produk; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 8.1.6. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menyiapkan bahagian projek berdasarkan lakaran dan urutan kerja, menguji hasil, merekod penambahbaikan serta mengemas alat dengan selamat. Ini sesi susulan amali/penambahbaikan ke-3; murid menggunakan rekod percubaan sebelumnya dan memperincikan hasil baharu, bukan mengulang penerangan awal. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (fungsi prototaip dan rekod ujian) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.6."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (fungsi prototaip dan rekod ujian) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.6.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 30,
+      "id": "RBT-T6-PDP-030",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 3,
+      "unit_label": "Unit 3: Penghasilan Produk",
+      "tajuk": "PdP 030: produk berfungsi berdasarkan lakaran yang dibuat (sesi sambungan 4)",
+      "sk": [
+        "8.1"
+      ],
+      "sp_codes": [
+        "8.1.6"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "8.1.6",
+          "fokus": "Membina produk berfungsi berdasarkan lakaran yang dibuat."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 4,
+      "aktiviti_kategori": "amali",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 8.1.6 melalui tugasan penghasilan dan ujian produk dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 8.1.6.",
+      "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang penghasilan produk; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 8.1.6. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menyiapkan bahagian projek berdasarkan lakaran dan urutan kerja, menguji hasil, merekod penambahbaikan serta mengemas alat dengan selamat. Ini sesi susulan amali/penambahbaikan ke-4; murid menggunakan rekod percubaan sebelumnya dan memperincikan hasil baharu, bukan mengulang penerangan awal. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (fungsi prototaip dan rekod ujian) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.6."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (fungsi prototaip dan rekod ujian) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.6.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 31,
+      "id": "RBT-T6-PDP-031",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 3,
+      "unit_label": "Unit 3: Penghasilan Produk",
+      "tajuk": "PdP 031: dokumentasi mudah proses penghasilan produk dan pembentangan",
+      "sk": [
+        "8.1"
+      ],
+      "sp_codes": [
+        "8.1.7"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "8.1.7",
+          "fokus": "Membuat dokumentasi mudah proses penghasilan produk dan pembentangan"
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "konsep",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 8.1.7 melalui tugasan penerokaan serta penerangan konsep dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 8.1.7.",
+      "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang penghasilan produk; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 8.1.7. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid mengelaskan contoh, menjawab soalan situasi dan menghasilkan nota visual ringkas dengan sekurang-kurangnya dua sebab atau bukti. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.7."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.7.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    },
+    {
+      "pdp": 32,
+      "id": "RBT-T6-PDP-032",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 3,
+      "unit_label": "Unit 3: Penghasilan Produk",
+      "tajuk": "PdP 032: dokumentasi mudah proses penghasilan produk dan pembentangan (sesi sambungan 2)",
+      "sk": [
+        "8.1"
+      ],
+      "sp_codes": [
+        "8.1.7"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "8.1.7",
+          "fokus": "Membuat dokumentasi mudah proses penghasilan produk dan pembentangan"
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 2,
+      "aktiviti_kategori": "konsep",
+      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 8.1.7 melalui tugasan penerokaan serta penerangan konsep dengan bimbingan guru.",
+      "kriteria_kejayaan": "Murid menghasilkan sekurang-kurangnya satu evidens individu/kumpulan yang boleh disemak dan menjelaskan satu keputusan atau penambahbaikan bagi fokus 8.1.7.",
+      "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru mempamerkan contoh atau situasi sebenar tentang penghasilan produk; murid menyatakan masalah, kegunaan atau aspek keselamatan yang diperhatikan."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan satu contoh dan menerangkan fokus 8.1.7. Murid berbincang secara berpasangan, mencatat dua pemerhatian dan menyemak arahan kerja serta risiko yang berkaitan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid mengelaskan contoh, menjawab soalan situasi dan menghasilkan nota visual ringkas dengan sekurang-kurangnya dua sebab atau bukti. Ini sesi susulan amali/penambahbaikan ke-2; murid menggunakan rekod percubaan sebelumnya dan memperincikan hasil baharu, bukan mengulang penerangan awal. Guru mengawasi penggunaan peralatan dan bahan, melarang sambungan elektrik utama serta memastikan kawasan kerja selamat."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.7."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan/kemahiran baharu serta satu amalan kerja selamat; guru merumuskan PdP dan menetapkan penyimpanan hasil untuk sesi berikutnya."
+        }
+      },
+      "pbd_evidens": "Guru menilai evidens murid (helaian konsep dan penjelasan) melalui senarai semak, memberi maklum balas dan merekod pencapaian PBD mengikut 8.1.7.",
+      "keselamatan": "Tindakan amali perlu diawasi guru; gunakan voltan rendah untuk model dan semak kebersihan serta alahan jika melibatkan makanan.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      }
+    }
+  ]
+}
