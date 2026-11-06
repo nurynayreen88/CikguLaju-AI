@@ -14,6 +14,7 @@ on:
       - "tools/audit_sains_rph_generator_20261106.py"
       - "tools/render_sains_y3_45_review_pack_20261106.py"
       - "tools/check_sains_y3_word_pages_20261106.py"
+      - "tools/render_sains_rpt_2027_ab_review_20261106.py"
       - "tools/audit_sains_25_82_delta_20261106.py"
       - "tools/audit_sains_v2582_y3_actual_20261106.py"
       - "tools/simulate_sains_v2582_12_title_fix_20261106.py"
@@ -78,6 +79,15 @@ jobs:
         run: python -m pip install python-docx==1.1.2 reportlab==4.2.5 pypdf==5.1.0
       - name: Render 45 original Sains Year3 review RPH to one-page A4 PDF and Word
         run: python tools/render_sains_y3_45_review_pack_20261106.py
+      - name: Render Sains RPT 2027 Years2-6 A/B draft source index with cover
+        run: python tools/render_sains_rpt_2027_ab_review_20261106.py
+      - name: Upload RPT A/B review-only documents
+        uses: actions/upload-artifact@v4
+        with:
+          name: SAINS_RPT_2027_T2_T6_AB_LANDSCAPE_DRAF
+          path: build/sains_rpt_2027_AB_REVIEW_ONLY_20261106
+          retention-days: 7
+          if-no-files-found: error
       - name: Install LibreOffice for true one-page Word layout QA
         run: |
           sudo apt-get update -qq
