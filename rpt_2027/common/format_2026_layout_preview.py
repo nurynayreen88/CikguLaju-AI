@@ -40,6 +40,11 @@ def validate_rows(subject, year, records):
             raise ValueError("Invalid PdP number")
         if "display_id" in row and (not isinstance(row["display_id"], str) or not row["display_id"].strip()):
             raise ValueError("Invalid original-subject PdP identity")
+        for field, source in (("sk_display", "sk"), ("sp_display", "sp")):
+            if field in row and (not isinstance(row[field], str) or
+                                 not row[field].strip() or
+                                 not row[field].lstrip().startswith(row[source].split(" / ")[0].split(";")[0].strip())):
+                raise ValueError(f"Invalid enriched {field} for PdP {row['id']}")
         ids.append(int(row["id"]))
         for key in ("a_start", "a_end", "b_start", "b_end"):
             if row.get(key):
@@ -213,8 +218,8 @@ def build_preview(subject, year, records, destination):
         table_rows.append([
             "" if index in grouped_followers else p(weektext,size=7.0,leading=11.3),
             unit_lines,
-            p(row["sk"],size=8,leading=12),
-            p(row["sp"],size=7.8,leading=11.8),
+            p(row.get("sk_display") or row["sk"],size=7.5,leading=11.3),
+            p(row.get("sp_display") or row["sp"],size=7.3,leading=10.8),
             p(row["note"],size=7.6,leading=11.5)
         ])
     widths = [114, 196, 95, 123, usable - 114 - 196 - 95 - 123]
