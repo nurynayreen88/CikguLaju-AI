@@ -1,0 +1,3370 @@
+{
+  "subjek": "Reka Bentuk dan Teknologi",
+  "tahun": 6,
+  "tahun_akademik": 2027,
+  "status": "DRAF_STAGING",
+  "bukan_modul_pengguna": true,
+  "durasi_minit_pdp": 60,
+  "jumlah_jam_minimum_dskp": 32,
+  "bilangan_pdp_cadangan": 32,
+  "dasar": "32 PdP x 60 minit ialah pembahagian editorial CikguLaju berdasarkan 32 jam DSKP, bukan bilangan PdP rasmi KPM.",
+  "struktur_menu": "Tahun → RBT → Unit N: Nama Unit → PdP NNN: Fokus → Jana Bahan",
+  "sumber": [
+    "DSKP KSSR (Semakan 2017) RBT Tahun 6"
+  ],
+  "modul": [
+    {
+      "unit": 1,
+      "tajuk": "Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "sk": [
+        "5.2"
+      ],
+      "jam_dskp": 10,
+      "pdp_cadangan": 10,
+      "subtopik_sp": "Reka Bentuk Produk Elektromekanikal"
+    },
+    {
+      "unit": 2,
+      "tajuk": "Reka Bentuk Pengaturcaraan",
+      "sk": [
+        "6.5"
+      ],
+      "jam_dskp": 10,
+      "pdp_cadangan": 10,
+      "subtopik_sp": "Pengenalan Asas Sistem Robotik"
+    },
+    {
+      "unit": 3,
+      "tajuk": "Pembangunan Produk",
+      "sk": [
+        "8.1"
+      ],
+      "jam_dskp": 12,
+      "pdp_cadangan": 12,
+      "subtopik_sp": "Penghasilan Produk"
+    }
+  ],
+  "pelajaran": [
+    {
+      "pdp": 1,
+      "id": "RBT-T6-PDP-001",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 1,
+      "unit_label": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "tajuk": "PdP 001: Menyatakan elemen elektromekanikal",
+      "sk": [
+        "5.2"
+      ],
+      "sp_codes": [
+        "5.2.1"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "5.2.1",
+          "fokus": "Menyatakan elemen elektromekanikal."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "konsep",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 5.2.1 melalui kad pengelasan atau senarai contoh berlabel, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan kad pengelasan atau senarai contoh berlabel bagi SP 5.2.1; guru menilai ketepatan pilihan dan pengelasan.",
+      "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan model kereta, motor DC, gear, roda, lakaran dan suis dalam situasi \"menghasilkan kereta yang boleh bergerak dengan komponen mekanikal dan elektrik\" dan mengaitkan masalah dengan SP 5.2.1. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru mempamerkan contoh dan bukan contoh berkaitan model kereta kawalan jauh dengan motor voltan rendah, kemudian membimbing murid mengelaskan tiga komponen/ciri mengikut SP 5.2.1. Murid menyusun kad dan menyatakan sebab bagi satu padanan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid secara individu mengelaskan empat contoh baharu, membetulkan satu padanan yang salah melalui perbincangan pasangan, lalu menghasilkan jadual pengelasan ringkas bagi SP 5.2.1. Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak kad pengelasan atau senarai contoh berlabel mengikut SP 5.2.1 dan menggunakan kriteria ketepatan pilihan dan pengelasan. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi model kereta kawalan jauh berelemen elektromekanikal."
+        }
+      },
+      "pbd_evidens": "Guru menyemak kad pengelasan atau senarai contoh berlabel mengikut SP 5.2.1 dan menggunakan kriteria ketepatan pilihan dan pengelasan. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Elakkan gear atau roda menyepit jari; gunakan voltan rendah.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.2.1",
+            "muka_surat_bercetak_calon": [
+              2,
+              2
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          2
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "kad pengelasan atau senarai contoh berlabel",
+      "rubrik_pbd_khusus": "ketepatan pilihan dan pengelasan",
+      "contoh_projek_cikgulaju": "model kereta kawalan jauh dengan motor voltan rendah",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Elektromekanikal",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "5.2.1",
+          "stage": "identify"
+        }
+      ]
+    },
+    {
+      "pdp": 2,
+      "id": "RBT-T6-PDP-002",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 1,
+      "unit_label": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "tajuk": "PdP 002: Menerangkan elemen elektromekanikal",
+      "sk": [
+        "5.2"
+      ],
+      "sp_codes": [
+        "5.2.2"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "5.2.2",
+          "fokus": "Menerangkan elemen elektromekanikal."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "konsep",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 5.2.2 melalui dua penerangan fungsi atau sebab dalam jadual banding beza, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan dua penerangan fungsi atau sebab dalam jadual banding beza bagi SP 5.2.2; guru menilai ketepatan penerangan dan satu justifikasi.",
+      "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan model kereta, motor DC, gear, roda, lakaran dan suis dalam situasi \"menghasilkan kereta yang boleh bergerak dengan komponen mekanikal dan elektrik\" dan mengaitkan masalah dengan SP 5.2.2. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan contoh fungsi atau konsep bagi model kereta kawalan jauh dengan motor voltan rendah. Murid membina peta hubungan sebab dan kesan bagi fokus SP 5.2.2 melalui soal jawab."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menerangkan dua pilihan dalam situasi baharu, mengenal pasti kelebihan dan kekurangan serta menulis satu justifikasi yang munasabah bagi SP 5.2.2. Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak dua penerangan fungsi atau sebab dalam jadual banding beza mengikut SP 5.2.2 dan menggunakan kriteria ketepatan penerangan dan satu justifikasi. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi model kereta kawalan jauh berelemen elektromekanikal."
+        }
+      },
+      "pbd_evidens": "Guru menyemak dua penerangan fungsi atau sebab dalam jadual banding beza mengikut SP 5.2.2 dan menggunakan kriteria ketepatan penerangan dan satu justifikasi. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Elakkan gear atau roda menyepit jari; gunakan voltan rendah.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.2.2",
+            "muka_surat_bercetak_calon": [
+              3,
+              5
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          3,
+          5
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "dua penerangan fungsi atau sebab dalam jadual banding beza",
+      "rubrik_pbd_khusus": "ketepatan penerangan dan satu justifikasi",
+      "contoh_projek_cikgulaju": "model kereta kawalan jauh dengan motor voltan rendah",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Elektromekanikal",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "5.2.2",
+          "stage": "explain"
+        }
+      ]
+    },
+    {
+      "pdp": 3,
+      "id": "RBT-T6-PDP-003",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 1,
+      "unit_label": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "tajuk": "PdP 003: Melakar reka bentuk produk eletromekanikal yang akan dihasilkan",
+      "sk": [
+        "5.2"
+      ],
+      "sp_codes": [
+        "5.2.3"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "5.2.3",
+          "fokus": "Melakar reka bentuk produk eletromekanikal yang akan dihasilkan."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 5.2.3 melalui lakaran berlabel atau algoritma/carta alir berurutan, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan lakaran berlabel atau algoritma/carta alir berurutan bagi SP 5.2.3; guru menilai kelengkapan maklumat dan langkah reka bentuk.",
+      "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan model kereta, motor DC, gear, roda, lakaran dan suis dalam situasi \"menghasilkan kereta yang boleh bergerak dengan komponen mekanikal dan elektrik\" dan mengaitkan masalah dengan SP 5.2.3. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan contoh lakaran bermaklumat/carta alir dengan label yang diperlukan untuk model kereta kawalan jauh dengan motor voltan rendah. Murid menghasilkan draf pertama berdasarkan keperluan SP 5.2.3."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid bertukar draf dengan rakan, menyemak label dan urutan menggunakan senarai semak, lalu menghasilkan versi kedua dengan sekurang-kurangnya satu pembetulan bagi SP 5.2.3. Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 5.2.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi model kereta kawalan jauh berelemen elektromekanikal."
+        }
+      },
+      "pbd_evidens": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 5.2.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Elakkan gear atau roda menyepit jari; gunakan voltan rendah.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.2.3",
+            "muka_surat_bercetak_calon": [
+              6,
+              8
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          6,
+          8
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "lakaran berlabel atau algoritma/carta alir berurutan",
+      "rubrik_pbd_khusus": "kelengkapan maklumat dan langkah reka bentuk",
+      "contoh_projek_cikgulaju": "model kereta kawalan jauh dengan motor voltan rendah",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Elektromekanikal",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "5.2.3",
+          "stage": "sketch"
+        }
+      ]
+    },
+    {
+      "pdp": 4,
+      "id": "RBT-T6-PDP-004",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 1,
+      "unit_label": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "tajuk": "PdP 004: Melakar reka bentuk produk eletromekanikal yang akan dihasilkan — sambungan 2",
+      "sk": [
+        "5.2"
+      ],
+      "sp_codes": [
+        "5.2.3"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "5.2.3",
+          "fokus": "Melakar reka bentuk produk eletromekanikal yang akan dihasilkan."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 2,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 5.2.3 melalui lakaran berlabel atau algoritma/carta alir berurutan, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan lakaran berlabel atau algoritma/carta alir berurutan bagi SP 5.2.3; guru menilai kelengkapan maklumat dan langkah reka bentuk.",
+      "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan model kereta, motor DC, gear, roda, lakaran dan suis dalam situasi \"menghasilkan kereta yang boleh bergerak dengan komponen mekanikal dan elektrik\" dan mengaitkan masalah dengan SP 5.2.3. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan contoh lakaran bermaklumat/carta alir dengan label yang diperlukan untuk model kereta kawalan jauh dengan motor voltan rendah. Murid menghasilkan draf pertama berdasarkan keperluan SP 5.2.3."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid bertukar draf dengan rakan, menyemak label dan urutan menggunakan senarai semak, lalu menghasilkan versi kedua dengan sekurang-kurangnya satu pembetulan bagi SP 5.2.3. Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 5.2.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi model kereta kawalan jauh berelemen elektromekanikal."
+        }
+      },
+      "pbd_evidens": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 5.2.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Elakkan gear atau roda menyepit jari; gunakan voltan rendah.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.2.3",
+            "muka_surat_bercetak_calon": [
+              6,
+              8
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          6,
+          8
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "lakaran berlabel atau algoritma/carta alir berurutan",
+      "rubrik_pbd_khusus": "kelengkapan maklumat dan langkah reka bentuk",
+      "contoh_projek_cikgulaju": "model kereta kawalan jauh dengan motor voltan rendah",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Elektromekanikal",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "5.2.3",
+          "stage": "sketch"
+        }
+      ]
+    },
+    {
+      "pdp": 5,
+      "id": "RBT-T6-PDP-005",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 1,
+      "unit_label": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "tajuk": "PdP 005: Menilai lakaran yang dipilih untuk membuat penambahbaikan",
+      "sk": [
+        "5.2"
+      ],
+      "sp_codes": [
+        "5.2.4"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "5.2.4",
+          "fokus": "Menilai lakaran yang dipilih untuk membuat penambahbaikan."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 5.2.4 melalui rubrik semak serta lakaran atau kod yang telah dibaiki, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan rubrik semak serta lakaran atau kod yang telah dibaiki bagi SP 5.2.4; guru menilai kejelasan kelemahan, sebab dan pembetulan.",
+      "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan model kereta, motor DC, gear, roda, lakaran dan suis dalam situasi \"menghasilkan kereta yang boleh bergerak dengan komponen mekanikal dan elektrik\" dan mengaitkan masalah dengan SP 5.2.4. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru memodelkan penggunaan rubrik untuk menilai dua ciri model kereta kawalan jauh dengan motor voltan rendah. Murid menanda kekuatan dan dua kelemahan pada contoh lakaran/produk bagi SP 5.2.4."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menambah baik lakaran, atur cara atau komponen berdasarkan analisis, membandingkan sebelum dan selepas serta menjelaskan sebab keputusan bagi SP 5.2.4. Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 5.2.4 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi model kereta kawalan jauh berelemen elektromekanikal."
+        }
+      },
+      "pbd_evidens": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 5.2.4 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Elakkan gear atau roda menyepit jari; gunakan voltan rendah.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.2.4",
+            "muka_surat_bercetak_calon": [
+              9,
+              10
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          9,
+          10
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "rubrik semak serta lakaran atau kod yang telah dibaiki",
+      "rubrik_pbd_khusus": "kejelasan kelemahan, sebab dan pembetulan",
+      "contoh_projek_cikgulaju": "model kereta kawalan jauh dengan motor voltan rendah",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Elektromekanikal",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "5.2.4",
+          "stage": "improve"
+        }
+      ]
+    },
+    {
+      "pdp": 6,
+      "id": "RBT-T6-PDP-006",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 1,
+      "unit_label": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "tajuk": "PdP 006: Menilai lakaran yang dipilih untuk membuat penambahbaikan — sambungan 2",
+      "sk": [
+        "5.2"
+      ],
+      "sp_codes": [
+        "5.2.4"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "5.2.4",
+          "fokus": "Menilai lakaran yang dipilih untuk membuat penambahbaikan."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 2,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 5.2.4 melalui rubrik semak serta lakaran atau kod yang telah dibaiki, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan rubrik semak serta lakaran atau kod yang telah dibaiki bagi SP 5.2.4; guru menilai kejelasan kelemahan, sebab dan pembetulan.",
+      "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan model kereta, motor DC, gear, roda, lakaran dan suis dalam situasi \"menghasilkan kereta yang boleh bergerak dengan komponen mekanikal dan elektrik\" dan mengaitkan masalah dengan SP 5.2.4. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru memodelkan penggunaan rubrik untuk menilai dua ciri model kereta kawalan jauh dengan motor voltan rendah. Murid menanda kekuatan dan dua kelemahan pada contoh lakaran/produk bagi SP 5.2.4."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menambah baik lakaran, atur cara atau komponen berdasarkan analisis, membandingkan sebelum dan selepas serta menjelaskan sebab keputusan bagi SP 5.2.4. Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 5.2.4 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi model kereta kawalan jauh berelemen elektromekanikal."
+        }
+      },
+      "pbd_evidens": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 5.2.4 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Elakkan gear atau roda menyepit jari; gunakan voltan rendah.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.2.4",
+            "muka_surat_bercetak_calon": [
+              9,
+              10
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          9,
+          10
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "rubrik semak serta lakaran atau kod yang telah dibaiki",
+      "rubrik_pbd_khusus": "kejelasan kelemahan, sebab dan pembetulan",
+      "contoh_projek_cikgulaju": "model kereta kawalan jauh dengan motor voltan rendah",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Elektromekanikal",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "5.2.4",
+          "stage": "improve"
+        }
+      ]
+    },
+    {
+      "pdp": 7,
+      "id": "RBT-T6-PDP-007",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 1,
+      "unit_label": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "tajuk": "PdP 007: Membuat produk berdasarkan lakaran dengan menggunakan bahan dan peralatan yang sesuai",
+      "sk": [
+        "5.2"
+      ],
+      "sp_codes": [
+        "5.2.5"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "5.2.5",
+          "fokus": "Membuat produk berdasarkan lakaran dengan menggunakan bahan dan peralatan yang sesuai."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 5.2.5 melalui bukti hasil kerja peringkat semasa dan catatan ujian fungsi, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan bukti hasil kerja peringkat semasa dan catatan ujian fungsi bagi SP 5.2.5; guru menilai pematuhan langkah, keselamatan dan fungsi peringkat semasa.",
+      "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan model kereta, motor DC, gear, roda, lakaran dan suis dalam situasi \"menghasilkan kereta yang boleh bergerak dengan komponen mekanikal dan elektrik\" dan mengaitkan masalah dengan SP 5.2.5. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk model kereta kawalan jauh dengan motor voltan rendah. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 5.2.5)."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid meneruskan bahagian kerja untuk model kereta kawalan jauh dengan motor voltan rendah yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 5.2.5); bukan wajib menyiapkan keseluruhan projek. Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 5.2.5 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi model kereta kawalan jauh berelemen elektromekanikal."
+        }
+      },
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 5.2.5 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Elakkan gear atau roda menyepit jari; gunakan voltan rendah.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.2.5",
+            "muka_surat_bercetak_calon": [
+              11,
+              20
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          11,
+          20
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "bukti hasil kerja peringkat semasa dan catatan ujian fungsi",
+      "rubrik_pbd_khusus": "pematuhan langkah, keselamatan dan fungsi peringkat semasa",
+      "contoh_projek_cikgulaju": "model kereta kawalan jauh dengan motor voltan rendah",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Elektromekanikal",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "5.2.5",
+          "stage": "make"
+        }
+      ]
+    },
+    {
+      "pdp": 8,
+      "id": "RBT-T6-PDP-008",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 1,
+      "unit_label": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "tajuk": "PdP 008: Membuat produk berdasarkan lakaran dengan menggunakan bahan dan peralatan yang sesuai — sambungan 2",
+      "sk": [
+        "5.2"
+      ],
+      "sp_codes": [
+        "5.2.5"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "5.2.5",
+          "fokus": "Membuat produk berdasarkan lakaran dengan menggunakan bahan dan peralatan yang sesuai."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 2,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 5.2.5 melalui bukti hasil kerja peringkat semasa dan catatan ujian fungsi, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan bukti hasil kerja peringkat semasa dan catatan ujian fungsi bagi SP 5.2.5; guru menilai pematuhan langkah, keselamatan dan fungsi peringkat semasa.",
+      "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan model kereta, motor DC, gear, roda, lakaran dan suis dalam situasi \"menghasilkan kereta yang boleh bergerak dengan komponen mekanikal dan elektrik\" dan mengaitkan masalah dengan SP 5.2.5. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk model kereta kawalan jauh dengan motor voltan rendah. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 5.2.5)."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid meneruskan bahagian kerja untuk model kereta kawalan jauh dengan motor voltan rendah yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 5.2.5); bukan wajib menyiapkan keseluruhan projek. Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 5.2.5 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi model kereta kawalan jauh berelemen elektromekanikal."
+        }
+      },
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 5.2.5 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Elakkan gear atau roda menyepit jari; gunakan voltan rendah.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.2.5",
+            "muka_surat_bercetak_calon": [
+              11,
+              20
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          11,
+          20
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "bukti hasil kerja peringkat semasa dan catatan ujian fungsi",
+      "rubrik_pbd_khusus": "pematuhan langkah, keselamatan dan fungsi peringkat semasa",
+      "contoh_projek_cikgulaju": "model kereta kawalan jauh dengan motor voltan rendah",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Elektromekanikal",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "5.2.5",
+          "stage": "make"
+        }
+      ]
+    },
+    {
+      "pdp": 9,
+      "id": "RBT-T6-PDP-009",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 1,
+      "unit_label": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "tajuk": "PdP 009: Membuat produk berdasarkan lakaran dengan menggunakan bahan dan peralatan yang sesuai — sambungan 3",
+      "sk": [
+        "5.2"
+      ],
+      "sp_codes": [
+        "5.2.5"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "5.2.5",
+          "fokus": "Membuat produk berdasarkan lakaran dengan menggunakan bahan dan peralatan yang sesuai."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 3,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 5.2.5 melalui bukti hasil kerja peringkat semasa dan catatan ujian fungsi, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan bukti hasil kerja peringkat semasa dan catatan ujian fungsi bagi SP 5.2.5; guru menilai pematuhan langkah, keselamatan dan fungsi peringkat semasa.",
+      "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan model kereta, motor DC, gear, roda, lakaran dan suis dalam situasi \"menghasilkan kereta yang boleh bergerak dengan komponen mekanikal dan elektrik\" dan mengaitkan masalah dengan SP 5.2.5. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk model kereta kawalan jauh dengan motor voltan rendah. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 5.2.5)."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid meneruskan bahagian kerja untuk model kereta kawalan jauh dengan motor voltan rendah yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 5.2.5); bukan wajib menyiapkan keseluruhan projek. Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 5.2.5 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi model kereta kawalan jauh berelemen elektromekanikal."
+        }
+      },
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 5.2.5 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Elakkan gear atau roda menyepit jari; gunakan voltan rendah.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.2.5",
+            "muka_surat_bercetak_calon": [
+              11,
+              20
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          11,
+          20
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "bukti hasil kerja peringkat semasa dan catatan ujian fungsi",
+      "rubrik_pbd_khusus": "pematuhan langkah, keselamatan dan fungsi peringkat semasa",
+      "contoh_projek_cikgulaju": "model kereta kawalan jauh dengan motor voltan rendah",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Elektromekanikal",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "5.2.5",
+          "stage": "make"
+        }
+      ]
+    },
+    {
+      "pdp": 10,
+      "id": "RBT-T6-PDP-010",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 1,
+      "unit_label": "Unit 1: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
+      "tajuk": "PdP 010: Membentangkan produk yang dihasilkan",
+      "sk": [
+        "5.2"
+      ],
+      "sp_codes": [
+        "5.2.6"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "5.2.6",
+          "fokus": "Membentangkan produk yang dihasilkan."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "pembentangan",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 5.2.6 melalui pembentangan hasil atau dokumentasi proses dan respons soalan, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan pembentangan hasil atau dokumentasi proses dan respons soalan bagi SP 5.2.6; guru menilai kejelasan hujah, bukti ujian dan maklum balas.",
+      "bbm": "Contoh produk elektromekanikal, lakaran, motor DC voltan rendah, suis, bateri, gear ringkas, bahan model dan alat tangan berselia",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan model kereta, motor DC, gear, roda, lakaran dan suis dalam situasi \"menghasilkan kereta yang boleh bergerak dengan komponen mekanikal dan elektrik\" dan mengaitkan masalah dengan SP 5.2.6. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan susunan pembentangan produk model kereta kawalan jauh dengan motor voltan rendah: masalah, idea, lakaran, proses kerja, ujian dan penambahbaikan. Murid menyediakan tiga poin serta memilih bukti hasil (SP 5.2.6)."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid mempersembahkan hasil secara lisan, poster atau demonstrasi, menjawab satu soalan rakan dan menulis maklum balas untuk penambahbaikan (SP 5.2.6). Elakkan gear atau roda menyepit jari; gunakan voltan rendah."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 5.2.6 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi model kereta kawalan jauh berelemen elektromekanikal."
+        }
+      },
+      "pbd_evidens": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 5.2.6 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Elakkan gear atau roda menyepit jari; gunakan voltan rendah.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.2.6",
+            "muka_surat_bercetak_calon": [
+              21,
+              22
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          21,
+          22
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "pembentangan hasil atau dokumentasi proses dan respons soalan",
+      "rubrik_pbd_khusus": "kejelasan hujah, bukti ujian dan maklum balas",
+      "contoh_projek_cikgulaju": "model kereta kawalan jauh dengan motor voltan rendah",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Elektromekanikal",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "5.2.6",
+          "stage": "present"
+        }
+      ]
+    },
+    {
+      "pdp": 11,
+      "id": "RBT-T6-PDP-011",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 2,
+      "unit_label": "Unit 2: Reka Bentuk Pengaturcaraan",
+      "tajuk": "PdP 011: Menyatakan elemen sistem robotik",
+      "sk": [
+        "6.5"
+      ],
+      "sp_codes": [
+        "6.5.1"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "6.5.1",
+          "fokus": "Menyatakan elemen sistem robotik."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "konsep",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.5.1 melalui kad pengelasan atau senarai contoh berlabel, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan kad pengelasan atau senarai contoh berlabel bagi SP 6.5.1; guru menilai ketepatan pilihan dan pengelasan.",
+      "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan kit sensor, mikropengawal, perisian dan carta alir dalam situasi \"mengatur tindak balas robot apabila sensor menerima perubahan input\" dan mengaitkan masalah dengan SP 6.5.1. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru mempamerkan contoh dan bukan contoh berkaitan robot penjaga air tanaman, kemudian membimbing murid mengelaskan tiga komponen/ciri mengikut SP 6.5.1. Murid menyusun kad dan menyatakan sebab bagi satu padanan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid secara individu mengelaskan empat contoh baharu, membetulkan satu padanan yang salah melalui perbincangan pasangan, lalu menghasilkan jadual pengelasan ringkas bagi SP 6.5.1. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak kad pengelasan atau senarai contoh berlabel mengikut SP 6.5.1 dan menggunakan kriteria ketepatan pilihan dan pengelasan. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi robot pengesan keadaan tanaman."
+        }
+      },
+      "pbd_evidens": "Guru menyemak kad pengelasan atau senarai contoh berlabel mengikut SP 6.5.1 dan menggunakan kriteria ketepatan pilihan dan pengelasan. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Ujian dilakukan di kawasan kering dan komponen bergerak diawasi.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.5.1",
+            "muka_surat_bercetak_calon": [
+              24,
+              25
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          24,
+          25
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "kad pengelasan atau senarai contoh berlabel",
+      "rubrik_pbd_khusus": "ketepatan pilihan dan pengelasan",
+      "contoh_projek_cikgulaju": "robot penjaga air tanaman",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Pengenalan Asas Sistem Robotik",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "6.5.1",
+          "stage": "identify"
+        }
+      ]
+    },
+    {
+      "pdp": 12,
+      "id": "RBT-T6-PDP-012",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 2,
+      "unit_label": "Unit 2: Reka Bentuk Pengaturcaraan",
+      "tajuk": "PdP 012: Menghuraikan elemen sistem robotik yang terdapat pada robot",
+      "sk": [
+        "6.5"
+      ],
+      "sp_codes": [
+        "6.5.2"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "6.5.2",
+          "fokus": "Menghuraikan elemen sistem robotik yang terdapat pada robot."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "konsep",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.5.2 melalui dua penerangan fungsi atau sebab dalam jadual banding beza, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan dua penerangan fungsi atau sebab dalam jadual banding beza bagi SP 6.5.2; guru menilai ketepatan penerangan dan satu justifikasi.",
+      "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan kit sensor, mikropengawal, perisian dan carta alir dalam situasi \"mengatur tindak balas robot apabila sensor menerima perubahan input\" dan mengaitkan masalah dengan SP 6.5.2. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan contoh fungsi atau konsep bagi robot penjaga air tanaman. Murid membina peta hubungan sebab dan kesan bagi fokus SP 6.5.2 melalui soal jawab."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menerangkan dua pilihan dalam situasi baharu, mengenal pasti kelebihan dan kekurangan serta menulis satu justifikasi yang munasabah bagi SP 6.5.2. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak dua penerangan fungsi atau sebab dalam jadual banding beza mengikut SP 6.5.2 dan menggunakan kriteria ketepatan penerangan dan satu justifikasi. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi robot pengesan keadaan tanaman."
+        }
+      },
+      "pbd_evidens": "Guru menyemak dua penerangan fungsi atau sebab dalam jadual banding beza mengikut SP 6.5.2 dan menggunakan kriteria ketepatan penerangan dan satu justifikasi. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Ujian dilakukan di kawasan kering dan komponen bergerak diawasi.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.5.2",
+            "muka_surat_bercetak_calon": [
+              25,
+              26
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          25,
+          26
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "dua penerangan fungsi atau sebab dalam jadual banding beza",
+      "rubrik_pbd_khusus": "ketepatan penerangan dan satu justifikasi",
+      "contoh_projek_cikgulaju": "robot penjaga air tanaman",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Pengenalan Asas Sistem Robotik",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "6.5.2",
+          "stage": "explain"
+        }
+      ]
+    },
+    {
+      "pdp": 13,
+      "id": "RBT-T6-PDP-013",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 2,
+      "unit_label": "Unit 2: Reka Bentuk Pengaturcaraan",
+      "tajuk": "PdP 013: Menjelaskan pemasangan perkakasan pada reka bentuk sebuah robot",
+      "sk": [
+        "6.5"
+      ],
+      "sp_codes": [
+        "6.5.3"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "6.5.3",
+          "fokus": "Menjelaskan pemasangan perkakasan pada reka bentuk sebuah robot."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "konsep",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.5.3 melalui dua penerangan fungsi atau sebab dalam jadual banding beza, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan dua penerangan fungsi atau sebab dalam jadual banding beza bagi SP 6.5.3; guru menilai ketepatan penerangan dan satu justifikasi.",
+      "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan kit sensor, mikropengawal, perisian dan carta alir dalam situasi \"mengatur tindak balas robot apabila sensor menerima perubahan input\" dan mengaitkan masalah dengan SP 6.5.3. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan contoh fungsi atau konsep bagi robot penjaga air tanaman. Murid membina peta hubungan sebab dan kesan bagi fokus SP 6.5.3 melalui soal jawab."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menerangkan dua pilihan dalam situasi baharu, mengenal pasti kelebihan dan kekurangan serta menulis satu justifikasi yang munasabah bagi SP 6.5.3. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak dua penerangan fungsi atau sebab dalam jadual banding beza mengikut SP 6.5.3 dan menggunakan kriteria ketepatan penerangan dan satu justifikasi. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi robot pengesan keadaan tanaman."
+        }
+      },
+      "pbd_evidens": "Guru menyemak dua penerangan fungsi atau sebab dalam jadual banding beza mengikut SP 6.5.3 dan menggunakan kriteria ketepatan penerangan dan satu justifikasi. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Ujian dilakukan di kawasan kering dan komponen bergerak diawasi.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.5.3",
+            "muka_surat_bercetak_calon": [
+              27,
+              27
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          27
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "dua penerangan fungsi atau sebab dalam jadual banding beza",
+      "rubrik_pbd_khusus": "ketepatan penerangan dan satu justifikasi",
+      "contoh_projek_cikgulaju": "robot penjaga air tanaman",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Pengenalan Asas Sistem Robotik",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "6.5.3",
+          "stage": "explain"
+        }
+      ]
+    },
+    {
+      "pdp": 14,
+      "id": "RBT-T6-PDP-014",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 2,
+      "unit_label": "Unit 2: Reka Bentuk Pengaturcaraan",
+      "tajuk": "PdP 014: Melakar reka bentuk produk yang mempunyai elemen sistem robotik",
+      "sk": [
+        "6.5"
+      ],
+      "sp_codes": [
+        "6.5.4"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "6.5.4",
+          "fokus": "Melakar reka bentuk produk yang mempunyai elemen sistem robotik."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.5.4 melalui lakaran berlabel atau algoritma/carta alir berurutan, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan lakaran berlabel atau algoritma/carta alir berurutan bagi SP 6.5.4; guru menilai kelengkapan maklumat dan langkah reka bentuk.",
+      "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan kit sensor, mikropengawal, perisian dan carta alir dalam situasi \"mengatur tindak balas robot apabila sensor menerima perubahan input\" dan mengaitkan masalah dengan SP 6.5.4. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan contoh lakaran bermaklumat/carta alir dengan label yang diperlukan untuk robot penjaga air tanaman. Murid menghasilkan draf pertama berdasarkan keperluan SP 6.5.4."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid bertukar draf dengan rakan, menyemak label dan urutan menggunakan senarai semak, lalu menghasilkan versi kedua dengan sekurang-kurangnya satu pembetulan bagi SP 6.5.4. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 6.5.4 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi robot pengesan keadaan tanaman."
+        }
+      },
+      "pbd_evidens": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 6.5.4 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Ujian dilakukan di kawasan kering dan komponen bergerak diawasi.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.5.4",
+            "muka_surat_bercetak_calon": [
+              28,
+              29
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          28,
+          29
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "lakaran berlabel atau algoritma/carta alir berurutan",
+      "rubrik_pbd_khusus": "kelengkapan maklumat dan langkah reka bentuk",
+      "contoh_projek_cikgulaju": "robot penjaga air tanaman",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Pengenalan Asas Sistem Robotik",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "6.5.4",
+          "stage": "sketch"
+        }
+      ]
+    },
+    {
+      "pdp": 15,
+      "id": "RBT-T6-PDP-015",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 2,
+      "unit_label": "Unit 2: Reka Bentuk Pengaturcaraan",
+      "tajuk": "PdP 015: Menilai lakaran yang dipilih untuk membuat penambahbaikan",
+      "sk": [
+        "6.5"
+      ],
+      "sp_codes": [
+        "6.5.5"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "6.5.5",
+          "fokus": "Menilai lakaran yang dipilih untuk membuat penambahbaikan."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.5.5 melalui rubrik semak serta lakaran atau kod yang telah dibaiki, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan rubrik semak serta lakaran atau kod yang telah dibaiki bagi SP 6.5.5; guru menilai kejelasan kelemahan, sebab dan pembetulan.",
+      "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan kit sensor, mikropengawal, perisian dan carta alir dalam situasi \"mengatur tindak balas robot apabila sensor menerima perubahan input\" dan mengaitkan masalah dengan SP 6.5.5. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru memodelkan penggunaan rubrik untuk menilai dua ciri robot penjaga air tanaman. Murid menanda kekuatan dan dua kelemahan pada contoh lakaran/produk bagi SP 6.5.5."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menambah baik lakaran, atur cara atau komponen berdasarkan analisis, membandingkan sebelum dan selepas serta menjelaskan sebab keputusan bagi SP 6.5.5. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 6.5.5 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi robot pengesan keadaan tanaman."
+        }
+      },
+      "pbd_evidens": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 6.5.5 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Ujian dilakukan di kawasan kering dan komponen bergerak diawasi.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.5.5",
+            "muka_surat_bercetak_calon": [
+              30,
+              30
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          30
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "rubrik semak serta lakaran atau kod yang telah dibaiki",
+      "rubrik_pbd_khusus": "kejelasan kelemahan, sebab dan pembetulan",
+      "contoh_projek_cikgulaju": "robot penjaga air tanaman",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Pengenalan Asas Sistem Robotik",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "6.5.5",
+          "stage": "improve"
+        }
+      ]
+    },
+    {
+      "pdp": 16,
+      "id": "RBT-T6-PDP-016",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 2,
+      "unit_label": "Unit 2: Reka Bentuk Pengaturcaraan",
+      "tajuk": "PdP 016: Menghasilkan carta alir sebuah robot yang akan dibina",
+      "sk": [
+        "6.5"
+      ],
+      "sp_codes": [
+        "6.5.6"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "6.5.6",
+          "fokus": "Menghasilkan carta alir sebuah robot yang akan dibina"
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.5.6 melalui lakaran berlabel atau algoritma/carta alir berurutan, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan lakaran berlabel atau algoritma/carta alir berurutan bagi SP 6.5.6; guru menilai kelengkapan maklumat dan langkah reka bentuk.",
+      "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan kit sensor, mikropengawal, perisian dan carta alir dalam situasi \"mengatur tindak balas robot apabila sensor menerima perubahan input\" dan mengaitkan masalah dengan SP 6.5.6. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan contoh lakaran bermaklumat/carta alir dengan label yang diperlukan untuk robot penjaga air tanaman. Murid menghasilkan draf pertama berdasarkan keperluan SP 6.5.6."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid bertukar draf dengan rakan, menyemak label dan urutan menggunakan senarai semak, lalu menghasilkan versi kedua dengan sekurang-kurangnya satu pembetulan bagi SP 6.5.6. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 6.5.6 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi robot pengesan keadaan tanaman."
+        }
+      },
+      "pbd_evidens": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 6.5.6 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Ujian dilakukan di kawasan kering dan komponen bergerak diawasi.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.5.6",
+            "muka_surat_bercetak_calon": [
+              31,
+              31
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          31
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "lakaran berlabel atau algoritma/carta alir berurutan",
+      "rubrik_pbd_khusus": "kelengkapan maklumat dan langkah reka bentuk",
+      "contoh_projek_cikgulaju": "robot penjaga air tanaman",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Pengenalan Asas Sistem Robotik",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "6.5.6",
+          "stage": "sketch"
+        }
+      ]
+    },
+    {
+      "pdp": 17,
+      "id": "RBT-T6-PDP-017",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 2,
+      "unit_label": "Unit 2: Reka Bentuk Pengaturcaraan",
+      "tajuk": "PdP 017: Menghasilkan atur cara yang dikehendaki berpandukan carta alir yang dibuat",
+      "sk": [
+        "6.5"
+      ],
+      "sp_codes": [
+        "6.5.7"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "6.5.7",
+          "fokus": "Menghasilkan atur cara yang dikehendaki berpandukan carta alir yang dibuat."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.5.7 melalui bukti hasil kerja peringkat semasa dan catatan ujian fungsi, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan bukti hasil kerja peringkat semasa dan catatan ujian fungsi bagi SP 6.5.7; guru menilai pematuhan langkah, keselamatan dan fungsi peringkat semasa.",
+      "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan kit sensor, mikropengawal, perisian dan carta alir dalam situasi \"mengatur tindak balas robot apabila sensor menerima perubahan input\" dan mengaitkan masalah dengan SP 6.5.7. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk robot penjaga air tanaman. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 6.5.7)."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid meneruskan bahagian kerja untuk robot penjaga air tanaman yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 6.5.7); bukan wajib menyiapkan keseluruhan projek. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 6.5.7 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi robot pengesan keadaan tanaman."
+        }
+      },
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 6.5.7 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Ujian dilakukan di kawasan kering dan komponen bergerak diawasi.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.5.7",
+            "muka_surat_bercetak_calon": [
+              32,
+              34
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          32,
+          34
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "bukti hasil kerja peringkat semasa dan catatan ujian fungsi",
+      "rubrik_pbd_khusus": "pematuhan langkah, keselamatan dan fungsi peringkat semasa",
+      "contoh_projek_cikgulaju": "robot penjaga air tanaman",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Pengenalan Asas Sistem Robotik",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "6.5.7",
+          "stage": "make"
+        }
+      ]
+    },
+    {
+      "pdp": 18,
+      "id": "RBT-T6-PDP-018",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 2,
+      "unit_label": "Unit 2: Reka Bentuk Pengaturcaraan",
+      "tajuk": "PdP 018: Membina reka bentuk produk dan penyambungan perkakasan berdasarkan lakaran yang dibuat men",
+      "sk": [
+        "6.5"
+      ],
+      "sp_codes": [
+        "6.5.8"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "6.5.8",
+          "fokus": "Membina reka bentuk produk dan penyambungan perkakasan berdasarkan lakaran yang dibuat menggunakan peralatan yang sesuai"
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "amali",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.5.8 melalui bukti hasil kerja peringkat semasa dan catatan ujian fungsi, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan bukti hasil kerja peringkat semasa dan catatan ujian fungsi bagi SP 6.5.8; guru menilai pematuhan langkah, keselamatan dan fungsi peringkat semasa.",
+      "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan kit sensor, mikropengawal, perisian dan carta alir dalam situasi \"mengatur tindak balas robot apabila sensor menerima perubahan input\" dan mengaitkan masalah dengan SP 6.5.8. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk robot penjaga air tanaman. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 6.5.8)."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid meneruskan bahagian kerja untuk robot penjaga air tanaman yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 6.5.8); bukan wajib menyiapkan keseluruhan projek. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 6.5.8 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi robot pengesan keadaan tanaman."
+        }
+      },
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 6.5.8 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Ujian dilakukan di kawasan kering dan komponen bergerak diawasi.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.5.8",
+            "muka_surat_bercetak_calon": [
+              35,
+              39
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          35,
+          39
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "bukti hasil kerja peringkat semasa dan catatan ujian fungsi",
+      "rubrik_pbd_khusus": "pematuhan langkah, keselamatan dan fungsi peringkat semasa",
+      "contoh_projek_cikgulaju": "robot penjaga air tanaman",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Pengenalan Asas Sistem Robotik",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "6.5.8",
+          "stage": "make"
+        }
+      ]
+    },
+    {
+      "pdp": 19,
+      "id": "RBT-T6-PDP-019",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 2,
+      "unit_label": "Unit 2: Reka Bentuk Pengaturcaraan",
+      "tajuk": "PdP 019: Memindahkan atur cara yang telah dihasilkan pada perkakasan dan menguji kefungsiannya",
+      "sk": [
+        "6.5"
+      ],
+      "sp_codes": [
+        "6.5.9"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "6.5.9",
+          "fokus": "Memindahkan atur cara yang telah dihasilkan pada perkakasan dan menguji kefungsiannya."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "amali",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.5.9 melalui bukti hasil kerja peringkat semasa dan catatan ujian fungsi, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan bukti hasil kerja peringkat semasa dan catatan ujian fungsi bagi SP 6.5.9; guru menilai pematuhan langkah, keselamatan dan fungsi peringkat semasa.",
+      "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan kit sensor, mikropengawal, perisian dan carta alir dalam situasi \"mengatur tindak balas robot apabila sensor menerima perubahan input\" dan mengaitkan masalah dengan SP 6.5.9. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk robot penjaga air tanaman. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 6.5.9)."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid meneruskan bahagian kerja untuk robot penjaga air tanaman yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 6.5.9); bukan wajib menyiapkan keseluruhan projek. Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 6.5.9 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi robot pengesan keadaan tanaman."
+        }
+      },
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 6.5.9 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Ujian dilakukan di kawasan kering dan komponen bergerak diawasi.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.5.9",
+            "muka_surat_bercetak_calon": [
+              40,
+              41
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          40,
+          41
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "bukti hasil kerja peringkat semasa dan catatan ujian fungsi",
+      "rubrik_pbd_khusus": "pematuhan langkah, keselamatan dan fungsi peringkat semasa",
+      "contoh_projek_cikgulaju": "robot penjaga air tanaman",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Pengenalan Asas Sistem Robotik",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "6.5.9",
+          "stage": "make"
+        }
+      ]
+    },
+    {
+      "pdp": 20,
+      "id": "RBT-T6-PDP-020",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 2,
+      "unit_label": "Unit 2: Reka Bentuk Pengaturcaraan",
+      "tajuk": "PdP 020: Membuat rumusan dan membentangkan produk yang telah dibina",
+      "sk": [
+        "6.5"
+      ],
+      "sp_codes": [
+        "6.5.10"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "6.5.10",
+          "fokus": "Membuat rumusan dan membentangkan produk yang telah dibina."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "pembentangan",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.5.10 melalui pembentangan hasil atau dokumentasi proses dan respons soalan, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan pembentangan hasil atau dokumentasi proses dan respons soalan bagi SP 6.5.10; guru menilai kejelasan hujah, bukti ujian dan maklum balas.",
+      "bbm": "Kit robotik pendidikan, sensor, bekalan kuasa voltan rendah, komputer simulasi, kad carta alir, lembaran uji fungsi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan kit sensor, mikropengawal, perisian dan carta alir dalam situasi \"mengatur tindak balas robot apabila sensor menerima perubahan input\" dan mengaitkan masalah dengan SP 6.5.10. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan susunan pembentangan produk robot penjaga air tanaman: masalah, idea, lakaran, proses kerja, ujian dan penambahbaikan. Murid menyediakan tiga poin serta memilih bukti hasil (SP 6.5.10)."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid mempersembahkan hasil secara lisan, poster atau demonstrasi, menjawab satu soalan rakan dan menulis maklum balas untuk penambahbaikan (SP 6.5.10). Ujian dilakukan di kawasan kering dan komponen bergerak diawasi."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 6.5.10 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi robot pengesan keadaan tanaman."
+        }
+      },
+      "pbd_evidens": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 6.5.10 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Ujian dilakukan di kawasan kering dan komponen bergerak diawasi.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.5.10",
+            "muka_surat_bercetak_calon": [
+              42,
+              42
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          42
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "pembentangan hasil atau dokumentasi proses dan respons soalan",
+      "rubrik_pbd_khusus": "kejelasan hujah, bukti ujian dan maklum balas",
+      "contoh_projek_cikgulaju": "robot penjaga air tanaman",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Pengenalan Asas Sistem Robotik",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "6.5.10",
+          "stage": "present"
+        }
+      ]
+    },
+    {
+      "pdp": 21,
+      "id": "RBT-T6-PDP-021",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 3,
+      "unit_label": "Unit 3: Pembangunan Produk",
+      "tajuk": "PdP 021: Menyatakan produk yang hendak dibina berdasarkan situasi",
+      "sk": [
+        "8.1"
+      ],
+      "sp_codes": [
+        "8.1.1"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "8.1.1",
+          "fokus": "Menyatakan produk yang hendak dibina berdasarkan situasi."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "konsep",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 8.1.1 melalui kad pengelasan atau senarai contoh berlabel, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan kad pengelasan atau senarai contoh berlabel bagi SP 8.1.1; guru menilai ketepatan pilihan dan pengelasan.",
+      "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan komponen sensor, servo kecil, bahan model, jadual kos dalam situasi \"menggabungkan dua teknologi menghasilkan produk yang menyelesaikan masalah harian\" dan mengaitkan masalah dengan SP 8.1.1. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru mempamerkan contoh dan bukan contoh berkaitan model tabung duit automatik gabungan sensor dan servo, kemudian membimbing murid mengelaskan tiga komponen/ciri mengikut SP 8.1.1. Murid menyusun kad dan menyatakan sebab bagi satu padanan."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid secara individu mengelaskan empat contoh baharu, membetulkan satu padanan yang salah melalui perbincangan pasangan, lalu menghasilkan jadual pengelasan ringkas bagi SP 8.1.1. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak kad pengelasan atau senarai contoh berlabel mengikut SP 8.1.1 dan menggunakan kriteria ketepatan pilihan dan pengelasan. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi tabung duit automatik menggunakan sensor dan servo."
+        }
+      },
+      "pbd_evidens": "Guru menyemak kad pengelasan atau senarai contoh berlabel mengikut SP 8.1.1 dan menggunakan kriteria ketepatan pilihan dan pengelasan. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1; halaman belum dipadankan",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "8.1.1",
+            "muka_surat_bercetak_calon": [
+              45,
+              46
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          45,
+          46
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "kad pengelasan atau senarai contoh berlabel",
+      "rubrik_pbd_khusus": "ketepatan pilihan dan pengelasan",
+      "contoh_projek_cikgulaju": "model tabung duit automatik gabungan sensor dan servo",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Penghasilan Produk",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "8.1.1",
+          "stage": "identify"
+        }
+      ]
+    },
+    {
+      "pdp": 22,
+      "id": "RBT-T6-PDP-022",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 3,
+      "unit_label": "Unit 3: Pembangunan Produk",
+      "tajuk": "PdP 022: Menghuraikan gabungan asas teknologi yang sesuai digunakan dengan reka bentuk produk yang ",
+      "sk": [
+        "8.1"
+      ],
+      "sp_codes": [
+        "8.1.2"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "8.1.2",
+          "fokus": "Menghuraikan gabungan asas teknologi yang sesuai digunakan dengan reka bentuk produk yang akan dibina."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "konsep",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 8.1.2 melalui dua penerangan fungsi atau sebab dalam jadual banding beza, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan dua penerangan fungsi atau sebab dalam jadual banding beza bagi SP 8.1.2; guru menilai ketepatan penerangan dan satu justifikasi.",
+      "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan komponen sensor, servo kecil, bahan model, jadual kos dalam situasi \"menggabungkan dua teknologi menghasilkan produk yang menyelesaikan masalah harian\" dan mengaitkan masalah dengan SP 8.1.2. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan contoh fungsi atau konsep bagi model tabung duit automatik gabungan sensor dan servo. Murid membina peta hubungan sebab dan kesan bagi fokus SP 8.1.2 melalui soal jawab."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menerangkan dua pilihan dalam situasi baharu, mengenal pasti kelebihan dan kekurangan serta menulis satu justifikasi yang munasabah bagi SP 8.1.2. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak dua penerangan fungsi atau sebab dalam jadual banding beza mengikut SP 8.1.2 dan menggunakan kriteria ketepatan penerangan dan satu justifikasi. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi tabung duit automatik menggunakan sensor dan servo."
+        }
+      },
+      "pbd_evidens": "Guru menyemak dua penerangan fungsi atau sebab dalam jadual banding beza mengikut SP 8.1.2 dan menggunakan kriteria ketepatan penerangan dan satu justifikasi. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1; halaman belum dipadankan",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "8.1.2",
+            "muka_surat_bercetak_calon": [
+              47,
+              48
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          47,
+          48
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "dua penerangan fungsi atau sebab dalam jadual banding beza",
+      "rubrik_pbd_khusus": "ketepatan penerangan dan satu justifikasi",
+      "contoh_projek_cikgulaju": "model tabung duit automatik gabungan sensor dan servo",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Penghasilan Produk",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "8.1.2",
+          "stage": "explain"
+        }
+      ]
+    },
+    {
+      "pdp": 23,
+      "id": "RBT-T6-PDP-023",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 3,
+      "unit_label": "Unit 3: Pembangunan Produk",
+      "tajuk": "PdP 023: Melakar reka bentuk produk yang hendak dibina",
+      "sk": [
+        "8.1"
+      ],
+      "sp_codes": [
+        "8.1.3"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "8.1.3",
+          "fokus": "Melakar reka bentuk produk yang hendak dibina."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 8.1.3 melalui lakaran berlabel atau algoritma/carta alir berurutan, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan lakaran berlabel atau algoritma/carta alir berurutan bagi SP 8.1.3; guru menilai kelengkapan maklumat dan langkah reka bentuk.",
+      "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan komponen sensor, servo kecil, bahan model, jadual kos dalam situasi \"menggabungkan dua teknologi menghasilkan produk yang menyelesaikan masalah harian\" dan mengaitkan masalah dengan SP 8.1.3. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan contoh lakaran bermaklumat/carta alir dengan label yang diperlukan untuk model tabung duit automatik gabungan sensor dan servo. Murid menghasilkan draf pertama berdasarkan keperluan SP 8.1.3."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid bertukar draf dengan rakan, menyemak label dan urutan menggunakan senarai semak, lalu menghasilkan versi kedua dengan sekurang-kurangnya satu pembetulan bagi SP 8.1.3. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 8.1.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi tabung duit automatik menggunakan sensor dan servo."
+        }
+      },
+      "pbd_evidens": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 8.1.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1; halaman belum dipadankan",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "8.1.3",
+            "muka_surat_bercetak_calon": [
+              49,
+              50
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          49,
+          50
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "lakaran berlabel atau algoritma/carta alir berurutan",
+      "rubrik_pbd_khusus": "kelengkapan maklumat dan langkah reka bentuk",
+      "contoh_projek_cikgulaju": "model tabung duit automatik gabungan sensor dan servo",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Penghasilan Produk",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "8.1.3",
+          "stage": "sketch"
+        }
+      ]
+    },
+    {
+      "pdp": 24,
+      "id": "RBT-T6-PDP-024",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 3,
+      "unit_label": "Unit 3: Pembangunan Produk",
+      "tajuk": "PdP 024: Melakar reka bentuk produk yang hendak dibina — sambungan 2",
+      "sk": [
+        "8.1"
+      ],
+      "sp_codes": [
+        "8.1.3"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "8.1.3",
+          "fokus": "Melakar reka bentuk produk yang hendak dibina."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 2,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 8.1.3 melalui lakaran berlabel atau algoritma/carta alir berurutan, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan lakaran berlabel atau algoritma/carta alir berurutan bagi SP 8.1.3; guru menilai kelengkapan maklumat dan langkah reka bentuk.",
+      "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan komponen sensor, servo kecil, bahan model, jadual kos dalam situasi \"menggabungkan dua teknologi menghasilkan produk yang menyelesaikan masalah harian\" dan mengaitkan masalah dengan SP 8.1.3. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan contoh lakaran bermaklumat/carta alir dengan label yang diperlukan untuk model tabung duit automatik gabungan sensor dan servo. Murid menghasilkan draf pertama berdasarkan keperluan SP 8.1.3."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid bertukar draf dengan rakan, menyemak label dan urutan menggunakan senarai semak, lalu menghasilkan versi kedua dengan sekurang-kurangnya satu pembetulan bagi SP 8.1.3. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 8.1.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi tabung duit automatik menggunakan sensor dan servo."
+        }
+      },
+      "pbd_evidens": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 8.1.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1; halaman belum dipadankan",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "8.1.3",
+            "muka_surat_bercetak_calon": [
+              49,
+              50
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          49,
+          50
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "lakaran berlabel atau algoritma/carta alir berurutan",
+      "rubrik_pbd_khusus": "kelengkapan maklumat dan langkah reka bentuk",
+      "contoh_projek_cikgulaju": "model tabung duit automatik gabungan sensor dan servo",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Penghasilan Produk",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "8.1.3",
+          "stage": "sketch"
+        }
+      ]
+    },
+    {
+      "pdp": 25,
+      "id": "RBT-T6-PDP-025",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 3,
+      "unit_label": "Unit 3: Pembangunan Produk",
+      "tajuk": "PdP 025: Menilai dan membuat penambahbaikan pada lakaran yang dipilih",
+      "sk": [
+        "8.1"
+      ],
+      "sp_codes": [
+        "8.1.4"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "8.1.4",
+          "fokus": "Menilai dan membuat penambahbaikan pada lakaran yang dipilih."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "lakaran",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 8.1.4 melalui rubrik semak serta lakaran atau kod yang telah dibaiki, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan rubrik semak serta lakaran atau kod yang telah dibaiki bagi SP 8.1.4; guru menilai kejelasan kelemahan, sebab dan pembetulan.",
+      "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan komponen sensor, servo kecil, bahan model, jadual kos dalam situasi \"menggabungkan dua teknologi menghasilkan produk yang menyelesaikan masalah harian\" dan mengaitkan masalah dengan SP 8.1.4. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru memodelkan penggunaan rubrik untuk menilai dua ciri model tabung duit automatik gabungan sensor dan servo. Murid menanda kekuatan dan dua kelemahan pada contoh lakaran/produk bagi SP 8.1.4."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid menambah baik lakaran, atur cara atau komponen berdasarkan analisis, membandingkan sebelum dan selepas serta menjelaskan sebab keputusan bagi SP 8.1.4. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 8.1.4 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi tabung duit automatik menggunakan sensor dan servo."
+        }
+      },
+      "pbd_evidens": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 8.1.4 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1; halaman belum dipadankan",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "8.1.4",
+            "muka_surat_bercetak_calon": [
+              50,
+              52
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          50,
+          52
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "rubrik semak serta lakaran atau kod yang telah dibaiki",
+      "rubrik_pbd_khusus": "kejelasan kelemahan, sebab dan pembetulan",
+      "contoh_projek_cikgulaju": "model tabung duit automatik gabungan sensor dan servo",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Penghasilan Produk",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "8.1.4",
+          "stage": "improve"
+        }
+      ]
+    },
+    {
+      "pdp": 26,
+      "id": "RBT-T6-PDP-026",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 3,
+      "unit_label": "Unit 3: Pembangunan Produk",
+      "tajuk": "PdP 026: Menyediakan senarai peralatan, bahan, anggaran kos dan jadual kerja",
+      "sk": [
+        "8.1"
+      ],
+      "sp_codes": [
+        "8.1.5"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "8.1.5",
+          "fokus": "Menyediakan senarai peralatan, bahan, anggaran kos dan jadual kerja."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "kos",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 8.1.5 melalui jadual bahan, kuantiti, kos seunit dan anggaran jumlah, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan jadual bahan, kuantiti, kos seunit dan anggaran jumlah bagi SP 8.1.5; guru menilai ketepatan kos dan kesesuaian pilihan.",
+      "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan komponen sensor, servo kecil, bahan model, jadual kos dalam situasi \"menggabungkan dua teknologi menghasilkan produk yang menyelesaikan masalah harian\" dan mengaitkan masalah dengan SP 8.1.5. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan cara mengira kuantiti × harga seunit dalam jadual bagi model tabung duit automatik gabungan sensor dan servo. Murid menyenaraikan bahan dan membuat dua pengiraan berpandu bagi SP 8.1.5."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid melengkapkan anggaran kos bahan keseluruhan, menyemak jumlah dengan pasangan dan mencadangkan satu alternatif bahan yang lebih jimat serta sesuai bagi SP 8.1.5. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak jadual bahan, kuantiti, kos seunit dan anggaran jumlah mengikut SP 8.1.5 dan menggunakan kriteria ketepatan kos dan kesesuaian pilihan. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi tabung duit automatik menggunakan sensor dan servo."
+        }
+      },
+      "pbd_evidens": "Guru menyemak jadual bahan, kuantiti, kos seunit dan anggaran jumlah mengikut SP 8.1.5 dan menggunakan kriteria ketepatan kos dan kesesuaian pilihan. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1; halaman belum dipadankan",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "8.1.5",
+            "muka_surat_bercetak_calon": [
+              53,
+              56
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          53,
+          56
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "jadual bahan, kuantiti, kos seunit dan anggaran jumlah",
+      "rubrik_pbd_khusus": "ketepatan kos dan kesesuaian pilihan",
+      "contoh_projek_cikgulaju": "model tabung duit automatik gabungan sensor dan servo",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Penghasilan Produk",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "8.1.5",
+          "stage": "cost"
+        }
+      ]
+    },
+    {
+      "pdp": 27,
+      "id": "RBT-T6-PDP-027",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 3,
+      "unit_label": "Unit 3: Pembangunan Produk",
+      "tajuk": "PdP 027: Membina produk berfungsi berdasarkan lakaran yang dibuat",
+      "sk": [
+        "8.1"
+      ],
+      "sp_codes": [
+        "8.1.6"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "8.1.6",
+          "fokus": "Membina produk berfungsi berdasarkan lakaran yang dibuat."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "amali",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 8.1.6 melalui bukti hasil kerja peringkat semasa dan catatan ujian fungsi, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan bukti hasil kerja peringkat semasa dan catatan ujian fungsi bagi SP 8.1.6; guru menilai pematuhan langkah, keselamatan dan fungsi peringkat semasa.",
+      "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan komponen sensor, servo kecil, bahan model, jadual kos dalam situasi \"menggabungkan dua teknologi menghasilkan produk yang menyelesaikan masalah harian\" dan mengaitkan masalah dengan SP 8.1.6. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk model tabung duit automatik gabungan sensor dan servo. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 8.1.6)."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid meneruskan bahagian kerja untuk model tabung duit automatik gabungan sensor dan servo yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 8.1.6); bukan wajib menyiapkan keseluruhan projek. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 8.1.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi tabung duit automatik menggunakan sensor dan servo."
+        }
+      },
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 8.1.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1; halaman belum dipadankan",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "8.1.6",
+            "muka_surat_bercetak_calon": [
+              56,
+              65
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          56,
+          65
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "bukti hasil kerja peringkat semasa dan catatan ujian fungsi",
+      "rubrik_pbd_khusus": "pematuhan langkah, keselamatan dan fungsi peringkat semasa",
+      "contoh_projek_cikgulaju": "model tabung duit automatik gabungan sensor dan servo",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Penghasilan Produk",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "8.1.6",
+          "stage": "make"
+        }
+      ]
+    },
+    {
+      "pdp": 28,
+      "id": "RBT-T6-PDP-028",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 3,
+      "unit_label": "Unit 3: Pembangunan Produk",
+      "tajuk": "PdP 028: Membina produk berfungsi berdasarkan lakaran yang dibuat — sambungan 2",
+      "sk": [
+        "8.1"
+      ],
+      "sp_codes": [
+        "8.1.6"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "8.1.6",
+          "fokus": "Membina produk berfungsi berdasarkan lakaran yang dibuat."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 2,
+      "aktiviti_kategori": "amali",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 8.1.6 melalui bukti hasil kerja peringkat semasa dan catatan ujian fungsi, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan bukti hasil kerja peringkat semasa dan catatan ujian fungsi bagi SP 8.1.6; guru menilai pematuhan langkah, keselamatan dan fungsi peringkat semasa.",
+      "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan komponen sensor, servo kecil, bahan model, jadual kos dalam situasi \"menggabungkan dua teknologi menghasilkan produk yang menyelesaikan masalah harian\" dan mengaitkan masalah dengan SP 8.1.6. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk model tabung duit automatik gabungan sensor dan servo. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 8.1.6)."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid meneruskan bahagian kerja untuk model tabung duit automatik gabungan sensor dan servo yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 8.1.6); bukan wajib menyiapkan keseluruhan projek. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 8.1.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi tabung duit automatik menggunakan sensor dan servo."
+        }
+      },
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 8.1.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1; halaman belum dipadankan",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "8.1.6",
+            "muka_surat_bercetak_calon": [
+              56,
+              65
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          56,
+          65
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "bukti hasil kerja peringkat semasa dan catatan ujian fungsi",
+      "rubrik_pbd_khusus": "pematuhan langkah, keselamatan dan fungsi peringkat semasa",
+      "contoh_projek_cikgulaju": "model tabung duit automatik gabungan sensor dan servo",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Penghasilan Produk",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "8.1.6",
+          "stage": "make"
+        }
+      ]
+    },
+    {
+      "pdp": 29,
+      "id": "RBT-T6-PDP-029",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 3,
+      "unit_label": "Unit 3: Pembangunan Produk",
+      "tajuk": "PdP 029: Membina produk berfungsi berdasarkan lakaran yang dibuat — sambungan 3",
+      "sk": [
+        "8.1"
+      ],
+      "sp_codes": [
+        "8.1.6"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "8.1.6",
+          "fokus": "Membina produk berfungsi berdasarkan lakaran yang dibuat."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 3,
+      "aktiviti_kategori": "amali",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 8.1.6 melalui bukti hasil kerja peringkat semasa dan catatan ujian fungsi, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan bukti hasil kerja peringkat semasa dan catatan ujian fungsi bagi SP 8.1.6; guru menilai pematuhan langkah, keselamatan dan fungsi peringkat semasa.",
+      "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan komponen sensor, servo kecil, bahan model, jadual kos dalam situasi \"menggabungkan dua teknologi menghasilkan produk yang menyelesaikan masalah harian\" dan mengaitkan masalah dengan SP 8.1.6. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk model tabung duit automatik gabungan sensor dan servo. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 8.1.6)."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid meneruskan bahagian kerja untuk model tabung duit automatik gabungan sensor dan servo yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 8.1.6); bukan wajib menyiapkan keseluruhan projek. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 8.1.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi tabung duit automatik menggunakan sensor dan servo."
+        }
+      },
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 8.1.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1; halaman belum dipadankan",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "8.1.6",
+            "muka_surat_bercetak_calon": [
+              56,
+              65
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          56,
+          65
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "bukti hasil kerja peringkat semasa dan catatan ujian fungsi",
+      "rubrik_pbd_khusus": "pematuhan langkah, keselamatan dan fungsi peringkat semasa",
+      "contoh_projek_cikgulaju": "model tabung duit automatik gabungan sensor dan servo",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Penghasilan Produk",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "8.1.6",
+          "stage": "make"
+        }
+      ]
+    },
+    {
+      "pdp": 30,
+      "id": "RBT-T6-PDP-030",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 3,
+      "unit_label": "Unit 3: Pembangunan Produk",
+      "tajuk": "PdP 030: Membina produk berfungsi berdasarkan lakaran yang dibuat — sambungan 4",
+      "sk": [
+        "8.1"
+      ],
+      "sp_codes": [
+        "8.1.6"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "8.1.6",
+          "fokus": "Membina produk berfungsi berdasarkan lakaran yang dibuat."
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 4,
+      "aktiviti_kategori": "amali",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 8.1.6 melalui bukti hasil kerja peringkat semasa dan catatan ujian fungsi, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan bukti hasil kerja peringkat semasa dan catatan ujian fungsi bagi SP 8.1.6; guru menilai pematuhan langkah, keselamatan dan fungsi peringkat semasa.",
+      "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan komponen sensor, servo kecil, bahan model, jadual kos dalam situasi \"menggabungkan dua teknologi menghasilkan produk yang menyelesaikan masalah harian\" dan mengaitkan masalah dengan SP 8.1.6. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk model tabung duit automatik gabungan sensor dan servo. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 8.1.6)."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid meneruskan bahagian kerja untuk model tabung duit automatik gabungan sensor dan servo yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 8.1.6); bukan wajib menyiapkan keseluruhan projek. Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 8.1.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi tabung duit automatik menggunakan sensor dan servo."
+        }
+      },
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 8.1.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1; halaman belum dipadankan",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "8.1.6",
+            "muka_surat_bercetak_calon": [
+              56,
+              65
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          56,
+          65
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "bukti hasil kerja peringkat semasa dan catatan ujian fungsi",
+      "rubrik_pbd_khusus": "pematuhan langkah, keselamatan dan fungsi peringkat semasa",
+      "contoh_projek_cikgulaju": "model tabung duit automatik gabungan sensor dan servo",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Penghasilan Produk",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "8.1.6",
+          "stage": "make"
+        }
+      ]
+    },
+    {
+      "pdp": 31,
+      "id": "RBT-T6-PDP-031",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 3,
+      "unit_label": "Unit 3: Pembangunan Produk",
+      "tajuk": "PdP 031: Membuat dokumentasi mudah proses penghasilan produk dan pembentangan",
+      "sk": [
+        "8.1"
+      ],
+      "sp_codes": [
+        "8.1.7"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "8.1.7",
+          "fokus": "Membuat dokumentasi mudah proses penghasilan produk dan pembentangan"
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 1,
+      "aktiviti_kategori": "konsep",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 8.1.7 melalui pembentangan hasil atau dokumentasi proses dan respons soalan, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan pembentangan hasil atau dokumentasi proses dan respons soalan bagi SP 8.1.7; guru menilai kejelasan hujah, bukti ujian dan maklum balas.",
+      "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan komponen sensor, servo kecil, bahan model, jadual kos dalam situasi \"menggabungkan dua teknologi menghasilkan produk yang menyelesaikan masalah harian\" dan mengaitkan masalah dengan SP 8.1.7. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan susunan pembentangan produk model tabung duit automatik gabungan sensor dan servo: masalah, idea, lakaran, proses kerja, ujian dan penambahbaikan. Murid menyediakan tiga poin serta memilih bukti hasil (SP 8.1.7)."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid mempersembahkan hasil secara lisan, poster atau demonstrasi, menjawab satu soalan rakan dan menulis maklum balas untuk penambahbaikan (SP 8.1.7). Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 8.1.7 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi tabung duit automatik menggunakan sensor dan servo."
+        }
+      },
+      "pbd_evidens": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 8.1.7 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1; halaman belum dipadankan",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "8.1.7",
+            "muka_surat_bercetak_calon": [
+              66,
+              66
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          66
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "pembentangan hasil atau dokumentasi proses dan respons soalan",
+      "rubrik_pbd_khusus": "kejelasan hujah, bukti ujian dan maklum balas",
+      "contoh_projek_cikgulaju": "model tabung duit automatik gabungan sensor dan servo",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Penghasilan Produk",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "8.1.7",
+          "stage": "present"
+        }
+      ]
+    },
+    {
+      "pdp": 32,
+      "id": "RBT-T6-PDP-032",
+      "tahun": 6,
+      "tahun_akademik": 2027,
+      "subjek": "Reka Bentuk dan Teknologi",
+      "jenis": "PdP_Cadangan_CikguLaju",
+      "unit": 3,
+      "unit_label": "Unit 3: Pembangunan Produk",
+      "tajuk": "PdP 032: Membuat dokumentasi mudah proses penghasilan produk dan pembentangan — sambungan 2",
+      "sk": [
+        "8.1"
+      ],
+      "sp_codes": [
+        "8.1.7"
+      ],
+      "sp_fokus_ringkas": [
+        {
+          "kod": "8.1.7",
+          "fokus": "Membuat dokumentasi mudah proses penghasilan produk dan pembentangan"
+        }
+      ],
+      "tempoh_minit": 60,
+      "sesi_sambungan": 2,
+      "aktiviti_kategori": "konsep",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 8.1.7 melalui pembentangan hasil atau dokumentasi proses dan respons soalan, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan pembentangan hasil atau dokumentasi proses dan respons soalan bagi SP 8.1.7; guru menilai kejelasan hujah, bukti ujian dan maklum balas.",
+      "bbm": "Bahan projek gabungan dua teknologi, lakaran, jadual kerja, jadual kos, komponen voltan rendah, borang ujian dan dokumentasi",
+      "langkah": {
+        "set_induksi": {
+          "minit": 5,
+          "aktiviti": "Guru menunjukkan komponen sensor, servo kecil, bahan model, jadual kos dalam situasi \"menggabungkan dua teknologi menghasilkan produk yang menyelesaikan masalah harian\" dan mengaitkan masalah dengan SP 8.1.7. Murid menyatakan satu pemerhatian awal."
+        },
+        "aktiviti_1": {
+          "minit": 15,
+          "aktiviti": "Guru menunjukkan susunan pembentangan produk model tabung duit automatik gabungan sensor dan servo: masalah, idea, lakaran, proses kerja, ujian dan penambahbaikan. Murid menyediakan tiga poin serta memilih bukti hasil (SP 8.1.7)."
+        },
+        "aktiviti_2": {
+          "minit": 25,
+          "aktiviti": "Murid mempersembahkan hasil secara lisan, poster atau demonstrasi, menjawab satu soalan rakan dan menulis maklum balas untuk penambahbaikan (SP 8.1.7). Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama."
+        },
+        "pengukuhan_penilaian": {
+          "minit": 10,
+          "aktiviti": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 8.1.7 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik."
+        },
+        "penutup": {
+          "minit": 5,
+          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi tabung duit automatik menggunakan sensor dan servo."
+        }
+      },
+      "pbd_evidens": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 8.1.7 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik.",
+      "keselamatan": "Gunakan bekalan kuasa voltan rendah, jauhkan jari daripada servo dan tidak membuat sambungan elektrik utama.",
+      "rujukan_buku_teks": {
+        "status": "BELUM_SAH_HALAMAN",
+        "tahun": 6,
+        "muka_surat": null,
+        "aktiviti_buku_teks": null,
+        "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1; halaman belum dipadankan",
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "8.1.7",
+            "muka_surat_bercetak_calon": [
+              66,
+              66
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          66
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false,
+        "kaedah": "Buku Teks SK cetakan 2021 — kod SP/fokus topik dijumpai dalam teks digital pada halaman bercetak. BUKAN semakan tugasan visual."
+      },
+      "sumber_dskp": {
+        "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
+        "sp_verified_presence": true,
+        "sp_exact_text_not_redistributed": true
+      },
+      "review": {
+        "status": "DRAF_AKTIVITI_SP_DIKHUSUSKAN",
+        "release_ready": false,
+        "pedagogi_disahkan_individu": false,
+        "halaman_buku_disahkan": false,
+        "telegram_web_native_diuji": false
+      },
+      "artefak_khusus": "pembentangan hasil atau dokumentasi proses dan respons soalan",
+      "rubrik_pbd_khusus": "kejelasan hujah, bukti ujian dan maklum balas",
+      "contoh_projek_cikgulaju": "model tabung duit automatik gabungan sensor dan servo",
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Penghasilan Produk",
+      "langkah_berdasarkan_sp": true,
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
+      "specific_sp_task_types": [
+        {
+          "code": "8.1.7",
+          "stage": "present"
+        }
+      ]
+    }
+  ]
+}

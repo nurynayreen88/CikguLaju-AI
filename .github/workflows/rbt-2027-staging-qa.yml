@@ -1,0 +1,102 @@
+name: RBT 2027 staging-only QA
+on:
+  pull_request:
+    paths:
+      - 'rpt_2027/rbt/**'
+      - 'rph_standalone/rbt/**'
+      - 'audits/rbt_*'
+      - 'scripts/check_rbt_t4_t6_2027.py'
+      - 'scripts/render_rbt_2027_previews.py'
+      - 'scripts/build_rbt_2027_review_word.py'
+      - 'scripts/check_rbt_2027_source_adapter.py'
+      - 'web/rbt_2027_staging_source.py'
+      - '.github/workflows/rbt-2027-staging-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rbt-staging-verify:
+    name: Check 96 draft RPH and render preview Word/PDF (no deploy)
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check 96 draft RPH and fail-closed gates
+        run: python scripts/check_rbt_t4_t6_2027.py
+      - name: Verify read-only RBT dropdown and deny public exports
+        run: python scripts/check_rbt_2027_source_adapter.py
+      - name: Build draft A4 HTML previews
+        run: python scripts/render_rbt_2027_previews.py --year all --out /tmp/cikgulaju-rbt-draf
+      - name: Verify all six HTML previews exist
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          files=sorted(Path('/tmp/cikgulaju-rbt-draf').glob('*.html'))
+          assert len(files)==6,[p.name for p in files]
+          for p in files:
+              s=p.read_text(encoding='utf-8')
+              assert 'DRAF' in s and 'A4' in s and '<!doctype html>' in s
+          print('PASS: six staging-only HTML previews')
+          PY
+      - name: Install Word/PDF preview validation dependencies
+        run: |
+          python -m pip install --disable-pip-version-check python-docx pypdf
+          if ! command -v libreoffice >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq --no-install-recommends libreoffice-writer
+          fi
+      - name: Produce 96 individual RPH Word and three RPT landscape Word
+        run: python scripts/build_rbt_2027_review_word.py --year all --out /tmp/cikgulaju-rbt-docs
+      - name: Convert review Word files into PDF without changing source
+        run: |
+          for y in 4 5 6; do
+            libreoffice -env:UserInstallation=file:///tmp/lo_rbt_2027_$y --headless \
+              --convert-to pdf --outdir /tmp/cikgulaju-rbt-docs/tahun_$y \
+              /tmp/cikgulaju-rbt-docs/tahun_$y/*.docx
+          done
+      - name: Verify RPH A4 portrait, exactly one page, PDF text and RPT landscape
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from pypdf import PdfReader
+          from docx import Document
+          base=Path('/tmp/cikgulaju-rbt-docs')
+          count=0
+          for year in (4,5,6):
+              folder=base/f'tahun_{year}'
+              docs=list(folder.glob('*.docx'))
+              pdfs=list(folder.glob('*.pdf'))
+              assert len(docs)==len(pdfs)==33,(year,len(docs),len(pdfs))
+              for docx in docs:
+                  pdf=docx.with_suffix('.pdf')
+                  assert pdf.is_file(),pdf
+                  source=Document(docx)
+                  assert source.sections[0].page_height>0 and source.sections[0].page_width>0
+                  r=PdfReader(pdf)
+                  text=' '.join(page.extract_text() or '' for page in r.pages)
+                  assert text.strip(),(year,docx.name)
+                  assert 'RBT' in text or 'REKA BENTUK DAN TEKNOLOGI' in text
+                  if docx.name.startswith('RPH_RBT_'):
+                      assert len(r.pages)==1,(docx.name,len(r.pages))
+                      page=r.pages[0]
+                      w,h=float(page.mediabox.width),float(page.mediabox.height)
+                      assert 580<w<620 and 830<h<860,(docx.name,w,h)
+                      assert 'DRAF' in text,(docx.name,'missing draft mark')
+                      count+=1
+                  else:
+                      assert docx.name.startswith('RPT_RBT_T')
+                      assert 2<=len(r.pages)<=8,(docx.name,len(r.pages))
+                      for page in r.pages:
+                          assert float(page.mediabox.width)>float(page.mediabox.height)
+          assert count==96,count
+          print('PASS: 96/96 RPH Word->PDF one A4 portrait and 3 RPT landscape, all preview only')
+          PY
+      - name: Upload REVIEW ONLY Word/PDF files as CI artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: rbt-tahun-4-6-2027-draf-qa-word-pdf
+          path: /tmp/cikgulaju-rbt-docs/
+          retention-days: 14
+          if-no-files-found: error
