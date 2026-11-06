@@ -55,9 +55,11 @@ def create_special_rph_blueprint():
         try:
             rows, digest = list_options(kind, int(year_str),
                                         phase=request.args.get("phase"))
-        except ValueError:
+        except SourceUnavailable:
+            return jsonify({"error": "Activity source unavailable"}), 503
+        except (ValueError, KeyError, TypeError):
             return jsonify({"error": "Invalid selection"}), 400
-        except (OSError, KeyError, TypeError) as exc:
+        except OSError:
             return jsonify({"error": "Activity source unavailable"}), 503
         return jsonify({"items": rows, "source_digest": digest, "status": STATUS,
                         "formats": list(MIMES)})
@@ -72,6 +74,7 @@ def create_special_rph_blueprint():
                 or set(payload) != {"selection", "teacher", "format", "source_digest"}
                 or not isinstance(payload["selection"], dict)
                 or set(payload["selection"]) != {"kind", "year", "activity_id", "subject"}
+                or not isinstance(payload["format"], str)
                 or payload["format"] not in MIMES):
             return jsonify({"error": "Invalid document selection"}), 400
         s = payload["selection"]
