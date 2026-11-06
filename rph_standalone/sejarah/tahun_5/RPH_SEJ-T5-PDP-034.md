@@ -15,7 +15,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan foto bunga raya dan garis masa pemilihan bunga kebangsaan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 12: Bunga Raya Bunga Kebangsaan.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 164–166: Pemilihan bunga raya sebagai bunga kebangsaan, makna warna. Murid menyatakan latar belakang pemilihan bunga raya daripada bahan bersumber. Guru menyemak jawapan awal berpandukan 9.5.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 164–166: Pemilihan bunga raya sebagai bunga kebangsaan, makna warna merah. Murid menyatakan latar belakang pemilihan bunga raya daripada bahan bersumber. Guru menyemak jawapan awal berpandukan 9.5.1.
 
 **Aktiviti 2 (20 min):** Guru menyoal bukti konkrit hlm. 164–166 untuk menguji dapatan murid. Murid menanda warna bunga dan menjelaskan sebab bunga kebangsaan menjadi lambang identiti. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan bunga raya sebagai bunga kebangsaan.
 
