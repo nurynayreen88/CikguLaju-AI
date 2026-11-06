@@ -53,6 +53,8 @@ def compact_sejarah_native_word(data):
     for index,table in enumerate(doc.tables):
         table.autofit=False
         widths=(Cm(4.45),Cm(14.75)) if index!=1 else (Cm(2.05),Cm(15.40),Cm(1.75))
+        for col,width in zip(table.columns,widths):
+            col.width=width
         for cell,width in zip(table.rows[0].cells,widths):
             cell.width=width
         for row in table.rows:
