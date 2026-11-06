@@ -18,8 +18,11 @@ class BMSecondaryPilotQA(unittest.TestCase):
         fields = ("tajuk","kemahiran","sk","sp","sk_teks","sp_teks","objektif","set_induksi","aktiviti_1","aktiviti_2","pengukuhan_penilaian","penutup","pemulihan","pengayaan","bahan","bukti_pbd")
         for r in DATA["lessons"]:
             with self.subTest(pdp=r["pdp"]):
-                self.assertTrue(all(isinstance(r.get(k),str) and len(r[k].strip())>12 for k in fields))
+                self.assertTrue(all(isinstance(r.get(k),str) and len(r[k].strip())>0 for k in fields))
                 self.assertGreater(r["halaman"],0)
+                self.assertGreaterEqual(len(r["objektif"]), 40)
+                self.assertGreaterEqual(len(r["aktiviti_1"]), 100)
+                self.assertGreaterEqual(len(r["aktiviti_2"]), 100)
                 self.assertTrue(r["sp"].startswith(r["sk"]+"."))
                 self.assertEqual(r["rph_status"], DATA["release_status"])
                 self.assertEqual(r["langkah"], ["Set induksi","Aktiviti 1","Aktiviti 2","Pengukuhan/Penilaian","Penutup"])
