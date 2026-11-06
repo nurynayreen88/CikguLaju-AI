@@ -52,6 +52,22 @@ class WebSidebarTabsTests(unittest.TestCase):
         self.assertIn('class="app-sidebar"',self.html)
         self.assertIn('class="sidebar-menu"',self.html)
 
+    def test_profile_first_in_desktop_and_mobile_navigation(self):
+        """Profil appears before all teaching tabs, but Today is still home."""
+        import re
+        menu=re.search(r'<nav class="sidebar-menu"[^>]*>(.*?)</nav>',
+                       self.html,flags=re.S)
+        self.assertIsNotNone(menu)
+        choices=re.findall(r'data-web-view="([^"]+)"',menu.group(1))
+        self.assertEqual(choices[0],"account")
+        self.assertEqual(choices[1],"today")
+        self.assertEqual(len(choices),len(set(choices)))
+        self.assertIn('data-web-view="account" aria-controls="view-account"',menu.group(1))
+        self.assertIn('data-web-view="today" aria-controls="view-today" aria-current="page"',menu.group(1))
+        self.assertIn('showWebView("today");window.rphTodayLoad?.();return;',self.html)
+        # Same markup is reused for mobile, no separate ordering is necessary.
+        self.assertIn('.sidebar-menu{display:grid;grid-template-columns:',self.html)
+
     def test_rpt_catalog_outside_rph_section(self):
         # Structural check using parsed nesting, not only search positions.
         class NodeParser(HTMLParser):
