@@ -15,9 +15,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan dua imej bendera dari konteks sejarah berbeza dan garis masa. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 9: Bendera Kebangsaan Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina persoalan inkuiri tentang asal usul Jalur Gemilang. Guru menyemak jawapan awal berpandukan 9.2.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 122–132: Kajian kes cadangan tentang asal usul dan penghormatan Jalur. Murid membina persoalan inkuiri tentang asal usul Jalur Gemilang. Guru menyemak jawapan awal berpandukan 9.2.1.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid menilai dua bukti, menghasilkan garis masa dan mencadangkan amalan menghormati bendera. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan bendera kebangsaan dikibarkan.
+**Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 122–132 bagi menyokong perbandingan. Murid menilai dua bukti, menghasilkan garis masa dan mencadangkan amalan menghormati bendera. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan bendera kebangsaan dikibarkan.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan laporan kes dua sumber, satu kronologi dan etika bendera. Guru menyemak secara individu menggunakan kata tugas SP 9.2.1, 9.2.2 dan nilai K9.2.5, kemudian memberi intervensi kepada murid yang belum tepat.
 

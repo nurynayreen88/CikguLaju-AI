@@ -15,9 +15,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan rakaman rasmi atau maklumat sejarah penggubalan lagu Negaraku. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 10: Lagu Kebangsaan Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun peristiwa asal usul lagu kebangsaan dan menamakan lagu. Guru menyemak jawapan awal berpandukan 9.3.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 136–140: Sejarah lagu Negaraku daripada lagu kebesaran Perak dan. Murid menyusun peristiwa asal usul lagu kebangsaan dan menamakan lagu. Guru menyemak jawapan awal berpandukan 9.3.1.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid membina kad fakta penciptaan dan kegunaan lagu kebangsaan dengan sumber. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan etika ketika menyanyi dan mendengar lagu kebangsaan Malaysia.
+**Aktiviti 2 (20 min):** Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 136–140. Murid membina kad fakta penciptaan dan kegunaan lagu kebangsaan dengan sumber. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan etika ketika menyanyi dan mendengar lagu kebangsaan Malaysia.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan garis masa sejarah dan nama lagu Negaraku. Guru menyemak secara individu menggunakan kata tugas SP 9.3.1, 9.3.2 dan nilai K9.3.6, kemudian memberi intervensi kepada murid yang belum tepat.
 

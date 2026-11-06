@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan poster panduan penggunaan dan pelupusan bendera secara hormat. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 9: Bendera Kebangsaan Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengkategorikan situasi menaikkan, mempamer dan menyimpan bendera dengan betul. Guru menyemak jawapan awal berpandukan 9.2.4.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 130–132: Etika mempamer, menaik dan menjaga bendera kebangsaan. Murid mengkategorikan situasi menaikkan, mempamer dan menyimpan bendera dengan betul. Guru menyemak jawapan awal berpandukan 9.2.4.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid melakonkan cara menegur penggunaan bendera yang tidak tepat dengan beradab. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan bendera kebangsaan sebagai simbol perpaduan.
+**Aktiviti 2 (20 min):** Guru menyediakan soalan semak fakta hlm. 130–132 sebelum pembentangan. Murid melakonkan cara menegur penggunaan bendera yang tidak tepat dengan beradab. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan bendera kebangsaan sebagai simbol perpaduan.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan senarai semak etika sekurang-kurangnya empat perkara. Guru menyemak secara individu menggunakan kata tugas SP 9.2.4 dan nilai K9.2.7, kemudian memberi intervensi kepada murid yang belum tepat.
 

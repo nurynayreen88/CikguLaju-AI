@@ -15,9 +15,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan imej rasmi Jata Negara dan garis masa penggunaannya. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 8: Jata Negara.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengenal pasti latar sejarah penggunaan Jata Negara daripada sumber. Guru menyemak jawapan awal berpandukan 9.1.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 110–115: Perubahan sejarah Jata Negara dan pengenalan lambang pada. Murid mengenal pasti latar sejarah penggunaan Jata Negara daripada sumber. Guru menyemak jawapan awal berpandukan 9.1.1.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 8. Murid melabel unsur utama pada Jata Negara tanpa mencampurkan simbol negeri dan negara. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menghormati Jata Negara.
+**Aktiviti 2 (20 min):** Guru memandu semakan padanan berdasarkan bukti pada hlm. 110–115. Murid melabel unsur utama pada Jata Negara tanpa mencampurkan simbol negeri dan negara. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menghormati Jata Negara.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan garis masa Jata Negara dan rajah lambang berlabel. Guru menyemak secara individu menggunakan kata tugas SP 9.1.1, 9.1.2 dan nilai K9.1.4, K9.1.6, kemudian memberi intervensi kepada murid yang belum tepat.
 

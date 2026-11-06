@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan gambar keris panjang diraja, tengkolok dan alat kebesaran rasmi. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 7: Yang di-Pertuan Agong Teras Kedaulatan Negara.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan nama alat kebesaran dengan rupa serta fungsi istiadat. Guru menyemak jawapan awal berpandukan 8.1.5.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 101–106: Tengkolok Diraja, Keris Panjang Diraja, Cogan Alam dan alat. Murid memadankan nama alat kebesaran dengan rupa serta fungsi istiadat. Guru menyemak jawapan awal berpandukan 8.1.5.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid membina galeri kad maklumat alat kebesaran sambil menjelaskan cara menghormati lambang negara. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan taat setia kepada raja dan negara.
+**Aktiviti 2 (20 min):** Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 101–106. Murid membina galeri kad maklumat alat kebesaran sambil menjelaskan cara menghormati lambang negara. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan taat setia kepada raja dan negara.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan tiga kad alat kebesaran dengan nama, fungsi dan adab. Guru menyemak secara individu menggunakan kata tugas SP 8.1.5 dan nilai K8.1.8, kemudian memberi intervensi kepada murid yang belum tepat.
 
