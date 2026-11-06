@@ -7,6 +7,8 @@ on:
       - "tools/audit_sains_all_runtime_sources_20261106.py"
       - "tools/audit_sains_v2582_unit_grouping_20261106.py"
       - "web/sains_canonical_unit_preview_20261106.py"
+      - "web/sains_y3_rph_activity_preview_20261106.py"
+      - "tests/test_sains_y3_45_activity_preview_20261106.py"
       - "tests/test_sains_canonical_unit_preview_20261106.py"
       - "tools/audit_sains_local_rph_ast_20261106.py"
       - "tools/audit_sains_rph_generator_20261106.py"
@@ -51,6 +53,7 @@ jobs:
           python -m unittest discover -s tests -p 'test_sains_y3_rpt_unit_index_20261106.py' -v
           python -m unittest discover -s tests -p 'test_sains_y3_v2582_source_pages_20261106.py' -v
           python -m unittest discover -s tests -p 'test_sains_canonical_unit_preview_20261106.py' -v
+          python -m unittest discover -s tests -p 'test_sains_y3_45_activity_preview_20261106.py' -v
       - name: Inventory actual Sains grouped PdP from hashed master
         run: python tools/audit_sains_v26_readonly_20261106.py
       - name: Simulate 5 title replacements on temporary historical DB and rollback
