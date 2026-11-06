@@ -40,6 +40,15 @@ jobs:
           name: muzik-qa90-staging-teks-struktur-bukan-live
           path: /tmp/music_quality_90_text_report.json
           if-no-files-found: ignore
+      - name: Audit 175 arahan PdP untuk kebergantungan audio tidak disahkan
+        run: python staging/pendidikan_muzik/rpt_rph_2027/audit_audio_teacher_instructions_staging.py
+      - name: Simpan inventori rujukan media RPH untuk semakan dalaman
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: muzik-175-rph-media-instruction-audit-staging
+          path: /tmp/music_teacher_media_audit.json
+          if-no-files-found: ignore
       - name: Pasang perpustakaan cetakan asas Muzik (hanya CI)
         run: python -m pip install -q python-docx==1.1.2 reportlab==4.2.5 pypdf==5.1.0
       - name: Sediakan LibreOffice Writer hanya dalam GitHub CI untuk kira halaman Word
