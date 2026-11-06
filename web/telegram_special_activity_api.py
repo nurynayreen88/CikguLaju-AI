@@ -10,8 +10,8 @@ import os
 from flask import Blueprint, Response, jsonify, request
 
 from rph_standalone.aktiviti_khas.engine import (
-    MIMES, SELEPAS, STATUS, TRANSISI, SourceUnavailable, list_options, render,
-    select,
+    MIMES, SELEPAS, STATUS, TRANSISI, SourceUnavailable, SPECIAL_SUBJECTS,
+    list_options, list_subjects, preview, render, select,
 )
 
 MAX_BODY = 3000
@@ -44,6 +44,48 @@ def create_special_rph_blueprint():
         if not _authorized():
             return jsonify({"error": "Unauthorized activity source"}), 401
 
+    @bp.get("/internal/rph/v1/aktiviti-khas/subjects")
+    def subjects():
+        if (set(request.args) != {"kind", "year"}
+                or any(len(request.args.getlist(k)) != 1 for k in request.args)):
+            return jsonify({"error": "Invalid subjects selection"}), 400
+        year_str = request.args.get("year", "")
+        if len(year_str) != 1 or year_str not in "123456":
+            return jsonify({"error": "Invalid year"}), 400
+        try:
+            items, digest = list_subjects(request.args.get("kind"), int(year_str))
+        except ValueError:
+            return jsonify({"error": "Invalid subject category"}), 400
+        except (SourceUnavailable, OSError):
+            return jsonify({"error": "Activity catalogue unavailable"}), 503
+        return jsonify({"items": items, "source_digest": digest, "status": STATUS})
+
+    @bp.get("/internal/rph/v1/aktiviti-khas/preview")
+    def preview_activity():
+        supplied = set(request.args)
+        accepted = ({"kind", "year", "activity_id", "source_digest"},
+                    {"kind", "year", "activity_id", "source_digest", "subject"})
+        if (supplied not in accepted
+                or any(len(request.args.getlist(k)) != 1 for k in supplied)):
+            return jsonify({"error": "Invalid preview selection"}), 400
+        year_str = request.args.get("year", "")
+        if len(year_str) != 1 or year_str not in "123456":
+            return jsonify({"error": "Invalid year"}), 400
+        if len(request.args.get("activity_id", "")) > 10:
+            return jsonify({"error": "Invalid activity ID"}), 400
+        try:
+            result = preview(request.args.get("kind"), int(year_str),
+                             request.args.get("activity_id"),
+                             request.args.get("source_digest"),
+                             subject=request.args.get("subject"))
+        except SourceUnavailable:
+            return jsonify({"error": "Activity choice or source changed"}), 409
+        except (TypeError, ValueError, KeyError):
+            return jsonify({"error": "Invalid subject or preview selection"}), 400
+        except OSError:
+            return jsonify({"error": "Activity source unavailable"}), 503
+        return jsonify(result)
+
     @bp.get("/internal/rph/v1/aktiviti-khas/options")
     def options():
         if not (set(request.args) in ({"kind", "year"}, {"kind", "year", "phase"}, {"kind", "year", "subject"})
@@ -52,6 +94,9 @@ def create_special_rph_blueprint():
         kind, year_str = request.args.get("kind"), request.args.get("year")
         if not isinstance(year_str, str) or not year_str in "123456" or len(year_str) != 1:
             return jsonify({"error": "Invalid year"}), 400
+        if (kind == SELEPAS and request.args.get("subject") is not None
+                and request.args["subject"] not in SPECIAL_SUBJECTS):
+            return jsonify({"error": "Unknown subject"}), 400
         try:
             rows, digest = list_options(kind, int(year_str),
                                         phase=request.args.get("phase"), subject=request.args.get("subject"))
