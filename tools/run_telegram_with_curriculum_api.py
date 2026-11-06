@@ -397,6 +397,16 @@ except Exception as _rbt27_exc:
     print("RBT draft Telegram bridge unavailable:",
           type(_rbt27_exc).__name__, flush=True)
 
+# RBT RPT 2027: source-matched landscape PDF, paid-only and draft-labelled.
+# Wraps only rbt27rpt callbacks; preserves all unrelated RPT/subscription flows.
+try:
+    from rpt_2027.rbt.telegram_downloads import install as install_rbt_rpt
+    RBT_2027_RPT_DRAFT_INSTALLED = bool(
+        install_rbt_rpt(vars(telegram_runtime)))
+except Exception as _rbt_rpt_exc:
+    RBT_2027_RPT_DRAFT_INSTALLED = False
+    print("RBT 2027 RPT route unavailable:",type(_rbt_rpt_exc).__name__,flush=True)
+
 # Authenticated Web -> native Telegram RPH document generation.
 # Disabled unless CIKGULAJU_WEB_NATIVE_RPH_ENABLED=1; fail closed.
 # This does not alter Telegram webhook/callbacks, DB, trials, or payments.
