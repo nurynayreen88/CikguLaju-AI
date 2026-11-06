@@ -92,6 +92,47 @@ class BMHierarchyTests(unittest.TestCase):
         self.assertFalse(bm_pdp_options(
             self.db, 2, "Perpaduan", "Jiran Baik", "Bermain"))
 
+    def test_theme_spelling_variants_deduplicate_without_losing_lessons(self):
+        from web_v1_dropdown_catalog import bm_theme_identity
+        with sqlite3.connect(self.db) as con:
+            con.executemany(
+                """INSERT INTO verified_pdp_sequence VALUES
+                (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""", [
+                    (10, "Tahun 2", "Bahasa Melayu", 1,
+                     "2. PERPADUAN", "3", "Sahabat Karib", "Kenali Rakan",
+                     "1.1", "1.1.1", "VERIFIED", "BT m/s 20", "", "", 11),
+                    (11, "Tahun 2", "Bahasa Melayu", 1,
+                     "TEMA 2 : PERPADUAN", "4", "Kami Sepakat", "Bersatu Hati",
+                     "2.1", "2.1.1", "VERIFIED", "BT m/s 24", "", "", 12),
+                    (12, "Tahun 5", "Bahasa Melayu", 1,
+                     "TEMA 1 : Kemasyarakatan", "1", "Masyarakat", "Bekerjasama",
+                     "1.1", "1.1.1", "VERIFIED", "", "", "", 1),
+                    (13, "Tahun 5", "Bahasa Melayu", 1,
+                     "TEMA 1 : Keluarga Berwawasan", "2", "Keluarga", "Berwawasan",
+                     "1.2", "1.2.1", "VERIFIED", "", "", "", 2),
+                ])
+        themes = bm_theme_options(self.db, 2)
+        self.assertEqual(
+            [x["label"] for x in themes if "Perpaduan" in x["label"]],
+            ["Tema 2: Perpaduan"])
+        self.assertEqual(len(set(bm_theme_identity(x["value"]) for x in themes)),
+                         len(themes))
+        theme = "Tema 2: Perpaduan"
+        units = bm_unit_options(self.db, 2, theme)
+        self.assertEqual([x["value"] for x in units],
+                         ["Sahabat Karib", "Kami Sepakat"])
+        self.assertEqual(bm_topic_options(self.db, 2, theme, "Kami Sepakat"),
+                         [{"value": "Bersatu Hati", "label": "Bersatu Hati"}])
+        pdps = bm_pdp_options(self.db, 2, theme, "Kami Sepakat", "Bersatu Hati")
+        self.assertEqual(len(pdps), 1)
+        self.assertEqual(pdps[0]["value"], bm_sequence_token(
+            2, "TEMA 2 : PERPADUAN", "4", "Kami Sepakat", "Bersatu Hati"))
+        # Equal theme numbers alone cannot merge different official titles.
+        self.assertEqual(len(bm_theme_options(self.db, 5)), 2)
+        self.assertEqual(
+            [r["label"] for r in bm_theme_options(self.db, 5)],
+            ["Tema 1: Kemasyarakatan", "Tema 1: Keluarga Berwawasan"])
+
     def test_source_unit_number_not_guessed(self):
         self.assertEqual(display_unit_label("Masa dan Waktu", ""),
                          "Masa dan Waktu")
