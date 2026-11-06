@@ -73,9 +73,15 @@ def check():
         with rpt.open(encoding="utf-8-sig", newline="") as f:
             records = list(csv.DictReader(f))
         assert len(records) == 32
-        assert records[0]["ID"] == lessons[0]["id"]
-        assert records[-1]["ID"] == lessons[-1]["id"]
-        assert all(rec["Status"] == "DRAF" for rec in records)
+        for lesson, rec in zip(lessons, records):
+            assert rec["ID"] == lesson["id"]
+            assert int(rec["PdP"]) == lesson["pdp"]
+            assert rec["Unit"] == lesson["unit_label"], lesson["id"]
+            assert rec["Tajuk PdP"] == lesson["tajuk"], lesson["id"]
+            assert rec["SK"] == " / ".join(lesson["sk"]), lesson["id"]
+            assert rec["SP"] == " / ".join(lesson["sp_codes"]), lesson["id"]
+            assert int(rec["Masa minit"]) == lesson["tempoh_minit"]
+            assert rec["Status"] == "DRAF"
         total += len(lessons)
         print(f"PASS Y{year}: {len(lessons)} PdP, {len(all_sp)} SP, "
               f"{sum(expected['hours'])} jam; release=false")
