@@ -10,7 +10,7 @@ from pathlib import Path
 
 from rpt_2027.common.format_2026_layout_preview import build_preview, validate_rows
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "staging" / "rpt_2027_seragam_2026" / "pdf"
 
 
