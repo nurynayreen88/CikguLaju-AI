@@ -1,9 +1,13 @@
-name: RPT 2027 format 2026 staged 13-PDF visual QA
+name: RPT 2027 format 2026 staged 21-PDF visual QA
 on:
   pull_request:
     paths:
       - 'rpt_2027/common/format_2026_layout_preview.py'
       - 'scripts/build_rpt_2027_standard_preview.py'
+      - 'scripts/build_rpt_2027_second_batch_preview.py'
+      - 'tests/test_rpt_2027_second_batch_preview.py'
+      - 'rpt_2027/sejarah/RPT_SEJARAH_TAHUN_*_2027_A_B_DRAF.csv'
+      - 'rpt_2027/pjpk/pjpk_2027_rpt_manifest.json'
       - 'tests/test_rpt_2027_standard_2026_layout_preview.py'
       - '.github/workflows/rpt-2027-format-2026-staging-qa.yml'
   workflow_dispatch:
@@ -19,18 +23,19 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install 'reportlab==4.2.5' 'pypdf==5.1.0' 'PyMuPDF==1.24.14'
-      - run: python -m py_compile rpt_2027/common/format_2026_layout_preview.py scripts/build_rpt_2027_standard_preview.py
+      - run: python -m py_compile rpt_2027/common/format_2026_layout_preview.py scripts/build_rpt_2027_standard_preview.py scripts/build_rpt_2027_second_batch_preview.py
       - name: Audit source and render each of the 13 A4 landscape PDFs
-        run: python -m unittest tests.test_rpt_2027_standard_2026_layout_preview -v
+        run: python -m unittest tests.test_rpt_2027_standard_2026_layout_preview tests.test_rpt_2027_second_batch_preview -v
       - name: Build named reviewer previews (not live downloads)
         run: |
           python -m scripts.build_rpt_2027_standard_preview
+          python -m scripts.build_rpt_2027_second_batch_preview
           python - <<'PY'
           from pathlib import Path
           import fitz
           root=Path('staging/rpt_2027_seragam_2026/pdf')
           pdfs=sorted(root.glob('*.pdf'))
-          assert len(pdfs)==13, len(pdfs)
+          assert len(pdfs)==21, len(pdfs)
           for f in pdfs:
               with fitz.open(f) as pdf:
                   for page in pdf:
@@ -42,7 +47,7 @@ jobs:
           PY
       - uses: actions/upload-artifact@v4
         with:
-          name: RPT2027-13-draf-format-2026-PDF-dan-pratonton
+          name: RPT2027-21-draf-format-2026-PDF-dan-pratonton
           path: |
             staging/rpt_2027_seragam_2026/pdf/*.pdf
             staging/rpt_2027_seragam_2026/pdf/*.png
