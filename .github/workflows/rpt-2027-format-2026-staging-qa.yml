@@ -1,4 +1,4 @@
-name: RPT 2027 format 2026 staged 21-PDF visual QA
+name: RPT 2027 staged 21-PDF QA plus 3 RBT simulations
 on:
   pull_request:
     paths:
@@ -18,6 +18,9 @@ on:
       - 'rpt_2027/pjpk/dskp_full_standard_texts_y*_20261107_DRAF.json'
       - 'scripts/build_rpt_2027_standard_preview.py'
       - 'scripts/build_rpt_2027_second_batch_preview.py'
+      - 'scripts/build_rpt_2027_rbt_32_week_illustration.py'
+      - 'tests/test_rpt_2027_rbt_32_week_illustration.py'
+      - 'audits/rbt_y4_y6_dskp_full_standard_text_audit_20261107.md'
       - 'tests/test_rpt_2027_second_batch_preview.py'
       - 'rpt_2027/sejarah/RPT_SEJARAH_TAHUN_*_2027_A_B_DRAF.csv'
       - 'rpt_2027/pjpk/pjpk_2027_rpt_manifest.json'
@@ -36,9 +39,9 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install 'reportlab==4.2.5' 'pypdf==5.1.0' 'PyMuPDF==1.24.14'
-      - run: python -m py_compile rpt_2027/common/format_2026_layout_preview.py scripts/build_rpt_2027_standard_preview.py scripts/build_rpt_2027_second_batch_preview.py rpt_2027/common/standard_text_enrichment.py rpt_2027/common/calendar_week_mapping_staging.py scripts/audit_rpt_2027_calendar_master_staging.py rpt_2027/common/sejarah_source_enrichment_staging.py
+      - run: python -m py_compile rpt_2027/common/format_2026_layout_preview.py scripts/build_rpt_2027_standard_preview.py scripts/build_rpt_2027_second_batch_preview.py rpt_2027/common/standard_text_enrichment.py rpt_2027/common/calendar_week_mapping_staging.py scripts/audit_rpt_2027_calendar_master_staging.py rpt_2027/common/sejarah_source_enrichment_staging.py scripts/build_rpt_2027_rbt_32_week_illustration.py
       - name: Audit source and render each of the 13 A4 landscape PDFs
-        run: python -m unittest tests.test_rpt_2027_standard_2026_layout_preview tests.test_rpt_2027_second_batch_preview tests.test_rpt_2027_calendar_master_staging -v
+        run: python -m unittest tests.test_rpt_2027_standard_2026_layout_preview tests.test_rpt_2027_second_batch_preview tests.test_rpt_2027_calendar_master_staging tests.test_rpt_2027_rbt_32_week_illustration -v
       - name: Audit calendar against central 2027 week master (read-only)
         run: python -m scripts.audit_rpt_2027_calendar_master_staging
       - name: Build named reviewer previews (not live downloads)
@@ -75,12 +78,43 @@ jobs:
                   pix=pdf[1].get_pixmap(matrix=fitz.Matrix(1.5,1.5),alpha=False)
                   pix.save(str(f.with_suffix('.page2.png')))
           PY
+      - name: Generate separate explicitly unapproved RBT example schedules
+        run: |
+          python -m scripts.build_rpt_2027_rbt_32_week_illustration
+          python - <<'PY'
+          from pathlib import Path
+          import fitz
+          root=Path('staging/rpt_2027_seragam_2026/rbt_32week_SIMULASI')
+          files=sorted(root.glob('*.pdf'))
+          assert len(files)==3, files
+          for file in files:
+              assert 'SIMULASI_BUKAN_FINAL' in file.name
+              with fitz.open(file) as doc:
+                  assert doc.page_count>1
+                  assert all(p.rect.width>p.rect.height for p in doc)
+                  cover=doc[0].get_text()
+                  assert all(t in cover for t in ('NAMA GURU','NAMA SEKOLAH','LOGO SEKOLAH'))
+                  body='\\n'.join(p.get_text() for p in list(doc)[1:])
+                  assert 'M03 (SIMULASI)' in body and 'M34 (SIMULASI)' in body
+                  assert 'bukan tarikh kelas sebenar' in body
+                  assert not any('\\x00' in p.get_text() for p in doc)
+                  for p in doc:
+                      for b in p.get_text('blocks'):
+                          x0,y0,x1,y1=b[:4]
+                          assert 0<=x0<=x1<=p.rect.width and 0<=y0<=y1<=p.rect.height
+                  doc[0].get_pixmap(matrix=fitz.Matrix(1.4,1.4),alpha=False).save(
+                      str(file.with_suffix('.cover.png')))
+                  doc[1].get_pixmap(matrix=fitz.Matrix(1.5,1.5),alpha=False).save(
+                      str(file.with_suffix('.page2.png')))
+          PY
       - uses: actions/upload-artifact@v4
         with:
-          name: RPT2027-21-draf-format-2026-PDF-dan-pratonton
+          name: RPT2027-21-asal-dan-3-RBT-simulasi-DRAF
           path: |
             staging/rpt_2027_seragam_2026/pdf/*.pdf
             staging/rpt_2027_seragam_2026/pdf/*.png
             staging/rpt_2027_seragam_2026/audit_calendar_week_alignment.json
+            staging/rpt_2027_seragam_2026/rbt_32week_SIMULASI/*.pdf
+            staging/rpt_2027_seragam_2026/rbt_32week_SIMULASI/*.png
           if-no-files-found: error
           retention-days: 14
