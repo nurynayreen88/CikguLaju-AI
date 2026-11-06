@@ -1,3 +1,10 @@
+
+## 6 November 2026 — kemas kini kod SP Tahun 4
+
+- Semakan semula terus pada DSKP KPM dan Buku Teks DBP: PdP21/24 kini memakai kod SP bercetak `3.2.x` dalam manifest, RPH dan RPT staging, sementara `sp_rpt_source` mengekalkan kod asal `3.1.x`.
+- **175/175** RPH draf kini menggunakan nombor SP yang ditemukan pada teks DSKP untuk tahun berkenaan; ini hanya pengesahan kehadiran kod, **bukan** kesahan pedagogi/lesen/kelulusan.
+- Ketakselarasan cetakan **SK 3.1 vs SP 3.2.x**, skor muzik, 81 kriteria kejayaan, 8 cadangan pengukuhan, audio, takwim hari guru dan parity Web–Telegram masih release blockers. Semua kekal DRAF dan JANGAN MERGE/DEPLOY.
+
 # Pendidikan Muzik 2027 — Release Gate Semasa (6 November 2026)
 
 **Keputusan:** STAGING DRAF, **BUKAN FINAL READY**. Tidak dibenarkan merge/deploy tanpa kelulusan baharu. Tiada perubahan kepada main, Supabase, bot, Web, pembayaran, kredit percuma atau referral.
