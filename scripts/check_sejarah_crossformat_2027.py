@@ -55,7 +55,7 @@ for year in (4, 5, 6):
                 assert 0<first<=last<=300, ("Invalid printed page range",ident,span)
                 allowed_pages.update(range(first,last+1))
             for part in ("aktiviti_1","aktiviti_2"):
-                citations=re.findall(r"hlm\\.\\s*(\\d+)(?:\\s*[–-]\\s*(\\d+))?",rph[part]["activity"])
+                citations=re.findall(r"hlm\.\s*(\d+)(?:\s*[–-]\s*(\d+))?",rph[part]["activity"])
                 assert citations, ("Missing printed textbook page",ident,part)
                 for pair in citations:
                     for page in pair:
