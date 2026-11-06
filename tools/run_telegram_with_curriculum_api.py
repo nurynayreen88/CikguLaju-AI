@@ -442,6 +442,21 @@ except Exception as _web_referral_admin_exc:
           type(_web_referral_admin_exc).__name__, flush=True)
 
 
+# Direct Web registration (Telegram Login Widget) admin notice. Uses
+# Supabase authoritative user ID and a durable once-only notification marker.
+try:
+    from web.telegram_web_direct_signup_admin_notice import (
+        create_web_direct_signup_admin_notice,
+    )
+    telegram_runtime.app.register_blueprint(
+        create_web_direct_signup_admin_notice(telegram_runtime))
+    TELEGRAM_WEB_DIRECT_SIGNUP_NOTICE_REGISTERED = True
+except Exception as _web_direct_notice_exc:
+    TELEGRAM_WEB_DIRECT_SIGNUP_NOTICE_REGISTERED = False
+    print("Web direct signup admin notice unavailable:",
+          type(_web_direct_notice_exc).__name__, flush=True)
+
+
 # Add the Web URL after all existing Telegram menu wrappers. Preserve
 # private referral access, manual PDF, payment and other callback handlers.
 try:
