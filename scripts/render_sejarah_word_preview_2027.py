@@ -143,7 +143,7 @@ def rpt_year(year,rows):
         for row in rows:
             cells=tbl.add_row().cells
             vals=(
-                row["PdP"],row[f"Kumpulan {group} minggu mula"]+" – "+row[f"Kumpulan {group} minggu akhir"],
+                row["PdP"],date.fromisoformat(row[f"Kumpulan {group} minggu mula"]).strftime("%d/%m/%Y")+" – "+date.fromisoformat(row[f"Kumpulan {group} minggu akhir"]).strftime("%d/%m/%Y"),
                 row["Unit Buku Teks"],row["SK"]+" | "+row["SP"],row["Evidens PBD RPH"],
             )
             for i,value in enumerate(vals):
