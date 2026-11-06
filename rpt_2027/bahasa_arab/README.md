@@ -99,3 +99,8 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 - 13 halaman asal Unit 4 (86,87,88,90,92,93,94,97,98,99,100,104,110) telah dibuka dan diperiksa secara visual. Kod SP bagi 16 PdP calon juga wujud dalam DSKP Tahun5; belum pengesahan guru atau padanan tahunan.
 - PdP046 h86 diselaraskan kosa kata **قط** menggantikan **قرد** yang tiada pada halaman latihan tersebut.
 - [GitHub Actions 154 DOCX/154 PDF A4 lulus teknikal](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42134760787). **0 FINAL READY** dan tiada peralihan ke produksi.
+
+## 6 November 2026 — Tahun3 Unit2 dan isu sumber Tahun6
+- 16 draf individu `year3/lesson_013..028.md` bagi **ملابسي الجميلة**, disemak pada imej Buku Teks asal Tahun3 (KSSR Semakan 2017) cetakan 2018; nota `audits/bahasa_arab_y3_unit2_pdp013_028_visual_audit_20261106.json` dan peta `rpt_2027/bahasa_arab/year3_unit2_pdp013_028_DRAF.csv`.
+- **AWAS Tahun6**: Fail Drive `GuruBesar_BukuTeks_Bahasa_Arab_T6.pdf` mempunyai enam unit KSSR LAMA (antaranya اليوم الرياضي المدرسي) dan **bukan** edisi DBP/KPM 2021 KSSR Semakan (empat unit bermula حياتنا أجمل بالنظافة). Jangan jadikan PDF Drive ini sumber untuk membina Tahun6 Semakan. Cari teks edisi DBP 2021 yang sepadan ISBN 978-983-49-3300-5.
+- **170 RPH DRAF** keseluruhan, **0 FINAL READY**. Ujian teknikal untuk 170 belum lulus ketika penambahan; RPT tahunan, guru dan integrasi Telegram/Web/DB kekal diblok.

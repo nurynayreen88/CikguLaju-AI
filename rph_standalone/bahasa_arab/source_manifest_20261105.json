@@ -137,7 +137,12 @@
       "unit_4_correction_note": "Sebelum ini indeks tersalah menganggap label DSKP الزمان sebagai tajuk unit; judul buku teks Tahun 3 2018 ialah الوقت كالذهب.",
       "source_evidence_pdp001_012": "audits/bahasa_arab_y3_pdp001_012_source_audit_20261106.json",
       "unit_1_source_reviewed_drafts": 12,
-      "source_review_is_not_individual_approval": true
+      "source_review_is_not_individual_approval": true,
+      "unit2_candidate_rph_count": 16,
+      "unit2_candidate_pdp_range": "013–028",
+      "unit2_source_evidence_file": "audits/bahasa_arab_y3_unit2_pdp013_028_visual_audit_20261106.json",
+      "unit2_release_approved": false,
+      "source_reviewed_drafts_total": 28
     },
     "4": {
       "dskp": {
@@ -348,7 +353,14 @@
             }
           ]
         },
-        "unit_page_ranges_verified": true
+        "unit_page_ranges_verified": true,
+        "drive_file_edition_conflict": {
+          "status": "UNSAFE_UNRELATED_OLDER_KSSR_EDITION",
+          "observed_toc": "Six units including اليوم الرياضي المدرسي, الأشكال حولنا, ما أروع العالم",
+          "expected_toc": "Four units starting حياتنا أجمل بالنظافة from 2021 DBP ISBN 978-983-49-3300-5",
+          "action": "DO_NOT_USE_DRIVE_PDF_AS_BASIS_FOR_KSSR_SEMAKAN_2017_RPH",
+          "checked_on": "2026-11-06"
+        }
       },
       "rpt_2026": "https://anyflip.com/zxzlm/bmaa/basic",
       "unit_1": "حياتنا أجمل بالنظافة",
@@ -372,7 +384,7 @@
     "Ujian integrasi, hash, FK/orphan dan tiada penggantian data sedia ada",
     "Kelulusan manual individu dan pengaktifan hanya selepas CI lulus"
   ],
-  "stage_progress_note": "60 RPH DRAF (PdP 001–012, 12 setiap tahun); 20 unit dalam indeks, 15 bank aktiviti Unit 2–4. Semua DRAF; 0 FINAL READY. | 6 Nov 2026: 12 additional Year4 Unit2 provisional drafts PdP013–024, non-final. | 6 Nov: separate review branch +16 Y5 Unit4 candidate RPH PdP045–060; 154 total drafts, 0 READY; historical 138 CI passed, 154 pending.",
+  "stage_progress_note": "60 RPH DRAF (PdP 001–012, 12 setiap tahun); 20 unit dalam indeks, 15 bank aktiviti Unit 2–4. Semua DRAF; 0 FINAL READY. | 6 Nov 2026: 12 additional Year4 Unit2 provisional drafts PdP013–024, non-final. | 6 Nov: separate review branch +16 Y5 Unit4 candidate RPH PdP045–060; 154 total drafts, 0 READY; historical 138 CI passed, 154 pending. | 6 Nov: new isolated Year3 Unit2 16 visual-book-backed drafts; now 170 total, 0 READY; Year6 Drive PDF edition mismatch quarantined.",
   "additional_unit_activity_bank_count": 15,
   "additional_unit_activity_bank_status": "DRAF_SEMAK_BELUM_READY",
   "primary_crosswalk_file": "rpt_2027/bahasa_arab/pdp_001_012_DRAF.csv",
@@ -381,7 +393,7 @@
   "external_source_registry_path": "audits/bahasa_arab_external_reference_index_20261105.json",
   "external_source_status": "WEB_REFERENCE_DISCOVERED; link cataloged in Drive only, no textbook PDFs copied from public internet",
   "bibliography_file": "audits/bahasa_arab_buku_teks_bibliography_20261105.json",
-  "total_provisional_rph_count": 154,
+  "total_provisional_rph_count": 170,
   "latest_technical_a4_validation": {
     "source_commit": "2e8aee781024c49a6e1af867f39fc447bf0f8199",
     "github_actions_run": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42134760787",

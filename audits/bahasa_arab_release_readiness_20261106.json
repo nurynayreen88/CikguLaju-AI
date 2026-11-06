@@ -5,10 +5,10 @@
   "pr_url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/336",
   "completed": {
     "unit_indexes": 20,
-    "draft_rph": 154,
+    "draft_rph": 170,
     "unit2_4_activity_banks": 15,
     "draft_crosswalk": 60,
-    "source_page_draft_reviewed": 154,
+    "source_page_draft_reviewed": 170,
     "preliminary_year6_page_candidates": 0,
     "one_page_A4_docx_pdf_ci_verified": true,
     "render_check_ci": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42134760787",
@@ -31,13 +31,15 @@
     "year5_unit4_candidate_rph": 16,
     "verified_a4_render_for_all_154": true,
     "year5_unit4_pages_visually_reviewed": 13,
-    "year5_unit4_sp_codes_present_in_dskp": 16
+    "year5_unit4_sp_codes_present_in_dskp": 16,
+    "year3_unit2_candidate_rph": 16,
+    "verified_a4_render_for_all_170": false
   },
   "release_checks": [
     {
       "id": "source_book_editions",
       "status": "PARTIAL",
-      "detail": "Year 2–6 ISBN independently identified, Year 2 original textbook DBP 2017 text opened; original per-page visual inspection and matching all editions to local source PDFs not done."
+      "detail": "CRITICAL: Year6 Drive PDF older KSSR six-unit edition differs from Year6 KSSR Semakan 2017 four-unit DBP 2021 textbook ISBN 978-983-49-3300-5; do not use stored PDF for lesson generation. Year3 original 2018 Semakan PDF visually confirmed."
     },
     {
       "id": "unit_index",
@@ -47,17 +49,17 @@
     {
       "id": "full_pdp_coverage",
       "status": "BLOCKED",
-      "detail": "154 RPH draft candidates: 60 initial Unit1 across Year2–6, Year4 extra 46 and Year5 Units2–4 extra 48. Years2/3/6 Units2–4 still unwritten. 2027 official annual lesson counts unverified."
+      "detail": "170 draft candidates: +16 Year3 Unit2. Y2 Units2–4, Y3 Units3–4, Y6 Units2–4 unwritten. No official annual RPT 2027 completeness proof."
     },
     {
       "id": "sk_sp",
       "status": "PARTIAL",
-      "detail": "154 candidate code/page mappings (16 new Year5 Unit4 pp86–110); four Year2 printed SP OCR issues and final teacher approvals unresolved."
+      "detail": "170 candidate source-aligned SP codes including 16 visually checked Year3 Unit2; four Year2 scanned printed SP ambiguities pending; no final approval."
     },
     {
       "id": "textbook_page_to_pdp",
       "status": "PARTIAL",
-      "detail": "154 candidate mappings based on source page text; original visual pages, accurate total annual sequence and manual sign-off are pending."
+      "detail": "170 candidate drafts with source references. Year3 Unit2 16 pages visually inspected in correct 2018 textbook; all years remain subject to official RPT2027 and teacher signoff."
     },
     {
       "id": "rpt_2027_group_A_B",
@@ -67,7 +69,7 @@
     {
       "id": "word_pdf_programmatic_a4",
       "status": "PASS_TECHNICAL_ONLY",
-      "detail": "154 DOCX+154 PDF each exactly one A4 page passed in run https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42134760787; this is technical-only and does not confer pedagogic or language approval."
+      "detail": "Previous 154 DOCX+PDF one-page A4 passed https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42135044099. New 170 draft total NOT YET technically tested."
     },
     {
       "id": "manual_pedagogic_approval",
@@ -108,6 +110,16 @@
       "id": "year5_unit4_candidate",
       "status": "PARTIAL",
       "detail": "16 Unit4 Year5 candidate drafts from 13 visually inspected original source pages, 16 SP code values exist in DSKP Year5, one PdP046 word corrected, 0 individual teacher approvals; RPT 2027 A/B unresolved."
+    },
+    {
+      "id": "year6_original_pdf_edition_mismatch",
+      "status": "BLOCKED",
+      "detail": "Drive GuruBesar_BukuTeks_Bahasa_Arab_T6.pdf has 6 old KSSR units; Semakan 2017 DBP ISBN 978-983-49-3300-5 has 4 different units. Prevent incorrect original mapping."
+    },
+    {
+      "id": "year3_unit2_visual_candidate",
+      "status": "PARTIAL",
+      "detail": "16 Year3 Unit2 RPH source-image/SP evidence for h30–55 and manual QA candidate status; not full-year RPT or teacher approval."
     }
   ],
   "years": [
@@ -128,14 +140,16 @@
       "year": 3,
       "units": 4,
       "unit1_draft_rph": 12,
-      "source_page_reviewed_rph": 12,
+      "source_page_reviewed_rph": 28,
       "preliminary_mapping_only": 0,
       "unwritten_units": [
-        2,
         3,
         4
       ],
-      "textbook_issue": "Year 3 source pages reviewed as text; original scanned Drive edition and layouts not visually compared; teacher approval pending."
+      "textbook_issue": "28 draft candidates, 16 Year3 Unit2 source page visually reviewed; annual RPT2027 and individual pedagogy sign-off still pending.",
+      "incomplete_units": [
+        2
+      ]
     },
     {
       "year": 4,
@@ -176,7 +190,7 @@
         3,
         4
       ],
-      "textbook_issue": "Year 6 has 12 Unit 1 draft source-page text reviews, including corrected PdP012 p18. Teacher approval, visual page proof, RPT 2027 mapping and complete years still missing."
+      "textbook_issue": "CRITICAL source mismatch: stored Drive PDF is older non-Semakan KSSR six-unit Year6 edition, not 2021 DBP four-unit KSSR Semakan. Quarantine Drive PDF, use verified 2021 source only for Year6; 12 draft candidates still unapproved."
     }
   ],
   "total_ready_rph": 0,
@@ -185,6 +199,7 @@
   "telegram_live_touched": false,
   "web_live_touched": false,
   "release_next_actions": [
+    "Replace Year6 source with verified KSSR Semakan 2017 DBP 2021 ebook before any Year6 full unit drafting; do not use old Drive PDF.",
     "Audit original Year 2 textbook Unit 1 per printed page and DSKP",
     "Audit Year 6 Unit 1 all 12 SP/page links individually, not candidate-only",
     "Complete and review full-year PdP/RPH coverage for Units 2, 3, 4 across Years 2–6",
