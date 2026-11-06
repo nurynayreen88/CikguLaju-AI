@@ -55,7 +55,7 @@ def display_sk_sp(raw: str) -> str:
     The draft/source audit explanations remain available in Markdown and
     audit JSON; they must never leak into a printable teacher RPH.
     """
-    match = re.match(r"^\\s*(\\d+\\.\\d+)\\s*/\\s*(\\d+\\.\\d+\\.\\d+)", str(raw or ""))
+    match = re.match(r"^\s*(\d+\.\d+)\s*/\s*(\d+\.\d+\.\d+)", str(raw or ""))
     if not match or not match.group(2).startswith(match.group(1) + "."):
         raise ValueError("Invalid or incomplete source SK/SP; refusing printable RPH")
     return match.group(1) + " / " + match.group(2)
@@ -63,7 +63,7 @@ def display_sk_sp(raw: str) -> str:
 
 def font_run(paragraph, value: str, size=9.0, bold=False):
     """Keep Malay/Latin in a clear sans font; isolate Arabic RTL runs."""
-    pieces = re.split(r"([\\u0600-\\u06FF\\u0750-\\u077F\\u08A0-\\u08FF]+)", value)
+    pieces = re.split(r"([\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]+)", value)
     for segment in pieces:
         if not segment:
             continue
