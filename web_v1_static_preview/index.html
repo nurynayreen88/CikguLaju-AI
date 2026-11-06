@@ -527,8 +527,10 @@ function restoreRphEditor(){
   activeTodayEditor=null;
  }
  if(rphView.parentNode!==rphOriginalParent)rphOriginalParent.insertBefore(rphView,rphOriginalNext);
+ const wasEmbedded=rphView.classList.contains("daily-rph-embedded");
  rphView.classList.remove("daily-rph-embedded");
  document.getElementById("lesson").size=1;
+ if(wasEmbedded)setSubjectNavigationLabels();
 }
 window.closeRphFromToday=()=>{
  restoreRphEditor();
@@ -763,7 +765,7 @@ async function loadFinalLesson(kind,extra,unchanged){
  */
 let todayPrepareBusy=false;
 window.prepareRphFromToday=async function(slot,dateIso,inlineHost=null){
- if(todayPrepareBusy)return;
+ if(todayPrepareBusy)return false;
  if(!slot||slot.can_prepare!==true||
     !Number.isInteger(slot.year)||slot.year<1||slot.year>6||
     typeof slot.subject_code!=="string"||
@@ -772,7 +774,6 @@ window.prepareRphFromToday=async function(slot,dateIso,inlineHost=null){
     !/^\d{2}:\d{2}$/.test(slot.start)||
     !/^\d{2}:\d{2}$/.test(slot.end))throw Error("Jadual yang dipilih tidak sah.");
  todayPrepareBusy=true;
- const selectionEpoch=++todaySelectionEpoch;
  try{
   if(inlineHost){
    if(!inlineHost.classList.contains("daily-rph-editor")||!inlineHost.isConnected)
@@ -788,24 +789,25 @@ window.prepareRphFromToday=async function(slot,dateIso,inlineHost=null){
    rphView.classList.add("daily-rph-embedded");
    rphView.hidden=false;
   }else showWebView("rph");
+  const selectionEpoch=++todaySelectionEpoch;
   year.value=String(slot.year);
   resetSelect(subject,"Pilih Subjek");
   resetCurriculumChoices();
   const expectedYear=year.value;
   const subjects=await loadOptions("subjects");
-  if(selectionEpoch!==todaySelectionEpoch)return;
+  if(selectionEpoch!==todaySelectionEpoch)return false;
   if(year.value!==expectedYear)throw Error("Tahun ditukar semasa bacaan jadual.");
   fillSelect(subject,subjects,"Pilih Subjek");
   if(![...subject.options].some(o=>o.value===slot.subject_code)){
    catalogStatus.textContent="Subjek dalam jadual belum tersedia untuk Tahun "+expectedYear+" dalam sumber Telegram.";
    updateSelectionHelp("Pilih subjek yang tersedia atau semak ejaan subjek dalam Jadual Waktu.");
-   return;
+   return false;
   }
   subject.value=slot.subject_code;
   subject.dispatchEvent(new Event("change"));
   // The real saved class is resolved through the existing shared profile.
   await loadTeacherClasses();
-  if(selectionEpoch!==todaySelectionEpoch)return;
+  if(selectionEpoch!==todaySelectionEpoch)return false;
   const exists=[...teacherClass.options].some(o=>o.value===slot.class_name);
   if(exists){teacherClass.value=slot.class_name;teacherClassOther.value="";}
   else{teacherClass.value="__other__";teacherClassOther.value=slot.class_name;}
@@ -818,6 +820,7 @@ window.prepareRphFromToday=async function(slot,dateIso,inlineHost=null){
   showRphAction();
   updateSelectionHelp("Jadual dimasukkan: "+slot.class_name+" · "+slot.start+"–"+slot.end+
     ". Pilih Unit/Tajuk/Topik dan pilih Lesson/PdP daripada senarai di sini. Tiada RPH dijana secara automatik.");
+  return true;
  }finally{todayPrepareBusy=false;}
 };
 
