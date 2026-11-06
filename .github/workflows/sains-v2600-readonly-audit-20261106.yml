@@ -5,6 +5,7 @@ on:
     paths:
       - "tools/audit_sains_v26_readonly_20261106.py"
       - "tools/audit_sains_native_reader_ast_20261106.py"
+      - "tools/simulate_sains_y3_5_title_repair_20261106.py"
       - "tests/test_sains_v26_source_inventory_20261106.py"
       - "tests/test_sains_y3_23_source_ledger_20261106.py"
       - "tests/test_sains_y3_dskp_crosswalk_20261106.py"
@@ -35,5 +36,7 @@ jobs:
           python -m unittest discover -s tests -p 'test_sains_y3_dskp_crosswalk_20261106.py' -v
       - name: Inventory actual Sains grouped PdP from hashed master
         run: python tools/audit_sains_v26_readonly_20261106.py
+      - name: Simulate 5 title replacements on temporary historical DB and rollback
+        run: python tools/simulate_sains_y3_5_title_repair_20261106.py
       - name: Inspect Telegram native reader without importing bot
         run: python tools/audit_sains_native_reader_ast_20261106.py
