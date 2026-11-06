@@ -115,11 +115,12 @@ def word_doc(path,number,unit,state,rows):
     for ri,(k,v) in enumerate(det):
         _set_doc_cell(details.cell(ri,0),k,True)
         _set_doc_cell(details.cell(ri,1),v)
-    phases=doc.add_table(rows=5,cols=2);phases.style="Table Grid"
+    phases=doc.add_table(rows=6,cols=2);phases.style="Table Grid"
     for ri,(k,v) in enumerate([
         ("Set induksi",rows["SET INDUKSI"]),
         ("Aktiviti utama",rows["AKTIVITI UTAMA"]),
         ("Penilaian/PBD",rows["PENTAKSIRAN"]),
+        ("Buku Aktiviti",rows["BUKU AKTIVITI / LATIHAN"]),
         ("Penutup",rows["PENUTUP"]),
         ("BBM",rows["BAHAN BANTU MENGAJAR"]),
     ]):
@@ -172,6 +173,7 @@ def pdf_doc(path,number,unit,state,rows):
         ("Set induksi",rows["SET INDUKSI"]),
         ("Aktiviti utama",rows["AKTIVITI UTAMA"]),
         ("Penilaian/PBD",rows["PENTAKSIRAN"]),
+        ("Buku Aktiviti",rows["BUKU AKTIVITI / LATIHAN"]),
         ("Penutup",rows["PENUTUP"]),
         ("BBM / Buku Teks",rows["BAHAN BANTU MENGAJAR"]),
         ("Refleksi","____/____ murid mencapai objektif."),
@@ -221,6 +223,9 @@ def main():
             "word_file":w.name,"pdf_file":pdf.name,
             "pdf_a4_one_page":"PASS","docx_a4":"PASS_NO_PAGINATION_PROOF",
             "textbook_source":"CANDIDATE_NOT_VISUALLY_APPROVED",
+            "activity_book_ref":fields["BUKU AKTIVITI / LATIHAN"],
+            "activity_book_url":fields["BUKU AKTIVITI URL"],
+            "activity_book_review_status":"TOC_PAGE_VERIFIED_SP_PEDAGOGY_HOLD",
             "rph_academic_status":"DRAF_NOT_APPROVED",
         })
     with (OUTPUT/"MANIFEST_DRAF.csv").open("w",encoding="utf-8-sig",newline="") as f:
