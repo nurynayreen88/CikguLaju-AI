@@ -18,9 +18,13 @@ class AvatarContractTests(unittest.TestCase):
         self.assertEqual(version,"")
 
     def test_invalid_avatar_rejected(self):
-        for bad in ("<script>", "custom-image-url", "cat", "", None, ["books"]):
+        for bad in ("<script>", "custom-image-url", "cat", "", ["books"]):
             with self.subTest(bad=bad), self.assertRaises(ProfileValidation):
                 clean_profile(form(avatar_code=bad))
+
+    def test_legacy_nullable_avatar_is_treated_as_omitted(self):
+        values,_=clean_profile(form(avatar_code=None))
+        self.assertNotIn("avatar_code",values)
 
     def test_old_telegram_profile_payload_preserves_existing_avatar(self):
         old=form()
