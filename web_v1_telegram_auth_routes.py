@@ -1,7 +1,7 @@
-"""Optional, fail-closed Telegram Login Widget callback for isolated Web V1.
+"""Fail-closed Telegram Login Widget callback for CikguLaju Web.
 
-Disabled unless all secrets and explicit existing-account SQLite mapping are set.
-Never creates an account or alters the Telegram bot database.
+A verified new Telegram identity may register only through the shared Supabase
+account backend. The isolated SQLite compatibility path remains read-only.
 """
 import os
 from pathlib import Path
@@ -75,6 +75,10 @@ def telegram_widget_callback():
         current_app.logger.exception("Web account registration/lookup unavailable")
         return jsonify({"error": "account registration unavailable"}), 503
     if not account or account.get("telegram_user_id") != uid:
+        if config.get("account_backend") == "sqlite":
+            # Compatibility path is intentionally read-only: unknown users are forbidden.
+            return jsonify({"error": "existing account required"}), 403
+        # Supabase signup could not be confirmed; fail closed, never issue a session.
         return jsonify({"error": "account registration not confirmed"}), 503
     try:
         from web.web_referral_routes import capture_after_verified_login
