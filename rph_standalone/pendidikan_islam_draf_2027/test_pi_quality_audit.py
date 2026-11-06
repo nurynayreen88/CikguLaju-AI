@@ -27,9 +27,23 @@ class PIQualityAuditTests(unittest.TestCase):
 
     def test_remaining_short_content_is_not_masked(self):
         r = self.result
-        self.assertGreater(r["flags"].get("AKTIVITI_TERLALU_RINGKAS_PERLU_SEMAKAN", 0), 500)
+        self.assertEqual(r["short_activity_count"], 3)
+        self.assertEqual(r["expanded_activity_draft_count"], 560)
+        self.assertEqual(r["critical_source_review_count"], 3)
+        self.assertAlmostEqual(r["mechanical_three_step_coverage_percent"], 99.57, places=2)
         self.assertEqual(sum(r["domain_counts"].values()), 696)
         self.assertGreater(r["flags"].get("RUJUKAN_HALAMAN_BELUM_DISAHKAN", 0), 0)
+
+    def test_source_blockers_are_explicit_not_silently_approved(self):
+        blocked = sorted(row["id"] for row in self.result["records"]
+                         if "SUMBER_KRITIKAL_BELUM_LENGKAP" in row["flags"])
+        self.assertEqual(blocked, ["T4-L083", "T6-L137", "T6-L141"])
+        self.assertEqual(self.result["release"], "NO_GO")
+        self.assertIsNone(self.result["quality_score_percent"])
+
+    def test_document_content_still_unapproved(self):
+        self.assertEqual(self.result["flags"]["PENAMBAHAN_PDP_BELUM_SAH_PAKAR"], 560)
+        self.assertIs(self.result["quality_80_certified"], False)
 
 
 if __name__ == "__main__":
