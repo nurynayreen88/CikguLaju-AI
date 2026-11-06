@@ -89,6 +89,8 @@ class NativeMathScienceTests(unittest.TestCase):
                                headers=headers)
             self.assertEqual(lessons.status_code,200)
             self.assertEqual(len(lessons.json["items"]),2)
+            self.assertEqual(lessons.json["items"][0]["textbook_ref"], "BT ms. 23")
+            self.assertNotIn("textbook_ref", lessons.json["items"][1])
 
 
 if __name__=="__main__":
