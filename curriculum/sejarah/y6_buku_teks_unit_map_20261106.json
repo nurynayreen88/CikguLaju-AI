@@ -1,0 +1,130 @@
+{
+  "year": 6,
+  "edition": "DBP 2021, KSSR Semakan 2017",
+  "isbn": "978-983-49-3279-4",
+  "table_of_contents_source": "https://fliphtml5.com/itcew/pnmn",
+  "source_evidence": "Unit and printed start pages from 2017 revised textbook table of contents; activity pages not verified",
+  "review_state": "DRAF_TO_CROSSWALK_CONFIRMED",
+  "units": [
+    {
+      "sk": "10.1",
+      "number": 1,
+      "name": "Pembentukan Malaysia",
+      "start": 2,
+      "end": 19,
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "edition": "DBP 2021, KSSR Semakan 2017",
+      "isbn": "978-983-49-3279-4",
+      "evidence": "ISI_KANDUNGAN_BUKU_TEKS_DISEMAK",
+      "exact_activity_page_verified": false
+    },
+    {
+      "sk": "10.2",
+      "number": 2,
+      "name": "Negeri-negeri di Malaysia",
+      "start": 20,
+      "end": 33,
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "edition": "DBP 2021, KSSR Semakan 2017",
+      "isbn": "978-983-49-3279-4",
+      "evidence": "ISI_KANDUNGAN_BUKU_TEKS_DISEMAK",
+      "exact_activity_page_verified": false
+    },
+    {
+      "sk": "10.3",
+      "number": 3,
+      "name": "Rukun Negara",
+      "start": 34,
+      "end": 49,
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "edition": "DBP 2021, KSSR Semakan 2017",
+      "isbn": "978-983-49-3279-4",
+      "evidence": "ISI_KANDUNGAN_BUKU_TEKS_DISEMAK",
+      "exact_activity_page_verified": false
+    },
+    {
+      "sk": "11.1",
+      "number": 4,
+      "name": "Kaum di Malaysia",
+      "start": 50,
+      "end": 75,
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "edition": "DBP 2021, KSSR Semakan 2017",
+      "isbn": "978-983-49-3279-4",
+      "evidence": "ISI_KANDUNGAN_BUKU_TEKS_DISEMAK",
+      "exact_activity_page_verified": false
+    },
+    {
+      "sk": "11.2",
+      "number": 5,
+      "name": "Agama dan Kepercayaan",
+      "start": 76,
+      "end": 91,
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "edition": "DBP 2021, KSSR Semakan 2017",
+      "isbn": "978-983-49-3279-4",
+      "evidence": "ISI_KANDUNGAN_BUKU_TEKS_DISEMAK",
+      "exact_activity_page_verified": false
+    },
+    {
+      "sk": "11.3",
+      "number": 6,
+      "name": "Perayaan Masyarakat di Malaysia",
+      "start": 92,
+      "end": 105,
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "edition": "DBP 2021, KSSR Semakan 2017",
+      "isbn": "978-983-49-3279-4",
+      "evidence": "ISI_KANDUNGAN_BUKU_TEKS_DISEMAK",
+      "exact_activity_page_verified": false
+    },
+    {
+      "sk": "12.1",
+      "number": 7,
+      "name": "Pemimpin Negara Malaysia",
+      "start": 106,
+      "end": 123,
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "edition": "DBP 2021, KSSR Semakan 2017",
+      "isbn": "978-983-49-3279-4",
+      "evidence": "ISI_KANDUNGAN_BUKU_TEKS_DISEMAK",
+      "exact_activity_page_verified": false
+    },
+    {
+      "sk": "12.2",
+      "number": 8,
+      "name": "Kemajuan Ekonomi Malaysia",
+      "start": 124,
+      "end": 141,
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "edition": "DBP 2021, KSSR Semakan 2017",
+      "isbn": "978-983-49-3279-4",
+      "evidence": "ISI_KANDUNGAN_BUKU_TEKS_DISEMAK",
+      "exact_activity_page_verified": false
+    },
+    {
+      "sk": "12.3",
+      "number": 9,
+      "name": "Sukan Kebanggaan Malaysia",
+      "start": 142,
+      "end": 159,
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "edition": "DBP 2021, KSSR Semakan 2017",
+      "isbn": "978-983-49-3279-4",
+      "evidence": "ISI_KANDUNGAN_BUKU_TEKS_DISEMAK",
+      "exact_activity_page_verified": false
+    },
+    {
+      "sk": "12.4",
+      "number": 10,
+      "name": "Malaysia dan Dunia",
+      "start": 160,
+      "end": 176,
+      "source_url": "https://fliphtml5.com/itcew/pnmn",
+      "edition": "DBP 2021, KSSR Semakan 2017",
+      "isbn": "978-983-49-3279-4",
+      "evidence": "ISI_KANDUNGAN_BUKU_TEKS_DISEMAK",
+      "exact_activity_page_verified": false
+    }
+  ]
+}

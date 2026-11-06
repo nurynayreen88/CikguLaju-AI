@@ -1,0 +1,352 @@
+{
+  "year": 6,
+  "source": "KPM DSKP KSSR Sejarah Semakan 2017",
+  "drive_file_id": "1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q",
+  "source_url": "https://drive.google.com/file/d/1BN6nJjse61rXyaA9YKTsiIJm7ylmQc4Q/view",
+  "extraction": "Text processed from user-connected Drive DSKP; not page-by-page visual validation",
+  "status": "DRAF",
+  "standards": [
+    {
+      "sk": "10.1",
+      "title": "Pembentukan Malaysia",
+      "theme": "Negara Malaysia",
+      "sp": [
+        {
+          "code": "10.1.1",
+          "text": "Menyatakan idea pembentukan dan sebab-sebab Pembentukan Malaysia."
+        },
+        {
+          "code": "10.1.2",
+          "text": "Menerangkan langkah-langkah ke arah Pembentukan Malaysia."
+        },
+        {
+          "code": "10.1.3",
+          "text": "Menjelaskan tokoh-tokoh dan negeri-negeri yang terlibat dalam Pembentukan Malaysia."
+        },
+        {
+          "code": "10.1.4",
+          "text": "Menghuraikan cabaran ke arah Pembentukan Malaysia."
+        },
+        {
+          "code": "K10.1.5",
+          "text": "Menyatakan kepentingan permuafakatan dalam Pembentukan Malaysia."
+        },
+        {
+          "code": "K10.1.6",
+          "text": "Menjelaskan kepentingan menghargai jasa dan kebijaksanaan pemimpin."
+        },
+        {
+          "code": "K10.1.7",
+          "text": "Menghuraikan kepentingan mengekalkan kemakmuran dan perpaduan di Malaysia"
+        }
+      ]
+    },
+    {
+      "sk": "10.2",
+      "title": "Negeri-negeri di Malaysia",
+      "theme": "Negara Malaysia",
+      "sp": [
+        {
+          "code": "10.2.1",
+          "text": "Mengenali nama negeri-negeri di Malaysia."
+        },
+        {
+          "code": "10.2.2",
+          "text": "Menamakan ketua negeri bagi negeri-negeri di Malaysia."
+        },
+        {
+          "code": "10.2.3",
+          "text": "Menyenaraikan ibu negeri dan bandar diraja."
+        },
+        {
+          "code": "10.2.4",
+          "text": "Menjelaskan bendera, lagu dan jata sebagai lambang negeri."
+        },
+        {
+          "code": "K10.2.5",
+          "text": "Menyatakan kepentingan taat setia dan menghormati ketua negeri."
+        },
+        {
+          "code": "K10.2.6",
+          "text": "Menjelaskan kepentingan menghormati lambang negeri."
+        },
+        {
+          "code": "K10.2.7",
+          "text": "Menjelaskan rasa bangga terhadap warisan negeri-negeri di Malaysia."
+        }
+      ]
+    },
+    {
+      "sk": "10.3",
+      "title": "Rukun Negara",
+      "theme": "Negara Malaysia",
+      "sp": [
+        {
+          "code": "10.3.1",
+          "text": "Menyatakan sebab-sebab pengenalan Rukun Negara."
+        },
+        {
+          "code": "10.3.2",
+          "text": "Menerangkan matlamat dan prinsip Rukun Negara."
+        },
+        {
+          "code": "10.3.3",
+          "text": "Menjelaskan peranan Rukun Negara dalam kehidupan seharian."
+        },
+        {
+          "code": "K10.3.4",
+          "text": "Menyatakan kepentingan menghayati matlamat dan prinsip Rukun Negara."
+        },
+        {
+          "code": "K10.3.5",
+          "text": "Menerangkan kepentingan mengamalkan matlamat dan prinsip Rukun Negara dalam kehidupan."
+        },
+        {
+          "code": "K10.3.6",
+          "text": "Menghuraikan kepentingan Rukun Negara dalam membentuk jati diri rakyat Malaysia."
+        }
+      ]
+    },
+    {
+      "sk": "11.1",
+      "title": "Kaum di Malaysia",
+      "theme": "Kita Rakyat Malaysia",
+      "sp": [
+        {
+          "code": "11.1.1",
+          "text": "Menyatakan kepelbagaian kaum di Malaysia."
+        },
+        {
+          "code": "11.1.2",
+          "text": "Menyatakan petempatan serta kegiatan ekonomi masyarakat Malaysia dahulu dan kini."
+        },
+        {
+          "code": "11.1.3",
+          "text": "Menyenaraikan alat muzik dan tarian tradisional masyarakat di Malaysia."
+        },
+        {
+          "code": "11.1.4",
+          "text": "Menyenaraikan jenis permainan tradisional masyarakat di Malaysia."
+        },
+        {
+          "code": "11.1.5",
+          "text": "Menghuraikan cerita rakyat berunsur tempatan dalam masyarakat di Malaysia."
+        },
+        {
+          "code": "K11.1.6",
+          "text": "Menyatakan kepentingan bertoleransi antara kaum sebagai asas perpaduan."
+        },
+        {
+          "code": "K11.1.7",
+          "text": "Menerangkan kepentingan menghargai keunikan budaya tempatan."
+        },
+        {
+          "code": "K11.1.8",
+          "text": "Menghuraikan kepentingan perkongsian maklumat tentang kepelbagaian kaum di Malaysia."
+        }
+      ]
+    },
+    {
+      "sk": "11.2",
+      "title": "Agama dan Kepercayaan di Malaysia",
+      "theme": "Kita Rakyat Malaysia",
+      "sp": [
+        {
+          "code": "11.2.1",
+          "text": "Menyatakan pelbagai agama dan kepercayaan masyarakat di Malaysia."
+        },
+        {
+          "code": "11.2.2",
+          "text": "Menyatakan kedudukan agama Islam sebagai agama Persekutuan."
+        },
+        {
+          "code": "11.2.3",
+          "text": "Menyatakan kedudukan agama lain dalam perlembagaan."
+        },
+        {
+          "code": "11.2.4",
+          "text": "Menyenaraikan nama rumah-rumah ibadat di Malaysia."
+        },
+        {
+          "code": "K11.2.5",
+          "text": "Menyatakan kepentingan memahami adab ketika berada di rumah ibadat."
+        },
+        {
+          "code": "K11.2.6",
+          "text": "Menghubungkait kepentingan amalan agama dan kepercayaan dalam kehidupan."
+        },
+        {
+          "code": "K11.2.7",
+          "text": "Menghuraikan kepentingan menghormati kepelbagaian agama dan kepercayaan bagi mewujudkan perpaduan."
+        }
+      ]
+    },
+    {
+      "sk": "11.3",
+      "title": "Perayaan Masyarakat di Malaysia",
+      "theme": "Kita Rakyat Malaysia",
+      "sp": [
+        {
+          "code": "11.3.1",
+          "text": "Menyatakan perayaan utama masyarakat di Malaysia."
+        },
+        {
+          "code": "11.3.2",
+          "text": "Menerangkan tujuan sambutan perayaan di Malaysia."
+        },
+        {
+          "code": "11.3.3",
+          "text": "Menjelaskan cara sambutan perayaan dahulu dan kini."
+        },
+        {
+          "code": "K11.3.4",
+          "text": "Menyatakan kepentingan sambutan perayaan dalam keluarga."
+        },
+        {
+          "code": "K11.3.5",
+          "text": "Menjelaskan kepentingan menghormati kepelbagaian sambutan dan adab perayaan."
+        },
+        {
+          "code": "K11.3.6",
+          "text": "Menghuraikan kepentingan warisan perayaan masyarakat di Malaysia."
+        }
+      ]
+    },
+    {
+      "sk": "12.1",
+      "title": "Pemimpin Negara di Malaysia",
+      "theme": "Pencapaian dan Kebanggaan Negara",
+      "sp": [
+        {
+          "code": "12.1.1",
+          "text": "Menyenaraikan nama-nama dan biodata ringkas Perdana Menteri Malaysia mengikut urutan."
+        },
+        {
+          "code": "12.1.2",
+          "text": "Menerangkan bidang tugas Perdana Menteri."
+        },
+        {
+          "code": "12.1.3",
+          "text": "Menjelaskan pencapaian negara di bawah kepimpinan Perdana Menteri."
+        },
+        {
+          "code": "K12.1.4",
+          "text": "Menyatakan kepentingan pemimpin yang memiliki ciri-ciri kepimpinan yang berwibawa."
+        },
+        {
+          "code": "K12.1.5",
+          "text": "Menyatakan penghargaan terhadap pemimpin negara."
+        },
+        {
+          "code": "K12.1.6",
+          "text": "Menghuraikan kepentingan memberi sokongan kepada kepemimpinan negara."
+        }
+      ]
+    },
+    {
+      "sk": "12.2",
+      "title": "Kemajuan Ekonomi di Malaysia",
+      "theme": "Pencapaian dan Kebanggaan Negara",
+      "sp": [
+        {
+          "code": "12.2.1",
+          "text": "Menyatakan perkembangan awal ekonomi di Malaysia mengikut sektor."
+        },
+        {
+          "code": "12.2.2",
+          "text": "Menyenaraikan kegiatan ekonomi yang menyumbang kepada kemajuan negara."
+        },
+        {
+          "code": "12.2.3",
+          "text": "Menjelaskan pencapaian ekonomi negara."
+        },
+        {
+          "code": "K12.2.4",
+          "text": "Menyatakan kepentingan kemajuan ekonomi bagi mengekalkan kemakmuran negara."
+        },
+        {
+          "code": "K12.2.5",
+          "text": "Menerangkan kepentingan menyokong usaha meningkatkan ekonomi negara."
+        },
+        {
+          "code": "K12.2.6",
+          "text": "Menjelaskan kepentingan rasa bangga terhadap barangan buatan Malaysia."
+        }
+      ]
+    },
+    {
+      "sk": "12.3",
+      "title": "Sukan Kebanggaan Malaysia",
+      "theme": "Pencapaian dan Kebanggaan Negara",
+      "sp": [
+        {
+          "code": "12.3.1",
+          "text": "Menyatakan pencapaian Malaysia dalam bidang sukan di peringkat kebangsaan dan antarabangsa."
+        },
+        {
+          "code": "12.3.2",
+          "text": "Menerangkan peranan sukan sebagai alat perpaduan."
+        },
+        {
+          "code": "12.3.3",
+          "text": "Menjelaskan peranan Malaysia dalam penganjuran sukan antarabangsa."
+        },
+        {
+          "code": "12.3.4",
+          "text": "Menghubungkait tokoh-tokoh sukan negara terdahulu yang memberi inspirasi kepada sukan masa kini."
+        },
+        {
+          "code": "K12.3.5",
+          "text": "Menyatakan kepentingan pelibatan pelbagai kaum mengharumkan nama negara dalam bidang sukan."
+        },
+        {
+          "code": "K12.3.6",
+          "text": "Menjelaskan kepentingan sukan kepada pembangunan negara."
+        },
+        {
+          "code": "K12.3.7",
+          "text": "Menghuraikan kepentingan nilai sahsiah dan etika dalam mempamerkan semangat kesukanan."
+        }
+      ]
+    },
+    {
+      "sk": "12.4",
+      "title": "Malaysia dan Dunia",
+      "theme": "Pencapaian dan Kebanggaan Negara",
+      "sp": [
+        {
+          "code": "12.4.1",
+          "text": "Menyenaraikan pertubuhan serantau dan antarabangsa yang dianggotai oleh Malaysia."
+        },
+        {
+          "code": "12.4.2",
+          "text": "Menerangkan pelibatan Malaysia dalam Persatuan Negara-negara Asia Tenggara (ASEAN)."
+        },
+        {
+          "code": "12.4.3",
+          "text": "Menerangkan pelibatan Malaysia dalam Komanwel."
+        },
+        {
+          "code": "12.4.4",
+          "text": "Menjelaskan pelibatan Malaysia dalam Persidangan Negara-Negara Islam (OIC)."
+        },
+        {
+          "code": "12.4.5",
+          "text": "Menghuraikan pelibatan Malaysia dalam Pertubuhan Bangsa-Bangsa Bersatu (PBB)."
+        },
+        {
+          "code": "K12.4.6",
+          "text": "Menyatakan kepentingan menjalinkan hubungan baik dengan negara luar."
+        },
+        {
+          "code": "K12.4.7",
+          "text": "Menjelaskan kepentingan sumbangan Malaysia untuk keamanan dunia."
+        },
+        {
+          "code": "K12.4.8",
+          "text": "Menghuraikan kepentingan mengekalkan pengiktirafan negara luar terhadap Malaysia."
+        }
+      ]
+    }
+  ]
+}
