@@ -24,7 +24,7 @@ from web.sejarah_2027_word_compact import compact_sejarah_native_word
 from web.native_rph_telegram_api import compact_web_word_notes
 
 OUT=ROOT/"output"/"sejarah_native_word_a4_qa"
-TEACHER={"class":"4 Amanah","date":"2027-03-22","time":"08:00-09:00"}
+TEACHER={"class":"","date":"","time":""}  # Editable school/class/date/time blanks for review copy
 
 def get_rows(layout):
     meta={row["label"].upper():row["value"] for row in layout["header"]}
