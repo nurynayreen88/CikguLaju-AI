@@ -12,6 +12,9 @@ ROOT = Path(__file__).resolve().parents[1]
 NAMES = {
     "_sm2542_rows", "_sm2542_unique_units",
     "_sm2542_grouped_pdps", "_sm2542_pdp_options",
+    "_science_v2570_db_path_v25127", "_science_v2568_db_path_v25124",
+    "_sm2542_rows_before_v25170", "_sm2542_rows_v25127_base",
+    "_sm2542_rows_v25124_base",
 }
 
 
@@ -45,6 +48,7 @@ def main():
             "last_line": node.end_lineno,
             "calls": sorted(calls)[:100],
             "source_literals": sorted(literals)[:35],
+            "source_body_excerpt": ast.get_source_segment((ROOT / "app.py").read_text("utf-8"), node)[:3800] if node.name in {"_sm2542_rows", "_science_v2570_db_path_v25127", "_science_v2568_db_path_v25124"} else "",
         })
     print(json.dumps({"source": "app.py AST (not imported)",
                       "found": found,
