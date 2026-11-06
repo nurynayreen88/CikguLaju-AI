@@ -16,6 +16,9 @@ app.register_blueprint(web_payment_bp)
 from web.web_referral_routes import install as install_web_referral
 install_web_referral(app)
 
+from web.special_activities_web import bp as special_activities_bp
+app.register_blueprint(special_activities_bp)
+
 
 
 def _web_config_status():
@@ -42,6 +45,15 @@ def daily_rph_script():
     from flask import send_file
     file = Path(__file__).resolve().parents[1] / "web_v1_static_preview" / "rph-today.js"
     return send_file(file, mimetype="application/javascript", max_age=1800, conditional=True)
+
+
+@app.get("/assets/special-activities.js")
+def special_activities_script():
+    """Static activity selector; downloads remain private and quota-gated."""
+    from pathlib import Path
+    from flask import send_file
+    path = Path(__file__).resolve().parents[1] / "web_v1_static_preview" / "special-activities.js"
+    return send_file(path, mimetype="application/javascript", max_age=1800, conditional=True)
 
 
 @app.get("/assets/teacher-profile.js")
