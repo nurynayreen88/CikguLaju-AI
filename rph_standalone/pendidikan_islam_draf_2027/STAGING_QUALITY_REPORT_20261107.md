@@ -104,3 +104,28 @@ Skrip `pi_ba_match_queue.py` menjana **258 rekod mengikut Lesson + SP asal** den
 Cadangan editor bukan latihan daripada buku sebenar. **Tiada ayat Buku Aktiviti ditambah kepada RPH guru, tiada nombor muka surat direka, tiada fail PDF pihak ketiga disalin.** Kesediaan 80% akademik kekal NO-GO sehingga padanan latihan dan halaman disahkan, diikuti ujian Word/PDF A4 serta QA Jawi.
 
 CI: unit test baharu menguatkuasakan bilangan 174/84/73 dan tiada rujukan palsu; fail `pi_ba_candidate_queue_258.json` disimpan sebagai artefak sementara untuk kerja semakan.
+
+## Tambahan bukti sekunder bagi nombor halaman — 7 November 2026
+
+Terdapat **21 padanan calon tambahan** yang kini mempunyai rujukan nombor halaman daripada bahan PdPR atau deskripsi video guru: **1 Tahun 2**, **20 Tahun 3**. Ini **bukan** 21 halaman buku asal yang telah diperiksa atau 21 integrasi siap; keseluruhan kekal `HOLD`.
+
+| Contoh sumber sekunder | Lesson CikguLaju | Halaman yang *dilaporkan* | Status |
+|---|---|---|---|
+| Video guru Tahun 2, tajuk Kekasihku Rasulullah | T2-L108 | 134–136 | Menunggu semak buku asal |
+| Modul PdPR Tahun 3, hukum Ikhfa Hakiki | T3-L097 | 35 | Menunggu semak buku asal |
+| Modul PdPR Tahun 3, Jawi menulis imbuhan akhiran | T3-L068 | 52 | Menunggu semak buku asal |
+| Modul PdPR Tahun 3, adab menuntut ilmu | T3-L087 | 124–125 | Menunggu semak buku asal |
+| Modul PdPR Tahun 3, adab menuntut ilmu | T3-L095 | 126 | Menunggu semak buku asal |
+| Nota PdPR Tahun 3, nama Allah Al-Alim dan Al-Hakim | T3-L003 | 65–66 | Menunggu semak buku asal |
+| Nota PdPR Tahun 3, akidah Al-Alim dan Al-Hakim | T3-L007 | 67–68 | Menunggu semak buku asal |
+
+Sumber rujukan:
+- Modul pembelajaran Tahun 3 (2020): https://anyflip.com/rvse/yhcp/basic
+- Arahan PdPR Tahun 3 (2021): https://www.scribd.com/document/521518334/PENDIDIKAN-ISLAM-TAHUN-3
+- Video pengajaran Jawi awalan Tahun 3: https://www.youtube.com/watch?v=u-dmxZOf41g
+- Video pengajaran Jawi apitan Tahun 3: https://www.youtube.com/watch?v=MSrVyaNELpo
+- Video guru Buku Aktiviti Tahun 2, Kekasihku Rasulullah: https://www.youtube.com/watch?v=75s3VFoIe40
+
+**Peraturan:** Modul/video 2020–2021 ialah sumber pelaksanaan guru dan bukan pengesahan cetakan buku edisi 2027. Halaman Buku Teks dan halaman Buku Aktiviti tidak boleh ditukar ganti. Teks RPH tidak akan mengandungi halaman yang belum diperiksa sendiri pada Buku Aktiviti asal. Fail `pi_ba_secondary_evidence.py` menjana `pi_ba_secondary_evidence_21.json`, lengkap `page_number_is_verified_in_original_book=false`, `allow_auto_inject_to_rph=false`, `teacher_sentence=null`. QA menghalang sebarang pelepasan automatik.
+
+**Baki sebenar:** 174 calon Lesson perlu disemak mengikut Buku Aktiviti bercetak/digital yang dapat dibaca, latihan dan SP; 21 daripadanya mempunyai petunjuk halaman sekunder. **0** halaman/latihan diluluskan untuk RPH pengguna, dan tiada hak edar PDF luar dibuktikan.
