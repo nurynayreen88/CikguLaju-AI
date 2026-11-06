@@ -67,8 +67,19 @@ def run():
         def native_word(st, source, unique):
             p=Path(tempfile.gettempdir())/(unique+"_RPH.docx")
             d=Document();d.add_heading("CIKGULAJU RPH RBT DRAF",1)
-            for x in ("TAJUK","STANDARD PEMBELAJARAN","AKTIVITI UTAMA"):
-                d.add_paragraph(ns["_rph_rows"](st,source)[x])
+            # Native Telegram output has three top-level tables, with its
+            # activity table using three columns. Keep the fake faithful.
+            h=d.add_table(rows=2,cols=2)
+            h.cell(0,0).text="Mata Pelajaran"
+            h.cell(0,1).text=SUBJECT
+            h.cell(1,0).text="Tajuk"
+            h.cell(1,1).text=ns["_rph_rows"](st,source)["TAJUK"]
+            t=d.add_table(rows=2,cols=3)
+            t.cell(0,0).text="Fasa";t.cell(0,1).text="Aktiviti";t.cell(0,2).text="Catatan"
+            t.cell(1,0).text="Aktiviti Utama"
+            t.cell(1,1).text=ns["_rph_rows"](st,source)["AKTIVITI UTAMA"]
+            f=d.add_table(rows=1,cols=2)
+            f.cell(0,0).text="Refleksi";f.cell(0,1).text="Draf"
             d.save(p)
             return str(p)
 
