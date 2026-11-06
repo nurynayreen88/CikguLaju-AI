@@ -148,3 +148,22 @@ Ini bukti **identiti buku** sahaja, bukan bukti isi latihan/halaman atau kebenar
 **Kerja editor yang telah disiapkan tanpa merosakkan RPH:** 42 petunjuk halaman daripada sumber luar, 258 lejar Lesson/SP, 174 cadangan ayat Buku Aktiviti Jawi **bersyarat** (bukan untuk guru), ujian sumber rasmi dan pengasingan edisi KSSRPK. Fail `pi_ba_sentence_candidates.py` menghasilkan `pi_ba_sentence_candidates_174.json`; setiap calon `injected_into_rph=false`, `book_printed_page=null`, `release=HOLD`. Semua 690 draf dan enam tahanan kekal dalam status asal, tiada perubahan database/API/Web/Telegram.
 
 **Kriteria untuk menyiapkan penerbitan benar-benar:** akses naskhah sebenar berkod BA102001/BA103001, verifikasi **halaman bercetak + arahan latihan + kod SP** bagi 174 calon, semakan ejaan Jawi, paparan Word/PDF A4 dan keseragaman Web–Telegram staging. Ketika bukti ini belum wujud, 0 pemadanan buku aktiviti boleh diluluskan, dan pencapaian 80% akademik belum boleh dinyatakan. Status **NO_GO** diteruskan untuk mengelakkan bahan salah diedarkan kepada guru.
+
+## Penutupan batch sambungan 7 Nov 2026 — daftar verifikasi 174 Lesson
+
+**Kawalan baharu:** fail `PI_BA_REVIEW_REGISTER_174_STAGING.csv` kini disimpan sebagai fail tetap di cabang staging (selain artefak CI yang luput). Setiap baris memuatkan Lesson, tahun, bidang, fokus, kod SP, kod buku KPM, petunjuk halaman yang pernah disebut oleh sumber PdPR, URL asal, dan ruang **kosong** untuk bukti halaman bercetak/latihan serta kelulusan pakar.
+
+| Tahap semakan | Bilangan | Makna |
+|---|---:|---|
+| Calon latihan Buku Aktiviti T2/3 | **174** | 76 Tahun 2, 98 Tahun 3 |
+| Petunjuk halaman sekunder daripada bahan guru | **42** | 42 pautan disimpan, belum bukti buku asal |
+| Tanpa petunjuk halaman | **132** | Semakan terus buku diperlukan |
+| Konflik rujukan sumber | **1** | T3-L004: p65–66 Akidah/Jawi dalam arahan PdPR |
+| Bukti halaman/latihan buku sebenar disahkan | **0** | Jangan menerbitkan nombor halaman |
+| RPH guru yang mendapat integrasi BA diluluskan | **0** | Penulisan editor sahaja |
+
+**Pembetulan CI sebenar:** Workflow terdahulu boleh lulus walaupun senarai artefak masih memanggil `pi_ba_secondary_evidence_21.json`, sedangkan skrip menghasilkan `pi_ba_secondary_evidence_42.json`; fail integriti sumber dan 174 calon ayat juga tercicir daripada senarai muat naik. Workflow staging kini menyemak kewujudan **sembilan** fail yang tidak kosong sebelum artefak berjaya dimuat naik. CSV sumber tetap pula diuji terhadap kesemua 174 ID, 42 URL, identiti buku BA102001/BA103001 dan status HOLD.
+
+**Had capaian:** Carian buku asal menemui paparan FlipHTML5/AnyFlip, Scribd dan pautan muat turun melalui portal panitia, tetapi halaman latihan dalaman tidak dapat diambil atau dilihat dengan cukup andal. Teks OCR Scribd bagi Jawi juga tidak memadai untuk pengesahan arahan latihan. Katalog KPM mengesahkan identiti BA102001 dan BA103001 dalam **E-Katalog 2023** sahaja; ia bukan bukti kandungan halaman edisi 2027. Oleh itu, tiada nombor halaman dimasukkan secara andaian ke dalam RPH.
+
+**Penanda selesai yang sah:** Semua kerja penyediaan dan pengasingan data sudah dijalankan serta diuji dalam PR #443; **pengintegrasian latihan ke RPH, penilaian kualiti 80%, ujian Word/PDF A4, semakan pakar Jawi dan parity Telegram–Web belum dapat diperakukan.** Jangan anggap artefak CI berjaya sebagai lesen menerbitkan bahan tersebut.
