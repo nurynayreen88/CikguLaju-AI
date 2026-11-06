@@ -44,6 +44,18 @@ for year in (4, 5, 6):
             assert not GENERIC_2.search(rph["aktiviti_2"]["activity"]), ident
             assert "hlm. " in rph["aktiviti_1"]["activity"], ident
             assert "hlm. " in rph["aktiviti_2"]["activity"], ident
+            # Every printed-page citation must fall inside this lesson's
+            # documented textbook text crosswalk; a unit index alone is not proof.
+            printed=[int(n) for n in re.findall(r"\\d+", scope["printed_page_range"])]
+            assert 1<=len(printed)<=2, ("Invalid printed page span",ident)
+            low,high=min(printed),max(printed)
+            for part in ("aktiviti_1","aktiviti_2"):
+                citations=re.findall(r"hlm\\.\\s*(\\d+)(?:\\s*[–-]\\s*(\\d+))?",rph[part]["activity"])
+                assert citations, ("Missing printed textbook page",ident,part)
+                for pair in citations:
+                    for page in pair:
+                        if page:
+                            assert low<=int(page)<=high, ("Page outside checked textbook range",ident,part,page,low,high)
 assert len(seen) == 108
 assert modified == 97, modified
 print(f"Sejarah staging crossformat: {len(seen)}/108 JSON–Markdown–HTML aligned; {modified}/97 evidence-guided; 0 released")
