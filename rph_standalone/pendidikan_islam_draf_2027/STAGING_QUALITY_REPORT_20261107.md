@@ -46,3 +46,37 @@ Enam rekod lain terus ditahan sepenuhnya: Tahun 2 L035; Tahun 6 L006, L014, L018
 5. Kumpul bukti rubrik individu: SK/SP & sumber (25), aktiviti (25), PBD (25), format (15), parity Web–Telegram (10). **≥80/100** memerlukan kelulusan kandungan tanpa ralat kritikal, bukan banyaknya baris.
 
 **Pengesahan:** Semua 696 identiti asal kekal; 690 draf tidak diluluskan secara automatik; enam rekod ditahan selamat; produksi, `main`, database, langganan dan data pengguna tidak diubah.
+
+
+## Audit penggunaan Buku Aktiviti — tambahan 7 Nov 2026
+
+**Penemuan sumber:** Portal panitia sekolah di domain moe-dl.edu.my menyenaraikan `Buku Aktiviti Pendidikan Islam Tahun 2` dan `Tahun 3` KSSR Semakan, bersama buku teks. Dasar KPM merujuk kepada buku aktiviti yang diperakukan untuk Tahap 1. Namun semakan Drive projek menemui buku teks Pendidikan Islam Tahun 1–6 dan **tidak menemui fail Buku Aktiviti Pendidikan Islam Tahun 2/3**. Maka edisi/nombor halaman tidak boleh dianggap telah diperiksa atau hak mengedar telah diperoleh.
+
+**Pautan rujukan sumber, bukan fail berlesen untuk diterbit semula:**
+- https://sites.google.com/moe-dl.edu.my/panitiapendidikanislamtldmkk/buku-teks
+- https://sites.google.com/moe-dl.edu.my/lamanbestaripdpc/sumber-bahan/buku-teks-buku-aktiviti
+- https://www.moe.gov.my/list-page/497 (SPI KPM Bil. 3 Tahun 2022)
+
+**Keputusan audit fail RPH Tahun 2–6 pada cabang PR #443:**
+
+| Perkara | Bilangan | Keputusan |
+|---|---:|---|
+| Jumlah Lesson disaring | 696 | 690 aktif DRAF, 6 ditahan |
+| RPH Tahun 2/3 aktif | 258 | Tahun 2: 111; Tahun 3: 147 |
+| RPH Tahun 2/3 yang menyebut Buku Aktiviti | **0** | Jurang penggunaan; mesti dipadankan |
+| Calon pengintegrasian Buku Aktiviti Tahun 2/3 | **191** | Semak latihan/bidang/halaman sebenar dengan SP |
+| Lesson tasmi' dengan mushaf sebagai sumber utama | **67** | **Jangan paksa** Buku Aktiviti menggantikan tasmi' |
+| RPH Tahun 4–6 aktif | **432** | Buku Aktiviti khusus tidak disahkan; jangan rekaan |
+| Halaman/latihan Buku Aktiviti yang betul-betul disahkan | **0** | HOLD; perlu naskhah tulen dan padanan per Lesson |
+| Pautan PDF pengguna dalam sistem | **0 baharu** | Hak edar belum disahkan |
+
+**Dasar pengintegrasian selepas bukti halaman ditemui:**
+1. Bagi calon Tahun 2/3 (khususnya Jawi, tajwid, Akidah, Ibadah, Sirah, Adab dan Hadis), padankan **Lesson → SP → tajuk bahan → halaman bercetak → nombor latihan/arahan** secara individu; bukan mengikut minggu. Jangan mengambil nombor halaman daripada Buku Teks untuk dilabel sebagai Buku Aktiviti.
+2. Tambahkan **satu ayat tepat** dalam Aktiviti Utama atau Penilaian RPH asal, contohnya hanya *selepas terbukti*: `Murid melengkapkan Buku Aktiviti Pendidikan Islam Tahun 2, halaman [DISAHKAN], Latihan [DISAHKAN], dan guru menyemak respons mengikut SP.` Teks berkotak dalam contoh ialah placeholder editorial, **tidak boleh muncul dalam RPH pengguna**.
+3. Tiada latihan yang dipaksa untuk tasmi'/hafazan amali. Buku Aktiviti hanya apabila latihan bersesuaian dengan SP yang disahkan, bukan ganti bacaan atau pentaksiran autentik.
+4. Tahun 4–6 kekalkan sumber Buku Teks/DSKP dan bahan kendiri; jika naskhah BA lain ditemui, semak kelulusan dan edisi sebelum penggunaan.
+5. Sekat ciri `Muat turun Buku Aktiviti` selagi hak edaran, kesahihan sumber, versi dan padanan halaman belum terbukti. Pautan sekolah rujukan awam **bukan** bukti kebenaran host/redistribute PDF dari sistem.
+
+**Artefak staging:** `pi_activity_book_audit.py` menghasilkan `pi_buku_aktiviti_audit_696.json`: identiti, bidang, SP, status cadangan, sumber awam, `page=null`, `exercise=null`, `verified=false`, `can_show_to_teacher=false` bagi 690 DRAF dan rekod tahanan. Ujian regresi mengunci 258/191/67/432 dan larangan nombor halaman palsu.
+
+**Implikasi 80%:** Walaupun aktiviti RPH lain telah diperkaya, skor kualiti **belum disahkan 80%** sehingga kemasukan Buku Aktiviti yang benar-benar relevan disahkan serta ujian Word/PDF A4 selesai. Tiada perubahan live.
