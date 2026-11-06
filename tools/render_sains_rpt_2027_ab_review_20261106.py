@@ -233,8 +233,8 @@ def main():
     if total!=342:raise RuntimeError("Sains Years2-6 source changed")
     (OUT/"README_DRAF.txt").write_text(
         "10 Word dan 10 PDF RPT Sains Tahun 2–6 (Kumpulan A/B), LANDSCAPE A4.\n"
-        "Muka depan dan tingkap cuti KPM mengikut Kumpulan A/B disediakan; PdP tidak diberi tarikh.\\n"
-        "Cuti negeri/gantian dan jadual waktu sekolah belum disahkan.\\n"
+        "Muka depan dan tingkap cuti KPM mengikut Kumpulan A/B disediakan; PdP tidak diberi tarikh.\n"
+        "Cuti negeri/gantian dan jadual waktu sekolah belum disahkan.\n"
         "342 PdP asal, SK/SP tidak diubah. Tahun 1 KP2027 diasingkan.\n"
         "Ini BUKAN dokumen RPT FINAL atau bahan pengguna.\n",encoding="utf-8")
     print("RPT_SAINS_2027_PREVIEW: years 2-6=5, groups A/B=2, "
