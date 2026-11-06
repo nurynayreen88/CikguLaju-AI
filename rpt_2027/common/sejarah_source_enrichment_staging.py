@@ -96,7 +96,7 @@ def enrich_sejarah_source_week_and_book(year, records):
         week, match_type = candidates[0]
         row["source_week"] = row["week"]
         row["week"] = (week + " (cadangan)" if match_type == "EXACT_SOURCE_DATE_PAIR"
-                       else week + " (cadangan; A separa)")
+                       else week + " (cadangan; cuti A)")
         row["calendar_alignment"] = match_type
         row["textbook_pages"] = pages
         row["textbook_page_evidence"] = "DIGITAL_TEXT_DRAF_NOT_VISUALLY_APPROVED"
