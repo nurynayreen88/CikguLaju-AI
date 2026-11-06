@@ -612,4 +612,15 @@ except Exception as _web_broadcast_exc:
     print("Web launch admin broadcast unavailable:",
           type(_web_broadcast_exc).__name__, flush=True)
 
+# Final output-only RPH typography: ensure Aktiviti 1/2/3/4 headings are
+# consistently bold in Word and PDF (including colon variants).
+# Runs after native subject adapters so no source RPH, SK/SP or DB is changed.
+try:
+    from web.rph_activity_headings_typography import install as install_rph_activity_heading_bold
+    RPH_ACTIVITY_HEADING_BOLD_INSTALLED = bool(
+        install_rph_activity_heading_bold(telegram_runtime))
+except Exception as _rph_activity_heading_exc:
+    RPH_ACTIVITY_HEADING_BOLD_INSTALLED = False
+    print("RPH typography unavailable:",
+          type(_rph_activity_heading_exc).__name__, flush=True)
 
