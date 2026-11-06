@@ -153,6 +153,26 @@ class SainsRPTCalendarWindowsTests(unittest.TestCase):
         # Year6 is NOT automatically approved without an exact-edition DSKP.
         self.assertNotIn("6",inventory["years"])
 
+    def test_year6_source_sp_codes_exist_in_reproduced_2021_dskp(self):
+        # Year6 file is a public mirror of BPK's 2021 DSKP, NOT a confirmed
+        # original-owner Drive upload. This is lexical-only, keep HOLD.
+        doc=json.loads((ROOT/"audits/sains_dskp_t6_sp_token_inventory_20261106.json")
+                       .read_text(encoding="utf-8"))
+        self.assertEqual(doc["status"],"PUBLIC_REPRODUCTION_TEXT_EVIDENCE_ONLY")
+        self.assertIn("HOLD",doc["release_status"])
+        self.assertEqual(doc["total_distinct_sp"],96)
+        self.assertEqual(len(set(doc["sp_tokens"])),96)
+        allowed=set(doc["sp_tokens"])
+        with (OUT/"SAINS_TAHUN_6_SOURCE_DRAF.csv").open(
+                 encoding="utf-8-sig",newline="") as f:
+            rows=list(csv.DictReader(f))
+        self.assertEqual(len(rows),84)
+        for row in rows:
+            with self.subTest(pdp=row["Kod sumber"]):
+                self.assertIn(row["SP asal"],allowed)
+                self.assertEqual(row["SP"],row["SP asal"])
+                self.assertEqual(row["Minggu/tarikh"],"BELUM DIJADUAL")
+
     def test_kpm_edisi3_is_option_for_stage_one_not_forced_on_all_years(self):
         self.assertIn("PILIHAN guru",curriculum_ref(2))
         self.assertIn("PILIHAN guru",curriculum_ref(3))
