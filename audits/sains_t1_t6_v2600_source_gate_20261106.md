@@ -38,11 +38,26 @@ Rujukan: [GitHub Actions run #42177830409](https://github.com/nurynayreen88/Cikg
 | 6 | 96 | 84 | 0 |
 | **Jumlah** | **587** | **385** | **0** |
 
-**Tindakan teknikal berikutnya:** pastikan enjin Telegram yang aktif membaca
-sumber urutan Sains yang mana; jangan hidupkan fallback senyap atau menampal
-385 rekod daripada snapshot lama tanpa padanan RPT/DSKP/BT dan semakan integriti.
+**Tindakan teknikal berikutnya:** pastikan enjin Telegram aktif membaca fail Sains yang mana (v25.71/v25.70/v25.68 mengikut laluan sebenar); jangan hidupkan fallback senyap atau menampal 385 rekod daripada snapshot lama tanpa padanan RPT/DSKP/BT dan semakan integriti.
 Setiap pembaikan hendaklah migration bertambah dengan backup dan ujian rollback,
 bukan overwrite master. Semak secara individu semua RPH sebelum penerbitan.
+
+## Penemuan penting: pembaca Telegram Sains sebenar
+
+Audit statik app.py (run [#42178437704](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42178437704)) menemui beberapa takrif semula fungsi _sm2542_rows. Takrif terakhir pada baris 31594–31622 **mewariskan subjek Sains kepada pembaca terdahulu**, dan pembaca tersebut mendahulukan fail Sains v25.71 (jika ada), kemudian v25.70, kemudian v25.68. V25.68 memang mempunyai 385 PdP. Oleh itu:
+
+- **Ketiadaan sequence Sains dalam DB v26.00 tidak membuktikan bahawa Telegram Sains rosak atau kosong.**
+- Semakan ini ialah pembacaan kod sumber, bukan bukti laluan deployment aktif ataupun hasil Word/PDF pengguna.
+- Jangan migrasikan snapshot lama ke DB v26.00 atau hidupkan fallback baharu secara senyap. Sahkan fail sebenar pada deployment, format dan identiti baris, kemudian uji RPH.
+
+## Pemeriksaan asas kualiti checkpoint v25.68
+
+Pemeriksaan baca sahaja (run [#421785…](https://github.com/nurynayreen88/CikguLaju-AI/pull/406/checks)) mengesahkan:
+
+- **385/385** rekod Sains mempunyai kod SK dan SP tidak kosong (tidak bermakna kod itu sudah dibandingkan dengan dokumen rasmi).
+- **385/385** rekod mempunyai medan textbook_ref kosong. Rujukan halaman **belum** boleh didakwa tersedia dalam Sains checkpoint ini.
+- Status rekod: 319 USABLE_BASELINE, 43 USABLE_CANONICAL_BASELINE, **23 PDP_BOUNDARY_QA_PENDING**. Label usable bukan kelulusan akademik individu.
+- Susulan wajib: audit sempadan 23 PdP dan halaman Buku Teks asal untuk semua tahun sebelum label FINAL.
 
 ## Rujukan bahan dalam Google Drive (lokasi, bukan pengesahan halaman)
 
