@@ -13,6 +13,7 @@ on:
       - web/native_telegram_bm_rph_client.py
       - web/native_telegram_other_draft_client.py
       - tests/test_web_arab_music_source_20261106.py
+      - tests/test_web_draft_subject_options_20261106.py
       - tests/test_web_native_bm_sequence_rph.py
       - tests/test_web_rph_availability.py
       - tools/run_web_v1_preview.py
@@ -43,6 +44,7 @@ jobs:
           python -m unittest discover -s tests -p test_web_live_telegram_source.py -v
           python -m unittest discover -s tests -p test_web_subject_specific_navigation.py -v
           python -m unittest discover -s tests -p test_web_arab_music_source_20261106.py -v
+          python -m unittest discover -s tests -p test_web_draft_subject_options_20261106.py -v
       - name: Validate JavaScript inline browser syntax
         run: |
           python - <<'PY'
