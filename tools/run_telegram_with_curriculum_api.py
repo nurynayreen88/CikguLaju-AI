@@ -454,6 +454,22 @@ except Exception as exc:
     SEJARAH_2027_WEB_READER_REGISTERED = False
     print("Sejarah Web reader unavailable:", type(exc).__name__, flush=True)
 
+# Bahasa Arab + Pendidikan Muzik DRAF: isolate staged source behind the
+# existing private service authentication. No Telegram callback, DB, audio,
+# account or payment changes. Both subjects remain DRAF for teacher review.
+try:
+    from web.telegram_provisional_arab_music_api import (
+        create_provisional_subjects_blueprint,
+    )
+    telegram_runtime.app.register_blueprint(
+        create_provisional_subjects_blueprint(telegram_runtime))
+    OTHER_SUBJECTS_DRAFT_READER_REGISTERED = True
+except Exception as exc:
+    OTHER_SUBJECTS_DRAFT_READER_REGISTERED = False
+    print("Arabic/Music DRAF source unavailable:",
+          type(exc).__name__, flush=True)
+
+
 # Private source-matched RPT school covers for authenticated Web users. Web
 # checks account entitlement; Telegram re-checks exact PDF bytes before it
 # inserts the logo. The bot's menus, RPH, sources, and credits stay untouched.
