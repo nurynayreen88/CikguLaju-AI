@@ -45,3 +45,39 @@ Pemeriksaan silang tambahan ke atas CSV Sejarah menunjukkan **35/36 tarikh setia
 - `tests/test_rpt_2027_calendar_master_staging.py` menyemak 44 minggu A/B, kes PSV yang perlu relabel, serta kes tanpa sumber.
 - `tests/test_rpt_2027_second_batch_preview.py` menyemak 41 pembetulan SP PK dan semua kod sumber.
 - `.github/workflows/rpt-2027-format-2026-staging-qa.yml` menguji 21 PDF, imej muka depan, jadual, teks bermasalah, limpahan blok, dan memuat naik bukti.
+
+
+## Sambungan pengesahan khusus Sejarah (7 November 2026, versi terkini)
+
+**CI terkini LULUS:** https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42278126563
+Artifak pratonton 21 PDF / 490 halaman + 42 PNG + JSON audit:
+https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42278126563/artifacts/13534790761
+
+### Rujukan buku teks PdP Sejarah, bukan sekadar halaman unit
+
+Ledger sedia ada `audits/sejarah_y4_y6_primary_textbook_page_evidence_20261106.json` mempunyai **108/108** padanan halaman teks digital buku teks. Tiga PDF Sejarah kini memaparkan **m/s khusus bagi setiap PdP** dengan nota: *padanan teks digital DRAF; gambar/latihan belum disahkan*. Rujukan unit lama dan status sumber seperti `BELUM_DISAHKAN` dikekalkan dalam rekod `source_unit_page_note`, bukan ditimpa. Setiap pernyataan SK/SP dan urutan PdP kekal asal. Bukti buku tidak dianggap kelulusan pedagogi/aktiviti.
+
+### Padanan minggu Sejarah + cuti KPM 14 Mac
+
+- **105/108 Sejarah** mempunyai julat calon A/B yang sama tepat dengan satu minggu induk. Identiti PdP tetap; hanya label Mxx **(cadangan)** ditambah pada paparan.
+- **3/108** = Tahun 4, 5, 6 **PdP 009**: minggu induk M10 bermula **14 Mac 2027** bagi A, manakala tarikh sumber calon bermula **15 Mac 2027**. Semakan 16-negeri indeks menunjukkan **14 Mac ialah cuti tambahan KPM Hari Raya Puasa bagi ketiga-tiga negeri Kumpulan A**: Kedah (indeks baris 74), Kelantan (439), Terengganu (804). Oleh itu, tarikh 15–18 Mac dikekalkan. Bukti dibekukan secara baca-sahaja dalam `rpt_2027/common/sejarah_group_a_2027_03_14_holiday_index_evidence_DRAF.json`.
+- Tahun 4–6 menerima label `M10 (cadangan; cuti A)` untuk PdP 009. Status kalender `GROUP_A_FIRST_DAY_KPM_HOLIDAY_INDEXED` **tidak** bermaksud guru/sekolah telah meluluskan jadual sesi.
+- Tiada tarikh atau halaman buku teks asal ditokok tambah dalam CSV. Fail sumber RPT dan RPH tidak diubah.
+
+### Jumlah audit 1,233 PdP selepas pemurnian
+
+| Kategori | PdP |
+|---|---:|
+| Minggu dan tarikh asal terus padan induk | 844 |
+| PSV relabel paparan sahaja | 185 |
+| Sejarah padan tarikh calon kepada minggu induk | 105 |
+| Sejarah padan minggu dengan pengecualian cuti tambahan KPM A | 3 |
+| RBT Tahun 4–6 tiada jadual minggu/tarikh sumber | 96 |
+| **Jumlah** | **1,233** |
+
+**1,137 PdP mempunyai label minggu selaras dengan sumber yang wujud.** Ini tidak sama dengan kelulusan jadual guru, cuti negeri terperinci, ketepatan kurikulum atau FINAL READY. RBT 32 PdP/tahun belum boleh diberi minggu A/B tetap tanpa penjadualan sebenar sekolah; jangan isikan secara anggaran.
+
+### Keputusan ujian PDF
+
+21/21 PDF dan **490 halaman** diperiksa selepas perubahan Sejarah. Muka depan hanya tajuk, kotak logo sekolah, nama sekolah dan nama guru. Semakan halaman: 0 blok teks melampaui sempadan, 0 aksara NUL, 21 PDF landskap sah. Laporan JSON membezakan kategori minggu termasuk bukti cuti M10. **Release gate kekal BLOCKED**, terutama kelulusan aktiviti/halaman buku dan integrasi RPT bersama profil Web/Telegram.
+
