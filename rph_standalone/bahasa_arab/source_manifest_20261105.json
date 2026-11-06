@@ -386,6 +386,14 @@
           "expected_toc": "Four units starting حياتنا أجمل بالنظافة from 2021 DBP ISBN 978-983-49-3300-5",
           "action": "DO_NOT_USE_DRIVE_PDF_AS_BASIS_FOR_KSSR_SEMAKAN_2017_RPH",
           "checked_on": "2026-11-06"
+        },
+        "book_2021_source": {
+          "url": "https://anyflip.com/ulcnq/mffz/basic",
+          "isbn": "978-983-49-3300-5",
+          "unit2_printed_range": "31–60",
+          "text_source_reviewed": true,
+          "visual_source_reviewed": false,
+          "source_matches_unit2": true
         }
       },
       "rpt_2026": "https://anyflip.com/zxzlm/bmaa/basic",
@@ -398,7 +406,12 @@
       "draft_lesson_page_evidence_file": "audits/bahasa_arab_y6_textbook_page_evidence_20261105.json",
       "source_evidence_pdp001_012": "audits/bahasa_arab_y6_pdp001_012_text_source_audit_20261106.json",
       "source_text_reviewed_drafts": 12,
-      "source_content_approved": false
+      "source_content_approved": false,
+      "unit2_candidate_rph_count": 16,
+      "unit2_candidate_pdp_range": "013–028",
+      "unit2_source_evidence_file": "audits/bahasa_arab_y6_unit2_pdp013_028_2021_text_source_audit_20261106.json",
+      "source_reviewed_drafts_total": 28,
+      "year6_final_ready": false
     }
   },
   "mandatory_release_gates": [
@@ -410,7 +423,7 @@
     "Ujian integrasi, hash, FK/orphan dan tiada penggantian data sedia ada",
     "Kelulusan manual individu dan pengaktifan hanya selepas CI lulus"
   ],
-  "stage_progress_note": "60 RPH DRAF (PdP 001–012, 12 setiap tahun); 20 unit dalam indeks, 15 bank aktiviti Unit 2–4. Semua DRAF; 0 FINAL READY. | 6 Nov 2026: 12 additional Year4 Unit2 provisional drafts PdP013–024, non-final. | 6 Nov: separate review branch +16 Y5 Unit4 candidate RPH PdP045–060; 154 total drafts, 0 READY; historical 138 CI passed, 154 pending. | 6 Nov: new isolated Year3 Unit2 16 visual-book-backed drafts; now 170 total, 0 READY; Year6 Drive PDF edition mismatch quarantined. | 6 Nov: Year2 Unit2 candidate PdP013–028 using original 2017 Semakan PDF; printed pp26–43, physical PDF page=printed+12. 186 drafts, 0 READY. | 6 Nov Year2 Unit3 16 candidate RPH, 202 total, 0 ready; graphic source pages p50–69 viewed; CI202 pending. | 6 Nov Year2 Unit4 16 proposals: 218 draft total, Year2 60 candidate PdP Unit1–4, 0 READY; 218 RTL A4 pending. | 6 Nov: Year3 Unit3 16 candidate RPH from original scanned ISBN 978-983-49-2033-3, printed h60–85. Total 234, 0 READY; CI234 pending. | Year3 Unit4 16 candidate RPH, Year3 60 covering 4 units, total 250, 0 READY (6 Nov 2026).",
+  "stage_progress_note": "60 RPH DRAF (PdP 001–012, 12 setiap tahun); 20 unit dalam indeks, 15 bank aktiviti Unit 2–4. Semua DRAF; 0 FINAL READY. | 6 Nov 2026: 12 additional Year4 Unit2 provisional drafts PdP013–024, non-final. | 6 Nov: separate review branch +16 Y5 Unit4 candidate RPH PdP045–060; 154 total drafts, 0 READY; historical 138 CI passed, 154 pending. | 6 Nov: new isolated Year3 Unit2 16 visual-book-backed drafts; now 170 total, 0 READY; Year6 Drive PDF edition mismatch quarantined. | 6 Nov: Year2 Unit2 candidate PdP013–028 using original 2017 Semakan PDF; printed pp26–43, physical PDF page=printed+12. 186 drafts, 0 READY. | 6 Nov Year2 Unit3 16 candidate RPH, 202 total, 0 ready; graphic source pages p50–69 viewed; CI202 pending. | 6 Nov Year2 Unit4 16 proposals: 218 draft total, Year2 60 candidate PdP Unit1–4, 0 READY; 218 RTL A4 pending. | 6 Nov: Year3 Unit3 16 candidate RPH from original scanned ISBN 978-983-49-2033-3, printed h60–85. Total 234, 0 READY; CI234 pending. | Year3 Unit4 16 candidate RPH, Year3 60 covering 4 units, total 250, 0 READY (6 Nov 2026). | Year6 Unit2 16 draft candidates from verified 2021 KSSR Semakan original eBook pages32–49; total266, 0 READY, 2021 original page images and DSKP need manual review.",
   "additional_unit_activity_bank_count": 15,
   "additional_unit_activity_bank_status": "DRAF_SEMAK_BELUM_READY",
   "primary_crosswalk_file": "rpt_2027/bahasa_arab/pdp_001_012_DRAF.csv",
@@ -419,7 +432,7 @@
   "external_source_registry_path": "audits/bahasa_arab_external_reference_index_20261105.json",
   "external_source_status": "WEB_REFERENCE_DISCOVERED; link cataloged in Drive only, no textbook PDFs copied from public internet",
   "bibliography_file": "audits/bahasa_arab_buku_teks_bibliography_20261105.json",
-  "total_provisional_rph_count": 250,
+  "total_provisional_rph_count": 266,
   "latest_technical_a4_validation": {
     "source_commit": "40fa8694a3848be110a81bf41dc1714a17bb7cbf",
     "github_actions_run": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42140759459",
@@ -444,6 +457,14 @@
       "github_actions_run": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42134760787",
       "word_document_count": 154,
       "pdf_document_count": 154,
+      "pdf_pages_each": 1,
+      "status": "PASSED_OFFLINE_TECHNICAL_ONLY",
+      "release_approval": false
+    },
+    {
+      "github_actions_run": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42144998331",
+      "word_document_count": 250,
+      "pdf_document_count": 250,
       "pdf_pages_each": 1,
       "status": "PASSED_OFFLINE_TECHNICAL_ONLY",
       "release_approval": false
