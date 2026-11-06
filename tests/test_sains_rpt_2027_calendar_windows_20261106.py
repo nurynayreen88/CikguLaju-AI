@@ -16,6 +16,7 @@ from tools.render_sains_rpt_2027_ab_review_20261106 import (
     year3_overlay_sources, YEAR3_INTEGRATED_SP_CANDIDATE, curriculum_ref,
 )
 from web.sains_y3_rph_activity_preview_20261106 import adapt_rows, source_ledgers
+from tools.render_sains_y3_45_review_pack_20261106 import skill_summary
 class SainsRPTCalendarWindowsTests(unittest.TestCase):
     def test_official_group_windows_are_distinct_and_unscheduled(self):
         a,b=calendar_for("A"),calendar_for("B")
@@ -109,13 +110,18 @@ class SainsRPTCalendarWindowsTests(unittest.TestCase):
                 word=Document(rphroot/f"SAINS_T3_PDP_{n:03d}_DRAF.docx")
                 self.assertEqual(word.tables[1].cell(1,1).text,rendered["TAJUK"])
                 self.assertIn(rendered["STANDARD PEMBELAJARAN"],word.tables[1].cell(2,1).text)
-                self.assertEqual(word.tables[1].cell(3,1).text,rendered["KEMAHIRAN PROSES SAINS"])
+                self.assertEqual(word.tables[1].cell(3,1).text,skill_summary(rendered))
                 self.assertIn("Guru",word.tables[2].cell(1,1).text)
                 self.assertIn("Murid",word.tables[2].cell(1,1).text)
                 pdf=PdfReader(str(rphroot/f"SAINS_T3_PDP_{n:03d}_DRAF.pdf"))
                 self.assertEqual(len(pdf.pages),1)
                 txt=re.sub(r"\\s+"," ",pdf.pages[0].extract_text())
                 self.assertIn("KPS diintegrasi",txt)
+                manip=rendered["KEMAHIRAN MANIPULATIF DAN KESELAMATAN"]
+                if manip:
+                    self.assertIn("Manipulatif/peraturan:",txt)
+                    for codepart in manip.split(", "):
+                        self.assertIn(codepart,txt)
                 for codepart in rendered["KEMAHIRAN PROSES SAINS"].split("; "):
                     self.assertIn(codepart.split(" ",1)[0],txt)
                 for codepart in rendered["STANDARD PEMBELAJARAN"].split(", "):
