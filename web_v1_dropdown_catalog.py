@@ -45,6 +45,38 @@ def unit_options(database_path, year, subject_code, component=None):
     return [{'value': name, 'label': name} for name in names if name]
 
 
+def _pi_verified_page_refs(database_path, year):
+    """Only expose source pages from the verified PI PdP details table."""
+    import sqlite3
+    from pathlib import Path
+    path = Path(database_path)
+    with sqlite3.connect(path.resolve().as_uri() + "?mode=ro", uri=True) as con:
+        con.execute("PRAGMA query_only=ON")
+        if not con.execute(
+            "SELECT 1 FROM sqlite_master WHERE type='table' "
+            "AND name='pi_pdp_details_v2591'"
+        ).fetchone():
+            return {}
+        rows = con.execute(
+            """SELECT pdp_no,textbook_pages
+               FROM pi_pdp_details_v2591
+               WHERE year_label=? AND verified=1
+               ORDER BY pdp_no LIMIT 1001""",
+            (f"Tahun {year}",)
+        ).fetchall()
+    if len(rows) > 1000:
+        raise ValueError("PI source too large")
+    pages = {}
+    for number, ref in rows:
+        if type(number) is not int or not 0 < number <= 1000:
+            continue
+        value = str(ref or "").strip()
+        if value and len(value) <= 120 and all(ord(c) >= 32 for c in value):
+            pages.setdefault(number, set()).add(value)
+    return {k: "Buku Teks m/s " + next(iter(v)) for k, v in pages.items()
+            if len(v) == 1}
+
+
 def pdp_options(database_path, year, subject_code, unit_title, component=None):
     if not isinstance(unit_title, str) or not unit_title.strip() or len(unit_title) > 300:
         raise ValueError('invalid unit')
@@ -52,7 +84,23 @@ def pdp_options(database_path, year, subject_code, unit_title, component=None):
     available_units = {(r.get('unit_title') or '').strip() for r in records}
     if unit_title.strip() not in available_units:
         return []
-    return [{'value': str(r['id']), 'label': 'PdP ' + str(r['pdp_no']) + ' — ' + str(r.get('subtopic') or r.get('topic') or ''), 'standalone_rph_verified': False} for r in records if (r.get('unit_title') or '').strip() == unit_title]
+    pi_pages = (_pi_verified_page_refs(database_path, year)
+                if subject_code == "PI" else {})
+    result = []
+    for r in records:
+        if (r.get("unit_title") or "").strip() != unit_title:
+            continue
+        number = r.get("pdp_no")
+        if type(number) is not int or not 0 < number < 10000:
+            continue  # No invented PdP index.
+        row = {'value': str(r['id']),
+               'label': 'PdP ' + str(number) + ' — '
+                        + str(r.get('subtopic') or r.get('topic') or ''),
+               'pdp_no': number, 'standalone_rph_verified': False}
+        if number in pi_pages:
+            row['textbook_ref'] = pi_pages[number]
+        result.append(row)
+    return result
 
 
 PJPK_COMPONENTS = (
