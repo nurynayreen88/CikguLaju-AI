@@ -287,6 +287,19 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 .daily-rph-card-top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
 .daily-rph-time{font-variant-numeric:tabular-nums;color:#426b62;font-size:.89rem;font-weight:700}
 .daily-rph-note{font-size:.9rem;margin:9px 0}
+.daily-rph-editor{display:grid;gap:6px}
+.daily-rph-editor .daily-rph-field{margin:0}
+.daily-rph-editor .daily-rph-field label{margin:10px 0 4px}
+.daily-rph-editor .daily-rph-field select{margin:0}
+.daily-rph-editor .daily-rph-results{margin-top:14px;padding-top:12px;border-top:1px solid #ccded8}
+.daily-rph-editor h3{font-size:1rem}
+.daily-rph-results h4{margin:0 0 8px}
+.daily-rph-materials{list-style:none;padding:0;margin:0}
+.daily-rph-batch{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:16px}
+#today-generate-all{background:#087568;color:white;border:0;border-radius:11px;padding:14px 20px;font:inherit;font-weight:700;cursor:pointer}
+#today-generate-all:disabled{background:#d8e4df;color:#587168;cursor:not-allowed}
+#today-generate-status{margin:8px 0 0}
+.daily-rph-materials .material-download-row{list-style:none}
 .daily-rph-card.is-editing{border-color:#087568;box-shadow:0 0 0 1px #087568}
 .daily-rph-editor{margin-top:15px;padding-top:16px;border-top:1px solid #c4dcd3}
 .daily-rph-editor h3{margin:0 0 3px;color:#113e60;font-size:1.06rem}
@@ -334,7 +347,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <div class="workspace-intro"><div><span class="workspace-eyebrow">RUANG GURU</span><p>Selamat datang, <strong id="workspace-teacher-name">Cikgu</strong></p></div><span class="workspace-ready"><span aria-hidden="true">●</span> Portal Pembelajaran</span></div>
 <section id="view-today" class="app-view" aria-labelledby="view-today-heading" hidden>
   <h2 id="view-today-heading">RPH Hari Ini</h2>
-  <p>Jadual waktu yang telah disimpan di Profil Guru digunakan terus untuk menyediakan RPH mengikut kelas, masa dan subjek. Guru sahkan tarikh, kemudian pilih Unit/Tajuk/Topik dan Lesson/PdP terus di bawah waktu mengajar yang dipilih. Senarai Lesson boleh ditukar di sini sebelum menjana fail.</p>
+  <p>Setiap waktu mengajar memaparkan dropdown Tema/Unit/Tajuk dan Lesson/PdP secara automatik. Pilih semua Lesson/PdP terlebih dahulu, kemudian tekan Jana Bahan sekali untuk menyemak bahan mengikut kelas. Hanya bahan tersedia akan dipaparkan.</p>
   <div class="daily-rph-toolbar">
     <div><label for="today-date">Tarikh PdP</label><input id="today-date" type="date" aria-label="Tarikh RPH Hari Ini"></div>
     <button type="button" id="today-refresh">Muat Semula Jadual</button>
@@ -345,9 +358,11 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
     Saya sahkan tarikh ini hari PdP sebenar (bukan cuti sekolah atau cuti umum).
   </label>
   <div id="today-list" class="daily-rph-list" aria-label="Senarai waktu mengajar hari ini"></div>
+  <div class="daily-rph-batch"><button type="button" id="today-generate-all" disabled>Jana Bahan Semua Lesson</button><span class="notice">Pilih Lesson/PdP untuk semua kelas terlebih dahulu.</span></div>
+  <p id="today-generate-status" class="notice" role="status" aria-live="polite"></p>
   <div class="daily-rph-footer">
     <button type="button" id="today-manual">Sediakan RPH Secara Manual</button>
-    <span class="notice">Lesson/PdP dipilih berdasarkan sumber Telegram. Tidak dijana atau ditolak kuota secara automatik.</span>
+    <span class="notice">Semakan bahan tidak menggunakan kuota RPH. Muat turun RPH Word/PDF untuk setiap Lesson menggunakan kuota atau langganan sedia ada.</span>
   </div>
 </section>
 <section id="view-rph" class="app-view" aria-labelledby="view-rph-heading">
@@ -952,63 +967,74 @@ async function populateMaterialList(){
  const status=document.getElementById("materials-status");
  list.replaceChildren();
  status.textContent="Menyemak bahan sebenar bagi Lesson/PdP yang dipilih…";
- const sourceConfirmed=verifiedRphKey===key;
- const rphReady=canGenerateRph()&&!!currentRphParams()&&sourceConfirmed;
- const locked=sourceConfirmed&&!canGenerateRph();
- const lockLabel=locked?"Akses diperlukan":"Belum tersedia";
- const pdfReady=rphReady&&verifiedRphFormats.includes("pdf");
- const wordReady=rphReady&&verifiedRphFormats.includes("word");
- list.append(materialRow("RPH PDF",{ready:pdfReady,
-   statusLabel:sourceConfirmed&&!verifiedRphFormats.includes("pdf")?"Format belum disahkan":lockLabel,
-   onDownload:()=>generateRphFile("pdf")}));
- list.append(materialRow("RPH Word",{ready:wordReady,
-   statusLabel:sourceConfirmed&&!verifiedRphFormats.includes("word")?"Format belum disahkan":lockLabel,
-   onDownload:()=>generateRphFile("word")}));
- if(!rphReady&&sourceConfirmed&&locked)
-  status.textContent="RPH tersedia, tetapi akaun ini tiada akses janaan aktif.";
- else if(!rphReady&&!sourceConfirmed)
-  status.textContent="Semakan RPH masih berjalan atau RPH belum tersedia.";
- const placeholders={textbook:"Buku Teks",audio:"Audio",workbook:"Buku Aktiviti"};
- const discovered={textbook:[],audio:[],workbook:[]};
- let sourceError="";
- let extraNotice="";
- try{
-  // Native source token is the canonical Year+Unit+Lesson selector.
-  // Never reinterpret English e-2-001 as a weekly RPT row id.
-  const params=new URLSearchParams({year:year.value,subject:subject.value,
-                                    unit:unit.value,lesson:lesson.value});
-  const response=await fetch("/api/web/rph/extra-materials?"+params,
-                             {credentials:"same-origin",cache:"no-store",redirect:"error"});
-  const data=await response.json().catch(()=>({}));
-  if(!response.ok)throw Error(data.error||"Bahan tambahan belum boleh disemak.");
-  if(!Array.isArray(data.items)||data.items.length>30)throw Error("Senarai bahan sumber tidak sah.");
-  extraNotice=String(data.note||"");
-  for(const item of data.items){
-   if(!item||!Object.hasOwn(discovered,item.type)||
-      typeof item.url!=="string"||typeof item.title!=="string")continue;
-   const ownWorkbook=item.type==="workbook"&&
-       item.url.startsWith("/api/web/rph/english-workbook?");
-   const externalMusic=item.type==="audio"&&
-       /^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]{10,100}\/view\?usp=drivesdk$/.test(item.url);
-   if(!ownWorkbook&&!externalMusic)continue;
-   discovered[item.type].push({
-    name:item.title, url:item.url,
-    action:externalMusic?"Buka Audio Sumber":"Download"});
-  }
- }catch(e){sourceError=e.message;}
+ let sourceConfirmed=verifiedRphKey===key;
+ let sourceError="",extraNotice="",found=0;
+ if(!sourceConfirmed){
+  try{
+   const params=new URLSearchParams({year:year.value,subject:subject.value,
+                                     unit:unit.value,lesson:lesson.value});
+   if(subject.value==="PJPK")params.set("component",component.value);
+   const result=await fetch("/api/web/rph/availability?"+params,{
+     credentials:"same-origin",cache:"no-store",redirect:"error"
+   });
+   const data=await result.json().catch(()=>({}));
+   if(materialsRequestKey!==key||currentRphLessonKey()!==key)return;
+   if(result.ok&&data.available===true&&data.generator==="telegram-native"){
+    verifiedRphKey=key;
+    verifiedRphFormats=Array.isArray(data.formats)?
+      data.formats.filter(f=>["word","pdf"].includes(f)):["word","pdf"];
+    sourceConfirmed=true;
+    showRphAction();
+   }else if(!result.ok&&result.status!==404){
+    sourceError=data.error||"Semakan RPH belum tersedia.";
+   }
+  }catch(_error){sourceError="Semakan RPH belum dapat dihubungi.";}
+ }
  if(materialsRequestKey!==key||currentRphLessonKey()!==key)return;
- for(const cat of ["textbook","audio","workbook"]){
-  const items=discovered[cat];
-  if(!items.length){list.append(materialRow(placeholders[cat]));continue;}
-  for(const item of items){
-   list.append(materialRow(item.name,{ready:true,
-      url:item.url,actionLabel:item.action}));
+ if(sourceConfirmed){
+  const rphReady=canGenerateRph()&&!!currentRphParams();
+  const locked=!canGenerateRph();
+  if(verifiedRphFormats.includes("pdf")){
+   list.append(materialRow("RPH PDF",{
+    ready:rphReady,statusLabel:locked?"Akses diperlukan":"Lengkapkan maklumat RPH",
+    onDownload:()=>generateRphFile("pdf")}));
+   found++;
+  }
+  if(verifiedRphFormats.includes("word")){
+   list.append(materialRow("RPH Word",{
+    ready:rphReady,statusLabel:locked?"Akses diperlukan":"Lengkapkan maklumat RPH",
+    onDownload:()=>generateRphFile("word")}));
+   found++;
   }
  }
- const accessNote=locked?"RPH tersedia, tetapi muat turun memerlukan janaan percuma berbaki atau langganan aktif. ":"";
- status.textContent=accessNote+(sourceError?
-   "Bahan lain: "+sourceError+" Fail yang belum disahkan tidak boleh dimuat turun.":
-   extraNotice||"Bahan yang dipadankan tersedia; yang lain kekal belum tersedia.");
+ if((subject.value==="ENGLISH"&&[2,3,4].includes(Number(year.value)))||subject.value==="MUZIK"){
+  try{
+   const params=new URLSearchParams({year:year.value,subject:subject.value,
+                                    unit:unit.value,lesson:lesson.value});
+   const response=await fetch("/api/web/rph/extra-materials?"+params,{
+                              credentials:"same-origin",cache:"no-store",redirect:"error"});
+   const data=await response.json().catch(()=>({}));
+   if(materialsRequestKey!==key||currentRphLessonKey()!==key)return;
+   if(!response.ok)throw Error(data.error||"Bahan tambahan belum boleh disemak.");
+   if(!Array.isArray(data.items)||data.items.length>30)throw Error("Senarai sumber tidak sah.");
+   extraNotice=String(data.note||"");
+   for(const item of data.items){
+    if(!item||typeof item.url!=="string"||typeof item.title!=="string")continue;
+    const ownWorkbook=item.type==="workbook"&&
+        item.url.startsWith("/api/web/rph/english-workbook?");
+    const externalMusic=item.type==="audio"&&
+        /^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]{10,100}\/view\?usp=drivesdk$/.test(item.url);
+    if(!ownWorkbook&&!externalMusic)continue;
+    list.append(materialRow(item.title,{ready:true,url:item.url,
+      actionLabel:externalMusic?"Buka Audio Sumber":"Download"}));
+    found++;
+   }
+  }catch(e){sourceError=(sourceError+" "+e.message).trim();}
+ }
+ if(materialsRequestKey!==key||currentRphLessonKey()!==key)return;
+ status.textContent=(found? "Hanya bahan yang tersedia dipaparkan. ":
+   "Tiada bahan yang disahkan tersedia untuk Lesson/PdP ini. ")+
+   (sourceError?"Semakan belum lengkap: "+sourceError:extraNotice);
 }
 document.getElementById("show-materials").addEventListener("click",()=>{void populateMaterialList();});
 const rptSubject=document.getElementById("rpt-subject"),rptYear=document.getElementById("rpt-year"),rptDownload=document.getElementById("rpt-download"),rptMobileLink=document.getElementById("rpt-download-mobile"),rptStatus=document.getElementById("rpt-status");
@@ -1222,7 +1248,7 @@ rphWord.addEventListener("click",()=>generateRphFile("word"));
 rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
-<script src="/assets/rph-today.js?v=inline-dropdown-fix-20261106b"></script>
+<script src="/assets/rph-today.js?v=all-slots-one-jana-bahan-20261106"></script>
 <script src="/assets/teacher-profile.js?v=avatar-picker-20261106"></script>
 <script src="/assets/web-payment.js?v=rakan-only-percent-20261106"></script>
 <script src="/assets/web-referral.js?v=20261106"></script>
