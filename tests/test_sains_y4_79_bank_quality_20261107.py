@@ -34,7 +34,7 @@ class TestSainsYear4Bank(unittest.TestCase):
         self.assertIn("katak",BANK["3.1.3"]["teacher1"].lower())
         self.assertIn("titisan",BANK["5.3.3"]["teacher1"].lower())
         self.assertIn("bunyi",BANK["6.1.1"]["pbd"].lower())
-        self.assertIn("tidak",BANK["10.2.2"]["safety"].lower())
+        self.assertIn("jangan",BANK["10.2.2"]["safety"].lower())
         self.assertIn("daya",BANK["10.1.2"]["pbd"].lower())
 
     def test_kps_codes_proven_by_year4_dskp(self):
