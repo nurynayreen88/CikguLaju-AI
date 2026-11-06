@@ -16,6 +16,8 @@ SUBJECTS = {
     "psv": "PENDIDIKAN SENI VISUAL",
     "rbt": "REKA BENTUK DAN TEKNOLOGI",
     "moral": "PENDIDIKAN MORAL",
+    "sejarah": "SEJARAH",
+    "pjpk": "PENDIDIKAN JASMANI DAN PENDIDIKAN KESIHATAN",
 }
 GROUP_A = "Kedah, Kelantan, Terengganu"
 GROUP_B = "Negeri-negeri lain / Wilayah Persekutuan"
@@ -25,7 +27,7 @@ REQUIRED = ("id", "unit", "sk", "sp", "note")
 def validate_rows(subject, year, records):
     if subject not in SUBJECTS or type(year) is not int or year not in range(2, 7):
         raise ValueError("Unsupported RPT subject/year")
-    if subject == "rbt" and year < 4:
+    if subject in ("rbt", "sejarah") and year < 4:
         raise ValueError("RBT only for Year 4-6")
     if not isinstance(records, list) or not records or len(records) > 160:
         raise ValueError("RPT missing or oversized source rows")
@@ -36,6 +38,8 @@ def validate_rows(subject, year, records):
             raise ValueError("Incomplete sourced RPT row")
         if not re.fullmatch(r"\d{3}", row["id"]):
             raise ValueError("Invalid PdP number")
+        if "display_id" in row and (not isinstance(row["display_id"], str) or not row["display_id"].strip()):
+            raise ValueError("Invalid original-subject PdP identity")
         ids.append(int(row["id"]))
         for key in ("a_start", "a_end", "b_start", "b_end"):
             if row.get(key):
@@ -45,6 +49,9 @@ def validate_rows(subject, year, records):
                     raise ValueError("Invalid actual date range") from exc
     if ids != list(range(1, len(records) + 1)):
         raise ValueError("Missing, out-of-order or duplicate PdP numbers")
+    display_ids = [row["display_id"] for row in records if row.get("display_id")]
+    if len(display_ids) != len(set(display_ids)):
+        raise ValueError("Duplicated original-subject PdP identity")
     for row in records:
         for prefix in ("a", "b"):
             a, b = row.get(prefix + "_start", ""), row.get(prefix + "_end", "")
@@ -170,7 +177,7 @@ def build_preview(subject, year, records, destination):
         weektext = (f"{week}\nKumpulan A:\n{range_text(row,'a')}"
                     f"\nKumpulan B:\n{range_text(row,'b')}")
         unit_lines=[
-            p(f"PdP {row['id']}",size=8.1,leading=12,strong=True),
+            p(row.get("display_id") or f"PdP {row['id']}",size=8.1,leading=12,strong=True),
             p(row["unit"].strip(),size=8,leading=12,strong=True),
         ]
         if row.get("topic","").strip():
