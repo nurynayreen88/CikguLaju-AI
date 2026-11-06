@@ -10,7 +10,7 @@ import re
 from pathlib import Path
 
 from rpt_2027.common.format_2026_layout_preview import build_preview, validate_rows
-from rpt_2027.common.standard_text_enrichment import enrich_moral
+from rpt_2027.common.standard_text_enrichment import enrich_moral, enrich_psv
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "staging" / "rpt_2027_seragam_2026" / "pdf"
@@ -58,6 +58,7 @@ def psv_records(year):
                     (". Buku teks: "+book if book else "")+
                     ". Tarikh dan halaman BT: cadangan, perlu disemak."
         })
+    enrich_psv(year,output)
     validate_rows("psv",year,output)
     return output
 
