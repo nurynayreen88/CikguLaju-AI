@@ -44,8 +44,8 @@ jobs:
             pdf="/tmp/ba-rpt-2027/pdf/$file.pdf"
             test -s "$pdf"
             pages="$(pdfinfo "$pdf" | awk '/^Pages:/ { print $2 }')"
-            test "$pages" -ge 5
-            test "$pages" -le 20
+            # Cover + exactly four Unit pages; catch accidental blank pages.
+            test "$pages" -eq 5
             pdftotext "$pdf" - | grep -q "RANCANGAN PENGAJARAN TAHUNAN"
             pdftotext "$pdf" - | grep -q "PdP"
           done
