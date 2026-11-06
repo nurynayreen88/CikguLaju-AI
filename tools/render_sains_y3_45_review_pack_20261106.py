@@ -43,7 +43,7 @@ def skill_summary(rows):
     out=rows["KEMAHIRAN PROSES SAINS"]
     manip=rows.get("KEMAHIRAN MANIPULATIF DAN KESELAMATAN","")
     if manip:
-        out+="\\nManipulatif/peraturan: "+manip
+        out+="\nManipulatif/peraturan: "+manip
     return out
 
 def source_state(rec):
