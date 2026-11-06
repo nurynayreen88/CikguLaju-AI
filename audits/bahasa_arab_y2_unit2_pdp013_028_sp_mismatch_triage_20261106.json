@@ -1,0 +1,208 @@
+{
+  "date": "2026-11-06",
+  "subject": "Bahasa Arab",
+  "year": 2,
+  "unit": 2,
+  "purpose": "Triage source code mismatches for PdP013–028 before content edits, not substitute for final DSKP pedagogy sign-off.",
+  "source_book": {
+    "url": "https://drive.google.com/file/d/13CqpBb4HosAM_-HTEN-hhBCt2W5wVXCZ/view",
+    "isbn": "978-983-49-1589-6",
+    "first_printing": 2017,
+    "source_pdf_page_offset_1based": 12
+  },
+  "source_rph_audit_file": "audits/bahasa_arab_y2_unit2_pdp013_028_visual_audit_20261106.json",
+  "method": "Direct visual screening of original PDF teacher-guide pink code panels for candidate source pages 26–43; focused reading of RPH objectives/PBD for flagged cases.",
+  "candidate_total": 16,
+  "high_priority_count": 8,
+  "additional_review_count": 5,
+  "ready_count": 0,
+  "records": [
+    {
+      "pdp": "013",
+      "source_printed_page": 26,
+      "source_pdf_page_1based": 38,
+      "existing_candidate_sp": "1.1.1",
+      "existing_focus": "Mendengar dan mengecam bunyi و",
+      "audit_status": "NO_HIGH_PRIORITY_FINDING_IN_SCREENING",
+      "issue": "",
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "014",
+      "source_printed_page": 27,
+      "source_pdf_page_1based": 39,
+      "existing_candidate_sp": "2.1.1",
+      "existing_focus": "Membaca dan membina kata berhuruf و",
+      "audit_status": "HIGH_PRIORITY_CODE_OR_SKILL_MISMATCH",
+      "issue": "p27 panel memaparkan latihan kumpulan suku kata 1.2/2.2; SP 2.1.1 tidak jelas pada panel halaman itu.",
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "015",
+      "source_printed_page": 28,
+      "source_pdf_page_1based": 40,
+      "existing_candidate_sp": "1.1.1",
+      "existing_focus": "Mendengar dan mengenal bunyi س",
+      "audit_status": "NO_HIGH_PRIORITY_FINDING_IN_SCREENING",
+      "issue": "",
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "016",
+      "source_printed_page": 29,
+      "source_pdf_page_1based": 41,
+      "existing_candidate_sp": "2.1.1",
+      "existing_focus": "Membaca segmen perkataan huruf س",
+      "audit_status": "HIGH_PRIORITY_CODE_OR_SKILL_MISMATCH",
+      "issue": "p29 panel memaparkan kumpulan 1.2/2.2, bukan SP 2.1.1; fokus perlu dipadankan dengan latihan silabik.",
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "017",
+      "source_printed_page": 30,
+      "source_pdf_page_1based": 42,
+      "existing_candidate_sp": "3.1.1",
+      "existing_focus": "Menulis bentuk huruf و dan س dalam kata",
+      "audit_status": "NO_HIGH_PRIORITY_FINDING_IN_SCREENING",
+      "issue": "",
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "018",
+      "source_printed_page": 31,
+      "source_pdf_page_1based": 43,
+      "existing_candidate_sp": "2.2.1",
+      "existing_focus": "Pengukuhan membaca kata bunyi و dan س",
+      "audit_status": "REQUIRES_FULL_PAGE_PEDAGOGIC_CHECK",
+      "issue": "Perlu pastikan kod 2.2.1 muncul pada latihan p31 serta aktiviti benar-benar membaca suku kata, bukan kata penuh.",
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "019",
+      "source_printed_page": 32,
+      "source_pdf_page_1based": 44,
+      "existing_candidate_sp": "1.2.1",
+      "existing_focus": "Mendengar nama ahli keluarga terdekat",
+      "audit_status": "HIGH_PRIORITY_CODE_OR_SKILL_MISMATCH",
+      "issue": "p32 panduan guru memaparkan kumpulan 1.3 untuk kosa kata didengar, bukan SP 1.2.1 (suku kata).",
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "020",
+      "source_printed_page": 33,
+      "source_pdf_page_1based": 45,
+      "existing_candidate_sp": "1.2.2",
+      "existing_focus": "Mendengar dan membezakan ahli keluarga luas",
+      "audit_status": "HIGH_PRIORITY_CODE_OR_SKILL_MISMATCH",
+      "issue": "p33 panduan guru memaparkan kumpulan 1.3, bukan SP 1.2.2 (suku kata).",
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "021",
+      "source_printed_page": 34,
+      "source_pdf_page_1based": 46,
+      "existing_candidate_sp": "2.2.1",
+      "existing_focus": "Membaca perkataan ahli keluarga",
+      "audit_status": "REQUIRES_FULL_PAGE_PEDAGOGIC_CHECK",
+      "issue": "Perlu semak kemahiran bacaan perkataan p34 berbanding 2.2.1 suku kata.",
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "022",
+      "source_printed_page": 35,
+      "source_pdf_page_1based": 47,
+      "existing_candidate_sp": "2.2.2",
+      "existing_focus": "Menyusun dan mengenal nama ahli keluarga",
+      "audit_status": "REQUIRES_FULL_PAGE_PEDAGOGIC_CHECK",
+      "issue": "Panel panduan guru p35 tidak berada dalam crop audit; perlukan pemeriksaan imej penuh.",
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "023",
+      "source_printed_page": 37,
+      "source_pdf_page_1based": 49,
+      "existing_candidate_sp": "1.3.1",
+      "existing_focus": "Mendengar dan menyebut identiti anak lelaki/perempuan",
+      "audit_status": "HIGH_PRIORITY_CODE_OR_SKILL_MISMATCH",
+      "issue": "p37 panduan guru memaparkan kumpulan 1.4 untuk frasa lisan, bukan SP 1.3.1 (perkataan).",
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "024",
+      "source_printed_page": 38,
+      "source_pdf_page_1based": 50,
+      "existing_candidate_sp": "1.3.2",
+      "existing_focus": "Kata tunjuk هذا/هذه bagi datuk dan nenek",
+      "audit_status": "HIGH_PRIORITY_CODE_OR_SKILL_MISMATCH",
+      "issue": "p38 panduan guru memaparkan kumpulan 1.4 bagi frasa هذا/هذه, bukan SP 1.3.2 (perkataan).",
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "025",
+      "source_printed_page": 39,
+      "source_pdf_page_1based": 51,
+      "existing_candidate_sp": "2.3.1",
+      "existing_focus": "Membaca carta salasilah keluarga",
+      "audit_status": "REQUIRES_FULL_PAGE_PEDAGOGIC_CHECK",
+      "issue": "SP 2.3.1 mungkin tercetak tetapi objektif membaca perkataan/salasilah perlu disesuaikan dengan maksud SP bacaan suku kata.",
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "026",
+      "source_printed_page": 40,
+      "source_pdf_page_1based": 52,
+      "existing_candidate_sp": "3.3.1",
+      "existing_focus": "Menulis ayat kata tunjuk tentang keluarga",
+      "audit_status": "REQUIRES_FULL_PAGE_PEDAGOGIC_CHECK",
+      "issue": "SP 3.3.1 tercetak bersama 3.4.1 pada p40; RPH menulis ayat/frasa, jadi semak sama ada sepatutnya 3.4.1.",
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "027",
+      "source_printed_page": 41,
+      "source_pdf_page_1based": 53,
+      "existing_candidate_sp": "1.4.1",
+      "existing_focus": "Bertanya dan menjawab 'siapakah ini?'",
+      "audit_status": "HIGH_PRIORITY_CODE_OR_SKILL_MISMATCH",
+      "issue": "p41 panel bercetak memaparkan kumpulan bacaan 2.4, sedangkan calon SP 1.4.1 ialah kemahiran mendengar/sebut frasa.",
+      "teacher_approved": false,
+      "ready": false
+    },
+    {
+      "pdp": "028",
+      "source_printed_page": 43,
+      "source_pdf_page_1based": 55,
+      "existing_candidate_sp": "3.2.1",
+      "existing_focus": "Mengenal dan menulis nombor tiga belas hingga enam belas",
+      "audit_status": "HIGH_PRIORITY_CODE_OR_SKILL_MISMATCH",
+      "issue": "p43 panel memaparkan kumpulan nombor 1.5/2.5; SP 3.2.1 menyalin suku kata tidak sepadan fokus nombor 13–16.",
+      "teacher_approved": false,
+      "ready": false
+    }
+  ],
+  "criteria": "A missing SP code on the named page is a release blocker requiring individual DSKP/page and activity review; it is NOT a license to blindly replace the source SP with another code.",
+  "required_next_step": "Inspect each flagged original page in full resolution, identify exact printed SP and edit RPH objective, teacher/pupil activities, PBD, primary CSV, RPT A/B in one reviewed change; then rerun 298 A4.",
+  "limitations": [
+    "Does not claim all 16 source pages or RPH have full final teacher approval",
+    "No RPH SK/SP or runtime changed in this audit",
+    "Visual panels can contain multiple relevant SP; choose by actual teaching objective and DSKP, not nearest number"
+  ],
+  "release_authorized": false,
+  "production_db_touched": false,
+  "telegram_live_touched": false,
+  "web_live_touched": false
+}
