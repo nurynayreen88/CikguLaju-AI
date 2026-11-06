@@ -202,7 +202,15 @@ function makeTimetableSubjectPicker(value, index) {
   for(const group of teacherSubjectGroups){
     const options=document.createElement("optgroup");
     options.label=group.label;
-    for(const name of group.values)options.append(new Option(name,name));
+    for(const name of group.values){
+      const label=({
+        "English":"Bahasa Inggeris (English)",
+        "Pendidikan Jasmani":"Pendidikan Jasmani (PJ)",
+        "Pendidikan Kesihatan":"Pendidikan Kesihatan (PK)",
+        "Reka Bentuk dan Teknologi":"Reka Bentuk dan Teknologi (RBT)"
+      })[name] || name;
+      options.append(new Option(label,name));
+    }
     choose.append(options);
   }
   choose.add(new Option("Lain-lain — taip sendiri",timetableOtherSubject));
@@ -266,8 +274,10 @@ function renderTeacherTimetable(entries) {
       makeTimetableSelect(teacherProfileState.classNames,row.class_name,"class_name","Pilih kelas"),
       makeTimetableSubjectPicker(row.subject,index),
     ];
-    for (const el of fields) {
-      const td=document.createElement("td");td.append(el);tr.append(td);
+    for (const [fieldIndex,el] of fields.entries()) {
+      const td=document.createElement("td");
+      td.dataset.label=["Hari","Mula","Tamat","Kelas","Subjek"][fieldIndex];
+      td.append(el);tr.append(td);
     }
     const action = document.createElement("button");
     action.type = "button";action.className = "remove-period";
@@ -278,7 +288,9 @@ function renderTeacherTimetable(entries) {
       renderTeacherTimetable(rows);
       timetableMessage.textContent="Perubahan jadual belum disimpan.";
     });
-    const last=document.createElement("td");last.append(action);tr.append(last);
+    const last=document.createElement("td");
+    last.dataset.label="Buang";
+    last.append(action);tr.append(last);
     timetableBody.append(tr);
   }
   document.getElementById("timetable-empty").hidden=entries.length>0;
