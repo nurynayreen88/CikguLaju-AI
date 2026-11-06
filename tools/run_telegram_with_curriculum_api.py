@@ -556,6 +556,20 @@ except Exception as _web_receipt_notice_exc:
           type(_web_receipt_notice_exc).__name__, flush=True)
 
 
+# Optional verified-source API for the 59 DRAF Aktiviti Khas records.
+# The source and labels stay separate from syllabus-based Unit/Lesson/PdP.
+# Only registers when the explicit Special Activity flag and existing private
+# native Web-to-Telegram token are configured; fail closed otherwise.
+try:
+    from web.telegram_special_activity_api import register_if_enabled as register_special_rph
+    SPECIAL_ACTIVITY_2027_PRIVATE_API_ACTIVE = bool(
+        register_special_rph(telegram_runtime.app))
+except Exception as _special_activity_api_exc:
+    SPECIAL_ACTIVITY_2027_PRIVATE_API_ACTIVE = False
+    print("Special Activity RPH API unavailable:",
+          type(_special_activity_api_exc).__name__, flush=True)
+
+
 # Authenticated Web referral registration notice to Telegram admin. Does not
 # create users, alter payment status or change existing signup notifications.
 try:
