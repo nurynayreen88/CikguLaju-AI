@@ -1,0 +1,29 @@
+name: RBT 2027 Web Telegram source parity (staging only)
+on:
+  pull_request:
+    paths:
+      - 'web/native_telegram_rbt_2027_client.py'
+      - 'web/unified_rph_web.py'
+      - 'tools/run_web_v1_preview.py'
+      - 'web_v1_static_preview/index.html'
+      - 'scripts/check_rbt_2027_web_bridge.py'
+      - 'tests/test_web_rbt_2027_native.py'
+      - '.github/workflows/rbt_2027_web_parity_qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  web-rbt-parity:
+    name: Test private native Telegram proxy, Web menu and auth boundaries
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install minimal testing dependencies (no real service access)
+        run: python -m pip install --disable-pip-version-check flask python-docx
+      - name: Syntax-validate all modified RBT Web files
+        run: |
+          python -m py_compile web/native_telegram_rbt_2027_client.py web/unified_rph_web.py tools/run_web_v1_preview.py
+      - name: Exercise source-bound Web RBT client and trial safety
+        run: python scripts/check_rbt_2027_web_bridge.py
+      - name: Authenticate Web RBT routes and assert no credit debit on failure
+        run: python -m unittest tests.test_web_rbt_2027_native -v

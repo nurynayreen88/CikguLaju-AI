@@ -33,6 +33,7 @@ SUBJECT_LABELS = {
     "MORAL": "Pendidikan Moral",
     "PSV": "Pendidikan Seni Visual",
     "SEJARAH": "Sejarah",
+    "RBT": "Reka Bentuk dan Teknologi",
     "ARAB": "Bahasa Arab",
     "MUZIK": "Pendidikan Muzik",
 }
@@ -549,6 +550,25 @@ def create_blueprint():
                 "year": year, "subject": subject, "unit": unit,
                 "lesson": token, "teacher": teacher,
             }, None
+        if subject == "RBT":
+            if year not in (4,5,6) or component not in (None,""):
+                return None,(jsonify({"error":"RBT untuk Tahun 4–6 sahaja"}),400)
+            from web.native_telegram_rbt_2027_client import (
+                rbt_available,NativeRPHUnavailable,
+            )
+            try:
+                rbt_available(year,unit,token)
+            except (NativeRPHUnavailable,ValueError):
+                return None,(jsonify({
+                    "error":"Sumber RBT Unit/PdP ini belum aktif dalam Telegram.",
+                    "code":"TELEGRAM_RBT_SOURCE_UNAVAILABLE",
+                }),503)
+            return {
+                "source":"telegram-native-rbt-2027",
+                "year":year,"subject":subject,"unit":unit,
+                "lesson":token,"teacher":teacher,
+                "status":"DRAF UNTUK SEMAKAN GURU",
+            },None
         if subject == "SEJARAH":
             if year not in (4,5,6) or component not in (None, ""):
                 return None, (jsonify({"error":"Sejarah tersedia untuk Tahun 4–6 sahaja"}),400)
@@ -646,6 +666,8 @@ def create_blueprint():
                 "download_allowed": allowed, "access_status": access}
         # Preserve the existing JSON contract for English/BM/PI/other users.
         # Publish DRAF and format restrictions only for the new subjects.
+        if selected.get("source")=="telegram-native-rbt-2027":
+            result.update({"status":selected["status"],"formats":["word","pdf"]})
         if selected.get("source")=="telegram-provisional-subjects-2027":
             result.update({"status": selected["status"],
                            "formats": selected["formats"]})
@@ -678,6 +700,9 @@ def create_blueprint():
             elif selected.get("source") == "telegram-verified-rpt-master":
                 from web.native_verified_rpt_rph_client import request_verified_rpt_rph
                 document = request_verified_rpt_rph(selected, fmt)
+            elif selected.get("source") == "telegram-native-rbt-2027":
+                from web.native_telegram_rbt_2027_client import request_rbt_rph
+                document=request_rbt_rph(selected,fmt)
             elif selected.get("source") == "telegram-native-sejarah-2027":
                 from web.native_telegram_sejarah_2027_client import request_sejarah_rph
                 document = request_sejarah_rph(selected, fmt)
