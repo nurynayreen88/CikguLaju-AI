@@ -67,12 +67,12 @@ class RPT2027SecondBatchQA(unittest.TestCase):
                     self.assertIn("CATATAN / BAHAN", body)
                     if subject == "sejarah":
                         self.assertEqual(count, 36)
-                        numbers = re.findall(r"(?m)^\\s*PdP\\s+(\\d{3})\\s*$", body)
+                        numbers = re.findall(r"(?m)^\s*PdP\s+(\d{3})\s*$", body)
                         self.assertEqual(numbers, [f"{n:03d}" for n in range(1, 37)])
                     else:
                         for sub in ("PJ", "PK"):
-                            ids = re.findall(r"(?m)^\\s*" + sub +
-                                             r" PdP\\s+(\\d{3})\\s*$", body)
+                            ids = re.findall(r"(?m)^\s*" + sub +
+                                             r" PdP\s+(\d{3})\s*$", body)
                             self.assertEqual(ids, [
                                 f"{n:03d}" for n in range(1, SUBJECT_ROW_COUNTS[sub][year]+1)
                             ])
