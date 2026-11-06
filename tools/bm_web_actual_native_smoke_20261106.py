@@ -62,7 +62,21 @@ def main():
             text = _content(runtime, st)
             assert len(text.strip()) >= 500
             assert str(r["sp_code"]) in text
+            import sqlite3
+            with sqlite3.connect(db.resolve().as_uri() + "?mode=ro", uri=True) as con:
+                cols = [x[1] for x in con.execute("PRAGMA table_info(curriculum_standards)")]
+                print("BM curriculum_standards cols", cols, flush=True)
+                for sr in st["_bm_web_verified_standards"]:
+                    code = sr["sp_code"]
+                    cols_needed = [c for c in ("sp_code", "sp_text", "sk_code", "year_label", "subject", "verified") if c in cols]
+                    if cols_needed and "sp_code" in cols:
+                        where = "sp_code=?" + (" AND year_label=?" if "year_label" in cols else "")
+                        params = (code, f"Tahun {year}") if "year_label" in cols else (code,)
+                        vals = con.execute("SELECT " + ",".join(cols_needed) + " FROM curriculum_standards WHERE "+where+" LIMIT 5",params).fetchall()
+                        print("BM curriculum match", year, code, vals, flush=True)
+            print("BM native source standards", st["_bm_web_verified_standards"], flush=True)
             old = base_rows(st, text)
+            print("BM old main activity sample", str(old.get("AKTIVITI UTAMA") or "")[:480], flush=True)
             new = runtime._rph_rows(st, text)
             assert new["STANDARD PEMBELAJARAN"] == old["STANDARD PEMBELAJARAN"]
             assert new["STANDARD KANDUNGAN"] == old["STANDARD KANDUNGAN"]
