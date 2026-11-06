@@ -14,7 +14,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan petikan sumber tentang kepimpinan dan hubungan luar Tun Perak. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 10: Tun Perak Bendahara Terbilang.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 146–148: Strategi jamung Tun Perak, hubungan dengan Siam dan keputusan. Murid mengelaskan keputusan politik, pertahanan dan diplomasi Tun Perak. Guru menyemak jawapan awal berpandukan 5.3.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 146–148: Strategi jamung Tun Perak, hubungan dengan Siam dan keputusan pentadbiran. Murid mengelaskan keputusan politik, pertahanan dan diplomasi Tun Perak. Guru menyemak jawapan awal berpandukan 5.3.3.
 
 **Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 146–148 bagi menyokong perbandingan. Murid menilai kesan keputusan tersebut terhadap kegemilangan Melaka melalui peta sebab-akibat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan nilai kepimpinan Tun Perak yang boleh dicontohi.
 
