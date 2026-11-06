@@ -1,0 +1,24 @@
+{
+  "generated_date": "2026-11-06",
+  "subject": "RBT",
+  "status": "DRAF",
+  "release_ready": false,
+  "validation": {
+    "hours_per_year": 32,
+    "planned_pdp_per_year": 32,
+    "unique_sp_by_year": {
+      "4": 57,
+      "5": 34,
+      "6": 23
+    },
+    "textbook_page_evidence_verified": 0,
+    "individual_pedagogical_approvals": 0,
+    "runtime_integration": false
+  },
+  "original_sources": [
+    "DSKP RBT Tahun 4 April 2018",
+    "DSKP RBT Tahun 5 April 2019",
+    "DSKP RBT Tahun 6 (Semakan 2017)"
+  ],
+  "no_production_change": true
+}
