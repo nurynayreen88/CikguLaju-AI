@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Read-only staging structural QA: 266 Bahasa Arab PdP drafts (60 Unit1 + 48 Year2 + 48 Year3 + 46 Year4 + 48 Year5 extras + 16 Year6 Unit2), 20 units, 15 banks.
+"""Read-only staging structural QA: 282 Bahasa Arab PdP drafts (60 Unit1 + 48 Year2 + 48 Year3 + 46 Year4 + 48 Year5 + 32 Year6 Unit2/3), 20 units, 15 banks.
 NOT a pedagogical approval, RPT 2027 release, source page certification or production patch.
 """
 from __future__ import annotations
@@ -174,10 +174,10 @@ def check() -> None:
         assert "BELUM READY" in src
     readiness = json.loads((ROOT / "audits" / "bahasa_arab_release_readiness_20261106.json").read_text(encoding="utf-8"))
     assert readiness["release_state"] == "DRAF_STAGING_RELEASE_BLOCKED"
-    assert readiness["completed"]["source_page_draft_reviewed"] == 266
-    assert readiness["completed"]["draft_rph"] == 266
-    assert sum(y["source_page_reviewed_rph"] for y in readiness["years"]) == 266
-    assert all(y["unwritten_units"] == ([] if y["year"] in (2,3,4,5) else [3,4]) for y in readiness["years"])
+    assert readiness["completed"]["source_page_draft_reviewed"] == 282
+    assert readiness["completed"]["draft_rph"] == 282
+    assert sum(y["source_page_reviewed_rph"] for y in readiness["years"]) == 282
+    assert all(y["unwritten_units"] == ([] if y["year"] in (2,3,4,5) else [4]) for y in readiness["years"])
     assert readiness["total_ready_rph"] == 0 and readiness["release_authorized"] is False
     assert all(readiness[k] is False for k in ("production_db_touched","telegram_live_touched","web_live_touched"))
     assert any(x["id"] == "full_pdp_coverage" and x["status"] == "BLOCKED" for x in readiness["release_checks"])
@@ -196,8 +196,8 @@ def check() -> None:
         assert "**Semakan teks BT Tahun 6 (6 Nov 2026):**" in s
         assert f"**{row['printed_page_text_source']}**" in s
         assert "BELUM READY" in s
-    assert readiness["completed"]["source_page_draft_reviewed"] == 266
-    assert sum(y["source_page_reviewed_rph"] for y in readiness["years"]) == 266
+    assert readiness["completed"]["source_page_draft_reviewed"] == 282
+    assert sum(y["source_page_reviewed_rph"] for y in readiness["years"]) == 282
     y2_source = json.loads((ROOT / "audits" / "bahasa_arab_y2_pdp001_012_text_source_audit_20261106.json").read_text(encoding="utf-8"))
     assert y2_source["year"] == 2 and y2_source["unit"] == 1
     assert y2_source["source_page_reviewed_draft_count"] == 12
@@ -229,7 +229,7 @@ def check() -> None:
     assert all(item["manual_approval"] is False and item["ready"] is False for item in more_evidence["items"])
     assert m["years"]["4"]["unit2_candidate_rph_count"] == 16
     assert m["years"]["4"]["unit2_release_approved"] is False
-    assert m["total_provisional_rph_count"] == 266
+    assert m["total_provisional_rph_count"] == 282
     assert readiness["completed"]["year4_unit2_candidate_rph"] == 16
     assert readiness["completed"]["verified_a4_render_for_new_12"] is True
     for n, item in zip(range(13,25),more_evidence["items"]):
@@ -239,7 +239,7 @@ def check() -> None:
         assert item["sp"] in text and "من في المدرسة؟" in text
         assert "PdP" in text and "BELUM READY" in text and "DRAF_SEMAK" in text
         assert f"**{item['printed_page']}**" in text
-    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 266
+    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 282
     tail_rows = read_csv(RPT / "year4_unit2_tail_unit3_pdp025_042_DRAF.csv")
     assert len(tail_rows) == 18
     assert [r["pdp"] for r in tail_rows] == [f"{n:03d}" for n in range(25,43)]
@@ -268,7 +268,7 @@ def check() -> None:
         assert f"PdP {n:03d}" in source and i["sp"] in source
         assert f"**{i['printed_page']}**" in source
         assert "DRAF_SEMAK" in source and "BELUM READY" in source
-    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 266
+    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 282
     unit4_rows = read_csv(RPT / "year4_unit4_pdp043_058_DRAF.csv")
     assert len(unit4_rows) == 16
     assert [row["pdp"] for row in unit4_rows] == [f"{n:03d}" for n in range(43,59)]
@@ -291,7 +291,7 @@ def check() -> None:
         assert len(text) > 1450 and all(marker in text for marker in MARKERS)
         assert "بيتي جنتي" in text and f"**{row['halaman_buku_teks_dicadang']}**" in text
         assert row["sp"] in text and "BELUM READY" in text and "DRAF_SEMAK" in text
-    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 266
+    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 282
     y5unit2 = json.loads((ROOT / "audits" / "bahasa_arab_y5_unit2_pdp013_028_text_source_audit_20261106.json").read_text(encoding="utf-8"))
     assert y5unit2["year"] == 5 and y5unit2["unit"] == 2
     assert y5unit2["candidate_count"] == 16 and len(y5unit2["items"]) == 16
@@ -318,7 +318,7 @@ def check() -> None:
         assert f"PdP {n:03d}" in txt and "ما ألذ الطعام!" in txt
         assert row["sp"] in txt and f"**{row['halaman_buku_teks_dicadang']}**" in txt
         assert "DRAF_SEMAK" in txt and "BELUM READY" in txt
-    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 266
+    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 282
     y5u3 = json.loads((ROOT / "audits" / "bahasa_arab_y5_unit3_pdp029_044_text_source_audit_20261106.json").read_text(encoding="utf-8"))
     assert y5u3["year"] == 5 and y5u3["unit"] == 3
     assert y5u3["candidate_rph_count"] == 16 and len(y5u3["pdp"]) == 16
@@ -346,7 +346,7 @@ def check() -> None:
         assert "هيا نشترك في الأنشطة اللاصفية" in src
         assert r["sp"] in src and f"**{r['halaman_buku_teks_dicadang']}**" in src
         assert "DRAF_SEMAK" in src and "BELUM READY" in src
-    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 266
+    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 282
     y5u4 = json.loads((ROOT / "audits/bahasa_arab_y5_unit4_pdp045_060_text_source_audit_20261106.json").read_text(encoding="utf-8"))
     assert y5u4["year"] == 5 and y5u4["unit"] == 4 and y5u4["candidate_count"] == 16
     assert y5u4["final_ready"] == 0 and y5u4["release_authorized"] is False
@@ -370,7 +370,7 @@ def check() -> None:
         assert "رفقا بالحيوانات!" in txt and r["sp"] in txt
         assert f"**{r['halaman_buku_teks_dicadang']}**" in txt
         assert "DRAF_SEMAK" in txt and "BELUM READY" in txt
-    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 266
+    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 282
     y3u2 = json.loads((ROOT / "audits/bahasa_arab_y3_unit2_pdp013_028_visual_audit_20261106.json").read_text(encoding="utf-8"))
     assert y3u2["year"] == 3 and y3u2["unit"] == 2 and y3u2["candidate_count"] == 16
     assert y3u2["final_ready"] == 0 and y3u2["release_authorized"] is False
@@ -389,7 +389,7 @@ def check() -> None:
         assert "ملابسي الجميلة" in txt and r["sp"] in txt
         assert f"**{r['halaman_buku_teks_dicadang']}**" in txt
         assert "DRAF_SEMAK" in txt and "BELUM READY" in txt
-    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 266
+    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 282
     y2u2 = json.loads((ROOT / "audits/bahasa_arab_y2_unit2_pdp013_028_visual_audit_20261106.json").read_text(encoding="utf-8"))
     assert y2u2["year"] == 2 and y2u2["unit"] == 2 and y2u2["candidate_count"] == 16
     assert y2u2["release_authorized"] is False and y2u2["final_ready"] == 0
@@ -410,7 +410,7 @@ def check() -> None:
         assert "أحب أسرتي" in txt and r["sp"] in txt
         assert f"**{r['halaman_buku_teks_dicadang']}**" in txt
         assert "DRAF_SEMAK" in txt and "BELUM READY" in txt
-    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 266
+    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 282
     y2u3 = json.loads((ROOT / "audits/bahasa_arab_y2_unit3_pdp029_044_visual_audit_20261106.json").read_text(encoding="utf-8"))
     assert y2u3["count"] == 16 and y2u3["year"] == 2 and y2u3["unit"] == 3
     assert y2u3["final_ready"] == 0 and y2u3["release_authorized"] is False
@@ -427,7 +427,7 @@ def check() -> None:
         assert len(txt) > 1700 and all(mark in txt for mark in MARKERS)
         assert "جسمي السليم" in txt and r["sp"] in txt
         assert f"**{r['halaman_buku_teks_dicadang']}**" in txt
-    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 266
+    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 282
     y2u4 = json.loads((ROOT / "audits/bahasa_arab_y2_unit4_pdp045_060_visual_audit_20261106.json").read_text(encoding="utf-8"))
     assert y2u4["year"] == 2 and y2u4["unit"] == 4 and y2u4["candidate_count"] == 16
     assert y2u4["release_authorized"] is False and y2u4["final_ready"] == 0
@@ -447,7 +447,7 @@ def check() -> None:
         assert len(txt) > 1700 and all(mark in txt for mark in MARKERS)
         assert "أحافظ على الأدوات الدراسية" in txt
         assert r["sp"] in txt and f"**{r['halaman_buku_teks_dicadang']}**" in txt
-    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 266
+    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 282
     y3u3 = json.loads((ROOT / "audits/bahasa_arab_y3_unit3_pdp029_044_visual_source_audit_20261106.json").read_text(encoding="utf-8"))
     assert y3u3["year"] == 3 and y3u3["unit"] == 3 and y3u3["candidate_count"] == 16
     assert y3u3["release_authorized"] is False and y3u3["final_ready"] == 0
@@ -465,7 +465,7 @@ def check() -> None:
         assert len(txt) > 1750 and all(mark in txt for mark in MARKERS)
         assert "الألوان حولنا" in txt and r["sp"] in txt
         assert f"**{r['halaman_buku_teks_dicadang']}**" in txt and "BELUM READY" in txt
-    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 266
+    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 282
     y3u4 = json.loads((ROOT / "audits/bahasa_arab_y3_unit4_pdp045_060_visual_source_audit_20261106.json").read_text(encoding="utf-8"))
     assert y3u4["year"] == 3 and y3u4["unit"] == 4 and y3u4["candidate_count"] == 16
     assert y3u4["release_authorized"] is False and y3u4["final_ready"] == 0
@@ -483,7 +483,7 @@ def check() -> None:
         assert len(txt) > 1750 and all(mark in txt for mark in MARKERS)
         assert "الوقت كالذهب" in txt and r["sp"] in txt
         assert f"**{r['halaman_buku_teks_dicadang']}**" in txt and "BELUM READY" in txt
-    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 266
+    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 282
     y6u2 = json.loads((ROOT / "audits/bahasa_arab_y6_unit2_pdp013_028_2021_text_source_audit_20261106.json").read_text(encoding="utf-8"))
     assert y6u2["year"] == 6 and y6u2["unit"] == 2 and y6u2["candidate_count"] == 16
     assert y6u2["release_authorized"] is False and y6u2["final_ready"] == 0
@@ -492,7 +492,7 @@ def check() -> None:
     assert [r["sp"] for r in y6rows] == [x["book_sp_candidate"] for x in y6u2["items"]]
     assert [r["halaman_buku_teks_dicadang"] for r in y6rows] == [str(x["printed_page"]) for x in y6u2["items"]]
     assert all(x["correct_book_edition"] and not x["teacher_approved"] and not x["ready"] for x in y6u2["items"])
-    assert m["years"]["6"]["source_reviewed_drafts_total"] == 28
+    assert m["years"]["6"]["source_reviewed_drafts_total"] == 44
     assert m["years"]["6"]["textbook"]["drive_file_edition_conflict"]["status"] == "UNSAFE_UNRELATED_OLDER_KSSR_EDITION"
     assert m["years"]["6"]["textbook"]["book_2021_source"]["isbn"] == "978-983-49-3300-5"
     assert readiness["completed"]["year6_unit2_candidate_rph"] == 16
@@ -504,9 +504,27 @@ def check() -> None:
         assert "الشباب أمل الأمة" in txt and r["sp"] in txt
         assert f"**{r['halaman_buku_teks_dicadang']}**" in txt
         assert "BELUM READY" in txt and "jangan guna" in txt
-    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 266
-    print("PASSED: 20 unit indexes; 266 RPH candidates with Year6 Unit2 sourced from correct 2021 ebook, 15 banks.")
-    print("RELEASE BLOCKED: 0 READY; prior 250-file A4 technical CI passed, new 266 pending; RPT/manual/production parity incomplete.")
+    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 282
+    y6u3 = json.loads((ROOT / "audits/bahasa_arab_y6_unit3_pdp029_044_correct2021_text_audit_20261106.json").read_text(encoding="utf-8"))
+    assert y6u3["year"] == 6 and y6u3["unit"] == 3 and y6u3["candidate_count"] == 16
+    assert y6u3["final_ready"] == 0 and y6u3["release_authorized"] is False
+    y6u3rows = read_csv(RPT / "year6_unit3_pdp029_044_DRAF.csv")
+    assert len(y6u3rows) == 16 and [r["pdp"] for r in y6u3rows] == [f"{n:03d}" for n in range(29,45)]
+    assert [r["sp"] for r in y6u3rows] == [x["sp_candidate"] for x in y6u3["items"]]
+    assert [r["halaman_buku_teks_dicadang"] for r in y6u3rows] == [str(x["printed_page"]) for x in y6u3["items"]]
+    assert m["years"]["6"]["source_reviewed_drafts_total"] == 44
+    assert readiness["completed"]["year6_unit3_candidate_rph"] == 16
+    assert readiness["completed"]["verified_a4_render_for_all_282"] is False
+    assert all(not x["ready"] and not x["manual_teacher_approved"] for x in y6u3["items"])
+    for n,r in zip(range(29,45),y6u3rows):
+        txt = (SUBJECT / "year6" / f"lesson_{n:03d}.md").read_text(encoding="utf-8")
+        assert len(txt) > 1850 and all(mark in txt for mark in MARKERS)
+        assert "رحلة سعيدة" in txt and r["sp"] in txt
+        assert f"**{r['halaman_buku_teks_dicadang']}**" in txt
+        assert "BELUM READY" in txt
+    assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 282
+    print("PASSED: 20 unit indexes and 282 RPH candidates, Year6 Units2/3 sourced from 2021 ebook, 15 banks.")
+    print("RELEASE BLOCKED: 0 READY; current 282 preview pending, 2027 RPT/manual/production parity incomplete.")
 
 if __name__ == "__main__":
     check()
