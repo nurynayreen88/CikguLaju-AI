@@ -26,7 +26,7 @@ Guru menilai perubahan tempo, keseragaman pergerakan dan kerjasama dalam dua per
 **Penutup — 2 minit**  
 Kumpulan menerangkan penyesuaian gerak ketika tempo berubah dan memilih satu penambahbaikan.
 
-**Bahan:** Buku teks halaman 21, ruang persembahan, kad urutan dan alat perkusi ringkas; audio belum dipadankan kepada fail.  
+**Bahan:** Buku teks m/s 21, ruang persembahan, kad urutan dan alat perkusi ringkas; guru menyediakan contoh irama melalui tepukan atau ketukan.  
 **Rujukan sumber:** Buku Teks Pendidikan Kesenian Tahun 3 SK (DBP 2018), halaman 21; teks aktiviti disemak terhadap salinan https://anyflip.com/lcinm/flxx/basic. Kod dicetak dalam buku gabungan: 2.2.6; **bukan pengesahan kod DSKP Pendidikan Muzik berdiri sendiri**. Audio tercetak: 16–17 (instrumental lambat/cepat bermetronom); **fail audio/trek belum diperiksa**.
 
 **Catatan pelaksanaan / pemulihan:** __________________________________________
