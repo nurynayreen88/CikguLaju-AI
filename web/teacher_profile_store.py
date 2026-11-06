@@ -22,6 +22,7 @@ STATES = frozenset((
 ))
 SCHEDULE_KEYS = frozenset(("day", "start", "end", "class_name", "subject"))
 PROFILE_KEYS = frozenset(("display_name", "school_name", "state_name", "class_names", "version"))
+AVATAR_CODES = frozenset(("initials", "teacher", "books", "pencil", "graduation", "art", "science", "math", "music", "star", "sun", "flower"))
 SCHEDULE_PUT_KEYS = frozenset(("entries", "version"))
 MAX_RESPONSE = 65536
 TIME = re.compile(r"(?:[01][0-9]|2[0-3]):[0-5][0-9]")
@@ -129,13 +130,16 @@ def _validated_name(value, max_len, label, *, required=False):
 
 
 def clean_profile(form):
-    if not isinstance(form, dict) or set(form) != PROFILE_KEYS:
+    if not isinstance(form, dict) or set(form) not in (PROFILE_KEYS, PROFILE_KEYS | {"avatar_code"}):
         raise ProfileValidation("Maklumat profil tidak lengkap")
     name = _validated_name(form["display_name"], 100, "Nama guru", required=True)
     school = _validated_name(form["school_name"], 160, "Nama sekolah")
     state = _validated_name(form["state_name"], 30, "Negeri")
     if state and state not in STATES:
         raise ProfileValidation("Negeri tidak sah")
+    avatar_code = form.get("avatar_code")
+    if avatar_code is not None and (not isinstance(avatar_code, str) or avatar_code not in AVATAR_CODES):
+        raise ProfileValidation("Pilihan avatar tidak sah")
     classes = form["class_names"]
     if not isinstance(classes, list) or len(classes) > 25:
         raise ProfileValidation("Maksimum 25 kelas")
@@ -150,8 +154,11 @@ def clean_profile(form):
             raise ProfileValidation("Nama kelas berulang")
         cleaned.append(cls)
         seen.add(cls.casefold())
-    return {"display_name": name, "school_name": school,
-            "state_name": state or None, "class_names": cleaned}, _version(form["version"])
+    values = {"display_name": name, "school_name": school,
+              "state_name": state or None, "class_names": cleaned}
+    if avatar_code is not None:
+        values["avatar_code"] = avatar_code
+    return values, _version(form["version"])
 
 
 def clean_schedule(form, class_names):
@@ -232,7 +239,7 @@ def _class_records(record):
 def _profile_record(url, key, uid, *, opener=None):
     return _get_one(
         url, key, "teacher_profiles", uid,
-        "telegram_user_id,display_name,school_name,state_name,class_names,class_profiles,updated_at",
+        "telegram_user_id,display_name,school_name,state_name,avatar_code,class_names,class_profiles,updated_at",
         opener=opener,
     )
 
@@ -255,12 +262,13 @@ def get_profile(url, key, uid, *, opener=None):
     record = _profile_record(url, key, uid, opener=opener)
     if record is None:
         return {"display_name": "Cikgu", "school_name": "",
-                "state_name": "", "class_names": [], "version": ""}
+                "state_name": "", "avatar_code": "initials", "class_names": [], "version": ""}
     classes = [r["name"] for r in _class_records(record)]
     return {
         "display_name": record.get("display_name") or "Cikgu",
         "school_name": record.get("school_name") or "",
         "state_name": record.get("state_name") or "",
+        "avatar_code": record.get("avatar_code") if record.get("avatar_code") in AVATAR_CODES else "initials",
         "class_names": classes,
         "version": record.get("updated_at") or "",
     }

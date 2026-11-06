@@ -20,6 +20,44 @@ const schoolLogoPreview = document.getElementById("school-logo-preview");
 const schoolLogoPlaceholder = document.getElementById("school-logo-placeholder");
 let schoolLogoObjectUrl = null;
 
+const teacherAvatars = Object.freeze({
+  initials:null, teacher:"🧑‍🏫", books:"📚", pencil:"✏️", graduation:"🎓",
+  art:"🎨", science:"🔬", math:"🔢", music:"🎵", star:"⭐",
+  sun:"☀️", flower:"🌷"
+});
+const avatarValue = document.getElementById("profile-avatar-code");
+const avatarOptions = Array.from(document.querySelectorAll("[data-avatar-code]"));
+function teacherInitials(name) {
+  const parts=String(name||"Cikgu").trim().split(/\s+/).filter(Boolean);
+  return parts.slice(0,2).map(part=>part[0].toLocaleUpperCase("ms")).join("") || "CG";
+}
+function showTeacherAvatar(code, name) {
+  const value=Object.hasOwn(teacherAvatars,code)?code:"initials";
+  const sidebar=document.getElementById("sidebar-avatar");
+  if(sidebar) {
+    sidebar.textContent=teacherAvatars[value] || teacherInitials(name);
+    sidebar.classList.toggle("avatar-initials",value==="initials");
+  }
+  const initialsButton=document.querySelector('[data-avatar-code="initials"]');
+  if(initialsButton)initialsButton.textContent=teacherInitials(name);
+}
+function selectTeacherAvatar(code) {
+  const value=Object.hasOwn(teacherAvatars,code)?code:"initials";
+  avatarValue.value=value;
+  for(const button of avatarOptions) {
+    const active=button.dataset.avatarCode===value;
+    button.classList.toggle("is-selected",active);
+    button.setAttribute("aria-pressed",String(active));
+  }
+  showTeacherAvatar(value,document.getElementById("profile-name").value);
+}
+for(const button of avatarOptions) {
+  button.addEventListener("click",()=>selectTeacherAvatar(button.dataset.avatarCode));
+}
+document.getElementById("profile-name").addEventListener("input",()=> {
+  showTeacherAvatar(avatarValue.value,document.getElementById("profile-name").value);
+});
+
 function setTeacherIdentity(profile) {
   // Only use the name explicitly saved in the shared teacher profile.
   // Telegram widget usernames are not substitutes for the teacher's name.
@@ -30,6 +68,7 @@ function setTeacherIdentity(profile) {
   document.getElementById("sidebar-teacher-name").textContent = name;
   document.getElementById("sidebar-school-name").textContent = school;
   document.getElementById("workspace-teacher-name").textContent = name;
+  showTeacherAvatar(profile?.avatar_code || "initials",name);
 }
 
 function setSchoolLogoPreview(blob) {
@@ -135,6 +174,7 @@ function profileEditorData() {
     display_name: document.getElementById("profile-name").value.trim(),
     school_name: document.getElementById("profile-school").value.trim(),
     state_name: document.getElementById("profile-state").value,
+    avatar_code: avatarValue.value,
     class_names: teacherClassLines(),
   };
 }
@@ -262,6 +302,7 @@ async function loadTeacherProfile() {
     document.getElementById("profile-school").value=profile.school_name || "";
     document.getElementById("profile-state").value=profile.state_name || "";
     document.getElementById("profile-classes").value=profile.class_names.join("\n");
+    selectTeacherAvatar(profile.avatar_code || "initials");
     setTeacherIdentity(profile);
     void loadSchoolLogo();
     teacherProfileState.classNames=[...profile.class_names];
@@ -293,6 +334,7 @@ profileForm.addEventListener("submit", async event => {
     display_name:document.getElementById("profile-name").value.trim(),
     school_name:document.getElementById("profile-school").value.trim(),
     state_name:document.getElementById("profile-state").value,
+    avatar_code:avatarValue.value,
     class_names,
     version:teacherProfileState.profileVersion,
   };
