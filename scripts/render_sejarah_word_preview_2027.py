@@ -5,6 +5,9 @@ LibreOffice round-trip PDF page counts are a LAYOUT QA, not teacher approval.
 """
 from __future__ import annotations
 import csv, json, re, shutil, subprocess
+from datetime import date
+from docx.oxml import OxmlElement
+from docx.oxml.ns import qn
 from pathlib import Path
 from docx import Document
 from docx.shared import Mm, Pt
