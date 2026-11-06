@@ -436,6 +436,47 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
         self.assertIn("BUKAN_AKTIVASI", index["scope"])
         self.assertIn("CALON PDP", index["day_status_formula"])
 
+    def test_2027_music_rpt_pdp06_pdp19_have_explicit_anjar_risk(self):
+        import csv
+        calendar = json.loads((MUSIC / "rpt_rph_2027" / "KALENDAR_MINGGU_RPT_2027_INDUK_AUDIT_SNAPSHOT.json").read_text(encoding="utf-8"))
+        day = json.loads((MUSIC / "rpt_rph_2027" / "KALENDAR_2027_HARI_PDP_16_NEGERI_AUDIT.json").read_text(encoding="utf-8"))
+        flagged = 0
+        for year in range(2, 7):
+            directory = MUSIC / "rpt_rph_2027" / f"year{year}"
+            manifest = json.loads((directory / "pdp_manifest.json").read_text(encoding="utf-8"))
+            with (directory / f"RPT_MUZIK_TAHUN_{year}_2027_DRAF.csv").open(encoding="utf-8", newline="") as handle:
+                cells = list(csv.reader(handle))
+            self.assertEqual(len(cells), 36)
+            self.assertIn("AMARAN KALENDAR M06/M19", (directory / f"RPT_MUZIK_TAHUN_{year}_2027_DRAF.md").read_text(encoding="utf-8"))
+            for pdp in range(1, 36):
+                record = manifest["pdps"][pdp-1]
+                ident = f"MZ-Y{year}-{pdp:02d}"
+                self.assertEqual(record["pdp_id"], ident)
+                self.assertEqual(record["rpt2027_slot"]["week"], pdp)
+                self.assertEqual(cells[pdp][0], ident)
+                self.assertEqual(int(cells[pdp][1]), pdp)
+                if pdp in (6, 19):
+                    flagged += 1
+                    self.assertIn("RISIKO CALON HARI PDP 0/16 NEGERI", cells[pdp][-1])
+                    self.assertIn("JANGAN ANJAK AUTOMATIK", cells[pdp][-1])
+                    risk = record["rpt2027_day_audit"]
+                    self.assertEqual(risk["indexed_candidate_days_all_states"], 0)
+                    self.assertEqual(risk["indexed_state_count"], 16)
+                    self.assertTrue(risk["automatic_shift_or_skip_forbidden"])
+                    self.assertTrue(risk["approval"].startswith("DRAF_"))
+                    week = f"M{pdp:02d}"
+                    for group, col in (("A", 2), ("B", 3)):
+                        slot = calendar["weeks"][group][week]
+                        def fmt(iso):
+                            return iso[8:10] + "/" + iso[5:7]
+                        self.assertEqual(cells[pdp][col], fmt(slot["start"]) + "–" + fmt(slot["end"]))
+                        self.assertTrue(all(v["candidate_days_by_week"][week] == 0
+                                            for v in day["states"].values() if v["group"] == group))
+                else:
+                    self.assertNotIn("rpt2027_day_audit", record)
+                    self.assertNotIn("RISIKO CALON HARI PDP 0/16 NEGERI", cells[pdp][-1])
+        self.assertEqual(flagged, 10)
+
     def test_music_staging_source_digest_matches_physical_sources(self):
         """Source hash is integrity-only; it must never grant release access."""
         import hashlib

@@ -38,3 +38,9 @@ Bukti CI terkini:
 8. **Semakan manual dokumen:** lima pasang contoh telah disediakan untuk pemeriksaan ahli kurikulum / pemilik projek; hasilnya belum diberi sign-off.
 
 **Syarat penerbitan:** semua sekatan di atas diputuskan dan direkod, sumber sama digunakan pada Web/Telegram, kemudian CI baharu serta ujian sebenar pengguna staging lulus; barulah PR boleh dipertimbangkan untuk merge mengikut aliran terkawal.
+
+
+## 6 November 2026 — 10 PdP RPT 2027 perlu penjadualan anjal
+- Indeks hari sebenar 16 negeri × 365 hari (5,840 rekod) menunjukkan **M06/PdP06** dan **M19/PdP19** adalah **0 hari calon PdP** bagi semua 16 negeri, mengikut status kalendar bertarikh pembekuan 28 Okt 2026.
+- **10 PdP unik (2 × 5 tahun)** diberi penanda `rpt2027_day_audit` dalam manifest; RPT CSV dan Markdown menerima amaran. **Tiada minggu, tarikh slot, kod SK/SP atau susunan PdP diubah.** Guru mesti sahkan hari sebenar melalui jadual dan negeri. Rujuk `KALENDAR_2027_HARI_PDP_NEGERI_AUDIT_20261106.md`.
+- Data sumber merujuk hari **calon** dan boleh berubah mengikut pengumuman KPM/warta; ini bukan kelulusan automatik RPT atau perubahan produksi.
