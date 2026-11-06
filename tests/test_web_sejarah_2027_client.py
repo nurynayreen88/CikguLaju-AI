@@ -99,8 +99,8 @@ class SejarahClientTest(unittest.TestCase):
         with app.test_client() as client:
             url="/api/web/rph/availability?year=5&subject=SEJARAH&unit=u02&lesson=007"
             account={"telegram_user_id":123,"free_remaining":10}
-            with patch("web.unified_rph_web._account",return_value=(account,None)), \\
-                 patch("web.unified_rph_web._has_paid_access",return_value=True), \\
+            with patch("web.unified_rph_web._account",return_value=(account,None)), \
+                 patch("web.unified_rph_web._has_paid_access",return_value=True), \
                  patch("web.native_telegram_sejarah_2027_client.sejarah_available",
                        return_value=True):
                 response=client.get(url)
@@ -110,7 +110,7 @@ class SejarahClientTest(unittest.TestCase):
                 self.assertEqual(preview.status_code,200)
                 self.assertEqual(preview.json["source"],"telegram-native-sejarah-2027")
                 self.assertEqual(preview.json["status"],"DRAF CADANGAN")
-            with patch("web.unified_rph_web._account",return_value=(account,None)), \\
+            with patch("web.unified_rph_web._account",return_value=(account,None)), \
                  patch("web.unified_rph_web._has_paid_access",return_value=False):
                 response=client.get(url.replace("lesson=007","lesson=008"))
                 self.assertNotEqual(response.status_code,200)
