@@ -173,25 +173,25 @@
       "sp": {
         "1.1.1": "Menyatakan anggota seksual (i) Bibir (ii) Payu dara (iii) Punggung (iv) Zakar (v) Faraj (vi) Dubur",
         "1.1.2": "Mengaplikasikan kemahiran menjaga kehormatan anggota seksual.",
-        "1.1.3": "Menilai kesan sekiranya tidak menjaga kehormatan anggota seksual. 1 Menyatakan contoh anggota seksual.",
+        "1.1.3": "Menilai kesan sekiranya tidak menjaga kehormatan anggota seksual.",
         "1.2.1": "Memahami batas sentuhan pada anggota seksual.",
         "1.2.2": "Menganalisis sentuhan tidak selamat pada anggota seksual mengikut situasi.",
         "1.2.3": "Menjana idea cara melapor kepada orang yang dipercayai sekiranya berlaku sentuhan tidak selamat pada anggota seksual. 1 Menyenaraikan contoh batas sentuhan pada anggota seksual.",
         "2.1.1": "Mengaplikasikan kemahiran berkata TIDAK kepada pelawaan merokok.",
         "2.1.2": "Menganalisis bahaya merokok terhadap kesihatan diri dan persekitaran.",
-        "2.1.3": "Menjana idea cara mengelakkan diri daripada menjadi perokok pasif. . 1 Menyatakan bahaya merokok terhadap kesihatan diri.",
+        "2.1.3": "Menjana idea cara mengelakkan diri daripada menjadi perokok pasif.",
         "3.1.1": "Menjelaskan maksud keyakinan diri.",
         "3.1.2": "Mengaplikasikan cara meningkatkan keyakinan diri dalam kehidupan harian.",
-        "3.1.3": "Menjana idea cara meningkatkan keyakinan diri melalui amalan positif. 1 Menyatakan maksud keyakinan diri.",
+        "3.1.3": "Menjana idea cara meningkatkan keyakinan diri melalui amalan positif.",
         "4.1.1": "Memahami batas sentuhan dalam perhubungan kekeluargaan.",
         "4.1.2": "Mengaplikasikan kemahiran berkata TIDAK kepada sentuhan tidak selamat dalam perhubungan kekeluargaan.",
-        "4.1.3": "Menjana idea kesan tidak menjaga batas sentuhan dalam perhubungan kekeluargaan. 1 Menyatakan maksud keluarga.",
+        "4.1.3": "Menjana idea kesan tidak menjaga batas sentuhan dalam perhubungan kekeluargaan.",
         "5.1.1": "Menerangkan maksud konflik.",
         "5.1.2": "Menganalisis tanda-tanda konflik dengan adik-beradik dan rakan sebaya.",
         "5.1.3": "Mengesyorkan idea sendiri cara mengurus konflik secara berhemah dalam perhubungan dengan adik-beradik dan rakan sebaya. 1 Memberi contoh konflik yang sering berlaku dalam kalangan adik-beradik dan rakan sebaya.",
         "6.1.1": "Menjelaskan tentang penyakit bawaan nyamuk: (i) Demam denggi (ii) Demam malaria",
         "6.1.2": "Mengaplikasikan pengetahuan mengenai cara mencegah pembiakan nyamuk.",
-        "6.1.3": "Mereka cipta bahan maklumat mencegah demam denggi dan demam malaria. 1 Menyatakan simptom demam denggi dan demam malaria.",
+        "6.1.3": "Mereka cipta bahan maklumat mencegah demam denggi dan demam malaria.",
         "7.1.1": "Menyatakan maksud ancaman sekeliling.",
         "7.1.2": "Membincangkan persekitaran yang boleh mengancam keselamatan diri.",
         "7.1.3": "Mengaplikasikan langkah-langkah mengelakkan situasi yang boleh mengancam keselamatan diri.",
@@ -199,11 +199,11 @@
         "8.1.1": "Menyatakan jenis snek berkhasiat.",
         "8.1.2": "Memahami kepentingan snek berkhasiat.",
         "8.1.3": "Mengaplikasikan kemahiran memilih snek berkhasiat.",
-        "8.1.4": "Menilai kesesuaian pengambilan snek berkhasiat dengan mengurangkan kandungan gula, garam dan lemak. 1 Menyatakan maksud snek berkhasiat.",
+        "8.1.4": "Menilai kesesuaian pengambilan snek berkhasiat dengan mengurangkan kandungan gula, garam dan lemak.",
         "9.1.1": "Menyatakan jenis-jenis kecederaan ringan.",
         "9.1.2": "Membincangkan jenis-jenis kecederaan ringan.",
         "9.1.3": "Membincangkan cara memberi bantu mula untuk kecederaan ringan.",
-        "9.1.4": "Mengaplikasi kemahiran bantu mula untuk kecederaan ringan. 1 Menyatakan situasi kecederaan ringan yang sering berlaku."
+        "9.1.4": "Mengaplikasi kemahiran bantu mula untuk kecederaan ringan."
       }
     }
   },
@@ -218,5 +218,64 @@
     "5.3.1",
     "5.1.2",
     "5.1.4"
-  ]
+  ],
+  "extraction_corrections": [
+    {
+      "component": "PK",
+      "sp_code": "1.1.3",
+      "original_dskp_extraction": "Menilai kesan sekiranya tidak menjaga kehormatan anggota seksual. 1 Menyatakan contoh anggota seksual.",
+      "removed_standard_prestasi_text": "1 Menyatakan contoh anggota seksual.",
+      "corrected_sp_text": "Menilai kesan sekiranya tidak menjaga kehormatan anggota seksual.",
+      "reason": "Extracted PDF table merged SP with Standard Prestasi Tahap 1. Only first SP sentence retained."
+    },
+    {
+      "component": "PK",
+      "sp_code": "2.1.3",
+      "original_dskp_extraction": "Menjana idea cara mengelakkan diri daripada menjadi perokok pasif. . 1 Menyatakan bahaya merokok terhadap kesihatan diri.",
+      "removed_standard_prestasi_text": "1 Menyatakan bahaya merokok terhadap kesihatan diri.",
+      "corrected_sp_text": "Menjana idea cara mengelakkan diri daripada menjadi perokok pasif.",
+      "reason": "Extracted PDF table merged SP with Standard Prestasi Tahap 1. Only first SP sentence retained."
+    },
+    {
+      "component": "PK",
+      "sp_code": "3.1.3",
+      "original_dskp_extraction": "Menjana idea cara meningkatkan keyakinan diri melalui amalan positif. 1 Menyatakan maksud keyakinan diri.",
+      "removed_standard_prestasi_text": "1 Menyatakan maksud keyakinan diri.",
+      "corrected_sp_text": "Menjana idea cara meningkatkan keyakinan diri melalui amalan positif.",
+      "reason": "Extracted PDF table merged SP with Standard Prestasi Tahap 1. Only first SP sentence retained."
+    },
+    {
+      "component": "PK",
+      "sp_code": "4.1.3",
+      "original_dskp_extraction": "Menjana idea kesan tidak menjaga batas sentuhan dalam perhubungan kekeluargaan. 1 Menyatakan maksud keluarga.",
+      "removed_standard_prestasi_text": "1 Menyatakan maksud keluarga.",
+      "corrected_sp_text": "Menjana idea kesan tidak menjaga batas sentuhan dalam perhubungan kekeluargaan.",
+      "reason": "Extracted PDF table merged SP with Standard Prestasi Tahap 1. Only first SP sentence retained."
+    },
+    {
+      "component": "PK",
+      "sp_code": "6.1.3",
+      "original_dskp_extraction": "Mereka cipta bahan maklumat mencegah demam denggi dan demam malaria. 1 Menyatakan simptom demam denggi dan demam malaria.",
+      "removed_standard_prestasi_text": "1 Menyatakan simptom demam denggi dan demam malaria.",
+      "corrected_sp_text": "Mereka cipta bahan maklumat mencegah demam denggi dan demam malaria.",
+      "reason": "Extracted PDF table merged SP with Standard Prestasi Tahap 1. Only first SP sentence retained."
+    },
+    {
+      "component": "PK",
+      "sp_code": "8.1.4",
+      "original_dskp_extraction": "Menilai kesesuaian pengambilan snek berkhasiat dengan mengurangkan kandungan gula, garam dan lemak. 1 Menyatakan maksud snek berkhasiat.",
+      "removed_standard_prestasi_text": "1 Menyatakan maksud snek berkhasiat.",
+      "corrected_sp_text": "Menilai kesesuaian pengambilan snek berkhasiat dengan mengurangkan kandungan gula, garam dan lemak.",
+      "reason": "Extracted PDF table merged SP with Standard Prestasi Tahap 1. Only first SP sentence retained."
+    },
+    {
+      "component": "PK",
+      "sp_code": "9.1.4",
+      "original_dskp_extraction": "Mengaplikasi kemahiran bantu mula untuk kecederaan ringan. 1 Menyatakan situasi kecederaan ringan yang sering berlaku.",
+      "removed_standard_prestasi_text": "1 Menyatakan situasi kecederaan ringan yang sering berlaku.",
+      "corrected_sp_text": "Mengaplikasi kemahiran bantu mula untuk kecederaan ringan.",
+      "reason": "Extracted PDF table merged SP with Standard Prestasi Tahap 1. Only first SP sentence retained."
+    }
+  ],
+  "extraction_quality_status": "DRAF_REQUIRES_SOURCE_PAGE_REVIEW"
 }
