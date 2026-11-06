@@ -5,7 +5,7 @@ import unittest
 from pathlib import Path
 
 from pypdf import PdfReader
-from rpt_2027.common.format_2026_layout_preview import build_preview, validate_rows
+from rpt_2027.common.format_2026_layout_preview import build_preview, validate_rows, normalize_pdf_text
 from scripts.build_rpt_2027_standard_preview import (
     build_all, moral_records, psv_records, rbt_records
 )
@@ -101,6 +101,15 @@ class RPT2026LayoutQA(unittest.TestCase):
                     self.assertNotIn(".. Buku teks:",body)
                     self.assertNotIn(".. Tarikh",body)
             self.assertEqual(counts,{"psv":5,"rbt":3,"moral":5})
+
+    def test_dskp_private_use_bullets_do_not_render_as_blank_glyphs(self):
+        self.assertEqual(normalize_pdf_text("A\uf0b7 B"), "A •  B")
+        self.assertEqual(normalize_pdf_text("A\uf02d B"), "A  -  B")
+        self.assertEqual(normalize_pdf_text("Line 1\\nLine 2"), "Line 1\\nLine 2")
+        with self.assertRaises(ValueError):
+            normalize_pdf_text("Unknown \ue000 character")
+        with self.assertRaises(ValueError):
+            normalize_pdf_text("Invalid \\x00 character")
 
     def test_school_cover_fields_and_optional_logo_image(self):
         from PIL import Image as PILImage
