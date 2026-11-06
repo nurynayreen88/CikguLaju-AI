@@ -142,7 +142,7 @@ def build_queue(rows, generated=None):
 def validated_staging_drafts():
     """Claim only verified CI-generated Word/PDF sources from the exact staging run.
 
-    Year 3 remains prior-stage source with separate CI checks. New Year2/4
+    Year 3 remains prior-stage source with separate CI checks. New Year2/4/5
     files must have manifest + pagination evidence and an intact source set.
     """
     specifications = [
@@ -152,6 +152,9 @@ def validated_staging_drafts():
         (4, 79, ROOT/"build/sains_y4_79_rph_DRAF_20261107",
          "SAINS_Y4_79_MANIFEST_DRAF.csv", "WORD_PRINT_QA.json",
          "one_page_pass", "pdp_code", "SAINS_T4_PDP_"),
+        (5, 83, ROOT/"build/sains_y5_83_rph_DRAF_20261107",
+         "SAINS_Y5_83_MANIFEST_DRAF.csv", "WORD_PRINT_QA.json",
+         "one_page_pass", "pdp_code", "SAINS_T5_PDP_"),
     ]
     validated={}
     for year, count, folder, ledger_name, qa_name, pass_key, code_key, stem in specifications:
@@ -202,11 +205,14 @@ def main():
         "existing_year3_draft": 45,
         "new_year2_word_pdf_a4_draft": len(generated[2]),
         "new_year4_word_pdf_a4_draft": len(generated[4]),
-        "total_year2_year3_year4_staging_draft": 45+len(generated[2])+len(generated[4]),
-        "standalone_drafts_not_yet_built_year5_year6": EXPECTED[5]+EXPECTED[6],
+        "new_year5_word_pdf_a4_draft": len(generated[5]),
+        "total_year2_year3_year4_year5_staging_draft": (
+            45+len(generated[2])+len(generated[4])+len(generated[5])
+        ),
+        "standalone_drafts_not_yet_built_year6": EXPECTED[6],
         "all_year2_to_year6_academic_signoff_missing": 342,
         "historical_original_297_standalone_unverified": 297,
-        "not_yet_individually_audited_standalone": EXPECTED[5]+EXPECTED[6],
+        "standalone_not_built": EXPECTED[6],
         "academic_ready": 0,
         "year1": "OUT_OF_SCOPE_KP2027_ALAM_DAN_MANUSIA",
         "decision": "HOLD",
@@ -224,8 +230,8 @@ def main():
         json.dumps(summary, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    print("SAINS_RPH80_STAGING: 342 source PdP; Y2=51 Y3=45 Y4=79 "
-          "RPH DRAF (175 total); Y5/Y6=167 not yet drafted; "
+    print("SAINS_RPH80_STAGING: 342 source PdP; Y2=51 Y3=45 Y4=79 Y5=83 "
+          "RPH DRAF (258 total); Y6=84 not yet drafted; "
           "0 academic quality percentages certified; HOLD")
 
 
