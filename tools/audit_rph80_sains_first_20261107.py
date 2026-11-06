@@ -29,7 +29,7 @@ BASELINE_EVIDENCE = {
     "other_years_missing_individual_standalone_qa": 297,
     "academically_signed_off": 0,
 }
-PRIORITY = {6: 0, 4: 1, 2: 2, 5: 3, 3: 4}
+PRIORITY = {6: 0, 5: 1, 4: 2, 2: 3, 3: 4}
 COLS = (
     "priority", "tahun", "pdp_code", "pdp_number", "unit", "sp", "tajuk",
     "source_status", "quality_percent", "dskp_check", "textbook_check",
@@ -61,10 +61,11 @@ def grade_from_evidence(scores, evidence):
     return sum(scores.values())
 
 
-def build_queue(rows):
+def build_queue(rows, generated=None):
     """Build the per-PdP edit/review queue; preserve all original SK/SP/title."""
     if not isinstance(rows, list) or len(rows) != 342:
         raise ValueError("Expected immutable 342 source PdP rows")
+    generated = generated or {}
     seen = set()
     counts = Counter()
     results = []
@@ -82,7 +83,12 @@ def build_queue(rows):
             raise ValueError("Incomplete source identity: " + code)
         seen.add(code)
         counts[y] += 1
-        if y == 3:
+        has_staged_doc = code in generated.get(y, set())
+        if has_staged_doc:
+            status = "STAGING_STANDALONE_DOCX_PDF_A4_PASS__ACADEMIC_HOLD"
+            action = ("Sahkan Buku Teks asal secara visual, audit tugasan guru/murid "
+                      "dan PBD, dapatkan semakan akademik, kemudian uji akses Telegram-Web")
+        elif y == 3:
             status = "EXISTING_45_DRAFTS_NEED_INDIVIDUAL_ACADEMIC_QA"
             action = ("Semak tugasan guru/murid, bukti PBD dan 23 sempadan PdP; "
                       "sahkan halaman buku secara visual dan uji Word/PDF serta Web")
@@ -110,8 +116,10 @@ def build_queue(rows):
             "quality_percent": "",  # deliberately NOT measured yet
             "dskp_check": "TOKEN_ONLY" if y != 6 else "MIRROR_ONLY",
             "textbook_check": "VISUAL_PENDING",
-            "activities_pbd_check": "DRAFT_YEAR3" if y == 3 else "UNVERIFIED",
-            "word_pdf_check": "YEAR3_45_CI_ONLY" if y == 3 else "UNVERIFIED",
+            "activities_pbd_check": ("SOURCE_SPECIFIC_DRAFT_ACADEMIC_QA_PENDING"
+                if has_staged_doc else "DRAFT_YEAR3" if y == 3 else "UNVERIFIED"),
+            "word_pdf_check": ("WORD_AND_PDF_SINGLE_A4_STAGING_PASS"
+                if has_staged_doc else "YEAR3_45_CI_ONLY" if y == 3 else "UNVERIFIED"),
             "telegram_web_check": "NOT_E2E_TESTED",
             "teacher_signoff": "MISSING",
             "blocking_issues": row["isu"],
@@ -125,11 +133,49 @@ def build_queue(rows):
     return results
 
 
+def validated_staging_drafts():
+    """Claim only verified CI-generated Word/PDF sources from the exact staging run.
+
+    Year 3 remains prior-stage source with separate CI checks. New Year2/4
+    files must have manifest + pagination evidence and an intact source set.
+    """
+    specifications = [
+        (2, 51, ROOT/"build/sains_y2_51_rph_DRAF_20261107",
+         "RPH_Y2_51_MANIFEST_DRAF.csv", "WORD_PRINT_PAGINATION_QA.json",
+         "one_page", "pdp_code", "SAINS_T2_PDP_"),
+        (4, 79, ROOT/"build/sains_y4_79_rph_DRAF_20261107",
+         "SAINS_Y4_79_MANIFEST_DRAF.csv", "WORD_PRINT_QA.json",
+         "one_page_pass", "pdp_code", "SAINS_T4_PDP_"),
+    ]
+    validated={}
+    for year, count, folder, ledger_name, qa_name, pass_key, code_key, stem in specifications:
+        ledger=folder/ledger_name
+        qa_path=folder/qa_name
+        if not ledger.is_file() or not qa_path.is_file():
+            raise RuntimeError(f"Year{year} draft manifest/Word print QA is missing")
+        with ledger.open(encoding="utf-8-sig",newline="") as file:
+            rows=list(csv.DictReader(file))
+        codes={r[code_key] for r in rows}
+        expected_codes={f"SCI-Y{year}-PDP-{i:03d}" for i in range(1,count+1)}
+        if len(rows)!=count or codes!=expected_codes:
+            raise RuntimeError(f"Year{year} manifest is incomplete or duplicated")
+        for i in range(1,count+1):
+            for ext in (".docx",".pdf",".md"):
+                if not (folder/(stem+f"{i:03d}_DRAF"+ext)).is_file():
+                    raise RuntimeError(f"Year{year} staging RPH file missing {i} {ext}")
+        qa=json.loads(qa_path.read_text(encoding="utf-8"))
+        if qa.get("year")!=year or qa.get(pass_key)!=count or qa.get("overflow"):
+            raise RuntimeError(f"Year{year} print QA failed or is unproven")
+        validated[year]=codes
+    return validated
+
+
 def main():
     # Generated from the staged v25.82 immutable source, not a production DB.
     from tools.audit_sains_342_pdp_release_gate_20261106 import analyze
     rows, source = analyze()
-    queue = build_queue(rows)
+    generated=validated_staging_drafts()
+    queue = build_queue(rows, generated=generated)
     OUT.mkdir(parents=True, exist_ok=True)
     with (OUT / "SAINS_342_QUALITY_REVIEW_QUEUE.csv").open(
             "w", newline="", encoding="utf-8-sig") as handle:
@@ -139,7 +185,7 @@ def main():
     summary = {
         "date": "2026-11-07",
         "scope": "SAINS_Y2_Y6_STAGING_SOURCE_NOT_PRODUCTION",
-        "priority_order_years": [6, 4, 2, 5, 3],
+        "priority_order_years": [6, 5, 4, 2, 3],
         "rubric_percent": WEIGHTS,
         "target_quality_percent": 80,
         "quality_scores_verified": 0,
@@ -148,7 +194,13 @@ def main():
         "reviewed_source_ids": len(queue),
         "year_counts": {str(k): EXPECTED[k] for k in EXPECTED},
         "existing_year3_draft": 45,
-        "not_yet_individually_audited_standalone": 297,
+        "new_year2_word_pdf_a4_draft": len(generated[2]),
+        "new_year4_word_pdf_a4_draft": len(generated[4]),
+        "total_year2_year3_year4_staging_draft": 45+len(generated[2])+len(generated[4]),
+        "standalone_drafts_not_yet_built_year5_year6": EXPECTED[5]+EXPECTED[6],
+        "all_year2_to_year6_academic_signoff_missing": 342,
+        "historical_original_297_standalone_unverified": 297,
+        "not_yet_individually_audited_standalone": EXPECTED[5]+EXPECTED[6],
         "academic_ready": 0,
         "year1": "OUT_OF_SCOPE_KP2027_ALAM_DAN_MANUSIA",
         "decision": "HOLD",
@@ -166,8 +218,9 @@ def main():
         json.dumps(summary, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    print("SAINS_RPH80_STAGING: 342 source entries, 45 Y3 draft, "
-          "297 individual RPH QA missing; 0 quality percentages certified; HOLD")
+    print("SAINS_RPH80_STAGING: 342 source PdP; Y2=51 Y3=45 Y4=79 "
+          "RPH DRAF (175 total); Y5/Y6=167 not yet drafted; "
+          "0 academic quality percentages certified; HOLD")
 
 
 if __name__ == "__main__":
