@@ -16,7 +16,7 @@
 
 **Aktiviti 2 — Aplikasi dan amali (10 minit):** Setiap kumpulan menyusun kad ikon, memainkan corak melalui alat improvisasi dan bertukar hasil ciptaan dengan kumpulan lain.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak logik pola, kerjasama dan ketepatan irama; jangan gunakan audio lagu halaman 26 sebagai bukti audio halaman 27.
+**Pengukuhan dan pentaksiran (6 minit):** Guru menyemak susunan pola, kerjasama dan ketepatan irama yang dimainkan murid secara berkumpulan.
 
 **Penutup (2 minit):** Murid memperagakan satu kemahiran muzik dan menyatakan satu perkara yang boleh ditambah baik; guru membuat rekod PBD.
 
