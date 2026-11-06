@@ -20,6 +20,11 @@ class ActivityHeadingTypographyTests(unittest.TestCase):
             "Aktiviti 3 — Pentaksiran",
             "Aktiviti 4 - Refleksi",
             "Aktiviti 1 :",
+            "Aktiviti 1",
+            "Aktiviti 2",
+            "Aktiviti 1 (15 minit) — Guru menunjukkan bahan",
+            "Aktiviti 2 (20 minit)",
+            "Activity 1 (10 minutes) - Guided Practice",
             "Activity 1: Guided Practice",
             "2. Aktiviti 2: Demonstrasi",
         ):

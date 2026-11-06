@@ -16,8 +16,9 @@ from pathlib import Path
 # of an activity must never become bold.
 HEADING = re.compile(
     r"^[ \t]*(?:(?:\d{1,2})[.)][ \t]*)?"
-    r"(?:Aktiviti|Activity)[ \t]+[1-9]\d{0,2}[ \t]*"
-    r"(?:[:：]|[–—-])[ \t]*(?:\S.*)?$",
+    r"(?:Aktiviti|Activity)[ \t]+[1-9]\d{0,2}"
+    r"(?:[ \t]*\([ \t]*[1-9]\d{0,2}[ \t]*(?:minit|minutes?|mins?)[ \t]*\))?"
+    r"(?:[ \t]*(?:[:：]|[–—-])[ \t]*.*)?[ \t]*$",
     flags=re.IGNORECASE,
 )
 
