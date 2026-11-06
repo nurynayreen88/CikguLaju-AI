@@ -165,7 +165,6 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 .app-sidebar{top:20px;border-radius:21px;border-color:#d7e8ee;box-shadow:0 14px 34px #0d35550e;padding:19px 14px}
 .app-main{border-radius:21px;border-color:#d7e8ee;box-shadow:0 14px 34px #0d35550e}
 .sidebar-brand{gap:12px;padding:8px 7px 20px;margin-bottom:18px;min-width:0}
-.sidebar-avatar{width:50px;height:50px;flex:none;display:grid;place-items:center;border-radius:15px;background:linear-gradient(135deg,#d5f3ed,#dbeafb);color:#17685f;font-size:.95rem;font-weight:850;box-shadow:inset 0 0 0 1px #c8e4e5}
 .sidebar-teacher{min-width:0}
 #sidebar-teacher-name{font-size:1.03rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:145px;color:#193f51}
 #sidebar-school-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:145px;color:#597989}
@@ -261,19 +260,6 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 @media screen and (min-width:761px){.rpt-phone-help{display:none}}
 </style>
 <style>
-.teacher-avatar-fieldset{margin:20px 0;padding:17px;border:1px solid #d0e3e8;border-radius:15px;background:#f9fcfd;min-width:0}
-.teacher-avatar-fieldset legend{font-weight:800;color:#1c5267;padding:0 6px}
-.teacher-avatar-fieldset p{margin:4px 0 14px}
-.teacher-avatar-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;max-width:480px}
-.teacher-avatar-option{aspect-ratio:1/1;min-width:0;background:white;border:2px solid #d3e3e8;border-radius:15px;font-size:1.65rem;cursor:pointer;display:grid;place-items:center;transition:border-color .12s,background .12s;font-family:inherit;color:#1b605e}
-.teacher-avatar-option[data-avatar-code="initials"]{font-size:1.05rem;font-weight:850}
-.teacher-avatar-option.is-selected{border-color:#087568;background:#e1f5ee;box-shadow:inset 0 0 0 1px #087568}
-.teacher-avatar-option:focus-visible{outline:3px solid #f1b93e;outline-offset:3px}
-@media(max-width:530px){.teacher-avatar-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}}
-#sidebar-avatar{font-size:1.7rem;line-height:1}
-#sidebar-avatar.avatar-initials{font-size:.95rem}
-</style>
-<style>
 /* RPH Hari Ini: grouped by saved, non-overlapping timetable periods. */
 .daily-rph-toolbar{display:flex;gap:12px;align-items:flex-end;flex-wrap:wrap;margin:15px 0}
 .daily-rph-toolbar input{border:1px solid #c2d9d0;padding:11px 12px;border-radius:10px;font:inherit}
@@ -331,7 +317,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <section id="workspace" class="panel" hidden>
 <div class="app-shell">
 <aside class="app-sidebar" aria-label="Navigasi CikguLaju Web">
-  <div class="sidebar-brand"><div id="sidebar-avatar" class="sidebar-avatar" aria-hidden="true">CG</div><div class="sidebar-teacher"><strong id="sidebar-teacher-name">Cikgu</strong><span id="sidebar-school-name">Ruang Guru</span></div></div>
+  <div class="sidebar-brand"><div class="sidebar-teacher"><strong id="sidebar-teacher-name">Cikgu</strong><span id="sidebar-school-name">Ruang Guru</span></div></div>
   <nav class="sidebar-menu" aria-label="Menu utama">
     <button type="button" class="sidebar-tab is-active" data-web-view="today" aria-controls="view-today" aria-current="page"><span aria-hidden="true">📆</span> RPH Hari Ini</button>
     <button type="button" class="sidebar-tab" data-web-view="rph" aria-controls="view-rph"><span aria-hidden="true">📘</span> Sediakan RPH</button>
@@ -386,25 +372,6 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
       <option>Terengganu</option><option>Kuala Lumpur</option><option>Putrajaya</option><option>Labuan</option><option>W.P. Kuala Lumpur</option><option>W.P. Putrajaya</option><option>W.P. Labuan</option>
     </select></div>
   </div>
-  <fieldset class="teacher-avatar-fieldset" aria-labelledby="profile-avatar-heading">
-    <legend id="profile-avatar-heading">Pilih Avatar Guru</legend>
-    <p class="notice">Pilih salah satu avatar. Pilihan ini akan dipaparkan di sebelah nama guru selepas disimpan.</p>
-    <input id="profile-avatar-code" name="avatar_code" type="hidden" value="initials">
-    <div class="teacher-avatar-grid" id="teacher-avatar-options" role="group" aria-label="Pilihan avatar">
-      <button type="button" class="teacher-avatar-option is-selected" data-avatar-code="initials" aria-pressed="true" aria-label="Avatar huruf nama">AB</button>
-      <button type="button" class="teacher-avatar-option" data-avatar-code="teacher" aria-pressed="false" aria-label="Avatar guru">🧑‍🏫</button>
-      <button type="button" class="teacher-avatar-option" data-avatar-code="books" aria-pressed="false" aria-label="Avatar buku">📚</button>
-      <button type="button" class="teacher-avatar-option" data-avatar-code="pencil" aria-pressed="false" aria-label="Avatar pensel">✏️</button>
-      <button type="button" class="teacher-avatar-option" data-avatar-code="graduation" aria-pressed="false" aria-label="Avatar graduasi">🎓</button>
-      <button type="button" class="teacher-avatar-option" data-avatar-code="art" aria-pressed="false" aria-label="Avatar seni">🎨</button>
-      <button type="button" class="teacher-avatar-option" data-avatar-code="science" aria-pressed="false" aria-label="Avatar sains">🔬</button>
-      <button type="button" class="teacher-avatar-option" data-avatar-code="math" aria-pressed="false" aria-label="Avatar matematik">🔢</button>
-      <button type="button" class="teacher-avatar-option" data-avatar-code="music" aria-pressed="false" aria-label="Avatar muzik">🎵</button>
-      <button type="button" class="teacher-avatar-option" data-avatar-code="star" aria-pressed="false" aria-label="Avatar bintang">⭐</button>
-      <button type="button" class="teacher-avatar-option" data-avatar-code="sun" aria-pressed="false" aria-label="Avatar matahari">☀️</button>
-      <button type="button" class="teacher-avatar-option" data-avatar-code="flower" aria-pressed="false" aria-label="Avatar bunga">🌷</button>
-    </div>
-  </fieldset>
   <section class="school-logo-card" aria-labelledby="school-logo-heading">
     <div class="school-logo-preview"><img id="school-logo-preview" alt="Logo sekolah tersimpan" hidden><span id="school-logo-placeholder">LOGO<br>SEKOLAH</span></div>
     <div class="school-logo-content"><h4 id="school-logo-heading">Logo Sekolah</h4><p>Tambahkan logo sekolah untuk dimasukkan secara automatik bersama nama sekolah pada muka depan RPT yang dimuat turun.</p>
@@ -1257,7 +1224,7 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/rph-today.js?v=all-slots-one-jana-bahan-20261106"></script>
-<script src="/assets/teacher-profile.js?v=avatar-picker-20261106"></script>
+<script src="/assets/teacher-profile.js?v=profile-no-avatar-20261106"></script>
 <script src="/assets/web-payment.js?v=rakan-only-percent-20261106"></script>
 <script src="/assets/web-referral.js?v=20261106"></script>
 </body>
