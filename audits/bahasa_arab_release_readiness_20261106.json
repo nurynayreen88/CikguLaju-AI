@@ -51,8 +51,9 @@
     "year6_unit4_candidate_rph": 16,
     "verified_a4_render_for_all_298": true,
     "year2_sp_book_html_code_corroborated": 2,
-    "year2_sp_book_visual_confirmed": 4,
-    "year2_original_book_edition_pdf_visual_verified": true
+    "year2_sp_book_visual_confirmed": 12,
+    "year2_original_book_edition_pdf_visual_verified": true,
+    "year2_unit1_all_12_sp_print_codes_visual_verified": true
   },
   "release_checks": [
     {
@@ -73,7 +74,7 @@
     {
       "id": "sk_sp",
       "status": "PARTIAL",
-      "detail": "Semua 298 RPH calon mempunyai rujukan SK/SP. Empat kod buku Tahun 2 Unit 1 (PdP002,004,010,011) yang dahulunya kabur dalam OCR kini dibaca terus pada imej Buku Teks asal DBP/KPM 2017 (hlm 2/4/11/17). Keempat-empatnya disahkan pada tahap kod sumber, tetapi tiada kelulusan pedagogi individu, pembetulan harakat menyeluruh atau RPT 2027 final."
+      "detail": "Tahun 2 Unit 1: 12/12 SP PdP001–012 visually checked in printed teacher-guide panels of original DBP/KPM 2017 textbook PDF; SP source evidence only. All 298 RPH still need linguistic/pedagogic individual approval and full RPT2027 verification."
     },
     {
       "id": "textbook_page_to_pdp",
@@ -259,7 +260,7 @@
   "telegram_live_touched": false,
   "web_live_touched": false,
   "release_next_actions": [
-    "Empat kes Tahun 2 PdP002/004/010/011 telah disahkan kod SP pada imej asal buku. Baki: pengesahan pedagogi, bahasa Arab, RPT, dan semakan individu 298 RPH; jangan anggap empat kod buku ini sebagai empat RPH FINAL READY.",
+    "Year2 Unit1 12/12 source printed SP checks completed by original PDF visual audit. Proceed with pedagogic/language/PBD, remaining units, annual RPT2027 and Telegram-Web release gates; keep 0 READY.",
     "Semak penuh semua 298 calon RPH satu persatu dari segi tatabahasa Arab, harakat, objektif, aktiviti, PBD, SK/SP dan muka surat buku asal.",
     "Tahun 6 sudah mempunyai 60 draf 4 unit berpandukan eBook DBP/KPM 2021 yang betul; sahkan imej halaman penuh, bukan PDF enam unit lama di Drive.",
     "Sahkan bilangan dan urutan PdP tahunan Tahun 2–6 berbanding RPT 2026/DSKP, termasuk agihan waktu rasmi; jangan reka tarikh.",
