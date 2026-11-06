@@ -15,21 +15,23 @@
   "modul": [
     {
       "unit": 1,
-      "tajuk": "Artikel Jahitan",
+      "tajuk": "Teknologi Rumah Tangga",
       "sk": [
         "4.3"
       ],
       "jam_dskp": 6,
-      "pdp_cadangan": 6
+      "pdp_cadangan": 6,
+      "subtopik_sp": "Artikel Jahitan"
     },
     {
       "unit": 2,
-      "tajuk": "Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu",
+      "tajuk": "Aplikasi Reka Bentuk Teknologi Kejuruteraan",
       "sk": [
         "5.1"
       ],
       "jam_dskp": 6,
-      "pdp_cadangan": 6
+      "pdp_cadangan": 6,
+      "subtopik_sp": "Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu"
     },
     {
       "unit": 3,
@@ -39,16 +41,18 @@
         "6.4"
       ],
       "jam_dskp": 12,
-      "pdp_cadangan": 12
+      "pdp_cadangan": 12,
+      "subtopik_sp": "Reka Bentuk Pengaturcaraan"
     },
     {
       "unit": 4,
-      "tajuk": "Teknologi Pertanian Bandar",
+      "tajuk": "Teknologi Pertanian",
       "sk": [
         "7.1"
       ],
       "jam_dskp": 8,
-      "pdp_cadangan": 8
+      "pdp_cadangan": 8,
+      "subtopik_sp": "Teknologi Pertanian Bandar"
     }
   ],
   "pelajaran": [
@@ -60,7 +64,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 1,
-      "unit_label": "Unit 1: Artikel Jahitan",
+      "unit_label": "Unit 1: Teknologi Rumah Tangga",
       "tajuk": "PdP 001: fungsi alatan jahitan",
       "sk": [
         "4.3"
@@ -130,7 +134,8 @@
       "artefak_khusus": "pola berukuran, anggaran kos dan produk jahitan",
       "rubrik_pbd_khusus": "ketepatan pola, sambungan kemas dan keselamatan jarum",
       "contoh_projek_cikgulaju": "artikel jahitan sarung botol air",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Artikel Jahitan"
     },
     {
       "pdp": 2,
@@ -140,7 +145,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 1,
-      "unit_label": "Unit 1: Artikel Jahitan",
+      "unit_label": "Unit 1: Teknologi Rumah Tangga",
       "tajuk": "PdP 002: reka bentuk artikel jahitan yang akan dihasilkan",
       "sk": [
         "4.3"
@@ -205,7 +210,8 @@
       "artefak_khusus": "pola berukuran, anggaran kos dan produk jahitan",
       "rubrik_pbd_khusus": "ketepatan pola, sambungan kemas dan keselamatan jarum",
       "contoh_projek_cikgulaju": "artikel jahitan sarung botol air",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Artikel Jahitan"
     },
     {
       "pdp": 3,
@@ -215,7 +221,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 1,
-      "unit_label": "Unit 1: Artikel Jahitan",
+      "unit_label": "Unit 1: Teknologi Rumah Tangga",
       "tajuk": "PdP 003: lakaran yang dipilih dan membuat penambahbaikan",
       "sk": [
         "4.3"
@@ -280,7 +286,8 @@
       "artefak_khusus": "pola berukuran, anggaran kos dan produk jahitan",
       "rubrik_pbd_khusus": "ketepatan pola, sambungan kemas dan keselamatan jarum",
       "contoh_projek_cikgulaju": "artikel jahitan sarung botol air",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Artikel Jahitan"
     },
     {
       "pdp": 4,
@@ -290,7 +297,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 1,
-      "unit_label": "Unit 1: Artikel Jahitan",
+      "unit_label": "Unit 1: Teknologi Rumah Tangga",
       "tajuk": "PdP 004: dan membuat anggaran kos bahan bagi menghasilkan artikel jahitan",
       "sk": [
         "4.3"
@@ -355,7 +362,8 @@
       "artefak_khusus": "pola berukuran, anggaran kos dan produk jahitan",
       "rubrik_pbd_khusus": "ketepatan pola, sambungan kemas dan keselamatan jarum",
       "contoh_projek_cikgulaju": "artikel jahitan sarung botol air",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Artikel Jahitan"
     },
     {
       "pdp": 5,
@@ -365,7 +373,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 1,
-      "unit_label": "Unit 1: Artikel Jahitan",
+      "unit_label": "Unit 1: Teknologi Rumah Tangga",
       "tajuk": "PdP 005: artikel jahitan secara sistematik dan menggunakan bahan serta alatan yang sesuai",
       "sk": [
         "4.3"
@@ -430,7 +438,8 @@
       "artefak_khusus": "pola berukuran, anggaran kos dan produk jahitan",
       "rubrik_pbd_khusus": "ketepatan pola, sambungan kemas dan keselamatan jarum",
       "contoh_projek_cikgulaju": "artikel jahitan sarung botol air",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Artikel Jahitan"
     },
     {
       "pdp": 6,
@@ -440,7 +449,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 1,
-      "unit_label": "Unit 1: Artikel Jahitan",
+      "unit_label": "Unit 1: Teknologi Rumah Tangga",
       "tajuk": "PdP 006: pembentangan artikel jahitan yang telah dihasilkan",
       "sk": [
         "4.3"
@@ -505,7 +514,8 @@
       "artefak_khusus": "pola berukuran, anggaran kos dan produk jahitan",
       "rubrik_pbd_khusus": "ketepatan pola, sambungan kemas dan keselamatan jarum",
       "contoh_projek_cikgulaju": "artikel jahitan sarung botol air",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Artikel Jahitan"
     },
     {
       "pdp": 7,
@@ -515,7 +525,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 2,
-      "unit_label": "Unit 2: Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu",
+      "unit_label": "Unit 2: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
       "tajuk": "PdP 007: kepentingan tenaga boleh baharu dalam kehidupan",
       "sk": [
         "5.1"
@@ -585,7 +595,8 @@
       "artefak_khusus": "lakaran, kos bahan dan keputusan ujian di bawah sumber cahaya",
       "rubrik_pbd_khusus": "sumber tenaga boleh baharu, kestabilan model dan keselamatan sambungan",
       "contoh_projek_cikgulaju": "model kipas kecil menggunakan sel solar",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu"
     },
     {
       "pdp": 8,
@@ -595,7 +606,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 2,
-      "unit_label": "Unit 2: Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu",
+      "unit_label": "Unit 2: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
       "tajuk": "PdP 008: reka bentuk produk yang menggunakan tenaga boleh baharu",
       "sk": [
         "5.1"
@@ -660,7 +671,8 @@
       "artefak_khusus": "lakaran, kos bahan dan keputusan ujian di bawah sumber cahaya",
       "rubrik_pbd_khusus": "sumber tenaga boleh baharu, kestabilan model dan keselamatan sambungan",
       "contoh_projek_cikgulaju": "model kipas kecil menggunakan sel solar",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu"
     },
     {
       "pdp": 9,
@@ -670,7 +682,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 2,
-      "unit_label": "Unit 2: Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu",
+      "unit_label": "Unit 2: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
       "tajuk": "PdP 009: lakaran yang dipilih dan membuat penambahbaikan",
       "sk": [
         "5.1"
@@ -735,7 +747,8 @@
       "artefak_khusus": "lakaran, kos bahan dan keputusan ujian di bawah sumber cahaya",
       "rubrik_pbd_khusus": "sumber tenaga boleh baharu, kestabilan model dan keselamatan sambungan",
       "contoh_projek_cikgulaju": "model kipas kecil menggunakan sel solar",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu"
     },
     {
       "pdp": 10,
@@ -745,7 +758,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 2,
-      "unit_label": "Unit 2: Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu",
+      "unit_label": "Unit 2: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
       "tajuk": "PdP 010: dan membuat anggaran kos bahan bagi produk yang akan dihasilkan",
       "sk": [
         "5.1"
@@ -815,7 +828,8 @@
       "artefak_khusus": "lakaran, kos bahan dan keputusan ujian di bawah sumber cahaya",
       "rubrik_pbd_khusus": "sumber tenaga boleh baharu, kestabilan model dan keselamatan sambungan",
       "contoh_projek_cikgulaju": "model kipas kecil menggunakan sel solar",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu"
     },
     {
       "pdp": 11,
@@ -825,7 +839,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 2,
-      "unit_label": "Unit 2: Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu",
+      "unit_label": "Unit 2: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
       "tajuk": "PdP 011: produk yang menggunakan tenaga boleh baharu berdasarkan lakaran",
       "sk": [
         "5.1"
@@ -890,7 +904,8 @@
       "artefak_khusus": "lakaran, kos bahan dan keputusan ujian di bawah sumber cahaya",
       "rubrik_pbd_khusus": "sumber tenaga boleh baharu, kestabilan model dan keselamatan sambungan",
       "contoh_projek_cikgulaju": "model kipas kecil menggunakan sel solar",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu"
     },
     {
       "pdp": 12,
@@ -900,7 +915,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 2,
-      "unit_label": "Unit 2: Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu",
+      "unit_label": "Unit 2: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
       "tajuk": "PdP 012: produk yang menggunakan tenaga boleh baharu yang dihasilkan. Cadangan Produk:  Model rumah yang men",
       "sk": [
         "5.1"
@@ -965,7 +980,8 @@
       "artefak_khusus": "lakaran, kos bahan dan keputusan ujian di bawah sumber cahaya",
       "rubrik_pbd_khusus": "sumber tenaga boleh baharu, kestabilan model dan keselamatan sambungan",
       "contoh_projek_cikgulaju": "model kipas kecil menggunakan sel solar",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu"
     },
     {
       "pdp": 13,
@@ -1045,7 +1061,8 @@
       "artefak_khusus": "carta alir, uji lari simulasi dan sambungan LED yang betul",
       "rubrik_pbd_khusus": "logik kawalan, pematuhan carta alir dan pengesanan ralat",
       "contoh_projek_cikgulaju": "atur cara lampu amaran dan pembaz mikropengawal",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Pengaturcaraan"
     },
     {
       "pdp": 14,
@@ -1125,7 +1142,8 @@
       "artefak_khusus": "carta alir, uji lari simulasi dan sambungan LED yang betul",
       "rubrik_pbd_khusus": "logik kawalan, pematuhan carta alir dan pengesanan ralat",
       "contoh_projek_cikgulaju": "atur cara lampu amaran dan pembaz mikropengawal",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Pengaturcaraan"
     },
     {
       "pdp": 15,
@@ -1200,7 +1218,8 @@
       "artefak_khusus": "carta alir, uji lari simulasi dan sambungan LED yang betul",
       "rubrik_pbd_khusus": "logik kawalan, pematuhan carta alir dan pengesanan ralat",
       "contoh_projek_cikgulaju": "atur cara lampu amaran dan pembaz mikropengawal",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Pengaturcaraan"
     },
     {
       "pdp": 16,
@@ -1275,7 +1294,8 @@
       "artefak_khusus": "carta alir, uji lari simulasi dan sambungan LED yang betul",
       "rubrik_pbd_khusus": "logik kawalan, pematuhan carta alir dan pengesanan ralat",
       "contoh_projek_cikgulaju": "atur cara lampu amaran dan pembaz mikropengawal",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Pengaturcaraan"
     },
     {
       "pdp": 17,
@@ -1350,7 +1370,8 @@
       "artefak_khusus": "carta alir, uji lari simulasi dan sambungan LED yang betul",
       "rubrik_pbd_khusus": "logik kawalan, pematuhan carta alir dan pengesanan ralat",
       "contoh_projek_cikgulaju": "atur cara lampu amaran dan pembaz mikropengawal",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Pengaturcaraan"
     },
     {
       "pdp": 18,
@@ -1425,7 +1446,8 @@
       "artefak_khusus": "carta alir, uji lari simulasi dan sambungan LED yang betul",
       "rubrik_pbd_khusus": "logik kawalan, pematuhan carta alir dan pengesanan ralat",
       "contoh_projek_cikgulaju": "atur cara lampu amaran dan pembaz mikropengawal",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Pengaturcaraan"
     },
     {
       "pdp": 19,
@@ -1500,7 +1522,8 @@
       "artefak_khusus": "carta alir, uji lari simulasi dan sambungan LED yang betul",
       "rubrik_pbd_khusus": "logik kawalan, pematuhan carta alir dan pengesanan ralat",
       "contoh_projek_cikgulaju": "atur cara lampu amaran dan pembaz mikropengawal",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Pengaturcaraan"
     },
     {
       "pdp": 20,
@@ -1575,7 +1598,8 @@
       "artefak_khusus": "carta alir, uji lari simulasi dan sambungan LED yang betul",
       "rubrik_pbd_khusus": "logik kawalan, pematuhan carta alir dan pengesanan ralat",
       "contoh_projek_cikgulaju": "atur cara lampu amaran dan pembaz mikropengawal",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Pengaturcaraan"
     },
     {
       "pdp": 21,
@@ -1650,7 +1674,8 @@
       "artefak_khusus": "carta alir, uji lari simulasi dan sambungan LED yang betul",
       "rubrik_pbd_khusus": "logik kawalan, pematuhan carta alir dan pengesanan ralat",
       "contoh_projek_cikgulaju": "atur cara lampu amaran dan pembaz mikropengawal",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Pengaturcaraan"
     },
     {
       "pdp": 22,
@@ -1725,7 +1750,8 @@
       "artefak_khusus": "carta alir, uji lari simulasi dan sambungan LED yang betul",
       "rubrik_pbd_khusus": "logik kawalan, pematuhan carta alir dan pengesanan ralat",
       "contoh_projek_cikgulaju": "atur cara lampu amaran dan pembaz mikropengawal",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Pengaturcaraan"
     },
     {
       "pdp": 23,
@@ -1800,7 +1826,8 @@
       "artefak_khusus": "carta alir, uji lari simulasi dan sambungan LED yang betul",
       "rubrik_pbd_khusus": "logik kawalan, pematuhan carta alir dan pengesanan ralat",
       "contoh_projek_cikgulaju": "atur cara lampu amaran dan pembaz mikropengawal",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Pengaturcaraan"
     },
     {
       "pdp": 24,
@@ -1875,7 +1902,8 @@
       "artefak_khusus": "carta alir, uji lari simulasi dan sambungan LED yang betul",
       "rubrik_pbd_khusus": "logik kawalan, pematuhan carta alir dan pengesanan ralat",
       "contoh_projek_cikgulaju": "atur cara lampu amaran dan pembaz mikropengawal",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Reka Bentuk Pengaturcaraan"
     },
     {
       "pdp": 25,
@@ -1885,7 +1913,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 4,
-      "unit_label": "Unit 4: Teknologi Pertanian Bandar",
+      "unit_label": "Unit 4: Teknologi Pertanian",
       "tajuk": "PdP 025: maksud pertanian bandar",
       "sk": [
         "7.1"
@@ -1950,7 +1978,8 @@
       "artefak_khusus": "reka bentuk model tanaman serta rekod pemerhatian takungan",
       "rubrik_pbd_khusus": "aliran air, kesesuaian medium dan kebersihan tempat tanaman",
       "contoh_projek_cikgulaju": "sistem tanaman takungan bersumbu",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Teknologi Pertanian Bandar"
     },
     {
       "pdp": 26,
@@ -1960,7 +1989,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 4,
-      "unit_label": "Unit 4: Teknologi Pertanian Bandar",
+      "unit_label": "Unit 4: Teknologi Pertanian",
       "tajuk": "PdP 026: sistem penanaman secara takungan dalam pertanian bandar",
       "sk": [
         "7.1"
@@ -2025,7 +2054,8 @@
       "artefak_khusus": "reka bentuk model tanaman serta rekod pemerhatian takungan",
       "rubrik_pbd_khusus": "aliran air, kesesuaian medium dan kebersihan tempat tanaman",
       "contoh_projek_cikgulaju": "sistem tanaman takungan bersumbu",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Teknologi Pertanian Bandar"
     },
     {
       "pdp": 27,
@@ -2035,7 +2065,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 4,
-      "unit_label": "Unit 4: Teknologi Pertanian Bandar",
+      "unit_label": "Unit 4: Teknologi Pertanian",
       "tajuk": "PdP 027: reka bentuk sistem penanaman secara takungan yang dipilih",
       "sk": [
         "7.1"
@@ -2100,7 +2130,8 @@
       "artefak_khusus": "reka bentuk model tanaman serta rekod pemerhatian takungan",
       "rubrik_pbd_khusus": "aliran air, kesesuaian medium dan kebersihan tempat tanaman",
       "contoh_projek_cikgulaju": "sistem tanaman takungan bersumbu",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Teknologi Pertanian Bandar"
     },
     {
       "pdp": 28,
@@ -2110,7 +2141,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 4,
-      "unit_label": "Unit 4: Teknologi Pertanian Bandar",
+      "unit_label": "Unit 4: Teknologi Pertanian",
       "tajuk": "PdP 028: lakaran yang dipilih untuk membuat penambahbaikan",
       "sk": [
         "7.1"
@@ -2175,7 +2206,8 @@
       "artefak_khusus": "reka bentuk model tanaman serta rekod pemerhatian takungan",
       "rubrik_pbd_khusus": "aliran air, kesesuaian medium dan kebersihan tempat tanaman",
       "contoh_projek_cikgulaju": "sistem tanaman takungan bersumbu",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Teknologi Pertanian Bandar"
     },
     {
       "pdp": 29,
@@ -2185,7 +2217,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 4,
-      "unit_label": "Unit 4: Teknologi Pertanian Bandar",
+      "unit_label": "Unit 4: Teknologi Pertanian",
       "tajuk": "PdP 029: peralatan, perkakasan dan medium penanaman untuk menghasilkan reka bentuk sistem penanaman secara ta",
       "sk": [
         "7.1"
@@ -2250,7 +2282,8 @@
       "artefak_khusus": "reka bentuk model tanaman serta rekod pemerhatian takungan",
       "rubrik_pbd_khusus": "aliran air, kesesuaian medium dan kebersihan tempat tanaman",
       "contoh_projek_cikgulaju": "sistem tanaman takungan bersumbu",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Teknologi Pertanian Bandar"
     },
     {
       "pdp": 30,
@@ -2260,7 +2293,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 4,
-      "unit_label": "Unit 4: Teknologi Pertanian Bandar",
+      "unit_label": "Unit 4: Teknologi Pertanian",
       "tajuk": "PdP 030: reka bentuk sistem penanaman secara takungan berdasarkan lakaran yang dipilih",
       "sk": [
         "7.1"
@@ -2325,7 +2358,8 @@
       "artefak_khusus": "reka bentuk model tanaman serta rekod pemerhatian takungan",
       "rubrik_pbd_khusus": "aliran air, kesesuaian medium dan kebersihan tempat tanaman",
       "contoh_projek_cikgulaju": "sistem tanaman takungan bersumbu",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Teknologi Pertanian Bandar"
     },
     {
       "pdp": 31,
@@ -2335,7 +2369,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 4,
-      "unit_label": "Unit 4: Teknologi Pertanian Bandar",
+      "unit_label": "Unit 4: Teknologi Pertanian",
       "tajuk": "PdP 031: reka bentuk sistem penanaman secara takungan berdasarkan lakaran yang dipilih (sesi sambungan 2)",
       "sk": [
         "7.1"
@@ -2400,7 +2434,8 @@
       "artefak_khusus": "reka bentuk model tanaman serta rekod pemerhatian takungan",
       "rubrik_pbd_khusus": "aliran air, kesesuaian medium dan kebersihan tempat tanaman",
       "contoh_projek_cikgulaju": "sistem tanaman takungan bersumbu",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Teknologi Pertanian Bandar"
     },
     {
       "pdp": 32,
@@ -2410,7 +2445,7 @@
       "subjek": "Reka Bentuk dan Teknologi",
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 4,
-      "unit_label": "Unit 4: Teknologi Pertanian Bandar",
+      "unit_label": "Unit 4: Teknologi Pertanian",
       "tajuk": "PdP 032: reka bentuk sistem penanaman secara takungan berdasarkan lakaran yang dipilih (sesi sambungan 3)",
       "sk": [
         "7.1"
@@ -2475,7 +2510,8 @@
       "artefak_khusus": "reka bentuk model tanaman serta rekod pemerhatian takungan",
       "rubrik_pbd_khusus": "aliran air, kesesuaian medium dan kebersihan tempat tanaman",
       "contoh_projek_cikgulaju": "sistem tanaman takungan bersumbu",
-      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN"
+      "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
+      "subtopik_sp": "Teknologi Pertanian Bandar"
     }
   ]
 }
