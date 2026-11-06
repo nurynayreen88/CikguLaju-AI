@@ -47,3 +47,6 @@
 
 
 **Audit projek (6 November 2026):** Buku Kesenian Tahun 4 DBP 2019 menyenaraikan Projek Kesenian Penggal Satu halaman 4–5 serta Penggal Dua halaman 54–55. Aktiviti projek gabungan disesuaikan kepada RPH muzik sahaja, tanpa menggantikan kod SP DSKP. PdP 34–35 kekal cadangan pengukuhan dan bukan Projek 3. Semua masih DRAF.
+
+
+**AMARAN KALENDAR M06/M19: PdP 06 dan 19 Tahun 4** jatuh pada minggu **0 hari calon PdP bagi 16 negeri** menurut indeks CikguLaju 2027 (M06: A 7–11 Feb / B 8–12 Feb; M19: A 16–20 Mei / B 17–21 Mei). Tarikh slot asal dikekalkan untuk audit, **bukan tarikh PdP disahkan**. Guru sahkan tarikh mengikut negeri dan jadual kelas. **PdP anjal, jangan gugurkan/anjak automatik.** Rujuk `../KALENDAR_2027_HARI_PDP_NEGERI_AUDIT_20261106.md`. Semua masih DRAF.

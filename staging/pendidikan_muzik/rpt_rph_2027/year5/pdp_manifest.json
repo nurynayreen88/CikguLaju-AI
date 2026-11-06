@@ -216,7 +216,16 @@
       "rph_specificity_status": "TEKS_BUKU_TAHUN5_DIINTEGRASI",
       "source_rpt_original_flags": [
         "Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 14-17 BELUM disahkan pada buku asal"
-      ]
+      ],
+      "rpt2027_day_audit": {
+        "status": "ZERO_CALON_PDP_IN_ALL_16_STATES",
+        "indexed_candidate_days_all_states": 0,
+        "indexed_state_count": 16,
+        "source_read_only": "KALENDAR_2027_HARI_PDP_16_NEGERI_AUDIT.json",
+        "action": "PDP_ANJAL_TARIKH_GURU_PERLU_SAHKAN",
+        "automatic_shift_or_skip_forbidden": true,
+        "approval": "DRAF_SEMAKAN_KALENDAR_NEGERI_BELUM_FINAL"
+      }
     },
     {
       "pdp_id": "MZ-Y5-07",
@@ -654,7 +663,16 @@
       "rph_specificity_status": "TEKS_BUKU_TAHUN5_DIINTEGRASI",
       "source_rpt_original_flags": [
         "Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks 49 BELUM disahkan pada buku asal"
-      ]
+      ],
+      "rpt2027_day_audit": {
+        "status": "ZERO_CALON_PDP_IN_ALL_16_STATES",
+        "indexed_candidate_days_all_states": 0,
+        "indexed_state_count": 16,
+        "source_read_only": "KALENDAR_2027_HARI_PDP_16_NEGERI_AUDIT.json",
+        "action": "PDP_ANJAL_TARIKH_GURU_PERLU_SAHKAN",
+        "automatic_shift_or_skip_forbidden": true,
+        "approval": "DRAF_SEMAKAN_KALENDAR_NEGERI_BELUM_FINAL"
+      }
     },
     {
       "pdp_id": "MZ-Y5-20",

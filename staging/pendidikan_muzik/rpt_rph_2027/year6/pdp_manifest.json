@@ -169,7 +169,16 @@
       "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
       "rph_specificity_status": "TEKS_BUKU_TAHUN6_DIINTEGRASI",
       "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL",
-      "copyright_note": "Lagu Tudung Periuk dalam buku menyatakan hak cipta dan kebenaran EMI; tidak memuat naik audio atau lirik."
+      "copyright_note": "Lagu Tudung Periuk dalam buku menyatakan hak cipta dan kebenaran EMI; tidak memuat naik audio atau lirik.",
+      "rpt2027_day_audit": {
+        "status": "ZERO_CALON_PDP_IN_ALL_16_STATES",
+        "indexed_candidate_days_all_states": 0,
+        "indexed_state_count": 16,
+        "source_read_only": "KALENDAR_2027_HARI_PDP_16_NEGERI_AUDIT.json",
+        "action": "PDP_ANJAL_TARIKH_GURU_PERLU_SAHKAN",
+        "automatic_shift_or_skip_forbidden": true,
+        "approval": "DRAF_SEMAKAN_KALENDAR_NEGERI_BELUM_FINAL"
+      }
     },
     {
       "pdp_id": "MZ-Y6-07",
@@ -533,7 +542,16 @@
       "source_book_audio_file_verified": false,
       "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
       "rph_specificity_status": "TEKS_BUKU_TAHUN6_DIINTEGRASI",
-      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL",
+      "rpt2027_day_audit": {
+        "status": "ZERO_CALON_PDP_IN_ALL_16_STATES",
+        "indexed_candidate_days_all_states": 0,
+        "indexed_state_count": 16,
+        "source_read_only": "KALENDAR_2027_HARI_PDP_16_NEGERI_AUDIT.json",
+        "action": "PDP_ANJAL_TARIKH_GURU_PERLU_SAHKAN",
+        "automatic_shift_or_skip_forbidden": true,
+        "approval": "DRAF_SEMAKAN_KALENDAR_NEGERI_BELUM_FINAL"
+      }
     },
     {
       "pdp_id": "MZ-Y6-20",

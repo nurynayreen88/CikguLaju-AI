@@ -164,7 +164,16 @@
       "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
       "source_book_audio_numbers_printed": "12–16",
       "source_book_audio_file_verified": false,
-      "book_text_topic_evidence": "Beg Cantik Menawan — latihan pic dan nyanyian"
+      "book_text_topic_evidence": "Beg Cantik Menawan — latihan pic dan nyanyian",
+      "rpt2027_day_audit": {
+        "status": "ZERO_CALON_PDP_IN_ALL_16_STATES",
+        "indexed_candidate_days_all_states": 0,
+        "indexed_state_count": 16,
+        "source_read_only": "KALENDAR_2027_HARI_PDP_16_NEGERI_AUDIT.json",
+        "action": "PDP_ANJAL_TARIKH_GURU_PERLU_SAHKAN",
+        "automatic_shift_or_skip_forbidden": true,
+        "approval": "DRAF_SEMAKAN_KALENDAR_NEGERI_BELUM_FINAL"
+      }
     },
     {
       "pdp_id": "MZ-Y4-07",
@@ -539,7 +548,16 @@
       "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
       "source_book_audio_numbers_printed": "61–65",
       "source_book_audio_file_verified": false,
-      "book_text_topic_evidence": "Tapak Sulaiman — perkusi badan mengikut tempo"
+      "book_text_topic_evidence": "Tapak Sulaiman — perkusi badan mengikut tempo",
+      "rpt2027_day_audit": {
+        "status": "ZERO_CALON_PDP_IN_ALL_16_STATES",
+        "indexed_candidate_days_all_states": 0,
+        "indexed_state_count": 16,
+        "source_read_only": "KALENDAR_2027_HARI_PDP_16_NEGERI_AUDIT.json",
+        "action": "PDP_ANJAL_TARIKH_GURU_PERLU_SAHKAN",
+        "automatic_shift_or_skip_forbidden": true,
+        "approval": "DRAF_SEMAKAN_KALENDAR_NEGERI_BELUM_FINAL"
+      }
     },
     {
       "pdp_id": "MZ-Y4-20",

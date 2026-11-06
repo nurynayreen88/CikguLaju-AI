@@ -43,3 +43,6 @@
 | 35 | 26/09–30/09 | 27/09–01/10 | Projek Seni Muzik 2 — Persembahan | 5.1.3, 5.1.4 | 88-89 |
 
 *Semakan teks buku khusus dibuat bagi 15 PdP: 12–17 dan 27–35. Baki adalah calon rujukan RPT. Nombor audio hanya tercetak, belum disahkan fail audio. Tarikh 2027 masih slot cadangan dan tertakluk cuti negeri/gantian.
+
+
+**AMARAN KALENDAR M06/M19: PdP 06 dan 19 Tahun 5** jatuh pada minggu **0 hari calon PdP bagi 16 negeri** menurut indeks CikguLaju 2027 (M06: A 7–11 Feb / B 8–12 Feb; M19: A 16–20 Mei / B 17–21 Mei). Tarikh slot asal dikekalkan untuk audit, **bukan tarikh PdP disahkan**. Guru sahkan tarikh mengikut negeri dan jadual kelas. **PdP anjal, jangan gugurkan/anjak automatik.** Rujuk `../KALENDAR_2027_HARI_PDP_NEGERI_AUDIT_20261106.md`. Semua masih DRAF.
