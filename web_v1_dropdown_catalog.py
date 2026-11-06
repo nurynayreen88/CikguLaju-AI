@@ -1,4 +1,5 @@
 """Read-only dropdown options for Web V1 staging."""
+import re
 from web_v1_verified_topics import SUBJECTS
 from web_v1_verified_pdp import VerifiedPdpCatalog, list_explicit_pjpk_entries
 
@@ -76,3 +77,157 @@ def verified_component_records(records, subject_code, component=None):
     return [record for record in records
             if record.get("component_verified") is True
             and record.get("component") == component]
+
+
+_UNIT_TITLE_RE = re.compile(r"^(?:Unit|U)\s*0*([1-9]\d{0,2})\s*(?:[:：.\-–—]\s*)?(.+)$", re.I)
+_UNIT_CODE_RE = re.compile(r"^(?:(?:Unit|U)\s*)?0*([1-9]\d{0,2})(?:\.0)?$", re.I)
+_BM_SKILL_NAMES = frozenset({
+    "kemahiran mendengar dan bertutur", "mendengar dan bertutur",
+    "kemahiran membaca", "membaca", "kemahiran menulis", "menulis",
+    "seni bahasa", "tatabahasa", "kemahiran seni bahasa",
+    "kemahiran tatabahasa",
+})
+
+
+def display_unit_label(title, code=""):
+    """Display an existing source unit number; never number inferred groups."""
+    value = str(title or "").strip()
+    if not value:
+        return ""
+    match = _UNIT_TITLE_RE.fullmatch(value)
+    if match:
+        return "Unit " + str(int(match.group(1))) + ": " + match.group(2).strip()
+    code_match = _UNIT_CODE_RE.fullmatch(str(code or "").strip())
+    if code_match:
+        return "Unit " + str(int(code_match.group(1))) + ": " + value
+    return value
+
+
+def _bm_verified_structured_rows(database_path, year):
+    """Read actual BM Tema/Unit/Tajuk from master RPT rows; refuse skill domains.
+
+    Deliberately do not rewrite a synthetic 1.0–5.0 language-skill domain into
+    a textbook unit. If the master DB does not contain a genuine hierarchy,
+    return no invented alternatives.
+    """
+    import sqlite3
+    from pathlib import Path
+    if type(year) is not int or year not in range(1, 7):
+        raise ValueError("Invalid BM school year")
+    path = Path(database_path)
+    if not path.is_file():
+        raise FileNotFoundError("Master database unavailable")
+    with sqlite3.connect(path.resolve().as_uri() + "?mode=ro", uri=True, timeout=5) as con:
+        con.row_factory = sqlite3.Row
+        con.execute("PRAGMA query_only=ON")
+        entries = [dict(row) for row in con.execute(
+            """SELECT id,sequence_no,theme,unit_code,unit_title,topic,subtopic,skill_focus
+               FROM rpt_entries WHERE year_label=? AND subject='Bahasa Melayu'
+                 AND verified=1
+                 AND lower(COALESCE(notes,'')) NOT LIKE '%superseded%'
+               ORDER BY sequence_no,id LIMIT 1001""", (f"Tahun {year}",)
+        )]
+        if len(entries) > 1000:
+            raise ValueError("Oversized BM source")
+        # This map supplies pages only when the exact selected unit and PdP
+        # lesson are independently verified; no page guess from a unit range.
+        pages = {}
+        table = con.execute(
+            "SELECT 1 FROM sqlite_master WHERE type='table' "
+            "AND name='textbook_page_lesson_map'"
+        ).fetchone()
+        if table:
+            candidates = con.execute(
+                """SELECT unit_title,lesson_no,content_topic,book_title,
+                          page_start,page_end
+                   FROM textbook_page_lesson_map
+                   WHERE year_label=? AND subject='Bahasa Melayu'
+                     AND verified=1 AND page_start IS NOT NULL
+                     AND page_end IS NOT NULL
+                   LIMIT 5001""", (f"Tahun {year}",)
+            ).fetchall()
+            if len(candidates) <= 5000:
+                for candidate in candidates:
+                    p = dict(candidate)
+                    key = (str(p["unit_title"] or "").strip().casefold(),
+                           str(p["lesson_no"] or "").strip())
+                    pages.setdefault(key, []).append(p)
+    result = []
+    for row in entries:
+        theme = str(row["theme"] or "").strip()
+        unit = str(row["unit_title"] or "").strip()
+        topic = str(row["topic"] or "").strip()
+        code = str(row["unit_code"] or "").strip()
+        if not theme or not unit or not topic:
+            continue
+        if (unit.casefold() in _BM_SKILL_NAMES
+                or re.fullmatch(r"[1-5]\.0", code)
+                or re.match(r"^kemahiran\b", unit, re.I)):
+            continue
+        row.update({"theme": theme, "unit_title": unit,
+                    "topic": topic, "unit_code": code})
+        key = (unit.casefold(), str(row["sequence_no"] or "").strip())
+        candidates = [p for p in pages.get(key, []) if
+                      not str(p["content_topic"] or "").strip()
+                      or str(p["content_topic"]).strip().casefold() == topic.casefold()]
+        distinct = {(p["book_title"], p["page_start"], p["page_end"]) for p in candidates}
+        if len(distinct) == 1:
+            book, first, last = next(iter(distinct))
+            if (type(first) is int and type(last) is int
+                    and 0 < first <= last <= 1000):
+                row["textbook_ref"] = (
+                    "Buku Teks m/s " + str(first)
+                    + ("–" + str(last) if last != first else "")
+                )
+        result.append(row)
+    return result
+
+
+def bm_theme_options(database_path, year):
+    rows = _bm_verified_structured_rows(database_path, year)
+    return [{"value": title, "label": title}
+            for title in dict.fromkeys(r["theme"] for r in rows)]
+
+
+def bm_unit_options(database_path, year, theme):
+    if not isinstance(theme, str) or not 0 < len(theme) <= 300:
+        raise ValueError("Invalid BM theme")
+    rows = [r for r in _bm_verified_structured_rows(database_path, year)
+            if r["theme"] == theme]
+    if not rows:
+        return []
+    result = []
+    for title in dict.fromkeys(r["unit_title"] for r in rows):
+        codes = {r["unit_code"] for r in rows if r["unit_title"] == title}
+        code = next(iter(codes)) if len(codes) == 1 else ""
+        result.append({"value": title, "label": display_unit_label(title, code)})
+    return result
+
+
+def bm_topic_options(database_path, year, theme, unit):
+    if not isinstance(unit, str) or not 0 < len(unit) <= 300:
+        raise ValueError("Invalid BM unit")
+    rows = [r for r in _bm_verified_structured_rows(database_path, year)
+            if r["theme"] == theme and r["unit_title"] == unit]
+    return [{"value": title, "label": title}
+            for title in dict.fromkeys(r["topic"] for r in rows)]
+
+
+def bm_pdp_options(database_path, year, theme, unit, topic):
+    if not isinstance(topic, str) or not 0 < len(topic) <= 300:
+        raise ValueError("Invalid BM topic")
+    rows = [r for r in _bm_verified_structured_rows(database_path, year)
+            if r["theme"] == theme and r["unit_title"] == unit
+            and r["topic"] == topic]
+    result = []
+    for r in rows:
+        number = r["sequence_no"]
+        if type(number) is not int or not 0 < number < 10000:
+            continue
+        title = str(r.get("subtopic") or topic).strip()
+        entry = {"value": str(r["id"]), "label": f"PdP {number:03d} — {title}",
+                 "pdp_no": number, "standalone_rph_verified": False}
+        if r.get("textbook_ref"):
+            entry["textbook_ref"] = r["textbook_ref"]
+        result.append(entry)
+    return result
