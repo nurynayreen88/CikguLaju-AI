@@ -3,7 +3,7 @@ import unittest
 
 from web.sains_y2_51_activities_draf_20261107 import BANK
 from tools.render_sains_y2_51_rph_draf_20261107 import (
-    Y2_SOURCE_CONFLICTS, CORRECTED_CANDIDATE_TITLE, markdown, kps_for
+    Y2_SOURCE_CONFLICTS, CORRECTED_CANDIDATE_TITLE, markdown, kps_for, book_page_cues
 )
 
 
@@ -43,12 +43,19 @@ class TestYear2ScienceBank(unittest.TestCase):
         self.assertIn("individu",BANK["3.1.3"]["hook"].lower()+ " "+
                       BANK["3.1.3"]["teacher1"].lower())
 
+    def test_all_51_textbook_pages_are_only_cues_not_signoff(self):
+        cues=book_page_cues()
+        self.assertEqual(len(cues),51)
+        self.assertEqual(cues["3.1.3"]["printed_page_candidates"],[28])
+        self.assertEqual(cues["10.1.6"]["printed_page_candidates"],[124])
+        self.assertTrue(all(x["status"]=="DRAF_PAGE_CUE_NOT_APPROVED" for x in cues.values()))
+
     def test_draft_markdown_has_required_separate_numbered_actions(self):
         item={
           "pdp_number":3,"unit":"Unit 3: Manusia","candidate_title":
           CORRECTED_CANDIDATE_TITLE["3.1.3"],
           "sp":"3.1.3","tajuk":"legacy inheritance",
-          "kps":kps_for("3.1.3"), "source_discrepancy":
+          "kps":kps_for("3.1.3"), "book_page_cue":"28", "source_discrepancy":
           Y2_SOURCE_CONFLICTS["3.1.3"], **BANK["3.1.3"],
         }
         md=markdown(item)
