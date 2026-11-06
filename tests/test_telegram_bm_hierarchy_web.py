@@ -1,92 +1,98 @@
-"""Regression: BM Web must not expose synthetic SK/SP skills as book units."""
+"""BM Web dropdowns must use Telegram's verified_pdp_sequence, not skill RPT."""
 import os
 import sqlite3
 import tempfile
 import unittest
 from unittest.mock import patch
 from flask import Flask
+
 from web_v1_dropdown_catalog import (
-    display_unit_label, bm_theme_options, bm_unit_options, bm_topic_options,
-    bm_pdp_options,
+    display_unit_label, bm_theme_options, bm_unit_options,
+    bm_topic_options, bm_pdp_options, bm_sequence_token,
 )
 from web.telegram_curriculum_api import create_curriculum_blueprint
+
+
+def seed_native_bm(db):
+    with sqlite3.connect(db) as con:
+        con.execute("""CREATE TABLE verified_pdp_sequence(
+            id INTEGER PRIMARY KEY, year_label TEXT, subject TEXT,
+            week_no INTEGER, theme TEXT, unit_code TEXT, unit_title TEXT,
+            pdp_title TEXT, sk_code TEXT, sp_code TEXT,
+            verification_status TEXT, textbook_ref TEXT,
+            activitybook_ref TEXT, skill_metadata TEXT,
+            source_sequence_no INTEGER)""")
+        con.executemany(
+            """INSERT INTO verified_pdp_sequence VALUES
+                (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""", [
+                (1, "Tahun 2", "Bahasa Melayu", 2,
+                 "Kekeluargaan", "1", "Keluargaku Sayang", "Ceria Pagi",
+                 "1.1", "1.1.1", "VERIFIED", "BT m/s 2–3", "BA m/s 1", "", 1),
+                (2, "Tahun 2", "Bahasa Melayu", 2,
+                 "Kekeluargaan", "1", "Keluargaku Sayang", "Ceria Pagi",
+                 "1.2", "1.2.1", "VERIFIED", "BT m/s 2–3", "BA m/s 1", "", 1),
+                (3, "Tahun 2", "Bahasa Melayu", 2,
+                 "Kekeluargaan", "1", "Keluargaku Sayang", "Baca bersama",
+                 "2.1", "2.1.1", "VERIFIED", "BT m/s 4", "BA m/s 2", "", 2),
+                (4, "Tahun 2", "Bahasa Melayu", 2,
+                 "Kekeluargaan", "2.0", "Kemahiran Membaca", "Membaca",
+                 "2.1", "2.1.1", "VERIFIED", "", "", "", 3),
+                (5, "Tahun 2", "Bahasa Melayu", 3,
+                 "Kekeluargaan", "2", "Jiran Sepakat", "Hormati Jiran",
+                 "2.1", "2.1.1", "REJECT_NON_SK", "", "", "", 4),
+                (6, "Tahun 2", "Bahasa Melayu", 4,
+                 "Perpaduan", "3", "Jiran Baik", "Bermain",
+                 "", "", "VERIFIED", "", "", "", 5),
+            ])
+        # Synthetic RPT skill domains must be entirely ignored.
+        con.execute("""CREATE TABLE rpt_entries(
+            id INTEGER, year_label TEXT, subject TEXT, sequence_no INTEGER,
+            theme TEXT, unit_code TEXT, unit_title TEXT,
+            topic TEXT, subtopic TEXT, skill_focus TEXT,
+            verified INTEGER,notes TEXT)""")
+        con.execute("""INSERT INTO rpt_entries VALUES
+            (80,'Tahun 2','Bahasa Melayu',1,'', '1.0',
+             'Kemahiran Mendengar dan Bertutur','Mendengar','','',1,'')""")
 
 
 class BMHierarchyTests(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
         self.db = os.path.join(self.tmp.name, "master.db")
-        with sqlite3.connect(self.db) as con:
-            con.execute("""CREATE TABLE rpt_entries(
-                id INTEGER PRIMARY KEY, year_label TEXT, subject TEXT,
-                sequence_no INTEGER, theme TEXT, unit_code TEXT,
-                unit_title TEXT, topic TEXT, subtopic TEXT, skill_focus TEXT,
-                verified INTEGER, notes TEXT)""")
-            con.execute("""CREATE TABLE textbook_page_lesson_map(
-                year_label TEXT, subject TEXT, verified INTEGER,
-                unit_title TEXT, lesson_no TEXT, content_topic TEXT,
-                book_title TEXT, page_start INTEGER, page_end INTEGER)""")
-            con.executemany(
-                "INSERT INTO rpt_entries VALUES(?,?,?,?,?,?,?,?,?,?,?,?)", [
-                    (1, "Tahun 2", "Bahasa Melayu", 1, "Tema 1: Kekeluargaan",
-                     "U1", "Keluargaku Sayang", "Ceria Pagi", "Dengar dan jawab",
-                     "Mendengar", 1, ""),
-                    (2, "Tahun 2", "Bahasa Melayu", 2, "Tema 1: Kekeluargaan",
-                     "U1", "Keluargaku Sayang", "Ceria Pagi", "Baca teks",
-                     "Membaca", 1, ""),
-                    (3, "Tahun 2", "Bahasa Melayu", 3, "",
-                     "1.0", "Kemahiran Mendengar dan Bertutur", "Kemahiran",
-                     "", "Mendengar", 1, ""),
-                    (4, "Tahun 2", "Bahasa Melayu", 4, "Tema 2",
-                     "2.0", "Kemahiran Membaca", "Membaca",
-                     "", "Membaca", 1, ""),
-                    (5, "Tahun 2", "Bahasa Melayu", 5, "Tema 2",
-                     "U2", "Jiran Sepakat", "Hormati Jiran",
-                     "", "", 0, ""),
-                    (6, "Tahun 2", "Bahasa Melayu", 6, "Tema 2",
-                     "U2", "Jiran Sepakat", "Hormati Jiran",
-                     "", "", 1, "superseded"),
-                ])
-            con.executemany(
-                "INSERT INTO textbook_page_lesson_map VALUES(?,?,?,?,?,?,?,?,?)", [
-                    ("Tahun 2", "Bahasa Melayu", 1, "Keluargaku Sayang", "1",
-                     "Ceria Pagi", "Buku Teks BM", 2, 3),
-                    ("Tahun 2", "Bahasa Melayu", 1, "Keluargaku Sayang", "2",
-                     "Ceria Pagi", "Buku Teks BM", 4, 4),
-                    ("Tahun 2", "Bahasa Melayu", 1, "Keluargaku Sayang", "2",
-                     "Unrelated", "Buku Teks BM", 99, 99),
-                ])
-        self.app = Flask(__name__)
-        self.app.register_blueprint(create_curriculum_blueprint(lambda: self.db))
-        self.client = self.app.test_client()
-        self.env = {"CIKGULAJU_CURRICULUM_API_ENABLED": "1",
-                    "CIKGULAJU_AUTHORITATIVE_API_TOKEN": "t" * 40}
-        self.headers = {"Authorization": "Bearer " + "t" * 40}
+        seed_native_bm(self.db)
+        app = Flask(__name__)
+        app.register_blueprint(create_curriculum_blueprint(lambda: self.db))
+        self.client = app.test_client()
+        self.env = {"CIKGULAJU_CURRICULUM_API_ENABLED":"1",
+                    "CIKGULAJU_AUTHORITATIVE_API_TOKEN":"t"*40}
+        self.headers = {"Authorization":"Bearer "+"t"*40}
 
     def tearDown(self):
         self.tmp.cleanup()
 
-    def test_real_telegram_structure_and_pages(self):
-        self.assertEqual(bm_theme_options(self.db, 2),
-                         [{"value": "Tema 1: Kekeluargaan",
-                           "label": "Tema 1: Kekeluargaan"}])
-        self.assertEqual(bm_unit_options(self.db, 2, "Tema 1: Kekeluargaan"),
-                         [{"value": "Keluargaku Sayang",
-                           "label": "Unit 1: Keluargaku Sayang"}])
-        self.assertEqual(bm_topic_options(
-            self.db, 2, "Tema 1: Kekeluargaan", "Keluargaku Sayang"),
-            [{"value": "Ceria Pagi", "label": "Ceria Pagi"}])
-        pdp = bm_pdp_options(
-            self.db, 2, "Tema 1: Kekeluargaan",
-            "Keluargaku Sayang", "Ceria Pagi")
-        self.assertEqual([r["value"] for r in pdp], ["1", "2"])
-        self.assertEqual([r["textbook_ref"] for r in pdp],
-                         ["Buku Teks m/s 2–3", "Buku Teks m/s 4"])
-        self.assertTrue(pdp[0]["label"].startswith("PdP 001"))
+    def test_true_telegram_source_and_shared_sksp_group(self):
+        themes = bm_theme_options(self.db, 2)
+        self.assertEqual(themes[0]["value"], "Kekeluargaan")
+        self.assertEqual(
+            bm_unit_options(self.db, 2, "Kekeluargaan"),
+            [{"value":"Keluargaku Sayang","label":"Unit 1: Keluargaku Sayang"}])
+        self.assertEqual(
+            bm_topic_options(self.db, 2, "Kekeluargaan", "Keluargaku Sayang"),
+            [{"value":"Ceria Pagi","label":"Ceria Pagi"},
+             {"value":"Baca bersama","label":"Baca bersama"}])
+        pdp = bm_pdp_options(self.db, 2, "Kekeluargaan",
+                             "Keluargaku Sayang", "Ceria Pagi")
+        self.assertEqual(len(pdp), 1)  # two SPs in one real PdP
+        self.assertEqual(pdp[0]["value"], bm_sequence_token(
+            2, "Kekeluargaan", "1", "Keluargaku Sayang", "Ceria Pagi"))
+        self.assertEqual(pdp[0]["textbook_ref"], "BT m/s 2–3")
+        self.assertEqual(pdp[0]["pdp_no"], 1)
         self.assertFalse(bm_pdp_options(
-            self.db, 2, "Tema 2", "Kemahiran Membaca", "Membaca"))
+            self.db, 2, "Kekeluargaan", "Kemahiran Membaca", "Membaca"))
+        self.assertFalse(bm_pdp_options(
+            self.db, 2, "Perpaduan", "Jiran Baik", "Bermain"))
 
-    def test_never_invent_missing_unit_number(self):
+    def test_source_unit_number_not_guessed(self):
         self.assertEqual(display_unit_label("Masa dan Waktu", ""),
                          "Masa dan Waktu")
         self.assertEqual(display_unit_label("Unit 03 — Keluarga", ""),
@@ -94,25 +100,20 @@ class BMHierarchyTests(unittest.TestCase):
         self.assertEqual(display_unit_label("Jom Membaca", "U2"),
                          "Unit 2: Jom Membaca")
 
-    def test_private_http_fails_closed_and_keeps_exact_row_id(self):
+    def test_private_api_resolves_opaque_pdp(self):
         with patch.dict(os.environ, self.env):
-            url = "/internal/curriculum/v1/bm-themes?year=2&subject=BM"
+            url="/internal/curriculum/v1/bm-themes?year=2&subject=BM"
             self.assertEqual(self.client.get(url).status_code, 401)
-            res = self.client.get(url, headers=self.headers)
-            self.assertEqual(res.status_code, 200)
-            self.assertEqual(res.get_json()["source"], "telegram-runtime-v1")
-            r = self.client.get(
+            self.assertEqual(self.client.get(url,headers=self.headers).status_code,200)
+            r=self.client.get(
                 "/internal/curriculum/v1/bm-pdp?year=2&subject=BM"
-                "&theme=Tema%201%3A%20Kekeluargaan"
-                "&unit=Keluargaku%20Sayang&topic=Ceria%20Pagi",
-                headers=self.headers,
-            )
-            self.assertEqual(r.status_code, 200)
-            self.assertEqual([x["value"] for x in r.get_json()["items"]],
-                             ["1", "2"])
+                "&theme=Kekeluargaan&unit=Keluargaku%20Sayang"
+                "&topic=Ceria%20Pagi",headers=self.headers)
+            self.assertEqual(r.status_code,200,r.json)
+            self.assertEqual(len(r.json["items"]),1)
+            self.assertTrue(r.json["items"][0]["value"].startswith("b"))
             self.assertEqual(self.client.get(
-                url + "&unexpected=1", headers=self.headers
-            ).status_code, 400)
+                url+"&extra=bad",headers=self.headers).status_code,400)
 
 
 if __name__ == "__main__":

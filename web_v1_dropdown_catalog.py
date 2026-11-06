@@ -151,12 +151,25 @@ def display_unit_label(title, code=""):
     return value
 
 
-def _bm_verified_structured_rows(database_path, year):
-    """Read actual BM Tema/Unit/Tajuk from master RPT rows; refuse skill domains.
+def bm_sequence_token(year, theme, unit_code, unit_title, topic):
+    """Opaque key for a real grouped BM PdP, not a guessed RPT row ID."""
+    import hashlib
+    if type(year) is not int or year not in range(1, 7):
+        raise ValueError("Invalid BM year")
+    parts = [str(x or "").strip() for x in (theme, unit_code, unit_title, topic)]
+    if not all(parts[i] for i in (0, 2, 3)):
+        raise ValueError("Incomplete native BM lesson identity")
+    return "b" + hashlib.sha256(
+        (str(year) + "\x00" + "\x00".join(parts)).encode("utf-8")
+    ).hexdigest()[:24]
 
-    Deliberately do not rewrite a synthetic 1.0–5.0 language-skill domain into
-    a textbook unit. If the master DB does not contain a genuine hierarchy,
-    return no invented alternatives.
+
+def _bm_verified_structured_rows(database_path, year):
+    """The exact BM source used by Telegram _bm96_rows, read-only.
+
+    Telegram's BM Tema → Unit → Tajuk PdP menu reads verified_pdp_sequence.
+    rpt_entries contains broad skill domains and MUST NOT supply BM menus.
+    No migrations, schema changes, RPT fallbacks, or guessed lesson IDs.
     """
     import sqlite3
     from pathlib import Path
@@ -168,67 +181,42 @@ def _bm_verified_structured_rows(database_path, year):
     with sqlite3.connect(path.resolve().as_uri() + "?mode=ro", uri=True, timeout=5) as con:
         con.row_factory = sqlite3.Row
         con.execute("PRAGMA query_only=ON")
-        entries = [dict(row) for row in con.execute(
-            """SELECT id,sequence_no,theme,unit_code,unit_title,topic,subtopic,skill_focus
-               FROM rpt_entries WHERE year_label=? AND subject='Bahasa Melayu'
-                 AND verified=1
-                 AND lower(COALESCE(notes,'')) NOT LIKE '%superseded%'
-               ORDER BY sequence_no,id LIMIT 1001""", (f"Tahun {year}",)
+        rows = [dict(row) for row in con.execute(
+            """SELECT * FROM verified_pdp_sequence
+               WHERE year_label=? AND subject='Bahasa Melayu'
+                 AND COALESCE(verification_status,'')
+                   NOT IN ('REJECT_NON_SK','SOURCE_NONCORE','REJECTED')
+               ORDER BY CASE WHEN week_no IS NULL THEN 999 ELSE week_no END,id
+               LIMIT 5001""", (f"Tahun {year}",)
         )]
-        if len(entries) > 1000:
-            raise ValueError("Oversized BM source")
-        # This map supplies pages only when the exact selected unit and PdP
-        # lesson are independently verified; no page guess from a unit range.
-        pages = {}
-        table = con.execute(
-            "SELECT 1 FROM sqlite_master WHERE type='table' "
-            "AND name='textbook_page_lesson_map'"
-        ).fetchone()
-        if table:
-            candidates = con.execute(
-                """SELECT unit_title,lesson_no,content_topic,book_title,
-                          page_start,page_end
-                   FROM textbook_page_lesson_map
-                   WHERE year_label=? AND subject='Bahasa Melayu'
-                     AND verified=1 AND page_start IS NOT NULL
-                     AND page_end IS NOT NULL
-                   LIMIT 5001""", (f"Tahun {year}",)
-            ).fetchall()
-            if len(candidates) <= 5000:
-                for candidate in candidates:
-                    p = dict(candidate)
-                    key = (str(p["unit_title"] or "").strip().casefold(),
-                           str(p["lesson_no"] or "").strip())
-                    pages.setdefault(key, []).append(p)
+        if len(rows) > 5000:
+            raise ValueError("Oversized verified BM sequence")
     result = []
-    for row in entries:
-        theme = str(row["theme"] or "").strip()
-        unit = str(row["unit_title"] or "").strip()
-        topic = str(row["topic"] or "").strip()
-        code = str(row["unit_code"] or "").strip()
+    for r in rows:
+        theme = str(r.get("theme") or "").strip()
+        unit = str(r.get("unit_title") or "").strip()
+        topic = str(r.get("pdp_title") or "").strip()
+        code = str(r.get("unit_code") or "").strip()
         if not theme or not unit or not topic:
             continue
-        if (unit.casefold() in _BM_SKILL_NAMES
-                or re.fullmatch(r"[1-5]\.0", code)
-                or re.match(r"^kemahiran\b", unit, re.I)):
+        if (unit.casefold() in _BM_SKILL_NAMES or
+                re.match(r"^kemahiran\b", unit, re.I)):
             continue
-        row.update({"theme": theme, "unit_title": unit,
-                    "topic": topic, "unit_code": code})
-        key = (unit.casefold(), str(row["sequence_no"] or "").strip())
-        candidates = [p for p in pages.get(key, []) if
-                      not str(p["content_topic"] or "").strip()
-                      or str(p["content_topic"]).strip().casefold() == topic.casefold()]
-        distinct = {(p["book_title"], p["page_start"], p["page_end"]) for p in candidates}
-        if len(distinct) == 1:
-            book, first, last = next(iter(distinct))
-            if (type(first) is int and type(last) is int
-                    and 0 < first <= last <= 1000):
-                row["textbook_ref"] = (
-                    "Buku Teks m/s " + str(first)
-                    + ("–" + str(last) if last != first else "")
-                )
-        result.append(row)
-    return result
+        r.update({"theme": theme, "unit_code": code,
+                  "unit_title": unit, "topic": topic})
+        result.append(r)
+    # Hide incomplete PdP groups before exposing their Tema or Unit. Telegram
+    # itself refuses to commit such a group until SK/SP is present.
+    valid = {
+        (r["theme"], r["unit_code"], r["unit_title"], r["topic"])
+        for r in result
+        if str(r.get("sk_code") or "").strip()
+        and str(r.get("sp_code") or "").strip()
+    }
+    return [
+        r for r in result
+        if (r["theme"], r["unit_code"], r["unit_title"], r["topic"]) in valid
+    ]
 
 
 def bm_theme_options(database_path, year):
@@ -262,20 +250,35 @@ def bm_topic_options(database_path, year, theme, unit):
 
 
 def bm_pdp_options(database_path, year, theme, unit, topic):
-    if not isinstance(topic, str) or not 0 < len(topic) <= 300:
-        raise ValueError("Invalid BM topic")
-    rows = [r for r in _bm_verified_structured_rows(database_path, year)
-            if r["theme"] == theme and r["unit_title"] == unit
-            and r["topic"] == topic]
-    result = []
-    for r in rows:
-        number = r["sequence_no"]
-        if type(number) is not int or not 0 < number < 10000:
+    if not all(isinstance(v, str) and 0 < len(v.strip()) <= 300
+               for v in (theme, unit, topic)):
+        raise ValueError("Invalid BM lesson selection")
+    all_rows = _bm_verified_structured_rows(database_path, year)
+    groups = {}
+    for r in all_rows:
+        key = (r["theme"], r["unit_code"], r["unit_title"], r["topic"])
+        groups.setdefault(key, []).append(r)
+    # The ordinal is ONLY a navigation number, determined by real Telegram
+    # PdP group order. It does not claim to be an official SOW lesson number.
+    choices = []
+    for idx, (key, members) in enumerate(groups.items(), 1):
+        t, code, title, name = key
+        if (t, title, name) != (theme, unit, topic):
             continue
-        title = str(r.get("subtopic") or topic).strip()
-        entry = {"value": str(r["id"]), "label": f"PdP {number:03d} — {title}",
-                 "pdp_no": number, "standalone_rph_verified": False}
-        if r.get("textbook_ref"):
-            entry["textbook_ref"] = r["textbook_ref"]
-        result.append(entry)
-    return result
+        if not any(str(r.get("sk_code") or "").strip()
+                   and str(r.get("sp_code") or "").strip() for r in members):
+            continue
+        token = bm_sequence_token(year, *key)
+        seqs = {int(r["source_sequence_no"]) for r in members
+                if str(r.get("source_sequence_no") or "").isdigit()
+                and 0 < int(r["source_sequence_no"]) < 10000}
+        number = next(iter(seqs)) if len(seqs) == 1 else idx
+        item = {"value": token, "label": f"PdP {number:03d} — {name}",
+                "pdp_no": number, "standalone_rph_verified": False}
+        refs = {str(r.get("textbook_ref") or "").strip() for r in members
+                if str(r.get("textbook_ref") or "").strip()}
+        if len(refs) == 1:
+            item["textbook_ref"] = next(iter(refs))
+        choices.append(item)
+    return choices
+

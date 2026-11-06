@@ -400,6 +400,22 @@ except Exception as _native_db_rph_exc:
           type(_native_db_rph_exc).__name__, flush=True)
 
 
+# BM Web: resolve the actual Telegram verified_pdp_sequence source, not
+# rpt_entries, then reuse the native Telegram Word/PDF generator.
+# Exact selection is re-resolved on each request; no DB changes.
+try:
+    from web.telegram_native_bm_sequence_rph_bridge import (
+        create_native_bm_rph_blueprint,
+    )
+    telegram_runtime.app.register_blueprint(
+        create_native_bm_rph_blueprint(telegram_runtime))
+    TELEGRAM_NATIVE_BM_SEQUENCE_RPH_REGISTERED = True
+except Exception as _native_bm_sequence_exc:
+    TELEGRAM_NATIVE_BM_SEQUENCE_RPH_REGISTERED = False
+    print("Native BM sequence RPH unavailable:",
+          type(_native_bm_sequence_exc).__name__, flush=True)
+
+
 # Sains / Matematik: Web units and PdP selections use Telegram's exact
 # grouped verified_pdp_sequence reader, not misleading weekly RPT row IDs.
 try:

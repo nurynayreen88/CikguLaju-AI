@@ -1,9 +1,11 @@
 name: Telegram Native RPH BM PI Matematik Sains QA
 on:
   push:
-    branches: [main, feature/telegram-db-rph-bridge-bm-pi-20261106, feature/telegram-bm-structured-web-catalog-20261106, feature/telegram-rph-choice-page-refs-20261106]
+    branches: [main, feature/telegram-db-rph-bridge-bm-pi-20261106, feature/telegram-bm-structured-web-catalog-20261106, feature/telegram-rph-choice-page-refs-20261106, fix/bm-web-real-verified-pdp-sequence-20261106]
     paths:
       - web_v1_dropdown_catalog.py
+      - web/telegram_native_bm_sequence_rph_bridge.py
+      - tests/test_telegram_native_bm_sequence_rph.py
       - tests/test_telegram_reference_options_web.py
       - web/telegram_curriculum_api.py
       - tests/test_telegram_bm_hierarchy_web.py
@@ -32,4 +34,5 @@ jobs:
           python -m unittest discover -s tests -p test_telegram_verified_rpt_rph_bridge.py -v
           python -m unittest discover -s tests -p test_telegram_verified_sequence_rph_bridge.py -v
           python -m unittest discover -s tests -p test_telegram_bm_hierarchy_web.py -v
+          python -m unittest discover -s tests -p test_telegram_native_bm_sequence_rph.py -v
           python -m unittest discover -s tests -p test_telegram_reference_options_web.py -v
