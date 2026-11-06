@@ -27,17 +27,17 @@ class RPT2027SecondBatchQA(unittest.TestCase):
                     sum(r["calendar_alignment"] == "EXACT_SOURCE_DATE_PAIR" for r in rows), 35
                 )
                 self.assertEqual(
-                    sum(r["calendar_alignment"] == "GROUP_A_ONE_DAY_LATE_SOURCE" for r in rows), 1
+                    sum(r["calendar_alignment"] == "GROUP_A_FIRST_DAY_KPM_HOLIDAY_INDEXED" for r in rows), 1
                 )
                 self.assertTrue(all(r["week"].startswith("M") and "(cadangan" in r["week"] for r in rows))
                 self.assertTrue(all(r["textbook_pages"] and
                                     r["textbook_page_evidence"] == "DIGITAL_TEXT_DRAF_NOT_VISUALLY_APPROVED"
                                     for r in rows))
                 self.assertTrue(all("padanan teks digital DRAF" in r["note"] for r in rows))
-                self.assertEqual(rows[8]["week"], "M10 (cadangan; A separa)")
+                self.assertEqual(rows[8]["week"], "M10 (cadangan; cuti A)")
                 self.assertEqual(rows[8]["a_start"], "2027-03-15")
                 self.assertEqual(rows[8]["b_start"], "2027-03-15")
-                self.assertIn("jangan anggap hari itu cuti", rows[8]["note"])
+                self.assertIn("cuti tambahan KPM Hari Raya Puasa", rows[8]["note"])
                 self.assertEqual(rows[0]["textbook_pages"], "4–7" if year == 4 else rows[0]["textbook_pages"])
                 self.assertEqual([r["id"] for r in rows],
                                  [f"{i:03d}" for i in range(1, 37)])
