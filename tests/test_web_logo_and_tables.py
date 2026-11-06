@@ -96,7 +96,7 @@ class WebLogoAndTables(unittest.TestCase):
                         self.assertEqual(activity.cell(index,1).text,phase["activity"])
                         self.assertEqual(activity.cell(index,2).text,phase["notes"])
                     self.assertIn("4 Bestari",[r.cells[1].text for r in info.rows])
-                    self.assertIn("2027-03-08",[r.cells[1].text for r in info.rows])
+                    self.assertIn("08/03/2027",[r.cells[1].text for r in info.rows])
                     self.assertIn("09:15",[r.cells[1].text for r in info.rows])
                     self.assertEqual(layout["header"][3]["value"],"Monday")
                     self.assertAlmostEqual(doc.sections[0].page_width.cm,21.0,places=1)
