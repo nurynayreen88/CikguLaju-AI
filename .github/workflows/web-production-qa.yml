@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - production/cikgulaju-web-20261105
+      - fix/web-rph-unified-subject-set-arab-music-20261106
     paths:
       - '.github/workflows/web-production-qa.yml'
       - 'tools/run_web_production.py'
@@ -16,6 +17,7 @@ on:
       - 'tests/test_web_v1_telegram_auth_routes.py'
       - 'tests/test_web_direct_telegram_registration.py'
       - 'tests/test_web_production_inventory.py'
+      - 'tests/test_web_unified_rph_preview.py'
       - 'rph_standalone/**'
   workflow_dispatch:
 permissions:
