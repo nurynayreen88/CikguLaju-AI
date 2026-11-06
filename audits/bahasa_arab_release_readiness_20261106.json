@@ -5,10 +5,10 @@
   "pr_url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/336",
   "completed": {
     "unit_indexes": 20,
-    "draft_rph": 250,
+    "draft_rph": 266,
     "unit2_4_activity_banks": 15,
     "draft_crosswalk": 60,
-    "source_page_draft_reviewed": 250,
+    "source_page_draft_reviewed": 266,
     "preliminary_year6_page_candidates": 0,
     "one_page_A4_docx_pdf_ci_verified": true,
     "render_check_ci": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42140759459",
@@ -43,13 +43,15 @@
     "year3_unit3_candidate_rph": 16,
     "verified_a4_render_for_all_234": false,
     "year3_unit4_candidate_rph": 16,
-    "verified_a4_render_for_all_250": false
+    "verified_a4_render_for_all_250": true,
+    "year6_unit2_candidate_rph": 16,
+    "verified_a4_render_for_all_266": false
   },
   "release_checks": [
     {
       "id": "source_book_editions",
       "status": "PARTIAL",
-      "detail": "CRITICAL: Year6 Drive PDF older KSSR six-unit edition differs from Year6 KSSR Semakan 2017 four-unit DBP 2021 textbook ISBN 978-983-49-3300-5; do not use stored PDF for lesson generation. Year3 original 2018 Semakan PDF visually confirmed."
+      "detail": "Year6 WRONG 6-unit Drive KSSR PDF quarantined. Verified correct 2021 DBP ISBN 978-983-49-3300-5 4-unit original public ebook HTML used for Unit2 text. Original page image not yet visually validated."
     },
     {
       "id": "unit_index",
@@ -59,7 +61,7 @@
     {
       "id": "full_pdp_coverage",
       "status": "BLOCKED",
-      "detail": "250 draft candidates, Years2/3/4/5 have candidates for all four textbook units; Year6 Units2–4 unwritten. Per-year 60/58 etc are NOT validated official annual RPT2027 coverage."
+      "detail": "266 draft candidates. Year6 Unit2 newly drafted 16, Year6 Units3/4 unwritten; Years2–5 draft unit coverage not official whole-year RPT2027. 0 approved."
     },
     {
       "id": "sk_sp",
@@ -69,7 +71,7 @@
     {
       "id": "textbook_page_to_pdp",
       "status": "PARTIAL",
-      "detail": "250 candidate source-page links, Year3 Unit4 new 16 based on imaged original book pp88–117; printed SP, teacher manual/linguistic approval and annual RPT still blocked."
+      "detail": "266 draft candidates. Year6 Unit2 16 text-based source pages p32–49 from correct DBP 2021; visual/DSKP/RPT2027 approvals outstanding."
     },
     {
       "id": "rpt_2027_group_A_B",
@@ -79,7 +81,7 @@
     {
       "id": "word_pdf_programmatic_a4",
       "status": "PASS_TECHNICAL_ONLY",
-      "detail": "218 DOCX+PDF one-page A4 technically passed before Year3 Units3/4. Current 250-file render still pending CI."
+      "detail": "250 DOCX+250 PDF one A4 passed after LibreOffice batch fix run https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42144998331. New 266 not yet tested."
     },
     {
       "id": "manual_pedagogic_approval",
@@ -155,6 +157,11 @@
       "id": "year3_unit4_source_candidate",
       "status": "PARTIAL",
       "detail": "Year3 Unit4 16 visually grounded proposals spanning phonics, day/time, daily routine, map/numbers. 0 teacher approvals and no final RPT2027."
+    },
+    {
+      "id": "year6_unit2_correct_edition_citation",
+      "status": "PARTIAL",
+      "detail": "Year6 Unit2 16 source-text-backed proposed RPH from 2021 original ebook printed pp32–49; code, original page visual and teacher approval pending; older Drive source not used."
     }
   ],
   "years": [
@@ -218,14 +225,16 @@
       "year": 6,
       "units": 4,
       "unit1_draft_rph": 12,
-      "source_page_reviewed_rph": 12,
+      "source_page_reviewed_rph": 28,
       "preliminary_mapping_only": 0,
       "unwritten_units": [
-        2,
         3,
         4
       ],
-      "textbook_issue": "CRITICAL source mismatch: stored Drive PDF is older non-Semakan KSSR six-unit Year6 edition, not 2021 DBP four-unit KSSR Semakan. Quarantine Drive PDF, use verified 2021 source only for Year6; 12 draft candidates still unapproved."
+      "textbook_issue": "Correct 2021 ISBN 978-983-49-3300-5 4-unit ebook located, 16 Unit2 proposed RPH 013–028 based on original HTML text pp32–49. Wrong 6-unit Drive PDF quarantined. Original page image, DSKP exact SP, RPT2027 and teacher approval pending.",
+      "incomplete_units": [
+        2
+      ]
     }
   ],
   "total_ready_rph": 0,
