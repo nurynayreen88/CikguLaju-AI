@@ -118,6 +118,15 @@ def main():
     assert len(approval["individual_review"])==96
     assert approval["approvals_granted"]==approval["release_ready_count"]==0
     assert all(not x["release_ready"] for x in approval["individual_review"])
+    assert all(x["automated_dskp_sp_focus_exact_match"] is True
+               and x["automated_rpt_rph_title_unit_code_parity"] is True
+               and x["automated_rph_conclusion_not_generic"] is True
+               and x["automated_progression_distinct_check"] is True
+               and x["semakan_individu_guru"] is False
+               and x["aktiviti_dalam_buku_diluluskan"] is False
+               for x in approval["individual_review"])
+    assert approval["automated_content_audit"]["rph_individually_structurally_tested"]==96
+    assert approval["automated_content_audit"]["unique_dskp_sp_exact_match"]==114
     print("PASS: 96/96 source-linked editorial checks; 114/114 DSKP SP text-match evidence.")
     print("RELEASE REMAINS BLOCKED: textbook activity visuals/teacher approval = 0/96.")
 
