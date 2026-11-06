@@ -93,17 +93,17 @@ def install(rt):
         raw_mid = req.get("proof_telegram_message_id")
         mid = raw_mid if type(raw_mid) is int and raw_mid > 0 else None
         caption = (
-            "🏆 <b>PENGESAHAN RAKAN PEMBANGUN</b>\\n"
-            f"👤 Nama: <b>{_payer_name(uid)}</b>\\n"
-            f"🆔 ID pelanggan: <code>{uid}</code>\\n"
-            f"🧾 Payment ID: <b>#{rid}</b>\\n"
-            "📦 Pakej: <b>Rakan Pembangun</b>\\n"
-            f"💰 Jumlah: <b>RM{amount:.2f}</b>\\n"
-            "📅 Permohonan: " + malaysia_time(req.get("submitted_at")) + "\\n"
-            "📎 Resit diterima: " + malaysia_time(req.get("proof_received_at")) + "\\n"
-            "⌛ Status: <b>PENDING</b>\\n\\n"
+            "🏆 <b>PENGESAHAN RAKAN PEMBANGUN</b>\n"
+            f"👤 Nama: <b>{_payer_name(uid)}</b>\n"
+            f"🆔 ID pelanggan: <code>{uid}</code>\n"
+            f"🧾 Payment ID: <b>#{rid}</b>\n"
+            "📦 Pakej: <b>Rakan Pembangun</b>\n"
+            f"💰 Jumlah: <b>RM{amount:.2f}</b>\n"
+            "📅 Permohonan: " + malaysia_time(req.get("submitted_at")) + "\n"
+            "📎 Resit diterima: " + malaysia_time(req.get("proof_received_at")) + "\n"
+            "⌛ Status: <b>PENDING</b>\n\n"
             "Semak resit dan transaksi sebenar sebelum sahkan."
-        ).replace("\\\\n", "\\n")
+        )
         # Telegram media captions are limited to 1024 characters.
         if len(caption) > 950:
             return send(cid, "⚠️ Maklumat pengesahan terlalu panjang.",
@@ -111,7 +111,7 @@ def install(rt):
                            "callback_data": f"admin_pending|{rid}"}]])
         if not fid and not mid:
             return send(
-                cid, caption + "\\n\\n⚠️ Fail resit tidak tersimpan. "
+                cid, caption + "\n\n⚠️ Fail resit tidak tersimpan. "
                 "Tidak boleh sahkan sehingga bukti boleh disemak.",
                 _pioneer_buttons(rid, uid, may_approve=False))
         buttons = _pioneer_buttons(rid, uid, may_approve=True)
@@ -147,7 +147,7 @@ def install(rt):
             print("ADMIN INLINE RECEIPT DELIVERY ERROR:",
                   type(exc).__name__, flush=True)
         # Do not show an approval button if the receipt couldn't be displayed.
-        return send(cid, caption + "\\n\\n⚠️ Resit tidak dapat dipaparkan. "
+        return send(cid, caption + "\n\n⚠️ Resit tidak dapat dipaparkan. "
                     "Tiada kelulusan dibuat; cuba muat semula.",
                     [[{"text": "🔄 Cuba Lagi",
                        "callback_data": f"admin_pending|{rid}"},
@@ -184,15 +184,15 @@ def install(rt):
                    if proof else [])
         buttons.append([{"text":"🔄 Muat Semula",
                          "callback_data":f"admin_pending|{rid}"}])
-        message = ("🧾 <b>REKOD RESIT</b>\\n"
-            f"ID permohonan: #{rid}\\n"
-            f"ID pelanggan: <code>{req['chat_id']}</code>\\n"
-            "Permohonan dibuat: " + malaysia_time(req.get("submitted_at")) + "\\n"
-            "Resit dihantar: " + malaysia_time(req.get("proof_received_at")) + "\\n"
+        message = ("🧾 <b>REKOD RESIT</b>\n"
+            f"ID permohonan: #{rid}\n"
+            f"ID pelanggan: <code>{req['chat_id']}</code>\n"
+            "Permohonan dibuat: " + malaysia_time(req.get("submitted_at")) + "\n"
+            "Resit dihantar: " + malaysia_time(req.get("proof_received_at")) + "\n"
             + ("✅ Fail resit boleh dibuka." if proof else
                "⚠️ Tiada fail resit tersimpan. Semak chat asal; "
                "minta hantar SEMULA resit sedia ada, bukan bayar lagi.")
-        ).replace("\\\\n", "\\n")
+        )
         send(cid, message, buttons)
         return result
 
