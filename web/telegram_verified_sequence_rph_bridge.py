@@ -11,6 +11,7 @@ import os
 import re
 import tempfile
 import uuid
+from datetime import date
 from pathlib import Path
 from zipfile import ZipFile
 
@@ -152,7 +153,7 @@ def _build_state(runtime, year, subject, unit_token, pdp_code, teacher):
         "skill_metadata": join("skill_metadata"),
         "textbook_ref": join("textbook_ref"),
         "activitybook_ref": join("activitybook_ref"),
-        "rph_class": cls, "rph_date": dt, "rph_time": tm,
+        "rph_class": cls, "rph_date": (date.fromisoformat(dt).strftime("%d/%m/%Y") if dt else ""), "rph_time": tm,
         "rph_day": day, "rph_students": pupils,
         "variation_seed": "web-native-pdp-" + subject + "-" + pdp_code,
     }
