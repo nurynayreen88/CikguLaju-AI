@@ -241,7 +241,7 @@ def install(runtime):
     previous = getattr(runtime, "_rph_rows", None)
     if not callable(previous):
         return False
-    if getattr(runtime, "_bm_web_refinement_installed", False):
+    if getattr(runtime, "_bm_web_refinement_installed", False) is True:
         return True
 
     @wraps(previous)
