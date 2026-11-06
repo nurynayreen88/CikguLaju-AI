@@ -42,7 +42,7 @@ class NativeRBTWebRoutes(unittest.TestCase):
         selected=native.call_args.args[0]
         self.assertEqual(selected["source"],"telegram-native-rbt-2027")
         self.assertEqual(selected["teacher"]["class"],"5 Ikhlas")
-        self.assertEqual(selected["teacher"]["time"],"08:00-09:00")
+        self.assertEqual(selected["teacher"]["time"],"08:00 - 09:00")
         self.assertEqual(selected["teacher"]["date"],"2027-01-04")
         available.assert_called_once_with(5,"u01","001")
 
@@ -99,9 +99,8 @@ class NativeRBTWebRoutes(unittest.TestCase):
 
     def test_no_guest_rbt_download(self):
         with patch("web.unified_rph_web._account",
-                   return_value=(None,(jsonify({"error":"login required"}),401))):
-            with self.client.application.app_context():
-                r=self.client.get("/api/web/rph/pdf",query_string=rbt_query())
+                   return_value=(None,({"error":"login required"},401))):
+            r=self.client.get("/api/web/rph/pdf",query_string=rbt_query())
         self.assertEqual(r.status_code,401)
 
 
