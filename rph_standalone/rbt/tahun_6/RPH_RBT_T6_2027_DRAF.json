@@ -1895,7 +1895,7 @@
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 2,
       "unit_label": "Unit 2: Reka Bentuk Pengaturcaraan",
-      "tajuk": "PdP 018: Membina reka bentuk produk dan penyambungan perkakasan berdasarkan lakaran yang dibuat men",
+      "tajuk": "PdP 018: Membina struktur dan menyambung perkakasan robot berdasarkan lakaran",
       "sk": [
         "6.5"
       ],
@@ -1933,7 +1933,7 @@
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu kemahiran yang dipelajari melalui Membina reka bentuk produk dan penyambungan perkakasan berdasarkan lakaran yang dibuat men serta menunjukkan bukti. Guru merekod SP 6.5.8 dan memastikan komponen disimpan selamat."
+          "aktiviti": "Murid menyatakan satu kemahiran yang dipelajari melalui Membina struktur dan menyambung perkakasan robot berdasarkan lakaran serta menunjukkan bukti. Guru merekod SP 6.5.8 dan memastikan komponen disimpan selamat."
         }
       },
       "pbd_evidens": "Guru memeriksa pemasangan perkakasan robot voltan rendah dan senarai semak dan menanda pematuhan kepada SP 6.5.8, alasan keputusan serta satu pembetulan.",
@@ -2325,7 +2325,7 @@
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 3,
       "unit_label": "Unit 3: Pembangunan Produk",
-      "tajuk": "PdP 022: Menghuraikan gabungan asas teknologi yang sesuai digunakan dengan reka bentuk produk yang ",
+      "tajuk": "PdP 022: Menghuraikan gabungan teknologi untuk membina produk tabung automatik",
       "sk": [
         "8.1"
       ],
@@ -2363,7 +2363,7 @@
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu kemahiran yang dipelajari melalui Menghuraikan gabungan asas teknologi yang sesuai digunakan dengan reka bentuk produk yang  serta menunjukkan bukti. Guru merekod SP 8.1.2 dan memastikan komponen disimpan selamat."
+          "aktiviti": "Murid menyatakan satu kemahiran yang dipelajari melalui Menghuraikan gabungan teknologi untuk membina produk tabung automatik serta menunjukkan bukti. Guru merekod SP 8.1.2 dan memastikan komponen disimpan selamat."
         }
       },
       "pbd_evidens": "Guru memeriksa peta gabungan sensor-mikropengawal-servo dan menanda pematuhan kepada SP 8.1.2, alasan keputusan serta satu pembetulan.",
