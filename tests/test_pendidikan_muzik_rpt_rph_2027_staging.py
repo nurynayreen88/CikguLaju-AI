@@ -426,7 +426,7 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
             "Buku halaman 46–47, Audio 84–86": "Buku halaman 46-47, Audio 84-86",
             "melodi—menaik, menurun—serta": "melodi - menaik, menurun - serta",
             "Guru menyemak peristiwa–bunyi": "Guru menyemak peristiwa-bunyi",
-            "murid ‘menjawab’ “melodi”": "murid 'menjawab' \\"melodi\\"",
+            "murid ‘menjawab’ “melodi”": "murid 'menjawab' \"melodi\"",
         }
         for old, expected in samples.items():
             self.assertEqual(adapter.normalize_for_legacy_doc(old), expected)
