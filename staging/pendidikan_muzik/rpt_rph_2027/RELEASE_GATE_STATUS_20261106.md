@@ -1,3 +1,13 @@
+## 6 November 2026 — kemajuan audit editorial kriteria kejayaan
+
+- **81/81** kriteria kejayaan calon dipadankan dengan objektif, aktiviti dan pentaksiran RPH serta diperiksa secara editorial. Status baharu `CIKGULAJU_EDITORIAL_TEXT_REVIEW_PASSED` ialah **kelulusan teks dalaman sahaja**, bukan pengesahan skor muzik, DSKP keseluruhan atau kelulusan oleh KPM.
+- Butiran setiap satu daripada 81 semakan berada dalam `SUCCESS_CRITERIA_TEXT_ALIGNMENT_AUDIT_20261106.json`. Bukti editorial ini **tidak memberi hak penerbitan automatik**; semua 81 masih memerlukan pengesahan nota/skor rujukan apabila bahan memerlukan pembacaan skor khusus.
+- Penjana RPT Word/PDF kini memaparkan `ANJAL — TARIKH GURU` bagi PdP06 dan PdP19, bukan julat slot asal yang tiada hari calon PdP. CSV asal tidak diubah; penjadualan sebenar tetap guru pilih mengikut negeri.
+- Audio rasmi **dikecualikan daripada skop RPH/RPT teks** dan tidak dihantar/ditawarkan sebagai fail; nombor cetak bukan fail/lesen. Ini tidak mengatasi keperluan semak skor pedagogi.
+- **Penerbitan Telegram/Web masih DITAHAN** sehingga semakan skor, kesesuaian 8 cadangan pengukuhan, dan ujian parity kedua-dua cabang Render selesai. PR #335 kekal DRAF, tiada merge/deploy.
+
+---
+
 
 ## 6 November 2026 — kemas kini kod SP Tahun 4
 
