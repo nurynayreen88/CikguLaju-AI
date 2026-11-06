@@ -551,7 +551,7 @@ function toggleTeacherClassOther(){
 function chosenTeacherClass(){
  return teacherClass.value==="__other__"?teacherClassOther.value.trim():teacherClass.value.trim();
 }
-let verifiedRphKey="";
+let verifiedRphKey="", verifiedRphFormats=["word","pdf"];
 function currentRphLessonKey(){
  return JSON.stringify([year.value,subject.value,theme.value,unit.value,topic.value,lesson.value,subject.value==="PJPK"?component.value:""]);
 }
@@ -579,16 +579,16 @@ function resetRphPreview(){
  const actions=document.getElementById("rph-download-actions");
  const available=canGenerateRph()&&!!currentRphParams()&&verifiedRphKey===currentRphLessonKey();
  actions.hidden=!available;
- document.getElementById("rph-word").disabled=!available;
- document.getElementById("rph-pdf").disabled=!available;
+ document.getElementById("rph-word").disabled=!available||!verifiedRphFormats.includes("word");
+ document.getElementById("rph-pdf").disabled=!available||!verifiedRphFormats.includes("pdf");
  document.getElementById("rph-download-status").textContent="";
 }
 function updateSelectionHelp(message){document.getElementById("selection-help").textContent=message;}
 function showRphAction(){
  const available=canGenerateRph()&&!!currentRphParams()&&verifiedRphKey===currentRphLessonKey();
  document.getElementById("rph-download-actions").hidden=!available;
- document.getElementById("rph-word").disabled=!available;
- document.getElementById("rph-pdf").disabled=!available;
+ document.getElementById("rph-word").disabled=!available||!verifiedRphFormats.includes("word");
+ document.getElementById("rph-pdf").disabled=!available||!verifiedRphFormats.includes("pdf");
 }
 const year=document.getElementById("year"),subject=document.getElementById("subject"),lesson=document.getElementById("lesson"),catalogStatus=document.getElementById("catalog-status");
 const unit=document.getElementById("unit"),component=document.getElementById("component"),theme=document.getElementById("theme"),topic=document.getElementById("topic");
@@ -613,7 +613,8 @@ function subjectNavLabel(code){
  return ({
   BM:"Unit",ENGLISH:"Unit / Topic",PI:"Bidang / Tajuk",
   MATH:"Bidang / Unit",SCIENCE:"Tema / Unit",
-  MORAL:"Unit / Nilai",PSV:"Bidang / Unit",PJPK:"Unit / Tajuk"
+  MORAL:"Unit / Nilai",PSV:"Bidang / Unit",PJPK:"Unit / Tajuk",
+  ARAB:"Unit",MUZIK:"Unit / Tajuk",SEJARAH:"Unit"
  })[code]||"Unit / Tajuk";
 }
 function setSubjectNavigationLabels(){
@@ -809,8 +810,14 @@ async function populateMaterialList(){
  const rphReady=canGenerateRph()&&!!currentRphParams()&&sourceConfirmed;
  const locked=sourceConfirmed&&!canGenerateRph();
  const lockLabel=locked?"Akses diperlukan":"Belum tersedia";
- list.append(materialRow("RPH PDF",{ready:rphReady,statusLabel:lockLabel,onDownload:()=>generateRphFile("pdf")}));
- list.append(materialRow("RPH Word",{ready:rphReady,statusLabel:lockLabel,onDownload:()=>generateRphFile("word")}));
+ const pdfReady=rphReady&&verifiedRphFormats.includes("pdf");
+ const wordReady=rphReady&&verifiedRphFormats.includes("word");
+ list.append(materialRow("RPH PDF",{ready:pdfReady,
+   statusLabel:sourceConfirmed&&!verifiedRphFormats.includes("pdf")?"Format belum disahkan":lockLabel,
+   onDownload:()=>generateRphFile("pdf")}));
+ list.append(materialRow("RPH Word",{ready:wordReady,
+   statusLabel:sourceConfirmed&&!verifiedRphFormats.includes("word")?"Format belum disahkan":lockLabel,
+   onDownload:()=>generateRphFile("word")}));
  if(!rphReady&&sourceConfirmed&&locked)
   status.textContent="RPH tersedia, tetapi akaun ini tiada akses janaan aktif.";
  else if(!rphReady&&!sourceConfirmed)
@@ -964,6 +971,9 @@ async function checkRphAvailability(){
   const body=await response.json();
   if(body.available!==true||body.generator!=="telegram-native")
    throw Error("Sumber RPH belum tersedia.");
+  const formats=Array.isArray(body.formats)?body.formats.filter(f=>["word","pdf"].includes(f)):["word","pdf"];
+  if(!formats.length)throw Error("Tiada format RPH disahkan untuk PdP ini.");
+  verifiedRphFormats=formats;
   verifiedRphKey=selectedKey;
   showRphAction();
   if(body.download_allowed===false){
@@ -973,7 +983,9 @@ async function checkRphAvailability(){
    downloadStatus.textContent=note;
    updateSelectionHelp("Jana Bahan akan memaparkan RPH sebagai tersedia dengan status akses diperlukan, bukan hilang.");
   }else{
-   downloadStatus.textContent="RPH disahkan tersedia melalui Telegram.";
+   downloadStatus.textContent=body.status&&body.status.includes("DRAF")?
+     "RPH DRAF tersedia melalui sumber Telegram untuk SEMAKAN GURU (bukan FINAL READY).":
+     "RPH disahkan tersedia melalui Telegram.";
    updateSelectionHelp("Selepas melengkapkan maklumat RPH jika perlu, tekan Jana Bahan.");
   }
   if(!materialPanel.hidden)void populateMaterialList();
@@ -988,7 +1000,8 @@ async function checkRphAvailability(){
 let rphDownloadBusy=false;
 async function generateRphFile(format){
  const params=currentRphParams();
- if(!params||rphDownloadBusy||verifiedRphKey!==currentRphLessonKey())return;
+ if(!params||rphDownloadBusy||verifiedRphKey!==currentRphLessonKey()||
+    !verifiedRphFormats.includes(format))return;
  const key=params.toString();
  const isPdf=format==="pdf";
  rphDownloadBusy=true;
