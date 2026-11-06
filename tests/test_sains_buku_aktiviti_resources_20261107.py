@@ -1,0 +1,28 @@
+"""Staged Web/Telegram book download metadata test, never live-enabled."""
+import unittest
+from web.sains_buku_aktiviti_resources_20261107 import proposed_material
+
+class TestSainsBAResources(unittest.TestCase):
+    def test_same_original_year_file_for_all_pdp_and_distinct_exercise_pages(self):
+        a=proposed_material("Sains",2,"SCI-Y2-PDP-001","3.1.1")
+        b=proposed_material("Sains",2,"SCI-Y2-PDP-002","3.1.2")
+        self.assertEqual(a["source_url"],b["source_url"])
+        self.assertNotEqual(a["book_printed_page"],b["book_printed_page"])
+        self.assertEqual(a["book_printed_page"],13)
+        self.assertEqual(b["pdf_page_1_based"],18)
+        self.assertFalse(a["ready_for_runtime"])
+        self.assertEqual(a["material_type"],"BUKU_AKTIVITI")
+    def test_science_year3_different_file_and_precise_exercise(self):
+        y3=proposed_material("Sains",3,"SCI-Y3-PDP-044","10.1.4")
+        y2=proposed_material("Sains",2,"SCI-Y2-PDP-044","9.2.5")
+        self.assertNotEqual(y3["source_url"],y2["source_url"])
+        self.assertEqual(y3["book_printed_page"],90)
+        self.assertEqual(y3["exercise"],"Model Takal Saya")
+    def test_not_other_year_or_subject(self):
+        self.assertIsNone(proposed_material("Matematik",2,"SCI-Y2-PDP-001","3.1.1"))
+        self.assertIsNone(proposed_material("Sains",4,"SCI-Y4-PDP-001","2.1.1"))
+        with self.assertRaises(ValueError):
+            proposed_material("Sains",3,"SCI-Y3-PDP-001","3.1.2")
+
+if __name__=="__main__":
+    unittest.main()
