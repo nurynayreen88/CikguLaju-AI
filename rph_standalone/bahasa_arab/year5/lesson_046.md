@@ -4,7 +4,7 @@
 **Fokus PdP:** Mengecam kata haiwan daripada audio guru
 **SK/SP cadangan:** 1.1 / 1.1.2 — kod terdapat pada teks latihan Buku Teks Unit 4 h86, tetapi penomboran PdP RPT 2027 ialah cadangan, belum disahkan.
 **Tarikh / masa / kelas:** Diisi guru berdasarkan negeri, jadual waktu, bilangan murid serta tempoh sebenar.
-**Kosa kata / ayat:** قرد، كلب، صقر، ثعبان، تمساح
+**Kosa kata / ayat:** قط، كلب، صقر، ثعبان، تمساح
 **Objektif pembelajaran:** Memilih empat daripada lima gambar haiwan berdasarkan sebutan yang didengar.
 **Kriteria kejayaan:** Murid mencapai hasil yang dinyatakan dalam objektif; guru merekod individu yang memerlukan pemulihan.
 
