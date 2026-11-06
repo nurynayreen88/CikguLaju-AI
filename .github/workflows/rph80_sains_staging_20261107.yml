@@ -1,0 +1,46 @@
+name: RPH 80 Sains staging quality gate
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - staging/sains-rpt-2027-ab-clean-20261106
+    paths:
+      - "web/sains_y3_rph_activity_preview_20261106.py"
+      - "tools/audit_rph80_sains_first_20261107.py"
+      - "audits/rph80_program_20261107.md"
+      - "tests/test_rph80_sains_quality_gate_20261107.py"
+      - ".github/workflows/rph80_sains_staging_20261107.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  sains-staging:
+    if: github.event_name == 'workflow_dispatch' || startsWith(github.head_ref, 'staging/rph80-')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install stage-only document dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install python-docx pypdf reportlab
+      - name: Validate false-ready gate and Sains Year3 pedagogy
+        run: python -m unittest discover -s tests -p 'test_rph80_sains_quality_gate_20261107.py' -v
+      - name: Build verified-source Sains A/B staging draft indices
+        run: python -m tools.render_sains_rpt_2027_ab_review_20261106
+      - name: Audit 342 unique Sains PdP and export review queue
+        run: python -m tools.audit_rph80_sains_first_20261107
+      - name: Retain audit evidence only; never deploy
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: SAINS_RPH80_STAGING_HOLD_20261107
+          if-no-files-found: warn
+          path: |
+            build/rph80_sains_20261107/*.csv
+            build/rph80_sains_20261107/*.json
