@@ -44,12 +44,12 @@ def rbt_32_week_scenario(year: int, *, start_week: int = 3):
             "a_start": a_start, "a_end": a_end,
             "b_start": b_start, "b_end": b_end,
             "schedule_status": "EDITORIAL_ILLUSTRATION_NOT_APPROVED",
-            "schedule_basis": "Assume 1 RBT period of 60 minutes per week, starting M03.",
+            "schedule_basis": f"Assume 1 RBT period of 60 minutes per week, starting M{start_week:02d}.",
             "original_week": originals[offset]["week"],
             "original_a_start": originals[offset]["a_start"],
             "original_b_start": originals[offset]["b_start"],
             "note": row["note"] +
-                    " **SIMULASI SAHAJA**: satu PdP 60 minit pada setiap minggu cadangan."
+                    " SIMULASI SAHAJA: satu PdP 60 minit pada setiap minggu cadangan."
                     " Ini JULAT MINGGU, bukan tarikh kelas sebenar."
                     " Semak jadual guru, hari PdP, cuti umum negeri dan masa projek."
         })
