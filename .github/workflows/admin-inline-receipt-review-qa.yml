@@ -1,0 +1,30 @@
+name: Admin inline Rakan receipt review QA
+on:
+  push:
+    branches: [fix/admin-pending-inline-receipt-20261106]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'flask==3.1.3' 'requests==2.32.3'
+      - run: python -m py_compile web/payment_receipt_admin_runtime.py pioneer_telegram.py web/telegram_web_receipt_admin_notification.py
+      - name: Consolidated receipt card from Pending list (PDF, photo and failures)
+        run: python -m unittest discover -s . -p test_payment_receipt_admin_runtime.py -v
+      - name: Web receipt Telegram notification and admin-only review
+        run: python -m unittest discover -s tests -p test_telegram_web_receipt_admin_notification.py -v
+      - name: Stale approval and owner-binding protections
+        run: python -m unittest discover -s tests -p test_pioneer_approval_recovery.py -v
+      - name: Revoked-member reactivation and source payment controls
+        run: python -m unittest discover -s tests -p test_pioneer_supabase.py -v
+      - name: Telegram payment proof-first and durable Supabase queue tests
+        run: |
+          python -m unittest discover -s . -p test_payment_record_on_proof_runtime.py -v
+          python -m unittest discover -s . -p test_supabase_user_payment_runtime.py -v
