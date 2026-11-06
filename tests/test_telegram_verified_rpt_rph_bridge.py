@@ -60,6 +60,7 @@ class NativeRPTBridgeTests(unittest.TestCase):
         self.assertEqual(state["sp_code"],"2.3.1")
         self.assertIn("membaca petikan",state["rpt_activity_note"])
         self.assertEqual(state["rph_class"],"2 Bestari")
+        self.assertEqual(state["rph_date"],"06/11/2026")
 
     def test_wrong_unit_or_subject_never_uses_stale_rpt(self):
         for selection in ({**self.selection,"unit":"Unit Lain"},
