@@ -31,6 +31,26 @@ jobs:
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_ba_source_integrity.py --output pi_ba_source_integrity.json
       - name: Prepare 174 conditional Jawi activity-book cues (not teacher material)
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_ba_sentence_candidates.py --output pi_ba_sentence_candidates_174.json
+      - name: Prepare 174-lesson BA verification register (CSV and JSON; editor only)
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_ba_verification_register.py --json pi_ba_verification_register_174.json --csv pi_ba_verification_register_174.csv
+      - name: Verify every audit artifact exists, is nonempty, and stays review-only
+        shell: bash
+        run: |
+          for file in \
+            pi_quality_audit_696.json \
+            pi_pedagogy_proposals_690.json \
+            pi_buku_aktiviti_audit_696.json \
+            pi_ba_candidate_queue_258.json \
+            pi_ba_secondary_evidence_42.json \
+            pi_ba_source_integrity.json \
+            pi_ba_sentence_candidates_174.json \
+            pi_ba_verification_register_174.json \
+            pi_ba_verification_register_174.csv; do
+            if [ ! -s "$file" ]; then
+              echo "::error::Audit artifact missing or empty: $file"
+              exit 1
+            fi
+          done
       - name: Upload isolated QA ledger and review queue (not teacher material)
         uses: actions/upload-artifact@v4
         with:
@@ -40,5 +60,9 @@ jobs:
             pi_pedagogy_proposals_690.json
             pi_buku_aktiviti_audit_696.json
             pi_ba_candidate_queue_258.json
-            pi_ba_secondary_evidence_21.json
+            pi_ba_secondary_evidence_42.json
+            pi_ba_source_integrity.json
+            pi_ba_sentence_candidates_174.json
+            pi_ba_verification_register_174.json
+            pi_ba_verification_register_174.csv
           retention-days: 30
