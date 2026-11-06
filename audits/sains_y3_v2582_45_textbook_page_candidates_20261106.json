@@ -1,0 +1,738 @@
+{
+  "source": "GuruBesar_BukuTeks_Sains_T3_SK.pdf",
+  "url": "https://drive.google.com/file/d/17QNqKZjSF7V9GzzkXkz46bDJGnyKYq-F/view",
+  "target_v25_82_year3_source_rows": 45,
+  "method": "Cautious parsed Book Text SP tags + 10 textbook unit boundaries; one TOC heading for 10.1.4. All candidate only pending visual and curricular approval.",
+  "counts": {
+    "tagged_sp_evidence": 44,
+    "toc_heading_only": 1,
+    "unresolved": 0
+  },
+  "items": [
+    {
+      "pdp_code": "SCI-Y3-PDP-001",
+      "year_label": "Tahun 3",
+      "sp_code": "3.1.1",
+      "unit_number": 3,
+      "source_pdp_title_unverified": "Menyatakan jenis gigi dan fungsinya.",
+      "printed_book_page_candidates": [
+        30
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-002",
+      "year_label": "Tahun 3",
+      "sp_code": "3.1.2",
+      "unit_number": 3,
+      "source_pdp_title_unverified": "Melabelkan struktur gigi.",
+      "printed_book_page_candidates": [
+        32
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-003",
+      "year_label": "Tahun 3",
+      "sp_code": "3.1.3",
+      "unit_number": 3,
+      "source_pdp_title_unverified": "Membanding dan membezakan set gigi susu dan set gigi kekal.",
+      "printed_book_page_candidates": [
+        34,
+        36
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-004",
+      "year_label": "Tahun 3",
+      "sp_code": "3.1.4",
+      "unit_number": 3,
+      "source_pdp_title_unverified": "Menghubung kait penjagaan kesihatan gigi dengan struktur gigi.",
+      "printed_book_page_candidates": [
+        37,
+        38
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-005",
+      "year_label": "Tahun 3",
+      "sp_code": "3.1.5",
+      "unit_number": 3,
+      "source_pdp_title_unverified": "Menjelaskan pemerhatian tentang gigi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "printed_book_page_candidates": [
+        36,
+        38
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-006",
+      "year_label": "Tahun 3",
+      "sp_code": "3.2.1",
+      "unit_number": 3,
+      "source_pdp_title_unverified": "Memberi contoh makanan bagi setiap kelas makanan.",
+      "printed_book_page_candidates": [
+        40,
+        41
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-007",
+      "year_label": "Tahun 3",
+      "sp_code": "3.2.2",
+      "unit_number": 3,
+      "source_pdp_title_unverified": "Menyatakan kepentingan makanan mengikut kelasnya kepada tubuh manusia.",
+      "printed_book_page_candidates": [
+        42
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-008",
+      "year_label": "Tahun 3",
+      "sp_code": "3.2.3",
+      "unit_number": 3,
+      "source_pdp_title_unverified": "Menjelas dengan contoh makanan seimbang berdasarkan piramid makanan.",
+      "printed_book_page_candidates": [
+        44
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-009",
+      "year_label": "Tahun 3",
+      "sp_code": "3.2.4",
+      "unit_number": 3,
+      "source_pdp_title_unverified": "Menaakul kesan pengambilan makanan yang tidak seimbang.",
+      "printed_book_page_candidates": [
+        47
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-010",
+      "year_label": "Tahun 3",
+      "sp_code": "3.3.1",
+      "unit_number": 3,
+      "source_pdp_title_unverified": "Manusia — Menerangkan proses pencernaan.",
+      "printed_book_page_candidates": [
+        49,
+        52
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-011",
+      "year_label": "Tahun 3",
+      "sp_code": "3.3.2",
+      "unit_number": 3,
+      "source_pdp_title_unverified": "Manusia — Merumus tentang makanan tercerna yang tidak diperlukan oleh badan.",
+      "printed_book_page_candidates": [
+        50,
+        51
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-012",
+      "year_label": "Tahun 3",
+      "sp_code": "4.1.1",
+      "unit_number": 4,
+      "source_pdp_title_unverified": "Haiwan — Mengelas haiwan mengikut tabiat pemakanan.",
+      "printed_book_page_candidates": [
+        60,
+        63
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-013",
+      "year_label": "Tahun 3",
+      "sp_code": "4.1.2",
+      "unit_number": 4,
+      "source_pdp_title_unverified": "Haiwan — Menjelaskan dengan contoh tabiat pemakanan haiwan herbivor, karnivor dan omnivor.",
+      "printed_book_page_candidates": [
+        62,
+        63,
+        68
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-014",
+      "year_label": "Tahun 3",
+      "sp_code": "4.1.3",
+      "unit_number": 4,
+      "source_pdp_title_unverified": "Haiwan — Membuat inferens tentang kumpulan haiwan berdasarkan tabiat pemakanan.",
+      "printed_book_page_candidates": [
+        62,
+        63,
+        68
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-015",
+      "year_label": "Tahun 3",
+      "sp_code": "4.1.4",
+      "unit_number": 4,
+      "source_pdp_title_unverified": "Haiwan — Membanding dan membezakan kegigian haiwan herbivor, karnivor dan omnivor.",
+      "printed_book_page_candidates": [
+        64,
+        68
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-016",
+      "year_label": "Tahun 3",
+      "sp_code": "4.1.5",
+      "unit_number": 4,
+      "source_pdp_title_unverified": "Haiwan — Menjelaskan pemerhatian tentang tabiat pemakanan haiwan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "printed_book_page_candidates": [
+        67
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-017",
+      "year_label": "Tahun 3",
+      "sp_code": "5.1.1",
+      "unit_number": 5,
+      "source_pdp_title_unverified": "Tumbuhan — Memberi contoh tumbuhan bagi setiap cara pembiakan.",
+      "printed_book_page_candidates": [
+        77
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-018",
+      "year_label": "Tahun 3",
+      "sp_code": "5.1.2",
+      "unit_number": 5,
+      "source_pdp_title_unverified": "Tumbuhan — Menyatakan satu tumbuhan boleh membiak melalui pelbagai cara dengan menjalankan projek.",
+      "printed_book_page_candidates": [
+        74
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-019",
+      "year_label": "Tahun 3",
+      "sp_code": "5.1.3",
+      "unit_number": 5,
+      "source_pdp_title_unverified": "Tumbuhan — Menaakul kepentingan pembiakan tumbuhan kepada hidupan.",
+      "printed_book_page_candidates": [
+        76
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-020",
+      "year_label": "Tahun 3",
+      "sp_code": "5.1.4",
+      "unit_number": 5,
+      "source_pdp_title_unverified": "Tumbuhan — Menjelaskan pemerhatian tentang pembiakan tumbuhan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "printed_book_page_candidates": [
+        77
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-021",
+      "year_label": "Tahun 3",
+      "sp_code": "6.1.1",
+      "unit_number": 6,
+      "source_pdp_title_unverified": "Pengukuran — Menyatakan unit yang digunakan untuk mengukur luas dan isi padu.",
+      "printed_book_page_candidates": [
+        80,
+        85
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-022",
+      "year_label": "Tahun 3",
+      "sp_code": "6.1.2",
+      "unit_number": 6,
+      "source_pdp_title_unverified": "Pengukuran — Mengukur luas permukaan sekata menggunakan petak yang berukuran 1 cm x 1 cm.",
+      "printed_book_page_candidates": [
+        81
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-023",
+      "year_label": "Tahun 3",
+      "sp_code": "6.1.3",
+      "unit_number": 6,
+      "source_pdp_title_unverified": "Pengukuran — Mengukur isi padu kotak lohong dengan menggunakan kubus yang berukuran 1 cm x 1 cm x 1 cm.",
+      "printed_book_page_candidates": [
+        83
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-024",
+      "year_label": "Tahun 3",
+      "sp_code": "6.1.4",
+      "unit_number": 6,
+      "source_pdp_title_unverified": "Pengukuran — Mengukur isi padu cecair menggunakan alat dan teknik yang betul.",
+      "printed_book_page_candidates": [
+        86
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-025",
+      "year_label": "Tahun 3",
+      "sp_code": "6.1.5",
+      "unit_number": 6,
+      "source_pdp_title_unverified": "Pengukuran — Mengukur isi padu cecair menggunakan alat dan teknik yang betul.",
+      "printed_book_page_candidates": [
+        88,
+        90
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-026",
+      "year_label": "Tahun 3",
+      "sp_code": "6.1.6",
+      "unit_number": 6,
+      "source_pdp_title_unverified": "Pengukuran — Menyelesaikan masalah untuk menentukan isi padu pepejal tidak sekata melalui kaedah sesaran air.",
+      "printed_book_page_candidates": [
+        91
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-027",
+      "year_label": "Tahun 3",
+      "sp_code": "6.1.7",
+      "unit_number": 6,
+      "source_pdp_title_unverified": "Pengukuran — Menjelaskan pemerhatian tentang pengukuran luas dan isi padu melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "printed_book_page_candidates": [
+        90
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-028",
+      "year_label": "Tahun 3",
+      "sp_code": "7.1.1",
+      "unit_number": 7,
+      "source_pdp_title_unverified": "Ketumpatan — Membuat inferens tentang objek atau bahan yang timbul atau objek yang tenggelam dengan menjalankan aktiviti.",
+      "printed_book_page_candidates": [
+        96,
+        102
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-029",
+      "year_label": "Tahun 3",
+      "sp_code": "7.1.2",
+      "unit_number": 7,
+      "source_pdp_title_unverified": "Ketumpatan — Menyelesaikan masalah bagi mengenal pasti kaedah untuk menjadikan air lebih tumpat.",
+      "printed_book_page_candidates": [
+        98,
+        99
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-030",
+      "year_label": "Tahun 3",
+      "sp_code": "7.1.3",
+      "unit_number": 7,
+      "source_pdp_title_unverified": "Ketumpatan — Menyelesaikan masalah bagi mengenal pasti kaedah untuk menjadikan air lebih tumpat.",
+      "printed_book_page_candidates": [
+        99,
+        100
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-031",
+      "year_label": "Tahun 3",
+      "sp_code": "7.1.4",
+      "unit_number": 7,
+      "source_pdp_title_unverified": "Ketumpatan — Menjelaskan pemerhatian tentang objek atau bahan yang lebih tumpat dan kurang tumpat daripada air melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "printed_book_page_candidates": [
+        100,
+        102
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-032",
+      "year_label": "Tahun 3",
+      "sp_code": "8.1.1",
+      "unit_number": 8,
+      "source_pdp_title_unverified": "Menguji bahan yang berasid, beralkali dan neutral dari segi perubahan warna kertas litmus dengan menjalankan penyiasatan.",
+      "printed_book_page_candidates": [
+        106
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-033",
+      "year_label": "Tahun 3",
+      "sp_code": "8.1.2",
+      "unit_number": 8,
+      "source_pdp_title_unverified": "Menerangkan bahan yang berasid, beralkali dan neutral dari aspek rasa dan sentuhan dengan menguji beberapa contoh bahan.",
+      "printed_book_page_candidates": [
+        109,
+        110
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-034",
+      "year_label": "Tahun 3",
+      "sp_code": "8.1.3",
+      "unit_number": 8,
+      "source_pdp_title_unverified": "Meneroka bahan lain yang boleh menguji bahan berasid, beralkali dan neutral.",
+      "printed_book_page_candidates": [
+        112
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-035",
+      "year_label": "Tahun 3",
+      "sp_code": "8.1.4",
+      "unit_number": 8,
+      "source_pdp_title_unverified": "Menjelaskan pemerhatian tentang asid dan alkali melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "printed_book_page_candidates": [
+        110,
+        111
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-036",
+      "year_label": "Tahun 3",
+      "sp_code": "9.1.1",
+      "unit_number": 9,
+      "source_pdp_title_unverified": "Menyenaraikan ahli dalam Sistem Suria melalui pemerhatian menerusi pelbagai media.",
+      "printed_book_page_candidates": [
+        116,
+        118
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-037",
+      "year_label": "Tahun 3",
+      "sp_code": "9.1.2",
+      "unit_number": 9,
+      "source_pdp_title_unverified": "Menerangkan planet beredar mengelilingi Matahari mengikut orbit.",
+      "printed_book_page_candidates": [
+        120
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-038",
+      "year_label": "Tahun 3",
+      "sp_code": "9.1.3",
+      "unit_number": 9,
+      "source_pdp_title_unverified": "Menghubung kait kedudukan planet dari Matahari dengan masa planet beredar mengelilingi Matahari.",
+      "printed_book_page_candidates": [
+        122,
+        123
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-039",
+      "year_label": "Tahun 3",
+      "sp_code": "9.1.4",
+      "unit_number": 9,
+      "source_pdp_title_unverified": "Menghubung kait kedudukan planet dari Matahari dengan masa planet beredar mengelilingi Matahari.",
+      "printed_book_page_candidates": [
+        124,
+        125
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-040",
+      "year_label": "Tahun 3",
+      "sp_code": "9.1.5",
+      "unit_number": 9,
+      "source_pdp_title_unverified": "Menjelaskan pemerhatian tentang sistem suria melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "printed_book_page_candidates": [
+        118,
+        123,
+        125
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-041",
+      "year_label": "Tahun 3",
+      "sp_code": "10.1.1",
+      "unit_number": 10,
+      "source_pdp_title_unverified": "Menyatakan maksud dan kegunaan takal.",
+      "printed_book_page_candidates": [
+        128
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-042",
+      "year_label": "Tahun 3",
+      "sp_code": "10.1.2",
+      "unit_number": 10,
+      "source_pdp_title_unverified": "Memerihalkan cara takal tetap berfungsi dengan menggunakan model.",
+      "printed_book_page_candidates": [
+        129
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-043",
+      "year_label": "Tahun 3",
+      "sp_code": "10.1.3",
+      "unit_number": 10,
+      "source_pdp_title_unverified": "Memberi contoh aplikasi takal dalam kehidupan.",
+      "printed_book_page_candidates": [
+        131,
+        135
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-044",
+      "year_label": "Tahun 3",
+      "sp_code": "10.1.4",
+      "unit_number": 10,
+      "source_pdp_title_unverified": "Mereka cipta model takal yang berfungsi.",
+      "printed_book_page_candidates": [
+        133
+      ],
+      "source_evidence": "BT_CONTENTS_HEADING_NOT_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-045",
+      "year_label": "Tahun 3",
+      "sp_code": "10.1.5",
+      "unit_number": 10,
+      "source_pdp_title_unverified": "Menjelaskan pemerhatian tentang takal melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "printed_book_page_candidates": [
+        135
+      ],
+      "source_evidence": "BT_PAGE_SP_TAG",
+      "visual_layout_check": "PENDING",
+      "teacher_approval": "PENDING",
+      "final_textbook_ref_in_database": false,
+      "release": "HOLD"
+    }
+  ],
+  "missing_source_sp_pages": [
+    {
+      "sp": "3.2.5",
+      "pages": [
+        41
+      ]
+    },
+    {
+      "sp": "3.3.3",
+      "pages": [
+        52
+      ]
+    },
+    {
+      "sp": "3.3.4",
+      "pages": [
+        51,
+        54
+      ]
+    }
+  ],
+  "db_write_allowed": false,
+  "release_decision": "HOLD",
+  "date": "2026-11-06"
+}
