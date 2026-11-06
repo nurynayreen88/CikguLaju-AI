@@ -432,6 +432,24 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
         # A future production integration MUST implement source-digest parity,
         # actual DOCX/PDF rendering and approval gates separately.
 
+    def test_81_success_criteria_crosschecked_without_fake_release_approval(self):
+        root = MUSIC / "rpt_rph_2027"
+        audit = json.loads((root / "SUCCESS_CRITERIA_TEXT_ALIGNMENT_AUDIT_20261106.json").read_text(encoding="utf-8"))
+        overlay = json.loads((root / "SUCCESS_CRITERIA_DRAFT_20261106.json").read_text(encoding="utf-8"))
+        self.assertEqual(audit["summary"]["total"], 81)
+        self.assertEqual(audit["summary"]["needs_score_review"], 81)
+        self.assertEqual(audit["summary"]["editorially_approved"], 0)
+        self.assertEqual(set(audit["records"]), set(overlay))
+        for ident, row in audit["records"].items():
+            year, pdp = int(ident.split("-")[1][1:]), int(ident.split("-")[2])
+            src = (root / f"year{year}" / f"rph_pdp_{pdp:02d}.md").read_text(encoding="utf-8")
+            self.assertEqual(row["criterion"], overlay[ident]["criterion"])
+            self.assertIn(row["objective"], src)
+            self.assertIn(row["assessment"], src)
+            self.assertGreaterEqual(row["lexical_alignment_score"], 0.5)
+            self.assertEqual(row["editorial_approval"], "NOT_GIVEN")
+            self.assertEqual(row["source_score_visual_review"], "PENDING")
+
     def test_all_81_specific_success_criteria_overlays_remain_draft(self):
         overlay = json.loads((SOURCE / "SUCCESS_CRITERIA_DRAFT_20261106.json").read_text(encoding="utf-8"))
         self.assertEqual(len(overlay), 81)
