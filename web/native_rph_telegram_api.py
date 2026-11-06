@@ -218,7 +218,7 @@ def build_native_input(payload):
         "topic":_extract(meta,"Topic","Tajuk") or unit,
         "subtopic":"",
         "lesson_no":lesson,"textbook_lesson_no":lesson,"lesson":lesson,
-        "rph_class":cls,"rph_date":dt,"rph_time":tm,
+        "rph_class":cls,"rph_date":(day.strftime("%d/%m/%Y") if day else "") if subject=="SEJARAH" else dt,"rph_time":tm,
         "rph_day":((
             ("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday")
             if subject=="ENGLISH" else
