@@ -17,11 +17,27 @@ PDPR_2021 = "https://www.scribd.com/document/521518334/PENDIDIKAN-ISLAM-TAHUN-3"
 VIDEO_JAWI_AWALAN = "https://www.youtube.com/watch?v=u-dmxZOf41g"
 VIDEO_JAWI_APITAN = "https://www.youtube.com/watch?v=MSrVyaNELpo"
 VIDEO_ADAB_T2 = "https://www.youtube.com/watch?v=75s3VFoIe40"
+VIDEO_SIFAT_ALLAH_T2 = "https://www.youtube.com/watch?v=BSpHQrfWSek"
+VIDEO_JAWI_RANGKAI_T2 = "https://www.youtube.com/watch?v=b2eASxNjJl8"
+PDPR_IBADAH_T2 = "https://id.scribd.com/document/687850559/Arahan-pdpr"
+PDPR_JAWI_T2 = "https://anyflip.com/zyehf/oytf/basic/51-100"
+PDPR_SOLAT_T2 = "https://anyflip.com/eaett/uwyi/basic/51-100"
+VIDEO_JAWI_T3_TEKSA = "https://www.youtube.com/watch?v=bxXQs4lEV9M"
 
 # id, suspected printed pages, required SP keyword, source, topic matched in
 # secondary lesson plan / teacher guide / video DESCRIPTION.
 # Not all pages shown by videos have been viewed or checked directly.
 EVIDENCE = (
+    ("T2-L002", (55,56,57,58,59,60), "صيفت", VIDEO_SIFAT_ALLAH_T2, "Sifat-sifat Allah: halaman dirujuk video BA, belum pilih latihan"),
+    ("T2-L005", (55,56,57,58,59,60), "صيفت", VIDEO_SIFAT_ALLAH_T2, "Sifat-sifat Allah: halaman dirujuk video BA, belum pilih latihan"),
+    ("T2-L008", (55,56,57,58,59,60), "صيفت", VIDEO_SIFAT_ALLAH_T2, "Sifat-sifat Allah: halaman dirujuk video BA, belum pilih latihan"),
+    ("T2-L042", (83,), "شرط", PDPR_IBADAH_T2, "Syarat wajib dan sah solat: buku aktiviti p83"),
+    ("T2-L045", (83,), "شرط", PDPR_IBADAH_T2, "Syarat wajib dan sah solat: calon p83 belum dipilih latihan"),
+    ("T2-L052", (43,44,45), "رڠكاي", VIDEO_JAWI_RANGKAI_T2, "Jawi Pemandanganku Indah: tajuk sahaja; bentuk rangkai kata belum diperiksa"),
+    ("T2-L085", (53,54), "تيك س", PDPR_JAWI_T2, "Jawi Kampungku Damai SK6.3: teks pendek"),
+    ("T2-L088", (53,54), "تيك س", PDPR_JAWI_T2, "Jawi Kampungku Damai SK6.3: teks pendek"),
+    ("T2-L093", (93,), "سنة هيئات", PDPR_SOLAT_T2, "Bacaan sunat solatku: latihan BA p93"),
+    ("T2-L096", (93,), "سنة هيئات", PDPR_SOLAT_T2, "Bacaan sunat solatku: p93 bukan semakan bacaan/hafazan"),
     ("T2-L108", (134,135,136), "رسول الله", VIDEO_ADAB_T2, "Kekasihku Rasulullah"),
     ("T3-L003", (65,66), "العليم", PDPR_2021, "Al-Alim dan Al-Hakim: pengertian dan dalil"),
     ("T3-L007", (67,68), "العليم", PDPR_2021, "Al-Alim dan Al-Hakim: kesan beriman"),
@@ -48,6 +64,8 @@ EVIDENCE = (
     ("T3-L118", (90,91,92,93,94,95,96), "ابعاض", PDPR_2021, "Sunat Ab\'adh dan Hai\'at: julat latihan PdPR, bukan pilihan latihan tertentu"),
     ("T3-L128", (28,29,30), "الفاتحة", PDPR_2021, "Kefahaman Surah Al-Fatihah: makna dan pengajaran"),
     ("T3-L123", (59,), "اڤيتن", PDPR_2020, "Jawi imbuhan apitan: latihan menulis"),
+    ("T3-L127", (61,62,63), "اڤيتن", VIDEO_JAWI_T3_TEKSA, "Jawi membina ayat berimbuhan apitan"),
+    ("T3-L131", (61,62,63), "اڤيتن", VIDEO_JAWI_T3_TEKSA, "Jawi membina ayat berimbuhan apitan"),
     ("T3-L097", (35,), "إخفاء حقيقي", PDPR_2020, "Tajwid ikhfa hakiki"),
     ("T3-L099", (72,), "كتاب", PDPR_2020, "Beriman kepada kitab: pengertian dan dalil"),
     ("T3-L103", (73,), "كتاب", PDPR_2020, "Beriman kepada kitab: nama kitab"),
@@ -97,7 +115,7 @@ def evidence_queue(root=None):
             "review_next": "Inspect original book on reported printed page, verify exact exercise and "
                            "SP fit, obtain signoff and only then propose one concise RPH sentence.",
         })
-    assert len(result) == 30
+    assert len(result) == 42
     return {
         "year2_year3_candidate_lessons": a["refined_page_review_candidates"],
         "secondary_page_hints": len(result),
