@@ -18,6 +18,9 @@ class RPT2027SecondBatchQA(unittest.TestCase):
                 rows = sejarah_records(year)
                 self.assertEqual(len(rows), 36)
                 self.assertTrue(validate_rows("sejarah", year, rows))
+                self.assertTrue(all(r["sk_display"].startswith(r["sk"] + " — ") for r in rows))
+                self.assertTrue(all(" — " in r["sp_display"] for r in rows))
+                self.assertTrue(all(len(r["sp_display"]) > len(r["sp"]) + 5 for r in rows))
                 self.assertTrue(all(r["sk"] and r["sp"] and r["a_start"] and r["b_start"]
                                     for r in rows))
                 self.assertTrue(all(r["week"] == "Agihan cadangan" for r in rows))
