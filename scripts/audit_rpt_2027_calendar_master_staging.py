@@ -55,17 +55,31 @@ def audit_rows(subject, year, rows, master):
                 category = "week_known_but_missing_group_dates"
             elif any(dates[g] != (master[g][week]["start"], master[g][week]["end"])
                      for g in ("A", "B")):
-                category = "week_and_date_mismatch"
+                # A source may label the Nth taught lesson as MNN, even when
+                # the central school week skips a cuti. Suggest RELABEL ONLY
+                # if both A and B date pairs match one unique official week.
+                matched = [
+                    candidate for candidate in master["A"]
+                    if candidate in master["B"] and
+                    all(dates[g] == (master[g][candidate]["start"],
+                                     master[g][candidate]["end"])
+                        for g in ("A", "B"))
+                ]
+                category = ("source_week_label_conflicts_with_master"
+                            if len(matched) == 1 else "week_and_date_mismatch")
             else:
                 category = "aligned_to_master_week"
         tally[category] += 1
         if category != "aligned_to_master_week" and len(report["examples"]) < 12:
-            report["examples"].append({
+            example = {
                 "pdp": row.get("display_id") or row["id"],
                 "week": raw_week, "category": category,
                 "a_start": dates["A"][0], "a_end": dates["A"][1],
                 "b_start": dates["B"][0], "b_end": dates["B"][1],
-            })
+            }
+            if category == "source_week_label_conflicts_with_master":
+                example["suggested_master_week_label_only"] = matched[0]
+            report["examples"].append(example)
     report["status_counts"] = dict(sorted(tally.items()))
     report["requires_review"] = any(category != "aligned_to_master_week" for category in tally)
     return report
