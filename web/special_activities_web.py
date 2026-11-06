@@ -18,7 +18,7 @@ from zipfile import ZipFile, BadZipFile
 from flask import Blueprint, jsonify, request, send_file
 from web.english_rpt_2027_http import _account, _has_paid_access
 from web.native_verified_rpt_rph_client import _backend
-from web.native_telegram_rph_client import BlockRedirects
+from web.native_telegram_rph_client import BlockRedirects, NativeRPHUnavailable
 from web.unified_rph_web import _teacher_context
 
 bp = Blueprint("special_activity_web", __name__)
@@ -86,7 +86,10 @@ def _selection(*, extra=False):
 
 
 def _private_request(endpoint, *, query=None, payload=None, fmt=None, opener=None):
-    base, token = _backend()  # exact configured Telegram URL; no public fallback
+    try:
+        base, token = _backend()  # exact configured Telegram URL; no public fallback
+    except NativeRPHUnavailable:
+        raise SourceUnavailable("Telegram special RPH service not configured") from None
     if endpoint not in ("subjects", "options", "preview", "render"):
         raise ValueError("Unapproved native endpoint")
     query_string = ("?" + urlencode(query)) if query else ""
