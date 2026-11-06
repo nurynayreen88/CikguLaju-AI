@@ -96,7 +96,8 @@ def options():
         if year not in range(1, 7):
             return jsonify({"error": "invalid year"}), 400
         kind = request.args.get("kind", "")
-        if kind not in ("subjects", "units", "pdp", "components"):
+        if kind not in ("subjects", "units", "pdp", "components",
+                        "bm-themes", "bm-units", "bm-topics", "bm-pdp"):
             return jsonify({"error": "invalid option kind"}), 400
         if kind == "components":
             return jsonify(component_options(request.args.get("subject", "")))
@@ -146,6 +147,26 @@ def options():
                         return jsonify(items)
                     subject = request.args.get("subject", "")
                     component = request.args.get("component")
+                    if kind.startswith("bm-"):
+                        if subject != "BM" or component not in (None, ""):
+                            return jsonify({"error": "invalid BM selection"}), 400
+                        if kind == "bm-themes":
+                            return jsonify(source.list_bm_themes(year))
+                        if kind == "bm-units":
+                            return jsonify(source.list_bm_units(
+                                year, request.args.get("theme", "")))
+                        if kind == "bm-topics":
+                            return jsonify(source.list_bm_topics(
+                                year, request.args.get("theme", ""),
+                                request.args.get("unit", "")))
+                        return jsonify(source.list_bm_pdps(
+                            year, request.args.get("theme", ""),
+                            request.args.get("unit", ""),
+                            request.args.get("topic", "")))
+                    # BM cannot fall back to synthetic language skill domains.
+                    if subject == "BM" and kind in ("units", "pdp"):
+                        return jsonify({"error": "Use BM Tema / Unit / Tajuk",
+                                        "code": "BM_HIERARCHY_REQUIRED"}), 400
                     # Mathematics and Science have an independent, grouped
                     # native PdP sequence. Never substitute weekly RPT IDs.
                     if subject in ("MATH", "SCIENCE") and kind in ("units", "pdp"):
@@ -193,6 +214,10 @@ def options():
         else:
             return jsonify({"error": "invalid curriculum mode",
                             "code": "WEB_CURRICULUM_MODE_INVALID"}), 503
+        if kind.startswith("bm-") or (
+                request.args.get("subject") == "BM" and kind in ("units", "pdp")):
+            return jsonify({"error": "Verified BM hierarchy requires active Telegram",
+                            "code": "BM_TELEGRAM_HIERARCHY_REQUIRED"}), 503
         if kind == "subjects":
             available = available_subject_options(db, year)
             if year in range(2, 7):

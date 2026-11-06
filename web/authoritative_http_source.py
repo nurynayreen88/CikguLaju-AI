@@ -104,6 +104,40 @@ class AuthoritativeHttpCurriculumSource:
             raise ValueError("Component only applies to PJPK")
         return self._read("lessons", params)
 
+    @staticmethod
+    def _bm_key(value, name):
+        if (not isinstance(value, str) or not value.strip()
+                or len(value) > 300 or any(ord(ch) < 32 for ch in value)):
+            raise ValueError("Invalid BM " + name)
+        return value
+
+    def list_bm_themes(self, year):
+        self._validate_year(year)
+        return self._read("bm-themes", {"year": year, "subject": "BM"})
+
+    def list_bm_units(self, year, theme):
+        self._validate_year(year)
+        return self._read("bm-units", {
+            "year": year, "subject": "BM", "theme": self._bm_key(theme, "theme")
+        })
+
+    def list_bm_topics(self, year, theme, unit):
+        self._validate_year(year)
+        return self._read("bm-topics", {
+            "year": year, "subject": "BM",
+            "theme": self._bm_key(theme, "theme"),
+            "unit": self._bm_key(unit, "unit"),
+        })
+
+    def list_bm_pdps(self, year, theme, unit, topic):
+        self._validate_year(year)
+        return self._read("bm-pdp", {
+            "year": year, "subject": "BM",
+            "theme": self._bm_key(theme, "theme"),
+            "unit": self._bm_key(unit, "unit"),
+            "topic": self._bm_key(topic, "topic"),
+        })
+
     def get_approved_materials(self, key):
         validate_curriculum_key(key)
         return self._read("approved-materials", {
