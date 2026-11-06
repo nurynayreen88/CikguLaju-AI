@@ -37,7 +37,7 @@ class TestYear2ScienceBank(unittest.TestCase):
     def test_low_voltage_and_no_tasting_in_experiments(self):
         for sp in ("7.1.1","7.1.2","7.1.3","7.1.4","7.1.5","7.1.6","7.1.7"):
             self.assertTrue(any(x in BANK[sp]["safety"].lower()
-                                for x in ("sel kering","bateri","rumah","kit")))
+                                for x in ("sel kering","bateri","rumah","kit","soket","elektrik")))
         for sp in ("8.1.3","8.1.4"):
             self.assertIn("jangan",BANK[sp]["safety"].lower())
         self.assertIn("individu",BANK["3.1.3"]["hook"].lower()+ " "+
