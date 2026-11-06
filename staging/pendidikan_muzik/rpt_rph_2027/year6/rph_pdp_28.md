@@ -14,7 +14,7 @@
 
 **Set Induksi — 4 minit:** Guru meminta murid membahagi dua peranan: suara alam dan suara makhluk bumi.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Kumpulan A/B merancang gerakan halaman 72 mengikut dialog warna hijau/ungu, kemudian memperagakan dua corak gerak secara tertib tanpa audio fail yang belum disahkan.
+**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Kumpulan A dan B merancang gerakan berpandukan m/s 72 dengan kad dialog warna hijau/ungu, kemudian memperagakan dua corak gerak secara tertib mengikut detik daripada tepukan guru.
 
 **Aktiviti 2 — Aplikasi, latihan dan persembahan (10 minit):** Murid menyebut 'tu' atau 'du', menepuk pola, dan memainkan Latihan Rekoder 1–4 halaman 73 secara ansur maju; penekanan pada penjarian, tanda rehat dan frasa pernafasan.
 
