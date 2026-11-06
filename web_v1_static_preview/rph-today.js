@@ -48,22 +48,32 @@
           slot.subject)+" · Lesson/PdP belum dipilih":
      (slot.reason||"Jadual ini belum boleh dipadankan.");
    card.append(create("p","daily-rph-note",note));
-   const btn=create("button","daily-rph-prepare","Pilih Lesson/PdP");
+   const btn=create("button","daily-rph-prepare","Pilih Tajuk/Lesson");
+   const editor=create("div","daily-rph-editor");
+   editor.id="today-editor-"+i;
+   editor.hidden=true;
    btn.type="button";
    btn.dataset.dailyIndex=String(i);
+   btn.setAttribute("aria-controls",editor.id);
+   btn.setAttribute("aria-expanded","false");
    btn.disabled=true;
    btn.addEventListener("click",async()=>{
     if(!confirm.checked||!slot.can_prepare||loading)return;
     btn.disabled=true;
     try{
-     await window.prepareRphFromToday(slot,loadedDate);
+     await window.prepareRphFromToday(slot,loadedDate,editor);
+     for(const other of list.querySelectorAll(".daily-rph-prepare")){
+      const chosen=other===btn;
+      other.textContent=chosen?"Tukar Tajuk/Lesson":"Pilih Tajuk/Lesson";
+      other.setAttribute("aria-expanded",String(chosen));
+     }
     }catch(error){
      state.textContent="Pilihan jadual belum dapat disambungkan: "+error.message;
     }finally{
      refreshButtons();
     }
    });
-   card.append(btn);
+   card.append(btn,editor);
    list.append(card);
   }
   state.textContent=data.day+", "+new Intl.DateTimeFormat("ms-MY",{
@@ -74,6 +84,7 @@
  }
  async function load(date=""){
   const ticket=++requestId;
+  window.closeRphFromToday?.();
   loading=true;
   list.replaceChildren();
   state.textContent="Membaca jadual waktu daripada Profil Guru…";
@@ -99,7 +110,10 @@
    if(ticket===requestId){loading=false;refresh.disabled=false;refreshButtons();}
   }
  }
- confirm.addEventListener("change",refreshButtons);
+ confirm.addEventListener("change",()=>{
+  if(!confirm.checked)window.closeRphFromToday?.();
+  refreshButtons();
+ });
  refresh.addEventListener("click",()=>{void load(dateInput.value);});
  dateInput.addEventListener("change",()=>{void load(dateInput.value);});
  manual.addEventListener("click",()=>showWebView("rph"));
