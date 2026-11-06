@@ -107,12 +107,12 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
         self.assertTrue(any(row.get("flags") for row in manifest["pdps"]))
         self.assertEqual(
             [row["pdp"] for row in manifest["pdps"] if row.get("source_book_content_page_checked")],
-            [14, 15, 16, 31, 32, 33],
+            [14, 15, 16, 21, 24, 31, 32, 33],
         )
         self.assertEqual({row["pdp"]: row["page"] for row in manifest["pdps"] if row.get("source_book_content_page_checked")},
-                         {14: "50-51", 15: "52-53", 16: "52-53", 31: "100-101", 32: "102-103", 33: "102-103"})
-        self.assertTrue(all("4.1.1" in row["sp_rpt_source"] for row in manifest["pdps"] if row.get("source_book_content_page_checked")))
-        self.assertTrue(all("4.1.1" not in row["sp"] for row in manifest["pdps"] if row.get("source_book_content_page_checked")))
+                         {14: "50-51", 15: "52-53", 16: "52-53", 21: "70-71", 24: "82-83", 31: "100-101", 32: "102-103", 33: "102-103"})
+        self.assertTrue(all("4.1.1" in row["sp_rpt_source"] for row in manifest["pdps"] if row.get("source_book_content_page_checked") and row["pdp"] not in (21, 24)))
+        self.assertTrue(all("4.1.1" not in row["sp"] for row in manifest["pdps"] if row.get("source_book_content_page_checked") and row["pdp"] not in (21, 24)))
         self.assertTrue(all(not row["source_book_audio_file_verified"] for row in manifest["pdps"] if row.get("source_book_content_page_checked")))
         self.assertTrue(any("3.1.1" in row.get("sp_rpt_source", []) for row in manifest["pdps"]))
         sources = json.loads((MUSIC / "y4_dskp_sp_rph_seeds.json").read_text(encoding="utf-8"))
@@ -173,10 +173,13 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
             self.assertIn(", ".join(printed), doc)
         self.assertIn("G, A, B, C", manifest["pdps"][20]["crosswalk_review_note"])
         item24 = manifest["pdps"][23]
-        self.assertEqual(item24["page"], "82-84")
+        self.assertEqual(item24["page"], "82-83")
         self.assertEqual(item24["source_rpt_original_page"], "82")
         text24 = (MUSIC / "rpt_rph_2027" / "year4" / "rph_pdp_24.md").read_text(encoding="utf-8")
-        self.assertIn("m/s 82–84", text24)
+        self.assertIn("m/s 82–83", text24)
+        self.assertTrue(manifest["pdps"][20]["source_book_score_visual_checked"])
+        self.assertTrue(item24["source_book_score_visual_checked"])
+        self.assertIn("m/s84", item24["source_book_visual_review_note"])
         self.assertIn("corak irama", text24)
 
     def test_reinforcement_candidates_stay_nonofficial_and_no_fabricated_audio(self):
@@ -263,7 +266,7 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
         self.assertIn("Muzik Jaz", (MUSIC / "rpt_rph_2027" / "year3" / "rph_pdp_11.md").read_text(encoding="utf-8"))
         self.assertFalse(year3["textbook_verified"])
         year4 = json.loads((MUSIC / "rpt_rph_2027" / "year4" / "pdp_manifest.json").read_text(encoding="utf-8"))
-        self.assertEqual(year4["partial_page_content_check_count"], 6)
+        self.assertEqual(year4["partial_page_content_check_count"], 8)
         self.assertEqual(year4["partial_text_crosscheck_count"], 27)
         self.assertTrue(all(year4["pdps"][i-1].get("source_book_project_evidence") for i in (12,13,25,26,27)))
         self.assertEqual([year4["pdps"][i-1]["page"] for i in (12,13,25,26,27)], ["4-5","4-5","54-55","54-55","54-55"])
