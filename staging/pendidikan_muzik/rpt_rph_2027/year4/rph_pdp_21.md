@@ -2,18 +2,19 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** INDAHNYA DASAR LAUT
-**SK / SP (rujukan RPT):** 3.1.2, 3.1.3
+**SK / SP (DSKP Muzik bercetak):** SK 3.1; SP 3.2.2, 3.2.3
+**Kod asal RPT (audit):** 3.1.2, 3.1.3
 **Bidang/Fokus:** Kreativiti Muzik — Cipta melodi — permainan Susun Notasi
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — bukan FINAL READY
 
-**Objektif:** Mencipta satu frasa melodi pendek menggunakan not G, A, B dan C’ serta mempersembahkannya.
+**Objektif:** Mencipta dan mempersembahkan frasa melodi menggunakan not B, A dan G.
 
 **Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **INDAHNYA DASAR LAUT**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
 
 **Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru menepuk Corak Irama 1/2 kemudian mengingatkan kedudukan not yang digunakan untuk ciptaan.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit):** Kumpulan menyusun kad not G, A, B, C’, menulis pola di atas baluk dan mencuba melodi menggunakan rekoder.
+**Aktiviti 2 — Aplikasi muzik (10 minit):** Kumpulan mencipta melodi teras menggunakan kad not B, A dan G, menulis pada baluk dan memainkan dengan rekoder. Not C’ daripada buku teks hanyalah pengayaan pilihan selepas kemahiran teras dikuasai, bukan kriteria wajib.
 
 **Pengukuhan dan pentaksiran (6 minit):** Guru menyemak pilihan not, kiraan detik dan kelancaran frasa ciptaan.
 
@@ -25,10 +26,8 @@
 
 **Rujukan audio bercetak:** 66–67. **Belum disahkan sama ada fail trek tersedia atau sepadan dengan laluan penghantaran.**
 
-**Audit silang DSKP/buku (6 Nov 2026, BELUM DILULUSKAN):** Kod RPT 3.1.2, 3.1.3 dikekalkan. DSKP Tahun 4 dan Buku Kesenian mencetak 3.2.2, 3.2.3 di bawah SK 3.1 yang tidak sepadan nombornya. Buku Tahun 4 halaman 70–71 menyuruh not G, A, B, C', sedangkan DSKP Tahun 4 nota Kreativiti Muzik menyebut B, A, G sahaja. Skop not belum diselaraskan untuk FINAL READY. Tiada kod SP ditukar sehingga keputusan kurikulum akhir direkod.
-
-**Audit kod:** Kod SP daripada RPT lama tiada dalam DSKP Tahun 4: 3.1.2, 3.1.3; DSKP menggunakan 3.2.x / 4.2.1 pada SK 3.1 / 4.1; PERLU SEMAK MANUAL.
+**Audit silang DSKP/buku (6 Nov 2026, BELUM DILULUSKAN):** Draf menggunakan kod SP 3.2.2, 3.2.3 yang dicetak dalam DSKP Muzik dan buku teks. Kod RPT asal 3.1.2, 3.1.3 dikekalkan dalam manifest untuk audit. SK 3.1 / SP 3.2.x yang bercanggah dari segi nombor dalam DSKP masih memerlukan keputusan kurikulum; skor notasi visual dan audio belum disahkan.
 
 **Refleksi / pemulihan:** __________________________________________________
 
-**Kawalan penerbitan:** DRAF STAGING. Semakan kandungan dan format Word/PDF belum selesai; jangan aktifkan secara langsung di Web atau Telegram.
+**Kawalan penerbitan:** DRAF STAGING. Ujian asas Word/PDF lulus tetapi integrasi Web–Telegram, skor dan audio belum disahkan; jangan aktifkan secara langsung di Web atau Telegram.
