@@ -2,7 +2,7 @@ name: BA Year 2–6 A4 RTL staging previews
 
 on:
   push:
-    branches: [staging/bahasa-arab-t2-t6-20261105, staging/bahasa-arab-y5-unit4-review-20261106, staging/bahasa-arab-y3-unit2-20261106, staging/bahasa-arab-y2-unit2-20261106, staging/bahasa-arab-y2-unit3-20261106, staging/bahasa-arab-y2-unit4-20261106, staging/bahasa-arab-y3-unit3-20261106]
+    branches: [staging/bahasa-arab-t2-t6-20261105, staging/bahasa-arab-y5-unit4-review-20261106, staging/bahasa-arab-y3-unit2-20261106, staging/bahasa-arab-y2-unit2-20261106, staging/bahasa-arab-y2-unit3-20261106, staging/bahasa-arab-y2-unit4-20261106, staging/bahasa-arab-y3-unit3-20261106, staging/bahasa-arab-y3-unit4-20261106]
     paths:
       - "rph_standalone/bahasa_arab/**"
       - "scripts/render_bahasa_arab_staging.py"
@@ -25,11 +25,11 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-hosny-amiri poppler-utils
           python -m pip install --disable-pip-version-check python-docx==1.2.0
-      - name: Validate 234 staging draft RPH in A4 DOCX and PDF
+      - name: Validate 250 staging draft RPH in A4 DOCX and PDF
         run: |
           python scripts/render_bahasa_arab_staging.py --input-dir rph_standalone/bahasa_arab --output-dir /tmp/ba-rph-previews --pdf-check
-          test "$(find /tmp/ba-rph-previews -maxdepth 1 -name '*.docx' | wc -l)" -eq 234
-          test "$(find /tmp/ba-rph-previews/_pdf_previews -name '*.pdf' | wc -l)" -eq 234
+          test "$(find /tmp/ba-rph-previews -maxdepth 1 -name '*.docx' | wc -l)" -eq 250
+          test "$(find /tmp/ba-rph-previews/_pdf_previews -name '*.pdf' | wc -l)" -eq 250
       - name: Archive previews for manual inspection (not deployed)
         if: success()
         uses: actions/upload-artifact@v4
