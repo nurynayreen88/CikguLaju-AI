@@ -131,11 +131,11 @@ def rpt_year(year,rows):
         widths=(12,46,44,64,109)
         for j,w in enumerate(widths): tbl.columns[j].width=Mm(w)
         # Repeat the table labels at the top of every continuation page.
-        for cell in tbl.rows[0].cells:
-            tcPr=cell._tc.get_or_add_tcPr()
+        trPr=tbl.rows[0]._tr.get_or_add_trPr()
+        if trPr.find(qn("w:tblHeader")) is None:
             header=OxmlElement("w:tblHeader")
             header.set(qn("w:val"),"true")
-            tcPr.append(header)
+            trPr.append(header)
         hdr=("PdP","Minggu mula–akhir","Unit","SK / SP","Evidens PBD")
         for i,v in enumerate(hdr):
             tbl.rows[0].cells[i].width=Mm(widths[i])
