@@ -5,6 +5,7 @@
 - 3 RPT 2027 CSV + 3 set RPH JSON asli untuk **96 PdP cadangan**: 32 PdP x 60 minit setiap tahun.
 - RPH mempunyai langkah set induksi (5 minit), aktiviti 1 (15 minit), aktiviti 2 (25 minit), penilaian (10 minit) dan penutup (5 minit), bahan PdP, objektif, PBD dan keselamatan.
 - Kod SP yang terdapat dalam DSKP dipadankan: Tahun 4 = 57 kod; Tahun 5 = 34 kod; Tahun 6 = 23 kod. **Jumlah kod unik 114**. Satu SP boleh diajar dalam lebih satu sesi untuk projek/amali.
+- Semua 96 RPH kini mempunyai aktiviti berfokus SK/SP, projek cadangan khusus bidang, artefak dan rubrik PBD yang berbeza mengikut unit. **Ini bukan perakuan mutu pedagogi secara individu**.
 - 32 jam ialah peruntukan minimum setahun dalam DSKP; `32 PdP x 60 minit` bukan jadual PdP rasmi KPM. Masa kelas sebenar boleh dipecahkan dalam jadual guru.
 
 ## Peruntukan DSKP
@@ -16,8 +17,8 @@
 
 ## Sumber dan kekangan
 - DSKP KSSR (Semakan 2017) RBT Tahun 4, 5, 6 dalam folder **Reka Bentuk dan Teknologi** Google Drive pemilik.
-- Buku teks Tahun 4 dalam folder yang sama, tetapi halaman spesifik aktiviti **belum disahkan**.
-- Buku teks Tahun 5–6 belum ditemui dalam folder RBT; pautan awam buku teks pernah dikenal pasti, namun belum diperiksa secara halaman demi halaman.
+- Buku teks Tahun 4 dalam folder yang sama. Padanan kod SP ke halaman bercetak telah dibuat untuk **57/57 SP dan 32/32 PdP** melalui teks PDF. Calon halaman disimpan dalam setiap RPH dan `audits/rbt_t4_textbook_sp_page_map_20261106.json`. Ini **belum kelulusan visual aktiviti atau guru**.
+- Buku teks Tahun 5–6 belum ditemui dalam folder RBT Drive. Pautan awam telah dikenal pasti, tetapi halaman dan aktiviti belum dipadankan. Tahun 6 **wajib guna edisi KSSR Semakan 2017 cetakan 2021 (ISBN 978-983-49-3283-1)**, bukan buku lama ber-ISBN 978-983-49-0275-9 (2015).
 - RPT 2026 awam wujud; belum dimasukkan sebagai sumber penjadualan terverifikasi.
 - Pemetaan tema/Unit/PdP adalah editorial CikguLaju. Kumpulan A/B tarikh dan cuti negeri dibiarkan kosong untuk mengelak tarikh palsu.
 
@@ -30,3 +31,8 @@
 6. Kelulusan manual **per PdP**. DRAF mesti kekal dikunci sehingga semua syarat di atas lulus.
 
 Semak data: `python scripts/check_rbt_t4_t6_2027.py`.
+
+## Pemurnian 6 November 2026
+- 96/96 langkah RPH telah dikhususkan kepada tugasan reka bentuk, penghasilan produk, kemahiran dan penilaian projek mengikut bidang; bukan ayat generik yang sama untuk semua subjek.
+- Semua bahan kekal DRAF; 0 kelulusan guru, 0 pengujian penjana natif Word/PDF, 0 pengaktifan pengguna.
+- Sumber awam rujukan edisi Tahun 6: https://fliphtml5.com/rjdzf/cwso/basic (cetakan pertama 2021, ISBN 978-983-49-3283-1). RPT 2026 sumber silang: https://sites.google.com/moe-dl.edu.my/teduristopcenter/kurikulum/pengurusan-panitia/panitia-reka-bentuk-teknologi ; rujukan belum disahkan secara baris demi baris.
