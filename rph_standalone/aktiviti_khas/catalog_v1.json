@@ -1,0 +1,1402 @@
+{
+  "schema_version": "1.0",
+  "release_status": "DRAFT_REVIEW",
+  "notes": [
+    "Koleksi tambahan; tidak menggantikan PdP/RPT/SOW dan RPH sedia ada.",
+    "20 aktiviti Transisi untuk Tahun 1, Fasa Penyesuaian dan Fasa Kesediaan.",
+    "30 aktiviti tamat sukatan: 10 tema x 3 variasi tahap (1-2, 3-4, 5-6).",
+    "Tahun 2 boleh guna beberapa aktiviti suai kenal sebagai pengukuhan awal tahun; jangan namakan Program Transisi rasmi.",
+    "Tiada SK/SP atau rujukan buku teks direka. RPH aktiviti khas tidak automatik berkait dengan Lesson/PdP silibus.",
+    "RPH Word/PDF dan integrasi menu Telegram/Web perlu dibina serta diuji secara berasingan."
+  ],
+  "rph_minute_plan": {
+    "set_induksi": 5,
+    "aktiviti_1": 15,
+    "aktiviti_2": 15,
+    "aktiviti_3": 15,
+    "pengukuhan_penilaian": 5,
+    "penutup": 5
+  },
+  "activities": [
+    {
+      "id": "K01",
+      "category": "TRANSISI_TAHUN_1",
+      "phase": "Fasa Penyesuaian",
+      "years": [
+        1
+      ],
+      "level": "Tahun 1",
+      "title": "Kad Nama Ajaib",
+      "duration_minutes": 60,
+      "learning_objective": "Murid menyebut nama sendiri dan mengenali nama dua orang rakan.",
+      "set_induksi": "Guru menunjukkan kad nama sendiri dan memperagakan ayat 'Nama saya ...'.",
+      "aktiviti_utama": [
+        "Murid menghias kad nama menggunakan simbol atau lukisan kesukaan.",
+        "Secara berpasangan, murid bertukar kad dan menyebut nama pasangannya.",
+        "Murid bergerak dalam kumpulan kecil dan memperkenalkan dua rakan kepada guru."
+      ],
+      "pengukuhan_penilaian": "Guru menggunakan senarai semak sebutan nama sendiri dan dua rakan.",
+      "penutup": "Murid mengangkat kad nama dan mengucap selamat tinggal kepada rakan.",
+      "bbm": "Kad manila kecil, krayon, penanda nama",
+      "assessment_evidence": "Guru menggunakan senarai semak sebutan nama sendiri dan dua rakan.",
+      "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
+      "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
+    },
+    {
+      "id": "K02",
+      "category": "TRANSISI_TAHUN_1",
+      "phase": "Fasa Penyesuaian",
+      "years": [
+        1
+      ],
+      "level": "Tahun 1",
+      "title": "Bola Salam",
+      "duration_minutes": 60,
+      "learning_objective": "Murid memberi salam atau sapaan sopan kepada sekurang-kurangnya tiga rakan.",
+      "set_induksi": "Guru menunjukkan cara menyapa sambil memegang bola lembut.",
+      "aktiviti_utama": [
+        "Murid membentuk bulatan dan menyebut salam sebelum menggolekkan bola.",
+        "Penerima bola menyebut namanya dan membalas sapaan.",
+        "Murid bertukar pasangan dan mempraktikkan sapaan dengan nada suara mesra."
+      ],
+      "pengukuhan_penilaian": "Guru memerhati tiga interaksi sopan setiap murid menggunakan senarai semak.",
+      "penutup": "Murid memilih sapaan yang sesuai ketika bertemu guru pada esok hari.",
+      "bbm": "Bola lembut, kad ungkapan sopan",
+      "assessment_evidence": "Guru memerhati tiga interaksi sopan setiap murid menggunakan senarai semak.",
+      "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
+      "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
+    },
+    {
+      "id": "K03",
+      "category": "TRANSISI_TAHUN_1",
+      "phase": "Fasa Penyesuaian",
+      "years": [
+        1
+      ],
+      "level": "Tahun 1",
+      "title": "Cari Rakan Minat Sama",
+      "duration_minutes": 60,
+      "learning_objective": "Murid menyatakan satu minat dan berinteraksi dengan sekurang-kurangnya dua rakan.",
+      "set_induksi": "Guru menunjukkan gambar permainan, makanan dan hobi yang biasa dikenal murid.",
+      "aktiviti_utama": [
+        "Murid memilih satu kad minat dan menjelaskan pilihannya dengan ayat pendek.",
+        "Murid mencari dua rakan yang mempunyai pilihan sama atau berlainan.",
+        "Kumpulan kecil berkongsi persamaan dan perbezaan tanpa mengejek pilihan rakan."
+      ],
+      "pengukuhan_penilaian": "Guru mencatat murid yang dapat menyebut minat dan bertanya kepada dua rakan.",
+      "penutup": "Murid menyatakan satu perkara baharu tentang seorang rakan.",
+      "bbm": "Kad gambar minat, pelekat",
+      "assessment_evidence": "Guru mencatat murid yang dapat menyebut minat dan bertanya kepada dua rakan.",
+      "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
+      "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
+    },
+    {
+      "id": "K04",
+      "category": "TRANSISI_TAHUN_1",
+      "phase": "Fasa Penyesuaian",
+      "years": [
+        1
+      ],
+      "level": "Tahun 1",
+      "title": "Jelajah Sekolah Selamat",
+      "duration_minutes": 60,
+      "learning_objective": "Murid mengenal pasti tiga lokasi sekolah dan satu peraturan keselamatan.",
+      "set_induksi": "Guru mempamerkan pelan ringkas sekolah dan simbol tandas, pejabat serta kantin.",
+      "aktiviti_utama": [
+        "Murid mengikut guru melawat tiga lokasi mengikut laluan yang ditetapkan.",
+        "Di setiap lokasi, murid memadankan gambar dengan tempat sebenar.",
+        "Kembali ke kelas, murid menyusun kad lokasi mengikut laluan yang dilalui."
+      ],
+      "pengukuhan_penilaian": "Guru menyoal tiga lokasi dan satu tindakan selamat ketika bergerak.",
+      "penutup": "Murid menunjukkan arah ke satu lokasi menggunakan pelan bergambar.",
+      "bbm": "Pelan sekolah, kad lokasi, papan klip",
+      "assessment_evidence": "Guru menyoal tiga lokasi dan satu tindakan selamat ketika bergerak.",
+      "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
+      "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
+    },
+    {
+      "id": "K05",
+      "category": "TRANSISI_TAHUN_1",
+      "phase": "Fasa Penyesuaian",
+      "years": [
+        1
+      ],
+      "level": "Tahun 1",
+      "title": "Adab di Kantin",
+      "duration_minutes": 60,
+      "learning_objective": "Murid menunjukkan dua amalan beratur dan menjaga kebersihan semasa waktu makan.",
+      "set_induksi": "Guru membuat lakonan ringkas situasi beratur dan membuang sampah.",
+      "aktiviti_utama": [
+        "Murid menyusun kad gambar mengikut urutan membeli makanan yang selamat.",
+        "Secara kumpulan, murid melakonkan beratur, meminta makanan dan mengucapkan terima kasih.",
+        "Murid mempraktikkan meletak sisa makanan pada tempat yang ditetapkan."
+      ],
+      "pengukuhan_penilaian": "Guru menggunakan pemerhatian tindakan beratur dan kebersihan semasa simulasi.",
+      "penutup": "Murid menyatakan satu adab kantin yang akan diamalkan.",
+      "bbm": "Kad urutan, bekas makanan bersih, tong sampah contoh",
+      "assessment_evidence": "Guru menggunakan pemerhatian tindakan beratur dan kebersihan semasa simulasi.",
+      "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
+      "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
+    },
+    {
+      "id": "K06",
+      "category": "TRANSISI_TAHUN_1",
+      "phase": "Fasa Penyesuaian",
+      "years": [
+        1
+      ],
+      "level": "Tahun 1",
+      "title": "Beg Saya Terurus",
+      "duration_minutes": 60,
+      "learning_objective": "Murid mengurus beg dan alat tulis sendiri mengikut tiga langkah.",
+      "set_induksi": "Guru mempamerkan sebuah beg dengan alat tulis bercampur.",
+      "aktiviti_utama": [
+        "Murid mengenal pasti barang yang diperlukan untuk pembelajaran.",
+        "Murid menyusun buku dan alat tulis dalam beg masing-masing mengikut urutan mudah.",
+        "Murid berpasangan memeriksa susunan menggunakan kad semak bergambar."
+      ],
+      "pengukuhan_penilaian": "Guru menyemak kebolehan murid menyusun tiga jenis barang tanpa bantuan.",
+      "penutup": "Murid menunjukkan tempat meletakkan beg dengan selamat.",
+      "bbm": "Beg sekolah, buku, bekas pensel, kad semak",
+      "assessment_evidence": "Guru menyemak kebolehan murid menyusun tiga jenis barang tanpa bantuan.",
+      "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
+      "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
+    },
+    {
+      "id": "K07",
+      "category": "TRANSISI_TAHUN_1",
+      "phase": "Fasa Penyesuaian",
+      "years": [
+        1
+      ],
+      "level": "Tahun 1",
+      "title": "Isyarat Kelas Kita",
+      "duration_minutes": 60,
+      "learning_objective": "Murid memberi respons kepada sekurang-kurangnya tiga isyarat pengurusan kelas.",
+      "set_induksi": "Guru memperkenalkan isyarat angkat tangan, berhenti dan berkumpul.",
+      "aktiviti_utama": [
+        "Murid meniru isyarat serta menjelaskan tindakan yang perlu dilakukan.",
+        "Guru menjalankan permainan muzik berhenti; murid memberi respons pada isyarat.",
+        "Kumpulan murid mencadangkan satu isyarat sopan untuk aktiviti berkumpulan."
+      ],
+      "pengukuhan_penilaian": "Guru mencatat respons tepat pada tiga isyarat tanpa teguran berulang.",
+      "penutup": "Murid menunjukkan isyarat kegemaran beserta maksudnya.",
+      "bbm": "Kad simbol, alat muzik mudah",
+      "assessment_evidence": "Guru mencatat respons tepat pada tiga isyarat tanpa teguran berulang.",
+      "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
+      "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
+    },
+    {
+      "id": "K08",
+      "category": "TRANSISI_TAHUN_1",
+      "phase": "Fasa Penyesuaian",
+      "years": [
+        1
+      ],
+      "level": "Tahun 1",
+      "title": "Roda Emosi Saya",
+      "duration_minutes": 60,
+      "learning_objective": "Murid menamakan dua emosi dan menunjukkan satu cara meminta bantuan.",
+      "set_induksi": "Guru memperlihatkan wajah gembira, sedih, takut dan teruja.",
+      "aktiviti_utama": [
+        "Murid memadankan kad muka dengan perkataan emosi yang dibacakan guru.",
+        "Murid memilih gambar yang menggambarkan perasaannya dan berkongsi secara sukarela.",
+        "Secara berpasangan, murid melakonkan cara meminta bantuan dengan sopan."
+      ],
+      "pengukuhan_penilaian": "Guru mencatat murid yang menamakan dua emosi dan boleh menyebut ayat meminta bantuan.",
+      "penutup": "Murid memilih satu strategi menenangkan diri seperti menarik nafas.",
+      "bbm": "Kad emosi, roda pilihan bergambar",
+      "assessment_evidence": "Guru mencatat murid yang menamakan dua emosi dan boleh menyebut ayat meminta bantuan.",
+      "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
+      "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
+    },
+    {
+      "id": "K09",
+      "category": "TRANSISI_TAHUN_1",
+      "phase": "Fasa Penyesuaian",
+      "years": [
+        1
+      ],
+      "level": "Tahun 1",
+      "title": "Kawan Bantu Kawan",
+      "duration_minutes": 60,
+      "learning_objective": "Murid bekerjasama menyelesaikan satu tugasan binaan serta menggunakan ungkapan tolong dan terima kasih.",
+      "set_induksi": "Guru menunjukkan sebuah menara ringkas daripada blok.",
+      "aktiviti_utama": [
+        "Kumpulan empat orang membahagi tugas mengambil dan menyusun blok.",
+        "Murid membina menara secara bergilir sambil menggunakan ungkapan sopan.",
+        "Kumpulan menceritakan satu situasi ahli membantu ahli lain."
+      ],
+      "pengukuhan_penilaian": "Guru memerhati kerjasama, giliran dan penggunaan dua ungkapan sopan.",
+      "penutup": "Murid memberi penghargaan kepada rakan sepasukan.",
+      "bbm": "Blok binaan atau cawan kertas",
+      "assessment_evidence": "Guru memerhati kerjasama, giliran dan penggunaan dua ungkapan sopan.",
+      "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
+      "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
+    },
+    {
+      "id": "K10",
+      "category": "TRANSISI_TAHUN_1",
+      "phase": "Fasa Penyesuaian",
+      "years": [
+        1
+      ],
+      "level": "Tahun 1",
+      "title": "Gerak Ikut Rentak",
+      "duration_minutes": 60,
+      "learning_objective": "Murid mengikuti tiga arahan pergerakan mudah dengan selamat.",
+      "set_induksi": "Guru memperdengarkan rentak tepukan dan memperagakan gerakan di ruang selamat.",
+      "aktiviti_utama": [
+        "Murid meniru tepuk, langkah setempat dan regangan ringan mengikut kiraan.",
+        "Dalam kumpulan, murid menyusun tiga kad pergerakan dan melakukannya secara tertib.",
+        "Murid mencipta satu urutan gerakan pendek menggunakan tiga pergerakan dipelajari."
+      ],
+      "pengukuhan_penilaian": "Guru memerhati ketepatan tiga arahan dan jarak selamat antara murid.",
+      "penutup": "Murid melakukan regangan penutup dan menyebut kepentingan ruang selamat.",
+      "bbm": "Kad pergerakan, alat perkusi ringkas",
+      "assessment_evidence": "Guru memerhati ketepatan tiga arahan dan jarak selamat antara murid.",
+      "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
+      "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
+    },
+    {
+      "id": "K11",
+      "category": "TRANSISI_TAHUN_1",
+      "phase": "Fasa Kesediaan",
+      "years": [
+        1
+      ],
+      "level": "Tahun 1",
+      "title": "Bunyi Huruf Sekeliling",
+      "duration_minutes": 60,
+      "learning_objective": "Murid mengenal pasti tiga bunyi awal perkataan mudah melalui gambar.",
+      "set_induksi": "Guru menunjukkan gambar bola, buku dan baju serta menyebut bunyi awal.",
+      "aktiviti_utama": [
+        "Murid mendengar guru menyebut bunyi lalu memilih kad gambar sepadan.",
+        "Murid mengasingkan enam gambar kepada dua kumpulan bunyi awal.",
+        "Secara berpasangan, murid menyebut tiga perkataan bersama bunyi awalnya."
+      ],
+      "pengukuhan_penilaian": "Guru menanda tiga padanan bunyi awal dalam senarai semak.",
+      "penutup": "Murid menyebut satu bunyi awal yang ditemukan pada objek kelas.",
+      "bbm": "Kad huruf dan gambar, bakul pengasingan",
+      "assessment_evidence": "Guru menanda tiga padanan bunyi awal dalam senarai semak.",
+      "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
+      "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
+    },
+    {
+      "id": "K12",
+      "category": "TRANSISI_TAHUN_1",
+      "phase": "Fasa Kesediaan",
+      "years": [
+        1
+      ],
+      "level": "Tahun 1",
+      "title": "Cerita Bergambar Berurutan",
+      "duration_minutes": 60,
+      "learning_objective": "Murid menyusun tiga gambar dan menceritakan urutan menggunakan ayat mudah.",
+      "set_induksi": "Guru memperlihatkan tiga gambar kisah menyiram pokok secara rawak.",
+      "aktiviti_utama": [
+        "Murid mengamati gambar dan mengenal pasti peristiwa awal, tengah dan akhir.",
+        "Secara kumpulan, murid menyusun gambar menjadi satu cerita munasabah.",
+        "Murid menceritakan urutan menggunakan penanda 'mula-mula', 'kemudian' dan 'akhirnya' dengan bantuan."
+      ],
+      "pengukuhan_penilaian": "Guru menilai urutan tiga gambar dan penerangan lisan ringkas.",
+      "penutup": "Murid menyatakan satu pengajaran daripada gambar.",
+      "bbm": "Kad cerita bergambar, papan susunan",
+      "assessment_evidence": "Guru menilai urutan tiga gambar dan penerangan lisan ringkas.",
+      "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
+      "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
+    },
+    {
+      "id": "K13",
+      "category": "TRANSISI_TAHUN_1",
+      "phase": "Fasa Kesediaan",
+      "years": [
+        1
+      ],
+      "level": "Tahun 1",
+      "title": "Bakul Suku Kata",
+      "duration_minutes": 60,
+      "learning_objective": "Murid menggabungkan sekurang-kurangnya tiga pasangan suku kata terbuka untuk membentuk perkataan.",
+      "set_induksi": "Guru menunjukkan contoh kad 'ba' dan 'ju' yang digabung menjadi 'baju'.",
+      "aktiviti_utama": [
+        "Murid membaca kad suku kata dengan bimbingan bunyi.",
+        "Murid memilih dua kad daripada bakul dan mencuba membina perkataan bermakna.",
+        "Murid memadankan tiga perkataan terbina dengan gambar yang sepadan."
+      ],
+      "pengukuhan_penilaian": "Guru merekod tiga padanan perkataan-gambar; murid belum bersedia diberi bimbingan fonik.",
+      "penutup": "Murid membaca satu perkataan pilihan bersama-sama.",
+      "bbm": "Kad suku kata dan gambar, bakul kecil",
+      "assessment_evidence": "Guru merekod tiga padanan perkataan-gambar; murid belum bersedia diberi bimbingan fonik.",
+      "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
+      "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
+    },
+    {
+      "id": "K14",
+      "category": "TRANSISI_TAHUN_1",
+      "phase": "Fasa Kesediaan",
+      "years": [
+        1
+      ],
+      "level": "Tahun 1",
+      "title": "Nombor di Sekitar Kita",
+      "duration_minutes": 60,
+      "learning_objective": "Murid membilang objek hingga sepuluh dan memadankan tiga kuantiti dengan angka.",
+      "set_induksi": "Guru memperlihatkan lima pensel dan membilang secara sepadan.",
+      "aktiviti_utama": [
+        "Murid membilang koleksi objek 1 hingga 10 sambil menyentuh setiap objek sekali.",
+        "Murid memadankan kad angka dengan bekas objek yang sepadan.",
+        "Secara berpasangan, murid menyediakan satu kumpulan objek mengikut angka pilihan."
+      ],
+      "pengukuhan_penilaian": "Guru menyemak tiga padanan angka-kuantiti dan ketepatan membilang.",
+      "penutup": "Murid menunjukkan dengan jari satu nombor yang disebut guru.",
+      "bbm": "Objek pengira, kad angka, bekas kecil",
+      "assessment_evidence": "Guru menyemak tiga padanan angka-kuantiti dan ketepatan membilang.",
+      "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
+      "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
+    },
+    {
+      "id": "K15",
+      "category": "TRANSISI_TAHUN_1",
+      "phase": "Fasa Kesediaan",
+      "years": [
+        1
+      ],
+      "level": "Tahun 1",
+      "title": "Bentuk di Sekolah",
+      "duration_minutes": 60,
+      "learning_objective": "Murid mengenal pasti bulatan, segi tiga dan segi empat melalui objek sekeliling.",
+      "set_induksi": "Guru menunjukkan tiga bentuk geometri menggunakan kad besar.",
+      "aktiviti_utama": [
+        "Murid menjejak bentuk pada kad menggunakan jari.",
+        "Murid mencari objek bilik darjah yang menyerupai tiga bentuk sasaran.",
+        "Murid melukis dan melabel bentuk yang ditemui dengan bantuan guru."
+      ],
+      "pengukuhan_penilaian": "Guru menyemak tiga padanan bentuk kepada objek.",
+      "penutup": "Murid menamakan satu objek dan bentuknya.",
+      "bbm": "Kad bentuk, kertas, pensel warna",
+      "assessment_evidence": "Guru menyemak tiga padanan bentuk kepada objek.",
+      "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
+      "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
+    },
+    {
+      "id": "K16",
+      "category": "TRANSISI_TAHUN_1",
+      "phase": "Fasa Kesediaan",
+      "years": [
+        1
+      ],
+      "level": "Tahun 1",
+      "title": "Panjang atau Pendek",
+      "duration_minutes": 60,
+      "learning_objective": "Murid membandingkan panjang tiga pasangan objek secara langsung.",
+      "set_induksi": "Guru meletakkan dua pita bersebelahan dan bertanya mana lebih panjang.",
+      "aktiviti_utama": [
+        "Murid meletakkan dua objek sebaris dari titik mula sama.",
+        "Murid mengasingkan tiga pasangan objek kepada lebih panjang atau lebih pendek.",
+        "Murid menjelaskan keputusan satu pasangan menggunakan perkataan 'panjang' atau 'pendek'."
+      ],
+      "pengukuhan_penilaian": "Guru menyemak ketepatan tiga perbandingan sebenar.",
+      "penutup": "Murid menyatakan sebab objek perlu disejajarkan pada satu hujung.",
+      "bbm": "Pita kertas, pensel, pembaris tidak berangka",
+      "assessment_evidence": "Guru menyemak ketepatan tiga perbandingan sebenar.",
+      "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
+      "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
+    },
+    {
+      "id": "K17",
+      "category": "TRANSISI_TAHUN_1",
+      "phase": "Fasa Kesediaan",
+      "years": [
+        1
+      ],
+      "level": "Tahun 1",
+      "title": "English Classroom Commands",
+      "duration_minutes": 60,
+      "learning_objective": "Murid memberi respons fizikal yang sesuai kepada empat arahan bahasa Inggeris mudah.",
+      "set_induksi": "Guru memperagakan 'stand up', 'sit down', 'listen' dan 'point' tanpa menterjemah setiap kali.",
+      "aktiviti_utama": [
+        "Murid memerhati dan meniru setiap arahan bersama tindakan.",
+        "Guru memberi arahan secara rawak; murid melakukan tindakan yang sepadan.",
+        "Secara berpasangan, murid bergilir memberikan satu arahan dan menunjukkan tindakannya."
+      ],
+      "pengukuhan_penilaian": "Guru memerhati respons tepat untuk empat arahan secara lisan.",
+      "penutup": "Murid menunjukkan arahan kegemaran dan menyebut ungkapan tersebut.",
+      "bbm": "Kad arahan bergambar, ruang pergerakan",
+      "assessment_evidence": "Guru memerhati respons tepat untuk empat arahan secara lisan.",
+      "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
+      "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
+    },
+    {
+      "id": "K18",
+      "category": "TRANSISI_TAHUN_1",
+      "phase": "Fasa Kesediaan",
+      "years": [
+        1
+      ],
+      "level": "Tahun 1",
+      "title": "Deria Saintis Cilik",
+      "duration_minutes": 60,
+      "learning_objective": "Murid menggunakan sekurang-kurangnya dua deria untuk memerihalkan tiga objek selamat.",
+      "set_induksi": "Guru menunjukkan beg misteri berisi objek yang bersih dan tidak tajam.",
+      "aktiviti_utama": [
+        "Murid memerhati warna serta bentuk objek dan menerangkannya.",
+        "Murid menyentuh objek untuk membandingkan licin atau kasar tanpa menutup mata wajib.",
+        "Kumpulan mengasingkan tiga objek mengikut satu ciri yang dipersetujui."
+      ],
+      "pengukuhan_penilaian": "Guru menyemak tiga penerangan ciri objek dengan bukti pemerhatian.",
+      "penutup": "Murid menyebut peraturan keselamatan semasa menggunakan deria.",
+      "bbm": "Bola kain, sudu plastik, daun bersih, dulang",
+      "assessment_evidence": "Guru menyemak tiga penerangan ciri objek dengan bukti pemerhatian.",
+      "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
+      "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
+    },
+    {
+      "id": "K19",
+      "category": "TRANSISI_TAHUN_1",
+      "phase": "Fasa Kesediaan",
+      "years": [
+        1
+      ],
+      "level": "Tahun 1",
+      "title": "Corak Warna Ceria",
+      "duration_minutes": 60,
+      "learning_objective": "Murid melengkapkan dua pola warna berulang menggunakan bahan manipulatif.",
+      "set_induksi": "Guru menyusun corak merah-biru-merah-biru dan meminta murid meramal sambungannya.",
+      "aktiviti_utama": [
+        "Murid meniru pola dua warna menggunakan penutup botol bersih.",
+        "Murid melengkapkan pola yang mempunyai dua ruang kosong.",
+        "Murid mencipta pola sendiri dan meminta pasangan meneruskan corak."
+      ],
+      "pengukuhan_penilaian": "Guru menyemak dua pola lengkap dan urutan ciptaan murid.",
+      "penutup": "Murid menerangkan secara lisan unit warna yang berulang.",
+      "bbm": "Kad warna, penutup botol bersih, jalur pola",
+      "assessment_evidence": "Guru menyemak dua pola lengkap dan urutan ciptaan murid.",
+      "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
+      "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
+    },
+    {
+      "id": "K20",
+      "category": "TRANSISI_TAHUN_1",
+      "phase": "Fasa Kesediaan",
+      "years": [
+        1
+      ],
+      "level": "Tahun 1",
+      "title": "Kelas Impian Kita",
+      "duration_minutes": 60,
+      "learning_objective": "Murid menghasilkan satu poster ringkas dan menyatakan dua ciri kelas yang selesa.",
+      "set_induksi": "Guru menunjukkan gambar ruang kelas bersih dan sudut bacaan.",
+      "aktiviti_utama": [
+        "Murid mengenal pasti tempat menyimpan buku, sudut bacaan dan tong sampah.",
+        "Kumpulan melukis poster kelas impian dengan dua ciri yang dipersetujui.",
+        "Wakil kumpulan menerangkan poster menggunakan ayat mudah dan mendengar soalan rakan."
+      ],
+      "pengukuhan_penilaian": "Guru menilai dua ciri kelas dan perkongsian lisan murid.",
+      "penutup": "Murid memilih satu amalan menjaga kelas yang akan dilakukan.",
+      "bbm": "Kertas mahjung, krayon, gambar kelas",
+      "assessment_evidence": "Guru menilai dua ciri kelas dan perkongsian lisan murid.",
+      "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
+      "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
+    },
+    {
+      "id": "S01A",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        1,
+        2
+      ],
+      "level": "Tahun 1–2",
+      "title": "Stesen Ilmu",
+      "subject_options": [
+        "Bahasa Melayu",
+        "Bahasa Inggeris",
+        "Matematik",
+        "Sains"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid melengkapkan tiga stesen padanan gambar, perkataan dan bilangan dengan sekurang-kurangnya tiga jawapan tepat.",
+      "set_induksi": "Guru menunjukkan cara berpindah dari satu stesen ke stesen lain.",
+      "aktiviti_utama": [
+        "Murid memadankan enam gambar dengan perkataan mudah di stesen pertama.",
+        "Murid membilang objek konkrit dan memilih kad angka sepadan di stesen kedua.",
+        "Murid menyusun tiga kad gambar sebab-akibat mudah di stesen ketiga."
+      ],
+      "pengukuhan_penilaian": "Guru mengumpul kad rekod tiga stesen dan mengesahkan jawapan tepat.",
+      "penutup": "Murid menampal simbol bintang pada stesen yang paling mereka kuasai.",
+      "bbm": "Kad gambar, kad perkataan, objek pengira, kad rekod",
+      "assessment_evidence": "Guru mengumpul kad rekod tiga stesen dan mengesahkan jawapan tepat.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S01B",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        3,
+        4
+      ],
+      "level": "Tahun 3–4",
+      "title": "Stesen Ilmu",
+      "subject_options": [
+        "Bahasa Melayu",
+        "Bahasa Inggeris",
+        "Matematik",
+        "Sains"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid menyelesaikan tiga stesen bacaan, pengiraan dan penjelasan dengan alasan ringkas.",
+      "set_induksi": "Guru memperagakan penggunaan kad rekod stesen.",
+      "aktiviti_utama": [
+        "Murid membaca petikan pendek lalu memilih tiga maklumat benar.",
+        "Murid menyelesaikan dua soalan situasi nombor melibatkan operasi yang telah dipelajari.",
+        "Murid mengelaskan bahan berdasarkan ciri dan menulis satu sebab pengelasan."
+      ],
+      "pengukuhan_penilaian": "Guru menyemak kad rekod bagi jawapan dan justifikasi pengelasan.",
+      "penutup": "Murid membetulkan satu jawapan selepas maklum balas rakan.",
+      "bbm": "Kad petikan, kad masalah, bahan pengelasan, kad rekod",
+      "assessment_evidence": "Guru menyemak kad rekod bagi jawapan dan justifikasi pengelasan.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S01C",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        5,
+        6
+      ],
+      "level": "Tahun 5–6",
+      "title": "Stesen Ilmu",
+      "subject_options": [
+        "Bahasa Melayu",
+        "Bahasa Inggeris",
+        "Matematik",
+        "Sains"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid menyelesaikan tiga cabaran integrasi serta mempertahankan satu keputusan berasaskan bukti.",
+      "set_induksi": "Guru membentangkan persoalan tentang penggunaan sumber di sekolah.",
+      "aktiviti_utama": [
+        "Kumpulan meneliti jadual ringkas dan mengenal pasti dua pola data.",
+        "Murid mengira kos atau kuantiti pilihan tindakan berdasarkan data yang diberikan.",
+        "Kumpulan mencadangkan penyelesaian, menulis justifikasi dan menguji hujah rakan."
+      ],
+      "pengukuhan_penilaian": "Guru menggunakan rubrik kesahihan pengiraan, bukti dan penjelasan.",
+      "penutup": "Murid mencatat satu penambahbaikan kepada keputusan kumpulan.",
+      "bbm": "Kad data, jadual angka, kertas A3, rubrik",
+      "assessment_evidence": "Guru menggunakan rubrik kesahihan pengiraan, bukti dan penjelasan.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S02A",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        1,
+        2
+      ],
+      "level": "Tahun 1–2",
+      "title": "Kuiz Juara Kelas",
+      "subject_options": [
+        "Semua subjek"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid menjawab sekurang-kurangnya empat daripada enam soalan gambar atau lisan berdasarkan pembelajaran lepas.",
+      "set_induksi": "Guru menunjukkan kuiz contoh menggunakan gambar besar.",
+      "aktiviti_utama": [
+        "Murid memilih kad jawapan bagi tiga soalan pengecaman.",
+        "Pasangan murid berbincang jawapan tiga soalan mudah dan mengangkat kad pilihan.",
+        "Murid menerangkan satu jawapan dengan menunjuk bahan sebenar."
+      ],
+      "pengukuhan_penilaian": "Guru menanda enam respons individu menggunakan kad rekod.",
+      "penutup": "Murid memilih satu soalan yang mahu dicuba semula.",
+      "bbm": "Kad gambar, kad A/B, objek contoh",
+      "assessment_evidence": "Guru menanda enam respons individu menggunakan kad rekod.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S02B",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        3,
+        4
+      ],
+      "level": "Tahun 3–4",
+      "title": "Kuiz Juara Kelas",
+      "subject_options": [
+        "Semua subjek"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid menyelesaikan lapan soalan pelbagai bentuk dan membetulkan dua kesilapan dengan sebab.",
+      "set_induksi": "Guru menerangkan peraturan kuiz berkumpulan tanpa penyingkiran.",
+      "aktiviti_utama": [
+        "Murid menjawab empat soalan objektif secara individu.",
+        "Pasangan menyelesaikan dua soalan terbuka dan membandingkan strategi.",
+        "Kumpulan mencipta dua soalan berdasarkan topik yang telah dipelajari untuk kumpulan lain."
+      ],
+      "pengukuhan_penilaian": "Guru menilai ketepatan jawapan dan pembetulan dua soalan.",
+      "penutup": "Murid berkongsi strategi semakan jawapan.",
+      "bbm": "Kad kuiz, papan mini, lembaran skor",
+      "assessment_evidence": "Guru menilai ketepatan jawapan dan pembetulan dua soalan.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S02C",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        5,
+        6
+      ],
+      "level": "Tahun 5–6",
+      "title": "Kuiz Juara Kelas",
+      "subject_options": [
+        "Semua subjek"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid menjawab soalan aras aplikasi dan membina dua soalan yang mempunyai jawapan beralasan.",
+      "set_induksi": "Guru mempamerkan contoh soalan fakta berbanding soalan alasan.",
+      "aktiviti_utama": [
+        "Kumpulan menjawab empat soalan situasi yang memerlukan pemilihan strategi.",
+        "Murid menulis dua soalan aplikasi berpandukan kes sebenar yang dibekalkan.",
+        "Kumpulan lain menjawab dan mengkritik kewajaran jawapan menggunakan bukti."
+      ],
+      "pengukuhan_penilaian": "Guru menilai alasan, bukti dan ketepatan respons dengan rubrik ringkas.",
+      "penutup": "Murid menambah baik satu soalan supaya lebih jelas.",
+      "bbm": "Kad situasi, sumber rujukan kelas, rubrik",
+      "assessment_evidence": "Guru menilai alasan, bukti dan ketepatan respons dengan rubrik ringkas.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S03A",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        1,
+        2
+      ],
+      "level": "Tahun 1–2",
+      "title": "Pasar Mini",
+      "subject_options": [
+        "Matematik",
+        "Bahasa Melayu",
+        "Bahasa Inggeris"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid memilih barang dan menentukan jumlah harga mudah bagi dua pembelian menggunakan wang mainan.",
+      "set_induksi": "Guru mempamerkan label harga RM1 hingga RM5 pada bahan contoh.",
+      "aktiviti_utama": [
+        "Murid mengenal pasti nilai wang mainan dan membaca label harga.",
+        "Secara berpasangan, murid bermain peranan pelanggan dan peniaga bagi dua barangan.",
+        "Murid mengira jumlah harga dan menyemak bayaran menggunakan bahan konkrit."
+      ],
+      "pengukuhan_penilaian": "Guru menyemak dua transaksi dan ungkapan sopan semasa membeli.",
+      "penutup": "Murid menyatakan barang yang mampu dibeli dengan wang tertentu.",
+      "bbm": "Wang mainan, label harga, barang kosong bersih",
+      "assessment_evidence": "Guru menyemak dua transaksi dan ungkapan sopan semasa membeli.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S03B",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        3,
+        4
+      ],
+      "level": "Tahun 3–4",
+      "title": "Pasar Mini",
+      "subject_options": [
+        "Matematik",
+        "Bahasa Melayu",
+        "Bahasa Inggeris"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid mengira jumlah dan baki bagi tiga transaksi serta membandingkan dua pilihan harga.",
+      "set_induksi": "Guru menunjukkan senarai harga dan bajet pelanggan.",
+      "aktiviti_utama": [
+        "Murid menulis jumlah pembelian dua barang pada lembaran pesanan.",
+        "Murid mengira baki daripada wang diberi menggunakan operasi sesuai.",
+        "Pasangan membandingkan pilihan lebih murah dan menjelaskan sebab."
+      ],
+      "pengukuhan_penilaian": "Guru menilai tiga rekod transaksi serta ketepatan baki.",
+      "penutup": "Murid mengenal pasti satu cara mengelakkan kesilapan wang.",
+      "bbm": "Wang mainan, katalog harga, resit latihan",
+      "assessment_evidence": "Guru menilai tiga rekod transaksi serta ketepatan baki.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S03C",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        5,
+        6
+      ],
+      "level": "Tahun 5–6",
+      "title": "Pasar Mini",
+      "subject_options": [
+        "Matematik",
+        "Bahasa Melayu",
+        "Bahasa Inggeris"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid menyediakan bajet pembelian dengan diskaun dan justifikasi pilihan yang tidak melebihi had perbelanjaan.",
+      "set_induksi": "Guru memberi senario mengurus RM50 untuk pembelian keperluan kelas.",
+      "aktiviti_utama": [
+        "Kumpulan menyemak katalog dan menentukan harga selepas diskaun yang dinyatakan.",
+        "Murid menyediakan senarai item dalam bajet, termasuk jumlah dan baki.",
+        "Kumpulan membandingkan dua pelan pembelian serta mempertahankan pilihan paling bernilai."
+      ],
+      "pengukuhan_penilaian": "Guru menilai pengiraan diskaun, pematuhan bajet dan alasan pembelian.",
+      "penutup": "Murid mencadangkan pengurangan kos tanpa mengabaikan keperluan.",
+      "bbm": "Katalog rekaan, kalkulator pilihan, lembaran bajet",
+      "assessment_evidence": "Guru menilai pengiraan diskaun, pematuhan bajet dan alasan pembelian.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S04A",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        1,
+        2
+      ],
+      "level": "Tahun 1–2",
+      "title": "Misi Peta Sekolah",
+      "subject_options": [
+        "Bahasa Melayu",
+        "Bahasa Inggeris",
+        "Matematik",
+        "Pendidikan Jasmani"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid mengikuti dan memberi dua arahan kedudukan menggunakan peta bergambar.",
+      "set_induksi": "Guru menunjuk gambar kelas, kantin dan perpustakaan.",
+      "aktiviti_utama": [
+        "Murid meletakkan simbol di atas peta lantai mengikut arahan depan, belakang dan sebelah.",
+        "Pasangan memberi arahan menuju dua tempat menggunakan kata arah mudah.",
+        "Murid melukis satu laluan selamat pada pelan ringkas."
+      ],
+      "pengukuhan_penilaian": "Guru menyemak ketepatan dua laluan dan penggunaan kata arah.",
+      "penutup": "Murid menyatakan satu langkah selamat bergerak di sekolah.",
+      "bbm": "Pelan bergambar, penanda lantai, kad lokasi",
+      "assessment_evidence": "Guru menyemak ketepatan dua laluan dan penggunaan kata arah.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S04B",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        3,
+        4
+      ],
+      "level": "Tahun 3–4",
+      "title": "Misi Peta Sekolah",
+      "subject_options": [
+        "Bahasa Melayu",
+        "Bahasa Inggeris",
+        "Matematik",
+        "Pendidikan Jasmani"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid mentafsir peta sekolah dan menerangkan dua laluan dengan sekurang-kurangnya empat arahan.",
+      "set_induksi": "Guru memperkenalkan petunjuk simbol dan titik mula pada pelan.",
+      "aktiviti_utama": [
+        "Murid membaca simbol pada peta dan mencari lokasi sasaran.",
+        "Kumpulan merancang laluan melalui tiga tempat dengan menggunakan arah yang tepat.",
+        "Pasangan menulis empat arahan perjalanan dan mengujinya pada peta rakan."
+      ],
+      "pengukuhan_penilaian": "Guru menyemak urutan arahan dan pematuhan petunjuk peta.",
+      "penutup": "Murid membaiki satu arahan yang mengelirukan.",
+      "bbm": "Peta sekolah, kad simbol, lembaran laluan",
+      "assessment_evidence": "Guru menyemak urutan arahan dan pematuhan petunjuk peta.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S04C",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        5,
+        6
+      ],
+      "level": "Tahun 5–6",
+      "title": "Misi Peta Sekolah",
+      "subject_options": [
+        "Bahasa Melayu",
+        "Bahasa Inggeris",
+        "Matematik",
+        "Pendidikan Jasmani"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid membandingkan dua laluan berdasarkan jarak anggaran dan keselamatan lalu memilih laluan terbaik.",
+      "set_induksi": "Guru memberikan peta grid dan maklumat halangan pada beberapa laluan.",
+      "aktiviti_utama": [
+        "Kumpulan menandakan dua pilihan laluan antara empat lokasi.",
+        "Murid menganggarkan jarak berdasarkan petak grid dan mengenal pasti risiko.",
+        "Kumpulan membentangkan pilihan paling selamat dengan bukti jarak dan halangan."
+      ],
+      "pengukuhan_penilaian": "Guru menilai pengiraan, pertimbangan keselamatan serta justifikasi.",
+      "penutup": "Murid menulis satu keadaan yang boleh mengubah laluan pilihan.",
+      "bbm": "Peta grid, kad risiko, pembaris, kertas graf",
+      "assessment_evidence": "Guru menilai pengiraan, pertimbangan keselamatan serta justifikasi.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S05A",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        1,
+        2
+      ],
+      "level": "Tahun 1–2",
+      "title": "Cabaran Baca dan Cerita",
+      "subject_options": [
+        "Bahasa Melayu",
+        "Bahasa Inggeris",
+        "Bahasa Arab"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid membaca atau mendengar cerita pendek lalu menyusun tiga peristiwa dengan betul.",
+      "set_induksi": "Guru membacakan cerita bergambar dengan intonasi sesuai.",
+      "aktiviti_utama": [
+        "Murid menunjuk watak dan tempat dalam gambar cerita.",
+        "Murid menyusun tiga kad peristiwa mengikut jalan cerita.",
+        "Secara berpasangan, murid menceritakan semula dengan ayat pendek atau kata kunci."
+      ],
+      "pengukuhan_penilaian": "Guru menilai susunan tiga peristiwa dan respons lisan.",
+      "penutup": "Murid memilih satu watak yang disukai dan menjelaskan dengan satu sebab.",
+      "bbm": "Buku cerita bergambar, kad peristiwa",
+      "assessment_evidence": "Guru menilai susunan tiga peristiwa dan respons lisan.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S05B",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        3,
+        4
+      ],
+      "level": "Tahun 3–4",
+      "title": "Cabaran Baca dan Cerita",
+      "subject_options": [
+        "Bahasa Melayu",
+        "Bahasa Inggeris",
+        "Bahasa Arab"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid mengenal pasti isi penting dan menyampaikan ringkasan cerita empat hingga lima ayat.",
+      "set_induksi": "Guru memperkenalkan peta cerita watak, masalah dan penyelesaian.",
+      "aktiviti_utama": [
+        "Murid membaca cerita pendek secara berpandu dan menanda maklumat utama.",
+        "Pasangan melengkapkan peta cerita dengan bukti daripada teks.",
+        "Murid membina ringkasan empat hingga lima ayat lalu membacakannya."
+      ],
+      "pengukuhan_penilaian": "Guru menilai ketepatan isi dan urutan ringkasan.",
+      "penutup": "Murid mencadangkan tajuk alternatif yang sesuai.",
+      "bbm": "Teks cerita, peta grafik, pen penanda",
+      "assessment_evidence": "Guru menilai ketepatan isi dan urutan ringkasan.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S05C",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        5,
+        6
+      ],
+      "level": "Tahun 5–6",
+      "title": "Cabaran Baca dan Cerita",
+      "subject_options": [
+        "Bahasa Melayu",
+        "Bahasa Inggeris",
+        "Bahasa Arab"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid menilai tindakan watak dengan dua bukti daripada teks serta mencipta pengakhiran alternatif.",
+      "set_induksi": "Guru menayangkan dua pilihan tindakan watak pada kad situasi.",
+      "aktiviti_utama": [
+        "Murid membaca petikan dan mengenal pasti konflik serta motif watak.",
+        "Kumpulan meneliti dua bukti teks untuk menyokong atau mencabar tindakan watak.",
+        "Murid menulis pengakhiran baharu dan membentangkan sebab perubahan."
+      ],
+      "pengukuhan_penilaian": "Guru menilai bukti tekstual, koheren dan alasan pengakhiran.",
+      "penutup": "Murid menulis satu pengajaran yang boleh diaplikasi dalam kehidupan.",
+      "bbm": "Petikan naratif, kad bukti, rubrik ringkas",
+      "assessment_evidence": "Guru menilai bukti tekstual, koheren dan alasan pengakhiran.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S06A",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        1,
+        2
+      ],
+      "level": "Tahun 1–2",
+      "title": "Cabaran Reka Cipta",
+      "subject_options": [
+        "Sains",
+        "Reka Bentuk dan Teknologi",
+        "Pendidikan Seni Visual"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid membina objek mudah yang berdiri menggunakan bahan terpakai serta menamakan dua bahan.",
+      "set_induksi": "Guru menunjukkan binaan kertas yang mudah tumbang dan kukuh.",
+      "aktiviti_utama": [
+        "Murid memerhati bentuk tapak binaan contoh.",
+        "Kumpulan membina menara daripada cawan kertas dengan giliran kerja yang jelas.",
+        "Murid menguji kestabilan dan mengubah satu bahagian yang tidak kukuh."
+      ],
+      "pengukuhan_penilaian": "Guru memerhati ujian kestabilan dan meminta murid menamakan dua bahan.",
+      "penutup": "Murid menyebut satu ciri binaan yang lebih stabil.",
+      "bbm": "Cawan kertas, pita kertas, kadbod",
+      "assessment_evidence": "Guru memerhati ujian kestabilan dan meminta murid menamakan dua bahan.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S06B",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        3,
+        4
+      ],
+      "level": "Tahun 3–4",
+      "title": "Cabaran Reka Cipta",
+      "subject_options": [
+        "Sains",
+        "Reka Bentuk dan Teknologi",
+        "Pendidikan Seni Visual"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid membina prototaip yang memenuhi dua kriteria dan merekod hasil dua ujian.",
+      "set_induksi": "Guru memperkenalkan cabaran membina jambatan kertas untuk beban kecil.",
+      "aktiviti_utama": [
+        "Kumpulan melakar reka bentuk dan memilih bahan.",
+        "Murid membina jambatan kertas serta menguji beban menggunakan objek seragam.",
+        "Kumpulan menambah baik satu bahagian berdasarkan keputusan dua ujian."
+      ],
+      "pengukuhan_penilaian": "Guru menyemak lakaran, rekod ujian dan pematuhan kriteria.",
+      "penutup": "Murid menerangkan penambahbaikan yang paling berkesan.",
+      "bbm": "Kertas, pita, pembaris, objek beban ringan",
+      "assessment_evidence": "Guru menyemak lakaran, rekod ujian dan pematuhan kriteria.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S06C",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        5,
+        6
+      ],
+      "level": "Tahun 5–6",
+      "title": "Cabaran Reka Cipta",
+      "subject_options": [
+        "Sains",
+        "Reka Bentuk dan Teknologi",
+        "Pendidikan Seni Visual"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid menghasilkan prototaip bagi masalah sebenar, membandingkan dua reka bentuk dan menjustifikasikan penambahbaikan.",
+      "set_induksi": "Guru memberi masalah mereka bentuk bekas pelindung barang kecil.",
+      "aktiviti_utama": [
+        "Kumpulan menetapkan kriteria kos, keselamatan dan fungsi sebelum melakar dua reka bentuk.",
+        "Murid memilih satu reka bentuk dan membina prototaip menggunakan bahan tersedia.",
+        "Kumpulan menguji fungsi, merekod kelemahan dan mengubah suai reka bentuk."
+      ],
+      "pengukuhan_penilaian": "Guru menilai pematuhan kriteria, data ujian serta alasan pemilihan.",
+      "penutup": "Murid menerangkan kompromi antara kos dan fungsi.",
+      "bbm": "Kadbod, kertas, pita, alat ukur, lembaran ujian",
+      "assessment_evidence": "Guru menilai pematuhan kriteria, data ujian serta alasan pemilihan.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S07A",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        1,
+        2
+      ],
+      "level": "Tahun 1–2",
+      "title": "Galeri Hasil Kerja",
+      "subject_options": [
+        "Semua subjek"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid mempamerkan satu hasil pembelajaran dan menyatakan dua perkara tentang hasilnya.",
+      "set_induksi": "Guru menunjukkan cara memberi komen positif dengan bahasa mudah.",
+      "aktiviti_utama": [
+        "Murid memilih satu lembaran atau karya terbaik lalu menampalnya.",
+        "Murid berjalan melihat tiga pameran dan menampal pelekat penghargaan.",
+        "Setiap murid menerangkan dua perkara tentang hasilnya kepada seorang rakan."
+      ],
+      "pengukuhan_penilaian": "Guru memerhati penerangan dua perkara dan adab memberi penghargaan.",
+      "penutup": "Murid menyatakan satu perkara yang mahu dipelajari lagi.",
+      "bbm": "Hasil kerja murid, papan pameran, pelekat",
+      "assessment_evidence": "Guru memerhati penerangan dua perkara dan adab memberi penghargaan.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S07B",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        3,
+        4
+      ],
+      "level": "Tahun 3–4",
+      "title": "Galeri Hasil Kerja",
+      "subject_options": [
+        "Semua subjek"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid menerangkan proses menghasilkan karya dengan tiga langkah dan memberi satu maklum balas membina.",
+      "set_induksi": "Guru memperagakan perbezaan pujian umum dengan maklum balas khusus.",
+      "aktiviti_utama": [
+        "Murid menyusun dua hasil kerja dan menulis label proses tiga langkah.",
+        "Pasangan mengunjungi galeri dan bertanya satu soalan tentang kaedah.",
+        "Murid mencatat satu maklum balas dan menerangkan pembaikan yang boleh dibuat."
+      ],
+      "pengukuhan_penilaian": "Guru menyemak label proses dan kualiti maklum balas yang diberikan.",
+      "penutup": "Murid memilih satu hasil untuk dibaiki pada sesi seterusnya.",
+      "bbm": "Hasil kerja, kad soalan, nota tampal",
+      "assessment_evidence": "Guru menyemak label proses dan kualiti maklum balas yang diberikan.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S07C",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        5,
+        6
+      ],
+      "level": "Tahun 5–6",
+      "title": "Galeri Hasil Kerja",
+      "subject_options": [
+        "Semua subjek"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid membandingkan dua hasil pembelajaran berdasarkan kriteria jelas serta menulis refleksi penambahbaikan.",
+      "set_induksi": "Guru bersama murid menetapkan tiga kriteria galeri seperti ketepatan, kreativiti dan kejelasan.",
+      "aktiviti_utama": [
+        "Murid menyediakan kapsyen yang menerangkan tujuan, kaedah dan bukti hasil.",
+        "Kumpulan menilai dua pameran dengan menggunakan rubrik mesra murid.",
+        "Murid memberikan maklum balas berasaskan kriteria dan menulis pelan pembaikan."
+      ],
+      "pengukuhan_penilaian": "Guru menyemak rubrik, alasan penilaian dan cadangan penambahbaikan.",
+      "penutup": "Murid menyatakan satu perubahan yang akan dibuat pada hasil sendiri.",
+      "bbm": "Hasil kerja, rubrik, kad kapsyen",
+      "assessment_evidence": "Guru menyemak rubrik, alasan penilaian dan cadangan penambahbaikan.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S08A",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        1,
+        2
+      ],
+      "level": "Tahun 1–2",
+      "title": "Detektif Sains",
+      "subject_options": [
+        "Sains",
+        "Matematik"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid mengelaskan empat objek selamat berdasarkan satu ciri yang diperhatikan.",
+      "set_induksi": "Guru mengeluarkan beberapa objek dan meminta murid menyebut persamaan.",
+      "aktiviti_utama": [
+        "Murid memerhati warna, saiz atau tekstur tanpa merasa atau menghidu bahan tidak diketahui.",
+        "Murid mengasingkan empat objek kepada kumpulan yang mempunyai ciri dipilih.",
+        "Murid menunjukkan satu objek dan menerangkan alasan pengelasan."
+      ],
+      "pengukuhan_penilaian": "Guru menyemak empat pengelasan dan satu alasan lisan.",
+      "penutup": "Murid menamakan deria yang digunakan untuk mengumpul maklumat.",
+      "bbm": "Objek harian bersih dan selamat, dulang, kad ciri",
+      "assessment_evidence": "Guru menyemak empat pengelasan dan satu alasan lisan.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S08B",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        3,
+        4
+      ],
+      "level": "Tahun 3–4",
+      "title": "Detektif Sains",
+      "subject_options": [
+        "Sains",
+        "Matematik"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid membina jadual pemerhatian dan membuat satu kesimpulan berdasarkan data.",
+      "set_induksi": "Guru menunjukkan dua jenis permukaan dan mengemukakan soalan tentang geseran.",
+      "aktiviti_utama": [
+        "Kumpulan meramal pergerakan objek ringan pada dua permukaan.",
+        "Murid menjalankan percubaan terkawal dengan prosedur selamat dan merekod pemerhatian.",
+        "Murid membandingkan data dua permukaan lalu menulis satu kesimpulan."
+      ],
+      "pengukuhan_penilaian": "Guru menyemak jadual pemerhatian dan hubungan kesimpulan dengan data.",
+      "penutup": "Murid menyatakan satu perkara yang perlu dikawal dalam ujian.",
+      "bbm": "Permukaan kadbod dan kain, objek ringan, jadual rekod",
+      "assessment_evidence": "Guru menyemak jadual pemerhatian dan hubungan kesimpulan dengan data.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S08C",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        5,
+        6
+      ],
+      "level": "Tahun 5–6",
+      "title": "Detektif Sains",
+      "subject_options": [
+        "Sains",
+        "Matematik"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid mereka bentuk penyiasatan adil, mentafsir data dan mencadangkan penambahbaikan prosedur.",
+      "set_induksi": "Guru memberikan persoalan tentang kesan bilangan lapisan bahan terhadap penyerapan air.",
+      "aktiviti_utama": [
+        "Kumpulan mengenal pasti pemboleh ubah dan menyediakan langkah eksperimen yang selamat.",
+        "Murid mengukur atau membandingkan jumlah air yang diserap dengan ulangan terkawal.",
+        "Murid membina graf data, menyatakan pola dan menilai had pengukuran."
+      ],
+      "pengukuhan_penilaian": "Guru menyemak kawalan pemboleh ubah, graf dan kesimpulan berasaskan data.",
+      "penutup": "Murid mencadangkan cara meningkatkan kebolehpercayaan ujian.",
+      "bbm": "Kertas tisu, bekas, air, silinder penyukat jika ada, jadual",
+      "assessment_evidence": "Guru menyemak kawalan pemboleh ubah, graf dan kesimpulan berasaskan data.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S09A",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        1,
+        2
+      ],
+      "level": "Tahun 1–2",
+      "title": "Forum Nilai dan Keputusan",
+      "subject_options": [
+        "Bahasa Melayu",
+        "Pendidikan Moral",
+        "Pendidikan Islam",
+        "Sejarah"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid memilih tindakan sopan bagi dua situasi harian dan melakonkan satu contoh.",
+      "set_induksi": "Guru menunjukkan gambar situasi beratur dan berkongsi barang.",
+      "aktiviti_utama": [
+        "Murid memadankan dua situasi dengan tindakan yang baik.",
+        "Pasangan melakonkan cara meminta izin atau meminta maaf.",
+        "Murid menerangkan mengapa satu tindakan membantu rakan."
+      ],
+      "pengukuhan_penilaian": "Guru merekod ketepatan dua padanan dan lakonan sopan.",
+      "penutup": "Murid memilih satu nilai untuk diamalkan di kelas.",
+      "bbm": "Kad situasi, kad ungkapan sopan",
+      "assessment_evidence": "Guru merekod ketepatan dua padanan dan lakonan sopan.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S09B",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        3,
+        4
+      ],
+      "level": "Tahun 3–4",
+      "title": "Forum Nilai dan Keputusan",
+      "subject_options": [
+        "Bahasa Melayu",
+        "Pendidikan Moral",
+        "Pendidikan Islam",
+        "Sejarah"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid membandingkan dua pilihan tindakan bagi masalah rakan sebaya serta memberikan dua sebab.",
+      "set_induksi": "Guru membaca situasi konflik penggunaan bahan kumpulan.",
+      "aktiviti_utama": [
+        "Kumpulan mengenal pasti pihak yang terlibat dan perasaan setiap pihak.",
+        "Murid menyenaraikan dua pilihan tindakan dan kemungkinan akibatnya.",
+        "Kumpulan melakonkan penyelesaian serta memberi dua sebab kepada pilihan."
+      ],
+      "pengukuhan_penilaian": "Guru menilai relevansi sebab dan adab semasa perbincangan.",
+      "penutup": "Murid menyatakan cara mendengar pendapat berbeza.",
+      "bbm": "Kad dilema, kertas pilihan-akibat",
+      "assessment_evidence": "Guru menilai relevansi sebab dan adab semasa perbincangan.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S09C",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        5,
+        6
+      ],
+      "level": "Tahun 5–6",
+      "title": "Forum Nilai dan Keputusan",
+      "subject_options": [
+        "Bahasa Melayu",
+        "Pendidikan Moral",
+        "Pendidikan Islam",
+        "Sejarah"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid menilai dilema komuniti menggunakan sekurang-kurangnya dua perspektif dan cadangan beralasan.",
+      "set_induksi": "Guru membentangkan isu rekaan tentang perkongsian ruang sekolah.",
+      "aktiviti_utama": [
+        "Kumpulan mengenal pasti kepentingan sekurang-kurangnya dua pihak.",
+        "Murid membahaskan dua penyelesaian dengan menyatakan faedah dan kesan.",
+        "Wakil kumpulan membentangkan keputusan bersama bukti dan langkah pelaksanaan."
+      ],
+      "pengukuhan_penilaian": "Guru menilai pertimbangan pelbagai pihak, hujah dan sikap menghormati.",
+      "penutup": "Murid membuat refleksi apakah pandangan yang mengubah keputusan mereka.",
+      "bbm": "Kad dilema, carta pihak terlibat, rubrik",
+      "assessment_evidence": "Guru menilai pertimbangan pelbagai pihak, hujah dan sikap menghormati.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S10A",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        1,
+        2
+      ],
+      "level": "Tahun 1–2",
+      "title": "Pentas Mini",
+      "subject_options": [
+        "Bahasa Melayu",
+        "Bahasa Inggeris",
+        "Bahasa Arab",
+        "Muzik",
+        "Sejarah"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid menyampaikan satu persembahan pendek dengan sebutan atau gerakan yang jelas.",
+      "set_induksi": "Guru menunjukkan cara memperkenalkan persembahan dan memberi tepukan sopan.",
+      "aktiviti_utama": [
+        "Murid memilih lagu, dialog mudah atau sajak pendek yang sudah dipelajari.",
+        "Pasangan berlatih sebutan dan gerakan dengan bantuan kad petunjuk.",
+        "Murid mempersembahkan di hadapan kumpulan kecil dan menerima pujian khusus."
+      ],
+      "pengukuhan_penilaian": "Guru menyemak keberanian mencuba dan dua kriteria persembahan mudah.",
+      "penutup": "Murid menamakan satu perkara yang dilakukan dengan baik.",
+      "bbm": "Kad dialog atau sajak, alat ritma pilihan",
+      "assessment_evidence": "Guru menyemak keberanian mencuba dan dua kriteria persembahan mudah.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S10B",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        3,
+        4
+      ],
+      "level": "Tahun 3–4",
+      "title": "Pentas Mini",
+      "subject_options": [
+        "Bahasa Melayu",
+        "Bahasa Inggeris",
+        "Bahasa Arab",
+        "Muzik",
+        "Sejarah"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid mempersembahkan dialog atau sketsa tiga hingga lima minit dengan peranan dan urutan jelas.",
+      "set_induksi": "Guru menunjukkan contoh pembahagian watak dan penggunaan suara.",
+      "aktiviti_utama": [
+        "Kumpulan merangka jalan cerita tiga bahagian daripada tema yang dipelajari.",
+        "Murid membahagi watak dan berlatih sebutan serta perubahan giliran.",
+        "Kumpulan membuat persembahan, manakala rakan mencatat satu kekuatan."
+      ],
+      "pengukuhan_penilaian": "Guru menilai kerjasama, ketepatan kandungan dan penyampaian.",
+      "penutup": "Murid memberi satu cadangan menambah baik persembahan.",
+      "bbm": "Kad watak, props kertas, borang maklum balas",
+      "assessment_evidence": "Guru menilai kerjasama, ketepatan kandungan dan penyampaian.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S10C",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        5,
+        6
+      ],
+      "level": "Tahun 5–6",
+      "title": "Pentas Mini",
+      "subject_options": [
+        "Bahasa Melayu",
+        "Bahasa Inggeris",
+        "Bahasa Arab",
+        "Muzik",
+        "Sejarah"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid menghasilkan persembahan berhujah atau dramatik yang menilai satu isu menggunakan sumber pembelajaran.",
+      "set_induksi": "Guru menetapkan kriteria kandungan sahih, peranan dan masa persembahan.",
+      "aktiviti_utama": [
+        "Kumpulan memilih fakta daripada bahan yang telah dipelajari dan menulis skrip ringkas.",
+        "Murid menjalankan latihan dengan semakan rakan terhadap kesahihan fakta serta aliran dialog.",
+        "Kumpulan mempersembahkan sketsa atau forum dan menjawab satu soalan audiens."
+      ],
+      "pengukuhan_penilaian": "Guru menilai ketepatan fakta, hujah, kerjasama dan respons soalan.",
+      "penutup": "Murid menulis refleksi satu kekuatan dan satu penambahbaikan.",
+      "bbm": "Nota pembelajaran terdahulu, kad peranan, rubrik",
+      "assessment_evidence": "Guru menilai ketepatan fakta, hujah, kerjasama dan respons soalan.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    }
+  ]
+}
