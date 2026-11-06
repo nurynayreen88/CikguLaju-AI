@@ -10,6 +10,10 @@ on:
       - 'scripts/build_rbt_2027_review_word.py'
       - 'scripts/check_rbt_2027_source_adapter.py'
       - 'web/rbt_2027_staging_source.py'
+      - 'web/rbt_2027_user_runtime.py'
+      - 'web/rbt_2027_native_api.py'
+      - 'scripts/check_rbt_2027_native_bridge.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
       - '.github/workflows/rbt-2027-staging-qa.yml'
   workflow_dispatch:
 
@@ -42,11 +46,15 @@ jobs:
           PY
       - name: Install Word/PDF preview validation dependencies
         run: |
-          python -m pip install --disable-pip-version-check python-docx pypdf
+          python -m pip install --disable-pip-version-check python-docx pypdf flask reportlab
           if ! command -v libreoffice >/dev/null 2>&1; then
             sudo apt-get update -qq
             sudo apt-get install -y -qq --no-install-recommends libreoffice-writer
           fi
+      - name: Test Telegram callback and authenticated Web native RBT bridge (fake runtime only)
+        run: python scripts/check_rbt_2027_native_bridge.py
+      - name: Syntax-check WSGI integration without loading production DB
+        run: python -m py_compile web/rbt_2027_native_api.py web/rbt_2027_user_runtime.py tools/run_telegram_with_curriculum_api.py
       - name: Produce 96 individual RPH Word and three RPT landscape Word
         run: python scripts/build_rbt_2027_review_word.py --year all --out /tmp/cikgulaju-rbt-docs
       - name: Convert review Word files into PDF without changing source
