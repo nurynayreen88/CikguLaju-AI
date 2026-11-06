@@ -15,6 +15,48 @@ REQUIRED = (
 
 
 class MusicRPTAndRPHStagingQA(unittest.TestCase):
+    def test_audit_summary_status_matches_current_source_evidence(self):
+        """Prevent stale 3/28/15 counts being reported as the current QA state."""
+        register = (MUSIC / "rpt_rph_2027" / "SOURCE_BOOK_REGISTER_20261106.md").read_text(
+            encoding="utf-8"
+        )
+        current_summary = register.split("## Pusingan Tahun 2", 1)[0]
+        expected = {2: 33, 3: 33, 4: 33, 5: 35, 6: 33}
+        total = 0
+        missing_from_book = set()
+        for year, count in expected.items():
+            directory = MUSIC / "rpt_rph_2027" / f"year{year}"
+            manifest = json.loads((directory / "pdp_manifest.json").read_text(encoding="utf-8"))
+            checked = {
+                r["pdp_id"] for r in manifest["pdps"]
+                if r.get("source_book_text_crosscheck") is True
+                or r.get("source_book_content_page_checked") is True
+            }
+            self.assertEqual(len(checked), count, f"Year {year} has stale coverage")
+            self.assertEqual(
+                manifest["status"],
+                f"DRAF_STAGING_{count}_OF_35_TEXT_OR_PAGE_CROSSCHECK_NOT_FINAL",
+            )
+            summary_row = next(
+                line for line in current_summary.splitlines()
+                if line.startswith(f"| {year} |")
+            )
+            self.assertIn(f"{count}/35", summary_row)
+            self.assertFalse(manifest["textbook_verified"])
+            self.assertFalse(manifest["audio_verified"])
+            self.assertFalse(manifest["rph_word_pdf_verified"])
+            total += len(checked)
+            missing_from_book.update(
+                r["pdp_id"] for r in manifest["pdps"] if r["pdp_id"] not in checked
+            )
+        self.assertEqual(total, 167)
+        self.assertEqual(missing_from_book, {
+            f"MZ-Y{year}-{pdp:02d}"
+            for year in (2, 3, 4, 6) for pdp in (34, 35)
+        })
+        self.assertIn("167/175", current_summary)
+        self.assertIn("8 RPH", current_summary)
+
     def test_pdp_identity_rpt_rph_coverage(self):
         all_keys = set()
         for year, expected in YEAR_COUNTS.items():
