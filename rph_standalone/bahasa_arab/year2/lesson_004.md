@@ -4,20 +4,20 @@
 **Fokus:** Bacaan huruf ل dan ي dalam kata
 **Kod SK/SP:** 2.1 / 2.1.1 — padanan teks DSKP dan RPT 2026 pada peringkat kemahiran; belum diluluskan sebagai rekod individu akhir.
 **Tarikh, masa dan kelas:** Diisi mengikut jadual guru.
-**Objektif:** Murid meniru bacaan dan mengenal sekurang-kurangnya 4 daripada 5 bentuk huruf ل/ي secara terpisah dan bersambung.
+**Objektif:** Murid meniru dan membaca dengan tepat sekurang-kurangnya 4 daripada 5 sebutan huruf ل/ي berbaris yang ditunjukkan dalam perkataan contoh buku teks.
 **Kriteria kejayaan:** Murid mencapai sasaran yang dinyatakan dalam objektif; guru merekod pencapaian individu.
 
-**Set induksi:** Guru menunjukkan dua bentuk ي dan meminta murid menunjukkan huruf asal.
+**Set induksi:** Guru membaca bunyi لِ dan يَ daripada perkataan buku; murid mengulang bunyi yang didengar dengan sebutan betul.
 
-**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru menunjukkan perkataan لِسَان، لِبَاس daripada buku hlm 2 dan يَد، كُرْسِي daripada buku hlm 4, membimbing murid menjejak serta membaca huruf ل/ي di awal dan akhir kata. Kad bentuk huruf ialah BBM pengayaan guru.
+**Aktiviti 1 — Demonstrasi dan bimbingan:** Guru menunjukkan perkataan لِسَان، لِبَاس pada buku hlm 2 dan يَد، كُرْسِي pada hlm 4. Guru membaca bunyi huruf ل/ي dalam perkataan tersebut; murid meniru sebutan mengikut baris secara berulang. Kad huruf hanya BBM tambahan guru.
 
-**Aktiviti 2 — Amali murid:** Permainan papan magnet: murid padankan kad bentuk awal, tengah dan akhir huruf berdasarkan contoh guru; sebut huruf semasa memadankan.
+**Aktiviti 2 — Amali murid:** Secara berpasangan, seorang murid mengangkat lima kad huruf berbaris ل/ي dan membaca bunyi contoh; rakan meniru bacaannya, kemudian bertukar peranan. Guru membetulkan makhraj yang kurang tepat.
 
-**Pengukuhan / PBD:** Guru menunjukkan lima kad bentuk rawak dan merekod bacaan tepat murid.
+**Pengukuhan / PBD:** Guru memperdengarkan lima model bacaan pendek dan meminta murid mengulang sambil menunjuk kad huruf yang sepadan; catat bilangan bunyi yang ditiru dengan tepat (sasaran 4/5).
 
-**Penutup:** Murid menulis di udara bentuk ل dan ي sambil menyebut bunyinya.
+**Penutup:** Murid mengulang bacaan satu bunyi ل dan satu bunyi ي yang paling mencabar.
 
-**BBM:** Kad bentuk huruf, papan magnet, pen marker
+**BBM:** Buku Teks Bahasa Arab Tahun 2 hlm 2 & 4, kad bunyi huruf berbaris, papan kecil
 
 **Refleksi:** ____ / ____ murid mencapai sasaran. Intervensi: __________________.
 
@@ -26,4 +26,6 @@
 **Status rujukan buku teks:** Halaman buku teks Tahun 2 belum disahkan; jangan cipta nombor muka surat.
 **Status penerbitan:** DRAF_STAGING / BELUM READY. Bukan bahan Telegram/Web LIVE. Semakan halaman teks, pemaparan Arab RTL, Word/PDF A4 serta pengesahan manual masih diperlukan.
 
-**Semakan Buku Teks asal Tahun 2 (6 Nov 2026):** Buku Teks Bahasa Arab Tahun 2 DBP untuk KPM cetakan 2017, ISBN 978-983-49-1589-6, Unit 1 هيا نتعارف, halaman bercetak **2 & 4**. Teks buku: https://anyflip.com/slrpb/qzcr/basic; DSKP asal: https://drive.google.com/file/d/1WY_c69UshDm3jHzVK86G2xfu77UUkGYO/view. Buku hlm 2 dan 4 memperkenalkan huruf dalam kedudukan kata; kad huruf adalah latihan guru tambahan, bukan dakwaan kod 2.1.1 tercetak. **Kategori bukti:** BOOK_SKILL_MATCH_PRINTED_CODE_REQUIRES_VISUAL_CHECK. Pemetaan turutan PdP RPT 2027 dan semakan visual kod buku masih belum diluluskan. **DRAF / BELUM READY**.
+**Semakan Buku Teks asal Tahun 2 (6 Nov 2026):** Buku Teks Bahasa Arab Tahun 2 DBP untuk KPM cetakan 2017, ISBN 978-983-49-1589-6, Unit 1 هيا نتعارف, halaman bercetak **2 & 4**. Teks buku: https://anyflip.com/slrpb/qzcr/basic; DSKP asal: https://drive.google.com/file/d/1WY_c69UshDm3jHzVK86G2xfu77UUkGYO/view. Buku hlm 2 dan 4 memperkenalkan huruf dalam kedudukan kata; kad huruf adalah latihan guru tambahan, bukan dakwaan kod 2.1.1 tercetak. **Kategori bukti:** BOOK_SKILL_MATCH_PRINTED_CODE_REQUIRES_VISUAL_CHECK. Aktiviti/objektif telah diselaraskan dengan DPK SP 2.1.1 (meniru dan mengulang bacaan huruf), bukan pentaksiran mengenal bentuk huruf semata-mata. Pemetaan turutan PdP RPT 2027 dan semakan visual kod buku masih belum diluluskan. **DRAF / BELUM READY**.
+
+**Semakan DPK KPM (6 Nov 2026):** https://www.tcer.my/wp-content/uploads/2021/01/4_DPK_Bahasa-Arab-KSSR-Tahun-2-Edisi-2-1.pdf: SP 2.1.1 ialah meniru bacaan huruf dan mengulang sebutan, bukannya pentaksiran bentuk tulisan. RPH ini telah dimurnikan supaya demonstrasi, tindakan murid dan PBD mengukur bacaan itu. Kod bercetak pada imej asal hlm 2/4 masih perlu semakan visual. **DRAF / BELUM READY**.
