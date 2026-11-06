@@ -14,7 +14,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan ilustrasi sumbangan tokoh terbilang Melaka. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 8: Tokoh Terbilang Kesultanan Melayu Melaka.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 109, 117–119: Perbincangan menghargai keistimewaan tokoh dan nilai. Murid memilih dua sifat tokoh yang boleh dicontohi berdasarkan tindakan bersumber. Guru menyemak jawapan awal berpandukan 5.1.4.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 109, 117–119: Perbincangan menghargai keistimewaan tokoh dan nilai patriotisme. Murid memilih dua sifat tokoh yang boleh dicontohi berdasarkan tindakan bersumber. Guru menyemak jawapan awal berpandukan 5.1.4.
 
 **Aktiviti 2 (20 min):** Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 109, 117–119. Murid menghasilkan kad penghargaan yang menyatakan sumbangan serta kaitan dengan tanggungjawab hari ini. Guru membimbing pembetulan salah faham menggunakan bukti.
 
