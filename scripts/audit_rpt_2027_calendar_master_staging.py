@@ -8,6 +8,7 @@ from __future__ import annotations
 import json
 import re
 from collections import Counter
+from datetime import date
 from pathlib import Path
 
 from scripts.build_rpt_2027_standard_preview import moral_records, psv_records, rbt_records
@@ -53,6 +54,13 @@ def audit_rows(subject, year, rows, master):
                 category = "unrecognized_week"
             elif any(not all(pair) for pair in dates.values()):
                 category = "week_known_but_missing_group_dates"
+            elif (subject == "sejarah" and row.get("calendar_alignment") ==
+                  "GROUP_A_ONE_DAY_LATE_SOURCE" and
+                  dates["B"] == (master["B"][week]["start"], master["B"][week]["end"]) and
+                  dates["A"][1] == master["A"][week]["end"] and
+                  (date.fromisoformat(dates["A"][0]) -
+                   date.fromisoformat(master["A"][week]["start"])).days == 1):
+                category = "sejarah_partial_group_a_week_needs_school_calendar_review"
             elif any(dates[g] != (master[g][week]["start"], master[g][week]["end"])
                      for g in ("A", "B")):
                 # A source may label the Nth taught lesson as MNN, even when
@@ -68,9 +76,12 @@ def audit_rows(subject, year, rows, master):
                 category = ("source_week_label_conflicts_with_master"
                             if len(matched) == 1 else "week_and_date_mismatch")
             else:
-                category = ("week_label_reconciled_from_master"
-                            if row.get("source_week") and row["source_week"] != week
-                            else "aligned_to_master_week")
+                if subject == "sejarah" and row.get("calendar_alignment") == "EXACT_SOURCE_DATE_PAIR":
+                    category = "sejarah_week_derived_from_candidate_dates"
+                elif row.get("source_week") and row["source_week"] != week:
+                    category = "week_label_reconciled_from_master"
+                else:
+                    category = "aligned_to_master_week"
         tally[category] += 1
         if category != "aligned_to_master_week" and len(report["examples"]) < 12:
             example = {
@@ -84,6 +95,8 @@ def audit_rows(subject, year, rows, master):
             if category == "week_label_reconciled_from_master":
                 example["source_original_week"] = row["source_week"]
                 example["display_week"] = row["week"]
+            if subject == "sejarah" and row.get("calendar_alignment"):
+                example["source_calendar_alignment"] = row["calendar_alignment"]
             report["examples"].append(example)
     report["status_counts"] = dict(sorted(tally.items()))
     report["requires_review"] = any(category != "aligned_to_master_week" for category in tally)
