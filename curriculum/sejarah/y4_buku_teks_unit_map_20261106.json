@@ -1,0 +1,142 @@
+{
+  "year": 4,
+  "edition": "DBP 2019, KSSR Semakan 2017",
+  "isbn": "978-983-49-2472-0",
+  "table_of_contents_source": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+  "source_evidence": "Unit and printed start pages from 2017 revised textbook table of contents; activity pages not verified",
+  "review_state": "DRAF_TO_CROSSWALK_CONFIRMED",
+  "units": [
+    {
+      "sk": "1.1",
+      "number": 1,
+      "name": "Mengenali Sejarah",
+      "start": 2,
+      "end": 15,
+      "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+      "edition": "DBP 2019, KSSR Semakan 2017",
+      "isbn": "978-983-49-2472-0",
+      "evidence": "ISI_KANDUNGAN_BUKU_TEKS_DISEMAK",
+      "exact_activity_page_verified": false
+    },
+    {
+      "sk": "1.2",
+      "number": 2,
+      "name": "Saya dan Keluarga",
+      "start": 16,
+      "end": 29,
+      "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+      "edition": "DBP 2019, KSSR Semakan 2017",
+      "isbn": "978-983-49-2472-0",
+      "evidence": "ISI_KANDUNGAN_BUKU_TEKS_DISEMAK",
+      "exact_activity_page_verified": false
+    },
+    {
+      "sk": "1.3",
+      "number": 3,
+      "name": "Sejarah Sekolah",
+      "start": 30,
+      "end": 43,
+      "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+      "edition": "DBP 2019, KSSR Semakan 2017",
+      "isbn": "978-983-49-2472-0",
+      "evidence": "ISI_KANDUNGAN_BUKU_TEKS_DISEMAK",
+      "exact_activity_page_verified": false
+    },
+    {
+      "sk": "1.4",
+      "number": 4,
+      "name": "Sejarah Tempat Tinggal",
+      "start": 44,
+      "end": 57,
+      "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+      "edition": "DBP 2019, KSSR Semakan 2017",
+      "isbn": "978-983-49-2472-0",
+      "evidence": "ISI_KANDUNGAN_BUKU_TEKS_DISEMAK",
+      "exact_activity_page_verified": false
+    },
+    {
+      "sk": "2.1",
+      "number": 5,
+      "name": "Zaman Air Batu",
+      "start": 58,
+      "end": 71,
+      "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+      "edition": "DBP 2019, KSSR Semakan 2017",
+      "isbn": "978-983-49-2472-0",
+      "evidence": "ISI_KANDUNGAN_BUKU_TEKS_DISEMAK",
+      "exact_activity_page_verified": false
+    },
+    {
+      "sk": "3.1",
+      "number": 6,
+      "name": "Zaman Prasejarah",
+      "start": 72,
+      "end": 85,
+      "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+      "edition": "DBP 2019, KSSR Semakan 2017",
+      "isbn": "978-983-49-2472-0",
+      "evidence": "ISI_KANDUNGAN_BUKU_TEKS_DISEMAK",
+      "exact_activity_page_verified": false
+    },
+    {
+      "sk": "4.1",
+      "number": 7,
+      "name": "Kerajaan Melayu Awal",
+      "start": 86,
+      "end": 103,
+      "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+      "edition": "DBP 2019, KSSR Semakan 2017",
+      "isbn": "978-983-49-2472-0",
+      "evidence": "ISI_KANDUNGAN_BUKU_TEKS_DISEMAK",
+      "exact_activity_page_verified": false
+    },
+    {
+      "sk": "5.1",
+      "number": 8,
+      "name": "Tokoh Terbilang Kesultanan Melayu Melaka",
+      "start": 104,
+      "end": 119,
+      "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+      "edition": "DBP 2019, KSSR Semakan 2017",
+      "isbn": "978-983-49-2472-0",
+      "evidence": "ISI_KANDUNGAN_BUKU_TEKS_DISEMAK",
+      "exact_activity_page_verified": false
+    },
+    {
+      "sk": "5.2",
+      "number": 9,
+      "name": "Pengasas Kesultanan Melayu Melaka",
+      "start": 120,
+      "end": 137,
+      "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+      "edition": "DBP 2019, KSSR Semakan 2017",
+      "isbn": "978-983-49-2472-0",
+      "evidence": "ISI_KANDUNGAN_BUKU_TEKS_DISEMAK",
+      "exact_activity_page_verified": false
+    },
+    {
+      "sk": "5.3",
+      "number": 10,
+      "name": "Tun Perak Bendahara Terbilang",
+      "start": 138,
+      "end": 153,
+      "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+      "edition": "DBP 2019, KSSR Semakan 2017",
+      "isbn": "978-983-49-2472-0",
+      "evidence": "ISI_KANDUNGAN_BUKU_TEKS_DISEMAK",
+      "exact_activity_page_verified": false
+    },
+    {
+      "sk": "5.4",
+      "number": 11,
+      "name": "Hang Tuah Laksamana Terbilang",
+      "start": 154,
+      "end": 168,
+      "source_url": "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
+      "edition": "DBP 2019, KSSR Semakan 2017",
+      "isbn": "978-983-49-2472-0",
+      "evidence": "ISI_KANDUNGAN_BUKU_TEKS_DISEMAK",
+      "exact_activity_page_verified": false
+    }
+  ]
+}

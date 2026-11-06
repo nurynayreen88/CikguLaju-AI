@@ -1,0 +1,31 @@
+# RPH SEJARAH TAHUN 6 — PdP 022
+
+**Status:** DRAF_97_AKTIVITI_KHUSUS_SELESAI_SEMAKAN_BUKU_BELUM_LULUS; belum semakan akhir guru / buku teks  
+**Tahun akademik:** 2027 | **Masa:** 60 minit | **Minggu A:** 2027-07-04–2027-07-08 | **Minggu B:** 2027-07-05–2027-07-09  
+**Tema:** Pencapaian dan Kebanggaan Negara | **Tajuk:** Unit 7: Pemimpin Negara Malaysia — PdP 022 | **SK:** 12.1  
+**SP:** 12.1.1, K12.1.4 | **Jenis:** PdP Kandungan
+
+**Objektif:**
+- Murid dapat menyenaraikan nama-nama dan biodata ringkas Perdana Menteri Malaysia mengikut urutan.
+
+**Kriteria kejayaan:** Murid dapat menghasilkan jadual urutan Perdana Menteri bersumber dan garis masa, dengan maklumat bersumber yang memenuhi SP 12.1.1.
+
+**BBM:** Buku Teks Sejarah Tahun 6 (DBP 2021, KSSR Semakan 2017), Unit 7: Pemimpin Negara Malaysia, hlm. 106–123 (julat isi kandungan sahaja, bukan halaman latihan); bahan rangsangan: kad biodata Perdana Menteri dan garis masa pelantikan daripada sumber rasmi bertarikh; kad tugasan dan lembaran rekod PBD.; rujukan kemas kini kerajaan (6 Nov 2026): Senarai Perdana Menteri BKPP JPM
+
+**Set Induksi (5 min):** Guru mempamerkan kad biodata Perdana Menteri dan garis masa pelantikan daripada sumber rasmi bertarikh. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 7: Pemimpin Negara Malaysia.
+
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 108–115: Urutan Perdana Menteri. Murid menyusun nama Perdana Menteri Malaysia mengikut urutan yang disemak tarikh. Guru menyemak jawapan awal berpandukan 12.1.1. Guru menjelaskan buku 2021 sudah menyenaraikan PM ke-9, tetapi rujukan rasmi 2026 diperlukan untuk PM ke-10.
+
+**Aktiviti 2 (20 min):** Guru meminta murid memeriksa urutan dan fakta pada hlm. 108–115. Murid membina garis masa dan menyatakan satu biodata ringkas bagi beberapa pemimpin. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan pemimpin yang memiliki ciri-ciri kepimpinan yang berwibawa. Murid menambah PM ke-10, Anwar Ibrahim (24 November 2022), dan melabel tarikh serta sumber rasmi.
+
+**Pengukuhan dan PBD (10 min):** Murid menghasilkan jadual urutan Perdana Menteri bersumber dan garis masa. Guru menyemak secara individu menggunakan kata tugas SP 12.1.1 dan nilai K12.1.4, kemudian memberi intervensi kepada murid yang belum tepat.
+
+**Penutup (5 min):** Guru merumus peristiwa, bukti dan pengajaran dalam Unit 7. Murid berkongsi satu fakta tepat, satu bukti dan satu iktibar yang sesuai dengan tajuk.
+
+**Refleksi guru:** ____ / ____ murid mencapai objektif; tindakan susulan: __________________
+
+**Tahap sumber:** DSKP KSSR Semakan 2017 + bab buku teks dipetakan mengikut isi kandungan; aktiviti pengajaran ialah cadangan asli.; latihan buku teks sebenar belum disahkan
+
+**Rujukan buku teks:** https://fliphtml5.com/itcew/pnmn (ISBN 978-983-49-3279-4); halaman dalam data ialah julat unit, bukan pengesahan aktiviti khusus.
+
+**Peringatan:** Semak kebolehlaksanaan aktiviti dengan situasi kelas, halaman buku teks sebenar, kalendar/cuti negeri, dan hasil cetakan Word/PDF sebelum kelulusan atau penerbitan.

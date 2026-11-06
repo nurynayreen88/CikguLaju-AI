@@ -1,0 +1,430 @@
+{
+  "year": 5,
+  "source": "KPM DSKP KSSR Sejarah Semakan 2017",
+  "drive_file_id": "1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri",
+  "source_url": "https://drive.google.com/file/d/1eOv2FMk3LWsb6O7W4bsQFjVUylQDsGri/view",
+  "extraction": "Text processed from user-connected Drive DSKP; not page-by-page visual validation",
+  "status": "DRAF",
+  "standards": [
+    {
+      "sk": "6.1",
+      "title": "Institusi Raja",
+      "theme": "Warisan Negara Kita",
+      "sp": [
+        {
+          "code": "6.1.1",
+          "text": "Menyatakan pengertian raja dan kerajaan."
+        },
+        {
+          "code": "6.1.2",
+          "text": "Menerangkan konsep waadat antara raja dengan rakyat."
+        },
+        {
+          "code": "6.1.3",
+          "text": "Menjelaskan makna daulat dan derhaka."
+        },
+        {
+          "code": "6.1.4",
+          "text": "Membandingkan kedudukan serta peranan Raja-raja Melayu dahulu dan kini."
+        },
+        {
+          "code": "6.1.5",
+          "text": "Menghuraikan negara yang mengamalkan sistem pemerintahan beraja pada masa kini."
+        },
+        {
+          "code": "K6.1.6",
+          "text": "Menyatakan kepentingan menghargai institusi raja."
+        },
+        {
+          "code": "K6.1.7",
+          "text": "Menerangkan kepentingan sikap taat setia terhadap institusi raja."
+        },
+        {
+          "code": "K6.1.8",
+          "text": "Menghuraikan kepentingan mempertahankan kedaulatan institusi raja."
+        }
+      ]
+    },
+    {
+      "sk": "6.2",
+      "title": "Agama Islam",
+      "theme": "Warisan Negara Kita",
+      "sp": [
+        {
+          "code": "6.2.1",
+          "text": "Memerihalkan latar belakang agama dan kepercayaan masyarakat di Tanah Melayu."
+        },
+        {
+          "code": "6.2.2",
+          "text": "Menyatakan sejarah kedatangan agama Islam dalam Kesultanan Melayu Melaka."
+        },
+        {
+          "code": "6.2.3",
+          "text": "Menerangkan kedudukan agama Islam dalam pentadbiran negeri-negeri Melayu sehingga merdeka."
+        },
+        {
+          "code": "6.2.4",
+          "text": "Menjelaskan kedudukan agama Islam sebagai agama Persekutuan."
+        },
+        {
+          "code": "6.2.5",
+          "text": "Menghuraikan peranan agama Islam dalam membentuk perpaduan."
+        },
+        {
+          "code": "K6.2.6",
+          "text": "Menyatakan nilai-nilai keagamaan yang diamalkan ke arah masyarakat harmoni."
+        },
+        {
+          "code": "K6.2.7",
+          "text": "Menerangkan kepentingan mendaulatkan agama Islam sebagai agama Persekutuan."
+        },
+        {
+          "code": "K6.2.8",
+          "text": "Menjelaskan kepentingan membenarkan agama lain diamalkan dengan aman dan damai."
+        }
+      ]
+    },
+    {
+      "sk": "6.3",
+      "title": "Bahasa Melayu",
+      "theme": "Warisan Negara Kita",
+      "sp": [
+        {
+          "code": "6.3.1",
+          "text": "Menyatakan susur galur bahasa Melayu."
+        },
+        {
+          "code": "6.3.2",
+          "text": "Menerangkan wilayah penutur bahasa Melayu di dunia."
+        },
+        {
+          "code": "6.3.3",
+          "text": "Menjelaskan peranan bahasa Melayu dahulu dan kini."
+        },
+        {
+          "code": "K6.3.4",
+          "text": "Menyatakan kepentingan bahasa Melayu sebagai warisan negara yang dibanggakan."
+        },
+        {
+          "code": "K6.3.5",
+          "text": "Menerangkan kepentingan bahasa Melayu sebagai bahasa perpaduan."
+        },
+        {
+          "code": "K6.3.6",
+          "text": "Menjelaskan kepentingan bahasa Melayu sebagai bahasa ilmu."
+        },
+        {
+          "code": "K6.3.7",
+          "text": "Menghuraikan kepentingan mengekalkan penggunaan bahasa ibunda."
+        }
+      ]
+    },
+    {
+      "sk": "7.1",
+      "title": "Campur Tangan dan Penjajahan Kuasa Asing",
+      "theme": "Perjuangan Kemerdekaan Negara",
+      "sp": [
+        {
+          "code": "7.1.1",
+          "text": "Menyatakan istilah campur tangan, penjajahan dan naungan."
+        },
+        {
+          "code": "7.1.2",
+          "text": "Menyenaraikan kuasa asing yang campur tangan dan menjajah di negara kita."
+        },
+        {
+          "code": "7.1.3",
+          "text": "Menyatakan faktor kedatangan kuasa asing ke negara kita."
+        },
+        {
+          "code": "7.1.4",
+          "text": "Menyatakan kesan campur tangan dan penjajahan kuasa asing terhadap pentadbiran dan sosioekonomi."
+        },
+        {
+          "code": "K7.1.5",
+          "text": "Menyatakan kepentingan jati diri yang tinggi dalam kalangan generasi muda."
+        },
+        {
+          "code": "K7.1.6",
+          "text": "Menerangkan kepentingan semangat patriotisme dalam mempertahankan kedaulatan negara."
+        },
+        {
+          "code": "K7.1.7",
+          "text": "Menghuraikan kepentingan mengekalkan kedaulatan dan kemakmuran negara kita."
+        }
+      ]
+    },
+    {
+      "sk": "7.2",
+      "title": "Perjuangan Menentang Campur Tangan dan Penjajahan",
+      "theme": "Perjuangan Kemerdekaan Negara",
+      "sp": [
+        {
+          "code": "7.2.1",
+          "text": "Menyenaraikan tokoh tempatan yang menentang campur tangan dan penjajahan kuasa asing."
+        },
+        {
+          "code": "7.2.2",
+          "text": "Menyatakan sebab penentangan tokoh tempatan terhadap campur tangan dan penjajahan kuasa asing."
+        },
+        {
+          "code": "7.2.3",
+          "text": "Menerangkan peristiwa penentangan tokoh terhadap campur tangan dan penjajahan kuasa asing."
+        },
+        {
+          "code": "K7.2.4",
+          "text": "Menyatakan iktibar yang diperoleh daripada perjuangan tokoh terdahulu."
+        },
+        {
+          "code": "K7.2.5",
+          "text": "Menjelaskan kepentingan menghargai perjuangan pemimpin terdahulu."
+        },
+        {
+          "code": "K7.2.6",
+          "text": "Menghuraikan kepentingan mempertahankan kedaulatan negara."
+        }
+      ]
+    },
+    {
+      "sk": "7.3",
+      "title": "Sejarah Kemerdekaan 1957",
+      "theme": "Perjuangan Kemerdekaan Negara",
+      "sp": [
+        {
+          "code": "7.3.1",
+          "text": "Menamakan tokoh yang berjuang ke arah kemerdekaan."
+        },
+        {
+          "code": "7.3.2",
+          "text": "Menyatakan usaha-usaha ke arah kemerdekaan."
+        },
+        {
+          "code": "7.3.3",
+          "text": "Menerangkan detik-detik pengisytiharan kemerdekaan."
+        },
+        {
+          "code": "K7.3.4",
+          "text": "Menyatakan pengorbanan tokoh pejuang kemerdekaan yang boleh dicontohi."
+        },
+        {
+          "code": "K7.3.5",
+          "text": "Menjelaskan kepentingan permuafakatan dalam perjuangan menuntut kemerdekaan."
+        },
+        {
+          "code": "K7.3.6",
+          "text": "Menghuraikan kepentingan mempertahankan kemerdekaan negara."
+        }
+      ]
+    },
+    {
+      "sk": "8.1",
+      "title": "Institusi Yang di-Pertuan Agong",
+      "theme": "Yang di-Pertuan Agong",
+      "sp": [
+        {
+          "code": "8.1.1",
+          "text": "Menyatakan kedudukan Yang di-Pertuan Agong sebagai Ketua Utama Negara."
+        },
+        {
+          "code": "8.1.2",
+          "text": "Menyatakan peranan Majlis Raja-Raja dalam pemilihan Yang di-Pertuan Agong."
+        },
+        {
+          "code": "8.1.3",
+          "text": "Menyatakan istiadat pertabalan Yang di-Pertuan Agong."
+        },
+        {
+          "code": "8.1.4",
+          "text": "Menyenaraikan bidang kuasa Yang di-Pertuan Agong."
+        },
+        {
+          "code": "8.1.5",
+          "text": "Menyenaraikan alat-alat kebesaran Yang di-Pertuan Agong dan Raja Permaisuri Agong."
+        },
+        {
+          "code": "K8.1.6",
+          "text": "Menyatakan kepentingan menghargai Yang di-Pertuan Agong sebagai tonggak perpaduan."
+        },
+        {
+          "code": "K8.1.7",
+          "text": "Menerangkan kepentingan mengekalkan institusi Yang di-Pertuan Agong."
+        },
+        {
+          "code": "K8.1.8",
+          "text": "Menghuraikan kepentingan taat setia kepada raja dan negara."
+        }
+      ]
+    },
+    {
+      "sk": "9.1",
+      "title": "Jata Negara",
+      "theme": "Identiti Negara Kita",
+      "sp": [
+        {
+          "code": "9.1.1",
+          "text": "Menyatakan sejarah Jata Negara."
+        },
+        {
+          "code": "9.1.2",
+          "text": "Menyenaraikan lambang pada Jata Negara."
+        },
+        {
+          "code": "9.1.3",
+          "text": "Menerangkan makna lambang pada Jata Negara."
+        },
+        {
+          "code": "K9.1.4",
+          "text": "Menyatakan kepentingan menghormati Jata Negara."
+        },
+        {
+          "code": "K9.1.5",
+          "text": "Menerangkan kepentingan Jata Negara sebagai identiti negara"
+        },
+        {
+          "code": "K9.1.6",
+          "text": "Menjelaskan kepentingan menghayati dan mengamalkan cogan kata Jata Negara."
+        }
+      ]
+    },
+    {
+      "sk": "9.2",
+      "title": "Bendera Kebangsaan",
+      "theme": "Identiti Negara Kita",
+      "sp": [
+        {
+          "code": "9.2.1",
+          "text": "Menyatakan sejarah bendera kebangsaan."
+        },
+        {
+          "code": "9.2.2",
+          "text": "Menyatakan nama bendera kebangsaan."
+        },
+        {
+          "code": "9.2.3",
+          "text": "Menerangkan makna warna dan lambang pada bendera kebangsaan."
+        },
+        {
+          "code": "9.2.4",
+          "text": "Menjelaskan etika penggunaan bendera kebangsaan."
+        },
+        {
+          "code": "K9.2.5",
+          "text": "Menyatakan kepentingan bendera kebangsaan dikibarkan."
+        },
+        {
+          "code": "K9.2.6",
+          "text": "Menjelaskan kepentingan menghormati bendera kebangsaan."
+        },
+        {
+          "code": "K9.2.7",
+          "text": "Menghuraikan kepentingan bendera kebangsaan sebagai simbol perpaduan."
+        }
+      ]
+    },
+    {
+      "sk": "9.3",
+      "title": "Lagu Kebangsaan",
+      "theme": "Identiti Negara Kita",
+      "sp": [
+        {
+          "code": "9.3.1",
+          "text": "Menyatakan sejarah penciptaan lagu kebangsaan Malaysia."
+        },
+        {
+          "code": "9.3.2",
+          "text": "Menyatakan nama lagu kebangsaan Malaysia."
+        },
+        {
+          "code": "9.3.3",
+          "text": "Menerangkan lirik dan maksud lagu Negaraku."
+        },
+        {
+          "code": "9.3.4",
+          "text": "Menjelaskan etika menyanyikan dan mendengar lagu kebangsaan."
+        },
+        {
+          "code": "9.3.5",
+          "text": "Menghuraikan peranan lagu kebangsaan dalam membentuk jati diri."
+        },
+        {
+          "code": "K9.3.6",
+          "text": "Menyatakan kepentingan etika ketika menyanyi dan mendengar lagu kebangsaan Malaysia."
+        },
+        {
+          "code": "K9.3.7",
+          "text": "Menjelaskan kepentingan menghayati dan menjiwai lagu kebangsaan Malaysia."
+        },
+        {
+          "code": "K9.3.8",
+          "text": "Menghuraikan kepentingan lagu kebangsaan Malaysia sebagai simbol perpaduan."
+        }
+      ]
+    },
+    {
+      "sk": "9.4",
+      "title": "Bahasa Kebangsaan",
+      "theme": "Identiti Negara Kita",
+      "sp": [
+        {
+          "code": "9.4.1",
+          "text": "Menyatakan kedudukan bahasa kebangsaan dan bahasa lain dalam Perlembagaan Persekutuan."
+        },
+        {
+          "code": "9.4.2",
+          "text": "Menerangkan peranan bahasa kebangsaan."
+        },
+        {
+          "code": "9.4.3",
+          "text": "Menjelaskan institusi yang terlibat dalam mempertahankan kedudukan bahasa kebangsaan."
+        },
+        {
+          "code": "9.4.4",
+          "text": "Menghuraikan cabaran penggunaan bahasa Melayu sebagai bahasa kebangsaan."
+        },
+        {
+          "code": "K9.4.5",
+          "text": "Menyatakan kepentingan memartabatkan bahasa kebangsaan."
+        },
+        {
+          "code": "K9.4.6",
+          "text": "Menerangkan kepentingan menggunakan bahasa kebangsaan dengan betul dalam pertuturan dan penulisan."
+        },
+        {
+          "code": "K9.4.7",
+          "text": "Menghuraikan kepentingan menghayati dan menjiwai bahasa kebangsaan."
+        }
+      ]
+    },
+    {
+      "sk": "9.5",
+      "title": "Bunga Kebangsaan",
+      "theme": "Identiti Negara Kita",
+      "sp": [
+        {
+          "code": "9.5.1",
+          "text": "Menyatakan latar belakang pemilihan bunga raya sebagai bunga kebangsaan."
+        },
+        {
+          "code": "9.5.2",
+          "text": "Menyatakan nama dan makna warna merah bunga kebangsaan negara kita."
+        },
+        {
+          "code": "9.5.3",
+          "text": "Menjelaskan perlambangan kelopak bunga kebangsaan dengan prinsip-prinsip Rukun Negara."
+        },
+        {
+          "code": "K9.5.4",
+          "text": "Menyatakan kepentingan bunga raya sebagai bunga kebangsaan."
+        },
+        {
+          "code": "K9.5.5",
+          "text": "Menerangkan kepentingan bunga kebangsaan sebagai lambang perpaduan."
+        },
+        {
+          "code": "K9.5.6",
+          "text": "Menjelaskan kepentingan penggunaan simbol bunga kebangsaan dijadikan lambang dalam setiap aktiviti negara."
+        }
+      ]
+    }
+  ]
+}
