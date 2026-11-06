@@ -1,0 +1,28 @@
+name: RPH Aktiviti Khas - Word A4 Audit
+
+on:
+  pull_request:
+    paths:
+      - 'rph_standalone/aktiviti_khas/**'
+      - 'scripts/audit_aktiviti_khas_50.py'
+      - '.github/workflows/rph_aktiviti_khas_word_a4_qa.yml'
+  workflow_dispatch:
+
+jobs:
+  word-a4:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install document tools
+        run: |
+          python -m pip install 'Flask==3.1.0' 'python-docx==1.1.2' 'reportlab==4.2.5' 'pypdf==5.1.0'
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libreoffice-writer
+      - name: Check 59 Word-converted and 59 direct PDF files are each A4 single-page
+        run: python -m scripts.audit_aktiviti_khas_50
