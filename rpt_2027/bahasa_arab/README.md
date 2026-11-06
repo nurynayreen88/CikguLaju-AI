@@ -122,3 +122,8 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 - [218 DOCX + 218 PDF tepat satu halaman A4 LULUS](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42140759459), tahap teknikal sahaja. Struktur staging juga lulus (run 42140793745).
 - RPH Tahun2 PdP040 Unit3 h62: `هَذَا رِجْل` dibetulkan kepada `هَذِهِ رِجْل` (kata nama feminin), tanpa mengubah struktur PdP.
 - **0 FINAL READY** kerana keseluruhan RPT 2027, kod SP dan bukti buku halaman individu, guru/semakan bahasa serta parity Telegram/Web belum lulus; produksi tidak diubah.
+
+## 6 November 2026 — Tahun 3 Unit 3
+- **16 RPH calon** PdP029–044 `الألوان حولنا` berpandukan imej Buku Teks Tahun3 DBP/KPM 2018 (KSSR Semakan, ISBN 978-983-49-2033-3) h60–85, bunyi huruf kepada warna dan dialog.
+- Bukti visual asal disimpan sebagai metadata rujukan dalam `audits/bahasa_arab_y3_unit3_pdp029_044_visual_source_audit_20261106.json`; peta CSV `rpt_2027/bahasa_arab/year3_unit3_pdp029_044_DRAF.csv`. Tiada halaman asli disalin ke repo.
+- Jumlah **234 RPH DRAF**, **0 FINAL READY**; Tahun3 Unit4 dan Tahun6 Units2–4, RPT2027, SP halaman individu, bahasa Arab akhir/kelulusan guru dan Telegram/Web parity belum disahkan. Ujian 234 PDF/DOCX masih perlu lulus selepas commit.
