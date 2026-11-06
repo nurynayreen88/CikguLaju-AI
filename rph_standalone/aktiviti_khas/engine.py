@@ -79,7 +79,8 @@ def _catalog(path=CATALOG):
             raise SourceUnavailable("Unknown activity category")
         buckets[(kind, tuple(years))] = buckets.get((kind, tuple(years)), 0) + 1
         for key in ("title", "learning_objective", "set_induksi",
-                    "pengukuhan_penilaian", "penutup", "bbm"):
+                    "pengukuhan_penilaian", "penutup", "bbm",
+                    "assessment_evidence"):
             value = row.get(key)
             if not isinstance(value, str) or not value.strip() or len(value) > 1600:
                 raise SourceUnavailable("Missing RPH field")
@@ -217,7 +218,7 @@ def fields_for(row, year, teacher, subject=None):
     return {
         "id": row["id"], "year": year, "title": row["title"], "subject": subject,
         "objective": row["learning_objective"], "bbm": row["bbm"],
-        "assessment": row["pengukuhan_penilaian"], "meta": _teacher(teacher),
+        "assessment": row["assessment_evidence"], "meta": _teacher(teacher),
         "phases": [(label, minute, part) for (label, minute), part
                    in zip(STEPS, parts)]
     }
@@ -232,7 +233,7 @@ def render_word(fields):
     sec.left_margin = sec.right_margin = Mm(12)
     sec.footer_distance = Mm(5)
     style = doc.styles["Normal"]
-    style.font.name, style.font.size = "Arial", Pt(8.1)
+    style.font.name, style.font.size = "Arial", Pt(9)
     style.paragraph_format.space_before = style.paragraph_format.space_after = Pt(0)
     style.paragraph_format.line_spacing = 1
 
@@ -242,7 +243,7 @@ def render_word(fields):
         p.paragraph_format.space_after = Pt(0)
         p.paragraph_format.line_spacing = 1
         run = p.add_run(str(val))
-        run.bold, run.font.size = bold, Pt(8.1)
+        run.bold, run.font.size = bold, Pt(9)
         if bold:
             shd = OxmlElement("w:shd")
             shd.set(qn("w:fill"), "E8EBEF")
