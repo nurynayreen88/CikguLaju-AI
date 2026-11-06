@@ -24,7 +24,7 @@
     "note": "Source PDF text displays SP numbers clearly; a separate existing Drive text extraction may collapse numeric identifiers due bidirectional-text OCR."
   },
   "teacher_support_page": "https://sites.google.com/moe-dl.edu.my/fcpi/bahasa-arab/tahun-2-bahasa-arab/%D8%A7%D9%84%D9%88%D8%AD%D8%AF%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-1",
-  "source_review_basis": "Printed SP on pages 2/4/11/17 directly verified using original 65 MB Google Drive DBP/KPM 2017 PDF images (PDF pages 14/16/23/29); additional KPM DPK/eBook corroboration. This confirms printed source codes only, not RPH/pedagogic approval or all other source page mapping.",
+  "source_review_basis": "All 12 candidate SP codes were inspected directly in the teacher guidance code panels on the original 2017 DBP/KPM textbook PDF, printed pages 2,3,4,5,6,8,11,12,13,17. Code source verified, not individual RPH/pedagogic or annual RPT approval.",
   "items": [
     {
       "pdp": "001",
@@ -36,7 +36,18 @@
       "sp_from_dskp_original": true,
       "sp_printed_on_book_confirmed": true,
       "teacher_approval": false,
-      "ready": false
+      "ready": false,
+      "book_pdf_visual_sp_confirmed": true,
+      "book_pdf_printed_pages_inspected": [
+        2,
+        4
+      ],
+      "book_pdf_pages_1based": [
+        14,
+        16
+      ],
+      "book_pdf_edition_verified": true,
+      "book_pdf_visual_verified_date": "2026-11-06"
     },
     {
       "pdp": "002",
@@ -72,7 +83,18 @@
       "sp_from_dskp_original": true,
       "sp_printed_on_book_confirmed": true,
       "teacher_approval": false,
-      "ready": false
+      "ready": false,
+      "book_pdf_visual_sp_confirmed": true,
+      "book_pdf_printed_pages_inspected": [
+        3,
+        5
+      ],
+      "book_pdf_pages_1based": [
+        15,
+        17
+      ],
+      "book_pdf_edition_verified": true,
+      "book_pdf_visual_verified_date": "2026-11-06"
     },
     {
       "pdp": "004",
@@ -108,7 +130,18 @@
       "sp_from_dskp_original": true,
       "sp_printed_on_book_confirmed": true,
       "teacher_approval": false,
-      "ready": false
+      "ready": false,
+      "book_pdf_visual_sp_confirmed": true,
+      "book_pdf_printed_pages_inspected": [
+        3,
+        5
+      ],
+      "book_pdf_pages_1based": [
+        15,
+        17
+      ],
+      "book_pdf_edition_verified": true,
+      "book_pdf_visual_verified_date": "2026-11-06"
     },
     {
       "pdp": "006",
@@ -120,7 +153,16 @@
       "sp_from_dskp_original": true,
       "sp_printed_on_book_confirmed": true,
       "teacher_approval": false,
-      "ready": false
+      "ready": false,
+      "book_pdf_visual_sp_confirmed": true,
+      "book_pdf_printed_pages_inspected": [
+        6
+      ],
+      "book_pdf_pages_1based": [
+        18
+      ],
+      "book_pdf_edition_verified": true,
+      "book_pdf_visual_verified_date": "2026-11-06"
     },
     {
       "pdp": "007",
@@ -132,7 +174,16 @@
       "sp_from_dskp_original": true,
       "sp_printed_on_book_confirmed": true,
       "teacher_approval": false,
-      "ready": false
+      "ready": false,
+      "book_pdf_visual_sp_confirmed": true,
+      "book_pdf_printed_pages_inspected": [
+        6
+      ],
+      "book_pdf_pages_1based": [
+        18
+      ],
+      "book_pdf_edition_verified": true,
+      "book_pdf_visual_verified_date": "2026-11-06"
     },
     {
       "pdp": "008",
@@ -144,7 +195,16 @@
       "sp_from_dskp_original": true,
       "sp_printed_on_book_confirmed": true,
       "teacher_approval": false,
-      "ready": false
+      "ready": false,
+      "book_pdf_visual_sp_confirmed": true,
+      "book_pdf_printed_pages_inspected": [
+        8
+      ],
+      "book_pdf_pages_1based": [
+        20
+      ],
+      "book_pdf_edition_verified": true,
+      "book_pdf_visual_verified_date": "2026-11-06"
     },
     {
       "pdp": "009",
@@ -156,7 +216,16 @@
       "sp_from_dskp_original": true,
       "sp_printed_on_book_confirmed": true,
       "teacher_approval": false,
-      "ready": false
+      "ready": false,
+      "book_pdf_visual_sp_confirmed": true,
+      "book_pdf_printed_pages_inspected": [
+        8
+      ],
+      "book_pdf_pages_1based": [
+        20
+      ],
+      "book_pdf_edition_verified": true,
+      "book_pdf_visual_verified_date": "2026-11-06"
     },
     {
       "pdp": "010",
@@ -228,7 +297,18 @@
       "sp_from_dskp_original": true,
       "sp_printed_on_book_confirmed": true,
       "teacher_approval": false,
-      "ready": false
+      "ready": false,
+      "book_pdf_visual_sp_confirmed": true,
+      "book_pdf_printed_pages_inspected": [
+        12,
+        13
+      ],
+      "book_pdf_pages_1based": [
+        24,
+        25
+      ],
+      "book_pdf_edition_verified": true,
+      "book_pdf_visual_verified_date": "2026-11-06"
     }
   ],
   "source_page_reviewed_draft_count": 12,
@@ -241,10 +321,20 @@
   ],
   "book_sp_print_visual_unresolved": [],
   "book_sp_print_visual_resolved_pdp": [
+    "001",
     "002",
+    "003",
     "004",
+    "005",
+    "006",
+    "007",
+    "008",
+    "009",
     "010",
-    "011"
+    "011",
+    "012"
   ],
-  "four_sp_approved_at_book_visual_level": true
+  "four_sp_approved_at_book_visual_level": true,
+  "visual_original_pdf_all_unit1_candidates_checked": 12,
+  "sp_print_visual_review_scope": "SP visible on at least one printed source page supporting the candidate PdP; not full pedagogic audit."
 }
