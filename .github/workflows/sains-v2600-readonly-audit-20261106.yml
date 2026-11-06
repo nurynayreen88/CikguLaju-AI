@@ -5,6 +5,8 @@ on:
     paths:
       - "tools/audit_sains_v26_readonly_20261106.py"
       - "tools/audit_sains_all_runtime_sources_20261106.py"
+      - "tools/audit_sains_v2582_unit_grouping_20261106.py"
+      - "tools/audit_sains_local_rph_ast_20261106.py"
       - "tools/audit_sains_25_82_delta_20261106.py"
       - "tools/audit_sains_v2582_y3_actual_20261106.py"
       - "tools/simulate_sains_v2582_12_title_fix_20261106.py"
@@ -55,6 +57,10 @@ jobs:
         run: python tools/audit_sains_v2582_y3_actual_20261106.py
       - name: Compare science v25.68 versus v25.82 record-level delta
         run: python tools/audit_sains_25_82_delta_20261106.py
+      - name: Audit duplicate Sains units and numbered PdP on latest 385 records
+        run: python tools/audit_sains_v2582_unit_grouping_20261106.py
+      - name: Audit actual Telegram RPH text and Word/PDF definitions
+        run: python tools/audit_sains_local_rph_ast_20261106.py
       - name: Compare all shipped science DB checkpoints without writes
         run: python tools/audit_sains_all_runtime_sources_20261106.py
       - name: Inspect Telegram native reader without importing bot
