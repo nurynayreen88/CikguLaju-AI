@@ -5,6 +5,7 @@ payment, user mutation, AI, or production database writes.
 """
 import io
 import os
+import re
 import uuid
 from collections import Counter
 from pathlib import Path
@@ -118,6 +119,15 @@ def main():
                                        for c in activity_cells), "Numbered lines not physical Word breaks"
                 else:
                     assert b.startswith(b"%PDF-")
+                    if changed:
+                        from pypdf import PdfReader
+                        pages = PdfReader(io.BytesIO(b)).pages
+                        lines = "\n".join(page.extract_text() or "" for page in pages).splitlines()
+                        assert any("Aktiviti 2" in line for line in lines), (
+                            "PDF missing Activity 2 heading", year)
+                        assert any(re.match(r"^\\s*2\\.\\s+", line)
+                                   for line in lines), (
+                            "Numbered steps merged in actual PDF layout", year, lines[-30:])
                 print("PASS BM genuine source RPH", year, fmt,
                       path.stat().st_size, flush=True)
         assert refined == len(cases), ("Real v26 BM source content did not improve", refined)
@@ -171,7 +181,10 @@ def main():
         print("BM common initial headings", heading_counts.most_common(25), flush=True)
         print("BM source audit exceptions", errors[:25], "total", len(errors), flush=True)
         print("BM source missing action families", missing_families, flush=True)
-        assert checked["rendered"] >= 100, "Insufficient BM source coverage"
+        assert checked["rendered"] == 229, "BM v26.00 source inventory shifted"
+        assert checked["template_detected"] == 229
+        assert checked["template_refined"] == 228, "Generic BM RPH quality regressed"
+        assert checked["template_no_sp_family"] == 1, "Unexpected SP source ambiguity"
         assert not errors, "Some real BM Web PdPs remain unverified"
 
     finally:
