@@ -144,6 +144,18 @@ def options():
                                 ) if code == "PJPK" else bool(source_records(year, code))
                                 if available:
                                     items.append({"value": code, "label": label})
+                        if year in (4,5,6) and not any(
+                                row.get("value") == "RBT" for row in items):
+                            # Only advertise if the active Telegram RBT private
+                            # source answers; never use local draft snapshots.
+                            from web.native_telegram_rbt_2027_client import (
+                                list_rbt_units, NativeRPHUnavailable,
+                            )
+                            try:
+                                if list_rbt_units(year):
+                                    items.append({"value":"RBT","label":"Reka Bentuk dan Teknologi (DRAF)"})
+                            except (NativeRPHUnavailable, ValueError):
+                                pass
                         if year in (4, 5, 6) and not any(
                                 row.get("value") == "SEJARAH" for row in items):
                             from web.native_telegram_sejarah_2027_client import (
@@ -195,6 +207,22 @@ def options():
                                         "code": "BM_HIERARCHY_REQUIRED"}), 400
                     # Sejarah Year 4–6 follows its own verified Telegram
                     # Unit/PdP source, never a copied RPT week or generic Web RPH.
+                    if subject == "RBT" and kind in ("units","pdp"):
+                        from web.native_telegram_rbt_2027_client import (
+                            list_rbt_units, list_rbt_lessons, NativeRPHUnavailable,
+                        )
+                        if year not in (4,5,6) or component not in (None,""):
+                            return jsonify({"error":"Invalid RBT year/component"}), 400
+                        try:
+                            choices=(list_rbt_units(year) if kind=="units"
+                                     else list_rbt_lessons(
+                                         year,request.args.get("unit","")))
+                        except (NativeRPHUnavailable,ValueError):
+                            return jsonify({
+                                "error":"Telegram RBT Unit/PdP belum tersedia",
+                                "code":"TELEGRAM_RBT_SOURCE_UNAVAILABLE",
+                            }),503
+                        return jsonify(choices)
                     if subject == "SEJARAH" and kind in ("units", "pdp"):
                         from web.native_telegram_sejarah_2027_client import (
                             list_sejarah_units, list_sejarah_lessons,
