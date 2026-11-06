@@ -14,7 +14,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan gambar permainan congkak, gasing, sepak raga dan permainan tradisional lain. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 4: Kaum di Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 64–67: Permainan tradisional seperti sepak raga, kabaddi, chap teh dan. Murid mengelaskan jenis permainan tradisional mengikut bahan dan cara bermain. Guru menyemak jawapan awal berpandukan 11.1.4.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 64–67: Permainan tradisional seperti sepak raga, kabaddi, chap teh dan wau, serta nilai kerjasama. Murid mengelaskan jenis permainan tradisional mengikut bahan dan cara bermain. Guru menyemak jawapan awal berpandukan 11.1.4.
 
 **Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 64–67 bagi menyokong perbandingan. Murid membina arahan ringkas satu permainan dan membandingkan nilai kerjasama atau kesukanan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan perkongsian maklumat tentang kepelbagaian kaum di Malaysia.
 
