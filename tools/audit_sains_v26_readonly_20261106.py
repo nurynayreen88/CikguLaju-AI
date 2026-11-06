@@ -288,6 +288,26 @@ def historical_v25_68_comparison(tmp: Path) -> dict:
                    WHERE lower(trim(subject)) IN ('sains', 'science')"""
             )]
             result["sains_source_rows_not_pdp"] = len(rows)
+            result["sains_rows_without_sk_or_sp"] = sum(
+                not str(r.get("sk_code") or "").strip()
+                or not str(r.get("sp_code") or "").strip() for r in rows)
+            result["sains_rows_without_textbook_ref"] = sum(
+                not str(r.get("textbook_ref") or "").strip() for r in rows)
+            result["verification_status_rows"] = dict(Counter(
+                str(r.get("verification_status") or "").strip() or "(empty)"
+                for r in rows))
+            result["year_quality"] = {
+                str(y): {
+                    "source_rows": sum(str(r.get("year_label") or "").strip() == f"Tahun {y}" for r in rows),
+                    "rows_without_sk_or_sp": sum(
+                        str(r.get("year_label") or "").strip() == f"Tahun {y}"
+                        and (not str(r.get("sk_code") or "").strip()
+                             or not str(r.get("sp_code") or "").strip()) for r in rows),
+                    "rows_without_textbook_ref": sum(
+                        str(r.get("year_label") or "").strip() == f"Tahun {y}"
+                        and not str(r.get("textbook_ref") or "").strip() for r in rows),
+                } for y in WORKING_TARGETS
+            }
             result["year_rows"] = dict(Counter(
                 str(r.get("year_label") or "") for r in rows))
             if "pdp_sequence_code" in cols:
