@@ -380,6 +380,19 @@ BANK = {
 "Model takal, kad rekod dan kertas poster"),
 }
 
+# Explicit Year3 KPS choices based on six process SP in the Year3 DSKP.
+# This is a DRAF skill/activity mapping, never extra lesson records.
+_KPS_AUDIT=json.loads((ROOT/"audits/sains_y3_45_kps_activity_mapping_20261106.json")
+                      .read_text(encoding="utf-8"))
+KPS_LABELS=_KPS_AUDIT["kps_code_labels"]
+KPS_BY_SP=_KPS_AUDIT["by_primary_sp"]
+if (_KPS_AUDIT["status"]!="DRAF_KPS_INTEGRATION_PENDING_TEACHER_REVIEW"
+    or len(KPS_LABELS)!=6 or set(KPS_BY_SP)!=set(BANK)
+    or any(not values or len(set(values))!=len(values)
+           or any(code not in KPS_LABELS for code in values)
+           for values in KPS_BY_SP.values())):
+    raise ValueError("Year3 science KPS mapping incomplete or altered")
+
 # Crosswalk evidence: audits/sains_y3_dskp_sp_crosswalk_20261106.json.
 # These three SP are absent as primary records; candidate coverage is added
 # inside existing PdP for review only, not as invented extra lesson numbers.
@@ -460,6 +473,7 @@ def adapt_rows(state, original):
                f"4. Murid {extra['pupil']}.")
     all_sp=sp+((", "+extra["sp"]) if extra else "")
     all_pbd=pbd+(("; "+extra["pbd"]) if extra else "")
+    kps_desc="; ".join(f"{code} {KPS_LABELS[code]}" for code in KPS_BY_SP[sp])
     if extra:
         materials=materials+"; "+extra["materials"]
     page_text=", ".join(str(x) for x in item["printed_book_page_candidates"])
@@ -475,6 +489,7 @@ def adapt_rows(state, original):
         "AKTIVITI UTAMA":main,
         "PENTAKSIRAN":all_pbd+". Guru menyemak hasil individu atau pasangan.",
         "PENUTUP":f"Murid menyatakan satu dapatan tentang {hook.lower()}; guru merumus kaitan dengan SP {sp}.",
+        "KEMAHIRAN PROSES SAINS":kps_desc,
         "BAHAN BANTU MENGAJAR":f"{materials}. Buku Teks Sains Tahun 3, halaman bercetak {page_text} (petunjuk sumber; semak sebelum cetak).",
         "PEMULIHAN / PENGAYAAN":"Pemulihan: guru membimbing dengan kad/objek berlabel. Pengayaan: murid menjelaskan bukti tambahan daripada tugasan.",
     })
