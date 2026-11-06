@@ -1,4 +1,4 @@
-"""QA for source-first 50 RPH Aktiviti Khas (draft, never deployed)."""
+"""QA for source-first 59 RPH Aktiviti Khas (draft, never deployed)."""
 import io
 import os
 import unittest
@@ -27,11 +27,11 @@ class TestSpecialActivityRender(unittest.TestCase):
         cls.rows = cls.source["activities"]
 
     def test_complete_inventory_and_tiers(self):
-        self.assertEqual(len(self.rows), 50)
-        self.assertEqual(len({r["id"] for r in self.rows}), 50)
+        self.assertEqual(len(self.rows), 59)
+        self.assertEqual(len({r["id"] for r in self.rows}), 59)
         self.assertEqual(len(list_options(TRANSISI, 1)[0]), 20)
         for year in (1, 2, 3, 4, 5, 6):
-            self.assertEqual(len(list_options(SELEPAS, year)[0]), 10)
+            self.assertEqual(len(list_options(SELEPAS, year)[0]), 13)
         self.assertEqual(len(list_options(TRANSISI, 1,
             phase="Fasa Penyesuaian")[0]), 10)
         self.assertEqual(len(list_options(TRANSISI, 1,
@@ -45,7 +45,7 @@ class TestSpecialActivityRender(unittest.TestCase):
             with self.subTest(activity=row["id"]):
                 year = row["years"][0]
                 selected = select(row["category"], year, row["id"], self.digest)
-                pdf = render(selected, year, META, "pdf")
+                pdf = render(selected, year, META, "pdf", subject=(row["subject_options"][0] if row["category"] == SELEPAS else None))
                 reader = PdfReader(io.BytesIO(pdf))
                 self.assertEqual(len(reader.pages), 1)
                 self.assertTrue(abs(float(reader.pages[0].mediabox.width)-595.28) < 1)
@@ -64,7 +64,7 @@ class TestSpecialActivityRender(unittest.TestCase):
                                   ("S03C", 6, SELEPAS)):
             with self.subTest(ident=ident):
                 row = select(kind, year, ident, self.digest)
-                content = render(row, year, META, "word")
+                content = render(row, year, META, "word", subject=(row["subject_options"][0] if row["category"] == SELEPAS else None))
                 with ZipFile(io.BytesIO(content)) as z:
                     self.assertIsNone(z.testzip())
                     xml = z.read("word/document.xml").decode("utf-8")
@@ -73,6 +73,21 @@ class TestSpecialActivityRender(unittest.TestCase):
                         self.assertIn("Aktiviti %d" % n, xml)
                     self.assertIn("06/11/2026", xml)
                     self.assertIn("DRAF", xml)
+
+    def test_subject_specific_selection_and_fidelity(self):
+        subjects = ["Bahasa Melayu", "Matematik", "Sains", "Bahasa Arab", "Pendidikan Muzik"]
+        for subject in subjects:
+            choices, digest = list_options(SELEPAS, 6, subject=subject)
+            self.assertEqual(len(choices), 1)
+            row = select(SELEPAS, 6, choices[0]["id"], digest)
+            fields = fields_for(row, 6, META, subject=subject)
+            self.assertEqual(fields["subject"], subject)
+            self.assertEqual(len(fields["phases"]), 6)
+            self.assertTrue(all(len(step[2]) >= 185 for step in fields["phases"][1:4]))
+            with self.assertRaises(ValueError):
+                fields_for(row, 6, META, subject="Sejarah" if subject != "Sejarah" else "Sains")
+            with self.assertRaises(ValueError):
+                fields_for(row, 6, META)
 
     def test_wrong_tier_or_digest_is_rejected(self):
         with self.assertRaises(SourceUnavailable):
@@ -119,7 +134,7 @@ class TestProtectedApi(unittest.TestCase):
             headers=self.headers)
         self.assertEqual(r.status_code, 200)
         options = r.get_json()
-        self.assertEqual(len(options["items"]), 10)
+        self.assertEqual(len(options["items"]), 13)
         self.assertEqual(options["status"], "DRAFT_REVIEW")
         req = {"selection": {"kind": SELEPAS, "year": 6,
                              "activity_id": "S03C", "subject": "Matematik"},
