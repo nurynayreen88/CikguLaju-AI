@@ -1,0 +1,47 @@
+# RPT 2027 — audit akhir teknikal 21 PDF (7 Nov 2026)
+
+**Status: STAGING DRAF — tidak diterbitkan kepada pengguna.**
+Branch/PR: `feat/rpt2027-sejarah-pjpk-unified-staging-20261107` / PR #441.
+
+## Keputusan ujian terkini
+
+- CI: https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42274834653 — **LULUS**.
+- Artifak: https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42274834653/artifacts/13532197457
+- 21 PDF / 489 halaman A4 landskap diperiksa. Halaman depan mempunyai hanya tajuk RPT/subjek/tahun, slot logo, nama sekolah, nama guru.
+- Semua 1,233 PdP mempunyai pernyataan SK/SP daripada crosswalk sumber DSKP yang masih memerlukan semakan halaman/kelulusan guru.
+- Kecacatan glif DSKP PUA `U+F0B7` (bullet) dan `U+F02D` (hyphen) dinormalkan pada peringkat paparan, sumber mentah tidak ditimpa; **0 aksara NULL** ditemui dalam PDF.
+- **41 SP Pendidikan Kesihatan Tahun 2–6** dibersihkan daripada limpahan *Standard Prestasi Tahap 1* yang tersalin akibat pengestrakan jadual PDF. Teks asal dan bahagian yang dipisahkan disimpan di dalam `extraction_corrections` setiap fail sumber.
+
+## Semakan tarikh minggu A/B mengikut satu induk
+
+Sumber: Google Sheet `CIKGULAJU_RPT_2027_KALENDAR_CUTI_FINAL_VERIFIED`, tab `INDUK MINGGU RPT 2027 A B` (44 minggu berjadual setiap kumpulan), snapshot:
+`rpt_2027/common/calendar_week_2027_a_b_snapshot_20261107_DRAF.json`.
+
+Ujian kelas menjamin tarikh luar rujukan/tidak padan **tidak disenyapkan**.
+
+| Keputusan | PdP | Pengendalian |
+|---|---:|---|
+| Sepadan terus dengan induk | 844 | Kekal tanpa perubahan |
+| PSV T2–6: label minggu lama tidak sama dengan julat tarikh asal | 185 | Label **paparan sahaja** diselaraskan kepada minggu induk melalui padanan tepat Kumpulan A + B; nilai sumber `source_week` dikekalkan, tiada perubahan pada CSV atau tarikh |
+| Sejarah T4–6: tarikh calon tetapi tiada label minggu sumber | 108 | **Belum diputuskan**; jangan andaikan minggu; padanan seterusnya diperlukan |
+| RBT T4–6: tarikh dan minggu belum tersedia dalam CSV | 96 | Kekal kosong; perlu jadual PdP daripada sumber sah |
+
+**Jumlah 1,233 PdP.** Selepas penyesuaian label PSV, 1,029 PdP memaparkan minggu dan tarikh yang konsisten dengan induk; 185 daripada jumlah itu masih rekod relabel staging yang perlu diluluskan dari segi kurikulum/agihan guru.
+
+Pemeriksaan silang tambahan ke atas CSV Sejarah menunjukkan **35/36 tarikh setiap tahun** sepadan terus dengan julat minggu induk. PdP 009 bagi T4–6 mempunyai tarikh calon Kumpulan A **15–18 Mac 2027**, tetapi minggu M10 induk bermula **14 Mac**. Jangan tukar tarikh ini tanpa bukti cuti negeri/gantian; kemungkinan kelas sebenar bermula selepas hari pertama minggu.
+
+## Pagar release yang masih terbuka
+
+1. Pengesahan visual/isi kandungan pernyataan SK/SP dengan halaman DSKP bagi setiap tahun/subjek. Crosswalk hanyalah draf dan ada sumber ekstraksi kompleks, terutama PJPK/Pendidikan Kesihatan dan PSV.
+2. Pelarasan sumber mingguan Sejarah dan agihan RBT tanpa rekaan tarikh. Aturan cuti negeri/gantian KPM/BKPP dan kemungkinan pindaan masih perlu signoff.
+3. Padanan sebenar 21 RPT dengan RPH/DB yang sedang digunakan (bukan hanya struktur PDF). Pengesahan berasingan untuk subjek yang belum termasuk dalam 21 PDF.
+4. Integrasi penjana ke profil pengguna Web/Telegram untuk mengisi logo sekolah, nama sekolah, nama guru adalah **belum dibuat**. Penjana staging hanya menyokong parameter pilihan.
+5. **JANGAN MERGE atau DEPLOY** sehingga syarat di atas diluluskan. Tiada DB aktif, Web, Telegram, RPT pengajar atau fail asal ditimpa dalam kerja audit ini.
+
+## Bukti
+
+- `scripts/audit_rpt_2027_calendar_master_staging.py` menghasilkan
+  `staging/rpt_2027_seragam_2026/audit_calendar_week_alignment.json` dalam artifak CI.
+- `tests/test_rpt_2027_calendar_master_staging.py` menyemak 44 minggu A/B, kes PSV yang perlu relabel, serta kes tanpa sumber.
+- `tests/test_rpt_2027_second_batch_preview.py` menyemak 41 pembetulan SP PK dan semua kod sumber.
+- `.github/workflows/rpt-2027-format-2026-staging-qa.yml` menguji 21 PDF, imej muka depan, jadual, teks bermasalah, limpahan blok, dan memuat naik bukti.
