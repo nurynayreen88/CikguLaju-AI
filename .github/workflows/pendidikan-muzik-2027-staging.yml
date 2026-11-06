@@ -1,0 +1,138 @@
+name: Pendidikan Muzik 2027 staging audit
+on:
+  pull_request:
+    paths:
+      - 'staging/pendidikan_muzik/**'
+      - 'tests/test_pendidikan_muzik_staging.py'
+      - 'tests/test_pendidikan_muzik_rpt_rph_2027_staging.py'
+      - '.github/workflows/pendidikan-muzik-2027-staging.yml'
+  push:
+    branches:
+      - 'staging/pendidikan-muzik-dskp-rph-audit-20261105'
+    paths:
+      - 'staging/pendidikan_muzik/**'
+      - 'tests/test_pendidikan_muzik_staging.py'
+      - 'tests/test_pendidikan_muzik_rpt_rph_2027_staging.py'
+      - '.github/workflows/pendidikan-muzik-2027-staging.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  audit-staging:
+    name: Audit 99 SP + 175 RPH + 5 RPT (DRAF sahaja)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Semak rekod kurikulum staging
+        run: python -m unittest discover -s tests -p 'test_pendidikan_muzik*staging.py' -v
+      - name: Audit metrik 90 peratus bagi kandungan teks dan struktur staging
+        run: python staging/pendidikan_muzik/rpt_rph_2027/quality_90_text_staging.py
+      - name: Simpan laporan QA 90 peratus yang tidak mengizinkan penerbitan
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: muzik-qa90-staging-teks-struktur-bukan-live
+          path: /tmp/music_quality_90_text_report.json
+          if-no-files-found: ignore
+      - name: Audit 175 arahan PdP untuk kebergantungan audio tidak disahkan
+        run: python staging/pendidikan_muzik/rpt_rph_2027/audit_audio_teacher_instructions_staging.py
+      - name: Simpan inventori rujukan media RPH untuk semakan dalaman
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: muzik-175-rph-media-instruction-audit-staging
+          path: /tmp/music_teacher_media_audit.json
+          if-no-files-found: ignore
+      - name: Pasang perpustakaan cetakan asas Muzik (hanya CI)
+        run: python -m pip install -q python-docx==1.1.2 reportlab==4.2.5 pypdf==5.1.0
+      - name: Sediakan LibreOffice Writer hanya dalam GitHub CI untuk kira halaman Word
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends libreoffice-writer >/dev/null
+          libreoffice --version
+      - name: Audit 175 RPH Word/PDF menggunakan fungsi asas Telegram tanpa app import
+        env:
+          MUSIC_REVIEW_SAMPLE_DIR: ${{ runner.temp }}/muzik-review-samples
+          MUSIC_ALL_DRAFT_DIR: ${{ runner.temp }}/muzik-all-rph-drafts
+        run: python staging/pendidikan_muzik/rpt_rph_2027/native_base_render_smoke_staging.py --all
+      - name: Simpan 5 pasang contoh Word/PDF Muzik untuk semakan dalaman sahaja
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: muzik-lima-contoh-draf-word-pdf
+          path: ${{ runner.temp }}/muzik-review-samples
+          if-no-files-found: ignore
+      - name: Simpan 175 RPH Muzik Word dan 175 PDF untuk QA dalaman
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: muzik-175-rph-2027-draf-word-pdf
+          path: ${{ runner.temp }}/muzik-all-rph-drafts
+          if-no-files-found: ignore
+      - name: Simpan laporan cetakan asas Muzik CI (bukan bahan pengguna)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: muzik-native-base-smoke-report
+          path: /tmp/music_native_base_render_smoke.json
+          if-no-files-found: ignore
+      - name: Jana 5 RPT Muzik 2027 draf Word/PDF berserta muka depan
+        env:
+          MUSIC_RPT_DRAFT_DIR: ${{ runner.temp }}/muzik-rpt-draf
+        run: python staging/pendidikan_muzik/rpt_rph_2027/build_rpt_music_staging.py
+      - name: Simpan lima RPT Muzik Word/PDF draf untuk QA
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: muzik-lima-rpt-2027-draf-word-pdf
+          path: ${{ runner.temp }}/muzik-rpt-draf
+          if-no-files-found: ignore
+      - name: Pastikan hanya perubahan PR Muzik dinilai, bukan perubahan main serentak
+        if: github.event_name == 'pull_request'
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.request
+
+          repo = os.environ['GITHUB_REPOSITORY']
+          pr_number = os.environ['PR_NUMBER']
+          token = os.environ['GH_TOKEN']
+          files = []
+          page = 1
+          while True:
+              url = f'https://api.github.com/repos/{repo}/pulls/{pr_number}/files?per_page=100&page={page}'
+              req = urllib.request.Request(url, headers={
+                  'Accept': 'application/vnd.github+json',
+                  'Authorization': f'Bearer {token}',
+                  'X-GitHub-Api-Version': '2022-11-28',
+              })
+              with urllib.request.urlopen(req, timeout=30) as response:
+                  results = json.load(response)
+              if not results:
+                  break
+              files.extend(item['filename'] for item in results)
+              if len(results) < 100:
+                  break
+              page += 1
+          if not files:
+              raise SystemExit('Cannot verify files changed in PR')
+          allowed = lambda path: path.startswith('staging/pendidikan_muzik/') or path in {
+              'tests/test_pendidikan_muzik_staging.py',
+              'tests/test_pendidikan_muzik_rpt_rph_2027_staging.py',
+              '.github/workflows/pendidikan-muzik-2027-staging.yml',
+          }
+          violations = [path for path in files if not allowed(path)]
+          if violations:
+              raise SystemExit('Unexpected changes outside Muzik staging: ' + ', '.join(violations))
+          print(f'PASS: all {len(files)} actual PR files are limited to Muzik staging/tests/CI')
+          PY
