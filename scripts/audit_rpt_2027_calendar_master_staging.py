@@ -55,12 +55,12 @@ def audit_rows(subject, year, rows, master):
             elif any(not all(pair) for pair in dates.values()):
                 category = "week_known_but_missing_group_dates"
             elif (subject == "sejarah" and row.get("calendar_alignment") ==
-                  "GROUP_A_ONE_DAY_LATE_SOURCE" and
+                  "GROUP_A_FIRST_DAY_KPM_HOLIDAY_INDEXED" and
                   dates["B"] == (master["B"][week]["start"], master["B"][week]["end"]) and
                   dates["A"][1] == master["A"][week]["end"] and
                   (date.fromisoformat(dates["A"][0]) -
                    date.fromisoformat(master["A"][week]["start"])).days == 1):
-                category = "sejarah_partial_group_a_week_needs_school_calendar_review"
+                category = "sejarah_group_a_kpm_holiday_indexed"
             elif any(dates[g] != (master[g][week]["start"], master[g][week]["end"])
                      for g in ("A", "B")):
                 # A source may label the Nth taught lesson as MNN, even when
