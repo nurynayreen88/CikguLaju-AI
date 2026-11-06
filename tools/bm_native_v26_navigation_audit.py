@@ -36,7 +36,7 @@ def database():
 
 
 def main():
-    from web_v1_dropdown_catalog import bm_theme_options, _bm_verified_structured_rows
+    from web_v1_dropdown_catalog import bm_theme_options, bm_theme_identity, bm_unit_options, bm_topic_options, bm_pdp_options, _bm_verified_structured_rows
     tmp, path = database()
     try:
         with sqlite3.connect(path.resolve().as_uri()+"?mode=ro", uri=True) as con:
@@ -58,6 +58,35 @@ def main():
             print("BM YEAR", year, "rows", len(rows), "themes", len(choices),
                   "exactdup", [k for k,v in stripped.items() if v>1],
                   "semanticdup", collisions, flush=True)
+            assert len(set(bm_theme_identity(t) for t in labels)) == len(labels), (
+                "Duplicate BM themes still displayed in Year " + str(year))
+            # Release acceptance: real v26.00 has two spelling variants for
+            # Perpaduan Year 2, two pairs of spellings Year 4, and two
+            # legitimately DIFFERENT titles under Theme 1 Year 5.
+            if year == 2:
+                assert len(labels) == 4, labels
+            elif year == 4:
+                assert len(labels) == 5, labels
+            elif year == 5:
+                assert len(labels) == 5, labels
+                assert len([t for t in labels if t.startswith("Tema 1:")]) == 2
+            # Verify every listed canonical theme can navigate to a native
+            # Unit, topic, and opaque grouped PdP without any writes.
+            covered = 0
+            for theme in labels:
+                units = bm_unit_options(path, year, theme)
+                assert units, ("Unit missing", year, theme)
+                for item in units:
+                    unit = item["value"]
+                    topics = bm_topic_options(path, year, theme, unit)
+                    assert topics, ("Topic missing", year, theme, unit)
+                    for topic in topics:
+                        pdps = bm_pdp_options(path, year, theme, unit, topic["value"])
+                        assert pdps, ("PdP missing", year, theme, unit, topic["value"])
+                        for pdp in pdps:
+                            assert pdp["value"].startswith("b")
+                            covered += 1
+            print("BM NAVIGATION VERIFIED", year, "choices", covered, flush=True)
             print("BM THEMES",year,labels,flush=True)
             print("BM sample actual PdP", year,
                   [(r["theme"],r["unit_code"],r["unit_title"],r["topic"],
