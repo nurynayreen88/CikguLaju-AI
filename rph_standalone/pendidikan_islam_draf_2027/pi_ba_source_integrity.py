@@ -11,6 +11,10 @@ from pathlib import Path
 
 EXPECTED = {
     2: {
+        "kpm_catalog_code": "BA102001",
+        "kpm_catalog_url": "https://www.moe.gov.my/storage/files/shares/Banner/E-Katalog%20Buku%20Teks%20KPM.pdf",
+        "publisher_from_kpm_catalog": "Dewan Bahasa dan Pustaka",
+        "title_and_code_in_kpm_catalog_verified": True,
         "url": "https://anyflip.com/lhat/sebp/",
         "title": "Buku Aktiviti P. Islam Tahun 2 KSSR Semakan",
         "stream": "KSSR_SEMAKAN_ARUS_PERDANA",
@@ -20,6 +24,10 @@ EXPECTED = {
         "rights_to_redistribute": False
     },
     3: {
+        "kpm_catalog_code": "BA103001",
+        "kpm_catalog_url": "https://www.moe.gov.my/storage/files/shares/Banner/E-Katalog%20Buku%20Teks%20KPM.pdf",
+        "publisher_from_kpm_catalog": "Dewan Bahasa dan Pustaka",
+        "title_and_code_in_kpm_catalog_verified": True,
         "url": "https://anyflip.com/lhat/dkui/",
         "title": "Buku Aktiviti P. Islam Tahun 3 KSSR Semakan",
         "stream": "KSSR_SEMAKAN_ARUS_PERDANA",
@@ -81,6 +89,8 @@ def source_integrity_report():
         for url,meta in BLOCKED.items()
     ]
     assert len(accepted) == 2 and len(rejected) == 2
+    assert accepted["2"]["kpm_catalog_code"] == "BA102001"
+    assert accepted["3"]["kpm_catalog_code"] == "BA103001"
     assert all(x["allowed_for_review"] is True and
                x["ready_for_teacher"] is False for x in accepted.values())
     assert all(x["allowed_for_review"] is False for x in rejected)
