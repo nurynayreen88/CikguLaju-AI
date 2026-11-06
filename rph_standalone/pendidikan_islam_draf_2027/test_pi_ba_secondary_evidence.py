@@ -9,15 +9,15 @@ class SecondaryEvidenceTests(unittest.TestCase):
     def setUpClass(cls):
         cls.data = evidence_queue()
 
-    def test_30_topic_matched_secondary_page_hints(self):
+    def test_42_topic_matched_secondary_page_hints(self):
         d = self.data
         self.assertEqual(d["year2_year3_candidate_lessons"], 174)
-        self.assertEqual(d["secondary_page_hints"], 30)
-        self.assertEqual(d["hints_by_year"], {2:1, 3:29})
+        self.assertEqual(d["secondary_page_hints"], 42)
+        self.assertEqual(d["hints_by_year"], {2:11, 3:31})
         self.assertEqual(d["page_mappings_verified_from_original"], 0)
         self.assertEqual(d["rph_activity_book_injections"], 0)
         self.assertEqual(d["status"], "NO_GO_SECONDARY_EVIDENCE_ONLY")
-        self.assertEqual(len({x["lesson_id"] for x in d["rows"]}), 30)
+        self.assertEqual(len({x["lesson_id"] for x in d["rows"]}), 42)
 
     def test_no_publication_or_fake_verification(self):
         for x in self.data["rows"]:
@@ -53,6 +53,9 @@ class SecondaryEvidenceTests(unittest.TestCase):
         self.assertEqual(idx["T2-L108"]["page_numbers_reported_by_secondary_source"], [134,135,136])
         self.assertEqual(idx["T3-L111"]["page_numbers_reported_by_secondary_source"], [90,91,92,93,94,95,96])
         self.assertEqual(idx["T3-L123"]["page_numbers_reported_by_secondary_source"], [59])
+        self.assertEqual(idx["T2-L042"]["page_numbers_reported_by_secondary_source"], [83])
+        self.assertEqual(idx["T2-L093"]["page_numbers_reported_by_secondary_source"], [93])
+        self.assertEqual(idx["T3-L127"]["page_numbers_reported_by_secondary_source"], [61,62,63])
 
 
 if __name__ == "__main__":
