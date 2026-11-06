@@ -22,6 +22,7 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Table, TableStyle, 
 
 from tools.audit_sains_342_pdp_release_gate_20261106 import analyze, ROOT
 from web.sains_y2_51_activities_draf_20261107 import BANK
+from tools.sains_buku_aktiviti_mapping_20261107 import activity_for, activity_note
 
 OUT = ROOT / "build" / "sains_y2_51_rph_DRAF_20261107"
 DSKP = "https://drive.google.com/file/d/1rr4CjNvhtI13ioiVSTZi65cvap7j1U6Z/view"
@@ -87,6 +88,7 @@ def get_y2_records():
             "source_discrepancy": Y2_SOURCE_CONFLICTS.get(sp, ""),
             "book_page_cue": ", ".join(map(str,pages[sp]["printed_page_candidates"])),
             "book_page_status": "TEXT_CUE_ONLY__NOT_VISUALLY_VERIFIED",
+            "activity_book": activity_for(2,r["pdp_code"],sp),
             "quality_score_percent": None,
             "release": "DRAF_HOLD",
         })
@@ -108,7 +110,8 @@ def markdown(item):
         f"**Tempoh:** 60 minit (cadangan; ikut jadual sebenar)\n"
         f"**Objektif:** Murid menghasilkan bukti berikut: {item['pbd']}.\n"
         f"**Kriteria kejayaan/PBD:** {item['pbd']}.\n"
-        f"**KPS:** {item['kps']}\n\n"
+        f"**KPS:** {item['kps']}\n"
+        f"**Buku Aktiviti:** {activity_note(item['activity_book'],2,include_url=True)}\n\n"
         f"**Set induksi (5 minit):** Guru menunjukkan {item['hook'].lower()}. "
         "Murid membuat satu ramalan atau pemerhatian awal.\n\n"
         f"**Aktiviti 1: Penerokaan (18 minit)**\n"
@@ -163,13 +166,15 @@ def write_docx(path,item):
     ]):
         _docx_cell(metadata.cell(i,0),a)
         _docx_cell(metadata.cell(i,1),b)
-    phases=doc.add_table(rows=9,cols=2);phases.style="Table Grid"
+    phases=doc.add_table(rows=10,cols=2);phases.style="Table Grid"
     fields=[
       ("Objektif/Kriteria",item["pbd"]),
       ("Set induksi (5m)","Guru menunjukkan "+item["hook"].lower()+". Murid menyatakan pemerhatian."),
       ("Aktiviti 1 (18m)","1. Guru "+item["teacher1"]+".\n2. Murid "+item["pupil1"]+"."),
       ("Aktiviti 2 (22m)","1. Guru "+item["teacher2"]+".\n2. Murid "+item["pupil2"]+"."),
       ("Pengukuhan/PBD (10m)","Guru menilai bukti individu: "+item["pbd"]+"."),
+      ("Buku Aktiviti/PBD",f"Murid melengkapkan '{item['activity_book']['activity_title']}' pada "
+       f"m/s {item['activity_book']['workbook_printed_page']}; guru semak individu."),
       ("Penutup (5m)","Murid menyatakan satu dapatan; guru merumus kaitan dengan SP "+item["sp"]+"."),
       ("BBM",item["materials"]),
       ("Keselamatan/etika",item["safety"]),
@@ -212,6 +217,9 @@ def write_pdf(path,item):
       ("Aktiviti 1 18m","1. Guru "+item["teacher1"]+".\n2. Murid "+item["pupil1"]+"."),
       ("Aktiviti 2 22m","1. Guru "+item["teacher2"]+".\n2. Murid "+item["pupil2"]+"."),
       ("Pengukuhan/PBD 10m","Guru menyemak bukti individu: "+item["pbd"]+"."),
+      ("Buku Aktiviti/PBD",f"Latihan '{item['activity_book']['activity_title']}', "
+       f"m/s bercetak {item['activity_book']['workbook_printed_page']} "
+       f"(PDF p{item['activity_book']['workbook_pdf_page']}); guru semak respons individu."),
       ("Penutup 5m","Murid menyatakan dapatan; guru merumus SP "+item["sp"]+"."),
       ("BBM",item["materials"]),
       ("Keselamatan",item["safety"]),
@@ -260,6 +268,11 @@ def main():
             "source_title":item["tajuk"],"candidate_title":item["candidate_title"],
             "source_conflict":item["source_discrepancy"],
             "book_page_cue":item["book_page_cue"],
+            "activity_book_page":item["activity_book"]["workbook_printed_page"],
+            "activity_book_pdf_page":item["activity_book"]["workbook_pdf_page"],
+            "activity_book_exercise":item["activity_book"]["activity_title"],
+            "activity_book_url":item["activity_book"]["workbook_url"],
+            "activity_book_status":"TOC_VERIFIED_SP_PEDAGOGY_HOLD",
             "word_a4":"DOCX_A4_NO_PAGINATION_PROOF",
             "pdf_a4":"ONE_PAGE_PASS",
             "textbook_page":"NOT_VISUALLY_VERIFIED",
