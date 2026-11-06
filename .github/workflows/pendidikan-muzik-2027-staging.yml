@@ -41,6 +41,7 @@ jobs:
       - name: Audit 175 RPH Word/PDF menggunakan fungsi asas Telegram tanpa app import
         env:
           MUSIC_REVIEW_SAMPLE_DIR: ${{ runner.temp }}/muzik-review-samples
+          MUSIC_ALL_DRAFT_DIR: ${{ runner.temp }}/muzik-all-rph-drafts
         run: python staging/pendidikan_muzik/rpt_rph_2027/native_base_render_smoke_staging.py --all
       - name: Simpan 5 pasang contoh Word/PDF Muzik untuk semakan dalaman sahaja
         if: always()
@@ -48,6 +49,13 @@ jobs:
         with:
           name: muzik-lima-contoh-draf-word-pdf
           path: ${{ runner.temp }}/muzik-review-samples
+          if-no-files-found: ignore
+      - name: Simpan 175 RPH Muzik Word dan 175 PDF untuk QA dalaman
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: muzik-175-rph-2027-draf-word-pdf
+          path: ${{ runner.temp }}/muzik-all-rph-drafts
           if-no-files-found: ignore
       - name: Simpan laporan cetakan asas Muzik CI (bukan bahan pengguna)
         if: always()
