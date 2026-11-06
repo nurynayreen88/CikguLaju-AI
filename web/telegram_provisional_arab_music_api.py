@@ -218,7 +218,14 @@ def _music_state(selected,teacher):
         "PEMULIHAN / PENGAYAAN":layout["footer"][0]["value"],
         "REFLEKSI":layout["footer"][1]["value"],
     }
-    text="\n".join(name+":\n"+str(v)+"\n" for name,v in sections.items())
+    from staging.pendidikan_muzik.rpt_rph_2027.legacy_doc_text_safe_staging import (
+        normalize_for_legacy_doc,
+    )
+    # Legacy Telegram clean_doc_text silently drops em/en dashes, which
+    # changes textbook page ranges; normalize known punctuation BEFORE
+    # native parsing and reject every unsupported glyph.
+    text=normalize_for_legacy_doc(
+        "\n".join(name+":\n"+str(v)+"\n" for name,v in sections.items()))
     return state,text
 
 
@@ -336,7 +343,14 @@ def create_provisional_subjects_blueprint(runtime):
                 sp=selected["music"]["sp"]
                 if not isinstance(parsed,dict) or not all(code in parsed.get("STANDARD PEMBELAJARAN","") for code in sp):
                     raise ValueError("Music SP lost in native renderer")
-                if not core[:50] in parsed.get("AKTIVITI UTAMA",""):
+                from staging.pendidikan_muzik.rpt_rph_2027.legacy_doc_text_safe_staging import (
+                    normalize_for_legacy_doc,
+                )
+                # Native RPH rows may collapse paragraph whitespace. Compare
+                # all real activities after the same safe punctuation mapping.
+                expected=" ".join(normalize_for_legacy_doc(core).split())
+                actual=" ".join(str(parsed.get("AKTIVITI UTAMA","")).split())
+                if not expected or expected not in actual:
                     raise ValueError("Music RPH source text lost")
                 output=(runtime.create_word_file(state,text,unique) if fmt=="word"
                         else runtime.create_pdf_file(state,text,unique))
