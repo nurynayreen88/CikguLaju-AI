@@ -648,6 +648,46 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
             crosswalk.unlink()
             self.assertIsNone(checker.source_fingerprint(2, 1, root=root))
 
+    def test_release_readiness_gate_cannot_silently_promote_drafts(self):
+        """Editorial, media, curriculum and calendar placeholders are not approvals."""
+        root = MUSIC / "rpt_rph_2027"
+        overlay = json.loads((root / "SUCCESS_CRITERIA_DRAFT_20261106.json").read_text(encoding="utf-8"))
+        self.assertEqual(len(overlay), 81)
+        expected_ids = {f"MZ-Y{year}-{pdp:02d}" for year in YEAR_COUNTS for pdp in range(1, 36)}
+        self.assertTrue(set(overlay).issubset(expected_ids))
+        for ident, candidate in overlay.items():
+            self.assertEqual(ident, f"MZ-Y{candidate['year']}-{candidate['pdp']:02d}")
+            self.assertEqual(candidate["approval"], "DRAF_EDITORIAL_BELUM_DISAHKAN")
+            self.assertTrue(candidate["criterion"].strip())
+            self.assertTrue(candidate["evidence"].strip())
+
+        without_school_day, reinforcement, audio_released = set(), set(), set()
+        for year in YEAR_COUNTS:
+            manifest = json.loads((root / f"year{year}" / "pdp_manifest.json").read_text(encoding="utf-8"))
+            self.assertIn("DRAF", manifest["status"])
+            for name in ("textbook_verified", "audio_verified", "rph_word_pdf_verified"):
+                self.assertIs(manifest[name], False, f"Premature approval {year}: {name}")
+            for row in manifest["pdps"]:
+                ident = row["pdp_id"]
+                self.assertFalse(row.get("source_book_audio_file_verified", False), ident)
+                if row.get("source_book_audio_file_verified"):
+                    audio_released.add(ident)
+                risk = row.get("rpt2027_day_audit")
+                if risk:
+                    self.assertEqual(risk["status"], "ZERO_CALON_PDP_IN_ALL_16_STATES")
+                    self.assertTrue(risk["automatic_shift_or_skip_forbidden"])
+                    without_school_day.add(ident)
+                if row.get("pdp_kind") == "CADANGAN_PENGUKUHAN_BUKAN_PROJEK_RASMI":
+                    self.assertIsNone(row["page"], ident)
+                    self.assertFalse(row.get("source_book_text_crosscheck", False), ident)
+                    self.assertIn("DRAF", row["validation_status"])
+                    reinforcement.add(ident)
+        self.assertEqual(without_school_day,
+                         {f"MZ-Y{year}-{pdp:02d}" for year in YEAR_COUNTS for pdp in (6, 19)})
+        self.assertEqual(reinforcement,
+                         {f"MZ-Y{year}-{pdp:02d}" for year in (2, 3, 4, 6) for pdp in (34, 35)})
+        self.assertFalse(audio_released)
+
     def test_fail_closed_for_invalid_year_or_pdp(self):
         for year, pdp in ((1, 1), (7, 1), (2, 0), (3, 36), ("2", 1)):
             with self.subTest(year=year, pdp=pdp):
