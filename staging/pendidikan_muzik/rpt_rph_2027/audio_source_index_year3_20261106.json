@@ -1,0 +1,586 @@
+{
+  "schema": 1,
+  "year": 3,
+  "source_folder": "https://drive.google.com/drive/folders/1WToAfezUq1S9lzWcIuJMh7An2YLSehkH",
+  "snapshot_date": "2026-11-06",
+  "access_verified": false,
+  "audio_content_verified": false,
+  "redistribution_permitted": false,
+  "scope": "EXTERNAL_SOURCE_LINKS_ONLY",
+  "files": [
+    {
+      "track": 1,
+      "file_id": "1HoA7aYZTn0XjVi3ndFli_xf3l_lnS8IJ",
+      "title": "01 SENANDUNG LAPAN DETIK.mp3",
+      "source_url": "https://drive.google.com/file/d/1HoA7aYZTn0XjVi3ndFli_xf3l_lnS8IJ/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 2,
+      "file_id": "13-d_gJ3aIWGhFagx8W_dx8eEael3q57F",
+      "title": "02 SENANDUNG 12 DETIK.mp3",
+      "source_url": "https://drive.google.com/file/d/13-d_gJ3aIWGhFagx8W_dx8eEael3q57F/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 3,
+      "file_id": "1RNCJmu2GSDVjdqpl9XHuQK6otOSCrEEp",
+      "title": "03 SENANDUNG 16 DETIK.mp3",
+      "source_url": "https://drive.google.com/file/d/1RNCJmu2GSDVjdqpl9XHuQK6otOSCrEEp/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 4,
+      "file_id": "1hfgpRUi4H08CC6ZWLW71lVjowgiD8ETa",
+      "title": "04 LATIHAN PERNAFASAN.mp3",
+      "source_url": "https://drive.google.com/file/d/1hfgpRUi4H08CC6ZWLW71lVjowgiD8ETa/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 5,
+      "file_id": "126LUbDB1KygkRA9RikfxK39y8ylQvJtw",
+      "title": "05 VOKAL TUT TUT KERETA API.mp3",
+      "source_url": "https://drive.google.com/file/d/126LUbDB1KygkRA9RikfxK39y8ylQvJtw/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 6,
+      "file_id": "1cudRNZafdIj_H_ar8tLqM3VTTGxcgMA0",
+      "title": "06 INSTRUMENTAL TUT TUT KERETA API.mp3",
+      "source_url": "https://drive.google.com/file/d/1cudRNZafdIj_H_ar8tLqM3VTTGxcgMA0/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 7,
+      "file_id": "18o5uduhbLGNEJ16awhxJjN-oymTEjIqk",
+      "title": "07 MINUS ONE TUT TUT KERETA API.mp3",
+      "source_url": "https://drive.google.com/file/d/18o5uduhbLGNEJ16awhxJjN-oymTEjIqk/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 8,
+      "file_id": "1EXqPwHUf-51bLPCHkHVFGrP-lv2CM0ar",
+      "title": "08 VOKAL TUT TUT KERETA API DENGAN DETIK.mp3",
+      "source_url": "https://drive.google.com/file/d/1EXqPwHUf-51bLPCHkHVFGrP-lv2CM0ar/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 9,
+      "file_id": "15uJc2BFoPAoEBxI3i-t4G4Ox0VhFkq3G",
+      "title": "09 LATIHAN MENGAJUK MELODI.mp3",
+      "source_url": "https://drive.google.com/file/d/15uJc2BFoPAoEBxI3i-t4G4Ox0VhFkq3G/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 10,
+      "file_id": "1JRVG0sE8Ijbkq4ifHU2B3IA5PKV1dZMq",
+      "title": "10 VOKAL KITA SATU KELUARGA.mp3",
+      "source_url": "https://drive.google.com/file/d/1JRVG0sE8Ijbkq4ifHU2B3IA5PKV1dZMq/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 11,
+      "file_id": "1FiKo96o0mB8xM4T3L8ilyf1HYA1L3sFe",
+      "title": "11 INSTRUMENTAL KITA SATU KELUARGA.mp3",
+      "source_url": "https://drive.google.com/file/d/1FiKo96o0mB8xM4T3L8ilyf1HYA1L3sFe/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 12,
+      "file_id": "1v0Zpwz1ifeSI1OezauMHhzY7WZFCDIh9",
+      "title": "12 MINUS ONE  KITA SATU KELUARGA.mp3",
+      "source_url": "https://drive.google.com/file/d/1v0Zpwz1ifeSI1OezauMHhzY7WZFCDIh9/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 13,
+      "file_id": "1Dg6o1gqtjs6QdrJcd_BeBzkCE_LgWtGO",
+      "title": "13 INSTRUMENTAL  KITA SATU KELUARGA TEMPO LAMBAT.mp3",
+      "source_url": "https://drive.google.com/file/d/1Dg6o1gqtjs6QdrJcd_BeBzkCE_LgWtGO/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 14,
+      "file_id": "1nphc4wgGJgmse9Mqm4AgEry0bN_HbPrq",
+      "title": "14 INSTRUMENTAL  KITA SATU KELUARGA TEMPO CEPAT .mp3",
+      "source_url": "https://drive.google.com/file/d/1nphc4wgGJgmse9Mqm4AgEry0bN_HbPrq/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 15,
+      "file_id": "1x2GTlCEnXFFm1lObMrNKjqwvNQ53jgn5",
+      "title": "15 VOKAL KITA SATU KELUARGA DENGAN METRONOM.mp3",
+      "source_url": "https://drive.google.com/file/d/1x2GTlCEnXFFm1lObMrNKjqwvNQ53jgn5/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 16,
+      "file_id": "16ngM6Q-VylKNXpICwQz6GkoXAVAFDjaH",
+      "title": "16 INSTRUMENTAL  KITA SATU KELUARGA DENGAN METRONOM TEMPO LAMBAT .mp3",
+      "source_url": "https://drive.google.com/file/d/16ngM6Q-VylKNXpICwQz6GkoXAVAFDjaH/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 17,
+      "file_id": "1fPM8tPtDQ2oIL9uOL6mHr7NGt-g8jmpU",
+      "title": "17 INSTRUMENTAL  KITA SATU KELUARGA DENGAN METRONOM TEMPO CEPAT .mp3",
+      "source_url": "https://drive.google.com/file/d/1fPM8tPtDQ2oIL9uOL6mHr7NGt-g8jmpU/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 18,
+      "file_id": "13zg1xfyjJHE9svOvL1njHddcZ1gHXQ49",
+      "title": "18 LATIHAN 1.mp3",
+      "source_url": "https://drive.google.com/file/d/13zg1xfyjJHE9svOvL1njHddcZ1gHXQ49/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 19,
+      "file_id": "1htQ3sQcDzwqeYEQ24C7l5Wdy7YpT_i_-",
+      "title": "19 LATIHAN 2.mp3",
+      "source_url": "https://drive.google.com/file/d/1htQ3sQcDzwqeYEQ24C7l5Wdy7YpT_i_-/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 20,
+      "file_id": "16vpllaYxGZ540cPpdIWdIFfX0SHVAsh0",
+      "title": "20 LATIHAN MENEPUK IRAMA.mp3",
+      "source_url": "https://drive.google.com/file/d/16vpllaYxGZ540cPpdIWdIFfX0SHVAsh0/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 21,
+      "file_id": "1t-LPjOnywIWUIcTAPSof1FGxwPg-i2j9",
+      "title": "21 VOKAL TEPUK AMAI AMAI.mp3",
+      "source_url": "https://drive.google.com/file/d/1t-LPjOnywIWUIcTAPSof1FGxwPg-i2j9/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 22,
+      "file_id": "1T7HPTYjud4_XK_TR0vxfmGIqesEg4G8K",
+      "title": "22 INSRUMENTAL TEPUK AMAI AMAI.mp3",
+      "source_url": "https://drive.google.com/file/d/1T7HPTYjud4_XK_TR0vxfmGIqesEg4G8K/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 23,
+      "file_id": "1p8rAqfY6RQO87SNarzZRaBaaXMaxOtlm",
+      "title": "23 MINUS ONE TEPUK AMAI AMAI.mp3",
+      "source_url": "https://drive.google.com/file/d/1p8rAqfY6RQO87SNarzZRaBaaXMaxOtlm/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 24,
+      "file_id": "1oko7yvXKyBXbaEU0GT5FzfL9mos8oCwl",
+      "title": "24 LATIHAN MENEPUK 1.mp3",
+      "source_url": "https://drive.google.com/file/d/1oko7yvXKyBXbaEU0GT5FzfL9mos8oCwl/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 25,
+      "file_id": "1ckBkq3I842stTEtvZjjgbwR3y19mep-a",
+      "title": "25 LATIHAN MENEPUK 2.mp3",
+      "source_url": "https://drive.google.com/file/d/1ckBkq3I842stTEtvZjjgbwR3y19mep-a/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 26,
+      "file_id": "1c1RvNJ-F-oBj_onm7sHQNMpyCfymgA8F",
+      "title": "26 BUNYI NIPIS 1.mp3",
+      "source_url": "https://drive.google.com/file/d/1c1RvNJ-F-oBj_onm7sHQNMpyCfymgA8F/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 27,
+      "file_id": "1rJ4ggg5ODCuSV_depXouS8sV0HhV2sgm",
+      "title": "27 BUNYI NIPIS 2.mp3",
+      "source_url": "https://drive.google.com/file/d/1rJ4ggg5ODCuSV_depXouS8sV0HhV2sgm/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 28,
+      "file_id": "1r7TZ6owQGHNPTepWAf_I9B9g7DbF2MH6",
+      "title": "28 BUNYI TEBAL 1.mp3",
+      "source_url": "https://drive.google.com/file/d/1r7TZ6owQGHNPTepWAf_I9B9g7DbF2MH6/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 29,
+      "file_id": "1tAbEPnoApjNxp86LTrjKNeCxEMKgX5ts",
+      "title": "29 BUNYI TEBAL 2.mp3",
+      "source_url": "https://drive.google.com/file/d/1tAbEPnoApjNxp86LTrjKNeCxEMKgX5ts/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 30,
+      "file_id": "1OzO2Mu9QxlGF4DoGxk84-iqGCje5byLx",
+      "title": "30 BUNYI A.mp3",
+      "source_url": "https://drive.google.com/file/d/1OzO2Mu9QxlGF4DoGxk84-iqGCje5byLx/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 31,
+      "file_id": "1T5xcZYg_UUl_kXAbNXqlCjOWIap6wMts",
+      "title": "31 BUNYI B.mp3",
+      "source_url": "https://drive.google.com/file/d/1T5xcZYg_UUl_kXAbNXqlCjOWIap6wMts/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 32,
+      "file_id": "1Mogttu4WX3Dkwiuq8F0i_nrTY4UF9Lrh",
+      "title": "32 BUNYI C.mp3",
+      "source_url": "https://drive.google.com/file/d/1Mogttu4WX3Dkwiuq8F0i_nrTY4UF9Lrh/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 33,
+      "file_id": "17PgDdlkOVhtRnLSTcCTaPlF5H57Sj0-G",
+      "title": "33 BUNYI D.mp3",
+      "source_url": "https://drive.google.com/file/d/17PgDdlkOVhtRnLSTcCTaPlF5H57Sj0-G/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 34,
+      "file_id": "1jK8QmQ5feiza84P4ykhk_GDF-gd-JAfn",
+      "title": "34 BUNYI E.mp3",
+      "source_url": "https://drive.google.com/file/d/1jK8QmQ5feiza84P4ykhk_GDF-gd-JAfn/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 35,
+      "file_id": "1Y3rw84YLqUxip2QzGdOdej6980TyevcP",
+      "title": "35 BUNYI F.mp3",
+      "source_url": "https://drive.google.com/file/d/1Y3rw84YLqUxip2QzGdOdej6980TyevcP/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 36,
+      "file_id": "15j02gFELArTMoh_JsSlK8-bPBB5hJxmZ",
+      "title": "36 VOKAL SERANGGA.mp3",
+      "source_url": "https://drive.google.com/file/d/15j02gFELArTMoh_JsSlK8-bPBB5hJxmZ/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 37,
+      "file_id": "1HpPbGoZg5O2XlAp6SXzH3oDECmBMcHBU",
+      "title": "37 INSTRUMENTAL SERANGGA.mp3",
+      "source_url": "https://drive.google.com/file/d/1HpPbGoZg5O2XlAp6SXzH3oDECmBMcHBU/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 38,
+      "file_id": "1rmxQcr8IfVh7Gt0hdTSt_wiSkPXwuthv",
+      "title": "38 MINUS ONE SERANGGA.mp3",
+      "source_url": "https://drive.google.com/file/d/1rmxQcr8IfVh7Gt0hdTSt_wiSkPXwuthv/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 39,
+      "file_id": "12QDvJmxZZqITi8B3ku2d-Q6aRUc2p5fq",
+      "title": "39 CERITA GIGIH SI LABAH LABAH.mp3",
+      "source_url": "https://drive.google.com/file/d/12QDvJmxZZqITi8B3ku2d-Q6aRUc2p5fq/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 40,
+      "file_id": "1R27TSsauF3ZZN4IS5npzLxDaJkVoZ76n",
+      "title": "40 CERITA GIGIH SI LABAH LABAH TANPA KESAN BUNYI.mp3",
+      "source_url": "https://drive.google.com/file/d/1R27TSsauF3ZZN4IS5npzLxDaJkVoZ76n/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 41,
+      "file_id": "1JvTU6Z0ZAhR1ZKDXsKTGTgwC5Tu1lePL",
+      "title": "41 LATIHAN PERNAFASAN 1.mp3",
+      "source_url": "https://drive.google.com/file/d/1JvTU6Z0ZAhR1ZKDXsKTGTgwC5Tu1lePL/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 42,
+      "file_id": "1StXUryx4bElf4kGo3IEbGCbRTwWWqt9m",
+      "title": "42 LATIHAN PERNAFASAN 2.mp3",
+      "source_url": "https://drive.google.com/file/d/1StXUryx4bElf4kGo3IEbGCbRTwWWqt9m/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 43,
+      "file_id": "1iRCTXBfxaTczCvOgQJLHXt7Vb8xTF01z",
+      "title": "43 VOKAL PARANG ILANG.mp3",
+      "source_url": "https://drive.google.com/file/d/1iRCTXBfxaTczCvOgQJLHXt7Vb8xTF01z/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 44,
+      "file_id": "1J_ifChE9WZY9fE-N4MPPGbkHRBl990y4",
+      "title": "44 INSTRUMENTAL PARANG ILANG.mp3",
+      "source_url": "https://drive.google.com/file/d/1J_ifChE9WZY9fE-N4MPPGbkHRBl990y4/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 45,
+      "file_id": "1cP6p6yY_3jXBX9HP-eVTfMkd56kLQIrO",
+      "title": "45 MINUS ONE PARANG ILANG.mp3",
+      "source_url": "https://drive.google.com/file/d/1cP6p6yY_3jXBX9HP-eVTfMkd56kLQIrO/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 46,
+      "file_id": "1hOrCCb2oZhsQBg6Y6ZLaf_7apoDnPM-x",
+      "title": "46 LATIHAN MENEPUK.mp3",
+      "source_url": "https://drive.google.com/file/d/1hOrCCb2oZhsQBg6Y6ZLaf_7apoDnPM-x/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 47,
+      "file_id": "1ai6DWXRPsG-IoIMQqc-wAQZgxkJymsSx",
+      "title": "47 INSTRUMENTAL PARANG ILANG DENGAN DETIK.mp3",
+      "source_url": "https://drive.google.com/file/d/1ai6DWXRPsG-IoIMQqc-wAQZgxkJymsSx/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 48,
+      "file_id": "1pgj3zYtfOu0Q6b88YQU5M8ECrxEtUphW",
+      "title": "48 LATIHAN REKORDER 1.mp3",
+      "source_url": "https://drive.google.com/file/d/1pgj3zYtfOu0Q6b88YQU5M8ECrxEtUphW/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 49,
+      "file_id": "17oNJ1P2cbumEMMV4A9avN0xSbeiczpt5",
+      "title": "49 LATIHAN REKORDER 2.mp3",
+      "source_url": "https://drive.google.com/file/d/17oNJ1P2cbumEMMV4A9avN0xSbeiczpt5/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 50,
+      "file_id": "1x5mCFplUwRNArILgINz1UrQac0jnJi5f",
+      "title": "50 LATIHAN REKODER NOT A.mp3",
+      "source_url": "https://drive.google.com/file/d/1x5mCFplUwRNArILgINz1UrQac0jnJi5f/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 51,
+      "file_id": "1sMgL48e0JpFkOhhfJ9OUS_rINfWAkgse",
+      "title": "51 LATIHAN REKORDER 1.mp3",
+      "source_url": "https://drive.google.com/file/d/1sMgL48e0JpFkOhhfJ9OUS_rINfWAkgse/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 52,
+      "file_id": "1hCWr_vQn9V_wV-lD18c8d_uuaPo8Unr6",
+      "title": "52 LATIHAN REKORDER 2.mp3",
+      "source_url": "https://drive.google.com/file/d/1hCWr_vQn9V_wV-lD18c8d_uuaPo8Unr6/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 53,
+      "file_id": "1Kbae7gi6QM0Qlk-5Q7RNzBT6QZrO_5sl",
+      "title": "53 LATIHAN REKORDER 3.mp3",
+      "source_url": "https://drive.google.com/file/d/1Kbae7gi6QM0Qlk-5Q7RNzBT6QZrO_5sl/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 54,
+      "file_id": "1gRLBjWMnqj7C9_bsrTcuuL4xyAbHgDn3",
+      "title": "54 LATIHAN MENGAJUK NYANYIAN.mp3",
+      "source_url": "https://drive.google.com/file/d/1gRLBjWMnqj7C9_bsrTcuuL4xyAbHgDn3/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 55,
+      "file_id": "1niuH-cW_lVHIQwSQQzxBZ2JzdzseHEQM",
+      "title": "55 VOKAL KAD UCAPAN HARI LAHIRKU .mp3",
+      "source_url": "https://drive.google.com/file/d/1niuH-cW_lVHIQwSQQzxBZ2JzdzseHEQM/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 56,
+      "file_id": "1H6JOeKzeJwS5yT893vKIS7WCoRLLeSff",
+      "title": "56 INSTRUMENTAL KAD UCAPAN HARI LAHIRKU.mp3",
+      "source_url": "https://drive.google.com/file/d/1H6JOeKzeJwS5yT893vKIS7WCoRLLeSff/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 57,
+      "file_id": "1t5dVLxtyHU_nPLh_-7Sm2gO1ZnssSKj3",
+      "title": "57 MINUS ONE KAD UCAPAN HARI LAHIRKU.mp3",
+      "source_url": "https://drive.google.com/file/d/1t5dVLxtyHU_nPLh_-7Sm2gO1ZnssSKj3/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 58,
+      "file_id": "1tLVVs5edwHAK9L-0qAVS_c-N25IMWya8",
+      "title": "58 MUZIK IRINGAN.mp3",
+      "source_url": "https://drive.google.com/file/d/1tLVVs5edwHAK9L-0qAVS_c-N25IMWya8/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 59,
+      "file_id": "1GnQJpv6u78J4xfmpnszazjMLQtLsJHXD",
+      "title": "59 LATIHAN REKORDER NOT G.mp3",
+      "source_url": "https://drive.google.com/file/d/1GnQJpv6u78J4xfmpnszazjMLQtLsJHXD/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 60,
+      "file_id": "1H4xRWqQcw0nMGVFK5IbCL5IZj6v87ac7",
+      "title": "60 LATIHAN REKORDER 1.mp3",
+      "source_url": "https://drive.google.com/file/d/1H4xRWqQcw0nMGVFK5IbCL5IZj6v87ac7/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 61,
+      "file_id": "1AQyPofYu-IuhcGU1YYWnN7mBNOovNbgt",
+      "title": "61 VOKAL SELAMAT MALAM.mp3",
+      "source_url": "https://drive.google.com/file/d/1AQyPofYu-IuhcGU1YYWnN7mBNOovNbgt/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 62,
+      "file_id": "1SaMkg9Pu6aKClVMC3RBl99jmh3EFIPSE",
+      "title": "62 INSTRUMENTAL SELAMAT MALAM.mp3",
+      "source_url": "https://drive.google.com/file/d/1SaMkg9Pu6aKClVMC3RBl99jmh3EFIPSE/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 63,
+      "file_id": "1_HZUe79w9sjeRZcPNLpXsp9W6JTcx0HU",
+      "title": "63 MINUS ONE SELAMAT MALAM.mp3",
+      "source_url": "https://drive.google.com/file/d/1_HZUe79w9sjeRZcPNLpXsp9W6JTcx0HU/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 64,
+      "file_id": "1tbZZQL5TCe3bNmYLXLFjPIsYhNJOcoGw",
+      "title": "64  PERKUSI GUBAHAN.mp3",
+      "source_url": "https://drive.google.com/file/d/1tbZZQL5TCe3bNmYLXLFjPIsYhNJOcoGw/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 65,
+      "file_id": "1J1dL7QMAsb7JBjtdAvtXJMHvGTN0GgoW",
+      "title": "65 VOKAL AJUK NYANYIAN KU.mp3",
+      "source_url": "https://drive.google.com/file/d/1J1dL7QMAsb7JBjtdAvtXJMHvGTN0GgoW/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 66,
+      "file_id": "1IruxP31SpIXh_HuK4FeO4_ayzLlDSCET",
+      "title": "66 VOKAL BONEKA.mp3",
+      "source_url": "https://drive.google.com/file/d/1IruxP31SpIXh_HuK4FeO4_ayzLlDSCET/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 67,
+      "file_id": "1HGQIfqc6sHGEz9wlG-33vIWFKy62mFNF",
+      "title": "67 INSTRUMENTAL BONEKA.mp3",
+      "source_url": "https://drive.google.com/file/d/1HGQIfqc6sHGEz9wlG-33vIWFKy62mFNF/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 68,
+      "file_id": "1uwHJLy47SEYiyhs5rJs7gaezoZd6hcoL",
+      "title": "68 MINUS ONE BONEKA.mp3",
+      "source_url": "https://drive.google.com/file/d/1uwHJLy47SEYiyhs5rJs7gaezoZd6hcoL/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 69,
+      "file_id": "1Ir2id03Rw9BDq2kv1Wkb7nWkQ-UAKRoN",
+      "title": "69 CERITA TAMAK SELALU RUGI DENGAN KESAN BUNYI.mp3",
+      "source_url": "https://drive.google.com/file/d/1Ir2id03Rw9BDq2kv1Wkb7nWkQ-UAKRoN/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 70,
+      "file_id": "1kiQwKwaEnfdFAZribXzKou2phj7v7hUp",
+      "title": "70 CERITA TAMAK SELALU RUGI TANPA KESAN BUNYI.mp3",
+      "source_url": "https://drive.google.com/file/d/1kiQwKwaEnfdFAZribXzKou2phj7v7hUp/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 71,
+      "file_id": "14cid4SCGq_bI2B0ueUPurj-B74HqskjL",
+      "title": "71 LATIHAN PEMANASAN SUARA CIK KECIK KEBOM.mp3",
+      "source_url": "https://drive.google.com/file/d/14cid4SCGq_bI2B0ueUPurj-B74HqskjL/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 72,
+      "file_id": "1kM5QfSBd5fu6sFUUI50-v9CX66BUKt_y",
+      "title": "72 VOKAL  SENI ANYAMAN JANGAN DILUPA.mp3",
+      "source_url": "https://drive.google.com/file/d/1kM5QfSBd5fu6sFUUI50-v9CX66BUKt_y/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 73,
+      "file_id": "1gUJvdGmudKn8hFNtCwDomgYjDEKyvQIS",
+      "title": "73 INSTRUMENTAL SENI ANYAMAN JANGAN DILUPA.mp3",
+      "source_url": "https://drive.google.com/file/d/1gUJvdGmudKn8hFNtCwDomgYjDEKyvQIS/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 74,
+      "file_id": "1KfKz1Zs8dyicKYk3_viG4Tzkwm3v3G1d",
+      "title": "74 MINUS ONE SENI ANYAMAN JANGAN DILUPA.mp3",
+      "source_url": "https://drive.google.com/file/d/1KfKz1Zs8dyicKYk3_viG4Tzkwm3v3G1d/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": 75,
+      "file_id": "1EiBlG972PcGVHBs6Sz1JjfrT5npl9eit",
+      "title": "75 MUZIK IRINGAN CORAK IRAMA.mp3",
+      "source_url": "https://drive.google.com/file/d/1EiBlG972PcGVHBs6Sz1JjfrT5npl9eit/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": null,
+      "file_id": "1hVN2EH9Z548cx2BJF1xfeL5qzd6F1F20",
+      "title": "000 BAHASA SENI VISUAL.mp3",
+      "source_url": "https://drive.google.com/file/d/1hVN2EH9Z548cx2BJF1xfeL5qzd6F1F20/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": null,
+      "file_id": "13ds7Cdm4yQctv3sZCIjqc4F1aVPbnbAy",
+      "title": "PROJEK KESENIAN PENGGAL 1 INSTRUMENTAL SERANGGA.mp3",
+      "source_url": "https://drive.google.com/file/d/13ds7Cdm4yQctv3sZCIjqc4F1aVPbnbAy/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": null,
+      "file_id": "1Ylpo14uO11vwk4FdfPw1Jl2zgjuKGa-o",
+      "title": "PROJEK KESENIAN PENGGAL 1 MINUSONE  SERANGGA.mp3",
+      "source_url": "https://drive.google.com/file/d/1Ylpo14uO11vwk4FdfPw1Jl2zgjuKGa-o/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": null,
+      "file_id": "17mwkSZ_KgsLz9F1Z-IGfQLCCnP-IPwpc",
+      "title": "PROJEK KESENIAN PENGGAL 1 VOKAL SERANGGA.mp3",
+      "source_url": "https://drive.google.com/file/d/17mwkSZ_KgsLz9F1Z-IGfQLCCnP-IPwpc/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": null,
+      "file_id": "1PsKHyLuIgdoIKMdXTUB1-Oz66UnH_BCR",
+      "title": "PROJEK KESENIAN PENGGAL DUA  INSTRUMENTAL SAHABAT KU .mp3",
+      "source_url": "https://drive.google.com/file/d/1PsKHyLuIgdoIKMdXTUB1-Oz66UnH_BCR/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": null,
+      "file_id": "1z0YhjXTVk2cVWiXhgvcQnH7DtEW6PIlr",
+      "title": "PROJEK KESENIAN PENGGAL DUA  MINUS ONE SAHABAT KU .mp3",
+      "source_url": "https://drive.google.com/file/d/1z0YhjXTVk2cVWiXhgvcQnH7DtEW6PIlr/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    },
+    {
+      "track": null,
+      "file_id": "1BoIjn02isVk-Fkc-hbcD96S9Gi-b_EFK",
+      "title": "PROJEK KESENIAN PENGGAL DUA VOKAL SAHABAT KU.mp3",
+      "source_url": "https://drive.google.com/file/d/1BoIjn02isVk-Fkc-hbcD96S9Gi-b_EFK/view?usp=drivesdk",
+      "mime_type": "audio/mp3"
+    }
+  ]
+}

@@ -1,0 +1,347 @@
+"""Stage-only proof: render representative Music RPH with *unmodified base*
+Telegram writer functions, isolated from app.py bootstrap and live DB.
+
+This is NOT the complete layered production runtime or source-parity approval.
+Writes only disposable /tmp files and a CI-only audit JSON report.
+"""
+import argparse
+import ast
+import importlib.util
+import json
+import os
+from pathlib import Path
+import re
+import tempfile
+import shutil
+import subprocess
+from unittest.mock import patch
+from xml.sax.saxutils import escape
+
+from docx import Document
+from docx.shared import Pt, Cm
+from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.enum.table import WD_TABLE_ALIGNMENT
+from docx.oxml import OxmlElement
+from docx.oxml.ns import qn
+from reportlab.lib.pagesizes import A4
+from reportlab.lib.units import mm
+from reportlab.lib import colors
+from reportlab.lib.enums import TA_CENTER, TA_LEFT
+from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
+from pypdf import PdfReader
+from legacy_doc_text_safe_staging import normalize_for_legacy_doc, normalize_check
+
+ROOT = Path(__file__).resolve().parents[3]
+SOURCE = ROOT / "staging" / "pendidikan_muzik" / "rpt_rph_2027"
+NATIVE = ROOT / "web" / "native_rph_telegram_api.py"
+BOT = ROOT / "app.py"
+SELECTED = [(2, 1), (3, 20), (4, 21), (5, 34), (6, 35)]
+
+
+def _compile_functions(source_file, wanted, *, last=()):
+    # Never import app.py; it bootstraps the main curriculum DB.
+    # Independently parse chosen functions to tolerate unrelated Python 3.12 syntax.
+    contents = source_file.read_text(encoding='utf-8')
+    if source_file == NATIVE:
+        tree = ast.parse(contents, filename=str(source_file))
+        entries = {}
+        for node in tree.body:
+            if isinstance(node, ast.FunctionDef) and node.name in wanted:
+                entries.setdefault(node.name, []).append(node)
+        if set(entries) != set(wanted):
+            raise RuntimeError('Web parser source changed')
+        nodes = [entries[n][-1] if n in last else entries[n][0] for n in wanted]
+        return compile(ast.fix_missing_locations(ast.Module(body=nodes, type_ignores=[])), str(source_file), 'exec'), tree
+    lines = contents.splitlines(keepends=True)
+    entries = {}
+    for i, line in enumerate(lines):
+        if not line.startswith('def '):
+            continue
+        name = line.split('(', 1)[0][4:].strip()
+        if name not in wanted:
+            continue
+        j = i + 1
+        while j < len(lines):
+            item = lines[j]
+            if item.strip() and not item[0].isspace() and not item.lstrip().startswith('#'):
+                break
+            j += 1
+        snippet = ''.join(lines[i:j])
+        node = ast.parse(snippet, filename=str(source_file)).body[0]
+        if not isinstance(node, ast.FunctionDef) or node.name != name:
+            raise RuntimeError('Unexpected function snippet')
+        entries.setdefault(name, []).append(node)
+    if set(entries) != set(wanted):
+        raise RuntimeError('Missing RPH native functions: ' + str(set(wanted) - set(entries)))
+    nodes = [entries[n][-1] if n in last else entries[n][0] for n in wanted]
+    return compile(ast.fix_missing_locations(ast.Module(body=nodes, type_ignores=[])), str(source_file), 'exec'), None
+
+def _preview_module():
+    spec = importlib.util.spec_from_file_location("music_preview_for_base_smoke", SOURCE / "native_layout_preview_staging.py")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def _web_parser():
+    funcs = ("_require_text", "_metadata_dict", "_extract", "build_native_input")
+    code, tree = _compile_functions(NATIVE, funcs)
+    namespace = {"os": os, "re": re, "date": __import__("datetime").date,
+                 "hmac": __import__("hmac")}
+    for entry in tree.body:
+        if isinstance(entry, ast.Assign):
+            for target in entry.targets:
+                if isinstance(target, ast.Name) and target.id in ("MIMES", "SUBJECTS", "LAYOUT_STYLE", "HEADINGS"):
+                    namespace[target.id] = ast.literal_eval(entry.value)
+    if "MUZIK" in namespace["SUBJECTS"]:
+        raise RuntimeError("STOP: production whitelist changed; audit conditions invalid")
+    exec(code, namespace)
+    namespace["SUBJECTS"] = dict(namespace["SUBJECTS"], MUZIK="Pendidikan Muzik")  # isolated test only
+    return namespace["build_native_input"]
+
+
+def _native_base():
+    functions = {
+        "safe_filename", "clean_doc_text", "_word_set_cell_border",
+        "_word_page_number", "_rph_session_meta", "_rph_blank_or_value",
+        "_rph_attendance_value", "_parse_rph_sections", "_rph_rows",
+        "_rph_format_activity_lines", "_rph_phase_time_v25179",
+        "_create_rph_word", "create_word_file", "_is_english_subject",
+        "_pdf_header_footer", "create_pdf_file",
+    }
+    code, _ = _compile_functions(BOT, functions, last={"_rph_format_activity_lines"})
+    namespace = {
+        "os": os, "tempfile": tempfile, "re": re, "Document": Document,
+        "Pt": Pt, "Cm": Cm, "WD_ALIGN_PARAGRAPH": WD_ALIGN_PARAGRAPH,
+        "WD_TABLE_ALIGNMENT": WD_TABLE_ALIGNMENT, "OxmlElement": OxmlElement,
+        "qn": qn, "A4": A4, "mm": mm, "colors": colors,
+        "TA_CENTER": TA_CENTER, "TA_LEFT": TA_LEFT,
+        "getSampleStyleSheet": getSampleStyleSheet, "ParagraphStyle": ParagraphStyle,
+        "SimpleDocTemplate": SimpleDocTemplate, "Paragraph": Paragraph,
+        "Spacer": Spacer, "Table": Table, "TableStyle": TableStyle,
+        "escape": escape,
+    }
+    exec(code, namespace)
+    return namespace
+
+
+def audit_one(year, pdp, fmt, preview, parse_input, writer, word_output_dir=None, review_folder=None, all_draft_folder=None):
+    meta = {item["label"]: item["value"] for item in preview["layout"]["header"]}
+    payload = {
+        "subject": "MUZIK", "component": None,
+        "year": year, "lesson": pdp, "unit": meta["Tajuk"],
+        "teacher": {"class": "", "date": "", "time": ""},
+        "layout": preview["layout"], "format": fmt,
+    }
+    with patch.dict(os.environ, {"CIKGULAJU_WEB_RPH_SOURCE_PARITY_REQUIRED": "0"}):
+        state, ai_text, fmt2 = parse_input(payload)
+    if fmt2 != fmt:
+        raise RuntimeError("Format mismatch")
+    # Preserve page ranges and phrase separators before app.py clean_doc_text.
+    # This is staging-only; production app.py is deliberately left unchanged.
+    adapted_ai_text = normalize_for_legacy_doc(ai_text)
+    fn = writer["create_word_file"] if fmt == "word" else writer["create_pdf_file"]
+    path = None
+    try:
+        path = Path(fn(state, adapted_ai_text, f"music_smoke_{year}_{pdp}_{fmt}"))
+        if not path.is_file() or path.stat().st_size < 1000:
+            raise RuntimeError("Empty RPH output")
+        if fmt == "word":
+            document = Document(path)
+            if len(document.tables) != 3:
+                raise RuntimeError(f"Expected 3 native Word tables, got {len(document.tables)}")
+            activity = document.tables[1].cell(2, 1).text
+            if not all(marker in activity for marker in ("Aktiviti 1", "Aktiviti 2", "Pengukuhan")):
+                raise RuntimeError("Missing activity/pentaksiran in Word native table")
+            sp_text = document.tables[0].cell(9, 1).text
+            if not all(v in sp_text for v in meta["Standard Pembelajaran"].split("; ")):
+                raise RuntimeError("Word SP source text lost")
+            # Verify real source values in exact Word metadata cells, not only
+            # document size / presence of field labels.
+            for label, row_index in (("OBJEKTIF PEMBELAJARAN", 10),
+                                     ("KRITERIA KEJAYAAN", 11),
+                                     ("BAHAN BANTU MENGAJAR", 13),
+                                     ("PENTAKSIRAN", 16)):
+                expected = " ".join(str(meta[label]).split())
+                actual = " ".join(document.tables[0].cell(row_index, 1).text.split())
+                if not expected or expected == "—" or not normalize_check(expected, actual):
+                    raise RuntimeError(f"Word missing/truncated {label}: expected={expected[:80]!r} actual={actual[:80]!r}")
+            section = document.sections[0]
+            a4 = abs(section.page_width.cm - 21.0) < 0.15 and abs(section.page_height.cm - 29.7) < 0.15
+            if not a4:
+                raise RuntimeError("Word section is not A4")
+            if word_output_dir is not None:
+                shutil.copy2(path, word_output_dir / f"MZ-Y{year}-{pdp:02d}.docx")
+            if review_folder is not None and (year, pdp) in SELECTED:
+                shutil.copy2(path, review_folder / f"DRAF_SEMAKAN_MZ-Y{year}-{pdp:02d}.docx")
+            if all_draft_folder is not None:
+                shutil.copy2(path, all_draft_folder / f"DRAF_MZ-Y{year}-{pdp:02d}.docx")
+            return {"type": fmt, "bytes": path.stat().st_size, "tables": 3, "a4_section": a4,
+                    "pedagogical_fields_checked": 4, "legacy_punctuation_normalized": adapted_ai_text != ai_text,
+                    "page_count": None}
+        reader = PdfReader(str(path))
+        pages = len(reader.pages)
+        if pages < 1:
+            raise RuntimeError("PDF has no pages")
+        text = "\n".join(p.extract_text() or "" for p in reader.pages)
+        if "RANCANGAN PENGAJARAN HARIAN" not in text:
+            raise RuntimeError("PDF main heading lost")
+        for marker in ("Aktiviti 1", "Aktiviti 2", "Pengukuhan"):
+            if marker not in text:
+                raise RuntimeError("PDF lost a lesson-specific activity: " + marker)
+        for code in meta["Standard Pembelajaran"].split("; "):
+            if code not in text:
+                raise RuntimeError("PDF lost source SP code: " + code)
+        # Text extraction may wrap at word boundaries. Check beginning,
+        # middle AND end of each pedagogical field instead of accepting just
+        # the first five words (which can hide a truncated assessment).
+        text_compact = " ".join(text.split()).casefold()
+        for label in ("OBJEKTIF PEMBELAJARAN", "KRITERIA KEJAYAAN",
+                      "BAHAN BANTU MENGAJAR", "PENTAKSIRAN"):
+            source_text = " ".join(str(meta[label]).split())
+            if not source_text or source_text == "—":
+                raise RuntimeError("Missing source pedagogical field: " + label)
+            words = normalize_for_legacy_doc(source_text).split()
+            window = min(4, len(words))
+            offsets = sorted({0, (len(words) - window) // 2, len(words) - window})
+            for offset in offsets:
+                probe = " ".join(words[offset:offset + window]).casefold()
+                if probe not in text_compact:
+                    raise RuntimeError(
+                        f"PDF missing/truncated {label} at words {offset + 1}-"
+                        f"{offset + window}: {probe!r}"
+                    )
+        if "DRAF STAGING" in text or "Kawalan penerbitan" in text:
+            raise RuntimeError("Technical staging audit note leaked into PDF")
+        box = reader.pages[0].mediabox
+        if abs(float(box.width) - 595.28) > 3 or abs(float(box.height) - 841.89) > 3:
+            raise RuntimeError("PDF size not A4")
+        if review_folder is not None and (year, pdp) in SELECTED:
+            shutil.copy2(path, review_folder / f"DRAF_SEMAKAN_MZ-Y{year}-{pdp:02d}.pdf")
+        if all_draft_folder is not None:
+            shutil.copy2(path, all_draft_folder / f"DRAF_MZ-Y{year}-{pdp:02d}.pdf")
+        return {"type": fmt, "bytes": path.stat().st_size, "pages": pages,
+                "pedagogical_fields_checked": 4, "legacy_punctuation_normalized": adapted_ai_text != ai_text,
+                "single_page": pages == 1, "a4": True}
+    finally:
+        if path is not None and path.exists():
+            path.unlink()
+
+
+def main():
+    p = argparse.ArgumentParser()
+    p.add_argument("--all", action="store_true", help="Render all 175, otherwise 5 representative lessons")
+    args = p.parse_args()
+    cases = [(year, pdp) for year in range(2, 7) for pdp in range(1, 36)] if args.all else SELECTED
+    preview_mod = _preview_module()
+    parser = _web_parser()
+    native = _native_base()
+    converter = shutil.which("libreoffice") or shutil.which("soffice")
+    scratch = tempfile.TemporaryDirectory(prefix="music_word_pages_staging_")
+    word_source = Path(scratch.name) / "docx"
+    word_pdf = Path(scratch.name) / "pdf"
+    if converter:
+        word_source.mkdir()
+        word_pdf.mkdir()
+    review_dir_raw = os.environ.get("MUSIC_REVIEW_SAMPLE_DIR", "").strip()
+    review_folder = Path(review_dir_raw).resolve() if review_dir_raw else None
+    if review_folder is not None:
+        review_folder.mkdir(parents=True, exist_ok=True)
+        (review_folder / "BACA_DULU_DRAF.txt").write_text(
+            "CIKGULAJU MUZIK — BAHAN SEMAKAN DALAMAN / DRAF, BUKAN UNTUK PENGGUNA.\\n"
+            "Diperoleh daripada fungsi asas penjana, bukan runtime penuh.\\n"
+            "Kod SP Tahun 4 PdP21/24, audio/lesen dan kelulusan kurikulum belum final.\\n"
+            "Jangan terbitkan, edar atau guna sebagai bahan FINAL READY.\\n",
+            encoding="utf-8")
+    all_draft_dir_raw = os.environ.get("MUSIC_ALL_DRAFT_DIR", "").strip()
+    all_draft_folder = Path(all_draft_dir_raw).resolve() if all_draft_dir_raw else None
+    if all_draft_folder is not None:
+        if not args.all:
+            raise ValueError("All-draft artifact requires --all")
+        all_draft_folder.mkdir(parents=True, exist_ok=True)
+        (all_draft_folder / "BACA_DULU_SEMAKAN_DRAF.txt").write_text(
+            "Pendidikan Muzik CikguLaju 2027: 175 Word + 175 PDF untuk QA dalaman sahaja.\\n"
+            "DRAF STAGING, bukan pengesahan buku/skor/audio atau integrasi Telegram-Web.\\n"
+            "Kod SK/SP Tahun 4 mempunyai perbezaan sumber berasingan; takwim perlu hari sebenar.\\n"
+            "JANGAN edar sebagai FINAL READY sehingga semua gate kurikulum dan sistem lulus.\\n",
+            encoding="utf-8",
+        )
+    results = []
+    for year, pdp in cases:
+        preview = preview_mod.build_staging_preview(SOURCE, year, pdp)
+        record = {"year": year, "pdp": pdp, "source_id": preview["source_pdp_id"],
+                  "approved_for_live": False, "render_kind": "BASE_FUNCTION_AST_ONLY",
+                  "warnings": preview["warnings"]}
+        for fmt in ("word", "pdf"):
+            try:
+                record[fmt] = audit_one(year, pdp, fmt, preview, parser, native, word_source if converter else None, review_folder, all_draft_folder)
+            except Exception as error:
+                record[fmt] = {"error": type(error).__name__ + ": " + str(error)}
+        results.append(record)
+        print(json.dumps(record, ensure_ascii=False), flush=True)
+    failed = [r for r in results if "error" in r["word"] or "error" in r["pdf"]]
+    word_page_report = {"measured": False, "converter_available": bool(converter),
+                        "single_page_count": None, "multi_page": [],
+                        "reason": "LibreOffice/soffice not installed"}
+    if converter and not failed:
+        sources = sorted(word_source.glob("*.docx"))
+        try:
+            cmd = [converter, "-env:UserInstallation=file://" + str(Path(scratch.name) / "lo_profile"),
+                   "--headless", "--convert-to", "pdf", "--outdir", str(word_pdf)]
+            proc = subprocess.run(cmd + [str(x) for x in sources],
+                                  capture_output=True, text=True, timeout=240, check=False)
+            if proc.returncode != 0:
+                raise RuntimeError("LibreOffice conversion failed: " + (proc.stderr or proc.stdout)[-500:])
+            overs = []
+            converted = 0
+            for source in sources:
+                result = word_pdf / (source.stem + ".pdf")
+                if not result.is_file():
+                    raise RuntimeError("Word conversion missing: " + source.name)
+                count = len(PdfReader(str(result)).pages)
+                converted += 1
+                if count != 1:
+                    overs.append({"source": source.stem, "pages": count})
+            word_page_report = {"measured": True, "converter_available": True,
+                                "converted": converted, "single_page_count": converted-len(overs),
+                                "multi_page": overs, "reason": None}
+        except (OSError, RuntimeError, subprocess.TimeoutExpired) as error:
+            word_page_report = {"measured": False, "converter_available": True,
+                                "single_page_count": None, "multi_page": [],
+                                "reason": type(error).__name__ + ": " + str(error)}
+    scratch.cleanup()
+    review_files = sorted(p.name for p in review_folder.glob("DRAF_SEMAKAN_*") if p.is_file()) if review_folder else []
+    if review_folder is not None and len(review_files) != len(SELECTED) * 2:
+        failed.append({"review_sample_artifact": "Expected 10 review documents, got " + str(len(review_files))})
+    all_draft_files = sorted(p.name for p in all_draft_folder.glob("DRAF_MZ-Y*") if p.is_file()) if all_draft_folder else []
+    if all_draft_folder is not None and len(all_draft_files) != 350:
+        failed.append({"all_draft_artifact": "Expected 350 files, got " + str(len(all_draft_files))})
+    report = {
+        "scope": "STAGING_BASE_NATIVE_RENDER_SMOKE_NOT_LIVE",
+        "fully_covered": args.all,
+        "cases": len(results), "docx_ok": sum("error" not in r["word"] for r in results),
+        "pdf_ok": sum("error" not in r["pdf"] for r in results),
+        "single_page_pdf": sum(r["pdf"].get("single_page") is True for r in results),
+        "punctuation_normalized_word": sum(r["word"].get("legacy_punctuation_normalized") is True for r in results),
+        "punctuation_normalized_pdf": sum(r["pdf"].get("legacy_punctuation_normalized") is True for r in results),
+        "word_page_audit": word_page_report,
+        "review_sample_files": review_files,
+        "all_draft_files": len(all_draft_files),
+        "missing_explicit_success_criteria": [
+            r["source_id"] for r in results if "NO_EXPLICIT_SUCCESS_CRITERIA" in r["warnings"]
+        ],
+        "errors": failed,
+        "disclaimer": "AST-extracted base RPH functions are not the full Telegram production wrapper chain; LibreOffice Word-page measurements when present are staging-only and cross-platform release remains unverified.",
+    }
+    path = Path(os.getenv("MUSIC_SMOKE_REPORT", "/tmp/music_native_base_render_smoke.json"))
+    path.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
+    summary = {k: v for k, v in report.items() if k not in ("errors", "missing_explicit_success_criteria")}
+    summary["missing_explicit_success_criteria_count"] = len(report["missing_explicit_success_criteria"])
+    print("AUDIT SUMMARY " + json.dumps(summary, ensure_ascii=False))
+    if failed:
+        raise SystemExit(f"BASE_RENDER_SMOKE FAILED: {len(failed)} case(s)")
+
+
+if __name__ == "__main__":
+    main()

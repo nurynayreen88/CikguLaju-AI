@@ -1,0 +1,1020 @@
+{
+  "subject": "Pendidikan Muzik",
+  "year": 6,
+  "academic_year": 2027,
+  "source_url": "https://www.scribd.com/document/854410603/MZ6",
+  "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+  "status": "DRAF_STAGING_33_OF_35_TEXT_OR_PAGE_CROSSCHECK_NOT_FINAL",
+  "textbook_verified": false,
+  "audio_verified": false,
+  "rph_word_pdf_verified": false,
+  "pdps": [
+    {
+      "pdp_id": "MZ-Y6-01",
+      "pdp": 1,
+      "slot_source": 2,
+      "unit_number": 1,
+      "unit": "SETIA KAWAN",
+      "sp": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "page": "4-5",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 1,
+        "groupA": "04/01–07/01",
+        "groupB": "04/01–08/01"
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic",
+      "source_book_audio_numbers_printed": "1–10",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN6_DIINTEGRASI",
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
+    },
+    {
+      "pdp_id": "MZ-Y6-02",
+      "pdp": 2,
+      "slot_source": 3,
+      "unit_number": 1,
+      "unit": "SETIA KAWAN",
+      "sp": [
+        "2.2.1",
+        "2.2.2"
+      ],
+      "page": "6-9",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 2,
+        "groupA": "10/01–14/01",
+        "groupB": "11/01–15/01"
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic",
+      "source_book_audio_numbers_printed": "11–27",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN6_DIINTEGRASI",
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
+    },
+    {
+      "pdp_id": "MZ-Y6-03",
+      "pdp": 3,
+      "slot_source": 4,
+      "unit_number": 2,
+      "unit": "GERBANG ILMU",
+      "sp": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "page": "10-12",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 3,
+        "groupA": "17/01–21/01",
+        "groupB": "18/01–22/01"
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic",
+      "source_book_audio_numbers_printed": "28–33",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN6_DIINTEGRASI",
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
+    },
+    {
+      "pdp_id": "MZ-Y6-04",
+      "pdp": 4,
+      "slot_source": 5,
+      "unit_number": 2,
+      "unit": "GERBANG ILMU",
+      "sp": [
+        "3.1.1",
+        "3.1.2"
+      ],
+      "page": "13",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 4,
+        "groupA": "24/01–28/01",
+        "groupB": "25/01–29/01"
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic",
+      "source_book_audio_numbers_printed": "34",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN6_DIINTEGRASI",
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
+    },
+    {
+      "pdp_id": "MZ-Y6-05",
+      "pdp": 5,
+      "slot_source": 6,
+      "unit_number": 2,
+      "unit": "GERBANG ILMU",
+      "sp": [
+        "2.3.1"
+      ],
+      "page": "14-17",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 5,
+        "groupA": "31/01–04/02",
+        "groupB": "01/02–05/02"
+      },
+      "source_rpt_original_page": "14-15",
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic",
+      "source_book_audio_numbers_printed": "35–38",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN6_DIINTEGRASI",
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
+    },
+    {
+      "pdp_id": "MZ-Y6-06",
+      "pdp": 6,
+      "slot_source": 8,
+      "unit_number": 3,
+      "unit": "TUDUNG PERIUK",
+      "sp": [
+        "2.1.2"
+      ],
+      "page": "18-19",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 6,
+        "groupA": "07/02–11/02",
+        "groupB": "08/02–12/02"
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic",
+      "source_book_audio_numbers_printed": "39–41",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN6_DIINTEGRASI",
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL",
+      "copyright_note": "Lagu Tudung Periuk dalam buku menyatakan hak cipta dan kebenaran EMI; tidak memuat naik audio atau lirik.",
+      "rpt2027_day_audit": {
+        "status": "ZERO_CALON_PDP_IN_ALL_16_STATES",
+        "indexed_candidate_days_all_states": 0,
+        "indexed_state_count": 16,
+        "source_read_only": "KALENDAR_2027_HARI_PDP_16_NEGERI_AUDIT.json",
+        "action": "PDP_ANJAL_TARIKH_GURU_PERLU_SAHKAN",
+        "automatic_shift_or_skip_forbidden": true,
+        "approval": "DRAF_SEMAKAN_KALENDAR_NEGERI_BELUM_FINAL"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y6-07",
+      "pdp": 7,
+      "slot_source": 9,
+      "unit_number": 3,
+      "unit": "TUDUNG PERIUK",
+      "sp": [
+        "2.2.1",
+        "2.2.2"
+      ],
+      "page": "20-23",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 7,
+        "groupA": "14/02–18/02",
+        "groupB": "15/02–19/02"
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic",
+      "source_book_audio_numbers_printed": "42–56",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN6_DIINTEGRASI",
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL",
+      "copyright_note": "Lagu Tudung Periuk dalam buku menyatakan hak cipta dan kebenaran EMI; tidak memuat naik audio atau lirik."
+    },
+    {
+      "pdp_id": "MZ-Y6-08",
+      "pdp": 8,
+      "slot_source": 10,
+      "unit_number": 3,
+      "unit": "TUDUNG PERIUK",
+      "sp": [
+        "3.1.1",
+        "3.1.2"
+      ],
+      "page": "24-25",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 8,
+        "groupA": "21/02–25/02",
+        "groupB": "22/02–26/02"
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic",
+      "source_book_audio_numbers_printed": "57–59",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN6_DIINTEGRASI",
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
+    },
+    {
+      "pdp_id": "MZ-Y6-09",
+      "pdp": 9,
+      "slot_source": 11,
+      "unit_number": 4,
+      "unit": "RANGKAIAN GLOBALISASI",
+      "sp": [
+        "2.1.1",
+        "2.1.2",
+        "2.4.1"
+      ],
+      "page": "26-29",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 9,
+        "groupA": "28/02–04/03",
+        "groupB": "01/03–05/03"
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic",
+      "source_book_audio_numbers_printed": "60–67",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN6_DIINTEGRASI",
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
+    },
+    {
+      "pdp_id": "MZ-Y6-10",
+      "pdp": 10,
+      "slot_source": 12,
+      "unit_number": 4,
+      "unit": "RANGKAIAN GLOBALISASI",
+      "sp": [
+        "3.1.1",
+        "3.1.2"
+      ],
+      "page": "30-33",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 10,
+        "groupA": "14/03–18/03",
+        "groupB": "15/03–19/03"
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic",
+      "source_book_audio_numbers_printed": "68–70",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN6_DIINTEGRASI",
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
+    },
+    {
+      "pdp_id": "MZ-Y6-11",
+      "pdp": 11,
+      "slot_source": 13,
+      "unit_number": 4,
+      "unit": "RANGKAIAN GLOBALISASI",
+      "sp": [
+        "4.1.1",
+        "4.1.2"
+      ],
+      "page": "34-35",
+      "flags": [
+        "RPT sumber menulis Baroque untuk Tahun 6 tetapi DSKP Tahun 6 menyatakan Classical; ikuti DSKP, tunggu bukti buku",
+        "PERCANGGAHAN DSKP vs Buku teks: DSKP 1750-1830, buku 1750-1850; RPH ikut DSKP dan kekalkan nota audit."
+      ],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 11,
+        "groupA": "21/03–25/03",
+        "groupB": "22/03–26/03"
+      },
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic",
+      "source_book_audio_numbers_printed": "71–73",
+      "source_book_audio_file_verified": false,
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "BUKU_T6_ONLINE_TEKSTUAL_BUKAN_IMeJ_SIGNOFF",
+      "focus_pdp": "Zaman Classical (DSKP 1750–1830; buku 1750–1850)",
+      "rph_specificity_status": "TEKS_BUKU_T6_DISEMAK",
+      "dskp_classical_years": "1750-1830",
+      "textbook_classical_years": "1750-1850"
+    },
+    {
+      "pdp_id": "MZ-Y6-12",
+      "pdp": 12,
+      "slot_source": 14,
+      "unit_number": null,
+      "unit": "Projek Seni Muzik 1 — Perancangan",
+      "sp": [
+        "5.1.1",
+        "5.1.2",
+        "5.1.4"
+      ],
+      "page": "44-45",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 12,
+        "groupA": "28/03–01/04",
+        "groupB": "29/03–02/04"
+      },
+      "source_rpt_original_page": null,
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic/51-100",
+      "source_book_verification_level": "BUKU_ONLINE_PROJEK_RASMI_SEMAKAN_TEKSTUAL",
+      "project_book_evidence": true,
+      "source_book_audio_file_verified": false,
+      "source_book_audio_numbers_printed": "Tiada audio projek khusus; pilihan lagu perlu disahkan",
+      "validation_status": "DRAF_PROJEK_RASMI_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
+    },
+    {
+      "pdp_id": "MZ-Y6-13",
+      "pdp": 13,
+      "slot_source": 15,
+      "unit_number": null,
+      "unit": "Projek Seni Muzik 1 — Persembahan",
+      "sp": [
+        "5.1.2",
+        "5.1.3",
+        "5.1.4"
+      ],
+      "page": "44-45",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 13,
+        "groupA": "04/04–08/04",
+        "groupB": "05/04–09/04"
+      },
+      "source_rpt_original_page": null,
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic/51-100",
+      "source_book_verification_level": "BUKU_ONLINE_PROJEK_RASMI_SEMAKAN_TEKSTUAL",
+      "project_book_evidence": true,
+      "source_book_audio_file_verified": false,
+      "source_book_audio_numbers_printed": "Tiada audio projek khusus; pilihan lagu perlu disahkan",
+      "validation_status": "DRAF_PROJEK_RASMI_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
+    },
+    {
+      "pdp_id": "MZ-Y6-14",
+      "pdp": 14,
+      "slot_source": 16,
+      "unit_number": 5,
+      "unit": "MIKROORGANISMA",
+      "sp": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "page": "36-37",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 14,
+        "groupA": "11/04–15/04",
+        "groupB": "12/04–16/04"
+      },
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic",
+      "source_book_audio_numbers_printed": "74–76",
+      "source_book_audio_file_verified": false,
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "BUKU_T6_ONLINE_TEKSTUAL_BUKAN_IMeJ_SIGNOFF",
+      "focus_pdp": "Mikroorganisma — nyanyian",
+      "rph_specificity_status": "TEKS_BUKU_T6_DISEMAK"
+    },
+    {
+      "pdp_id": "MZ-Y6-15",
+      "pdp": 15,
+      "slot_source": 17,
+      "unit_number": 5,
+      "unit": "MIKROORGANISMA",
+      "sp": [
+        "2.4.1",
+        "2.4.2"
+      ],
+      "page": "38-43",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 15,
+        "groupA": "18/04–22/04",
+        "groupB": "19/04–23/04"
+      },
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic",
+      "source_book_audio_numbers_printed": "77–88",
+      "source_book_audio_file_verified": false,
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "BUKU_T6_ONLINE_TEKSTUAL_BUKAN_IMeJ_SIGNOFF",
+      "focus_pdp": "Mikroorganisma — rekoder not D dan C / melodi kaunter",
+      "rph_specificity_status": "TEKS_BUKU_T6_DISEMAK"
+    },
+    {
+      "pdp_id": "MZ-Y6-16",
+      "pdp": 16,
+      "slot_source": 18,
+      "unit_number": 6,
+      "unit": "MEMORI INDAH",
+      "sp": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "page": "46-47",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 16,
+        "groupA": "25/04–29/04",
+        "groupB": "26/04–30/04"
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic/51-100",
+      "source_book_audio_numbers_printed": "89–91",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN6_DIINTEGRASI",
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
+    },
+    {
+      "pdp_id": "MZ-Y6-17",
+      "pdp": 17,
+      "slot_source": 19,
+      "unit_number": 6,
+      "unit": "MEMORI INDAH",
+      "sp": [
+        "2.4.1",
+        "2.4.2"
+      ],
+      "page": "48-49",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 17,
+        "groupA": "02/05–06/05",
+        "groupB": "03/05–07/05"
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic/51-100",
+      "source_book_audio_numbers_printed": "92–95",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN6_DIINTEGRASI",
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
+    },
+    {
+      "pdp_id": "MZ-Y6-18",
+      "pdp": 18,
+      "slot_source": 20,
+      "unit_number": 6,
+      "unit": "MEMORI INDAH",
+      "sp": [
+        "1.1.1",
+        "2.3.1"
+      ],
+      "page": "50-53",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 18,
+        "groupA": "09/05–13/05",
+        "groupB": "10/05–14/05"
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic/51-100",
+      "source_book_audio_numbers_printed": "96 (gerakan)",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN6_DIINTEGRASI",
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
+    },
+    {
+      "pdp_id": "MZ-Y6-19",
+      "pdp": 19,
+      "slot_source": 21,
+      "unit_number": 7,
+      "unit": "PUTERI LEGENDA LANGKAWI",
+      "sp": [
+        "2.1.1",
+        "2.1.2",
+        "1.1.2",
+        "1.1.3"
+      ],
+      "page": "54-57",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 19,
+        "groupA": "16/05–20/05",
+        "groupB": "17/05–21/05"
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic/51-100",
+      "source_book_audio_numbers_printed": "97–102",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN6_DIINTEGRASI",
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL",
+      "rpt2027_day_audit": {
+        "status": "ZERO_CALON_PDP_IN_ALL_16_STATES",
+        "indexed_candidate_days_all_states": 0,
+        "indexed_state_count": 16,
+        "source_read_only": "KALENDAR_2027_HARI_PDP_16_NEGERI_AUDIT.json",
+        "action": "PDP_ANJAL_TARIKH_GURU_PERLU_SAHKAN",
+        "automatic_shift_or_skip_forbidden": true,
+        "approval": "DRAF_SEMAKAN_KALENDAR_NEGERI_BELUM_FINAL"
+      }
+    },
+    {
+      "pdp_id": "MZ-Y6-20",
+      "pdp": 20,
+      "slot_source": 22,
+      "unit_number": 7,
+      "unit": "PUTERI LEGENDA LANGKAWI",
+      "sp": [
+        "2.2.1",
+        "2.2.2"
+      ],
+      "page": "58-59",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 20,
+        "groupA": "06/06–10/06",
+        "groupB": "07/06–11/06"
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic/51-100",
+      "source_book_audio_numbers_printed": "103–111",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN6_DIINTEGRASI",
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
+    },
+    {
+      "pdp_id": "MZ-Y6-21",
+      "pdp": 21,
+      "slot_source": 23,
+      "unit_number": 7,
+      "unit": "PUTERI LEGENDA LANGKAWI",
+      "sp": [
+        "2.2.1",
+        "2.2.2"
+      ],
+      "page": "60-61",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 21,
+        "groupA": "13/06–17/06",
+        "groupB": "14/06–18/06"
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic/51-100",
+      "source_book_audio_numbers_printed": "112–116",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN6_DIINTEGRASI",
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
+    },
+    {
+      "pdp_id": "MZ-Y6-22",
+      "pdp": 22,
+      "slot_source": 24,
+      "unit_number": 8,
+      "unit": "WARNA WARNI MALAYSIA",
+      "sp": [
+        "2.1.1"
+      ],
+      "page": "62-63",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 22,
+        "groupA": "20/06–24/06",
+        "groupB": "21/06–25/06"
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic/51-100",
+      "source_book_audio_numbers_printed": "117–119",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN6_DIINTEGRASI",
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
+    },
+    {
+      "pdp_id": "MZ-Y6-23",
+      "pdp": 23,
+      "slot_source": 25,
+      "unit_number": 8,
+      "unit": "WARNA WARNI MALAYSIA",
+      "sp": [
+        "2.3.1"
+      ],
+      "page": "64-65",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 23,
+        "groupA": "27/06–01/07",
+        "groupB": "28/06–02/07"
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic/51-100",
+      "source_book_audio_numbers_printed": "120",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN6_DIINTEGRASI",
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
+    },
+    {
+      "pdp_id": "MZ-Y6-24",
+      "pdp": 24,
+      "slot_source": 26,
+      "unit_number": 8,
+      "unit": "WARNA WARNI MALAYSIA",
+      "sp": [
+        "3.1.1",
+        "3.1.2"
+      ],
+      "page": "66-69",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 24,
+        "groupA": "04/07–08/07",
+        "groupB": "05/07–09/07"
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic/51-100",
+      "source_book_audio_numbers_printed": "Tiada nombor khusus untuk melodi ciptaan",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN6_DIINTEGRASI",
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
+    },
+    {
+      "pdp_id": "MZ-Y6-25",
+      "pdp": 25,
+      "slot_source": 27,
+      "unit_number": 9,
+      "unit": "KELESTARIAN ALAM",
+      "sp": [
+        "2.1.1",
+        "2.1.2",
+        "2.3.1"
+      ],
+      "page": "70-71",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 25,
+        "groupA": "11/07–15/07",
+        "groupB": "12/07–16/07"
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic/51-100",
+      "source_book_audio_numbers_printed": "121–123",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN6_DIINTEGRASI",
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
+    },
+    {
+      "pdp_id": "MZ-Y6-26",
+      "pdp": 26,
+      "slot_source": 28,
+      "unit_number": null,
+      "unit": "Projek Seni Muzik 2 — Perancangan",
+      "sp": [
+        "5.1.1",
+        "5.1.4"
+      ],
+      "page": "88-89",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 26,
+        "groupA": "18/07–22/07",
+        "groupB": "19/07–23/07"
+      },
+      "source_rpt_original_page": null,
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic/51-100",
+      "source_book_verification_level": "BUKU_ONLINE_PROJEK_RASMI_SEMAKAN_TEKSTUAL",
+      "project_book_evidence": true,
+      "source_book_audio_file_verified": false,
+      "source_book_audio_numbers_printed": "Tiada audio projek khusus; pilihan lagu perlu disahkan",
+      "validation_status": "DRAF_PROJEK_RASMI_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
+    },
+    {
+      "pdp_id": "MZ-Y6-27",
+      "pdp": 27,
+      "slot_source": 29,
+      "unit_number": null,
+      "unit": "Projek Seni Muzik 2 — Persembahan",
+      "sp": [
+        "5.1.2",
+        "5.1.3",
+        "5.1.4"
+      ],
+      "page": "88-89",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 27,
+        "groupA": "25/07–29/07",
+        "groupB": "26/07–30/07"
+      },
+      "source_rpt_original_page": null,
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic/51-100",
+      "source_book_verification_level": "BUKU_ONLINE_PROJEK_RASMI_SEMAKAN_TEKSTUAL",
+      "project_book_evidence": true,
+      "source_book_audio_file_verified": false,
+      "source_book_audio_numbers_printed": "Tiada audio projek khusus; pilihan lagu perlu disahkan",
+      "validation_status": "DRAF_PROJEK_RASMI_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
+    },
+    {
+      "pdp_id": "MZ-Y6-28",
+      "pdp": 28,
+      "slot_source": 30,
+      "unit_number": 9,
+      "unit": "KELESTARIAN ALAM",
+      "sp": [
+        "2.4.1",
+        "2.2.1",
+        "2.2.2"
+      ],
+      "page": "72-73",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 28,
+        "groupA": "01/08–05/08",
+        "groupB": "02/08–06/08"
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic/51-100",
+      "source_book_audio_numbers_printed": "124–128",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN6_DIINTEGRASI",
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL",
+      "source_book_scope_risk": "Sumber RPT menggabungkan beberapa bidang; padanan DSKP terhadap pergerakan/alat perkusi perlu disahkan."
+    },
+    {
+      "pdp_id": "MZ-Y6-29",
+      "pdp": 29,
+      "slot_source": 31,
+      "unit_number": 9,
+      "unit": "KELESTARIAN ALAM",
+      "sp": [
+        "2.4.1",
+        "2.4.2"
+      ],
+      "page": "74-77",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 29,
+        "groupA": "08/08–12/08",
+        "groupB": "09/08–13/08"
+      },
+      "source_book_text_crosscheck": true,
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic/51-100",
+      "source_book_audio_numbers_printed": "129–138",
+      "source_book_audio_file_verified": false,
+      "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
+      "rph_specificity_status": "TEKS_BUKU_TAHUN6_DIINTEGRASI",
+      "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL",
+      "source_book_scope_risk": "Sumber RPT menggabungkan beberapa bidang; padanan DSKP terhadap pergerakan/alat perkusi perlu disahkan."
+    },
+    {
+      "pdp_id": "MZ-Y6-30",
+      "pdp": 30,
+      "slot_source": 32,
+      "unit_number": 10,
+      "unit": "RINDU",
+      "sp": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "page": "78-79",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 30,
+        "groupA": "15/08–19/08",
+        "groupB": "16/08–20/08"
+      },
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic",
+      "source_book_audio_numbers_printed": "139–141",
+      "source_book_audio_file_verified": false,
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "BUKU_T6_ONLINE_TEKSTUAL_BUKAN_IMeJ_SIGNOFF",
+      "focus_pdp": "Rindu — nyanyian swing",
+      "rph_specificity_status": "TEKS_BUKU_T6_DISEMAK"
+    },
+    {
+      "pdp_id": "MZ-Y6-31",
+      "pdp": 31,
+      "slot_source": 33,
+      "unit_number": 10,
+      "unit": "RINDU",
+      "sp": [
+        "2.3.1"
+      ],
+      "page": "80-81",
+      "flags": [],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 31,
+        "groupA": "22/08–26/08",
+        "groupB": "23/08–27/08"
+      },
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic",
+      "source_book_audio_numbers_printed": "142",
+      "source_book_audio_file_verified": false,
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "BUKU_T6_ONLINE_TEKSTUAL_BUKAN_IMeJ_SIGNOFF",
+      "focus_pdp": "Rindu — pergerakan di tiga stesen",
+      "rph_specificity_status": "TEKS_BUKU_T6_DISEMAK"
+    },
+    {
+      "pdp_id": "MZ-Y6-32",
+      "pdp": 32,
+      "slot_source": 34,
+      "unit_number": 10,
+      "unit": "RINDU",
+      "sp": [
+        "2.4.1",
+        "2.4.2",
+        "2.2.1"
+      ],
+      "page": "82-84",
+      "flags": [
+        "RPT sumber contoh rekoder E–D’ sedangkan DSKP Tahun 6 merangkumi C–D’; jangan sempitkan julat DSKP"
+      ],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 32,
+        "groupA": "05/09–09/09",
+        "groupB": "06/09–10/09"
+      },
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic",
+      "source_book_audio_numbers_printed": "143–161",
+      "source_book_audio_file_verified": false,
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "BUKU_T6_ONLINE_TEKSTUAL_BUKAN_IMeJ_SIGNOFF",
+      "focus_pdp": "Rindu — rekoder C hingga D’ dan corak irama",
+      "rph_specificity_status": "TEKS_BUKU_T6_DISEMAK"
+    },
+    {
+      "pdp_id": "MZ-Y6-33",
+      "pdp": 33,
+      "slot_source": 35,
+      "unit_number": 10,
+      "unit": "RINDU",
+      "sp": [
+        "2.1.1",
+        "2.1.2",
+        "2.2.2",
+        "2.4.1",
+        "2.4.2"
+      ],
+      "page": "85-87",
+      "flags": [
+        "RPT sumber contoh rekoder E–D’ sedangkan DSKP Tahun 6 merangkumi C–D’; jangan sempitkan julat DSKP"
+      ],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 33,
+        "groupA": "12/09–16/09",
+        "groupB": "13/09–17/09"
+      },
+      "source_book_public_url": "https://anyflip.com/zcnoa/yxcj/basic",
+      "source_book_audio_numbers_printed": "162–167",
+      "source_book_audio_file_verified": false,
+      "source_book_text_crosscheck": true,
+      "source_book_verification_level": "BUKU_T6_ONLINE_TEKSTUAL_BUKAN_IMeJ_SIGNOFF",
+      "focus_pdp": "Rindu — ensembel nyanyian, rekoder dan perkusi",
+      "rph_specificity_status": "TEKS_BUKU_T6_DISEMAK"
+    },
+    {
+      "pdp_id": "MZ-Y6-34",
+      "pdp": 34,
+      "slot_source": 36,
+      "unit_number": null,
+      "unit": "Pengukuhan Akhir Tahun — Rekoder Ensemble (cadangan)",
+      "sp": [
+        "2.4.1",
+        "2.4.2"
+      ],
+      "page": null,
+      "flags": [
+        "RPT sumber lama menamakan Projek Seni Muzik 3, tetapi DSKP Tahun 6 menyatakan dua projek setahun. PdP ini cadangan tambahan, bukan projek rasmi."
+      ],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 34,
+        "groupA": "19/09–23/09",
+        "groupB": "20/09–24/09"
+      },
+      "source_rpt_original_unit": "Projek Seni Muzik 3 — Perancangan",
+      "source_rpt_original_sp": [
+        "5.1.1",
+        "5.1.2"
+      ],
+      "pdp_kind": "CADANGAN_PENGUKUHAN_BUKAN_PROJEK_RASMI",
+      "source_rpt_project3_conflict": true,
+      "validation_status": "DRAF_CADANGAN_NONOFFICIAL_DIULANGKAJI_STRUKTUR; BUKAN_FINAL",
+      "reinforcement_specificity_reviewed": true,
+      "reinforcement_review_scope": "CADANGAN_GURU_AKTIVITI_KHUSUS_SAHAJA; BUKAN_BUKU_TEKS_RASMI_DSKP_DILULUSKAN",
+      "reinforcement_prior_unit_reference": "Muzik Tahun 6",
+      "source_book_audio_file_verified": false
+    },
+    {
+      "pdp_id": "MZ-Y6-35",
+      "pdp": 35,
+      "slot_source": 37,
+      "unit_number": null,
+      "unit": "Penilaian dan Refleksi Akhir — Muzik Klasik Barat (cadangan)",
+      "sp": [
+        "4.1.1",
+        "4.1.2"
+      ],
+      "page": null,
+      "flags": [
+        "RPT sumber lama menamakan Projek Seni Muzik 3, tetapi DSKP Tahun 6 menyatakan dua projek setahun. PdP ini cadangan tambahan, bukan projek rasmi."
+      ],
+      "source_type": "RPT_2025_26_PUBLIC_PARTIAL_TRANSCRIPTION",
+      "status": "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL",
+      "rpt2027_slot": {
+        "week": 35,
+        "groupA": "26/09–30/09",
+        "groupB": "27/09–01/10"
+      },
+      "source_rpt_original_unit": "Projek Seni Muzik 3 — Persembahan",
+      "source_rpt_original_sp": [
+        "5.1.3",
+        "5.1.4"
+      ],
+      "pdp_kind": "CADANGAN_PENGUKUHAN_BUKAN_PROJEK_RASMI",
+      "source_rpt_project3_conflict": true,
+      "validation_status": "DRAF_CADANGAN_NONOFFICIAL_DIULANGKAJI_STRUKTUR; BUKAN_FINAL",
+      "reinforcement_specificity_reviewed": true,
+      "reinforcement_review_scope": "CADANGAN_GURU_AKTIVITI_KHUSUS_SAHAJA; BUKAN_BUKU_TEKS_RASMI_DSKP_DILULUSKAN",
+      "reinforcement_prior_unit_reference": "Muzik Tahun 6",
+      "source_book_audio_file_verified": false
+    }
+  ],
+  "dskp_projects_per_year": 2,
+  "deprecated_project3_reclassified_count": 2,
+  "partial_textbook_crosscheck_count": 33,
+  "source_textbook_url": "https://anyflip.com/zcnoa/yxcj/basic",
+  "source_textbook_edition": "DBP 2021 KSSR Semakan 2017"
+}
