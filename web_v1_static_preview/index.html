@@ -81,7 +81,7 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 @media print{
  #workspace > .app-shell:not(#rph-preview-panel){display:block!important}
  #workspace .app-main,#workspace #view-rph{display:block!important;border:0!important;box-shadow:none!important;padding:0!important;margin:0!important}
- #workspace .app-sidebar,#workspace #view-rpt,#workspace #view-account,#workspace #view-payment,#workspace #view-guide{display:none!important}
+ #workspace .app-sidebar,#workspace #view-rpt,#workspace #view-account,#workspace #view-payment,#workspace #view-referral,#workspace #view-guide{display:none!important}
  #workspace #view-rph > *:not(#rph-preview-panel){display:none!important}
 }
 
@@ -271,7 +271,8 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
     <button type="button" class="sidebar-tab" data-web-view="rpt" aria-controls="view-rpt"><span aria-hidden="true">📅</span> RPT 2027</button>
     <button type="button" class="sidebar-tab" data-web-view="account" aria-controls="view-account"><span aria-hidden="true">👤</span> Profil &amp; Akses</button>
     <button type="button" class="sidebar-tab" data-web-view="payment" aria-controls="view-payment"><span aria-hidden="true">🏆</span> Rakan Pembangun</button>
-    <button type="button" class="sidebar-tab" data-web-view="guide" aria-controls="view-guide"><span aria-hidden="true">📖</span> Panduan</button>
+    <button type="button" class="sidebar-tab" data-web-view="referral" aria-controls="view-referral"><span aria-hidden="true">🎁</span> Referral Saya</button>
+     <button type="button" class="sidebar-tab" data-web-view="guide" aria-controls="view-guide"><span aria-hidden="true">📖</span> Panduan</button>
   </nav>
   <button id="logout" type="button" class="sidebar-logout">Log keluar</button>
 </aside>
@@ -332,6 +333,17 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </div>
 </section>
 <p class="notice">RPT memerlukan Rakan Pembangun atau langganan aktif. RPH mempunyai 10 janaan percuma yang dikongsi bersama Telegram.</p>
+</section>
+<section id="view-referral" class="app-view" aria-labelledby="view-referral-heading" hidden>
+ <h2 id="view-referral-heading">🎁 Referral Saya</h2>
+ <p>Program referral tertutup CikguLaju. Link ini terus membawa rakan ke Web dan kod jemputan dikekalkan semasa log masuk Telegram.</p>
+ <p id="web-referral-status" role="status" aria-live="polite">Menyemak status referral…</p>
+ <div id="web-referral-details" hidden>
+  <label for="web-referral-link">Pautan Referral Web</label>
+  <input id="web-referral-link" type="text" readonly style="width:100%;padding:12px;border:1px solid #c4d7e2;border-radius:10px;font:inherit" />
+  <div class="profile-actions"><button type="button" id="web-referral-copy">📋 Salin Pautan</button><button type="button" id="web-referral-share">📤 Kongsi Pautan</button></div>
+  <p>Rakan mendaftar: <strong id="web-referral-signups">0</strong> · Bayaran layak: <strong id="web-referral-paid">0</strong> · Mata: <strong id="web-referral-points">0.00</strong></p>
+ </div>
 </section>
 <section id="view-payment" class="app-view" aria-labelledby="view-payment-heading" hidden>
 <h2 id="view-payment-heading">🏆 Rakan Pembangun</h2>
@@ -417,7 +429,7 @@ function canGenerateRph(){
   (rphAccessMode==="trial"&&rphTrialRemaining!==null&&rphTrialRemaining>0);
 }
 const webViewButtons=Array.from(document.querySelectorAll("[data-web-view]"));
-const webViews=new Map([["rph","view-rph"],["rpt","view-rpt"],["account","view-account"],["payment","view-payment"],["guide","view-guide"]]);
+const webViews=new Map([["rph","view-rph"],["rpt","view-rpt"],["account","view-account"],["payment","view-payment"],["referral","view-referral"],["guide","view-guide"]]);
 function showWebView(name){
  if(!webViews.has(name))return;
  for(const [key,id] of webViews){
@@ -792,5 +804,6 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 </script>
 <script src="/assets/teacher-profile.js?v=payment-refresh-20261105"></script>
 <script src="/assets/web-payment.js?v=rakan-only-percent-20261106"></script>
+<script src="/assets/web-referral.js?v=20261106"></script>
 </body>
 </html>
