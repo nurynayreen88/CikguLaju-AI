@@ -14,7 +14,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan gambar dan kalendar perayaan masyarakat Malaysia yang berlainan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 6: Perayaan Masyarakat di Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 94–96: Perayaan utama masyarakat Malaysia mengikut komuniti dan. Murid mengelaskan perayaan utama mengikut komuniti yang menyambutnya tanpa menyamaratakan semua individu. Guru menyemak jawapan awal berpandukan 11.3.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 94–96: Perayaan utama masyarakat Malaysia mengikut komuniti dan tradisi. Murid mengelaskan perayaan utama mengikut komuniti yang menyambutnya tanpa menyamaratakan semua individu. Guru menyemak jawapan awal berpandukan 11.3.1.
 
 **Aktiviti 2 (20 min):** Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 94–96. Murid menghasilkan kalendar perayaan berserta penjelasan sumber tarikh yang boleh berubah. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan sambutan perayaan dalam keluarga.
 
