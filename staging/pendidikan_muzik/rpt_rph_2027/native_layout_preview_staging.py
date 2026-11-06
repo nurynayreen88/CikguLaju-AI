@@ -165,7 +165,8 @@ def build_staging_preview(root, year, pdp):
         warnings.append("NO_EXPLICIT_SUCCESS_CRITERIA")
         if drafted:
             warnings.append("EDITORIAL_TEXT_REVIEW_PASSED_SCORE_PENDING")
-    if not row.get("source_book_text_crosscheck", False):
+    if not (row.get("source_book_text_crosscheck") is True
+            or row.get("source_book_content_page_checked") is True):
         warnings.append("TEXTBOOK_NOT_FULLY_CROSSCHECKED_OR_NONOFFICIAL")
     return {
         "subject": "MUZIK", "year": year, "pdp": pdp,
