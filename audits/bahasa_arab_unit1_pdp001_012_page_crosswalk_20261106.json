@@ -15,7 +15,11 @@
       "010",
       "011"
     ],
-    "year6": "Sources must be correct four-unit DBP/KPM 2021 ebook; original page images not fully reviewed. The older 6-unit Drive PDF is prohibited."
+    "year6": "Sources must be correct four-unit DBP/KPM 2021 ebook; original page images not fully reviewed. The older 6-unit Drive PDF is prohibited.",
+    "year2_candidate_sp_corrections": {
+      "010": "2.3.1 → 2.3.5 (word reading; book p9–11)",
+      "011": "3.3.1 → 3.4.1 (phrase copying; book p17)"
+    }
   },
   "teacher_approved": 0,
   "final_ready": 0,
@@ -126,7 +130,7 @@
     {
       "tahun": "2",
       "pdp": "010",
-      "sp": "2.3.1",
+      "sp": "2.3.5",
       "halaman_buku_teks_dicadang": "9–11",
       "audit_file": "audits/bahasa_arab_y2_pdp001_012_text_source_audit_20261106.json",
       "source_level": "TEKS_BUKU_SP_PRINT_4_KES_BELUM_JELAS",
@@ -137,7 +141,7 @@
     {
       "tahun": "2",
       "pdp": "011",
-      "sp": "3.3.1",
+      "sp": "3.4.1",
       "halaman_buku_teks_dicadang": "17",
       "audit_file": "audits/bahasa_arab_y2_pdp001_012_text_source_audit_20261106.json",
       "source_level": "TEKS_BUKU_SP_PRINT_4_KES_BELUM_JELAS",

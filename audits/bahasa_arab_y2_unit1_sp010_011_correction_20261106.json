@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-06",
+  "scope": "Bahasa Arab Tahun 2 Unit 1 PdP010 and PdP011",
+  "state": "CANDIDATE_CORRECTION_REVIEW_REQUIRED",
+  "source_textbook": {
+    "title": "Buku Teks Bahasa Arab Tahun 2 KSSR Semakan 2017 DBP/KPM 2017",
+    "isbn": "978-983-49-1589-6",
+    "url": "https://anyflip.com/slrpb/qzcr/basic",
+    "pages": [
+      9,
+      10,
+      11,
+      17
+    ]
+  },
+  "reference_dpk": {
+    "title": "KPM Dokumen Penjajaran Kurikulum 2.0 Bahasa Arab Tahun 2 Edisi 2",
+    "url": "https://www.tcer.my/wp-content/uploads/2021/01/4_DPK_Bahasa-Arab-KSSR-Tahun-2-Edisi-2-1.pdf",
+    "note": "Supports skill meaning; original DSKP printed page visuals still pending."
+  },
+  "corrections": [
+    {
+      "pdp": "010",
+      "old_sk": "2.3",
+      "old_sp": "2.3.1",
+      "new_sk": "2.3",
+      "new_sp": "2.3.5",
+      "book_pages": "9–11",
+      "reason": "2.3.1 concerns syllable reading; 2.3.5 concerns reading words; exercise objective is word reading."
+    },
+    {
+      "pdp": "011",
+      "old_sk": "3.3",
+      "old_sp": "3.3.1",
+      "new_sk": "3.4",
+      "new_sp": "3.4.1",
+      "book_pages": "17",
+      "reason": "3.3.1 copy words; 3.4.1 copy short phrases; p17 exercise is copying introduction phrases, so objective and teacher/pupil activities revised accordingly."
+    }
+  ],
+  "synchronized": [
+    "RPH Markdown PdP010/011",
+    "primary PdP001–012 CSV",
+    "RPT A/B 2027 crosswalk",
+    "Year2 source audit",
+    "crosswalk provenance audit",
+    "staging structural test"
+  ],
+  "printed_code_visual_verified": false,
+  "teacher_approved": false,
+  "final_ready": false,
+  "release_authorized": false,
+  "production_db_touched": false,
+  "telegram_live_touched": false,
+  "web_live_touched": false,
+  "uncertainties": [
+    "Print page codes are distorted by OCR/bidirectional text; full-resolution source image remains unchecked.",
+    "Standalone RPT2027 time allocation and lesson chronology not yet approved.",
+    "Arabic proofreading and teacher approval remain outstanding."
+  ]
+}

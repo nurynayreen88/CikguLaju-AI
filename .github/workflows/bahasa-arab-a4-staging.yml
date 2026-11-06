@@ -7,6 +7,11 @@ on:
       - "rph_standalone/bahasa_arab/**"
       - "scripts/render_bahasa_arab_staging.py"
       - ".github/workflows/bahasa-arab-a4-staging.yml"
+  pull_request:
+    paths:
+      - 'rph_standalone/bahasa_arab/**'
+      - 'scripts/render_bahasa_arab_staging.py'
+      - '.github/workflows/bahasa-arab-a4-staging.yml'
   workflow_dispatch:
 
 jobs:
