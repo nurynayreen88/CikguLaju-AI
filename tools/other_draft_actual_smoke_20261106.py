@@ -18,6 +18,14 @@ from web.telegram_provisional_arab_music_api import (
 
 
 def main():
+    from pathlib import Path
+    entry=(Path(__file__).resolve().parents[1]/
+           "tools/run_telegram_with_curriculum_api.py").read_text("utf8")
+    assert entry.count("create_provisional_subjects_blueprint(telegram_runtime)")==1
+    assert "OTHER_SUBJECTS_DRAFT_READER_REGISTERED = False" in entry
+    assert "CIKGULAJU_DB_PATH =" not in (
+        entry.split("# Bahasa Arab + Pendidikan Muzik DRAF:")[1]
+             .split("# Private source-matched RPT")[0])
     for y,count in {2:60,3:60,4:58,5:60,6:60}.items():
         unit=_unit_rows(y,"ARAB")
         assert len(unit)==4
