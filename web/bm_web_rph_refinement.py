@@ -106,6 +106,9 @@ def _family(sp_text):
     s = " ".join(str(sp_text or "").lower().split())
     if not s:
         return None
+    if any(v in s for v in ("mencatat maklumat", "menyusun dan mencatat",
+                            "membanding beza dan mencatat", "menjana idea berdasarkan bahan")):
+        return "mencatat"
     if any(v in s for v in ("imlak", "dikte")):
         return "imlak"
     if any(v in s for v in ("mengedit", "menyunting", "membetulkan kesalahan")):
@@ -124,10 +127,13 @@ def _family(sp_text):
                             "menceritakan", "bercerita", "berbual")):
         return "bertutur"
     if any(v in s for v in ("pantun", "sajak", "syair", "gurindam", "mendeklamasi",
-                            "seni bahasa")):
+                            "seni bahasa", "puisi", "seloka", "seni kata lagu",
+                            "menyanyikan lagu", "melagukan", "mengubah suai cerita",
+                            "mempersembahkan karya", "lirik lagu")):
         return "seni bahasa"
     if any(v in s for v in ("kata nama", "kata kerja", "kata adjektif",
-                            "kata sendi", "kata ganda", "imbuhan", "tatabahasa",
+                            "kata sendi", "kata ganda", "kata majmuk",
+                            "imbuhan", "tatabahasa", "pelbagai jenis ayat",
                             "membina ayat berdasarkan")):
         return "tatabahasa"
     return None
@@ -172,6 +178,100 @@ def _task(family, topic, reference, sp_text=""):
             "Murid bercerita atau mengujarkan dialog kepada kelas dengan "
             "sekurang-kurangnya satu peribahasa yang digunakan secara tepat. "
             "Guru menilai isi, maksud peribahasa dan penyampaian."
+        )
+    if family == "mencatat":
+        return (
+            f"Guru memaparkan bahan sebenar bertajuk {t}{source}. Murid "
+            "mengenal pasti butiran penting dan membezakan maklumat utama "
+            "daripada contoh atau huraian sampingan.",
+            "Murid menyusun isi daripada sumber ke dalam catatan berstruktur "
+            "seperti jadual atau peta maklumat yang sesuai dengan kehendak "
+            "SP. Pasangan menyemak maklumat agar tidak mengubah maksud asal.",
+            "Murid mencatat sekurang-kurangnya tiga maklumat penting daripada "
+            "bahagian bahan yang belum dibincangkan; guru menilai ketepatan, "
+            "susunan isi dan kesetiaan terhadap sumber."
+        )
+    if family == "bertutur" and "tersurat" in low_sp and "tersirat" in low_sp:
+        return (
+            f"Guru memperdengarkan atau memaparkan situasi dalam {t}{source}. "
+            "Murid menyatakan maklumat yang disebut secara jelas, kemudian "
+            "menerangkan petunjuk bagi maklumat tersirat.",
+            "Secara berpasangan murid membanding beza dua maklumat atau "
+            "situasi daripada bahan; mereka menjelaskan persamaan, perbezaan "
+            "dan alasan yang disokong petunjuk.",
+            "Murid menerangkan satu maklumat tersurat dan satu maklumat "
+            "tersirat secara individu dengan alasan yang munasabah. "
+            "Guru menilai ketepatan perbandingan dan penyampaian lisan."
+        )
+    if family == "seni bahasa" and "mengubah suai" in low_sp:
+        if "puisi" in low_sp:
+            return (
+                f"Guru membimbing murid membaca puisi sebenar daripada "
+                f"bahan {t}{source} dan mengenal pasti tema, diksi serta maksud.",
+                "Murid mengubah suai beberapa perkataan atau larik puisi "
+                "secara berpandu sambil mengekalkan maksud yang sesuai; "
+                "pasangan menyemak kelancaran dan kesantunan bahasa.",
+                "Murid mempersembahkan puisi yang telah diubah suai dan "
+                "menerangkan satu pilihan kata. Guru menilai kreativiti "
+                "serta kesesuaian maksud."
+            )
+        if "cerita" in low_sp:
+            return (
+                f"Guru memilih cerita daripada bahan {t}{source}; murid "
+                "mengenal pasti watak, peristiwa dan pengajaran asal.",
+                "Secara berpasangan murid mengubah suai dialog atau bahagian "
+                "peristiwa secara berpandu tanpa menghilangkan urutan cerita, "
+                "kemudian menyemak bahasa yang digunakan.",
+                "Murid mempersembahkan hasil olahan cerita dengan sebutan "
+                "yang jelas dan menjelaskan perubahan yang dibuat."
+            )
+        if "lagu" in low_sp:
+            return (
+                f"Guru memperdengarkan lagu daripada bahan {t}{source}; murid "
+                "mengenal pasti tema, maksud dan pilihan kata dalam lirik.",
+                "Murid mengubah suai seni kata terpilih mengikut pola irama "
+                "asal menggunakan diksi yang sesuai; kumpulan menguji "
+                "kelancaran sebutan ketika menyanyikan baris baharu.",
+                "Kumpulan mempersembahkan seni kata yang diolah dan "
+                "menerangkan maksudnya; guru menilai diksi, sebutan dan gaya."
+            )
+    if family == "seni bahasa" and ("menyanyikan" in low_sp or "lagu" in low_sp):
+        return (
+            f"Guru memperdengarkan lagu yang berkaitan dengan {t}{source}; "
+            "murid mengenal pasti kata dan maksud lirik sebelum latihan sebutan.",
+            "Murid menyanyikan lagu secara berkumpulan mengikut irama, "
+            "sebutan serta intonasi yang sesuai; mereka melakukan aksi "
+            "yang benar-benar sepadan dengan makna lirik.",
+            "Murid menyampaikan sebahagian lagu dan menjelaskan satu "
+            "maksud atau pengajaran daripada lirik; guru menilai penghayatan."
+        )
+    if family == "seni bahasa" and "seloka" in low_sp:
+        return (
+            f"Guru memperdengarkan seloka dalam bahan {t}{source}; "
+            "murid meneliti maksud dan nada yang sepadan dengan pengajaran.",
+            "Murid berlatih melafazkan dan melagukan seloka dengan nada, "
+            "sebutan serta jeda yang sesuai secara berpasangan.",
+            "Murid mempersembahkan seloka secara individu dan menyatakan "
+            "satu pengajaran berdasarkan rangkap sebenar."
+        )
+    if family == "tatabahasa" and "kata majmuk" in low_sp:
+        return (
+            f"Guru memperlihatkan contoh kata majmuk daripada bahan {t}{source}; "
+            "murid mengenal pasti gabungan kata serta maksud dalam konteks.",
+            "Pasangan mengelaskan contoh kata majmuk dan membina ayat "
+            "mengikut konteks bahan. Guru membimbing pembetulan ejaan "
+            "serta penggunaan yang kurang sesuai.",
+            "Murid membina sekurang-kurangnya tiga ayat menggunakan kata "
+            "majmuk yang betul; guru menilai ketepatan maksud dan ejaan."
+        )
+    if family == "tatabahasa" and "jenis ayat" in low_sp:
+        return (
+            f"Guru memaparkan beberapa jenis ayat yang benar-benar muncul "
+            f"dalam bahan {t}{source}; murid menentukan tujuan setiap ayat.",
+            "Pasangan membandingkan bentuk ayat dan membina contoh baharu "
+            "mengikut konteks, kemudian menyemak tanda baca dan struktur.",
+            "Murid membina tiga ayat daripada jenis yang dipelajari "
+            "serta memberikan sebab pilihan ayat; guru merekod penguasaan."
         )
     if family == "imlak":
         return (
@@ -270,6 +370,13 @@ def _confirmed_families(state):
         if not code or not desc:
             continue
         fam = _family(desc)
+        # Only Bahasa Melayu verified SK 1.x denotes oral communication.
+        # SP 1.2.2 requests explaining/comparing implicit/explicit facts,
+        # without necessarily containing the verb "bertutur".
+        if (not fam and str(rec.get("sk_code") or "").startswith("1.")
+                and ("menjelaskan" in desc.casefold()
+                     or "membanding beza" in desc.casefold())):
+            fam = "bertutur"
         if fam and fam not in found:
             found.append(fam)
     return tuple(found[:2])
