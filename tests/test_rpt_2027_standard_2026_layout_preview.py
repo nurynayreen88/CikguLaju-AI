@@ -63,7 +63,7 @@ class RPT2026LayoutQA(unittest.TestCase):
                     for head in ("MINGGU / TARIKH","SK",
                                  "SP","CATATAN / BAHAN"):
                         self.assertIn(head,body)
-                    numbers=[int(v) for v in re.findall(r"PdP\s+(\d{3})",body)]
+                    numbers=[int(v) for v in re.findall(r"(?m)^\s*PdP\s+(\d{3})\s*$",body)]
                     self.assertEqual(numbers,list(range(1,count+1)),
                                      f"{subject} {year} missing/mixed PdP")
                     if subject=="rbt":
