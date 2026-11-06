@@ -38,17 +38,18 @@ class TestSains80Queue(unittest.TestCase):
         self.assertEqual(queue[-1]["tahun"], 3)
         self.assertTrue(all(x["teacher_signoff"] == "MISSING" for x in queue))
 
-    def test_generated_stage_130_not_approved_and_167_pending(self):
+    def test_generated_stage_213_not_approved_and_84_pending(self):
         rows=staged_fixture()
         generated={
             2:{f"SCI-Y2-PDP-{i:03d}" for i in range(1,52)},
             4:{f"SCI-Y4-PDP-{i:03d}" for i in range(1,80)},
+            5:{f"SCI-Y5-PDP-{i:03d}" for i in range(1,84)},
         }
         queue=build_queue(rows,generated=generated)
         self.assertEqual(sum(r["source_status"].startswith("STAGING_STANDALONE")
-                             for r in queue),130)
+                             for r in queue),213)
         self.assertEqual(sum(r["source_status"]=="NO_INDIVIDUALLY_AUDITED_STANDALONE_RPH"
-                             for r in queue),167)
+                             for r in queue),84)
         self.assertTrue(all(r["quality_percent"]=="" for r in queue))
         self.assertTrue(all(r["teacher_signoff"]=="MISSING" for r in queue))
 
