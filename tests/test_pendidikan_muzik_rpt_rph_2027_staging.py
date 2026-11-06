@@ -15,6 +15,58 @@ REQUIRED = (
 
 
 class MusicRPTAndRPHStagingQA(unittest.TestCase):
+    def test_original_google_drive_audio_links_are_source_only_and_fail_closed(self):
+        """617 exact source URLs; no bot download, no guessed PdP track choices."""
+        from staging.pendidikan_muzik.rpt_rph_2027 import external_audio_links_staging as audio
+
+        total_files = 0
+        eligible_pdps = 0
+        for year, expected in audio.AUDIO_COUNTS.items():
+            path = MUSIC / "rpt_rph_2027" / f"audio_source_index_year{year}_20261106.json"
+            catalog = json.loads(path.read_text(encoding="utf-8"))
+            self.assertEqual(catalog["year"], year)
+            self.assertEqual(catalog["scope"], "EXTERNAL_SOURCE_LINKS_ONLY")
+            self.assertFalse(catalog["access_verified"])
+            self.assertFalse(catalog["audio_content_verified"])
+            self.assertFalse(catalog["redistribution_permitted"])
+            self.assertEqual(len(catalog["files"]), expected)
+            total_files += len(catalog["files"])
+            self.assertIsNotNone(audio._source_catalog(year))
+            for pdp in range(1, 36):
+                result = audio.audio_link_action(year, pdp)
+                self.assertFalse(result["download_available"])
+                self.assertTrue(result["available"] == bool(result["links"]))
+                if result["available"]:
+                    eligible_pdps += 1
+                    self.assertEqual(result["button_label"], "Buka Audio Sumber")
+                for item in result["links"]:
+                    self.assertEqual(item["status"], audio.SOURCE_STATUS)
+                    self.assertFalse(item["download_available"])
+                    self.assertTrue(item["url"].startswith(
+                        "https://drive.google.com/file/d/" + item["file_id"] + "/view"
+                    ))
+                    self.assertNotIn("export=download", item["url"])
+                    self.assertNotIn("/uc?id=", item["url"])
+        self.assertEqual(total_files, 617)
+        self.assertGreater(eligible_pdps, 95)
+        self.assertLess(eligible_pdps, 175)
+        self.assertEqual(
+            [link["track"] for link in audio.links_for_pdp(4, 6)],
+            [12, 13, 14, 15, 16],
+        )
+        self.assertEqual(
+            [link["track"] for link in audio.links_for_pdp(5, 12)],
+            [61, 62, 63],
+        )
+        self.assertEqual(len(audio.links_for_pdp(6, 1)), 10)
+        self.assertEqual(audio.links_for_pdp(2, 3), [])
+        self.assertEqual(audio.links_for_pdp(1, 1), [])
+        self.assertEqual(audio.links_for_pdp(4, 36), [])
+        self.assertEqual(audio.numbers_from_printed_reference("5 atau 8"), ())
+        self.assertEqual(audio.numbers_from_printed_reference("22 / 24–26"), ())
+        self.assertEqual(audio.numbers_from_printed_reference("36.1"), ())
+        self.assertEqual(audio.numbers_from_printed_reference("12–16"), (12, 13, 14, 15, 16))
+
     def test_music_native_route_candidate_source_identity_and_access_gate(self):
         """Candidate uses existing native rows, never bypasses release parity."""
         import os
@@ -87,6 +139,17 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
                 ns["_rph_rows"](state)
             self.assertEqual(ns["callback"](42, "muzik27pick|3|06"), "SENT")
             self.assertEqual(ns["callback"](42, "muzik27page|4|1"), "SENT")
+            # Separate original-source viewer, never a native media download.
+            self.assertEqual(ns["callback"](42, "muzik27audio|4|06|0"), "SENT")
+            audio_buttons = [item for group in sends[-1][2] for item in group if "url" in item]
+            self.assertEqual(len(audio_buttons), 5)
+            self.assertTrue(all(item["url"].startswith("https://drive.google.com/file/d/")
+                                and "/view" in item["url"] for item in audio_buttons))
+            self.assertIn("belum disahkan", sends[-1][1])
+            self.assertEqual(ns["callback"](42, "muzik27audio|4|06|9"), "SENT")
+            self.assertIn("Halaman audio tidak sah", sends[-1][1])
+            self.assertEqual(ns["callback"](42, "muzik27audio|3|06|0"), "SENT")
+            self.assertIn("tidak sepadan", sends[-1][1])
         # The old subject path and Year 1 route remain delegated.
         self.assertEqual(ns["callback"](42, "totally_other_event"), "ORIGINAL")
 
