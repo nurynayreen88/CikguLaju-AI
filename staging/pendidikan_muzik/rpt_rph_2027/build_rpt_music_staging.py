@@ -85,8 +85,10 @@ def make_rpt(year: int) -> tuple[Path, Path]:
         sp_codes = [p.strip() for p in pick(row, "sp").split(";") if p.strip()]
         sk_codes = list(dict.fromkeys(("3.1" if code.startswith("3.2.") else "4.1" if code == "4.2.1" else ".".join(code.split(".")[:2])) if year == 4 else ".".join(code.split(".")[:2]) for code in sp_codes))
         values = [
-            f"{idx:02d}", pick(row, "slot_a"), pick(row, "slot_b"),
-            pick(row, "unit") + ("  [ANJAL]" if idx in (6, 19) else ""),
+            f"{idx:02d}",
+            "ANJAL — TARIKH GURU" if idx in (6, 19) else pick(row, "slot_a"),
+            "ANJAL — TARIKH GURU" if idx in (6, 19) else pick(row, "slot_b"),
+            pick(row, "unit") + ("  [TIADA HARI PdP DALAM SLOT]" if idx in (6, 19) else ""),
             "SK: " + ", ".join(sk_codes) + "\nSP: " + ", ".join(sp_codes),
             pick(row, "book") or "-",
         ]
@@ -114,6 +116,12 @@ def make_rpt(year: int) -> tuple[Path, Path]:
     doc.save(docx)
     back = Document(docx)
     assert len(back.tables) == 1 and len(back.tables[0].rows) == 36
+    # A/B week indices are retained in source CSV, not falsely shown as teachable days.
+    for pdp in (6, 19):
+        cells = back.tables[0].rows[pdp].cells
+        assert all("ANJAL" in cells[col].text and "07/02" not in cells[col].text
+                   and "16/05" not in cells[col].text for col in (1, 2))
+        assert "TIADA HARI PdP" in cells[3].text
 
     command = [
         "libreoffice", "-env:UserInstallation=file:///tmp/muzik_rpt_lo_profile",
