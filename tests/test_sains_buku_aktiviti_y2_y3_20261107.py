@@ -29,9 +29,9 @@ class TestSainsYear2Year3ActivityBook(unittest.TestCase):
         self.assertIn("Berat",x["activity_title"])
         self.assertEqual(x["workbook_printed_sp_codes"],["3.1.3"])
         self.assertTrue(is_direct_sp_match(x))
-        self.assertFalse(is_direct_sp_match(activity_for(2,"SCI-Y2-PDP-009","4.1.7")))
+        self.assertFalse(is_direct_sp_match(activity_for(2,"SCI-Y2-PDP-010","4.1.7")))
         self.assertFalse(is_direct_sp_match(activity_for(2,"SCI-Y2-PDP-022","6.1.6")))
-        self.assertIn("JANGAN",activity_note(activity_for(2,"SCI-Y2-PDP-009","4.1.7"),2))
+        self.assertIn("JANGAN",activity_note(activity_for(2,"SCI-Y2-PDP-010","4.1.7"),2))
         self.assertEqual(activity_for(2,"SCI-Y2-PDP-051","10.1.6")["workbook_printed_page"],84)
         with self.assertRaises(ValueError):
             activity_for(2,"SCI-Y2-PDP-003","3.1.2")
@@ -40,8 +40,8 @@ class TestSainsYear2Year3ActivityBook(unittest.TestCase):
         self.assertEqual(activity_for(2,"SCI-Y2-PDP-016","5.1.6")["workbook_printed_page"],36)
         self.assertEqual(activity_for(2,"SCI-Y2-PDP-029","7.1.7")["workbook_printed_page"],54)
         self.assertEqual(activity_for(2,"SCI-Y2-PDP-034","8.1.5")["workbook_printed_page"],62)
-        self.assertEqual(activity_for(2,"SCI-Y2-PDP-043","9.2.3")["workbook_printed_page"],73)
-        self.assertEqual(activity_for(2,"SCI-Y2-PDP-046","9.2.6")["workbook_printed_page"],72)
+        self.assertEqual(activity_for(2,"SCI-Y2-PDP-042","9.2.3")["workbook_printed_page"],73)
+        self.assertEqual(activity_for(2,"SCI-Y2-PDP-045","9.2.6")["workbook_printed_page"],72)
         self.assertEqual(activity_for(3,"SCI-Y3-PDP-008","3.2.3")["workbook_printed_page"],30)
         self.assertEqual(activity_for(3,"SCI-Y3-PDP-027","6.1.7")["workbook_printed_page"],59)
 
