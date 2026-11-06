@@ -150,6 +150,8 @@ def install(ns, *, enabled=None, root=ROOT):
             return send(cid,"Bahan RBT belum tersedia.")
         keyboard=[[{"text":label[:62],"callback_data":f"rbt27u|{u:02d}"}]
                   for u,label in units]
+        keyboard.append([{"text":"📅 RPT RBT 2027 (PDF • DRAF)",
+                          "callback_data":f"rbt27rpt|{y}"}])
         keyboard.append([{"text":"⬅️ Tukar subjek","callback_data":"back_subjects"}])
         return send(cid,f"🛠 <b>RBT Tahun {y} (2027)</b>\nPilih Unit dan PdP. Bahan masih DRAF untuk semakan.",keyboard)
 
