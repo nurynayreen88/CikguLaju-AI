@@ -91,7 +91,7 @@ def week_merge_ranges(records):
     return ranges
 
 
-def build_preview(subject, year, records, destination):
+def build_preview(subject, year, records, destination, *, logo_path=None, school_name="", teacher_name=""):
     """Create compact, multi-page landscape PDF using only trusted row content.
 
     One 5-column table: MINGGU/TARIKH | UNIT/TAJUK/PDp | SK | SP | CATATAN.
@@ -103,7 +103,7 @@ def build_preview(subject, year, records, destination):
     from reportlab.pdfbase import pdfmetrics
     from reportlab.pdfbase.ttfonts import TTFont
     from reportlab.platypus import (
-        LongTable, PageBreak, Paragraph, SimpleDocTemplate, Spacer, Table,
+        Image, LongTable, PageBreak, Paragraph, SimpleDocTemplate, Spacer, Table,
         TableStyle
     )
 
@@ -128,11 +128,11 @@ def build_preview(subject, year, records, destination):
     lm, rm = 29, 29
     usable = w - lm - rm
 
-    def p(text, *, size=7.5, leading=11.3, strong=False, color="#263b4e"):
+    def p(text, *, size=7.5, leading=11.3, strong=False, color="#263b4e", center=False):
         style = ParagraphStyle(
             "rpt", fontName=bold if strong else font,
             fontSize=size, leading=leading, textColor=colors.HexColor(color),
-            wordWrap="CJK", spaceBefore=0, spaceAfter=0
+            wordWrap="CJK", spaceBefore=0, spaceAfter=0, alignment=1 if center else 0
         )
         return Paragraph(escape(str(text or "")).replace("\n", "<br/>"), style)
 
@@ -168,38 +168,65 @@ def build_preview(subject, year, records, destination):
         canvas.drawRightString(w-rm, 20, f"Halaman {doc.page}")
         canvas.restoreState()
 
-    cover = [
-        Spacer(1, 40),
-        p("RANCANGAN PENGAJARAN TAHUNAN", size=21, leading=29, strong=True),
-        Spacer(1, 10),
-        p(f"{SUBJECTS[subject]}  |  TAHUN {year}", size=16, leading=24, strong=True),
-        Spacer(1, 7),
-        p("TAHUN PERSEKOLAHAN 2027  •  KUMPULAN A & KUMPULAN B",
-          size=10, leading=17, strong=True),
-        Spacer(1, 22),
-    ]
-    fields = ["NAMA SEKOLAH", "ALAMAT SEKOLAH", "NAMA GURU", "KELAS", "NEGERI / KUMPULAN"]
-    cover_rows = [[p(label, size=9, leading=15, strong=True),
-                   p("__________________________________________________", size=9, leading=15)]
-                  for label in fields]
-    form = Table(cover_rows, colWidths=[167, usable - 167], rowHeights=[36]*len(fields))
-    form.setStyle(TableStyle([
-        ("BACKGROUND", (0,0),(-1,-1),soft),
-        ("VALIGN",(0,0),(-1,-1),"MIDDLE"),
-        ("LEFTPADDING",(0,0),(-1,-1),13),
-        ("LINEBELOW",(0,0),(-1,-2),0.4,colors.white)
+    # Cover page deliberately contains ONLY the RPT title/subject/year plus
+    # school logo, school name and teacher name. A/B guidance stays in tables.
+    # Optional values can be supplied by a future authenticated profile flow;
+    # they are never fetched or guessed by this staging renderer.
+    for value, label in ((school_name, "school_name"), (teacher_name, "teacher_name")):
+        if not isinstance(value, str) or len(value.strip()) > 180:
+            raise ValueError(f"Invalid {label} on RPT cover")
+    logo = p("LOGO SEKOLAH", size=9, leading=13, center=True, color="#67747d")
+    if logo_path is not None:
+        from reportlab.lib.utils import ImageReader
+        filename = Path(logo_path)
+        if not filename.is_file() or filename.suffix.lower() not in (".png", ".jpg", ".jpeg"):
+            raise ValueError("School logo must be a readable PNG/JPG file")
+        iw, ih = ImageReader(str(filename)).getSize()
+        if iw <= 0 or ih <= 0:
+            raise ValueError("Invalid school logo dimensions")
+        scale = min(114 / iw, 114 / ih)
+        logo = Image(str(filename), width=iw * scale, height=ih * scale)
+    logo_frame = Table([[logo]], colWidths=[130], rowHeights=[130], hAlign="CENTER")
+    logo_frame.setStyle(TableStyle([
+        ("BOX", (0, 0), (-1, -1), 0.9, colors.HexColor("#94a3ab")),
+        ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+        ("ALIGN", (0, 0), (-1, -1), "CENTER"),
+        ("BACKGROUND", (0, 0), (-1, -1), colors.white),
     ]))
-    cover += [form,Spacer(1,24),
-        p(f"Rujukan Kumpulan A: {GROUP_A}",size=8.5,leading=15),
-        p(f"Rujukan Kumpulan B: {GROUP_B}",size=8.5,leading=15),
-        Spacer(1,12),
-        p("SK = Standard Kandungan. SP = Standard Pembelajaran. Satu baris = satu PdP.",size=8,leading=12,strong=True),
-        Spacer(1,6),
-        p("DRAF UNTUK SEMAKAN GURU. Minggu dan tarikh dalam jadual ialah panduan "
-          "sumber sahaja. Semak cuti negeri/gantian, jadual waktu, DSKP dan "
-          "halaman buku sebelum pelaksanaan.",size=8,leading=13,color="#735d36"),
-        PageBreak()
+    form = Table([
+        [p("NAMA SEKOLAH", size=10, leading=16, strong=True),
+         p(school_name.strip() or "__________________________________________",
+           size=10, leading=16)],
+        [p("NAMA GURU", size=10, leading=16, strong=True),
+         p(teacher_name.strip() or "__________________________________________",
+           size=10, leading=16)],
+    ], colWidths=[170, 490], rowHeights=[56, 56], hAlign="CENTER")
+    form.setStyle(TableStyle([
+        ("BACKGROUND", (0, 0), (-1, -1), colors.HexColor("#f5f8f6")),
+        ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+        ("LEFTPADDING", (0, 0), (-1, -1), 16),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 16),
+        ("LINEBELOW", (0, 0), (-1, 0), 0.4, colors.HexColor("#cdd7d9")),
+        ("BOX", (0, 0), (-1, -1), 0.55, colors.HexColor("#aabbbd")),
+    ]))
+    cover = [
+        Spacer(1, 20),
+        logo_frame,
+        Spacer(1, 27),
+        p("RANCANGAN PENGAJARAN TAHUNAN 2027",
+          size=21, leading=28, strong=True, center=True),
+        Spacer(1, 13),
+        p(f"{SUBJECTS[subject]}  |  TAHUN {year}",
+          size=15, leading=23, strong=True, center=True),
+        Spacer(1, 28),
+        form,
+        PageBreak(),
     ]
+
+    def blank_cover_header(canvas, doc):
+        # No headers, footers, labels, status or extra metadata on cover.
+        pass
+
     headings = ("MINGGU / TARIKH", "UNIT / TAJUK / PDP",
                 "SK", "SP", "CATATAN / BAHAN")
     table_rows = [[p(t,size=8.0,leading=11.7,strong=True,color="#25323a") for t in headings]]
@@ -254,7 +281,7 @@ def build_preview(subject, year, records, destination):
             ("LINEBELOW", (0, last), (0, last), 0.35, line),
         ] + ([("SPAN", (0, first), (0, last))] if last > first else [])))
     story = cover + [tbl]
-    doc.build(story, onFirstPage=header, onLaterPages=header)
+    doc.build(story, onFirstPage=blank_cover_header, onLaterPages=header)
     if not out.is_file() or out.stat().st_size < 5000:
         raise ValueError("RPT preview PDF output invalid")
     return out
