@@ -1,3 +1,5 @@
+**Kemas kini visual 6 November 2026:** Buku teks Tahun 4 telah dibuka pada halaman cetak 70–71 dan 82–83. Halaman 84 ialah Seni Visual Kota Ceria, bukan Muzik. Kedua-dua RPH kini merujuk skor/aktiviti pada halaman sebenar; audio kekal tidak disahkan. Rujuk `year4/SEMAKAN_VISUAL_SKOR_PDP21_24_20261106.md`.
+
 
 ## 6 November 2026 — keputusan kerja staging
 
@@ -10,7 +12,7 @@ Kod bercetak DSKP Muzik dan buku teks telah diselaraskan pada draf RPH/RPT Tahun
 | PdP | Unit | Kod RPT 2025/26, tidak diubah | Kod bercetak DSKP | Kod bercetak Buku Kesenian | Keputusan |
 |---|---|---|---|---|---|
 | 21 | Indahnya Dasar Laut, *Susun Notasi* | 3.1.2, 3.1.3 | 3.2.2, 3.2.3 | 3.2.2, 3.2.3 (hlm 70–71) | **KONFLIK NOMOR** |
-| 24 | Helo, Helo Apa Khabar?, *Kamu Tanya Saya Jawab / Cipta Melodi* | 3.1.1–3.1.3 | 3.2.1–3.2.3 | 3.2.1–3.2.3 (hlm 82–84) | **KONFLIK NOMOR** |
+| 24 | Helo, Helo Apa Khabar?, *Kamu Tanya Saya Jawab / Cipta Melodi* | 3.1.1–3.1.3 | 3.2.1–3.2.3 | 3.2.1–3.2.3 (hlm 82–83) | **KONFLIK NOMOR** |
 
 DSKP sebenar mencetak **SK 3.1 Pengkaryaan Muzik** dengan SP **3.2.1–3.2.3**. Buku Teks Pendidikan Kesenian Tahun 4 menggunakan kod SP bercetak yang sama, manakala RPT sumber lama memakai bentuk **3.1.1–3.1.3**. Kod bercetak DSKP berada di bawah nombor SK yang tidak sepadan secara aritmetik. **Jangan membuat pembetulan automatik** pada kod RPT/manifest/RPH produksi tanpa keputusan semakan kurikulum yang berautoriti.
 
