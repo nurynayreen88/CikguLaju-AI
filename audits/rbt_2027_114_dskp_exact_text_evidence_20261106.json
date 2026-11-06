@@ -1,0 +1,614 @@
+{
+  "date": "2026-11-06",
+  "project": "CikguLaju RBT primary 2027",
+  "source_type": "DSKP KSSR Semakan 2017 original Drive PDF: searchable text",
+  "method": "For each distinct lesson SP, look up code occurrence and compare normalized complete focus phrase within 450 chars following that occurrence. No textbook activity-image review.",
+  "limitations": [
+    "Text extraction matches do not validate textbook activity, physical page, artwork, project feasibility or teacher individual approval.",
+    "The 32 PdP/year sequence remains CikguLaju proposal, not an official KPM prescribed Lesson sequence.",
+    "No customer release flags or production user settings were modified."
+  ],
+  "per_year": {
+    "4": {
+      "year": 4,
+      "source_url": "https://drive.google.com/file/d/18fpsHYHwx1iyKj7NmnASHVV8wCrhxTsF/view",
+      "unique_codes": 57,
+      "rph_checked": 32,
+      "all_focus_exact_text_verified": true,
+      "sp_evidence": [
+        {
+          "sp": "1.1.1",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "1.1.2",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "1.1.3",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "1.1.4",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "1.1.5",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "2.1.1",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "2.1.2",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "2.1.3",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "2.1.4",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "2.1.5",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "2.2.1",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "2.2.2",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "2.2.3",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "2.2.4",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "2.2.5",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "2.2.6",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "2.2.7",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "2.2.8",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "3.1.1",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "3.1.2",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "3.1.3",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "3.1.4",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "3.1.5",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "3.1.6",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "3.1.7",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "3.1.8",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "4.1.1",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "4.1.2",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "4.1.3",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "4.1.4",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "4.1.5",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "4.1.6",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "4.1.7",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "4.1.8",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "4.1.9",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "4.1.10",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "5.1.1",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "5.1.2",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "5.1.3",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "5.1.4",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "5.1.5",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "5.1.6",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "5.1.7",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "5.1.8",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "5.1.9",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.1.1",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.1.2",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.1.3",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.1.4",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.1.5",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.1.6",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.2.1",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.2.2",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.2.3",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.2.4",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.2.5",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.2.6",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        }
+      ]
+    },
+    "5": {
+      "year": 5,
+      "source_url": "https://drive.google.com/file/d/1_JWEvoRGzCUYYRCyz2wOl191-4XYToEk/view",
+      "unique_codes": 34,
+      "rph_checked": 32,
+      "all_focus_exact_text_verified": true,
+      "sp_evidence": [
+        {
+          "sp": "4.3.1",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "4.3.2",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "4.3.3",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "4.3.4",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "4.3.5",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "4.3.6",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "4.3.7",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "5.1.1",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "5.1.2",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "5.1.3",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "5.1.4",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "5.1.5",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "5.1.6",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "5.1.7",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "5.1.8",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.3.1",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.3.2",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.3.3",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.3.4",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.3.5",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.3.6",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.4.1",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.4.2",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.4.3",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.4.4",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.4.5",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.4.6",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.4.7",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "7.1.1",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "7.1.2",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "7.1.3",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "7.1.4",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "7.1.5",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "7.1.6",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        }
+      ]
+    },
+    "6": {
+      "year": 6,
+      "source_url": "https://drive.google.com/file/d/1-EBfpMVl_U1D2lAJcY7o4mB5fayoJQMk/view",
+      "unique_codes": 23,
+      "rph_checked": 32,
+      "all_focus_exact_text_verified": true,
+      "sp_evidence": [
+        {
+          "sp": "5.2.1",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "5.2.2",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "5.2.3",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "5.2.4",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "5.2.5",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "5.2.6",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.5.1",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.5.2",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.5.3",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.5.4",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.5.5",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.5.6",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.5.7",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.5.8",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.5.9",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "6.5.10",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "8.1.1",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "8.1.2",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "8.1.3",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "8.1.4",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "8.1.5",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "8.1.6",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        },
+        {
+          "sp": "8.1.7",
+          "focus_exact_text_in_dskp": true,
+          "code_occurrences_checked": 1
+        }
+      ]
+    }
+  },
+  "total_unique_sp": 114,
+  "total_pdp": 96,
+  "visual_book_approvals": 0,
+  "teacher_individual_approvals": 0
+}
