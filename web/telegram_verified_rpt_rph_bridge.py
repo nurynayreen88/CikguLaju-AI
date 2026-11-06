@@ -175,7 +175,7 @@ def _native_state(runtime, selection, teacher):
         "subtopic": str(row.get("subtopic") or row.get("skill_focus") or ""),
         "rpt_activity_note": str(row.get("activity_note") or ""),
         "rpt_assessment_note": str(row.get("assessment_note") or ""),
-        "rph_class": cls, "rph_date": dt, "rph_time": tm,
+        "rph_class": cls, "rph_date": (date.fromisoformat(dt).strftime("%d/%m/%Y") if dt else ""), "rph_time": tm,
         "rph_day": day, "rph_students": pupils,
         "_quick_selected_rpt_row_v2388": src,
         "quick_rpt_row": src,
