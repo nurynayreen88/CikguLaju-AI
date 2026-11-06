@@ -35,7 +35,14 @@ class NativeBMBridgeTests(unittest.TestCase):
             f = Path(tempfile.gettempdir()) / (unique + "_rph.docx")
             doc = Document()
             doc.add_paragraph("RPH Bahasa Melayu")
-            doc.add_paragraph(content)
+            t1=doc.add_table(rows=1, cols=1)
+            t1.cell(0,0).text="Maklumat RPH"
+            t2=doc.add_table(rows=1, cols=3)
+            t2.cell(0,0).text="Aktiviti"
+            t2.cell(0,1).text=content
+            t2.cell(0,2).text="Catatan"
+            t3=doc.add_table(rows=1, cols=1)
+            t3.cell(0,0).text="Refleksi"
             doc.save(f)
             return str(f)
         self.runtime.create_word_file.side_effect = word
