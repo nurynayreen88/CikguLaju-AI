@@ -15,6 +15,7 @@ from pathlib import Path
 
 from rpt_2027.common.format_2026_layout_preview import build_preview, validate_rows
 from rpt_2027.common.standard_text_enrichment import enrich_sejarah, enrich_pjpk
+from rpt_2027.common.sejarah_source_enrichment_staging import enrich_sejarah_source_week_and_book
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "staging" / "rpt_2027_seragam_2026" / "pdf"
@@ -69,6 +70,7 @@ def sejarah_records(year: int):
     if len(units) != SEJARAH_UNITS[year]:
         raise ValueError("Sejarah sequence does not match sourced book-unit inventory")
     enrich_sejarah(year,result)
+    enrich_sejarah_source_week_and_book(year,result)
     validate_rows("sejarah", year, result)
     return result
 
