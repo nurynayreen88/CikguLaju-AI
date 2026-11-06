@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-06",
+  "subject": "Bahasa Arab",
+  "year": 2,
+  "unit": 1,
+  "release_state": "CANDIDATE_CONTENT_AUDIT_NOT_FINAL_READY",
+  "dpk_reference": "https://www.tcer.my/wp-content/uploads/2021/01/4_DPK_Bahasa-Arab-KSSR-Tahun-2-Edisi-2-1.pdf",
+  "ebook_text_reference": "https://anyflip.com/slrpb/qzcr/basic",
+  "source_method": "Read DPK 2.0 tabulated SP meanings and original KSSR Semakan 2017 DBP ebook HTML text. Visual screenshots of source PDF could not be validated.",
+  "decisions": [
+    {
+      "pdp": "002",
+      "candidate_sp": "1.1.2",
+      "skill": "Mengenal pasti bunyi huruf didengar",
+      "content_match": "PASS_AT_TEXT_LEVEL",
+      "book_html_code_seen": false,
+      "action": "Keep SP, no curriculum change",
+      "printed_page_visual_approved": false,
+      "teacher_approved": false
+    },
+    {
+      "pdp": "004",
+      "candidate_sp": "2.1.1",
+      "skill": "Meniru bacaan huruf berbaris dan mengulang",
+      "content_match": "RPH_OBJECTIVE_ACTIVITIES_PBD_ALIGNED",
+      "book_html_code_seen": false,
+      "action": "Revise objective, teacher/pupil activities, PBD and closing without modifying SP",
+      "printed_page_visual_approved": false,
+      "teacher_approved": false
+    },
+    {
+      "pdp": "010",
+      "candidate_sp": "2.3.5",
+      "skill": "Meniru dan membaca perkataan",
+      "content_match": "BOOK_HTML_AND_DPK_CODE_CORROBORATED",
+      "book_html_code_seen": true,
+      "book_page": "11",
+      "printed_page_visual_approved": false,
+      "teacher_approved": false
+    },
+    {
+      "pdp": "011",
+      "candidate_sp": "3.4.1",
+      "skill": "Menyalin frasa perkenalan",
+      "content_match": "BOOK_HTML_AND_DPK_CODE_CORROBORATED",
+      "book_html_code_seen": true,
+      "book_page": "17",
+      "printed_page_visual_approved": false,
+      "teacher_approved": false
+    }
+  ],
+  "total_checked": 4,
+  "book_code_text_corroborated": 2,
+  "book_code_visual_approved": 0,
+  "rph_final_ready": 0,
+  "release_authorized": false,
+  "production_db_touched": false,
+  "telegram_live_touched": false,
+  "web_live_touched": false,
+  "constraints": [
+    "Not a substitute for DSKP original printed page image or grammar signoff",
+    "RPT 2027 A/B per-PdP dates remain blank",
+    "Do not merge to main or deploy runtime"
+  ]
+}
