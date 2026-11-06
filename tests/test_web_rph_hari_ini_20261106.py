@@ -176,6 +176,46 @@ class DailyTimetableRouteTests(TestCase):
         # by the original server route when its individual Download is clicked.
         self.assertIn('row.button.addEventListener("click",()=>{void downloadRph(',daily)
 
+    def test_generated_material_cards_are_below_entire_subject_list(self):
+        page=(ROOT/"web_v1_static_preview"/"index.html").read_text("utf-8")
+        daily=(ROOT/"web_v1_static_preview"/"rph-today.js").read_text("utf-8")
+        # The output is a sibling following all subject selection cards and
+        # the sole Jana Bahan button, not a child of an individual class card.
+        self.assertLess(page.index('id="today-list"'),page.index('id="today-generate-all"'))
+        self.assertLess(page.index('id="today-generate-all"'),page.index('id="today-results"'))
+        self.assertLess(page.index('id="today-results"'),page.index('id="today-results-list"'))
+        self.assertLess(page.index('id="today-results-list"'),page.index('class="daily-rph-footer"'))
+        self.assertIn('aria-label="Bahan mengikut kelas dan subjek"',page)
+        self.assertIn('id="today-results" class="daily-rph-output"',page)
+        self.assertIn('id="today-results-list" class="daily-rph-result-list"',page)
+        self.assertIn('resultsList.append(c.result)',daily)
+        self.assertNotIn('card.append(c.result)',daily)
+        self.assertNotIn('list.append(c.result)',daily)
+        self.assertIn('resultsHost.hidden=false',daily)
+        self.assertIn('resultsHost.scrollIntoView(',daily)
+        self.assertIn('const selected=choices.filter(c=>c.slot.can_prepare)',daily)
+        self.assertIn('const queue=selected.slice()',daily)
+        # The same per-slot Download actions and source/quota path remain.
+        self.assertIn('row.button.addEventListener("click",()=>{void downloadRph(',daily)
+        self.assertIn('"/api/web/rph/"+format+"?"',daily)
+        self.assertIn('"/api/web/rph/availability?"',daily)
+        self.assertIn('"/api/web/rph/extra-materials?"',daily)
+
+    def test_stale_or_changed_selections_clear_all_outputs(self):
+        daily=(ROOT/"web_v1_static_preview"/"rph-today.js").read_text("utf-8")
+        self.assertIn('function clearResults(){',daily)
+        self.assertIn('resultsHost.hidden=true',daily)
+        self.assertIn('resultsList.replaceChildren()',daily)
+        self.assertIn('if(!c.result)continue;',daily)
+        self.assertIn('const chosen=c.controls.lesson.selectedOptions[0]',daily)
+        self.assertIn('c.resultSelection.textContent="Tahun "+c.slot.year',daily)
+        self.assertIn('slot.class_name+" · "+slot.subject',daily)
+        self.assertIn('create("span","daily-rph-time",slot.start+" – "+slot.end)',daily)
+        self.assertIn('if(epoch!==batchEpoch||key!==selectedKey(c))return',daily)
+        self.assertIn('if(!confirm.checked){reviewing=false;clearResults();}',daily)
+        self.assertIn('batchEpoch++;',daily)
+        self.assertIn('resultsHost.hidden=true;\n  resultsList.replaceChildren();\n  list.replaceChildren();',daily)
+
     def test_unavailable_materials_hidden_daily_and_manual(self):
         page=(ROOT/"web_v1_static_preview"/"index.html").read_text("utf-8")
         daily=(ROOT/"web_v1_static_preview"/"rph-today.js").read_text("utf-8")

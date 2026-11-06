@@ -280,7 +280,15 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 .daily-rph-editor .daily-rph-results{margin-top:14px;padding-top:12px;border-top:1px solid #ccded8}
 .daily-rph-editor h3{font-size:1rem}
 .daily-rph-results h4{margin:0 0 8px}
-.daily-rph-materials{list-style:none;padding:0;margin:0}
+.daily-rph-output{margin:22px 0 18px;padding-top:18px;border-top:2px solid #c2dbd3;scroll-margin-top:20px}
+.daily-rph-output h3{margin:0 0 8px;color:#113e60}
+.daily-rph-output > .notice{margin:0 0 16px}
+.daily-rph-result-list{display:grid;gap:12px}
+.daily-rph-result-card{border:1px solid #cfe0d9;background:#f9fcfa;border-radius:13px;padding:15px;min-width:0}
+.daily-rph-result-card h4{margin:12px 0 10px;font-size:.98rem;color:#153b36}
+.daily-rph-selection{margin:9px 0 0;font-size:.91rem;color:#345c56;overflow-wrap:anywhere}
+.daily-rph-result-card .notice{margin:12px 0 0}
+.daily-rph-materials{list-style:none;padding:0;margin:0;display:grid;gap:9px}
 .daily-rph-batch{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:16px}
 #today-generate-all{background:#087568;color:white;border:0;border-radius:11px;padding:14px 20px;font:inherit;font-weight:700;cursor:pointer}
 #today-generate-all:disabled{background:#d8e4df;color:#587168;cursor:not-allowed}
@@ -347,7 +355,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <div class="workspace-intro"><div><span class="workspace-eyebrow">RUANG GURU</span><p>Selamat datang, <strong id="workspace-teacher-name">Cikgu</strong></p></div><span class="workspace-ready"><span aria-hidden="true">●</span> Portal Pembelajaran</span></div>
 <section id="view-today" class="app-view" aria-labelledby="view-today-heading" hidden>
   <h2 id="view-today-heading">RPH Hari Ini</h2>
-  <p>Setiap waktu mengajar memaparkan dropdown Tema/Unit/Tajuk dan Lesson/PdP secara automatik. Pilih semua Lesson/PdP terlebih dahulu, kemudian tekan Jana Bahan sekali untuk menyemak bahan mengikut kelas. Hanya bahan tersedia akan dipaparkan.</p>
+  <p>Pilih Tema/Unit/Tajuk dan Lesson/PdP untuk setiap kelas di bawah. Selepas semua pilihan selesai, tekan <strong>Jana Bahan Semua Lesson</strong> sekali. Hasil bagi setiap kelas dan subjek akan dipaparkan secara berasingan di bahagian paling bawah.</p>
   <div class="daily-rph-toolbar">
     <div><label for="today-date">Tarikh PdP</label><input id="today-date" type="date" aria-label="Tarikh RPH Hari Ini"></div>
     <button type="button" id="today-refresh">Muat Semula Jadual</button>
@@ -360,6 +368,11 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <div id="today-list" class="daily-rph-list" aria-label="Senarai waktu mengajar hari ini"></div>
   <div class="daily-rph-batch"><button type="button" id="today-generate-all" disabled>Jana Bahan Semua Lesson</button><span class="notice">Pilih Lesson/PdP untuk semua kelas terlebih dahulu.</span></div>
   <p id="today-generate-status" class="notice" role="status" aria-live="polite"></p>
+  <section id="today-results" class="daily-rph-output" aria-labelledby="today-results-heading" hidden>
+    <h3 id="today-results-heading">Bahan RPH Hari Ini</h3>
+    <p class="notice">Hasil disusun mengikut urutan waktu mengajar di atas. Setiap kelas dan subjek mempunyai bahan serta butang muat turun masing-masing.</p>
+    <div id="today-results-list" class="daily-rph-result-list" aria-label="Bahan mengikut kelas dan subjek" aria-live="polite"></div>
+  </section>
   <div class="daily-rph-footer">
     <button type="button" id="today-manual">Sediakan RPH Secara Manual</button>
     <span class="notice">Semakan bahan tidak menggunakan kuota RPH. Muat turun RPH Word/PDF untuk setiap Lesson menggunakan kuota atau langganan sedia ada.</span>
@@ -1267,7 +1280,7 @@ rphWord.addEventListener("click",()=>generateRphFile("word"));
 rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
-<script src="/assets/rph-today.js?v=all-slots-one-jana-bahan-20261106"></script>
+<script src="/assets/rph-today.js?v=results-below-all-subjects-20261107"></script>
 <script src="/assets/teacher-profile.js?v=profile-no-avatar-20261106"></script>
 <script src="/assets/web-payment.js?v=rakan-only-percent-20261106"></script>
 <script src="/assets/web-referral.js?v=20261106"></script>

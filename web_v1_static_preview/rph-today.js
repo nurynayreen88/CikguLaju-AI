@@ -14,7 +14,10 @@
  const manual=document.getElementById("today-manual");
  const generateAll=document.getElementById("today-generate-all");
  const allStatus=document.getElementById("today-generate-status");
- if(!dateInput||!refresh||!state||!list||!confirm||!generateAll||!allStatus)return;
+ const resultsHost=document.getElementById("today-results");
+ const resultsList=document.getElementById("today-results-list");
+ if(!dateInput||!refresh||!state||!list||!confirm||!generateAll||
+    !allStatus||!resultsHost||!resultsList)return;
  let requestId=0,loadedDate="",loading=false,reviewing=false,choices=[],batchEpoch=0;
  const cache=new Map();
  const TAGS=["component","theme","unit","topic","lesson"];
@@ -67,7 +70,10 @@
  }
  function clearResults(){
   batchEpoch++;
+  resultsHost.hidden=true;
+  resultsList.replaceChildren();
   for(const c of choices){
+   if(!c.result)continue;
    c.result.hidden=true;
    c.downloadStatus.textContent="";
    c.resultList.replaceChildren();
@@ -249,13 +255,21 @@
   ])stage(c,name,label);
   c.editor.append(c.bookRef,c.message);
   card.append(c.editor);
-  c.result=create("section","daily-rph-results");
+  // Result cards are deliberately NOT appended inside the selection cards.
+  // They are rendered in a single output area after the *entire* timetable.
+  c.result=create("article","daily-rph-result-card");
   c.result.hidden=true;
-  c.result.append(create("h4","","Bahan untuk Lesson/PdP dipilih"));
+  const resultHeading=create("div","daily-rph-card-top");
+  resultHeading.append(
+   create("strong","",slot.class_name+" · "+slot.subject),
+   create("span","daily-rph-time",slot.start+" – "+slot.end)
+  );
+  c.resultSelection=create("p","daily-rph-selection");
+  c.result.append(resultHeading,c.resultSelection,
+                  create("h4","","Bahan tersedia"));
   c.resultList=create("ul","daily-rph-materials");
   c.downloadStatus=create("p","notice");
   c.result.append(c.resultList,c.downloadStatus);
-  card.append(c.result);
   list.append(card);
   void initialize(c);
   return c;
@@ -265,6 +279,8 @@
   dateInput.value=data.date;
   confirm.checked=false;
   confirmWrap.hidden=!data.count;
+  resultsHost.hidden=true;
+  resultsList.replaceChildren();
   list.replaceChildren();
   choices=[];
   if(!data.count)list.append(create("p","notice",
@@ -281,6 +297,8 @@
   cache.clear();
   batchEpoch++;
   loading=true;reviewing=false;choices=[];
+  resultsHost.hidden=true;
+  resultsList.replaceChildren();
   list.replaceChildren();
   confirm.checked=false;confirmWrap.hidden=true;
   refresh.disabled=true;
@@ -418,6 +436,17 @@
   if(!selected.length||selected.some(c=>!c.controls.lesson.value))return;
   reviewing=true;generateAll.disabled=true;updateAll();
   const epoch=++batchEpoch;
+  // Keep the same chronological subject/class ordering as the upper cards.
+  // Output is one grouped section beneath all subject selectors, not inline.
+  resultsList.replaceChildren();
+  for(const c of selected){
+   const chosen=c.controls.lesson.selectedOptions[0];
+   c.resultSelection.textContent="Tahun "+c.slot.year+
+     " · "+(chosen?.textContent||"Lesson/PdP dipilih");
+   c.result.hidden=false;
+   resultsList.append(c.result);
+  }
+  resultsHost.hidden=false;
   allStatus.textContent="Menyemak bahan bagi "+selected.length+" Lesson/PdP yang dipilih…";
   const queue=selected.slice();
   const workers=Array.from({length:Math.min(3,queue.length)},async()=>{
@@ -430,8 +459,9 @@
   finally{
    if(epoch===batchEpoch){
     reviewing=false;
-    allStatus.textContent="Semakan bahan selesai. Muat turun secara berasingan pada setiap kelas.";
+    allStatus.textContent="Semakan bahan selesai. Semua bahan dipaparkan di bawah mengikut kelas dan subjek.";
     updateAll();
+    resultsHost.scrollIntoView({behavior:"smooth",block:"start"});
    }
   }
  }
