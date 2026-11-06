@@ -5,6 +5,7 @@ on:
     paths:
       - "tools/audit_sains_v26_readonly_20261106.py"
       - "tools/audit_sains_all_runtime_sources_20261106.py"
+      - "tools/audit_sains_25_82_delta_20261106.py"
       - "tools/audit_sains_native_reader_ast_20261106.py"
       - "tools/simulate_sains_y3_5_title_repair_20261106.py"
       - "tests/test_sains_v26_source_inventory_20261106.py"
@@ -42,6 +43,8 @@ jobs:
         run: python tools/audit_sains_v26_readonly_20261106.py
       - name: Simulate 5 title replacements on temporary historical DB and rollback
         run: python tools/simulate_sains_y3_5_title_repair_20261106.py
+      - name: Compare science v25.68 versus v25.82 record-level delta
+        run: python tools/audit_sains_25_82_delta_20261106.py
       - name: Compare all shipped science DB checkpoints without writes
         run: python tools/audit_sains_all_runtime_sources_20261106.py
       - name: Inspect Telegram native reader without importing bot
