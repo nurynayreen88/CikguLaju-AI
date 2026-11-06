@@ -96,11 +96,12 @@ def word_doc(path,number,unit,state,rows):
     for ri,line in enumerate(meta):
         for ci,v in enumerate(line):
             _set_doc_cell(tb.cell(ri,ci),v,bold=ci%2==0)
-    details=doc.add_table(rows=4,cols=2);details.style="Table Grid"
+    details=doc.add_table(rows=5,cols=2);details.style="Table Grid"
     det=[
         ("Unit",unit),
         ("Tajuk",rows["TAJUK"]),
         ("SK / SP",f'{state["sk_code"]}  /  {rows.get("STANDARD PEMBELAJARAN", state["sp_code"])}'),
+        ("KPS diintegrasi",rows["KEMAHIRAN PROSES SAINS"]),
         ("Objektif / Kriteria",rows["OBJEKTIF PEMBELAJARAN"]+"\n"+rows["KRITERIA KEJAYAAN"]),
     ]
     for ri,(k,v) in enumerate(det):
@@ -157,6 +158,7 @@ def pdf_doc(path,number,unit,state,rows):
     fields=[
         ("Unit",unit),
         ("Tajuk",rows["TAJUK"]),
+        ("KPS diintegrasi",rows["KEMAHIRAN PROSES SAINS"]),
         ("Objektif",rows["OBJEKTIF PEMBELAJARAN"]),
         ("Kriteria kejayaan",rows["KRITERIA KEJAYAAN"]),
         ("Set induksi",rows["SET INDUKSI"]),
