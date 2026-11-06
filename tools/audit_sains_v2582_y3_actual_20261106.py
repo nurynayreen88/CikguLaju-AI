@@ -6,7 +6,7 @@ import json
 import tempfile
 from pathlib import Path
 from collections import Counter
-from tools.audit_sains_25_82_delta_20261106 import load, SOURCES, ROOT
+from audit_sains_25_82_delta_20261106 import load, SOURCES, ROOT
 
 def inspect():
     with tempfile.TemporaryDirectory(prefix="sains_latest_2582_") as tmp:
