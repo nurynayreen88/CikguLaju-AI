@@ -103,7 +103,23 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.2.1",
+            "muka_surat_bercetak_calon": [
+              2,
+              2
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          2
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -189,7 +205,24 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.2.2",
+            "muka_surat_bercetak_calon": [
+              3,
+              5
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          3,
+          5
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -275,7 +308,24 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.2.3",
+            "muka_surat_bercetak_calon": [
+              6,
+              8
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          6,
+          8
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -361,7 +411,24 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.2.3",
+            "muka_surat_bercetak_calon": [
+              6,
+              8
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          6,
+          8
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -447,7 +514,24 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.2.4",
+            "muka_surat_bercetak_calon": [
+              9,
+              10
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          9,
+          10
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -533,7 +617,24 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.2.4",
+            "muka_surat_bercetak_calon": [
+              9,
+              10
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          9,
+          10
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -619,7 +720,24 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.2.5",
+            "muka_surat_bercetak_calon": [
+              11,
+              20
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          11,
+          20
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -705,7 +823,24 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.2.5",
+            "muka_surat_bercetak_calon": [
+              11,
+              20
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          11,
+          20
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -791,7 +926,24 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.2.5",
+            "muka_surat_bercetak_calon": [
+              11,
+              20
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          11,
+          20
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -877,7 +1029,24 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.2.6",
+            "muka_surat_bercetak_calon": [
+              21,
+              22
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          21,
+          22
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -963,7 +1132,24 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.5.1",
+            "muka_surat_bercetak_calon": [
+              24,
+              25
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          24,
+          25
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -1049,7 +1235,24 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.5.2",
+            "muka_surat_bercetak_calon": [
+              25,
+              26
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          25,
+          26
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -1135,7 +1338,23 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.5.3",
+            "muka_surat_bercetak_calon": [
+              27,
+              27
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          27
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -1221,7 +1440,24 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.5.4",
+            "muka_surat_bercetak_calon": [
+              28,
+              29
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          28,
+          29
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -1307,7 +1543,23 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.5.5",
+            "muka_surat_bercetak_calon": [
+              30,
+              30
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          30
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -1393,7 +1645,23 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.5.6",
+            "muka_surat_bercetak_calon": [
+              31,
+              31
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          31
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -1479,7 +1747,24 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.5.7",
+            "muka_surat_bercetak_calon": [
+              32,
+              34
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          32,
+          34
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -1565,7 +1850,24 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.5.8",
+            "muka_surat_bercetak_calon": [
+              35,
+              39
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          35,
+          39
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -1651,7 +1953,24 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.5.9",
+            "muka_surat_bercetak_calon": [
+              40,
+              41
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          40,
+          41
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -1737,7 +2056,23 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1, cetakan pertama 2021 (semakan topik, bukan visual tugasan)",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.5.10",
+            "muka_surat_bercetak_calon": [
+              42,
+              42
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          42
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -1823,7 +2158,13 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1; halaman belum dipadankan",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [],
+        "calon_muka_surat_teks_digital": [],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -1909,7 +2250,13 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1; halaman belum dipadankan",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [],
+        "calon_muka_surat_teks_digital": [],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -1995,7 +2342,13 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1; halaman belum dipadankan",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [],
+        "calon_muka_surat_teks_digital": [],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -2081,7 +2434,13 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1; halaman belum dipadankan",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [],
+        "calon_muka_surat_teks_digital": [],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -2167,7 +2526,13 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1; halaman belum dipadankan",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [],
+        "calon_muka_surat_teks_digital": [],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -2253,7 +2618,13 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1; halaman belum dipadankan",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [],
+        "calon_muka_surat_teks_digital": [],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -2339,7 +2710,13 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1; halaman belum dipadankan",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [],
+        "calon_muka_surat_teks_digital": [],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -2425,7 +2802,13 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1; halaman belum dipadankan",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [],
+        "calon_muka_surat_teks_digital": [],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -2511,7 +2894,13 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1; halaman belum dipadankan",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [],
+        "calon_muka_surat_teks_digital": [],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -2597,7 +2986,13 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1; halaman belum dipadankan",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [],
+        "calon_muka_surat_teks_digital": [],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -2683,7 +3078,13 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1; halaman belum dipadankan",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [],
+        "calon_muka_surat_teks_digital": [],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
@@ -2769,7 +3170,13 @@
         "muka_surat": null,
         "aktiviti_buku_teks": null,
         "sumber_panduan_edisi": "Buku Teks RBT Tahun 6 SK KSSR Semakan 2017, ISBN 978-983-49-3283-1; halaman belum dipadankan",
-        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic"
+        "pautan_buku_edisi_semasa": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "sumber_rujukan_buku_teks_awam": "https://fliphtml5.com/rjdzf/cwso/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 6 SK, KSSR Semakan 2017, cetakan 2021, ISBN 978-983-49-3283-1",
+        "calon_muka_surat_mengikut_sp": [],
+        "calon_muka_surat_teks_digital": [],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 6",
