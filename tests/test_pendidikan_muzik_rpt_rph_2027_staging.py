@@ -381,6 +381,28 @@ _music_preview_spec.loader.exec_module(module)
 SOURCE = _MUSIC_PREVIEW_SOURCE
 
 class MusicNativeLayoutStagingTests(unittest.TestCase):
+    def test_preview_book_evidence_warnings_only_for_eight_nonofficial_pdps(self):
+        """Page-image crosschecks must not be treated as unreviewed book content."""
+        warning = "TEXTBOOK_NOT_FULLY_CROSSCHECKED_OR_NONOFFICIAL"
+        actual = set()
+        for year in range(2, 7):
+            manifest = json.loads(
+                (SOURCE / f"year{year}" / "pdp_manifest.json").read_text(encoding="utf-8")
+            )
+            for row in manifest["pdps"]:
+                preview = module.build_staging_preview(SOURCE, year, row["pdp"])
+                covered = (
+                    row.get("source_book_text_crosscheck") is True
+                    or row.get("source_book_content_page_checked") is True
+                )
+                self.assertEqual(warning in preview["warnings"], not covered, row["pdp_id"])
+                if warning in preview["warnings"]:
+                    actual.add(row["pdp_id"])
+        self.assertEqual(actual, {
+            f"MZ-Y{year}-{pdp:02d}"
+            for year in (2, 3, 4, 6) for pdp in (34, 35)
+        })
+
     def test_all_175_music_rph_preserve_the_five_pedagogical_parts(self):
         for year in range(2, 7):
             for pdp in range(1, 36):
