@@ -621,8 +621,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 2.2.1, 2.2.2 melalui kad pengelasan atau senarai contoh berlabel; lakaran berlabel atau algoritma/carta alir berurutan, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan kad pengelasan atau senarai contoh berlabel; lakaran berlabel atau algoritma/carta alir berurutan bagi SP 2.2.1, 2.2.2; guru menilai ketepatan pilihan dan pengelasan; kelengkapan maklumat dan langkah reka bentuk.",
+      "objektif": "Pada akhir PdP, murid dapat mengenal pasti enam jenis garisan dan melakar objek dengan sekurang-kurangnya tiga garisan berbeza mengikut SP 2.2.1, 2.2.2.",
+      "kriteria_kejayaan": "Murid menunjukkan lembaran jenis garisan berlabel serta satu lakaran objek yang mempamerkan tiga variasi garisan berdasarkan SP 2.2.1, 2.2.2; guru menilai ketepatan reka bentuk dan bukti pembelajaran.",
       "bbm": "Contoh produk, helaian lakaran, pensel, pembaris, kad bentuk 2D/3D, bahan kitar semula bersih",
       "langkah": {
         "set_induksi": {
@@ -672,8 +672,8 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "kad pengelasan atau senarai contoh berlabel; lakaran berlabel atau algoritma/carta alir berurutan",
-      "rubrik_pbd_khusus": "ketepatan pilihan dan pengelasan; kelengkapan maklumat dan langkah reka bentuk",
+      "artefak_khusus": "lembaran jenis garisan berlabel serta satu lakaran objek yang mempamerkan tiga variasi garisan",
+      "rubrik_pbd_khusus": "kecukupan label, kesesuaian fungsi, logik ukuran dan justifikasi",
       "contoh_projek_cikgulaju": "produk bekas alat tulis",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
@@ -692,7 +692,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_no_unrelated_programming": true,
+        "visual_textbook_individual_approved": false
       }
     },
     {
@@ -725,8 +727,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 2.2.3, 2.2.4 melalui lakaran berlabel atau algoritma/carta alir berurutan, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan lakaran berlabel atau algoritma/carta alir berurutan bagi SP 2.2.3, 2.2.4; guru menilai kelengkapan maklumat dan langkah reka bentuk.",
+      "objektif": "Pada akhir PdP, murid dapat menjana sekurang-kurangnya dua idea dan menghasilkan tiga lakaran produk bertema menggunakan garisan dan bentuk asas mengikut SP 2.2.3, 2.2.4.",
+      "kriteria_kejayaan": "Murid menunjukkan tiga lakaran berlabel dengan sekurang-kurangnya dua kombinasi bentuk asas berdasarkan SP 2.2.3, 2.2.4; guru menilai ketepatan reka bentuk dan bukti pembelajaran.",
       "bbm": "Contoh produk, helaian lakaran, pensel, pembaris, kad bentuk 2D/3D, bahan kitar semula bersih",
       "langkah": {
         "set_induksi": {
@@ -776,8 +778,8 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "lakaran berlabel atau algoritma/carta alir berurutan",
-      "rubrik_pbd_khusus": "kelengkapan maklumat dan langkah reka bentuk",
+      "artefak_khusus": "tiga lakaran berlabel dengan sekurang-kurangnya dua kombinasi bentuk asas",
+      "rubrik_pbd_khusus": "kecukupan label, kesesuaian fungsi, logik ukuran dan justifikasi",
       "contoh_projek_cikgulaju": "produk bekas alat tulis",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
@@ -796,7 +798,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_no_unrelated_programming": true,
+        "visual_textbook_individual_approved": false
       }
     },
     {
@@ -1225,8 +1229,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 3.1.3, 3.1.4 melalui lakaran berlabel atau algoritma/carta alir berurutan, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan lakaran berlabel atau algoritma/carta alir berurutan bagi SP 3.1.3, 3.1.4; guru menilai kelengkapan maklumat dan langkah reka bentuk.",
+      "objektif": "Pada akhir PdP, murid dapat menjana dua idea lalu menghasilkan satu lakaran bermaklumat bekas pensel dengan ukuran dan bahan berlabel mengikut SP 3.1.3, 3.1.4.",
+      "kriteria_kejayaan": "Murid menunjukkan dua idea awal dan satu lakaran gabungan dengan ukuran, fungsi dan bahan berdasarkan SP 3.1.3, 3.1.4; guru menilai ketepatan reka bentuk dan bukti pembelajaran.",
       "bbm": "Contoh alat konvensional dan moden, kertas lakaran, pembaris, jadual kos, bahan prototaip selamat",
       "langkah": {
         "set_induksi": {
@@ -1277,8 +1281,8 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "lakaran berlabel atau algoritma/carta alir berurutan",
-      "rubrik_pbd_khusus": "kelengkapan maklumat dan langkah reka bentuk",
+      "artefak_khusus": "dua idea awal dan satu lakaran gabungan dengan ukuran, fungsi dan bahan",
+      "rubrik_pbd_khusus": "kecukupan label, kesesuaian fungsi, logik ukuran dan justifikasi",
       "contoh_projek_cikgulaju": "model bekas pensel dengan bahan terpakai",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
@@ -1297,7 +1301,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_no_unrelated_programming": true,
+        "visual_textbook_individual_approved": false
       }
     },
     {
@@ -1642,8 +1648,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 4.1.3, 4.1.4 melalui dua penerangan fungsi atau sebab dalam jadual banding beza; lakaran berlabel atau algoritma/carta alir berurutan, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan dua penerangan fungsi atau sebab dalam jadual banding beza; lakaran berlabel atau algoritma/carta alir berurutan bagi SP 4.1.3, 4.1.4; guru menilai ketepatan penerangan dan satu justifikasi; kelengkapan maklumat dan langkah reka bentuk.",
+      "objektif": "Pada akhir PdP, murid dapat menerangkan empat kepentingan pembungkusan dan menjana dua idea lakaran bagi set alat tulis mengikut SP 4.1.3, 4.1.4.",
+      "kriteria_kejayaan": "Murid menunjukkan jadual sebab pembungkusan diperlukan serta dua lakaran pembungkusan ringkas berdasarkan SP 4.1.3, 4.1.4; guru menilai ketepatan reka bentuk dan bukti pembelajaran.",
       "bbm": "Contoh pembungkusan terpakai yang bersih, kotak, kadbod, kertas, gunting keselamatan, gam, pembaris",
       "langkah": {
         "set_induksi": {
@@ -1692,8 +1698,8 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "dua penerangan fungsi atau sebab dalam jadual banding beza; lakaran berlabel atau algoritma/carta alir berurutan",
-      "rubrik_pbd_khusus": "ketepatan penerangan dan satu justifikasi; kelengkapan maklumat dan langkah reka bentuk",
+      "artefak_khusus": "jadual sebab pembungkusan diperlukan serta dua lakaran pembungkusan ringkas",
+      "rubrik_pbd_khusus": "kecukupan label, kesesuaian fungsi, logik ukuran dan justifikasi",
       "contoh_projek_cikgulaju": "pembungkusan set alat tulis sekolah",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
@@ -1712,7 +1718,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_no_unrelated_programming": true,
+        "visual_textbook_individual_approved": false
       }
     },
     {
@@ -1745,8 +1753,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 4.1.5, 4.1.6 melalui lakaran berlabel atau algoritma/carta alir berurutan; dua penerangan fungsi atau sebab dalam jadual banding beza, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan lakaran berlabel atau algoritma/carta alir berurutan; dua penerangan fungsi atau sebab dalam jadual banding beza bagi SP 4.1.5, 4.1.6; guru menilai kelengkapan maklumat dan langkah reka bentuk; ketepatan penerangan dan satu justifikasi.",
+      "objektif": "Pada akhir PdP, murid dapat menghasilkan lakaran pembungkusan dengan ukuran, penutup dan ruang serta menerangkan pilihan reka bentuk mengikut SP 4.1.5, 4.1.6.",
+      "kriteria_kejayaan": "Murid menunjukkan satu lakaran bermaklumat pembungkusan dengan label bahan, ruang, penutup dan justifikasi berdasarkan SP 4.1.5, 4.1.6; guru menilai ketepatan reka bentuk dan bukti pembelajaran.",
       "bbm": "Contoh pembungkusan terpakai yang bersih, kotak, kadbod, kertas, gunting keselamatan, gam, pembaris",
       "langkah": {
         "set_induksi": {
@@ -1795,8 +1803,8 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "lakaran berlabel atau algoritma/carta alir berurutan; dua penerangan fungsi atau sebab dalam jadual banding beza",
-      "rubrik_pbd_khusus": "kelengkapan maklumat dan langkah reka bentuk; ketepatan penerangan dan satu justifikasi",
+      "artefak_khusus": "satu lakaran bermaklumat pembungkusan dengan label bahan, ruang, penutup dan justifikasi",
+      "rubrik_pbd_khusus": "kecukupan label, kesesuaian fungsi, logik ukuran dan justifikasi",
       "contoh_projek_cikgulaju": "pembungkusan set alat tulis sekolah",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
@@ -1815,7 +1823,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_no_unrelated_programming": true,
+        "visual_textbook_individual_approved": false
       }
     },
     {
@@ -2160,8 +2170,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 5.1.3, 5.1.4 melalui lakaran berlabel atau algoritma/carta alir berurutan, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan lakaran berlabel atau algoritma/carta alir berurutan bagi SP 5.1.3, 5.1.4; guru menilai kelengkapan maklumat dan langkah reka bentuk.",
+      "objektif": "Pada akhir PdP, murid dapat menghasilkan dua lakaran reka bentuk hidangan buah dengan susun atur, kuantiti, bentuk dan warna berlabel mengikut SP 5.1.3, 5.1.4.",
+      "kriteria_kejayaan": "Murid menunjukkan dua lakaran bermaklumat makanan dengan komponen serta penjelasan kesesuaian berdasarkan SP 5.1.3, 5.1.4; guru menilai ketepatan reka bentuk dan bukti pembelajaran.",
       "bbm": "Contoh foto reka bentuk makanan, lakaran, bahan makanan bersih mengikut alahan murid, sarung tangan, peralatan makanan yang sesuai",
       "langkah": {
         "set_induksi": {
@@ -2210,8 +2220,8 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "lakaran berlabel atau algoritma/carta alir berurutan",
-      "rubrik_pbd_khusus": "kelengkapan maklumat dan langkah reka bentuk",
+      "artefak_khusus": "dua lakaran bermaklumat makanan dengan komponen serta penjelasan kesesuaian",
+      "rubrik_pbd_khusus": "kecukupan label, kesesuaian fungsi, logik ukuran dan justifikasi",
       "contoh_projek_cikgulaju": "reka bentuk hidangan buah dalam bekas",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
@@ -2230,7 +2240,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_no_unrelated_programming": true,
+        "visual_textbook_individual_approved": false
       }
     },
     {
