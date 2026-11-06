@@ -17,11 +17,12 @@ def main():
         rows = list(csv.DictReader(f))
     assert doc["year"] == 2 and doc["unit"] == 2
     assert doc["candidate_total"] == 16 and doc["ready_count"] == 0
-    assert doc["high_priority_count"] == 8 and doc["additional_review_count"] == 5
+    assert doc["high_priority_count"] == 6 and doc["additional_review_count"] == 5
+    assert doc["corrected_source_candidate_count"] == 2 and doc["corrected_pdp"] == ["019","020"]
     assert doc["release_authorized"] is False
     assert all(doc[key] is False for key in ("production_db_touched","telegram_live_touched","web_live_touched"))
     assert len(doc["records"]) == len(upstream["items"]) == len(rows) == 16
-    high,review=set(),set()
+    high,review,corrected=set(),set(),set()
     ids=set()
     for item,orig,row in zip(doc["records"], upstream["items"], rows):
         n=item["pdp"]
@@ -35,7 +36,10 @@ def main():
         assert row["ready"]=="FALSE" and row["kelulusan_individu"]=="FALSE"
         assert (RPH/f"lesson_{n}.md").is_file()
         status=item["audit_status"]
-        if status=="HIGH_PRIORITY_CODE_OR_SKILL_MISMATCH":
+        if status=="SOURCE_SK_SP_CORRECTED_TEACHER_APPROVAL_PENDING":
+            corrected.add(n)
+            assert item["previous_candidate_sp"] in ("1.2.1","1.2.2")
+        elif status=="HIGH_PRIORITY_CODE_OR_SKILL_MISMATCH":
             high.add(n)
             assert item["issue"]
         elif status=="REQUIRES_FULL_PAGE_PEDAGOGIC_CHECK":
@@ -44,9 +48,10 @@ def main():
         else:
             assert status=="NO_HIGH_PRIORITY_FINDING_IN_SCREENING"
     assert ids=={f"{i:03d}" for i in range(13,29)}
-    assert high=={"014","016","019","020","023","024","027","028"}
+    assert high=={"014","016","023","024","027","028"}
+    assert corrected=={"019","020"}
     assert review=={"018","021","022","025","026"}
-    print("PASS: 16 Year2 Unit2 source candidates, 8 high priority + 5 review, 0 approved, no duplicate/orphan.")
+    print("PASS: 16 Year2 Unit2 source candidates, 2 corrected + 6 high priority + 5 review, 0 approved, no duplicate/orphan.")
     print("BLOCKED: printed SP verification / manual RPH correction before annual RPT and runtime release.")
 
 if __name__=="__main__":
