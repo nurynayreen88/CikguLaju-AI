@@ -15,7 +15,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan imej tempat ibadat pelbagai agama dan petikan Perlembagaan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 5: Agama dan Kepercayaan.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 78–83: Agama dan kepercayaan pelbagai masyarakat serta kedudukan Islam. Murid menamakan kepelbagaian agama serta kepercayaan masyarakat secara hormat. Guru menyemak jawapan awal berpandukan 11.2.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 78–83: Agama dan kepercayaan pelbagai masyarakat serta kedudukan Islam sebagai agama Persekutuan. Murid menamakan kepelbagaian agama serta kepercayaan masyarakat secara hormat. Guru menyemak jawapan awal berpandukan 11.2.1.
 
 **Aktiviti 2 (20 min):** Guru menyoal bukti konkrit hlm. 78–83 untuk menguji dapatan murid. Murid menerangkan kedudukan Islam sebagai agama Persekutuan dengan teks yang betul. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan memahami adab ketika berada di rumah ibadat.
 
