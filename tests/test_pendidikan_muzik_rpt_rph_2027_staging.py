@@ -114,7 +114,7 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
         self.assertTrue(all("4.1.1" in row["sp_rpt_source"] for row in manifest["pdps"] if row.get("source_book_content_page_checked")))
         self.assertTrue(all("4.1.1" not in row["sp"] for row in manifest["pdps"] if row.get("source_book_content_page_checked")))
         self.assertTrue(all(not row["source_book_audio_file_verified"] for row in manifest["pdps"] if row.get("source_book_content_page_checked")))
-        self.assertTrue(any("3.1.1" in row["sp"] for row in manifest["pdps"]))
+        self.assertTrue(any("3.1.1" in row.get("sp_rpt_source", []) for row in manifest["pdps"]))
         sources = json.loads((MUSIC / "y4_dskp_sp_rph_seeds.json").read_text(encoding="utf-8"))
         self.assertEqual(
             {x["sp"] for x in sources["standards"] if x["flag_kod_sk_sp_tidak_sepadan"]},
@@ -125,13 +125,10 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
         """Fail closed if a new unknown SP or premature approval appears."""
         root = MUSIC / "rpt_rph_2027"
         audit = json.loads((root / "DSKP_SP_CODE_PRESENCE_175_20261106.json").read_text(encoding="utf-8"))
-        allowed = {
-            "MZ-Y4-21": ["3.1.2", "3.1.3"],
-            "MZ-Y4-24": ["3.1.1", "3.1.2", "3.1.3"],
-        }
+        allowed = {}  # all current draft SP codes occur in the printed DSKP
         self.assertEqual(audit["summary"]["rph_count"], 175)
-        self.assertEqual(audit["summary"]["sp_present_rph"], 173)
-        self.assertEqual(audit["summary"]["sp_absent_rph"], 2)
+        self.assertEqual(audit["summary"]["sp_present_rph"], 175)
+        self.assertEqual(audit["summary"]["sp_absent_rph"], 0)
         self.assertEqual(set(audit["summary"]["conflicted_pdps"]), set(allowed))
         self.assertEqual(len(audit["records"]), 175)
 
@@ -164,11 +161,12 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
         }
         for pdp, (source, printed) in expected.items():
             row = manifest["pdps"][pdp-1]
-            self.assertEqual(row["sp"], source)
+            self.assertEqual(row["sp_rpt_source"], source)
+            self.assertEqual(row["sp"], printed)
             self.assertEqual(row["dskp_source_printed_sp"], printed)
             self.assertEqual(row["textbook_printed_sp"], printed)
             self.assertFalse(row["dskp_crosswalk_approved"])
-            self.assertEqual(row["dskp_crosswalk_review_level"], "SOURCE_VERIFIED_CODE_DIFFERENCE_UNRESOLVED")
+            self.assertEqual(row["dskp_crosswalk_review_level"], "SP_PRINTED_MATCHED_SK_NUMBERING_UNRESOLVED")
             self.assertIn("drive.google.com", row["dskp_source_document_url"])
             doc = (MUSIC / "rpt_rph_2027" / "year4" / f"rph_pdp_{pdp:02d}.md").read_text(encoding="utf-8")
             self.assertIn("BELUM DILULUSKAN", doc)
@@ -473,7 +471,7 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
 
     def test_music_preview_flags_curriculum_and_calendar_blockers_fail_closed(self):
         """No publication from native staging preview for two invalid SP rows and ten zero-day slots."""
-        curriculum, calendar = [], []
+        curriculum, numbering, calendar = [], [], []
         for year in range(2, 7):
             for pdp in range(1, 36):
                 item = module.build_staging_preview(SOURCE, year, pdp)
@@ -484,28 +482,34 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
                     self.assertIn("DSKP_CROSSWALK_NOT_APPROVED", item["warnings"])
                 else:
                     self.assertNotIn("SP_CODE_NOT_FOUND_IN_YEAR_DSKP", item["warnings"])
+                if item["source_sp_numbering_discrepancy"]:
+                    numbering.append(item["source_pdp_id"])
+                    self.assertIn("DSKP_SK_SP_NUMBERING_DISCREPANCY", item["warnings"])
+                    self.assertIn("DSKP_CROSSWALK_NOT_APPROVED", item["warnings"])
                 if item["rpt_week_zero_candidate_days"]:
                     calendar.append(item["source_pdp_id"])
                     self.assertIn("RPT_ZERO_CANDIDATE_SCHOOL_DAYS", item["warnings"])
                     self.assertIn("PDP_ANJAL_DO_NOT_AUTO_SHIFT", item["warnings"])
                 else:
                     self.assertNotIn("RPT_ZERO_CANDIDATE_SCHOOL_DAYS", item["warnings"])
-        self.assertEqual(curriculum, ["MZ-Y4-21", "MZ-Y4-24"])
+        self.assertEqual(curriculum, [])
+        self.assertEqual(numbering, ["MZ-Y4-21", "MZ-Y4-24"])
         self.assertEqual(calendar, [f"MZ-Y{year}-{pdp:02d}" for year in range(2, 7) for pdp in (6, 19)])
 
     def test_music_175_sp_code_source_presence_matrix(self):
         audit = json.loads((MUSIC / "rpt_rph_2027" / "DSKP_SP_CODE_PRESENCE_175_20261106.json").read_text(encoding="utf-8"))
         self.assertEqual(audit["summary"]["rph_count"], 175)
-        self.assertEqual(audit["summary"]["sp_present_rph"], 173)
-        self.assertEqual(audit["summary"]["sp_absent_rph"], 2)
-        self.assertEqual(audit["summary"]["conflicted_pdps"], ["MZ-Y4-21", "MZ-Y4-24"])
+        self.assertEqual(audit["summary"]["sp_present_rph"], 175)
+        self.assertEqual(audit["summary"]["sp_absent_rph"], 0)
+        self.assertEqual(audit["summary"]["conflicted_pdps"], [])
+        self.assertEqual(audit["summary"]["source_numbering_discrepancy_pdps"], ["MZ-Y4-21", "MZ-Y4-24"])
         self.assertEqual(len(audit["records"]), 175)
         seen = set()
         for year in range(2, 7):
             manifest = json.loads((MUSIC / "rpt_rph_2027" / f"year{year}" / "pdp_manifest.json").read_text(encoding="utf-8"))
             year_records = [r for r in audit["records"] if r["year"] == year]
             self.assertEqual(len(year_records), 35)
-            self.assertEqual(audit["per_year"][str(year)]["without_unknown_codes"], 33 if year == 4 else 35)
+            self.assertEqual(audit["per_year"][str(year)]["without_unknown_codes"], 35)
             for row, original in zip(year_records, manifest["pdps"]):
                 self.assertEqual(row["pdp_id"], original["pdp_id"])
                 self.assertEqual(row["manifest_sp"], original["sp"])
@@ -514,8 +518,9 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
                 self.assertNotIn(row["pdp_id"], seen)
                 seen.add(row["pdp_id"])
                 if row["pdp_id"] in ("MZ-Y4-21", "MZ-Y4-24"):
-                    self.assertEqual(row["code_text_presence"], "SP_NOT_FOUND_IN_MUSIC_DSKP_EXTRACTED_TEXT")
-                    self.assertEqual(row["proposed_dskp_printed_sp"], original["dskp_source_printed_sp"])
+                    self.assertEqual(row["code_text_presence"], "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT")
+                    self.assertEqual(row["proposed_dskp_printed_sp"], original["sp"])
+                    self.assertEqual(row["source_rpt_original_sp"], original["sp_rpt_source"])
                     self.assertFalse(original["dskp_crosswalk_approved"])
                 else:
                     self.assertEqual(row["sp_not_found_in_source"], [])
