@@ -222,7 +222,8 @@ def build_preview(subject, year, records, destination):
             p(row.get("sp_display") or row["sp"],size=7.3,leading=10.8),
             p(row["note"],size=7.6,leading=11.5)
         ])
-    widths = [114, 196, 95, 123, usable - 114 - 196 - 95 - 123]
+    # Reserve more width for the newly expanded full DSKP SK/SP statements.
+    widths = [105, 180, 125, 210, usable - 105 - 180 - 125 - 210]
     if any(x < 0 for x in widths) or abs(sum(widths)-usable)>0.2:
         raise ValueError("RPT layout width overflows landscape A4")
 
