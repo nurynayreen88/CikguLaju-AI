@@ -1,0 +1,50 @@
+name: RPT 2027 format 2026 staged 13-PDF visual QA
+on:
+  pull_request:
+    paths:
+      - 'rpt_2027/common/format_2026_layout_preview.py'
+      - 'scripts/build_rpt_2027_standard_preview.py'
+      - 'tests/test_rpt_2027_standard_2026_layout_preview.py'
+      - '.github/workflows/rpt-2027-format-2026-staging-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'reportlab==4.2.5' 'pypdf==5.1.0' 'PyMuPDF==1.24.14'
+      - run: python -m py_compile rpt_2027/common/format_2026_layout_preview.py scripts/build_rpt_2027_standard_preview.py
+      - name: Audit source and render each of the 13 A4 landscape PDFs
+        run: python -m unittest tests.test_rpt_2027_standard_2026_layout_preview -v
+      - name: Build named reviewer previews (not live downloads)
+        run: |
+          python -m scripts.build_rpt_2027_standard_preview
+          python - <<'PY'
+          from pathlib import Path
+          import fitz
+          root=Path('staging/rpt_2027_seragam_2026/pdf')
+          pdfs=sorted(root.glob('*.pdf'))
+          assert len(pdfs)==13, len(pdfs)
+          for f in pdfs:
+              with fitz.open(f) as pdf:
+                  for page in pdf:
+                      assert page.rect.width>page.rect.height
+                  # First table page, for human visual comparison on review.
+                  if pdf.page_count>1:
+                      pix=pdf[1].get_pixmap(matrix=fitz.Matrix(1.5,1.5),alpha=False)
+                      pix.save(str(f.with_suffix('.page2.png')))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: RPT2027-13-draf-format-2026-PDF-dan-pratonton
+          path: |
+            staging/rpt_2027_seragam_2026/pdf/*.pdf
+            staging/rpt_2027_seragam_2026/pdf/*.png
+          if-no-files-found: error
+          retention-days: 14
