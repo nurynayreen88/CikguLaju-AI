@@ -412,6 +412,22 @@ def create_blueprint():
                 "year": year, "subject": subject, "unit": unit,
                 "lesson": int(token), "teacher": teacher,
             }, None
+        if subject in ("MATH", "SCIENCE"):
+            from web.native_telegram_sequence_rph_client import (
+                verified_native_sequence_available, NativeRPHUnavailable,
+            )
+            try:
+                verified_native_sequence_available(year, subject, unit, token)
+            except (NativeRPHUnavailable, ValueError):
+                return None, (jsonify({
+                    "error": "PdP Sains/Matematik belum dapat disahkan dengan enjin RPH Telegram.",
+                    "code": "TELEGRAM_NATIVE_PDP_RPH_NOT_READY",
+                }), 503)
+            return {
+                "source": "telegram-native-pdp-sequence",
+                "year": year, "subject": subject, "unit": unit,
+                "lesson": token, "teacher": teacher,
+            }, None
         result = verified_preview(year, subject, unit, token, component)
         if result is None:
             return None, (jsonify({"error": "RPH tepat untuk Lesson/PdP ini belum tersedia di Web. Tiada RPH generik atau daripada tajuk lain digunakan.",
@@ -481,6 +497,9 @@ def create_blueprint():
             if selected.get("source") == "telegram-verified-rpt-master":
                 from web.native_verified_rpt_rph_client import request_verified_rpt_rph
                 document = request_verified_rpt_rph(selected, fmt)
+            elif selected.get("source") == "telegram-native-pdp-sequence":
+                from web.native_telegram_sequence_rph_client import request_native_sequence_rph
+                document = request_native_sequence_rph(selected, fmt)
             else:
                 document = request_native_rph(selected, fmt)
         except (NativeRPHUnavailable, ValueError):
@@ -523,7 +542,9 @@ def create_blueprint():
         document, error, trial_remaining = _native_document(selected, "word")
         if error is not None:
             return error
-        filename = f"CIKGULAJU_RPH_{selected['subject']}_TAHUN_{selected['year']}_{selected['lesson']:03d}.docx"
+        lesson_tag = (f"{selected['lesson']:03d}" if type(selected["lesson"]) is int
+                      else re.sub(r"[^A-Za-z0-9_-]", "_", selected["lesson"])[:80])
+        filename = f"CIKGULAJU_RPH_{selected['subject']}_TAHUN_{selected['year']}_{lesson_tag}.docx"
         response = send_file(document,
             mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
             as_attachment=True,download_name=filename,conditional=False)
@@ -542,7 +563,9 @@ def create_blueprint():
         document, error, trial_remaining = _native_document(selected, "pdf")
         if error is not None:
             return error
-        filename = f"CIKGULAJU_RPH_{selected['subject']}_TAHUN_{selected['year']}_{selected['lesson']:03d}.pdf"
+        lesson_tag = (f"{selected['lesson']:03d}" if type(selected["lesson"]) is int
+                      else re.sub(r"[^A-Za-z0-9_-]", "_", selected["lesson"])[:80])
+        filename = f"CIKGULAJU_RPH_{selected['subject']}_TAHUN_{selected['year']}_{lesson_tag}.pdf"
         response = send_file(document,mimetype="application/pdf",
             as_attachment=True,download_name=filename,conditional=False)
         response.headers["X-RPH-Generator"] = "telegram-native"
