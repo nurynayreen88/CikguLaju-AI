@@ -130,6 +130,8 @@ def build_all(destination=OUT):
     ):
         for year in years:
             rows=loader(year)
+            if any(not row.get("sk_display") or not row.get("sp_display") for row in rows):
+                raise ValueError("All staged RPT rows must have full sourced SK/SP statements")
             target=destination / f"CIKGULAJU_RPT_{subject.upper()}_TAHUN_{year}_2027_FORMAT_SERAGAM_DRAF.pdf"
             build_preview(subject,year,rows,target)
             built.append((subject,year,len(rows),target))
