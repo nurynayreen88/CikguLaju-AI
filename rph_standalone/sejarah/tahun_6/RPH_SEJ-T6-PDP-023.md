@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan rajah institusi eksekutif dan petikan fungsi Perdana Menteri. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 7: Pemimpin Negara Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan tugas Perdana Menteri dalam pentadbiran, dasar dan penyelarasan kerajaan. Guru menyemak jawapan awal berpandukan 12.1.2.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 116–117: Tugas Perdana Menteri dalam pentadbiran dan kepimpinan kerajaan. Murid mengelaskan tugas Perdana Menteri dalam pentadbiran, dasar dan penyelarasan kerajaan. Guru menyemak jawapan awal berpandukan 12.1.2.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid melakonkan mesyuarat kabinet contoh untuk menunjukkan peranan ketua kerajaan secara tepat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan penghargaan terhadap pemimpin negara.
+**Aktiviti 2 (20 min):** Guru menyediakan soalan semak fakta hlm. 116–117 sebelum pembentangan. Murid melakonkan mesyuarat kabinet contoh untuk menunjukkan peranan ketua kerajaan secara tepat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan penghargaan terhadap pemimpin negara.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan carta bidang tugas Perdana Menteri dengan tiga contoh. Guru menyemak secara individu menggunakan kata tugas SP 12.1.2 dan nilai K12.1.5, kemudian memberi intervensi kepada murid yang belum tepat.
 

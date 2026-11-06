@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan garis masa dasar atau pencapaian negara di bawah pentadbiran Perdana Menteri berbeza. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 7: Pemimpin Negara Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan inisiatif negara dengan era kepimpinan yang sesuai berdasarkan bukti. Guru menyemak jawapan awal berpandukan 12.1.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 118–120: Pencapaian negara di bawah pentadbiran Perdana Menteri berbeza. Murid memadankan inisiatif negara dengan era kepimpinan yang sesuai berdasarkan bukti. Guru menyemak jawapan awal berpandukan 12.1.3.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid membandingkan dua pencapaian serta menilai kesannya tanpa mengutamakan parti politik. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan memberi sokongan kepada kepemimpinan negara.
+**Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 118–120 bagi menyokong perbandingan. Murid membandingkan dua pencapaian serta menilai kesannya tanpa mengutamakan parti politik. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan memberi sokongan kepada kepemimpinan negara.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan dua kad pencapaian negara dengan tarikh, sumber dan kesan. Guru menyemak secara individu menggunakan kata tugas SP 12.1.3 dan nilai K12.1.6, kemudian memberi intervensi kepada murid yang belum tepat.
 

@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan kad perkilangan, perkhidmatan, pertanian dan pelancongan serta peta ekonomi. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 8: Kemajuan Ekonomi Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan contoh kegiatan ekonomi mengikut sektor utama. Guru menyemak jawapan awal berpandukan 12.2.2.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 129–133: Pertanian, pembuatan, petroleum dan kegiatan penyumbang ekonomi. Murid mengelaskan contoh kegiatan ekonomi mengikut sektor utama. Guru menyemak jawapan awal berpandukan 12.2.2.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 8. Murid membina peta sumbangan sektor kepada pekerjaan dan pembangunan setempat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan menyokong usaha meningkatkan ekonomi negara.
+**Aktiviti 2 (20 min):** Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 129–133. Murid membina peta sumbangan sektor kepada pekerjaan dan pembangunan setempat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan menyokong usaha meningkatkan ekonomi negara.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan jadual empat sektor dengan contoh dan peranan. Guru menyemak secara individu menggunakan kata tugas SP 12.2.2 dan nilai K12.2.5, kemudian memberi intervensi kepada murid yang belum tepat.
 

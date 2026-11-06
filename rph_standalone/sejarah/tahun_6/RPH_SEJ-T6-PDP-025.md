@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan foto kegiatan pertanian, perlombongan dan perdagangan awal Malaysia. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 8: Kemajuan Ekonomi Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun perkembangan sektor utama ekonomi mengikut urutan masa. Guru menyemak jawapan awal berpandukan 12.2.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 126–128: Sektor pertanian, perlombongan dan ekonomi. Murid menyusun perkembangan sektor utama ekonomi mengikut urutan masa. Guru menyemak jawapan awal berpandukan 12.2.1.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 8. Murid menghasilkan carta perubahan daripada kegiatan tradisional kepada sektor moden. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan kemajuan ekonomi bagi mengekalkan kemakmuran negara.
+**Aktiviti 2 (20 min):** Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 126–128. Murid menghasilkan carta perubahan daripada kegiatan tradisional kepada sektor moden. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan kemajuan ekonomi bagi mengekalkan kemakmuran negara.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan garis masa tiga sektor dengan contoh perkembangan. Guru menyemak secara individu menggunakan kata tugas SP 12.2.1 dan nilai K12.2.4, kemudian memberi intervensi kepada murid yang belum tepat.
 

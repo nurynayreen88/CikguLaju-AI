@@ -15,9 +15,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan dua bahan info rasmi tentang masyarakat berbilang agama. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 5: Agama dan Kepercayaan.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina soalan kajian bagaimana kepelbagaian agama dipelihara secara aman. Guru menyemak jawapan awal berpandukan 11.2.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 78–89: Kajian kes cadangan tentang keharmonian masyarakat berbilang. Murid membina soalan kajian bagaimana kepelbagaian agama dipelihara secara aman. Guru menyemak jawapan awal berpandukan 11.2.1.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 5. Murid membandingkan bukti perlembagaan dan contoh aktiviti muafakat komuniti. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan memahami adab ketika berada di rumah ibadat.
+**Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 78–89 bagi menyokong perbandingan. Murid membandingkan bukti perlembagaan dan contoh aktiviti muafakat komuniti. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan memahami adab ketika berada di rumah ibadat.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan laporan kes dua sumber dan tiga amalan keharmonian. Guru menyemak secara individu menggunakan kata tugas SP 11.2.1, 11.2.2 dan nilai K11.2.5, kemudian memberi intervensi kepada murid yang belum tepat.
 

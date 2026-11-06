@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan gambar sambutan perayaan dahulu dan kini daripada sumber berlabel tahun. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 6: Perayaan Masyarakat di Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membandingkan cara sambutan perayaan dari aspek pakaian, komunikasi dan ziarah. Guru menyemak jawapan awal berpandukan 11.3.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 99–101: Sambutan perayaan dahulu dan kini serta analisis SWOT warisan. Murid membandingkan cara sambutan perayaan dari aspek pakaian, komunikasi dan ziarah. Guru menyemak jawapan awal berpandukan 11.3.3.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 6. Murid menghasilkan poster perubahan dengan penekanan kepada hormat budaya dan mengelak stereotaip. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan warisan perayaan masyarakat di Malaysia.
+**Aktiviti 2 (20 min):** Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 99–101. Murid menghasilkan poster perubahan dengan penekanan kepada hormat budaya dan mengelak stereotaip. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan warisan perayaan masyarakat di Malaysia.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan poster dua perubahan perayaan dan satu amalan perpaduan. Guru menyemak secara individu menggunakan kata tugas SP 11.3.3 dan nilai K11.3.6, kemudian memberi intervensi kepada murid yang belum tepat.
 

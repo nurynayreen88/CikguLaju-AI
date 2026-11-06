@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan kad cerita tujuan sambutan beberapa perayaan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 6: Perayaan Masyarakat di Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan tujuan sambutan dengan tradisi perayaan yang sepadan. Guru menyemak jawapan awal berpandukan 11.3.2.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 96–98: Tujuan sambutan dan nilai kekeluargaan, kejiranan serta. Murid memadankan tujuan sambutan dengan tradisi perayaan yang sepadan. Guru menyemak jawapan awal berpandukan 11.3.2.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 6. Murid membandingkan nilai kekeluargaan, kesyukuran dan kebersamaan dalam dua perayaan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan menghormati kepelbagaian sambutan dan adab perayaan.
+**Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 96–98 bagi menyokong perbandingan. Murid membandingkan nilai kekeluargaan, kesyukuran dan kebersamaan dalam dua perayaan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan menghormati kepelbagaian sambutan dan adab perayaan.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan jadual dua perayaan, tujuan dan satu persamaan. Guru menyemak secara individu menggunakan kata tugas SP 11.3.2 dan nilai K11.3.5, kemudian memberi intervensi kepada murid yang belum tepat.
 

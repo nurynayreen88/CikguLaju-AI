@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan gambar masjid, kuil, gereja, tokong dan tempat ibadat yang relevan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 5: Agama dan Kepercayaan.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan nama rumah ibadat dengan gambar yang dilabel tepat. Guru menyemak jawapan awal berpandukan 11.2.4.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 86–88: Masjid, gereja, tokong, wat, kuil dan gurdwara serta adab. Murid memadankan nama rumah ibadat dengan gambar yang dilabel tepat. Guru menyemak jawapan awal berpandukan 11.2.4.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 5. Murid merangka peraturan lawatan pendidikan yang menghormati kesucian tempat ibadat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan menghormati kepelbagaian agama dan kepercayaan bagi mewujudkan perpaduan.
+**Aktiviti 2 (20 min):** Guru menyoal bukti konkrit hlm. 86–88 untuk menguji dapatan murid. Murid merangka peraturan lawatan pendidikan yang menghormati kesucian tempat ibadat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan menghormati kepelbagaian agama dan kepercayaan bagi mewujudkan perpaduan.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan empat padanan tempat ibadat dan dua peraturan hormat. Guru menyemak secara individu menggunakan kata tugas SP 11.2.4 dan nilai K11.2.7, kemudian memberi intervensi kepada murid yang belum tepat.
 

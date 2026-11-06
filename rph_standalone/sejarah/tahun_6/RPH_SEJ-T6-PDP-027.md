@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan graf pencapaian ekonomi Malaysia daripada penerbitan rasmi dengan tahun dinyatakan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 8: Kemajuan Ekonomi Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mentafsir satu graf pertumbuhan atau keluaran industri tanpa mengubah data asal. Guru menyemak jawapan awal berpandukan 12.2.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 134–139: Pencapaian ekonomi negara termasuk PETRONAS dan perkembangan. Murid mentafsir satu graf pertumbuhan atau keluaran industri tanpa mengubah data asal. Guru menyemak jawapan awal berpandukan 12.2.3.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 8. Murid membina kapsyen dua pencapaian ekonomi yang menyatakan tahun, sektor dan manfaat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan rasa bangga terhadap barangan buatan Malaysia.
+**Aktiviti 2 (20 min):** Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 134–139. Murid membina kapsyen dua pencapaian ekonomi yang menyatakan tahun, sektor dan manfaat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan rasa bangga terhadap barangan buatan Malaysia.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan dua pernyataan pencapaian ekonomi berserta bukti data. Guru menyemak secara individu menggunakan kata tugas SP 12.2.3 dan nilai K12.2.6, kemudian memberi intervensi kepada murid yang belum tepat.
 
