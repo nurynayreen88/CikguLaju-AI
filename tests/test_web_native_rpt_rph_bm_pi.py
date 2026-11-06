@@ -28,7 +28,7 @@ class VerifiedRPTClientTests(unittest.TestCase):
         from pathlib import Path
         root=Path(__file__).resolve().parents[1]
         code=(root/"web"/"unified_rph_web.py").read_text("utf-8")
-        self.assertIn('if subject in ("BM", "PI"):',code)
+        self.assertIn('if subject == "PI":',code)
         self.assertIn('verified_rpt_available(year, subject, unit, token)',code)
         self.assertIn('request_verified_rpt_rph(selected, fmt)',code)
         self.assertIn('TELEGRAM_RPT_RPH_NOT_READY',code)

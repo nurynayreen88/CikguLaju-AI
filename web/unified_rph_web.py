@@ -431,10 +431,26 @@ def create_blueprint():
             teacher = _teacher_context()
         except (ValueError, TypeError):
             return None, (jsonify({"error": "Pilihan Tahun/Subjek/Unit/PdP tidak sah"}), 400)
-        # BM and Pendidikan Islam use real, verified RPT rows in the
-        # authoritative Telegram master DB. Do not demand standalone English
-        # source files for these subjects or generate a Web-side RPH.
-        if subject in ("BM", "PI"):
+        # BM's REAL Telegram flow uses verified_pdp_sequence, NOT rpt_entries.
+        # Never reinterpret an opaque BM PdP token as an RPT row ID.
+        if subject == "BM":
+            from web.native_telegram_bm_rph_client import (
+                verified_native_bm_available, NativeRPHUnavailable,
+            )
+            try:
+                verified_native_bm_available(year, unit, token)
+            except (NativeRPHUnavailable, ValueError):
+                return None, (jsonify({
+                    "error": "PdP Bahasa Melayu belum dapat disahkan menggunakan sumber Telegram sebenar.",
+                    "code": "TELEGRAM_NATIVE_BM_RPH_NOT_READY",
+                }), 503)
+            return {
+                "source": "telegram-native-bm-pdp",
+                "year": year, "subject": subject, "unit": unit,
+                "lesson": token, "teacher": teacher,
+            }, None
+        # Pendidikan Islam still resolves its own exact native master RPT row.
+        if subject == "PI":
             from web.native_verified_rpt_rph_client import (
                 verified_rpt_available, NativeRPHUnavailable,
             )
@@ -532,7 +548,10 @@ def create_blueprint():
         """
         from web.native_telegram_rph_client import request_native_rph, NativeRPHUnavailable
         try:
-            if selected.get("source") == "telegram-verified-rpt-master":
+            if selected.get("source") == "telegram-native-bm-pdp":
+                from web.native_telegram_bm_rph_client import request_native_bm_rph
+                document = request_native_bm_rph(selected, fmt)
+            elif selected.get("source") == "telegram-verified-rpt-master":
                 from web.native_verified_rpt_rph_client import request_verified_rpt_rph
                 document = request_verified_rpt_rph(selected, fmt)
             elif selected.get("source") == "telegram-native-pdp-sequence":
