@@ -41,7 +41,7 @@ def main():
             raise RuntimeError("Activities missing in Word PDF "+doc.name)
         if pages!=1:failures.append({"document":doc.name,"pages":pages})
     (OUT/"WORD_PRINT_QA.json").write_text(json.dumps({
-       "year":4,"checked":len(docs),"one_page_pass":len(docs)-len(failures),
+       "year":5,"checked":len(docs),"one_page_pass":len(docs)-len(failures),
        "overflow":failures,"status":"DRAF_PRINT_ONLY_NOT_ACADEMIC_READY",
     },ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(f"SAINS_Y5_PRINT_QA: {len(docs)-len(failures)}/83 Word A4 single-page")
