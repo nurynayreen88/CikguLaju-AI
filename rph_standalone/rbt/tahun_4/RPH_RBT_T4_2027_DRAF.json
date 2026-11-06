@@ -101,13 +101,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 1.1.1, 1.1.2 melalui kad pengelasan atau senarai contoh berlabel; dua penerangan fungsi atau sebab dalam jadual banding beza, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan kad pengelasan atau senarai contoh berlabel; dua penerangan fungsi atau sebab dalam jadual banding beza bagi SP 1.1.1, 1.1.2; guru menilai ketepatan pilihan dan pengelasan; ketepatan penerangan dan satu justifikasi.",
+      "objektif": "Pada akhir PdP, murid dapat menyatakan tiga peraturan bengkel dan menerangkan maksud sekurang-kurangnya tiga simbol keselamatan (SP 1.1.1, 1.1.2).",
+      "kriteria_kejayaan": "Murid menyusun tiga kad simbol dengan maksudnya dan menjelaskan tindakan selamat; guru menilai bukti mengikut SP 1.1.1, 1.1.2.",
       "bbm": "Kad simbol keselamatan, carta peraturan bengkel, pelan laluan keluar, kit pertolongan cemas demonstrasi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan kad simbol keselamatan, pelan keluar, gambar bengkel dalam situasi \"kenal pasti risiko sebenar di bengkel sekolah\" dan mengaitkan masalah dengan SP 1.1.1, 1.1.2. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menunjukkan papan tanda bengkel dan gambar laluan keluar; murid menyatakan risiko jika tanda diabaikan. (SP 1.1.1, 1.1.2)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -172,7 +172,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -200,13 +202,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 1.1.3 melalui dua penerangan fungsi atau sebab dalam jadual banding beza, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan dua penerangan fungsi atau sebab dalam jadual banding beza bagi SP 1.1.3; guru menilai ketepatan penerangan dan satu justifikasi.",
+      "objektif": "Pada akhir PdP, murid dapat memilih tindakan selamat bagi dua kes kemalangan bengkel yang diberi (SP 1.1.3).",
+      "kriteria_kejayaan": "Murid menyusun urutan tindakan kecemasan dan menjelaskan orang yang perlu dimaklumkan; guru menilai bukti mengikut SP 1.1.3.",
       "bbm": "Kad simbol keselamatan, carta peraturan bengkel, pelan laluan keluar, kit pertolongan cemas demonstrasi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan kad simbol keselamatan, pelan keluar, gambar bengkel dalam situasi \"kenal pasti risiko sebenar di bengkel sekolah\" dan mengaitkan masalah dengan SP 1.1.3. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru memaparkan gambar luka dan renjatan elektrik tanpa melakonkan kecederaan; murid menyatakan tindakan pertama yang selamat. (SP 1.1.3)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -266,7 +268,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -299,13 +303,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "pembentangan",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 1.1.4, 1.1.5 melalui dua penerangan fungsi atau sebab dalam jadual banding beza; pembentangan hasil atau dokumentasi proses dan respons soalan, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan dua penerangan fungsi atau sebab dalam jadual banding beza; pembentangan hasil atau dokumentasi proses dan respons soalan bagi SP 1.1.4, 1.1.5; guru menilai ketepatan penerangan dan satu justifikasi; kejelasan hujah, bukti ujian dan maklum balas.",
+      "objektif": "Pada akhir PdP, murid dapat mengenal pasti dua amalan kebersihan/penyelenggaraan dan menjelaskan dua akibat kecuaian (SP 1.1.4, 1.1.5).",
+      "kriteria_kejayaan": "Murid melengkapkan senarai semak bengkel serta mengaitkan dua risiko dengan pencegahan; guru menilai bukti mengikut SP 1.1.4, 1.1.5.",
       "bbm": "Kad simbol keselamatan, carta peraturan bengkel, pelan laluan keluar, kit pertolongan cemas demonstrasi",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan kad simbol keselamatan, pelan keluar, gambar bengkel dalam situasi \"kenal pasti risiko sebenar di bengkel sekolah\" dan mengaitkan masalah dengan SP 1.1.4, 1.1.5. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menunjukkan dua keadaan bengkel kemas dan berselerak; murid memilih ruang kerja yang selamat serta sebabnya. (SP 1.1.4, 1.1.5)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -370,7 +374,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -403,13 +409,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 2.1.1, 2.1.2 melalui dua penerangan fungsi atau sebab dalam jadual banding beza; kad pengelasan atau senarai contoh berlabel, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan dua penerangan fungsi atau sebab dalam jadual banding beza; kad pengelasan atau senarai contoh berlabel bagi SP 2.1.1, 2.1.2; guru menilai ketepatan penerangan dan satu justifikasi; ketepatan pilihan dan pengelasan.",
+      "objektif": "Pada akhir PdP, murid dapat menerangkan maksud reka bentuk dengan dua contoh produk dan kepentingannya kepada pengguna (SP 2.1.1, 2.1.2).",
+      "kriteria_kejayaan": "Murid membandingkan fungsi dua bekas alat tulis dan mencadangkan satu penambahbaikan; guru menilai bukti mengikut SP 2.1.1, 2.1.2.",
       "bbm": "Contoh produk, helaian lakaran, pensel, pembaris, kad bentuk 2D/3D, bahan kitar semula bersih",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan pensel, pembaris, objek 2D dan 3D, kertas lukisan dalam situasi \"mereka bentuk bekas alat tulis yang mudah digunakan\" dan mengaitkan masalah dengan SP 2.1.1, 2.1.2. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menunjukkan dua bekas alat tulis berlainan bentuk; murid membandingkan fungsi sebelum menilai rupa. (SP 2.1.1, 2.1.2)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -474,7 +480,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -512,13 +520,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 2.1.3, 2.1.4, 2.1.5 melalui dua penerangan fungsi atau sebab dalam jadual banding beza, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan dua penerangan fungsi atau sebab dalam jadual banding beza bagi SP 2.1.3, 2.1.4, 2.1.5; guru menilai ketepatan penerangan dan satu justifikasi.",
+      "objektif": "Pada akhir PdP, murid dapat menghubungkan dua kerjaya reka bentuk dengan tugas serta mengenal pasti sekurang-kurangnya lima elemen reka bentuk (SP 2.1.3, 2.1.4, 2.1.5).",
+      "kriteria_kejayaan": "Murid menanda elemen pada dua objek dan menyatakan satu sebab apresiasi reka bentuk; guru menilai bukti mengikut SP 2.1.3, 2.1.4, 2.1.5.",
       "bbm": "Contoh produk, helaian lakaran, pensel, pembaris, kad bentuk 2D/3D, bahan kitar semula bersih",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan pensel, pembaris, objek 2D dan 3D, kertas lukisan dalam situasi \"mereka bentuk bekas alat tulis yang mudah digunakan\" dan mengaitkan masalah dengan SP 2.1.3, 2.1.4, 2.1.5. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menunjukkan beberapa produk rekaan dan kerjaya perekanya; murid menamakan elemen yang kelihatan. (SP 2.1.3, 2.1.4, 2.1.5)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -588,7 +596,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -621,13 +631,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat mengenal pasti enam jenis garisan dan melakar objek dengan sekurang-kurangnya tiga garisan berbeza mengikut SP 2.2.1, 2.2.2.",
-      "kriteria_kejayaan": "Murid menunjukkan lembaran jenis garisan berlabel serta satu lakaran objek yang mempamerkan tiga variasi garisan berdasarkan SP 2.2.1, 2.2.2; guru menilai ketepatan reka bentuk dan bukti pembelajaran.",
+      "objektif": "Pada akhir PdP, murid dapat mengenal pasti enam jenis garisan dan melakar sebuah objek dengan tiga variasi garisan (SP 2.2.1, 2.2.2).",
+      "kriteria_kejayaan": "Murid menyediakan carta jenis garisan berlabel dan satu lakaran objek yang menggunakan tiga jenis garisan; guru menilai bukti mengikut SP 2.2.1, 2.2.2.",
       "bbm": "Contoh produk, helaian lakaran, pensel, pembaris, kad bentuk 2D/3D, bahan kitar semula bersih",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan pensel, pembaris, objek 2D dan 3D, kertas lukisan dalam situasi \"mereka bentuk bekas alat tulis yang mudah digunakan\" dan mengaitkan masalah dengan SP 2.2.1, 2.2.2. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menayangkan garisan tebal, halus, beralun, putus-putus dan zig-zag pada produk; murid meneka jenisnya. (SP 2.2.1, 2.2.2)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -694,7 +704,9 @@
         "textbook_activity_visual_individual_approved": false,
         "teacher_individual_approval": false,
         "objective_no_unrelated_programming": true,
-        "visual_textbook_individual_approved": false
+        "visual_textbook_individual_approved": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -727,13 +739,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat menjana sekurang-kurangnya dua idea dan menghasilkan tiga lakaran produk bertema menggunakan garisan dan bentuk asas mengikut SP 2.2.3, 2.2.4.",
-      "kriteria_kejayaan": "Murid menunjukkan tiga lakaran berlabel dengan sekurang-kurangnya dua kombinasi bentuk asas berdasarkan SP 2.2.3, 2.2.4; guru menilai ketepatan reka bentuk dan bukti pembelajaran.",
+      "objektif": "Pada akhir PdP, murid dapat menjana dua idea dan menghasilkan tiga lakaran bertema menggunakan bentuk asas (SP 2.2.3, 2.2.4).",
+      "kriteria_kejayaan": "Murid menunjukkan tiga lakaran yang berbeza dengan garisan dan bentuk asas berlabel; guru menilai bukti mengikut SP 2.2.3, 2.2.4.",
       "bbm": "Contoh produk, helaian lakaran, pensel, pembaris, kad bentuk 2D/3D, bahan kitar semula bersih",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan pensel, pembaris, objek 2D dan 3D, kertas lukisan dalam situasi \"mereka bentuk bekas alat tulis yang mudah digunakan\" dan mengaitkan masalah dengan SP 2.2.3, 2.2.4. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menunjukkan lakaran kereta atau bekas alat tulis dan bertanya cara bentuk asas boleh digabungkan. (SP 2.2.3, 2.2.4)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -800,7 +812,9 @@
         "textbook_activity_visual_individual_approved": false,
         "teacher_individual_approval": false,
         "objective_no_unrelated_programming": true,
-        "visual_textbook_individual_approved": false
+        "visual_textbook_individual_approved": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -828,13 +842,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 2.2.5 melalui rubrik semak serta lakaran atau kod yang telah dibaiki, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan rubrik semak serta lakaran atau kod yang telah dibaiki bagi SP 2.2.5; guru menilai kejelasan kelemahan, sebab dan pembetulan.",
+      "objektif": "Pada akhir PdP, murid dapat menganalisis tiga lakaran produk bertema menggunakan ruang, bentuk dan kesesuaian fungsi (SP 2.2.5).",
+      "kriteria_kejayaan": "Murid merekod dua kekuatan dan dua kelemahan lakaran dengan alasan; guru menilai bukti mengikut SP 2.2.5.",
       "bbm": "Contoh produk, helaian lakaran, pensel, pembaris, kad bentuk 2D/3D, bahan kitar semula bersih",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan pensel, pembaris, objek 2D dan 3D, kertas lukisan dalam situasi \"mereka bentuk bekas alat tulis yang mudah digunakan\" dan mengaitkan masalah dengan SP 2.2.5. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru memaparkan lakaran bekas alat tulis yang terlalu kecil; murid mengesan masalah muatan. (SP 2.2.5)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -894,7 +908,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -927,13 +943,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "amali",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 2.2.6, 2.2.7 melalui rubrik semak serta lakaran atau kod yang telah dibaiki; bukti hasil kerja peringkat semasa dan catatan ujian fungsi, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan rubrik semak serta lakaran atau kod yang telah dibaiki; bukti hasil kerja peringkat semasa dan catatan ujian fungsi bagi SP 2.2.6, 2.2.7; guru menilai kejelasan kelemahan, sebab dan pembetulan; pematuhan langkah, keselamatan dan fungsi peringkat semasa.",
+      "objektif": "Pada akhir PdP, murid dapat menambah baik satu lakaran dan menghasilkan model ringkas mengikut pilihan bahan (SP 2.2.6, 2.2.7).",
+      "kriteria_kejayaan": "Murid menunjukkan lakaran sebelum/selepas serta model yang boleh memuatkan alat tulis; guru menilai bukti mengikut SP 2.2.6, 2.2.7.",
       "bbm": "Contoh produk, helaian lakaran, pensel, pembaris, kad bentuk 2D/3D, bahan kitar semula bersih",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan pensel, pembaris, objek 2D dan 3D, kertas lukisan dalam situasi \"mereka bentuk bekas alat tulis yang mudah digunakan\" dan mengaitkan masalah dengan SP 2.2.6, 2.2.7. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru membandingkan lakaran asal dan lakaran yang diubah untuk ruang simpanan; murid memilih ciri yang lebih sesuai. (SP 2.2.6, 2.2.7)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -998,7 +1014,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -1026,13 +1044,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "pembentangan",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 2.2.8 melalui kad pengelasan atau senarai contoh berlabel, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan kad pengelasan atau senarai contoh berlabel bagi SP 2.2.8; guru menilai ketepatan pilihan dan pengelasan.",
+      "objektif": "Pada akhir PdP, murid dapat membentangkan model produk bertema dengan menerangkan fungsi, bahan, garisan dan penambahbaikan (SP 2.2.8).",
+      "kriteria_kejayaan": "Murid membuat penerangan lisan dengan bukti model, menjawab satu soalan dan menerima satu cadangan rakan; guru menilai bukti mengikut SP 2.2.8.",
       "bbm": "Contoh produk, helaian lakaran, pensel, pembaris, kad bentuk 2D/3D, bahan kitar semula bersih",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan pensel, pembaris, objek 2D dan 3D, kertas lukisan dalam situasi \"mereka bentuk bekas alat tulis yang mudah digunakan\" dan mengaitkan masalah dengan SP 2.2.8. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menunjukkan model bekas alat tulis yang siap dan contoh kad persembahan; murid menyatakan maklumat yang perlu diterangkan kepada pengunjung galeri. (SP 2.2.8)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -1092,7 +1110,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -1125,13 +1145,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "amali",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 3.1.1, 3.1.2 melalui dua penerangan fungsi atau sebab dalam jadual banding beza, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan dua penerangan fungsi atau sebab dalam jadual banding beza bagi SP 3.1.1, 3.1.2; guru menilai ketepatan penerangan dan satu justifikasi.",
+      "objektif": "Pada akhir PdP, murid dapat menghuraikan dua perbezaan alat konvensional dan moden serta kepentingan teknologi (SP 3.1.1, 3.1.2).",
+      "kriteria_kejayaan": "Murid melengkapkan jadual dua kaedah pembuatan dengan sekurang-kurangnya dua justifikasi; guru menilai bukti mengikut SP 3.1.1, 3.1.2.",
       "bbm": "Contoh alat konvensional dan moden, kertas lakaran, pembaris, jadual kos, bahan prototaip selamat",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan contoh alat konvensional/moden, lakaran, bahan model dalam situasi \"memilih kaedah menghasilkan bekas pensel yang selamat dan kos berpatutan\" dan mengaitkan masalah dengan SP 3.1.1, 3.1.2. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menunjukkan pen biasa, pen 3D, jahitan tangan dan mesin jahit; murid membandingkan usaha dan hasil. (SP 3.1.1, 3.1.2)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -1196,7 +1216,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -1229,13 +1251,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat menjana dua idea lalu menghasilkan satu lakaran bermaklumat bekas pensel dengan ukuran dan bahan berlabel mengikut SP 3.1.3, 3.1.4.",
-      "kriteria_kejayaan": "Murid menunjukkan dua idea awal dan satu lakaran gabungan dengan ukuran, fungsi dan bahan berdasarkan SP 3.1.3, 3.1.4; guru menilai ketepatan reka bentuk dan bukti pembelajaran.",
+      "objektif": "Pada akhir PdP, murid dapat menghasilkan dua idea dan satu lakaran bermaklumat bekas pensel berukuran (SP 3.1.3, 3.1.4).",
+      "kriteria_kejayaan": "Murid menunjukkan lakaran berlabel ukuran, bukaan, bahan dan fungsi; guru menilai bukti mengikut SP 3.1.3, 3.1.4.",
       "bbm": "Contoh alat konvensional dan moden, kertas lakaran, pembaris, jadual kos, bahan prototaip selamat",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan contoh alat konvensional/moden, lakaran, bahan model dalam situasi \"memilih kaedah menghasilkan bekas pensel yang selamat dan kos berpatutan\" dan mengaitkan masalah dengan SP 3.1.3, 3.1.4. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menunjukkan ilustrasi kapal terbang mini dan bekas pensel dari buku; murid meneka bahan dan ukuran yang diperlukan. (SP 3.1.3, 3.1.4)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -1303,7 +1325,9 @@
         "textbook_activity_visual_individual_approved": false,
         "teacher_individual_approval": false,
         "objective_no_unrelated_programming": true,
-        "visual_textbook_individual_approved": false
+        "visual_textbook_individual_approved": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -1336,13 +1360,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 3.1.5, 3.1.6 melalui rubrik semak serta lakaran atau kod yang telah dibaiki; jadual bahan, kuantiti, kos seunit dan anggaran jumlah, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan rubrik semak serta lakaran atau kod yang telah dibaiki; jadual bahan, kuantiti, kos seunit dan anggaran jumlah bagi SP 3.1.5, 3.1.6; guru menilai kejelasan kelemahan, sebab dan pembetulan; ketepatan kos dan kesesuaian pilihan.",
+      "objektif": "Pada akhir PdP, murid dapat menilai satu lakaran bekas pensel dan mengira jumlah kos bahan yang diperlukan (SP 3.1.5, 3.1.6).",
+      "kriteria_kejayaan": "Murid menandakan dua pembetulan lakaran serta menghasilkan jadual kos yang dikira betul; guru menilai bukti mengikut SP 3.1.5, 3.1.6.",
       "bbm": "Contoh alat konvensional dan moden, kertas lakaran, pembaris, jadual kos, bahan prototaip selamat",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan contoh alat konvensional/moden, lakaran, bahan model dalam situasi \"memilih kaedah menghasilkan bekas pensel yang selamat dan kos berpatutan\" dan mengaitkan masalah dengan SP 3.1.5, 3.1.6. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru mempamerkan lakaran bekas pensel dan senarai harga bahan; murid menilai sama ada saiz dan kos munasabah. (SP 3.1.5, 3.1.6)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -1407,7 +1431,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -1440,13 +1466,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "pembentangan",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 3.1.7, 3.1.8 melalui bukti hasil kerja peringkat semasa dan catatan ujian fungsi; pembentangan hasil atau dokumentasi proses dan respons soalan, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan bukti hasil kerja peringkat semasa dan catatan ujian fungsi; pembentangan hasil atau dokumentasi proses dan respons soalan bagi SP 3.1.7, 3.1.8; guru menilai pematuhan langkah, keselamatan dan fungsi peringkat semasa; kejelasan hujah, bukti ujian dan maklum balas.",
+      "objektif": "Pada akhir PdP, murid dapat menghasilkan model bekas pensel menggunakan teknologi pilihan dan membentangkan hasilnya (SP 3.1.7, 3.1.8).",
+      "kriteria_kejayaan": "Murid menunjukkan model yang berfungsi untuk menyimpan alat tulis dan menerangkan satu keputusan kerja; guru menilai bukti mengikut SP 3.1.7, 3.1.8.",
       "bbm": "Contoh alat konvensional dan moden, kertas lakaran, pembaris, jadual kos, bahan prototaip selamat",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan contoh alat konvensional/moden, lakaran, bahan model dalam situasi \"memilih kaedah menghasilkan bekas pensel yang selamat dan kos berpatutan\" dan mengaitkan masalah dengan SP 3.1.7, 3.1.8. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru mempamerkan sampel bekas pensel dan alatan selamat yang telah disediakan; murid mengingat semula lakaran dan urutan kerja. (SP 3.1.7, 3.1.8)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -1511,7 +1537,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -1544,13 +1572,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 4.1.1, 4.1.2 melalui kad pengelasan atau senarai contoh berlabel, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan kad pengelasan atau senarai contoh berlabel bagi SP 4.1.1, 4.1.2; guru menilai ketepatan pilihan dan pengelasan.",
+      "objektif": "Pada akhir PdP, murid dapat menghubungkan perubahan reka bentuk pembungkusan dengan tiga ciri pembungkusan mengikut produk (SP 4.1.1, 4.1.2).",
+      "kriteria_kejayaan": "Murid mengelaskan makanan/bukan makanan dan mencatat tiga ciri perlindungan atau maklumat produk; guru menilai bukti mengikut SP 4.1.1, 4.1.2.",
       "bbm": "Contoh pembungkusan terpakai yang bersih, kotak, kadbod, kertas, gunting keselamatan, gam, pembaris",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan contoh kotak, kertas lipat, kadbod, pembaris dalam situasi \"melindungi produk dengan pembungkusan yang sesuai\" dan mengaitkan masalah dengan SP 4.1.1, 4.1.2. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru membandingkan pembungkusan makanan tradisional dan produk moden; murid menyatakan tujuan kedua-duanya. (SP 4.1.1, 4.1.2)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -1615,7 +1643,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -1648,13 +1678,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat menerangkan empat kepentingan pembungkusan dan menjana dua idea lakaran bagi set alat tulis mengikut SP 4.1.3, 4.1.4.",
-      "kriteria_kejayaan": "Murid menunjukkan jadual sebab pembungkusan diperlukan serta dua lakaran pembungkusan ringkas berdasarkan SP 4.1.3, 4.1.4; guru menilai ketepatan reka bentuk dan bukti pembelajaran.",
+      "objektif": "Pada akhir PdP, murid dapat menerangkan empat kepentingan pembungkusan serta menjana dua idea pembungkusan set alat tulis (SP 4.1.3, 4.1.4).",
+      "kriteria_kejayaan": "Murid membentangkan dua lakaran awal dan menerangkan kaitannya dengan perlindungan produk; guru menilai bukti mengikut SP 4.1.3, 4.1.4.",
       "bbm": "Contoh pembungkusan terpakai yang bersih, kotak, kadbod, kertas, gunting keselamatan, gam, pembaris",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan contoh kotak, kertas lipat, kadbod, pembaris dalam situasi \"melindungi produk dengan pembungkusan yang sesuai\" dan mengaitkan masalah dengan SP 4.1.3, 4.1.4. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menunjukkan kotak yang melindungi isi dan pembungkusan tanpa maklumat; murid menentukan yang lebih sesuai. (SP 4.1.3, 4.1.4)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -1720,7 +1750,9 @@
         "textbook_activity_visual_individual_approved": false,
         "teacher_individual_approval": false,
         "objective_no_unrelated_programming": true,
-        "visual_textbook_individual_approved": false
+        "visual_textbook_individual_approved": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -1753,13 +1785,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat menghasilkan lakaran pembungkusan dengan ukuran, penutup dan ruang serta menerangkan pilihan reka bentuk mengikut SP 4.1.5, 4.1.6.",
-      "kriteria_kejayaan": "Murid menunjukkan satu lakaran bermaklumat pembungkusan dengan label bahan, ruang, penutup dan justifikasi berdasarkan SP 4.1.5, 4.1.6; guru menilai ketepatan reka bentuk dan bukti pembelajaran.",
+      "objektif": "Pada akhir PdP, murid dapat melakar pembungkusan produk berlabel ukuran, ruang dan penutup serta menghuraikan fungsinya (SP 4.1.5, 4.1.6).",
+      "kriteria_kejayaan": "Murid menghasilkan satu lakaran bermaklumat beserta penerangan sebab saiz dan bahan dipilih; guru menilai bukti mengikut SP 4.1.5, 4.1.6.",
       "bbm": "Contoh pembungkusan terpakai yang bersih, kotak, kadbod, kertas, gunting keselamatan, gam, pembaris",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan contoh kotak, kertas lipat, kadbod, pembaris dalam situasi \"melindungi produk dengan pembungkusan yang sesuai\" dan mengaitkan masalah dengan SP 4.1.5, 4.1.6. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru membuka kotak contoh untuk melihat ruang, penutup dan pemegang; murid menerangkan hubungan bentuk dan fungsi. (SP 4.1.5, 4.1.6)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -1825,7 +1857,9 @@
         "textbook_activity_visual_individual_approved": false,
         "teacher_individual_approval": false,
         "objective_no_unrelated_programming": true,
-        "visual_textbook_individual_approved": false
+        "visual_textbook_individual_approved": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -1858,13 +1892,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 4.1.7, 4.1.8 melalui rubrik semak serta lakaran atau kod yang telah dibaiki; jadual bahan, kuantiti, kos seunit dan anggaran jumlah, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan rubrik semak serta lakaran atau kod yang telah dibaiki; jadual bahan, kuantiti, kos seunit dan anggaran jumlah bagi SP 4.1.7, 4.1.8; guru menilai kejelasan kelemahan, sebab dan pembetulan; ketepatan kos dan kesesuaian pilihan.",
+      "objektif": "Pada akhir PdP, murid dapat menilai lakaran pembungkusan, menambah baik dan mengira kos bahan (SP 4.1.7, 4.1.8).",
+      "kriteria_kejayaan": "Murid menghasilkan lakaran dibaiki serta jadual kuantiti dan jumlah kos; guru menilai bukti mengikut SP 4.1.7, 4.1.8.",
       "bbm": "Contoh pembungkusan terpakai yang bersih, kotak, kadbod, kertas, gunting keselamatan, gam, pembaris",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan contoh kotak, kertas lipat, kadbod, pembaris dalam situasi \"melindungi produk dengan pembungkusan yang sesuai\" dan mengaitkan masalah dengan SP 4.1.7, 4.1.8. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menunjukkan lakaran kotak yang ruangnya sempit dan harga bahan berbeza; murid menentukan pembaikan yang diperlukan. (SP 4.1.7, 4.1.8)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -1929,7 +1963,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -1962,13 +1998,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "pembentangan",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 4.1.9, 4.1.10 melalui bukti hasil kerja peringkat semasa dan catatan ujian fungsi; pembentangan hasil atau dokumentasi proses dan respons soalan, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan bukti hasil kerja peringkat semasa dan catatan ujian fungsi; pembentangan hasil atau dokumentasi proses dan respons soalan bagi SP 4.1.9, 4.1.10; guru menilai pematuhan langkah, keselamatan dan fungsi peringkat semasa; kejelasan hujah, bukti ujian dan maklum balas.",
+      "objektif": "Pada akhir PdP, murid dapat menghasilkan prototaip pembungkusan menurut lakaran dan membentangkan fungsi serta kos (SP 4.1.9, 4.1.10).",
+      "kriteria_kejayaan": "Murid menunjukkan pembungkusan yang memuatkan produk dan memberi penerangan tentang bahan serta penambahbaikan; guru menilai bukti mengikut SP 4.1.9, 4.1.10.",
       "bbm": "Contoh pembungkusan terpakai yang bersih, kotak, kadbod, kertas, gunting keselamatan, gam, pembaris",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan contoh kotak, kertas lipat, kadbod, pembaris dalam situasi \"melindungi produk dengan pembungkusan yang sesuai\" dan mengaitkan masalah dengan SP 4.1.9, 4.1.10. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menunjukkan pola pembungkusan kadbod dan model siap; murid mengenal pasti langkah mengukur, menanda dan mencantum. (SP 4.1.9, 4.1.10)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -2033,7 +2069,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -2066,13 +2104,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 5.1.1, 5.1.2 melalui kad pengelasan atau senarai contoh berlabel; dua penerangan fungsi atau sebab dalam jadual banding beza, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan kad pengelasan atau senarai contoh berlabel; dua penerangan fungsi atau sebab dalam jadual banding beza bagi SP 5.1.1, 5.1.2; guru menilai ketepatan pilihan dan pengelasan; ketepatan penerangan dan satu justifikasi.",
+      "objektif": "Pada akhir PdP, murid dapat mengenal pasti reka bentuk makanan bagi dua jenis makanan dan menerangkan dua kepentingannya (SP 5.1.1, 5.1.2).",
+      "kriteria_kejayaan": "Murid membandingkan bentuk atau warna hidangan dengan alasan fungsi dan daya tarikan; guru menilai bukti mengikut SP 5.1.1, 5.1.2.",
       "bbm": "Contoh foto reka bentuk makanan, lakaran, bahan makanan bersih mengikut alahan murid, sarung tangan, peralatan makanan yang sesuai",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan gambar reka bentuk makanan, lakaran, senarai bahan dalam situasi \"menghasilkan sajian yang bersih dan menarik\" dan mengaitkan masalah dengan SP 5.1.1, 5.1.2. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menunjukkan foto reka bentuk buah, sayur dan bakeri; murid mengenal pasti yang mudah dimakan dan menarik. (SP 5.1.1, 5.1.2)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -2137,7 +2175,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -2170,13 +2210,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat menghasilkan dua lakaran reka bentuk hidangan buah dengan susun atur, kuantiti, bentuk dan warna berlabel mengikut SP 5.1.3, 5.1.4.",
-      "kriteria_kejayaan": "Murid menunjukkan dua lakaran bermaklumat makanan dengan komponen serta penjelasan kesesuaian berdasarkan SP 5.1.3, 5.1.4; guru menilai ketepatan reka bentuk dan bukti pembelajaran.",
+      "objektif": "Pada akhir PdP, murid dapat menjana dua idea hidangan buah dan menghasilkan lakaran bermaklumat (SP 5.1.3, 5.1.4).",
+      "kriteria_kejayaan": "Murid menunjukkan dua lakaran berlabel rupa, warna, kuantiti dan susunan buah; guru menilai bukti mengikut SP 5.1.3, 5.1.4.",
       "bbm": "Contoh foto reka bentuk makanan, lakaran, bahan makanan bersih mengikut alahan murid, sarung tangan, peralatan makanan yang sesuai",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan gambar reka bentuk makanan, lakaran, senarai bahan dalam situasi \"menghasilkan sajian yang bersih dan menarik\" dan mengaitkan masalah dengan SP 5.1.3, 5.1.4. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru memaparkan contoh lakaran sandwic dan hidangan buah dalam buku; murid memberi idea susunan hidangan. (SP 5.1.3, 5.1.4)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -2242,7 +2282,9 @@
         "textbook_activity_visual_individual_approved": false,
         "teacher_individual_approval": false,
         "objective_no_unrelated_programming": true,
-        "visual_textbook_individual_approved": false
+        "visual_textbook_individual_approved": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -2275,13 +2317,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 5.1.5, 5.1.6 melalui dua penerangan fungsi atau sebab dalam jadual banding beza; rubrik semak serta lakaran atau kod yang telah dibaiki, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan dua penerangan fungsi atau sebab dalam jadual banding beza; rubrik semak serta lakaran atau kod yang telah dibaiki bagi SP 5.1.5, 5.1.6; guru menilai ketepatan penerangan dan satu justifikasi; kejelasan kelemahan, sebab dan pembetulan.",
+      "objektif": "Pada akhir PdP, murid dapat menghuraikan lakaran makanan serta membaiki dua kelemahan reka bentuk (SP 5.1.5, 5.1.6).",
+      "kriteria_kejayaan": "Murid menyediakan lakaran sebelum/selepas dengan alasan rupa, warna atau kebersihan; guru menilai bukti mengikut SP 5.1.5, 5.1.6.",
       "bbm": "Contoh foto reka bentuk makanan, lakaran, bahan makanan bersih mengikut alahan murid, sarung tangan, peralatan makanan yang sesuai",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan gambar reka bentuk makanan, lakaran, senarai bahan dalam situasi \"menghasilkan sajian yang bersih dan menarik\" dan mengaitkan masalah dengan SP 5.1.5, 5.1.6. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menunjukkan lakaran hidangan yang tidak seimbang warna dan ruang; murid mengenal pasti satu masalah. (SP 5.1.5, 5.1.6)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -2346,7 +2388,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -2379,13 +2423,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 5.1.7, 5.1.8 melalui jadual bahan, kuantiti, kos seunit dan anggaran jumlah; bukti hasil kerja peringkat semasa dan catatan ujian fungsi, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan jadual bahan, kuantiti, kos seunit dan anggaran jumlah; bukti hasil kerja peringkat semasa dan catatan ujian fungsi bagi SP 5.1.7, 5.1.8; guru menilai ketepatan kos dan kesesuaian pilihan; pematuhan langkah, keselamatan dan fungsi peringkat semasa.",
+      "objektif": "Pada akhir PdP, murid dapat mengira anggaran kos bahan dan menghasilkan hidangan contoh yang bersih mengikut lakaran (SP 5.1.7, 5.1.8).",
+      "kriteria_kejayaan": "Murid menunjukkan jadual kos yang tepat bersama hasil hidangan dan satu semakan kebersihan; guru menilai bukti mengikut SP 5.1.7, 5.1.8.",
       "bbm": "Contoh foto reka bentuk makanan, lakaran, bahan makanan bersih mengikut alahan murid, sarung tangan, peralatan makanan yang sesuai",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan gambar reka bentuk makanan, lakaran, senarai bahan dalam situasi \"menghasilkan sajian yang bersih dan menarik\" dan mengaitkan masalah dengan SP 5.1.7, 5.1.8. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru memaparkan jadual harga buah dan bekas makanan; murid menganggarkan komponen yang paling mahal. (SP 5.1.7, 5.1.8)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -2450,7 +2494,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -2478,13 +2524,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "pembentangan",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 5.1.9 melalui pembentangan hasil atau dokumentasi proses dan respons soalan, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan pembentangan hasil atau dokumentasi proses dan respons soalan bagi SP 5.1.9; guru menilai kejelasan hujah, bukti ujian dan maklum balas.",
+      "objektif": "Pada akhir PdP, murid dapat membentangkan reka bentuk makanan dengan bukti lakaran, hasil, kos dan amalan kebersihan (SP 5.1.9).",
+      "kriteria_kejayaan": "Murid membuat persembahan kumpulan dengan satu alasan bahan dan satu maklum balas rakan; guru menilai bukti mengikut SP 5.1.9.",
       "bbm": "Contoh foto reka bentuk makanan, lakaran, bahan makanan bersih mengikut alahan murid, sarung tangan, peralatan makanan yang sesuai",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan gambar reka bentuk makanan, lakaran, senarai bahan dalam situasi \"menghasilkan sajian yang bersih dan menarik\" dan mengaitkan masalah dengan SP 5.1.9. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menunjukkan foto sebelum/selepas hidangan buah; murid memilih bukti paling sesuai untuk pembentangan. (SP 5.1.9)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -2544,7 +2590,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -2577,13 +2625,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.1.1, 6.1.2 melalui kad pengelasan atau senarai contoh berlabel, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan kad pengelasan atau senarai contoh berlabel bagi SP 6.1.1, 6.1.2; guru menilai ketepatan pilihan dan pengelasan.",
+      "objektif": "Pada akhir PdP, murid dapat menjelaskan penggunaan atur cara pada dua perkakasan harian dan mengenal pasti pseudokod serta carta alir (SP 6.1.1, 6.1.2).",
+      "kriteria_kejayaan": "Murid memadankan fungsi alat kepada arahan dan menyusun satu contoh algoritma; guru menilai bukti mengikut SP 6.1.1, 6.1.2.",
       "bbm": "Kad langkah algoritma, carta alir, komputer atau simulasi pengaturcaraan blok, projektor, helaian uji atur cara",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan kad algoritma, komputer atau simulator blok dalam situasi \"memberikan arahan tepat supaya watak bergerak dan berdialog\" dan mengaitkan masalah dengan SP 6.1.1, 6.1.2. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menunjukkan televisyen pintar dan jam penggera; murid menjelaskan fungsi yang perlu mengikut turutan arahan. (SP 6.1.1, 6.1.2)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -2648,7 +2696,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -2676,13 +2726,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.1.3 melalui lakaran berlabel atau algoritma/carta alir berurutan, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan lakaran berlabel atau algoritma/carta alir berurutan bagi SP 6.1.3; guru menilai kelengkapan maklumat dan langkah reka bentuk.",
+      "objektif": "Pada akhir PdP, murid dapat menulis pseudokod serta melukis carta alir yang sepadan bagi satu rutin harian (SP 6.1.3).",
+      "kriteria_kejayaan": "Murid menunjukkan langkah MULA/PROSES/TAMAT dan arah anak panah yang betul; guru menilai bukti mengikut SP 6.1.3.",
       "bbm": "Kad langkah algoritma, carta alir, komputer atau simulasi pengaturcaraan blok, projektor, helaian uji atur cara",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan kad algoritma, komputer atau simulator blok dalam situasi \"memberikan arahan tepat supaya watak bergerak dan berdialog\" dan mengaitkan masalah dengan SP 6.1.3. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menyusun kad rutin sebelum ke sekolah secara salah; murid membetulkan turutan supaya rutin dapat dilaksanakan. (SP 6.1.3)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -2742,7 +2792,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -2775,13 +2827,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.1.4, 6.1.5 melalui dua penerangan fungsi atau sebab dalam jadual banding beza; rubrik semak serta lakaran atau kod yang telah dibaiki, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan dua penerangan fungsi atau sebab dalam jadual banding beza; rubrik semak serta lakaran atau kod yang telah dibaiki bagi SP 6.1.4, 6.1.5; guru menilai ketepatan penerangan dan satu justifikasi; kejelasan kelemahan, sebab dan pembetulan.",
+      "objektif": "Pada akhir PdP, murid dapat mengenal pasti langkah salah atau tertinggal dan membetulkan pseudokod serta carta alir (SP 6.1.4, 6.1.5).",
+      "kriteria_kejayaan": "Murid menghasilkan versi algoritma yang dibetulkan dengan sebab kesalahan asal; guru menilai bukti mengikut SP 6.1.4, 6.1.5.",
       "bbm": "Kad langkah algoritma, carta alir, komputer atau simulasi pengaturcaraan blok, projektor, helaian uji atur cara",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan kad algoritma, komputer atau simulator blok dalam situasi \"memberikan arahan tepat supaya watak bergerak dan berdialog\" dan mengaitkan masalah dengan SP 6.1.4, 6.1.5. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menunjukkan contoh menanda bahan tanpa menetapkan sifar pembaris; murid menerangkan mengapa hasil ukuran tidak tepat. (SP 6.1.4, 6.1.5)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -2846,7 +2898,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -2874,13 +2928,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "algoritma",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.1.6 melalui pembentangan hasil atau dokumentasi proses dan respons soalan, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan pembentangan hasil atau dokumentasi proses dan respons soalan bagi SP 6.1.6; guru menilai kejelasan hujah, bukti ujian dan maklum balas.",
+      "objektif": "Pada akhir PdP, murid dapat merumuskan dua persamaan dan dua perbezaan pseudokod dengan carta alir (SP 6.1.6).",
+      "kriteria_kejayaan": "Murid membentangkan satu rumusan lengkap dan menjelaskan kesan arahan yang tertinggal; guru menilai bukti mengikut SP 6.1.6.",
       "bbm": "Kad langkah algoritma, carta alir, komputer atau simulasi pengaturcaraan blok, projektor, helaian uji atur cara",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan kad algoritma, komputer atau simulator blok dalam situasi \"memberikan arahan tepat supaya watak bergerak dan berdialog\" dan mengaitkan masalah dengan SP 6.1.6. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru membandingkan satu pseudokod dan carta alir pengukuran; murid memeriksa sama ada urutannya sepadan. (SP 6.1.6)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -2940,7 +2994,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -2968,13 +3024,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.2.1 melalui kad pengelasan atau senarai contoh berlabel, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan kad pengelasan atau senarai contoh berlabel bagi SP 6.2.1; guru menilai ketepatan pilihan dan pengelasan.",
+      "objektif": "Pada akhir PdP, murid dapat mengenal pasti fungsi enam fitur asas antara muka Scratch (SP 6.2.1).",
+      "kriteria_kejayaan": "Murid memadankan kategori blok dengan fungsi gerakan, bunyi, acara dan dialog; guru menilai bukti mengikut SP 6.2.1.",
       "bbm": "Kad langkah algoritma, carta alir, komputer atau simulasi pengaturcaraan blok, projektor, helaian uji atur cara",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan kad algoritma, komputer atau simulator blok dalam situasi \"memberikan arahan tepat supaya watak bergerak dan berdialog\" dan mengaitkan masalah dengan SP 6.2.1. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menunjukkan tangkap layar antara muka Scratch; murid menamakan pentas, watak dan kategori blok. (SP 6.2.1)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -3034,7 +3090,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -3067,13 +3125,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "uji_atur_cara",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.2.2, 6.2.3 melalui bukti hasil kerja peringkat semasa dan catatan ujian fungsi, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan bukti hasil kerja peringkat semasa dan catatan ujian fungsi bagi SP 6.2.2, 6.2.3; guru menilai pematuhan langkah, keselamatan dan fungsi peringkat semasa.",
+      "objektif": "Pada akhir PdP, murid dapat membina atur cara Scratch dengan gerakan, dialog dan bunyi secara berurutan (SP 6.2.2, 6.2.3).",
+      "kriteria_kejayaan": "Murid menjalankan atur cara dua watak dan memeriksa tiga fungsi output; guru menilai bukti mengikut SP 6.2.2, 6.2.3.",
       "bbm": "Kad langkah algoritma, carta alir, komputer atau simulasi pengaturcaraan blok, projektor, helaian uji atur cara",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan kad algoritma, komputer atau simulator blok dalam situasi \"memberikan arahan tepat supaya watak bergerak dan berdialog\" dan mengaitkan masalah dengan SP 6.2.2, 6.2.3. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menunjukkan demonstrasi watak bergerak dan berbunyi pada Scratch; murid menyebut blok yang mungkin digunakan. (SP 6.2.2, 6.2.3)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -3139,7 +3197,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -3172,13 +3232,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "uji_atur_cara",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.2.4, 6.2.5 melalui bukti hasil kerja peringkat semasa dan catatan ujian fungsi, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan bukti hasil kerja peringkat semasa dan catatan ujian fungsi bagi SP 6.2.4, 6.2.5; guru menilai pematuhan langkah, keselamatan dan fungsi peringkat semasa.",
+      "objektif": "Pada akhir PdP, murid dapat mengesan dan membaiki satu ralat kod lalu menghasilkan variasi atur cara baharu (SP 6.2.4, 6.2.5).",
+      "kriteria_kejayaan": "Murid menyimpan bukti ujian sebelum/selepas ralat dan menunjukkan gerakan, dialog serta bunyi; guru menilai bukti mengikut SP 6.2.4, 6.2.5.",
       "bbm": "Kad langkah algoritma, carta alir, komputer atau simulasi pengaturcaraan blok, projektor, helaian uji atur cara",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan kad algoritma, komputer atau simulator blok dalam situasi \"memberikan arahan tepat supaya watak bergerak dan berdialog\" dan mengaitkan masalah dengan SP 6.2.4, 6.2.5. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menjalankan atur cara Scratch dengan gerakan terlalu perlahan; murid mengenal pasti nilai atau blok yang perlu dibetulkan. (SP 6.2.4, 6.2.5)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -3243,7 +3303,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     },
     {
@@ -3271,13 +3333,13 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "pembentangan",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.2.6 melalui pembentangan hasil atau dokumentasi proses dan respons soalan, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan pembentangan hasil atau dokumentasi proses dan respons soalan bagi SP 6.2.6; guru menilai kejelasan hujah, bukti ujian dan maklum balas.",
+      "objektif": "Pada akhir PdP, murid dapat membentangkan penghasilan atur cara baharu dalam Scratch secara lisan (SP 6.2.6).",
+      "kriteria_kejayaan": "Murid mendemonstrasikan output pergerakan/dialog/bunyi serta menjawab satu soalan rakan; guru menilai bukti mengikut SP 6.2.6.",
       "bbm": "Kad langkah algoritma, carta alir, komputer atau simulasi pengaturcaraan blok, projektor, helaian uji atur cara",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan kad algoritma, komputer atau simulator blok dalam situasi \"memberikan arahan tepat supaya watak bergerak dan berdialog\" dan mengaitkan masalah dengan SP 6.2.6. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menunjukkan rakaman ringkas atur cara dua watak; murid mencatat perkara yang perlu dipersembahkan. (SP 6.2.6)."
         },
         "aktiviti_1": {
           "minit": 15,
@@ -3337,7 +3399,9 @@
         "jenis": "manual editorial rewrite to match SP skill and textbook printed-page topic",
         "textbook_code_page_mapped": true,
         "textbook_activity_visual_individual_approved": false,
-        "teacher_individual_approval": false
+        "teacher_individual_approval": false,
+        "objective_success_criteria_induction_aligned_to_activity": true,
+        "textbook_visual_individual_approved": false
       }
     }
   ]
