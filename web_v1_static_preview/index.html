@@ -648,8 +648,15 @@ function chosenTeacherClass(){
  return teacherClass.value==="__other__"?teacherClassOther.value.trim():teacherClass.value.trim();
 }
 let verifiedRphKey="", verifiedRphFormats=["word","pdf"];
+function currentLessonSourceUnit(){
+ // Grouped Mathematics Unit labels are display-only: source PdP may belong
+ // to a second original Telegram Unit token; preserve that token on download.
+ return lesson.selectedOptions[0]?.dataset.originUnit||unit.value;
+}
 function currentRphLessonKey(){
- return JSON.stringify([year.value,subject.value,theme.value,unit.value,topic.value,lesson.value,subject.value==="PJPK"?component.value:""]);
+ return JSON.stringify([year.value,subject.value,theme.value,unit.value,
+                        currentLessonSourceUnit(),topic.value,lesson.value,
+                        subject.value==="PJPK"?component.value:""]);
 }
 function currentRphParams(){
  if(!year.value||!subject.value||!unit.value||!lesson.value)return null;
@@ -664,7 +671,7 @@ function currentRphParams(){
  if((start||end)&&(!start||!end||start>=end))return null;
  const students=teacherStudents.value.trim();
  if(students&&(!/^[1-9][0-9]{0,2}$/.test(students)||Number(students)>200))return null;
- const params=new URLSearchParams({year:year.value,subject:subject.value,unit:unit.value,lesson:lesson.value,
+ const params=new URLSearchParams({year:year.value,subject:subject.value,unit:currentLessonSourceUnit(),lesson:lesson.value,
    teacher_class:className,teacher_date:teacherDate.value,
    teacher_start:start,teacher_end:end,teacher_students:students});
  if(subject.value==="PJPK"){if(!component.value)return null;params.set("component",component.value);}
@@ -758,6 +765,7 @@ function fillSelect(el,items,label){
   if(el===lesson&&book&&!text.includes(book))text+=" • "+book;
   const opt=new Option(text,String(item.value));
   opt.dataset.bookReference=el===lesson?book:"";
+   opt.dataset.originUnit=el===lesson?String(item.origin_unit||""):"";
   opt.dataset.approved=item.approved===true&&item.download_enabled===true&&item.standalone_rph_verified===true?"1":"0";
   if(Number.isInteger(item.lesson_no)&&item.lesson_no>0&&item.lesson_no<=160)opt.dataset.lessonNo=String(item.lesson_no);
   el.add(opt);
@@ -972,7 +980,7 @@ async function populateMaterialList(){
  if(!sourceConfirmed){
   try{
    const params=new URLSearchParams({year:year.value,subject:subject.value,
-                                     unit:unit.value,lesson:lesson.value});
+                                     unit:currentLessonSourceUnit(),lesson:lesson.value});
    if(subject.value==="PJPK")params.set("component",component.value);
    const result=await fetch("/api/web/rph/availability?"+params,{
      credentials:"same-origin",cache:"no-store",redirect:"error"
@@ -1010,7 +1018,7 @@ async function populateMaterialList(){
  if((subject.value==="ENGLISH"&&[2,3,4].includes(Number(year.value)))||subject.value==="MUZIK"){
   try{
    const params=new URLSearchParams({year:year.value,subject:subject.value,
-                                    unit:unit.value,lesson:lesson.value});
+                                    unit:currentLessonSourceUnit(),lesson:lesson.value});
    const response=await fetch("/api/web/rph/extra-materials?"+params,{
                               credentials:"same-origin",cache:"no-store",redirect:"error"});
    const data=await response.json().catch(()=>({}));
@@ -1134,7 +1142,7 @@ const downloadStatus=document.getElementById("rph-download-status");
 async function checkRphAvailability(){
  const selectedKey=currentRphLessonKey();
  if(!year.value||!subject.value||!unit.value||!lesson.value)return;
- const params=new URLSearchParams({year:year.value,subject:subject.value,unit:unit.value,lesson:lesson.value});
+ const params=new URLSearchParams({year:year.value,subject:subject.value,unit:currentLessonSourceUnit(),lesson:lesson.value});
  if(subject.value==="PJPK")params.set("component",component.value);
  downloadStatus.textContent="Menyemak RPH untuk Lesson/PdP dipilih…";
  try{
