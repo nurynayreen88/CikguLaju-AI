@@ -66,10 +66,11 @@ def telegram_widget_callback():
     created = False
     try:
         # Only reachable after verified Telegram Login Widget HMAC.
-        if config.get("account_backend") == "supabase":
+        account = _lookup(config, uid)
+        if not account and config.get("account_backend") == "supabase":
             from web.direct_telegram_registration import ensure_verified_web_user
             created = ensure_verified_web_user(config, uid, payload)
-        account = _lookup(config, uid)
+            account = _lookup(config, uid)
     except Exception:
         current_app.logger.exception("Web account registration/lookup unavailable")
         return jsonify({"error": "account registration unavailable"}), 503
