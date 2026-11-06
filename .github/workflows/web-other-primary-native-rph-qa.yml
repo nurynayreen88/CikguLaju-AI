@@ -1,9 +1,13 @@
 name: Web BM PI Matematik Sains Native RPH QA
 on:
   push:
-    branches: [production/cikgulaju-web-20261105, feature/web-db-rph-bridge-bm-pi-20261106]
+    branches: [production/cikgulaju-web-20261105, feature/web-db-rph-bridge-bm-pi-20261106, feature/web-bm-hierarchy-unit-page-pdp-labels-20261106]
     paths:
       - web/unified_rph_web.py
+      - web/authoritative_http_source.py
+      - web_v1_static_preview/index.html
+      - tests/test_web_live_telegram_source.py
+      - tests/test_web_subject_specific_navigation.py
       - web/native_verified_rpt_rph_client.py
       - web/native_telegram_sequence_rph_client.py
       - tools/run_web_v1_preview.py
@@ -30,3 +34,16 @@ jobs:
           python -m unittest discover -s tests -p test_web_native_rpt_rph_bm_pi.py -v
           python -m unittest discover -s tests -p test_web_native_sequence_rph_bridge.py -v
           python -m unittest discover -s tests -p test_web_rph_availability.py -v
+          python -m unittest discover -s tests -p test_web_live_telegram_source.py -v
+          python -m unittest discover -s tests -p test_web_subject_specific_navigation.py -v
+      - name: Validate JavaScript inline browser syntax
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          html=Path('web_v1_static_preview/index.html').read_text(encoding='utf8')
+          script=re.findall(r'<script>\s*(.*?)\s*</script>',html,flags=re.S)
+          assert len(script)==1
+          Path('/tmp/cikgulaju-new-navigation.js').write_text(script[0],encoding='utf8')
+          PY
+          node --check /tmp/cikgulaju-new-navigation.js
