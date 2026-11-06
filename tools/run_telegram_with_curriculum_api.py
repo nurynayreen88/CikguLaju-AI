@@ -386,6 +386,27 @@ except Exception as _sej27_exc:
           type(_sej27_exc).__name__, flush=True)
 
 
+# RBT Year 4-6 source-bound Telegram menu, opt-in DRAF preview only.
+# Disabled unless CIKGULAJU_RBT_2027_DRAFT_USER_ENABLED=1.
+try:
+    from web.rbt_2027_user_runtime import install as install_rbt_2027
+    RBT_2027_DRAFT_USER_BRIDGE_ACTIVE = bool(
+        install_rbt_2027(vars(telegram_runtime)))
+except Exception as _rbt27_exc:
+    RBT_2027_DRAFT_USER_BRIDGE_ACTIVE = False
+    print("RBT draft Telegram bridge unavailable:",
+          type(_rbt27_exc).__name__, flush=True)
+
+# RBT RPT 2027: source-matched landscape PDF, paid-only and draft-labelled.
+# Wraps only rbt27rpt callbacks; preserves all unrelated RPT/subscription flows.
+try:
+    from rpt_2027.rbt.telegram_downloads import install as install_rbt_rpt
+    RBT_2027_RPT_DRAFT_INSTALLED = bool(
+        install_rbt_rpt(vars(telegram_runtime)))
+except Exception as _rbt_rpt_exc:
+    RBT_2027_RPT_DRAFT_INSTALLED = False
+    print("RBT 2027 RPT route unavailable:",type(_rbt_rpt_exc).__name__,flush=True)
+
 # Authenticated Web -> native Telegram RPH document generation.
 # Disabled unless CIKGULAJU_WEB_NATIVE_RPH_ENABLED=1; fail closed.
 # This does not alter Telegram webhook/callbacks, DB, trials, or payments.
@@ -469,6 +490,18 @@ except Exception as exc:
     print("Arabic/Music DRAF source unavailable:",
           type(exc).__name__, flush=True)
 
+
+# RBT: Web uses the same Telegram curriculum and native Word/PDF engine.
+# Token-authenticated, opt-in, no database, subscription or quota changes.
+try:
+    from web.rbt_2027_native_api import create_rbt_2027_native_blueprint
+    telegram_runtime.app.register_blueprint(
+        create_rbt_2027_native_blueprint(telegram_runtime))
+    RBT_2027_WEB_READER_REGISTERED = True
+except Exception as _rbt_reader_exc:
+    RBT_2027_WEB_READER_REGISTERED = False
+    print("RBT authenticated Web API unavailable:",
+          type(_rbt_reader_exc).__name__, flush=True)
 
 # Private source-matched RPT school covers for authenticated Web users. Web
 # checks account entitlement; Telegram re-checks exact PDF bytes before it
