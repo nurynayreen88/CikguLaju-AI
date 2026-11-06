@@ -15,9 +15,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan dua sumber data tentang perubahan sektor ekonomi Malaysia. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 8: Kemajuan Ekonomi Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina persoalan kajian tentang perubahan ekonomi dahulu dan kini. Guru menyemak jawapan awal berpandukan 12.2.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 126–139: Kajian kes cadangan tentang perubahan sektor dan bukti ekonomi. Murid membina persoalan kajian tentang perubahan ekonomi dahulu dan kini. Guru menyemak jawapan awal berpandukan 12.2.1.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 8. Murid membandingkan graf atau peta sektor dari dua tempoh dan menghuraikan peluang serta cabaran. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan kemajuan ekonomi bagi mengekalkan kemakmuran negara.
+**Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 126–139 bagi menyokong perbandingan. Murid membandingkan graf atau peta sektor dari dua tempoh dan menghuraikan peluang serta cabaran. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan kemajuan ekonomi bagi mengekalkan kemakmuran negara.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan laporan kes dua bukti data, satu perubahan dan satu kesimpulan. Guru menyemak secara individu menggunakan kata tugas SP 12.2.1, 12.2.2 dan nilai K12.2.4, kemudian memberi intervensi kepada murid yang belum tepat.
 

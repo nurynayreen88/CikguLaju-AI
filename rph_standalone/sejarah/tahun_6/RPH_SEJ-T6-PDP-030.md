@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan poster atau garis masa acara sukan antarabangsa yang pernah dianjur Malaysia. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 9: Sukan Kebanggaan Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun acara utama mengikut tahun dan jenis sukan. Guru menyemak jawapan awal berpandukan 12.3.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 149–152: Peranan Malaysia menganjur acara sukan antarabangsa. Murid menyusun acara utama mengikut tahun dan jenis sukan. Guru menyemak jawapan awal berpandukan 12.3.3.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid menghasilkan peta impak penganjuran kepada ekonomi, kemudahan dan imej negara. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan sukan kepada pembangunan negara.
+**Aktiviti 2 (20 min):** Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 149–152. Murid menghasilkan peta impak penganjuran kepada ekonomi, kemudahan dan imej negara. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan sukan kepada pembangunan negara.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan jadual dua penganjuran dengan tahun dan peranan Malaysia. Guru menyemak secara individu menggunakan kata tugas SP 12.3.3 dan nilai K12.3.6, kemudian memberi intervensi kepada murid yang belum tepat.
 

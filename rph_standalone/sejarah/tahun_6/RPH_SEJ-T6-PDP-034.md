@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan logo OIC dan ringkasan sejarah penyertaan Malaysia daripada sumber rasmi. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 10: Malaysia dan Dunia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menamakan tujuan utama OIC menggunakan bukti sumber. Guru menyemak jawapan awal berpandukan 12.4.4.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 168–169: Malaysia dalam Pertubuhan Kerjasama Islam (OIC). Murid menamakan tujuan utama OIC menggunakan bukti sumber. Guru menyemak jawapan awal berpandukan 12.4.4.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid membina carta pelibatan Malaysia melalui dialog atau kerjasama negara anggota. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan mengekalkan pengiktirafan negara luar terhadap Malaysia.
+**Aktiviti 2 (20 min):** Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 168–169. Murid membina carta pelibatan Malaysia melalui dialog atau kerjasama negara anggota. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan mengekalkan pengiktirafan negara luar terhadap Malaysia.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan dua peranan Malaysia dalam OIC yang dapat disokong sumber. Guru menyemak secara individu menggunakan kata tugas SP 12.4.4 dan nilai K12.4.8, kemudian memberi intervensi kepada murid yang belum tepat.
 

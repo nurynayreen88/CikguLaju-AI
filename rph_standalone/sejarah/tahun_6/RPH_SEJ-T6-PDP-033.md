@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan gambar simbol Komanwel serta sumber penyertaan Malaysia. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 10: Malaysia dan Dunia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengenal pasti latar hubungan Malaysia dengan negara anggota Komanwel. Guru menyemak jawapan awal berpandukan 12.4.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 166–167: Pelibatan Malaysia dalam Komanwel dan kerjasama Sukan Komanwel. Murid mengenal pasti latar hubungan Malaysia dengan negara anggota Komanwel. Guru menyemak jawapan awal berpandukan 12.4.3.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid menyusun contoh kerjasama pendidikan, sukan atau hubungan negara anggota mengikut sumber. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan sumbangan Malaysia untuk keamanan dunia.
+**Aktiviti 2 (20 min):** Guru meminta murid memeriksa urutan dan fakta pada hlm. 166–167. Murid menyusun contoh kerjasama pendidikan, sukan atau hubungan negara anggota mengikut sumber. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan sumbangan Malaysia untuk keamanan dunia.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan kad kerjasama Malaysia dalam Komanwel dengan dua contoh. Guru menyemak secara individu menggunakan kata tugas SP 12.4.3 dan nilai K12.4.7, kemudian memberi intervensi kepada murid yang belum tepat.
 

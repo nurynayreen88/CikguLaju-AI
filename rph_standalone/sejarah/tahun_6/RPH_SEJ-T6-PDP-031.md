@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan kad tokoh sukan Malaysia dahulu dan kejayaan atlet masa kini. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 9: Sukan Kebanggaan Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan kisah usaha tokoh terdahulu dengan nilai latihan dan ketekunan. Guru menyemak jawapan awal berpandukan 12.3.4.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 153–157: Tokoh sukan negara dahulu dan inspirasi generasi masa kini. Murid memadankan kisah usaha tokoh terdahulu dengan nilai latihan dan ketekunan. Guru menyemak jawapan awal berpandukan 12.3.4.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid membina carta pengaruh tokoh sukan kepada penyertaan generasi baharu. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan nilai sahsiah dan etika dalam mempamerkan semangat kesukanan.
+**Aktiviti 2 (20 min):** Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 153–157. Murid membina carta pengaruh tokoh sukan kepada penyertaan generasi baharu. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan nilai sahsiah dan etika dalam mempamerkan semangat kesukanan.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan dua tokoh terdahulu dan satu hubungan inspirasi bersumber. Guru menyemak secara individu menggunakan kata tugas SP 12.3.4 dan nilai K12.3.7, kemudian memberi intervensi kepada murid yang belum tepat.
 

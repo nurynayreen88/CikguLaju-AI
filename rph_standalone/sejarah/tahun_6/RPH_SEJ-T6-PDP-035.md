@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan gambar persidangan PBB dan petikan fungsi pertubuhan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 10: Malaysia dan Dunia.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membezakan peranan PBB daripada organisasi ASEAN, Komanwel dan OIC. Guru menyemak jawapan awal berpandukan 12.4.5.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 170–172: Malaysia dalam PBB serta peranan keselamatan dan kerjasama. Murid membezakan peranan PBB daripada organisasi ASEAN, Komanwel dan OIC. Guru menyemak jawapan awal berpandukan 12.4.5.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid menerangkan satu penglibatan Malaysia dalam usaha antarabangsa berdasarkan sumber bertarikh. Guru membimbing pembetulan salah faham menggunakan bukti.
+**Aktiviti 2 (20 min):** Guru menyoal bukti konkrit hlm. 170–172 untuk menguji dapatan murid. Murid menerangkan satu penglibatan Malaysia dalam usaha antarabangsa berdasarkan sumber bertarikh. Guru membimbing pembetulan salah faham menggunakan bukti.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan jadual dua bentuk pelibatan Malaysia dalam PBB. Guru menyemak secara individu menggunakan kata tugas SP 12.4.5, kemudian memberi intervensi kepada murid yang belum tepat.
 
