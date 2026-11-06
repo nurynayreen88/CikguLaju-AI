@@ -187,6 +187,39 @@ def _pj_activity_title(title):
     return title
 
 
+# Pendidikan Kesihatan has nine DSKP domains, not one Unit per lesson.
+# The RPT manifest contains separate *activity* titles for every PdP. Group
+# choices by their actual SK domain, retaining every original lesson/title.
+# Label as Bidang rather than inventing textbook Unit names.
+PK_DSKP_DOMAINS = {
+    1: "Pendidikan Kesihatan Reproduktif dan Sosial (PEERS)",
+    2: "Penyalahgunaan Bahan",
+    3: "Pengurusan Mental dan Emosi",
+    4: "Kekeluargaan",
+    5: "Perhubungan",
+    6: "Penyakit",
+    7: "Keselamatan",
+    8: "Pemakanan",
+    9: "Pertolongan Cemas",
+}
+
+
+def _pk_domain(candidate):
+    sk_codes = candidate.get("sk")
+    if not isinstance(sk_codes, list) or not sk_codes:
+        return None
+    domains = set()
+    for code in sk_codes:
+        match = re.fullmatch(r"([1-9])\.\d{1,2}", str(code or "").strip())
+        if match is None:
+            return None
+        domains.add(int(match[1]))
+    if len(domains) != 1:
+        return None
+    number = domains.pop()
+    return f"Bidang {number}: {PK_DSKP_DOMAINS[number]}"
+
+
 def _pjpk_records(year, component):
     if component not in ("PJ", "PK"):
         return []
@@ -205,7 +238,8 @@ def _pjpk_records(year, component):
         path = ROOT / "rph_standalone" / "pjpk" / f"year{year}_{short}" / f"lesson_{n:03d}.md"
         if not path.is_file():
             continue
-        unit = _pj_canonical_unit(year, n) if component == "PJ" else str(title)
+        unit = (_pj_canonical_unit(year, n) if component == "PJ"
+                else _pk_domain(candidate))
         if not unit:
             continue
         activity = _pj_activity_title(title) if component == "PJ" else title
