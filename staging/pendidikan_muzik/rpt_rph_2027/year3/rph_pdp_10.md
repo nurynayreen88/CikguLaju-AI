@@ -26,7 +26,7 @@ Guru menilai padanan bunyi–adegan, turutan yang tepat dan kerjasama kumpulan.
 **Penutup — 2 minit**  
 Murid menerangkan pilihan satu kesan bunyi dan nilai cekal yang ditunjukkan watak cerita.
 
-**Bahan:** Buku teks halaman 38, perkusi badan, alat perkusi dan kad adegan; buku mencetak Audio 39–40 tetapi fail belum disahkan.  
+**Bahan:** Buku teks m/s 38, perkusi badan, alat perkusi dan kad adegan; guru menunjukkan corak irama melalui tepukan.  
 **Rujukan sumber:** Buku Teks Pendidikan Kesenian Tahun 3 SK (DBP 2018), halaman 38; teks aktiviti disemak terhadap salinan https://anyflip.com/lcinm/flxx/basic. Kod dicetak dalam buku gabungan: 3.2.1, 3.2.3; **bukan pengesahan kod DSKP Pendidikan Muzik berdiri sendiri**. Audio tercetak: 39–40 (bukan 36–38); **fail audio/trek belum diperiksa**.
 
 **Catatan pelaksanaan / pemulihan:** __________________________________________
