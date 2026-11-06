@@ -13,7 +13,7 @@ from docx import Document
 from pypdf import PdfReader
 from tools.render_sains_rpt_2027_ab_review_20261106 import (
     ROOT, OUT, calendar_for, calendar_cover_lines, EXPECTED,
-    year3_overlay_sources, YEAR3_INTEGRATED_SP_CANDIDATE,
+    year3_overlay_sources, YEAR3_INTEGRATED_SP_CANDIDATE, curriculum_ref,
 )
 from web.sains_y3_rph_activity_preview_20261106 import adapt_rows, source_ledgers
 class SainsRPTCalendarWindowsTests(unittest.TestCase):
@@ -123,6 +123,20 @@ class SainsRPTCalendarWindowsTests(unittest.TestCase):
                 else:
                     self.assertNotIn("3. Guru",word.tables[2].cell(1,1).text)
         self.assertEqual(len(fixes),12)
+
+    def test_kpm_edisi3_is_option_for_stage_one_not_forced_on_all_years(self):
+        self.assertIn("PILIHAN guru",curriculum_ref(2))
+        self.assertIn("PILIHAN guru",curriculum_ref(3))
+        self.assertIn("BELUM DIPADANKAN",curriculum_ref(3))
+        for year in [4,5,6]:
+            self.assertNotIn("PILIHAN guru",curriculum_ref(year))
+            self.assertIn("Tahap II",curriculum_ref(year))
+        with self.assertRaises(ValueError):
+            curriculum_ref(1)
+        for year in range(2,7):
+            doc=Document(OUT/f"RPT_SAINS_TAHUN_{year}_2027_KUMPULAN_A_DRAF.docx")
+            cover=" ".join(p.text for p in doc.paragraphs)
+            self.assertIn(curriculum_ref(year),cover)
 
     def test_years_two_four_five_six_are_not_silently_rewritten(self):
         for year in [2,4,5,6]:
