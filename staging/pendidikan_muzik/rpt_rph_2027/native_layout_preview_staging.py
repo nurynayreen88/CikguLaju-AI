@@ -80,7 +80,7 @@ def build_staging_preview(root, year, pdp):
     # Draft sidecar is editorial scaffolding only, never an official DSKP gate.
     draft_overlay = json.loads((base / "SUCCESS_CRITERIA_DRAFT_20261106.json").read_text(encoding="utf-8"))
     drafted = draft_overlay.get(row["pdp_id"]) if not criterion else None
-    if drafted and (drafted.get("approval") != "DRAF_EDITORIAL_BELUM_DISAHKAN"
+    if drafted and (drafted.get("approval") != "CIKGULAJU_EDITORIAL_TEXT_REVIEW_PASSED"
                     or drafted.get("year") != year or drafted.get("pdp") != pdp):
         raise ValueError("Untrusted success criterion overlay")
     # Fail closed if the auditable SP crosswalk is not the same as this manifest.
@@ -164,7 +164,7 @@ def build_staging_preview(root, year, pdp):
     if not criterion:
         warnings.append("NO_EXPLICIT_SUCCESS_CRITERIA")
         if drafted:
-            warnings.append("EDITORIAL_DRAFT_CRITERION_OVERLAY_NOT_APPROVED")
+            warnings.append("EDITORIAL_TEXT_REVIEW_PASSED_SCORE_PENDING")
     if not row.get("source_book_text_crosscheck", False):
         warnings.append("TEXTBOOK_NOT_FULLY_CROSSCHECKED_OR_NONOFFICIAL")
     return {
