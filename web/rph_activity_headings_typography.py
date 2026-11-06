@@ -17,7 +17,7 @@ from pathlib import Path
 HEADING = re.compile(
     r"^[ \t]*(?:(?:\d{1,2})[.)][ \t]*)?"
     r"(?:Aktiviti|Activity)[ \t]+[1-9]\d{0,2}[ \t]*"
-    r"(?:[:：]|[–—-])[ \t]*\S.*$",
+    r"(?:[:：]|[–—-])[ \t]*(?:\S.*)?$",
     flags=re.IGNORECASE,
 )
 
