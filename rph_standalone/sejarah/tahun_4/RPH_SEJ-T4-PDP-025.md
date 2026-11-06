@@ -15,9 +15,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan rajah hierarki masyarakat Kesultanan Melayu Melaka. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 8: Tokoh Terbilang Kesultanan Melayu Melaka.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid melengkapkan struktur masyarakat pemerintah dan diperintah serta mendefinisi tokoh terbilang. Guru menyemak jawapan awal berpandukan 5.1.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 106–109: Struktur pemerintah/diperintah dan ciri tokoh terbilang Melaka. Murid melengkapkan struktur masyarakat pemerintah dan diperintah serta mendefinisi tokoh terbilang. Guru menyemak jawapan awal berpandukan 5.1.1.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 8. Murid menilai mengapa peranan tertentu dianggap penting dalam sejarah Melaka. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan mencontohi nilai murni tokoh terbilang.
+**Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 106–109 bagi menyokong perbandingan. Murid menilai mengapa peranan tertentu dianggap penting dalam sejarah Melaka. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan mencontohi nilai murni tokoh terbilang.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan rajah struktur dan dua ciri tokoh terbilang dengan sumber. Guru menyemak secara individu menggunakan kata tugas SP 5.1.1, 5.1.2 dan nilai K5.1.5, kemudian memberi intervensi kepada murid yang belum tepat.
 

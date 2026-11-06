@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan gambar perbandingan litupan ais dan bentuk muka bumi. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 5: Zaman Air Batu.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menandakan ciri Zaman Air Batu Akhir pada jadual sebelum/selepas. Guru menyemak jawapan awal berpandukan 2.1.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 64–65: Perubahan suhu, pencairan, bentuk bumi dan habitat. Murid menandakan ciri Zaman Air Batu Akhir pada jadual sebelum/selepas. Guru menyemak jawapan awal berpandukan 2.1.3.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 5. Murid membuat inferens berasaskan rajah tentang perubahan habitat apabila suhu meningkat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan langkah memelihara dan memulihara alam sekitar.
+**Aktiviti 2 (20 min):** Guru menyoal bukti konkrit hlm. 64–65 untuk menguji dapatan murid. Murid membuat inferens berasaskan rajah tentang perubahan habitat apabila suhu meningkat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan langkah memelihara dan memulihara alam sekitar.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan jadual tiga perubahan dan penerangan sebab-akibat perubahan iklim. Guru menyemak secara individu menggunakan kata tugas SP 2.1.3 dan nilai K2.1.6, kemudian memberi intervensi kepada murid yang belum tepat.
 

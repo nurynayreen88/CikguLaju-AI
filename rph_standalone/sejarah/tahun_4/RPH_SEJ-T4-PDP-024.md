@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan kad barangan dagang, gambar pelabuhan dan laluan perdagangan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 7: Kerajaan Melayu Awal.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan hasil ekonomi kerajaan awal seperti pertanian, perdagangan dan hasil hutan. Guru menyemak jawapan awal berpandukan 4.1.4.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 95–98: Kegiatan pertanian, perdagangan, hasil hutan/laut, perlombongan. Murid mengelaskan hasil ekonomi kerajaan awal seperti pertanian, perdagangan dan hasil hutan. Guru menyemak jawapan awal berpandukan 4.1.4.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid melakar laluan barang dari kawasan pengeluaran ke pusat perdagangan dan menjelaskan kepentingannya. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan sumbangan Kerajaan Melayu Awal terhadap ekonomi negara.
+**Aktiviti 2 (20 min):** Guru menyoal bukti konkrit hlm. 95–98 untuk menguji dapatan murid. Murid melakar laluan barang dari kawasan pengeluaran ke pusat perdagangan dan menjelaskan kepentingannya. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan sumbangan Kerajaan Melayu Awal terhadap ekonomi negara.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan peta aliran dua kegiatan ekonomi dan satu kesan kemakmuran. Guru menyemak secara individu menggunakan kata tugas SP 4.1.4 dan nilai K4.1.7, kemudian memberi intervensi kepada murid yang belum tepat.
 

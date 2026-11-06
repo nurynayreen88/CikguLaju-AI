@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan kad jawatan Sultan, Bendahara dan Laksamana dalam istana Melaka. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 8: Tokoh Terbilang Kesultanan Melayu Melaka.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengelaskan tugas tiga jawatan utama mengikut bidang kuasa. Guru menyemak jawapan awal berpandukan 5.1.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 110–115: Peranan Sultan, Bendahara, Laksamana. Murid mengelaskan tugas tiga jawatan utama mengikut bidang kuasa. Guru menyemak jawapan awal berpandukan 5.1.3.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 8. Murid melakonkan mesyuarat istana ringkas dengan tugas setiap jawatan yang tepat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan menghargai sumbangan tokoh.
+**Aktiviti 2 (20 min):** Guru menyediakan soalan semak fakta hlm. 110–115 sebelum pembentangan. Murid melakonkan mesyuarat istana ringkas dengan tugas setiap jawatan yang tepat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan menghargai sumbangan tokoh.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan jadual tiga jawatan dengan dua tugas dan contoh. Guru menyemak secara individu menggunakan kata tugas SP 5.1.3 dan nilai K5.1.6, kemudian memberi intervensi kepada murid yang belum tepat.
 

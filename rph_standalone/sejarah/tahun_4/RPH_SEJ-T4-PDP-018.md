@@ -15,9 +15,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan garis masa prasejarah dan peta tapak arkeologi Malaysia. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 6: Zaman Prasejarah.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyatakan maksud Zaman Prasejarah melalui petunjuk ketiadaan tulisan. Guru menyemak jawapan awal berpandukan 3.1.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 74–77: Takrif Zaman Prasejarah dan peta Bukit Jawa, Gua Niah, Bukit. Murid menyatakan maksud Zaman Prasejarah melalui petunjuk ketiadaan tulisan. Guru menyemak jawapan awal berpandukan 3.1.1.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 6. Murid mengenal pasti lokasi tapak prasejarah dalam peta dan mencatat bukti artifak untuk setiap lokasi. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan memulihara artifak Zaman Prasejarah.
+**Aktiviti 2 (20 min):** Guru menyoal bukti konkrit hlm. 74–77 untuk menguji dapatan murid. Murid mengenal pasti lokasi tapak prasejarah dalam peta dan mencatat bukti artifak untuk setiap lokasi. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan memulihara artifak Zaman Prasejarah.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan peta dua lokasi prasejarah dengan penerangan satu bukti. Guru menyemak secara individu menggunakan kata tugas SP 3.1.1, 3.1.2 dan nilai K3.1.5, kemudian memberi intervensi kepada murid yang belum tepat.
 

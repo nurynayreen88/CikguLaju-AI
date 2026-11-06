@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan peta perdagangan dan petikan hubungan diplomatik kerajaan Melayu awal. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 7: Kerajaan Melayu Awal.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid mengasingkan contoh hubungan diplomatik daripada pertukaran perdagangan. Guru menyemak jawapan awal berpandukan 4.1.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 92–94: Hubungan diplomatik kerajaan awal dengan China dan India. Murid mengasingkan contoh hubungan diplomatik daripada pertukaran perdagangan. Guru menyemak jawapan awal berpandukan 4.1.3.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid menyusun rajah hubungan kerajaan awal dengan kuasa luar dan menjelaskan tujuan hubungan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan perdagangan jalan laut kepada negara.
+**Aktiviti 2 (20 min):** Guru meminta murid memeriksa urutan dan fakta pada hlm. 92–94. Murid menyusun rajah hubungan kerajaan awal dengan kuasa luar dan menjelaskan tujuan hubungan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan perdagangan jalan laut kepada negara.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan rajah dua hubungan diplomatik berserta kepentingannya. Guru menyemak secara individu menggunakan kata tugas SP 4.1.3 dan nilai K4.1.6, kemudian memberi intervensi kepada murid yang belum tepat.
 

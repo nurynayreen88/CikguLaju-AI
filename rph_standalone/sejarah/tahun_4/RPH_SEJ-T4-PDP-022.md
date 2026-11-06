@@ -15,9 +15,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan peta kerajaan awal Alam Melayu dan kad nama kerajaan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 7: Kerajaan Melayu Awal.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid memadankan nama kerajaan awal dengan kedudukan pada peta serantau. Guru menyemak jawapan awal berpandukan 4.1.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 88–91: Kerajaan Melayu awal mengikut kronologi dan peta kedudukan. Murid memadankan nama kerajaan awal dengan kedudukan pada peta serantau. Guru menyemak jawapan awal berpandukan 4.1.1.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 7. Murid membina peta berlabel serta menyatakan kepentingan lokasi laluan maritim. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan menjalin hubungan diplomatik.
+**Aktiviti 2 (20 min):** Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 88–91. Murid membina peta berlabel serta menyatakan kepentingan lokasi laluan maritim. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan menjalin hubungan diplomatik.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan peta dua kerajaan dengan lokasi dan sumber rujukan. Guru menyemak secara individu menggunakan kata tugas SP 4.1.1, 4.1.2 dan nilai K4.1.5, kemudian memberi intervensi kepada murid yang belum tepat.
 
