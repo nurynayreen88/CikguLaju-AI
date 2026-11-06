@@ -103,6 +103,12 @@ def _state(runtime, year, unit, token, teacher):
     if source_seq.isdigit() and 0 < int(source_seq) < 10000:
         state["pdp_no"] = int(source_seq)
         state["source_sequence_no"] = int(source_seq)
+    # verified_pdp_sequence carries the exact grouped SP codes, but some
+    # rows have blank wording. Enrich only through the same v26.00 master
+    # curriculum_standards table for the exact BM year/SK/SP, read-only.
+    from web.bm_web_rph_refinement import complete_verified_bm_standards
+    source_path = getattr(runtime, "DB_PATH", None)
+    standards = list(complete_verified_bm_standards(source_path, year, standards))
     commit = getattr(runtime, "_commit_multi_sp", None)
     if not callable(commit):
         raise SourceUnavailable("Telegram BM grouped SP engine unavailable")
