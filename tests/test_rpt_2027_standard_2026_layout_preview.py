@@ -14,6 +14,14 @@ from scripts.build_rpt_2027_standard_preview import (
 class RPT2026LayoutQA(unittest.TestCase):
     def test_no_fake_dates_or_missing_sk_sp(self):
         self.assertEqual(len(psv_records(2)),42)
+        for year in range(2, 7):
+            rows = psv_records(year)
+            self.assertEqual(len(rows), 42)
+            self.assertTrue(all(row["sk_display"].startswith(row["sk"].split(";")[0].strip() + " — ") for row in rows))
+            self.assertTrue(all(row["sp_display"].startswith(row["sp"].split(";")[0].strip() + " — ") for row in rows))
+            self.assertTrue(all(len(row["sk_display"]) > len(row["sk"]) + 6
+                                and len(row["sp_display"]) > len(row["sp"]) + 12
+                                for row in rows))
         self.assertEqual(len(rbt_records(4)),32)
         self.assertEqual(len(moral_records(3)),96)
         for subject,year,loader in (
