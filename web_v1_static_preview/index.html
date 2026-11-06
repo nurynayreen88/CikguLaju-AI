@@ -678,8 +678,9 @@ async function populateMaterialList(){
  const discovered={textbook:[],audio:[],workbook:[]};
  let sourceError="";
  try{
-  const lessonNumber=lesson.selectedOptions[0]?.dataset.lessonNo ||
-    (/^[1-9][0-9]{0,11}$/.test(lesson.value)?lesson.value:"");
+  // The Telegram materials API accepts a verified RPT entry ID, never a
+  // stand-alone Lesson number. A source token must not be guessed as an ID.
+  const lessonNumber=/^[1-9][0-9]{0,11}$/.test(lesson.value)?lesson.value:"";
   if(!lessonNumber)throw Error("Pemetaan ID Lesson Telegram belum disahkan.");
   const params=new URLSearchParams({year:year.value,subject:subject.value,lesson:lessonNumber});
   const response=await fetch("/api/materials?"+params,{credentials:"same-origin",cache:"no-store",redirect:"error"});
@@ -689,9 +690,10 @@ async function populateMaterialList(){
   if(data.download_enabled===true){
    for(const item of data.items){
     if(!item||item.approved!==true||item.download_enabled!==true||!item.id)continue;
-    if(!Object.hasOwn(discovered,item.type))continue;
+    const type=({activity:"workbook",media:"audio"})[item.type]||item.type;
+    if(!Object.hasOwn(discovered,type))continue;
     if(!/^[A-Za-z0-9_-]{1,128}$/.test(String(item.id)))continue;
-    discovered[item.type].push({name:String(item.title||placeholders[item.type]),id:String(item.id)});
+    discovered[type].push({name:String(item.title||placeholders[type]),id:String(item.id)});
    }
   }else sourceError="Sumber Telegram mengesahkan metadata sahaja; muat turun belum diaktifkan.";
  }catch(e){sourceError=e.message;}
