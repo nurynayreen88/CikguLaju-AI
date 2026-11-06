@@ -117,7 +117,33 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "4.3.1",
+            "muka_surat_bercetak_calon": [
+              4,
+              6
+            ]
+          },
+          {
+            "sp": "4.3.2",
+            "muka_surat_bercetak_calon": [
+              7,
+              9
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          4,
+          6,
+          7,
+          9
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -205,7 +231,24 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "4.3.3",
+            "muka_surat_bercetak_calon": [
+              10,
+              11
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          10,
+          11
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -289,7 +332,23 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "4.3.4",
+            "muka_surat_bercetak_calon": [
+              12,
+              12
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          12
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -373,7 +432,23 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "4.3.5",
+            "muka_surat_bercetak_calon": [
+              13,
+              13
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          13
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -457,7 +532,24 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "4.3.6",
+            "muka_surat_bercetak_calon": [
+              14,
+              17
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          14,
+          17
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -541,7 +633,23 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "4.3.7",
+            "muka_surat_bercetak_calon": [
+              18,
+              18
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          18
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -630,7 +738,33 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.1.1",
+            "muka_surat_bercetak_calon": [
+              21,
+              23
+            ]
+          },
+          {
+            "sp": "5.1.2",
+            "muka_surat_bercetak_calon": [
+              24,
+              25
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          21,
+          23,
+          24,
+          25
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -718,7 +852,24 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.1.3",
+            "muka_surat_bercetak_calon": [
+              26,
+              28
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          26,
+          28
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -802,7 +953,23 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.1.4",
+            "muka_surat_bercetak_calon": [
+              29,
+              29
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          29
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -891,7 +1058,32 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.1.5",
+            "muka_surat_bercetak_calon": [
+              30,
+              31
+            ]
+          },
+          {
+            "sp": "5.1.6",
+            "muka_surat_bercetak_calon": [
+              32,
+              32
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          30,
+          31,
+          32
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -979,7 +1171,24 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.1.7",
+            "muka_surat_bercetak_calon": [
+              33,
+              35
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          33,
+          35
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -1063,7 +1272,23 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "5.1.8",
+            "muka_surat_bercetak_calon": [
+              36,
+              36
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          36
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -1152,7 +1377,33 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.3.1",
+            "muka_surat_bercetak_calon": [
+              39,
+              40
+            ]
+          },
+          {
+            "sp": "6.3.2",
+            "muka_surat_bercetak_calon": [
+              41,
+              42
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          39,
+          40,
+          41,
+          42
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -1245,7 +1496,33 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.3.3",
+            "muka_surat_bercetak_calon": [
+              43,
+              44
+            ]
+          },
+          {
+            "sp": "6.3.4",
+            "muka_surat_bercetak_calon": [
+              45,
+              46
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          43,
+          44,
+          45,
+          46
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -1333,7 +1610,23 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.3.5",
+            "muka_surat_bercetak_calon": [
+              47,
+              47
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          47
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -1417,7 +1710,23 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.3.6",
+            "muka_surat_bercetak_calon": [
+              48,
+              48
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          48
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -1501,7 +1810,24 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.4.1",
+            "muka_surat_bercetak_calon": [
+              49,
+              50
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          49,
+          50
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -1585,7 +1911,23 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.4.2",
+            "muka_surat_bercetak_calon": [
+              51,
+              51
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          51
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -1669,7 +2011,24 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.4.3",
+            "muka_surat_bercetak_calon": [
+              52,
+              53
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          52,
+          53
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -1753,7 +2112,24 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.4.4",
+            "muka_surat_bercetak_calon": [
+              54,
+              55
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          54,
+          55
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -1837,7 +2213,24 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.4.5",
+            "muka_surat_bercetak_calon": [
+              56,
+              59
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          56,
+          59
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -1921,7 +2314,23 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.4.6",
+            "muka_surat_bercetak_calon": [
+              60,
+              60
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          60
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -2005,7 +2414,23 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.4.6",
+            "muka_surat_bercetak_calon": [
+              60,
+              60
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          60
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -2089,7 +2514,23 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "6.4.7",
+            "muka_surat_bercetak_calon": [
+              61,
+              61
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          61
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -2173,7 +2614,24 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "7.1.1",
+            "muka_surat_bercetak_calon": [
+              65,
+              68
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          65,
+          68
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -2257,7 +2715,24 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "7.1.2",
+            "muka_surat_bercetak_calon": [
+              69,
+              71
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          69,
+          71
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -2341,7 +2816,24 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "7.1.3",
+            "muka_surat_bercetak_calon": [
+              72,
+              73
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          72,
+          73
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -2425,7 +2917,24 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "7.1.4",
+            "muka_surat_bercetak_calon": [
+              74,
+              75
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          74,
+          75
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -2509,7 +3018,23 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "7.1.5",
+            "muka_surat_bercetak_calon": [
+              76,
+              76
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          76
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -2593,7 +3118,24 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "7.1.6",
+            "muka_surat_bercetak_calon": [
+              77,
+              80
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          77,
+          80
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -2677,7 +3219,24 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "7.1.6",
+            "muka_surat_bercetak_calon": [
+              77,
+              80
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          77,
+          80
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
@@ -2761,7 +3320,24 @@
         "status": "BELUM_SAH_HALAMAN",
         "tahun": 5,
         "muka_surat": null,
-        "aktiviti_buku_teks": null
+        "aktiviti_buku_teks": null,
+        "sumber_rujukan_buku_teks_awam": "https://anyflip.com/bonxz/ipnx/basic",
+        "identiti_edisi_rujukan": "Buku Teks RBT Tahun 5 SK, KSSR Semakan 2017 (salinan digital awam)",
+        "calon_muka_surat_mengikut_sp": [
+          {
+            "sp": "7.1.6",
+            "muka_surat_bercetak_calon": [
+              77,
+              80
+            ]
+          }
+        ],
+        "calon_muka_surat_teks_digital": [
+          77,
+          80
+        ],
+        "halaman_adalah_calon_sahaja": true,
+        "aktiviti_visual_disahkan": false
       },
       "sumber_dskp": {
         "dokumen": "DSKP KSSR (Semakan 2017) RBT Tahun 5",
