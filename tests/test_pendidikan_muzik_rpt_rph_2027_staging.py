@@ -479,6 +479,17 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
         with self.assertRaises(TypeError):
             adapter.normalize_for_legacy_doc(None)
 
+    def test_native_music_layout_has_no_markdown_or_repeated_activity_labels(self):
+        for year in range(2, 7):
+            for pdp in range(1, 36):
+                preview = module.build_staging_preview(SOURCE, year, pdp)
+                phases = preview["layout"]["phases"]
+                combined = "\\n".join(phase["activity"] for phase in phases)
+                self.assertNotIn("**", combined, f"Markdown leaked in Y{year} PdP{pdp}")
+                self.assertNotRegex(combined, r"(?i)Aktiviti 1\\s*[-—]\\s*Aktiviti 1")
+                self.assertNotRegex(combined, r"(?i)Aktiviti 2\\s*[-—]\\s*Aktiviti 2")
+                self.assertNotRegex(combined, r"(?i)Pengukuhan dan Penilaian\\s*[-—]\\s*Pengukuhan")
+
     def test_year4_sk_sp_labels_match_standalone_music_dskp(self):
         """Prevent SK 3.2 or 4.2 from appearing in generated Y4 native RPH."""
         for pdp in range(1, 36):
