@@ -11,9 +11,9 @@
     "source_page_draft_reviewed": 154,
     "preliminary_year6_page_candidates": 0,
     "one_page_A4_docx_pdf_ci_verified": true,
-    "render_check_ci": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42132565716",
-    "word_generated_in_ci": 138,
-    "pdf_generated_in_ci": 138,
+    "render_check_ci": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42134760787",
+    "word_generated_in_ci": 154,
+    "pdf_generated_in_ci": 154,
     "year6_text_source_reviewed": 12,
     "year2_text_source_reviewed": 12,
     "year2_sp_book_ocr_ambiguous": 4,
@@ -29,7 +29,9 @@
     "year5_unit3_candidate_rph": 16,
     "verified_a4_render_for_all_138": true,
     "year5_unit4_candidate_rph": 16,
-    "verified_a4_render_for_all_154": false
+    "verified_a4_render_for_all_154": true,
+    "year5_unit4_pages_visually_reviewed": 13,
+    "year5_unit4_sp_codes_present_in_dskp": 16
   },
   "release_checks": [
     {
@@ -65,7 +67,7 @@
     {
       "id": "word_pdf_programmatic_a4",
       "status": "PASS_TECHNICAL_ONLY",
-      "detail": "Historical 138 A4 DOCX+PDF technical pass, run https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42132565716. New total154 NOT yet A4-tested."
+      "detail": "154 DOCX+154 PDF each exactly one A4 page passed in run https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42134760787; this is technical-only and does not confer pedagogic or language approval."
     },
     {
       "id": "manual_pedagogic_approval",
@@ -105,7 +107,7 @@
     {
       "id": "year5_unit4_candidate",
       "status": "PARTIAL",
-      "detail": "16 provisional Year5 Unit4 drafts from page text 86–110, 0 teacher approved, A4 verification for 154 pending."
+      "detail": "16 Unit4 Year5 candidate drafts from 13 visually inspected original source pages, 16 SP code values exist in DSKP Year5, one PdP046 word corrected, 0 individual teacher approvals; RPT 2027 A/B unresolved."
     }
   ],
   "years": [
@@ -156,7 +158,7 @@
       "source_page_reviewed_rph": 60,
       "preliminary_mapping_only": 0,
       "unwritten_units": [],
-      "textbook_issue": "Year5 60 provisional candidate RPH across four units, including Unit4 pp86–110. Annual RPT 2027, visual page and teacher approval incomplete.",
+      "textbook_issue": "Year5 60 draft candidate RPH across Unit1–4; Unit4 16 lessons mapped to 13 visually inspected printed pages and all 16 SP codes found in DSKP. RPT2027, final language/pedagogic checks and teacher approvals pending.",
       "incomplete_units": [
         2,
         3,
@@ -188,7 +190,6 @@
     "Complete and review full-year PdP/RPH coverage for Units 2, 3, 4 across Years 2–6",
     "Generate dated RPT 2027 Group A and B with school calendar and school profile",
     "Proofread A4 Arabic RTL Word/PDF samples and all release-critical pages",
-    "Approve materials individually against DSKP/book pages and test Telegram-Web parity with DB backup",
-    "Run A4 DOCX+PDF CI for all 154 drafts; preserve 138 historic result, do not assert success before verified."
+    "Approve materials individually against DSKP/book pages and test Telegram-Web parity with DB backup"
   ]
 }

@@ -289,8 +289,11 @@
       "unit4_candidate_rph_count": 16,
       "unit4_candidate_pdp_range": "045–060",
       "unit4_source_evidence_file": "audits/bahasa_arab_y5_unit4_pdp045_060_text_source_audit_20261106.json",
-      "unit4_coverage_status": "DRAF_TEXT_EXTRACTED_PAGES_86_110__NO_VISUAL_RPT_OR_TEACHER_APPROVAL",
-      "unit4_release_approved": false
+      "unit4_coverage_status": "DRAF_16_PDP_BOOK_PAGES_86_110_VISUAL_INSPECTED__NOT_RPT_OR_TEACHER_APPROVED",
+      "unit4_release_approved": false,
+      "unit4_original_page_images_reviewed_count": 13,
+      "unit4_candidate_sp_codes_in_dskp_checked": 16,
+      "unit4_source_evidence_scope": "SOURCE_VISUAL_AND_DSKP_EXISTENCE_ONLY__NOT_RPT_PEDAGOGIC_APPROVAL"
     },
     "6": {
       "dskp": {
@@ -380,12 +383,23 @@
   "bibliography_file": "audits/bahasa_arab_buku_teks_bibliography_20261105.json",
   "total_provisional_rph_count": 154,
   "latest_technical_a4_validation": {
-    "source_commit": "6ba64bb7d1cf4e7db15b30baf30ded20486065b3",
-    "github_actions_run": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42132565716",
-    "word_document_count": 138,
-    "pdf_document_count": 138,
+    "source_commit": "2e8aee781024c49a6e1af867f39fc447bf0f8199",
+    "github_actions_run": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42134760787",
+    "word_document_count": 154,
+    "pdf_document_count": 154,
     "pdf_pages_each": 1,
     "status": "PASSED_OFFLINE_TECHNICAL_ONLY",
     "release_approval": false
-  }
+  },
+  "historical_technical_a4_validation": [
+    {
+      "source_commit": "6ba64bb7d1cf4e7db15b30baf30ded20486065b3",
+      "github_actions_run": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42132565716",
+      "word_document_count": 138,
+      "pdf_document_count": 138,
+      "pdf_pages_each": 1,
+      "status": "PASSED_OFFLINE_TECHNICAL_ONLY",
+      "release_approval": false
+    }
+  ]
 }

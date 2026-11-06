@@ -257,8 +257,8 @@ def check() -> None:
     assert m["years"]["4"]["unit3_release_approved"] is False
     assert readiness["completed"]["year4_unit3_candidate_rph"] == 14
     assert readiness["completed"]["verified_a4_render_for_all_90"] is True
-    assert readiness["completed"]["word_generated_in_ci"] == 138
-    assert readiness["completed"]["pdf_generated_in_ci"] == 138
+    assert readiness["completed"]["word_generated_in_ci"] == 154
+    assert readiness["completed"]["pdf_generated_in_ci"] == 154
     assert readiness["total_ready_rph"] == 0
     assert m["latest_technical_a4_validation"]["status"] == "PASSED_OFFLINE_TECHNICAL_ONLY"
     assert m["latest_technical_a4_validation"]["release_approval"] is False
@@ -308,8 +308,8 @@ def check() -> None:
     assert m["years"]["5"]["unit2_release_approved"] is False
     assert readiness["completed"]["year5_unit2_candidate_rph"] == 16
     assert readiness["completed"]["verified_a4_render_for_all_122"] is True
-    assert readiness["completed"]["word_generated_in_ci"] == 138
-    assert readiness["completed"]["pdf_generated_in_ci"] == 138
+    assert readiness["completed"]["word_generated_in_ci"] == 154
+    assert readiness["completed"]["pdf_generated_in_ci"] == 154
     assert m["latest_technical_a4_validation"]["status"] == "PASSED_OFFLINE_TECHNICAL_ONLY"
     assert m["latest_technical_a4_validation"]["release_approval"] is False
     for n,row in zip(range(13,29),y5rows):
@@ -336,8 +336,8 @@ def check() -> None:
     assert m["years"]["5"]["unit3_release_approved"] is False
     assert readiness["completed"]["year5_unit3_candidate_rph"] == 16
     assert readiness["completed"]["verified_a4_render_for_all_138"] is True
-    assert readiness["completed"]["word_generated_in_ci"] == 138
-    assert readiness["completed"]["pdf_generated_in_ci"] == 138
+    assert readiness["completed"]["word_generated_in_ci"] == 154
+    assert readiness["completed"]["pdf_generated_in_ci"] == 154
     assert m["latest_technical_a4_validation"]["status"] == "PASSED_OFFLINE_TECHNICAL_ONLY"
     assert m["latest_technical_a4_validation"]["release_approval"] is False
     for n,r in zip(range(29,45),y5u3rows):
@@ -359,7 +359,12 @@ def check() -> None:
     assert m["years"]["5"]["unit4_candidate_rph_count"] == 16
     assert m["years"]["5"]["source_reviewed_drafts_total"] == 60
     assert readiness["completed"]["year5_unit4_candidate_rph"] == 16
-    assert readiness["completed"]["verified_a4_render_for_all_154"] is False
+    assert readiness["completed"]["verified_a4_render_for_all_154"] is True
+    assert m["latest_technical_a4_validation"]["word_document_count"] == 154
+    assert m["latest_technical_a4_validation"]["pdf_document_count"] == 154
+    assert m["latest_technical_a4_validation"]["release_approval"] is False
+    assert readiness["completed"]["year5_unit4_pages_visually_reviewed"] == 13
+    assert readiness["completed"]["year5_unit4_sp_codes_present_in_dskp"] == 16
     for n,r in zip(range(45,61),y5u4rows):
         txt = (SUBJECT / "year5" / f"lesson_{n:03d}.md").read_text(encoding="utf-8")
         assert len(txt) > 1650 and all(mark in txt for mark in MARKERS)
@@ -368,7 +373,7 @@ def check() -> None:
         assert "DRAF_SEMAK" in txt and "BELUM READY" in txt
     assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 154
     print("PASSED: 20 unit indexes, 60 Unit1 + 46 Y4 Units2–4 + 48 Y5 Units2–4, 154 RPH drafts, 15 banks.")
-    print("RELEASE BLOCKED: 0 READY; historical 138-file A4 CI passed; 154-file A4 pending, curriculum/RPT and runtime parity incomplete.")
+    print("RELEASE BLOCKED: 0 READY; 154 DOCX+PDF one-page A4 CI passed TECHNICALLY; curriculum/RPT/manual approval and runtime parity incomplete.")
 
 if __name__ == "__main__":
     check()
