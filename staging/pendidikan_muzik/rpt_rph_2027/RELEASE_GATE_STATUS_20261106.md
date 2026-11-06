@@ -1,3 +1,14 @@
+## 6 November 2026 — Gerbang 90% kualiti bukti teks/struktur staging
+
+- **LULUS QA 90% bagi skop terhad** melalui `quality_90_text_staging.py`: 167/175 = **95.4%** PdP mempunyai semakan teks buku atau bukti halaman; 175/175 pratonton mempunyai struktur fasa dan kriteria kejayaan; 175/175 kod SP hadir dalam teks DSKP bagi tahun masing-masing; 5/5 RPT mengandungi 35 PdP unik.
+- **81/81 kriteria tambahan** lulus editorial teks dalaman, bukan pemeriksaan skor; 94 kriteria lain berasal daripada fail RPH asal. Label status manifest Tahun 2–6 dan jadual ringkasan daftar sumber diselaraskan kepada kiraan terkini, dengan ujian regresi.
+- Amaran "belum semakan buku" dalam pratonton kini mengiktiraf **bukti halaman visual** selain pengekstrakan teks; hanya 8 PdP pengukuhan cadangan (T2,3,4,6 PdP34–35) tidak mempunyai halaman buku rasmi. Tiada padanan buku atau audio direka.
+- **Had besar:** hanya **2/175** PdP (Tahun4 PdP21/24) mempunyai semakan visual contoh skor yang direkod; kesesuaian notasi bagi baki belum dibuktikan. Audio rasmi belum boleh diagih; **10 PdP** ialah anjal mengikut kalendar calon. Parity runtime Telegram/Web dan entitlement **belum disahkan**.
+- Bukti: [Actions QA 90% #42159668022](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42159668022) (langkah QA teks/struktur lulus; baki cetakan perlu semakan keputusan run) dan laporan artifak `muzik-qa90-staging-teks-struktur-bukan-live`. Ujian PDF diketatkan untuk menyemak awal/tengah/akhir medan utama.
+- **STATUS PENERBITAN TIDAK BERUBAH: DRAF STAGING; BUKAN FINAL READY; JANGAN MERGE/DEPLOY.** Ambang 90% ini ialah *liputan bukti teks dan struktur*, **bukan** penilaian 90% ketepatan pedagogi, skor atau penggunaan LIVE.
+
+---
+
 ## 6 November 2026 — kemajuan audit editorial kriteria kejayaan
 
 - **81/81** kriteria kejayaan calon dipadankan dengan objektif, aktiviti dan pentaksiran RPH serta diperiksa secara editorial. Status baharu `CIKGULAJU_EDITORIAL_TEXT_REVIEW_PASSED` ialah **kelulusan teks dalaman sahaja**, bukan pengesahan skor muzik, DSKP keseluruhan atau kelulusan oleh KPM.
