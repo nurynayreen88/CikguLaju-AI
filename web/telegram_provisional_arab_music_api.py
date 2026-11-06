@@ -307,6 +307,29 @@ def create_provisional_subjects_blueprint(runtime):
         return jsonify({"available":True,"generator":"telegram-native",
                         "status":"DRAF","formats":selected["formats"]})
 
+    @bp.get("/internal/rph/v1/other-drafts/audio-links")
+    def audio_links():
+        """Original Music source VIEW links only, matched to exact verified PdP."""
+        try:
+            year,subject=_query({"year","subject","unit","lesson"})
+            if subject!="MUZIK":
+                return jsonify({"error":"Music only"}),404
+            _selected(year,subject,request.args["unit"],request.args["lesson"])
+            from staging.pendidikan_muzik.rpt_rph_2027.external_audio_links_staging import (
+                audio_link_action,
+            )
+            source=audio_link_action(year,int(request.args["lesson"]))
+            links=source.get("links",[])
+            if not isinstance(links,list) or len(links)>21:
+                raise ValueError("Ambiguous music links")
+            items=[{"title":item["title"],"url":item["url"],
+                    "track":item["track"]} for item in links]
+        except (ValueError,TypeError,KeyError,OSError,ImportError):
+            return jsonify({"error":"Music audio source not available"}),503
+        return jsonify({"source":SOURCE,"status":"DRAF",
+                        "available":bool(items),"links":items,
+                        "notice":source["notice"],"download_available":False})
+
     @bp.post("/internal/rph/v1/other-drafts/render")
     def render():
         if (not request.is_json or request.content_length is None
