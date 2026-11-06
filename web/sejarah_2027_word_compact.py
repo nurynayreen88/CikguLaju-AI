@@ -38,7 +38,7 @@ def compact_sejarah_native_word(data):
         section.header_distance=Cm(0.20)
         section.footer_distance=Cm(0.20)
     normal=doc.styles["Normal"]
-    normal.font.size=Pt(7.9)
+    normal.font.size=Pt(9.0)
     normal.paragraph_format.space_before=Pt(0)
     normal.paragraph_format.space_after=Pt(0)
     normal.paragraph_format.line_spacing=0.92
@@ -47,7 +47,7 @@ def compact_sejarah_native_word(data):
         para.paragraph_format.space_after=Pt(0)
         para.paragraph_format.line_spacing=0.92
         for run in para.runs:
-            run.font.size=Pt(7.9)
+            run.font.size=Pt(9.0)
     if doc.paragraphs and doc.paragraphs[0].runs:
         doc.paragraphs[0].runs[0].font.size=Pt(10.5)
     for index,table in enumerate(doc.tables):
@@ -77,7 +77,7 @@ def compact_sejarah_native_word(data):
                     para.paragraph_format.space_after=Pt(0)
                     para.paragraph_format.line_spacing=0.92
                     for run in para.runs:
-                        run.font.size=Pt(7.9)
+                        run.font.size=Pt(9.0)
     output=BytesIO()
     doc.save(output)
     done=output.getvalue()
