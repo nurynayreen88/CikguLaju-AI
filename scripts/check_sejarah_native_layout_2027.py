@@ -23,6 +23,8 @@ for y in (4,5,6):
         assert len({a["label"] for a in layout["header"]})==len(layout["header"])
         fields={a["label"]:a["value"] for a in layout["header"]}
         assert fields["MATA PELAJARAN"]=="Sejarah"
+        assert fields["TARIKH"]=="22/03/2027", ("Date must display day/month/year",y,n)
+        assert fields["HARI"]=="Isnin"
         assert fields["Standard Pembelajaran"]==", ".join(r["sp_codes"])
         assert fields["OBJEKTIF PEMBELAJARAN"]=="; ".join(r["objective"])
         assert fields["PENTAKSIRAN"]==r["pengukuhan_pbd"]["activity"]
