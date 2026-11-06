@@ -10,17 +10,17 @@
 
 **Objektif:** Mencipta satu corak irama dan satu jawapan melodi ringkas menggunakan not B, A dan G, kemudian mempersembahkannya mengikut detik.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **HELO, HELO APA KHABAR?**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
+**Set induksi (4 minit):** Guru menepuk pola soalan empat detik, kemudian murid membalas satu pola jawapan secara berpasangan; guru mengaitkan respons itu dengan ciptaan melodi.
 
 **Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru memperkenalkan Contoh Soalan dan dua pilihan Contoh Jawapan pada skor buku m/s 82–83.
 
 **Aktiviti 2 — Aplikasi muzik (10 minit):** Murid mencipta corak irama dengan empat kad notasi, menepuk corak serta menghasilkan melodi soalan-jawapan menggunakan not B, A dan G. Pasangan mempersembahkan dan guru menilai ketepatan detik serta pic.
 
-**Pengukuhan dan pentaksiran (6 minit):** Semak bentuk soal jawab, ketepatan detik dan kualiti persembahan.
+**Pengukuhan dan pentaksiran (6 minit):** Setiap pasangan mempersembahkan satu soalan dan jawapan melodi B/A/G; guru merekod tiga aspek, iaitu ketepatan detik, pic dan respons pasangan.
 
-**Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
+**Penutup (2 minit):** Dua pasangan berkongsi satu jawapan melodi; murid menyebut perbezaan antara pola soalan dan jawapan sebelum guru memberi maklum balas PBD.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK m/s 82–84, empat kad notasi bagi setiap kumpulan, kad B/A/G, papan baluk dan rekoder.
 
 **Rujukan buku teks:** m/s 82–84 bagi contoh soalan-jawapan dan permainan Cipta Melodi dalam Buku Teks Pendidikan Kesenian Tahun 4 (RPT lama hanya menyebut m/s 82). **Semakan teks unit/aktiviti dibuat, tetapi halaman penuh belum disahkan secara visual.** Sumber: https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view
 
