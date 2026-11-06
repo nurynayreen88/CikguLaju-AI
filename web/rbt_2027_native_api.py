@@ -119,11 +119,25 @@ def create_rbt_2027_native_blueprint(runtime):
             values=[]
             for n,label in resolve(year,unit):
                 row=resolve(year,unit,f"{n:03d}")
-                ref=row["rujukan_buku_teks"].get("calon_muka_surat_teks_digital") or []
+                book=row["rujukan_buku_teks"]
+                sp_pages=book.get("calon_muka_surat_mengikut_sp") or []
+                if sp_pages:
+                    refs=[]
+                    for item in sp_pages:
+                        pages=item["muka_surat_bercetak_calon"]
+                        if len(pages)==2 and pages[0]!=pages[1]:
+                            span=f"{pages[0]}–{pages[1]}"
+                        else:
+                            span=str(pages[0])
+                        refs.append(f'{item["sp"]} hlm. {span}')
+                    page_label="; ".join(refs)
+                else:
+                    ref=book.get("calon_muka_surat_teks_digital") or []
+                    page_label=", ".join(map(str,ref))
                 values.append({
                     "value":f"{n:03d}", "label":label,
-                    "textbook_ref":("Buku Teks calon m/s: "+", ".join(map(str,ref))
-                                    +" (belum sah visual)") if ref else "",
+                    "textbook_ref":("Buku Teks calon m/s: "+page_label
+                                    +" (belum sah visual)") if page_label else "",
                     "status":"DRAF"
                 })
         except (ValueError,RBTSourceUnavailable):
