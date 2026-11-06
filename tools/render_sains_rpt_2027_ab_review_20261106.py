@@ -7,6 +7,8 @@ integrated. Year1 KP2027 Alam dan Manusia is *not* reused from legacy Sains.
 """
 from __future__ import annotations
 import csv
+import json
+from datetime import date
 import os
 import sys
 import tempfile
@@ -34,6 +36,42 @@ from web.sains_y3_rph_activity_preview_20261106 import source_ledgers
 OUT=ROOT/"build/sains_rpt_2027_AB_REVIEW_ONLY_20261106"
 FONT="/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 EXPECTED={2:51,3:45,4:79,5:83,6:84}
+CALENDAR_SOURCE=ROOT/"audits/sains_rpt_2027_calendar_windows_20261106.json"
+
+def calendar_for(group):
+    """KPM group windows are reference dates, NEVER automatic PdP slots."""
+    data=json.loads(CALENDAR_SOURCE.read_text(encoding="utf-8"))
+    if data.get("status")!="GROUP_PERIODS_CONFIRMED__STATE_DATES_AND_CLASS_TIMETABLE_PENDING":
+        raise ValueError("Unapproved calendar source")
+    if set(data.get("groups",{}))!={"A","B"} or group not in ("A","B"):
+        raise ValueError("Invalid KPM school group")
+    block=data["groups"][group]
+    start=date.fromisoformat(block["starts"])
+    last=date.fromisoformat(block["last_school_day"])
+    if start!=date(2027,1,4) or last != date(2027,12,2 if group=="A" else 3):
+        raise ValueError("KPM session envelope changed; re-audit required")
+    windows=block["holiday_windows"]
+    if len(windows)!=4:
+        raise ValueError("Expected exactly four official school break windows")
+    last_end=None
+    for w in windows:
+        begin=date.fromisoformat(w["start"])
+        end=date.fromisoformat(w["end"])
+        if begin>end or begin.year!=2027 or end.year!=2027:
+            raise ValueError("Invalid 2027 school break")
+        if begin<=start or (last_end and begin<=last_end):
+            raise ValueError("Overlapping or out-of-order KPM school breaks")
+        last_end=end
+    return block
+
+def calendar_cover_lines(group):
+    cal=calendar_for(group)
+    fmt=lambda iso:date.fromisoformat(iso).strftime("%d/%m/%Y")
+    lines=[f"KPM 2027 • Kumpulan {group}: {fmt(cal['starts'])} – {fmt(cal['last_school_day'])}."]
+    for window in cal["holiday_windows"]:
+        lines.append(f"{window['name']}: {fmt(window['start'])} – {fmt(window['end'])}.")
+    lines.append("Cuti negeri/gantian, jadual sekolah dan tarikh setiap PdP: BELUM DISAHKAN.")
+    return lines
 
 def safe_text(value):
     return str(value or "").strip()
@@ -89,7 +127,7 @@ def docx_file(path,year,group,rows):
         "Nama guru: ____________________________________",
         "Nama sekolah: ____________________________________",
         "Rujukan: Sains KSSR (Semakan 2017), sumber PdP v25.82.",
-        "Tarikh mula sekolah bagi Kumpulan A/B: 04/01/2027; minggu dan cuti negeri belum dipadankan.",
+        *calendar_cover_lines(group),
         "Perhatian: Tahun 1 KP2027 menggunakan sumber Alam dan Manusia yang berasingan.",
     ]:
         p=doc.add_paragraph(text)
@@ -135,13 +173,13 @@ def pdf_file(path,year,group,rows):
     def pg(text):return Paragraph(escape(str(text)),style)
     doc=SimpleDocTemplate(str(path),pagesize=landscape(A4),
         leftMargin=26,rightMargin=26,topMargin=31,bottomMargin=31)
-    story=[Spacer(1,100),
+    story=[Spacer(1,36),
            Paragraph("RANCANGAN PENGAJARAN TAHUNAN 2027",title),
            Paragraph(f"SAINS TAHUN {year} — KUMPULAN {group}",title),
            Paragraph("DRAF INDEKS PDP — BELUM DILULUSKAN UNTUK PENGGUNA",subtitle),
            Paragraph("Nama guru: ___________________________________________",subtitle),
            Paragraph("Nama sekolah: _________________________________________",subtitle),
-           Paragraph("Mula sekolah Kumpulan A/B: 04/01/2027. Minggu, cuti negeri dan jadual PdP belum dipadankan.",subtitle),
+           *[Paragraph(escape(line),subtitle) for line in calendar_cover_lines(group)],
            Paragraph("Sumber v25.82. Kod PdP, SK dan SP asal dipelihara. Tahun 1 KP2027 tidak termasuk.",subtitle),
            PageBreak(),
            Paragraph(f"Sains Tahun {year} | Kumpulan {group} | {len(rows)} PdP (DRAF)",subtitle)]
@@ -195,7 +233,8 @@ def main():
     if total!=342:raise RuntimeError("Sains Years2-6 source changed")
     (OUT/"README_DRAF.txt").write_text(
         "10 Word dan 10 PDF RPT Sains Tahun 2–6 (Kumpulan A/B), LANDSCAPE A4.\n"
-        "Muka depan disediakan. Jadual tarikh/cuti negeri belum dipadankan.\n"
+        "Muka depan dan tingkap cuti KPM mengikut Kumpulan A/B disediakan; PdP tidak diberi tarikh.\\n"
+        "Cuti negeri/gantian dan jadual waktu sekolah belum disahkan.\\n"
         "342 PdP asal, SK/SP tidak diubah. Tahun 1 KP2027 diasingkan.\n"
         "Ini BUKAN dokumen RPT FINAL atau bahan pengguna.\n",encoding="utf-8")
     print("RPT_SAINS_2027_PREVIEW: years 2-6=5, groups A/B=2, "
