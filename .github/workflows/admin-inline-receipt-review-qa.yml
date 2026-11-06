@@ -27,4 +27,4 @@ jobs:
       - name: Telegram payment proof-first and durable Supabase queue tests
         run: |
           python -m unittest discover -s . -p test_payment_record_on_proof_runtime.py -v
-          python -m unittest discover -s . -p test_supabase_user_payment_runtime.py -v
+          python -m unittest discover -s tests -p test_pioneer_paid_recovery.py -v
