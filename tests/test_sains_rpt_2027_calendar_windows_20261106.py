@@ -124,6 +124,31 @@ class SainsRPTCalendarWindowsTests(unittest.TestCase):
                     self.assertNotIn("3. Guru",word.tables[2].cell(1,1).text)
         self.assertEqual(len(fixes),12)
 
+    def test_years2_to5_primary_sp_are_literal_tokens_in_respective_dskp_pdf(self):
+        # This is a lexical DSKP code guard, not an academic lesson approval.
+        inventory=json.loads(
+            (ROOT/"audits/sains_dskp_t2_t5_sp_token_inventory_20261106.json")
+            .read_text(encoding="utf-8"))
+        self.assertEqual(inventory["audit_level"],"DSKP_TEXT_LAYER_CODE_PRESENCE_ONLY")
+        self.assertFalse(inventory["ready"])
+        self.assertEqual(set(inventory["years"]),{"2","3","4","5"})
+        for year,expected in [(2,64),(3,60),(4,91),(5,95)]:
+            source=inventory["years"][str(year)]
+            codes=set(source["sp_tokens"])
+            self.assertEqual(len(codes),expected)
+            self.assertEqual(source["distinct_codes"],expected)
+            with (OUT/f"SAINS_TAHUN_{year}_SOURCE_DRAF.csv").open(
+                    encoding="utf-8-sig",newline="") as f:
+                rows=list(csv.DictReader(f))
+            self.assertEqual(len(rows),EXPECTED[year])
+            for row in rows:
+                with self.subTest(year=year,pdp=row["Kod sumber"]):
+                    self.assertIn(row["SP asal"],codes)
+                    for sp in row["SP"].split(", "):
+                        self.assertIn(sp,codes)
+        # Year6 is NOT automatically approved without an exact-edition DSKP.
+        self.assertNotIn("6",inventory["years"])
+
     def test_kpm_edisi3_is_option_for_stage_one_not_forced_on_all_years(self):
         self.assertIn("PILIHAN guru",curriculum_ref(2))
         self.assertIn("PILIHAN guru",curriculum_ref(3))
