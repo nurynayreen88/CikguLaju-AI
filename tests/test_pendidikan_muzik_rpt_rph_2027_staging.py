@@ -438,7 +438,7 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
         overlay = json.loads((root / "SUCCESS_CRITERIA_DRAFT_20261106.json").read_text(encoding="utf-8"))
         self.assertEqual(audit["summary"]["total"], 81)
         self.assertEqual(audit["summary"]["needs_score_review"], 81)
-        self.assertEqual(audit["summary"]["editorially_approved"], 0)
+        self.assertEqual(audit["summary"]["editorially_approved"], 81)
         self.assertEqual(set(audit["records"]), set(overlay))
         for ident, row in audit["records"].items():
             year, pdp = int(ident.split("-")[1][1:]), int(ident.split("-")[2])
@@ -447,7 +447,7 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
             self.assertIn(row["objective"], src)
             self.assertIn(row["assessment"], src)
             self.assertGreaterEqual(row["lexical_alignment_score"], 0.5)
-            self.assertEqual(row["editorial_approval"], "NOT_GIVEN")
+            self.assertEqual(row["editorial_approval"], "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED")
             self.assertEqual(row["source_score_visual_review"], "PENDING")
 
     def test_all_81_specific_success_criteria_overlays_remain_draft(self):
@@ -465,14 +465,14 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
                 if ident in overlay:
                     matched += 1
                     self.assertEqual(criterion, overlay[ident]["criterion"])
-                    self.assertEqual(overlay[ident]["approval"], "DRAF_EDITORIAL_BELUM_DISAHKAN")
+                    self.assertEqual(overlay[ident]["approval"], "CIKGULAJU_EDITORIAL_TEXT_REVIEW_PASSED")
                     self.assertFalse(
                         re.search(r"(?i)\\b(?:belum disahkan|menunggu penyelarasan|tertakluk semakan|kod SP|RPT lama)\\b", criterion),
                         f"Internal source-audit caveat must not leak into pedagogical criteria for {ident}"
                     )
-                    self.assertIn("EDITORIAL_DRAFT_CRITERION_OVERLAY_NOT_APPROVED", result["warnings"])
+                    self.assertIn("EDITORIAL_TEXT_REVIEW_PASSED_SCORE_PENDING", result["warnings"])
                 else:
-                    self.assertNotIn("EDITORIAL_DRAFT_CRITERION_OVERLAY_NOT_APPROVED", result["warnings"])
+                    self.assertNotIn("EDITORIAL_TEXT_REVIEW_PASSED_SCORE_PENDING", result["warnings"])
             self.assertEqual(matched, counts[year])
         self.assertEqual(len({x["criterion"] for x in overlay.values()}), 81)
 
@@ -725,7 +725,7 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
         self.assertTrue(set(overlay).issubset(expected_ids))
         for ident, candidate in overlay.items():
             self.assertEqual(ident, f"MZ-Y{candidate['year']}-{candidate['pdp']:02d}")
-            self.assertEqual(candidate["approval"], "DRAF_EDITORIAL_BELUM_DISAHKAN")
+            self.assertEqual(candidate["approval"], "CIKGULAJU_EDITORIAL_TEXT_REVIEW_PASSED")
             self.assertTrue(candidate["criterion"].strip())
             self.assertTrue(candidate["evidence"].strip())
 
