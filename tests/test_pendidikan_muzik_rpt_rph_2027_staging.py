@@ -15,6 +15,81 @@ REQUIRED = (
 
 
 class MusicRPTAndRPHStagingQA(unittest.TestCase):
+    def test_music_native_route_candidate_source_identity_and_access_gate(self):
+        """Candidate uses existing native rows, never bypasses release parity."""
+        import os
+        from unittest.mock import patch
+        from staging.pendidikan_muzik.rpt_rph_2027 import music_native_route_candidate as candidate
+
+        all_ids = set()
+        digests = set()
+        for year in range(2, 7):
+            for pdp in range(1, 36):
+                src = candidate.load(year, pdp)
+                self.assertIsNotNone(src, f"Missing candidate Y{year} PdP{pdp}")
+                self.assertEqual(src["title"], src["preview"]["layout"]["header"][9]["value"])
+                self.assertFalse(src["preview"]["approved_for_live"])
+                self.assertEqual(src["subject"], "Pendidikan Muzik")
+                self.assertRegex(src["digest"], r"^[0-9a-f]{64}$")
+                all_ids.add((src["year"], src["pdp"]))
+                digests.add(src["digest"])
+        self.assertEqual(len(all_ids), 175)
+        self.assertEqual(len(digests), 175)
+        self.assertIsNone(candidate.load(1, 1))
+        self.assertIsNone(candidate.load(2, 36))
+        self.assertIsNone(candidate.source_digest(2, 36))
+
+        sends, calls, session = [], [], {}
+        def send(cid, text, kb=None, *args, **kwargs):
+            sends.append((cid, text, kb))
+            return "SENT"
+        def original_callback(cid, data):
+            calls.append(("old", cid, data))
+            return "ORIGINAL"
+        def next_class(cid):
+            calls.append(("class", cid))
+            return "CLASS_SELECTION"
+        ns = {
+            "state": session,
+            "callback": original_callback,
+            "subjects": lambda cid, label: "OLD_SUBJECTS",
+            "send": send,
+            "_rph_rows": lambda state, *a, **k: {"MATA PELAJARAN": "UNMODIFIED"},
+            "_lesson_to_class_v2439": next_class,
+            "SUBJECTS_BY_GRADE": {"Tahun 4": ["English", "Matematik"]},
+            "SUBJECT_LABEL": {},
+            "_CIKGULAJU_DEV_SUBJECTS_V2617": {"Pendidikan Muzik": (2, 3, 4, 5, 6)},
+        }
+        with patch.dict(os.environ, {candidate.FLAG: "0", candidate.PARITY_FLAG: "0"}):
+            self.assertFalse(candidate.install(ns))
+            self.assertIs(ns["callback"], original_callback)
+        with patch.dict(os.environ, {candidate.FLAG: "1", candidate.PARITY_FLAG: "0"}):
+            self.assertFalse(candidate.install(ns))
+            self.assertIs(ns["callback"], original_callback)
+        with patch.dict(os.environ, {candidate.FLAG: "1", candidate.PARITY_FLAG: "1"}):
+            self.assertTrue(candidate.install(ns))
+            self.assertTrue(ns["MUZIK_2027_NATIVE_CANDIDATE_ACTIVE"])
+            self.assertEqual(ns["subjects"](42, "Tahun 4"), "SENT")
+            flat = [x for row in sends[-1][2] for x in row]
+            self.assertEqual(sum(x["callback_data"] == "sub_Pendidikan Muzik" for x in flat), 1)
+            self.assertEqual(ns["callback"](42, "sub_Pendidikan Muzik"), "SENT")
+            self.assertEqual(ns["callback"](42, "muzik27pick|4|06"), "CLASS_SELECTION")
+            state = ns["state"][42]
+            self.assertEqual(state["subject"], candidate.SUBJECT)
+            self.assertEqual(state["lesson_no"], "6")
+            result = ns["_rph_rows"](state)
+            self.assertEqual(result["MATA PELAJARAN"], candidate.SUBJECT)
+            self.assertEqual(result["TAJUK"], "BEG CANTIK MENAWAN")
+            self.assertIn("Rakaman tidak diperlukan", result["AKTIVITI UTAMA"])
+            self.assertIn("mengajuk", result["OBJEKTIF PEMBELAJARAN"].lower())
+            state[candidate.SESSION_KEY]["digest"] = "0" * 64
+            with self.assertRaises(ValueError):
+                ns["_rph_rows"](state)
+            self.assertEqual(ns["callback"](42, "muzik27pick|3|06"), "SENT")
+            self.assertEqual(ns["callback"](42, "muzik27page|4|1"), "SENT")
+        # The old subject path and Year 1 route remain delegated.
+        self.assertEqual(ns["callback"](42, "totally_other_event"), "ORIGINAL")
+
     def test_rpt_manifest_identity_unit_sp_pages_and_group_slots_all_175(self):
         """Keep lesson source and printed RPT synchronized without altering records."""
         columns = {
