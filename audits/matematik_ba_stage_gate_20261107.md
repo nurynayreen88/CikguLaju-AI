@@ -24,3 +24,11 @@
 **Tiada merge/deploy dan tiada perubahan data produksi dilakukan oleh kerja ini.**
 
 Sumber teknikal v41: https://github.com/nurynayreen88/CikguLaju-AI/blob/audit/matematik-evidence-gate-20261105/audits/matematik_v41_585_rph_release_gate_20261105.md
+
+
+## Susulan 7 November: padanan SP merentas versi
+- Indeks `matematik_ba_v28_rpt_585_sp_index_20261107.csv` kini menyimpan 585 identiti Lesson RPT 2027 v28 dan kod SP sumber (117 × 5 tahun). Ini ialah **rujukan RPT**, bukan bukti RPH v41 sepadan secara semantik.
+- `matematik_ba_t2_v27_to_v28_sp_candidates_20261107.csv` membandingkan 72 sesi salinan Tahun 2 v27 dengan 117 lesson RPT v28 **berdasarkan kod SP sahaja**.
+- **64/72** sesi mempunyai sekurang-kurangnya satu calon SP, iaitu **21 satu calon**, **43 lebih daripada satu calon**; **8 tiada calon**. Calon tidak melayakkan pindahan halaman BA ke mana-mana RPH.
+- Semakan individu mesti membandingkan objektif, pecahan aktiviti, aras, latihan, PBD, kesemua SP dan identiti lesson v41. Pilihan `APPROVED` hanya selepas bukti visual halaman BA dan kelulusan manual.
+- CI automatik disediakan untuk memastikan status fail-closed dan integriti indeks. **Tiada RPH, DB atau perkhidmatan live diubah.**
