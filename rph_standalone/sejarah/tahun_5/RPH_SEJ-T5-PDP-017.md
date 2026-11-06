@@ -14,7 +14,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan gambar laungan kemerdekaan dan salinan atur cara rasmi bertarikh. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 6: Sejarah Kemerdekaan.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 80–85: Detik pemasyhuran kemerdekaan pada 31 Ogos 1957 di Stadium. Murid mengelaskan peristiwa menjelang 31 Ogos 1957 mengikut urutan. Guru menyemak jawapan awal berpandukan 7.3.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 80–85: Detik pemasyhuran kemerdekaan pada 31 Ogos 1957 di Stadium Merdeka. Murid mengelaskan peristiwa menjelang 31 Ogos 1957 mengikut urutan. Guru menyemak jawapan awal berpandukan 7.3.3.
 
 **Aktiviti 2 (20 min):** Guru meminta murid memeriksa urutan dan fakta pada hlm. 80–85. Murid menghasilkan garis masa pengisytiharan kemerdekaan dan menjelaskan kepentingan peristiwa. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan permuafakatan dalam perjuangan menuntut kemerdekaan.
 

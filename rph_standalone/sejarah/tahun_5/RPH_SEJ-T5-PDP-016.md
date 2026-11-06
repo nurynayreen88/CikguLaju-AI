@@ -15,7 +15,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan foto pemimpin kemerdekaan dan kad usaha rundingan atau gerakan politik. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 6: Sejarah Kemerdekaan.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 76–79: Tokoh kemerdekaan dan usaha menuju merdeka termasuk Dato' Onn. Murid memadankan tokoh kemerdekaan dengan sumbangan yang disokong sumber. Guru menyemak jawapan awal berpandukan 7.3.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 76–79: Tokoh kemerdekaan dan usaha menuju merdeka termasuk Dato' Onn dan rundingan. Murid memadankan tokoh kemerdekaan dengan sumbangan yang disokong sumber. Guru menyemak jawapan awal berpandukan 7.3.1.
 
 **Aktiviti 2 (20 min):** Guru meminta murid memeriksa urutan dan fakta pada hlm. 76–79. Murid menyusun langkah rundingan, perpaduan parti dan persediaan menuju kemerdekaan dalam carta. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan pengorbanan tokoh pejuang kemerdekaan yang boleh dicontohi.
 

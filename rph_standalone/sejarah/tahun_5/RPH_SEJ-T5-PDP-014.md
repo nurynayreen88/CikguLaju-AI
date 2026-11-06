@@ -15,7 +15,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan kad tokoh penentangan seperti Dol Said, Rentap dan Tok Janggut dengan sumber. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 5: Bangkit Berjuang Penjajah Ditentang.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 60–63: Tokoh tempatan dan sebab penentangan, termasuk Dol Said, Rentap. Murid memadankan tokoh dengan tempat serta sebab penentangan yang berkaitan. Guru menyemak jawapan awal berpandukan 7.2.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 60–63: Tokoh tempatan dan sebab penentangan, termasuk Dol Said, Rentap dan Tok Janggut. Murid memadankan tokoh dengan tempat serta sebab penentangan yang berkaitan. Guru menyemak jawapan awal berpandukan 7.2.1.
 
 **Aktiviti 2 (20 min):** Guru meminta murid memeriksa urutan dan fakta pada hlm. 60–63. Murid menyusun matriks tokoh, tindakan kuasa asing dan alasan perjuangan tanpa mencampurkan zaman. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan iktibar yang diperoleh daripada perjuangan tokoh terdahulu.
 

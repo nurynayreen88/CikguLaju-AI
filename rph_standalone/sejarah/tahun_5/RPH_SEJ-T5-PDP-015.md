@@ -14,7 +14,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan garis masa perjuangan tokoh tempatan dan peta lokasi penentangan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 5: Bangkit Berjuang Penjajah Ditentang.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 64–68: Urutan peristiwa penentangan tokoh tempatan terhadap kuasa. Murid menyusun dua siri peristiwa penentangan mengikut urutan dan lokasi. Guru menyemak jawapan awal berpandukan 7.2.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 64–68: Urutan peristiwa penentangan tokoh tempatan terhadap kuasa asing. Murid menyusun dua siri peristiwa penentangan mengikut urutan dan lokasi. Guru menyemak jawapan awal berpandukan 7.2.3.
 
 **Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 64–68 bagi menyokong perbandingan. Murid membandingkan strategi yang digunakan serta iktibar menghargai pejuang. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan menghargai perjuangan pemimpin terdahulu.
 

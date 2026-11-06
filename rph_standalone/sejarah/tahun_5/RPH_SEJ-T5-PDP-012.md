@@ -14,7 +14,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan gambar pelabuhan dan kad kepentingan ekonomi/strategik Tanah Melayu. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 4: Kedaulatan Negara Dicabar.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 50–52: Kedudukan strategik, hasil bumi, penyebaran agama dan Revolusi. Murid mengelaskan faktor kedatangan kuasa asing kepada ekonomi, politik atau lokasi. Guru menyemak jawapan awal berpandukan 7.1.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 50–52: Kedudukan strategik, hasil bumi, penyebaran agama dan Revolusi Perindustrian. Murid mengelaskan faktor kedatangan kuasa asing kepada ekonomi, politik atau lokasi. Guru menyemak jawapan awal berpandukan 7.1.3.
 
 **Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 50–52 bagi menyokong perbandingan. Murid membina peta sebab-akibat yang menghubungkan faktor dengan tindakan penjajahan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan semangat patriotisme dalam mempertahankan kedaulatan negara.
 
