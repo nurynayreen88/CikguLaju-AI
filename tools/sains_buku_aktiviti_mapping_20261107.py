@@ -89,9 +89,9 @@ def activity_short_note(entry,year):
     page=entry["workbook_printed_page"]
     title=entry["activity_title"]
     if is_direct_sp_match(entry):
-        return (f"BA Sains T{year} m/s {page}: '{title}' "
-                "(SP buku sepadan; DRAF). Guru semak jawapan individu.")
-    return (f"BA T{year} m/s {page}: '{title}' "
+        return (f"Buku Aktiviti Sains Tahun {year}, m/s bercetak {page}: '{title}' "
+                "(SP bercetak sama; DRAF). Guru semak jawapan individu.")
+    return (f"Buku Aktiviti Sains Tahun {year}, m/s bercetak {page}: '{title}' "
             f"(SP buku {','.join(entry['workbook_printed_sp_codes'])} "
             f"bukan SP PdP {entry['sp']}); RUJUKAN SAHAJA, bukan tugasan PBD.")
 
