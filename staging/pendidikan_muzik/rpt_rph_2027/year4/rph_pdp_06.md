@@ -11,7 +11,7 @@
 
 **Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **BEG CANTIK MENAWAN**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
 
-**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru membimbing latihan mendengar dan mengajuk pic daripada audio latihan yang ditandakan pada buku.
+**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru menyuarakan frasa melodi pendek berdasarkan notasi rujukan pada buku teks; murid mendengar lalu mengajuk pic secara respons-gema. Rakaman tidak diperlukan.
 
 **Aktiviti 2 — Aplikasi muzik (10 minit):** Murid menyanyikan lagu Beg Cantik Menawan secara respons-gema, memerhatikan ketepatan pic sebelum mencuba sebagai satu kumpulan.
 
@@ -19,7 +19,7 @@
 
 **Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019), kad not G/A/B dan suara guru untuk latihan respons-gema; rakaman hanya pilihan jika guru memiliki sumber yang sah.
 
 **Rujukan buku teks:** m/s 28-29 daripada RPT rujukan yang padan dengan tema buku Kesenian Tahun 4. **Semakan teks unit/aktiviti dibuat, tetapi halaman penuh belum disahkan secara visual.** Sumber: https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view
 
