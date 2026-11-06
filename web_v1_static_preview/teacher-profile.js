@@ -6,6 +6,24 @@ const teacherProfileState = {
   classNames: [], savedPeriods: 0, savedProfile: null, savedTimetable: null,
 };
 const teacherDays = ["Isnin","Selasa","Rabu","Khamis","Jumaat","Sabtu","Ahad"];
+// Full, source-compatible names so RPH Hari Ini can match a saved period.
+// Previously the subject was a datalist text field: difficult to scroll and
+// inconsistent between mobile browsers. Keep legacy/custom values losslessly.
+const teacherSubjectGroups = [
+  { label:"Subjek utama", values:[
+    "Bahasa Melayu","English","Matematik","Sains","Pendidikan Islam"
+  ]},
+  { label:"Subjek sekolah rendah lain", values:[
+    "Pendidikan Moral","Pendidikan Seni Visual","Pendidikan Muzik",
+    "Pendidikan Jasmani","Pendidikan Kesihatan","PJPK",
+    "Bahasa Arab","Sejarah","Reka Bentuk dan Teknologi"
+  ]},
+  { label:"Waktu bukan PdP", values:[
+    "Rehat","Perhimpunan","Kokurikulum"
+  ]},
+];
+const subjectNames = new Set(teacherSubjectGroups.flatMap(group => group.values));
+const timetableOtherSubject = "__cikgulaju_custom_subject__";
 const profileForm = document.getElementById("teacher-profile-form");
 const timetableBody = document.getElementById("timetable-rows");
 const profileMessage = document.getElementById("profile-save-status");
@@ -174,6 +192,43 @@ function makeTimetableSelect(values, selected, field, placeholder) {
   return select;
 }
 
+function makeTimetableSubjectPicker(value, index) {
+  const wrap=document.createElement("div");
+  wrap.className="timetable-subject-picker";
+  const choose=document.createElement("select");
+  choose.dataset.field="subject";
+  choose.setAttribute("aria-label","Pilih subjek untuk waktu "+(index+1));
+  choose.add(new Option("Pilih subjek",""));
+  for(const group of teacherSubjectGroups){
+    const options=document.createElement("optgroup");
+    options.label=group.label;
+    for(const name of group.values)options.append(new Option(name,name));
+    choose.append(options);
+  }
+  choose.add(new Option("Lain-lain — taip sendiri",timetableOtherSubject));
+  const custom=document.createElement("input");
+  custom.type="text";
+  custom.dataset.field="subject_custom";
+  custom.maxLength=60;
+  custom.placeholder="Taip nama subjek";
+  custom.setAttribute("aria-label","Nama subjek lain untuk waktu "+(index+1));
+  const saved=typeof value==="string"?value:"";
+  const isKnown=subjectNames.has(saved);
+  choose.value=isKnown?saved:(saved?timetableOtherSubject:"");
+  custom.value=isKnown?"":saved;
+  custom.hidden=choose.value!==timetableOtherSubject;
+  custom.disabled=custom.hidden;
+  choose.addEventListener("change",()=>{
+    const isCustom=choose.value===timetableOtherSubject;
+    custom.hidden=!isCustom;
+    custom.disabled=!isCustom;
+    timetableMessage.textContent="Perubahan jadual belum disimpan.";
+    if(isCustom)custom.focus();
+  });
+  wrap.append(choose,custom);
+  return wrap;
+}
+
 function makeTimetableInput(type, field, value) {
   const input = document.createElement("input");
   input.type = type;
@@ -182,8 +237,7 @@ function makeTimetableInput(type, field, value) {
   input.setAttribute("aria-label", field);
   if (type === "text") {
     input.maxLength = 60;
-    input.setAttribute("list", "profile-subject-options");
-    input.placeholder = "Contoh: Matematik";
+    input.placeholder = "Taip nama subjek";
   }
   return input;
 }
@@ -192,7 +246,10 @@ function timetableValueRows() {
   return [...timetableBody.querySelectorAll("tr")].map(tr => {
     const entry = {};
     for (const field of ["day","start","end","class_name","subject"]) {
-      entry[field] = tr.querySelector('[data-field="' + field + '"]').value.trim();
+      const control=tr.querySelector('[data-field="' + field + '"]');
+      entry[field]=field==="subject" && control.value===timetableOtherSubject
+        ? tr.querySelector('[data-field="subject_custom"]').value.trim()
+        : control.value.trim();
     }
     return entry;
   });
@@ -207,7 +264,7 @@ function renderTeacherTimetable(entries) {
       makeTimetableInput("time","start",row.start),
       makeTimetableInput("time","end",row.end),
       makeTimetableSelect(teacherProfileState.classNames,row.class_name,"class_name","Pilih kelas"),
-      makeTimetableInput("text","subject",row.subject),
+      makeTimetableSubjectPicker(row.subject,index),
     ];
     for (const el of fields) {
       const td=document.createElement("td");td.append(el);tr.append(td);
@@ -269,8 +326,8 @@ async function loadTeacherProfile() {
     teacherProfileState.timetableVersion=timetable.version || "";
     teacherProfileState.savedPeriods=timetable.entries.length;
     teacherProfileState.savedProfile=JSON.stringify(profileEditorData());
-    teacherProfileState.savedTimetable=JSON.stringify(timetableValueRows());
     renderTeacherTimetable(timetable.entries);
+    teacherProfileState.savedTimetable=JSON.stringify(timetableValueRows());
     teacherProfileState.loaded=true;
     setTeacherProfileButtons(true);
     profileMessage.textContent="Maklumat guru tersedia untuk disunting.";
@@ -330,7 +387,9 @@ timetableAddButton.addEventListener("click",() => {
   rows.push({day:"Isnin",start:"07:30",end:"08:30",
              class_name:teacherProfileState.classNames[0],subject:""});
   renderTeacherTimetable(rows);
-  timetableMessage.textContent="Isi hari, masa, kelas dan subjek. Kemudian tekan Simpan Jadual Waktu.";
+  const newSubject=timetableBody.lastElementChild?.querySelector('[data-field="subject"]');
+  newSubject?.focus();
+  timetableMessage.textContent="Pilih subjek daripada senarai atau Lain-lain untuk menaip sendiri. Kemudian simpan jadual.";
 });
 
 timetableSaveButton.addEventListener("click",async() => {
