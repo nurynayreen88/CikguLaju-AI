@@ -1,7 +1,7 @@
 name: Web Native Telegram RPH Download QA
 on:
   push:
-    branches: [feature/web-direct-rph-telegram-engine-20261105]
+    branches: [feature/web-direct-rph-telegram-engine-20261105, feature/web-db-rph-bridge-bm-pi-20261106]
   workflow_dispatch:
 permissions:
   contents: read
@@ -24,6 +24,10 @@ jobs:
           python -m unittest discover -s tests -p test_web_v1_quick_preview.py -v
           python -m unittest discover -s tests -p test_web_sidebar_navigation.py -v
           python -m unittest discover -s tests -p test_web_production_inventory.py -v
+          python -m py_compile web/native_verified_rpt_rph_client.py web/native_telegram_sequence_rph_client.py tools/run_web_v1_preview.py
+          python -m unittest discover -s tests -p test_web_native_rpt_rph_bm_pi.py -v
+          python -m unittest discover -s tests -p test_web_native_sequence_rph_bridge.py -v
+          python -m unittest discover -s tests -p test_web_rph_availability.py -v
       - name: Browser JavaScript syntax
         run: |
           python - <<'PY'
