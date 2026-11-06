@@ -14,15 +14,17 @@ MAP = {
     "\u2192": " -> ", "\u2190": " <- ", "\u00ad": "-",
     "\u00a0": " ",
 }
-_ALLOWED = re.compile(r"^[\\x09-\\x0D\\x20-\\x7E\\u00A0-\\u024F]*$")
+def _allowed_char(char):
+    cp = ord(char)
+    return cp in (9, 10, 13) or 32 <= cp <= 126 or 160 <= cp <= 591
 
 
 def normalize_for_legacy_doc(text):
     if not isinstance(text, str):
         raise TypeError("Legacy RPH text must be a string")
     result = "".join(MAP.get(char, char) for char in text)
-    if not _ALLOWED.fullmatch(result):
-        unusual = sorted(set(c for c in result if not _ALLOWED.fullmatch(c)))
+    if not all(_allowed_char(c) for c in result):
+        unusual = sorted(set(c for c in result if not _allowed_char(c)))
         raise ValueError("Unsupported RPH text glyphs cannot be silently removed: "
                          + ", ".join(f"U+{ord(c):04X}" for c in unusual))
     return result
