@@ -4,6 +4,7 @@ on:
     branches: [feature/arabic-music-source-only-review-20261106]
     paths:
       - 'web/telegram_provisional_arab_music_api.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
       - 'tools/other_draft_actual_smoke_20261106.py'
       - '.github/workflows/arabic-music-provisional-source-qa-20261106.yml'
   workflow_dispatch:
