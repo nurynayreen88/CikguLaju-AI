@@ -46,7 +46,7 @@ def create_special_rph_blueprint():
 
     @bp.get("/internal/rph/v1/aktiviti-khas/options")
     def options():
-        if not (set(request.args) in ({"kind", "year"}, {"kind", "year", "phase"})
+        if not (set(request.args) in ({"kind", "year"}, {"kind", "year", "phase"}, {"kind", "year", "subject"})
                 and all(len(request.args.getlist(k)) == 1 for k in request.args)):
             return jsonify({"error": "Invalid selection"}), 400
         kind, year_str = request.args.get("kind"), request.args.get("year")
@@ -54,7 +54,7 @@ def create_special_rph_blueprint():
             return jsonify({"error": "Invalid year"}), 400
         try:
             rows, digest = list_options(kind, int(year_str),
-                                        phase=request.args.get("phase"))
+                                        phase=request.args.get("phase"), subject=request.args.get("subject"))
         except SourceUnavailable:
             return jsonify({"error": "Activity source unavailable"}), 503
         except (ValueError, KeyError, TypeError):
