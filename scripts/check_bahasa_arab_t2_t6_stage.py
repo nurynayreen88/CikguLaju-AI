@@ -11,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SUBJECT = ROOT / "rph_standalone" / "bahasa_arab"
 RPT = ROOT / "rpt_2027" / "bahasa_arab"
-EXPECTED_SP = {2:["1.1.1","1.1.2","1.2.1","2.1.1","2.2.1","3.1.1","3.2.1","1.3.1","1.3.2","2.3.1","3.3.1","1.4.1"],3:["1.1.1","1.1.2","1.2.1","2.1.1","2.2.1","3.1.1","3.2.1","1.3.1","1.3.2","2.3.5","3.3.1","1.4.1"],4:["1.1.1","1.1.2","1.2.1","2.1.1","2.2.1","3.1.1","3.2.1","1.3.1","1.3.2","2.3.1","3.3.1","1.4.1"],5:["1.1.1","1.1.3","1.2.1","2.1.1","2.2.1","3.2.1","1.3.1","1.3.2","2.3.1","2.3.2","3.3.1","1.4.1"],6:["1.1.1","1.1.2","1.2.1","2.1.2","2.2.1","3.1.1","1.3.1","1.3.2","2.3.1","2.3.2","3.2.1","1.4.1"]}
+EXPECTED_SP = {2:["1.1.1","1.1.2","1.2.1","2.1.1","2.2.1","3.1.1","3.2.1","1.3.1","1.3.2","2.3.5","3.4.1","1.4.1"],3:["1.1.1","1.1.2","1.2.1","2.1.1","2.2.1","3.1.1","3.2.1","1.3.1","1.3.2","2.3.5","3.3.1","1.4.1"],4:["1.1.1","1.1.2","1.2.1","2.1.1","2.2.1","3.1.1","3.2.1","1.3.1","1.3.2","2.3.1","3.3.1","1.4.1"],5:["1.1.1","1.1.3","1.2.1","2.1.1","2.2.1","3.2.1","1.3.1","1.3.2","2.3.1","2.3.2","3.3.1","1.4.1"],6:["1.1.1","1.1.2","1.2.1","2.1.2","2.2.1","3.1.1","1.3.1","1.3.2","2.3.1","2.3.2","3.2.1","1.4.1"]}
 UNIT_1 = {2:"هيا نتعارف",3:"تفضل إلى الفصل",4:"الشهور الميلادية",5:"في المطبخ",6:"حياتنا أجمل بالنظافة"}
 MARKERS = ("Set induksi", "Aktiviti 1", "Aktiviti 2", "Penutup", "BBM",
            "PBD", "Kriteria kejayaan", "Refleksi", "DRAF", "BELUM READY")
@@ -203,6 +203,11 @@ def check() -> None:
     assert y2_source["source_page_reviewed_draft_count"] == 12
     assert len(y2_source["items"]) == 12 and y2_source["final_ready"] == 0
     assert [x["sp"] for x in y2_source["items"]] == EXPECTED_SP[2]
+    # 2026-11-06 correction: read word != read syllable; copy phrase != copy word.
+    assert y2_source["items"][9]["sp"] == "2.3.5"
+    assert y2_source["items"][10]["sp"] == "3.4.1"
+    assert "frasa" in y2_source["items"][10]["focus"].lower()
+    assert all(not y2_source["items"][i]["sp_printed_on_book_confirmed"] for i in (9,10))
     assert y2_source["ambiguous_book_sp_pdp"] == ["002","004","010","011"]
     assert all(x["teacher_approval"] is False and x["ready"] is False for x in y2_source["items"])
     assert y2_source["release_authorized"] is False
