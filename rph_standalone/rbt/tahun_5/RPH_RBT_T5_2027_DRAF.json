@@ -495,7 +495,7 @@
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 1,
       "unit_label": "Unit 1: Teknologi Rumah Tangga",
-      "tajuk": "PdP 005: Menghasilkan artikel jahitan secara sistematik dan menggunakan bahan serta alatan yang ses",
+      "tajuk": "PdP 005: Menghasilkan artikel jahitan berdasarkan lakaran dan teknik selamat",
       "sk": [
         "4.3"
       ],
@@ -533,7 +533,7 @@
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu kemahiran daripada Menghasilkan artikel jahitan secara sistematik dan menggunakan bahan serta alatan yang ses dan menunjukkan bukti kerja. Guru merumuskan SP 4.3.6, meminta murid menyimpan hasil dan mengemas alatan."
+          "aktiviti": "Murid menyatakan satu kemahiran daripada Menghasilkan artikel jahitan berdasarkan lakaran dan teknik selamat dan menunjukkan bukti kerja. Guru merumuskan SP 4.3.6, meminta murid menyimpan hasil dan mengemas alatan."
         }
       },
       "pbd_evidens": "Guru menyemak artikel jahitan dan senarai semak kemasan sebagai evidens SP 4.3.6; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan.",
@@ -1036,7 +1036,7 @@
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 2,
       "unit_label": "Unit 2: Aplikasi Reka Bentuk Teknologi Kejuruteraan",
-      "tajuk": "PdP 010: Menerangkan peralatan dan bahan yang akan digunakan untuk menghasilkan produk yang menggun",
+      "tajuk": "PdP 010: Memilih bahan dan mengira kos model tenaga boleh baharu",
       "sk": [
         "5.1"
       ],
@@ -1484,7 +1484,7 @@
       "jenis": "PdP_Cadangan_CikguLaju",
       "unit": 3,
       "unit_label": "Unit 3: Reka Bentuk Pengaturcaraan",
-      "tajuk": "PdP 014: Membezakan struktur kawalan jujukan, pilihan dan ulangan melalui algoritma dengan kaedah p",
+      "tajuk": "PdP 014: Membezakan struktur kawalan dan menjana algoritma pilihan atau ulangan",
       "sk": [
         "6.3"
       ],
@@ -1527,7 +1527,7 @@
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu kemahiran daripada Membezakan struktur kawalan jujukan, pilihan dan ulangan melalui algoritma dengan kaedah p dan menunjukkan bukti kerja. Guru merumuskan SP 6.3.3, 6.3.4, meminta murid menyimpan hasil dan mengemas alatan."
+          "aktiviti": "Murid menyatakan satu kemahiran daripada Membezakan struktur kawalan dan menjana algoritma pilihan atau ulangan dan menunjukkan bukti kerja. Guru merumuskan SP 6.3.3, 6.3.4, meminta murid menyimpan hasil dan mengemas alatan."
         }
       },
       "pbd_evidens": "Guru menyemak pseudokod atau carta alir pilihan/ulangan sebagai evidens SP 6.3.3, 6.3.4; murid menjelaskan keputusan dan membetulkan satu kelemahan yang dikenal pasti semasa semakan.",
