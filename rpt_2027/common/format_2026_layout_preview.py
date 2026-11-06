@@ -82,10 +82,10 @@ def build_preview(subject, year, records, destination):
             pdfmetrics.registerFont(TTFont("RPTStandardBold", str(heavy)))
         font, bold = "RPTStandardRegular", "RPTStandardBold"
 
-    ink = colors.HexColor("#203e55")
-    line = colors.HexColor("#b8cbd4")
-    soft = colors.HexColor("#edf4f8")
-    paper = colors.HexColor("#f9fbfc")
+    ink = colors.HexColor("#293944")
+    line = colors.HexColor("#adb7ba")
+    soft = colors.HexColor("#fff4bb")
+    paper = colors.HexColor("#fcfcf8")
     w, h = landscape(A4)
     lm, rm = 29, 29
     usable = w - lm - rm
@@ -164,20 +164,23 @@ def build_preview(subject, year, records, destination):
     ]
     headings = ("MINGGU / TARIKH", "UNIT / TAJUK / PDP",
                 "SK", "SP", "CATATAN / BAHAN")
-    table_rows = [[p(t,size=7.2,leading=10,strong=True,color="#ffffff") for t in headings]]
+    table_rows = [[p(t,size=8.0,leading=11.7,strong=True,color="#25323a") for t in headings]]
     for row in records:
         week = row.get("week","").strip() or "Belum ditetapkan"
         weektext = (f"{week}\nKumpulan A:\n{range_text(row,'a')}"
                     f"\nKumpulan B:\n{range_text(row,'b')}")
-        title = f"PdP {row['id']}\n{row['unit'].strip()}"
+        unit_lines=[
+            p(f"PdP {row['id']}",size=8.1,leading=12,strong=True),
+            p(row["unit"].strip(),size=8,leading=12,strong=True),
+        ]
         if row.get("topic","").strip():
-            title += "\n" + row["topic"].strip()
+            unit_lines.append(p(row["topic"].strip(),size=7.8,leading=11.6))
         table_rows.append([
-            p(weektext,size=6.8,leading=10.5),
-            p(title,size=7.5,leading=11,strong=True),
-            p(row["sk"],size=7.2,leading=11),
-            p(row["sp"],size=7.2,leading=11),
-            p(row["note"],size=7.2,leading=10.7)
+            p(weektext,size=7.0,leading=11.3),
+            unit_lines,
+            p(row["sk"],size=8,leading=12),
+            p(row["sp"],size=7.8,leading=11.8),
+            p(row["note"],size=7.6,leading=11.5)
         ])
     widths = [114, 196, 95, 123, usable - 114 - 196 - 95 - 123]
     if any(x < 0 for x in widths) or abs(sum(widths)-usable)>0.2:
@@ -186,15 +189,15 @@ def build_preview(subject, year, records, destination):
     tbl = LongTable(table_rows, colWidths=widths, repeatRows=1, hAlign="LEFT",
                     splitByRow=1)
     tbl.setStyle(TableStyle([
-        ("BACKGROUND",(0,0),(-1,0),ink),
+        ("BACKGROUND",(0,0),(-1,0),soft),
         ("ROWBACKGROUNDS",(0,1),(-1,-1),[colors.white,paper]),
         ("VALIGN",(0,0),(-1,-1),"TOP"),
         ("LEFTPADDING",(0,0),(-1,-1),7),
         ("RIGHTPADDING",(0,0),(-1,-1),7),
         ("TOPPADDING",(0,0),(-1,0),9),
         ("BOTTOMPADDING",(0,0),(-1,0),9),
-        ("TOPPADDING",(0,1),(-1,-1),7),
-        ("BOTTOMPADDING",(0,1),(-1,-1),7),
+        ("TOPPADDING",(0,1),(-1,-1),9),
+        ("BOTTOMPADDING",(0,1),(-1,-1),9),
         ("LINEBELOW",(0,0),(-1,-1),0.35,line),
         ("LINEBEFORE",(1,0),(-1,-1),0.3,line),
         ("BOX",(0,0),(-1,-1),0.6,ink)
