@@ -2481,7 +2481,7 @@
       "dskp_sp_code_present": true,
       "buku_teks_hal_bercetak_calon": [
         77,
-        80
+        81
       ],
       "bukti_halaman_teks": true,
       "aktiviti_dalam_buku_diluluskan": false,
@@ -2505,7 +2505,8 @@
       "automated_rpt_rph_title_unit_code_parity": true,
       "automated_rph_conclusion_not_generic": true,
       "automated_progression_distinct_check": true,
-      "individual_review_status": "BELUM_DISAHKAN_GURU_DAN_VISUAL_BUKU"
+      "individual_review_status": "BELUM_DISAHKAN_GURU_DAN_VISUAL_BUKU",
+      "sumber_teks_halaman_disemak": true
     },
     {
       "id": "RBT-T5-PDP-031",
@@ -2521,7 +2522,7 @@
       "dskp_sp_code_present": true,
       "buku_teks_hal_bercetak_calon": [
         77,
-        80
+        81
       ],
       "bukti_halaman_teks": true,
       "aktiviti_dalam_buku_diluluskan": false,
@@ -2545,7 +2546,8 @@
       "automated_rpt_rph_title_unit_code_parity": true,
       "automated_rph_conclusion_not_generic": true,
       "automated_progression_distinct_check": true,
-      "individual_review_status": "BELUM_DISAHKAN_GURU_DAN_VISUAL_BUKU"
+      "individual_review_status": "BELUM_DISAHKAN_GURU_DAN_VISUAL_BUKU",
+      "sumber_teks_halaman_disemak": true
     },
     {
       "id": "RBT-T5-PDP-032",
@@ -2561,7 +2563,7 @@
       "dskp_sp_code_present": true,
       "buku_teks_hal_bercetak_calon": [
         77,
-        80
+        81
       ],
       "bukti_halaman_teks": true,
       "aktiviti_dalam_buku_diluluskan": false,
@@ -2585,7 +2587,8 @@
       "automated_rpt_rph_title_unit_code_parity": true,
       "automated_rph_conclusion_not_generic": true,
       "automated_progression_distinct_check": true,
-      "individual_review_status": "BELUM_DISAHKAN_GURU_DAN_VISUAL_BUKU"
+      "individual_review_status": "BELUM_DISAHKAN_GURU_DAN_VISUAL_BUKU",
+      "sumber_teks_halaman_disemak": true
     },
     {
       "id": "RBT-T6-PDP-001",
