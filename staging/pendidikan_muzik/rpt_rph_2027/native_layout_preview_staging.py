@@ -108,9 +108,16 @@ def build_staging_preview(root, year, pdp):
     notes = "Aktiviti 1 — " + labels["act1"][0] + "\n" + labels["act1"][1] + \
             "\n\nAktiviti 2 — " + labels["act2"][0] + "\n" + labels["act2"][1] + \
             "\n\nPengukuhan dan Penilaian — " + labels["assessment"][0] + "\n" + labels["assessment"][1]
+    # The standalone 2019 Music Year 4 DSKP prints SK 3.1 with SP 3.2.x,
+    # and SK 4.1 with SP 4.2.1. Deriving SK from the SP prefix is WRONG.
+    # Keep this explicit source anomaly instead of silently normalizing SP.
     standards = []
     for code in sp:
         parent = code.rsplit(".", 1)[0]
+        if year == 4 and parent == "3.2":
+            parent = "3.1"
+        elif year == 4 and code == "4.2.1":
+            parent = "4.1"
         if parent not in standards:
             standards.append(parent)
     ref = [v for k, v in items if re.search(r"^(?:refleksi|catatan.*pemulihan)", k, re.I)]
