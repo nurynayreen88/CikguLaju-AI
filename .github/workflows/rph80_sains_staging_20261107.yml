@@ -17,6 +17,10 @@ on:
       - "tools/render_sains_y4_79_rph_draf_20261107.py"
       - "tools/check_sains_y4_79_word_a4_20261107.py"
       - "tests/test_sains_y4_79_bank_quality_20261107.py"
+      - "web/sains_y5_83_activity_bank_draf_20261107.py"
+      - "tools/render_sains_y5_83_rph_draf_20261107.py"
+      - "tools/check_sains_y5_83_word_a4_20261107.py"
+      - "tests/test_sains_y5_83_bank_quality_20261107.py"
       - "tests/test_rph80_all_subject_source_scan_20261107.py"
       - "audits/rph80_program_20261107.md"
       - "tests/test_rph80_sains_quality_gate_20261107.py"
@@ -61,6 +65,12 @@ jobs:
         run: python -m tools.render_sains_y4_79_rph_draf_20261107
       - name: Verify 79 Year4 Word drafts print as one-page A4
         run: python -m tools.check_sains_y4_79_word_a4_20261107
+      - name: Verify authored Sains Year5 bank contains 83 unique, safe SP lesson plans
+        run: python -m unittest discover -s tests -p 'test_sains_y5_83_bank_quality_20261107.py' -v
+      - name: Render Sains Year5 83 source-specific DRAF Markdown Word PDF
+        run: python -m tools.render_sains_y5_83_rph_draf_20261107
+      - name: Verify printed 83 Sains Year5 Word one-page A4
+        run: python -m tools.check_sains_y5_83_word_a4_20261107
       - name: Audit 342 unique Sains PdP and export review queue
         run: python -m tools.audit_rph80_sains_first_20261107
       - name: Retain audit evidence only; never deploy
@@ -84,3 +94,8 @@ jobs:
             build/sains_y4_79_rph_DRAF_20261107/*.pdf
             build/sains_y4_79_rph_DRAF_20261107/*.csv
             build/sains_y4_79_rph_DRAF_20261107/*.json
+            build/sains_y5_83_rph_DRAF_20261107/*.md
+            build/sains_y5_83_rph_DRAF_20261107/*.docx
+            build/sains_y5_83_rph_DRAF_20261107/*.pdf
+            build/sains_y5_83_rph_DRAF_20261107/*.csv
+            build/sains_y5_83_rph_DRAF_20261107/*.json
