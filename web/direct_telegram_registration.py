@@ -79,3 +79,29 @@ def ensure_verified_web_user(config, uid, telegram_payload):
             print("WEB DIRECT SIGNUP audit persistence unavailable:",
                   type(exc).__name__, flush=True)
     return created
+
+
+def notify_telegram_admin(uid):
+    """Trusted internal call, only after a brand-new Supabase user was inserted."""
+    import os
+    from urllib.request import Request, urlopen
+    from urllib.parse import urlsplit
+    base = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_URL", "")
+    token = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_TOKEN", "")
+    parts = urlsplit(base)
+    if (parts.scheme != "https" or not parts.hostname or parts.port is not None
+            or parts.username or parts.password or parts.path not in ("", "/")
+            or parts.query or parts.fragment or len(token) < 32):
+        raise RuntimeError("Trusted Telegram API unavailable")
+    body = json.dumps({"telegram_user_id": uid}).encode("utf-8")
+    request = Request(base.rstrip("/") + "/internal/web-signup/v1/admin-notify",
+                      data=body, method="POST", headers={
+                          "Authorization": "Bearer " + token,
+                          "Content-Type": "application/json",
+                          "Accept": "application/json",
+                      })
+    with urlopen(request, timeout=10) as result:
+        if result.status != 200:
+            raise RuntimeError("Telegram admin notification refused")
+        message = json.loads(result.read(4096))
+        return message.get("notified") is True
