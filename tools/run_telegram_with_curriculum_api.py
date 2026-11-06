@@ -444,6 +444,16 @@ except Exception as _native_sequence_exc:
           type(_native_sequence_exc).__name__, flush=True)
 
 
+# Sejarah: register private source reader for the dedicated Web client.
+try:
+    from web.sejarah_2027_native_api import create_sejarah_2027_native_blueprint
+    telegram_runtime.app.register_blueprint(
+        create_sejarah_2027_native_blueprint(telegram_runtime))
+    SEJARAH_2027_WEB_READER_REGISTERED = True
+except Exception as exc:
+    SEJARAH_2027_WEB_READER_REGISTERED = False
+    print("Sejarah Web reader unavailable:", type(exc).__name__, flush=True)
+
 # Private source-matched RPT school covers for authenticated Web users. Web
 # checks account entitlement; Telegram re-checks exact PDF bytes before it
 # inserts the logo. The bot's menus, RPH, sources, and credits stay untouched.

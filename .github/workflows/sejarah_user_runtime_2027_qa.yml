@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'web/sejarah_2027_user_runtime.py'\n      - 'web/sejarah_2027_native_api.py'\n      - 'tests/test_sejarah_2027_native_api.py'
+      - 'tests/test_sejarah_2027_native_registration.py'
       - 'tools/run_telegram_with_curriculum_api.py'
       - 'tests/test_sejarah_2027_user_runtime.py'
       - 'curriculum/sejarah/**'
@@ -32,6 +33,8 @@ jobs:
       - run: python -m pip install 'flask==3.1.3' 'python-docx==1.2.0'
       - name: Verify private Telegram source and Web endpoint contract
         run: python -m unittest -v tests.test_sejarah_2027_native_api
+      - name: Check Sejarah Web source endpoint registered after user RPH bridge
+        run: python -m unittest -v tests.test_sejarah_2027_native_registration
       - name: Verify source and user-facing Telegram unit/PdP flow
         run: python -m unittest -v tests.test_sejarah_2027_user_runtime
       - name: Ensure no accidental app.py or database change in this feature branch
