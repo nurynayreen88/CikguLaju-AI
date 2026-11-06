@@ -23,7 +23,7 @@ class Element {
  focus(){this.focused=true;}
 }
 const document={createElement:tag=>new Element(tag)};
-const Option=(label,value)=>({label,value});
+function Option(label,value){this.label=label;this.value=value;}
 const timetableMessage={textContent:""};
 let rows=[];
 const timetableBody={querySelectorAll:()=>rows};
