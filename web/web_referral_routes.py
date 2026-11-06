@@ -59,7 +59,7 @@ def _rest(method, path, *, body=None):
         return json.loads(blob or b"null")
 
 
-def capture_after_verified_login(uid):
+def capture_after_verified_login(uid, *, notify=True):
     """Call only after Telegram hash verification AND existing account lookup.
 
     Fail closed without blocking normal login. A DB RPC owns new-account,
@@ -72,7 +72,7 @@ def capture_after_verified_login(uid):
         result = _rest("POST", "rpc/referral_capture_signup",
                        body={"p_referred_user_id": uid, "p_referral_code": code})
         captured = isinstance(result, dict) and result.get("captured") is True
-        if captured:
+        if captured and notify:
             # Already persisted once by the existing atomic signup RPC. Never
             # notify for old users or repeat logins.
             try:
