@@ -78,6 +78,20 @@ def create_web_referral_signup_notice(runtime):
                 f"📋 Status: <b>{escape(status)}</b>\n\n"
                 "Mata referral hanya diberikan selepas bayaran pertama diluluskan."
             )
+            # Durable idempotency claim: once per Telegram ID across retries,
+            # workers and deployments; never send on a duplicate request.
+            try:
+                claimed = sb("POST", "web_referral_signup_notices",
+                             json={"referred_user_id": uid},
+                             prefer="return=representation")
+                if not isinstance(claimed, list) or len(claimed) != 1:
+                    return jsonify({"error": "notification claim unavailable"}), 503
+            except Exception:
+                existing = sb("GET", f"web_referral_signup_notices?referred_user_id=eq.{uid}"
+                              "&select=referred_user_id&limit=1") or []
+                if existing:
+                    return jsonify({"notified": False, "reason": "already_recorded"})
+                raise
             result = runtime.send(admin, message, [
                 [{"text": "👤 LIHAT PENGGUNA", "callback_data": f"admin_user|{uid}"}],
                 [{"text": "🛠️ ADMIN PANEL", "callback_data": "admin_panel"}],
