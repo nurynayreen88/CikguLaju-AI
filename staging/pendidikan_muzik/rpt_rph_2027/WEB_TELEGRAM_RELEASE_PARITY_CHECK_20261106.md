@@ -28,3 +28,11 @@ Laman rujukan:
 - [CI Muzik 2027](https://github.com/nurynayreen88/CikguLaju-AI/actions/workflows/pendidikan-muzik-2027-staging.yml)
 - [Render Telegram](https://dashboard.render.com/web/srv-dah3b8lbedkc738ugqt0)
 - [Render Web pengguna](https://dashboard.render.com/web/srv-dbm5go8u01pc738f40cg)
+
+## Pengesahan fail cabang penerbitan
+
+- Pada `main`, fail `web/native_rph_telegram_api.py` memang ada, dan tidak mengandungi MUZIK.
+- Pada **cabang Web produksi** `production/cikgulaju-web-20261105`, fail yang sama **tiada**. Web menggunakan WSGI `tools.run_web_production:app` serta saluran authoritative API daripada Telegram.
+- Maka menambah MUZIK ke `web/native_rph_telegram_api.py` dalam PR #335 sahaja **tidak akan** menjadikan Web produksi menyokong MUZIK. Perlu semak aliran sebenar `tools.run_web_production.py` → `web.authoritative...` → API Telegram, kemudian ujian login dan hak akses pelanggan.
+- Jangan menganggap ujian AST terhadap fail pada cabang `main` sebagai ujian Web produksi. Tiada perubahan dibuat pada kedua-dua cabang produksi dalam audit ini.
+
