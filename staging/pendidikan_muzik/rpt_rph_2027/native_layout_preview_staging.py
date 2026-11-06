@@ -28,7 +28,7 @@ def _sections(text):
         elif current is not None:
             current["parts"].append(line.strip())
     return [
-        (s["label"], "\n".join(s["parts"]).strip())
+        (s["label"], "\n".join(s["parts"]).strip().replace("**", ""))
         for s in found
     ]
 
@@ -105,9 +105,11 @@ def build_staging_preview(root, year, pdp):
     if candidate_days_zero and not row["rpt2027_day_audit"].get("automatic_shift_or_skip_forbidden", False):
         raise ValueError("Music zero-day RPT slot cannot be auto-shifted")
     criteria = criterion[0][1] if criterion else drafted["criterion"] if drafted else "—"
-    notes = "Aktiviti 1 — " + labels["act1"][0] + "\n" + labels["act1"][1] + \
-            "\n\nAktiviti 2 — " + labels["act2"][0] + "\n" + labels["act2"][1] + \
-            "\n\nPengukuhan dan Penilaian — " + labels["assessment"][0] + "\n" + labels["assessment"][1]
+    # Each source heading already includes its activity number/phase name.
+    # Avoid "Aktiviti 1 - Aktiviti 1" and "Pengukuhan - Pengukuhan".
+    notes = labels["act1"][0] + "\n" + labels["act1"][1] + \
+            "\n\n" + labels["act2"][0] + "\n" + labels["act2"][1] + \
+            "\n\n" + labels["assessment"][0] + "\n" + labels["assessment"][1]
     # The standalone 2019 Music Year 4 DSKP prints SK 3.1 with SP 3.2.x,
     # and SK 4.1 with SP 4.2.1. Deriving SK from the SP prefix is WRONG.
     # Keep this explicit source anomaly instead of silently normalizing SP.
