@@ -1,0 +1,39 @@
+{
+  "subject": "RBT",
+  "year": 6,
+  "status": "DRAF_CROSSWALK_FULL_DSKP_TEXT",
+  "source": "KPM DSKP Reka Bentuk dan Teknologi Tahun 6",
+  "source_drive_file_id": "1-EBfpMVl_U1D2lAJcY7o4mB5fayoJQMk",
+  "source_url": "https://drive.google.com/file/d/1-EBfpMVl_U1D2lAJcY7o4mB5fayoJQMk/view",
+  "extraction": "Text from original DSKP PDF, bounded at next SP/standard-prestasi/notes; visual verification pending",
+  "sk": {
+    "5.2": "Reka Bentuk Produk Elektromekanikal",
+    "6.5": "Pengenalan Asas Sistem Robotik",
+    "8.1": "Penghasilan Produk"
+  },
+  "sp": {
+    "5.2.1": "Menyatakan elemen elektromekanikal.",
+    "5.2.2": "Menerangkan elemen elektromekanikal.",
+    "5.2.3": "Melakar reka bentuk produk eletromekanikal yang akan dihasilkan.",
+    "5.2.4": "Menilai lakaran yang dipilih untuk membuat penambahbaikan.",
+    "5.2.5": "Membuat produk berdasarkan lakaran dengan menggunakan bahan dan peralatan yang sesuai.",
+    "5.2.6": "Membentangkan produk yang dihasilkan.",
+    "6.5.1": "Menyatakan elemen sistem robotik.",
+    "6.5.2": "Menghuraikan elemen sistem robotik yang terdapat pada robot.",
+    "6.5.3": "Menjelaskan pemasangan perkakasan pada reka bentuk sebuah robot.",
+    "6.5.4": "Melakar reka bentuk produk yang mempunyai elemen sistem robotik.",
+    "6.5.5": "Menilai lakaran yang dipilih untuk membuat penambahbaikan.",
+    "6.5.6": "Menghasilkan carta alir sebuah robot yang akan dibina",
+    "6.5.7": "Menghasilkan atur cara yang dikehendaki berpandukan carta alir yang dibuat.",
+    "6.5.8": "Membina reka bentuk produk dan penyambungan perkakasan berdasarkan lakaran yang dibuat menggunakan peralatan yang sesuai",
+    "6.5.9": "Memindahkan atur cara yang telah dihasilkan pada perkakasan dan menguji kefungsiannya.",
+    "6.5.10": "Membuat rumusan dan membentangkan produk yang telah dibina.",
+    "8.1.1": "Menyatakan produk yang hendak dibina berdasarkan situasi.",
+    "8.1.2": "Menghuraikan gabungan asas teknologi yang sesuai digunakan dengan reka bentuk produk yang akan dibina.",
+    "8.1.3": "Melakar reka bentuk produk yang hendak dibina.",
+    "8.1.4": "Menilai dan membuat penambahbaikan pada lakaran yang dipilih.",
+    "8.1.5": "Menyediakan senarai peralatan, bahan, anggaran kos dan jadual kerja.",
+    "8.1.6": "Membina produk berfungsi berdasarkan lakaran yang dibuat.",
+    "8.1.7": "Membuat dokumentasi mudah proses penghasilan produk dan pembentangan"
+  }
+}
