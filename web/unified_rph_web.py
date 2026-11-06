@@ -33,6 +33,8 @@ SUBJECT_LABELS = {
     "MORAL": "Pendidikan Moral",
     "PSV": "Pendidikan Seni Visual",
     "SEJARAH": "Sejarah",
+    "ARAB": "Bahasa Arab",
+    "MUZIK": "Pendidikan Muzik",
 }
 SOURCE_SUBJECTS = frozenset(("ENGLISH", "MORAL", "PJPK", "PSV"))
 MAX_TOKEN = 40
@@ -506,6 +508,26 @@ def create_blueprint():
                 "unit": unit, "lesson": token, "teacher": teacher,
                 "status": "DRAF CADANGAN",
             }, None
+        if subject in ("ARAB", "MUZIK"):
+            if year not in range(2, 7) or component not in (None, ""):
+                return None, (jsonify({"error":"Subjek ini hanya tersedia untuk Tahun 2–6"}),400)
+            from web.native_telegram_other_draft_client import (
+                draft_available, NativeRPHUnavailable,
+            )
+            try:
+                formats = draft_available(year, subject, unit, token)
+            except (NativeRPHUnavailable, ValueError):
+                return None, (jsonify({
+                    "error":"RPH DRAF belum boleh disahkan dengan sumber asal Telegram.",
+                    "code":"TELEGRAM_OTHER_DRAFT_SOURCE_UNAVAILABLE",
+                }),503)
+            return {
+                "source":"telegram-provisional-subjects-2027",
+                "year":year,"subject":subject,"unit":unit,
+                "lesson":token,"teacher":teacher,
+                "status":"DRAF UNTUK SEMAKAN GURU",
+                "formats":list(formats),
+            },None
         result = verified_preview(year, subject, unit, token, component)
         if result is None:
             return None, (jsonify({"error": "RPH tepat untuk Lesson/PdP ini belum tersedia di Web. Tiada RPH generik atau daripada tajuk lain digunakan.",
@@ -560,8 +582,14 @@ def create_blueprint():
                   "trial" if valid_credits and credits > 0 else
                   "exhausted" if valid_credits and credits == 0 else
                   "unavailable")
-        return jsonify({"available": True, "generator": "telegram-native",
-                        "download_allowed": allowed, "access_status": access})
+        result={"available": True, "generator": "telegram-native",
+                "download_allowed": allowed, "access_status": access}
+        # Preserve the existing JSON contract for English/BM/PI/other users.
+        # Publish DRAF and format restrictions only for the new subjects.
+        if selected.get("source")=="telegram-provisional-subjects-2027":
+            result.update({"status": selected["status"],
+                           "formats": selected["formats"]})
+        return jsonify(result)
 
     @bp.get("/api/web/rph/preview")
     def preview():
@@ -593,6 +621,14 @@ def create_blueprint():
             elif selected.get("source") == "telegram-native-sejarah-2027":
                 from web.native_telegram_sejarah_2027_client import request_sejarah_rph
                 document = request_sejarah_rph(selected, fmt)
+            elif selected.get("source") == "telegram-provisional-subjects-2027":
+                from web.native_telegram_other_draft_client import request_draft_rph
+                if fmt not in selected.get("formats", ()):
+                    return None, (jsonify({
+                        "error":"Format RPH DRAF ini belum diluluskan untuk muat turun.",
+                        "code":"DRAFT_RPH_FORMAT_NOT_VERIFIED",
+                    }),503), None
+                document = request_draft_rph(selected, fmt)
             elif selected.get("source") == "telegram-native-pdp-sequence":
                 from web.native_telegram_sequence_rph_client import request_native_sequence_rph
                 document = request_native_sequence_rph(selected, fmt)
