@@ -25,9 +25,12 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
+import sys
+ROOT=Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0,str(ROOT))
 from web.sains_y3_rph_activity_preview_20261106 import adapt_rows, source_ledgers
 
-ROOT=Path(__file__).resolve().parents[1]
 OUTPUT=ROOT/"build"/"sains_y3_45_rph_REVIEW_ONLY_20261106"
 FONT="/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 LABELS={"TAJUK":"Tajuk","OBJEKTIF PEMBELAJARAN":"Objektif",
