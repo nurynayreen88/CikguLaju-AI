@@ -220,12 +220,12 @@ BANK = {
 "Silinder penyukat, air dan kad meniskus"),
 "6.1.6":(
 "Batu kecil dan silinder penyukat",
-"menunjukkan kaedah sesaran air serta membaca isi padu awal",
-"menenggelamkan pepejal selamat dan mencatat bacaan akhir",
+"menunjukkan kaedah sesaran air; memilih bekas penyukat yang stabil dan membaca isi padu awal pada aras mata",
+"memasukkan batu kecil secara perlahan dengan bimbingan guru tanpa menjatuhkannya ke dasar bekas; mencatat bacaan akhir",
 "membimbing pengiraan beza dua bacaan",
 "mengira isi padu pepejal tidak sekata dalam mL/cm³",
 "Beza bacaan awal–akhir dan unit yang betul",
-"Silinder penyukat, air dan batu kecil"),
+"Bekas penyukat plastik bersenggat, air dan batu kecil yang bersih"),
 "6.1.7":(
 "Rekod luas dan isi padu daripada aktiviti terdahulu",
 "mengadakan semakan cara mengambil bacaan ukuran",
@@ -252,8 +252,8 @@ BANK = {
 "Bekas air, bahan selamat dan gambar perbandingan"),
 "7.1.3":(
 "Telur dalam air biasa dan air garam",
-"menyediakan dua bekas berlabel air dan air garam",
-"membanding kedudukan telur dalam dua bekas",
+"menyediakan dua bekas berlabel air dan air garam, mengingatkan murid supaya tidak merasa atau meminum bahan ujikaji",
+"membanding kedudukan telur dalam dua bekas tanpa merasa air dan merekod ramalan serta pemerhatian",
 "membimbing rumusan kaedah meningkatkan ketumpatan air",
 "menyatakan bahan yang ditambah serta dapatan ujian",
 "Kesimpulan satu kaedah peningkatan ketumpatan air",
@@ -309,9 +309,9 @@ BANK = {
 "9.1.2":(
 "Jadual planet mengikut kedudukan daripada Matahari",
 "menyediakan maklumat suhu planet secara perbandingan",
-"mengenal pola umum suhu mengikut kedudukan dengan menyebut pengecualian",
+"mengenal pola umum suhu planet daripada jadual dan menekankan bahawa Zuhrah lebih panas daripada Utarid walaupun lebih jauh daripada Matahari",
 "meminta murid melakar carta suhu menggunakan data diberi",
-"mengitlak pola suhu dan menghuraikan satu pengecualian",
+"merumus pola daripada jadual dan membuktikan pengecualian Zuhrah–Utarid menggunakan nilai suhu yang diberi",
 "Rumusan berasaskan carta dan data suhu planet",
 "Kad suhu planet dan carta data berlabel"),
 "9.1.3":(
@@ -364,11 +364,11 @@ BANK = {
 "Gambar kren, tiang bendera dan model takal"),
 "10.1.4":(
 "Lakaran model takal ringkas",
-"membimbing pelan model menggunakan roda, tali dan beban kecil",
-"mereka bentuk dan membina model takal yang berfungsi secara berkumpulan",
+"membimbing pelan model menggunakan roda, tali dan beban kecil; memeriksa ikatan tali dan memastikan murid tidak berada di bawah beban",
+"mereka bentuk dan membina model takal secara berkumpulan dengan beban kecil pada aras selamat serta menunjukkan cara menguji tanpa beban di atas kepala",
 "meminta kumpulan menguji model dengan beban ringan",
 "merekod pembaikan terhadap model berdasarkan ujian",
-"Model takal berfungsi dan rekod satu pembaikan",
+"Model takal berfungsi, kawalan keselamatan beban dan rekod satu pembaikan",
 "Roda kecil, tali, pemegang, beban ringan dan kad ujian"),
 "10.1.5":(
 "Gambar model takal yang telah dibina",
@@ -500,7 +500,7 @@ def adapt_rows(state, original):
         "PENGETAHUAN SEDIA ADA":f"Murid berkongsi pengalaman berkaitan {hook.lower()}.",
         "SET INDUKSI":f"Guru menunjukkan {hook.lower()}; murid menyatakan satu ramalan/pemerhatian awal.",
         "AKTIVITI UTAMA":main,
-        "PENTAKSIRAN":all_pbd+". Guru menyemak hasil individu atau pasangan.",
+        "PENTAKSIRAN":all_pbd+". Guru mengambil bukti bagi setiap murid melalui jawapan, jadual, lakaran atau demonstrasi yang sepadan dengan tugasan dan merekod murid yang perlu pemulihan.",
         "PENUTUP":closing,
         "KEMAHIRAN PROSES SAINS":kps_desc,
         "KEMAHIRAN MANIPULATIF DAN KESELAMATAN":manip_desc,
