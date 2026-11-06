@@ -113,3 +113,7 @@ Jangan merge atau aktifkan fail ini melalui runtime. DB v26.00 dan rekod penggun
 ## Tahun 2 Unit 3 — 6 November 2026
 - 16 RPH cadangan individu PdP029–044 `جسمي السليم` dengan sokongan visual Buku Teks 2017 Semakan asal, halaman bercetak 50–69 (PDF fizikal h+12). Peta `year2_unit3_pdp029_044_DRAF.csv` serta audit `audits/bahasa_arab_y2_unit3_pdp029_044_visual_audit_20261106.json`.
 - **202 RPH DRAF**, **0 FINAL READY**. Lulus 186 A4 dahulu, 202 belum disahkan ketika commit. Year2 Unit4, Year3 Units3/4, Year6 Units2–4 masih belum dilengkapkan, tidak mengubah produksi.
+
+## Tahun 2 Unit 4 — 6 Nov 2026
+- **16 RPH DRAF** PdP045–060 bagi `أحافظ على الأدوات الدراسية` menggunakan ilustrasi Buku Teks asal KSSR Semakan 2017 bercetak 76–94, PDF page+12. Fail `year2_unit4_pdp045_060_DRAF.csv` dan `audits/bahasa_arab_y2_unit4_pdp045_060_visual_audit_20261106.json`.
+- Tahun2 mempunyai **60 calon PdP merentas 4 unit**, belum dibuktikan sebagai RPT 2027 tahunan lengkap atau READY. Keseluruhan 218 draf Tahun2–6, 0 FINAL READY. CI baru 218 masih perlu diperiksa.
