@@ -25,10 +25,10 @@
 | 18 | 09/05–13/05 | 10/05–14/05 | LARIAN RIANG RIA | 1.1.1, 1.1.2 | 62 |
 | 19 | 16/05–20/05 | 17/05–21/05 | INDAHNYA DASAR LAUT | 2.2.1, 2.2.2 | 68 |
 | 20 | 06/06–10/06 | 07/06–11/06 | INDAHNYA DASAR LAUT | 2.2.1, 2.2.2 | 68 |
-| 21 | 13/06–17/06 | 14/06–18/06 | INDAHNYA DASAR LAUT | 3.1.2, 3.1.3 | 70-71 |
+| 21 | 13/06–17/06 | 14/06–18/06 | INDAHNYA DASAR LAUT | 3.2.2, 3.2.3 | 70-71 |
 | 22 | 20/06–24/06 | 21/06–25/06 | HELO, HELO APA KHABAR? | 2.4.1, 2.4.2 | 78 |
 | 23 | 27/06–01/07 | 28/06–02/07 | HELO, HELO APA KHABAR? | 1.1.3, 2.2.1 | 80 |
-| 24 | 04/07–08/07 | 05/07–09/07 | HELO, HELO APA KHABAR? | 3.1.1, 3.1.2, 3.1.3 | 82 |
+| 24 | 04/07–08/07 | 05/07–09/07 | HELO, HELO APA KHABAR? | 3.2.1, 3.2.2, 3.2.3 | 82 |
 | 25 | 11/07–15/07 | 12/07–16/07 | Projek Seni Muzik 2 | 5.1.1 | 54-55 |
 | 26 | 18/07–22/07 | 19/07–23/07 | Projek Seni Muzik 2 | 5.1.2, 5.1.3 | 54-55 |
 | 27 | 25/07–29/07 | 26/07–30/07 | Projek Seni Muzik 2 | 5.1.2, 5.1.3 | 54-55 |
@@ -50,3 +50,5 @@
 
 
 **AMARAN KALENDAR M06/M19: PdP 06 dan 19 Tahun 4** jatuh pada minggu **0 hari calon PdP bagi 16 negeri** menurut indeks CikguLaju 2027 (M06: A 7–11 Feb / B 8–12 Feb; M19: A 16–20 Mei / B 17–21 Mei). Tarikh slot asal dikekalkan untuk audit, **bukan tarikh PdP disahkan**. Guru sahkan tarikh mengikut negeri dan jadual kelas. **PdP anjal, jangan gugurkan/anjak automatik.** Rujuk `../KALENDAR_2027_HARI_PDP_NEGERI_AUDIT_20261106.md`. Semua masih DRAF.
+
+**Audit SP PdP21/24:** Kod SP bercetak DSKP dan buku teks dipakai dalam draf. Kod asal RPT disimpan dalam manifest. SK 3.1 / SP 3.2.x masih memerlukan semakan kurikulum dan bukan kelulusan FINAL READY.
