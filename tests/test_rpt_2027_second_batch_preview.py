@@ -44,6 +44,13 @@ class RPT2027SecondBatchQA(unittest.TestCase):
                 self.assertIn("PK PdP 001", [r["display_id"] for r in rows])
                 self.assertTrue(all(r["week"].endswith("(cadangan)") for r in rows))
                 self.assertTrue(all(r["sk"] and r["sp"] for r in rows))
+                self.assertTrue(all(r["sk_display"].startswith(r["sk"].split(",")[0].strip() + " — ") for r in rows))
+                self.assertTrue(all(r["sp_display"].startswith(r["sp"].split(",")[0].strip() + " — ") for r in rows))
+                self.assertTrue(all(len(r["sk_display"]) > len(r["sk"]) + 5 for r in rows))
+                self.assertTrue(all(len(r["sp_display"]) > len(r["sp"]) + 8 for r in rows))
+                pj = next(r for r in rows if r["display_id"] == "PJ PdP 001")
+                pk = next(r for r in rows if r["display_id"] == "PK PdP 001")
+                self.assertNotEqual(pj["sp_display"], pk["sp_display"])
                 self.assertTrue(all("BT m/s Rujuk DSKP" not in r["note"] for r in rows))
 
     def test_merge_week_cell_only_when_week_and_dates_match(self):
