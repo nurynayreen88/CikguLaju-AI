@@ -86,3 +86,7 @@ PdP34–35 bagi Tahun2,3,4,6 telah diaudit untuk kekhususan aktiviti dan kriteri
 
 ## 6 November 2026 — Semakan keberadaan fail Audio melalui metadata Drive
 Carian berfokus bagi Pendidikan Muzik Tahun 2–6 dan kata kunci Audio/CD/MP3 dalam Drive **belum memberikan bukti padanan fail audio individu** yang boleh dihubungkan kepada nombor audio buku bagi RPH ini. Carian metadata boleh terlepas folder/namafail yang tidak berlabel, jadi keputusan **bukan bukti fail tiada**. Semua flag pengesahan audio kekal `false`; jangan aktifkan pautan rakaman atau memuat naik audio tanpa bukti hak penggunaan dan perbandingan track.
+
+
+## Nota akses audio rasmi 6 Nov 2026
+Penerbit DBP mempunyai rekod buku teks Tahun 3, 4 dan 5 dalam JendelaDBP, tetapi **jangan keliru rekod jualan buku dengan lesen muat naik MP3**. JendelaDBP menerangkan bahan digital berbayar hanya boleh dibaca melalui portal/app dan tidak boleh dimuat turun. Buku Kesenian Tahun 2/4 menyebut DVD/QR sebagai sumber milik buku; **tiada padanan fail atau hak pengedaran ke CikguLaju** yang dibuktikan. Kekalkan flag audio `false`. Rujuk `AUDIO_MEDIA_ACCESS_RIGHTS_20261106.md`.

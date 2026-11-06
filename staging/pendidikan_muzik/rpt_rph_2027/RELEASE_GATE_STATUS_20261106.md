@@ -49,3 +49,10 @@ Bukti CI terkini:
 ## 6 November 2026 — Audit kod SP Tahun 2–6 lengkap
 - **173/175 RPH** menggunakan nombor SP yang dijumpai dalam teks DSKP Muzik bagi tahun yang sama; **2 pengecualian Y4 PdP21/24** menggunakan `3.1.x` yang tiada dalam DSKP Muzik Y4 tetapi `3.2.x` tercetak. Semakan ini **kod sahaja**, bukan makna, notasi, skor atau kelulusan.
 - Cadangan kod DSKP/BT terpisah dari `manifest_sp`, tanpa menukar nilai asal. Lihat `DSKP_SP_CODE_PRESENCE_175_20261106.json` dan `DSKP_SP_CROSSWALK_AUDIT_20261106.md`. Gate release tetap tertutup.
+
+
+## 6 November 2026 — Ujian kandungan Word/PDF dan pembetulan Unicode di staging
+- Semakan ketat awal menemui isu `clean_doc_text` pada penjana asas Telegram: tanda `–`/`—` hilang sehingga `4–5` menjadi `45`; **78/175** dokumen mencetuskan ralat perbandingan medan dalam ujian pertama.
+- Adapter `legacy_doc_text_safe_staging.py` kini mengekalkan makna tanda baca, contohnya `4–5` → `4-5`, atau **menolak aksara lain yang tidak dapat dikendalikan** (fail closed). **175/175 Word dan PDF lulus semula**, setiap satu halaman A4, dengan 4 medan pedagogi dikekalkan bagi kedua-dua format. Bukti [Actions 42138313500](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42138313500) dan [uji skop PR 42138320014](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42138320014).
+- **Adapter ini belum disambungkan ke runtime Web/Telegram**, maka pembetulan Unicode untuk dokumen pengguna masih release blocker. Jangan ubah `app.py` atau subjek lain melalui PR Muzik.
+- Audio: [AUDIO_MEDIA_ACCESS_RIGHTS_20261106.md](AUDIO_MEDIA_ACCESS_RIGHTS_20261106.md) merekod bukti buku/DVD dan larangan menyangka fail/lesen sudah diperoleh. Tiada fail/URL audio dihantar kepada pengguna.

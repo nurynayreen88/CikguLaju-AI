@@ -190,3 +190,8 @@ PdP12–13 dan 24–26 diselaraskan dengan projek terpadu Kesenian Tahun3 halama
 - SHA-256 bagi **175 identiti PdP** kini diuji melalui fail RPH, manifest, RPT, 81 kriteria dan snapshot kalendar, dengan ujian mutasi/symlink fail closed. Modul **staging sahaja**, bukan kelulusan.
 - 5 pasang Word/PDF DRAF disimpan sebagai artifact GitHub untuk semakan manual; [run 42133072447](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42133072447) lulus: 175 Word satu halaman A4 selepas LibreOffice, 175 PDF satu halaman A4. Ini fungsi asas, bukan full runtime.
 - Rujuk `RELEASE_GATE_STATUS_20261106.md` bagi keputusan semasa dan blocker yang belum lulus.
+
+
+## 6 Nov 2026 — Pemeriksaan empat medan dan Unicode (fungsi asas sahaja)
+- Fail Word/PDF telah diuji untuk **Objektif, Kriteria Kejayaan, Bahan dan Pentaksiran**. Ujian pertama menemui pembungkusan tanda baca Unicode menyebabkan nombor halaman/perkataan bercantum. Adapter staging memelihara tanda baca menggunakan ASCII yang selamat dan menolak aksara tidak diketahui.
+- Ujian akhir selepas pembetulan **175 DOCX + 175 PDF lulus**, halaman A4 satu, empat medan kekal: [Actions 42138313500](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42138313500). Pembetulan **BELUM** dikemas kini pada penjana produksi; lihat `LEGACY_WORD_PDF_UNICODE_LOSS_AUDIT_20261106.md`.
