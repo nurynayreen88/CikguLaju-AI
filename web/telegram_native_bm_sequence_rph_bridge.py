@@ -116,6 +116,44 @@ def _state(runtime, year, unit, token, teacher):
     return state
 
 
+def _numbered_bm_activity_lines(document):
+    """Put consecutive inline activity steps on separate lines before Word/PDF.
+
+    Scope is the BM private Web bridge only. Do not reword activities or alter
+    SK/SP references (e.g. 1.1.1), page numbers or source identities.
+    """
+    if not isinstance(document, str):
+        return document
+    output = []
+    for line in document.split("\n"):
+        # A numbered list is recognized only when it has at least two
+        # consecutive step numbers within the same source line.
+        hits = list(re.finditer(r"(?<![\w.])(\d{1,2})\.\s+(?=\S)", line))
+        if len(hits) < 2 or not any(
+                int(b.group(1)) == int(a.group(1)) + 1
+                for a, b in zip(hits, hits[1:])):
+            output.append(line)
+            continue
+        positions = [hits[0]]
+        for hit in hits[1:]:
+            if int(hit.group(1)) == int(positions[-1].group(1)) + 1:
+                positions.append(hit)
+            else:
+                break
+        if len(positions) < 2:
+            output.append(line)
+            continue
+        parts = []
+        prefix = line[:positions[0].start()].rstrip()
+        if prefix:
+            parts.append(prefix)
+        for i, hit in enumerate(positions):
+            end = positions[i + 1].start() if i + 1 < len(positions) else len(line)
+            parts.append(line[hit.start():end].strip())
+        output.append("\n".join(parts))
+    return "\n".join(output)
+
+
 def _content(runtime, state):
     generator = getattr(runtime, "_local_rph_text", None)
     if not callable(generator):
@@ -126,7 +164,7 @@ def _content(runtime, state):
         raise SourceUnavailable("Native Telegram BM RPH unavailable") from exc
     if not isinstance(document, str) or len(document.strip()) < 500:
         raise SourceUnavailable("BM RPH content incomplete")
-    return document
+    return _numbered_bm_activity_lines(document)
 
 
 def create_native_bm_rph_blueprint(runtime):
