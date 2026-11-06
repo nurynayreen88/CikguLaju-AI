@@ -6,6 +6,7 @@ source manifests still exist. No changes to Telegram/Web download paths.
 from __future__ import annotations
 
 import csv
+import re
 from pathlib import Path
 
 from rpt_2027.common.format_2026_layout_preview import build_preview, validate_rows
@@ -74,7 +75,8 @@ def rbt_records(year):
             "id":ident,"week":"",  # NEVER invent official lesson weeks
             "a_start":"","a_end":"","b_start":"","b_end":"",
             "unit":r["Unit"],
-            "topic":r["Tajuk PdP"],
+            "topic":re.sub(r"^PdP\s+0*"+str(n)+r"\s*[:：—–-]\s*", "",
+                           r["Tajuk PdP"], flags=re.IGNORECASE),
             "sk":r["SK"],"sp":r["SP"],
             "note":("Masa: "+r["Masa minit"]+" minit. Buku teks m/s: "+
                     (r.get("Rujukan Buku Teks m/s") or "belum disahkan")+
