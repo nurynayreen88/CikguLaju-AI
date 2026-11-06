@@ -29,6 +29,20 @@ class CalendarWeekAuditQA(unittest.TestCase):
         self.assertTrue(all(sum(item["status_counts"].values()) == item["total_pdp"]
                             for item in audit["by_pdf"]))
 
+    def test_same_calendar_dates_with_wrong_label_is_a_relabel_candidate(self):
+        master = read_master()
+        row = {"id": "001", "week": "M06",
+               "a_start": master["A"]["M07"]["start"],
+               "a_end": master["A"]["M07"]["end"],
+               "b_start": master["B"]["M07"]["start"],
+               "b_end": master["B"]["M07"]["end"]}
+        prior = dict(row)
+        result = audit_rows("psv", 2, [row], master)
+        self.assertEqual(result["status_counts"],
+                         {"source_week_label_conflicts_with_master": 1})
+        self.assertEqual(result["examples"][0]["suggested_master_week_label_only"], "M07")
+        self.assertEqual(row, prior, "Read-only calendar audit must never change source rows")
+
     def test_missing_week_not_invented(self):
         master = read_master()
         sample = {"id": "001", "week": "Agihan cadangan",
