@@ -104,7 +104,7 @@ def normalize_pdf_text(value):
     })
     if any(0xE000 <= ord(char) <= 0xF8FF for char in printable):
         raise ValueError("Unmapped private-use glyph in DSKP statement")
-    if any(ord(char) < 32 and char not in "\\t\\n\\r" for char in printable):
+    if any(ord(char) < 32 and char not in "\t\n\r" for char in printable):
         raise ValueError("Nonprinting control character in RPT text")
     return printable
 
