@@ -257,8 +257,8 @@ def check() -> None:
     assert m["years"]["4"]["unit3_release_approved"] is False
     assert readiness["completed"]["year4_unit3_candidate_rph"] == 14
     assert readiness["completed"]["verified_a4_render_for_all_90"] is True
-    assert readiness["completed"]["word_generated_in_ci"] == 218
-    assert readiness["completed"]["pdf_generated_in_ci"] == 218
+    assert readiness["completed"]["word_generated_in_ci"] == 298
+    assert readiness["completed"]["pdf_generated_in_ci"] == 298
     assert readiness["total_ready_rph"] == 0
     assert m["latest_technical_a4_validation"]["status"] == "PASSED_OFFLINE_TECHNICAL_ONLY"
     assert m["latest_technical_a4_validation"]["release_approval"] is False
@@ -308,8 +308,8 @@ def check() -> None:
     assert m["years"]["5"]["unit2_release_approved"] is False
     assert readiness["completed"]["year5_unit2_candidate_rph"] == 16
     assert readiness["completed"]["verified_a4_render_for_all_122"] is True
-    assert readiness["completed"]["word_generated_in_ci"] == 218
-    assert readiness["completed"]["pdf_generated_in_ci"] == 218
+    assert readiness["completed"]["word_generated_in_ci"] == 298
+    assert readiness["completed"]["pdf_generated_in_ci"] == 298
     assert m["latest_technical_a4_validation"]["status"] == "PASSED_OFFLINE_TECHNICAL_ONLY"
     assert m["latest_technical_a4_validation"]["release_approval"] is False
     for n,row in zip(range(13,29),y5rows):
@@ -336,8 +336,8 @@ def check() -> None:
     assert m["years"]["5"]["unit3_release_approved"] is False
     assert readiness["completed"]["year5_unit3_candidate_rph"] == 16
     assert readiness["completed"]["verified_a4_render_for_all_138"] is True
-    assert readiness["completed"]["word_generated_in_ci"] == 218
-    assert readiness["completed"]["pdf_generated_in_ci"] == 218
+    assert readiness["completed"]["word_generated_in_ci"] == 298
+    assert readiness["completed"]["pdf_generated_in_ci"] == 298
     assert m["latest_technical_a4_validation"]["status"] == "PASSED_OFFLINE_TECHNICAL_ONLY"
     assert m["latest_technical_a4_validation"]["release_approval"] is False
     for n,r in zip(range(29,45),y5u3rows):
@@ -439,8 +439,8 @@ def check() -> None:
     assert m["years"]["2"]["source_reviewed_drafts_total"] == 60
     assert readiness["completed"]["year2_unit4_candidate_rph"] == 16
     assert readiness["completed"]["verified_a4_render_for_all_218"] is True
-    assert m["latest_technical_a4_validation"]["word_document_count"] == 218
-    assert m["latest_technical_a4_validation"]["pdf_document_count"] == 218
+    assert m["latest_technical_a4_validation"]["word_document_count"] == 298
+    assert m["latest_technical_a4_validation"]["pdf_document_count"] == 298
     assert m["latest_technical_a4_validation"]["release_approval"] is False
     for n,r in zip(range(45,61),y2u4rows):
         txt = (SUBJECT / "year2" / f"lesson_{n:03d}.md").read_text(encoding="utf-8")
@@ -534,7 +534,7 @@ def check() -> None:
     assert m["years"]["6"]["source_reviewed_drafts_total"] == 60
     assert m["years"]["6"]["all_four_units_candidate_pdp"] is True
     assert readiness["completed"]["year6_unit4_candidate_rph"] == 16
-    assert readiness["completed"]["verified_a4_render_for_all_298"] is False
+    assert readiness["completed"]["verified_a4_render_for_all_298"] is True
     for n,r in zip(range(45,61),rows6u4):
         txt = (SUBJECT / "year6" / f"lesson_{n:03d}.md").read_text(encoding="utf-8")
         assert len(txt) > 2100 and all(mark in txt for mark in MARKERS)
@@ -543,7 +543,7 @@ def check() -> None:
         assert "BELUM READY" in txt and "2021" in txt
     assert len(list(SUBJECT.glob("year*/lesson_*.md"))) == 298
     print("PASSED: 20 unit indexes, 298 candidate RPH across Year2–6 all 4 units/year, 15 banks.")
-    print("RELEASE BLOCKED: 0 READY; 298 preview pending, 2027 RPT, per-PdP teacher/manual approvals and runtime parity incomplete.")
+    print("RELEASE BLOCKED: 0 READY; 298 A4 DOCX/PDF CI passed technically, 2027 RPT, per-PdP teacher/manual approvals and runtime parity incomplete.")
 
 if __name__ == "__main__":
     check()

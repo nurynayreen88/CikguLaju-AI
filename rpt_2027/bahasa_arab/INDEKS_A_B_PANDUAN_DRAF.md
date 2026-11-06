@@ -5,3 +5,6 @@ Kumpulan A/B masing-masing mempunyai **298 baris calon PdP** berdasarkan 16 CSV 
 **Tarikh PdP, waktu dan negeri kosong secara sengaja.** Kalendar asas A/B (mula 4 Jan 2027; kumpulan A tamat 2 Dis, B tamat 3 Dis) sahaja diturunkan daripada dokumen induk tersambung di Drive. Semakan KPM terkini, cuti negeri/gantian, penjadualan kelas, jumlah waktu subjek dan kelulusan guru belum selesai. Jangan keluarkan sebagai RPT tahunan akhir.
 
 Semua entri `DRAF_TARIKH_BELUM_DISAHKAN`, `ready=FALSE`. Gunakan `python scripts/check_bahasa_arab_rpt2027_crosswalk_stage.py` untuk audit silang. **0 FINAL READY**, DB dan produksi tidak disentuh.
+
+## Ujian teknikal 298 A4
+- [298 DOCX + 298 PDF satu halaman A4 lulus](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42147097355). Ujian struktur 298 lulus (42147137049). **0 FINAL READY**; penilaian pedagogi, cuti negeri, tarikh PdP dan Telegram/Web masih belum diuji/disahkan.
