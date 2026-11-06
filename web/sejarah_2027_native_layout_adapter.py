@@ -23,6 +23,17 @@ def _layout(row, teacher):
     r=row["rph"]
     y=r["year"]
     sp=", ".join(r["sp_codes"])
+    # Show the per-PdP *text reference*, not the broad unit contents range.
+    # The cited pages have text-level crosswalk; no exercise/visual signoff
+    # is implied, and the original lesson JSON/approval ledger is unchanged.
+    focus=r["textbook_reference"]["checked_focus_pages"]["printed_page_range"]
+    original_bbm=r["bbm"]
+    if ", hlm. " not in original_bbm or not isinstance(focus,str) or not focus.strip():
+        raise ValueError("Missing printed textbook page evidence")
+    intro,separator,tail=original_bbm.partition(";")
+    bbm=intro.split(", hlm. ",1)[0]+", fokus PdP hlm. "+focus+" (rujukan isi pelajaran)"
+    if separator:
+        bbm+=";"+tail
     date_str=t["date"]
     entered_date=date.fromisoformat(date_str) if date_str else None
     day=("Isnin","Selasa","Rabu","Khamis","Jumaat","Sabtu","Ahad")[
