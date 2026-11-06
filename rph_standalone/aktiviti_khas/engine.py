@@ -1,4 +1,4 @@
-"""CikguLaju RPH Aktiviti Khas: immutable 50-entry catalogue and shared renderer.
+"""CikguLaju RPH Aktiviti Khas: immutable 59-entry catalogue and shared renderer.
 
 No runtime AI, curriculum DB access, fabricated SK/SP, quota updates or network.
 The same module is called in the Telegram deployment for Web-proxied downloads.
@@ -43,7 +43,7 @@ class SourceUnavailable(ValueError):
 
 def _catalog(path=CATALOG):
     path = Path(path)
-    if path.is_symlink() or not path.is_file() or not 1000 <= path.stat().st_size <= 150000:
+    if path.is_symlink() or not path.is_file() or not 1000 <= path.stat().st_size <= 250000:
         raise SourceUnavailable("Activity source missing or unsafe")
     raw = path.read_bytes()
     try:
@@ -52,7 +52,7 @@ def _catalog(path=CATALOG):
         raise SourceUnavailable("Activity source corrupt") from exc
     rows = data.get("activities")
     if (data.get("schema_version") != "1.0" or data.get("release_status") != STATUS
-            or not isinstance(rows, list) or len(rows) != 50):
+            or not isinstance(rows, list) or len(rows) != 59):
         raise SourceUnavailable("Incomplete or unapproved activity source")
     ids, buckets = set(), {}
     for row in rows:
@@ -60,7 +60,7 @@ def _catalog(path=CATALOG):
             raise SourceUnavailable("Invalid row")
         ident, kind, years = row.get("id"), row.get("category"), row.get("years")
         if (not isinstance(ident, str)
-                or not re.fullmatch(r"(?:K(?:0[1-9]|1[0-9]|20)|S(?:0[1-9]|10)[ABC])", ident)
+                or not re.fullmatch(r"(?:K(?:0[1-9]|1[0-9]|20)|S(?:0[1-9]|1[0-3])[ABC])", ident)
                 or ident in ids):
             raise SourceUnavailable("Duplicate/invalid ID")
         ids.add(ident)
@@ -70,7 +70,10 @@ def _catalog(path=CATALOG):
         elif kind == SELEPAS:
             if years not in ([1, 2], [3, 4], [5, 6]) or row.get("phase") is not None:
                 raise SourceUnavailable("Invalid tier")
-            if not isinstance(row.get("subject_options"), list) or not row["subject_options"]:
+            if (not isinstance(row.get("subject_options"), list)
+                    or len(row["subject_options"]) != 1
+                    or not isinstance(row["subject_options"][0], str)
+                    or not row["subject_options"][0].strip()):
                 raise SourceUnavailable("Invalid subject options")
         else:
             raise SourceUnavailable("Unknown activity category")
@@ -82,19 +85,19 @@ def _catalog(path=CATALOG):
                 raise SourceUnavailable("Missing RPH field")
         steps = row.get("aktiviti_utama")
         if (not isinstance(steps, list) or len(steps) != 3
-                or any(not isinstance(step, str) or not step.strip() or len(step) > 1600
+                or any(not isinstance(step, str) or len(step.strip()) < 185 or len(step) > 1600
                        for step in steps) or row.get("duration_minutes") != 60):
             raise SourceUnavailable("Invalid steps or duration")
         if any(key in row for key in ("sk", "sp", "lesson_number", "textbook_page")):
             raise SourceUnavailable("No invented curriculum references permitted")
     if buckets.get((TRANSISI, (1,))) != 20 or any(
-            buckets.get((SELEPAS, years)) != 10 for years in
+            buckets.get((SELEPAS, years)) != 13 for years in
             ((1, 2), (3, 4), (5, 6))):
         raise SourceUnavailable("Missing year-group activity variants")
     return data, hashlib.sha256(raw).hexdigest()
 
 
-def list_options(kind, year, *, phase=None, path=CATALOG):
+def list_options(kind, year, *, phase=None, subject=None, path=CATALOG):
     if kind not in (TRANSISI, SELEPAS) or type(year) is not int or year not in range(1, 7):
         raise ValueError("Invalid category/year")
     if kind == TRANSISI and (year != 1 or phase not in
@@ -102,9 +105,14 @@ def list_options(kind, year, *, phase=None, path=CATALOG):
         raise ValueError("Transition restricted to Year 1")
     if kind == SELEPAS and phase is not None:
         raise ValueError("No phase for post-syllabus activity")
+    if kind == TRANSISI and subject is not None:
+        raise ValueError("Transition is not a school subject")
+    if subject is not None and (not isinstance(subject, str) or not subject.strip() or len(subject) > 100):
+        raise ValueError("Invalid subject filter")
     source, digest = _catalog(path)
     rows = (r for r in source["activities"] if r["category"] == kind
-            and year in r["years"] and (phase is None or r["phase"] == phase))
+            and year in r["years"] and (phase is None or r["phase"] == phase)
+            and (subject is None or subject in r.get("subject_options", [])))
     return [{"id": r["id"], "label": r["title"], "phase": r["phase"]}
             for r in rows], digest
 
@@ -155,10 +163,8 @@ def fields_for(row, year, teacher, subject=None):
         if subject is not None:
             raise ValueError("No subject required for Transition")
         subject = "Program Transisi Tahun Satu"
-    elif subject is not None and subject not in row["subject_options"]:
-        raise ValueError("Subject not suitable for the selected activity")
-    else:
-        subject = subject or "Pengayaan Merentas Kurikulum"
+    elif subject is None or subject not in row["subject_options"]:
+        raise ValueError("Explicit matching subject is required for this activity")
     parts = [row["set_induksi"], *row["aktiviti_utama"],
              row["pengukuhan_penilaian"], row["penutup"]]
     return {
