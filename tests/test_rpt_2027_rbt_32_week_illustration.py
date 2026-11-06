@@ -32,6 +32,7 @@ class RBT32WeekIllustrationQA(unittest.TestCase):
                     self.assertEqual(a["original_week"], "")
                     self.assertEqual(a["original_a_start"], "")
                     self.assertEqual(a["original_b_start"], "")
+                    self.assertEqual(a["source_note"], b["note"])
                     self.assertIn("SIMULASI SAHAJA", a["note"])
                     self.assertIn("BUKAN", a["note"].upper())
                 self.assertTrue(all(
