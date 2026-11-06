@@ -14,7 +14,7 @@
   "method": "Direct visual screening of original PDF teacher-guide pink code panels for candidate source pages 26–43; focused reading of RPH objectives/PBD for flagged cases.",
   "candidate_total": 16,
   "high_priority_count": 0,
-  "additional_review_count": 5,
+  "additional_review_count": 4,
   "ready_count": 0,
   "records": [
     {
@@ -170,12 +170,13 @@
       "pdp": "026",
       "source_printed_page": 40,
       "source_pdf_page_1based": 52,
-      "existing_candidate_sp": "3.3.1",
-      "existing_focus": "Menulis ayat kata tunjuk tentang keluarga",
-      "audit_status": "REQUIRES_FULL_PAGE_PEDAGOGIC_CHECK",
-      "issue": "SP 3.3.1 tercetak bersama 3.4.1 pada p40; RPH menulis ayat/frasa, jadi semak sama ada sepatutnya 3.4.1.",
+      "existing_candidate_sp": "3.4.1",
+      "existing_focus": "Menyalin frasa kata tunjuk tentang keluarga",
+      "audit_status": "SOURCE_SK_SP_CORRECTED_TEACHER_APPROVAL_PENDING",
+      "issue": "Spelling and copying phrases on book p40 aligns with DPK 3.4.1, not 3.3.1 (copy words); RPH objective/activities/PBD revised, awaiting individual teacher approval.",
       "teacher_approved": false,
-      "ready": false
+      "ready": false,
+      "previous_candidate_sp": "3.3.1"
     },
     {
       "pdp": "027",
@@ -213,7 +214,7 @@
   "production_db_touched": false,
   "telegram_live_touched": false,
   "web_live_touched": false,
-  "corrected_source_candidate_count": 8,
+  "corrected_source_candidate_count": 9,
   "corrected_pdp": [
     "014",
     "016",
@@ -221,6 +222,7 @@
     "020",
     "023",
     "024",
+    "026",
     "027",
     "028"
   ]
