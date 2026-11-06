@@ -83,7 +83,7 @@ def make_rpt(year: int) -> tuple[Path, Path]:
     for idx, row in enumerate(rows, start=1):
         cells = table.add_row().cells
         sp_codes = [p.strip() for p in pick(row, "sp").split(";") if p.strip()]
-        sk_codes = list(dict.fromkeys(".".join(code.split(".")[:2]) for code in sp_codes))
+        sk_codes = list(dict.fromkeys(("3.1" if code.startswith("3.2.") else "4.1" if code == "4.2.1" else ".".join(code.split(".")[:2])) if year == 4 else ".".join(code.split(".")[:2]) for code in sp_codes))
         values = [
             f"{idx:02d}", pick(row, "slot_a"), pick(row, "slot_b"),
             pick(row, "unit") + ("  [ANJAL]" if idx in (6, 19) else ""),
