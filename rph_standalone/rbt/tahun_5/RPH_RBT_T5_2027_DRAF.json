@@ -210,22 +210,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 4.3.3 menggunakan Contoh jahitan tangan, fabrik perca, jarum dan benang, gunting fabrik, pita ukur, kertas pola; guru menyelia alat tajam. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 4.3.3 dan menyemak ketepatan maklumatnya."
+          "aktiviti": "Guru menunjukkan contoh lakaran bermaklumat/carta alir dengan label yang diperlukan untuk artikel jahitan sarung botol air. Murid menghasilkan draf pertama berdasarkan keperluan SP 4.3.3."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 4.3.3 dan merekod pemerhatian. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 4.3.3 dan menyemak ketepatan maklumatnya. Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru."
+          "aktiviti": "Murid bertukar draf dengan rakan, menyemak label dan urutan menggunakan senarai semak, lalu menghasilkan versi kedua dengan sekurang-kurangnya satu pembetulan bagi SP 4.3.3. Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 4.3.3; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 4.3.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi sarung botol air daripada fabrik."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 4.3.3; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 4.3.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -268,7 +268,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Artikel Jahitan",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "4.3.3",
@@ -311,22 +311,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 4.3.4 menggunakan Contoh jahitan tangan, fabrik perca, jarum dan benang, gunting fabrik, pita ukur, kertas pola; guru menyelia alat tajam. Murid menilai lakaran atau atur cara menggunakan kriteria, mengenal pasti dua kelemahan serta melakukan satu penambahbaikan yang boleh dibuktikan (SP 4.3.4)."
+          "aktiviti": "Guru memodelkan penggunaan rubrik untuk menilai dua ciri artikel jahitan sarung botol air. Murid menanda kekuatan dan dua kelemahan pada contoh lakaran/produk bagi SP 4.3.4."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 4.3.4 dan merekod pemerhatian. Murid menilai lakaran atau atur cara menggunakan kriteria, mengenal pasti dua kelemahan serta melakukan satu penambahbaikan yang boleh dibuktikan (SP 4.3.4). Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru."
+          "aktiviti": "Murid menambah baik lakaran, atur cara atau komponen berdasarkan analisis, membandingkan sebelum dan selepas serta menjelaskan sebab keputusan bagi SP 4.3.4. Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: rubrik semak serta lakaran atau kod yang telah dibaiki. Guru menyemak kejelasan kelemahan, sebab dan pembetulan mengikut SP 4.3.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 4.3.4 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi sarung botol air daripada fabrik."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: rubrik semak serta lakaran atau kod yang telah dibaiki. Guru menyemak kejelasan kelemahan, sebab dan pembetulan mengikut SP 4.3.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 4.3.4 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -368,7 +368,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Artikel Jahitan",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "4.3.4",
@@ -411,22 +411,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 4.3.5 menggunakan Contoh jahitan tangan, fabrik perca, jarum dan benang, gunting fabrik, pita ukur, kertas pola; guru menyelia alat tajam. Murid menyediakan jadual bahan, kuantiti, kos seunit dan jumlah anggaran bagi artikel jahitan sarung botol air serta menyemak ketepatan kiraan (SP 4.3.5)."
+          "aktiviti": "Guru menunjukkan cara mengira kuantiti × harga seunit dalam jadual bagi artikel jahitan sarung botol air. Murid menyenaraikan bahan dan membuat dua pengiraan berpandu bagi SP 4.3.5."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 4.3.5 dan merekod pemerhatian. Murid menyediakan jadual bahan, kuantiti, kos seunit dan jumlah anggaran bagi artikel jahitan sarung botol air serta menyemak ketepatan kiraan (SP 4.3.5). Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru."
+          "aktiviti": "Murid melengkapkan anggaran kos bahan keseluruhan, menyemak jumlah dengan pasangan dan mencadangkan satu alternatif bahan yang lebih jimat serta sesuai bagi SP 4.3.5. Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: jadual bahan, kuantiti, kos seunit dan anggaran jumlah. Guru menyemak ketepatan kos dan kesesuaian pilihan mengikut SP 4.3.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak jadual bahan, kuantiti, kos seunit dan anggaran jumlah mengikut SP 4.3.5 dan menggunakan kriteria ketepatan kos dan kesesuaian pilihan. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi sarung botol air daripada fabrik."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: jadual bahan, kuantiti, kos seunit dan anggaran jumlah. Guru menyemak ketepatan kos dan kesesuaian pilihan mengikut SP 4.3.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak jadual bahan, kuantiti, kos seunit dan anggaran jumlah mengikut SP 4.3.5 dan menggunakan kriteria ketepatan kos dan kesesuaian pilihan. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -468,7 +468,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Artikel Jahitan",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "4.3.5",
@@ -511,22 +511,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 4.3.6 menggunakan Contoh jahitan tangan, fabrik perca, jarum dan benang, gunting fabrik, pita ukur, kertas pola; guru menyelia alat tajam. Murid menghasilkan peringkat kerja artikel jahitan sarung botol air yang benar-benar diminta oleh SP 4.3.6, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah."
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk artikel jahitan sarung botol air. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 4.3.6)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 4.3.6 dan merekod pemerhatian. Murid menghasilkan peringkat kerja artikel jahitan sarung botol air yang benar-benar diminta oleh SP 4.3.6, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah. Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru."
+          "aktiviti": "Murid meneruskan bahagian kerja untuk artikel jahitan sarung botol air yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 4.3.6); bukan wajib menyiapkan keseluruhan projek. Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 4.3.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 4.3.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi sarung botol air daripada fabrik."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 4.3.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 4.3.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -569,7 +569,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Artikel Jahitan",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "4.3.6",
@@ -612,22 +612,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 4.3.7 menggunakan Contoh jahitan tangan, fabrik perca, jarum dan benang, gunting fabrik, pita ukur, kertas pola; guru menyelia alat tajam. Murid membentangkan hasil semasa dan dokumentasi artikel jahitan sarung botol air, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 4.3.7)."
+          "aktiviti": "Guru menunjukkan susunan pembentangan produk artikel jahitan sarung botol air: masalah, idea, lakaran, proses kerja, ujian dan penambahbaikan. Murid menyediakan tiga poin serta memilih bukti hasil (SP 4.3.7)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 4.3.7 dan merekod pemerhatian. Murid membentangkan hasil semasa dan dokumentasi artikel jahitan sarung botol air, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 4.3.7). Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru."
+          "aktiviti": "Murid mempersembahkan hasil secara lisan, poster atau demonstrasi, menjawab satu soalan rakan dan menulis maklum balas untuk penambahbaikan (SP 4.3.7). Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak kejelasan hujah, bukti ujian dan maklum balas mengikut SP 4.3.7; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 4.3.7 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi sarung botol air daripada fabrik."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak kejelasan hujah, bukti ujian dan maklum balas mengikut SP 4.3.7; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 4.3.7 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Jarum dan gunting dikira, diedarkan dan dikumpul semula oleh guru.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -669,7 +669,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Artikel Jahitan",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "4.3.7",
@@ -831,22 +831,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 5.1.3 menggunakan Gambar kincir air/angin/sel solar, lakaran, komponen voltan rendah, kad kos, bahan kitar semula. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 5.1.3 dan menyemak ketepatan maklumatnya."
+          "aktiviti": "Guru menunjukkan contoh lakaran bermaklumat/carta alir dengan label yang diperlukan untuk model kipas kecil menggunakan sel solar. Murid menghasilkan draf pertama berdasarkan keperluan SP 5.1.3."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 5.1.3 dan merekod pemerhatian. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 5.1.3 dan menyemak ketepatan maklumatnya. Gunakan komponen voltan rendah dan bilah plastik lembut; tidak disambung ke soket utama."
+          "aktiviti": "Murid bertukar draf dengan rakan, menyemak label dan urutan menggunakan senarai semak, lalu menghasilkan versi kedua dengan sekurang-kurangnya satu pembetulan bagi SP 5.1.3. Gunakan komponen voltan rendah dan bilah plastik lembut; tidak disambung ke soket utama."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 5.1.3; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 5.1.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi kipas solar bervoltan rendah."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 5.1.3; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 5.1.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan komponen voltan rendah dan bilah plastik lembut; tidak disambung ke soket utama.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -889,7 +889,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "5.1.3",
@@ -932,22 +932,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 5.1.4 menggunakan Gambar kincir air/angin/sel solar, lakaran, komponen voltan rendah, kad kos, bahan kitar semula. Murid menilai lakaran atau atur cara menggunakan kriteria, mengenal pasti dua kelemahan serta melakukan satu penambahbaikan yang boleh dibuktikan (SP 5.1.4)."
+          "aktiviti": "Guru memodelkan penggunaan rubrik untuk menilai dua ciri model kipas kecil menggunakan sel solar. Murid menanda kekuatan dan dua kelemahan pada contoh lakaran/produk bagi SP 5.1.4."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 5.1.4 dan merekod pemerhatian. Murid menilai lakaran atau atur cara menggunakan kriteria, mengenal pasti dua kelemahan serta melakukan satu penambahbaikan yang boleh dibuktikan (SP 5.1.4). Gunakan komponen voltan rendah dan bilah plastik lembut; tidak disambung ke soket utama."
+          "aktiviti": "Murid menambah baik lakaran, atur cara atau komponen berdasarkan analisis, membandingkan sebelum dan selepas serta menjelaskan sebab keputusan bagi SP 5.1.4. Gunakan komponen voltan rendah dan bilah plastik lembut; tidak disambung ke soket utama."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: rubrik semak serta lakaran atau kod yang telah dibaiki. Guru menyemak kejelasan kelemahan, sebab dan pembetulan mengikut SP 5.1.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 5.1.4 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi kipas solar bervoltan rendah."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: rubrik semak serta lakaran atau kod yang telah dibaiki. Guru menyemak kejelasan kelemahan, sebab dan pembetulan mengikut SP 5.1.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 5.1.4 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan komponen voltan rendah dan bilah plastik lembut; tidak disambung ke soket utama.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -989,7 +989,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "5.1.4",
@@ -1150,22 +1150,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 5.1.7 menggunakan Gambar kincir air/angin/sel solar, lakaran, komponen voltan rendah, kad kos, bahan kitar semula. Murid menghasilkan peringkat kerja model kipas kecil menggunakan sel solar yang benar-benar diminta oleh SP 5.1.7, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah."
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk model kipas kecil menggunakan sel solar. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 5.1.7)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 5.1.7 dan merekod pemerhatian. Murid menghasilkan peringkat kerja model kipas kecil menggunakan sel solar yang benar-benar diminta oleh SP 5.1.7, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah. Gunakan komponen voltan rendah dan bilah plastik lembut; tidak disambung ke soket utama."
+          "aktiviti": "Murid meneruskan bahagian kerja untuk model kipas kecil menggunakan sel solar yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 5.1.7); bukan wajib menyiapkan keseluruhan projek. Gunakan komponen voltan rendah dan bilah plastik lembut; tidak disambung ke soket utama."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 5.1.7; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 5.1.7 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi kipas solar bervoltan rendah."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 5.1.7; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 5.1.7 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan komponen voltan rendah dan bilah plastik lembut; tidak disambung ke soket utama.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1208,7 +1208,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "5.1.7",
@@ -1251,22 +1251,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 5.1.8 menggunakan Gambar kincir air/angin/sel solar, lakaran, komponen voltan rendah, kad kos, bahan kitar semula. Murid membentangkan hasil semasa dan dokumentasi model kipas kecil menggunakan sel solar, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 5.1.8)."
+          "aktiviti": "Guru menunjukkan susunan pembentangan produk model kipas kecil menggunakan sel solar: masalah, idea, lakaran, proses kerja, ujian dan penambahbaikan. Murid menyediakan tiga poin serta memilih bukti hasil (SP 5.1.8)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 5.1.8 dan merekod pemerhatian. Murid membentangkan hasil semasa dan dokumentasi model kipas kecil menggunakan sel solar, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 5.1.8). Gunakan komponen voltan rendah dan bilah plastik lembut; tidak disambung ke soket utama."
+          "aktiviti": "Murid mempersembahkan hasil secara lisan, poster atau demonstrasi, menjawab satu soalan rakan dan menulis maklum balas untuk penambahbaikan (SP 5.1.8). Gunakan komponen voltan rendah dan bilah plastik lembut; tidak disambung ke soket utama."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak kejelasan hujah, bukti ujian dan maklum balas mengikut SP 5.1.8; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 5.1.8 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi kipas solar bervoltan rendah."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak kejelasan hujah, bukti ujian dan maklum balas mengikut SP 5.1.8; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 5.1.8 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan komponen voltan rendah dan bilah plastik lembut; tidak disambung ke soket utama.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1308,7 +1308,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Produk Menggunakan Tenaga Boleh Baharu",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "5.1.8",
@@ -1589,22 +1589,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 6.3.5 menggunakan Kad pseudokod dan carta alir, komputer atau simulasi, mikropengawal, papan uji, LED, motor DC kecil, wayar voltan rendah. Murid menilai lakaran atau atur cara menggunakan kriteria, mengenal pasti dua kelemahan serta melakukan satu penambahbaikan yang boleh dibuktikan (SP 6.3.5)."
+          "aktiviti": "Guru memodelkan penggunaan rubrik untuk menilai dua ciri atur cara lampu amaran dan pembaz mikropengawal. Murid menanda kekuatan dan dua kelemahan pada contoh lakaran/produk bagi SP 6.3.5."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 6.3.5 dan merekod pemerhatian. Murid menilai lakaran atau atur cara menggunakan kriteria, mengenal pasti dua kelemahan serta melakukan satu penambahbaikan yang boleh dibuktikan (SP 6.3.5). Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
+          "aktiviti": "Murid menambah baik lakaran, atur cara atau komponen berdasarkan analisis, membandingkan sebelum dan selepas serta menjelaskan sebab keputusan bagi SP 6.3.5. Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: rubrik semak serta lakaran atau kod yang telah dibaiki. Guru menyemak kejelasan kelemahan, sebab dan pembetulan mengikut SP 6.3.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 6.3.5 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi simulasi lampu isyarat mikropengawal."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: rubrik semak serta lakaran atau kod yang telah dibaiki. Guru menyemak kejelasan kelemahan, sebab dan pembetulan mengikut SP 6.3.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 6.3.5 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1646,7 +1646,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Pengaturcaraan",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "6.3.5",
@@ -1689,22 +1689,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 6.3.6 menggunakan Kad pseudokod dan carta alir, komputer atau simulasi, mikropengawal, papan uji, LED, motor DC kecil, wayar voltan rendah. Murid membentangkan hasil semasa dan dokumentasi atur cara lampu amaran dan pembaz mikropengawal, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 6.3.6)."
+          "aktiviti": "Guru menunjukkan susunan pembentangan produk atur cara lampu amaran dan pembaz mikropengawal: masalah, idea, lakaran, proses kerja, ujian dan penambahbaikan. Murid menyediakan tiga poin serta memilih bukti hasil (SP 6.3.6)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 6.3.6 dan merekod pemerhatian. Murid membentangkan hasil semasa dan dokumentasi atur cara lampu amaran dan pembaz mikropengawal, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 6.3.6). Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
+          "aktiviti": "Murid mempersembahkan hasil secara lisan, poster atau demonstrasi, menjawab satu soalan rakan dan menulis maklum balas untuk penambahbaikan (SP 6.3.6). Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak kejelasan hujah, bukti ujian dan maklum balas mengikut SP 6.3.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 6.3.6 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi simulasi lampu isyarat mikropengawal."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak kejelasan hujah, bukti ujian dan maklum balas mengikut SP 6.3.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 6.3.6 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1746,7 +1746,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Pengaturcaraan",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "6.3.6",
@@ -1789,22 +1789,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 6.4.1 menggunakan Kad pseudokod dan carta alir, komputer atau simulasi, mikropengawal, papan uji, LED, motor DC kecil, wayar voltan rendah. Murid mengenal pasti ciri/komponen berdasarkan contoh sebenar berkaitan atur cara lampu amaran dan pembaz mikropengawal lalu melengkapkan kad pengelasan berlabel (SP 6.4.1)."
+          "aktiviti": "Guru mempamerkan contoh dan bukan contoh berkaitan atur cara lampu amaran dan pembaz mikropengawal, kemudian membimbing murid mengelaskan tiga komponen/ciri mengikut SP 6.4.1. Murid menyusun kad dan menyatakan sebab bagi satu padanan."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 6.4.1 dan merekod pemerhatian. Murid mengenal pasti ciri/komponen berdasarkan contoh sebenar berkaitan atur cara lampu amaran dan pembaz mikropengawal lalu melengkapkan kad pengelasan berlabel (SP 6.4.1). Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
+          "aktiviti": "Murid secara individu mengelaskan empat contoh baharu, membetulkan satu padanan yang salah melalui perbincangan pasangan, lalu menghasilkan jadual pengelasan ringkas bagi SP 6.4.1. Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: kad pengelasan atau senarai contoh berlabel. Guru menyemak ketepatan pilihan dan pengelasan mengikut SP 6.4.1; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak kad pengelasan atau senarai contoh berlabel mengikut SP 6.4.1 dan menggunakan kriteria ketepatan pilihan dan pengelasan. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi simulasi lampu isyarat mikropengawal."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: kad pengelasan atau senarai contoh berlabel. Guru menyemak ketepatan pilihan dan pengelasan mengikut SP 6.4.1; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak kad pengelasan atau senarai contoh berlabel mengikut SP 6.4.1 dan menggunakan kriteria ketepatan pilihan dan pengelasan. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1847,7 +1847,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Pengaturcaraan",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "6.4.1",
@@ -1890,22 +1890,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 6.4.2 menggunakan Kad pseudokod dan carta alir, komputer atau simulasi, mikropengawal, papan uji, LED, motor DC kecil, wayar voltan rendah. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 6.4.2 menggunakan dua contoh dan satu sebab yang munasabah."
+          "aktiviti": "Guru menunjukkan contoh fungsi atau konsep bagi atur cara lampu amaran dan pembaz mikropengawal. Murid membina peta hubungan sebab dan kesan bagi fokus SP 6.4.2 melalui soal jawab."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 6.4.2 dan merekod pemerhatian. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 6.4.2 menggunakan dua contoh dan satu sebab yang munasabah. Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
+          "aktiviti": "Murid menerangkan dua pilihan dalam situasi baharu, mengenal pasti kelebihan dan kekurangan serta menulis satu justifikasi yang munasabah bagi SP 6.4.2. Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan penerangan dan satu justifikasi mengikut SP 6.4.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak dua penerangan fungsi atau sebab dalam jadual banding beza mengikut SP 6.4.2 dan menggunakan kriteria ketepatan penerangan dan satu justifikasi. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi simulasi lampu isyarat mikropengawal."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan penerangan dan satu justifikasi mengikut SP 6.4.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak dua penerangan fungsi atau sebab dalam jadual banding beza mengikut SP 6.4.2 dan menggunakan kriteria ketepatan penerangan dan satu justifikasi. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -1947,7 +1947,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Pengaturcaraan",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "6.4.2",
@@ -1990,22 +1990,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 6.4.3 menggunakan Kad pseudokod dan carta alir, komputer atau simulasi, mikropengawal, papan uji, LED, motor DC kecil, wayar voltan rendah. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 6.4.3 dan menyemak ketepatan maklumatnya."
+          "aktiviti": "Guru menunjukkan contoh lakaran bermaklumat/carta alir dengan label yang diperlukan untuk atur cara lampu amaran dan pembaz mikropengawal. Murid menghasilkan draf pertama berdasarkan keperluan SP 6.4.3."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 6.4.3 dan merekod pemerhatian. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 6.4.3 dan menyemak ketepatan maklumatnya. Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
+          "aktiviti": "Murid bertukar draf dengan rakan, menyemak label dan urutan menggunakan senarai semak, lalu menghasilkan versi kedua dengan sekurang-kurangnya satu pembetulan bagi SP 6.4.3. Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 6.4.3; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 6.4.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi simulasi lampu isyarat mikropengawal."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 6.4.3; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 6.4.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2048,7 +2048,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Pengaturcaraan",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "6.4.3",
@@ -2091,22 +2091,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 6.4.4 menggunakan Kad pseudokod dan carta alir, komputer atau simulasi, mikropengawal, papan uji, LED, motor DC kecil, wayar voltan rendah. Murid menghasilkan peringkat kerja atur cara lampu amaran dan pembaz mikropengawal yang benar-benar diminta oleh SP 6.4.4, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah."
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk atur cara lampu amaran dan pembaz mikropengawal. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 6.4.4)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 6.4.4 dan merekod pemerhatian. Murid menghasilkan peringkat kerja atur cara lampu amaran dan pembaz mikropengawal yang benar-benar diminta oleh SP 6.4.4, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah. Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
+          "aktiviti": "Murid meneruskan bahagian kerja untuk atur cara lampu amaran dan pembaz mikropengawal yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 6.4.4); bukan wajib menyiapkan keseluruhan projek. Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 6.4.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 6.4.4 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi simulasi lampu isyarat mikropengawal."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 6.4.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 6.4.4 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2149,7 +2149,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Pengaturcaraan",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "6.4.4",
@@ -2192,22 +2192,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 6.4.5 menggunakan Kad pseudokod dan carta alir, komputer atau simulasi, mikropengawal, papan uji, LED, motor DC kecil, wayar voltan rendah. Murid menghasilkan peringkat kerja atur cara lampu amaran dan pembaz mikropengawal yang benar-benar diminta oleh SP 6.4.5, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah."
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk atur cara lampu amaran dan pembaz mikropengawal. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 6.4.5)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 6.4.5 dan merekod pemerhatian. Murid menghasilkan peringkat kerja atur cara lampu amaran dan pembaz mikropengawal yang benar-benar diminta oleh SP 6.4.5, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah. Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
+          "aktiviti": "Murid meneruskan bahagian kerja untuk atur cara lampu amaran dan pembaz mikropengawal yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 6.4.5); bukan wajib menyiapkan keseluruhan projek. Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 6.4.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 6.4.5 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi simulasi lampu isyarat mikropengawal."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 6.4.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 6.4.5 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2250,7 +2250,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Pengaturcaraan",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "6.4.5",
@@ -2293,22 +2293,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 6.4.6 menggunakan Kad pseudokod dan carta alir, komputer atau simulasi, mikropengawal, papan uji, LED, motor DC kecil, wayar voltan rendah. Murid menghasilkan peringkat kerja atur cara lampu amaran dan pembaz mikropengawal yang benar-benar diminta oleh SP 6.4.6, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah."
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk atur cara lampu amaran dan pembaz mikropengawal. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 6.4.6)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 6.4.6 dan merekod pemerhatian. Murid menghasilkan peringkat kerja atur cara lampu amaran dan pembaz mikropengawal yang benar-benar diminta oleh SP 6.4.6, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah. Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
+          "aktiviti": "Murid meneruskan bahagian kerja untuk atur cara lampu amaran dan pembaz mikropengawal yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 6.4.6); bukan wajib menyiapkan keseluruhan projek. Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 6.4.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 6.4.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi simulasi lampu isyarat mikropengawal."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 6.4.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 6.4.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2350,7 +2350,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Pengaturcaraan",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "6.4.6",
@@ -2393,22 +2393,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 6.4.6 menggunakan Kad pseudokod dan carta alir, komputer atau simulasi, mikropengawal, papan uji, LED, motor DC kecil, wayar voltan rendah. Murid menghasilkan peringkat kerja atur cara lampu amaran dan pembaz mikropengawal yang benar-benar diminta oleh SP 6.4.6, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah."
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk atur cara lampu amaran dan pembaz mikropengawal. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 6.4.6)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 6.4.6 dan merekod pemerhatian. Murid menghasilkan peringkat kerja atur cara lampu amaran dan pembaz mikropengawal yang benar-benar diminta oleh SP 6.4.6, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah. Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
+          "aktiviti": "Murid meneruskan bahagian kerja untuk atur cara lampu amaran dan pembaz mikropengawal yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 6.4.6); bukan wajib menyiapkan keseluruhan projek. Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 6.4.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 6.4.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi simulasi lampu isyarat mikropengawal."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 6.4.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 6.4.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2450,7 +2450,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Pengaturcaraan",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "6.4.6",
@@ -2493,22 +2493,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 6.4.7 menggunakan Kad pseudokod dan carta alir, komputer atau simulasi, mikropengawal, papan uji, LED, motor DC kecil, wayar voltan rendah. Murid membentangkan hasil semasa dan dokumentasi atur cara lampu amaran dan pembaz mikropengawal, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 6.4.7)."
+          "aktiviti": "Guru menunjukkan susunan pembentangan produk atur cara lampu amaran dan pembaz mikropengawal: masalah, idea, lakaran, proses kerja, ujian dan penambahbaikan. Murid menyediakan tiga poin serta memilih bukti hasil (SP 6.4.7)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 6.4.7 dan merekod pemerhatian. Murid membentangkan hasil semasa dan dokumentasi atur cara lampu amaran dan pembaz mikropengawal, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 6.4.7). Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
+          "aktiviti": "Murid mempersembahkan hasil secara lisan, poster atau demonstrasi, menjawab satu soalan rakan dan menulis maklum balas untuk penambahbaikan (SP 6.4.7). Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak kejelasan hujah, bukti ujian dan maklum balas mengikut SP 6.4.7; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 6.4.7 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi simulasi lampu isyarat mikropengawal."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak kejelasan hujah, bukti ujian dan maklum balas mengikut SP 6.4.7; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak pembentangan hasil atau dokumentasi proses dan respons soalan mengikut SP 6.4.7 dan menggunakan kriteria kejelasan hujah, bukti ujian dan maklum balas. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Gunakan sambungan voltan rendah serta pastikan polarity komponen diperiksa guru.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2550,7 +2550,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Reka Bentuk Pengaturcaraan",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "6.4.7",
@@ -2593,22 +2593,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 7.1.1 menggunakan Contoh sistem tanaman takungan, bekas tanaman, medium sesuai, benih, pembaris, lakaran dan rekod pertumbuhan. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 7.1.1 menggunakan dua contoh dan satu sebab yang munasabah."
+          "aktiviti": "Guru menunjukkan contoh fungsi atau konsep bagi sistem tanaman takungan bersumbu. Murid membina peta hubungan sebab dan kesan bagi fokus SP 7.1.1 melalui soal jawab."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 7.1.1 dan merekod pemerhatian. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 7.1.1 menggunakan dua contoh dan satu sebab yang munasabah. Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti."
+          "aktiviti": "Murid menerangkan dua pilihan dalam situasi baharu, mengenal pasti kelebihan dan kekurangan serta menulis satu justifikasi yang munasabah bagi SP 7.1.1. Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan penerangan dan satu justifikasi mengikut SP 7.1.1; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak dua penerangan fungsi atau sebab dalam jadual banding beza mengikut SP 7.1.1 dan menggunakan kriteria ketepatan penerangan dan satu justifikasi. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi sistem tanaman takungan."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan penerangan dan satu justifikasi mengikut SP 7.1.1; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak dua penerangan fungsi atau sebab dalam jadual banding beza mengikut SP 7.1.1 dan menggunakan kriteria ketepatan penerangan dan satu justifikasi. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2651,7 +2651,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Teknologi Pertanian Bandar",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "7.1.1",
@@ -2694,22 +2694,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 7.1.2 menggunakan Contoh sistem tanaman takungan, bekas tanaman, medium sesuai, benih, pembaris, lakaran dan rekod pertumbuhan. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 7.1.2 menggunakan dua contoh dan satu sebab yang munasabah."
+          "aktiviti": "Guru menunjukkan contoh fungsi atau konsep bagi sistem tanaman takungan bersumbu. Murid membina peta hubungan sebab dan kesan bagi fokus SP 7.1.2 melalui soal jawab."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 7.1.2 dan merekod pemerhatian. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 7.1.2 menggunakan dua contoh dan satu sebab yang munasabah. Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti."
+          "aktiviti": "Murid menerangkan dua pilihan dalam situasi baharu, mengenal pasti kelebihan dan kekurangan serta menulis satu justifikasi yang munasabah bagi SP 7.1.2. Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan penerangan dan satu justifikasi mengikut SP 7.1.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak dua penerangan fungsi atau sebab dalam jadual banding beza mengikut SP 7.1.2 dan menggunakan kriteria ketepatan penerangan dan satu justifikasi. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi sistem tanaman takungan."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan penerangan dan satu justifikasi mengikut SP 7.1.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak dua penerangan fungsi atau sebab dalam jadual banding beza mengikut SP 7.1.2 dan menggunakan kriteria ketepatan penerangan dan satu justifikasi. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2752,7 +2752,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Teknologi Pertanian Bandar",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "7.1.2",
@@ -2795,22 +2795,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 7.1.3 menggunakan Contoh sistem tanaman takungan, bekas tanaman, medium sesuai, benih, pembaris, lakaran dan rekod pertumbuhan. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 7.1.3 dan menyemak ketepatan maklumatnya."
+          "aktiviti": "Guru menunjukkan contoh lakaran bermaklumat/carta alir dengan label yang diperlukan untuk sistem tanaman takungan bersumbu. Murid menghasilkan draf pertama berdasarkan keperluan SP 7.1.3."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 7.1.3 dan merekod pemerhatian. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 7.1.3 dan menyemak ketepatan maklumatnya. Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti."
+          "aktiviti": "Murid bertukar draf dengan rakan, menyemak label dan urutan menggunakan senarai semak, lalu menghasilkan versi kedua dengan sekurang-kurangnya satu pembetulan bagi SP 7.1.3. Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 7.1.3; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 7.1.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi sistem tanaman takungan."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 7.1.3; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak lakaran berlabel atau algoritma/carta alir berurutan mengikut SP 7.1.3 dan menggunakan kriteria kelengkapan maklumat dan langkah reka bentuk. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2853,7 +2853,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Teknologi Pertanian Bandar",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "7.1.3",
@@ -2896,22 +2896,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 7.1.4 menggunakan Contoh sistem tanaman takungan, bekas tanaman, medium sesuai, benih, pembaris, lakaran dan rekod pertumbuhan. Murid menilai lakaran atau atur cara menggunakan kriteria, mengenal pasti dua kelemahan serta melakukan satu penambahbaikan yang boleh dibuktikan (SP 7.1.4)."
+          "aktiviti": "Guru memodelkan penggunaan rubrik untuk menilai dua ciri sistem tanaman takungan bersumbu. Murid menanda kekuatan dan dua kelemahan pada contoh lakaran/produk bagi SP 7.1.4."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 7.1.4 dan merekod pemerhatian. Murid menilai lakaran atau atur cara menggunakan kriteria, mengenal pasti dua kelemahan serta melakukan satu penambahbaikan yang boleh dibuktikan (SP 7.1.4). Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti."
+          "aktiviti": "Murid menambah baik lakaran, atur cara atau komponen berdasarkan analisis, membandingkan sebelum dan selepas serta menjelaskan sebab keputusan bagi SP 7.1.4. Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: rubrik semak serta lakaran atau kod yang telah dibaiki. Guru menyemak kejelasan kelemahan, sebab dan pembetulan mengikut SP 7.1.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 7.1.4 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi sistem tanaman takungan."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: rubrik semak serta lakaran atau kod yang telah dibaiki. Guru menyemak kejelasan kelemahan, sebab dan pembetulan mengikut SP 7.1.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak rubrik semak serta lakaran atau kod yang telah dibaiki mengikut SP 7.1.4 dan menggunakan kriteria kejelasan kelemahan, sebab dan pembetulan. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -2954,7 +2954,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Teknologi Pertanian Bandar",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "7.1.4",
@@ -2997,22 +2997,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 7.1.5 menggunakan Contoh sistem tanaman takungan, bekas tanaman, medium sesuai, benih, pembaris, lakaran dan rekod pertumbuhan. Murid menyediakan jadual bahan, kuantiti, kos seunit dan jumlah anggaran bagi sistem tanaman takungan bersumbu serta menyemak ketepatan kiraan (SP 7.1.5)."
+          "aktiviti": "Guru menunjukkan cara mengira kuantiti × harga seunit dalam jadual bagi sistem tanaman takungan bersumbu. Murid menyenaraikan bahan dan membuat dua pengiraan berpandu bagi SP 7.1.5."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 7.1.5 dan merekod pemerhatian. Murid menyediakan jadual bahan, kuantiti, kos seunit dan jumlah anggaran bagi sistem tanaman takungan bersumbu serta menyemak ketepatan kiraan (SP 7.1.5). Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti."
+          "aktiviti": "Murid melengkapkan anggaran kos bahan keseluruhan, menyemak jumlah dengan pasangan dan mencadangkan satu alternatif bahan yang lebih jimat serta sesuai bagi SP 7.1.5. Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: jadual bahan, kuantiti, kos seunit dan anggaran jumlah. Guru menyemak ketepatan kos dan kesesuaian pilihan mengikut SP 7.1.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak jadual bahan, kuantiti, kos seunit dan anggaran jumlah mengikut SP 7.1.5 dan menggunakan kriteria ketepatan kos dan kesesuaian pilihan. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi sistem tanaman takungan."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: jadual bahan, kuantiti, kos seunit dan anggaran jumlah. Guru menyemak ketepatan kos dan kesesuaian pilihan mengikut SP 7.1.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak jadual bahan, kuantiti, kos seunit dan anggaran jumlah mengikut SP 7.1.5 dan menggunakan kriteria ketepatan kos dan kesesuaian pilihan. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -3054,7 +3054,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Teknologi Pertanian Bandar",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "7.1.5",
@@ -3097,22 +3097,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 7.1.6 menggunakan Contoh sistem tanaman takungan, bekas tanaman, medium sesuai, benih, pembaris, lakaran dan rekod pertumbuhan. Murid menghasilkan peringkat kerja sistem tanaman takungan bersumbu yang benar-benar diminta oleh SP 7.1.6, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah."
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk sistem tanaman takungan bersumbu. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 7.1.6)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 7.1.6 dan merekod pemerhatian. Murid menghasilkan peringkat kerja sistem tanaman takungan bersumbu yang benar-benar diminta oleh SP 7.1.6, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah. Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti."
+          "aktiviti": "Murid meneruskan bahagian kerja untuk sistem tanaman takungan bersumbu yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 7.1.6); bukan wajib menyiapkan keseluruhan projek. Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 7.1.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 7.1.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi sistem tanaman takungan."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 7.1.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 7.1.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -3155,7 +3155,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Teknologi Pertanian Bandar",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "7.1.6",
@@ -3198,22 +3198,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 7.1.6 menggunakan Contoh sistem tanaman takungan, bekas tanaman, medium sesuai, benih, pembaris, lakaran dan rekod pertumbuhan. Murid menghasilkan peringkat kerja sistem tanaman takungan bersumbu yang benar-benar diminta oleh SP 7.1.6, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah."
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk sistem tanaman takungan bersumbu. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 7.1.6)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 7.1.6 dan merekod pemerhatian. Murid menghasilkan peringkat kerja sistem tanaman takungan bersumbu yang benar-benar diminta oleh SP 7.1.6, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah. Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti."
+          "aktiviti": "Murid meneruskan bahagian kerja untuk sistem tanaman takungan bersumbu yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 7.1.6); bukan wajib menyiapkan keseluruhan projek. Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 7.1.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 7.1.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi sistem tanaman takungan."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 7.1.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 7.1.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -3256,7 +3256,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Teknologi Pertanian Bandar",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "7.1.6",
@@ -3299,22 +3299,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 7.1.6 menggunakan Contoh sistem tanaman takungan, bekas tanaman, medium sesuai, benih, pembaris, lakaran dan rekod pertumbuhan. Murid menghasilkan peringkat kerja sistem tanaman takungan bersumbu yang benar-benar diminta oleh SP 7.1.6, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah."
+          "aktiviti": "Guru menunjukkan kaedah menggunakan alat dan satu langkah kerja yang selamat untuk sistem tanaman takungan bersumbu. Murid menyediakan bahan/komponen dan melaksanakan bahagian awal berdasarkan lakaran (SP 7.1.6)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 7.1.6 dan merekod pemerhatian. Murid menghasilkan peringkat kerja sistem tanaman takungan bersumbu yang benar-benar diminta oleh SP 7.1.6, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah. Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti."
+          "aktiviti": "Murid meneruskan bahagian kerja untuk sistem tanaman takungan bersumbu yang ditetapkan pada sesi ini, menguji fungsi sekurang-kurangnya sekali, membandingkan dengan lakaran dan mencatat satu pembetulan (SP 7.1.6); bukan wajib menyiapkan keseluruhan projek. Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 7.1.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 7.1.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi sistem tanaman takungan."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 7.1.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Guru menyemak bukti hasil kerja peringkat semasa dan catatan ujian fungsi mengikut SP 7.1.6 dan menggunakan kriteria pematuhan langkah, keselamatan dan fungsi peringkat semasa. Murid merekod satu tindakan susulan yang realistik.",
       "keselamatan": "Pastikan bekas tertutup/selamat daripada pembiakan nyamuk; cuci tangan selepas aktiviti.",
       "rujukan_buku_teks": {
         "status": "BELUM_SAH_HALAMAN",
@@ -3357,7 +3357,7 @@
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "subtopik_sp": "Teknologi Pertanian Bandar",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "status_semakan_kualiti": "AKTIVITI_1_DAN_2_DIPERBEZAKAN_BERDASARKAN_SP_BELUM_KELULUSAN_MANUAL",
       "specific_sp_task_types": [
         {
           "code": "7.1.6",
