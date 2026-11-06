@@ -28,19 +28,22 @@
       "tema_rpt": "TEMA 1 KESIHATAN DAN KEBERSIHAN Unit",
       "rujukan_row_sumber": 1,
       "sp_teks_rpt": "Mendengar,mengenal pasti dan menyebut perkataan, rangkai kata, istilah dan ungkapan dalam pelbagai ujaran dengan betul dan tepat.",
-      "review_flags": [],
+      "review_flags": [
+        "CURATED_ORIGINAL_PILOT",
+        "BOOK_TEXT_PENDING"
+      ],
       "status": "DRAF_SEMAK_INDIVIDU_BUKU_TEKS",
       "tempoh_minit": 60,
-      "objektif": "Murid dapat mengenal pasti sekurang-kurangnya tiga isi atau ungkapan berkaitan tajuk dan memberikan dua respons lisan yang jelas, bertatasusila serta disokong alasan.",
-      "set_induksi": "Guru membentangkan situasi ringkas tentang isu kehidupan remaja dan komunikasi berkesan; murid menyatakan tafsiran awal terhadap tajuk “Datang Seperti Ribut, Pergi Seperti Semut” dan satu persoalan yang ingin diketahui.",
-      "aktiviti_1": "Guru memperdengarkan bacaan atau rakaman pendek berdasarkan bahan “Datang Seperti Ribut, Pergi Seperti Semut”. Murid mendengar dua pusingan: pertama untuk idea utama, kedua untuk mencatat sekurang-kurangnya tiga maklumat atau ungkapan. Guru membimbing mendengar, mengenal pasti dan menyebut perkataan, rangkai kata, istilah dan ungkapan dalam pelbagai ujaran dengan betul dan tepat menggunakan contoh dan soalan susulan.",
-      "aktiviti_2": "Murid menjalankan Think–Pair–Share secara berpasangan atau kumpulan kecil. Mereka mengaitkan maklumat yang didengar dengan situasi isu kehidupan remaja dan komunikasi berkesan, kemudian membuat hubungan antara kandungan teks dengan kehidupan seharian. Setiap murid mesti memberi dua respons lisan; rakan memberi maklum balas pada ketepatan isi, sebutan dan kesantunan.",
-      "pengukuhan_penilaian": "Guru menggunakan senarai semak bagi tiga isi yang dikenal pasti, dua respons lisan dan ketepatan penggunaan bahasa. Murid yang belum mencapai objektif diberi soalan berpandu untuk cubaan kedua.",
-      "penutup": "Dua murid merumuskan mesej utama secara lisan; guru mengukuhkan penggunaan ungkapan yang tepat dalam konteks sebenar.",
-      "pemulihan": "Berikan pilihan frasa dan kad petunjuk isi semasa mendengar.",
-      "pengayaan": "Murid menilai pandangan berbeza dan menyampaikan hujah balas secara sopan.",
-      "bahan": "Buku teks BM Tingkatan 2, m/s 2 (rujukan RPT lama; perlu semak naskhah asal); bahan olahan guru bertema isu kehidupan remaja dan komunikasi berkesan; kad kerja dan rubrik PBD.",
-      "bukti_pbd": "Nota mendengar, senarai semak interaksi lisan dan respons akhir murid.",
+      "objektif": "Pada akhir PdP, murid dapat mengenal pasti sekurang-kurangnya empat ungkapan atau istilah yang didengar dan menyebutnya semula dengan sebutan yang jelas.",
+      "set_induksi": "Guru memperdengarkan dua ayat tentang amalan kesihatan; murid menyatakan perkataan yang menarik perhatian dan membandingkan maksudnya secara lisan.",
+      "aktiviti_1": "Guru membacakan bahan berkaitan tajuk dalam buku teks dengan sebutan dan intonasi yang sesuai sebanyak dua kali. Murid mendengar tanpa menulis dahulu, kemudian merekod empat perkataan, istilah atau ungkapan penting pada bacaan kedua.",
+      "aktiviti_2": "Secara berpasangan, murid membandingkan catatan, menerangkan maksud berdasarkan konteks dan berlatih menyebut ungkapan. Guru membimbing pasangan yang tersalah dengar atau sebut.",
+      "pengukuhan_penilaian": "Empat murid dipilih secara rawak untuk menyebut satu ungkapan dan menggunakannya dalam ayat lisan. Guru merekod ketepatan mendengar dan sebutan melalui senarai semak.",
+      "penutup": "Murid menyatakan satu amalan kesihatan dan satu ungkapan baharu; guru merumuskan kepentingan mendengar dengan teliti.",
+      "pemulihan": "Sediakan kad pilihan perkataan daripada petikan untuk murid yang memerlukan sokongan.",
+      "pengayaan": "Murid menjelaskan bagaimana makna ungkapan boleh berubah mengikut konteks ujaran.",
+      "bahan": "Buku teks BM Tingkatan 2 m/s 2 (rujukan RPT), bacaan lisan guru, kad perkataan.",
+      "bukti_pbd": "Catatan empat ungkapan dan pemerhatian sebutan lisan.",
       "method": "Think–Pair–Share",
       "context_domain": "isu kehidupan remaja dan komunikasi berkesan",
       "langkah": [
@@ -49,7 +52,8 @@
         "Aktiviti 2",
         "Pengukuhan/Penilaian",
         "Penutup"
-      ]
+      ],
+      "source_note": "Original manually authored 5-PdP pilot retained; pending direct textbook verification."
     },
     {
       "pdp": 2,
@@ -67,19 +71,22 @@
       "tema_rpt": "TEMA 1 KESIHATAN DAN KEBERSIHAN Unit",
       "rujukan_row_sumber": 2,
       "sp_teks_rpt": "Membaca surat kiriman rasmi, surat kiriman tidak rasmi dan teks pengacaraan dengan sebutan dan intonasi yang betul serta mengenal pasti maksud tersurat dan tersirat",
-      "review_flags": [],
+      "review_flags": [
+        "CURATED_ORIGINAL_PILOT",
+        "BOOK_TEXT_PENDING"
+      ],
       "status": "DRAF_SEMAK_INDIVIDU_BUKU_TEKS",
       "tempoh_minit": 60,
-      "objektif": "Murid membaca bahan dengan teknik yang sesuai, mengenal pasti sekurang-kurangnya tiga maklumat penting dan menjelaskan satu tafsiran atau alasan menggunakan bukti teks.",
-      "set_induksi": "Guru memaparkan tajuk “Semakin Hari Semakin Sihat” serta dua pernyataan tentang kesihatan dan gaya hidup aktif; murid memilih pernyataan yang ingin diuji melalui pembacaan.",
-      "aktiviti_1": "Guru menunjukkan cara membaca bahan dengan sebutan, intonasi atau strategi pemahaman yang sesuai dengan SP “2.1.1”. Murid membaca petikan secara kendiri, kemudian menandakan tiga isi dan satu ayat yang menjadi bukti; guru menyoal makna istilah yang mengelirukan.",
-      "aktiviti_2": "Dengan kaedah Jigsaw berkumpulan, murid membandingkan isi tersurat dan tafsiran tersirat daripada bahan “Semakin Hari Semakin Sihat”. Mereka menimbang kesan pilihan harian terhadap kesejahteraan, menulis justifikasi ringkas pada peta bukti dan menyemak sama ada setiap pandangan benar-benar disokong teks.",
-      "pengukuhan_penilaian": "Murid menjawab tiga soalan berdasarkan bukti petikan (dua isi dan satu penaakulan). Guru menilai ketepatan pembacaan, pemilihan bukti serta kebolehan menjelaskan makna.",
-      "penutup": "Murid menyebut satu strategi membaca yang membantu mengenal pasti isi atau maksud tersirat; guru merumuskan dapatan penting.",
-      "pemulihan": "Sediakan petikan bersegmen, penanda kata kunci dan contoh jawapan berpandu.",
-      "pengayaan": "Murid menyemak kemungkinan sudut pandang lain dengan menyatakan bukti tambahan.",
-      "bahan": "Buku teks BM Tingkatan 2, m/s 3 (rujukan RPT lama; perlu semak naskhah asal); bahan olahan guru bertema kesihatan dan gaya hidup aktif; kad kerja dan rubrik PBD.",
-      "bukti_pbd": "Anotasi petikan, peta bukti dan jawapan pemahaman individu.",
+      "objektif": "Murid membaca petikan dengan sebutan serta intonasi yang sesuai dan menyatakan sekurang-kurangnya dua maklumat tersurat serta satu inferens yang munasabah.",
+      "set_induksi": "Guru mempamerkan tajuk bahan bacaan dan meminta murid meramal dua cara menjaga kesihatan sebelum melihat isi teks.",
+      "aktiviti_1": "Murid meneliti bahan pada halaman yang dirujuk, mengenal pasti jenis bahan dan membaca secara bergilir. Guru memberikan maklum balas tentang sebutan, jeda dan intonasi. Jika halaman itu bukan surat atau teks pengacaraan, guru menambah satu teks ringkas sejenis yang sesuai dengan SP.",
+      "aktiviti_2": "Dalam kumpulan kecil, murid menanda dua maklumat yang dinyatakan secara jelas dan membina satu tafsiran tersirat berserta alasan berdasarkan teks; wakil kumpulan berkongsi bukti.",
+      "pengukuhan_penilaian": "Murid membaca petikan pilihan selama 30 saat dan menjawab tiga soalan, dua tersurat serta satu tersirat. Guru menggunakan rubrik ringkas sebutan, intonasi dan kefahaman.",
+      "penutup": "Murid menyebut satu tip membaca yang membantu mereka memahami maksud tersirat; guru merumuskan isi utama.",
+      "pemulihan": "Guru membekalkan penanda jeda dan membimbing bacaan dalam kumpulan kecil.",
+      "pengayaan": "Murid membandingkan kesan laras bahasa surat dan teks pengacaraan terhadap pembaca.",
+      "bahan": "Buku teks BM Tingkatan 2 m/s 3 (rujukan RPT); teks tambahan surat/pengacaraan jika diperlukan.",
+      "bukti_pbd": "Rubrik bacaan dan jawapan soalan tersurat/tersirat.",
       "method": "Jigsaw berkumpulan",
       "context_domain": "kesihatan dan gaya hidup aktif",
       "langkah": [
@@ -88,7 +95,8 @@
         "Aktiviti 2",
         "Pengukuhan/Penilaian",
         "Penutup"
-      ]
+      ],
+      "source_note": "Original manually authored 5-PdP pilot retained; pending direct textbook verification."
     },
     {
       "pdp": 3,
@@ -106,19 +114,22 @@
       "tema_rpt": "TEMA 1 KESIHATAN DAN KEBERSIHAN Unit",
       "rujukan_row_sumber": 3,
       "sp_teks_rpt": "Menulis untuk menyatakan makna kata, rangkai kata, istilah dan ungkapan serta menggunakannya dengan betul mengikut konteks.",
-      "review_flags": [],
+      "review_flags": [
+        "CURATED_ORIGINAL_PILOT",
+        "BOOK_TEXT_PENDING"
+      ],
       "status": "DRAF_SEMAK_INDIVIDU_BUKU_TEKS",
       "tempoh_minit": 60,
-      "objektif": "Murid mengolah maklumat berkaitan tajuk kepada satu hasil tulisan berstruktur, menggunakan sekurang-kurangnya tiga fakta atau ungkapan tepat dan membaiki dua aspek bahasa melalui semakan.",
-      "set_induksi": "Guru membandingkan dua contoh ayat tentang isu kehidupan remaja dan komunikasi berkesan dan meminta murid memilih ayat yang paling jelas untuk pembaca serta menjelaskan sebab.",
-      "aktiviti_1": "Guru menganalisis contoh bahan “Sejahterakan Hidup Diri” dan menerangkan kehendak SP “3.1.1”: Menulis untuk menyatakan makna kata, rangkai kata, istilah dan ungkapan serta menggunakannya dengan betul mengikut konteks. Murid mengumpulkan tiga isi daripada bacaan atau perbincangan, menyusunnya dalam rangka dan mengenal pasti kosa kata sesuai sebelum menulis.",
-      "aktiviti_2": "Murid menghasilkan perenggan, respons bertulis atau bahan berbentuk teks yang dituntut oleh SP dengan menggunakan kaedah Galeri hasil murid. Rakan menyemak ketepatan isi, susunan idea serta tatabahasa. Murid membetulkan sekurang-kurangnya dua kelemahan dan memperjelas kaitan dengan isu kehidupan remaja dan komunikasi berkesan.",
-      "pengukuhan_penilaian": "Guru menyemak hasil akhir berdasarkan ketepatan memenuhi tugasan SP, tiga isi relevan, organisasi, dan pembetulan bahasa. Murid melampirkan draf sebelum dan selepas semakan.",
-      "penutup": "Murid berkongsi satu penambahbaikan pada tulisan mereka; guru merumuskan proses merancang, menulis dan menyunting.",
-      "pemulihan": "Sediakan jadual isi, kata hubung dan rangka ayat untuk menulis secara berperingkat.",
-      "pengayaan": "Murid menambah penjelasan atau contoh bagi menguatkan hujah dan mengolah laras bahasa.",
-      "bahan": "Buku teks BM Tingkatan 2, m/s 4 (rujukan RPT lama; perlu semak naskhah asal); bahan olahan guru bertema isu kehidupan remaja dan komunikasi berkesan; kad kerja dan rubrik PBD.",
-      "bukti_pbd": "Rangka isi, draf bertanda dan tulisan akhir murid.",
+      "objektif": "Murid menerangkan makna sekurang-kurangnya empat kata atau rangkai kata dan membina tiga ayat baharu yang menepati konteks.",
+      "set_induksi": "Guru menulis dua ungkapan berkaitan kesejahteraan diri dan meminta murid menjelaskan perbezaan maksud berdasarkan ayat contoh.",
+      "aktiviti_1": "Murid membaca petikan pada halaman rujukan dan memilih empat kata, istilah atau ungkapan penting. Guru menunjukkan cara meneka makna berdasarkan ayat sebelum merujuk kamus.",
+      "aktiviti_2": "Secara berpasangan, murid menulis makna pilihan dan menghasilkan tiga ayat baharu yang berkaitan situasi kehidupan remaja. Pasangan bertukar buku, menanda kesesuaian konteks dan membetulkan ayat.",
+      "pengukuhan_penilaian": "Murid melengkapkan tiket keluar: satu makna tepat dan satu ayat menggunakan ungkapan yang dipelajari. Guru menyemak ketepatan makna dan tatabahasa.",
+      "penutup": "Dua pasangan membacakan ayat terbaik; guru membetulkan penggunaan kata yang masih mengelirukan.",
+      "pemulihan": "Berikan pilihan makna dan kerangka ayat berstruktur.",
+      "pengayaan": "Murid membina perenggan pendek yang menggunakan sekurang-kurangnya tiga istilah dengan lancar.",
+      "bahan": "Buku teks BM Tingkatan 2 m/s 4 (rujukan RPT), kamus, helaian semakan rakan.",
+      "bukti_pbd": "Empat definisi, tiga ayat konteks dan tiket keluar.",
       "method": "Galeri hasil murid",
       "context_domain": "isu kehidupan remaja dan komunikasi berkesan",
       "langkah": [
@@ -127,7 +138,8 @@
         "Aktiviti 2",
         "Pengukuhan/Penilaian",
         "Penutup"
-      ]
+      ],
+      "source_note": "Original manually authored 5-PdP pilot retained; pending direct textbook verification."
     },
     {
       "pdp": 4,
@@ -145,19 +157,22 @@
       "tema_rpt": "TEMA 1 KESIHATAN DAN KEBERSIHAN Unit",
       "rujukan_row_sumber": 4,
       "sp_teks_rpt": "Memahami dan mengapresiasi karya prosa dari aspek sinopsis, tema, persoalan, nilai dan pengajaran, watak dan perwatakan dengan memberikan respons yang betul dan rasional.",
-      "review_flags": [],
+      "review_flags": [
+        "CURATED_ORIGINAL_PILOT",
+        "BOOK_TEXT_PENDING"
+      ],
       "status": "DRAF_SEMAK_INDIVIDU_BUKU_TEKS",
       "tempoh_minit": 60,
-      "objektif": "Murid mengenal pasti tema, dua nilai atau persoalan karya serta memberikan satu respons peribadi dengan alasan bersandarkan bukti teks.",
-      "set_induksi": "Guru mengemukakan dilema ringkas berkaitan isu kehidupan remaja dan komunikasi berkesan; murid meramal tindakan watak atau pendirian pencerita dalam “Sesegar Kenangan”.",
-      "aktiviti_1": "Guru membimbing pembacaan prosa atau bahan seni bahasa yang berkaitan tajuk. Murid mengenal pasti rangka peristiwa atau struktur karya, watak, latar serta aspek yang dikehendaki SP “4.1.1”. Guru menunjukkan cara memetik bukti tanpa menyalin petikan panjang.",
-      "aktiviti_2": "Melalui Banding dan bezakan, murid membina peta tema, persoalan dan nilai atau menghasilkan persembahan kreatif yang relevan dengan tuntutan SP. Setiap kumpulan membuat hubungan antara kandungan teks dengan kehidupan seharian, kemudian memberikan maklum balas berasaskan bukti daripada karya.",
-      "pengukuhan_penilaian": "Respons individu mengandungi tema, dua unsur karya dan satu hujah yang disokong bukti. Guru menilai kefahaman, ketepatan tafsiran dan komunikasi idea.",
-      "penutup": "Murid menjelaskan satu pengajaran karya yang sesuai diamalkan di sekolah; guru merumuskan tema dan nilai.",
-      "pemulihan": "Sediakan kad peristiwa, bank nilai dan rangka peta cerita.",
-      "pengayaan": "Murid membandingkan kemungkinan keputusan watak atau menghasilkan versi alternatif yang berjustifikasi.",
-      "bahan": "Buku teks BM Tingkatan 2, m/s 5 (rujukan RPT lama; perlu semak naskhah asal); bahan olahan guru bertema isu kehidupan remaja dan komunikasi berkesan; kad kerja dan rubrik PBD.",
-      "bukti_pbd": "Peta karya, respons bertulis dan pemerhatian pembentangan.",
+      "objektif": "Murid menyatakan tema dan dua nilai atau pengajaran daripada karya prosa serta menyokong satu respons peribadi dengan bukti.",
+      "set_induksi": "Guru meminta murid berkongsi secara umum pengalaman mengingati peristiwa yang memberikan pengajaran, tanpa perlu mendedahkan pengalaman peribadi yang sensitif.",
+      "aktiviti_1": "Murid membaca karya atau petikan prosa yang dirujuk. Guru membimbing mereka mengenal pasti peristiwa utama, watak, tema dan perkara yang mendorong tindakan watak.",
+      "aktiviti_2": "Kumpulan murid membina peta ringkas: sinopsis, satu persoalan, dua nilai dan bukti daripada peristiwa. Murid memberi respons peribadi tentang keputusan watak serta sebab yang rasional.",
+      "pengukuhan_penilaian": "Setiap murid menulis dua ayat yang menghubungkan nilai dengan bukti teks. Guru menilai ketepatan pemahaman dan justifikasi, bukan pendapat semata-mata.",
+      "penutup": "Murid memilih satu pengajaran yang sesuai diamalkan di sekolah dan menerangkan sebabnya.",
+      "pemulihan": "Sediakan kad peristiwa dan pilihan nilai untuk dipadankan.",
+      "pengayaan": "Bandingkan tindakan dua watak atau dua kemungkinan keputusan dalam cerita.",
+      "bahan": "Buku teks BM Tingkatan 2 m/s 5 (rujukan RPT), peta cerita, kad nilai.",
+      "bukti_pbd": "Peta karya dan respons individu berasaskan bukti.",
       "method": "Banding dan bezakan",
       "context_domain": "isu kehidupan remaja dan komunikasi berkesan",
       "langkah": [
@@ -166,7 +181,8 @@
         "Aktiviti 2",
         "Pengukuhan/Penilaian",
         "Penutup"
-      ]
+      ],
+      "source_note": "Original manually authored 5-PdP pilot retained; pending direct textbook verification."
     },
     {
       "pdp": 5,
@@ -184,19 +200,22 @@
       "tema_rpt": "TEMA 1 KESIHATAN DAN KEBERSIHAN Unit",
       "rujukan_row_sumber": 5,
       "sp_teks_rpt": "Memahami dan menggunakan kata ganti nama dan akronim dengan tepat mengikut konteks.",
-      "review_flags": [],
+      "review_flags": [
+        "CURATED_ORIGINAL_PILOT",
+        "BOOK_TEXT_PENDING"
+      ],
       "status": "DRAF_SEMAK_INDIVIDU_BUKU_TEKS",
       "tempoh_minit": 60,
-      "objektif": "Murid mengenal pasti sekurang-kurangnya empat contoh unsur bahasa yang berkaitan SP dan menggunakan sekurang-kurangnya empat bentuk yang tepat dalam ayat mengikut konteks.",
-      "set_induksi": "Guru memaparkan dua ayat berkaitan kesihatan dan gaya hidup aktif: satu menggunakan unsur bahasa dengan tepat, satu lagi kurang sesuai. Murid membandingkan kesannya kepada makna.",
-      "aktiviti_1": "Guru membimbing murid meneliti ayat yang berkaitan tajuk “Komuniti Cergas”, menandakan empat bentuk bahasa dan mengenal pasti fungsinya. Peraturan yang diperiksa ialah fokus SP “5.1.1”: Memahami dan menggunakan kata ganti nama dan akronim dengan tepat mengikut konteks. Guru menambah contoh khusus jika teks asal tidak mengandungi bentuk yang mencukupi.",
-      "aktiviti_2": "Dalam aktiviti Pembelajaran berasaskan stesen, murid membaiki sekurang-kurangnya empat ayat bermasalah, kemudian membina dialog atau teks pendek bertema kesihatan dan gaya hidup aktif. Rakan menanda justifikasi pilihan bentuk bahasa dan membentangkan sebab pembetulan bagi setiap ayat.",
-      "pengukuhan_penilaian": "Kuiz individu empat item penggunaan dan dua item pengesanan kesalahan; guru mengumpulkan bukti ketepatan bentuk bahasa serta penjelasan murid.",
-      "penutup": "Murid menyatakan satu prinsip penggunaan bentuk bahasa serta membina satu ayat yang tepat secara spontan.",
-      "pemulihan": "Berikan bank contoh, perbandingan ayat salah-betul dan pilihan jawapan terhad.",
-      "pengayaan": "Murid menulis teks yang menggunakan unsur sama dalam dua konteks atau laras berlainan.",
-      "bahan": "Buku teks BM Tingkatan 2, m/s 6 (rujukan RPT lama; perlu semak naskhah asal); bahan olahan guru bertema kesihatan dan gaya hidup aktif; kad kerja dan rubrik PBD.",
-      "bukti_pbd": "Lembaran penyuntingan enam item, teks murid dan penjelasan pilihan bahasa.",
+      "objektif": "Murid mengenal pasti sekurang-kurangnya empat kata ganti nama atau akronim dan menghasilkan empat ayat menggunakan bentuk yang sesuai mengikut konteks.",
+      "set_induksi": "Guru memaparkan ayat pendek tentang kegiatan komuniti dengan beberapa kata ganti nama dikosongkan; murid memilih bentuk yang tepat dan menjelaskan sebab.",
+      "aktiviti_1": "Murid meneliti petikan pada halaman rujukan, menggariskan kata ganti nama dan membulatkan akronim jika terdapat dalam teks. Guru membincangkan fungsi setiap bentuk dan membekalkan contoh tambahan apabila teks asal tidak mencukupi.",
+      "aktiviti_2": "Kumpulan murid membina dialog dua watak tentang program kecergasan komuniti yang mengandungi sekurang-kurangnya tiga kata ganti nama dan satu akronim yang tepat. Kumpulan lain menyunting pilihan kata berdasarkan hubungan penutur dan konteks.",
+      "pengukuhan_penilaian": "Murid membetulkan empat ayat yang sengaja mengandungi kesilapan pemilihan kata ganti nama atau akronim. Guru menyemak jawapan individu dan memberi maklum balas serta-merta.",
+      "penutup": "Murid menyatakan satu peraturan penggunaan kata ganti nama dan satu contoh akronim yang tepat.",
+      "pemulihan": "Sediakan jadual saya/kami/kita/mereka bersama contoh situasi.",
+      "pengayaan": "Murid menghasilkan pengumuman ringkas yang menggunakan kata ganti nama formal dan akronim dengan betul.",
+      "bahan": "Buku teks BM Tingkatan 2 m/s 6 (rujukan RPT), kad ayat, contoh akronim.",
+      "bukti_pbd": "Dialog kumpulan dan empat ayat pembetulan individu.",
       "method": "Pembelajaran berasaskan stesen",
       "context_domain": "kesihatan dan gaya hidup aktif",
       "langkah": [
@@ -205,7 +224,8 @@
         "Aktiviti 2",
         "Pengukuhan/Penilaian",
         "Penutup"
-      ]
+      ],
+      "source_note": "Original manually authored 5-PdP pilot retained; pending direct textbook verification."
     },
     {
       "pdp": 6,
@@ -4696,5 +4716,6 @@
         "Penutup"
       ]
     }
-  ]
+  ],
+  "content_status": "PdP 1-5 curated original, PdP 6-120 bulk-generated structured drafts; manual review required before READY"
 }
