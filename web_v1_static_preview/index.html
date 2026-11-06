@@ -652,7 +652,11 @@ function fillSelect(el,items,label){
   if(item.value==null||!item.label)continue;
   let text=String(item.label);
   if(el===unit)text=sourceUnitLabel(text);
-  if(el===lesson)text=numberedPdpLabel(item);
+  if(el===lesson){
+   text=numberedPdpLabel(item);
+   // No invented lesson numbers and no selectable anonymous lesson rows.
+   if(!/^(?:Lesson|PdP)\s*0*[1-9][0-9]*(?:\b|\s|[•—–:-])/i.test(text))continue;
+  }
   const book=String(item.textbook_ref||item.student_book_ref||"").trim();
   if(el===lesson&&book&&!text.includes(book))text+=" • "+book;
   const opt=new Option(text,String(item.value));
