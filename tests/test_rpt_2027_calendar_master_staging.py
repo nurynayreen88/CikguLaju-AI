@@ -24,7 +24,7 @@ class CalendarWeekAuditQA(unittest.TestCase):
         self.assertEqual(audit["overall_counts"].get(
             "sejarah_week_derived_from_candidate_dates"), 105)
         self.assertEqual(audit["overall_counts"].get(
-            "sejarah_partial_group_a_week_needs_school_calendar_review"), 3)
+            "sejarah_group_a_kpm_holiday_indexed"), 3)
         self.assertEqual(audit["overall_counts"].get("no_week_with_candidate_dates", 0), 0)
         self.assertEqual(len(audit["by_pdf"]), 21)
         self.assertEqual(audit["status"], "AUDIT_ONLY_NOT_FINAL_RELEASE")
