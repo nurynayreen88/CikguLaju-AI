@@ -55,6 +55,17 @@ class SpecialRphWebTests(unittest.TestCase):
             self.assertEqual(r.status_code,200)
             self.assertEqual(len(r.get_json()["items"]),13)
 
+    def test_missing_native_config_returns_503_not_uncaught_error(self):
+        from web.native_telegram_rph_client import NativeRPHUnavailable
+        with patch("web.special_activities_web._account",
+                   return_value=(self.account,None)),\
+             patch("web.special_activities_web._backend",
+                   side_effect=NativeRPHUnavailable("No source")):
+            reply=self.client.get("/api/web/aktiviti-khas/options",
+                query_string={"kind":SELEPAS,"year":"6","subject":"Matematik"})
+            self.assertEqual(reply.status_code,503)
+            self.assertIn("belum tersedia",reply.get_json()["error"])
+
     def test_no_public_pdf_while_trial_exhausted(self):
         account={**self.account,"free_remaining":0}
         with patch("web.special_activities_web._account",return_value=(account,None)),\
