@@ -289,11 +289,16 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 .daily-rph-note{font-size:.9rem;margin:9px 0}
 .daily-rph-card.is-editing{border-color:#087568;box-shadow:0 0 0 1px #087568}
 .daily-rph-editor{margin-top:15px;padding-top:16px;border-top:1px solid #c4dcd3}
-.daily-rph-editor #view-rph{padding:0}
-.daily-rph-editor #view-rph-heading,.daily-rph-editor .rph-guide{display:none}
-.daily-rph-editor #lesson[size]{height:auto;min-height:170px;max-height:320px;overflow:auto;padding:6px}
-.daily-rph-editor #lesson option{padding:9px 7px;white-space:normal}
-.daily-rph-editor #catalog-status{margin-top:10px}
+.daily-rph-editor h3{margin:0 0 3px;color:#113e60;font-size:1.06rem}
+.daily-rph-editor > label{display:block;margin:12px 0 0;font-weight:700}
+.daily-rph-editor > select{display:block;width:100%;margin:2px 0 4px;padding:12px;border:1px solid #bed5cd;border-radius:11px;background:#fff;font:inherit}
+.daily-rph-editor #lesson{height:auto;min-height:0;max-height:none}
+.daily-rph-editor #lesson option{white-space:normal}
+.daily-rph-editor .selection-help{margin:3px 0 8px;font-size:.91rem}
+.daily-rph-editor #catalog-status{margin-top:7px}
+.daily-rph-editor #materials-panel{margin-top:12px}
+.daily-rph-editor #rph-download-actions{margin:10px 0}
+.daily-rph-editor #show-materials{margin:10px 0}
 .daily-rph-footer{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:12px}
 .daily-rph-footer .notice{margin:0;flex:1 1 220px}
 @media(max-width:560px){.daily-rph-toolbar{align-items:stretch}.daily-rph-toolbar button{width:100%}.daily-rph-card-top{align-items:flex-start}}
@@ -516,8 +521,23 @@ function canGenerateRph(){
 }
 const webViewButtons=Array.from(document.querySelectorAll("[data-web-view]"));
 const webViews=new Map([["today","view-today"],["rph","view-rph"],["rpt","view-rpt"],["account","view-account"],["payment","view-payment"],["referral","view-referral"],["guide","view-guide"]]);
-const rphView=document.getElementById("view-rph");
-const rphOriginalParent=rphView.parentNode, rphOriginalNext=rphView.nextSibling;
+/* Only the original curriculum dropdowns and material actions are moved
+ * into a timetable card. The "Sediakan RPH" page itself NEVER moves, opens
+ * or renders inside RPH Hari Ini. Event listeners and native APIs are reused.
+ */
+const inlineRphIds=[
+ "selection-help","component-label","component","theme-label","theme",
+ "unit-label","unit","topic-label","topic","lesson-label","lesson",
+ "catalog-status","lesson-source-pages","show-materials",
+ "rph-download-actions","rph-download-status","materials-panel"
+];
+const inlineRphAnchors=inlineRphIds.map(id=>{
+ const node=document.getElementById(id);
+ if(!node)throw Error("Missing native RPH dropdown: "+id);
+ const anchor=document.createComment("rph-original-"+id);
+ node.before(anchor);
+ return {node,anchor};
+});
 let activeTodayEditor=null, todaySelectionEpoch=0;
 function restoreRphEditor(){
  todaySelectionEpoch++;
@@ -526,16 +546,11 @@ function restoreRphEditor(){
   activeTodayEditor.closest(".daily-rph-card")?.classList.remove("is-editing");
   activeTodayEditor=null;
  }
- if(rphView.parentNode!==rphOriginalParent)rphOriginalParent.insertBefore(rphView,rphOriginalNext);
- const wasEmbedded=rphView.classList.contains("daily-rph-embedded");
- rphView.classList.remove("daily-rph-embedded");
+ for(const {node,anchor} of inlineRphAnchors)anchor.after(node);
  document.getElementById("lesson").size=1;
- if(wasEmbedded)setSubjectNavigationLabels();
+ setSubjectNavigationLabels();
 }
-window.closeRphFromToday=()=>{
- restoreRphEditor();
- rphView.hidden=true;
-};
+window.closeRphFromToday=restoreRphEditor;
 function showWebView(name){
  if(!webViews.has(name))return;
  if(name!=="today")restoreRphEditor();
@@ -752,10 +767,7 @@ async function loadFinalLesson(kind,extra,unchanged){
  if(!unchanged())return;
  fillSelect(lesson,items,"Pilih "+(subject.value==="ENGLISH"?"Lesson":"PdP"));
  const numberedCount=lesson.options.length-1;
- if(rphView.classList.contains("daily-rph-embedded")&&numberedCount){
-  lesson.size=Math.min(8,lesson.options.length);
-  document.getElementById("lesson-label").textContent="Senarai "+(subject.value==="ENGLISH"?"Lesson":"PdP")+" — pilih atau tukar terus";
- }else lesson.size=1;
+ lesson.size=1; // Genuine dropdown, never the old multi-row Sediakan RPH view.
  catalogStatus.textContent=numberedCount+" "+(subject.value==="ENGLISH"?"Lesson":"PdP")+" bernombor tersedia dalam katalog.";
  if(numberedCount===0)updateSelectionHelp("Tiada PdP/Lesson bernombor bagi pilihan ini; tidak akan mereka nombor.");
 }
@@ -785,9 +797,8 @@ window.prepareRphFromToday=async function(slot,dateIso,inlineHost=null){
    activeTodayEditor=inlineHost;
    inlineHost.hidden=false;
    inlineHost.closest(".daily-rph-card")?.classList.add("is-editing");
-   inlineHost.appendChild(rphView);
-   rphView.classList.add("daily-rph-embedded");
-   rphView.hidden=false;
+   // Move ONLY the select/label/action elements, never the parent page.
+   for(const {node} of inlineRphAnchors)inlineHost.appendChild(node);
   }else showWebView("rph");
   const selectionEpoch=++todaySelectionEpoch;
   year.value=String(slot.year);
@@ -819,7 +830,7 @@ window.prepareRphFromToday=async function(slot,dateIso,inlineHost=null){
   teacherDate.dispatchEvent(new Event("change"));
   showRphAction();
   updateSelectionHelp("Jadual dimasukkan: "+slot.class_name+" · "+slot.start+"–"+slot.end+
-    ". Pilih Unit/Tajuk/Topik dan pilih Lesson/PdP daripada senarai di sini. Tiada RPH dijana secara automatik.");
+    ". Pilih Unit/Tajuk/Topik, kemudian pilih Lesson/PdP dalam dropdown di bawah. Tiada RPH dijana secara automatik.");
   return true;
  }finally{todayPrepareBusy=false;}
 };
@@ -1211,7 +1222,7 @@ rphWord.addEventListener("click",()=>generateRphFile("word"));
 rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
-<script src="/assets/rph-today.js?v=timetable-inline-lessons-20261106"></script>
+<script src="/assets/rph-today.js?v=inline-dropdown-fix-20261106b"></script>
 <script src="/assets/teacher-profile.js?v=avatar-picker-20261106"></script>
 <script src="/assets/web-payment.js?v=rakan-only-percent-20261106"></script>
 <script src="/assets/web-referral.js?v=20261106"></script>

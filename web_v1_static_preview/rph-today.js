@@ -1,6 +1,6 @@
-/* CikguLaju RPH Hari Ini — authenticated, read-only schedule-first entry.
- * Each daily slot opens the *existing* verified native RPH flow. Lesson/PdP
- * must be confirmed, and generation uses the original quota/payment gates.
+/* RPH Hari Ini: show the existing curriculum dropdowns directly in the
+ * selected timetable card, without opening the Sediakan RPH page.
+ * The original verified Word/PDF endpoints and quota gate remain unchanged.
  */
 (()=>{
  "use strict";
@@ -48,10 +48,15 @@
           slot.subject)+" · Lesson/PdP belum dipilih":
      (slot.reason||"Jadual ini belum boleh dipadankan.");
    card.append(create("p","daily-rph-note",note));
-   const btn=create("button","daily-rph-prepare","Pilih Tajuk/Lesson");
+   const btn=create("button","daily-rph-prepare","Pilih Tajuk / Lesson");
    const editor=create("div","daily-rph-editor");
    editor.id="today-editor-"+i;
    editor.hidden=true;
+   editor.append(
+    create("h3","","Pilih Tajuk / Topik / Lesson"),
+    create("p","daily-rph-note",
+      "Pilih daripada dropdown mengikut sumber subjek ini. Tahun, kelas dan masa sudah diisi daripada jadual.")
+   );
    btn.type="button";
    btn.dataset.dailyIndex=String(i);
    btn.setAttribute("aria-controls",editor.id);
@@ -65,7 +70,7 @@
      if(!opened)return;
      for(const other of list.querySelectorAll(".daily-rph-prepare")){
       const chosen=other===btn;
-      other.textContent=chosen?"Tukar Tajuk/Lesson":"Pilih Tajuk/Lesson";
+      other.textContent=chosen?"Tukar Pilihan":"Pilih Tajuk / Lesson";
       other.setAttribute("aria-expanded",String(chosen));
      }
     }catch(error){
@@ -116,7 +121,7 @@
    window.closeRphFromToday?.();
    for(const btn of list.querySelectorAll(".daily-rph-prepare")){
     btn.setAttribute("aria-expanded","false");
-    btn.textContent="Pilih Tajuk/Lesson";
+    btn.textContent="Pilih Tajuk / Lesson";
    }
   }
   refreshButtons();
