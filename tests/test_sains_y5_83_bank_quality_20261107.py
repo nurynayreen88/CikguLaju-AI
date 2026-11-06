@@ -2,7 +2,7 @@
 import unittest
 from web.sains_y5_83_activity_bank_draf_20261107 import BANK
 from tools.render_sains_y5_83_rph_draf_20261107 import (
-    KPS, TEXTBOOK_STATUS, markdown, kps_for,
+    KPS, TEXTBOOK_STATUS, markdown, kps_for, get_y5_records,
 )
 
 class TestScienceYear5SourceBank(unittest.TestCase):
@@ -17,6 +17,15 @@ class TestScienceYear5SourceBank(unittest.TestCase):
         self.assertEqual(len(BANK),83)
         self.assertEqual(set(BANK),all_codes)
         self.assertEqual(len({x["hook"] for x in BANK.values()}),83)
+
+    def test_actual_staged_source_83_records_are_year5_not_year4(self):
+        items=get_y5_records()
+        self.assertEqual(len(items),83)
+        self.assertTrue(all(x["tahun"]==5 and x["year"]==5 for x in items))
+        self.assertEqual(items[0]["pdp_code"],"SCI-Y5-PDP-001")
+        self.assertEqual(items[-1]["pdp_code"],"SCI-Y5-PDP-083")
+        self.assertTrue(all(x["status"]=="DRAF_HOLD" for x in items))
+        self.assertTrue(all(x["textbook_pages"] is None for x in items))
 
     def test_teacher_and_pupil_actions_not_repeated(self):
         for sp,lesson in BANK.items():
