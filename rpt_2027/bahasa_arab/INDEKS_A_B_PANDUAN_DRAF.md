@@ -8,3 +8,8 @@ Semua entri `DRAF_TARIKH_BELUM_DISAHKAN`, `ready=FALSE`. Gunakan `python scripts
 
 ## Ujian teknikal 298 A4
 - [298 DOCX + 298 PDF satu halaman A4 lulus](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42147097355). Ujian struktur 298 lulus (42147137049). **0 FINAL READY**; penilaian pedagogi, cuti negeri, tarikh PdP dan Telegram/Web masih belum diuji/disahkan.
+
+## QA tambahan untuk calon FINAL READY (6 November 2026)
+- [Semakan struktur setiap 298 RPH dan 596 indeks A/B](https://github.com/nurynayreen88/CikguLaju-AI/pull/378): **0 ralat struktur, 0 amaran halaman sumber** (GitHub Actions PR #378); ini membuktikan keutuhan pemetaan sahaja, bukan padanan pedagogi/DSKP muktamad.
+- Mula sesi **4 Januari 2027**, tamat A **2 Disember 2027**, tamat B **3 Disember 2027** sepadan pengumuman KPM, dirujuk melalui [portal kalendar rasmi](https://www.moe.gov.my/index.php/kalendar-akademik-semasa) dan [RTM](https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/kpm-umum-sesi-persekolahan-2027-bermula-4-januari/).
+- **Masih belum final:** semua cuti umum/gantian dan cuti tambahan negeri, jumlah waktu Bahasa Arab, tarikh setiap PdP, kelulusan guru individu dan ujian runtime Telegram/Web. Tiada tarikh PdP direka, tiada rekod READY diubah.
