@@ -1,3 +1,5 @@
+**Kemas kini visual 6 November 2026:** Buku teks Tahun 4 telah dibuka pada halaman cetak 70–71 dan 82–83. Halaman 84 ialah Seni Visual Kota Ceria, bukan Muzik. Kedua-dua RPH kini merujuk skor/aktiviti pada halaman sebenar; audio kekal tidak disahkan. Rujuk `year4/SEMAKAN_VISUAL_SKOR_PDP21_24_20261106.md`.
+
 > **Kemas kini 6 Nov 2026:** Padanan kod SP semasa ialah 175/175 selepas pembetulan draf Tahun 4 PdP 21 dan 24 menggunakan kod yang dicetak oleh kedua-dua DSKP Muzik dan buku teks. Ketidakpadanan nombor SK 3.1 / SP 3.2.x pada dokumen asal, pengesahan semantik, skor, audio dan kelulusan kurikulum masih terbuka. Kod RPT lama dipelihara sebagai `sp_rpt_source`; tiada perubahan produksi.
 
 # DSKP Pendidikan Muzik Tahun 2–6 — Audit kod SP penuh (6 November 2026)
