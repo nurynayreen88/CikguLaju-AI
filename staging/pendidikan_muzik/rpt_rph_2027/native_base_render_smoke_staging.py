@@ -126,7 +126,7 @@ def _native_base():
     return namespace
 
 
-def audit_one(year, pdp, fmt, preview, parse_input, writer, word_output_dir=None, review_folder=None):
+def audit_one(year, pdp, fmt, preview, parse_input, writer, word_output_dir=None, review_folder=None, all_draft_folder=None):
     meta = {item["label"]: item["value"] for item in preview["layout"]["header"]}
     payload = {
         "subject": "MUZIK", "component": None,
@@ -175,6 +175,8 @@ def audit_one(year, pdp, fmt, preview, parse_input, writer, word_output_dir=None
                 shutil.copy2(path, word_output_dir / f"MZ-Y{year}-{pdp:02d}.docx")
             if review_folder is not None and (year, pdp) in SELECTED:
                 shutil.copy2(path, review_folder / f"DRAF_SEMAKAN_MZ-Y{year}-{pdp:02d}.docx")
+            if all_draft_folder is not None:
+                shutil.copy2(path, all_draft_folder / f"DRAF_MZ-Y{year}-{pdp:02d}.docx")
             return {"type": fmt, "bytes": path.stat().st_size, "tables": 3, "a4_section": a4,
                     "pedagogical_fields_checked": 4, "legacy_punctuation_normalized": adapted_ai_text != ai_text,
                     "page_count": None}
@@ -209,6 +211,8 @@ def audit_one(year, pdp, fmt, preview, parse_input, writer, word_output_dir=None
             raise RuntimeError("PDF size not A4")
         if review_folder is not None and (year, pdp) in SELECTED:
             shutil.copy2(path, review_folder / f"DRAF_SEMAKAN_MZ-Y{year}-{pdp:02d}.pdf")
+        if all_draft_folder is not None:
+            shutil.copy2(path, all_draft_folder / f"DRAF_MZ-Y{year}-{pdp:02d}.pdf")
         return {"type": fmt, "bytes": path.stat().st_size, "pages": pages,
                 "pedagogical_fields_checked": 4, "legacy_punctuation_normalized": adapted_ai_text != ai_text,
                 "single_page": pages == 1, "a4": True}
@@ -242,6 +246,19 @@ def main():
             "Kod SP Tahun 4 PdP21/24, audio/lesen dan kelulusan kurikulum belum final.\\n"
             "Jangan terbitkan, edar atau guna sebagai bahan FINAL READY.\\n",
             encoding="utf-8")
+    all_draft_dir_raw = os.environ.get("MUSIC_ALL_DRAFT_DIR", "").strip()
+    all_draft_folder = Path(all_draft_dir_raw).resolve() if all_draft_dir_raw else None
+    if all_draft_folder is not None:
+        if not args.all:
+            raise ValueError("All-draft artifact requires --all")
+        all_draft_folder.mkdir(parents=True, exist_ok=True)
+        (all_draft_folder / "BACA_DULU_SEMAKAN_DRAF.txt").write_text(
+            "Pendidikan Muzik CikguLaju 2027: 175 Word + 175 PDF untuk QA dalaman sahaja.\\n"
+            "DRAF STAGING, bukan pengesahan buku/skor/audio atau integrasi Telegram-Web.\\n"
+            "Kod SK/SP Tahun 4 mempunyai perbezaan sumber berasingan; takwim perlu hari sebenar.\\n"
+            "JANGAN edar sebagai FINAL READY sehingga semua gate kurikulum dan sistem lulus.\\n",
+            encoding="utf-8",
+        )
     results = []
     for year, pdp in cases:
         preview = preview_mod.build_staging_preview(SOURCE, year, pdp)
@@ -250,7 +267,7 @@ def main():
                   "warnings": preview["warnings"]}
         for fmt in ("word", "pdf"):
             try:
-                record[fmt] = audit_one(year, pdp, fmt, preview, parser, native, word_source if converter else None, review_folder)
+                record[fmt] = audit_one(year, pdp, fmt, preview, parser, native, word_source if converter else None, review_folder, all_draft_folder)
             except Exception as error:
                 record[fmt] = {"error": type(error).__name__ + ": " + str(error)}
         results.append(record)
@@ -289,6 +306,9 @@ def main():
     review_files = sorted(p.name for p in review_folder.glob("DRAF_SEMAKAN_*") if p.is_file()) if review_folder else []
     if review_folder is not None and len(review_files) != len(SELECTED) * 2:
         failed.append({"review_sample_artifact": "Expected 10 review documents, got " + str(len(review_files))})
+    all_draft_files = sorted(p.name for p in all_draft_folder.glob("DRAF_MZ-Y*") if p.is_file()) if all_draft_folder else []
+    if all_draft_folder is not None and len(all_draft_files) != 350:
+        failed.append({"all_draft_artifact": "Expected 350 files, got " + str(len(all_draft_files))})
     report = {
         "scope": "STAGING_BASE_NATIVE_RENDER_SMOKE_NOT_LIVE",
         "fully_covered": args.all,
@@ -299,6 +319,7 @@ def main():
         "punctuation_normalized_pdf": sum(r["pdf"].get("legacy_punctuation_normalized") is True for r in results),
         "word_page_audit": word_page_report,
         "review_sample_files": review_files,
+        "all_draft_files": len(all_draft_files),
         "missing_explicit_success_criteria": [
             r["source_id"] for r in results if "NO_EXPLICIT_SUCCESS_CRITERIA" in r["warnings"]
         ],
