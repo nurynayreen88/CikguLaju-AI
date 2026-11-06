@@ -15,7 +15,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan foto tinggalan arkeologi dan peta tapak yang mempunyai keterangan sumber. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 6: Zaman Prasejarah.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 74–84: Kajian kes cadangan guru daripada lokasi dan artifak prasejarah. Murid menggubal persoalan kajian tentang bagaimana artifak menunjukkan kehidupan prasejarah. Guru menyemak jawapan awal berpandukan 3.1.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 74–84: Kajian kes cadangan guru daripada lokasi dan artifak prasejarah serta soalan pemeliharaan warisan. Murid menggubal persoalan kajian tentang bagaimana artifak menunjukkan kehidupan prasejarah. Guru menyemak jawapan awal berpandukan 3.1.1.
 
 **Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 74–84 bagi menyokong perbandingan. Murid menilai dua jenis bukti, membezakan fakta dengan inferens dan membentang rumusan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan memulihara artifak Zaman Prasejarah.
 

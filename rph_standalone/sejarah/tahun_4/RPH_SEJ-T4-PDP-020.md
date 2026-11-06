@@ -14,7 +14,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan kad peralatan batu dan hasil ciptaan teknologi masa kini. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 6: Zaman Prasejarah.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 80–82: Teknologi prasejarah ke kini: pertanian, komunikasi. Murid memadankan alat prasejarah dengan fungsi dan keperluan manusia ketika itu. Guru menyemak jawapan awal berpandukan 3.1.4.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 80–82: Teknologi prasejarah ke kini: pertanian, komunikasi, pengangkutan dan aktiviti berpasangan. Murid memadankan alat prasejarah dengan fungsi dan keperluan manusia ketika itu. Guru menyemak jawapan awal berpandukan 3.1.4.
 
 **Aktiviti 2 (20 min):** Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 80–82. Murid membina carta dahulu–kini yang menjelaskan kesinambungan inovasi serta kesesuaian bukti. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan sumbangan Zaman Prasejarah terhadap peradaban negara.
 

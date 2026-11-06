@@ -14,7 +14,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan peta Pentas Sunda dan Asia Tenggara ketika paras laut berbeza. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 5: Zaman Air Batu.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 66–67: Kesan paras laut terhadap Pentas Sunda, perpindahan. Murid melabel kawasan daratan bersambung dalam peta Pentas Sunda. Guru menyemak jawapan awal berpandukan 2.1.4.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 66–67: Kesan paras laut terhadap Pentas Sunda, perpindahan manusia/haiwan dan petempatan. Murid melabel kawasan daratan bersambung dalam peta Pentas Sunda. Guru menyemak jawapan awal berpandukan 2.1.4.
 
 **Aktiviti 2 (20 min):** Guru menyoal bukti konkrit hlm. 66–67 untuk menguji dapatan murid. Murid menerangkan hubungan kenaikan paras laut, pulau, sungai dan pergerakan manusia/haiwan. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan usaha mengekalkan kelestarian alam sekitar.
 

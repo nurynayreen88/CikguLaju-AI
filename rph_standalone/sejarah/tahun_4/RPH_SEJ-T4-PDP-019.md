@@ -14,7 +14,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan gambar peralatan batu, tempat perlindungan dan kegiatan sara hidup. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 6: Zaman Prasejarah.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 78–79: Perbandingan sosial/ekonomi zaman Paleolitik, Mesolitik. Murid mengelaskan aktiviti sosial serta ekonomi bagi beberapa tahap zaman prasejarah. Guru menyemak jawapan awal berpandukan 3.1.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 78–79: Perbandingan sosial/ekonomi zaman Paleolitik, Mesolitik, Neolitik dan Logam. Murid mengelaskan aktiviti sosial serta ekonomi bagi beberapa tahap zaman prasejarah. Guru menyemak jawapan awal berpandukan 3.1.3.
 
 **Aktiviti 2 (20 min):** Guru menyoal bukti konkrit hlm. 78–79 untuk menguji dapatan murid. Murid membanding perubahan cara hidup memburu, mengumpul hasil, bercucuk tanam dan menetap. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan sikap bersedia untuk menghadapi perubahan persekitaran.
 
