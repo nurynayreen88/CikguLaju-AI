@@ -319,6 +319,26 @@ def historical_v25_68_comparison(tmp: Path) -> dict:
                         and not str(r.get("textbook_ref") or "").strip() for r in rows),
                 } for y in WORKING_TARGETS
             }
+            y3 = sorted((r for r in rows if str(r.get("year_label") or "").strip() == "Tahun 3"),
+                        key=lambda r: (int(r.get("source_sequence_no") or 0), int(r.get("id") or 0)))
+            official_focus_sp = {
+                "3.1": {f"3.1.{n}" for n in range(1, 6)},
+                "3.2": {f"3.2.{n}" for n in range(1, 6)},
+                "8.1": {f"8.1.{n}" for n in range(1, 5)},
+                "9.1": {f"9.1.{n}" for n in range(1, 6)},
+                "10.1": {f"10.1.{n}" for n in range(1, 6)},
+            }
+            observed = {str(r.get("sp_code") or "").strip() for r in y3}
+            result["y3_focus_sp_coverage_not_full_dskp"] = {
+                k: {"present": sorted(v & observed), "missing": sorted(v - observed)}
+                for k, v in official_focus_sp.items()
+            }
+            result["y3_full_sequence_45_metadata"] = [
+                {k: r.get(k) for k in ("id", "pdp_sequence_code",
+                 "source_sequence_no", "unit_title", "pdp_title",
+                 "sk_code", "sp_code", "verification_status")}
+                for r in y3
+            ]
             result["year_rows"] = dict(Counter(
                 str(r.get("year_label") or "") for r in rows))
             if "pdp_sequence_code" in cols:
