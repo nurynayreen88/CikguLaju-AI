@@ -273,6 +273,24 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 #sidebar-avatar{font-size:1.7rem;line-height:1}
 #sidebar-avatar.avatar-initials{font-size:.95rem}
 </style>
+<style>
+/* RPH Hari Ini: grouped by saved, non-overlapping timetable periods. */
+.daily-rph-toolbar{display:flex;gap:12px;align-items:flex-end;flex-wrap:wrap;margin:15px 0}
+.daily-rph-toolbar input{border:1px solid #c2d9d0;padding:11px 12px;border-radius:10px;font:inherit}
+.daily-rph-toolbar label{margin:0 0 5px}
+.daily-rph-toolbar button,.daily-rph-prepare,#today-manual{background:#087568;border:0;color:white;border-radius:10px;padding:11px 15px;font:inherit;font-weight:700;cursor:pointer}
+.daily-rph-prepare:disabled{background:#d8e4df;color:#587168;cursor:not-allowed}
+.daily-rph-confirm{display:flex;gap:10px;align-items:flex-start;padding:11px 14px;background:#fff9e8;border:1px solid #ebdbab;border-radius:12px;font-size:.93rem}
+.daily-rph-confirm input{width:18px;height:18px;flex:none;accent-color:#087568}
+.daily-rph-list{display:grid;gap:12px;margin:15px 0}
+.daily-rph-card{border:1px solid #d6e7e0;background:#fcfefd;border-radius:13px;padding:15px}
+.daily-rph-card-top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.daily-rph-time{font-variant-numeric:tabular-nums;color:#426b62;font-size:.89rem;font-weight:700}
+.daily-rph-note{font-size:.9rem;margin:9px 0}
+.daily-rph-footer{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:12px}
+.daily-rph-footer .notice{margin:0;flex:1 1 220px}
+@media(max-width:560px){.daily-rph-toolbar{align-items:stretch}.daily-rph-toolbar button{width:100%}.daily-rph-card-top{align-items:flex-start}}
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -290,7 +308,8 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <aside class="app-sidebar" aria-label="Navigasi CikguLaju Web">
   <div class="sidebar-brand"><div id="sidebar-avatar" class="sidebar-avatar" aria-hidden="true">CG</div><div class="sidebar-teacher"><strong id="sidebar-teacher-name">Cikgu</strong><span id="sidebar-school-name">Ruang Guru</span></div></div>
   <nav class="sidebar-menu" aria-label="Menu utama">
-    <button type="button" class="sidebar-tab is-active" data-web-view="rph" aria-controls="view-rph" aria-current="page"><span aria-hidden="true">📘</span> Sediakan RPH</button>
+    <button type="button" class="sidebar-tab is-active" data-web-view="today" aria-controls="view-today" aria-current="page"><span aria-hidden="true">📆</span> RPH Hari Ini</button>
+    <button type="button" class="sidebar-tab" data-web-view="rph" aria-controls="view-rph"><span aria-hidden="true">📘</span> Sediakan RPH</button>
     <button type="button" class="sidebar-tab" data-web-view="rpt" aria-controls="view-rpt"><span aria-hidden="true">📅</span> RPT 2027</button>
     <button type="button" class="sidebar-tab" data-web-view="account" aria-controls="view-account"><span aria-hidden="true">👤</span> Profil &amp; Akses</button>
     <button type="button" class="sidebar-tab" data-web-view="payment" aria-controls="view-payment"><span aria-hidden="true">🏆</span> Rakan Pembangun</button>
@@ -301,6 +320,24 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </aside>
 <div class="app-main">
 <div class="workspace-intro"><div><span class="workspace-eyebrow">RUANG GURU</span><p>Selamat datang, <strong id="workspace-teacher-name">Cikgu</strong></p></div><span class="workspace-ready"><span aria-hidden="true">●</span> Portal Pembelajaran</span></div>
+<section id="view-today" class="app-view" aria-labelledby="view-today-heading" hidden>
+  <h2 id="view-today-heading">RPH Hari Ini</h2>
+  <p>Jadual waktu yang telah disimpan di Profil Guru digunakan terus untuk menyediakan RPH mengikut kelas, masa dan subjek. Guru sahkan tarikh dan pilih Lesson/PdP sebelum menjana fail.</p>
+  <div class="daily-rph-toolbar">
+    <div><label for="today-date">Tarikh PdP</label><input id="today-date" type="date" aria-label="Tarikh RPH Hari Ini"></div>
+    <button type="button" id="today-refresh">Muat Semula Jadual</button>
+  </div>
+  <p id="today-status" class="notice" role="status" aria-live="polite">Menyemak jadual waktu…</p>
+  <label id="today-confirm-wrap" class="daily-rph-confirm" hidden>
+    <input type="checkbox" id="today-confirm-school-day">
+    Saya sahkan tarikh ini hari PdP sebenar (bukan cuti sekolah atau cuti umum).
+  </label>
+  <div id="today-list" class="daily-rph-list" aria-label="Senarai waktu mengajar hari ini"></div>
+  <div class="daily-rph-footer">
+    <button type="button" id="today-manual">Sediakan RPH Secara Manual</button>
+    <span class="notice">Lesson/PdP dipilih berdasarkan sumber Telegram. Tidak dijana atau ditolak kuota secara automatik.</span>
+  </div>
+</section>
 <section id="view-rph" class="app-view" aria-labelledby="view-rph-heading">
 <h2 id="view-rph-heading">Sediakan RPH</h2><p id="account-access" class="notice" role="status"></p><section class="rph-guide" aria-label="Cara menyediakan RPH"><h3>Cara menyediakan RPH</h3><p><strong>1.</strong> Pilih Tahun → Subjek → Unit/Tajuk → Lesson/PdP.</p><p><strong>2.</strong> Pilih kelas, tarikh, waktu mula/tamat dan bilangan murid jika perlu.</p><p><strong>3.</strong> Tekan <strong>Jana Bahan</strong> untuk melihat RPH PDF, RPH Word, Buku Teks, Audio dan Buku Aktiviti yang tersedia bagi Lesson/PdP ini, kemudian muat turun bahan pilihan.</p><p class="notice">Hanya RPH yang mempunyai sumber lengkap tersedia. 10 janaan RPH percuma dikongsi antara Web dan Telegram. Rakan Pembangun yang aktif mendapat akses tanpa had.</p></section><p id="selection-help" class="selection-help" role="status">Mula di bawah dengan memilih Tahun.</p><label for="year">Langkah 1 — Pilih Tahun</label><select id="year"><option value="">Pilih Tahun</option><option value="1">Tahun 1</option><option value="2">Tahun 2</option><option value="3">Tahun 3</option><option value="4">Tahun 4</option><option value="5">Tahun 5</option><option value="6">Tahun 6</option></select><label for="subject">Langkah 2 — Pilih Subjek</label><select id="subject" disabled><option value="">Pilih Tahun dahulu</option></select><label for="component" id="component-label" hidden>Pilih komponen PJPK (PJ atau PK)</label><select id="component" hidden disabled><option value="">Pilih PJ atau PK</option></select><label for="theme" id="theme-label" hidden>Langkah 3 — Pilih Tema</label><select id="theme" hidden disabled><option value="">Pilih Tema</option></select><label for="unit" id="unit-label" hidden>Langkah 3 — Pilih Unit/Tajuk</label><select id="unit" hidden disabled><option value="">Pilih Subjek dahulu</option></select><label for="topic" id="topic-label" hidden>Langkah 5 — Pilih Tajuk</label><select id="topic" hidden disabled><option value="">Pilih Tajuk</option></select><label for="lesson" id="lesson-label" hidden>Langkah 4 — Pilih Lesson/PdP</label><select id="lesson" hidden disabled><option value="">Pilih Subjek dahulu</option></select><p id="catalog-status" class="notice" role="status"></p><p id="lesson-source-pages" class="notice" role="status" hidden></p><button id="show-materials" type="button" hidden disabled>Jana Bahan</button><section id="teacher-info" hidden aria-label="Maklumat kelas, masa dan murid"><h3>Langkah 5 — Maklumat RPH</h3><p>Isi maklumat PdP jika ada. Maklumat yang diisi akan dicetak dalam RPH Word atau PDF.</p><label for="teacher-class">Pilih Kelas</label><select id="teacher-class"><option value="">Pilih kelas (pilihan)</option><option value="__other__">+ Isi nama kelas lain</option></select><div id="teacher-class-other-wrap" hidden><label for="teacher-class-other">Nama Kelas Lain</label><input id="teacher-class-other" type="text" maxlength="40" autocomplete="off" placeholder="Contoh: 4 Bestari"></div><p class="notice" id="teacher-class-hint">Kelas yang disimpan dalam Profil Guru akan disenaraikan secara automatik.</p><label for="teacher-date">Tarikh PdP</label><input id="teacher-date" type="date"><div class="rph-time-fields"><div><label for="teacher-time-start">Waktu Mula</label><input id="teacher-time-start" type="time" step="60"></div><div><label for="teacher-time-end">Waktu Tamat</label><input id="teacher-time-end" type="time" step="60"></div></div><p class="notice">Jika isi masa, lengkapkan kedua-dua waktu mula dan tamat. Waktu tamat mestilah selepas waktu mula.</p><label for="teacher-students">Bilangan Murid</label><input id="teacher-students" type="number" min="1" max="200" step="1" inputmode="numeric" placeholder="Contoh: 32"><p class="notice">Bilangan murid adalah pilihan; masukkan jumlah sebenar kelas (1–200).</p></section><div id="rph-download-actions" hidden><button id="rph-word" type="button" disabled>Jana RPH Word</button> <button id="rph-pdf" type="button" disabled>Jana RPH PDF</button></div><p id="rph-download-status" class="notice" role="status" aria-live="polite"></p><section id="materials-panel" hidden aria-live="polite"><h3>Bahan untuk Lesson/PdP dipilih</h3><p id="materials-status" class="notice" role="status"></p><ul id="materials-list"></ul><button id="download-all" type="button" hidden disabled>Muat Turun Semua</button></section></section>
 <section id="view-rpt" class="app-view" aria-labelledby="rpt2027-heading" hidden>
@@ -471,7 +508,7 @@ function canGenerateRph(){
   (rphAccessMode==="trial"&&rphTrialRemaining!==null&&rphTrialRemaining>0);
 }
 const webViewButtons=Array.from(document.querySelectorAll("[data-web-view]"));
-const webViews=new Map([["rph","view-rph"],["rpt","view-rpt"],["account","view-account"],["payment","view-payment"],["referral","view-referral"],["guide","view-guide"]]);
+const webViews=new Map([["today","view-today"],["rph","view-rph"],["rpt","view-rpt"],["account","view-account"],["payment","view-payment"],["referral","view-referral"],["guide","view-guide"]]);
 function showWebView(name){
  if(!webViews.has(name))return;
  for(const [key,id] of webViews){
@@ -487,14 +524,15 @@ function showWebView(name){
 webViewButtons.forEach(button=>button.addEventListener("click",()=>{
  showWebView(button.dataset.webView);
  if(button.dataset.webView==="rph")void loadTeacherClasses();
+ if(button.dataset.webView==="today")window.rphTodayLoad?.();
 }));
-showWebView("rph");
+showWebView("today");
 
 (async()=>{
  const status=document.getElementById("login-status");
  try{
   const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),8000);let session;try{session=await fetch("/api/auth/telegram/session",{credentials:"same-origin",cache:"no-store",signal:controller.signal});}finally{clearTimeout(timeout);}
-  if(session.ok){const account=await session.json();document.querySelector("main.panel").hidden=true;document.getElementById("workspace").hidden=false;applyRphAccount(account);loadTeacherProfile();loadRptCatalog();loadTeacherClasses();return;}
+  if(session.ok){const account=await session.json();document.querySelector("main.panel").hidden=true;document.getElementById("workspace").hidden=false;applyRphAccount(account);loadTeacherProfile();loadRptCatalog();loadTeacherClasses();showWebView("today");window.rphTodayLoad?.();return;}
   const response=await fetch("/api/auth/capabilities",{cache:"no-store"});
   if(session.status===503){status.textContent="Semakan akaun belum tersedia pada pelayan. Cuba log masuk semula selepas konfigurasi disemak.";}
 
@@ -689,6 +727,54 @@ async function loadFinalLesson(kind,extra,unchanged){
  catalogStatus.textContent=numberedCount+" "+(subject.value==="ENGLISH"?"Lesson":"PdP")+" bernombor tersedia dalam katalog.";
  if(numberedCount===0)updateSelectionHelp("Tiada PdP/Lesson bernombor bagi pilihan ini; tidak akan mereka nombor.");
 }
+/* A daily timetable slot preselects only trustworthy year/subject and
+ * the saved teacher metadata. The teacher still picks actual Lesson/PdP.
+ * We deliberately never guess a RPT week, sequence cursor or source token.
+ */
+let todayPrepareBusy=false;
+window.prepareRphFromToday=async function(slot,dateIso){
+ if(todayPrepareBusy)return;
+ if(!slot||slot.can_prepare!==true||
+    !Number.isInteger(slot.year)||slot.year<1||slot.year>6||
+    typeof slot.subject_code!=="string"||
+    typeof slot.class_name!=="string"||
+    !/^20\\d{2}-\\d{2}-\\d{2}$/.test(dateIso)||
+    !/^\\d{2}:\\d{2}$/.test(slot.start)||
+    !/^\\d{2}:\\d{2}$/.test(slot.end))throw Error("Jadual yang dipilih tidak sah.");
+ todayPrepareBusy=true;
+ try{
+  showWebView("rph");
+  year.value=String(slot.year);
+  resetSelect(subject,"Pilih Subjek");
+  resetCurriculumChoices();
+  const expectedYear=year.value;
+  const subjects=await loadOptions("subjects");
+  if(year.value!==expectedYear)throw Error("Tahun ditukar semasa bacaan jadual.");
+  fillSelect(subject,subjects,"Pilih Subjek");
+  if(![...subject.options].some(o=>o.value===slot.subject_code)){
+   catalogStatus.textContent="Subjek dalam jadual belum tersedia untuk Tahun "+expectedYear+" dalam sumber Telegram.";
+   updateSelectionHelp("Pilih subjek yang tersedia atau semak ejaan subjek dalam Jadual Waktu.");
+   return;
+  }
+  subject.value=slot.subject_code;
+  subject.dispatchEvent(new Event("change"));
+  // The real saved class is resolved through the existing shared profile.
+  await loadTeacherClasses();
+  const exists=[...teacherClass.options].some(o=>o.value===slot.class_name);
+  if(exists){teacherClass.value=slot.class_name;teacherClassOther.value="";}
+  else{teacherClass.value="__other__";teacherClassOther.value=slot.class_name;}
+  toggleTeacherClassOther();
+  teacherDate.value=dateIso;
+  teacherTimeStart.value=slot.start;
+  teacherTimeEnd.value=slot.end;
+  teacherClass.dispatchEvent(new Event("change"));
+  teacherDate.dispatchEvent(new Event("change"));
+  showRphAction();
+  updateSelectionHelp("Jadual dimasukkan: "+slot.class_name+" · "+slot.start+"–"+slot.end+
+    ". Sekarang pilih Unit/Tajuk dan Lesson/PdP sebenar. Tiada RPH dijana secara automatik.");
+ }finally{todayPrepareBusy=false;}
+};
+
 year.addEventListener("change",async()=>{
  const targetYear=year.value;
  resetSelect(subject,"Pilih Subjek");resetCurriculumChoices();
@@ -1076,6 +1162,7 @@ rphWord.addEventListener("click",()=>generateRphFile("word"));
 rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
+<script src="/assets/rph-today.js?v=timetable-source-20261106"></script>
 <script src="/assets/teacher-profile.js?v=avatar-picker-20261106"></script>
 <script src="/assets/web-payment.js?v=rakan-only-percent-20261106"></script>
 <script src="/assets/web-referral.js?v=20261106"></script>
