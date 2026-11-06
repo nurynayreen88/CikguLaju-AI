@@ -15,7 +15,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan ilustrasi perubahan iklim Kala Kuaterner dan rajah epok Pleistosen/Holosen. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 5: Zaman Air Batu.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 60–63: Epok Pleistosen/Holosen, pengertian dan garis masa Zaman Air. Murid membezakan maksud Zaman Air Batu dengan dua ciri keadaan bumi. Guru menyemak jawapan awal berpandukan 2.1.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 60–63: Epok Pleistosen/Holosen, pengertian dan garis masa Zaman Air Batu. Murid membezakan maksud Zaman Air Batu dengan dua ciri keadaan bumi. Guru menyemak jawapan awal berpandukan 2.1.1.
 
 **Aktiviti 2 (20 min):** Guru meminta murid memeriksa urutan dan fakta pada hlm. 60–63. Murid menyusun garis masa perubahan suhu, pencairan ais dan kenaikan paras laut secara berperingkat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan mengambil iktibar perubahan zaman dalam kehidupan manusia.
 
