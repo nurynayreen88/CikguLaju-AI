@@ -469,6 +469,30 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
         with self.assertRaises(TypeError):
             adapter.normalize_for_legacy_doc(None)
 
+    def test_year4_sk_sp_labels_match_standalone_music_dskp(self):
+        """Prevent SK 3.2 or 4.2 from appearing in generated Y4 native RPH."""
+        for pdp in range(1, 36):
+            preview = module.build_staging_preview(SOURCE, 4, pdp)
+            headers = {entry["label"]: entry["value"] for entry in preview["layout"]["header"]}
+            sp = [c.strip() for c in headers["Standard Pembelajaran"].split(";")]
+            sk = [c.strip() for c in headers["Standard Kandungan"].split(";")]
+            if any(code.startswith("3.2.") for code in sp):
+                self.assertIn("3.1", sk, f"Y4 PdP{pdp} SK creative source discrepancy")
+                self.assertNotIn("3.2", sk)
+            if "4.2.1" in sp:
+                self.assertIn("4.1", sk, f"Y4 PdP{pdp} appreciation SK")
+                self.assertNotIn("4.2", sk)
+        for pdp, expected_sp in (
+            (21, ["3.2.2", "3.2.3"]),
+            (24, ["3.2.1", "3.2.2", "3.2.3"]),
+            (34, ["4.2.1", "2.3.1"]),
+        ):
+            preview = module.build_staging_preview(SOURCE, 4, pdp)
+            headers = {entry["label"]: entry["value"] for entry in preview["layout"]["header"]}
+            self.assertEqual(headers["Standard Pembelajaran"].split("; "), expected_sp)
+            self.assertIn("3.1" if pdp in (21, 24) else "4.1",
+                          headers["Standard Kandungan"].split("; "))
+
     def test_music_preview_flags_curriculum_and_calendar_blockers_fail_closed(self):
         """No publication from native staging preview for two invalid SP rows and ten zero-day slots."""
         curriculum, numbering, calendar = [], [], []
