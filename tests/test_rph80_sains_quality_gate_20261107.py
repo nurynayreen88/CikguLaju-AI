@@ -73,7 +73,12 @@ class TestSains80Queue(unittest.TestCase):
                   "review_is_for_exact_source_sha": True}
         self.assertIsNone(grade_from_evidence({**WEIGHTS, "word_pdf": 16}, signed))
         self.assertEqual(grade_from_evidence(WEIGHTS, signed), 100)
-        self.assertEqual(grade_from_evidence({**WEIGHTS, "sk_sp": 5}, signed), 80)
+        self.assertIsNone(grade_from_evidence({**WEIGHTS, "sk_sp": 5}, signed))
+        self.assertIsNone(grade_from_evidence({**WEIGHTS, "buku_teks_rpt": 5}, signed))
+        self.assertIsNone(grade_from_evidence({**WEIGHTS, "aktiviti_pbd": 5}, signed))
+        self.assertEqual(grade_from_evidence(
+            {"sk_sp":20,"buku_teks_rpt":20,"aktiviti_pbd":22,
+             "word_pdf":10,"telegram_web":8}, signed), 80)
 
 
 class TestSainsY3Pedagogy(unittest.TestCase):
