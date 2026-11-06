@@ -25,6 +25,12 @@ class RPT2026LayoutQA(unittest.TestCase):
                 self.assertTrue(all(r["sk"] and r["sp"] for r in rows))
                 self.assertEqual([r["id"] for r in rows],
                                  [f"{i:03d}" for i in range(1,len(rows)+1)])
+        for year in range(2, 7):
+            rows = moral_records(year)
+            self.assertEqual(len(rows), 96)
+            self.assertTrue(all(r["sk_display"].startswith(r["sk"] + " — ") for r in rows))
+            self.assertTrue(all(" — " in r["sp_display"] for r in rows))
+            self.assertTrue(all(len(r["sp_display"]) > len(r["sp"]) + 5 for r in rows))
         self.assertTrue(all(not r["a_start"] and not r["b_start"] and not r["week"]
                             for r in rbt_records(4)))
 
