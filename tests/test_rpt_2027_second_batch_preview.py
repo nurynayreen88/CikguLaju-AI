@@ -124,7 +124,13 @@ class RPT2027SecondBatchQA(unittest.TestCase):
                             self.assertEqual(ids, [
                                 f"{n:03d}" for n in range(1, SUBJECT_ROW_COUNTS[sub][year]+1)
                             ])
-                    self.assertIn("DRAF", reader.pages[0].extract_text())
+                    cover = reader.pages[0].extract_text()
+                    for required in ("LOGO SEKOLAH", "NAMA SEKOLAH", "NAMA GURU",
+                                     "RANCANGAN PENGAJARAN TAHUNAN 2027"):
+                        self.assertIn(required, cover)
+                    for forbidden in ("ALAMAT SEKOLAH", "KELAS", "NEGERI / KUMPULAN",
+                                      "KUMPULAN A", "KUMPULAN B", "DRAF", "Halaman 1"):
+                        self.assertNotIn(forbidden, cover)
 
 
 if __name__ == "__main__":
