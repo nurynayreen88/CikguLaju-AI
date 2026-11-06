@@ -1,0 +1,30 @@
+name: English Workbook PDF and Music external links source QA
+on:
+  push:
+    branches: [main, feat/telegram-english-workbook-music-links-20261106]
+    paths:
+      - 'web/telegram_english_workbook_api_20261106.py'
+      - 'web/telegram_provisional_arab_music_api.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - 'tests/test_english_workbook_music_extras_20261106.py'
+      - '.github/workflows/english-music-extra-materials-qa.yml'
+  pull_request:
+    paths:
+      - 'web/telegram_english_workbook_api_20261106.py'
+      - 'web/telegram_provisional_arab_music_api.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - 'tests/test_english_workbook_music_extras_20261106.py'
+      - '.github/workflows/english-music-extra-materials-qa.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'flask==3.1.3' 'python-docx==1.2.0' 'pypdf==5.1.0'
+      - run: PYTHONPATH=tests:. python -m unittest -v tests.test_english_workbook_music_extras_20261106
