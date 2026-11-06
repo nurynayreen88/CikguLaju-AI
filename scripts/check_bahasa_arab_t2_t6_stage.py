@@ -477,7 +477,7 @@ def check() -> None:
     assert all(not x["ready"] and not x["teacher_approved"] and not x["rpt2027_verified"] for x in y3u4["items"])
     assert m["years"]["3"]["source_reviewed_drafts_total"] == 60
     assert readiness["completed"]["year3_unit4_candidate_rph"] == 16
-    assert readiness["completed"]["verified_a4_render_for_all_250"] is False
+    assert readiness["completed"]["verified_a4_render_for_all_250"] is True
     for n,r in zip(range(45,61),rows4):
         txt = (SUBJECT / "year3" / f"lesson_{n:03d}.md").read_text(encoding="utf-8")
         assert len(txt) > 1750 and all(mark in txt for mark in MARKERS)
