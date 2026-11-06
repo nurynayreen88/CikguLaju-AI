@@ -96,7 +96,7 @@ jobs:
                   assert all(t in cover for t in ('NAMA GURU','NAMA SEKOLAH','LOGO SEKOLAH'))
                   body='\\n'.join(p.get_text() for p in list(doc)[1:])
                   assert 'M03 (SIMULASI)' in body and 'M34 (SIMULASI)' in body
-                  assert 'bukan tarikh kelas sebenar' in body
+                  assert 'bukan tarikh kelas sebenar' in ' '.join(body.split())
                   assert not any('\\x00' in p.get_text() for p in doc)
                   for p in doc:
                       for b in p.get_text('blocks'):
