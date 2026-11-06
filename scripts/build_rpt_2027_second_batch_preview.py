@@ -51,7 +51,7 @@ def sejarah_records(year: int):
                      "Halaman buku teks PdP belum disahkan. ")
         result.append({
             "id": ident,
-            "week": "",  # CSV gives candidate dates, not authoritative week labels.
+            "week": "Agihan cadangan",  # Dates are candidates, not official week labels.
             "a_start": src["Kumpulan A minggu mula"],
             "a_end": src["Kumpulan A minggu akhir"],
             "b_start": src["Kumpulan B minggu mula"],
@@ -135,8 +135,10 @@ def pjpk_records(year: int):
             raise ValueError("PJPK record has unknown week or missing SK/SP/topic")
         (a_start, a_end), (b_start, b_end) = weeks[week]
         unit, topic = _pj_unit_and_title(src)
-        note = ("Sumber: " + src.get("origin", "DRAF") + ". " +
-                ("BT m/s " + str(src["bt"]) + ". " if src.get("bt") else "") +
+        book = str(src.get("bt") or "").strip()
+        book_note = ("Rujukan: " + book + ". " if book.lower().startswith("rujuk") else
+                     "Buku teks m/s " + book + ". " if book else "")
+        note = ("Sumber: " + src.get("origin", "DRAF") + ". " + book_note +
                 ("Masa: " + str(src["duration_min"]) + " minit. "
                  if src.get("duration_min") else ""))
         if src.get("activity_source"):
