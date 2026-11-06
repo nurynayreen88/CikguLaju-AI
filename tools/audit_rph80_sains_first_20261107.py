@@ -58,6 +58,12 @@ def grade_from_evidence(scores, evidence):
         score = scores[item]
         if type(score) is not int or score < 0 or score > weight:
             return None
+    # A numeric total cannot waive critical curriculum, pedagogy or source failures.
+    # Every dimension must meet its minimum before this source can be certified.
+    minima={"sk_sp":20, "buku_teks_rpt":20, "aktiviti_pbd":20,
+            "word_pdf":10, "telegram_web":8}
+    if any(scores[item] < minimum for item,minimum in minima.items()):
+        return None
     return sum(scores.values())
 
 
