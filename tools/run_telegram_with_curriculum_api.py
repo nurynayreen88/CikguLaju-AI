@@ -491,6 +491,17 @@ except Exception as exc:
           type(exc).__name__, flush=True)
 
 
+# English: authenticated workbook material from the original verified
+# Lesson -> Workbook page map. Extract only the mapped PDF page(s).
+try:
+    from web.telegram_english_workbook_api_20261106 import create_english_workbook_blueprint
+    telegram_runtime.app.register_blueprint(create_english_workbook_blueprint())
+    ENGLISH_EXTRA_WORKBOOK_SOURCE_REGISTERED = True
+except Exception as exc:
+    ENGLISH_EXTRA_WORKBOOK_SOURCE_REGISTERED = False
+    print("English extra workbook route unavailable:", type(exc).__name__, flush=True)
+
+
 # RBT: Web uses the same Telegram curriculum and native Word/PDF engine.
 # Token-authenticated, opt-in, no database, subscription or quota changes.
 try:
