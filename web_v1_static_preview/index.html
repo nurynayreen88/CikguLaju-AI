@@ -783,13 +783,13 @@ const MATERIAL_CATEGORIES = Object.freeze([
 ]);
 const materialPanel=document.getElementById("materials-panel");
 let materialsRequestKey="";
-function materialRow(title,{onDownload=null,url=null,ready=false}={}){
+function materialRow(title,{onDownload=null,url=null,ready=false,statusLabel="Belum tersedia"}={}){
  const li=document.createElement("li");
  li.className="material-download-row";
  const name=document.createElement("span");name.className="material-download-name";name.textContent=title;
  const action=document.createElement(ready&&url?"a":"button");
  action.className="material-download-action";
- action.textContent=ready?"Download":"Belum tersedia";
+ action.textContent=ready?"Download":statusLabel;
  if(action.tagName==="BUTTON"){action.type="button";action.disabled=!ready;}
  if(ready&&url){action.href=url;action.rel="noopener";action.target="_blank";}
  else if(ready&&onDownload){action.addEventListener("click",onDownload);}
@@ -805,10 +805,16 @@ async function populateMaterialList(){
  const status=document.getElementById("materials-status");
  list.replaceChildren();
  status.textContent="Menyemak bahan sebenar bagi Lesson/PdP yang dipilih…";
- const rphReady=canGenerateRph()&&!!currentRphParams()&&verifiedRphKey===key;
- list.append(materialRow("RPH PDF",{ready:rphReady,onDownload:()=>generateRphFile("pdf")}));
- list.append(materialRow("RPH Word",{ready:rphReady,onDownload:()=>generateRphFile("word")}));
- if(!rphReady&&verifiedRphKey!==key)status.textContent="Semakan RPH masih berjalan atau RPH belum tersedia.";
+ const sourceConfirmed=verifiedRphKey===key;
+ const rphReady=canGenerateRph()&&!!currentRphParams()&&sourceConfirmed;
+ const locked=sourceConfirmed&&!canGenerateRph();
+ const lockLabel=locked?"Akses diperlukan":"Belum tersedia";
+ list.append(materialRow("RPH PDF",{ready:rphReady,statusLabel:lockLabel,onDownload:()=>generateRphFile("pdf")}));
+ list.append(materialRow("RPH Word",{ready:rphReady,statusLabel:lockLabel,onDownload:()=>generateRphFile("word")}));
+ if(!rphReady&&sourceConfirmed&&locked)
+  status.textContent="RPH tersedia, tetapi akaun ini tiada akses janaan aktif.";
+ else if(!rphReady&&!sourceConfirmed)
+  status.textContent="Semakan RPH masih berjalan atau RPH belum tersedia.";
  const placeholders={textbook:"Buku Teks",audio:"Audio",workbook:"Buku Aktiviti"};
  const discovered={textbook:[],audio:[],workbook:[]};
  let sourceError="";
@@ -841,9 +847,10 @@ async function populateMaterialList(){
       url:"/api/materials/download/"+encodeURIComponent(item.id)}));
   }
  }
- status.textContent=sourceError?
-   "RPH menggunakan penjana Telegram. "+sourceError+" Bahan yang belum disahkan tidak boleh dimuat turun.":
-   "Bahan yang disahkan tersedia untuk dimuat turun secara individu.";
+ const accessNote=locked?"RPH tersedia, tetapi muat turun memerlukan janaan percuma berbaki atau langganan aktif. ":"";
+ status.textContent=accessNote+(sourceError?
+   "Bahan lain: "+sourceError+" Fail yang belum disahkan tidak boleh dimuat turun.":
+   "Bahan yang disahkan tersedia untuk dimuat turun secara individu.");
 }
 document.getElementById("show-materials").addEventListener("click",()=>{void populateMaterialList();});
 const rptSubject=document.getElementById("rpt-subject"),rptYear=document.getElementById("rpt-year"),rptDownload=document.getElementById("rpt-download"),rptMobileLink=document.getElementById("rpt-download-mobile"),rptStatus=document.getElementById("rpt-status");
@@ -959,8 +966,16 @@ async function checkRphAvailability(){
    throw Error("Sumber RPH belum tersedia.");
   verifiedRphKey=selectedKey;
   showRphAction();
-  downloadStatus.textContent="RPH disahkan tersedia melalui Telegram.";
-  updateSelectionHelp("Selepas melengkapkan maklumat RPH jika perlu, tekan Jana Bahan.");
+  if(body.download_allowed===false){
+   const note=body.access_status==="exhausted"?
+     "RPH disahkan ada dalam Telegram, tetapi baki 10 janaan percuma untuk akaun ini ialah 0. Muat turun hanya selepas akses berbayar diaktifkan.":
+     "RPH disahkan ada dalam Telegram, tetapi akses janaan akaun belum disahkan. Semak Profil Saya atau refresh status.";
+   downloadStatus.textContent=note;
+   updateSelectionHelp("Jana Bahan akan memaparkan RPH sebagai tersedia dengan status akses diperlukan, bukan hilang.");
+  }else{
+   downloadStatus.textContent="RPH disahkan tersedia melalui Telegram.";
+   updateSelectionHelp("Selepas melengkapkan maklumat RPH jika perlu, tekan Jana Bahan.");
+  }
   if(!materialPanel.hidden)void populateMaterialList();
  }catch(error){
   if(currentRphLessonKey()!==selectedKey)return;
