@@ -18,7 +18,13 @@
   "mapped_lessons": 32,
   "checked_visual_pages": [
     2,
-    86
+    4,
+    20,
+    45,
+    58,
+    71,
+    86,
+    88
   ],
   "visual_lesson_approvals": 0,
   "method": "Pada PDF 104 halaman, huruf kod SP dicari dalam halaman buku teks mengikut Unit; setiap kod dipadankan dengan halaman bercetak. Kehadiran kod tidak menyahkan perlunya menyemak aktiviti dan gambar pada setiap halaman.",
@@ -202,5 +208,53 @@
     "6.2.6": [
       97
     ]
+  },
+  "selected_visual_unit_sample_20261106": {
+    "status": "SAMPLED_PAGE_LAYOUT_ONLY_NOT_INDIVIDUAL_RPH_APPROVAL",
+    "physical_pdf_offset": "printed page N = PDF page number N+6 (1-based)",
+    "checked_units": [
+      {
+        "printed_page": 4,
+        "unit": 1,
+        "seen": "Peraturan keselamatan bengkel dan gambar amalan selamat"
+      },
+      {
+        "printed_page": 20,
+        "unit": 2,
+        "seen": "Contoh reka bentuk botol air dan apresiasi reka bentuk"
+      },
+      {
+        "printed_page": 45,
+        "unit": 3,
+        "seen": "Lakaran berlabel dan perbandingan idea kapal terbang mini"
+      },
+      {
+        "printed_page": 58,
+        "unit": 4,
+        "seen": "Fungsi pembungkusan dan lakaran bekas produk"
+      },
+      {
+        "printed_page": 71,
+        "unit": 5,
+        "seen": "Jadual semak lakaran makanan dan kos bahan"
+      },
+      {
+        "printed_page": 88,
+        "unit": 6,
+        "seen": "Contoh blok Events/gerakan dalam Scratch"
+      }
+    ],
+    "textbook_pencil_case_text_reference": {
+      "pages": [
+        44,
+        46,
+        48,
+        51,
+        52
+      ],
+      "found": "Buku Teks secara nyata menggunakan bekas pensel sebagai satu contoh produk, selain kapal terbang mini; projek RPH Unit 3 tidak perlu diganti hanya kerana contoh kapal terbang muncul pada hlm. 45.",
+      "method": "PDF digital text extraction (not image approval of those five pages)"
+    },
+    "limitations": "Setiap RPH dan aktiviti contoh belum diperiksa visual satu per satu. Tiada kelulusan individu atau release flag."
   }
 }
