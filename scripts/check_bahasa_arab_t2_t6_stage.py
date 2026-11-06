@@ -401,7 +401,7 @@ def check() -> None:
     assert all(x["printed_page"] + 12 == x["pdf_page_1_based"] for x in y2u2["items"])
     assert all(not x["ready"] and not x["manual_teacher_approval"] and not x["annual_rpt_2027_verified"] for x in y2u2["items"])
     assert all(r["ready"] == "FALSE" and r["status"] == "DRAF_SEMAK" for r in y2u2rows)
-    assert m["years"]["2"]["source_reviewed_drafts_total"] == 28
+    assert m["years"]["2"]["source_reviewed_drafts_total"] == 44
     assert m["years"]["2"]["unit2_textbook_pdf_page_offset_1based"] == 12
     assert readiness["completed"]["year2_unit2_candidate_rph"] == 16
     assert readiness["completed"]["verified_a4_render_for_all_186"] is False
