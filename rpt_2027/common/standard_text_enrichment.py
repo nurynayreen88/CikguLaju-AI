@@ -120,3 +120,25 @@ def enrich_psv(year, records):
         row["sk_display"] = "\n".join(f"{code} — {sk_map[code]}" for code in sk_codes)
         row["sp_display"] = "\n".join(f"{code} — {sp_map[code]}" for code in sp_codes)
     return records
+
+
+def enrich_rbt(year, records):
+    """RBT 4-6: original year-specific DSKP SK titles and full SP text."""
+    if year not in (4, 5, 6):
+        raise ValueError("RBT mapping absent for year")
+    source = _read_json(ROOT / "rpt_2027" / "rbt" /
+                        f"dskp_full_standard_texts_y{year}_20261107_DRAF.json")
+    if (source.get("subject") != "RBT" or source.get("year") != year or
+            source.get("status") != "DRAF_CROSSWALK_FULL_DSKP_TEXT"):
+        raise ValueError("Unexpected RBT source mapping")
+    sk_map, sp_map = source["sk"], source["sp"]
+    for row in records:
+        sk_codes = _codes(row["sk"])
+        sp_codes = _codes(row["sp"])
+        if any(code not in sk_map for code in sk_codes):
+            raise ValueError(f"RBT T{year} PdP {row['id']} SK is absent from DSKP")
+        if any(code not in sp_map for code in sp_codes):
+            raise ValueError(f"RBT T{year} PdP {row['id']} SP is absent from DSKP")
+        row["sk_display"] = "\n".join(f"{code} — {sk_map[code]}" for code in sk_codes)
+        row["sp_display"] = "\n".join(f"{code} — {sp_map[code]}" for code in sp_codes)
+    return records
