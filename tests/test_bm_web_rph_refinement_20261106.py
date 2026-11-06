@@ -162,8 +162,8 @@ class BMWebQualityTest(unittest.TestCase):
                 for marker in markers:
                     self.assertIn(marker,result["AKTIVITI UTAMA"].lower())
                 self.assertIn(topic,result["AKTIVITI UTAMA"])
-                self.assertIn("\\n2. ",result["AKTIVITI UTAMA"])
-                self.assertIn("\\n3. ",result["AKTIVITI UTAMA"])
+                self.assertIn("\n2. ",result["AKTIVITI UTAMA"])
+                self.assertIn("\n3. ",result["AKTIVITI UTAMA"])
 
     def test_idempotent_installer_preserves_original_renderer(self):
         def previous(state, *_):
