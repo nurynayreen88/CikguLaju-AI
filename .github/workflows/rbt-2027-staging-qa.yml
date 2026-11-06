@@ -8,6 +8,8 @@ on:
       - 'scripts/check_rbt_t4_t6_2027.py'
       - 'scripts/render_rbt_2027_previews.py'
       - 'scripts/build_rbt_2027_review_word.py'
+      - 'scripts/check_rbt_2027_source_adapter.py'
+      - 'web/rbt_2027_staging_source.py'
       - '.github/workflows/rbt-2027-staging-qa.yml'
   workflow_dispatch:
 
@@ -23,6 +25,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check 96 draft RPH and fail-closed gates
         run: python scripts/check_rbt_t4_t6_2027.py
+      - name: Verify read-only RBT dropdown and deny public exports
+        run: python scripts/check_rbt_2027_source_adapter.py
       - name: Build draft A4 HTML previews
         run: python scripts/render_rbt_2027_previews.py --year all --out /tmp/cikgulaju-rbt-draf
       - name: Verify all six HTML previews exist
