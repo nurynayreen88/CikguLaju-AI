@@ -250,6 +250,59 @@ def audit(conn: sqlite3.Connection) -> dict:
     }
 
 
+def historical_v25_68_comparison(tmp: Path) -> dict:
+    """Independent checkpoint comparison, NEVER a runtime fallback or migration."""
+    stem = "CikguLaju_Curriculum_Master_v25_68_SCIENCE_MATH_UPLOAD_READY.db"
+    parts = [ROOT / (stem + f".part{i:02d}") for i in range(3)]
+    if not all(p.is_file() for p in parts):
+        return {"status": "checkpoint_parts_missing"}
+    dest = tmp / "v25_68_reference_only.db"
+    h = hashlib.sha256()
+    with dest.open("wb") as out:
+        for part in parts:
+            with part.open("rb") as source:
+                for block in iter(lambda: source.read(1024 * 1024), b""):
+                    h.update(block)
+                    out.write(block)
+    result = {
+        "checkpoint": "v25.68 historical only, never use for current runtime",
+        "size_bytes": dest.stat().st_size,
+        "sha256_observed_NOT_authenticated_manifest": h.hexdigest(),
+    }
+    with sqlite3.connect(dest.resolve().as_uri() + "?mode=ro&immutable=1",
+                         uri=True) as con:
+        con.row_factory = sqlite3.Row
+        con.execute("PRAGMA query_only=ON")
+        result["quick_check"] = con.execute("PRAGMA quick_check").fetchone()[0]
+        tables = {r[0] for r in con.execute(
+            "SELECT name FROM sqlite_master WHERE type='table'")}
+        if "verified_pdp_sequence" not in tables:
+            result["sequence_table_present"] = False
+            return result
+        cols = {r[1] for r in con.execute(
+            "PRAGMA table_info(verified_pdp_sequence)")}
+        result["sequence_columns"] = sorted(cols)
+        if {"subject", "year_label"} <= cols:
+            rows = [dict(r) for r in con.execute(
+                """SELECT * FROM verified_pdp_sequence
+                   WHERE lower(trim(subject)) IN ('sains', 'science')"""
+            )]
+            result["sains_source_rows_not_pdp"] = len(rows)
+            result["year_rows"] = dict(Counter(
+                str(r.get("year_label") or "") for r in rows))
+            if "pdp_sequence_code" in cols:
+                result["unique_pdp_codes_by_year"] = {
+                    str(y): len({str(r.get("pdp_sequence_code") or "").strip()
+                                 for r in rows
+                                 if str(r.get("year_label") or "").strip() == f"Tahun {y}"
+                                 and str(r.get("pdp_sequence_code") or "").strip()})
+                    for y in WORKING_TARGETS
+                }
+        else:
+            result["source_column_mismatch"] = True
+    return result
+
+
 def main() -> None:
     with tempfile.TemporaryDirectory(prefix="cikgulaju_sains_audit_") as tmp:
         db = verify_and_rebuild(Path(tmp))
@@ -257,6 +310,7 @@ def main() -> None:
         with sqlite3.connect(db.resolve().as_uri() + "?mode=ro&immutable=1",
                              uri=True) as conn:
             result = audit(conn)
+        result["historical_v25_68_reference"] = historical_v25_68_comparison(Path(tmp))
     print(json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True))
 
 
