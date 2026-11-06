@@ -21,11 +21,11 @@ SCHOOL_RESOURCES = (
 )
 KPM_POLICY = "https://www.moe.gov.my/index.php/list-page/497"
 BOOK_MENTION_RE = re.compile(
-    r"buku\\s*(?:aktiviti|kerja)|activity\\s*book|workbook|"
-    r"بوکو\\s*اکتيۏيتي|بوكو\\s*اكتيؤيتي",
+    r"buku\s*(?:aktiviti|kerja)|activity\s*book|workbook|"
+    r"بوکو\s*اکتيۏيتي|بوكو\s*اكتيؤيتي",
     flags=re.IGNORECASE,
 )
-TASMI_RE = re.compile(r"ختم\\s*القرءان|تسميع\\s*القرءان|جزء\\s*\\d+", re.UNICODE)
+TASMI_RE = re.compile(r"ختم\s*القرءان|تسميع\s*القرءان|جزء\s*\d+", re.UNICODE)
 
 # The official school sources list BA for standard Tahun 1-3. This workflow
 # covers Year 2-6; Tahun 1 KP2027 is not silently mixed into older syllabus.
@@ -48,14 +48,14 @@ def audit_activity_books(root=ROOT):
                 continue
             assert record["withheld"] is False
             fields = record["fields"]
-            body = "\\n".join(value for value in fields.values() if isinstance(value, str))
+            body = "\n".join(value for value in fields.values() if isinstance(value, str))
             mentions = bool(BOOK_MENTION_RE.search(body))
             domain_match = re.search(
-                r"Bidang:\\s*([^\\s•]+)", " ".join(record.get("intro", []))
+                r"Bidang:\s*([^\s•]+)", " ".join(record.get("intro", []))
             )
             domain = domain_match.group(1) if domain_match else None
             sp = fields["sp"]
-            tasmi = bool(TASMI_RE.search(fields["sk"] + "\\n" + sp))
+            tasmi = bool(TASMI_RE.search(fields["sk"] + "\n" + sp))
             if year in (2, 3):
                 disposition = (
                     "MUSHAF_PRIMARY_NO_ASSUMED_BA"
@@ -125,6 +125,6 @@ if __name__ == "__main__":
     args = p.parse_args()
     r = audit_activity_books()
     Path(args.output).write_text(
-        json.dumps(r, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8"
+        json.dumps(r, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     print(json.dumps({k:v for k,v in r.items() if k!="rows"}, ensure_ascii=False, indent=2))
