@@ -6,6 +6,7 @@ on:
       - 'web/unified_rph_web.py'
       - 'tools/run_web_v1_preview.py'
       - 'tests/test_web_sejarah_2027_client.py'
+      - 'tests/test_web_unified_rph_preview.py'
       - '.github/workflows/web-sejarah-2027-shared-source-qa.yml'
   pull_request:
     paths:
@@ -13,6 +14,7 @@ on:
       - 'web/unified_rph_web.py'
       - 'tools/run_web_v1_preview.py'
       - 'tests/test_web_sejarah_2027_client.py'
+      - 'tests/test_web_unified_rph_preview.py'
       - '.github/workflows/web-sejarah-2027-shared-source-qa.yml'
 permissions:
   contents: read
