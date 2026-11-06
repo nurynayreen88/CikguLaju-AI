@@ -1,6 +1,6 @@
 {
-  "index_version": "2026-11-07",
-  "method": "First textbook page with exact official SP code in searchable PDF text, crosschecked with book page offset and section title. PDF page offsets Form 4 +22, Form 5 +26; headings taken from table of contents and spot-checks. DSKP defines official SP; manual page-based activity check still pending.",
+  "index_version": "2026-11-07-v2-corrected",
+  "method": "T5 printed-to-PDF offset verified against page image (PDF page27 = printed page 3); Form 5 offset 24, not 26. SP text codes verified per printed page in PDF. Some headings are split in PDF text, hence TOC/page facing layout used. T4 offset 22.",
   "content_distributed": false,
   "source": {
     "4": {
@@ -35,7 +35,7 @@
         ],
         "1.4.2": [
           65,
-          "Kek Aneka Rona"
+          "Menghadapi Rintangan"
         ],
         "1.5.1": [
           103,
@@ -159,7 +159,7 @@
         ],
         "4.2.1": [
           65,
-          "Kek Aneka Rona"
+          "Menghadapi Rintangan"
         ],
         "4.3.1": [
           93,
@@ -231,199 +231,199 @@
       "drive_file_id": "1vHicn5bs9xAIcETkearILtLo9-VIpZyj",
       "title": "Bahasa Melayu Tingkatan 5 KSSM.pdf",
       "source_kind": "KSSM textbook",
-      "page_offset": 26,
+      "page_offset": 24,
       "codes": {
         "1.1.1": [
-          1,
-          "Bersenam di Alam Hijau"
-        ],
-        "1.1.2": [
-          7,
-          "Seni Memberikan Erti"
-        ],
-        "1.2.1": [
-          21,
-          "Gerakkan Kakimu"
-        ],
-        "1.3.1": [
-          29,
-          "Dalam Dilema"
-        ],
-        "1.3.2": [
-          35,
-          "Berkhidmat untuk Negara"
-        ],
-        "1.4.1": [
-          41,
-          "Permainan Bahasa"
-        ],
-        "1.4.2": [
-          47,
-          "Aman Makmur Malaysia"
-        ],
-        "1.5.1": [
-          55,
-          "Seia Sekata di Pentas Antarabangsa"
-        ],
-        "1.5.2": [
-          61,
-          "Membina Sahsiah Unggul"
-        ],
-        "1.6.1": [
-          71,
-          "Pendidikan Asas Kemajuan"
-        ],
-        "1.7.1": [
-          77,
-          "Indahnya Bimasakti"
-        ],
-        "1.7.2": [
-          83,
-          "Potensi Hidrogen"
-        ],
-        "1.8.1": [
-          89,
-          "Pasaran dan Pemasaran"
-        ],
-        "1.8.2": [
-          97,
-          "Masam yang Berharga"
-        ],
-        "2.1.1": [
           3,
           "Cergaskan Dirimu"
         ],
-        "2.1.2": [
+        "1.1.2": [
           9,
           "Bersih Itu Indah"
         ],
-        "2.2.1": [
-          17,
-          "Seni Gimrama"
-        ],
-        "2.3.1": [
-          31,
-          "Suka-suka Menjadi Kerjaya"
-        ],
-        "2.3.2": [
-          111,
-          "Kewangan Berhemat, Hidup Selamat"
-        ],
-        "2.3.3": [
-          43,
-          "Bulat Air kerana Pembetung"
-        ],
-        "2.3.4": [
-          49,
-          "Uniknya Rakyat Malaysia"
-        ],
-        "2.3.5": [
-          63,
-          "Demi Masa Hadapan"
-        ],
-        "2.4.1": [
-          73,
-          "Sisa yang Bermanfaat"
-        ],
-        "3.1.1": [
-          5,
-          "Kawal Sebelum Tular"
-        ],
-        "3.2.1": [
-          19,
-          "Sama tetapi Tidak Serupa"
-        ],
-        "3.3.1": [
+        "1.2.1": [
           23,
           "Dari Petak ke Petak"
         ],
-        "3.4.1": [
-          33,
-          "Tuah di Sebalik Bungkusan"
+        "1.3.1": [
+          31,
+          "Suka-suka Menjadi Kerjaya"
         ],
-        "3.4.2": [
-          45,
-          "Wisma Putra"
+        "1.3.2": [
+          37,
+          "Ajaibnya Kuasa Tangan"
         ],
-        "3.4.3": [
-          59,
-          "Tiada Tercicir, Tiada Terpinggir"
-        ],
-        "3.5.1": [
-          75,
-          "Inovasi"
-        ],
-        "3.5.2": [
-          79,
-          "Kecil tetapi Raksasa"
-        ],
-        "3.6.1": [
-          101,
-          "Mutiara yang Bersinar"
-        ],
-        "4.1.1": [
-          9,
-          "Bersih Itu Indah"
-        ],
-        "4.1.2": [
-          35,
-          "Berkhidmat untuk Negara"
-        ],
-        "4.2.1": [
-          49,
-          "Uniknya Rakyat Malaysia"
-        ],
-        "4.3.1": [
-          79,
-          "Kecil tetapi Raksasa"
-        ],
-        "4.3.2": [
-          87,
-          "Kluq! Kluq! Kluq!"
-        ],
-        "4.4.1": [
-          103,
-          "Indahnya Negaraku"
-        ],
-        "4.4.2": [
-          115,
-          "Transaksi Tanpa Tunai"
-        ],
-        "4.4.3": [
-          143,
-          "Tanggungjawab Kami"
-        ],
-        "5.1.1": [
-          3,
-          "Cergaskan Dirimu"
-        ],
-        "5.1.2": [
-          17,
-          "Seni Gimrama"
-        ],
-        "5.1.3": [
-          33,
-          "Tuah di Sebalik Bungkusan"
-        ],
-        "5.2.1": [
+        "1.4.1": [
           43,
           "Bulat Air kerana Pembetung"
         ],
-        "5.3.1": [
+        "1.4.2": [
+          49,
+          "Uniknya Rakyat Malaysia"
+        ],
+        "1.5.1": [
           57,
           "Mendidik Insan Istimewa"
         ],
-        "5.3.2": [
+        "1.5.2": [
+          63,
+          "Demi Masa Hadapan"
+        ],
+        "1.6.1": [
           73,
           "Sisa yang Bermanfaat"
         ],
-        "5.3.3": [
+        "1.7.1": [
+          79,
+          "Kecil tetapi Raksasa"
+        ],
+        "1.7.2": [
           85,
           "Penawar dalam Sajian"
         ],
-        "5.3.4": [
+        "1.8.1": [
+          91,
+          "Rona Akuatik"
+        ],
+        "1.8.2": [
           99,
           "Lestarikan Keindahan Bumi Kita"
+        ],
+        "2.1.1": [
+          5,
+          "Kawal Sebelum Tular"
+        ],
+        "2.1.2": [
+          11,
+          "Kebersihan Jadi Amalan"
+        ],
+        "2.2.1": [
+          19,
+          "Sama tetapi Tidak Serupa"
+        ],
+        "2.3.1": [
+          33,
+          "Tuah di Sebalik Bungkusan"
+        ],
+        "2.3.2": [
+          113,
+          "Untung Besar"
+        ],
+        "2.3.3": [
+          45,
+          "Wisma Putra"
+        ],
+        "2.3.4": [
+          51,
+          "Tak Kenal maka Tak Cinta"
+        ],
+        "2.3.5": [
+          65,
+          "Pendidikan Asas Kemajuan"
+        ],
+        "2.4.1": [
+          75,
+          "Inovasi"
+        ],
+        "3.1.1": [
+          7,
+          "Seni Memberikan Erti"
+        ],
+        "3.2.1": [
+          21,
+          "Gerakkan Kakimu"
+        ],
+        "3.3.1": [
+          25,
+          "Mencandat Sotong"
+        ],
+        "3.4.1": [
+          35,
+          "Berkhidmat untuk Negara"
+        ],
+        "3.4.2": [
+          47,
+          "Aman Makmur Malaysia"
+        ],
+        "3.4.3": [
+          61,
+          "Membina Sahsiah Unggul"
+        ],
+        "3.5.1": [
+          77,
+          "Indahnya Bimasakti"
+        ],
+        "3.5.2": [
+          81,
+          "Hakikat Pokok Pisang"
+        ],
+        "3.6.1": [
+          103,
+          "Indahnya Negaraku"
+        ],
+        "4.1.1": [
+          11,
+          "Kebersihan Jadi Amalan"
+        ],
+        "4.1.2": [
+          37,
+          "Ajaibnya Kuasa Tangan"
+        ],
+        "4.2.1": [
+          51,
+          "Tak Kenal maka Tak Cinta"
+        ],
+        "4.3.1": [
+          81,
+          "Hakikat Pokok Pisang"
+        ],
+        "4.3.2": [
+          89,
+          "Pasaran dan Pemasaran"
+        ],
+        "4.4.1": [
+          105,
+          "Lenggong, Oh, Lenggong!"
+        ],
+        "4.4.2": [
+          117,
+          "Dari Kopitiam ke Kafe Hipster"
+        ],
+        "4.4.3": [
+          145,
+          "Negara Sentosa, Rakyat Selesa"
+        ],
+        "5.1.1": [
+          5,
+          "Kawal Sebelum Tular"
+        ],
+        "5.1.2": [
+          19,
+          "Sama tetapi Tidak Serupa"
+        ],
+        "5.1.3": [
+          35,
+          "Berkhidmat untuk Negara"
+        ],
+        "5.2.1": [
+          45,
+          "Wisma Putra"
+        ],
+        "5.3.1": [
+          59,
+          "Tiada Tercicir, Tiada Terpinggir"
+        ],
+        "5.3.2": [
+          75,
+          "Inovasi"
+        ],
+        "5.3.3": [
+          87,
+          "Kluq! Kluq! Kluq!"
+        ],
+        "5.3.4": [
+          101,
+          "Mutiara yang Bersinar"
         ]
       }
     }
@@ -433,5 +433,6 @@
     "T4 4.2.14",
     "T5 2.3.22"
   ],
-  "release_gate": "Not READY. Page/code presence verified; individual lesson relevance, printed text accuracy, 2027 RPT mapping, Word/PDF layout require manual review."
+  "release_gate": "Not READY. Page/code presence verified; individual lesson relevance, printed text accuracy, 2027 RPT mapping, Word/PDF layout require manual review.",
+  "correction_audit": "Corrected all 48 T5 SP-page-title anchors and two T4 title mappings; do not use former index version."
 }
