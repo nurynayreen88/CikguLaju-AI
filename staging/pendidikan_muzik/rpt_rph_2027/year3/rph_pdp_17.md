@@ -26,7 +26,7 @@ Semak kedudukan tangan, penjarian not B dan detik pada dua latihan; jangan meniu
 **Penutup — 2 minit**  
 Murid membersihkan pemipit dan mengingat semula satu peraturan penjagaan rekoder.
 
-**Bahan:** Buku halaman 54–55, rekoder individu bersih dan kad nilai detik; Audio 48–49 belum disahkan sebagai fail.  
+**Bahan:** Buku teks m/s 54–55, rekoder individu bersih, kad nilai detik dan demonstrasi penjarian oleh guru.  
 **Rujukan sumber:** Buku Teks Pendidikan Kesenian Tahun 3 SK, DBP 2018, halaman 54–55; disemak secara teks terhadap https://anyflip.com/lcinm/flxx/basic/51-100 . Kod buku Kesenian yang dicetak: 1.2.2, 2.2.9(i)(iii), 2.2.10(i)(ii); **jangan gantikan kod DSKP Muzik tanpa pengesahan crosswalk**. Audio bercetak: 48–49; **tiada fail audio disahkan**.
 
 **Catatan pelaksanaan / pemulihan:** __________________________________________
