@@ -15,7 +15,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan peta Asia Tenggara dan simbol ASEAN serta organisasi antarabangsa. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 10: Malaysia dan Dunia.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 162–165: ASEAN dan pelibatan Malaysia, dengan suplemen keanggotaan. Murid melabel negara anggota ASEAN mengikut sumber semasa yang dinyatakan tahun. Guru menyemak jawapan awal berpandukan 12.4.1. Guru menegaskan Timor-Leste diterima sebagai anggota ASEAN ke-11 pada 26 Oktober 2025; peta terkini perlu mencerminkan perubahan ini.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 162–165: ASEAN dan pelibatan Malaysia, dengan suplemen keanggotaan Timor-Leste 2025. Murid melabel negara anggota ASEAN mengikut sumber semasa yang dinyatakan tahun. Guru menyemak jawapan awal berpandukan 12.4.1. Guru menegaskan Timor-Leste diterima sebagai anggota ASEAN ke-11 pada 26 Oktober 2025; peta terkini perlu mencerminkan perubahan ini.
 
 **Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 162–165 bagi menyokong perbandingan. Murid membina rajah peranan Malaysia dalam kerjasama ASEAN dan membezakan organisasi serantau/antarabangsa. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan menjalinkan hubungan baik dengan negara luar.
 
