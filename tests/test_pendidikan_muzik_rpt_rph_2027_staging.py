@@ -693,6 +693,21 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
                          {f"MZ-Y{year}-{pdp:02d}" for year in (2, 3, 4, 6) for pdp in (34, 35)})
         self.assertFalse(audio_released)
 
+    def test_rpt_y2_y5_review_notes_match_evidence(self):
+        base = MUSIC / "rpt_rph_2027"
+        for year in (2, 5):
+            path = base / f"year{year}" / f"RPT_MUZIK_TAHUN_{year}_2027_DRAF.csv"
+            with path.open(encoding="utf-8-sig", newline="") as handle:
+                rows = {r["PdP ID"]: r for r in csv.DictReader(handle)}
+            self.assertEqual(len(rows), 35)
+            if year == 5:
+                self.assertTrue(all("RPT rujukan sahaja" not in r["Semakan"] for r in rows.values()))
+            else:
+                for n in (12, 13, 26, 27):
+                    self.assertIn("projek seni muzik rasmi disemak teks", rows[f"MZ-Y2-{n:02d}"]["Semakan"])
+                self.assertIn("Sumazau", rows["MZ-Y2-33"]["Audio cetak atau RPT"])
+                self.assertIn("belum disahkan", rows["MZ-Y2-33"]["Semakan"])
+
     def test_fail_closed_for_invalid_year_or_pdp(self):
         for year, pdp in ((1, 1), (7, 1), (2, 0), (3, 36), ("2", 1)):
             with self.subTest(year=year, pdp=pdp):
