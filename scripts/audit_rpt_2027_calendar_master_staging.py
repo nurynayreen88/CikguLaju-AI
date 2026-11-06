@@ -68,7 +68,9 @@ def audit_rows(subject, year, rows, master):
                 category = ("source_week_label_conflicts_with_master"
                             if len(matched) == 1 else "week_and_date_mismatch")
             else:
-                category = "aligned_to_master_week"
+                category = ("week_label_reconciled_from_master"
+                            if row.get("source_week") and row["source_week"] != week
+                            else "aligned_to_master_week")
         tally[category] += 1
         if category != "aligned_to_master_week" and len(report["examples"]) < 12:
             example = {
@@ -79,6 +81,9 @@ def audit_rows(subject, year, rows, master):
             }
             if category == "source_week_label_conflicts_with_master":
                 example["suggested_master_week_label_only"] = matched[0]
+            if category == "week_label_reconciled_from_master":
+                example["source_original_week"] = row["source_week"]
+                example["display_week"] = row["week"]
             report["examples"].append(example)
     report["status_counts"] = dict(sorted(tally.items()))
     report["requires_review"] = any(category != "aligned_to_master_week" for category in tally)
