@@ -101,8 +101,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 1.1.1 dan 1.1.2 melalui tugasan mengenal pasti dalam projek amalan keselamatan bengkel.",
-      "kriteria_kejayaan": "Murid menunjukkan jadual pengelasan dengan tiga contoh tepat; dua penerangan berasaskan contoh dan satu alasan; semakan berdasarkan bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan; ketepatan fakta, fungsi dan justifikasi.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 1.1.1, 1.1.2 melalui kad pengelasan atau senarai contoh berlabel; dua penerangan fungsi atau sebab dalam jadual banding beza, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan kad pengelasan atau senarai contoh berlabel; dua penerangan fungsi atau sebab dalam jadual banding beza bagi SP 1.1.1, 1.1.2; guru menilai ketepatan pilihan dan pengelasan; ketepatan penerangan dan satu justifikasi.",
       "bbm": "Kad simbol keselamatan, carta peraturan bengkel, pelan laluan keluar, kit pertolongan cemas demonstrasi",
       "langkah": {
         "set_induksi": {
@@ -111,22 +111,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 1.1.1, menunjukkan contoh bagi amalan keselamatan bengkel dan memodelkan tindakan yang betul. Murid meneliti contoh dan mengisi jadual pengelasan tiga ciri berkaitan menyatakan peraturan keselamatan diri, bengkel, peralatan dan bahan dalam konteks amalan keselamatan bengkel."
+          "aktiviti": "Guru memberikan model kerja SP 1.1.1 menggunakan Kad simbol keselamatan, carta peraturan bengkel, pelan laluan keluar, kit pertolongan cemas demonstrasi. Murid mengenal pasti ciri/komponen berdasarkan contoh sebenar berkaitan peraturan dan simbol keselamatan bengkel lalu melengkapkan kad pengelasan berlabel (SP 1.1.1)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing SP tambahan 1.1.2 dan memeriksa langkah murid. Murid membandingkan dua contoh yang berkaitan menerangkan maksud simbol dan tanda keselamatan dan menerangkan fungsi atau kepentingannya dengan alasan yang munasabah. Guru menjelaskan prosedur kecemasan; jangan mensimulasikan penggunaan api atau kecederaan sebenar."
+          "aktiviti": "Guru membimbing latihan 1.1.2 dan merekod pemerhatian. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 1.1.2 menggunakan dua contoh dan satu sebab yang munasabah. Guru menjelaskan prosedur kecemasan; jangan mensimulasikan penggunaan api atau kecederaan sebenar."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: jadual pengelasan dengan tiga contoh tepat; dua penerangan berasaskan contoh dan satu alasan. Pentaksiran SP 1.1.1, 1.1.2 menilai bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan; ketepatan fakta, fungsi dan justifikasi. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: kad pengelasan atau senarai contoh berlabel; dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan pilihan dan pengelasan; ketepatan penerangan dan satu justifikasi mengikut SP 1.1.1, 1.1.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi amalan keselamatan bengkel."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: jadual pengelasan dengan tiga contoh tepat; dua penerangan berasaskan contoh dan satu alasan. Pentaksiran SP 1.1.1, 1.1.2 menilai bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan; ketepatan fakta, fungsi dan justifikasi. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: kad pengelasan atau senarai contoh berlabel; dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan pilihan dan pengelasan; ketepatan penerangan dan satu justifikasi mengikut SP 1.1.1, 1.1.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Guru menjelaskan prosedur kecemasan; jangan mensimulasikan penggunaan api atau kecederaan sebenar.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -152,12 +152,22 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "jadual pengelasan dengan tiga contoh tepat; dua penerangan berasaskan contoh dan satu alasan",
-      "rubrik_pbd_khusus": "bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan; ketepatan fakta, fungsi dan justifikasi",
+      "artefak_khusus": "kad pengelasan atau senarai contoh berlabel; dua penerangan fungsi atau sebab dalam jadual banding beza",
+      "rubrik_pbd_khusus": "ketepatan pilihan dan pengelasan; ketepatan penerangan dan satu justifikasi",
       "contoh_projek_cikgulaju": "peraturan dan simbol keselamatan bengkel",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "1.1.1",
+          "stage": "identify"
+        },
+        {
+          "code": "1.1.2",
+          "stage": "explain"
+        }
+      ]
     },
     {
       "pdp": 2,
@@ -184,8 +194,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 1.1.3 melalui tugasan mengenal pasti dalam projek amalan keselamatan bengkel.",
-      "kriteria_kejayaan": "Murid menunjukkan jadual pengelasan dengan tiga contoh tepat; semakan berdasarkan bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 1.1.3 melalui dua penerangan fungsi atau sebab dalam jadual banding beza, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan dua penerangan fungsi atau sebab dalam jadual banding beza bagi SP 1.1.3; guru menilai ketepatan penerangan dan satu justifikasi.",
       "bbm": "Kad simbol keselamatan, carta peraturan bengkel, pelan laluan keluar, kit pertolongan cemas demonstrasi",
       "langkah": {
         "set_induksi": {
@@ -194,22 +204,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 1.1.3, menunjukkan contoh bagi amalan keselamatan bengkel dan memodelkan tindakan yang betul. Murid meneliti contoh dan mengisi jadual pengelasan tiga ciri berkaitan mengaplikasikan langkah-langkah yang perlu diambil sekiranya berlaku kemalangan di bengkel dalam konteks amalan keselamatan bengkel."
+          "aktiviti": "Guru memberikan model kerja SP 1.1.3 menggunakan Kad simbol keselamatan, carta peraturan bengkel, pelan laluan keluar, kit pertolongan cemas demonstrasi. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 1.1.3 menggunakan dua contoh dan satu sebab yang munasabah."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan individu bagi SP 1.1.3 dan memeriksa langkah murid. Murid meneliti contoh dan mengisi jadual pengelasan tiga ciri berkaitan mengaplikasikan langkah-langkah yang perlu diambil sekiranya berlaku kemalangan di bengkel dalam konteks amalan keselamatan bengkel. Guru menjelaskan prosedur kecemasan; jangan mensimulasikan penggunaan api atau kecederaan sebenar."
+          "aktiviti": "Guru membimbing latihan 1.1.3 dan merekod pemerhatian. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 1.1.3 menggunakan dua contoh dan satu sebab yang munasabah. Guru menjelaskan prosedur kecemasan; jangan mensimulasikan penggunaan api atau kecederaan sebenar."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: jadual pengelasan dengan tiga contoh tepat. Pentaksiran SP 1.1.3 menilai bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan penerangan dan satu justifikasi mengikut SP 1.1.3; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi amalan keselamatan bengkel."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: jadual pengelasan dengan tiga contoh tepat. Pentaksiran SP 1.1.3 menilai bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan penerangan dan satu justifikasi mengikut SP 1.1.3; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Guru menjelaskan prosedur kecemasan; jangan mensimulasikan penggunaan api atau kecederaan sebenar.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -234,12 +244,18 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "jadual pengelasan dengan tiga contoh tepat",
-      "rubrik_pbd_khusus": "bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan",
+      "artefak_khusus": "dua penerangan fungsi atau sebab dalam jadual banding beza",
+      "rubrik_pbd_khusus": "ketepatan penerangan dan satu justifikasi",
       "contoh_projek_cikgulaju": "peraturan dan simbol keselamatan bengkel",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "1.1.3",
+          "stage": "explain"
+        }
+      ]
     },
     {
       "pdp": 3,
@@ -271,8 +287,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "pembentangan",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 1.1.4 dan 1.1.5 melalui tugasan menerangkan dalam projek amalan keselamatan bengkel.",
-      "kriteria_kejayaan": "Murid menunjukkan dua penerangan berasaskan contoh dan satu alasan; pembentangan ringkas dan rekod maklum balas rakan; semakan berdasarkan ketepatan fakta, fungsi dan justifikasi; kejelasan penerangan, bukti proses, tindak balas kepada soalan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 1.1.4, 1.1.5 melalui dua penerangan fungsi atau sebab dalam jadual banding beza; pembentangan hasil atau dokumentasi proses dan respons soalan, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan dua penerangan fungsi atau sebab dalam jadual banding beza; pembentangan hasil atau dokumentasi proses dan respons soalan bagi SP 1.1.4, 1.1.5; guru menilai ketepatan penerangan dan satu justifikasi; kejelasan hujah, bukti ujian dan maklum balas.",
       "bbm": "Kad simbol keselamatan, carta peraturan bengkel, pelan laluan keluar, kit pertolongan cemas demonstrasi",
       "langkah": {
         "set_induksi": {
@@ -281,22 +297,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 1.1.4, menunjukkan contoh bagi amalan keselamatan bengkel dan memodelkan tindakan yang betul. Murid membandingkan dua contoh yang berkaitan membincangkan amalan keselamatan di bengkel: i. kebersihan bengkel ii. penyelenggaraan peralatan dan menerangkan fungsi atau kepentingannya dengan alasan yang munasabah."
+          "aktiviti": "Guru memberikan model kerja SP 1.1.4 menggunakan Kad simbol keselamatan, carta peraturan bengkel, pelan laluan keluar, kit pertolongan cemas demonstrasi. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 1.1.4 menggunakan dua contoh dan satu sebab yang munasabah."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing SP tambahan 1.1.5 dan memeriksa langkah murid. Murid menyediakan paparan hasil amalan keselamatan bengkel yang sudah dibina dalam sesi sebelumnya, menyatakan tujuan, langkah kerja, ujian dan penambahbaikan serta menjawab soalan rakan. Guru menjelaskan prosedur kecemasan; jangan mensimulasikan penggunaan api atau kecederaan sebenar."
+          "aktiviti": "Guru membimbing latihan 1.1.5 dan merekod pemerhatian. Murid membentangkan hasil semasa dan dokumentasi peraturan dan simbol keselamatan bengkel, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 1.1.5). Guru menjelaskan prosedur kecemasan; jangan mensimulasikan penggunaan api atau kecederaan sebenar."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: dua penerangan berasaskan contoh dan satu alasan; pembentangan ringkas dan rekod maklum balas rakan. Pentaksiran SP 1.1.4, 1.1.5 menilai ketepatan fakta, fungsi dan justifikasi; kejelasan penerangan, bukti proses, tindak balas kepada soalan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza; pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak ketepatan penerangan dan satu justifikasi; kejelasan hujah, bukti ujian dan maklum balas mengikut SP 1.1.4, 1.1.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi amalan keselamatan bengkel."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: dua penerangan berasaskan contoh dan satu alasan; pembentangan ringkas dan rekod maklum balas rakan. Pentaksiran SP 1.1.4, 1.1.5 menilai ketepatan fakta, fungsi dan justifikasi; kejelasan penerangan, bukti proses, tindak balas kepada soalan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza; pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak ketepatan penerangan dan satu justifikasi; kejelasan hujah, bukti ujian dan maklum balas mengikut SP 1.1.4, 1.1.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Guru menjelaskan prosedur kecemasan; jangan mensimulasikan penggunaan api atau kecederaan sebenar.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -322,12 +338,22 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "dua penerangan berasaskan contoh dan satu alasan; pembentangan ringkas dan rekod maklum balas rakan",
-      "rubrik_pbd_khusus": "ketepatan fakta, fungsi dan justifikasi; kejelasan penerangan, bukti proses, tindak balas kepada soalan",
+      "artefak_khusus": "dua penerangan fungsi atau sebab dalam jadual banding beza; pembentangan hasil atau dokumentasi proses dan respons soalan",
+      "rubrik_pbd_khusus": "ketepatan penerangan dan satu justifikasi; kejelasan hujah, bukti ujian dan maklum balas",
       "contoh_projek_cikgulaju": "peraturan dan simbol keselamatan bengkel",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "1.1.4",
+          "stage": "explain"
+        },
+        {
+          "code": "1.1.5",
+          "stage": "present"
+        }
+      ]
     },
     {
       "pdp": 4,
@@ -359,8 +385,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 2.1.1 dan 2.1.2 melalui tugasan menerangkan dalam projek bekas alat tulis bertema.",
-      "kriteria_kejayaan": "Murid menunjukkan dua penerangan berasaskan contoh dan satu alasan; semakan berdasarkan ketepatan fakta, fungsi dan justifikasi.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 2.1.1, 2.1.2 melalui dua penerangan fungsi atau sebab dalam jadual banding beza; kad pengelasan atau senarai contoh berlabel, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan dua penerangan fungsi atau sebab dalam jadual banding beza; kad pengelasan atau senarai contoh berlabel bagi SP 2.1.1, 2.1.2; guru menilai ketepatan penerangan dan satu justifikasi; ketepatan pilihan dan pengelasan.",
       "bbm": "Contoh produk, helaian lakaran, pensel, pembaris, kad bentuk 2D/3D, bahan kitar semula bersih",
       "langkah": {
         "set_induksi": {
@@ -369,22 +395,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 2.1.1, menunjukkan contoh bagi bekas alat tulis bertema dan memodelkan tindakan yang betul. Murid membandingkan dua contoh yang berkaitan menerangkan maksud reka bentuk berdasarkan contoh produk sedia ada dan menerangkan fungsi atau kepentingannya dengan alasan yang munasabah."
+          "aktiviti": "Guru memberikan model kerja SP 2.1.1 menggunakan Contoh produk, helaian lakaran, pensel, pembaris, kad bentuk 2D/3D, bahan kitar semula bersih. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 2.1.1 menggunakan dua contoh dan satu sebab yang munasabah."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing SP tambahan 2.1.2 dan memeriksa langkah murid. Murid membandingkan dua contoh yang berkaitan mengenal pasti kepentingan reka bentuk dalam kehidupan dan menerangkan fungsi atau kepentingannya dengan alasan yang munasabah. Gunakan bahan kitar semula bersih dan gunting dengan pengawasan."
+          "aktiviti": "Guru membimbing latihan 2.1.2 dan merekod pemerhatian. Murid mengenal pasti ciri/komponen berdasarkan contoh sebenar berkaitan produk bekas alat tulis lalu melengkapkan kad pengelasan berlabel (SP 2.1.2). Gunakan bahan kitar semula bersih dan gunting dengan pengawasan."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: dua penerangan berasaskan contoh dan satu alasan. Pentaksiran SP 2.1.1, 2.1.2 menilai ketepatan fakta, fungsi dan justifikasi. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza; kad pengelasan atau senarai contoh berlabel. Guru menyemak ketepatan penerangan dan satu justifikasi; ketepatan pilihan dan pengelasan mengikut SP 2.1.1, 2.1.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi bekas alat tulis bertema."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: dua penerangan berasaskan contoh dan satu alasan. Pentaksiran SP 2.1.1, 2.1.2 menilai ketepatan fakta, fungsi dan justifikasi. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza; kad pengelasan atau senarai contoh berlabel. Guru menyemak ketepatan penerangan dan satu justifikasi; ketepatan pilihan dan pengelasan mengikut SP 2.1.1, 2.1.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Gunakan bahan kitar semula bersih dan gunting dengan pengawasan.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -410,12 +436,22 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "dua penerangan berasaskan contoh dan satu alasan",
-      "rubrik_pbd_khusus": "ketepatan fakta, fungsi dan justifikasi",
+      "artefak_khusus": "dua penerangan fungsi atau sebab dalam jadual banding beza; kad pengelasan atau senarai contoh berlabel",
+      "rubrik_pbd_khusus": "ketepatan penerangan dan satu justifikasi; ketepatan pilihan dan pengelasan",
       "contoh_projek_cikgulaju": "produk bekas alat tulis",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "2.1.1",
+          "stage": "explain"
+        },
+        {
+          "code": "2.1.2",
+          "stage": "identify"
+        }
+      ]
     },
     {
       "pdp": 5,
@@ -452,8 +488,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 2.1.3 dan 2.1.4 dan 2.1.5 melalui tugasan menerangkan dalam projek bekas alat tulis bertema.",
-      "kriteria_kejayaan": "Murid menunjukkan dua penerangan berasaskan contoh dan satu alasan; jadual pengelasan dengan tiga contoh tepat; semakan berdasarkan ketepatan fakta, fungsi dan justifikasi; bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 2.1.3, 2.1.4, 2.1.5 melalui dua penerangan fungsi atau sebab dalam jadual banding beza, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan dua penerangan fungsi atau sebab dalam jadual banding beza bagi SP 2.1.3, 2.1.4, 2.1.5; guru menilai ketepatan penerangan dan satu justifikasi.",
       "bbm": "Contoh produk, helaian lakaran, pensel, pembaris, kad bentuk 2D/3D, bahan kitar semula bersih",
       "langkah": {
         "set_induksi": {
@@ -462,22 +498,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 2.1.3, menunjukkan contoh bagi bekas alat tulis bertema dan memodelkan tindakan yang betul. Murid membandingkan dua contoh yang berkaitan membincangkan laluan kerjaya dan pekerjaan dalam reka bentuk dan menerangkan fungsi atau kepentingannya dengan alasan yang munasabah."
+          "aktiviti": "Guru memberikan model kerja SP 2.1.3 menggunakan Contoh produk, helaian lakaran, pensel, pembaris, kad bentuk 2D/3D, bahan kitar semula bersih. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 2.1.3 menggunakan dua contoh dan satu sebab yang munasabah."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing SP tambahan 2.1.4, 2.1.5 dan memeriksa langkah murid. Murid membandingkan dua contoh yang berkaitan menghuraikan apresiasi reka bentuk di persekitaran dan menerangkan fungsi atau kepentingannya dengan alasan yang munasabah. Murid meneliti contoh dan mengisi jadual pengelasan tiga ciri berkaitan memperihalkan penggunaan elemen dalam reka bentuk: i. garisan ii. rupa iii. bentuk iv. tekstur v. saiz vi. warna vii. ruang viii. nilai dalam konteks bekas alat tulis bertema. Gunakan bahan kitar semula bersih dan gunting dengan pengawasan."
+          "aktiviti": "Guru membimbing latihan 2.1.4, 2.1.5 dan merekod pemerhatian. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 2.1.4 menggunakan dua contoh dan satu sebab yang munasabah. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 2.1.5 menggunakan dua contoh dan satu sebab yang munasabah. Gunakan bahan kitar semula bersih dan gunting dengan pengawasan."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: dua penerangan berasaskan contoh dan satu alasan; jadual pengelasan dengan tiga contoh tepat. Pentaksiran SP 2.1.3, 2.1.4, 2.1.5 menilai ketepatan fakta, fungsi dan justifikasi; bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan penerangan dan satu justifikasi mengikut SP 2.1.3, 2.1.4, 2.1.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi bekas alat tulis bertema."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: dua penerangan berasaskan contoh dan satu alasan; jadual pengelasan dengan tiga contoh tepat. Pentaksiran SP 2.1.3, 2.1.4, 2.1.5 menilai ketepatan fakta, fungsi dan justifikasi; bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan penerangan dan satu justifikasi mengikut SP 2.1.3, 2.1.4, 2.1.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Gunakan bahan kitar semula bersih dan gunting dengan pengawasan.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -504,12 +540,26 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "dua penerangan berasaskan contoh dan satu alasan; jadual pengelasan dengan tiga contoh tepat",
-      "rubrik_pbd_khusus": "ketepatan fakta, fungsi dan justifikasi; bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan",
+      "artefak_khusus": "dua penerangan fungsi atau sebab dalam jadual banding beza",
+      "rubrik_pbd_khusus": "ketepatan penerangan dan satu justifikasi",
       "contoh_projek_cikgulaju": "produk bekas alat tulis",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "2.1.3",
+          "stage": "explain"
+        },
+        {
+          "code": "2.1.4",
+          "stage": "explain"
+        },
+        {
+          "code": "2.1.5",
+          "stage": "explain"
+        }
+      ]
     },
     {
       "pdp": 6,
@@ -541,8 +591,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 2.2.1 dan 2.2.2 melalui tugasan melakar/menyusun dalam projek bekas alat tulis bertema.",
-      "kriteria_kejayaan": "Murid menunjukkan satu lakaran/algoritma berlabel dan catatan penambahbaikan; semakan berdasarkan maklumat berlabel, urutan logik dan kebolehlaksanaan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 2.2.1, 2.2.2 melalui kad pengelasan atau senarai contoh berlabel; lakaran berlabel atau algoritma/carta alir berurutan, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan kad pengelasan atau senarai contoh berlabel; lakaran berlabel atau algoritma/carta alir berurutan bagi SP 2.2.1, 2.2.2; guru menilai ketepatan pilihan dan pengelasan; kelengkapan maklumat dan langkah reka bentuk.",
       "bbm": "Contoh produk, helaian lakaran, pensel, pembaris, kad bentuk 2D/3D, bahan kitar semula bersih",
       "langkah": {
         "set_induksi": {
@@ -551,22 +601,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 2.2.1, menunjukkan contoh bagi bekas alat tulis bertema dan memodelkan tindakan yang betul. Murid menyediakan lakaran berlabel atau algoritma/carta alir langkah demi langkah bagi bekas alat tulis bertema; guru menyemak kejelasan label, fungsi dan urutan."
+          "aktiviti": "Guru memberikan model kerja SP 2.2.1 menggunakan Contoh produk, helaian lakaran, pensel, pembaris, kad bentuk 2D/3D, bahan kitar semula bersih. Murid mengenal pasti ciri/komponen berdasarkan contoh sebenar berkaitan produk bekas alat tulis lalu melengkapkan kad pengelasan berlabel (SP 2.2.1)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing SP tambahan 2.2.2 dan memeriksa langkah murid. Murid menyediakan lakaran berlabel atau algoritma/carta alir langkah demi langkah bagi bekas alat tulis bertema; guru menyemak kejelasan label, fungsi dan urutan. Gunakan bahan kitar semula bersih dan gunting dengan pengawasan."
+          "aktiviti": "Guru membimbing latihan 2.2.2 dan merekod pemerhatian. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 2.2.2 dan menyemak ketepatan maklumatnya. Gunakan bahan kitar semula bersih dan gunting dengan pengawasan."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: satu lakaran/algoritma berlabel dan catatan penambahbaikan. Pentaksiran SP 2.2.1, 2.2.2 menilai maklumat berlabel, urutan logik dan kebolehlaksanaan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: kad pengelasan atau senarai contoh berlabel; lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak ketepatan pilihan dan pengelasan; kelengkapan maklumat dan langkah reka bentuk mengikut SP 2.2.1, 2.2.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi bekas alat tulis bertema."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: satu lakaran/algoritma berlabel dan catatan penambahbaikan. Pentaksiran SP 2.2.1, 2.2.2 menilai maklumat berlabel, urutan logik dan kebolehlaksanaan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: kad pengelasan atau senarai contoh berlabel; lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak ketepatan pilihan dan pengelasan; kelengkapan maklumat dan langkah reka bentuk mengikut SP 2.2.1, 2.2.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Gunakan bahan kitar semula bersih dan gunting dengan pengawasan.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -592,12 +642,22 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "satu lakaran/algoritma berlabel dan catatan penambahbaikan",
-      "rubrik_pbd_khusus": "maklumat berlabel, urutan logik dan kebolehlaksanaan",
+      "artefak_khusus": "kad pengelasan atau senarai contoh berlabel; lakaran berlabel atau algoritma/carta alir berurutan",
+      "rubrik_pbd_khusus": "ketepatan pilihan dan pengelasan; kelengkapan maklumat dan langkah reka bentuk",
       "contoh_projek_cikgulaju": "produk bekas alat tulis",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "2.2.1",
+          "stage": "identify"
+        },
+        {
+          "code": "2.2.2",
+          "stage": "sketch"
+        }
+      ]
     },
     {
       "pdp": 7,
@@ -629,8 +689,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 2.2.3 dan 2.2.4 melalui tugasan melakar/menyusun dalam projek bekas alat tulis bertema.",
-      "kriteria_kejayaan": "Murid menunjukkan satu lakaran/algoritma berlabel dan catatan penambahbaikan; semakan berdasarkan maklumat berlabel, urutan logik dan kebolehlaksanaan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 2.2.3, 2.2.4 melalui lakaran berlabel atau algoritma/carta alir berurutan, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan lakaran berlabel atau algoritma/carta alir berurutan bagi SP 2.2.3, 2.2.4; guru menilai kelengkapan maklumat dan langkah reka bentuk.",
       "bbm": "Contoh produk, helaian lakaran, pensel, pembaris, kad bentuk 2D/3D, bahan kitar semula bersih",
       "langkah": {
         "set_induksi": {
@@ -639,22 +699,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 2.2.3, menunjukkan contoh bagi bekas alat tulis bertema dan memodelkan tindakan yang betul. Murid menyediakan lakaran berlabel atau algoritma/carta alir langkah demi langkah bagi bekas alat tulis bertema; guru menyemak kejelasan label, fungsi dan urutan."
+          "aktiviti": "Guru memberikan model kerja SP 2.2.3 menggunakan Contoh produk, helaian lakaran, pensel, pembaris, kad bentuk 2D/3D, bahan kitar semula bersih. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 2.2.3 dan menyemak ketepatan maklumatnya."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing SP tambahan 2.2.4 dan memeriksa langkah murid. Murid menyediakan lakaran berlabel atau algoritma/carta alir langkah demi langkah bagi bekas alat tulis bertema; guru menyemak kejelasan label, fungsi dan urutan. Gunakan bahan kitar semula bersih dan gunting dengan pengawasan."
+          "aktiviti": "Guru membimbing latihan 2.2.4 dan merekod pemerhatian. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 2.2.4 dan menyemak ketepatan maklumatnya. Gunakan bahan kitar semula bersih dan gunting dengan pengawasan."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: satu lakaran/algoritma berlabel dan catatan penambahbaikan. Pentaksiran SP 2.2.3, 2.2.4 menilai maklumat berlabel, urutan logik dan kebolehlaksanaan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 2.2.3, 2.2.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi bekas alat tulis bertema."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: satu lakaran/algoritma berlabel dan catatan penambahbaikan. Pentaksiran SP 2.2.3, 2.2.4 menilai maklumat berlabel, urutan logik dan kebolehlaksanaan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 2.2.3, 2.2.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Gunakan bahan kitar semula bersih dan gunting dengan pengawasan.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -680,12 +740,22 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "satu lakaran/algoritma berlabel dan catatan penambahbaikan",
-      "rubrik_pbd_khusus": "maklumat berlabel, urutan logik dan kebolehlaksanaan",
+      "artefak_khusus": "lakaran berlabel atau algoritma/carta alir berurutan",
+      "rubrik_pbd_khusus": "kelengkapan maklumat dan langkah reka bentuk",
       "contoh_projek_cikgulaju": "produk bekas alat tulis",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "2.2.3",
+          "stage": "sketch"
+        },
+        {
+          "code": "2.2.4",
+          "stage": "sketch"
+        }
+      ]
     },
     {
       "pdp": 8,
@@ -712,8 +782,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 2.2.5 melalui tugasan menilai dan membaiki dalam projek bekas alat tulis bertema.",
-      "kriteria_kejayaan": "Murid menunjukkan borang penilaian dua kelemahan dan versi ditambah baik; semakan berdasarkan ketepatan analisis, sebab pembetulan dan bukti perubahan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 2.2.5 melalui rubrik semak serta lakaran atau kod yang telah dibaiki, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan rubrik semak serta lakaran atau kod yang telah dibaiki bagi SP 2.2.5; guru menilai kejelasan kelemahan, sebab dan pembetulan.",
       "bbm": "Contoh produk, helaian lakaran, pensel, pembaris, kad bentuk 2D/3D, bahan kitar semula bersih",
       "langkah": {
         "set_induksi": {
@@ -722,22 +792,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 2.2.5, menunjukkan contoh bagi bekas alat tulis bertema dan memodelkan tindakan yang betul. Murid menggunakan senarai semak untuk menilai lakaran atau hasil bagi bekas alat tulis bertema, mengenal pasti dua kelemahan dan membaiki sekurang-kurangnya satu aspek."
+          "aktiviti": "Guru memberikan model kerja SP 2.2.5 menggunakan Contoh produk, helaian lakaran, pensel, pembaris, kad bentuk 2D/3D, bahan kitar semula bersih. Murid menilai lakaran atau atur cara menggunakan kriteria, mengenal pasti dua kelemahan serta melakukan satu penambahbaikan yang boleh dibuktikan (SP 2.2.5)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan individu bagi SP 2.2.5 dan memeriksa langkah murid. Murid menggunakan senarai semak untuk menilai lakaran atau hasil bagi bekas alat tulis bertema, mengenal pasti dua kelemahan dan membaiki sekurang-kurangnya satu aspek. Gunakan bahan kitar semula bersih dan gunting dengan pengawasan."
+          "aktiviti": "Guru membimbing latihan 2.2.5 dan merekod pemerhatian. Murid menilai lakaran atau atur cara menggunakan kriteria, mengenal pasti dua kelemahan serta melakukan satu penambahbaikan yang boleh dibuktikan (SP 2.2.5). Gunakan bahan kitar semula bersih dan gunting dengan pengawasan."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: borang penilaian dua kelemahan dan versi ditambah baik. Pentaksiran SP 2.2.5 menilai ketepatan analisis, sebab pembetulan dan bukti perubahan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: rubrik semak serta lakaran atau kod yang telah dibaiki. Guru menyemak kejelasan kelemahan, sebab dan pembetulan mengikut SP 2.2.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi bekas alat tulis bertema."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: borang penilaian dua kelemahan dan versi ditambah baik. Pentaksiran SP 2.2.5 menilai ketepatan analisis, sebab pembetulan dan bukti perubahan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: rubrik semak serta lakaran atau kod yang telah dibaiki. Guru menyemak kejelasan kelemahan, sebab dan pembetulan mengikut SP 2.2.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Gunakan bahan kitar semula bersih dan gunting dengan pengawasan.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -762,12 +832,18 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "borang penilaian dua kelemahan dan versi ditambah baik",
-      "rubrik_pbd_khusus": "ketepatan analisis, sebab pembetulan dan bukti perubahan",
+      "artefak_khusus": "rubrik semak serta lakaran atau kod yang telah dibaiki",
+      "rubrik_pbd_khusus": "kejelasan kelemahan, sebab dan pembetulan",
       "contoh_projek_cikgulaju": "produk bekas alat tulis",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "2.2.5",
+          "stage": "improve"
+        }
+      ]
     },
     {
       "pdp": 9,
@@ -799,8 +875,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "amali",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 2.2.6 dan 2.2.7 melalui tugasan menilai dan membaiki dalam projek bekas alat tulis bertema.",
-      "kriteria_kejayaan": "Murid menunjukkan borang penilaian dua kelemahan dan versi ditambah baik; satu lakaran/algoritma berlabel dan catatan penambahbaikan; semakan berdasarkan ketepatan analisis, sebab pembetulan dan bukti perubahan; maklumat berlabel, urutan logik dan kebolehlaksanaan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 2.2.6, 2.2.7 melalui rubrik semak serta lakaran atau kod yang telah dibaiki; bukti hasil kerja peringkat semasa dan catatan ujian fungsi, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan rubrik semak serta lakaran atau kod yang telah dibaiki; bukti hasil kerja peringkat semasa dan catatan ujian fungsi bagi SP 2.2.6, 2.2.7; guru menilai kejelasan kelemahan, sebab dan pembetulan; pematuhan langkah, keselamatan dan fungsi peringkat semasa.",
       "bbm": "Contoh produk, helaian lakaran, pensel, pembaris, kad bentuk 2D/3D, bahan kitar semula bersih",
       "langkah": {
         "set_induksi": {
@@ -809,22 +885,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 2.2.6, menunjukkan contoh bagi bekas alat tulis bertema dan memodelkan tindakan yang betul. Murid menggunakan senarai semak untuk menilai lakaran atau hasil bagi bekas alat tulis bertema, mengenal pasti dua kelemahan dan membaiki sekurang-kurangnya satu aspek."
+          "aktiviti": "Guru memberikan model kerja SP 2.2.6 menggunakan Contoh produk, helaian lakaran, pensel, pembaris, kad bentuk 2D/3D, bahan kitar semula bersih. Murid menilai lakaran atau atur cara menggunakan kriteria, mengenal pasti dua kelemahan serta melakukan satu penambahbaikan yang boleh dibuktikan (SP 2.2.6)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing SP tambahan 2.2.7 dan memeriksa langkah murid. Murid menyediakan lakaran berlabel atau algoritma/carta alir langkah demi langkah bagi bekas alat tulis bertema; guru menyemak kejelasan label, fungsi dan urutan. Gunakan bahan kitar semula bersih dan gunting dengan pengawasan."
+          "aktiviti": "Guru membimbing latihan 2.2.7 dan merekod pemerhatian. Murid menghasilkan peringkat kerja produk bekas alat tulis yang benar-benar diminta oleh SP 2.2.7, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah. Gunakan bahan kitar semula bersih dan gunting dengan pengawasan."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: borang penilaian dua kelemahan dan versi ditambah baik; satu lakaran/algoritma berlabel dan catatan penambahbaikan. Pentaksiran SP 2.2.6, 2.2.7 menilai ketepatan analisis, sebab pembetulan dan bukti perubahan; maklumat berlabel, urutan logik dan kebolehlaksanaan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: rubrik semak serta lakaran atau kod yang telah dibaiki; bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak kejelasan kelemahan, sebab dan pembetulan; pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 2.2.6, 2.2.7; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi bekas alat tulis bertema."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: borang penilaian dua kelemahan dan versi ditambah baik; satu lakaran/algoritma berlabel dan catatan penambahbaikan. Pentaksiran SP 2.2.6, 2.2.7 menilai ketepatan analisis, sebab pembetulan dan bukti perubahan; maklumat berlabel, urutan logik dan kebolehlaksanaan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: rubrik semak serta lakaran atau kod yang telah dibaiki; bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak kejelasan kelemahan, sebab dan pembetulan; pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 2.2.6, 2.2.7; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Gunakan bahan kitar semula bersih dan gunting dengan pengawasan.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -850,12 +926,22 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "borang penilaian dua kelemahan dan versi ditambah baik; satu lakaran/algoritma berlabel dan catatan penambahbaikan",
-      "rubrik_pbd_khusus": "ketepatan analisis, sebab pembetulan dan bukti perubahan; maklumat berlabel, urutan logik dan kebolehlaksanaan",
+      "artefak_khusus": "rubrik semak serta lakaran atau kod yang telah dibaiki; bukti hasil kerja peringkat semasa dan catatan ujian fungsi",
+      "rubrik_pbd_khusus": "kejelasan kelemahan, sebab dan pembetulan; pematuhan langkah, keselamatan dan fungsi peringkat semasa",
       "contoh_projek_cikgulaju": "produk bekas alat tulis",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "2.2.6",
+          "stage": "improve"
+        },
+        {
+          "code": "2.2.7",
+          "stage": "make"
+        }
+      ]
     },
     {
       "pdp": 10,
@@ -882,8 +968,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "pembentangan",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 2.2.8 melalui tugasan membentangkan dalam projek bekas alat tulis bertema.",
-      "kriteria_kejayaan": "Murid menunjukkan pembentangan ringkas dan rekod maklum balas rakan; semakan berdasarkan kejelasan penerangan, bukti proses, tindak balas kepada soalan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 2.2.8 melalui kad pengelasan atau senarai contoh berlabel, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan kad pengelasan atau senarai contoh berlabel bagi SP 2.2.8; guru menilai ketepatan pilihan dan pengelasan.",
       "bbm": "Contoh produk, helaian lakaran, pensel, pembaris, kad bentuk 2D/3D, bahan kitar semula bersih",
       "langkah": {
         "set_induksi": {
@@ -892,22 +978,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 2.2.8, menunjukkan contoh bagi bekas alat tulis bertema dan memodelkan tindakan yang betul. Murid menyediakan paparan hasil bekas alat tulis bertema yang sudah dibina dalam sesi sebelumnya, menyatakan tujuan, langkah kerja, ujian dan penambahbaikan serta menjawab soalan rakan."
+          "aktiviti": "Guru memberikan model kerja SP 2.2.8 menggunakan Contoh produk, helaian lakaran, pensel, pembaris, kad bentuk 2D/3D, bahan kitar semula bersih. Murid mengenal pasti ciri/komponen berdasarkan contoh sebenar berkaitan produk bekas alat tulis lalu melengkapkan kad pengelasan berlabel (SP 2.2.8)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan individu bagi SP 2.2.8 dan memeriksa langkah murid. Murid menyediakan paparan hasil bekas alat tulis bertema yang sudah dibina dalam sesi sebelumnya, menyatakan tujuan, langkah kerja, ujian dan penambahbaikan serta menjawab soalan rakan. Gunakan bahan kitar semula bersih dan gunting dengan pengawasan."
+          "aktiviti": "Guru membimbing latihan 2.2.8 dan merekod pemerhatian. Murid mengenal pasti ciri/komponen berdasarkan contoh sebenar berkaitan produk bekas alat tulis lalu melengkapkan kad pengelasan berlabel (SP 2.2.8). Gunakan bahan kitar semula bersih dan gunting dengan pengawasan."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: pembentangan ringkas dan rekod maklum balas rakan. Pentaksiran SP 2.2.8 menilai kejelasan penerangan, bukti proses, tindak balas kepada soalan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: kad pengelasan atau senarai contoh berlabel. Guru menyemak ketepatan pilihan dan pengelasan mengikut SP 2.2.8; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi bekas alat tulis bertema."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: pembentangan ringkas dan rekod maklum balas rakan. Pentaksiran SP 2.2.8 menilai kejelasan penerangan, bukti proses, tindak balas kepada soalan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: kad pengelasan atau senarai contoh berlabel. Guru menyemak ketepatan pilihan dan pengelasan mengikut SP 2.2.8; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Gunakan bahan kitar semula bersih dan gunting dengan pengawasan.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -932,12 +1018,18 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "pembentangan ringkas dan rekod maklum balas rakan",
-      "rubrik_pbd_khusus": "kejelasan penerangan, bukti proses, tindak balas kepada soalan",
+      "artefak_khusus": "kad pengelasan atau senarai contoh berlabel",
+      "rubrik_pbd_khusus": "ketepatan pilihan dan pengelasan",
       "contoh_projek_cikgulaju": "produk bekas alat tulis",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "2.2.8",
+          "stage": "identify"
+        }
+      ]
     },
     {
       "pdp": 11,
@@ -969,8 +1061,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "amali",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 3.1.1 dan 3.1.2 melalui tugasan menerangkan dalam projek model bekas pensel menggunakan teknologi terpilih.",
-      "kriteria_kejayaan": "Murid menunjukkan dua penerangan berasaskan contoh dan satu alasan; hasil kerja/prototaip peringkat semasa beserta catatan ujian; semakan berdasarkan ketepatan fakta, fungsi dan justifikasi; pematuhan prosedur, fungsi peringkat semasa dan penambahbaikan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 3.1.1, 3.1.2 melalui dua penerangan fungsi atau sebab dalam jadual banding beza, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan dua penerangan fungsi atau sebab dalam jadual banding beza bagi SP 3.1.1, 3.1.2; guru menilai ketepatan penerangan dan satu justifikasi.",
       "bbm": "Contoh alat konvensional dan moden, kertas lakaran, pembaris, jadual kos, bahan prototaip selamat",
       "langkah": {
         "set_induksi": {
@@ -979,22 +1071,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 3.1.1, menunjukkan contoh bagi model bekas pensel menggunakan teknologi terpilih dan memodelkan tindakan yang betul. Murid membandingkan dua contoh yang berkaitan menerangkan teknologi dan kepentingannya kepada kehidupan manusia dan menerangkan fungsi atau kepentingannya dengan alasan yang munasabah."
+          "aktiviti": "Guru memberikan model kerja SP 3.1.1 menggunakan Contoh alat konvensional dan moden, kertas lakaran, pembaris, jadual kos, bahan prototaip selamat. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 3.1.1 menggunakan dua contoh dan satu sebab yang munasabah."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing SP tambahan 3.1.2 dan memeriksa langkah murid. Murid melaksanakan **peringkat kerja yang sepadan dengan SP 3.1.2** bagi model bekas pensel menggunakan teknologi terpilih mengikut lakaran, kemudian menguji hasil peringkat itu dan menulis satu catatan pembetulan. Guru mengendalikan alatan tajam atau elektrik; murid menggunakan alternatif selamat."
+          "aktiviti": "Guru membimbing latihan 3.1.2 dan merekod pemerhatian. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 3.1.2 menggunakan dua contoh dan satu sebab yang munasabah. Guru mengendalikan alatan tajam atau elektrik; murid menggunakan alternatif selamat."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: dua penerangan berasaskan contoh dan satu alasan; hasil kerja/prototaip peringkat semasa beserta catatan ujian. Pentaksiran SP 3.1.1, 3.1.2 menilai ketepatan fakta, fungsi dan justifikasi; pematuhan prosedur, fungsi peringkat semasa dan penambahbaikan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan penerangan dan satu justifikasi mengikut SP 3.1.1, 3.1.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi model bekas pensel menggunakan teknologi terpilih."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: dua penerangan berasaskan contoh dan satu alasan; hasil kerja/prototaip peringkat semasa beserta catatan ujian. Pentaksiran SP 3.1.1, 3.1.2 menilai ketepatan fakta, fungsi dan justifikasi; pematuhan prosedur, fungsi peringkat semasa dan penambahbaikan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan penerangan dan satu justifikasi mengikut SP 3.1.1, 3.1.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Guru mengendalikan alatan tajam atau elektrik; murid menggunakan alternatif selamat.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -1020,12 +1112,22 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "dua penerangan berasaskan contoh dan satu alasan; hasil kerja/prototaip peringkat semasa beserta catatan ujian",
-      "rubrik_pbd_khusus": "ketepatan fakta, fungsi dan justifikasi; pematuhan prosedur, fungsi peringkat semasa dan penambahbaikan",
+      "artefak_khusus": "dua penerangan fungsi atau sebab dalam jadual banding beza",
+      "rubrik_pbd_khusus": "ketepatan penerangan dan satu justifikasi",
       "contoh_projek_cikgulaju": "model bekas pensel dengan bahan terpakai",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "3.1.1",
+          "stage": "explain"
+        },
+        {
+          "code": "3.1.2",
+          "stage": "explain"
+        }
+      ]
     },
     {
       "pdp": 12,
@@ -1057,8 +1159,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 3.1.3 dan 3.1.4 melalui tugasan melakar/menyusun dalam projek model bekas pensel menggunakan teknologi terpilih.",
-      "kriteria_kejayaan": "Murid menunjukkan satu lakaran/algoritma berlabel dan catatan penambahbaikan; semakan berdasarkan maklumat berlabel, urutan logik dan kebolehlaksanaan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 3.1.3, 3.1.4 melalui lakaran berlabel atau algoritma/carta alir berurutan, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan lakaran berlabel atau algoritma/carta alir berurutan bagi SP 3.1.3, 3.1.4; guru menilai kelengkapan maklumat dan langkah reka bentuk.",
       "bbm": "Contoh alat konvensional dan moden, kertas lakaran, pembaris, jadual kos, bahan prototaip selamat",
       "langkah": {
         "set_induksi": {
@@ -1067,22 +1169,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 3.1.3, menunjukkan contoh bagi model bekas pensel menggunakan teknologi terpilih dan memodelkan tindakan yang betul. Murid menyediakan lakaran berlabel atau algoritma/carta alir langkah demi langkah bagi model bekas pensel menggunakan teknologi terpilih; guru menyemak kejelasan label, fungsi dan urutan."
+          "aktiviti": "Guru memberikan model kerja SP 3.1.3 menggunakan Contoh alat konvensional dan moden, kertas lakaran, pembaris, jadual kos, bahan prototaip selamat. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 3.1.3 dan menyemak ketepatan maklumatnya."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing SP tambahan 3.1.4 dan memeriksa langkah murid. Murid menyediakan lakaran berlabel atau algoritma/carta alir langkah demi langkah bagi model bekas pensel menggunakan teknologi terpilih; guru menyemak kejelasan label, fungsi dan urutan. Guru mengendalikan alatan tajam atau elektrik; murid menggunakan alternatif selamat."
+          "aktiviti": "Guru membimbing latihan 3.1.4 dan merekod pemerhatian. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 3.1.4 dan menyemak ketepatan maklumatnya. Guru mengendalikan alatan tajam atau elektrik; murid menggunakan alternatif selamat."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: satu lakaran/algoritma berlabel dan catatan penambahbaikan. Pentaksiran SP 3.1.3, 3.1.4 menilai maklumat berlabel, urutan logik dan kebolehlaksanaan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 3.1.3, 3.1.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi model bekas pensel menggunakan teknologi terpilih."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: satu lakaran/algoritma berlabel dan catatan penambahbaikan. Pentaksiran SP 3.1.3, 3.1.4 menilai maklumat berlabel, urutan logik dan kebolehlaksanaan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 3.1.3, 3.1.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Guru mengendalikan alatan tajam atau elektrik; murid menggunakan alternatif selamat.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -1109,12 +1211,22 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "satu lakaran/algoritma berlabel dan catatan penambahbaikan",
-      "rubrik_pbd_khusus": "maklumat berlabel, urutan logik dan kebolehlaksanaan",
+      "artefak_khusus": "lakaran berlabel atau algoritma/carta alir berurutan",
+      "rubrik_pbd_khusus": "kelengkapan maklumat dan langkah reka bentuk",
       "contoh_projek_cikgulaju": "model bekas pensel dengan bahan terpakai",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "3.1.3",
+          "stage": "sketch"
+        },
+        {
+          "code": "3.1.4",
+          "stage": "sketch"
+        }
+      ]
     },
     {
       "pdp": 13,
@@ -1146,8 +1258,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 3.1.5 dan 3.1.6 melalui tugasan menilai dan membaiki dalam projek model bekas pensel menggunakan teknologi terpilih.",
-      "kriteria_kejayaan": "Murid menunjukkan borang penilaian dua kelemahan dan versi ditambah baik; jadual kos dengan pengiraan jumlah dan senarai bahan; semakan berdasarkan ketepatan analisis, sebab pembetulan dan bukti perubahan; ketepatan pengiraan, kesesuaian bahan dan penjimatan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 3.1.5, 3.1.6 melalui rubrik semak serta lakaran atau kod yang telah dibaiki; jadual bahan, kuantiti, kos seunit dan anggaran jumlah, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan rubrik semak serta lakaran atau kod yang telah dibaiki; jadual bahan, kuantiti, kos seunit dan anggaran jumlah bagi SP 3.1.5, 3.1.6; guru menilai kejelasan kelemahan, sebab dan pembetulan; ketepatan kos dan kesesuaian pilihan.",
       "bbm": "Contoh alat konvensional dan moden, kertas lakaran, pembaris, jadual kos, bahan prototaip selamat",
       "langkah": {
         "set_induksi": {
@@ -1156,22 +1268,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 3.1.5, menunjukkan contoh bagi model bekas pensel menggunakan teknologi terpilih dan memodelkan tindakan yang betul. Murid menggunakan senarai semak untuk menilai lakaran atau hasil bagi model bekas pensel menggunakan teknologi terpilih, mengenal pasti dua kelemahan dan membaiki sekurang-kurangnya satu aspek."
+          "aktiviti": "Guru memberikan model kerja SP 3.1.5 menggunakan Contoh alat konvensional dan moden, kertas lakaran, pembaris, jadual kos, bahan prototaip selamat. Murid menilai lakaran atau atur cara menggunakan kriteria, mengenal pasti dua kelemahan serta melakukan satu penambahbaikan yang boleh dibuktikan (SP 3.1.5)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing SP tambahan 3.1.6 dan memeriksa langkah murid. Murid menyenaraikan bahan dan alatan bagi model bekas pensel menggunakan teknologi terpilih, melengkapkan jadual kuantiti × kos seunit serta mencadangkan satu penjimatan yang selamat. Guru mengendalikan alatan tajam atau elektrik; murid menggunakan alternatif selamat."
+          "aktiviti": "Guru membimbing latihan 3.1.6 dan merekod pemerhatian. Murid menyediakan jadual bahan, kuantiti, kos seunit dan jumlah anggaran bagi model bekas pensel dengan bahan terpakai serta menyemak ketepatan kiraan (SP 3.1.6). Guru mengendalikan alatan tajam atau elektrik; murid menggunakan alternatif selamat."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: borang penilaian dua kelemahan dan versi ditambah baik; jadual kos dengan pengiraan jumlah dan senarai bahan. Pentaksiran SP 3.1.5, 3.1.6 menilai ketepatan analisis, sebab pembetulan dan bukti perubahan; ketepatan pengiraan, kesesuaian bahan dan penjimatan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: rubrik semak serta lakaran atau kod yang telah dibaiki; jadual bahan, kuantiti, kos seunit dan anggaran jumlah. Guru menyemak kejelasan kelemahan, sebab dan pembetulan; ketepatan kos dan kesesuaian pilihan mengikut SP 3.1.5, 3.1.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi model bekas pensel menggunakan teknologi terpilih."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: borang penilaian dua kelemahan dan versi ditambah baik; jadual kos dengan pengiraan jumlah dan senarai bahan. Pentaksiran SP 3.1.5, 3.1.6 menilai ketepatan analisis, sebab pembetulan dan bukti perubahan; ketepatan pengiraan, kesesuaian bahan dan penjimatan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: rubrik semak serta lakaran atau kod yang telah dibaiki; jadual bahan, kuantiti, kos seunit dan anggaran jumlah. Guru menyemak kejelasan kelemahan, sebab dan pembetulan; ketepatan kos dan kesesuaian pilihan mengikut SP 3.1.5, 3.1.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Guru mengendalikan alatan tajam atau elektrik; murid menggunakan alternatif selamat.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -1197,12 +1309,22 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "borang penilaian dua kelemahan dan versi ditambah baik; jadual kos dengan pengiraan jumlah dan senarai bahan",
-      "rubrik_pbd_khusus": "ketepatan analisis, sebab pembetulan dan bukti perubahan; ketepatan pengiraan, kesesuaian bahan dan penjimatan",
+      "artefak_khusus": "rubrik semak serta lakaran atau kod yang telah dibaiki; jadual bahan, kuantiti, kos seunit dan anggaran jumlah",
+      "rubrik_pbd_khusus": "kejelasan kelemahan, sebab dan pembetulan; ketepatan kos dan kesesuaian pilihan",
       "contoh_projek_cikgulaju": "model bekas pensel dengan bahan terpakai",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "3.1.5",
+          "stage": "improve"
+        },
+        {
+          "code": "3.1.6",
+          "stage": "cost"
+        }
+      ]
     },
     {
       "pdp": 14,
@@ -1234,8 +1356,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "pembentangan",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 3.1.7 dan 3.1.8 melalui tugasan menghasilkan dan menguji dalam projek model bekas pensel menggunakan teknologi terpilih.",
-      "kriteria_kejayaan": "Murid menunjukkan hasil kerja/prototaip peringkat semasa beserta catatan ujian; jadual pengelasan dengan tiga contoh tepat; semakan berdasarkan pematuhan prosedur, fungsi peringkat semasa dan penambahbaikan; bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 3.1.7, 3.1.8 melalui bukti hasil kerja peringkat semasa dan catatan ujian fungsi; pembentangan hasil atau dokumentasi proses dan respons soalan, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan bukti hasil kerja peringkat semasa dan catatan ujian fungsi; pembentangan hasil atau dokumentasi proses dan respons soalan bagi SP 3.1.7, 3.1.8; guru menilai pematuhan langkah, keselamatan dan fungsi peringkat semasa; kejelasan hujah, bukti ujian dan maklum balas.",
       "bbm": "Contoh alat konvensional dan moden, kertas lakaran, pembaris, jadual kos, bahan prototaip selamat",
       "langkah": {
         "set_induksi": {
@@ -1244,22 +1366,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 3.1.7, menunjukkan contoh bagi model bekas pensel menggunakan teknologi terpilih dan memodelkan tindakan yang betul. Murid melaksanakan **peringkat kerja yang sepadan dengan SP 3.1.7** bagi model bekas pensel menggunakan teknologi terpilih mengikut lakaran, kemudian menguji hasil peringkat itu dan menulis satu catatan pembetulan."
+          "aktiviti": "Guru memberikan model kerja SP 3.1.7 menggunakan Contoh alat konvensional dan moden, kertas lakaran, pembaris, jadual kos, bahan prototaip selamat. Murid menghasilkan peringkat kerja model bekas pensel dengan bahan terpakai yang benar-benar diminta oleh SP 3.1.7, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing SP tambahan 3.1.8 dan memeriksa langkah murid. Murid meneliti contoh dan mengisi jadual pengelasan tiga ciri berkaitan membentangkan produk yang dihasilkan dengan menggunakan pelbagai media dalam konteks model bekas pensel menggunakan teknologi terpilih. Guru mengendalikan alatan tajam atau elektrik; murid menggunakan alternatif selamat."
+          "aktiviti": "Guru membimbing latihan 3.1.8 dan merekod pemerhatian. Murid membentangkan hasil semasa dan dokumentasi model bekas pensel dengan bahan terpakai, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 3.1.8). Guru mengendalikan alatan tajam atau elektrik; murid menggunakan alternatif selamat."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: hasil kerja/prototaip peringkat semasa beserta catatan ujian; jadual pengelasan dengan tiga contoh tepat. Pentaksiran SP 3.1.7, 3.1.8 menilai pematuhan prosedur, fungsi peringkat semasa dan penambahbaikan; bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi; pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa; kejelasan hujah, bukti ujian dan maklum balas mengikut SP 3.1.7, 3.1.8; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi model bekas pensel menggunakan teknologi terpilih."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: hasil kerja/prototaip peringkat semasa beserta catatan ujian; jadual pengelasan dengan tiga contoh tepat. Pentaksiran SP 3.1.7, 3.1.8 menilai pematuhan prosedur, fungsi peringkat semasa dan penambahbaikan; bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi; pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa; kejelasan hujah, bukti ujian dan maklum balas mengikut SP 3.1.7, 3.1.8; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Guru mengendalikan alatan tajam atau elektrik; murid menggunakan alternatif selamat.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -1285,12 +1407,22 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "hasil kerja/prototaip peringkat semasa beserta catatan ujian; jadual pengelasan dengan tiga contoh tepat",
-      "rubrik_pbd_khusus": "pematuhan prosedur, fungsi peringkat semasa dan penambahbaikan; bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan",
+      "artefak_khusus": "bukti hasil kerja peringkat semasa dan catatan ujian fungsi; pembentangan hasil atau dokumentasi proses dan respons soalan",
+      "rubrik_pbd_khusus": "pematuhan langkah, keselamatan dan fungsi peringkat semasa; kejelasan hujah, bukti ujian dan maklum balas",
       "contoh_projek_cikgulaju": "model bekas pensel dengan bahan terpakai",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "3.1.7",
+          "stage": "make"
+        },
+        {
+          "code": "3.1.8",
+          "stage": "present"
+        }
+      ]
     },
     {
       "pdp": 15,
@@ -1322,8 +1454,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 4.1.1 dan 4.1.2 melalui tugasan mengenal pasti dalam projek kotak pembungkusan alat tulis.",
-      "kriteria_kejayaan": "Murid menunjukkan jadual pengelasan dengan tiga contoh tepat; semakan berdasarkan bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 4.1.1, 4.1.2 melalui kad pengelasan atau senarai contoh berlabel, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan kad pengelasan atau senarai contoh berlabel bagi SP 4.1.1, 4.1.2; guru menilai ketepatan pilihan dan pengelasan.",
       "bbm": "Contoh pembungkusan terpakai yang bersih, kotak, kadbod, kertas, gunting keselamatan, gam, pembaris",
       "langkah": {
         "set_induksi": {
@@ -1332,22 +1464,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 4.1.1, menunjukkan contoh bagi kotak pembungkusan alat tulis dan memodelkan tindakan yang betul. Murid meneliti contoh dan mengisi jadual pengelasan tiga ciri berkaitan menghubung kait pembungkusan sedia ada dengan reka bentuk pembungkusan dalam konteks kotak pembungkusan alat tulis."
+          "aktiviti": "Guru memberikan model kerja SP 4.1.1 menggunakan Contoh pembungkusan terpakai yang bersih, kotak, kadbod, kertas, gunting keselamatan, gam, pembaris. Murid mengenal pasti ciri/komponen berdasarkan contoh sebenar berkaitan pembungkusan set alat tulis sekolah lalu melengkapkan kad pengelasan berlabel (SP 4.1.1)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing SP tambahan 4.1.2 dan memeriksa langkah murid. Murid meneliti contoh dan mengisi jadual pengelasan tiga ciri berkaitan menyenaraikan ciri pembungkusan yang baik mengikut kategori produk dalam konteks kotak pembungkusan alat tulis. Gunting selamat dan gam digunakan secara berselia."
+          "aktiviti": "Guru membimbing latihan 4.1.2 dan merekod pemerhatian. Murid mengenal pasti ciri/komponen berdasarkan contoh sebenar berkaitan pembungkusan set alat tulis sekolah lalu melengkapkan kad pengelasan berlabel (SP 4.1.2). Gunting selamat dan gam digunakan secara berselia."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: jadual pengelasan dengan tiga contoh tepat. Pentaksiran SP 4.1.1, 4.1.2 menilai bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: kad pengelasan atau senarai contoh berlabel. Guru menyemak ketepatan pilihan dan pengelasan mengikut SP 4.1.1, 4.1.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi kotak pembungkusan alat tulis."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: jadual pengelasan dengan tiga contoh tepat. Pentaksiran SP 4.1.1, 4.1.2 menilai bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: kad pengelasan atau senarai contoh berlabel. Guru menyemak ketepatan pilihan dan pengelasan mengikut SP 4.1.1, 4.1.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Gunting selamat dan gam digunakan secara berselia.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -1373,12 +1505,22 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "jadual pengelasan dengan tiga contoh tepat",
-      "rubrik_pbd_khusus": "bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan",
+      "artefak_khusus": "kad pengelasan atau senarai contoh berlabel",
+      "rubrik_pbd_khusus": "ketepatan pilihan dan pengelasan",
       "contoh_projek_cikgulaju": "pembungkusan set alat tulis sekolah",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "4.1.1",
+          "stage": "identify"
+        },
+        {
+          "code": "4.1.2",
+          "stage": "identify"
+        }
+      ]
     },
     {
       "pdp": 16,
@@ -1410,8 +1552,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 4.1.3 dan 4.1.4 melalui tugasan menerangkan dalam projek kotak pembungkusan alat tulis.",
-      "kriteria_kejayaan": "Murid menunjukkan dua penerangan berasaskan contoh dan satu alasan; satu lakaran/algoritma berlabel dan catatan penambahbaikan; semakan berdasarkan ketepatan fakta, fungsi dan justifikasi; maklumat berlabel, urutan logik dan kebolehlaksanaan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 4.1.3, 4.1.4 melalui dua penerangan fungsi atau sebab dalam jadual banding beza; lakaran berlabel atau algoritma/carta alir berurutan, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan dua penerangan fungsi atau sebab dalam jadual banding beza; lakaran berlabel atau algoritma/carta alir berurutan bagi SP 4.1.3, 4.1.4; guru menilai ketepatan penerangan dan satu justifikasi; kelengkapan maklumat dan langkah reka bentuk.",
       "bbm": "Contoh pembungkusan terpakai yang bersih, kotak, kadbod, kertas, gunting keselamatan, gam, pembaris",
       "langkah": {
         "set_induksi": {
@@ -1420,22 +1562,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 4.1.3, menunjukkan contoh bagi kotak pembungkusan alat tulis dan memodelkan tindakan yang betul. Murid membandingkan dua contoh yang berkaitan menerangkan kepentingan reka bentuk pembungkusan produk dan menerangkan fungsi atau kepentingannya dengan alasan yang munasabah."
+          "aktiviti": "Guru memberikan model kerja SP 4.1.3 menggunakan Contoh pembungkusan terpakai yang bersih, kotak, kadbod, kertas, gunting keselamatan, gam, pembaris. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 4.1.3 menggunakan dua contoh dan satu sebab yang munasabah."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing SP tambahan 4.1.4 dan memeriksa langkah murid. Murid menyediakan lakaran berlabel atau algoritma/carta alir langkah demi langkah bagi kotak pembungkusan alat tulis; guru menyemak kejelasan label, fungsi dan urutan. Gunting selamat dan gam digunakan secara berselia."
+          "aktiviti": "Guru membimbing latihan 4.1.4 dan merekod pemerhatian. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 4.1.4 dan menyemak ketepatan maklumatnya. Gunting selamat dan gam digunakan secara berselia."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: dua penerangan berasaskan contoh dan satu alasan; satu lakaran/algoritma berlabel dan catatan penambahbaikan. Pentaksiran SP 4.1.3, 4.1.4 menilai ketepatan fakta, fungsi dan justifikasi; maklumat berlabel, urutan logik dan kebolehlaksanaan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza; lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak ketepatan penerangan dan satu justifikasi; kelengkapan maklumat dan langkah reka bentuk mengikut SP 4.1.3, 4.1.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi kotak pembungkusan alat tulis."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: dua penerangan berasaskan contoh dan satu alasan; satu lakaran/algoritma berlabel dan catatan penambahbaikan. Pentaksiran SP 4.1.3, 4.1.4 menilai ketepatan fakta, fungsi dan justifikasi; maklumat berlabel, urutan logik dan kebolehlaksanaan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza; lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak ketepatan penerangan dan satu justifikasi; kelengkapan maklumat dan langkah reka bentuk mengikut SP 4.1.3, 4.1.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Gunting selamat dan gam digunakan secara berselia.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -1460,12 +1602,22 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "dua penerangan berasaskan contoh dan satu alasan; satu lakaran/algoritma berlabel dan catatan penambahbaikan",
-      "rubrik_pbd_khusus": "ketepatan fakta, fungsi dan justifikasi; maklumat berlabel, urutan logik dan kebolehlaksanaan",
+      "artefak_khusus": "dua penerangan fungsi atau sebab dalam jadual banding beza; lakaran berlabel atau algoritma/carta alir berurutan",
+      "rubrik_pbd_khusus": "ketepatan penerangan dan satu justifikasi; kelengkapan maklumat dan langkah reka bentuk",
       "contoh_projek_cikgulaju": "pembungkusan set alat tulis sekolah",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "4.1.3",
+          "stage": "explain"
+        },
+        {
+          "code": "4.1.4",
+          "stage": "sketch"
+        }
+      ]
     },
     {
       "pdp": 17,
@@ -1497,8 +1649,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 4.1.5 dan 4.1.6 melalui tugasan melakar/menyusun dalam projek kotak pembungkusan alat tulis.",
-      "kriteria_kejayaan": "Murid menunjukkan satu lakaran/algoritma berlabel dan catatan penambahbaikan; semakan berdasarkan maklumat berlabel, urutan logik dan kebolehlaksanaan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 4.1.5, 4.1.6 melalui lakaran berlabel atau algoritma/carta alir berurutan; dua penerangan fungsi atau sebab dalam jadual banding beza, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan lakaran berlabel atau algoritma/carta alir berurutan; dua penerangan fungsi atau sebab dalam jadual banding beza bagi SP 4.1.5, 4.1.6; guru menilai kelengkapan maklumat dan langkah reka bentuk; ketepatan penerangan dan satu justifikasi.",
       "bbm": "Contoh pembungkusan terpakai yang bersih, kotak, kadbod, kertas, gunting keselamatan, gam, pembaris",
       "langkah": {
         "set_induksi": {
@@ -1507,22 +1659,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 4.1.5, menunjukkan contoh bagi kotak pembungkusan alat tulis dan memodelkan tindakan yang betul. Murid menyediakan lakaran berlabel atau algoritma/carta alir langkah demi langkah bagi kotak pembungkusan alat tulis; guru menyemak kejelasan label, fungsi dan urutan."
+          "aktiviti": "Guru memberikan model kerja SP 4.1.5 menggunakan Contoh pembungkusan terpakai yang bersih, kotak, kadbod, kertas, gunting keselamatan, gam, pembaris. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 4.1.5 dan menyemak ketepatan maklumatnya."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing SP tambahan 4.1.6 dan memeriksa langkah murid. Murid menyediakan lakaran berlabel atau algoritma/carta alir langkah demi langkah bagi kotak pembungkusan alat tulis; guru menyemak kejelasan label, fungsi dan urutan. Gunting selamat dan gam digunakan secara berselia."
+          "aktiviti": "Guru membimbing latihan 4.1.6 dan merekod pemerhatian. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 4.1.6 menggunakan dua contoh dan satu sebab yang munasabah. Gunting selamat dan gam digunakan secara berselia."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: satu lakaran/algoritma berlabel dan catatan penambahbaikan. Pentaksiran SP 4.1.5, 4.1.6 menilai maklumat berlabel, urutan logik dan kebolehlaksanaan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan; dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak kelengkapan maklumat dan langkah reka bentuk; ketepatan penerangan dan satu justifikasi mengikut SP 4.1.5, 4.1.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi kotak pembungkusan alat tulis."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: satu lakaran/algoritma berlabel dan catatan penambahbaikan. Pentaksiran SP 4.1.5, 4.1.6 menilai maklumat berlabel, urutan logik dan kebolehlaksanaan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan; dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak kelengkapan maklumat dan langkah reka bentuk; ketepatan penerangan dan satu justifikasi mengikut SP 4.1.5, 4.1.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Gunting selamat dan gam digunakan secara berselia.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -1547,12 +1699,22 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "satu lakaran/algoritma berlabel dan catatan penambahbaikan",
-      "rubrik_pbd_khusus": "maklumat berlabel, urutan logik dan kebolehlaksanaan",
+      "artefak_khusus": "lakaran berlabel atau algoritma/carta alir berurutan; dua penerangan fungsi atau sebab dalam jadual banding beza",
+      "rubrik_pbd_khusus": "kelengkapan maklumat dan langkah reka bentuk; ketepatan penerangan dan satu justifikasi",
       "contoh_projek_cikgulaju": "pembungkusan set alat tulis sekolah",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "4.1.5",
+          "stage": "sketch"
+        },
+        {
+          "code": "4.1.6",
+          "stage": "explain"
+        }
+      ]
     },
     {
       "pdp": 18,
@@ -1584,8 +1746,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 4.1.7 dan 4.1.8 melalui tugasan menilai dan membaiki dalam projek kotak pembungkusan alat tulis.",
-      "kriteria_kejayaan": "Murid menunjukkan borang penilaian dua kelemahan dan versi ditambah baik; jadual kos dengan pengiraan jumlah dan senarai bahan; semakan berdasarkan ketepatan analisis, sebab pembetulan dan bukti perubahan; ketepatan pengiraan, kesesuaian bahan dan penjimatan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 4.1.7, 4.1.8 melalui rubrik semak serta lakaran atau kod yang telah dibaiki; jadual bahan, kuantiti, kos seunit dan anggaran jumlah, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan rubrik semak serta lakaran atau kod yang telah dibaiki; jadual bahan, kuantiti, kos seunit dan anggaran jumlah bagi SP 4.1.7, 4.1.8; guru menilai kejelasan kelemahan, sebab dan pembetulan; ketepatan kos dan kesesuaian pilihan.",
       "bbm": "Contoh pembungkusan terpakai yang bersih, kotak, kadbod, kertas, gunting keselamatan, gam, pembaris",
       "langkah": {
         "set_induksi": {
@@ -1594,22 +1756,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 4.1.7, menunjukkan contoh bagi kotak pembungkusan alat tulis dan memodelkan tindakan yang betul. Murid menggunakan senarai semak untuk menilai lakaran atau hasil bagi kotak pembungkusan alat tulis, mengenal pasti dua kelemahan dan membaiki sekurang-kurangnya satu aspek."
+          "aktiviti": "Guru memberikan model kerja SP 4.1.7 menggunakan Contoh pembungkusan terpakai yang bersih, kotak, kadbod, kertas, gunting keselamatan, gam, pembaris. Murid menilai lakaran atau atur cara menggunakan kriteria, mengenal pasti dua kelemahan serta melakukan satu penambahbaikan yang boleh dibuktikan (SP 4.1.7)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing SP tambahan 4.1.8 dan memeriksa langkah murid. Murid menyenaraikan bahan dan alatan bagi kotak pembungkusan alat tulis, melengkapkan jadual kuantiti × kos seunit serta mencadangkan satu penjimatan yang selamat. Gunting selamat dan gam digunakan secara berselia."
+          "aktiviti": "Guru membimbing latihan 4.1.8 dan merekod pemerhatian. Murid menyediakan jadual bahan, kuantiti, kos seunit dan jumlah anggaran bagi pembungkusan set alat tulis sekolah serta menyemak ketepatan kiraan (SP 4.1.8). Gunting selamat dan gam digunakan secara berselia."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: borang penilaian dua kelemahan dan versi ditambah baik; jadual kos dengan pengiraan jumlah dan senarai bahan. Pentaksiran SP 4.1.7, 4.1.8 menilai ketepatan analisis, sebab pembetulan dan bukti perubahan; ketepatan pengiraan, kesesuaian bahan dan penjimatan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: rubrik semak serta lakaran atau kod yang telah dibaiki; jadual bahan, kuantiti, kos seunit dan anggaran jumlah. Guru menyemak kejelasan kelemahan, sebab dan pembetulan; ketepatan kos dan kesesuaian pilihan mengikut SP 4.1.7, 4.1.8; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi kotak pembungkusan alat tulis."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: borang penilaian dua kelemahan dan versi ditambah baik; jadual kos dengan pengiraan jumlah dan senarai bahan. Pentaksiran SP 4.1.7, 4.1.8 menilai ketepatan analisis, sebab pembetulan dan bukti perubahan; ketepatan pengiraan, kesesuaian bahan dan penjimatan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: rubrik semak serta lakaran atau kod yang telah dibaiki; jadual bahan, kuantiti, kos seunit dan anggaran jumlah. Guru menyemak kejelasan kelemahan, sebab dan pembetulan; ketepatan kos dan kesesuaian pilihan mengikut SP 4.1.7, 4.1.8; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Gunting selamat dan gam digunakan secara berselia.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -1635,12 +1797,22 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "borang penilaian dua kelemahan dan versi ditambah baik; jadual kos dengan pengiraan jumlah dan senarai bahan",
-      "rubrik_pbd_khusus": "ketepatan analisis, sebab pembetulan dan bukti perubahan; ketepatan pengiraan, kesesuaian bahan dan penjimatan",
+      "artefak_khusus": "rubrik semak serta lakaran atau kod yang telah dibaiki; jadual bahan, kuantiti, kos seunit dan anggaran jumlah",
+      "rubrik_pbd_khusus": "kejelasan kelemahan, sebab dan pembetulan; ketepatan kos dan kesesuaian pilihan",
       "contoh_projek_cikgulaju": "pembungkusan set alat tulis sekolah",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "4.1.7",
+          "stage": "improve"
+        },
+        {
+          "code": "4.1.8",
+          "stage": "cost"
+        }
+      ]
     },
     {
       "pdp": 19,
@@ -1672,8 +1844,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "pembentangan",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 4.1.9 dan 4.1.10 melalui tugasan melakar/menyusun dalam projek kotak pembungkusan alat tulis.",
-      "kriteria_kejayaan": "Murid menunjukkan satu lakaran/algoritma berlabel dan catatan penambahbaikan; hasil kerja/prototaip peringkat semasa beserta catatan ujian; semakan berdasarkan maklumat berlabel, urutan logik dan kebolehlaksanaan; pematuhan prosedur, fungsi peringkat semasa dan penambahbaikan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 4.1.9, 4.1.10 melalui bukti hasil kerja peringkat semasa dan catatan ujian fungsi; pembentangan hasil atau dokumentasi proses dan respons soalan, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan bukti hasil kerja peringkat semasa dan catatan ujian fungsi; pembentangan hasil atau dokumentasi proses dan respons soalan bagi SP 4.1.9, 4.1.10; guru menilai pematuhan langkah, keselamatan dan fungsi peringkat semasa; kejelasan hujah, bukti ujian dan maklum balas.",
       "bbm": "Contoh pembungkusan terpakai yang bersih, kotak, kadbod, kertas, gunting keselamatan, gam, pembaris",
       "langkah": {
         "set_induksi": {
@@ -1682,22 +1854,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 4.1.9, menunjukkan contoh bagi kotak pembungkusan alat tulis dan memodelkan tindakan yang betul. Murid menyediakan lakaran berlabel atau algoritma/carta alir langkah demi langkah bagi kotak pembungkusan alat tulis; guru menyemak kejelasan label, fungsi dan urutan."
+          "aktiviti": "Guru memberikan model kerja SP 4.1.9 menggunakan Contoh pembungkusan terpakai yang bersih, kotak, kadbod, kertas, gunting keselamatan, gam, pembaris. Murid menghasilkan peringkat kerja pembungkusan set alat tulis sekolah yang benar-benar diminta oleh SP 4.1.9, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing SP tambahan 4.1.10 dan memeriksa langkah murid. Murid melaksanakan **peringkat kerja yang sepadan dengan SP 4.1.10** bagi kotak pembungkusan alat tulis mengikut lakaran, kemudian menguji hasil peringkat itu dan menulis satu catatan pembetulan. Gunting selamat dan gam digunakan secara berselia."
+          "aktiviti": "Guru membimbing latihan 4.1.10 dan merekod pemerhatian. Murid membentangkan hasil semasa dan dokumentasi pembungkusan set alat tulis sekolah, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 4.1.10). Gunting selamat dan gam digunakan secara berselia."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: satu lakaran/algoritma berlabel dan catatan penambahbaikan; hasil kerja/prototaip peringkat semasa beserta catatan ujian. Pentaksiran SP 4.1.9, 4.1.10 menilai maklumat berlabel, urutan logik dan kebolehlaksanaan; pematuhan prosedur, fungsi peringkat semasa dan penambahbaikan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi; pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa; kejelasan hujah, bukti ujian dan maklum balas mengikut SP 4.1.9, 4.1.10; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi kotak pembungkusan alat tulis."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: satu lakaran/algoritma berlabel dan catatan penambahbaikan; hasil kerja/prototaip peringkat semasa beserta catatan ujian. Pentaksiran SP 4.1.9, 4.1.10 menilai maklumat berlabel, urutan logik dan kebolehlaksanaan; pematuhan prosedur, fungsi peringkat semasa dan penambahbaikan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi; pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa; kejelasan hujah, bukti ujian dan maklum balas mengikut SP 4.1.9, 4.1.10; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Gunting selamat dan gam digunakan secara berselia.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -1723,12 +1895,22 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "satu lakaran/algoritma berlabel dan catatan penambahbaikan; hasil kerja/prototaip peringkat semasa beserta catatan ujian",
-      "rubrik_pbd_khusus": "maklumat berlabel, urutan logik dan kebolehlaksanaan; pematuhan prosedur, fungsi peringkat semasa dan penambahbaikan",
+      "artefak_khusus": "bukti hasil kerja peringkat semasa dan catatan ujian fungsi; pembentangan hasil atau dokumentasi proses dan respons soalan",
+      "rubrik_pbd_khusus": "pematuhan langkah, keselamatan dan fungsi peringkat semasa; kejelasan hujah, bukti ujian dan maklum balas",
       "contoh_projek_cikgulaju": "pembungkusan set alat tulis sekolah",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "4.1.9",
+          "stage": "make"
+        },
+        {
+          "code": "4.1.10",
+          "stage": "present"
+        }
+      ]
     },
     {
       "pdp": 20,
@@ -1760,8 +1942,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.1.1 dan 5.1.2 melalui tugasan mengenal pasti dalam projek hiasan sajian buah-buahan.",
-      "kriteria_kejayaan": "Murid menunjukkan jadual pengelasan dengan tiga contoh tepat; dua penerangan berasaskan contoh dan satu alasan; semakan berdasarkan bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan; ketepatan fakta, fungsi dan justifikasi.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 5.1.1, 5.1.2 melalui kad pengelasan atau senarai contoh berlabel; dua penerangan fungsi atau sebab dalam jadual banding beza, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan kad pengelasan atau senarai contoh berlabel; dua penerangan fungsi atau sebab dalam jadual banding beza bagi SP 5.1.1, 5.1.2; guru menilai ketepatan pilihan dan pengelasan; ketepatan penerangan dan satu justifikasi.",
       "bbm": "Contoh foto reka bentuk makanan, lakaran, bahan makanan bersih mengikut alahan murid, sarung tangan, peralatan makanan yang sesuai",
       "langkah": {
         "set_induksi": {
@@ -1770,22 +1952,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 5.1.1, menunjukkan contoh bagi hiasan sajian buah-buahan dan memodelkan tindakan yang betul. Murid meneliti contoh dan mengisi jadual pengelasan tiga ciri berkaitan mengenal pasti reka bentuk yang sesuai pada jenis makanan yang dipilih dalam konteks hiasan sajian buah-buahan."
+          "aktiviti": "Guru memberikan model kerja SP 5.1.1 menggunakan Contoh foto reka bentuk makanan, lakaran, bahan makanan bersih mengikut alahan murid, sarung tangan, peralatan makanan yang sesuai. Murid mengenal pasti ciri/komponen berdasarkan contoh sebenar berkaitan reka bentuk hidangan buah dalam bekas lalu melengkapkan kad pengelasan berlabel (SP 5.1.1)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing SP tambahan 5.1.2 dan memeriksa langkah murid. Murid membandingkan dua contoh yang berkaitan menerangkan kepentingan reka bentuk makanan dan menerangkan fungsi atau kepentingannya dengan alasan yang munasabah. Semak alahan dan kebersihan makanan; potongan menggunakan pisau hanya dilakukan guru."
+          "aktiviti": "Guru membimbing latihan 5.1.2 dan merekod pemerhatian. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 5.1.2 menggunakan dua contoh dan satu sebab yang munasabah. Semak alahan dan kebersihan makanan; potongan menggunakan pisau hanya dilakukan guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: jadual pengelasan dengan tiga contoh tepat; dua penerangan berasaskan contoh dan satu alasan. Pentaksiran SP 5.1.1, 5.1.2 menilai bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan; ketepatan fakta, fungsi dan justifikasi. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: kad pengelasan atau senarai contoh berlabel; dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan pilihan dan pengelasan; ketepatan penerangan dan satu justifikasi mengikut SP 5.1.1, 5.1.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi hiasan sajian buah-buahan."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: jadual pengelasan dengan tiga contoh tepat; dua penerangan berasaskan contoh dan satu alasan. Pentaksiran SP 5.1.1, 5.1.2 menilai bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan; ketepatan fakta, fungsi dan justifikasi. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: kad pengelasan atau senarai contoh berlabel; dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan pilihan dan pengelasan; ketepatan penerangan dan satu justifikasi mengikut SP 5.1.1, 5.1.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Semak alahan dan kebersihan makanan; potongan menggunakan pisau hanya dilakukan guru.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -1811,12 +1993,22 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "jadual pengelasan dengan tiga contoh tepat; dua penerangan berasaskan contoh dan satu alasan",
-      "rubrik_pbd_khusus": "bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan; ketepatan fakta, fungsi dan justifikasi",
+      "artefak_khusus": "kad pengelasan atau senarai contoh berlabel; dua penerangan fungsi atau sebab dalam jadual banding beza",
+      "rubrik_pbd_khusus": "ketepatan pilihan dan pengelasan; ketepatan penerangan dan satu justifikasi",
       "contoh_projek_cikgulaju": "reka bentuk hidangan buah dalam bekas",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "5.1.1",
+          "stage": "identify"
+        },
+        {
+          "code": "5.1.2",
+          "stage": "explain"
+        }
+      ]
     },
     {
       "pdp": 21,
@@ -1848,8 +2040,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.1.3 dan 5.1.4 melalui tugasan melakar/menyusun dalam projek hiasan sajian buah-buahan.",
-      "kriteria_kejayaan": "Murid menunjukkan satu lakaran/algoritma berlabel dan catatan penambahbaikan; semakan berdasarkan maklumat berlabel, urutan logik dan kebolehlaksanaan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 5.1.3, 5.1.4 melalui lakaran berlabel atau algoritma/carta alir berurutan, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan lakaran berlabel atau algoritma/carta alir berurutan bagi SP 5.1.3, 5.1.4; guru menilai kelengkapan maklumat dan langkah reka bentuk.",
       "bbm": "Contoh foto reka bentuk makanan, lakaran, bahan makanan bersih mengikut alahan murid, sarung tangan, peralatan makanan yang sesuai",
       "langkah": {
         "set_induksi": {
@@ -1858,22 +2050,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 5.1.3, menunjukkan contoh bagi hiasan sajian buah-buahan dan memodelkan tindakan yang betul. Murid menyediakan lakaran berlabel atau algoritma/carta alir langkah demi langkah bagi hiasan sajian buah-buahan; guru menyemak kejelasan label, fungsi dan urutan."
+          "aktiviti": "Guru memberikan model kerja SP 5.1.3 menggunakan Contoh foto reka bentuk makanan, lakaran, bahan makanan bersih mengikut alahan murid, sarung tangan, peralatan makanan yang sesuai. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 5.1.3 dan menyemak ketepatan maklumatnya."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing SP tambahan 5.1.4 dan memeriksa langkah murid. Murid menyediakan lakaran berlabel atau algoritma/carta alir langkah demi langkah bagi hiasan sajian buah-buahan; guru menyemak kejelasan label, fungsi dan urutan. Semak alahan dan kebersihan makanan; potongan menggunakan pisau hanya dilakukan guru."
+          "aktiviti": "Guru membimbing latihan 5.1.4 dan merekod pemerhatian. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 5.1.4 dan menyemak ketepatan maklumatnya. Semak alahan dan kebersihan makanan; potongan menggunakan pisau hanya dilakukan guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: satu lakaran/algoritma berlabel dan catatan penambahbaikan. Pentaksiran SP 5.1.3, 5.1.4 menilai maklumat berlabel, urutan logik dan kebolehlaksanaan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 5.1.3, 5.1.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi hiasan sajian buah-buahan."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: satu lakaran/algoritma berlabel dan catatan penambahbaikan. Pentaksiran SP 5.1.3, 5.1.4 menilai maklumat berlabel, urutan logik dan kebolehlaksanaan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 5.1.3, 5.1.4; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Semak alahan dan kebersihan makanan; potongan menggunakan pisau hanya dilakukan guru.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -1898,12 +2090,22 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "satu lakaran/algoritma berlabel dan catatan penambahbaikan",
-      "rubrik_pbd_khusus": "maklumat berlabel, urutan logik dan kebolehlaksanaan",
+      "artefak_khusus": "lakaran berlabel atau algoritma/carta alir berurutan",
+      "rubrik_pbd_khusus": "kelengkapan maklumat dan langkah reka bentuk",
       "contoh_projek_cikgulaju": "reka bentuk hidangan buah dalam bekas",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "5.1.3",
+          "stage": "sketch"
+        },
+        {
+          "code": "5.1.4",
+          "stage": "sketch"
+        }
+      ]
     },
     {
       "pdp": 22,
@@ -1935,8 +2137,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.1.5 dan 5.1.6 melalui tugasan melakar/menyusun dalam projek hiasan sajian buah-buahan.",
-      "kriteria_kejayaan": "Murid menunjukkan satu lakaran/algoritma berlabel dan catatan penambahbaikan; borang penilaian dua kelemahan dan versi ditambah baik; semakan berdasarkan maklumat berlabel, urutan logik dan kebolehlaksanaan; ketepatan analisis, sebab pembetulan dan bukti perubahan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 5.1.5, 5.1.6 melalui dua penerangan fungsi atau sebab dalam jadual banding beza; rubrik semak serta lakaran atau kod yang telah dibaiki, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan dua penerangan fungsi atau sebab dalam jadual banding beza; rubrik semak serta lakaran atau kod yang telah dibaiki bagi SP 5.1.5, 5.1.6; guru menilai ketepatan penerangan dan satu justifikasi; kejelasan kelemahan, sebab dan pembetulan.",
       "bbm": "Contoh foto reka bentuk makanan, lakaran, bahan makanan bersih mengikut alahan murid, sarung tangan, peralatan makanan yang sesuai",
       "langkah": {
         "set_induksi": {
@@ -1945,22 +2147,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 5.1.5, menunjukkan contoh bagi hiasan sajian buah-buahan dan memodelkan tindakan yang betul. Murid menyediakan lakaran berlabel atau algoritma/carta alir langkah demi langkah bagi hiasan sajian buah-buahan; guru menyemak kejelasan label, fungsi dan urutan."
+          "aktiviti": "Guru memberikan model kerja SP 5.1.5 menggunakan Contoh foto reka bentuk makanan, lakaran, bahan makanan bersih mengikut alahan murid, sarung tangan, peralatan makanan yang sesuai. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 5.1.5 menggunakan dua contoh dan satu sebab yang munasabah."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing SP tambahan 5.1.6 dan memeriksa langkah murid. Murid menggunakan senarai semak untuk menilai lakaran atau hasil bagi hiasan sajian buah-buahan, mengenal pasti dua kelemahan dan membaiki sekurang-kurangnya satu aspek. Semak alahan dan kebersihan makanan; potongan menggunakan pisau hanya dilakukan guru."
+          "aktiviti": "Guru membimbing latihan 5.1.6 dan merekod pemerhatian. Murid menilai lakaran atau atur cara menggunakan kriteria, mengenal pasti dua kelemahan serta melakukan satu penambahbaikan yang boleh dibuktikan (SP 5.1.6). Semak alahan dan kebersihan makanan; potongan menggunakan pisau hanya dilakukan guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: satu lakaran/algoritma berlabel dan catatan penambahbaikan; borang penilaian dua kelemahan dan versi ditambah baik. Pentaksiran SP 5.1.5, 5.1.6 menilai maklumat berlabel, urutan logik dan kebolehlaksanaan; ketepatan analisis, sebab pembetulan dan bukti perubahan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza; rubrik semak serta lakaran atau kod yang telah dibaiki. Guru menyemak ketepatan penerangan dan satu justifikasi; kejelasan kelemahan, sebab dan pembetulan mengikut SP 5.1.5, 5.1.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi hiasan sajian buah-buahan."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: satu lakaran/algoritma berlabel dan catatan penambahbaikan; borang penilaian dua kelemahan dan versi ditambah baik. Pentaksiran SP 5.1.5, 5.1.6 menilai maklumat berlabel, urutan logik dan kebolehlaksanaan; ketepatan analisis, sebab pembetulan dan bukti perubahan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza; rubrik semak serta lakaran atau kod yang telah dibaiki. Guru menyemak ketepatan penerangan dan satu justifikasi; kejelasan kelemahan, sebab dan pembetulan mengikut SP 5.1.5, 5.1.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Semak alahan dan kebersihan makanan; potongan menggunakan pisau hanya dilakukan guru.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -1986,12 +2188,22 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "satu lakaran/algoritma berlabel dan catatan penambahbaikan; borang penilaian dua kelemahan dan versi ditambah baik",
-      "rubrik_pbd_khusus": "maklumat berlabel, urutan logik dan kebolehlaksanaan; ketepatan analisis, sebab pembetulan dan bukti perubahan",
+      "artefak_khusus": "dua penerangan fungsi atau sebab dalam jadual banding beza; rubrik semak serta lakaran atau kod yang telah dibaiki",
+      "rubrik_pbd_khusus": "ketepatan penerangan dan satu justifikasi; kejelasan kelemahan, sebab dan pembetulan",
       "contoh_projek_cikgulaju": "reka bentuk hidangan buah dalam bekas",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "5.1.5",
+          "stage": "explain"
+        },
+        {
+          "code": "5.1.6",
+          "stage": "improve"
+        }
+      ]
     },
     {
       "pdp": 23,
@@ -2023,8 +2235,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.1.7 dan 5.1.8 melalui tugasan mengira dan memilih dalam projek hiasan sajian buah-buahan.",
-      "kriteria_kejayaan": "Murid menunjukkan jadual kos dengan pengiraan jumlah dan senarai bahan; satu lakaran/algoritma berlabel dan catatan penambahbaikan; semakan berdasarkan ketepatan pengiraan, kesesuaian bahan dan penjimatan; maklumat berlabel, urutan logik dan kebolehlaksanaan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 5.1.7, 5.1.8 melalui jadual bahan, kuantiti, kos seunit dan anggaran jumlah; bukti hasil kerja peringkat semasa dan catatan ujian fungsi, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan jadual bahan, kuantiti, kos seunit dan anggaran jumlah; bukti hasil kerja peringkat semasa dan catatan ujian fungsi bagi SP 5.1.7, 5.1.8; guru menilai ketepatan kos dan kesesuaian pilihan; pematuhan langkah, keselamatan dan fungsi peringkat semasa.",
       "bbm": "Contoh foto reka bentuk makanan, lakaran, bahan makanan bersih mengikut alahan murid, sarung tangan, peralatan makanan yang sesuai",
       "langkah": {
         "set_induksi": {
@@ -2033,22 +2245,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 5.1.7, menunjukkan contoh bagi hiasan sajian buah-buahan dan memodelkan tindakan yang betul. Murid menyenaraikan bahan dan alatan bagi hiasan sajian buah-buahan, melengkapkan jadual kuantiti × kos seunit serta mencadangkan satu penjimatan yang selamat."
+          "aktiviti": "Guru memberikan model kerja SP 5.1.7 menggunakan Contoh foto reka bentuk makanan, lakaran, bahan makanan bersih mengikut alahan murid, sarung tangan, peralatan makanan yang sesuai. Murid menyediakan jadual bahan, kuantiti, kos seunit dan jumlah anggaran bagi reka bentuk hidangan buah dalam bekas serta menyemak ketepatan kiraan (SP 5.1.7)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing SP tambahan 5.1.8 dan memeriksa langkah murid. Murid menyediakan lakaran berlabel atau algoritma/carta alir langkah demi langkah bagi hiasan sajian buah-buahan; guru menyemak kejelasan label, fungsi dan urutan. Semak alahan dan kebersihan makanan; potongan menggunakan pisau hanya dilakukan guru."
+          "aktiviti": "Guru membimbing latihan 5.1.8 dan merekod pemerhatian. Murid menghasilkan peringkat kerja reka bentuk hidangan buah dalam bekas yang benar-benar diminta oleh SP 5.1.8, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah. Semak alahan dan kebersihan makanan; potongan menggunakan pisau hanya dilakukan guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: jadual kos dengan pengiraan jumlah dan senarai bahan; satu lakaran/algoritma berlabel dan catatan penambahbaikan. Pentaksiran SP 5.1.7, 5.1.8 menilai ketepatan pengiraan, kesesuaian bahan dan penjimatan; maklumat berlabel, urutan logik dan kebolehlaksanaan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: jadual bahan, kuantiti, kos seunit dan anggaran jumlah; bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak ketepatan kos dan kesesuaian pilihan; pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 5.1.7, 5.1.8; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi hiasan sajian buah-buahan."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: jadual kos dengan pengiraan jumlah dan senarai bahan; satu lakaran/algoritma berlabel dan catatan penambahbaikan. Pentaksiran SP 5.1.7, 5.1.8 menilai ketepatan pengiraan, kesesuaian bahan dan penjimatan; maklumat berlabel, urutan logik dan kebolehlaksanaan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: jadual bahan, kuantiti, kos seunit dan anggaran jumlah; bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak ketepatan kos dan kesesuaian pilihan; pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 5.1.7, 5.1.8; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Semak alahan dan kebersihan makanan; potongan menggunakan pisau hanya dilakukan guru.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -2074,12 +2286,22 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "jadual kos dengan pengiraan jumlah dan senarai bahan; satu lakaran/algoritma berlabel dan catatan penambahbaikan",
-      "rubrik_pbd_khusus": "ketepatan pengiraan, kesesuaian bahan dan penjimatan; maklumat berlabel, urutan logik dan kebolehlaksanaan",
+      "artefak_khusus": "jadual bahan, kuantiti, kos seunit dan anggaran jumlah; bukti hasil kerja peringkat semasa dan catatan ujian fungsi",
+      "rubrik_pbd_khusus": "ketepatan kos dan kesesuaian pilihan; pematuhan langkah, keselamatan dan fungsi peringkat semasa",
       "contoh_projek_cikgulaju": "reka bentuk hidangan buah dalam bekas",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "5.1.7",
+          "stage": "cost"
+        },
+        {
+          "code": "5.1.8",
+          "stage": "make"
+        }
+      ]
     },
     {
       "pdp": 24,
@@ -2106,8 +2328,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "pembentangan",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 5.1.9 melalui tugasan mengenal pasti dalam projek hiasan sajian buah-buahan.",
-      "kriteria_kejayaan": "Murid menunjukkan jadual pengelasan dengan tiga contoh tepat; semakan berdasarkan bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 5.1.9 melalui pembentangan hasil atau dokumentasi proses dan respons soalan, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan pembentangan hasil atau dokumentasi proses dan respons soalan bagi SP 5.1.9; guru menilai kejelasan hujah, bukti ujian dan maklum balas.",
       "bbm": "Contoh foto reka bentuk makanan, lakaran, bahan makanan bersih mengikut alahan murid, sarung tangan, peralatan makanan yang sesuai",
       "langkah": {
         "set_induksi": {
@@ -2116,22 +2338,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 5.1.9, menunjukkan contoh bagi hiasan sajian buah-buahan dan memodelkan tindakan yang betul. Murid meneliti contoh dan mengisi jadual pengelasan tiga ciri berkaitan membentangkan produk yang dihasilkan dengan menggunakan pelbagai media dalam konteks hiasan sajian buah-buahan."
+          "aktiviti": "Guru memberikan model kerja SP 5.1.9 menggunakan Contoh foto reka bentuk makanan, lakaran, bahan makanan bersih mengikut alahan murid, sarung tangan, peralatan makanan yang sesuai. Murid membentangkan hasil semasa dan dokumentasi reka bentuk hidangan buah dalam bekas, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 5.1.9)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan individu bagi SP 5.1.9 dan memeriksa langkah murid. Murid meneliti contoh dan mengisi jadual pengelasan tiga ciri berkaitan membentangkan produk yang dihasilkan dengan menggunakan pelbagai media dalam konteks hiasan sajian buah-buahan. Semak alahan dan kebersihan makanan; potongan menggunakan pisau hanya dilakukan guru."
+          "aktiviti": "Guru membimbing latihan 5.1.9 dan merekod pemerhatian. Murid membentangkan hasil semasa dan dokumentasi reka bentuk hidangan buah dalam bekas, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 5.1.9). Semak alahan dan kebersihan makanan; potongan menggunakan pisau hanya dilakukan guru."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: jadual pengelasan dengan tiga contoh tepat. Pentaksiran SP 5.1.9 menilai bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak kejelasan hujah, bukti ujian dan maklum balas mengikut SP 5.1.9; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi hiasan sajian buah-buahan."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: jadual pengelasan dengan tiga contoh tepat. Pentaksiran SP 5.1.9 menilai bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak kejelasan hujah, bukti ujian dan maklum balas mengikut SP 5.1.9; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Semak alahan dan kebersihan makanan; potongan menggunakan pisau hanya dilakukan guru.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -2156,12 +2378,18 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "jadual pengelasan dengan tiga contoh tepat",
-      "rubrik_pbd_khusus": "bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan",
+      "artefak_khusus": "pembentangan hasil atau dokumentasi proses dan respons soalan",
+      "rubrik_pbd_khusus": "kejelasan hujah, bukti ujian dan maklum balas",
       "contoh_projek_cikgulaju": "reka bentuk hidangan buah dalam bekas",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "5.1.9",
+          "stage": "present"
+        }
+      ]
     },
     {
       "pdp": 25,
@@ -2193,8 +2421,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.1.1 dan 6.1.2 melalui tugasan mengenal pasti dalam projek animasi watak bergerak menggunakan atur cara blok.",
-      "kriteria_kejayaan": "Murid menunjukkan jadual pengelasan dengan tiga contoh tepat; satu lakaran/algoritma berlabel dan catatan penambahbaikan; semakan berdasarkan bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan; maklumat berlabel, urutan logik dan kebolehlaksanaan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.1.1, 6.1.2 melalui kad pengelasan atau senarai contoh berlabel, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan kad pengelasan atau senarai contoh berlabel bagi SP 6.1.1, 6.1.2; guru menilai ketepatan pilihan dan pengelasan.",
       "bbm": "Kad langkah algoritma, carta alir, komputer atau simulasi pengaturcaraan blok, projektor, helaian uji atur cara",
       "langkah": {
         "set_induksi": {
@@ -2203,22 +2431,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 6.1.1, menunjukkan contoh bagi animasi watak bergerak menggunakan atur cara blok dan memodelkan tindakan yang betul. Murid meneliti contoh dan mengisi jadual pengelasan tiga ciri berkaitan menyatakan maksud pengaturcaraan dan kegunaan atur cara dalam perkakasan harian dalam konteks animasi watak bergerak menggunakan atur cara blok."
+          "aktiviti": "Guru memberikan model kerja SP 6.1.1 menggunakan Kad langkah algoritma, carta alir, komputer atau simulasi pengaturcaraan blok, projektor, helaian uji atur cara. Murid mengenal pasti ciri/komponen berdasarkan contoh sebenar berkaitan atur cara animasi dua watak menggunakan perisian blok lalu melengkapkan kad pengelasan berlabel (SP 6.1.1)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing SP tambahan 6.1.2 dan memeriksa langkah murid. Murid menyediakan lakaran berlabel atau algoritma/carta alir langkah demi langkah bagi animasi watak bergerak menggunakan atur cara blok; guru menyemak kejelasan label, fungsi dan urutan. Guru memantau penggunaan peranti dan tidak meminta data peribadi murid."
+          "aktiviti": "Guru membimbing latihan 6.1.2 dan merekod pemerhatian. Murid mengenal pasti ciri/komponen berdasarkan contoh sebenar berkaitan atur cara animasi dua watak menggunakan perisian blok lalu melengkapkan kad pengelasan berlabel (SP 6.1.2). Guru memantau penggunaan peranti dan tidak meminta data peribadi murid."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: jadual pengelasan dengan tiga contoh tepat; satu lakaran/algoritma berlabel dan catatan penambahbaikan. Pentaksiran SP 6.1.1, 6.1.2 menilai bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan; maklumat berlabel, urutan logik dan kebolehlaksanaan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: kad pengelasan atau senarai contoh berlabel. Guru menyemak ketepatan pilihan dan pengelasan mengikut SP 6.1.1, 6.1.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi animasi watak bergerak menggunakan atur cara blok."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: jadual pengelasan dengan tiga contoh tepat; satu lakaran/algoritma berlabel dan catatan penambahbaikan. Pentaksiran SP 6.1.1, 6.1.2 menilai bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan; maklumat berlabel, urutan logik dan kebolehlaksanaan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: kad pengelasan atau senarai contoh berlabel. Guru menyemak ketepatan pilihan dan pengelasan mengikut SP 6.1.1, 6.1.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Guru memantau penggunaan peranti dan tidak meminta data peribadi murid.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -2244,12 +2472,22 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "jadual pengelasan dengan tiga contoh tepat; satu lakaran/algoritma berlabel dan catatan penambahbaikan",
-      "rubrik_pbd_khusus": "bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan; maklumat berlabel, urutan logik dan kebolehlaksanaan",
+      "artefak_khusus": "kad pengelasan atau senarai contoh berlabel",
+      "rubrik_pbd_khusus": "ketepatan pilihan dan pengelasan",
       "contoh_projek_cikgulaju": "atur cara animasi dua watak menggunakan perisian blok",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "6.1.1",
+          "stage": "identify"
+        },
+        {
+          "code": "6.1.2",
+          "stage": "identify"
+        }
+      ]
     },
     {
       "pdp": 26,
@@ -2276,8 +2514,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.1.3 melalui tugasan melakar/menyusun dalam projek animasi watak bergerak menggunakan atur cara blok.",
-      "kriteria_kejayaan": "Murid menunjukkan satu lakaran/algoritma berlabel dan catatan penambahbaikan; semakan berdasarkan maklumat berlabel, urutan logik dan kebolehlaksanaan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.1.3 melalui lakaran berlabel atau algoritma/carta alir berurutan, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan lakaran berlabel atau algoritma/carta alir berurutan bagi SP 6.1.3; guru menilai kelengkapan maklumat dan langkah reka bentuk.",
       "bbm": "Kad langkah algoritma, carta alir, komputer atau simulasi pengaturcaraan blok, projektor, helaian uji atur cara",
       "langkah": {
         "set_induksi": {
@@ -2286,22 +2524,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 6.1.3, menunjukkan contoh bagi animasi watak bergerak menggunakan atur cara blok dan memodelkan tindakan yang betul. Murid menyediakan lakaran berlabel atau algoritma/carta alir langkah demi langkah bagi animasi watak bergerak menggunakan atur cara blok; guru menyemak kejelasan label, fungsi dan urutan."
+          "aktiviti": "Guru memberikan model kerja SP 6.1.3 menggunakan Kad langkah algoritma, carta alir, komputer atau simulasi pengaturcaraan blok, projektor, helaian uji atur cara. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 6.1.3 dan menyemak ketepatan maklumatnya."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan individu bagi SP 6.1.3 dan memeriksa langkah murid. Murid menyediakan lakaran berlabel atau algoritma/carta alir langkah demi langkah bagi animasi watak bergerak menggunakan atur cara blok; guru menyemak kejelasan label, fungsi dan urutan. Guru memantau penggunaan peranti dan tidak meminta data peribadi murid."
+          "aktiviti": "Guru membimbing latihan 6.1.3 dan merekod pemerhatian. Murid melakar atau membina pseudokod/carta alir berlabel yang sepadan dengan SP 6.1.3 dan menyemak ketepatan maklumatnya. Guru memantau penggunaan peranti dan tidak meminta data peribadi murid."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: satu lakaran/algoritma berlabel dan catatan penambahbaikan. Pentaksiran SP 6.1.3 menilai maklumat berlabel, urutan logik dan kebolehlaksanaan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 6.1.3; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi animasi watak bergerak menggunakan atur cara blok."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: satu lakaran/algoritma berlabel dan catatan penambahbaikan. Pentaksiran SP 6.1.3 menilai maklumat berlabel, urutan logik dan kebolehlaksanaan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: lakaran berlabel atau algoritma/carta alir berurutan. Guru menyemak kelengkapan maklumat dan langkah reka bentuk mengikut SP 6.1.3; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Guru memantau penggunaan peranti dan tidak meminta data peribadi murid.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -2326,12 +2564,18 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "satu lakaran/algoritma berlabel dan catatan penambahbaikan",
-      "rubrik_pbd_khusus": "maklumat berlabel, urutan logik dan kebolehlaksanaan",
+      "artefak_khusus": "lakaran berlabel atau algoritma/carta alir berurutan",
+      "rubrik_pbd_khusus": "kelengkapan maklumat dan langkah reka bentuk",
       "contoh_projek_cikgulaju": "atur cara animasi dua watak menggunakan perisian blok",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "6.1.3",
+          "stage": "sketch"
+        }
+      ]
     },
     {
       "pdp": 27,
@@ -2363,8 +2607,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "lakaran",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.1.4 dan 6.1.5 melalui tugasan melakar/menyusun dalam projek animasi watak bergerak menggunakan atur cara blok.",
-      "kriteria_kejayaan": "Murid menunjukkan satu lakaran/algoritma berlabel dan catatan penambahbaikan; borang penilaian dua kelemahan dan versi ditambah baik; semakan berdasarkan maklumat berlabel, urutan logik dan kebolehlaksanaan; ketepatan analisis, sebab pembetulan dan bukti perubahan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.1.4, 6.1.5 melalui dua penerangan fungsi atau sebab dalam jadual banding beza; rubrik semak serta lakaran atau kod yang telah dibaiki, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan dua penerangan fungsi atau sebab dalam jadual banding beza; rubrik semak serta lakaran atau kod yang telah dibaiki bagi SP 6.1.4, 6.1.5; guru menilai ketepatan penerangan dan satu justifikasi; kejelasan kelemahan, sebab dan pembetulan.",
       "bbm": "Kad langkah algoritma, carta alir, komputer atau simulasi pengaturcaraan blok, projektor, helaian uji atur cara",
       "langkah": {
         "set_induksi": {
@@ -2373,22 +2617,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 6.1.4, menunjukkan contoh bagi animasi watak bergerak menggunakan atur cara blok dan memodelkan tindakan yang betul. Murid menyediakan lakaran berlabel atau algoritma/carta alir langkah demi langkah bagi animasi watak bergerak menggunakan atur cara blok; guru menyemak kejelasan label, fungsi dan urutan."
+          "aktiviti": "Guru memberikan model kerja SP 6.1.4 menggunakan Kad langkah algoritma, carta alir, komputer atau simulasi pengaturcaraan blok, projektor, helaian uji atur cara. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 6.1.4 menggunakan dua contoh dan satu sebab yang munasabah."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing SP tambahan 6.1.5 dan memeriksa langkah murid. Murid menggunakan senarai semak untuk menilai lakaran atau hasil bagi animasi watak bergerak menggunakan atur cara blok, mengenal pasti dua kelemahan dan membaiki sekurang-kurangnya satu aspek. Guru memantau penggunaan peranti dan tidak meminta data peribadi murid."
+          "aktiviti": "Guru membimbing latihan 6.1.5 dan merekod pemerhatian. Murid menilai lakaran atau atur cara menggunakan kriteria, mengenal pasti dua kelemahan serta melakukan satu penambahbaikan yang boleh dibuktikan (SP 6.1.5). Guru memantau penggunaan peranti dan tidak meminta data peribadi murid."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: satu lakaran/algoritma berlabel dan catatan penambahbaikan; borang penilaian dua kelemahan dan versi ditambah baik. Pentaksiran SP 6.1.4, 6.1.5 menilai maklumat berlabel, urutan logik dan kebolehlaksanaan; ketepatan analisis, sebab pembetulan dan bukti perubahan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza; rubrik semak serta lakaran atau kod yang telah dibaiki. Guru menyemak ketepatan penerangan dan satu justifikasi; kejelasan kelemahan, sebab dan pembetulan mengikut SP 6.1.4, 6.1.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi animasi watak bergerak menggunakan atur cara blok."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: satu lakaran/algoritma berlabel dan catatan penambahbaikan; borang penilaian dua kelemahan dan versi ditambah baik. Pentaksiran SP 6.1.4, 6.1.5 menilai maklumat berlabel, urutan logik dan kebolehlaksanaan; ketepatan analisis, sebab pembetulan dan bukti perubahan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza; rubrik semak serta lakaran atau kod yang telah dibaiki. Guru menyemak ketepatan penerangan dan satu justifikasi; kejelasan kelemahan, sebab dan pembetulan mengikut SP 6.1.4, 6.1.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Guru memantau penggunaan peranti dan tidak meminta data peribadi murid.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -2414,12 +2658,22 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "satu lakaran/algoritma berlabel dan catatan penambahbaikan; borang penilaian dua kelemahan dan versi ditambah baik",
-      "rubrik_pbd_khusus": "maklumat berlabel, urutan logik dan kebolehlaksanaan; ketepatan analisis, sebab pembetulan dan bukti perubahan",
+      "artefak_khusus": "dua penerangan fungsi atau sebab dalam jadual banding beza; rubrik semak serta lakaran atau kod yang telah dibaiki",
+      "rubrik_pbd_khusus": "ketepatan penerangan dan satu justifikasi; kejelasan kelemahan, sebab dan pembetulan",
       "contoh_projek_cikgulaju": "atur cara animasi dua watak menggunakan perisian blok",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "6.1.4",
+          "stage": "explain"
+        },
+        {
+          "code": "6.1.5",
+          "stage": "improve"
+        }
+      ]
     },
     {
       "pdp": 28,
@@ -2446,8 +2700,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "pembentangan",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.1.6 melalui tugasan membentangkan dalam projek animasi watak bergerak menggunakan atur cara blok.",
-      "kriteria_kejayaan": "Murid menunjukkan pembentangan ringkas dan rekod maklum balas rakan; semakan berdasarkan kejelasan penerangan, bukti proses, tindak balas kepada soalan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.1.6 melalui pembentangan hasil atau dokumentasi proses dan respons soalan, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan pembentangan hasil atau dokumentasi proses dan respons soalan bagi SP 6.1.6; guru menilai kejelasan hujah, bukti ujian dan maklum balas.",
       "bbm": "Kad langkah algoritma, carta alir, komputer atau simulasi pengaturcaraan blok, projektor, helaian uji atur cara",
       "langkah": {
         "set_induksi": {
@@ -2456,22 +2710,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 6.1.6, menunjukkan contoh bagi animasi watak bergerak menggunakan atur cara blok dan memodelkan tindakan yang betul. Murid menyediakan paparan hasil animasi watak bergerak menggunakan atur cara blok yang sudah dibina dalam sesi sebelumnya, menyatakan tujuan, langkah kerja, ujian dan penambahbaikan serta menjawab soalan rakan."
+          "aktiviti": "Guru memberikan model kerja SP 6.1.6 menggunakan Kad langkah algoritma, carta alir, komputer atau simulasi pengaturcaraan blok, projektor, helaian uji atur cara. Murid membentangkan hasil semasa dan dokumentasi atur cara animasi dua watak menggunakan perisian blok, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 6.1.6)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan individu bagi SP 6.1.6 dan memeriksa langkah murid. Murid menyediakan paparan hasil animasi watak bergerak menggunakan atur cara blok yang sudah dibina dalam sesi sebelumnya, menyatakan tujuan, langkah kerja, ujian dan penambahbaikan serta menjawab soalan rakan. Guru memantau penggunaan peranti dan tidak meminta data peribadi murid."
+          "aktiviti": "Guru membimbing latihan 6.1.6 dan merekod pemerhatian. Murid membentangkan hasil semasa dan dokumentasi atur cara animasi dua watak menggunakan perisian blok, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 6.1.6). Guru memantau penggunaan peranti dan tidak meminta data peribadi murid."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: pembentangan ringkas dan rekod maklum balas rakan. Pentaksiran SP 6.1.6 menilai kejelasan penerangan, bukti proses, tindak balas kepada soalan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak kejelasan hujah, bukti ujian dan maklum balas mengikut SP 6.1.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi animasi watak bergerak menggunakan atur cara blok."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: pembentangan ringkas dan rekod maklum balas rakan. Pentaksiran SP 6.1.6 menilai kejelasan penerangan, bukti proses, tindak balas kepada soalan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak kejelasan hujah, bukti ujian dan maklum balas mengikut SP 6.1.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Guru memantau penggunaan peranti dan tidak meminta data peribadi murid.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -2496,12 +2750,18 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "pembentangan ringkas dan rekod maklum balas rakan",
-      "rubrik_pbd_khusus": "kejelasan penerangan, bukti proses, tindak balas kepada soalan",
+      "artefak_khusus": "pembentangan hasil atau dokumentasi proses dan respons soalan",
+      "rubrik_pbd_khusus": "kejelasan hujah, bukti ujian dan maklum balas",
       "contoh_projek_cikgulaju": "atur cara animasi dua watak menggunakan perisian blok",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "6.1.6",
+          "stage": "present"
+        }
+      ]
     },
     {
       "pdp": 29,
@@ -2528,8 +2788,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.2.1 melalui tugasan mengenal pasti dalam projek animasi watak bergerak menggunakan atur cara blok.",
-      "kriteria_kejayaan": "Murid menunjukkan jadual pengelasan dengan tiga contoh tepat; semakan berdasarkan bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.2.1 melalui kad pengelasan atau senarai contoh berlabel, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan kad pengelasan atau senarai contoh berlabel bagi SP 6.2.1; guru menilai ketepatan pilihan dan pengelasan.",
       "bbm": "Kad langkah algoritma, carta alir, komputer atau simulasi pengaturcaraan blok, projektor, helaian uji atur cara",
       "langkah": {
         "set_induksi": {
@@ -2538,22 +2798,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 6.2.1, menunjukkan contoh bagi animasi watak bergerak menggunakan atur cara blok dan memodelkan tindakan yang betul. Murid meneliti contoh dan mengisi jadual pengelasan tiga ciri berkaitan mengenal pasti fitur-fitur pada antara muka perisian pengaturcaraan dalam konteks animasi watak bergerak menggunakan atur cara blok."
+          "aktiviti": "Guru memberikan model kerja SP 6.2.1 menggunakan Kad langkah algoritma, carta alir, komputer atau simulasi pengaturcaraan blok, projektor, helaian uji atur cara. Murid mengenal pasti ciri/komponen berdasarkan contoh sebenar berkaitan atur cara animasi dua watak menggunakan perisian blok lalu melengkapkan kad pengelasan berlabel (SP 6.2.1)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan individu bagi SP 6.2.1 dan memeriksa langkah murid. Murid meneliti contoh dan mengisi jadual pengelasan tiga ciri berkaitan mengenal pasti fitur-fitur pada antara muka perisian pengaturcaraan dalam konteks animasi watak bergerak menggunakan atur cara blok. Guru memantau penggunaan peranti dan tidak meminta data peribadi murid."
+          "aktiviti": "Guru membimbing latihan 6.2.1 dan merekod pemerhatian. Murid mengenal pasti ciri/komponen berdasarkan contoh sebenar berkaitan atur cara animasi dua watak menggunakan perisian blok lalu melengkapkan kad pengelasan berlabel (SP 6.2.1). Guru memantau penggunaan peranti dan tidak meminta data peribadi murid."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: jadual pengelasan dengan tiga contoh tepat. Pentaksiran SP 6.2.1 menilai bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: kad pengelasan atau senarai contoh berlabel. Guru menyemak ketepatan pilihan dan pengelasan mengikut SP 6.2.1; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi animasi watak bergerak menggunakan atur cara blok."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: jadual pengelasan dengan tiga contoh tepat. Pentaksiran SP 6.2.1 menilai bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: kad pengelasan atau senarai contoh berlabel. Guru menyemak ketepatan pilihan dan pengelasan mengikut SP 6.2.1; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Guru memantau penggunaan peranti dan tidak meminta data peribadi murid.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -2578,12 +2838,18 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "jadual pengelasan dengan tiga contoh tepat",
-      "rubrik_pbd_khusus": "bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan",
+      "artefak_khusus": "kad pengelasan atau senarai contoh berlabel",
+      "rubrik_pbd_khusus": "ketepatan pilihan dan pengelasan",
       "contoh_projek_cikgulaju": "atur cara animasi dua watak menggunakan perisian blok",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "6.2.1",
+          "stage": "identify"
+        }
+      ]
     },
     {
       "pdp": 30,
@@ -2615,8 +2881,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "uji_atur_cara",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.2.2 dan 6.2.3 melalui tugasan menghasilkan dan menguji dalam projek animasi watak bergerak menggunakan atur cara blok.",
-      "kriteria_kejayaan": "Murid menunjukkan hasil kerja/prototaip peringkat semasa beserta catatan ujian; semakan berdasarkan pematuhan prosedur, fungsi peringkat semasa dan penambahbaikan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.2.2, 6.2.3 melalui bukti hasil kerja peringkat semasa dan catatan ujian fungsi, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan bukti hasil kerja peringkat semasa dan catatan ujian fungsi bagi SP 6.2.2, 6.2.3; guru menilai pematuhan langkah, keselamatan dan fungsi peringkat semasa.",
       "bbm": "Kad langkah algoritma, carta alir, komputer atau simulasi pengaturcaraan blok, projektor, helaian uji atur cara",
       "langkah": {
         "set_induksi": {
@@ -2625,22 +2891,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 6.2.2, menunjukkan contoh bagi animasi watak bergerak menggunakan atur cara blok dan memodelkan tindakan yang betul. Murid melaksanakan **peringkat kerja yang sepadan dengan SP 6.2.2** bagi animasi watak bergerak menggunakan atur cara blok mengikut lakaran, kemudian menguji hasil peringkat itu dan menulis satu catatan pembetulan."
+          "aktiviti": "Guru memberikan model kerja SP 6.2.2 menggunakan Kad langkah algoritma, carta alir, komputer atau simulasi pengaturcaraan blok, projektor, helaian uji atur cara. Murid menghasilkan peringkat kerja atur cara animasi dua watak menggunakan perisian blok yang benar-benar diminta oleh SP 6.2.2, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing SP tambahan 6.2.3 dan memeriksa langkah murid. Murid melaksanakan **peringkat kerja yang sepadan dengan SP 6.2.3** bagi animasi watak bergerak menggunakan atur cara blok mengikut lakaran, kemudian menguji hasil peringkat itu dan menulis satu catatan pembetulan. Guru memantau penggunaan peranti dan tidak meminta data peribadi murid."
+          "aktiviti": "Guru membimbing latihan 6.2.3 dan merekod pemerhatian. Murid menghasilkan peringkat kerja atur cara animasi dua watak menggunakan perisian blok yang benar-benar diminta oleh SP 6.2.3, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah. Guru memantau penggunaan peranti dan tidak meminta data peribadi murid."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: hasil kerja/prototaip peringkat semasa beserta catatan ujian. Pentaksiran SP 6.2.2, 6.2.3 menilai pematuhan prosedur, fungsi peringkat semasa dan penambahbaikan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 6.2.2, 6.2.3; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi animasi watak bergerak menggunakan atur cara blok."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: hasil kerja/prototaip peringkat semasa beserta catatan ujian. Pentaksiran SP 6.2.2, 6.2.3 menilai pematuhan prosedur, fungsi peringkat semasa dan penambahbaikan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 6.2.2, 6.2.3; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Guru memantau penggunaan peranti dan tidak meminta data peribadi murid.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -2667,12 +2933,22 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "hasil kerja/prototaip peringkat semasa beserta catatan ujian",
-      "rubrik_pbd_khusus": "pematuhan prosedur, fungsi peringkat semasa dan penambahbaikan",
+      "artefak_khusus": "bukti hasil kerja peringkat semasa dan catatan ujian fungsi",
+      "rubrik_pbd_khusus": "pematuhan langkah, keselamatan dan fungsi peringkat semasa",
       "contoh_projek_cikgulaju": "atur cara animasi dua watak menggunakan perisian blok",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "6.2.2",
+          "stage": "make"
+        },
+        {
+          "code": "6.2.3",
+          "stage": "make"
+        }
+      ]
     },
     {
       "pdp": 31,
@@ -2704,8 +2980,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "uji_atur_cara",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.2.4 dan 6.2.5 melalui tugasan menghasilkan dan menguji dalam projek animasi watak bergerak menggunakan atur cara blok.",
-      "kriteria_kejayaan": "Murid menunjukkan hasil kerja/prototaip peringkat semasa beserta catatan ujian; semakan berdasarkan pematuhan prosedur, fungsi peringkat semasa dan penambahbaikan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.2.4, 6.2.5 melalui bukti hasil kerja peringkat semasa dan catatan ujian fungsi, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan bukti hasil kerja peringkat semasa dan catatan ujian fungsi bagi SP 6.2.4, 6.2.5; guru menilai pematuhan langkah, keselamatan dan fungsi peringkat semasa.",
       "bbm": "Kad langkah algoritma, carta alir, komputer atau simulasi pengaturcaraan blok, projektor, helaian uji atur cara",
       "langkah": {
         "set_induksi": {
@@ -2714,22 +2990,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 6.2.4, menunjukkan contoh bagi animasi watak bergerak menggunakan atur cara blok dan memodelkan tindakan yang betul. Murid melaksanakan **peringkat kerja yang sepadan dengan SP 6.2.4** bagi animasi watak bergerak menggunakan atur cara blok mengikut lakaran, kemudian menguji hasil peringkat itu dan menulis satu catatan pembetulan."
+          "aktiviti": "Guru memberikan model kerja SP 6.2.4 menggunakan Kad langkah algoritma, carta alir, komputer atau simulasi pengaturcaraan blok, projektor, helaian uji atur cara. Murid menghasilkan peringkat kerja atur cara animasi dua watak menggunakan perisian blok yang benar-benar diminta oleh SP 6.2.4, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing SP tambahan 6.2.5 dan memeriksa langkah murid. Murid melaksanakan **peringkat kerja yang sepadan dengan SP 6.2.5** bagi animasi watak bergerak menggunakan atur cara blok mengikut lakaran, kemudian menguji hasil peringkat itu dan menulis satu catatan pembetulan. Guru memantau penggunaan peranti dan tidak meminta data peribadi murid."
+          "aktiviti": "Guru membimbing latihan 6.2.5 dan merekod pemerhatian. Murid menghasilkan peringkat kerja atur cara animasi dua watak menggunakan perisian blok yang benar-benar diminta oleh SP 6.2.5, menguji fungsi dan merekod satu pembetulan; kerja amali tertakluk kepada kelengkapan sekolah. Guru memantau penggunaan peranti dan tidak meminta data peribadi murid."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: hasil kerja/prototaip peringkat semasa beserta catatan ujian. Pentaksiran SP 6.2.4, 6.2.5 menilai pematuhan prosedur, fungsi peringkat semasa dan penambahbaikan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 6.2.4, 6.2.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi animasi watak bergerak menggunakan atur cara blok."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: hasil kerja/prototaip peringkat semasa beserta catatan ujian. Pentaksiran SP 6.2.4, 6.2.5 menilai pematuhan prosedur, fungsi peringkat semasa dan penambahbaikan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: bukti hasil kerja peringkat semasa dan catatan ujian fungsi. Guru menyemak pematuhan langkah, keselamatan dan fungsi peringkat semasa mengikut SP 6.2.4, 6.2.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Guru memantau penggunaan peranti dan tidak meminta data peribadi murid.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -2755,12 +3031,22 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "hasil kerja/prototaip peringkat semasa beserta catatan ujian",
-      "rubrik_pbd_khusus": "pematuhan prosedur, fungsi peringkat semasa dan penambahbaikan",
+      "artefak_khusus": "bukti hasil kerja peringkat semasa dan catatan ujian fungsi",
+      "rubrik_pbd_khusus": "pematuhan langkah, keselamatan dan fungsi peringkat semasa",
       "contoh_projek_cikgulaju": "atur cara animasi dua watak menggunakan perisian blok",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "6.2.4",
+          "stage": "make"
+        },
+        {
+          "code": "6.2.5",
+          "stage": "make"
+        }
+      ]
     },
     {
       "pdp": 32,
@@ -2787,8 +3073,8 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "pembentangan",
-      "objektif": "Pada akhir PdP, murid dapat melaksanakan fokus 6.2.6 melalui tugasan mengenal pasti dalam projek animasi watak bergerak menggunakan atur cara blok.",
-      "kriteria_kejayaan": "Murid menunjukkan jadual pengelasan dengan tiga contoh tepat; semakan berdasarkan bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan.",
+      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 6.2.6 melalui pembentangan hasil atau dokumentasi proses dan respons soalan, mengikut tahap proses reka bentuk yang diajar.",
+      "kriteria_kejayaan": "Murid menghasilkan pembentangan hasil atau dokumentasi proses dan respons soalan bagi SP 6.2.6; guru menilai kejelasan hujah, bukti ujian dan maklum balas.",
       "bbm": "Kad langkah algoritma, carta alir, komputer atau simulasi pengaturcaraan blok, projektor, helaian uji atur cara",
       "langkah": {
         "set_induksi": {
@@ -2797,22 +3083,22 @@
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menerangkan fokus SP 6.2.6, menunjukkan contoh bagi animasi watak bergerak menggunakan atur cara blok dan memodelkan tindakan yang betul. Murid meneliti contoh dan mengisi jadual pengelasan tiga ciri berkaitan membentangkan secara lisan penghasilan atur cara baharu dalam perisian pengaturcaraan dalam konteks animasi watak bergerak menggunakan atur cara blok."
+          "aktiviti": "Guru memberikan model kerja SP 6.2.6 menggunakan Kad langkah algoritma, carta alir, komputer atau simulasi pengaturcaraan blok, projektor, helaian uji atur cara. Murid membentangkan hasil semasa dan dokumentasi atur cara animasi dua watak menggunakan perisian blok, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 6.2.6)."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan individu bagi SP 6.2.6 dan memeriksa langkah murid. Murid meneliti contoh dan mengisi jadual pengelasan tiga ciri berkaitan membentangkan secara lisan penghasilan atur cara baharu dalam perisian pengaturcaraan dalam konteks animasi watak bergerak menggunakan atur cara blok. Guru memantau penggunaan peranti dan tidak meminta data peribadi murid."
+          "aktiviti": "Guru membimbing latihan 6.2.6 dan merekod pemerhatian. Murid membentangkan hasil semasa dan dokumentasi atur cara animasi dua watak menggunakan perisian blok, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 6.2.6). Guru memantau penggunaan peranti dan tidak meminta data peribadi murid."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak evidens sesi ini: jadual pengelasan dengan tiga contoh tepat. Pentaksiran SP 6.2.6 menilai bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan. Murid menerima maklum balas khusus."
+          "aktiviti": "Evidens PdP ini: pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak kejelasan hujah, bukti ujian dan maklum balas mengikut SP 6.2.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
         },
         "penutup": {
           "minit": 5,
           "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi animasi watak bergerak menggunakan atur cara blok."
         }
       },
-      "pbd_evidens": "Guru menyemak evidens sesi ini: jadual pengelasan dengan tiga contoh tepat. Pentaksiran SP 6.2.6 menilai bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan. Murid menerima maklum balas khusus.",
+      "pbd_evidens": "Evidens PdP ini: pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak kejelasan hujah, bukti ujian dan maklum balas mengikut SP 6.2.6; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
       "keselamatan": "Guru memantau penggunaan peranti dan tidak meminta data peribadi murid.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -2837,12 +3123,18 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "jadual pengelasan dengan tiga contoh tepat",
-      "rubrik_pbd_khusus": "bilangan padanan betul dan keupayaan menjelaskan sekurang-kurangnya satu pilihan",
+      "artefak_khusus": "pembentangan hasil atau dokumentasi proses dan respons soalan",
+      "rubrik_pbd_khusus": "kejelasan hujah, bukti ujian dan maklum balas",
       "contoh_projek_cikgulaju": "atur cara animasi dua watak menggunakan perisian blok",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
-      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU"
+      "status_semakan_kualiti": "DIPERINCI_BERDASARKAN_JENIS_TUGAS_SP_BELUM_KELULUSAN_GURU",
+      "specific_sp_task_types": [
+        {
+          "code": "6.2.6",
+          "stage": "present"
+        }
+      ]
     }
   ]
 }
