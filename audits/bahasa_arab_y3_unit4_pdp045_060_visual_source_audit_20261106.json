@@ -116,8 +116,8 @@
     },
     {
       "pdp": "052",
-      "printed_page": 98,
-      "pdf_zero_based_page_index": 105,
+      "printed_page": 97,
+      "pdf_zero_based_page_index": 104,
       "focus": "Mendengar kosa kata rutin harian",
       "sp_candidate": "1.2.1",
       "dskp_code_exists": true,
@@ -130,8 +130,8 @@
     },
     {
       "pdp": "053",
-      "printed_page": 99,
-      "pdf_zero_based_page_index": 106,
+      "printed_page": 98,
+      "pdf_zero_based_page_index": 105,
       "focus": "Menyatakan waktu semalam, hari ini dan esok",
       "sp_candidate": "1.3.1",
       "dskp_code_exists": true,
@@ -144,8 +144,8 @@
     },
     {
       "pdp": "054",
-      "printed_page": 100,
-      "pdf_zero_based_page_index": 107,
+      "printed_page": 99,
+      "pdf_zero_based_page_index": 106,
       "focus": "Membaca jadual hari dan aktiviti kantin",
       "sp_candidate": "2.2.1",
       "dskp_code_exists": true,
@@ -228,8 +228,8 @@
     },
     {
       "pdp": "060",
-      "printed_page": 117,
-      "pdf_zero_based_page_index": 124,
+      "printed_page": 109,
+      "pdf_zero_based_page_index": 116,
       "focus": "Mengenal nombor rumah dalam peta lingkungan",
       "sp_candidate": "2.3.3",
       "dskp_code_exists": true,
@@ -244,5 +244,35 @@
   "final_ready": 0,
   "release_authorized": false,
   "year3_annual_coverage_approved": false,
-  "notes": "60 candidate drafts all four units is not evidence of official 60-PdP annual RPT. Source topic check, not final teacher signoff."
+  "notes": "60 candidate drafts all four units is not evidence of official 60-PdP annual RPT. Source topic check, not final teacher signoff.",
+  "source_page_corrections": [
+    {
+      "pdp": "052",
+      "from": 98,
+      "to": 97,
+      "reason": "Validated original scanned PDF contact-sheet images; printed-page topic correction",
+      "verified_at": "2026-11-06"
+    },
+    {
+      "pdp": "053",
+      "from": 99,
+      "to": 98,
+      "reason": "Validated original scanned PDF contact-sheet images; printed-page topic correction",
+      "verified_at": "2026-11-06"
+    },
+    {
+      "pdp": "054",
+      "from": 100,
+      "to": 99,
+      "reason": "Validated original scanned PDF contact-sheet images; printed-page topic correction",
+      "verified_at": "2026-11-06"
+    },
+    {
+      "pdp": "060",
+      "from": 117,
+      "to": 109,
+      "reason": "Validated original scanned PDF contact-sheet images; printed-page topic correction",
+      "verified_at": "2026-11-06"
+    }
+  ]
 }
