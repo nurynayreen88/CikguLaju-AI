@@ -38,4 +38,4 @@ jobs:
           python -m unittest discover -s tests -p test_telegram_native_bm_sequence_rph.py -v
           python -m unittest discover -s tests -p test_telegram_reference_options_web.py -v
       - name: Audit real v26.00 BM Tema/Unit/PdP and duplicate names
-        run: python tools/bm_native_v26_navigation_audit.py
+        run: python -m tools.bm_native_v26_navigation_audit
