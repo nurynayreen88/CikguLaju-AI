@@ -58,7 +58,7 @@ class ReadinessTests(unittest.TestCase):
         q["subject"]="BM"
         response=self.client.get("/api/web/rph/availability", query_string=q)
         self.assertEqual(response.status_code, 503)
-        self.assertEqual(response.get_json()["code"], "TELEGRAM_RPT_RPH_NOT_READY")
+        self.assertEqual(response.get_json()["code"], "TELEGRAM_NATIVE_BM_RPH_NOT_READY")
 
     @patch("web.unified_rph_web._has_paid_access", return_value=True)
     @patch("web.unified_rph_web._account", return_value=({"telegram_user_id":123}, None))
