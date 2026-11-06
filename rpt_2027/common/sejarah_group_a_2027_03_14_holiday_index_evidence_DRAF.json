@@ -1,0 +1,36 @@
+{
+  "id": "KPM_ADDITIONAL_HARI_RAYA_PUASA_2027_GROUP_A_2027_03_14",
+  "status": "SOURCE_EVIDENCE_DRAF_RELEASE_SIGNOFF_PENDING",
+  "date": "2027-03-14",
+  "school_group": "A",
+  "holiday_reason": "Cuti tambahan KPM sempena Hari Raya Puasa 2027",
+  "source_sheet_title": "CIKGULAJU_RPT_2027_KALENDAR_CUTI_FINAL_VERIFIED",
+  "source_tab": "INDEKS PDP 2027 DIKIRA",
+  "source_sheet_url": "https://docs.google.com/spreadsheets/d/1tf6-B6hmA4U6E0fCROcKpxh-B5uLUQOYBt6TZft_7_k/edit",
+  "primary_education_calendar_url": "https://www.moe.gov.my/index.php/kalendar-akademik-semasa",
+  "checked_on": "2026-11-07",
+  "a_states": [
+    {
+      "name": "Kedah",
+      "sheet_row": 74,
+      "category": "CALON HARI SEKOLAH",
+      "kpm_holiday": "Hari Raya Puasa",
+      "pdp_status": "BUKAN PDP - CUTI RASMI BKPP/KPM"
+    },
+    {
+      "name": "Kelantan",
+      "sheet_row": 439,
+      "category": "CALON HARI SEKOLAH",
+      "kpm_holiday": "Hari Raya Puasa",
+      "pdp_status": "BUKAN PDP - CUTI RASMI BKPP/KPM"
+    },
+    {
+      "name": "Terengganu",
+      "sheet_row": 804,
+      "category": "CALON HARI SEKOLAH",
+      "kpm_holiday": "Hari Raya Puasa",
+      "pdp_status": "BUKAN PDP - CUTI RASMI BKPP/KPM"
+    }
+  ],
+  "interpretation": "March 14 is an additional KPM holiday for Group A; Sejarah PdP009 draft week start March 15 falls inside master school week M10 (March 14–18). No source date change needed. Teacher timetable approval remains separate."
+}
