@@ -22,7 +22,7 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Table, TableStyle, 
 
 from tools.audit_sains_342_pdp_release_gate_20261106 import analyze, ROOT
 from web.sains_y2_51_activities_draf_20261107 import BANK
-from tools.sains_buku_aktiviti_mapping_20261107 import activity_for, activity_note
+from tools.sains_buku_aktiviti_mapping_20261107 import activity_for, activity_note, activity_short_note, is_direct_sp_match
 
 OUT = ROOT / "build" / "sains_y2_51_rph_DRAF_20261107"
 DSKP = "https://drive.google.com/file/d/1rr4CjNvhtI13ioiVSTZi65cvap7j1U6Z/view"
@@ -173,8 +173,7 @@ def write_docx(path,item):
       ("Aktiviti 1 (18m)","1. Guru "+item["teacher1"]+".\n2. Murid "+item["pupil1"]+"."),
       ("Aktiviti 2 (22m)","1. Guru "+item["teacher2"]+".\n2. Murid "+item["pupil2"]+"."),
       ("Pengukuhan/PBD (10m)","Guru menilai bukti individu: "+item["pbd"]+"."),
-      ("Buku Aktiviti/PBD",f"Murid melengkapkan '{item['activity_book']['activity_title']}' pada "
-       f"m/s {item['activity_book']['workbook_printed_page']}; guru semak individu."),
+      ("Buku Aktiviti/PBD",activity_short_note(item["activity_book"],2)),
       ("Penutup (5m)","Murid menyatakan satu dapatan; guru merumus kaitan dengan SP "+item["sp"]+"."),
       ("BBM",item["materials"]),
       ("Keselamatan/etika",item["safety"]),
@@ -217,9 +216,7 @@ def write_pdf(path,item):
       ("Aktiviti 1 18m","1. Guru "+item["teacher1"]+".\n2. Murid "+item["pupil1"]+"."),
       ("Aktiviti 2 22m","1. Guru "+item["teacher2"]+".\n2. Murid "+item["pupil2"]+"."),
       ("Pengukuhan/PBD 10m","Guru menyemak bukti individu: "+item["pbd"]+"."),
-      ("Buku Aktiviti/PBD",f"Latihan '{item['activity_book']['activity_title']}', "
-       f"m/s bercetak {item['activity_book']['workbook_printed_page']} "
-       f"(PDF p{item['activity_book']['workbook_pdf_page']}); guru semak respons individu."),
+      ("Buku Aktiviti/PBD",activity_short_note(item["activity_book"],2)),
       ("Penutup 5m","Murid menyatakan dapatan; guru merumus SP "+item["sp"]+"."),
       ("BBM",item["materials"]),
       ("Keselamatan",item["safety"]),
@@ -272,7 +269,10 @@ def main():
             "activity_book_pdf_page":item["activity_book"]["workbook_pdf_page"],
             "activity_book_exercise":item["activity_book"]["activity_title"],
             "activity_book_url":item["activity_book"]["workbook_url"],
-            "activity_book_status":"TOC_VERIFIED_SP_PEDAGOGY_HOLD",
+            "activity_book_status":item["activity_book"]["matching_status"],
+            "activity_book_printed_sp_codes":",".join(item["activity_book"]["workbook_printed_sp_codes"]),
+            "activity_book_can_be_sp_pbd":False,
+            "activity_book_teacher_signoff":"MISSING",
             "word_a4":"DOCX_A4_NO_PAGINATION_PROOF",
             "pdf_a4":"ONE_PAGE_PASS",
             "textbook_page":"NOT_VISUALLY_VERIFIED",
