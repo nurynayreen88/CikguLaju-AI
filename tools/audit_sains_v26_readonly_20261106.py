@@ -133,7 +133,10 @@ def audit(conn: sqlite3.Connection) -> dict:
     if not required_cols <= cols:
         return {"source": "v26.00", "release_decision": "HOLD",
                 "reason": "verified_pdp_sequence schema differs",
-                "missing_columns": sorted(required_cols - cols)}
+                "missing_columns": sorted(required_cols - cols),
+                "available_columns": sorted(cols),
+                "related_tables": sorted(t for t in tables if any(
+                    k in t.lower() for k in ("sci", "sains", "pdp", "rpt", "sequence")))}
     rows = [dict(r) for r in conn.execute(
         """SELECT * FROM verified_pdp_sequence
            WHERE lower(trim(subject)) IN ('sains', 'science')"""
