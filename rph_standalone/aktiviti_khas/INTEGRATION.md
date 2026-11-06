@@ -2,9 +2,18 @@
 
 Status: DRAF UNTUK SEMAKAN. PR #412 belum digabung atau diterbitkan ke Telegram/Web.
 
+## Keputusan semakan kandungan terkini
+
+- 59 rekod DRAF: 20 Transisi Tahun 1 + 39 Tamat Sukatan (13 subjek x 3 tahap Tahun 1–2, 3–4, 5–6).
+- 13 subjek eksplisit: Bahasa Melayu, Bahasa Inggeris, Matematik, Sains, Pendidikan Islam, Pendidikan Moral, Pendidikan Seni Visual, Pendidikan Jasmani, Pendidikan Kesihatan, Pendidikan Muzik, Bahasa Arab, Sejarah dan Reka Bentuk dan Teknologi.
+- Setiap aktiviti Tamat Sukatan dipaut pada satu subjek sahaja, dengan tajuk, objektif, induksi, tiga langkah, BBM, penilaian dan penutup berlainan mengikut tahap. Tiada label 'Semua subjek'.
+- Guru melaksanakan tugas konkrit, murid menghasilkan produk/bukti, rakan menyemak dan guru memberi maklum balas. Panjang minimum 185 aksara per langkah ialah ujian struktur, bukan kelulusan pedagogi.
+- Menu tamat sukatan sepatutnya membolehkan guru memilih Tahun kemudian Subjek dahulu, sebelum aktiviti; GET options dengan subject=Matematik akan menapis rekod. POST render wajib mempunyai subjek yang sepadan.
+- Workflow tambahan Word A4 Audit akan memeriksa penukaran semua 59 Word ke PDF melalui LibreOffice. Jangan terbitkan selagi dokumen satu halaman tidak disahkan.
+
 ## Sumber
 
-- catalog_v1.json: 20 aktiviti Transisi Tahun 1 dan 30 variasi Tamat Sukatan, tiga tahap.
+- catalog_v1.json: 20 aktiviti Transisi Tahun 1 dan 39 variasi Tamat Sukatan, tiga tahap.
 - engine.py: membaca sumber secara read-only, SHA-256 parity, Word dan PDF A4.
 - web/telegram_special_activity_api.py: API dalaman Telegram, Bearer token, dinyahaktifkan secara lalai.
 - tests/test_aktiviti_khas_catalog_20261106.py dan tests/test_aktiviti_khas_render_20261106.py: audit sumber, pengasingan tahap, Word/PDF dan API.
@@ -37,10 +46,10 @@ Sediakan Bahan PdP → RPH Aktiviti Khas → [Transisi Tahun 1 / Tamat Sukatan] 
 
 ## Pintu kelulusan sebelum LIVE
 
-- [x] 50 kandungan berstruktur dan ID unik.
+- [x] 59 kandungan berstruktur dan ID unik.
 - [x] Contoh Word dan PDF A4 satu halaman diperiksa secara visual.
-- [x] GitHub Actions mengesahkan 50 PDF satu halaman dan ujian API.
-- [ ] Semak semua 50 Word menjadi satu halaman A4 dengan LibreOffice.
+- [x] GitHub Actions mengesahkan 59 PDF satu halaman dan ujian API.
+- [ ] Semak semua 59 Word menjadi satu halaman A4 dengan LibreOffice.
 - [ ] Semakan guru bagi semua aktiviti termasuk pelaksanaan KP2027.
 - [ ] Daftar endpoint di Telegram staging dan tambah Web proxy berlindung.
 - [ ] Ujian login, free quota, langganan, idempotency, cetak telefon/PC.
