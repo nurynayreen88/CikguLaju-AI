@@ -31,17 +31,17 @@ def format_cell(cell,fill=False):
     if mar is None:
         mar=OxmlElement("w:tcMar");props.append(mar)
     for side in ["top","start","bottom","end"]:
-        el=OxmlElement("w:"+side);el.set(qn("w:w"),"55" if side in ("top","bottom") else "65")
+        el=OxmlElement("w:"+side);el.set(qn("w:w"),"95" if side in ("top","bottom") else "85")
         el.set(qn("w:type"),"dxa");mar.append(el)
     if fill:
         sh=OxmlElement("w:shd");sh.set(qn("w:fill"),PALE);props.append(sh)
     for p in cell.paragraphs:
         p.paragraph_format.space_before=Pt(0)
         p.paragraph_format.space_after=Pt(0)
-        p.paragraph_format.line_spacing=1.02
-        for r in p.runs:r.font.size=Pt(8.25)
+        p.paragraph_format.line_spacing=1.11
+        for r in p.runs:r.font.size=Pt(9.45)
 
-def para(doc,text="",bold=False,size=8.8,space=2,color=DARK,align=None):
+def para(doc,text="",bold=False,size=9.4,space=2,color=DARK,align=None):
     p=doc.add_paragraph()
     p.paragraph_format.space_after=Pt(space)
     p.paragraph_format.line_spacing=1.0
@@ -62,9 +62,9 @@ def init_doc(landscape=False):
     sec.footer_distance=Cm(0.25)
     normal=d.styles["Normal"]
     normal.font.name="Aptos"
-    normal.font.size=Pt(8.25)
+    normal.font.size=Pt(9.45)
     normal.paragraph_format.space_after=Pt(0)
-    normal.paragraph_format.line_spacing=1.02
+    normal.paragraph_format.line_spacing=1.11
     return d
 
 def rph_doc(lesson):
