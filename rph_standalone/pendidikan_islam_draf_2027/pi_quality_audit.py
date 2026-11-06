@@ -1,0 +1,97 @@
+"""Conservative staging QA for Pendidikan Islam 2027 drafts.
+Content-quality percentage MUST NOT be inferred from formatting or inventory.
+No runtime imports; no writes to database, Telegram or Web.
+"""
+from __future__ import annotations
+
+from collections import Counter
+from pathlib import Path
+import argparse
+import json
+import re
+
+ROOT = Path(__file__).resolve().parent
+COUNT = {2: 112, 3: 147, 4: 151, 5: 143, 6: 143}
+HELD = {(2, 35), (6, 6), (6, 14), (6, 18), (6, 60), (6, 117)}
+REQUIRED = ("sk", "sp", "objektif", "set_induksi", "aktiviti_utama",
+            "pentaksiran", "penutup", "bahan")
+STATES = {"CALON_UJIAN_GURU_DRAF", "SEMAKAN_KEUTAMAAN",
+          "TAHAN_SEMAKAN_KANDUNGAN"}
+NUMBERED = re.compile(r"^\s*([0-9]{1,2})[.)]\s+", re.ASCII)
+UNVERIFIED_PAGE = ("perlu padanan", "padanan sk/toc terdahulu",
+                   "halaman khusus belum", "belum dipadankan")
+DOMAINS = {"القرءان": "al-Quran", "جاوي": "Jawi", "عقيدة": "Akidah",
+           "عبادة": "Ibadah", "سيرة": "Sirah", "ادب": "Adab",
+           "حديث": "Hadis"}
+
+
+def audit(root=ROOT):
+    """Identify edit targets and block unsupported academic quality claims."""
+    rows = []
+    seen = set()
+    for year, expected in COUNT.items():
+        payload = json.loads((Path(root) / f"year{year}.json").read_text(encoding="utf-8"))
+        assert payload["year"] == year and payload["ready"] is False
+        assert len(payload["records"]) == expected
+        for lesson, record in enumerate(payload["records"], 1):
+            key = (year, lesson)
+            assert key not in seen
+            seen.add(key)
+            assert record["id"] == f"T{year}-L{lesson:03}"
+            assert record["lesson"] == lesson and record["tahun"] == year
+            assert record["state"] in STATES and record["verified_ready"] is False
+            held = key in HELD
+            assert record["withheld"] is held
+            if held:
+                assert "fields" not in record and "intro" not in record
+                rows.append({"id": record["id"], "domain": "ditahan",
+                             "state": record["state"], "flags": ["TAHAN_KANDUNGAN"]})
+                continue
+            assert record["state"] != "TAHAN_SEMAKAN_KANDUNGAN"
+            fields = record["fields"]
+            assert all(isinstance(fields.get(k), str) and fields[k].strip() for k in REQUIRED)
+            assert "DRAF" in record["teacher_notice"]
+            match = re.search(r"Bidang:\s*([^\s•]+)", " ".join(record.get("intro", [])))
+            domain = DOMAINS.get(match.group(1), "tidak_diketahui") if match else "tidak_diketahui"
+            steps = [s.strip() for s in fields["aktiviti_utama"].splitlines() if s.strip()]
+            numbered = NUMBERED.match(steps[0])
+            flags = []
+            if not numbered or numbered.group(1) != "1":
+                flags.append("NOMBOR_AKTIVITI_TIDAK_BERMULA_1")
+            if len(steps) <= 2:
+                flags.append("AKTIVITI_TERLALU_RINGKAS_PERLU_SEMAKAN")
+            if any(term in fields["bahan"].casefold() for term in UNVERIFIED_PAGE):
+                flags.append("RUJUKAN_HALAMAN_BELUM_DISAHKAN")
+            if domain == "tidak_diketahui":
+                flags.append("BIDANG_TIDAK_DIKENALI")
+            rows.append({"id": record["id"], "domain": domain,
+                         "state": record["state"], "flags": flags})
+    assert len(rows) == 696
+    flag_counts = Counter(flag for row in rows for flag in row["flags"])
+    domain_counts = Counter(row["domain"] for row in rows)
+    return {
+        "subject": "Pendidikan Islam",
+        "scope": "Tahun 2-6, staging only",
+        "total": len(rows),
+        "drafts": len(rows) - len(HELD),
+        "held": len(HELD),
+        "domain_counts": dict(sorted(domain_counts.items())),
+        "flags": dict(sorted(flag_counts.items())),
+        "quality_score_percent": None,
+        "quality_80_certified": False,
+        "academic_verification": "BELUM: DSKP, buku teks/mushaf, objektif, PBD & Jawi belum disahkan setiap Lesson",
+        "format_revision": "Nombor Aktiviti Utama dibetulkan tanpa mengubah teks Jawi asal; Word/PDF belum dijana semula",
+        "release": "NO_GO",
+        "records": rows,
+    }
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output", default="")
+    args = parser.parse_args()
+    result = audit()
+    summary = {k: v for k, v in result.items() if k != "records"}
+    print(json.dumps(summary, ensure_ascii=False, indent=2))
+    if args.output:
+        Path(args.output).write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
