@@ -43,8 +43,12 @@ class PrimarySourceUnitParity(unittest.TestCase):
                             self.assertEqual(
                                 row["standalone_rph_verified"],False)
                         found.extend(c["value"] for c in choices)
-                    self.assertEqual(found,tokens,
-                                     f"Missing/reordered PdP: {subject}/{component}/{year}")
+                    # A real Unit can recur later in the source SOW/RPT:
+                    # Unit grouping is therefore allowed to reorder the menu
+                    # while preserving every original Lesson/PdP exactly once.
+                    self.assertEqual(sorted(found),sorted(tokens),
+                                     f"Missing/duplicate PdP: {subject}/{component}/{year}")
+                    self.assertEqual(len(found),len(set(found)))
 
     def test_pk_uses_domain_not_each_pdp_as_unit(self):
         for year in range(2,7):
