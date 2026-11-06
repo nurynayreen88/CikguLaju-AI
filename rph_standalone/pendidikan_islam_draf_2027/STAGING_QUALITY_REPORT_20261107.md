@@ -107,7 +107,7 @@ CI: unit test baharu menguatkuasakan bilangan 174/84/73 dan tiada rujukan palsu;
 
 ## Tambahan bukti sekunder bagi nombor halaman — 7 November 2026
 
-Terdapat **21 padanan calon tambahan** yang kini mempunyai rujukan nombor halaman daripada bahan PdPR atau deskripsi video guru: **1 Tahun 2**, **20 Tahun 3**. Ini **bukan** 21 halaman buku asal yang telah diperiksa atau 21 integrasi siap; keseluruhan kekal `HOLD`.
+Terdapat **42 padanan calon** yang kini mempunyai petunjuk nombor halaman daripada bahan PdPR atau penerangan video guru: **11 Tahun 2** dan **31 Tahun 3**. Ini **bukan** 42 halaman buku asal yang telah diperiksa atau 42 integrasi siap; keseluruhan kekal `HOLD`.
 
 | Contoh sumber sekunder | Lesson CikguLaju | Halaman yang *dilaporkan* | Status |
 |---|---|---|---|
@@ -126,6 +126,25 @@ Sumber rujukan:
 - Video pengajaran Jawi apitan Tahun 3: https://www.youtube.com/watch?v=MSrVyaNELpo
 - Video guru Buku Aktiviti Tahun 2, Kekasihku Rasulullah: https://www.youtube.com/watch?v=75s3VFoIe40
 
-**Peraturan:** Modul/video 2020–2021 ialah sumber pelaksanaan guru dan bukan pengesahan cetakan buku edisi 2027. Halaman Buku Teks dan halaman Buku Aktiviti tidak boleh ditukar ganti. Teks RPH tidak akan mengandungi halaman yang belum diperiksa sendiri pada Buku Aktiviti asal. Fail `pi_ba_secondary_evidence.py` menjana `pi_ba_secondary_evidence_21.json`, lengkap `page_number_is_verified_in_original_book=false`, `allow_auto_inject_to_rph=false`, `teacher_sentence=null`. QA menghalang sebarang pelepasan automatik.
+**Peraturan:** Modul/video 2020–2021 ialah sumber pelaksanaan guru dan bukan pengesahan cetakan buku edisi 2027. Halaman Buku Teks dan halaman Buku Aktiviti tidak boleh ditukar ganti. Teks RPH tidak akan mengandungi halaman yang belum diperiksa sendiri pada Buku Aktiviti asal. Fail `pi_ba_secondary_evidence.py` menjana `pi_ba_secondary_evidence_42.json`, lengkap `page_number_is_verified_in_original_book=false`, `allow_auto_inject_to_rph=false`, `teacher_sentence=null`. QA menghalang sebarang pelepasan automatik.
 
-**Baki sebenar:** 174 calon Lesson perlu disemak mengikut Buku Aktiviti bercetak/digital yang dapat dibaca, latihan dan SP; 21 daripadanya mempunyai petunjuk halaman sekunder. **0** halaman/latihan diluluskan untuk RPH pengguna, dan tiada hak edar PDF luar dibuktikan.
+**Baki sebenar:** 174 calon Lesson perlu disemak mengikut Buku Aktiviti bercetak/digital yang dapat dibaca, latihan dan SP; 42 daripadanya mempunyai petunjuk halaman sekunder. **0** halaman/latihan diluluskan untuk RPH pengguna, dan tiada hak edar PDF luar dibuktikan.
+
+## Pengesahan bibliografi KPM, kawalan edisi dan tahap akhir kerja semasa
+
+**Sumber rasmi KPM:** https://www.moe.gov.my/storage/files/shares/Banner/E-Katalog%20Buku%20Teks%20KPM.pdf
+
+| Buku arus perdana sekolah kebangsaan | Kod rasmi KPM | Penerbit | Sumber isi kandungan halaman |
+|---|---|---|---|
+| Buku Aktiviti Pendidikan Islam Tahun 2 | **BA102001** | Dewan Bahasa dan Pustaka | **Belum dapat dibaca/disahkan terus** |
+| Buku Aktiviti Pendidikan Islam Tahun 3 | **BA103001** | Dewan Bahasa dan Pustaka | **Belum dapat dibaca/disahkan terus** |
+
+Ini bukti **identiti buku** sahaja, bukan bukti isi latihan/halaman atau kebenaran mengedar buku digital.
+
+**Sumber yang ditolak:** Buku Aktiviti Tahun 2 berlabel BA PAI yang dicetak untuk **KSSRPK Pendidikan Islam Masalah Pembelajaran**, ISBN **978-983-49-1622-0**, tidak boleh digunakan sebagai edisi utama SK KSSR Semakan. Rujukan salah terhad kepada senarai editor `BLOCKED`, dan ujian `test_pi_ba_source_integrity.py` memastikan ia tidak dicampurkan ke cadangan sumber BA arus perdana.
+
+**Bercanggah:** arahan Jawi imbuhan awalan Tahun 3 daripada sumber PdPR 2021 menyatakan p65–66 sedangkan sumber sama turut menggunakan p65–66 untuk Akidah. Rekod **T3-L004** disekat automatik dengan `cross_source_conflict_detected=true`, dan tiada halaman tersebut diperakukan.
+
+**Kerja editor yang telah disiapkan tanpa merosakkan RPH:** 42 petunjuk halaman daripada sumber luar, 258 lejar Lesson/SP, 174 cadangan ayat Buku Aktiviti Jawi **bersyarat** (bukan untuk guru), ujian sumber rasmi dan pengasingan edisi KSSRPK. Fail `pi_ba_sentence_candidates.py` menghasilkan `pi_ba_sentence_candidates_174.json`; setiap calon `injected_into_rph=false`, `book_printed_page=null`, `release=HOLD`. Semua 690 draf dan enam tahanan kekal dalam status asal, tiada perubahan database/API/Web/Telegram.
+
+**Kriteria untuk menyiapkan penerbitan benar-benar:** akses naskhah sebenar berkod BA102001/BA103001, verifikasi **halaman bercetak + arahan latihan + kod SP** bagi 174 calon, semakan ejaan Jawi, paparan Word/PDF A4 dan keseragaman Web–Telegram staging. Ketika bukti ini belum wujud, 0 pemadanan buku aktiviti boleh diluluskan, dan pencapaian 80% akademik belum boleh dinyatakan. Status **NO_GO** diteruskan untuk mengelakkan bahan salah diedarkan kepada guru.
