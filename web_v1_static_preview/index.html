@@ -32,8 +32,18 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 @page{size:A4;margin:11mm}
 @media print{.rph-table-wrap{overflow:visible}.rph-preview-table{font-size:8pt}.rph-preview-table th,.rph-preview-table td{padding:4px 6px}.rph-preview-table tbody tr{break-inside:avoid-page}#rph-preview-content h3{margin-top:0}#rph-preview-content p{margin-bottom:4px}}
 @media print{body{background:white!important}header,footer,main.panel,#workspace>*:not(#rph-preview-panel),#rph-preview-panel>button{display:none!important}#workspace{display:block!important;border:0!important;box-shadow:none!important;padding:0!important;margin:0!important;max-width:none!important}#rph-preview-panel{display:block!important;border:0!important;background:white!important;margin:0!important;padding:0!important}#rph-preview-content{border:0!important;padding:0!important}#rph-preview-content h4{break-after:avoid}#rph-preview-content p{break-inside:avoid}}
-/* Sembunyikan bahan tambahan yang belum disambungkan; kekalkan kod untuk pengaktifan kemudian. */
-#show-materials,#materials-panel{display:none!important}
+/* Senarai bahan: satu tindakan selepas pemilihan Lesson/PdP. */
+#show-materials{margin-top:18px;padding:14px 24px;border:0;border-radius:13px;background:#087568;color:#fff;font:inherit;font-weight:800;cursor:pointer}
+#show-materials[hidden],#materials-panel[hidden]{display:none!important}
+#show-materials:disabled{opacity:.55;cursor:not-allowed}
+#rph-download-actions{display:none!important}
+#materials-panel{margin-top:18px;padding:18px;border:1px solid #cfe3e4;border-radius:16px;background:#fafdfd}
+#materials-list{list-style:none;padding:0;margin:14px 0;display:grid;gap:10px}
+.material-download-row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px;border:1px solid #dbe8e9;background:white;border-radius:12px}
+.material-download-name{font-weight:700;min-width:0;overflow-wrap:anywhere}
+.material-download-action{flex:none;display:inline-block;background:#087568;color:#fff;border:0;border-radius:10px;padding:10px 15px;font:inherit;font-weight:750;text-decoration:none;cursor:pointer}
+.material-download-action:disabled{background:#e4eaea;color:#647c82;cursor:not-allowed}
+@media(max-width:420px){.material-download-row{gap:8px;padding:10px}.material-download-action{padding:9px 11px;font-size:.82rem}}
 .rph-guide{padding:16px 18px;margin:18px 0;border-radius:14px;background:#edf7f2;border:1px solid #d3e6db}
 .rph-guide h3{margin:0 0 8px;font-size:1.07rem}
 .rph-guide p{margin:6px 0;line-height:1.5}
@@ -292,7 +302,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <div class="app-main">
 <div class="workspace-intro"><div><span class="workspace-eyebrow">RUANG GURU</span><p>Selamat datang, <strong id="workspace-teacher-name">Cikgu</strong></p></div><span class="workspace-ready"><span aria-hidden="true">●</span> Portal Pembelajaran</span></div>
 <section id="view-rph" class="app-view" aria-labelledby="view-rph-heading">
-<h2 id="view-rph-heading">Sediakan RPH</h2><p id="account-access" class="notice" role="status"></p><section class="rph-guide" aria-label="Cara menyediakan RPH"><h3>Cara menyediakan RPH</h3><p><strong>1.</strong> Pilih Tahun → Subjek → Unit/Tajuk → Lesson/PdP.</p><p><strong>2.</strong> Pilih kelas, tarikh, waktu mula/tamat dan bilangan murid jika perlu.</p><p><strong>3.</strong> Pilih <strong>Jana RPH Word</strong> atau <strong>Jana RPH PDF</strong>. Fail dijana terus menggunakan penjana RPH Telegram, tanpa paparan pratonton.</p><p class="notice">Hanya RPH yang mempunyai sumber lengkap tersedia. 10 janaan RPH percuma dikongsi antara Web dan Telegram. Rakan Pembangun yang aktif mendapat akses tanpa had.</p></section><p id="selection-help" class="selection-help" role="status">Mula di bawah dengan memilih Tahun.</p><label for="year">Langkah 1 — Pilih Tahun</label><select id="year"><option value="">Pilih Tahun</option><option value="1">Tahun 1</option><option value="2">Tahun 2</option><option value="3">Tahun 3</option><option value="4">Tahun 4</option><option value="5">Tahun 5</option><option value="6">Tahun 6</option></select><label for="subject">Langkah 2 — Pilih Subjek</label><select id="subject" disabled><option value="">Pilih Tahun dahulu</option></select><label for="component" id="component-label" hidden>Pilih komponen PJPK (PJ atau PK)</label><select id="component" hidden disabled><option value="">Pilih PJ atau PK</option></select><label for="unit" id="unit-label" hidden>Langkah 3 — Pilih Unit/Tajuk</label><select id="unit" hidden disabled><option value="">Pilih Subjek dahulu</option></select><label for="lesson" id="lesson-label" hidden>Langkah 4 — Pilih Lesson/PdP</label><select id="lesson" hidden disabled><option value="">Pilih Subjek dahulu</option></select><p id="catalog-status" class="notice" role="status"></p><section id="teacher-info" hidden aria-label="Maklumat kelas, masa dan murid"><h3>Langkah 5 — Maklumat RPH</h3><p>Isi maklumat PdP jika ada. Maklumat yang diisi akan dicetak dalam RPH Word atau PDF.</p><label for="teacher-class">Pilih Kelas</label><select id="teacher-class"><option value="">Pilih kelas (pilihan)</option><option value="__other__">+ Isi nama kelas lain</option></select><div id="teacher-class-other-wrap" hidden><label for="teacher-class-other">Nama Kelas Lain</label><input id="teacher-class-other" type="text" maxlength="40" autocomplete="off" placeholder="Contoh: 4 Bestari"></div><p class="notice" id="teacher-class-hint">Kelas yang disimpan dalam Profil Guru akan disenaraikan secara automatik.</p><label for="teacher-date">Tarikh PdP</label><input id="teacher-date" type="date"><div class="rph-time-fields"><div><label for="teacher-time-start">Waktu Mula</label><input id="teacher-time-start" type="time" step="60"></div><div><label for="teacher-time-end">Waktu Tamat</label><input id="teacher-time-end" type="time" step="60"></div></div><p class="notice">Jika isi masa, lengkapkan kedua-dua waktu mula dan tamat. Waktu tamat mestilah selepas waktu mula.</p><label for="teacher-students">Bilangan Murid</label><input id="teacher-students" type="number" min="1" max="200" step="1" inputmode="numeric" placeholder="Contoh: 32"><p class="notice">Bilangan murid adalah pilihan; masukkan jumlah sebenar kelas (1–200).</p></section><div id="rph-download-actions" hidden><button id="rph-word" type="button" disabled>Jana RPH Word</button> <button id="rph-pdf" type="button" disabled>Jana RPH PDF</button></div><p id="rph-download-status" class="notice" role="status" aria-live="polite"></p><button id="show-materials" type="button" hidden disabled>Papar Bahan</button><section id="materials-panel" hidden aria-live="polite"><h3>Senarai Bahan</h3><p id="materials-status" class="notice"></p><ul id="materials-list"></ul><button id="download-all" type="button" disabled>Download Semua</button></section></section>
+<h2 id="view-rph-heading">Sediakan RPH</h2><p id="account-access" class="notice" role="status"></p><section class="rph-guide" aria-label="Cara menyediakan RPH"><h3>Cara menyediakan RPH</h3><p><strong>1.</strong> Pilih Tahun → Subjek → Unit/Tajuk → Lesson/PdP.</p><p><strong>2.</strong> Pilih kelas, tarikh, waktu mula/tamat dan bilangan murid jika perlu.</p><p><strong>3.</strong> Tekan <strong>Jana Bahan</strong> untuk melihat RPH PDF, RPH Word, Buku Teks, Audio dan Buku Aktiviti yang tersedia bagi Lesson/PdP ini, kemudian muat turun bahan pilihan.</p><p class="notice">Hanya RPH yang mempunyai sumber lengkap tersedia. 10 janaan RPH percuma dikongsi antara Web dan Telegram. Rakan Pembangun yang aktif mendapat akses tanpa had.</p></section><p id="selection-help" class="selection-help" role="status">Mula di bawah dengan memilih Tahun.</p><label for="year">Langkah 1 — Pilih Tahun</label><select id="year"><option value="">Pilih Tahun</option><option value="1">Tahun 1</option><option value="2">Tahun 2</option><option value="3">Tahun 3</option><option value="4">Tahun 4</option><option value="5">Tahun 5</option><option value="6">Tahun 6</option></select><label for="subject">Langkah 2 — Pilih Subjek</label><select id="subject" disabled><option value="">Pilih Tahun dahulu</option></select><label for="component" id="component-label" hidden>Pilih komponen PJPK (PJ atau PK)</label><select id="component" hidden disabled><option value="">Pilih PJ atau PK</option></select><label for="unit" id="unit-label" hidden>Langkah 3 — Pilih Unit/Tajuk</label><select id="unit" hidden disabled><option value="">Pilih Subjek dahulu</option></select><label for="lesson" id="lesson-label" hidden>Langkah 4 — Pilih Lesson/PdP</label><select id="lesson" hidden disabled><option value="">Pilih Subjek dahulu</option></select><p id="catalog-status" class="notice" role="status"></p><section id="teacher-info" hidden aria-label="Maklumat kelas, masa dan murid"><h3>Langkah 5 — Maklumat RPH</h3><p>Isi maklumat PdP jika ada. Maklumat yang diisi akan dicetak dalam RPH Word atau PDF.</p><label for="teacher-class">Pilih Kelas</label><select id="teacher-class"><option value="">Pilih kelas (pilihan)</option><option value="__other__">+ Isi nama kelas lain</option></select><div id="teacher-class-other-wrap" hidden><label for="teacher-class-other">Nama Kelas Lain</label><input id="teacher-class-other" type="text" maxlength="40" autocomplete="off" placeholder="Contoh: 4 Bestari"></div><p class="notice" id="teacher-class-hint">Kelas yang disimpan dalam Profil Guru akan disenaraikan secara automatik.</p><label for="teacher-date">Tarikh PdP</label><input id="teacher-date" type="date"><div class="rph-time-fields"><div><label for="teacher-time-start">Waktu Mula</label><input id="teacher-time-start" type="time" step="60"></div><div><label for="teacher-time-end">Waktu Tamat</label><input id="teacher-time-end" type="time" step="60"></div></div><p class="notice">Jika isi masa, lengkapkan kedua-dua waktu mula dan tamat. Waktu tamat mestilah selepas waktu mula.</p><label for="teacher-students">Bilangan Murid</label><input id="teacher-students" type="number" min="1" max="200" step="1" inputmode="numeric" placeholder="Contoh: 32"><p class="notice">Bilangan murid adalah pilihan; masukkan jumlah sebenar kelas (1–200).</p></section><div id="rph-download-actions" hidden><button id="rph-word" type="button" disabled>Jana RPH Word</button> <button id="rph-pdf" type="button" disabled>Jana RPH PDF</button></div><p id="rph-download-status" class="notice" role="status" aria-live="polite"></p><button id="show-materials" type="button" hidden disabled>Jana Bahan</button><section id="materials-panel" hidden aria-live="polite"><h3>Bahan untuk Lesson/PdP dipilih</h3><p id="materials-status" class="notice" role="status"></p><ul id="materials-list"></ul><button id="download-all" type="button" hidden disabled>Muat Turun Semua</button></section></section>
 <section id="view-rpt" class="app-view" aria-labelledby="rpt2027-heading" hidden>
 <section id="rpt2027-panel" aria-labelledby="rpt2027-heading"><h3 id="rpt2027-heading">📅 RPT 2027 — Semua Subjek</h3><p>Pilih subjek dan tahun. <strong>Nama dan logo sekolah daripada Profil Guru akan dimasukkan secara automatik pada lembaran pertama RPT.</strong> RPT adalah untuk Rakan Pembangun yang disahkan atau pelanggan berlangganan aktif. Fail bertanda DRAF/SEMENTARA masih dalam semakan.</p><label for="rpt-subject">Subjek RPT</label><select id="rpt-subject" disabled><option value="">Memuatkan senarai subjek…</option></select><label for="rpt-year">Tahun RPT</label><select id="rpt-year" disabled><option value="">Pilih Subjek dahulu</option></select><button id="rpt-download" type="button" disabled>Muat turun RPT 2027 (PDF)</button><a id="rpt-download-mobile" href="#" target="_blank" rel="noopener" aria-label="Muat turun RPT 2027 PDF melalui pautan terus" hidden>📥 Muat Turun RPT 2027 (PDF)</a><p id="rpt-status" class="notice" role="status"></p><p class="notice rpt-phone-help">Pada telefon, PDF boleh dibuka pada tab baharu atau disimpan terus mengikut tetapan pelayar. Jika PDF dibuka, pilih Simpan atau Muat Turun dalam menu pelayar.</p></section></section>
 <section id="view-account" class="app-view" aria-labelledby="view-account-heading" hidden>
@@ -590,7 +600,13 @@ async function loadOptions(kind,extra={}){
  return items;
 }
 function showStep(el,visible){el.hidden=!visible;document.getElementById(el.id+"-label").hidden=!visible;}
-function resetMaterials(){document.getElementById("show-materials").hidden=true;document.getElementById("show-materials").disabled=true;document.getElementById("materials-panel").hidden=true;document.getElementById("materials-list").replaceChildren();document.getElementById("download-all").disabled=true;}
+function resetMaterials(){
+ document.getElementById("show-materials").hidden=true;
+ document.getElementById("show-materials").disabled=true;
+ document.getElementById("materials-panel").hidden=true;
+ document.getElementById("materials-list").replaceChildren();
+ document.getElementById("download-all").disabled=true;
+}
 function resetSelect(el,label){el.replaceChildren(new Option(label,""));el.disabled=true;}
 function fillSelect(el,items,label){resetSelect(el,label);for(const item of items){if(item.value==null||!item.label)continue;const opt=new Option(item.label,String(item.value));opt.dataset.approved=item.approved===true&&item.download_enabled===true&&item.standalone_rph_verified===true?"1":"0";if(Number.isInteger(item.lesson_no)&&item.lesson_no>0&&item.lesson_no<=160)opt.dataset.lessonNo=String(item.lesson_no);el.add(opt);}el.disabled=el.options.length<=1;}
 year.addEventListener("change",async()=>{
@@ -623,22 +639,76 @@ lesson.addEventListener("change",()=>{
   void checkRphAvailability();
  }
 });
-document.getElementById("show-materials").addEventListener("click",async()=>{
- const panel=document.getElementById("materials-panel"),status=document.getElementById("materials-status");
- panel.hidden=false;document.getElementById("materials-list").replaceChildren();document.getElementById("download-all").disabled=true;
- status.textContent="Menyemak bahan yang telah diluluskan…";
+const MATERIAL_CATEGORIES = Object.freeze([
+ {code:"rph-pdf",label:"RPH PDF",kind:"rph"},
+ {code:"rph-word",label:"RPH Word",kind:"rph"},
+ {code:"textbook",label:"Buku Teks",kind:"textbook"},
+ {code:"audio",label:"Audio",kind:"audio"},
+ {code:"workbook",label:"Buku Aktiviti",kind:"workbook"}
+]);
+const materialPanel=document.getElementById("materials-panel");
+let materialsRequestKey="";
+function materialRow(title,{onDownload=null,url=null,ready=false}={}){
+ const li=document.createElement("li");
+ li.className="material-download-row";
+ const name=document.createElement("span");name.className="material-download-name";name.textContent=title;
+ const action=document.createElement(ready&&url?"a":"button");
+ action.className="material-download-action";
+ action.textContent=ready?"Download":"Belum tersedia";
+ if(action.tagName==="BUTTON"){action.type="button";action.disabled=!ready;}
+ if(ready&&url){action.href=url;action.rel="noopener";action.target="_blank";}
+ else if(ready&&onDownload){action.addEventListener("click",onDownload);}
+ li.append(name,action);
+ return li;
+}
+async function populateMaterialList(){
+ const key=currentRphLessonKey();
+ if(!lesson.value)return;
+ materialsRequestKey=key;
+ materialPanel.hidden=false;
+ const list=document.getElementById("materials-list");
+ const status=document.getElementById("materials-status");
+ list.replaceChildren();
+ status.textContent="Menyemak bahan sebenar bagi Lesson/PdP yang dipilih…";
+ const rphReady=canGenerateRph()&&!!currentRphParams()&&verifiedRphKey===key;
+ list.append(materialRow("RPH PDF",{ready:rphReady,onDownload:()=>generateRphFile("pdf")}));
+ list.append(materialRow("RPH Word",{ready:rphReady,onDownload:()=>generateRphFile("word")}));
+ if(!rphReady&&verifiedRphKey!==key)status.textContent="Semakan RPH masih berjalan atau RPH belum tersedia.";
+ const placeholders={textbook:"Buku Teks",audio:"Audio",workbook:"Buku Aktiviti"};
+ const discovered={textbook:[],audio:[],workbook:[]};
+ let sourceError="";
  try{
-  const params=new URLSearchParams({year:year.value,subject:subject.value,lesson:lesson.value});
-  const response=await fetch("/api/materials?"+params.toString(),{credentials:"same-origin",cache:"no-store"});
-  if(!response.ok)throw Error("Senarai bahan belum disambungkan kepada sumber Telegram (HTTP "+response.status+").");
-  const data=await response.json(),items=Array.isArray(data)?data:data.items;
-  if(!Array.isArray(items))throw Error("Format bahan tidak sah.");
-  const list=document.getElementById("materials-list");
-  for(const item of items){if(!item||!item.approved||!item.id)continue;const li=document.createElement("li");li.textContent=String(item.title||item.name||"Bahan diluluskan");if(data.download_enabled===true&&item.download_enabled===true){const a=document.createElement("a");a.textContent="Download";a.href="/api/materials/download/"+encodeURIComponent(String(item.id));li.append(" ",a);}list.append(li);}
-  status.textContent=data.download_enabled===false?"Senarai bahan disemak. Muat turun masih menunggu pengesahan penghantaran Telegram.":(list.children.length?list.children.length+" bahan diluluskan.":"Tiada bahan diluluskan untuk Lesson ini.");
-  // Download Semua stays disabled until a server-issued ZIP or download bundle is implemented.
- }catch(error){status.textContent=error.message;}
-});
+  const lessonNumber=lesson.selectedOptions[0]?.dataset.lessonNo ||
+    (/^[1-9][0-9]{0,11}$/.test(lesson.value)?lesson.value:"");
+  if(!lessonNumber)throw Error("Pemetaan ID Lesson Telegram belum disahkan.");
+  const params=new URLSearchParams({year:year.value,subject:subject.value,lesson:lessonNumber});
+  const response=await fetch("/api/materials?"+params,{credentials:"same-origin",cache:"no-store",redirect:"error"});
+  if(!response.ok)throw Error("Sumber fail tambahan Telegram belum membenarkan muat turun untuk pilihan ini.");
+  const data=await response.json();
+  if(!Array.isArray(data.items))throw Error("Senarai sumber Telegram tidak sah.");
+  if(data.download_enabled===true){
+   for(const item of data.items){
+    if(!item||item.approved!==true||item.download_enabled!==true||!item.id)continue;
+    if(!Object.hasOwn(discovered,item.type))continue;
+    if(!/^[A-Za-z0-9_-]{1,128}$/.test(String(item.id)))continue;
+    discovered[item.type].push({name:String(item.title||placeholders[item.type]),id:String(item.id)});
+   }
+  }else sourceError="Sumber Telegram mengesahkan metadata sahaja; muat turun belum diaktifkan.";
+ }catch(e){sourceError=e.message;}
+ if(materialsRequestKey!==key||currentRphLessonKey()!==key)return;
+ for(const cat of ["textbook","audio","workbook"]){
+  const items=discovered[cat];
+  if(!items.length){list.append(materialRow(placeholders[cat]));continue;}
+  for(const item of items){
+   list.append(materialRow(item.name,{ready:true,
+      url:"/api/materials/download/"+encodeURIComponent(item.id)}));
+  }
+ }
+ status.textContent=sourceError?
+   "RPH menggunakan penjana Telegram. "+sourceError+" Bahan yang belum disahkan tidak boleh dimuat turun.":
+   "Bahan yang disahkan tersedia untuk dimuat turun secara individu.";
+}
+document.getElementById("show-materials").addEventListener("click",()=>{void populateMaterialList();});
 const rptSubject=document.getElementById("rpt-subject"),rptYear=document.getElementById("rpt-year"),rptDownload=document.getElementById("rpt-download"),rptMobileLink=document.getElementById("rpt-download-mobile"),rptStatus=document.getElementById("rpt-status");
 let rptCatalog=null;
 async function loadRptCatalog(){
