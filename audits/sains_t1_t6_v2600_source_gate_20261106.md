@@ -2,6 +2,21 @@
 
 **Keputusan penerbitan: HOLD / BELUM FINAL READY.** Audit ini tidak mengubah DB, RPH, Telegram, Web, kuota, ataupun PDF sedia ada.
 
+## Status sumber TERKINI untuk pusingan audit ini
+
+**Amaran penting: versi v25.82 berbeza besar daripada v25.68.** Semua pembetulan lima tajuk/23 rekod dengan kod PdP 001–023 dalam laporan di bawah merujuk **SEJARAH v25.68 SAHAJA**. Jangan gunakan kod tersebut pada v25.82: 323 daripada 385 rekod menunjukkan perubahan sekurang-kurangnya satu medan antara dua snapshot tersebut. Tahun 3 v25.82 kini bermula dengan Unit Manusia (bukan Asid dan Alkali). Semakan sumber [CI v25.68 lawan v25.82](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42183468486).
+
+### Hasil audit Sains v25.82 (sumber lebih baharu dalam repo, **belum terbukti aktif di Render**)
+
+- 385 PdP berkod tetap wujud; T1=43, T2=51, T3=45, T4=79, T5=83, T6=84. Bukannya 587 PdP lengkap.
+- Tahun 3: **12 calon pembetulan SP–tajuk** direkodkan dalam [ledger versi tepat](sains_y3_v2582_12_dskp_title_corrections_20261106.json), termasuk 3.3 Pencernaan, 5.1 Tumbuhan, 6.1 Pengukuran, 7.1 Ketumpatan, 8.1 Asid dan Alkali dan 9.1 Sistem Suria. Skrip simulasi membuktikan hanya tajuk dikemas kini pada salinan sementara, kemudian rollback. **Jangan guna SQL pada DB produksi.**
+- Tahun 3: [45/45 petunjuk halaman BT](sains_y3_v2582_45_textbook_page_candidates_20261106.json), terdiri daripada 44 padanan label SP di halaman buku dan 1 tajuk kandungan untuk SP 10.1.4. **Semua adalah calon**; medan textbook_ref dalam DB masih kosong; pemeriksaan visual halaman/aktiviti belum lengkap.
+- Tahun 3: 23 PdP sempadan QA pada v25.82 berkod **SCI-Y3-PDP-001 hingga 009 dan 032 hingga 045**, bukan kod 001 hingga 023 seperti v25.68.
+- Unit Sains dalam sumber v25.82 mengulang tajuk kerana SK berlainan dianggap Unit berlainan. Adapter **DRAF/TIDAK DIHIDUPKAN** [sains_canonical_unit_preview_20261106.py](../web/sains_canonical_unit_preview_20261106.py) menyatukan Unit berdasarkan nombor SK: T2 8 Unit, T3 8 Unit, T4 9 Unit, T5 9 Unit, T6 12 Unit, sambil mengekalkan tepat 342 PdP asal. Ia menolak Sains KSSR Tahun 1 untuk tahun akademik 2027 supaya tidak menggantikan KP2027 Alam dan Manusia.
+- [CI terkini](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42185303671) **20/20 ujian lulus** untuk inventori, sumber v25.82, padanan DSKP, rujukan halaman dan pembetulan/Unit preview. **Ujian ini tidak mengesahkan kualiti keseluruhan 385 RPH, Word/PDF sebenar atau Web LIVE.**
+
+**Penerbitan: HOLD.** Keperluan sebelum READY: audit individu 385/385 aktiviti dan buku, 2027 Tahun 1 menggunakan sukatan KP2027 rasmi, ketepatan semua rujukan halaman, RPT Sains 2027 A/B lengkap, Word/PDF 1 halaman dan ujian pengguna sebenar Telegram–Web. Hanya selepas itu sumber v25.82 (atau versi baharu hasil pembetulan) boleh diaktifkan melalui kawalan release dengan backup dan rollback.
+
 ## Sempadan fakta
 
 - Susunan master kerja *belum disahkan*: Tahun 1 = 92, Tahun 2 = 92, Tahun 3 = 103, Tahun 4 = 88, Tahun 5 = 116, Tahun 6 = 96; jumlah 587, **bukan** bukti 587 rekod aktif atau 587 RPH lengkap.
