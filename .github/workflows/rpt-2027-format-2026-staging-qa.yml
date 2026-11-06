@@ -5,6 +5,7 @@ on:
       - 'rpt_2027/common/format_2026_layout_preview.py'
       - 'rpt_2027/common/standard_text_enrichment.py'
       - 'rpt_2027/common/calendar_week_2027_a_b_snapshot_20261107_DRAF.json'
+      - 'rpt_2027/common/calendar_week_mapping_staging.py'
       - 'scripts/audit_rpt_2027_calendar_master_staging.py'
       - 'tests/test_rpt_2027_calendar_master_staging.py'
       - 'curriculum/sejarah/y*_dskp_crosswalk_DRAF.json'
@@ -32,7 +33,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install 'reportlab==4.2.5' 'pypdf==5.1.0' 'PyMuPDF==1.24.14'
-      - run: python -m py_compile rpt_2027/common/format_2026_layout_preview.py scripts/build_rpt_2027_standard_preview.py scripts/build_rpt_2027_second_batch_preview.py rpt_2027/common/standard_text_enrichment.py
+      - run: python -m py_compile rpt_2027/common/format_2026_layout_preview.py scripts/build_rpt_2027_standard_preview.py scripts/build_rpt_2027_second_batch_preview.py rpt_2027/common/standard_text_enrichment.py rpt_2027/common/calendar_week_mapping_staging.py scripts/audit_rpt_2027_calendar_master_staging.py
       - name: Audit source and render each of the 13 A4 landscape PDFs
         run: python -m unittest tests.test_rpt_2027_standard_2026_layout_preview tests.test_rpt_2027_second_batch_preview tests.test_rpt_2027_calendar_master_staging -v
       - name: Audit calendar against central 2027 week master (read-only)
