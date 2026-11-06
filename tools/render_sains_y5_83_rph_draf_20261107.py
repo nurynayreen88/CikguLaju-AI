@@ -64,7 +64,7 @@ def kps_for(sp):
 
 def get_y5_records():
     rows, summary=analyze()
-    selected=[r for r in rows if r["tahun"]==4]
+    selected=[r for r in rows if r["tahun"]==5]
     if len(selected)!=83 or len(BANK)!=83:
         raise ValueError("Year5 source count and activity bank no longer agree")
     if [int(r["pdp_number"]) for r in selected]!=list(range(1,84)):
@@ -83,7 +83,7 @@ def get_y5_records():
             **row, **BANK[row["sp"]],
             "kps":kps_for(row["sp"]),
             "subject":"Sains",
-            "year":4,
+            "year":5,
             "curriculum_quality_percent":None,
             "textbook_pages":None,
             "status":"DRAF_HOLD",
