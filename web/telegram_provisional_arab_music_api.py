@@ -29,7 +29,7 @@ INDEX = ROOT / "rpt_2027" / "bahasa_arab"
 SOURCE = "telegram-provisional-subjects-2027-v1"
 MAX_FILE = 15 * 1024 * 1024
 NUM = re.compile(r"(?:00[1-9]|0[1-9]\d|[1-2]\d\d|3\d\d)")
-UNIT = re.compile(r"u0[1-9]|x[a-f0-9]{12}")
+UNIT = re.compile(r"u(?:0[1-9]|[1-9][0-9])|x[a-f0-9]{12}")
 EXPECTED = {2:60,3:60,4:58,5:60,6:60}
 SUBJECTS = {"ARAB":"Bahasa Arab", "MUZIK":"Pendidikan Muzik"}
 
