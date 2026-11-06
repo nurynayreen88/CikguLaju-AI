@@ -9,17 +9,28 @@
   "scope": "Tahun 2–6, PdP 001–012; physical printed textbook page references, including composite pages",
   "source_policy": "Pages are candidate evidence from prior source audits, NOT proof of printed SK/SP, precise sequence, Arabic proofreading or teacher approval.",
   "special_flags": {
-    "year2_pdp_printed_sp_ambiguous": [
-      "002",
-      "004",
-      "010",
-      "011"
-    ],
+    "year2_pdp_printed_sp_ambiguous": [],
     "year6": "Sources must be correct four-unit DBP/KPM 2021 ebook; original page images not fully reviewed. The older 6-unit Drive PDF is prohibited.",
     "year2_candidate_sp_corrections": {
       "010": "2.3.1 → 2.3.5 (word reading; book p9–11)",
       "011": "3.3.1 → 3.4.1 (phrase copying; book p17)"
-    }
+    },
+    "year2_pdp_printed_sp_visual_resolved": [
+      "001",
+      "002",
+      "003",
+      "004",
+      "005",
+      "006",
+      "007",
+      "008",
+      "009",
+      "010",
+      "011",
+      "012"
+    ],
+    "year2_original_pdf_bibliography_visual_verified": "ISBN 978-983-49-1589-6, Cetakan Pertama 2017",
+    "year2_unit1_visual_source_checked_count": 12
   },
   "teacher_approved": 0,
   "final_ready": 0,
@@ -37,7 +48,12 @@
       "source_level": "TEKS_BUKU_SP_PRINT_4_KES_BELUM_JELAS",
       "visual_teacher_approved": false,
       "sk_sp_final_approved": false,
-      "ready": false
+      "ready": false,
+      "book_original_pdf_sp_visual_confirmed": true,
+      "book_pdf_pages_1based": [
+        14,
+        16
+      ]
     },
     {
       "tahun": "2",
@@ -48,7 +64,12 @@
       "source_level": "TEKS_BUKU_SP_PRINT_4_KES_BELUM_JELAS",
       "visual_teacher_approved": false,
       "sk_sp_final_approved": false,
-      "ready": false
+      "ready": false,
+      "book_original_pdf_sp_visual_confirmed": true,
+      "book_pdf_pages_1based": [
+        14,
+        16
+      ]
     },
     {
       "tahun": "2",
@@ -59,7 +80,12 @@
       "source_level": "TEKS_BUKU_SP_PRINT_4_KES_BELUM_JELAS",
       "visual_teacher_approved": false,
       "sk_sp_final_approved": false,
-      "ready": false
+      "ready": false,
+      "book_original_pdf_sp_visual_confirmed": true,
+      "book_pdf_pages_1based": [
+        15,
+        17
+      ]
     },
     {
       "tahun": "2",
@@ -70,7 +96,12 @@
       "source_level": "TEKS_BUKU_SP_PRINT_4_KES_BELUM_JELAS",
       "visual_teacher_approved": false,
       "sk_sp_final_approved": false,
-      "ready": false
+      "ready": false,
+      "book_original_pdf_sp_visual_confirmed": true,
+      "book_pdf_pages_1based": [
+        14,
+        16
+      ]
     },
     {
       "tahun": "2",
@@ -81,7 +112,12 @@
       "source_level": "TEKS_BUKU_SP_PRINT_4_KES_BELUM_JELAS",
       "visual_teacher_approved": false,
       "sk_sp_final_approved": false,
-      "ready": false
+      "ready": false,
+      "book_original_pdf_sp_visual_confirmed": true,
+      "book_pdf_pages_1based": [
+        15,
+        17
+      ]
     },
     {
       "tahun": "2",
@@ -92,7 +128,11 @@
       "source_level": "TEKS_BUKU_SP_PRINT_4_KES_BELUM_JELAS",
       "visual_teacher_approved": false,
       "sk_sp_final_approved": false,
-      "ready": false
+      "ready": false,
+      "book_original_pdf_sp_visual_confirmed": true,
+      "book_pdf_pages_1based": [
+        18
+      ]
     },
     {
       "tahun": "2",
@@ -103,7 +143,11 @@
       "source_level": "TEKS_BUKU_SP_PRINT_4_KES_BELUM_JELAS",
       "visual_teacher_approved": false,
       "sk_sp_final_approved": false,
-      "ready": false
+      "ready": false,
+      "book_original_pdf_sp_visual_confirmed": true,
+      "book_pdf_pages_1based": [
+        18
+      ]
     },
     {
       "tahun": "2",
@@ -114,7 +158,11 @@
       "source_level": "TEKS_BUKU_SP_PRINT_4_KES_BELUM_JELAS",
       "visual_teacher_approved": false,
       "sk_sp_final_approved": false,
-      "ready": false
+      "ready": false,
+      "book_original_pdf_sp_visual_confirmed": true,
+      "book_pdf_pages_1based": [
+        20
+      ]
     },
     {
       "tahun": "2",
@@ -125,7 +173,11 @@
       "source_level": "TEKS_BUKU_SP_PRINT_4_KES_BELUM_JELAS",
       "visual_teacher_approved": false,
       "sk_sp_final_approved": false,
-      "ready": false
+      "ready": false,
+      "book_original_pdf_sp_visual_confirmed": true,
+      "book_pdf_pages_1based": [
+        20
+      ]
     },
     {
       "tahun": "2",
@@ -136,7 +188,11 @@
       "source_level": "TEKS_BUKU_SP_PRINT_4_KES_BELUM_JELAS",
       "visual_teacher_approved": false,
       "sk_sp_final_approved": false,
-      "ready": false
+      "ready": false,
+      "book_original_pdf_sp_visual_confirmed": true,
+      "book_pdf_pages_1based": [
+        23
+      ]
     },
     {
       "tahun": "2",
@@ -147,7 +203,11 @@
       "source_level": "TEKS_BUKU_SP_PRINT_4_KES_BELUM_JELAS",
       "visual_teacher_approved": false,
       "sk_sp_final_approved": false,
-      "ready": false
+      "ready": false,
+      "book_original_pdf_sp_visual_confirmed": true,
+      "book_pdf_pages_1based": [
+        29
+      ]
     },
     {
       "tahun": "2",
@@ -158,7 +218,12 @@
       "source_level": "TEKS_BUKU_SP_PRINT_4_KES_BELUM_JELAS",
       "visual_teacher_approved": false,
       "sk_sp_final_approved": false,
-      "ready": false
+      "ready": false,
+      "book_original_pdf_sp_visual_confirmed": true,
+      "book_pdf_pages_1based": [
+        24,
+        25
+      ]
     },
     {
       "tahun": "3",

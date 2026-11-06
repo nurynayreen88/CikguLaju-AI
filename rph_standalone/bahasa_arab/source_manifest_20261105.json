@@ -33,7 +33,12 @@
         },
         "original_edition_text_link": "https://anyflip.com/slrpb/qzcr/basic",
         "text_extractable_from_alternate": true,
-        "alternate_original_textbook_publication": 2017
+        "alternate_original_textbook_publication": 2017,
+        "original_drive_pdf_visual_confirmed": true,
+        "original_drive_pdf_url": "https://drive.google.com/file/d/13CqpBb4HosAM_-HTEN-hhBCt2W5wVXCZ/view",
+        "original_drive_pdf_isbn": "978-983-49-1589-6",
+        "original_drive_pdf_first_print": 2017,
+        "original_drive_pdf_page_offset_1based": 12
       },
       "rpt_2026": "https://anyflip.com/zxzlm/jffk/basic",
       "unit_1": "هيا نتعارف",
@@ -72,12 +77,7 @@
       },
       "source_evidence_pdp001_012": "audits/bahasa_arab_y2_pdp001_012_text_source_audit_20261106.json",
       "source_text_reviewed_drafts": 12,
-      "source_book_sp_print_unresolved": [
-        "002",
-        "004",
-        "010",
-        "011"
-      ],
+      "source_book_sp_print_unresolved": [],
       "unit2_candidate_rph_count": 16,
       "unit2_candidate_pdp_range": "013–028",
       "unit2_source_evidence_file": "audits/bahasa_arab_y2_unit2_pdp013_028_visual_audit_20261106.json",
@@ -94,7 +94,28 @@
       "unit4_source_evidence_file": "audits/bahasa_arab_y2_unit4_pdp045_060_visual_audit_20261106.json",
       "unit4_release_approved": false,
       "all_four_units_candidate_pdp": true,
-      "year2_final_ready": false
+      "year2_final_ready": false,
+      "source_book_sp_html_code_corroborated": [
+        "010",
+        "011"
+      ],
+      "source_book_sp_print_unresolved_note": "12/12 codes visibly present on original 2017 textbook PDF, but RPH quality and teacher signoff remain unapproved.",
+      "source_book_sp_print_visual_resolved": [
+        "001",
+        "002",
+        "003",
+        "004",
+        "005",
+        "006",
+        "007",
+        "008",
+        "009",
+        "010",
+        "011",
+        "012"
+      ],
+      "unit1_sp_visual_confirmed": 12,
+      "unit1_sp_visual_audit_path": "audits/bahasa_arab_y2_unit1_pdp001_012_original_pdf_visual_20261106.json"
     },
     "3": {
       "dskp": {
