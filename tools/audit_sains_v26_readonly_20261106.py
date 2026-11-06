@@ -296,6 +296,17 @@ def historical_v25_68_comparison(tmp: Path) -> dict:
             result["verification_status_rows"] = dict(Counter(
                 str(r.get("verification_status") or "").strip() or "(empty)"
                 for r in rows))
+            result["boundary_qa_pending_all_23"] = [
+                {k: r.get(k) for k in ("id", "year_label", "pdp_sequence_code",
+                  "source_sequence_no", "unit_code", "unit_title", "pdp_title",
+                  "sk_code", "sp_code", "verification_status")}
+                for r in rows if str(r.get("verification_status") or "").strip()
+                == "PDP_BOUNDARY_QA_PENDING"
+            ][:100]
+            result["source_fields_population"] = {
+                key: sum(bool(str(r.get(key) or "").strip()) for r in rows)
+                for key in ("source_url", "activitybook_ref", "notes", "skill_metadata")
+            }
             result["year_quality"] = {
                 str(y): {
                     "source_rows": sum(str(r.get("year_label") or "").strip() == f"Tahun {y}" for r in rows),
