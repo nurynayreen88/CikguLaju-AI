@@ -33,7 +33,12 @@
         },
         "original_edition_text_link": "https://anyflip.com/slrpb/qzcr/basic",
         "text_extractable_from_alternate": true,
-        "alternate_original_textbook_publication": 2017
+        "alternate_original_textbook_publication": 2017,
+        "original_drive_pdf_visual_confirmed": true,
+        "original_drive_pdf_url": "https://drive.google.com/file/d/13CqpBb4HosAM_-HTEN-hhBCt2W5wVXCZ/view",
+        "original_drive_pdf_isbn": "978-983-49-1589-6",
+        "original_drive_pdf_first_print": 2017,
+        "original_drive_pdf_page_offset_1based": 12
       },
       "rpt_2026": "https://anyflip.com/zxzlm/jffk/basic",
       "unit_1": "هيا نتعارف",
@@ -72,12 +77,7 @@
       },
       "source_evidence_pdp001_012": "audits/bahasa_arab_y2_pdp001_012_text_source_audit_20261106.json",
       "source_text_reviewed_drafts": 12,
-      "source_book_sp_print_unresolved": [
-        "002",
-        "004",
-        "010",
-        "011"
-      ],
+      "source_book_sp_print_unresolved": [],
       "unit2_candidate_rph_count": 16,
       "unit2_candidate_pdp_range": "013–028",
       "unit2_source_evidence_file": "audits/bahasa_arab_y2_unit2_pdp013_028_visual_audit_20261106.json",
@@ -99,7 +99,13 @@
         "010",
         "011"
       ],
-      "source_book_sp_print_unresolved_note": "Empat kes belum disahkan secara visual pada imej asal; PdP010/011 sudah disokong oleh kod teks eBook DBP 2017 & DPK, tetapi bukti HTML bukan pengesahan visual."
+      "source_book_sp_print_unresolved_note": "Empat kes sumber cetakan telah disahkan pada imej asal PDF DBP 2017; pengesahan buku tidak sama dengan kelulusan RPH.",
+      "source_book_sp_print_visual_resolved": [
+        "002",
+        "004",
+        "010",
+        "011"
+      ]
     },
     "3": {
       "dskp": {
