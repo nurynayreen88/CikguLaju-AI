@@ -23,6 +23,11 @@ _GENERIC_CUES = (
     "tugasan berperingkat", "contoh yang sepadan dengan sp",
     "latihan pendek berperingkat", "saya buat, kita buat",
     "memanipulasi/meneliti bahan",
+    # Recognized topic-neutral stock headings from the actual BM v26.00 RPH.
+    "siapa/apakah ini?", "ikut dan ulang", "tanya jawab bergambar",
+    "exit lisan", "dengar untuk maklumat", "soal jawab berpandu",
+    "kongsi semula", "pbd lisan", "kenal unsur", "latihan kreatif",
+    "maklum balas (10 minit)",
 )
 
 
@@ -45,6 +50,50 @@ def split_numbered_steps(value):
         "\n", result, flags=re.I,
     )
     return "\n".join(line.rstrip() for line in result.split("\n")).strip()
+
+
+def complete_verified_bm_standards(database_path, year, standards):
+    """Backfill empty SP texts from the *same* verified v26.00 DB.
+
+    Some verified_pdp_sequence rows retain codes but empty sk_text/sp_text.
+    Verify exact year/subject/SK/SP against curriculum_standards; never use
+    a different subject's same code or substitute an unverified paragraph.
+    Read-only and fail closed on missing/ambiguous authoritative wording.
+    """
+    import sqlite3
+    from pathlib import Path
+    original = tuple(dict(item) for item in standards)
+    try:
+        path = Path(database_path)
+        if not path.is_file() or type(year) is not int or year not in range(1, 7):
+            return original
+        with sqlite3.connect(path.resolve().as_uri() + "?mode=ro", uri=True) as conn:
+            conn.execute("PRAGMA query_only=ON")
+            improved = []
+            for item in original:
+                sk = str(item.get("sk_code") or "").strip()
+                sp = str(item.get("sp_code") or "").strip()
+                if not sk or not sp:
+                    improved.append(item)
+                    continue
+                rows = conn.execute(
+                    """SELECT DISTINCT sk_text,sp_text FROM curriculum_standards
+                       WHERE year_label=? AND subject='Bahasa Melayu'
+                         AND sk_code=? AND sp_code=? AND verified=1""",
+                    (f"Tahun {year}", sk, sp)
+                ).fetchall()
+                if len(rows) == 1 and rows[0][1] and str(rows[0][1]).strip():
+                    entry = dict(item)
+                    if not str(entry.get("sp_text") or "").strip():
+                        entry["sp_text"] = str(rows[0][1]).strip()
+                    if not str(entry.get("sk_text") or "").strip() and rows[0][0]:
+                        entry["sk_text"] = str(rows[0][0]).strip()
+                    improved.append(entry)
+                else:
+                    improved.append(item)
+            return tuple(improved)
+    except (sqlite3.Error, OSError, ValueError, TypeError):
+        return original
 
 
 def _family(sp_text):
@@ -78,10 +127,46 @@ def _family(sp_text):
     return None
 
 
-def _task(family, topic, reference):
-    """Observable BM-specific tasks, without inventing textbook passages."""
+def _task(family, topic, reference, sp_text=""):
+    """Observable BM-specific tasks without inventing textbook passages."""
     t = f"‘{topic}’"
     source = f" ({reference})" if reference else ""
+    low_sp = " ".join(str(sp_text or "").lower().split())
+    if family == "mendengar" and "ayat tunggal" in low_sp and "ayat majmuk" in low_sp:
+        return (
+            f"Guru membacakan ayat tunggal dan ayat majmuk yang dipilih daripada "
+            f"bahan {t}{source}. Murid mendengar, mengecam sebutan dan "
+            "menyatakan jenis ayat tanpa membaca teks terlebih dahulu.",
+            "Guru membacakan semula ayat dalam urutan berbeza. Pasangan murid "
+            "menunjukkan kad 'tunggal' atau 'majmuk', mengulang sebutan "
+            "dan membetulkan perbezaan yang didengar.",
+            "Guru menyebut empat ayat lagi daripada konteks yang sama. "
+            "Murid mengecam jenis ayat dan menyebut semula sekurang-kurangnya "
+            "tiga ayat dengan sebutan tepat secara individu."
+        )
+    if family == "mendengar" and all(x in low_sp for x in ("soalan", "suruhan", "pesanan", "permintaan")):
+        return (
+            f"Guru menyampaikan empat jenis ujaran berdasarkan situasi {t}{source}: "
+            "soalan, suruhan, pesanan dan permintaan. Murid mendengar dan "
+            "menentukan respons yang sesuai bagi setiap satu.",
+            "Murid berpasangan: seorang menyebut ujaran berdasarkan kad "
+            "situasi rakan, pasangannya memberikan respons; mereka bertukar "
+            "peranan dan membaiki respons yang kurang tepat.",
+            "Secara individu murid mendengar empat ujaran baharu dan memberi "
+            "respons lisan yang sesuai. Guru merekod ketepatan isi respons "
+            "serta kesantunan bahasa."
+        )
+    if family == "bertutur" and "peribahasa" in low_sp:
+        return (
+            f"Guru memilih peribahasa yang benar-benar terkandung dalam bahan "
+            f"{t}{source}; murid menjelaskan maksud berdasarkan konteks cerita.",
+            "Pasangan murid membina dialog ringkas tentang situasi dalam "
+            f"{t}, menyelitkan peribahasa daripada bahan asal dengan makna "
+            "yang tepat, kemudian berlatih sebutan dan intonasi.",
+            "Murid bercerita atau mengujarkan dialog kepada kelas dengan "
+            "sekurang-kurangnya satu peribahasa yang digunakan secara tepat. "
+            "Guru menilai isi, maksud peribahasa dan penyampaian."
+        )
     if family == "imlak":
         return (
             f"Guru memilih frasa sebenar daripada bahan {t}{source}, "
@@ -209,10 +294,14 @@ def refine_web_bm_rows(state, rows):
         return output
 
     reference = str(state.get("textbook_ref") or "").strip()
-    primary = _task(families[0], topic, reference)
+    verified = state.get("_bm_web_verified_standards") or ()
+    description = " ".join(str(item.get("sp_text") or "") for item in verified
+                           if isinstance(item, dict))
+    primary = _task(families[0], topic, reference, description)
     if not primary:
         return output
-    secondary = _task(families[1], topic, reference) if len(families) > 1 else None
+    secondary = (_task(families[1], topic, reference, description)
+                 if len(families) > 1 else None)
     first = primary[0]
     second = secondary[1] if secondary else primary[1]
     third = primary[2] if not secondary else (
