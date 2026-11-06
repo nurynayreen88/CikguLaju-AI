@@ -15,7 +15,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan peta wilayah penutur bahasa Melayu dan contoh prasasti atau manuskrip. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 3: Bahasa Melayu Warisan Kita.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 32, 34: Halaman bercetak 32 membincangkan susur galur bahasa Melayu dan. Murid menyusun garis ringkas asal usul dan perkembangan bahasa Melayu daripada petikan. Guru menyemak jawapan awal berpandukan 6.3.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 32, 34: Halaman bercetak 32 membincangkan susur galur bahasa Melayu dan rumpun Austronesia. Murid menyusun garis ringkas asal usul dan perkembangan bahasa Melayu daripada petikan. Guru menyemak jawapan awal berpandukan 6.3.1.
 
 **Aktiviti 2 (20 min):** Guru menyoal bukti konkrit hlm. 32, 34 untuk menguji dapatan murid. Murid menandakan kawasan utama penutur bahasa Melayu dalam peta dan memberi contoh penggunaannya. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menyatakan kepentingan bahasa Melayu sebagai warisan negara yang dibanggakan.
 

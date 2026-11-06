@@ -15,7 +15,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan petikan berlabel daripada undang-undang negeri Melayu dan Perlembagaan Persekutuan. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 2: Agama Islam di Malaysia.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 22–24: Pentadbiran dan perundangan negeri Melayu, dasar penjajahan dan. Murid menghubungkan kedudukan Islam dalam pentadbiran negeri Melayu dengan garis masa sebelum merdeka. Guru menyemak jawapan awal berpandukan 6.2.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 22–24: Pentadbiran dan perundangan negeri Melayu. Murid menghubungkan kedudukan Islam dalam pentadbiran negeri Melayu dengan garis masa sebelum merdeka. Guru menyemak jawapan awal berpandukan 6.2.3.
 
 **Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 22–24 bagi menyokong perbandingan. Murid membandingkan kedudukan Islam sebagai agama Persekutuan dengan kebebasan agama lain secara tepat. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan mendaulatkan agama Islam sebagai agama Persekutuan.
 

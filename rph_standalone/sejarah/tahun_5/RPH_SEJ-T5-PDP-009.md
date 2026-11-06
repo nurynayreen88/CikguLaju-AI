@@ -14,7 +14,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan dua petikan penggunaan bahasa Melayu dalam perdagangan dahulu dan pentadbiran kini. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 3: Bahasa Melayu Warisan Kita.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 37, 39: Halaman 37 menyenaraikan peranan bahasa Melayu dalam kehidupan. Murid membandingkan peranan bahasa Melayu sebagai lingua franca dengan fungsi kebangsaan masa kini. Guru menyemak jawapan awal berpandukan 6.3.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 37, 39: Halaman 37 menyenaraikan peranan bahasa Melayu dalam kehidupan negara. Murid membandingkan peranan bahasa Melayu sebagai lingua franca dengan fungsi kebangsaan masa kini. Guru menyemak jawapan awal berpandukan 6.3.3.
 
 **Aktiviti 2 (20 min):** Guru meminta murid memeriksa urutan dan fakta pada hlm. 37, 39. Murid menyusun peta peranan bahasa dalam perpaduan dan pendidikan sambil menghormati bahasa ibunda. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan bahasa Melayu sebagai bahasa perpaduan.
 
