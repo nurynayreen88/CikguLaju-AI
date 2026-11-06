@@ -76,7 +76,7 @@ def main():
                         print("BM curriculum match", year, code, vals, flush=True)
             print("BM native source standards", st["_bm_web_verified_standards"], flush=True)
             old = base_rows(st, text)
-            print("BM old main activity sample", str(old.get("AKTIVITI UTAMA") or "")[:480], flush=True)
+            print("BM old main activity full", repr(str(old.get("AKTIVITI UTAMA") or "")[:1900]), flush=True)
             new = runtime._rph_rows(st, text)
             assert new["STANDARD PEMBELAJARAN"] == old["STANDARD PEMBELAJARAN"]
             assert new["STANDARD KANDUNGAN"] == old["STANDARD KANDUNGAN"]
