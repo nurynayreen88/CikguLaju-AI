@@ -166,8 +166,8 @@
    const balance=response.headers.get("X-RPH-Trial-Remaining");
    note.textContent="RPH "+fmt.toUpperCase()+" DRAF berjaya dijana."+
     (balance!==null?" Baki janaan percuma: "+balance+".":"");
-   if(typeof window.refreshSharedRphBalance==="function")
-    void window.refreshSharedRphBalance();
+   if(typeof refreshSharedRphBalance==="function")
+    void refreshSharedRphBalance();
   }catch(e){
    if(current===serial)note.textContent=e.message;
   }finally{button.disabled=false;}
@@ -175,8 +175,9 @@
  function renderMaterials(){
   list.replaceChildren();
   const label=activity.selectedOptions[0]?.textContent||"Aktiviti";
-  const title=document.createElement("strong");
+  const title=document.createElement("li");
   title.textContent=label;
+  title.style.fontWeight="700";
   list.append(title);
   for(const fmt of ["pdf","word"]){
    const row=document.createElement("li");row.className="material-download-row";
