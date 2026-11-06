@@ -57,6 +57,15 @@ def run():
             name=f"SEJ_T{y}_PDP_{pdp:03d}"
             target=word/(name+".docx")
             _create_rph_word(doc,sec,state,rows,str(target))
+            # The isolated snapshot's generic title defaults to English.
+            # Localise only this Sejarah QA export; do not edit native
+            # Telegram, any other subject renderer, or the lesson content.
+            preview=Document(str(target))
+            assert preview.paragraphs[0].text=="DAILY LESSON PLAN"
+            preview.paragraphs[0].runs[0].text="RANCANGAN PENGAJARAN HARIAN"
+            for run in preview.paragraphs[0].runs[1:]:
+                run.text=""
+            preview.save(str(target))
             # Reproduce the Web-to-Telegram postprocessing on this same
             # native table document; leave all content intact.
             raw=target.read_bytes()
@@ -81,7 +90,9 @@ def run():
         r["a4"]=all(abs(float(p.mediabox.width)-595.28)<1.5 and abs(float(p.mediabox.height)-841.89)<1.5 for p in doc.pages)
         text="\n".join((p.extract_text() or "") for p in doc.pages)
         r["text_length"]=len(text)
-        if r["pages"]!=1 or not r["a4"] or len(text)<350:
+        if (r["pages"]!=1 or not r["a4"] or len(text)<350
+                or "RANCANGAN PENGAJARAN HARIAN" not in text
+                or "DAILY LESSON PLAN" in text):
             failures.append({"id":r["name"],"pages":r["pages"],"a4":r["a4"],"text_length":len(text)})
     report={"status":"STAGING_TELEGRAM_WORD_SNAPSHOT_LAYOUT_QA_ONLY","total":len(records),"one_a4":sum(r.get("pages")==1 and r.get("a4") for r in records),"failures":failures,"records":records,"ready":False}
     (OUT/"manifest.json").write_text(json.dumps(report,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
