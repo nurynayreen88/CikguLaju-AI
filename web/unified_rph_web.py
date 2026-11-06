@@ -52,6 +52,32 @@ def english_index():
     except (OSError, TypeError, ValueError, KeyError):
         return {}
 
+@lru_cache(maxsize=1000)
+def _english_page_reference(path):
+    """Read only source-stated Student's/Pupil's Book pages; never derive them
+    from a Lesson number, unit name, or a PDF page offset.
+    """
+    try:
+        content = path.read_text(encoding="utf-8")
+    except (OSError, UnicodeError):
+        return ""
+    refs = []
+    for match in re.finditer(
+        r"\b(?:Student(?:'s|’s)?\s+Book|Pupil(?:'s|’s)?\s+Book|SB|PB)\s+"
+        r"pp?\.\s*(\d{1,3})(?:\s*[-–]\s*(\d{1,3}))?",
+        content, re.I,
+    ):
+        start, end = int(match[1]), int(match[2] or match[1])
+        if not 0 < start <= end <= 1000:
+            continue
+        label = str(start) + ("–" + str(end) if start != end else "")
+        if label not in refs:
+            refs.append(label)
+    # Multiple references can be valid, but avoid potentially misleading
+    # catch-all pages when a draft mentions many different activities.
+    return "Student's Book m/s " + ", ".join(refs) if 0 < len(refs) <= 3 else ""
+
+
 def _english_records(year):
     index = english_index()
     result = []
@@ -66,9 +92,13 @@ def _english_records(year):
         path = ROOT / "rph_standalone" / "english" / f"year{year}" / f"lesson_{n:03d}.md"
         if not path.is_file():
             continue
-        result.append({"unit": topic, "label": f"Lesson {n:03d} — {focus or topic}",
-                       "lesson": n, "token": f"e-{year}-{n:03d}",
-                       "path": path, "status": "PRATONTON BELUM MUKTAMAD"})
+        record = {"unit": topic, "label": f"Lesson {n:03d} — {focus or topic}",
+                  "lesson": n, "token": f"e-{year}-{n:03d}",
+                  "path": path, "status": "PRATONTON BELUM MUKTAMAD"}
+        textbook_ref = _english_page_reference(path)
+        if textbook_ref:
+            record["textbook_ref"] = textbook_ref
+        result.append(record)
     return result
 
 def _moral_records(year):
@@ -176,9 +206,17 @@ def unit_options(year, subject, component=None):
 def pdp_options(year, subject, unit, component=None):
     if not _safe_text(unit):
         raise ValueError("Invalid unit")
-    return [{"value": row["token"], "label": row["label"],
-             "download_enabled": False, "standalone_rph_verified": False}
-            for row in source_records(year, subject, component) if row["unit"] == unit]
+    choices = []
+    for row in source_records(year, subject, component):
+        if row["unit"] != unit:
+            continue
+        entry = {"value": row["token"], "label": row["label"],
+                 "download_enabled": False, "standalone_rph_verified": False,
+                 "lesson_no": row["lesson"]}
+        if row.get("textbook_ref"):
+            entry["textbook_ref"] = row["textbook_ref"]
+        choices.append(entry)
+    return choices
 
 def _read_source(row, year, subject):
     path = row.get("path")
