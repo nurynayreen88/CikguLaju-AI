@@ -415,6 +415,27 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
             self.assertEqual(matched, counts[year])
         self.assertEqual(len({x["criterion"] for x in overlay.values()}), 81)
 
+    def test_muzik_2027_day_index_zero_day_slots_all_states(self):
+        index = json.loads((MUSIC / "rpt_rph_2027" / "KALENDAR_2027_HARI_PDP_16_NEGERI_AUDIT.json").read_text(encoding="utf-8"))
+        self.assertEqual(index["source_day_record_count"], 5840)
+        self.assertEqual(index["state_count"], 16)
+        self.assertEqual(index["weeks_per_state"], 35)
+        self.assertEqual(index["summary"]["state_week_combinations"], 560)
+        self.assertEqual(index["summary"]["zero_day_combinations"], 32)
+        self.assertEqual(index["summary"]["affected_pdp_across_5_years"], 10)
+        self.assertEqual(index["zero_day_pdp_numbers"], [6, 19])
+        self.assertEqual(len(index["states"]), 16)
+        for state, item in index["states"].items():
+            self.assertIn(item["group"], ("A", "B"))
+            self.assertEqual(set(item["candidate_days_by_week"]), {f"M{i:02d}" for i in range(1, 36)})
+            self.assertEqual(item["candidate_days_by_week"]["M06"], 0, state)
+            self.assertEqual(item["candidate_days_by_week"]["M19"], 0, state)
+            self.assertTrue(all(v > 1 for k, v in item["candidate_days_by_week"].items() if k not in ("M06", "M19")))
+        self.assertEqual(len(index["zero_day_details"]), 32)
+        self.assertEqual({r["slot"] for r in index["zero_day_details"]}, {"M06", "M19"})
+        self.assertIn("BUKAN_AKTIVASI", index["scope"])
+        self.assertIn("CALON PDP", index["day_status_formula"])
+
     def test_music_staging_source_digest_matches_physical_sources(self):
         """Source hash is integrity-only; it must never grant release access."""
         import hashlib
