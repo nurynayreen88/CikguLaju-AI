@@ -3,6 +3,7 @@
 Uses existing project calendar ledger, never assigns PdP dates or writes DB.
 Runs after the draft renderer in CI (requires python-docx and pypdf).
 """
+import csv
 import json
 import re
 import unittest
@@ -12,6 +13,7 @@ from docx import Document
 from pypdf import PdfReader
 from tools.render_sains_rpt_2027_ab_review_20261106 import (
     ROOT, OUT, calendar_for, calendar_cover_lines, EXPECTED,
+    year3_overlay_sources, YEAR3_INTEGRATED_SP_CANDIDATE,
 )
 class SainsRPTCalendarWindowsTests(unittest.TestCase):
     def test_official_group_windows_are_distinct_and_unscheduled(self):
@@ -32,6 +34,64 @@ class SainsRPTCalendarWindowsTests(unittest.TestCase):
         self.assertIn("PENDING",data["status"])
         self.assertIn("must not", " ".join(data["release_constraints"]).lower())
         with self.assertRaises(ValueError):calendar_for("X")
+
+    def test_all_year3_titles_and_supplemental_sp_align_to_source_ledger(self):
+        # The RPT draft must never repeat the 12 stale DSKP titles
+        # or omit the 3 SP integrated in the RPH draft (#419).
+        fixes,evidence=year3_overlay_sources()
+        self.assertEqual(len(fixes),12)
+        self.assertEqual(set(YEAR3_INTEGRATED_SP_CANDIDATE.values()),set(evidence))
+        with (OUT/"SAINS_TAHUN_3_SOURCE_DRAF.csv").open(encoding="utf-8-sig",newline="") as fh:
+            rows=list(csv.DictReader(fh))
+        self.assertEqual(len(rows),45)
+        by_code={row["Kod sumber"]:row for row in rows}
+        self.assertEqual(len(by_code),45)
+        count_fixed=count_extra=0
+        for code,row in by_code.items():
+            original=row["Fokus asal (v25.82)"]
+            original_sp=row["SP asal"]
+            expected_title=original
+            if code in fixes:
+                f=fixes[code]
+                self.assertEqual(f["original_title"],original)
+                self.assertEqual(f["sp_code"],original_sp)
+                expected_title=f["ds_kpm_official_sp_text"]
+                self.assertIn("DSKP_TITLE_CANDIDATE",row["Catatan QA"])
+                count_fixed+=1
+            self.assertEqual(row["Fokus PdP (draf QA)"],expected_title)
+            extra=YEAR3_INTEGRATED_SP_CANDIDATE.get(original_sp)
+            if extra:
+                self.assertEqual(row["SP"],original_sp+", "+extra)
+                self.assertIn("DSKP_EXTRA_SP_CANDIDATE",row["Catatan QA"])
+                count_extra+=1
+            else:
+                self.assertEqual(row["SP"],original_sp)
+            self.assertEqual(row["Minggu/tarikh"],"BELUM DIJADUAL")
+            self.assertEqual(row["Status"],"DRAF_SEMAK")
+        self.assertEqual((count_fixed,count_extra),(12,3))
+        # Both groups have identical corrected academic source but
+        # distinct KPM covers; do not create additional lesson identities.
+        for group in "AB":
+            path=OUT/f"RPT_SAINS_TAHUN_3_2027_KUMPULAN_{group}_DRAF.docx"
+            doc=Document(path)
+            self.assertEqual(len(doc.tables[0].rows),46)
+            for row in doc.tables[0].rows[1:]:
+                index=int(row.cells[0].text)
+                code=f"SCI-Y3-PDP-{index:03d}"
+                source=by_code[code]
+                self.assertEqual(row.cells[3].text,source["SP"])
+                self.assertEqual(row.cells[4].text,source["Fokus PdP (draf QA)"])
+
+    def test_years_two_four_five_six_are_not_silently_rewritten(self):
+        for year in [2,4,5,6]:
+            with (OUT/f"SAINS_TAHUN_{year}_SOURCE_DRAF.csv").open(
+                    encoding="utf-8-sig",newline="") as fh:
+                rows=list(csv.DictReader(fh))
+            self.assertEqual(len(rows),EXPECTED[year])
+            for row in rows:
+                self.assertEqual(row["SP"],row["SP asal"])
+                self.assertEqual(row["Fokus PdP (draf QA)"],row["Fokus asal (v25.82)"])
+                self.assertEqual(row["Minggu/tarikh"],"BELUM DIJADUAL")
 
     def test_ten_word_pdf_drafts_keep_group_specific_breaks_and_342_source_pdp(self):
         count=0
