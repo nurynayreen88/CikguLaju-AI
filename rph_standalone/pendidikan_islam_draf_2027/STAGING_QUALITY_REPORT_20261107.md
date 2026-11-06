@@ -80,3 +80,27 @@ Enam rekod lain terus ditahan sepenuhnya: Tahun 2 L035; Tahun 6 L006, L014, L018
 **Artefak staging:** `pi_activity_book_audit.py` menghasilkan `pi_buku_aktiviti_audit_696.json`: identiti, bidang, SP, status cadangan, sumber awam, `page=null`, `exercise=null`, `verified=false`, `can_show_to_teacher=false` bagi 690 DRAF dan rekod tahanan. Ujian regresi mengunci 258/191/67/432 dan larangan nombor halaman palsu.
 
 **Implikasi 80%:** Walaupun aktiviti RPH lain telah diperkaya, skor kualiti **belum disahkan 80%** sehingga kemasukan Buku Aktiviti yang benar-benar relevan disahkan serta ujian Word/PDF A4 selesai. Tiada perubahan live.
+
+## Pemetaan Buku Aktiviti lebih teliti — batch sambungan 7 Nov 2026
+
+Naskhah Tahun 2 dan Tahun 3 ditemui pada portal bacaan awam dan paparan kulit buku berlogo KPM; URL bacaan rujukan:
+- Tahun 2: https://anyflip.com/lhat/sebp/
+- Tahun 3: https://anyflip.com/lhat/dkui/
+
+**Penemuan kulit buku bukan pemeriksaan latihan/halaman.** Fail Buku Aktiviti asal belum ditemui di Drive projek; kandungan dan halaman bercetak belum dibandingkan dengan 258 SP secara individu. Larangan memuat naik semula buku hak cipta ke GitHub/Render kekal.
+
+### Pemurnian senarai kerja (bukan pembetulan yang sudah diterbit)
+
+| Tahun | Draf aktif | Calon semak latihan BA | Pentaksiran bacaan/hafazan/tasmi' utama |
+|---|---:|---:|---:|
+| Tahun 2 | 111 | **76** | **35** |
+| Tahun 3 | 147 | **98** | **49** |
+| **Jumlah** | **258** | **174** | **84** |
+
+Angka 191 daripada audit pertama ialah **senarai kasar** semua draf bukan tasmi' (termasuk 17 RPH yang berfokus khusus kepada bacaan/hafazan). Pemurnian pedagogi ini menurunkan calon padanan latihan bertulis kepada **174** dan memindahkan 17 lagi kepada kumpulan pentaksiran lisan bersama 67 tasmi'. Terdapat **73 RPH Jawi** dalam keutamaan pertama, diikuti 101 RPH Tajwid/Kefahaman/Akidah/Ibadah/Sirah/Adab/Hadis. RPH Tahun 4–6 (432 draf aktif) tidak dipaksa menggunakan naskhah BA Tahun 2/3.
+
+Skrip `pi_ba_match_queue.py` menjana **258 rekod mengikut Lesson + SP asal** dengan topik/kemahiran yang perlu diperiksa dalam buku sebenar: Jawi membaca/membina/menulis, tajwid tertentu, kefahaman al-Quran, serta latihan topik bidang lain. Semua mempunyai `book_printed_page=null`, `book_exercise_id=null`, `match_to_sp_verified=false`, `teacher_sentence=null`, `release=HOLD`.
+
+Cadangan editor bukan latihan daripada buku sebenar. **Tiada ayat Buku Aktiviti ditambah kepada RPH guru, tiada nombor muka surat direka, tiada fail PDF pihak ketiga disalin.** Kesediaan 80% akademik kekal NO-GO sehingga padanan latihan dan halaman disahkan, diikuti ujian Word/PDF A4 serta QA Jawi.
+
+CI: unit test baharu menguatkuasakan bilangan 174/84/73 dan tiada rujukan palsu; fail `pi_ba_candidate_queue_258.json` disimpan sebagai artefak sementara untuk kerja semakan.
