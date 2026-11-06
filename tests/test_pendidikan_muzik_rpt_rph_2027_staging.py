@@ -172,6 +172,12 @@ class MusicRPTAndRPHStagingQA(unittest.TestCase):
             self.assertIn("BELUM DILULUSKAN", doc)
             self.assertIn(", ".join(printed), doc)
         self.assertIn("G, A, B, C", manifest["pdps"][20]["crosswalk_review_note"])
+        item24 = manifest["pdps"][23]
+        self.assertEqual(item24["page"], "82-84")
+        self.assertEqual(item24["source_rpt_original_page"], "82")
+        text24 = (MUSIC / "rpt_rph_2027" / "year4" / "rph_pdp_24.md").read_text(encoding="utf-8")
+        self.assertIn("m/s 82–84", text24)
+        self.assertIn("corak irama", text24)
 
     def test_reinforcement_candidates_stay_nonofficial_and_no_fabricated_audio(self):
         """All eight non-book slots are specificity-reviewed but never count as book-verified."""
