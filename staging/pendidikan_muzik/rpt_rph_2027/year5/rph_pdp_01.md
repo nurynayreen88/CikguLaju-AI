@@ -16,7 +16,7 @@
 
 **Aktiviti 1 — Demonstrasi dan latihan berpandu (8 minit):** Guru membimbing latihan vokal halaman 3 secara ajuk frasa dan kawalan nafas, kemudian permainan Da Dum halaman 4 menggunakan kad piano (p) dan forte (f).
 
-**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid mengajuk lagu Waspada Selalu halaman 5, mengenal tanda nafas dan menyanyikan satu rangkap dengan dinamik mengikut skor, menggunakan kiraan atau suara guru apabila audio sebenar belum tersedia.
+**Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Murid mengajuk lagu Waspada Selalu (m/s 5), mengenal tanda nafas lalu menyanyikan satu rangkap dengan dinamik berdasarkan skor; guru memberikan contoh vokal atau kiraan sebagai panduan.
 
 **Pengukuhan dan pentaksiran (6 minit):** Guru menilai pic, tempo dan dinamik dalam tiga percubaan dan membimbing semula frasa yang kurang tepat.
 
