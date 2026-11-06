@@ -142,3 +142,37 @@ def enrich_rbt(year, records):
         row["sk_display"] = "\n".join(f"{code} — {sk_map[code]}" for code in sk_codes)
         row["sp_display"] = "\n".join(f"{code} — {sp_map[code]}" for code in sp_codes)
     return records
+
+
+def enrich_pjpk(year, records):
+    """PJPK 2-6: keep SK/SP statements in *separate PJ and PK namespaces*.
+
+    Codes overlap between physical education and health education; never
+    search a flat dictionary or infer a component from the numeric code.
+    """
+    if year not in range(2, 7):
+        raise ValueError("PJPK DSKP mapping absent for year")
+    source = _read_json(ROOT / "rpt_2027" / "pjpk" /
+                        f"dskp_full_standard_texts_y{year}_20261107_DRAF.json")
+    if (source.get("subject") != "PJPK" or source.get("year") != year or
+            source.get("status") != "DRAF_CROSSWALK_FULL_DSKP_TEXT"):
+        raise ValueError("Unexpected PJPK source mapping")
+    if set(source["components"]) != {"PJ", "PK"}:
+        raise ValueError("PJPK mapping must have two distinct components")
+    for row in records:
+        original_id = row.get("display_id", "")
+        match = re.fullmatch(r"(PJ|PK) PdP \d{3}", original_id)
+        if not match:
+            raise ValueError(f"PJPK T{year} missing original component identity")
+        component = match.group(1)
+        sk_map = source["components"][component]["sk"]
+        sp_map = source["components"][component]["sp"]
+        sk_codes = _codes(row["sk"])
+        sp_codes = _codes(row["sp"])
+        if any(code not in sk_map for code in sk_codes):
+            raise ValueError(f"PJPK T{year} {original_id} unknown {component} SK")
+        if any(code not in sp_map for code in sp_codes):
+            raise ValueError(f"PJPK T{year} {original_id} unknown {component} SP")
+        row["sk_display"] = "\n".join(f"{code} — {sk_map[code]}" for code in sk_codes)
+        row["sp_display"] = "\n".join(f"{code} — {sp_map[code]}" for code in sp_codes)
+    return records
