@@ -3,6 +3,20 @@ on:
   push:
     branches:
       - feature/web-teacher-profile-timetable-20261105
+      - production/cikgulaju-web-20261105
+    paths:
+      - 'web_v1_static_preview/teacher-profile.js'
+      - 'web_v1_static_preview/index.html'
+      - 'tests/test_web_timetable_subject_picker_20261107.cjs'
+      - 'tests/test_web_teacher_profile_timetable.py'
+      - '.github/workflows/web-teacher-profile-timetable-qa.yml'
+  pull_request:
+    paths:
+      - 'web_v1_static_preview/teacher-profile.js'
+      - 'web_v1_static_preview/index.html'
+      - 'tests/test_web_timetable_subject_picker_20261107.cjs'
+      - 'tests/test_web_teacher_profile_timetable.py'
+      - '.github/workflows/web-teacher-profile-timetable-qa.yml'
   workflow_dispatch:
 permissions:
   contents: read
@@ -27,6 +41,7 @@ jobs:
       - name: Validate teacher timetable and existing Web browser code
         run: |
           node --check web_v1_static_preview/teacher-profile.js
+          node tests/test_web_timetable_subject_picker_20261107.cjs
           python - <<'PY'
           from pathlib import Path
           import re

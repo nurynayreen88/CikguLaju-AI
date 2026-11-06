@@ -111,7 +111,23 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 .timetable-table{border-collapse:collapse;width:100%;min-width:655px;font-size:.87rem}
 .timetable-table th,.timetable-table td{border:1px solid #d2e1e7;padding:7px;vertical-align:top}
 .timetable-table th{background:#e8f1f5;text-align:left;color:#184965}
-.timetable-table td:nth-child(1){min-width:105px}.timetable-table td:nth-child(4){min-width:120px}.timetable-table td:nth-child(5){min-width:165px}
+.timetable-table td:nth-child(1){min-width:105px}.timetable-table td:nth-child(4){min-width:120px}.timetable-table td:nth-child(5){min-width:220px}
+.timetable-subject-picker{display:grid;gap:7px;min-width:0}
+.timetable-subject-picker select{width:100%;min-width:0;cursor:pointer}
+.timetable-subject-picker input[hidden]{display:none}
+.timetable-subject-picker select:focus-visible,.timetable-subject-picker input:focus-visible{outline:3px solid #ffc84b;outline-offset:2px}
+@media(max-width:760px){
+ .timetable-table-wrap{overflow-x:visible}
+ .timetable-table{min-width:0;width:100%;border-collapse:separate}
+ .timetable-table thead{position:absolute;clip:rect(0,0,0,0);clip-path:inset(50%);width:1px;height:1px;overflow:hidden;white-space:nowrap}
+ .timetable-table tbody{display:grid;gap:14px}
+ .timetable-table tbody tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 12px;padding:14px;border:1px solid #d2e1e7;border-radius:13px;background:#fff}
+ .timetable-table tbody td{display:flex;flex-direction:column;gap:5px;min-width:0!important;padding:0;border:0}
+ .timetable-table tbody td::before{content:attr(data-label);display:block;font-size:.85rem;font-weight:750;color:#174766}
+ .timetable-table tbody td:nth-child(4),.timetable-table tbody td:nth-child(5),.timetable-table tbody td:nth-child(6){grid-column:1/-1}
+ .timetable-table tbody td input,.timetable-table tbody td select{font-size:16px;min-height:44px;padding:10px 11px}
+ .timetable-table .remove-period{align-self:flex-end;min-height:42px}
+}
 .timetable-table input,.timetable-table select{font-size:.87rem;padding:8px 5px}
 .timetable-table .remove-period{background:#fff1f1;color:#9c2121;border:1px solid #f4c9c9;border-radius:8px;padding:8px 10px;cursor:pointer;font:inherit}
 @media(max-width:760px){.profile-fields-grid{grid-template-columns:1fr}.teacher-profile-form,.teacher-timetable-section{padding:13px 11px}}
@@ -444,17 +460,11 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </form>
 <section id="teacher-timetable" class="teacher-timetable-section" aria-labelledby="timetable-heading">
 <h3 id="timetable-heading">Jadual Waktu Mengajar</h3>
-<p>Tambah waktu PdP mengikut hari, masa, kelas dan subjek. Simpan untuk rujukan apabila menyediakan RPH. Hari Ahad dan Sabtu juga disediakan bagi sekolah yang memerlukannya.</p>
+<p>Tambah waktu PdP mengikut hari, masa, kelas dan subjek. <strong>Pilih subjek daripada senarai mengikut kategori</strong>; untuk subjek khas atau nama lama, pilih <strong>Lain-lain — taip sendiri</strong>. Jadual ini digunakan oleh RPH Hari Ini.</p>
 <p class="notice">Jadual yang dikemas kini di sini juga boleh dilihat melalui Telegram. Muat naik gambar jadual boleh dilakukan melalui bot Telegram; bacaan gambar automatik belum tersedia pada Web.</p>
 <div class="timetable-table-wrap"><table class="timetable-table" aria-label="Jadual waktu guru">
 <thead><tr><th>Hari</th><th>Mula</th><th>Tamat</th><th>Kelas</th><th>Subjek</th><th>Padam</th></tr></thead>
 <tbody id="timetable-rows"></tbody></table></div>
-<datalist id="profile-subject-options">
-  <option value="Bahasa Melayu"></option><option value="English"></option><option value="Matematik"></option>
-  <option value="Sains"></option><option value="Pendidikan Islam"></option><option value="PJPK"></option>
-  <option value="Pendidikan Moral"></option><option value="Pendidikan Seni Visual"></option>
-  <option value="Bahasa Arab"></option><option value="Rehat"></option>
-</datalist>
 <p id="timetable-empty" class="notice">Tiada waktu disimpan. Tekan Tambah Waktu untuk mula.</p>
 <div class="profile-actions">
   <button id="timetable-add" type="button" disabled>+ Tambah Waktu</button>
@@ -1281,7 +1291,7 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/rph-today.js?v=results-below-all-subjects-20261107"></script>
-<script src="/assets/teacher-profile.js?v=profile-no-avatar-20261106"></script>
+<script src="/assets/teacher-profile.js?v=timetable-subject-picker-20261107"></script>
 <script src="/assets/web-payment.js?v=rakan-only-percent-20261106"></script>
 <script src="/assets/web-referral.js?v=20261106"></script>
 <script src="/assets/special-activities.js?v=source-draft-20261106"></script>
