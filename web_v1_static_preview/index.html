@@ -287,6 +287,13 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 .daily-rph-card-top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
 .daily-rph-time{font-variant-numeric:tabular-nums;color:#426b62;font-size:.89rem;font-weight:700}
 .daily-rph-note{font-size:.9rem;margin:9px 0}
+.daily-rph-card.is-editing{border-color:#087568;box-shadow:0 0 0 1px #087568}
+.daily-rph-editor{margin-top:15px;padding-top:16px;border-top:1px solid #c4dcd3}
+.daily-rph-editor #view-rph{padding:0}
+.daily-rph-editor #view-rph-heading,.daily-rph-editor .rph-guide{display:none}
+.daily-rph-editor #lesson[size]{height:auto;min-height:170px;max-height:320px;overflow:auto;padding:6px}
+.daily-rph-editor #lesson option{padding:9px 7px;white-space:normal}
+.daily-rph-editor #catalog-status{margin-top:10px}
 .daily-rph-footer{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:12px}
 .daily-rph-footer .notice{margin:0;flex:1 1 220px}
 @media(max-width:560px){.daily-rph-toolbar{align-items:stretch}.daily-rph-toolbar button{width:100%}.daily-rph-card-top{align-items:flex-start}}
@@ -322,7 +329,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <div class="workspace-intro"><div><span class="workspace-eyebrow">RUANG GURU</span><p>Selamat datang, <strong id="workspace-teacher-name">Cikgu</strong></p></div><span class="workspace-ready"><span aria-hidden="true">●</span> Portal Pembelajaran</span></div>
 <section id="view-today" class="app-view" aria-labelledby="view-today-heading" hidden>
   <h2 id="view-today-heading">RPH Hari Ini</h2>
-  <p>Jadual waktu yang telah disimpan di Profil Guru digunakan terus untuk menyediakan RPH mengikut kelas, masa dan subjek. Guru sahkan tarikh dan pilih Lesson/PdP sebelum menjana fail.</p>
+  <p>Jadual waktu yang telah disimpan di Profil Guru digunakan terus untuk menyediakan RPH mengikut kelas, masa dan subjek. Guru sahkan tarikh, kemudian pilih Unit/Tajuk/Topik dan Lesson/PdP terus di bawah waktu mengajar yang dipilih. Senarai Lesson boleh ditukar di sini sebelum menjana fail.</p>
   <div class="daily-rph-toolbar">
     <div><label for="today-date">Tarikh PdP</label><input id="today-date" type="date" aria-label="Tarikh RPH Hari Ini"></div>
     <button type="button" id="today-refresh">Muat Semula Jadual</button>
@@ -509,8 +516,29 @@ function canGenerateRph(){
 }
 const webViewButtons=Array.from(document.querySelectorAll("[data-web-view]"));
 const webViews=new Map([["today","view-today"],["rph","view-rph"],["rpt","view-rpt"],["account","view-account"],["payment","view-payment"],["referral","view-referral"],["guide","view-guide"]]);
+const rphView=document.getElementById("view-rph");
+const rphOriginalParent=rphView.parentNode, rphOriginalNext=rphView.nextSibling;
+let activeTodayEditor=null, todaySelectionEpoch=0;
+function restoreRphEditor(){
+ todaySelectionEpoch++;
+ if(activeTodayEditor){
+  activeTodayEditor.hidden=true;
+  activeTodayEditor.closest(".daily-rph-card")?.classList.remove("is-editing");
+  activeTodayEditor=null;
+ }
+ if(rphView.parentNode!==rphOriginalParent)rphOriginalParent.insertBefore(rphView,rphOriginalNext);
+ const wasEmbedded=rphView.classList.contains("daily-rph-embedded");
+ rphView.classList.remove("daily-rph-embedded");
+ document.getElementById("lesson").size=1;
+ if(wasEmbedded)setSubjectNavigationLabels();
+}
+window.closeRphFromToday=()=>{
+ restoreRphEditor();
+ rphView.hidden=true;
+};
 function showWebView(name){
  if(!webViews.has(name))return;
+ if(name!=="today")restoreRphEditor();
  for(const [key,id] of webViews){
   document.getElementById(id).hidden=key!==name;
  }
@@ -724,6 +752,10 @@ async function loadFinalLesson(kind,extra,unchanged){
  if(!unchanged())return;
  fillSelect(lesson,items,"Pilih "+(subject.value==="ENGLISH"?"Lesson":"PdP"));
  const numberedCount=lesson.options.length-1;
+ if(rphView.classList.contains("daily-rph-embedded")&&numberedCount){
+  lesson.size=Math.min(8,lesson.options.length);
+  document.getElementById("lesson-label").textContent="Senarai "+(subject.value==="ENGLISH"?"Lesson":"PdP")+" — pilih atau tukar terus";
+ }else lesson.size=1;
  catalogStatus.textContent=numberedCount+" "+(subject.value==="ENGLISH"?"Lesson":"PdP")+" bernombor tersedia dalam katalog.";
  if(numberedCount===0)updateSelectionHelp("Tiada PdP/Lesson bernombor bagi pilihan ini; tidak akan mereka nombor.");
 }
@@ -732,8 +764,8 @@ async function loadFinalLesson(kind,extra,unchanged){
  * We deliberately never guess a RPT week, sequence cursor or source token.
  */
 let todayPrepareBusy=false;
-window.prepareRphFromToday=async function(slot,dateIso){
- if(todayPrepareBusy)return;
+window.prepareRphFromToday=async function(slot,dateIso,inlineHost=null){
+ if(todayPrepareBusy)return false;
  if(!slot||slot.can_prepare!==true||
     !Number.isInteger(slot.year)||slot.year<1||slot.year>6||
     typeof slot.subject_code!=="string"||
@@ -743,23 +775,39 @@ window.prepareRphFromToday=async function(slot,dateIso){
     !/^\d{2}:\d{2}$/.test(slot.end))throw Error("Jadual yang dipilih tidak sah.");
  todayPrepareBusy=true;
  try{
-  showWebView("rph");
+  if(inlineHost){
+   if(!inlineHost.classList.contains("daily-rph-editor")||!inlineHost.isConnected)
+    throw Error("Ruang pilihan RPH Hari Ini tidak tersedia.");
+   if(activeTodayEditor&&activeTodayEditor!==inlineHost){
+    activeTodayEditor.hidden=true;
+    activeTodayEditor.closest(".daily-rph-card")?.classList.remove("is-editing");
+   }
+   activeTodayEditor=inlineHost;
+   inlineHost.hidden=false;
+   inlineHost.closest(".daily-rph-card")?.classList.add("is-editing");
+   inlineHost.appendChild(rphView);
+   rphView.classList.add("daily-rph-embedded");
+   rphView.hidden=false;
+  }else showWebView("rph");
+  const selectionEpoch=++todaySelectionEpoch;
   year.value=String(slot.year);
   resetSelect(subject,"Pilih Subjek");
   resetCurriculumChoices();
   const expectedYear=year.value;
   const subjects=await loadOptions("subjects");
+  if(selectionEpoch!==todaySelectionEpoch)return false;
   if(year.value!==expectedYear)throw Error("Tahun ditukar semasa bacaan jadual.");
   fillSelect(subject,subjects,"Pilih Subjek");
   if(![...subject.options].some(o=>o.value===slot.subject_code)){
    catalogStatus.textContent="Subjek dalam jadual belum tersedia untuk Tahun "+expectedYear+" dalam sumber Telegram.";
    updateSelectionHelp("Pilih subjek yang tersedia atau semak ejaan subjek dalam Jadual Waktu.");
-   return;
+   return false;
   }
   subject.value=slot.subject_code;
   subject.dispatchEvent(new Event("change"));
   // The real saved class is resolved through the existing shared profile.
   await loadTeacherClasses();
+  if(selectionEpoch!==todaySelectionEpoch)return false;
   const exists=[...teacherClass.options].some(o=>o.value===slot.class_name);
   if(exists){teacherClass.value=slot.class_name;teacherClassOther.value="";}
   else{teacherClass.value="__other__";teacherClassOther.value=slot.class_name;}
@@ -771,7 +819,8 @@ window.prepareRphFromToday=async function(slot,dateIso){
   teacherDate.dispatchEvent(new Event("change"));
   showRphAction();
   updateSelectionHelp("Jadual dimasukkan: "+slot.class_name+" · "+slot.start+"–"+slot.end+
-    ". Sekarang pilih Unit/Tajuk dan Lesson/PdP sebenar. Tiada RPH dijana secara automatik.");
+    ". Pilih Unit/Tajuk/Topik dan pilih Lesson/PdP daripada senarai di sini. Tiada RPH dijana secara automatik.");
+  return true;
  }finally{todayPrepareBusy=false;}
 };
 
@@ -1162,7 +1211,7 @@ rphWord.addEventListener("click",()=>generateRphFile("word"));
 rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
-<script src="/assets/rph-today.js?v=timetable-source-20261106"></script>
+<script src="/assets/rph-today.js?v=timetable-inline-lessons-20261106"></script>
 <script src="/assets/teacher-profile.js?v=avatar-picker-20261106"></script>
 <script src="/assets/web-payment.js?v=rakan-only-percent-20261106"></script>
 <script src="/assets/web-referral.js?v=20261106"></script>
