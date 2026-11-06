@@ -83,6 +83,24 @@ def build_staging_preview(root, year, pdp):
     if drafted and (drafted.get("approval") != "DRAF_EDITORIAL_BELUM_DISAHKAN"
                     or drafted.get("year") != year or drafted.get("pdp") != pdp):
         raise ValueError("Untrusted success criterion overlay")
+    # Fail closed if the auditable SP crosswalk is not the same as this manifest.
+    # An SP number appearing in DSKP text does NOT imply pedagogical approval.
+    dskp_matrix = json.loads((base / "DSKP_SP_CODE_PRESENCE_175_20261106.json").read_text(encoding="utf-8"))
+    ix = (year - 2) * 35 + pdp - 1
+    if len(dskp_matrix["records"]) != 175 or ix < 0:
+        raise ValueError("Untrusted Muzik DSKP crosswalk size")
+    crosswalk = dskp_matrix["records"][ix]
+    if (crosswalk["pdp_id"] != row["pdp_id"] or crosswalk["manifest_sp"] != sp
+            or crosswalk["year"] != year or crosswalk["pdp"] != pdp
+            or crosswalk.get("official_approval") is not False):
+        raise ValueError("Untrusted Muzik DSKP source crosswalk")
+    print_code_conflict = bool(crosswalk["sp_not_found_in_source"])
+    if print_code_conflict and (not row.get("dskp_source_printed_sp")
+                                or row.get("dskp_crosswalk_approved") is not False):
+        raise ValueError("Missing unapproved Year4 source-code conflict annotation")
+    candidate_days_zero = row.get("rpt2027_day_audit", {}).get("status") == "ZERO_CALON_PDP_IN_ALL_16_STATES"
+    if candidate_days_zero and not row["rpt2027_day_audit"].get("automatic_shift_or_skip_forbidden", False):
+        raise ValueError("Music zero-day RPT slot cannot be auto-shifted")
     criteria = criterion[0][1] if criterion else drafted["criterion"] if drafted else "—"
     notes = "Aktiviti 1 — " + labels["act1"][0] + "\n" + labels["act1"][1] + \
             "\n\nAktiviti 2 — " + labels["act2"][0] + "\n" + labels["act2"][1] + \
@@ -125,6 +143,10 @@ def build_staging_preview(root, year, pdp):
         if labels[name][1] not in layout["phases"][1]["activity"]:
             raise ValueError(f"Lost {name}")
     warnings = ["NOT_PUBLISHED", "NO_REAL_WORD_PDF_RENDER", "NO_CROSS_PLATFORM_PARITY"]
+    if print_code_conflict:
+        warnings.extend(["SP_CODE_NOT_FOUND_IN_YEAR_DSKP", "DSKP_CROSSWALK_NOT_APPROVED"])
+    if candidate_days_zero:
+        warnings.extend(["RPT_ZERO_CANDIDATE_SCHOOL_DAYS", "PDP_ANJAL_DO_NOT_AUTO_SHIFT"])
     if not criterion:
         warnings.append("NO_EXPLICIT_SUCCESS_CRITERIA")
         if drafted:
@@ -136,4 +158,6 @@ def build_staging_preview(root, year, pdp):
         "source_pdp_id": row["pdp_id"], "layout": layout,
         "phase_text": {key: value for key, (_, value) in labels.items()},
         "warnings": warnings, "approved_for_live": False,
+        "source_sp_code_conflict": print_code_conflict,
+        "rpt_week_zero_candidate_days": candidate_days_zero,
     }

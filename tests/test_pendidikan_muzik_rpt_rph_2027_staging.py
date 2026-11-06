@@ -415,6 +415,28 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
             self.assertEqual(matched, counts[year])
         self.assertEqual(len({x["criterion"] for x in overlay.values()}), 81)
 
+    def test_music_preview_flags_curriculum_and_calendar_blockers_fail_closed(self):
+        """No publication from native staging preview for two invalid SP rows and ten zero-day slots."""
+        curriculum, calendar = [], []
+        for year in range(2, 7):
+            for pdp in range(1, 36):
+                item = module.build_staging_preview(SOURCE, year, pdp)
+                self.assertFalse(item["approved_for_live"])
+                if item["source_sp_code_conflict"]:
+                    curriculum.append(item["source_pdp_id"])
+                    self.assertIn("SP_CODE_NOT_FOUND_IN_YEAR_DSKP", item["warnings"])
+                    self.assertIn("DSKP_CROSSWALK_NOT_APPROVED", item["warnings"])
+                else:
+                    self.assertNotIn("SP_CODE_NOT_FOUND_IN_YEAR_DSKP", item["warnings"])
+                if item["rpt_week_zero_candidate_days"]:
+                    calendar.append(item["source_pdp_id"])
+                    self.assertIn("RPT_ZERO_CANDIDATE_SCHOOL_DAYS", item["warnings"])
+                    self.assertIn("PDP_ANJAL_DO_NOT_AUTO_SHIFT", item["warnings"])
+                else:
+                    self.assertNotIn("RPT_ZERO_CANDIDATE_SCHOOL_DAYS", item["warnings"])
+        self.assertEqual(curriculum, ["MZ-Y4-21", "MZ-Y4-24"])
+        self.assertEqual(calendar, [f"MZ-Y{year}-{pdp:02d}" for year in range(2, 7) for pdp in (6, 19)])
+
     def test_music_175_sp_code_source_presence_matrix(self):
         audit = json.loads((MUSIC / "rpt_rph_2027" / "DSKP_SP_CODE_PRESENCE_175_20261106.json").read_text(encoding="utf-8"))
         self.assertEqual(audit["summary"]["rph_count"], 175)
@@ -520,7 +542,7 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
         for year in range(2, 7):
             for pdp in range(1, 36):
                 paths = checker.source_paths(year, pdp)
-                self.assertEqual(len(paths), 5)
+                self.assertEqual(len(paths), 6)
                 self.assertTrue(checker.manifest_matches_source(year, pdp))
                 expected = hashlib.sha256()
                 for rel in paths:
@@ -563,6 +585,12 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
             overlay = root / checker.source_paths(2, 1)[3]
             overlay.write_bytes(overlay.read_bytes() + b"\nSTAGING_TEST_MUTATION")
             self.assertNotEqual(before, checker.source_fingerprint(2, 1, root=root))
+            shutil.copy2(ROOT / checker.source_paths(2, 1)[3], overlay)
+            crosswalk = root / checker.source_paths(2, 1)[5]
+            crosswalk.write_bytes(crosswalk.read_bytes() + b"\\nSTAGING_TEST_CROSSWALK_MUTATION")
+            self.assertNotEqual(before, checker.source_fingerprint(2, 1, root=root))
+            crosswalk.unlink()
+            self.assertIsNone(checker.source_fingerprint(2, 1, root=root))
 
     def test_fail_closed_for_invalid_year_or_pdp(self):
         for year, pdp in ((1, 1), (7, 1), (2, 0), (3, 36), ("2", 1)):

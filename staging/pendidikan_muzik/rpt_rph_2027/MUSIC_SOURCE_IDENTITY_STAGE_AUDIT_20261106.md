@@ -6,13 +6,14 @@ Penjana Telegram dan Web mempunyai deploy berasingan. Jika Web menggunakan RPH/m
 
 ## Penyelesaian yang disediakan dalam staging
 
-Modul `music_source_identity_staging.py` membina **digest sumber sebenar untuk 175 PdP Tahun 2–6**, berdasarkan lima fail ini:
+Modul `music_source_identity_staging.py` membina **digest sumber sebenar untuk 175 PdP Tahun 2–6**, berdasarkan **enam** fail ini:
 
 1. RPH PdP Markdown (kandungan aktiviti);
 2. `pdp_manifest.json` tahun berkaitan (identiti PdP/SP/halaman/status);
 3. CSV RPT Muzik 2027 tahun tersebut (tarikh kumpulan A/B);
 4. `SUCCESS_CRITERIA_DRAFT_20261106.json` (81 cadangan, masih DRAF);
 5. `KALENDAR_MINGGU_RPT_2027_INDUK_AUDIT_SNAPSHOT.json`.
+6. `DSKP_SP_CODE_PRESENCE_175_20261106.json` (audit kehadiran kod SP, **bukan** kelulusan).
 
 Prinsip SHA-256 sama dengan sumber identiti Web: **path + NUL + bytes + NUL**, dibaca dalam urutan tetap. Tiada fail symlink, kosong, hilang atau melebihi had 2.5MB diterima. Kod tidak melakukan pengaktifan langganan, perubahan DB, Web, Telegram atau fail RPH.
 
@@ -24,3 +25,6 @@ Prinsip SHA-256 sama dengan sumber identiti Web: **path + NUL + bytes + NUL**, d
 - Jika suatu hari Web/Telegram menggunakan digest ini, kedua-duanya mesti mempunyai **fail sumber identik**; jangan gunakan sandaran senyap jika tidak sama.
 
 **Status:** reka bentuk kawalan sumber telah dibina untuk ujian staging, **TIDAK DILULUSKAN UNTUK LIVE**. Fail RPH dan manifest asal tidak diubah.
+
+## Kawalan tambahan 6 Nov 2026
+Pratonton 175 PdP kini **membaca audit DSKP** dan menolak sumber jika kod SP/ID/kelulusan yang direkodkan tidak sepadan dengan manifest. Dua PdP Tahun4 (21,24) menerima amaran `SP_CODE_NOT_FOUND_IN_YEAR_DSKP`; 10 PdP Tahun2–6 (06,19) menerima amaran `RPT_ZERO_CANDIDATE_SCHOOL_DAYS`. Semua masih `approved_for_live=false`. Mengubah/membuang audit DSKP turut membatalkan SHA-256. Tiada tambahan whitelist MUZIK dalam Web/Telegram LIVE.
