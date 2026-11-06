@@ -14,7 +14,7 @@
 
 **Set Induksi — 4 minit:** Guru menunjukkan garis masa berlabel Classical 1750–1830 (rujukan DSKP); murid menyatakan satu perkara yang pernah dipelajari daripada Unit Rangkaian Globalisasi.
 
-**Aktiviti 1 — Ulang kaji khusus (8 minit):** Murid mengenal komposer, tajuk karya serta negara asal hanya daripada nota sumber yang disediakan guru, tanpa mereka-reka nama atau rakaman.
+**Aktiviti 1 — Ulang kaji khusus (8 minit):** Murid menyebut komposer, karya dan negara asal berdasarkan nota sumber yang dipilih guru, kemudian menyatakan satu ciri untuk perbincangan berkumpulan.
 
 **Aktiviti 2 — Aplikasi kemahiran (10 minit):** Murid mendengar karya yang hak penggunaannya telah disemak oleh guru, atau mengkaji nota karya tanpa audio, lalu menghasilkan dua ayat ulasan dengan satu bukti yang boleh diperiksa.
 
