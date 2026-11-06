@@ -582,10 +582,14 @@ def create_blueprint():
                   "trial" if valid_credits and credits > 0 else
                   "exhausted" if valid_credits and credits == 0 else
                   "unavailable")
-        return jsonify({"available": True, "generator": "telegram-native",
-                        "download_allowed": allowed, "access_status": access,
-                        "status": selected.get("status", ""),
-                        "formats": selected.get("formats", ["word", "pdf"])})
+        result={"available": True, "generator": "telegram-native",
+                "download_allowed": allowed, "access_status": access}
+        # Preserve the existing JSON contract for English/BM/PI/other users.
+        # Publish DRAF and format restrictions only for the new subjects.
+        if selected.get("source")=="telegram-provisional-subjects-2027":
+            result.update({"status": selected["status"],
+                           "formats": selected["formats"]})
+        return jsonify(result)
 
     @bp.get("/api/web/rph/preview")
     def preview():
