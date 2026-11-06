@@ -4,6 +4,9 @@ on:
     branches: [production/cikgulaju-web-20261105, feat/rph-hari-ini-web-20261106]
     paths:
       - 'web/rph_hari_ini_web.py'
+      - 'web/math_unit_groups.py'
+      - 'tools/run_web_v1_preview.py'
+      - 'tests/test_web_math_unit_grouping_20261106.py'
       - 'web_v1_static_preview/rph-today.js'
       - 'web_v1_static_preview/index.html'
       - 'tools/run_web_production.py'
@@ -13,6 +16,9 @@ on:
   pull_request:
     paths:
       - 'web/rph_hari_ini_web.py'
+      - 'web/math_unit_groups.py'
+      - 'tools/run_web_v1_preview.py'
+      - 'tests/test_web_math_unit_grouping_20261106.py'
       - 'web_v1_static_preview/rph-today.js'
       - 'web_v1_static_preview/index.html'
       - 'tools/run_web_production.py'
@@ -34,7 +40,7 @@ jobs:
         with:
           node-version: '22'
       - run: pip install 'flask==3.1.3' 'python-docx==1.2.0' 'lxml==5.4.0'
-      - run: PYTHONPATH=tests:. python -m unittest -v tests.test_web_rph_hari_ini_20261106 tests.test_web_teacher_profile_timetable tests.test_web_saved_classes
+      - run: PYTHONPATH=tests:. python -m unittest -v tests.test_web_rph_hari_ini_20261106 tests.test_web_teacher_profile_timetable tests.test_web_saved_classes tests.test_web_math_unit_grouping_20261106
       - run: node --check web_v1_static_preview/rph-today.js
       - name: Syntax-check existing main Web script after embedding daily handoff
         run: |

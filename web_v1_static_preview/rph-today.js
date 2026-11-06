@@ -117,7 +117,10 @@
     if(!title)continue;
    }
    const option=new Option(title,String(item.value));
-   if(name==="lesson")option.dataset.bookRef=String(item.textbook_ref||item.student_book_ref||"").trim();
+   if(name==="lesson"){
+     option.dataset.bookRef=String(item.textbook_ref||item.student_book_ref||"").trim();
+     option.dataset.originUnit=String(item.origin_unit||"");
+    }
    select.add(option);
   }
   select.parentNode.hidden=false;
@@ -304,7 +307,8 @@
  function selection(c){
   const v=c.controls;
   const params={year:String(c.slot.year),subject:c.slot.subject_code,
-                unit:v.unit.value,lesson:v.lesson.value};
+                unit:v.lesson.selectedOptions[0]?.dataset.originUnit||v.unit.value,
+                lesson:v.lesson.value};
   if(c.slot.subject_code==="PJPK")params.component=v.component.value;
   return params;
  }
