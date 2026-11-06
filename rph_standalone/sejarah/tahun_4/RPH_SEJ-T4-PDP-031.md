@@ -15,9 +15,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan peta perjalanan pengasas dan dua petikan sejarah Melaka. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 9: Pengasas Kesultanan Melayu Melaka.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menggubal soalan kajian tentang mengapa lokasi Melaka dipilih. Guru menyemak jawapan awal berpandukan 5.2.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 122–131: Kajian kes cadangan guru membanding sumber pengasas, legenda. Murid menggubal soalan kajian tentang mengapa lokasi Melaka dipilih. Guru menyemak jawapan awal berpandukan 5.2.1.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid membandingkan keterangan sumber lalu membina kronologi dan simpulan yang menandakan unsur legenda. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan sifat-sifat kepimpinan tokoh yang boleh dicontohi.
+**Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 122–131 bagi menyokong perbandingan. Murid membandingkan keterangan sumber lalu membina kronologi dan simpulan yang menandakan unsur legenda. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan sifat-sifat kepimpinan tokoh yang boleh dicontohi.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan laporan kes dengan persoalan, dua sumber dan kesimpulan berasas. Guru menyemak secara individu menggunakan kata tugas SP 5.2.1, 5.2.2 dan nilai K5.2.5, kemudian memberi intervensi kepada murid yang belum tepat.
 

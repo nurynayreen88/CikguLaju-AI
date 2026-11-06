@@ -14,9 +14,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan dua versi cerita asal usul nama Melaka daripada sumber yang dikenal pasti. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 9: Pengasas Kesultanan Melayu Melaka.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membezakan kandungan cerita dalam dua sumber dengan mencatat persamaan. Guru menyemak jawapan awal berpandukan 5.2.4.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 128–131: Asal usul nama Melaka menurut sumber tempatan, Arab dan India. Murid membezakan kandungan cerita dalam dua sumber dengan mencatat persamaan. Guru menyemak jawapan awal berpandukan 5.2.4.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid menyediakan jadual tafsiran berbeza tanpa menetapkan cerita legenda sebagai bukti tunggal. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan sikap taat setia kepada raja dan negara.
+**Aktiviti 2 (20 min):** Guru meminta murid mengesahkan hasil dengan dua bukti hlm. 128–131. Murid menyediakan jadual tafsiran berbeza tanpa menetapkan cerita legenda sebagai bukti tunggal. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menghuraikan kepentingan sikap taat setia kepada raja dan negara.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan jadual dua sumber, dua perbezaan dan catatan had bukti. Guru menyemak secara individu menggunakan kata tugas SP 5.2.4 dan nilai K5.2.7, kemudian memberi intervensi kepada murid yang belum tepat.
 

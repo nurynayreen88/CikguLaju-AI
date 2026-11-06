@@ -15,9 +15,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan peta laluan pengasas Melaka dan petikan catatan sumber. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 9: Pengasas Kesultanan Melayu Melaka.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid menyusun rentetan perjalanan pengasas Kesultanan Melayu Melaka mengikut kronologi. Guru menyemak jawapan awal berpandukan 5.2.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 122–125: Sulalatus Salatin dan Suma Oriental tentang pengasas Melaka. Murid menyusun rentetan perjalanan pengasas Kesultanan Melayu Melaka mengikut kronologi. Guru menyemak jawapan awal berpandukan 5.2.1.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 9. Murid melakar laluan perpindahan pada peta dan menghuraikan keadaan yang mendorong pilihan lokasi. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan sifat-sifat kepimpinan tokoh yang boleh dicontohi.
+**Aktiviti 2 (20 min):** Guru menyoal bukti konkrit hlm. 122–125 untuk menguji dapatan murid. Murid melakar laluan perpindahan pada peta dan menghuraikan keadaan yang mendorong pilihan lokasi. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menerangkan kepentingan sifat-sifat kepimpinan tokoh yang boleh dicontohi.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan garis masa dan peta laluan berserta satu faktor lokasi. Guru menyemak secara individu menggunakan kata tugas SP 5.2.1, 5.2.2 dan nilai K5.2.5, kemudian memberi intervensi kepada murid yang belum tepat.
 

@@ -15,9 +15,9 @@
 
 **Set Induksi (5 min):** Guru mempamerkan kad peristiwa pentadbiran Tun Perak dan peta hubungan Melaka. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 10: Tun Perak Bendahara Terbilang.
 
-**Aktiviti 1 (20 min):** Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan. Murid membina garis masa ringkas latar hidup Tun Perak berpandukan sumber. Guru menyemak jawapan awal berpandukan 5.3.1.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 140–145: Riwayat Tun Perak dan tugas ketua pembesar, penasihat, diplomat. Murid membina garis masa ringkas latar hidup Tun Perak berpandukan sumber. Guru menyemak jawapan awal berpandukan 5.3.1.
 
-**Aktiviti 2 (20 min):** Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit 10. Murid menghubungkan peranan Bendahara dengan kebijaksanaan pentadbiran menggunakan bukti peristiwa. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengambarkan cara menyatakan penghargaan terhadap jasa dan sumbangan Tun Perak.
+**Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 140–145 bagi menyokong perbandingan. Murid menghubungkan peranan Bendahara dengan kebijaksanaan pentadbiran menggunakan bukti peristiwa. Guru membimbing pembetulan salah faham menggunakan bukti. Murid mengambarkan cara menyatakan penghargaan terhadap jasa dan sumbangan Tun Perak.
 
 **Pengukuhan dan PBD (10 min):** Murid menghasilkan garis masa ringkas dan dua peranan Tun Perak bersumber. Guru menyemak secara individu menggunakan kata tugas SP 5.3.1, 5.3.2 dan nilai K5.3.4, K5.3.6, kemudian memberi intervensi kepada murid yang belum tepat.
 
