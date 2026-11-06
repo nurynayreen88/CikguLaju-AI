@@ -14,7 +14,7 @@
 
 **Aktiviti 1 — Penerokaan (8 minit):** Guru menerangkan Bach, Vivaldi dan Handel menggunakan halaman 34–35 dan contoh karya yang direkodkan di situ.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Pasangan membina peta minda komposer–negara asal–judul karya, kemudian mengulas rakaman yang dibenarkan.
+**Aktiviti 2 — Amali / aplikasi (10 minit):** Pasangan membina peta minda komposer–negara asal–judul karya, kemudian membandingkan dua ciri karya berdasarkan keterangan buku; rakaman sah milik sekolah boleh digunakan sebagai pengayaan pilihan.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak dua komposer, negara asal dan satu judul karya.
 
