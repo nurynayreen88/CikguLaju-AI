@@ -1,0 +1,41 @@
+name: Sejarah 2027 Telegram-native Word A4 QA
+on:
+  pull_request:
+    paths:
+      - 'rph_standalone/sejarah/**'
+      - 'web/sejarah_2027_native_layout_adapter.py'
+      - 'scripts/render_sejarah_native_word_a4_2027.py'
+      - '.github/workflows/sejarah_native_word_a4_2027_qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native-word-a4:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Word and PDF diagnostics
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends libreoffice-writer
+          python -m pip install 'python-docx==1.1.2' 'pypdf==5.1.0'
+      - name: Render all 108 RPH through exact native Word-table snapshot
+        run: python scripts/render_sejarah_native_word_a4_2027.py
+      - name: Preserve internal output for failed or successful QA
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Sejarah-2027-Telegram-Native-Word-DRAF-A4-Audit
+          path: |
+            output/sejarah_native_word_a4_qa/manifest.json
+            output/sejarah_native_word_a4_qa/docx/SEJ_T4_PDP_001.docx
+            output/sejarah_native_word_a4_qa/docx/SEJ_T5_PDP_001.docx
+            output/sejarah_native_word_a4_qa/docx/SEJ_T6_PDP_001.docx
+            output/sejarah_native_word_a4_qa/pdf/SEJ_T4_PDP_001.pdf
+            output/sejarah_native_word_a4_qa/pdf/SEJ_T5_PDP_001.pdf
+            output/sejarah_native_word_a4_qa/pdf/SEJ_T6_PDP_001.pdf
+          if-no-files-found: warn
