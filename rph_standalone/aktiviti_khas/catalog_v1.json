@@ -7,7 +7,9 @@
     "30 aktiviti tamat sukatan: 10 tema x 3 variasi tahap (1-2, 3-4, 5-6).",
     "Tahun 2 boleh guna beberapa aktiviti suai kenal sebagai pengukuhan awal tahun; jangan namakan Program Transisi rasmi.",
     "Tiada SK/SP atau rujukan buku teks direka. RPH aktiviti khas tidak automatik berkait dengan Lesson/PdP silibus.",
-    "RPH Word/PDF dan integrasi menu Telegram/Web perlu dibina serta diuji secara berasingan."
+    "RPH Word/PDF dan integrasi menu Telegram/Web perlu dibina serta diuji secara berasingan.",
+    "Versi diperinci: 13 aktiviti tamat sukatan khusus mengikut subjek, 3 tahap setiap subjek, dan semua 20 aktiviti transisi dipanjangkan dengan tindakan guru, murid dan bukti pentaksiran.",
+    "Tiada lagi aktiviti tamat sukatan berlabel Semua subjek atau pemilihan subjek yang tidak selaras dengan kandungan."
   ],
   "rph_minute_plan": {
     "set_induksi": 5,
@@ -29,16 +31,16 @@
       "title": "Kad Nama Ajaib",
       "duration_minutes": 60,
       "learning_objective": "Murid menyebut nama sendiri dan mengenali nama dua orang rakan.",
-      "set_induksi": "Guru menunjukkan kad nama sendiri dan memperagakan ayat 'Nama saya ...'.",
+      "set_induksi": "Guru menunjukkan kad nama sendiri dan memperagakan ayat 'Nama saya ...'. Guru memberi masa kepada murid memerhati bahan dan menjawab tanpa tekanan, serta memperagakan tindakan selamat sebelum memulakan aktiviti.",
       "aktiviti_utama": [
-        "Murid menghias kad nama menggunakan simbol atau lukisan kesukaan.",
-        "Secara berpasangan, murid bertukar kad dan menyebut nama pasangannya.",
-        "Murid bergerak dalam kumpulan kecil dan memperkenalkan dua rakan kepada guru."
+        "Murid menghias kad nama menggunakan simbol atau lukisan kesukaan. Guru memberi pilihan sama ada murid mahu menulis atau memilih simbol nama agar semua berani bermula. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Secara berpasangan, murid bertukar kad dan menyebut nama pasangannya. Guru membantu pasangan menyebut nama dengan suara perlahan terlebih dahulu, kemudian menukar kad secara bergilir. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Murid bergerak dalam kumpulan kecil dan memperkenalkan dua rakan kepada guru. Setiap murid menyatakan nama seorang rakan, manakala guru memberi petunjuk gambar jika murid masih malu. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai."
       ],
-      "pengukuhan_penilaian": "Guru menggunakan senarai semak sebutan nama sendiri dan dua rakan.",
-      "penutup": "Murid mengangkat kad nama dan mengucap selamat tinggal kepada rakan.",
+      "pengukuhan_penilaian": "Guru menggunakan senarai semak sebutan nama sendiri dan dua rakan. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
+      "penutup": "Murid mengangkat kad nama dan mengucap selamat tinggal kepada rakan. Guru meminta satu respons lisan atau tunjuk cara mudah, merumuskan tingkah laku atau kemahiran yang telah dipelajari dan menggalakkan murid mencubanya lagi pada hari berikutnya.",
       "bbm": "Kad manila kecil, krayon, penanda nama",
-      "assessment_evidence": "Guru menggunakan senarai semak sebutan nama sendiri dan dua rakan.",
+      "assessment_evidence": "Guru menggunakan senarai semak sebutan nama sendiri dan dua rakan. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
       "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
       "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
     },
@@ -53,16 +55,16 @@
       "title": "Bola Salam",
       "duration_minutes": 60,
       "learning_objective": "Murid memberi salam atau sapaan sopan kepada sekurang-kurangnya tiga rakan.",
-      "set_induksi": "Guru menunjukkan cara menyapa sambil memegang bola lembut.",
+      "set_induksi": "Guru menunjukkan cara menyapa sambil memegang bola lembut. Guru memberi masa kepada murid memerhati bahan dan menjawab tanpa tekanan, serta memperagakan tindakan selamat sebelum memulakan aktiviti.",
       "aktiviti_utama": [
-        "Murid membentuk bulatan dan menyebut salam sebelum menggolekkan bola.",
-        "Penerima bola menyebut namanya dan membalas sapaan.",
-        "Murid bertukar pasangan dan mempraktikkan sapaan dengan nada suara mesra."
+        "Murid membentuk bulatan dan menyebut salam sebelum menggolekkan bola. Guru memperlihatkan kedudukan tangan dan jarak selamat sebelum permainan menggolek bola. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Penerima bola menyebut namanya dan membalas sapaan. Guru memberi contoh membalas salam dengan ungkapan sopan, lalu murid mengulang secara dua hala. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Murid bertukar pasangan dan mempraktikkan sapaan dengan nada suara mesra. Murid memilih pasangan baharu dan menyebut sapaan tanpa memotong percakapan rakan. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai."
       ],
-      "pengukuhan_penilaian": "Guru memerhati tiga interaksi sopan setiap murid menggunakan senarai semak.",
-      "penutup": "Murid memilih sapaan yang sesuai ketika bertemu guru pada esok hari.",
+      "pengukuhan_penilaian": "Guru memerhati tiga interaksi sopan setiap murid menggunakan senarai semak. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
+      "penutup": "Murid memilih sapaan yang sesuai ketika bertemu guru pada esok hari. Guru meminta satu respons lisan atau tunjuk cara mudah, merumuskan tingkah laku atau kemahiran yang telah dipelajari dan menggalakkan murid mencubanya lagi pada hari berikutnya.",
       "bbm": "Bola lembut, kad ungkapan sopan",
-      "assessment_evidence": "Guru memerhati tiga interaksi sopan setiap murid menggunakan senarai semak.",
+      "assessment_evidence": "Guru memerhati tiga interaksi sopan setiap murid menggunakan senarai semak. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
       "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
       "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
     },
@@ -77,16 +79,16 @@
       "title": "Cari Rakan Minat Sama",
       "duration_minutes": 60,
       "learning_objective": "Murid menyatakan satu minat dan berinteraksi dengan sekurang-kurangnya dua rakan.",
-      "set_induksi": "Guru menunjukkan gambar permainan, makanan dan hobi yang biasa dikenal murid.",
+      "set_induksi": "Guru menunjukkan gambar permainan, makanan dan hobi yang biasa dikenal murid. Guru memberi masa kepada murid memerhati bahan dan menjawab tanpa tekanan, serta memperagakan tindakan selamat sebelum memulakan aktiviti.",
       "aktiviti_utama": [
-        "Murid memilih satu kad minat dan menjelaskan pilihannya dengan ayat pendek.",
-        "Murid mencari dua rakan yang mempunyai pilihan sama atau berlainan.",
-        "Kumpulan kecil berkongsi persamaan dan perbezaan tanpa mengejek pilihan rakan."
+        "Murid memilih satu kad minat dan menjelaskan pilihannya dengan ayat pendek. Guru menyediakan pilihan gambar minat supaya murid yang belum petah bercakap tetap boleh menyertai aktiviti. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Murid mencari dua rakan yang mempunyai pilihan sama atau berlainan. Guru memberi model soalan 'Apa yang kamu suka?' dan jawapan ringkas, lalu murid cuba sendiri. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Kumpulan kecil berkongsi persamaan dan perbezaan tanpa mengejek pilihan rakan. Murid menyebut satu persamaan dan satu perbezaan minat sambil menghormati pilihan rakan. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai."
       ],
-      "pengukuhan_penilaian": "Guru mencatat murid yang dapat menyebut minat dan bertanya kepada dua rakan.",
-      "penutup": "Murid menyatakan satu perkara baharu tentang seorang rakan.",
+      "pengukuhan_penilaian": "Guru mencatat murid yang dapat menyebut minat dan bertanya kepada dua rakan. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
+      "penutup": "Murid menyatakan satu perkara baharu tentang seorang rakan. Guru meminta satu respons lisan atau tunjuk cara mudah, merumuskan tingkah laku atau kemahiran yang telah dipelajari dan menggalakkan murid mencubanya lagi pada hari berikutnya.",
       "bbm": "Kad gambar minat, pelekat",
-      "assessment_evidence": "Guru mencatat murid yang dapat menyebut minat dan bertanya kepada dua rakan.",
+      "assessment_evidence": "Guru mencatat murid yang dapat menyebut minat dan bertanya kepada dua rakan. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
       "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
       "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
     },
@@ -101,16 +103,16 @@
       "title": "Jelajah Sekolah Selamat",
       "duration_minutes": 60,
       "learning_objective": "Murid mengenal pasti tiga lokasi sekolah dan satu peraturan keselamatan.",
-      "set_induksi": "Guru mempamerkan pelan ringkas sekolah dan simbol tandas, pejabat serta kantin.",
+      "set_induksi": "Guru mempamerkan pelan ringkas sekolah dan simbol tandas, pejabat serta kantin. Guru memberi masa kepada murid memerhati bahan dan menjawab tanpa tekanan, serta memperagakan tindakan selamat sebelum memulakan aktiviti.",
       "aktiviti_utama": [
-        "Murid mengikut guru melawat tiga lokasi mengikut laluan yang ditetapkan.",
-        "Di setiap lokasi, murid memadankan gambar dengan tempat sebenar.",
-        "Kembali ke kelas, murid menyusun kad lokasi mengikut laluan yang dilalui."
+        "Murid mengikut guru melawat tiga lokasi mengikut laluan yang ditetapkan. Guru menunjukkan simbol peta sebelum lawatan dan mengingatkan murid bergerak dalam barisan. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Di setiap lokasi, murid memadankan gambar dengan tempat sebenar. Murid memerhati papan tanda serta meminta izin sebelum memasuki kawasan tertentu. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Kembali ke kelas, murid menyusun kad lokasi mengikut laluan yang dilalui. Guru meminta kumpulan membandingkan laluan pada kad dengan lokasi yang benar-benar dilawati. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai."
       ],
-      "pengukuhan_penilaian": "Guru menyoal tiga lokasi dan satu tindakan selamat ketika bergerak.",
-      "penutup": "Murid menunjukkan arah ke satu lokasi menggunakan pelan bergambar.",
+      "pengukuhan_penilaian": "Guru menyoal tiga lokasi dan satu tindakan selamat ketika bergerak. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
+      "penutup": "Murid menunjukkan arah ke satu lokasi menggunakan pelan bergambar. Guru meminta satu respons lisan atau tunjuk cara mudah, merumuskan tingkah laku atau kemahiran yang telah dipelajari dan menggalakkan murid mencubanya lagi pada hari berikutnya.",
       "bbm": "Pelan sekolah, kad lokasi, papan klip",
-      "assessment_evidence": "Guru menyoal tiga lokasi dan satu tindakan selamat ketika bergerak.",
+      "assessment_evidence": "Guru menyoal tiga lokasi dan satu tindakan selamat ketika bergerak. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
       "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
       "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
     },
@@ -125,16 +127,16 @@
       "title": "Adab di Kantin",
       "duration_minutes": 60,
       "learning_objective": "Murid menunjukkan dua amalan beratur dan menjaga kebersihan semasa waktu makan.",
-      "set_induksi": "Guru membuat lakonan ringkas situasi beratur dan membuang sampah.",
+      "set_induksi": "Guru membuat lakonan ringkas situasi beratur dan membuang sampah. Guru memberi masa kepada murid memerhati bahan dan menjawab tanpa tekanan, serta memperagakan tindakan selamat sebelum memulakan aktiviti.",
       "aktiviti_utama": [
-        "Murid menyusun kad gambar mengikut urutan membeli makanan yang selamat.",
-        "Secara kumpulan, murid melakonkan beratur, meminta makanan dan mengucapkan terima kasih.",
-        "Murid mempraktikkan meletak sisa makanan pada tempat yang ditetapkan."
+        "Murid menyusun kad gambar mengikut urutan membeli makanan yang selamat. Guru mengajak murid memilih gambar perlakuan sopan tanpa mengejek rakan yang tersalah jawab. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Secara kumpulan, murid melakonkan beratur, meminta makanan dan mengucapkan terima kasih. Guru memberi peranan pelanggan, petugas dan pemerhati kepada setiap murid secara bergilir. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Murid mempraktikkan meletak sisa makanan pada tempat yang ditetapkan. Selepas simulasi guru menyoal tempat sesuai membuang sisa serta kepentingan mencuci tangan. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai."
       ],
-      "pengukuhan_penilaian": "Guru menggunakan pemerhatian tindakan beratur dan kebersihan semasa simulasi.",
-      "penutup": "Murid menyatakan satu adab kantin yang akan diamalkan.",
+      "pengukuhan_penilaian": "Guru menggunakan pemerhatian tindakan beratur dan kebersihan semasa simulasi. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
+      "penutup": "Murid menyatakan satu adab kantin yang akan diamalkan. Guru meminta satu respons lisan atau tunjuk cara mudah, merumuskan tingkah laku atau kemahiran yang telah dipelajari dan menggalakkan murid mencubanya lagi pada hari berikutnya.",
       "bbm": "Kad urutan, bekas makanan bersih, tong sampah contoh",
-      "assessment_evidence": "Guru menggunakan pemerhatian tindakan beratur dan kebersihan semasa simulasi.",
+      "assessment_evidence": "Guru menggunakan pemerhatian tindakan beratur dan kebersihan semasa simulasi. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
       "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
       "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
     },
@@ -149,16 +151,16 @@
       "title": "Beg Saya Terurus",
       "duration_minutes": 60,
       "learning_objective": "Murid mengurus beg dan alat tulis sendiri mengikut tiga langkah.",
-      "set_induksi": "Guru mempamerkan sebuah beg dengan alat tulis bercampur.",
+      "set_induksi": "Guru mempamerkan sebuah beg dengan alat tulis bercampur. Guru memberi masa kepada murid memerhati bahan dan menjawab tanpa tekanan, serta memperagakan tindakan selamat sebelum memulakan aktiviti.",
       "aktiviti_utama": [
-        "Murid mengenal pasti barang yang diperlukan untuk pembelajaran.",
-        "Murid menyusun buku dan alat tulis dalam beg masing-masing mengikut urutan mudah.",
-        "Murid berpasangan memeriksa susunan menggunakan kad semak bergambar."
+        "Murid mengenal pasti barang yang diperlukan untuk pembelajaran. Guru mempamerkan barang sebenar dan menerangkan perbezaan antara alat tulis dan barang permainan. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Murid menyusun buku dan alat tulis dalam beg masing-masing mengikut urutan mudah. Guru meminta murid mempraktikkan susunan dengan bantuan gambar, bukan menyusun beg untuk murid. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Murid berpasangan memeriksa susunan menggunakan kad semak bergambar. Pasangan memberi maklum balas berdasarkan semakan tiga perkara dan membantu tanpa mengambil alih. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai."
       ],
-      "pengukuhan_penilaian": "Guru menyemak kebolehan murid menyusun tiga jenis barang tanpa bantuan.",
-      "penutup": "Murid menunjukkan tempat meletakkan beg dengan selamat.",
+      "pengukuhan_penilaian": "Guru menyemak kebolehan murid menyusun tiga jenis barang tanpa bantuan. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
+      "penutup": "Murid menunjukkan tempat meletakkan beg dengan selamat. Guru meminta satu respons lisan atau tunjuk cara mudah, merumuskan tingkah laku atau kemahiran yang telah dipelajari dan menggalakkan murid mencubanya lagi pada hari berikutnya.",
       "bbm": "Beg sekolah, buku, bekas pensel, kad semak",
-      "assessment_evidence": "Guru menyemak kebolehan murid menyusun tiga jenis barang tanpa bantuan.",
+      "assessment_evidence": "Guru menyemak kebolehan murid menyusun tiga jenis barang tanpa bantuan. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
       "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
       "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
     },
@@ -173,16 +175,16 @@
       "title": "Isyarat Kelas Kita",
       "duration_minutes": 60,
       "learning_objective": "Murid memberi respons kepada sekurang-kurangnya tiga isyarat pengurusan kelas.",
-      "set_induksi": "Guru memperkenalkan isyarat angkat tangan, berhenti dan berkumpul.",
+      "set_induksi": "Guru memperkenalkan isyarat angkat tangan, berhenti dan berkumpul. Guru memberi masa kepada murid memerhati bahan dan menjawab tanpa tekanan, serta memperagakan tindakan selamat sebelum memulakan aktiviti.",
       "aktiviti_utama": [
-        "Murid meniru isyarat serta menjelaskan tindakan yang perlu dilakukan.",
-        "Guru menjalankan permainan muzik berhenti; murid memberi respons pada isyarat.",
-        "Kumpulan murid mencadangkan satu isyarat sopan untuk aktiviti berkumpulan."
+        "Murid meniru isyarat serta menjelaskan tindakan yang perlu dilakukan. Guru menerangkan bahawa isyarat tidak bertujuan menghukum tetapi membantu semua belajar dengan tenang. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Guru menjalankan permainan muzik berhenti; murid memberi respons pada isyarat. Guru memperlahankan dan mempercepat isyarat agar murid memusatkan perhatian pada arahan. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Kumpulan murid mencadangkan satu isyarat sopan untuk aktiviti berkumpulan. Kumpulan menguji isyarat pilihan dan menerangkan cara menggunakannya semasa aktiviti kelas. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai."
       ],
-      "pengukuhan_penilaian": "Guru mencatat respons tepat pada tiga isyarat tanpa teguran berulang.",
-      "penutup": "Murid menunjukkan isyarat kegemaran beserta maksudnya.",
+      "pengukuhan_penilaian": "Guru mencatat respons tepat pada tiga isyarat tanpa teguran berulang. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
+      "penutup": "Murid menunjukkan isyarat kegemaran beserta maksudnya. Guru meminta satu respons lisan atau tunjuk cara mudah, merumuskan tingkah laku atau kemahiran yang telah dipelajari dan menggalakkan murid mencubanya lagi pada hari berikutnya.",
       "bbm": "Kad simbol, alat muzik mudah",
-      "assessment_evidence": "Guru mencatat respons tepat pada tiga isyarat tanpa teguran berulang.",
+      "assessment_evidence": "Guru mencatat respons tepat pada tiga isyarat tanpa teguran berulang. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
       "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
       "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
     },
@@ -197,16 +199,16 @@
       "title": "Roda Emosi Saya",
       "duration_minutes": 60,
       "learning_objective": "Murid menamakan dua emosi dan menunjukkan satu cara meminta bantuan.",
-      "set_induksi": "Guru memperlihatkan wajah gembira, sedih, takut dan teruja.",
+      "set_induksi": "Guru memperlihatkan wajah gembira, sedih, takut dan teruja. Guru memberi masa kepada murid memerhati bahan dan menjawab tanpa tekanan, serta memperagakan tindakan selamat sebelum memulakan aktiviti.",
       "aktiviti_utama": [
-        "Murid memadankan kad muka dengan perkataan emosi yang dibacakan guru.",
-        "Murid memilih gambar yang menggambarkan perasaannya dan berkongsi secara sukarela.",
-        "Secara berpasangan, murid melakonkan cara meminta bantuan dengan sopan."
+        "Murid memadankan kad muka dengan perkataan emosi yang dibacakan guru. Guru menyatakan semua emosi diterima dan murid boleh memilih untuk tidak berkongsi hal peribadi. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Murid memilih gambar yang menggambarkan perasaannya dan berkongsi secara sukarela. Guru mendengar tanpa memaksa murid memberikan sebab bagi emosi yang dipilih. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Secara berpasangan, murid melakonkan cara meminta bantuan dengan sopan. Murid berlatih ayat mendapatkan bantuan daripada guru apabila rasa tidak selesa atau takut. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai."
       ],
-      "pengukuhan_penilaian": "Guru mencatat murid yang menamakan dua emosi dan boleh menyebut ayat meminta bantuan.",
-      "penutup": "Murid memilih satu strategi menenangkan diri seperti menarik nafas.",
+      "pengukuhan_penilaian": "Guru mencatat murid yang menamakan dua emosi dan boleh menyebut ayat meminta bantuan. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
+      "penutup": "Murid memilih satu strategi menenangkan diri seperti menarik nafas. Guru meminta satu respons lisan atau tunjuk cara mudah, merumuskan tingkah laku atau kemahiran yang telah dipelajari dan menggalakkan murid mencubanya lagi pada hari berikutnya.",
       "bbm": "Kad emosi, roda pilihan bergambar",
-      "assessment_evidence": "Guru mencatat murid yang menamakan dua emosi dan boleh menyebut ayat meminta bantuan.",
+      "assessment_evidence": "Guru mencatat murid yang menamakan dua emosi dan boleh menyebut ayat meminta bantuan. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
       "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
       "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
     },
@@ -221,16 +223,16 @@
       "title": "Kawan Bantu Kawan",
       "duration_minutes": 60,
       "learning_objective": "Murid bekerjasama menyelesaikan satu tugasan binaan serta menggunakan ungkapan tolong dan terima kasih.",
-      "set_induksi": "Guru menunjukkan sebuah menara ringkas daripada blok.",
+      "set_induksi": "Guru menunjukkan sebuah menara ringkas daripada blok. Guru memberi masa kepada murid memerhati bahan dan menjawab tanpa tekanan, serta memperagakan tindakan selamat sebelum memulakan aktiviti.",
       "aktiviti_utama": [
-        "Kumpulan empat orang membahagi tugas mengambil dan menyusun blok.",
-        "Murid membina menara secara bergilir sambil menggunakan ungkapan sopan.",
-        "Kumpulan menceritakan satu situasi ahli membantu ahli lain."
+        "Kumpulan empat orang membahagi tugas mengambil dan menyusun blok. Guru membincangkan peraturan keselamatan bahan dan cara menunggu giliran sebelum membina. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Murid membina menara secara bergilir sambil menggunakan ungkapan sopan. Guru meminta ahli menyebut tugas sendiri agar semua mendapat peluang menggunakan blok. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Kumpulan menceritakan satu situasi ahli membantu ahli lain. Kumpulan menunjukkan binaan sambil menamakan satu bantuan yang diberikan oleh rakan. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai."
       ],
-      "pengukuhan_penilaian": "Guru memerhati kerjasama, giliran dan penggunaan dua ungkapan sopan.",
-      "penutup": "Murid memberi penghargaan kepada rakan sepasukan.",
+      "pengukuhan_penilaian": "Guru memerhati kerjasama, giliran dan penggunaan dua ungkapan sopan. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
+      "penutup": "Murid memberi penghargaan kepada rakan sepasukan. Guru meminta satu respons lisan atau tunjuk cara mudah, merumuskan tingkah laku atau kemahiran yang telah dipelajari dan menggalakkan murid mencubanya lagi pada hari berikutnya.",
       "bbm": "Blok binaan atau cawan kertas",
-      "assessment_evidence": "Guru memerhati kerjasama, giliran dan penggunaan dua ungkapan sopan.",
+      "assessment_evidence": "Guru memerhati kerjasama, giliran dan penggunaan dua ungkapan sopan. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
       "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
       "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
     },
@@ -245,16 +247,16 @@
       "title": "Gerak Ikut Rentak",
       "duration_minutes": 60,
       "learning_objective": "Murid mengikuti tiga arahan pergerakan mudah dengan selamat.",
-      "set_induksi": "Guru memperdengarkan rentak tepukan dan memperagakan gerakan di ruang selamat.",
+      "set_induksi": "Guru memperdengarkan rentak tepukan dan memperagakan gerakan di ruang selamat. Guru memberi masa kepada murid memerhati bahan dan menjawab tanpa tekanan, serta memperagakan tindakan selamat sebelum memulakan aktiviti.",
       "aktiviti_utama": [
-        "Murid meniru tepuk, langkah setempat dan regangan ringan mengikut kiraan.",
-        "Dalam kumpulan, murid menyusun tiga kad pergerakan dan melakukannya secara tertib.",
-        "Murid mencipta satu urutan gerakan pendek menggunakan tiga pergerakan dipelajari."
+        "Murid meniru tepuk, langkah setempat dan regangan ringan mengikut kiraan. Guru mengingatkan jarak antara murid dan menyediakan gerakan alternatif untuk keupayaan berbeza. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Dalam kumpulan, murid menyusun tiga kad pergerakan dan melakukannya secara tertib. Murid mengikut rentak lambat sebelum mencuba rentak sederhana secara berpasangan. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Murid mencipta satu urutan gerakan pendek menggunakan tiga pergerakan dipelajari. Guru mengajak kumpulan mempersembahkan urutan pilihan dan menghormati rentak rakan. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai."
       ],
-      "pengukuhan_penilaian": "Guru memerhati ketepatan tiga arahan dan jarak selamat antara murid.",
-      "penutup": "Murid melakukan regangan penutup dan menyebut kepentingan ruang selamat.",
+      "pengukuhan_penilaian": "Guru memerhati ketepatan tiga arahan dan jarak selamat antara murid. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
+      "penutup": "Murid melakukan regangan penutup dan menyebut kepentingan ruang selamat. Guru meminta satu respons lisan atau tunjuk cara mudah, merumuskan tingkah laku atau kemahiran yang telah dipelajari dan menggalakkan murid mencubanya lagi pada hari berikutnya.",
       "bbm": "Kad pergerakan, alat perkusi ringkas",
-      "assessment_evidence": "Guru memerhati ketepatan tiga arahan dan jarak selamat antara murid.",
+      "assessment_evidence": "Guru memerhati ketepatan tiga arahan dan jarak selamat antara murid. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
       "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
       "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
     },
@@ -269,16 +271,16 @@
       "title": "Bunyi Huruf Sekeliling",
       "duration_minutes": 60,
       "learning_objective": "Murid mengenal pasti tiga bunyi awal perkataan mudah melalui gambar.",
-      "set_induksi": "Guru menunjukkan gambar bola, buku dan baju serta menyebut bunyi awal.",
+      "set_induksi": "Guru menunjukkan gambar bola, buku dan baju serta menyebut bunyi awal. Guru memberi masa kepada murid memerhati bahan dan menjawab tanpa tekanan, serta memperagakan tindakan selamat sebelum memulakan aktiviti.",
       "aktiviti_utama": [
-        "Murid mendengar guru menyebut bunyi lalu memilih kad gambar sepadan.",
-        "Murid mengasingkan enam gambar kepada dua kumpulan bunyi awal.",
-        "Secara berpasangan, murid menyebut tiga perkataan bersama bunyi awalnya."
+        "Murid mendengar guru menyebut bunyi lalu memilih kad gambar sepadan. Guru memberi penekanan kepada bunyi awal, bukan nama huruf sahaja, menggunakan contoh yang mudah didengar. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Murid mengasingkan enam gambar kepada dua kumpulan bunyi awal. Guru meminta murid menyebut dua gambar tambahan bagi setiap bunyi sambil menggerakkan kad. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Secara berpasangan, murid menyebut tiga perkataan bersama bunyi awalnya. Pasangan saling menyemak sebutan dan guru membetulkan artikulasi dengan bimbingan lembut. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai."
       ],
-      "pengukuhan_penilaian": "Guru menanda tiga padanan bunyi awal dalam senarai semak.",
-      "penutup": "Murid menyebut satu bunyi awal yang ditemukan pada objek kelas.",
+      "pengukuhan_penilaian": "Guru menanda tiga padanan bunyi awal dalam senarai semak. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
+      "penutup": "Murid menyebut satu bunyi awal yang ditemukan pada objek kelas. Guru meminta satu respons lisan atau tunjuk cara mudah, merumuskan tingkah laku atau kemahiran yang telah dipelajari dan menggalakkan murid mencubanya lagi pada hari berikutnya.",
       "bbm": "Kad huruf dan gambar, bakul pengasingan",
-      "assessment_evidence": "Guru menanda tiga padanan bunyi awal dalam senarai semak.",
+      "assessment_evidence": "Guru menanda tiga padanan bunyi awal dalam senarai semak. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
       "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
       "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
     },
@@ -293,16 +295,16 @@
       "title": "Cerita Bergambar Berurutan",
       "duration_minutes": 60,
       "learning_objective": "Murid menyusun tiga gambar dan menceritakan urutan menggunakan ayat mudah.",
-      "set_induksi": "Guru memperlihatkan tiga gambar kisah menyiram pokok secara rawak.",
+      "set_induksi": "Guru memperlihatkan tiga gambar kisah menyiram pokok secara rawak. Guru memberi masa kepada murid memerhati bahan dan menjawab tanpa tekanan, serta memperagakan tindakan selamat sebelum memulakan aktiviti.",
       "aktiviti_utama": [
-        "Murid mengamati gambar dan mengenal pasti peristiwa awal, tengah dan akhir.",
-        "Secara kumpulan, murid menyusun gambar menjadi satu cerita munasabah.",
-        "Murid menceritakan urutan menggunakan penanda 'mula-mula', 'kemudian' dan 'akhirnya' dengan bantuan."
+        "Murid mengamati gambar dan mengenal pasti peristiwa awal, tengah dan akhir. Guru mengajak murid menunjuk petunjuk visual seperti cuaca dan tindakan watak untuk memahami urutan. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Secara kumpulan, murid menyusun gambar menjadi satu cerita munasabah. Murid berbincang sebab gambar tertentu perlu berada pada awal cerita sebelum melekatkannya. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Murid menceritakan urutan menggunakan penanda 'mula-mula', 'kemudian' dan 'akhirnya' dengan bantuan. Guru menyediakan frasa permulaan supaya murid boleh menceritakan urutan tanpa menghafal teks. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai."
       ],
-      "pengukuhan_penilaian": "Guru menilai urutan tiga gambar dan penerangan lisan ringkas.",
-      "penutup": "Murid menyatakan satu pengajaran daripada gambar.",
+      "pengukuhan_penilaian": "Guru menilai urutan tiga gambar dan penerangan lisan ringkas. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
+      "penutup": "Murid menyatakan satu pengajaran daripada gambar. Guru meminta satu respons lisan atau tunjuk cara mudah, merumuskan tingkah laku atau kemahiran yang telah dipelajari dan menggalakkan murid mencubanya lagi pada hari berikutnya.",
       "bbm": "Kad cerita bergambar, papan susunan",
-      "assessment_evidence": "Guru menilai urutan tiga gambar dan penerangan lisan ringkas.",
+      "assessment_evidence": "Guru menilai urutan tiga gambar dan penerangan lisan ringkas. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
       "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
       "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
     },
@@ -317,16 +319,16 @@
       "title": "Bakul Suku Kata",
       "duration_minutes": 60,
       "learning_objective": "Murid menggabungkan sekurang-kurangnya tiga pasangan suku kata terbuka untuk membentuk perkataan.",
-      "set_induksi": "Guru menunjukkan contoh kad 'ba' dan 'ju' yang digabung menjadi 'baju'.",
+      "set_induksi": "Guru menunjukkan contoh kad 'ba' dan 'ju' yang digabung menjadi 'baju'. Guru memberi masa kepada murid memerhati bahan dan menjawab tanpa tekanan, serta memperagakan tindakan selamat sebelum memulakan aktiviti.",
       "aktiviti_utama": [
-        "Murid membaca kad suku kata dengan bimbingan bunyi.",
-        "Murid memilih dua kad daripada bakul dan mencuba membina perkataan bermakna.",
-        "Murid memadankan tiga perkataan terbina dengan gambar yang sepadan."
+        "Murid membaca kad suku kata dengan bimbingan bunyi. Guru memodelkan gabungan bunyi perlahan sebelum murid mencantumkan kad sendiri. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Murid memilih dua kad daripada bakul dan mencuba membina perkataan bermakna. Murid memilih kad berdasarkan bunyi yang didengar, bukan sekadar warna atau bentuk kad. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Murid memadankan tiga perkataan terbina dengan gambar yang sepadan. Pasangan menyemak perkataan menggunakan gambar dan mencuba bacaan tanpa bantuan pada pusingan akhir. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai."
       ],
-      "pengukuhan_penilaian": "Guru merekod tiga padanan perkataan-gambar; murid belum bersedia diberi bimbingan fonik.",
-      "penutup": "Murid membaca satu perkataan pilihan bersama-sama.",
+      "pengukuhan_penilaian": "Guru merekod tiga padanan perkataan-gambar; murid belum bersedia diberi bimbingan fonik. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
+      "penutup": "Murid membaca satu perkataan pilihan bersama-sama. Guru meminta satu respons lisan atau tunjuk cara mudah, merumuskan tingkah laku atau kemahiran yang telah dipelajari dan menggalakkan murid mencubanya lagi pada hari berikutnya.",
       "bbm": "Kad suku kata dan gambar, bakul kecil",
-      "assessment_evidence": "Guru merekod tiga padanan perkataan-gambar; murid belum bersedia diberi bimbingan fonik.",
+      "assessment_evidence": "Guru merekod tiga padanan perkataan-gambar; murid belum bersedia diberi bimbingan fonik. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
       "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
       "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
     },
@@ -341,16 +343,16 @@
       "title": "Nombor di Sekitar Kita",
       "duration_minutes": 60,
       "learning_objective": "Murid membilang objek hingga sepuluh dan memadankan tiga kuantiti dengan angka.",
-      "set_induksi": "Guru memperlihatkan lima pensel dan membilang secara sepadan.",
+      "set_induksi": "Guru memperlihatkan lima pensel dan membilang secara sepadan. Guru memberi masa kepada murid memerhati bahan dan menjawab tanpa tekanan, serta memperagakan tindakan selamat sebelum memulakan aktiviti.",
       "aktiviti_utama": [
-        "Murid membilang koleksi objek 1 hingga 10 sambil menyentuh setiap objek sekali.",
-        "Murid memadankan kad angka dengan bekas objek yang sepadan.",
-        "Secara berpasangan, murid menyediakan satu kumpulan objek mengikut angka pilihan."
+        "Murid membilang koleksi objek 1 hingga 10 sambil menyentuh setiap objek sekali. Guru mengingatkan bahawa satu objek perlu dipadankan dengan satu sebutan nombor. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Murid memadankan kad angka dengan bekas objek yang sepadan. Murid yang keliru diberi manik lebih besar agar dapat mengalihkan objek satu demi satu. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Secara berpasangan, murid menyediakan satu kumpulan objek mengikut angka pilihan. Pasangan menerangkan bagaimana memastikan tiada objek tertinggal atau dikira dua kali. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai."
       ],
-      "pengukuhan_penilaian": "Guru menyemak tiga padanan angka-kuantiti dan ketepatan membilang.",
-      "penutup": "Murid menunjukkan dengan jari satu nombor yang disebut guru.",
+      "pengukuhan_penilaian": "Guru menyemak tiga padanan angka-kuantiti dan ketepatan membilang. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
+      "penutup": "Murid menunjukkan dengan jari satu nombor yang disebut guru. Guru meminta satu respons lisan atau tunjuk cara mudah, merumuskan tingkah laku atau kemahiran yang telah dipelajari dan menggalakkan murid mencubanya lagi pada hari berikutnya.",
       "bbm": "Objek pengira, kad angka, bekas kecil",
-      "assessment_evidence": "Guru menyemak tiga padanan angka-kuantiti dan ketepatan membilang.",
+      "assessment_evidence": "Guru menyemak tiga padanan angka-kuantiti dan ketepatan membilang. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
       "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
       "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
     },
@@ -365,16 +367,16 @@
       "title": "Bentuk di Sekolah",
       "duration_minutes": 60,
       "learning_objective": "Murid mengenal pasti bulatan, segi tiga dan segi empat melalui objek sekeliling.",
-      "set_induksi": "Guru menunjukkan tiga bentuk geometri menggunakan kad besar.",
+      "set_induksi": "Guru menunjukkan tiga bentuk geometri menggunakan kad besar. Guru memberi masa kepada murid memerhati bahan dan menjawab tanpa tekanan, serta memperagakan tindakan selamat sebelum memulakan aktiviti.",
       "aktiviti_utama": [
-        "Murid menjejak bentuk pada kad menggunakan jari.",
-        "Murid mencari objek bilik darjah yang menyerupai tiga bentuk sasaran.",
-        "Murid melukis dan melabel bentuk yang ditemui dengan bantuan guru."
+        "Murid menjejak bentuk pada kad menggunakan jari. Guru menunjukkan bentuk contoh dan bentuk bukan contoh supaya murid melihat sifat yang membezakannya. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Murid mencari objek bilik darjah yang menyerupai tiga bentuk sasaran. Murid menerangkan pilihan objek sambil menyentuh sempadan bentuk yang dilihat. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Murid melukis dan melabel bentuk yang ditemui dengan bantuan guru. Guru meminta murid menghubungkan lakaran dengan benda sebenar tanpa menilai kekemasan lukisan semata-mata. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai."
       ],
-      "pengukuhan_penilaian": "Guru menyemak tiga padanan bentuk kepada objek.",
-      "penutup": "Murid menamakan satu objek dan bentuknya.",
+      "pengukuhan_penilaian": "Guru menyemak tiga padanan bentuk kepada objek. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
+      "penutup": "Murid menamakan satu objek dan bentuknya. Guru meminta satu respons lisan atau tunjuk cara mudah, merumuskan tingkah laku atau kemahiran yang telah dipelajari dan menggalakkan murid mencubanya lagi pada hari berikutnya.",
       "bbm": "Kad bentuk, kertas, pensel warna",
-      "assessment_evidence": "Guru menyemak tiga padanan bentuk kepada objek.",
+      "assessment_evidence": "Guru menyemak tiga padanan bentuk kepada objek. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
       "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
       "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
     },
@@ -389,16 +391,16 @@
       "title": "Panjang atau Pendek",
       "duration_minutes": 60,
       "learning_objective": "Murid membandingkan panjang tiga pasangan objek secara langsung.",
-      "set_induksi": "Guru meletakkan dua pita bersebelahan dan bertanya mana lebih panjang.",
+      "set_induksi": "Guru meletakkan dua pita bersebelahan dan bertanya mana lebih panjang. Guru memberi masa kepada murid memerhati bahan dan menjawab tanpa tekanan, serta memperagakan tindakan selamat sebelum memulakan aktiviti.",
       "aktiviti_utama": [
-        "Murid meletakkan dua objek sebaris dari titik mula sama.",
-        "Murid mengasingkan tiga pasangan objek kepada lebih panjang atau lebih pendek.",
-        "Murid menjelaskan keputusan satu pasangan menggunakan perkataan 'panjang' atau 'pendek'."
+        "Murid meletakkan dua objek sebaris dari titik mula sama. Guru menyelaraskan kedua-dua objek pada titik mula yang sama agar perbandingan adil. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Murid mengasingkan tiga pasangan objek kepada lebih panjang atau lebih pendek. Murid menggunakan kata bandingan tepat selepas melihat hujung yang lebih panjang. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Murid menjelaskan keputusan satu pasangan menggunakan perkataan 'panjang' atau 'pendek'. Guru menyoal sama ada keputusan berubah jika salah satu objek dialihkan dari titik mula. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai."
       ],
-      "pengukuhan_penilaian": "Guru menyemak ketepatan tiga perbandingan sebenar.",
-      "penutup": "Murid menyatakan sebab objek perlu disejajarkan pada satu hujung.",
+      "pengukuhan_penilaian": "Guru menyemak ketepatan tiga perbandingan sebenar. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
+      "penutup": "Murid menyatakan sebab objek perlu disejajarkan pada satu hujung. Guru meminta satu respons lisan atau tunjuk cara mudah, merumuskan tingkah laku atau kemahiran yang telah dipelajari dan menggalakkan murid mencubanya lagi pada hari berikutnya.",
       "bbm": "Pita kertas, pensel, pembaris tidak berangka",
-      "assessment_evidence": "Guru menyemak ketepatan tiga perbandingan sebenar.",
+      "assessment_evidence": "Guru menyemak ketepatan tiga perbandingan sebenar. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
       "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
       "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
     },
@@ -413,16 +415,16 @@
       "title": "English Classroom Commands",
       "duration_minutes": 60,
       "learning_objective": "Murid memberi respons fizikal yang sesuai kepada empat arahan bahasa Inggeris mudah.",
-      "set_induksi": "Guru memperagakan 'stand up', 'sit down', 'listen' dan 'point' tanpa menterjemah setiap kali.",
+      "set_induksi": "Guru memperagakan 'stand up', 'sit down', 'listen' dan 'point' tanpa menterjemah setiap kali. Guru memberi masa kepada murid memerhati bahan dan menjawab tanpa tekanan, serta memperagakan tindakan selamat sebelum memulakan aktiviti.",
       "aktiviti_utama": [
-        "Murid memerhati dan meniru setiap arahan bersama tindakan.",
-        "Guru memberi arahan secara rawak; murid melakukan tindakan yang sepadan.",
-        "Secara berpasangan, murid bergilir memberikan satu arahan dan menunjukkan tindakannya."
+        "Murid memerhati dan meniru setiap arahan bersama tindakan. Guru membimbing respons melalui gerakan tangan sebelum menyebut arahan bahasa Inggeris tanpa isyarat. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Guru memberi arahan secara rawak; murid melakukan tindakan yang sepadan. Murid mempraktikkan sebagai pemberi dan penerima arahan secara bergilir. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Secara berpasangan, murid bergilir memberikan satu arahan dan menunjukkan tindakannya. Guru mengulang arahan yang belum dikuasai dengan suara jelas dan tempo lebih perlahan. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai."
       ],
-      "pengukuhan_penilaian": "Guru memerhati respons tepat untuk empat arahan secara lisan.",
-      "penutup": "Murid menunjukkan arahan kegemaran dan menyebut ungkapan tersebut.",
+      "pengukuhan_penilaian": "Guru memerhati respons tepat untuk empat arahan secara lisan. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
+      "penutup": "Murid menunjukkan arahan kegemaran dan menyebut ungkapan tersebut. Guru meminta satu respons lisan atau tunjuk cara mudah, merumuskan tingkah laku atau kemahiran yang telah dipelajari dan menggalakkan murid mencubanya lagi pada hari berikutnya.",
       "bbm": "Kad arahan bergambar, ruang pergerakan",
-      "assessment_evidence": "Guru memerhati respons tepat untuk empat arahan secara lisan.",
+      "assessment_evidence": "Guru memerhati respons tepat untuk empat arahan secara lisan. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
       "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
       "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
     },
@@ -437,16 +439,16 @@
       "title": "Deria Saintis Cilik",
       "duration_minutes": 60,
       "learning_objective": "Murid menggunakan sekurang-kurangnya dua deria untuk memerihalkan tiga objek selamat.",
-      "set_induksi": "Guru menunjukkan beg misteri berisi objek yang bersih dan tidak tajam.",
+      "set_induksi": "Guru menunjukkan beg misteri berisi objek yang bersih dan tidak tajam. Guru memberi masa kepada murid memerhati bahan dan menjawab tanpa tekanan, serta memperagakan tindakan selamat sebelum memulakan aktiviti.",
       "aktiviti_utama": [
-        "Murid memerhati warna serta bentuk objek dan menerangkannya.",
-        "Murid menyentuh objek untuk membandingkan licin atau kasar tanpa menutup mata wajib.",
-        "Kumpulan mengasingkan tiga objek mengikut satu ciri yang dipersetujui."
+        "Murid memerhati warna serta bentuk objek dan menerangkannya. Guru menerangkan larangan merasa atau menghidu bahan tidak dikenal dan meminta murid memerhati dahulu. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Murid menyentuh objek untuk membandingkan licin atau kasar tanpa menutup mata wajib. Murid mengamati sifat yang boleh dilihat atau disentuh tanpa memaksa rakan. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Kumpulan mengasingkan tiga objek mengikut satu ciri yang dipersetujui. Kumpulan mempertahankan satu pengelasan berdasarkan pemerhatian, bukan tekaan. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai."
       ],
-      "pengukuhan_penilaian": "Guru menyemak tiga penerangan ciri objek dengan bukti pemerhatian.",
-      "penutup": "Murid menyebut peraturan keselamatan semasa menggunakan deria.",
+      "pengukuhan_penilaian": "Guru menyemak tiga penerangan ciri objek dengan bukti pemerhatian. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
+      "penutup": "Murid menyebut peraturan keselamatan semasa menggunakan deria. Guru meminta satu respons lisan atau tunjuk cara mudah, merumuskan tingkah laku atau kemahiran yang telah dipelajari dan menggalakkan murid mencubanya lagi pada hari berikutnya.",
       "bbm": "Bola kain, sudu plastik, daun bersih, dulang",
-      "assessment_evidence": "Guru menyemak tiga penerangan ciri objek dengan bukti pemerhatian.",
+      "assessment_evidence": "Guru menyemak tiga penerangan ciri objek dengan bukti pemerhatian. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
       "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
       "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
     },
@@ -461,16 +463,16 @@
       "title": "Corak Warna Ceria",
       "duration_minutes": 60,
       "learning_objective": "Murid melengkapkan dua pola warna berulang menggunakan bahan manipulatif.",
-      "set_induksi": "Guru menyusun corak merah-biru-merah-biru dan meminta murid meramal sambungannya.",
+      "set_induksi": "Guru menyusun corak merah-biru-merah-biru dan meminta murid meramal sambungannya. Guru memberi masa kepada murid memerhati bahan dan menjawab tanpa tekanan, serta memperagakan tindakan selamat sebelum memulakan aktiviti.",
       "aktiviti_utama": [
-        "Murid meniru pola dua warna menggunakan penutup botol bersih.",
-        "Murid melengkapkan pola yang mempunyai dua ruang kosong.",
-        "Murid mencipta pola sendiri dan meminta pasangan meneruskan corak."
+        "Murid meniru pola dua warna menggunakan penutup botol bersih. Guru memperlihatkan dua contoh pola dan satu susunan bukan pola untuk dibandingkan. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Murid melengkapkan pola yang mempunyai dua ruang kosong. Murid menyebut aturan warna berulang sebelum menampal atau menyusun kepingan baharu. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Murid mencipta pola sendiri dan meminta pasangan meneruskan corak. Pasangan meneruskan pola rakan dan menjelaskan langkah yang digunakan untuk meramal warna seterusnya. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai."
       ],
-      "pengukuhan_penilaian": "Guru menyemak dua pola lengkap dan urutan ciptaan murid.",
-      "penutup": "Murid menerangkan secara lisan unit warna yang berulang.",
+      "pengukuhan_penilaian": "Guru menyemak dua pola lengkap dan urutan ciptaan murid. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
+      "penutup": "Murid menerangkan secara lisan unit warna yang berulang. Guru meminta satu respons lisan atau tunjuk cara mudah, merumuskan tingkah laku atau kemahiran yang telah dipelajari dan menggalakkan murid mencubanya lagi pada hari berikutnya.",
       "bbm": "Kad warna, penutup botol bersih, jalur pola",
-      "assessment_evidence": "Guru menyemak dua pola lengkap dan urutan ciptaan murid.",
+      "assessment_evidence": "Guru menyemak dua pola lengkap dan urutan ciptaan murid. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
       "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
       "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
     },
@@ -485,16 +487,16 @@
       "title": "Kelas Impian Kita",
       "duration_minutes": 60,
       "learning_objective": "Murid menghasilkan satu poster ringkas dan menyatakan dua ciri kelas yang selesa.",
-      "set_induksi": "Guru menunjukkan gambar ruang kelas bersih dan sudut bacaan.",
+      "set_induksi": "Guru menunjukkan gambar ruang kelas bersih dan sudut bacaan. Guru memberi masa kepada murid memerhati bahan dan menjawab tanpa tekanan, serta memperagakan tindakan selamat sebelum memulakan aktiviti.",
       "aktiviti_utama": [
-        "Murid mengenal pasti tempat menyimpan buku, sudut bacaan dan tong sampah.",
-        "Kumpulan melukis poster kelas impian dengan dua ciri yang dipersetujui.",
-        "Wakil kumpulan menerangkan poster menggunakan ayat mudah dan mendengar soalan rakan."
+        "Murid mengenal pasti tempat menyimpan buku, sudut bacaan dan tong sampah. Guru memberi ruang kepada setiap murid menyatakan satu idea sebelum kumpulan mula melukis. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Kumpulan melukis poster kelas impian dengan dua ciri yang dipersetujui. Kumpulan membahagi peranan melakar, mewarna dan menjelaskan tanpa meninggalkan ahli. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai.",
+        "Wakil kumpulan menerangkan poster menggunakan ayat mudah dan mendengar soalan rakan. Murid mendengar soalan rakan tentang poster lalu mempertahankan dua ciri kelas yang selesa. Guru bergerak memerhati penyertaan setiap murid, memberi sokongan berperingkat dan memastikan murid yang kurang yakin turut mendapat giliran yang sesuai."
       ],
-      "pengukuhan_penilaian": "Guru menilai dua ciri kelas dan perkongsian lisan murid.",
-      "penutup": "Murid memilih satu amalan menjaga kelas yang akan dilakukan.",
+      "pengukuhan_penilaian": "Guru menilai dua ciri kelas dan perkongsian lisan murid. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
+      "penutup": "Murid memilih satu amalan menjaga kelas yang akan dilakukan. Guru meminta satu respons lisan atau tunjuk cara mudah, merumuskan tingkah laku atau kemahiran yang telah dipelajari dan menggalakkan murid mencubanya lagi pada hari berikutnya.",
       "bbm": "Kertas mahjung, krayon, gambar kelas",
-      "assessment_evidence": "Guru menilai dua ciri kelas dan perkongsian lisan murid.",
+      "assessment_evidence": "Guru menilai dua ciri kelas dan perkongsian lisan murid. Guru menjalankan cubaan individu ringkas, merekod bukti yang boleh diperhatikan dan memberi pembetulan atau penguatan segera tanpa membandingkan murid antara satu sama lain.",
       "sk_sp_status": "NOT_APPLICABLE_SPECIAL_ACTIVITY",
       "source_pattern": "ORIGINAL_CIKGULAJU_TRANSITION_KPM_PHASE_GUIDANCE"
     },
@@ -507,25 +509,22 @@
         2
       ],
       "level": "Tahun 1–2",
-      "title": "Stesen Ilmu",
+      "title": "Stesen Bahasa: Kata, Ayat dan Makna",
       "subject_options": [
-        "Bahasa Melayu",
-        "Bahasa Inggeris",
-        "Matematik",
-        "Sains"
+        "Bahasa Melayu"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid melengkapkan tiga stesen padanan gambar, perkataan dan bilangan dengan sekurang-kurangnya tiga jawapan tepat.",
-      "set_induksi": "Guru menunjukkan cara berpindah dari satu stesen ke stesen lain.",
+      "learning_objective": "Murid mengelaskan sekurang-kurangnya enam perkataan dan membina tiga ayat mudah berdasarkan gambar dengan sebutan jelas.",
+      "set_induksi": "Guru memperlihatkan kad gambar buah, haiwan dan peralatan kelas. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Murid memadankan enam gambar dengan perkataan mudah di stesen pertama.",
-        "Murid membilang objek konkrit dan memilih kad angka sepadan di stesen kedua.",
-        "Murid menyusun tiga kad gambar sebab-akibat mudah di stesen ketiga."
+        "Guru memodelkan cara memadankan enam gambar dengan kata nama serta menyebut suku kata secara berpandu. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid menyusun kad subjek, kata kerja dan objek menjadi tiga ayat gramatis; pasangan membacanya kuat. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid menghasilkan tiga ayat berpandukan gambar baharu dan menanda huruf besar serta tanda noktah. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru mengumpul kad rekod tiga stesen dan mengesahkan jawapan tepat.",
-      "penutup": "Murid menampal simbol bintang pada stesen yang paling mereka kuasai.",
-      "bbm": "Kad gambar, kad perkataan, objek pengira, kad rekod",
-      "assessment_evidence": "Guru mengumpul kad rekod tiga stesen dan mengesahkan jawapan tepat.",
+      "pengukuhan_penilaian": "Guru meneliti enam padanan kata dan tiga ayat yang dibaca jelas. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui stesen bahasa: kata, ayat dan makna. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "kad gambar, kad perkataan, jalur ayat, pen penanda",
+      "assessment_evidence": "Guru meneliti enam padanan kata dan tiga ayat yang dibaca jelas. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -538,25 +537,22 @@
         4
       ],
       "level": "Tahun 3–4",
-      "title": "Stesen Ilmu",
+      "title": "Stesen Bahasa: Kata, Ayat dan Makna",
       "subject_options": [
-        "Bahasa Melayu",
-        "Bahasa Inggeris",
-        "Matematik",
-        "Sains"
+        "Bahasa Melayu"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid menyelesaikan tiga stesen bacaan, pengiraan dan penjelasan dengan alasan ringkas.",
-      "set_induksi": "Guru memperagakan penggunaan kad rekod stesen.",
+      "learning_objective": "Murid mengesan isi penting petikan dan menulis satu perenggan empat hingga lima ayat menggunakan kosa kata tepat.",
+      "set_induksi": "Guru memperlihatkan petikan naratif ringkas tentang aktiviti gotong-royong kelas. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Murid membaca petikan pendek lalu memilih tiga maklumat benar.",
-        "Murid menyelesaikan dua soalan situasi nombor melibatkan operasi yang telah dipelajari.",
-        "Murid mengelaskan bahan berdasarkan ciri dan menulis satu sebab pengelasan."
+        "Guru memodelkan cara membaca petikan bergilir dan menggariskan empat kata kunci serta dua isi penting. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid menyusun kad peristiwa mengikut urutan dan membina ayat penghubung menggunakan penanda wacana. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid menulis perenggan ringkas tentang pengalaman menjaga kelas lalu menyunting ejaan bersama pasangan. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menyemak kad rekod bagi jawapan dan justifikasi pengelasan.",
-      "penutup": "Murid membetulkan satu jawapan selepas maklum balas rakan.",
-      "bbm": "Kad petikan, kad masalah, bahan pengelasan, kad rekod",
-      "assessment_evidence": "Guru menyemak kad rekod bagi jawapan dan justifikasi pengelasan.",
+      "pengukuhan_penilaian": "Guru meneliti peta isi, ayat penghubung dan perenggan yang disunting. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui stesen bahasa: kata, ayat dan makna. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "petikan bercetak, kad urutan, peta minda, pen warna",
+      "assessment_evidence": "Guru meneliti peta isi, ayat penghubung dan perenggan yang disunting. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -569,25 +565,22 @@
         6
       ],
       "level": "Tahun 5–6",
-      "title": "Stesen Ilmu",
+      "title": "Stesen Bahasa: Kata, Ayat dan Makna",
       "subject_options": [
-        "Bahasa Melayu",
-        "Bahasa Inggeris",
-        "Matematik",
-        "Sains"
+        "Bahasa Melayu"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid menyelesaikan tiga cabaran integrasi serta mempertahankan satu keputusan berasaskan bukti.",
-      "set_induksi": "Guru membentangkan persoalan tentang penggunaan sumber di sekolah.",
+      "learning_objective": "Murid membuat inferens berasaskan teks dan menghasilkan ulasan ringkas dengan sekurang-kurangnya dua bukti tepat.",
+      "set_induksi": "Guru memperlihatkan rencana pendek tentang amalan membaca dan petikan pendapat murid. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Kumpulan meneliti jadual ringkas dan mengenal pasti dua pola data.",
-        "Murid mengira kos atau kuantiti pilihan tindakan berdasarkan data yang diberikan.",
-        "Kumpulan mencadangkan penyelesaian, menulis justifikasi dan menguji hujah rakan."
+        "Guru memodelkan cara menentukan idea utama, fakta sokongan dan maksud dua kosa kata berdasarkan konteks rencana. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid membandingkan dua pendapat dan menggariskan bukti yang menyokong atau menyangkal hujah tersebut. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid menulis ulasan enam hingga lapan ayat menggunakan penanda wacana, kemudian mempertahankan pilihan bukti dalam perbincangan. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menggunakan rubrik kesahihan pengiraan, bukti dan penjelasan.",
-      "penutup": "Murid mencatat satu penambahbaikan kepada keputusan kumpulan.",
-      "bbm": "Kad data, jadual angka, kertas A3, rubrik",
-      "assessment_evidence": "Guru menggunakan rubrik kesahihan pengiraan, bukti dan penjelasan.",
+      "pengukuhan_penilaian": "Guru meneliti ulasan yang mengandungi pendirian, dua bukti teks dan pembetulan bahasa. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui stesen bahasa: kata, ayat dan makna. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "rencana bercetak, pen penanda, lembaran ulasan, rubrik",
+      "assessment_evidence": "Guru meneliti ulasan yang mengandungi pendirian, dua bukti teks dan pembetulan bahasa. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -600,22 +593,22 @@
         2
       ],
       "level": "Tahun 1–2",
-      "title": "Kuiz Juara Kelas",
+      "title": "English Word Quest: Vocabulary and Communication",
       "subject_options": [
-        "Semua subjek"
+        "Bahasa Inggeris"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid menjawab sekurang-kurangnya empat daripada enam soalan gambar atau lisan berdasarkan pembelajaran lepas.",
-      "set_induksi": "Guru menunjukkan kuiz contoh menggunakan gambar besar.",
+      "learning_objective": "Murid menyebut enam perkataan sasaran dan menggunakan tiga ungkapan mudah dalam dialog berpasangan.",
+      "set_induksi": "Guru memperlihatkan picture cards of school objects and daily classroom actions. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Murid memilih kad jawapan bagi tiga soalan pengecaman.",
-        "Pasangan murid berbincang jawapan tiga soalan mudah dan mengangkat kad pilihan.",
-        "Murid menerangkan satu jawapan dengan menunjuk bahan sebenar."
+        "Guru memodelkan cara listening to teacher-modelled words, repeating sounds and matching six spoken words to picture cards. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid playing a pair information-gap game by asking 'What is this?' and answering in short phrases. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid performing a three-turn classroom dialogue using picture prompts and checking pronunciation with a partner. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menanda enam respons individu menggunakan kad rekod.",
-      "penutup": "Murid memilih satu soalan yang mahu dicuba semula.",
-      "bbm": "Kad gambar, kad A/B, objek contoh",
-      "assessment_evidence": "Guru menanda enam respons individu menggunakan kad rekod.",
+      "pengukuhan_penilaian": "Guru meneliti six picture-word responses and three understandable spoken turns. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui english word quest: vocabulary and communication. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "picture cards, word cards, dialogue strips",
+      "assessment_evidence": "Guru meneliti six picture-word responses and three understandable spoken turns. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -628,22 +621,22 @@
         4
       ],
       "level": "Tahun 3–4",
-      "title": "Kuiz Juara Kelas",
+      "title": "English Word Quest: Vocabulary and Communication",
       "subject_options": [
-        "Semua subjek"
+        "Bahasa Inggeris"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid menyelesaikan lapan soalan pelbagai bentuk dan membetulkan dua kesilapan dengan sebab.",
-      "set_induksi": "Guru menerangkan peraturan kuiz berkumpulan tanpa penyingkiran.",
+      "learning_objective": "Murid membaca petikan bahasa Inggeris dan membina lima ayat yang mempunyai kosa kata serta bentuk tatabahasa sesuai.",
+      "set_induksi": "Guru memperlihatkan a short reading passage about a school club and a simple timetable. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Murid menjawab empat soalan objektif secara individu.",
-        "Pasangan menyelesaikan dua soalan terbuka dan membandingkan strategi.",
-        "Kumpulan mencipta dua soalan berdasarkan topik yang telah dipelajari untuk kumpulan lain."
+        "Guru memodelkan cara reading the passage for gist before locating five details and highlighting present-tense verb forms. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid completing a pair dialogue in which pupils ask and answer questions about activities and times. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid writing five connected sentences for a school-club invitation and peer-checking spelling, verbs and punctuation. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menilai ketepatan jawapan dan pembetulan dua soalan.",
-      "penutup": "Murid berkongsi strategi semakan jawapan.",
-      "bbm": "Kad kuiz, papan mini, lembaran skor",
-      "assessment_evidence": "Guru menilai ketepatan jawapan dan pembetulan dua soalan.",
+      "pengukuhan_penilaian": "Guru meneliti five details, completed dialogue and coherent short invitation. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui english word quest: vocabulary and communication. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "reading passage, timetable card, language frame, editing checklist",
+      "assessment_evidence": "Guru meneliti five details, completed dialogue and coherent short invitation. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -656,22 +649,22 @@
         6
       ],
       "level": "Tahun 5–6",
-      "title": "Kuiz Juara Kelas",
+      "title": "English Word Quest: Vocabulary and Communication",
       "subject_options": [
-        "Semua subjek"
+        "Bahasa Inggeris"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid menjawab soalan aras aplikasi dan membina dua soalan yang mempunyai jawapan beralasan.",
-      "set_induksi": "Guru mempamerkan contoh soalan fakta berbanding soalan alasan.",
+      "learning_objective": "Murid membandingkan maklumat daripada dua sumber dan menyampaikan cadangan dalam bahasa Inggeris dengan sebab yang jelas.",
+      "set_induksi": "Guru memperlihatkan two English-language notices advertising different school activities. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Kumpulan menjawab empat soalan situasi yang memerlukan pemilihan strategi.",
-        "Murid menulis dua soalan aplikasi berpandukan kes sebenar yang dibekalkan.",
-        "Kumpulan lain menjawab dan mengkritik kewajaran jawapan menggunakan bukti."
+        "Guru memodelkan cara skimming both notices, identifying key information and explaining differences in purpose and audience. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid conducting a small-group discussion using evidence, comparative expressions and polite turn-taking. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid writing a persuasive recommendation of 80-100 words and delivering a one-minute explanation to peers. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menilai alasan, bukti dan ketepatan respons dengan rubrik ringkas.",
-      "penutup": "Murid menambah baik satu soalan supaya lebih jelas.",
-      "bbm": "Kad situasi, sumber rujukan kelas, rubrik",
-      "assessment_evidence": "Guru menilai alasan, bukti dan ketepatan respons dengan rubrik ringkas.",
+      "pengukuhan_penilaian": "Guru meneliti accurate comparison, language choices and evidence-backed recommendation. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui english word quest: vocabulary and communication. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "two notices, comparison grid, sentence starters, peer rubric",
+      "assessment_evidence": "Guru meneliti accurate comparison, language choices and evidence-backed recommendation. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -684,24 +677,22 @@
         2
       ],
       "level": "Tahun 1–2",
-      "title": "Pasar Mini",
+      "title": "Pasar Mini: Wang, Operasi dan Bajet",
       "subject_options": [
-        "Matematik",
-        "Bahasa Melayu",
-        "Bahasa Inggeris"
+        "Matematik"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid memilih barang dan menentukan jumlah harga mudah bagi dua pembelian menggunakan wang mainan.",
-      "set_induksi": "Guru mempamerkan label harga RM1 hingga RM5 pada bahan contoh.",
+      "learning_objective": "Murid mengenal pasti nilai wang mainan dan melengkapkan dua urus niaga mudah dengan jumlah harga tepat.",
+      "set_induksi": "Guru memperlihatkan wang mainan dan barangan berlabel RM1 hingga RM5. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Murid mengenal pasti nilai wang mainan dan membaca label harga.",
-        "Secara berpasangan, murid bermain peranan pelanggan dan peniaga bagi dua barangan.",
-        "Murid mengira jumlah harga dan menyemak bayaran menggunakan bahan konkrit."
+        "Guru memodelkan cara membilang wang yang diperlukan bagi dua barangan dan menunjukkan nilai menggunakan syiling atau nota mainan. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid melaksanakan jual beli berpasangan dengan menyebut harga, memilih wang dan mencatat setiap transaksi pada kad. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid menyelesaikan dua masalah jumlah harga dengan manipulatif sebelum menyemak jawapan bersama pasangan. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menyemak dua transaksi dan ungkapan sopan semasa membeli.",
-      "penutup": "Murid menyatakan barang yang mampu dibeli dengan wang tertentu.",
-      "bbm": "Wang mainan, label harga, barang kosong bersih",
-      "assessment_evidence": "Guru menyemak dua transaksi dan ungkapan sopan semasa membeli.",
+      "pengukuhan_penilaian": "Guru meneliti dua rekod pembelian dengan jumlah tepat dan sebutan nilai wang. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui pasar mini: wang, operasi dan bajet. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "wang mainan, barang bersih, label harga, kad resit",
+      "assessment_evidence": "Guru meneliti dua rekod pembelian dengan jumlah tepat dan sebutan nilai wang. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -714,24 +705,22 @@
         4
       ],
       "level": "Tahun 3–4",
-      "title": "Pasar Mini",
+      "title": "Pasar Mini: Wang, Operasi dan Bajet",
       "subject_options": [
-        "Matematik",
-        "Bahasa Melayu",
-        "Bahasa Inggeris"
+        "Matematik"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid mengira jumlah dan baki bagi tiga transaksi serta membandingkan dua pilihan harga.",
-      "set_induksi": "Guru menunjukkan senarai harga dan bajet pelanggan.",
+      "learning_objective": "Murid mengira jumlah harga dan baki wang bagi tiga pembelian serta membandingkan pilihan yang lebih menjimatkan.",
+      "set_induksi": "Guru memperlihatkan katalog mini barangan sekolah dan bajet contoh RM20. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Murid menulis jumlah pembelian dua barang pada lembaran pesanan.",
-        "Murid mengira baki daripada wang diberi menggunakan operasi sesuai.",
-        "Pasangan membandingkan pilihan lebih murah dan menjelaskan sebab."
+        "Guru memodelkan cara memilih tiga barang dan menulis ayat matematik jumlah harga menggunakan tambah dan darab yang sesuai. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid menjalankan simulasi juruwang-pelanggan dengan pengiraan baki; pasangan mengesahkan rekod pembelian. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid membandingkan dua gabungan barang dalam bajet yang sama dan menjelaskan pilihan lebih murah. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menilai tiga rekod transaksi serta ketepatan baki.",
-      "penutup": "Murid mengenal pasti satu cara mengelakkan kesilapan wang.",
-      "bbm": "Wang mainan, katalog harga, resit latihan",
-      "assessment_evidence": "Guru menilai tiga rekod transaksi serta ketepatan baki.",
+      "pengukuhan_penilaian": "Guru meneliti pengiraan jumlah, tiga baki wang dan alasan pemilihan berasaskan nombor. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui pasar mini: wang, operasi dan bajet. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "wang mainan, katalog harga, lembaran resit, kalkulator pilihan",
+      "assessment_evidence": "Guru meneliti pengiraan jumlah, tiga baki wang dan alasan pemilihan berasaskan nombor. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -744,24 +733,22 @@
         6
       ],
       "level": "Tahun 5–6",
-      "title": "Pasar Mini",
+      "title": "Pasar Mini: Wang, Operasi dan Bajet",
       "subject_options": [
-        "Matematik",
-        "Bahasa Melayu",
-        "Bahasa Inggeris"
+        "Matematik"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid menyediakan bajet pembelian dengan diskaun dan justifikasi pilihan yang tidak melebihi had perbelanjaan.",
-      "set_induksi": "Guru memberi senario mengurus RM50 untuk pembelian keperluan kelas.",
+      "learning_objective": "Murid membina dua pelan belian dalam bajet RM50 dengan diskaun dan memilih pilihan yang mempunyai nilai terbaik.",
+      "set_induksi": "Guru memperlihatkan katalog rekaan dengan harga asal, diskaun dinyatakan dan had perbelanjaan RM50. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Kumpulan menyemak katalog dan menentukan harga selepas diskaun yang dinyatakan.",
-        "Murid menyediakan senarai item dalam bajet, termasuk jumlah dan baki.",
-        "Kumpulan membandingkan dua pelan pembelian serta mempertahankan pilihan paling bernilai."
+        "Guru memodelkan cara mengira harga selepas diskaun bagi barang terpilih serta memeriksa operasi dan pembundaran jawapan. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid membina dua set barangan, merekod kos, jumlah dan baki lalu membincangkan kompromi antara harga dan keperluan. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid membentangkan pelan belian beralasan dengan jadual perbandingan dan menjawab soalan semakan daripada kumpulan lain. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menilai pengiraan diskaun, pematuhan bajet dan alasan pembelian.",
-      "penutup": "Murid mencadangkan pengurangan kos tanpa mengabaikan keperluan.",
-      "bbm": "Katalog rekaan, kalkulator pilihan, lembaran bajet",
-      "assessment_evidence": "Guru menilai pengiraan diskaun, pematuhan bajet dan alasan pembelian.",
+      "pengukuhan_penilaian": "Guru meneliti dua jadual bajet, baki tepat dan justifikasi perbandingan harga. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui pasar mini: wang, operasi dan bajet. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "katalog harga, label diskaun, lembaran bajet, kalkulator pilihan",
+      "assessment_evidence": "Guru meneliti dua jadual bajet, baki tepat dan justifikasi perbandingan harga. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -774,25 +761,22 @@
         2
       ],
       "level": "Tahun 1–2",
-      "title": "Misi Peta Sekolah",
+      "title": "Misi Gerak dan Orientasi Ruang",
       "subject_options": [
-        "Bahasa Melayu",
-        "Bahasa Inggeris",
-        "Matematik",
         "Pendidikan Jasmani"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid mengikuti dan memberi dua arahan kedudukan menggunakan peta bergambar.",
-      "set_induksi": "Guru menunjuk gambar kelas, kantin dan perpustakaan.",
+      "learning_objective": "Murid melaksanakan tiga kemahiran lokomotor mudah melalui laluan selamat mengikut isyarat guru.",
+      "set_induksi": "Guru memperlihatkan kon, gelung dan peta bergambar stesen pergerakan di kawasan lapang. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Murid meletakkan simbol di atas peta lantai mengikut arahan depan, belakang dan sebelah.",
-        "Pasangan memberi arahan menuju dua tempat menggunakan kata arah mudah.",
-        "Murid melukis satu laluan selamat pada pelan ringkas."
+        "Guru memodelkan cara mendemonstrasikan berjalan pantas, melompat rendah dan bergerak sisi dengan kawalan imbangan dan jarak selamat. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid melengkapkan tiga stesen dalam kumpulan kecil secara bergilir sambil seorang rakan memerhati kesediaan ruang. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid mengikuti laluan mudah berdasarkan kad arah, kemudian menunjukkan cara berhenti dan memberi ruang kepada rakan. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menyemak ketepatan dua laluan dan penggunaan kata arah.",
-      "penutup": "Murid menyatakan satu langkah selamat bergerak di sekolah.",
-      "bbm": "Pelan bergambar, penanda lantai, kad lokasi",
-      "assessment_evidence": "Guru menyemak ketepatan dua laluan dan penggunaan kata arah.",
+      "pengukuhan_penilaian": "Guru meneliti pemerhatian tiga kemahiran, kawalan imbangan dan patuh isyarat keselamatan. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui misi gerak dan orientasi ruang. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "kon lembut, gelung, wisel, kad arah, senarai semak",
+      "assessment_evidence": "Guru meneliti pemerhatian tiga kemahiran, kawalan imbangan dan patuh isyarat keselamatan. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -805,25 +789,22 @@
         4
       ],
       "level": "Tahun 3–4",
-      "title": "Misi Peta Sekolah",
+      "title": "Misi Gerak dan Orientasi Ruang",
       "subject_options": [
-        "Bahasa Melayu",
-        "Bahasa Inggeris",
-        "Matematik",
         "Pendidikan Jasmani"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid mentafsir peta sekolah dan menerangkan dua laluan dengan sekurang-kurangnya empat arahan.",
-      "set_induksi": "Guru memperkenalkan petunjuk simbol dan titik mula pada pelan.",
+      "learning_objective": "Murid menggabungkan empat pergerakan lokomotor dan bukan lokomotor dengan koordinasi serta kerjasama.",
+      "set_induksi": "Guru memperlihatkan peta laluan stesen yang memerlukan imbangan, pusingan dan perubahan arah. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Murid membaca simbol pada peta dan mencari lokasi sasaran.",
-        "Kumpulan merancang laluan melalui tiga tempat dengan menggunakan arah yang tepat.",
-        "Pasangan menulis empat arahan perjalanan dan mengujinya pada peta rakan."
+        "Guru memodelkan cara berlatih larian terkawal, imbangan statik dan lompat mendarat dengan teknik selamat yang dimodelkan guru. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid menjalankan cabaran stesen berpasukan; murid memerhati giliran dan memberi maklum balas pada kedudukan badan. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid mencipta urutan empat pergerakan dan memperagakannya tanpa melanggar jarak selamat atau mengejar masa berlebihan. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menyemak urutan arahan dan pematuhan petunjuk peta.",
-      "penutup": "Murid membaiki satu arahan yang mengelirukan.",
-      "bbm": "Peta sekolah, kad simbol, lembaran laluan",
-      "assessment_evidence": "Guru menyemak urutan arahan dan pematuhan petunjuk peta.",
+      "pengukuhan_penilaian": "Guru meneliti teknik pendaratan, urutan empat pergerakan dan kepatuhan peraturan. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui misi gerak dan orientasi ruang. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "kon, tikar sesuai, kad stesen, rubrik pergerakan",
+      "assessment_evidence": "Guru meneliti teknik pendaratan, urutan empat pergerakan dan kepatuhan peraturan. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -836,25 +817,22 @@
         6
       ],
       "level": "Tahun 5–6",
-      "title": "Misi Peta Sekolah",
+      "title": "Misi Gerak dan Orientasi Ruang",
       "subject_options": [
-        "Bahasa Melayu",
-        "Bahasa Inggeris",
-        "Matematik",
         "Pendidikan Jasmani"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid membandingkan dua laluan berdasarkan jarak anggaran dan keselamatan lalu memilih laluan terbaik.",
-      "set_induksi": "Guru memberikan peta grid dan maklumat halangan pada beberapa laluan.",
+      "learning_objective": "Murid mereka bentuk laluan kecergasan berstesen dan menguji kesesuaian aktiviti berdasarkan keselamatan serta intensiti.",
+      "set_induksi": "Guru memperlihatkan contoh pelan kecergasan lima stesen dan kriteria ruang, beban serta tempoh senaman. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Kumpulan menandakan dua pilihan laluan antara empat lokasi.",
-        "Murid menganggarkan jarak berdasarkan petak grid dan mengenal pasti risiko.",
-        "Kumpulan membentangkan pilihan paling selamat dengan bukti jarak dan halangan."
+        "Guru memodelkan cara menganalisis risiko di setiap stesen dan mempraktikkan teknik pemanasan badan sebelum tugasan. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid merancang serta menjalankan stesen intensiti sederhana dengan rehat mencukupi dan pemantauan pasangan. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid menilai pelan kumpulan berdasarkan keselamatan, kebolehgunaan dan kadar usaha, kemudian membentangkan penambahbaikan. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menilai pengiraan, pertimbangan keselamatan serta justifikasi.",
-      "penutup": "Murid menulis satu keadaan yang boleh mengubah laluan pilihan.",
-      "bbm": "Peta grid, kad risiko, pembaris, kertas graf",
-      "assessment_evidence": "Guru menilai pengiraan, pertimbangan keselamatan serta justifikasi.",
+      "pengukuhan_penilaian": "Guru meneliti pelan lima stesen, teknik selamat, pemantauan rakan dan cadangan penambahbaikan. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui misi gerak dan orientasi ruang. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "kon, jam randik, kad risiko, helaian pelan kecergasan",
+      "assessment_evidence": "Guru meneliti pelan lima stesen, teknik selamat, pemantauan rakan dan cadangan penambahbaikan. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -867,24 +845,22 @@
         2
       ],
       "level": "Tahun 1–2",
-      "title": "Cabaran Baca dan Cerita",
+      "title": "Cerita Gambar dan Dialog Bahasa Arab",
       "subject_options": [
-        "Bahasa Melayu",
-        "Bahasa Inggeris",
         "Bahasa Arab"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid membaca atau mendengar cerita pendek lalu menyusun tiga peristiwa dengan betul.",
-      "set_induksi": "Guru membacakan cerita bergambar dengan intonasi sesuai.",
+      "learning_objective": "Murid menyebut sekurang-kurangnya enam kosa kata bahasa Arab yang telah dipelajari dan membina dialog dua giliran.",
+      "set_induksi": "Guru memperlihatkan kad gambar objek kelas dengan sebutan kosa kata Arab yang telah dipelajari. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Murid menunjuk watak dan tempat dalam gambar cerita.",
-        "Murid menyusun tiga kad peristiwa mengikut jalan cerita.",
-        "Secara berpasangan, murid menceritakan semula dengan ayat pendek atau kata kunci."
+        "Guru memodelkan cara mendengar model sebutan guru lalu memilih gambar dan mengulang kosa kata dengan jelas. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid melengkapkan kad dialog pendek dengan pilihan kosa kata yang sesuai bersama pasangan. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid memainkan peranan bertanya dan menjawab dua giliran menggunakan gambar tanpa memaksa murid menghafal ayat baharu yang belum diajar. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menilai susunan tiga peristiwa dan respons lisan.",
-      "penutup": "Murid memilih satu watak yang disukai dan menjelaskan dengan satu sebab.",
-      "bbm": "Buku cerita bergambar, kad peristiwa",
-      "assessment_evidence": "Guru menilai susunan tiga peristiwa dan respons lisan.",
+      "pengukuhan_penilaian": "Guru meneliti enam pengecaman kosa kata dan dua giliran dialog yang boleh difahami. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui cerita gambar dan dialog bahasa arab. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "kad gambar, kad kosa kata Arab semakan guru, jalur dialog",
+      "assessment_evidence": "Guru meneliti enam pengecaman kosa kata dan dua giliran dialog yang boleh difahami. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -897,24 +873,22 @@
         4
       ],
       "level": "Tahun 3–4",
-      "title": "Cabaran Baca dan Cerita",
+      "title": "Cerita Gambar dan Dialog Bahasa Arab",
       "subject_options": [
-        "Bahasa Melayu",
-        "Bahasa Inggeris",
         "Bahasa Arab"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid mengenal pasti isi penting dan menyampaikan ringkasan cerita empat hingga lima ayat.",
-      "set_induksi": "Guru memperkenalkan peta cerita watak, masalah dan penyelesaian.",
+      "learning_objective": "Murid membaca dan melakonkan dialog pendek bahasa Arab menggunakan sekurang-kurangnya empat ungkapan yang telah dipelajari.",
+      "set_induksi": "Guru memperlihatkan dialog bergambar mengenai rutin harian dengan kosa kata sedia ada. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Murid membaca cerita pendek secara berpandu dan menanda maklumat utama.",
-        "Pasangan melengkapkan peta cerita dengan bukti daripada teks.",
-        "Murid membina ringkasan empat hingga lima ayat lalu membacakannya."
+        "Guru memodelkan cara membaca dialog secara berpandu serta memadankan empat ungkapan dengan gambar situasi. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid menyusun urutan dialog yang dipecahkan dan mempraktikkan intonasi dengan pasangan. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid mengubah satu bahagian dialog bagi situasi baharu serta membuat persembahan kumpulan kecil. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menilai ketepatan isi dan urutan ringkasan.",
-      "penutup": "Murid mencadangkan tajuk alternatif yang sesuai.",
-      "bbm": "Teks cerita, peta grafik, pen penanda",
-      "assessment_evidence": "Guru menilai ketepatan isi dan urutan ringkasan.",
+      "pengukuhan_penilaian": "Guru meneliti susunan dialog yang benar, sebutan dan penggunaan empat ungkapan. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui cerita gambar dan dialog bahasa arab. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "teks dialog semakan guru, kad situasi, kad giliran",
+      "assessment_evidence": "Guru meneliti susunan dialog yang benar, sebutan dan penggunaan empat ungkapan. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -927,24 +901,22 @@
         6
       ],
       "level": "Tahun 5–6",
-      "title": "Cabaran Baca dan Cerita",
+      "title": "Cerita Gambar dan Dialog Bahasa Arab",
       "subject_options": [
-        "Bahasa Melayu",
-        "Bahasa Inggeris",
         "Bahasa Arab"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid menilai tindakan watak dengan dua bukti daripada teks serta mencipta pengakhiran alternatif.",
-      "set_induksi": "Guru menayangkan dua pilihan tindakan watak pada kad situasi.",
+      "learning_objective": "Murid memahami dua petikan ringkas bahasa Arab dan menghasilkan dialog berkaitan dengan respons bersebab.",
+      "set_induksi": "Guru memperlihatkan dua teks pendek tentang kegiatan sekolah yang telah dikenal kosa katanya. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Murid membaca petikan dan mengenal pasti konflik serta motif watak.",
-        "Kumpulan meneliti dua bukti teks untuk menyokong atau mencabar tindakan watak.",
-        "Murid menulis pengakhiran baharu dan membentangkan sebab perubahan."
+        "Guru memodelkan cara membaca dua petikan dan mencatat perbezaan maklumat serta kata kunci yang membantu pemahaman. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid merancang dialog soal jawab berpandukan maklumat petikan dengan peranan serta giliran yang jelas. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid melakonkan dialog enam hingga lapan giliran dan memberi maklum balas terhadap ketepatan kosa kata serta kefahaman. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menilai bukti tekstual, koheren dan alasan pengakhiran.",
-      "penutup": "Murid menulis satu pengajaran yang boleh diaplikasi dalam kehidupan.",
-      "bbm": "Petikan naratif, kad bukti, rubrik ringkas",
-      "assessment_evidence": "Guru menilai bukti tekstual, koheren dan alasan pengakhiran.",
+      "pengukuhan_penilaian": "Guru meneliti ketepatan maklumat, dialog dan respons lisan yang selaras dengan teks. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui cerita gambar dan dialog bahasa arab. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "dua petikan yang disahkan guru, kad peranan, rubrik komunikasi",
+      "assessment_evidence": "Guru meneliti ketepatan maklumat, dialog dan respons lisan yang selaras dengan teks. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -957,24 +929,22 @@
         2
       ],
       "level": "Tahun 1–2",
-      "title": "Cabaran Reka Cipta",
+      "title": "Cabaran Reka Cipta: Lakaran, Bina dan Uji",
       "subject_options": [
-        "Sains",
-        "Reka Bentuk dan Teknologi",
-        "Pendidikan Seni Visual"
+        "Reka Bentuk dan Teknologi"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid membina objek mudah yang berdiri menggunakan bahan terpakai serta menamakan dua bahan.",
-      "set_induksi": "Guru menunjukkan binaan kertas yang mudah tumbang dan kukuh.",
+      "learning_objective": "Murid menghasilkan binaan ringkas menggunakan bahan selamat serta menjelaskan dua ciri kestabilannya.",
+      "set_induksi": "Guru memperlihatkan menara daripada cawan kertas yang kukuh dan satu binaan yang mudah tumbang. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Murid memerhati bentuk tapak binaan contoh.",
-        "Kumpulan membina menara daripada cawan kertas dengan giliran kerja yang jelas.",
-        "Murid menguji kestabilan dan mengubah satu bahagian yang tidak kukuh."
+        "Guru memodelkan cara memerhati bentuk tapak binaan lalu melakar pilihan menara menggunakan garis mudah. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid membina menara secara berkumpulan dengan giliran jelas, menggunakan cawan kertas dan pita yang disediakan. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid menguji kestabilan menggunakan sentuhan ringan, mengubah tapak dan menerangkan sebab perubahan. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru memerhati ujian kestabilan dan meminta murid menamakan dua bahan.",
-      "penutup": "Murid menyebut satu ciri binaan yang lebih stabil.",
-      "bbm": "Cawan kertas, pita kertas, kadbod",
-      "assessment_evidence": "Guru memerhati ujian kestabilan dan meminta murid menamakan dua bahan.",
+      "pengukuhan_penilaian": "Guru meneliti lakaran ringkas, binaan kukuh dan dua penerangan fungsi tapak. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui cabaran reka cipta: lakaran, bina dan uji. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "cawan kertas, kadbod, pita kertas, kertas lakaran",
+      "assessment_evidence": "Guru meneliti lakaran ringkas, binaan kukuh dan dua penerangan fungsi tapak. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -987,24 +957,22 @@
         4
       ],
       "level": "Tahun 3–4",
-      "title": "Cabaran Reka Cipta",
+      "title": "Cabaran Reka Cipta: Lakaran, Bina dan Uji",
       "subject_options": [
-        "Sains",
-        "Reka Bentuk dan Teknologi",
-        "Pendidikan Seni Visual"
+        "Reka Bentuk dan Teknologi"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid membina prototaip yang memenuhi dua kriteria dan merekod hasil dua ujian.",
-      "set_induksi": "Guru memperkenalkan cabaran membina jambatan kertas untuk beban kecil.",
+      "learning_objective": "Murid menghasilkan prototaip jambatan kertas dengan dua kriteria reka bentuk dan rekod hasil ujian.",
+      "set_induksi": "Guru memperlihatkan model jambatan kertas dan tugasan menyokong beban ringan secara selamat. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Kumpulan melakar reka bentuk dan memilih bahan.",
-        "Murid membina jambatan kertas serta menguji beban menggunakan objek seragam.",
-        "Kumpulan menambah baik satu bahagian berdasarkan keputusan dua ujian."
+        "Guru memodelkan cara menghasilkan dua lakaran yang berbeza serta mengenal pasti bahan dan cara sambungan. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid membina reka bentuk pilihan, kemudian menguji dengan objek beban seragam serta merekod bilangan yang disokong. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid menambah baik satu komponen berdasarkan data ujian dan membandingkan hasil sebelum dengan selepas. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menyemak lakaran, rekod ujian dan pematuhan kriteria.",
-      "penutup": "Murid menerangkan penambahbaikan yang paling berkesan.",
-      "bbm": "Kertas, pita, pembaris, objek beban ringan",
-      "assessment_evidence": "Guru menyemak lakaran, rekod ujian dan pematuhan kriteria.",
+      "pengukuhan_penilaian": "Guru meneliti dua lakaran, rekod beban, satu penambahbaikan berasas. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui cabaran reka cipta: lakaran, bina dan uji. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "kertas, kadbod, pita, pembaris, objek beban ringan, lembaran ujian",
+      "assessment_evidence": "Guru meneliti dua lakaran, rekod beban, satu penambahbaikan berasas. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -1017,24 +985,22 @@
         6
       ],
       "level": "Tahun 5–6",
-      "title": "Cabaran Reka Cipta",
+      "title": "Cabaran Reka Cipta: Lakaran, Bina dan Uji",
       "subject_options": [
-        "Sains",
-        "Reka Bentuk dan Teknologi",
-        "Pendidikan Seni Visual"
+        "Reka Bentuk dan Teknologi"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid menghasilkan prototaip bagi masalah sebenar, membandingkan dua reka bentuk dan menjustifikasikan penambahbaikan.",
-      "set_induksi": "Guru memberi masalah mereka bentuk bekas pelindung barang kecil.",
+      "learning_objective": "Murid menyelesaikan masalah reka bentuk menggunakan spesifikasi kos, fungsi dan keselamatan yang diberi.",
+      "set_induksi": "Guru memperlihatkan senario menghasilkan pemegang alat tulis daripada bahan terpakai yang stabil. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Kumpulan menetapkan kriteria kos, keselamatan dan fungsi sebelum melakar dua reka bentuk.",
-        "Murid memilih satu reka bentuk dan membina prototaip menggunakan bahan tersedia.",
-        "Kumpulan menguji fungsi, merekod kelemahan dan mengubah suai reka bentuk."
+        "Guru memodelkan cara menganalisis keperluan pengguna, melakar dua idea dan menjelaskan pilihan berdasarkan kriteria. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid membina prototaip berskala mudah, merekod bahan digunakan dan menjalankan ujian fungsi secara terkawal. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid membandingkan data ujian dengan spesifikasi asal lalu membentangkan pelarasan reka bentuk dan rasional kos. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menilai pematuhan kriteria, data ujian serta alasan pemilihan.",
-      "penutup": "Murid menerangkan kompromi antara kos dan fungsi.",
-      "bbm": "Kadbod, kertas, pita, alat ukur, lembaran ujian",
-      "assessment_evidence": "Guru menilai pematuhan kriteria, data ujian serta alasan pemilihan.",
+      "pengukuhan_penilaian": "Guru meneliti spesifikasi, dua lakaran, rekod kos dan ujian serta justifikasi penambahbaikan. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui cabaran reka cipta: lakaran, bina dan uji. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "bahan terpakai bersih, alat ukur, helaian spesifikasi, rubrik",
+      "assessment_evidence": "Guru meneliti spesifikasi, dua lakaran, rekod kos dan ujian serta justifikasi penambahbaikan. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -1047,22 +1013,22 @@
         2
       ],
       "level": "Tahun 1–2",
-      "title": "Galeri Hasil Kerja",
+      "title": "Galeri Seni: Teknik dan Apresiasi",
       "subject_options": [
-        "Semua subjek"
+        "Pendidikan Seni Visual"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid mempamerkan satu hasil pembelajaran dan menyatakan dua perkara tentang hasilnya.",
-      "set_induksi": "Guru menunjukkan cara memberi komen positif dengan bahasa mudah.",
+      "learning_objective": "Murid menghasilkan karya warna atau corak mudah dan menyatakan dua unsur seni yang kelihatan.",
+      "set_induksi": "Guru memperlihatkan contoh corak titik, garisan dan warna daripada karya selamat yang dipamerkan. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Murid memilih satu lembaran atau karya terbaik lalu menampalnya.",
-        "Murid berjalan melihat tiga pameran dan menampal pelekat penghargaan.",
-        "Setiap murid menerangkan dua perkara tentang hasilnya kepada seorang rakan."
+        "Guru memodelkan cara mencuba teknik corak berulang dengan cap menggunakan objek selamat pada kertas latihan. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid menghasilkan karya pilihan dengan dua jenis garisan dan gabungan warna, sambil menjaga ruang kerja. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid mempamerkan hasil dalam galeri mini dan menerangkan dua pilihan warna atau garisan kepada rakan. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru memerhati penerangan dua perkara dan adab memberi penghargaan.",
-      "penutup": "Murid menyatakan satu perkara yang mahu dipelajari lagi.",
-      "bbm": "Hasil kerja murid, papan pameran, pelekat",
-      "assessment_evidence": "Guru memerhati penerangan dua perkara dan adab memberi penghargaan.",
+      "pengukuhan_penilaian": "Guru meneliti karya asal, penggunaan unsur seni dan dua penerangan lisan. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui galeri seni: teknik dan apresiasi. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "kertas lukisan, warna air, span selamat, alas meja",
+      "assessment_evidence": "Guru meneliti karya asal, penggunaan unsur seni dan dua penerangan lisan. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -1075,22 +1041,22 @@
         4
       ],
       "level": "Tahun 3–4",
-      "title": "Galeri Hasil Kerja",
+      "title": "Galeri Seni: Teknik dan Apresiasi",
       "subject_options": [
-        "Semua subjek"
+        "Pendidikan Seni Visual"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid menerangkan proses menghasilkan karya dengan tiga langkah dan memberi satu maklum balas membina.",
-      "set_induksi": "Guru memperagakan perbezaan pujian umum dengan maklum balas khusus.",
+      "learning_objective": "Murid menghasilkan karya dua dimensi menggunakan teknik campuran dan memberi satu ulasan seni berdasarkan kriteria.",
+      "set_induksi": "Guru memperlihatkan dua contoh karya yang menunjukkan kontra warna dan keseimbangan susunan. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Murid menyusun dua hasil kerja dan menulis label proses tiga langkah.",
-        "Pasangan mengunjungi galeri dan bertanya satu soalan tentang kaedah.",
-        "Murid mencatat satu maklum balas dan menerangkan pembaikan yang boleh dibuat."
+        "Guru memodelkan cara menganalisis perbezaan tona dan lakaran komposisi sebelum memilih dua bahan media. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid menghasilkan kolaj atau lukisan campuran mengikut lakaran dengan perhatian pada susunan dan kemasan. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid membandingkan hasil dengan kriteria warna, keseimbangan dan kemasan; memberi satu komen membina. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menyemak label proses dan kualiti maklum balas yang diberikan.",
-      "penutup": "Murid memilih satu hasil untuk dibaiki pada sesi seterusnya.",
-      "bbm": "Hasil kerja, kad soalan, nota tampal",
-      "assessment_evidence": "Guru menyemak label proses dan kualiti maklum balas yang diberikan.",
+      "pengukuhan_penilaian": "Guru meneliti lakaran komposisi, karya campuran dan ulasan berdasarkan tiga kriteria. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui galeri seni: teknik dan apresiasi. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "kertas lukisan, kertas warna, gam, krayon, kad apresiasi",
+      "assessment_evidence": "Guru meneliti lakaran komposisi, karya campuran dan ulasan berdasarkan tiga kriteria. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -1103,22 +1069,22 @@
         6
       ],
       "level": "Tahun 5–6",
-      "title": "Galeri Hasil Kerja",
+      "title": "Galeri Seni: Teknik dan Apresiasi",
       "subject_options": [
-        "Semua subjek"
+        "Pendidikan Seni Visual"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid membandingkan dua hasil pembelajaran berdasarkan kriteria jelas serta menulis refleksi penambahbaikan.",
-      "set_induksi": "Guru bersama murid menetapkan tiga kriteria galeri seperti ketepatan, kreativiti dan kejelasan.",
+      "learning_objective": "Murid menghasilkan karya bertema identiti komuniti dan mempertahankan pilihan elemen visual serta teknik.",
+      "set_induksi": "Guru memperlihatkan contoh visual budaya tempatan yang sesuai dan bukan tiruan karya berhak cipta. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Murid menyediakan kapsyen yang menerangkan tujuan, kaedah dan bukti hasil.",
-        "Kumpulan menilai dua pameran dengan menggunakan rubrik mesra murid.",
-        "Murid memberikan maklum balas berasaskan kriteria dan menulis pelan pembaikan."
+        "Guru memodelkan cara menganalisis simbol, warna, penegasan dan keseimbangan dalam dua contoh karya. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid merancang lakaran pilihan lalu menghasilkan karya dengan teknik campuran yang disesuaikan pada tema. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid menyediakan kapsyen kuratorial ringkas serta menjawab soalan rakan berdasarkan niat dan elemen visual. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menyemak rubrik, alasan penilaian dan cadangan penambahbaikan.",
-      "penutup": "Murid menyatakan satu perubahan yang akan dibuat pada hasil sendiri.",
-      "bbm": "Hasil kerja, rubrik, kad kapsyen",
-      "assessment_evidence": "Guru menyemak rubrik, alasan penilaian dan cadangan penambahbaikan.",
+      "pengukuhan_penilaian": "Guru meneliti karya bermesej, kapsyen dan justifikasi teknik atau komposisi. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui galeri seni: teknik dan apresiasi. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "contoh visual berizin, media campuran, kertas A3, rubrik",
+      "assessment_evidence": "Guru meneliti karya bermesej, kapsyen dan justifikasi teknik atau komposisi. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -1131,23 +1097,22 @@
         2
       ],
       "level": "Tahun 1–2",
-      "title": "Detektif Sains",
+      "title": "Detektif Sains: Pemerhatian dan Penyiasatan",
       "subject_options": [
-        "Sains",
-        "Matematik"
+        "Sains"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid mengelaskan empat objek selamat berdasarkan satu ciri yang diperhatikan.",
-      "set_induksi": "Guru mengeluarkan beberapa objek dan meminta murid menyebut persamaan.",
+      "learning_objective": "Murid memerihalkan sifat empat objek dan mengelaskan mengikut satu ciri pemerhatian yang selamat.",
+      "set_induksi": "Guru memperlihatkan empat objek bersih yang berbeza tekstur, bentuk dan bahan. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Murid memerhati warna, saiz atau tekstur tanpa merasa atau menghidu bahan tidak diketahui.",
-        "Murid mengasingkan empat objek kepada kumpulan yang mempunyai ciri dipilih.",
-        "Murid menunjukkan satu objek dan menerangkan alasan pengelasan."
+        "Guru memodelkan cara memerhati objek menggunakan deria penglihatan dan sentuhan selamat serta merekod ciri pada jadual gambar. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid mengasingkan objek kepada dua kumpulan berdasarkan ciri terpilih dan membandingkan alasan rakan. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid menyiasat objek baharu dan memutuskan kumpulan yang sesuai berserta satu bukti. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menyemak empat pengelasan dan satu alasan lisan.",
-      "penutup": "Murid menamakan deria yang digunakan untuk mengumpul maklumat.",
-      "bbm": "Objek harian bersih dan selamat, dulang, kad ciri",
-      "assessment_evidence": "Guru menyemak empat pengelasan dan satu alasan lisan.",
+      "pengukuhan_penilaian": "Guru meneliti jadual pemerhatian, empat pengelasan dan alasan ciri yang boleh diperiksa. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui detektif sains: pemerhatian dan penyiasatan. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "bahan harian selamat, dulang, kad sifat, lembaran rekod",
+      "assessment_evidence": "Guru meneliti jadual pemerhatian, empat pengelasan dan alasan ciri yang boleh diperiksa. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -1160,23 +1125,22 @@
         4
       ],
       "level": "Tahun 3–4",
-      "title": "Detektif Sains",
+      "title": "Detektif Sains: Pemerhatian dan Penyiasatan",
       "subject_options": [
-        "Sains",
-        "Matematik"
+        "Sains"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid membina jadual pemerhatian dan membuat satu kesimpulan berdasarkan data.",
-      "set_induksi": "Guru menunjukkan dua jenis permukaan dan mengemukakan soalan tentang geseran.",
+      "learning_objective": "Murid melaksanakan ujian adil mudah dan membuat kesimpulan menggunakan rekod dua keadaan.",
+      "set_induksi": "Guru memperlihatkan dua jenis permukaan untuk menguji gerakan objek ringan. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Kumpulan meramal pergerakan objek ringan pada dua permukaan.",
-        "Murid menjalankan percubaan terkawal dengan prosedur selamat dan merekod pemerhatian.",
-        "Murid membandingkan data dua permukaan lalu menulis satu kesimpulan."
+        "Guru memodelkan cara mengenal pasti perkara yang perlu dikekalkan sama dan meramal pergerakan di dua permukaan. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid menggerakkan objek dari titik mula sama, memerhati perbezaan lalu merekod dapatan beberapa ulangan. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid membandingkan jadual dapatan dan menulis kesimpulan yang merujuk bukti serta satu had ujian. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menyemak jadual pemerhatian dan hubungan kesimpulan dengan data.",
-      "penutup": "Murid menyatakan satu perkara yang perlu dikawal dalam ujian.",
-      "bbm": "Permukaan kadbod dan kain, objek ringan, jadual rekod",
-      "assessment_evidence": "Guru menyemak jadual pemerhatian dan hubungan kesimpulan dengan data.",
+      "pengukuhan_penilaian": "Guru meneliti ramalan, jadual ulangan, kawalan keadaan dan kesimpulan berasaskan bukti. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui detektif sains: pemerhatian dan penyiasatan. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "permukaan kadbod dan kain, objek ringan, pita penanda, rekod",
+      "assessment_evidence": "Guru meneliti ramalan, jadual ulangan, kawalan keadaan dan kesimpulan berasaskan bukti. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -1189,23 +1153,22 @@
         6
       ],
       "level": "Tahun 5–6",
-      "title": "Detektif Sains",
+      "title": "Detektif Sains: Pemerhatian dan Penyiasatan",
       "subject_options": [
-        "Sains",
-        "Matematik"
+        "Sains"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid mereka bentuk penyiasatan adil, mentafsir data dan mencadangkan penambahbaikan prosedur.",
-      "set_induksi": "Guru memberikan persoalan tentang kesan bilangan lapisan bahan terhadap penyerapan air.",
+      "learning_objective": "Murid merancang penyiasatan adil, mentafsir data dan menilai kebolehpercayaan dapatan.",
+      "set_induksi": "Guru memperlihatkan persoalan perbandingan penyerapan air oleh beberapa lapisan kertas tisu. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Kumpulan mengenal pasti pemboleh ubah dan menyediakan langkah eksperimen yang selamat.",
-        "Murid mengukur atau membandingkan jumlah air yang diserap dengan ulangan terkawal.",
-        "Murid membina graf data, menyatakan pola dan menilai had pengukuran."
+        "Guru memodelkan cara menentukan pemboleh ubah, membina ramalan dan menerangkan langkah keselamatan sebelum eksperimen. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid menjalankan ulangan ujian dengan kuantiti air sama, mengukur penyerapan dan merekod keputusan. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid membina graf mudah, mengenal pasti pola serta membincangkan pemboleh ubah yang boleh menjejaskan ketepatan. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menyemak kawalan pemboleh ubah, graf dan kesimpulan berasaskan data.",
-      "penutup": "Murid mencadangkan cara meningkatkan kebolehpercayaan ujian.",
-      "bbm": "Kertas tisu, bekas, air, silinder penyukat jika ada, jadual",
-      "assessment_evidence": "Guru menyemak kawalan pemboleh ubah, graf dan kesimpulan berasaskan data.",
+      "pengukuhan_penilaian": "Guru meneliti prosedur ujian adil, jadual, graf dan kesimpulan bersandar pada data. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui detektif sains: pemerhatian dan penyiasatan. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "tisu, air, bekas, alat ukur, kertas graf, rubrik",
+      "assessment_evidence": "Guru meneliti prosedur ujian adil, jadual, graf dan kesimpulan bersandar pada data. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -1218,25 +1181,22 @@
         2
       ],
       "level": "Tahun 1–2",
-      "title": "Forum Nilai dan Keputusan",
+      "title": "Forum Nilai: Dilema dan Tindakan",
       "subject_options": [
-        "Bahasa Melayu",
-        "Pendidikan Moral",
-        "Pendidikan Islam",
-        "Sejarah"
+        "Pendidikan Moral"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid memilih tindakan sopan bagi dua situasi harian dan melakonkan satu contoh.",
-      "set_induksi": "Guru menunjukkan gambar situasi beratur dan berkongsi barang.",
+      "learning_objective": "Murid memilih tindakan yang menghormati rakan dalam dua situasi dan menjelaskan satu sebab.",
+      "set_induksi": "Guru memperlihatkan dua gambar situasi meminjam barang dan menunggu giliran. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Murid memadankan dua situasi dengan tindakan yang baik.",
-        "Pasangan melakonkan cara meminta izin atau meminta maaf.",
-        "Murid menerangkan mengapa satu tindakan membantu rakan."
+        "Guru memodelkan cara mengenal pasti perasaan watak dan memadankan tindakan bertanggungjawab dengan setiap gambar. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid melakonkan dialog meminta izin atau memohon maaf dalam kumpulan kecil dengan bimbingan ungkapan sopan. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid memilih satu tindakan apabila berdepan situasi baharu dan menyebut kesannya terhadap rakan. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru merekod ketepatan dua padanan dan lakonan sopan.",
-      "penutup": "Murid memilih satu nilai untuk diamalkan di kelas.",
-      "bbm": "Kad situasi, kad ungkapan sopan",
-      "assessment_evidence": "Guru merekod ketepatan dua padanan dan lakonan sopan.",
+      "pengukuhan_penilaian": "Guru meneliti dua pilihan tindakan yang sesuai, sebab ringkas dan lakonan. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui forum nilai: dilema dan tindakan. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "kad situasi, kad emosi, ungkapan sopan",
+      "assessment_evidence": "Guru meneliti dua pilihan tindakan yang sesuai, sebab ringkas dan lakonan. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -1249,25 +1209,22 @@
         4
       ],
       "level": "Tahun 3–4",
-      "title": "Forum Nilai dan Keputusan",
+      "title": "Forum Nilai: Dilema dan Tindakan",
       "subject_options": [
-        "Bahasa Melayu",
-        "Pendidikan Moral",
-        "Pendidikan Islam",
-        "Sejarah"
+        "Pendidikan Moral"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid membandingkan dua pilihan tindakan bagi masalah rakan sebaya serta memberikan dua sebab.",
-      "set_induksi": "Guru membaca situasi konflik penggunaan bahan kumpulan.",
+      "learning_objective": "Murid membandingkan dua keputusan bagi konflik rakan sebaya dan menjustifikasikan pilihan berdasarkan nilai.",
+      "set_induksi": "Guru memperlihatkan kisah pendek konflik penggunaan peralatan kumpulan di kelas. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Kumpulan mengenal pasti pihak yang terlibat dan perasaan setiap pihak.",
-        "Murid menyenaraikan dua pilihan tindakan dan kemungkinan akibatnya.",
-        "Kumpulan melakonkan penyelesaian serta memberi dua sebab kepada pilihan."
+        "Guru memodelkan cara menyenaraikan pihak yang terlibat, perasaan dan hak setiap pihak pada carta. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid membandingkan dua penyelesaian menggunakan jadual kesan positif dan negatif untuk setiap pihak. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid melakonkan penyelesaian yang dipersetujui dan memberikan dua sebab berpandukan hormat dan kerjasama. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menilai relevansi sebab dan adab semasa perbincangan.",
-      "penutup": "Murid menyatakan cara mendengar pendapat berbeza.",
-      "bbm": "Kad dilema, kertas pilihan-akibat",
-      "assessment_evidence": "Guru menilai relevansi sebab dan adab semasa perbincangan.",
+      "pengukuhan_penilaian": "Guru meneliti jadual akibat, alasan dan adab semasa menyelesaikan konflik. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui forum nilai: dilema dan tindakan. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "kad dilema, carta kesan, borang penilaian rakan",
+      "assessment_evidence": "Guru meneliti jadual akibat, alasan dan adab semasa menyelesaikan konflik. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -1280,25 +1237,22 @@
         6
       ],
       "level": "Tahun 5–6",
-      "title": "Forum Nilai dan Keputusan",
+      "title": "Forum Nilai: Dilema dan Tindakan",
       "subject_options": [
-        "Bahasa Melayu",
-        "Pendidikan Moral",
-        "Pendidikan Islam",
-        "Sejarah"
+        "Pendidikan Moral"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid menilai dilema komuniti menggunakan sekurang-kurangnya dua perspektif dan cadangan beralasan.",
-      "set_induksi": "Guru membentangkan isu rekaan tentang perkongsian ruang sekolah.",
+      "learning_objective": "Murid menilai dilema komuniti daripada dua perspektif dan membentangkan keputusan dengan hujah beretika.",
+      "set_induksi": "Guru memperlihatkan situasi pembahagian masa penggunaan kemudahan sekolah antara kumpulan. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Kumpulan mengenal pasti kepentingan sekurang-kurangnya dua pihak.",
-        "Murid membahaskan dua penyelesaian dengan menyatakan faedah dan kesan.",
-        "Wakil kumpulan membentangkan keputusan bersama bukti dan langkah pelaksanaan."
+        "Guru memodelkan cara mengelaskan kepentingan dua pihak, mengumpul fakta relevan dan membezakan andaian. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid membahaskan dua pilihan secara teratur, menimbang implikasi dan merancang kesepakatan. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid membentangkan keputusan dengan dua hujah dan menjawab bantahan tanpa merendahkan pihak berbeza. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menilai pertimbangan pelbagai pihak, hujah dan sikap menghormati.",
-      "penutup": "Murid membuat refleksi apakah pandangan yang mengubah keputusan mereka.",
-      "bbm": "Kad dilema, carta pihak terlibat, rubrik",
-      "assessment_evidence": "Guru menilai pertimbangan pelbagai pihak, hujah dan sikap menghormati.",
+      "pengukuhan_penilaian": "Guru meneliti dua perspektif, bukti hujah dan cadangan tindakan adil. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui forum nilai: dilema dan tindakan. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "kad kes, carta pihak berkepentingan, rubrik hujah",
+      "assessment_evidence": "Guru meneliti dua perspektif, bukti hujah dan cadangan tindakan adil. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -1311,26 +1265,22 @@
         2
       ],
       "level": "Tahun 1–2",
-      "title": "Pentas Mini",
+      "title": "Pentas Muzik: Ritma dan Persembahan",
       "subject_options": [
-        "Bahasa Melayu",
-        "Bahasa Inggeris",
-        "Bahasa Arab",
-        "Muzik",
-        "Sejarah"
+        "Pendidikan Muzik"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid menyampaikan satu persembahan pendek dengan sebutan atau gerakan yang jelas.",
-      "set_induksi": "Guru menunjukkan cara memperkenalkan persembahan dan memberi tepukan sopan.",
+      "learning_objective": "Murid meniru dua pola irama dan mempersembahkan satu rangkaian tepukan secara berkumpulan.",
+      "set_induksi": "Guru memperlihatkan pola tepukan dua dan empat denyut yang dimodelkan guru. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Murid memilih lagu, dialog mudah atau sajak pendek yang sudah dipelajari.",
-        "Pasangan berlatih sebutan dan gerakan dengan bantuan kad petunjuk.",
-        "Murid mempersembahkan di hadapan kumpulan kecil dan menerima pujian khusus."
+        "Guru memodelkan cara mendengar pola lalu meniru denyut secara berulang menggunakan tepukan atau perkusi selamat. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid mencipta pola ringkas dalam kumpulan dengan giliran pemimpin dan pemain yang jelas. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid mempersembahkan satu rangkaian pola, berhenti pada isyarat dan memberikan pujian khusus kepada rakan. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menyemak keberanian mencuba dan dua kriteria persembahan mudah.",
-      "penutup": "Murid menamakan satu perkara yang dilakukan dengan baik.",
-      "bbm": "Kad dialog atau sajak, alat ritma pilihan",
-      "assessment_evidence": "Guru menyemak keberanian mencuba dan dua kriteria persembahan mudah.",
+      "pengukuhan_penilaian": "Guru meneliti kestabilan denyut, ketepatan pola dan patuh isyarat persembahan. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui pentas muzik: ritma dan persembahan. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "kad pola ritma, tamborin, alat perkusi mudah",
+      "assessment_evidence": "Guru meneliti kestabilan denyut, ketepatan pola dan patuh isyarat persembahan. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -1343,26 +1293,22 @@
         4
       ],
       "level": "Tahun 3–4",
-      "title": "Pentas Mini",
+      "title": "Pentas Muzik: Ritma dan Persembahan",
       "subject_options": [
-        "Bahasa Melayu",
-        "Bahasa Inggeris",
-        "Bahasa Arab",
-        "Muzik",
-        "Sejarah"
+        "Pendidikan Muzik"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid mempersembahkan dialog atau sketsa tiga hingga lima minit dengan peranan dan urutan jelas.",
-      "set_induksi": "Guru menunjukkan contoh pembahagian watak dan penggunaan suara.",
+      "learning_objective": "Murid mencipta dan mempersembahkan pola ritma beberapa bar dengan tempo serta dinamik yang sesuai.",
+      "set_induksi": "Guru memperlihatkan dua pola ritma berbeza tempo dan kuat lembut untuk didengar. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Kumpulan merangka jalan cerita tiga bahagian daripada tema yang dipelajari.",
-        "Murid membahagi watak dan berlatih sebutan serta perubahan giliran.",
-        "Kumpulan membuat persembahan, manakala rakan mencatat satu kekuatan."
+        "Guru memodelkan cara menggunakan kad nilai not asas yang telah dipelajari untuk membina corak ritma. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid berlatih pola secara kumpulan dengan pembahagian bunyi perkusi dan mengawal tempo bersama. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid mempersembahkan susunan ritma lalu membandingkan tempo atau dinamik dengan kriteria diberi. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menilai kerjasama, ketepatan kandungan dan penyampaian.",
-      "penutup": "Murid memberi satu cadangan menambah baik persembahan.",
-      "bbm": "Kad watak, props kertas, borang maklum balas",
-      "assessment_evidence": "Guru menilai kerjasama, ketepatan kandungan dan penyampaian.",
+      "pengukuhan_penilaian": "Guru meneliti notasi pola, kestabilan tempo dan penyelarasan ahli. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui pentas muzik: ritma dan persembahan. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "kad not yang telah dipelajari, alat perkusi, rubrik",
+      "assessment_evidence": "Guru meneliti notasi pola, kestabilan tempo dan penyelarasan ahli. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
       "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
     },
@@ -1375,28 +1321,276 @@
         6
       ],
       "level": "Tahun 5–6",
-      "title": "Pentas Mini",
+      "title": "Pentas Muzik: Ritma dan Persembahan",
       "subject_options": [
-        "Bahasa Melayu",
-        "Bahasa Inggeris",
-        "Bahasa Arab",
-        "Muzik",
+        "Pendidikan Muzik"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid mengatur persembahan berkumpulan yang menggunakan struktur, dinamika dan penilaian kendiri.",
+      "set_induksi": "Guru memperlihatkan dua rakaman ritma sekolah yang dihasilkan secara sah untuk tujuan pengajaran. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
+      "aktiviti_utama": [
+        "Guru memodelkan cara menganalisis struktur pengulangan, kontras dinamik dan peranan setiap instrumen. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid membina komposisi ritma pendek, berlatih mengikut tempo dan merekod pembaikan selepas latihan. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid membuat persembahan dengan pembukaan, pengembangan dan penutup kemudian menilai kesan muzikal. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
+      ],
+      "pengukuhan_penilaian": "Guru meneliti komposisi, koordinasi kumpulan, ekspresi dan refleksi dengan contoh jelas. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui pentas muzik: ritma dan persembahan. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "alat perkusi, carta struktur, metronom pilihan, rubrik",
+      "assessment_evidence": "Guru meneliti komposisi, koordinasi kumpulan, ekspresi dan refleksi dengan contoh jelas. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+    },
+    {
+      "id": "S11A",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        1,
+        2
+      ],
+      "level": "Tahun 1–2",
+      "title": "Jejak Adab dan Amalan Harian",
+      "subject_options": [
+        "Pendidikan Islam"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid menunjukkan dua perlakuan beradab dan menyebut sebab amalan itu baik.",
+      "set_induksi": "Guru memperlihatkan gambar situasi memberi salam, menghormati guru dan menjaga kebersihan diri. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
+      "aktiviti_utama": [
+        "Guru memodelkan cara mengenal pasti adab yang betul pada kad situasi, dengan contoh perbuatan yang ditunjukkan guru. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid melakonkan dua situasi harian menggunakan ungkapan sopan secara berpasangan. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid menyusun kad langkah amalan baik kemudian menerangkan satu cara mengamalkannya di rumah. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
+      ],
+      "pengukuhan_penilaian": "Guru meneliti dua lakonan adab, susunan kad dan penerangan ringkas. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui jejak adab dan amalan harian. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "kad situasi adab, kad urutan, senarai semak",
+      "assessment_evidence": "Guru meneliti dua lakonan adab, susunan kad dan penerangan ringkas. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_SUBJECT_SPECIFIC"
+    },
+    {
+      "id": "S11B",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        3,
+        4
+      ],
+      "level": "Tahun 3–4",
+      "title": "Jejak Adab dan Amalan Harian",
+      "subject_options": [
+        "Pendidikan Islam"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid membandingkan tindakan beradab dan kurang beradab lalu menyatakan dua kesan pilihan.",
+      "set_induksi": "Guru memperlihatkan cerita bergambar tentang amanah, kebersihan dan sikap menolong rakan. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
+      "aktiviti_utama": [
+        "Guru memodelkan cara membaca cerita pendek dan mengenal pasti tindakan watak yang selari dengan nilai telah dipelajari. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid mengisi carta pilihan-akibat dan membincangkan bagaimana memperbaiki tindakan kurang sesuai. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid menghasilkan panduan ringkas tiga amalan baik dan membentangkan sebab setiap amalan. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
+      ],
+      "pengukuhan_penilaian": "Guru meneliti carta akibat, panduan tiga amalan dan alasan berdasarkan situasi. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui jejak adab dan amalan harian. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "cerita bergambar, carta akibat, kad amalan",
+      "assessment_evidence": "Guru meneliti carta akibat, panduan tiga amalan dan alasan berdasarkan situasi. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_SUBJECT_SPECIFIC"
+    },
+    {
+      "id": "S11C",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        5,
+        6
+      ],
+      "level": "Tahun 5–6",
+      "title": "Jejak Adab dan Amalan Harian",
+      "subject_options": [
+        "Pendidikan Islam"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid menilai dua situasi amalan seharian dan merancang tindakan berhemah berlandaskan adab yang dipelajari.",
+      "set_induksi": "Guru memperlihatkan dua kes ringkas melibatkan amanah, tanggungjawab dan hubungan sesama rakan. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
+      "aktiviti_utama": [
+        "Guru memodelkan cara menganalisis tindakan watak tanpa menghakimi individu serta mengesan akibat kepada orang lain. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid membincangkan alternatif penyelesaian dalam kumpulan dan menyandarkan cadangan pada amalan yang telah dipelajari. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid membina pelan amalan peribadi selama seminggu dan berkongsi justifikasi pilihan serta cara menilai kemajuan. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
+      ],
+      "pengukuhan_penilaian": "Guru meneliti dua analisis situasi, pelan amalan dan alasan yang selaras dengan adab. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui jejak adab dan amalan harian. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "kad kes, jadual amalan, borang refleksi",
+      "assessment_evidence": "Guru meneliti dua analisis situasi, pelan amalan dan alasan yang selaras dengan adab. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_SUBJECT_SPECIFIC"
+    },
+    {
+      "id": "S12A",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        1,
+        2
+      ],
+      "level": "Tahun 1–2",
+      "title": "Jejak Warisan: Sumber dan Garis Masa",
+      "subject_options": [
         "Sejarah"
       ],
       "duration_minutes": 60,
-      "learning_objective": "Murid menghasilkan persembahan berhujah atau dramatik yang menilai satu isu menggunakan sumber pembelajaran.",
-      "set_induksi": "Guru menetapkan kriteria kandungan sahih, peranan dan masa persembahan.",
+      "learning_objective": "Murid membezakan gambar lama dan baharu serta menyusun tiga peristiwa mengikut urutan masa.",
+      "set_induksi": "Guru memperlihatkan gambar berlesen atau gambar sekolah sendiri dahulu dan sekarang. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
       "aktiviti_utama": [
-        "Kumpulan memilih fakta daripada bahan yang telah dipelajari dan menulis skrip ringkas.",
-        "Murid menjalankan latihan dengan semakan rakan terhadap kesahihan fakta serta aliran dialog.",
-        "Kumpulan mempersembahkan sketsa atau forum dan menjawab satu soalan audiens."
+        "Guru memodelkan cara memerhati perbezaan objek, pakaian dan bangunan dalam dua gambar lalu menyebut ciri yang dapat dilihat. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid menyusun kad tiga peristiwa pengalaman sekolah berdasarkan petunjuk awal, tengah dan akhir. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid menceritakan urutan garis masa yang dibina dan membezakan ingatan sendiri daripada fakta pada gambar. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
       ],
-      "pengukuhan_penilaian": "Guru menilai ketepatan fakta, hujah, kerjasama dan respons soalan.",
-      "penutup": "Murid menulis refleksi satu kekuatan dan satu penambahbaikan.",
-      "bbm": "Nota pembelajaran terdahulu, kad peranan, rubrik",
-      "assessment_evidence": "Guru menilai ketepatan fakta, hujah, kerjasama dan respons soalan.",
+      "pengukuhan_penilaian": "Guru meneliti tiga urutan tepat dan dua perbandingan visual yang disokong gambar. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui jejak warisan: sumber dan garis masa. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "gambar arkib sekolah, kad urutan, jalur masa",
+      "assessment_evidence": "Guru meneliti tiga urutan tepat dan dua perbandingan visual yang disokong gambar. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
       "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
-      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_VARIATION"
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_SUBJECT_SPECIFIC"
+    },
+    {
+      "id": "S12B",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        3,
+        4
+      ],
+      "level": "Tahun 3–4",
+      "title": "Jejak Warisan: Sumber dan Garis Masa",
+      "subject_options": [
+        "Sejarah"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid menyusun empat peristiwa berdasarkan sumber mudah dan menerangkan satu kepentingan bukti sejarah.",
+      "set_induksi": "Guru memperlihatkan gambar atau petikan ringkas tentang perubahan kemudahan sekolah setempat. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
+      "aktiviti_utama": [
+        "Guru memodelkan cara membaca petikan sumber dan mencatat tarikh, tempat serta pihak yang dinyatakan. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid membina garis masa empat peristiwa dan menyemak setiap susunan dengan petikan asal. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid membandingkan dua sumber tentang peristiwa sama serta menerangkan maklumat yang boleh atau belum boleh dipastikan. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
+      ],
+      "pengukuhan_penilaian": "Guru meneliti garis masa dengan rujukan sumber dan satu penjelasan bukti. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui jejak warisan: sumber dan garis masa. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "sumber arkib sesuai, kad tarikh, jalur masa, lembaran sumber",
+      "assessment_evidence": "Guru meneliti garis masa dengan rujukan sumber dan satu penjelasan bukti. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_SUBJECT_SPECIFIC"
+    },
+    {
+      "id": "S12C",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        5,
+        6
+      ],
+      "level": "Tahun 5–6",
+      "title": "Jejak Warisan: Sumber dan Garis Masa",
+      "subject_options": [
+        "Sejarah"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid membandingkan dua sumber sejarah dan menghasilkan kesimpulan ringkas dengan bukti serta batasan.",
+      "set_induksi": "Guru memperlihatkan dua bahan sejarah tempatan yang boleh dipercayai, lengkap maklumat asal atau tarikh. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
+      "aktiviti_utama": [
+        "Guru memodelkan cara meneliti jenis sumber, asal usul, tujuan dan maklumat utama sebelum mencatat fakta boleh disemak. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid membina garis masa bersumber lalu membezakan fakta, tafsiran dan perkara yang belum diketahui. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid membentangkan kesimpulan tentang perubahan komuniti menggunakan dua bukti dan menjelaskan satu had sumber. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
+      ],
+      "pengukuhan_penilaian": "Guru meneliti ketepatan rujukan dua sumber, garis masa dan kesimpulan beralasan. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui jejak warisan: sumber dan garis masa. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "salinan sumber sah, peta setempat, kad bukti, rubrik",
+      "assessment_evidence": "Guru meneliti ketepatan rujukan dua sumber, garis masa dan kesimpulan beralasan. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_SUBJECT_SPECIFIC"
+    },
+    {
+      "id": "S13A",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        1,
+        2
+      ],
+      "level": "Tahun 1–2",
+      "title": "Misi Kesihatan: Pilihan Selamat dan Sihat",
+      "subject_options": [
+        "Pendidikan Kesihatan"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid memilih tiga amalan kebersihan diri dan memperagakan langkah yang selamat.",
+      "set_induksi": "Guru memperlihatkan gambar rutin membasuh tangan, minum air kosong dan menjaga kebersihan makanan. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
+      "aktiviti_utama": [
+        "Guru memodelkan cara memilih kad gambar amalan sihat dan menjelaskan masa yang sesuai mengamalkannya. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid menyusun kad langkah membasuh tangan serta memperagakan gerakan tanpa pembaziran air. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid membina carta rutin pagi yang merangkumi tiga amalan kebersihan dan berkongsinya bersama pasangan. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
+      ],
+      "pengukuhan_penilaian": "Guru meneliti tiga pilihan amalan tepat, urutan dan demonstrasi yang selamat. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui misi kesihatan: pilihan selamat dan sihat. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "kad kebersihan, gambar rutin, kertas carta",
+      "assessment_evidence": "Guru meneliti tiga pilihan amalan tepat, urutan dan demonstrasi yang selamat. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_SUBJECT_SPECIFIC"
+    },
+    {
+      "id": "S13B",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        3,
+        4
+      ],
+      "level": "Tahun 3–4",
+      "title": "Misi Kesihatan: Pilihan Selamat dan Sihat",
+      "subject_options": [
+        "Pendidikan Kesihatan"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid mengelaskan amalan pemakanan dan rehat seimbang serta merancang satu jadual harian munasabah.",
+      "set_induksi": "Guru memperlihatkan gambar pelbagai pilihan makanan dan aktiviti rehat serta pergerakan. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
+      "aktiviti_utama": [
+        "Guru memodelkan cara mengelaskan pilihan makanan dan minuman kepada amalan biasa atau pilihan yang perlu dihadkan. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid membandingkan dua jadual rutin dan menilai masa rehat, pergerakan serta kebersihan. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid menghasilkan jadual harian sendiri, kemudian menyemak sama ada masa rehat dan aktiviti seimbang. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
+      ],
+      "pengukuhan_penilaian": "Guru meneliti pengelasan munasabah dan jadual harian yang dapat dijelaskan. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui misi kesihatan: pilihan selamat dan sihat. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "kad makanan, jadual kosong, pelekat, pen warna",
+      "assessment_evidence": "Guru meneliti pengelasan munasabah dan jadual harian yang dapat dijelaskan. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_SUBJECT_SPECIFIC"
+    },
+    {
+      "id": "S13C",
+      "category": "SELEPAS_TAMAT_SUKATAN",
+      "phase": null,
+      "years": [
+        5,
+        6
+      ],
+      "level": "Tahun 5–6",
+      "title": "Misi Kesihatan: Pilihan Selamat dan Sihat",
+      "subject_options": [
+        "Pendidikan Kesihatan"
+      ],
+      "duration_minutes": 60,
+      "learning_objective": "Murid menilai dua pilihan gaya hidup berdasarkan maklumat kesihatan asas dan menghasilkan cadangan realistik.",
+      "set_induksi": "Guru memperlihatkan jadual contoh masa skrin, tidur, makan dan pergerakan remaja awal. Guru mengemukakan soalan pemula yang mengaitkan bahan dengan pengalaman murid, memperagakan satu respons contoh dan menerangkan hasil yang mesti disiapkan pada akhir sesi.",
+      "aktiviti_utama": [
+        "Guru memodelkan cara menafsir jadual rutin serta mengenal pasti pola yang boleh dibincangkan tanpa mendedahkan data peribadi. Murid mencuba tugas berpandu dengan bahan sebenar atau kad contoh, menjawab dua soalan semakan, kemudian membetulkan kesilapan selepas guru menjelaskan contoh serta bukan contoh yang berkaitan.",
+        "Secara berpasangan atau dalam kumpulan kecil, murid membandingkan dua pelan gaya hidup menggunakan kriteria keselamatan, keseimbangan dan kemampuan dilaksanakan. Setiap ahli diberi giliran menyumbang jawapan, menyemak hasil menggunakan kriteria yang dipaparkan dan meminta guru menjelaskan bahagian yang masih mengelirukan.",
+        "Murid menyediakan cadangan perubahan kecil untuk situasi rekaan dan membentangkan alasan bersandarkan maklumat diberi. Murid menunjukkan produk, lakonan atau rekod kepada pasangan lain, menerangkan sebab atau bukti yang digunakan dan membuat satu pembetulan selepas menerima maklum balas khusus daripada guru atau rakan."
+      ],
+      "pengukuhan_penilaian": "Guru meneliti perbandingan dua pelan dan cadangan bersebab yang tidak menghukum individu. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "penutup": "Dua orang murid menerangkan perkara penting yang dipelajari melalui misi kesihatan: pilihan selamat dan sihat. Guru menyimpulkan satu strategi yang berkesan dan meminta murid menyebut tindakan atau kemahiran yang boleh digunakan dalam situasi baharu.",
+      "bbm": "jadual situasi rekaan, kad kriteria, lembaran pelan",
+      "assessment_evidence": "Guru meneliti perbandingan dua pelan dan cadangan bersebab yang tidak menghukum individu. Guru memilih satu contoh respons tepat dan satu salah faham untuk dibincangkan, merekod bukti secara senarai semak serta menyediakan sokongan ringkas kepada murid yang belum mencapai sasaran.",
+      "sk_sp_status": "NOT_ASSIGNED_UNLESS_VERIFIED_TO_SUBJECT",
+      "source_pattern": "ORIGINAL_CIKGULAJU_POST_SYLLABUS_SUBJECT_SPECIFIC"
     }
   ]
 }
