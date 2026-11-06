@@ -153,8 +153,21 @@
       ],
       "7.1.6": [
         77,
-        80
+        81
       ]
+    },
+    "sp716_text_evidence": {
+      "printed_pages": [
+        77,
+        78,
+        79,
+        80,
+        81
+      ],
+      "text_present": true,
+      "visual_pages_reviewed": false,
+      "source": "https://anyflip.com/bonxz/ipnx/basic/51-90",
+      "reviewed": "2026-11-06"
     }
   },
   "year6": {
@@ -261,7 +274,8 @@
     "Muka surat adalah calon daripada teks digital yang menunjukkan kod SP/aktiviti berhampiran halaman bercetak; bukan pengesahan visual atau kesahihan tugasan per PdP.",
     "Buku teks cetak 2021 Tahun 6 (SK) berbeza daripada SJKC atau edisi 2015.",
     "Semakan visual individu/kelulusan guru masih 0. Maklumat tidak boleh digunakan untuk menandakan READY.",
-    "Tahun 6 8.1.1–8.1.7: hlm. bercetak 45–66 disemak menerusi teks digital buku cetakan 2021. Julat bagi setiap SP hanyalah calon; bukti visual aktiviti masih belum diluluskan."
+    "Tahun 6 8.1.1–8.1.7: hlm. bercetak 45–66 disemak menerusi teks digital buku cetakan 2021. Julat bagi setiap SP hanyalah calon; bukti visual aktiviti masih belum diluluskan.",
+    "Y5 SP 7.1.6: semakan teks helaian 51–90 menunjukkan kod SP masih muncul pada hlm. bercetak 81, jadi julat calon dikembangkan 77–81; pengesahan aktiviti visual masih tertangguh."
   ],
   "approval_count": 0
 }
