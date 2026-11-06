@@ -1,0 +1,86 @@
+"""QA 45 fully distinct Sains Y3 draft RPH activities, no app import."""
+import unittest
+from web.sains_y3_rph_activity_preview_20261106 import (
+    BANK,adapt_rows,source_ledgers,
+)
+
+class SainsY3ActivityCoverageTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.ledger,cls.fixes=source_ledgers()
+
+    def test_exact_45_sp_specific_activity_coverage(self):
+        self.assertEqual(len(self.ledger),45)
+        self.assertEqual(len(BANK),45)
+        self.assertEqual(len(self.fixes),12)
+        seen=set()
+        for code,record in self.ledger.items():
+            sp=record["sp_code"]
+            original={"REFLEKSI":"Asal","TARIKH":"06/11/2026","STATUS":"DRAF"}
+            state={"subject":"Sains","year":"Tahun 3","year_label":"Tahun 3",
+                   "pdp_sequence_code":code,
+                   "sk_code":sp.rsplit(".",1)[0],"sp_code":sp}
+            revised=adapt_rows(state,original)
+            with self.subTest(code=code):
+                self.assertIsNot(revised,original)
+                self.assertEqual(revised["REFLEKSI"],"Asal")
+                self.assertEqual(revised["TARIKH"],"06/11/2026")
+                self.assertEqual(revised["STATUS"],"DRAF")
+                self.assertEqual(original,{"REFLEKSI":"Asal","TARIKH":"06/11/2026","STATUS":"DRAF"})
+                self.assertTrue(revised["TAJUK"])
+                self.assertEqual(revised["STANDARD PEMBELAJARAN"],sp)
+                self.assertIn("Guru",revised["AKTIVITI UTAMA"])
+                self.assertIn("Murid",revised["AKTIVITI UTAMA"])
+                self.assertIn("\n1. Guru",revised["AKTIVITI UTAMA"])
+                self.assertIn("\n2. Murid",revised["AKTIVITI UTAMA"])
+                self.assertEqual(revised["AKTIVITI UTAMA"].count("Aktiviti "),2)
+                self.assertTrue(len(revised["AKTIVITI UTAMA"])>200)
+                self.assertIn("Buku Teks Sains Tahun 3",revised["BAHAN BANTU MENGAJAR"])
+                self.assertIn("semak sebelum cetak",revised["BAHAN BANTU MENGAJAR"])
+                self.assertTrue(revised["PENTAKSIRAN"])
+                self.assertTrue(revised["PENUTUP"])
+                self.assertTrue(revised["KRITERIA KEJAYAAN"])
+                self.assertNotIn("penerokaan konsep",revised["AKTIVITI UTAMA"].lower())
+                seen.add(revised["AKTIVITI UTAMA"])
+        self.assertEqual(len(seen),45)
+
+    def test_twelve_dskp_corrections_win_over_outdated_titles(self):
+        for code,f in self.fixes.items():
+            p=self.ledger[code]
+            s={"subject":"Sains","year":"Tahun 3","sp_code":p["sp_code"],
+               "sk_code":p["sp_code"].rsplit(".",1)[0],
+               "pdp_sequence_code":code}
+            revised=adapt_rows(s,{"TAJUK":"OLD"})
+            with self.subTest(code=code):
+                self.assertEqual(revised["TAJUK"],f["ds_kpm_official_sp_text"])
+
+    def test_wrong_subject_year_code_or_sp_fails_closed_without_side_effects(self):
+        code="SCI-Y3-PDP-037"
+        original={"AKTIVITI UTAMA":"original","REFLEKSI":"orig"}
+        valid={"subject":"Sains","year":"Tahun 3","sp_code":"9.1.2",
+               "sk_code":"9.1","pdp_sequence_code":code}
+        for bad in [
+            {**valid,"subject":"Matematik"},{**valid,"year":"Tahun 1"},
+            {**valid,"pdp_sequence_code":"SCI-Y3-PDP-002"},
+            {**valid,"sp_code":"9.1.3"},{**valid,"sk_code":"8.1"},
+            {**valid,"pdp_sequence_code":"SCI-Y3-PDP-999"},
+            {**valid,"year_label":"Tahun 4"},
+        ]:
+            with self.subTest(bad=bad):
+                self.assertIs(adapt_rows(bad,original),original)
+        self.assertEqual(original,{"AKTIVITI UTAMA":"original","REFLEKSI":"orig"})
+
+    def test_acid_demos_do_not_invite_chemical_tasting_or_touching(self):
+        for sp in ("8.1.1","8.1.2","8.1.3","8.1.4"):
+            row=next(x for x in self.ledger.values() if x["sp_code"]==sp)
+            state={"subject":"Sains","year":"Tahun 3","sp_code":sp,
+                   "sk_code":"8.1","pdp_sequence_code":row["pdp_code"]}
+            txt=adapt_rows(state,{})["AKTIVITI UTAMA"].lower()
+            self.assertNotIn("mencuba rasa bahan kimia",txt)
+            self.assertNotIn("merasa sampel",txt)
+        row=next(x for x in self.ledger.values() if x["sp_code"]=="8.1.2")
+        s={"subject":"Sains","year":"Tahun 3","sp_code":"8.1.2",
+           "sk_code":"8.1","pdp_sequence_code":row["pdp_code"]}
+        self.assertIn("tanpa ujian rasa",adapt_rows(s,{})["AKTIVITI UTAMA"])
+if __name__=="__main__":
+    unittest.main()
