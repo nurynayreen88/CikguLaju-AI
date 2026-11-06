@@ -1,0 +1,24 @@
+name: BA RPT2027 A/B candidate crosswalk (read-only)
+on:
+  push:
+    branches: [staging/bahasa-arab-rpt2027-crosswalk-20261106]
+    paths:
+      - "rpt_2027/bahasa_arab/**"
+      - "scripts/check_bahasa_arab_rpt2027_crosswalk_stage.py"
+      - ".github/workflows/bahasa-arab-rpt2027-crosswalk-stage.yml"
+  pull_request:
+    paths:
+      - "rpt_2027/bahasa_arab/**"
+      - "scripts/check_bahasa_arab_rpt2027_crosswalk_stage.py"
+  workflow_dispatch:
+jobs:
+  source-crosswalk:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python scripts/check_bahasa_arab_rpt2027_crosswalk_stage.py

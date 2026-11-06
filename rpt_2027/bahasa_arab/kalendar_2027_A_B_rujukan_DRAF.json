@@ -1,0 +1,83 @@
+{
+  "generated": "2026-11-06",
+  "state": "CONTROLLED_DRAFT_NO_PDP_DATES",
+  "source": "https://docs.google.com/document/d/1MO37hjLMT5Afzlnq2--rf3jJQKX9BlTdyejZvU6Yau4/edit",
+  "groups": {
+    "A": {
+      "negeri": [
+        "Kedah",
+        "Kelantan",
+        "Terengganu"
+      ],
+      "start": "2027-01-04",
+      "last": "2027-12-02",
+      "term_holidays": [
+        [
+          "2027-03-05",
+          "2027-03-13"
+        ],
+        [
+          "2027-05-21",
+          "2027-06-05"
+        ],
+        [
+          "2027-08-27",
+          "2027-09-04"
+        ],
+        [
+          "2027-12-03",
+          "2027-12-31"
+        ]
+      ]
+    },
+    "B": {
+      "negeri": [
+        "Johor",
+        "Melaka",
+        "Negeri Sembilan",
+        "Pahang",
+        "Perak",
+        "Perlis",
+        "Pulau Pinang",
+        "Sabah",
+        "Sarawak",
+        "Selangor",
+        "Kuala Lumpur",
+        "Labuan",
+        "Putrajaya"
+      ],
+      "start": "2027-01-04",
+      "last": "2027-12-03",
+      "term_holidays": [
+        [
+          "2027-03-06",
+          "2027-03-14"
+        ],
+        [
+          "2027-05-22",
+          "2027-06-06"
+        ],
+        [
+          "2027-08-28",
+          "2027-09-05"
+        ],
+        [
+          "2027-12-04",
+          "2027-12-31"
+        ]
+      ]
+    }
+  },
+  "candidate_rph_per_group": 298,
+  "per_year": {
+    "2": 60,
+    "3": 60,
+    "4": 58,
+    "5": 60,
+    "6": 60
+  },
+  "rpt_final_ready": false,
+  "teacher_approved": false,
+  "release_authorized": false,
+  "date_rule": "All PdP dates intentionally blank pending calendar KPM appendix, state public holidays and substitutions, school holidays, teacher timetable and approved annual subject period quota."
+}
