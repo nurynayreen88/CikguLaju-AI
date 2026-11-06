@@ -10,6 +10,7 @@ import re
 from pathlib import Path
 
 from rpt_2027.common.format_2026_layout_preview import build_preview, validate_rows
+from rpt_2027.common.standard_text_enrichment import enrich_moral
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "staging" / "rpt_2027_seragam_2026" / "pdf"
@@ -112,6 +113,7 @@ def moral_records(year):
                     " Aktiviti murid: "+left["Aktiviti_Murid"]+
                     " PBD: "+left["Evidens_PBD"].strip().rstrip(" .")+".")
         })
+    enrich_moral(year,output)
     validate_rows("moral",year,output)
     return output
 
