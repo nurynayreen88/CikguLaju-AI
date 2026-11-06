@@ -44,12 +44,27 @@ jobs:
           assert len(pdfs)==21, len(pdfs)
           for f in pdfs:
               with fitz.open(f) as pdf:
-                  for page in pdf:
-                      assert page.rect.width>page.rect.height
-                  # First table page, for human visual comparison on review.
-                  if pdf.page_count>1:
-                      pix=pdf[1].get_pixmap(matrix=fitz.Matrix(1.5,1.5),alpha=False)
-                      pix.save(str(f.with_suffix('.page2.png')))
+                  assert pdf.page_count>1, f
+                  for i,page in enumerate(pdf):
+                      assert page.rect.width>page.rect.height, (f, i)
+                      text = page.get_text()
+                      # A DSKP bullet previously became U+0000 in PJPK/PSV.
+                      assert '\\x00' not in text, (f, i, "blank/control glyph")
+                      for block in page.get_text("blocks"):
+                          x0,y0,x1,y1 = block[:4]
+                          assert 0 <= x0 <= x1 <= page.rect.width, (f, i, "text outside horizontal page")
+                          assert 0 <= y0 <= y1 <= page.rect.height, (f, i, "text outside vertical page")
+                  cover=pdf[0].get_text()
+                  for required in ("RANCANGAN PENGAJARAN TAHUNAN 2027",
+                                   "NAMA SEKOLAH", "NAMA GURU", "LOGO SEKOLAH"):
+                      assert required in cover, (f, "missing cover field", required)
+                  for forbidden in ("ALAMAT SEKOLAH", "NEGERI / KUMPULAN", "KUMPULAN A",
+                                    "KUMPULAN B", "DRAF SEMAKAN", "Halaman 1"):
+                      assert forbidden not in cover, (f, "extra cover field", forbidden)
+                  coverpix=pdf[0].get_pixmap(matrix=fitz.Matrix(1.4,1.4),alpha=False)
+                  coverpix.save(str(f.with_suffix('.cover.png')))
+                  pix=pdf[1].get_pixmap(matrix=fitz.Matrix(1.5,1.5),alpha=False)
+                  pix.save(str(f.with_suffix('.page2.png')))
           PY
       - uses: actions/upload-artifact@v4
         with:
