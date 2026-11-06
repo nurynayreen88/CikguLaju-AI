@@ -4,6 +4,9 @@ on:
     paths:
       - 'rpt_2027/common/format_2026_layout_preview.py'
       - 'rpt_2027/common/standard_text_enrichment.py'
+      - 'rpt_2027/common/calendar_week_2027_a_b_snapshot_20261107_DRAF.json'
+      - 'scripts/audit_rpt_2027_calendar_master_staging.py'
+      - 'tests/test_rpt_2027_calendar_master_staging.py'
       - 'curriculum/sejarah/y*_dskp_crosswalk_DRAF.json'
       - 'rpt_2027/pendidikan_moral/year*_crosswalk_DSKP.json'
       - 'rpt_2027/psv/dskp_full_standard_texts_y*_20261107_DRAF.json'
@@ -31,7 +34,9 @@ jobs:
       - run: pip install 'reportlab==4.2.5' 'pypdf==5.1.0' 'PyMuPDF==1.24.14'
       - run: python -m py_compile rpt_2027/common/format_2026_layout_preview.py scripts/build_rpt_2027_standard_preview.py scripts/build_rpt_2027_second_batch_preview.py rpt_2027/common/standard_text_enrichment.py
       - name: Audit source and render each of the 13 A4 landscape PDFs
-        run: python -m unittest tests.test_rpt_2027_standard_2026_layout_preview tests.test_rpt_2027_second_batch_preview -v
+        run: python -m unittest tests.test_rpt_2027_standard_2026_layout_preview tests.test_rpt_2027_second_batch_preview tests.test_rpt_2027_calendar_master_staging -v
+      - name: Audit calendar against central 2027 week master (read-only)
+        run: python -m scripts.audit_rpt_2027_calendar_master_staging
       - name: Build named reviewer previews (not live downloads)
         run: |
           python -m scripts.build_rpt_2027_standard_preview
@@ -72,5 +77,6 @@ jobs:
           path: |
             staging/rpt_2027_seragam_2026/pdf/*.pdf
             staging/rpt_2027_seragam_2026/pdf/*.png
+            staging/rpt_2027_seragam_2026/audit_calendar_week_alignment.json
           if-no-files-found: error
           retention-days: 14
