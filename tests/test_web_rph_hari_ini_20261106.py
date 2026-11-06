@@ -135,6 +135,24 @@ class DailyTimetableRouteTests(TestCase):
         self.assertNotIn("generateRphFile(",daily)
         self.assertIn("app.register_blueprint(rph_hari_ini_bp)",launch)
 
+    def test_today_edits_topic_and_numbered_lessons_inline_with_native_engine(self):
+        page=(ROOT/"web_v1_static_preview"/"index.html").read_text("utf-8")
+        daily=(ROOT/"web_v1_static_preview"/"rph-today.js").read_text("utf-8")
+        # Move the existing generator view into the timetable card; do not clone
+        # the catalogue, generation API, quota or teacher profile.
+        self.assertIn('inlineHost.appendChild(rphView)',page)
+        self.assertIn('rphView.classList.add("daily-rph-embedded")',page)
+        self.assertIn('if(name!=="today")restoreRphEditor()',page)
+        self.assertIn('window.closeRphFromToday',page)
+        self.assertIn('lesson.size=Math.min(8,lesson.options.length)',page)
+        self.assertIn('Senarai "+(subject.value==="ENGLISH"?"Lesson":"PdP")',page)
+        self.assertIn('window.prepareRphFromToday(slot,loadedDate,editor)',daily)
+        self.assertIn('btn.setAttribute("aria-expanded","false")',daily)
+        self.assertIn('if(!confirm.checked)window.closeRphFromToday?.()',daily)
+        self.assertNotIn('await window.prepareRphFromToday(slot,loadedDate);',daily)
+        self.assertIn('await loadTeacherClasses()',page)
+        self.assertIn('fillSelect(lesson,items',page)
+
 
 if __name__=="__main__":
     import unittest
