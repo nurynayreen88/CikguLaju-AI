@@ -28,6 +28,12 @@ _GENERIC_CUES = (
     "exit lisan", "dengar untuk maklumat", "soal jawab berpandu",
     "kongsi semula", "pbd lisan", "kenal unsur", "latihan kreatif",
     "maklum balas (10 minit)",
+    # Repeated generic v26.00 opening headings across 229 real BM PdPs.
+    # Only replace when the selected SP has exact verified wording.
+    "baca dan anotasi", "bacaan berpandu", "dengar dan catat",
+    "rancang isi", "apresiasi teks", "cari kad betul",
+    "bina daripada model", "jejak/salin berpandu",
+    "kenal dan baca", "dengar dan tunjuk", "dengar/lihat model",
 )
 
 
