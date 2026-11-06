@@ -1,0 +1,2494 @@
+{
+  "audit_date": "2026-11-06",
+  "scope": "SP_CODE_PRESENCE_ONLY_NOT_SEMANTIC_OR_SCORE_APPROVAL",
+  "source_kind": "KPM Music DSKP Year 2-6 text extracted from PDF Drive",
+  "notices": [
+    "Presence of numeric SP string in the extracted DSKP does NOT verify pedagogical correspondence, edition, musical notation, or release rights.",
+    "Source DSKP Year4 internally prints 3.2.x under SK3.1, which requires authoritative reconciliation before publishing.",
+    "All 175 RPH are still DRAFT."
+  ],
+  "per_year": {
+    "2": {
+      "rph_count": 35,
+      "sp_codes_in_source": 20,
+      "without_unknown_codes": 35,
+      "with_unknown_codes": 0,
+      "unknown_codes": [],
+      "source_url": "https://drive.google.com/file/d/1e68JHJagmLzcQdodb9IAIvYFtKIybtiu/view"
+    },
+    "3": {
+      "rph_count": 35,
+      "sp_codes_in_source": 22,
+      "without_unknown_codes": 35,
+      "with_unknown_codes": 0,
+      "unknown_codes": [],
+      "source_url": "https://drive.google.com/file/d/1uu1n3V3dL5aN0MCC7gdwaG6II1nGJWFz/view"
+    },
+    "4": {
+      "rph_count": 35,
+      "sp_codes_in_source": 19,
+      "without_unknown_codes": 33,
+      "with_unknown_codes": 2,
+      "unknown_codes": [
+        "3.1.1",
+        "3.1.2",
+        "3.1.3"
+      ],
+      "source_url": "https://drive.google.com/file/d/1C0e_KVtPA3bx7dlFiFEaAyT94RWzQVob/view"
+    },
+    "5": {
+      "rph_count": 35,
+      "sp_codes_in_source": 20,
+      "without_unknown_codes": 35,
+      "with_unknown_codes": 0,
+      "unknown_codes": [],
+      "source_url": "https://drive.google.com/file/d/1lR2irHRk8B0wqy5Y6nb8O8DRsOA9GRnY/view"
+    },
+    "6": {
+      "rph_count": 35,
+      "sp_codes_in_source": 18,
+      "without_unknown_codes": 35,
+      "with_unknown_codes": 0,
+      "unknown_codes": [],
+      "source_url": "https://drive.google.com/file/d/1xvgqs4L35uaTFJ0foencmAO4_pVR-g19/view"
+    }
+  },
+  "summary": {
+    "rph_count": 175,
+    "sp_present_rph": 173,
+    "sp_absent_rph": 2,
+    "conflicted_pdps": [
+      "MZ-Y4-21",
+      "MZ-Y4-24"
+    ]
+  },
+  "records": [
+    {
+      "pdp_id": "MZ-Y2-01",
+      "year": 2,
+      "pdp": 1,
+      "unit": "KAMI SUKA SAYUR",
+      "manifest_sp": [
+        "2.1.3",
+        "2.1.4"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-02",
+      "year": 2,
+      "pdp": 2,
+      "unit": "KAMI SUKA SAYUR",
+      "manifest_sp": [
+        "1.1.1",
+        "1.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-03",
+      "year": 2,
+      "pdp": 3,
+      "unit": "KAMI SUKA SAYUR",
+      "manifest_sp": [
+        "3.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-04",
+      "year": 2,
+      "pdp": 4,
+      "unit": "BERSIH PASTI CANTIK",
+      "manifest_sp": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-05",
+      "year": 2,
+      "pdp": 5,
+      "unit": "BERSIH PASTI CANTIK",
+      "manifest_sp": [
+        "3.1.2",
+        "3.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-06",
+      "year": 2,
+      "pdp": 6,
+      "unit": "SAYA JUARA",
+      "manifest_sp": [
+        "2.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-07",
+      "year": 2,
+      "pdp": 7,
+      "unit": "SAYA JUARA",
+      "manifest_sp": [
+        "3.1.1",
+        "3.1.2",
+        "3.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-08",
+      "year": 2,
+      "pdp": 8,
+      "unit": "SAYA JUARA",
+      "manifest_sp": [
+        "1.1.1",
+        "1.1.2",
+        "1.1.4"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-09",
+      "year": 2,
+      "pdp": 9,
+      "unit": "PUSING GASING PUSING",
+      "manifest_sp": [
+        "2.1.3",
+        "2.1.4"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-10",
+      "year": 2,
+      "pdp": 10,
+      "unit": "PUSING GASING PUSING",
+      "manifest_sp": [
+        "3.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-11",
+      "year": 2,
+      "pdp": 11,
+      "unit": "PUSING GASING PUSING",
+      "manifest_sp": [
+        "2.2.2",
+        "2.2.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-12",
+      "year": 2,
+      "pdp": 12,
+      "unit": "Projek Seni Muzik 1",
+      "manifest_sp": [
+        "5.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-13",
+      "year": 2,
+      "pdp": 13,
+      "unit": "Projek Seni Muzik 1",
+      "manifest_sp": [
+        "5.1.2",
+        "5.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-14",
+      "year": 2,
+      "pdp": 14,
+      "unit": "BERSUKAN BADAN SIHAT",
+      "manifest_sp": [
+        "2.2.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-15",
+      "year": 2,
+      "pdp": 15,
+      "unit": "BERSUKAN BADAN SIHAT",
+      "manifest_sp": [
+        "3.1.2",
+        "3.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-16",
+      "year": 2,
+      "pdp": 16,
+      "unit": "BERSUKAN BADAN SIHAT",
+      "manifest_sp": [
+        "4.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-17",
+      "year": 2,
+      "pdp": 17,
+      "unit": "CANTIK MENAWAN",
+      "manifest_sp": [
+        "1.1.1",
+        "1.1.4"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-18",
+      "year": 2,
+      "pdp": 18,
+      "unit": "CANTIK MENAWAN",
+      "manifest_sp": [
+        "3.1.2",
+        "3.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-19",
+      "year": 2,
+      "pdp": 19,
+      "unit": "CANTIK MENAWAN",
+      "manifest_sp": [
+        "3.1.2",
+        "3.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-20",
+      "year": 2,
+      "pdp": 20,
+      "unit": "BURUNG KENEK-KENEK",
+      "manifest_sp": [
+        "3.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-21",
+      "year": 2,
+      "pdp": 21,
+      "unit": "BURUNG KENEK-KENEK",
+      "manifest_sp": [
+        "2.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-22",
+      "year": 2,
+      "pdp": 22,
+      "unit": "BURUNG KENEK-KENEK",
+      "manifest_sp": [
+        "2.2.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-23",
+      "year": 2,
+      "pdp": 23,
+      "unit": "ULI-ULI TEMBIKAR",
+      "manifest_sp": [
+        "1.1.3",
+        "2.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-24",
+      "year": 2,
+      "pdp": 24,
+      "unit": "ULI-ULI TEMBIKAR",
+      "manifest_sp": [
+        "2.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-25",
+      "year": 2,
+      "pdp": 25,
+      "unit": "ULI-ULI TEMBIKAR",
+      "manifest_sp": [
+        "3.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-26",
+      "year": 2,
+      "pdp": 26,
+      "unit": "Projek Seni Muzik 2",
+      "manifest_sp": [
+        "5.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-27",
+      "year": 2,
+      "pdp": 27,
+      "unit": "Projek Seni Muzik 2",
+      "manifest_sp": [
+        "5.1.2",
+        "5.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-28",
+      "year": 2,
+      "pdp": 28,
+      "unit": "JALAN-JALAN KE TAMAN RAMA-RAMA",
+      "manifest_sp": [
+        "2.1.4"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-29",
+      "year": 2,
+      "pdp": 29,
+      "unit": "JALAN-JALAN KE TAMAN RAMA-RAMA",
+      "manifest_sp": [
+        "2.3.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-30",
+      "year": 2,
+      "pdp": 30,
+      "unit": "JALAN-JALAN KE TAMAN RAMA-RAMA",
+      "manifest_sp": [
+        "4.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-31",
+      "year": 2,
+      "pdp": 31,
+      "unit": "SEGARNYA AIR TERJUN",
+      "manifest_sp": [
+        "2.1.3",
+        "2.1.4"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-32",
+      "year": 2,
+      "pdp": 32,
+      "unit": "SEGARNYA AIR TERJUN",
+      "manifest_sp": [
+        "3.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-33",
+      "year": 2,
+      "pdp": 33,
+      "unit": "SEGARNYA AIR TERJUN",
+      "manifest_sp": [
+        "4.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-34",
+      "year": 2,
+      "pdp": 34,
+      "unit": "Pengukuhan Akhir Tahun — Nyanyian dan Gerakan (cadangan)",
+      "manifest_sp": [
+        "2.1.3",
+        "2.3.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y2-35",
+      "year": 2,
+      "pdp": 35,
+      "unit": "Penilaian dan Refleksi Muzik Akhir Tahun (cadangan)",
+      "manifest_sp": [
+        "3.1.3",
+        "4.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-01",
+      "year": 3,
+      "pdp": 1,
+      "unit": "TUT  TUT  KERETA API",
+      "manifest_sp": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-02",
+      "year": 3,
+      "pdp": 2,
+      "unit": "TUT  TUT  KERETA API",
+      "manifest_sp": [
+        "2.2.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-03",
+      "year": 3,
+      "pdp": 3,
+      "unit": "TUT  TUT  KERETA API",
+      "manifest_sp": [
+        "2.3.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-04",
+      "year": 3,
+      "pdp": 4,
+      "unit": "MALAYSIA KITA",
+      "manifest_sp": [
+        "2.1.2",
+        "2.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-05",
+      "year": 3,
+      "pdp": 5,
+      "unit": "MALAYSIA KITA",
+      "manifest_sp": [
+        "2.3.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-06",
+      "year": 3,
+      "pdp": 6,
+      "unit": "MALAYSIA KITA",
+      "manifest_sp": [
+        "2.3.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-07",
+      "year": 3,
+      "pdp": 7,
+      "unit": "ANEKA CAPAN",
+      "manifest_sp": [
+        "2.2.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-08",
+      "year": 3,
+      "pdp": 8,
+      "unit": "ANEKA CAPAN",
+      "manifest_sp": [
+        "3.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-09",
+      "year": 3,
+      "pdp": 9,
+      "unit": "SERANGGA COMEL",
+      "manifest_sp": [
+        "1.1.1",
+        "1.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-10",
+      "year": 3,
+      "pdp": 10,
+      "unit": "SERANGGA COMEL",
+      "manifest_sp": [
+        "3.1.1",
+        "3.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-11",
+      "year": 3,
+      "pdp": 11,
+      "unit": "SERANGGA COMEL",
+      "manifest_sp": [
+        "4.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-12",
+      "year": 3,
+      "pdp": 12,
+      "unit": "Projek Seni Muzik 1",
+      "manifest_sp": [
+        "5.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-13",
+      "year": 3,
+      "pdp": 13,
+      "unit": "Projek Seni Muzik 1",
+      "manifest_sp": [
+        "5.1.2",
+        "5.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-14",
+      "year": 3,
+      "pdp": 14,
+      "unit": "PAHLAWAN KECIL",
+      "manifest_sp": [
+        "2.1.2",
+        "2.3.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-15",
+      "year": 3,
+      "pdp": 15,
+      "unit": "PAHLAWAN KECIL",
+      "manifest_sp": [
+        "2.1.2",
+        "2.3.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-16",
+      "year": 3,
+      "pdp": 16,
+      "unit": "PAHLAWAN KECIL",
+      "manifest_sp": [
+        "2.3.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-17",
+      "year": 3,
+      "pdp": 17,
+      "unit": "BELON UDARA TINGGI DI LANGIT",
+      "manifest_sp": [
+        "1.2.1",
+        "2.4.1",
+        "2.4.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-18",
+      "year": 3,
+      "pdp": 18,
+      "unit": "BELON UDARA TINGGI DI LANGIT",
+      "manifest_sp": [
+        "2.4.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-19",
+      "year": 3,
+      "pdp": 19,
+      "unit": "OH, BERWARNA-WARNI",
+      "manifest_sp": [
+        "2.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-20",
+      "year": 3,
+      "pdp": 20,
+      "unit": "IRAMA BINGO",
+      "manifest_sp": [
+        "3.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-21",
+      "year": 3,
+      "pdp": 21,
+      "unit": "CANTIK BERCAHAYA",
+      "manifest_sp": [
+        "1.2.2",
+        "2.4.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-22",
+      "year": 3,
+      "pdp": 22,
+      "unit": "CANTIK BERCAHAYA",
+      "manifest_sp": [
+        "2.2.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-23",
+      "year": 3,
+      "pdp": 23,
+      "unit": "CANTIK BERCAHAYA",
+      "manifest_sp": [
+        "3.1.2",
+        "3.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-24",
+      "year": 3,
+      "pdp": 24,
+      "unit": "Projek Seni Muzik 2",
+      "manifest_sp": [
+        "5.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-25",
+      "year": 3,
+      "pdp": 25,
+      "unit": "Projek Seni Muzik 2",
+      "manifest_sp": [
+        "5.1.2",
+        "5.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-26",
+      "year": 3,
+      "pdp": 26,
+      "unit": "Projek Seni Muzik 2",
+      "manifest_sp": [
+        "5.1.2",
+        "5.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-27",
+      "year": 3,
+      "pdp": 27,
+      "unit": "BONEKA MENARI MENCUIT HATI",
+      "manifest_sp": [
+        "2.1.2",
+        "2.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-28",
+      "year": 3,
+      "pdp": 28,
+      "unit": "BONEKA MENARI MENCUIT HATI",
+      "manifest_sp": [
+        "2.1.2",
+        "2.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-29",
+      "year": 3,
+      "pdp": 29,
+      "unit": "TAMAK SELALU RUGI",
+      "manifest_sp": [
+        "3.1.1",
+        "3.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-30",
+      "year": 3,
+      "pdp": 30,
+      "unit": "PENGHAYATAN KARYA MUZIK",
+      "manifest_sp": [
+        "4.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-31",
+      "year": 3,
+      "pdp": 31,
+      "unit": "ANYAMAN BERZAMAN",
+      "manifest_sp": [
+        "2.1.2",
+        "2.3.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-32",
+      "year": 3,
+      "pdp": 32,
+      "unit": "PERMAINAN BUAH LAZAT",
+      "manifest_sp": [
+        "3.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-33",
+      "year": 3,
+      "pdp": 33,
+      "unit": "MUZIK ROCK",
+      "manifest_sp": [
+        "4.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-34",
+      "year": 3,
+      "pdp": 34,
+      "unit": "Pengukuhan Akhir Tahun — Rekoder dan Perkusi (cadangan)",
+      "manifest_sp": [
+        "2.4.2",
+        "2.2.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y3-35",
+      "year": 3,
+      "pdp": 35,
+      "unit": "Penilaian dan Refleksi Muzik Akhir Tahun (cadangan)",
+      "manifest_sp": [
+        "3.1.3",
+        "4.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-01",
+      "year": 4,
+      "pdp": 1,
+      "unit": "SENJA NAN INDAH",
+      "manifest_sp": [
+        "1.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-02",
+      "year": 4,
+      "pdp": 2,
+      "unit": "SENJA NAN INDAH",
+      "manifest_sp": [
+        "1.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-03",
+      "year": 4,
+      "pdp": 3,
+      "unit": "SENJA NAN INDAH",
+      "manifest_sp": [
+        "1.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-04",
+      "year": 4,
+      "pdp": 4,
+      "unit": "WARNA WARNI KEK CAWAN",
+      "manifest_sp": [
+        "1.1.3",
+        "2.2.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-05",
+      "year": 4,
+      "pdp": 5,
+      "unit": "WARNA WARNI KEK CAWAN",
+      "manifest_sp": [
+        "1.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-06",
+      "year": 4,
+      "pdp": 6,
+      "unit": "BEG CANTIK MENAWAN",
+      "manifest_sp": [
+        "2.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-07",
+      "year": 4,
+      "pdp": 7,
+      "unit": "BEG CANTIK MENAWAN",
+      "manifest_sp": [
+        "2.1.1",
+        "2.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-08",
+      "year": 4,
+      "pdp": 8,
+      "unit": "BEG CANTIK MENAWAN",
+      "manifest_sp": [
+        "2.2.1",
+        "2.2.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-09",
+      "year": 4,
+      "pdp": 9,
+      "unit": "BUNGA GERGASI",
+      "manifest_sp": [
+        "2.1.4"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-10",
+      "year": 4,
+      "pdp": 10,
+      "unit": "BUNGA GERGASI",
+      "manifest_sp": [
+        "2.2.1",
+        "2.2.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-11",
+      "year": 4,
+      "pdp": 11,
+      "unit": "BUNGA GERGASI",
+      "manifest_sp": [
+        "2.3.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-12",
+      "year": 4,
+      "pdp": 12,
+      "unit": "Projek Seni Muzik 1",
+      "manifest_sp": [
+        "5.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-13",
+      "year": 4,
+      "pdp": 13,
+      "unit": "Projek Seni Muzik 1",
+      "manifest_sp": [
+        "5.1.2",
+        "5.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-14",
+      "year": 4,
+      "pdp": 14,
+      "unit": "SECAWAN KOPI MANIS",
+      "manifest_sp": [
+        "4.2.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-15",
+      "year": 4,
+      "pdp": 15,
+      "unit": "SECAWAN KOPI MANIS",
+      "manifest_sp": [
+        "2.3.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-16",
+      "year": 4,
+      "pdp": 16,
+      "unit": "SECAWAN KOPI MANIS",
+      "manifest_sp": [
+        "2.3.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-17",
+      "year": 4,
+      "pdp": 17,
+      "unit": "LARIAN RIANG RIA",
+      "manifest_sp": [
+        "2.4.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-18",
+      "year": 4,
+      "pdp": 18,
+      "unit": "LARIAN RIANG RIA",
+      "manifest_sp": [
+        "1.1.1",
+        "1.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-19",
+      "year": 4,
+      "pdp": 19,
+      "unit": "INDAHNYA DASAR LAUT",
+      "manifest_sp": [
+        "2.2.1",
+        "2.2.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-20",
+      "year": 4,
+      "pdp": 20,
+      "unit": "INDAHNYA DASAR LAUT",
+      "manifest_sp": [
+        "2.2.1",
+        "2.2.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-21",
+      "year": 4,
+      "pdp": 21,
+      "unit": "INDAHNYA DASAR LAUT",
+      "manifest_sp": [
+        "3.1.2",
+        "3.1.3"
+      ],
+      "sp_not_found_in_source": [
+        "3.1.2",
+        "3.1.3"
+      ],
+      "code_text_presence": "SP_NOT_FOUND_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false,
+      "proposed_dskp_printed_sp": [
+        "3.2.2",
+        "3.2.3"
+      ],
+      "textbook_printed_sp": [
+        "3.2.2",
+        "3.2.3"
+      ],
+      "source_conflict_note": "Music DSKP SK 3.1 prints SP 3.2.x; combined Kesenian Year4 book prints same 3.2.x for Music creativity. Existing RPT 3.1.x not present in Music DSKP. Do not approve automatically."
+    },
+    {
+      "pdp_id": "MZ-Y4-22",
+      "year": 4,
+      "pdp": 22,
+      "unit": "HELO, HELO APA KHABAR?",
+      "manifest_sp": [
+        "2.4.1",
+        "2.4.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-23",
+      "year": 4,
+      "pdp": 23,
+      "unit": "HELO, HELO APA KHABAR?",
+      "manifest_sp": [
+        "1.1.3",
+        "2.2.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-24",
+      "year": 4,
+      "pdp": 24,
+      "unit": "HELO, HELO APA KHABAR?",
+      "manifest_sp": [
+        "3.1.1",
+        "3.1.2",
+        "3.1.3"
+      ],
+      "sp_not_found_in_source": [
+        "3.1.1",
+        "3.1.2",
+        "3.1.3"
+      ],
+      "code_text_presence": "SP_NOT_FOUND_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false,
+      "proposed_dskp_printed_sp": [
+        "3.2.1",
+        "3.2.2",
+        "3.2.3"
+      ],
+      "textbook_printed_sp": [
+        "3.2.1",
+        "3.2.2",
+        "3.2.3"
+      ],
+      "source_conflict_note": "Music DSKP SK 3.1 prints SP 3.2.x; combined Kesenian Year4 book prints same 3.2.x for Music creativity. Existing RPT 3.1.x not present in Music DSKP. Do not approve automatically."
+    },
+    {
+      "pdp_id": "MZ-Y4-25",
+      "year": 4,
+      "pdp": 25,
+      "unit": "Projek Seni Muzik 2",
+      "manifest_sp": [
+        "5.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-26",
+      "year": 4,
+      "pdp": 26,
+      "unit": "Projek Seni Muzik 2",
+      "manifest_sp": [
+        "5.1.2",
+        "5.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-27",
+      "year": 4,
+      "pdp": 27,
+      "unit": "Projek Seni Muzik 2",
+      "manifest_sp": [
+        "5.1.2",
+        "5.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-28",
+      "year": 4,
+      "pdp": 28,
+      "unit": "KOTA CERIA",
+      "manifest_sp": [
+        "2.1.3",
+        "2.3.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-29",
+      "year": 4,
+      "pdp": 29,
+      "unit": "KOTA CERIA",
+      "manifest_sp": [
+        "2.2.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-30",
+      "year": 4,
+      "pdp": 30,
+      "unit": "KOTA CERIA",
+      "manifest_sp": [
+        "2.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-31",
+      "year": 4,
+      "pdp": 31,
+      "unit": "HARUM MEWANGI",
+      "manifest_sp": [
+        "4.2.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-32",
+      "year": 4,
+      "pdp": 32,
+      "unit": "HARUM MEWANGI",
+      "manifest_sp": [
+        "2.3.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-33",
+      "year": 4,
+      "pdp": 33,
+      "unit": "HARUM MEWANGI",
+      "manifest_sp": [
+        "2.3.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-34",
+      "year": 4,
+      "pdp": 34,
+      "unit": "Pengukuhan Akhir Tahun — Kolattam dan Gerakan (cadangan)",
+      "manifest_sp": [
+        "4.2.1",
+        "2.3.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y4-35",
+      "year": 4,
+      "pdp": 35,
+      "unit": "Penilaian Akhir — Rekoder dan Perkusi (cadangan)",
+      "manifest_sp": [
+        "2.4.2",
+        "2.2.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-01",
+      "year": 5,
+      "pdp": 1,
+      "unit": "WASPADA SELALU",
+      "manifest_sp": [
+        "2.1.1",
+        "2.1.4"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-02",
+      "year": 5,
+      "pdp": 2,
+      "unit": "WASPADA SELALU",
+      "manifest_sp": [
+        "2.2.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-03",
+      "year": 5,
+      "pdp": 3,
+      "unit": "WASPADA SELALU",
+      "manifest_sp": [
+        "2.2.1",
+        "2.2.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-04",
+      "year": 5,
+      "pdp": 4,
+      "unit": "SANTUN DI JALAN RAYA",
+      "manifest_sp": [
+        "2.1.1",
+        "2.1.3",
+        "2.3.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-05",
+      "year": 5,
+      "pdp": 5,
+      "unit": "SANTUN DI JALAN RAYA",
+      "manifest_sp": [
+        "1.1.2",
+        "2.1.4"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-06",
+      "year": 5,
+      "pdp": 6,
+      "unit": "SANTUN DI JALAN RAYA",
+      "manifest_sp": [
+        "2.3.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-07",
+      "year": 5,
+      "pdp": 7,
+      "unit": "BUSAK PAKUI",
+      "manifest_sp": [
+        "2.1.1",
+        "2.1.3",
+        "2.2.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-08",
+      "year": 5,
+      "pdp": 8,
+      "unit": "BUSAK PAKUI",
+      "manifest_sp": [
+        "2.4.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-09",
+      "year": 5,
+      "pdp": 9,
+      "unit": "BUSAK PAKUI",
+      "manifest_sp": [
+        "3.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-10",
+      "year": 5,
+      "pdp": 10,
+      "unit": "SERUPA TETAPI TIDAK SAMA",
+      "manifest_sp": [
+        "2.1.2",
+        "2.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-11",
+      "year": 5,
+      "pdp": 11,
+      "unit": "SERUPA TETAPI TIDAK SAMA",
+      "manifest_sp": [
+        "1.1.1",
+        "3.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-12",
+      "year": 5,
+      "pdp": 12,
+      "unit": "SERUPA TETAPI TIDAK SAMA",
+      "manifest_sp": [
+        "4.1.1",
+        "4.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-13",
+      "year": 5,
+      "pdp": 13,
+      "unit": "RAJA DI LAUTAN",
+      "manifest_sp": [
+        "2.1.1",
+        "2.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-14",
+      "year": 5,
+      "pdp": 14,
+      "unit": "RAJA DI LAUTAN",
+      "manifest_sp": [
+        "2.4.1",
+        "2.4.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-15",
+      "year": 5,
+      "pdp": 15,
+      "unit": "Projek Seni Muzik 1 — Perancangan",
+      "manifest_sp": [
+        "5.1.1",
+        "5.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-16",
+      "year": 5,
+      "pdp": 16,
+      "unit": "Projek Seni Muzik 1 — Persembahan",
+      "manifest_sp": [
+        "5.1.3",
+        "5.1.4"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-17",
+      "year": 5,
+      "pdp": 17,
+      "unit": "RAJA DI LAUTAN",
+      "manifest_sp": [
+        "2.4.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-18",
+      "year": 5,
+      "pdp": 18,
+      "unit": "SILAP MATA",
+      "manifest_sp": [
+        "2.1.1",
+        "2.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-19",
+      "year": 5,
+      "pdp": 19,
+      "unit": "SILAP MATA",
+      "manifest_sp": [
+        "2.4.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-20",
+      "year": 5,
+      "pdp": 20,
+      "unit": "SILAP MATA",
+      "manifest_sp": [
+        "2.3.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-21",
+      "year": 5,
+      "pdp": 21,
+      "unit": "BURUJ",
+      "manifest_sp": [
+        "2.1.1",
+        "2.1.3",
+        "1.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-22",
+      "year": 5,
+      "pdp": 22,
+      "unit": "BURUJ",
+      "manifest_sp": [
+        "2.2.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-23",
+      "year": 5,
+      "pdp": 23,
+      "unit": "BURUJ",
+      "manifest_sp": [
+        "2.2.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-24",
+      "year": 5,
+      "pdp": 24,
+      "unit": "TIP TAP TIP TAP",
+      "manifest_sp": [
+        "2.1.1",
+        "2.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-25",
+      "year": 5,
+      "pdp": 25,
+      "unit": "TIP TAP TIP TAP",
+      "manifest_sp": [
+        "1.1.2",
+        "1.1.3",
+        "2.3.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-26",
+      "year": 5,
+      "pdp": 26,
+      "unit": "TIP TAP TIP TAP",
+      "manifest_sp": [
+        "3.1.1",
+        "3.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-27",
+      "year": 5,
+      "pdp": 27,
+      "unit": "ADIWIRA",
+      "manifest_sp": [
+        "2.1.1",
+        "2.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-28",
+      "year": 5,
+      "pdp": 28,
+      "unit": "ADIWIRA",
+      "manifest_sp": [
+        "2.2.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-29",
+      "year": 5,
+      "pdp": 29,
+      "unit": "ADIWIRA",
+      "manifest_sp": [
+        "2.3.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-30",
+      "year": 5,
+      "pdp": 30,
+      "unit": "JOGET KHATULISTIWA",
+      "manifest_sp": [
+        "2.1.1",
+        "2.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-31",
+      "year": 5,
+      "pdp": 31,
+      "unit": "JOGET KHATULISTIWA",
+      "manifest_sp": [
+        "2.4.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-32",
+      "year": 5,
+      "pdp": 32,
+      "unit": "JOGET KHATULISTIWA",
+      "manifest_sp": [
+        "2.4.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-33",
+      "year": 5,
+      "pdp": 33,
+      "unit": "JOGET KHATULISTIWA",
+      "manifest_sp": [
+        "2.2.1",
+        "2.2.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-34",
+      "year": 5,
+      "pdp": 34,
+      "unit": "Projek Seni Muzik 2 — Perancangan",
+      "manifest_sp": [
+        "5.1.1",
+        "5.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y5-35",
+      "year": 5,
+      "pdp": 35,
+      "unit": "Projek Seni Muzik 2 — Persembahan",
+      "manifest_sp": [
+        "5.1.3",
+        "5.1.4"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-01",
+      "year": 6,
+      "pdp": 1,
+      "unit": "SETIA KAWAN",
+      "manifest_sp": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-02",
+      "year": 6,
+      "pdp": 2,
+      "unit": "SETIA KAWAN",
+      "manifest_sp": [
+        "2.2.1",
+        "2.2.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-03",
+      "year": 6,
+      "pdp": 3,
+      "unit": "GERBANG ILMU",
+      "manifest_sp": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-04",
+      "year": 6,
+      "pdp": 4,
+      "unit": "GERBANG ILMU",
+      "manifest_sp": [
+        "3.1.1",
+        "3.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-05",
+      "year": 6,
+      "pdp": 5,
+      "unit": "GERBANG ILMU",
+      "manifest_sp": [
+        "2.3.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-06",
+      "year": 6,
+      "pdp": 6,
+      "unit": "TUDUNG PERIUK",
+      "manifest_sp": [
+        "2.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-07",
+      "year": 6,
+      "pdp": 7,
+      "unit": "TUDUNG PERIUK",
+      "manifest_sp": [
+        "2.2.1",
+        "2.2.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-08",
+      "year": 6,
+      "pdp": 8,
+      "unit": "TUDUNG PERIUK",
+      "manifest_sp": [
+        "3.1.1",
+        "3.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-09",
+      "year": 6,
+      "pdp": 9,
+      "unit": "RANGKAIAN GLOBALISASI",
+      "manifest_sp": [
+        "2.1.1",
+        "2.1.2",
+        "2.4.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-10",
+      "year": 6,
+      "pdp": 10,
+      "unit": "RANGKAIAN GLOBALISASI",
+      "manifest_sp": [
+        "3.1.1",
+        "3.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-11",
+      "year": 6,
+      "pdp": 11,
+      "unit": "RANGKAIAN GLOBALISASI",
+      "manifest_sp": [
+        "4.1.1",
+        "4.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-12",
+      "year": 6,
+      "pdp": 12,
+      "unit": "Projek Seni Muzik 1 — Perancangan",
+      "manifest_sp": [
+        "5.1.1",
+        "5.1.2",
+        "5.1.4"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-13",
+      "year": 6,
+      "pdp": 13,
+      "unit": "Projek Seni Muzik 1 — Persembahan",
+      "manifest_sp": [
+        "5.1.2",
+        "5.1.3",
+        "5.1.4"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-14",
+      "year": 6,
+      "pdp": 14,
+      "unit": "MIKROORGANISMA",
+      "manifest_sp": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-15",
+      "year": 6,
+      "pdp": 15,
+      "unit": "MIKROORGANISMA",
+      "manifest_sp": [
+        "2.4.1",
+        "2.4.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-16",
+      "year": 6,
+      "pdp": 16,
+      "unit": "MEMORI INDAH",
+      "manifest_sp": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-17",
+      "year": 6,
+      "pdp": 17,
+      "unit": "MEMORI INDAH",
+      "manifest_sp": [
+        "2.4.1",
+        "2.4.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-18",
+      "year": 6,
+      "pdp": 18,
+      "unit": "MEMORI INDAH",
+      "manifest_sp": [
+        "1.1.1",
+        "2.3.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-19",
+      "year": 6,
+      "pdp": 19,
+      "unit": "PUTERI LEGENDA LANGKAWI",
+      "manifest_sp": [
+        "2.1.1",
+        "2.1.2",
+        "1.1.2",
+        "1.1.3"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-20",
+      "year": 6,
+      "pdp": 20,
+      "unit": "PUTERI LEGENDA LANGKAWI",
+      "manifest_sp": [
+        "2.2.1",
+        "2.2.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-21",
+      "year": 6,
+      "pdp": 21,
+      "unit": "PUTERI LEGENDA LANGKAWI",
+      "manifest_sp": [
+        "2.2.1",
+        "2.2.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-22",
+      "year": 6,
+      "pdp": 22,
+      "unit": "WARNA WARNI MALAYSIA",
+      "manifest_sp": [
+        "2.1.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-23",
+      "year": 6,
+      "pdp": 23,
+      "unit": "WARNA WARNI MALAYSIA",
+      "manifest_sp": [
+        "2.3.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-24",
+      "year": 6,
+      "pdp": 24,
+      "unit": "WARNA WARNI MALAYSIA",
+      "manifest_sp": [
+        "3.1.1",
+        "3.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-25",
+      "year": 6,
+      "pdp": 25,
+      "unit": "KELESTARIAN ALAM",
+      "manifest_sp": [
+        "2.1.1",
+        "2.1.2",
+        "2.3.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-26",
+      "year": 6,
+      "pdp": 26,
+      "unit": "Projek Seni Muzik 2 — Perancangan",
+      "manifest_sp": [
+        "5.1.1",
+        "5.1.4"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-27",
+      "year": 6,
+      "pdp": 27,
+      "unit": "Projek Seni Muzik 2 — Persembahan",
+      "manifest_sp": [
+        "5.1.2",
+        "5.1.3",
+        "5.1.4"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-28",
+      "year": 6,
+      "pdp": 28,
+      "unit": "KELESTARIAN ALAM",
+      "manifest_sp": [
+        "2.4.1",
+        "2.2.1",
+        "2.2.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-29",
+      "year": 6,
+      "pdp": 29,
+      "unit": "KELESTARIAN ALAM",
+      "manifest_sp": [
+        "2.4.1",
+        "2.4.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-30",
+      "year": 6,
+      "pdp": 30,
+      "unit": "RINDU",
+      "manifest_sp": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-31",
+      "year": 6,
+      "pdp": 31,
+      "unit": "RINDU",
+      "manifest_sp": [
+        "2.3.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-32",
+      "year": 6,
+      "pdp": 32,
+      "unit": "RINDU",
+      "manifest_sp": [
+        "2.4.1",
+        "2.4.2",
+        "2.2.1"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-33",
+      "year": 6,
+      "pdp": 33,
+      "unit": "RINDU",
+      "manifest_sp": [
+        "2.1.1",
+        "2.1.2",
+        "2.2.2",
+        "2.4.1",
+        "2.4.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-34",
+      "year": 6,
+      "pdp": 34,
+      "unit": "Pengukuhan Akhir Tahun — Rekoder Ensemble (cadangan)",
+      "manifest_sp": [
+        "2.4.1",
+        "2.4.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    },
+    {
+      "pdp_id": "MZ-Y6-35",
+      "year": 6,
+      "pdp": 35,
+      "unit": "Penilaian dan Refleksi Akhir — Muzik Klasik Barat (cadangan)",
+      "manifest_sp": [
+        "4.1.1",
+        "4.1.2"
+      ],
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "semantic_alignment_verified": false,
+      "official_approval": false
+    }
+  ]
+}

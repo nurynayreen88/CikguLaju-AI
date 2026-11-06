@@ -415,6 +415,34 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
             self.assertEqual(matched, counts[year])
         self.assertEqual(len({x["criterion"] for x in overlay.values()}), 81)
 
+    def test_music_175_sp_code_source_presence_matrix(self):
+        audit = json.loads((MUSIC / "rpt_rph_2027" / "DSKP_SP_CODE_PRESENCE_175_20261106.json").read_text(encoding="utf-8"))
+        self.assertEqual(audit["summary"]["rph_count"], 175)
+        self.assertEqual(audit["summary"]["sp_present_rph"], 173)
+        self.assertEqual(audit["summary"]["sp_absent_rph"], 2)
+        self.assertEqual(audit["summary"]["conflicted_pdps"], ["MZ-Y4-21", "MZ-Y4-24"])
+        self.assertEqual(len(audit["records"]), 175)
+        seen = set()
+        for year in range(2, 7):
+            manifest = json.loads((MUSIC / "rpt_rph_2027" / f"year{year}" / "pdp_manifest.json").read_text(encoding="utf-8"))
+            year_records = [r for r in audit["records"] if r["year"] == year]
+            self.assertEqual(len(year_records), 35)
+            self.assertEqual(audit["per_year"][str(year)]["without_unknown_codes"], 33 if year == 4 else 35)
+            for row, original in zip(year_records, manifest["pdps"]):
+                self.assertEqual(row["pdp_id"], original["pdp_id"])
+                self.assertEqual(row["manifest_sp"], original["sp"])
+                self.assertFalse(row["semantic_alignment_verified"])
+                self.assertFalse(row["official_approval"])
+                self.assertNotIn(row["pdp_id"], seen)
+                seen.add(row["pdp_id"])
+                if row["pdp_id"] in ("MZ-Y4-21", "MZ-Y4-24"):
+                    self.assertEqual(row["code_text_presence"], "SP_NOT_FOUND_IN_MUSIC_DSKP_EXTRACTED_TEXT")
+                    self.assertEqual(row["proposed_dskp_printed_sp"], original["dskp_source_printed_sp"])
+                    self.assertFalse(original["dskp_crosswalk_approved"])
+                else:
+                    self.assertEqual(row["sp_not_found_in_source"], [])
+        self.assertEqual(len(seen), 175)
+
     def test_muzik_2027_day_index_zero_day_slots_all_states(self):
         index = json.loads((MUSIC / "rpt_rph_2027" / "KALENDAR_2027_HARI_PDP_16_NEGERI_AUDIT.json").read_text(encoding="utf-8"))
         self.assertEqual(index["source_day_record_count"], 5840)
