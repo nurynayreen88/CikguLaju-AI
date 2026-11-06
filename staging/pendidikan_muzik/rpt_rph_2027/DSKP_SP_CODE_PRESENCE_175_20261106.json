@@ -5,7 +5,8 @@
   "notices": [
     "Presence of numeric SP string in the extracted DSKP does NOT verify pedagogical correspondence, edition, musical notation, or release rights.",
     "Source DSKP Year4 internally prints 3.2.x under SK3.1, which requires authoritative reconciliation before publishing.",
-    "All 175 RPH are still DRAFT."
+    "All 175 RPH are still DRAFT.",
+    "Year4 RPT draft now uses printed DSKP/Textbook Music SP for PdP21/24; legacy RPT codes preserved in source_rpt_original_sp. Internal SK3.1/SP3.2.x numbering discrepancy remains unapproved."
   ],
   "per_year": {
     "2": {
@@ -27,13 +28,9 @@
     "4": {
       "rph_count": 35,
       "sp_codes_in_source": 19,
-      "without_unknown_codes": 33,
-      "with_unknown_codes": 2,
-      "unknown_codes": [
-        "3.1.1",
-        "3.1.2",
-        "3.1.3"
-      ],
+      "without_unknown_codes": 35,
+      "with_unknown_codes": 0,
+      "unknown_codes": [],
       "source_url": "https://drive.google.com/file/d/1C0e_KVtPA3bx7dlFiFEaAyT94RWzQVob/view"
     },
     "5": {
@@ -55,9 +52,10 @@
   },
   "summary": {
     "rph_count": 175,
-    "sp_present_rph": 173,
-    "sp_absent_rph": 2,
-    "conflicted_pdps": [
+    "sp_present_rph": 175,
+    "sp_absent_rph": 0,
+    "conflicted_pdps": [],
+    "source_numbering_discrepancy_pdps": [
       "MZ-Y4-21",
       "MZ-Y4-24"
     ]
@@ -1286,14 +1284,11 @@
       "pdp": 21,
       "unit": "INDAHNYA DASAR LAUT",
       "manifest_sp": [
-        "3.1.2",
-        "3.1.3"
+        "3.2.2",
+        "3.2.3"
       ],
-      "sp_not_found_in_source": [
-        "3.1.2",
-        "3.1.3"
-      ],
-      "code_text_presence": "SP_NOT_FOUND_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
       "semantic_alignment_verified": false,
       "official_approval": false,
       "proposed_dskp_printed_sp": [
@@ -1304,7 +1299,12 @@
         "3.2.2",
         "3.2.3"
       ],
-      "source_conflict_note": "Music DSKP SK 3.1 prints SP 3.2.x; combined Kesenian Year4 book prints same 3.2.x for Music creativity. Existing RPT 3.1.x not present in Music DSKP. Do not approve automatically."
+      "source_conflict_note": "Music DSKP SK 3.1 prints SP 3.2.x; combined Kesenian Year4 book prints same 3.2.x for Music creativity. Existing RPT 3.1.x not present in Music DSKP. Do not approve automatically.",
+      "source_rpt_original_sp": [
+        "3.1.2",
+        "3.1.3"
+      ],
+      "source_sk_sp_numbering_unresolved": true
     },
     {
       "pdp_id": "MZ-Y4-22",
@@ -1340,16 +1340,12 @@
       "pdp": 24,
       "unit": "HELO, HELO APA KHABAR?",
       "manifest_sp": [
-        "3.1.1",
-        "3.1.2",
-        "3.1.3"
+        "3.2.1",
+        "3.2.2",
+        "3.2.3"
       ],
-      "sp_not_found_in_source": [
-        "3.1.1",
-        "3.1.2",
-        "3.1.3"
-      ],
-      "code_text_presence": "SP_NOT_FOUND_IN_MUSIC_DSKP_EXTRACTED_TEXT",
+      "sp_not_found_in_source": [],
+      "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
       "semantic_alignment_verified": false,
       "official_approval": false,
       "proposed_dskp_printed_sp": [
@@ -1362,7 +1358,13 @@
         "3.2.2",
         "3.2.3"
       ],
-      "source_conflict_note": "Music DSKP SK 3.1 prints SP 3.2.x; combined Kesenian Year4 book prints same 3.2.x for Music creativity. Existing RPT 3.1.x not present in Music DSKP. Do not approve automatically."
+      "source_conflict_note": "Music DSKP SK 3.1 prints SP 3.2.x; combined Kesenian Year4 book prints same 3.2.x for Music creativity. Existing RPT 3.1.x not present in Music DSKP. Do not approve automatically.",
+      "source_rpt_original_sp": [
+        "3.1.1",
+        "3.1.2",
+        "3.1.3"
+      ],
+      "source_sk_sp_numbering_unresolved": true
     },
     {
       "pdp_id": "MZ-Y4-25",
