@@ -167,32 +167,32 @@
       "sp": {
         "1.1.1": "Menjelaskan perubahan fizikal lelaki dan perempuan apabila memasuki alam remaja",
         "1.1.2": "Mengaplikasikan cara menghargai perubahan fizikal sebagai remaja lelaki dan perempuan.",
-        "1.1.3": "Membuat penilaian terhadap perubahan diri sebagai remaja lelaki dan perempuan untuk diterima serta dihargai. 1 Menyatakan perubahan fizikal lelaki dan perempuan apabila memasuki alam remaja.",
+        "1.1.3": "Membuat penilaian terhadap perubahan diri sebagai remaja lelaki dan perempuan untuk diterima serta dihargai.",
         "1.2.1": "Memahami situasi yang mendorong kepada tingkah laku seksual.",
         "1.2.2": "Mengaplikasikan kemahiran asertif dalam menangani tingkah laku seksual.",
         "1.2.3": "Menganalisis risiko tingkah laku seksual.",
-        "1.2.4": "Menilai kesan tingkah laku seksual terhadap diri dan keluarga. 1 Menyatakan contoh tingkah laku seksual.",
+        "1.2.4": "Menilai kesan tingkah laku seksual terhadap diri dan keluarga.",
         "2.1.1": "Mengetahui tentang bahaya dadah.",
         "2.1.2": "Membincangkan punca penyalahgunaan dadah.",
         "2.1.3": "Mengaplikasikan kemahiran berkata TIDAK kepada penyalahgunaan dadah.",
-        "2.1.4": "Menganalisis kesan penyalahgunaan dadah kepada diri, keluarga dan masyarakat. 1 Menyatakan bahaya dadah.",
+        "2.1.4": "Menganalisis kesan penyalahgunaan dadah kepada diri, keluarga dan masyarakat.",
         "3.1.1": "Memahami perubahan emosi dan naluri seksual remaja.",
         "3.1.2": "Mengaplikasikan kemahiran mengurus perubahan emosi remaja dengan cara yang positif.",
-        "3.1.3": "Menjana idea cara mengurus naluri seksual melalui aktiviti berfaedah. 1 Mengenal pasti perubahan emosi dan naluri seksual remaja.",
+        "3.1.3": "Menjana idea cara mengurus naluri seksual melalui aktiviti berfaedah.",
         "4.1.1": "Menjelaskan kepentingan peranan remaja dalam keluarga.",
         "4.1.2": "Membincangkan perubahan emosi dengan perubahan fizikal keluarga.",
-        "4.1.3": "Menilai kepentingan hubungan kekeluargaan. 1 Menyatakan peranan remaja dalam keluarga.",
+        "4.1.3": "Menilai kepentingan hubungan kekeluargaan.",
         "5.1.1": "Mengetahui jenis tekanan yang dihadapi rakan sebaya.",
         "5.1.2": "Membincangkan tekanan positif dan tekanan negatif yang dihadapi rakan sebaya berdasarkan situasi.",
-        "5.1.3": "Menilai cara mengurus tekanan negatif yang dihadapi rakan sebaya. 1 Menyatakan jenis tekanan dihadapi rakan sebaya.",
+        "5.1.3": "Menilai cara mengurus tekanan negatif yang dihadapi rakan sebaya.",
         "6.1.1": "Mengetahui penyakit bawaan makanan, penyakit bawaan air, Hepatitis, serta HIV dan AIDS. 1 Menyenaraikan penyakit bawaan makanan, penyakit bawaan air, Hepatitis, serta HIV dan AIDS.",
         "6.1.2": "Membincangkan simptom penyakit bawaan makanan, penyakit bawaan air, Hepatitis, serta HIV dan AIDS.",
         "6.1.3": "Menjana idea cara mencegah penyakit bawaan makanan, penyakit bawaan air, Hepatitis, serta HIV dan AIDS. 3 4 Menjelaskan melalui contoh pencegahan penyakit bawaan makanan, penyakit bawaan air, Hepatitis, serta HIV dan AIDS. 5 Membuat penilaian langkah-langkah pencegahan penyakit bawaan makanan, penyakit bawaan air, Hepatitis, serta HIV dan AIDS. 6 Menghasilkan dan menyebar luas karya secara kreatif berkaitan cara mengawal penyakit bawaan makanan, penyakit bawaan air, Hepatitis, serta HIV dan AIDS.",
         "7.1.1": "Mengetahui maksud komuniti.",
         "7.1.2": "Membincangkan pengaruh dalam komuniti terhadap keselamatan diri.",
-        "7.1.3": "Menjana idea cara menangani pengaruh dalam komuniti yang mengancam keselamatan diri. 1 Menyatakan maksud komuniti.",
+        "7.1.3": "Menjana idea cara menangani pengaruh dalam komuniti yang mengancam keselamatan diri.",
         "8.1.1": "Menyatakan maksud makanan segar dan makanan yang diproses.",
-        "8.1.2": "Meramal kesan pengambilan makanan yang diproses secara berlebihan. 1 Menyatakan maksud makanan segar dan makanan yang diproses.",
+        "8.1.2": "Meramal kesan pengambilan makanan yang diproses secara berlebihan.",
         "8.1.3": "Menilai makanan dan amalan pemakanan yang seimbang untuk mengurangkan risiko penyakit. 4 Membuat penilaian terhadap kesan pengambilan makanan yang diproses. 5 Mengesyorkan makanan dan amalan pemakanan yang seimbang untuk mengurangkan risiko penyakit. 6 Mereka cipta menu berkhasiat dengan menggunakan makanan segar.",
         "9.1.1": "Mengetahui kandungan dan fungsi peti pertolongan cemas.",
         "9.1.2": "Mengaplikasikan penggunaan peti pertolongan cemas dalam bantu mula. 1 Menyenaraikan kandungan dan fungsi peti pertolongan cemas."
@@ -212,5 +212,72 @@
     "5.3.2",
     "5.1.2",
     "5.1.3"
-  ]
+  ],
+  "extraction_corrections": [
+    {
+      "component": "PK",
+      "sp_code": "1.1.3",
+      "original_dskp_extraction": "Membuat penilaian terhadap perubahan diri sebagai remaja lelaki dan perempuan untuk diterima serta dihargai. 1 Menyatakan perubahan fizikal lelaki dan perempuan apabila memasuki alam remaja.",
+      "removed_standard_prestasi_text": "1 Menyatakan perubahan fizikal lelaki dan perempuan apabila memasuki alam remaja.",
+      "corrected_sp_text": "Membuat penilaian terhadap perubahan diri sebagai remaja lelaki dan perempuan untuk diterima serta dihargai.",
+      "reason": "DSKP source PDF table text extraction merged Standard Pembelajaran with Standard Prestasi Tahap 1; page-level manual approval still pending."
+    },
+    {
+      "component": "PK",
+      "sp_code": "1.2.4",
+      "original_dskp_extraction": "Menilai kesan tingkah laku seksual terhadap diri dan keluarga. 1 Menyatakan contoh tingkah laku seksual.",
+      "removed_standard_prestasi_text": "1 Menyatakan contoh tingkah laku seksual.",
+      "corrected_sp_text": "Menilai kesan tingkah laku seksual terhadap diri dan keluarga.",
+      "reason": "DSKP source PDF table text extraction merged Standard Pembelajaran with Standard Prestasi Tahap 1; page-level manual approval still pending."
+    },
+    {
+      "component": "PK",
+      "sp_code": "2.1.4",
+      "original_dskp_extraction": "Menganalisis kesan penyalahgunaan dadah kepada diri, keluarga dan masyarakat. 1 Menyatakan bahaya dadah.",
+      "removed_standard_prestasi_text": "1 Menyatakan bahaya dadah.",
+      "corrected_sp_text": "Menganalisis kesan penyalahgunaan dadah kepada diri, keluarga dan masyarakat.",
+      "reason": "DSKP source PDF table text extraction merged Standard Pembelajaran with Standard Prestasi Tahap 1; page-level manual approval still pending."
+    },
+    {
+      "component": "PK",
+      "sp_code": "3.1.3",
+      "original_dskp_extraction": "Menjana idea cara mengurus naluri seksual melalui aktiviti berfaedah. 1 Mengenal pasti perubahan emosi dan naluri seksual remaja.",
+      "removed_standard_prestasi_text": "1 Mengenal pasti perubahan emosi dan naluri seksual remaja.",
+      "corrected_sp_text": "Menjana idea cara mengurus naluri seksual melalui aktiviti berfaedah.",
+      "reason": "DSKP source PDF table text extraction merged Standard Pembelajaran with Standard Prestasi Tahap 1; page-level manual approval still pending."
+    },
+    {
+      "component": "PK",
+      "sp_code": "4.1.3",
+      "original_dskp_extraction": "Menilai kepentingan hubungan kekeluargaan. 1 Menyatakan peranan remaja dalam keluarga.",
+      "removed_standard_prestasi_text": "1 Menyatakan peranan remaja dalam keluarga.",
+      "corrected_sp_text": "Menilai kepentingan hubungan kekeluargaan.",
+      "reason": "DSKP source PDF table text extraction merged Standard Pembelajaran with Standard Prestasi Tahap 1; page-level manual approval still pending."
+    },
+    {
+      "component": "PK",
+      "sp_code": "5.1.3",
+      "original_dskp_extraction": "Menilai cara mengurus tekanan negatif yang dihadapi rakan sebaya. 1 Menyatakan jenis tekanan dihadapi rakan sebaya.",
+      "removed_standard_prestasi_text": "1 Menyatakan jenis tekanan dihadapi rakan sebaya.",
+      "corrected_sp_text": "Menilai cara mengurus tekanan negatif yang dihadapi rakan sebaya.",
+      "reason": "DSKP source PDF table text extraction merged Standard Pembelajaran with Standard Prestasi Tahap 1; page-level manual approval still pending."
+    },
+    {
+      "component": "PK",
+      "sp_code": "7.1.3",
+      "original_dskp_extraction": "Menjana idea cara menangani pengaruh dalam komuniti yang mengancam keselamatan diri. 1 Menyatakan maksud komuniti.",
+      "removed_standard_prestasi_text": "1 Menyatakan maksud komuniti.",
+      "corrected_sp_text": "Menjana idea cara menangani pengaruh dalam komuniti yang mengancam keselamatan diri.",
+      "reason": "DSKP source PDF table text extraction merged Standard Pembelajaran with Standard Prestasi Tahap 1; page-level manual approval still pending."
+    },
+    {
+      "component": "PK",
+      "sp_code": "8.1.2",
+      "original_dskp_extraction": "Meramal kesan pengambilan makanan yang diproses secara berlebihan. 1 Menyatakan maksud makanan segar dan makanan yang diproses.",
+      "removed_standard_prestasi_text": "1 Menyatakan maksud makanan segar dan makanan yang diproses.",
+      "corrected_sp_text": "Meramal kesan pengambilan makanan yang diproses secara berlebihan.",
+      "reason": "DSKP source PDF table text extraction merged Standard Pembelajaran with Standard Prestasi Tahap 1; page-level manual approval still pending."
+    }
+  ],
+  "extraction_quality_status": "DRAF_REQUIRES_SOURCE_PAGE_REVIEW"
 }
