@@ -1,0 +1,103 @@
+{
+  "manifest_version": "2026-11-07-full-bm-kssm-stage-01",
+  "for_runtime": false,
+  "requires_manual_approval": true,
+  "target_school_year": 2027,
+  "scope": "Bahasa Melayu Sekolah Menengah KSSM Tingkatan 2-5",
+  "total_rph_count": 460,
+  "packs": [
+    {
+      "tingkatan": 2,
+      "file": "bm_t2_rpt_full_177_draft.json",
+      "rph_count": 177,
+      "unique_sp": 52,
+      "source_mode": "RPT_2025_SOURCE_SEQUENCE",
+      "source_rpt": "https://docs.google.com/document/d/19Hb9U6gY_ghzVUF-B6_U-ks6C64v7qEC/edit",
+      "source_dskp": "https://drive.google.com/file/d/1xtVFZirPVpMV6GMCs2ZNO46dBX0xl4iw/view",
+      "flags": {
+        "CURATED_ORIGINAL_PILOT": 5,
+        "BOOK_TEXT_PENDING": 5,
+        "PAGE_ORDER_REVIEW": 2,
+        "BOOK_PAGE_UNVERIFIED": 57,
+        "SP_SKILL_MISMATCH": 1,
+        "RPT_DSKP_TEXT_DIFFERENCE": 1
+      },
+      "release_state": "DRAF_SEMAK_INDIVIDU_BUKU_TEKS"
+    },
+    {
+      "tingkatan": 3,
+      "file": "bm_t3_rpt_full_079_draft.json",
+      "rph_count": 79,
+      "unique_sp": 39,
+      "source_mode": "RPT_2025_SOURCE_SEQUENCE",
+      "source_rpt": "https://docs.google.com/document/d/1iRVbaH_kHD8K3IlLPIXsguVEUs3Bk0D4/edit",
+      "source_dskp": "https://drive.google.com/file/d/1WkLzsgqz9pbqC2fIblmRI7oAI8aMnhvO/view",
+      "flags": {
+        "SKILL_SP_CATEGORY_MISMATCH": 14,
+        "RPT_SP_TEXT_DISCREPANCY": 1,
+        "PAGE_ORDER_REVIEW": 3,
+        "BOOK_PAGE_UNVERIFIED": 19,
+        "SP_SKILL_MISMATCH": 1
+      },
+      "release_state": "DRAF_SEMAK_INDIVIDU_BUKU_TEKS"
+    },
+    {
+      "tingkatan": 4,
+      "file": "bm_t4_dskp_54sp_108rph_draft.json",
+      "rph_count": 108,
+      "unique_sp": 54,
+      "source_mode": "DSKP_SP_COVERAGE_2_VARIANTS_PER_SP_NOT_RPT_SEQUENCE",
+      "source_rpt": null,
+      "source_dskp": "https://drive.google.com/file/d/1j0hOd_RQYd4w3p8fj3yCmxc-UyabDQO5/view",
+      "flags": {
+        "RPT_SEQUENCE_UNVERIFIED": 108,
+        "TEXTBOOK_PAGE_NOT_VERIFIED": 108
+      },
+      "release_state": "DRAF_RPT_BUKU_BELUM_SEMAK"
+    },
+    {
+      "tingkatan": 5,
+      "file": "bm_t5_dskp_48sp_96rph_draft.json",
+      "rph_count": 96,
+      "unique_sp": 48,
+      "source_mode": "DSKP_SP_COVERAGE_2_VARIANTS_PER_SP_NOT_RPT_SEQUENCE",
+      "source_rpt": "https://docs.google.com/document/d/1C8M2i8ENdbKS-jFohrJBq4SJxZ98gkv3/edit",
+      "source_dskp": "https://drive.google.com/file/d/1j0hOd_RQYd4w3p8fj3yCmxc-UyabDQO5/view",
+      "flags": {
+        "RPT_SEQUENCE_UNVERIFIED": 96,
+        "TEXTBOOK_PAGE_NOT_VERIFIED": 96
+      },
+      "release_state": "DRAF_RPT_BUKU_BELUM_SEMAK"
+    }
+  ],
+  "source_policy": {
+    "tingkatan1": "KP2027 separated; no verified official SP textbook import yet; DO NOT use KSSM T1 as 2027",
+    "tingkatan2and3": "RPT 2025 lesson source cues; lesson numbers here are source-sequence proposals, NOT school-year scheduled dates. SP codes require individual cross-check and book original.",
+    "tingkatan4and5": "2 draft RPH variations per official SP, not full school-year RPT. Align to official RPT and actual textbook before READY; no page numbers invented."
+  },
+  "non_destructive": {
+    "telegram": false,
+    "web": false,
+    "active_database": false,
+    "main_branch": false,
+    "source_archive_retained": true,
+    "duplicate_import_warning": "ONLY four files listed in packs should be considered for eventual controlled import. Older 5, 60, 120 and 180 packs are archives, not additional records."
+  },
+  "required_gates": [
+    "Manual line-by-line SK/SP audit",
+    "Textbook book identity, page, edition and availability review",
+    "RPT 2027 A/B schedule integration and holiday rules",
+    "Subject-specific activities and measurable PBD quality review",
+    "DOCX+PDF render and A4 page check",
+    "Runtime common DB adapter, no duplicate import",
+    "GitHub CI pass",
+    "User sign-off to mark READY",
+    "Manual staged deployment Telegram then Web"
+  ],
+  "open_issues": [
+    "T2 and T3 RPT have source discrepancies and repeated entries; audit flags in each lesson.",
+    "BM4 independent RPT source mapping and textbook pages unverified.",
+    "BM5 SP 1.5.2 absent from retrieved RPT 2025, but present in DSKP; must not silently omit.",
+    "Tingkatan 1 KP2027 BM official final curriculum / textbook not yet verified."
+  ]
+}
