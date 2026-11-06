@@ -15,6 +15,8 @@ on:
       - "tools/render_sains_y3_45_review_pack_20261106.py"
       - "tools/check_sains_y3_word_pages_20261106.py"
       - "tools/render_sains_rpt_2027_ab_review_20261106.py"
+      - "tools/audit_sains_342_pdp_release_gate_20261106.py"
+      - "tests/test_sains_342_pdp_release_gate_20261106.py"
       - "audits/sains_rpt_2027_calendar_windows_20261106.json"
       - "tests/test_sains_rpt_2027_calendar_windows_20261106.py"
       - "tools/audit_sains_25_82_delta_20261106.py"
@@ -85,6 +87,17 @@ jobs:
         run: python tools/render_sains_rpt_2027_ab_review_20261106.py
       - name: Verify RPT 2027 A/B group calendar windows and draft document covers
         run: python -m unittest discover -s tests -p 'test_sains_rpt_2027_calendar_windows_20261106.py' -v
+      - name: Audit all 342 source PdP against explicit readiness blockers
+        run: |
+          python tools/audit_sains_342_pdp_release_gate_20261106.py
+          python -m unittest discover -s tests -p 'test_sains_342_pdp_release_gate_20261106.py' -v
+      - name: Upload all 342 PdP source-only release audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: SAINS_T2_T6_342_PDP_RELEASE_GATE_HOLD
+          path: build/sains_2027_342_pdp_release_audit
+          retention-days: 14
+          if-no-files-found: error
       - name: Upload RPT A/B review-only documents
         uses: actions/upload-artifact@v4
         with:
