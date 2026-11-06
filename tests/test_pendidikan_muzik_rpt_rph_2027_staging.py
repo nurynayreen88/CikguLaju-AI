@@ -701,7 +701,7 @@ class MusicNativeLayoutStagingTests(unittest.TestCase):
                 rows = {r["PdP ID"]: r for r in csv.DictReader(handle)}
             self.assertEqual(len(rows), 35)
             if year == 5:
-                self.assertTrue(all("RPT rujukan sahaja" not in r["Semakan"] for r in rows.values()))
+                self.assertTrue(all("RPT rujukan sahaja" not in r["Status Semakan"] for r in rows.values()))
             else:
                 for n in (12, 13, 26, 27):
                     self.assertIn("projek seni muzik rasmi disemak teks", rows[f"MZ-Y2-{n:02d}"]["Semakan"])
