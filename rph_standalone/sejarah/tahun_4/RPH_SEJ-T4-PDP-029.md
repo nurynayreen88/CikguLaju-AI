@@ -14,7 +14,7 @@
 
 **Set Induksi (5 min):** Guru mempamerkan ilustrasi penemuan tapak pembukaan Melaka dan lokasi muara sungai. Murid menyatakan satu jangkaan dan satu persoalan tentang Unit 9: Pengasas Kesultanan Melayu Melaka.
 
-**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 126–127: Pembukaan Melaka di Sungai Bertam dan naratif pelanduk putih. Murid mengenal pasti peristiwa utama pembukaan Melaka menurut buku teks. Guru menyemak jawapan awal berpandukan 5.2.3.
+**Aktiviti 1 (20 min):** Guru membimbing semakan bukti hlm. 126–127: Pembukaan Melaka di Sungai Bertam dan naratif pelanduk putih sebagai cerita bersumber. Murid mengenal pasti peristiwa utama pembukaan Melaka menurut buku teks. Guru menyemak jawapan awal berpandukan 5.2.3.
 
 **Aktiviti 2 (20 min):** Guru meminta dua bukti dari hlm. 126–127 bagi menyokong perbandingan. Murid menghasilkan urutan gambar peristiwa dan menilai faktor strategik lokasi Melaka. Guru membimbing pembetulan salah faham menggunakan bukti. Murid menjelaskan kepentingan sumbangan pengasas Kesultanan Melayu Melaka.
 
