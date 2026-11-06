@@ -7,7 +7,7 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 GENERIC_1 = "Guru membimbing murid menyemak sumber serta istilah Sejarah yang berkaitan."
-GENERIC_2 = re.compile(r"Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit \\d+\\.")
+GENERIC_2 = re.compile(r"Guru menyoal hubungan fakta, konteks masa atau tempat dalam Unit [0-9]+[.]")
 modified = 0
 seen = set()
 for year in (4, 5, 6):
