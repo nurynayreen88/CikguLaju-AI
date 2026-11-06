@@ -7,7 +7,10 @@ active master database on each request.
 import hmac
 import os
 from flask import Blueprint, jsonify, request
-from web_v1_dropdown_catalog import available_subject_options, unit_options, pdp_options
+from web_v1_dropdown_catalog import (
+    available_subject_options, unit_options, pdp_options,
+    bm_theme_options, bm_unit_options, bm_topic_options, bm_pdp_options,
+)
 
 
 def create_curriculum_blueprint(database_path_provider):
@@ -76,6 +79,62 @@ def create_curriculum_blueprint(database_path_provider):
     @bp.get("/internal/curriculum/v1/lessons")
     def lessons():
         return read_options("lessons")
+
+    def read_bm_hierarchy(kind):
+        """Source-only: BM hierarchy comes directly from Telegram master SQLite."""
+        required = {
+            "bm-themes": {"year", "subject"},
+            "bm-units": {"year", "subject", "theme"},
+            "bm-topics": {"year", "subject", "theme", "unit"},
+            "bm-pdp": {"year", "subject", "theme", "unit", "topic"},
+        }[kind]
+        try:
+            args = request.args
+            if (set(args) != required or
+                    any(len(args.getlist(k)) != 1 for k in required) or
+                    args["subject"] != "BM" or
+                    args["year"] not in "123456" or len(args["year"]) != 1):
+                raise ValueError("Invalid BM hierarchy request")
+            year = int(args["year"])
+            for field in ("theme", "unit", "topic"):
+                if field in args and (not args[field].strip()
+                                      or len(args[field]) > 300):
+                    raise ValueError("Invalid BM hierarchy key")
+            db = database_path_provider()
+            if not db:
+                raise FileNotFoundError("Master database unavailable")
+            if kind == "bm-themes":
+                items = bm_theme_options(db, year)
+            elif kind == "bm-units":
+                items = bm_unit_options(db, year, args["theme"])
+            elif kind == "bm-topics":
+                items = bm_topic_options(db, year, args["theme"], args["unit"])
+            else:
+                items = bm_pdp_options(db, year, args["theme"],
+                                       args["unit"], args["topic"])
+            if len(items) > 500:
+                raise ValueError("Oversized BM hierarchy")
+            return jsonify({"source": "telegram-runtime-v1", "items": items})
+        except ValueError:
+            return jsonify({"error": "invalid BM selection"}), 400
+        except Exception:
+            return jsonify({"error": "verified BM hierarchy unavailable"}), 503
+
+    @bp.get("/internal/curriculum/v1/bm-themes")
+    def bm_themes():
+        return read_bm_hierarchy("bm-themes")
+
+    @bp.get("/internal/curriculum/v1/bm-units")
+    def bm_units():
+        return read_bm_hierarchy("bm-units")
+
+    @bp.get("/internal/curriculum/v1/bm-topics")
+    def bm_topics():
+        return read_bm_hierarchy("bm-topics")
+
+    @bp.get("/internal/curriculum/v1/bm-pdp")
+    def bm_pdps():
+        return read_bm_hierarchy("bm-pdp")
 
     @bp.get("/internal/curriculum/v1/approved-materials")
     def approved_materials():
