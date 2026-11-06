@@ -393,6 +393,25 @@ def create_blueprint():
             teacher = _teacher_context()
         except (ValueError, TypeError):
             return None, (jsonify({"error": "Pilihan Tahun/Subjek/Unit/PdP tidak sah"}), 400)
+        # BM and Pendidikan Islam use real, verified RPT rows in the
+        # authoritative Telegram master DB. Do not demand standalone English
+        # source files for these subjects or generate a Web-side RPH.
+        if subject in ("BM", "PI"):
+            from web.native_verified_rpt_rph_client import (
+                verified_rpt_available, NativeRPHUnavailable,
+            )
+            try:
+                verified_rpt_available(year, subject, unit, token)
+            except (NativeRPHUnavailable, ValueError):
+                return None, (jsonify({
+                    "error": "RPH subjek ini belum boleh disahkan daripada RPT utama Telegram bagi PdP dipilih.",
+                    "code": "TELEGRAM_RPT_RPH_NOT_READY",
+                }), 503)
+            return {
+                "source": "telegram-verified-rpt-master",
+                "year": year, "subject": subject, "unit": unit,
+                "lesson": int(token), "teacher": teacher,
+            }, None
         result = verified_preview(year, subject, unit, token, component)
         if result is None:
             return None, (jsonify({"error": "RPH tepat untuk Lesson/PdP ini belum tersedia di Web. Tiada RPH generik atau daripada tajuk lain digunakan.",
@@ -459,7 +478,11 @@ def create_blueprint():
         """
         from web.native_telegram_rph_client import request_native_rph, NativeRPHUnavailable
         try:
-            document = request_native_rph(selected, fmt)
+            if selected.get("source") == "telegram-verified-rpt-master":
+                from web.native_verified_rpt_rph_client import request_verified_rpt_rph
+                document = request_verified_rpt_rph(selected, fmt)
+            else:
+                document = request_native_rph(selected, fmt)
         except (NativeRPHUnavailable, ValueError):
             return None, (jsonify({
                 "error": "Penjana RPH Telegram belum dapat dihubungi. Pilihan guru dikekalkan; cuba semula.",
