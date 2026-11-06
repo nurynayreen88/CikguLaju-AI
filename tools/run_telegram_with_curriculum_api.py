@@ -373,6 +373,19 @@ except Exception as _psv_provisional_exc:
     print("PSV provisional RPH route unavailable:",
           type(_psv_provisional_exc).__name__, flush=True)
 
+# Sejarah Years 4–6 user-facing DRAF proposals. Uses existing Telegram
+# class/date, native Word/PDF and quota checks. Source and approval flags are
+# immutable; switch off instantly with CIKGULAJU_SEJARAH_2027_USER_ENABLED=0.
+try:
+    from web.sejarah_2027_user_runtime import install as install_sejarah_2027
+    SEJARAH_2027_USER_BRIDGE_ACTIVE = bool(
+        install_sejarah_2027(vars(telegram_runtime)))
+except Exception as _sej27_exc:
+    SEJARAH_2027_USER_BRIDGE_ACTIVE = False
+    print("Sejarah Year 4-6 user bridge unavailable:",
+          type(_sej27_exc).__name__, flush=True)
+
+
 # Authenticated Web -> native Telegram RPH document generation.
 # Disabled unless CIKGULAJU_WEB_NATIVE_RPH_ENABLED=1; fail closed.
 # This does not alter Telegram webhook/callbacks, DB, trials, or payments.
