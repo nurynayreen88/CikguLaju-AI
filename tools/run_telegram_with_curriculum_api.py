@@ -429,6 +429,19 @@ except Exception as _web_receipt_notice_exc:
           type(_web_receipt_notice_exc).__name__, flush=True)
 
 
+# Authenticated Web referral registration notice to Telegram admin. Does not
+# create users, alter payment status or change existing signup notifications.
+try:
+    from web.telegram_web_referral_admin_notice import create_web_referral_signup_notice
+    telegram_runtime.app.register_blueprint(
+        create_web_referral_signup_notice(telegram_runtime))
+    TELEGRAM_WEB_REFERRAL_SIGNUP_NOTICE_REGISTERED = True
+except Exception as _web_referral_admin_exc:
+    TELEGRAM_WEB_REFERRAL_SIGNUP_NOTICE_REGISTERED = False
+    print("Web referral admin notice unavailable:",
+          type(_web_referral_admin_exc).__name__, flush=True)
+
+
 # Add the Web URL after all existing Telegram menu wrappers. Preserve
 # private referral access, manual PDF, payment and other callback handlers.
 try:
