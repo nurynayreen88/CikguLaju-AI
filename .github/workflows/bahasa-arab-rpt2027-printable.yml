@@ -1,0 +1,66 @@
+name: BA RPT2027 printable A/B (draft only)
+on:
+  pull_request:
+    paths:
+      - "scripts/build_bahasa_arab_rpt2027_printable.py"
+      - ".github/workflows/bahasa-arab-rpt2027-printable.yml"
+      - "rpt_2027/bahasa_arab/**"
+  push:
+    branches:
+      - staging/bahasa-arab-rpt2027-printable-a-b-20261106
+    paths:
+      - "scripts/build_bahasa_arab_rpt2027_printable.py"
+      - ".github/workflows/bahasa-arab-rpt2027-printable.yml"
+      - "rpt_2027/bahasa_arab/**"
+  workflow_dispatch:
+
+jobs:
+  render-rpt-drafts:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install document fonts and tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-hosny-amiri fonts-crosextra-carlito poppler-utils zip
+          python -m pip install --disable-pip-version-check python-docx==1.2.0
+      - name: Build 10 A/B RPT Word drafts from existing CSV
+        run: |
+          python scripts/build_bahasa_arab_rpt2027_printable.py --output-dir /tmp/ba-rpt-2027
+          test "$(find /tmp/ba-rpt-2027 -maxdepth 1 -name '*.docx' | wc -l)" -eq 10
+      - name: Convert to PDFs and verify all 10 are readable
+        run: |
+          mkdir -p /tmp/ba-rpt-2027/pdf
+          libreoffice -env:UserInstallation=file:///tmp/ba_rpt_loprofile_20261106 --headless --convert-to pdf --outdir /tmp/ba-rpt-2027/pdf /tmp/ba-rpt-2027/*.docx
+          test "$(find /tmp/ba-rpt-2027/pdf -maxdepth 1 -name '*.pdf' | wc -l)" -eq 10
+          for source in /tmp/ba-rpt-2027/*.docx; do
+            file="$(basename "$source" .docx)"
+            pdf="/tmp/ba-rpt-2027/pdf/$file.pdf"
+            test -s "$pdf"
+            pages="$(pdfinfo "$pdf" | awk '/^Pages:/ { print $2 }')"
+            # Cover + exactly four Unit pages; catch accidental blank pages.
+            test "$pages" -eq 5
+            pdftotext "$pdf" - | grep -q "RANCANGAN PENGAJARAN TAHUNAN"
+            pdftotext "$pdf" - | grep -q "PdP"
+          done
+      - name: Pack per-year A/B RPT drafts and source manifest
+        run: |
+          mkdir -p /tmp/ba-rpt-2027/csv_source
+          cp rpt_2027/bahasa_arab/rpt_2027_KUMPULAN_A_INDEKS_PDP_DRAF.csv /tmp/ba-rpt-2027/csv_source/
+          cp rpt_2027/bahasa_arab/rpt_2027_KUMPULAN_B_INDEKS_PDP_DRAF.csv /tmp/ba-rpt-2027/csv_source/
+          cp rpt_2027/bahasa_arab/unit_sequence_DRAF_20261105.csv /tmp/ba-rpt-2027/csv_source/
+          cd /tmp/ba-rpt-2027
+          zip -q -r CikguLaju_Bahasa_Arab_RPT2027_T2-T6_A_B_DRAF_PREMERGE.zip *.docx pdf csv_source RPT_BA_2027_PREMERGE_MANIFEST.json
+          test -s CikguLaju_Bahasa_Arab_RPT2027_T2-T6_A_B_DRAF_PREMERGE.zip
+      - name: Archive drafts, never deploy
+        uses: actions/upload-artifact@v4
+        with:
+          name: bahasa-arab-rpt2027-a-b-draf-premerge
+          path: /tmp/ba-rpt-2027/CikguLaju_Bahasa_Arab_RPT2027_T2-T6_A_B_DRAF_PREMERGE.zip
+          retention-days: 30
