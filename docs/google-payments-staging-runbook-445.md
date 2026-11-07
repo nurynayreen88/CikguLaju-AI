@@ -1,11 +1,18 @@
 # Google Login + Web Receipt Staging — Deployment and Acceptance Runbook
 
-**Status:** Code implementation in draft PR #447; dedicated staging deployment is NOT yet active. No production or real payment is authorized.
+**Status (7 Nov 2026):** Draft PR #447 has a dedicated, isolated Render staging service that has deployed successfully. **Google login remains DISABLED intentionally.** There is not yet a separate CikguLaju Supabase staging project or provider credentials. Live CikguLaju production and its user records remain untouched. No real payment is authorized.
+
+- Staging service: https://cikgulaju-google-payments-staging.onrender.com
+- Render service ID: `srv-dbn8hrm417fc73dr5itg`; current branch: `feature/web-google-auth-staging-445`; auto-deploy OFF.
+- `/healthz` reports process liveness, not Google login readiness.
+- `/readyz` responds 503 while the isolated OAuth/admin settings are not configured. A successful Render deploy does **not** mean that signing in with Google works.
+- `/google-staging-login` displays a non-interactive, clear Malay maintenance page (HTTP 503) when the safe Google feature gate is closed, rather than inviting the user to a broken OAuth flow.
+- Connected Supabase account was checked: CikguLaju production is the only active CikguLaju database project; no separate staging project was found. Do not reuse or rename another app's Supabase project for this purpose.
 
 ## Isolation
 Provision a **separate** Supabase staging project, in a user-confirmed organization after any cost approval. Do not reuse production CikguLaju (known only by the existing deployment configuration). Never point testing at `SUPABASE_URL` from Telegram production or the Web production service.
 
-Create a separate Render *Web Service*, not a deployment of the existing `cikgulaju-web` service:
+The separate Render *Web Service* already exists. Keep it distinct from `cikgulaju-web` production:
 - Repository: `nurynayreen88/CikguLaju-AI`
 - Branch: `feature/web-google-auth-staging-445`
 - Build: `pip install 'Flask==3.1.3' 'gunicorn==23.0.0'`
@@ -87,3 +94,16 @@ Do **not** launch real checkout, collect money, or merge this draft PR while the
 - Real-device Google OAuth/browser test with an actual staged Supabase Auth provider.
 
 This runbook describes steps; it is not a claim that staging or production deployment has occurred.
+
+
+## Pending requirements to enable login — owner-managed external credentials
+- Create a **new, isolated Supabase staging project** only after checking organization billing/eligibility. Do not activate migration SQL on the active production CikguLaju database.
+- At Google Cloud Console → Google Auth Platform → Clients, create a **Web application** OAuth client. Set authorized origin to `https://cikgulaju-google-payments-staging.onrender.com`. Add Google redirect URI **`https://<NEW_STAGING_REF>.supabase.co/auth/v1/callback`**, using the exact value displayed by Supabase Auth.
+- In new Supabase staging project → Authentication → Providers → Google, enable the provider and enter the Google client ID and **secret privately in the dashboard**.
+- Supabase Auth redirect URL allow list must contain `https://cikgulaju-google-payments-staging.onrender.com/api/auth/google/callback`; do not put the Web callback into Google's redirect-URI field.
+- In Render staging service environment, add only the staging ref/URL/publishable key/server secret and app session secret listed above, plus the known *different* production project ref for the runtime denylist. Use private environment settings; never place credentials into a chat, GitHub issue, commit or URL query.
+- Apply the four staged SQL files to the newly created staging project in the prescribed order, review security policies/RLS, then enable `CIKGULAJU_GOOGLE_AUTH_STAGING_ENABLED=1` and manually redeploy **staging only**.
+- Run an actual Google OAuth login with a fresh Google account; confirm new UUID account with 10 trial credits, repeat login idempotence, and that no Telegram user or existing paid entitlement is modified.
+- Until production-ready canonical linking and atomic RPH quota integration pass tests, **Google login must not grant access to the existing live RPH dashboard**. Do not automatically merge users by matching emails, display names or Telegram usernames.
+
+Docs checked for Google/Supabase hosted redirects: https://supabase.com/docs/guides/auth/social-sign-in/auth-google and https://supabase.com/docs/guides/auth/redirect-urls
