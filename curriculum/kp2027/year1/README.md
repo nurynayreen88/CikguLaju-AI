@@ -50,3 +50,26 @@ Ujian:
 `python -m unittest discover -s tests -p 'test_kp2027_year1_training_evidence_20261107.py' -v`.
 
 **Status terakhir: 36 calon RPH; BM 26 kod calon dari penataran; Matematik 30 kod calon dari penataran; 0/36 RPH READY.**
+
+## Sambungan audit — 7 November 2026 (Tahun 1 sahaja)
+
+### Bahasa Melayu SK: padanan Mendengar berasaskan bukti
+
+- [7 RPH SK untuk kemahiran Mendengar](bm_sk_listening_7_source_grounded_rph_20261107.json) kini ditulis secara berasingan untuk SP calon penataran **1.1.1–1.1.3** dan **1.2.1–1.2.4**. Setiap satu mempunyai objektif boleh nilai, BBM, set induksi, Aktiviti 1/2, pengukuhan/PBD, guru–murid, pembezaan dan pembentukan karakter.
+- Semakan visual PDF penataran membuktikan teks **SK berlainan daripada SJK** untuk kod 1.2.3/1.2.4. Indeks sumber yang menyatakan kedua-dua variasi: [BM SP index v2 (SK/SJK)](bm_year1_training_sp_page_index_20261107_v2_SK_SJK.json). Jangan gunakan kod sama tanpa menyebut jenis sekolah.
+- Tujuh RPH baharu ini boleh bertindih dengan tujuh draf BM editorial terdahulu. **Jangan campur atau jumlahkan sebagai lesson rasmi RPT.** Mereka adalah calon untuk mengganti draf lama setelah audit, bukan 7 PdP tambahan kurikulum.
+- Sumber bukti ialah PDF penataran Tahun 1, **bukan DK muktamad**. Nombor waktu BM tidak diisi kerana peruntukan rasmi belum disahkan.
+
+### Matematik: percanggahan antara dua bahan penataran
+
+- Slaid perbandingan 19 halaman menyebut **7 tajuk dan 30 SP** secara keseluruhan. Namun jumlah SP yang tercetak pada tujuh panel tajuk ialah **28** (5 + 6 + 2 + 3 + 3 + 5 + 4).
+- Senarai *AGIHAN KUMPULAN KUPASAN SP.xlsx* menyenaraikan **30 kod**, dengan empat kod prefiks 3.x untuk Wang, sedangkan panel Wang di slaid mengira **2 SP**. Semua enam kumpulan tajuk lain sepadan; beza tepat **2** kod belum terjawab.
+- Rekod perbezaan: [Math source count reconciliation](math_2027_source_count_reconciliation_20261107.json). **Jangan** memaksa angka 28 atau 30 dengan membuang/menambah kod tanpa teks DK asal.
+- Slaid DKP2027 pada halaman PDF 6 menyatakan **7 waktu seminggu × 30 minit**; ini bukti penataran, bukan jadual akhir sekolah tertentu.
+
+### Pintu keluaran belum dibuka
+
+- Semua rekod baharu serta master 36 masih **DRAF/HOLD** dan `approved_for_web=false` serta `approved_for_telegram=false`.
+- Tiada `app.py`, DB aktif, kuota pengguna, Telegram atau Web diubah.
+- Ujian sumber: `python -m unittest discover -s tests -p 'test_kp2027_y1_training_alignment_20261107.py' -v`.
+- Seterusnya: sahkan PDF DK BM SK dan Matematik Tahun 1, betulkan teks SP, selaraskan 36 calon dengan 7 RPH sumber-berpandu, bina turutan PdP RPT A/B hanya selepas liputan standard disahkan.
