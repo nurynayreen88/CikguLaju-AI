@@ -124,7 +124,14 @@ def _json_response(request_obj, *, timeout=8, limit=16384):
 @bp.get("/google-staging-login")
 def google_staging_login():
     if not _enabled_config():
-        return jsonify({"error": "Google staging unavailable"}), 503
+        # The staging service is live but is not configured for Google.
+        # Render a plain, NON-interactive page while preserving HTTP 503.
+        # Never offer an OAuth button or read/write real user accounts here.
+        response = make_response(send_file(
+            Path(__file__).with_name("google_staging_unavailable.html"),
+            mimetype="text/html", max_age=0), 503)
+        response.headers["Cache-Control"] = "no-store"
+        return response
     return send_file(Path(__file__).with_name("google_staging_login.html"),
                      mimetype="text/html", max_age=0)
 
