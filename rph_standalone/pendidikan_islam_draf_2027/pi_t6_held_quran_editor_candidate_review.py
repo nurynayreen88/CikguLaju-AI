@@ -73,7 +73,7 @@ def audit(root=ROOT):
         for n,item in enumerate(draft["aktiviti_utama"],1):
             assert item.startswith(str(n)+". ")
         assert all(draft[x].strip() for x in ("set_induksi","pengukuhan","pentaksiran","penutup","bahan"))
-        assert "jul" in draft["pentaksiran"].lower()
+        assert "ayat mula/akhir" in draft["pentaksiran"]
         assert draft["editor_warning"]
         checks=candidate["reviewer_checks"]
         assert checks["original_rpt_range_copied_as_reference"] is True
