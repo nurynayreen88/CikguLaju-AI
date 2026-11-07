@@ -81,6 +81,8 @@ ROLLBACK;
 BEGIN;
 -- Disposable CI service_role must behave like Supabase's private bypass role.
 ALTER ROLE service_role BYPASSRLS;
+-- Only this disposable test fixture needs explicit legacy table grant.
+GRANT SELECT ON public.cikgulaju_users TO service_role;
 DO $deny$
 BEGIN
  IF has_function_privilege('anon',
