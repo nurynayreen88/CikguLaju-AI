@@ -44,12 +44,16 @@ def checked():
         start,end=r["textbook_toc_range"]
         token=f"{start}-{end}"
         for label,v in (("Word",cells),("PDF",text)):
-            if (toc not in v
-                or "ISI KANDUNGAN SAHAJA" not in v
-                or "m/s tepat SP belum disahkan" not in v
-                or token not in v
-                or r["sp"] not in v):
-                raise ValueError("Year4 TOC-source caution missing "+label+": "+code)
+            # PDF text extraction can insert newlines inside a wrapped cell.
+            # Compare the whole source note without layout whitespace, but still
+            # require every original caution marker and this record's SP.
+            normalized="".join(v.split())
+            required=(toc,"ISI KANDUNGAN SAHAJA",
+                      "m/s tepat SP belum disahkan",token,r["sp"])
+            missing=[part for part in required if "".join(part.split()) not in normalized]
+            if missing:
+                raise ValueError("Year4 TOC-source caution missing "+label+": "+code+
+                                 " :: "+repr(missing))
         if (r["textbook_pages"] is not None
             or r["curriculum_quality_percent"] is not None
             or r["status"]!="DRAF_HOLD"):
