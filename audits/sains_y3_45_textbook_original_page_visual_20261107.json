@@ -1,0 +1,959 @@
+{
+  "title": "Original KPM Year3 Science 2018 textbook: 45 source SP page candidates and 3 supplemental SP visual audit",
+  "audit_date": "2026-11-07",
+  "source_file_id": "17QNqKZjSF7V9GzzkXkz46bDJGnyKYq-F",
+  "source_url": "https://drive.google.com/file/d/17QNqKZjSF7V9GzzkXkz46bDJGnyKYq-F/view",
+  "source_name": "GuruBesar_BukuTeks_Sains_T3_SK.pdf",
+  "source_isbn": "978-983-49-2048-7",
+  "original_publication_year": 2018,
+  "source_size_bytes": 100100997,
+  "source_sha256": "5c5c95276915abfc52dab3515040064502cf10e8fcc4e1682648b9ee260f1cb8",
+  "pdf_page_count": 147,
+  "printed_page_to_pdf_zero_based_offset": 7,
+  "method": "Original complete Year3 textbook downloaded from connected Google Drive, 45 source PdP page candidates checked by matching SP-code token in at least one cited PDF page and printed page number in every cited page; 54 unique cited printed page images inspected as contact sheets. Three extra content SP also explicitly checked. Semantic/pedagogy, teaching appropriateness and teacher signoff remain pending.",
+  "summary": {
+    "year": 3,
+    "original_source_pdp": 45,
+    "source_sp_with_at_least_one_true_page_label": 45,
+    "unique_printed_pages_examined": 54,
+    "cited_page_number_verification": 54,
+    "secondary_sp_original_book_code_verification": 3,
+    "teacher_academic_approved": 0
+  },
+  "status": "ORIGINAL_BOOK_PAGE_SP_VERIFIED__PEDAGOGY_AND_RUNTIME_HOLD",
+  "no_db_or_runtime_write": true,
+  "no_teacher_approval_or_quality_score": true,
+  "items": [
+    {
+      "pdp_code": "SCI-Y3-PDP-001",
+      "sp": "3.1.1",
+      "printed_page_candidates": [
+        30
+      ],
+      "pdf_page_indices_zero_based": [
+        37
+      ],
+      "pdf_pages_one_based": [
+        38
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-002",
+      "sp": "3.1.2",
+      "printed_page_candidates": [
+        32
+      ],
+      "pdf_page_indices_zero_based": [
+        39
+      ],
+      "pdf_pages_one_based": [
+        40
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-003",
+      "sp": "3.1.3",
+      "printed_page_candidates": [
+        34,
+        36
+      ],
+      "pdf_page_indices_zero_based": [
+        41,
+        43
+      ],
+      "pdf_pages_one_based": [
+        42,
+        44
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-004",
+      "sp": "3.1.4",
+      "printed_page_candidates": [
+        37,
+        38
+      ],
+      "pdf_page_indices_zero_based": [
+        44,
+        45
+      ],
+      "pdf_pages_one_based": [
+        45,
+        46
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-005",
+      "sp": "3.1.5",
+      "printed_page_candidates": [
+        36,
+        38
+      ],
+      "pdf_page_indices_zero_based": [
+        43,
+        45
+      ],
+      "pdf_pages_one_based": [
+        44,
+        46
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-006",
+      "sp": "3.2.1",
+      "printed_page_candidates": [
+        40,
+        41
+      ],
+      "pdf_page_indices_zero_based": [
+        47,
+        48
+      ],
+      "pdf_pages_one_based": [
+        48,
+        49
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-007",
+      "sp": "3.2.2",
+      "printed_page_candidates": [
+        42
+      ],
+      "pdf_page_indices_zero_based": [
+        49
+      ],
+      "pdf_pages_one_based": [
+        50
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-008",
+      "sp": "3.2.3",
+      "printed_page_candidates": [
+        44
+      ],
+      "pdf_page_indices_zero_based": [
+        51
+      ],
+      "pdf_pages_one_based": [
+        52
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-009",
+      "sp": "3.2.4",
+      "printed_page_candidates": [
+        47
+      ],
+      "pdf_page_indices_zero_based": [
+        54
+      ],
+      "pdf_pages_one_based": [
+        55
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-010",
+      "sp": "3.3.1",
+      "printed_page_candidates": [
+        49,
+        52
+      ],
+      "pdf_page_indices_zero_based": [
+        56,
+        59
+      ],
+      "pdf_pages_one_based": [
+        57,
+        60
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-011",
+      "sp": "3.3.2",
+      "printed_page_candidates": [
+        50,
+        51
+      ],
+      "pdf_page_indices_zero_based": [
+        57,
+        58
+      ],
+      "pdf_pages_one_based": [
+        58,
+        59
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-012",
+      "sp": "4.1.1",
+      "printed_page_candidates": [
+        60,
+        63
+      ],
+      "pdf_page_indices_zero_based": [
+        67,
+        70
+      ],
+      "pdf_pages_one_based": [
+        68,
+        71
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-013",
+      "sp": "4.1.2",
+      "printed_page_candidates": [
+        62,
+        63,
+        68
+      ],
+      "pdf_page_indices_zero_based": [
+        69,
+        70,
+        75
+      ],
+      "pdf_pages_one_based": [
+        70,
+        71,
+        76
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-014",
+      "sp": "4.1.3",
+      "printed_page_candidates": [
+        62,
+        63,
+        68
+      ],
+      "pdf_page_indices_zero_based": [
+        69,
+        70,
+        75
+      ],
+      "pdf_pages_one_based": [
+        70,
+        71,
+        76
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-015",
+      "sp": "4.1.4",
+      "printed_page_candidates": [
+        64,
+        68
+      ],
+      "pdf_page_indices_zero_based": [
+        71,
+        75
+      ],
+      "pdf_pages_one_based": [
+        72,
+        76
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-016",
+      "sp": "4.1.5",
+      "printed_page_candidates": [
+        67
+      ],
+      "pdf_page_indices_zero_based": [
+        74
+      ],
+      "pdf_pages_one_based": [
+        75
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-017",
+      "sp": "5.1.1",
+      "printed_page_candidates": [
+        77
+      ],
+      "pdf_page_indices_zero_based": [
+        84
+      ],
+      "pdf_pages_one_based": [
+        85
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-018",
+      "sp": "5.1.2",
+      "printed_page_candidates": [
+        74
+      ],
+      "pdf_page_indices_zero_based": [
+        81
+      ],
+      "pdf_pages_one_based": [
+        82
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-019",
+      "sp": "5.1.3",
+      "printed_page_candidates": [
+        76
+      ],
+      "pdf_page_indices_zero_based": [
+        83
+      ],
+      "pdf_pages_one_based": [
+        84
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-020",
+      "sp": "5.1.4",
+      "printed_page_candidates": [
+        77
+      ],
+      "pdf_page_indices_zero_based": [
+        84
+      ],
+      "pdf_pages_one_based": [
+        85
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-021",
+      "sp": "6.1.1",
+      "printed_page_candidates": [
+        80,
+        85
+      ],
+      "pdf_page_indices_zero_based": [
+        87,
+        92
+      ],
+      "pdf_pages_one_based": [
+        88,
+        93
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-022",
+      "sp": "6.1.2",
+      "printed_page_candidates": [
+        81
+      ],
+      "pdf_page_indices_zero_based": [
+        88
+      ],
+      "pdf_pages_one_based": [
+        89
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-023",
+      "sp": "6.1.3",
+      "printed_page_candidates": [
+        83
+      ],
+      "pdf_page_indices_zero_based": [
+        90
+      ],
+      "pdf_pages_one_based": [
+        91
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-024",
+      "sp": "6.1.4",
+      "printed_page_candidates": [
+        86
+      ],
+      "pdf_page_indices_zero_based": [
+        93
+      ],
+      "pdf_pages_one_based": [
+        94
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-025",
+      "sp": "6.1.5",
+      "printed_page_candidates": [
+        88,
+        90
+      ],
+      "pdf_page_indices_zero_based": [
+        95,
+        97
+      ],
+      "pdf_pages_one_based": [
+        96,
+        98
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-026",
+      "sp": "6.1.6",
+      "printed_page_candidates": [
+        91
+      ],
+      "pdf_page_indices_zero_based": [
+        98
+      ],
+      "pdf_pages_one_based": [
+        99
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-027",
+      "sp": "6.1.7",
+      "printed_page_candidates": [
+        90
+      ],
+      "pdf_page_indices_zero_based": [
+        97
+      ],
+      "pdf_pages_one_based": [
+        98
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-028",
+      "sp": "7.1.1",
+      "printed_page_candidates": [
+        96,
+        102
+      ],
+      "pdf_page_indices_zero_based": [
+        103,
+        109
+      ],
+      "pdf_pages_one_based": [
+        104,
+        110
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-029",
+      "sp": "7.1.2",
+      "printed_page_candidates": [
+        98,
+        99
+      ],
+      "pdf_page_indices_zero_based": [
+        105,
+        106
+      ],
+      "pdf_pages_one_based": [
+        106,
+        107
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-030",
+      "sp": "7.1.3",
+      "printed_page_candidates": [
+        99,
+        100
+      ],
+      "pdf_page_indices_zero_based": [
+        106,
+        107
+      ],
+      "pdf_pages_one_based": [
+        107,
+        108
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-031",
+      "sp": "7.1.4",
+      "printed_page_candidates": [
+        100,
+        102
+      ],
+      "pdf_page_indices_zero_based": [
+        107,
+        109
+      ],
+      "pdf_pages_one_based": [
+        108,
+        110
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-032",
+      "sp": "8.1.1",
+      "printed_page_candidates": [
+        106
+      ],
+      "pdf_page_indices_zero_based": [
+        113
+      ],
+      "pdf_pages_one_based": [
+        114
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-033",
+      "sp": "8.1.2",
+      "printed_page_candidates": [
+        109,
+        110
+      ],
+      "pdf_page_indices_zero_based": [
+        116,
+        117
+      ],
+      "pdf_pages_one_based": [
+        117,
+        118
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-034",
+      "sp": "8.1.3",
+      "printed_page_candidates": [
+        112
+      ],
+      "pdf_page_indices_zero_based": [
+        119
+      ],
+      "pdf_pages_one_based": [
+        120
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-035",
+      "sp": "8.1.4",
+      "printed_page_candidates": [
+        110,
+        111
+      ],
+      "pdf_page_indices_zero_based": [
+        117,
+        118
+      ],
+      "pdf_pages_one_based": [
+        118,
+        119
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-036",
+      "sp": "9.1.1",
+      "printed_page_candidates": [
+        116,
+        118
+      ],
+      "pdf_page_indices_zero_based": [
+        123,
+        125
+      ],
+      "pdf_pages_one_based": [
+        124,
+        126
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-037",
+      "sp": "9.1.2",
+      "printed_page_candidates": [
+        120
+      ],
+      "pdf_page_indices_zero_based": [
+        127
+      ],
+      "pdf_pages_one_based": [
+        128
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-038",
+      "sp": "9.1.3",
+      "printed_page_candidates": [
+        122,
+        123
+      ],
+      "pdf_page_indices_zero_based": [
+        129,
+        130
+      ],
+      "pdf_pages_one_based": [
+        130,
+        131
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-039",
+      "sp": "9.1.4",
+      "printed_page_candidates": [
+        124,
+        125
+      ],
+      "pdf_page_indices_zero_based": [
+        131,
+        132
+      ],
+      "pdf_pages_one_based": [
+        132,
+        133
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-040",
+      "sp": "9.1.5",
+      "printed_page_candidates": [
+        118,
+        123,
+        125
+      ],
+      "pdf_page_indices_zero_based": [
+        125,
+        130,
+        132
+      ],
+      "pdf_pages_one_based": [
+        126,
+        131,
+        133
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-041",
+      "sp": "10.1.1",
+      "printed_page_candidates": [
+        128
+      ],
+      "pdf_page_indices_zero_based": [
+        135
+      ],
+      "pdf_pages_one_based": [
+        136
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-042",
+      "sp": "10.1.2",
+      "printed_page_candidates": [
+        129
+      ],
+      "pdf_page_indices_zero_based": [
+        136
+      ],
+      "pdf_pages_one_based": [
+        137
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-043",
+      "sp": "10.1.3",
+      "printed_page_candidates": [
+        131,
+        135
+      ],
+      "pdf_page_indices_zero_based": [
+        138,
+        142
+      ],
+      "pdf_pages_one_based": [
+        139,
+        143
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-044",
+      "sp": "10.1.4",
+      "printed_page_candidates": [
+        133
+      ],
+      "pdf_page_indices_zero_based": [
+        140
+      ],
+      "pdf_pages_one_based": [
+        141
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-045",
+      "sp": "10.1.5",
+      "printed_page_candidates": [
+        135
+      ],
+      "pdf_page_indices_zero_based": [
+        142
+      ],
+      "pdf_pages_one_based": [
+        143
+      ],
+      "all_cited_printed_page_numbers_checked_in_original_pdf": true,
+      "at_least_one_cited_page_has_matching_sp_code": true,
+      "all_cited_page_images_visually_reviewed": true,
+      "teacher_pedagogical_approved": false,
+      "status": "VISUAL_PAGE_AND_SP_CODE_MATCH__PEDAGOGY_SIGNOFF_PENDING"
+    }
+  ],
+  "secondary_integrated_sp": [
+    {
+      "sp": "3.2.5",
+      "printed_page_candidates": [
+        41
+      ],
+      "pdp_source_identity": "SCI-Y3-PDP-006",
+      "pdf_page_indices_zero_based": [
+        48
+      ],
+      "original_sp_code_in_text_and_visual": true,
+      "teacher_academic_approved": false,
+      "status": "SOURCE_MULTISP_CANDIDATE__PEDAGOGY_APPROVAL_PENDING"
+    },
+    {
+      "sp": "3.3.3",
+      "printed_page_candidates": [
+        52
+      ],
+      "pdp_source_identity": "SCI-Y3-PDP-010",
+      "pdf_page_indices_zero_based": [
+        59
+      ],
+      "original_sp_code_in_text_and_visual": true,
+      "teacher_academic_approved": false,
+      "status": "SOURCE_MULTISP_CANDIDATE__PEDAGOGY_APPROVAL_PENDING"
+    },
+    {
+      "sp": "3.3.4",
+      "printed_page_candidates": [
+        51,
+        54
+      ],
+      "pdp_source_identity": "SCI-Y3-PDP-011",
+      "pdf_page_indices_zero_based": [
+        58,
+        61
+      ],
+      "original_sp_code_in_text_and_visual": true,
+      "teacher_academic_approved": false,
+      "status": "SOURCE_MULTISP_CANDIDATE__PEDAGOGY_APPROVAL_PENDING"
+    }
+  ]
+}
