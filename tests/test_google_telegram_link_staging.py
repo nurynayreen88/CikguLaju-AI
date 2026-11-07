@@ -25,7 +25,7 @@ BOT = (BOT_TOKEN, "CikguLajuTestBot")
 def telegram_payload(uid=TELEGRAM_ID, *, now=None):
     fields = {"id": str(uid), "auth_date": str(int(time.time() if now is None else now)),
               "first_name": "Guru"}
-    check = "\\n".join(f"{k}={v}" for k,v in sorted(fields.items()))
+    check = "\n".join(f"{k}={v}" for k,v in sorted(fields.items()))
     # Same algorithm as the Telegram Login Widget. Not a real Telegram login.
     fields["hash"] = hmac.new(hashlib.sha256(BOT_TOKEN.encode()).digest(),
                               check.encode(), hashlib.sha256).hexdigest()
