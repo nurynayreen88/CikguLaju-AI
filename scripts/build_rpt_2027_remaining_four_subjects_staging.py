@@ -68,14 +68,20 @@ def bm_records(year):
             detail=title_text[m.end():].strip(" · ")
             sk_code=re.match(r"\d+(?:\.\d+)+",sk)
             sp_code=re.match(r"\d+(?:\.\d+)+",sp)
-            if not sk_code or not sp_code:
+            # PBD/penilaian tema explicitly has no additional official SK/SP.
+            # Preserve the printed assessment text rather than inventing codes.
+            if (not sk_code or not sp_code) and not (
+                sk == "Penilaian Tema / PBD"
+                and "tiada kod SP baharu" in sp
+            ):
                 raise ValueError(f"BM T{year} PdP {no}: original SK/SP code missing")
             source_notes=td[3].get_text(" ",strip=True)
             if not source_notes:
                 raise ValueError("BM source reference cell empty")
             items.append(dict(
                 id=f"{no:03d}",week=week,unit=unit,topic=detail,
-                sk=sk_code.group(0),sp=sp_code.group(0),
+                sk=sk_code.group(0) if sk_code else sk,
+                sp=sp_code.group(0) if sp_code else sp,
                 sk_display=sk,sp_display=sp,
                 note=source_notes,source_week=week,**dates(master,week)
             ))
@@ -100,11 +106,13 @@ def pi_records(year):
             raise ValueError("PI PdP source identity mismatch")
         intro="\n".join(r.get("intro") or [])
         m=re.search(r"Minggu 2027:\s*(\d{2})",intro)
-        if not m:
-            raise ValueError(f"PI T{year} PdP{n:03d} has no sourced original week")
-        week=f"M{int(m.group(1)):02d}"
         field=r.get("fields") or {}
         withheld=bool(r.get("withheld",False))
+        if not m and not withheld:
+            raise ValueError(f"PI T{year} PdP{n:03d} has no sourced original week")
+        # Held RPH records have no source week. Never assign their neighbours'
+        # dates: teacher must decide separately if/when replacement is scheduled.
+        week=f"M{int(m.group(1)):02d}" if m else ""
         if withheld:
             held_count+=1
             # The source explicitly withheld six records. Do not invent their SK/SP.
@@ -190,8 +198,8 @@ def music_records(year):
     for n,r in enumerate(rows,1):
         if r["PdP ID"]!=f"MZ-Y{year}-{n:02d}" or int(r["PdP"])!=n:
             raise ValueError("Music PdP ID/order mismatch")
-        slot_a=parse_slot(field(r,"Slot A","Kumpulan A slot 2027"))
-        slot_b=parse_slot(field(r,"Slot B","Kumpulan B slot 2027"))
+        slot_a=parse_slot(field(r,"Slot A","Kumpulan A slot 2027","Slot Kumpulan A"))
+        slot_b=parse_slot(field(r,"Slot B","Kumpulan B slot 2027","Slot Kumpulan B"))
         candidate=dict(a_start=slot_a[0],a_end=slot_a[1],
                        b_start=slot_b[0],b_end=slot_b[1])
         matches=matching_master_weeks(candidate,master)
@@ -203,7 +211,7 @@ def music_records(year):
         unit=field(r,"Unit","Unit/Tajuk").strip()
         status=field(r,"Semakan","Status tambahan","Status Semakan")
         book=field(r,"BT m/s","RPT halaman BT (belum sah)","Buku Teks m/s")
-        audio=r.get("Audio cetak atau RPT","")
+        audio=r.get("Audio cetak atau RPT",r.get("Audio Tercetak",""))
         output.append(dict(
             id=f"{n:03d}",week=matches[0],unit="Unit/Tajuk: "+unit,
             topic="PdP Seni Muzik "+f"{n:03d}",
