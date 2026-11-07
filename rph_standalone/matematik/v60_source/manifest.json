@@ -1,0 +1,72 @@
+{
+  "schema": "cikgulaju.math_rph.v60.markdown.snapshot.v1",
+  "version": "v60",
+  "scope": "RPH Matematik Tahun 2-6 sahaja; tidak mengubah RPT, DB, atau servis produksi",
+  "source_archive_sha256": "a641d7aff88b375f4786807a10eed384d9b6b22fea632d11ad9f2bc97fec5271",
+  "year_packs": {
+    "2": {
+      "filename": "Tahun_2.json.zlib.b64.txt",
+      "lessons": 117,
+      "raw_sha256": "cfaafb7149a1e3835a77a77d57ea4851aace0f9c22f667ba404c0454262f7e50",
+      "compressed_sha256": "bd092ab424bad3a9597cc10ebf54f06f20187b0e53f06751d4a4c1d69cb24944",
+      "b64_text_sha256": "1da7a1350879c3cdb7c6f8c950ab9a04a64f1b230668566e00235c93f543341f",
+      "raw_bytes": 239539,
+      "compressed_bytes": 24932,
+      "text_bytes": 33682,
+      "first_lesson": 1,
+      "last_lesson": 117
+    },
+    "3": {
+      "filename": "Tahun_3.json.zlib.b64.txt",
+      "lessons": 117,
+      "raw_sha256": "d0e24797c80e7ec5e8f9b2029f0fff4c470305a79b31abbd594cede379e488ae",
+      "compressed_sha256": "4674b5c03429437927bb249a11977e4b8807fe29896a37e4ca3a096785c8528d",
+      "b64_text_sha256": "f6ac49904e328689b364e88303e0e205a4ed1104afc81e1fd2772a9a6c172293",
+      "raw_bytes": 235800,
+      "compressed_bytes": 27968,
+      "text_bytes": 37783,
+      "first_lesson": 1,
+      "last_lesson": 117
+    },
+    "4": {
+      "filename": "Tahun_4.json.zlib.b64.txt",
+      "lessons": 117,
+      "raw_sha256": "2dddb70b06ce3ec8d2e15d1f9677281c1c86fb398848bc5e857d245a54a9f317",
+      "compressed_sha256": "af1628995e7fb131bd975f71ac5764d0db3e073b8bfadd8e349646c6c72cd8bd",
+      "b64_text_sha256": "6c27f0537b0ca132dd2b7667099b6c7acbe191fabffeb37c57947d9be3fafd48",
+      "raw_bytes": 224997,
+      "compressed_bytes": 33179,
+      "text_bytes": 44823,
+      "first_lesson": 1,
+      "last_lesson": 117
+    },
+    "5": {
+      "filename": "Tahun_5.json.zlib.b64.txt",
+      "lessons": 117,
+      "raw_sha256": "9cfaf074d3a1169cb6646bf42fb31b1e3fa62031c085f5e857a282bd0f7aa637",
+      "compressed_sha256": "69aeed1d8be548bfa39629218a96acb52dade6f031ef6738e499bdbccfaf4b73",
+      "b64_text_sha256": "84c0c91e4192b7f9d81f1cceb41c7dd1f4527aca77910d8b7e978c0a88ac4e65",
+      "raw_bytes": 209527,
+      "compressed_bytes": 25459,
+      "text_bytes": 34395,
+      "first_lesson": 1,
+      "last_lesson": 117
+    },
+    "6": {
+      "filename": "Tahun_6.json.zlib.b64.txt",
+      "lessons": 117,
+      "raw_sha256": "cc4aab684cce3b0d20b7470ba0584014d0c748373174a281dd6ba4e703dec1b7",
+      "compressed_sha256": "a1498e9e09c1389e8fdfe3de957a7c5318db63cbd0eb59a3eddb309db355a1e8",
+      "b64_text_sha256": "9425d65da2920a9c105db4cfaf3309f7c333b0a48b93c1aaa30f25b457278432",
+      "raw_bytes": 219652,
+      "compressed_bytes": 21224,
+      "text_bytes": 28673,
+      "first_lesson": 1,
+      "last_lesson": 117
+    }
+  },
+  "source_note": "Teks Markdown RPH 585 lesson diekstrak tanpa pengubahsuaian dari ZIP v60. DOCX/PDF binari adalah bahan berasingan yang tidak termasuk dalam snapshot teks ini.",
+  "final_ready": false,
+  "academic_signoff_complete": false,
+  "production_modified": false
+}
