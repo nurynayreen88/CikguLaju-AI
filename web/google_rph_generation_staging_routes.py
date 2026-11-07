@@ -254,14 +254,9 @@ def generate():
     if previous["status"]=="ready":
         return jsonify({"status":"ready","already_ready":True,"job_id":job_id,
                         "downloads":_ready_links(job_id),"staging_only":True})
-    # Revalidate production rights for every new job. Never charge free
-    # credits while a linked production-paid lookup is unavailable.
-    try:
-        prod_paid_uid = verified_paid_uid_for_rph(actor, cfg)
-    except PaidStatusBridgeUnavailable as exc:
-        current_app.logger.warning("staging RPH paid bridge generate unavailable: %s", exc)
-        return jsonify({"error":"Semakan hak akses belum tersedia. Kredit tidak dipotong.",
-                        "job_id":job_id}),503
+    # Issue already checked production rights. At generation time, recheck
+    # only at the final commit: fewer cold-start calls and a fresher
+    # authorization decision. No right is granted from the issued ticket.
     try:
         bundle=render_native_google_rph_bundle(
             choice["year"],choice["subject"],choice["unit"],choice["lesson"],
@@ -270,9 +265,8 @@ def generate():
         return jsonify({"error":"RPH native Telegram belum tersedia untuk Lesson ini",
                         "job_id":job_id}),503
     try:
-        # No stale entitlement snapshots: refresh immediately before DB commit.
-        # If revoked while rendering, use the existing trial RPC (if permitted)
-        # instead of granting a new unlimited paid bundle.
+        # Fresh lookup at the final commit: if entitlement was revoked since
+        # issue, use the existing trial RPC (only if it has credits).
         confirmed_paid_uid = verified_paid_uid_for_rph(actor, cfg)
         kwargs = ({"production_paid_telegram_user_id": confirmed_paid_uid}
                   if confirmed_paid_uid is not None else {})
