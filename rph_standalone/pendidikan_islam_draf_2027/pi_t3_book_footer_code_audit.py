@@ -39,7 +39,7 @@ SP_RE=re.compile(r"(?<![0-9])([1-9]\.\d{1,2}\.\d{1,2})(?![0-9])")
 CSV_FIELDS=(
     "id","year","lesson","sp_codes","category","missing_book_footer_codes",
     "source_book_code_presence_only","dskp_6433_manual_visual_reference",
-    "objective_2_needs_sp_alignment_review","source_material_original_preserved",
+    "objective_2_needs_sp_alignment_review","objective_2_3_dskp_aligned_draft","source_material_original_preserved",
     "content_expert_approved","book_exercise_page_verified",
     "full_dskp_text_alignment_verified","can_publish","release"
 )
@@ -92,8 +92,16 @@ def audit(root=ROOT):
             assert r["fields"]["bahan"].split("\n",1)[1]==orig.split("\n",1)[1]
             assert r["fields"]["bahan"].split("\n",1)[0]==record["new_materials_first_line"]
             assert "6.4.3" in sp and "6.4.4" in sp
-            assert "2. مثنارايكن كڤنتيڠن" in r["fields"]["objektif"]
+            academic = r.get("staging_dskp_l146_alignment")
+            assert academic and academic["publication"]=="HOLD"
+            assert "2. مثنارايكن كڤنتيڠن" in academic["original_objektif"]
+            assert "2. مروموس كڤنتيڠن" in r["fields"]["objektif"]
+            assert "3. مڠعملكن ساتو سنة رسول الله" in r["fields"]["objektif"]
+            assert academic["original_pentaksiran"] and academic["original_aktiviti_utama"]
             assert "6.4.4 مروموس كڤنتيڠن" in sp
+            assert "6.4.5 مڠعملكن سنة رسول الله" in sp
+            assert academic["content_expert_approved"] is False
+            assert academic["jawi_orthography_approved"] is False
             exceptions.append(r["id"])
         else:
             category="ALL_CODES_PRESENT_IN_ORIGINAL_BOOK_FOOTERS"
@@ -104,6 +112,7 @@ def audit(root=ROOT):
             "source_book_code_presence_only":bool(codes and not absent),
             "dskp_6433_manual_visual_reference":bool(absent),
             "objective_2_needs_sp_alignment_review":bool(absent),
+            "objective_2_3_dskp_aligned_draft":bool(absent),
             "source_material_original_preserved":bool(absent),
             "content_expert_approved":False,
             "book_exercise_page_verified":False,
@@ -129,6 +138,8 @@ def audit(root=ROOT):
         "year3_lessons_with_book_footer_code_not_observed":1,
         "missing_footer_code":"6.4.3",
         "missing_footer_lesson_ids":exceptions,
+        "objective_and_pbd_drafted_to_dskp_643_645":len(exceptions),
+        "objective_and_pbd_expert_approvals":0,
         "dskp_6433_visually_confirmed":True,
         "dskp_pdf_page":51,
         "dskp_printed_page":39,
