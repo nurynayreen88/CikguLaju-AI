@@ -81,11 +81,30 @@ def install(artifacts,output):
     import fitz
     files=source_files(artifacts)
     base=Path(output)
-    if base.exists():
-        if any(base.iterdir()):
-            raise ValueError("Output folder must be empty: never overwrite RPT assets")
-    else:
-        base.mkdir(parents=True)
+    if base.exists() and any(base.iterdir()):
+        # Repeated PR QA must be idempotent. No overwrites of existing PDFs.
+        # Accept a complete catalog only when all 56 bytes still equal the
+        # five immutable CI sources; otherwise FAIL rather than overwrite.
+        manifest_file=base/"manifest.json"
+        if not manifest_file.is_file() or manifest_file.is_symlink():
+            raise ValueError("Existing RPT folder has no trustworthy manifest")
+        old=json.loads(manifest_file.read_text("utf-8"))
+        if (old.get("version")!=1 or old.get("count")!=56
+            or old.get("status")!="DRAF_USER_VISIBLE_NOT_ACADEMIC_FINAL"
+            or set(old.get("files",{}))!=EXPECTED):
+            raise ValueError("Existing 56-PDF manifest incompatible")
+        for key,source in files.items():
+            code,year=key.split(":")
+            entry=old["files"][key]
+            rel=f"{code}/tahun_{year}.pdf"
+            dest=base/rel
+            if (entry.get("path")!=rel or not dest.is_file()
+                or dest.is_symlink()
+                or hashlib.sha256(dest.read_bytes()).hexdigest()!=hashlib.sha256(source.read_bytes()).hexdigest()
+                or dest.stat().st_size!=entry.get("bytes")):
+                raise ValueError("Existing PDF differs from original CI source: "+key)
+        return old
+    base.mkdir(parents=True,exist_ok=True)
     entries={}
     pages=0
     for key,source in sorted(files.items()):
