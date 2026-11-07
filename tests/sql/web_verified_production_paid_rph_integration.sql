@@ -6,6 +6,7 @@ BEGIN;
 -- Transaction rollback restores the disposable role afterward.
 ALTER ROLE service_role BYPASSRLS;
 -- Fake Storage fixture grants needed for local role simulation only.
+GRANT USAGE ON SCHEMA storage TO service_role;
 GRANT SELECT ON storage.objects TO service_role;
 DO $setup$
 DECLARE a uuid;
