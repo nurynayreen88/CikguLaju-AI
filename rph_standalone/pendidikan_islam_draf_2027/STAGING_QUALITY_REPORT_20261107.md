@@ -529,3 +529,16 @@ Perbandingan langsung dengan Word RPT asal `Rozayus_RPT_Pendidikan_Islam_Tahun_6
 - Walau bagaimanapun, **empat kelompok ayat yang tertinggal (67 ayat)**—Fussilat 41:47–54, az-Zukhruf 43:74–89, ad-Dukhan 44:1–39, al-Jathiyah 45:34–37—juga **tidak disenaraikan dalam sumber 2026**. Dalam sumber 2026 pun bilangan ayat Juz25 yang *sah dan unik* dipetakan ialah **179/246** selepas mengasingkan julat mustahil/berulang.
 
 Kesimpulan sumber: isu 67 ayat bukan timbul daripada pembetulan 2027 tetapi **diwarisi daripada RPT 2026 asal**. Penyelesaian sebenar memerlukan pengagihan semula PdP secara editorial, bukan sekadar pembaikan ejaan atau pengujian Word/PDF. Data asal tidak ditimpa dan tiada ayat palsu dimasukkan. Fail `pi_t6_juz25_rpt2026_source_provenance.py` dan ujian memastikan kesalahan lama kekal boleh dikesan sehingga RPT serta RPH pengganti diluluskan.
+
+
+## Sambungan 7 Nov 2026 — 13 sebutan Buku Aktiviti Jawi Tahun 5 belum diketahui jenis sumber (STAGING)
+
+Audit tanpa meminda sumber RPH menjumpai **13 Lesson Tahun 5** yang secara nyata menyebut `بوكو اكتيۏيتي` (“Buku Aktiviti”) walaupun bahan khusus, edisi, muka surat bercetak dan latihan tidak dapat disahkan dalam rekod projek. Sebutan itu boleh merujuk **buku latihan murid secara umum** atau **buku aktiviti terbitan tertentu**; **jangan membuat andaian buku rasmi KPM atau memasukkan pautan fail secara automatik**.
+
+- **9 rujukan pada medan pentaksiran:** T5-L092, L096, L100, L104, L111, L115, L119, L123, L127.
+- **4 rujukan pada aktiviti utama:** T5-L131, L135, L139, L143.
+- Buku sokongan dengan judul mirip tersedia dalam katalog penerbit DBP: [*Siri Mantap Bestari: Pendidikan Islam Tahun 5 Buku Aktiviti*](https://jendeladbp.my/ujana/siri-mantap-bestari-pendidikan-islam-tahun-5-buku-aktiviti/). **Buku komersial ini tidak semestinya sumber yang digunakan RPH**, dan pautan jualan/penstriman tidak memberikan hak untuk mengedarkannya atau mengesahkan halaman latihannya. Jangan kelirukan buku KSSR arus perdana dengan terbitan KSSRPK pendidikan khas.
+- Modul `pi_y5_activity_book_wording_review.py` mengesan ID, medan asal, petikan dan SHA-256 **tanpa menulis semula Jawi**; `test_pi_y5_activity_book_wording_review.py` menolak jumlah tidak sepadan, pautan/halaman rekaan atau status publish. Audit kualiti, senarai P2 dan pagar NO_GO turut merangkumi 13 sebutan tersebut.
+- Pemadanan Buku Aktiviti **Tahun 2/3 (174 calon)** masih masalah berasingan; dapatan 13 Tahun 5 **tidak** bermaksud 13 latihan baharu sudah disahkan.
+
+**Keputusan penerbitan: NO_GO.** `690` draf, `6` tahan penuh, `3` sumber kritikal, `687` pratonton editorial, **0 RPH baharu dibuka**. Semua data asal kekal, tiada Word/PDF rasmi, muat turun bahan, `main`, DB, Web atau Telegram produksi disentuh. Sumber/aktiviti/penilaian sebenar perlu semakan Jawi pakar dan buku sebelum kelulusan.
