@@ -84,6 +84,28 @@ Do not claim Google users can actually spend the displayed 10 staging
 credits or download RPH until the shared trusted generator and canonical
 account registry have both been connected and tested.
 
+### Native RPH bridge: offline implementation, not user-facing
+
+`web/google_native_rph_bundle.py` now prepares a *private* Google RPH
+bundle using the **same authoritative Telegram renderer client** as
+`web/unified_rph_web.py`. It requires an approved standalone Lesson,
+immutable `source_fingerprint`, year 5 release approval when relevant,
+and the `telegram-native-rph-v1` layout. It validates teacher class,
+date, time and pupil count, and requests **Word and PDF** from the
+authoritative service. No fake Telegram user ID, generic fallback RPH,
+or silent quota change is allowed. A failed output fails the complete
+bundle. The internal quota helper can charge the server-generated
+bundle ref after successful completion, but an HTTP download route and
+server-side durable retry cache have **not** been enabled.
+
+The existing native service accepts source digest and teacher/lesson
+fields, **not** a Telegram user ID as part of the RPH source payload.
+The current Web *authorization and quota* layers are what depend on
+Telegram ID, so a Google-native front end can use the same document
+engine after a separate UUID-aware identity/entitlement gate. Its
+internal API credentials must remain server-only; do not copy them into
+browser JavaScript or the staging repo.
+
 ## Next integration gates, in non-destructive order
 
 1. **Design and test additive production identity mapping**, keeping the
