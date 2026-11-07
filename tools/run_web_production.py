@@ -62,6 +62,26 @@ def special_activities_script():
     return send_file(path, mimetype="application/javascript", max_age=1800, conditional=True)
 
 
+@app.get("/assets/pdf-lib.min.js")
+def self_hosted_pdf_lib():
+    """Pinned PDF-lib is copied from a reviewed package into this release.
+    All teacher profile details stay within the browser and same-origin APIs.
+    """
+    from pathlib import Path
+    from flask import send_file
+    path=Path(__file__).resolve().parents[1]/"web_v1_static_preview"/"pdf-lib.min.js"
+    return send_file(path,mimetype="application/javascript",max_age=86400,conditional=True)
+
+
+@app.get("/assets/rpt-personalize.js")
+def personalized_rpt_script():
+    """Browser-side private PDF cover without modifying curriculum bytes."""
+    from pathlib import Path
+    from flask import send_file
+    path=Path(__file__).resolve().parents[1]/"web_v1_static_preview"/"rpt-personalize.js"
+    return send_file(path,mimetype="application/javascript",max_age=1800,conditional=True)
+
+
 @app.get("/assets/teacher-profile.js")
 def teacher_profile_script():
     """Static browser editor. Personal data remains behind authenticated routes."""
