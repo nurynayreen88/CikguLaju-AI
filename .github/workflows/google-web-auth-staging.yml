@@ -22,7 +22,9 @@ on:
       - 'tests/sql/web_canonical_identity_fixture.sql'
       - 'tests/sql/web_canonical_identity_integration.sql'
       - 'migrations/STAGING_ONLY_web_rph_bundle_jobs_450.sql'
+      - 'migrations/STAGING_ONLY_verified_production_paid_rph_20261107.sql'
       - 'tests/sql/web_google_rph_bundle_jobs_integration.sql'
+      - 'tests/sql/web_verified_production_paid_rph_integration.sql'
       - 'migrations/STAGING_ONLY_web_google_telegram_dual_login_link_451.sql'
       - 'tests/sql/web_google_telegram_link_integration.sql'
       - 'web/google_telegram_link_staging_routes.py'
@@ -166,12 +168,15 @@ jobs:
           psql -v ON_ERROR_STOP=1 -f migrations/STAGING_ONLY_web_google_rph_delivery_quota_448.sql
           psql -v ON_ERROR_STOP=1 -f migrations/STAGING_ONLY_web_rph_bundle_jobs_450.sql
           psql -v ON_ERROR_STOP=1 -f migrations/STAGING_ONLY_web_google_telegram_dual_login_link_451.sql
+          psql -v ON_ERROR_STOP=1 -f migrations/STAGING_ONLY_verified_production_paid_rph_20261107.sql
       - name: Verify account identity, receipt, manual review and replay
         run: psql -v ON_ERROR_STOP=1 -f tests/sql/web_google_payment_integration.sql
       - name: Verify exactly-once Google RPH bundle debit and security on disposable DB
         run: psql -v ON_ERROR_STOP=1 -f tests/sql/web_google_rph_quota_integration.sql
       - name: Verify durable private Word+PDF bundle job and replay safety
         run: psql -v ON_ERROR_STOP=1 -f tests/sql/web_google_rph_bundle_jobs_integration.sql
+      - name: Verify production-verified paid RPH completion no debit, private role and retry
+        run: psql -v ON_ERROR_STOP=1 -f tests/sql/web_verified_production_paid_rph_integration.sql
       - name: Verify dual-proof identity-link RPC guardrails and no quota changes
         run: psql -v ON_ERROR_STOP=1 -f tests/sql/web_google_telegram_link_integration.sql
       - name: Validate draft cross-provider schema in disposable PostgreSQL ONLY
