@@ -210,3 +210,30 @@ Ujian baharu membandingkan 690 paparan dengan JSON sumber, memastikan semua nota
 **CI:** GitHub Actions **Run #72 LULUS**; 11 fail artefak diuji kewujudan dan dimuat naik. https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42320287598
 
 **Had semakan Buku Aktiviti:** Buku KSSR Semakan BA102001/BA103001 dikenal pasti dalam katalog KPM dan disenarai oleh portal sekolah. Scan teks pada salinan web Scribd tidak boleh digunakan untuk memastikan tulisan Jawi serta arahan latihan, manakala akses halaman buku sebenar melalui viewer/download tidak stabil. Oleh itu, **0** halaman dan arahan Buku Aktiviti telah diluluskan untuk dimasukkan ke dalam RPH. Penambahbaikan ini **bukan** pengesahan kualiti 80%, dan semua 690 draf kekal HOLD.
+
+
+## Sambungan audit 7 Nov — PBD individu dan rekod halaman lama (batch terkini)
+
+Pemeriksaan **semua 690 RPH draf** dalam cabang staging menemukan dua kelemahan yang sebelum ini tidak mempunyai daftar keutamaan gabungan:
+
+| Perkara yang dikesan secara automatik | Tahun 2 | Tahun 3 | Tahun 4–6 | Jumlah |
+|---|---:|---:|---:|---:|
+| Frasa generik PBD `برداسركن كريتيريا دالم SP` | 14 | 29 | 0 | **43** |
+| Nota halaman terdahulu yang masih memerlukan semakan sumber | 77 | 0 | 0 | **77** |
+| Rekod yang mempunyai kedua-dua isu | 12 | 0 | 0 | **12** |
+
+Oleh itu terdapat **108 Lesson unik** yang diberi keutamaan `P2_PBD_OR_PAGE` (43 + 77 − 12). Ini **penemuan audit mekanikal**, tidak bermaksud semua RPH lain telah mempunyai PBD tepat atau halaman buku yang sah. Semakan manual DSKP, buku teks, mushaf, Buku Aktiviti dan ketepatan bahasa tetap wajib.
+
+Fail baharu `pi_content_review_queue.py` menjana daftar **696 Lesson** dalam JSON dan CSV, dengan status berasingan:
+
+- `P0_HELD`: 6 rekod tanpa kandungan pengajaran yang dibuka.
+- `P1_CRITICAL_SOURCE`: 3 RPH sumber hadis/tasmi' tidak lengkap.
+- `P2_PBD_OR_PAGE`: 108 rekod gabungan PBD terlalu umum atau nota halaman terdahulu.
+- `P3_ENRICHMENT_REVIEW`: RPH pengayaan lain untuk semakan pakar.
+- `P4_FULL_CONTENT_REVIEW`: RPH lain tetap memerlukan audit akademik dan Word/PDF.
+
+Setiap baris menyimpan identiti Lesson, bidang, SP asal, tanda isu serta tindakan semakan editor; tiada teks sumber asal atau halaman buku direka. CSV menggunakan UTF-8 BOM agar tulisan Jawi boleh dibuka dalam aplikasi lembaran kerja tanpa rosak.
+
+**Kawalan:** semua 696 rekod dilarang diterbitkan (`can_publish=false`), peratus akademik kekal `null`, dan `quality_80_certified=false`. Workflow CI akan menjana dua artefak tambahan `pi_content_review_queue_696.json` dan `pi_content_review_queue_696.csv`, kemudian mengesahkan 13 artefak audit sebelum muat naik. Fail RPH asal, `main`, database, kuota, Telegram dan Web tidak disentuh.
+
+**Skop:** Katalog audit ini hanya meliputi Tahun 2–6. Tahun 1/KP2027 tidak terkandung dalam 696 rekod dan tidak boleh dianggap sudah siap.
