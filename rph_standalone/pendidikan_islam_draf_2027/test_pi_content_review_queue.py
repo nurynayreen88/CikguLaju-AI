@@ -49,7 +49,13 @@ class PIContentReviewQueueTests(unittest.TestCase):
             self.assertIn("HALAMAN_BUKU_T2_MELEBIHI_MUKA_TERAKHIR", item["reason_codes"])
             self.assertIn("133-140", item["editor_next_step"])
             self.assertIn("133-138", item["editor_next_step"])
-        self.assertEqual(q["by_priority"]["P2_PBD_OR_PAGE"], 108)
+        self.assertEqual(q["by_priority"]["P2_PBD_OR_PAGE"], 121)
+        self.assertEqual(q["unverified_year4_to6_activity_book_wording_records"], 13)
+        ambiguous = [r for r in q["rows"] if
+                     "BUKU_AKTIVITI_T4_T6_KESAHIHAN_SUMBER_BELUM_DISAHKAN" in r["reason_codes"]]
+        self.assertEqual(len(ambiguous), 13)
+        self.assertTrue(all(x["year"] == 5 and x["priority"] == "P2_PBD_OR_PAGE"
+                            and "buku kerja umum" in x["editor_next_step"] for x in ambiguous))
         pbd = [r for r in q["rows"]
                if "PBD_SP_SASARAN_BELUM_DISAH_PAKAR" in r["reason_codes"]]
         self.assertEqual(len(pbd), 43)
