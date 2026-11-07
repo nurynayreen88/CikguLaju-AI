@@ -70,7 +70,7 @@ def _missing_35_from_official_dskp():
         k=(item["year"],item["sp_code"])
         if k in mapping or item["year"] not in (2,3):
             raise ValueError("Sains duplicated or wrong-year DSKP crosswalk")
-        if not re.fullmatch(r"\\d{1,2}\\.\\d{1,2}\\.\\d{1,2}",item["sp_code"]):
+        if not re.fullmatch(r"\d{1,2}\.\d{1,2}\.\d{1,2}",item["sp_code"]):
             raise ValueError("Sains official SP code malformed")
         if not item.get("sp_text") or not (10<len(item["sp_text"])<300):
             raise ValueError("Sains official SP text missing")
