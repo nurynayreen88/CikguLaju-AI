@@ -92,7 +92,11 @@ def _private(resp):
 @bp.get("/api/auth/google-native/options")
 def login_options():
     # Public capability discovery, no secrets or user data.
-    return jsonify({"google_available": _config() is not None,
+    # Do not advertise a login-only half-finished feature to teachers.
+    # The original Web offers Google only after the RPH release gate is
+    # deliberately enabled alongside verified canonical OAuth.
+    return jsonify({"google_available": (_config() is not None and
+                    os.environ.get("CIKGULAJU_NATIVE_GOOGLE_RPH_ENABLED") == "1"),
                     "login_provider": "google",
                     "same_account_backend": True})
 
