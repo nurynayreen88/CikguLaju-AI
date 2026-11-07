@@ -86,7 +86,7 @@ function productionStatusLabel(data){
       return 'Telegram produksi: RAKAN PEMBANGUN AKTIF — akses seumur hidup. Ini semakan baca-sahaja, belum memindahkan hak akses ke staging.';
    if(data.production_subscription_active){
       const expiry=data.production_subscription_expires_at;
-      if(typeof expiry!=='string'||!/^\\d{4}-\\d{2}-\\d{2}T/.test(expiry))
+      if(typeof expiry!=='string'||!/^[0-9]{4}-[0-9]{2}-[0-9]{2}T/.test(expiry))
         throw Error('Tarikh langganan produksi tidak sah.');
       return 'Telegram produksi: LANGGANAN AKTIF hingga '+expiry.slice(0,10)+'. Ini semakan baca-sahaja, belum memindahkan hak akses ke staging.';
    }
