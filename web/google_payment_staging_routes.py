@@ -68,13 +68,14 @@ def _reviewer():
 
     from web_v1_telegram_auth_routes import COOKIE, _config as legacy_config, _lookup
     from web_v1_sessions import verify_session_ticket
+    uid = verify_session_ticket(request.cookies.get(COOKIE), config["secret"])
+    if type(uid) is not int or uid not in allowed:
+        return None, None, (jsonify({"error": "Admin Telegram diperlukan"}), 403)
+    # Only an allowlisted, signed Telegram identity may hit the legacy
+    # account backend, preventing data/config probing by anonymous browsers.
     old = legacy_config()
     if old is None:
         return None, None, (jsonify({"error": "Pengesahan admin belum tersedia"}), 503)
-    uid = verify_session_ticket(request.cookies.get(COOKIE),
-                                old["CIKGULAJU_WEB_SESSION_SECRET"])
-    if type(uid) is not int or uid not in allowed:
-        return None, None, (jsonify({"error": "Admin Telegram diperlukan"}), 403)
     try:
         account = _lookup(old, uid)
     except Exception:
