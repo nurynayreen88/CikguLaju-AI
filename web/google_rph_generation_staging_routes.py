@@ -15,7 +15,7 @@ import time
 import uuid
 from urllib.parse import urlsplit
 
-from flask import Blueprint, jsonify, make_response, request
+from flask import Blueprint, jsonify, make_response, request, current_app
 
 from web.google_web_catalog_staging import _actor
 from web.google_auth_staging_routes import _enabled_config
@@ -199,7 +199,9 @@ def issue():
             paid=web_payment_access(cfg,actor.account_id)
             if not paid.get("payment_access_active"):
                 return jsonify({"error":"10 janaan percuma sudah habis","remaining":0}),403
-    except PaidStatusBridgeUnavailable:
+    except PaidStatusBridgeUnavailable as exc:
+        # Safe operational reason only; never log bearer, UID, receipts or PII.
+        current_app.logger.warning("staging RPH paid bridge issue unavailable: %s", exc)
         return jsonify({"error":"Semakan hak akses belum tersedia. Kredit tidak dipotong."}),503
     except (GoogleAccountUnavailable,KeyError,ValueError,TypeError,RuntimeError):
         return jsonify({"error":"Baki akaun belum boleh disahkan"}),503
@@ -256,7 +258,8 @@ def generate():
     # credits while a linked production-paid lookup is unavailable.
     try:
         prod_paid_uid = verified_paid_uid_for_rph(actor, cfg)
-    except PaidStatusBridgeUnavailable:
+    except PaidStatusBridgeUnavailable as exc:
+        current_app.logger.warning("staging RPH paid bridge generate unavailable: %s", exc)
         return jsonify({"error":"Semakan hak akses belum tersedia. Kredit tidak dipotong.",
                         "job_id":job_id}),503
     try:
@@ -275,7 +278,8 @@ def generate():
                   if confirmed_paid_uid is not None else {})
         result=publish_rendered_bundle(
             cfg,actor,job_id,digest,bundle["word"],bundle["pdf"],**kwargs)
-    except PaidStatusBridgeUnavailable:
+    except PaidStatusBridgeUnavailable as exc:
+        current_app.logger.warning("staging RPH paid bridge generate unavailable: %s", exc)
         return jsonify({"error":"Semakan hak akses belum tersedia. Kredit tidak dipotong.",
                         "job_id":job_id}),503
     except (BundleCommitUnconfirmed,ValueError):
