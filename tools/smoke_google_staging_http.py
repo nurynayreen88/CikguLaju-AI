@@ -35,9 +35,9 @@ def fetch(path, *, post_json=None):
                   headers=headers, method="POST" if post_json is not None else "GET")
     try:
         with opener.open(req, timeout=25) as reply:
-            return reply.status, reply.headers, reply.read(4096)
+            return reply.status, reply.headers, reply.read(16384)
     except HTTPError as exc:
-        return exc.code, exc.headers, exc.read(4096)
+        return exc.code, exc.headers, exc.read(16384)
 
 
 def check():
