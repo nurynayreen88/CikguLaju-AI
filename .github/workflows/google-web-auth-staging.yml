@@ -79,11 +79,13 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
-          html = Path('web/google_staging_web.html').read_text(encoding='utf-8')
-          script = html.split('<script>', 1)[1].split('</script>', 1)[0]
-          Path('/tmp/cikgulaju-google-staging-ui.js').write_text(script, encoding='utf-8')
+          for filename in ('web/google_staging_web.html', 'web/google_staging_account.html'):
+              html = Path(filename).read_text(encoding='utf-8')
+              script = html.split('<script>', 1)[1].split('</script>', 1)[0]
+              Path('/tmp/' + Path(filename).stem + '.js').write_text(script, encoding='utf-8')
           PY
-          node --check /tmp/cikgulaju-google-staging-ui.js
+          node --check /tmp/google_staging_web.js
+          node --check /tmp/google_staging_account.js
       - name: Run Google staging authentication tests
         run: |
           python -m unittest discover -s tests -p 'test_web_google_auth_staging.py' -v
