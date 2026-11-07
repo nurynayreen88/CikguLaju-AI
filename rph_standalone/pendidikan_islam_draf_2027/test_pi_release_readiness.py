@@ -49,6 +49,13 @@ class PIReleaseReadinessTests(unittest.TestCase):
         self.assertEqual(r["year6_tasmi_official_dskp_codes_invented"],0)
         self.assertEqual(r["year6_full_source_hold_records_reviewed_against_rpt"],5)
         self.assertEqual(r["year6_full_source_hold_records_generated"],0)
+        self.assertEqual(r["year6_juz25_verses_total"],246)
+        self.assertEqual(r["year6_juz25_verses_mapped_original_rpt"],179)
+        self.assertEqual(r["year6_juz25_verses_missing_original_rpt"],67)
+        self.assertEqual(r["year6_juz25_missing_source_blocks"],4)
+        self.assertEqual(r["year6_juz29_l117_neighbour_chapters_70_to_72_ayat_verified"],100)
+        self.assertEqual(r["year6_quran_held_rumi_editor_candidates"],4)
+        self.assertEqual(r["year6_quran_candidate_expert_or_jawi_approved"],0)
         self.assertEqual(r["year6_sp42_official_dskp_sp_codes_confirmed"],3)
         self.assertEqual(r["year6_l059_offtopic_kbat_repaired_editorially"],1)
         self.assertEqual(r["year6_l060_optional_amali_candidate_created_held"],1)
@@ -69,6 +76,11 @@ class PIReleaseReadinessTests(unittest.TestCase):
         self.assertIn("merumus", issue[0]["action"])
         self.assertIn("DRAFT", issue[0]["action"])
         self.assertTrue(all(x["action"] for x in r["release_blockers"]))
+        full_juz = [b for b in r["release_blockers"] if b["code"] ==
+                    "YEAR6_JUZ25_67_UNMAPPED_QURAN_AYAT"]
+        self.assertEqual(len(full_juz),1)
+        self.assertIn("179/246",full_juz[0]["action"])
+        self.assertIn("67 ayat",full_juz[0]["action"])
 
     def test_year_summary_is_coherent(self):
         r = self.r
@@ -94,6 +106,10 @@ class PIReleaseReadinessTests(unittest.TestCase):
         self.assertEqual(y["4"]["hadith_excerpt_from_original_source_pending_expert"],1)
         self.assertEqual(y["6"]["year6_tasmi_rpt_ayah_ranges_teacher_pending"],2)
         self.assertEqual(y["6"]["year6_wholly_held_source_triaged_no_release"],5)
+        self.assertEqual(y["6"]["year6_juz25_unmapped_ayah_in_rpt"],67)
+        self.assertEqual(y["6"]["year6_juz25_unmapped_ayah_spans"],4)
+        self.assertEqual(y["6"]["year6_juz29_l117_local_70_72_ayat_mapped"],100)
+        self.assertEqual(y["6"]["year6_held_quran_separate_editor_candidates"],4)
         self.assertEqual(y["6"]["source_dskp_sp42_kbat_rewritten_pending_expert"],1)
         self.assertEqual(y["3"]["tasmi_verse_descriptions_without_3_level_sp"], 37)
         self.assertEqual(y["3"]["direct_dskp_textbook_sp_footer_crosschecked"], 0)
