@@ -56,6 +56,9 @@ def readiness(root=ROOT):
     assert book3["year3_lessons_with_book_footer_code_not_observed"] == 1
     assert book3["dskp_6433_visually_confirmed"] is True
     assert book3["tasmi_verse_based_lessons_without_three_level_sp"] == 37
+    assert qa["dskp_l146_alignment_editorial_review_count"] == 1
+    assert book3["objective_and_pbd_drafted_to_dskp_643_645"] == 1
+    assert book3["objective_and_pbd_expert_approvals"] == 0
     assert ba["refined_page_review_candidates"] == 174
     assert ba["oral_and_tasmi_no_forced_book"] == 84
     assert ba["confirmed_exercise_pages"] == 0
@@ -88,6 +91,7 @@ def readiness(root=ROOT):
             "old_pdf34_cross_topic_page_hints": 6 if year == 3 else 0,
             "book_footer_sp_code_present_only": 109 if year == 3 else 0,
             "book_footer_missing_but_dskp_manually_seen": 1 if year == 3 else 0,
+            "l146_objective_activity_pbd_revised_pending_expert": counter["DSKP_T3_L146_OBJECTIVE_PBD_REVISED_EXPERT_PENDING"],
             "tasmi_verse_descriptions_without_3_level_sp": 37 if year == 3 else 0,
             "short_activity_source_hold": counter["AKTIVITI_TERLALU_RINGKAS_PERLU_SEMAKAN"],
             "expert_approved_lesson_count": 0,
@@ -111,7 +115,7 @@ def readiness(root=ROOT):
          "action": "Original notes 133-140 are beyond textbook end; verify activity/PBD per Lesson against observed p134-136, then approve an edited note separately"},
         {"code": "YEAR3_6433_DSKP_BOOK_FOOTER_AND_L146_OBJECTIVE_REVIEW",
          "affected_lessons": 1,
-         "action": "T3-L146: retain DSKP SP6.4.3 p39; check book footer omission and objective 2 'menyenaraikan' against SP6.4.4 'merumus'"},
+         "action": "T3-L146: official DSKP SP6.4.3 is retained; objective 2 'merumus', objective 3 'mengamalkan', 4 steps and revised PBD are DRAFT only; verify Jawi, SP alignment and book-footer omission with academic reviewer"},
         {"code": "ACTIVITY_BOOK_MATCHES_UNVERIFIED", "affected_lessons": 174,
          "action": "Check BA exercise and printed page on original Year 2/3 editions"},
         {"code": "CONTENT_EXPERT_PER_LESSON_APPROVAL", "affected_lessons": 690,
@@ -146,6 +150,8 @@ def readiness(root=ROOT):
         "year3_awalan_prefix_examples_expert_approved": 0,
         "year3_book_footer_code_present_lesson_count": 109,
         "year3_book_footer_exception_dskp_confirmed": 1,
+        "year3_l146_dskp_643_645_objective_activity_pbd_revised_draft": 1,
+        "year3_l146_expert_approved": 0,
         "year3_tasmi_verse_lessons_not_given_fake_sp": 37,
         "teacher_approved_page_specific_exercises": 0,
         "book_activity_page_candidates": 174,
