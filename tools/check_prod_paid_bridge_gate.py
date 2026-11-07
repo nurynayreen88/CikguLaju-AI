@@ -14,7 +14,7 @@ req=Request(URL, method="POST",
     data=json.dumps({"telegram_user_id":9223372036854775807}).encode("utf-8"),
     headers={"Content-Type":"application/json","Accept":"application/json"})
 try:
-    with urlopen(req,timeout=20) as response:
+    with urlopen(req,timeout=65) as response:
         status=response.status
 except HTTPError as exc:
     status=exc.code
