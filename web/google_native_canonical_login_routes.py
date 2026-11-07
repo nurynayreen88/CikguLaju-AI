@@ -271,7 +271,16 @@ def logout():
             or request.headers.get("Sec-Fetch-Site", "same-origin")
                not in ("same-origin","none")):
         return jsonify({"error":"Asal permintaan tidak sah"}),403
+    # A linked Google sign-in also creates a working legacy Web session.
+    # Revoke that session when ending the Google session, otherwise the Web
+    # remains authenticated even after the teacher explicitly logged out.
+    had_google_session = verify_google_principal_ticket(
+        request.cookies.get(GOOGLE_COOKIE), cfg["secret"]) is not None
     res = jsonify({"authenticated":False})
     res.delete_cookie(GOOGLE_COOKIE,path="/",secure=True,httponly=True,samesite="Lax")
-    # Existing independent Telegram logins are NOT logged out by this route.
+    if had_google_session:
+        # Also signs out an independently opened Telegram Web session if both
+        # methods were active in this browser; this is safer than leaving a
+        # hidden privileged v1 session alive after Google logout.
+        res.delete_cookie(LEGACY_COOKIE,path="/",secure=True,httponly=True,samesite="Lax")
     return res
