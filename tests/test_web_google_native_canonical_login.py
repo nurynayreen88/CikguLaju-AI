@@ -46,7 +46,7 @@ class GoogleNativeCanonicalTests(unittest.TestCase):
         self.assertEqual(parsed.netloc,"soxakntcanbycjoygrcx.supabase.co")
         args=parse_qs(parsed.query)
         self.assertEqual(args["provider"],["google"])
-        self.assertEqual(args["code_challenge_method"],["S256"])
+        self.assertEqual(args["code_challenge_method"],["s256"])
         return parse_qs(urlsplit(args["redirect_to"][0]).query)["state"][0]
 
     def _callback(self,state):
