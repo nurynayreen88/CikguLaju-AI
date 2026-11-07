@@ -27,11 +27,12 @@ jobs:
           python -m pip install python-docx==1.1.2 reportlab==4.2.5 pypdf==5.1.0
       - name: Check four source-grounded Year2 experiments and safety
         run: python -m unittest discover -s tests -p 'test_sains_y2_four_semantic_quality_fixes_20261108.py' -v
+      - name: Rebuild Year2 KSSR source indices before dependent RPH checks
+        run: python -m tools.render_sains_rpt_2027_ab_review_20261106
       - name: Check all 51 source-specific Sains Year2 activities and DSKP source warnings
         run: python -m unittest discover -s tests -p 'test_sains_y2_51_bank_quality_20261107.py' -v
       - name: Rebuild Year2 standalone source RPH without touching production
         run: |
-          python -m tools.render_sains_rpt_2027_ab_review_20261106
           python -m tools.render_sains_y2_51_rph_draf_20261107
       - name: Check real Year2 Word one-page A4 and reject overflow
         run: |
