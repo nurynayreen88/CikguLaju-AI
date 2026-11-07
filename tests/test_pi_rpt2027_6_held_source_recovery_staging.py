@@ -46,15 +46,20 @@ class PIHeldRecoveredSourceEvidenceQA(unittest.TestCase):
                     self.assertEqual(p["week"],EXPECTED[(year,lesson)])
                     self.assertEqual((p["a_start"],p["a_end"]),weeks["A"][p["week"]])
                     self.assertEqual((p["b_start"],p["b_end"]),weeks["B"][p["week"]])
-                    self.assertIn("REKOD DITAHAN",p["sk"])
-                    self.assertIn("REKOD DITAHAN",p["sp"])
                     self.assertIn("REKOD DITAHAN",p["note"])
+                    self.assertFalse(p["held_release_approved"])
                     if item["kind"].startswith("KHATAM"):
                         self.assertFalse(item["source_sk_sp_given"])
                         self.assertIn("tasmi",p["topic"].lower())
+                        self.assertIn("BUKAN KOD SK RASMI",p["sk"])
+                        self.assertIn("TIADA KOD SP RASMI",p["sp"])
                     else:
                         self.assertTrue(item["source_conflict"])
                         self.assertIn("KONFLIK",p["topic"])
+                        self.assertIn("4.2 — Solat Ketika Sakit",p["sk"])
+                        for code in ("4.2.3","4.2.4","4.2.5"):
+                            self.assertIn(code,p["sp"])
+                        self.assertIn("L059",p["note"])
 
 if __name__=="__main__":
     unittest.main()
