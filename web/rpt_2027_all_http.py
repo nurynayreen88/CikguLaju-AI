@@ -223,7 +223,14 @@ def create_all_rpt_blueprint(*,root=ROOT):
                 document=for_download(account,path,subject,year)
             except ProfileUnavailable:
                 return jsonify({"error":"RPT dengan identiti sekolah belum dapat disediakan."}),503
-        return send_file(document,mimetype="application/pdf",as_attachment=True,
-                         download_name=f"CIKGULAJU_RPT_{subject.upper()}_TAHUN_{year}_2027_DRAF.pdf",
-                         conditional=False)
+        response=send_file(document,mimetype="application/pdf",as_attachment=True,
+                           download_name=f"CIKGULAJU_RPT_{subject.upper()}_TAHUN_{year}_2027_DRAF.pdf",
+                           conditional=False)
+        if staged is not None:
+            # Exact PDF hash is from the prevalidated 56-source manifest.
+            # Browser must match it to the audited original-cover layout;
+            # a future PDF with a changed template cannot be stamped blindly.
+            response.headers["X-RPT-Source-SHA256"]=(
+                _release_manifest(root)[f"{subject}:{year}"]["sha256"])
+        return response
     return bp
