@@ -383,3 +383,34 @@ Pada buku sumber asal Tahun 3 (Drive `GuruBesar_BukuTeks_Pendidikan_Islam_T3_SK.
 - Kedua-dua kumpulan tasmi' Tahun 2 (**30**) dan Tahun 3 (**37**) tidak diberikan kod SP tiga aras buatan. Fail `pi_t3_book_footer_code_audit.py` bersama ujian regresi menghasilkan lejar 147 Lesson secara review-only.
 
 **Sempadan bukti:** penanda kod pada Buku Teks bukan DSKP teks penuh; bukti bahawa 6.4.3 wujud dalam DSKP adalah pengesahan halaman tunggal, bukan semakan semua kod Tahun 3. **0** Lesson diluluskan oleh pakar, **0** bahan baharu boleh diterbitkan, PR kekal **DRAFT / HOLD / NO_GO**.
+
+
+## 7 November 2026 — semakan lanjut DSKP Tahun 3 dan sumber Hadis Tahun 4
+
+### T3-L146 — SP 6.4.3, 6.4.4 dan 6.4.5
+
+DSKP asal Pendidikan Islam Tahun 3 di Drive (ID `1tjcWRrfcAGk-Y_OpzeQhO253hunaz9RA`, bercetak **39**, PDF **51**) telah diperiksa **secara visual**. Penyataan SP 6.4.4 meminta murid *merumus kepentingan* mengamalkan sunnah Rasulullah; SP 6.4.5 meminta murid *mengamalkannya*.
+
+Pembetulan **draf sahaja** dalam `year3.json`:
+- Objektif 2 diubah daripada *menyenaraikan* kepada **merumus** (SP 6.4.4).
+- Objektif 3 ditambah: **mengamalkan satu sunnah Rasulullah** (SP 6.4.5).
+- Empat aktiviti PdP kini merangkumi contoh sunnah perkataan/perbuatan, perbincangan rumusan, padanan dan amali situasi.
+- Pentaksiran lama yang mengandungi **soalan orang paling bakhil** dan **aktiviti bersyukur** tidak berkaitan dengan SP diganti dengan PBD membuktikan 6.4.3–6.4.5 melalui penerangan, rumusan dan demonstrasi.
+- Teks objektif, aktiviti dan PBD asal dipelihara sepenuhnya di `staging_dskp_l146_alignment`. Tiada penyataan SK/SP dipadam, dan status **HOLD** kekal. Ejaan Jawi draf dan padanan pedagogi akhir tetap memerlukan penyemak bertauliah.
+
+### T4-L083 — petikan hadis memuliakan tetamu dipulihkan daripada sumber primer
+
+Buku Teks Pendidikan Islam Tahun 4 dalam Drive (ID `17x1icc3hkoutTopyjbyi6kIfmxksBo1R`, SHA-256 `dfcd7720c1adc7c6aaec6cfae55ea66a2db2605288359d4f10acef2000ad7451`) **PDF halaman 57 / bercetak 51** mengandungi petikan hadis memuliakan tetamu. DSKP asal dalam Drive (ID `1r5IexeLxm5L025Abj_V-r6NRlDBeoQdJ`, SHA-256 `e30b48edf947002afb466605d8c3375e2876265dcfb73c2161f0e0416669351b`) **PDF 39 / bercetak 27** turut memaparkan petikan tersebut dalam SP 2.1.1.
+
+Draf RPH yang sebelum ini mempunyai ruang matan kosong kini menerima **petikan sumber dengan elipsis yang disengajakan**: `... وَمَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ فَلْيُكْرِمْ ضَيْفَهُ`. **Ini bukan tuntutan bahawa seluruh teks riwayat telah ditranskripsikan atau disahkan.** Nota sumber, rujukan halaman dan fail asal disimpan, sementara satu langkah PdP yang terlalu ringkas diganti **3 langkah** dengan PBD bacaan dan kefahaman yang relevan.
+
+Teks asal semua medan RPH disimpan di `staging_hadith_original_source_verified.original_fields_preserved`. **T4-L083 kekal di bawah `staging_source_review_required=true`**, tidak layak pratonton guru sehingga semakan Jawi, lafaz dan isi oleh pakar. Fail audit `pi_t4_hadith_source_audit.py` menguji bukti dan melarang dakwaan kelulusan automatik.
+
+### Keputusan ukuran selepas dua pembetulan
+
+- **690** RPH mempunyai draf, **6** rekod masih ditahan tanpa isi.
+- **688/690** draf mempunyai **3 langkah PdP atau lebih** (liputan **99.71%**, hanya ukuran mekanikal, bukan mutu akademik).
+- **3** rekod kekal kritikal untuk pelepasan: T4-L083 (*petikan sumber ditemui, pakar belum sahkan*), T6-L137 dan T6-L141 (*julat ayat tasmi' belum dibuktikan*). **687** kekal boleh menjalani pratonton/cetakan *editor sahaja*; T4-L083 sengaja tidak dibenarkan.
+- Sumber DSKP Tahun 6 (Drive `GuruBesar_DSKP_Pendidikan_Islam_Tahun_6.pdf`) dan Buku Teks Tahun 6 (`6 BUKU TEKS PENDIDIKAN ISLAM TAHUN 6 KSSR SEMAKAN.pdf`) dikenal pasti dalam Drive; buku teks yang diperiksa bersifat **imej sahaja** untuk ekstrak teks. Tiada julat ayat spesifik diandaikan atau ditulis tanpa pengesahan halaman.
+- **174** calon Buku Aktiviti T2/T3 kekal tanpa latihan/halaman asal yang disahkan.
+- **0** kelulusan akademik/Jawi formal, **0** RPH baru READY atau perubahan DB/Web/Telegram. **PR #443 DRAFT/HOLD/NO_GO** sehingga syarat pelepasan benar-benar dipenuhi.
