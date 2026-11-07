@@ -49,7 +49,7 @@ jobs:
                       for b in pg.get_text('blocks'):
                           x0,y0,x1,y1=b[:4]
                           assert 0<=x0<=x1<=pg.rect.width and 0<=y0<=y1<=pg.rect.height, (file,i,b[:4])
-                      assert '\\x00' not in pg.get_text(), (file,i,'NUL chars')
+                      assert chr(0) not in pg.get_text(), (file,i,'NUL chars')
                   page1=pdf[0]
                   for t in ('LOGO SEKOLAH','NAMA SEKOLAH','NAMA GURU'):
                       assert t in page1.get_text(),(file,t)
