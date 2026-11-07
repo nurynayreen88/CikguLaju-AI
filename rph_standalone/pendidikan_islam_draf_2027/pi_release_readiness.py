@@ -52,6 +52,7 @@ def readiness(root=ROOT):
     preview = preview_counts(root=root)
     assert qa["total"] == 696 and qa["drafts"] == 690 and qa["held"] == 6
     assert qa["critical_source_review_count"] == 3
+    assert qa["unverified_year4_to6_activity_book_wording_count"] == 13
     assert preview == {
         "total": 696, "draf": 690, "held": 6,
         "critical_source_hold": 3, "preview_eligible": 687, "ready": 0,
@@ -183,6 +184,8 @@ def readiness(root=ROOT):
          "action": "T3-L146: official DSKP SP6.4.3 is retained; objective 2 'merumus', objective 3 'mengamalkan', 4 steps and revised PBD are DRAFT only; verify Jawi, SP alignment and book-footer omission with academic reviewer"},
         {"code": "ACTIVITY_BOOK_MATCHES_UNVERIFIED", "affected_lessons": 174,
          "action": "Check BA exercise and printed page on original Year 2/3 editions"},
+        {"code": "YEAR5_JAWI_BUKU_AKTIVITI_WORDING_SOURCE_UNVERIFIED", "affected_lessons": 13,
+         "action": "Nine Year5 Jawi PBD texts and four teaching-activity texts mention Buku Aktiviti, but its specific edition/page/exercise is not verified. Decide official workbook versus generic exercise book; retain original source, do not invent a workbook link"},
         {"code": "CONTENT_EXPERT_PER_LESSON_APPROVAL", "affected_lessons": 690,
          "action": "Review SK, SP, activities, learning objectives and assessment"},
         {"code": "RUNTIME_WORD_PDF_VISUAL_TEST", "affected_lessons": 687,
@@ -244,6 +247,7 @@ def readiness(root=ROOT):
         "year3_tasmi_verse_lessons_not_given_fake_sp": 37,
         "teacher_approved_page_specific_exercises": 0,
         "book_activity_page_candidates": 174,
+        "year5_ambiguous_activity_book_source_mentions": qa["unverified_year4_to6_activity_book_wording_count"],
         "book_activity_exercises_verified": 0,
         "individual_expert_approvals": 0,
         "native_telegram_web_rph_pdf_verified": 0,
