@@ -27,6 +27,7 @@ class AllSubjectRPTTests(unittest.TestCase):
         self.assertEqual(set(SUBJECTS), {
             "english", "bahasa_melayu", "matematik", "sains",
             "pendidikan_islam", "pjpk", "pendidikan_moral", "psv",
+            "bahasa_arab", "muzik", "rbt", "sejarah",
         })
         self.assertEqual(YEARS, (2, 3, 4, 5, 6))
         self.assertTrue(pdf_ready("bahasa_melayu", 2, root=self.root))
@@ -40,7 +41,8 @@ class AllSubjectRPTTests(unittest.TestCase):
         r = self.client.get("/api/rpt/2027/catalog")
         self.assertEqual(r.status_code, 200)
         data = r.get_json()
-        self.assertEqual(len(data["subjects"]), 8)
+        self.assertEqual(len(data["subjects"]), 12)
+        self.assertEqual(data["total_rpt"], 56)
         bm = next(s for s in data["subjects"] if s["code"] == "bahasa_melayu")
         self.assertTrue(bm["years"][0]["pdf_ready"])
         self.assertFalse(bm["years"][0]["download_enabled"])

@@ -1,0 +1,76 @@
+name: Web RPT 2027 attach 56 staging PDF assets to safe production PR
+on:
+  pull_request:
+    branches:
+      - 'production/cikgulaju-web-20261105'
+    paths:
+      - '.github/workflows/web-rpt2027-56-pdf-attach-to-pr.yml'
+  workflow_dispatch:
+permissions:
+  actions: read
+  contents: write
+  pull-requests: read
+jobs:
+  attach_56_pdfs:
+    if: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'feature/web-rpt2027-56-downloads-20261108' && github.event.pull_request.base.ref == 'production/cikgulaju-web-20261105' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout owner production-only feature branch (no main or PR441 merge)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 1
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install isolated PDF inspector and Web catalog test dependencies
+        run: |
+          python -m pip install 'PyMuPDF==1.24.14' 'flask==3.1.3'
+          python -m unittest tests.test_web_rpt2027_56_release_catalog -v
+      - name: Download 5 immutable green RPT QA artifacts from owner GitHub Actions
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/rpt_sources"
+          gh run download 42395310599 -R "$GITHUB_REPOSITORY" -n 'RPT2027-ENGLISH-Y2Y6-800-LIMA-LAJUR-DRAF' -D "$RUNNER_TEMP/rpt_sources/english"
+          gh run download 42395310640 -R "$GITHUB_REPOSITORY" -n 'RPT2027-MATH-585-LESSON-5-LIMA-LAJUR-DRAF' -D "$RUNNER_TEMP/rpt_sources/math"
+          gh run download 42395310661 -R "$GITHUB_REPOSITORY" -n 'RPT2027-20-BM-PI-ARAB-MUZIK-Seragam-DRAF' -D "$RUNNER_TEMP/rpt_sources/four"
+          gh run download 42395310597 -R "$GITHUB_REPOSITORY" -n 'RPT2027-21-asal-dan-3-RBT-simulasi-DRAF' -D "$RUNNER_TEMP/rpt_sources/twentyone"
+          gh run download 42395310498 -R "$GITHUB_REPOSITORY" -n 'RPT2027-SAINS-342-PDP-PROPOSAL-FIVE-COLUMN-PARTIAL-DRAF' -D "$RUNNER_TEMP/rpt_sources/sains"
+      - name: Install ONLY 56 RPT source files with content SHA256 manifest (fail closed)
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/install_rpt2027_56_web_assets.py \
+            --artifacts "$RUNNER_TEMP/rpt_sources" \
+            --output rpt_2027/web_2027_pdfs
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from web.rpt_2027_all_http import catalog_data
+          m=json.loads(Path('rpt_2027/web_2027_pdfs/manifest.json').read_text('utf-8'))
+          assert m["count"]==56 and m["academic_final_approved"] is False
+          c=catalog_data(allowed=True)
+          assert len(c['subjects'])==12
+          assert c['total_rpt']==c['available_rpt']==56
+          assert all(x['download_enabled'] for s in c['subjects'] for x in s['years'])
+          print('RPT2027_WEB_56_SERVED_READY_HASH_VERIFIED',m['pages'],'pages')
+          PY
+      - name: Commit exact validated binary assets ONLY to Web feature PR, never main/production
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git branch --show-current)" = 'feature/web-rpt2027-56-downloads-20261108'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- rpt_2027/web_2027_pdfs
+          if git diff --cached --quiet; then
+            echo 'PDF assets already committed; no change.'
+          else
+            git commit -m 'assets(web): attach 56 hash-verified RPT 2027 DRAF PDFs from green CI artifacts'
+            git push origin HEAD:feature/web-rpt2027-56-downloads-20261108
+          fi
