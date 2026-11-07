@@ -44,11 +44,14 @@ def build_queue(root=ROOT):
                 action = "Dapatkan matan/julat ayat asal yang lengkap; semak pakar sebelum isi aktiviti."
                 sp = record["fields"]["sp"]
             elif ("PBD_TIDAK_KHUSUS_KEPADA_SP" in flags or
+                  "PBD_SP_SASARAN_BELUM_DISAH_PAKAR" in flags or
                   "RUJUKAN_HALAMAN_BELUM_DISAHKAN" in flags):
                 priority = "P2_PBD_OR_PAGE"
                 tasks = []
                 if "PBD_TIDAK_KHUSUS_KEPADA_SP" in flags:
                     tasks.append("Semak PBD individu terhadap kata kerja dan hasil SP sebenar")
+                if "PBD_SP_SASARAN_BELUM_DISAH_PAKAR" in flags:
+                    tasks.append("Semak ayat PBD draf khusus: bukti aktiviti/SP, ejaan Jawi dan rubrik guru")
                 if "RUJUKAN_HALAMAN_BELUM_DISAHKAN" in flags:
                     tasks.append("Sahkan halaman Buku Teks pada naskhah asal")
                 action = "; ".join(tasks) + "."
@@ -85,6 +88,7 @@ def build_queue(root=ROOT):
         "quality_score_percent": None,
         "quality_80_certified": False,
         "generic_pbd_records": qa["generic_pbd_count"],
+        "pbd_refinements_pending_expert_review": qa["refined_pbd_review_count"],
         "unverified_old_page_note_records": qa["flags"].get("RUJUKAN_HALAMAN_BELUM_DISAHKAN", 0),
         "by_priority": {p: counts.get(p, 0) for p in PRIORITIES},
         "total": len(queue),
