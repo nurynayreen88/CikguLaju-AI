@@ -71,7 +71,7 @@ class StagingAccessStatusTests(unittest.TestCase):
     def test_unauthenticated_and_conflict_never_expose_paid_access(self):
         for code in (401, 403):
             with patch("web.google_web_catalog_staging._actor",
-                       return_value=(None, (jsonify({"error": "Denied"}), code))):
+                       return_value=(None, ({"error": "Denied"}, code))):
                 self.assertEqual(self.client.get(
                     "/api/google-staging/web/access/status").status_code, code)
 
