@@ -22,13 +22,19 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, Tabl
 
 from tools.audit_sains_342_pdp_release_gate_20261106 import ROOT, analyze
 from web.sains_y5_83_activity_bank_draf_20261107 import BANK
+from tools.sains_y5_83_textbook_original_sp_pages_20261107 import checked_book_pages, SHA as BOOK_SOURCE_SHA
 
 OUT = ROOT / "build" / "sains_y5_83_rph_DRAF_20261107"
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 BOLD_FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 DSKP_SOURCE = "https://drive.google.com/file/d/1YkiK-pVo4UUzyOUvv_Vrico58eQyddCz/view"
 BOOK_SOURCE = "https://drive.google.com/file/d/1m5k8gVkNImT8QEdw6fCEVpQh_tNkUKUT/view"
-TEXTBOOK_STATUS = "TEXT_EXTRACTION_PARTIAL__NO_PAGE_REFERENCE_APPROVED"
+TEXTBOOK_STATUS = "ORIGINAL_3PART_83_SP_PAGE_TOKENS_VERIFIED__PEDAGOGY_APPROVAL_PENDING"
+BOOK_SOURCE_PARTS = (
+    "https://drive.google.com/file/d/1m5k8gVkNImT8QEdw6fCEVpQh_tNkUKUT/view",
+    "https://drive.google.com/file/d/1xvpW8HgqrTdrl8QJCHUx0pDIiyuBLjIJ/view",
+    "https://drive.google.com/file/d/1YnwPPyyLoGCzP_m3izeB_PFn3w7XGsPt/view",
+)
 
 KPS = {
     "1.1.1":"Memerhati",
@@ -75,17 +81,24 @@ def get_y5_records():
         raise ValueError(f"Year5 DSKP SP mismatch missing={missing} extra={extra}")
     if summary["decision"]!="HOLD":
         raise ValueError("Source audit release gate unexpectedly lifted")
+    textbook=checked_book_pages()
     result=[]
     for row in selected:
         if row["keputusan"]!="HOLD":
             raise ValueError("Unapproved source treated as ready")
+        book=textbook.get(row["sp"])
+        if (not book or book["teacher_academic_approved"] is not False
+            or book["page_sp_evidence"]!="ORIGINAL_PDF_TEXT_HAS_EXACT_SP_TOKEN"):
+            raise ValueError("Year5 SP source page cannot be verified: "+row["pdp_code"])
         result.append({
             **row, **BANK[row["sp"]],
             "kps":kps_for(row["sp"]),
             "subject":"Sains",
             "year":5,
             "curriculum_quality_percent":None,
-            "textbook_pages":None,
+            "textbook_pages":book["printed_pages"],
+            "textbook_page_primary":book["primary_page"],
+            "textbook_reference_status":"83_SP_PRINTED_TEXT_LABEL_MATCH__ACTIVITY_CONTENT_TEACHER_HOLD",
             "status":"DRAF_HOLD",
         })
     return result
@@ -99,8 +112,9 @@ def markdown(item):
         f"**Tajuk:** {item['tajuk']}\n"
         f"**SK:** {item['sk']}\n"
         f"**SP:** {sp}\n"
-        "**Rujukan:** DSKP Sains Tahun 5 KSSR Semakan 2017; halaman Buku Teks "
-        "asal belum disahkan (teks Buku Teks hanya sebahagian).\n"
+        f"**Rujukan:** DSKP Sains Tahun 5 KSSR Semakan 2017; Buku Teks SK 2020 m/s "
+        f"{', '.join(map(str,item['textbook_pages']))} (kod SP didapati dalam tiga bahagian "
+        "PDF buku asal; kesesuaian isi dan PBD belum disahkan panitia).\n"
         "**Tempoh cadangan:** 60 minit (ikut jadual sebenar)\n"
         f"**Objektif dan kriteria kejayaan:** {item['pbd']}.\n"
         f"**KPS diintegrasi:** {item['kps']}\n\n"
@@ -166,7 +180,7 @@ def word_doc(path,item):
       ("Penutup (5m)","Murid menyatakan dapatan; guru merumus SP "+item["sp"]+"."),
       ("BBM",item["materials"]),
       ("Keselamatan",item["safety"]),
-      ("Buku teks/Status","Muka surat belum disahkan (teks BT separa) • DRAF/HOLD"),
+      ("Buku teks/Status",f"BT m/s {item['textbook_page_primary']} (label SP pada buku asal disemak; isi/PBD tunggu panitia) • DRAF/HOLD"),
     ]
     for i,(label,body) in enumerate(fields):
         _cell(phases.cell(i,0),label,bold=True)
@@ -207,7 +221,7 @@ def pdf_doc(path,item):
       ("Penutup 5m","Murid menyatakan dapatan; guru merumus SP "+item["sp"]+"."),
       ("BBM",item["materials"]),
       ("Keselamatan",item["safety"]),
-      ("Rujukan/Status","DSKP KPM. Halaman BT belum disahkan. DRAF/HOLD"),
+      ("Rujukan/Status",f"DSKP KPM; BT m/s {item['textbook_page_primary']} (kod SP buku disemak; isi/PBD belum sah panitia) • DRAF/HOLD"),
       ("Refleksi","____/____ murid mencapai objektif."),
     ]
     rows=[[p(k,label),p(v)] for k,v in fields]
@@ -256,7 +270,10 @@ def main():
             "word_file":stem+".docx","pdf_file":stem+".pdf",
             "pdf_one_page_a4":"PASS","word_a4":"SIZE_PASS__PRINT_PAGE_COUNT_PENDING",
             "dsKP_source":"TEXT_TOKEN_VERIFIED_NOT_FULL_SP_SEMANTICS",
-            "textbook_pages":"UNVERIFIED__NONE_INVENTED",
+            "textbook_pages":",".join(map(str,entry["textbook_pages"])),
+            "textbook_primary_page":entry["textbook_page_primary"],
+            "textbook_sp_code_source_status":entry["textbook_reference_status"],
+            "textbook_source_sha256_parts":";".join(BOOK_SOURCE_SHA),
             "lesson_activities":"SOURCE_SPECIFIC_DRAFT",
             "academic_score": "NOT_CERTIFIED",
             "release":"HOLD",
@@ -268,15 +285,19 @@ def main():
     (OUT/"QUALITY_GATE_HOLD.json").write_text(json.dumps({
         "source":"v25.82 staged read-only ledger + original Year5 DSKP",
         "dsKP_url":DSKP_SOURCE,"original_book_url":BOOK_SOURCE,
+        "original_book_3_part_urls":BOOK_SOURCE_PARTS,
+        "original_book_3_part_sha256":BOOK_SOURCE_SHA,
         "original_book_status":TEXTBOOK_STATUS,
-        "year":4,"pdp":len(records),"docx":len(records),"pdf":len(records),
+        "year":5,"pdp":len(records),"docx":len(records),"pdf":len(records),
         "markdown":len(records),"status":"DRAF/HOLD",
         "academic_quality_percent":None,"approved_by_teacher":False,
-        "source_page_reference_verified":False,"native_telegram_web_e2e":False,
+        "source_page_code_evidence_verified_count":83,
+        "source_page_reference_verified":True,
+        "source_pedagogical_matching_approved":False,"native_telegram_web_e2e":False,
         "no_production_db_or_runtime_write":True,
     },ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print("SAINS_T5_83_DRAF: 83 source-locked RPH; 83 Markdown + 83 Word A4 "
-          "+ 83 PDF A4 single page; textbook pages unverified; academic HOLD")
+          "+ 83 PDF A4 single page; 83 original book SP code/page refs checked; academic HOLD")
 
 
 if __name__=="__main__":
