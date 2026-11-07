@@ -185,6 +185,15 @@
     } catch(error) {
       if(output)output.textContent=error?.message||"Muat turun RPT tidak berjaya. Sila cuba semula.";
       return false;
-    } finally {if(button)button.disabled=false;}
+    } finally {
+      if(button) {
+        // Do not accidentally re-enable the main dropdown button if the
+        // user selected disabled KP2027 Year1 during the async download.
+        button.disabled=button.id==="rpt-download"
+          ? (document.getElementById("rpt-subject")?.value!==code ||
+             Number(document.getElementById("rpt-year")?.value)!==year)
+          : false;
+      }
+    }
   };
 })();
