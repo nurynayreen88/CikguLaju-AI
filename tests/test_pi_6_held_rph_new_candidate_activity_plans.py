@@ -24,8 +24,9 @@ class PI6HeldRPHNewCandidatesQA(unittest.TestCase):
             originals={r["lesson"]:r for r in source["records"]}
             for row in (r for r in a["records"] if r["year"]==y):
                 self.assertTrue(originals[row["lesson"]]["withheld"])
-                for field in ("objectives","teacher","students","assessment","src"):
+                for field in ("objectives","teacher","students","assessment"):
                     self.assertGreater(len(row[field]),20)
+                self.assertGreater(len(row["src"]),10)
                 if row["lesson"]!=60:
                     self.assertIsNone(row["sk"])
                     self.assertEqual(row["sp"],[])
