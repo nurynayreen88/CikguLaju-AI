@@ -300,3 +300,27 @@ Ujian membina DOCX sementara daripada medan terkini, mengekalkan semua teks SK/S
 - **Peratus kualiti akademik bertauliah kekal belum dinilai**, tidak boleh dilabel ≥80%, READY, atau dihantar ke pengguna. `main`, DB, kuota, pembayaran, Web dan Telegram kekal tanpa perubahan. Keputusan keselamatan penerbitan: **STAGING / HOLD / NO_GO**.
 
 **Syarat akhir yang perlu dibuktikan sebelum penerbitan:** naskhah BA dan Buku Teks yang boleh diperiksa mengikut halaman asli, semakan pakar Jawi dan isi setiap Lesson, penyelesaian 9 rekod tahanan/risiko, ujian visual Word/PDF + generator natif Web/Telegram, dan pengesahan Tahun 1 secara berasingan.
+
+
+## Sambungan 7 November — cadangan penutup Jawi 690/690 + kawalan READY ikut Lesson
+
+**Baki kerja editorial menyediakan calon penutup telah dilengkapkan**, bukan kerja pengesahan isi:
+
+| Perkara | Bilangan | Status |
+|---|---:|---|
+| Penutup Rumi dalam sumber asal | 690 | Asal dipelihara, tidak ditimpa |
+| Teks penutup Rumi unik | 78 | Dipetakan 1→banyak Lesson |
+| Draf **cadangan** penutup Jawi | **78/78** | **690/690 penggunaan** kini ada calon |
+| Calon penutup Jawi diluluskan pakar | **0** | Bukan bahan pengguna |
+| Fail semakan individu dengan SK/SP sumber asal | **690/690** | Setiap Lesson ada calon & bukti hash sumber |
+| Tahanan penuh | **6** | Tidak mempunyai medan isi RPH |
+| Sumber hadis/ayat kritikal tidak lengkap | **3** | Tidak boleh ditampilkan kepada guru |
+| Calon Buku Aktiviti yang perlu pengesahan latihan/halaman | **174** | Tiada halaman latihan disahkan |
+
+Fail baharu (hanya staging): `pi_closing_jawi_candidates_batch2.py` (23 kumpulan/635 penggunaan), `pi_closing_jawi_candidates_complete.py` (78 kumpulan/690 penggunaan), `pi_jawi_closing_lesson_review.py` (690 baris SP/objektif semakan) serta ujian regresi masing-masing. CI menghasilkan `pi_closing_jawi_candidates_690.json/.csv` dan `pi_jawi_closing_lesson_review_690.json/.csv`. Kandungan Jawi ialah **draf editorial yang perlu disemak semula**, termasuk ejaan, istilah agama, pernyataan hasil PdP dan kaitan dengan SP. Fail sumber `year2.json`–`year6.json` **tidak ditimpa untuk penutup Jawi**.
+
+Bagi mencegah anggapan bahawa 100% calon bererti 100% mutu, `pi_release_readiness.py` memberikan pengiraan tahunan yang berasingan: katalog 696 / 690 draf / 6 tahan / 3 sumber kritikal / 687 layak **pratonton editor sahaja**; **0 RPH baharu diluluskan pakar** dan **0 boleh diterbitkan**. Liputan mekanikal tiga langkah 99.57% bukan markah kualiti akademik.
+
+**Sumber Buku Teks Tahun 2 (KSSR Semakan 2017):** dokumen asli dalam Google Drive projek telah disemak secara visual pada isi kandungan dan halaman akhir. Audit `pi_t2_textbook_toc_review.py` kini menyimpan 77 nota lama/18 corak: 74 julat bab selari dengan sempadan pada isi kandungan, 3 catatan **T2-L102, L105, L108** melebihi halaman bercetak terakhir 138 (lama 133–140; cadangan editorial 133–138). Nota asal kekal. Ini **bukan** pengesahan halaman Lesson/SP, dan **bukan** bukti kebenaran mengedar PDF.
+
+Ujian fizikal cetakan editor (Run #92/#95/#108) telah membuktikan 687/687 draf yang diuji menjadi satu halaman A4 dalam penjana percubaan. Ia belum menguji Jawi visual dan penjana sebenar Telegram/Web. Tiada pengesahan Jawi atau kualiti akademik 80% dicapai secara sah. **Kekal DRAFT/HOLD/NO_GO**, DB dan produksi tidak berubah.
