@@ -160,14 +160,32 @@ class GoogleNativeCanonicalTests(unittest.TestCase):
         self.assertFalse(reply.json["linked_telegram"])
         self.assertEqual(reply.headers["Cache-Control"],"no-store, private")
 
-    def test_logout_is_origin_guarded_and_does_not_delete_telegram(self):
-        with patch("web.google_native_canonical_login_routes._config",return_value=CFG):
-            bad=self.client.post("/api/auth/google-native/logout",base_url=BASE,
-                                 headers={"Origin":"https://evil.example"})
-            self.assertEqual(bad.status_code,403)
-            good=self.client.post("/api/auth/google-native/logout",base_url=BASE,
-                                  headers={"Origin":BASE,"Sec-Fetch-Site":"same-origin"})
-            self.assertEqual(good.status_code,200)
+    def test_logout_is_origin_guarded_and_revokes_linked_legacy_session(self):
+        from web_v1_canonical_sessions import issue_google_principal_ticket
+        self.client.set_cookie(GOOGLE_COOKIE,
+                               issue_google_principal_ticket(ACC,SECRET),domain=HOST)
+        self.client.set_cookie(LEGACY_COOKIE,
+                               issue_session_ticket(123456789,SECRET),domain=HOST)
+        bad=self.client.post("/api/auth/google-native/logout",base_url=BASE,
+                             headers={"Origin":"https://evil.example"})
+        self.assertEqual(bad.status_code,403)
+        self.assertIsNotNone(self.client.get_cookie(GOOGLE_COOKIE,domain=HOST))
+        self.assertIsNotNone(self.client.get_cookie(LEGACY_COOKIE,domain=HOST))
+        good=self.client.post("/api/auth/google-native/logout",base_url=BASE,
+                              headers={"Origin":BASE,"Sec-Fetch-Site":"same-origin"})
+        self.assertEqual(good.status_code,200)
+        self.assertIsNone(self.client.get_cookie(GOOGLE_COOKIE,domain=HOST))
+        self.assertIsNone(self.client.get_cookie(LEGACY_COOKIE,domain=HOST))
+
+    def test_google_logout_without_google_session_preserves_independent_telegram(self):
+        self.client.set_cookie(LEGACY_COOKIE,
+                               issue_session_ticket(123456789,SECRET),domain=HOST)
+        good=self.client.post("/api/auth/google-native/logout",base_url=BASE,
+                              headers={"Origin":BASE,"Sec-Fetch-Site":"same-origin"})
+        self.assertEqual(good.status_code,200)
+        original=self.client.get_cookie(LEGACY_COOKIE,domain=HOST)
+        self.assertIsNotNone(original)
+        self.assertEqual(verify_session_ticket(original.value,SECRET),123456789)
 
     def test_dashboard_displays_verified_email_login_id_and_real_trial_balance(self):
         with (patch("web.google_native_canonical_login_routes._existing_google_account",
