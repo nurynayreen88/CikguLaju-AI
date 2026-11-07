@@ -177,6 +177,24 @@ def arabic_records(year):
     validate_rows("bahasa_arab",year,rows)
     return rows
 
+def _music_status_for_pdf(original):
+    """Human-readable display only; original source status stays in source_status."""
+    risk="RISIKO CALON HARI PDP 0/16 NEGERI - PDP ANJAL; JANGAN ANJAK AUTOMATIK"
+    has_risk=risk in original
+    display=original.replace("; "+risk,"").replace(risk,"").strip(" ;")
+    labels={
+        "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED":
+            "Padanan buku teks/audio sumber 2025–26 belum disahkan; DRAF",
+        "DRAF_STAGING_BOOK_AND_RPT_NOT_FINAL":
+            "Kandungan buku/RPT masih draf",
+        "CADANGAN_PENGUKUHAN_BUKAN_PROJEK_RASMI":
+            "Pengukuhan pilihan, bukan projek rasmi; DRAF",
+    }
+    display=labels.get(display,display)
+    if has_risk:
+        display+="; Slot berisiko cuti negeri — PdP anjal, jangan alih automatik"
+    return display
+
 def music_records(year):
     base=ROOT/"staging/pendidikan_muzik/rpt_rph_2027"
     rows=csv_rows(base/f"year{year}"/f"RPT_MUZIK_TAHUN_{year}_2027_DRAF.csv")
@@ -212,6 +230,7 @@ def music_records(year):
         official=music_full_standard_display(year,sp)
         unit=field(r,"Unit","Unit/Tajuk").strip()
         status=field(r,"Semakan","Status tambahan","Status Semakan")
+        display_status=_music_status_for_pdf(status)
         book=field(r,"BT m/s","RPT halaman BT (belum sah)","Buku Teks m/s")
         audio=r.get("Audio cetak atau RPT",r.get("Audio Tercetak",""))
         output.append(dict(
@@ -220,9 +239,9 @@ def music_records(year):
             sk=official["sk"],sk_display=official["sk_display"],
             sp=official["sp"],sp_display=official["sp_display"],
             note=("BT m/s: "+book+" (draf). " +
-                  ("Audio: "+audio+". " if audio else "")+status+
+                  ("Audio: "+audio+". " if audio else "")+display_status+
                   (" | "+official["source_note"] if official["source_note"] else ""))[:660],
-            source_rpt_sp_codes=sp,
+            source_rpt_sp_codes=sp,source_status_original=status,
             dskp_text_source="KPM_MUSIC_DSKP_PDF_PRINTED_SK_SP_STAGING_ONLY",
             **candidate
         ))
