@@ -56,3 +56,17 @@
 
 
 **QA catatan Muzik terakhir:** kod status dalaman `RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED`, `CADANGAN_PENGUKUHAN_BUKAN_PROJEK_RASMI` dan risiko slot cuti negeri dipaparkan kepada guru sebagai ayat ringkas yang setia pada maksud asal. Nilai mentah kekal pada `source_status_original`. CI [#42327584278](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42327584278) LULUS; pakej 56 PDF diperiksa semula: **1,630 halaman**, 12 subjek, landskap, 5 lajur, tiada blok di luar halaman.
+
+
+## Audit semula 56 artifak + rujukan Arab (7 November 2026, checkpoint akhir sesi)
+
+**STATUS: QA FORMAT LULUS — KESEDIAAN AKADEMIK DAN PRODUKSI MASIH BLOCKED.** Bukti dikumpulkan daripada artifak GitHub Actions dan diuji semula secara bebas menggunakan PyMuPDF tanpa mengubah DB atau aplikasi.
+
+- **56 PDF / 12 subjek / 1,631 halaman** pada penjana terkini: 21 subjek batch awal + 20 BM/PI/BA/Muzik + 5 English + 5 Matematik + 5 Sains separa. Pertambahan satu halaman daripada pemaparan rujukan DSKP Arab, bukan pertambahan PdP.
+- Semua 56 fail A4 landskap, halaman muka depan dengan slot logo/nama sekolah/nama guru, jadual lima lajur, **0 teks keluar sempadan**, **0 NUL sebenar**, **0 fail tidak sah**. Manifest SHA-256 setiap PDF dan fail CSV audit wujud dalam ZIP pratonton setempat (bukan keluaran LIVE).
+- **298/298 PdP Bahasa Arab Tahun 2–6** kini memperlihatkan halaman PDF DSKP bagi kod SP tepat daripada ledger 117 kod unik. Nombor halaman itu ialah **halaman PDF**, bukan halaman bercetak; teks penuh Arab, semakan semantik dan kelulusan akademik **belum** diperoleh. Setiap baris kekal bertanda DRAF. `tests/test_bahasa_arab_rpt2027_source_page_audit.py` memaksa padanan 298/298.
+- Label Latin `Unit N:` dan fokus guru kini dipisahkan dalam sel asal daripada aksara Arab supaya susunan paparan RTL tidak songsang. PDF Bahasa Arab T2 halaman jadual pertama disemak secara visual daripada artifak CI baharu.
+- Ujian GitHub Actions `42333071890` (20 PDF / unit tests dan visual QA) dan `42333071897` (21 PDF + simulasi) **LULUS** pada commit `f9ad389bd586690c499b2b36b55bcea66d08beb5`.
+- Audit bebas mendapati lima PDF Bahasa Arab masih memaparkan placeholder SK/SP berpernyataan belum disahkan, dua PDF Pendidikan Islam (T2/T6) memaparkan rekod `held`, lima PDF Arab dan tiga PDF RBT belum ada agihan minggu sebenar; Sains masih 342 PdP snapshot SEPARA, bukan pelan lengkap. Tahun 1 KP2027 dan menengah dikecualikan.
+
+**Release gate: FAIL-CLOSED.** Jangan merge, tukar laluan muat turun Web/Telegram atau mengumumkan FINAL READY hanya kerana 56 PDF kelihatan kemas. Sahkan sumber individu SK/SP, BT/BA, cuti negeri, RPH–RPT parity, profil Web–Telegram dan ujian native terakhir terlebih dahulu.
