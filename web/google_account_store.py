@@ -47,3 +47,53 @@ def ensure_google_staging_account(config, verified_auth_uuid, display_name=None)
         return canonical_id
     except (HTTPError, URLError, OSError, KeyError, ValueError, TypeError, AttributeError):
         raise GoogleAccountUnavailable("Staging account mapping unavailable") from None
+
+
+def google_staging_account_profile(config, account_id):
+    """Read ONLY the signed-in Google Web account, never a browser-selected ID.
+
+    This is read-only profile data. Ten credits are reserved for future
+    integration; an isolated Google staging session cannot spend them on RPH.
+    """
+    from urllib.parse import urlencode
+
+    try:
+        canonical = str(uuid.UUID(str(account_id)))
+    except (TypeError, ValueError, AttributeError):
+        raise GoogleAccountUnavailable("Invalid verified account identity") from None
+    if canonical != account_id:
+        raise GoogleAccountUnavailable("Noncanonical verified account identity")
+    key = config.get("staging_service_key", "")
+    if not isinstance(key, str) or len(key) < 24:
+        raise GoogleAccountUnavailable("Private staging account backend unavailable")
+    endpoint = config["supabase_url"].rstrip("/") + "/rest/v1/web_accounts?" + urlencode({
+        "select": "id,display_name,google_trial_remaining",
+        "id": "eq." + canonical, "limit": "1",
+    })
+    req = Request(endpoint, method="GET", headers={
+        "apikey": key, "Authorization": "Bearer " + key,
+        "Accept": "application/json",
+    })
+    try:
+        with urlopen(req, timeout=8) as res:
+            raw = res.read(4097)
+            if res.status != 200 or len(raw) > 4096:
+                raise GoogleAccountUnavailable("Staging account response invalid")
+        rows = json.loads(raw)
+        if not isinstance(rows, list) or len(rows) != 1:
+            raise GoogleAccountUnavailable("Verified account is missing")
+        row = rows[0]
+        if not isinstance(row, dict) or row.get("id") != canonical:
+            raise GoogleAccountUnavailable("Staging account mismatch")
+        credits = row.get("google_trial_remaining")
+        name = row.get("display_name")
+        if type(credits) is not int or not 0 <= credits <= 10:
+            raise GoogleAccountUnavailable("Invalid trial credit count")
+        if name is not None and (not isinstance(name, str) or len(name) > 120):
+            raise GoogleAccountUnavailable("Invalid account display name")
+        return {
+            "display_name": name or "Guru CikguLaju",
+            "trial_remaining": credits,
+        }
+    except (HTTPError, URLError, OSError, KeyError, ValueError, TypeError, AttributeError):
+        raise GoogleAccountUnavailable("Staging account profile unavailable") from None
