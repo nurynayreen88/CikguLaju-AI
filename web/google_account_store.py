@@ -10,6 +10,8 @@ import uuid
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
+from web.google_staging_service_auth import staging_service_headers
+
 
 class GoogleAccountUnavailable(RuntimeError):
     pass
@@ -33,8 +35,8 @@ def ensure_google_staging_account(config, verified_auth_uuid, display_name=None)
     req = Request(endpoint, data=json.dumps({"p_auth_subject": subject,
                                          "p_display_name": display_name}).encode(),
                   method="POST", headers={
-                      "apikey": key, "Authorization": "Bearer " + key,
-                      "Content-Type": "application/json", "Accept": "application/json"})
+                      **staging_service_headers(key),
+                      "Content-Type": "application/json"})
     try:
         with urlopen(req, timeout=8) as res:
             raw = res.read(1025)
@@ -70,10 +72,8 @@ def google_staging_account_profile(config, account_id):
         "select": "id,display_name,google_trial_remaining",
         "id": "eq." + canonical, "limit": "1",
     })
-    req = Request(endpoint, method="GET", headers={
-        "apikey": key, "Authorization": "Bearer " + key,
-        "Accept": "application/json",
-    })
+    req = Request(endpoint, method="GET",
+                  headers=staging_service_headers(key))
     try:
         with urlopen(req, timeout=8) as res:
             raw = res.read(4097)
