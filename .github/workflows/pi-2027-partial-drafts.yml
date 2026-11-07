@@ -46,7 +46,7 @@ jobs:
             pi_ba_secondary_evidence_42.json \
             pi_ba_source_integrity.json \
             pi_ba_sentence_candidates_174.json \
-            pi_ba_provenance_42.json
+            pi_ba_provenance_42.json \
             pi_ba_verification_register_174.json \
             pi_ba_verification_register_174.csv; do
             if [ ! -s "$file" ]; then
