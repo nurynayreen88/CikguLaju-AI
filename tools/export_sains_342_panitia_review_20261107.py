@@ -14,6 +14,7 @@ from tools.audit_sains_342_pdp_release_gate_20261106 import ROOT, analyze
 from tools.audit_rph80_sains_first_20261107 import EXPECTED, validated_staging_drafts
 from tools.sains_buku_aktiviti_mapping_20261107 import load_activity_books,is_direct_sp_match
 from tools.sains_y6_textbook_toc_20261107 import cue_for,SOURCE_URL
+from tools.sains_y5_83_textbook_original_sp_pages_20261107 import checked_book_pages as checked_year5_textbook_pages
 from web.sains_y3_rph_activity_preview_20261106 import checked_book_pages as verified_year3_textbook_pages
 from tools.render_sains_y3_3_secondary_sp_pbd_20261107 import TASKS as Y3_SECONDARY_PBD, OUT as Y3_SECONDARY_OUTPUT,stem as y3_secondary_stem
 from tools.render_sains_y2_51_rph_draf_20261107 import Y2_SOURCE_CONFLICTS, CORRECTED_CANDIDATE_TITLE, verified_original_textbook_pages
@@ -43,6 +44,7 @@ def get_review_rows():
     book_mappings=load_activity_books()
     book_year2=verified_original_textbook_pages()
     book_year3=verified_year3_textbook_pages()
+    book_year5=checked_year5_textbook_pages()
     result=[]
     for row in source:
         year=int(row["tahun"])
@@ -122,6 +124,18 @@ def get_review_rows():
             book_context=f"Buku Teks asal m/s {pages}; SP utama {primary} dilihat pada sekurang-kurangnya satu halaman."
             book_source="https://drive.google.com/file/d/17QNqKZjSF7V9GzzkXkz46bDJGnyKYq-F/view"
             book_page_status="ORIGINAL_BOOK_PAGE_SP_LABEL_CHECKED__TEACHER_CONTENT_SIGNOFF_PENDING"
+        if year==5:
+            rec=book_year5.get(sp)
+            if not rec or rec["teacher_academic_approved"] is not False:
+                raise RuntimeError("Year5 original book SP source not verified "+code)
+            book_context=("Buku Teks T5 SK asal 2020, m/s bercetak " +
+                          ", ".join(map(str,rec["printed_pages"])) +
+                          "; kod SP muncul dalam teks PDF asal 3 bahagian. Semantik/PBD belum sah.")
+            book_source="; ".join((
+                "https://drive.google.com/file/d/1m5k8gVkNImT8QEdw6fCEVpQh_tNkUKUT/view",
+                "https://drive.google.com/file/d/1xvpW8HgqrTdrl8QJCHUx0pDIiyuBLjIJ/view",
+                "https://drive.google.com/file/d/1YnwPPyyLoGCzP_m3izeB_PFn3w7XGsPt/view"))
+            book_page_status="83_SOURCE_SP_PDF_TEXT_CODE_MATCH__TEACHER_PEDAGOGY_HOLD"
         if year==6:
             topic=cue_for(sp)
             book_context=(f"Tajuk '{topic['topic']}', julat m/s "
@@ -239,6 +253,10 @@ def main():
         "year3_unique_original_book_pages_examined":54,
         "year3_supplemental_sp_textbook_labels_verified":3,
         "year3_textbook_content_teacher_approved":0,
+        "year5_original_3part_printed_page_coverage":234,
+        "year5_sp_pdf_text_page_matches":83,
+        "year5_unique_sp_matched_printed_pages":103,
+        "year5_textbook_pedagogy_teacher_approved":0,
         "year6_textbook_topic_toc_only":84,
         "year6_exact_textbook_sp_page_approved":0,
         "activity_book_y2_y3_matched_code":94,
