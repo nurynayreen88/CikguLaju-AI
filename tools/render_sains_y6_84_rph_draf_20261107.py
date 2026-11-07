@@ -22,6 +22,7 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, Tabl
 
 from tools.audit_sains_342_pdp_release_gate_20261106 import ROOT, analyze
 from web.sains_y6_84_activity_bank_draf_20261107 import BANK, kps_for
+from tools.sains_y6_textbook_toc_20261107 import cue_for, short_cue, SOURCE_URL as TEXTBOOK_TOC_URL
 
 OUT = ROOT / "build" / "sains_y6_84_rph_DRAF_20261107"
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
@@ -54,6 +55,7 @@ def get_y6_records():
             "year":6,
             "curriculum_quality_percent":None,
             "textbook_pages":None,
+            "textbook_toc_range":cue_for(row["sp"]),
             "sp_semantic_review":"2021_DSKP_TEXT_MIRROR__NOT_TEACHER_APPROVED",
             "status":"DRAF_HOLD",
         })
@@ -70,6 +72,7 @@ def markdown(item):
         f"**SP:** {sp}\n"
         "**Rujukan:** DSKP Sains Tahun 6 KSSR Semakan 2017; halaman Buku Teks "
         "asal belum disahkan (Buku Teks asal belum disemak secara visual).\n"
+        f"**Rujukan julat bab (bukan muka surat SP):** {short_cue(sp)}\n"
         "**Tempoh cadangan:** 60 minit (ikut jadual sebenar)\n"
         f"**Objektif dan kriteria kejayaan:** {item['pbd']}.\n"
         f"**KPS diintegrasi:** {item['kps']}\n\n"
@@ -135,7 +138,7 @@ def word_doc(path,item):
       ("Penutup (5m)","Murid menyatakan dapatan; guru merumus SP "+item["sp"]+"."),
       ("BBM",item["materials"]),
       ("Keselamatan",item["safety"]),
-      ("Buku teks/Status","Muka surat Buku Teks belum disemak secara visual • DRAF/HOLD"),
+      ("Buku teks/Status",short_cue(item["sp"])),
     ]
     for i,(label,body) in enumerate(fields):
         _cell(phases.cell(i,0),label,bold=True)
@@ -176,7 +179,7 @@ def pdf_doc(path,item):
       ("Penutup 5m","Murid menyatakan dapatan; guru merumus SP "+item["sp"]+"."),
       ("BBM",item["materials"]),
       ("Keselamatan",item["safety"]),
-      ("Rujukan/Status","DSKP KPM. Halaman BT belum disahkan. DRAF/HOLD"),
+      ("Rujukan/Status",short_cue(item["sp"])),
       ("Refleksi","____/____ murid mencapai objektif."),
     ]
     rows=[[p(k,label),p(v)] for k,v in fields]
@@ -226,6 +229,10 @@ def main():
             "pdf_one_page_a4":"PASS","word_a4":"SIZE_PASS__PRINT_PAGE_COUNT_PENDING",
             "dsKP_source":"2021_DSKP_SEMANTIC_REVIEW__ACADEMIC_PENDING",
             "textbook_pages":"UNVERIFIED_LARGE_SCAN__NONE_INVENTED",
+            "textbook_toc_topic_start":entry["textbook_toc_range"]["range_start"],
+            "textbook_toc_topic_end":entry["textbook_toc_range"]["range_end"],
+            "textbook_toc_source_url":TEXTBOOK_TOC_URL,
+            "textbook_exact_sp_page_verified":False,
             "lesson_activities":"84_SPECIFIC_AUTHOR_DRAFTS",
             "academic_score": "NOT_CERTIFIED",
             "sp_semantic_review":"2021_DSKP_TEXT_MIRROR__NOT_TEACHER_APPROVED",
@@ -239,6 +246,9 @@ def main():
         "source":"v25.82 staged read-only ledger + public 2021 Year6 DSKP text mirror",
         "dsKP_url":DSKP_SOURCE,"original_book_url":BOOK_SOURCE,
         "original_book_status":TEXTBOOK_STATUS,
+        "textbook_toc_reference":TEXTBOOK_TOC_URL,
+        "toc_group_context_coverage":17,
+        "individual_sp_page_verified":0,
         "year":6,"pdp":len(records),"docx":len(records),"pdf":len(records),
         "markdown":len(records),"status":"DRAF/HOLD",
         "academic_quality_percent":None,"approved_by_teacher":False,
