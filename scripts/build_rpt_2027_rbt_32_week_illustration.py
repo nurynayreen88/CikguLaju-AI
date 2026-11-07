@@ -41,7 +41,7 @@ def rbt_32_week_scenario(year: int, *, start_week: int = 3):
         b_start, b_end = weeks["B"][week]
         source_note = row["note"]
         source_suffix = " Tarikh A/B belum dinyatakan dalam sumber; tidak diandaikan."
-        if not source_note.endswith(source_suffix):
+        if source_note.count(source_suffix) != 1:
             raise ValueError("RBT sourced date warning changed unexpectedly")
         row.update({
             "week": week + " (SIMULASI)",
@@ -53,7 +53,7 @@ def rbt_32_week_scenario(year: int, *, start_week: int = 3):
             "original_a_start": originals[offset]["a_start"],
             "original_b_start": originals[offset]["b_start"],
             "source_note": source_note,
-            "note": source_note[:-len(source_suffix)] +
+            "note": source_note.replace(source_suffix, "", 1) +
                     " SIMULASI SAHAJA: 1 PdP/minggu, hanya JULAT MINGGU;"
                     " bukan tarikh kelas sebenar."
                     " Semak jadual guru, cuti negeri dan tempoh projek."
