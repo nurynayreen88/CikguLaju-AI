@@ -45,6 +45,12 @@ class PIReleaseReadinessTests(unittest.TestCase):
         self.assertEqual(r["book_activity_page_candidates"], 174)
         self.assertAlmostEqual(r["mechanical_three_step_coverage_percent"], 99.57)
         self.assertGreaterEqual(len(r["release_blockers"]), 9)
+        issue = [x for x in r["release_blockers"] if x["code"] ==
+                 "YEAR3_6433_DSKP_BOOK_FOOTER_AND_L146_OBJECTIVE_REVIEW"]
+        self.assertEqual(len(issue), 1)
+        self.assertEqual(issue[0]["affected_lessons"], 1)
+        self.assertIn("menyenaraikan", issue[0]["action"])
+        self.assertIn("merumus", issue[0]["action"])
         self.assertTrue(all(x["action"] for x in r["release_blockers"]))
 
     def test_year_summary_is_coherent(self):
