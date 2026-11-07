@@ -15,7 +15,7 @@ from urllib.request import Request, urlopen
 
 from web.native_google_principal_store import (
     PROD_SUPABASE, _headers, _uuid, CanonicalAccountUnavailable)
-from web.google_rph_bundle_quota import rendered_bundle_sha256
+from web.native_google_rph_integrity import rendered_bundle_sha256
 
 BUCKET = "cikgulaju-native-web-rph"
 MIMES = {
