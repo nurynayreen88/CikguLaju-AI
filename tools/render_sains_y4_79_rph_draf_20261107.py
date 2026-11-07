@@ -23,6 +23,7 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, Tabl
 
 from tools.audit_sains_342_pdp_release_gate_20261106 import ROOT, analyze
 from web.sains_y4_79_activity_bank_draf_20261107 import BANK
+from tools.sains_y4_79_official_sp_statements_20261108 import checked_statements
 
 OUT = ROOT / "build" / "sains_y4_79_rph_DRAF_20261107"
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
@@ -103,6 +104,9 @@ def get_y4_records():
         raise ValueError(f"Year4 DSKP SP mismatch missing={missing} extra={extra}")
     if summary["decision"]!="HOLD":
         raise ValueError("Source audit release gate unexpectedly lifted")
+    official=checked_statements()
+    if set(official)!=set(BANK):
+        raise ValueError('Year4 full official DSKP SP roster mismatched')
     result=[]
     toc=textbook_unit_toc()
     for row in selected:
@@ -116,6 +120,7 @@ def get_y4_records():
                       "(ISI KANDUNGAN SAHAJA; m/s tepat SP belum disahkan)")
         result.append({
             **row, **BANK[row["sp"]],
+            "sp_full_text":official[row['sp']]['sp_text'],
             "textbook_unit_toc_note":chapter_note,
             "textbook_toc_unit":chapter["unit"],
             "textbook_toc_range":chapter["printed_toc_range"],
@@ -136,7 +141,7 @@ def markdown(item):
         f"**Unit:** {item['unit']}\n"
         f"**Tajuk:** {item['tajuk']}\n"
         f"**SK:** {item['sk']}\n"
-        f"**SP:** {sp}\n"
+        f"**SP:** {sp} — {item.get('sp_full_text','Pernyataan DSKP masih perlu dipadankan')}\n"
         "**Rujukan:** DSKP Sains Tahun 4 KSSR Semakan 2017; halaman Buku Teks "
         "asal belum disahkan (PDF sumber 337 MB).\n"
         f"**Petunjuk unit BT:** {item.get('textbook_unit_toc_note','TIADA')}.\n"
@@ -191,7 +196,7 @@ def word_doc(path,item):
     meta.style="Table Grid"
     for i,(left,right) in enumerate([
        ("Kelas: __________ Tarikh: ____/____/________", "Masa: ______–______ (cadangan 60 min)"),
-       (item["unit"],f"SK {item['sk']}   SP {item['sp']}"),
+       (item["unit"],f"SK {item['sk']}   SP {item['sp']}: {item.get('sp_full_text','')}"),
        ("Tajuk: "+item["tajuk"],"KPS: "+item["kps"]),
     ]):
         _cell(meta.cell(i,0),left);_cell(meta.cell(i,1),right)
@@ -236,7 +241,7 @@ def pdf_doc(path,item):
       ("Kelas/Tarikh/Masa","___________    ____/____/________    _____–_____"),
       ("Unit",item["unit"]),
       ("Tajuk",item["tajuk"]),
-      ("SK / SP",item["sk"]+" / "+item["sp"]),
+      ("SK / SP",f"SK {item['sk']}   SP {item['sp']}: {item.get('sp_full_text','')}"),
       ("Objektif/Kriteria",item["pbd"]),
       ("KPS",item["kps"]),
       ("Set induksi 5m","Guru menunjukkan "+item["hook"].lower()+". Murid menyatakan satu idea."),
@@ -291,10 +296,11 @@ def main():
         pdf_doc(OUT/(stem+".pdf"),entry)
         manifest.append({
             "pdp_code":entry["pdp_code"],"sk":entry["sk"],"sp":entry["sp"],
+            "official_sp_full_text":entry["sp_full_text"],
             "unit":entry["unit"],"title":entry["tajuk"],
             "word_file":stem+".docx","pdf_file":stem+".pdf",
             "pdf_one_page_a4":"PASS","word_a4":"SIZE_PASS__PRINT_PAGE_COUNT_PENDING",
-            "dsKP_source":"TEXT_TOKEN_VERIFIED_NOT_FULL_SP_SEMANTICS",
+            "dsKP_source":"EXACT_KPM_DSKP_FULL_SP_STATEMENT__PEDAGOGY_APPROVAL_PENDING",
             "textbook_pages":"UNVERIFIED__NONE_INVENTED",
             "textbook_toc_unit":entry["textbook_toc_unit"],
             "textbook_toc_range":",".join(map(str,entry["textbook_toc_range"])),
