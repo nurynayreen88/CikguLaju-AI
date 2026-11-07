@@ -31,12 +31,16 @@ class Science2027PartialRPTQA(unittest.TestCase):
                                     r["sp_display"] and r["sk_display"] for r in rows))
                 self.assertTrue(all("DRAF LEGACY:" in r["note"] and "BUKAN untuk digunakan guru" in r["note"] for r in rows))
 
-    def test_all_342_source_sp_have_exact_official_full_dskp_text(self):
+    def test_342_legacy_source_statements_never_claim_academic_signoff(self):
         all_records=[row for rows in self.yearly.values() for row in rows]
-        self.assertEqual(sum(r["curriculum_text_matched"] for r in all_records),342)
+        self.assertEqual(sum(r["curriculum_text_matched"] for r in all_records),0)
+        self.assertEqual(sum(r["source_statement_available"] for r in all_records),342)
+        self.assertTrue(all(r["academic_release_approved"] is False
+                            and r["live_download_verified"] is False
+                            for r in all_records))
         source_counts=Counter(r["curriculum_provenance"] for r in all_records)
         self.assertEqual(source_counts["KPM_DSKP_ORIGINAL_PDF_TEXT_SP_COLUMN"],35)
-        self.assertEqual(source_counts["V26_VERIFIED_DSKP"],307)
+        self.assertEqual(source_counts["V26_DB_VERIFIED_FLAG_NOT_EXTERNAL_DSKP_SIGNOFF"],307)
         for year,rows in self.yearly.items():
             self.assertTrue(all(" — " in r["sk_display"] and " — " in r["sp_display"]
                                 for r in rows))
@@ -69,10 +73,11 @@ class Science2027PartialRPTQA(unittest.TestCase):
     def test_missing_sk_sp_does_not_autofill_from_wrong_subject_or_year(self):
         for year,rows in self.yearly.items():
             for row in rows:
-                if not row["curriculum_text_matched"]:
-                    self.assertIn("Kod sumber tanpa pernyataan penuh DSKP",
-                                  row["sp_display"])
-                    self.assertNotIn("textbook verified",row["note"].lower())
+                self.assertFalse(row["curriculum_text_matched"])
+                self.assertTrue(row["source_statement_available"])
+                self.assertFalse(row["academic_release_approved"])
+                self.assertIn("DRAF LEGACY:",row["note"])
+                self.assertNotIn("textbook verified",row["note"].lower())
 
     def test_five_landscape_pdf_with_cover_five_columns(self):
         with TemporaryDirectory() as tmp:
@@ -80,6 +85,7 @@ class Science2027PartialRPTQA(unittest.TestCase):
             self.assertEqual(len(files),5)
             for year,count,matched,path in files:
                 self.assertEqual(count,EXPECTED[year])
+                self.assertEqual(matched,0, "Legacy text must not count as academic signoff")
                 with fitz.open(path) as doc:
                     self.assertGreater(doc.page_count,2)
                     self.assertTrue(all(p.rect.width>p.rect.height for p in doc))
