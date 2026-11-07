@@ -1,6 +1,10 @@
 -- Disposable PostgreSQL only. All test accounts, link rows, jobs, object
 -- metadata and ledgers are rolled back. No real user payment/data change.
 BEGIN;
+-- Supabase's real service_role bypasses RLS. The disposable CI role created
+-- by tests/sql/web_google_payment_fixture.sql lacks this flag by default.
+-- Transaction rollback restores the disposable role afterward.
+ALTER ROLE service_role BYPASSRLS;
 -- Fake Storage fixture grants needed for local role simulation only.
 GRANT SELECT ON storage.objects TO service_role;
 DO $setup$
