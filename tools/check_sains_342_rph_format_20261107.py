@@ -62,6 +62,13 @@ def validate():
             word_text="\n".join(c.text for c in cells)
             if row["sp"] not in word_text:
                 raise ValueError("Word SP vanished "+code)
+            if year==2 and row["sp"] in ("3.1.3","10.1.6"):
+                signal="3.1.4-3.1.6" if row["sp"]=="3.1.3" else "campuran"
+                for kind,body in (("Word",word_text),("PDF",page_text)):
+                    if signal not in body:
+                        raise ValueError("Official Year2 source discrepancy hidden from "+kind+" "+code)
+                if row["sp"]=="10.1.6" and "BUKAN petikan SP rasmi" not in page_text:
+                    raise ValueError("Official Year2 campuran anomaly misleading in rendered RPH")
             for marker in ("Aktiviti 1","Aktiviti 2"):
                 heads=[]
                 for cell in cells:
