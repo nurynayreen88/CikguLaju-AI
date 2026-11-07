@@ -7,7 +7,7 @@ The native service is configured via server-only authoritative API credentials.
 from datetime import date
 import re
 
-from web.google_rph_bundle_quota import rendered_bundle_sha256
+from web.native_google_rph_integrity import rendered_bundle_sha256
 
 
 class NativeGoogleRPHNotReady(RuntimeError):
