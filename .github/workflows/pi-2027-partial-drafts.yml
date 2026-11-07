@@ -230,6 +230,8 @@ jobs:
         run: |
           python rph_standalone/pendidikan_islam_draf_2027/pi_word_pdf_print_audit.py \
             --output build/pi_word_pdf_a4_696_report.json --batch-size 25
+      - name: Convert all six separate held RPH reviewer proposals to temporary A4 Word and PDF
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_held_six_word_pdf_print_audit.py --output build/pi_held_six_word_pdf_a4_qa.json
       - name: Upload only QA report (never distribute draft Word/PDF files)
         if: always()
         uses: actions/upload-artifact@v4
@@ -238,5 +240,6 @@ jobs:
           path: |
             build/pi_word_pdf_a4_696_report.json
             build/pi_word_pdf_a4_696_report.csv
+            build/pi_held_six_word_pdf_a4_qa.json
           if-no-files-found: warn
           retention-days: 30
