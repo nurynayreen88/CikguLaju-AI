@@ -13,6 +13,12 @@ from web.rph_hari_ini_web import bp as rph_hari_ini_bp
 app.register_blueprint(rph_hari_ini_bp)
 from web.web_payment_routes import bp as web_payment_bp
 app.register_blueprint(web_payment_bp)
+
+# Opt-in, read-only production paid-status API. Requires a separate, long
+# dedicated private bearer token and explicit production feature flag.
+# Never change payment approval, subscription or generation logic here.
+from web.telegram_prod_paid_status_bridge import bp as read_only_paid_status_bp
+app.register_blueprint(read_only_paid_status_bp)
 from web.web_referral_routes import install as install_web_referral
 install_web_referral(app)
 

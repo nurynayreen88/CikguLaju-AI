@@ -1,0 +1,32 @@
+name: Production Web read-only paid-status API isolated QA
+
+on:
+  push:
+    branches:
+      - 'release/web-readonly-paid-status-20261107'
+  pull_request:
+    branches:
+      - 'production/cikgulaju-web-20261105'
+    paths:
+      - 'web/telegram_prod_paid_status_bridge.py'
+      - 'tools/run_web_production.py'
+      - 'tests/test_private_production_paid_status_bridge.py'
+      - '.github/workflows/web-readonly-paid-status-api-qa.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  private-paid-status:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install isolated test runtime
+        run: python -m pip install 'Flask==3.1.3'
+      - name: Syntax-check exact production modifications
+        run: python -m py_compile web/telegram_prod_paid_status_bridge.py tools/run_web_production.py tests/test_private_production_paid_status_bridge.py
+      - name: Verify strong private token, production host, source, and fail-closed behavior
+        run: python -m unittest discover -s tests -p 'test_private_production_paid_status_bridge.py' -v
