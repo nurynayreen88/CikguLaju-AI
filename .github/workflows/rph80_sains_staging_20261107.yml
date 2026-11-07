@@ -38,6 +38,7 @@ on:
       - "tests/test_sains_y2_51_bank_quality_20261107.py"
       - "web/sains_y4_79_activity_bank_draf_20261107.py"
       - "tools/render_sains_y4_79_rph_draf_20261107.py"
+      - "audits/sains_y4_79_textbook_unit_toc_review_20261107.json"
       - "tools/check_sains_y4_79_word_a4_20261107.py"
       - "tests/test_sains_y4_79_bank_quality_20261107.py"
       - "web/sains_y5_83_activity_bank_draf_20261107.py"
