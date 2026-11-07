@@ -38,6 +38,9 @@ on:
       - "tests/test_sains_y2_2_sp_alternative_pbd_20261107.py"
       - "tests/test_sains_y2_51_bank_quality_20261107.py"
       - "web/sains_y4_79_activity_bank_draf_20261107.py"
+      - "audits/sains_y4_79_official_dskp_sp_statements_20261108.json"
+      - "tools/sains_y4_79_official_sp_statements_20261108.py"
+      - "tests/test_sains_y4_79_full_dskp_sp_20261108.py"
       - "tools/render_sains_y4_79_rph_draf_20261107.py"
       - "audits/sains_y4_79_textbook_unit_toc_review_20261107.json"
       - "tools/check_sains_y4_79_toc_document_20261107.py"
@@ -148,6 +151,8 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_sains_y4_79_bank_quality_20261107.py' -v
       - name: Render 79 Science Year4 standalone DRAF Word PDF Markdown
         run: python -m tools.render_sains_y4_79_rph_draf_20261107
+      - name: Check 79 actual Year4 Word/PDF contain full official KPM DSKP SP statement
+        run: python -m unittest discover -s tests -p 'test_sains_y4_79_full_dskp_sp_20261108.py' -v
       - name: Audit all Year4 79 actual Word PDF TOC-unit range disclaimers
         run: python -m tools.check_sains_y4_79_toc_document_20261107
       - name: Export 79 Year4 source-specific academic PBD and safety Panitia review rows
