@@ -48,8 +48,11 @@ def checked():
             # Compare the whole source note without layout whitespace, but still
             # require every original caution marker and this record's SP.
             normalized="".join(v.split())
-            required=(toc,"ISI KANDUNGAN SAHAJA",
-                      "m/s tepat SP belum disahkan",token,r["sp"])
+            required=((toc,"ISI KANDUNGAN SAHAJA",
+                       "m/s tepat SP belum disahkan",token,r["sp"])
+                      if label=="Word" else
+                      ("Unit "+str(r["textbook_toc_unit"]),token,
+                       "KANDUNGAN SAHAJA","SP belum disahkan",r["sp"]))
             missing=[part for part in required if "".join(part.split()) not in normalized]
             if missing:
                 raise ValueError("Year4 TOC-source caution missing "+label+": "+code+
