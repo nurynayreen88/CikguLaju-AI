@@ -29,6 +29,22 @@ class TestSainsBAResources(unittest.TestCase):
         self.assertEqual(growth["book_printed_page"],16)
         self.assertTrue(growth["printed_sp_matches_pdp"])
 
+    def test_full_content_review_visible_in_staging_resource_but_never_ready(self):
+        examples=[
+            (2,"SCI-Y2-PDP-036","9.1.2","pisau"),
+            (3,"SCI-Y3-PDP-033","8.1.2","jangan rasa"),
+            (3,"SCI-Y3-PDP-019","5.1.3","guru"),
+        ]
+        for year,pdp,sp,expected in examples:
+            item=proposed_material("Sains",year,pdp,sp)
+            self.assertEqual(item["content_review_status"],"DIRECT_EXERCISE_CONTENT_REVIEW")
+            self.assertIn(expected,item["teacher_usage_guidance"].lower())
+            self.assertFalse(item["teacher_academic_approved"])
+            self.assertFalse(item["ready_for_runtime"])
+        unmatched=proposed_material("Sains",2,"SCI-Y2-PDP-010","4.1.7")
+        self.assertEqual(unmatched["assignment_status"],"RELATED_ONLY__DO_NOT_ASSIGN_AS_SP_PBD")
+        self.assertIn("pbd",unmatched["teacher_usage_guidance"].lower())
+
     def test_not_other_year_or_subject(self):
         self.assertIsNone(proposed_material("Matematik",2,"SCI-Y2-PDP-001","3.1.1"))
         self.assertIsNone(proposed_material("Sains",4,"SCI-Y4-PDP-001","2.1.1"))
