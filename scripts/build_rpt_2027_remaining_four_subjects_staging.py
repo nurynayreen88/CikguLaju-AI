@@ -100,6 +100,13 @@ def pi_records(year):
     if len(records)!=counts[year]:
         raise ValueError(f"PI T{year} source count changed")
     master=load_calendar_weeks()
+    recovery=json.loads((ROOT/"audits/pendidikan_islam_rpt2027_6_held_source_recovery_20261107_DRAF.json").read_text(encoding="utf-8"))
+    if (recovery.get("status")!="PROVISIONAL_SOURCE_RECOVERY_FOR_HELD_PI_RPT_PREVIEW_ONLY"
+        or recovery.get("release_ready_count")!=0 or len(recovery.get("entries",[]))!=6):
+        raise ValueError("PI held-record recovery ledger unexpectedly approved or incomplete")
+    source_only={(v["year"],v["lesson"]):v for v in recovery["entries"]}
+    if len(source_only)!=6:
+        raise ValueError("PI source candidate Lxxx duplicated")
     rows=[]
     held_count=0
     for n,r in enumerate(records,1):
@@ -111,16 +118,37 @@ def pi_records(year):
         withheld=bool(r.get("withheld",False))
         if not m and not withheld:
             raise ValueError(f"PI T{year} PdP{n:03d} has no sourced original week")
-        # Held RPH records have no source week. Never assign their neighbours'
-        # dates: teacher must decide separately if/when replacement is scheduled.
+        # Only source-backed candidate weeks from the RPT Drive document are
+        # assigned to the six held rows. They are *not* approved class dates.
         week=f"M{int(m.group(1)):02d}" if m else ""
+        recovered=source_only.get((year,n))
         if withheld:
             held_count+=1
-            # The source explicitly withheld six records. Do not invent their SK/SP.
-            sk="REKOD DITAHAN — SK TIDAK TERSEDIA"
-            sp="REKOD DITAHAN — SP TIDAK TERSEDIA"
-            topic="Kandungan asal ditahan; bukan PdP disahkan."
-            note="REKOD DITAHAN: tidak boleh digunakan sebagai rancangan mengajar."
+            if recovered is None:
+                raise ValueError(f"PI T{year} L{n:03d}: unreviewed source hold")
+            week=recovered["week"]
+            if week not in master["A"] or week not in master["B"]:
+                raise ValueError("Recovered PI source week outside verified 2027 master")
+            if recovered["kind"]=="KHATAM_TASMI_OPTIONAL_NO_OFFICIAL_SK_SP_IN_SOURCE":
+                sk="REKOD DITAHAN — TIADA KOD SK DALAM SUMBER TASMI'"
+                sp="REKOD DITAHAN — TIADA KOD SP DALAM SUMBER TASMI'"
+                topic="Tasmi' / Khatam cadangan: "+recovered["focus"]
+                note=("REKOD DITAHAN: RPH V5 asal tidak lengkap. "
+                      "Rujukan RPT sumber "+recovered["source_lesson"]+" (hanya cadangan "
+                      "tasmi' pilihan guru; tiada kod SK/SP rasmi dibekalkan). "
+                      "Bacaan: "+recovered["focus"]+". "
+                      "Minggu sumber calon, bukan jadual kelas yang diluluskan.")
+            elif recovered["kind"]=="IBADAH_2026_RPT_STANDARD_CONFLICT_HOLD":
+                sk="REKOD DITAHAN — KONFLIK SUMBER KOD SK 4.2"
+                sp="REKOD DITAHAN — SP 4.2.3–4.2.5 BERCANGGAH, SEMAK DSKP"
+                topic="KONFLIK SUMBER: "+recovered["focus"]
+                note=("REKOD DITAHAN: sumber RPT "+recovered["source_lesson"]+
+                      " menyatakan Solat Berjemaah SK 4.2, tetapi RPH V5 jiran "
+                      "mengandungi Solat Ketika Sakit pada SK 4.2. "
+                      "JANGAN GUNA sehingga DSKP dan urutan sumber disahkan. "
+                      "Minggu sumber calon sahaja.")
+            else:
+                raise ValueError("Unknown PI held recovery kind")
         else:
             sk=str(field.get("sk") or "").strip()
             sp=str(field.get("sp") or "").strip()
@@ -130,11 +158,15 @@ def pi_records(year):
             if not sk or not sp or not note:
                 raise ValueError(f"PI T{year} PdP{n:03d}: original SK/SP/notes absent")
         b=re.search(r"Bidang:\s*(.*?)\s*(?:•|$)",intro)
-        unit="Bidang: "+(b.group(1).strip() if b else "Belum dinyatakan dalam sumber")
+        unit="Bidang: "+(recovered["unit"] if withheld else
+                         (b.group(1).strip() if b else "Belum dinyatakan dalam sumber"))
         rows.append(dict(
             id=f"{n:03d}",week=week,unit=unit,topic=topic[:350],
             sk=sk,sp=sp,note=note[:630],source_status=r.get("state"),
-            source_held=withheld,**dates(master,week)
+            source_held=withheld,
+            held_source_proposal=bool(withheld),
+            held_release_approved=False if withheld else None,
+            **dates(master,week)
         ))
     if held_count!=({2:1,3:0,4:0,5:0,6:5}[year]):
         raise ValueError("PI hold records count changed")
