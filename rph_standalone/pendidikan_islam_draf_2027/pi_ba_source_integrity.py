@@ -12,6 +12,9 @@ from pathlib import Path
 EXPECTED = {
     2: {
         "kpm_catalog_code": "BA102001",
+        "school_subject_panel_viewer_page": "https://sites.google.com/moe-dl.edu.my/panitiapendidikanislamtldmkk/pembelajaran/tahun-2",
+        "school_panel_lists_buku_aktiviti_title": True,
+        "school_panel_proves_exact_printed_page": False,
         "kpm_catalog_url": "https://www.moe.gov.my/storage/files/shares/Banner/E-Katalog%20Buku%20Teks%20KPM.pdf",
         "publisher_from_kpm_catalog": "Dewan Bahasa dan Pustaka",
         "title_and_code_in_kpm_catalog_verified": True,
@@ -25,6 +28,9 @@ EXPECTED = {
     },
     3: {
         "kpm_catalog_code": "BA103001",
+        "school_subject_panel_viewer_page": "https://sites.google.com/moe-dl.edu.my/panitiapendidikanislamtldmkk/pembelajaran/tahun-3",
+        "school_panel_lists_buku_aktiviti_title": True,
+        "school_panel_proves_exact_printed_page": False,
         "kpm_catalog_url": "https://www.moe.gov.my/storage/files/shares/Banner/E-Katalog%20Buku%20Teks%20KPM.pdf",
         "publisher_from_kpm_catalog": "Dewan Bahasa dan Pustaka",
         "title_and_code_in_kpm_catalog_verified": True,
