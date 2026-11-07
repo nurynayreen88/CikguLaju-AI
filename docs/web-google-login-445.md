@@ -32,3 +32,13 @@ Status: implementation design on isolated branch; **not live**.
 7. Require explicit approval before production deployment.
 
 **No production configuration or database changes are authorized by this file.**
+
+## Confirmed integration findings (2026-11-07)
+- Render production Web service uses branch `production/cikgulaju-web-20261105` and entrypoint `tools.run_web_production:app`; Telegram service deploys from `main` separately. This feature branch does not auto-deploy either service.
+- `web_v1_telegram_auth_routes.py` issues a signed session ticket with Telegram numeric UID and `cikgulaju_web_v1_session` cookie; `_lookup` checks Supabase accounts keyed by Telegram UID. `tools/run_web_v1_preview.py` and other routes directly compare `account.telegram_user_id == uid`.
+- `web/web_payment_routes.py` also relies on the Telegram UID for account membership and the Telegram bot's payment queue. **Adding Google OAuth alone will not grant functional Web access.**
+- First introduce a canonical internal identity resolver and a provider mapping (Google sub / Telegram UID) across session checks, catalogue, RPH, profile, payment, referral, and quotas. Preserve Telegram UID where legacy Telegram operations require it; never fabricate a Telegram ID for Google users.
+- For Google-only users, explicitly adapt payment and admin flows to canonical internal IDs, or block those flows with a clear explanation until safe. No anonymous payments or unverified entitlements.
+- Existing `_config()` currently requires Telegram bot credentials, so separate provider-independent Web session configuration from Telegram widget configuration without weakening existing validation.
+- Google OAuth callback and secrets cannot be finalized until Google Cloud OAuth client is configured for the actual staging/production domains.
+- Before coding migration, inspect Supabase tables and RLS; use additive, reversible schema and do not modify production data.
