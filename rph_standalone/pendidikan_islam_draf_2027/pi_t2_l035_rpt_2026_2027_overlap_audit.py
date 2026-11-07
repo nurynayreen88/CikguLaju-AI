@@ -14,7 +14,7 @@ SOURCE_RPT2026_ID="10nFtY-6tJRhvn8XggwtJRFBNozltQbqk"
 SOURCE_RPT2026_SHA="e5328102b4d059616ede2adf5cdf3a357acf1c0d997a2472e135fa120fcb7845"
 SOURCE_RPT2027_ID="1R2FNyT0CYb_WTMiw99lnZW9GuPaatz8w"
 SOURCE_RPT2027_SHA="86a8e6fb599eb0f65f3a0a888cb29d636223c75896718d058886076a95f6c05d"
-CODES={"L032":[216,224],"L035":[224,245],"L036":[246,259]}
+CODES={"L032":[216,224],"L035":[224,245],"NEXT_TASMI":[246,259]}
 
 
 def audit(root=ROOT):
@@ -30,16 +30,16 @@ def audit(root=ROOT):
     assert "fields" not in p35 and "intro" not in p35
     # Original Year2 2026 RPT table row 10 (216-224), row 11 (224-245)
     # and next row 12 (246-259), independently crosschecked with the
-    # corresponding RPT2027 PDF pp11-13, PdP032, PdP035, PdP038/039.
+    # corresponding RPT2027 PDF pp11, 12 and 14; PdP032, PdP035 and PdP038.
     assert CODES["L032"][-1]==CODES["L035"][0]
-    assert CODES["L035"][-1]+1==CODES["L036"][0]
+    assert CODES["L035"][-1]+1==CODES["NEXT_TASMI"][0]
     return {
         "purpose":"Audit original 2026 carryover of overlapping verse224 for withheld Year2 lesson35",
         "rpt2026_drive_id":SOURCE_RPT2026_ID,
         "rpt2026_sha256":SOURCE_RPT2026_SHA,
         "rpt2027_drive_id":SOURCE_RPT2027_ID,
         "rpt2027_sha256":SOURCE_RPT2027_SHA,
-        "rpt2027_pdf_pages_checked":[11,12,13],
+        "rpt2027_pdf_pages_checked":[11,12,14],
         "year2_pdp032_surah_baqarah":[216,224],
         "year2_pdp035_surah_baqarah":[224,245],
         "following_2026_rpt_range":[246,259],
