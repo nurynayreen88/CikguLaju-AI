@@ -177,7 +177,10 @@ def google_callback():
             isinstance(item, dict) and item.get("provider") == "google"
             for item in providers):
             return response
-        account_id = ensure_google_staging_account(config, subject)
+        # OAuth metadata is untrusted for roles/account merging; display only.
+        metadata = identity.get("user_metadata")
+        display = metadata.get("full_name") or metadata.get("name") if isinstance(metadata, dict) else ""
+        account_id = ensure_google_staging_account(config, subject, display)
         ticket = issue_google_identity_ticket(account_id, config["secret"])
     except (GoogleAccountUnavailable, RuntimeError, KeyError, TypeError, ValueError, AttributeError):
         return jsonify({"error": "Pengesahan Google belum tersedia"}), 503
