@@ -45,6 +45,11 @@ def build_queue(root=ROOT):
                     action = ("Petikan hadis sudah disemak terus pada Buku Teks T4 ms51 dan DSKP ms27; "
                               "semak ejaan Jawi, lafaz petikan berelipsis, kesesuaian aktiviti/PBD "
                               "dan kelulusan pakar sebelum buka pratonton.")
+                elif record.get("staging_tasmi_rpt_2027_review"):
+                    action = ("RPT 2027 menyenaraikan empat surah tetapi tidak menentukan julat ayat: "
+                              "guru mesti memilih dan merekod julat ayat sebenar pada mushaf sebelum PdP; "
+                              "semak kemampuan sesi dua jam, ejaan Jawi dan PBD; "
+                              "jangan menamakan aktiviti ini SP rasmi DSKP.")
                 else:
                     action = "Dapatkan matan/julat ayat asal yang lengkap; semak pakar sebelum isi aktiviti."
                 sp = record["fields"]["sp"]
