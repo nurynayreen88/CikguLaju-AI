@@ -1,0 +1,302 @@
+{
+  "schema_version": "1.0",
+  "curriculum": "KP2027",
+  "level": "Tahun 1",
+  "subject": "Matematik",
+  "as_of": "2026-11-07",
+  "release_status": "TRAINING_EVIDENCE_ONLY_NOT_OFFICIAL_DK",
+  "evidence_sources": [
+    {
+      "title": "PERBANDINGAN KSSR (SEMAKAN 2017) vs DKP2027.pdf",
+      "url": "https://drive.google.com/file/d/13x97bYD4fEHF_QvQQqy3f0ZWbCwC_LUD/view",
+      "kind": "PENATARAN_COMPARISON_PDF",
+      "sha256": "7119fa3789bb67bcf55d727e4e5090c7d092dfc17fc5b6fe0d997fa20f88c935",
+      "bytes": 4580177,
+      "pdf_page_count": 19,
+      "reviewed_pages": [
+        6,
+        7
+      ],
+      "page6_notes": "7 tajuk, 30 SP, 7 waktu seminggu, 30 minit satu waktu (training slides)",
+      "page7_notes": "Pola nombor, rangkaian nombor, nilai tempat, anggar, bundar dipindahkan; pecahan ke Tahun 3"
+    },
+    {
+      "title": "AGIHAN KUMPULAN KUPASAN SP.xlsx",
+      "url": "https://drive.google.com/file/d/1jXscf3gs8KIpZ4BTPVdRvSD-q9Lz4oVG/view",
+      "kind": "PENATARAN_GROUP_ASSIGNMENT_XLSX",
+      "source_sheet_title": "SENARAI SP DOKUMEN KURIKULUM 2027 MATEMATIK TAHUN 1",
+      "note": "30 codes listed without full standard text or official DK pages"
+    }
+  ],
+  "training_metrics": {
+    "topic_count": 7,
+    "standard_codes_listed": 30,
+    "periods_per_week": 7,
+    "minutes_per_period": 30,
+    "official_dk_text_verified": false
+  },
+  "training_codes": [
+    {
+      "code": "1.1.1",
+      "source_row_excel": 4,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "1.1.2",
+      "source_row_excel": 5,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "1.1.3",
+      "source_row_excel": 6,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "1.1.4",
+      "source_row_excel": 7,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "1.2.1",
+      "source_row_excel": 8,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "2.1.1",
+      "source_row_excel": 9,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "2.1.2",
+      "source_row_excel": 10,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "2.1.3",
+      "source_row_excel": 11,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "2.2.1",
+      "source_row_excel": 12,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "2.2.2",
+      "source_row_excel": 13,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "2.2.3",
+      "source_row_excel": 14,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "3.1.1",
+      "source_row_excel": 15,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "3.2.1",
+      "source_row_excel": 16,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "3.2.2",
+      "source_row_excel": 17,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "3.2.3",
+      "source_row_excel": 18,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "4.1.1",
+      "source_row_excel": 19,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "4.1.2",
+      "source_row_excel": 20,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "4.1.3",
+      "source_row_excel": 21,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "5.1.1",
+      "source_row_excel": 22,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "5.1.2",
+      "source_row_excel": 23,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "5.2.1",
+      "source_row_excel": 24,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "6.1.1",
+      "source_row_excel": 25,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "6.1.2",
+      "source_row_excel": 26,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "6.2.1",
+      "source_row_excel": 27,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "6.2.2",
+      "source_row_excel": 28,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "6.2.3",
+      "source_row_excel": 29,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "7.1.1",
+      "source_row_excel": 30,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "7.1.2",
+      "source_row_excel": 31,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "7.1.3",
+      "source_row_excel": 32,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    },
+    {
+      "code": "7.1.4",
+      "source_row_excel": 33,
+      "status": "TRAINING_CODE_INDEX_ONLY",
+      "exact_text": null,
+      "original_dk_page": null,
+      "approved": false
+    }
+  ],
+  "disallowed_as_standalone_2027_year1_topics": [
+    "pola nombor",
+    "rangkaian nombor",
+    "nilai tempat",
+    "membundarkan nombor",
+    "menganggar nombor",
+    "pecahan",
+    "tambah berulang",
+    "tolak berturut-turut"
+  ],
+  "editorial_corrections": [
+    "KP27-Y1-MT-C03",
+    "KP27-Y1-MT-C04",
+    "KP27-Y1-MT-C07"
+  ],
+  "qualified_source_limitations": [
+    "Training slides do not replace latest formal DK",
+    "Version of final DK and full standard texts unavailable",
+    "Muat turun buku teks KP2027 belum disahkan",
+    "SP mapping lesson-by-lesson must be validated before RPT"
+  ],
+  "live_release_blocked": true
+}
