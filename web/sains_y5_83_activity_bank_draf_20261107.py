@@ -2,7 +2,7 @@
 
 Source: original KPM DSKP Sains Tahun 5 (Drive 1YkiK-pVo4UUzyOUvv_Vrico58eQyddCz).
 Source identities are immutable v25.82 83-PdP Year5 list.
-The textbook text stream is incomplete; no page numbers are certified.
+Original Drive textbook is part 1; three original PDF parts now cover printed pages 1–234. Separate source ledger verifies 83/83 SP page tokens, not pedagogical page relevance or release readiness.
 No Telegram/Web imports, no SQLite change, no academic ≥80% claim.
 """
 from __future__ import annotations
