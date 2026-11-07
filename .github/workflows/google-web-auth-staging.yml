@@ -18,6 +18,9 @@ on:
       - 'migrations/STAGING_ONLY_web_payment_review_rpc_445.sql'
       - 'migrations/STAGING_ONLY_web_google_rph_delivery_quota_448.sql'
       - 'tests/sql/web_google_rph_quota_integration.sql'
+      - 'migrations/DRAFT_ONLY_web_canonical_identity_449.sql'
+      - 'tests/sql/web_canonical_identity_fixture.sql'
+      - 'tests/sql/web_canonical_identity_integration.sql'
       - 'web/google_rph_bundle_quota.py'
       - 'tests/test_web_google_rph_bundle_quota.py'
       - 'tests/sql/web_google_payment_fixture.sql'
@@ -115,6 +118,11 @@ jobs:
         run: psql -v ON_ERROR_STOP=1 -f tests/sql/web_google_payment_integration.sql
       - name: Verify exactly-once Google RPH bundle debit and security on disposable DB
         run: psql -v ON_ERROR_STOP=1 -f tests/sql/web_google_rph_quota_integration.sql
+      - name: Validate draft cross-provider schema in disposable PostgreSQL ONLY
+        run: |
+          psql -v ON_ERROR_STOP=1 -f tests/sql/web_canonical_identity_fixture.sql
+          psql -v ON_ERROR_STOP=1 -f migrations/DRAFT_ONLY_web_canonical_identity_449.sql
+          psql -v ON_ERROR_STOP=1 -f tests/sql/web_canonical_identity_integration.sql
 
   staging-google-http-smoke:
     # Only against the explicitly isolated Render staging service after code
