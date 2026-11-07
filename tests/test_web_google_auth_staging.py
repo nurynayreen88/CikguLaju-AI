@@ -47,11 +47,12 @@ class GoogleStagingRoutes(unittest.TestCase):
     def setUp(self):
         self.env = patch.dict(os.environ, {
             "CIKGULAJU_GOOGLE_AUTH_STAGING_ENABLED": "1",
-            "CIKGULAJU_GOOGLE_SUPABASE_PUBLISHABLE_KEY": "sb_publishable_test_not_real",
+            "CIKGULAJU_GOOGLE_STAGING_SUPABASE_PUBLISHABLE_KEY": "sb_publishable_test_not_real",
+            "CIKGULAJU_GOOGLE_STAGING_SUPABASE_URL": "https://staging.supabase.co",
             "CIKGULAJU_WEB_SESSION_SECRET": SECRET,
             "CIKGULAJU_GOOGLE_STAGING_ORIGIN": "https://staging.example.test",
             "CIKGULAJU_GOOGLE_STAGING_ALLOWED_HOST": "staging.example.test",
-            "SUPABASE_URL": "https://example.supabase.co",
+            "SUPABASE_URL": "https://production.supabase.co",
         })
         self.env.start()
         self.app = Flask(__name__)
@@ -67,6 +68,7 @@ class GoogleStagingRoutes(unittest.TestCase):
         self.assertEqual(start.status_code, 302)
         query = parse_qs(urlsplit(start.headers["Location"]).query)
         self.assertEqual(query["provider"], ["google"])
+        self.assertEqual(urlsplit(start.headers["Location"]).netloc, "staging.supabase.co")
         self.assertEqual(query["code_challenge_method"], ["s256"])
         callback = parse_qs(urlsplit(query["redirect_to"][0]).query)
         return callback["state"][0], start
@@ -75,6 +77,11 @@ class GoogleStagingRoutes(unittest.TestCase):
         with patch.dict(os.environ, {"CIKGULAJU_GOOGLE_AUTH_STAGING_ENABLED": "0"}):
             r = self.client.get("/api/auth/google/start", base_url=self.base)
             self.assertEqual(r.status_code, 503)
+
+    def test_rejects_using_production_supabase_database(self):
+        with patch.dict(os.environ, {"CIKGULAJU_GOOGLE_STAGING_SUPABASE_URL": "https://production.supabase.co"}):
+            r = self.client.get("/api/auth/google/start", base_url=self.base)
+        self.assertEqual(r.status_code, 503)
 
     def test_no_host_spoofing(self):
         r = self.client.get("/api/auth/google/start", base_url="https://other.example.test")
