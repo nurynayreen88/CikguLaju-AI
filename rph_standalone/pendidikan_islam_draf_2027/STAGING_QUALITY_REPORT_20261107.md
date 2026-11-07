@@ -584,3 +584,10 @@ Audit tanpa meminda sumber RPH menjumpai **13 Lesson Tahun 5** yang secara nyata
 
 **Penting:** Sesetengah ralat yang dibaiki ialah salinan terus daripada RPT asal. Draf RPH dibuat lebih konsisten tetapi dokumen RPT Tahun 3/4 yang sudah diedarkan masih perlu **pembetulan sumber berasingan**. Semua bahan asal dan cap SHA-256 provenance dikekalkan; setiap rekod baharu menyimpan `staging_cross_field_source_correction.original_fields` dan `revised_fields` untuk pemulihan. Semakan `pi_surah_pbd_alignment_audit.py` memeriksa nama surah yang disebut secara nyata serta julat ayat PBD terhadap objektif pada semua entri, bukan mensahkan keseluruhan kandungan hadis/tajwid/Jawi. **Kelulusan pakar 0; status HOLD/NO_GO; main, produksi dan DB tidak diubah.**
 
+
+
+### Tambahan — urutan T3 PdP051/055/059 perkara membatalkan solat
+
+Perbandingan bersebelahan PdP051, PdP055, PdP059 dalam katalog dan PDF RPT PI Tahun 3 2027 (Drive `1ceqdKRKYP2MHpkPe4KbIOVpCooq37NVE`) membuktikan ralat penyalinan lain pada objektif PdP059: RPT asal menyebut senarai **7–12** tetapi aktivitinya mengajar **13–18**, selepas PdP051 mengajar 1–6 dan PdP055 mengajar 7–12.
+
+Objektif RPH **T3-L059** diperbetulkan daripada 7–12 kepada **13–18**, sejajar aktivitinya, menghasilkan pembahagian berturutan 1–6 → 7–12 → 13–18 tanpa pertindihan. Butiran asal dan kedua-dua versi objektif disimpan dalam metadata `staging_t3_solat_18_case_objective_correction`, dan `pi_t3_solat_case_sequence_audit.py` memaksa ujian yang gagal jika urutan berubah. **Ini bukan pengesahan oleh pakar terhadap senarai 18 perkara tersebut**; buku/DSKP asal serta fiqh masih perlu disemak. Kesilapan sumber RPT telah dimaklumkan pada PR #441. Tidak mengubah RPT Drive, `main` atau produksi.
