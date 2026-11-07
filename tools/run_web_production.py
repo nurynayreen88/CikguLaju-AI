@@ -17,11 +17,10 @@ app.register_blueprint(web_payment_bp)
 # requires a separate operator-approved deployment plus dedicated bearer key.
 from web.telegram_prod_paid_status_bridge import bp as prod_paid_status_bridge_bp
 app.register_blueprint(prod_paid_status_bridge_bp)
-# Feature-flagged: native Google sign-in issues the SAME established Telegram
-# Web session only for a separately verified linked identity. No cross-Render
-# paid-status HTTP request in this compatibility path. Disabled by default.
-from web.google_native_legacy_web_routes import bp as native_google_login_bp
-app.register_blueprint(native_google_login_bp)
+# Replaced the experimental staging-project OAuth compatibility adapter:
+# DO NOT mount it in production. It trusted a separate staging identity store.
+# Canonical Google sessions use the original production Supabase project only.
+# Still disabled until reviewed schema, RPH storage and OAuth settings are ready.
 # Canonical UUID Google-only login for the SAME production Supabase. Disabled
 # until reviewed migration and native Google-only RPH quota rollout are ready.
 from web.google_native_canonical_login_routes import bp as google_canonical_login_bp
