@@ -51,6 +51,15 @@ class NativeAccountLinkTests(unittest.TestCase):
             json=body,base_url=BASE,
             headers={"Origin":origin,"Sec-Fetch-Site":"same-origin"})
 
+    def test_link_page_requires_google_login_but_does_not_auto_merge(self):
+        self.sign(google=True,telegram=False)
+        with patch("web.native_google_telegram_link_routes._read_json") as write:
+            res=self.client.get("/google-link-telegram",base_url=BASE)
+        self.assertEqual(res.status_code,200)
+        self.assertIn(b"Pautkan Google dan Telegram",res.data)
+        self.assertIn(b"after_link_remaining",res.data)
+        write.assert_not_called()
+
     def test_missing_either_proof_never_reads_credits(self):
         for google,telegram in ((False,False),(True,False),(False,True)):
             with self.subTest(google=google,telegram=telegram):
