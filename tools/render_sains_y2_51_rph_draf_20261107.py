@@ -40,6 +40,15 @@ Y2_SOURCE_CONFLICTS = {
                "10.1 Set Binaan. Teacher-facing lesson focuses on the "
                "construction activity; no silent correction of official wording."),
 }
+SOURCE_CRITICAL_SHORT_NOTE={
+    "3.1.3":("SP 3.1.3 DSKP asal berkaitan perbezaan tumbesaran individu; "
+             "SP 3.1.4-3.1.6 tentang pewarisan belum mempunyai PdP rasmi "
+             "dalam 51 rekod sumber. Lihat PBD sokongan asing; perlu semak panitia."),
+    "10.1.6":("SP 10.1.6 DSKP asal Unit Set Binaan bercetak "
+              "'pemerhatian tentang campuran'. Aktiviti model binaan "
+              "adalah cadangan CikguLaju, BUKAN petikan SP rasmi. "
+              "Sahkan percanggahan sumber dengan panitia."),
+}
 CORRECTED_CANDIDATE_TITLE = {
     "3.1.3": "Manusia — Mengitlak tumbesaran berbeza antara individu berdasarkan data.",
     "10.1.6": "Teknologi — Membentangkan pemerhatian terhadap model set binaan (cadangan).",
@@ -87,6 +96,7 @@ def get_y2_records():
             "candidate_title": candidate,
             "kps": kps_for(sp),
             "source_discrepancy": Y2_SOURCE_CONFLICTS.get(sp, ""),
+            "source_warning_short":SOURCE_CRITICAL_SHORT_NOTE.get(sp, ""),
             "book_page_cue": ", ".join(map(str,pages[sp]["printed_page_candidates"])),
             "book_page_status": "TEXT_CUE_ONLY__NOT_VISUALLY_VERIFIED",
             "activity_book": activity_for(2,r["pdp_code"],sp),
@@ -182,7 +192,8 @@ def write_docx(path,item):
       ("Penutup (5m)","Murid menyatakan satu dapatan; guru merumus kaitan dengan SP "+item["sp"]+"."),
       ("BBM",item["materials"]),
       ("Keselamatan/etika",item["safety"]),
-      ("Buku teks / Status",f"Petunjuk m/s {item['book_page_cue']} (belum sah visual) • DRAF/HOLD"),
+      ("Buku teks / Status",f"Petunjuk m/s {item['book_page_cue']} (belum sah visual) • DRAF/HOLD" +
+       (" | "+item.get("source_warning_short","") if item.get("source_warning_short") else "")),
     ]
     for i,(name,val) in enumerate(fields):
         _docx_cell(phases.cell(i,0),name,strong=True)
@@ -227,7 +238,8 @@ def write_pdf(path,item):
       ("Penutup 5m","Murid menyatakan dapatan; guru merumus SP "+item["sp"]+"."),
       ("BBM",item["materials"]),
       ("Keselamatan",item["safety"]),
-      ("Rujukan/Status",f"DSKP asal; BT m/s calon {item['book_page_cue']} belum sah visual • DRAF/HOLD"),
+      ("Rujukan/Status",f"DSKP asal; BT m/s calon {item['book_page_cue']} belum sah visual • DRAF/HOLD" +
+       (" | "+item.get("source_warning_short","") if item.get("source_warning_short") else "")),
       ("Refleksi","____ / ____ murid mencapai objektif."),
     ]
     cells=[[p(a),p(b)] for a,b in fields]
