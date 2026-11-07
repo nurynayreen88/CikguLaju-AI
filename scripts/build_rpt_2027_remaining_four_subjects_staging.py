@@ -240,7 +240,12 @@ def build_all(destination=OUT):
             rows=reader(year)
             filename=f"CIKGULAJU_RPT_{sub.upper()}_TAHUN_{year}_2027_LIMA_LAJUR_DRAF.pdf"
             file=target/filename
-            build_preview(sub,year,rows,file)
+            # A merged week group must not exceed the landscape page height.
+            # For dense BM and Jawi PI, repeat the week label on a new sub-group
+            # rather than hiding/losing PdP rows across a page break.
+            build_preview(sub,year,rows,file,
+                          max_span_rows=(2 if sub=="bahasa_melayu" else
+                                         1 if sub=="pendidikan_islam" else None))
             results.append((sub,year,len(rows),str(file)))
     if len(results)!=20:
         raise ValueError("Incomplete 20 PDF RPT rendering")
