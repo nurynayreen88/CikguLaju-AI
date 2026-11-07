@@ -87,6 +87,38 @@ def _set_doc_cell(cell,text,bold=False):
     run.bold=bold
     run.font.size=Pt(8)
 
+def split_two_activities(value):
+    """Preserve original activity text and exact Guru/Murid numbered lines."""
+    if not value.startswith("Aktiviti 1"):
+        raise ValueError("Missing Year3 Aktiviti 1 heading")
+    delimiter="\n\nAktiviti 2"
+    if value.count(delimiter)!=1:
+        raise ValueError("Expected two independent Year3 main activities")
+    first,second=value.split(delimiter)
+    second="Aktiviti 2"+second
+    for text,label in ((first,"Aktiviti 1"),(second,"Aktiviti 2")):
+        if not text.startswith(label+" — ") or "\n1. Guru " not in text or "\n2. Murid " not in text:
+            raise ValueError("Malformed teacher/pupil numbered actions "+label)
+    return first,second
+
+def _activity_cell(cell,text):
+    """Bold Aktiviti header, separate 1. Guru and 2. Murid into actual paragraphs."""
+    cell.text=""
+    paragraph=cell.paragraphs[0]
+    paragraph.paragraph_format.space_after=Pt(0)
+    lines=text.split("\n")
+    heading=paragraph.add_run(lines[0])
+    heading.bold=True
+    heading.font.size=Pt(8)
+    for line in lines[1:]:
+        if not line.strip():
+            continue
+        p=cell.add_paragraph()
+        p.paragraph_format.space_after=Pt(0)
+        p.paragraph_format.space_before=Pt(0)
+        run=p.add_run(line)
+        run.font.size=Pt(8)
+
 def word_doc(path,number,unit,state,rows):
     doc=Document()
     section=doc.sections[0]
@@ -126,17 +158,22 @@ def word_doc(path,number,unit,state,rows):
     for ri,(k,v) in enumerate(det):
         _set_doc_cell(details.cell(ri,0),k,True)
         _set_doc_cell(details.cell(ri,1),v)
-    phases=doc.add_table(rows=6,cols=2);phases.style="Table Grid"
+    activity1,activity2=split_two_activities(rows["AKTIVITI UTAMA"])
+    phases=doc.add_table(rows=7,cols=2);phases.style="Table Grid"
     for ri,(k,v) in enumerate([
         ("Set induksi",rows["SET INDUKSI"]),
-        ("Aktiviti utama",rows["AKTIVITI UTAMA"]),
+        ("Aktiviti 1",activity1),
+        ("Aktiviti 2",activity2),
         ("Penilaian/PBD",rows["PENTAKSIRAN"]),
         ("Buku Aktiviti",rows["BUKU AKTIVITI / LATIHAN"]),
         ("Penutup",rows["PENUTUP"]),
         ("BBM",rows["BAHAN BANTU MENGAJAR"]),
     ]):
         _set_doc_cell(phases.cell(ri,0),k,True)
-        _set_doc_cell(phases.cell(ri,1),v)
+        if k in ("Aktiviti 1","Aktiviti 2"):
+            _activity_cell(phases.cell(ri,1),v)
+        else:
+            _set_doc_cell(phases.cell(ri,1),v)
     p=doc.add_paragraph("Refleksi: "+rows.get("REFLEKSI","__________________"))
     p.paragraph_format.space_before=Pt(2)
     for r in p.runs:r.font.size=Pt(8)
@@ -154,7 +191,7 @@ def pdf_doc(path,number,unit,state,rows):
         pdfmetrics.registerFont(TTFont("SainsReview",FONT))
     normal=ParagraphStyle("body",fontName="SainsReview",fontSize=8.3,
         leading=11.6,spaceAfter=1)
-    strong=ParagraphStyle("label",parent=normal,fontSize=8.0,leading=10)
+    strong=ParagraphStyle("label",parent=normal,fontName="Helvetica-Bold",fontSize=8.0,leading=10)
     heading=ParagraphStyle("heading",parent=normal,fontSize=12,leading=16,
         alignment=1,spaceAfter=3)
     notice=ParagraphStyle("notice",parent=normal,fontSize=7.5,leading=10,
@@ -175,6 +212,7 @@ def pdf_doc(path,number,unit,state,rows):
         ("VALIGN",(0,0),(-1,-1),"TOP"),
         ("TOPPADDING",(0,0),(-1,-1),3),("BOTTOMPADDING",(0,0),(-1,-1),3)]))
     stack.extend([t,Spacer(1,4)])
+    activity1,activity2=split_two_activities(rows["AKTIVITI UTAMA"])
     fields=[
         ("Unit",unit),
         ("Tajuk",rows["TAJUK"]),
@@ -182,7 +220,8 @@ def pdf_doc(path,number,unit,state,rows):
         ("Objektif",rows["OBJEKTIF PEMBELAJARAN"]),
         ("Kriteria kejayaan",rows["KRITERIA KEJAYAAN"]),
         ("Set induksi",rows["SET INDUKSI"]),
-        ("Aktiviti utama",rows["AKTIVITI UTAMA"]),
+        ("Aktiviti 1",activity1),
+        ("Aktiviti 2",activity2),
         ("Penilaian/PBD",rows["PENTAKSIRAN"]),
         ("Buku Aktiviti",rows["BUKU AKTIVITI / LATIHAN"]),
         ("Penutup",rows["PENUTUP"]),
