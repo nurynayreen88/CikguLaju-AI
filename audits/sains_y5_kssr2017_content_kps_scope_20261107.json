@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-07",
+  "subject": "Sains",
+  "year": 5,
+  "title": "Official KSSR Semakan 2017 Year5 content SP and science-process SP staged source reconciliation",
+  "source": {
+    "file_name": "GuruBesar_DSKP_Sains_Tahun_5.pdf",
+    "file_id": "1YkiK-pVo4UUzyOUvv_Vrico58eQyddCz",
+    "google_drive_url": "https://drive.google.com/file/d/1YkiK-pVo4UUzyOUvv_Vrico58eQyddCz/view",
+    "source_edition": "KSSR Semakan 2017, DSKP published 2019",
+    "pdf_sha256": "e90744b28e6cc3943e8707475a911238ffc8b6a9dffb812bf742d35bcaa61ef6",
+    "pdf_pages": 88,
+    "evidence_cross_reference": "PR #441 rpt_2027/sains/kssr2017_t4_t5_official_sp_code_ranges_20261107.json",
+    "rechecked_from_owner_drive_extracted_text": true,
+    "printed_codes_all_83_present_in_official_text": true
+  },
+  "official_sp_groups_max_suffix": {
+    "1.1": 12,
+    "2.1": 5,
+    "2.2": 4,
+    "2.3": 4,
+    "3.1": 6,
+    "3.2": 4,
+    "3.3": 7,
+    "4.1": 3,
+    "4.2": 4,
+    "5.1": 1,
+    "5.2": 7,
+    "5.3": 4,
+    "6.1": 7,
+    "7.1": 6,
+    "8.1": 5,
+    "8.2": 4,
+    "9.1": 4,
+    "9.2": 3,
+    "10.1": 5
+  },
+  "official_sp_total": 95,
+  "official_kps_count": 12,
+  "official_content_sp_total": 83,
+  "staged_content_pdp_count": 83,
+  "staged_source_sp_matches_official_content_set": 83,
+  "official_content_sp_unrepresented_by_staging": 0,
+  "staged_content_sp_not_in_official": 0,
+  "legacy_must_not_promote": [
+    "6.2",
+    "10.2"
+  ],
+  "data_sources": [
+    "audits/sains_y5_83_full_textbook_printed_sp_pages_20261107.json",
+    "web/sains_y5_83_activity_bank_draf_20261107.py"
+  ],
+  "kps_coverage_model": "KPS may be integrated into content PdP; 12 KPS are not twelve additional mandatory PdP",
+  "kps_reference_status": "CHECKED_IN_STAGING_BUT_ACTUAL_PEDAGOGICAL_PERFORMANCE_UNAPPROVED",
+  "semantic_dskp_full_statement_verified": false,
+  "teacher_approved_count": 0,
+  "release_ready": false,
+  "production_changed": false,
+  "no_database_write": true,
+  "caveat": "Exact SP code-set equality and textbook code presence do not verify the full official SP wording, RPH activity semantics, KPS performance, PBD or live Web/Telegram routing."
+}
