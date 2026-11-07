@@ -56,6 +56,8 @@ def build_queue(root=ROOT):
                     tasks.append("Sahkan halaman Buku Teks pada naskhah asal")
                 if "HALAMAN_BUKU_T2_MELEBIHI_MUKA_TERAKHIR" in flags:
                     tasks.append("Julat lama 133-140 melepasi halaman bercetak terakhir 138; semak cadangan 133-138 dengan SP")
+                if "DSKP_T3_L146_OBJECTIVE_PBD_REVISED_EXPERT_PENDING" in flags:
+                    tasks.append("Semak 3 objektif/PBD Tahun 3 L146 dengan DSKP 6.4.3–6.4.5; teks lama off-topic disimpan, Jawi belum diluluskan")
                 action = "; ".join(tasks) + "."
                 sp = record["fields"]["sp"]
             elif "PENAMBAHAN_PDP_BELUM_SAH_PAKAR" in flags:
