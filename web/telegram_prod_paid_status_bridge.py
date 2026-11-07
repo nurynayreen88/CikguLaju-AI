@@ -23,7 +23,7 @@ def _authorized():
     token = os.environ.get("CIKGULAJU_PAID_BRIDGE_TOKEN", "")
     if not isinstance(token, str) or len(token) < 48:
         return False, 503
-    if request.host != PRODUCTION_HOST or not request.is_secure:
+    if request.host != PRODUCTION_HOST:
         return False, 403
     header = request.headers.get("Authorization", "")
     if not hmac.compare_digest(header, "Bearer " + token):
