@@ -25,6 +25,10 @@ app.register_blueprint(prod_paid_status_bridge_bp)
 # until reviewed migration and native Google-only RPH quota rollout are ready.
 from web.google_native_canonical_login_routes import bp as google_canonical_login_bp
 app.register_blueprint(google_canonical_login_bp)
+# Native Word/PDF uses the same verified Telegram renderer, but Google-only
+# UUID quota from the same Supabase. Separate OFF-by-default release gate.
+from web.native_google_rph_routes import bp as native_google_rph_bp
+app.register_blueprint(native_google_rph_bp)
 from web.web_referral_routes import install as install_web_referral
 install_web_referral(app)
 
