@@ -34,6 +34,11 @@ SUBJECTS = {
     "sejarah": ("Sejarah", (4,5,6), None, None, "DRAF"),
 }
 assert sum(len(v[1]) for v in SUBJECTS.values())==56
+# Years that really have Year 1 KP2027 curriculum; never show Year 1
+# for upper-primary-only RBT and Sejarah.
+YEAR1_KP2027_CODES=frozenset(set(SUBJECTS)-{"rbt","sejarah"})
+assert len(YEAR1_KP2027_CODES)==10
+YEAR1_PREVIEW_STATUS="KP2027 — AKAN DATANG"
 NOTES={
     "sains":"SEPARA DRAF: SK/SP dan RPH belum selesai audit penuh.",
     "bahasa_arab":"DRAF: teks penuh SK/SP masih memerlukan semakan DSKP.",
@@ -135,7 +140,21 @@ def catalog_data(*,root=ROOT, allowed=False):
     available=0
     for code,(label,years,folder,legacy_name,status) in SUBJECTS.items():
         entries=[]
-        for year in years:
+        display_years=((1,)+years) if code in YEAR1_KP2027_CODES else years
+        for year in display_years:
+            # Tahun 1 follows the KP2027 curriculum, a separate source from
+            # the old KSSR/2017 PDF. Explicit non-downloadable placeholder.
+            if year==1:
+                entries.append({
+                    "year":1,
+                    "pdf_ready":False,
+                    "status":YEAR1_PREVIEW_STATUS,
+                    "download_enabled":False,
+                    "note":"RPT Tahun 1 KP2027 masih disediakan. PDF belum diterbitkan.",
+                    "is_draft":True,
+                    "coming_soon":True,
+                })
+                continue
             current=_staged_file(code,year,root=root)
             legacy=_legacy_file(code,year,root=root) if current is None else None
             ready=current is not None or legacy is not None
@@ -157,8 +176,10 @@ def catalog_data(*,root=ROOT, allowed=False):
         "allowed":bool(allowed),
         "subjects":subjects,
         "total_rpt":56,
+        "total_display_choices":66,
+        "year1_coming_soon":10,
         "available_rpt":available,
-        "note":"Semua RPT yang tersedia boleh dilihat. Muat turun khusus Rakan Pembangun atau langganan aktif. Semua DRAF perlu semakan guru; Tahun 1 KP2027 belum diterbitkan.",
+        "note":"Tahun 1 KP2027 dipaparkan sebagai AKAN DATANG dengan muat turun dimatikan. RPT Tahun 2–6 kekal untuk akses berbayar dan semua DRAF perlu semakan guru.",
     }
 
 def create_all_rpt_blueprint(*,root=ROOT):
