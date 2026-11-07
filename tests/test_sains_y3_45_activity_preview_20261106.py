@@ -1,7 +1,9 @@
 """QA 45 fully distinct Sains Y3 draft RPH activities, no app import."""
 import unittest
+import json
+from pathlib import Path
 from web.sains_y3_rph_activity_preview_20261106 import (
-    BANK,adapt_rows,source_ledgers,
+    BANK,INTEGRATED_SP_DRAFT,adapt_rows,source_ledgers,
 )
 
 class SainsY3ActivityCoverageTests(unittest.TestCase):
@@ -28,7 +30,8 @@ class SainsY3ActivityCoverageTests(unittest.TestCase):
                 self.assertEqual(revised["STATUS"],"DRAF")
                 self.assertEqual(original,{"REFLEKSI":"Asal","TARIKH":"06/11/2026","STATUS":"DRAF"})
                 self.assertTrue(revised["TAJUK"])
-                self.assertEqual(revised["STANDARD PEMBELAJARAN"],sp)
+                expected_sp=sp+((", "+INTEGRATED_SP_DRAFT[sp]["sp"]) if sp in INTEGRATED_SP_DRAFT else "")
+                self.assertEqual(revised["STANDARD PEMBELAJARAN"],expected_sp)
                 self.assertIn("Guru",revised["AKTIVITI UTAMA"])
                 self.assertIn("Murid",revised["AKTIVITI UTAMA"])
                 self.assertIn("\n1. Guru",revised["AKTIVITI UTAMA"])
@@ -69,6 +72,55 @@ class SainsY3ActivityCoverageTests(unittest.TestCase):
             with self.subTest(bad=bad):
                 self.assertIs(adapt_rows(bad,original),original)
         self.assertEqual(original,{"AKTIVITI UTAMA":"original","REFLEKSI":"orig"})
+
+    def test_three_missing_content_sp_have_explicit_activity_and_pbd_evidence(self):
+        # DSKP crosswalk candidates; remain DRAF pending textbook review.
+        self.assertEqual(
+            {k:v["sp"] for k,v in INTEGRATED_SP_DRAFT.items()},
+            {"3.2.1":"3.2.5","3.3.1":"3.3.3","3.3.2":"3.3.4"}
+        )
+        self.assertEqual(len(self.ledger),45)
+        for row in self.ledger.values():
+            sp=row["sp_code"]
+            state={"subject":"Sains","year":"Tahun 3","sp_code":sp,
+                   "sk_code":sp.rsplit(".",1)[0],
+                   "pdp_sequence_code":row["pdp_code"]}
+            revised=adapt_rows(state,{})
+            with self.subTest(sp=sp):
+                if sp in INTEGRATED_SP_DRAFT:
+                    extra=INTEGRATED_SP_DRAFT[sp]
+                    self.assertEqual(revised["STANDARD PEMBELAJARAN"],sp+", "+extra["sp"])
+                    self.assertIn(extra["pbd"],revised["KRITERIA KEJAYAAN"])
+                    self.assertIn(extra["pbd"],revised["PENTAKSIRAN"])
+                    self.assertIn("\n3. Guru ",revised["AKTIVITI UTAMA"])
+                    self.assertIn("\n4. Murid ",revised["AKTIVITI UTAMA"])
+                    self.assertIn(extra["teacher"],revised["AKTIVITI UTAMA"])
+                    self.assertIn(extra["pupil"],revised["AKTIVITI UTAMA"])
+                else:
+                    self.assertEqual(revised["STANDARD PEMBELAJARAN"],sp)
+                    self.assertNotIn("\n3. Guru ",revised["AKTIVITI UTAMA"])
+                    self.assertNotIn("\n4. Murid ",revised["AKTIVITI UTAMA"])
+
+    def test_three_integrated_sp_have_textbook_dskp_evidence_but_not_release(self):
+        path=Path(__file__).resolve().parents[1] / "audits/sains_y3_three_integrated_sp_book_text_20261106.json"
+        evidence=json.loads(path.read_text(encoding="utf-8"))
+        self.assertEqual(
+            evidence["review_status"],
+            "TEXT_LAYER_CONFIRMED__VISUAL_PAGE_AND_TEACHER_REVIEW_PENDING",
+        )
+        self.assertIn("NOT_PRODUCTION_RELEASE",evidence["intended_use"])
+        self.assertEqual(len(evidence["evidence"]),3)
+        self.assertEqual(
+            {(e["primary_sp"],e["integrated_sp"]) for e in evidence["evidence"]},
+            {(primary, data["sp"]) for primary,data in INTEGRATED_SP_DRAFT.items()},
+        )
+        self.assertEqual(
+            {e["pdp_code"] for e in evidence["evidence"]},
+            {"SCI-Y3-PDP-006","SCI-Y3-PDP-010","SCI-Y3-PDP-011"},
+        )
+        for e in evidence["evidence"]:
+            self.assertEqual(e["qa"],"TEXT_MATCH__VISUAL_PENDING")
+            self.assertTrue(e["book_printed_pages"])
 
     def test_acid_demos_do_not_invite_chemical_tasting_or_touching(self):
         for sp in ("8.1.1","8.1.2","8.1.3","8.1.4"):

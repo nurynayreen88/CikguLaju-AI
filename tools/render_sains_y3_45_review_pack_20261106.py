@@ -100,7 +100,7 @@ def word_doc(path,number,unit,state,rows):
     det=[
         ("Unit",unit),
         ("Tajuk",rows["TAJUK"]),
-        ("SK / SP",f'{state["sk_code"]}  /  {state["sp_code"]}'),
+        ("SK / SP",f'{state["sk_code"]}  /  {rows.get("STANDARD PEMBELAJARAN", state["sp_code"])}'),
         ("Objektif / Kriteria",rows["OBJEKTIF PEMBELAJARAN"]+"\n"+rows["KRITERIA KEJAYAAN"]),
     ]
     for ri,(k,v) in enumerate(det):
@@ -146,7 +146,7 @@ def pdf_doc(path,number,unit,state,rows):
            Paragraph("DRAF SEMAKAN SUMBER • BELUM DILULUSKAN UNTUK PENGGUNA",notice)]
     info=[
         [p("Tahun 3"),p("Sains"),p("PdP "+f"{number:03d}"),p("Kelas: __________")],
-        [p("Tarikh: ____/____/________"),p("Masa: __:__ – __:__"),p("SK: "+state["sk_code"]),p("SP: "+state["sp_code"])],
+        [p("Tarikh: ____/____/________"),p("Masa: __:__ – __:__"),p("SK: "+state["sk_code"]),p("SP: "+rows.get("STANDARD PEMBELAJARAN", state["sp_code"]))],
     ]
     t=Table(info,colWidths=[136,125,135,136],hAlign="LEFT")
     t.setStyle(TableStyle([
