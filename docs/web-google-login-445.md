@@ -42,3 +42,10 @@ Status: implementation design on isolated branch; **not live**.
 - Existing `_config()` currently requires Telegram bot credentials, so separate provider-independent Web session configuration from Telegram widget configuration without weakening existing validation.
 - Google OAuth callback and secrets cannot be finalized until Google Cloud OAuth client is configured for the actual staging/production domains.
 - Before coding migration, inspect Supabase tables and RLS; use additive, reversible schema and do not modify production data.
+
+## Live Supabase read-only schema inventory
+Project: CikguLaju (ap-southeast-1). The public `cikgulaju_users` table uses `telegram_user_id bigint` and stores `trial_remaining` and `credits`. `teacher_profiles` also uses `telegram_user_id bigint`; `payments`, `subscription_payments`, and `pioneer_payment_requests` refer to Telegram IDs. This confirms that the proposed identity mapping alone is insufficient unless all account-bound routes are migrated.
+
+Suggested safe staged schema design (NOT applied): new `web_accounts` with UUID primary key, new `web_account_identities` with provider+subject unique constraint, and a nullable Telegram legacy ID mapped one-to-one to existing `cikgulaju_users`. New Google users get UUID accounts and independent trial counters; existing Telegram accounts are mapped lazily or backfilled transactionally. New payment/profile records must use UUID references, with legacy Telegram bridge retained. Never use fabricated Telegram IDs, or write new Google users into legacy tables requiring a Telegram UID. Confirm existing RLS and constraints before any DDL.
+
+Important: Supabase Auth's built-in Google identity linking can automatically link by verified email; that is not equivalent to proving ownership of an existing Telegram account. Require separate explicit verified Telegram linking for legacy accounts.
