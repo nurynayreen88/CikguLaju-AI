@@ -10,6 +10,7 @@ on:
       - 'web/google_payment_store.py'
       - 'web/google_payment_staging_routes.py'
       - 'web/google_payment_admin_notify.py'
+      - 'web/google_staging_login.html'
       - 'web/google_staging_payment.html'
       - 'web/google_staging_admin_payments.html'
       - 'tests/test_web_google_payments_staging.py'
