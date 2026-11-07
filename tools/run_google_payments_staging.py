@@ -72,3 +72,45 @@ def security_headers(response):
     response.headers.setdefault("X-Frame-Options","SAMEORIGIN")
     response.headers.setdefault("Strict-Transport-Security","max-age=31536000")
     return response
+
+
+def _private_bridge_canary():
+    """Optional staging-only boot probe; never exposes or changes real users.
+
+    Uses a non-existent sentinel Telegram ID to confirm that Render's private
+    production Web API accepts this staging service's bearer token. The
+    expected reply is HTTP 404. No documents, user profiles, trial credits or
+    payments are involved. This does not grant access to anyone.
+    """
+    import logging
+    from web.staging_production_paid_status_client import (
+        PaidStatusBridgeUnavailable, PaidStatusProductionAccountMissing,
+        read_paid_status, STAGING_URL,
+    )
+    config = {"host": "cikgulaju-google-payments-staging.onrender.com",
+              "supabase_url": STAGING_URL}
+    try:
+        read_paid_status(9223372036854775807, config)
+    except PaidStatusProductionAccountMissing:
+        app.logger.info("private paid-status bridge canary: authenticated, expected missing sentinel")
+    except PaidStatusBridgeUnavailable as exc:
+        app.logger.warning("private paid-status bridge canary unavailable: %s", exc)
+    except Exception as exc:
+        # Do not print private URLs, account data or connection credentials.
+        app.logger.warning("private paid-status bridge canary unexpected: %s",
+                           type(exc).__name__)
+    else:
+        app.logger.info("private paid-status bridge canary: authenticated")
+
+
+def _maybe_start_private_bridge_canary():
+    import os
+    import threading
+    if (os.environ.get("CIKGULAJU_PAID_BRIDGE_STARTUP_PROBE_ENABLED") == "1"
+            and os.environ.get("CIKGULAJU_PAID_BRIDGE_STAGING_READ_ENABLED") == "1"):
+        threading.Thread(target=_private_bridge_canary,
+                         name="cikgulaju-staging-private-bridge-canary",
+                         daemon=True).start()
+
+
+_maybe_start_private_bridge_canary()
