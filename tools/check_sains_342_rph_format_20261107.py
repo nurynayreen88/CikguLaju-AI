@@ -13,6 +13,7 @@ from docx import Document
 from pypdf import PdfReader
 
 from tools.audit_sains_342_pdp_release_gate_20261106 import ROOT,analyze
+from tools.sains_y5_83_textbook_original_sp_pages_20261107 import checked_book_pages as year5_book_sp_pages
 
 OUT=ROOT/"build/sains_342_format_consistency_20261107"
 ROOTS={
@@ -29,6 +30,7 @@ def validate():
     if len(source)!=342:
         raise ValueError("Source 342 PdP changed")
     items=[]
+    year5_pages=year5_book_sp_pages()
     for year,expected in EXPECTED.items():
         year_rows=[x for x in source if x["tahun"]==year]
         if len(year_rows)!=expected:
@@ -62,6 +64,15 @@ def validate():
             word_text="\n".join(c.text for c in cells)
             if row["sp"] not in word_text:
                 raise ValueError("Word SP vanished "+code)
+            if year==5:
+                ref=year5_pages.get(row["sp"])
+                if not ref or ref["teacher_academic_approved"] is not False:
+                    raise ValueError("Year5 exact code/page source invalid "+code)
+                expected_ref=f"BT m/s {ref['primary_page']}"
+                if expected_ref not in word_text or expected_ref not in page_text:
+                    raise ValueError("Year5 original book printed SP page reference missing "+code)
+                if "panitia" not in word_text.lower() or "panitia" not in page_text.lower():
+                    raise ValueError("Year5 source code/page falsely treated as teacher approval "+code)
             if year==2 and row["sp"] in ("3.1.3","10.1.6"):
                 signal="3.1.4-3.1.6" if row["sp"]=="3.1.3" else "campuran"
                 for kind,body in (("Word",word_text),("PDF",page_text)):
@@ -121,6 +132,7 @@ def main():
         "document_pairs_checked":342,
         "both_main_activities_bold_and_numbered":342,
         "year3_activity_1_2_rows_separate":45,
+        "year5_original_83_sp_code_page_refs_in_real_word_pdf":83,
         "word_page_count_verified_separately_by_LibreOffice":342,
         "pdf_pages_each":1,"academic_approved":0,
         "status":"STAGING_TECHNICAL_PASS_ACADEMIC_HOLD",
