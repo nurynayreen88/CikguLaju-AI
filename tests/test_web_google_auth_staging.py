@@ -130,7 +130,7 @@ class GoogleStagingRoutes(unittest.TestCase):
                   side_effect=[{"access_token": "x" * 70},
                                {"id": SUBJECT, "email": "Guru.Ujian@example.com",
                                 "email_confirmed_at": "2026-11-07T10:00:00Z",
-                                "identities": [{"provider": "google"}]}]) as call,
+                                "identities": [{"provider": "google", "identity_data": {"email": "Guru.Ujian@example.com"}}]}]) as call,
             patch("web.google_auth_staging_routes.ensure_google_staging_account",
                   return_value=SUBJECT) as create,
         ):
@@ -171,7 +171,7 @@ class GoogleStagingRoutes(unittest.TestCase):
                   side_effect=[{"access_token": "x" * 70},
                                {"id": SUBJECT, "email": "Guru.Ujian@example.com",
                                 "email_confirmed_at": "2026-11-07T10:00:00Z",
-                                "identities": [{"provider": "google"}]}]),
+                                "identities": [{"provider": "google", "identity_data": {"email": "Guru.Ujian@example.com"}}]}]),
             patch("web.google_auth_staging_routes.ensure_google_staging_account",
                   side_effect=RuntimeError("staging down")),
         ):
@@ -188,7 +188,7 @@ class GoogleStagingRoutes(unittest.TestCase):
                   side_effect=[{"access_token":"x"*70},
                                {"id": SUBJECT, "email": "Guru.Ujian@example.com",
                                 "email_confirmed_at": "2026-11-07T10:00:00Z",
-                                "identities": [{"provider": "google"}]}]),
+                                "identities": [{"provider": "google", "identity_data": {"email": "Guru.Ujian@example.com"}}]}]),
             patch("web.google_auth_staging_routes.ensure_google_staging_account",
                   return_value=SUBJECT),
         ):
@@ -207,7 +207,7 @@ class GoogleStagingRoutes(unittest.TestCase):
                   side_effect=[{"access_token": "x" * 70},
                                {"id": SUBJECT, "email": "Guru.Ujian@example.com",
                                 "email_confirmed_at": "2026-11-07T10:00:00Z",
-                                "identities": [{"provider": "google"}]}]),
+                                "identities": [{"provider": "google", "identity_data": {"email": "Guru.Ujian@example.com"}}]}]),
             patch("web.google_auth_staging_routes.ensure_google_staging_account",
                   return_value=SUBJECT),
         ):
@@ -279,7 +279,7 @@ class GoogleStagingRoutes(unittest.TestCase):
                    side_effect=[{"access_token": "x" * 70},
                                 {"id": SUBJECT, "email": "unverified@example.com",
                                  "email_confirmed_at": None,
-                                 "identities": [{"provider": "google"}]}]):
+                                 "identities": [{"provider": "google", "identity_data": {"email": "Guru.Ujian@example.com"}}]}]):
             result = self.client.get("/api/auth/google/callback?state=" + state + "&code=test",
                                      base_url=self.base)
         self.assertEqual(result.status_code, 503)
@@ -288,12 +288,18 @@ class GoogleStagingRoutes(unittest.TestCase):
     def test_verified_email_normalization_and_spoofing_rejection(self):
         identity = {"email": "Teacher+One@Example.COM",
                     "email_confirmed_at": "2026-11-07T10:00:00Z",
-                    "identities": [{"provider": "google"}]}
+                    "identities": [{"provider": "google", "identity_data": {"email": "Teacher+One@Example.COM"}}]}
         self.assertEqual(verified_google_email(identity), "teacher+one@example.com")
         with self.assertRaises(ValueError):
             verified_google_email({**identity, "email": "not-an-email"})
         with self.assertRaises(ValueError):
             verified_google_email({**identity, "identities": [{"provider": "email"}]})
+        with self.assertRaises(ValueError):
+            verified_google_email({**identity, "email": "another@example.com"})
+        with self.assertRaises(ValueError):
+            verified_google_email({**identity, "identities": [{
+                "provider": "google", "identity_data": {"email": "hijacked@example.com"}}]})
+
 
     def test_wrong_provider_does_not_grant_ticket(self):
         state, _ = self._start()
