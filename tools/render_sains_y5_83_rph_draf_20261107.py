@@ -1,6 +1,6 @@
 """Sains Tahun 5 — 83 source-locked DRAF RPH (Word/PDF/Markdown).
 
-No artificial textbook pages: the original Year5 textbook extract in Drive is partial and not visually validated. Original v25.82 SK/SP/PdP identities are immutable.
+No invented textbook pages: the original Drive PDF is part 1 only; three audited source parts cover printed pages 1–234 and match source SP tokens 83/83. Pedagogical, semantic DSKP and teacher signoff remain pending. Original v25.82 SK/SP/PdP identities are immutable.
 No Telegram/Web import, no DB write, no automatic 80% certification.
 """
 from __future__ import annotations
@@ -134,7 +134,7 @@ def markdown(item):
         f"**BBM:** {item['materials']}.\n"
         f"**Keselamatan / etika:** {item['safety']}.\n"
         "**Refleksi:** ____ / ____ murid mencapai kriteria; tindakan susulan: ______.\n"
-        "**Status:** DRAF/HOLD — belum lulus buku teks, akademik, Web/Telegram.\n"
+        "**Status:** DRAF/HOLD — padanan kod SP/halaman buku teks 83/83 diaudit; kesesuaian aktiviti, DSKP, PBD dan Web/Telegram belum diluluskan.\n"
     )
 
 
