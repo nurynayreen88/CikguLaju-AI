@@ -1,0 +1,50 @@
+{
+  "version": "v52",
+  "source_version": "v51",
+  "archive_name": "CIKGULAJU_MATEMATIK_v52_585_RPH_NISBAH_PECAHAN_SP_STAGING.zip",
+  "sha256": "646ec1516189275509382d92cc7228912f7a805b41229d5912f5f1a9ea58f847",
+  "source_sha256": "22382da12f876fd63b294ec6f69cd4cc7bcc14e596e73558f43d2cea921f7e94",
+  "archive_size_bytes": 48783243,
+  "rph_total": 585,
+  "changed_lessons": [
+    "T4-L104",
+    "T5-L072",
+    "T5-L074",
+    "T5-L077",
+    "T5-L079",
+    "T5-L082",
+    "T5-L089",
+    "T5-L090",
+    "T5-L091",
+    "T5-L092",
+    "T5-L093",
+    "T5-L107",
+    "T5-L108"
+  ],
+  "changed_sections": 42,
+  "unchanged_rph_count": 572,
+  "individual_pdf_a4_onepage": 585,
+  "word_markdown_pdf_each": 585,
+  "merged_pdf_rebuilt_years": [
+    4,
+    5
+  ],
+  "year2_3_BA_reference_count": 234,
+  "rpt_2027_sp_and_lesson_matches": 585,
+  "rpt_2027_week_matches": 585,
+  "source_dskp_pdf_pages": {
+    "T4-SP7.2.1": 76,
+    "T5-SP7.2.1": 72,
+    "T5-SP5.1.3-5.1.6": 62,
+    "T5-SP5.2.1-5.2.3": 63,
+    "T5-SP5.3.3-5.3.5": 63
+  },
+  "formal_academic_signoff": 0,
+  "all_textbook_exercises_reviewed": false,
+  "year4_34_pairs_book_exercise_signoff": false,
+  "calendar_2027_holiday_state_e2e": false,
+  "telegram_web_real_staging_e2e": false,
+  "final_ready": false,
+  "production_modified": false,
+  "notes": "Spelling and instructional exercise coverage corrected using visually checked DSKP; book exercise approvals remain pending."
+}
