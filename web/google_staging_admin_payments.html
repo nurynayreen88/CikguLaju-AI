@@ -36,7 +36,8 @@ async function refresh(){
    const row=document.createElement('div');row.style.padding='12px 0';
    const btn=document.createElement('button');btn.textContent='Semak';
    btn.addEventListener('click',()=>open(p.id));
-   row.append(document.createTextNode('Akaun '+p.account_id.slice(0,8)+' · '+p.plan_code+' · '+fmt(p.quoted_amount_sen)+' '),btn);
+   const label=p.web_accounts?.display_name||'Akaun '+p.account_id.slice(0,8);
+   row.append(document.createTextNode(label+' · '+p.plan_code+' · '+fmt(p.quoted_amount_sen)+' '),btn);
    list.append(row);
  }
  const linked=safeId(new URLSearchParams(location.search).get('payment'));
@@ -47,7 +48,8 @@ async function open(id){
  const resp=await fetch(base+'/'+id,{credentials:'same-origin',cache:'no-store'});
  if(!resp.ok){message.textContent='Permohonan tidak dapat dibaca.';return}
  const data=(await resp.json()).payment;selected=id;details.style.display='block';
- document.getElementById('info').textContent='Akaun: '+data.account_id+' · Pakej: '+data.plan_code+
+ document.getElementById('info').textContent='Guru: '+(data.web_accounts?.display_name||'Akaun Web')+
+  ' · ID: '+data.account_id+' · Pakej: '+data.plan_code+
   ' · Jumlah: '+fmt(data.quoted_amount_sen)+' · Status: '+data.status;
  const receipt=document.getElementById('receipt');
  receipt.href=base+'/'+id+'/receipt';
