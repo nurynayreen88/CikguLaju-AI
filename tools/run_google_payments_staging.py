@@ -13,6 +13,7 @@ from web.google_payment_staging_routes import bp as google_payment_bp
 from web.google_staging_admin_auth_routes import bp as admin_login_bp
 from web.google_web_catalog_staging import bp as google_web_catalog_bp
 from web.google_rph_bundle_delivery import bp as google_private_rph_delivery_bp
+from web.google_rph_generation_staging_routes import bp as google_opt_in_rph_bp
 
 app=Flask(__name__)
 # Render's HTTPS proxy supplies one trusted X-Forwarded-Proto hop. We never
@@ -23,6 +24,7 @@ app.register_blueprint(admin_login_bp)
 app.register_blueprint(google_payment_bp)
 app.register_blueprint(google_web_catalog_bp)
 app.register_blueprint(google_private_rph_delivery_bp)
+app.register_blueprint(google_opt_in_rph_bp)
 
 
 @app.get("/")
