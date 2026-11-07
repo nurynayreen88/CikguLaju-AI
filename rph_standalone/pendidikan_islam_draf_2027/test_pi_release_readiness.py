@@ -44,10 +44,13 @@ class PIReleaseReadinessTests(unittest.TestCase):
         self.assertEqual(r["year3_l146_expert_approved"],0)
         self.assertEqual(r["year4_l083_original_hadith_excerpt_cited_in_draft"],1)
         self.assertEqual(r["year4_l083_hadith_expert_approved"],0)
+        self.assertEqual(r["year6_tasmi_four_step_rph_drafts"],2)
+        self.assertEqual(r["year6_tasmi_rpt_ayah_ranges_teacher_verified"],0)
+        self.assertEqual(r["year6_tasmi_official_dskp_codes_invented"],0)
         self.assertEqual(r["year3_tasmi_verse_lessons_not_given_fake_sp"], 37)
         self.assertEqual(r["teacher_approved_page_specific_exercises"], 0)
         self.assertEqual(r["book_activity_page_candidates"], 174)
-        self.assertAlmostEqual(r["mechanical_three_step_coverage_percent"], 99.71)
+        self.assertAlmostEqual(r["mechanical_three_step_coverage_percent"], 100.0)
         self.assertGreaterEqual(len(r["release_blockers"]), 9)
         issue = [x for x in r["release_blockers"] if x["code"] ==
                  "YEAR3_6433_DSKP_BOOK_FOOTER_AND_L146_OBJECTIVE_REVIEW"]
@@ -80,6 +83,7 @@ class PIReleaseReadinessTests(unittest.TestCase):
         self.assertEqual(y["3"]["book_footer_missing_but_dskp_manually_seen"], 1)
         self.assertEqual(y["3"]["l146_objective_activity_pbd_revised_pending_expert"],1)
         self.assertEqual(y["4"]["hadith_excerpt_from_original_source_pending_expert"],1)
+        self.assertEqual(y["6"]["year6_tasmi_rpt_ayah_ranges_teacher_pending"],2)
         self.assertEqual(y["3"]["tasmi_verse_descriptions_without_3_level_sp"], 37)
         self.assertEqual(y["3"]["direct_dskp_textbook_sp_footer_crosschecked"], 0)
         self.assertEqual(sum(x["exact_lesson_activity_approvals"] for x in y.values()), 0)
