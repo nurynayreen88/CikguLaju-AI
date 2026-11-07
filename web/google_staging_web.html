@@ -46,7 +46,9 @@ let version=0;
 const selected=()=>({year:get('year').value,subject:get('subject').value,
  component:get('component').value,unit:get('unit').value,lesson:get('lesson').value});
 const clear=(name)=>{
- const s=get(name);s.length=1;s.selectedIndex=0;
+ const s=get(name);
+ if(name==='subject'||name==='component')s.selectedIndex=0;
+ else{s.length=1;s.selectedIndex=0;}
  if(boxes[name])get(boxes[name]).hidden=true;
 };
 const reset=(from)=>{
