@@ -13,7 +13,7 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
 
-from web.google_account_store import verified_google_email
+from web.native_google_oauth_utils import verified_google_email
 
 PROD_SUPABASE = "https://soxakntcanbycjoygrcx.supabase.co"
 
