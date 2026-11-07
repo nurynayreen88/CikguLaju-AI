@@ -57,9 +57,12 @@ def repack_year(rpt_bytes, annex_pdf, year, records, source_uri, destination):
                 raise ValueError("Only unapproved RPT source may be re-packaged")
         doc.insert_pdf(annex,links=True)
         jumps=0
-        for i in range(original_pages):
+        # PyMuPDF mutates the shared PDF link objects when deleting and
+        # inserting annotations. Process pages in reverse to preserve links
+        # that have not yet been converted (tested against 60-link PDFs).
+        for i in reversed(range(original_pages)):
             p=doc[i]
-            for link in list(p.get_links()):
+            for link in reversed(list(p.get_links())):
                 if link.get("kind")!=fitz.LINK_URI:
                     continue
                 if link.get("uri")!=source_uri:
