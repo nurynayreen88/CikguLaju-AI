@@ -16,7 +16,7 @@ from web.google_auth_staging_routes import (
 from web_google_identity_sessions import verify_google_identity_ticket
 from web.google_payment_store import (
     MAX_RECEIPT, PaymentConflict, PaymentUnavailable,
-    admin_payment, admin_pending, eligible_plans, my_payments,
+    admin_payment, admin_pending, account_display_name, eligible_plans, my_payments,
     private_receipt, review_payment, submit_receipt,
 )
 from web.provider_neutral_payment import verified_payment_actor
@@ -168,8 +168,13 @@ def upload_payment():
     notified = False
     try:
         from web.google_payment_admin_notify import notify_google_payment_admin
+        try:
+            display_name = account_display_name(config, uid)
+        except PaymentUnavailable:
+            display_name = ""
         notified = notify_google_payment_admin(
-            config, request_id, uid, request.form["plan_code"], mime, raw)
+            config, request_id, uid, request.form["plan_code"], mime, raw,
+            display_name=display_name)
     except Exception:
         current_app.logger.warning("Google staging payment admin notification unavailable")
     response = jsonify({"payment_id": request_id, "status": "pending",
@@ -240,7 +245,8 @@ def admin_review(request_id):
     if not isinstance(body, dict) or set(body) - {"action", "note"}:
         return jsonify({"error": "Tindakan tidak sah"}), 400
     action, note = body.get("action"), body.get("note", "")
-    if action not in ("approve", "reject") or not isinstance(note, str):
+    if (action not in ("approve", "reject") or not isinstance(note, str)
+            or (action == "reject" and not note.strip())):
         return jsonify({"error": "Tindakan tidak sah"}), 400
     try:
         return jsonify(review_payment(config, request_id, action, admin_uid, note))
