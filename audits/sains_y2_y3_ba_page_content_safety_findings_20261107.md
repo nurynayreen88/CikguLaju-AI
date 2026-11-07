@@ -41,3 +41,18 @@ Bukti penerangan dan arahan cadangan disimpan dalam `audits/sains_y2_y3_ba_page_
 **85 latihan** belum menerima nota semakan isi khusus; semua **96** kekal belum diluluskan oleh guru/panitia. Semakan kandungan buku teks, objektif/KPS/PBD sebenar, aliran muat turun Web/Telegram staging dan rubrik akademik 80% masih belum lengkap. Nilai kod SP yang sama **bukan** bukti kualiti akademik ≥80%.
 
 **Status keseluruhan:** STAGING / HOLD, tanpa auto-merge atau deployment produksi.
+
+---
+
+## Susulan 7 November 2026 — lengkap 85 nota isi tambahan (bukan kelulusan akademik)
+
+Pemeriksaan visual semua halaman yang dipaut dalam rekod baki telah menghasilkan **43 nota Tahun 2 dan 42 nota Tahun 3** yang khusus kepada soalan/gambar latihan asal, disimpan secara berasingan sebagai `audits/sains_y2_43_remaining_page_content_20261107.json` dan `audits/sains_y3_42_remaining_page_content_20261107.json`. Bersama 11 nota terdahulu, liputan editorial kandungan sumber kini **96/96**. Seluruh 96 memerlukan pengesahan guru/panitia; keadaan `teacher_academic_approved=false` dan `STAGING_HOLD` dikekalkan.
+
+Contoh perkara yang dibetulkan dalam panduan baharu:
+- **Y2 SP9.1.2 m/s65:** petunjuk imbasan mencadangkan memotong botol dengan pisau. Bahan dipotong oleh guru sahaja; murid menganalisis arah aliran air pada gambar.
+- **Y2 SP8.1.4 m/s62:** pilihan air panas ditafsir melalui gambar sahaja.
+- **Y3 SP8.1.2 m/s72:** buku mempunyai arahan rasa/sentuh bahan berasid/beralkali. RPH melarang murid menguji rasa/sentuhan; guna kertas litmus atau data selamat.
+- **Y3 SP8.1.4 m/s76:** situasi sengatan tidak digunakan untuk menyuruh rawatan kulit DIY.
+- **Y3 SP5.1.3 m/s50:** pemotongan ubi/keratan dengan pisau hanya dilakukan guru.
+
+Laporan versi ini mengatasi angka lama **11/96** untuk liputan nota kandungan; angka lama ialah checkpoint audit terdahulu, bukan status akhir. Ujian baharu `tools/check_sains_ba_96_document_content_20261107.py` menuntut kesemua 96 nota dipaparkan dalam fail Word/PDF sebenar serta format satu halaman A4.
