@@ -1,6 +1,6 @@
 """Staged Web/Telegram book download metadata test, never live-enabled."""
 import unittest
-from web.sains_buku_aktiviti_resources_20261107 import proposed_material
+from web.sains_buku_aktiviti_resources_20261107 import proposed_material, proposed_alternative_pbd_material
 
 class TestSainsBAResources(unittest.TestCase):
     def test_same_original_year_file_for_all_pdp_and_distinct_exercise_pages(self):
@@ -44,6 +44,18 @@ class TestSainsBAResources(unittest.TestCase):
         unmatched=proposed_material("Sains",2,"SCI-Y2-PDP-010","4.1.7")
         self.assertEqual(unmatched["assignment_status"],"RELATED_ONLY__DO_NOT_ASSIGN_AS_SP_PBD")
         self.assertIn("pbd",unmatched["teacher_usage_guidance"].lower())
+
+    def test_original_two_alternative_pbd_cards_are_staging_only(self):
+        for sp,pdp in [("4.1.7","SCI-Y2-PDP-010"),("6.1.6","SCI-Y2-PDP-022")]:
+            row=proposed_alternative_pbd_material("Sains",2,pdp,sp)
+            self.assertEqual(row["material_type"],"PBD_ALTERNATIF_CIKGULAJU")
+            self.assertFalse(row["official_activity_book"])
+            self.assertFalse(row["ready_for_runtime"])
+            self.assertIsNone(row["direct_download_url"])
+            self.assertIn("PBD_ALTERNATIF_DRAF",row["word_staging_artifact"])
+            self.assertTrue(row["pdf_staging_artifact"].endswith(".pdf"))
+        self.assertIsNone(proposed_alternative_pbd_material("Sains",2,"SCI-Y2-PDP-009","4.1.7"))
+        self.assertIsNone(proposed_alternative_pbd_material("Sains",3,"SCI-Y3-PDP-010","4.1.7"))
 
     def test_not_other_year_or_subject(self):
         self.assertIsNone(proposed_material("Matematik",2,"SCI-Y2-PDP-001","3.1.1"))
