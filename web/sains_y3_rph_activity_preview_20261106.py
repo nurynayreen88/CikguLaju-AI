@@ -463,9 +463,15 @@ def checked_book_pages():
             or entry["all_cited_page_images_visually_reviewed"] is not True
             or entry["teacher_pedagogical_approved"] is not False):
             raise ValueError("Year3 page/code visual mismatch: "+code)
-    extras={x["sp"] for x in doc["secondary_integrated_sp"]}
-    if extras!={"3.2.5","3.3.3","3.3.4"}:
+    extras={x["sp"]:x for x in doc["secondary_integrated_sp"]}
+    expected={"3.2.5":"SCI-Y3-PDP-006","3.3.3":"SCI-Y3-PDP-010","3.3.4":"SCI-Y3-PDP-011"}
+    if set(extras)!=set(expected):
         raise ValueError("Year3 secondary textbook SP source changed")
+    for sp,item in extras.items():
+        if (item.get("pdp_source_identity")!=expected[sp]
+            or item.get("original_sp_code_in_text_and_visual") is not True
+            or item.get("teacher_academic_approved") is not False):
+            raise ValueError("Year3 supplementary SP book source unapproved "+sp)
     return bycode
 
 def adapt_rows(state, original):
