@@ -19,7 +19,7 @@ button:disabled{opacity:.6}a{color:#087568;font-weight:700}
 <p>Ini halaman <strong>ujian staging</strong>. Akaun Google tidak memerlukan Telegram untuk menghantar resit. Akses RPH belum diaktifkan untuk Google semasa ujian ini.</p>
 <article><h2>Status permohonan</h2><div id="history" aria-live="polite">Memuatkan...</div></article>
 <article><h2>Hantar resit baharu</h2>
-<p>Admin akan menyemak resit secara manual. Jangan bayar kali kedua jika permohonan masih menunggu.</p>
+<p><strong>Ujian sahaja: jangan buat bayaran sebenar.</strong> Admin akan menyemak resit secara manual. Jangan bayar kali kedua jika permohonan masih menunggu.</p>
 <p id="payment-link"></p>
 <form id="payment-form">
 <label for="plan">Pakej</label><select name="plan_code" id="plan" required></select>
@@ -71,7 +71,7 @@ document.getElementById('payment-form').addEventListener('submit',async event=>{
       (data.error||'Belum dapat mengesahkan resit. Semak status sebelum cuba lagi.'));
    if(resp.ok){event.currentTarget.reset();await load()}
  }catch(e){show('Status belum pasti. Muat semula sebelum cuba menghantar lagi.')}
- finally{await load().catch(()=>show('Semak status semula sebelum menghantar resit.'))}
+ finally{await load().catch(()=>{button.disabled=true;show('Semak status semula sebelum menghantar resit.')})}
 });
 load().catch(()=>show('Status tidak tersedia. Cuba muat semula.'));
 </script></body></html>
