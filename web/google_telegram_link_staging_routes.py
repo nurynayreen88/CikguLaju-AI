@@ -17,7 +17,7 @@ from flask import Blueprint, jsonify, make_response, request, send_file
 
 from web.google_auth_staging_routes import _enabled_config
 from web.google_web_catalog_staging import _actor
-from web.google_staging_admin_auth_routes import _bot
+from web.google_staging_admin_auth_routes import _bot as _staging_admin_bot
 from web.google_staging_service_auth import staging_service_headers
 from web.provider_neutral_web_identity import (
     from_verified_telegram_account, may_link_accounts)
@@ -31,9 +31,21 @@ class StagingLinkUnavailable(RuntimeError):
     pass
 
 
+def _link_bot():
+    # A separate staging bot is preferred. The existing staging admin bot
+    # may be reused for the Widget only if it is explicitly configured;
+    # the admin allowlist/session are NEVER inherited by a linked teacher.
+    token = os.environ.get("CIKGULAJU_GOOGLE_STAGING_LINK_BOT_TOKEN", "")
+    name = os.environ.get("CIKGULAJU_GOOGLE_STAGING_LINK_BOT_USERNAME", "").lstrip("@")
+    if (re.fullmatch(r"[0-9]{5,15}:[A-Za-z0-9_-]{20,}", token)
+            and re.fullmatch(r"[A-Za-z][A-Za-z0-9_]{4,31}", name)):
+        return token, name
+    return _staging_admin_bot()
+
+
 def _link_config():
     cfg = _enabled_config()
-    bot = _bot()
+    bot = _link_bot()
     if (cfg is None
             or os.environ.get("CIKGULAJU_GOOGLE_TELEGRAM_LINK_STAGING_ENABLED") != "1"
             or bot is None):
