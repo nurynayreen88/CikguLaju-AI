@@ -51,6 +51,53 @@ def from_verified_telegram_account(user_id, account):
     return VerifiedWebIdentity("telegram", str(user_id))
 
 
+
+
+def from_verified_linked_telegram_account(user_id, account_id, profile):
+    """Only after a validated Widget session AND strict staging DB linkage."""
+    actor = from_verified_telegram_account(
+        user_id, {"authenticated": True, "telegram_user_id": user_id})
+    if not isinstance(profile, dict) or profile.get("account_id") != account_id:
+        raise ValueError("Staging account profile mismatch")
+    credits = profile.get("trial_remaining")
+    if type(credits) is not int or not 0 <= credits <= 10:
+        raise ValueError("Unverified linked account credit balance")
+    try:
+        normalized = str(uuid.UUID(account_id))
+    except (TypeError, ValueError, AttributeError):
+        raise ValueError("Linked canonical UUID required") from None
+    if normalized != account_id:
+        raise ValueError("Noncanonical linked account")
+    return VerifiedWebIdentity("telegram", actor.subject, account_id)
+
+
+def canonical_staging_account(actor):
+    """Accept only authenticated provider-neutral account actors from staging.
+
+    This validates shape; the caller MUST also verify the corresponding
+    signed browser session and, for Telegram, the linked DB mapping.
+    """
+    if not isinstance(actor, VerifiedWebIdentity) or actor.account_id is None:
+        raise ValueError("Verified canonical account required")
+    try:
+        account_id = str(uuid.UUID(actor.account_id))
+    except (ValueError, TypeError, AttributeError):
+        raise ValueError("Invalid canonical account") from None
+    if account_id != actor.account_id:
+        raise ValueError("Noncanonical account")
+    if actor.provider == "google":
+        if actor.subject != account_id:
+            raise ValueError("Google actor mismatch")
+    elif actor.provider == "telegram":
+        if (not isinstance(actor.subject, str) or not actor.subject.isascii()
+                or not actor.subject.isdecimal()
+                or actor.subject.startswith("0")
+                or not 0 < int(actor.subject) <= 9223372036854775807):
+            raise ValueError("Telegram actor mismatch")
+    else:
+        raise ValueError("Unsupported provider")
+    return account_id
+
 def may_link_accounts(google_actor, telegram_actor, *, both_sessions_verified=False):
     """A linking request may START only after BOTH independently verified proofs.
 
