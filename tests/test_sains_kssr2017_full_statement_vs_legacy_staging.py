@@ -57,6 +57,17 @@ class OriginalKSSR2017WordingQA(unittest.TestCase):
                                 and len(r["sp_text_source_extract_UNVERIFIED"])>=18
                                 and 51<=r["original_pdf_page"]<=92 for r in p))
 
+    def test_kpm_pdf_hyphenated_line_wrap_is_only_layout_difference(self):
+        source=[row("5.1.2",("Membanding dan membezakan bayang- bayang yang terhasil "
+                    "apabila cahaya dihalang oleh objek lutsinar, lutcahaya dan legap "
+                    "dengan menjalankan aktiviti."))]
+        legacy={"5.1.2":{"sp_text":("Membanding dan membezakan bayang-bayang yang terhasil "
+                    "apabila cahaya dihalang oleh objek lutsinar, lutcahaya dan legap "
+                    "dengan menjalankan aktiviti.")}}
+        result=compare_official_to_legacy(4,source,legacy,{"5.1.2"})
+        self.assertEqual(result["counts"]["SAME_CODE_SAME_WORDING_NEEDS_CONTEXT"],1)
+        self.assertFalse(result["release_ready"])
+
     def test_missing_or_duplicated_original_codes_are_rejected(self):
         official=[row("2.3.1","Menyatakan manusia bergerak balas apabila organ deria menerima rangsangan.")]
         with self.assertRaises(ValueError):
