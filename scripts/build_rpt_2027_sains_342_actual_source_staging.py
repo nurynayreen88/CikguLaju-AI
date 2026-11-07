@@ -57,8 +57,8 @@ def _year3_ledgers():
         raise ValueError("Sains Year3 historical candidate ledgers altered")
     return {a["pdp_code"]:a for a in fixes["changes"]},{a["pdp_code"]:a for a in refs["items"]}
 
-def _year6_nervous_system_2021_text_conflicts():
-    """Two exact but differently worded SP in official 2021 Y6 DSKP.
+def _year6_source_2021_sp_text_conflicts():
+    """16 code-identical but differently worded SP in the 2021 Y6 DSKP.
 
     This corrects STAGED DISPLAY only, not the legacy DB or lesson title.
     Published 2021 DSKP has not yet been hashed as an original PDF.
@@ -85,6 +85,32 @@ def _year6_nervous_system_2021_text_conflicts():
         out[code]=row
     if set(out)!={"2.2.2","2.2.3"}:
         raise ValueError("Missing official Sains Year6 nervous system statements")
+    add=ROOT/"rpt_2027/sains/sains_y6_kssr2017_2021_14_additional_sp_text_conflicts_20261108_DRAF.json"
+    extra=json.loads(add.read_text("utf-8"))
+    if (extra.get("status")!="STAGING_SAINS_T6_2021_KPM_DSKP_FOURTEEN_MORE_SOURCE_TEXT_CONFLICTS_NOT_RELEASE"
+        or extra.get("year")!=6
+        or extra.get("additional_sp_wording_conflicts")!=14
+        or len(extra.get("entries",[]))!=14
+        or extra.get("original_source_binary_sha_verified") is not False
+        or extra.get("academic_release_approved") is not False
+        or extra.get("no_database_edit") is not True
+        or extra.get("production_db_writes")!=0):
+        raise ValueError("Additional KPM 2021 Sains Year6 source correction gate changed")
+    expected_add={"3.1.2","3.1.3","3.1.4","3.1.5","5.1.5","5.1.6",
+                  "6.2.2","6.2.3","6.3.2","6.3.3",
+                  "7.1.1","7.1.2","7.1.3","7.1.4"}
+    for item in extra["entries"]:
+        sp=item["sp_code"]
+        if (sp in out or sp not in expected_add
+            or not item.get("legacy_v26_text") or not item.get("official_2021_dskp_text")
+            or item["legacy_v26_text"]==item["official_2021_dskp_text"]
+            or not 60<=item.get("source_flip_pdf_page",0)<=72
+            or item.get("display_only") is not True
+            or item.get("academic_rph_textbook_approved") is not False):
+            raise ValueError("Unsafe extra Year6 original DSKP text correction")
+        out[sp]=item
+    if len(out)!=16 or set(out)!=expected_add|{"2.2.2","2.2.3"}:
+        raise ValueError("Source-backed Year6 16-SP correction inventory missing")
     return out
 
 def _missing_35_from_official_dskp():
@@ -159,7 +185,7 @@ def source_records():
     dskp_missing=_missing_35_from_official_dskp()
     official_2017=_kssr2017_official_code_sets_y4_y5()
     panduan_2020=panduan_y6_source_index()
-    y6_text_fixes=_year6_nervous_system_2021_text_conflicts()
+    y6_text_fixes=_year6_source_2021_sp_text_conflicts()
     seen_dskp_missing=set()
     years={}
     with TemporaryDirectory(prefix="cikgulaju_sains_rpt_ro_") as tmp:
@@ -268,6 +294,10 @@ def source_records():
                            ", ".join(map(str,panduan_pages))+
                            " — contoh KPS: "+", ".join(panduan_kps)+
                            " (BUKAN semakan RPH/DSKP 2021).")
+                guide_year6_edition_mismatch=year==6 and sp in {"7.1.1","7.1.2","7.1.3"}
+                if guide_year6_edition_mismatch:
+                    note+=(" AWAS: Panduan PdP 2020 SP "+sp+
+                           " berbeza fokus daripada DSKP 2021; jangan guna aktiviti sebagai padanan terus.")
                 week=weeks[index*len(weeks)//expected]
                 a=master["A"][week];b=master["B"][week]
                 rows.append(dict(
@@ -295,7 +325,8 @@ def source_records():
                     year6_official_2021_sp_display_reconciled=bool(y6_text_fix),
                     year6_legacy_original_sp_text=(y6_text_fix["legacy_v26_text"]
                                                    if y6_text_fix else ""),
-                    year6_official_2021_original_pdf_sha_verified=False
+                    year6_official_2021_original_pdf_sha_verified=False,
+                    panduan_y6_2020_to_2021_sp_focus_changed=bool(guide_year6_edition_mismatch)
                 ))
             validate_rows("sains",year,rows)
             years[year]=rows
