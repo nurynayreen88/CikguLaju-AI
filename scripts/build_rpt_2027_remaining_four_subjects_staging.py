@@ -18,6 +18,7 @@ from pathlib import Path
 
 from rpt_2027.common.calendar_week_mapping_staging import load_calendar_weeks, matching_master_weeks
 from rpt_2027.common.format_2026_layout_preview import build_preview, validate_rows
+from rpt_2027.common.music_dskp_full_statement_staging import music_full_standard_display
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "staging/rpt_2027_seragam_2026/baki_4_subjek_DRAF"
@@ -208,6 +209,7 @@ def music_records(year):
         sp=field(r,"SP DSKP","SP","Kod SP")
         if not sp.strip():
             raise ValueError("Music source SP blank")
+        official=music_full_standard_display(year,sp)
         unit=field(r,"Unit","Unit/Tajuk").strip()
         status=field(r,"Semakan","Status tambahan","Status Semakan")
         book=field(r,"BT m/s","RPT halaman BT (belum sah)","Buku Teks m/s")
@@ -215,11 +217,13 @@ def music_records(year):
         output.append(dict(
             id=f"{n:03d}",week=matches[0],unit="Unit/Tajuk: "+unit,
             topic="PdP Seni Muzik "+f"{n:03d}",
-            sk="Kod SK belum dibekalkan dalam CSV",
-            sp=sp.replace(";", " / "),
-            sp_display=sp.replace(";", " / ")+" — Pernyataan penuh SP belum dipadankan",
+            sk=official["sk"],sk_display=official["sk_display"],
+            sp=official["sp"],sp_display=official["sp_display"],
             note=("BT m/s: "+book+" (draf). " +
-                  ("Audio: "+audio+". " if audio else "")+status)[:440],
+                  ("Audio: "+audio+". " if audio else "")+status+
+                  (" | "+official["source_note"] if official["source_note"] else ""))[:660],
+            source_rpt_sp_codes=sp,
+            dskp_text_source="KPM_MUSIC_DSKP_PDF_PRINTED_SK_SP_STAGING_ONLY",
             **candidate
         ))
     validate_rows("muzik",year,output)
