@@ -244,8 +244,7 @@ def build_all(destination=OUT):
             # For dense BM and Jawi PI, repeat the week label on a new sub-group
             # rather than hiding/losing PdP rows across a page break.
             build_preview(sub,year,rows,file,
-                          max_span_rows=(2 if sub=="bahasa_melayu" else
-                                         1 if sub=="pendidikan_islam" else None))
+                          max_span_rows=(2 if sub in ("bahasa_melayu","pendidikan_islam") else None))
             results.append((sub,year,len(rows),str(file)))
     if len(results)!=20:
         raise ValueError("Incomplete 20 PDF RPT rendering")
