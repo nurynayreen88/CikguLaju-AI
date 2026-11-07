@@ -25,6 +25,11 @@ SOURCE=ROOT/"audits/sains_y2_unit3_unmapped_sp_semantic_20261107.json"
 INVENTORY=ROOT/"audits/sains_dskp_t2_t5_sp_token_inventory_20261106.json"
 OUT=ROOT/"build/sains_y2_unit3_3_supplementary_sp_pbd_DRAF_20261107"
 
+VERIFIED_SOURCE_PAGES={
+    "3.1.4":{"textbook":[30],"activity_book":[17,18]},
+    "3.1.5":{"textbook":[30,32],"activity_book":[18,19]},
+    "3.1.6":{"textbook":[33],"activity_book":[20]},
+}
 TASKS={
  "3.1.4":{
   "title":"Pewarisan Ciri — Memerihalkan Pemerhatian",
@@ -68,10 +73,22 @@ def load_semantics():
         or codes.intersection(BANK)
         or len(BANK)!=51):
         raise ValueError("Unverified source Year2 Unit3 SP gap; refuse generation")
+    if (doc.get("booktext_source",{}).get("original_pdf_sha256")
+         !="cf2e00ba3fc77290dd4298d563faf7e0b352343301120ecf962b735f342d366b"
+        or doc.get("activitybook_source",{}).get("original_pdf_sha256")
+         !="865265a5e1b7c8e32e93decfd0f72633e6f6bbeecd9208416f3ef5cfddc58135"):
+        raise ValueError("Original textbook/activity-book source version unknown")
     for rec in doc["missing_content_sp"]:
-        if (rec["scheduled_pdp"] is not None or rec["sk"]!="3.1"
-            or rec["staging_action"]!="SUPPLEMENTARY_ORIGINAL_PBD_NOT_AN_OFFICIAL_NEW_PDP"):
-            raise ValueError("Unapproved fictitious source/PdP for "+rec["sp"])
+        pages=VERIFIED_SOURCE_PAGES.get(rec["sp"])
+        if (not pages or rec["scheduled_pdp"] is not None or rec["sk"]!="3.1"
+            or rec["staging_action"]!="SUPPLEMENTARY_ORIGINAL_PBD_NOT_AN_OFFICIAL_NEW_PDP"
+            or rec.get("verified_textbook_printed_pages")!=pages["textbook"]
+            or rec.get("verified_activity_book_printed_pages")!=pages["activity_book"]
+            or rec.get("original_book_sp_labels_match") is not True
+            or rec.get("pedagogical_approved") is not False
+            or len(rec.get("activity_book_title_by_page",[]))!=len(pages["activity_book"])
+            or not rec.get("pedagogical_privacy_adaptation")):
+            raise ValueError("Unapproved/unverified original book context for "+rec["sp"])
     conflicts={x["sp"]:x for x in doc["source_conflicts"]}
     if set(conflicts)!={"3.1.3","10.1.6"}:
         raise ValueError("Official source conflicts must stay visible")
@@ -110,6 +127,11 @@ def make_doc(sp,official):
     rr=p.add_run(task["title"]);rr.bold=True;rr.font.size=Pt(11)
     p=doc.add_paragraph()
     rr=p.add_run("Penyataan SP DSKP asal: ");rr.bold=True;p.add_run(official["official_dskp_text"])
+    p=doc.add_paragraph()
+    rr=p.add_run("Rujukan buku asal: ");rr.bold=True
+    p.add_run("Buku Teks m/s "+", ".join(map(str,official["verified_textbook_printed_pages"]))+
+              "; Buku Aktiviti m/s "+", ".join(map(str,official["verified_activity_book_printed_pages"]))+
+              " (label SP diperiksa; jawapan PBD CikguLaju berasingan, belum lulus panitia).")
     p=doc.add_paragraph()
     rr=p.add_run("Situasi daripada kad guru: ");rr.bold=True;p.add_run(task["setup"])
     for i in (1,2,3):
@@ -163,12 +185,16 @@ def build():
             raise RuntimeError("Supplement is not PDF A4 "+sp)
         text=page.extract_text()
         for phrase in (sp,"BUKAN PDP BAHARU","BUKAN BUKU AKTIVITI KPM",
+                       "Buku Teks m/s","Buku Aktiviti m/s",
                        "Aktiviti 1","Aktiviti 2","Aktiviti 3","DRAF/HOLD"):
             if phrase not in text:raise RuntimeError(f"PDF missing {phrase} at {sp}")
         manifest.append({
             "subject":"Sains","year":2,"sp":sp,"source_sp_text":sem[sp]["official_dskp_text"],
             "official_pdp_code":"","lesson_assignment":"UNSCHEDULED_NEEDS_PANITIA",
             "word_file":word.name,"pdf_file":pdf.name,
+            "verified_original_textbook_printed_pages":",".join(map(str,sem[sp]["verified_textbook_printed_pages"])),
+            "verified_original_activity_book_printed_pages":",".join(map(str,sem[sp]["verified_activity_book_printed_pages"])),
+            "original_book_pedagogy_teacher_approved":False,
             "print_word_a4_one_page":"PASS","pdf_a4_one_page":"PASS",
             "textbook_page":"UNVERIFIED",
             "original_official_kpm_workbook":False,"teacher_approved":False,
