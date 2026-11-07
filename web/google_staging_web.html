@@ -58,6 +58,11 @@ const boxes={subject:'subjectBox',component:'componentBox',unit:'unitBox',lesson
 const api='/api/google-staging/web/catalog';
 let version=0;
 let generationAllowed=false, currentJob=null;
+const connectionHint='Sambungan ke pelayan staging terganggu. Semak internet dan cuba semula; bukan masalah pilihan Lesson.';
+const safeGet=async(url)=>{
+  try{return await fetch(url,{credentials:'same-origin',cache:'no-store'});}
+  catch(e){throw Error(connectionHint);}
+};
 const selected=()=>({year:get('year').value,subject:get('subject').value,
  component:get('component').value,unit:get('unit').value,lesson:get('lesson').value});
 const clear=(name)=>{
@@ -83,7 +88,7 @@ const fill=(id,items)=>{
  get(boxes[id]).hidden=false;
 };
 const load=async(url)=>{
- const r=await fetch(url,{credentials:'same-origin',cache:'no-store'});
+ const r=await safeGet(url);
  if(r.status===401){location.assign('/google-staging-login');throw Error('Sesi tamat');}
  if(!r.ok)throw Error('Sumber kurikulum belum tersedia');
  const data=await r.json();
@@ -134,7 +139,7 @@ get('show').addEventListener('click',async()=>{
  if(!d.year||!d.subject||!d.unit||!d.lesson)return;
  try{
   const url='/api/google-staging/web/materials?'+new URLSearchParams(d);
-  const r=await fetch(url,{credentials:'same-origin',cache:'no-store'});
+  const r=await safeGet(url);
   if(r.status===401){location.assign('/google-staging-login');return;}
   if(!r.ok)throw Error('Bahan belum boleh dipaparkan');
   const result=await r.json();
@@ -161,16 +166,41 @@ const makeBody=()=>{
        time:start+' - '+end,students:String(n)}};
 };
 const post=async(path,payload)=>{
- const response=await fetch(path,{method:'POST',credentials:'same-origin',
-   cache:'no-store',headers:{'Content-Type':'application/json'},
-   body:JSON.stringify(payload)});
+ let response, data;
+ const generating=path.endsWith('/generate');
+ try{
+   response=await fetch(path,{method:'POST',credentials:'same-origin',
+     cache:'no-store',headers:{'Content-Type':'application/json'},
+     body:JSON.stringify(payload)});
+ }catch(error){
+   const e=new Error(generating?
+     'Sambungan terputus semasa menjana RPH. Status akan diperiksa tanpa membuat janaan baharu.':
+     'Sambungan terputus sebelum tiket janaan diterima. Tiada kredit ditolak pada peringkat ini.');
+   e.network=true;e.uncertain=generating;throw e;
+ }
  if(response.status===401){location.assign('/google-staging-login');throw Error('Sesi tamat.');}
- const data=await response.json();
+ try{data=await response.json();}
+ catch(error){
+   const e=new Error('Pelayan tidak memulangkan keputusan yang lengkap. Semak status janaan dahulu.');
+   e.uncertain=generating;e.network=true;throw e;
+ }
  if(!response.ok){
    const e=new Error(data.error||'Penjanaan belum boleh disahkan');
    e.jobId=data.job_id;e.uncertain=!!data.outcome_unconfirmed;throw e;
  }
  return data;
+};
+const recoverReadyJob=async(jobId)=>{
+ if(!/^[0-9a-f-]{36}$/.test(jobId))return false;
+ try{
+   const r=await safeGet('/api/google-staging/web/rph/jobs/'+jobId+'/status');
+   if(r.status===401){location.assign('/google-staging-login');return false;}
+   if(!r.ok)return false;
+   const found=await r.json();
+   if(found.status!=='ready'||found.download_ready!==true)return false;
+   showDownloads({status:'ready',staging_only:true,downloads:found.downloads});
+   return true;
+ }catch(error){return false;}
 };
 const showDownloads=data=>{
  if(data.status!=='ready'||data.staging_only!==true||
@@ -201,22 +231,23 @@ get('generate').addEventListener('click',async()=>{
      const issued=await post('/api/google-staging/web/rph/issue',payload);
      if(issued.staging_only!==true||issued.status!=='prepared'||!issued.ticket)
         throw Error('Rekod janaan belum disahkan');
-     currentJob={ticket:issued.ticket,fingerprint};
+     currentJob={ticket:issued.ticket,fingerprint,jobId:issued.job_id};
    }
    get('generateStatus').textContent='Menjana Word dan PDF menggunakan enjin Telegram…';
    const result=await post('/api/google-staging/web/rph/generate',
                           {...payload,ticket:currentJob.ticket});
    showDownloads(result);
  }catch(e){
-   get('generateStatus').textContent=e.uncertain?
-     'Hasil janaan belum pasti. Jangan mulakan janaan baharu; cuba semula dengan pilihan yang sama.':
+   const recovered=e.uncertain&&currentJob?.jobId?
+     await recoverReadyJob(currentJob.jobId):false;
+   if(!recovered)get('generateStatus').textContent=e.uncertain?
+     'Sambungan terputus atau keputusan belum pasti. Jangan mulakan janaan baharu. Tekan Jana Bahan sekali lagi dengan pilihan yang sama untuk menyemak/meneruskan job asal.':
      e.message;
  }finally{button.disabled=false;}
 });
 (async()=>{
  try{
-  const capResponse=await fetch('/api/google-staging/web/rph/capabilities',
-    {credentials:'same-origin',cache:'no-store'});
+  const capResponse=await safeGet('/api/google-staging/web/rph/capabilities');
   if(capResponse.ok){
     const cap=await capResponse.json();
     generationAllowed=cap.google_verified===true&&cap.staging_only===true&&
