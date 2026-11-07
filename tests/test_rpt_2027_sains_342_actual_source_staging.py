@@ -40,7 +40,8 @@ class Science2027PartialRPTQA(unittest.TestCase):
                             for r in all_records))
         source_counts=Counter(r["curriculum_provenance"] for r in all_records)
         self.assertEqual(source_counts["KPM_DSKP_ORIGINAL_PDF_TEXT_SP_COLUMN"],35)
-        self.assertEqual(source_counts["V26_DB_VERIFIED_FLAG_NOT_EXTERNAL_DSKP_SIGNOFF"],307)
+        self.assertEqual(source_counts["V26_DB_VERIFIED_FLAG_NOT_EXTERNAL_DSKP_SIGNOFF"],305)
+        self.assertEqual(source_counts["KPM2021_PUBLISHED_DSKP_EXACT_SP_DISPLAY_ONLY_NOT_ACADEMIC_SIGNOFF"],2)
         for year,rows in self.yearly.items():
             self.assertTrue(all(" — " in r["sk_display"] and " — " in r["sp_display"]
                                 for r in rows))
@@ -74,6 +75,26 @@ class Science2027PartialRPTQA(unittest.TestCase):
                         self.assertFalse(row["academic_release_approved"])
                 else:
                     self.assertIsNone(actual)
+
+    def test_two_year6_official_nervous_system_statement_conflicts_do_not_corrupt_database(self):
+        rows=self.yearly[6]
+        changed=[r for r in rows if r["year6_official_2021_sp_display_reconciled"]]
+        self.assertEqual({r["sp"] for r in changed},{"2.2.2","2.2.3"})
+        by_sp={r["sp"]:r for r in changed}
+        self.assertEqual(by_sp["2.2.2"]["sp_display"],
+                         "2.2.2 — Memerihalkan sistem saraf pusat dan fungsinya.")
+        self.assertEqual(by_sp["2.2.3"]["sp_display"],
+                         "2.2.3 — Menyatakan fungsi sistem saraf periferi.")
+        self.assertIn("fungsi sistem saraf pusat dan sistem saraf periferi",
+                      by_sp["2.2.2"]["year6_legacy_original_sp_text"])
+        self.assertIn("fungsi bahagian utama sistem saraf pusat",
+                      by_sp["2.2.3"]["year6_legacy_original_sp_text"])
+        self.assertTrue(all("AMARAN: Teks SP v26 berbeza" in r["note"] and
+                            r["raw_pdp_title"] and
+                            r["curriculum_text_matched"] is False and
+                            r["academic_release_approved"] is False and
+                            r["year6_official_2021_original_pdf_sha_verified"] is False
+                            for r in changed))
 
     def test_year3_12_display_corrections_preserve_original_title(self):
         rows=self.yearly[3]
