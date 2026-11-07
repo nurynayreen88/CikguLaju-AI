@@ -108,7 +108,7 @@ def get_review_rows():
             "Jumlah disahkan (maks 100)":"",
             "Semakan guru/panitia": "",
             "Tarikh semakan":"",
-            "Keputusan":"HOLD — AKDEMIK BELUM DISAHKAN",
+            "Keputusan":"HOLD — AKADEMIK BELUM DISAHKAN",
             "Aktif di Telegram/Web":False,
         })
     if len(result)!=342 or {str(y):sum(x["Tahun"]==y for x in result) for y in EXPECTED}!={str(y):EXPECTED[y] for y in EXPECTED}:
