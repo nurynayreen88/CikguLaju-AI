@@ -17,6 +17,70 @@ class GoogleAccountUnavailable(RuntimeError):
     pass
 
 
+
+def verified_google_email(auth_user):
+    """Only a confirmed email on the server-fetched Supabase Google user.
+
+    The email is a login identifier, NOT proof of an existing Telegram account
+    or any paid entitlement. Google subject UUID remains the OAuth binding.
+    """
+    import re
+    if not isinstance(auth_user, dict) or not auth_user.get("email_confirmed_at"):
+        raise ValueError("Unverified Google email")
+    providers = auth_user.get("identities")
+    if not isinstance(providers, list) or not any(
+        isinstance(item, dict) and item.get("provider") == "google"
+        for item in providers
+    ):
+        raise ValueError("Google OAuth identity required")
+    email = auth_user.get("email")
+    if not isinstance(email, str) or email != email.strip():
+        raise ValueError("Invalid Google email")
+    email = email.lower()
+    if (len(email) > 254 or not re.fullmatch(
+        r"[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9](?:[a-z0-9-]*[a-z0-9])?(?:\\.[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)+", email
+    )):
+        raise ValueError("Invalid verified login email")
+    return email
+
+
+def save_verified_google_email(config, account_id, email):
+    """Store the verified email on the SAME canonical Google/Telegram account.
+
+    Called only after ensure_google_staging_account, itself bound to a server-
+    verified OAuth subject. A unique index prevents aliasing another account.
+    No Telegram user/entitlement/quota data is modified.
+    """
+    from urllib.parse import urlencode
+    try:
+        canonical = str(uuid.UUID(account_id))
+    except (ValueError, TypeError, AttributeError):
+        raise GoogleAccountUnavailable("Invalid account") from None
+    if canonical != account_id or not isinstance(email, str) or email != email.lower():
+        raise GoogleAccountUnavailable("Unverified login identifier")
+    key = config.get("staging_service_key", "")
+    if not isinstance(key, str) or len(key) < 24:
+        raise GoogleAccountUnavailable("Private account backend unavailable")
+    endpoint = config["supabase_url"].rstrip("/") + "/rest/v1/web_accounts?" + urlencode({
+        "id": "eq." + canonical, "select": "id,google_login_email",
+    })
+    req = Request(endpoint, data=json.dumps({"google_login_email": email}).encode(),
+                  method="PATCH", headers={**staging_service_headers(key),
+                                           "Content-Type": "application/json",
+                                           "Prefer": "return=representation"})
+    try:
+        with urlopen(req, timeout=8) as res:
+            raw = res.read(1025)
+            if res.status != 200 or len(raw) > 1024:
+                raise GoogleAccountUnavailable("Email mapping unavailable")
+        rows = json.loads(raw)
+        if (not isinstance(rows, list) or len(rows) != 1
+                or rows[0].get("id") != canonical
+                or rows[0].get("google_login_email") != email):
+            raise GoogleAccountUnavailable("Email mapping not confirmed")
+    except (HTTPError, URLError, OSError, ValueError, TypeError, KeyError):
+        raise GoogleAccountUnavailable("Verified email mapping unavailable") from None
+
 def ensure_google_staging_account(config, verified_auth_uuid, display_name=None):
     try:
         subject = str(uuid.UUID(verified_auth_uuid))
@@ -69,7 +133,7 @@ def google_staging_account_profile(config, account_id):
     if not isinstance(key, str) or len(key) < 24:
         raise GoogleAccountUnavailable("Private staging account backend unavailable")
     endpoint = config["supabase_url"].rstrip("/") + "/rest/v1/web_accounts?" + urlencode({
-        "select": "id,display_name,google_trial_remaining",
+        "select": "id,display_name,google_trial_remaining,google_login_email",
         "id": "eq." + canonical, "limit": "1",
     })
     req = Request(endpoint, method="GET",
@@ -94,6 +158,7 @@ def google_staging_account_profile(config, account_id):
         return {
             "display_name": name or "Guru CikguLaju",
             "trial_remaining": credits,
+            "login_email": row.get("google_login_email"),
         }
     except (HTTPError, URLError, OSError, KeyError, ValueError, TypeError, AttributeError):
         raise GoogleAccountUnavailable("Staging account profile unavailable") from None
