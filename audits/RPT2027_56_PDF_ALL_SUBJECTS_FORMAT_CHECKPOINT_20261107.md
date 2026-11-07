@@ -1,0 +1,46 @@
+# RPT 2027 — 56 PDF format seragam, checkpoint 7 November 2026
+
+**Status: SIAP PENYELARASAN FORMAT STAGING; BELUM FINAL READY untuk pengguna.** Tiada modifikasi data pengguna, Telegram/Web, DB master, atau `main`; semua hasil ialah ZIP/artifact penjanaan CI dan calon staging PR #441.
+
+## Hasil QA keseluruhan
+
+- **56 kombinasi subjek × Tahun** mempunyai PDF landskap A4 dengan **5 lajur** `MINGGU / TARIKH | UNIT / TAJUK / PDP | SK | SP | CATATAN / BAHAN`; muka depan: slot logo, nama sekolah, nama guru.
+- Jumlah **1,628 halaman PDF** daripada ZIP gabungan lokal diperiksa menggunakan PyMuPDF; 56 nama PDF unik, 12 subjek, tiada fail tiada muka depan atau bukan landskap.
+- Sel minggu berulang ditandakan mengikut sumber tarikh A/B, dengan merge sehingga batas muat halaman; bagi PdP tinggi, label minggu diulang pada kumpulan muka surat seterusnya untuk mengelak kehilangan baris.
+- **21 PDF:** Pendidikan Seni Visual (T2–6), Pendidikan Moral (T2–6), PJPK (T2–6), RBT (T4–6), Sejarah (T4–6). **Tidak** termasuk 3 simulasi RBT sebagai tambahan.
+- **20 PDF:** Bahasa Melayu (T2–6), Pendidikan Islam (T2–6), Bahasa Arab (T2–6), Pendidikan Muzik (T2–6).
+- **5 PDF English:** Tahun 2–6, 160 Lesson/setahun, 800 Lesson; diolah daripada RPT PDF sumber tanpa mengira halaman fizikal sebagai minggu.
+- **5 PDF Matematik:** Tahun 2–6, 117 Lesson/setahun, 585 Lesson; diolah daripada RPT PDF sumber.
+- **5 PDF Sains:** Tahun 2–6, 51 + 45 + 79 + 83 + 84 = **342 PdP berciri identiti tetap** daripada snapshot v25.82; **RPT SEPARA**, bukan sukatan akhir.
+
+## Sains: 342/342 SP dipadankan tanpa rekaan
+
+- **307/342** padanan pernyataan penuh SK/SP daripada jadual `curriculum_standards` DB v26.00 yang telah disahkan.
+- **35/342** SP Tahun 2 (20) dan Tahun 3 (15) tidak disimpan dalam crosswalk v26.00, tetapi wujud pada PDF DSKP rasmi KPM. Semuanya diambil secara baca-sahaja daripada lajur *Standard Pembelajaran* dokumen tersebut dengan nomor halaman PDF dan SHA-256 dokumen.
+- Ledger staging: `rpt_2027/sains/dskp_sains_y2_y3_35_missing_sp_text_20261107_DRAF.json`. Tahun 2 sumber PDF KPM 2016; Tahun 3 PDF KPM 2017. Antara halaman yang turut diperiksa visual: T2 PDF halaman 60 dan 73, T3 PDF halaman 66 dan 75; teks asal tidak dinormalkan secara senyap, termasuk ejaan yang tampak tidak lazim di sumber.
+- Kod SP diluluskan sebagai **padanan teks sumber**, **bukan** kelulusan keseluruhan urutan, aktiviti atau RPH PdP. **Tiada input AI/teks ciptaan** untuk standard yang tidak ditemui.
+- Kalendar Sains ialah **agihan minggu A/B cadangan** berasaskan master 2027, bukan tarikh pengajaran yang diputuskan berdasarkan jadual guru; M01, M06, M44 tidak diperuntukkan dalam simulasi. RPH Sains sebenar mungkin mempunyai lebih banyak PdP daripada 342 rekod checkpoint.
+- Tahun 3 mengandungi 12 calon tajuk paparan dibetulkan daripada ledger DSKP asal; PdP 001–045 asal v25.82 tetap direkod, buku m/s ditanda calon, bukan disahkan visual.
+
+## Penutupan teknikal CI
+
+| Jenis | Bilangan PDF | Ujian | CI |
+|---|---:|---|---|
+| Batch 21 asal | 21 | A4, 5 lajur, muka depan, jadual minggu, kompilasi | [run 42321533184](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42321533184) |
+| BM / PI / Bahasa Arab / Muzik (Amiri + minggu bergabung PI) | 20 | 20 PDF, 40 PNG QA, Jawi/Arab, SP/lesson, landscape | [run 42323245723](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42323245723) |
+| English | 5 | 800 Lesson, PDF A4, SK/SP sumber | [run 42321533173](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42321533173) |
+| Matematik | 5 | 585 Lesson, PDF A4, SK/SP sumber | [run 42321263685](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42321263685) |
+| Sains | 5 | 342 PdP; 342/342 teks SK/SP; sumber KPM 35, 5 PDF dan PNG | [run 42324005525](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42324005525) |
+
+## Baki jurang sebelum RPT boleh ditetapkan READY/LIVE
+
+1. **Sains**: 342 snapshot ialah sebahagian sumber RPH lama, belum sama dengan master rancangan lengkap. Agihan lesson mengikut guru/negeri belum diluluskan. Sahkan susunan 2027 dan PdP sebenar dalam runtime Telegram/Web terlebih dahulu.
+2. **Bahasa Arab dan Muzik**: sebahagian RPT mempunyai kod SK/SP tanpa pernyataan penuh. Audit silang DSKP penuh perlu dilengkapkan.
+3. **Pendidikan Islam**: enam rekod ditahan dalam asal sumber RPH; tiada SK/SP rekaan untuk menggantikannya. Semak Jawi, Quran, masa dan kelengkapan.
+4. **RBT**: 96 PdP Tahun4–6 tidak diberi minggu/tarikh sebenar; 32 slot setahun ialah calon, bukan mingguan yang diluluskan.
+5. **Semua subjek**: perbezaan jadual sekolah mengikut negeri/cuti/gantian, cetakan sumber/BT/BA, ketepatan semua standard, pengesahan RPT 2027 dan ujian penggunaan muat turun Telegram/Web masih memerlukan QA release tersendiri. Jangan salah tafsir lulus PDF sebagai lulus isi akademik.
+6. **KP2027 Tahun 1** dan **semua menengah** tidak termasuk dalam 56 kombinasi ini. Jangan guna RPT KSSR Tahun1 lama untuk kurikulum KP2027.
+
+## Kawalan
+
+**STAGING ONLY.** PR #441 masih DRAF. Jangan merge/deploy, jangan overwrite DB dan jangan silently switch sumber aplikasi. Sumber GitHub asal kekal; ZIP kompilasi ialah hasil semakan sah antara 56 PDF, bukan artifact LIVE.
