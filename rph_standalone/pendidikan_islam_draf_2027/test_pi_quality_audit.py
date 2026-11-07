@@ -34,12 +34,16 @@ class PIQualityAuditTests(unittest.TestCase):
         self.assertEqual(sum(r["domain_counts"].values()), 696)
         self.assertGreater(r["flags"].get("RUJUKAN_HALAMAN_BELUM_DISAHKAN", 0), 0)
 
-    def test_generic_pbd_is_flagged_without_fictitious_quality_score(self):
+    def test_specific_pbd_is_not_confused_with_expert_approval(self):
         r = self.result
-        self.assertEqual(r["generic_pbd_count"], 43)
+        self.assertEqual(r["generic_pbd_count"], 0)
         self.assertEqual(r["generic_pbd_by_year"],
+                         {"2": 0, "3": 0, "4": 0, "5": 0, "6": 0})
+        self.assertEqual(r["refined_pbd_review_count"], 43)
+        self.assertEqual(r["refined_pbd_review_by_year"],
                          {"2": 14, "3": 29, "4": 0, "5": 0, "6": 0})
-        self.assertEqual(r["flags"]["PBD_TIDAK_KHUSUS_KEPADA_SP"], 43)
+        self.assertEqual(r["flags"]["PBD_SP_SASARAN_BELUM_DISAH_PAKAR"], 43)
+        self.assertNotIn("PBD_TIDAK_KHUSUS_KEPADA_SP", r["flags"])
         self.assertIsNone(r["quality_score_percent"])
 
     def test_source_blockers_are_explicit_not_silently_approved(self):
