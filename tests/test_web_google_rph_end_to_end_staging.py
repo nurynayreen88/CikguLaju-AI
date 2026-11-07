@@ -15,7 +15,8 @@ from web.google_rph_generation_staging_routes import bp as generation_bp
 from web.google_rph_bundle_delivery import bp as delivery_bp
 from web.google_native_rph_bundle import NativeGoogleRPHNotReady
 from web.google_rph_bundle_quota import rendered_bundle_sha256
-from web.provider_neutral_web_identity import from_verified_google_account
+from web.provider_neutral_web_identity import (
+    from_verified_google_account, from_verified_linked_telegram_account)
 
 
 OWNER = "1a267083-8511-4587-a585-857fe35f4a14"
@@ -52,6 +53,7 @@ class GoogleRPHHTTPFlowTests(unittest.TestCase):
         app.register_blueprint(delivery_bp)
         self.client = app.test_client()
         self.current = OWNER
+        self.current_provider = "google"
         self.credits = 10
         self.jobs = {}
         self.files = {}
@@ -86,9 +88,12 @@ class GoogleRPHHTTPFlowTests(unittest.TestCase):
             self.addCleanup(handle.stop)
 
     def actor(self):
-        return from_verified_google_account(
-            self.current, {"account_id": self.current,
-                           "trial_remaining": self.credits}), None
+        profile = {"account_id": self.current,
+                   "trial_remaining": self.credits}
+        if self.current_provider == "telegram":
+            return from_verified_linked_telegram_account(
+                123456789, self.current, profile), None
+        return from_verified_google_account(self.current, profile), None
 
     def profile(self, cfg, account_id):
         self.assertEqual(cfg, CFG)
@@ -184,6 +189,42 @@ class GoogleRPHHTTPFlowTests(unittest.TestCase):
         self.assertEqual(self.client.get(
             f"/api/google-staging/web/rph/jobs/{job_id}/download/pdf").status_code, 404)
         self.assertEqual(self.debits, 1)
+
+    def test_one_canonical_job_and_credit_across_google_and_linked_telegram(self):
+        # Start under Telegram, complete one native Word/PDF bundle, then
+        # reopen/download under Google without another debit.
+        self.current_provider = "telegram"
+        issued = self.issue()
+        result = self.generate(issued["ticket"])
+        self.assertEqual(result.status_code, 200, result.json)
+        self.assertEqual(result.json["remaining"], 9)
+        self.assertEqual(self.debits, 1)
+        self.assertEqual(self.native_calls, 1)
+        self.assertEqual(self.client.get(
+            f"/api/google-staging/web/rph/jobs/{issued['job_id']}/download/pdf"
+        ).status_code, 200)
+
+        self.current_provider = "google"
+        reused = self.generate(issued["ticket"])
+        self.assertEqual(reused.status_code, 200, reused.json)
+        self.assertTrue(reused.json["already_ready"])
+        self.assertEqual(self.debits, 1)
+        self.assertEqual(self.native_calls, 1)
+        recovered = self.client.get(
+            f"/api/google-staging/web/rph/jobs/{issued['job_id']}/download/word")
+        self.assertEqual(recovered.status_code, 200)
+        self.assertEqual(recovered.data, WORD)
+        self.assertEqual(self.credits, 9)
+
+        # Neither provider may read another canonical Web account's files.
+        self.current = OTHER
+        self.assertEqual(self.client.get(
+            f"/api/google-staging/web/rph/jobs/{issued['job_id']}/download/pdf"
+        ).status_code, 404)
+        self.current_provider = "telegram"
+        self.assertEqual(self.client.get(
+            f"/api/google-staging/web/rph/jobs/{issued['job_id']}/download/pdf"
+        ).status_code, 404)
 
     def test_native_failure_never_charges_or_releases_prepared_file(self):
         issued = self.issue()
