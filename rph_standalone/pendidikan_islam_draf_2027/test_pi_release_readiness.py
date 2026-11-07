@@ -54,6 +54,8 @@ class PIReleaseReadinessTests(unittest.TestCase):
         self.assertEqual(r["year6_l060_optional_amali_candidate_created_held"],1)
         self.assertIs(r["year6_l060_original_catalog_still_held"],True)
         self.assertEqual(r["year6_l060_official_separate_lesson_claims"],0)
+        self.assertEqual(r["year2_l035_ayah224_overlap_inherited_from_2026_rpt"],1)
+        self.assertEqual(r["year2_l035_ayah224_overlap_academically_resolved"],0)
         self.assertEqual(r["year3_tasmi_verse_lessons_not_given_fake_sp"], 37)
         self.assertEqual(r["teacher_approved_page_specific_exercises"], 0)
         self.assertEqual(r["book_activity_page_candidates"], 174)
