@@ -130,8 +130,10 @@ def pi_records(year):
             if week not in master["A"] or week not in master["B"]:
                 raise ValueError("Recovered PI source week outside verified 2027 master")
             if recovered["kind"]=="KHATAM_TASMI_OPTIONAL_NO_OFFICIAL_SK_SP_IN_SOURCE":
-                sk="REKOD DITAHAN — TIADA KOD SK DALAM SUMBER TASMI'"
-                sp="REKOD DITAHAN — TIADA KOD SP DALAM SUMBER TASMI'"
+                # Tasmi is an elective, source-backed enrichment programme,
+                # NOT a false new official DSKP SK/SP standard.
+                sk="PROGRAM TASMI PILIHAN GURU — BUKAN KOD SK RASMI"
+                sp="BACAAN TASMI / PBD — TIADA KOD SP RASMI DALAM RPT SUMBER"
                 topic="Tasmi' / Khatam cadangan: "+recovered["focus"]
                 note=("REKOD DITAHAN: RPH V5 asal tidak lengkap. "
                       "Rujukan RPT sumber "+recovered["source_lesson"]+" (hanya cadangan "
@@ -139,19 +141,22 @@ def pi_records(year):
                       "Bacaan: "+recovered["focus"]+". "
                       "Minggu sumber calon, bukan jadual kelas yang diluluskan.")
             elif recovered["kind"]=="IBADAH_2026_RPT_STANDARD_CONFLICT_HOLD":
-                sk="REKOD DITAHAN — KONFLIK SUMBER KOD SK 4.2"
-                sp="REKOD DITAHAN — SP 4.2.3–4.2.5 BERCANGGAH, SEMAK DSKP"
-                topic="KONFLIK SUMBER: "+recovered["focus"]
+                sk="4.2 — Solat Ketika Sakit (DSKP Tahun 6)"
+                sp=("4.2.3 / 4.2.4 / 4.2.5 — Pengukuhan dan pentaksiran "
+                    "amali Solat Ketika Sakit; ulang kaji SP L059")
+                topic="KONFLIK SUMBER DIBETULKAN DALAM CADANGAN: Solat Ketika Sakit — pengukuhan/PBD"
                 correction=recovered.get("conflict_resolution_evidence") or {}
                 if (correction.get("year6_expected_topic")!="Solat Ketika Sakit" or
                     correction.get("year5_topic_used_by_errant_rpt")!="Solat Berjemaah" or
                     correction.get("candidate_correction_approval") is not False):
                     raise ValueError("Year6 L060 cross-year collision evidence missing")
-                note=("REKOD DITAHAN: sumber RPT "+recovered["source_lesson"]+
-                      " salah padan topik Tahun 5 Solat Berjemaah kepada SK 4.2 Tahun 6. "
-                      "SK 4.2 Tahun 6 bersumberkan Solat Ketika Sakit. "
-                      "RPH L059 juga meliputi SP 4.2.3–4.2.5. "
-                      "JANGAN GUNA sehingga pertindihan PdP diselesaikan; minggu calon sahaja.")
+                note=("REKOD DITAHAN / CADANGAN DIPERBETULKAN: sumber RPT "+
+                      recovered["source_lesson"]+
+                      " tersalin Solat Berjemaah Tahun 5. DSKP Tahun 6 SK4.2 "
+                      "ialah Solat Ketika Sakit. L060 menggunakan pengukuhan "
+                      "situasi berbeza serta rubrik PBD; L059 telah mengajar "
+                      "SP4.2.3–5. RPH V5 masih ditahan, guru tidak menerima "
+                      "bahan ini sehingga audit penerbitan siap. Minggu cadangan.")
             else:
                 raise ValueError("Unknown PI held recovery kind")
         else:
