@@ -59,9 +59,13 @@ const api='/api/google-staging/web/catalog';
 let version=0;
 let generationAllowed=false, currentJob=null;
 const connectionHint='Sambungan ke pelayan staging terganggu. Semak internet dan cuba semula; bukan masalah pilihan Lesson.';
+// Retry only read-only GET after transient Render/network interruptions.
+// POST /issue and /generate must never be automatically repeated.
 const safeGet=async(url)=>{
-  try{return await fetch(url,{credentials:'same-origin',cache:'no-store'});}
-  catch(e){throw Error(connectionHint);}
+  for(let attempt=0;attempt<2;attempt++){
+    try{return await fetch(url,{credentials:'same-origin',cache:'no-store'});}
+    catch(e){if(attempt===1)throw Error(connectionHint);}
+  }
 };
 const selected=()=>({year:get('year').value,subject:get('subject').value,
  component:get('component').value,unit:get('unit').value,lesson:get('lesson').value});
@@ -252,10 +256,15 @@ get('generate').addEventListener('click',async()=>{
     const cap=await capResponse.json();
     generationAllowed=cap.google_verified===true&&cap.staging_only===true&&
                       cap.generation_enabled===true;
+    // Capabilities may arrive after the user has already opened materials.
+    get('generationControls').hidden=get('results').hidden||!generationAllowed;
     if(!generationAllowed)get('stagingNotice').textContent=
       'Mod ujian staging: Pilihan Lesson tersedia, tetapi janaan RPH hanya dibuka kepada akaun penguji yang diluluskan.';
-  }
- }catch(e){generationAllowed=false;}
+  }else if(capResponse.status===401){location.assign('/google-staging-login');}
+ }catch(e){
+   generationAllowed=false;
+   get('stagingNotice').textContent='Sambungan semakan janaan terganggu. Muat semula halaman untuk cuba lagi. Semakan ini tidak memotong kredit.';
+ }
 })();
 (async()=>{
  try{
