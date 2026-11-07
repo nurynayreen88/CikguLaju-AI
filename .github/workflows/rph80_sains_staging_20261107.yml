@@ -10,6 +10,8 @@ on:
       - "tools/render_sains_y3_45_review_pack_20261106.py"
       - "tools/sains_buku_aktiviti_mapping_20261107.py"
       - "audits/sains_y2_y3_buku_aktiviti_mapping_20261107.json"
+      - "audits/sains_y2_y3_ba_page_content_safety_review_20261107.json"
+      - "tools/check_sains_ba_96_document_content_20261107.py"
       - "tests/test_sains_buku_aktiviti_y2_y3_20261107.py"
       - "web/sains_buku_aktiviti_resources_20261107.py"
       - "tests/test_sains_buku_aktiviti_resources_20261107.py"
@@ -77,6 +79,8 @@ jobs:
         run: python -m tools.render_sains_y3_45_review_pack_20261106
       - name: Check printed one-page A4 for all 45 Year3 Word drafts
         run: python -m tools.check_sains_y3_word_pages_20261106
+      - name: Verify 96 printed workbook titles, pages, PBD warnings and safety notes in actual Word/PDF
+        run: python -m tools.check_sains_ba_96_document_content_20261107
       - name: Test 79 Science Year4 distinct DSKP-linked activity drafts
         run: python -m unittest discover -s tests -p 'test_sains_y4_79_bank_quality_20261107.py' -v
       - name: Render 79 Science Year4 standalone DRAF Word PDF Markdown
@@ -115,6 +119,8 @@ jobs:
             build/sains_y3_45_rph_REVIEW_ONLY_20261106/*.pdf
             build/sains_y3_45_rph_REVIEW_ONLY_20261106/*.csv
             build/sains_y3_45_rph_REVIEW_ONLY_20261106/*.txt
+            build/sains_ba_96_actual_document_qa_20261107/*.csv
+            build/sains_ba_96_actual_document_qa_20261107/*.json
             build/sains_y4_79_rph_DRAF_20261107/*.md
             build/sains_y4_79_rph_DRAF_20261107/*.docx
             build/sains_y4_79_rph_DRAF_20261107/*.pdf
