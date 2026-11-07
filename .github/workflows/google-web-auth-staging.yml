@@ -106,7 +106,7 @@ jobs:
   staging-google-http-smoke:
     # Only against the explicitly isolated Render staging service after code
     # arrives on its staging branch; no test user or secret is required.
-    if: github.event_name == 'push' && github.ref == 'refs/heads/feature/web-google-auth-staging-445'
+    if: (github.event_name == 'push' && github.ref == 'refs/heads/feature/web-google-auth-staging-445') || (github.event_name == 'pull_request' && github.head_ref == 'feature/web-google-auth-staging-445')
     runs-on: ubuntu-latest
     permissions:
       contents: read
