@@ -1,0 +1,121 @@
+"""Workbook integration guard: 96 original Sains Year2/Year3 PdP mappings.
+
+This is printed TOC evidence only. Do not claim teacher-verified academic
+exercise-to-SP match or a production runtime deployment.
+"""
+import unittest
+from tools.sains_buku_aktiviti_mapping_20261107 import (
+    activity_for, activity_note, load_activity_books, EXPECTED, is_direct_sp_match
+)
+from tools.render_sains_y2_51_rph_draf_20261107 import get_y2_records, markdown
+from web.sains_y3_rph_activity_preview_20261106 import adapt_rows, source_ledgers, checked_book_pages
+
+class TestSainsYear2Year3ActivityBook(unittest.TestCase):
+    def test_original_scanned_workbooks_96_exact_pages(self):
+        by_year=load_activity_books()
+        self.assertEqual(len(by_year[2]),51)
+        self.assertEqual(len(by_year[3]),45)
+        for year,count in EXPECTED.items():
+            self.assertEqual({x["workbook_pdf_page"]-x["workbook_printed_page"]
+                              for x in by_year[year].values()},{4 if year==2 else 5})
+            self.assertTrue(all(x["activity_title"] for x in by_year[year].values()))
+            self.assertTrue(all(x["academic_approval"] is False for x in by_year[year].values()))
+        self.assertEqual(sum(is_direct_sp_match(r) for entries in by_year.values() for r in entries.values()),94)
+        self.assertEqual(sum(not is_direct_sp_match(r) for entries in by_year.values() for r in entries.values()),2)
+
+    def test_y2_corrected_growth_no_inheritance_mismatch(self):
+        x=activity_for(2,"SCI-Y2-PDP-003","3.1.3")
+        self.assertEqual(x["workbook_printed_page"],16)
+        self.assertIn("Berat",x["activity_title"])
+        self.assertEqual(x["workbook_printed_sp_codes"],["3.1.3"])
+        self.assertTrue(is_direct_sp_match(x))
+        self.assertFalse(is_direct_sp_match(activity_for(2,"SCI-Y2-PDP-010","4.1.7")))
+        self.assertFalse(is_direct_sp_match(activity_for(2,"SCI-Y2-PDP-022","6.1.6")))
+        self.assertIn("JANGAN",activity_note(activity_for(2,"SCI-Y2-PDP-010","4.1.7"),2))
+        self.assertEqual(activity_for(2,"SCI-Y2-PDP-051","10.1.6")["workbook_printed_page"],84)
+        with self.assertRaises(ValueError):
+            activity_for(2,"SCI-Y2-PDP-003","3.1.2")
+
+    def test_remaps_from_inspected_full_exercise_pages(self):
+        self.assertEqual(activity_for(2,"SCI-Y2-PDP-016","5.1.6")["workbook_printed_page"],36)
+        self.assertEqual(activity_for(2,"SCI-Y2-PDP-029","7.1.7")["workbook_printed_page"],54)
+        self.assertEqual(activity_for(2,"SCI-Y2-PDP-034","8.1.5")["workbook_printed_page"],62)
+        self.assertEqual(activity_for(2,"SCI-Y2-PDP-042","9.2.3")["workbook_printed_page"],73)
+        self.assertEqual(activity_for(2,"SCI-Y2-PDP-045","9.2.6")["workbook_printed_page"],72)
+        self.assertEqual(activity_for(3,"SCI-Y3-PDP-008","3.2.3")["workbook_printed_page"],30)
+        self.assertEqual(activity_for(3,"SCI-Y3-PDP-027","6.1.7")["workbook_printed_page"],59)
+
+    def test_year3_original_kpm_textbook_45_source_sps_and_three_extra_pages(self):
+        rows=checked_book_pages()
+        self.assertEqual(len(rows),45)
+        self.assertEqual(len({p for x in rows.values() for p in x["printed_page_candidates"]}),54)
+        self.assertTrue(all(x["at_least_one_cited_page_has_matching_sp_code"]
+                            and x["teacher_pedagogical_approved"] is False for x in rows.values()))
+        self.assertEqual(rows["SCI-Y3-PDP-001"]["printed_page_candidates"],[30])
+        self.assertEqual(rows["SCI-Y3-PDP-044"]["printed_page_candidates"],[133])
+        self.assertEqual(rows["SCI-Y3-PDP-045"]["printed_page_candidates"],[135])
+
+    def test_year3_science_measurement_and_system_suria(self):
+        self.assertEqual(activity_for(3,"SCI-Y3-PDP-026","6.1.6")["workbook_printed_page"],61)
+        self.assertEqual(activity_for(3,"SCI-Y3-PDP-037","9.1.2")["workbook_printed_page"],80)
+        self.assertEqual(activity_for(3,"SCI-Y3-PDP-044","10.1.4")["workbook_printed_page"],90)
+
+    def test_all_96_page_content_reviews_and_safe_substitutes(self):
+        rows=load_activity_books()
+        evidence=[(year,item) for year,rr in rows.items() for item in rr.values()
+                  if item["lesson_guidance"]]
+        self.assertEqual(len(evidence),96)
+        self.assertEqual(sum(x["page_content_review"]=="DIRECT_EXERCISE_CONTENT_REVIEW"
+                             for _,x in evidence),85)
+        self.assertTrue(all(x["page_content_evidence"] for _,x in evidence))
+        self.assertTrue(all(x["page_content_teacher_signoff"]=="MISSING" for _,x in evidence))
+        self.assertEqual(len({(year,x["sp"]) for year,x in evidence}),96)
+        self.assertEqual(sum(x["page_content_review"]=="RELATED_ONLY_ORIGINAL_PBD"
+                             for _,x in evidence),2)
+        grow=activity_for(2,"SCI-Y2-PDP-003","3.1.3")
+        self.assertIn("data tinggi/berat rekaan",grow["lesson_guidance"])
+        hot=activity_for(2,"SCI-Y2-PDP-034","8.1.5")
+        self.assertIn("jangan sediakan air panas",hot["lesson_guidance"].lower())
+        self.assertIn("kit",activity_for(2,"SCI-Y2-PDP-029","7.1.7")["lesson_guidance"])
+        self.assertIn("meniskus",activity_for(3,"SCI-Y3-PDP-027","6.1.7")["lesson_guidance"])
+        self.assertIn("jangan rasa",activity_for(3,"SCI-Y3-PDP-033","8.1.2")["lesson_guidance"].lower())
+        self.assertIn("pisau",activity_for(3,"SCI-Y3-PDP-019","5.1.3")["page_content_evidence"].lower())
+        self.assertIn("guru",activity_for(2,"SCI-Y2-PDP-036","9.1.2")["lesson_guidance"].lower())
+        for sp,num in [("4.1.7",10),("6.1.6",22)]:
+            unmatched=activity_for(2,f"SCI-Y2-PDP-{num:03d}",sp)
+            self.assertFalse(is_direct_sp_match(unmatched))
+            self.assertIn("PBD",unmatched["lesson_guidance"])
+            self.assertIn("rujukan berkaitan sahaja",activity_note(unmatched,2))
+    def test_51_y2_existing_rph_kept_and_workbook_added(self):
+        entries=get_y2_records()
+        self.assertEqual(len(entries),51)
+        for item in entries:
+            self.assertEqual(item["activity_book"]["sp"],item["sp"])
+            self.assertEqual(item["activity_book"]["pdp_code"],item["pdp_code"])
+            self.assertIn("Buku Aktiviti:",markdown(item))
+            self.assertIn("Guru",markdown(item))
+            self.assertIn("**Aktiviti 1:",markdown(item))
+            self.assertIn("**Aktiviti 2:",markdown(item))
+            self.assertIn("drive.google.com",markdown(item))
+
+    def test_45_y3_adapter_preserves_original_and_adds_workbook_pbd(self):
+        pages,_=source_ledgers()
+        self.assertEqual(len(pages),45)
+        sample=next(v for v in pages.values() if v["sp_code"]=="6.1.6")
+        state={"subject":"Sains","year":"Tahun 3","year_label":"Tahun 3",
+               "pdp_sequence_code":sample["pdp_code"],"sp_code":sample["sp_code"],
+               "sk_code":sample["sp_code"].rsplit(".",1)[0]}
+        original={"SOURCE":"IMMUTABLE"}
+        out=adapt_rows(state,original)
+        self.assertIsNot(out,original)
+        self.assertEqual(original,{"SOURCE":"IMMUTABLE"})
+        self.assertIn("Buku Aktiviti Sains Tahun 3",out["BUKU AKTIVITI / LATIHAN"])
+        self.assertIn("m/s bercetak 61",out["BUKU AKTIVITI / LATIHAN"])
+        self.assertIn("Buku Aktiviti",out["PENTAKSIRAN"])
+        self.assertIn("BAHAN BANTU MENGAJAR",out)
+        self.assertIn("drive.google.com",out["BUKU AKTIVITI URL"])
+        state["sp_code"]="6.1.5"
+        self.assertIs(adapt_rows(state,original),original)
+
+if __name__=="__main__":
+    unittest.main()

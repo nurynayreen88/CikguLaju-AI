@@ -8,10 +8,12 @@ from __future__ import annotations
 import json
 import re
 from pathlib import Path
+from tools.sains_buku_aktiviti_mapping_20261107 import activity_for, is_direct_sp_match, activity_short_note
 
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "audits/sains_y3_v2582_45_textbook_page_candidates_20261106.json"
 FIXES = ROOT / "audits/sains_y3_v2582_12_dskp_title_corrections_20261106.json"
+TEXTBOOK_VISUAL = ROOT / "audits/sains_y3_45_textbook_original_page_visual_20261107.json"
 
 # (Hook, activity 1 teacher action, pupil action, activity 2 teacher action,
 # pupil action, observable PBD, specific material)
@@ -220,12 +222,12 @@ BANK = {
 "Silinder penyukat, air dan kad meniskus"),
 "6.1.6":(
 "Batu kecil dan silinder penyukat",
-"menunjukkan kaedah sesaran air serta membaca isi padu awal",
-"menenggelamkan pepejal selamat dan mencatat bacaan akhir",
+"menunjukkan kaedah sesaran air; memilih bekas penyukat yang stabil dan membaca isi padu awal pada aras mata",
+"memasukkan batu kecil secara perlahan dengan bimbingan guru tanpa menjatuhkannya ke dasar bekas; mencatat bacaan akhir",
 "membimbing pengiraan beza dua bacaan",
 "mengira isi padu pepejal tidak sekata dalam mL/cm³",
 "Beza bacaan awal–akhir dan unit yang betul",
-"Silinder penyukat, air dan batu kecil"),
+"Bekas penyukat plastik bersenggat, air dan batu kecil yang bersih"),
 "6.1.7":(
 "Rekod luas dan isi padu daripada aktiviti terdahulu",
 "mengadakan semakan cara mengambil bacaan ukuran",
@@ -252,8 +254,8 @@ BANK = {
 "Bekas air, bahan selamat dan gambar perbandingan"),
 "7.1.3":(
 "Telur dalam air biasa dan air garam",
-"menyediakan dua bekas berlabel air dan air garam",
-"membanding kedudukan telur dalam dua bekas",
+"menyediakan dua bekas berlabel air dan air garam, mengingatkan murid supaya tidak merasa atau meminum bahan ujikaji",
+"membanding kedudukan telur dalam dua bekas tanpa merasa air dan merekod ramalan serta pemerhatian",
 "membimbing rumusan kaedah meningkatkan ketumpatan air",
 "menyatakan bahan yang ditambah serta dapatan ujian",
 "Kesimpulan satu kaedah peningkatan ketumpatan air",
@@ -309,9 +311,9 @@ BANK = {
 "9.1.2":(
 "Jadual planet mengikut kedudukan daripada Matahari",
 "menyediakan maklumat suhu planet secara perbandingan",
-"mengenal pola umum suhu mengikut kedudukan dengan menyebut pengecualian",
+"mengenal pola umum suhu planet daripada jadual dan menekankan bahawa Zuhrah lebih panas daripada Utarid walaupun lebih jauh daripada Matahari",
 "meminta murid melakar carta suhu menggunakan data diberi",
-"mengitlak pola suhu dan menghuraikan satu pengecualian",
+"merumus pola daripada jadual dan membuktikan pengecualian Zuhrah–Utarid menggunakan nilai suhu yang diberi",
 "Rumusan berasaskan carta dan data suhu planet",
 "Kad suhu planet dan carta data berlabel"),
 "9.1.3":(
@@ -364,11 +366,11 @@ BANK = {
 "Gambar kren, tiang bendera dan model takal"),
 "10.1.4":(
 "Lakaran model takal ringkas",
-"membimbing pelan model menggunakan roda, tali dan beban kecil",
-"mereka bentuk dan membina model takal yang berfungsi secara berkumpulan",
+"membimbing pelan model menggunakan roda, tali dan beban kecil; memeriksa ikatan tali dan memastikan murid tidak berada di bawah beban",
+"mereka bentuk dan membina model takal secara berkumpulan dengan beban kecil pada aras selamat serta menunjukkan cara menguji tanpa beban di atas kepala",
 "meminta kumpulan menguji model dengan beban ringan",
 "merekod pembaikan terhadap model berdasarkan ujian",
-"Model takal berfungsi dan rekod satu pembaikan",
+"Model takal berfungsi, kawalan keselamatan beban dan rekod satu pembaikan",
 "Roda kecil, tali, pemegang, beban ringan dan kad ujian"),
 "10.1.5":(
 "Gambar model takal yang telah dibina",
@@ -440,6 +442,38 @@ def source_ledgers():
         raise RuntimeError("Missing or extra SP activity")
     return bycode,fixes
 
+def checked_book_pages():
+    """45 page/code source matches on original Year3 book; not academic signoff."""
+    src,_=source_ledgers()
+    doc=json.loads(TEXTBOOK_VISUAL.read_text(encoding="utf-8"))
+    if (doc.get("source_sha256")!="5c5c95276915abfc52dab3515040064502cf10e8fcc4e1682648b9ee260f1cb8"
+        or doc.get("source_file_id")!="17QNqKZjSF7V9GzzkXkz46bDJGnyKYq-F"
+        or doc.get("status")!="ORIGINAL_BOOK_PAGE_SP_VERIFIED__PEDAGOGY_AND_RUNTIME_HOLD"
+        or doc.get("summary",{}).get("unique_printed_pages_examined")!=54
+        or doc.get("summary",{}).get("teacher_academic_approved")!=0):
+        raise ValueError("Year3 original textbook visual evidence invalid")
+    bycode={x["pdp_code"]:x for x in doc["items"]}
+    if len(bycode)!=45 or set(bycode)!=set(src):
+        raise ValueError("Year3 book source identity set differs")
+    for code,entry in bycode.items():
+        old=src[code]
+        if (entry["sp"]!=old["sp_code"]
+            or entry["printed_page_candidates"]!=old["printed_book_page_candidates"]
+            or entry["at_least_one_cited_page_has_matching_sp_code"] is not True
+            or entry["all_cited_page_images_visually_reviewed"] is not True
+            or entry["teacher_pedagogical_approved"] is not False):
+            raise ValueError("Year3 page/code visual mismatch: "+code)
+    extras={x["sp"]:x for x in doc["secondary_integrated_sp"]}
+    expected={"3.2.5":"SCI-Y3-PDP-006","3.3.3":"SCI-Y3-PDP-010","3.3.4":"SCI-Y3-PDP-011"}
+    if set(extras)!=set(expected):
+        raise ValueError("Year3 secondary textbook SP source changed")
+    for sp,item in extras.items():
+        if (item.get("pdp_source_identity")!=expected[sp]
+            or item.get("original_sp_code_in_text_and_visual") is not True
+            or item.get("teacher_academic_approved") is not False):
+            raise ValueError("Year3 supplementary SP book source unapproved "+sp)
+    return bycode
+
 def adapt_rows(state, original):
     """Never mutate original RPH rows; reject unproven subject/year/code/SP."""
     if not isinstance(state,dict) or not isinstance(original,dict):
@@ -459,6 +493,7 @@ def adapt_rows(state, original):
         return original
     if str(state.get("sk_code") or "")!=sp.rsplit(".",1)[0]:
         return original
+    book_activity=activity_for(3,code,sp)
     if item.get("visual_layout_check")!="PENDING":
         return original  # strict gate: release manifest must be implemented separately
     label=item["source_pdp_title_unverified"]
@@ -489,7 +524,12 @@ def adapt_rows(state, original):
         closing+=" Guru menyelia murid mengemas alatan dan mematuhi peraturan bilik sains."
     if extra:
         materials=materials+"; "+extra["materials"]
-    page_text=", ".join(str(x) for x in item["printed_book_page_candidates"])
+    book=checked_book_pages().get(code)
+    if not book or book["sp"]!=sp:raise ValueError("Year3 book source not verified "+code)
+    page_text=", ".join(str(x) for x in book["printed_page_candidates"])
+    ba_text=activity_short_note(book_activity,3)
+    ba_pbd=(" Murid boleh melengkapkan latihan Buku Aktiviti selepas semakan guru; "
+            "guru menilai jawapan individu." if is_direct_sp_match(book_activity) else "")
     updated=dict(original)
     updated.update({
         "TAJUK":label,
@@ -500,11 +540,15 @@ def adapt_rows(state, original):
         "PENGETAHUAN SEDIA ADA":f"Murid berkongsi pengalaman berkaitan {hook.lower()}.",
         "SET INDUKSI":f"Guru menunjukkan {hook.lower()}; murid menyatakan satu ramalan/pemerhatian awal.",
         "AKTIVITI UTAMA":main,
-        "PENTAKSIRAN":all_pbd+". Guru menyemak hasil individu atau pasangan.",
+        "PENTAKSIRAN":all_pbd+". Guru mengambil bukti bagi setiap murid melalui jawapan, jadual, lakaran atau demonstrasi yang sepadan dengan tugasan dan merekod murid yang perlu pemulihan."+ba_pbd,
         "PENUTUP":closing,
         "KEMAHIRAN PROSES SAINS":kps_desc,
         "KEMAHIRAN MANIPULATIF DAN KESELAMATAN":manip_desc,
-        "BAHAN BANTU MENGAJAR":f"{materials}. Buku Teks Sains Tahun 3, halaman bercetak {page_text} (petunjuk sumber; semak sebelum cetak).",
+        "BAHAN BANTU MENGAJAR":f"{materials}. Buku Teks Sains Tahun 3 m/s {page_text} (halaman asal & label SP dilihat; isi/PBD belum disahkan panitia). "+ba_text,
+        "BUKU AKTIVITI / LATIHAN":ba_text,
+        "BUKU AKTIVITI URL":book_activity["workbook_url"],
+        "BUKU AKTIVITI MATCH":book_activity["matching_status"],
+        "BUKU AKTIVITI SP BERCETAK":", ".join(book_activity["workbook_printed_sp_codes"]),
         "PEMULIHAN / PENGAYAAN":"Pemulihan: guru membimbing dengan kad/objek berlabel. Pengayaan: murid menjelaskan bukti tambahan daripada tugasan.",
     })
     return updated
