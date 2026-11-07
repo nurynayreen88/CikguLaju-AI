@@ -17,6 +17,11 @@ app.register_blueprint(web_payment_bp)
 # requires a separate operator-approved deployment plus dedicated bearer key.
 from web.telegram_prod_paid_status_bridge import bp as prod_paid_status_bridge_bp
 app.register_blueprint(prod_paid_status_bridge_bp)
+# Feature-flagged: native Google sign-in issues the SAME established Telegram
+# Web session only for a separately verified linked identity. No cross-Render
+# paid-status HTTP request in this compatibility path. Disabled by default.
+from web.google_native_legacy_web_routes import bp as native_google_login_bp
+app.register_blueprint(native_google_login_bp)
 from web.web_referral_routes import install as install_web_referral
 install_web_referral(app)
 
