@@ -292,7 +292,7 @@ def main():
         "markdown":len(records),"status":"DRAF/HOLD",
         "academic_quality_percent":None,"approved_by_teacher":False,
         "source_page_code_evidence_verified_count":83,
-        "source_page_reference_verified":True,
+        "source_page_reference_verified":False,  # full pedagogical page suitability still HOLD
         "source_pedagogical_matching_approved":False,"native_telegram_web_e2e":False,
         "no_production_db_or_runtime_write":True,
     },ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
