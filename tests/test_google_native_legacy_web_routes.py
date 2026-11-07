@@ -23,7 +23,7 @@ HOST = "cikgulaju-web.onrender.com"
 CFG = {
     "origin": "https://" + HOST, "host": HOST,
     "supabase_url": "https://eqrcjlnvcytkgazptbor.supabase.co",
-    "apikey": "sb_publishable_test_only", "staging_service_key": "secret_staging_test",
+    "apikey": "sb_publishable_test_only", "staging_service_key": "staging_service_key_for_unittest_abcdef",
     "secret": SECRET,
 }
 IDENTITY = {
