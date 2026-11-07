@@ -71,6 +71,12 @@ jobs:
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_t6_sp42_primary_source_audit.py --output pi_t6_sp42_optional_l060_HOLD.json
       - name: Audit original 2026 source carryover of overlapping ayah224 in Year2 PdP035
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_t2_l035_rpt_2026_2027_overlap_audit.py --output pi_t2_l035_inherited_ayah224_overlap_HOLD.json
+      - name: Audit all original Year6 Juz25 ayat; find 67 unmapped verses across four surah gaps
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_t6_juz25_sequence_gap_audit.py --json pi_t6_juz25_full_source_67_gap_NO_GO.json --csv pi_t6_juz25_full_source_67_gap_NO_GO.csv
+      - name: Crosscheck held Year6 Juz29 L117 neighbor continuity for chapters 70-72
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_t6_juz29_l117_continuity_review.py --output pi_t6_juz29_l117_100_ayat_local_NO_GO.json
+      - name: Validate four source-bounded Year6 Rumi editor-only Quran candidate drafts
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_t6_held_quran_editor_candidate_review.py --output pi_t6_held_quran_rumi_editor_four_NO_GO.json
       - name: Verify every audit artifact exists, is nonempty, and stays review-only
         shell: bash
         run: |
@@ -115,7 +121,11 @@ jobs:
             pi_y6_full_held_source_5_NO_GO.json \
             pi_y6_full_held_source_5_NO_GO.csv \
             pi_t6_sp42_optional_l060_HOLD.json \
-            pi_t2_l035_inherited_ayah224_overlap_HOLD.json; do
+            pi_t2_l035_inherited_ayah224_overlap_HOLD.json \
+            pi_t6_juz25_full_source_67_gap_NO_GO.json \
+            pi_t6_juz25_full_source_67_gap_NO_GO.csv \
+            pi_t6_juz29_l117_100_ayat_local_NO_GO.json \
+            pi_t6_held_quran_rumi_editor_four_NO_GO.json; do
             if [ ! -s "$file" ]; then
               echo "::error::Audit artifact missing or empty: $file"
               exit 1
@@ -167,6 +177,10 @@ jobs:
             pi_y6_full_held_source_5_NO_GO.csv
             pi_t6_sp42_optional_l060_HOLD.json
             pi_t2_l035_inherited_ayah224_overlap_HOLD.json
+            pi_t6_juz25_full_source_67_gap_NO_GO.json
+            pi_t6_juz25_full_source_67_gap_NO_GO.csv
+            pi_t6_juz29_l117_100_ayat_local_NO_GO.json
+            pi_t6_held_quran_rumi_editor_four_NO_GO.json
           retention-days: 30
 
   physical-word-pdf-a4:
