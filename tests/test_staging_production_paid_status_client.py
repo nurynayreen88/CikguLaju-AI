@@ -72,8 +72,40 @@ class ProductionPaidBridgeTests(unittest.TestCase):
         self.assertEqual(req.full_url, PROD_URL)
         self.assertEqual(req.get_method(), "POST")
         self.assertEqual(json.loads(req.data), {"telegram_user_id": UID})
-        self.assertEqual(timeout, 8)
+        self.assertEqual(timeout, 55)
         self.assertEqual(req.get_header("Authorization"), "Bearer " + TOKEN)
+
+    def test_render_cold_start_gateway_503_is_retried_once_then_verified(self):
+        class ColdStart:
+            def __init__(self, payload):
+                self.calls = []
+                self.payload = payload
+            def open(self, req, timeout):
+                self.calls.append((req.full_url, timeout))
+                if len(self.calls) == 1:
+                    raise HTTPError(req.full_url, 503, "Render waking", {}, None)
+                return FakeResponse(self.payload)
+        cold = ColdStart(self.reply(lifetime=True))
+        with patch("web.staging_production_paid_status_client.time.sleep") as sleep:
+            result = read_paid_status(UID, CFG, transport=cold)
+        self.assertTrue(result["rakan_pembangun_active"])
+        self.assertEqual(cold.calls, [(PROD_URL, 55), (PROD_URL, 25)])
+        sleep.assert_called_once_with(2)
+
+    def test_invalid_private_token_401_is_never_retried(self):
+        class Unauthorized:
+            def __init__(self):
+                self.calls = 0
+            def open(self, req, timeout):
+                self.calls += 1
+                raise HTTPError(req.full_url, 401, "Invalid token", {}, None)
+        sender = Unauthorized()
+        with (patch("web.staging_production_paid_status_client.time.sleep") as sleep,
+              self.assertRaises(PaidStatusBridgeUnavailable) as error):
+            read_paid_status(UID, CFG, transport=sender)
+        self.assertEqual(sender.calls, 1)
+        self.assertIn("401", str(error.exception))
+        sleep.assert_not_called()
 
     def test_bridge_not_enabled_or_staging_project_wrong_never_contacts_source(self):
         sender = FakeTransport(self.reply())
