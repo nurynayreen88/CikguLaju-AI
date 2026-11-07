@@ -80,10 +80,15 @@ class RemainingRPTFormatQA(unittest.TestCase):
                 self.assertEqual(len(rows),35)
                 self.assertEqual([r["id"] for r in rows],
                                  [f"{i:03d}" for i in range(1,36)])
-                self.assertTrue(all(r["sk"]=="Kod SK belum dibekalkan dalam CSV"
+                self.assertTrue(all(" — " in r["sk_display"] and
+                                    " — " in r["sp_display"] for r in rows))
+                self.assertTrue(all("Pernyataan penuh SP belum dipadankan" not in r["sp_display"]
                                     for r in rows))
-                self.assertTrue(all("Pernyataan penuh SP belum dipadankan" in r["sp_display"]
+                self.assertTrue(all(r["dskp_text_source"]==
+                                    "KPM_MUSIC_DSKP_PDF_PRINTED_SK_SP_STAGING_ONLY"
                                     for r in rows))
+                self.assertTrue(all(r["source_rpt_sp_codes"].replace(";", " / ")==
+                                    r["sp"] for r in rows))
                 for row in rows:
                     self.assertEqual((row["a_start"],row["a_end"]),master["A"][row["week"]])
                     self.assertEqual((row["b_start"],row["b_end"]),master["B"][row["week"]])
