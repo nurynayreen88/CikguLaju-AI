@@ -68,8 +68,9 @@ def audit():
             })
     not_in_separate_pdp=canonical-used
     kps_code_set={f"1.1.{i}" for i in range(1,13)}
-    kps_not_separately_indexed=sorted(not_in_separate_pdp & kps_code_set)
-    content_sp_not_indexed=sorted(not_in_separate_pdp-kps_code_set)
+    sort_code=lambda code: tuple(int(x) for x in code.split("."))
+    kps_not_separately_indexed=sorted(not_in_separate_pdp & kps_code_set,key=sort_code)
+    content_sp_not_indexed=sorted(not_in_separate_pdp-kps_code_set,key=sort_code)
     if len(kps_not_separately_indexed)+len(content_sp_not_indexed)!=len(not_in_separate_pdp):
         raise ValueError("Sains Year6 missing SP classification incomplete")
     return {
@@ -80,7 +81,7 @@ def audit():
       "historical_pdp_with_official_sp_code":84-len(unmatched),
       "historical_pdp_with_invalid_sp_code":len(unmatched),
       "invalid_sp_details":unmatched,
-      "official_sp_not_represented_in_historical_84":sorted(not_in_separate_pdp),
+      "official_sp_not_represented_in_historical_84":sorted(not_in_separate_pdp,key=sort_code),
       "kps_1_1_not_separately_indexed":kps_not_separately_indexed,
       "non_kps_content_sp_not_separately_indexed":content_sp_not_indexed,
       "kps_sk_1_1_1_to_12_may_be_embedded_in_other_lessons_not_missing_12_new_pdp":True,
