@@ -184,6 +184,20 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
             )
         return Paragraph(escape(printable).replace("\n", "<br/>"), style)
 
+    def source_pdf_link(url, page_number):
+        """A user-clickable original source, without treating it as signoff."""
+        if (not isinstance(url,str)
+            or not re.fullmatch(r"https://drive\\.google\\.com/file/d/[A-Za-z0-9_-]{20,}/view",url)
+            or type(page_number) is not int or not 1 <= page_number <= 300):
+            raise ValueError("Invalid untrusted DSKP source link or PDF page")
+        label=f"Buka DSKP asal (halaman PDF {page_number})"
+        # Google Drive may not honor #page; explicit printed page label is
+        # retained, and the link still opens the exact original source file.
+        xml=f'<link href="{escape(url,quote=True)}" color="#075ba8">{escape(label)}</link>'
+        return Paragraph(xml,ParagraphStyle(
+            "source-link",fontName=font,fontSize=7.1,leading=11,
+            textColor=colors.HexColor("#075ba8"),spaceBefore=3,spaceAfter=0))
+
     def cell(text, strong=False):
         return p(text, strong=strong)
 
@@ -309,12 +323,18 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
                 unit_lines.append(p(topic_match.group(2).strip(),size=7.8,leading=11.6))
             else:
                 unit_lines.append(p(topic_text,size=7.8,leading=11.6))
+        note_cell=[p(row["note"],size=7.6,leading=11.5)]
+        if "source_sp_dskp_pdf_url" in row:
+            if subject!="bahasa_arab" or row.get("source_sp_dskp_text_signoff") is not False:
+                raise ValueError("DSKP URL link only supported for unapproved Arabic sources")
+            note_cell.append(source_pdf_link(row["source_sp_dskp_pdf_url"],
+                                             row["source_sp_dskp_pdf_page"]))
         table_rows.append([
             "" if index in grouped_followers else p(weektext,size=7.0,leading=11.3),
             unit_lines,
             p(row.get("sk_display") or row["sk"],size=7.5,leading=11.3),
             p(row.get("sp_display") or row["sp"],size=7.3,leading=10.8),
-            p(row["note"],size=7.6,leading=11.5)
+            note_cell
         ])
     # Reserve more width for the newly expanded full DSKP SK/SP statements.
     widths = [105, 180, 125, 210, usable - 105 - 180 - 125 - 210]
