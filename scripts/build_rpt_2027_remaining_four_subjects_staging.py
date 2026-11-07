@@ -198,11 +198,17 @@ def arabic_records(year):
     if indexed is None:
         raise ValueError("Missing Arabic DSKP source-page index for year")
     source_pages={e["sp_code"]:e["pdf_page"] for e in indexed["entries"]}
+    source_pdf_url=indexed["source_url"]
+    source_pdf_sha256=indexed["pdf_sha256"]
     source_page_count=indexed["pdf_pages"] if year==2 else indexed["pdf_page_count"]
     if len(source_pages)!=len(indexed["entries"]) or any(
         type(pg) is not int or pg < 1 or pg > source_page_count for pg in source_pages.values()
     ):
         raise ValueError("Invalid Arabic DSKP code-page evidence")
+    if (not re.fullmatch(r"https://drive\.google\.com/file/d/[A-Za-z0-9_-]{20,}/view",
+                             source_pdf_url)
+        or not re.fullmatch(r"[0-9a-f]{64}",source_pdf_sha256)):
+        raise ValueError("Arabic original PDF link/checksum malformed")
     ar=[x for x in a if int(x["tahun"])==year]
     br=[x for x in b if int(x["tahun"])==year]
     expected={2:60,3:60,4:58,5:60,6:60}[year]
@@ -233,6 +239,10 @@ def arabic_records(year):
                   f" (calon). DSKP SP PDF hlm {source_pages[sp_code]} (kod disemak; teks belum disahkan). "+
                   "Tarikh A/B belum diperuntukkan. DRAF."),
             source_sp_dskp_pdf_page=source_pages[sp_code],
+            source_sp_dskp_pdf_url=source_pdf_url,
+            source_sp_dskp_pdf_sha256=source_pdf_sha256,
+            source_sp_dskp_text_signoff=False,
+            source_pdf_extraction_code_repeated_unreliable=(year==2),
             source_status=left["status_rpt"],
         ))
     validate_rows("bahasa_arab",year,rows)
