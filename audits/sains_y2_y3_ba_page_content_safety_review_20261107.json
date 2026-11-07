@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-07",
+  "basis": "Direct visual inspection of original scanned workbook printed exercise pages; academic/teacher sign-off not implied.",
+  "source_pdf_links": {
+    "year2": "https://drive.google.com/file/d/1j0qoRWHcaAzHVgbb6uua7k_3i2-qVm0v/view",
+    "year3": "https://drive.google.com/file/d/1kVL3PT-VjQiITqmfNXlURQA8gLYvCrI5/view"
+  },
+  "reviewed_exercises": 11,
+  "all_96_individual_academic_approved": false,
+  "status": "STAGING_HOLD",
+  "items": [
+    {
+      "year": 2,
+      "sp": "3.1.3",
+      "page": 16,
+      "exercise": "Mengukur Berat dan Tinggi serta Memerhatikan Saiz Kasut Murid",
+      "type": "SAFE_SUBSTITUTE",
+      "guidance": "Guru sediakan data tinggi/berat rekaan; murid banding dua profil tanpa menimbang atau mendedahkan data rakan.",
+      "evidence": "Halaman meminta timbang berat, ukur tinggi dan catat saiz kasut rakan. Penggunaan data rekaan ialah adaptasi privasi, bukan arahan literal buku."
+    },
+    {
+      "year": 2,
+      "sp": "4.1.7",
+      "page": 27,
+      "exercise": "Ceritakan tentang Kitar Hidup Rama-rama",
+      "type": "RELATED_ONLY_ORIGINAL_PBD",
+      "guidance": "Tiada latihan SP 4.1.7 terus; guna lakaran serta penerangan individu daripada aktiviti utama RPH untuk PBD.",
+      "evidence": "Halaman bercetak SP 4.1.5 sahaja; panduan berkaitan kitar hidup, bukan padanan SP 4.1.7."
+    },
+    {
+      "year": 2,
+      "sp": "5.1.6",
+      "page": 36,
+      "exercise": "Pokok Timun Saya",
+      "type": "DIRECT_WORKBOOK_CONTEXT",
+      "guidance": "Murid bezakan keperluan biji benih bercambah dengan keperluan anak pokok timun membesar.",
+      "evidence": "Halaman memaparkan biji benih dalam plastik dan anak pokok timun; murid lengkapkan keperluan masing-masing."
+    },
+    {
+      "year": 2,
+      "sp": "6.1.6",
+      "page": 44,
+      "exercise": "Mencipta Bayang-bayang Tangan",
+      "type": "RELATED_ONLY_ORIGINAL_PBD",
+      "guidance": "Tiada latihan SP 6.1.6 terus; guna lakaran/penerangan pemerhatian bayang daripada aktiviti utama untuk PBD.",
+      "evidence": "Halaman bercetak SP 6.1.5 sahaja dan memaparkan demonstrasi bayang tangan."
+    },
+    {
+      "year": 2,
+      "sp": "7.1.7",
+      "page": 54,
+      "exercise": "Memasang Permainan Buzzer",
+      "type": "DIRECT_WORKBOOK_SAFETY",
+      "guidance": "Murid lakar litar buzzer; kit sebenar mesti sel kering voltan rendah dan diawasi guru, bukan soket rumah.",
+      "evidence": "Halaman memaparkan sel kering, buzzer dan wayar serta meminta lakaran rangkaian."
+    },
+    {
+      "year": 2,
+      "sp": "8.1.5",
+      "page": 62,
+      "exercise": "Yang Manakah Cepat Larut?",
+      "type": "SAFE_SUBSTITUTE",
+      "guidance": "Murid jawab berdasarkan gambar suhu, saiz gula dan kacauan; jangan sediakan air panas untuk murid.",
+      "evidence": "Halaman memaparkan perbandingan air panas/sejuk, gula kiub/pasir, dan dikacau/tidak; arahan tentang minuman coklat."
+    },
+    {
+      "year": 2,
+      "sp": "9.2.3",
+      "page": 73,
+      "exercise": "Kesan Angin",
+      "type": "DIRECT_WORKBOOK_CONTEXT",
+      "guidance": "Murid padankan gambar pokok, layang-layang, pakaian dan ombak dengan kesan angin menggunakan bank kata.",
+      "evidence": "Halaman menyenaraikan bergoyang, berkibar, terbang, berbunyi, bergelora."
+    },
+    {
+      "year": 2,
+      "sp": "9.2.6",
+      "page": 72,
+      "exercise": "Mencipta Model Kapal Layar",
+      "type": "DIRECT_WORKBOOK_SAFETY",
+      "guidance": "Murid lakar kapal layar dahulu; jika membina, guna gunting hujung bulat dengan pengawasan guru.",
+      "evidence": "Halaman meminta lakaran dan memaparkan span, gunting, batang aiskrim, kertas nipis dan pita."
+    },
+    {
+      "year": 3,
+      "sp": "3.2.3",
+      "page": 30,
+      "exercise": "Menu Makanan Pilihan Saya",
+      "type": "DIRECT_WORKBOOK_CONTEXT",
+      "guidance": "Murid memilih empat gambar makanan bagi menu seimbang dan memberikan alasan tanpa menilai diet peribadi rakan.",
+      "evidence": "Halaman meminta memilih empat makanan daripada gambar untuk membentuk hidangan seimbang dan sebab pemilihan."
+    },
+    {
+      "year": 3,
+      "sp": "6.1.6",
+      "page": 61,
+      "exercise": "Mengukur Isi Padu Pepejal Tidak Sekata",
+      "type": "DIRECT_WORKBOOK_CONTEXT",
+      "guidance": "Murid banding bacaan air awal dan akhir dalam silinder penyukat, kemudian kira isi padu sesaran.",
+      "evidence": "Halaman menunjukkan kaedah sesaran air, bacaan silinder pada dua keadaan dan penolakan akhir-awal."
+    },
+    {
+      "year": 3,
+      "sp": "6.1.7",
+      "page": 59,
+      "exercise": "Mengukur Isi Padu Cecair",
+      "type": "DIRECT_WORKBOOK_CONTEXT",
+      "guidance": "Murid pilih alat mengukur isi padu dan tandakan aras mata yang betul pada bacaan meniskus.",
+      "evidence": "Halaman memaparkan alat ukur berbeza dan pandangan aras mata terhadap silinder penyukat."
+    }
+  ]
+}
