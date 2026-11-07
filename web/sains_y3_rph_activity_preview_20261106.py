@@ -442,6 +442,32 @@ def source_ledgers():
         raise RuntimeError("Missing or extra SP activity")
     return bycode,fixes
 
+def checked_book_pages():
+    """45 page/code source matches on original Year3 book; not academic signoff."""
+    src,_=source_ledgers()
+    doc=json.loads(TEXTBOOK_VISUAL.read_text(encoding="utf-8"))
+    if (doc.get("source_sha256")!="5c5c95276915abfc52dab3515040064502cf10e8fcc4e1682648b9ee260f1cb8"
+        or doc.get("source_file_id")!="17QNqKZjSF7V9GzzkXkz46bDJGnyKYq-F"
+        or doc.get("status")!="ORIGINAL_BOOK_PAGE_SP_VERIFIED__PEDAGOGY_AND_RUNTIME_HOLD"
+        or doc.get("summary",{}).get("unique_printed_pages_examined")!=54
+        or doc.get("summary",{}).get("teacher_academic_approved")!=0):
+        raise ValueError("Year3 original textbook visual evidence invalid")
+    bycode={x["pdp_code"]:x for x in doc["items"]}
+    if len(bycode)!=45 or set(bycode)!=set(src):
+        raise ValueError("Year3 book source identity set differs")
+    for code,entry in bycode.items():
+        old=src[code]
+        if (entry["sp"]!=old["sp_code"]
+            or entry["printed_page_candidates"]!=old["printed_book_page_candidates"]
+            or entry["at_least_one_cited_page_has_matching_sp_code"] is not True
+            or entry["all_cited_page_images_visually_reviewed"] is not True
+            or entry["teacher_pedagogical_approved"] is not False):
+            raise ValueError("Year3 page/code visual mismatch: "+code)
+    extras={x["sp"] for x in doc["secondary_integrated_sp"]}
+    if extras!={"3.2.5","3.3.3","3.3.4"}:
+        raise ValueError("Year3 secondary textbook SP source changed")
+    return bycode
+
 def adapt_rows(state, original):
     """Never mutate original RPH rows; reject unproven subject/year/code/SP."""
     if not isinstance(state,dict) or not isinstance(original,dict):
