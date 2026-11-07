@@ -14,6 +14,8 @@ on:
       - "audits/sains_y2_43_remaining_page_content_20261107.json"
       - "audits/sains_y3_42_remaining_page_content_20261107.json"
       - "tools/check_sains_ba_96_document_content_20261107.py"
+      - "tools/export_sains_ba_96_panitia_queue_20261107.py"
+      - "audits/sains_buku_aktiviti_96_full_page_content_review_20261107.md"
       - "tests/test_sains_buku_aktiviti_y2_y3_20261107.py"
       - "web/sains_buku_aktiviti_resources_20261107.py"
       - "tests/test_sains_buku_aktiviti_resources_20261107.py"
@@ -83,6 +85,8 @@ jobs:
         run: python -m tools.check_sains_y3_word_pages_20261106
       - name: Verify 96 printed workbook titles, pages, PBD warnings and safety notes in actual Word/PDF
         run: python -m tools.check_sains_ba_96_document_content_20261107
+      - name: Prepare 96-source human Panitia checklist with all academic decisions still HOLD
+        run: python -m tools.export_sains_ba_96_panitia_queue_20261107
       - name: Test 79 Science Year4 distinct DSKP-linked activity drafts
         run: python -m unittest discover -s tests -p 'test_sains_y4_79_bank_quality_20261107.py' -v
       - name: Render 79 Science Year4 standalone DRAF Word PDF Markdown
