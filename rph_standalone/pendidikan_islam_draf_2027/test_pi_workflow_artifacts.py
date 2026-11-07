@@ -15,6 +15,7 @@ EXPECTED = {
     "pi_ba_provenance_42.json",
     "pi_ba_verification_register_174.json",
     "pi_ba_verification_register_174.csv",
+    "pi_editor_material_preview_690.json",
 }
 
 
