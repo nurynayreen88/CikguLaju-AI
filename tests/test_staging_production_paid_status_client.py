@@ -11,7 +11,7 @@ from web.provider_neutral_web_identity import (
 )
 from web.staging_production_paid_status_client import (
     PROD_URL, PaidStatusBridgeUnavailable, PaidStatusProductionAccountMissing,
-    read_paid_status, verified_linked_paid_status
+    read_paid_status, verified_linked_paid_status, verified_paid_uid_for_rph
 )
 
 ACCOUNT = "1a267083-8511-4587-a585-857fe35f4a14"
@@ -138,6 +138,53 @@ class ProductionPaidBridgeTests(unittest.TestCase):
             self.assertEqual(result["production_access_status"], "source_unavailable")
             self.assertFalse(result["production_access_verified"])
             self.assertNotIn("production_rakan_pembangun_active",result)
+
+    def test_generation_paid_entitlement_requires_fresh_link_and_production_proof(self):
+        for actor in (GOOGLE, TELEGRAM):
+            with (self.subTest(actor=actor.provider),
+                  patch("web.google_telegram_link_staging_routes._link_status",
+                        return_value={"linked": True, "staging_only": True,
+                                      "telegram_user_id": str(UID)}),
+                  patch("web.staging_production_paid_status_client.read_paid_status",
+                        return_value={"rakan_pembangun_active": True,
+                                      "subscription_active": False,
+                                      "subscription_expires_at": None}) as reader):
+                self.assertEqual(verified_paid_uid_for_rph(actor, CFG), UID)
+                reader.assert_called_once_with(UID, CFG)
+
+    def test_generation_nonpaid_or_unlinked_only_uses_free_quota(self):
+        with (patch("web.google_telegram_link_staging_routes._link_status",
+                    return_value={"linked": False, "staging_only": True}),
+              patch("web.staging_production_paid_status_client.read_paid_status") as read):
+            self.assertIsNone(verified_paid_uid_for_rph(GOOGLE, CFG))
+            read.assert_not_called()
+        with (patch("web.google_telegram_link_staging_routes._link_status",
+                    return_value={"linked": True, "staging_only": True,
+                                  "telegram_user_id": str(UID)}),
+              patch("web.staging_production_paid_status_client.read_paid_status",
+                    return_value={"rakan_pembangun_active": False,
+                                  "subscription_active": False,
+                                  "subscription_expires_at": None})):
+            self.assertIsNone(verified_paid_uid_for_rph(GOOGLE, CFG))
+
+    def test_generation_cannot_pay_when_revoked_stale_or_wrong_telegram(self):
+        with (patch("web.google_telegram_link_staging_routes._link_status",
+                    return_value={"linked": True, "staging_only": True,
+                                  "telegram_user_id": str(UID + 1)}),
+              patch("web.staging_production_paid_status_client.read_paid_status") as read):
+            with self.assertRaises(PaidStatusBridgeUnavailable):
+                verified_paid_uid_for_rph(TELEGRAM, CFG)
+            read.assert_not_called()
+        with (patch("web.google_telegram_link_staging_routes._link_status",
+                    return_value={"linked": True, "staging_only": True,
+                                  "telegram_user_id": str(UID)}),
+              patch("web.staging_production_paid_status_client.read_paid_status",
+                    side_effect=PaidStatusBridgeUnavailable("offline"))):
+            with self.assertRaises(PaidStatusBridgeUnavailable):
+                verified_paid_uid_for_rph(GOOGLE, CFG)
+        with patch.dict("os.environ", {"CIKGULAJU_PAID_BRIDGE_STAGING_READ_ENABLED":"0"}):
+            with self.assertRaises(PaidStatusBridgeUnavailable):
+                verified_paid_uid_for_rph(GOOGLE, CFG)
 
     def test_production_user_missing_is_not_a_false_negative_entitlement(self):
         with (patch("web.google_telegram_link_staging_routes._link_status",
