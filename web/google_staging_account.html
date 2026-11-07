@@ -28,6 +28,11 @@ small{color:#63796f}#status{min-height:25px}
 <p><a href="/google-staging-payments">Lihat ujian pembayaran</a></p>
 <p><small>Jangan buat bayaran sebenar melalui staging. Pengesahan bayaran dan penjanaan RPH Google belum diaktifkan untuk pengguna sebenar.</small></p>
 </section>
+<section class="card" aria-labelledby="recent-rph-title">
+<h2 id="recent-rph-title">RPH siap dimuat turun (staging)</h2>
+<p>Jika janaan selesai tetapi browser tertutup, fail yang sudah disahkan siap boleh dibuka semula tanpa potongan kredit tambahan.</p>
+<div id="recentRph" aria-live="polite">Menyemak janaan terdahulu…</div>
+</section>
 <p id="status" role="status" aria-live="polite"></p>
 </main>
 <script>
@@ -46,6 +51,39 @@ async function loadProfile(){
     statusEl.textContent='Akaun Google disahkan untuk ujian staging.';
   }catch(e){statusEl.textContent='Profil belum boleh disahkan. Sila muat semula.';}
 }
+async function loadRecentRph(){
+  const view=document.getElementById('recentRph');
+  try{
+    const res=await fetch('/api/google-staging/web/rph/recent',
+                          {credentials:'same-origin',cache:'no-store'});
+    if(res.status===401){location.assign('/google-staging-login');return;}
+    if(!res.ok)throw Error('Senarai RPH belum tersedia.');
+    const data=await res.json();
+    if(data.staging_only!==true||!Array.isArray(data.items)||
+       data.items.length>10)throw Error('Status janaan tidak sah.');
+    view.replaceChildren();
+    if(!data.items.length){view.textContent='Belum ada RPH siap dalam staging.';return;}
+    const ul=document.createElement('ul');
+    for(const item of data.items){
+      if(typeof item.job_id!=='string'||item.job_id.length!==36||
+         !item.downloads||typeof item.downloads!=='object')throw Error('Rekod RPH tidak sah.');
+      const li=document.createElement('li');
+      li.appendChild(document.createTextNode('RPH '+item.job_id.slice(0,8)+' — '));
+      for(const kind of ['word','pdf']){
+        const url=item.downloads[kind];
+        if(typeof url!=='string'||!url.startsWith(
+          '/api/google-staging/web/rph/jobs/'+item.job_id+'/download/')||
+          !url.endsWith('/download/'+kind))throw Error('Pautan RPH tidak sah.');
+        const a=document.createElement('a');a.href=url;
+        a.textContent=kind==='word'?'Word':'PDF';
+        a.style.marginRight='12px';
+        li.appendChild(a);
+      }
+      ul.appendChild(li);
+    }
+    view.appendChild(ul);
+  }catch(e){view.textContent=e.message||'Senarai RPH belum tersedia.';}
+}
 document.getElementById('logout').addEventListener('click',async()=>{
   const button=document.getElementById('logout');button.disabled=true;
   try{
@@ -57,4 +95,5 @@ document.getElementById('logout').addEventListener('click',async()=>{
   }catch(e){button.disabled=false;statusEl.textContent='Log keluar tidak berjaya. Cuba lagi.';}
 });
 loadProfile();
+loadRecentRph();
 </script></body></html>
