@@ -12,6 +12,8 @@ from tools.sains_buku_aktiviti_mapping_20261107 import (
     ROOT,load_activity_books,is_direct_sp_match
 )
 
+from tools.render_sains_y2_2_sp_alternative_pbd_20261107 import TASKS as ALT_TASKS,doc_file as alt_doc_file
+
 OUT=ROOT/"build/sains_ba_96_actual_document_qa_20261107"
 
 def review_queue():
@@ -20,6 +22,9 @@ def review_queue():
     for year in (2,3):
         for item in rows[year].values():
             direct=is_direct_sp_match(item)
+            alt=(alt_doc_file(item["sp"]).name if year==2 and item["sp"] in ALT_TASKS else "")
+            if (not direct)!=bool(alt):
+                raise ValueError("Unmatched workbook SP must have exactly one original PBD alternative")
             result.append({
                 "Tahun":year,
                 "Kod PdP":item["pdp_code"],
@@ -32,6 +37,8 @@ def review_queue():
                 "Sifat padanan":"PADANAN KOD SP (belum akademik)" if direct else "RUJUKAN SAHAJA (SP berbeza)",
                 "Bukti yang dilihat pada halaman":item["page_content_evidence"],
                 "Cadangan tindakan PdP/PBD":item["lesson_guidance"],
+                "Lembaran PBD alternatif CikguLaju (bukan BA rasmi)":alt,
+                "Status PBD alternatif":"DRAF — PERLU SEMAK PANITIA" if alt else "TIDAK BERKENAAN",
                 "Semak makna SP penuh":"BELUM",
                 "Semak kualiti latihan vs objektif":"BELUM",
                 "Semak bukti PBD individu":"BELUM",
@@ -59,6 +66,7 @@ def main():
         "content_guidance_covered":96,
         "matching_printed_sp":94,
         "related_only":2,
+        "original_sp_specific_alternative_pbd_sheets":2,
         "academic_signed_off":0,
         "reviewed_by_teacher":False,
         "status":"HOLD",
