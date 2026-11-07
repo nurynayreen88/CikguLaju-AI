@@ -62,6 +62,20 @@ def check():
     status, headers, _body = fetch("/api/auth/google/profile")
     assert status == 401, ("anonymous profile API should fail", status)
 
+    # Newly mounted Web lesson selector must never expose curriculum
+    # metadata without a valid Google-only signed session.
+    status, headers, _body = fetch("/google-staging-web")
+    assert status == 303, ("anonymous Web selector page", status)
+    assert headers.get("Location") == "/google-staging-login", "selector login gate"
+
+    for endpoint in (
+        "/api/google-staging/web/catalog",
+        "/api/google-staging/web/catalog?year=3&subject=ENGLISH",
+        "/api/google-staging/web/materials?year=3&subject=ENGLISH&component=&unit=One&lesson=e-3-001",
+    ):
+        status, _headers, _body = fetch(endpoint)
+        assert status == 401, ("anonymous Web lesson metadata must fail", endpoint, status)
+
     status, headers, _body = fetch("/api/auth/google/start")
     assert status == 302, ("OAuth start", status)
     target = urlsplit(headers.get("Location", ""))
