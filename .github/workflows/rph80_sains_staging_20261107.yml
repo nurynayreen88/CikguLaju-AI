@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
   pull_request:
     branches:
+      - main
       - staging/sains-rpt-2027-ab-clean-20261106
     paths:
       - "web/sains_y3_rph_activity_preview_20261106.py"
