@@ -50,8 +50,12 @@ class RemainingRPTFormatQA(unittest.TestCase):
                         self.assertTrue(row["held_source_proposal"])
                         self.assertIs(row["held_release_approved"], False)
                         self.assertIn("REKOD DITAHAN", row["note"])
-                        self.assertIn("REKOD DITAHAN", row["sk"])
-                        self.assertIn("REKOD DITAHAN", row["sp"])
+                        if year==6 and row["id"]=="060":
+                            self.assertIn("Solat Ketika Sakit", row["sk"])
+                            self.assertIn("4.2.3", row["sp"])
+                        else:
+                            self.assertIn("BUKAN KOD SK RASMI", row["sk"])
+                            self.assertIn("TIADA KOD SP RASMI", row["sp"])
                     self.assertIn(row["week"], master["A"])
                     self.assertIn(row["week"], master["B"])
                     self.assertEqual((row["a_start"],row["a_end"]),
