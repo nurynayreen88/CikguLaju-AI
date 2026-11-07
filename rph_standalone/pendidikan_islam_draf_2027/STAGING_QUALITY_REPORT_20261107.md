@@ -189,3 +189,24 @@ Sumber pemeriksaan PdPR (bukan buku yang boleh diedarkan semula):
 - https://www.scribd.com/document/521518334/PENDIDIKAN-ISLAM-TAHUN-3 — tugasan PdPR Tahun 3, 2021 (membezakan halaman Buku Teks dan Buku Aktiviti)
 
 **Pintu kelulusan kekal tertutup**: status `NO_GO` untuk 174 latihan sehingga benar-benar menyemak perintah latihan dan nombor halaman pada BA102001/BA103001, ejaan Jawi dan kesesuaian SP. Selepas itu barulah boleh menulis ayat BA yang tepat bagi Lesson masing-masing, uji satu halaman Word/PDF dan semak semula parity staging Web–Telegram. Tiada muat turun PDF pihak ketiga dihoskan.
+
+## Sambungan mutu RPH tanpa mengubah sumber — 7 Nov 2026
+
+**Masalah nyata:** 690 RPH aktif masih mempunyai **523 baris tambahan** dalam ruangan Bahan, termasuk nota pengesahan, halaman calon dan catatan pembetulan dalaman. Contoh: T2-L067 "PEMBETULAN DIAUDIT", T2-L003 "halaman khusus belum dipadankan", T3-L003 "Rekod padanan SP buku teks lama", T6-L001 "Pemetaan ... memerlukan semakan visual".
+
+**Pembetulan berasingan:** Fail `pi_editor_material_projection.py` menghasilkan **690 paparan draf editor**. Paparan itu hanya mengekalkan senarai bahan teras dalam `display_fields.bahan`, tetapi menyimpan **semua 523** nota asal dalam `editor_only_material_notes` bersama hash sumber `source_material_sha256` sebagai bukti asal tidak diubah. SK, SP, objektif, aktiviti, PBD dan penutup tidak dipinda.
+
+| Tahun | Draf aktif | Nota disimpan untuk editor |
+|---|---:|---:|
+| 2 | 111 | 127 |
+| 3 | 147 | 149 |
+| 4 | 151 | 54 |
+| 5 | 143 | 53 |
+| 6 | 138 | 140 |
+| **Jumlah** | **690** | **523** |
+
+Ujian baharu membandingkan 690 paparan dengan JSON sumber, memastikan semua nota kekal tetapi tidak bercampur dalam senarai bahan guru, dan semua enam rekod asal ditahan. `year2.json` hingga `year6.json` **tidak diubah**, dan projek Telegram, Web serta database tidak disentuh. Pratonton ini **untuk editor sahaja**, bukan untuk diedarkan kepada guru.
+
+**CI:** GitHub Actions **Run #72 LULUS**; 11 fail artefak diuji kewujudan dan dimuat naik. https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42320287598
+
+**Had semakan Buku Aktiviti:** Buku KSSR Semakan BA102001/BA103001 dikenal pasti dalam katalog KPM dan disenarai oleh portal sekolah. Scan teks pada salinan web Scribd tidak boleh digunakan untuk memastikan tulisan Jawi serta arahan latihan, manakala akses halaman buku sebenar melalui viewer/download tidak stabil. Oleh itu, **0** halaman dan arahan Buku Aktiviti telah diluluskan untuk dimasukkan ke dalam RPH. Penambahbaikan ini **bukan** pengesahan kualiti 80%, dan semua 690 draf kekal HOLD.
