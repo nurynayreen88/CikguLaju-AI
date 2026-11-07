@@ -47,16 +47,17 @@ class RemainingRPTFormatQA(unittest.TestCase):
                     self.assertTrue(row["sk"])
                     self.assertTrue(row["sp"])
                     if row["source_held"]:
-                        self.assertEqual(row["week"], "")
-                        self.assertFalse(row.get("a_start"))
-                        self.assertFalse(row.get("b_start"))
-                    else:
-                        self.assertIn(row["week"], master["A"])
-                        self.assertIn(row["week"], master["B"])
-                        self.assertEqual((row["a_start"],row["a_end"]),
-                                         master["A"][row["week"]])
-                        self.assertEqual((row["b_start"],row["b_end"]),
-                                         master["B"][row["week"]])
+                        self.assertTrue(row["held_source_proposal"])
+                        self.assertIs(row["held_release_approved"], False)
+                        self.assertIn("REKOD DITAHAN", row["note"])
+                        self.assertIn("REKOD DITAHAN", row["sk"])
+                        self.assertIn("REKOD DITAHAN", row["sp"])
+                    self.assertIn(row["week"], master["A"])
+                    self.assertIn(row["week"], master["B"])
+                    self.assertEqual((row["a_start"],row["a_end"]),
+                                     master["A"][row["week"]])
+                    self.assertEqual((row["b_start"],row["b_end"]),
+                                     master["B"][row["week"]])
 
     def test_arabic_298_rows_keep_unknown_standards_and_dates_explicit(self):
         counts={2:60,3:60,4:58,5:60,6:60}
