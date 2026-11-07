@@ -74,7 +74,23 @@ def check():
     state_cookie = headers.get("Set-Cookie", "")
     assert "cikgulaju_google_oauth_staging_state=" in state_cookie, "no OAuth state"
     assert "Secure" in state_cookie and "HttpOnly" in state_cookie, "insecure OAuth cookie"
-    print("PASS: isolated staging Google login readiness; no live OAuth or RPH/payments tested.")
+
+    # Follow only the first, public redirect into *staging Supabase Auth*.
+    # Do NOT follow the resulting Google provider redirect or submit credentials.
+    auth_request = Request(target.geturl(), headers={
+        "Accept": "text/html", "User-Agent": "CikguLaju-Staging-Smoke/1",
+    })
+    try:
+        with opener.open(auth_request, timeout=25) as provider:
+            provider_status, provider_headers = provider.status, provider.headers
+    except HTTPError as exc:
+        provider_status, provider_headers = exc.code, exc.headers
+    assert provider_status in (302, 303, 307), (
+        "staging Supabase Google provider not redirecting", provider_status)
+    google_target = urlsplit(provider_headers.get("Location", ""))
+    assert google_target.scheme == "https" and google_target.hostname == "accounts.google.com", (
+        "Google provider unavailable or wrong destination", google_target.hostname)
+    print("PASS: staging endpoint, login security, PKCE redirect and enabled Google provider; no user login performed.")
 
 
 if __name__ == "__main__":
