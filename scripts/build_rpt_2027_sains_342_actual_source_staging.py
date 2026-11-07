@@ -81,6 +81,37 @@ def _missing_35_from_official_dskp():
         raise ValueError("Sains year breakdown of source crosswalk is wrong")
     return mapping
 
+def _kssr2017_official_code_sets_y4_y5():
+    """Original-PDF code membership only; not an academic PdP signoff."""
+    raw=json.loads((ROOT/"rpt_2027/sains/"
+                    "kssr2017_y4_y5_186_official_sp_source_extraction_20261107_DRAF.json")
+                   .read_text("utf-8"))
+    index=json.loads((ROOT/"rpt_2027/sains/"
+                      "kssr2017_t4_t5_official_sp_code_ranges_20261107.json")
+                     .read_text("utf-8"))
+    if (raw.get("total_official_sp")!=186 or raw.get("academic_release_ready") is not False
+        or raw.get("ready_for_web_telegram") is not False
+        or raw.get("status")!="STAGING_KSSR2017_SOURCE_STATEMENTS_FROM_ORIGINAL_PDF_EXTRACT_PENDING_VISUAL_SIGNOFF"):
+        raise ValueError("KSSR2017 official Year4/5 source index is missing/approved")
+    result={}
+    for entry in index["years"]:
+        year=entry["year"]
+        if year not in (4,5) or year in result:
+            raise ValueError("Unknown/duplicated original source year")
+        expected={f"{sk}.{i}" for sk,last in entry["sk_sp_max_suffix"].items()
+                  for i in range(1,last+1)}
+        records=[r for r in raw["rows"] if r.get("year")==year]
+        codes={r.get("sp_code") for r in records}
+        if (codes!=expected or len(records)!=len(expected)
+            or raw["source"][str(year)]["official_pdf_sha256"]!=entry["sha256"]
+            or raw["source"][str(year)]["visual_signoff_count"]!=0
+            or any(r["visual_signoff"] is not False for r in records)):
+            raise ValueError(f"Sains T{year} original code ledger failed integrity check")
+        result[year]=codes
+    if {y:len(v) for y,v in result.items()}!={4:91,5:95}:
+        raise ValueError("Original KSSR2017 Year4/5 source inventory incomplete")
+    return result
+
 def _proposed_week_slots(master):
     # NO fiction of exact lesson dates or teacher timetable. Skip first
     # transition week, the all-state disruption week M06, and M44 closing.
@@ -95,6 +126,7 @@ def source_records():
     master=load_calendar_weeks()
     fix,book=_year3_ledgers()
     dskp_missing=_missing_35_from_official_dskp()
+    official_2017=_kssr2017_official_code_sets_y4_y5()
     seen_dskp_missing=set()
     years={}
     with TemporaryDirectory(prefix="cikgulaju_sains_rpt_ro_") as tmp:
@@ -159,6 +191,9 @@ def source_records():
                 if not unit or not focus:
                     raise ValueError(f"Year{year} {pdp_code}: original PdP title/unit blank")
                 note=f"{pdp_code} | v25.82: {_normalize(raw.get('verification_status'))}. {HOLD}"
+                official_membership=(sp in official_2017[year] if year in (4,5) else None)
+                if official_membership is False:
+                    note+=f" AMARAN: kod SP {sp} TIADA dalam DSKP KSSR2017 Tahun {year} asal; wajib petakan semula sebelum RPT pengguna."
                 if extract:
                     note+=f" SP KPM DSKP asli PDF hlm {extract['pdf_page']} (teks lajur SP)."
                 if year==3:
@@ -190,6 +225,7 @@ def source_records():
                     # is NOT an independently signed-off SK/SP-to-PdP match.
                     curriculum_text_matched=False,
                     source_statement_available=True,
+                    official_kssr2017_code_membership=official_membership,
                     academic_release_approved=False,
                     live_download_verified=False,
                     curriculum_provenance=curriculum_provenance,
