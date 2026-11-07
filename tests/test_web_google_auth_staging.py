@@ -137,7 +137,19 @@ class GoogleStagingRoutes(unittest.TestCase):
         status = self.client.get("/api/auth/google/status", base_url=self.base)
         self.assertEqual(status.status_code, 200)
         self.assertFalse(status.json["dashboard_access"])
-        out = self.client.post("/api/auth/google/logout", base_url=self.base)
+        # A forged cross-origin POST must not change the Google-only session.
+        malicious = self.client.post("/api/auth/google/logout",
+                                     base_url=self.base,
+                                     headers={"Origin": "https://attacker.example",
+                                              "Sec-Fetch-Site": "cross-site"})
+        self.assertEqual(malicious.status_code, 403)
+        self.assertEqual(self.client.get("/api/auth/google/status",
+                                         base_url=self.base).status_code, 200)
+        self.assertEqual(self.client.post("/api/auth/google/logout",
+                                          base_url=self.base).status_code, 403)
+        out = self.client.post("/api/auth/google/logout", base_url=self.base,
+                               headers={"Origin": self.base,
+                                        "Sec-Fetch-Site": "same-origin"})
         self.assertEqual(out.status_code, 200)
         self.assertEqual(self.client.get("/api/auth/google/status",
                                          base_url=self.base).status_code, 401)
