@@ -309,13 +309,19 @@
       "skill": "Mendengar",
       "sp_candidate": {
         "code": "1.2.2",
-        "text": "Mendengar untuk memberikan respons terhadap ucapan yang sopan mengikut situasi: ucapan selamat, ucapan penghargaan dan permohonan maaf.",
+        "text": "Mendengar untuk memberikan respons terhadap ucapan yang sopan mengikut situasi ;",
         "source_pdf_pages_one_based": [
           18,
           20
         ],
         "evidence_kind": "BPK_PENATARAN_SLIDE",
-        "final_dk_verified": false
+        "final_dk_verified": false,
+        "enumerated_source_items": [
+          "ucapan selamat",
+          "ucapan penghargaan",
+          "permohonan maaf"
+        ],
+        "transcription_note": "The PDF contains separate enumerated items i, ii, iii with inconsistent punctuation; these are represented as structured subitems without inventing an official final DK text."
       },
       "title": "Menjawab ucapan mengikut situasi",
       "objective_candidate": "Murid memberi respons sopan terhadap sekurang-kurangnya satu ucapan selamat, penghargaan dan permohonan maaf.",
