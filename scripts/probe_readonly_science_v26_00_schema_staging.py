@@ -60,5 +60,15 @@ print("SAINS_JOINED_STANDARD_COUNTS",conn.execute(
     "WHERE lower(r.subject)='sains' "
     "GROUP BY r.year_label,r.academic_year ORDER BY r.year_label,r.academic_year"
 ).fetchall())
+print("MATH_STANDARDS_BY_YEAR",conn.execute(
+    "SELECT year_label,count(*),count(DISTINCT sp_code),"
+    "sum(CASE WHEN verified=1 THEN 1 ELSE 0 END) FROM curriculum_standards "
+    "WHERE subject='Matematik' GROUP BY year_label ORDER BY year_label"
+).fetchall())
+print("MATH_YEAR2_STANDARD_SAMPLES",conn.execute(
+    "SELECT sk_code,substr(sk_text,1,90),sp_code,substr(sp_text,1,140) "
+    "FROM curriculum_standards WHERE subject='Matematik' AND year_label='Tahun 2' "
+    "ORDER BY sp_code LIMIT 6"
+).fetchall())
 conn.close()
 DEST.unlink(missing_ok=True)
