@@ -70,5 +70,29 @@ class Year1TrainingAlignmentTests(unittest.TestCase):
         self.assertEqual(diff[0]["code_list"], ["3.1.1", "3.2.1", "3.2.2", "3.2.3"])
         self.assertFalse(r["reconciliation"]["auto_relabel_or_delete_codes"])
 
+    def test_alam_manusia_model_is_review_only_and_timings_consistent(self):
+        doc = data("alam_manusia_pasukan_keselamatan_team_teaching_20261107.json")
+        self.assertEqual(doc["status"], "REVIEW_DRAFT_NOT_READY")
+        self.assertFalse(doc["source"]["reference_codes"][0]["final_dk_verified"])
+        self.assertEqual([x["code"] for x in doc["source"]["reference_codes"]], ["3.1.11", "3.1.12"])
+        rph = doc["rph"]
+        self.assertEqual(rph["class_size_example"], 30)
+        self.assertEqual(rph["proposed_duration_minutes"], 60)
+        self.assertEqual(sum(step["minutes"] for step in rph["stages"]), 60)
+        self.assertEqual(len(rph["stages"]), 5)
+        self.assertIsNone(rph["official_sk"])
+        self.assertIsNone(rph["official_sp"])
+        self.assertIsNone(rph["official_spi"])
+        self.assertIsNone(rph["assessment"]["tp_claimed"])
+        self.assertFalse(rph["approved_by_teacher"])
+        self.assertFalse(rph["approved_for_web"])
+        self.assertFalse(rph["approved_for_telegram"])
+        self.assertFalse(rph["rpt_scheduled"])
+        for stage in rph["stages"]:
+            self.assertTrue(stage["teacher_A"])
+            self.assertTrue(stage["teacher_B"])
+            self.assertTrue(stage["pupils"])
+
+
 if __name__ == "__main__":
     unittest.main()
