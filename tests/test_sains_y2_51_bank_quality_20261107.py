@@ -57,7 +57,7 @@ class TestYear2ScienceBank(unittest.TestCase):
           CORRECTED_CANDIDATE_TITLE["3.1.3"],
           "sp":"3.1.3","tajuk":"legacy inheritance",
           "kps":kps_for("3.1.3"), "book_page_cue":"28",
-          "activity_book":activity_for(2,"SCI-Y2-PDP-003","3.1.3"), "source_discrepancy":
+          "activity_book":activity_for(2,"SCI-Y2-PDP-003","3.1.3"), "pbd_alternative":"", "source_discrepancy":
           Y2_SOURCE_CONFLICTS["3.1.3"], **BANK["3.1.3"],
         }
         md=markdown(item)
