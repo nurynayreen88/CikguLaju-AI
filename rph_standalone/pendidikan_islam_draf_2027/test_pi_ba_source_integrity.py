@@ -13,6 +13,9 @@ class SourceIntegrityTests(unittest.TestCase):
         for year, source in EXPECTED.items():
             self.assertEqual(source["stream"],"KSSR_SEMAKAN_ARUS_PERDANA")
             self.assertIs(check_source(year,source["url"])["allowed_for_review"],True)
+            self.assertTrue(source["school_subject_panel_viewer_page"].startswith("https://sites.google.com/moe-dl.edu.my/"))
+            self.assertTrue(source["school_panel_lists_buku_aktiviti_title"])
+            self.assertFalse(source["school_panel_proves_exact_printed_page"])
             self.assertIs(check_source(year,source["url"])["ready_for_teacher"],False)
 
     def test_kssrpk_aliases_are_explicitly_blocked(self):
