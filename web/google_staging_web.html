@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ms">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>CikguLaju — Web Google (Ujian Staging)</title>
+<style>
+:root{font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;color:#183c33;background:#f3f8f5}
+*{box-sizing:border-box}body{margin:0;padding:18px}main{max-width:760px;margin:4vh auto}
+header{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.brand{font-size:1.15rem;font-weight:800;color:#087568}a{color:#087568}
+h1{font-size:1.9rem;line-height:1.2;margin:23px 0 8px}p{color:#536d61}
+.card{background:white;border:1px solid #d8e6de;border-radius:16px;padding:24px;margin:18px 0}
+.notice{background:#f3f7f5;padding:12px 15px;border-left:3px solid #849e91;border-radius:6px}
+label{display:block;font-weight:680;margin:13px 0 6px}select{display:block;width:100%;padding:11px 14px;font:inherit;border:1px solid #b7cec1;border-radius:10px;background:white;color:#183c33}
+button{padding:12px 20px;border:0;border-radius:11px;background:#087568;color:white;font:inherit;font-weight:700;cursor:pointer}
+button:disabled{opacity:.45;cursor:not-allowed}section[hidden]{display:none}
+#results ul{padding-left:20px}#results li{margin:10px 0}small{color:#586e64}
+</style>
+</head>
+<body><main>
+<header><span class="brand">CikguLaju AI</span><a href="/google-staging-account">Akaun Saya</a></header>
+<h1>Pilih Lesson / PdP</h1>
+<p>Ini paparan aliran Web menggunakan akaun Google yang telah disahkan. Pilihan kurikulum diambil daripada sumber Web sedia ada, bukan senarai rekaan.</p>
+<p class="notice"><strong>Mod ujian staging:</strong> Setakat ini hanya Tahun 2–6 bagi beberapa subjek yang mempunyai inventori setempat. Muat turun RPH dan potongan 10 janaan masih dikunci sehingga integrasi akaun/kuota utama selesai.</p>
+<section class="card">
+<div><label for="year">Tahun</label><select id="year"><option value="">Pilih Tahun</option></select></div>
+<section id="subjectBox" hidden><label for="subject">Subjek</label><select id="subject"><option value="">Pilih Subjek</option></select></section>
+<section id="componentBox" hidden><label for="component">Komponen PJPK</label><select id="component"><option value="">Pilih Komponen</option><option value="PJ">Pendidikan Jasmani</option><option value="PK">Pendidikan Kesihatan</option></select></section>
+<section id="unitBox" hidden><label for="unit">Unit / Tajuk</label><select id="unit"><option value="">Pilih Unit</option></select></section>
+<section id="lessonBox" hidden><label for="lesson">Lesson / PdP</label><select id="lesson"><option value="">Pilih Lesson / PdP</option></select></section>
+<p><button type="button" id="show" hidden>Papar Bahan</button></p>
+</section>
+<section class="card" id="results" hidden aria-live="polite">
+<h2>Bahan untuk Lesson / PdP dipilih</h2><p id="chosen"></p>
+<ul><li>RPH Word — belum boleh dimuat turun</li><li>RPH PDF — belum boleh dimuat turun</li></ul>
+<p><small>10 janaan staging tidak ditolak dengan paparan ini. Kami tidak menghidupkan penjana sehingga penjana dan kuota benar-benar tersambung.</small></p>
+</section>
+<p id="message" role="status" aria-live="polite"></p>
+</main>
+<script>
+'use strict';
+const get=id=>document.getElementById(id);
+const boxes={subject:'subjectBox',component:'componentBox',unit:'unitBox',lesson:'lessonBox'};
+const api='/api/google-staging/web/catalog';
+let version=0;
+const selected=()=>({year:get('year').value,subject:get('subject').value,
+ component:get('component').value,unit:get('unit').value,lesson:get('lesson').value});
+const clear=(name)=>{
+ const s=get(name);s.length=1;s.selectedIndex=0;
+ if(boxes[name])get(boxes[name]).hidden=true;
+};
+const reset=(from)=>{
+ const steps=['subject','component','unit','lesson'];
+ for(const item of steps.slice(steps.indexOf(from)))clear(item);
+ get('show').hidden=true;get('results').hidden=true;get('message').textContent='';
+};
+const fill=(id,items)=>{
+ const s=get(id);
+ for(const item of items){
+   const opt=document.createElement('option');
+   opt.value=item.value;opt.textContent=item.label;s.appendChild(opt);
+ }
+ get(boxes[id]).hidden=false;
+};
+const load=async(url)=>{
+ const r=await fetch(url,{credentials:'same-origin',cache:'no-store'});
+ if(r.status===401){location.assign('/google-staging-login');throw Error('Sesi tamat');}
+ if(!r.ok)throw Error('Sumber kurikulum belum tersedia');
+ const data=await r.json();
+ if(data.google_verified!==true||data.staging_only!==true||
+    data.rph_generation_enabled!==false)throw Error('Status staging tidak sah');
+ return data;
+};
+const query=(fields)=>api+'?'+new URLSearchParams(fields);
+async function stage(){
+ const n=++version, {year,subject,component,unit}=selected();
+ if(!year){reset('subject');return;}
+ if(!subject){reset('component');get(boxes.subject).hidden=false;return;}
+ if(subject==='PJPK'&&!component){reset('unit');get(boxes.component).hidden=false;return;}
+ const params={year,subject};
+ if(subject==='PJPK')params.component=component;
+ try{
+  if(!unit){
+    const d=await load(query(params));if(n!==version)return;
+    clear('unit');clear('lesson');fill('unit',d.items);
+  }else{
+    params.unit=unit;
+    const d=await load(query(params));if(n!==version)return;
+    clear('lesson');fill('lesson',d.items);
+  }
+ }catch(e){if(n===version)get('message').textContent=e.message;}
+}
+get('year').addEventListener('change',()=>{
+ reset('subject');
+ if(get('year').value)get(boxes.subject).hidden=false;
+ version++;
+});
+get('subject').addEventListener('change',()=>{
+ reset('component');
+ if(!get('subject').value)return;
+ if(get('subject').value==='PJPK'){get(boxes.component).hidden=false;return;}
+ stage();
+});
+get('component').addEventListener('change',()=>{reset('unit');if(get('component').value)stage();});
+get('unit').addEventListener('change',()=>{reset('lesson');if(get('unit').value)stage();});
+get('lesson').addEventListener('change',()=>{
+ get('results').hidden=true;
+ get('show').hidden=!get('lesson').value;
+});
+get('show').addEventListener('click',async()=>{
+ const n=++version, d=selected();
+ if(!d.year||!d.subject||!d.unit||!d.lesson)return;
+ try{
+  const url='/api/google-staging/web/materials?'+new URLSearchParams(d);
+  const r=await fetch(url,{credentials:'same-origin',cache:'no-store'});
+  if(r.status===401){location.assign('/google-staging-login');return;}
+  if(!r.ok)throw Error('Bahan belum boleh dipaparkan');
+  const result=await r.json();
+  if(n!==version)return;
+  if(result.staging_only!==true||result.rph_generation_enabled!==false||
+     result.trial_debited!==false)throw Error('Pengesahan staging gagal');
+  get('chosen').textContent=result.lesson+
+    (result.textbook_ref?' — '+result.textbook_ref:'');
+  get('results').hidden=false;
+ }catch(e){if(n===version)get('message').textContent=e.message;}
+});
+(async()=>{
+ try{
+  const d=await load(api);
+  const y=get('year');
+  for(const year of d.years){
+    const opt=document.createElement('option');
+    opt.value=String(year);opt.textContent='Tahun '+year;y.appendChild(opt);
+  }
+  fill('subject',d.subjects);get(boxes.subject).hidden=true;
+ }catch(e){get('message').textContent=e.message;}
+})();
+</script>
+</body></html>
