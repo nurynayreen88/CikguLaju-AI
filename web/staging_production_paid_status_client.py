@@ -8,6 +8,7 @@ Never write production or staging entitlement rows or spend trial credits.
 from datetime import datetime, timezone
 import json
 import os
+import time
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, build_opener, HTTPRedirectHandler, HTTPSHandler
 
@@ -15,6 +16,9 @@ PROD_URL = "https://cikgulaju-web.onrender.com/internal/identity/v1/entitlements
 SOURCE = "cikgulaju-prod-entitlements-v1"
 STAGING_URL = "https://eqrcjlnvcytkgazptbor.supabase.co"
 MAX_RESPONSE = 2048
+COLD_START_TIMEOUT = 55  # Render free Web can require >20 s to wake.
+GATEWAY_RETRY_TIMEOUT = 25
+GATEWAY_RETRY_BACKOFF = 2
 
 
 class PaidStatusBridgeUnavailable(RuntimeError):
@@ -52,10 +56,23 @@ def read_paid_status(telegram_uid, cfg, *, transport=None, now=None):
                            "Content-Type": "application/json"})
     try:
         opener = transport or build_opener(HTTPSHandler(), NoRedirects())
-        with opener.open(req, timeout=8) as res:
-            raw = res.read(MAX_RESPONSE + 1)
-            if res.status != 200 or len(raw) > MAX_RESPONSE:
-                raise PaidStatusBridgeUnavailable("Invalid production status reply")
+        def read_response(seconds):
+            with opener.open(req, timeout=seconds) as res:
+                raw = res.read(MAX_RESPONSE + 1)
+                if res.status != 200 or len(raw) > MAX_RESPONSE:
+                    raise PaidStatusBridgeUnavailable("Invalid production status reply")
+                return raw
+
+        try:
+            raw = read_response(COLD_START_TIMEOUT)
+        except HTTPError as exc:
+            # Render's free Web proxy may reply 502/503 while its WSGI
+            # instance wakes. A single read-only retry is safe; 401/403/404
+            # MUST NOT be retried as they indicate auth/account failure.
+            if exc.code not in (502, 503, 504):
+                raise
+            time.sleep(GATEWAY_RETRY_BACKOFF)
+            raw = read_response(GATEWAY_RETRY_TIMEOUT)
         payload = json.loads(raw)
         if (not isinstance(payload, dict)
                 or set(payload) != {"source", "telegram_user_id", "registered",
@@ -88,7 +105,7 @@ def read_paid_status(telegram_uid, cfg, *, transport=None, now=None):
     except HTTPError as exc:
         if exc.code == 404:
             raise PaidStatusProductionAccountMissing("Production account not found") from None
-        raise PaidStatusBridgeUnavailable("Production status source unavailable") from None
+        raise PaidStatusBridgeUnavailable("private_bridge_http_" + str(exc.code)) from None
     except (URLError, OSError, TimeoutError, ValueError, TypeError, KeyError):
         raise PaidStatusBridgeUnavailable("Production status source unavailable") from None
 
