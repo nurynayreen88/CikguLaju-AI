@@ -92,7 +92,7 @@ def _private_bridge_canary():
     try:
         read_paid_status(9223372036854775807, config)
     except PaidStatusProductionAccountMissing:
-        app.logger.info("private paid-status bridge canary: authenticated, expected missing sentinel")
+        app.logger.warning("staging private paid-status bridge PASS: authenticated; missing sentinel 404")
     except PaidStatusBridgeUnavailable as exc:
         app.logger.warning("private paid-status bridge canary unavailable: %s", exc)
     except Exception as exc:
@@ -100,7 +100,7 @@ def _private_bridge_canary():
         app.logger.warning("private paid-status bridge canary unexpected: %s",
                            type(exc).__name__)
     else:
-        app.logger.info("private paid-status bridge canary: authenticated")
+        app.logger.warning("staging private paid-status bridge PASS: authenticated response")
 
 
 def _maybe_start_private_bridge_canary():
