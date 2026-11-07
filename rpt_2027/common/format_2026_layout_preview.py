@@ -187,7 +187,7 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
     def source_pdf_link(url, page_number):
         """A user-clickable original source, without treating it as signoff."""
         if (not isinstance(url,str)
-            or not re.fullmatch(r"https://drive\\.google\\.com/file/d/[A-Za-z0-9_-]{20,}/view",url)
+            or not re.fullmatch(r"https://drive\.google\.com/file/d/[A-Za-z0-9_-]{20,}/view",url)
             or type(page_number) is not int or not 1 <= page_number <= 300):
             raise ValueError("Invalid untrusted DSKP source link or PDF page")
         label=f"Buka DSKP asal (halaman PDF {page_number})"
