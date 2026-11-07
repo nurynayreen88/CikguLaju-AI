@@ -6,7 +6,6 @@ one A4 page; DOCX are compact A4 templates pending visual Word-render QA.
 ALL files stamped DRAF, never upload as user-facing approved materials.
 """
 from __future__ import annotations
-from tools.render_sains_y3_3_secondary_sp_pbd_20261107 import TASKS as SECONDARY_PBD, stem as secondary_stem
 import csv
 import io
 import os
@@ -30,6 +29,7 @@ import sys
 ROOT=Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0,str(ROOT))
+from tools.render_sains_y3_3_secondary_sp_pbd_20261107 import TASKS as SECONDARY_PBD, stem as secondary_stem
 from web.sains_y3_rph_activity_preview_20261106 import adapt_rows, source_ledgers
 
 OUTPUT=ROOT/"build"/"sains_y3_45_rph_REVIEW_ONLY_20261106"
