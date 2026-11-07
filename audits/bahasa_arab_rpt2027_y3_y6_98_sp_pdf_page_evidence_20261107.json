@@ -1,16 +1,132 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "audit_date": "2026-11-07",
-  "scope": "Source-page index for all unique DSKP SP codes referenced by staged Bahasa Arab RPT Year3-6. Not a full-statement crosswalk.",
-  "status": "STAGING_CODE_AND_PDF_PAGE_VERIFIED_ONLY",
-  "method": "Read authenticated Drive source PDFs via PyMuPDF. Locate source code text and corresponding PDF page; spot-check table layout visually (Year3, Year4, Year5). No OCR and no invented SK/SP statements.",
+  "scope": "Source-page index for all 117 unique DSKP SP codes referenced by staged Bahasa Arab RPT Year2-6. Not a full-statement crosswalk.",
+  "status": "STAGING_117_CODE_AND_PDF_PAGE_VERIFIED_ONLY",
+  "method": "Years3-6: original Drive PDF code positions in PyMuPDF, with spot checks against page image. Year2: rendered PDF pages 31-38 inspected directly; printed Arabic-Indic SP codes read visually because extracted numeral glyphs are defective. No OCR and no invented standards.",
   "year2": {
     "unique_rpt_sp_codes": 19,
     "pdf_pages": 44,
     "pdf_sha256": "97b3c0a5b31b3bb96d4b2e4a0ef72a53d64254e110a0c476ac130a360499d7af",
     "source_url": "https://drive.google.com/file/d/1WY_c69UshDm3jHzVK86G2xfu77UUkGYO/view",
-    "status": "SOURCE_PDF_REPEATED_CODE_GLYPH_MAPPING_NEEDS_VISUAL_CODE_BY_CODE",
-    "note": "PDF text layer yields code 1.1.1 repeatedly; code absence in extracted text does not mean missing DSKP."
+    "status": "SOURCE_19_CODE_PAGES_VISUALLY_LOCATED_FULL_TEXT_PENDING",
+    "note": "Code glyph extraction repeats 1.1.1; printed codes on rendered pages 31-38 were manually checked. These page anchors do not verify Arabic full statement text or per-PdP pedagogy.",
+    "entries": [
+      {
+        "sp_code": "1.1.1",
+        "pdf_page": 31,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "1.1.2",
+        "pdf_page": 31,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "1.2.1",
+        "pdf_page": 31,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "1.2.2",
+        "pdf_page": 31,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "1.3.1",
+        "pdf_page": 32,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "1.3.2",
+        "pdf_page": 32,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "1.4.1",
+        "pdf_page": 33,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "1.4.5",
+        "pdf_page": 33,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "2.1.1",
+        "pdf_page": 34,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "2.2.1",
+        "pdf_page": 35,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "2.2.2",
+        "pdf_page": 35,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "2.3.1",
+        "pdf_page": 35,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "2.3.2",
+        "pdf_page": 35,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "2.3.5",
+        "pdf_page": 35,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "2.5.1",
+        "pdf_page": 36,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "3.1.1",
+        "pdf_page": 37,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "3.2.1",
+        "pdf_page": 37,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "3.3.1",
+        "pdf_page": 37,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "3.4.1",
+        "pdf_page": 38,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      }
+    ]
   },
   "years": [
     {
@@ -641,8 +757,11 @@
   "summary": {
     "year3to6_unique_codes": 98,
     "year3to6_page_located": 98,
-    "year2_page_located": 0,
+    "year2_page_located": 19,
     "full_arabic_statement_signoffs": 0,
-    "production_changes": 0
+    "production_changes": 0,
+    "all_year2to6_unique_codes": 117,
+    "all_year2to6_pdf_page_located": 117,
+    "year2_visual_page_review": true
   }
 }
