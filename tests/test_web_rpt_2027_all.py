@@ -44,8 +44,12 @@ class AllSubjectRPTTests(unittest.TestCase):
         self.assertEqual(len(data["subjects"]), 12)
         self.assertEqual(data["total_rpt"], 56)
         bm = next(s for s in data["subjects"] if s["code"] == "bahasa_melayu")
-        self.assertTrue(bm["years"][0]["pdf_ready"])
-        self.assertFalse(bm["years"][0]["download_enabled"])
+        by_year={r["year"]:r for r in bm["years"]}
+        self.assertFalse(by_year[1]["pdf_ready"])
+        self.assertFalse(by_year[1]["download_enabled"])
+        self.assertIn("KP2027",by_year[1]["status"])
+        self.assertTrue(by_year[2]["pdf_ready"])
+        self.assertFalse(by_year[2]["download_enabled"])
         download = self.client.get("/api/rpt/2027/all/bahasa_melayu/2.pdf")
         self.assertEqual(download.status_code, 403)
 
