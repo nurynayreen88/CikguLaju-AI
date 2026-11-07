@@ -473,3 +473,46 @@ RPT sumber **2026** `Rozayus_RPT_Pendidikan_Islam_Tahun_2_SK_2026.docx` (Drive I
 RPT **2027** `RPT_Pendidikan_Islam_Tahun_2_2027_CikguLaju.pdf` (Drive ID `1R2FNyT0CYb_WTMiw99lnZW9GuPaatz8w`, SHA-256 `86a8e6fb599eb0f65f3a0a888cb29d636223c75896718d058886076a95f6c05d`), PDF **p11** (PdP032), **p12** (PdP035) dan **p14** (PdP038), mengekalkan urutan ini dan dengan jelas menandakan overlap sebagai *belum pasti ulang kaji atau kesilapan sumber*.
 
 **Keputusan penyiasatan:** pertindihan diwarisi; niat asal pengulangan itu **belum dapat dibuktikan**. Tiada julat ayat dipinda, tiada RPH T2-L035 dijana, rekod asal kekal `withheld=true` dan `verified_ready=false`. Modul `pi_t2_l035_rpt_2026_2027_overlap_audit.py` dan ujian mengunci bukti ini untuk semakan guru/pakar. **Tidak boleh secara automatik menukar kepada 225–245** semata-mata untuk menutup pertindihan tanpa pengesahan keputusan sumber.
+
+
+## Audit al-Quran Tahun 6: Juzuk 25 **67 ayat belum dipetakan**, Juzuk 29 Lesson 117 bersambung (7 November 2026)
+
+Saya membandingkan **kesemua tujuh slot tasmi' Juzuk 25** dalam RPT Pendidikan Islam Tahun 6 CikguLaju 2027 sumber Drive (`1T380Ot_gG58JhxanELMM0z-gr6wmSJcL`, SHA-256 `b39a07b2dd7ef6062912f12fd43e63f87a98b13bde3885c925e88a37dac70e5b`) dengan struktur juzuk/jumlah ayat daripada <https://qurankdn.moha.gov.my/myquran/index.php/juzuk/index>, <https://quran.com/ms/surahs> dan <https://www.amalkit.com/quran/juz-25>.
+
+**Juzuk 25 bermula Fussilat 41:47 dan tamat al-Jathiyah 45:37**; ia mengandungi **246 ayat**. RPT mempunyai tujuh PdP berkenaan:
+- **PdP 002:** asy-Syura 42:1–32
+- **PdP 006 (ditahan):** asy-Syura 42:33–51
+- **PdP 010:** asy-Syura 42:52–53 + az-Zukhruf 43:1–33
+- **PdP 014 (ditahan):** az-Zukhruf 43:34–73
+- **PdP 018 (ditahan):** ad-Dukhan 44:40–59
+- **PdP 022:** al-Jathiyah 45:1–22
+- **PdP 026:** al-Jathiyah 45:23–33 + al-Ahqaf 46:1–14 (bahagian al-Ahqaf ialah Juzuk **26**, tidak diambil kira dalam liputan Juzuk 25).
+
+Jumlah ayat Juzuk 25 yang secara nyata ditugaskan oleh RPT tersebut: **179/246**. **Empat jurang tidak bertindih** yang masih tidak disenaraikan:
+
+| Surah | Ayat yang tidak dipetakan | Bilangan |
+|---|---|---:|
+| Fussilat (41) | 47–54 | **8** |
+| az-Zukhruf (43) | 74–89 | **16** |
+| ad-Dukhan (44) | 1–39 | **39** |
+| al-Jathiyah (45) | 34–37 | **4** |
+| **Jumlah** | | **67** |
+
+**Tidak tepat** menggelar susunan RPT ini khatam Juzuk 25 yang lengkap selagi editor belum menyelesaikan pembahagian 67 ayat tersebut. Satu keputusan guru/editor diperlukan sama ada memperuntuk slot berasingan, merangka semula beberapa PdP atau meminda sasaran. **Tiada 67 ayat ini disisip automatik** ke RPH mahupun RPT. Audit `pi_t6_juz25_sequence_gap_audit.py` memeriksa bilangan, tiada pertindihan dan keseluruhan julat supaya regresi dapat dikesan.
+
+### Juzuk 29: Lesson 117 dan dua jirannya
+
+RPT yang sama menunjukkan **PdP 113 → PdP 117 → PdP 121** sebagai berikut:
+- PdP 113: al-Ma'arij 70:1–39.
+- PdP 117 (ditahan): al-Ma'arij 70:40–44, Nuh 71:1–28, al-Jinn 72:1–13.
+- PdP 121: al-Jinn 72:14–28.
+
+Sumber MYQURAN/KDN dan Quran.com mengesahkan bilangan ayat surah 70/71/72 ialah **44+28+28=100**. Gabungan tiga PdP itu **menutup tepat 100/100 ayat** pada ketiga-tiga surah, tanpa bertindih atau jurang **pada segmen yang disemak**. Ini **tidak** mengesahkan keseluruhan Juzuk 29. Surah az-Zumar tidak termasuk dalam Juzuk 29 dan tidak dimasukkan semula. Audit `pi_t6_juz29_l117_continuity_review.py` mengunci semakan segmen ini.
+
+### Empat draf RPH tasmi' untuk semakan editor sahaja
+
+Fail baharu `pi_t6_held_quran_editor_candidates.json` menyediakan **empat draf Bahasa Melayu Rumi (belum Jawi)** bagi **T6-L006, T6-L014, T6-L018, T6-L117**. Setiap draf mengandungi hasil pembelajaran, set induksi, **empat langkah PdP** dengan tindakan guru dan murid, pengukuhan, PBD tasmi' individu, penutup serta bahan. Julat ayat asal disimpan sebagai **rujukan RPT**, dengan rekod surah dan julat bacaan **sebenar** setiap murid perlu diluluskan guru.
+
+Semua calon ialah **editor sahaja**, belum sesuai untuk guru menggunakan sebagai RPH rasmi. Kekurangan 67 ayat Juzuk 25 **tidak** diselesaikan oleh kewujudan empat calon ini. Reviu tajwid, alokasi ayat sebenar, tempoh PdP, ejaan Jawi dan bukti Word/PDF generator Web/Telegram juga masih tertangguh. Rekod asal katalog `year6.json` bagi **keempat-empat Lesson itu kekal `withheld=true`, tanpa `fields`**. Daripada lima Year 6 yang ditahan, T6-L060 ialah calon amali solat berasingan yang juga masih HOLD. T2-L035 ialah rekod keenam seluruh katalog yang ditahan.
+
+Ujian baharu `test_pi_t6_juz25_sequence_gap_audit.py`, `test_pi_t6_juz29_l117_continuity_review.py`, dan `test_pi_t6_held_quran_editor_candidate_review.py` serta lejar CI JSON/CSV menolak dakwaan FULL READY. **Liputan 690/690 tiga langkah hanyalah mekanikal; tiada skor kualiti akademik ≥80% yang diperakui.** Database produksi, Web, Telegram dan `main` tidak disentuh; PR #443 kekal **DRAFT/HOLD/NO_GO**.
