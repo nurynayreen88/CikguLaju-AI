@@ -7,7 +7,7 @@ import unittest
 import fitz
 
 from scripts.build_rpt_2027_sains_342_actual_source_staging import (
-    EXPECTED,source_records,build_all
+    EXPECTED,source_records,build_all,_kssr2017_official_code_sets_y4_y5
 )
 from rpt_2027.common.calendar_week_mapping_staging import load_calendar_weeks
 
@@ -60,6 +60,20 @@ class Science2027PartialRPTQA(unittest.TestCase):
                 w=r["week"]
                 self.assertEqual((r["a_start"],r["a_end"]),weeks["A"][w])
                 self.assertEqual((r["b_start"],r["b_end"]),weeks["B"][w])
+
+    def test_legacy_sains_year4_year5_2017_membership_exposed_per_pdp(self):
+        original_codes=_kssr2017_official_code_sets_y4_y5()
+        self.assertEqual({y:len(c) for y,c in original_codes.items()},{4:91,5:95})
+        for year,rows in self.yearly.items():
+            for row in rows:
+                actual=row["official_kssr2017_code_membership"]
+                if year in (4,5):
+                    self.assertEqual(actual,row["sp"] in original_codes[year])
+                    if actual is False:
+                        self.assertIn("TIADA dalam DSKP KSSR2017",row["note"])
+                        self.assertFalse(row["academic_release_approved"])
+                else:
+                    self.assertIsNone(actual)
 
     def test_year3_12_display_corrections_preserve_original_title(self):
         rows=self.yearly[3]
