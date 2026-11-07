@@ -40,6 +40,8 @@ class PIReleaseReadinessTests(unittest.TestCase):
         self.assertEqual(r["year3_awalan_prefix_examples_expert_approved"], 0)
         self.assertEqual(r["year3_book_footer_code_present_lesson_count"], 109)
         self.assertEqual(r["year3_book_footer_exception_dskp_confirmed"], 1)
+        self.assertEqual(r["year3_l146_dskp_643_645_objective_activity_pbd_revised_draft"],1)
+        self.assertEqual(r["year3_l146_expert_approved"],0)
         self.assertEqual(r["year3_tasmi_verse_lessons_not_given_fake_sp"], 37)
         self.assertEqual(r["teacher_approved_page_specific_exercises"], 0)
         self.assertEqual(r["book_activity_page_candidates"], 174)
@@ -49,8 +51,9 @@ class PIReleaseReadinessTests(unittest.TestCase):
                  "YEAR3_6433_DSKP_BOOK_FOOTER_AND_L146_OBJECTIVE_REVIEW"]
         self.assertEqual(len(issue), 1)
         self.assertEqual(issue[0]["affected_lessons"], 1)
-        self.assertIn("menyenaraikan", issue[0]["action"])
+        self.assertIn("objective 2", issue[0]["action"])
         self.assertIn("merumus", issue[0]["action"])
+        self.assertIn("DRAFT", issue[0]["action"])
         self.assertTrue(all(x["action"] for x in r["release_blockers"]))
 
     def test_year_summary_is_coherent(self):
@@ -73,6 +76,7 @@ class PIReleaseReadinessTests(unittest.TestCase):
         self.assertEqual(y["3"]["old_pdf34_cross_topic_page_hints"], 6)
         self.assertEqual(y["3"]["book_footer_sp_code_present_only"], 109)
         self.assertEqual(y["3"]["book_footer_missing_but_dskp_manually_seen"], 1)
+        self.assertEqual(y["3"]["l146_objective_activity_pbd_revised_pending_expert"],1)
         self.assertEqual(y["3"]["tasmi_verse_descriptions_without_3_level_sp"], 37)
         self.assertEqual(y["3"]["direct_dskp_textbook_sp_footer_crosschecked"], 0)
         self.assertEqual(sum(x["exact_lesson_activity_approvals"] for x in y.values()), 0)
