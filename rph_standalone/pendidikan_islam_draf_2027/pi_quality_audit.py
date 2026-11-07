@@ -66,6 +66,21 @@ def audit(root=ROOT):
                 flags.append("RUJUKAN_HALAMAN_BELUM_DISAHKAN")
             if GENERIC_PBD in fields["pentaksiran"]:
                 flags.append("PBD_TIDAK_KHUSUS_KEPADA_SP")
+            refinement = record.get("staging_pbd_refinement")
+            if refinement:
+                assert refinement.get("publication") == "HOLD"
+                assert refinement.get("content_expert_approved") is False
+                assert refinement.get("jawi_orthography_approved") is False
+                assert refinement.get("word_pdf_tested") is False
+                assert refinement.get("source_sk_sp_unchanged") is True
+                assert refinement.get("book_or_verse_reference_added") is False
+                assert GENERIC_PBD in refinement["original_pentaksiran"]
+                assert GENERIC_PBD not in fields["pentaksiran"]
+                assert fields["pentaksiran"].startswith(
+                    refinement["original_pentaksiran"].split("ڤبد اينديويدو:")[0])
+                assert refinement["assessment_criterion_review_only"] in fields["pentaksiran"]
+                assert refinement["observed_evidence_review_only"] in fields["pentaksiran"]
+                flags.append("PBD_SP_SASARAN_BELUM_DISAH_PAKAR")
             if domain == "tidak_diketahui":
                 flags.append("BIDANG_TIDAK_DIKENALI")
             enrichment = record.get("staging_enrichment")
@@ -98,6 +113,13 @@ def audit(root=ROOT):
         "short_activity_count": flag_counts["AKTIVITI_TERLALU_RINGKAS_PERLU_SEMAKAN"],
         "critical_source_review_count": flag_counts["SUMBER_KRITIKAL_BELUM_LENGKAP"],
         "generic_pbd_count": flag_counts["PBD_TIDAK_KHUSUS_KEPADA_SP"],
+        "refined_pbd_review_count": flag_counts["PBD_SP_SASARAN_BELUM_DISAH_PAKAR"],
+        "refined_pbd_review_by_year": {
+            str(y): sum(1 for r in rows
+                        if r["id"].startswith(f"T{y}-") and
+                        "PBD_SP_SASARAN_BELUM_DISAH_PAKAR" in r["flags"])
+            for y in COUNT
+        },
         "generic_pbd_by_year": {
             str(y): sum(1 for r in rows
                         if r["id"].startswith(f"T{y}-") and
