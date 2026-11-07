@@ -112,13 +112,21 @@ def _legacy_file(subject,year,*,root=ROOT):
     return path
 
 def pdf_path(subject,year,*,root=ROOT):
+    """Exact intended path, including legacy path before its PDF is installed."""
     if type(year) is not int or subject not in SUBJECTS or year not in SUBJECTS[subject][1]:
         raise ValueError("Unsupported RPT selection")
-    return _staged_file(subject,year,root=root) or _legacy_file(subject,year,root=root)
+    staged=_staged_file(subject,year,root=root)
+    if staged is not None:
+        return staged
+    spec=SUBJECTS[subject]
+    if spec[2]:
+        return Path(root)/spec[2]/(spec[3]%year)
+    return None
 
 def pdf_ready(subject,year,*,root=ROOT):
     try:
-        return pdf_path(subject,year,root=root) is not None
+        return (_staged_file(subject,year,root=root) is not None
+                or _legacy_file(subject,year,root=root) is not None)
     except ValueError:
         return False
 
