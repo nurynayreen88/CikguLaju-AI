@@ -34,7 +34,7 @@ HELD_SOURCE={
     "T6-L060":{
         "rpt_pdf_page":21,"lesson_kind":"PROPOSED_SICK_PRAYER_PRACTICAL",
         "rpt_named_content":"Solat ketika sakit; calon SP4.2.3–4.2.5",
-        "reason":"RPT explicitly labels this a CikguLaju suggested practical; verify exact DSKP SP before giving official status"},
+        "reason":"DSKP Year6 printed p34 visually confirms SP4.2.3–4.2.5; however this separate practical PdP is explicitly a CikguLaju suggestion, not a mandated additional official Lesson. Editor candidate exists separately and awaits fiqh/Jawi review"},
     "T6-L117":{
         "rpt_pdf_page":41,"lesson_kind":"JUZ29_TASMI_MIXED_SURA",
         "rpt_named_content":"المعارج 40–44; نوح 1–28; الجن 1–13",
