@@ -32,6 +32,8 @@ on:
       - 'scripts/verify_rbt_t4_textbook_pages_offline.py'
       - 'audits/rbt_t4_actual_pdf_page_code_verification_20261107.md'
       - 'tests/test_rpt_2027_rbt_32_week_illustration.py'
+      - 'scripts/build_rpt_2027_rbt_teacher_adjustable_candidate.py'
+      - 'tests/test_rpt2027_rbt_teacher_adjustable_candidate.py'
       - 'tests/test_rbt_rpt2026_week_block_evidence_staging.py'
       - 'scripts/audit_rpt2027_release_gaps_staging.py'
       - 'tests/test_rpt2027_release_gaps_staging.py'
@@ -58,6 +60,8 @@ jobs:
       - run: python -m py_compile rpt_2027/common/format_2026_layout_preview.py scripts/build_rpt_2027_standard_preview.py scripts/build_rpt_2027_second_batch_preview.py rpt_2027/common/standard_text_enrichment.py rpt_2027/common/calendar_week_mapping_staging.py scripts/audit_rpt_2027_calendar_master_staging.py rpt_2027/common/sejarah_source_enrichment_staging.py scripts/build_rpt_2027_rbt_32_week_illustration.py rpt_2027/common/rbt_truncated_title_guard_staging.py rpt_2027/common/rbt_2026_week_source_annotation_staging.py scripts/audit_rpt2027_release_gaps_staging.py scripts/verify_rbt_t4_textbook_pages_offline.py
       - name: Audit source and render each of the 13 A4 landscape PDFs
         run: python -m unittest tests.test_rpt_2027_standard_2026_layout_preview tests.test_rpt_2027_second_batch_preview tests.test_rpt_2027_calendar_master_staging tests.test_rpt_2027_rbt_32_week_illustration tests.test_rbt_rpt2026_week_block_evidence_staging tests.test_rbt_2026_source_week_notes_staging tests.test_rbt_teacher_week_allocation_staging tests.test_rpt_2027_rbt_truncated_titles tests.test_rpt_2027_rbt_t4_book_page_evidence tests.test_rpt_2027_rbt_y5_y6_book_mapping -v
+      - name: Verify teacher-adjustable 32-week RBT planning drafts
+        run: python -m unittest tests.test_rpt2027_rbt_teacher_adjustable_candidate -v
       - name: Assert current curriculum source gaps remain release-blocking
         run: |
           python -m unittest tests.test_rpt2027_release_gaps_staging -v
@@ -129,6 +133,21 @@ jobs:
                   doc[1].get_pixmap(matrix=fitz.Matrix(1.5,1.5),alpha=False).save(
                       str(file.with_suffix('.page2.png')))
           PY
+      - name: Build three teacher-adjustable 2027 RBT plans in an isolated folder
+        run: |
+          python -m scripts.build_rpt_2027_rbt_teacher_adjustable_candidate
+          python - <<'PY'
+          import fitz
+          from pathlib import Path
+          files=sorted(Path('staging/rpt_2027_seragam_2026/rbt_32week_CADANGAN_RPT_GURU_DRAF').glob('*.pdf'))
+          assert len(files)==3
+          for f in files:
+              with fitz.open(f) as pdf:
+                  assert pdf.page_count>1
+                  assert all(page.rect.width>page.rect.height for page in pdf)
+                  body=" ".join(page.get_text() for page in list(pdf)[1:])
+                  assert 'M03 (CADANGAN RPT)' in body and 'M34 (CADANGAN RPT)' in body
+          PY
       - uses: actions/upload-artifact@v4
         with:
           name: RPT2027-21-asal-dan-3-RBT-simulasi-DRAF
@@ -140,5 +159,6 @@ jobs:
             staging/rpt_2027_seragam_2026/audit_rbt_y5_y6_64_pdp_page_consistency.json
             staging/rpt_2027_seragam_2026/rbt_32week_SIMULASI/*.pdf
             staging/rpt_2027_seragam_2026/rbt_32week_SIMULASI/*.png
+            staging/rpt_2027_seragam_2026/rbt_32week_CADANGAN_RPT_GURU_DRAF/*.pdf
           if-no-files-found: error
           retention-days: 14
