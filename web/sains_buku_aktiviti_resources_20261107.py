@@ -7,6 +7,7 @@ serve copyrighted binary as app-owned media.
 """
 from __future__ import annotations
 from tools.sains_buku_aktiviti_mapping_20261107 import activity_for, is_direct_sp_match
+from tools.render_sains_y2_2_sp_alternative_pbd_20261107 import TASKS as ORIGINAL_PBD_TASKS, doc_file
 
 def proposed_material(subject,year,pdp_code,sp):
     if str(subject).strip().casefold() not in ("sains","science") or year not in (2,3):
@@ -32,4 +33,32 @@ def proposed_material(subject,year,pdp_code,sp):
         "teacher_usage_guidance":e["lesson_guidance"],
         "teacher_academic_approved":False,
         "ready_for_runtime":False,
+    }
+
+
+def proposed_alternative_pbd_material(subject,year,pdp_code,sp):
+    """Staging metadata ONLY. No invented LIVE download path or official KPM claim."""
+    if str(subject).strip().casefold() not in ("sains","science") or year!=2:
+        return None
+    task=ORIGINAL_PBD_TASKS.get(str(sp))
+    if not task or task["pdp"]!=pdp_code:
+        return None
+    book=activity_for(2,pdp_code,sp)
+    if is_direct_sp_match(book):
+        raise ValueError("Original PBD alternative cannot replace a genuine SP-matched BA")
+    file=doc_file(sp)
+    return {
+        "material_type":"PBD_ALTERNATIF_CIKGULAJU",
+        "name":f"Pentaksiran Individu Sains Tahun 2 • SP {sp}",
+        "pdp_code":pdp_code,
+        "sp":sp,
+        "word_staging_artifact":file.name,
+        "pdf_staging_artifact":file.with_suffix(".pdf").name,
+        "official_activity_book":False,
+        "relationship_to_book":"ORIGINAL_NOT_KPM_WORKBOOK",
+        "book_page_context_only":task["related_page"],
+        "book_page_sp_not_equal":task["related_sp"],
+        "teacher_academic_approved":False,
+        "ready_for_runtime":False,
+        "direct_download_url":None
     }
