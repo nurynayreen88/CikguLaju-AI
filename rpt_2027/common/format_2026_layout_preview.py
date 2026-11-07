@@ -146,6 +146,17 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
         if "RPTStandardBold" not in pdfmetrics.getRegisteredFontNames():
             pdfmetrics.registerFont(TTFont("RPTStandardBold", str(heavy)))
         font, bold = "RPTStandardRegular", "RPTStandardBold"
+    amiri_reg = Path("/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Regular.ttf")
+    amiri_bold = Path("/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Bold.ttf")
+    if amiri_reg.is_file() and amiri_bold.is_file():
+        if "RPTAmiriRegular" not in pdfmetrics.getRegisteredFontNames():
+            pdfmetrics.registerFont(TTFont("RPTAmiriRegular", str(amiri_reg)))
+        if "RPTAmiriBold" not in pdfmetrics.getRegisteredFontNames():
+            pdfmetrics.registerFont(TTFont("RPTAmiriBold", str(amiri_bold)))
+        arabic_font, arabic_heavy = "RPTAmiriRegular", "RPTAmiriBold"
+    else:
+        arabic_font, arabic_heavy = font, bold
+
 
     ink = colors.HexColor("#293944")
     line = colors.HexColor("#adb7ba")
@@ -156,8 +167,10 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
     usable = w - lm - rm
 
     def p(text, *, size=7.5, leading=11.3, strong=False, color="#263b4e", center=False):
+        uses_arabic = any("\\u0600" <= ch <= "\\u08ff" for ch in str(text))
         style = ParagraphStyle(
-            "rpt", fontName=bold if strong else font,
+            "rpt", fontName=(arabic_heavy if strong else arabic_font) if uses_arabic
+            else (bold if strong else font),
             fontSize=size, leading=leading, textColor=colors.HexColor(color),
             wordWrap="CJK", spaceBefore=0, spaceAfter=0, alignment=1 if center else 0
         )
