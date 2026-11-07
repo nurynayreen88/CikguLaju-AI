@@ -135,7 +135,8 @@
     const profile=await fetchProfile();
     const logo=await fetchLogo();
     const original=await PDF.PDFDocument.load(bytes,{ignoreEncryption:false});
-    if(original.getPageCount()<2||original.getPageCount()>300)
+    const originalCount=original.getPageCount();
+    if(originalCount<2||originalCount>300)
       throw Error("Bilangan halaman PDF sumber tidak sah.");
     const first=original.getPage(0).getSize();
     if(first.width<=first.height||first.width<400||first.width>1200||first.height<300||first.height>1000)
@@ -143,15 +144,15 @@
     const cover=drawCover(profile,logo,name,year,first.height/first.width);
     const coverBlob=await new Promise(resolve=>cover.toBlob(resolve,"image/png"));
     if(!coverBlob)throw Error("Muka depan tidak dapat disediakan.");
-    const result=await PDF.PDFDocument.create();
-    const page=result.addPage([first.width,first.height]);
-    const image=await result.embedPng(await coverBlob.arrayBuffer());
+    // Insert into the loaded document itself. This retains the original
+    // PDF page objects and existing link annotations, including internal
+    // DSKP source jumps, instead of copying pages to another document.
+    const page=original.insertPage(0,[first.width,first.height]);
+    const image=await original.embedPng(await coverBlob.arrayBuffer());
     page.drawImage(image,{x:0,y:0,width:first.width,height:first.height});
-    const originals=await result.copyPages(original,original.getPageIndices());
-    for(const p of originals)result.addPage(p);
-    if(result.getPageCount()!==original.getPageCount()+1)
+    if(original.getPageCount()!==originalCount+1)
       throw Error("Muka depan RPT gagal digabungkan.");
-    const output=await result.save({useObjectStreams:false});
+    const output=await original.save({useObjectStreams:false});
     const filename="CIKGULAJU_RPT_"+code.toUpperCase()+"_TAHUN_"+year+"_2027_DRAF_SEKOLAH.pdf";
     const download=new Blob([output],{type:"application/pdf"});
     const url=URL.createObjectURL(download),link=document.createElement("a");
