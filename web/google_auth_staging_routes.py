@@ -20,6 +20,7 @@ from flask import Blueprint, jsonify, make_response, redirect, request
 from web_google_identity_sessions import (
     issue_google_identity_ticket, verify_google_identity_ticket,
 )
+from web.google_account_store import ensure_google_staging_account, GoogleAccountUnavailable
 
 bp = Blueprint("google_auth_staging", __name__)
 STATE_COOKIE = "cikgulaju_google_oauth_staging_state"
@@ -34,6 +35,7 @@ def _config():
     base = os.environ.get("CIKGULAJU_GOOGLE_STAGING_SUPABASE_URL", "").rstrip("/")
     parsed = urlsplit(base)
     key = os.environ.get("CIKGULAJU_GOOGLE_STAGING_SUPABASE_PUBLISHABLE_KEY", "")
+    staging_service_key = os.environ.get("CIKGULAJU_GOOGLE_STAGING_SUPABASE_SERVICE_ROLE_KEY", "")
     secret = os.environ.get("CIKGULAJU_WEB_SESSION_SECRET", "")
     origin = os.environ.get("CIKGULAJU_GOOGLE_STAGING_ORIGIN", "").rstrip("/")
     host = os.environ.get("CIKGULAJU_GOOGLE_STAGING_ALLOWED_HOST", "")
@@ -52,9 +54,11 @@ def _config():
     production_supabase = os.environ.get("SUPABASE_URL", "").rstrip("/")
     if (not production_supabase or base == production_supabase
             or host == "cikgulaju-web.onrender.com"
-            or len(key) < 20 or len(secret) < 32):
+            or len(key) < 20 or len(secret) < 32
+            or len(staging_service_key) < 24):
         return None
     return {"supabase_url": base, "apikey": key, "secret": secret,
+            "staging_service_key": staging_service_key,
             "origin": origin, "host": host}
 
 
@@ -173,15 +177,16 @@ def google_callback():
             isinstance(item, dict) and item.get("provider") == "google"
             for item in providers):
             return response
-        ticket = issue_google_identity_ticket(subject, config["secret"])
-    except (RuntimeError, KeyError, TypeError, ValueError, AttributeError):
+        account_id = ensure_google_staging_account(config, subject)
+        ticket = issue_google_identity_ticket(account_id, config["secret"])
+    except (GoogleAccountUnavailable, RuntimeError, KeyError, TypeError, ValueError, AttributeError):
         return jsonify({"error": "Pengesahan Google belum tersedia"}), 503
 
     # Google identity verified, but no canonical Web user or entitlements yet.
     # Do NOT set the old Telegram login cookie or expose the existing workspace.
     success = make_response(jsonify({
         "google_verified": True, "dashboard_access": False,
-        "note": "Google telah disahkan di staging. Akses RPH menunggu migrasi akaun."
+        "note": "Identiti Google dan akaun staging telah disahkan. Akses RPH belum dibuka."
     }), 200)
     success.delete_cookie(STATE_COOKIE, path="/api/auth/google",
                           secure=True, httponly=True, samesite="Lax")
