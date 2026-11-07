@@ -41,7 +41,8 @@ class GoogleStagingProfileTest(unittest.TestCase):
         parsed = urlsplit(called_url)
         self.assertEqual(parsed.netloc, "abcdefghijklmnopqrst.supabase.co")
         self.assertEqual(parse_qs(parsed.query)["id"], ["eq." + UID])
-        self.assertNotIn("email", called_url)
+        self.assertNotIn("email=eq.", called_url)
+        self.assertIn("google_login_email", parse_qs(parsed.query)["select"][0])
         self.assertNotIn("telegram_user_id", called_url)
 
     def test_forged_ids_never_read_db(self):
@@ -81,7 +82,7 @@ class GoogleStagingProfileTest(unittest.TestCase):
                 [{"id": UID, "display_name": None, "google_trial_remaining": 0}])) as read:
             data = google_staging_account_profile(CONF, UID)
         self.assertEqual(data, {"display_name": "Guru CikguLaju",
-                                "trial_remaining": 0})
+                                "trial_remaining": 0, "login_email": None})
         self.assertEqual(read.call_args.args[0].get_method(), "GET")
 
 
