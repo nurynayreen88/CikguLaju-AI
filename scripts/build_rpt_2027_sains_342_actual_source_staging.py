@@ -28,7 +28,7 @@ from web.sains_canonical_unit_preview_20261106 import canonical_science_year
 OUT=ROOT/"staging/rpt_2027_seragam_2026/sains_342_pdp_SEPARA_DRAF"
 EXPECTED={2:51,3:45,4:79,5:83,6:84}
 DECLARED_SOURCE_NAME=SOURCES["v25.82"]
-HOLD="DRAF, bukan RPT lengkap atau kandungan LIVE; agihan minggu hanya CADANGAN."
+HOLD="DRAF LEGACY: kod sumber v25.82/v26.00 T4-T6 bercanggah dengan DSKP KSSR2017 asal; BUKAN untuk digunakan guru. Agihan minggu hanya CADANGAN."
 
 def _normalize(value):
     return re.sub(r"\s+"," ",str(value or "")).strip()
