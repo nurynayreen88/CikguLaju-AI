@@ -10,6 +10,12 @@ on:
       - 'web/google_payment_store.py'
       - 'web/google_payment_staging_routes.py'
       - 'web/google_payment_admin_notify.py'
+      - 'migrations/STAGING_ONLY_web_google_identity_445.sql'
+      - 'migrations/STAGING_ONLY_web_google_payments_445.sql'
+      - 'migrations/STAGING_ONLY_web_private_receipt_bucket_445.sql'
+      - 'migrations/STAGING_ONLY_web_payment_review_rpc_445.sql'
+      - 'tests/sql/web_google_payment_fixture.sql'
+      - 'tests/sql/web_google_payment_integration.sql'
       - 'web/google_staging_login.html'
       - 'web/google_staging_payment.html'
       - 'web/google_staging_admin_payments.html'
@@ -43,3 +49,42 @@ jobs:
           python -m unittest discover -s tests -p 'test_web_provider_neutral_payment.py' -v
           python -m unittest discover -s tests -p 'test_web_google_payments_staging.py' -v
           python -m unittest discover -s tests -p 'test_web_google_payment_store.py' -v
+
+  postgres-payment-integration:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: local-test-only
+          POSTGRES_DB: cikgulaju_payment_ci
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d cikgulaju_payment_ci"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 12
+    env:
+      PGHOST: localhost
+      PGPORT: "5432"
+      PGDATABASE: cikgulaju_payment_ci
+      PGUSER: postgres
+      PGPASSWORD: local-test-only
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install PostgreSQL client
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq postgresql-client
+      - name: Create disposable minimal Supabase roles and Storage fixture
+        run: psql -v ON_ERROR_STOP=1 -f tests/sql/web_google_payment_fixture.sql
+      - name: Apply staging SQL in order to disposable PostgreSQL
+        run: |
+          psql -v ON_ERROR_STOP=1 -f migrations/STAGING_ONLY_web_google_identity_445.sql
+          psql -v ON_ERROR_STOP=1 -f migrations/STAGING_ONLY_web_google_payments_445.sql
+          psql -v ON_ERROR_STOP=1 -f migrations/STAGING_ONLY_web_private_receipt_bucket_445.sql
+          psql -v ON_ERROR_STOP=1 -f migrations/STAGING_ONLY_web_payment_review_rpc_445.sql
+      - name: Verify account identity, receipt, manual review and replay
+        run: psql -v ON_ERROR_STOP=1 -f tests/sql/web_google_payment_integration.sql
