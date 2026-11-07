@@ -1,0 +1,48 @@
+name: Sains RPH 342 individual academic quality release guard
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - "audits/sains_342_individual_academic_release_approvals_20261108.json"
+      - "web/sains_rph_quality_release_gate_20261108.py"
+      - "tests/test_sains_rph_quality_release_gate_20261108.py"
+      - "tools/check_sains_rph_publication_20261108.py"
+      - "tools/run_telegram_with_curriculum_api.py"
+      - "web/sains_y5_83_staging_shared_runtime_20261108.py"
+      - ".github/workflows/sains_quality_release_guard_20261108.yml"
+  push:
+    branches: [main]
+    paths:
+      - "audits/sains_342_individual_academic_release_approvals_20261108.json"
+      - "web/sains_rph_quality_release_gate_20261108.py"
+      - "tests/test_sains_rph_quality_release_gate_20261108.py"
+      - "tools/check_sains_rph_publication_20261108.py"
+      - "tools/run_telegram_with_curriculum_api.py"
+      - "web/sains_y5_83_staging_shared_runtime_20261108.py"
+      - ".github/workflows/sains_quality_release_guard_20261108.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  reject-unapproved-science-rph:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify 342 drafts cannot be released without individual >=80 academic proof
+        run: python -m unittest discover -s tests -p "test_sains_rph_quality_release_gate_20261108.py" -v
+      - name: Inspect live entrypoint and individual approval registry without database access
+        run: python -m tools.check_sains_rph_publication_20261108
+      - name: Keep quality decisions for evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: SAINS_RPH_342_PUBLIC_RELEASE_HOLD_QA
+          if-no-files-found: warn
+          path: build/sains_rph_quality_release_20261108/*.json

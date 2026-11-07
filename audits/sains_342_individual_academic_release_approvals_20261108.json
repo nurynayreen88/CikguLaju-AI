@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "subject": "Sains",
+  "scope": "KSSR Semakan 2017 Tahun 2–6",
+  "original_source_count": 342,
+  "source_counts": {
+    "2": 51,
+    "3": 45,
+    "4": 79,
+    "5": 83,
+    "6": 84
+  },
+  "approval_policy": "Each PdP requires individually reviewed official SK/SP, textbook/RPT, specific safe activities and PBD, printed A4 Word/PDF, authenticated Telegram-Web source parity, and a documented teacher/panitia signoff. Minimum 80/100 with per-dimension minima. Matching SHA-256 and FINAL_READY source status mandatory.",
+  "approved": []
+}
