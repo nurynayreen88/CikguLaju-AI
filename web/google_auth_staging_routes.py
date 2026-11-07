@@ -57,7 +57,10 @@ def _config():
         return None
     # Do not let a staging-only Google signup accidentally target the live DB.
     production_supabase = os.environ.get("SUPABASE_URL", "").rstrip("/")
-    if (not production_supabase or base == production_supabase
+    production_ref = os.environ.get("CIKGULAJU_GOOGLE_PRODUCTION_PROJECT_REF", "")
+    if (not re.fullmatch(r"[a-z0-9]{20}", production_ref)
+            or staging_ref == production_ref
+            or (production_supabase and base == production_supabase)
             or host == "cikgulaju-web.onrender.com"
             or len(key) < 20 or len(secret) < 32
             or len(staging_service_key) < 24):
