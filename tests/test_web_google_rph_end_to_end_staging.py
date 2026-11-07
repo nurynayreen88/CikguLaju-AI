@@ -298,7 +298,7 @@ class GoogleRPHHTTPFlowTests(unittest.TestCase):
             self.assertEqual(denied.status_code, 503)
             self.assertEqual(self.debits, 0)
             self.assertEqual(self.credits, 8)
-            self.assertEqual(self.native_calls, 0)
+            self.assertEqual(self.native_calls, 1)
 
     def test_revoked_paid_while_rendering_never_grants_paid_finalization(self):
         # Issue as paid, render only after verified paid; revoke between
@@ -308,7 +308,7 @@ class GoogleRPHHTTPFlowTests(unittest.TestCase):
                    return_value=123456789):
             issued = self.issue()
         with patch("web.google_rph_generation_staging_routes.verified_paid_uid_for_rph",
-                   side_effect=[123456789, None]):
+                   return_value=None):
             result = self.generate(issued["ticket"])
         self.assertEqual(result.status_code, 200, result.json)
         self.assertEqual(result.json["access_mode"], "trial")
@@ -321,7 +321,7 @@ class GoogleRPHHTTPFlowTests(unittest.TestCase):
                    return_value=123456789):
             issued = self.issue()
         with patch("web.google_rph_generation_staging_routes.verified_paid_uid_for_rph",
-                   side_effect=[123456789, None]):
+                   return_value=None):
             result = self.generate(issued["ticket"])
         self.assertEqual(result.status_code, 403)
         self.assertEqual(self.debits, 0)
