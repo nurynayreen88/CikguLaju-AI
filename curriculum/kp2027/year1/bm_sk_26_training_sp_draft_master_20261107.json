@@ -1,0 +1,1669 @@
+{
+  "schema_version": "1.0",
+  "curriculum": "KP2027",
+  "level": "Tahun 1",
+  "subject": "Bahasa Melayu",
+  "school_type": "SK",
+  "created_on": "2026-11-07",
+  "scope": "26 original editorial RPH ideas aligned one-to-one to each distinct code in one BPK training PDF; not a certified official DK/annual RPT",
+  "release_status": "DRAFT_HOLD_NOT_READY",
+  "source": {
+    "title": "SLOT 5-8 KUPAS DAN KUASAI KEMAHIRAN-compressed.pdf",
+    "url": "https://drive.google.com/file/d/1OYy3lh95ifjf31ymPuwF-zLOcfkYF1Jv/view",
+    "sha256": "447b499db78253c4c3f0559afa791691a010c58d076666917a060531b9637691",
+    "page_count": 118,
+    "source_kind": "BPK_PENATARAN_PDF_NOT_FINAL_DK"
+  },
+  "coverage": {
+    "total_sp_codes_found": 26,
+    "source_grounded_drafts": 26,
+    "by_skill": {
+      "Mendengar": 7,
+      "Bertutur": 8,
+      "Membaca": 6,
+      "Menulis": 5
+    },
+    "final_dk_sp_verified": 0,
+    "approved_rph": 0,
+    "original_editorial_master": "year1_editorial_master_36_20261107_v2.json",
+    "non_destructive_relation": "Parallel audit and replacement candidates, not additive lesson counts to existing 36-draft master"
+  },
+  "gate": {
+    "school_stream": "SK",
+    "school_stream_wording_reviewed_for": [
+      "1.2.3",
+      "1.2.4",
+      "2.2.1",
+      "2.2.2"
+    ],
+    "final_dk_document_received": false,
+    "teacher_approval_received": false,
+    "book_text_2027_verified": false,
+    "rpt_session_order_verified": false,
+    "period_duration_verified": false,
+    "web_publish_disabled": true,
+    "telegram_publish_disabled": true
+  },
+  "input_files": [
+    "bm_sk_listening_7_source_grounded_rph_20261107.json",
+    "bm_sk_speaking_8_source_grounded_rph_20261107.json",
+    "bm_sk_reading_6_source_grounded_rph_20261107.json",
+    "bm_sk_writing_5_source_grounded_rph_20261107.json"
+  ],
+  "records": [
+    {
+      "id": "KP27-Y1-BM-SK-MEND-C01",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Mendengar",
+      "sp_candidate": {
+        "code": "1.1.1",
+        "text": "Mendengar untuk mengecam nama pelbagai bunyi persekitaran melalui lagu dan permainan bahasa.",
+        "source_pdf_pages_one_based": [
+          7,
+          8
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Detektif bunyi di sekitar sekolah",
+      "objective_candidate": "Murid mengecam sekurang-kurangnya empat daripada lima bunyi yang diperdengarkan dan menyebut nama bunyi dengan sopan.",
+      "materials": [
+        "Rakaman bunyi asli sekolah yang selamat",
+        "Kad gambar loceng, hujan, kenderaan, haiwan dan peralatan",
+        "Kad jawapan"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru memperdengarkan dua bunyi pendek tanpa gambar dan meminta murid meneka sumber bunyi.",
+          "pupil_action": "Murid mendengar dengan tenang, mengangkat kad tekaan dan menyebut petunjuk yang didengar."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memperkenalkan lima bunyi, mengulang rakaman mengikut keperluan dan membimbing lagu/irama ringkas ciptaan guru yang menyebut nama bunyi.",
+          "pupil_action": "Murid mendengar, memadankan bunyi dengan gambar dan menyertai irama secara terkawal."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru menjalankan permainan 'Detektif Bunyi' dengan susunan bunyi rawak, lalu bertanya sebab pemilihan.",
+          "pupil_action": "Murid memilih kad, menyebut nama bunyi, kemudian membanding jawapan dengan rakan secara sopan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru memainkan lima bunyi baharu dalam urutan berbeza untuk semakan individu.",
+          "pupil_action": "Murid menandakan jawapan pada kad, membetulkan satu kekeliruan dan menyebut satu amalan mendengar yang baik."
+        }
+      ],
+      "formative_assessment": "Rekod 4/5 padanan bunyi-nama secara individu; respons lisan yang berkaitan.",
+      "differentiation": "Murid sokongan mendengar ulang dan memilih dua gambar; murid cepat menjelaskan perbezaan dua bunyi hampir sama.",
+      "character_values": [
+        "Teliti",
+        "Hormat rakan"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-MEND-C02",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Mendengar",
+      "sp_candidate": {
+        "code": "1.1.2",
+        "text": "Mendengar untuk mengecam nama abjad dan bunyi suku kata melalui lagu yang berirama lagu kanak-kanak dan permainan bahasa.",
+        "source_pdf_pages_one_based": [
+          7,
+          9
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Cari bunyi abjad dan suku kata",
+      "objective_candidate": "Murid mengecam sekurang-kurangnya tiga nama abjad dan tiga bunyi suku kata yang didengar dengan betul.",
+      "materials": [
+        "Kad abjad",
+        "Kad suku kata mudah",
+        "Lagu ringkas ciptaan guru menggunakan melodi asli",
+        "Kad respons warna"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menyebut nama abjad dan bunyi suku kata yang berbeza sambil meminta murid mendengar sebelum melihat kad.",
+          "pupil_action": "Murid mengenal perbezaan bunyi dan memberikan respons menggunakan isyarat tangan."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memperdengarkan irama ciptaan sendiri dengan tiga abjad dan tiga suku kata, diulang dua kali.",
+          "pupil_action": "Murid memilih kad berdasarkan bunyi yang didengar dan menyusun kad pada papan."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru mengadakan permainan 'Bunyi Misteri' dengan rakan menyebut salah satu abjad atau suku kata di belakang kad.",
+          "pupil_action": "Murid mendengar, mengangkat pilihan dan menyebut sebab menggunakan petunjuk bunyi."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru memperdengarkan enam item rawak tanpa menunjukkan kad, kemudian mencatat abjad dan suku kata yang masih mengelirukan murid.",
+          "pupil_action": "Murid mengenal tiga abjad serta tiga suku kata dan menyemak jawapan bersama guru."
+        }
+      ],
+      "formative_assessment": "Senarai semak 6 respons bunyi dengan ambang sasaran 3 abjad dan 3 suku kata.",
+      "differentiation": "Sokongan dua pilihan visual; pengayaan bunyi suku kata baharu dengan corak yang sama.",
+      "character_values": [
+        "Tumpuan",
+        "Keyakinan"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-MEND-C03",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Mendengar",
+      "sp_candidate": {
+        "code": "1.1.3",
+        "text": "Mendengar untuk mengecam sebutan perkataan, frasa dan ujaran dengan intonasi yang sesuai.",
+        "source_pdf_pages_one_based": [
+          7,
+          10
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Mendengar sebutan dan intonasi",
+      "objective_candidate": "Murid mengenal sebutan atau intonasi yang sesuai dalam empat daripada lima contoh perkataan, frasa dan ujaran.",
+      "materials": [
+        "Rakaman sebutan guru",
+        "Kad gambar situasi",
+        "Kad hijau/merah",
+        "Kad frasa pendek"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru memperdengarkan dua ujaran yang sama dengan intonasi berlainan dan menanyakan perbezaannya.",
+          "pupil_action": "Murid mendengar lalu menunjukkan kad bagi intonasi yang sesuai dengan situasi."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memainkan contoh sebutan tepat dan sebutan berubah bagi beberapa perkataan dalam situasi keluarga rekaan.",
+          "pupil_action": "Murid mengecam contoh yang tepat tanpa mengejek rakan, kemudian menyebut petunjuk bunyi."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru menjalankan permainan pasangan 'Dengar dan Pilih' menggunakan frasa serta ujaran baharu dengan konteks gambar.",
+          "pupil_action": "Murid mendengar secara bergilir, memadankan contoh betul dan memberi respons sopan apabila membetulkan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru memberikan lima contoh audio secara individu dan membincang satu kesalahan lazim.",
+          "pupil_action": "Murid merekod pilihan, menyebut semula satu frasa dan melakukan refleksi ringkas."
+        }
+      ],
+      "formative_assessment": "4/5 pemilihan sebutan/intonasi yang sesuai disokong konteks gambar.",
+      "differentiation": "Sokongan ulang audio serta kad emosi; pengayaan bezakan intonasi ayat tanya dan ayat penyata.",
+      "character_values": [
+        "Berhemah",
+        "Kepekaan bahasa"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-MEND-C04",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Mendengar",
+      "sp_candidate": {
+        "code": "1.2.1",
+        "text": "Mendengar untuk memberikan respons terhadap ujaran yang disampaikan secara sopan.",
+        "source_pdf_pages_one_based": [
+          18,
+          19
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Dengar dan balas ujaran sopan",
+      "objective_candidate": "Murid memberi respons lisan atau tindakan yang sesuai terhadap tiga ujaran harian dengan sopan.",
+      "materials": [
+        "Kad situasi kelas",
+        "Audio ujaran asli",
+        "Kad respons ringkas"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menyebut dua ujaran pendek kepada watak patung dan meminta murid memilih respons lebih sopan.",
+          "pupil_action": "Murid mendengar, membuat pilihan dan menjelaskan satu sebab."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memperdengarkan ujaran pendek mengenai aktiviti kelas tanpa memaparkan teks.",
+          "pupil_action": "Murid memilih tindak balas lisan atau bukan lisan yang bermakna mengikut konteks."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru mengendalikan simulasi perbualan dua hala dengan perubahan konteks yang dirancang.",
+          "pupil_action": "Murid bergilir mendengar ujaran, memberikan respons sopan dan menilai kesesuaian rakan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru memberi tiga ujaran baharu dalam semakan individu dan merekod kesesuaian serta kesopanan setiap respons.",
+          "pupil_action": "Murid bertindak balas tanpa dibantu kad ayat dan berkongsi satu bentuk respons sopan."
+        }
+      ],
+      "formative_assessment": "Tiga respons relevan dan sopan terhadap ujaran yang didengar.",
+      "differentiation": "Berikan dua pilihan kad respons; murid maju mencadangkan alternatif respons apabila konteks berubah.",
+      "character_values": [
+        "Adab",
+        "Komunikasi"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-MEND-C05",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Mendengar",
+      "sp_candidate": {
+        "code": "1.2.2",
+        "text": "Mendengar untuk memberikan respons terhadap ucapan yang sopan mengikut situasi: ucapan selamat, ucapan penghargaan dan permohonan maaf.",
+        "source_pdf_pages_one_based": [
+          18,
+          20
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Menjawab ucapan mengikut situasi",
+      "objective_candidate": "Murid memberi respons sopan terhadap sekurang-kurangnya satu ucapan selamat, penghargaan dan permohonan maaf.",
+      "materials": [
+        "Kad situasi bergambar",
+        "Kad ucapan",
+        "Patung jari",
+        "Kad pemerhatian"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru mempamerkan tiga situasi rekaan: bertemu rakan, menerima bantuan dan tersilap mengambil barang.",
+          "pupil_action": "Murid meneka jenis ucapan yang mungkin didengar serta mendengar contoh guru."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memperdengarkan ucapan selamat, penghargaan dan permohonan maaf secara berasingan.",
+          "pupil_action": "Murid memadankan setiap ucapan dengan respons sopan menggunakan kad."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru mengurus lakonan pendek di stesen tiga situasi dan memerhati ketepatan respons.",
+          "pupil_action": "Murid bertukar peranan sebagai pemberi dan penerima ucapan, kemudian membetulkan dengan bahasa berhemah."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru memberi satu situasi baharu daripada setiap kategori untuk pentaksiran lisan.",
+          "pupil_action": "Murid memberikan tiga respons dan menyatakan mengapa pilihan itu sesuai."
+        }
+      ],
+      "formative_assessment": "Tiga respons tepat merangkumi tiga jenis ucapan; sebutan dan nada sopan.",
+      "differentiation": "Frasa pilihan bergambar disediakan; pengayaan cipta satu situasi baharu dan respons alternatif.",
+      "character_values": [
+        "Hormat",
+        "Penghargaan"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-MEND-C06",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Mendengar",
+      "sp_candidate": {
+        "code": "1.2.3",
+        "text": "Mendengar untuk memberikan respons terhadap arahan secara sopan mengikut situasi di rumah dan di sekolah.",
+        "source_pdf_pages_one_based": [
+          21,
+          22,
+          27
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Dengar arahan, lakukan dengan tertib",
+      "objective_candidate": "Murid melaksanakan dua arahan di sekolah dan dua arahan dalam situasi rumah secara simulasi sambil memberi respons sopan.",
+      "materials": [
+        "Kad arahan guru untuk rumah/sekolah",
+        "Alat kelas sebenar",
+        "Kad emoji sopan/tidak sopan"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menyebut contoh arahan di kelas dan membanding respons yang berhemah serta tidak berhemah.",
+          "pupil_action": "Murid mengangkat kad emoji selepas mendengar lalu menerangkan sebab satu respons lebih baik."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memberi dua arahan berurutan dalam situasi sekolah, tanpa terus menunjukkan teks.",
+          "pupil_action": "Murid mendengar, bertindak menggunakan bahan sebenar dan menjawab secara sopan."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru menyediakan kad situasi rumah rekaan, lalu membimbing permainan arahan antara pasangan.",
+          "pupil_action": "Murid bertukar peranan melaksanakan arahan di rumah secara lakonan dan menilai tindakan rakan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru memberikan empat arahan baharu melibatkan kedua-dua konteks serta menilai ketepatan tindakan dan adab respons murid.",
+          "pupil_action": "Murid menunjukkan tindakan tepat dan respons sopan; kemudian menyemak kesilapan."
+        }
+      ],
+      "formative_assessment": "Senarai semak 4 respons: memahami arahan, melaksana tindakan dan menjawab dengan sopan.",
+      "differentiation": "Arahan satu langkah dengan sokongan gambar; pengayaan gabungkan dua arahan berurutan.",
+      "character_values": [
+        "Disiplin",
+        "Kesopanan"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-MEND-C07",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Mendengar",
+      "sp_candidate": {
+        "code": "1.2.4",
+        "text": "Mendengar untuk memberikan respons terhadap pertanyaan secara sopan mengikut situasi di rumah dan di sekolah.",
+        "source_pdf_pages_one_based": [
+          21,
+          24
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Dengar soalan, jawab dengan sopan",
+      "objective_candidate": "Murid memberikan jawapan sesuai terhadap dua pertanyaan di rumah dan dua di sekolah dengan nada sopan.",
+      "materials": [
+        "Kad pertanyaan rekaan",
+        "Gambar rumah dan sekolah",
+        "Kad pilihan jawapan"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru melakonkan pertanyaan tentang keperluan bantuan dan tempat alat disimpan.",
+          "pupil_action": "Murid mengenal apa yang ditanya sebelum memberi jawapan."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memperdengarkan dua pertanyaan dalam konteks sekolah dan menegaskan pentingnya mendengar hingga selesai.",
+          "pupil_action": "Murid memilih jawapan yang sesuai dan bertutur dengan nada sopan."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru menyediakan dua situasi rumah rekaan, mengubah kata tanya untuk menguji pemahaman sebenar.",
+          "pupil_action": "Murid berpasangan menyoal, mendengar dan memberi respons tanpa menghafal ayat contoh."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru menjalankan semakan individu dengan empat pertanyaan pelbagai konteks.",
+          "pupil_action": "Murid menjawab secara sopan, kemudian menjelaskan satu teknik mendengar dengan baik."
+        }
+      ],
+      "formative_assessment": "Empat respons lisan sesuai: dua konteks rumah dan dua sekolah.",
+      "differentiation": "Kad pilihan jawapan untuk sokongan; pengayaan jawab soalan susulan yang spontan.",
+      "character_values": [
+        "Kesopanan",
+        "Keberanian"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-TUT-C01",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Bertutur",
+      "sp_candidate": {
+        "code": "2.1.1",
+        "text": "Mengajuk bunyi persekitaran melalui lagu dan permainan bahasa.",
+        "source_pdf_pages_one_based": [
+          43,
+          44
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Permainan Ajuk Bunyi",
+      "objective_candidate": "Murid mengajuk sekurang-kurangnya empat bunyi persekitaran yang didengar dengan jelas melalui permainan dan irama.",
+      "materials": [
+        "Kad gambar haiwan, kenderaan dan loceng",
+        "bunyi rakaman asli",
+        "kad respons"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru memperdengarkan bunyi loceng dan haiwan tanpa menunjukkan gambar lalu meminta tekaan.",
+          "pupil_action": "Murid mendengar dan mencuba mengajuk bunyi tersebut tanpa meninggikan suara secara keterlaluan."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memodel cara menyebut bunyi secara jelas dan membimbing permainan giliran bunyi mengikut kad.",
+          "pupil_action": "Murid meniru empat bunyi satu demi satu serta memilih gambar sumbernya."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru mengendalikan permainan kumpulan 'Teka Bunyi Saya' dan membetulkan sebutan dengan berhemah.",
+          "pupil_action": "Murid menghasilkan bunyi apabila tiba giliran dan rakan meneka sumber bunyi dengan sopan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru menggunakan empat kad rawak untuk pentaksiran individu serta merekod pencapaian sebutan.",
+          "pupil_action": "Murid mengajuk bunyi berdasarkan gambar dan menyatakan satu cara mendengar rakan dengan baik."
+        }
+      ],
+      "formative_assessment": "Empat ajukan bunyi dikenal pasti dan disebut dengan jelas.",
+      "differentiation": "Berikan dua contoh model lebih dahulu; murid cepat membanding dua bunyi hampir sama.",
+      "character_values": [
+        "Keyakinan",
+        "adab mendengar"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-TUT-C02",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Bertutur",
+      "sp_candidate": {
+        "code": "2.1.2",
+        "text": "Menyebut abjad dan bunyi suku kata dengan sebutan yang betul melalui lagu dan permainan bahasa.",
+        "source_pdf_pages_one_based": [
+          43,
+          45
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Lagu Abjad dan Suku Kata",
+      "objective_candidate": "Murid menyebut empat abjad dan empat suku kata asas dengan sebutan yang dapat difahami melalui permainan berirama.",
+      "materials": [
+        "Kad abjad besar",
+        "kad suku kata",
+        "papan bunyi",
+        "lirik asli guru"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru mempamerkan empat kad abjad dan membacakan irama baharu ciptaan guru secara perlahan.",
+          "pupil_action": "Murid mendengar contoh dan mengikut sebutan nama abjad dengan irama yang mudah."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memodel perbezaan nama abjad dan bunyi suku kata serta menunjukkan gabungan huruf.",
+          "pupil_action": "Murid menyebut kad secara berpasangan, menggerakkan kad ke ruangan abjad atau suku kata."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru membimbing permainan 'Sambung Bunyi' mengikut giliran dua kumpulan.",
+          "pupil_action": "Murid menyebut abjad atau suku kata selepas mendengar rakan dan membetulkan secara berhemah."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru memilih lapan kad tanpa susunan asal untuk ujian sebutan individu.",
+          "pupil_action": "Murid membaca dan menyebut empat abjad serta empat suku kata lalu menyemak kemajuan sendiri."
+        }
+      ],
+      "formative_assessment": "Sebutan lapan item dengan nota kesalahan spesifik abjad/suku kata.",
+      "differentiation": "Kurangkan set kepada empat bagi sokongan; tambah gabungan suku kata berlainan bagi murid cepat.",
+      "character_values": [
+        "Tekun",
+        "saling membantu"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-TUT-C03",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Bertutur",
+      "sp_candidate": {
+        "code": "2.1.3",
+        "text": "Menyebut perkataan, frasa, dan ujaran yang didengar dengan sebutan yang betul dan intonasi yang sesuai.",
+        "source_pdf_pages_one_based": [
+          43,
+          46,
+          48
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Rantai Ujaran Sopan",
+      "objective_candidate": "Murid menyebut semula tiga perkataan, dua frasa dan satu ujaran berdasarkan model audio dengan sebutan serta intonasi yang sesuai.",
+      "materials": [
+        "Rakaman ujaran ringkas asli",
+        "gambar situasi",
+        "kad emoji intonasi"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru memperdengarkan satu ujaran perasaan gembira dan satu ujaran tanya yang ringkas.",
+          "pupil_action": "Murid memerhati intonasi serta meneka situasi yang sesuai bagi setiap ujaran."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memodel sebutan tiga perkataan dan dua frasa sambil mengaitkan konteks pada gambar.",
+          "pupil_action": "Murid mendengar, menyebut semula dan membuat pembetulan selepas maklum balas guru."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru menjalankan aktiviti rantai ujaran berpasangan dan meminta rakan menilai intonasi.",
+          "pupil_action": "Murid menyampaikan ujaran kepada rakan seterusnya dan memberi pembetulan sopan apabila perlu."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru memberikan enam item lisan dalam urutan baharu bagi semakan individu.",
+          "pupil_action": "Murid menyebut setiap item dengan intonasi sesuai serta menyatakan satu aspek yang dibaiki."
+        }
+      ],
+      "formative_assessment": "Sebutan tepat bagi 3 perkataan, 2 frasa dan 1 ujaran serta respons intonasi.",
+      "differentiation": "Beri ulang dengar dan gambar untuk sokongan; murid cepat membanding dua konteks ujaran.",
+      "character_values": [
+        "Berhemah",
+        "yakin"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-TUT-C04",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Bertutur",
+      "sp_candidate": {
+        "code": "2.2.1",
+        "text": "Menyebut dan menggunakan ujaran secara sopan mengikut situasi di rumah dan di sekolah.",
+        "source_pdf_pages_one_based": [
+          55,
+          57
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Ujaran Sopan di Rumah dan Sekolah",
+      "objective_candidate": "Murid menggunakan sekurang-kurangnya dua ujaran sopan di rumah dan dua di sekolah dalam lakonan ringkas.",
+      "materials": [
+        "Kad situasi rekaan rumah/sekolah",
+        "dialog asli",
+        "kad peranan"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru melakonkan cara meminta tolong di sekolah dengan nada kurang sopan dan sopan.",
+          "pupil_action": "Murid mengenal pilihan lebih sesuai dan memberi alasan tidak menyakitkan hati rakan."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memodel ungkapan meminta izin, berterima kasih dan meminta bantuan dalam dua konteks.",
+          "pupil_action": "Murid memilih kad situasi dan berlatih ujaran kepada pasangan secara terkawal."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru menukar kad peranan dan mengurus lakonan dialog tanpa skrip penuh.",
+          "pupil_action": "Murid menggunakan dua ujaran bagi rumah dan dua bagi sekolah sambil memberi respons kepada rakan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru memberi satu situasi baharu bagi kedua-dua konteks dan mencatat ketepatan ujaran.",
+          "pupil_action": "Murid bertutur spontan dengan nada sopan dan membetulkan satu respons selepas maklum balas."
+        }
+      ],
+      "formative_assessment": "Empat respons sopan yang sesuai dengan tempat dan orang yang terlibat.",
+      "differentiation": "Kad bingkai ayat untuk sokongan; pengayaan bina dialog dengan permintaan tidak dipersetujui.",
+      "character_values": [
+        "Hormat",
+        "budi bahasa"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-TUT-C05",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Bertutur",
+      "sp_candidate": {
+        "code": "2.2.2",
+        "text": "Menyebut dan menggunakan ujaran secara sopan berdasarkan konteks.",
+        "source_pdf_pages_one_based": [
+          55
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Pilih Ujaran Mengikut Konteks",
+      "objective_candidate": "Murid memilih dan menggunakan tiga ujaran sopan apabila konteks perbualan berubah.",
+      "materials": [
+        "Kad situasi berurutan",
+        "dua patung tangan",
+        "kad ujaran"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menunjukkan dialog rekaan dengan watak yang tersalah menggunakan ucapan selamat.",
+          "pupil_action": "Murid menerangkan mengapa ujaran tidak sesuai dengan konteks pada gambar."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru membimbing murid memadankan tiga situasi dengan ujaran seperti meminta izin, memohon maaf dan mengucapkan tahniah.",
+          "pupil_action": "Murid menguji ujaran bersama pasangan sambil menunjukkan kad yang berkaitan."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru mengubah peranan penerima dan tujuan perbualan dalam permainan kad putar.",
+          "pupil_action": "Murid memilih ujaran baharu, menyebutnya dengan nada sesuai dan menjelaskan sebab."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru menyampaikan tiga situasi tidak dilatih dan merekod respons individu.",
+          "pupil_action": "Murid bertutur secara spontan dengan ujaran yang tepat serta refleksi cara menghormati orang lain."
+        }
+      ],
+      "formative_assessment": "Tiga pilihan ujaran sesuai dengan perubahan konteks dan sebutan sopan.",
+      "differentiation": "Pilihan frasa bergambar bagi sokongan; pengayaan menjelaskan dua ujaran alternatif.",
+      "character_values": [
+        "Kepekaan sosial",
+        "kesantunan"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-TUT-C06",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Bertutur",
+      "sp_candidate": {
+        "code": "2.3.1",
+        "text": "Bertutur tentang perihal diri dengan menggunakan perkataan, frasa, dan ayat secara spontan dengan sopan berdasarkan konteks.",
+        "source_pdf_pages_one_based": [
+          61
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Saya dan Minat Saya",
+      "objective_candidate": "Murid bertutur sekurang-kurangnya tiga ayat berkaitan diri atau identiti rekaan dengan nada sopan, tanpa memaksa pendedahan maklumat peribadi.",
+      "materials": [
+        "Kad minat dan aktiviti",
+        "model ayat",
+        "kad nama rekaan"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menunjukkan profil watak rekaan yang memiliki dua minat dan meminta murid menerangkan gambar.",
+          "pupil_action": "Murid memilih perkara yang selesa untuk diceritakan dan menyebut dua perkataan tentang minat."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memodel ayat ringkas perihal diri serta peraturan tidak menyebut alamat atau butiran peribadi.",
+          "pupil_action": "Murid berlatih tiga ayat kepada pasangan dengan bantuan kad minat atau watak rekaan."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru menganjurkan temu bual kumpulan kecil sambil menukar pasangan agar respons tidak dihafal.",
+          "pupil_action": "Murid bertutur spontan, mendengar rakan dan memberi satu soalan sesuai."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru memberi kad minat baharu untuk pentaksiran individu dan mencatat kejelasan ayat.",
+          "pupil_action": "Murid menyampaikan tiga ayat berkait serta menyatakan satu perkara yang dapat diperbaiki."
+        }
+      ],
+      "formative_assessment": "Tiga ayat boleh difahami dan satu respons pendengar yang sopan.",
+      "differentiation": "Bingkai ayat bagi murid sokongan; pengayaan sertakan alasan memilih minat.",
+      "character_values": [
+        "Keyakinan",
+        "menghormati privasi"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-TUT-C07",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Bertutur",
+      "sp_candidate": {
+        "code": "2.3.2",
+        "text": "Bercerita tentang cerita yang mengandungi nilai-nilai murni berdasarkan bahan.",
+        "source_pdf_pages_one_based": [
+          61
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Cerita Kecil, Nilai Besar",
+      "objective_candidate": "Murid menceritakan semula tiga peristiwa daripada cerita bergambar asli dan menyebut nilai murni yang diperlihatkan.",
+      "materials": [
+        "Cerita bergambar asli tentang membantu rakan",
+        "tiga kad peristiwa",
+        "kad nilai"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru memperlihatkan gambar watak membantu rakan tanpa menjelaskan pengakhiran cerita.",
+          "pupil_action": "Murid meramal tindakan watak dan mengenal perubahan perasaan."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru menceritakan kisah pendek dengan intonasi jelas sambil menunjuk tiga kad peristiwa.",
+          "pupil_action": "Murid menyusun peristiwa mengikut urutan serta mengenal tindakan baik."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru membimbing cerita semula secara berpasangan dan bertanya kesan tindakan baik watak.",
+          "pupil_action": "Murid bercerita mengikut urutan, menyebut satu nilai murni dan mendengar respons rakan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru meminta murid menceritakan penutup baharu tanpa kad lengkap bagi semakan.",
+          "pupil_action": "Murid menyampaikan cerita ringkas tiga peristiwa dan menjelaskan nilai pilihan."
+        }
+      ],
+      "formative_assessment": "Turutan tiga peristiwa dan sekurang-kurangnya satu nilai yang sesuai.",
+      "differentiation": "Kekalkan kad urutan bagi sokongan; pengayaan banding dua pilihan tindakan watak.",
+      "character_values": [
+        "Baik hati",
+        "kerjasama"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-TUT-C08",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Bertutur",
+      "sp_candidate": {
+        "code": "2.3.3",
+        "text": "Berlakon tentang cerita yang mengandungi nilai-nilai murni berdasarkan konteks.",
+        "source_pdf_pages_one_based": [
+          61
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Lakonan Membantu Rakan",
+      "objective_candidate": "Murid melakonkan dialog dua hingga tiga giliran yang menunjukkan tindakan prihatin dan ujaran sopan dalam situasi rekaan.",
+      "materials": [
+        "Kad watak",
+        "prop buku ringan",
+        "kad konteks",
+        "kad rubrik"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru membacakan kisah rekaan murid menjatuhkan alat tulis dan meminta cadangan tindakan.",
+          "pupil_action": "Murid menyebut perasaan watak serta pilihan bantuan yang selamat."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memodel dialog pendek mengandungi tawaran bantuan, respons dan penghargaan.",
+          "pupil_action": "Murid berlatih peranan menggunakan kad ayat dan memperbaiki sebutan."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru membimbing kumpulan mencipta lakonan dengan satu perubahan situasi secara spontan.",
+          "pupil_action": "Murid melakonkan pertolongan dengan ujaran sopan dan memberi maklum balas kepada kumpulan lain."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru menilai lakonan mini berpasangan menggunakan tiga kriteria jelas.",
+          "pupil_action": "Murid menunjukkan tindakan prihatin, menuturkan dialog dan membuat refleksi selepas persembahan."
+        }
+      ],
+      "formative_assessment": "Lakonan menunjukkan nilai dan dialog sopan sekurang-kurangnya dua giliran.",
+      "differentiation": "Sediakan dua kad ujaran bagi sokongan; pengayaan tambah perubahan konteks yang munasabah.",
+      "character_values": [
+        "Prihatin",
+        "empati"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-BACA-C01",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Membaca",
+      "sp_candidate": {
+        "code": "3.1.1",
+        "text": "Membaca untuk mengenal, mengecam simbol dan abjad melalui lagu dan permainan bahasa.",
+        "source_pdf_pages_one_based": [
+          72
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Jejak Simbol dan Abjad",
+      "objective_candidate": "Murid mengecam empat simbol mudah dan sekurang-kurangnya empat abjad melalui permainan kad serta bacaan berirama.",
+      "materials": [
+        "Kad simbol amaran rekaan",
+        "kad abjad besar",
+        "kertas warna"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru memperlihatkan simbol pintu dan tanda berhenti rekaan lalu bertanya apa yang boleh difahami.",
+          "pupil_action": "Murid memerhati perbezaan simbol dan abjad serta menunjukkan satu contoh yang pernah dilihat."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru membimbing nyanyian irama asli tentang abjad pilihan dan menyebut nama simbol secara bermakna.",
+          "pupil_action": "Murid menunjuk, membaca nama abjad dan memadankan simbol kepada makna gambar."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru mengendalikan permainan mencari kad tersembunyi di beberapa stesen kecil.",
+          "pupil_action": "Murid mencari empat abjad serta empat simbol, kemudian menyebut pilihan kepada pasangan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru menyusun set kad baharu untuk pemeriksaan individu dan mencatat kekeliruan.",
+          "pupil_action": "Murid mengecam abjad dan simbol serta menyebut satu tindakan keselamatan yang berkaitan."
+        }
+      ],
+      "formative_assessment": "Empat abjad dan empat simbol dipadankan kepada identiti atau makna yang betul.",
+      "differentiation": "Kurangkan pilihan kepada dua simbol; murid cepat mencipta satu simbol kelas yang jelas.",
+      "character_values": [
+        "Celik huruf",
+        "peka keselamatan"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-BACA-C02",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Membaca",
+      "sp_candidate": {
+        "code": "3.1.2",
+        "text": "Membaca suku kata dan perkataan melalui lagu dan permainan bahasa.",
+        "source_pdf_pages_one_based": [
+          72,
+          75
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Suku Kata Berlagu",
+      "objective_candidate": "Murid membaca lima suku kata dan tiga perkataan mudah menggunakan permainan gabung kad dan irama guru.",
+      "materials": [
+        "Kad suku kata KV",
+        "kad gambar",
+        "papan magnet",
+        "lirik irama asli guru"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menampilkan kad ba, bu dan bi secara berirama lalu meminta murid mencari bunyi yang berubah.",
+          "pupil_action": "Murid mendengar dan menunjukkan kad yang dilihat sambil menyebut bunyi suku kata."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memodel penyebutan suku kata secara beransur maju sebelum menggabungkan dua kad menjadi perkataan.",
+          "pupil_action": "Murid membaca lima suku kata dan menggabungkan kepada perkataan berpandukan kad gambar."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru mengendalikan permainan 'Bina dan Baca' menggunakan kad yang disusun secara rawak.",
+          "pupil_action": "Murid membina tiga perkataan mudah, membacanya dan menyemak rakan dengan sopan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru memberi tiga kad gabungan baharu untuk semakan individu dan merekod pola kesalahan.",
+          "pupil_action": "Murid membaca perkataan secara berdikari dan menerangkan satu cara membunyikan suku kata."
+        }
+      ],
+      "formative_assessment": "Senarai semak lima suku kata dan tiga perkataan, dengan catatan kesalahan bacaan.",
+      "differentiation": "Beri warna berlainan bagi suku kata; murid maju membina perkataan baharu daripada kad sama.",
+      "character_values": [
+        "Ketekunan",
+        "semangat belajar"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-BACA-C03",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Membaca",
+      "sp_candidate": {
+        "code": "3.1.3",
+        "text": "Membaca perkataan, frasa dan ayat dengan sebutan yang betul.",
+        "source_pdf_pages_one_based": [
+          72
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Dari Perkataan ke Ayat",
+      "objective_candidate": "Murid membaca tiga perkataan, dua frasa dan satu ayat ringkas dengan sebutan yang boleh difahami.",
+      "materials": [
+        "Kad perkataan berdasarkan gambar sekolah",
+        "jalur frasa",
+        "kad ayat pendek"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menunjukkan gambar murid menyusun buku lalu menyoal perkataan yang sesuai menerangkannya.",
+          "pupil_action": "Murid membaca kad perkataan yang sudah dikenali dan menjelaskan kaitan dengan gambar."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memodel gabungan perkataan kepada frasa dan ayat pendek tanpa mengubah bunyi asas.",
+          "pupil_action": "Murid membaca tiga perkataan dan dua frasa secara berpasangan lalu menyemak sebutan."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru mengurus bacaan stesen dengan kad ayat yang berkaitan konteks gambar sekolah.",
+          "pupil_action": "Murid membaca satu ayat kepada rakan dan memberikan teguran berhemah jika sebutan berubah."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru membuat bacaan individu tanpa kad petunjuk warna untuk menilai kemahiran sebenar.",
+          "pupil_action": "Murid membaca item secara berurutan dan menyatakan satu perkataan yang perlu dilatih."
+        }
+      ],
+      "formative_assessment": "Bacaan 3 perkataan, 2 frasa dan 1 ayat, tanpa mereka standard intonasi yang berbeza.",
+      "differentiation": "Gunakan kad suku kata bagi sokongan; murid mahir mencipta frasa baharu.",
+      "character_values": [
+        "Berani mencuba",
+        "menghormati rakan"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-BACA-C04",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Membaca",
+      "sp_candidate": {
+        "code": "3.2.1",
+        "text": "Membaca ayat dengan sebutan yang betul dan intonasi yang sesuai untuk memahami konteks.",
+        "source_pdf_pages_one_based": [
+          80
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Ayat Tanya, Ayat Berita",
+      "objective_candidate": "Murid membaca empat ayat ringkas dengan intonasi sesuai dan menjelaskan konteks sekurang-kurangnya dua ayat.",
+      "materials": [
+        "Jalur ayat rekaan",
+        "gambar situasi",
+        "kad tanda baca"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru membaca ayat penyata dan ayat tanya menggunakan gambar yang sama lalu meminta murid meneka niat penutur.",
+          "pupil_action": "Murid menyatakan perbezaan bunyi dan memilih tanda baca yang dilihat."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memodel cara membaca empat ayat dengan sebutan serta intonasi yang menunjukkan konteks.",
+          "pupil_action": "Murid membaca secara gema, memilih gambar sesuai dan membetulkan intonasi."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru mengendalikan permainan bacaan pasangan dengan kad ayat tersembunyi.",
+          "pupil_action": "Murid membaca kepada rakan, rakan memilih konteks dan menjelaskan sebab pilihan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru menilai dua ayat baharu secara individu dan memeriksa sama ada maksud difahami.",
+          "pupil_action": "Murid membaca dan menjawab satu soalan makna berdasarkan ayat tersebut."
+        }
+      ],
+      "formative_assessment": "Bacaan dengan sebutan/intonasi sesuai dan dua penjelasan konteks ringkas.",
+      "differentiation": "Beri gambar dan tanda baca berwarna; pengayaan baca ayat sama dalam dua konteks berbeza.",
+      "character_values": [
+        "Komunikasi",
+        "perhatian"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-BACA-C05",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Membaca",
+      "sp_candidate": {
+        "code": "3.2.2",
+        "text": "Membaca untuk memahami maklumat daripada bahan berdasarkan konteks.",
+        "source_pdf_pages_one_based": [
+          80,
+          83
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Mencari Maklumat Pada Jadual Aktiviti",
+      "objective_candidate": "Murid mencari sekurang-kurangnya tiga maklumat tepat daripada jadual kelas rekaan yang mudah.",
+      "materials": [
+        "Jadual aktiviti satu hari buatan guru",
+        "kad soalan siapa/apa/di mana",
+        "pen penanda"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru memaparkan jadual bergambar tentang aktiviti kelas dan bertanya mengapa jadual diperlukan.",
+          "pupil_action": "Murid mengenal tajuk jadual dan berkongsi satu cara ia membantu merancang."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memodel cara membaca tajuk lajur dan menghubungkan maklumat dengan soalan mudah.",
+          "pupil_action": "Murid meneliti jadual dan menanda nama aktiviti, tempat serta alat yang berkaitan."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru mengedarkan jadual kedua dengan satu perbezaan dan meminta pasangan mencari bukti.",
+          "pupil_action": "Murid membaca, menjawab tiga soalan dan menunjuk lokasi maklumat pada jadual."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru memberikan satu kad soalan baharu untuk semakan individu tanpa bantuan.",
+          "pupil_action": "Murid menyatakan jawapan serta menunjukkan sel jadual yang menyokongnya."
+        }
+      ],
+      "formative_assessment": "Tiga jawapan berdasarkan jadual, setiap satu menunjukkan bukti pada bahan.",
+      "differentiation": "Jadual dua baris dan gambar untuk sokongan; murid maju menghasilkan satu soalan baharu.",
+      "character_values": [
+        "Teliti",
+        "penaakulan"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-BACA-C06",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Membaca",
+      "sp_candidate": {
+        "code": "3.2.3",
+        "text": "Membaca untuk memberikan respons berdasarkan konteks secara sopan.",
+        "source_pdf_pages_one_based": [
+          80
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Balas Pesanan Dengan Sopan",
+      "objective_candidate": "Murid membaca tiga pesanan atau nota rekaan pendek dan memberi respons sopan yang sesuai dengan konteksnya.",
+      "materials": [
+        "Kad pesanan rekaan",
+        "kad respons sopan",
+        "gambar situasi kelas"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menunjukkan pesanan ringkas meminta bantuan di perpustakaan dan menyoal siapa pengirimnya.",
+          "pupil_action": "Murid membaca tajuk ringkas lalu menjelaskan tujuan pesanan."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memodel bacaan maklumat utama dan memilih respons yang tidak kasar.",
+          "pupil_action": "Murid membaca dua pesanan, mengenal tujuan dan memadankan respons sopan."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru mengendalikan aktiviti pertukaran pesanan berpasangan dengan konteks yang berbeza.",
+          "pupil_action": "Murid membaca pesanan rakan, memberikan respons lisan dan menerangkan kesesuaiannya."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru memberikan pesanan ketiga untuk pentaksiran tanpa kad pilihan penuh.",
+          "pupil_action": "Murid membaca, menjawab dengan sopan dan menyatakan maklumat yang dijadikan petunjuk."
+        }
+      ],
+      "formative_assessment": "Tiga respons sopan kepada teks yang telah dibaca, bukan hanya dihafal.",
+      "differentiation": "Sokongan gambar dan dua pilihan jawapan; murid cepat membina respons alternatif.",
+      "character_values": [
+        "Adab",
+        "komunikasi bertanggungjawab"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-TULIS-C01",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Menulis",
+      "sp_candidate": {
+        "code": "4.1.1",
+        "text": "Melakar pelbagai bentuk atau corak yang sesuai.",
+        "source_pdf_pages_one_based": [
+          104
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Corak Garis dan Bentuk",
+      "objective_candidate": "Murid melakar sekurang-kurangnya tiga jenis garis atau corak dengan pergerakan tangan terkawal.",
+      "materials": [
+        "Kad bentuk",
+        "dulang pasir bersih atau papan putih",
+        "pensel segi tiga",
+        "kertas A4"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru melakar garis lurus, melengkung dan beralun pada papan dan meminta murid memerhati arah pergerakan.",
+          "pupil_action": "Murid mengikut pergerakan dengan jari di udara dan menamakan perbezaan tiga corak."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru menunjukkan cara memegang alat dan melakar corak besar dengan titik permulaan yang jelas.",
+          "pupil_action": "Murid melakar tiga corak pada permukaan yang sesuai dan memeriksa arah garis."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru memberi cabaran mencantum corak menjadi gambar objek kelas tanpa menilai kemahiran seni secara berlebihan.",
+          "pupil_action": "Murid melakar corak sendiri, membanding dengan kad contoh dan membaiki satu bahagian."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru mengumpul bukti lakaran serta memberi maklum balas kepada setiap murid tentang kawalan tangan.",
+          "pupil_action": "Murid memilih satu corak terbaik dan menerangkan cara melakarnya."
+        }
+      ],
+      "formative_assessment": "Tiga corak atau bentuk boleh dikenal pasti dan pergerakan tangan yang terkawal.",
+      "differentiation": "Beri titik mula dan garisan besar; pengayaan gabungkan corak menjadi rangka hiasan.",
+      "character_values": [
+        "Ketekunan",
+        "kreativiti"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-TULIS-C02",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Menulis",
+      "sp_candidate": {
+        "code": "4.1.2",
+        "text": "Membentuk dan menekap abjad dengan betulnya.",
+        "source_pdf_pages_one_based": [
+          104
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Bentuk Huruf dengan Bahan Selamat",
+      "objective_candidate": "Murid membentuk dan menekap empat abjad menggunakan bahan manipulatif serta mengikut arah yang ditunjuk guru.",
+      "materials": [
+        "Kad abjad bercetak besar",
+        "jalur kertas",
+        "doh tidak toksik",
+        "helaian menekap"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menunjukkan satu huruf daripada kad nama rekaan dan meminta murid mengesan bentuk menggunakan jari.",
+          "pupil_action": "Murid mengikuti bentuk huruf di udara serta mengenal titik mula."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memodel membentuk huruf menggunakan doh dan jalur kertas yang selamat lalu menekap di atas helaian.",
+          "pupil_action": "Murid membina dua huruf, menekapnya dan membetulkan bentuk apabila tersasar."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru menyediakan dua huruf lain dan membimbing pasangan membezakan bentuk yang hampir sama.",
+          "pupil_action": "Murid membentuk, menekap dan membanding empat huruf dengan kad sumber."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru mengadakan semakan individu dengan dua huruf rawak dan menyimpan contoh kerja.",
+          "pupil_action": "Murid menekap kedua-dua huruf mengikut bentuk yang betul dan membuat refleksi kendiri."
+        }
+      ],
+      "formative_assessment": "Empat huruf dibentuk/ditekap dengan bentuk yang boleh dicam; catatan arah strok guru.",
+      "differentiation": "Kad titik dan helaian besar untuk sokongan; murid cepat membentuk huruf tanpa acuan.",
+      "character_values": [
+        "Ketelitian",
+        "berdikari"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-TULIS-C03",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Menulis",
+      "sp_candidate": {
+        "code": "4.1.3",
+        "text": "Menyalin abjad, suku kata, perkataan, frasa dan ayat.",
+        "source_pdf_pages_one_based": [
+          104,
+          105
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Salin dari Huruf ke Ayat",
+      "objective_candidate": "Murid menyalin satu set abjad, suku kata, perkataan, frasa dan ayat pendek dengan tulisan yang boleh dibaca.",
+      "materials": [
+        "Kad abjad",
+        "kad perkataan",
+        "frasa dan ayat asli",
+        "kertas berbaris",
+        "pensel"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menunjukkan perbezaan tulisan yang jelas dan kurang jelas tanpa memalukan murid.",
+          "pupil_action": "Murid menyatakan mengapa jarak dan bentuk huruf membantu pembaca."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memodel cara menyalin abjad dan suku kata pada garisan dengan ruang mencukupi.",
+          "pupil_action": "Murid menyalin abjad dan suku kata lalu memeriksa tinggi serta jarak."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru membimbing peralihan daripada perkataan kepada frasa dan ayat menggunakan model yang berkaitan kelas.",
+          "pupil_action": "Murid menyalin satu perkataan, satu frasa dan satu ayat serta menyemak dengan kad sumber."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru menyemak lima jenis unit tulisan dalam lembaran individu serta menanda satu penambahbaikan.",
+          "pupil_action": "Murid memperbetul satu bahagian tulisan selepas maklum balas dan membaca ayat yang disalin."
+        }
+      ],
+      "formative_assessment": "Set abjad, suku kata, perkataan, frasa dan ayat yang boleh dibaca dengan jarak sesuai.",
+      "differentiation": "Benarkan pembesaran baris bagi sokongan; murid maju menyalin ayat tambahan tanpa menukar sasaran standard.",
+      "character_values": [
+        "Kemas",
+        "sabar"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-TULIS-C04",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Menulis",
+      "sp_candidate": {
+        "code": "4.2.1",
+        "text": "Menggabungkan dan membentuk suku kata, perkataan, dan frasa.",
+        "source_pdf_pages_one_based": [
+          109
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Kereta Api Suku Kata",
+      "objective_candidate": "Murid menggabungkan kad suku kata untuk membentuk sekurang-kurangnya tiga perkataan dan dua frasa bermakna.",
+      "materials": [
+        "Kad suku kata bercetak",
+        "gambar objek sekolah",
+        "kad perkataan",
+        "jalur kereta api kertas"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menunjukkan dua kad suku kata terpisah lalu meminta murid meneka perkataan apabila digabungkan.",
+          "pupil_action": "Murid menyebut bunyi, membanding dua susunan kad dan menjelaskan mana yang bermakna."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memodel gabungan suku kata kepada perkataan menggunakan kad berwarna.",
+          "pupil_action": "Murid membina tiga perkataan berdasarkan kad gambar dan menyemak sebutan bersama rakan."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru membimbing gabungan dua perkataan kepada frasa pada jalur kereta api kertas.",
+          "pupil_action": "Murid membina dua frasa, membaca dengan jelas dan menerangkan makna ringkasnya."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru memberi kad rawak baharu untuk kerja individu dan mengumpul bukti pembinaan.",
+          "pupil_action": "Murid membina satu perkataan serta satu frasa tanpa melihat contoh susunan asal."
+        }
+      ],
+      "formative_assessment": "Tiga perkataan dan dua frasa terbina daripada suku kata dengan makna relevan.",
+      "differentiation": "Kad warna mengikut suku kata bagi sokongan; pengayaan pelbagaikan frasa berdasarkan gambar.",
+      "character_values": [
+        "Kerjasama",
+        "pemikiran"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-TULIS-C05",
+      "level": "Tahun 1",
+      "school_type": "SK",
+      "subject": "Bahasa Melayu",
+      "skill": "Menulis",
+      "sp_candidate": {
+        "code": "4.2.2",
+        "text": "Membina dan menulis ayat dengan menggunakan binaan ayat yang betul.",
+        "source_pdf_pages_one_based": [
+          109,
+          110
+        ],
+        "evidence_kind": "BPK_PENATARAN_SLIDE",
+        "final_dk_verified": false
+      },
+      "title": "Susun, Bina dan Tulis Ayat",
+      "objective_candidate": "Murid membina serta menulis dua ayat ringkas bermakna dengan binaan yang sesuai berdasarkan gambar.",
+      "materials": [
+        "Kad perkataan subjek dan perbuatan",
+        "kad gambar sekolah",
+        "kertas berbaris"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru memperlihatkan gambar murid membaca di kelas dan dua susunan perkataan berlainan.",
+          "pupil_action": "Murid memilih susunan yang membawa makna serta menyebut sebab."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru membimbing pembinaan satu ayat berdasarkan kad gambar dan memodel huruf besar serta titik secara kontekstual.",
+          "pupil_action": "Murid menyusun kad perkataan untuk membina ayat serta membaca hasilnya."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru memberikan gambar baharu untuk pembinaan ayat kedua dengan pilihan kosa kata yang sesuai.",
+          "pupil_action": "Murid menulis dua ayat, menyemak binaan dengan pasangan dan membetulkan kesalahan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru menilai dua ayat bertulis secara individu dengan kriteria susunan dan kejelasan mesej.",
+          "pupil_action": "Murid membaca ayat sendiri, membetulkan satu binaan dan menyatakan pelajaran hari ini."
+        }
+      ],
+      "formative_assessment": "Dua ayat ringkas tersusun, bermakna dan boleh dibaca.",
+      "differentiation": "Bingkai ayat subjek-perbuatan bagi sokongan; pengayaan membina ayat dengan maklumat tambahan.",
+      "character_values": [
+        "Ketekunan",
+        "komunikasi jelas"
+      ],
+      "duration_minutes": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_book_page": null,
+      "release_status": "DRAFT_HOLD_NOT_READY",
+      "academic_approved": false,
+      "ready_for_web": false,
+      "ready_for_telegram": false,
+      "rpt_scheduled": false
+    }
+  ]
+}
