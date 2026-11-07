@@ -29,7 +29,7 @@ from rpt_2027.common.sains_y6_bpk_2020_panduan_43_sp_source import source_index 
 OUT=ROOT/"staging/rpt_2027_seragam_2026/sains_342_pdp_SEPARA_DRAF"
 EXPECTED={2:51,3:45,4:79,5:83,6:84}
 DECLARED_SOURCE_NAME=SOURCES["v25.82"]
-HOLD="DRAF LEGACY: Kod SP semakan awal sahaja; pernyataan SK/SP, RPH, buku teks, aktiviti KPS dan agihan tarikh belum diluluskan sepenuhnya terhadap DSKP asal setiap tahun. BUKAN untuk digunakan guru. Agihan minggu hanya CADANGAN."
+HOLD="DRAF LEGACY: SK/SP, RPH, buku teks dan KPS belum lulus audit akhir. BUKAN untuk digunakan guru. Minggu hanya CADANGAN."
 
 def _normalize(value):
     return re.sub(r"\s+"," ",str(value or "")).strip()
