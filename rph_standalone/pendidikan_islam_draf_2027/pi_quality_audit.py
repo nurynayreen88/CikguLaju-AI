@@ -153,6 +153,25 @@ def audit(root=ROOT):
                 assert hadith["jawi_orthography_approved"] is False
                 assert hadith["publication"] == "HOLD"
                 flags.append("HADIS_T4_PETIKAN_BUKU_DSKP_DRAF_SEMAK_PAKAR")
+            tasmi = record.get("staging_tasmi_rpt_2027_review")
+            if tasmi:
+                assert year == 6 and record["id"] in ("T6-L137","T6-L141")
+                assert record["staging_source_review_required"] is True
+                assert tasmi["source_surah_list"] and len(tasmi["source_surah_list"]) == 4
+                assert tasmi["original_source_sk_sp_unchanged"] is True
+                assert tasmi["rpt_2027_has_exact_ayah_ranges_for_this_pdp"] is False
+                assert tasmi["teacher_must_select_and_record_exact_ayah_ranges_before_pdp"] is True
+                assert tasmi["no_three_level_dskp_sp_codes_assigned"] is True
+                assert tasmi["original_fields_preserved"]["sk"] == fields["sk"]
+                assert tasmi["original_fields_preserved"]["sp"] == fields["sp"]
+                assert len(tasmi["original_fields_preserved"]["aktiviti_utama"].splitlines()) == 2
+                assert len(fields["aktiviti_utama"].splitlines()) == 4
+                assert tasmi["actual_ayah_range_verified"] is False
+                assert tasmi["academic_expert_approved"] is False
+                assert tasmi["jawi_orthography_approved"] is False
+                assert tasmi["native_telegram_web_generator_verified"] is False
+                assert tasmi["publication"] == "HOLD"
+                flags.append("TASMI_T6_RPT_AYAT_BELUM_DITETAPKAN_GURU")
             if record.get("staging_source_review_required") is True:
                 flags.append("SUMBER_KRITIKAL_BELUM_LENGKAP")
             rows.append({"id": record["id"], "domain": domain,
@@ -175,6 +194,7 @@ def audit(root=ROOT):
         "critical_source_review_count": flag_counts["SUMBER_KRITIKAL_BELUM_LENGKAP"],
         "dskp_l146_alignment_editorial_review_count": flag_counts["DSKP_T3_L146_OBJECTIVE_PBD_REVISED_EXPERT_PENDING"],
         "t4_hadith_source_excerpt_editorial_review_count": flag_counts["HADIS_T4_PETIKAN_BUKU_DSKP_DRAF_SEMAK_PAKAR"],
+        "t6_tasmi_rpt_editorial_range_review_count": flag_counts["TASMI_T6_RPT_AYAT_BELUM_DITETAPKAN_GURU"],
         "textbook_page_range_overrun_count": flag_counts["HALAMAN_BUKU_T2_MELEBIHI_MUKA_TERAKHIR"],
         "generic_pbd_count": flag_counts["PBD_TIDAK_KHUSUS_KEPADA_SP"],
         "refined_pbd_review_count": flag_counts["PBD_SP_SASARAN_BELUM_DISAH_PAKAR"],
