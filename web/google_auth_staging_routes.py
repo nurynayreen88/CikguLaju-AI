@@ -191,7 +191,7 @@ def google_callback():
     success.delete_cookie(STATE_COOKIE, path="/api/auth/google",
                           secure=True, httponly=True, samesite="Lax")
     success.set_cookie(TICKET_COOKIE, ticket, secure=True, httponly=True,
-                       samesite="Lax", max_age=3600, path="/api/auth/google")
+                       samesite="Lax", max_age=3600, path="/")
     success.headers["Cache-Control"] = "no-store"
     return success
 
@@ -219,7 +219,7 @@ def google_logout():
     # This only revokes the independent Google staging ticket. The original
     # Telegram browser session remains untouched.
     response = make_response(jsonify({"google_verified": False}))
-    response.delete_cookie(TICKET_COOKIE, path="/api/auth/google",
+    response.delete_cookie(TICKET_COOKIE, path="/",
                            secure=True, httponly=True, samesite="Lax")
     response.headers["Cache-Control"] = "no-store"
     return response
