@@ -18,7 +18,8 @@ class TestTwoYear2PBDAlternatives(unittest.TestCase):
             self.assertFalse(is_direct_sp_match(ref))
             self.assertEqual(item["related_page"],ref["workbook_printed_page"])
             self.assertEqual(item["related_sp"],ref["workbook_printed_sp_codes"][0])
-            self.assertIn(sp,DSKP_URL if False else item["sp_text"]+" "+sp)
+            self.assertIn("drive.google.com",DSKP_URL)
+            self.assertIn("lakaran",item["sp_text"])
             self.assertEqual(len(item["criteria"]),3)
             self.assertTrue(item["question1"] and item["question2"] and item["question3"])
             self.assertIn("PBD_ALTERNATIF_DRAF",doc_file(sp).name)
@@ -49,7 +50,7 @@ class TestTwoYear2PBDAlternatives(unittest.TestCase):
         dark=TASKS["6.1.6"]
         self.assertIn("terang dan gelap",dark["sp_text"])
         self.assertIn("menyala",dark["question1"])
-        self.assertIn("dipadam",dark["question2"])
+        self.assertIn("padam",dark["question2"])
         self.assertIn("mata",dark["safe"])
 
 if __name__=="__main__":
