@@ -20,6 +20,7 @@ from pi_t3_book_footer_code_audit import audit as book_footer_t3
 from pi_t4_hadith_source_audit import audit as hadith_t4
 from pi_t6_tasmi_rpt_2027_review import audit as tasmi_t6
 from pi_y6_held_rpt_2027_source_review import audit as held_y6
+from pi_t6_sp42_primary_source_audit import audit as sp42_y6
 from pi_ba_match_queue import match_queue
 from pi_review_catalog import counts as preview_counts
 
@@ -36,6 +37,7 @@ def readiness(root=ROOT):
     hadith = hadith_t4(root)
     tasmi = tasmi_t6(root)
     held_source = held_y6(root)
+    sp42 = sp42_y6(root)
     ba = match_queue(root)
     preview = preview_counts(root=root)
     assert qa["total"] == 696 and qa["drafts"] == 690 and qa["held"] == 6
@@ -70,6 +72,10 @@ def readiness(root=ROOT):
     assert tasmi["year6_tasmi_rph_activities_revised"] == 2
     assert held_source["year6_held_lessons_checked"] == 5
     assert held_source["generated_held_rph"] == 0
+    assert sp42["l060_editor_candidate_created"] == 1
+    assert sp42["l060_original_year6_record_still_wholly_held"] is True
+    assert sp42["independent_official_dskp_lesson_numbers_claimed"] == 0
+    assert qa["t6_sp42_edited_kbat_review_count"] == 1
     assert tasmi["ayah_bounds_present_in_original_rpt"] == 0
     assert tasmi["verse_ranges_teacher_verified"] == 0
     assert qa["t6_tasmi_rpt_editorial_range_review_count"] == 2
@@ -111,6 +117,7 @@ def readiness(root=ROOT):
             "hadith_excerpt_from_original_source_pending_expert": counter["HADIS_T4_PETIKAN_BUKU_DSKP_DRAF_SEMAK_PAKAR"],
             "year6_tasmi_rpt_ayah_ranges_teacher_pending": counter["TASMI_T6_RPT_AYAT_BELUM_DITETAPKAN_GURU"],
             "year6_wholly_held_source_triaged_no_release": 5 if year == 6 else 0,
+            "source_dskp_sp42_kbat_rewritten_pending_expert": counter["T6_SP42_KBAT_DIPERBETUL_SEMAK_PAKAR"],
             "tasmi_verse_descriptions_without_3_level_sp": 37 if year == 3 else 0,
             "short_activity_source_hold": counter["AKTIVITI_TERLALU_RINGKAS_PERLU_SEMAKAN"],
             "expert_approved_lesson_count": 0,
@@ -124,6 +131,8 @@ def readiness(root=ROOT):
          "action": "Complete verified source text before generating a teacher RPH"},
         {"code": "CRITICAL_HADIS_OR_QURAN_BOUNDARY", "affected_lessons": 3,
          "action": "T4-L083 sourced excerpt from textbook p51/DSKP p27 needs expert/Jawi review. T6-L137/141 RPT2027 gives four surahs but no ayah limits; teacher must assign exact verse bounds in mushaf before use"},
+        {"code": "Y6_SP42_OPTIONAL_AMALI_TEACHER_HOLD", "affected_lessons": 1,
+         "action": "T6-L060 remains withheld. DSKP p34 confirms 4.2.3–4.2.5 as official codes; RPT p21 calls PdP60 optional CikguLaju practical. Review candidate fiqh/Jawi/PBD before any curriculum publication"},
         {"code": "JAWI_EDITOR_CANDIDATES_NOT_APPROVED", "affected_lessons": 690,
          "action": "Verify Jawi orthography, terminology and suitability by named reviewers"},
         {"code": "PBD_REFINEMENTS_PENDING_EXPERT", "affected_lessons": 43,
@@ -178,6 +187,11 @@ def readiness(root=ROOT):
         "year6_tasmi_official_dskp_codes_invented": 0,
         "year6_full_source_hold_records_reviewed_against_rpt": 5,
         "year6_full_source_hold_records_generated": 0,
+        "year6_sp42_official_dskp_sp_codes_confirmed": 3,
+        "year6_l059_offtopic_kbat_repaired_editorially": 1,
+        "year6_l060_optional_amali_candidate_created_held": 1,
+        "year6_l060_original_catalog_still_held": True,
+        "year6_l060_official_separate_lesson_claims": 0,
         "year3_tasmi_verse_lessons_not_given_fake_sp": 37,
         "teacher_approved_page_specific_exercises": 0,
         "book_activity_page_candidates": 174,
