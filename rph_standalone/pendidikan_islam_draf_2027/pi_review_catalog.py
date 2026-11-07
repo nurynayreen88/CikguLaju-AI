@@ -9,6 +9,7 @@ import json
 import re
 from functools import lru_cache
 from pathlib import Path
+from pi_editor_material_projection import EDITORIAL_PREFIXES
 
 ROOT = Path(__file__).resolve().parent
 COUNT = {2:112,3:147,4:151,5:143,6:143}
@@ -64,17 +65,19 @@ def get_lesson(year,lesson,*,root=ROOT):
     if y not in COUNT or n is None:return None
     records=_load(y,str(Path(root).resolve()))
     row=(records or {}).get(n)
-    return dict(row) if row and not row['withheld'] else None
+    return dict(row) if row and not row['withheld'] and not row.get('staging_source_review_required', False) else None
 
 
 def counts(*,root=ROOT):
-    available=0;held=0
+    available=0;held=0;critical=0
     for year in COUNT:
         r=_load(year,str(Path(root).resolve()))
         if r is None:return None
         available+=sum(not x['withheld'] for x in r.values())
         held+=sum(x['withheld'] for x in r.values())
-    return {'total':available+held,'draf':available,'held':held,'ready':0} if (available,held)==(690,6) else None
+        critical+=sum(not x['withheld'] and x.get('staging_source_review_required') is True for x in r.values())
+    return {'total':available+held,'draf':available,'held':held,
+            'critical_source_hold':critical,'preview_eligible':available-critical,'ready':0} if (available,held,critical)==(690,6,3) else None
 
 
 def preview_rows(state, existing, *,root=ROOT):
@@ -86,6 +89,10 @@ def preview_rows(state, existing, *,root=ROOT):
     r=get_lesson(y,n,root=root)
     if r is None:return existing
     fields=r['fields']
+    # Display only classroom materials, never internal source/page audit notes.
+    parts=[x.strip() for x in fields['bahan'].splitlines() if x.strip()]
+    if not parts or any(not x.startswith(EDITORIAL_PREFIXES) for x in parts[1:]):
+        return existing
     selected_sp=str(state.get('sp_code') or '').strip()
     if selected_sp and selected_sp not in fields['sp']:return existing
     result=dict(existing)
@@ -101,7 +108,7 @@ def preview_rows(state, existing, *,root=ROOT):
         'AKTIVITI UTAMA':fields['aktiviti_utama'],
         'PENTAKSIRAN':fields['pentaksiran'],
         'PENUTUP':fields['penutup'],
-        'BAHAN BANTU MENGAJAR':fields['bahan'],
+        'BAHAN BANTU MENGAJAR':parts[0],
         'CATATAN SEMAKAN':r['teacher_notice'],
     })
     return result
