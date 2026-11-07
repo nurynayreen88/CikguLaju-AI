@@ -450,6 +450,19 @@ except Exception as _native_bm_sequence_exc:
           type(_native_bm_sequence_exc).__name__, flush=True)
 
 
+# Year 5 Sains source is installed only for explicit *isolated staging*
+# validation. Live Render services are blocked by the module's safety gate.
+# Never alter production source, quota, user or DB by importing this file.
+import os as _sains_review_env
+if _sains_review_env.environ.get("CIKGULAJU_SAINS_Y5_83_INTERNAL_REVIEW") == "1":
+    from web.sains_y5_83_staging_shared_runtime_20261108 import (
+        install as _install_sains_y5_83_review,
+    )
+    SAINS_Y5_83_INTERNAL_REVIEW_ACTIVE = _install_sains_y5_83_review(telegram_runtime)
+else:
+    SAINS_Y5_83_INTERNAL_REVIEW_ACTIVE = False
+
+
 # Sains / Matematik: Web units and PdP selections use Telegram's exact
 # grouped verified_pdp_sequence reader, not misleading weekly RPT row IDs.
 try:
