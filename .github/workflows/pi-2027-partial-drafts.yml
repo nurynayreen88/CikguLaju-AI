@@ -65,6 +65,8 @@ jobs:
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_t4_hadith_source_audit.py --output pi_t4_l083_hadith_source_editor_HOLD.json
       - name: Audit two Year6 Juz30 tasmi lessons against RPT2027 p48-49 (no ayah fabrication)
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_t6_tasmi_rpt_2027_review.py --json pi_t6_tasmi_rpt_2_NO_GO.json --csv pi_t6_tasmi_rpt_2_NO_GO.csv
+      - name: Audit five wholly held Year6 source cases against RPT2027; never create content
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_y6_held_rpt_2027_source_review.py --json pi_y6_full_held_source_5_NO_GO.json --csv pi_y6_full_held_source_5_NO_GO.csv
       - name: Verify every audit artifact exists, is nonempty, and stays review-only
         shell: bash
         run: |
@@ -105,7 +107,9 @@ jobs:
             pi_t3_book_footer_sp_147.csv \
             pi_t4_l083_hadith_source_editor_HOLD.json \
             pi_t6_tasmi_rpt_2_NO_GO.json \
-            pi_t6_tasmi_rpt_2_NO_GO.csv; do
+            pi_t6_tasmi_rpt_2_NO_GO.csv \
+            pi_y6_full_held_source_5_NO_GO.json \
+            pi_y6_full_held_source_5_NO_GO.csv; do
             if [ ! -s "$file" ]; then
               echo "::error::Audit artifact missing or empty: $file"
               exit 1
@@ -153,6 +157,8 @@ jobs:
             pi_t4_l083_hadith_source_editor_HOLD.json
             pi_t6_tasmi_rpt_2_NO_GO.json
             pi_t6_tasmi_rpt_2_NO_GO.csv
+            pi_y6_full_held_source_5_NO_GO.json
+            pi_y6_full_held_source_5_NO_GO.csv
           retention-days: 30
 
   physical-word-pdf-a4:
