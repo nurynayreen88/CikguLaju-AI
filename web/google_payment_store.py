@@ -13,6 +13,7 @@ from urllib.parse import urlencode, quote
 from urllib.request import Request, urlopen
 
 from web.provider_neutral_payment import validate_payment_plan
+from web.google_staging_service_auth import staging_service_headers
 
 BUCKET = "web-receipts-staging"
 MAX_RECEIPT = 4 * 1024 * 1024
@@ -49,8 +50,8 @@ def _request(config, path, *, method="GET", data=None, content_type="application
     base = config.get("supabase_url", "")
     if not isinstance(key, str) or len(key) < 24 or not base.startswith("https://"):
         raise PaymentUnavailable("Sambungan pembayaran staging tidak tersedia")
-    headers = {"apikey": key, "Authorization": "Bearer " + key,
-               "Accept": "application/json", "Content-Type": content_type}
+    headers = {**staging_service_headers(key),
+               "Content-Type": content_type}
     if prefer:
         headers["Prefer"] = prefer
     req = Request(base.rstrip("/") + path, data=data,
@@ -209,8 +210,8 @@ def private_receipt(config, request_id):
     # No signed/public URL. Proxy only to an authorized administrator.
     endpoint = "/storage/v1/object/authenticated/" + BUCKET + "/" + quote(path, safe="/")
     key = config["staging_service_key"]
-    req = Request(config["supabase_url"].rstrip("/") + endpoint, headers={
-        "apikey": key, "Authorization": "Bearer " + key}, method="GET")
+    req = Request(config["supabase_url"].rstrip("/") + endpoint,
+                  headers=staging_service_headers(key), method="GET")
     try:
         with urlopen(req, timeout=14) as res:
             mime = res.headers.get("Content-Type", "").split(";")[0]
