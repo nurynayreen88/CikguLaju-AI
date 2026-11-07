@@ -110,11 +110,13 @@ def build_sheet(sp):
             grid=doc.add_table(rows=1,cols=4 if sp=="4.1.7" else 2)
             grid.style="Table Grid"
             for i,cell in enumerate(grid.rows[0].cells):
-                cell.text=f"{chr(65+i)}\n\n\n\n\n\n\n"
+                cell.text=f"{chr(65+i)}"+("\n"*16)
         elif number==2:
             for i in range(2):
                 p=doc.add_paragraph(f"{i+1}. __________________________________________________________________________")
                 p.paragraph_format.space_after=Pt(1)
+                extra=doc.add_paragraph("     __________________________________________________________________________")
+                extra.paragraph_format.space_after=Pt(2)
         else:
             p=doc.add_paragraph("Jawapan/rekod lisan murid: ______________________________________________________")
             p.paragraph_format.space_after=Pt(1)
