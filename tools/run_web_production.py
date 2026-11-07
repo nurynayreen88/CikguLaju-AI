@@ -22,6 +22,10 @@ app.register_blueprint(prod_paid_status_bridge_bp)
 # paid-status HTTP request in this compatibility path. Disabled by default.
 from web.google_native_legacy_web_routes import bp as native_google_login_bp
 app.register_blueprint(native_google_login_bp)
+# Canonical UUID Google-only login for the SAME production Supabase. Disabled
+# until reviewed migration and native Google-only RPH quota rollout are ready.
+from web.google_native_canonical_login_routes import bp as google_canonical_login_bp
+app.register_blueprint(google_canonical_login_bp)
 from web.web_referral_routes import install as install_web_referral
 install_web_referral(app)
 
