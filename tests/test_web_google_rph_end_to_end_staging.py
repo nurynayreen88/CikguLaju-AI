@@ -255,6 +255,79 @@ class GoogleRPHHTTPFlowTests(unittest.TestCase):
         self.assertEqual(rejected.status_code, 403)
         self.assertEqual(self.jobs, {})
 
+    def test_verified_paid_tg_and_google_generate_unlimited_without_trial_debit(self):
+        # Same verified staging UUID via either session, with externally
+        # verified production Rakan Pembangun. Credits never decrease.
+        self.credits = 0
+        self.current_provider = "telegram"
+        with patch("web.google_rph_generation_staging_routes.verified_paid_uid_for_rph",
+                   return_value=123456789):
+            issued = self.issue()
+            first = self.generate(issued["ticket"])
+            self.assertEqual(first.status_code, 200, first.json)
+            self.assertEqual(first.json["access_mode"], "paid")
+            self.assertEqual(first.json["remaining"], 0)
+            self.assertEqual(self.credits, 0)
+            self.assertEqual(self.debits, 0)
+            self.current_provider = "google"
+            repeated = self.generate(issued["ticket"])
+            self.assertEqual(repeated.status_code, 200)
+            self.assertTrue(repeated.json["already_ready"])
+            self.assertEqual(self.native_calls, 1)
+            second = self.issue()
+            second_gen = self.generate(second["ticket"])
+            self.assertEqual(second_gen.status_code, 200, second_gen.json)
+            self.assertEqual(second_gen.json["remaining"], 0)
+            self.assertEqual(self.credits, 0)
+            self.assertEqual(self.debits, 0)
+
+    def test_bridge_offline_never_silently_debits_trial_credit(self):
+        from web.staging_production_paid_status_client import PaidStatusBridgeUnavailable
+        self.credits = 8
+        with patch("web.google_rph_generation_staging_routes.verified_paid_uid_for_rph",
+                   side_effect=PaidStatusBridgeUnavailable("offline")):
+            denied = self.post("/api/google-staging/web/rph/issue", REQUEST)
+            self.assertEqual(denied.status_code, 503)
+            self.assertEqual(self.debits, 0)
+            self.assertEqual(self.credits, 8)
+            self.assertEqual(self.jobs, {})
+        issued = self.issue()
+        with patch("web.google_rph_generation_staging_routes.verified_paid_uid_for_rph",
+                   side_effect=PaidStatusBridgeUnavailable("offline")):
+            denied = self.generate(issued["ticket"])
+            self.assertEqual(denied.status_code, 503)
+            self.assertEqual(self.debits, 0)
+            self.assertEqual(self.credits, 8)
+            self.assertEqual(self.native_calls, 0)
+
+    def test_revoked_paid_while_rendering_never_grants_paid_finalization(self):
+        # Issue as paid, render only after verified paid; revoke between
+        # render and final commit. A trial credit applies if still available.
+        self.credits = 8
+        with patch("web.google_rph_generation_staging_routes.verified_paid_uid_for_rph",
+                   return_value=123456789):
+            issued = self.issue()
+        with patch("web.google_rph_generation_staging_routes.verified_paid_uid_for_rph",
+                   side_effect=[123456789, None]):
+            result = self.generate(issued["ticket"])
+        self.assertEqual(result.status_code, 200, result.json)
+        self.assertEqual(result.json["access_mode"], "trial")
+        self.assertEqual(self.credits, 7)
+        self.assertEqual(self.debits, 1)
+
+    def test_revoked_paid_at_zero_credits_fails_without_paid_grant(self):
+        self.credits = 0
+        with patch("web.google_rph_generation_staging_routes.verified_paid_uid_for_rph",
+                   return_value=123456789):
+            issued = self.issue()
+        with patch("web.google_rph_generation_staging_routes.verified_paid_uid_for_rph",
+                   side_effect=[123456789, None]):
+            result = self.generate(issued["ticket"])
+        self.assertEqual(result.status_code, 403)
+        self.assertEqual(self.debits, 0)
+        self.assertEqual(self.credits, 0)
+        self.assertEqual(self.jobs[issued["job_id"]]["status"], "prepared")
+
     def test_zero_credits_with_no_payment_cannot_create_job(self):
         self.credits = 0
         with patch("web.google_payment_store.web_payment_access",
