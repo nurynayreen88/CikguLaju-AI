@@ -73,6 +73,19 @@ def self_hosted_pdf_lib():
     return send_file(path,mimetype="application/javascript",max_age=86400,conditional=True)
 
 
+@app.get("/assets/rpt-original-cover-layout.json")
+def original_rpt_cover_layout():
+    """Fixed public PDF cover coordinates and hashes only; no teacher data."""
+    from pathlib import Path
+    from flask import send_file
+    path=(Path(__file__).resolve().parents[1]/"rpt_2027"/
+          "web_2027_pdfs"/"original_cover_layout_verified.json")
+    response=send_file(path,mimetype="application/json",max_age=0,conditional=False)
+    response.headers["Cache-Control"]="no-store"
+    response.headers["X-Content-Type-Options"]="nosniff"
+    return response
+
+
 @app.get("/assets/rpt-personalize.js")
 def personalized_rpt_script():
     """Browser-side private PDF cover without modifying curriculum bytes."""
