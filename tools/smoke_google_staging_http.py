@@ -110,6 +110,12 @@ def check():
     assert status == 403, ("cross-origin Telegram logout", status)
     print("PASS: Telegram teacher sign-in live in staging; anonymous balance denied, Widget bot public only.")
 
+    # Staging NEVER mounts the production-only entitlement bridge API.
+    status, _headers, _body = fetch(
+        "/internal/identity/v1/entitlements",
+        post_json={"telegram_user_id": 123456789})
+    assert status == 404, ("staging must not serve production private identity API", status)
+
     # Newly mounted Web lesson selector must never expose curriculum
     # metadata without a valid Google-only signed session.
     status, headers, _body = fetch("/google-staging-web")
@@ -122,6 +128,7 @@ def check():
         "/api/google-staging/web/materials?year=3&subject=ENGLISH&component=&unit=One&lesson=e-3-001",
         "/api/google-staging/web/rph/recent",
         "/api/google-staging/web/rph/capabilities",
+        "/api/google-staging/web/access/status",
         "/api/google-staging/web/rph/jobs/0ebc954f-85e1-4c06-b4d2-41a8bf811111/status",
         "/api/google-staging/web/rph/jobs/0ebc954f-85e1-4c06-b4d2-41a8bf811111/download/pdf",
     ):
