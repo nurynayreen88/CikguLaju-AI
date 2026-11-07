@@ -6,7 +6,7 @@ unmodified. All data is in a SEPARATE staging Supabase project.
 import json
 import os
 import uuid
-from flask import Blueprint, jsonify, make_response, request, send_file, current_app
+from flask import Blueprint, jsonify, make_response, request, send_file, current_app, redirect
 from io import BytesIO
 from pathlib import Path
 
@@ -55,33 +55,18 @@ def _google_account():
 
 
 def _reviewer():
-    config = _config()
+    # New, purpose-specific staging admin ticket. No lookup, mutation or
+    # dependency on the live Telegram/Web production user database.
+    from web.google_staging_admin_auth_routes import (
+        ADMIN_COOKIE, _config as admin_config, admin_allowlist)
+    from web.google_staging_admin_sessions import verify_staging_admin_ticket
+    config = admin_config()
     if not config:
-        return None, None, (jsonify({"error": "Staging tidak tersedia"}), 503)
-    raw = os.environ.get("CIKGULAJU_GOOGLE_STAGING_ADMIN_TELEGRAM_IDS", "")
-    try:
-        allowed = {int(x) for x in raw.split(",") if x.strip() and x.strip().isdigit()}
-    except ValueError:
-        allowed = set()
-    if not allowed:
-        return None, None, (jsonify({"error": "Admin staging belum ditetapkan"}), 503)
-
-    from web_v1_telegram_auth_routes import COOKIE, _config as legacy_config, _lookup
-    from web_v1_sessions import verify_session_ticket
-    uid = verify_session_ticket(request.cookies.get(COOKIE), config["secret"])
-    if type(uid) is not int or uid not in allowed:
+        return None, None, (jsonify({"error": "Admin staging belum tersedia"}), 503)
+    uid = verify_staging_admin_ticket(request.cookies.get(ADMIN_COOKIE),
+                                      config["secret"])
+    if type(uid) is not int or uid not in admin_allowlist():
         return None, None, (jsonify({"error": "Admin Telegram diperlukan"}), 403)
-    # Only an allowlisted, signed Telegram identity may hit the legacy
-    # account backend, preventing data/config probing by anonymous browsers.
-    old = legacy_config()
-    if old is None:
-        return None, None, (jsonify({"error": "Pengesahan admin belum tersedia"}), 503)
-    try:
-        account = _lookup(old, uid)
-    except Exception:
-        return None, None, (jsonify({"error": "Semakan admin gagal"}), 503)
-    if not account or account.get("telegram_user_id") != uid:
-        return None, None, (jsonify({"error": "Admin tidak disahkan"}), 403)
     return config, uid, None
 
 
@@ -118,6 +103,11 @@ def google_payment_page():
 def google_payment_admin_page():
     config, admin_uid, error = _reviewer()
     if error:
+        if request.accept_mimetypes.accept_html:
+            raw = request.args.get("payment", "")
+            next_query = ("?payment=" + raw) if (len(request.args)==1 and
+                __import__("re").fullmatch(r"[0-9a-f-]{36}", raw)) else ""
+            return redirect("/admin/google-staging-login" + next_query, code=303)
         return error
     return send_file(Path(__file__).with_name("google_staging_admin_payments.html"),
                      mimetype="text/html", max_age=0)
