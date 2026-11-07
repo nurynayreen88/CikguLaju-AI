@@ -41,6 +41,37 @@ class PICurriculumGuardrails(unittest.TestCase):
                 self.assertTrue(fields["pentaksiran"].strip())
         self.assertEqual(review, 560)
 
+    def test_pbd_rewrite_preserves_original_and_stays_unapproved(self):
+        refinements = []
+        for (year, lesson), row in self.rows.items():
+            if row["withheld"]:
+                self.assertNotIn("staging_pbd_refinement", row)
+                continue
+            change = row.get("staging_pbd_refinement")
+            if change is None:
+                continue
+            refinements.append((year, lesson))
+            fields = row["fields"]
+            self.assertIn("برداسركن كريتيريا دالم SP",
+                          change["original_pentaksiran"])
+            self.assertNotIn("برداسركن كريتيريا دالم SP",
+                             fields["pentaksiran"])
+            self.assertTrue(fields["pentaksiran"].startswith(
+                change["original_pentaksiran"].split("ڤبد اينديويدو:")[0]))
+            self.assertIn(change["assessment_criterion_review_only"],
+                          fields["pentaksiran"])
+            self.assertIn(change["observed_evidence_review_only"],
+                          fields["pentaksiran"])
+            self.assertIs(change["source_sk_sp_unchanged"], True)
+            self.assertIs(change["book_or_verse_reference_added"], False)
+            self.assertIs(change["jawi_orthography_approved"], False)
+            self.assertIs(change["content_expert_approved"], False)
+            self.assertIs(change["word_pdf_tested"], False)
+            self.assertEqual(change["publication"], "HOLD")
+        self.assertEqual(len(refinements), 43)
+        self.assertEqual(sum(1 for y, _ in refinements if y == 2), 14)
+        self.assertEqual(sum(1 for y, _ in refinements if y == 3), 29)
+
     def test_specific_2027_source_topic_corrections(self):
         yr3_87 = self.rows[(3, 87)]
         self.assertIn("منونتوت علمو", yr3_87["fields"]["sp"])
