@@ -13,6 +13,7 @@ from pathlib import Path
 from pi_quality_audit import ROOT, COUNT, audit
 from pi_closing_jawi_candidates_complete import generate as jawi_candidates
 from pi_t2_textbook_toc_review import audit as source_toc
+from pi_t2_54_direct_source_review import audit as direct_sp_54
 from pi_ba_match_queue import match_queue
 from pi_review_catalog import counts as preview_counts
 
@@ -22,6 +23,7 @@ def readiness(root=ROOT):
     qa = audit(root)
     jawi = jawi_candidates(root)
     toc = source_toc(root)
+    direct = direct_sp_54(root)
     ba = match_queue(root)
     preview = preview_counts(root=root)
     assert qa["total"] == 696 and qa["drafts"] == 690 and qa["held"] == 6
@@ -35,6 +37,9 @@ def readiness(root=ROOT):
     assert toc["notes_checked"] == 77
     assert toc["out_of_book_end_page_claims"] == 3
     assert toc["specific_lesson_page_verified"] == 0
+    assert direct["directly_cross_checked_lesson_count"] == 3
+    assert direct["sp_543_jawi_wording_corrections"] == 2
+    assert direct["lesson_specific_activity_approvals"] == 0
     assert ba["refined_page_review_candidates"] == 174
     assert ba["oral_and_tasmi_no_forced_book"] == 84
     assert ba["confirmed_exercise_pages"] == 0
@@ -59,6 +64,8 @@ def readiness(root=ROOT):
             "pbd_focused_rewrites_pending_expert": counter["PBD_SP_SASARAN_BELUM_DISAH_PAKAR"],
             "outdated_page_notes_pending_sp_match": notes_pending,
             "page_claims_past_book_end": counter["HALAMAN_BUKU_T2_MELEBIHI_MUKA_TERAKHIR"],
+            "direct_dskp_textbook_sp_footer_crosschecked": 3 if year == 2 else 0,
+            "exact_lesson_activity_approvals": 0,
             "short_activity_source_hold": counter["AKTIVITI_TERLALU_RINGKAS_PERLU_SEMAKAN"],
             "expert_approved_lesson_count": 0,
             "ready_for_teacher": 0,
@@ -102,6 +109,9 @@ def readiness(root=ROOT):
         "reviewed_textbook_toc_ranges": 77,
         "toc_ranges_consistent_with_book": 74,
         "invalid_book_end_page_claims": 3,
+        "direct_dskp_textbook_sp_footer_lesson_crosschecks": 3,
+        "source_supported_sp543_jawi_wording_fixes": 2,
+        "teacher_approved_page_specific_exercises": 0,
         "book_activity_page_candidates": 174,
         "book_activity_exercises_verified": 0,
         "individual_expert_approvals": 0,
