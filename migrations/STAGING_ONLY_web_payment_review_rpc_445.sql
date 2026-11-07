@@ -82,7 +82,8 @@ DECLARE
 BEGIN
   IF p_request_id IS NULL OR p_action NOT IN ('approve','reject')
       OR p_admin_actor !~ '^telegram:[0-9]{4,20}$'
-      OR length(coalesce(p_note,'')) > 500 THEN
+      OR length(coalesce(p_note,'')) > 500
+      OR (p_action='reject' AND nullif(btrim(p_note), '') IS NULL) THEN
     RAISE EXCEPTION 'Invalid payment review';
   END IF;
 
