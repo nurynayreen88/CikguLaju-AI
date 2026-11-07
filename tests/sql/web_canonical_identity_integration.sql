@@ -75,3 +75,81 @@ BEGIN
 END;
 $test$;
 ROLLBACK;
+
+-- A second transaction proves Google-only account signup uses a UUID and
+-- exactly one initial trial allocation, with no invented Telegram account.
+BEGIN;
+-- Disposable CI service_role must behave like Supabase's private bypass role.
+ALTER ROLE service_role BYPASSRLS;
+DO $deny$
+BEGIN
+ IF has_function_privilege('anon',
+       'public.ensure_native_google_web_principal(uuid,text)','EXECUTE')
+ OR has_function_privilege('authenticated',
+       'public.ensure_native_google_web_principal(uuid,text)','EXECUTE')
+ OR NOT has_function_privilege('service_role',
+       'public.ensure_native_google_web_principal(uuid,text)','EXECUTE') THEN
+    RAISE EXCEPTION 'Google canonical signup function privileges are unsafe';
+ END IF;
+ BEGIN
+    PERFORM public.ensure_native_google_web_principal(
+       '11111111-1111-4111-8111-111111111111','teacher1@example.com');
+    RAISE EXCEPTION 'Non-service role created Google principal';
+ EXCEPTION WHEN raise_exception THEN
+    IF SQLERRM <> 'Private canonical signup requires service role' THEN RAISE; END IF;
+ END;
+END;
+$deny$;
+SET LOCAL ROLE service_role;
+DO $verify$
+DECLARE
+ v_first uuid;
+ v_repeat uuid;
+ v_second uuid;
+ v_remaining integer;
+ v_tg bigint;
+ v_email text;
+ v_count integer;
+BEGIN
+ v_first := public.ensure_native_google_web_principal(
+      '11111111-1111-4111-8111-111111111111', 'teacher1@example.com');
+ v_repeat := public.ensure_native_google_web_principal(
+      '11111111-1111-4111-8111-111111111111', 'teacher1@example.com');
+ IF v_first IS NULL OR v_first <> v_repeat THEN
+    RAISE EXCEPTION 'Same OAuth identity created multiple accounts';
+ END IF;
+ SELECT legacy_telegram_user_id, google_only_trial_remaining, google_login_email
+ INTO v_tg,v_remaining,v_email FROM public.cikgulaju_web_principals WHERE id=v_first;
+ IF v_tg IS NOT NULL OR v_remaining <> 10 OR v_email <> 'teacher1@example.com' THEN
+    RAISE EXCEPTION 'Google-only signup produced incorrect account/quota/ID';
+ END IF;
+
+ BEGIN
+    PERFORM public.ensure_native_google_web_principal(
+       '22222222-2222-4222-8222-222222222222', 'teacher1@example.com');
+    RAISE EXCEPTION 'Different Google subject seized existing email';
+ EXCEPTION WHEN unique_violation THEN NULL;
+ END;
+ BEGIN
+    PERFORM public.ensure_native_google_web_principal(
+       '22222222-2222-4222-8222-222222222222', 'TEACHER@EXAMPLE.COM');
+    RAISE EXCEPTION 'Unnormalized email accepted';
+ EXCEPTION WHEN raise_exception THEN
+    IF SQLERRM <> 'Invalid verified Google identity' THEN RAISE; END IF;
+ END;
+ v_second := public.ensure_native_google_web_principal(
+      '22222222-2222-4222-8222-222222222222', 'teacher2@example.com');
+ IF v_second = v_first THEN RAISE EXCEPTION 'Distinct Google OAuth merged accounts'; END IF;
+ v_repeat := public.ensure_native_google_web_principal(
+      '11111111-1111-4111-8111-111111111111', 'teacher3@example.com');
+ IF v_repeat <> v_first THEN RAISE EXCEPTION 'Verified email change lost account UUID'; END IF;
+ SELECT count(*) INTO v_count FROM public.cikgulaju_web_principals
+ WHERE google_login_email IS NOT NULL;
+ IF v_count <> 2 THEN RAISE EXCEPTION 'Unexpected canonical principals: %',v_count; END IF;
+ SELECT count(*) INTO v_count FROM public.cikgulaju_users
+ WHERE telegram_user_id IN (11111111,22222222);
+ IF v_count <> 0 THEN RAISE EXCEPTION 'Google signup fabricated Telegram account'; END IF;
+ RAISE NOTICE 'PASS: Google-only account UUID, one trial, safe verified email change and collision protection';
+END;
+$verify$;
+ROLLBACK;
