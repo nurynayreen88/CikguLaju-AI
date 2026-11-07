@@ -69,6 +69,12 @@ class PIReleaseReadinessTests(unittest.TestCase):
         self.assertEqual(r["year3_tasmi_verse_lessons_not_given_fake_sp"], 37)
         self.assertEqual(r["teacher_approved_page_specific_exercises"], 0)
         self.assertEqual(r["book_activity_page_candidates"], 174)
+        self.assertEqual(r["year5_ambiguous_activity_book_source_mentions"], 13)
+        source_issue = [b for b in r["release_blockers"] if b["code"] ==
+                        "YEAR5_JAWI_BUKU_AKTIVITI_WORDING_SOURCE_UNVERIFIED"]
+        self.assertEqual(len(source_issue), 1)
+        self.assertEqual(source_issue[0]["affected_lessons"], 13)
+        self.assertIn("Nine Year5 Jawi PBD", source_issue[0]["action"])
         self.assertAlmostEqual(r["mechanical_three_step_coverage_percent"], 100.0)
         self.assertGreaterEqual(len(r["release_blockers"]), 9)
         issue = [x for x in r["release_blockers"] if x["code"] ==
