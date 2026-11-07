@@ -29,7 +29,7 @@ class StagingAccessStatusTests(unittest.TestCase):
 
     def test_same_account_and_plans_under_both_provider_sessions(self):
         for actor in (GOOGLE, TELEGRAM):
-            with self.subTest(provider=actor.provider), (
+            with (self.subTest(provider=actor.provider),
                 patch("web.google_web_catalog_staging._actor",
                       return_value=(actor, None)),
                 patch("web.google_web_catalog_staging._enabled_config",
