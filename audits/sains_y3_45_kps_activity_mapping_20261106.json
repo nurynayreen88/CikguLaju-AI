@@ -1,0 +1,293 @@
+{
+  "title": "Science Year3 45 distinct content SP to DSKP process-skill activity mapping",
+  "date": "2026-11-06",
+  "status": "DRAF_KPS_INTEGRATION_PENDING_TEACHER_REVIEW",
+  "dsKP_source": "https://drive.google.com/file/d/1n4OM7x2e1_LIaBQDIxyeHmXglImtu5Yb/view",
+  "source_evidence": "Year3 DSKP text: Section 1.1.1–1.1.6 named KPS; existing 45 specific teacher/pupil actions inspected and skill selected to match action, no invented skill code",
+  "kps_code_labels": {
+    "1.1.1": "Memerhati",
+    "1.1.2": "Mengelas",
+    "1.1.3": "Mengukur dan menggunakan nombor",
+    "1.1.4": "Membuat inferens",
+    "1.1.5": "Meramal",
+    "1.1.6": "Berkomunikasi"
+  },
+  "by_primary_sp": {
+    "3.1.1": [
+      "1.1.1",
+      "1.1.6"
+    ],
+    "3.1.2": [
+      "1.1.1",
+      "1.1.6"
+    ],
+    "3.1.3": [
+      "1.1.2",
+      "1.1.6"
+    ],
+    "3.1.4": [
+      "1.1.4",
+      "1.1.6"
+    ],
+    "3.1.5": [
+      "1.1.1",
+      "1.1.6"
+    ],
+    "3.2.1": [
+      "1.1.2",
+      "1.1.6"
+    ],
+    "3.2.2": [
+      "1.1.4",
+      "1.1.6"
+    ],
+    "3.2.3": [
+      "1.1.2",
+      "1.1.6"
+    ],
+    "3.2.4": [
+      "1.1.4",
+      "1.1.5"
+    ],
+    "3.3.1": [
+      "1.1.1",
+      "1.1.6"
+    ],
+    "3.3.2": [
+      "1.1.1",
+      "1.1.6"
+    ],
+    "4.1.1": [
+      "1.1.2",
+      "1.1.6"
+    ],
+    "4.1.2": [
+      "1.1.2",
+      "1.1.6"
+    ],
+    "4.1.3": [
+      "1.1.4",
+      "1.1.6"
+    ],
+    "4.1.4": [
+      "1.1.2",
+      "1.1.6"
+    ],
+    "4.1.5": [
+      "1.1.1",
+      "1.1.6"
+    ],
+    "5.1.1": [
+      "1.1.2",
+      "1.1.6"
+    ],
+    "5.1.2": [
+      "1.1.4",
+      "1.1.5"
+    ],
+    "5.1.3": [
+      "1.1.1",
+      "1.1.5"
+    ],
+    "5.1.4": [
+      "1.1.1",
+      "1.1.6"
+    ],
+    "6.1.1": [
+      "1.1.3",
+      "1.1.6"
+    ],
+    "6.1.2": [
+      "1.1.3",
+      "1.1.6"
+    ],
+    "6.1.3": [
+      "1.1.3",
+      "1.1.4"
+    ],
+    "6.1.4": [
+      "1.1.3",
+      "1.1.6"
+    ],
+    "6.1.5": [
+      "1.1.3",
+      "1.1.1"
+    ],
+    "6.1.6": [
+      "1.1.3",
+      "1.1.4"
+    ],
+    "6.1.7": [
+      "1.1.1",
+      "1.1.6"
+    ],
+    "7.1.1": [
+      "1.1.5",
+      "1.1.1",
+      "1.1.4"
+    ],
+    "7.1.2": [
+      "1.1.4",
+      "1.1.6"
+    ],
+    "7.1.3": [
+      "1.1.1",
+      "1.1.4"
+    ],
+    "7.1.4": [
+      "1.1.1",
+      "1.1.6"
+    ],
+    "8.1.1": [
+      "1.1.1",
+      "1.1.2"
+    ],
+    "8.1.2": [
+      "1.1.2",
+      "1.1.4"
+    ],
+    "8.1.3": [
+      "1.1.5",
+      "1.1.1"
+    ],
+    "8.1.4": [
+      "1.1.1",
+      "1.1.6"
+    ],
+    "9.1.1": [
+      "1.1.1",
+      "1.1.6"
+    ],
+    "9.1.2": [
+      "1.1.4",
+      "1.1.6"
+    ],
+    "9.1.3": [
+      "1.1.1",
+      "1.1.6"
+    ],
+    "9.1.4": [
+      "1.1.4",
+      "1.1.6"
+    ],
+    "9.1.5": [
+      "1.1.1",
+      "1.1.6"
+    ],
+    "10.1.1": [
+      "1.1.1",
+      "1.1.6"
+    ],
+    "10.1.2": [
+      "1.1.1",
+      "1.1.4"
+    ],
+    "10.1.3": [
+      "1.1.4",
+      "1.1.6"
+    ],
+    "10.1.4": [
+      "1.1.1",
+      "1.1.6"
+    ],
+    "10.1.5": [
+      "1.1.1",
+      "1.1.6"
+    ]
+  },
+  "limitations": [
+    "Process-skill SP integrated as skill evidence, not extra numbered PdP.",
+    "Final teacher approval and visual textbook checks remain necessary.",
+    "The six codes are Year3 DSKP only; do not apply unmodified to Year4–6.",
+    "1.2 and 2.1 only added to particular hands-on activities, not all 45 lessons. Actual safety supervision and equipment suitability still require teacher approval."
+  ],
+  "manipulative_dskp": {
+    "1.2.1": "Menggunakan dan mengendalikan peralatan dan bahan sains dengan betul",
+    "1.2.2": "Mengendalikan spesimen dengan betul dan cermat",
+    "1.2.3": "Melakar spesimen, peralatan dan bahan sains dengan betul",
+    "1.2.4": "Membersihkan peralatan sains dengan cara yang betul",
+    "1.2.5": "Menyimpan peralatan dan bahan sains dengan betul dan selamat",
+    "2.1.1": "Mematuhi peraturan bilik sains"
+  },
+  "manipulative_by_primary_sp": {
+    "5.1.1": [
+      "1.2.2",
+      "1.2.3"
+    ],
+    "5.1.3": [
+      "1.2.1",
+      "1.2.2",
+      "1.2.5",
+      "2.1.1"
+    ],
+    "5.1.4": [
+      "1.2.3",
+      "1.2.4",
+      "1.2.5",
+      "2.1.1"
+    ],
+    "6.1.2": [
+      "1.2.1",
+      "1.2.3"
+    ],
+    "6.1.3": [
+      "1.2.2",
+      "1.2.3"
+    ],
+    "6.1.4": [
+      "1.2.1",
+      "1.2.3",
+      "1.2.5",
+      "2.1.1"
+    ],
+    "6.1.5": [
+      "1.2.1",
+      "1.2.4",
+      "1.2.5",
+      "2.1.1"
+    ],
+    "6.1.6": [
+      "1.2.1",
+      "1.2.4",
+      "1.2.5",
+      "2.1.1"
+    ],
+    "7.1.1": [
+      "1.2.1",
+      "1.2.4",
+      "1.2.5",
+      "2.1.1"
+    ],
+    "7.1.3": [
+      "1.2.1",
+      "1.2.4",
+      "1.2.5",
+      "2.1.1"
+    ],
+    "8.1.1": [
+      "1.2.1",
+      "1.2.4",
+      "1.2.5",
+      "2.1.1"
+    ],
+    "8.1.3": [
+      "1.2.1",
+      "1.2.4",
+      "1.2.5",
+      "2.1.1"
+    ],
+    "10.1.2": [
+      "1.2.1",
+      "1.2.5",
+      "2.1.1"
+    ],
+    "10.1.4": [
+      "1.2.1",
+      "1.2.3",
+      "1.2.5",
+      "2.1.1"
+    ]
+  },
+  "manipulative_status": "DRAF_ACTIVITY_DEPENDENT__NOT_AN_EXTRA_NUMBERED_PDP",
+  "manipulative_evidence": "DSKP Year3 printed text for 1.2.1..1.2.5 and 2.1.1, activities in current BANK, not automatic classroom timetable or teacher-approved lab location."
+}

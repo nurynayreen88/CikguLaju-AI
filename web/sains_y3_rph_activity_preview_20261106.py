@@ -380,6 +380,55 @@ BANK = {
 "Model takal, kad rekod dan kertas poster"),
 }
 
+# Explicit Year3 KPS choices based on six process SP in the Year3 DSKP.
+# This is a DRAF skill/activity mapping, never extra lesson records.
+_KPS_AUDIT=json.loads((ROOT/"audits/sains_y3_45_kps_activity_mapping_20261106.json")
+                      .read_text(encoding="utf-8"))
+KPS_LABELS=_KPS_AUDIT["kps_code_labels"]
+KPS_BY_SP=_KPS_AUDIT["by_primary_sp"]
+MANIP_LABELS=_KPS_AUDIT["manipulative_dskp"]
+MANIP_BY_SP=_KPS_AUDIT["manipulative_by_primary_sp"]
+if (_KPS_AUDIT["status"]!="DRAF_KPS_INTEGRATION_PENDING_TEACHER_REVIEW"
+    or len(KPS_LABELS)!=6 or set(KPS_BY_SP)!=set(BANK)
+    or any(not values or len(set(values))!=len(values)
+           or any(code not in KPS_LABELS for code in values)
+           for values in KPS_BY_SP.values())):
+    raise ValueError("Year3 science KPS mapping incomplete or altered")
+if (_KPS_AUDIT.get("manipulative_status")!="DRAF_ACTIVITY_DEPENDENT__NOT_AN_EXTRA_NUMBERED_PDP"
+    or len(MANIP_LABELS)!=6 or len(MANIP_BY_SP)!=14
+    or (set(MANIP_BY_SP)-set(BANK))
+    or set(code for group in MANIP_BY_SP.values() for code in group)!=set(MANIP_LABELS)
+    or any(len(values)!=len(set(values)) for values in MANIP_BY_SP.values())):
+    raise ValueError("Incomplete Year3 manipulative/safety source mapping")
+
+# Crosswalk evidence: audits/sains_y3_dskp_sp_crosswalk_20261106.json.
+# These three SP are absent as primary records; candidate coverage is added
+# inside existing PdP for review only, not as invented extra lesson numbers.
+# The pairing and book pages remain academically unapproved (HOLD).
+INTEGRATED_SP_DRAFT = {
+    "3.2.1": {
+        "sp": "3.2.5",
+        "teacher": "membimbing peta pokok tujuh kelas makanan pada kertas mahjung untuk dipamerkan",
+        "pupil": "mempamerkan peta pokok dan menerangkan dua dapatan melalui Gallery Walk",
+        "pbd": "Peta pokok kelas makanan dan penerangan dua dapatan pemerhatian",
+        "materials": "Kertas mahjung, gambar hidangan makanan dan pen penanda",
+    },
+    "3.3.1": {
+        "sp": "3.3.3",
+        "teacher": "meminta murid meneliti penyerapan nutrien serta sisa makanan pada rajah pencernaan",
+        "pupil": "merumus bahawa nutrien diserap di usus manakala sisa tidak diperlukan disingkirkan melalui dubur",
+        "pbd": "Rumusan penyerapan nutrien dan penyingkiran sisa berdasarkan rajah",
+        "materials": "Rajah penyerapan nutrien dan laluan makanan hingga dubur",
+    },
+    "3.3.2": {
+        "sp": "3.3.4",
+        "teacher": "membimbing kumpulan membina model salur pencernaan dengan tanah liat berwarna atas kad manila",
+        "pupil": "melabel model dan menerangkan pemerhatian urutan pencernaan kepada rakan",
+        "pbd": "Model salur pencernaan berlabel dan penerangan urutan yang tepat",
+        "materials": "Tanah liat pelbagai warna, kad manila dan pen penanda",
+    },
+}
+
 def source_ledgers():
     p=json.loads(LEDGER.read_text(encoding="utf-8"))
     f=json.loads(FIXES.read_text(encoding="utf-8"))
@@ -419,26 +468,42 @@ def adapt_rows(state, original):
             return original
         label=change["ds_kpm_official_sp_text"]
     hook,a1,p1,a2,p2,pbd,materials=BANK[sp]
-    # Source-specific activity; each "1." and "2." begins on its own line.
+    extra=INTEGRATED_SP_DRAFT.get(sp)
+    # Numbered actions start on separate lines; keep two distinct activities.
     main=(f"Aktiviti 1 — Penerokaan: {hook}\n"
           f"1. Guru {a1}.\n"
           f"2. Murid {p1}.\n\n"
           f"Aktiviti 2 — Aplikasi dan PBD\n"
           f"1. Guru {a2}.\n"
           f"2. Murid {p2}.")
+    if extra:
+        main+=(f"\n3. Guru {extra['teacher']}.\n"
+               f"4. Murid {extra['pupil']}.")
+    all_sp=sp+((", "+extra["sp"]) if extra else "")
+    all_pbd=pbd+(("; "+extra["pbd"]) if extra else "")
+    kps_desc="; ".join(f"{code} {KPS_LABELS[code]}" for code in KPS_BY_SP[sp])
+    manip_codes=MANIP_BY_SP.get(sp,[])
+    manip_desc=", ".join(manip_codes)
+    closing=f"Murid menyatakan satu dapatan tentang {hook.lower()}; guru merumus kaitan dengan SP {sp}."
+    if "2.1.1" in manip_codes:
+        closing+=" Guru menyelia murid mengemas alatan dan mematuhi peraturan bilik sains."
+    if extra:
+        materials=materials+"; "+extra["materials"]
     page_text=", ".join(str(x) for x in item["printed_book_page_candidates"])
     updated=dict(original)
     updated.update({
         "TAJUK":label,
         "STANDARD KANDUNGAN":sp.rsplit(".",1)[0],
-        "STANDARD PEMBELAJARAN":sp,
+        "STANDARD PEMBELAJARAN":all_sp,
         "OBJEKTIF PEMBELAJARAN":f"Pada akhir PdP, murid dapat {label[0].lower()+label[1:].rstrip('.')}.",
-        "KRITERIA KEJAYAAN":pbd+".",
+        "KRITERIA KEJAYAAN":all_pbd+".",
         "PENGETAHUAN SEDIA ADA":f"Murid berkongsi pengalaman berkaitan {hook.lower()}.",
         "SET INDUKSI":f"Guru menunjukkan {hook.lower()}; murid menyatakan satu ramalan/pemerhatian awal.",
         "AKTIVITI UTAMA":main,
-        "PENTAKSIRAN":pbd+". Guru menyemak hasil individu atau pasangan.",
-        "PENUTUP":f"Murid menyatakan satu dapatan tentang {hook.lower()}; guru merumus kaitan dengan SP {sp}.",
+        "PENTAKSIRAN":all_pbd+". Guru menyemak hasil individu atau pasangan.",
+        "PENUTUP":closing,
+        "KEMAHIRAN PROSES SAINS":kps_desc,
+        "KEMAHIRAN MANIPULATIF DAN KESELAMATAN":manip_desc,
         "BAHAN BANTU MENGAJAR":f"{materials}. Buku Teks Sains Tahun 3, halaman bercetak {page_text} (petunjuk sumber; semak sebelum cetak).",
         "PEMULIHAN / PENGAYAAN":"Pemulihan: guru membimbing dengan kad/objek berlabel. Pengayaan: murid menjelaskan bukti tambahan daripada tugasan.",
     })

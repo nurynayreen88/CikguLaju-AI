@@ -38,6 +38,14 @@ LABELS={"TAJUK":"Tajuk","OBJEKTIF PEMBELAJARAN":"Objektif",
         "SET INDUKSI":"Set induksi","AKTIVITI UTAMA":"Aktiviti utama",
         "PENTAKSIRAN":"Penilaian/PBD","PENUTUP":"Penutup"}
 
+def skill_summary(rows):
+    """Compact DSKP science process and hands-on skill evidence for one-page RPH."""
+    out=rows["KEMAHIRAN PROSES SAINS"]
+    manip=rows.get("KEMAHIRAN MANIPULATIF DAN KESELAMATAN","")
+    if manip:
+        out+="\nManipulatif/peraturan: "+manip
+    return out
+
 def source_state(rec):
     sp=rec["sp_code"]
     return {"subject":"Sains","year":"Tahun 3","year_label":"Tahun 3",
@@ -96,11 +104,12 @@ def word_doc(path,number,unit,state,rows):
     for ri,line in enumerate(meta):
         for ci,v in enumerate(line):
             _set_doc_cell(tb.cell(ri,ci),v,bold=ci%2==0)
-    details=doc.add_table(rows=4,cols=2);details.style="Table Grid"
+    details=doc.add_table(rows=5,cols=2);details.style="Table Grid"
     det=[
         ("Unit",unit),
         ("Tajuk",rows["TAJUK"]),
-        ("SK / SP",f'{state["sk_code"]}  /  {state["sp_code"]}'),
+        ("SK / SP",f'{state["sk_code"]}  /  {rows.get("STANDARD PEMBELAJARAN", state["sp_code"])}'),
+        ("KPS diintegrasi",skill_summary(rows)),
         ("Objektif / Kriteria",rows["OBJEKTIF PEMBELAJARAN"]+"\n"+rows["KRITERIA KEJAYAAN"]),
     ]
     for ri,(k,v) in enumerate(det):
@@ -146,7 +155,7 @@ def pdf_doc(path,number,unit,state,rows):
            Paragraph("DRAF SEMAKAN SUMBER • BELUM DILULUSKAN UNTUK PENGGUNA",notice)]
     info=[
         [p("Tahun 3"),p("Sains"),p("PdP "+f"{number:03d}"),p("Kelas: __________")],
-        [p("Tarikh: ____/____/________"),p("Masa: __:__ – __:__"),p("SK: "+state["sk_code"]),p("SP: "+state["sp_code"])],
+        [p("Tarikh: ____/____/________"),p("Masa: __:__ – __:__"),p("SK: "+state["sk_code"]),p("SP: "+rows.get("STANDARD PEMBELAJARAN", state["sp_code"]))],
     ]
     t=Table(info,colWidths=[136,125,135,136],hAlign="LEFT")
     t.setStyle(TableStyle([
@@ -157,6 +166,7 @@ def pdf_doc(path,number,unit,state,rows):
     fields=[
         ("Unit",unit),
         ("Tajuk",rows["TAJUK"]),
+        ("KPS diintegrasi",skill_summary(rows)),
         ("Objektif",rows["OBJEKTIF PEMBELAJARAN"]),
         ("Kriteria kejayaan",rows["KRITERIA KEJAYAAN"]),
         ("Set induksi",rows["SET INDUKSI"]),
