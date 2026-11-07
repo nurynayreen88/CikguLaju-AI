@@ -13,7 +13,10 @@ h1{font-size:1.9rem;line-height:1.2;margin:23px 0 8px}p{color:#536d61}
 .notice{background:#f3f7f5;padding:12px 15px;border-left:3px solid #849e91;border-radius:6px}
 label{display:block;font-weight:680;margin:13px 0 6px}select{display:block;width:100%;padding:11px 14px;font:inherit;border:1px solid #b7cec1;border-radius:10px;background:white;color:#183c33}
 button{padding:12px 20px;border:0;border-radius:11px;background:#087568;color:white;font:inherit;font-weight:700;cursor:pointer}
-button:disabled{opacity:.45;cursor:not-allowed}section[hidden]{display:none}
+button:disabled{opacity:.45;cursor:not-allowed}section[hidden],div[hidden]{display:none}
+input{font:inherit;width:100%;padding:11px 14px;border:1px solid #b7cec1;border-radius:10px}
+.timeGrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+#downloads a{display:inline-block;margin:8px 12px 0 0;padding:9px 14px;border:1px solid #087568;border-radius:9px}
 #results ul{padding-left:20px}#results li{margin:10px 0}small{color:#586e64}
 </style>
 </head>
@@ -33,7 +36,18 @@ button:disabled{opacity:.45;cursor:not-allowed}section[hidden]{display:none}
 <section class="card" id="results" hidden aria-live="polite">
 <h2>Bahan untuk Lesson / PdP dipilih</h2><p id="chosen"></p>
 <ul><li>RPH Word — belum boleh dimuat turun</li><li>RPH PDF — belum boleh dimuat turun</li></ul>
-<p><small>10 janaan staging tidak ditolak dengan paparan ini. Kami tidak menghidupkan penjana sehingga penjana dan kuota benar-benar tersambung.</small></p>
+<p><small>10 janaan staging tidak ditolak dengan paparan ini. Penjanaan hanya dibuka jika enjin Telegram dan kuota telah disahkan pada staging.</small></p>
+<section id="generationControls" hidden aria-label="Jana RPH sebenar">
+<h3>Jana RPH menggunakan enjin Telegram</h3>
+<p class="notice">Satu janaan menghasilkan Word dan PDF bersama. Kredit ditolak sekali sahaja selepas kedua-dua fail berjaya disimpan secara persendirian.</p>
+<label for="teacherClass">Kelas</label><input id="teacherClass" type="text" maxlength="40" placeholder="3 Amanah">
+<label for="teacherDate">Tarikh PdP</label><input id="teacherDate" type="date">
+<div class="timeGrid"><div><label for="teacherStart">Mula</label><input id="teacherStart" type="time"></div><div><label for="teacherEnd">Tamat</label><input id="teacherEnd" type="time"></div></div>
+<label for="teacherStudents">Bilangan murid</label><input id="teacherStudents" type="number" min="1" max="200" step="1">
+<p><button id="generate" type="button">Jana Bahan — Word + PDF</button></p>
+<p id="generateStatus" role="status" aria-live="polite"></p>
+<div id="downloads" hidden></div>
+</section>
 </section>
 <p id="message" role="status" aria-live="polite"></p>
 </main>
@@ -43,6 +57,7 @@ const get=id=>document.getElementById(id);
 const boxes={subject:'subjectBox',component:'componentBox',unit:'unitBox',lesson:'lessonBox'};
 const api='/api/google-staging/web/catalog';
 let version=0;
+let generationAllowed=false, currentJob=null;
 const selected=()=>({year:get('year').value,subject:get('subject').value,
  component:get('component').value,unit:get('unit').value,lesson:get('lesson').value});
 const clear=(name)=>{
@@ -55,6 +70,9 @@ const reset=(from)=>{
  const steps=['subject','component','unit','lesson'];
  for(const item of steps.slice(steps.indexOf(from)))clear(item);
  get('show').hidden=true;get('results').hidden=true;get('message').textContent='';
+ get('generationControls').hidden=true;
+ get('downloads').hidden=true;get('downloads').replaceChildren();
+ get('generateStatus').textContent='';currentJob=null;
 };
 const fill=(id,items)=>{
  const s=get(id);
@@ -108,6 +126,8 @@ get('unit').addEventListener('change',()=>{reset('lesson');if(get('unit').value)
 get('lesson').addEventListener('change',()=>{
  get('results').hidden=true;
  get('show').hidden=!get('lesson').value;
+ get('generationControls').hidden=true;get('downloads').hidden=true;
+ currentJob=null;
 });
 get('show').addEventListener('click',async()=>{
  const n=++version, d=selected();
@@ -124,8 +144,86 @@ get('show').addEventListener('click',async()=>{
   get('chosen').textContent=result.lesson+
     (result.textbook_ref?' — '+result.textbook_ref:'');
   get('results').hidden=false;
+  get('generationControls').hidden=!generationAllowed;
  }catch(e){if(n===version)get('message').textContent=e.message;}
 });
+const makeBody=()=>{
+ const d=selected();
+ const start=get('teacherStart').value,end=get('teacherEnd').value;
+ if(!d.year||!d.subject||!d.unit||!d.lesson||
+    !get('teacherClass').value.trim()||!get('teacherDate').value||!start||!end||
+    !get('teacherStudents').value||start>=end)throw Error('Lengkapkan kelas, tarikh, masa mula/tamat dan bilangan murid.');
+ const n=Number(get('teacherStudents').value);
+ if(!Number.isInteger(n)||n<1||n>200)throw Error('Bilangan murid perlu antara 1 hingga 200.');
+ return {selection:{year:Number(d.year),subject:d.subject,unit:d.unit,
+     lesson:d.lesson,component:d.subject==='PJPK'?d.component:null},
+    teacher:{class:get('teacherClass').value.trim(),date:get('teacherDate').value,
+       time:start+' - '+end,students:String(n)}};
+};
+const post=async(path,payload)=>{
+ const response=await fetch(path,{method:'POST',credentials:'same-origin',
+   cache:'no-store',headers:{'Content-Type':'application/json'},
+   body:JSON.stringify(payload)});
+ if(response.status===401){location.assign('/google-staging-login');throw Error('Sesi tamat.');}
+ const data=await response.json();
+ if(!response.ok){
+   const e=new Error(data.error||'Penjanaan belum boleh disahkan');
+   e.jobId=data.job_id;e.uncertain=!!data.outcome_unconfirmed;throw e;
+ }
+ return data;
+};
+const showDownloads=data=>{
+ if(data.status!=='ready'||data.staging_only!==true||
+    !data.downloads||!data.downloads.word||!data.downloads.pdf)
+   throw Error('Fail belum disahkan siap.');
+ const target=get('downloads');target.replaceChildren();
+ for(const kind of ['word','pdf']){
+   const url=data.downloads[kind];
+   if(!url.startsWith('/api/google-staging/web/rph/jobs/')||
+      !url.endsWith('/download/'+kind))throw Error('Pautan fail tidak sah.');
+   const a=document.createElement('a');a.href=url;
+   a.textContent=kind==='word'?'Muat turun Word':'Muat turun PDF';
+   target.appendChild(a);
+ }
+ target.hidden=false;
+ get('generateStatus').textContent='RPH Word dan PDF siap. '+(
+  typeof data.remaining==='number'?'Baki '+data.remaining+' janaan.':'Muat turun fail di bawah.');
+};
+get('generate').addEventListener('click',async()=>{
+ if(!generationAllowed)return;
+ const button=get('generate');button.disabled=true;
+ get('downloads').hidden=true;
+ try{
+   const payload=makeBody();
+   const fingerprint=JSON.stringify(payload);
+   if(!currentJob||currentJob.fingerprint!==fingerprint){
+     get('generateStatus').textContent='Menyediakan rekod janaan…';
+     const issued=await post('/api/google-staging/web/rph/issue',payload);
+     if(issued.staging_only!==true||issued.status!=='prepared'||!issued.ticket)
+        throw Error('Rekod janaan belum disahkan');
+     currentJob={ticket:issued.ticket,fingerprint};
+   }
+   get('generateStatus').textContent='Menjana Word dan PDF menggunakan enjin Telegram…';
+   const result=await post('/api/google-staging/web/rph/generate',
+                          {...payload,ticket:currentJob.ticket});
+   showDownloads(result);
+ }catch(e){
+   get('generateStatus').textContent=e.uncertain?
+     'Hasil janaan belum pasti. Jangan mulakan janaan baharu; cuba semula dengan pilihan yang sama.':
+     e.message;
+ }finally{button.disabled=false;}
+});
+(async()=>{
+ try{
+  const capResponse=await fetch('/api/google-staging/web/rph/capabilities',
+    {credentials:'same-origin',cache:'no-store'});
+  if(capResponse.ok){
+    const cap=await capResponse.json();
+    generationAllowed=cap.google_verified===true&&cap.staging_only===true&&
+                      cap.generation_enabled===true;
+  }
+ }catch(e){generationAllowed=false;}
+})();
 (async()=>{
  try{
   const d=await load(api);
