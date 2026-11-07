@@ -7,7 +7,9 @@
 <link rel="icon" type="image/svg+xml" href="/assets/cikgulaju-logo.svg">
 <style>
 :root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#173d37;background:#f5f8f7}*{box-sizing:border-box}body{margin:0}.wrap{max-width:920px;margin:auto;padding:24px}.header{display:flex;align-items:center;gap:12px;font-size:1.1rem;font-weight:800}.mark{background:#087568;color:#fff;padding:13px;border-radius:13px}.panel{background:white;border:1px solid #e0eae6;border-radius:24px;padding:clamp(26px,6vw,58px);margin:56px auto 18px;max-width:640px;box-shadow:0 16px 48px #174b3910}h1{font-size:clamp(1.8rem,5vw,2.6rem);letter-spacing:-.04em;line-height:1.15;margin:0 0 18px}p{line-height:1.65;color:#536c64} .pill{display:inline-block;background:#e6f5ee;color:#087568;border-radius:30px;padding:7px 12px;font-size:.78rem;font-weight:700;margin-bottom:20px}.login{background:#087568;color:#fff;border:0;border-radius:12px;padding:15px 20px;font:inherit;font-weight:700;width:100%;margin-top:14px;cursor:not-allowed;opacity:.55}.notice{font-size:.88rem;color:#65796f;margin-top:14px}.foot{text-align:center;color:#75867f;font-size:.8rem;margin-top:26px}@media(max-width:550px){.wrap{padding:16px}.panel{margin-top:35px;border-radius:18px;padding:27px}}
-label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width:100%;padding:13px;border:1px solid #ceded8;border-radius:12px;background:white;font:inherit}select:disabled{background:#f1f5f3} [hidden]{display:none!important}#show-materials,#rpt-download{margin-top:18px;background:#087568;color:white;border:0;border-radius:12px;padding:13px 20px;font:inherit;font-weight:700;cursor:pointer}#materials-list{padding-left:22px;line-height:2}#materials-list a{color:#087568;font-weight:700}#download-all:disabled,#rpt-download:disabled{opacity:.5;cursor:not-allowed}#logout{border:1px solid #ccdcd6;background:white;border-radius:12px;padding:12px 18px;margin-top:12px;cursor:pointer}.panel[hidden]{display:none}</style>
+label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width:100%;padding:13px;border:1px solid #ceded8;border-radius:12px;background:white;font:inherit}select:disabled{background:#f1f5f3} [hidden]{display:none!important}#show-materials,#rpt-download{margin-top:18px;background:#087568;color:white;border:0;border-radius:12px;padding:13px 20px;font:inherit;font-weight:700;cursor:pointer}#materials-list{padding-left:22px;line-height:2}#materials-list a{color:#087568;font-weight:700}#download-all:disabled,#rpt-download:disabled{opacity:.5;cursor:not-allowed}#logout{border:1px solid #ccdcd6;background:white;border-radius:12px;padding:12px 18px;margin-top:12px;cursor:pointer}.panel[hidden]{display:none}.native-google-option{display:block;border:1px solid #087568;border-radius:12px;padding:13px 20px;text-align:center;font-weight:700;text-decoration:none;background:white;color:#087568}
+.native-google-option:focus-visible{outline:3px solid #f7bc31;outline-offset:2px}
+</style>
 
 <style>
 #rph-preview-button,#rph-word,#rph-print{border:0;border-radius:12px;padding:13px 20px;background:#087568;color:white;font:inherit;font-weight:700;cursor:pointer;margin:12px 8px 8px 0}
@@ -349,6 +351,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <h1>Sediakan RPH langkah demi langkah</h1>
 <p>Log masuk dengan akaun Telegram CikguLaju. Pilih Tahun, Subjek, Unit/Tajuk dan Lesson/PdP, kemudian jana RPH Word atau PDF terus menggunakan penjana Telegram.</p>
 <div id="telegram-widget" aria-label="Log masuk Telegram"></div>
+<p id="google-login-option" hidden><a class="native-google-option" href="/google-login">Log masuk menggunakan Google</a></p>
 <p class="notice" role="status" id="login-status">Menyemak sambungan log masuk…</p>
 </main>
 <section id="workspace" class="panel" hidden>
@@ -533,6 +536,20 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </div>
 <script>
 "use strict";
+// The production Web shows Google only when the SAME canonical account
+// backend is enabled. No staging links, Telegram ID substitution or secrets.
+(async()=>{
+ try{
+   const res=await fetch("/api/auth/google-native/options",{
+      credentials:"same-origin",cache:"no-store"});
+   if(!res.ok)return;
+   const opts=await res.json();
+   if(opts&&opts.google_available===true){
+      const option=document.getElementById("google-login-option");
+      if(option)option.hidden=false;
+   }
+ }catch(_err){ /* Telegram login remains available if options cannot load. */ }
+})();
 window.onCikguLajuTelegramAuth=async function(user){
  const status=document.getElementById("login-status");
  try{
