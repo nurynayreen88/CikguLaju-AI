@@ -35,7 +35,7 @@ jobs:
                   assert doc.page_count>=2
                   for page in doc:
                       assert page.rect.width>page.rect.height
-                      assert '\\x00' not in page.get_text()
+                      assert chr(0) not in page.get_text()
                       for b in page.get_text('blocks'):
                           x0,y0,x1,y1=b[:4]
                           assert 0<=x0<=x1<=page.rect.width and 0<=y0<=y1<=page.rect.height
