@@ -3,6 +3,7 @@
 -- and exactly-once credit consumption. Legacy Telegram quota is not altered.
 BEGIN;
 ALTER ROLE service_role BYPASSRLS;
+GRANT SELECT ON public.cikgulaju_users TO service_role;
 GRANT USAGE ON SCHEMA storage TO service_role;
 GRANT SELECT,INSERT ON storage.objects TO service_role;
 DO $priv$
