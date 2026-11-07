@@ -77,6 +77,8 @@ jobs:
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_t2_l035_rpt_2026_2027_overlap_audit.py --output pi_t2_l035_inherited_ayah224_overlap_HOLD.json
       - name: Audit all original Year6 Juz25 ayat; find 67 unmapped verses across four surah gaps
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_t6_juz25_sequence_gap_audit.py --json pi_t6_juz25_full_source_67_gap_NO_GO.json --csv pi_t6_juz25_full_source_67_gap_NO_GO.csv
+      - name: Generate source-linked Year6 Juz25 67-ayah editor decision register (never auto assign)
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_t6_juz25_gap_resolution_editor_plan.py --json pi_t6_juz25_gap_editor_plan_NO_GO.json --csv pi_t6_juz25_gap_editor_plan_NO_GO.csv
       - name: Crosscheck held Year6 Juz29 L117 neighbor continuity for chapters 70-72
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_t6_juz29_l117_continuity_review.py --output pi_t6_juz29_l117_100_ayat_local_NO_GO.json
       - name: Validate four source-bounded Year6 Rumi editor-only Quran candidate drafts
@@ -132,6 +134,8 @@ jobs:
             pi_t2_l035_inherited_ayah224_overlap_HOLD.json \
             pi_t6_juz25_full_source_67_gap_NO_GO.json \
             pi_t6_juz25_full_source_67_gap_NO_GO.csv \
+            pi_t6_juz25_gap_editor_plan_NO_GO.json \
+            pi_t6_juz25_gap_editor_plan_NO_GO.csv \
             pi_t6_juz29_l117_100_ayat_local_NO_GO.json \
             pi_t6_held_quran_rumi_editor_four_NO_GO.json \
             pi_t6_juz25_legacy2026_24_invalid_2_duplicate_67_missing_NO_GO.json; do
@@ -190,6 +194,8 @@ jobs:
             pi_t2_l035_inherited_ayah224_overlap_HOLD.json
             pi_t6_juz25_full_source_67_gap_NO_GO.json
             pi_t6_juz25_full_source_67_gap_NO_GO.csv
+            pi_t6_juz25_gap_editor_plan_NO_GO.json
+            pi_t6_juz25_gap_editor_plan_NO_GO.csv
             pi_t6_juz29_l117_100_ayat_local_NO_GO.json
             pi_t6_held_quran_rumi_editor_four_NO_GO.json
             pi_t6_juz25_legacy2026_24_invalid_2_duplicate_67_missing_NO_GO.json
