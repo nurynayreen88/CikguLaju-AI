@@ -23,6 +23,7 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, Tabl
 from tools.audit_sains_342_pdp_release_gate_20261106 import ROOT, analyze
 from web.sains_y5_83_activity_bank_draf_20261107 import BANK
 from tools.sains_y5_83_textbook_original_sp_pages_20261107 import checked_book_pages, source_part_for_printed_page, SHA as BOOK_SOURCE_SHA
+from tools.sains_y5_kssr2017_official_sp_statements_20261107 import checked_statements
 
 OUT = ROOT / "build" / "sains_y5_83_rph_DRAF_20261107"
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
@@ -96,6 +97,9 @@ def get_y5_records():
     if summary["decision"]!="HOLD":
         raise ValueError("Source audit release gate unexpectedly lifted")
     textbook=checked_book_pages()
+    standards=checked_statements()
+    if set(standards)!=set(BANK):
+        raise ValueError('Year5 full official SP text roster mismatch')
     result=[]
     for row in selected:
         if row["keputusan"]!="HOLD":
@@ -104,8 +108,13 @@ def get_y5_records():
         if (not book or book["teacher_academic_approved"] is not False
             or book["page_sp_evidence"]!="ORIGINAL_PDF_TEXT_HAS_EXACT_SP_TOKEN"):
             raise ValueError("Year5 SP source page cannot be verified: "+row["pdp_code"])
+        official=standards[row['sp']]
+        if official['sk']!=row['sk']:
+            raise ValueError('Year5 DSKP official SK conflict '+row['pdp_code'])
         result.append({
             **row, **BANK[row["sp"]],
+            'sk_title':official['sk_title'],
+            'sp_full_text':official['sp_text'],
             "kps":kps_for(row["sp"]),
             "subject":"Sains",
             "year":5,
@@ -124,8 +133,8 @@ def markdown(item):
         f"# RPH Sains Tahun 5 — PdP {int(item['pdp_number']):03d} (DRAF/HOLD)\n\n"
         f"**Unit:** {item['unit']}\n"
         f"**Tajuk:** {item['tajuk']}\n"
-        f"**SK:** {item['sk']}\n"
-        f"**SP:** {sp}\n"
+        f"**SK:** {item['sk']} — {item['sk_title']}\n"
+        f"**SP:** {sp} — {item['sp_full_text']}\n"
         f"**Rujukan:** DSKP Sains Tahun 5 KSSR Semakan 2017; Buku Teks SK 2020 m/s "
         f"{', '.join(map(str,item['textbook_pages']))} (kod SP didapati dalam tiga bahagian "
         "PDF buku asal; kesesuaian isi dan PBD belum disahkan panitia).\n"
@@ -180,7 +189,7 @@ def word_doc(path,item):
     meta.style="Table Grid"
     for i,(left,right) in enumerate([
        ("Kelas: __________ Tarikh: ____/____/________", "Masa: ______–______ (cadangan 60 min)"),
-       (item["unit"],f"SK {item['sk']}   SP {item['sp']}"),
+       (item["unit"],f"SK {item['sk']}: {item['sk_title']}\nSP {item['sp']}: {item['sp_full_text']}"),
        ("Tajuk: "+item["tajuk"],"KPS: "+item["kps"]),
     ]):
         _cell(meta.cell(i,0),left);_cell(meta.cell(i,1),right)
@@ -225,7 +234,7 @@ def pdf_doc(path,item):
       ("Kelas/Tarikh/Masa","___________    ____/____/________    _____–_____"),
       ("Unit",item["unit"]),
       ("Tajuk",item["tajuk"]),
-      ("SK / SP",item["sk"]+" / "+item["sp"]),
+      ("SK / SP",f"SK {item['sk']}: {item['sk_title']}\nSP {item['sp']}: {item['sp_full_text']}"),
       ("Objektif/Kriteria",item["pbd"]),
       ("KPS",item["kps"]),
       ("Set induksi 5m","Guru menunjukkan "+item["hook"].lower()+". Murid menyatakan satu idea."),
@@ -282,6 +291,8 @@ def main():
             entry["textbook_page_primary"])
         manifest.append({
             "pdp_code":entry["pdp_code"],"sk":entry["sk"],"sp":entry["sp"],
+            "sk_full_title":entry["sk_title"],
+            "sp_full_statement":entry["sp_full_text"],
             "unit":entry["unit"],"title":entry["tajuk"],
             "word_file":stem+".docx","pdf_file":stem+".pdf",
             "pdf_one_page_a4":"PASS","word_a4":"SIZE_PASS__PRINT_PAGE_COUNT_PENDING",
@@ -311,6 +322,8 @@ def main():
         "markdown":len(records),"status":"DRAF/HOLD",
         "academic_quality_percent":None,"approved_by_teacher":False,
         "source_page_code_evidence_verified_count":83,
+        "official_full_sp_text_in_all_rph_count":83,
+        "official_sk_titles_in_all_rph_count":83,
         "source_page_reference_verified":False,  # full pedagogical page suitability still HOLD
         "source_pedagogical_matching_approved":False,"native_telegram_web_e2e":False,
         "no_production_db_or_runtime_write":True,
