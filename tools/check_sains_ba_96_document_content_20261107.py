@@ -97,8 +97,8 @@ def check_documents():
             })
     if len(outcome)!=96 or sum(x["sp_code_equal"] for x in outcome)!=94:
         raise RuntimeError("Expected 94 direct and 2 related-only Book Activity refs")
-    if sum(x["specific_safe_usage_reviewed"] for x in outcome)!=11:
-        raise RuntimeError("Expected 11 page-content safety reviews")
+    if sum(x["specific_safe_usage_reviewed"] for x in outcome)!=96:
+        raise RuntimeError("Expected 96 page-specific exercise guidance records")
     return outcome
 
 def main():
@@ -112,7 +112,9 @@ def main():
         "source":"Sains Tahun2/3 scanned original activity books",
         "rph_documents_checked":96,"year2":51,"year3":45,
         "source_code_match":94,"related_different_sp":2,
-        "page_content_safety_reviewed":11,
+        "page_content_safety_reviewed":96,
+        "new_individual_page_reviews":85,
+        "previous_individual_page_reviews":11,
         "docx_page_source_coverage":96,"pdf_page_source_coverage":96,
         "academic_certified":0,"runtime_enabled":False,
         "release":"STAGING_ONLY_HOLD",
@@ -120,7 +122,7 @@ def main():
     (OUT/"QUALITY_GATE_BOOK_ACTIVITY_HOLD.json").write_text(
         json.dumps(info,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print("SAINS_BA_96_SOURCE_DOCUMENTS: 96 Word/PDF verified; "
-          "94 direct-SP / 2 related-only, 11 specific safety notes; HOLD")
+          "94 direct-SP / 2 related-only, 96 page-specific usage notes; HOLD")
 
 if __name__=="__main__":
     main()
