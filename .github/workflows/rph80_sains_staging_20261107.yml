@@ -11,6 +11,8 @@ on:
       - "tools/sains_buku_aktiviti_mapping_20261107.py"
       - "audits/sains_y2_y3_buku_aktiviti_mapping_20261107.json"
       - "audits/sains_y2_y3_ba_page_content_safety_review_20261107.json"
+      - "audits/sains_y2_43_remaining_page_content_20261107.json"
+      - "audits/sains_y3_42_remaining_page_content_20261107.json"
       - "tools/check_sains_ba_96_document_content_20261107.py"
       - "tests/test_sains_buku_aktiviti_y2_y3_20261107.py"
       - "web/sains_buku_aktiviti_resources_20261107.py"
