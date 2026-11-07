@@ -67,7 +67,7 @@ class TestSainsYear2Year3ActivityBook(unittest.TestCase):
             unmatched=activity_for(2,f"SCI-Y2-PDP-{num:03d}",sp)
             self.assertFalse(is_direct_sp_match(unmatched))
             self.assertIn("PBD",unmatched["lesson_guidance"])
-            self.assertIn("RUJUKAN SAHAJA",activity_note(unmatched,2))
+            self.assertIn("rujukan berkaitan sahaja",activity_note(unmatched,2))
     def test_51_y2_existing_rph_kept_and_workbook_added(self):
         entries=get_y2_records()
         self.assertEqual(len(entries),51)
