@@ -5,6 +5,7 @@ Output only to the CI workspace. The PDFs are mechanically checked as exactly
 one A4 page; DOCX are compact A4 templates pending visual Word-render QA.
 ALL files stamped DRAF, never upload as user-facing approved materials.
 """
+from tools.render_sains_y3_3_secondary_sp_pbd_20261107 import TASKS as SECONDARY_PBD, stem as secondary_stem
 from __future__ import annotations
 import csv
 import io
@@ -65,6 +66,16 @@ def sample_rows(rec):
     data=adapt_rows(state,original)
     if data is original or "AKTIVITI UTAMA" not in data:
         raise ValueError("No approved-source activity draft for "+rec["pdp_code"])
+    for sp,task in SECONDARY_PBD.items():
+        if task["pdp"]==rec["pdp_code"]:
+            if state["sp_code"]!=task["primary"]:
+                raise ValueError("Changed source primary-SP for Year3 multi-SP "+rec["pdp_code"])
+            note=(f" PBD bagi SP tambahan {sp}: gunakan lembaran CikguLaju "
+                  f"{secondary_stem(sp)}.pdf (bukan Buku Aktiviti rasmi; "
+                  "semakan panitia masih diperlukan).")
+            data["PENTAKSIRAN"]+=note
+            data["BUKU AKTIVITI / LATIHAN"]+=(" SP tambahan "+sp+" menggunakan "
+                "lembaran PBD asli berasingan, bukan m/s Buku Aktiviti untuk SP utama.")
     return state,data
 
 def _set_doc_cell(cell,text,bold=False):
@@ -226,6 +237,9 @@ def main():
             "activity_book_ref":fields["BUKU AKTIVITI / LATIHAN"],
             "activity_book_url":fields["BUKU AKTIVITI URL"],
             "activity_book_review_status":"PRINTED_SP_CODE_MATCH__TEACHER_SIGNOFF_PENDING",
+            "secondary_sp":next((sp for sp,t in SECONDARY_PBD.items() if t["pdp"]==code),""),
+            "secondary_sp_pbd_pdf":next((secondary_stem(sp)+".pdf" for sp,t in SECONDARY_PBD.items() if t["pdp"]==code),""),
+            "secondary_sp_pbd_status":"DRAF__NOT_OFFICIAL_BA" if code in {t["pdp"] for t in SECONDARY_PBD.values()} else "",
             "rph_academic_status":"DRAF_NOT_APPROVED",
         })
     with (OUTPUT/"MANIFEST_DRAF.csv").open("w",encoding="utf-8-sig",newline="") as f:
