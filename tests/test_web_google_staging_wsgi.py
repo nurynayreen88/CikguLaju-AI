@@ -34,9 +34,25 @@ class StandaloneStagingApp(unittest.TestCase):
     def test_ready_but_no_real_money_or_rph(self):
         response=self.client.get("/readyz",base_url=STAGING)
         self.assertEqual(response.status_code,200)
+        self.assertTrue(response.json["google_login_configured"])
+        self.assertTrue(response.json["admin_review_configured"])
         self.assertFalse(response.json["real_payments_enabled"])
         self.assertFalse(response.json["rph_generator_enabled"])
         self.assertTrue(response.json["no_telegram_production_account_dependency"])
+
+    def test_teacher_google_login_does_not_need_admin_telegram_bot(self):
+        # Google sign-up must not depend on teachers/admin connecting Telegram.
+        with patch.dict(os.environ, {
+            "CIKGULAJU_GOOGLE_STAGING_ADMIN_TELEGRAM_IDS": "",
+            "CIKGULAJU_GOOGLE_STAGING_ADMIN_BOT_TOKEN": "",
+        }):
+            r = self.client.get("/readyz", base_url=STAGING)
+            self.assertEqual(r.status_code, 200)
+            self.assertTrue(r.json["google_login_configured"])
+            self.assertFalse(r.json["admin_review_configured"])
+            self.assertFalse(r.json["real_payments_enabled"])
+            self.assertEqual(self.client.get("/google-staging-login",
+                                             base_url=STAGING).status_code, 200)
 
     def test_legacy_api_routes_not_imported(self):
         for route in (
