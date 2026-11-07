@@ -69,6 +69,9 @@ class GoogleWebCatalogueTests(unittest.TestCase):
             home = self.client.get("/google-staging-web")
             self.assertEqual(home.status_code, 200)
             self.assertIn(b"Pilih Lesson / PdP", home.data)
+            self.assertIn(b'id="generationControls" hidden', home.data)
+            self.assertIn(b'id="generate" type="button"', home.data)
+            self.assertIn(b'/api/google-staging/web/rph/capabilities', home.data)
             self.assertEqual(home.headers["Cache-Control"], "no-store, private")
 
             subjects = self.client.get("/api/google-staging/web/catalog")
