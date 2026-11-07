@@ -46,7 +46,7 @@ class ArabicSPPageEvidenceQA(unittest.TestCase):
                 self.assertRegex(indexed["pdf_sha256"], r"^[0-9a-f]{64}$")
                 self.assertGreater(indexed["pdf_page_count"], 40)
                 for entry in entries:
-                    self.assertRegex(entry["sp_code"], r"^\\d+\\.\\d+\\.\\d+$")
+                    self.assertRegex(entry["sp_code"], r"^\d+\.\d+\.\d+$")
                     self.assertGreaterEqual(entry["pdf_page"], 1)
                     self.assertLessEqual(entry["pdf_page"], indexed["pdf_page_count"])
                     self.assertIs(entry["statement_verified"], False)
