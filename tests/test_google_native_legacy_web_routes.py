@@ -29,7 +29,7 @@ CFG = {
 IDENTITY = {
     "id": ACCOUNT, "email": "Teacher@example.com",
     "email_confirmed_at": "2026-11-07T11:00:00Z",
-    "identities": [{"provider": "google"}],
+    "identities": [{"provider": "google", "identity_data": {"email": "Teacher@example.com"}}],
 }
 
 
