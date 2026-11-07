@@ -1,0 +1,123 @@
+name: Gated Native Google Web production integration (no live changes)
+
+on:
+  pull_request:
+    branches:
+      - production/cikgulaju-web-20261105
+    paths:
+      - 'web/native_google_*'
+      - 'web/google_native_*'
+      - 'web_v1_canonical_sessions.py'
+      - 'web_v1_telegram_auth_routes.py'
+      - 'web_v1_supabase_account_adapter.py'
+      - 'web_v1_static_preview/index.html'
+      - 'tools/run_web_production.py'
+      - 'tests/test_web_native_google_*'
+      - 'tests/test_web_google_native_*'
+      - 'tests/test_web_v1_supabase_account_adapter.py'
+      - 'tests/sql/web_canonical_*'
+      - 'migrations/DRAFT_ONLY_web_canonical_*'
+      - '.github/workflows/google-native-production-gate.yml'
+  push:
+    branches:
+      - feature/web-native-google-production-gated-20261107
+
+jobs:
+  native-google-unit-and-off-gate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install production Web test dependency
+        run: python -m pip install 'Flask==3.1.3'
+      - name: Compile production native modules and routes
+        run: |
+          python -m py_compile web/native_google_oauth_utils.py web/native_google_rph_integrity.py web_v1_canonical_sessions.py
+          python -m py_compile web/google_native_canonical_login_routes.py web/native_google_principal_store.py web/native_google_telegram_link_routes.py
+          python -m py_compile web/native_google_rph_routes.py web/native_google_rph_bundle_store.py web/google_native_rph_bundle.py
+          python -m py_compile web_v1_supabase_account_adapter.py web_v1_telegram_auth_routes.py tools/run_web_production.py
+      - name: Verify Google, original Telegram and quota regression tests
+        run: |
+          python -m unittest discover -s tests -p 'test_web_native_google_principal_store.py' -v
+          python -m unittest discover -s tests -p 'test_web_google_native_canonical_login.py' -v
+          python -m unittest discover -s tests -p 'test_web_native_google_telegram_link.py' -v
+          python -m unittest discover -s tests -p 'test_web_native_google_rph_routes.py' -v
+          python -m unittest discover -s tests -p 'test_web_v1_supabase_account_adapter.py' -v
+      - name: Web launcher MUST keep Google hidden when release flags OFF
+        env:
+          CIKGULAJU_NATIVE_GOOGLE_CANONICAL_ENABLED: "0"
+          CIKGULAJU_NATIVE_GOOGLE_RPH_ENABLED: "0"
+        run: |
+          python - <<'PY'
+          from tools.run_web_production import app
+          client = app.test_client()
+          result = client.get('/api/auth/google-native/options',
+                              base_url='https://cikgulaju-web.onrender.com')
+          assert result.status_code == 200, result.status_code
+          body = result.get_json()
+          assert body['google_available'] is False, body
+          google = client.get('/google-login',
+                              base_url='https://cikgulaju-web.onrender.com')
+          assert google.status_code == 503, google.status_code
+          telegram = client.get('/api/auth/telegram/session',
+                                base_url='https://cikgulaju-web.onrender.com')
+          assert telegram.status_code in (401, 503), telegram.status_code
+          print('PASS: Google disabled, existing Telegram path mounted')
+          PY
+      - name: Check Web Google option inline JavaScript
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          source=Path('web_v1_static_preview/index.html').read_text(encoding='utf-8')
+          assert 'id="google-login-option" hidden' in source
+          assert '/api/auth/google-native/options' in source
+          js=source.split('<script>',1)[1].split('</script>',1)[0]
+          Path('/tmp/cikgulaju_native_web.js').write_text(js,encoding='utf-8')
+          PY
+          node --check /tmp/cikgulaju_native_web.js
+
+  disposable-postgres-migration:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: local-test-only
+          POSTGRES_DB: cikgulaju_native_google_ci
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d cikgulaju_native_google_ci"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 12
+    env:
+      PGHOST: localhost
+      PGPORT: "5432"
+      PGDATABASE: cikgulaju_native_google_ci
+      PGUSER: postgres
+      PGPASSWORD: local-test-only
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install PostgreSQL CLI for disposable test only
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq postgresql-client
+      - name: Create isolated Supabase schema fixtures and legacy records
+        run: |
+          psql -v ON_ERROR_STOP=1 -f tests/sql/web_google_payment_fixture.sql
+          psql -v ON_ERROR_STOP=1 -f tests/sql/web_canonical_identity_fixture.sql
+      - name: Execute review-only migrations in temporary PostgreSQL
+        run: |
+          psql -v ON_ERROR_STOP=1 -f migrations/DRAFT_ONLY_web_canonical_identity_449.sql
+          psql -v ON_ERROR_STOP=1 -f tests/sql/web_canonical_identity_integration.sql
+          psql -v ON_ERROR_STOP=1 -f migrations/DRAFT_ONLY_web_canonical_google_rph_20261107.sql
+          psql -v ON_ERROR_STOP=1 -f tests/sql/web_canonical_google_rph_integration.sql
+          psql -v ON_ERROR_STOP=1 -f migrations/DRAFT_ONLY_web_canonical_link_20261107.sql
+          psql -v ON_ERROR_STOP=1 -f tests/sql/web_canonical_link_integration.sql
+          psql -v ON_ERROR_STOP=1 -f tests/sql/web_canonical_legacy_preservation_integration.sql
