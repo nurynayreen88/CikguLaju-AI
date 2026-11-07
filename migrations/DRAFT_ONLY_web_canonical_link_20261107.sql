@@ -119,6 +119,21 @@ BEGIN
            google_only_trial_remaining=NULL,updated_at=now()
      WHERE id=p_principal_id;
 
+    -- Maintain the ORIGINAL Telegram audit ledger whenever the cumulative
+    -- ten-free-generation rule reduces its authoritative trial balance.
+    -- In the same database transaction as both account updates. A replay
+    -- returns above and cannot insert this record or debit again.
+    IF v_final_balance < v_original_balance THEN
+        INSERT INTO public.trial_ledger(
+            telegram_user_id,amount,reason,reference_id,balance_after)
+        VALUES (
+            p_telegram_user_id,
+            v_final_balance-v_original_balance,
+            'Confirmed Google/Telegram trial-credit reconciliation',
+            'native-google-link:' || p_principal_id::text,
+            v_final_balance);
+    END IF;
+
     INSERT INTO public.cikgulaju_web_identity_link_audit (
        principal_id,legacy_telegram_user_id,
        google_trial_remaining_before,telegram_trial_remaining_before,
