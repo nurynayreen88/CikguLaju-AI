@@ -10,6 +10,7 @@ DO NOT ENABLE until both canonical migrations, native RPH private storage and
 the end-to-end Google-only generation gate have been reviewed.
 """
 import base64
+from html import escape
 import hashlib
 import json
 import os
@@ -229,21 +230,34 @@ def dashboard():
         return jsonify({"error":"Login Google belum diaktifkan"}),503
     try:
         account = _existing_google_account(cfg)
+        if account is None:
+            return redirect("/google-login",code=303)
+        access = canonical_rph_access(cfg, account)
     except CanonicalAccountUnavailable:
-        return jsonify({"error":"Profil belum boleh disahkan"}),503
-    if account is None:
-        return redirect("/google-login",code=303)
-    # Not an alternate RPH generator: native Word/PDF API must be activated
-    # separately after quota, private-storage and release approval.
+        return jsonify({"error":"Profil dan hak akses belum boleh disahkan"}),503
+    login_id = escape(account["login_id"], quote=True)
+    mode = access["rph_access_mode"]
+    remaining = access["rph_trial_remaining"]
+    if mode == "paid":
+        display = "Akses RPH tanpa had (langganan/Rakan Pembangun)"
+    elif mode == "trial":
+        display = "Baki janaan percuma: " + str(remaining)
+    elif mode == "exhausted":
+        display = "10 janaan percuma telah digunakan"
+    else:
+        return jsonify({"error":"Status hak akses tidak sah"}),503
+    linked = account["legacy_telegram_user_id"] is not None
+    rph_link = "/" if linked else "/google-rph"
+    rph_text = "Buka Web CikguLaju" if linked else "Sediakan RPH"
     html = ('<!doctype html><html lang="ms"><meta charset="utf-8">'
             '<meta name="viewport" content="width=device-width,initial-scale=1">'
             '<title>CikguLaju AI — Akaun Google</title>'
             '<main style="max-width:540px;margin:9vh auto;font:17px system-ui">'
-            '<h1>Akaun Google disahkan</h1><p>Identiti Google telah direkodkan.</p>'
-            '<p>Untuk akaun Google baharu, pilih RPH dan hasilkan Word/PDF '
-            'melalui sistem Web CikguLaju yang sama apabila modul diaktifkan.</p>'
-            '<p><a href="/google-rph">Sediakan RPH</a></p>'
-            '<p><a href="/google-link-telegram">Pautkan akaun Telegram (pilihan)</a></p>'
+            '<h1>Akaun CikguLaju</h1>'
+            '<p>ID log masuk Google: <strong>' + login_id + '</strong></p>'
+            '<p>' + escape(display) + '</p>'
+            '<p><a href="' + rph_link + '">' + rph_text + '</a></p>'
+            '<p><a href="/google-link-telegram">Pautkan/Semak akaun Telegram</a></p>'
             '<a href="/">Kembali ke CikguLaju</a></main></html>')
     return make_response(html,200,{"Content-Type":"text/html; charset=utf-8"})
 
