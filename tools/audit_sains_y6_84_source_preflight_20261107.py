@@ -80,7 +80,7 @@ def preflight(rows):
             "dskp_full_text_verification":"PENDING_EDITION_AND_SEMANTIC_REVIEW",
             "textbook_visual_page":"UNVERIFIED",
             "source_edition":"KPM_BPK_DSKP_TAHUN6_2021_PUBLIC_TEXT_COPY",
-            "specific_rph":"NOT_YET_BUILT",
+            "specific_rph":"AUTHORING_EXISTS_IN_STAGING__WORD_PDF_PRINT_GATE_SEPARATE",
             "priority_safety_review":RISK_NOTES[group],
             "academic_quality_percent":"",
             "teacher_approval":"MISSING",
@@ -112,7 +112,9 @@ def main():
        "dskp_full_semantic_review":False,
        "original_textbook_in_drive":"549MB_NOT_VISUALLY_REVIEWED",
        "original_textbook_page_verified":0,
-       "standalone_rph_created":0,
+       "source_specific_rph_authoring_rows_expected":84,
+       "standalone_rph_print_verified_in_this_preflight":False,
+       "full_print_check":"LATER_STAGE_OF_SAME_CI",
        "pbd_teacher_signoff":0,
        "quality_percent_certified":None,
        "source_in_2027_live_runtime_verified":False,
@@ -120,7 +122,8 @@ def main():
        "no_db_or_runtime_write":True,
     },ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print("SAINS_YEAR6_PREFLIGHT: 84/84 staged SP codes unique; "
-          "KPM 2021 text-copy identified; 84 RPH not yet authored; HOLD")
+          "KPM 2021 text-copy identified; source authoring elsewhere; "
+          "Word/PDF output verified in later CI stages; HOLD")
 
 if __name__=="__main__":
     main()
