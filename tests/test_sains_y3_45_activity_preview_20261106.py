@@ -1,7 +1,9 @@
 """QA 45 fully distinct Sains Y3 draft RPH activities, no app import."""
 import unittest
+import json
+from pathlib import Path
 from web.sains_y3_rph_activity_preview_20261106 import (
-    BANK,adapt_rows,source_ledgers,
+    BANK,INTEGRATED_SP_DRAFT,KPS_LABELS,KPS_BY_SP,MANIP_LABELS,MANIP_BY_SP,adapt_rows,source_ledgers,
 )
 
 class SainsY3ActivityCoverageTests(unittest.TestCase):
@@ -28,7 +30,8 @@ class SainsY3ActivityCoverageTests(unittest.TestCase):
                 self.assertEqual(revised["STATUS"],"DRAF")
                 self.assertEqual(original,{"REFLEKSI":"Asal","TARIKH":"06/11/2026","STATUS":"DRAF"})
                 self.assertTrue(revised["TAJUK"])
-                self.assertEqual(revised["STANDARD PEMBELAJARAN"],sp)
+                expected_sp=sp+((", "+INTEGRATED_SP_DRAFT[sp]["sp"]) if sp in INTEGRATED_SP_DRAFT else "")
+                self.assertEqual(revised["STANDARD PEMBELAJARAN"],expected_sp)
                 self.assertIn("Guru",revised["AKTIVITI UTAMA"])
                 self.assertIn("Murid",revised["AKTIVITI UTAMA"])
                 self.assertIn("\n1. Guru",revised["AKTIVITI UTAMA"])
@@ -36,13 +39,64 @@ class SainsY3ActivityCoverageTests(unittest.TestCase):
                 self.assertEqual(revised["AKTIVITI UTAMA"].count("Aktiviti "),2)
                 self.assertTrue(len(revised["AKTIVITI UTAMA"])>200)
                 self.assertIn("Buku Teks Sains Tahun 3",revised["BAHAN BANTU MENGAJAR"])
-                self.assertIn("semak sebelum cetak",revised["BAHAN BANTU MENGAJAR"])
+                self.assertIn("isi/PBD belum disahkan panitia",revised["BAHAN BANTU MENGAJAR"])
                 self.assertTrue(revised["PENTAKSIRAN"])
                 self.assertTrue(revised["PENUTUP"])
                 self.assertTrue(revised["KRITERIA KEJAYAAN"])
                 self.assertNotIn("penerokaan konsep",revised["AKTIVITI UTAMA"].lower())
                 seen.add(revised["AKTIVITI UTAMA"])
         self.assertEqual(len(seen),45)
+
+    def test_exact_45_dskp_year3_kps_activities_integrated(self):
+        self.assertEqual(set(KPS_BY_SP),set(BANK))
+        self.assertEqual(KPS_LABELS,{
+            "1.1.1":"Memerhati","1.1.2":"Mengelas",
+            "1.1.3":"Mengukur dan menggunakan nombor",
+            "1.1.4":"Membuat inferens","1.1.5":"Meramal",
+            "1.1.6":"Berkomunikasi",
+        })
+        all_skills=set()
+        for rec in self.ledger.values():
+            sp=rec["sp_code"]
+            state={"subject":"Sains","year":"Tahun 3",
+                   "pdp_sequence_code":rec["pdp_code"],"sp_code":sp,
+                   "sk_code":sp.rsplit(".",1)[0]}
+            out=adapt_rows(state,{})
+            codes=KPS_BY_SP[sp]
+            self.assertGreaterEqual(len(codes),2)
+            self.assertEqual(len(codes),len(set(codes)))
+            expected="; ".join(f"{code} {KPS_LABELS[code]}" for code in codes)
+            with self.subTest(sp=sp):
+                self.assertEqual(out["KEMAHIRAN PROSES SAINS"],expected)
+            all_skills.update(codes)
+        self.assertEqual(all_skills,set(KPS_LABELS))
+
+    def test_14_hands_on_lessons_map_dskp_manipulative_and_lab_rules(self):
+        self.assertEqual(len(MANIP_BY_SP),14)
+        self.assertEqual(set(MANIP_LABELS),
+            {"1.2.1","1.2.2","1.2.3","1.2.4","1.2.5","2.1.1"})
+        self.assertEqual(set(MANIP_BY_SP)-set(BANK),set())
+        assigned=0
+        for row in self.ledger.values():
+            sp=row["sp_code"]
+            state={"subject":"Sains","year":"Tahun 3","sp_code":sp,
+                   "sk_code":sp.rsplit(".",1)[0],
+                   "pdp_sequence_code":row["pdp_code"]}
+            revised=adapt_rows(state,{})
+            assigned_codes=MANIP_BY_SP.get(sp,[])
+            expected=", ".join(assigned_codes)
+            with self.subTest(sp=sp):
+                self.assertEqual(revised["KEMAHIRAN MANIPULATIF DAN KESELAMATAN"],expected)
+                if assigned_codes:
+                    assigned+=1
+                if "2.1.1" in assigned_codes:
+                    self.assertIn("mematuhi peraturan bilik sains",revised["PENUTUP"])
+                    self.assertIn("mengemas alatan",revised["PENUTUP"])
+                else:
+                    self.assertNotIn("mengemas alatan",revised["PENUTUP"])
+        self.assertEqual(assigned,14)
+        used={code for values in MANIP_BY_SP.values() for code in values}
+        self.assertEqual(used,set(MANIP_LABELS))
 
     def test_twelve_dskp_corrections_win_over_outdated_titles(self):
         for code,f in self.fixes.items():
@@ -69,6 +123,55 @@ class SainsY3ActivityCoverageTests(unittest.TestCase):
             with self.subTest(bad=bad):
                 self.assertIs(adapt_rows(bad,original),original)
         self.assertEqual(original,{"AKTIVITI UTAMA":"original","REFLEKSI":"orig"})
+
+    def test_three_missing_content_sp_have_explicit_activity_and_pbd_evidence(self):
+        # DSKP crosswalk candidates; remain DRAF pending textbook review.
+        self.assertEqual(
+            {k:v["sp"] for k,v in INTEGRATED_SP_DRAFT.items()},
+            {"3.2.1":"3.2.5","3.3.1":"3.3.3","3.3.2":"3.3.4"}
+        )
+        self.assertEqual(len(self.ledger),45)
+        for row in self.ledger.values():
+            sp=row["sp_code"]
+            state={"subject":"Sains","year":"Tahun 3","sp_code":sp,
+                   "sk_code":sp.rsplit(".",1)[0],
+                   "pdp_sequence_code":row["pdp_code"]}
+            revised=adapt_rows(state,{})
+            with self.subTest(sp=sp):
+                if sp in INTEGRATED_SP_DRAFT:
+                    extra=INTEGRATED_SP_DRAFT[sp]
+                    self.assertEqual(revised["STANDARD PEMBELAJARAN"],sp+", "+extra["sp"])
+                    self.assertIn(extra["pbd"],revised["KRITERIA KEJAYAAN"])
+                    self.assertIn(extra["pbd"],revised["PENTAKSIRAN"])
+                    self.assertIn("\n3. Guru ",revised["AKTIVITI UTAMA"])
+                    self.assertIn("\n4. Murid ",revised["AKTIVITI UTAMA"])
+                    self.assertIn(extra["teacher"],revised["AKTIVITI UTAMA"])
+                    self.assertIn(extra["pupil"],revised["AKTIVITI UTAMA"])
+                else:
+                    self.assertEqual(revised["STANDARD PEMBELAJARAN"],sp)
+                    self.assertNotIn("\n3. Guru ",revised["AKTIVITI UTAMA"])
+                    self.assertNotIn("\n4. Murid ",revised["AKTIVITI UTAMA"])
+
+    def test_three_integrated_sp_have_textbook_dskp_evidence_but_not_release(self):
+        path=Path(__file__).resolve().parents[1] / "audits/sains_y3_three_integrated_sp_book_text_20261106.json"
+        evidence=json.loads(path.read_text(encoding="utf-8"))
+        self.assertEqual(
+            evidence["review_status"],
+            "TEXT_LAYER_CONFIRMED__VISUAL_PAGE_AND_TEACHER_REVIEW_PENDING",
+        )
+        self.assertIn("NOT_PRODUCTION_RELEASE",evidence["intended_use"])
+        self.assertEqual(len(evidence["evidence"]),3)
+        self.assertEqual(
+            {(e["primary_sp"],e["integrated_sp"]) for e in evidence["evidence"]},
+            {(primary, data["sp"]) for primary,data in INTEGRATED_SP_DRAFT.items()},
+        )
+        self.assertEqual(
+            {e["pdp_code"] for e in evidence["evidence"]},
+            {"SCI-Y3-PDP-006","SCI-Y3-PDP-010","SCI-Y3-PDP-011"},
+        )
+        for e in evidence["evidence"]:
+            self.assertEqual(e["qa"],"TEXT_MATCH__VISUAL_PENDING")
+            self.assertTrue(e["book_printed_pages"])
 
     def test_acid_demos_do_not_invite_chemical_tasting_or_touching(self):
         for sp in ("8.1.1","8.1.2","8.1.3","8.1.4"):

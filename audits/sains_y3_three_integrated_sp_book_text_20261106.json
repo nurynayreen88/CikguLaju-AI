@@ -1,0 +1,58 @@
+{
+  "title": "Sains Tahun 3 — tiga SP kandungan silang PdP berdasarkan DSKP & BT",
+  "created": "2026-11-06",
+  "review_status": "TEXT_LAYER_CONFIRMED__VISUAL_PAGE_AND_TEACHER_REVIEW_PENDING",
+  "intended_use": "DRAFT_RPH_PREVIEW_ONLY__NOT_PRODUCTION_RELEASE",
+  "dskp_source": {
+    "url": "https://drive.google.com/file/d/1n4OM7x2e1_LIaBQDIxyeHmXglImtu5Yb/view",
+    "file": "GuruBesar_DSKP_Sains_Tahun_3.pdf",
+    "method": "Connected Drive readable PDF text; official SP wording"
+  },
+  "textbook_source": {
+    "url": "https://drive.google.com/file/d/17QNqKZjSF7V9GzzkXkz46bDJGnyKYq-F/view",
+    "file": "GuruBesar_BukuTeks_Sains_T3_SK.pdf",
+    "method": "Connected Drive PDF text layer; printed page cues—not visual certification"
+  },
+  "evidence": [
+    {
+      "pdp_code": "SCI-Y3-PDP-006",
+      "primary_sp": "3.2.1",
+      "integrated_sp": "3.2.5",
+      "book_printed_pages": [
+        41
+      ],
+      "book_activity": "Peta pokok kelas makanan pada kertas mahjung dan pameran Gallery Walk",
+      "dskp_focus": "Menjelaskan pemerhatian tentang kelas makanan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "qa": "TEXT_MATCH__VISUAL_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-010",
+      "primary_sp": "3.3.1",
+      "integrated_sp": "3.3.3",
+      "book_printed_pages": [
+        52,
+        53
+      ],
+      "book_activity": "Perjalanan makanan dan penyerapan nutrien; sisa yang tidak diperlukan dikeluarkan melalui dubur",
+      "dskp_focus": "Merumus makanan tercerna yang tidak diperlukan oleh badan.",
+      "qa": "TEXT_MATCH__VISUAL_PENDING"
+    },
+    {
+      "pdp_code": "SCI-Y3-PDP-011",
+      "primary_sp": "3.3.2",
+      "integrated_sp": "3.3.4",
+      "book_printed_pages": [
+        51
+      ],
+      "book_activity": "Model tanah liat laluan pencernaan dan pembentangan pemerhatian",
+      "dskp_focus": "Menjelaskan pemerhatian tentang pencernaan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "qa": "TEXT_MATCH__VISUAL_PENDING"
+    }
+  ],
+  "constraints": [
+    "Do not create extra PdP codes or alter DB",
+    "Do not mark textbook pages VERIFIED from text layer alone",
+    "Do not replace live Telegram or Web generator",
+    "Teacher/academic review still required before READY"
+  ]
+}

@@ -1,0 +1,433 @@
+{
+  "date": "2026-11-07",
+  "scope": "Sains Tahun 5 KSSR Semakan 2017 SK/SP text ledger, STAGING",
+  "source_file_id": "1YkiK-pVo4UUzyOUvv_Vrico58eQyddCz",
+  "source_url": "https://drive.google.com/file/d/1YkiK-pVo4UUzyOUvv_Vrico58eQyddCz/view",
+  "source_sha256": "e90744b28e6cc3943e8707475a911238ffc8b6a9dffb812bf742d35bcaa61ef6",
+  "source_pdf_pages": 88,
+  "source_original_publish_year": 2019,
+  "method": "Transcribed by code-block alignment from connected original owner DSKP text, with punctuation and whitespace normalized. Each statement checked contiguous in original extracted text. This mapping contains only standard text, no copyrighted textbook binary.",
+  "official_content_sp_count": 83,
+  "official_kps_sp_count": 12,
+  "sk_group_count": 18,
+  "semantic_pedagogy_teacher_approval": false,
+  "web_telegram_e2e": false,
+  "ready_for_live": false,
+  "items": {
+    "2.1.1": {
+      "sk": "2.1",
+      "sk_title": "Sistem Rangka Manusia",
+      "sp_text": "Memerihalkan fungsi rangka utama manusia."
+    },
+    "2.1.2": {
+      "sk": "2.1",
+      "sk_title": "Sistem Rangka Manusia",
+      "sp_text": "Mengenal pasti tulang dan kedudukan sendi dalam sistem rangka manusia."
+    },
+    "2.1.3": {
+      "sk": "2.1",
+      "sk_title": "Sistem Rangka Manusia",
+      "sp_text": "Menyatakan fungsi sendi dalam sistem rangka manusia."
+    },
+    "2.1.4": {
+      "sk": "2.1",
+      "sk_title": "Sistem Rangka Manusia",
+      "sp_text": "Menaakul kepentingan sistem rangka kepada tubuh manusia."
+    },
+    "2.1.5": {
+      "sk": "2.1",
+      "sk_title": "Sistem Rangka Manusia",
+      "sp_text": "Menjelaskan pemerhatian tentang sistem rangka manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+    },
+    "2.2.1": {
+      "sk": "2.2",
+      "sk_title": "Sistem Peredaran Darah Manusia",
+      "sp_text": "Memerihalkan fungsi bahagian utama yang terlibat dalam sistem peredaran darah manusia."
+    },
+    "2.2.2": {
+      "sk": "2.2",
+      "sk_title": "Sistem Peredaran Darah Manusia",
+      "sp_text": "Melakar laluan peredaran darah yang lebih oksigen dan laluan peredaran darah yang lebih karbon dioksida dalam tubuh manusia."
+    },
+    "2.2.3": {
+      "sk": "2.2",
+      "sk_title": "Sistem Peredaran Darah Manusia",
+      "sp_text": "Merumuskan kepentingan sistem peredaran darah kepada tubuh manusia."
+    },
+    "2.2.4": {
+      "sk": "2.2",
+      "sk_title": "Sistem Peredaran Darah Manusia",
+      "sp_text": "Menjelaskan pemerhatian tentang sistem peredaran darah manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+    },
+    "2.3.1": {
+      "sk": "2.3",
+      "sk_title": "Perkaitan antara Sistem dalam Tubuh Manusia",
+      "sp_text": "Menjelaskan melalui contoh perkaitan antara sistem dalam tubuh manusia."
+    },
+    "2.3.2": {
+      "sk": "2.3",
+      "sk_title": "Perkaitan antara Sistem dalam Tubuh Manusia",
+      "sp_text": "Menaakul kepentingan penjagaan semua sistem dalam tubuh manusia supaya berfungsi dengan sempurna."
+    },
+    "2.3.3": {
+      "sk": "2.3",
+      "sk_title": "Perkaitan antara Sistem dalam Tubuh Manusia",
+      "sp_text": "Menjana idea cara memelihara sistem dalam tubuh manusia bagi menjamin kehidupan yang sihat."
+    },
+    "2.3.4": {
+      "sk": "2.3",
+      "sk_title": "Perkaitan antara Sistem dalam Tubuh Manusia",
+      "sp_text": "Menjelaskan pemerhatian tentang perkaitan antara sistem dalam tubuh manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+    },
+    "3.1.1": {
+      "sk": "3.1",
+      "sk_title": "Kemandirian Spesies Haiwan",
+      "sp_text": "Menyatakan maksud kemandirian spesies."
+    },
+    "3.1.2": {
+      "sk": "3.1",
+      "sk_title": "Kemandirian Spesies Haiwan",
+      "sp_text": "Menjelas dengan contoh ciri dan tingkah laku khas haiwan untuk melindungi diri daripada musuh."
+    },
+    "3.1.3": {
+      "sk": "3.1",
+      "sk_title": "Kemandirian Spesies Haiwan",
+      "sp_text": "Menjelas dengan contoh ciri dan tingkah laku khas haiwan untuk melindungi diri daripada cuaca melampau."
+    },
+    "3.1.4": {
+      "sk": "3.1",
+      "sk_title": "Kemandirian Spesies Haiwan",
+      "sp_text": "Mengenal pasti cara haiwan melindungi telurnya."
+    },
+    "3.1.5": {
+      "sk": "3.1",
+      "sk_title": "Kemandirian Spesies Haiwan",
+      "sp_text": "Mengenal pasti cara haiwan memastikan anaknya terus hidup."
+    },
+    "3.1.6": {
+      "sk": "3.1",
+      "sk_title": "Kemandirian Spesies Haiwan",
+      "sp_text": "Menjelaskan pemerhatian tentang kemandirian spesies haiwan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+    },
+    "3.2.1": {
+      "sk": "3.2",
+      "sk_title": "Haiwan Imaginasi",
+      "sp_text": "Mencipta model haiwan imaginasi yang boleh melindungi diri daripada musuh dan cuaca melampau."
+    },
+    "3.2.2": {
+      "sk": "3.2",
+      "sk_title": "Haiwan Imaginasi",
+      "sp_text": "Menaakul ciri khas pada model haiwan imaginasi bagi melindungi diri daripada musuh dan cuaca melampau."
+    },
+    "3.2.3": {
+      "sk": "3.2",
+      "sk_title": "Haiwan Imaginasi",
+      "sp_text": "Berkomunikasi tentang ciri khas haiwan bagi mengagumi ciptaan Tuhan dalam memastikan keseimbangan alam semula jadi."
+    },
+    "3.2.4": {
+      "sk": "3.2",
+      "sk_title": "Haiwan Imaginasi",
+      "sp_text": "Menjelaskan pemerhatian tentang model haiwan imaginasi melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+    },
+    "3.3.1": {
+      "sk": "3.3",
+      "sk_title": "Hubungan Makanan antara Hidupan",
+      "sp_text": "Menyatakan maksud rantai makanan."
+    },
+    "3.3.2": {
+      "sk": "3.3",
+      "sk_title": "Hubungan Makanan antara Hidupan",
+      "sp_text": "Mengenal pasti pengeluar dan pengguna dalam rantai makanan."
+    },
+    "3.3.3": {
+      "sk": "3.3",
+      "sk_title": "Hubungan Makanan antara Hidupan",
+      "sp_text": "Merumus tentang hubungan makanan antara hidupan dengan proses fotosintesis dari aspek perpindahan tenaga berdasarkan rantai makanan."
+    },
+    "3.3.4": {
+      "sk": "3.3",
+      "sk_title": "Hubungan Makanan antara Hidupan",
+      "sp_text": "Menyatakan maksud siratan makanan."
+    },
+    "3.3.5": {
+      "sk": "3.3",
+      "sk_title": "Hubungan Makanan antara Hidupan",
+      "sp_text": "Membina siratan makanan di pelbagai habitat."
+    },
+    "3.3.6": {
+      "sk": "3.3",
+      "sk_title": "Hubungan Makanan antara Hidupan",
+      "sp_text": "Meramalkan kesan terhadap hidupan lain jika berlaku perubahan populasi dalam siratan makanan suatu habitat."
+    },
+    "3.3.7": {
+      "sk": "3.3",
+      "sk_title": "Hubungan Makanan antara Hidupan",
+      "sp_text": "Menjelaskan pemerhatian tentang hubungan makanan antara hidupan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+    },
+    "4.1.1": {
+      "sk": "4.1",
+      "sk_title": "Kemandirian Spesies Tumbuhan",
+      "sp_text": "Menjelas dengan contoh ciri khas tumbuhan untuk melindungi diri daripada musuh."
+    },
+    "4.1.2": {
+      "sk": "4.1",
+      "sk_title": "Kemandirian Spesies Tumbuhan",
+      "sp_text": "Menjelas dengan contoh ciri khas tumbuhan untuk menyesuaikan diri dengan iklim dan perubahan musim."
+    },
+    "4.1.3": {
+      "sk": "4.1",
+      "sk_title": "Kemandirian Spesies Tumbuhan",
+      "sp_text": "Menjelaskan pemerhatian tentang kemandirian spesies tumbuhan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+    },
+    "4.2.1": {
+      "sk": "4.2",
+      "sk_title": "Pencaran Biji Benih",
+      "sp_text": "Menyatakan cara tumbuhan memencarkan biji benih atau buah."
+    },
+    "4.2.2": {
+      "sk": "4.2",
+      "sk_title": "Pencaran Biji Benih",
+      "sp_text": "Menghubungkait cara pencaran dengan ciri biji benih atau buah."
+    },
+    "4.2.3": {
+      "sk": "4.2",
+      "sk_title": "Pencaran Biji Benih",
+      "sp_text": "Meramal cara pencaran bagi suatu biji benih berdasarkan ciri biji benih tersebut."
+    },
+    "4.2.4": {
+      "sk": "4.2",
+      "sk_title": "Pencaran Biji Benih",
+      "sp_text": "Menjelaskan pemerhatian tentang pencaran biji benih melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+    },
+    "5.1.1": {
+      "sk": "5.1",
+      "sk_title": "Sumber Tenaga Elektrik",
+      "sp_text": "Menjelas dengan contoh sumber yang menghasilkan tenaga elektrik."
+    },
+    "5.2.1": {
+      "sk": "5.2",
+      "sk_title": "Litar Bersiri dan Litar Selari",
+      "sp_text": "Mengenal pasti susunan mentol secara bersiri dan selari dalam litar elektrik lengkap."
+    },
+    "5.2.2": {
+      "sk": "5.2",
+      "sk_title": "Litar Bersiri dan Litar Selari",
+      "sp_text": "Melakar rajah litar bersiri dan litar selari menggunakan simbol."
+    },
+    "5.2.3": {
+      "sk": "5.2",
+      "sk_title": "Litar Bersiri dan Litar Selari",
+      "sp_text": "Membanding dan membezakan kecerahan mentol dalam litar bersiri dan litar selari."
+    },
+    "5.2.4": {
+      "sk": "5.2",
+      "sk_title": "Litar Bersiri dan Litar Selari",
+      "sp_text": "Mengeksperimen untuk membezakan kecerahan mentol dalam litar bersiri atau selari dengan mengubah bilangan mentol."
+    },
+    "5.2.5": {
+      "sk": "5.2",
+      "sk_title": "Litar Bersiri dan Litar Selari",
+      "sp_text": "Mengeksperimen untuk membezakan kecerahan mentol dalam litar bersiri atau selari dengan mengubah bilangan sel kering."
+    },
+    "5.2.6": {
+      "sk": "5.2",
+      "sk_title": "Litar Bersiri dan Litar Selari",
+      "sp_text": "Menyatakan keadaan mentol apabila beberapa suis ditutup atau dibuka dalam litar bersiri dan litar selari dengan menjalankan aktiviti."
+    },
+    "5.2.7": {
+      "sk": "5.2",
+      "sk_title": "Litar Bersiri dan Litar Selari",
+      "sp_text": "Menjelaskan pemerhatian tentang litar bersiri dan litar selari melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+    },
+    "5.3.1": {
+      "sk": "5.3",
+      "sk_title": "Keselamatan Pengendalian Peralatan dan Penjimatan Elektrik",
+      "sp_text": "Menjana idea faktor yang mempengaruhi penggunaan tenaga elektrik dengan menjalankan aktiviti."
+    },
+    "5.3.2": {
+      "sk": "5.3",
+      "sk_title": "Keselamatan Pengendalian Peralatan dan Penjimatan Elektrik",
+      "sp_text": "Menjelas dengan contoh kesan kecuaian pengendalian peralatan elektrik."
+    },
+    "5.3.3": {
+      "sk": "5.3",
+      "sk_title": "Keselamatan Pengendalian Peralatan dan Penjimatan Elektrik",
+      "sp_text": "Memerihalkan langkah keselamatan ketika mengendalikan peralatan elektrik."
+    },
+    "5.3.4": {
+      "sk": "5.3",
+      "sk_title": "Keselamatan Pengendalian Peralatan dan Penjimatan Elektrik",
+      "sp_text": "Menjelaskan pemerhatian tentang keselamatan pengendalian peralatan dan penjimatan elektrik melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+    },
+    "6.1.1": {
+      "sk": "6.1",
+      "sk_title": "Haba dan Suhu",
+      "sp_text": "Menyatakan maksud haba dan suhu."
+    },
+    "6.1.2": {
+      "sk": "6.1",
+      "sk_title": "Haba dan Suhu",
+      "sp_text": "Menyukat suhu dengan menggunakan alat dan unit piawai dengan teknik yang betul."
+    },
+    "6.1.3": {
+      "sk": "6.1",
+      "sk_title": "Haba dan Suhu",
+      "sp_text": "Menggunakan perhubungan ruang dan masa untuk melihat perubahan suhu apabila ais dipanaskan dan menentukan takat beku dan takat didih air dengan menjalankan aktiviti."
+    },
+    "6.1.4": {
+      "sk": "6.1",
+      "sk_title": "Haba dan Suhu",
+      "sp_text": "Memerihalkan perubahan suhu air apabila air panas disejukkan ke suhu bilik."
+    },
+    "6.1.5": {
+      "sk": "6.1",
+      "sk_title": "Haba dan Suhu",
+      "sp_text": "Membuat kesimpulan tentang kesan ke atas bahan apabila menerima haba dan apabila kehilangan haba dengan menjalankan aktiviti."
+    },
+    "6.1.6": {
+      "sk": "6.1",
+      "sk_title": "Haba dan Suhu",
+      "sp_text": "Menaakul kepentingan aplikasi prinsip pengembangan dan pengecutan bahan dalam kehidupan harian."
+    },
+    "6.1.7": {
+      "sk": "6.1",
+      "sk_title": "Haba dan Suhu",
+      "sp_text": "Menjelaskan pemerhatian tentang haba dan suhu air melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+    },
+    "7.1.1": {
+      "sk": "7.1",
+      "sk_title": "Pengaratan Bahan",
+      "sp_text": "Menyatakan ciri objek yang berkarat."
+    },
+    "7.1.2": {
+      "sk": "7.1",
+      "sk_title": "Pengaratan Bahan",
+      "sp_text": "Mengitlak bahawa objek yang diperbuat daripada besi boleh berkarat."
+    },
+    "7.1.3": {
+      "sk": "7.1",
+      "sk_title": "Pengaratan Bahan",
+      "sp_text": "Mengeksperimen untuk menentukan faktor yang menyebabkan pengaratan."
+    },
+    "7.1.4": {
+      "sk": "7.1",
+      "sk_title": "Pengaratan Bahan",
+      "sp_text": "Memerihalkan cara mencegah pengaratan."
+    },
+    "7.1.5": {
+      "sk": "7.1",
+      "sk_title": "Pengaratan Bahan",
+      "sp_text": "Menaakul kepentingan mencegah pengaratan."
+    },
+    "7.1.6": {
+      "sk": "7.1",
+      "sk_title": "Pengaratan Bahan",
+      "sp_text": "Menjelaskan pemerhatian tentang pengaratan bahan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+    },
+    "8.1.1": {
+      "sk": "8.1",
+      "sk_title": "Keadaan Jirim",
+      "sp_text": "Menyatakan jirim wujud dalam keadaan pepejal, cecair dan gas."
+    },
+    "8.1.2": {
+      "sk": "8.1",
+      "sk_title": "Keadaan Jirim",
+      "sp_text": "Mengelas bahan atau objek berdasarkan keadaan jirim."
+    },
+    "8.1.3": {
+      "sk": "8.1",
+      "sk_title": "Keadaan Jirim",
+      "sp_text": "Mencirikan sifat pepejal, cecair dan gas dengan menjalankan aktiviti."
+    },
+    "8.1.4": {
+      "sk": "8.1",
+      "sk_title": "Keadaan Jirim",
+      "sp_text": "Mengitlak bahawa air boleh wujud dalam tiga keadaan jirim dengan menjalankan aktiviti."
+    },
+    "8.1.5": {
+      "sk": "8.1",
+      "sk_title": "Keadaan Jirim",
+      "sp_text": "Menjelaskan pemerhatian tentang keadaan jirim melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+    },
+    "8.2.1": {
+      "sk": "8.2",
+      "sk_title": "Perubahan Keadaan Jirim Bagi Air",
+      "sp_text": "Memerihalkan perubahan keadaan jirim bagi air dengan menjalankan aktiviti."
+    },
+    "8.2.2": {
+      "sk": "8.2",
+      "sk_title": "Perubahan Keadaan Jirim Bagi Air",
+      "sp_text": "Menjelas dengan contoh perubahan keadaan jirim berlaku apabila jirim menerima atau kehilangan haba dengan menjalankan aktiviti."
+    },
+    "8.2.3": {
+      "sk": "8.2",
+      "sk_title": "Perubahan Keadaan Jirim Bagi Air",
+      "sp_text": "Menghubung kait perubahan keadaan jirim bagi air dengan pembentukan awan dan hujan."
+    },
+    "8.2.4": {
+      "sk": "8.2",
+      "sk_title": "Perubahan Keadaan Jirim Bagi Air",
+      "sp_text": "Menjelaskan pemerhatian tentang perubahan keadaan jirim bagi air melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+    },
+    "9.1.1": {
+      "sk": "9.1",
+      "sk_title": "Fasa Bulan",
+      "sp_text": "Menyatakan Bulan tidak mengeluarkan cahaya tetapi memantulkan cahaya Matahari."
+    },
+    "9.1.2": {
+      "sk": "9.1",
+      "sk_title": "Fasa Bulan",
+      "sp_text": "Memerihalkan Bulan berputar pada paksinya dan pada masa yang sama beredar mengelilingi Bumi dari aspek arah dan tempoh dengan menjalankan simulasi."
+    },
+    "9.1.3": {
+      "sk": "9.1",
+      "sk_title": "Fasa Bulan",
+      "sp_text": "Menggunakan perhubungan ruang dan masa untuk menggambarkan fasa Bulan dalam satu edaran lengkap mengikut takwim Qamari."
+    },
+    "9.1.4": {
+      "sk": "9.1",
+      "sk_title": "Fasa Bulan",
+      "sp_text": "Menjelaskan pemerhatian tentang fasa bulan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+    },
+    "9.2.1": {
+      "sk": "9.2",
+      "sk_title": "Buruj",
+      "sp_text": "Mengenal pasti buruj dan corak buruj."
+    },
+    "9.2.2": {
+      "sk": "9.2",
+      "sk_title": "Buruj",
+      "sp_text": "Menyatakan kegunaan buruj."
+    },
+    "9.2.3": {
+      "sk": "9.2",
+      "sk_title": "Buruj",
+      "sp_text": "Menjelaskan pemerhatian tentang buruj melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+    },
+    "10.1.1": {
+      "sk": "10.1",
+      "sk_title": "Penggunaan Alat dalam Kehidupan",
+      "sp_text": "Menyatakan kegunaan suatu alat yang terdapat di persekitaran murid."
+    },
+    "10.1.2": {
+      "sk": "10.1",
+      "sk_title": "Penggunaan Alat dalam Kehidupan",
+      "sp_text": "Menerangkan kombinasi fungsi mesin ringkas pada suatu alat yang membolehkan alat tersebut berfungsi melalui pemerhatian alat sebenar."
+    },
+    "10.1.3": {
+      "sk": "10.1",
+      "sk_title": "Penggunaan Alat dalam Kehidupan",
+      "sp_text": "Menaakul kepentingan kombinasi mesin ringkas untuk memastikan alat itu berfungsi dengan sempurna."
+    },
+    "10.1.4": {
+      "sk": "10.1",
+      "sk_title": "Penggunaan Alat dalam Kehidupan",
+      "sp_text": "Menjana idea tentang kepentingan ciri penciptaan alat yang lestari."
+    },
+    "10.1.5": {
+      "sk": "10.1",
+      "sk_title": "Penggunaan Alat dalam Kehidupan",
+      "sp_text": "Menjelaskan pemerhatian tentang penggunaan alat dalam kehidupan melalui lakaran, TMK, penulisan atau lisan secara kreatif."
+    }
+  }
+}

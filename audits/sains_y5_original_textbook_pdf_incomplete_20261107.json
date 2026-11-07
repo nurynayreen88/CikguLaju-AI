@@ -1,0 +1,54 @@
+{
+  "year": 5,
+  "subject": "Sains",
+  "date": "2026-11-07",
+  "status": "SOURCE_PDF_INCOMPLETE__NO_EXACT_SP_PAGE_RELEASE",
+  "original_source_url": "https://drive.google.com/file/d/1m5k8gVkNImT8QEdw6fCEVpQh_tNkUKUT/view",
+  "original_source_file_id": "1m5k8gVkNImT8QEdw6fCEVpQh_tNkUKUT",
+  "file_name": "GuruBesar_BukuTeks_Sains_T5_SK.pdf",
+  "source_size_bytes": 91275648,
+  "source_sha256": "322b8ea0e19fc5b6da1c41ff64a25d22e470917027d9b293c85efc045a6be3e2",
+  "actual_pdf_page_count": 43,
+  "last_printed_page_in_file": 35,
+  "table_of_contents_max_printed_page": 231,
+  "method": "Downloaded exact Drive PDF; opened with PyMuPDF. Observed 43 PDF pages; last PDF page begins with printed 35, while table of contents on PDF pages 5-6 cites school textbook pages through 231. This proves current uploaded source is truncated, without concluding anything about other editions/URLs.",
+  "original_year5_pdp": 83,
+  "exact_page_assignment_per_sp_approved": 0,
+  "notes": "Do not infer 83 exact textbook page refs from this partial upload. No full-book classroom claim.",
+  "teacher_academic_approved": 0,
+  "upload_production": false,
+  "db_writes": false,
+  "request": "HISTORICAL: original project Drive file contains only first part; two further parts have now been located/verified by hash and printable-page continuity. Keep original untouched; all 83 SP now have textual book-page matches in separate audit.",
+  "suggested_followup_action": "Replace nothing; upload new separate source version, compare with 83 source SPs in staging and retain old file checksum for provenance.",
+  "external_full_volume_lead": {
+    "source_page": "https://sites.google.com/moe-dl.edu.my/ppd-batu-pahat-sains-matematik/buku-teks-digital-bidang-sains-matematik/buku-teks-sekolah-rendah/sains-tahun-5",
+    "publisher_context": "PPD Batu Pahat school-sector Google Site",
+    "three_listed_parts": [
+      "SAINS-T5-SK-1-DRP-3.pdf",
+      "Sains SK Tahun 5 (ms 36 - 130).pdf",
+      "Sains SK Tahun 5 (ms 131 - 234).pdf"
+    ],
+    "downloaded_verified_parts": 1,
+    "remaining_parts_to_acquire_and_hash": 2,
+    "do_not_claim_exact_sp_pages_from_external_listing": true,
+    "no_source_overwrite": true
+  },
+  "resolution_2026_11_07": {
+    "original_drive_pdf_still_only_part_1": true,
+    "source_completeness_restored_by_two_new_public_pdf_parts": true,
+    "full_printed_page_range_covered": [
+      1,
+      234
+    ],
+    "full_book_parts_sha256": [
+      "322b8ea0e19fc5b6da1c41ff64a25d22e470917027d9b293c85efc045a6be3e2",
+      "7469fdadc20cfb275256e5d760f86b36f859cc259f31610865052d752acf820e",
+      "629a17b3b493e121285cba65e0925023c71cefadd5c3a740f6e6b82b63ce3d9d"
+    ],
+    "source_audit": "audits/sains_y5_83_full_textbook_printed_sp_pages_20261107.json",
+    "source_page_code_matches": 83,
+    "academic_pedagogical_approved": 0,
+    "status": "ORIGINAL_BOOK_CODE_PAGE_REFERENCE_83_OF_83_RESTORED__TEACHER_HOLD",
+    "prior_original_upload_not_overwritten": true
+  }
+}
