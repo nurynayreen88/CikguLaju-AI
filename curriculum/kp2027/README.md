@@ -67,3 +67,11 @@ Jalankan: `python -m unittest discover -s tests -p 'test_kp2027_y1_f1_source_gat
 - [ ] Ujian bukan-regresi sistem lama, kelulusan pengguna dan penerbitan bertahap.
 
 **Status sebenar: belum ada standard Tahun 1 atau Tingkatan 1 yang disahkan sebagai READY dalam modul ini.** Bahan berfungsi sebagai inventori dan laluan sumber, bukan janaan RPH KP2027.
+
+## Batch editorial 7 November 2026 (draf sahaja)
+
+- **24 contoh RPH asli** bagi 8 kombinasi peringkat–subjek (Tahun 1: Alam dan Manusia, Bahasa Melayu, Matematik, Pendidikan Islam, Bahasa Arab; Tingkatan 1: Matematik, Pendidikan Islam, Bahasa Arab), tiga contoh setiap satu.
+- Semak kandungan dalam [candidate_rph_batch_20261107.md](candidate_rph_batch_20261107.md). Data struktur semakan berada dalam [candidate_rph_batch_20261107.json](candidate_rph_batch_20261107.json).
+- Kesemua contoh mempunyai aktiviti guru/murid, BBM, PBD, pembezaan dan nilai karakter tetapi **tiada kod SK/SP/SPi rasmi**, belum ada jadual RPT, belum diaudit terhadap DK asal, dan **tidak diluluskan untuk Telegram/Web/DB produksi**.
+- Ujian metadata baharu: `python -m unittest discover -s tests -p 'test_kp2027_candidate_rph_20261107.py' -v`.
+- Semua label `C01`–`C03` ialah **nombor calon editorial**, bukan nombor PdP kurikulum sebenar. Fail ini tidak ditafsir sebagai bahan READY. Muat turun PDF/Word hanya boleh dijana selepas audit sumber dan kelulusan setiap PdP.
