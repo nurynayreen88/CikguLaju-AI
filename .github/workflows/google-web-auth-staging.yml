@@ -11,6 +11,7 @@ on:
       - 'web/native_google_telegram_link_routes.py'
       - 'web/google_native_link.html'
       - 'web/google_native_rph.html'
+      - 'web_v1_static_preview/index.html'
       - 'tests/test_web_native_google_telegram_link.py'
       - 'web/native_google_rph_routes.py'
       - 'web/native_google_rph_bundle_store.py'
@@ -126,6 +127,17 @@ jobs:
           node --check /tmp/google_staging_telegram.js
           node --check /tmp/google_native_link.js
           node --check /tmp/google_native_rph.js
+      - name: Syntax check unchanged original Web plus conditional Google sign-in
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          html = Path('web_v1_static_preview/index.html').read_text(encoding='utf-8')
+          source = html.split('<script>',1)[1].split('</script>',1)[0]
+          Path('/tmp/cikgulaju_native_main_web.js').write_text(source,encoding='utf-8')
+          assert 'id="google-login-option" hidden' in html
+          assert '/api/auth/google-native/options' in source
+          PY
+          node --check /tmp/cikgulaju_native_main_web.js
       - name: Run Google staging authentication tests
         run: |
           python -m unittest discover -s tests -p 'test_web_google_auth_staging.py' -v
