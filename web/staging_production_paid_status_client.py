@@ -163,8 +163,9 @@ def verified_paid_uid_for_rph(actor, cfg):
         _link_status, StagingLinkUnavailable)
 
     account_id = canonical_staging_account(actor)
-    if not _enabled(cfg):
-        raise PaidStatusBridgeUnavailable("Private production status bridge disabled")
+    # Google-only users have no Telegram entitlements to fetch. Their
+    # verified canonical account can use the staging trial/approved staging
+    # payment path without waking the production Web. Do not grant paid rights.
     try:
         mapping = _link_status(cfg, account_id)
     except (StagingLinkUnavailable, KeyError, ValueError, TypeError):
@@ -172,9 +173,15 @@ def verified_paid_uid_for_rph(actor, cfg):
     if not isinstance(mapping, dict) or mapping.get("staging_only") is not True:
         raise PaidStatusBridgeUnavailable("Invalid staging linked-account result")
     if mapping.get("linked") is False:
+        if actor.provider == "telegram":
+            raise PaidStatusBridgeUnavailable("Telegram identity unexpectedly unlinked")
         return None
     if mapping.get("linked") is not True:
         raise PaidStatusBridgeUnavailable("Unverified account linkage")
+    # Only a truly linked user can inherit the production paid status;
+    # require a fresh authenticated bridge check, never a cached flag.
+    if not _enabled(cfg):
+        raise PaidStatusBridgeUnavailable("Private production status bridge disabled")
     raw_uid = mapping.get("telegram_user_id")
     if (not isinstance(raw_uid, str) or not raw_uid.isascii()
             or not raw_uid.isdecimal() or raw_uid.startswith("0")
