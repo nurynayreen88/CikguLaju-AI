@@ -1,0 +1,71 @@
+{
+  "schema": "cikgulaju_pi_editor_only_candidate_v1",
+  "lesson_id": "T6-L060",
+  "year": 6,
+  "lesson": 60,
+  "catalog_original_record_remains_withheld": true,
+  "candidate_kind": "ADDITIONAL_CIKGULAJU_PRACTICE_LESSON_NOT_OFFICIAL_DSKP_SEPARATE_LESSON",
+  "publication": "HOLD",
+  "verified_ready": false,
+  "allowed_in_teacher_web_or_telegram": false,
+  "evidence": {
+    "dskp_source_drive_id": "1pasG1F0ThshBUNoyLtQCD867bIkhekTZ",
+    "dskp_pdf_sha256": "fd12636abb8b220623ec8c33a0c12261c7f27adc44c02efc5ee2ac04b71fea45",
+    "dskp_pdf_page": 46,
+    "dskp_printed_page": 34,
+    "dskp_sk_code": "4.2",
+    "dskp_sp_codes": [
+      "4.2.3",
+      "4.2.4",
+      "4.2.5"
+    ],
+    "dskp_sp_codes_visually_confirmed": true,
+    "dskp_full_jawi_wording_signed_off": false,
+    "rpt_drive_id": "1T380Ot_gG58JhxanELMM0z-gr6wmSJcL",
+    "rpt_pdf_sha256": "b39a07b2dd7ef6062912f12fd43e63f87a98b13bde3885c925e88a37dac70e5b",
+    "rpt_pdf_page": 21,
+    "rpt_pdp_index": 60,
+    "rpt_declares_cikgulaju_suggestion": true,
+    "prior_pdp_index": 59,
+    "avoids_duplication_by_focusing_on_extended_practical": true
+  },
+  "editorial_draft": {
+    "bidang": "عبادة",
+    "tajuk": "امالي صلاة كتيك ساكيت مڠيكوت كممڤوان",
+    "duration": "1 جم (چادڠن RPT 2027)",
+    "sk": "4.2 — صلاة كتيك ساكيت",
+    "sp_codes": [
+      "4.2.3",
+      "4.2.4",
+      "4.2.5"
+    ],
+    "objective": [
+      "موريد منونجوقكن تاتاچارا صلاة كتيك ساكيت برداسركن ساتو سيتواسي يڠ دبريكن دڠن بيمبيڠن ݢورو.",
+      "موريد مڠهورايكن سكوراڠ-كورڠڽ ساتو كڤنتيڠن منونايكن صلاة كتيك ساكيت.",
+      "موريد ممبتولكن عملن برداسركن معلوم بالاس سناراي سمق ݢورو."
+    ],
+    "set_induksi": "ݢورو ممڤركنلكن كد سيتواسي اورڠ ساكيت. موريد ممبري كداڤت تنتڠ كواجيڤن صلاة مڠيكوت كممڤوان.",
+    "aktiviti_utama": [
+      "1. ݢورو مڽيمق سمولا ڤڠتاهوان PdP 059 دان منونجوقكن كونتوه امالي برداسركن ڤندوأن يڠ تله دسمق؛ موريد مڠنل ڤستي چارا يڠ سسواي مڠيكوت سيتواسي.",
+      "2. موريد دالم كومڤولن منيليتي كد سيتواسي دان ممبيچاراكن ڤيليهن تاتاچارا صلاة؛ ݢورو ممبيمبيڠ سرتا ممبتولكن ككلي روان.",
+      "3. موريد ممڤراݢاكن امالي صلاة كتيك ساكيت مڠيكوت سيتواسي دان كممڤوان؛ راكن مڽمق دڠن سناراي سمق، ݢورو ممبري معلوم بالاس.",
+      "4. موريد ممڤرباءيكي امالي سلڤس ڤمبتولن دان مروموس ساتو كڤنتيڠن مڠعملكن كواجيڤن صلاة سچارا برادب دان استقامه."
+    ],
+    "pengukuhan": "موريد مڽلسايكن كد كلوار: ڤيليه تاتاچارا سسواي اونتوق ساتو سيتواسي دان مڽاتاكن سبب ڤيليهن.",
+    "pentaksiran": "ڤبد امالي اينديويدو: سناراي سمق تاتاچارا صلاة كتيك ساكيت مڠيكوت سيتواسي، كڤنتيڠن منونايكن صلاة، كڤوايأن ممبتولكن كسلڤن دان ڤڠعملن برادب. ݢورو مريكود ڤڠواسأن سرتا بيمبيڠن سوسولن.",
+    "penutup": "موريد مروموسكن ڤڠاجرن امالي دان مڽاتاكن ساتو تيندقن اونتوق مڠعملكن صلاة مڠيكوت كممڤوان؛ ݢورو ممبري ڤنگوكوهن.",
+    "bahan": "كد سيتواسي، ڤندوأن تاتاچارا صلاة يڠ دسمق ݢورو، ڤرالاتن سيمولاسي برسسواين، سناراي سمق PBD."
+  },
+  "release_checks": {
+    "source_code_exists_in_official_dskp": true,
+    "official_independent_pdp_no": false,
+    "full_fiqh_and_dskp_wording_verified": false,
+    "prayer_posture_examples_checked_by_teacher": false,
+    "jawi_orthography_approved": false,
+    "content_expert_approved": false,
+    "actual_runtime_word_pdf_approved": false,
+    "original_year6_l060_record_modified": false,
+    "eligible_for_teacher_use": false
+  },
+  "reviewer_note": "Calon editor untuk sesi amali CikguLaju. Jangan luluskan berdasarkan kod SP sahaja; semak tatacara amali dengan sumber fikah KPM, Jawi dan pelaksanaan PBD. Rekod asal T6-L060 masih WITHHELD."
+}
