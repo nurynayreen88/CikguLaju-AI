@@ -464,3 +464,12 @@ Kesemua **lima rekod masih tanpa `fields`**, `withheld=true`, `verified_ready=fa
 **Calon T6-L060**: draf amali tambahan diwujudkan **di luar katalog aktif** sebagai `pi_t6_l060_amali_editor_candidate.json`, dengan 3 objektif, set induksi, **4 aktiviti**, pengukuhan, PBD amali individu, penutup dan senarai bahan. Ia dirancang berbeza daripada PdP 059 yang telah mempunyai aktiviti simulasi, tetapi pengesahan pertindihan pedagogi masih diperlukan. **Rekod asal `year6.json` T6-L060 tidak diberikan sebarang `fields`; `withheld=true`, `verified_ready=false`.** Tidak dinyatakan sebarang tatacara fikah yang khusus tanpa semakan sumber. Calon ini tidak boleh dicapai guru, Web atau Telegram.
 
 **Pagar ujian**: `pi_t6_sp42_primary_source_audit.py` dan `test_pi_t6_sp42_primary_source_audit.py` memastikan halaman DSKP dan RPT tercatat, pembetulan KBAT tidak hilang/menimpa sejarah, kandungan calon tidak meresap ke DB, dan **0** dakwaan Lesson tambahan rasmi, **0** kelulusan pakar/Jawi, **0** READY. Semakan akademik dan ejaan Jawi tetap diperlukan.
+
+
+## Tahun 2 Lesson 035 — punca pertindihan ayat 224 ditemui dalam RPT 2026 asal
+
+RPT sumber **2026** `Rozayus_RPT_Pendidikan_Islam_Tahun_2_SK_2026.docx` (Drive ID `10nFtY-6tJRhvn8XggwtJRFBNozltQbqk`, SHA-256 `e5328102b4d059616ede2adf5cdf3a357acf1c0d997a2472e135fa120fcb7845`) diperiksa pada baris PdP Quran berturutan: **al-Baqarah 216–224**, kemudian **224–245**, diikuti **246–259**. Pertindihan **ayat 224 sudah ada dalam sumber 2026**, bukan kesilapan yang dicipta RPT 2027.
+
+RPT **2027** `RPT_Pendidikan_Islam_Tahun_2_2027_CikguLaju.pdf` (Drive ID `1R2FNyT0CYb_WTMiw99lnZW9GuPaatz8w`, SHA-256 `86a8e6fb599eb0f65f3a0a888cb29d636223c75896718d058886076a95f6c05d`), PDF **p11** (PdP032), **p12** (PdP035) dan **p14** (PdP038), mengekalkan urutan ini dan dengan jelas menandakan overlap sebagai *belum pasti ulang kaji atau kesilapan sumber*.
+
+**Keputusan penyiasatan:** pertindihan diwarisi; niat asal pengulangan itu **belum dapat dibuktikan**. Tiada julat ayat dipinda, tiada RPH T2-L035 dijana, rekod asal kekal `withheld=true` dan `verified_ready=false`. Modul `pi_t2_l035_rpt_2026_2027_overlap_audit.py` dan ujian mengunci bukti ini untuk semakan guru/pakar. **Tidak boleh secara automatik menukar kepada 225–245** semata-mata untuk menutup pertindihan tanpa pengesahan keputusan sumber.
