@@ -137,6 +137,24 @@ def audit(root=ROOT):
                 assert isinstance(enrichment.get("original_activity"), str)
                 assert enrichment["original_activity"].strip()
                 flags.append("PENAMBAHAN_PDP_BELUM_SAH_PAKAR")
+            practice = record.get("staging_dskp_42_source_editorial_review")
+            if practice:
+                assert year == 6 and record["id"] == "T6-L059"
+                assert practice["dskp_printed_page"] == 34
+                assert practice["sp_codes_visually_observed"] == ["4.2.3","4.2.4","4.2.5"]
+                assert practice["rpt_pdf_page"] == 21
+                assert practice["original_sk_sp_unchanged"] is True
+                assert practice["all_other_fields_unchanged"] is True
+                assert practice["original_kbat_question"] in practice["original_pentaksiran"]
+                assert practice["original_kbat_question"] not in fields["pentaksiran"]
+                assert practice["revised_kbat_question"] in fields["pentaksiran"]
+                assert fields["pentaksiran"] == practice["original_pentaksiran"].replace(
+                    practice["original_kbat_question"],practice["revised_kbat_question"])
+                assert practice["fiqh_practice_expert_approved"] is False
+                assert practice["jawi_orthography_approved"] is False
+                assert practice["pbd_expert_approved"] is False
+                assert practice["publication"] == "HOLD"
+                flags.append("T6_SP42_KBAT_DIPERBETUL_SEMAK_PAKAR")
             hadith = record.get("staging_hadith_original_source_verified")
             if hadith:
                 assert year == 4 and record["id"] == "T4-L083"
@@ -195,6 +213,7 @@ def audit(root=ROOT):
         "dskp_l146_alignment_editorial_review_count": flag_counts["DSKP_T3_L146_OBJECTIVE_PBD_REVISED_EXPERT_PENDING"],
         "t4_hadith_source_excerpt_editorial_review_count": flag_counts["HADIS_T4_PETIKAN_BUKU_DSKP_DRAF_SEMAK_PAKAR"],
         "t6_tasmi_rpt_editorial_range_review_count": flag_counts["TASMI_T6_RPT_AYAT_BELUM_DITETAPKAN_GURU"],
+        "t6_sp42_edited_kbat_review_count": flag_counts["T6_SP42_KBAT_DIPERBETUL_SEMAK_PAKAR"],
         "textbook_page_range_overrun_count": flag_counts["HALAMAN_BUKU_T2_MELEBIHI_MUKA_TERAKHIR"],
         "generic_pbd_count": flag_counts["PBD_TIDAK_KHUSUS_KEPADA_SP"],
         "refined_pbd_review_count": flag_counts["PBD_SP_SASARAN_BELUM_DISAH_PAKAR"],
