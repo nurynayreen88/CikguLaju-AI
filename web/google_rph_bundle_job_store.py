@@ -135,7 +135,8 @@ def _upload_once(config, account_id, job_id, fmt, contents, *, transport=None,
 
 def publish_rendered_bundle(config, actor, job_id, selection_hash,
                             word_bytes, pdf_bytes, *, rpc_transport=None,
-                            upload_transport=None, existing_reader=None):
+                            upload_transport=None, existing_reader=None,
+                            production_paid_telegram_user_id=None):
     """Internal synchronous staging orchestration. No browser download routes.
 
     If a crash occurs after charge, the database marks ready transactionally
@@ -154,16 +155,29 @@ def publish_rendered_bundle(config, actor, job_id, selection_hash,
                  transport=upload_transport, existing_reader=existing_reader)
     _upload_once(config, account_id, jid, "pdf", pdf_bytes,
                  transport=upload_transport, existing_reader=existing_reader)
-    result = _rpc(config, "complete_web_rph_bundle_staging", {
-        "p_account_id": account_id, "p_job_id": jid,
-        "p_manifest_sha256": manifest,
-    }, transport=rpc_transport)
+    if production_paid_telegram_user_id is not None:
+        if (type(production_paid_telegram_user_id) is not int
+                or not 0 < production_paid_telegram_user_id <= 9223372036854775807):
+            raise ValueError("Verified linked paid Telegram identity required")
+        # Caller MUST have just re-verified production rights via the private
+        # authenticated bridge. Staging DB additionally checks both identities.
+        endpoint = "complete_web_rph_bundle_prod_paid_staging"
+        payload = {"p_account_id": account_id, "p_job_id": jid,
+                   "p_manifest_sha256": manifest,
+                   "p_telegram_user_id": production_paid_telegram_user_id}
+    else:
+        endpoint = "complete_web_rph_bundle_staging"
+        payload = {"p_account_id": account_id, "p_job_id": jid,
+                   "p_manifest_sha256": manifest}
+    result = _rpc(config, endpoint, payload, transport=rpc_transport)
     if (result.get("job_id") != jid
             or result.get("status") not in ("prepared", "ready")
             or type(result.get("allowed")) is not bool
             or type(result.get("remaining")) is not int
             or not 0 <= result["remaining"] <= 10):
         raise BundleCommitUnconfirmed("Private bundle finalization unconfirmed")
+    if production_paid_telegram_user_id is not None and result.get("access_mode") != "paid":
+        raise BundleCommitUnconfirmed("Verified production paid completion must not debit trial")
     if result["allowed"] and result["status"] != "ready":
         raise BundleCommitUnconfirmed("Debit without durable RPH ready marker")
     if not result["allowed"] and result["status"] != "prepared":
