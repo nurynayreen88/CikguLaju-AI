@@ -13,6 +13,7 @@ from tools.sains_buku_aktiviti_mapping_20261107 import activity_for, is_direct_s
 ROOT = Path(__file__).resolve().parents[1]
 LEDGER = ROOT / "audits/sains_y3_v2582_45_textbook_page_candidates_20261106.json"
 FIXES = ROOT / "audits/sains_y3_v2582_12_dskp_title_corrections_20261106.json"
+TEXTBOOK_VISUAL = ROOT / "audits/sains_y3_45_textbook_original_page_visual_20261107.json"
 
 # (Hook, activity 1 teacher action, pupil action, activity 2 teacher action,
 # pupil action, observable PBD, specific material)
