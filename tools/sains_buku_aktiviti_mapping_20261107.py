@@ -14,6 +14,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 MAPPING=ROOT/"audits/sains_y2_y3_buku_aktiviti_mapping_20261107.json"
+PAGE_CONTENT=ROOT/"audits/sains_y2_y3_ba_page_content_safety_review_20261107.json"
 EXPECTED={2:51,3:45}
 URL_IDS={2:"1j0qoRWHcaAzHVgbb6uua7k_3i2-qVm0v",
          3:"1kVL3PT-VjQiITqmfNXlURQA8gLYvCrI5"}
@@ -24,6 +25,22 @@ def load_activity_books():
     obj=json.loads(MAPPING.read_text(encoding="utf-8"))
     if obj["no_db_update"] is not True or obj["no_approval_or_quality_grade"] is not True:
         raise ValueError("Activity books must be staging HOLD")
+    page_reviews=json.loads(PAGE_CONTENT.read_text(encoding="utf-8"))
+    if page_reviews.get("status")!="STAGING_HOLD" or page_reviews.get("all_96_individual_academic_approved") is not False:
+        raise ValueError("Page-content review cannot be promoted to READY")
+    specific=page_reviews["items"]
+    if len(specific)!=11 or page_reviews.get("reviewed_exercises")!=11:
+        raise ValueError("Expected 11 individually reviewed exercise pages")
+    by_specific={}
+    for rec in specific:
+        key=(rec["year"],rec["sp"])
+        if key in by_specific or rec.get("type") not in (
+            "SAFE_SUBSTITUTE","RELATED_ONLY_ORIGINAL_PBD",
+            "DIRECT_WORKBOOK_CONTEXT","DIRECT_WORKBOOK_SAFETY"):
+            raise ValueError("Duplicate or unrecognized exercise review")
+        if not rec.get("guidance") or not rec.get("evidence"):
+            raise ValueError("Missing exercise source or safe usage")
+        by_specific[key]=rec
     results={}
     for year,count in EXPECTED.items():
         records=obj["items"][str(year)]
@@ -59,8 +76,18 @@ def load_activity_books():
                 raise ValueError("Workbook may not declare SP equivalence/approval: "+code)
             if not is_direct and (year,sp) not in {(2,"4.1.7"),(2,"6.1.6")}:
                 raise ValueError("Unexpected workbook SP mismatch "+code)
+            review=by_specific.get((year,sp))
+            if review:
+                if (review["page"]!=entry["workbook_printed_page"]
+                    or review["exercise"]!=entry["activity_title"]):
+                    raise ValueError("Reviewed exercise page/title changed: "+code)
+                if (review["type"]=="RELATED_ONLY_ORIGINAL_PBD")!= (not is_direct):
+                    raise ValueError("Related-only exercise may not be direct SP/PBD")
             sp_set.add(sp)
-            found[code]={**entry,"workbook_url":expected_url,"workbook_title":source["title"]}
+            found[code]={**entry,"workbook_url":expected_url,
+                         "workbook_title":source["title"],
+                         "lesson_guidance":review["guidance"] if review else None,
+                         "page_content_review":review["type"] if review else "PENDING_INDIVIDUAL_TASK_REVIEW"}
         results[year]=found
     return results
 
@@ -80,6 +107,8 @@ def activity_note(entry,year,*,include_url=False):
         teaching=(f" Latihan ini berlabel SP buku {', '.join(entry['workbook_printed_sp_codes'])}, "
                   f"bukan SP PdP {entry['sp']}; **rujukan berkaitan sahaja**, "
                   "JANGAN tetapkan sebagai bukti PBD untuk SP ini.")
+    if entry.get("lesson_guidance"):
+        teaching+=" "+entry["lesson_guidance"]
     return ref+teaching+status+(f" Sumber buku: {entry['workbook_url']}" if include_url else "")
 
 def is_direct_sp_match(entry):
@@ -88,13 +117,14 @@ def is_direct_sp_match(entry):
 def activity_short_note(entry,year):
     page=entry["workbook_printed_page"]
     title=entry["activity_title"]
+    guidance=entry.get("lesson_guidance")
     if is_direct_sp_match(entry):
         return (f"Buku Aktiviti Sains Tahun {year}, m/s bercetak {page}: '{title}' "
-                "(SP bercetak sama; DRAF). Guru semak jawapan individu.")
+                "(SP sama; DRAF). "+(guidance if guidance else "Guru semak jawapan individu."))
     return (f"Buku Aktiviti Sains Tahun {year}, m/s bercetak {page}: '{title}' "
             f"(SP buku {','.join(entry['workbook_printed_sp_codes'])} "
-            f"bukan SP PdP {entry['sp']}); RUJUKAN SAHAJA, bukan tugasan PBD.")
-
+            f"bukan SP PdP {entry['sp']}); RUJUKAN SAHAJA, bukan tugasan PBD. "
+            +(guidance or ""))
 
 if __name__=="__main__":
     rows=load_activity_books()
