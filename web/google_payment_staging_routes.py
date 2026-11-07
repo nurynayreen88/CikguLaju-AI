@@ -132,7 +132,7 @@ def own_payments():
         return jsonify({"payments": my_payments(config, uid),
                         "access": web_payment_access(config, uid),
                         "plans": eligible_plans(config, _catalog()),
-                        "payment_url": os.environ.get("CIKGULAJU_GOOGLE_STAGING_PAYMENT_URL", "")})
+                        "payment_url": "", "test_mode": True})
     except (PaymentUnavailable, ValueError):
         return jsonify({"error": "Status pembayaran belum tersedia"}), 503
 
