@@ -108,6 +108,14 @@ BEGIN
                               'already_reviewed',false);
   END IF;
 
+  -- Serialize approvals for the same teacher even when there are multiple
+  -- approved subscriptions and independent pending requests.
+  PERFORM 1 FROM public.web_accounts
+   WHERE id=v_payment.account_id FOR UPDATE;
+  IF NOT FOUND THEN
+    RAISE EXCEPTION 'Verified Web account missing';
+  END IF;
+
   IF v_payment.plan_code='rakan_pembangun' AND EXISTS(
     SELECT 1 FROM public.web_entitlements
      WHERE account_id=v_payment.account_id AND plan_code='rakan_pembangun'
