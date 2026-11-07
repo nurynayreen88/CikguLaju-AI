@@ -49,14 +49,19 @@ def extract_official_pdf(year:int,original_pdf:Path):
                 text=re.sub(r"\s\d{2}$","",text)
                 text=re.sub(r"(?<=\s)[1-6](?=\s|$)","",text)
                 text=re.sub(r"\s+"," ",text).strip()
-                if year==4 and sp=="10.2.4" and text.endswith("secara"):
-                    text+=" kreatif." # visual source continuation to check
+                # Do not fill any missing PDF-extraction tail with guessed
+                # words, even when the expected ending appears obvious.
+                # The original page must remain the authoritative source.
+                text_tail_incomplete = (
+                    not text or text[-1] not in ".!?:;)"
+                )
                 sk=".".join(sp.split(".")[:2])
                 if sk not in SK_TITLES[year] or len(text)<18:
                     raise ValueError(f"SK/text source suspect: {year}/{sp}")
                 output.append({"year":year,"sk_code":sk,"sk_text":SK_TITLES[year][sk],
                                "sp_code":sp,"sp_text_source_extract_NEEDS_VISUAL_REVIEW":text,
                                "original_pdf_page":pn,
+                               "extraction_tail_requires_visual_check":text_tail_incomplete,
                                "week_2027":None,"class_date":None,
                                "academic_release_approved":False})
     if len(output)!=EXPECTED[year][1] or len({r["sp_code"] for r in output})!=len(output):
@@ -84,7 +89,8 @@ def write_five_column_preview(year:int,rows:list,destination:Path):
                       "sk_display":r["sk_code"]+" — "+r["sk_text"],
                       "sp_display":r["sp_code"]+" — "+r["sp_text_source_extract_NEEDS_VISUAL_REVIEW"],
                       "week":"","a_start":"","a_end":"","b_start":"","b_end":"",
-                      "note":f"KSSR2017 DSKP asal PDF hlm {r['original_pdf_page']}. AYAT EKSTRAK PERLU SEMAK VISUAL. Tarikh/PdP belum sah."})
+                      "note":f"KSSR2017 DSKP asal PDF hlm {r['original_pdf_page']}. AYAT EKSTRAK PERLU SEMAK VISUAL. Tarikh/PdP belum sah."+
+                          (" AYAT TERPOTONG — rujuk PDF sumber!" if r.get("extraction_tail_requires_visual_check") else "")})
     dest=Path(destination)
     if "DRAF" not in dest.name.upper() or dest.suffix.lower()!=".pdf":
         raise ValueError("Separate review-only DRAF filename required")
