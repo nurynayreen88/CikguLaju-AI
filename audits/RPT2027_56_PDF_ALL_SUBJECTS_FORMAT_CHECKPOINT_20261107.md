@@ -44,3 +44,13 @@
 ## Kawalan
 
 **STAGING ONLY.** PR #441 masih DRAF. Jangan merge/deploy, jangan overwrite DB dan jangan silently switch sumber aplikasi. Sumber GitHub asal kekal; ZIP kompilasi ialah hasil semakan sah antara 56 PDF, bukan artifact LIVE.
+
+## Sambungan 7 November — Muzik SP DSKP 175 PdP dan semakan akhir 56 PDF
+
+- DSKP Muzik Tahun 2–6 daripada sumber KPM telah dibaca semula; **99 entri SP mengikut kod-tahun** tersedia dalam lima JSON crosswalk dengan SHA256 PDF asal. **175/175 PdP** kini memaparkan tajuk SK dan pernyataan teks SP sebenar dalam RPT **staging**. Dua kod DSKP yang tidak digunakan dalam sumber RPT (T2 2.3.1; T3 2.4.3) tidak dijadikan PdP baharu.
+- **Pengecualian sumber bercetak dikekalkan:** Tahun 2 SK Elemen Muzik dicetak sebagai 1.1.1; Tahun 4 SK 3.1 mempunyai SP 3.2.x dan SK 4.1 mempunyai SP 4.2.1. Notasi muzik/rajah/skor yang tidak ditangkap oleh teks perlu dirujuk pada PDF DSKP asal, bukannya dijana secara rekaan.
+- Pengesahan CI Music + 20 PDF lain: [run #42326793688](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42326793688) **LULUS**. Audit sumber `audits/muzik_rpt_2027_175_pdp_full_dskp_statement_display_20261107.md`; kod `rpt_2027/common/music_dskp_full_statement_staging.py`.
+- Semakan menggunakan ZIP gabungan hasil CI: **56 PDF, 12 subjek, 1,631 halaman** (penambahan 3 halaman daripada isi SP Muzik penuh); semua halaman **landskap**, kotak teks dalam sempadan PDF, kulit hadapan mempunyai ruang logo/nama sekolah/nama guru, jadual lima lajur hadir. 3 simulasi RBT kekal diasingkan dan tidak dikira.
+- **Bahasa Arab:** audit baharu `audits/bahasa_arab_rpt_2027_298_pdp_dskp_code_presence_20261107.json` membandingkan **298 PdP** dengan PDF DSKP sumber. Tahun 3–6 mempunyai **98/98 kod SP unik** dalam teks DSKP (23+25+25+25), tetapi ini bukti **kehadiran kod**, bukan pernyataan penuh atau semantik. PDF Tahun 2 mempunyai lapisan teks rosak: hanya kod `1.1.1` dapat diekstrak walaupun indeks RPT Tahun 2 mempunyai 19 kod SP; **jangan secara automatik anggap 18 kod tiada**. Bahagian Tahun 2 mesti dibaca menggunakan susun atur asal.
+- Semua sumber CSV/RPH, DB dan produksi kekal tidak diubah. **FINAL READY masih BLOCKED** untuk RPT Sains separa, Bahasa Arab, rekod PI ditahan, minggu RBT dan integrasi runtime.
+
