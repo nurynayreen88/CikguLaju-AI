@@ -40,8 +40,8 @@ class Science2027PartialRPTQA(unittest.TestCase):
                             for r in all_records))
         source_counts=Counter(r["curriculum_provenance"] for r in all_records)
         self.assertEqual(source_counts["KPM_DSKP_ORIGINAL_PDF_TEXT_SP_COLUMN"],35)
-        self.assertEqual(source_counts["V26_DB_VERIFIED_FLAG_NOT_EXTERNAL_DSKP_SIGNOFF"],305)
-        self.assertEqual(source_counts["KPM2021_PUBLISHED_DSKP_EXACT_SP_DISPLAY_ONLY_NOT_ACADEMIC_SIGNOFF"],2)
+        self.assertEqual(source_counts["V26_DB_VERIFIED_FLAG_NOT_EXTERNAL_DSKP_SIGNOFF"],291)
+        self.assertEqual(source_counts["KPM2021_PUBLISHED_DSKP_EXACT_SP_DISPLAY_ONLY_NOT_ACADEMIC_SIGNOFF"],16)
         for year,rows in self.yearly.items():
             self.assertTrue(all(" — " in r["sk_display"] and " — " in r["sp_display"]
                                 for r in rows))
@@ -76,10 +76,14 @@ class Science2027PartialRPTQA(unittest.TestCase):
                 else:
                     self.assertIsNone(actual)
 
-    def test_two_year6_official_nervous_system_statement_conflicts_do_not_corrupt_database(self):
+    def test_sixteen_year6_official_statement_conflicts_do_not_corrupt_database(self):
         rows=self.yearly[6]
         changed=[r for r in rows if r["year6_official_2021_sp_display_reconciled"]]
-        self.assertEqual({r["sp"] for r in changed},{"2.2.2","2.2.3"})
+        self.assertEqual(len(changed),16)
+        self.assertEqual({r["sp"] for r in changed},
+                         {"2.2.2","2.2.3","3.1.2","3.1.3","3.1.4","3.1.5",
+                          "5.1.5","5.1.6","6.2.2","6.2.3","6.3.2","6.3.3",
+                          "7.1.1","7.1.2","7.1.3","7.1.4"})
         by_sp={r["sp"]:r for r in changed}
         self.assertEqual(by_sp["2.2.2"]["sp_display"],
                          "2.2.2 — Memerihalkan sistem saraf pusat dan fungsinya.")
@@ -89,12 +93,23 @@ class Science2027PartialRPTQA(unittest.TestCase):
                       by_sp["2.2.2"]["year6_legacy_original_sp_text"])
         self.assertIn("fungsi bahagian utama sistem saraf pusat",
                       by_sp["2.2.3"]["year6_legacy_original_sp_text"])
+        self.assertEqual(by_sp["3.1.3"]["sp_display"],
+                         "3.1.3 — Memerihalkan proses hidup mikroorganisma dengan menjalankan penyiasatan.")
+        self.assertEqual(by_sp["6.2.2"]["sp_display"],
+                         "6.2.2 — Memerihalkan kesan daya geseran.")
+        self.assertEqual(by_sp["7.1.2"]["sp_display"],
+                         "7.1.2 — Mengeksperimen untuk menentukan hubungan antara kelajuan, jarak dan masa.")
+        self.assertEqual(by_sp["7.1.4"]["sp_display"],
+                         "7.1.4 — Mendefinisi secara operasi kelajuan dengan menjalankan aktiviti.")
         self.assertTrue(all("AMARAN: Teks SP v26 berbeza" in r["note"] and
                             r["raw_pdp_title"] and
                             r["curriculum_text_matched"] is False and
                             r["academic_release_approved"] is False and
                             r["year6_official_2021_original_pdf_sha_verified"] is False
                             for r in changed))
+        guide_shifts=[r for r in rows if r["panduan_y6_2020_to_2021_sp_focus_changed"]]
+        self.assertEqual({r["sp"] for r in guide_shifts},{"7.1.1","7.1.2","7.1.3"})
+        self.assertTrue(all("AWAS: Panduan PdP 2020" in r["note"] for r in guide_shifts))
 
     def test_year3_12_display_corrections_preserve_original_title(self):
         rows=self.yearly[3]
