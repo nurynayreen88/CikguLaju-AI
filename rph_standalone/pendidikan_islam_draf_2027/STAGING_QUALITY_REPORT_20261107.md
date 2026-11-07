@@ -516,3 +516,16 @@ Fail baharu `pi_t6_held_quran_editor_candidates.json` menyediakan **empat draf B
 Semua calon ialah **editor sahaja**, belum sesuai untuk guru menggunakan sebagai RPH rasmi. Kekurangan 67 ayat Juzuk 25 **tidak** diselesaikan oleh kewujudan empat calon ini. Reviu tajwid, alokasi ayat sebenar, tempoh PdP, ejaan Jawi dan bukti Word/PDF generator Web/Telegram juga masih tertangguh. Rekod asal katalog `year6.json` bagi **keempat-empat Lesson itu kekal `withheld=true`, tanpa `fields`**. Daripada lima Year 6 yang ditahan, T6-L060 ialah calon amali solat berasingan yang juga masih HOLD. T2-L035 ialah rekod keenam seluruh katalog yang ditahan.
 
 Ujian baharu `test_pi_t6_juz25_sequence_gap_audit.py`, `test_pi_t6_juz29_l117_continuity_review.py`, dan `test_pi_t6_held_quran_editor_candidate_review.py` serta lejar CI JSON/CSV menolak dakwaan FULL READY. **Liputan 690/690 tiga langkah hanyalah mekanikal; tiada skor kualiti akademik ≥80% yang diperakui.** Database produksi, Web, Telegram dan `main` tidak disentuh; PR #443 kekal **DRAFT/HOLD/NO_GO**.
+
+
+### Punca sebenar Juzuk 25 — dibandingkan dengan RPT asal Tahun 6 (2026)
+
+Perbandingan langsung dengan Word RPT asal `Rozayus_RPT_Pendidikan_Islam_Tahun_6_SK_2026.docx` (Google Drive ID `1WJTT7wm3aiN4F7YHMf1v_Qj6tuWu597a`; SHA-256 `6b0cb9ac986be8cc0350b66db341e2fefc9a698b0c78be0406020149107b1b14`) melibatkan jadual 0 baris 3 serta jadual 1–6 baris 2 (tujuh slot tasmi' Juz25 yang kemudian dipetakan ke PdP002/006/010/014/018/022/026 dalam RPT 2027).
+
+**RPT 2026 mempunyai satu kesalahan yang lebih jelas daripada RPT 2027**:
+- Slot yang sepadan dengan **PdP006** dahulu menyatakan **asy-Syura 42:33–77**. Sedangkan surah asy-Syura **tamat pada ayat 53**; ini menyebabkan **24 nombor ayat tidak wujud (54–77)** dalam rujukan sumber.
+- Slot berikutnya mengandungi **asy-Syura 42:52–53** semula: **dua ayat pertindihan**.
+- RPT 2027 telah membetulkan julat PdP006 kepada **42:33–51** supaya PdP010 bermula pada **42:52–53**, membuang kesalahan 24 ayat tidak wujud serta pertindihan 2 ayat.
+- Walau bagaimanapun, **empat kelompok ayat yang tertinggal (67 ayat)**—Fussilat 41:47–54, az-Zukhruf 43:74–89, ad-Dukhan 44:1–39, al-Jathiyah 45:34–37—juga **tidak disenaraikan dalam sumber 2026**. Dalam sumber 2026 pun bilangan ayat Juz25 yang *sah dan unik* dipetakan ialah **179/246** selepas mengasingkan julat mustahil/berulang.
+
+Kesimpulan sumber: isu 67 ayat bukan timbul daripada pembetulan 2027 tetapi **diwarisi daripada RPT 2026 asal**. Penyelesaian sebenar memerlukan pengagihan semula PdP secara editorial, bukan sekadar pembaikan ejaan atau pengujian Word/PDF. Data asal tidak ditimpa dan tiada ayat palsu dimasukkan. Fail `pi_t6_juz25_rpt2026_source_provenance.py` dan ujian memastikan kesalahan lama kekal boleh dikesan sehingga RPT serta RPH pengganti diluluskan.
