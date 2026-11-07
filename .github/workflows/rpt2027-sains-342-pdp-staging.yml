@@ -21,6 +21,8 @@ on:
       - 'tests/test_sains_v26_vs_kssr2017_original_y4_y5_code_diff.py'
       - 'scripts/build_rpt2027_sains_kssr2017_y4y5_original_source_staging.py'
       - 'tests/test_rpt2027_sains_original2017_y4y5_source_generator.py'
+      - 'scripts/audit_sains_kssr2017_full_statement_vs_legacy_staging.py'
+      - 'tests/test_sains_kssr2017_full_statement_vs_legacy_staging.py'
       - '.github/workflows/rpt2027-sains-342-pdp-staging.yml'
   workflow_dispatch:
 permissions:
@@ -50,6 +52,8 @@ jobs:
           python -m scripts.audit_sains_v26_vs_kssr2017_original_year4_year5_codes
       - name: Validate SHA-locked external KSSR2017 186-SP rebase generator
         run: python -m unittest tests.test_rpt2027_sains_original2017_y4y5_source_generator -v
+      - name: Guard against same-numeric-code but different official DSKP wording
+        run: python -m unittest tests.test_sains_kssr2017_full_statement_vs_legacy_staging -v
       - name: Audit 29 unrepresented content SP as 12 actual DSKP SK topics
         run: |
           python -m unittest tests.test_sains_2027_29_sp_12_topic_clusters_staging -v
