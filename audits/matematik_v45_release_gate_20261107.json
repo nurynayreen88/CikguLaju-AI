@@ -1,0 +1,35 @@
+{
+  "version": "v45",
+  "source": "v44",
+  "archive_name": "CIKGULAJU_MATEMATIK_v45_585_RPH_BA_SP_HALAMAN_STAGING.zip",
+  "sha256": "9c6ed89ba1fa892b01da8e2fdc5fd7364369891c4996d930a65b6759f96e70e4",
+  "source_sha256": "6ff8ff3a83abd09a35fac23f94cb8980f928d0fc52bc37d5896abe4c2f1328e4",
+  "rph_total": 585,
+  "BA_page_footer_records_inspected": 44,
+  "BA_multi_SP_groups_checked": 18,
+  "BA_reference_narrowed_lesson_count": 48,
+  "BA_reference_narrowed_by_year": {
+    "2": 29,
+    "3": 19
+  },
+  "BA_Y2_Y3_effective_references": 234,
+  "word_pdf_markdown_updated_lessons": 48,
+  "remerged_year_pdfs": [
+    2,
+    3
+  ],
+  "technical_QA_585_pdf_A4": 585,
+  "technical_QA_585_activities_bold": 585,
+  "academic_exercise_items_approved": 0,
+  "academic_final_ready": false,
+  "final_ready": false,
+  "live_staging_telegram_web_tests": false,
+  "production_modified": false,
+  "evidence_note": "BA printed page footer SP codes verified visually for 44 pages; code-page verification is not proof of all exercises matching the lesson.",
+  "outstanding": [
+    "Individual exercise-to-SP and PBD review for all lessons",
+    "Year 4 original 83-to-117 academic approval",
+    "2027 school-calendar checks",
+    "Actual Telegram/Web staging E2E against canonical DB"
+  ]
+}

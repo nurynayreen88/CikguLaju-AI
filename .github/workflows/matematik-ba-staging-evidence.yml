@@ -1,0 +1,24 @@
+name: Matematik BA staging evidence gate
+
+on:
+  pull_request:
+    paths:
+      - 'audits/matematik_ba_*20261107.*'
+      - 'tools/matematik_ba_stage_gate_20261107.py'
+      - 'tests/test_matematik_ba_*20261107.py'
+      - '.github/workflows/matematik-ba-staging-evidence.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  evidence-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify 585-lesson ledger and fail-closed BA formatter
+        run: python -m unittest discover -s tests -p 'test_matematik_ba_*20261107.py' -v

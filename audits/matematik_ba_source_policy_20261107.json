@@ -1,0 +1,65 @@
+{
+  "audit_date": "2026-11-07",
+  "status": "STAGING_HOLD_NO_FINAL_READY",
+  "book_scope": "Matematik Sekolah Kebangsaan KSSR Semakan 2017, bukan DLP/Pendidikan Khas",
+  "official_catalog": "KPM E-Katalog Buku Teks 2023",
+  "catalog_url": "https://www.moe.gov.my/storage/files/shares/Banner/E-Katalog%20Buku%20Teks%20KPM.pdf",
+  "book_activity": [
+    {
+      "year": 2,
+      "policy": "BA_OFFICIAL_AND_SCAN_PRESENT",
+      "kpm_ba_code": "BA082001",
+      "source_key": "BA_MATH_T2_SCAN_2018",
+      "sha256": "1fac0d7984e9c8c725036dd3888d91df2a5138e9d776fed6574791e610a8f318",
+      "pdf_pages": 164,
+      "printed_page_1_pdf_page": 7,
+      "printed_last": 156,
+      "visual_toc_confirmed": true,
+      "pdp_status": "PENDING_RPH_V41_SEMANTIC_REVIEW"
+    },
+    {
+      "year": 3,
+      "policy": "BA_OFFICIAL_AND_SCAN_PRESENT",
+      "kpm_ba_code": "BA083001",
+      "source_key": "BA_MATH_T3_SCAN",
+      "sha256": "43de2cbf17e63ef62433ee89274bdd593d48c65df166765a2e59f3194d579878",
+      "pdf_pages": 158,
+      "printed_page_1_pdf_page": 4,
+      "printed_last": 155,
+      "visual_toc_confirmed": true,
+      "pdp_status": "PENDING_RPH_V41_SEMANTIC_REVIEW"
+    },
+    {
+      "year": 4,
+      "policy": "NO_BA_LISTED_IN_2023_KPM_SK_CATALOG; DO_NOT_ASSUME_NO_COMMERCIAL_WORKBOOK",
+      "kpm_bt_code": "BT084002",
+      "instruction": "Do not invent BA pages. Use textbook-based activity only once year4 original BT page and SP are verified",
+      "pdp_status": "PENDING_BT_AND_RPH_V41_REVIEW"
+    },
+    {
+      "year": 5,
+      "policy": "NO_BA_LISTED_IN_2023_KPM_SK_CATALOG; DO_NOT_ASSUME_NO_COMMERCIAL_WORKBOOK",
+      "kpm_bt_code": "BT085002",
+      "instruction": "Do not invent BA pages. Use textbook-based activity only once year5 original BT page and SP are verified",
+      "pdp_status": "PENDING_BT_AND_RPH_V41_REVIEW"
+    },
+    {
+      "year": 6,
+      "policy": "NO_BA_LISTED_IN_2023_KPM_SK_CATALOG; DO_NOT_ASSUME_NO_COMMERCIAL_WORKBOOK",
+      "kpm_bt_code": "BT08001",
+      "instruction": "Do not invent BA pages. Use textbook-based activity only once year6 original BT page and SP are verified",
+      "pdp_status": "PENDING_BT_AND_RPH_V41_REVIEW"
+    }
+  ],
+  "release_requirements": [
+    "Read actual 585 v41 RPH Word/PDF or source Markdown ZIP (not present in Drive/GitHub checked)",
+    "manual page-by-page evidence for the target Lesson including BA activity or BT textbook task",
+    "confirm every relevant DSKP SP, objective and PBD",
+    "signoff each approved record in private staging",
+    "render/test new one-page Word/PDF with Telegram/Web staging parity",
+    "only then request merge/deployment approval"
+  ],
+  "privacy": "Store book identity/sha/page index only; do not redistribute scanned textbooks or private Drive file IDs in public repository.",
+  "production_mutated": false,
+  "draft_rph_mutated": false
+}

@@ -1,0 +1,25 @@
+{
+  "version": "v47",
+  "source": "v46",
+  "archive_name": "CIKGULAJU_MATEMATIK_v47_585_RPH_SET_INDUKSI_KONKRIT_STAGING.zip",
+  "source_sha256": "f95078a1cfec1e29e0cae5436bbb01c158f41234d9d6581c17c24924d53124fa",
+  "sha256": "08890923150fa71002f5dd6d762ce880f2552987cda3d5c00095e689b8e7b762",
+  "size_bytes": 48767085,
+  "rph_total": 585,
+  "concrete_intro_improved_count": 46,
+  "by_year": {
+    "2": 23,
+    "3": 10,
+    "5": 6,
+    "6": 7
+  },
+  "BA_year2_3_effective_references": 234,
+  "QA_A4_one_page": 585,
+  "academic_exercise_item_approved": 0,
+  "year4_34_pair_signoff": false,
+  "actual_telegram_web_staging_E2E": false,
+  "calendar_2027_final_verified": false,
+  "final_ready": false,
+  "production_modified": false,
+  "note": "46 generic set induksi replaced with concrete questions grounded in existing lesson Activity 1; not formal exercise or textbook approval."
+}

@@ -1,0 +1,43 @@
+{
+  "version": "v51",
+  "source_version": "v50",
+  "archive_name": "CIKGULAJU_MATEMATIK_v51_585_RPH_SP_PENUH_PDP_TEPAT_STAGING.zip",
+  "archive_sha256": "22382da12f876fd63b294ec6f69cd4cc7bcc14e596e73558f43d2cea921f7e94",
+  "source_sha256": "895c87161dd7b62d9cecdea20b1d9efdf7ce0b77a14915d4edc186c4d2c9cdbb",
+  "archive_bytes": 48780476,
+  "rph_total": 585,
+  "changed_lessons_by_year": {
+    "3": 2,
+    "4": 8,
+    "5": 6
+  },
+  "changed_lessons_total": 16,
+  "changed_sections": 50,
+  "unchanged_lessons": 569,
+  "PDF_A4_one_page": 585,
+  "word_pdf_markdown_total_each": 585,
+  "rpt_source_version": "RPT Matematik Tahun 2–6 2027 v28 SEMENTARA (Drive)",
+  "rpt_lesson_sp_matches": 585,
+  "rpt_week_matches": 585,
+  "rpt_calendar_week_range": 44,
+  "kpm_confirmed_start_2027": "2027-01-04",
+  "kpm_confirmed_end_group_A": "2027-12-02",
+  "kpm_confirmed_end_group_B": "2027-12-03",
+  "kpm_calendar_source": "https://www.moe.gov.my/index.php/kalendar-akademik-semasa",
+  "sourced_dskp_pdf_pages": {
+    "T3-SP3.1.5/3.1.6": 54,
+    "T4-SP1.9.1": 48,
+    "T4-SP2.1.3": 52,
+    "T4-SP4.4.2/4.5.1/4.5.2": 62,
+    "T5-SP4.1.1": 58,
+    "T5-SP5.1.1/5.1.2": 62
+  },
+  "academic_signoffs_for_all_585": 0,
+  "academic_exercise_item_verification_all_completed": false,
+  "year4_34_split_paired_books_fully_reviewed": false,
+  "calendar_state_holiday_full_e2e_verified": false,
+  "telegram_web_real_staging_e2e_passed": false,
+  "production_modified": false,
+  "final_ready": false,
+  "disclaimer": "SP wording is a concise faithful restatement of DSKP scoped lists; do not claim verbatim official quotation or formal academic approval."
+}

@@ -1,0 +1,26 @@
+{
+  "version": "v44",
+  "source": "v43",
+  "archive_name": "CIKGULAJU_MATEMATIK_v44_585_RPH_BAHASA_JELAS_STAGING.zip",
+  "sha256": "6ff8ff3a83abd09a35fac23f94cb8980f928d0fc52bc37d5896abe4c2f1328e4",
+  "source_sha256": "aeb3d9486023832b1e29f7618ec034b95d471d968a566066773b80953f531583",
+  "rph_total": 585,
+  "changed_lessons": [
+    "T2-L087",
+    "T2-L088"
+  ],
+  "topic_page_BA_Y2_Y3": 234,
+  "technical_pdf_a4_checked": 585,
+  "year4_original_source_count": 83,
+  "year4_split_pairs_same_SP_distinct_steps": 34,
+  "year4_to6_SP_found_in_textbook_pdf": 351,
+  "arithmetic_assertions_screened": 360,
+  "arithmetic_auto_confirmed": 336,
+  "arithmetic_in_context_confirmed": 24,
+  "academic_exercise_level_approved": 0,
+  "calendar_2027_verified": false,
+  "telegram_web_staging_live_tested": false,
+  "final_ready": false,
+  "production_modified": false,
+  "scope_note": "QA metadata only: existence of a textbook SP code or BA topic page is not item-level exercise verification."
+}
