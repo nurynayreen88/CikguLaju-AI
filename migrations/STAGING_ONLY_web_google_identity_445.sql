@@ -6,8 +6,10 @@ BEGIN;
 
 CREATE TABLE IF NOT EXISTS public.web_accounts (
     id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
-    legacy_telegram_user_id bigint UNIQUE
-        REFERENCES public.cikgulaju_users(telegram_user_id) ON DELETE RESTRICT,
+    -- Staging may not contain a copy of the legacy Telegram user table.
+    -- A production migration must add an FK only after approved migration.
+    legacy_telegram_user_id bigint UNIQUE,
+    display_name text CHECK (char_length(display_name) <= 120),
     google_trial_remaining integer NOT NULL DEFAULT 10
         CHECK (google_trial_remaining BETWEEN 0 AND 10),
     created_at timestamptz NOT NULL DEFAULT now(),
@@ -34,7 +36,10 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE public.web_account_identities TO s
 -- Called only by a server with the service role AFTER verifying the Google
 -- identity via Supabase Auth. No email matching, fake Telegram IDs, or browser
 -- parameters as proof of identity. The routine is transactionally idempotent.
-CREATE OR REPLACE FUNCTION public.ensure_google_web_account(p_auth_subject uuid)
+CREATE OR REPLACE FUNCTION public.ensure_google_web_account(
+    p_auth_subject uuid,
+    p_display_name text DEFAULT NULL
+)
 RETURNS uuid
 LANGUAGE plpgsql SECURITY INVOKER
 SET search_path = public, pg_temp
@@ -55,7 +60,9 @@ BEGIN
         RETURN existing_id;
     END IF;
 
-    INSERT INTO public.web_accounts DEFAULT VALUES RETURNING id INTO candidate_id;
+    INSERT INTO public.web_accounts(display_name)
+    VALUES (left(nullif(btrim(p_display_name), ''),120))
+    RETURNING id INTO candidate_id;
     INSERT INTO public.web_account_identities(provider, subject, account_id)
     VALUES ('google', p_auth_subject::text, candidate_id)
     ON CONFLICT (provider, subject) DO NOTHING
@@ -70,12 +77,18 @@ BEGIN
     IF claimed_id IS NULL THEN
         RAISE EXCEPTION 'google identity mapping not confirmed';
     END IF;
+    -- This is only a display label, NOT authorization or account linking.
+    IF p_display_name IS NOT NULL AND nullif(btrim(p_display_name), '') IS NOT NULL THEN
+       UPDATE public.web_accounts
+       SET display_name=left(btrim(p_display_name),120), updated_at=now()
+       WHERE id=claimed_id;
+    END IF;
     RETURN claimed_id;
 END;
 $function$;
 
-REVOKE ALL ON FUNCTION public.ensure_google_web_account(uuid) FROM PUBLIC, anon, authenticated;
-GRANT EXECUTE ON FUNCTION public.ensure_google_web_account(uuid) TO service_role;
+REVOKE ALL ON FUNCTION public.ensure_google_web_account(uuid,text) FROM PUBLIC, anon, authenticated;
+GRANT EXECUTE ON FUNCTION public.ensure_google_web_account(uuid,text) TO service_role;
 
 COMMIT;
 
