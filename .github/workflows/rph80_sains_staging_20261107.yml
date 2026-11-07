@@ -41,6 +41,7 @@ on:
       - "audits/sains_y4_79_textbook_unit_toc_review_20261107.json"
       - "tools/check_sains_y4_79_toc_document_20261107.py"
       - "tools/export_sains_y4_79_content_review_20261107.py"
+      - "tools/export_sains_y6_84_content_review_20261107.py"
       - "tools/check_sains_y4_79_word_a4_20261107.py"
       - "tests/test_sains_y4_79_bank_quality_20261107.py"
       - "web/sains_y5_83_activity_bank_draf_20261107.py"
@@ -157,6 +158,8 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_sains_y6_84_bank_quality_20261107.py' -v
       - name: Render 84 Year6 SP-specific DRAF Markdown Word PDF
         run: python -m tools.render_sains_y6_84_rph_draf_20261107
+      - name: Export detailed individual Year6 84 SP/PBD/KPS Panitia review docket
+        run: python -m tools.export_sains_y6_84_content_review_20261107
       - name: Verify actual printed one-page A4 of all 84 Year6 Word drafts
         run: python -m tools.check_sains_y6_84_word_a4_20261107
       - name: Audit final 342 Sains RPH bold Aktiviti 1/2, numbered actions and Word/PDF parity
@@ -172,6 +175,8 @@ jobs:
           name: SAINS_RPH80_STAGING_HOLD_20261107
           if-no-files-found: warn
           path: |
+            build/sains_y6_84_subject_content_panitia_HOLD_20261107/*.csv
+            build/sains_y6_84_subject_content_panitia_HOLD_20261107/*.json
             build/sains_y4_79_subject_content_panitia_HOLD_20261107/*.csv
             build/sains_y4_79_subject_content_panitia_HOLD_20261107/*.json
             build/sains_y4_79_textbook_toc_document_QA_20261107/*.csv
