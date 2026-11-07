@@ -128,3 +128,47 @@ def verified_linked_paid_status(actor, cfg):
             ValueError, TypeError, KeyError):
         return {"production_access_status": "source_unavailable",
                 "production_access_verified": False}
+
+
+def verified_paid_uid_for_rph(actor, cfg):
+    """Return a verified Telegram UID only for CURRENT production paid access.
+
+    Only called by the staging RPH server from a signed Google/Telegram actor.
+    Re-check production per request and immediately before the atomic finish.
+    An offline/invalid source must never silently spend trial credits or grant
+    paid access. No browser flags, payments, or stale cached entitlements.
+    """
+    from web.provider_neutral_web_identity import canonical_staging_account
+    from web.google_telegram_link_staging_routes import (
+        _link_status, StagingLinkUnavailable)
+
+    account_id = canonical_staging_account(actor)
+    if not _enabled(cfg):
+        raise PaidStatusBridgeUnavailable("Private production status bridge disabled")
+    try:
+        mapping = _link_status(cfg, account_id)
+    except (StagingLinkUnavailable, KeyError, ValueError, TypeError):
+        raise PaidStatusBridgeUnavailable("Linked account verification unavailable") from None
+    if not isinstance(mapping, dict) or mapping.get("staging_only") is not True:
+        raise PaidStatusBridgeUnavailable("Invalid staging linked-account result")
+    if mapping.get("linked") is False:
+        return None
+    if mapping.get("linked") is not True:
+        raise PaidStatusBridgeUnavailable("Unverified account linkage")
+    raw_uid = mapping.get("telegram_user_id")
+    if (not isinstance(raw_uid, str) or not raw_uid.isascii()
+            or not raw_uid.isdecimal() or raw_uid.startswith("0")
+            or not 0 < int(raw_uid) <= 9223372036854775807):
+        raise PaidStatusBridgeUnavailable("Unverified Telegram ID")
+    if actor.provider == "telegram" and actor.subject != raw_uid:
+        raise PaidStatusBridgeUnavailable("Telegram session subject mismatch")
+    uid = int(raw_uid)
+    try:
+        paid = read_paid_status(uid, cfg)
+    except PaidStatusProductionAccountMissing:
+        # A verified link to an unknown production user is NOT a paid grant.
+        return None
+    if (type(paid.get("rakan_pembangun_active")) is not bool
+            or type(paid.get("subscription_active")) is not bool):
+        raise PaidStatusBridgeUnavailable("Incomplete production entitlement status")
+    return uid if (paid["rakan_pembangun_active"] or paid["subscription_active"]) else None
