@@ -56,12 +56,23 @@ class PICurriculumGuardrails(unittest.TestCase):
                           change["original_pentaksiran"])
             self.assertNotIn("برداسركن كريتيريا دالم SP",
                              fields["pentaksiran"])
-            self.assertTrue(fields["pentaksiran"].startswith(
-                change["original_pentaksiran"].split("ڤبد اينديويدو:")[0]))
-            self.assertIn(change["assessment_criterion_review_only"],
-                          fields["pentaksiran"])
-            self.assertIn(change["observed_evidence_review_only"],
-                          fields["pentaksiran"])
+            if (year, lesson) == (3, 146):
+                align = row["staging_dskp_l146_alignment"]
+                self.assertTrue(align["original_pentaksiran"].startswith(
+                    change["original_pentaksiran"].split("ڤبد اينديويدو:")[0]))
+                self.assertIn(change["assessment_criterion_review_only"],
+                              align["original_pentaksiran"])
+                self.assertIn(change["observed_evidence_review_only"],
+                              align["original_pentaksiran"])
+                self.assertNotIn("بخيل", fields["pentaksiran"])
+                self.assertIn("مروموس", fields["pentaksiran"])
+            else:
+                self.assertTrue(fields["pentaksiran"].startswith(
+                    change["original_pentaksiran"].split("ڤبد اينديويدو:")[0]))
+                self.assertIn(change["assessment_criterion_review_only"],
+                              fields["pentaksiran"])
+                self.assertIn(change["observed_evidence_review_only"],
+                              fields["pentaksiran"])
             self.assertIs(change["source_sk_sp_unchanged"], True)
             self.assertIs(change["book_or_verse_reference_added"], False)
             self.assertIs(change["jawi_orthography_approved"], False)
