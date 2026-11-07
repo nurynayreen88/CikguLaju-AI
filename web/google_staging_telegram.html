@@ -28,7 +28,9 @@ button:disabled{opacity:.5}.credit{font-weight:800;color:#087568;font-size:2.5re
 <p id="teacher">Memuatkan profil…</p>
 <div class="credit"><span id="remaining">–</span> <small>daripada 10 janaan</small></div>
 <p>Kuota di atas dibaca daripada rekod akaun staging yang sama dengan Google. Paparan ini <strong>tidak menolak kredit</strong>.</p>
-<p><a href="/google-staging-login">Log masuk dengan Google</a> untuk menguji janaan dan memuat turun RPH. Login Telegram di halaman ini masih mod profil sahaja.</p>
+<p><a href="/google-staging-web">Buka pilihan RPH / PdP</a> — akses melalui Telegram yang dipautkan. Janaan baharu hanya dibuka apabila enjin staging diluluskan.</p>
+<h3>RPH siap untuk akaun ini</h3><div id="recentRph">Memeriksa fail Word dan PDF…</div>
+<p><small>Fail yang pernah disiapkan boleh dimuat turun semula tanpa menolak kredit. Langganan Telegram produksi tidak dipindahkan.</small></p>
 <button id="logout" type="button">Log keluar Telegram</button>
 </section>
 <p id="status" role="status" aria-live="polite"></p>
@@ -51,8 +53,41 @@ async function profile(){
  get('remaining').textContent=String(data.trial_remaining);
  get('loginBox').hidden=true;
  get('profileBox').hidden=false;
+ await recentReady();
  status('Identiti Telegram dipautkan. Baki janaan dibaca daripada akaun yang sama.');
  return true;
+}
+async function recentReady(){
+ const target=get('recentRph');
+ target.textContent='Memeriksa RPH yang sudah siap…';
+ try{
+   const response=await fetch('/api/google-staging/web/rph/recent',
+     {credentials:'same-origin',cache:'no-store'});
+   if(!response.ok)throw Error('Senarai RPH belum tersedia.');
+   const data=await response.json();
+   if(data.staging_only!==true||!Array.isArray(data.items)||data.items.length>10)
+     throw Error('Senarai RPH tidak sah.');
+   target.replaceChildren();
+   if(!data.items.length){target.textContent='Belum ada RPH siap.';return;}
+   const ul=document.createElement('ul');
+   for(const item of data.items){
+     if(typeof item.job_id!=='string'||!/^[0-9a-f-]{36}$/.test(item.job_id)||
+        !item.downloads||typeof item.downloads!=='object')
+       throw Error('Rekod RPH tidak sah.');
+     const li=document.createElement('li');
+     li.appendChild(document.createTextNode('RPH '+item.job_id.slice(0,8)+' — '));
+     for(const kind of ['word','pdf']){
+       const path='/api/google-staging/web/rph/jobs/'+item.job_id+'/download/'+kind;
+       if(item.downloads[kind]!==path)throw Error('Pautan RPH tidak sah');
+       const link=document.createElement('a');link.href=path;
+       link.textContent=kind==='word'?'Word':'PDF';
+       link.style.marginRight='12px';
+       li.appendChild(link);
+     }
+     ul.appendChild(li);
+   }
+   target.appendChild(ul);
+ }catch(e){target.textContent=e.message||'RPH belum boleh disemak.';}
 }
 window.onStagingTelegramLogin=async function(user){
  if(!user||typeof user!=='object'||!user.hash||!user.auth_date||!user.id){
