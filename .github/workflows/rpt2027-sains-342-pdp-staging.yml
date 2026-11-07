@@ -31,6 +31,7 @@ on:
       - 'tests/test_sains_y2_y3_original_dskp_sp_membership_staging.py'
       - 'rpt_2027/sains/bpk2020_panduan_sains_t6_43_sp_16_section_source_index_20261108_DRAF.json'
       - 'rpt_2027/common/sains_y6_bpk_2020_panduan_43_sp_source.py'
+      - 'rpt_2027/sains/sains_y6_kssr2017_2021_sistem_saraf_2_sp_text_corrections_20261108_DRAF.json'
       - 'scripts/audit_sains_y6_bpk_panduan_43_sp_kps_staging.py'
       - 'tests/test_sains_y6_bpk_panduan_43_sp_kps_staging.py'
       - '.github/workflows/rpt2027-sains-342-pdp-staging.yml'
