@@ -651,3 +651,19 @@ except Exception as _rph_activity_heading_exc:
     print("RPH typography unavailable:",
           type(_rph_activity_heading_exc).__name__, flush=True)
 
+
+# Matematik Years 2–6 v60: opt-in, source-hash-verified rows for the
+# existing Telegram Word/PDF renderer and Web->Telegram private API.
+# The same native engine remains responsible for class/date/time formatting,
+# payment gates and trial credit debit. No RPT or DB changes.
+# If an explicitly enabled staging adapter cannot install, fail startup
+# rather than silently serve legacy Maths activities as v60.
+from web.matematik_v60_native_rows import (
+    is_enabled as _math_v60_is_enabled,
+    install as _install_math_v60_native,
+)
+MATEMATIK_V60_NATIVE_RPH_STAGING_ACTIVE = bool(
+    _install_math_v60_native(telegram_runtime)
+)
+if _math_v60_is_enabled() and not MATEMATIK_V60_NATIVE_RPH_STAGING_ACTIVE:
+    raise RuntimeError("Matematik v60 staging RPH adapter did not install")
