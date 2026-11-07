@@ -7,7 +7,7 @@ from zipfile import ZipFile, ZIP_DEFLATED
 
 from flask import Flask
 from web.google_rph_bundle_delivery import (
-    bp, _ready_job, _private_file, RPHDeliveryUnavailable)
+    bp, _ready_job, _private_file, _recent_ready_jobs, RPHDeliveryUnavailable)
 from web.provider_neutral_web_identity import from_verified_google_account
 
 ACCOUNT = "1a267083-8511-4587-a585-857fe35f4a14"
@@ -131,6 +131,53 @@ class DeliveryTests(unittest.TestCase):
             ):
                 with self.subTest(url=url):
                     self.assertEqual(self.client.get(url).status_code,400)
+
+
+    def test_recent_download_list_is_read_only_and_owner_bound(self):
+        ready = {**ROW, "ready_at": "2026-11-07T05:00:00+00:00"}
+        captured = []
+        def transport(req, timeout):
+            captured.append(req)
+            return FakeReply(json.dumps([ready]).encode())
+        result = _recent_ready_jobs(CONF, ACTOR, transport=transport)
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result[0]["job_id"], JOB)
+        self.assertTrue(result[0]["downloads"]["pdf"].endswith(JOB+"/download/pdf"))
+        self.assertIn("account_id=eq."+ACCOUNT, captured[0].full_url)
+        self.assertIn("status=eq.ready", captured[0].full_url)
+        self.assertEqual(captured[0].get_method(), "GET")
+        self.assertEqual(_recent_ready_jobs(
+            CONF, ACTOR, transport=lambda req,timeout:FakeReply(b"[]")), [])
+
+    def test_recent_private_list_rejects_cross_account_or_unready_rows(self):
+        ready = {**ROW, "ready_at": "2026-11-07T05:00:00+00:00"}
+        for forged in ({**ready, "account_id": OTHER},
+                       {**ready, "status": "prepared"},
+                       {**ready, "document_manifest_sha256": None},
+                       {**ready, "id": "invalid"}):
+            with self.subTest(forged=forged), self.assertRaises(RPHDeliveryUnavailable):
+                _recent_ready_jobs(CONF, ACTOR, transport=lambda req, timeout:
+                                   FakeReply(json.dumps([forged]).encode()))
+
+    def test_recent_http_requires_login_and_releases_no_files_or_quota(self):
+        endpoint = "/api/google-staging/web/rph/recent"
+        self.assertEqual(self.client.get(endpoint).status_code, 401)
+        with (patch("web.google_rph_bundle_delivery._actor",
+                    return_value=(ACTOR, None)),
+              patch("web.google_rph_bundle_delivery._enabled_config",
+                    return_value=CONF),
+              patch("web.google_rph_bundle_delivery._recent_ready_jobs",
+                    return_value=[{"job_id":JOB,"ready_at":"2026-11-07",
+                                   "downloads":{"word":"a","pdf":"b"}}]) as history,
+              patch("web.google_rph_bundle_delivery._private_file") as files):
+            self.assertEqual(self.client.get(endpoint+"?account_id="+OTHER).status_code,400)
+            response=self.client.get(endpoint)
+            self.assertEqual(response.status_code,200)
+            self.assertTrue(response.json["staging_only"])
+            self.assertEqual(len(response.json["items"]),1)
+            self.assertEqual(response.headers["Cache-Control"], "no-store, private")
+            history.assert_called_once()
+            files.assert_not_called()
 
 
 if __name__ == "__main__":
