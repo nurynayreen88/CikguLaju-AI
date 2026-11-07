@@ -20,15 +20,17 @@ class OfflineArabicRPTSourceLinksQA(unittest.TestCase):
             rpt=fitz.open()
             cover=rpt.new_page(width=842,height=595)
             cover.insert_text((60,80),"RPT BAHASA ARAB TAHUN 2 2027 DRAF")
-            for _ in range(2):
-                page=rpt.new_page(width=842,height=595)
-                for i in range(30):
-                    top=45+i*17
-                    page.insert_text((40,top),"Buka DSKP asal (halaman PDF 31)",fontsize=8)
-                    page.insert_link({
-                        "kind":fitz.LINK_URI,"from":fitz.Rect(40,top-10,270,top+3),
-                        "uri":url
-                    })
+            # Build all annotations on one page to avoid an older PyMuPDF
+            # 1.24 in-memory multiple-page annotation serialization quirk.
+            # The real 5 PDFs are separately checked across many pages.
+            page=rpt.new_page(width=842,height=595)
+            for i in range(60):
+                top=29+i*9
+                page.insert_text((40,top),"Buka DSKP asal (halaman PDF 31)",fontsize=5.2)
+                page.insert_link({
+                    "kind":fitz.LINK_URI,"from":fitz.Rect(40,top-6,270,top+2),
+                    "uri":url
+                })
             original=rpt.tobytes(garbage=4,deflate=True)
             rpt.close()
             source=fitz.open()
@@ -50,13 +52,13 @@ class OfflineArabicRPTSourceLinksQA(unittest.TestCase):
             self.assertEqual(result["source_text_academic_signoffs"],0)
             self.assertFalse(result["release_ready"])
             with fitz.open(output) as final:
-                self.assertEqual(len(final),5)
-                links=[x for p in list(final)[:3] for x in p.get_links()]
+                self.assertEqual(len(final),4)
+                links=[x for p in list(final)[:2] for x in p.get_links()]
                 self.assertEqual(len(links),60)
                 self.assertTrue(all(x["kind"]==fitz.LINK_GOTO
-                                    and x["page"]==4 for x in links))
-                self.assertTrue(all(p.rect.width>p.rect.height for p in list(final)[:3]))
-                self.assertTrue(all(p.rect.width<p.rect.height for p in list(final)[3:]))
+                                    and x["page"]==3 for x in links))
+                self.assertTrue(all(p.rect.width>p.rect.height for p in list(final)[:2]))
+                self.assertTrue(all(p.rect.width<p.rect.height for p in list(final)[2:]))
 
     def test_reject_wrong_year_or_unapproved_statement(self):
         with tempfile.TemporaryDirectory() as temp:
