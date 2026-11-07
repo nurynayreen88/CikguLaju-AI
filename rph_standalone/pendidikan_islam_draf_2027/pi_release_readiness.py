@@ -99,7 +99,7 @@ def readiness(root=ROOT):
         {"code": "BOOK_TEXT_OLD_PAGE_CLAIMS", "affected_lessons": 77,
          "action": "Verify each Lesson/SP match directly on actual printed book pages"},
         {"code": "BOOK_TEXT_LAST_PAGE_OVERRUN", "affected_lessons": 3,
-         "action": "Check p133-138 proposed section for T2-L102,105,108"},
+         "action": "Original notes 133-140 are beyond textbook end; verify activity/PBD per Lesson against observed p134-136, then approve an edited note separately"},
         {"code": "ACTIVITY_BOOK_MATCHES_UNVERIFIED", "affected_lessons": 174,
          "action": "Check BA exercise and printed page on original Year 2/3 editions"},
         {"code": "CONTENT_EXPERT_PER_LESSON_APPROVAL", "affected_lessons": 690,
