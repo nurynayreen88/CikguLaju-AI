@@ -100,3 +100,15 @@ Ujian:
 - Fail induk BM yang disambungkan kepada jadual SPi untuk semakan: [bm_sk_26_training_sp_draft_master_20261107_v2_spi_refs.json](bm_sk_26_training_sp_draft_master_20261107_v2_spi_refs.json). RPH hanya menyimpan rujukan **mengikut kemahiran** dan tidak diberikan TP murid secara automatik.
 - **TP keseluruhan memerlukan pertimbangan profesional guru berdasarkan evidens PBD berterusan**, bukan satu aktiviti atau satu contoh RPH sahaja. Larangan penerbitan dan status HOLD kekal; tiada SK/SP/SPi rasmi disisipkan ke DB.
 - Ujian semakan semula BM 26 SP bersama 12 tafsiran latihan: `python -m unittest discover -s tests -p 'test_kp2027_year1_bm_sk_26_source_20261107.py' -v`.
+
+
+## Carian DK Matematik Tahun 1 — 8 November 2026
+
+- [Log carian asal DK Matematik Tahun 1](math_original_dk_search_audit_20261108.json) merekodkan 11 lokasi/sumber yang diperiksa termasuk repositori BPK, laman KPM, folder penataran dan rangka RPT CikguLaju dalam Drive.
+- Folder tepat [01_DK MATEMATIK TAHUN 1 (SDPK SEDIA)](https://drive.google.com/drive/folders/1HJM3cW3OuzZjMULqM3AWes4sjLVF6Uvr) ditemui dalam **SLOT 7** folder penataran Matematik Tahun 1 Sarawak, tetapi senarai anak folder yang boleh dilihat oleh akaun bersambung ialah kosong. **Nama folder bukan naskhah PDF.** Kehilangan senarai bukan bukti dokumen tiada di semua tempat.
+- Portal rasmi KPM [Kurikulum Persekolahan 2027](https://www.moe.gov.my/kurikulum-persekolahan-2027) menyediakan kerangka umum; laman [Repositori BPK](https://repositori.bpk.moe-dl.edu.my/terbitan) mempunyai antaramuka terbitan/DSKP tetapi PDF DK Matematik Tahun 1 yang lengkap tidak dapat diambil daripada carian yang dilaksanakan.
+- Bukti masa **berautoriti**: [Jawapan KPM kepada Dewan Rakyat, 24 Februari 2026, Soalan 59](https://www.parlimen.gov.my/files/jindex/pdf/JDR24022026.pdf) menyatakan waktu KP2027 Matematik **Tahap I = 3.5 jam seminggu**. Ini konsisten dengan **7 waktu × 30 minit** dalam slaid penataran. Jangan gunakan jadual contoh sekolah sebagai jadual mutlak setiap kelas.
+- Slaid perbandingan Matematik Tahun 1 masih bercanggah: **30 SP** pada paparan keseluruhan, **28 SP** apabila dijumlahkan tujuh panel tajuk, dan **30 kod** pada lembaran agihan kumpulan. **Wang 2 berbanding 4** kekal isu akademik terbuka. Tiada kod tambahan direka, dibuang atau diberi teks rasmi.
+- Dokumen KP2027 Matematik **Tingkatan 1** yang boleh dicapai dalam talian bukan DK **Tahun 1**. DSKP KSSR Semakan 2017/Tahap I Edisi 3 juga tidak boleh mengisi jurang ini.
+- Keputusan carian: `ORIGINAL_COMPLETE_DK_NOT_RETRIEVED`; status `SOURCE_HOLD_NOT_READY`. **0 SK/SP baharu disahkan; 0 RPH READY.** Tiada perubahan pada DB aktif atau Web/Telegram.
+- Semakan CI: `python -m unittest discover -s tests -p 'test_kp2027_year1_math_dk_search_20261108.py' -v`.
