@@ -21,6 +21,7 @@ from pi_t4_hadith_source_audit import audit as hadith_t4
 from pi_t6_tasmi_rpt_2027_review import audit as tasmi_t6
 from pi_y6_held_rpt_2027_source_review import audit as held_y6
 from pi_t6_sp42_primary_source_audit import audit as sp42_y6
+from pi_t2_l035_rpt_2026_2027_overlap_audit import audit as l035_t2
 from pi_ba_match_queue import match_queue
 from pi_review_catalog import counts as preview_counts
 
@@ -38,6 +39,7 @@ def readiness(root=ROOT):
     tasmi = tasmi_t6(root)
     held_source = held_y6(root)
     sp42 = sp42_y6(root)
+    overlap = l035_t2(root)
     ba = match_queue(root)
     preview = preview_counts(root=root)
     assert qa["total"] == 696 and qa["drafts"] == 690 and qa["held"] == 6
@@ -73,6 +75,9 @@ def readiness(root=ROOT):
     assert held_source["year6_held_lessons_checked"] == 5
     assert held_source["generated_held_rph"] == 0
     assert sp42["l060_editor_candidate_created"] == 1
+    assert overlap["original_year2_l035_record_still_wholly_held"] is True
+    assert overlap["overlap_present_in_original_2026_rpt"] is True
+    assert overlap["intentional_revision_vs_source_typo_resolved"] is False
     assert sp42["l060_original_year6_record_still_wholly_held"] is True
     assert sp42["independent_official_dskp_lesson_numbers_claimed"] == 0
     assert qa["t6_sp42_edited_kbat_review_count"] == 1
@@ -127,6 +132,8 @@ def readiness(root=ROOT):
     assert sum(x["closing_jawi_candidate_exists"] for x in grouped.values()) == 690
     # Evidence needed before a future release decision; no implicit approval.
     blockers = [
+        {"code": "YEAR2_L035_SOURCE_INHERITED_AYAH224_OVERLAP", "affected_lessons": 1,
+         "action": "RPT Year2 2026 already assigns al-Baqarah 216-224 then 224-245; 2027 flags the overlap. An editor/teacher must decide explicit repetition vs source error; do not fabricate a new verse boundary"},
         {"code": "HELD_SOURCE_CONTENT", "affected_lessons": qa["held"],
          "action": "Complete verified source text before generating a teacher RPH"},
         {"code": "CRITICAL_HADIS_OR_QURAN_BOUNDARY", "affected_lessons": 3,
@@ -192,6 +199,8 @@ def readiness(root=ROOT):
         "year6_l060_optional_amali_candidate_created_held": 1,
         "year6_l060_original_catalog_still_held": True,
         "year6_l060_official_separate_lesson_claims": 0,
+        "year2_l035_ayah224_overlap_inherited_from_2026_rpt": 1,
+        "year2_l035_ayah224_overlap_academically_resolved": 0,
         "year3_tasmi_verse_lessons_not_given_fake_sp": 37,
         "teacher_approved_page_specific_exercises": 0,
         "book_activity_page_candidates": 174,
