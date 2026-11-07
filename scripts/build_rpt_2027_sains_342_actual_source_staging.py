@@ -28,7 +28,7 @@ from web.sains_canonical_unit_preview_20261106 import canonical_science_year
 OUT=ROOT/"staging/rpt_2027_seragam_2026/sains_342_pdp_SEPARA_DRAF"
 EXPECTED={2:51,3:45,4:79,5:83,6:84}
 DECLARED_SOURCE_NAME=SOURCES["v25.82"]
-HOLD="DRAF LEGACY: kod sumber v25.82/v26.00 T4-T6 bercanggah dengan DSKP KSSR2017 asal; BUKAN untuk digunakan guru. Agihan minggu hanya CADANGAN."
+HOLD="DRAF LEGACY: SK/SP v25.82/v26.00 belum disahkan semula terhadap DSKP edisi tepat bagi T2-T6; konflik KSSR2017 dikenal pasti pada T4-T6. BUKAN untuk digunakan guru. Agihan minggu hanya CADANGAN."
 
 def _normalize(value):
     return re.sub(r"\s+"," ",str(value or "")).strip()
@@ -141,7 +141,7 @@ def source_records():
                 if verified:
                     sk_display=sk+" — "+verified["sk_text"]
                     sp_display=sp+" — "+verified["sp_text"]
-                    curriculum_provenance="V26_VERIFIED_DSKP"
+                    curriculum_provenance="V26_DB_VERIFIED_FLAG_NOT_EXTERNAL_DSKP_SIGNOFF"
                 elif extract:
                     # Derive the SK statement from another verified SP sharing
                     # that same SK in *the same year*, not from lesson titles.
@@ -185,7 +185,13 @@ def source_records():
                     sk_display=sk_display,sp_display=sp_display,
                     note=note[:700],week=week,
                     a_start=a[0],a_end=a[1],b_start=b[0],b_end=b[1],
-                    curriculum_text_matched=True,
+                    # DB verified=1 proves a populated internal record only.
+                    # A source statement, including an original PDF extract,
+                    # is NOT an independently signed-off SK/SP-to-PdP match.
+                    curriculum_text_matched=False,
+                    source_statement_available=True,
+                    academic_release_approved=False,
+                    live_download_verified=False,
                     curriculum_provenance=curriculum_provenance,
                     source_status=_normalize(raw.get("verification_status")),
                     raw_pdp_title=_normalize(raw.get("pdp_title")),
@@ -213,4 +219,4 @@ def build_all(destination=OUT):
 
 if __name__=="__main__":
     for year,n,matched,filename in build_all():
-        print(f"SAINS_RPT_SEPARA_DRAF Y{year} {n} PdP, matched_full_SP={matched}, output={filename}")
+        print(f"SAINS_RPT_SEPARA_DRAF Y{year} {n} PdP, academic_SP_signoffs={matched}, output={filename}")
