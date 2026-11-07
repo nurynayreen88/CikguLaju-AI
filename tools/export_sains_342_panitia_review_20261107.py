@@ -14,6 +14,7 @@ from tools.audit_sains_342_pdp_release_gate_20261106 import ROOT, analyze
 from tools.audit_rph80_sains_first_20261107 import EXPECTED, validated_staging_drafts
 from tools.sains_buku_aktiviti_mapping_20261107 import load_activity_books,is_direct_sp_match
 from tools.sains_y6_textbook_toc_20261107 import cue_for,SOURCE_URL
+from web.sains_y3_rph_activity_preview_20261106 import checked_book_pages as verified_year3_textbook_pages
 from tools.render_sains_y3_3_secondary_sp_pbd_20261107 import TASKS as Y3_SECONDARY_PBD, OUT as Y3_SECONDARY_OUTPUT,stem as y3_secondary_stem
 from tools.render_sains_y2_51_rph_draf_20261107 import Y2_SOURCE_CONFLICTS, CORRECTED_CANDIDATE_TITLE, verified_original_textbook_pages
 from tools.render_sains_y2_3_unmapped_sp_pbd_20261107 import (
@@ -41,6 +42,7 @@ def get_review_rows():
         raise RuntimeError("Year3 LibreOffice Word print proof missing")
     book_mappings=load_activity_books()
     book_year2=verified_original_textbook_pages()
+    book_year3=verified_year3_textbook_pages()
     result=[]
     for row in source:
         year=int(row["tahun"])
@@ -111,6 +113,15 @@ def get_review_rows():
                           f"PDF p{int(textbook['pdf_page_one_based'])}; kod SP {sp} dilihat.")
             book_source="https://drive.google.com/file/d/1LkJJWUb-zyFJ1ftpHM-4HIpIcEGLORI9/view"
             book_page_status="PRINTED_PAGE_AND_SP_LABEL_CHECKED__CONTENT_PEDAGOGY_TEACHER_HOLD"
+        if year==3:
+            book=book_year3.get(code)
+            primary=source_sp_tokens[0]
+            if not book or book["sp"]!=primary or book["teacher_pedagogical_approved"] is not False:
+                raise RuntimeError("Year3 source textbook SP visual audit invalid "+code)
+            pages=", ".join(map(str,book["printed_page_candidates"]))
+            book_context=f"Buku Teks asal m/s {pages}; SP utama {primary} dilihat pada sekurang-kurangnya satu halaman."
+            book_source="https://drive.google.com/file/d/17QNqKZjSF7V9GzzkXkz46bDJGnyKYq-F/view"
+            book_page_status="ORIGINAL_BOOK_PAGE_SP_LABEL_CHECKED__TEACHER_CONTENT_SIGNOFF_PENDING"
         if year==6:
             topic=cue_for(sp)
             book_context=(f"Tajuk '{topic['topic']}', julat m/s "
@@ -224,6 +235,10 @@ def main():
         "year2_textbook_printed_page_and_sp_visual_match":51,
         "year2_textbook_unique_original_pages_examined":43,
         "year2_textbook_content_teacher_approved":0,
+        "year3_original_textbook_sp_code_page_visual_match":45,
+        "year3_unique_original_book_pages_examined":54,
+        "year3_supplemental_sp_textbook_labels_verified":3,
+        "year3_textbook_content_teacher_approved":0,
         "year6_textbook_topic_toc_only":84,
         "year6_exact_textbook_sp_page_approved":0,
         "activity_book_y2_y3_matched_code":94,
