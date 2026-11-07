@@ -1,16 +1,19 @@
 # Google Login + Web Receipt Staging — Deployment and Acceptance Runbook
 
-**Status (7 Nov 2026):** Draft PR #447 has a dedicated, isolated Render staging service that has deployed successfully. **Google login remains DISABLED intentionally.** There is not yet a separate CikguLaju Supabase staging project or provider credentials. Live CikguLaju production and its user records remain untouched. No real payment is authorized.
+**Status (7 Nov 2026):** Draft PR #447 has a dedicated, isolated Render staging service that has deployed successfully. **Google login remains DISABLED intentionally.** A separate CikguLaju Supabase staging project is now ACTIVE and its four isolated migrations are applied; Google provider credentials are not yet configured. Live CikguLaju production and its user records remain untouched. No real payment is authorized.
 
 - Staging service: https://cikgulaju-google-payments-staging.onrender.com
 - Render service ID: `srv-dbn8hrm417fc73dr5itg`; current branch: `feature/web-google-auth-staging-445`; auto-deploy OFF.
 - `/healthz` reports process liveness, not Google login readiness.
 - `/readyz` responds 503 while the isolated OAuth/admin settings are not configured. A successful Render deploy does **not** mean that signing in with Google works.
 - `/google-staging-login` displays a non-interactive, clear Malay maintenance page (HTTP 503) when the safe Google feature gate is closed, rather than inviting the user to a broken OAuth flow.
-- Connected Supabase account was checked: CikguLaju production is the only active CikguLaju database project; no separate staging project was found. Do not reuse or rename another app's Supabase project for this purpose.
+- Connected Supabase account was checked: a dedicated project `CikguLaju-Google-Staging` has been created in organization `ContentLajuAI`, region `ap-southeast-1`, project ref `eqrcjlnvcytkgazptbor`, reported cost $0/month by Supabase. Original production project remains `soxakntcanbycjoygrcx` and was not modified.
+- All four staging-only SQL migrations successfully applied to project `eqrcjlnvcytkgazptbor`, with staging bucket `web-receipts-staging` private, 4 MiB cap. Security audit confirms RLS on all four new tables and `anon`/`authenticated` roles have no SELECT access; `service_role` has SELECT. A migration-time advisor `rls_enabled_no_policy` INFO finding is deliberate in this server-only model, **do not add permissive public policies**.
+- Staging SQL QA: two calls to `ensure_google_web_account` for the same synthetic Google UUID resolved to one account with initial 10 trial credits; temporary test rows deleted.
+- Render staging environment now contains staging URL/ref, verified distinct production-ref denylist, publishable key, exact origin/host, independent cryptographically generated session secret, and `CIKGULAJU_GOOGLE_AUTH_STAGING_ENABLED=0`. No staging service-role key or Google OAuth client credentials configured yet.
 
 ## Isolation
-Provision a **separate** Supabase staging project, in a user-confirmed organization after any cost approval. Do not reuse production CikguLaju (known only by the existing deployment configuration). Never point testing at `SUPABASE_URL` from Telegram production or the Web production service.
+The **separate** Supabase staging project has now been created with explicit user organization approval and $0/month quoted cost; its schema has been provisioned. Do not reuse production CikguLaju (known only by the existing deployment configuration). Never point testing at `SUPABASE_URL` from Telegram production or the Web production service.
 
 The separate Render *Web Service* already exists. Keep it distinct from `cikgulaju-web` production:
 - Repository: `nurynayreen88/CikguLaju-AI`
@@ -21,9 +24,15 @@ The separate Render *Web Service* already exists. Keep it distinct from `cikgula
 - Tests: `.github/workflows/google-web-auth-staging.yml` (Python + disposable PostgreSQL 17)
 - No Telegram production runtime or user-facing RPH generator is imported
 
+## Remaining blocker after staging DB provisioning (7 November 2026)
+
+**No successful Google browser OAuth login has occurred yet.** Google Cloud OAuth web client and its client ID/secret must be configured privately in the staging Supabase project at https://supabase.com/dashboard/project/eqrcjlnvcytkgazptbor/auth/providers. Staging backend `CIKGULAJU_GOOGLE_STAGING_SUPABASE_SERVICE_ROLE_KEY` also must be set privately in Render; the connected Supabase tool exposes only publishable API keys, not server secrets. Keep `CIKGULAJU_GOOGLE_AUTH_STAGING_ENABLED=0` until all staging-only credentials and Auth redirect URLs are verified.
+
+Once configured: run browser sign-in and account idempotence acceptance tests before considering production. Google users should **not** gain RPH access in this staging implementation.
+
 ## Create isolated staging schema
 
-Execute **only on staging** (in this order):
+The four migrations were **applied to the new staging project** (in this order); on future fresh staging projects, execute only on staging:
 1. `migrations/STAGING_ONLY_web_google_identity_445.sql`
 2. `migrations/STAGING_ONLY_web_google_payments_445.sql`
 3. `migrations/STAGING_ONLY_web_private_receipt_bucket_445.sql`
@@ -35,11 +44,11 @@ Review SQL and RLS with Supabase advisors first, then verify `web-receipts-stagi
 
 In the **staging project only**, configure the Google provider. In Google Cloud create/configure the OAuth web client with the staging Supabase Auth callback:
 
-`https://<STAGING_SUPABASE_REF>.supabase.co/auth/v1/callback`
+`https://eqrcjlnvcytkgazptbor.supabase.co/auth/v1/callback`
 
 Put Google's OAuth client ID/secret into the **staging Supabase Auth provider settings**, not Render source code or a chat. Add the exact staging Web callback to Supabase Auth allowed redirect URLs:
 
-`https://<STAGING_RENDER_HOST>/api/auth/google/callback`
+`https://cikgulaju-google-payments-staging.onrender.com/api/auth/google/callback`
 
 This project uses PKCE and the server-side `/auth/v1/user` response to verify the user. Google email, user metadata, or Telegram username are never used to merge existing accounts.
 
