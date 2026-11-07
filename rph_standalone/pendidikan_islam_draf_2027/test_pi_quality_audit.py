@@ -31,6 +31,7 @@ class PIQualityAuditTests(unittest.TestCase):
         self.assertEqual(r["expanded_activity_draft_count"], 560)
         self.assertEqual(r["critical_source_review_count"], 3)
         self.assertEqual(r["t6_tasmi_rpt_editorial_range_review_count"],2)
+        self.assertEqual(r["t6_sp42_edited_kbat_review_count"],1)
         self.assertEqual(r["textbook_page_range_overrun_count"], 3)
         bad_page = sorted(x["id"] for x in r["records"]
                           if "HALAMAN_BUKU_T2_MELEBIHI_MUKA_TERAKHIR" in x["flags"])
