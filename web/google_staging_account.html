@@ -25,7 +25,7 @@ small{color:#63796f}#status{min-height:25px}
 <section class="card"><h2>Maklumat akaun</h2>
 <p class="info">Log masuk Google telah diasingkan daripada Telegram. Anda tidak perlu menyambungkan akaun Telegram untuk menguji login Google. Status langganan dan baki janaan di Web produksi tidak berubah.</p>
 <a class="link" href="/google-staging-web">Buka Web CikguLaju (Ujian)</a>
-<p><a href="/google-staging-link-telegram">Pautkan akaun Telegram (Ujian)</a></p>
+<p id="telegramLink" hidden><a href="/google-staging-link-telegram">Pautkan akaun Telegram (Ujian)</a></p>
 <p><a href="/google-staging-payments">Lihat ujian pembayaran</a></p>
 <p><small>Jangan buat bayaran sebenar melalui staging. Pengesahan bayaran belum dibuka untuk pengguna sebenar; janaan RPH hanya bagi akaun penguji.</small></p>
 </section>
@@ -51,6 +51,20 @@ async function loadProfile(){
     document.getElementById('credits').textContent=String(account.trial_remaining);
     statusEl.textContent='Akaun Google disahkan untuk ujian staging.';
   }catch(e){statusEl.textContent='Profil belum boleh disahkan. Sila muat semula.';}
+}
+async function loadLinkAvailability(){
+  try{
+    const res=await fetch('/api/google-staging/link/telegram/status',
+                          {credentials:'same-origin',cache:'no-store'});
+    if(res.ok){
+      const data=await res.json();
+      if(data.staging_only===true){
+        document.getElementById('telegramLink').hidden=false;
+        const anchor=document.getElementById('telegramLink').querySelector('a');
+        if(data.linked===true)anchor.textContent='Lihat akaun Telegram dipautkan (Ujian)';
+      }
+    }
+  }catch(e){/* Linking remains hidden until the staging Telegram bot is configured. */}
 }
 async function loadRecentRph(){
   const view=document.getElementById('recentRph');
@@ -97,4 +111,5 @@ document.getElementById('logout').addEventListener('click',async()=>{
 });
 loadProfile();
 loadRecentRph();
+loadLinkAvailability();
 </script></body></html>
