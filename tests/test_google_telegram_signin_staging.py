@@ -117,7 +117,7 @@ class LinkedTelegramStagingLoginTests(unittest.TestCase):
         expired = _issue_ticket(UID, CFG["secret"], now=100)
         self.assertIsNone(_verify_ticket(expired, CFG["secret"], now=3701))
         self.assertEqual(_verify_ticket(expired, CFG["secret"], now=3500), UID)
-        self.assertIsNone(_verify_ticket(expired[:-1] + "a", CFG["secret"], now=200))
+        self.assertIsNone(_verify_ticket(expired[:-1] + ("a" if expired[-1] != "a" else "b"), CFG["secret"], now=200))
         self.assertIsNone(_verify_ticket(expired, "other" * 10, now=200))
         self.client.set_cookie(TELEGRAM_COOKIE, expired, domain="localhost")
         self.assertEqual(self.client.get(
