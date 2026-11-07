@@ -74,6 +74,13 @@ class GoogleStagingRoutes(unittest.TestCase):
         callback = parse_qs(urlsplit(query["redirect_to"][0]).query)
         return callback["state"][0], start
 
+    def test_staging_login_page_is_behind_flag(self):
+        r = self.client.get("/google-staging-login", base_url=self.base)
+        self.assertEqual(r.status_code, 200)
+        self.assertIn(b"Teruskan dengan Google", r.data)
+        with patch.dict(os.environ, {"CIKGULAJU_GOOGLE_AUTH_STAGING_ENABLED": "0"}):
+            self.assertEqual(self.client.get("/google-staging-login", base_url=self.base).status_code,503)
+
     def test_staging_disabled_fails_closed(self):
         with patch.dict(os.environ, {"CIKGULAJU_GOOGLE_AUTH_STAGING_ENABLED": "0"}):
             r = self.client.get("/api/auth/google/start", base_url=self.base)
@@ -137,6 +144,21 @@ class GoogleStagingRoutes(unittest.TestCase):
         self.assertEqual(r.status_code, 503)
         self.assertEqual(self.client.get("/api/auth/google/status",
                                          base_url=self.base).status_code, 401)
+
+    def test_browser_redirects_to_staging_payment_page(self):
+        state, _ = self._start()
+        with (
+            patch("web.google_auth_staging_routes._json_response",
+                  side_effect=[{"access_token":"x"*70},
+                               {"id":SUBJECT,"identities":[{"provider":"google"}]}]),
+            patch("web.google_auth_staging_routes.ensure_google_staging_account",
+                  return_value=SUBJECT),
+        ):
+            r=self.client.get("/api/auth/google/callback?state="+state+"&code=test",
+                              base_url=self.base,headers={"Accept":"text/html"})
+        self.assertEqual(r.status_code,303)
+        self.assertEqual(r.location,self.base+"/google-staging-payments")
+        self.assertIn("cikgulaju_google_staging_ticket", "\\n".join(r.headers.getlist("Set-Cookie")))
 
     def test_wrong_provider_does_not_grant_ticket(self):
         state, _ = self._start()
