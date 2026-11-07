@@ -3,6 +3,9 @@ on:
   pull_request:
     paths:
       - 'scripts/build_rpt_2027_remaining_four_subjects_staging.py'
+      - 'rpt_2027/common/music_dskp_full_statement_staging.py'
+      - 'staging/pendidikan_muzik/rpt_rph_2027/DSKP_MUSIC_FULL_TEXT_Y*_20261107_DRAF.json'
+      - 'tests/test_rpt_2027_music_full_dskp_statements_staging.py'
       - 'tests/test_rpt_2027_remaining_four_subjects_staging.py'
       - 'rpt_2027/common/format_2026_layout_preview.py'
       - 'rpt_2027/bahasa_melayu/*Format_2026_DRAF.html'
@@ -28,7 +31,7 @@ jobs:
       - run: test -s /usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Regular.ttf
       - run: python -m py_compile scripts/build_rpt_2027_remaining_four_subjects_staging.py rpt_2027/common/format_2026_layout_preview.py
       - name: 20 source-faithful five-column RPT audits
-        run: python -m unittest tests.test_rpt_2027_remaining_four_subjects_staging -v
+        run: python -m unittest tests.test_rpt_2027_remaining_four_subjects_staging tests.test_rpt_2027_music_full_dskp_statements_staging -v
       - name: Build 20 PDFs and visual QA
         run: |
           python -m scripts.build_rpt_2027_remaining_four_subjects_staging
