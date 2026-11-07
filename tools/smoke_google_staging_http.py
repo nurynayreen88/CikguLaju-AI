@@ -72,6 +72,7 @@ def check():
         "/api/google-staging/web/catalog",
         "/api/google-staging/web/catalog?year=3&subject=ENGLISH",
         "/api/google-staging/web/materials?year=3&subject=ENGLISH&component=&unit=One&lesson=e-3-001",
+        "/api/google-staging/web/rph/recent",
         "/api/google-staging/web/rph/jobs/0ebc954f-85e1-4c06-b4d2-41a8bf811111/download/pdf",
     ):
         status, _headers, _body = fetch(endpoint)
