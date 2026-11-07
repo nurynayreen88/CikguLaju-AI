@@ -18,12 +18,13 @@ small{color:#63796f}#status{min-height:25px}
 <header><span class="brand">CikguLaju AI</span><button id="logout" type="button">Log keluar</button></header>
 <h1>Akaun Google CikguLaju</h1>
 <p>Selamat datang, <strong id="teacher">memuatkan akaun...</strong></p>
+<p>ID Log Masuk Google: <strong id="loginEmail">Mengesahkan e-mel…</strong></p>
 <section class="card" aria-labelledby="credits-title"><h2 id="credits-title">Kuota percubaan</h2>
 <div class="credit"><span id="credits">–</span> <small>daripada 10</small></div>
 <p>Kuota ini disimpan dalam pangkalan data <strong>staging</strong> khusus. Janaan RPH hanya tersedia untuk akaun penguji yang diluluskan.</p>
 </section>
 <section class="card"><h2>Maklumat akaun</h2>
-<p class="info">Log masuk Google telah diasingkan daripada Telegram. Anda tidak perlu menyambungkan akaun Telegram untuk menguji login Google. Status langganan dan baki janaan di Web produksi tidak berubah.</p>
+<p class="info">Google menggunakan e-mel disahkan sebagai ID log masuk. E-mel tidak memberikan akses kepada akaun Telegram lain secara automatik. Jika mahu menggunakan hak akses Telegram sedia ada, pautkan kedua-dua identiti melalui pengesahan masing-masing.</p>
 <a class="link" href="/google-staging-web">Buka Web CikguLaju (Ujian)</a>
 <p id="telegramLink" hidden><a href="/google-staging-link-telegram">Pautkan akaun Telegram (Ujian)</a></p>
 <p><a href="/google-staging-telegram">Uji login Telegram untuk akaun dipautkan</a></p>
@@ -56,6 +57,7 @@ async function loadProfile(){
     if(account.google_verified!==true||account.staging_only!==true||
        account.rph_generation_enabled!==false)throw new Error('Mod staging tidak sah');
     document.getElementById('teacher').textContent=account.display_name||'Guru CikguLaju';
+    document.getElementById('loginEmail').textContent=account.login_id||'E-mel belum disahkan';
     document.getElementById('credits').textContent=String(account.trial_remaining);
     statusEl.textContent='Akaun Google disahkan untuk ujian staging.';
   }catch(e){statusEl.textContent='Profil belum boleh disahkan. Sila muat semula.';}
