@@ -156,8 +156,9 @@ def arabic_records(year):
     if indexed is None:
         raise ValueError("Missing Arabic DSKP source-page index for year")
     source_pages={e["sp_code"]:e["pdf_page"] for e in indexed["entries"]}
+    source_page_count=indexed["pdf_pages"] if year==2 else indexed["pdf_page_count"]
     if len(source_pages)!=len(indexed["entries"]) or any(
-        type(pg) is not int or pg < 1 or pg > indexed["pdf_page_count"] for pg in source_pages.values()
+        type(pg) is not int or pg < 1 or pg > source_page_count for pg in source_pages.values()
     ):
         raise ValueError("Invalid Arabic DSKP code-page evidence")
     ar=[x for x in a if int(x["tahun"])==year]
