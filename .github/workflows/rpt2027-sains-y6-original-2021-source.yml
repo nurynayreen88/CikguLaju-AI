@@ -4,6 +4,9 @@ on:
     paths:
       - 'scripts/audit_sains_y6_original_2021_sp_membership_staging.py'
       - 'tests/test_sains_y6_original_2021_sp_membership_staging.py'
+      - 'rpt_2027/sains/kssr2017_t6_2021_secondary_mirror_sp_code_ranges_20261107_DRAF.json'
+      - 'scripts/audit_sains_y6_2021_secondary_mirror_codes_staging.py'
+      - 'tests/test_sains_y6_2021_secondary_mirror_codes_staging.py'
       - '.github/workflows/rpt2027-sains-y6-original-2021-source.yml'
   workflow_dispatch:
 permissions:
@@ -20,6 +23,10 @@ jobs:
       - run: pip install 'PyMuPDF==1.24.14' 'reportlab==4.2.5'
       - name: Failing release gate / synthetic code mismatch QA
         run: python -m unittest tests.test_sains_y6_original_2021_sp_membership_staging -v
+      - name: Compare historical 84 PdP to 96 officially published 2021 SP code numbers from secondary mirror
+        run: |
+          python -m unittest tests.test_sains_y6_2021_secondary_mirror_codes_staging -v
+          python -m scripts.audit_sains_y6_2021_secondary_mirror_codes_staging
       - name: Attempt source retrieval without confusing network failure with academic approval
         run: |
           curl --http1.1 --fail --location --retry 2 --retry-delay 2 \
@@ -68,6 +75,8 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: RPT2027-SAINS-Y6-KPM-2021-ORIGINAL-SP-CODE-MEMBERSHIP-STAGING
-          path: staging/rpt_2027_seragam_2026/sains_y6_original2021_code_membership_DRAF.json
+          path: |
+            staging/rpt_2027_seragam_2026/sains_y6_original2021_code_membership_DRAF.json
+            staging/rpt_2027_seragam_2026/sains_y6_2021_secondary_mirror_code_pdp_diff_DRAF.json
           if-no-files-found: error
           retention-days: 14
