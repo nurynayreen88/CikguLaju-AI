@@ -127,7 +127,7 @@
         },
         {
           "phase": "Pengukuhan/PBD dan penutup",
-          "teacher_action": "Guru memperdengarkan enam item rawak tanpa menunjukkan kad.",
+          "teacher_action": "Guru memperdengarkan enam item rawak tanpa menunjukkan kad, kemudian mencatat abjad dan suku kata yang masih mengelirukan murid.",
           "pupil_action": "Murid mengenal tiga abjad serta tiga suku kata dan menyemak jawapan bersama guru."
         }
       ],
@@ -248,7 +248,7 @@
         },
         {
           "phase": "Pengukuhan/PBD dan penutup",
-          "teacher_action": "Guru memberi tiga ujaran baharu dalam semakan individu.",
+          "teacher_action": "Guru memberi tiga ujaran baharu dalam semakan individu dan merekod kesesuaian serta kesopanan setiap respons.",
           "pupil_action": "Murid bertindak balas tanpa dibantu kad ayat dan berkongsi satu bentuk respons sopan."
         }
       ],
@@ -370,7 +370,7 @@
         },
         {
           "phase": "Pengukuhan/PBD dan penutup",
-          "teacher_action": "Guru memberikan empat arahan baharu melibatkan kedua-dua konteks.",
+          "teacher_action": "Guru memberikan empat arahan baharu melibatkan kedua-dua konteks serta menilai ketepatan tindakan dan adab respons murid.",
           "pupil_action": "Murid menunjukkan tindakan tepat dan respons sopan; kemudian menyemak kesilapan."
         }
       ],
