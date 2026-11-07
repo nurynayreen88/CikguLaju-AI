@@ -28,6 +28,8 @@ if os.environ.get("CIKGULAJU_GOOGLE_AUTH_STAGING_ENABLED") == "1":
     from web.google_auth_staging_routes import bp as google_staging_bp
     app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1)
     app.register_blueprint(google_staging_bp)
+    from web.google_payment_staging_routes import bp as google_payment_staging_bp
+    app.register_blueprint(google_payment_staging_bp)
 from web_v1_telegram_auth_routes import auth_blueprint
 app.register_blueprint(auth_blueprint)
 from web.english_catalog_http import create_english_catalog_blueprint
