@@ -2,6 +2,7 @@
 import unittest
 
 from web.sains_y4_79_activity_bank_draf_20261107 import BANK
+from tools.export_sains_y4_79_content_review_20261107 import docket
 from tools.render_sains_y4_79_rph_draf_20261107 import (
     TEXTBOOK_STATUS, kps_for, markdown, KPS, textbook_unit_toc, get_y4_records
 )
@@ -58,6 +59,20 @@ class TestSainsYear4Bank(unittest.TestCase):
             self.assertLess(item["textbook_toc_range"][0],item["textbook_toc_range"][1])
             self.assertIsNone(item["curriculum_quality_percent"])
             self.assertEqual(item["status"],"DRAF_HOLD")
+
+    def test_79_source_specific_content_pbd_safety_teacher_signoff_rows(self):
+        records=docket()
+        self.assertEqual(len(records),79)
+        self.assertEqual(len({x["Kod PdP"] for x in records}),79)
+        self.assertEqual(len({x["Soalan semakan keselamatan"] for x in records}),9)
+        for r in records:
+            self.assertIn("ISI KANDUNGAN SAHAJA",r["Buku Teks — konteks isi kandungan sahaja"])
+            self.assertEqual(r["Muka surat tepat bagi SP"],"BELUM DISAHKAN")
+            self.assertIn("HOLD",r["Keputusan semakan panitia"])
+            self.assertFalse(r["Boleh diterbitkan ke Web–Telegram"])
+            self.assertFalse(r["Skor akademik (0-100)"])
+            self.assertFalse(r["Nama guru/panitia"])
+            self.assertGreater(len(r["Bukti PBD individu yang dicadangkan"]),15)
 
     def test_unverified_book_pages_never_fabricated(self):
         self.assertIn("NO_EXACT_SP_PAGE_APPROVED",TEXTBOOK_STATUS)
