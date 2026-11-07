@@ -8,6 +8,7 @@ import unittest
 
 from web.sains_y6_84_activity_bank_draf_20261107 import BANK,kps_for,FILES
 from tools.audit_sains_y6_84_source_preflight_20261107 import GROUPS,EXPECTED_SP
+from tools.sains_y6_textbook_toc_20261107 import cue_for, load_toc_ranges, short_cue
 from tools.render_sains_y6_84_rph_draf_20261107 import (
     get_y6_records,markdown,TEXTBOOK_STATUS,BOOK_SOURCE,DSKP_SOURCE
 )
@@ -20,6 +21,25 @@ class TestYear6FullDraft(unittest.TestCase):
         self.assertEqual(len(FILES),3)
         self.assertEqual(len({r["hook"] for r in BANK.values()}),84)
         self.assertEqual(len({r["pbd"] for r in BANK.values()}),84)
+
+    def test_year6_textbook_2021_toc_context_is_not_fabricated_exact_page(self):
+        toc=load_toc_ranges()
+        self.assertEqual(toc["edition"],2021)
+        self.assertEqual(toc["isbn"],"978-983-49-3278-7")
+        self.assertEqual(len(toc["groups"]),17)
+        self.assertFalse(toc["exact_sp_page_verified"])
+        self.assertFalse(toc["teacher_approved"])
+        seen=set()
+        for sp in EXPECTED_SP:
+            e=cue_for(sp)
+            self.assertEqual(e["status"],"UNIT_TOPIC_TOC_ONLY__EXACT_SP_TEXTBOOK_PAGE_PENDING")
+            self.assertIsNone(e["exact_sp_page"])
+            self.assertFalse(e["teacher_signoff"])
+            self.assertIn("bukan pengesahan halaman SP",short_cue(sp))
+            seen.add(sp.rsplit(".",1)[0])
+        self.assertEqual(len(seen),17)
+        self.assertEqual((cue_for("2.1.1")["range_start"],cue_for("2.1.1")["range_end"]),(13,19))
+        self.assertEqual((cue_for("10.1.2")["range_start"],cue_for("10.1.2")["range_end"]),(165,178))
 
     def test_source_pdp_84_not_other_years(self):
         items=get_y6_records()
