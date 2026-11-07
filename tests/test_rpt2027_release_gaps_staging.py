@@ -25,6 +25,13 @@ class RPT2027FailClosedReleaseGapQA(unittest.TestCase):
         self.assertEqual(a["rbt"]["without_sourced_2027_week"], 96)
         self.assertEqual(a["rbt"]["source_2026_sp_block_entries"], 23)
         self.assertEqual(a["sains"]["partial_pdp"], 342)
+        self.assertEqual(a["sains"]["snapshot_status"],
+                         "LEGACY_INTERNAL_CODES_NOT_CURRENT_KSSR_VERIFIED")
+        self.assertTrue(a["sains"]["kssr2017_original_dskp_edition_conflict"])
+        self.assertTrue(a["sains"]["verified_flag_from_database_is_insufficient"])
+        self.assertEqual(a["sains"]["external_evidence_conflicts"],6)
+        self.assertEqual(a["sains"]["years_requiring_full_code_text_remap"],[4,5,6])
+        self.assertFalse(a["sains"]["ready_for_web_telegram"])
         self.assertGreaterEqual(len(a["remaining_releases"]), 6)
 
     def test_gap_report_is_machine_readable_and_does_not_write_production(self):
