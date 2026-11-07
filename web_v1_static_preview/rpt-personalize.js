@@ -1,199 +1,247 @@
 "use strict";
-/* CikguLaju RPT 2027 browser-side school cover.
- * The teacher profile, private logo, and source PDF all stay on the same
- * authenticated first-party origin. PDF-lib is SELF-HOSTED in /assets;
- * this code never sends profile content to another server.
- * The source PDF isn't modified, uploaded or re-saved on the server.
+/* Fill ONLY the three existing placeholders on RPT2027 PDF PAGE 1.
+ * No extra cover, page insertion or source upload; original PDF source is
+ * immutable and unchanged. The teacher's private profile/logo never leave
+ * this first-party browser session. Layout is locked to all 56 source SHAs.
  */
 (function () {
   const ROOT="/api/rpt/2027/all/";
   const PROFILE="/api/web/teacher/profile";
   const LOGO="/api/web/teacher/school-logo";
+  const LAYOUT="/assets/rpt-original-cover-layout.json";
   const MAX_PDF=25*1024*1024;
 
-  function textValue(value,max) {
-    return typeof value==="string" ? value.replace(/[\u0000-\u001f\u007f]/g," ").trim().slice(0,max) : "";
+  function profileText(value,max,label){
+    if(typeof value!=="string")return "";
+    const clean=value.replace(/[\u0000-\u001f\u007f]/g," ").trim();
+    if(clean.length>max)throw Error(label+" terlalu panjang untuk muka depan asal.");
+    return clean;
   }
-  function lines(ctx,text,maxWidth,maxLines=2) {
-    const words=text.split(/\s+/).filter(Boolean),result=[];
-    let line="";
-    for(const word of words) {
-      const next=line ? line+" "+word : word;
-      if(ctx.measureText(next).width<=maxWidth){line=next;continue;}
-      if(line)result.push(line);
-      line=word;
-      if(result.length===maxLines-1)break;
+  function fitText(ctx,value,width,height,scale){
+    const maxWidth=(width-8)*scale;
+    // Prefer one line in the exact original blank field. Only a long name
+    // may require two lines; never silently truncate identity information.
+    for(let size=16;size>=10;size--){
+      ctx.font="600 "+(size*scale)+"px system-ui,'Segoe UI',Arial,sans-serif";
+      if(ctx.measureText(value).width<=maxWidth)return {size,lines:[value]};
     }
-    if(result.length<maxLines&&line)result.push(line);
-    if(result.length===0)result.push(text);
-    const consumed=result.join(" ").split(/\s+/).filter(Boolean).length;
-    if(consumed<words.length) {
-      let last=result[result.length-1];
-      while(last.length>1&&ctx.measureText(last+"…").width>maxWidth)last=last.slice(0,-1);
-      result[result.length-1]=last+"…";
+    const words=value.split(/\s+/).filter(Boolean);
+    for(let size=14;size>=8;size--){
+      ctx.font="600 "+(size*scale)+"px system-ui,'Segoe UI',Arial,sans-serif";
+      const rows=[""];
+      for(const word of words){
+        const row=rows.length-1,next=rows[row]?rows[row]+" "+word:word;
+        if(ctx.measureText(next).width<=maxWidth){
+          rows[row]=next;continue;
+        }
+        if(ctx.measureText(word).width>maxWidth){rows.length=3;break;}
+        rows.push(word);
+        if(rows.length>2)break;
+      }
+      if(rows.length<=2 && rows.every(row=>row && ctx.measureText(row).width<=maxWidth)
+          && size*2+3<=height) return {size,lines:rows};
     }
-    return result;
+    throw Error("Nama terlalu panjang untuk ruang muka depan asal. Ringkaskan dalam Profil Guru.");
   }
-  function paragraph(ctx,s,mid,y,maxWidth,lineHeight,maxLines=2) {
-    const result=lines(ctx,s,maxWidth,maxLines);
-    result.forEach((line,i)=>ctx.fillText(line,mid,y+i*lineHeight,maxWidth));
-  }
-  function drawCover(profile,logo,subject,year,ratio) {
-    const W=1190,H=Math.round(W*ratio),mid=W/2;
-    if(H<650||H>1200)throw Error("Saiz muka depan RPT tidak disokong.");
+  async function textPng(value,box){
+    const width=box[2]-box[0],height=box[3]-box[1],scale=2;
+    if(width<200||height<22||height>35)throw Error("Ruang nama dalam RPT tidak sah.");
     const canvas=document.createElement("canvas");
-    canvas.width=W;canvas.height=H;
+    canvas.width=Math.round(width*scale);
+    canvas.height=Math.round(height*scale);
     const ctx=canvas.getContext("2d");
-    if(!ctx)throw Error("Pelayar tidak menyokong muka depan RPT.");
-    ctx.fillStyle="#f5f9fb";ctx.fillRect(0,0,W,H);
-    ctx.fillStyle="#153e5c";ctx.fillRect(0,0,W,98);
-    ctx.fillStyle="#0c7669";ctx.fillRect(0,98,W,7);
-    ctx.textAlign="center";ctx.textBaseline="middle";
-    ctx.fillStyle="#fff";ctx.font="bold 34px system-ui,Arial,sans-serif";
-    ctx.fillText("RANCANGAN PENGAJARAN TAHUNAN",mid,52,W-130);
-    ctx.fillStyle="#0c7669";ctx.font="bold 52px system-ui,Arial,sans-serif";
-    ctx.fillText("RPT 2027",mid,150);
-    ctx.fillStyle="#173e60";ctx.font="bold 27px system-ui,Arial,sans-serif";
-    paragraph(ctx,subject,mid,194,W-190,32,2);
-    ctx.fillStyle="#56738c";ctx.font="bold 25px system-ui,Arial,sans-serif";
-    ctx.fillText("TAHUN "+year,mid,252);
-
-    const heightScale=H/840;
-    const imageY=278*heightScale,imageSize=Math.min(155,158*heightScale);
-    if(logo) {
-      const iw=logo.naturalWidth||logo.width,ih=logo.naturalHeight||logo.height;
-      if(iw<=0||ih<=0)throw Error("Logo sekolah tidak sah.");
-      const factor=Math.min(imageSize/iw,imageSize/ih);
-      ctx.drawImage(logo,mid-iw*factor/2,imageY+(imageSize-ih*factor)/2,iw*factor,ih*factor);
-    } else {
-      ctx.strokeStyle="#cddde5";ctx.lineWidth=2;
-      ctx.strokeRect(mid-imageSize/2,imageY,imageSize,imageSize);
-      ctx.fillStyle="#647c89";ctx.font="17px system-ui,Arial,sans-serif";
-      ctx.fillText("Logo belum",mid,imageY+imageSize/2-12);
-      ctx.fillText("dimuat naik",mid,imageY+imageSize/2+14);
-    }
-    let school=textValue(profile.school_name,160),teacher=textValue(profile.display_name,100);
-    const schoolY=imageY+imageSize+44;
-    ctx.fillStyle="#56738c";ctx.font="bold 17px system-ui,Arial,sans-serif";
-    ctx.fillText("NAMA SEKOLAH",mid,schoolY);
-    ctx.fillStyle="#173e60";ctx.font="bold 35px system-ui,Arial,sans-serif";
-    paragraph(ctx,school||"Nama sekolah belum diisi",mid,schoolY+48,W-170,42,2);
-    const teacherY=Math.min(H-112,schoolY+150);
-    ctx.fillStyle="#56738c";ctx.font="bold 17px system-ui,Arial,sans-serif";
-    ctx.fillText("DISEDIAKAN OLEH",mid,teacherY);
-    ctx.fillStyle="#173e60";ctx.font="bold 25px system-ui,Arial,sans-serif";
-    paragraph(ctx,teacher||"Nama guru belum diisi",mid,teacherY+35,W-170,28,2);
-    ctx.fillStyle="#647c89";ctx.font="19px system-ui,Arial,sans-serif";
-    const state=textValue(profile.state_name,40);
-    if(state)ctx.fillText(state,mid,Math.min(H-54,teacherY+72));
-    ctx.strokeStyle="#ccdde5";ctx.beginPath();ctx.moveTo(85,H-57);ctx.lineTo(W-85,H-57);ctx.stroke();
-    ctx.fillStyle="#647c89";ctx.font="16px system-ui,Arial,sans-serif";
-    ctx.fillText("CikguLaju AI • Maklumat Profil Guru • RPT DRAF (semak sebelum guna)",mid,H-30,W-120);
-    return canvas;
+    if(!ctx)throw Error("Pelayar tidak menyokong isian muka depan RPT.");
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    ctx.textBaseline="middle";
+    ctx.textAlign="left";
+    ctx.fillStyle="#173d37";
+    const fit=fitText(ctx,value,width,height,scale);
+    const y=fit.lines.length===1 ? [height/2] : [height*0.29,height*0.74];
+    ctx.font="600 "+(fit.size*scale)+"px system-ui,'Segoe UI',Arial,sans-serif";
+    fit.lines.forEach((line,i)=>ctx.fillText(line,4*scale,y[i]*scale));
+    const blob=await new Promise(resolve=>canvas.toBlob(resolve,"image/png"));
+    if(!blob || blob.type!=="image/png")throw Error("Teks profil gagal dilukis pada RPT.");
+    return new Uint8Array(await blob.arrayBuffer());
   }
-  async function fetchProfile() {
-    const response=await fetch(PROFILE,{credentials:"same-origin",cache:"no-store",redirect:"error"});
-    if(response.status===401)throw Error("Sila log masuk semula untuk mendapatkan maklumat guru.");
-    if(!response.ok)throw Error("Profil Guru belum dapat dibaca. Buka Profil Guru, simpan dan cuba semula.");
+  function dimensionsValid(first,layout){
+    const w=first.width,h=first.height;
+    return Number.isFinite(w)&&Number.isFinite(h)&&
+      Math.abs(w-layout.page_width)<=layout.tolerance_pt&&
+      Math.abs(h-layout.page_height)<=layout.tolerance_pt&&w>h;
+  }
+  function boxSafe(box,w,h){
+    return Array.isArray(box)&&box.length===4&&
+      box.every(x=>typeof x==="number"&&Number.isFinite(x))&&
+      box[0]>=0&&box[1]>=0&&box[2]<=w&&box[3]<=h&&
+      box[0]<box[2]&&box[1]<box[3];
+  }
+  function validatedLayout(layout,key,hash){
+    if(!layout||layout.version!==1||
+       layout.status!=="ORIGINAL_COVER_TEMPLATE_LOCKED_TO_56_SOURCE_PDF_SHA256" ||
+       !layout.source_sha256_by_subject_year||
+       Object.keys(layout.source_sha256_by_subject_year).length!==56||
+       layout.source_sha256_by_subject_year[key]!==hash||
+       !/^[a-f0-9]{64}$/.test(hash)||
+       !Array.isArray(layout.identity_background_rgb)||
+       layout.identity_background_rgb.length!==3||
+       !layout.identity_background_rgb.every(x=>typeof x==="number"&&x>=0&&x<=1)){
+      throw Error("Templat muka depan asal tidak sepadan dengan PDF RPT. Fail asal tidak diubah.");
+    }
+    for(const field of ["logo_interior_top_left","logo_image_safe_top_left",
+                         "school_row_top_left","teacher_row_top_left"]){
+      if(!boxSafe(layout[field],layout.page_width,layout.page_height))
+        throw Error("Kedudukan ruang muka depan RPT tidak disahkan.");
+    }
+    return layout;
+  }
+  async function fillOriginalCover(doc,profile,logoBytes,layout,options={}){
+    const PDF=options.PDFLib||(typeof window!=="undefined"?window.PDFLib:null);
+    if(!PDF||!PDF.PDFDocument)throw Error("Modul PDF tidak tersedia.");
+    const before=doc.getPageCount();
+    if(before<2||before>300)throw Error("Bilangan halaman RPT tidak sah.");
+    const page=doc.getPage(0),size=page.getSize();
+    if(!dimensionsValid(size,layout))throw Error("Susun atur muka depan RPT tidak sepadan.");
+    const school=profileText(profile?.school_name,160,"Nama sekolah");
+    const teacher=profileText(profile?.display_name,100,"Nama guru");
+    const fillImage=options.textPng||textPng;
+    if(logoBytes){
+      const image=await doc.embedPng(logoBytes);
+      const interior=layout.logo_interior_top_left;
+      const region=layout.logo_image_safe_top_left;
+      const maxW=region[2]-region[0],maxH=region[3]-region[1];
+      const scale=Math.min(maxW/image.width,maxH/image.height);
+      if(!Number.isFinite(scale)||scale<=0)throw Error("Dimensi logo tidak sah.");
+      const width=image.width*scale,height=image.height*scale;
+      // Cover only the words "LOGO SEKOLAH" inside its original frame,
+      // leaving all four outer frame lines entirely untouched.
+      page.drawRectangle({x:interior[0],y:size.height-interior[3],
+        width:interior[2]-interior[0],height:interior[3]-interior[1],
+        color:PDF.rgb(1,1,1)});
+      page.drawImage(image,{
+        x:(region[0]+region[2]-width)/2,
+        y:size.height-(region[1]+region[3]+height)/2,
+        width,height
+      });
+    }
+    for(const [value,field] of [[school,"school_row_top_left"],[teacher,"teacher_row_top_left"]]){
+      if(!value)continue; // no fabricated placeholder identity
+      const box=layout[field];
+      // Draw only over original underscores, within the ORIGINAL colored
+      // identity panel. Preserve "NAMA SEKOLAH"/"NAMA GURU" on the left.
+      const image=await doc.embedPng(await fillImage(value,box));
+      page.drawRectangle({x:box[0],y:size.height-box[3],
+        width:box[2]-box[0],height:box[3]-box[1],
+        color:PDF.rgb(...layout.identity_background_rgb)});
+      page.drawImage(image,{x:box[0],y:size.height-box[3],
+        width:box[2]-box[0],height:box[3]-box[1]});
+    }
+    if(doc.getPageCount()!==before)throw Error("Bilangan halaman RPT telah berubah.");
+    return {hasLogo:!!logoBytes,hasSchool:!!school,hasTeacher:!!teacher,
+            pages:before,document:doc};
+  }
+  async function fetchProfile(){
+    const response=await fetch(PROFILE,{
+      credentials:"same-origin",cache:"no-store",redirect:"error"
+    });
+    if(response.status===401)throw Error("Sila log masuk semula untuk mendapatkan Profil Guru.");
+    if(!response.ok)throw Error("Profil Guru belum dapat dibaca. Simpan Profil Guru dan cuba lagi.");
     const body=await response.json();
-    if(!body||typeof body.profile!=="object"||!body.profile)throw Error("Profil Guru tidak lengkap.");
+    if(!body||!body.profile||typeof body.profile!=="object")throw Error("Profil Guru belum tersedia.");
     return body.profile;
   }
-  async function fetchLogo() {
-    const response=await fetch(LOGO,{credentials:"same-origin",cache:"no-store",redirect:"error"});
+  async function fetchLogo(){
+    const response=await fetch(LOGO,{
+      credentials:"same-origin",cache:"no-store",redirect:"error"
+    });
     if(response.status===404)return null;
-    if(!response.ok)throw Error("Logo sekolah tidak dapat dibaca. Semak logo di Profil Guru.");
+    if(!response.ok)throw Error("Logo sekolah tidak dapat dibaca. Semak Profil Guru.");
     const blob=await response.blob();
-    if(blob.type!=="image/png"||blob.size<16||blob.size>460800)throw Error("Format logo tersimpan tidak sah.");
-    const url=URL.createObjectURL(blob);
-    try {
-      const image=new Image();image.src=url;await image.decode();
-      return image;
-    }finally{URL.revokeObjectURL(url);}
+    if(blob.type!=="image/png"||blob.size<16||blob.size>460800)
+      throw Error("Logo sekolah tersimpan tidak sah.");
+    return new Uint8Array(await blob.arrayBuffer());
   }
-  async function sourcePdf(code,year) {
+  async function coverLayout(){
+    const response=await fetch(LAYOUT,{
+      credentials:"same-origin",cache:"no-store",redirect:"error"
+    });
+    if(!response.ok)throw Error("Ruang muka depan RPT belum dapat disahkan.");
+    return response.json();
+  }
+  async function sourcePdf(code,year){
     if(!/^[a-z_]{2,36}$/.test(code)||!Number.isInteger(year)||year<2||year>6)
       throw Error("Pilihan RPT tidak sah.");
     const response=await fetch(ROOT+encodeURIComponent(code)+"/"+year+".pdf",{
-      credentials:"same-origin",cache:"no-store",redirect:"error",
+      credentials:"same-origin",cache:"no-store",redirect:"error"
     });
     if(response.status===401)throw Error("Sila log masuk semula untuk muat turun RPT.");
-    if(response.status===403)throw Error("Muat turun RPT memerlukan Rakan Pembangun atau langganan aktif.");
-    if(!response.ok)throw Error("Fail RPT belum boleh dimuat turun (HTTP "+response.status+").");
+    if(response.status===403)throw Error("RPT memerlukan Rakan Pembangun atau langganan aktif.");
+    if(!response.ok)throw Error("Fail RPT belum tersedia (HTTP "+response.status+").");
     if(!response.headers.get("content-type")?.toLowerCase().startsWith("application/pdf"))
-      throw Error("Pelayan tidak memulangkan fail PDF.");
-    const pdf=await response.arrayBuffer();
-    if(pdf.byteLength<8000||pdf.byteLength>MAX_PDF||
-       String.fromCharCode(...new Uint8Array(pdf.slice(0,5)))!=="%PDF-")
-      throw Error("Fail PDF sumber RPT tidak sah.");
-    return pdf;
+      throw Error("Pelayan tidak memulangkan PDF RPT.");
+    const bytes=await response.arrayBuffer();
+    if(bytes.byteLength<8000||bytes.byteLength>MAX_PDF||
+       String.fromCharCode(...new Uint8Array(bytes.slice(0,5)))!=="%PDF-")
+      throw Error("Fail PDF asal tidak sah.");
+    const declaredSha=response.headers.get("X-RPT-Source-SHA256");
+    if(!declaredSha||!/^[a-f0-9]{64}$/.test(declaredSha))
+      throw Error("PDF belum disahkan untuk pengisian ruang asal.");
+    if(!crypto.subtle)throw Error("Pelayar perlu sambungan HTTPS untuk semakan PDF.");
+    const actualSha=Array.from(new Uint8Array(
+      await crypto.subtle.digest("SHA-256",bytes)
+    )).map(b=>b.toString(16).padStart(2,"0")).join("");
+    if(actualSha!==declaredSha)throw Error("Checksum PDF tidak sepadan. Muat turun dibatalkan.");
+    return {bytes,sha:actualSha};
   }
-  async function personalize(code,year,name) {
+  async function downloadWithOriginalCover(code,year){
     const PDF=window.PDFLib;
-    if(!PDF||!PDF.PDFDocument)throw Error("Modul PDF tidak dapat dimuatkan. Sila refresh halaman dan cuba semula.");
-    const bytes=await sourcePdf(code,year);
+    if(!PDF||!PDF.PDFDocument)
+      throw Error("Modul PDF tidak dapat dimuatkan. Refresh laman Web dan cuba semula.");
+    const source=await sourcePdf(code,year);
+    const layout=validatedLayout(await coverLayout(),code+":"+year,source.sha);
     const profile=await fetchProfile();
     const logo=await fetchLogo();
-    const original=await PDF.PDFDocument.load(bytes,{ignoreEncryption:false});
-    const originalCount=original.getPageCount();
-    if(originalCount<2||originalCount>300)
-      throw Error("Bilangan halaman PDF sumber tidak sah.");
-    const first=original.getPage(0).getSize();
-    if(first.width<=first.height||first.width<400||first.width>1200||first.height<300||first.height>1000)
-      throw Error("RPT perlu dalam susun atur A4 landskap.");
-    const cover=drawCover(profile,logo,name,year,first.height/first.width);
-    const coverBlob=await new Promise(resolve=>cover.toBlob(resolve,"image/png"));
-    if(!coverBlob)throw Error("Muka depan tidak dapat disediakan.");
-    // Insert into the loaded document itself. This retains the original
-    // PDF page objects and existing link annotations, including internal
-    // DSKP source jumps, instead of copying pages to another document.
-    const page=original.insertPage(0,[first.width,first.height]);
-    const image=await original.embedPng(await coverBlob.arrayBuffer());
-    page.drawImage(image,{x:0,y:0,width:first.width,height:first.height});
-    if(original.getPageCount()!==originalCount+1)
-      throw Error("Muka depan RPT gagal digabungkan.");
+    const original=await PDF.PDFDocument.load(source.bytes,{ignoreEncryption:false});
+    const result=await fillOriginalCover(original,profile,logo,layout,{PDFLib:PDF});
     const output=await original.save({useObjectStreams:false});
-    const filename="CIKGULAJU_RPT_"+code.toUpperCase()+"_TAHUN_"+year+"_2027_DRAF_SEKOLAH.pdf";
     const download=new Blob([output],{type:"application/pdf"});
     const url=URL.createObjectURL(download),link=document.createElement("a");
-    try {
-      link.href=url;link.download=filename;document.body.appendChild(link);link.click();link.remove();
-    }finally {
-      setTimeout(()=>URL.revokeObjectURL(url),30000);
-    }
-    return {
-      hasSchool:!!textValue(profile.school_name,160),
-      hasTeacher:!!textValue(profile.display_name,100),
-      hasLogo:!!logo
+    try{
+      link.href=url;
+      link.download="CIKGULAJU_RPT_"+code.toUpperCase()+"_TAHUN_"+year+"_2027_ISI_PROFIL.pdf";
+      document.body.appendChild(link);link.click();link.remove();
+    }finally{setTimeout(()=>URL.revokeObjectURL(url),30000);}
+    return result;
+  }
+  if(typeof window!=="undefined"){
+    window.downloadCikguLajuRPT=async function(code,year,name,output,button){
+      if(!Number.isInteger(year)||year===1){
+        if(output)output.textContent="Tahun 1 KP2027 belum dibuka untuk muat turun.";
+        return false;
+      }
+      if(button)button.disabled=true;
+      if(output)output.textContent="Mengisi ruang logo, nama sekolah dan nama guru pada muka depan RPT asal…";
+      try{
+        const status=await downloadWithOriginalCover(code,year);
+        if(output)output.textContent="PDF RPT berjaya dimuat turun. Muka depan asal dikekalkan, tiada halaman tambahan."+
+          ((!status.hasLogo||!status.hasSchool||!status.hasTeacher)
+           ? " Maklumat belum diisi: "+
+             [!status.hasLogo&&"logo sekolah",!status.hasSchool&&"nama sekolah",
+              !status.hasTeacher&&"nama guru"].filter(Boolean).join(", ")+
+             ". Lengkapkan dalam Profil Guru.":"");
+        return true;
+      }catch(error){
+        if(output)output.textContent=error?.message||"Muat turun RPT tidak berjaya.";
+        return false;
+      }finally{
+        if(button)button.disabled=button.id==="rpt-download"
+          ?(document.getElementById("rpt-subject")?.value!==code||
+            Number(document.getElementById("rpt-year")?.value)!==year):false;
+      }
     };
   }
-
-  window.downloadCikguLajuRPT=async function(code,year,name,output,button) {
-    if(!Number.isInteger(year)||year===1){
-      if(output)output.textContent="Tahun 1 KP2027 belum dibuka untuk muat turun.";
-      return false;
-    }
-    if(button)button.disabled=true;
-    if(output)output.textContent="Menyediakan RPT dengan logo, nama sekolah dan nama guru daripada Profil Guru…";
-    try {
-      const status=await personalize(code,year,name);
-      if(output)output.textContent="RPT berjaya disediakan dengan muka depan Profil Guru."+
-        ((!status.hasLogo||!status.hasSchool||!status.hasTeacher) ?
-          " Maklumat yang belum disimpan: "+
-          [!status.hasLogo&&"logo",!status.hasSchool&&"nama sekolah",!status.hasTeacher&&"nama guru"].filter(Boolean).join(", ")+". Lengkapkannya dalam Profil Guru.":"");
-      return true;
-    } catch(error) {
-      if(output)output.textContent=error?.message||"Muat turun RPT tidak berjaya. Sila cuba semula.";
-      return false;
-    } finally {
-      if(button) {
-        // Do not accidentally re-enable the main dropdown button if the
-        // user selected disabled KP2027 Year1 during the async download.
-        button.disabled=button.id==="rpt-download"
-          ? (document.getElementById("rpt-subject")?.value!==code ||
-             Number(document.getElementById("rpt-year")?.value)!==year)
-          : false;
-      }
-    }
-  };
+  // CI can test the EXACT function used by the browser, with a synthetic
+  // PNG text generator and no real user credentials.
+  if(typeof module!=="undefined"&&module.exports){
+    module.exports={fillOriginalCover,validatedLayout,profileText,fitText};
+  }
 })();

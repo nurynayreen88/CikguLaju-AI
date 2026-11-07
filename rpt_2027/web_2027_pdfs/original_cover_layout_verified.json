@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "status": "ORIGINAL_COVER_TEMPLATE_LOCKED_TO_56_SOURCE_PDF_SHA256",
+  "format": "PDF A4 landscape, original page 1; coordinates measured from PyMuPDF",
+  "page_width": 841.8898,
+  "page_height": 595.2756,
+  "tolerance_pt": 0.3,
+  "logo_frame_top_left": [
+    355.9449,
+    69,
+    485.9449,
+    199
+  ],
+  "logo_placeholder_text": "LOGO SEKOLAH",
+  "logo_interior_top_left": [
+    357.3,
+    70.4,
+    484.6,
+    197.6
+  ],
+  "logo_image_safe_top_left": [
+    365,
+    77,
+    477,
+    190
+  ],
+  "identity_panel_top_left": [
+    90.9449,
+    318,
+    750.9449,
+    430
+  ],
+  "identity_background_rgb": [
+    0.960784,
+    0.972549,
+    0.964706
+  ],
+  "school_label": "NAMA SEKOLAH",
+  "school_row_top_left": [
+    274,
+    332.5,
+    742,
+    359.5
+  ],
+  "school_underscores_top_left": [
+    276.9,
+    340.4,
+    486.9,
+    350.4
+  ],
+  "teacher_label": "NAMA GURU",
+  "teacher_row_top_left": [
+    274,
+    388.5,
+    742,
+    415.5
+  ],
+  "teacher_underscores_top_left": [
+    276.9,
+    396.4,
+    486.9,
+    406.4
+  ],
+  "target_spans": [
+    "LOGO SEKOLAH",
+    "NAMA SEKOLAH",
+    "NAMA GURU",
+    "__________________________________________"
+  ],
+  "expected_underscore_lines_per_cover": 2,
+  "created_for": "Teacher profile values overlay only at original placeholders. No extra page.",
+  "source_sha256_by_subject_year": {
+    "bahasa_arab:2": "86589091e1d0ad215c9bd1f5468c7c70bcb26610c3f63705940ad9ae6804afd2",
+    "bahasa_arab:3": "410cd3f48bdbb88fbd5fc7daa14064bc06e04070fd6712313b513f3a37477ba1",
+    "bahasa_arab:4": "65ab3d50920edc7e7d084c66854fa8af2e70e48a9d6156d3dd8916d9947a17c9",
+    "bahasa_arab:5": "5f00553bfdcdf6c50085975bf72f96f79d393edb446fe97f83f589ddbd3e3c78",
+    "bahasa_arab:6": "7c073d319913ef6a14c39479e6dbff7b6b289d007c91b2589d0b9bdf25fb8d98",
+    "bahasa_melayu:2": "00bd722eb67c5bf678e171a762a8ece93c63d7a33f2c2d5713436024c530f193",
+    "bahasa_melayu:3": "b0cab46186b9a4bfd920abc96701c5744f8bf05c4edd575603feacbf2eb7255e",
+    "bahasa_melayu:4": "8e6af25e6a0e71c51a06609b2206dcd108005fb20eaa61e164d3a4ba180159b1",
+    "bahasa_melayu:5": "d34ba5b2bbe2b3e35e49397d4528e28fc6a61f38883214d0f0e99c682d61718e",
+    "bahasa_melayu:6": "6d66e64d112b498fd50d4c1074ffaaa51bbd75abe6d7b0cb83bdb23d78cd2080",
+    "english:2": "844f02c4de0edc4f89dda3a70f0195edace1203ae1e3eb1f2f4423ef9cc2e64b",
+    "english:3": "62a6e6835d1e50c56b408adc201faa99a1a7783f99f5300751952f80ebf07843",
+    "english:4": "f2f3ead75f020b92d577d27a750f28071a8f5c2f95ae6a663307277a368f09d8",
+    "english:5": "304c760281428b1a47b35753e23baa62c6bffb50ec9ae7fef2bf5ee1c7411a95",
+    "english:6": "a758e65eb643955d8e9b8aa5c9c8ad31c632b484890f8dc2944794c409c65e31",
+    "matematik:2": "94f5e9763c735bdf706c6b3fd581f9088af6257309372979309df0f9fc53caae",
+    "matematik:3": "0fcc8e6531966d1bab60b86b3f3df0e690bcca54f7f6bfd27f500e98495c6b35",
+    "matematik:4": "b59c63f497d22a5032774418596f825832b7e2be59314a1f29d107894c635de8",
+    "matematik:5": "cf24bb1cb060ffe0ec82bceee7edb8604ef3483b9138751a960332ed6f38352c",
+    "matematik:6": "179cc8acc03d961d2b66f7556036df6cfa9ea5cb4829d61437e944a5176e5090",
+    "muzik:2": "3d1d63aeab816128268f19860b58ef855f24a9bf9dfa7e2f6ab3f5f435ce4be7",
+    "muzik:3": "d2182418d5bc759939199fa176af4db0a46e783c73f4552638ed86edb3b2e56c",
+    "muzik:4": "39c5cafc23fddd9e797fe4533510d8487a0a9928103e27ab43b4da690ea2e4a2",
+    "muzik:5": "02b174af384720aee37edadbf8cdaef3eb784c7d370b28573bc9260f58eba528",
+    "muzik:6": "6e087c3ec17bbe2ab504588ef9c1d6bca11fe335d32b151c775ff5da87216026",
+    "pendidikan_islam:2": "0042b31e388a9e18ea8e7f72ffffa75704c3cfb6c7865782f0699899d3b51ae3",
+    "pendidikan_islam:3": "0f77ec2cc38c7fba542b588db70ef7b9e7ccc1be53c8e24e4170c3824a2e70c6",
+    "pendidikan_islam:4": "91850cd49adf56391e16dc1914df72dc675b08ae0b8362099133a6e8a9b1e6d2",
+    "pendidikan_islam:5": "98360c2a02ae443ab06e69c7ff6e7b04adde085df846b4369fd98f2d6df83641",
+    "pendidikan_islam:6": "14c8db48bf48e3b091defe3482db01566f943679d0cf725dfbcfe5ab6612c2be",
+    "pendidikan_moral:2": "8536bf8d1337dc5ba821083234f6793a4490a8c8c2c55d4323931b1b6f739513",
+    "pendidikan_moral:3": "1d9382e8095099dfc787b7b94789a9da2b4e088921b805bf170f096da2b04d47",
+    "pendidikan_moral:4": "73f7a2fb2e4bebcc9465f626e9ee04c51d68b7007df4c3b054f2bb12b28e1340",
+    "pendidikan_moral:5": "e83a5587d9d89bcdc65a357f8043958178fd205b47ac1a59caee90e98f4ac292",
+    "pendidikan_moral:6": "0af6def68371348506ce2de5d6efbc9e8de74cfd6f1cf948756ba6e67e9ec104",
+    "pjpk:2": "ea46af913554e707877548ec92f96918eda85345b7d81e327a0a0abdfdc38062",
+    "pjpk:3": "cafa05344f70b969213cf54835e5d4e93e6e6fd483490dd0c634c1e7dc5ed03f",
+    "pjpk:4": "a5b133ccd34760966b3359f24510efa64b69816cb231e92cffff433e37e599c3",
+    "pjpk:5": "f07504434a142b1fbe872e9d6ffd31d42238e85a93e648071fbd700e163e05b8",
+    "pjpk:6": "507c846772054cdcee96a47fda23eca68a4674feb7ff02d3ea098de4b07c527c",
+    "psv:2": "88e4862e07af6aae10122963c911b4d1b2f1ac1cd8e54b3233b1be9733108af5",
+    "psv:3": "660bb040db2400e19890688baf96f8d769e86c6ddbb2e07ee0b1efc47afe63c1",
+    "psv:4": "c966e3d8cac777821a3afac0686591cb67cbd0839f4f1d852955d44ee41b9dbf",
+    "psv:5": "4211d0bd9901dfcb3b680c640419d40f0f84b0768b67af93301c356760492891",
+    "psv:6": "c34ced7c69eea62696eb066502f7cc9af5c522d201aa70eef7cea7cac6b4fb42",
+    "rbt:4": "6359b08acc2fceb26b220ee9036833bc1b80009b55529ca35b953d9c0c56c294",
+    "rbt:5": "9715c5f2b5a5e578f413f26f29290d6c175181f26ce26072aac18662a46af017",
+    "rbt:6": "870a3edcd4fd57f09e518597d2f337c796021802087c48ffd15cf227e8bb093e",
+    "sains:2": "bf497c1b9edcb0a3b50c671d4f8ba886151cbebd22f7378575752fc961c4db6c",
+    "sains:3": "c58e303c16de2c40b19180e9f97a849110bf212ad32a8ba093616103faa17243",
+    "sains:4": "2e6ece78d2f386b4e069460d20fd5ba10bbfab2028e3b8c7341aaf9686a62021",
+    "sains:5": "bbe30bdef5f5f6f20422c551cff5809992f6f552667bc5fb7c72929b16006f3f",
+    "sains:6": "edb3e748bc755768f6cd1fb195346233770c4b78b177a18c78f36146a9ccc3ee",
+    "sejarah:4": "df1ac9b782813adecf36f2b81de75f14482e0a2a5c4e410c59e18888b5274374",
+    "sejarah:5": "c3f74469bf983df00f869fd886adbf1bef5c28f4bb66a121e7fdecef219da956",
+    "sejarah:6": "f8befb89f8354f3e21fc33210f47cbf05498975b0d23ba898d2a6e79099d08ba"
+  }
+}
