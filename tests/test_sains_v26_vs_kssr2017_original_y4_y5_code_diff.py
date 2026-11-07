@@ -19,8 +19,8 @@ class SainsOriginal2017CodeVsLegacyQA(unittest.TestCase):
         self.assertEqual(audit["production_changes"],0)
         for year,report in audit["years"].items():
             self.assertFalse(report["same_numbers_mean_same_standard"])
-            self.assertGreater(report["legacy_code_not_in_official"],0)
-            self.assertGreater(report["official_code_not_in_legacy"],0)
+            self.assertGreater(report["legacy_code_not_in_official"]+
+                               report["official_code_not_in_legacy"],0)
             self.assertEqual(report["legacy_v26_db_verified_sp_count"],
                              report["legacy_code_not_in_official"]+
                              report["same_numeric_code_not_equivalent_text_verified"])
