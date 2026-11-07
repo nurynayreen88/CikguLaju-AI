@@ -15,6 +15,7 @@ from pi_closing_jawi_candidates_complete import generate as jawi_candidates
 from pi_t2_textbook_toc_review import audit as source_toc
 from pi_t2_54_direct_source_review import audit as direct_sp_54
 from pi_t2_dskp_code_presence import audit as dskp_code_index
+from pi_t3_awalan_book_review import audit as awalan_t3
 from pi_ba_match_queue import match_queue
 from pi_review_catalog import counts as preview_counts
 
@@ -26,6 +27,7 @@ def readiness(root=ROOT):
     toc = source_toc(root)
     direct = direct_sp_54(root)
     code_index = dskp_code_index(root)
+    awalan = awalan_t3(root)
     ba = match_queue(root)
     preview = preview_counts(root=root)
     assert qa["total"] == 696 and qa["drafts"] == 690 and qa["held"] == 6
@@ -45,6 +47,9 @@ def readiness(root=ROOT):
     assert code_index["indexed_dskp_sp_codes"] == 83
     assert code_index["coded_lessons_with_all_codes_present"] == 81
     assert code_index["tasmi_verse_range_lessons_without_official_3_level_sp"] == 30
+    assert awalan["year3_awalan_lessons_with_direct_book_unit_reference"] == 12
+    assert awalan["legacy_pdf_page34_hints_wrong_next_unit"] == 6
+    assert awalan["specific_lesson_prefix_examples_approved"] == 0
     assert ba["refined_page_review_candidates"] == 174
     assert ba["oral_and_tasmi_no_forced_book"] == 84
     assert ba["confirmed_exercise_pages"] == 0
@@ -73,6 +78,8 @@ def readiness(root=ROOT):
             "exact_lesson_activity_approvals": 0,
             "source_dskp_code_presence_verified_only": 81 if year == 2 else 0,
             "tasmi_lessons_not_assigned_official_3_level_sp": 30 if year == 2 else 0,
+            "source_textbook_awalan_unit_refs": 12 if year == 3 else 0,
+            "old_pdf34_cross_topic_page_hints": 6 if year == 3 else 0,
             "short_activity_source_hold": counter["AKTIVITI_TERLALU_RINGKAS_PERLU_SEMAKAN"],
             "expert_approved_lesson_count": 0,
             "ready_for_teacher": 0,
@@ -122,6 +129,9 @@ def readiness(root=ROOT):
         "year2_lessons_with_existing_dskp_sp_codes": 81,
         "year2_tasmi_lessons_without_invented_sp": 30,
         "year2_full_sp_text_accuracy_verified": 0,
+        "year3_awalan_direct_book_unit_references": 12,
+        "year3_legacy_pdf34_hints_next_unit": 6,
+        "year3_awalan_prefix_examples_expert_approved": 0,
         "teacher_approved_page_specific_exercises": 0,
         "book_activity_page_candidates": 174,
         "book_activity_exercises_verified": 0,
