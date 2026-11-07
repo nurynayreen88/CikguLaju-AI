@@ -48,7 +48,7 @@ class PaymentStoreSafety(unittest.TestCase):
         self.assertEqual(upload.call_count,1)
         endpoint=upload.call_args.args[1]
         self.assertIn("/storage/v1/object/web-receipts-staging/"+ACCOUNT+"/",endpoint)
-        self.assertEqual(rpc.call_args.args[0],"submit_web_payment_request")
+        self.assertEqual(rpc.call_args.args[1],"submit_web_payment_request")
         payload=rpc.call_args.args[2]
         self.assertEqual(payload["p_account_id"],ACCOUNT)
         self.assertEqual(payload["p_amount_sen"],1000)
