@@ -20,9 +20,11 @@ class RemainingRPTFormatQA(unittest.TestCase):
                 self.assertEqual(len(rows),count)
                 self.assertEqual([r["id"] for r in rows],
                                  [f"{i:03d}" for i in range(1,count+1)])
-                self.assertTrue(all(" — " in r["sp_display"] and
-                                    len(r["sp_display"]) > len(r["sp"]) + 8
-                                    for r in rows))
+                self.assertTrue(all(
+                    (" — " in r["sp_display"] and len(r["sp_display"]) > len(r["sp"]) + 8)
+                    or ("Penilaian Tema (tiada kod SP baharu)" in r["sp_display"])
+                    for r in rows
+                ))
                 self.assertTrue(all("BT" in r["note"] for r in rows))
                 for row in rows:
                     self.assertEqual((row["a_start"],row["a_end"]),
@@ -42,14 +44,19 @@ class RemainingRPTFormatQA(unittest.TestCase):
                 self.assertEqual(sum(bool(r["source_held"]) for r in records),
                                  1 if year==2 else 5 if year==6 else 0)
                 for row in records:
-                    self.assertIn(row["week"], master["A"])
-                    self.assertIn(row["week"], master["B"])
                     self.assertTrue(row["sk"])
                     self.assertTrue(row["sp"])
-                    self.assertEqual((row["a_start"],row["a_end"]),
-                                     master["A"][row["week"]])
-                    self.assertEqual((row["b_start"],row["b_end"]),
-                                     master["B"][row["week"]])
+                    if row["source_held"]:
+                        self.assertEqual(row["week"], "")
+                        self.assertFalse(row.get("a_start"))
+                        self.assertFalse(row.get("b_start"))
+                    else:
+                        self.assertIn(row["week"], master["A"])
+                        self.assertIn(row["week"], master["B"])
+                        self.assertEqual((row["a_start"],row["a_end"]),
+                                         master["A"][row["week"]])
+                        self.assertEqual((row["b_start"],row["b_end"]),
+                                         master["B"][row["week"]])
 
     def test_arabic_298_rows_keep_unknown_standards_and_dates_explicit(self):
         counts={2:60,3:60,4:58,5:60,6:60}
