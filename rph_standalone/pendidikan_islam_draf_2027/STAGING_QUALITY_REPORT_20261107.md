@@ -167,3 +167,25 @@ Ini bukti **identiti buku** sahaja, bukan bukti isi latihan/halaman atau kebenar
 **Had capaian:** Carian buku asal menemui paparan FlipHTML5/AnyFlip, Scribd dan pautan muat turun melalui portal panitia, tetapi halaman latihan dalaman tidak dapat diambil atau dilihat dengan cukup andal. Teks OCR Scribd bagi Jawi juga tidak memadai untuk pengesahan arahan latihan. Katalog KPM mengesahkan identiti BA102001 dan BA103001 dalam **E-Katalog 2023** sahaja; ia bukan bukti kandungan halaman edisi 2027. Oleh itu, tiada nombor halaman dimasukkan secara andaian ke dalam RPH.
 
 **Penanda selesai yang sah:** Semua kerja penyediaan dan pengasingan data sudah dijalankan serta diuji dalam PR #443; **pengintegrasian latihan ke RPH, penilaian kualiti 80%, ujian Word/PDF A4, semakan pakar Jawi dan parity Telegram–Web belum dapat diperakukan.** Jangan anggap artefak CI berjaya sebagai lesen menerbitkan bahan tersebut.
+
+## Tambahan kawalan kesahihan petunjuk BA — 7 Nov 2026
+
+Setelah membuka dan membaca **dokumen PdPR asal Tahun 3** (bukan scan buku aktiviti), pemeriksaan tambahan membezakan **buku teks** daripada **buku aktiviti**. Sumber PdPR 2021, sebagai contoh, menyatakan Buku Teks **halaman 48** dan Buku Aktiviti **halaman 50** bagi Jawi imbuhan awalan; modul PdPR 2020 pula menyatakan Buku Teks **34–35** dan Buku Aktiviti **35** bagi Ikhfa Hakiki. Pemetaan petunjuk ini hanya membantu editor mencari halaman sebenar, **bukan lesen mengisi halaman dalam RPH**.
+
+**Pengelasan 42 petunjuk sumber yang telah tersimpan:**
+
+| Jenis sumber / risiko | Calon Lesson | Kegunaan |
+|---|---:|---|
+| Dokumen PdPR guru 2020/2021 dengan halaman BA dinyatakan | **27** | Keutamaan pemeriksaan terus pada buku BA |
+| Bahan PdPR lain | **6** | Perlu audit konteks/jenis buku |
+| Petunjuk video yang belum diperiksa pada naskhah | **8** | Tidak boleh meneka halaman latihan daripada tajuk video |
+| Konflik sumber | **1** | T3-L004: sumber PdPR sama melabel p65–66 sebagai Akidah dan Jawi |
+| **Jumlah** | **42** | **0 halaman disahkan pada buku asal, 0 RPH diterbitkan** |
+
+Fail kawalan baharu: `pi_ba_provenance_review.py` dan `test_pi_ba_provenance_review.py`; artefak CI `pi_ba_provenance_42.json`. `pi_ba_verification_register.py` memindahkan kelas asal setiap petunjuk ke lejar JSON/CSV. Fail kekal `PI_BA_REVIEW_REGISTER_174_STAGING.csv` kini melabel lajur **URL sumber SEKUNDER (bukan buku asal)** dan **Jenis sumber sekunder**, supaya 42 pautan PdPR/video tidak dilabel sebagai bukti cetakan asal. 132 calon lain masih tiada petunjuk halaman.
+
+Sumber pemeriksaan PdPR (bukan buku yang boleh diedarkan semula):
+- https://anyflip.com/rvse/yhcp/basic — modul PdPR Pendidikan Islam Tahun 3, 2020 (termasuk p35 Ikhfa, p52 Jawi, p124–125 Adab)
+- https://www.scribd.com/document/521518334/PENDIDIKAN-ISLAM-TAHUN-3 — tugasan PdPR Tahun 3, 2021 (membezakan halaman Buku Teks dan Buku Aktiviti)
+
+**Pintu kelulusan kekal tertutup**: status `NO_GO` untuk 174 latihan sehingga benar-benar menyemak perintah latihan dan nombor halaman pada BA102001/BA103001, ejaan Jawi dan kesesuaian SP. Selepas itu barulah boleh menulis ayat BA yang tepat bagi Lesson masing-masing, uji satu halaman Word/PDF dan semak semula parity staging Web–Telegram. Tiada muat turun PDF pihak ketiga dihoskan.
