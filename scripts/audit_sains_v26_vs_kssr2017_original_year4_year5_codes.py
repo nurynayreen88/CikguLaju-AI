@@ -53,7 +53,7 @@ def audit_codes():
         legacy_only=sorted(canonical-newer,key=lambda x:tuple(map(int,x.split("."))))
         official_only=sorted(newer-canonical,key=lambda x:tuple(map(int,x.split("."))))
         overlap=sorted(canonical&newer,key=lambda x:tuple(map(int,x.split("."))))
-        if not legacy_only or not official_only:
+        if not legacy_only and not official_only:
             raise ValueError("Expected cross-edition numeric code mismatch not detected")
         results[str(year)]={
             "legacy_v26_db_verified_sp_count":len(canonical),
