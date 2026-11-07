@@ -450,6 +450,21 @@ except Exception as _native_bm_sequence_exc:
           type(_native_bm_sequence_exc).__name__, flush=True)
 
 
+# Science Year5 reviewed source: optional internal staging ONLY. It supplies
+# the same 83 exact official SP/PdP records to Telegram and its private Web
+# bridge, without changing live service defaults or quotas. If staging was
+# explicitly enabled, an invalid source must fail boot rather than silently
+# returning unrelated older RPH.
+import os as _science_y5_staging_os
+if _science_y5_staging_os.environ.get("CIKGULAJU_SAINS_Y5_83_INTERNAL_REVIEW") == "1":
+    from web.sains_y5_83_staging_shared_runtime_20261108 import (
+        install as install_sains_y5_internal_review,
+    )
+    SAINS_Y5_INTERNAL_REVIEW_ACTIVE = install_sains_y5_internal_review(telegram_runtime)
+else:
+    SAINS_Y5_INTERNAL_REVIEW_ACTIVE = False
+
+
 # Sains / Matematik: Web units and PdP selections use Telegram's exact
 # grouped verified_pdp_sequence reader, not misleading weekly RPT row IDs.
 try:
