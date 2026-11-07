@@ -324,3 +324,49 @@ Bagi mencegah anggapan bahawa 100% calon bererti 100% mutu, `pi_release_readines
 **Sumber Buku Teks Tahun 2 (KSSR Semakan 2017):** dokumen asli dalam Google Drive projek telah disemak secara visual pada isi kandungan dan halaman akhir. Audit `pi_t2_textbook_toc_review.py` kini menyimpan 77 nota lama/18 corak: 74 julat bab selari dengan sempadan pada isi kandungan, 3 catatan **T2-L102, L105, L108** melebihi halaman bercetak terakhir 138 (lama 133–140; cadangan editorial 133–138). Nota asal kekal. Ini **bukan** pengesahan halaman Lesson/SP, dan **bukan** bukti kebenaran mengedar PDF.
 
 Ujian fizikal cetakan editor (Run #92/#95/#108) telah membuktikan 687/687 draf yang diuji menjadi satu halaman A4 dalam penjana percubaan. Ia belum menguji Jawi visual dan penjana sebenar Telegram/Web. Tiada pengesahan Jawi atau kualiti akademik 80% dicapai secara sah. **Kekal DRAFT/HOLD/NO_GO**, DB dan produksi tidak berubah.
+
+
+## 7 November — sumber primer DSKP Tahun 2 + Buku Teks Tahun 2 dan Tahun 3
+
+### Bukti DSKP Tahun 2 (KSSR)
+
+Naskhah `GuruBesar_DSKP_Pendidikan_Islam_Tahun_2.pdf` dimuat turun dari Google Drive projek (file ID `1m6UG8t7tiCjLdnOo6vRj2jI4lNMniOUr`; SHA-256 `dd4804c118e78c5a4fed1521adf750983c6d119a310cf736b751d4994bc67dac`). PDF 64 halaman dengan **83 kod SP tiga aras** yang boleh diekstrak daripada lapisan teks. DSKP halaman PDF **55**, bercetak **43**, mengandungi **5.4.1–5.4.4** bagi adab mengasihi Rasulullah.
+
+- Daripada **111 draf Tahun 2** (satu rekod ditahan), **81** menggunakan kod SP tiga aras; semua **192 kemunculan kod** (76 kod unik) wujud dalam indeks 83 kod sumber DSKP. **Tiada kod tidak dikenali.**
+- **30** draf lain ialah tasmi'/bacaan al-Quran berasaskan julat surah dan ayat. Tiada kod SP tiga aras dipaksa; semakan sempadan ayat/mushaf masih perlu.
+- Padanan **kod** sahaja **tidak** mengesahkan ketepatan penyataan SP, pilihan PdP, objektif atau penilaian.
+
+**Dua pembetulan bersumber:** T2-L105 dan T2-L108, pada SP **5.4.3**, sebelum ini menulis `ادب` (adab) tetapi DSKP menggunakan `ادب٢` (adab-adab); teks SP dan objektif dalam draf staging telah dibetulkan. Setiap rekod menyimpan **SP dan objektif asal** sebelum pindaan dalam `staging_direct_dskp_book_crosswalk`, bersama ID naskhah, halaman dan status HOLD. SK, aktiviti dan nota sumber lama tidak ditimpa.
+
+### Bukti Buku Teks Tahun 2 (KSSR Semakan)
+
+Buku sumber Drive `GuruBesar_BukuTeks_Pendidikan_Islam_T2_SK.pdf` (ID `1VDXKCAyEveZCkhMLVVIyl3qg2sZhk9KP`; SHA-256 `f9e2a3469c363cb233eb551d2a33c7979dbc836c7efa623e13046c74219ff654`) diperiksa melalui halaman buku bercetak **134–138** yang memaparkan kod SP:
+- **5.4.1:** halaman 134, 137, 138
+- **5.4.2:** halaman 134, 138
+- **5.4.3:** halaman 135, 137
+- **5.4.4:** halaman 136, 138
+
+Tiga draf yang sebelum ini mempunyai julat lama **133–140** kini turut mempunyai **rujukan buku yang disaksikan terus** pada baris pertama BAHAN: **T2-L102 → 134**, **L105 → 134–135**, **L108 → 135–136**. Baris asal dan nota julat lama dipelihara dalam rekod bukti. Padanan kod pada footer buku **tidak sama dengan** pengesahan setiap aktiviti, teks dalil atau PBD; status masih HOLD.
+
+### Buku Teks Tahun 3: Jawi imbuhan awalan
+
+Sumber Drive `GuruBesar_BukuTeks_Pendidikan_Islam_T3_SK.pdf` (ID `1DNXL1vmN3ERz6o4_7jcCVc9m3E42JDSY`; SHA-256 `fcc36cbe9ed64aa7d8cbf17dbf105b73c2e34e4fc988e65d63a12fa2386a4f17`) diteliti pada **PDF 31–34**; halaman tercetak **46–51** ialah Unit Jawi imbuhan awalan yang memaparkan kod **7.1.1/7.1.2** di footer. **PDF halaman 34** sudah beralih ke unit imbuhan **akhiran**, bukan awalan.
+
+- **6 Lesson bacaan SP 7.1.1** (T3-L004, L008, L012, L016, L020, L024): rujukan Buku Teks PI T3 halaman **46–51** ditambah pada baris bahan draf.
+- **6 Lesson penulisan SP 7.1.2** (T3-L028, L032, L036, L040, L044, L048): rujukan halaman **49–51** ditambah pada baris bahan draf.
+- **6 catatan lama** untuk kumpulan bacaan masih mengandungi calon **PDF halaman 34** yang tersasar ke unit seterusnya; catatan itu diasingkan sebagai rekod audit, **tidak digunakan sebagai rujukan baharu**.
+- Sasaran awalan yang khusus dalam setiap RPH masih **belum disemak pakar secara individu**, dan DSKP Tahun 3 belum disahkan melalui kod numerik daripada sumber berkenaan. PDF DSKP Tahun 3 yang diperiksa mengekstrak prosa, tetapi **tidak mengekstrak kod SP numerik** dengan boleh dipercayai; tiada angka pengesahan kod Tahun 3 direka.
+
+### Status selepas pembaikan sumber
+
+| Kerja | Liputan bukti | Keputusan |
+|---|---:|---|
+| Kod SP Tahun 2 wujud dalam DSKP | 81/81 RPH berkod | Disemak kewujudan kod sahaja |
+| SP/objektif 5.4.3 Tahun 2 dibetulkan | 2 RPH | Teks asal dipelihara |
+| Rujukan muka surat Buku Teks Tahun 2 | 3 RPH | Sumber diperiksa, kelulusan PBD masih HOLD |
+| Rujukan Unit Jawi Buku Teks Tahun 3 | 12 RPH | Sumber diperiksa, contoh khusus masih HOLD |
+| Nota PDF Tahun 3 tersasar ke unit berikutnya | 6 nota | Ditanda, tidak dikeluarkan kepada guru |
+| Halaman latihan Buku Aktiviti yang disahkan | 0/174 calon | HOLD |
+| Mutu akademik ≥80% diperakui | — | **Belum boleh diperakui** |
+
+Fail audit staging: `pi_t2_dskp_code_presence.py`, `pi_t2_54_direct_source_review.py`, `pi_t3_awalan_book_review.py` dan ujian masing-masing. GitHub Actions menghasilkan lejar JSON/CSV, tidak menyimpan naskhah buku teks atau DSKP. Tiada perubahan ke main, DB, Telegram, Web, pembayaran atau kandungan produksi. **PR #443 kekal DRAFT/HOLD/NO_GO**.
