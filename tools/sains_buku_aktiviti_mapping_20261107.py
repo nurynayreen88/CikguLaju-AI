@@ -15,6 +15,10 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 MAPPING=ROOT/"audits/sains_y2_y3_buku_aktiviti_mapping_20261107.json"
 PAGE_CONTENT=ROOT/"audits/sains_y2_y3_ba_page_content_safety_review_20261107.json"
+REMAINING_PAGE_CONTENT={
+    2:ROOT/"audits/sains_y2_43_remaining_page_content_20261107.json",
+    3:ROOT/"audits/sains_y3_42_remaining_page_content_20261107.json",
+}
 EXPECTED={2:51,3:45}
 URL_IDS={2:"1j0qoRWHcaAzHVgbb6uua7k_3i2-qVm0v",
          3:"1kVL3PT-VjQiITqmfNXlURQA8gLYvCrI5"}
@@ -31,15 +35,32 @@ def load_activity_books():
     specific=page_reviews["items"]
     if len(specific)!=11 or page_reviews.get("reviewed_exercises")!=11:
         raise ValueError("Expected 11 individually reviewed exercise pages")
+    for year,expected_count in ((2,43),(3,42)):
+        extra=json.loads(REMAINING_PAGE_CONTENT[year].read_text(encoding="utf-8"))
+        if (extra.get("year")!=year or extra.get("status")!="STAGING_HOLD"
+            or extra.get("academic_approval") is not False
+            or len(extra.get("items",[]))!=expected_count):
+            raise ValueError(f"Unapproved/incomplete Year{year} page audit")
+        expected_url=f"https://drive.google.com/file/d/{URL_IDS[year]}/view"
+        if extra.get("source")!=expected_url:
+            raise ValueError(f"Workbook source mismatch Year{year}")
+        specific.extend(extra["items"])
+    if len(specific)!=96:
+        raise ValueError("Must have 96 individually checked workbook pages")
     by_specific={}
     for rec in specific:
         key=(rec["year"],rec["sp"])
         if key in by_specific or rec.get("type") not in (
             "SAFE_SUBSTITUTE","RELATED_ONLY_ORIGINAL_PBD",
-            "DIRECT_WORKBOOK_CONTEXT","DIRECT_WORKBOOK_SAFETY"):
+            "DIRECT_WORKBOOK_CONTEXT","DIRECT_WORKBOOK_SAFETY",
+            "DIRECT_EXERCISE_CONTENT_REVIEW"):
             raise ValueError("Duplicate or unrecognized exercise review")
         if not rec.get("guidance") or not rec.get("evidence"):
             raise ValueError("Missing exercise source or safe usage")
+        if rec["type"]=="DIRECT_EXERCISE_CONTENT_REVIEW":
+            if (rec.get("teacher_academic_approved") is not False
+                or rec.get("source_check")!="SCANNED_PAGE_TEXT_AND_IMAGES_VISUALLY_INSPECTED"):
+                raise ValueError("Unverified page-content review")
         by_specific[key]=rec
     results={}
     for year,count in EXPECTED.items():
@@ -77,18 +98,26 @@ def load_activity_books():
             if not is_direct and (year,sp) not in {(2,"4.1.7"),(2,"6.1.6")}:
                 raise ValueError("Unexpected workbook SP mismatch "+code)
             review=by_specific.get((year,sp))
-            if review:
-                if (review["page"]!=entry["workbook_printed_page"]
-                    or review["exercise"]!=entry["activity_title"]):
-                    raise ValueError("Reviewed exercise page/title changed: "+code)
-                if (review["type"]=="RELATED_ONLY_ORIGINAL_PBD")!= (not is_direct):
-                    raise ValueError("Related-only exercise may not be direct SP/PBD")
+            if not review:
+                raise ValueError("Unreviewed workbook exercise page: "+code)
+            if (review["page"]!=entry["workbook_printed_page"]
+                or review["exercise"]!=entry["activity_title"]
+                or review["year"]!=year or review["sp"]!=sp):
+                raise ValueError("Reviewed exercise source/code/page changed: "+code)
+            if review.get("pdp_code") and review["pdp_code"]!=code:
+                raise ValueError("Review PdP mismatch: "+code)
+            if (review["type"]=="RELATED_ONLY_ORIGINAL_PBD")!= (not is_direct):
+                raise ValueError("Related-only exercise may not be direct SP/PBD")
             sp_set.add(sp)
             found[code]={**entry,"workbook_url":expected_url,
                          "workbook_title":source["title"],
-                         "lesson_guidance":review["guidance"] if review else None,
-                         "page_content_review":review["type"] if review else "PENDING_INDIVIDUAL_TASK_REVIEW"}
+                         "lesson_guidance":review["guidance"],
+                         "page_content_review":review["type"],
+                         "page_content_evidence":review["evidence"],
+                         "page_content_teacher_signoff":"MISSING"}
         results[year]=found
+    if sum(len(x) for x in results.values())!=96:
+        raise ValueError("96 workbook exercise review coverage required")
     return results
 
 def activity_for(year,pdp_code,sp):
