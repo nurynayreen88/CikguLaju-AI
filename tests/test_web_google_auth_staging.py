@@ -11,7 +11,7 @@ from web_google_identity_sessions import (
     issue_google_identity_ticket, verify_google_identity_ticket,
 )
 from web_v1_sessions import verify_session_ticket
-from web.google_account_store import GoogleAccountUnavailable
+from web.google_account_store import GoogleAccountUnavailable, verified_google_email
 
 
 SECRET = "staging-unit-test-session-secret-32-chars-minimum"
@@ -63,6 +63,10 @@ class GoogleStagingRoutes(unittest.TestCase):
         self.app.register_blueprint(bp)
         self.client = self.app.test_client()
         self.base = "https://staging.example.test"
+        # Callback persists the verified email via private service credentials.
+        self.email_store = patch("web.google_auth_staging_routes.save_verified_google_email")
+        self.saved_email = self.email_store.start()
+        self.addCleanup(self.email_store.stop)
 
     def tearDown(self):
         self.env.stop()
@@ -124,13 +128,17 @@ class GoogleStagingRoutes(unittest.TestCase):
         with (
             patch("web.google_auth_staging_routes._json_response",
                   side_effect=[{"access_token": "x" * 70},
-                               {"id": SUBJECT, "identities": [{"provider": "google"}]}]) as call,
+                               {"id": SUBJECT, "email": "Guru.Ujian@example.com",
+                                "email_confirmed_at": "2026-11-07T10:00:00Z",
+                                "identities": [{"provider": "google"}]}]) as call,
             patch("web.google_auth_staging_routes.ensure_google_staging_account",
                   return_value=SUBJECT) as create,
         ):
             r = self.client.get("/api/auth/google/callback?state=" + state + "&code=test",
                                 base_url=self.base)
             create.assert_called_once()
+            self.saved_email.assert_called_once()
+            self.assertEqual(self.saved_email.call_args.args[2], "guru.ujian@example.com")
         self.assertEqual(r.status_code, 200)
         self.assertEqual(call.call_count, 2)
         self.assertTrue(r.json["google_verified"])
@@ -161,7 +169,9 @@ class GoogleStagingRoutes(unittest.TestCase):
         with (
             patch("web.google_auth_staging_routes._json_response",
                   side_effect=[{"access_token": "x" * 70},
-                               {"id": SUBJECT, "identities": [{"provider": "google"}]}]),
+                               {"id": SUBJECT, "email": "Guru.Ujian@example.com",
+                                "email_confirmed_at": "2026-11-07T10:00:00Z",
+                                "identities": [{"provider": "google"}]}]),
             patch("web.google_auth_staging_routes.ensure_google_staging_account",
                   side_effect=RuntimeError("staging down")),
         ):
@@ -176,7 +186,9 @@ class GoogleStagingRoutes(unittest.TestCase):
         with (
             patch("web.google_auth_staging_routes._json_response",
                   side_effect=[{"access_token":"x"*70},
-                               {"id":SUBJECT,"identities":[{"provider":"google"}]}]),
+                               {"id": SUBJECT, "email": "Guru.Ujian@example.com",
+                                "email_confirmed_at": "2026-11-07T10:00:00Z",
+                                "identities": [{"provider": "google"}]}]),
             patch("web.google_auth_staging_routes.ensure_google_staging_account",
                   return_value=SUBJECT),
         ):
@@ -193,7 +205,9 @@ class GoogleStagingRoutes(unittest.TestCase):
         with (
             patch("web.google_auth_staging_routes._json_response",
                   side_effect=[{"access_token": "x" * 70},
-                               {"id": SUBJECT, "identities": [{"provider": "google"}]}]),
+                               {"id": SUBJECT, "email": "Guru.Ujian@example.com",
+                                "email_confirmed_at": "2026-11-07T10:00:00Z",
+                                "identities": [{"provider": "google"}]}]),
             patch("web.google_auth_staging_routes.ensure_google_staging_account",
                   return_value=SUBJECT),
         ):
@@ -228,11 +242,12 @@ class GoogleStagingRoutes(unittest.TestCase):
             domain="staging.example.test")
         with patch("web.google_auth_staging_routes.google_staging_account_profile",
                    return_value={"display_name": "Cikgu Ujian",
-                                 "trial_remaining": 10}) as read:
+                                 "trial_remaining": 10, "login_email": "guru.ujian@example.com"}) as read:
             reply = self.client.get("/api/auth/google/profile", base_url=self.base)
         self.assertEqual(reply.status_code, 200)
         self.assertEqual(reply.json["display_name"], "Cikgu Ujian")
         self.assertEqual(reply.json["trial_remaining"], 10)
+        self.assertEqual(reply.json["login_id"], "guru.ujian@example.com")
         self.assertFalse(reply.json["rph_generation_enabled"])
         self.assertFalse(reply.json["real_payments_enabled"])
         self.assertEqual(reply.headers["Cache-Control"], "no-store, private")
@@ -257,6 +272,28 @@ class GoogleStagingRoutes(unittest.TestCase):
         self.assertEqual(fail.status_code, 503)
         self.assertNotIn("backend-down", fail.get_data(as_text=True))
 
+
+    def test_unconfirmed_email_cannot_be_used_as_login_id(self):
+        state, _ = self._start()
+        with patch("web.google_auth_staging_routes._json_response",
+                   side_effect=[{"access_token": "x" * 70},
+                                {"id": SUBJECT, "email": "unverified@example.com",
+                                 "email_confirmed_at": None,
+                                 "identities": [{"provider": "google"}]}]):
+            result = self.client.get("/api/auth/google/callback?state=" + state + "&code=test",
+                                     base_url=self.base)
+        self.assertEqual(result.status_code, 503)
+        self.saved_email.assert_not_called()
+
+    def test_verified_email_normalization_and_spoofing_rejection(self):
+        identity = {"email": "Teacher+One@Example.COM",
+                    "email_confirmed_at": "2026-11-07T10:00:00Z",
+                    "identities": [{"provider": "google"}]}
+        self.assertEqual(verified_google_email(identity), "teacher+one@example.com")
+        with self.assertRaises(ValueError):
+            verified_google_email({**identity, "email": "not-an-email"})
+        with self.assertRaises(ValueError):
+            verified_google_email({**identity, "identities": [{"provider": "email"}]})
 
     def test_wrong_provider_does_not_grant_ticket(self):
         state, _ = self._start()
