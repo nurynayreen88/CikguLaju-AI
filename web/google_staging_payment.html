@@ -38,6 +38,7 @@ async function load(){
  const r=await fetch('/api/web/google/payments',{credentials:'same-origin',cache:'no-store'});
  if(!r.ok){show('Sila log masuk Google atau semak sambungan staging.');return}
  const data=await r.json(), hist=document.getElementById('history');
+ if(data.access?.payment_access_active){show('Bayaran diluluskan pada akaun staging. Akses RPH Google masih dalam penyelarasan.');}
  hist.replaceChildren();
  if(!data.payments.length)hist.textContent='Tiada permohonan lagi.';
  for(const p of data.payments){
@@ -70,7 +71,7 @@ document.getElementById('payment-form').addEventListener('submit',async event=>{
       (data.error||'Belum dapat mengesahkan resit. Semak status sebelum cuba lagi.'));
    if(resp.ok){event.currentTarget.reset();await load()}
  }catch(e){show('Status belum pasti. Muat semula sebelum cuba menghantar lagi.')}
- finally{button.disabled=false}
+ finally{await load().catch(()=>show('Semak status semula sebelum menghantar resit.'))}
 });
 load().catch(()=>show('Status tidak tersedia. Cuba muat semula.'));
 </script></body></html>
