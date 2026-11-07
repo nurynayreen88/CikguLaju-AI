@@ -63,16 +63,19 @@ def read_paid_status(telegram_uid, cfg, *, transport=None, now=None):
                     raise PaidStatusBridgeUnavailable("Invalid production status reply")
                 return raw
 
-        try:
-            raw = read_response(COLD_START_TIMEOUT)
-        except HTTPError as exc:
-            # Render's free Web proxy may reply 502/503 while its WSGI
-            # instance wakes. A single read-only retry is safe; 401/403/404
-            # MUST NOT be retried as they indicate auth/account failure.
-            if exc.code not in (502, 503, 504):
-                raise
-            time.sleep(GATEWAY_RETRY_BACKOFF)
-            raw = read_response(GATEWAY_RETRY_TIMEOUT)
+        # Render's free Web proxy can intermittently return 502 while
+        # starting or cycling an instance. Retry ONLY transient gateway
+        # responses. Never retry a 401/403 (bad credentials) or 404
+        # (account not registered), and never grant rights from a cache.
+        for attempt in range(4):
+            try:
+                raw = read_response(
+                    COLD_START_TIMEOUT if attempt == 0 else GATEWAY_RETRY_TIMEOUT)
+                break
+            except HTTPError as exc:
+                if exc.code not in (502, 503, 504) or attempt == 3:
+                    raise
+                time.sleep(GATEWAY_RETRY_BACKOFF * (attempt + 1))
         payload = json.loads(raw)
         if (not isinstance(payload, dict)
                 or set(payload) != {"source", "telegram_user_id", "registered",
