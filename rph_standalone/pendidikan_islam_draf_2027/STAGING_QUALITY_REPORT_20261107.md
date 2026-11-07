@@ -370,3 +370,16 @@ Sumber Drive `GuruBesar_BukuTeks_Pendidikan_Islam_T3_SK.pdf` (ID `1DNXL1vmN3ERz6
 | Mutu akademik ≥80% diperakui | — | **Belum boleh diperakui** |
 
 Fail audit staging: `pi_t2_dskp_code_presence.py`, `pi_t2_54_direct_source_review.py`, `pi_t3_awalan_book_review.py` dan ujian masing-masing. GitHub Actions menghasilkan lejar JSON/CSV, tidak menyimpan naskhah buku teks atau DSKP. Tiada perubahan ke main, DB, Telegram, Web, pembayaran atau kandungan produksi. **PR #443 kekal DRAFT/HOLD/NO_GO**.
+
+
+### Tambahan Tahun 3 — kod SP pada footer Buku Teks berbanding DSKP sebenar
+
+Pada buku sumber asal Tahun 3 (Drive `GuruBesar_BukuTeks_Pendidikan_Islam_T3_SK.pdf`; SHA-256 telah dicatat di atas), lapisan teks **85 halaman PDF** menghasilkan **83 kod SP unik** daripada penanda halaman buku. Katalog draf **147 Lesson Tahun 3** pula mempunyai **110 Lesson berkod SP** dan **37 Lesson tasmi'/julat ayat tanpa kod tiga aras**. Perbandingan yang mengehadkan tuntutan kepada *kewujudan kod pada buku* menunjukkan:
+
+- **109/110 Lesson berkod** menggunakan kod yang dapat ditemui pada penanda halaman Buku Teks sumber.
+- **1 pengecualian: T3-L146 menggunakan SP `6.4.3`**, yang tidak terdapat pada penanda SP bawah halaman Buku Teks diperiksa (PDF 82–85). Ini **bukan bukti kod rasmi salah**. Semakan visual DSKP Pendidikan Islam Tahun 3, file ID `1tjcWRrfcAGk-Y_OpzeQhO253hunaz9RA`, **PDF halaman 51 / bercetak 39**, **mengesahkan SP 6.4.3 memang tertera** sebagai piawaian menerangkan sunnah Rasulullah daripada aspek perkataan dan perbuatan.
+- Bagi **T3-L146**, rujukan kepada Buku Teks Tahun 3 halaman tercetak **142–146** dimasukkan di baris bahan staging; medan asal dilindungi dalam `staging_source_sp6433_review`. Pentaksiran khusus masih HOLD.
+- Satu lagi isu editor yang ditemukan pada Lesson 146: **objektif kedua menggunakan kata kerja menyenaraikan** sedangkan SP **6.4.4 menyebut merumus**. Ini ditanda sebagai semakan keselarasan aras objektif, **tidak** diperbetulkan secara anggaran.
+- Kedua-dua kumpulan tasmi' Tahun 2 (**30**) dan Tahun 3 (**37**) tidak diberikan kod SP tiga aras buatan. Fail `pi_t3_book_footer_code_audit.py` bersama ujian regresi menghasilkan lejar 147 Lesson secara review-only.
+
+**Sempadan bukti:** penanda kod pada Buku Teks bukan DSKP teks penuh; bukti bahawa 6.4.3 wujud dalam DSKP adalah pengesahan halaman tunggal, bukan semakan semua kod Tahun 3. **0** Lesson diluluskan oleh pakar, **0** bahan baharu boleh diterbitkan, PR kekal **DRAFT / HOLD / NO_GO**.
