@@ -57,6 +57,8 @@ def audit(root=ROOT):
     assert len(fields["aktiviti_utama"].splitlines())==3
     assert "1. " in fields["aktiviti_utama"] and "2. " in fields["aktiviti_utama"]
     assert "3. " in fields["aktiviti_utama"]
+    assert "سواݢ ستهلا" not in fields["aktiviti_utama"]
+    assert "ممبتولكن سبوتن دان فهمن موريد" in fields["aktiviti_utama"]
     assert "ڤبد اينديويدو:" in fields["pentaksiran"]
     assert "تتامو" in fields["pentaksiran"]
     assert "تتامو" in fields["objektif"]
