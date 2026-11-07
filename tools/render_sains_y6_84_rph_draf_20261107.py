@@ -30,12 +30,12 @@ DSKP_SOURCE = "https://fliphtml5.com/mcbrg/xizk/DSKP_KSSR_Semakan_2017_Sains_Tah
 BOOK_SOURCE = "https://drive.google.com/file/d/14yto0qTq87FIeo6UtJuDef8D2xGwiPLd/view"
 TEXTBOOK_STATUS = "LARGE_SCAN_VISUAL_TEXTBOOK_PAGE_UNVERIFIED"
 
-def get_y5_records():
+def get_y6_records():
     rows, summary=analyze()
-    selected=[r for r in rows if r["tahun"]==5]
+    selected=[r for r in rows if r["tahun"]==6]
     if len(selected)!=84 or len(BANK)!=84:
         raise ValueError("Year6 source count and activity bank no longer agree")
-    if [int(r["pdp_number"]) for r in selected]!=list(range(1,84)):
+    if [int(r["pdp_number"]) for r in selected]!=list(range(1,85)):
         raise ValueError("Year6 source sequence changed")
     if {r["sp"] for r in selected}!=set(BANK):
         missing={r["sp"] for r in selected}-set(BANK)
@@ -51,7 +51,7 @@ def get_y5_records():
             **row, **BANK[row["sp"]],
             "kps":kps_for(row["sp"]),
             "subject":"Sains",
-            "year":5,
+            "year":6,
             "curriculum_quality_percent":None,
             "textbook_pages":None,
             "sp_semantic_review":"2021_DSKP_TEXT_MIRROR__NOT_TEACHER_APPROVED",
@@ -211,7 +211,7 @@ def main():
     import shutil
     if OUT.exists():shutil.rmtree(OUT)
     OUT.mkdir(parents=True)
-    records=get_y5_records()
+    records=get_y6_records()
     manifest=[]
     for entry in records:
         n=int(entry["pdp_number"])
