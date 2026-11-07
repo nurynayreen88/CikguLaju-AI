@@ -1,0 +1,1540 @@
+{
+  "audit_date": "2026-11-07",
+  "scope": "SAINS_YEAR2_YEAR3_STAGING_ONLY",
+  "summary": {
+    "year2": 51,
+    "year3": 45,
+    "total": 96,
+    "printed_sp_code_match": 94,
+    "related_different_sp": 2,
+    "academic_approved": 0
+  },
+  "no_db_update": true,
+  "no_live_web_telegram_update": true,
+  "no_approval_or_quality_grade": true,
+  "read_provenance": "Full scanned original workbook pages and SP labels at page footers examined. Printed exercise code match (94) vs related code mismatch (2). Does not certify exercise pedagogic appropriateness for lesson's actual content; teacher approval remains pending.",
+  "pdf_page_index_is_one_based": true,
+  "sources": {
+    "2": {
+      "title": "Buku Aktiviti Sains Tahun 2 Sekolah Kebangsaan KSSR Semakan 2017",
+      "url": "https://drive.google.com/file/d/1j0qoRWHcaAzHVgbb6uua7k_3i2-qVm0v/view",
+      "pdf_pages": 89,
+      "printed_page_to_pdf_offset": 4,
+      "scanned_toc_pdf_pages": [
+        3,
+        4
+      ],
+      "paper_toc_pages": [
+        "iii",
+        "iv"
+      ]
+    },
+    "3": {
+      "title": "Buku Aktiviti Sains Tahun 3 Sekolah Kebangsaan KSSR Semakan 2017",
+      "url": "https://drive.google.com/file/d/1kVL3PT-VjQiITqmfNXlURQA8gLYvCrI5/view",
+      "pdf_pages": 98,
+      "printed_page_to_pdf_offset": 5,
+      "scanned_toc_pdf_pages": [
+        4,
+        5
+      ],
+      "paper_toc_pages": [
+        "iii",
+        "iv"
+      ]
+    }
+  },
+  "items": {
+    "2": [
+      {
+        "pdp_code": "SCI-Y2-PDP-001",
+        "year": 2,
+        "sp": "3.1.1",
+        "workbook_printed_page": 13,
+        "workbook_pdf_page": 17,
+        "activity_title": "Pembiakan Manusia",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "3.1.1"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-002",
+        "year": 2,
+        "sp": "3.1.2",
+        "workbook_printed_page": 14,
+        "workbook_pdf_page": 18,
+        "activity_title": "Tumbesaran Kita",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "3.1.2"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-003",
+        "year": 2,
+        "sp": "3.1.3",
+        "workbook_printed_page": 16,
+        "workbook_pdf_page": 20,
+        "activity_title": "Mengukur Berat dan Tinggi serta Memerhatikan Saiz Kasut Murid",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "Padankan latihan tumbesaran, bukan ciri diwarisi; SP3.1.3 sumber asal bermasalah.",
+        "previous_toc_candidate": {
+          "book_page": 17,
+          "exercise_title": "Mari Banding Beza"
+        },
+        "correction": "PAGE_AND_TITLE_CONFIRMED_FROM_PRINTED_EXERCISE_NOT_TOC_ONLY",
+        "workbook_printed_sp_codes": [
+          "3.1.3"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-004",
+        "year": 2,
+        "sp": "4.1.1",
+        "workbook_printed_page": 21,
+        "workbook_pdf_page": 25,
+        "activity_title": "Cara Pembiakan Haiwan",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "4.1.1"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-005",
+        "year": 2,
+        "sp": "4.1.2",
+        "workbook_printed_page": 22,
+        "workbook_pdf_page": 26,
+        "activity_title": "Bertelur dan Melahirkan Anak",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "4.1.2"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-006",
+        "year": 2,
+        "sp": "4.1.3",
+        "workbook_printed_page": 23,
+        "workbook_pdf_page": 27,
+        "activity_title": "Sedikit dan Banyak",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "4.1.3"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-007",
+        "year": 2,
+        "sp": "4.1.4",
+        "workbook_printed_page": 24,
+        "workbook_pdf_page": 28,
+        "activity_title": "Bilangan Anak Haiwan",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "4.1.4"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-008",
+        "year": 2,
+        "sp": "4.1.5",
+        "workbook_printed_page": 25,
+        "workbook_pdf_page": 29,
+        "activity_title": "Kenali Kitar Hidup",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "4.1.5"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-009",
+        "year": 2,
+        "sp": "4.1.6",
+        "workbook_printed_page": 28,
+        "workbook_pdf_page": 32,
+        "activity_title": "Yang Manakah Ibu Saya?",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "4.1.6"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-010",
+        "year": 2,
+        "sp": "4.1.7",
+        "workbook_printed_page": 27,
+        "workbook_pdf_page": 31,
+        "activity_title": "Ceritakan tentang Kitar Hidup Rama-rama",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "RELATED_DIFFERENT_SP__DO_NOT_ASSIGN_AS_SP_PBD",
+        "safety_or_sp_exception": "Printed p27 exercise is labelled 4.1.5, not 4.1.7; only related butterfly life-cycle activity.",
+        "workbook_printed_sp_codes": [
+          "4.1.5"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-011",
+        "year": 2,
+        "sp": "5.1.1",
+        "workbook_printed_page": 29,
+        "workbook_pdf_page": 33,
+        "activity_title": "Tumbuh-tumbuhan dan Kepentingannya",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "5.1.1"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-012",
+        "year": 2,
+        "sp": "5.1.2",
+        "workbook_printed_page": 30,
+        "workbook_pdf_page": 34,
+        "activity_title": "Keperluan Asas untuk Biji Benih Bercambah",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "5.1.2"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-013",
+        "year": 2,
+        "sp": "5.1.3",
+        "workbook_printed_page": 32,
+        "workbook_pdf_page": 36,
+        "activity_title": "Rekodkan Tumbesaran Pokok",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "5.1.3"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-014",
+        "year": 2,
+        "sp": "5.1.4",
+        "workbook_printed_page": 33,
+        "workbook_pdf_page": 37,
+        "activity_title": "Peringkat Tumbesaran Tumbuh-tumbuhan",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "5.1.4"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-015",
+        "year": 2,
+        "sp": "5.1.5",
+        "workbook_printed_page": 35,
+        "workbook_pdf_page": 39,
+        "activity_title": "Memerhatikan Keperluan Asas Tumbuh-tumbuhan",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "5.1.5"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-016",
+        "year": 2,
+        "sp": "5.1.6",
+        "workbook_printed_page": 36,
+        "workbook_pdf_page": 40,
+        "activity_title": "Pokok Timun Saya",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "previous_toc_candidate": {
+          "book_page": 34,
+          "exercise_title": "Rekodkan Tumbesaran Pokok Kacang Bendi"
+        },
+        "correction": "PAGE_AND_TITLE_CONFIRMED_FROM_PRINTED_EXERCISE_NOT_TOC_ONLY",
+        "workbook_printed_sp_codes": [
+          "5.1.6"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-017",
+        "year": 2,
+        "sp": "6.1.1",
+        "workbook_printed_page": 37,
+        "workbook_pdf_page": 41,
+        "activity_title": "Kenali Sumber Cahaya",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "6.1.1"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-018",
+        "year": 2,
+        "sp": "6.1.2",
+        "workbook_printed_page": 40,
+        "workbook_pdf_page": 44,
+        "activity_title": "Terang dan Gelap",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "6.1.2"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-019",
+        "year": 2,
+        "sp": "6.1.3",
+        "workbook_printed_page": 41,
+        "workbook_pdf_page": 45,
+        "activity_title": "Menggunakan Objek untuk Membentuk Bayang-bayang",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "6.1.3"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-020",
+        "year": 2,
+        "sp": "6.1.4",
+        "workbook_printed_page": 42,
+        "workbook_pdf_page": 46,
+        "activity_title": "Memerhatikan Kejelasan Bayang-bayang",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "6.1.4"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-021",
+        "year": 2,
+        "sp": "6.1.5",
+        "workbook_printed_page": 43,
+        "workbook_pdf_page": 47,
+        "activity_title": "Mereka Cipta Permainan Bayang-bayang",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "6.1.5"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-022",
+        "year": 2,
+        "sp": "6.1.6",
+        "workbook_printed_page": 44,
+        "workbook_pdf_page": 48,
+        "activity_title": "Mencipta Bayang-bayang Tangan",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "RELATED_DIFFERENT_SP__DO_NOT_ASSIGN_AS_SP_PBD",
+        "safety_or_sp_exception": "Printed p44 hands-shadow activity is labelled 6.1.5, not 6.1.6; only related enrichment.",
+        "workbook_printed_sp_codes": [
+          "6.1.5"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-023",
+        "year": 2,
+        "sp": "7.1.1",
+        "workbook_printed_page": 45,
+        "workbook_pdf_page": 49,
+        "activity_title": "Mencari Komponen Tersembunyi",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "7.1.1"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-024",
+        "year": 2,
+        "sp": "7.1.2",
+        "workbook_printed_page": 47,
+        "workbook_pdf_page": 51,
+        "activity_title": "Apakah Fungsi Saya?",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "7.1.2"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-025",
+        "year": 2,
+        "sp": "7.1.3",
+        "workbook_printed_page": 48,
+        "workbook_pdf_page": 52,
+        "activity_title": "Membina Litar Lengkap",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "7.1.3"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-026",
+        "year": 2,
+        "sp": "7.1.4",
+        "workbook_printed_page": 49,
+        "workbook_pdf_page": 53,
+        "activity_title": "Meramalkan Punca Mentol Tidak Menyala",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "7.1.4"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-027",
+        "year": 2,
+        "sp": "7.1.5",
+        "workbook_printed_page": 51,
+        "workbook_pdf_page": 55,
+        "activity_title": "Menentukan Objek Konduktor dan Penebat",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "7.1.5"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-028",
+        "year": 2,
+        "sp": "7.1.6",
+        "workbook_printed_page": 52,
+        "workbook_pdf_page": 56,
+        "activity_title": "Konduktor dan Penebat",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "7.1.6"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-029",
+        "year": 2,
+        "sp": "7.1.7",
+        "workbook_printed_page": 54,
+        "workbook_pdf_page": 58,
+        "activity_title": "Memasang Permainan Buzzer",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "previous_toc_candidate": {
+          "book_page": 53,
+          "exercise_title": "Konduktor atau Penebat?"
+        },
+        "correction": "PAGE_AND_TITLE_CONFIRMED_FROM_PRINTED_EXERCISE_NOT_TOC_ONLY",
+        "workbook_printed_sp_codes": [
+          "7.1.7"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-030",
+        "year": 2,
+        "sp": "8.1.1",
+        "workbook_printed_page": 55,
+        "workbook_pdf_page": 59,
+        "activity_title": "Mari Mengasing",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "8.1.1"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-031",
+        "year": 2,
+        "sp": "8.1.2",
+        "workbook_printed_page": 56,
+        "workbook_pdf_page": 60,
+        "activity_title": "Asingkan Begini",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "8.1.2"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-032",
+        "year": 2,
+        "sp": "8.1.3",
+        "workbook_printed_page": 58,
+        "workbook_pdf_page": 62,
+        "activity_title": "Memerhatikan Kelarutan Bahan",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "8.1.3"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-033",
+        "year": 2,
+        "sp": "8.1.4",
+        "workbook_printed_page": 62,
+        "workbook_pdf_page": 66,
+        "activity_title": "Yang Manakah Cepat Larut?",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "8.1.4"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-034",
+        "year": 2,
+        "sp": "8.1.5",
+        "workbook_printed_page": 62,
+        "workbook_pdf_page": 66,
+        "activity_title": "Yang Manakah Cepat Larut?",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "previous_toc_candidate": {
+          "book_page": 61,
+          "exercise_title": "Memerhatikan Kelarutan Garam yang Diaduk"
+        },
+        "correction": "PAGE_AND_TITLE_CONFIRMED_FROM_PRINTED_EXERCISE_NOT_TOC_ONLY",
+        "workbook_printed_sp_codes": [
+          "8.1.5"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-035",
+        "year": 2,
+        "sp": "9.1.1",
+        "workbook_printed_page": 63,
+        "workbook_pdf_page": 67,
+        "activity_title": "Sumber Air Semula Jadi",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "9.1.1"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-036",
+        "year": 2,
+        "sp": "9.1.2",
+        "workbook_printed_page": 65,
+        "workbook_pdf_page": 69,
+        "activity_title": "Memerhatikan Arah Air Mengalir",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "9.1.2"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-037",
+        "year": 2,
+        "sp": "9.1.3",
+        "workbook_printed_page": 66,
+        "workbook_pdf_page": 70,
+        "activity_title": "Arah Aliran Air Semula Jadi",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "9.1.3"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-038",
+        "year": 2,
+        "sp": "9.1.4",
+        "workbook_printed_page": 69,
+        "workbook_pdf_page": 73,
+        "activity_title": "Urutan Kitar Air Semula Jadi",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "9.1.4"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-039",
+        "year": 2,
+        "sp": "9.1.5",
+        "workbook_printed_page": 68,
+        "workbook_pdf_page": 72,
+        "activity_title": "Kitar Air Semula Jadi",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "9.1.5"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-040",
+        "year": 2,
+        "sp": "9.2.1",
+        "workbook_printed_page": 70,
+        "workbook_pdf_page": 74,
+        "activity_title": "Ada Udara?",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "9.2.1"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-041",
+        "year": 2,
+        "sp": "9.2.2",
+        "workbook_printed_page": 71,
+        "workbook_pdf_page": 75,
+        "activity_title": "Kandungan Udara",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "9.2.2"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-042",
+        "year": 2,
+        "sp": "9.2.3",
+        "workbook_printed_page": 73,
+        "workbook_pdf_page": 77,
+        "activity_title": "Kesan Angin",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "previous_toc_candidate": {
+          "book_page": 74,
+          "exercise_title": "Udara Bergerak"
+        },
+        "correction": "PAGE_AND_TITLE_CONFIRMED_FROM_PRINTED_EXERCISE_NOT_TOC_ONLY",
+        "workbook_printed_sp_codes": [
+          "9.2.3"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-043",
+        "year": 2,
+        "sp": "9.2.4",
+        "workbook_printed_page": 75,
+        "workbook_pdf_page": 79,
+        "activity_title": "Kesan Udara yang Bergerak",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "9.2.4"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-044",
+        "year": 2,
+        "sp": "9.2.5",
+        "workbook_printed_page": 72,
+        "workbook_pdf_page": 76,
+        "activity_title": "Mencipta Model Kapal Layar",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "9.2.5"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-045",
+        "year": 2,
+        "sp": "9.2.6",
+        "workbook_printed_page": 72,
+        "workbook_pdf_page": 76,
+        "activity_title": "Mencipta Model Kapal Layar",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "previous_toc_candidate": {
+          "book_page": 73,
+          "exercise_title": "Kesan Angin"
+        },
+        "correction": "PAGE_AND_TITLE_CONFIRMED_FROM_PRINTED_EXERCISE_NOT_TOC_ONLY",
+        "workbook_printed_sp_codes": [
+          "9.2.6"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-046",
+        "year": 2,
+        "sp": "10.1.1",
+        "workbook_printed_page": 77,
+        "workbook_pdf_page": 81,
+        "activity_title": "Model Pilihan Saya",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "10.1.1"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-047",
+        "year": 2,
+        "sp": "10.1.2",
+        "workbook_printed_page": 78,
+        "workbook_pdf_page": 82,
+        "activity_title": "Komponen dan Manual",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "10.1.2"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-048",
+        "year": 2,
+        "sp": "10.1.3",
+        "workbook_printed_page": 80,
+        "workbook_pdf_page": 84,
+        "activity_title": "Memasang Model Binaan Berpandukan Manual",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "10.1.3"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-049",
+        "year": 2,
+        "sp": "10.1.4",
+        "workbook_printed_page": 81,
+        "workbook_pdf_page": 85,
+        "activity_title": "Model Binaan Baharu",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "10.1.4"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-050",
+        "year": 2,
+        "sp": "10.1.5",
+        "workbook_printed_page": 82,
+        "workbook_pdf_page": 86,
+        "activity_title": "Buka dan Simpan",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "10.1.5"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y2-PDP-051",
+        "year": 2,
+        "sp": "10.1.6",
+        "workbook_printed_page": 84,
+        "workbook_pdf_page": 88,
+        "activity_title": "Model Binaan Saya",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "SP10.1.6 DSKP mengandungi istilah campuran; aktiviti model binaan masih HOLD.",
+        "workbook_printed_sp_codes": [
+          "10.1.6"
+        ],
+        "academic_approval": false
+      }
+    ],
+    "3": [
+      {
+        "pdp_code": "SCI-Y3-PDP-001",
+        "year": 3,
+        "sp": "3.1.1",
+        "workbook_printed_page": 17,
+        "workbook_pdf_page": 22,
+        "activity_title": "Lihatlah Gigi Saya",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "3.1.1"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-002",
+        "year": 3,
+        "sp": "3.1.2",
+        "workbook_printed_page": 20,
+        "workbook_pdf_page": 25,
+        "activity_title": "Keratan Rentas Gigi",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "3.1.2"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-003",
+        "year": 3,
+        "sp": "3.1.3",
+        "workbook_printed_page": 21,
+        "workbook_pdf_page": 26,
+        "activity_title": "Set Gigi Manusia",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "3.1.3"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-004",
+        "year": 3,
+        "sp": "3.1.4",
+        "workbook_printed_page": 23,
+        "workbook_pdf_page": 28,
+        "activity_title": "Amalan Penjagaan Kesihatan Gigi",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "3.1.4"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-005",
+        "year": 3,
+        "sp": "3.1.5",
+        "workbook_printed_page": 25,
+        "workbook_pdf_page": 30,
+        "activity_title": "Amalan Penjagaan Gigi",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "3.1.5"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-006",
+        "year": 3,
+        "sp": "3.2.1",
+        "workbook_printed_page": 26,
+        "workbook_pdf_page": 31,
+        "activity_title": "Kelas Makanan",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "PdP ini merangkumi tambahan SP3.2.5 di staging; latihan buku aktiviti ini terutama menyokong SP induk 3.2.1.",
+        "workbook_printed_sp_codes": [
+          "3.2.1"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-007",
+        "year": 3,
+        "sp": "3.2.2",
+        "workbook_printed_page": 28,
+        "workbook_pdf_page": 33,
+        "activity_title": "Keperluan Makanan dalam Hidup",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "3.2.2"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-008",
+        "year": 3,
+        "sp": "3.2.3",
+        "workbook_printed_page": 30,
+        "workbook_pdf_page": 35,
+        "activity_title": "Menu Makanan Pilihan Saya",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "previous_toc_candidate": {
+          "book_page": 29,
+          "exercise_title": "Sedapnya Nasi Lemak"
+        },
+        "correction": "PAGE_AND_TITLE_CONFIRMED_FROM_PRINTED_EXERCISE_NOT_TOC_ONLY",
+        "workbook_printed_sp_codes": [
+          "3.2.3"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-009",
+        "year": 3,
+        "sp": "3.2.4",
+        "workbook_printed_page": 31,
+        "workbook_pdf_page": 36,
+        "activity_title": "Kesan Pengambilan Makanan Tidak Seimbang",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "3.2.4"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-010",
+        "year": 3,
+        "sp": "3.3.1",
+        "workbook_printed_page": 33,
+        "workbook_pdf_page": 38,
+        "activity_title": "Pencernaan",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "PdP termasuk SP3.3.3 tambahan; padanan latihan ini untuk proses pencernaan induk.",
+        "workbook_printed_sp_codes": [
+          "3.3.1"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-011",
+        "year": 3,
+        "sp": "3.3.2",
+        "workbook_printed_page": 34,
+        "workbook_pdf_page": 39,
+        "activity_title": "Perjalanan Makanan",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "PdP termasuk SP3.3.4 tambahan; padanan latihan ini untuk laluan makanan induk.",
+        "workbook_printed_sp_codes": [
+          "3.3.2"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-012",
+        "year": 3,
+        "sp": "4.1.1",
+        "workbook_printed_page": 37,
+        "workbook_pdf_page": 42,
+        "activity_title": "Pengelasan Haiwan",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "4.1.1"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-013",
+        "year": 3,
+        "sp": "4.1.2",
+        "workbook_printed_page": 39,
+        "workbook_pdf_page": 44,
+        "activity_title": "Tabiat Pemakanan Haiwan",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "4.1.2"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-014",
+        "year": 3,
+        "sp": "4.1.3",
+        "workbook_printed_page": 41,
+        "workbook_pdf_page": 46,
+        "activity_title": "Kenali Saya",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "4.1.3"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-015",
+        "year": 3,
+        "sp": "4.1.4",
+        "workbook_printed_page": 42,
+        "workbook_pdf_page": 47,
+        "activity_title": "Kenali Gigi Haiwan",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "4.1.4"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-016",
+        "year": 3,
+        "sp": "4.1.5",
+        "workbook_printed_page": 44,
+        "workbook_pdf_page": 49,
+        "activity_title": "Makanan Saya Berubah",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "4.1.5"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-017",
+        "year": 3,
+        "sp": "5.1.1",
+        "workbook_printed_page": 45,
+        "workbook_pdf_page": 50,
+        "activity_title": "Cara Pembiakan Tumbuh-tumbuhan",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "5.1.1"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-018",
+        "year": 3,
+        "sp": "5.1.2",
+        "workbook_printed_page": 47,
+        "workbook_pdf_page": 52,
+        "activity_title": "Kepentingan Pembiakan Tumbuh-tumbuhan",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "5.1.2"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-019",
+        "year": 3,
+        "sp": "5.1.3",
+        "workbook_printed_page": 50,
+        "workbook_pdf_page": 55,
+        "activity_title": "Satu Pokok Pelbagai Cara Pembiakan",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "5.1.3"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-020",
+        "year": 3,
+        "sp": "5.1.4",
+        "workbook_printed_page": 52,
+        "workbook_pdf_page": 57,
+        "activity_title": "Teknologi dalam Pertanian",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "5.1.4"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-021",
+        "year": 3,
+        "sp": "6.1.1",
+        "workbook_printed_page": 53,
+        "workbook_pdf_page": 58,
+        "activity_title": "Unit Ukuran Luas",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "6.1.1"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-022",
+        "year": 3,
+        "sp": "6.1.2",
+        "workbook_printed_page": 55,
+        "workbook_pdf_page": 60,
+        "activity_title": "Mengukur Luas Permukaan Sekata",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "6.1.2"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-023",
+        "year": 3,
+        "sp": "6.1.3",
+        "workbook_printed_page": 56,
+        "workbook_pdf_page": 61,
+        "activity_title": "Menganggar Luas Permukaan Tidak Sekata",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "6.1.3"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-024",
+        "year": 3,
+        "sp": "6.1.4",
+        "workbook_printed_page": 57,
+        "workbook_pdf_page": 62,
+        "activity_title": "Mengukur Isi Padu Kotak Lohong",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "6.1.4"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-025",
+        "year": 3,
+        "sp": "6.1.5",
+        "workbook_printed_page": 59,
+        "workbook_pdf_page": 64,
+        "activity_title": "Mengukur Isi Padu Cecair",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "6.1.5"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-026",
+        "year": 3,
+        "sp": "6.1.6",
+        "workbook_printed_page": 61,
+        "workbook_pdf_page": 66,
+        "activity_title": "Mengukur Isi Padu Pepejal Tidak Sekata",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "6.1.6"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-027",
+        "year": 3,
+        "sp": "6.1.7",
+        "workbook_printed_page": 59,
+        "workbook_pdf_page": 64,
+        "activity_title": "Mengukur Isi Padu Cecair",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "previous_toc_candidate": {
+          "book_page": 62,
+          "exercise_title": "Sesaran Air"
+        },
+        "correction": "PAGE_AND_TITLE_CONFIRMED_FROM_PRINTED_EXERCISE_NOT_TOC_ONLY",
+        "workbook_printed_sp_codes": [
+          "6.1.7"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-028",
+        "year": 3,
+        "sp": "7.1.1",
+        "workbook_printed_page": 63,
+        "workbook_pdf_page": 68,
+        "activity_title": "Timbul dan Tenggelam",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "7.1.1"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-029",
+        "year": 3,
+        "sp": "7.1.2",
+        "workbook_printed_page": 64,
+        "workbook_pdf_page": 69,
+        "activity_title": "Lebih Tumpat, Kurang Tumpat",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "7.1.2"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-030",
+        "year": 3,
+        "sp": "7.1.3",
+        "workbook_printed_page": 68,
+        "workbook_pdf_page": 73,
+        "activity_title": "Air Menjadi Lebih Tumpat",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "7.1.3"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-031",
+        "year": 3,
+        "sp": "7.1.4",
+        "workbook_printed_page": 67,
+        "workbook_pdf_page": 72,
+        "activity_title": "Aplikasi Ketumpatan",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "7.1.4"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-032",
+        "year": 3,
+        "sp": "8.1.1",
+        "workbook_printed_page": 69,
+        "workbook_pdf_page": 74,
+        "activity_title": "Kenal Pasti Kertas Litmus",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "8.1.1"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-033",
+        "year": 3,
+        "sp": "8.1.2",
+        "workbook_printed_page": 72,
+        "workbook_pdf_page": 77,
+        "activity_title": "Sifat Bahan Berasid",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "8.1.2"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-034",
+        "year": 3,
+        "sp": "8.1.3",
+        "workbook_printed_page": 75,
+        "workbook_pdf_page": 80,
+        "activity_title": "Kaedah Lain Menguji Sifat Asid dan Alkali",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "8.1.3"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-035",
+        "year": 3,
+        "sp": "8.1.4",
+        "workbook_printed_page": 76,
+        "workbook_pdf_page": 81,
+        "activity_title": "Kegunaan Bahan Berasid dan Beralkali dalam Kehidupan",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "8.1.4"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-036",
+        "year": 3,
+        "sp": "9.1.1",
+        "workbook_printed_page": 77,
+        "workbook_pdf_page": 82,
+        "activity_title": "Ahli Sistem Suria",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "9.1.1"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-037",
+        "year": 3,
+        "sp": "9.1.2",
+        "workbook_printed_page": 80,
+        "workbook_pdf_page": 85,
+        "activity_title": "Suhu Planet",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "9.1.2"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-038",
+        "year": 3,
+        "sp": "9.1.3",
+        "workbook_printed_page": 82,
+        "workbook_pdf_page": 87,
+        "activity_title": "Membina Model Planet Beredar Mengelilingi Matahari",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "9.1.3"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-039",
+        "year": 3,
+        "sp": "9.1.4",
+        "workbook_printed_page": 83,
+        "workbook_pdf_page": 88,
+        "activity_title": "Masa Peredaran Planet",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "9.1.4"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-040",
+        "year": 3,
+        "sp": "9.1.5",
+        "workbook_printed_page": 84,
+        "workbook_pdf_page": 89,
+        "activity_title": "Sistem Suria Kita",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "9.1.5"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-041",
+        "year": 3,
+        "sp": "10.1.1",
+        "workbook_printed_page": 85,
+        "workbook_pdf_page": 90,
+        "activity_title": "Kenali Takal",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "10.1.1"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-042",
+        "year": 3,
+        "sp": "10.1.2",
+        "workbook_printed_page": 86,
+        "workbook_pdf_page": 91,
+        "activity_title": "Fungsi Takal Tetap",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "10.1.2"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-043",
+        "year": 3,
+        "sp": "10.1.3",
+        "workbook_printed_page": 87,
+        "workbook_pdf_page": 92,
+        "activity_title": "Penggunaan Takal",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "10.1.3"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-044",
+        "year": 3,
+        "sp": "10.1.4",
+        "workbook_printed_page": 90,
+        "workbook_pdf_page": 95,
+        "activity_title": "Model Takal Saya",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "10.1.4"
+        ],
+        "academic_approval": false
+      },
+      {
+        "pdp_code": "SCI-Y3-PDP-045",
+        "year": 3,
+        "sp": "10.1.5",
+        "workbook_printed_page": 92,
+        "workbook_pdf_page": 97,
+        "activity_title": "Model Kren Saya",
+        "source_status": "FULL_PRINTED_EXERCISE_PAGE_REVIEWED__TEACHER_SIGNOFF_PENDING",
+        "matching_status": "PRINTED_EXERCISE_SP_CODE_MATCH__ACADEMIC_SIGNOFF_PENDING",
+        "safety_or_sp_exception": "",
+        "workbook_printed_sp_codes": [
+          "10.1.5"
+        ],
+        "academic_approval": false
+      }
+    ]
+  },
+  "audit_history": [
+    {
+      "date": "2026-11-07",
+      "reason": "Examined full exercise pages, not only table of contents; found printed-SP mismatches and remapped strictly by printed standard codes. Some BA SP remain unmatched.",
+      "status": "STAGING_ACADEMIC_HOLD"
+    }
+  ]
+}
