@@ -56,6 +56,31 @@ def _year3_ledgers():
         raise ValueError("Sains Year3 historical candidate ledgers altered")
     return {a["pdp_code"]:a for a in fixes["changes"]},{a["pdp_code"]:a for a in refs["items"]}
 
+def _missing_35_from_official_dskp():
+    """35 Year2/3 printed SP statements directly from KPM PDF (not DB)."""
+    p=ROOT/"rpt_2027/sains/dskp_sains_y2_y3_35_missing_sp_text_20261107_DRAF.json"
+    src=json.loads(p.read_text("utf-8"))
+    if src.get("status")!="STAGING_SOURCE_TEXT_ONLY_NOT_RELEASE_APPROVAL":
+        raise ValueError("Unexpected Science official crosswalk release gate")
+    records=src.get("records")
+    if not isinstance(records,list) or len(records)!=35:
+        raise ValueError("Sains official missing 35 source extraction incomplete")
+    mapping={}
+    for item in records:
+        k=(item["year"],item["sp_code"])
+        if k in mapping or item["year"] not in (2,3):
+            raise ValueError("Sains duplicated or wrong-year DSKP crosswalk")
+        if not re.fullmatch(r"\\d{1,2}\\.\\d{1,2}\\.\\d{1,2}",item["sp_code"]):
+            raise ValueError("Sains official SP code malformed")
+        if not item.get("sp_text") or not (10<len(item["sp_text"])<300):
+            raise ValueError("Sains official SP text missing")
+        if not isinstance(item.get("pdf_page"),int) or not 40<=item["pdf_page"]<=85:
+            raise ValueError("Sains official SP PDF page provenance missing")
+        mapping[k]=item
+    if sum(y==2 for y,code in mapping)!=20 or sum(y==3 for y,code in mapping)!=15:
+        raise ValueError("Sains year breakdown of source crosswalk is wrong")
+    return mapping
+
 def _proposed_week_slots(master):
     # NO fiction of exact lesson dates or teacher timetable. Skip first
     # transition week, the all-state disruption week M06, and M44 closing.
@@ -69,6 +94,8 @@ def _proposed_week_slots(master):
 def source_records():
     master=load_calendar_weeks()
     fix,book=_year3_ledgers()
+    dskp_missing=_missing_35_from_official_dskp()
+    seen_dskp_missing=set()
     years={}
     with TemporaryDirectory(prefix="cikgulaju_sains_rpt_ro_") as tmp:
         base=Path(tmp)
@@ -106,21 +133,34 @@ def source_records():
                 if not sk or not pdp_code:
                     raise ValueError("Source Sains SK/PdP empty")
                 verified=standards[year].get(sp)
-                # NEVER infer an SP text from a title if the matched authoritative
-                # standard is missing. Placeholder is visibly non-official.
+                extract=dskp_missing.get((year,sp))
+                if verified and extract:
+                    raise ValueError("Sains official DSKP supplemental text overlaps verified v26 row")
                 if verified and verified["sk"]!=sk:
                     raise ValueError(f"Year{year} {pdp_code}: DSKP SK conflict {sk}/{verified['sk']}")
                 if verified:
                     sk_display=sk+" — "+verified["sk_text"]
                     sp_display=sp+" — "+verified["sp_text"]
+                    curriculum_provenance="V26_VERIFIED_DSKP"
+                elif extract:
+                    # Derive the SK statement from another verified SP sharing
+                    # that same SK in *the same year*, not from lesson titles.
+                    matches={v["sk_text"] for v in standards[year].values() if v["sk"]==sk}
+                    if len(matches)!=1:
+                        raise ValueError(f"Sains Y{year} {sp}: verified SK statement unavailable")
+                    sk_display=sk+" — "+matches.pop()
+                    sp_display=sp+" — "+extract["sp_text"]
+                    curriculum_provenance="KPM_DSKP_ORIGINAL_PDF_TEXT_SP_COLUMN"
+                    seen_dskp_missing.add((year,sp))
                 else:
-                    sk_display=sk+" — Pernyataan DSKP belum dipadankan ke SP asal"
-                    sp_display=sp+" — Kod sumber tanpa pernyataan penuh DSKP"
+                    raise ValueError(f"Sains Y{year} {sp}: no official DSKP statement for source PdP")
                 unit=_normalize(raw.get("unit_title"))
                 focus=_normalize(raw.get("pdp_title"))
                 if not unit or not focus:
                     raise ValueError(f"Year{year} {pdp_code}: original PdP title/unit blank")
                 note=f"{pdp_code} | v25.82: {_normalize(raw.get('verification_status'))}. {HOLD}"
+                if extract:
+                    note+=f" SP KPM DSKP asli PDF hlm {extract['pdf_page']} (teks lajur SP)."
                 if year==3:
                     if pdp_code not in book:
                         raise ValueError("Year3 page ledger missing candidate PdP")
@@ -145,13 +185,16 @@ def source_records():
                     sk_display=sk_display,sp_display=sp_display,
                     note=note[:700],week=week,
                     a_start=a[0],a_end=a[1],b_start=b[0],b_end=b[1],
-                    curriculum_text_matched=bool(verified),
+                    curriculum_text_matched=True,
+                    curriculum_provenance=curriculum_provenance,
                     source_status=_normalize(raw.get("verification_status")),
                     raw_pdp_title=_normalize(raw.get("pdp_title")),
                     week_allocation="PROPOSED_2027_WEEK_NOT_TIMETABLE"
                 ))
             validate_rows("sains",year,rows)
             years[year]=rows
+    if seen_dskp_missing!=set(dskp_missing):
+        raise ValueError("Sains 35 official supplemental SP records not consumed exactly once")
     return years
 
 def build_all(destination=OUT):
