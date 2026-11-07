@@ -48,7 +48,7 @@ def candidate_rows_by_year():
                 "sk":sk,"sp":" / ".join(sp_codes),
                 "sk_display":sk+" — "+sk_text,
                 "sp_display":"\n".join(statements),
-                "note":detail+" | DRAF: buku teks m/s, minggu sekolah, urutan dan kelulusan guru belum disahkan.",
+                "note":detail+" | LEGACY/KOD BELUM SAH KSSR2017: draf aktiviti penyelidikan, BUKAN RPT semasa; m/s, minggu dan kelulusan belum sah.",
                 "week":"","a_start":"","a_end":"","b_start":"","b_end":"",
                 "proposal_id":block["proposal_id"],"teacher_signoff":False,
                 "proposed_not_official_pdp":True,
