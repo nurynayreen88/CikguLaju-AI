@@ -47,7 +47,28 @@ def make_runtime():
         path=Path(tempfile.gettempdir())/(unique+"_Sains_T5."+(
             "docx" if kind=="word" else "pdf"))
         if kind=="word":
-            word_doc(path,entry)
+            # Simulate native Telegram's strict three-table Word contract.
+            # The standalone Year5 renderer intentionally uses two tables,
+            # so passing it directly would be correctly rejected by Web's
+            # compact_web_word_notes verification.
+            document=Document()
+            heading=document.add_table(rows=2,cols=2)
+            heading.cell(0,0).text="RPH SAINS TAHUN 5"
+            heading.cell(0,1).text=entry["tajuk"]
+            heading.cell(1,0).text=entry["sk"]+" — "+entry["sk_title"]
+            heading.cell(1,1).text=entry["sp"]+" — "+entry["sp_full_text"]
+            activity=document.add_table(rows=3,cols=3)
+            for idx,(label,body) in enumerate((
+                ("Aktiviti 1",entry["teacher1"]+". "+entry["pupil1"]),
+                ("Aktiviti 2",entry["teacher2"]+". "+entry["pupil2"]),
+                ("PBD",entry["pbd"]))):
+                activity.cell(idx,0).text=label
+                activity.cell(idx,1).text=body
+                activity.cell(idx,2).text="Catatan guru"
+            footer=document.add_table(rows=1,cols=2)
+            footer.cell(0,0).text="BBM: "+entry["materials"]
+            footer.cell(0,1).text="DRAF/HOLD"
+            document.save(path)
         else:
             pdf_doc(path,entry)
         return str(path)
@@ -183,7 +204,7 @@ class ScienceY5StagingRuntimeTests(unittest.TestCase):
                     if fmt=="word":
                         self.assertTrue(rsp.data.startswith(b"PK"))
                         doc=Document(io.BytesIO(rsp.data))
-                        self.assertEqual(len(doc.tables),2)
+                        self.assertEqual(len(doc.tables),3)
                         self.assertIn("Memerihalkan fungsi",doc.tables[0].rows[1].cells[1].text)
                     else:
                         self.assertTrue(rsp.data.startswith(b"%PDF-"))
