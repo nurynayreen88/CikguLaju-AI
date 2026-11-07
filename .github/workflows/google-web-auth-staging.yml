@@ -30,6 +30,8 @@ on:
       - 'tests/sql/web_google_rph_quota_integration.sql'
       - 'migrations/DRAFT_ONLY_web_canonical_identity_449.sql'
       - 'migrations/DRAFT_ONLY_web_canonical_google_rph_20261107.sql'
+      - 'migrations/DRAFT_ONLY_web_canonical_link_20261107.sql'
+      - 'tests/sql/web_canonical_link_integration.sql'
       - 'tests/sql/web_canonical_google_rph_integration.sql'
       - 'tests/sql/web_canonical_identity_fixture.sql'
       - 'tests/sql/web_canonical_identity_integration.sql'
@@ -202,6 +204,8 @@ jobs:
           psql -v ON_ERROR_STOP=1 -f tests/sql/web_canonical_identity_integration.sql
           psql -v ON_ERROR_STOP=1 -f migrations/DRAFT_ONLY_web_canonical_google_rph_20261107.sql
           psql -v ON_ERROR_STOP=1 -f tests/sql/web_canonical_google_rph_integration.sql
+          psql -v ON_ERROR_STOP=1 -f migrations/DRAFT_ONLY_web_canonical_link_20261107.sql
+          psql -v ON_ERROR_STOP=1 -f tests/sql/web_canonical_link_integration.sql
 
   staging-google-http-smoke:
     # Only against the explicitly isolated Render staging service after code
