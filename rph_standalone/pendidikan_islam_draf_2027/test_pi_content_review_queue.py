@@ -39,11 +39,12 @@ class PIContentReviewQueueTests(unittest.TestCase):
 
     def test_measured_pbd_and_page_review_not_misnamed_quality_score(self):
         q = self.queue
-        self.assertEqual(q["generic_pbd_records"], 43)
+        self.assertEqual(q["generic_pbd_records"], 0)
+        self.assertEqual(q["pbd_refinements_pending_expert_review"], 43)
         self.assertEqual(q["unverified_old_page_note_records"], 77)
         self.assertEqual(q["by_priority"]["P2_PBD_OR_PAGE"], 108)
         pbd = [r for r in q["rows"]
-               if "PBD_TIDAK_KHUSUS_KEPADA_SP" in r["reason_codes"]]
+               if "PBD_SP_SASARAN_BELUM_DISAH_PAKAR" in r["reason_codes"]]
         self.assertEqual(len(pbd), 43)
         self.assertTrue(all(r["year"] in (2, 3) for r in pbd))
         self.assertEqual(len([r for r in pbd if r["year"] == 2]), 14)
