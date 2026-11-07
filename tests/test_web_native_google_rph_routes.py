@@ -33,6 +33,27 @@ class NativeGoogleRPHTests(unittest.TestCase):
                 headers={"Origin":origin or self.base,
                          "Sec-Fetch-Site":"same-origin"})
 
+    def test_native_google_selector_is_available_only_for_verified_account(self):
+        with patch("web.native_google_rph_routes.prepare") as db:
+            reply=self.client.get("/google-rph",base_url=self.base)
+        self.assertEqual(reply.status_code,200)
+        self.assertIn(b"Jana Bahan",reply.data)
+        self.assertIn(b"RPH Word",reply.data)
+        db.assert_not_called()
+
+    def test_completed_google_only_document_stays_available_after_linking(self):
+        from web.native_google_rph_routes import _actor
+        with (patch("web.native_google_rph_routes._actor",
+                    return_value=(CFG,ACTOR,None)) as actor,
+              patch("web.native_google_rph_routes.ready_download",
+                    return_value=(b"%PDF-1.4\\n"+b"x"*600+b"\\n%%EOF",
+                                  "application/pdf")) as download):
+            reply=self.client.get("/api/auth/google-native/rph/jobs/"+JOB+
+                "/download/pdf",base_url=self.base)
+        self.assertEqual(reply.status_code,200)
+        actor.assert_called_once_with(allow_linked=True)
+        download.assert_called_once_with(CFG,ACCOUNT,JOB,"pdf")
+
     def test_signed_tickets_bind_principal_source_and_job(self):
         token=_ticket(ACCOUNT,JOB,DIGEST,SECRET,now=1000)
         self.assertEqual(_verify(token,ACCOUNT,DIGEST,SECRET,now=1200),JOB)
