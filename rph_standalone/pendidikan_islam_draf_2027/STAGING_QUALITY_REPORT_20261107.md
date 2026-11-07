@@ -551,3 +551,17 @@ Audit tanpa meminda sumber RPH menjumpai **13 Lesson Tahun 5** yang secara nyata
 - Daftar keputusan menyimpan `teacher_allocated_lesson=null`, `exact_student_ayah_assignment=null`, `teacher_quran_sequence_approved=false`, `rpt_changed=false`, `rph_changed=false`, `release=NO_GO`; kod SP rasmi tidak direka. Artefak JSON/CSV dijana dalam GitHub Actions untuk semakan editor.
 
 **Tiada merge, deployment, perubahan produksi, DB atau fail RPT asal.** `690` draf kekal, `6` rekod held, `3` source-critical holds, `0` kelulusan akademik/Jawi, skor akademik kekal `null`, keputusan pelepasan **NO_GO**.
+
+## Sambungan 8 Nov 2026 — draf penuh 696 untuk editor, semua sumber asal tidak ditimpa
+
+**Enam slot yang asalnya kosong** sekarang mempunyai RPH **khusus untuk penyemak** berasingan daripada katalog sumber: T2-L035, T6-L006/L014/L018/L060/L117. Fail T2-L035 baharu merujuk terus RPT Tahun 2 2027 (Drive `1R2FNyT0CYb_WTMiw99lnZW9GuPaatz8w`, PdP 032=al-Baqarah 216–224, PdP035=224–245 dan PdP038=246–259); ayat **224 ialah pengulangan tidak diputuskan**. Cadangan A kekalkan ayat 224 sebagai pemantapan, B mula 225 selepas persetujuan guru. Kedua-duanya masih HOLD dan RPT sumber tidak berubah.
+
+`pi_held_six_editor_candidate_packet.py` mengumpulkan enam calon dengan 4 aktiviti utama lengkap, objektif, PBD dan bahan; gabungan **690 draf asal tidak-held + 6 calon editor = 696 entri berkandungan untuk editor**; sifar READY/approved. Ujian `pi_held_six_word_pdf_print_audit.py` menggunakan Word/PDF A4 sementara dengan fon Amiri; **tiada** binari dokumen latihan dimuat naik ke pengguna atau produksi, cuma laporan QA.
+
+**Jurang 67 ayat Juzuk 25** mempunyai **dua pemetaan lengkap 246/246 untuk dipilih oleh penyemak**, tanpa duplikasi: Pilihan A kekalkan semua julat 179 ayat dalam tujuh PdP asal dan tambah 67 ayat yang tidak disebut; beban PdP014=56 dan PdP018=59 ayat menuntut pembahagian masa/tasmi. Pilihan B agih 246 ayat sebanyak 35/35/35/35/35/35/36, tetapi mengubah banyak batas sesi asal. Ayat al-Ahqaf 46:1–14 (Juz26) yang asalnya bersama PdP026 **tidak dibuang senyap** dan mesti ditetapkan jadual berasingan. Kedua-duanya **calon editor sahaja**, tidak diluluskan guru; lihat `pi_t6_juz25_complete_alternative_rpt_plan.py`.
+
+**690 penutup Rumi** kini mempunyai overlay pratonton Jawi semuka bersumberkan **78 calon teks Jawi unik** melalui `pi_editor_jawi_closing_projection.py`, dengan Rumi asal dan SHA-256 kekal untuk perbandingan. **0/78 diluluskan ejaan Jawi oleh pakar**; tidak digunakan oleh bot atau laman web rasmi.
+
+**Sumber Buku Aktiviti KSSR Tahun 2/3** dikenal pasti dalam e-Katalog KPM (BA102001 dan BA103001; DBP) serta portal Panitia Pendidikan Islam SK Pangkalan TLDM Kota Kinabalu. URL portal untuk setiap tahun disimpan dalam `pi_ba_source_integrity.py` bagi memudahkan semakan **naskhah asal**. **0/174 latihan/halaman khusus SP disahkan** dalam audit ini dan hak pengedaran PDF tidak dibuktikan; jangan sediakan PDF buku untuk muat turun automatik.
+
+**Status pelepasan tetap NO_GO:** Kandungan draf lebih lengkap, bukan bukti 80% kualiti akademik. Semua 696 kekal tidak diluluskan pakar; enam sumber utama asal ditahan; tiga draf sumber kritikal turut ditahan. Pemadanan latihan, bacaan al-Quran/tajwid, ejaan Jawi, semakan fiqh/pedagogi dan ujian native Telegram/Web belum disahkan. PR mesti kekal `DRAFT`; jangan merge ke `main`, deploy, ganti DB atau melabel FINAL READY.
