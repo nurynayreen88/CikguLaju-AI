@@ -58,3 +58,11 @@ Lima tasmi' tidak dibekalkan dengan kod SK/SP rasmi dalam sumber. Tiada kod dire
 5. Ujian pengguna berdaftar, identiti kelas, ZIP/Word/PDF, muat turun serta kesetaraan sumber Web–Telegram.
 
 **JANGAN MERGE/DEPLOY ATAU UBAH `main`/DB** sehingga bukti akademik, kalendar, kerja sekolah dan ujian E2E semuanya diluluskan.
+
+## Sesi pemulihan 7 Nov: 186 SP Sains rasmi dan enam RPH PI baharu
+
+- Sains T4: 91 SP daripada PDF DSKP KSSR2017 asal, T5: 95 SP. Dua PDF sumber lima lajur, 8 halaman setiap satu, dijana secara lokal dengan teks SP diekstrak, kod/tajuk SK dan halaman asal. Teks hasil ekstrak belum semua ditandatangani visual; 186 SP bukan 186 PdP. Kedua-dua PDF dan indeks JSON dihantar sebagai ZIP semakan pengguna, tidak menimpa PDF Sains v25.82 lama.
+- Reproducible source generator: scripts/build_rpt2027_sains_kssr2017_y4y5_original_source_staging.py. PDF asal mesti padan SHA-256 Year4 623e60d32156e1a3eeb399f856f40dc6529946445278bf4cf69aea081ad543ea; Year5 e90744b28e6cc3943e8707475a911238ffc8b6a9dffb812bf742d35bcaa61ef6.
+- PI enam rekod V5 ditahan: enam RPH cadangan A4 satu halaman telah ditulis dalam Word dan PDF, siap objektif, set induksi, guru/murid, dua aktiviti, PBD dan penutup. Lima aktiviti tasmi tidak mempunyai SK/SP rasmi dalam RPT sumber. L060 kini aktiviti pengukuhan Solat Ketika Sakit T6 SK4.2, SP4.2.3-4.2.5 berdasarkan DSKP asal PDF hlm46/cetakan34; L059 sudah meliputi kod tersebut. L117 membetulkan sumber az-Zumar 1-5 bukan Juz29. Semua merupakan calon sumber, bukan overwrite RPH V5.
+- PI evidence SHA-256 original DSKP T6 fd12636abb8b220623ec8c33a0c12261c7f27adc44c02efc5ee2ac04b71fea45. Ledger auditable: audits/pendidikan_islam_6_held_rph_new_candidate_activity_plans_20261107.json.
+- Blockers remain: DSKP Sains T6 source and lesson/textbook sequencing; Arabic full RTL sentence signoff; per-school RBT dates/holidays; PI teacher signoff; authenticated Web/Telegram E2E. GitHub PR stays draft. No prod, main or user DB changes.
