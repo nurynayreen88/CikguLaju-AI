@@ -20,6 +20,12 @@ class Year2Unit3SourceGap(unittest.TestCase):
         self.assertIn("Memberi contoh ciri",rows["3.1.5"]["official_dskp_text"])
         self.assertIn("tumbesaran dan pewarisan",rows["3.1.6"]["official_dskp_text"])
         self.assertTrue(all(x["scheduled_pdp"] is None for x in rows.values()))
+        self.assertEqual({sp:x["verified_textbook_printed_pages"] for sp,x in rows.items()},
+                         {"3.1.4":[30],"3.1.5":[30,32],"3.1.6":[33]})
+        self.assertEqual({sp:x["verified_activity_book_printed_pages"] for sp,x in rows.items()},
+                         {"3.1.4":[17,18],"3.1.5":[18,19],"3.1.6":[20]})
+        self.assertTrue(all(x["original_book_sp_labels_match"] for x in rows.values()))
+        self.assertTrue(all(x["pedagogical_approved"] is False for x in rows.values()))
 
     def test_three_original_task_sheets_not_marked_official(self):
         self.assertEqual(len(TASKS),3)
