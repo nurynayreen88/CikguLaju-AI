@@ -17,7 +17,7 @@ from web_google_identity_sessions import verify_google_identity_ticket
 from web.google_payment_store import (
     MAX_RECEIPT, PaymentConflict, PaymentUnavailable,
     admin_payment, admin_pending, account_display_name, eligible_plans, my_payments,
-    private_receipt, review_payment, submit_receipt,
+    private_receipt, review_payment, submit_receipt, web_payment_access,
 )
 from web.provider_neutral_payment import verified_payment_actor
 
@@ -130,6 +130,7 @@ def own_payments():
         return error
     try:
         return jsonify({"payments": my_payments(config, uid),
+                        "access": web_payment_access(config, uid),
                         "plans": eligible_plans(config, _catalog()),
                         "payment_url": os.environ.get("CIKGULAJU_GOOGLE_STAGING_PAYMENT_URL", "")})
     except (PaymentUnavailable, ValueError):
