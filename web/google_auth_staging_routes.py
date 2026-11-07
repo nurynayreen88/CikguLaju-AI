@@ -250,6 +250,12 @@ def google_logout():
     config = _enabled_config()
     if not config:
         return jsonify({"error": "Google staging login not configured"}), 503
+    # Logout changes the browser's session cookie. Require a verified
+    # same-origin POST, exactly as protected payment mutations do.
+    if (request.headers.get("Origin") != config["origin"]
+            or request.headers.get("Sec-Fetch-Site", "same-origin")
+                not in ("same-origin", "none")):
+        return jsonify({"error": "Asal permintaan tidak disahkan"}), 403
     # This only revokes the independent Google staging ticket. The original
     # Telegram browser session remains untouched.
     response = make_response(jsonify({"google_verified": False}))
