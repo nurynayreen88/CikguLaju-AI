@@ -288,10 +288,27 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
                     f"\nKumpulan B:\n{range_text(row,'b')}")
         unit_lines=[
             p(row.get("display_id") or f"PdP {row['id']}",size=8.1,leading=12,strong=True),
-            p(row["unit"].strip(),size=8,leading=12,strong=True),
         ]
+        unit_text=row["unit"].strip()
+        # Separate Latin "Unit N:" from Arabic title to preserve reading order.
+        # Both stay in the original Unit/Tajuk/PdP table cell.
+        unit_match=(re.match(r"^(Unit\s+\d+)\s*:\s*(.+)$",unit_text)
+                    if subject=="bahasa_arab" else None)
+        if unit_match and any("\u0600"<=ch<="\u08ff" for ch in unit_match.group(2)):
+            unit_lines.append(p(unit_match.group(1)+":",size=8,leading=12,strong=True))
+            unit_lines.append(p(unit_match.group(2),size=8,leading=12,strong=True))
+        else:
+            unit_lines.append(p(unit_text,size=8,leading=12,strong=True))
         if row.get("topic","").strip():
-            unit_lines.append(p(row["topic"].strip(),size=7.8,leading=11.6))
+            topic_text=row["topic"].strip()
+            # Malay teacher-focus and Arabic words are separate paragraphs.
+            topic_match=(re.match(r"^([^\u0600-\u08ff]+?)\s+([\u0600-\u08ff].+)$",topic_text)
+                         if subject=="bahasa_arab" else None)
+            if topic_match:
+                unit_lines.append(p(topic_match.group(1).strip(),size=7.8,leading=11.6))
+                unit_lines.append(p(topic_match.group(2).strip(),size=7.8,leading=11.6))
+            else:
+                unit_lines.append(p(topic_text,size=7.8,leading=11.6))
         table_rows.append([
             "" if index in grouped_followers else p(weektext,size=7.0,leading=11.3),
             unit_lines,
