@@ -190,6 +190,12 @@ def google_callback():
     }), 200)
     success.delete_cookie(STATE_COOKIE, path="/api/auth/google",
                           secure=True, httponly=True, samesite="Lax")
+    # A normal Google browser callback leads to the staging payment page.
+    # Test/API clients keep the JSON response to verify access isolation.
+    if request.accept_mimetypes.accept_html and not request.accept_mimetypes.accept_json:
+        success = redirect(config["origin"] + "/google-staging-payments", code=303)
+        success.delete_cookie(STATE_COOKIE, path="/api/auth/google",
+                              secure=True, httponly=True, samesite="Lax")
     success.set_cookie(TICKET_COOKIE, ticket, secure=True, httponly=True,
                        samesite="Lax", max_age=3600, path="/")
     success.headers["Cache-Control"] = "no-store"
