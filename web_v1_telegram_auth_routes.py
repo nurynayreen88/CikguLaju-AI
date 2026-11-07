@@ -137,6 +137,12 @@ def telegram_session_status():
 def telegram_logout():
     response = make_response(jsonify({"authenticated": False}))
     response.delete_cookie(COOKIE, path="/", secure=True, httponly=True, samesite="Lax")
+    # Google-linked accounts can obtain a legacy Web session. End both Web
+    # sessions when the teacher uses the main CikguLaju logout button, so the
+    # Google principal cookie cannot silently restore access after logout.
+    from web_v1_canonical_sessions import COOKIE as GOOGLE_COOKIE
+    response.delete_cookie(GOOGLE_COOKIE, path="/", secure=True,
+                           httponly=True, samesite="Lax")
     return response
 
 
