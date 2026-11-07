@@ -50,11 +50,16 @@ class TestSainsYear2Year3ActivityBook(unittest.TestCase):
         self.assertEqual(activity_for(3,"SCI-Y3-PDP-037","9.1.2")["workbook_printed_page"],80)
         self.assertEqual(activity_for(3,"SCI-Y3-PDP-044","10.1.4")["workbook_printed_page"],90)
 
-    def test_eleven_page_content_reviews_and_safe_substitutes(self):
+    def test_all_96_page_content_reviews_and_safe_substitutes(self):
         rows=load_activity_books()
         evidence=[(year,item) for year,rr in rows.items() for item in rr.values()
                   if item["lesson_guidance"]]
-        self.assertEqual(len(evidence),11)
+        self.assertEqual(len(evidence),96)
+        self.assertEqual(sum(x["page_content_review"]=="DIRECT_EXERCISE_CONTENT_REVIEW"
+                             for _,x in evidence),85)
+        self.assertTrue(all(x["page_content_evidence"] for _,x in evidence))
+        self.assertTrue(all(x["page_content_teacher_signoff"]=="MISSING" for _,x in evidence))
+        self.assertEqual(len({(year,x["sp"]) for year,x in evidence}),96)
         self.assertEqual(sum(x["page_content_review"]=="RELATED_ONLY_ORIGINAL_PBD"
                              for _,x in evidence),2)
         grow=activity_for(2,"SCI-Y2-PDP-003","3.1.3")
@@ -63,6 +68,9 @@ class TestSainsYear2Year3ActivityBook(unittest.TestCase):
         self.assertIn("jangan sediakan air panas",hot["lesson_guidance"].lower())
         self.assertIn("kit",activity_for(2,"SCI-Y2-PDP-029","7.1.7")["lesson_guidance"])
         self.assertIn("meniskus",activity_for(3,"SCI-Y3-PDP-027","6.1.7")["lesson_guidance"])
+        self.assertIn("jangan rasa",activity_for(3,"SCI-Y3-PDP-033","8.1.2")["lesson_guidance"].lower())
+        self.assertIn("pisau",activity_for(3,"SCI-Y3-PDP-019","5.1.3")["page_content_evidence"].lower())
+        self.assertIn("guru",activity_for(2,"SCI-Y2-PDP-036","9.1.2")["lesson_guidance"].lower())
         for sp,num in [("4.1.7",10),("6.1.6",22)]:
             unmatched=activity_for(2,f"SCI-Y2-PDP-{num:03d}",sp)
             self.assertFalse(is_direct_sp_match(unmatched))
