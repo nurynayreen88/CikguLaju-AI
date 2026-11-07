@@ -50,7 +50,11 @@ class CanonicalGooglePrincipalTests(unittest.TestCase):
         self.assertEqual(verify_google_principal_ticket(ticket, SECRET, now=1200), UUID)
         self.assertIsNone(verify_session_ticket(ticket, SECRET, now=1200))
         self.assertIsNone(verify_google_principal_ticket(ticket, SECRET, now=44201))
-        self.assertIsNone(verify_google_principal_ticket(ticket[:-1]+"a", SECRET, now=1100))
+        # Always change the signature byte. A random ticket can already end
+        # with "a", making a fixed replacement a flaky no-op.
+        changed = "a" if ticket[-1] != "a" else "b"
+        self.assertIsNone(verify_google_principal_ticket(
+            ticket[:-1] + changed, SECRET, now=1100))
         self.assertIsNone(verify_google_principal_ticket(ticket, SECRET+"wrong", now=1100))
         self.assertIsNone(verify_google_principal_ticket(ticket, SECRET, now=999))
         with self.assertRaises(ValueError):
