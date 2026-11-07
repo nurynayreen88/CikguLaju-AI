@@ -199,3 +199,5 @@ jobs:
           python-version: '3.11'
       - name: Verify staging readiness without following Google or using credentials
         run: python tools/smoke_google_staging_http.py
+      - name: Verify production paid-status bearer gate is mounted and enabled (anonymous blocked)
+        run: python tools/check_prod_paid_bridge_gate.py
