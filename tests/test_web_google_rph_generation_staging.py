@@ -37,6 +37,10 @@ class GoogleGenerationStagingTests(unittest.TestCase):
                     return_value=ACCOUNT)
         allow.start()
         self.addCleanup(allow.stop)
+        prod_read=patch("web.google_rph_generation_staging_routes.verified_paid_uid_for_rph",
+                        return_value=None)
+        prod_read.start()
+        self.addCleanup(prod_read.stop)
 
     def post(self,path,payload,origin=CFG["origin"]):
         return self.client.post(path, json=payload, headers={
