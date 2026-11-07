@@ -105,7 +105,7 @@ class ProductionPaidBridgeTests(unittest.TestCase):
 
     def test_google_and_telegram_both_verify_same_production_status(self):
         for actor in (GOOGLE, TELEGRAM):
-            with self.subTest(provider=actor.provider), (
+            with (self.subTest(provider=actor.provider),
                 patch("web.google_telegram_link_staging_routes._link_status",
                       return_value={"linked": True, "staging_only": True,
                                     "telegram_user_id": str(UID)}) as mapping,
