@@ -55,7 +55,8 @@ def build_queue(root=ROOT):
                 sp = record["fields"]["sp"]
             elif ("PBD_TIDAK_KHUSUS_KEPADA_SP" in flags or
                   "PBD_SP_SASARAN_BELUM_DISAH_PAKAR" in flags or
-                  "RUJUKAN_HALAMAN_BELUM_DISAHKAN" in flags):
+                  "RUJUKAN_HALAMAN_BELUM_DISAHKAN" in flags or
+                  "BUKU_AKTIVITI_T4_T6_KESAHIHAN_SUMBER_BELUM_DISAHKAN" in flags):
                 priority = "P2_PBD_OR_PAGE"
                 tasks = []
                 if "PBD_TIDAK_KHUSUS_KEPADA_SP" in flags:
@@ -64,6 +65,8 @@ def build_queue(root=ROOT):
                     tasks.append("Semak ayat PBD draf khusus: bukti aktiviti/SP, ejaan Jawi dan rubrik guru")
                 if "RUJUKAN_HALAMAN_BELUM_DISAHKAN" in flags:
                     tasks.append("Sahkan halaman Buku Teks pada naskhah asal")
+                if "BUKU_AKTIVITI_T4_T6_KESAHIHAN_SUMBER_BELUM_DISAHKAN" in flags:
+                    tasks.append("Tentukan sama ada Buku Aktiviti disebut sebagai buku kerja umum atau buku rasmi; semak edisi, halaman dan latihan sebelum gunakan istilah itu kepada guru")
                 if "HALAMAN_BUKU_T2_MELEBIHI_MUKA_TERAKHIR" in flags:
                     tasks.append("Julat lama 133-140 melepasi halaman bercetak terakhir 138; semak cadangan 133-138 dengan SP")
                 if "DSKP_T3_L146_OBJECTIVE_PBD_REVISED_EXPERT_PENDING" in flags:
@@ -105,6 +108,7 @@ def build_queue(root=ROOT):
         "pbd_refinements_pending_expert_review": qa["refined_pbd_review_count"],
         "unverified_old_page_note_records": qa["flags"].get("RUJUKAN_HALAMAN_BELUM_DISAHKAN", 0),
         "textbook_end_page_overruns": qa["textbook_page_range_overrun_count"],
+        "unverified_year4_to6_activity_book_wording_records": qa["unverified_year4_to6_activity_book_wording_count"],
         "by_priority": {p: counts.get(p, 0) for p in PRIORITIES},
         "total": len(queue),
         "can_publish": False,
