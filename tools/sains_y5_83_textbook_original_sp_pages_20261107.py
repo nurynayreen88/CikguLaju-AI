@@ -6,6 +6,7 @@ that a printed SP code establishes full pedagogical PBD suitability.
 """
 from __future__ import annotations
 import json
+import hashlib
 from pathlib import Path
 
 from web.sains_y5_83_activity_bank_draf_20261107 import BANK
@@ -49,6 +50,13 @@ def checked_book_pages():
     mapped={x["sp"]:x for x in items}
     if len(mapped)!=83 or len(items)!=83 or set(mapped)!=set(BANK):
         raise ValueError("Year5 83 distinct SP codes changed from approved source roster")
+    canonical="\n".join(x["sp"]+":"+",".join(map(str,x["printed_pages"])) for x in items)
+    proof=hashlib.sha256(canonical.encode("utf-8")).hexdigest()
+    if (data.get("canonical_original_pdf_sp_token_map_sha256")
+        !="6ea031e7e1185520a4b5c5c65fd2dea441c4c95c662cf522faaae409d93aeefe"
+        or proof!=data["canonical_original_pdf_sp_token_map_sha256"]
+        or data.get("manual_transcription_verified_against_independent_pdf_scan") is not True):
+        raise ValueError("Year5 original PDF code-to-page map checksum invalid")
     seen=set()
     for sp,entry in mapped.items():
         pages=entry["printed_pages"]
