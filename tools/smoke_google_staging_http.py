@@ -47,12 +47,15 @@ def check():
     assert ready.get("google_login_configured") is True, "Google config not ready"
     assert ready.get("rph_generator_enabled") is False, "RPH staging gate unexpectedly open"
     assert ready.get("real_payments_enabled") is False, "Real payment gate unexpectedly open"
-    assert ready.get("rph_staging_test_gate_open") is False, (
-        "Google native RPH staging generation should remain disabled")
+    staging_gate = ready.get("rph_staging_test_gate_open")
+    assert type(staging_gate) is bool, "Missing native RPH staging gate diagnostic"
     native_configured = ready.get("native_renderer_credentials_configured")
     assert type(native_configured) is bool, "Missing safe private bridge diagnostic"
-    print("PASS: native RPH bridge credentials configured:",
-          native_configured, "; generation gate remains off.")
+    assert not staging_gate or native_configured, (
+        "Native RPH test gate cannot open without server bridge credentials")
+    print("PASS: native RPH bridge configured:", native_configured,
+          "; private staging-only RPH test gate:", staging_gate,
+          "; public production release remains off.")
 
     status, headers, blob = fetch("/google-staging-login")
     assert status == 200 and b"/api/auth/google/start" in blob, ("login page", status)
@@ -79,6 +82,8 @@ def check():
         "/api/google-staging/web/catalog?year=3&subject=ENGLISH",
         "/api/google-staging/web/materials?year=3&subject=ENGLISH&component=&unit=One&lesson=e-3-001",
         "/api/google-staging/web/rph/recent",
+        "/api/google-staging/web/rph/capabilities",
+        "/api/google-staging/web/rph/jobs/0ebc954f-85e1-4c06-b4d2-41a8bf811111/status",
         "/api/google-staging/web/rph/jobs/0ebc954f-85e1-4c06-b4d2-41a8bf811111/download/pdf",
     ):
         status, _headers, _body = fetch(endpoint)
