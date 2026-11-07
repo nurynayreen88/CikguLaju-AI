@@ -47,7 +47,12 @@ def source_files(artifacts):
         candidates=list(directory.rglob("*.pdf"))
         group={}
         for file in candidates:
-            # Exclude the RBT simulation and the Sains gap appendices.
+            # Keep exactly the source RPT folder; explicitly exclude 3 RBT
+            # simulations (same naming pattern but not a classroom RPT).
+            if name=="twentyone" and file.parent.name!="pdf":
+                continue
+            if name=="sains" and file.parent.name!="sains_342_pdp_SEPARA_DRAF":
+                continue
             m=RE.fullmatch(file.name)
             if not m:
                 continue
