@@ -147,6 +147,19 @@ def arabic_records(year):
     b=csv_rows(base/"rpt_2027_KUMPULAN_B_INDEKS_PDP_DRAF.csv")
     seq=csv_rows(base/"unit_sequence_DRAF_20261105.csv")
     titles={int(x["unit"]):x["tajuk_arab"] for x in seq if int(x["tahun"])==year}
+    # Every SP code has a verified original DSKP PDF page anchor.
+    # A page anchor is NOT permission to invent or silently OCR its Arabic text.
+    ledger=json.loads((ROOT/"audits/bahasa_arab_rpt2027_y2_y6_117_sp_pdf_page_evidence_20261107.json").read_text(encoding="utf-8"))
+    if ledger.get("status")!="STAGING_117_CODE_AND_PDF_PAGE_VERIFIED_ONLY" or ledger["summary"]["full_arabic_statement_signoffs"]!=0:
+        raise ValueError("Arabic source-page ledger unexpectedly promoted to approved text")
+    indexed=ledger["year2"] if year==2 else next((v for v in ledger["years"] if v["year"]==year),None)
+    if indexed is None:
+        raise ValueError("Missing Arabic DSKP source-page index for year")
+    source_pages={e["sp_code"]:e["pdf_page"] for e in indexed["entries"]}
+    if len(source_pages)!=len(indexed["entries"]) or any(
+        type(pg) is not int or pg < 1 or pg > indexed["pdf_page_count"] for pg in source_pages.values()
+    ):
+        raise ValueError("Invalid Arabic DSKP code-page evidence")
     ar=[x for x in a if int(x["tahun"])==year]
     br=[x for x in b if int(x["tahun"])==year]
     expected={2:60,3:60,4:58,5:60,6:60}[year]
@@ -163,6 +176,9 @@ def arabic_records(year):
         no=int(left["unit"])
         if no not in titles:
             raise ValueError("Arabic source unit missing")
+        sp_code=left["sp"].strip()
+        if sp_code not in source_pages:
+            raise ValueError(f"Arabic T{year} PdP{n:03d}: SP has no source DSKP page")
         # Only numeric codes exist in this repo's year-wide source index.
         # Do not turn short teacher focus labels into fictitious DSKP statements.
         rows.append(dict(
@@ -170,8 +186,10 @@ def arabic_records(year):
             topic=left["fokus"],sk=left["sk"],sp=left["sp"],
             sk_display=left["sk"]+" — Pernyataan penuh SK belum dipadankan",
             sp_display=left["sp"]+" — Pernyataan penuh SP belum dipadankan",
-            note="BT m/s: "+(left.get("halaman_buku") or "belum disahkan")+
-                 " (calon). Tarikh A/B belum diperuntukkan. DRAF.",
+            note=("BT m/s: "+(left.get("halaman_buku") or "belum disahkan")+
+                  f" (calon). DSKP SP PDF hlm {source_pages[sp_code]} (kod disemak; teks belum disahkan). "+
+                  "Tarikh A/B belum diperuntukkan. DRAF."),
+            source_sp_dskp_pdf_page=source_pages[sp_code],
             source_status=left["status_rpt"],
         ))
     validate_rows("bahasa_arab",year,rows)
