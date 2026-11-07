@@ -10,13 +10,13 @@ VALUES (131321111,7,18),(131322222,10,0);
 DO $guard$
 BEGIN
  IF has_function_privilege('anon',
-   'public.link_native_google_telegram_principal(uuid,bigint,boolean)','EXECUTE')
+   'public.link_native_google_telegram_principal(uuid,bigint,boolean,integer,integer)','EXECUTE')
    OR has_function_privilege('authenticated',
-   'public.link_native_google_telegram_principal(uuid,bigint,boolean)','EXECUTE')
+   'public.link_native_google_telegram_principal(uuid,bigint,boolean,integer,integer)','EXECUTE')
  THEN RAISE EXCEPTION 'Public or auth clients can merge identities'; END IF;
  BEGIN
    PERFORM public.link_native_google_telegram_principal(
-     '99999999-9999-4999-8999-999999999999',131321111,true);
+     '99999999-9999-4999-8999-999999999999',131321111,true,8,7);
    RAISE EXCEPTION 'Non-service role could link accounts';
  EXCEPTION WHEN raise_exception THEN
    IF SQLERRM <> 'Private dual-provider identity link requires service role' THEN RAISE; END IF;
@@ -48,17 +48,25 @@ BEGIN
  PERFORM public.prepare_native_google_web_rph(v_a,v_job,repeat('a',64));
 
  BEGIN
-   PERFORM public.link_native_google_telegram_principal(v_a,131321111,false);
+   PERFORM public.link_native_google_telegram_principal(v_a,131321111,false,8,7);
    RAISE EXCEPTION 'No-consent merge unexpectedly permitted';
  EXCEPTION WHEN raise_exception THEN
    IF SQLERRM <> 'Both provider proofs and explicit credit consent required'
    THEN RAISE; END IF;
  END;
  BEGIN
-   PERFORM public.link_native_google_telegram_principal(v_a,999888777,true);
+   PERFORM public.link_native_google_telegram_principal(v_a,999888777,true,8,7);
    RAISE EXCEPTION 'Unregistered Telegram identity created by Google link';
  EXCEPTION WHEN raise_exception THEN
    IF SQLERRM <> 'Verified existing Telegram account required'
+   THEN RAISE; END IF;
+ END;
+
+ BEGIN
+   PERFORM public.link_native_google_telegram_principal(v_a,131321111,true,9,7);
+   RAISE EXCEPTION 'Stale credit preview merged accounts';
+ EXCEPTION WHEN raise_exception THEN
+   IF SQLERRM <> 'Link balances changed; preview and consent again'
    THEN RAISE; END IF;
  END;
  SELECT google_only_trial_remaining INTO v_g_rem
@@ -69,7 +77,7 @@ BEGIN
    RAISE EXCEPTION 'Rejected link changed credit balances';
  END IF;
 
- v_first:=public.link_native_google_telegram_principal(v_a,131321111,true);
+ v_first:=public.link_native_google_telegram_principal(v_a,131321111,true,8,7);
  IF v_first->>'linked'<>'true'
     OR (v_first->>'replayed')::boolean IS DISTINCT FROM false
     OR (v_first->>'google_remaining_before')::integer<>8
@@ -84,7 +92,7 @@ BEGIN
  IF v_tid<>131321111 OR v_g_rem IS NOT NULL OR v_rem<>5 OR v_credit<>18
  THEN RAISE EXCEPTION 'Linked primary balance/other credits inconsistent'; END IF;
 
- v_retry:=public.link_native_google_telegram_principal(v_a,131321111,true);
+ v_retry:=public.link_native_google_telegram_principal(v_a,131321111,true,8,7);
  IF (v_retry->>'replayed')::boolean IS DISTINCT FROM true
     OR (v_retry->>'telegram_remaining_after')::integer<>5 THEN
     RAISE EXCEPTION 'Retry of link did not remain idempotent'; END IF;
@@ -93,13 +101,13 @@ BEGIN
  IF v_rem<>5 THEN RAISE EXCEPTION 'Retry double debited Telegram trial'; END IF;
 
  BEGIN
-   PERFORM public.link_native_google_telegram_principal(v_a,131322222,true);
+   PERFORM public.link_native_google_telegram_principal(v_a,131322222,true,8,10);
    RAISE EXCEPTION 'Already linked Google identity was reassigned';
  EXCEPTION WHEN raise_exception THEN
    IF SQLERRM <> 'Google principal linked to a different identity' THEN RAISE; END IF;
  END;
  BEGIN
-   PERFORM public.link_native_google_telegram_principal(v_b,131321111,true);
+   PERFORM public.link_native_google_telegram_principal(v_b,131321111,true,10,5);
    RAISE EXCEPTION 'Telegram user linked to two Google identities';
  EXCEPTION WHEN raise_exception THEN
    IF SQLERRM <> 'Telegram identity already belongs to another principal'
@@ -122,7 +130,7 @@ BEGIN
  -- Separate fresh Google login can link a different Telegram account safely.
  UPDATE public.cikgulaju_web_principals SET google_only_trial_remaining=10
  WHERE id=v_b;
- v_first:=public.link_native_google_telegram_principal(v_b,131322222,true);
+ v_first:=public.link_native_google_telegram_principal(v_b,131322222,true,10,10);
  IF (v_first->>'telegram_remaining_after')::integer<>10
  THEN RAISE EXCEPTION 'Unused Google trial altered Telegram credits'; END IF;
 
