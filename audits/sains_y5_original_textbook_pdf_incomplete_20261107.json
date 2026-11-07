@@ -19,5 +19,18 @@
   "upload_production": false,
   "db_writes": false,
   "request": "Owner should provide a COMPLETE same-edition Year5 original textbook PDF with valid last printed page and unbroken page sequence. Validate checksum and full cover before any SP mapping.",
-  "suggested_followup_action": "Replace nothing; upload new separate source version, compare with 83 source SPs in staging and retain old file checksum for provenance."
+  "suggested_followup_action": "Replace nothing; upload new separate source version, compare with 83 source SPs in staging and retain old file checksum for provenance.",
+  "external_full_volume_lead": {
+    "source_page": "https://sites.google.com/moe-dl.edu.my/ppd-batu-pahat-sains-matematik/buku-teks-digital-bidang-sains-matematik/buku-teks-sekolah-rendah/sains-tahun-5",
+    "publisher_context": "PPD Batu Pahat school-sector Google Site",
+    "three_listed_parts": [
+      "SAINS-T5-SK-1-DRP-3.pdf",
+      "Sains SK Tahun 5 (ms 36 - 130).pdf",
+      "Sains SK Tahun 5 (ms 131 - 234).pdf"
+    ],
+    "downloaded_verified_parts": 1,
+    "remaining_parts_to_acquire_and_hash": 2,
+    "do_not_claim_exact_sp_pages_from_external_listing": true,
+    "no_source_overwrite": true
+  }
 }
