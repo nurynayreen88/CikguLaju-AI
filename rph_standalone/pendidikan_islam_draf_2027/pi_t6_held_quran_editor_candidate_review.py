@@ -74,6 +74,16 @@ def audit(root=ROOT):
             assert item.startswith(str(n)+". ")
         assert all(draft[x].strip() for x in ("set_induksi","pengukuhan","pentaksiran","penutup","bahan"))
         assert "ayat mula/akhir" in draft["pentaksiran"]
+        # Each proposal must describe its actual surah/ayah; old four-surah boilerplate was wrong.
+        assert candidate["curriculum_label"].startswith("Khatam/tasmi'")
+        expected_scope = {
+            "T6-L006": "asy-Syura 33–51",
+            "T6-L014": "az-Zukhruf 34–73",
+            "T6-L018": "ad-Dukhan 40–59",
+            "T6-L117": "al-Ma‘arij 40–44, Nuh 1–28 dan al-Jinn 1–13",
+        }[id_]
+        assert expected_scope in draft["pentaksiran"], id_
+        assert "empat surah" not in draft["pentaksiran"], id_
         assert draft["editor_warning"]
         checks=candidate["reviewer_checks"]
         assert checks["original_rpt_range_copied_as_reference"] is True
