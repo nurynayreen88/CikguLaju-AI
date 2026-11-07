@@ -255,3 +255,12 @@ Selepas penemuan 43 ayat PBD terlalu umum, kini **14 RPH Tahun 2 dan 29 RPH Tahu
 Pindaan tidak menyentuh SK, SP, objektif, aktiviti asal, buku teks, material Buku Aktiviti, atau enam rekod tahanan. Identiti katalog tetap 696, dengan 690 draf dan enam tahanan. Pembetulan ialah **pengayaan draf kandungan sebenar** namun belum membuktikan skor akademik ≥80% kerana sumber/Jawi/DSKP, pentaksiran dan Word/PDF belum diperakui. `pi_quality_audit.py` dan `pi_content_review_queue.py` mengasingkan bendera `PBD_SP_SASARAN_BELUM_DISAH_PAKAR` daripada bendera teks generik lama serta mengekalkan baris ini dalam keutamaan P2.
 
 **CI Run #85 lulus**: https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42322765025. Fail pengguna `main`, DB, Telegram, Web dan Render tidak diubah. PR #443 kekal **DRAFT / HOLD / NO_GO**.
+
+
+## Semakan penyelarasan tulisan Penutup — 7 Nov 2026
+
+Audit tambahan bagi **690 RPH draf aktif** mengesan **690 bahagian Penutup mengandungi tulisan Rumi** sementara SK/SP, objektif dan sebahagian besar aktiviti ditulis dalam Jawi. Ini **perbezaan gaya skrip yang perlu disahkan dengan format Pendidikan Islam CikguLaju**, bukan bukti kesalahan isi secara automatik.
+
+`pi_quality_audit.py` kini menanda `PENUTUP_RUMI_SEMAK_PENYERAGAMAN_JAWI` bagi setiap rekod terlibat. Tiada transliterasi pukal dijalankan kerana istilah ibadah, nama surah, lafaz hadis, makhraj, ejaan dan keperluan fon Amiri memerlukan semakan khusus. Teks Penutup asal tidak diubah; QA dan kelulusan akhir masih **NO_GO**.
+
+Keutamaan selepas penemuan baharu: pengesahan Jawi/Penutup, **43 PBD spesifik yang belum disemak pakar**, **77 rujukan halaman terdahulu**, **174 Buku Aktiviti Tahun 2/3** dan ujian Word/PDF terkini.
