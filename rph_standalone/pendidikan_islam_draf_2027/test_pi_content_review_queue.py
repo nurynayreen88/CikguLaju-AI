@@ -42,6 +42,13 @@ class PIContentReviewQueueTests(unittest.TestCase):
         self.assertEqual(q["generic_pbd_records"], 0)
         self.assertEqual(q["pbd_refinements_pending_expert_review"], 43)
         self.assertEqual(q["unverified_old_page_note_records"], 77)
+        self.assertEqual(q["textbook_end_page_overruns"], 3)
+        for lesson in ("T2-L102", "T2-L105", "T2-L108"):
+            item = next(x for x in q["rows"] if x["id"] == lesson)
+            self.assertEqual(item["priority"], "P2_PBD_OR_PAGE")
+            self.assertIn("HALAMAN_BUKU_T2_MELEBIHI_MUKA_TERAKHIR", item["reason_codes"])
+            self.assertIn("133-140", item["editor_next_step"])
+            self.assertIn("133-138", item["editor_next_step"])
         self.assertEqual(q["by_priority"]["P2_PBD_OR_PAGE"], 108)
         pbd = [r for r in q["rows"]
                if "PBD_SP_SASARAN_BELUM_DISAH_PAKAR" in r["reason_codes"]]
