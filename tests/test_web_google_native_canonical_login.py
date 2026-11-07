@@ -227,6 +227,21 @@ class GoogleNativeCanonicalTests(unittest.TestCase):
             blocked=self.client.get("/api/auth/google-native/options",base_url=BASE)
             self.assertFalse(blocked.json["google_available"])
 
+    def test_original_web_logout_revokes_both_google_and_telegram_sessions(self):
+        from web_v1_canonical_sessions import issue_google_principal_ticket
+        from web_v1_telegram_auth_routes import auth_blueprint
+        main=Flask("main-telegram-logout")
+        main.register_blueprint(auth_blueprint)
+        client=main.test_client()
+        client.set_cookie(GOOGLE_COOKIE,
+                          issue_google_principal_ticket(ACC,SECRET),domain=HOST)
+        client.set_cookie(LEGACY_COOKIE,
+                          issue_session_ticket(123456789,SECRET),domain=HOST)
+        reply=client.post("/api/auth/telegram/logout",base_url=BASE)
+        self.assertEqual(reply.status_code,200)
+        self.assertIsNone(client.get_cookie(GOOGLE_COOKIE,domain=HOST))
+        self.assertIsNone(client.get_cookie(LEGACY_COOKIE,domain=HOST))
+
     def test_flag_off_returns_503(self):
         with patch("web.google_native_canonical_login_routes._config",return_value=None):
             self.assertEqual(self.client.get("/google-login",base_url=BASE).status_code,503)
