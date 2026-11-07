@@ -10,8 +10,9 @@ subscriptions stay in their original Telegram tables and are NOT modified.
 Never match accounts by email alone or rely on a staging/Render bridge.
 """
 import json
+from pathlib import Path
 
-from flask import Blueprint, jsonify, request
+from flask import Blueprint, jsonify, request, make_response, redirect, send_file
 
 from web.google_native_canonical_login_routes import _config as google_config
 from web.native_google_principal_store import (
@@ -86,6 +87,21 @@ def protect(response):
     response.headers["Vary"] = "Cookie"
     response.headers["X-Content-Type-Options"] = "nosniff"
     return response
+
+
+@bp.get("/google-link-telegram")
+def page():
+    cfg = google_config()
+    if cfg is None:
+        return jsonify({"error": "Pautan akaun belum diaktifkan"}), 503
+    if request.args:
+        return jsonify({"error": "Parameter tidak dibenarkan"}), 400
+    if verify_google_principal_ticket(
+            request.cookies.get(GOOGLE_COOKIE), cfg["secret"]) is None:
+        return redirect("/google-login", code=303)
+    return make_response(send_file(
+        Path(__file__).with_name("google_native_link.html"),
+        mimetype="text/html", max_age=0))
 
 
 @bp.get("/api/auth/google-native/link-preview")
