@@ -31,9 +31,9 @@ def _config():
     # Enabling this route requires deliberate, *separate* staging configuration.
     if os.environ.get("CIKGULAJU_GOOGLE_AUTH_STAGING_ENABLED") != "1":
         return None
-    base = os.environ.get("SUPABASE_URL", "").rstrip("/")
+    base = os.environ.get("CIKGULAJU_GOOGLE_STAGING_SUPABASE_URL", "").rstrip("/")
     parsed = urlsplit(base)
-    key = os.environ.get("CIKGULAJU_GOOGLE_SUPABASE_PUBLISHABLE_KEY", "")
+    key = os.environ.get("CIKGULAJU_GOOGLE_STAGING_SUPABASE_PUBLISHABLE_KEY", "")
     secret = os.environ.get("CIKGULAJU_WEB_SESSION_SECRET", "")
     origin = os.environ.get("CIKGULAJU_GOOGLE_STAGING_ORIGIN", "").rstrip("/")
     host = os.environ.get("CIKGULAJU_GOOGLE_STAGING_ALLOWED_HOST", "")
@@ -48,7 +48,11 @@ def _config():
             or parsed_origin.query or parsed_origin.fragment
             or parsed_origin.netloc != host or not host):
         return None
-    if len(key) < 20 or len(secret) < 32:
+    # Do not let a staging-only Google signup accidentally target the live DB.
+    production_supabase = os.environ.get("SUPABASE_URL", "").rstrip("/")
+    if (not production_supabase or base == production_supabase
+            or host == "cikgulaju-web.onrender.com"
+            or len(key) < 20 or len(secret) < 32):
         return None
     return {"supabase_url": base, "apikey": key, "secret": secret,
             "origin": origin, "host": host}
