@@ -36,3 +36,13 @@ for sub,name,page_num in (
         if 66<y0<290 and (y0<145 or t in ("MAIN","COMPLEMENTARY","LESSON:","Lesson","001","002","UNIT","FOCUS:")):
             print(f"XY x={x0:5.1f} y={y0:5.1f} {t!r}")
     pdf.close()
+
+p=fitz.open(ROOT/"rpt_2027/matematik/RPT_Matematik_Tahun_2_2027_v28_SEMENTARA.pdf")
+pg=p[0]
+print("\\n=== MATH COLUMN GRID ===")
+for token in ("LESSON", "UNIT / TAJUK", "SK", "SP", "AKTIVITI PdP", "MINGGU 01","MINGGU 02"):
+    print(token, [tuple(round(v,1) for v in r) for r in pg.search_for(token)][:6])
+for x0,y0,x1,y1,t,*_ in sorted(pg.get_text("words"),key=lambda x:(round(x[1]/8)*8,x[0])):
+    if 210<y0<243:
+        print(f"GRID_MATH x={x0:5.1f} y={y0:5.1f} word={t!r}")
+p.close()
