@@ -100,7 +100,7 @@ def _cell(cell, text, bold=False):
     for index, line in enumerate(str(text).split("\n")):
         run=paragraph.add_run(line)
         run.bold=bold
-        run.font.size=Pt(8.15)
+        run.font.size=Pt(9.6)
         if index<len(str(text).split("\n"))-1:run.add_break()
 
 
@@ -111,12 +111,12 @@ def word_doc(path,item):
     sec.top_margin=Cm(0.9);sec.bottom_margin=Cm(0.9)
     sec.left_margin=Cm(1.1);sec.right_margin=Cm(1.1)
     normal=doc.styles["Normal"]
-    normal.font.name="Arial";normal.font.size=Pt(8.15)
+    normal.font.name="Arial";normal.font.size=Pt(10.0)
     normal.paragraph_format.space_after=Pt(0)
     headline=doc.add_paragraph()
     headline.paragraph_format.space_after=Pt(3)
     rr=headline.add_run(f"RPH SAINS TAHUN 6 — PdP {int(item['pdp_number']):03d} • DRAF")
-    rr.bold=True;rr.font.size=Pt(11)
+    rr.bold=True;rr.font.size=Pt(13)
     meta=doc.add_table(rows=3,cols=2)
     meta.style="Table Grid"
     for i,(left,right) in enumerate([
@@ -141,7 +141,7 @@ def word_doc(path,item):
         _cell(phases.cell(i,0),label,bold=True)
         _cell(phases.cell(i,1),body)
     p=doc.add_paragraph("Refleksi: ____/____ murid mencapai objektif. Susulan: ____________________")
-    for run in p.runs:run.font.size=Pt(8)
+    for run in p.runs:run.font.size=Pt(9.3)
     doc.save(path)
     verify=Document(path)
     if len(verify.tables)!=2 or abs(verify.sections[0].page_width.cm-21)>0.05:
@@ -155,10 +155,10 @@ def pdf_doc(path,item):
         pdfmetrics.registerFont(TTFont("SainsYear6",FONT))
     if "SainsYear6Bold" not in pdfmetrics.getRegisteredFontNames():
         pdfmetrics.registerFont(TTFont("SainsYear6Bold",BOLD_FONT))
-    body=ParagraphStyle("y5_body",fontName="SainsYear6",fontSize=8.5,leading=12.1)
+    body=ParagraphStyle("y5_body",fontName="SainsYear6",fontSize=9.3,leading=13.0)
     label=ParagraphStyle("y5_label",parent=body,fontName="SainsYear6Bold",
-                         fontSize=8.3,leading=12)
-    headline=ParagraphStyle("y5_headline",parent=body,fontSize=13,leading=16,
+                         fontSize=9.1,leading=12.8)
+    headline=ParagraphStyle("y5_headline",parent=body,fontSize=13.5,leading=17,
                              alignment=1,spaceAfter=5)
     def p(v,style=body):
         return Paragraph(escape(str(v)).replace("\n","<br/>"),style)
@@ -187,8 +187,8 @@ def pdf_doc(path,item):
         ("VALIGN",(0,0),(-1,-1),"TOP"),
         ("LEFTPADDING",(0,0),(-1,-1),5),
         ("RIGHTPADDING",(0,0),(-1,-1),5),
-        ("TOPPADDING",(0,0),(-1,-1),4.8),
-        ("BOTTOMPADDING",(0,0),(-1,-1),4.8),
+        ("TOPPADDING",(0,0),(-1,-1),5.1),
+        ("BOTTOMPADDING",(0,0),(-1,-1),5.1),
     ]))
     doc=SimpleDocTemplate(str(path),pagesize=A4,leftMargin=24,rightMargin=24,
                           topMargin=24,bottomMargin=24,
