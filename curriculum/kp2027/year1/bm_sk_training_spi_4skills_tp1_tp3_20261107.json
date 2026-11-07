@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-07",
+  "curriculum": "KP2027",
+  "level": "Tahun 1",
+  "subject": "Bahasa Melayu",
+  "school_type": "SK",
+  "release_status": "TRAINING_REFERENCE_HOLD_NOT_OFFICIAL_DK",
+  "source": {
+    "title": "SLOT 5-8 KUPAS DAN KUASAI KEMAHIRAN-compressed.pdf",
+    "url": "https://drive.google.com/file/d/1OYy3lh95ifjf31ymPuwF-zLOcfkYF1Jv/view",
+    "sha256": "447b499db78253c4c3f0559afa791691a010c58d076666917a060531b9637691",
+    "pdf_page_count": 118
+  },
+  "note": "Visual transcription of four performance-standard skill tables from training PDF. Tahap Penguasaan must be decided using professional judgement and official DK validation; the presence of a training tafsiran is NOT an assessment result for any pupil.",
+  "claimed_final_dk_spi_verified": false,
+  "source_pages_visual_reviewed": [
+    33,
+    62,
+    91,
+    114
+  ],
+  "performance_levels": 3,
+  "skills": 4,
+  "rows": [
+    {
+      "skill": "Mendengar",
+      "pdf_page_one_based": 33,
+      "training_tp_level": 1,
+      "training_tafsiran_text": "Murid berupaya mendengar untuk memberikan respons yang sesuai terhadap pelbagai bunyi dan ujaran.",
+      "source_kind": "BPK_PENATARAN_SLIDE",
+      "visually_inspected": true,
+      "exact_final_dk_verified": false,
+      "teacher_professional_judgement_required": true,
+      "auto_assign_tp": false
+    },
+    {
+      "skill": "Mendengar",
+      "pdf_page_one_based": 33,
+      "training_tp_level": 2,
+      "training_tafsiran_text": "Murid berupaya mendengar dan memahami pelbagai ujaran, arahan dan pertanyaan berdasarkan situasi serta memberikan respons yang sesuai.",
+      "source_kind": "BPK_PENATARAN_SLIDE",
+      "visually_inspected": true,
+      "exact_final_dk_verified": false,
+      "teacher_professional_judgement_required": true,
+      "auto_assign_tp": false
+    },
+    {
+      "skill": "Mendengar",
+      "pdf_page_one_based": 33,
+      "training_tp_level": 3,
+      "training_tafsiran_text": "Murid berupaya mendengar untuk mendapatkan maklumat berdasarkan situasi harian serta memberikan respons secara sopan.",
+      "source_kind": "BPK_PENATARAN_SLIDE",
+      "visually_inspected": true,
+      "exact_final_dk_verified": false,
+      "teacher_professional_judgement_required": true,
+      "auto_assign_tp": false
+    },
+    {
+      "skill": "Bertutur",
+      "pdf_page_one_based": 62,
+      "training_tp_level": 1,
+      "training_tafsiran_text": "Murid berupaya menyebut bunyi abjad, perkataan, frasa dan ujaran dengan betul.",
+      "source_kind": "BPK_PENATARAN_SLIDE",
+      "visually_inspected": true,
+      "exact_final_dk_verified": false,
+      "teacher_professional_judgement_required": true,
+      "auto_assign_tp": false
+    },
+    {
+      "skill": "Bertutur",
+      "pdf_page_one_based": 62,
+      "training_tp_level": 2,
+      "training_tafsiran_text": "Murid berupaya memerihalkan tentang diri dengan perkataan, frasa dan ayat menggunakan intonasi yang sesuai.",
+      "source_kind": "BPK_PENATARAN_SLIDE",
+      "visually_inspected": true,
+      "exact_final_dk_verified": false,
+      "teacher_professional_judgement_required": true,
+      "auto_assign_tp": false
+    },
+    {
+      "skill": "Bertutur",
+      "pdf_page_one_based": 62,
+      "training_tp_level": 3,
+      "training_tafsiran_text": "Murid berupaya menyampaikan sesuatu perkara berdasarkan konteks menggunakan sebutan yang betul dan intonasi yang sesuai serta sopan.",
+      "source_kind": "BPK_PENATARAN_SLIDE",
+      "visually_inspected": true,
+      "exact_final_dk_verified": false,
+      "teacher_professional_judgement_required": true,
+      "auto_assign_tp": false
+    },
+    {
+      "skill": "Membaca",
+      "pdf_page_one_based": 91,
+      "training_tp_level": 1,
+      "training_tafsiran_text": "Murid berupaya mengenal, mengecam simbol dan abjad serta membaca suku kata, perkataan dan frasa ayat dengan sebutan yang betul.",
+      "source_kind": "BPK_PENATARAN_SLIDE",
+      "visually_inspected": true,
+      "exact_final_dk_verified": false,
+      "teacher_professional_judgement_required": true,
+      "auto_assign_tp": false
+    },
+    {
+      "skill": "Membaca",
+      "pdf_page_one_based": 91,
+      "training_tp_level": 2,
+      "training_tafsiran_text": "Murid berupaya membaca dan memahami ayat dengan sebutan dan intonasi yang betul.",
+      "source_kind": "BPK_PENATARAN_SLIDE",
+      "visually_inspected": true,
+      "exact_final_dk_verified": false,
+      "teacher_professional_judgement_required": true,
+      "auto_assign_tp": false
+    },
+    {
+      "skill": "Membaca",
+      "pdf_page_one_based": 91,
+      "training_tp_level": 3,
+      "training_tafsiran_text": "Murid berupaya membaca dan mengenal pasti maklumat daripada bahan berdasarkan konteks.",
+      "source_kind": "BPK_PENATARAN_SLIDE",
+      "visually_inspected": true,
+      "exact_final_dk_verified": false,
+      "teacher_professional_judgement_required": true,
+      "auto_assign_tp": false
+    },
+    {
+      "skill": "Menulis",
+      "pdf_page_one_based": 114,
+      "training_tp_level": 1,
+      "training_tafsiran_text": "Murid berupaya membentuk corak, menekap dan menyalin abjad, suku kata, perkataan dan frasa secara mekanis.",
+      "source_kind": "BPK_PENATARAN_SLIDE",
+      "visually_inspected": true,
+      "exact_final_dk_verified": false,
+      "teacher_professional_judgement_required": true,
+      "auto_assign_tp": false
+    },
+    {
+      "skill": "Menulis",
+      "pdf_page_one_based": 114,
+      "training_tp_level": 2,
+      "training_tafsiran_text": "Murid berupaya menulis ayat mudah dengan betul.",
+      "source_kind": "BPK_PENATARAN_SLIDE",
+      "visually_inspected": true,
+      "exact_final_dk_verified": false,
+      "teacher_professional_judgement_required": true,
+      "auto_assign_tp": false
+    },
+    {
+      "skill": "Menulis",
+      "pdf_page_one_based": 114,
+      "training_tp_level": 3,
+      "training_tafsiran_text": "Murid berupaya menulis ayat mudah tentang diri dengan betul.",
+      "source_kind": "BPK_PENATARAN_SLIDE",
+      "visually_inspected": true,
+      "exact_final_dk_verified": false,
+      "teacher_professional_judgement_required": true,
+      "auto_assign_tp": false
+    }
+  ],
+  "audit_requirements": [
+    "Recheck each skill SPi interpretation against final DK Bahasa Melayu Tahun 1 SK",
+    "Never auto-assign TP from one RPH result; collect continuous PBD evidence",
+    "Do not distribute unverified SPi as final KPM standards",
+    "Academic review and staging sign-off required before inclusion in Word/PDF or Web"
+  ]
+}
