@@ -20,6 +20,7 @@ from flask import Blueprint, jsonify, make_response, request
 from web.google_web_catalog_staging import _actor
 from web.google_auth_staging_routes import _enabled_config
 from web.google_account_store import google_staging_account_profile, GoogleAccountUnavailable
+from web.provider_neutral_web_identity import canonical_staging_account
 from web.google_native_rph_bundle import (
     render_native_google_rph_bundle, NativeGoogleRPHNotReady, _teacher_fields)
 from web.google_rph_bundle_job_store import (
@@ -59,8 +60,12 @@ def _staging_test_account():
 
 
 def _test_actor_allowed(actor):
-    return (getattr(actor, "provider", None) == "google"
-            and getattr(actor, "account_id", None) == _staging_test_account())
+    # A linked Telegram user is permitted only after the same canonical
+    # staging account is verified and explicitly allowlisted for RPH tests.
+    try:
+        return canonical_staging_account(actor) == _staging_test_account()
+    except (TypeError, ValueError):
+        return False
 
 
 def _generator_config():
@@ -157,7 +162,9 @@ def capabilities():
     if err is not None:
         return err
     ready = _generator_config() is not None and _test_actor_allowed(actor)
-    return jsonify({"google_verified":True,"staging_only":True,
+    return jsonify({"google_verified":actor.provider=="google",
+                    "identity_verified":True,"auth_provider":actor.provider,
+                    "staging_only":True,
                     "generation_enabled":ready,
                     "download_enabled":True if ready else False,
                     "note":"Janaan Google hanya aktif selepas enjin Telegram disambung."})
