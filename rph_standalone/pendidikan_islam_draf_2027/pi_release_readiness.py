@@ -19,6 +19,7 @@ from pi_t3_awalan_book_review import audit as awalan_t3
 from pi_t3_book_footer_code_audit import audit as book_footer_t3
 from pi_t4_hadith_source_audit import audit as hadith_t4
 from pi_t6_tasmi_rpt_2027_review import audit as tasmi_t6
+from pi_y6_held_rpt_2027_source_review import audit as held_y6
 from pi_ba_match_queue import match_queue
 from pi_review_catalog import counts as preview_counts
 
@@ -34,6 +35,7 @@ def readiness(root=ROOT):
     book3 = book_footer_t3(root)
     hadith = hadith_t4(root)
     tasmi = tasmi_t6(root)
+    held_source = held_y6(root)
     ba = match_queue(root)
     preview = preview_counts(root=root)
     assert qa["total"] == 696 and qa["drafts"] == 690 and qa["held"] == 6
@@ -66,6 +68,8 @@ def readiness(root=ROOT):
     assert hadith["expert_hadith_approvals"] == 0
     assert hadith["source_missing_critical_flag_still_holds"] is True
     assert tasmi["year6_tasmi_rph_activities_revised"] == 2
+    assert held_source["year6_held_lessons_checked"] == 5
+    assert held_source["generated_held_rph"] == 0
     assert tasmi["ayah_bounds_present_in_original_rpt"] == 0
     assert tasmi["verse_ranges_teacher_verified"] == 0
     assert qa["t6_tasmi_rpt_editorial_range_review_count"] == 2
@@ -106,6 +110,7 @@ def readiness(root=ROOT):
             "l146_objective_activity_pbd_revised_pending_expert": counter["DSKP_T3_L146_OBJECTIVE_PBD_REVISED_EXPERT_PENDING"],
             "hadith_excerpt_from_original_source_pending_expert": counter["HADIS_T4_PETIKAN_BUKU_DSKP_DRAF_SEMAK_PAKAR"],
             "year6_tasmi_rpt_ayah_ranges_teacher_pending": counter["TASMI_T6_RPT_AYAT_BELUM_DITETAPKAN_GURU"],
+            "year6_wholly_held_source_triaged_no_release": 5 if year == 6 else 0,
             "tasmi_verse_descriptions_without_3_level_sp": 37 if year == 3 else 0,
             "short_activity_source_hold": counter["AKTIVITI_TERLALU_RINGKAS_PERLU_SEMAKAN"],
             "expert_approved_lesson_count": 0,
@@ -171,6 +176,8 @@ def readiness(root=ROOT):
         "year6_tasmi_four_step_rph_drafts": 2,
         "year6_tasmi_rpt_ayah_ranges_teacher_verified": 0,
         "year6_tasmi_official_dskp_codes_invented": 0,
+        "year6_full_source_hold_records_reviewed_against_rpt": 5,
+        "year6_full_source_hold_records_generated": 0,
         "year3_tasmi_verse_lessons_not_given_fake_sp": 37,
         "teacher_approved_page_specific_exercises": 0,
         "book_activity_page_candidates": 174,
