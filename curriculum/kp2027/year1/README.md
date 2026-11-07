@@ -79,3 +79,15 @@ Ujian:
 - [RPH Pasukan Keselamatan (model pengajaran berpasukan)](alam_manusia_pasukan_keselamatan_team_teaching_20261107.json) disediakan sebagai contoh guru Tahun 1, berpandukan portal penataran Alam dan Manusia yang menyebut 3.1.11/3.1.12, **bukan halaman DK akhir**.
 - Contoh 60 minit bagi 30 murid: Set Induksi 6, rancang karya 10, hasilkan karya 20, galeri 16, PBD/penutup 8. Guru A mengajar, Guru B memerhati evidens setiap murid; penyesuaian seorang guru turut disediakan.
 - Nombor kod di atas adalah **petunjuk sumber penataran**, bukan standard rasmi yang telah dimasukkan ke rekod DK. Nilai `official_sp`, `official_sk`, halaman DK, buku teks, tahap penguasaan serta kelulusan masih kosong dan status kekal DRAF/HOLD.
+
+
+## Batch sumber-berpandu penuh Bahasa Melayu SK — 26 calon SP
+
+- Fail induk untuk **semakan akademik sahaja**: [bm_sk_26_training_sp_draft_master_20261107.json](bm_sk_26_training_sp_draft_master_20261107.json). Liputan tepat satu calon RPH bagi setiap 26 kod SP daripada PDF penataran BM Tahun 1: **7 Mendengar, 8 Bertutur, 6 Membaca, 5 Menulis**.
+- Empat sumber asal disimpan secara berasingan: [Mendengar](bm_sk_listening_7_source_grounded_rph_20261107.json), [Bertutur](bm_sk_speaking_8_source_grounded_rph_20261107.json), [Membaca](bm_sk_reading_6_source_grounded_rph_20261107.json), [Menulis](bm_sk_writing_5_source_grounded_rph_20261107.json).
+- Setiap RPH mempunyai satu kod latihan SP, bukti halaman PDF penataran, objektif boleh nilai, BBM, Set Induksi, **Aktiviti 1**, **Aktiviti 2**, penutup/PBD, tindakan guru dan murid, pembezaan serta nilai karakter.
+- Semakan semula teks PDF membuktikan **25/26 penyataan latihan adalah padanan langsung**; item 1.2.2 mempunyai senarai bernombor i–iii dan tanda baca tidak konsisten dalam PDF. Ia kini direkod secara berstruktur (ucapan selamat, penghargaan, permohonan maaf) tanpa menggugurkan makna sumber, dan akar penyataannya dipadankan semula secara literal.
+- **Perbezaan aliran SK/SJK:** 1.2.3 dan 1.2.4 (Mendengar), serta 2.2.1 dan 2.2.2 (Bertutur) tidak boleh digunakan saling tukar. Versi draf ini menggunakan penyataan **SK** daripada bahan latihan dan perlu pengesahan DK akhir.
+- Fail ini **bukan** 26 PdP yang diiktiraf sebagai urutan RPT. Bilangan 36 draf dalam master KP2027 terdahulu masih kekal, dan pakej 26 BM SK ialah calon semakan **penggantian/penambahbaikan**, bukan jumlah tambahan 26 PdP. Tiada data lama dipadam/ditimpa.
+- Tiada pembuktian sah DK akhir, peruntukan masa BM, halaman buku teks KP2027, jumlah PdP setahun, jadual negeri Kumpulan A/B atau kelulusan guru. **0/26 READY** dan **0 standard DK akhir disahkan**.
+- Ujian kawalan integriti: `python -m unittest discover -s tests -p 'test_kp2027_year1_bm_sk_26_source_20261107.py' -v`; turut dijalankan dalam workflow PR.
