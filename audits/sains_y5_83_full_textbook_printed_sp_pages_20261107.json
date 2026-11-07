@@ -994,5 +994,8 @@
       "teacher_academic_approved": false,
       "official_sp_semantics_not_approved": true
     }
-  ]
+  ],
+  "canonical_original_pdf_sp_token_map_sha256": "6ea031e7e1185520a4b5c5c65fd2dea441c4c95c662cf522faaae409d93aeefe",
+  "canonical_map_algorithm": "Ordered by original 83 PdP, each line SP:comma-separated all printed pages with exact SP token, join lines by LF, UTF-8, SHA256; independently recomputed in container from three original PDF texts after GitHub upload.",
+  "manual_transcription_verified_against_independent_pdf_scan": true
 }
