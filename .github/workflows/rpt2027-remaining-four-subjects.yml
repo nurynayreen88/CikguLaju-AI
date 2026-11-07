@@ -8,6 +8,8 @@ on:
       - 'tests/test_rpt_2027_music_full_dskp_statements_staging.py'
       - 'tests/test_rpt_2027_remaining_four_subjects_staging.py'
       - 'tests/test_bahasa_arab_rpt2027_source_page_audit.py'
+      - 'tests/test_pi_rpt2027_6_held_source_recovery_staging.py'
+      - 'audits/pendidikan_islam_rpt2027_6_held_source_recovery_20261107_DRAF.json'
       - 'audits/bahasa_arab_rpt2027_y2_y6_117_sp_pdf_page_evidence_20261107.json'
       - 'rpt_2027/common/format_2026_layout_preview.py'
       - 'rpt_2027/bahasa_melayu/*Format_2026_DRAF.html'
@@ -33,7 +35,7 @@ jobs:
       - run: test -s /usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Regular.ttf
       - run: python -m py_compile scripts/build_rpt_2027_remaining_four_subjects_staging.py rpt_2027/common/format_2026_layout_preview.py
       - name: 20 source-faithful five-column RPT audits
-        run: python -m unittest tests.test_rpt_2027_remaining_four_subjects_staging tests.test_rpt_2027_music_full_dskp_statements_staging tests.test_bahasa_arab_rpt2027_source_page_audit -v
+        run: python -m unittest tests.test_rpt_2027_remaining_four_subjects_staging tests.test_rpt_2027_music_full_dskp_statements_staging tests.test_bahasa_arab_rpt2027_source_page_audit tests.test_pi_rpt2027_6_held_source_recovery_staging -v
       - name: Build 20 PDFs and visual QA
         run: |
           python -m scripts.build_rpt_2027_remaining_four_subjects_staging
