@@ -1,0 +1,79 @@
+<!doctype html><html lang="ms">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CikguLaju — Pengesahan Bayaran (Staging)</title>
+<style>
+:root{font:16px/1.5 system-ui,sans-serif;color:#173e35;background:#f5f9f7}
+body{margin:0}main{max-width:800px;margin:auto;padding:25px}
+article{background:#fff;border:1px solid #d8e6df;border-radius:15px;padding:18px;margin:13px 0}
+button{background:#087568;color:#fff;font:inherit;font-weight:650;border:0;border-radius:9px;padding:10px 15px;cursor:pointer;margin:5px 8px 0 0}
+button:disabled{opacity:.5}input,textarea{font:inherit;width:100%;border:1px solid #b8cec5;border-radius:8px;padding:10px}
+a{color:#087568}small{color:#55746a}.fail{color:#a12626}
+#details{display:none}#message{min-height:30px}
+</style></head><body><main>
+<h1>Semak bayaran CikguLaju</h1>
+<p>Mod staging sahaja. Halaman ini hanya boleh dibuka oleh admin yang telah log masuk dengan Telegram dan disenaraikan dalam tetapan pelayan.</p>
+<article><h2>Permohonan menunggu</h2><div id="list" aria-live="polite">Memuatkan...</div></article>
+<article id="details">
+<h2>Maklumat permohonan</h2><div id="info"></div>
+<p><a id="receipt" target="_blank" rel="noopener noreferrer">Lihat resit peribadi</a></p>
+<label for="note">Catatan keputusan</label><textarea id="note" rows="3" maxlength="500" placeholder="Sebab penolakan (jika ditolak)"></textarea>
+<div><button id="approve">Sahkan bayaran</button><button id="reject">Tolak bayaran</button></div>
+</article><p id="message" role="status" aria-live="polite"></p>
+</main><script>
+'use strict';
+let selected='';
+const list=document.getElementById('list'),details=document.getElementById('details');
+const message=document.getElementById('message');
+const base='/api/web/google/admin/payments';
+const safeId=value=>/^[a-f0-9-]{36}$/.test(value||'')?value:'';
+const fmt=sen=>'RM'+(Number(sen)/100).toFixed(2);
+async function refresh(){
+ const resp=await fetch(base,{credentials:'same-origin',cache:'no-store'});
+ if(!resp.ok){list.textContent='Tiada akses. Log masuk Telegram melalui halaman utama Web staging dan cuba semula.';return}
+ const data=await resp.json();list.replaceChildren();
+ if(!data.payments.length)list.textContent='Tiada permohonan menunggu.';
+ for(const p of data.payments){
+   const row=document.createElement('div');row.style.padding='12px 0';
+   const btn=document.createElement('button');btn.textContent='Semak';
+   btn.addEventListener('click',()=>open(p.id));
+   row.append(document.createTextNode('Akaun '+p.account_id.slice(0,8)+' · '+p.plan_code+' · '+fmt(p.quoted_amount_sen)+' '),btn);
+   list.append(row);
+ }
+ const linked=safeId(new URLSearchParams(location.search).get('payment'));
+ if(linked)void open(linked);
+}
+async function open(id){
+ if(!safeId(id))return;
+ const resp=await fetch(base+'/'+id,{credentials:'same-origin',cache:'no-store'});
+ if(!resp.ok){message.textContent='Permohonan tidak dapat dibaca.';return}
+ const data=(await resp.json()).payment;selected=id;details.style.display='block';
+ document.getElementById('info').textContent='Akaun: '+data.account_id+' · Pakej: '+data.plan_code+
+  ' · Jumlah: '+fmt(data.quoted_amount_sen)+' · Status: '+data.status;
+ const receipt=document.getElementById('receipt');
+ receipt.href=base+'/'+id+'/receipt';
+ document.getElementById('note').value='';
+ document.getElementById('approve').disabled=data.status!=='pending';
+ document.getElementById('reject').disabled=data.status!=='pending';
+}
+async function review(action){
+ if(!selected)return;
+ const note=document.getElementById('note').value.trim();
+ if(action==='reject'&&!note){message.textContent='Sila nyatakan sebab penolakan.';return}
+ if(!window.confirm((action==='approve'?'Sahkan':'Tolak')+' pembayaran ini?'))return;
+ const buttons=[document.getElementById('approve'),document.getElementById('reject')];
+ buttons.forEach(button=>button.disabled=true);
+ try{
+  const resp=await fetch(base+'/'+selected+'/review',{method:'POST',credentials:'same-origin',
+    headers:{'Content-Type':'application/json'},body:JSON.stringify({action,note})});
+  const data=await resp.json();
+  message.textContent=resp.ok?'Keputusan: '+data.status+(data.already_reviewed?' (telah diproses)':''):
+   data.error||'Semakan gagal.';
+  if(resp.ok){selected='';details.style.display='none';history.replaceState(null,'',location.pathname);
+   await refresh()}
+ }catch(_){message.textContent='Status kelulusan belum pasti. Muat semula sebelum cuba lagi.'}
+ finally{if(details.style.display==='block')buttons.forEach(button=>button.disabled=false)}
+}
+document.getElementById('approve').addEventListener('click',()=>review('approve'));
+document.getElementById('reject').addEventListener('click',()=>review('reject'));
+refresh().catch(()=>{list.textContent='Sambungan belum tersedia.'});
+</script></body></html>
