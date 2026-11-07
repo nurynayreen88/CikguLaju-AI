@@ -23,7 +23,7 @@ def expand_rbt_display_titles(year, source_rows, display_rows):
     for n, (source, row) in enumerate(zip(source_rows, display_rows), 1):
         if int(source["PdP"]) != n or row["id"] != f"{n:03d}":
             raise ValueError("RBT source/display PdP order mismatch")
-        raw = source["Tajuk PdP"].strip()
+        raw = source["Tajuk PdP"]
         stripped = re.sub(r"^PdP\s+0*" + str(n) + r"\s*[:：—–-]\s*", "", raw, flags=re.I)
         if stripped != row["topic"]:
             raise ValueError(f"RBT T{year} PdP {n:03d}: source topic altered before repair")
@@ -37,8 +37,8 @@ def expand_rbt_display_titles(year, source_rows, display_rows):
         official_check = official.rstrip(" .:").casefold()
         incomplete = (
             len(raw) == 99 and
-            ((official_check.startswith(raw_check) and len(official_check) > len(raw_check) + 2)
-             or (raw_check.startswith(official_check) and len(raw_check) > len(official_check) + 2))
+            ((official_check.startswith(raw_check) and len(official_check) > len(raw_check))
+             or (raw_check.startswith(official_check) and len(raw_check) > len(official_check)))
         )
         if incomplete:
             row["source_topic"] = stripped
