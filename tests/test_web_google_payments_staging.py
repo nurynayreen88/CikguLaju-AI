@@ -65,8 +65,13 @@ class PaymentApiTest(unittest.TestCase):
 
     def test_authenticated_google_sees_only_own_payments(self):
         self.google_login()
-        with patch("web.google_payment_staging_routes.my_payments",
-                   return_value=[]) as query:
+        with (
+            patch("web.google_payment_staging_routes.my_payments",
+                  return_value=[]) as query,
+            patch("web.google_payment_staging_routes.web_payment_access",
+                  return_value={"payment_access_active": False,
+                                "active_plans": [], "rph_google_integration_ready": False}),
+        ):
             response=self.get("/api/web/google/payments")
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json["plans"], [
