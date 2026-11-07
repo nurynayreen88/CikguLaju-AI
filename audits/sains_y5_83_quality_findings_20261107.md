@@ -5,7 +5,7 @@
 ## Bukti sumber
 
 - Asal SK/SP: DSKP KSSR Semakan 2017 Sains Tahun 5, fail Google Drive pemilik: https://drive.google.com/file/d/1YkiK-pVo4UUzyOUvv_Vrico58eQyddCz/view. Kesemua 83 kod SP daripada turutan PdP v25.82 Tahun 5 ditemui dalam lapisan teks dokumen DSKP; semakan ini mengesahkan **kehadiran kod**, bukan semakan semantik keseluruhan 83 pernyataan.
-- Buku teks Tahun 5: https://drive.google.com/file/d/1m5k8gVkNImT8QEdw6fCEVpQh_tNkUKUT/view. Pembacaan teks hanya mengembalikan kandungan separa. **Tiada nombor halaman atau latihan buku dinyatakan seolah-olah sudah disahkan secara visual.**
+- Buku teks Tahun 5: fail asal di Drive ialah bahagian pertama sahaja (m/s 1–35). **Tiga PDF sumber kini lengkap m/s 1–234 dan padanan token SP/halaman direkodkan 83/83**; lihat `audits/sains_y5_original_threepart_recovery_20261107.md` serta ledger hash `audits/sains_y5_83_full_textbook_printed_sp_pages_20261107.json`. Ini bukti kod SP pada halaman, bukan pengesahan kesesuaian semua aktiviti dan PBD.
 - Nombor `SCI-Y5-PDP-001` hingga `SCI-Y5-PDP-083`, Unit 2–10, SK dan SP dikekalkan daripada senarai RPT/PdP staged v25.82; tiada penomboran semula.
 
 ## Kandungan dibangunkan
@@ -23,7 +23,7 @@
 3. **Pengaratan:** foto keadaan paku dan penyiasatan dikawal oleh guru, bukan membiarkan murid mengendalikan paku karat tajam.
 4. **Fasa Bulan:** putaran/peredaran Bulan dan tempoh sinodik bulan Qamari tidak disamakan secara salah.
 5. **KPS:** PdP bersifat penyiasatan mesti ada pemboleh ubah, ramalan, pemerhatian, rekod dan kesimpulan individu; semakan isi aktiviti sebenar masih perlu dibuat oleh guru sebelum penarafan 80%.
-6. **Buku teks:** fail sumber teks separa, jadi semua 83 rujukan muka surat masih HOLD. Sumber buku perlu diperiksa secara visual dan merujuk edisi yang betul.
+6. **Buku teks:** tiga bahagian lengkap (m/s 1–234); 83/83 kod SP sumber mempunyai padanan halaman, 103 halaman unik dengan token SP dan 16 sampel imej disemak. Kesemua 83 rujukan **belum diluluskan dari segi kesesuaian pedagogi/latihan**; semakan visual kandungan setiap PdP dan kesepadanan semantik DSKP masih diperlukan.
 
 ## Syarat untuk melepasi 80%
 
