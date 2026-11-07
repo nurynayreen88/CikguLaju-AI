@@ -39,6 +39,7 @@ on:
       - "web/sains_y4_79_activity_bank_draf_20261107.py"
       - "tools/render_sains_y4_79_rph_draf_20261107.py"
       - "audits/sains_y4_79_textbook_unit_toc_review_20261107.json"
+      - "tools/check_sains_y4_79_toc_document_20261107.py"
       - "tools/check_sains_y4_79_word_a4_20261107.py"
       - "tests/test_sains_y4_79_bank_quality_20261107.py"
       - "web/sains_y5_83_activity_bank_draf_20261107.py"
@@ -126,6 +127,8 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_sains_y4_79_bank_quality_20261107.py' -v
       - name: Render 79 Science Year4 standalone DRAF Word PDF Markdown
         run: python -m tools.render_sains_y4_79_rph_draf_20261107
+      - name: Audit all Year4 79 actual Word PDF TOC-unit range disclaimers
+        run: python -m tools.check_sains_y4_79_toc_document_20261107
       - name: Verify 79 Year4 Word drafts print as one-page A4
         run: python -m tools.check_sains_y4_79_word_a4_20261107
       - name: Verify authored Sains Year5 bank contains 83 unique, safe SP lesson plans
@@ -159,6 +162,8 @@ jobs:
           name: SAINS_RPH80_STAGING_HOLD_20261107
           if-no-files-found: warn
           path: |
+            build/sains_y4_79_textbook_toc_document_QA_20261107/*.csv
+            build/sains_y4_79_textbook_toc_document_QA_20261107/*.json
             build/sains_342_format_consistency_20261107/*.csv
             build/sains_342_format_consistency_20261107/*.json
             build/rph80_sains_20261107/*.csv
