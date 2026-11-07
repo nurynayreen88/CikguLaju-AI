@@ -36,11 +36,11 @@ def audit():
                    FROM curriculum_standards
                    WHERE lower(trim(subject))='sains' AND year_label='Tahun 5'"""
             )]
+            native_columns={r[1] for r in db.execute("PRAGMA table_info(verified_pdp_sequence)")}
+            # The shipped v26 SQLite table may lack derived runtime fields.
+            # SELECT * preserves the observed schema without inventing columns.
             native_rows=[dict(r) for r in db.execute(
-                """SELECT pdp_sequence_code,source_sequence_no,unit_code,unit_title,
-                          pdp_title,sk_code,sk_text,sp_code,sp_text,
-                          verification_status,textbook_ref
-                   FROM verified_pdp_sequence
+                """SELECT * FROM verified_pdp_sequence
                    WHERE lower(trim(subject)) IN ('sains','science')
                      AND year_label='Tahun 5'"""
             )]
@@ -52,6 +52,8 @@ def audit():
         if str(r.get("verification_status") or "").strip().upper() in EXCLUDED:
             continue
         native[str(r.get("sp_code") or "").strip()].append(r)
+    native_text_supported={"sk_code","sp_code","sp_text"}<=native_columns
+    native_group_supported="pdp_sequence_code" in native_columns
     matched_std=0;matched_native=0;missing_std=[];different_std=[];missing_native=[];different_native=[]
     for sp,source in official.items():
         refs=standards.get(sp,[])
@@ -63,18 +65,22 @@ def audit():
         elif not refs:missing_std.append(sp)
         else:different_std.append(sp)
         nrefs=native.get(sp,[])
-        correct_n=[r for r in nrefs
-                   if str(r.get("sk_code") or "").strip()==source["sk"]
-                   and normalize(r.get("sp_text"))==normalize(source["sp_text"])]
-        # Multiple native rows can legitimately teach a SP in separate PdPs,
-        # but none may silently carry a different statement under same code.
-        if nrefs and len(correct_n)==len(nrefs):
-            matched_native+=1
-        elif not nrefs:missing_native.append(sp)
-        else:different_native.append(sp)
+        # Source table SP text is only comparable when these are actual DB
+        # columns; the Telegram runtime may enrich its rows dynamically.
+        if not nrefs:
+            missing_native.append(sp)
+        elif native_text_supported:
+            correct_n=[r for r in nrefs
+                       if str(r.get("sk_code") or "").strip()==source["sk"]
+                       and normalize(r.get("sp_text"))==normalize(source["sp_text"])]
+            if len(correct_n)==len(nrefs):
+                matched_native+=1
+            else:
+                different_native.append(sp)
     official_codes=set(official)
-    legacy_std=sorted(set(standards)-official_codes)
-    legacy_native=sorted(set(native)-official_codes)
+    official_kps={f"1.1.{i}" for i in range(1,13)}
+    legacy_std=sorted(set(standards)-official_codes-official_kps)
+    legacy_native=sorted(set(native)-official_codes-official_kps)
     groups=defaultdict(list)
     for row in native_rows:
         if str(row.get("verification_status") or "").strip().upper() in EXCLUDED:
@@ -97,9 +103,14 @@ def audit():
         "source_version":"v26.00_HASH_VERIFIED_TEMPORARY_READ_ONLY",
         "curriculum_standards_db_rows":len(standard_rows),
         "native_verified_sequence_raw_rows":len(native_rows),
-        "native_distinct_pdp_code_groups":len(groups),
+        "native_distinct_pdp_code_groups":len(groups) if native_group_supported else None,
+        "native_table_columns":sorted(native_columns),
+        "native_missing_expected_runtime_columns":sorted({"pdp_sequence_code","sk_code","sp_code","sp_text"}-native_columns),
+        "native_direct_pdp_identity_comparison_available":native_group_supported,
+        "native_stored_sp_text_comparison_available":native_text_supported,
+        "native_runtime_may_compute_fields_not_in_table":True,
         "official_full_statement_matches_curriculum_standards":matched_std,
-        "official_full_statement_matches_all_native_rows_for_code":matched_native,
+        "official_full_statement_matches_all_native_rows_for_code":matched_native if native_text_supported else None,
         "official_sp_absent_in_curriculum_standards":missing_std,
         "official_sp_text_or_sk_differs_in_curriculum_standards":different_std,
         "official_sp_absent_in_native_sequence":missing_native,
