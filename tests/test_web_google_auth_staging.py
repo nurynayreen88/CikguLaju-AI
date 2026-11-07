@@ -48,6 +48,7 @@ class GoogleStagingRoutes(unittest.TestCase):
         self.env = patch.dict(os.environ, {
             "CIKGULAJU_GOOGLE_AUTH_STAGING_ENABLED": "1",
             "CIKGULAJU_GOOGLE_STAGING_SUPABASE_PUBLISHABLE_KEY": "sb_publishable_test_not_real",
+            "CIKGULAJU_GOOGLE_STAGING_SUPABASE_SERVICE_ROLE_KEY": "staging-only-service-key-placeholder",
             "CIKGULAJU_GOOGLE_STAGING_SUPABASE_URL": "https://staging.supabase.co",
             "CIKGULAJU_WEB_SESSION_SECRET": SECRET,
             "CIKGULAJU_GOOGLE_STAGING_ORIGIN": "https://staging.example.test",
@@ -101,9 +102,12 @@ class GoogleStagingRoutes(unittest.TestCase):
         state, _ = self._start()
         with patch("web.google_auth_staging_routes._json_response",
                    side_effect=[{"access_token": "x" * 70},
-                                {"id": SUBJECT, "identities": [{"provider": "google"}]}]) as call:
+                                {"id": SUBJECT, "identities": [{"provider": "google"}]}]) as call, \\
+             patch("web.google_auth_staging_routes.ensure_google_staging_account",
+                   return_value=SUBJECT) as create:
             r = self.client.get("/api/auth/google/callback?state=" + state + "&code=test",
                                 base_url=self.base)
+            create.assert_called_once()
         self.assertEqual(r.status_code, 200)
         self.assertEqual(call.call_count, 2)
         self.assertTrue(r.json["google_verified"])
@@ -114,6 +118,19 @@ class GoogleStagingRoutes(unittest.TestCase):
         self.assertFalse(status.json["dashboard_access"])
         out = self.client.post("/api/auth/google/logout", base_url=self.base)
         self.assertEqual(out.status_code, 200)
+        self.assertEqual(self.client.get("/api/auth/google/status",
+                                         base_url=self.base).status_code, 401)
+
+    def test_unavailable_staging_account_fails_closed(self):
+        state, _ = self._start()
+        with patch("web.google_auth_staging_routes._json_response",
+                   side_effect=[{"access_token": "x" * 70},
+                                {"id": SUBJECT, "identities": [{"provider": "google"}]}]), \\
+             patch("web.google_auth_staging_routes.ensure_google_staging_account",
+                   side_effect=RuntimeError("staging down")):
+            r = self.client.get("/api/auth/google/callback?state=" + state + "&code=test",
+                                base_url=self.base)
+        self.assertEqual(r.status_code, 503)
         self.assertEqual(self.client.get("/api/auth/google/status",
                                          base_url=self.base).status_code, 401)
 
