@@ -14,6 +14,7 @@ from tools.audit_sains_342_pdp_release_gate_20261106 import ROOT, analyze
 from tools.audit_rph80_sains_first_20261107 import EXPECTED, validated_staging_drafts
 from tools.sains_buku_aktiviti_mapping_20261107 import load_activity_books,is_direct_sp_match
 from tools.sains_y6_textbook_toc_20261107 import cue_for,SOURCE_URL
+from tools.render_sains_y3_3_secondary_sp_pbd_20261107 import TASKS as Y3_SECONDARY_PBD, OUT as Y3_SECONDARY_OUTPUT,stem as y3_secondary_stem
 
 OUT=ROOT/"build/rph80_sains_20261107"
 FOLDERS={
@@ -76,8 +77,19 @@ def get_review_rows():
             if not ba or ba["sp"] not in source_sp_tokens:
                 raise RuntimeError("Workbook is not mapped to any source SP "+code)
             if len(source_sp_tokens)>1:
+                secondary=[other for other in source_sp_tokens if other!=ba["sp"]]
+                if len(secondary)!=1:
+                    raise RuntimeError("Unrecognized source secondary SP "+code)
+                extra=secondary[0]
+                if extra not in Y3_SECONDARY_PBD or Y3_SECONDARY_PBD[extra]["pdp"]!=code:
+                    raise RuntimeError("Year3 secondary SP missing original PBD "+code)
+                extra_pdf=Y3_SECONDARY_OUTPUT/(y3_secondary_stem(extra)+".pdf")
+                if not extra_pdf.is_file() or len(PdfReader(str(extra_pdf)).pages)!=1:
+                    raise RuntimeError("Year3 secondary SP PBD not actually printed single A4 "+code)
                 multi_sp_warning=(f"SP BA {ba['sp']} hanya satu daripada SP sumber "
-                                  f"{sp}; SP kedua mesti mendapat bukti PBD khusus.")
+                                  f"{sp}. SP kedua {extra} ada PBD asli "
+                                  f"{extra_pdf.name}, DRAF untuk semakan panitia.")
+                pbd_alt=str(extra_pdf.relative_to(ROOT))
             book_activity=(f"Buku Aktiviti T{year} m/s {ba['workbook_printed_page']}; "
                            f"PDF p{ba['workbook_pdf_page']}; {ba['activity_title']}")
             activity_status=("PRINTED_SP_CODE_MATCH__PEDAGOGY_APPROVAL_PENDING"
@@ -151,6 +163,7 @@ def main():
         "activity_book_y2_y3_matched_code":94,
         "activity_book_y2_y3_related_only":2,
         "year3_multiple_sp_lessons_needing_secondary_pbd":3,
+        "year3_original_secondary_sp_pbd_printed_a4":3,
         "teacher_approved":0,"academic_80_percent_certified":0,
         "auth_web_telegram_e2e_verified":False,
         "runtime_release":"HOLD","database_write":False,
