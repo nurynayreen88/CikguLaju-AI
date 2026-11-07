@@ -51,6 +51,8 @@ jobs:
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_closing_jawi_candidates_batch2.py --json pi_closing_jawi_candidates_635.json --csv pi_closing_jawi_candidates_635.csv
       - name: Prepare all 78 unique Jawi closing candidates for 690 draft lessons (NO_GO)
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_closing_jawi_candidates_complete.py --json pi_closing_jawi_candidates_690.json --csv pi_closing_jawi_candidates_690.csv
+      - name: Generate isolated 690-RPH Jawi closing preview preserving original Rumi
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_editor_jawi_closing_projection.py --output pi_jawi_editor_only_projection_690_NO_GO.json
       - name: Compare 77 Year-2 old page notes with original 2017 textbook table of contents
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_t2_textbook_toc_review.py --json pi_t2_toc_77.json --csv pi_t2_toc_77.csv
       - name: Report fail-closed Year 2-6 release blockers; do not merge
@@ -117,6 +119,7 @@ jobs:
             pi_closing_jawi_candidates_635.json \
             pi_closing_jawi_candidates_635.csv \
             pi_closing_jawi_candidates_690.json \
+            pi_jawi_editor_only_projection_690_NO_GO.json \
             pi_closing_jawi_candidates_690.csv \
             pi_release_readiness_696_NO_GO.json \
             pi_jawi_closing_lesson_review_690.json \
@@ -179,6 +182,7 @@ jobs:
             pi_closing_jawi_candidates_635.json
             pi_closing_jawi_candidates_635.csv
             pi_closing_jawi_candidates_690.json
+            pi_jawi_editor_only_projection_690_NO_GO.json
             pi_closing_jawi_candidates_690.csv
             pi_release_readiness_696_NO_GO.json
             pi_jawi_closing_lesson_review_690.json
