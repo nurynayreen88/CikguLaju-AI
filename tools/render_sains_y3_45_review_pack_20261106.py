@@ -29,6 +29,7 @@ import sys
 ROOT=Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0,str(ROOT))
+from tools.render_sains_y3_3_secondary_sp_pbd_20261107 import TASKS as SECONDARY_PBD, stem as secondary_stem
 from web.sains_y3_rph_activity_preview_20261106 import adapt_rows, source_ledgers
 
 OUTPUT=ROOT/"build"/"sains_y3_45_rph_REVIEW_ONLY_20261106"
@@ -37,6 +38,14 @@ LABELS={"TAJUK":"Tajuk","OBJEKTIF PEMBELAJARAN":"Objektif",
         "KRITERIA KEJAYAAN":"Kriteria kejayaan","BAHAN BANTU MENGAJAR":"Bahan",
         "SET INDUKSI":"Set induksi","AKTIVITI UTAMA":"Aktiviti utama",
         "PENTAKSIRAN":"Penilaian/PBD","PENUTUP":"Penutup"}
+
+def skill_summary(rows):
+    """Compact DSKP science process and hands-on skill evidence for one-page RPH."""
+    out=rows["KEMAHIRAN PROSES SAINS"]
+    manip=rows.get("KEMAHIRAN MANIPULATIF DAN KESELAMATAN","")
+    if manip:
+        out+="\nManipulatif/peraturan: "+manip
+    return out
 
 def source_state(rec):
     sp=rec["sp_code"]
@@ -57,6 +66,16 @@ def sample_rows(rec):
     data=adapt_rows(state,original)
     if data is original or "AKTIVITI UTAMA" not in data:
         raise ValueError("No approved-source activity draft for "+rec["pdp_code"])
+    for sp,task in SECONDARY_PBD.items():
+        if task["pdp"]==rec["pdp_code"]:
+            if state["sp_code"]!=task["primary"]:
+                raise ValueError("Changed source primary-SP for Year3 multi-SP "+rec["pdp_code"])
+            note=(f" PBD bagi SP tambahan {sp}: gunakan lembaran CikguLaju "
+                  f"{secondary_stem(sp)}.pdf (bukan Buku Aktiviti rasmi; "
+                  "semakan panitia masih diperlukan).")
+            data["PENTAKSIRAN"]+=note
+            data["BUKU AKTIVITI / LATIHAN"]+=(" SP tambahan "+sp+" menggunakan "
+                "lembaran PBD asli berasingan, bukan m/s Buku Aktiviti untuk SP utama.")
     return state,data
 
 def _set_doc_cell(cell,text,bold=False):
@@ -67,6 +86,38 @@ def _set_doc_cell(cell,text,bold=False):
     run=p.add_run(text)
     run.bold=bold
     run.font.size=Pt(8)
+
+def split_two_activities(value):
+    """Preserve original activity text and exact Guru/Murid numbered lines."""
+    if not value.startswith("Aktiviti 1"):
+        raise ValueError("Missing Year3 Aktiviti 1 heading")
+    delimiter="\n\nAktiviti 2"
+    if value.count(delimiter)!=1:
+        raise ValueError("Expected two independent Year3 main activities")
+    first,second=value.split(delimiter)
+    second="Aktiviti 2"+second
+    for text,label in ((first,"Aktiviti 1"),(second,"Aktiviti 2")):
+        if not text.startswith(label+" — ") or "\n1. Guru " not in text or "\n2. Murid " not in text:
+            raise ValueError("Malformed teacher/pupil numbered actions "+label)
+    return first,second
+
+def _activity_cell(cell,text):
+    """Bold Aktiviti header, separate 1. Guru and 2. Murid into actual paragraphs."""
+    cell.text=""
+    paragraph=cell.paragraphs[0]
+    paragraph.paragraph_format.space_after=Pt(0)
+    lines=text.split("\n")
+    heading=paragraph.add_run(lines[0])
+    heading.bold=True
+    heading.font.size=Pt(8)
+    for line in lines[1:]:
+        if not line.strip():
+            continue
+        p=cell.add_paragraph()
+        p.paragraph_format.space_after=Pt(0)
+        p.paragraph_format.space_before=Pt(0)
+        run=p.add_run(line)
+        run.font.size=Pt(8)
 
 def word_doc(path,number,unit,state,rows):
     doc=Document()
@@ -96,26 +147,33 @@ def word_doc(path,number,unit,state,rows):
     for ri,line in enumerate(meta):
         for ci,v in enumerate(line):
             _set_doc_cell(tb.cell(ri,ci),v,bold=ci%2==0)
-    details=doc.add_table(rows=4,cols=2);details.style="Table Grid"
+    details=doc.add_table(rows=5,cols=2);details.style="Table Grid"
     det=[
         ("Unit",unit),
         ("Tajuk",rows["TAJUK"]),
-        ("SK / SP",f'{state["sk_code"]}  /  {state["sp_code"]}'),
+        ("SK / SP",f'{state["sk_code"]}  /  {rows.get("STANDARD PEMBELAJARAN", state["sp_code"])}'),
+        ("KPS diintegrasi",skill_summary(rows)),
         ("Objektif / Kriteria",rows["OBJEKTIF PEMBELAJARAN"]+"\n"+rows["KRITERIA KEJAYAAN"]),
     ]
     for ri,(k,v) in enumerate(det):
         _set_doc_cell(details.cell(ri,0),k,True)
         _set_doc_cell(details.cell(ri,1),v)
-    phases=doc.add_table(rows=5,cols=2);phases.style="Table Grid"
+    activity1,activity2=split_two_activities(rows["AKTIVITI UTAMA"])
+    phases=doc.add_table(rows=7,cols=2);phases.style="Table Grid"
     for ri,(k,v) in enumerate([
         ("Set induksi",rows["SET INDUKSI"]),
-        ("Aktiviti utama",rows["AKTIVITI UTAMA"]),
+        ("Aktiviti 1",activity1),
+        ("Aktiviti 2",activity2),
         ("Penilaian/PBD",rows["PENTAKSIRAN"]),
+        ("Buku Aktiviti",rows["BUKU AKTIVITI / LATIHAN"]),
         ("Penutup",rows["PENUTUP"]),
         ("BBM",rows["BAHAN BANTU MENGAJAR"]),
     ]):
         _set_doc_cell(phases.cell(ri,0),k,True)
-        _set_doc_cell(phases.cell(ri,1),v)
+        if k in ("Aktiviti 1","Aktiviti 2"):
+            _activity_cell(phases.cell(ri,1),v)
+        else:
+            _set_doc_cell(phases.cell(ri,1),v)
     p=doc.add_paragraph("Refleksi: "+rows.get("REFLEKSI","__________________"))
     p.paragraph_format.space_before=Pt(2)
     for r in p.runs:r.font.size=Pt(8)
@@ -133,7 +191,7 @@ def pdf_doc(path,number,unit,state,rows):
         pdfmetrics.registerFont(TTFont("SainsReview",FONT))
     normal=ParagraphStyle("body",fontName="SainsReview",fontSize=8.3,
         leading=11.6,spaceAfter=1)
-    strong=ParagraphStyle("label",parent=normal,fontSize=8.0,leading=10)
+    strong=ParagraphStyle("label",parent=normal,fontName="Helvetica-Bold",fontSize=8.0,leading=10)
     heading=ParagraphStyle("heading",parent=normal,fontSize=12,leading=16,
         alignment=1,spaceAfter=3)
     notice=ParagraphStyle("notice",parent=normal,fontSize=7.5,leading=10,
@@ -146,7 +204,7 @@ def pdf_doc(path,number,unit,state,rows):
            Paragraph("DRAF SEMAKAN SUMBER • BELUM DILULUSKAN UNTUK PENGGUNA",notice)]
     info=[
         [p("Tahun 3"),p("Sains"),p("PdP "+f"{number:03d}"),p("Kelas: __________")],
-        [p("Tarikh: ____/____/________"),p("Masa: __:__ – __:__"),p("SK: "+state["sk_code"]),p("SP: "+state["sp_code"])],
+        [p("Tarikh: ____/____/________"),p("Masa: __:__ – __:__"),p("SK: "+state["sk_code"]),p("SP: "+rows.get("STANDARD PEMBELAJARAN", state["sp_code"]))],
     ]
     t=Table(info,colWidths=[136,125,135,136],hAlign="LEFT")
     t.setStyle(TableStyle([
@@ -154,14 +212,18 @@ def pdf_doc(path,number,unit,state,rows):
         ("VALIGN",(0,0),(-1,-1),"TOP"),
         ("TOPPADDING",(0,0),(-1,-1),3),("BOTTOMPADDING",(0,0),(-1,-1),3)]))
     stack.extend([t,Spacer(1,4)])
+    activity1,activity2=split_two_activities(rows["AKTIVITI UTAMA"])
     fields=[
         ("Unit",unit),
         ("Tajuk",rows["TAJUK"]),
+        ("KPS diintegrasi",skill_summary(rows)),
         ("Objektif",rows["OBJEKTIF PEMBELAJARAN"]),
         ("Kriteria kejayaan",rows["KRITERIA KEJAYAAN"]),
         ("Set induksi",rows["SET INDUKSI"]),
-        ("Aktiviti utama",rows["AKTIVITI UTAMA"]),
+        ("Aktiviti 1",activity1),
+        ("Aktiviti 2",activity2),
         ("Penilaian/PBD",rows["PENTAKSIRAN"]),
+        ("Buku Aktiviti",rows["BUKU AKTIVITI / LATIHAN"]),
         ("Penutup",rows["PENUTUP"]),
         ("BBM / Buku Teks",rows["BAHAN BANTU MENGAJAR"]),
         ("Refleksi","____/____ murid mencapai objektif."),
@@ -211,6 +273,12 @@ def main():
             "word_file":w.name,"pdf_file":pdf.name,
             "pdf_a4_one_page":"PASS","docx_a4":"PASS_NO_PAGINATION_PROOF",
             "textbook_source":"CANDIDATE_NOT_VISUALLY_APPROVED",
+            "activity_book_ref":fields["BUKU AKTIVITI / LATIHAN"],
+            "activity_book_url":fields["BUKU AKTIVITI URL"],
+            "activity_book_review_status":"PRINTED_SP_CODE_MATCH__TEACHER_SIGNOFF_PENDING",
+            "secondary_sp":next((sp for sp,t in SECONDARY_PBD.items() if t["pdp"]==code),""),
+            "secondary_sp_pbd_pdf":next((secondary_stem(sp)+".pdf" for sp,t in SECONDARY_PBD.items() if t["pdp"]==code),""),
+            "secondary_sp_pbd_status":"DRAF__NOT_OFFICIAL_BA" if code in {t["pdp"] for t in SECONDARY_PBD.values()} else "",
             "rph_academic_status":"DRAF_NOT_APPROVED",
         })
     with (OUTPUT/"MANIFEST_DRAF.csv").open("w",encoding="utf-8-sig",newline="") as f:
