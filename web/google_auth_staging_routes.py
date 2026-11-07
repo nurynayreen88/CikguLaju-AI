@@ -24,7 +24,7 @@ from web_google_identity_sessions import (
 )
 from web.google_account_store import (
     ensure_google_staging_account, google_staging_account_profile,
-    GoogleAccountUnavailable,
+    verified_google_email, save_verified_google_email, GoogleAccountUnavailable,
 )
 
 bp = Blueprint("google_auth_staging", __name__)
@@ -206,10 +206,13 @@ def google_callback():
             isinstance(item, dict) and item.get("provider") == "google"
             for item in providers):
             return response
-        # OAuth metadata is untrusted for roles/account merging; display only.
+        # Email from server-confirmed Google OAuth only. It becomes the
+        # visible login ID, never a shortcut to Telegram entitlements.
+        email = verified_google_email(identity)
         metadata = identity.get("user_metadata")
         display = metadata.get("full_name") or metadata.get("name") if isinstance(metadata, dict) else ""
         account_id = ensure_google_staging_account(config, subject, display)
+        save_verified_google_email(config, account_id, email)
         ticket = issue_google_identity_ticket(account_id, config["secret"])
     except (GoogleAccountUnavailable, RuntimeError, KeyError, TypeError, ValueError, AttributeError):
         return jsonify({"error": "Pengesahan Google belum tersedia"}), 503
@@ -293,7 +296,7 @@ def google_staging_profile():
     if not config:
         return jsonify({"error": "Google staging login not configured"}), 503
     # The server derives the account from the signed Google-only cookie.
-    # Email, query parameters and Telegram IDs are never used for lookup.
+    # Browser email/query params never used for lookup; signed account ticket only.
     account_id = verify_google_identity_ticket(
         request.cookies.get(TICKET_COOKIE), config["secret"])
     if not account_id or request.args:
@@ -305,6 +308,8 @@ def google_staging_profile():
     response = make_response(jsonify({
         "google_verified": True,
         "display_name": profile["display_name"],
+        "login_id": profile["login_email"],
+        "login_provider": "google",
         "trial_remaining": profile["trial_remaining"],
         "rph_generation_enabled": False,
         "real_payments_enabled": False,
