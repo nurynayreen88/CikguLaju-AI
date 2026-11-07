@@ -37,6 +37,8 @@ jobs:
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_ba_verification_register.py --json pi_ba_verification_register_174.json --csv pi_ba_verification_register_174.csv
       - name: Isolate 523 internal material notes in 690 editor-only RPH previews
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_editor_material_projection.py --output pi_editor_material_preview_690.json
+      - name: Prioritize 696 lesson reviews including 43 generic PBD flags
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_content_review_queue.py --json pi_content_review_queue_696.json --csv pi_content_review_queue_696.csv
       - name: Verify every audit artifact exists, is nonempty, and stays review-only
         shell: bash
         run: |
@@ -51,7 +53,9 @@ jobs:
             pi_ba_provenance_42.json \
             pi_ba_verification_register_174.json \
             pi_ba_verification_register_174.csv \
-            pi_editor_material_preview_690.json; do
+            pi_editor_material_preview_690.json \
+            pi_content_review_queue_696.json \
+            pi_content_review_queue_696.csv; do
             if [ ! -s "$file" ]; then
               echo "::error::Audit artifact missing or empty: $file"
               exit 1
@@ -73,4 +77,6 @@ jobs:
             pi_ba_verification_register_174.json
             pi_ba_verification_register_174.csv
             pi_editor_material_preview_690.json
+            pi_content_review_queue_696.json
+            pi_content_review_queue_696.csv
           retention-days: 30
