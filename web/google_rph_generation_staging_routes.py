@@ -27,6 +27,9 @@ from web.google_rph_bundle_job_store import (
     selection_fingerprint, prepare_private_bundle, publish_rendered_bundle,
     BundleCommitUnconfirmed)
 from web.google_rph_bundle_delivery import _ready_job, RPHDeliveryUnavailable
+from web.staging_production_paid_status_client import (
+    verified_paid_uid_for_rph, PaidStatusBridgeUnavailable,
+)
 
 bp = Blueprint("google_rph_generate_staging", __name__)
 MAX_BODY = 5000
@@ -189,12 +192,15 @@ def issue():
     except (ValueError,KeyError,TypeError,OSError):
         return jsonify({"error":"Lesson dan maklumat guru tidak sah"}),400
     try:
+        prod_paid_uid = verified_paid_uid_for_rph(actor, cfg)
         prof=google_staging_account_profile(cfg,actor.account_id)
-        if prof["trial_remaining"]==0:
+        if prod_paid_uid is None and prof["trial_remaining"]==0:
             from web.google_payment_store import web_payment_access
             paid=web_payment_access(cfg,actor.account_id)
             if not paid.get("payment_access_active"):
                 return jsonify({"error":"10 janaan percuma sudah habis","remaining":0}),403
+    except PaidStatusBridgeUnavailable:
+        return jsonify({"error":"Semakan hak akses belum tersedia. Kredit tidak dipotong."}),503
     except (GoogleAccountUnavailable,KeyError,ValueError,TypeError,RuntimeError):
         return jsonify({"error":"Baki akaun belum boleh disahkan"}),503
     digest=selection_fingerprint(choice,teacher)
@@ -246,6 +252,13 @@ def generate():
     if previous["status"]=="ready":
         return jsonify({"status":"ready","already_ready":True,"job_id":job_id,
                         "downloads":_ready_links(job_id),"staging_only":True})
+    # Revalidate production rights for every new job. Never charge free
+    # credits while a linked production-paid lookup is unavailable.
+    try:
+        prod_paid_uid = verified_paid_uid_for_rph(actor, cfg)
+    except PaidStatusBridgeUnavailable:
+        return jsonify({"error":"Semakan hak akses belum tersedia. Kredit tidak dipotong.",
+                        "job_id":job_id}),503
     try:
         bundle=render_native_google_rph_bundle(
             choice["year"],choice["subject"],choice["unit"],choice["lesson"],
@@ -254,8 +267,17 @@ def generate():
         return jsonify({"error":"RPH native Telegram belum tersedia untuk Lesson ini",
                         "job_id":job_id}),503
     try:
+        # No stale entitlement snapshots: refresh immediately before DB commit.
+        # If revoked while rendering, use the existing trial RPC (if permitted)
+        # instead of granting a new unlimited paid bundle.
+        confirmed_paid_uid = verified_paid_uid_for_rph(actor, cfg)
+        kwargs = ({"production_paid_telegram_user_id": confirmed_paid_uid}
+                  if confirmed_paid_uid is not None else {})
         result=publish_rendered_bundle(
-            cfg,actor,job_id,digest,bundle["word"],bundle["pdf"])
+            cfg,actor,job_id,digest,bundle["word"],bundle["pdf"],**kwargs)
+    except PaidStatusBridgeUnavailable:
+        return jsonify({"error":"Semakan hak akses belum tersedia. Kredit tidak dipotong.",
+                        "job_id":job_id}),503
     except (BundleCommitUnconfirmed,ValueError):
         return jsonify({"error":"Status simpanan/potongan belum pasti. Semak semula status janaan ini.",
                         "job_id":job_id,"outcome_unconfirmed":True}),503
@@ -264,6 +286,7 @@ def generate():
                         "downloads":_ready_links(job_id),
                         "remaining":result.get("remaining"),
                         "already_ready":bool(result.get("already_ready",False)),
+                        "access_mode":result.get("access_mode"),
                         "staging_only":True})
     if result.get("allowed") is False:
         return jsonify({"error":"Baki 10 janaan telah habis",
