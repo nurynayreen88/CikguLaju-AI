@@ -225,7 +225,7 @@ def admin_receipt(request_id):
     if result is None:
         return jsonify({"error": "Resit tidak ditemui"}), 404
     raw, mime = result
-    response = send_file(BytesIO(raw), mimetype=mime, as_attachment=True,
+    response = send_file(BytesIO(raw), mimetype=mime, as_attachment=False,
                          download_name="CikguLaju_resit" + {
                              "application/pdf": ".pdf", "image/png": ".png",
                              "image/jpeg": ".jpg", "image/webp": ".webp"}[mime],
