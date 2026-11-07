@@ -21,6 +21,13 @@ from web_v1_verified_pdp import list_explicit_pjpk_entries
 from web_v1_entitlements import display_trusted_account
 PREVIEW = ROOT / "web_v1_static_preview" / "index.html"
 app = Flask(__name__)
+# Isolated Google identity verification: explicitly enabled on a staging service
+# only. Do not confer Telegram login or RPH privileges to this OAuth ticket.
+if os.environ.get("CIKGULAJU_GOOGLE_AUTH_STAGING_ENABLED") == "1":
+    from werkzeug.middleware.proxy_fix import ProxyFix
+    from web.google_auth_staging_routes import bp as google_staging_bp
+    app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1)
+    app.register_blueprint(google_staging_bp)
 from web_v1_telegram_auth_routes import auth_blueprint
 app.register_blueprint(auth_blueprint)
 from web.english_catalog_http import create_english_catalog_blueprint
