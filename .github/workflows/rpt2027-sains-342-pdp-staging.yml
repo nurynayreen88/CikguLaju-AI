@@ -13,6 +13,9 @@ on:
       - 'audits/sains_5_missing_topic_units_10_candidate_pdp_21_sp_20261107_DRAF.json'
       - 'scripts/build_rpt2027_sains_10_missing_topic_candidate_pdp_staging.py'
       - 'tests/test_rpt2027_sains_10_missing_topic_candidate_pdp_staging.py'
+      - 'rpt_2027/common/sains_kssr2017_edition_release_guard.py'
+      - 'audits/sains_rpt2027_kssr2017_legacy_code_conflict_20261107.json'
+      - 'tests/test_sains_2027_kssr2017_edition_release_guard.py'
       - '.github/workflows/rpt2027-sains-342-pdp-staging.yml'
   workflow_dispatch:
 permissions:
@@ -34,6 +37,8 @@ jobs:
         run: |
           python -m scripts.audit_sains_rpt2027_uncovered_verified_sp_staging
           python -m unittest tests.test_sains_rpt2027_uncovered_verified_sp_staging -v
+      - name: Keep all legacy Sains source versions blocked against KSSR2017
+        run: python -m unittest tests.test_sains_2027_kssr2017_edition_release_guard -v
       - name: Audit 29 unrepresented content SP as 12 actual DSKP SK topics
         run: |
           python -m unittest tests.test_sains_2027_29_sp_12_topic_clusters_staging -v
