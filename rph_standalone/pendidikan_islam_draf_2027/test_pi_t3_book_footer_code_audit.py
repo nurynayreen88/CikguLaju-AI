@@ -23,6 +23,8 @@ class PIYear3BookFooterCodeTests(unittest.TestCase):
         self.assertEqual((r["dskp_pdf_page"],r["dskp_printed_page"]),(51,39))
         self.assertEqual(r["tasmi_verse_based_lessons_without_three_level_sp"],37)
         self.assertEqual(r["source_sp_code_occurrences"],177)
+        self.assertEqual(r["objective_and_pbd_drafted_to_dskp_643_645"],1)
+        self.assertEqual(r["objective_and_pbd_expert_approvals"],0)
         self.assertEqual(r["distinct_year3_codes_used"],83)
 
     def test_source_gap_not_mislabelled_curriculum_error(self):
@@ -36,6 +38,7 @@ class PIYear3BookFooterCodeTests(unittest.TestCase):
         self.assertEqual(exception["missing_book_footer_codes"],"6.4.3")
         self.assertIs(exception["dskp_6433_manual_visual_reference"],True)
         self.assertIs(exception["objective_2_needs_sp_alignment_review"],True)
+        self.assertIs(exception["objective_2_3_dskp_aligned_draft"],True)
         self.assertIs(exception["source_material_original_preserved"],True)
         self.assertIs(exception["source_book_code_presence_only"],False)
         for x in r["rows"]:
