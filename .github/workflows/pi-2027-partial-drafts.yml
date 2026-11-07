@@ -80,3 +80,35 @@ jobs:
             pi_content_review_queue_696.json
             pi_content_review_queue_696.csv
           retention-days: 30
+
+  physical-word-pdf-a4:
+    name: Audit temporary Word/PDF A4 for 687 non-held drafts (NO_GO)
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install isolated print dependencies and Amiri Jawi font
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-hosny-amiri fonts-liberation
+          python -m pip install --disable-pip-version-check python-docx==1.1.2 pypdf==5.1.0
+          fc-match "Amiri" | head -1
+      - name: Convert all 687 non-held RPH drafts to temporary Word and PDF
+        run: |
+          python rph_standalone/pendidikan_islam_draf_2027/pi_word_pdf_print_audit.py \
+            --output build/pi_word_pdf_a4_696_report.json --batch-size 25
+      - name: Upload only QA report (never distribute draft Word/PDF files)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pi-2027-a4-print-qa-review-only
+          path: |
+            build/pi_word_pdf_a4_696_report.json
+            build/pi_word_pdf_a4_696_report.csv
+          if-no-files-found: warn
+          retention-days: 30
