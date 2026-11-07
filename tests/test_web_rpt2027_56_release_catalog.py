@@ -48,13 +48,23 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
         self.assertEqual(len(data["subjects"]),12)
         self.assertEqual(data["total_rpt"],56)
         self.assertEqual(data["available_rpt"],56)
-        self.assertEqual(sum(len(x["years"]) for x in data["subjects"]),56)
+        self.assertEqual(sum(len(x["years"]) for x in data["subjects"]),66)
+        self.assertEqual(data["total_display_choices"],66)
+        self.assertEqual(data["year1_coming_soon"],10)
         self.assertTrue(all(y["download_enabled"] and y["pdf_ready"]
-                            for s in data["subjects"] for y in s["years"]))
+                            for s in data["subjects"] for y in s["years"] if y["year"]>=2))
+        self.assertEqual(len([y for s in data["subjects"] for y in s["years"]
+                              if y["year"]==1]),10)
+        self.assertTrue(all(not y["download_enabled"] and not y["pdf_ready"]
+                            and y["status"].startswith("KP2027")
+                            for s in data["subjects"] for y in s["years"] if y["year"]==1))
         self.assertEqual(set(SUBJECTS["rbt"][1]),{4,5,6})
         self.assertEqual(set(SUBJECTS["sejarah"][1]),{4,5,6})
         self.assertNotIn("sains:1",expected_pairs())
         self.assertTrue(pdf_ready("sains",6,root=self.root))
+        self.assertFalse(pdf_ready("sains",1,root=self.root))
+        self.assertNotIn(1,[r["year"] for x in data["subjects"] if x["code"]=="rbt" for r in x["years"]])
+        self.assertNotIn(1,[r["year"] for x in data["subjects"] if x["code"]=="sejarah" for r in x["years"]])
         with self.assertRaises(ValueError):
             pdf_path("rbt",2,root=self.root)
 
@@ -104,6 +114,8 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
         with (patch("web.rpt_2027_all_http._account",return_value=({"telegram_user_id":42},None)),
               patch("web.rpt_2027_all_http._has_paid_access",return_value=True)):
             self.assertEqual(self.client.get("/api/rpt/2027/all/rbt/2.pdf").status_code,404)
+            self.assertEqual(self.client.get("/api/rpt/2027/all/sains/1.pdf").status_code,404)
+            self.assertEqual(self.client.get("/api/rpt/2027/all/english/1.pdf").status_code,404)
             self.assertEqual(self.client.get("/api/rpt/2027/all/../../etc/passwd").status_code,404)
 
 if __name__=="__main__":

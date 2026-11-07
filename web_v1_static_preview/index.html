@@ -349,7 +349,9 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 .rpt-year-card strong{font-size:.86rem;color:#173d55}
 .rpt-year-status{font-size:.68rem;color:#66551f;font-weight:750;letter-spacing:.03em}
 .rpt-year-link{display:block;font-size:.78rem;text-align:center;text-decoration:none;border-radius:8px;background:#087568;color:#fff!important;padding:8px 4px;font-weight:750}
-.rpt-year-link:hover{background:#075f55}
+.rpt-year-link:hover:not(:disabled){background:#075f55}
+.rpt-year-link{border:0;cursor:pointer;font:inherit}
+.rpt-year-link:disabled{background:#e5e9ed;color:#6b7883!important;cursor:not-allowed}
 .rpt-year-link:focus-visible{outline:3px solid #ffbc47;outline-offset:2px}
 .rpt-year-muted{color:#71818b;font-size:.74rem;line-height:1.35}
 @media(max-width:440px){.rpt-all-list{grid-template-columns:1fr}.rpt-years-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -444,7 +446,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <section id="view-rpt" class="app-view" aria-labelledby="rpt2027-heading" hidden>
 <section id="rpt2027-panel" aria-labelledby="rpt2027-heading">
  <h3 id="rpt2027-heading">📅 RPT 2027 — Semua Subjek</h3>
- <p>Semua RPT yang tersedia dipaparkan di bawah mengikut subjek dan tahun. <strong>RPT DRAF/SEPARA DRAF untuk semakan guru sebelum digunakan di sekolah.</strong> Muat turun adalah untuk Rakan Pembangun atau langganan aktif; 10 janaan RPH percuma tidak dipotong. Fail RPT DRAF baharu dimuat turun dalam bentuk asal dan tidak semestinya mempunyai nama atau logo sekolah yang diisi secara automatik.</p>
+ <p>Semua RPT yang tersedia dipaparkan di bawah mengikut subjek dan tahun. <strong>RPT DRAF/SEPARA DRAF untuk semakan guru sebelum digunakan di sekolah.</strong> Muat turun adalah untuk Rakan Pembangun atau langganan aktif; 10 janaan RPH percuma tidak dipotong. Pada muat turun, muka depan ditambah secara automatik dengan logo sekolah, nama sekolah dan nama guru yang disimpan dalam Profil Guru. Fail RPT asal dikekalkan. <strong>Tahun 1 KP2027 boleh dilihat, tetapi muat turun belum dibuka.</strong></p>
  <p id="rpt-catalog-summary" class="rpt-catalog-summary" role="status">Memuatkan semua RPT 2027…</p>
  <div id="rpt-all-list" class="rpt-all-list" aria-label="Senarai RPT 2027 mengikut subjek"></div>
  <h4>Atau pilih terus mengikut subjek dan tahun</h4>
@@ -455,7 +457,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
  <button id="rpt-download" type="button" disabled>Muat turun RPT 2027 (PDF)</button>
  <a id="rpt-download-mobile" href="#" target="_blank" rel="noopener" aria-label="Muat turun RPT 2027 PDF melalui pautan terus" hidden>📥 Muat Turun RPT 2027 (PDF)</a>
  <p id="rpt-status" class="notice" role="status"></p>
- <p class="notice rpt-phone-help">Pada telefon, jika PDF dibuka dalam pelayar, pilih Simpan atau Muat Turun. Tahun 1 KP2027 belum diterbitkan dalam koleksi ini.</p>
+ <p class="notice rpt-phone-help">Pada telefon, fail PDF dengan muka depan Profil Guru dimuat turun terus. Jika logo atau nama belum disimpan, buka Profil Guru untuk melengkapkannya.</p>
 </section></section>
 <section id="view-account" class="app-view" aria-labelledby="view-account-heading" hidden>
 <h2 id="view-account-heading">Profil Guru</h2>
@@ -560,6 +562,8 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </div>
 </section><footer class="foot">CikguLaju AI · Web</footer>
 </div>
+<script src="/assets/pdf-lib.min.js?v=1.17.1"></script>
+<script src="/assets/rpt-personalize.js?v=20261108"></script>
 <script>
 "use strict";
 window.onCikguLajuTelegramAuth=async function(user){
@@ -1128,16 +1132,24 @@ function renderAllRptCards(data){
    status.textContent=typeof year.status==="string"?year.status:"DRAF";
    card.append(title,status);
    if(year.pdf_ready===true)ready++;
-   if(year.download_enabled===true){
-    const link=document.createElement("a");
-    link.className="rpt-year-link";link.textContent="Muat turun PDF";
-    link.href="/api/rpt/2027/all/"+encodeURIComponent(item.code)+"/"+year.year+".pdf";
-    link.target="_blank";link.rel="noopener";
-    link.setAttribute("aria-label","Muat turun RPT "+item.label+" Tahun "+year.year+" PDF");
-    card.append(link);
+   if(year.year===1){
+    const disabled=document.createElement("button");
+    disabled.className="rpt-year-link";disabled.type="button";disabled.disabled=true;
+    disabled.textContent="Belum boleh muat turun";
+    disabled.setAttribute("aria-label","RPT Tahun 1 KP2027 belum dibuka untuk muat turun");
+    card.append(disabled);
+   }else if(year.download_enabled===true){
+    const button=document.createElement("button");button.type="button";
+    button.className="rpt-year-link";button.textContent="Muat turun PDF";
+    button.setAttribute("aria-label","Muat turun RPT "+item.label+" Tahun "+year.year+" PDF");
+    button.addEventListener("click",()=>{
+     void window.downloadCikguLajuRPT(item.code,year.year,item.label,
+                                     document.getElementById("rpt-status"),button);
+    });
+    card.append(button);
    }else{
     const unavailable=document.createElement("span");unavailable.className="rpt-year-muted";
-    unavailable.textContent=year.pdf_ready===true?"Log masuk dengan akses berbayar":"PDF belum dipasang";
+    unavailable.textContent=year.pdf_ready===true?"Akses berbayar diperlukan":"PDF belum dipasang";
     card.append(unavailable);
    }
    card.title=typeof year.note==="string"?year.note:"";
@@ -1145,8 +1157,9 @@ function renderAllRptCards(data){
   }
   group.appendChild(years);panel.appendChild(group);
  }
- summary.textContent=subjects.length+" subjek • "+ready+"/"+listed+
-  " PDF tersedia"+(data.allowed===true?" untuk dimuat turun.":" untuk dilihat. Muat turun memerlukan akses berbayar.");
+ summary.textContent=subjects.length+" subjek • "+ready+" PDF RPT tersedia • "+
+  (listed-ready)+" pilihan belum tersedia termasuk KP2027 Tahun 1"+
+  (data.allowed===true?". Muat turun PDF dengan muka depan Profil Guru.":". Muat turun memerlukan akses berbayar.");
 }
 const rptSubject=document.getElementById("rpt-subject"),rptYear=document.getElementById("rpt-year"),rptDownload=document.getElementById("rpt-download"),rptMobileLink=document.getElementById("rpt-download-mobile"),rptStatus=document.getElementById("rpt-status");
 let rptCatalog=null;
@@ -1192,18 +1205,22 @@ function refreshRptDownload(){
  if(ready){
   // Same-origin private PDF, authenticated by the normal Telegram Web cookie.
   // Native browser navigation preserves the user's click gesture on phones.
-  rptMobileLink.href="/api/rpt/2027/all/"+
-    encodeURIComponent(selection.item.code)+"/"+selection.year.year+".pdf";
+  // Same-origin download triggered by the personalization script.
+  rptMobileLink.href="#";
  }else{
   rptMobileLink.removeAttribute("href");
  }
  if(!selection){rptStatus.textContent="Pilih subjek dan tahun.";return;}
+ if(selection.year.year===1){rptStatus.textContent="Tahun 1 KP2027 — Akan Datang. Butang muat turun belum dibuka.";return;}
  if(!selection.year.pdf_ready){rptStatus.textContent="RPT "+selection.item.label+" Tahun "+selection.year.year+" — fail PDF belum tersedia. Tiada fail subjek/tahun lain digunakan.";return;}
  rptStatus.textContent="RPT "+selection.item.label+" Tahun "+selection.year.year+" — "+selection.year.status+(ready?" · PDF tersedia untuk muat turun.":" · akses berbayar diperlukan.");
 }
-rptMobileLink.addEventListener("click",()=>{
- if(!rptChoice()?.year.download_enabled)return;
- rptStatus.textContent="Membuka muat turun PDF. Jika PDF dipaparkan dalam pelayar, gunakan menu Simpan atau Muat Turun.";
+rptMobileLink.addEventListener("click",(event)=>{
+ event.preventDefault();
+ const item=rptChoice();
+ if(!item?.year.download_enabled)return;
+ void window.downloadCikguLajuRPT(item.item.code,item.year.year,item.item.label,
+                                   rptStatus,rptDownload);
 });
 rptSubject.addEventListener("change",()=>{
  rptDownload.disabled=true;
@@ -1218,21 +1235,11 @@ rptSubject.addEventListener("change",()=>{
  rptYear.disabled=false;rptStatus.textContent="Pilih tahun untuk RPT "+item.label+".";
 });
 rptYear.addEventListener("change",refreshRptDownload);
-rptDownload.addEventListener("click",async()=>{
+rptDownload.addEventListener("click",()=>{
  const selection=rptChoice();
  if(!selection||!selection.year.download_enabled)return;
- const subjectCode=selection.item.code,chosen=selection.year.year;
- rptDownload.disabled=true;rptStatus.textContent="Menyediakan PDF RPT "+selection.item.label+" Tahun "+chosen+"…";
- try{
-  const r=await fetch("/api/rpt/2027/all/"+encodeURIComponent(subjectCode)+"/"+chosen+".pdf",{credentials:"same-origin",cache:"no-store"});
-  if(!r.ok){if(r.status===401)throw Error("Sila log masuk semula.");if(r.status===403)throw Error("RPT khusus untuk Rakan Pembangun atau langganan aktif.");throw Error("PDF RPT belum tersedia (HTTP "+r.status+").");}
-  const blob=await r.blob();
-  if(!r.headers.get("content-type")?.toLowerCase().startsWith("application/pdf")||blob.size<8000)throw Error("Fail PDF tidak sah.");
-  const url=URL.createObjectURL(blob),a=document.createElement("a");
-  a.href=url;a.download="RPT_"+subjectCode.toUpperCase()+"_TAHUN_"+chosen+"_2027_"+selection.year.status+".pdf";
-  document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);
-  rptStatus.textContent="PDF RPT "+selection.item.label+" Tahun "+chosen+" disediakan.";
- }catch(e){rptStatus.textContent=e.message;}finally{refreshRptDownload();}
+ void window.downloadCikguLajuRPT(selection.item.code,selection.year.year,
+      selection.item.label,rptStatus,rptDownload);
 });
 teacherClass.addEventListener("change",toggleTeacherClassOther);
 for(const field of [teacherClass,teacherClassOther,teacherDate,teacherTimeStart,teacherTimeEnd,teacherStudents]){
