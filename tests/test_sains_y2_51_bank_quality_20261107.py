@@ -4,7 +4,8 @@ import unittest
 from web.sains_y2_51_activities_draf_20261107 import BANK
 from tools.sains_buku_aktiviti_mapping_20261107 import activity_for
 from tools.render_sains_y2_51_rph_draf_20261107 import (
-    Y2_SOURCE_CONFLICTS, CORRECTED_CANDIDATE_TITLE, markdown, kps_for, book_page_cues
+    Y2_SOURCE_CONFLICTS, CORRECTED_CANDIDATE_TITLE, markdown, kps_for, book_page_cues,
+    verified_original_textbook_pages, get_y2_records
 )
 
 
@@ -51,6 +52,24 @@ class TestYear2ScienceBank(unittest.TestCase):
         self.assertEqual(cues["10.1.6"]["printed_page_candidates"],[124])
         self.assertTrue(all(x["status"]=="DRAF_PAGE_CUE_NOT_APPROVED" for x in cues.values()))
 
+    def test_all_51_actual_original_book_printed_pages_and_sp_codes_visually_checked(self):
+        original=book_page_cues()
+        verified=verified_original_textbook_pages()
+        self.assertEqual(len(verified),51)
+        self.assertEqual(len({r["printed_page"] for r in verified.values()}),43)
+        self.assertEqual(set(original),set(verified))
+        self.assertTrue(all(x["book_printed_sp_code_visible"] and x["book_page_number_visible"]
+                            for x in verified.values()))
+        self.assertTrue(all(x["teacher_academic_equivalence_approved"] is False
+                            for x in verified.values()))
+        self.assertEqual(verified["3.1.3"]["printed_page"],28)
+        self.assertEqual(verified["10.1.6"]["printed_page"],124)
+        self.assertIn("campuran",verified["10.1.6"]["note"])
+        for row in get_y2_records():
+            self.assertEqual(int(row["book_page_cue"]),verified[row["sp"]]["printed_page"])
+            self.assertIn("PEDAGOGY_PENDING",row["book_page_status"])
+            self.assertIsNone(row["quality_score_percent"])
+
     def test_draft_markdown_has_required_separate_numbered_actions(self):
         item={
           "pdp_number":3,"unit":"Unit 3: Manusia","candidate_title":
@@ -66,7 +85,7 @@ class TestYear2ScienceBank(unittest.TestCase):
         self.assertIn("\n1. Guru ",md)
         self.assertIn("\n2. Murid ",md)
         self.assertIn("DRAF/HOLD",md)
-        self.assertIn("Buku Teks Tahun 2 halaman belum disahkan",md)
+        self.assertIn("nombor halaman & label SP diperiksa",md)
 
 
 if __name__ == "__main__":
