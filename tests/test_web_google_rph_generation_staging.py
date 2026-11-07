@@ -33,6 +33,10 @@ class GoogleGenerationStagingTests(unittest.TestCase):
         app.config["TESTING"]=True
         app.register_blueprint(bp)
         self.client=app.test_client()
+        allow=patch("web.google_rph_generation_staging_routes._staging_test_account",
+                    return_value=ACCOUNT)
+        allow.start()
+        self.addCleanup(allow.stop)
 
     def post(self,path,payload,origin=CFG["origin"]):
         return self.client.post(path, json=payload, headers={
@@ -58,6 +62,32 @@ class GoogleGenerationStagingTests(unittest.TestCase):
             with patch("web.google_rph_generation_staging_routes._enabled_config",
                        return_value=CFG):
                 self.assertIsNone(_generator_config())
+
+    def test_unlisted_google_login_cannot_issue_or_enable_generation(self):
+        other = from_verified_google_account(
+            "c1351d2d-591d-4ae4-8c92-b0e14d2c3234",
+            {"account_id":"c1351d2d-591d-4ae4-8c92-b0e14d2c3234",
+             "trial_remaining":10})
+        with (patch("web.google_rph_generation_staging_routes._actor",
+                    return_value=(other,None)),
+              patch("web.google_rph_generation_staging_routes._generator_config",
+                    return_value=CFG)):
+            cap=self.client.get("/api/google-staging/web/rph/capabilities")
+            self.assertFalse(cap.json["generation_enabled"])
+            self.assertEqual(self.post("/api/google-staging/web/rph/issue",REQUEST).status_code,403)
+            self.assertEqual(self.post("/api/google-staging/web/rph/generate",
+                {"selection":SELECT,"teacher":TEACHER,"ticket":"fake"}).status_code,403)
+
+    def test_missing_allowlist_keeps_staging_gate_off(self):
+        with (patch("web.google_rph_generation_staging_routes._staging_test_account",
+                    return_value=None),
+              patch.dict("os.environ",{
+                  "CIKGULAJU_GOOGLE_RPH_STAGING_ENABLED":"1",
+                  "CIKGULAJU_AUTHORITATIVE_API_URL":"https://cikgulaju-ai.onrender.com",
+                  "CIKGULAJU_AUTHORITATIVE_API_TOKEN":"x"*40}),
+              patch("web.google_rph_generation_staging_routes._enabled_config",
+                    return_value=CFG)):
+            self.assertIsNone(_generator_config())
 
     def test_signed_ticket_expires_and_cannot_be_edited_or_reused_for_other_account(self):
         signed=_token(ACCOUNT,JOB,DIGEST,SECRET,issued=1000)
