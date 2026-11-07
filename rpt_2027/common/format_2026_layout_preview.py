@@ -167,7 +167,7 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
     usable = w - lm - rm
 
     def p(text, *, size=7.5, leading=11.3, strong=False, color="#263b4e", center=False):
-        uses_arabic = any("\\u0600" <= ch <= "\\u08ff" for ch in str(text))
+        uses_arabic = any("\u0600" <= ch <= "\u08ff" for ch in str(text))
         style = ParagraphStyle(
             "rpt", fontName=(arabic_heavy if strong else arabic_font) if uses_arabic
             else (bold if strong else font),
