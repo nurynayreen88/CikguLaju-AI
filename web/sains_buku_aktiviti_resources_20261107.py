@@ -27,6 +27,9 @@ def proposed_material(subject,year,pdp_code,sp):
                              else "RELATED_ONLY__DO_NOT_ASSIGN_AS_SP_PBD"),
         "pdp_code":pdp_code,
         "sp":sp,
-        "curriculum_review_status":"TOC_VERIFIED__EXERCISE_SP_APPROVAL_PENDING",
+        "curriculum_review_status":"PRINTED_PAGE_CONTENT_VISUALLY_REVIEWED__TEACHER_APPROVAL_PENDING",
+        "content_review_status":e["page_content_review"],
+        "teacher_usage_guidance":e["lesson_guidance"],
+        "teacher_academic_approved":False,
         "ready_for_runtime":False,
     }
