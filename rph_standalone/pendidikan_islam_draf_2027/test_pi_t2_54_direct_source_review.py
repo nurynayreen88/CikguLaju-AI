@@ -15,6 +15,7 @@ class PIYear2DSKP54DirectEvidenceTests(unittest.TestCase):
         v = self.result
         self.assertEqual(v["directly_cross_checked_lesson_count"], 3)
         self.assertEqual(v["sp_543_jawi_wording_corrections"], 2)
+        self.assertEqual(v["staging_rph_material_book_page_references_added"],3)
         self.assertEqual(v["book_sp_footer_page_evidence_count"], 5)
         self.assertEqual(v["dskp_sp_codes_observed"], ["5.4.1","5.4.2","5.4.3","5.4.4"])
         self.assertEqual(v["book_page_to_pdf_offset"],10)
@@ -36,6 +37,9 @@ class PIYear2DSKP54DirectEvidenceTests(unittest.TestCase):
         affected={x["id"] for x in v["rows"] if x["dskp_543_adab_adab_wording_corrected"]}
         self.assertEqual(affected,{"T2-L105","T2-L108"})
         for r in v["rows"]:
+            self.assertEqual(len(r["source_supported_material_reference_pages"].split("|")),
+                             1 if r["id"]=="T2-L102" else 2)
+            self.assertIs(r["source_original_material_line_preserved"],True)
             self.assertIs(r["verified_book_sp_footer_correspondence"],True)
             self.assertIs(r["original_sk_sp_preserved"],True)
             self.assertIs(r["original_objective_preserved"],True)
