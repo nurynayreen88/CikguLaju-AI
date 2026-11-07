@@ -27,7 +27,7 @@ from web.native_google_rph_bundle_store import (
     prepare,publish,owned_job,ready_download,NativeBundleUnavailable)
 from web.google_native_rph_bundle import (
     render_native_google_rph_bundle, NativeGoogleRPHNotReady, _teacher_fields)
-from web.google_rph_bundle_job_store import selection_fingerprint
+from web.native_google_rph_integrity import selection_fingerprint
 
 bp=Blueprint("cikgulaju_native_google_rph",__name__)
 SUBJECTS={"ENGLISH":"English","MORAL":"Pendidikan Moral",
