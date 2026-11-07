@@ -41,7 +41,12 @@ def build_queue(root=ROOT):
                 sp = None
             elif "SUMBER_KRITIKAL_BELUM_LENGKAP" in flags:
                 priority = "P1_CRITICAL_SOURCE"
-                action = "Dapatkan matan/julat ayat asal yang lengkap; semak pakar sebelum isi aktiviti."
+                if record.get("staging_hadith_original_source_verified"):
+                    action = ("Petikan hadis sudah disemak terus pada Buku Teks T4 ms51 dan DSKP ms27; "
+                              "semak ejaan Jawi, lafaz petikan berelipsis, kesesuaian aktiviti/PBD "
+                              "dan kelulusan pakar sebelum buka pratonton.")
+                else:
+                    action = "Dapatkan matan/julat ayat asal yang lengkap; semak pakar sebelum isi aktiviti."
                 sp = record["fields"]["sp"]
             elif ("PBD_TIDAK_KHUSUS_KEPADA_SP" in flags or
                   "PBD_SP_SASARAN_BELUM_DISAH_PAKAR" in flags or
