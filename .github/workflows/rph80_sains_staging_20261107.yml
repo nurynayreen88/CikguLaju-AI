@@ -37,6 +37,8 @@ on:
       - "tools/check_sains_y5_83_word_a4_20261107.py"
       - "tests/test_sains_y5_83_bank_quality_20261107.py"
       - "tools/audit_sains_y6_84_source_preflight_20261107.py"
+      - "audits/sains_y6_2021_textbook_toc_topic_ranges_20261107.json"
+      - "tools/sains_y6_textbook_toc_20261107.py"
       - "web/sains_y6_draf_bank_part1_20261107.tsv"
       - "web/sains_y6_draf_bank_part2_20261107.tsv"
       - "web/sains_y6_draf_bank_part3_20261107.tsv"
