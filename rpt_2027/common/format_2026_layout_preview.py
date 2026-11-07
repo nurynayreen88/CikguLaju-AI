@@ -159,7 +159,15 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
             fontSize=size, leading=leading, textColor=colors.HexColor(color),
             wordWrap="CJK", spaceBefore=0, spaceAfter=0, alignment=1 if center else 0
         )
-        return Paragraph(escape(normalize_pdf_text(text)).replace("\n", "<br/>"), style)
+        printable = normalize_pdf_text(text)
+        if any("\\u0600" <= ch <= "\\u08ff" for ch in printable):
+            from arabic_reshaper import reshape
+            from bidi.algorithm import get_display
+            printable = "\\n".join(
+                get_display(reshape(piece), base_dir="R") if piece.strip() else piece
+                for piece in printable.split("\\n")
+            )
+        return Paragraph(escape(printable).replace("\\n", "<br/>"), style)
 
     def cell(text, strong=False):
         return p(text, strong=strong)
