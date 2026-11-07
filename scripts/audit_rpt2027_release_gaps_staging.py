@@ -11,6 +11,7 @@ from pathlib import Path
 
 from scripts.build_rpt_2027_standard_preview import rbt_records
 from scripts.build_rpt_2027_remaining_four_subjects_staging import arabic_records, pi_records
+from rpt_2027.common.sains_kssr2017_edition_release_guard import edition_conflict
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "staging/rpt_2027_seragam_2026/release_gap_audit_20261107_DRAF.json"
@@ -64,6 +65,7 @@ def build_audit():
     source = json.loads((ROOT / "audits/rbt_t4_t6_rpt2026_23_sp_week_block_source_evidence_20261107.json").read_text("utf-8"))
     if source.get("status") != "SOURCE_2026_WEEK_BLOCK_EVIDENCE_ONLY_NOT_2027_SCHEDULE" or source["listed_year_sp_codes"] != 23:
         raise ValueError("RBT calendar-reference source changed or was prematurely approved")
+    kssr2017=edition_conflict()
     result = {
         "date": "2026-11-07",
         "status": "STAGING_ONLY_BLOCKED_NOT_RELEASE_READY",
@@ -95,12 +97,19 @@ def build_audit():
         "sains": {
             "source_snapshot_v2582_pdp": SAINS_SOURCE,
             "partial_pdp": sum(SAINS_SOURCE.values()),
-            "reason": "342 historical sourced PdP verified only as partial. v26 2026 RPT entries are topic/unit blocks, not one per future lesson.",
+            "snapshot_status": "LEGACY_INTERNAL_CODES_NOT_CURRENT_KSSR_VERIFIED",
+            "kssr2017_original_dskp_edition_conflict": True,
+            "verified_flag_from_database_is_insufficient": True,
+            "external_evidence_conflicts": len(kssr2017["conflict_samples"]),
+            "years_requiring_full_code_text_remap": kssr2017["requires_full_reverification_years"],
+            "source_audit_reference": "audits/sains_rpt2027_kssr2017_legacy_code_conflict_20261107.json",
+            "ready_for_web_telegram": False,
+            "reason": "342 v25.82 historical PdP and 422 v26 internal SP are NOT verified against independent KPM KSSR Semakan 2017. External documents show code/topic conflicts in Years4–6; 80 legacy code gaps and 10 drafted proposals are forensic only.",
         },
         "remaining_releases": [
             "Independent DSKP full Arabic sentence transcription/visual signoff",
             "Six independent PI lesson/source recovery or expressly omitted with approved plan",
-            "Sains full 2027 lesson sequence audited against actual current canonical RPH and verified sources",
+            "Sains Years4–6: replace legacy curriculum code mapping with independent original KPM KSSR2017 DSKP before topic/RPH/scheduling audit",
             "RBT subject week allocations based on school teaching frequency/cuti and 2026 source rhythm",
             "All subject page/activity signoff and A/B state holiday/teacher timetable check",
             "Authenticated Telegram/Web same source and end-to-end Word/PDF download test",
