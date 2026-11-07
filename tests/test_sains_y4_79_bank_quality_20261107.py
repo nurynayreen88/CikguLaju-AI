@@ -3,7 +3,7 @@ import unittest
 
 from web.sains_y4_79_activity_bank_draf_20261107 import BANK
 from tools.render_sains_y4_79_rph_draf_20261107 import (
-    TEXTBOOK_STATUS, kps_for, markdown, KPS
+    TEXTBOOK_STATUS, kps_for, markdown, KPS, textbook_unit_toc, get_y4_records
 )
 
 
@@ -42,6 +42,22 @@ class TestSainsYear4Bank(unittest.TestCase):
         self.assertEqual(KPS["1.1.8"],"Mentafsir data")
         self.assertIn("1.1.3 Mengukur",kps_for("10.1.2"))
         self.assertIn("1.1.2 Mengelas",kps_for("3.2.3"))
+
+    def test_all_79_source_sps_have_toc_unit_range_but_no_exact_page(self):
+        refs=textbook_unit_toc()
+        self.assertEqual(len(refs),19)
+        rows=get_y4_records()
+        self.assertEqual(len(rows),79)
+        self.assertEqual(len({x["pdp_code"] for x in rows}),79)
+        self.assertEqual({x["sp"] for x in rows},set(BANK))
+        self.assertTrue(all(x["textbook_pages"] is None for x in rows))
+        for item in rows:
+            self.assertEqual(item["textbook_toc_unit"],int(item["sk"].split(".")[0]))
+            self.assertIn("ISI KANDUNGAN SAHAJA",item["textbook_unit_toc_note"])
+            self.assertIn("m/s tepat SP belum disahkan",item["textbook_unit_toc_note"])
+            self.assertLess(item["textbook_toc_range"][0],item["textbook_toc_range"][1])
+            self.assertIsNone(item["curriculum_quality_percent"])
+            self.assertEqual(item["status"],"DRAF_HOLD")
 
     def test_unverified_book_pages_never_fabricated(self):
         self.assertIn("NO_PAGE_REFERENCE_APPROVED",TEXTBOOK_STATUS)
