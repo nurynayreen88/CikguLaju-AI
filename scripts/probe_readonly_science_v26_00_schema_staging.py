@@ -33,5 +33,32 @@ for table in tables:
     print("TABLE",table,"COLUMNS",cols)
     # Only aggregate statistics, never row values from potentially user-linked tables.
     print("ROWS",table,conn.execute(f'SELECT COUNT(*) FROM "{table}"').fetchone()[0])
+print("SAINS_RPT_GROUPS", conn.execute(
+    "SELECT academic_year, year_label, count(*), min(sequence_no), max(sequence_no), "
+    "SUM(CASE WHEN content_verified=1 THEN 1 ELSE 0 END) "
+    "FROM rpt_entries WHERE lower(subject)='sains' "
+    "GROUP BY academic_year, year_label ORDER BY academic_year, year_label"
+).fetchall())
+print("SAINS_STANDARD_GROUPS",conn.execute(
+    "SELECT year_label, count(*), count(DISTINCT sp_code), "
+    "SUM(CASE WHEN verified=1 THEN 1 ELSE 0 END) "
+    "FROM curriculum_standards WHERE lower(subject)='sains' "
+    "GROUP BY year_label ORDER BY year_label"
+).fetchall())
+print("SAINS_RPT_SAMPLES",conn.execute(
+    "SELECT academic_year, year_label, sequence_no, week_from, week_to, "
+    "unit_code, substr(unit_title,1,80),substr(topic,1,80), "
+    "verification_status, verified FROM rpt_entries "
+    "WHERE lower(subject)='sains' AND year_label IN ('Tahun 2','Tahun 3','Tahun 4','Tahun 5','Tahun 6') "
+    "ORDER BY year_label, academic_year DESC, sequence_no LIMIT 20"
+).fetchall())
+print("SAINS_JOINED_STANDARD_COUNTS",conn.execute(
+    "SELECT r.year_label, r.academic_year, "
+    "count(DISTINCT r.id), count(s.id), "
+    "sum(CASE WHEN s.standard_type LIKE '%content%' THEN 1 ELSE 0 END) "
+    "FROM rpt_entries r LEFT JOIN rpt_entry_standards s ON r.id=s.rpt_entry_id "
+    "WHERE lower(r.subject)='sains' "
+    "GROUP BY r.year_label,r.academic_year ORDER BY r.year_label,r.academic_year"
+).fetchall())
 conn.close()
 DEST.unlink(missing_ok=True)
