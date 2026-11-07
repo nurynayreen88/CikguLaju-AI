@@ -106,6 +106,40 @@ engine after a separate UUID-aware identity/entitlement gate. Its
 internal API credentials must remain server-only; do not copy them into
 browser JavaScript or the staging repo.
 
+### Durable private Word+PDF jobs — current staging hardening
+
+**Applied in isolated Supabase staging, not production:** 
+`migrations/STAGING_ONLY_web_rph_bundle_jobs_450.sql` creates:
+- A **private** Storage bucket `web-rph-bundles-staging`, with a file size
+  limit, MIME allowlist and no public downloads.
+- An RLS-protected `web_rph_bundle_jobs` table, with a server-generated UUID
+  key and ownership by canonical Google account UUID. It contains only the
+  selection hash, immutable manifest SHA256, lifecycle and account UUID—not
+  teacher names or downloaded content.
+- Two backend-only RPCs: `prepare_web_rph_bundle_staging` (no debit);
+  `complete_web_rph_bundle_staging` (requires **both private Word and PDF
+  objects** and atomically calls the exactly-once quota ledger). A completed
+  job remains ready across HTTP retries; a failed/missing file cannot charge.
+- Anonymous and ordinary authenticated roles cannot call either RPC or query
+  private jobs. Privileged server key is never returned to a browser.
+
+`web/google_rph_bundle_job_store.py` now implements internal prepare,
+two private uploads (no overwrite), collision detection comparing file bytes,
+and single atomic finalization. On an ambiguous storage/RPC error it fails
+closed and retains the original job key. `web/google_rph_bundle_delivery.py`
+adds a **read-only, account-bound download route** for already-ready jobs;
+it cannot create jobs or spend credits. There are no ready jobs yet.
+
+Integration tests on temporary PostgreSQL passed and the rolled-back staging
+test confirmed both files are mandatory. After the test, **the real staging
+Google account retained 10/10 credits, zero charges, zero jobs**.
+
+**Still disabled for teachers:** there is no public Google RPH generation
+button or prepare/execute endpoint. The internal Telegram native renderer
+credentials and production authoritative ID/entitlement migration must be
+configured and approved before enabling these operations. This is deliberate
+to avoid claiming success from a fabricated or locally generated RPH.
+
 ## Next integration gates, in non-destructive order
 
 1. **Design and test additive production identity mapping**, keeping the
