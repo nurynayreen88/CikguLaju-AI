@@ -191,3 +191,51 @@ def materials():
         "trial_debited": False,
         "note": "Pautan muat turun tidak diaktifkan sebelum akaun dan potongan kuota disatukan."
     })
+
+
+@bp.get("/api/google-staging/web/access/status")
+def linked_staging_access():
+    """Staging read-only access status for either verified account provider.
+
+    Never copy, infer, or assert production Telegram entitlements. Production
+    subscriptions must be reconciled through a separate reviewed migration.
+    """
+    actor, failure = _actor()
+    if failure is not None:
+        return failure
+    if request.args:
+        return jsonify({"error": "Parameter tidak dibenarkan"}), 400
+    from web.google_payment_store import web_payment_access, PaymentUnavailable
+    from web.provider_neutral_web_identity import canonical_staging_account
+    try:
+        account_id = canonical_staging_account(actor)
+        profile = google_staging_account_profile(_enabled_config(), account_id)
+        access = web_payment_access(_enabled_config(), account_id)
+        if (type(profile.get("trial_remaining")) is not int
+                or not 0 <= profile["trial_remaining"] <= 10
+                or type(access.get("payment_access_active")) is not bool
+                or not isinstance(access.get("active_plans"), list)
+                or len(access["active_plans"]) > 100):
+            raise ValueError("Invalid staging entitlements")
+        plans = []
+        for plan in access["active_plans"]:
+            if (not isinstance(plan, dict)
+                    or plan.get("plan_code") not in ("rakan_pembangun", "monthly", "annual")
+                    or (plan.get("valid_until") is not None
+                        and (not isinstance(plan["valid_until"], str)
+                             or len(plan["valid_until"]) > 50))):
+                raise ValueError("Invalid staging entitlement")
+            plans.append({"plan_code": plan["plan_code"],
+                          "valid_until": plan.get("valid_until")})
+    except (PaymentUnavailable, GoogleAccountUnavailable,
+            ValueError, KeyError, TypeError):
+        return jsonify({"error": "Status akses staging belum boleh disahkan"}), 503
+    return jsonify({
+        "identity_verified": True, "auth_provider": actor.provider,
+        "staging_only": True, "trial_remaining": profile["trial_remaining"],
+        "staging_payment_access_active": access["payment_access_active"],
+        "staging_active_plans": plans,
+        "production_entitlements_synced": False,
+        "real_payments_enabled": False,
+        "note": "Status staging sahaja; langganan Telegram produksi belum diselaraskan."
+    })
