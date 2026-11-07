@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ms">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CikguLaju — Bayaran Google (staging)</title>
+<style>
+:root{font:16px/1.5 system-ui, sans-serif;color:#183e36;background:#f6faf8}
+*{box-sizing:border-box}body{margin:0}main{max-width:680px;margin:auto;padding:26px}
+h1{font-size:1.7rem;line-height:1.2}p{color:#506960}
+article{background:white;border:1px solid #d9e8e1;border-radius:17px;padding:20px;margin:15px 0}
+label{display:block;font-weight:700;margin:12px 0 5px}
+select,input[type=file]{padding:12px;width:100%;border:1px solid #b9cfc5;border-radius:9px;background:white}
+button{background:#087568;color:white;border:0;border-radius:9px;padding:13px 18px;font:inherit;font-weight:700}
+button:disabled{opacity:.6}a{color:#087568;font-weight:700}
+.item{border-top:1px solid #e0ebe5;padding:11px 0}.small{font-size:.85rem}
+#message{padding:9px 0;min-height:40px}
+</style></head><body>
+<main>
+<h1>Bayaran CikguLaju</h1>
+<p>Ini halaman <strong>ujian staging</strong>. Akaun Google tidak memerlukan Telegram untuk menghantar resit. Akses RPH belum diaktifkan untuk Google semasa ujian ini.</p>
+<article><h2>Status permohonan</h2><div id="history" aria-live="polite">Memuatkan...</div></article>
+<article><h2>Hantar resit baharu</h2>
+<p>Admin akan menyemak resit secara manual. Jangan bayar kali kedua jika permohonan masih menunggu.</p>
+<p id="payment-link"></p>
+<form id="payment-form">
+<label for="plan">Pakej</label><select name="plan_code" id="plan" required></select>
+<label for="receipt">Resit (PDF atau gambar, maksimum 4 MB)</label>
+<input id="receipt" name="receipt" type="file" accept="image/png,image/jpeg,image/webp,application/pdf" required>
+<p><button id="submit" type="submit">Hantar resit untuk semakan</button></p>
+</form>
+<p id="message" role="status" aria-live="polite"></p>
+</article>
+</main>
+<script>
+'use strict';
+const fmt = sen => 'RM' + (Number(sen)/100).toFixed(2);
+function show(text){document.getElementById('message').textContent=text}
+async function load(){
+ const r=await fetch('/api/web/google/payments',{credentials:'same-origin',cache:'no-store'});
+ if(!r.ok){show('Sila log masuk Google atau semak sambungan staging.');return}
+ const data=await r.json(), hist=document.getElementById('history');
+ hist.replaceChildren();
+ if(!data.payments.length)hist.textContent='Tiada permohonan lagi.';
+ for(const p of data.payments){
+   const line=document.createElement('div');line.className='item';
+   const states={pending:'Menunggu pengesahan',approved:'Diluluskan',rejected:'Ditolak — boleh hantar resit baharu'};
+   line.textContent=[p.plan_code,fmt(p.quoted_amount_sen),states[p.status]||p.status,
+     p.review_note ? 'Catatan: '+p.review_note:''].filter(Boolean).join(' · ');
+   hist.append(line);
+ }
+ const select=document.getElementById('plan');select.replaceChildren();
+ for(const p of data.plans){const opt=document.createElement('option');
+   opt.value=p.code;opt.textContent=p.code.replaceAll('_',' ')+' — '+fmt(p.amount_sen);select.append(opt)}
+ const hasPending=data.payments.some(p=>p.status==='pending');
+ const hasPlans=data.plans.length>0;
+ document.getElementById('submit').disabled=hasPending||!hasPlans;
+ if(hasPending)show('Permohonan masih menunggu pengesahan. Tidak perlu muat naik resit lagi.');
+ const link=document.getElementById('payment-link');
+ if(data.payment_url && /^https:\/\//.test(data.payment_url)){
+   const a=document.createElement('a');a.href=data.payment_url;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Buka pautan pembayaran';link.replaceChildren(a);
+ }
+}
+document.getElementById('payment-form').addEventListener('submit',async event=>{
+ event.preventDefault();const button=document.getElementById('submit');button.disabled=true;
+ show('Menghantar resit...');
+ try{
+   const resp=await fetch('/api/web/google/payments',{method:'POST',credentials:'same-origin',
+     body:new FormData(event.currentTarget)});
+   const data=await resp.json();
+   show(resp.ok?'Resit diterima. Menunggu pengesahan admin.':
+      (data.error||'Belum dapat mengesahkan resit. Semak status sebelum cuba lagi.'));
+   if(resp.ok){event.currentTarget.reset();await load()}
+ }catch(e){show('Status belum pasti. Muat semula sebelum cuba menghantar lagi.')}
+ finally{button.disabled=false}
+});
+load().catch(()=>show('Status tidak tersedia. Cuba muat semula.'));
+</script></body></html>
