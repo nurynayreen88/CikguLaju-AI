@@ -46,6 +46,12 @@ class PIQualityAuditTests(unittest.TestCase):
         self.assertNotIn("PBD_TIDAK_KHUSUS_KEPADA_SP", r["flags"])
         self.assertIsNone(r["quality_score_percent"])
 
+    def test_script_consistency_requires_review_not_transliteration(self):
+        r = self.result
+        self.assertEqual(r["closing_rumi_consistency_review_count"], 690)
+        self.assertEqual(r["flags"]["PENUTUP_RUMI_SEMAK_PENYERAGAMAN_JAWI"], 690)
+        self.assertIsNone(r["quality_score_percent"])
+
     def test_source_blockers_are_explicit_not_silently_approved(self):
         blocked = sorted(row["id"] for row in self.result["records"]
                          if "SUMBER_KRITIKAL_BELUM_LENGKAP" in row["flags"])
