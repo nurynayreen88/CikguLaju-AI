@@ -27,6 +27,11 @@ class BPK2020PanduanSainsYear6QA(unittest.TestCase):
         self.assertEqual(r["historical_pdp_with_bpk_2020_example"],43)
         self.assertEqual(r["historical_pdp_without_specific_2020_example"],41)
         self.assertEqual(r["source_page_to_pdp_references"],46)
+        self.assertEqual(r["guide2020_year6_sp_edition_conflict_codes"],["7.1.1","7.1.2","7.1.3"])
+        self.assertEqual(r["guide2020_sp_codes_without_known_edition_conflict_NOT_APPROVED"],40)
+        self.assertEqual({x["original_year6_sp"] for x in r["rows"]
+                          if x["2020_guide_sp_focus_differs_from_2021_dskp"]},
+                         {"7.1.1","7.1.2","7.1.3"})
         self.assertEqual(len(r["rows"]),84)
         self.assertEqual(len({v["original_year6_sp"] for v in r["rows"]}),84)
         self.assertEqual(r["approved_rph_count"],0)
