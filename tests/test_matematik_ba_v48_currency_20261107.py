@@ -23,8 +23,13 @@ class V48CurrencyDSKPGate(unittest.TestCase):
                 self.assertNotIn("kadar simulasi",r["after"])
                 self.assertEqual(r["approval_state"],"ACADEMIC_TEACHER_SIGNOFF_PENDING")
                 if r["section"]=="Rujukan":
-                    self.assertIn("www.bnm.gov.my/latest-rates",r["after"])
                     self.assertIn("DSKP",r["after"])
+                    if r["lesson_id"]=="T4-L055":
+                        # SP 3.5.1 mengenal mata wang sebenar, bukan membaca kadar RM1.
+                        self.assertIn("Buku Teks",r["after"])
+                    else:
+                        # SP 4.6.2 Tahun 3 / 3.5.2 Tahun 4 memerlukan kadar RM1 semasa.
+                        self.assertIn("www.bnm.gov.my/latest-rates",r["after"])
         self.assertTrue(any(r["lesson_id"]=="T3-L060" and "RM1" in r["after"] for r in rows))
         self.assertTrue(any(r["lesson_id"]=="T4-L057" and "RM1" in r["after"] for r in rows))
     def test_release_remains_staging_only(self):
