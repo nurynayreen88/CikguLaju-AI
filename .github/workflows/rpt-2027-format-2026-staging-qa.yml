@@ -29,6 +29,8 @@ on:
       - 'audits/rbt_t4_actual_pdf_page_code_verification_20261107.md'
       - 'tests/test_rpt_2027_rbt_32_week_illustration.py'
       - 'tests/test_rbt_rpt2026_week_block_evidence_staging.py'
+      - 'scripts/audit_rpt2027_release_gaps_staging.py'
+      - 'tests/test_rpt2027_release_gaps_staging.py'
       - 'audits/rbt_t4_t6_rpt2026_23_sp_week_block_source_evidence_20261107.json'
       - 'audits/rbt_y4_y6_dskp_full_standard_text_audit_20261107.md'
       - 'tests/test_rpt_2027_second_batch_preview.py'
@@ -52,6 +54,10 @@ jobs:
       - run: python -m py_compile rpt_2027/common/format_2026_layout_preview.py scripts/build_rpt_2027_standard_preview.py scripts/build_rpt_2027_second_batch_preview.py rpt_2027/common/standard_text_enrichment.py rpt_2027/common/calendar_week_mapping_staging.py scripts/audit_rpt_2027_calendar_master_staging.py rpt_2027/common/sejarah_source_enrichment_staging.py scripts/build_rpt_2027_rbt_32_week_illustration.py rpt_2027/common/rbt_truncated_title_guard_staging.py scripts/verify_rbt_t4_textbook_pages_offline.py
       - name: Audit source and render each of the 13 A4 landscape PDFs
         run: python -m unittest tests.test_rpt_2027_standard_2026_layout_preview tests.test_rpt_2027_second_batch_preview tests.test_rpt_2027_calendar_master_staging tests.test_rpt_2027_rbt_32_week_illustration tests.test_rbt_rpt2026_week_block_evidence_staging tests.test_rpt_2027_rbt_truncated_titles tests.test_rpt_2027_rbt_t4_book_page_evidence tests.test_rpt_2027_rbt_y5_y6_book_mapping -v
+      - name: Assert current curriculum source gaps remain release-blocking
+        run: |
+          python -m unittest tests.test_rpt2027_release_gaps_staging -v
+          python -m scripts.audit_rpt2027_release_gaps_staging
       - name: Verify 64 RBT Y5–6 RPH/CSV/manifest candidate book-page ranges
         run: python -m scripts.audit_rbt_y5_y6_64_pdp_page_consistency_staging
       - name: Audit calendar against central 2027 week master (read-only)
@@ -126,6 +132,7 @@ jobs:
             staging/rpt_2027_seragam_2026/pdf/*.pdf
             staging/rpt_2027_seragam_2026/pdf/*.png
             staging/rpt_2027_seragam_2026/audit_calendar_week_alignment.json
+            staging/rpt_2027_seragam_2026/release_gap_audit_20261107_DRAF.json
             staging/rpt_2027_seragam_2026/audit_rbt_y5_y6_64_pdp_page_consistency.json
             staging/rpt_2027_seragam_2026/rbt_32week_SIMULASI/*.pdf
             staging/rpt_2027_seragam_2026/rbt_32week_SIMULASI/*.png
