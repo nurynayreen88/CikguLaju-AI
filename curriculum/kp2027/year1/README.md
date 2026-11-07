@@ -73,3 +73,9 @@ Ujian:
 - Tiada `app.py`, DB aktif, kuota pengguna, Telegram atau Web diubah.
 - Ujian sumber: `python -m unittest discover -s tests -p 'test_kp2027_y1_training_alignment_20261107.py' -v`.
 - Seterusnya: sahkan PDF DK BM SK dan Matematik Tahun 1, betulkan teks SP, selaraskan 36 calon dengan 7 RPH sumber-berpandu, bina turutan PdP RPT A/B hanya selepas liputan standard disahkan.
+
+### Alam dan Manusia: model RPH penataran yang lebih khusus
+
+- [RPH Pasukan Keselamatan (model pengajaran berpasukan)](alam_manusia_pasukan_keselamatan_team_teaching_20261107.json) disediakan sebagai contoh guru Tahun 1, berpandukan portal penataran Alam dan Manusia yang menyebut 3.1.11/3.1.12, **bukan halaman DK akhir**.
+- Contoh 60 minit bagi 30 murid: Set Induksi 6, rancang karya 10, hasilkan karya 20, galeri 16, PBD/penutup 8. Guru A mengajar, Guru B memerhati evidens setiap murid; penyesuaian seorang guru turut disediakan.
+- Nombor kod di atas adalah **petunjuk sumber penataran**, bukan standard rasmi yang telah dimasukkan ke rekod DK. Nilai `official_sp`, `official_sk`, halaman DK, buku teks, tahap penguasaan serta kelulusan masih kosong dan status kekal DRAF/HOLD.
