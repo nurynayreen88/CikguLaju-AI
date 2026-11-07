@@ -7,6 +7,7 @@ from __future__ import annotations
 import unittest
 
 from web.sains_y6_84_activity_bank_draf_20261107 import BANK,kps_for,FILES
+from tools.export_sains_y6_84_content_review_20261107 import docket
 from tools.audit_sains_y6_84_source_preflight_20261107 import GROUPS,EXPECTED_SP
 from tools.sains_y6_textbook_toc_20261107 import cue_for, load_toc_ranges, short_cue
 from tools.render_sains_y6_84_rph_draf_20261107 import (
@@ -14,6 +15,17 @@ from tools.render_sains_y6_84_rph_draf_20261107 import (
 )
 
 class TestYear6FullDraft(unittest.TestCase):
+    def test_all_84_pdp_have_individual_teacher_content_review_and_17_topic_safety_notes(self):
+        records=docket()
+        self.assertEqual(len(records),84)
+        self.assertEqual(len({r["Kod PdP"] for r in records}),84)
+        self.assertEqual(len({r["Keselamatan spesifik topik — SEMAK"] for r in records}),17)
+        self.assertTrue(all("BUKAN pengesahan halaman SP" in r["Buku Teks — konteks BAB dari isi kandungan sahaja"] for r in records))
+        self.assertTrue(all(r["Muka surat tepat SP"]=="BELUM" for r in records))
+        self.assertTrue(all(r["Keputusan panitia"].startswith("HOLD") for r in records))
+        self.assertTrue(all(not r["Siap untuk Web/Telegram"] for r in records))
+        self.assertTrue(all(not r["Skor kualiti akademik"] and not r["Pengesah panitia"] for r in records))
+
     def test_exact_84_sp_inventory_and_17_groups(self):
         self.assertEqual(len(BANK),84)
         self.assertEqual(set(BANK),EXPECTED_SP)
