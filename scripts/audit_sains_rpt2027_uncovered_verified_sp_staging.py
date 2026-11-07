@@ -63,17 +63,37 @@ def audit_coverage():
         missing_codes=sorted(set(standards)-set(existing_codes),
                              key=lambda s:tuple(int(x) for x in s.split(".")))
         duplicate_count=sum(c-1 for c in Counter(existing_codes).values() if c>1)
+        skills_codes=[]
+        content_codes=[]
+        for code in missing_codes:
+            item=standards[code]
+            if item["sk_code"] in ("1.1","1.2"):
+                expected_title={"1.1":"Kemahiran Proses Sains",
+                                "1.2":"Kemahiran Manipulatif"}[item["sk_code"]]
+                if item["sk_text"]!=expected_title:
+                    raise ValueError("Science cross-cutting skill classification is not source-verified")
+                skills_codes.append(code)
+            else:
+                content_codes.append(code)
         years[str(year)]={
             "sourced_pdp_count":len(pdp_rows),
             "available_distinct_sp":len(standards),
             "pdp_distinct_sp_covered":len(set(existing_codes)),
             "repeated_sp_slots_in_pdp":duplicate_count,
             "distinct_sp_not_seen_in_pdp":len(missing_codes),
+            "unmapped_crosscutting_kps_sp":len(skills_codes),
+            "unmapped_subject_content_sp":len(content_codes),
+            "crosscutting_kps_need_per_lesson_activity_evidence": [standards[code] for code in skills_codes],
+            "subject_content_requires_textbook_rph_reconciliation": [standards[code] for code in content_codes],
             "missing_verified_standards_NOT_PDP": [standards[code] for code in missing_codes]
         }
     total_pdp=sum(v["sourced_pdp_count"] for v in years.values())
     total_available_sp=sum(v["available_distinct_sp"] for v in years.values())
     uncovered=sum(v["distinct_sp_not_seen_in_pdp"] for v in years.values())
+    crosscutting=sum(v["unmapped_crosscutting_kps_sp"] for v in years.values())
+    content_gap=sum(v["unmapped_subject_content_sp"] for v in years.values())
+    if crosscutting!=51 or content_gap!=29 or crosscutting+content_gap!=uncovered:
+        raise ValueError(f"Science skill/content classification unexpected: {crosscutting}/{content_gap}")
     if total_pdp!=342 or total_available_sp!=422 or uncovered < 80:
         raise ValueError(f"Sains sourced counts unexpected: pdp {total_pdp} standards {total_available_sp} missing {uncovered}")
     return {
@@ -85,7 +105,10 @@ def audit_coverage():
         "counts":{"historical_source_pdp":total_pdp,
                   "verified_unique_dskp_sp_year2to6":total_available_sp,
                   "uncovered_unique_sp_in_historical_pdp":uncovered,
-                  "uncovered_is_a_pdp_count":False},
+                  "unmapped_crosscutting_kps_sk_1_1_1_2":crosscutting,
+                  "unmapped_subject_content_sp":content_gap,
+                  "uncovered_is_a_pdp_count":False,
+                  "crosscutting_skills_automatically_approved":False},
         "years":years,
         "no_runtime_changes":True,
     }
