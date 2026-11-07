@@ -85,6 +85,14 @@ class ArabicSPPageEvidenceQA(unittest.TestCase):
                               row["sp_display"])
                 self.assertFalse(row.get("week"))
                 self.assertFalse(row.get("a_start"))
+                self.assertIn("DSKP SP PDF hlm ", row["note"])
+                self.assertIn("teks belum disahkan", row["note"])
+                self.assertIsInstance(row["source_sp_dskp_pdf_page"], int)
+                page_source = self.data["year2"] if year == 2 else next(
+                    x for x in self.data["years"] if x["year"] == year)
+                matches = [e["pdf_page"] for e in page_source["entries"]
+                           if e["sp_code"] == row["sp"]]
+                self.assertEqual(matches, [row["source_sp_dskp_pdf_page"]])
 
 
 if __name__ == "__main__":
