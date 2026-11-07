@@ -72,7 +72,7 @@ def validate_rows(subject, year, records):
     return True
 
 
-def week_merge_ranges(records):
+def week_merge_ranges(records, *, max_rows_per_group=None):
     """Contiguous table-row ranges (1-indexed; row 0 is the table header).
 
     Only merge records that share an *explicit* week label and identical A/B
@@ -91,7 +91,9 @@ def week_merge_ranges(records):
         current = key(records[start])
         end = start
         if current is not None:
-            while end + 1 < len(records) and key(records[end + 1]) == current:
+            while (end + 1 < len(records)
+                   and key(records[end + 1]) == current
+                   and (max_rows_per_group is None or end - start + 1 < max_rows_per_group)):
                 end += 1
         ranges.append((start + 1, end + 1))
         start = end + 1
@@ -116,7 +118,7 @@ def normalize_pdf_text(value):
     return printable
 
 
-def build_preview(subject, year, records, destination, *, logo_path=None, school_name="", teacher_name=""):
+def build_preview(subject, year, records, destination, *, logo_path=None, school_name="", teacher_name="", max_span_rows=None):
     """Create compact, multi-page landscape PDF using only trusted row content.
 
     One 5-column table: MINGGU/TARIKH | UNIT/TAJUK/PDp | SK | SP | CATATAN.
@@ -263,7 +265,9 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
     headings = ("MINGGU / TARIKH", "UNIT / TAJUK / PDP",
                 "SK", "SP", "CATATAN / BAHAN")
     table_rows = [[p(t,size=8.0,leading=11.7,strong=True,color="#25323a") for t in headings]]
-    week_ranges = week_merge_ranges(records)
+    if max_span_rows is not None and (type(max_span_rows) is not int or not 1 <= max_span_rows <= 8):
+        raise ValueError("Invalid maximum merged week rows")
+    week_ranges = week_merge_ranges(records, max_rows_per_group=max_span_rows)
     grouped_followers = {index for first, last in week_ranges for index in range(first + 1, last + 1)}
     for index, row in enumerate(records, 1):
         week = row.get("week","").strip() or "Belum ditetapkan"
