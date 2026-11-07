@@ -23,6 +23,7 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Table, TableStyle, 
 from tools.audit_sains_342_pdp_release_gate_20261106 import analyze, ROOT
 from web.sains_y2_51_activities_draf_20261107 import BANK
 from tools.sains_buku_aktiviti_mapping_20261107 import activity_for, activity_note, activity_short_note, is_direct_sp_match
+from tools.render_sains_y2_2_sp_alternative_pbd_20261107 import TASKS as ALT_PBD, doc_file as alt_pbd_doc_file
 
 OUT = ROOT / "build" / "sains_y2_51_rph_DRAF_20261107"
 DSKP = "https://drive.google.com/file/d/1rr4CjNvhtI13ioiVSTZi65cvap7j1U6Z/view"
@@ -89,6 +90,7 @@ def get_y2_records():
             "book_page_cue": ", ".join(map(str,pages[sp]["printed_page_candidates"])),
             "book_page_status": "TEXT_CUE_ONLY__NOT_VISUALLY_VERIFIED",
             "activity_book": activity_for(2,r["pdp_code"],sp),
+            "pbd_alternative":(alt_pbd_doc_file(sp).name if sp in ALT_PBD else ""),
             "quality_score_percent": None,
             "release": "DRAF_HOLD",
         })
@@ -111,7 +113,8 @@ def markdown(item):
         f"**Objektif:** Murid menghasilkan bukti berikut: {item['pbd']}.\n"
         f"**Kriteria kejayaan/PBD:** {item['pbd']}.\n"
         f"**KPS:** {item['kps']}\n"
-        f"**Buku Aktiviti:** {activity_note(item['activity_book'],2,include_url=True)}\n\n"
+        f"**Buku Aktiviti:** {activity_note(item['activity_book'],2,include_url=True)}\n"
+        f"**PBD alternatif bukan BA rasmi:** {item['pbd_alternative'] or 'Tidak diperlukan; guru sahkan tugasan BA dahulu.'}\n\n"
         f"**Set induksi (5 minit):** Guru menunjukkan {item['hook'].lower()}. "
         "Murid membuat satu ramalan atau pemerhatian awal.\n\n"
         f"**Aktiviti 1: Penerokaan (18 minit)**\n"
@@ -172,7 +175,8 @@ def write_docx(path,item):
       ("Set induksi (5m)","Guru menunjukkan "+item["hook"].lower()+". Murid menyatakan pemerhatian."),
       ("Aktiviti 1 (18m)","1. Guru "+item["teacher1"]+".\n2. Murid "+item["pupil1"]+"."),
       ("Aktiviti 2 (22m)","1. Guru "+item["teacher2"]+".\n2. Murid "+item["pupil2"]+"."),
-      ("Pengukuhan/PBD (10m)","Guru menilai bukti individu: "+item["pbd"]+"."),
+      ("Pengukuhan/PBD (10m)","Guru menilai bukti individu: "+item["pbd"]+"."+
+       (" Gunakan lembaran PBD alternatif khusus SP (bukan BA rasmi)." if item["pbd_alternative"] else "")),
       ("Buku Aktiviti/PBD" if is_direct_sp_match(item["activity_book"]) else "BA (rujukan sahaja)",
        activity_short_note(item["activity_book"],2)),
       ("Penutup (5m)","Murid menyatakan satu dapatan; guru merumus kaitan dengan SP "+item["sp"]+"."),
@@ -216,7 +220,8 @@ def write_pdf(path,item):
       ("Set induksi 5m","Guru menunjukkan "+item["hook"].lower()+". Murid menyatakan pemerhatian."),
       ("Aktiviti 1 18m","1. Guru "+item["teacher1"]+".\n2. Murid "+item["pupil1"]+"."),
       ("Aktiviti 2 22m","1. Guru "+item["teacher2"]+".\n2. Murid "+item["pupil2"]+"."),
-      ("Pengukuhan/PBD 10m","Guru menyemak bukti individu: "+item["pbd"]+"."),
+      ("Pengukuhan/PBD 10m","Guru menyemak bukti individu: "+item["pbd"]+"."+
+       (" Gunakan lembaran PBD alternatif khusus SP (bukan BA rasmi)." if item["pbd_alternative"] else "")),
       ("Buku Aktiviti/PBD" if is_direct_sp_match(item["activity_book"]) else "BA (rujukan sahaja)",
        activity_short_note(item["activity_book"],2)),
       ("Penutup 5m","Murid menyatakan dapatan; guru merumus SP "+item["sp"]+"."),
@@ -275,6 +280,8 @@ def main():
             "activity_book_printed_sp_codes":",".join(item["activity_book"]["workbook_printed_sp_codes"]),
             "activity_book_can_be_sp_pbd":False,
             "activity_book_teacher_signoff":"MISSING",
+            "pbd_alternative_document":item["pbd_alternative"],
+            "pbd_alternative_claims_official_book":False,
             "word_a4":"DOCX_A4_NO_PAGINATION_PROOF",
             "pdf_a4":"ONE_PAGE_PASS",
             "textbook_page":"NOT_VISUALLY_VERIFIED",
