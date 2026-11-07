@@ -72,3 +72,24 @@ def load_and_assign(year:int,path:Path):
     if not src.is_file():
         raise FileNotFoundError("Teacher RBT week plan JSON not provided")
     return assign_rbt_weeks_from_teacher_manifest(year,json.loads(src.read_text(encoding="utf-8")))
+
+
+def build_teacher_rbt_preview(year:int,manifest_path:Path,output_pdf:Path):
+    """Opt-in reviewer PDF; does not modify the 56 baseline RPT PDFs."""
+    from rpt_2027.common.format_2026_layout_preview import build_preview
+    rows=load_and_assign(year,manifest_path)
+    output=Path(output_pdf)
+    if output.suffix.lower()!=".pdf" or "STAGING" not in output.name.upper():
+        raise ValueError("Explicit output must be a named STAGING PDF")
+    build_preview("rbt",year,rows,output)
+    return output
+
+if __name__=="__main__":
+    import argparse
+    parser=argparse.ArgumentParser(description="Generate provisional RBT 2027 from explicit school week JSON, never live")
+    parser.add_argument("--year",type=int,choices=(4,5,6),required=True)
+    parser.add_argument("--teacher-manifest",type=Path,required=True)
+    parser.add_argument("--out-staging-pdf",type=Path,required=True)
+    args=parser.parse_args()
+    pdf=build_teacher_rbt_preview(args.year,args.teacher_manifest,args.out_staging_pdf)
+    print("RBT SCHOOL WEEK PREVIEW / NOT FINAL READY:",pdf)
