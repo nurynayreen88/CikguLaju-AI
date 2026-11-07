@@ -33,3 +33,5 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_kp2027_year1_training_evidence_20261107.py' -v
       - name: Verify Year 1 BM SK teaching drafts and Math source count discrepancy
         run: python -m unittest discover -s tests -p 'test_kp2027_y1_training_alignment_20261107.py' -v
+      - name: Audit 26 BM Tahun 1 SK training candidates and prevent false READY
+        run: python -m unittest discover -s tests -p 'test_kp2027_year1_bm_sk_26_source_20261107.py' -v
