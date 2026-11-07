@@ -25,6 +25,7 @@ input{font:inherit;width:100%;padding:11px 14px;border:1px solid #b7cec1;border-
 <h1>Pilih Lesson / PdP</h1>
 <p>Ini paparan Web untuk akaun Google atau Telegram yang telah dipautkan dan disahkan. Pilihan kurikulum diambil daripada sumber Web sedia ada, bukan senarai rekaan.</p>
 <p class="notice" id="stagingNotice"><strong>Mod ujian staging:</strong> Pilihan kurikulum Tahun 2–6 bagi subjek yang tersedia. Janaan RPH hanya dibenarkan untuk akaun penguji yang diluluskan, bukan pengguna rasmi.</p>
+<p class="notice" id="paidBanner" hidden></p>
 <section class="card">
 <div><label for="year">Tahun</label><select id="year"><option value="">Pilih Tahun</option></select></div>
 <section id="subjectBox" hidden><label for="subject">Subjek</label><select id="subject"><option value="">Pilih Subjek</option></select></section>
@@ -221,7 +222,11 @@ const showDownloads=data=>{
  }
  target.hidden=false;
  get('generateStatus').textContent='RPH Word dan PDF siap. '+(
-  typeof data.remaining==='number'?'Baki '+data.remaining+' janaan.':'Muat turun fail di bawah.');
+   data.access_mode==='paid'?
+     'Akses berbayar disahkan. Tiada potongan kredit percuma.'+
+       (Number.isInteger(data.remaining)?' Baki percuma tersimpan: '+data.remaining+'.':''):
+   typeof data.remaining==='number'?'Baki '+data.remaining+' janaan.':
+    'Muat turun fail di bawah.');
 };
 get('generate').addEventListener('click',async()=>{
  if(!generationAllowed)return;
@@ -249,6 +254,23 @@ get('generate').addEventListener('click',async()=>{
      e.message;
  }finally{button.disabled=false;}
 });
+(async()=>{
+ try{
+  const res=await safeGet('/api/google-staging/web/access/status');
+  if(!res.ok)return;
+  const data=await res.json();
+  if(data.staging_only!==true||data.production_access_verified!==true)return;
+  if(data.production_rakan_pembangun_active===true ||
+     data.production_subscription_active===true){
+    const text=data.production_rakan_pembangun_active===true?
+      'Rakan Pembangun aktif — janaan RPH tanpa had untuk akaun penguji staging.':
+      'Langganan aktif — janaan RPH tanpa potongan kredit percuma untuk akaun penguji staging.';
+    get('paidBanner').textContent=text+
+      ' Status disemak semula sebelum setiap janaan.';
+    get('paidBanner').hidden=false;
+  }
+ }catch(_){/* The generation endpoint still enforces live access itself. */}
+})();
 (async()=>{
  try{
   const capResponse=await safeGet('/api/google-staging/web/rph/capabilities');
