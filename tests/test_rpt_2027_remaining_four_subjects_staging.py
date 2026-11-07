@@ -4,6 +4,7 @@ import unittest
 from pathlib import Path
 import tempfile
 from pypdf import PdfReader
+import fitz
 from scripts.build_rpt_2027_remaining_four_subjects_staging import (
     bm_records,pi_records,arabic_records,music_records,build_all
 )
@@ -76,6 +77,12 @@ class RemainingRPTFormatQA(unittest.TestCase):
                                     for r in rows))
                 self.assertTrue(all(not r.get("week") and not r.get("a_start")
                                     for r in rows))
+                self.assertTrue(all(r["source_sp_dskp_pdf_url"].startswith("https://drive.google.com/file/d/")
+                                    and r["source_sp_dskp_pdf_page"]>0
+                                    and r["source_sp_dskp_text_signoff"] is False
+                                    for r in rows))
+                self.assertTrue(all(r["source_pdf_extraction_code_repeated_unreliable"] is (y==2)
+                                    for r in rows))
 
     def test_music_175_source_weeks_preserved(self):
         master=load_calendar_weeks()
@@ -121,6 +128,13 @@ class RemainingRPTFormatQA(unittest.TestCase):
                         self.assertIn(head,body)
                     if sub=="bahasa_arab":
                         self.assertIn("BELUM DIPADANKAN",body)
+                        with fitz.open(p) as doc:
+                            urls=[link["uri"] for page in list(doc)[1:]
+                                  for link in page.get_links() if link.get("uri")]
+                        self.assertEqual(len(urls),n)
+                        row_sources=arabic_records(year)
+                        self.assertEqual(set(urls),{r["source_sp_dskp_pdf_url"]
+                                                      for r in row_sources})
                     if sub=="pendidikan_islam" and year in (2,6):
                         # The Jawi/Arabic bidi font roundtrip does not always
                         # expose Latin notes in PDF text-extraction order.
