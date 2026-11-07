@@ -40,6 +40,32 @@ class StandaloneStagingApp(unittest.TestCase):
         self.assertFalse(response.json["rph_generator_enabled"])
         self.assertTrue(response.json["no_telegram_production_account_dependency"])
 
+    def test_native_bridge_config_diagnostic_never_discloses_secrets(self):
+        # Only the private bridge URL is configured; token remains unavailable.
+        status = self.client.get("/readyz", base_url=STAGING)
+        self.assertEqual(status.status_code, 200)
+        self.assertFalse(status.json["native_renderer_credentials_configured"])
+        self.assertFalse(status.json["rph_staging_test_gate_open"])
+        secret_value = "test-only-secret-token-" + "x" * 45
+        with patch.dict(os.environ, {
+            "CIKGULAJU_AUTHORITATIVE_API_URL": "https://cikgulaju-ai.onrender.com",
+            "CIKGULAJU_AUTHORITATIVE_API_TOKEN": secret_value,
+            "CIKGULAJU_GOOGLE_RPH_STAGING_ENABLED": "0",
+        }):
+            disabled = self.client.get("/readyz", base_url=STAGING)
+            self.assertTrue(disabled.json["native_renderer_credentials_configured"])
+            self.assertFalse(disabled.json["rph_staging_test_gate_open"])
+            self.assertFalse(disabled.json["rph_generator_enabled"])
+            self.assertNotIn(secret_value.encode(), disabled.data)
+            self.assertNotIn(b"cikgulaju-ai.onrender.com", disabled.data)
+            with patch.dict(os.environ, {
+                "CIKGULAJU_GOOGLE_RPH_STAGING_ENABLED": "1",
+            }):
+                configured = self.client.get("/readyz", base_url=STAGING)
+                self.assertTrue(configured.json["rph_staging_test_gate_open"])
+                # Public release gate remains OFF until real native E2E.
+                self.assertFalse(configured.json["rph_generator_enabled"])
+
     def test_teacher_google_login_does_not_need_admin_telegram_bot(self):
         # Google sign-up must not depend on teachers/admin connecting Telegram.
         with patch.dict(os.environ, {
