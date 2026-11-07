@@ -8,7 +8,7 @@ from tools.sains_buku_aktiviti_mapping_20261107 import (
     activity_for, activity_note, load_activity_books, EXPECTED, is_direct_sp_match
 )
 from tools.render_sains_y2_51_rph_draf_20261107 import get_y2_records, markdown
-from web.sains_y3_rph_activity_preview_20261106 import adapt_rows, source_ledgers
+from web.sains_y3_rph_activity_preview_20261106 import adapt_rows, source_ledgers, checked_book_pages
 
 class TestSainsYear2Year3ActivityBook(unittest.TestCase):
     def test_original_scanned_workbooks_96_exact_pages(self):
@@ -44,6 +44,16 @@ class TestSainsYear2Year3ActivityBook(unittest.TestCase):
         self.assertEqual(activity_for(2,"SCI-Y2-PDP-045","9.2.6")["workbook_printed_page"],72)
         self.assertEqual(activity_for(3,"SCI-Y3-PDP-008","3.2.3")["workbook_printed_page"],30)
         self.assertEqual(activity_for(3,"SCI-Y3-PDP-027","6.1.7")["workbook_printed_page"],59)
+
+    def test_year3_original_kpm_textbook_45_source_sps_and_three_extra_pages(self):
+        rows=checked_book_pages()
+        self.assertEqual(len(rows),45)
+        self.assertEqual(len({p for x in rows.values() for p in x["printed_page_candidates"]}),54)
+        self.assertTrue(all(x["at_least_one_cited_page_has_matching_sp_code"]
+                            and x["teacher_pedagogical_approved"] is False for x in rows.values()))
+        self.assertEqual(rows["SCI-Y3-PDP-001"]["printed_page_candidates"],[30])
+        self.assertEqual(rows["SCI-Y3-PDP-044"]["printed_page_candidates"],[133])
+        self.assertEqual(rows["SCI-Y3-PDP-045"]["printed_page_candidates"],[135])
 
     def test_year3_science_measurement_and_system_suria(self):
         self.assertEqual(activity_for(3,"SCI-Y3-PDP-026","6.1.6")["workbook_printed_page"],61)
