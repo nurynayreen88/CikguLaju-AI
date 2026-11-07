@@ -37,6 +37,13 @@ on:
       - "tools/check_sains_y5_83_word_a4_20261107.py"
       - "tests/test_sains_y5_83_bank_quality_20261107.py"
       - "tools/audit_sains_y6_84_source_preflight_20261107.py"
+      - "web/sains_y6_draf_bank_part1_20261107.tsv"
+      - "web/sains_y6_draf_bank_part2_20261107.tsv"
+      - "web/sains_y6_draf_bank_part3_20261107.tsv"
+      - "web/sains_y6_84_activity_bank_draf_20261107.py"
+      - "tools/render_sains_y6_84_rph_draf_20261107.py"
+      - "tools/check_sains_y6_84_word_a4_20261107.py"
+      - "tests/test_sains_y6_84_bank_quality_20261107.py"
       - "tests/test_sains_y6_84_source_preflight_20261107.py"
       - "tests/test_rph80_all_subject_source_scan_20261107.py"
       - "audits/rph80_program_20261107.md"
@@ -105,12 +112,18 @@ jobs:
         run: python -m tools.render_sains_y5_83_rph_draf_20261107
       - name: Verify printed 83 Sains Year5 Word one-page A4
         run: python -m tools.check_sains_y5_83_word_a4_20261107
-      - name: Audit 342 unique Sains PdP and export review queue
-        run: python -m tools.audit_rph80_sains_first_20261107
       - name: Validate Year6 84-SP source mapping and risk HOLD
         run: python -m unittest discover -s tests -p 'test_sains_y6_84_source_preflight_20261107.py' -v
       - name: Export Year6 84-PdP source preflight for teacher review
         run: python -m tools.audit_sains_y6_84_source_preflight_20261107
+      - name: Test 84 Science Year6 DSKP-specific safe teacher-pupil lesson drafts
+        run: python -m unittest discover -s tests -p 'test_sains_y6_84_bank_quality_20261107.py' -v
+      - name: Render 84 Year6 SP-specific DRAF Markdown Word PDF
+        run: python -m tools.render_sains_y6_84_rph_draf_20261107
+      - name: Verify actual printed one-page A4 of all 84 Year6 Word drafts
+        run: python -m tools.check_sains_y6_84_word_a4_20261107
+      - name: Audit 342 unique Sains PdP and export final technical review queue
+        run: python -m tools.audit_rph80_sains_first_20261107
       - name: Retain audit evidence only; never deploy
         if: always()
         uses: actions/upload-artifact@v4
@@ -147,5 +160,10 @@ jobs:
             build/sains_y5_83_rph_DRAF_20261107/*.pdf
             build/sains_y5_83_rph_DRAF_20261107/*.csv
             build/sains_y5_83_rph_DRAF_20261107/*.json
+            build/sains_y6_84_rph_DRAF_20261107/*.md
+            build/sains_y6_84_rph_DRAF_20261107/*.docx
+            build/sains_y6_84_rph_DRAF_20261107/*.pdf
+            build/sains_y6_84_rph_DRAF_20261107/*.csv
+            build/sains_y6_84_rph_DRAF_20261107/*.json
             build/sains_y6_84_preflight_20261107/*.csv
             build/sains_y6_84_preflight_20261107/*.json
