@@ -436,3 +436,18 @@ Audit baharu `pi_t6_tasmi_rpt_2027_review.py` bersama ujian regresi dan artefak 
 Tindakan diperlukan sebelum T6-L137/L141 boleh dianggap sesuai: guru/pakar memilih bahagian ayat sebenar berdasarkan mushaf dan tahap murid, mengesahkan ia munasabah bagi durasi, kemudian menyemak Jawi serta instrumen tasmi' individu. Jangan mendorong pengguna untuk beranggapan empat surah penuh wajib dinilai kepada setiap murid dalam satu sesi.
 
 **DB, Telegram, Web, hak akses dan produksi tidak disentuh. PR #443 tetap DRAFT/HOLD/NO_GO.**
+
+
+### Lima Lesson Tahun 6 yang ditahan penuh — triage RPT asal, **belum dipulihkan**
+
+RPT Pendidikan Islam Tahun 6 2027 yang sama juga telah diperiksa pada PDF halaman **3, 5, 7, 21 dan 41**; hasilnya disimpan di `pi_y6_held_rpt_2027_source_review.py` sebagai lejar review-only, **bukan janaan bahan**:
+
+| RPH ditahan | Halaman RPT | Penemuan berdasarkan RPT | Halangan sebelum boleh jana |
+|---|---:|---|---|
+| T6-L006 | 3 | Juz 25, asy-Syura 33–51 | Sahkan mushaf dan beban PdP/tasmi' |
+| T6-L014 | 5 | az-Zukhruf 34–73 | RPT sendiri memberi amaran jurang selepas ayat 73 sebelum ad-Dukhan 40 |
+| T6-L018 | 7 | ad-Dukhan 40–59 | RPT menyatakan bahagian 1–39 tiada dalam urutan |
+| T6-L060 | 21 | Solat ketika sakit, calon SP 4.2.3–4.2.5 | Secara nyata dilabel **cadangan CikguLaju**; perlu semak DSKP sebelum anggap rasmi |
+| T6-L117 | 41 | al-Ma'arij 40–44, Nuh 1–28, al-Jinn 1–13 | RPT telah mengecualikan az-Zumar kerana bukan sebahagian Juz 29; sahkan sempadan dengan mushaf |
+
+Kesemua **lima rekod masih tanpa `fields`**, `withheld=true`, `verified_ready=false`. T2-L035 ialah **rekod keenam** yang ditahan dan tidak dimasukkan dalam audit sumber Tahun 6 ini. **0 halaman mushaf diluluskan**, **0 ayat disisip automatik**, **0 kelulusan kod SP DSKP**, **0 bahan guru diterbitkan**. Audit source triage ini hanya membantu proses pembaikan seterusnya dan tidak mencukupi untuk mengangkat status HOLD.
