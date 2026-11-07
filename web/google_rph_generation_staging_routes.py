@@ -48,8 +48,24 @@ def _native_renderer_configured(cfg):
     )
 
 
+def _staging_test_account():
+    """A single explicitly allowlisted Google UUID, configured server-side."""
+    raw = os.environ.get("CIKGULAJU_GOOGLE_RPH_STAGING_TEST_ACCOUNT_ID", "").strip()
+    try:
+        canonical = str(uuid.UUID(raw))
+    except (ValueError, TypeError, AttributeError):
+        return None
+    return canonical if raw == canonical else None
+
+
+def _test_actor_allowed(actor):
+    return (getattr(actor, "provider", None) == "google"
+            and getattr(actor, "account_id", None) == _staging_test_account())
+
+
 def _generator_config():
-    if os.environ.get("CIKGULAJU_GOOGLE_RPH_STAGING_ENABLED") != "1":
+    if (os.environ.get("CIKGULAJU_GOOGLE_RPH_STAGING_ENABLED") != "1"
+            or _staging_test_account() is None):
         return None
     cfg = _enabled_config()
     return cfg if _native_renderer_configured(cfg) else None
@@ -140,7 +156,7 @@ def capabilities():
     actor, err = _actor()
     if err is not None:
         return err
-    ready = _generator_config() is not None
+    ready = _generator_config() is not None and _test_actor_allowed(actor)
     return jsonify({"google_verified":True,"staging_only":True,
                     "generation_enabled":ready,
                     "download_enabled":True if ready else False,
@@ -155,6 +171,8 @@ def issue():
     cfg = _generator_config()
     if cfg is None:
         return jsonify({"error":"Penjana RPH Google staging belum diaktifkan"}),503
+    if not _test_actor_allowed(actor):
+        return jsonify({"error":"Akaun ini tidak dibenarkan untuk ujian RPH staging"}),403
     if not _same_origin(cfg):
         return jsonify({"error":"Permintaan rentas laman ditolak"}),403
     if not request.is_json or request.content_length is None or request.content_length>MAX_BODY:
@@ -194,6 +212,8 @@ def generate():
     cfg = _generator_config()
     if cfg is None:
         return jsonify({"error":"Penjana RPH Google staging belum diaktifkan"}),503
+    if not _test_actor_allowed(actor):
+        return jsonify({"error":"Akaun ini tidak dibenarkan untuk ujian RPH staging"}),403
     if not _same_origin(cfg):
         return jsonify({"error":"Permintaan rentas laman ditolak"}),403
     if not request.is_json or request.content_length is None or request.content_length>MAX_BODY:
