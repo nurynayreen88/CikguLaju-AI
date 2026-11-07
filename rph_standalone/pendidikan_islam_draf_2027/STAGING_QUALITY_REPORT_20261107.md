@@ -569,7 +569,7 @@ Audit tanpa meminda sumber RPH menjumpai **13 Lesson Tahun 5** yang secara nyata
 
 ## 8 Nov 2026 — Pembetulan silang surah, objektif, induksi dan pentaksiran
 
-**11 PdP dibaiki pada draf RPH, dengan 13 medan berubah** (T3=5, T4=5, T5=1). Tujuh daripadanya memerlukan tanda pembetulan sumber RPT kerana label surah yang salah turut muncul dalam PDF RPT 2027. Bukti dibandingkan dengan PDF RPT Tahun 3 Drive `1ceqdKRKYP2MHpkPe4KbIOVpCooq37NVE` dan Tahun 4 Drive `1O7Jvuvs7B7CF1tomvJdBTo7khSnu2haX`; **RPT asal belum diubah**.
+**11 PdP dibaiki pada draf RPH, dengan 14 medan berubah** (T3=5, T4=5, T5=1). Tujuh daripadanya memerlukan tanda pembetulan sumber RPT kerana label surah yang salah turut muncul dalam PDF RPT 2027. Bukti dibandingkan dengan PDF RPT Tahun 3 Drive `1ceqdKRKYP2MHpkPe4KbIOVpCooq37NVE` dan Tahun 4 Drive `1O7Jvuvs7B7CF1tomvJdBTo7khSnu2haX`; **RPT asal belum diubah**.
 
 | PdP | Pembetulan kandungan staging |
 |---|---|
