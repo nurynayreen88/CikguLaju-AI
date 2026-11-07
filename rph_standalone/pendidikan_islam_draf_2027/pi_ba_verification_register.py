@@ -17,12 +17,13 @@ import json
 
 from pi_ba_match_queue import NEEDS_PAGE, match_queue
 from pi_ba_secondary_evidence import evidence_queue
+from pi_ba_provenance_review import provenance_report
 from pi_ba_source_integrity import EXPECTED
 
 COLUMNS = [
     "lesson_id", "year", "book_code_KPM", "domain", "sp_codes",
     "learning_focus", "secondary_source_count", "secondary_reported_pages",
-    "secondary_source_url", "secondary_source_topic", "secondary_conflict",
+    "secondary_source_url", "secondary_source_classification", "secondary_source_topic", "secondary_conflict",
     "needs_direct_book_inspection", "original_book_printed_page",
     "original_exercise_number", "original_exercise_instruction_summary",
     "page_image_hash_sha256", "evidence_internal_reference",
@@ -37,6 +38,8 @@ def register():
         r for r in match_queue()["rows"] if r["disposition"] == NEEDS_PAGE
     ]
     hints = evidence_queue()["rows"]
+    source_quality = {r["lesson_id"]:r["source_classification"]
+                      for r in provenance_report()["rows"]}
     by_id = {}
     for item in hints:
         by_id.setdefault(item["lesson_id"], []).append(item)
@@ -62,6 +65,9 @@ def register():
             "secondary_source_count": len(pages),
             "secondary_reported_pages": ", ".join(map(str, joined)),
             "secondary_source_url": " | ".join(sources),
+            "secondary_source_classification": source_quality.get(
+                item["id"], "NO_SECONDARY_HINT"
+            ),
             "secondary_source_topic": " | ".join(
                 h["topic_correspondence"] for h in pages
             ),
@@ -89,6 +95,13 @@ def register():
     assert candidates_with_hints == 42
     assert len(rows) == 174 and len({r["lesson_id"] for r in rows}) == 174
     assert conflicts == ["T3-L004"]
+    assert Counter(r["secondary_source_classification"] for r in rows) == {
+        "NO_SECONDARY_HINT": 132,
+        "TEACHER_PDPR_BOOK_ACTIVITY_PAGE_CLAIM": 27,
+        "VIDEO_PAGE_RANGE_UNCONFIRMED": 8,
+        "OTHER_TEACHER_SOURCE_PAGE_CLAIM": 6,
+        "SECONDARY_CONFLICT_SOURCE_PAGES": 1,
+    }
     assert all(not r["original_book_printed_page"] and not r["can_publish"]
                for r in rows)
     return {
