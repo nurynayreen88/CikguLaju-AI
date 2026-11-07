@@ -87,11 +87,42 @@ def audit(root=ROOT):
                 assert refinement.get("book_or_verse_reference_added") is False
                 assert GENERIC_PBD in refinement["original_pentaksiran"]
                 assert GENERIC_PBD not in fields["pentaksiran"]
-                assert fields["pentaksiran"].startswith(
-                    refinement["original_pentaksiran"].split("ڤبد اينديويدو:")[0])
-                assert refinement["assessment_criterion_review_only"] in fields["pentaksiran"]
-                assert refinement["observed_evidence_review_only"] in fields["pentaksiran"]
+                specific = record.get("staging_dskp_l146_alignment")
+                if specific:
+                    assert record["id"] == "T3-L146" and year == 3
+                    assert specific["original_pentaksiran"].startswith(
+                        refinement["original_pentaksiran"].split("ڤبد اينديويدو:")[0])
+                    assert refinement["assessment_criterion_review_only"] in specific["original_pentaksiran"]
+                    assert refinement["observed_evidence_review_only"] in specific["original_pentaksiran"]
+                    assert fields["pentaksiran"].startswith("ڤبد اينديويدو:")
+                    assert "بخيل" not in fields["pentaksiran"]
+                    assert "مروموس" in fields["pentaksiran"] and "ممڤراݢاكن" in fields["pentaksiran"]
+                else:
+                    assert fields["pentaksiran"].startswith(
+                        refinement["original_pentaksiran"].split("ڤبد اينديويدو:")[0])
+                    assert refinement["assessment_criterion_review_only"] in fields["pentaksiran"]
+                    assert refinement["observed_evidence_review_only"] in fields["pentaksiran"]
                 flags.append("PBD_SP_SASARAN_BELUM_DISAH_PAKAR")
+            alignment = record.get("staging_dskp_l146_alignment")
+            if alignment:
+                assert year == 3 and record["id"] == "T3-L146"
+                assert alignment["revision"] == "pi-year3-l146-dskp-6.4.3-6.4.5-20261107"
+                assert alignment["dskp_pdf_page"] == 51
+                assert alignment["dskp_printed_page"] == 39
+                assert alignment["source_sp_codes"] == ["6.4.3","6.4.4","6.4.5"]
+                assert alignment["source_sk_sp_unchanged"] is True
+                assert alignment["original_objektif"].startswith("موريد داڤت")
+                assert "2. مثنارايكن كڤنتيڠن" in alignment["original_objektif"]
+                assert "2. مروموس كڤنتيڠن" in fields["objektif"]
+                assert "3. مڠعملكن ساتو سنة رسول الله" in fields["objektif"]
+                assert "2. " in alignment["original_aktiviti_utama"]
+                assert "4. موريد ممڤراݢاكن" in fields["aktiviti_utama"]
+                assert "بخيل" in alignment["original_pentaksiran"]
+                assert alignment["content_expert_approved"] is False
+                assert alignment["jawi_orthography_approved"] is False
+                assert alignment["native_word_pdf_visual_approved"] is False
+                assert alignment["publication"] == "HOLD"
+                flags.append("DSKP_T3_L146_OBJECTIVE_PBD_REVISED_EXPERT_PENDING")
             # Script consistency is a QA task, never an automatic transliteration.
             if re.search(r"[A-Za-z]", fields["penutup"]):
                 flags.append("PENUTUP_RUMI_SEMAK_PENYERAGAMAN_JAWI")
@@ -126,6 +157,7 @@ def audit(root=ROOT):
         "expanded_activity_draft_count": flag_counts["PENAMBAHAN_PDP_BELUM_SAH_PAKAR"],
         "short_activity_count": flag_counts["AKTIVITI_TERLALU_RINGKAS_PERLU_SEMAKAN"],
         "critical_source_review_count": flag_counts["SUMBER_KRITIKAL_BELUM_LENGKAP"],
+        "dskp_l146_alignment_editorial_review_count": flag_counts["DSKP_T3_L146_OBJECTIVE_PBD_REVISED_EXPERT_PENDING"],
         "textbook_page_range_overrun_count": flag_counts["HALAMAN_BUKU_T2_MELEBIHI_MUKA_TERAKHIR"],
         "generic_pbd_count": flag_counts["PBD_TIDAK_KHUSUS_KEPADA_SP"],
         "refined_pbd_review_count": flag_counts["PBD_SP_SASARAN_BELUM_DISAH_PAKAR"],
