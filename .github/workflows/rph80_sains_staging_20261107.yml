@@ -25,6 +25,8 @@ on:
       - "web/sains_y2_51_activities_draf_20261107.py"
       - "tools/render_sains_y2_51_rph_draf_20261107.py"
       - "tools/check_sains_y2_51_word_a4_20261107.py"
+      - "tools/render_sains_y2_2_sp_alternative_pbd_20261107.py"
+      - "tests/test_sains_y2_2_sp_alternative_pbd_20261107.py"
       - "tests/test_sains_y2_51_bank_quality_20261107.py"
       - "web/sains_y4_79_activity_bank_draf_20261107.py"
       - "tools/render_sains_y4_79_rph_draf_20261107.py"
@@ -79,6 +81,10 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq libreoffice-writer fonts-dejavu-core
           python -m tools.check_sains_y2_51_word_a4_20261107
+      - name: Check two SP-specific original alternative PBD assessments (not BA pages)
+        run: |
+          python -m unittest discover -s tests -p 'test_sains_y2_2_sp_alternative_pbd_20261107.py' -v
+          python -m tools.render_sains_y2_2_sp_alternative_pbd_20261107
       - name: Render 45 Science Year3 review Word/PDF with original Activity Book references
         run: python -m tools.render_sains_y3_45_review_pack_20261106
       - name: Check printed one-page A4 for all 45 Year3 Word drafts
@@ -121,6 +127,10 @@ jobs:
             build/sains_y2_51_rph_DRAF_20261107/*.pdf
             build/sains_y2_51_rph_DRAF_20261107/*.csv
             build/sains_y2_51_rph_DRAF_20261107/*.json
+            build/sains_y2_2_alternative_sp_pbd_DRAF_20261107/*.docx
+            build/sains_y2_2_alternative_sp_pbd_DRAF_20261107/*.pdf
+            build/sains_y2_2_alternative_sp_pbd_DRAF_20261107/*.csv
+            build/sains_y2_2_alternative_sp_pbd_DRAF_20261107/*.json
             build/sains_y3_45_rph_REVIEW_ONLY_20261106/*.docx
             build/sains_y3_45_rph_REVIEW_ONLY_20261106/*.pdf
             build/sains_y3_45_rph_REVIEW_ONLY_20261106/*.csv
