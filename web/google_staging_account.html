@@ -30,6 +30,11 @@ small{color:#63796f}#status{min-height:25px}
 <p><a href="/google-staging-payments">Lihat ujian pembayaran</a></p>
 <p><small>Jangan buat bayaran sebenar melalui staging. Pengesahan bayaran belum dibuka untuk pengguna sebenar; janaan RPH hanya bagi akaun penguji.</small></p>
 </section>
+<section class="card">
+<h2>Status akses staging</h2>
+<p id="stagingPaidStatus">Menyemak langganan staging…</p>
+<p><small>Langganan dan Rakan Pembangun dalam Telegram produksi belum diselaraskan. Tiada akses produksi diberikan oleh status ini.</small></p>
+</section>
 <section class="card" aria-labelledby="recent-rph-title">
 <h2 id="recent-rph-title">RPH siap dimuat turun (staging)</h2>
 <p>Jika janaan selesai tetapi browser tertutup, fail yang sudah disahkan siap boleh dibuka semula tanpa potongan kredit tambahan.</p>
@@ -66,6 +71,26 @@ async function loadLinkAvailability(){
       }
     }
   }catch(e){/* Linking remains hidden until the staging Telegram bot is configured. */}
+}
+async function loadAccessStatus(){
+  const target=document.getElementById('stagingPaidStatus');
+  try{
+    const res=await fetch('/api/google-staging/web/access/status',
+                          {credentials:'same-origin',cache:'no-store'});
+    if(!res.ok)throw Error('Status berbayar staging belum dapat disahkan.');
+    const data=await res.json();
+    if(data.identity_verified!==true||data.staging_only!==true||
+       data.auth_provider!=='google'||data.production_entitlements_synced!==false||
+       data.real_payments_enabled!==false||
+       typeof data.staging_payment_access_active!=='boolean'||
+       !Array.isArray(data.staging_active_plans))
+        throw Error('Status akses staging tidak sah.');
+    target.textContent=data.staging_payment_access_active?
+      'Akses berbayar staging aktif: '+data.staging_active_plans.map(
+       x=>x.plan_code==='rakan_pembangun'?'Rakan Pembangun':x.plan_code).join(', ')+
+      '. Bukan pengesahan langganan Telegram produksi.':
+      'Belum ada akses berbayar dalam staging. Status langganan Telegram produksi belum diperiksa.';
+  }catch(e){target.textContent=e.message||'Status akses staging belum boleh disahkan.';}
 }
 async function loadRecentRph(){
   const view=document.getElementById('recentRph');
@@ -113,4 +138,5 @@ document.getElementById('logout').addEventListener('click',async()=>{
 loadProfile();
 loadRecentRph();
 loadLinkAvailability();
+loadAccessStatus();
 </script></body></html>
