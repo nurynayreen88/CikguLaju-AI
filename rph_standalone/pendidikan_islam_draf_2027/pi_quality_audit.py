@@ -137,6 +137,22 @@ def audit(root=ROOT):
                 assert isinstance(enrichment.get("original_activity"), str)
                 assert enrichment["original_activity"].strip()
                 flags.append("PENAMBAHAN_PDP_BELUM_SAH_PAKAR")
+            hadith = record.get("staging_hadith_original_source_verified")
+            if hadith:
+                assert year == 4 and record["id"] == "T4-L083"
+                assert record.get("staging_source_review_required") is True
+                assert hadith["source_book_printed_page"] == 51
+                assert hadith["source_dskp_printed_page"] == 27
+                assert hadith["dskp_excerpt_ellipsis_preserved"] is True
+                assert hadith["source_excerpt_not_full_hadith_narration"] is True
+                assert hadith["source_excerpt_used"] in fields["sp"]
+                assert hadith["original_fields_preserved"]["aktiviti_utama"].startswith("1. ")
+                assert len(fields["aktiviti_utama"].splitlines()) >= 3
+                assert hadith["expert_hadith_text_review_approved"] is False
+                assert hadith["pedagogical_content_expert_approved"] is False
+                assert hadith["jawi_orthography_approved"] is False
+                assert hadith["publication"] == "HOLD"
+                flags.append("HADIS_T4_PETIKAN_BUKU_DSKP_DRAF_SEMAK_PAKAR")
             if record.get("staging_source_review_required") is True:
                 flags.append("SUMBER_KRITIKAL_BELUM_LENGKAP")
             rows.append({"id": record["id"], "domain": domain,
@@ -158,6 +174,7 @@ def audit(root=ROOT):
         "short_activity_count": flag_counts["AKTIVITI_TERLALU_RINGKAS_PERLU_SEMAKAN"],
         "critical_source_review_count": flag_counts["SUMBER_KRITIKAL_BELUM_LENGKAP"],
         "dskp_l146_alignment_editorial_review_count": flag_counts["DSKP_T3_L146_OBJECTIVE_PBD_REVISED_EXPERT_PENDING"],
+        "t4_hadith_source_excerpt_editorial_review_count": flag_counts["HADIS_T4_PETIKAN_BUKU_DSKP_DRAF_SEMAK_PAKAR"],
         "textbook_page_range_overrun_count": flag_counts["HALAMAN_BUKU_T2_MELEBIHI_MUKA_TERAKHIR"],
         "generic_pbd_count": flag_counts["PBD_TIDAK_KHUSUS_KEPADA_SP"],
         "refined_pbd_review_count": flag_counts["PBD_SP_SASARAN_BELUM_DISAH_PAKAR"],
