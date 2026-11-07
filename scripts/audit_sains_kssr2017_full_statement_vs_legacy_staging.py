@@ -30,7 +30,11 @@ from tools.audit_sains_v26_readonly_20261106 import verify_and_rebuild
 def _wording(s):
     # Strict Unicode/whitespace normalization only: do not silently erase
     # content-bearing punctuation or change a source sentence.
-    return re.sub(r"\s+", " ", unicodedata.normalize("NFKC", str(s or ""))).strip()
+    normalized=unicodedata.normalize("NFKC",str(s or ""))
+    # The original KPM PDF line-wraps hyphenated words (bayang- bayang);
+    # compare against the unbroken spelling without changing source text.
+    normalized=re.sub(r"(?<=\w)-\s+(?=\w)","-",normalized)
+    return re.sub(r"\s+", " ", normalized).strip()
 
 def compare_official_to_legacy(year:int, official_rows:list, legacy_by_code:dict, expected_codes:set):
     if year not in (4, 5):
