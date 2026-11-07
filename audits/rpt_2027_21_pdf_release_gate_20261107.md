@@ -81,3 +81,15 @@ Ledger sedia ada `audits/sejarah_y4_y6_primary_textbook_page_evidence_20261106.j
 
 21/21 PDF dan **490 halaman** diperiksa selepas perubahan Sejarah. Muka depan hanya tajuk, kotak logo sekolah, nama sekolah dan nama guru. Semakan halaman: 0 blok teks melampaui sempadan, 0 aksara NUL, 21 PDF landskap sah. Laporan JSON membezakan kategori minggu termasuk bukti cuti M10. **Release gate kekal BLOCKED**, terutama kelulusan aktiviti/halaman buku dan integrasi RPT bersama profil Web/Telegram.
 
+
+## Sambungan: bukti langsung buku teks RBT Tahun 4 dan pembetulan tajuk (7 Nov 2026)
+
+- **RBT Tahun 4**: PDF asal 104 halaman dimuat daripada Drive pengguna; SHA-256 `8964ad3f0789ae825041294b5327ddc6bd6a40af3f8e5c835543157ffc1f9780`. Pengesahan teks pada halaman bercetak: **57/57 kod SP** dan **61/61 pasangan kod–halaman** lulus. Semakan gambar hanya sampel 9 halaman (4, 7, 9, 11, 34, 45, 68, 86, 97); status **0/32 kelulusan aktiviti visual** kekal.
+- **Padanan RPH–RPT–buku Tahun 4**: ujian silang `tests/test_rpt_2027_rbt_t4_book_page_evidence.py` memastikan **32/32 RPH** merujuk kepada halaman bercetak sama seperti ledger dan CSV; status asal `belum sah` tidak diubah.
+- **RBT T4–6: 12/96 tajuk PdP 99 aksara terpotong** telah digantikan pada **paparan PDF staging sahaja** menggunakan teks penuh SP DSKP. Identiti: Tahun 4 (003, 017, 019, 021, 028, 030), Tahun 5 (005, 010, 014, 029), Tahun 6 (018, 022). Tajuk asal CSV/RPH disimpan dalam `source_topic`; fail RPH asal tidak ditimpa. Lihat `audits/rbt_2027_truncated_12_pdp_titles_staging_20261107.md`.
+- Audit lain RBT T4–6: **16/16 SK + 114/114 SP** pernyataan penuh padan kod dan teks DSKP asal (selepas penormalan sengkang PDF); semakan visual/aktiviti belum ditandatangani.
+- CI 21 asal + 3 simulasi RBT **LULUS**: https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42316669184
+  Artifak 24 PDF + 48 PNG + audit kalendar: https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42316669184/artifacts/13551206896
+- Pemeriksaan PDF Tahun 4, 5 dan 6 mengesahkan perkataan tajuk panjang seperti "Penyelenggaraan peralatan", "kategori produk", "menggunakan peralatan yang sesuai" dan "akan dibina" kini muncul penuh.
+
+**Pagar pelepasan tidak berubah:** Tahun 5–6 belum mendapat pengesahan PDF buku teks asal setara T4, semua 96 agihan RBT menunggu jadual sekolah sebenar, kelulusan visual/aktiviti/safety guru belum selesai, pengisian profil Web/Telegram belum diaktifkan. PR kekal DRAF; tidak dibenarkan mengubah produksi.
