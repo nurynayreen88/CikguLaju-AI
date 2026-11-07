@@ -1,0 +1,492 @@
+{
+  "subject": "Sains",
+  "year": 4,
+  "source_id": "1eXDdb_qSfCKyqoVtl9T4q2I4rKyHtk9D",
+  "source_pdf": "GuruBesar_DSKP_Sains_Tahun_4.pdf",
+  "source_published_year": 2018,
+  "curriculum": "KSSR Semakan 2017",
+  "source_document_text_length": 97447,
+  "method": "Extract standard-code blocks and matching sentences from the owner's original KPM DSKP PDF. SP 2.1.6 appears separately on the next page; no textbook pages or teacher signoffs inferred.",
+  "source_sp_count": 79,
+  "source_sk_count": 19,
+  "kps_standards_separate_count": 12,
+  "teacher_pedagogy_approved": false,
+  "book_exact_pages_verified": false,
+  "release_status": "DRAF_HOLD",
+  "items": {
+    "2.1.1": {
+      "sk": "2.1",
+      "sp_text": "Mengenal pasti organ yang terlibat dalam proses pernafasan.",
+      "source_text_character_offset": 74128,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "2.1.2": {
+      "sk": "2.1",
+      "sp_text": "Memerihalkan proses pernafasan dari aspek laluan udara dan pertukaran gas yang berlaku di peparu melalui pemerhatian menerusi pelbagai media.",
+      "source_text_character_offset": 74128,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "2.1.3": {
+      "sk": "2.1",
+      "sp_text": "Membezakan kandungan oksigen dan karbon dioksida semasa menarik dan menghembus nafas.",
+      "source_text_character_offset": 74128,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "2.1.4": {
+      "sk": "2.1",
+      "sp_text": "Memerihalkan pergerakan dada semasa menarik dan menghembus nafas dengan menjalankan aktiviti.",
+      "source_text_character_offset": 74128,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "2.1.5": {
+      "sk": "2.1",
+      "sp_text": "Mengitlak bahawa kadar pernafasan bergantung kepada jenis aktiviti yang dilakukan.",
+      "source_text_character_offset": 74128,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "2.1.6": {
+      "sk": "2.1",
+      "sp_text": "Menjelaskan pemerhatian tentang proses pernafasan manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source_text_character_offset": 75353,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "2.2.1": {
+      "sk": "2.2",
+      "sp_text": "Menyatakan maksud perkumuhan dan penyahtinjaan.",
+      "source_text_character_offset": 75852,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "2.2.2": {
+      "sk": "2.2",
+      "sp_text": "Mengenal pasti organ dan hasil bagi perkumuhan.",
+      "source_text_character_offset": 75852,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "2.2.3": {
+      "sk": "2.2",
+      "sp_text": "Membuat inferens kepentingan penyingkiran hasil perkumuhan dan hasil penyahtinjaan.",
+      "source_text_character_offset": 75852,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "2.2.4": {
+      "sk": "2.2",
+      "sp_text": "Menjelaskan pemerhatian tentang perkumuhan dan penyahtinjaan manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source_text_character_offset": 75852,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "2.3.1": {
+      "sk": "2.3",
+      "sp_text": "Menyatakan manusia bergerak balas apabila organ deria menerima rangsangan.",
+      "source_text_character_offset": 77028,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "2.3.2": {
+      "sk": "2.3",
+      "sp_text": "Menjelas dengan contoh gerak balas manusia terhadap rangsangan dalam kehidupan harian.",
+      "source_text_character_offset": 77028,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "2.3.3": {
+      "sk": "2.3",
+      "sp_text": "Membuat inferens tentang kepentingan gerak balas manusia terhadap rangsangan.",
+      "source_text_character_offset": 77028,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "2.3.4": {
+      "sk": "2.3",
+      "sp_text": "Memerihalkan tabiat yang mengganggu proses gerak balas manusia terhadap rangsangan.",
+      "source_text_character_offset": 77028,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "2.3.5": {
+      "sk": "2.3",
+      "sp_text": "Menjelaskan pemerhatian tentang manusia bergerak balas terhadap rangsangan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source_text_character_offset": 77028,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "3.1.1": {
+      "sk": "3.1",
+      "sp_text": "Mengenal pasti organ pernafasan haiwan.",
+      "source_text_character_offset": 78547,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "3.1.2": {
+      "sk": "3.1",
+      "sp_text": "Mengelaskan haiwan berdasarkan organ pernafasan.",
+      "source_text_character_offset": 78547,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "3.1.3": {
+      "sk": "3.1",
+      "sp_text": "Mengitlak terdapat haiwan yang mempunyai lebih daripada satu organ pernafasan.",
+      "source_text_character_offset": 78547,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "3.1.4": {
+      "sk": "3.1",
+      "sp_text": "Menjelaskan pemerhatian tentang organ pernafasan haiwan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source_text_character_offset": 78547,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "3.2.1": {
+      "sk": "3.2",
+      "sp_text": "Menyatakan maksud haiwan vertebrata dan invertebrata.",
+      "source_text_character_offset": 79311,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "3.2.2": {
+      "sk": "3.2",
+      "sp_text": "Memberi contoh haiwan vertebrata dan invertebrata.",
+      "source_text_character_offset": 79311,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "3.2.3": {
+      "sk": "3.2",
+      "sp_text": "Mengelaskan haiwan vertebrata berdasarkan ciri khusus bagi mamalia, reptilia, amfibia, burung dan ikan.",
+      "source_text_character_offset": 79311,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "3.2.4": {
+      "sk": "3.2",
+      "sp_text": "Menjelaskan pemerhatian tentang haiwan vertebrata melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source_text_character_offset": 79311,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "4.1.1": {
+      "sk": "4.1",
+      "sp_text": "Menyatakan tumbuhan bergerak balas terhadap rangsangan melalui pemerhatian menerusi pelbagai media.",
+      "source_text_character_offset": 80476,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "4.1.2": {
+      "sk": "4.1",
+      "sp_text": "Menghubungkait bahagian tumbuhan yang bergerak balas dengan jenis rangsangan.",
+      "source_text_character_offset": 80476,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "4.1.3": {
+      "sk": "4.1",
+      "sp_text": "Membuat kesimpulan bahagian tumbuhan yang bergerak balas terhadap rangsangan dengan menjalankan penyiasatan.",
+      "source_text_character_offset": 80476,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "4.1.4": {
+      "sk": "4.1",
+      "sp_text": "Menjelaskan pemerhatian tentang tumbuhan gerak balas terhadap rangsangan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source_text_character_offset": 80476,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "4.2.1": {
+      "sk": "4.2",
+      "sp_text": "Menyatakan maksud fotosintesis.",
+      "source_text_character_offset": 81466,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "4.2.2": {
+      "sk": "4.2",
+      "sp_text": "Menyenaraikan keperluan tumbuhan semasa proses fotosintesis.",
+      "source_text_character_offset": 81466,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "4.2.3": {
+      "sk": "4.2",
+      "sp_text": "Menyatakan hasil fotosintesis melalui pemerhatian menerusi pelbagai media.",
+      "source_text_character_offset": 81466,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "4.2.4": {
+      "sk": "4.2",
+      "sp_text": "Menaakul kepentingan fotosintesis terhadap hidupan.",
+      "source_text_character_offset": 81466,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "4.2.5": {
+      "sk": "4.2",
+      "sp_text": "Menjelaskan pemerhatian tentang fotosintesis melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source_text_character_offset": 81466,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "5.1.1": {
+      "sk": "5.1",
+      "sp_text": "Menyatakan cahaya bergerak lurus dengan menjalankan aktiviti.",
+      "source_text_character_offset": 82355,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "5.1.2": {
+      "sk": "5.1",
+      "sp_text": "Membanding dan membezakan bayang-bayang yang terhasil apabila cahaya dihalang oleh objek lutsinar, lutcahaya dan legap dengan menjalankan aktiviti.",
+      "source_text_character_offset": 82355,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "5.1.3": {
+      "sk": "5.1",
+      "sp_text": "Mengeksperimen untuk menentukan faktor yang mempengaruhi saiz dan bentuk bayang-bayang.",
+      "source_text_character_offset": 82355,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "5.1.4": {
+      "sk": "5.1",
+      "sp_text": "Menjelaskan pemerhatian tentang cahaya bergerak lurus melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source_text_character_offset": 82355,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "5.2.1": {
+      "sk": "5.2",
+      "sp_text": "Menyatakan cahaya boleh dipantulkan dengan menjalankan aktiviti.",
+      "source_text_character_offset": 83259,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "5.2.2": {
+      "sk": "5.2",
+      "sp_text": "Memerihalkan kegunaan pantulan cahaya dalam kehidupan harian.",
+      "source_text_character_offset": 83259,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "5.2.3": {
+      "sk": "5.2",
+      "sp_text": "Melukis gambar rajah sinar yang menunjukkan pantulan cahaya pada cermin.",
+      "source_text_character_offset": 83259,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "5.2.4": {
+      "sk": "5.2",
+      "sp_text": "Menjelaskan pemerhatian tentang pantulan cahaya melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source_text_character_offset": 83259,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "5.3.1": {
+      "sk": "5.3",
+      "sp_text": "Menyatakan cahaya boleh dibiaskan melalui pemerhatian menerusi pelbagai media.",
+      "source_text_character_offset": 84068,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "5.3.2": {
+      "sk": "5.3",
+      "sp_text": "Menjelas melalui contoh cahaya boleh dibiaskan dengan menjalankan aktiviti.",
+      "source_text_character_offset": 84068,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "5.3.3": {
+      "sk": "5.3",
+      "sp_text": "Memerihalkan pembentukan pelangi dengan menjalankan aktiviti.",
+      "source_text_character_offset": 84068,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "5.3.4": {
+      "sk": "5.3",
+      "sp_text": "Menjelaskan pemerhatian tentang pembiasan cahaya melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source_text_character_offset": 84068,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "6.1.1": {
+      "sk": "6.1",
+      "sp_text": "Menyatakan bunyi dihasilkan oleh getaran dengan menjalankan aktiviti.",
+      "source_text_character_offset": 84946,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "6.1.2": {
+      "sk": "6.1",
+      "sp_text": "Memerihalkan bunyi bergerak ke semua arah.",
+      "source_text_character_offset": 84946,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "6.1.3": {
+      "sk": "6.1",
+      "sp_text": "Memberi contoh fenomena dalam kehidupan harian yang menunjukkan bunyi boleh dipantulkan.",
+      "source_text_character_offset": 84946,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "6.1.4": {
+      "sk": "6.1",
+      "sp_text": "Memerihalkan bunyi yang berfaedah dan bunyi yang memudaratkan dalam kehidupan harian.",
+      "source_text_character_offset": 84946,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "6.1.5": {
+      "sk": "6.1",
+      "sp_text": "Menjana idea untuk menyelesaikan masalah bagi mengurangkan pencemaran bunyi.",
+      "source_text_character_offset": 84946,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "7.1.1": {
+      "sk": "7.1",
+      "sp_text": "Menyatakan maksud tenaga.",
+      "source_text_character_offset": 86237,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "7.1.2": {
+      "sk": "7.1",
+      "sp_text": "Memerihalkan pelbagai sumber tenaga melalui pemerhatian menerusi pelbagai media.",
+      "source_text_character_offset": 86237,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "7.1.3": {
+      "sk": "7.1",
+      "sp_text": "Menjelaskan dengan contoh pelbagai bentuk tenaga.",
+      "source_text_character_offset": 86237,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "7.1.4": {
+      "sk": "7.1",
+      "sp_text": "Menjelaskan melalui contoh perubahan bentuk tenaga dalam kehidupan seharian.",
+      "source_text_character_offset": 86237,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "7.1.5": {
+      "sk": "7.1",
+      "sp_text": "Mengitlak tenaga tidak boleh dicipta dan tidak boleh dimusnahkan tetapi boleh berubah bentuk.",
+      "source_text_character_offset": 86237,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "7.1.6": {
+      "sk": "7.1",
+      "sp_text": "Menjelaskan pemerhatian tentang sumber tenaga dan bentuk tenaga melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source_text_character_offset": 86237,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "7.2.1": {
+      "sk": "7.2",
+      "sp_text": "Menjelaskan dengan contoh sumber tenaga boleh dibaharui dan tenaga tidak boleh dibaharui melalui pemerhatian menerusi pelbagai media.",
+      "source_text_character_offset": 87467,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "7.2.2": {
+      "sk": "7.2",
+      "sp_text": "Menjana idea kepentingan penggunaan sumber tenaga secara berhemah.",
+      "source_text_character_offset": 87467,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "7.2.3": {
+      "sk": "7.2",
+      "sp_text": "Menjelaskan pemerhatian tentang sumber tenaga boleh dibaharui dan sumber tenaga tidak boleh dibaharui melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source_text_character_offset": 87467,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "8.1.1": {
+      "sk": "8.1",
+      "sp_text": "Menjelaskan melalui contoh sumber asas bagi bahan yang digunakan untuk membuat objek.",
+      "source_text_character_offset": 88557,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "8.1.2": {
+      "sk": "8.1",
+      "sp_text": "Mengelaskan objek berdasarkan sumber asasnya.",
+      "source_text_character_offset": 88557,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "8.1.3": {
+      "sk": "8.1",
+      "sp_text": "Menjelaskan pemerhatian tentang sumber asas bahan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source_text_character_offset": 88557,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "8.2.1": {
+      "sk": "8.2",
+      "sp_text": "Memerihalkan sifat bahan dengan menjalankan aktiviti.",
+      "source_text_character_offset": 89346,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "8.2.2": {
+      "sk": "8.2",
+      "sp_text": "Mereka cipta objek dengan mengaplikasikan pengetahuan tentang sifat bahan.",
+      "source_text_character_offset": 89346,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "8.2.3": {
+      "sk": "8.2",
+      "sp_text": "Menaakul pemilihan jenis bahan yang digunakan dalam mereka cipta objek.",
+      "source_text_character_offset": 89346,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "8.2.4": {
+      "sk": "8.2",
+      "sp_text": "Menjelaskan pemerhatian tentang sifat bahan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source_text_character_offset": 89346,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "9.1.1": {
+      "sk": "9.1",
+      "sp_text": "Memerihalkan daya tarikan graviti bumi berdasarkan pemerhatian dengan menjalankan aktiviti.",
+      "source_text_character_offset": 90596,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "9.1.2": {
+      "sk": "9.1",
+      "sp_text": "Mengitlak bahawa semua objek di Bumi boleh berada pada kedudukannya dengan menjalankan aktiviti.",
+      "source_text_character_offset": 90596,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "9.1.3": {
+      "sk": "9.1",
+      "sp_text": "Menjelaskan pemerhatian tentang tarikan graviti bumi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source_text_character_offset": 90596,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "9.2.1": {
+      "sk": "9.2",
+      "sp_text": "Menyatakan Bumi berputar pada paksinya dan pada masa yang sama beredar mengikut orbitnya mengelilingi Matahari.",
+      "source_text_character_offset": 91477,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "9.2.2": {
+      "sk": "9.2",
+      "sp_text": "Memerihalkan putaran dan peredaran Bumi dari aspek arah dan tempoh.",
+      "source_text_character_offset": 91477,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "9.2.3": {
+      "sk": "9.2",
+      "sp_text": "Memerihalkan kesan putaran Bumi pada paksinya dengan menjalankan aktiviti.",
+      "source_text_character_offset": 91477,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "9.2.4": {
+      "sk": "9.2",
+      "sp_text": "Menjelaskan pemerhatian tentang putaran dan peredaran Bumi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source_text_character_offset": 91477,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "10.1.1": {
+      "sk": "10.1",
+      "sp_text": "Mengenal pasti beban, fulkrum dan daya pada tuas dengan menjalankan aktiviti.",
+      "source_text_character_offset": 92675,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "10.1.2": {
+      "sk": "10.1",
+      "sp_text": "Mengitlak hubung kait jarak beban dari fulkrum dengan daya yang diperlukan.",
+      "source_text_character_offset": 92675,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "10.1.3": {
+      "sk": "10.1",
+      "sp_text": "Menjelaskan pemerhatian tentang tuas melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source_text_character_offset": 92675,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "10.2.1": {
+      "sk": "10.2",
+      "sp_text": "Menjelas dengan contoh jenis dan kegunaan mesin ringkas dengan menjalankan aktiviti.",
+      "source_text_character_offset": 93634,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "10.2.2": {
+      "sk": "10.2",
+      "sp_text": "Menyelesaikan masalah dengan menggunakan dua atau lebih mesin ringkas.",
+      "source_text_character_offset": 93634,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "10.2.3": {
+      "sk": "10.2",
+      "sp_text": "Merumuskan maksud mesin kompleks.",
+      "source_text_character_offset": 93634,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    },
+    "10.2.4": {
+      "sk": "10.2",
+      "sp_text": "Menjelaskan pemerhatian tentang mesin ringkas dan mesin kompleks melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "source_text_character_offset": 93634,
+      "source_kind": "ORIGINAL_KPM_YEAR4_DSKP_EXTRACTED_TEXT"
+    }
+  }
+}
