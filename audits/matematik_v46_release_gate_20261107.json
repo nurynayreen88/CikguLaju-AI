@@ -1,0 +1,26 @@
+{
+  "version": "v46",
+  "source_archive": "CIKGULAJU_MATEMATIK_v45_585_RPH_BA_SP_HALAMAN_STAGING.zip",
+  "source_sha256": "9c6ed89ba1fa892b01da8e2fdc5fd7364369891c4996d930a65b6759f96e70e4",
+  "archive": "CIKGULAJU_MATEMATIK_v46_585_RPH_SP_SUDUT_DSKP_STAGING.zip",
+  "sha256": "f95078a1cfec1e29e0cae5436bbb01c158f41234d9d6581c17c24924d53124fa",
+  "rph_total": 585,
+  "corrected_lesson_ids": [
+    "T6-L108",
+    "T6-L109"
+  ],
+  "correction_type": "SP_8_1_1_DEGREE_SYMBOL",
+  "old_incorrect_statement": "nilai sudut 450, 900 dan 1800",
+  "verified_statement": "nilai sudut 45°, 90° dan 180°",
+  "evidence": "DSKP Matematik Tahun 6 (2021), PDF page 72 (physical page); source visually inspected",
+  "word_pdf_markdown_corrected": 2,
+  "year6_combined_pdf_regenerated": true,
+  "BA_Y2_Y3_effective_references": 234,
+  "QA_one_page_A4": 585,
+  "QA_bold_phases": 585,
+  "academic_exercise_approval_count": 0,
+  "real_staging_E2E_tested": false,
+  "calendar_2027_final_verified": false,
+  "production_modified": false,
+  "final_ready": false
+}
