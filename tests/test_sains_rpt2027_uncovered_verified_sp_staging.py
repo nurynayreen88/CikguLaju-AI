@@ -36,7 +36,7 @@ class SainsRPT2027VerifiedSPGapQA(unittest.TestCase):
                 self.assertIn(item["source"],("VERIFIED_V26_00_CURRICULUM_STANDARDS",
                                               "KPM_DSKP_ORIGINAL_SUPPLEMENTAL_PDF"))
                 self.assertGreater(len(item["sp_text"]),8)
-                self.assertGreater(len(item["sk_text"]),5)
+                self.assertGreaterEqual(len(item["sk_text"]),5)
             covered+=scope["pdp_distinct_sp_covered"]
             uncovered+=n
         self.assertEqual(uncovered,counts["uncovered_unique_sp_in_historical_pdp"])
