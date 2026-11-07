@@ -42,7 +42,7 @@ class NativeGoogleRPHTests(unittest.TestCase):
 
     def test_disabled_native_google_rph_gate(self):
         with patch("web.native_google_rph_routes._actor",
-                   return_value=(None,None,(jsonify({"error":"disabled"}),503))):
+                   return_value=(None,None,({"error":"disabled"},503))):
             self.assertEqual(self.client.get("/api/auth/google-native/rph/capabilities",
                                  base_url=self.base).status_code,503)
 
