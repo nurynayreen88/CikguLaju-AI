@@ -29,7 +29,8 @@ FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 BOLD_FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 DSKP_SOURCE = "https://drive.google.com/file/d/1eXDdb_qSfCKyqoVtl9T4q2I4rKyHtk9D/view"
 BOOK_SOURCE = "https://drive.google.com/file/d/1Y2Uf44WX5bFhAaaEx55Is7cZpJfrn7Ms/view"
-TEXTBOOK_STATUS = "ASAL_337MB_TEXT_EXTRACTION_EMPTY__NO_PAGE_REFERENCE_APPROVED"
+TEXTBOOK_STATUS = "UNIT_2019_TOC_RANGE_ONLY__NO_EXACT_SP_PAGE_APPROVED"
+TOC_AUDIT = ROOT / "audits/sains_y4_79_textbook_unit_toc_review_20261107.json"
 
 KPS = {
     "1.1.1": "Memerhati",
@@ -57,6 +58,38 @@ def kps_for(sp):
     return f"{primary} {KPS[primary]}; 1.1.6 {KPS['1.1.6']} (cadangan aktiviti)"
 
 
+def textbook_unit_toc():
+    source=json.loads(TOC_AUDIT.read_text(encoding="utf-8"))
+    if (source.get("year")!=4
+        or source.get("book_isbn")!="978-983-49-2474-4"
+        or source.get("source_pdp_count")!=79
+        or source.get("unit_count")!=9
+        or source.get("status")!="STAGING_UNIT_TOC_ONLY__SP_PAGE_UNVERIFIED"
+        or source.get("source_sp_printed_page_verified_count")!=0
+        or source.get("teacher_academic_approval_count")!=0
+        or source.get("allow_exact_sp_page_reference") is not False
+        or source.get("allow_runtime_release") is not False
+        or source.get("no_database_write") is not True):
+        raise ValueError("Unsafe Year4 textbook page promotion")
+    bysk={}
+    for unit in source["units"]:
+        if (unit["status"]!="UNIT_ONLY__EXACT_SP_PAGE_NOT_VERIFIED"
+            or unit["teacher_approved"] is not False
+            or len(unit["printed_toc_range"])!=2
+            or unit["printed_toc_range"][0]>=unit["printed_toc_range"][1]
+            or int(unit["unit"]) not in range(2,11)):
+            raise ValueError("Year4 TOC source unit invalid")
+        for sk in unit["sk_groups"]:
+            if sk in bysk:
+                raise ValueError("Duplicate Year4 SK TOC unit "+sk)
+            bysk[sk]=unit
+    expected={"2.1","2.2","2.3","3.1","3.2","4.1","4.2",
+              "5.1","5.2","5.3","6.1","7.1","7.2","8.1","8.2",
+              "9.1","9.2","10.1","10.2"}
+    if set(bysk)!=expected or len(source["units"])!=9:
+        raise ValueError("Year4 TOC SK coverage does not match 79 PdP")
+    return bysk
+
 def get_y4_records():
     rows, summary=analyze()
     selected=[r for r in rows if r["tahun"]==4]
@@ -71,11 +104,21 @@ def get_y4_records():
     if summary["decision"]!="HOLD":
         raise ValueError("Source audit release gate unexpectedly lifted")
     result=[]
+    toc=textbook_unit_toc()
     for row in selected:
         if row["keputusan"]!="HOLD":
             raise ValueError("Unapproved source treated as ready")
+        chapter=toc.get(row["sk"])
+        if not chapter:
+            raise ValueError("Year4 SK missing textbook unit context: "+row["pdp_code"])
+        chapter_note=(f"Unit {chapter['unit']} {chapter['topic']}, julat m/s "
+                      f"{chapter['printed_toc_range'][0]}-{chapter['printed_toc_range'][1]} "
+                      "(ISI KANDUNGAN SAHAJA; m/s tepat SP belum disahkan)")
         result.append({
             **row, **BANK[row["sp"]],
+            "textbook_unit_toc_note":chapter_note,
+            "textbook_toc_unit":chapter["unit"],
+            "textbook_toc_range":chapter["printed_toc_range"],
             "kps":kps_for(row["sp"]),
             "subject":"Sains",
             "year":4,
@@ -96,6 +139,7 @@ def markdown(item):
         f"**SP:** {sp}\n"
         "**Rujukan:** DSKP Sains Tahun 4 KSSR Semakan 2017; halaman Buku Teks "
         "asal belum disahkan (PDF sumber 337 MB).\n"
+        f"**Petunjuk unit BT:** {item.get('textbook_unit_toc_note','TIADA')}.\n"
         "**Tempoh cadangan:** 60 minit (ikut jadual sebenar)\n"
         f"**Objektif dan kriteria kejayaan:** {item['pbd']}.\n"
         f"**KPS diintegrasi:** {item['kps']}\n\n"
@@ -161,7 +205,7 @@ def word_doc(path,item):
       ("Penutup (5m)","Murid menyatakan dapatan; guru merumus SP "+item["sp"]+"."),
       ("BBM",item["materials"]),
       ("Keselamatan",item["safety"]),
-      ("Buku teks/Status","Muka surat belum disahkan (sumber 337MB) • DRAF/HOLD"),
+      ("Buku teks/Status",item.get("textbook_unit_toc_note","Muka surat belum disahkan")+" • DRAF/HOLD"),
     ]
     for i,(label,body) in enumerate(fields):
         _cell(phases.cell(i,0),label,bold=True)
@@ -202,7 +246,7 @@ def pdf_doc(path,item):
       ("Penutup 5m","Murid menyatakan dapatan; guru merumus SP "+item["sp"]+"."),
       ("BBM",item["materials"]),
       ("Keselamatan",item["safety"]),
-      ("Rujukan/Status","DSKP KPM. Halaman BT belum disahkan. DRAF/HOLD"),
+      ("Rujukan/Status","DSKP KPM. "+item.get("textbook_unit_toc_note","Halaman BT belum disahkan")+" • DRAF/HOLD"),
       ("Refleksi","____/____ murid mencapai objektif."),
     ]
     rows=[[p(k,label),p(v)] for k,v in fields]
@@ -252,6 +296,9 @@ def main():
             "pdf_one_page_a4":"PASS","word_a4":"SIZE_PASS__PRINT_PAGE_COUNT_PENDING",
             "dsKP_source":"TEXT_TOKEN_VERIFIED_NOT_FULL_SP_SEMANTICS",
             "textbook_pages":"UNVERIFIED__NONE_INVENTED",
+            "textbook_toc_unit":entry["textbook_toc_unit"],
+            "textbook_toc_range":",".join(map(str,entry["textbook_toc_range"])),
+            "textbook_toc_status":"UNIT_RANGE_ONLY__NOT_EXACT_SP_PAGE",
             "lesson_activities":"SOURCE_SPECIFIC_DRAFT",
             "academic_score": "NOT_CERTIFIED",
             "release":"HOLD",
@@ -264,6 +311,8 @@ def main():
         "source":"v25.82 staged read-only ledger + original Year4 DSKP",
         "dsKP_url":DSKP_SOURCE,"original_book_url":BOOK_SOURCE,
         "original_book_status":TEXTBOOK_STATUS,
+        "textbook_toc_unit_only_coverage":79,
+        "exact_sp_page_reference_verified":0,
         "year":4,"pdp":len(records),"docx":len(records),"pdf":len(records),
         "markdown":len(records),"status":"DRAF/HOLD",
         "academic_quality_percent":None,"approved_by_teacher":False,
