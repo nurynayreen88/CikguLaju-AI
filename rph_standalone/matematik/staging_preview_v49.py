@@ -18,7 +18,7 @@ import zipfile
 from functools import lru_cache
 from pathlib import Path
 
-EXPECTED_SHA256 = "4c4c80561fba467debb2bf6364e1b05defaf721006e77224182186c7122c07c2"
+EXPECTED_SHA256 = "fcc3e7fe07ed6eb9cb0abdff1ef3bd1765c7050a6d8e036b81abd199ae4835b0"
 STAGING_FLAG = "CIKGULAJU_MATH_RPH_V49_STAGING_PREVIEW"
 CALLBACK_PREFIX = "mathrph_v49_preview_"
 CALLBACK_RE = re.compile(r"^mathrph_v49_preview_y([2-6])_l(\d{3})_(pdf|docx)$")
