@@ -1,0 +1,51 @@
+name: Sains Tahun 2 four DSKP content and A4 regression
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+    paths:
+      - "web/sains_y2_51_activities_draf_20261107.py"
+      - "tests/test_sains_y2_four_semantic_quality_fixes_20261108.py"
+      - "audits/sains_y2_4_pdp_source_content_review_20261108.md"
+      - ".github/workflows/sains_y2_four_semantic_quality_20261108.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  keep-year2-academic-hold:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install document QA dependencies
+        run: |
+          python -m pip install python-docx==1.1.2 reportlab==4.2.5 pypdf==5.1.0
+      - name: Check four source-grounded Year2 experiments and safety
+        run: python -m unittest discover -s tests -p 'test_sains_y2_four_semantic_quality_fixes_20261108.py' -v
+      - name: Check all 51 source-specific Sains Year2 activities and DSKP source warnings
+        run: python -m unittest discover -s tests -p 'test_sains_y2_51_bank_quality_20261107.py' -v
+      - name: Rebuild Year2 standalone source RPH without touching production
+        run: |
+          python -m tools.render_sains_rpt_2027_ab_review_20261106
+          python -m tools.render_sains_y2_51_rph_draf_20261107
+      - name: Check real Year2 Word one-page A4 and reject overflow
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libreoffice-writer fonts-dejavu-core
+          python -m tools.check_sains_y2_51_word_a4_20261107
+      - name: Keep 51 staging Word/PDF reviewer copies, not user-facing release
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: SAINS_Y2_51_FOUR_CONTENT_FIXES_REVIEW_HOLD
+          if-no-files-found: warn
+          path: |
+            build/sains_y2_51_rph_DRAF_20261107/*.docx
+            build/sains_y2_51_rph_DRAF_20261107/*.pdf
+            build/sains_y2_51_rph_DRAF_20261107/*.json
+            build/sains_y2_51_rph_DRAF_20261107/*.csv
