@@ -7,6 +7,8 @@ on:
       - staging/sains-rpt-2027-ab-clean-20261106
     paths:
       - "web/sains_y3_rph_activity_preview_20261106.py"
+      - "audits/sains_y2_51_textbook_original_page_visual_20261107.json"
+      - "audits/sains_y3_45_textbook_original_page_visual_20261107.json"
       - "tools/render_sains_y3_45_review_pack_20261106.py"
       - "tools/check_sains_342_rph_format_20261107.py"
       - "tools/sains_buku_aktiviti_mapping_20261107.py"
