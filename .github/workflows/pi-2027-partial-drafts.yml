@@ -31,6 +31,8 @@ jobs:
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_ba_source_integrity.py --output pi_ba_source_integrity.json
       - name: Prepare 174 conditional Jawi activity-book cues (not teacher material)
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_ba_sentence_candidates.py --output pi_ba_sentence_candidates_174.json
+      - name: Classify 42 secondary BA sources and their contradictions
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_ba_provenance_review.py --output pi_ba_provenance_42.json
       - name: Prepare 174-lesson BA verification register (CSV and JSON; editor only)
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_ba_verification_register.py --json pi_ba_verification_register_174.json --csv pi_ba_verification_register_174.csv
       - name: Verify every audit artifact exists, is nonempty, and stays review-only
@@ -44,6 +46,7 @@ jobs:
             pi_ba_secondary_evidence_42.json \
             pi_ba_source_integrity.json \
             pi_ba_sentence_candidates_174.json \
+            pi_ba_provenance_42.json
             pi_ba_verification_register_174.json \
             pi_ba_verification_register_174.csv; do
             if [ ! -s "$file" ]; then
@@ -63,6 +66,7 @@ jobs:
             pi_ba_secondary_evidence_42.json
             pi_ba_source_integrity.json
             pi_ba_sentence_candidates_174.json
+            pi_ba_provenance_42.json
             pi_ba_verification_register_174.json
             pi_ba_verification_register_174.csv
           retention-days: 30
