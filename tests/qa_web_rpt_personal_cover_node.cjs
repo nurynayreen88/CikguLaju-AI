@@ -8,7 +8,7 @@ const assert=require("assert");
 const PDFLib=require("../web_v1_static_preview/pdf-lib.min.js");
 const root=path.join(__dirname,"..","rpt_2027","web_2027_pdfs");
 const manifest=JSON.parse(fs.readFileSync(path.join(root,"manifest.json"),"utf8"));
-const png=Buffer.from("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAusB9WlJeuAAAAAASUVORK5CYII=","base64");
+const png=Buffer.from("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR4nGP4z8DwHwAFAAH/iZk9HQAAAABJRU5ErkJggg==","base64");
 async function main(){
   assert.strictEqual(manifest.count,56);
   const subjects=new Set(Object.keys(manifest.files).map(x=>x.split(":")[0]));
