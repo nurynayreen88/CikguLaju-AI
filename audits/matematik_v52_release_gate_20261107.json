@@ -46,5 +46,16 @@
   "telegram_web_real_staging_e2e": false,
   "final_ready": false,
   "production_modified": false,
-  "notes": "Spelling and instructional exercise coverage corrected using visually checked DSKP; book exercise approvals remain pending."
+  "notes": "Spelling and instructional exercise coverage corrected using visually checked DSKP; book exercise approvals remain pending.",
+  "rpt_v28_ellipsis_count_by_year": {
+    "2": 0,
+    "3": 35,
+    "4": 71,
+    "5": 50,
+    "6": 54
+  },
+  "rpt_v28_total_ellipsis_occurrences": 210,
+  "rpt_full_sp_descriptions_and_focus_reviewed": false,
+  "rpt_source_version": "RPT Matematik Tahun 2–6 2027 v28 SEMENTARA",
+  "note_rpt": "585 matching lesson/SP codes is not a verification of complete non-truncated SP text or activity descriptions. 210 visible ellipsis occurrences in Year3–6 source PDFs."
 }
