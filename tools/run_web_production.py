@@ -19,6 +19,14 @@ app.register_blueprint(web_payment_bp)
 # Never change payment approval, subscription or generation logic here.
 from web.telegram_prod_paid_status_bridge import bp as read_only_paid_status_bp
 app.register_blueprint(read_only_paid_status_bp)
+# Google canonical UUID login is safe to register while disabled. It never
+# runs unless the explicit canonical AND RPH launch gates are enabled.
+from web.google_native_canonical_login_routes import bp as google_canonical_login_bp
+app.register_blueprint(google_canonical_login_bp)
+from web.native_google_telegram_link_routes import bp as google_native_link_bp
+app.register_blueprint(google_native_link_bp)
+from web.native_google_rph_routes import bp as native_google_rph_bp
+app.register_blueprint(native_google_rph_bp)
 from web.web_referral_routes import install as install_web_referral
 install_web_referral(app)
 
