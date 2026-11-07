@@ -43,7 +43,7 @@ def supplementary_sains_rows(year:int,audit=None):
                 "sk_display":f"{sk} — {sk_text}",
                 "sp_display":f"{code} — {text}",
                 "week":"","a_start":"","a_end":"","b_start":"","b_end":"",
-                "note":f"SUMBER DSKP DISAHKAN: {category_note} Lampiran semakan, tiada tarikh kelas. {item['source']}.",
+                "note":f"RUJUKAN DB LEGACY (bukan pengesahan KSSR2017): {category_note} Kod mesti dipadankan semula kepada DSKP asal. Lampiran audit sahaja, tiada tarikh kelas. {item['source']}.",
                 "gap_kind":kind,"assigned_to_existing_pdp":False,
                 "academic_signoff":False,
             })
