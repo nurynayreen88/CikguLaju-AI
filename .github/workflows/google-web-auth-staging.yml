@@ -21,6 +21,8 @@ on:
       - 'migrations/DRAFT_ONLY_web_canonical_identity_449.sql'
       - 'tests/sql/web_canonical_identity_fixture.sql'
       - 'tests/sql/web_canonical_identity_integration.sql'
+      - 'migrations/STAGING_ONLY_web_rph_bundle_jobs_450.sql'
+      - 'tests/sql/web_google_rph_bundle_jobs_integration.sql'
       - 'web/google_rph_bundle_quota.py'
       - 'tests/test_web_google_rph_bundle_quota.py'
       - 'web/google_native_rph_bundle.py'
@@ -117,10 +119,13 @@ jobs:
           psql -v ON_ERROR_STOP=1 -f migrations/STAGING_ONLY_web_private_receipt_bucket_445.sql
           psql -v ON_ERROR_STOP=1 -f migrations/STAGING_ONLY_web_payment_review_rpc_445.sql
           psql -v ON_ERROR_STOP=1 -f migrations/STAGING_ONLY_web_google_rph_delivery_quota_448.sql
+          psql -v ON_ERROR_STOP=1 -f migrations/STAGING_ONLY_web_rph_bundle_jobs_450.sql
       - name: Verify account identity, receipt, manual review and replay
         run: psql -v ON_ERROR_STOP=1 -f tests/sql/web_google_payment_integration.sql
       - name: Verify exactly-once Google RPH bundle debit and security on disposable DB
         run: psql -v ON_ERROR_STOP=1 -f tests/sql/web_google_rph_quota_integration.sql
+      - name: Verify durable private Word+PDF bundle job and replay safety
+        run: psql -v ON_ERROR_STOP=1 -f tests/sql/web_google_rph_bundle_jobs_integration.sql
       - name: Validate draft cross-provider schema in disposable PostgreSQL ONLY
         run: |
           psql -v ON_ERROR_STOP=1 -f tests/sql/web_canonical_identity_fixture.sql
