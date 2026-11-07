@@ -31,6 +31,13 @@ Audit Buku Aktiviti:
 - **174** calon latihan BA daripada 258 draf Tahun 2–3; **84** fokus kepada pentaksiran lisan/bacaan/hafazan/tasmi' tanpa paksaan BA.
 - Fail kerja editor tetap: [PI_BA_REVIEW_REGISTER_174_STAGING.csv](./PI_BA_REVIEW_REGISTER_174_STAGING.csv) — mengandungi kod KPM **BA102001/BA103001**, 42 petunjuk halaman PdPR dengan URL, serta ruangan untuk pengesahan langsung. **Semua halaman bercetak dan arahan latihan asal masih belum disahkan.**
 - Laporan lengkap: [STAGING_QUALITY_REPORT_20261107.md](./STAGING_QUALITY_REPORT_20261107.md).
-- CI menghasilkan 9 artefak sementara dan menyemak kewujudan setiap fail (termasuk CSV); fail asal/latihan buku berhak cipta tidak dimuat naik semula.
+- CI menghasilkan 11 artefak sementara dan menyemak kewujudan setiap fail (termasuk CSV); fail asal/latihan buku berhak cipta tidak dimuat naik semula.
 
 **Dilarang menerbitkan petunjuk halaman sekunder sebagai halaman BA yang telah disahkan.** PR #443 ialah DRAFT/HOLD; ia bukan perubahan live Telegram/Web, bukan pengesahan Word/PDF satu halaman dan bukan pemberian akses muat turun buku.
+
+
+### Draf editor berasingan, bukan Web/Telegram LIVE
+
+Bagi 690 RPH Tahun 2–6, alat `pi_editor_material_projection.py` memisahkan **523 catatan audit / sumber lama** daripada senarai Bahan dalam paparan editor; semua nota asal disimpan secara utuh di medan editor berserta hash rujukan. Katalog dan RPH asal **tidak ditimpa**. Artefak `pi_editor_material_preview_690.json` ialah pratonton terasing, bukan pembekal bahan READY. Ujian automatik menyemak semua 690 draf dan 6 rekod ditahan.
+
+Status Buku Aktiviti Tahun 2–3 masih **174 calon / 0 halaman disahkan pada buku asal**. Jangan isi halaman RPH berdasarkan OCR rosak, perkongsian video atau modul PdPR sahaja. Ini bukan pengesahan 80% kualiti akademik.
