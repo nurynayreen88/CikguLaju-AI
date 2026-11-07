@@ -11,6 +11,7 @@ from web_google_identity_sessions import (
     issue_google_identity_ticket, verify_google_identity_ticket,
 )
 from web_v1_sessions import verify_session_ticket
+from web.google_account_store import GoogleAccountUnavailable
 
 
 SECRET = "staging-unit-test-session-secret-32-chars-minimum"
@@ -250,7 +251,7 @@ class GoogleStagingRoutes(unittest.TestCase):
             issue_google_identity_ticket(SUBJECT, SECRET),
             domain="staging.example.test")
         with patch("web.google_auth_staging_routes.google_staging_account_profile",
-                   side_effect=__import__("web.google_account_store", fromlist=["GoogleAccountUnavailable"]).GoogleAccountUnavailable("backend-down")):
+                   side_effect=GoogleAccountUnavailable("backend-down")):
             fail = self.client.get("/api/auth/google/profile", base_url=self.base)
         self.assertEqual(fail.status_code, 503)
         self.assertNotIn("backend-down", fail.get_data(as_text=True))
