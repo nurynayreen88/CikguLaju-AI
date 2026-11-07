@@ -169,6 +169,15 @@ class GoogleNativeCanonicalTests(unittest.TestCase):
                                   headers={"Origin":BASE,"Sec-Fetch-Site":"same-origin"})
             self.assertEqual(good.status_code,200)
 
+    def test_login_option_visible_only_when_original_web_google_is_enabled(self):
+        yes=self.client.get("/api/auth/google-native/options",base_url=BASE)
+        self.assertEqual(yes.status_code,200)
+        self.assertTrue(yes.json["google_available"])
+        with patch("web.google_native_canonical_login_routes._config",return_value=None):
+            no=self.client.get("/api/auth/google-native/options",base_url=BASE)
+        self.assertEqual(no.status_code,200)
+        self.assertFalse(no.json["google_available"])
+
     def test_flag_off_returns_503(self):
         with patch("web.google_native_canonical_login_routes._config",return_value=None):
             self.assertEqual(self.client.get("/google-login",base_url=BASE).status_code,503)
