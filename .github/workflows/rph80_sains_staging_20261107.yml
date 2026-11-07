@@ -61,6 +61,7 @@ on:
       - "audits/sains_y5_kssr2017_83_official_sp_statements_20261107.json"
       - "tools/sains_y5_kssr2017_official_sp_statements_20261107.py"
       - "tools/check_sains_y5_83_full_sp_documents_20261107.py"
+      - "tools/export_sains_y5_83_rpt_rph_source_20261107.py"
       - "tools/audit_sains_y6_84_source_preflight_20261107.py"
       - "audits/sains_y6_2021_textbook_toc_topic_ranges_20261107.json"
       - "tools/sains_y6_textbook_toc_20261107.py"
@@ -166,6 +167,22 @@ jobs:
         run: python -m tools.check_sains_y5_83_manifest_links_20261107
       - name: Verify printed 83 Sains Year5 Word one-page A4
         run: python -m tools.check_sains_y5_83_word_a4_20261107
+      - name: Export Year5 83 RPH-RPT source index using full official SP texts (no invented weeks)
+        run: python -m tools.export_sains_y5_83_rpt_rph_source_20261107
+      - name: Upload standalone Year5 83 RPH and RPT source reviewer pack
+        uses: actions/upload-artifact@v4
+        with:
+          name: SAINS_T5_83_RPH_KSSR2017_STAGING_REVIEW
+          if-no-files-found: error
+          path: |
+            build/sains_y5_83_rph_DRAF_20261107/*.docx
+            build/sains_y5_83_rph_DRAF_20261107/*.pdf
+            build/sains_y5_83_rph_DRAF_20261107/SAINS_Y5_83_MANIFEST_DRAF.csv
+            build/sains_y5_83_rph_DRAF_20261107/QUALITY_GATE_HOLD.json
+            build/sains_y5_kssr2017_scope_20261107/*.json
+            build/sains_y5_official_sp_document_QA_20261107/*.json
+            build/sains_y5_83_rpt_rph_review_20261107/*.csv
+            build/sains_y5_83_rpt_rph_review_20261107/*.json
       - name: Validate Year6 84-SP source mapping and risk HOLD
         run: python -m unittest discover -s tests -p 'test_sains_y6_84_source_preflight_20261107.py' -v
       - name: Export Year6 84-PdP source preflight for teacher review
