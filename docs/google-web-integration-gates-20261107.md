@@ -36,6 +36,54 @@ Google staging uses a UUID identity from a **different** Supabase project.
 Never pass Google UUID into Telegram's signed session format; never fabricate
 Telegram IDs; never copy a paid entitlement just because display/email match.
 
+## Verified progress — 7 November 2026, midday
+
+**Implemented and installed only on isolated Supabase staging:**
+`migrations/STAGING_ONLY_web_google_rph_delivery_quota_448.sql`.
+The new server-only `consume_web_rph_bundle_staging` function and RLS-protected
+`web_rph_delivery_ledger` provide an atomic one-bundle/one-credit debit.
+The same UUID generation reference and same Word+PDF manifest SHA256 are
+idempotent; mismatched replay fails; the eleventh trial fails; database
+confirmed paid entitlement does not debit. The account row is locked before
+checking/updating the ledger to serialize concurrent requests.
+
+The module `web/google_rph_bundle_quota.py` computes a stable digest of
+*both complete* Word+PDF outputs and calls the RPC only AFTER validation.
+An ambiguous network outcome is marked **unconfirmed**, never falsely
+reported as an unchanged balance. This internal helper is intentionally not
+mounted to any browser route, so current Google staging download remains
+disabled until the verified **native Telegram RPH source** is wired.
+
+**Staging verification:** SQL integration tests passed on disposable
+PostgreSQL and were then re-run inside a rolled-back transaction against
+the isolated staging project. After rollback: 1 Google account, 10 credits,
+zero ledgers, zero staging entitlements. No real user's credits were debited.
+
+**Read-only metadata of current production:** `cikgulaju_users` is keyed
+by `telegram_user_id bigint` and the authoritative free balance is
+`trial_remaining`. Confirmed Rakan Pembangun is represented in
+`pioneer_entitlements` (database value `PIONEER_LIFETIME`) and subscriptions
+in `subscriptions`. The old `cikgulaju_use_trial` SQL function is keyed by
+Telegram ID and has legacy account creation behavior; **do not reuse it as a
+Google UUID charge function**.
+
+**Production-compatible but NOT applied:** 
+`migrations/DRAFT_ONLY_web_canonical_identity_449.sql` proposes two
+additive RLS-protected tables for UUID principals and verified Google
+identities. For a linked Telegram principal, `google_only_trial_remaining`
+MUST be NULL, because `cikgulaju_users.trial_remaining` remains
+authoritative; a Google-only principal may have a separate 10-credit balance.
+Linking requires both independent verified sessions and a future reviewed
+server-owned transaction; a shared name or email is never linking proof.
+The draft does not alter, backfill, copy or overwrite any production rows.
+
+**Remaining release blocker:** the native Telegram-backed RPH generation
+service is not yet callable as a Google UUID actor, and the main Web
+requires Telegram numeric IDs for its current quota and access checks.
+Do not claim Google users can actually spend the displayed 10 staging
+credits or download RPH until the shared trusted generator and canonical
+account registry have both been connected and tested.
+
 ## Next integration gates, in non-destructive order
 
 1. **Design and test additive production identity mapping**, keeping the
