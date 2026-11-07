@@ -11,12 +11,18 @@ def lookup_existing_supabase_account(url, secret_key, telegram_id):
     if not url.startswith("https://") or not secret_key:
         raise ValueError("Supabase server configuration missing")
 
+    # Supabase sb_secret_ API keys are not JWTs. Sending one in a Bearer
+    # header makes PostgREST reject the request even when the apikey is valid.
+    # Keep the existing Authorization header for legacy service_role JWTs.
+    headers = {"apikey": secret_key, "Accept": "application/json"}
+    if not secret_key.startswith("sb_secret_"):
+        headers["Authorization"] = "Bearer " + secret_key
+
     def select(table, columns, filters):
         query = urlencode({"select": columns, **filters})
         request = Request(
             url.rstrip("/") + "/rest/v1/" + table + "?" + query,
-            headers={"apikey": secret_key, "Authorization": "Bearer " + secret_key,
-                     "Accept": "application/json"},
+            headers=headers,
         )
         with urlopen(request, timeout=6) as response:
             return json.load(response)
