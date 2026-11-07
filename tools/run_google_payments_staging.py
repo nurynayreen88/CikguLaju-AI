@@ -43,9 +43,12 @@ def liveness():
 def readiness():
     from web.google_auth_staging_routes import _enabled_config
     from web.google_staging_admin_auth_routes import _config as admin_config
+    from web.google_rph_generation_staging_routes import (_generator_config,
+        _native_renderer_configured)
     # Teachers can use Google without a Telegram identity. Admin Telegram
     # setup is a separate readiness dimension, not a login blocker.
-    google_ready = bool(_enabled_config())
+    google_config = _enabled_config()
+    google_ready = bool(google_config)
     admin_ready = bool(admin_config())
     return jsonify({"service":"cikgulaju-google-payments-staging",
                     "configured":google_ready,
@@ -53,6 +56,8 @@ def readiness():
                     "admin_review_configured":admin_ready,
                     "real_payments_enabled":False,
                     "rph_generator_enabled":False,
+                    "native_renderer_credentials_configured": _native_renderer_configured(google_config),
+                    "rph_staging_test_gate_open": bool(_generator_config()),
                     "no_telegram_production_account_dependency":True}), (200 if google_ready else 503)
 
 
