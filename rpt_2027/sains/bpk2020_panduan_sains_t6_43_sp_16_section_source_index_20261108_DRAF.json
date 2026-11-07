@@ -1,0 +1,284 @@
+{
+  "status": "STAGING_BPK_2020_SAINS_Y6_PANDUAN_PDP_16_BLOCKS_43_UNIQUE_SP_SOURCES_NOT_DSKP_APPROVAL",
+  "year": 6,
+  "subject": "Sains",
+  "source_name": "Panduan Pengajaran dan Pembelajaran Sains Tahun 6, KSSR (Semakan 2017), BPK (2020)",
+  "source_drive_url": "https://drive.google.com/file/d/1qRPVgOctotKt4n1Reg4l7nA6ZtbfBGYg/view",
+  "source_pdf_sha256": "2f8b8a1893b35608c06423867f8f47d1a7dbae1f7e06f1d8437daf57dc24d909",
+  "source_pdf_page_count": 118,
+  "source_document_type": "2020 KPM teaching-activity examples, NOT complete 2021 DSKP text",
+  "unique_sp_codes": 43,
+  "activity_sections": 16,
+  "sections": [
+    {
+      "pdf_page": 7,
+      "sp_codes": [
+        "2.1.1"
+      ],
+      "kps_terms": [
+        "Memerhati",
+        "Berkomunikasi"
+      ],
+      "theme_guide_label": "Pembiakan manusia—fungsi organ",
+      "activity_plan_approved": false,
+      "original_rph_verified": false
+    },
+    {
+      "pdf_page": 17,
+      "sp_codes": [
+        "2.1.2",
+        "2.1.3"
+      ],
+      "kps_terms": [
+        "Memerhati",
+        "Berkomunikasi"
+      ],
+      "theme_guide_label": "Pembiakan manusia—persenyawaan",
+      "activity_plan_approved": false,
+      "original_rph_verified": false
+    },
+    {
+      "pdf_page": 23,
+      "sp_codes": [
+        "2.2.1",
+        "2.2.2",
+        "2.2.3"
+      ],
+      "kps_terms": [
+        "Memerhati",
+        "Berkomunikasi"
+      ],
+      "theme_guide_label": "Sistem saraf pusat dan periferi",
+      "activity_plan_approved": false,
+      "original_rph_verified": false
+    },
+    {
+      "pdf_page": 26,
+      "sp_codes": [
+        "2.2.3",
+        "2.2.4",
+        "2.2.5"
+      ],
+      "kps_terms": [
+        "Memerhati",
+        "Berkomunikasi"
+      ],
+      "theme_guide_label": "Gerak balas dan penjagaan saraf",
+      "activity_plan_approved": false,
+      "original_rph_verified": false
+    },
+    {
+      "pdf_page": 29,
+      "sp_codes": [
+        "2.2.6"
+      ],
+      "kps_terms": [
+        "Memerhati",
+        "Berkomunikasi"
+      ],
+      "theme_guide_label": "Pembentangan sistem saraf",
+      "activity_plan_approved": false,
+      "original_rph_verified": false
+    },
+    {
+      "pdf_page": 30,
+      "sp_codes": [
+        "3.1.1",
+        "3.1.2",
+        "3.1.3"
+      ],
+      "kps_terms": [
+        "Memerhati",
+        "Mengukur",
+        "Inferens",
+        "Kawal pemboleh ubah",
+        "Hipotesis",
+        "Mengeksperimen"
+      ],
+      "theme_guide_label": "Proses hidup mikroorganisma",
+      "activity_plan_approved": false,
+      "original_rph_verified": false
+    },
+    {
+      "pdf_page": 51,
+      "sp_codes": [
+        "3.1.4",
+        "3.1.5",
+        "3.1.6"
+      ],
+      "kps_terms": [
+        "Memerhati",
+        "Mengukur",
+        "Inferens",
+        "Kawal pemboleh ubah",
+        "Hipotesis",
+        "Mengeksperimen"
+      ],
+      "theme_guide_label": "Faktor pertumbuhan mikroorganisma",
+      "activity_plan_approved": false,
+      "original_rph_verified": false
+    },
+    {
+      "pdf_page": 58,
+      "sp_codes": [
+        "4.1.1",
+        "4.1.2",
+        "4.1.3",
+        "4.1.4"
+      ],
+      "kps_terms": [
+        "Memerhati",
+        "Berkomunikasi",
+        "Mengelas"
+      ],
+      "theme_guide_label": "Interaksi haiwan",
+      "activity_plan_approved": false,
+      "original_rph_verified": false
+    },
+    {
+      "pdf_page": 65,
+      "sp_codes": [
+        "4.2.1",
+        "4.2.2",
+        "4.2.3"
+      ],
+      "kps_terms": [
+        "Memerhati",
+        "Inferens",
+        "Kawal pemboleh ubah",
+        "Hipotesis",
+        "Mengeksperimen"
+      ],
+      "theme_guide_label": "Interaksi tumbuhan",
+      "activity_plan_approved": false,
+      "original_rph_verified": false
+    },
+    {
+      "pdf_page": 77,
+      "sp_codes": [
+        "5.1.1",
+        "5.1.2",
+        "5.1.3",
+        "5.1.4",
+        "5.1.5",
+        "5.1.6",
+        "5.1.7"
+      ],
+      "kps_terms": [
+        "Memerhati",
+        "Berkomunikasi",
+        "Mengelas",
+        "Inferens",
+        "Meramal"
+      ],
+      "theme_guide_label": "Pemeliharaan dan pemuliharaan",
+      "activity_plan_approved": false,
+      "original_rph_verified": false
+    },
+    {
+      "pdf_page": 92,
+      "sp_codes": [
+        "6.2.1",
+        "6.2.2"
+      ],
+      "kps_terms": [
+        "Memerhati",
+        "Inferens",
+        "Mendefinisi secara operasi",
+        "Berkomunikasi"
+      ],
+      "theme_guide_label": "Daya geseran",
+      "activity_plan_approved": false,
+      "original_rph_verified": false
+    },
+    {
+      "pdf_page": 94,
+      "sp_codes": [
+        "6.3.1",
+        "6.3.2"
+      ],
+      "kps_terms": [
+        "Memerhati",
+        "Mengeksperimen",
+        "Berkomunikasi"
+      ],
+      "theme_guide_label": "Tekanan udara—bahagian 1",
+      "activity_plan_approved": false,
+      "original_rph_verified": false
+    },
+    {
+      "pdf_page": 97,
+      "sp_codes": [
+        "6.3.1",
+        "6.3.2",
+        "6.3.3",
+        "6.3.4"
+      ],
+      "kps_terms": [
+        "Memerhati",
+        "Mengeksperimen",
+        "Berkomunikasi"
+      ],
+      "theme_guide_label": "Tekanan udara—bahagian 2",
+      "activity_plan_approved": false,
+      "original_rph_verified": false
+    },
+    {
+      "pdf_page": 102,
+      "sp_codes": [
+        "7.1.1",
+        "7.1.2",
+        "7.1.3"
+      ],
+      "kps_terms": [
+        "Memerhati",
+        "Inferens",
+        "Berkomunikasi",
+        "Meramal"
+      ],
+      "theme_guide_label": "Kelajuan objek",
+      "activity_plan_approved": false,
+      "original_rph_verified": false
+    },
+    {
+      "pdf_page": 105,
+      "sp_codes": [
+        "11.1.1",
+        "11.1.2",
+        "11.1.3"
+      ],
+      "kps_terms": [
+        "Memerhati",
+        "Berkomunikasi",
+        "Inferens"
+      ],
+      "theme_guide_label": "Galaksi Bima Sakti—bahagian 1",
+      "activity_plan_approved": false,
+      "original_rph_verified": false
+    },
+    {
+      "pdf_page": 114,
+      "sp_codes": [
+        "11.1.4",
+        "11.1.5"
+      ],
+      "kps_terms": [
+        "Memerhati",
+        "Berkomunikasi",
+        "Inferens"
+      ],
+      "theme_guide_label": "Galaksi Bima Sakti—bahagian 2",
+      "activity_plan_approved": false,
+      "original_rph_verified": false
+    }
+  ],
+  "notes": [
+    "One SP can appear on multiple guide pages; source pages are preserved as list.",
+    "Absence from this 2020 illustrative guide is NOT absent from official 2021 DSKP.",
+    "KPS names are source-guidance categories; content of every historical RPH still requires separate audit."
+  ],
+  "original_2021_dskp_wording_signoffs": 0,
+  "approval_for_2027": false,
+  "live_web_telegram_verified": false,
+  "production_db_writes": 0
+}
