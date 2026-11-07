@@ -36,7 +36,7 @@ def validate_rows(subject, year, records):
         raise ValueError("Unsupported RPT subject/year")
     if subject in ("rbt", "sejarah") and year < 4:
         raise ValueError("RBT only for Year 4-6")
-    if not isinstance(records, list) or not records or len(records) > 160:
+    if not isinstance(records, list) or not records or len(records) > 180:
         raise ValueError("RPT missing or oversized source rows")
     ids = []
     for row in records:
