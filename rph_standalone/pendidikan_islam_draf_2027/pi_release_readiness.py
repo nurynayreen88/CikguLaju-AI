@@ -25,6 +25,7 @@ from pi_t2_l035_rpt_2026_2027_overlap_audit import audit as l035_t2
 from pi_t6_juz25_sequence_gap_audit import audit as sequence_juz25
 from pi_t6_juz29_l117_continuity_review import audit as sequence_juz29
 from pi_t6_held_quran_editor_candidate_review import audit as held_quran_proposals
+from pi_t6_juz25_rpt2026_source_provenance import audit as juz25_legacy_provenance
 from pi_ba_match_queue import match_queue
 from pi_review_catalog import counts as preview_counts
 
@@ -46,6 +47,7 @@ def readiness(root=ROOT):
     juz25 = sequence_juz25(root)
     juz29 = sequence_juz29(root)
     held_quran = held_quran_proposals(root)
+    legacy = juz25_legacy_provenance(root)
     ba = match_queue(root)
     preview = preview_counts(root=root)
     assert qa["total"] == 696 and qa["drafts"] == 690 and qa["held"] == 6
@@ -92,6 +94,10 @@ def readiness(root=ROOT):
     assert juz29["original_l117_withheld"] is True
     assert held_quran["editor_candidates_created"] == 4
     assert held_quran["public_teacher_rph_added"] == 0
+    assert legacy["legacy_out_of_bounds_shura_ayah_count"] == 24
+    assert legacy["legacy_duplicated_shura_ayat_count"] == 2
+    assert legacy["legacy_inherited_juz25_missing_ayat"] == 67
+    assert legacy["newer_2027_juz25_missing_ayat"] == 67
     assert sp42["l060_original_year6_record_still_wholly_held"] is True
     assert sp42["independent_official_dskp_lesson_numbers_claimed"] == 0
     assert qa["t6_sp42_edited_kbat_review_count"] == 1
@@ -138,6 +144,8 @@ def readiness(root=ROOT):
             "year6_wholly_held_source_triaged_no_release": 5 if year == 6 else 0,
             "year6_juz25_unmapped_ayah_in_rpt": 67 if year == 6 else 0,
             "year6_juz25_unmapped_ayah_spans": 4 if year == 6 else 0,
+            "year6_2026_rpt_bad_shura_ayah_out_of_bounds": 24 if year == 6 else 0,
+            "year6_2026_rpt_shura_duplicate_ayah": 2 if year == 6 else 0,
             "year6_juz29_l117_local_70_72_ayat_mapped": 100 if year == 6 else 0,
             "year6_held_quran_separate_editor_candidates": 4 if year == 6 else 0,
             "source_dskp_sp42_kbat_rewritten_pending_expert": counter["T6_SP42_KBAT_DIPERBETUL_SEMAK_PAKAR"],
@@ -219,6 +227,9 @@ def readiness(root=ROOT):
         "year6_juz25_verses_total": 246,
         "year6_juz25_verses_mapped_original_rpt": 179,
         "year6_juz25_verses_missing_original_rpt": 67,
+        "year6_juz25_legacy_2026_verses_invalid": 24,
+        "year6_juz25_legacy_2026_verses_duplicated": 2,
+        "year6_juz25_legacy_2026_missing_verses_inherited": 67,
         "year6_juz25_missing_source_blocks": 4,
         "year6_juz29_l117_neighbour_chapters_70_to_72_ayat_verified": 100,
         "year6_quran_held_rumi_editor_candidates": 4,
