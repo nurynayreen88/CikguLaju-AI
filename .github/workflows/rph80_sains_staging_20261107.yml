@@ -39,6 +39,7 @@ on:
       - "tools/audit_sains_y6_84_source_preflight_20261107.py"
       - "audits/sains_y6_2021_textbook_toc_topic_ranges_20261107.json"
       - "tools/sains_y6_textbook_toc_20261107.py"
+      - "tools/export_sains_342_panitia_review_20261107.py"
       - "web/sains_y6_draf_bank_part1_20261107.tsv"
       - "web/sains_y6_draf_bank_part2_20261107.tsv"
       - "web/sains_y6_draf_bank_part3_20261107.tsv"
@@ -126,6 +127,8 @@ jobs:
         run: python -m tools.check_sains_y6_84_word_a4_20261107
       - name: Audit 342 unique Sains PdP and export final technical review queue
         run: python -m tools.audit_rph80_sains_first_20261107
+      - name: Export all 342 original Science RPH human teacher/panitia approval queue (no auto grade)
+        run: python -m tools.export_sains_342_panitia_review_20261107
       - name: Retain audit evidence only; never deploy
         if: always()
         uses: actions/upload-artifact@v4
