@@ -24,6 +24,11 @@ class SainsYear6SecondaryMirrorQA(unittest.TestCase):
                          a["historical_pdp_with_invalid_sp_code"],84)
         self.assertEqual(a["historical_pdp_with_invalid_sp_code"],len(a["invalid_sp_details"]))
         self.assertFalse(a["original_kpm_pdf_sha_verified"])
+        self.assertEqual(a["kps_1_1_not_separately_indexed"],
+                         [f"1.1.{i}" for i in range(1,13)])
+        self.assertEqual(a["non_kps_content_sp_not_separately_indexed"],[])
+        self.assertEqual(a["rph_kps_integration_signoffs"],0)
+        self.assertTrue(a["kps_sk_1_1_1_to_12_may_be_embedded_in_other_lessons_not_missing_12_new_pdp"])
         self.assertFalse(a["ready_for_web_telegram"])
         self.assertEqual(a["official_sp_text_visual_signoffs"],0)
         self.assertEqual(a["original_pdp_rph_book_sequence_signoffs"],0)
