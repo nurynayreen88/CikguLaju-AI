@@ -93,3 +93,13 @@ Ledger sedia ada `audits/sejarah_y4_y6_primary_textbook_page_evidence_20261106.j
 - Pemeriksaan PDF Tahun 4, 5 dan 6 mengesahkan perkataan tajuk panjang seperti "Penyelenggaraan peralatan", "kategori produk", "menggunakan peralatan yang sesuai" dan "akan dibina" kini muncul penuh.
 
 **Pagar pelepasan tidak berubah:** Tahun 5–6 belum mendapat pengesahan PDF buku teks asal setara T4, semua 96 agihan RBT menunggu jadual sekolah sebenar, kelulusan visual/aktiviti/safety guru belum selesai, pengisian profil Web/Telegram belum diaktifkan. PR kekal DRAF; tidak dibenarkan mengubah produksi.
+
+## Audit silang RBT Tahun 5–6 (7 November 2026)
+
+- CI [#42317847385](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42317847385) **LULUS**, **26 ujian**, menghasilkan 21 RPT asas + 3 simulasi RBT serta laporan audit tambahan. Artifak [#13550699081](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42317847385/artifacts/13550699081).
+- `scripts/audit_rbt_y5_y6_64_pdp_page_consistency_staging.py` memastikan **64/64 PdP** Tahun 5–6 mempunyai pasangan kod SP, julat halaman calon, identiti, unit, turutan dan nota RPT yang sama antara **RPH, RPT, ledger buku dan manifest kelulusan**. Rujukan SP sumber: 34 Tahun 5, 23 Tahun 6.
+- PDF sumber dalam talian membolehkan **semakan sampel**: T5 SP 4.3.1 (4–6), 4.3.2 (7–9), 6.4.6 (60), 7.1.6 (77–80); T6 SP 5.2.1 (2), 5.2.5 (11–20). Ini **bukan** semakan individu lengkap untuk semua 64 PdP. T6 halaman 51–76 masih perlu dibaca dan disahkan dengan lebih menyeluruh.
+- Audit JSON pengguna diterbitkan dalam artifak di `staging/rpt_2027_seragam_2026/audit_rbt_y5_y6_64_pdp_page_consistency.json`. Status `STAGING_INTERNAL_CONSISTENCY_ONLY`, `independent_book_page_checks_completed: 0` untuk audit menyeluruh, `teacher_approvals: 0`, `release_ready_count: 0`.
+- Rekod lengkap `audits/rbt_y5_y6_64_pdp_book_mapping_and_sample_source_review_20261107.md`.
+
+**Pagar release:** status utama **BLOCKED** selagi tiada bukti semakan visual setiap PdP, aktiviti buku, keselamatan amali dan agihan tarikh sekolah. Semua data asal, Telegram, Web dan produksi kekal tidak diubah.
