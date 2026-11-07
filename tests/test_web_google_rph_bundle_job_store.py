@@ -89,6 +89,38 @@ class StoreTests(unittest.TestCase):
         self.assertTrue(self.calls[2].endswith(".pdf"))
         self.assertIn("complete_web_rph_bundle_staging",self.calls[3])
 
+    def test_paid_production_finalize_uses_private_linked_uid_and_no_trial_rpc(self):
+        def rpc(req,timeout):
+            self.calls.append(req.full_url)
+            if req.full_url.endswith("/prepare_web_rph_bundle_staging"):
+                return Reply(json.dumps({"job_id":JOB,"status":"prepared"}).encode())
+            self.assertTrue(req.full_url.endswith("/complete_web_rph_bundle_prod_paid_staging"))
+            payload=json.loads(req.data)
+            self.assertEqual(payload["p_account_id"],ACCOUNT)
+            self.assertEqual(payload["p_telegram_user_id"],123456789)
+            self.assertEqual(payload["p_job_id"],JOB)
+            return Reply(json.dumps({"job_id":JOB,"status":"ready",
+                                     "allowed":True,"remaining":8,
+                                     "access_mode":"paid"}).encode())
+        result=publish_rendered_bundle(
+            CONF,self.actor,JOB,self.selection,word(),PDF,
+            rpc_transport=rpc,upload_transport=self.upload,
+            production_paid_telegram_user_id=123456789)
+        self.assertEqual(result["access_mode"],"paid")
+        self.assertEqual(result["remaining"],8)
+        self.assertFalse(any(x.endswith("/complete_web_rph_bundle_staging")
+                             for x in self.calls))
+
+    def test_paid_uid_must_be_integer_not_browser_value(self):
+        for bogus in (True,"123456789",-1,0,{},2**64):
+            with self.subTest(bogus=bogus),self.assertRaises(ValueError):
+                publish_rendered_bundle(
+                    CONF,self.actor,JOB,self.selection,word(),PDF,
+                    rpc_transport=self.rpc,upload_transport=self.upload,
+                    production_paid_telegram_user_id=bogus)
+        self.assertFalse(any("/complete_web_rph_bundle_prod_paid_staging" in x
+                             for x in self.calls))
+
     def test_pdf_upload_failure_cannot_call_quota(self):
         def upload(req,timeout):
             self.calls.append(req.full_url)
