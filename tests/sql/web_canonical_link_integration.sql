@@ -3,6 +3,7 @@
 BEGIN;
 ALTER ROLE service_role BYPASSRLS;
 GRANT SELECT,UPDATE ON public.cikgulaju_users TO service_role;
+GRANT SELECT,INSERT ON public.trial_ledger TO service_role;
 
 INSERT INTO public.cikgulaju_users(telegram_user_id,trial_remaining,credits)
 VALUES (131321111,7,18),(131322222,10,0);
@@ -92,6 +93,13 @@ BEGIN
  IF v_tid<>131321111 OR v_g_rem IS NOT NULL OR v_rem<>5 OR v_credit<>18
  THEN RAISE EXCEPTION 'Linked primary balance/other credits inconsistent'; END IF;
 
+ -- Two Google trial generations already completed. The original Telegram
+ -- ledger must have ONE adjustment (-2), never a duplicate or silent update.
+ IF NOT EXISTS (
+    SELECT 1 FROM public.trial_ledger
+    WHERE telegram_user_id=131321111 AND amount=-2 AND balance_after=5
+      AND reference_id='native-google-link:'||v_a::text
+ ) THEN RAISE EXCEPTION 'Original Telegram trial reconciliation ledger missing'; END IF;
  v_retry:=public.link_native_google_telegram_principal(v_a,131321111,true,8,7);
  IF (v_retry->>'replayed')::boolean IS DISTINCT FROM true
     OR (v_retry->>'telegram_remaining_after')::integer<>5 THEN
@@ -99,6 +107,9 @@ BEGIN
  SELECT trial_remaining INTO v_rem FROM public.cikgulaju_users
  WHERE telegram_user_id=131321111;
  IF v_rem<>5 THEN RAISE EXCEPTION 'Retry double debited Telegram trial'; END IF;
+ SELECT count(*) INTO v_count FROM public.trial_ledger
+ WHERE telegram_user_id=131321111 AND reference_id='native-google-link:'||v_a::text;
+ IF v_count<>1 THEN RAISE EXCEPTION 'Link replay duplicated trial ledger'; END IF;
 
  BEGIN
    PERFORM public.link_native_google_telegram_principal(v_a,131322222,true,8,10);
@@ -133,6 +144,9 @@ BEGIN
  v_first:=public.link_native_google_telegram_principal(v_b,131322222,true,10,10);
  IF (v_first->>'telegram_remaining_after')::integer<>10
  THEN RAISE EXCEPTION 'Unused Google trial altered Telegram credits'; END IF;
+ SELECT count(*) INTO v_count FROM public.trial_ledger
+ WHERE telegram_user_id=131322222;
+ IF v_count<>0 THEN RAISE EXCEPTION 'Zero credit adjustment incorrectly recorded as debit'; END IF;
 
  RAISE NOTICE 'PASS: confirmed dual-proof links, cumulative trial reconciliation, idempotent audit and no fake Telegram user';
 END;
