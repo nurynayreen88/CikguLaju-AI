@@ -8,6 +8,7 @@ Requires reviewed canonical principal + private RPH migrations and a separate
 CIKGULAJU_NATIVE_GOOGLE_RPH_ENABLED=1 rollout. No live registration today.
 """
 from io import BytesIO
+from pathlib import Path
 import hashlib
 import hmac
 import os
@@ -16,7 +17,7 @@ import time
 import uuid
 from urllib.parse import urlsplit
 
-from flask import Blueprint, jsonify, request, send_file
+from flask import Blueprint, jsonify, request, send_file, make_response, redirect
 
 from web.google_native_canonical_login_routes import _config as login_config
 from web.native_google_principal_store import (
@@ -49,7 +50,7 @@ def _config():
     return cfg
 
 
-def _actor():
+def _actor(*, allow_linked=False):
     cfg=_config()
     if cfg is None:
         return None,None,(jsonify({"error":"Google RPH belum dibuka"}),503)
@@ -59,8 +60,9 @@ def _actor():
         return None,None,(jsonify({"error":"Login Google diperlukan"}),401)
     try:
         principal=read_google_principal(cfg,account_id)
-        if principal["legacy_telegram_user_id"] is not None:
-            # Linked users keep the existing Telegram Web RPH/credit path.
+        if principal["legacy_telegram_user_id"] is not None and not allow_linked:
+            # Linked users keep generating through the original Telegram Web
+            # quota. Their old Google RPH documents remain downloadable below.
             return None,None,(jsonify({"error":
               "Akaun dipautkan menggunakan aliran RPH Telegram sedia ada"}),409)
         access=canonical_rph_access(cfg,principal)
@@ -137,6 +139,20 @@ def _private(res):
     res.headers["Vary"]="Cookie"
     res.headers["X-Content-Type-Options"]="nosniff"
     return res
+
+
+@bp.get("/google-rph")
+def page():
+    cfg, actor, error = _actor()
+    if error is not None:
+        if isinstance(error, tuple) and error[1] == 409:
+            return redirect("/", code=303)
+        return error
+    if request.args:
+        return jsonify({"error": "Parameter tidak dibenarkan"}), 400
+    return make_response(send_file(
+        Path(__file__).with_name("google_native_rph.html"),
+        mimetype="text/html", max_age=0))
 
 
 @bp.get("/api/auth/google-native/rph/capabilities")
@@ -249,7 +265,7 @@ def generate():
 
 @bp.get("/api/auth/google-native/rph/jobs/<job_id>/status")
 def job_status(job_id):
-    cfg,actor,error=_actor()
+    cfg,actor,error=_actor(allow_linked=True)
     if error is not None:return error
     if request.args:return jsonify({"error":"Parameter tidak dibenarkan"}),400
     try:
@@ -265,7 +281,7 @@ def job_status(job_id):
 
 @bp.get("/api/auth/google-native/rph/jobs/<job_id>/download/<fmt>")
 def download(job_id,fmt):
-    cfg,actor,error=_actor()
+    cfg,actor,error=_actor(allow_linked=True)
     if error is not None:return error
     if request.args or fmt not in ("word","pdf"):
         return jsonify({"error":"Fail tidak sah"}),400
