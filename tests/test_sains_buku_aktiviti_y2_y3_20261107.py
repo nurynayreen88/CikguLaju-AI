@@ -50,6 +50,24 @@ class TestSainsYear2Year3ActivityBook(unittest.TestCase):
         self.assertEqual(activity_for(3,"SCI-Y3-PDP-037","9.1.2")["workbook_printed_page"],80)
         self.assertEqual(activity_for(3,"SCI-Y3-PDP-044","10.1.4")["workbook_printed_page"],90)
 
+    def test_eleven_page_content_reviews_and_safe_substitutes(self):
+        rows=load_activity_books()
+        evidence=[(year,item) for year,rr in rows.items() for item in rr.values()
+                  if item["lesson_guidance"]]
+        self.assertEqual(len(evidence),11)
+        self.assertEqual(sum(x["page_content_review"]=="RELATED_ONLY_ORIGINAL_PBD"
+                             for _,x in evidence),2)
+        grow=activity_for(2,"SCI-Y2-PDP-003","3.1.3")
+        self.assertIn("data tinggi/berat rekaan",grow["lesson_guidance"])
+        hot=activity_for(2,"SCI-Y2-PDP-034","8.1.5")
+        self.assertIn("jangan sediakan air panas",hot["lesson_guidance"].lower())
+        self.assertIn("kit",activity_for(2,"SCI-Y2-PDP-029","7.1.7")["lesson_guidance"])
+        self.assertIn("meniskus",activity_for(3,"SCI-Y3-PDP-027","6.1.7")["lesson_guidance"])
+        for sp,num in [("4.1.7",10),("6.1.6",22)]:
+            unmatched=activity_for(2,f"SCI-Y2-PDP-{num:03d}",sp)
+            self.assertFalse(is_direct_sp_match(unmatched))
+            self.assertIn("PBD",unmatched["lesson_guidance"])
+            self.assertIn("RUJUKAN SAHAJA",activity_note(unmatched,2))
     def test_51_y2_existing_rph_kept_and_workbook_added(self):
         entries=get_y2_records()
         self.assertEqual(len(entries),51)
