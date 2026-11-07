@@ -29,7 +29,7 @@ class Science2027PartialRPTQA(unittest.TestCase):
                                     for r in rows))
                 self.assertTrue(all(r["raw_pdp_title"] and r["topic"] and
                                     r["sp_display"] and r["sk_display"] for r in rows))
-                self.assertTrue(all("DRAF, bukan RPT lengkap" in r["note"] for r in rows))
+                self.assertTrue(all("DRAF LEGACY:" in r["note"] and "BUKAN untuk digunakan guru" in r["note"] for r in rows))
 
     def test_all_342_source_sp_have_exact_official_full_dskp_text(self):
         all_records=[row for rows in self.yearly.values() for row in rows]
