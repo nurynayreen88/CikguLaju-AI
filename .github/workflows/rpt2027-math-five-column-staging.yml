@@ -33,7 +33,7 @@ jobs:
               with fitz.open(file) as d:
                   for p in d:
                       assert p.rect.width>p.rect.height
-                      assert '\\x00' not in p.get_text()
+                      assert chr(0) not in p.get_text()
                       for b in p.get_text('blocks'):
                           x0,y0,x1,y1=b[:4]
                           assert 0<=x0<=x1<=p.rect.width and 0<=y0<=y1<=p.rect.height
