@@ -565,3 +565,22 @@ Audit tanpa meminda sumber RPH menjumpai **13 Lesson Tahun 5** yang secara nyata
 **Sumber Buku Aktiviti KSSR Tahun 2/3** dikenal pasti dalam e-Katalog KPM (BA102001 dan BA103001; DBP) serta portal Panitia Pendidikan Islam SK Pangkalan TLDM Kota Kinabalu. URL portal untuk setiap tahun disimpan dalam `pi_ba_source_integrity.py` bagi memudahkan semakan **naskhah asal**. **0/174 latihan/halaman khusus SP disahkan** dalam audit ini dan hak pengedaran PDF tidak dibuktikan; jangan sediakan PDF buku untuk muat turun automatik.
 
 **Status pelepasan tetap NO_GO:** Kandungan draf lebih lengkap, bukan bukti 80% kualiti akademik. Semua 696 kekal tidak diluluskan pakar; enam sumber utama asal ditahan; tiga draf sumber kritikal turut ditahan. Pemadanan latihan, bacaan al-Quran/tajwid, ejaan Jawi, semakan fiqh/pedagogi dan ujian native Telegram/Web belum disahkan. PR mesti kekal `DRAFT`; jangan merge ke `main`, deploy, ganti DB atau melabel FINAL READY.
+
+
+## 8 Nov 2026 — Pembetulan silang surah, objektif, induksi dan pentaksiran
+
+**11 PdP dibaiki pada draf RPH, dengan 13 medan berubah** (T3=5, T4=5, T5=1). Tujuh daripadanya memerlukan tanda pembetulan sumber RPT kerana label surah yang salah turut muncul dalam PDF RPT 2027. Bukti dibandingkan dengan PDF RPT Tahun 3 Drive `1ceqdKRKYP2MHpkPe4KbIOVpCooq37NVE` dan Tahun 4 Drive `1O7Jvuvs7B7CF1tomvJdBTo7khSnu2haX`; **RPT asal belum diubah**.
+
+| PdP | Pembetulan kandungan staging |
+|---|---|
+| T3-L086 | Objektif "سورة المائدة" → "سورة الأنفال", sepadan SP, aktiviti tasmi', pentaksiran dan RPT julat 53–75 |
+| T3-L089, T3-L093 | Set induksi "سورة الكافرون" → "سورة العصر", sepadan SP hafazan al-Asr |
+| T4-L009, T4-L013 | Set induksi dan PBD "سورة الكافرون" → "سورة التكاثر", sepadan SK/SP hafazan at-Takathur |
+| T4-L081, T4-L085 | Set induksi "سورة العصر" → "سورة القارعة", sepadan SP tilawah al-Qari'ah |
+| T4-L085, T4-L093 | PBD julat al-Qari'ah ayat 1–5 → ayat 6–11 mengikut objektif PdP sebenar |
+| T3-L011 | "Murid membuat aktiviti (gallery walk)" diganti latihan kad situasi untuk akidah al-'Alim dan al-Hakim, berdasarkan SP 3.1.4 |
+| T3-L023 | "Murid membuat aktiviti (hot seat)" diganti susunan kad langkah mandi wajib secara sesuai tahap, berdasarkan SP 4.1.5–4.1.7 |
+| T5-L069 | Betulkan sela perkataan "سورة القدردري" → "سورة القدر دري" tanpa menukar isi |
+
+**Penting:** Sesetengah ralat yang dibaiki ialah salinan terus daripada RPT asal. Draf RPH dibuat lebih konsisten tetapi dokumen RPT Tahun 3/4 yang sudah diedarkan masih perlu **pembetulan sumber berasingan**. Semua bahan asal dan cap SHA-256 provenance dikekalkan; setiap rekod baharu menyimpan `staging_cross_field_source_correction.original_fields` dan `revised_fields` untuk pemulihan. Semakan `pi_surah_pbd_alignment_audit.py` memeriksa nama surah yang disebut secara nyata serta julat ayat PBD terhadap objektif pada semua entri, bukan mensahkan keseluruhan kandungan hadis/tajwid/Jawi. **Kelulusan pakar 0; status HOLD/NO_GO; main, produksi dan DB tidak diubah.**
+
