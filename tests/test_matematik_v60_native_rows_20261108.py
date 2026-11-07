@@ -88,6 +88,48 @@ class MathNativeV60(unittest.TestCase):
                 runtime._rph_rows(state(sp="1.7.1"))
         self.assertEqual(len(calls),2)
 
+    def test_quick_material_telegram_lesson_resolved_from_native_db_reader(self):
+        native = [{"pdp_sequence_code":"X-014","source_sequence_no":14,
+                   "sk_code":"1.7","sp_code":"1.7.2"}]
+        calls=[]
+        def reader(year,subject):
+            calls.append((year,subject))
+            return native
+        runtime=SimpleNamespace(_sm2542_rows=reader,
+                                _rph_rows=lambda ss,*a,**k:{"KELAS":"4 Jaya"})
+        telegram = dict(state(),task="quick_material",pdp_sequence_code="X-014")
+        telegram.pop("source_sequence_no")
+        telegram.pop("pdp_no")
+        with patch.dict(os.environ,ENV):
+            self.assertTrue(m.install(runtime))
+            rows=runtime._rph_rows(telegram)
+            self.assertEqual(rows["TAJUK"],"Operasi bergabung darab dan bahagi")
+            self.assertEqual(rows["STANDARD PEMBELAJARAN"].split(" — ")[0],"1.7.2")
+            self.assertEqual(calls,[("Tahun 4","Matematik")])
+            self.assertNotIn("source_sequence_no",telegram)
+            # Renderer may change task to rph while keeping the same PdP
+            # identity; it must resolve the missing sequence number too.
+            as_rph=dict(telegram,task="rph")
+            again=runtime._rph_rows(as_rph)
+            self.assertEqual(again["STANDARD PEMBELAJARAN"].split(" — ")[0],"1.7.2")
+            self.assertEqual(len(calls),2)
+
+    def test_telegram_quick_material_ambiguous_or_wrong_source_fails_closed(self):
+        telegram=dict(state(),task="quick_material",pdp_sequence_code="X-014")
+        telegram.pop("source_sequence_no");telegram.pop("pdp_no")
+        options=[
+            [{"pdp_sequence_code":"X-014","source_sequence_no":14,"sk_code":"1.7","sp_code":"1.7.2"},
+             {"pdp_sequence_code":"X-014","source_sequence_no":15,"sk_code":"1.7","sp_code":"1.7.2"}],
+            [{"pdp_sequence_code":"X-014","source_sequence_no":14,"sk_code":"1.7","sp_code":"1.7.2"},
+             {"pdp_sequence_code":"X-014","source_sequence_no":14,"sk_code":"1.7","sp_code":"1.7.3"}],
+            [],
+        ]
+        with patch.dict(os.environ,ENV):
+            for rows in options:
+                runtime=SimpleNamespace(_sm2542_rows=lambda y,s:rows)
+                with self.subTest(rows=rows), self.assertRaises(m.MathematicsRPHUnavailable):
+                    m.resolve_native_state(runtime,telegram)
+
     def test_source_without_valid_heading_rejected(self):
         t=get_lesson(2,1)
         with self.assertRaises(m.MathematicsRPHUnavailable):
