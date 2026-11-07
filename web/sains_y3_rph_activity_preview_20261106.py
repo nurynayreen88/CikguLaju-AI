@@ -518,7 +518,9 @@ def adapt_rows(state, original):
         closing+=" Guru menyelia murid mengemas alatan dan mematuhi peraturan bilik sains."
     if extra:
         materials=materials+"; "+extra["materials"]
-    page_text=", ".join(str(x) for x in item["printed_book_page_candidates"])
+    book=checked_book_pages().get(code)
+    if not book or book["sp"]!=sp:raise ValueError("Year3 book source not verified "+code)
+    page_text=", ".join(str(x) for x in book["printed_page_candidates"])
     ba_text=activity_short_note(book_activity,3)
     ba_pbd=(" Murid boleh melengkapkan latihan Buku Aktiviti selepas semakan guru; "
             "guru menilai jawapan individu." if is_direct_sp_match(book_activity) else "")
@@ -536,7 +538,7 @@ def adapt_rows(state, original):
         "PENUTUP":closing,
         "KEMAHIRAN PROSES SAINS":kps_desc,
         "KEMAHIRAN MANIPULATIF DAN KESELAMATAN":manip_desc,
-        "BAHAN BANTU MENGAJAR":f"{materials}. Buku Teks Sains Tahun 3, halaman bercetak {page_text} (petunjuk sumber; semak sebelum cetak). "+ba_text,
+        "BAHAN BANTU MENGAJAR":f"{materials}. Buku Teks Sains Tahun 3 m/s {page_text} (halaman asal & label SP dilihat; isi/PBD belum disahkan panitia). "+ba_text,
         "BUKU AKTIVITI / LATIHAN":ba_text,
         "BUKU AKTIVITI URL":book_activity["workbook_url"],
         "BUKU AKTIVITI MATCH":book_activity["matching_status"],
