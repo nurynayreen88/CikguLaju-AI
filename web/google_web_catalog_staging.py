@@ -230,6 +230,11 @@ def linked_staging_access():
     except (PaymentUnavailable, GoogleAccountUnavailable,
             ValueError, KeyError, TypeError):
         return jsonify({"error": "Status akses staging belum boleh disahkan"}), 503
+    from web.staging_production_paid_status_client import verified_linked_paid_status
+    # Read-only comparison to production, if the separate bridge is enabled.
+    # NEVER use these verified fields as authorization to create a staging
+    # entitlement, approve payment or bypass the atomic RPH quota ledger.
+    production = verified_linked_paid_status(actor, _enabled_config())
     return jsonify({
         "identity_verified": True, "auth_provider": actor.provider,
         "staging_only": True, "trial_remaining": profile["trial_remaining"],
@@ -237,5 +242,6 @@ def linked_staging_access():
         "staging_active_plans": plans,
         "production_entitlements_synced": False,
         "real_payments_enabled": False,
-        "note": "Status staging sahaja; langganan Telegram produksi belum diselaraskan."
+        "note": "Status langganan produksi dibaca secara berasingan; tiada kelulusan atau pemindahan hak akses automatik.",
+        **production,
     })
