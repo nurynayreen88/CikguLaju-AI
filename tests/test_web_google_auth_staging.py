@@ -80,6 +80,7 @@ class GoogleStagingRoutes(unittest.TestCase):
     def test_staging_login_page_is_behind_flag(self):
         r = self.client.get("/google-staging-login", base_url=self.base)
         self.assertEqual(r.status_code, 200)
+        self.assertEqual(r.headers["Cache-Control"], "no-store")
         self.assertIn(b"Teruskan dengan Google", r.data)
         with patch.dict(os.environ, {"CIKGULAJU_GOOGLE_AUTH_STAGING_ENABLED": "0"}):
             page = self.client.get("/google-staging-login", base_url=self.base)
