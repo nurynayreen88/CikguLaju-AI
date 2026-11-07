@@ -24,7 +24,7 @@ class Sains80SPAppendixTests(unittest.TestCase):
                 self.assertFalse(row.get("week"))
                 self.assertFalse(row.get("a_start"))
                 self.assertFalse(row.get("b_start"))
-                self.assertIn("SUMBER DSKP DISAHKAN",row["note"])
+                self.assertIn("RUJUKAN DB LEGACY",row["note"])
                 covered.add((year,row["sp"]))
         self.assertEqual(len(covered),80)
 
