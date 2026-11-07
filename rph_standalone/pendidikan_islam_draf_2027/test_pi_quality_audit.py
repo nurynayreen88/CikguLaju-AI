@@ -52,6 +52,15 @@ class PIQualityAuditTests(unittest.TestCase):
         self.assertNotIn("PBD_TIDAK_KHUSUS_KEPADA_SP", r["flags"])
         self.assertIsNone(r["quality_score_percent"])
 
+    def test_unverified_activity_book_mentions_get_flags_without_approval(self):
+        r = self.result
+        self.assertEqual(r["unverified_year4_to6_activity_book_wording_count"], 13)
+        ids = [x["id"] for x in r["records"] if
+               "BUKU_AKTIVITI_T4_T6_KESAHIHAN_SUMBER_BELUM_DISAHKAN" in x["flags"]]
+        self.assertEqual(ids, [f"T5-L{n:03}" for n in
+                              (92,96,100,104,111,115,119,123,127,131,135,139,143)])
+        self.assertIsNone(r["quality_score_percent"])
+
     def test_script_consistency_requires_review_not_transliteration(self):
         r = self.result
         self.assertEqual(r["closing_rumi_consistency_review_count"], 690)
