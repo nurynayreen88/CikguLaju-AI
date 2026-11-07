@@ -69,6 +69,8 @@ class GoogleRPHHTTPFlowTests(unittest.TestCase):
             patch("web.google_rph_bundle_delivery._enabled_config", return_value=CFG),
             patch("web.google_rph_generation_staging_routes.google_staging_account_profile",
                   new=self.profile),
+            patch("web.google_rph_generation_staging_routes.verified_paid_uid_for_rph",
+                  return_value=None),
             patch("web.unified_rph_web.pdp_options",
                   return_value=[{"value": SELECTION["lesson"]}]),
             patch("web.google_rph_generation_staging_routes.prepare_private_bundle",
@@ -123,7 +125,8 @@ class GoogleRPHHTTPFlowTests(unittest.TestCase):
         self.native_calls += 1
         return {"word": WORD, "pdf": PDF}
 
-    def publish(self, cfg, actor, job, digest, word, pdf):
+    def publish(self, cfg, actor, job, digest, word, pdf,
+                production_paid_telegram_user_id=None):
         self.assertEqual(actor.account_id, self.current)
         self.assertEqual(self.jobs[job]["selection_hash"], digest)
         self.assertEqual(rendered_bundle_sha256(word, pdf), MANIFEST)
@@ -132,16 +135,20 @@ class GoogleRPHHTTPFlowTests(unittest.TestCase):
             return {"job_id": job, "status": "ready",
                     "already_ready": True, "allowed": True,
                     "remaining": self.credits}
-        if self.credits == 0:
-            return {"job_id": job, "status": "prepared", "allowed": False,
-                    "remaining": 0}
-        self.credits -= 1
-        self.debits += 1
+        if production_paid_telegram_user_id is None:
+            if self.credits == 0:
+                return {"job_id": job, "status": "prepared", "allowed": False,
+                        "remaining": 0}
+            self.credits -= 1
+            self.debits += 1
+        else:
+            self.assertEqual(production_paid_telegram_user_id, 123456789)
         row.update({"status": "ready", "document_manifest_sha256": MANIFEST})
         self.files[(actor.account_id, job, "word")] = word
         self.files[(actor.account_id, job, "pdf")] = pdf
-        return {"job_id": job, "status": "ready",
-                "allowed": True, "remaining": self.credits}
+        return {"job_id": job, "status": "ready", "allowed": True,
+                "remaining": self.credits,
+                "access_mode": "paid" if production_paid_telegram_user_id else "trial"}
 
     def private_file(self, cfg, account, job, fmt):
         self.assertEqual(account, self.current)
