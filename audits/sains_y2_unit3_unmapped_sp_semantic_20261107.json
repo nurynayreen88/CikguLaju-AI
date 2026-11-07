@@ -17,7 +17,21 @@
       "official_dskp_text": "Memerihalkan bahawa anak mewarisi ciri daripada ibu, bapa atau keturunan.",
       "staging_action": "SUPPLEMENTARY_ORIGINAL_PBD_NOT_AN_OFFICIAL_NEW_PDP",
       "scheduled_pdp": null,
-      "pbd_scope": "Explain that some characteristics may be inherited; use only fictional example family cards; do not infer parenthood from appearances."
+      "pbd_scope": "Explain that some characteristics may be inherited; use only fictional example family cards; do not infer parenthood from appearances.",
+      "verified_textbook_printed_pages": [
+        30
+      ],
+      "verified_activity_book_printed_pages": [
+        17,
+        18
+      ],
+      "activity_book_title_by_page": [
+        "Mari Banding Beza",
+        "Ciri-ciri Keluarga Mei Ling"
+      ],
+      "original_book_sp_labels_match": true,
+      "pedagogical_privacy_adaptation": "Buku memaparkan gambar hubungan keluarga rekaan. Jangan guna ciri fizikal untuk meneka hubungan kandung sebenar murid.",
+      "pedagogical_approved": false
     },
     {
       "sp": "3.1.5",
@@ -25,7 +39,22 @@
       "official_dskp_text": "Memberi contoh ciri yang diwarisi oleh anak daripada ibu bapa atau keturunan seperti warna kulit, warna mata dan jenis rambut.",
       "staging_action": "SUPPLEMENTARY_ORIGINAL_PBD_NOT_AN_OFFICIAL_NEW_PDP",
       "scheduled_pdp": null,
-      "pbd_scope": "Use age-appropriate imaginary family examples; avoid judging pupils' appearance or ancestry."
+      "pbd_scope": "Use age-appropriate imaginary family examples; avoid judging pupils' appearance or ancestry.",
+      "verified_textbook_printed_pages": [
+        30,
+        32
+      ],
+      "verified_activity_book_printed_pages": [
+        18,
+        19
+      ],
+      "activity_book_title_by_page": [
+        "Ciri-ciri Keluarga Mei Ling",
+        "Ciri-ciri yang Diwarisi"
+      ],
+      "original_book_sp_labels_match": true,
+      "pedagogical_privacy_adaptation": "Buku menyebut warna kulit/iris dan jenis rambut; tidak perlu mengelaskan atau membanding rupa murid sebenar.",
+      "pedagogical_approved": false
     },
     {
       "sp": "3.1.6",
@@ -33,7 +62,19 @@
       "official_dskp_text": "Menjelaskan pemerhatian tentang tumbesaran dan pewarisan melalui lakaran, TMK, penulisan atau lisan.",
       "staging_action": "SUPPLEMENTARY_ORIGINAL_PBD_NOT_AN_OFFICIAL_NEW_PDP",
       "scheduled_pdp": null,
-      "pbd_scope": "Two independent pieces of evidence: fictional growth measurement vs candidate inherited characteristics; student individual oral/written account."
+      "pbd_scope": "Two independent pieces of evidence: fictional growth measurement vs candidate inherited characteristics; student individual oral/written account.",
+      "verified_textbook_printed_pages": [
+        33
+      ],
+      "verified_activity_book_printed_pages": [
+        20
+      ],
+      "activity_book_title_by_page": [
+        "Apakah Ciri-ciri yang Saya Warisi?"
+      ],
+      "original_book_sp_labels_match": true,
+      "pedagogical_privacy_adaptation": "Halaman buku meminta ciri keluarga sendiri; alternatif berasaskan kad keluarga rekaan disediakan untuk melindungi privasi.",
+      "pedagogical_approved": false
     }
   ],
   "source_conflicts": [
@@ -55,5 +96,18 @@
     "Original DSKP edition and the relevant textbook page must be checked.",
     "Individual PBD and appropriate language/ethics must be evaluated by a teacher.",
     "No runtime deployment without Telegram/Web staging acceptance."
-  ]
+  ],
+  "booktext_source": {
+    "url": "https://drive.google.com/file/d/1LkJJWUb-zyFJ1ftpHM-4HIpIcEGLORI9/view",
+    "original_pdf_sha256": "cf2e00ba3fc77290dd4298d563faf7e0b352343301120ecf962b735f342d366b",
+    "isbn": "978-983-49-1607-7",
+    "source_type": "ORIGINAL_TEXTBOOK_2017_VISUAL_PAGE_SP_FOOTER_VERIFIED"
+  },
+  "activitybook_source": {
+    "url": "https://drive.google.com/file/d/1j0qoRWHcaAzHVgbb6uua7k_3i2-qVm0v/view",
+    "original_pdf_sha256": "865265a5e1b7c8e32e93decfd0f72633e6f6bbeecd9208416f3ef5cfddc58135",
+    "printed_page_to_pdf_zero_based_index_offset": 3,
+    "source_type": "ORIGINAL_ACTIVITY_BOOK_SCANNED_VISUAL_SP_FOOTER_VERIFIED"
+  },
+  "source_finding": "Original KPM Year2 textbook p30,p32,p33 and original scanned activity book p17–p20 explicitly print these DSKP SP labels. 3 SP absent from 51 source PdP is a planning/coverage gap, NOT a missing official exercise."
 }
