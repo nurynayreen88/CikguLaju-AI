@@ -12,11 +12,12 @@ import os
 import secrets
 import time
 import uuid
+from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode, urlsplit
 from urllib.request import Request, urlopen
 
-from flask import Blueprint, jsonify, make_response, redirect, request
+from flask import Blueprint, jsonify, make_response, redirect, request, send_file
 from web_google_identity_sessions import (
     issue_google_identity_ticket, verify_google_identity_ticket,
 )
@@ -111,6 +112,14 @@ def _json_response(request_obj, *, timeout=8, limit=16384):
         return answer
     except (HTTPError, URLError, OSError, ValueError, json.JSONDecodeError):
         raise RuntimeError("Supabase Google Auth unavailable") from None
+
+
+@bp.get("/google-staging-login")
+def google_staging_login():
+    if not _enabled_config():
+        return jsonify({"error": "Google staging unavailable"}), 503
+    return send_file(Path(__file__).with_name("google_staging_login.html"),
+                     mimetype="text/html", max_age=0)
 
 
 @bp.get("/api/auth/google/start")
