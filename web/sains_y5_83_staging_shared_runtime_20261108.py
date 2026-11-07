@@ -50,7 +50,7 @@ def _roster():
             or lesson["status"]!="DRAF_HOLD"):
             raise ValueError("Year5 staging content and PdP identity mismatch")
         unit=str(lesson["unit"]).strip()
-        if not re.fullmatch(r"Unit [2-9][0-9]?: .+",unit):
+        if not re.fullmatch(r"Unit (?:[2-9]|10): .+",unit):
             raise ValueError("Noncanonical Sains Y5 unit: "+code)
         if unit not in units:
             units.append(unit)
