@@ -3,6 +3,7 @@
 **Snapshot kandungan disediakan untuk integrasi ke repositori**. Mengandungi **585 RPH Markdown** (117 Lesson bagi setiap Tahun 2, 3, 4, 5 dan 6), diambil **tanpa pengubahsuaian** daripada ZIP v60.
 
 - ZIP asal: `CIKGULAJU_MATEMATIK_v60_585_RPH_OBJEKTIF_PBD_T4_STAGING.zip`
+- Salinan arkib binari Word/PDF (Drive, folder Matematik, akses ikut kebenaran pemilik): https://drive.google.com/file/d/1IoCiTr9P6nRi4rwiMeiIWkfexTJHBmI4/view?usp=drivesdk — **49,194,607 bait**. Ini aset persendirian, bukan fail public GitHub. Aplikasi memerlukan akses sah untuk mengambilnya; jangan anggap ia tersedia secara automatik di runtime.
 - SHA-256 ZIP: `a641d7aff88b375f4786807a10eed384d9b6b22fea632d11ad9f2bc97fec5271`
 - Pek Tahun 2–6: `v60_source/Tahun_<tahun>.json.zlib.b64.txt`
 - `v60_source/manifest.json`: hash setiap pek dan jumlah tepat 117 Lesson
