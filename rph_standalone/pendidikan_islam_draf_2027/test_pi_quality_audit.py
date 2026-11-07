@@ -27,14 +27,14 @@ class PIQualityAuditTests(unittest.TestCase):
 
     def test_remaining_short_content_is_not_masked(self):
         r = self.result
-        self.assertEqual(r["short_activity_count"], 3)
+        self.assertEqual(r["short_activity_count"], 2)
         self.assertEqual(r["expanded_activity_draft_count"], 560)
         self.assertEqual(r["critical_source_review_count"], 3)
         self.assertEqual(r["textbook_page_range_overrun_count"], 3)
         bad_page = sorted(x["id"] for x in r["records"]
                           if "HALAMAN_BUKU_T2_MELEBIHI_MUKA_TERAKHIR" in x["flags"])
         self.assertEqual(bad_page, ["T2-L102", "T2-L105", "T2-L108"])
-        self.assertAlmostEqual(r["mechanical_three_step_coverage_percent"], 99.57, places=2)
+        self.assertAlmostEqual(r["mechanical_three_step_coverage_percent"], 99.71, places=2)
         self.assertEqual(sum(r["domain_counts"].values()), 696)
         self.assertGreater(r["flags"].get("RUJUKAN_HALAMAN_BELUM_DISAHKAN", 0), 0)
 
