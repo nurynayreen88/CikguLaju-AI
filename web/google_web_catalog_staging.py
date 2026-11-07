@@ -10,7 +10,8 @@ from flask import Blueprint, jsonify, make_response, redirect, request, send_fil
 from web.google_auth_staging_routes import _enabled_config, TICKET_COOKIE
 from web.google_account_store import google_staging_account_profile, GoogleAccountUnavailable
 from web_google_identity_sessions import verify_google_identity_ticket
-from web.provider_neutral_web_identity import from_verified_google_account
+from web.provider_neutral_web_identity import (
+    from_verified_google_account, from_verified_linked_telegram_account)
 
 bp = Blueprint("google_web_catalog_staging", __name__)
 SUBJECTS = {
@@ -31,20 +32,49 @@ def private_cache(response):
 
 
 def _actor():
+    """One staging canonical account, two independently verified cookies.
+
+    Telegram never receives a Google OAuth ticket. A linked Telegram session
+    is rechecked against the private DB on every protected request. Conflicting
+    valid Google and Telegram sessions fail closed rather than switching user.
+    """
     config = _enabled_config()
     if config is None:
-        return None, (jsonify({"error": "Google staging unavailable"}), 503)
-    account_id = verify_google_identity_ticket(
+        return None, (jsonify({"error": "Web staging unavailable"}), 503)
+    google_id = verify_google_identity_ticket(
         request.cookies.get(TICKET_COOKIE), config["secret"])
+    telegram_uid, linked_id = None, None
+    # Import locally: linking blueprint imports this module's _actor.
+    from web.google_telegram_signin_staging_routes import (
+        TELEGRAM_COOKIE, _verify_ticket, _linked_account)
+    from web.google_telegram_link_staging_routes import (
+        _link_config, StagingLinkUnavailable)
+    telegram_uid = _verify_ticket(
+        request.cookies.get(TELEGRAM_COOKIE), config["secret"])
+    if telegram_uid is not None:
+        pair = _link_config()
+        if pair is None or pair[0]["supabase_url"] != config["supabase_url"]:
+            return None, (jsonify({"error": "Sesi Telegram staging tidak tersedia"}), 503)
+        try:
+            linked_id = _linked_account(config, telegram_uid)
+        except (StagingLinkUnavailable, KeyError, TypeError, ValueError):
+            return None, (jsonify({"error": "Pemadanan Telegram belum boleh disahkan"}), 503)
+        if linked_id is None:
+            return None, (jsonify({"error": "Akaun Telegram tidak dipautkan"}), 401)
+    if google_id is not None and linked_id is not None and google_id != linked_id:
+        return None, (jsonify({"error": "Dua sesi berlainan. Log keluar salah satu akaun dahulu."}), 403)
+    account_id = google_id or linked_id
     if account_id is None:
-        return None, (jsonify({"error": "Log masuk Google diperlukan"}), 401)
+        return None, (jsonify({"error": "Log masuk Google atau Telegram diperlukan"}), 401)
     try:
         profile = google_staging_account_profile(config, account_id)
-        identity = from_verified_google_account(
-            account_id, {**profile, "account_id": account_id})
+        trusted = {**profile, "account_id": account_id}
+        identity = (from_verified_google_account(account_id, trusted)
+                    if google_id is not None else
+                    from_verified_linked_telegram_account(telegram_uid, account_id, trusted))
         return identity, None
     except (GoogleAccountUnavailable, ValueError, TypeError):
-        return None, (jsonify({"error": "Akaun Google belum boleh disahkan"}), 503)
+        return None, (jsonify({"error": "Akaun staging belum boleh disahkan"}), 503)
 
 
 @bp.get("/google-staging-web")
@@ -75,7 +105,9 @@ def catalog():
             "years": list(YEARS),
             "subjects": [{"value": key, "label": label}
                          for key, label in SUBJECTS.items()],
-            "google_verified": True,
+            "google_verified": actor.provider == "google",
+            "identity_verified": True,
+            "auth_provider": actor.provider,
             "staging_only": True,
             "rph_generation_enabled": False,
             "note": "Katalog metadata berasaskan sumber Web sedia ada; tiada janaan atau potongan kredit."
@@ -113,7 +145,9 @@ def catalog():
     return jsonify({
         "items": records,
         "level": "lessons" if unit is not None else "units",
-        "google_verified": True, "staging_only": True,
+        "google_verified": actor.provider == "google",
+        "identity_verified": True, "auth_provider": actor.provider,
+        "staging_only": True,
         "rph_generation_enabled": False,
         "note": "RPH hanya tersedia selepas integrasi kuota bersama disahkan."
     })
