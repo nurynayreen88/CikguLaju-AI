@@ -9,6 +9,7 @@ import hashlib
 import hmac
 import json
 import os
+import re
 import secrets
 import time
 import uuid
@@ -35,13 +36,16 @@ def _config():
         return None
     base = os.environ.get("CIKGULAJU_GOOGLE_STAGING_SUPABASE_URL", "").rstrip("/")
     parsed = urlsplit(base)
+    staging_ref = os.environ.get("CIKGULAJU_GOOGLE_STAGING_PROJECT_REF", "")
     key = os.environ.get("CIKGULAJU_GOOGLE_STAGING_SUPABASE_PUBLISHABLE_KEY", "")
     staging_service_key = os.environ.get("CIKGULAJU_GOOGLE_STAGING_SUPABASE_SERVICE_ROLE_KEY", "")
     secret = os.environ.get("CIKGULAJU_WEB_SESSION_SECRET", "")
     origin = os.environ.get("CIKGULAJU_GOOGLE_STAGING_ORIGIN", "").rstrip("/")
     host = os.environ.get("CIKGULAJU_GOOGLE_STAGING_ALLOWED_HOST", "")
     parsed_origin = urlsplit(origin)
-    if (parsed.scheme != "https" or not parsed.hostname or parsed.port is not None
+    if (not re.fullmatch(r"[a-z0-9]{20}", staging_ref)
+            or parsed.hostname != staging_ref + ".supabase.co"
+            or parsed.scheme != "https" or parsed.port is not None
             or parsed.username or parsed.password or parsed.path not in ("", "/")
             or parsed.query or parsed.fragment):
         return None
