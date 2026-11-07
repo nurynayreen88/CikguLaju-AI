@@ -79,6 +79,10 @@ jobs:
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_t6_juz25_sequence_gap_audit.py --json pi_t6_juz25_full_source_67_gap_NO_GO.json --csv pi_t6_juz25_full_source_67_gap_NO_GO.csv
       - name: Generate source-linked Year6 Juz25 67-ayah editor decision register (never auto assign)
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_t6_juz25_gap_resolution_editor_plan.py --json pi_t6_juz25_gap_editor_plan_NO_GO.json --csv pi_t6_juz25_gap_editor_plan_NO_GO.csv
+      - name: Validate all six wholly withheld RPH as separate editor-only candidates
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_held_six_editor_candidate_packet.py --output pi_held_six_editor_packet_NO_GO.json
+      - name: Compare complete 246-ayat Juz25 alternative allocations without altering RPT
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_t6_juz25_complete_alternative_rpt_plan.py --output pi_t6_juz25_complete_options_NO_GO.json
       - name: Crosscheck held Year6 Juz29 L117 neighbor continuity for chapters 70-72
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_t6_juz29_l117_continuity_review.py --output pi_t6_juz29_l117_100_ayat_local_NO_GO.json
       - name: Validate four source-bounded Year6 Rumi editor-only Quran candidate drafts
@@ -136,6 +140,8 @@ jobs:
             pi_t6_juz25_full_source_67_gap_NO_GO.csv \
             pi_t6_juz25_gap_editor_plan_NO_GO.json \
             pi_t6_juz25_gap_editor_plan_NO_GO.csv \
+            pi_held_six_editor_packet_NO_GO.json \
+            pi_t6_juz25_complete_options_NO_GO.json \
             pi_t6_juz29_l117_100_ayat_local_NO_GO.json \
             pi_t6_held_quran_rumi_editor_four_NO_GO.json \
             pi_t6_juz25_legacy2026_24_invalid_2_duplicate_67_missing_NO_GO.json; do
@@ -196,6 +202,8 @@ jobs:
             pi_t6_juz25_full_source_67_gap_NO_GO.csv
             pi_t6_juz25_gap_editor_plan_NO_GO.json
             pi_t6_juz25_gap_editor_plan_NO_GO.csv
+            pi_held_six_editor_packet_NO_GO.json
+            pi_t6_juz25_complete_options_NO_GO.json
             pi_t6_juz29_l117_100_ayat_local_NO_GO.json
             pi_t6_held_quran_rumi_editor_four_NO_GO.json
             pi_t6_juz25_legacy2026_24_invalid_2_duplicate_67_missing_NO_GO.json
