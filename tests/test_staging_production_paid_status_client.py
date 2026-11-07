@@ -72,7 +72,7 @@ class ProductionPaidBridgeTests(unittest.TestCase):
         self.assertEqual(req.full_url, PROD_URL)
         self.assertEqual(req.get_method(), "POST")
         self.assertEqual(json.loads(req.data), {"telegram_user_id": UID})
-        self.assertEqual(timeout, 55)
+        self.assertEqual(timeout, 30)
         self.assertEqual(req.get_header("Authorization"), "Bearer " + TOKEN)
 
     def test_render_cold_start_gateway_503_is_retried_once_then_verified(self):
@@ -89,8 +89,38 @@ class ProductionPaidBridgeTests(unittest.TestCase):
         with patch("web.staging_production_paid_status_client.time.sleep") as sleep:
             result = read_paid_status(UID, CFG, transport=cold)
         self.assertTrue(result["rakan_pembangun_active"])
-        self.assertEqual(cold.calls, [(PROD_URL, 55), (PROD_URL, 25)])
-        sleep.assert_called_once_with(2)
+        self.assertEqual(cold.calls, [(PROD_URL, 30), (PROD_URL, 12)])
+        sleep.assert_called_once_with(4)
+
+    def test_success_after_three_render_502_failures_without_caching_rights(self):
+        class SleepingGateway:
+            def __init__(self, payload):
+                self.calls=[]
+                self.payload=payload
+            def open(self, req, timeout):
+                self.calls.append(timeout)
+                if len(self.calls)<=3:
+                    raise HTTPError(req.full_url,502,"Web cold start",{},None)
+                return FakeResponse(self.payload)
+        gateway=SleepingGateway(self.reply())
+        with patch("web.staging_production_paid_status_client.time.sleep") as sleep:
+            paid=read_paid_status(UID,CFG,transport=gateway)
+        self.assertTrue(paid["rakan_pembangun_active"])
+        self.assertEqual(gateway.calls,[30,12,12,12])
+        self.assertEqual([c.args[0] for c in sleep.call_args_list],[4,8,12])
+
+    def test_four_transient_502_errors_are_fail_closed(self):
+        class FailedGateway:
+            def __init__(self):
+                self.calls=0
+            def open(self, req, timeout):
+                self.calls+=1
+                raise HTTPError(req.full_url,502,"unavailable",{},None)
+        source=FailedGateway()
+        with (patch("web.staging_production_paid_status_client.time.sleep"),
+              self.assertRaises(PaidStatusBridgeUnavailable)):
+            read_paid_status(UID,CFG,transport=source)
+        self.assertEqual(source.calls,4)
 
     def test_invalid_private_token_401_is_never_retried(self):
         class Unauthorized:
