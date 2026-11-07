@@ -451,3 +451,16 @@ RPT Pendidikan Islam Tahun 6 2027 yang sama juga telah diperiksa pada PDF halama
 | T6-L117 | 41 | al-Ma'arij 40–44, Nuh 1–28, al-Jinn 1–13 | RPT telah mengecualikan az-Zumar kerana bukan sebahagian Juz 29; sahkan sempadan dengan mushaf |
 
 Kesemua **lima rekod masih tanpa `fields`**, `withheld=true`, `verified_ready=false`. T2-L035 ialah **rekod keenam** yang ditahan dan tidak dimasukkan dalam audit sumber Tahun 6 ini. **0 halaman mushaf diluluskan**, **0 ayat disisip automatik**, **0 kelulusan kod SP DSKP**, **0 bahan guru diterbitkan**. Audit source triage ini hanya membantu proses pembaikan seterusnya dan tidak mencukupi untuk mengangkat status HOLD.
+
+
+## Semakan Tahun 6 — SK/SP 4.2 solat ketika sakit (DSKP rasmi vs PdP cadangan)
+
+**Sumber primer diperiksa secara visual**, tanpa bergantung hanya kepada RPT:
+- DSKP Pendidikan Islam Tahun 6, Drive `1pasG1F0ThshBUNoyLtQCD867bIkhekTZ`, SHA-256 `fd12636abb8b220623ec8c33a0c12261c7f27adc44c02efc5ee2ac04b71fea45`, PDF halaman **46** / bercetak **34**. SK **4.2** bertema konsep solat ketika sakit. SP **4.2.3** aplikasi solat ketika sakit, **4.2.4** analisis kepentingan menunaikannya, **4.2.5** menunaikan kewajipan solat dalam pelbagai keadaan secara beradab dan istiqamah; **ketiga-tiga kod SP itu sah dan tertera pada DSKP**.
+- RPT CikguLaju 2027, Drive `1T380Ot_gG58JhxanELMM0z-gr6wmSJcL`, SHA-256 `b39a07b2dd7ef6062912f12fd43e63f87a98b13bde3885c925e88a37dac70e5b`, PDF halaman **21**, memperuntukkan **PdP 059** bagi SK/SP 4.2, dan **PdP 060** secara jelas berlabel *"PdP cadangan CikguLaju: amali solat ketika sakit mengikut kemampuan"*. **Kewujudan kod SP rasmi tidak menjadikan sesi PdP 060 satu Lesson wajib/rasmi yang tersendiri.**
+
+**Pembetulan editorial T6-L059**: soalan KBAT lama membandingkan tatacara solat dengan agama lain (tersasar daripada SP), diganti dengan soalan mengenai cara menunaikan solat ketika sakit mengikut kemampuan. Seluruh pentaksiran asal disimpan dalam `staging_dskp_42_source_editorial_review.original_pentaksiran`; medan SK/SP dan aktiviti asal tidak diubah. Status **HOLD untuk semakan Jawi, PBD dan fiqh**.
+
+**Calon T6-L060**: draf amali tambahan diwujudkan **di luar katalog aktif** sebagai `pi_t6_l060_amali_editor_candidate.json`, dengan 3 objektif, set induksi, **4 aktiviti**, pengukuhan, PBD amali individu, penutup dan senarai bahan. Ia dirancang berbeza daripada PdP 059 yang telah mempunyai aktiviti simulasi, tetapi pengesahan pertindihan pedagogi masih diperlukan. **Rekod asal `year6.json` T6-L060 tidak diberikan sebarang `fields`; `withheld=true`, `verified_ready=false`.** Tidak dinyatakan sebarang tatacara fikah yang khusus tanpa semakan sumber. Calon ini tidak boleh dicapai guru, Web atau Telegram.
+
+**Pagar ujian**: `pi_t6_sp42_primary_source_audit.py` dan `test_pi_t6_sp42_primary_source_audit.py` memastikan halaman DSKP dan RPT tercatat, pembetulan KBAT tidak hilang/menimpa sejarah, kandungan calon tidak meresap ke DB, dan **0** dakwaan Lesson tambahan rasmi, **0** kelulusan pakar/Jawi, **0** READY. Semakan akademik dan ejaan Jawi tetap diperlukan.
