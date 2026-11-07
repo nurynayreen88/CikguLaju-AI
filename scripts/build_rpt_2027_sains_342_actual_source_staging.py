@@ -24,6 +24,7 @@ from rpt_2027.common.format_2026_layout_preview import build_preview,validate_ro
 from tools.audit_sains_25_82_delta_20261106 import load,SOURCES,ROOT
 from tools.audit_sains_v26_readonly_20261106 import verify_and_rebuild
 from web.sains_canonical_unit_preview_20261106 import canonical_science_year
+from rpt_2027.common.sains_y6_bpk_2020_panduan_43_sp_source import source_index as panduan_y6_source_index
 
 OUT=ROOT/"staging/rpt_2027_seragam_2026/sains_342_pdp_SEPARA_DRAF"
 EXPECTED={2:51,3:45,4:79,5:83,6:84}
@@ -127,6 +128,7 @@ def source_records():
     fix,book=_year3_ledgers()
     dskp_missing=_missing_35_from_official_dskp()
     official_2017=_kssr2017_official_code_sets_y4_y5()
+    panduan_2020=panduan_y6_source_index()
     seen_dskp_missing=set()
     years={}
     with TemporaryDirectory(prefix="cikgulaju_sains_rpt_ro_") as tmp:
@@ -212,6 +214,17 @@ def source_records():
                         # only, retain raw historical title separately.
                         focus=item["ds_kpm_official_sp_text"]
                         note+=" Tajuk paparan ikut calon pembetulan DSKP."
+                # 2020 BPK activity guide is supplementary KPS evidence,
+                # NOT the official 2021 DSKP statement and NOT proof that
+                # the historical RPH embeds the skill. Add source trace only.
+                panduan_refs=panduan_2020.get(sp,[]) if year==6 else []
+                panduan_pages=[r["pdf_page"] for r in panduan_refs]
+                panduan_kps=sorted({term for r in panduan_refs for term in r["kps_terms"]})
+                if panduan_refs:
+                    note+=(" Panduan PdP BPK (2020) PDF hlm "+
+                           ", ".join(map(str,panduan_pages))+
+                           " — contoh KPS: "+", ".join(panduan_kps)+
+                           " (BUKAN semakan RPH/DSKP 2021).")
                 week=weeks[index*len(weeks)//expected]
                 a=master["A"][week];b=master["B"][week]
                 rows.append(dict(
@@ -231,7 +244,11 @@ def source_records():
                     curriculum_provenance=curriculum_provenance,
                     source_status=_normalize(raw.get("verification_status")),
                     raw_pdp_title=_normalize(raw.get("pdp_title")),
-                    week_allocation="PROPOSED_2027_WEEK_NOT_TIMETABLE"
+                    week_allocation="PROPOSED_2027_WEEK_NOT_TIMETABLE",
+                    panduan_y6_2020_pdf_pages=panduan_pages,
+                    panduan_y6_2020_kps_terms=panduan_kps,
+                    panduan_y6_2020_sp_code_source_found=bool(panduan_refs),
+                    panduan_y6_2020_is_approved_rph=False
                 ))
             validate_rows("sains",year,rows)
             years[year]=rows
