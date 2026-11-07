@@ -22,12 +22,17 @@ class NoRedirect(HTTPRedirectHandler):
 opener = build_opener(NoRedirect())
 
 
-def fetch(path):
-    req = Request(BASE + path, headers={
+def fetch(path, *, post_json=None):
+    headers = {
         "Accept": "application/json" if path.startswith("/api") or path.endswith("z")
         else "text/html",
         "User-Agent": "CikguLaju-Staging-Smoke/1",
-    })
+    }
+    if post_json is not None:
+        headers["Content-Type"] = "application/json"
+    req = Request(BASE + path,
+                  data=json.dumps(post_json).encode("utf-8") if post_json is not None else None,
+                  headers=headers, method="POST" if post_json is not None else "GET")
     try:
         with opener.open(req, timeout=25) as reply:
             return reply.status, reply.headers, reply.read(4096)
@@ -88,6 +93,13 @@ def check():
     ):
         status, _headers, _body = fetch(endpoint)
         assert status == 401, ("anonymous Web lesson metadata must fail", endpoint, status)
+
+    # Live unauthenticated POST denial: these calls cannot create jobs,
+    # render documents, or debit a staging Google trial credit.
+    for endpoint in ("/api/google-staging/web/rph/issue",
+                     "/api/google-staging/web/rph/generate"):
+        status, _headers, _body = fetch(endpoint, post_json={"selection": {}})
+        assert status == 401, ("anonymous RPH mutation must fail", endpoint, status)
 
     status, headers, _body = fetch("/api/auth/google/start")
     assert status == 302, ("OAuth start", status)
