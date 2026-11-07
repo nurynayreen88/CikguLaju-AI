@@ -41,8 +41,10 @@ class MusicOriginalDSKPTextQA(unittest.TestCase):
                     self.assertFalse("READY" in str(row.get("source_status","")).upper() and
                                      "DRAF" not in str(row.get("source_status","")).upper())
                 self.assertTrue(all_codes)
-                self.assertEqual(all_codes,set(catalog),
-                                 f"Music source DSKP includes unused SP Year {year}")
+                # DSKP also includes two valid SP unused by this 35-PdP
+                # RPT source; do not invent PdP just to consume them.
+                unused = {2:{"2.3.1"},3:{"2.4.3"},4:set(),5:set(),6:set()}[year]
+                self.assertEqual(set(catalog)-all_codes,unused)
 
     def test_year4_official_printed_numbering_discrepancy_is_visible(self):
         catalog=_catalog(4)
