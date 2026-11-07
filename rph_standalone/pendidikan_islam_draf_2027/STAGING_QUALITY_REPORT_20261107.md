@@ -264,3 +264,39 @@ Audit tambahan bagi **690 RPH draf aktif** mengesan **690 bahagian Penutup menga
 `pi_quality_audit.py` kini menanda `PENUTUP_RUMI_SEMAK_PENYERAGAMAN_JAWI` bagi setiap rekod terlibat. Tiada transliterasi pukal dijalankan kerana istilah ibadah, nama surah, lafaz hadis, makhraj, ejaan dan keperluan fon Amiri memerlukan semakan khusus. Teks Penutup asal tidak diubah; QA dan kelulusan akhir masih **NO_GO**.
 
 Keutamaan selepas penemuan baharu: pengesahan Jawi/Penutup, **43 PBD spesifik yang belum disemak pakar**, **77 rujukan halaman terdahulu**, **174 Buku Aktiviti Tahun 2/3** dan ujian Word/PDF terkini.
+
+
+## 7 November 2026 — ujian fizikal Word/PDF penuh + kumpulan penutup Jawi
+
+### Ujian fizikal, menggunakan draf semasa, **bukan penjana runtime**
+
+Tambah `pi_word_pdf_print_audit.py` dan workflow terasing `physical-word-pdf-a4`.
+Ujian membina DOCX sementara daripada medan terkini, mengekalkan semua teks SK/SP, objektif, induksi, aktiviti, PBD dan penutup, kemudian menukar ke PDF menggunakan **LibreOffice + fon Amiri**. Ruangan bahan untuk pratonton hanya menggunakan baris sumber pertama, manakala nota editor yang lain tidak diedarkan dalam bahan guru.
+
+| Tahun | Katalog | Ditahan sepenuhnya | Ditahan kerana sumber kritikal | Layak ujian cetakan | A4 satu halaman |
+|---|---:|---:|---:|---:|---:|
+| 2 | 112 | 1 | 0 | 111 | 111 |
+| 3 | 147 | 0 | 0 | 147 | 147 |
+| 4 | 151 | 0 | 1 | 150 | 150 |
+| 5 | 143 | 0 | 0 | 143 | 143 |
+| 6 | 143 | 5 | 2 | 136 | 136 |
+| **Jumlah** | **696** | **6** | **3** | **687** | **687** |
+
+**Run #92 lulus:** https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42323952446. Sebanyak **687/687 PDF satu halaman A4**, **0** melebihi satu halaman, **0** gagal penukaran, dan **0** PDF tanpa teks boleh diekstrak; jumlah aksara teks diekstrak per PDF ialah 958–2219, mengikut laporan artefak asal. Artefak hanya JSON/CSV keputusan, bukan dokumen guru. Pengiraan di sini **bukan** bukti fon Jawi bersambung dengan betul pada setiap baris, bukan ujian bot/PDF native, bukan penilaian rupa 100% dan **bukan** kelulusan akademik.
+
+**Run #95 lulus**, termasuk semakan baru pengelompokan penutup: https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42324172878.
+
+### Penutup Rumi — senarai semakan pakar yang disatukan
+
+`pi_closing_jawi_review_queue.py` mengekalkan **690 teks penutup asal**, mengelompokkan kepada hanya **78 teks unik** (tanpa mengubah draf), menghasilkan `pi_closing_jawi_review_78.json` dan `.csv` dalam CI, bersama ID semua Lesson yang berkongsi teks. Setiap penggantian Jawi, nama penyemak dan status sumber/Word/PDF dibiarkan kosong sehingga semakan sebenar. **0 penutup diterjemah/diterbitkan secara automatik**.
+
+### Status pelepasan selepas batch penuh
+
+- **43/43 ayat PBD generik dikenal pasti telah dipinda sebagai draf SP-spesifik** (T2 14; T3 29). **43 masih menunggu kelulusan isi/Jawi**; teks asal dipelihara.
+- **77 nota halaman** sumber terdahulu belum disahkan (T2), dan **174 calon penggunaan Buku Aktiviti T2/T3** masih belum diberi halaman/latihan asal yang terbukti. Carian nama tepat `Buku Aktiviti` + `Pendidikan Islam`, kod `BA102001`, `BA103001` dalam Drive projek tidak menemui naskhah.
+- **6 rekod held** kekal kosong; **3 sumber kritikal** kekal tidak boleh disahkan; tidak dibenarkan mengarang teks hadis atau julat ayat.
+- **Tahun 1 tidak termasuk** katalog 696 ini. RPH Tahun 1/KP2027 memerlukan laluan semakan tersendiri.
+- **Tiada** semakan visual Jawi pada dokumen PDF cetak sebenar untuk semua rekod, ujian perbandingan Word/PDF native Telegram/Web dan kelulusan kandungan pakar bagi 690 draf.
+- **Peratus kualiti akademik bertauliah kekal belum dinilai**, tidak boleh dilabel ≥80%, READY, atau dihantar ke pengguna. `main`, DB, kuota, pembayaran, Web dan Telegram kekal tanpa perubahan. Keputusan keselamatan penerbitan: **STAGING / HOLD / NO_GO**.
+
+**Syarat akhir yang perlu dibuktikan sebelum penerbitan:** naskhah BA dan Buku Teks yang boleh diperiksa mengikut halaman asli, semakan pakar Jawi dan isi setiap Lesson, penyelesaian 9 rekod tahanan/risiko, ujian visual Word/PDF + generator natif Web/Telegram, dan pengesahan Tahun 1 secara berasingan.
