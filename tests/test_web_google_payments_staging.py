@@ -29,6 +29,7 @@ class PaymentApiTest(unittest.TestCase):
             "CIKGULAJU_GOOGLE_AUTH_STAGING_ENABLED": "1",
             "CIKGULAJU_GOOGLE_STAGING_SUPABASE_URL": "https://abcdefghijklmnopqrst.supabase.co",
             "CIKGULAJU_GOOGLE_STAGING_PROJECT_REF": "abcdefghijklmnopqrst",
+            "CIKGULAJU_GOOGLE_PRODUCTION_PROJECT_REF": "productionref1234567",
             "CIKGULAJU_GOOGLE_STAGING_SUPABASE_PUBLISHABLE_KEY": "sb_publishable_testing_key",
             "CIKGULAJU_GOOGLE_STAGING_SUPABASE_SERVICE_ROLE_KEY": "staging-service-role-test-placeholder",
             "CIKGULAJU_WEB_SESSION_SECRET": SECRET,
