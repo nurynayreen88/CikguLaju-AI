@@ -91,3 +91,12 @@ Ujian:
 - Fail ini **bukan** 26 PdP yang diiktiraf sebagai urutan RPT. Bilangan 36 draf dalam master KP2027 terdahulu masih kekal, dan pakej 26 BM SK ialah calon semakan **penggantian/penambahbaikan**, bukan jumlah tambahan 26 PdP. Tiada data lama dipadam/ditimpa.
 - Tiada pembuktian sah DK akhir, peruntukan masa BM, halaman buku teks KP2027, jumlah PdP setahun, jadual negeri Kumpulan A/B atau kelulusan guru. **0/26 READY** dan **0 standard DK akhir disahkan**.
 - Ujian kawalan integriti: `python -m unittest discover -s tests -p 'test_kp2027_year1_bm_sk_26_source_20261107.py' -v`; turut dijalankan dalam workflow PR.
+
+
+### Indeks SPi penataran mengikut empat kemahiran
+
+- Empat jadual **Standard Prestasi** telah diperiksa secara visual dalam PDF penataran BM Tahun 1: **Mendengar halaman 33, Bertutur halaman 62, Membaca halaman 91, Menulis halaman 114**. Setiap jadual mengandungi **TP1, TP2, TP3** (12 tafsiran latihan keseluruhannya).
+- Fail sumber: [bm_sk_training_spi_4skills_tp1_tp3_20261107.json](bm_sk_training_spi_4skills_tp1_tp3_20261107.json). Tafsiran disalin daripada jadual penataran; **bukan pengesahan versi DK muktamad**.
+- Fail induk BM yang disambungkan kepada jadual SPi untuk semakan: [bm_sk_26_training_sp_draft_master_20261107_v2_spi_refs.json](bm_sk_26_training_sp_draft_master_20261107_v2_spi_refs.json). RPH hanya menyimpan rujukan **mengikut kemahiran** dan tidak diberikan TP murid secara automatik.
+- **TP keseluruhan memerlukan pertimbangan profesional guru berdasarkan evidens PBD berterusan**, bukan satu aktiviti atau satu contoh RPH sahaja. Larangan penerbitan dan status HOLD kekal; tiada SK/SP/SPi rasmi disisipkan ke DB.
+- Ujian semakan semula BM 26 SP bersama 12 tafsiran latihan: `python -m unittest discover -s tests -p 'test_kp2027_year1_bm_sk_26_source_20261107.py' -v`.
