@@ -33,6 +33,19 @@ The separate Render *Web Service* already exists. Keep it distinct from `cikgula
 - `tests/test_web_google_staging_profile.py` and the Google route regression suite verify the read-only, account-bound query and browser destination. This does not prove actual Google provider login works; real browser acceptance still requires Cloud OAuth setup.
 - Service remains fail-closed: `CIKGULAJU_GOOGLE_AUTH_STAGING_ENABLED=0` until setup completes.
 
+## OAuth redirect mismatch found during real browser trial (7 Nov 2026)
+
+**Observed:** After Google consent, the teacher arrived at `http://localhost:3000/?code=...`, not at the protected Render callback. This is the default **Supabase Site URL**. The staging app initiates OAuth with `redirect_to=https://cikgulaju-google-payments-staging.onrender.com/api/auth/google/callback?state=<random-hex>`. The previously documented exact allowlist path omits the dynamic query string. Supabase Auth logs corroborated `localhost:3000` as the redirect/referrer; the Web callback has not been called successfully.
+
+**Action in staging-only Supabase dashboard** https://supabase.com/dashboard/project/eqrcjlnvcytkgazptbor/auth/url-configuration :
+
+1. Set **Site URL** to `https://cikgulaju-google-payments-staging.onrender.com` (remove localhost default).
+2. Add **Redirect URLs** entry `https://cikgulaju-google-payments-staging.onrender.com/api/auth/google/callback**` (the `**` suffix covers dynamic `?state=...`). Keep the existing exact entry if present. For production avoid broad wildcards; this is isolated to staging.
+3. Save the two settings and start a **fresh** OAuth login from `/google-staging-login`. A previous `?code=` value is short-lived and single-use; don't paste it into chats or URLs.
+4. Verify the browser reaches the **Render** callback and then `/google-staging-account`, showing the 10 staging trial credits. If not, inspect Auth and Render server logs before further changes.
+
+This is an **owner dashboard configuration**, not a change to the code or production database. GitHub's no-credential provider smoke verifies that authorization starts at Google, but **cannot verify Google returns to the configured Web callback without a human sign-in**.
+
 ## Remaining blocker after staging DB provisioning (7 November 2026)
 
 **No successful Google browser OAuth login has occurred yet.** Google Cloud OAuth web client and its client ID/secret must be configured privately in the staging Supabase project at https://supabase.com/dashboard/project/eqrcjlnvcytkgazptbor/auth/providers. Staging backend `CIKGULAJU_GOOGLE_STAGING_SUPABASE_SERVICE_ROLE_KEY` also must be set privately in Render; the connected Supabase tool exposes only publishable API keys, not server secrets. Keep `CIKGULAJU_GOOGLE_AUTH_STAGING_ENABLED=0` until all staging-only credentials and Auth redirect URLs are verified.
