@@ -83,6 +83,7 @@ def english_records(year):
     path=ROOT/f"rpt_2027/english/RPT_ENGLISH_TAHUN_{year}_2027_UNTUK_GURU.pdf"
     master=load_calendar_weeks()
     result=[]
+    known_weeks=set()
     with fitz.open(path) as pdf:
         if pdf.page_count < 41:
             raise ValueError("English source PDF incomplete")
@@ -91,14 +92,30 @@ def english_records(year):
             labeled=lesson_labels(pg)
             if not labeled:
                 continue
-            week=f"M{page_index:02d}"
-            if week not in master["A"]:
-                raise ValueError(f"English T{year} page={page_index+1} week={week} lesson_count={len(result)} ids={[p for p,_ in labeled]} beyond master")
+            # Source PDF may spill a 4-Lesson week onto another physical
+            # page (notably Year 3). PDF page index is not a week identity.
+            printed_weeks=[
+                int(x) for x in re.findall(
+                    r"\bWEEK\s+(\d{1,2})\b",
+                    pg.get_text("text",clip=fitz.Rect(0,45,126,550)),
+                    flags=re.IGNORECASE
+                )
+            ]
+            known_weeks.update(printed_weeks)
             # Main and Complementary are physically in x292–650, with
             # lesson/Theme/Topic in x129–288 and reference in x655–810.
             for i,(number,(y0,y1)) in enumerate(labeled):
                 if number!=len(result)+1:
                     raise ValueError(f"English T{year}: missing Lesson before {number}")
+                week=f"M{(number-1)//4+1:02d}"
+                if week not in master["A"]:
+                    raise ValueError("English lesson exceeds original 40-week 4-Lesson slots")
+                if printed_weeks and (number-1)//4+1 not in printed_weeks:
+                    # Some PDF pages can hold two week groups, so only flag
+                    # an actual printed week conflict; never silently relabel.
+                    raise ValueError(
+                        f"English T{year} L{number:03d} page {page_index+1}: "
+                        f"source printed weeks {printed_weeks} disagree with {week}")
                 top=y0-13.8
                 bottom=(labeled[i+1][1][0]-13.8 if i+1<len(labeled)
                         else 552)
@@ -138,6 +155,8 @@ def english_records(year):
                     a_start=master["A"][week][0],a_end=master["A"][week][1],
                     b_start=master["B"][week][0],b_end=master["B"][week][1]
                 ))
+    if known_weeks != set(range(1,41)):
+        raise ValueError(f"English T{year} printed RPT week labels not 1-40: {sorted(known_weeks)}")
     if len(result)!=160:
         raise ValueError(f"English T{year}: expected 160 SOW Lessons, got {len(result)}")
     validate_rows("english",year,result)
