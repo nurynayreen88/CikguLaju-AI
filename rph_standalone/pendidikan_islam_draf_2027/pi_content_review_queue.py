@@ -54,6 +54,8 @@ def build_queue(root=ROOT):
                     tasks.append("Semak ayat PBD draf khusus: bukti aktiviti/SP, ejaan Jawi dan rubrik guru")
                 if "RUJUKAN_HALAMAN_BELUM_DISAHKAN" in flags:
                     tasks.append("Sahkan halaman Buku Teks pada naskhah asal")
+                if "HALAMAN_BUKU_T2_MELEBIHI_MUKA_TERAKHIR" in flags:
+                    tasks.append("Julat lama 133-140 melepasi halaman bercetak terakhir 138; semak cadangan 133-138 dengan SP")
                 action = "; ".join(tasks) + "."
                 sp = record["fields"]["sp"]
             elif "PENAMBAHAN_PDP_BELUM_SAH_PAKAR" in flags:
@@ -90,6 +92,7 @@ def build_queue(root=ROOT):
         "generic_pbd_records": qa["generic_pbd_count"],
         "pbd_refinements_pending_expert_review": qa["refined_pbd_review_count"],
         "unverified_old_page_note_records": qa["flags"].get("RUJUKAN_HALAMAN_BELUM_DISAHKAN", 0),
+        "textbook_end_page_overruns": qa["textbook_page_range_overrun_count"],
         "by_priority": {p: counts.get(p, 0) for p in PRIORITIES},
         "total": len(queue),
         "can_publish": False,
