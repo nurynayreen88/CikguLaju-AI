@@ -29,6 +29,15 @@ class HistoricSainsPdPWorkQueueQA(unittest.TestCase):
                 self.assertEqual(section["pdp_with_code_present_but_full_pdp_signoff_missing"]
                                  + section["pdp_with_officially_absent_code"],
                                  section["historical_pdp_count"])
+                self.assertEqual(section["pdp_with_official_sp_text_match"]
+                                 + len(section["pdp_with_official_sp_text_mismatch"])
+                                 + section["pdp_with_officially_absent_code"],
+                                 section["historical_pdp_count"])
+                self.assertEqual(section["pdp_with_official_sk_title_match"]
+                                 + len(section["pdp_with_official_sk_title_mismatch"])
+                                 + section["pdp_with_officially_absent_code"],
+                                 section["historical_pdp_count"])
+                self.assertEqual(section["source_text_visual_signoff_count"],0)
                 self.assertEqual(len({r["source_pdp_code"] for r in section["requires_reconciliation"]}),
                                  len(section["requires_reconciliation"]))
                 for r in section["requires_reconciliation"]:
