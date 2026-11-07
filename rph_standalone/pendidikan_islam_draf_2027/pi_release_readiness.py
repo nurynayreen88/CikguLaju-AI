@@ -22,6 +22,9 @@ from pi_t6_tasmi_rpt_2027_review import audit as tasmi_t6
 from pi_y6_held_rpt_2027_source_review import audit as held_y6
 from pi_t6_sp42_primary_source_audit import audit as sp42_y6
 from pi_t2_l035_rpt_2026_2027_overlap_audit import audit as l035_t2
+from pi_t6_juz25_sequence_gap_audit import audit as sequence_juz25
+from pi_t6_juz29_l117_continuity_review import audit as sequence_juz29
+from pi_t6_held_quran_editor_candidate_review import audit as held_quran_proposals
 from pi_ba_match_queue import match_queue
 from pi_review_catalog import counts as preview_counts
 
@@ -40,6 +43,9 @@ def readiness(root=ROOT):
     held_source = held_y6(root)
     sp42 = sp42_y6(root)
     overlap = l035_t2(root)
+    juz25 = sequence_juz25(root)
+    juz29 = sequence_juz29(root)
+    held_quran = held_quran_proposals(root)
     ba = match_queue(root)
     preview = preview_counts(root=root)
     assert qa["total"] == 696 and qa["drafts"] == 690 and qa["held"] == 6
@@ -78,6 +84,14 @@ def readiness(root=ROOT):
     assert overlap["original_year2_l035_record_still_wholly_held"] is True
     assert overlap["overlap_present_in_original_2026_rpt"] is True
     assert overlap["intentional_revision_vs_source_typo_resolved"] is False
+    assert juz25["juz25_ayah_missing_in_rpt"] == 67
+    assert juz25["juz25_missing_non_overlapping_blocks"] == 4
+    assert juz25["automatic_verse_reassignments"] == 0
+    assert juz29["three_surahs_mapped_ayat"] == 100
+    assert juz29["three_surahs_missing_ayat"] == 0
+    assert juz29["original_l117_withheld"] is True
+    assert held_quran["editor_candidates_created"] == 4
+    assert held_quran["public_teacher_rph_added"] == 0
     assert sp42["l060_original_year6_record_still_wholly_held"] is True
     assert sp42["independent_official_dskp_lesson_numbers_claimed"] == 0
     assert qa["t6_sp42_edited_kbat_review_count"] == 1
@@ -122,6 +136,10 @@ def readiness(root=ROOT):
             "hadith_excerpt_from_original_source_pending_expert": counter["HADIS_T4_PETIKAN_BUKU_DSKP_DRAF_SEMAK_PAKAR"],
             "year6_tasmi_rpt_ayah_ranges_teacher_pending": counter["TASMI_T6_RPT_AYAT_BELUM_DITETAPKAN_GURU"],
             "year6_wholly_held_source_triaged_no_release": 5 if year == 6 else 0,
+            "year6_juz25_unmapped_ayah_in_rpt": 67 if year == 6 else 0,
+            "year6_juz25_unmapped_ayah_spans": 4 if year == 6 else 0,
+            "year6_juz29_l117_local_70_72_ayat_mapped": 100 if year == 6 else 0,
+            "year6_held_quran_separate_editor_candidates": 4 if year == 6 else 0,
             "source_dskp_sp42_kbat_rewritten_pending_expert": counter["T6_SP42_KBAT_DIPERBETUL_SEMAK_PAKAR"],
             "tasmi_verse_descriptions_without_3_level_sp": 37 if year == 3 else 0,
             "short_activity_source_hold": counter["AKTIVITI_TERLALU_RINGKAS_PERLU_SEMAKAN"],
@@ -132,6 +150,10 @@ def readiness(root=ROOT):
     assert sum(x["closing_jawi_candidate_exists"] for x in grouped.values()) == 690
     # Evidence needed before a future release decision; no implicit approval.
     blockers = [
+        {"code": "YEAR6_JUZ25_67_UNMAPPED_QURAN_AYAT", "affected_lessons": 7,
+         "action": "RPT Year6 Juz25 maps 179/246 ayat across PdP002/006/010/014/018/022/026, missing Fussilat 41:47-54, Zukhruf 43:74-89, Dukhan 44:1-39 and Jathiyah 45:34-37 (67 ayat). RPT editor/teacher must map them; never invent a lesson or code"},
+        {"code": "YEAR6_FOUR_QURAN_EDITOR_CANDIDATES_ONLY", "affected_lessons": 4,
+         "action": "T6-L006/L014/L018/L117 now have separate Rumi reviewer drafts, NOT inserted into original withheld catalog; Quran ayat allocation, full Juz25 coverage, Jawi and tajwid signoff remain pending"},
         {"code": "YEAR2_L035_SOURCE_INHERITED_AYAH224_OVERLAP", "affected_lessons": 1,
          "action": "RPT Year2 2026 already assigns al-Baqarah 216-224 then 224-245; 2027 flags the overlap. An editor/teacher must decide explicit repetition vs source error; do not fabricate a new verse boundary"},
         {"code": "HELD_SOURCE_CONTENT", "affected_lessons": qa["held"],
@@ -194,6 +216,13 @@ def readiness(root=ROOT):
         "year6_tasmi_official_dskp_codes_invented": 0,
         "year6_full_source_hold_records_reviewed_against_rpt": 5,
         "year6_full_source_hold_records_generated": 0,
+        "year6_juz25_verses_total": 246,
+        "year6_juz25_verses_mapped_original_rpt": 179,
+        "year6_juz25_verses_missing_original_rpt": 67,
+        "year6_juz25_missing_source_blocks": 4,
+        "year6_juz29_l117_neighbour_chapters_70_to_72_ayat_verified": 100,
+        "year6_quran_held_rumi_editor_candidates": 4,
+        "year6_quran_candidate_expert_or_jawi_approved": 0,
         "year6_sp42_official_dskp_sp_codes_confirmed": 3,
         "year6_l059_offtopic_kbat_repaired_editorially": 1,
         "year6_l060_optional_amali_candidate_created_held": 1,
