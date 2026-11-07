@@ -60,6 +60,8 @@ class GoogleRPHHTTPFlowTests(unittest.TestCase):
         self.patches = [
             patch("web.google_rph_generation_staging_routes._generator_config",
                   return_value=CFG),
+            patch("web.google_rph_generation_staging_routes._staging_test_account",
+                  return_value=OWNER),
             patch("web.google_rph_generation_staging_routes._actor", new=self.actor),
             patch("web.google_rph_bundle_delivery._actor", new=self.actor),
             patch("web.google_rph_bundle_delivery._enabled_config", return_value=CFG),
