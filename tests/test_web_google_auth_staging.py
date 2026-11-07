@@ -102,8 +102,7 @@ class GoogleStagingRoutes(unittest.TestCase):
         state, _ = self._start()
         with patch("web.google_auth_staging_routes._json_response",
                    side_effect=[{"access_token": "x" * 70},
-                                {"id": SUBJECT, "identities": [{"provider": "google"}]}]) as call, \\
-             patch("web.google_auth_staging_routes.ensure_google_staging_account",
+                                {"id": SUBJECT, "identities": [{"provider": "google"}]}]) as call,\n             patch("web.google_auth_staging_routes.ensure_google_staging_account",
                    return_value=SUBJECT) as create:
             r = self.client.get("/api/auth/google/callback?state=" + state + "&code=test",
                                 base_url=self.base)
@@ -125,8 +124,7 @@ class GoogleStagingRoutes(unittest.TestCase):
         state, _ = self._start()
         with patch("web.google_auth_staging_routes._json_response",
                    side_effect=[{"access_token": "x" * 70},
-                                {"id": SUBJECT, "identities": [{"provider": "google"}]}]), \\
-             patch("web.google_auth_staging_routes.ensure_google_staging_account",
+                                {"id": SUBJECT, "identities": [{"provider": "google"}]}]),\n             patch("web.google_auth_staging_routes.ensure_google_staging_account",
                    side_effect=RuntimeError("staging down")):
             r = self.client.get("/api/auth/google/callback?state=" + state + "&code=test",
                                 base_url=self.base)
