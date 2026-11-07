@@ -542,3 +542,12 @@ Audit tanpa meminda sumber RPH menjumpai **13 Lesson Tahun 5** yang secara nyata
 - Pemadanan Buku Aktiviti **Tahun 2/3 (174 calon)** masih masalah berasingan; dapatan 13 Tahun 5 **tidak** bermaksud 13 latihan baharu sudah disahkan.
 
 **Keputusan penerbitan: NO_GO.** `690` draf, `6` tahan penuh, `3` sumber kritikal, `687` pratonton editorial, **0 RPH baharu dibuka**. Semua data asal kekal, tiada Word/PDF rasmi, muat turun bahan, `main`, DB, Web atau Telegram produksi disentuh. Sumber/aktiviti/penilaian sebenar perlu semakan Jawi pakar dan buku sebelum kelulusan.
+
+## Sambungan 8 Nov 2026 — 49 pembetulan noktah RPH al-Quran + kertas keputusan 67 ayat Juzuk 25 (STAGING)
+
+- **49 RPH Tahun 2–6** dibetulkan pada satu rentetan `برتجويد..` → `برتجويد.` dalam medan `aktiviti_utama` sahaja (T2=5, T3=8, T4=12, T5=12, T6=12). Teks aktiviti asal disimpan **penuh** dalam `staging_copyedit.original_activity` bagi setiap rekod, bersama `expert_content_approved=false`, `jawi_orthography_approved=false`, `publication=HOLD`. Ayat al-Quran, SK/SP, objektif, isi dan bidang tidak diubah.
+- **8 contoh imbuhan Jawi Tahun 3** yang menggunakan tiga hingga lima noktah sebagai pola apitan kekal seperti asal (L084/088/092/096/100/104/108/115); elipsis petikan hadis juga tidak disentuh. Ujian `pi_tajwid_double_period_copyedit_review.py` menyemak pembetulan aksara tepat, 49 asal tersimpan dan status bukan READY.
+- **Jurang Juzuk 25: 67 ayat** tetap tidak disenaraikan dalam RPT Tahun 6. Fail baharu `pi_t6_juz25_gap_resolution_editor_plan.py` menjana daftar **empat keputusan pengagihan untuk penyemak**, dengan petunjuk lokasi: (1) Fussilat 41:47–54 sebelum PdP002; (2) az-Zukhruf 43:74–89 antara PdP014 dan 018; (3) ad-Dukhan 44:1–39 juga di antara slot itu; (4) al-Jathiyah 45:34–37 perlu dipertimbang pada **sempadan dalaman PdP026** antara 45:23–33 dan 46:1–14 (yang terakhir sudah Juz26). Ini **petunjuk urutan sahaja, bukan alokasi PdP yang diluluskan**.
+- Daftar keputusan menyimpan `teacher_allocated_lesson=null`, `exact_student_ayah_assignment=null`, `teacher_quran_sequence_approved=false`, `rpt_changed=false`, `rph_changed=false`, `release=NO_GO`; kod SP rasmi tidak direka. Artefak JSON/CSV dijana dalam GitHub Actions untuk semakan editor.
+
+**Tiada merge, deployment, perubahan produksi, DB atau fail RPT asal.** `690` draf kekal, `6` rekod held, `3` source-critical holds, `0` kelulusan akademik/Jawi, skor akademik kekal `null`, keputusan pelepasan **NO_GO**.
