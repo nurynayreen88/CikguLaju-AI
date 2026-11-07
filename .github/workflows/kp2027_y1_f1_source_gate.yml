@@ -5,7 +5,7 @@ on:
     paths:
       - 'curriculum/kp2027/**'
       - 'web/kp2027_status_api.py'
-      - 'tests/test_kp2027_y1_f1_source_gate_20261106.py'
+      - 'tests/test_kp2027_*.py'
       - '.github/workflows/kp2027_y1_f1_source_gate.yml'
   workflow_dispatch:
 
@@ -24,3 +24,10 @@ jobs:
         run: python -m pip install 'Flask==3.1.0'
       - name: Verify all new-curriculum choices are source-gated
         run: python -m unittest discover -s tests -p 'test_kp2027_y1_f1_source_gate_20261106.py' -v
+
+      - name: Verify original editorial candidates remain non-public
+        run: python -m unittest discover -s tests -p 'test_kp2027_candidate_rph_20261107.py' -v
+      - name: Verify Year 1 only candidate package
+        run: python -m unittest discover -s tests -p 'test_kp2027_year1_focus_20261107.py' -v
+      - name: Verify 36 Year 1 candidates and BM/Math training evidence gates
+        run: python -m unittest discover -s tests -p 'test_kp2027_year1_training_evidence_20261107.py' -v
