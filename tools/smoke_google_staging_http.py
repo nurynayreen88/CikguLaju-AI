@@ -76,6 +76,16 @@ def check():
     status, headers, _body = fetch("/api/auth/google/profile")
     assert status == 401, ("anonymous profile API should fail", status)
 
+    # Dual-provider linking is deliberately staging-only and must require a
+    # verified Google cookie even when Telegram widget configuration exists.
+    status, _headers, _body = fetch("/google-staging-link-telegram")
+    assert status == 401, ("anonymous Telegram link page should fail; check staging bot/flag", status)
+    status, _headers, _body = fetch("/api/google-staging/link/telegram/status")
+    assert status == 401, ("anonymous Telegram link status should fail", status)
+    status, _headers, _body = fetch("/api/google-staging/link/telegram", post_json={"telegram_auth": {}})
+    assert status == 401, ("anonymous Telegram link mutation should fail", status)
+    print("PASS: Google-Telegram linking gate enabled in staging; anonymous linking denied.")
+
     # Newly mounted Web lesson selector must never expose curriculum
     # metadata without a valid Google-only signed session.
     status, headers, _body = fetch("/google-staging-web")
