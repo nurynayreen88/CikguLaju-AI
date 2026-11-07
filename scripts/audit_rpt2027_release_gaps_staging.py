@@ -37,7 +37,17 @@ def build_audit():
         if len(p) != PI_EXPECTED[year]:
             raise ValueError(f"PI T{year} source count changed")
         held = [r["id"] for r in p if r["source_held"]]
-        islam_years[str(year)] = {"source_records": len(p), "withheld_count": len(held), "withheld_ids": held}
+        sourced=[r for r in p if r["source_held"] and r.get("held_source_proposal")]
+        if len(sourced)!=len(held):
+            raise ValueError(f"PI T{year} held source recovery coverage changed")
+        islam_years[str(year)] = {
+            "source_records": len(p),
+            "withheld_count": len(held),
+            "withheld_ids": held,
+            "held_rpt_provisional_source_found": len(sourced),
+            "held_rpt_source_conflicts": sum("KONFLIK" in r["topic"] for r in sourced),
+            "held_rpt_sourced_week_candidates": sum(bool(r["week"]) for r in sourced),
+        }
     for year in (4, 5, 6):
         rows = rbt_records(year)
         if len(rows) != 32:
@@ -73,7 +83,7 @@ def build_audit():
             "years": islam_years,
             "total_source_records": sum(v["source_records"] for v in islam_years.values()),
             "withheld_count": held_total,
-            "reason": "Six source RPH records have no verified SK/SP/content; no neighbouring standards will be inferred.",
+            "reason": "All six held V5 RPH have RPT-source candidates: five optional tasmi blocks without official SK/SP and one contradictory Ibadah SK; all six remain withheld.",
         },
         "rbt": {
             "years": rbt_years,
