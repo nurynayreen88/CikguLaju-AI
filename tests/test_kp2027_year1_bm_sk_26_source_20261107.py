@@ -76,6 +76,34 @@ class BMYear1SK26CandidateGateTests(unittest.TestCase):
                          ["ucapan selamat", "ucapan penghargaan", "permohonan maaf"])
         self.assertEqual(self.master["gate"]["school_stream"], "SK")
 
+    def test_training_spi_tables_are_cited_but_never_auto_assigned(self):
+        spi = load("bm_sk_training_spi_4skills_tp1_tp3_20261107.json")
+        v2 = load("bm_sk_26_training_sp_draft_master_20261107_v2_spi_refs.json")
+        self.assertEqual(spi["release_status"], "TRAINING_REFERENCE_HOLD_NOT_OFFICIAL_DK")
+        self.assertFalse(spi["claimed_final_dk_spi_verified"])
+        self.assertEqual(spi["source_pages_visual_reviewed"], [33, 62, 91, 114])
+        self.assertEqual(len(spi["rows"]), 12)
+        for skill, n in EXPECTED_COUNTS.items():
+            rows = [r for r in spi["rows"] if r["skill"] == skill]
+            self.assertEqual({r["training_tp_level"] for r in rows}, {1, 2, 3})
+            self.assertTrue(all(r["training_tafsiran_text"] for r in rows))
+            self.assertTrue(all(not r["auto_assign_tp"] for r in rows))
+        self.assertEqual(v2["source_skills_spi_index"],
+                         "bm_sk_training_spi_4skills_tp1_tp3_20261107.json")
+        self.assertTrue(v2["assessment_policy"]["do_not_auto_assign_tp"])
+        self.assertEqual(len(v2["records"]), 26)
+        old_by_id = {r["id"]: r for r in self.master["records"]}
+        for r in v2["records"]:
+            with self.subTest(lesson=r["id"]):
+                self.assertEqual(r["sp_candidate"], old_by_id[r["id"]]["sp_candidate"])
+                self.assertEqual(r["stages"], old_by_id[r["id"]]["stages"])
+                self.assertEqual(r["spi_training_reference"]["skill"], r["skill"])
+                self.assertEqual(r["spi_training_reference"]["training_levels"], [1, 2, 3])
+                self.assertTrue(r["spi_training_reference"]["auto_tp_assignment_prohibited"])
+                self.assertFalse(r["spi_training_reference"]["original_final_dk_verified"])
+                self.assertIsNone(r["official_spi"])
+                self.assertFalse(r["ready_for_web"])
+
     def test_cross_file_assembly_is_lossless(self):
         files = self.master["input_files"]
         self.assertEqual(len(files), 4)
