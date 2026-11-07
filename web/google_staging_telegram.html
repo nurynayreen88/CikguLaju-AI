@@ -30,7 +30,8 @@ button:disabled{opacity:.5}.credit{font-weight:800;color:#087568;font-size:2.5re
 <p>Kuota di atas dibaca daripada rekod akaun staging yang sama dengan Google. Paparan ini <strong>tidak menolak kredit</strong>.</p>
 <p><a href="/google-staging-web">Buka pilihan RPH / PdP</a> — akses melalui Telegram yang dipautkan. Janaan baharu hanya dibuka apabila enjin staging diluluskan.</p>
 <h3>Langganan dan Rakan Pembangun</h3>
-<p id="stagingPaidStatus" class="notice">Menyemak akses berbayar staging…</p>
+<p id="productionPaidStatus" class="notice">Menyemak status Telegram produksi…</p>
+<p id="stagingPaidStatus">Menyemak akses berbayar staging…</p>
 <p><small>Status ini hanya mengambil rekod bayaran staging, bukan status Telegram produksi.</small></p>
 <h3>RPH siap untuk akaun ini</h3><div id="recentRph">Memeriksa fail Word dan PDF…</div>
 <p><small>Fail yang pernah disiapkan boleh dimuat turun semula tanpa menolak kredit. Langganan Telegram produksi tidak dipindahkan.</small></p>
@@ -60,6 +61,37 @@ async function profile(){
  status('Identiti Telegram dipautkan. Baki janaan dibaca daripada akaun yang sama.');
  return true;
 }
+function productionStatusLabel(data){
+ if(data.production_entitlements_synced!==false)
+   throw Error('Status pemindahan produksi tidak sah.');
+ if(data.production_access_verified===true){
+   if(data.production_access_status!=='verified'||
+      typeof data.production_rakan_pembangun_active!=='boolean'||
+      typeof data.production_subscription_active!=='boolean')
+      throw Error('Pengesahan langganan produksi tidak sah.');
+   if(data.production_rakan_pembangun_active)
+      return 'Telegram produksi: RAKAN PEMBANGUN AKTIF — akses seumur hidup. Ini semakan baca-sahaja, belum memindahkan hak akses ke staging.';
+   if(data.production_subscription_active){
+      const expiry=data.production_subscription_expires_at;
+      if(typeof expiry!=='string'||!/^\\d{4}-\\d{2}-\\d{2}T/.test(expiry))
+        throw Error('Tarikh langganan produksi tidak sah.');
+      return 'Telegram produksi: LANGGANAN AKTIF hingga '+expiry.slice(0,10)+'. Ini semakan baca-sahaja, belum memindahkan hak akses ke staging.';
+   }
+   return 'Telegram produksi: Tiada Rakan Pembangun atau langganan aktif yang disahkan.';
+ }
+ if(data.production_access_verified!==false)
+   throw Error('Pengesahan produksi tidak sah.');
+ const states={
+   bridge_disabled:'Semakan langganan Telegram produksi belum disambungkan pada staging.',
+   not_linked:'Pautkan akaun Telegram kepada Google dahulu untuk semakan langganan produksi.',
+   source_unavailable:'Sumber langganan Telegram produksi belum dapat disemak. Hak akses asal tidak berubah.',
+   production_account_missing:'Akaun berdaftar Telegram produksi tidak ditemui untuk pemadanan ini.'
+ };
+ if(!Object.prototype.hasOwnProperty.call(states,data.production_access_status))
+   throw Error('Status sambungan produksi tidak sah.');
+ return states[data.production_access_status];
+}
+
 async function accessStatus(){
  const target=get('stagingPaidStatus');
  try{
@@ -73,12 +105,13 @@ async function accessStatus(){
       !Array.isArray(data.staging_active_plans)||
       typeof data.staging_payment_access_active!=='boolean')
       throw Error('Pengesahan akses staging tidak sah.');
+   get('productionPaidStatus').textContent=productionStatusLabel(data);
    target.textContent=data.staging_payment_access_active?
       'Akses berbayar staging aktif: '+data.staging_active_plans
         .map(x=>x.plan_code==='rakan_pembangun'?'Rakan Pembangun':x.plan_code).join(', ')+
         '. Status Telegram produksi belum diselaraskan.':
       'Tiada akses berbayar dalam staging. Ini BUKAN pengesahan status langganan Telegram produksi.';
- }catch(e){target.textContent=e.message||'Status langganan staging belum tersedia.';}
+ }catch(e){get('productionPaidStatus').textContent='Semakan langganan produksi belum tersedia.';target.textContent=e.message||'Status langganan staging belum tersedia.';}
 }
 async function recentReady(){
  const target=get('recentRph');
