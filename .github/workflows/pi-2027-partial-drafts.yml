@@ -25,6 +25,8 @@ jobs:
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_activity_book_audit.py --output pi_buku_aktiviti_audit_696.json
       - name: Flag 13 ambiguous Year-5 Jawi Buku Aktiviti references (editor review only)
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_y5_activity_book_wording_review.py --output pi_y5_buku_aktiviti_wording_13_NO_GO.json
+      - name: Confirm 49 exact Quran tajwid punctuation copyedits and preserve Jawi affix ellipses
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_tajwid_double_period_copyedit_review.py --output pi_tajwid_copyedit_49_NO_GO.json
       - name: Produce 258 per-Lesson BA mapping proposals (174 review, 84 oral)
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_ba_match_queue.py --output pi_ba_candidate_queue_258.json
       - name: Collect 42 second-hand workbook page hints (NO direct verification)
@@ -89,6 +91,7 @@ jobs:
             pi_pedagogy_proposals_690.json \
             pi_buku_aktiviti_audit_696.json \
             pi_y5_buku_aktiviti_wording_13_NO_GO.json \
+            pi_tajwid_copyedit_49_NO_GO.json \
             pi_ba_candidate_queue_258.json \
             pi_ba_secondary_evidence_42.json \
             pi_ba_source_integrity.json \
@@ -146,6 +149,7 @@ jobs:
             pi_pedagogy_proposals_690.json
             pi_buku_aktiviti_audit_696.json
             pi_y5_buku_aktiviti_wording_13_NO_GO.json
+            pi_tajwid_copyedit_49_NO_GO.json
             pi_ba_candidate_queue_258.json
             pi_ba_secondary_evidence_42.json
             pi_ba_source_integrity.json
