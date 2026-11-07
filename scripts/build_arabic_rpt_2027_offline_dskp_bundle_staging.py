@@ -45,7 +45,7 @@ def repack_year(rpt_bytes, annex_pdf, year, records, source_uri, destination):
             if p.rect.width<=0 or p.rect.height<=0:
                 raise ValueError("Original DSKP visual page malformed")
         for page in list(annex)[1:]:
-            heading=page.get_text()[:130].upper()
+            heading=" ".join(page.get_text()[:200].upper().split())
             if f"BAHASA ARAB TAHUN {year}" not in heading:
                 raise ValueError("Source facsimile belongs to wrong DSKP year")
         original_pages=len(doc)
