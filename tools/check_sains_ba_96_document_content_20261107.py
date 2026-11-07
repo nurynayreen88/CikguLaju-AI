@@ -82,6 +82,18 @@ def check_documents():
                 str(manifest_row.get("activity_book_page",""))
                 if year==2 else manifest_row.get("activity_book_ref","")):
                 raise RuntimeError("Manifest book page differs from printed exercise "+code)
+            if year==2 and entry["sp"] in ("4.1.7","6.1.6"):
+                if "lembaran pbd alternatif" not in doc_text or "lembaran pbd alternatif" not in pdf_text:
+                    raise RuntimeError("Missing source-specific PBD alternative callout in RPH "+code)
+                from tools.render_sains_y2_2_sp_alternative_pbd_20261107 import doc_file
+                alt=doc_file(entry["sp"])
+                if not alt.is_file() or not alt.with_suffix(".pdf").is_file():
+                    raise RuntimeError("Expected original PBD alternative Word/PDF not rendered "+code)
+                alt_pdf=PdfReader(str(alt.with_suffix(".pdf")))
+                if len(alt_pdf.pages)!=1:
+                    raise RuntimeError("Original PBD alternative exceeded one A4 page "+code)
+                if "BUKAN LATIHAN BUKU AKTIVITI RASMI" not in alt_pdf.pages[0].extract_text():
+                    raise RuntimeError("PBD alternative not labelled non-official BA "+code)
             outcome.append({
                 "pdp_code":code,
                 "source_sp":entry["sp"],
@@ -114,6 +126,8 @@ def main():
         "source_code_match":94,"related_different_sp":2,
         "page_content_safety_reviewed":96,
         "new_individual_page_reviews":85,
+        "original_alternative_pbd_for_mismatched_sp":2,
+        "alternatives_not_official_activity_book":True,
         "previous_individual_page_reviews":11,
         "docx_page_source_coverage":96,"pdf_page_source_coverage":96,
         "academic_certified":0,"runtime_enabled":False,
