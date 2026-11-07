@@ -271,7 +271,7 @@
       "title": "Menjawab ucapan mengikut situasi",
       "skill": "Mendengar",
       "sp_training_code": "1.2.2",
-      "sp_training_text": "Mendengar untuk memberikan respons terhadap ucapan yang sopan mengikut situasi: ucapan selamat, ucapan penghargaan dan permohonan maaf.",
+      "sp_training_text": "Mendengar untuk memberikan respons terhadap ucapan yang sopan mengikut situasi ;",
       "sp_source_pages_pdf_one_based": [
         18,
         20
@@ -324,7 +324,13 @@
       "approved_by_teacher": false,
       "approved_for_web": false,
       "approved_for_telegram": false,
-      "rpt_scheduled": false
+      "rpt_scheduled": false,
+      "sp_training_subitems": [
+        "ucapan selamat",
+        "ucapan penghargaan",
+        "permohonan maaf"
+      ],
+      "sp_training_transcription_note": "Item i/ii/iii is preserved in structured list; the PDF uses typographical iii punctuation inconsistently."
     },
     {
       "id": "KP27-Y1-BM-SK-MEND-C06",
