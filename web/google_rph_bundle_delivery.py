@@ -117,6 +117,74 @@ def no_cache(response):
     return response
 
 
+def _recent_ready_jobs(config, actor, *, transport=None):
+    """List only READY private bundles owned by this verified account.
+
+    This is a read-only recovery path after browser close or uncertain HTTP
+    completion; it never generates, charges, or reveals another account.
+    """
+    if actor.provider != "google" or actor.account_id is None:
+        raise ValueError("Verified Google account required")
+    account_id = _canonical_id(actor.account_id)
+    key = config["staging_service_key"]
+    params = urlencode({
+        "select": "id,account_id,status,document_manifest_sha256,ready_at",
+        "account_id": "eq." + account_id,
+        "status": "eq.ready",
+        "order": "ready_at.desc",
+        "limit": "10",
+    })
+    req = Request(config["supabase_url"].rstrip("/") +
+                  "/rest/v1/web_rph_bundle_jobs?" + params,
+                  headers=staging_service_headers(key), method="GET")
+    opener = transport or urlopen
+    try:
+        with opener(req, timeout=8) as response:
+            raw = response.read(16385)
+            if response.status != 200 or len(raw) > 16384:
+                raise RPHDeliveryUnavailable("Invalid private jobs response")
+        rows = json.loads(raw)
+        if not isinstance(rows, list) or len(rows) > 10:
+            raise RPHDeliveryUnavailable("Invalid private jobs list")
+        ready = []
+        for row in rows:
+            if (not isinstance(row, dict)
+                    or _canonical_id(row.get("id")) != row["id"]
+                    or row.get("account_id") != account_id
+                    or row.get("status") != "ready"):
+                raise RPHDeliveryUnavailable("Private job ownership mismatch")
+            digest = row.get("document_manifest_sha256")
+            if (not isinstance(digest, str) or len(digest) != 64
+                    or any(c not in "0123456789abcdef" for c in digest)):
+                raise RPHDeliveryUnavailable("Unverified private bundle")
+            when = row.get("ready_at")
+            if not isinstance(when, str) or len(when) > 50:
+                raise RPHDeliveryUnavailable("Invalid private job date")
+            jid = row["id"]
+            base = "/api/google-staging/web/rph/jobs/" + jid + "/download/"
+            ready.append({
+                "job_id": jid, "ready_at": when,
+                "downloads": {"word": base + "word", "pdf": base + "pdf"},
+            })
+        return ready
+    except (HTTPError, URLError, OSError, ValueError, TypeError, KeyError):
+        raise RPHDeliveryUnavailable("Private RPH history unavailable") from None
+
+
+@bp.get("/api/google-staging/web/rph/recent")
+def recent_ready_downloads():
+    actor, failure = _actor()
+    if failure is not None:
+        return failure
+    if request.args:
+        return jsonify({"error": "Parameter tidak dibenarkan"}), 400
+    try:
+        items = _recent_ready_jobs(_enabled_config(), actor)
+    except (ValueError, RPHDeliveryUnavailable):
+        return jsonify({"error": "Senarai RPH belum boleh disahkan"}), 503
+    return jsonify({"staging_only": True, "items": items})
+
+
 @bp.get("/api/google-staging/web/rph/jobs/<job_id>/download/<fmt>")
 def download(job_id, fmt):
     actor, failure = _actor()
