@@ -22,6 +22,7 @@ UNVERIFIED_PAGE = ("perlu padanan", "padanan sk/toc terdahulu",
                    "halaman khusus belum", "belum dipadankan")
 # Reused generic PBD statement. Detect for editorial triage; do not auto-fill.
 GENERIC_PBD = "برداسركن كريتيريا دالم SP"
+UNVERIFIED_BA_TERM = re.compile(r"بوكو\s+اكتيۏيتي")  # Year4-6 book identity not verified
 DOMAINS = {"القرءان": "al-Quran", "جاوي": "Jawi", "عقيدة": "Akidah",
            "عبادة": "Ibadah", "سيرة": "Sirah", "ادب": "Adab",
            "حديث": "Hadis"}
@@ -77,6 +78,8 @@ def audit(root=ROOT):
                 flags.append("HALAMAN_BUKU_T2_MELEBIHI_MUKA_TERAKHIR")
             if GENERIC_PBD in fields["pentaksiran"]:
                 flags.append("PBD_TIDAK_KHUSUS_KEPADA_SP")
+            if year >= 4 and any(UNVERIFIED_BA_TERM.search(v) for v in fields.values()):
+                flags.append("BUKU_AKTIVITI_T4_T6_KESAHIHAN_SUMBER_BELUM_DISAHKAN")
             refinement = record.get("staging_pbd_refinement")
             if refinement:
                 assert refinement.get("publication") == "HOLD"
@@ -216,6 +219,7 @@ def audit(root=ROOT):
         "t6_sp42_edited_kbat_review_count": flag_counts["T6_SP42_KBAT_DIPERBETUL_SEMAK_PAKAR"],
         "textbook_page_range_overrun_count": flag_counts["HALAMAN_BUKU_T2_MELEBIHI_MUKA_TERAKHIR"],
         "generic_pbd_count": flag_counts["PBD_TIDAK_KHUSUS_KEPADA_SP"],
+        "unverified_year4_to6_activity_book_wording_count": flag_counts["BUKU_AKTIVITI_T4_T6_KESAHIHAN_SUMBER_BELUM_DISAHKAN"],
         "refined_pbd_review_count": flag_counts["PBD_SP_SASARAN_BELUM_DISAH_PAKAR"],
         "closing_rumi_consistency_review_count": flag_counts["PENUTUP_RUMI_SEMAK_PENYERAGAMAN_JAWI"],
         "refined_pbd_review_by_year": {
