@@ -16,6 +16,7 @@ from pi_t2_textbook_toc_review import audit as source_toc
 from pi_t2_54_direct_source_review import audit as direct_sp_54
 from pi_t2_dskp_code_presence import audit as dskp_code_index
 from pi_t3_awalan_book_review import audit as awalan_t3
+from pi_t3_book_footer_code_audit import audit as book_footer_t3
 from pi_ba_match_queue import match_queue
 from pi_review_catalog import counts as preview_counts
 
@@ -28,6 +29,7 @@ def readiness(root=ROOT):
     direct = direct_sp_54(root)
     code_index = dskp_code_index(root)
     awalan = awalan_t3(root)
+    book3 = book_footer_t3(root)
     ba = match_queue(root)
     preview = preview_counts(root=root)
     assert qa["total"] == 696 and qa["drafts"] == 690 and qa["held"] == 6
@@ -50,6 +52,10 @@ def readiness(root=ROOT):
     assert awalan["year3_awalan_lessons_with_direct_book_unit_reference"] == 12
     assert awalan["legacy_pdf_page34_hints_wrong_next_unit"] == 6
     assert awalan["specific_lesson_prefix_examples_approved"] == 0
+    assert book3["year3_lessons_with_book_footer_code_present"] == 109
+    assert book3["year3_lessons_with_book_footer_code_not_observed"] == 1
+    assert book3["dskp_6433_visually_confirmed"] is True
+    assert book3["tasmi_verse_based_lessons_without_three_level_sp"] == 37
     assert ba["refined_page_review_candidates"] == 174
     assert ba["oral_and_tasmi_no_forced_book"] == 84
     assert ba["confirmed_exercise_pages"] == 0
@@ -80,6 +86,9 @@ def readiness(root=ROOT):
             "tasmi_lessons_not_assigned_official_3_level_sp": 30 if year == 2 else 0,
             "source_textbook_awalan_unit_refs": 12 if year == 3 else 0,
             "old_pdf34_cross_topic_page_hints": 6 if year == 3 else 0,
+            "book_footer_sp_code_present_only": 109 if year == 3 else 0,
+            "book_footer_missing_but_dskp_manually_seen": 1 if year == 3 else 0,
+            "tasmi_verse_descriptions_without_3_level_sp": 37 if year == 3 else 0,
             "short_activity_source_hold": counter["AKTIVITI_TERLALU_RINGKAS_PERLU_SEMAKAN"],
             "expert_approved_lesson_count": 0,
             "ready_for_teacher": 0,
@@ -132,6 +141,9 @@ def readiness(root=ROOT):
         "year3_awalan_direct_book_unit_references": 12,
         "year3_legacy_pdf34_hints_next_unit": 6,
         "year3_awalan_prefix_examples_expert_approved": 0,
+        "year3_book_footer_code_present_lesson_count": 109,
+        "year3_book_footer_exception_dskp_confirmed": 1,
+        "year3_tasmi_verse_lessons_not_given_fake_sp": 37,
         "teacher_approved_page_specific_exercises": 0,
         "book_activity_page_candidates": 174,
         "book_activity_exercises_verified": 0,
