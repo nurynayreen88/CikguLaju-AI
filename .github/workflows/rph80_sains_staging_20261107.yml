@@ -49,6 +49,8 @@ on:
       - "audits/sains_y5_83_full_textbook_printed_sp_pages_20261107.json"
       - "tools/check_sains_y5_83_word_a4_20261107.py"
       - "tests/test_sains_y5_83_bank_quality_20261107.py"
+      - "web/sains_y5_83_textbook_resources_20261107.py"
+      - "tests/test_sains_y5_83_textbook_resources_20261107.py"
       - "tools/audit_sains_y6_84_source_preflight_20261107.py"
       - "audits/sains_y6_2021_textbook_toc_topic_ranges_20261107.json"
       - "tools/sains_y6_textbook_toc_20261107.py"
@@ -136,6 +138,8 @@ jobs:
         run: python -m tools.check_sains_y4_79_word_a4_20261107
       - name: Verify authored Sains Year5 bank contains 83 unique, safe SP lesson plans
         run: python -m unittest discover -s tests -p 'test_sains_y5_83_bank_quality_20261107.py' -v
+      - name: Verify all 83 Year5 staged textbook source link cards, part/page boundaries
+        run: python -m unittest discover -s tests -p 'test_sains_y5_83_textbook_resources_20261107.py' -v
       - name: Verify 3-part Year5 textbook SHA/range map (83 source SPs, no academic approval)
         run: python -m tools.sains_y5_83_textbook_original_sp_pages_20261107
       - name: Render Sains Year5 83 source-specific DRAF Markdown Word PDF
