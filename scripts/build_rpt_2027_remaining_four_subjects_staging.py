@@ -142,11 +142,16 @@ def pi_records(year):
                 sk="REKOD DITAHAN — KONFLIK SUMBER KOD SK 4.2"
                 sp="REKOD DITAHAN — SP 4.2.3–4.2.5 BERCANGGAH, SEMAK DSKP"
                 topic="KONFLIK SUMBER: "+recovered["focus"]
+                correction=recovered.get("conflict_resolution_evidence") or {}
+                if (correction.get("year6_expected_topic")!="Solat Ketika Sakit" or
+                    correction.get("year5_topic_used_by_errant_rpt")!="Solat Berjemaah" or
+                    correction.get("candidate_correction_approval") is not False):
+                    raise ValueError("Year6 L060 cross-year collision evidence missing")
                 note=("REKOD DITAHAN: sumber RPT "+recovered["source_lesson"]+
-                      " menyatakan Solat Berjemaah SK 4.2, tetapi RPH V5 jiran "
-                      "mengandungi Solat Ketika Sakit pada SK 4.2. "
-                      "JANGAN GUNA sehingga DSKP dan urutan sumber disahkan. "
-                      "Minggu sumber calon sahaja.")
+                      " salah padan topik Tahun 5 Solat Berjemaah kepada SK 4.2 Tahun 6. "
+                      "SK 4.2 Tahun 6 bersumberkan Solat Ketika Sakit. "
+                      "RPH L059 juga meliputi SP 4.2.3–4.2.5. "
+                      "JANGAN GUNA sehingga pertindihan PdP diselesaikan; minggu calon sahaja.")
             else:
                 raise ValueError("Unknown PI held recovery kind")
         else:
