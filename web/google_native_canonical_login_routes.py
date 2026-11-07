@@ -158,7 +158,11 @@ def callback():
         current_legacy = verify_session_ticket(
             request.cookies.get(LEGACY_COOKIE), cfg["secret"])
         uid = principal["legacy_telegram_user_id"]
-        if current_legacy is not None and current_legacy != uid:
+        # Two independently verified sessions MAY coexist before the
+        # teacher explicitly chooses to link. Do not merge them by email.
+        # Only reject a conflict if this Google principal is ALREADY linked.
+        if (current_legacy is not None and uid is not None
+                and current_legacy != uid):
             return jsonify({"error":
                 "Dua sesi akaun berlainan. Log keluar dahulu sebelum masuk Google."}), 409
         if uid is not None:
@@ -224,7 +228,10 @@ def dashboard():
             '<title>CikguLaju AI — Akaun Google</title>'
             '<main style="max-width:540px;margin:9vh auto;font:17px system-ui">'
             '<h1>Akaun Google disahkan</h1><p>Identiti Google telah direkodkan.</p>'
-            '<p>Janaan RPH melalui Web Google belum dibuka pada produksi.</p>'
+            '<p>Untuk akaun Google baharu, pilih RPH dan hasilkan Word/PDF '
+            'melalui sistem Web CikguLaju yang sama apabila modul diaktifkan.</p>'
+            '<p><a href="/google-rph">Sediakan RPH</a></p>'
+            '<p><a href="/google-link-telegram">Pautkan akaun Telegram (pilihan)</a></p>'
             '<a href="/">Kembali ke CikguLaju</a></main></html>')
     return make_response(html,200,{"Content-Type":"text/html; charset=utf-8"})
 
