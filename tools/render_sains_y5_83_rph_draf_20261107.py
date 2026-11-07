@@ -58,15 +58,29 @@ INFER={"2.1.4","2.2.3","2.3.2","3.2.2","3.3.6","6.1.6",
        "7.1.5","10.1.3"}
 DATA={"3.3.6","5.3.1","6.1.4","7.1.3","9.1.3"}
 
+# KPS tambahan hanya pada aktiviti yang nyata menyokong kemahiran tersebut.
+# Ini cadangan pengajaran, BUKAN pengesahan pedagogi oleh panitia.
+SECONDARY_KPS={
+    "5.2.4":("1.1.11",),         # Hipotesis bilangan mentol dan kecerahan
+    "7.1.3":("1.1.5","1.1.9"), # Ramalan dan definisi operasi pengaratan
+    "9.1.2":("1.1.7",),         # Putaran Bulan, peredaran dan tempoh
+}
+
 def kps_for(sp):
-    code=("1.1.12" if sp in EXPERIMENT else
-          "1.1.3" if sp in MEASURE else
-          "1.1.2" if sp in CLASSIFY else
-          "1.1.4" if sp in INFER else
-          "1.1.8" if sp in DATA else
-          "1.1.1")
-    extra="1.1.10 Mengawal pemboleh ubah; " if sp in EXPERIMENT else ""
-    return f"{code} {KPS[code]}; {extra}1.1.6 {KPS['1.1.6']} (cadangan aktiviti)"
+    primary=("1.1.12" if sp in EXPERIMENT else
+             "1.1.3" if sp in MEASURE else
+             "1.1.2" if sp in CLASSIFY else
+             "1.1.4" if sp in INFER else
+             "1.1.8" if sp in DATA else
+             "1.1.1")
+    codes=[primary]
+    if sp in EXPERIMENT:
+        codes.append("1.1.10")
+    codes.extend(SECONDARY_KPS.get(sp,()))
+    codes.append("1.1.6")
+    if len(set(codes))!=len(codes) or any(code not in KPS for code in codes):
+        raise ValueError("KPS cadangan tidak sah untuk SP "+sp)
+    return "; ".join(f"{code} {KPS[code]}" for code in codes)+" (cadangan aktiviti)"
 
 def get_y5_records():
     rows, summary=analyze()
