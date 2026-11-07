@@ -80,6 +80,8 @@ on:
       - "tests/test_sains_y6_84_bank_quality_20261107.py"
       - "tests/test_sains_y6_84_source_preflight_20261107.py"
       - "tests/test_rph80_all_subject_source_scan_20261107.py"
+      - "tools/build_sains_342_offline_review_pack_20261108.py"
+      - "tests/test_sains_342_offline_review_pack_20261108.py"
       - "audits/rph80_program_20261107.md"
       - "tests/test_rph80_sains_quality_gate_20261107.py"
       - ".github/workflows/rph80_sains_staging_20261107.yml"
@@ -211,6 +213,17 @@ jobs:
         run: python -m tools.audit_rph80_sains_first_20261107
       - name: Export all 342 original Science RPH human teacher/panitia approval queue (no auto grade)
         run: python -m tools.export_sains_342_panitia_review_20261107
+      - name: Build one self-contained offline 342 RPH Word/PDF teacher review bundle
+        run: python -m tools.build_sains_342_offline_review_pack_20261108
+      - name: Validate every offline RPH link and SHA with 342 HOLD rows
+        run: python -m unittest discover -s tests -p 'test_sains_342_offline_review_pack_20261108.py' -v
+      - name: Publish one download for internal Science teacher-review (DRAF, not live)
+        uses: actions/upload-artifact@v4
+        with:
+          name: SAINS_342_RPH_SEMAKAN_WORD_PDF_DRAF_20261108
+          if-no-files-found: error
+          retention-days: 30
+          path: build/sains_342_offline_review_20261108/SAINS_342_RPH_WORD_PDF_SEMAKAN_DRAF.zip
       - name: Retain audit evidence only; never deploy
         if: always()
         uses: actions/upload-artifact@v4
