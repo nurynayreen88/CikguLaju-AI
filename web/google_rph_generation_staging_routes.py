@@ -32,21 +32,27 @@ MAX_BODY = 5000
 MAX_AGE = 3600
 
 
+def _native_renderer_configured(cfg):
+    """Non-secret diagnostic. Do not expose API URLs or token material."""
+    if not isinstance(cfg, dict) or not cfg.get("host"):
+        return False
+    base = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_URL", "").strip()
+    token = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_TOKEN", "")
+    parsed = urlsplit(base)
+    return bool(
+        parsed.scheme == "https" and parsed.hostname and parsed.port is None
+        and not parsed.username and not parsed.password
+        and parsed.path in ("", "/") and not parsed.query
+        and not parsed.fragment and isinstance(token, str) and len(token) >= 32
+        and parsed.hostname not in (cfg["host"], "cikgulaju-web.onrender.com")
+    )
+
+
 def _generator_config():
     if os.environ.get("CIKGULAJU_GOOGLE_RPH_STAGING_ENABLED") != "1":
         return None
     cfg = _enabled_config()
-    if cfg is None:
-        return None
-    base = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_URL", "").strip()
-    token = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_TOKEN", "")
-    parsed = urlsplit(base)
-    if (parsed.scheme != "https" or not parsed.hostname or parsed.port is not None
-            or parsed.username or parsed.password or parsed.path not in ("", "/")
-            or parsed.query or parsed.fragment or len(token) < 32
-            or parsed.hostname in (cfg["host"], "cikgulaju-web.onrender.com")):
-        return None
-    return cfg
+    return cfg if _native_renderer_configured(cfg) else None
 
 
 def _same_origin(cfg):
