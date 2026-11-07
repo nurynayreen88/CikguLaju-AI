@@ -1,5 +1,9 @@
 """Sains KSSR2017 original wording vs legacy numeric-code collision regression."""
 import unittest
+import json
+from pathlib import Path
+from scripts.audit_sains_v26_vs_kssr2017_original_year4_year5_codes import original_codes
+from scripts.build_rpt2027_sains_kssr2017_y4y5_original_source_staging import EXPECTED
 from scripts.audit_sains_kssr2017_full_statement_vs_legacy_staging import (
     compare_official_to_legacy,
 )
@@ -34,6 +38,24 @@ class OriginalKSSR2017WordingQA(unittest.TestCase):
         self.assertEqual(d["source_text_visual_signoff_count"],0)
         self.assertTrue(all(not x["academic_sp_signoff"] for x in d["rows"]))
         self.assertTrue(all(not x["pdp_rph_book_mapped"] for x in d["rows"]))
+
+    def test_complete_committed_original_186_sp_source_index_keeps_draft_gates(self):
+        source=(Path(__file__).resolve().parents[1] / "rpt_2027/sains/"
+                "kssr2017_y4_y5_186_official_sp_source_extraction_20261107_DRAF.json")
+        data=json.loads(source.read_text(encoding="utf-8"))
+        self.assertEqual(len(data["rows"]),186)
+        self.assertFalse(data["academic_release_ready"])
+        self.assertFalse(data["ready_for_web_telegram"])
+        self.assertEqual(data["total_official_sp"],186)
+        expected=original_codes()
+        for year in (4,5):
+            p=[r for r in data["rows"] if r["year"]==year]
+            self.assertEqual({r["sp_code"] for r in p},expected[year])
+            self.assertEqual(data["source"][str(year)]["official_pdf_sha256"],EXPECTED[year][0])
+            self.assertEqual(data["source"][str(year)]["visual_signoff_count"],0)
+            self.assertTrue(all(r["visual_signoff"] is False
+                                and len(r["sp_text_source_extract_UNVERIFIED"])>=18
+                                and 51<=r["original_pdf_page"]<=92 for r in p))
 
     def test_missing_or_duplicated_original_codes_are_rejected(self):
         official=[row("2.3.1","Menyatakan manusia bergerak balas apabila organ deria menerima rangsangan.")]
