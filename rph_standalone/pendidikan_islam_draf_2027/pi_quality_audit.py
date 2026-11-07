@@ -146,7 +146,7 @@ def audit(root=ROOT):
             100 * (690 - flag_counts["AKTIVITI_TERLALU_RINGKAS_PERLU_SEMAKAN"]) / 690, 2
         ),
         "academic_verification": "BELUM: DSKP, buku teks/mushaf, objektif, PBD & Jawi belum disahkan setiap Lesson",
-        "format_revision": "560 DRAF diperkaya dengan langkah/PBD berdasarkan SP, bukan bukti kandungan tepat; nombor bermula 1; Word/PDF baharu belum diuji",
+        "format_revision": "560 DRAF diperkaya dengan langkah/PBD; cetakan draf 687/687 A4 satu halaman melalui LibreOffice (bukan penjana live); semakan visual Jawi dan kualiti akademik masih belum diluluskan",
         "release": "NO_GO",
         "records": rows,
     }
