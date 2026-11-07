@@ -1,7 +1,11 @@
 """RBT actual 2027 week candidates require all 32 explicit teacher decisions."""
+import json
+import tempfile
+from pathlib import Path
 import unittest
 from rpt_2027.common.rbt_teacher_week_allocation_staging import (
-  assign_rbt_weeks_from_teacher_manifest as propose, VALID_STATUS
+  assign_rbt_weeks_from_teacher_manifest as propose, VALID_STATUS,
+  build_teacher_rbt_preview
 )
 from rpt_2027.common.calendar_week_mapping_staging import load_calendar_weeks
 
@@ -29,6 +33,19 @@ class TeacherExplicitRBT2027WeeksQA(unittest.TestCase):
                 self.assertEqual(row["schedule_status"],VALID_STATUS)
                 self.assertIs(row["school_calendar_verified"],False)
                 self.assertIn("bukan tarikh PdP sebenar",row["note"])
+
+    def test_explicit_teacher_manifest_can_render_separate_review_only_pdf(self):
+        with tempfile.TemporaryDirectory() as td:
+            t=Path(td)
+            manifest=t/"teacher_input.json"
+            manifest.write_text(json.dumps(teacher_manifest(4)),encoding="utf-8")
+            dest=t/"RBT_TAHUN4_SCHOOL_STAGING_REVIEW.pdf"
+            result=build_teacher_rbt_preview(4,manifest,dest)
+            self.assertEqual(result,dest)
+            self.assertTrue(result.is_file())
+            self.assertGreater(result.stat().st_size,5000)
+            with self.assertRaises(ValueError):
+                build_teacher_rbt_preview(4,manifest,t/"official.pdf")
 
     def test_unsourced_or_invalid_calendar_never_becomes_an_rpt(self):
         y=4
