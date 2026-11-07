@@ -31,7 +31,9 @@ GRANT SELECT,INSERT ON public.cikgulaju_web_identity_link_audit TO service_role;
 CREATE OR REPLACE FUNCTION public.link_native_google_telegram_principal(
     p_principal_id uuid,
     p_telegram_user_id bigint,
-    p_merge_confirmed boolean
+    p_merge_confirmed boolean,
+    p_expected_google_remaining integer,
+    p_expected_telegram_remaining integer
 ) RETURNS jsonb
 LANGUAGE plpgsql SECURITY INVOKER
 SET search_path=public,pg_temp AS $body$
@@ -88,6 +90,14 @@ BEGIN
        v_principal.google_only_trial_remaining NOT BETWEEN 0 AND 10 THEN
         RAISE EXCEPTION 'Google-only trial balance invalid';
     END IF;
+    -- The user confirmed a preview of EXACT balances; require those same
+    -- balances under row locks to prevent surprise credit changes.
+    IF p_expected_google_remaining IS DISTINCT FROM
+           v_principal.google_only_trial_remaining
+       OR p_expected_telegram_remaining IS DISTINCT FROM v_original_balance
+    THEN
+        RAISE EXCEPTION 'Link balances changed; preview and consent again';
+    END IF;
     IF EXISTS (
        SELECT 1 FROM public.cikgulaju_web_principals
        WHERE legacy_telegram_user_id=p_telegram_user_id
@@ -125,7 +135,7 @@ END;
 $body$;
 
 REVOKE ALL ON FUNCTION public.link_native_google_telegram_principal(
-   uuid,bigint,boolean) FROM PUBLIC,anon,authenticated;
+   uuid,bigint,boolean,integer,integer) FROM PUBLIC,anon,authenticated;
 GRANT EXECUTE ON FUNCTION public.link_native_google_telegram_principal(
-   uuid,bigint,boolean) TO service_role;
+   uuid,bigint,boolean,integer,integer) TO service_role;
 COMMIT;
