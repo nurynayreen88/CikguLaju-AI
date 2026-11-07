@@ -6,6 +6,20 @@ from tools.render_sains_y5_83_rph_draf_20261107 import (
 )
 
 class TestScienceYear5SourceBank(unittest.TestCase):
+    def test_original_year5_book_drive_pdf_is_incomplete_and_no_sp_pages_may_be_fabricated(self):
+        from tools.render_sains_y5_83_rph_draf_20261107 import ROOT
+        import json
+        p=ROOT/"audits/sains_y5_original_textbook_pdf_incomplete_20261107.json"
+        source=json.loads(p.read_text(encoding="utf-8"))
+        self.assertEqual(source["source_sha256"],"322b8ea0e19fc5b6da1c41ff64a25d22e470917027d9b293c85efc045a6be3e2")
+        self.assertEqual(source["actual_pdf_page_count"],43)
+        self.assertEqual(source["last_printed_page_in_file"],35)
+        self.assertGreater(source["table_of_contents_max_printed_page"],200)
+        self.assertEqual(source["exact_page_assignment_per_sp_approved"],0)
+        self.assertEqual(source["original_year5_pdp"],83)
+        self.assertEqual(source["status"],"SOURCE_PDF_INCOMPLETE__NO_EXACT_SP_PAGE_RELEASE")
+        self.assertFalse(source["upload_production"])
+
     def test_exact_83_sps_and_distinct_activities(self):
         groups={
             "2.1":5,"2.2":4,"2.3":4,"3.1":6,"3.2":4,
