@@ -13,6 +13,10 @@ from web.rph_hari_ini_web import bp as rph_hari_ini_bp
 app.register_blueprint(rph_hari_ini_bp)
 from web.web_payment_routes import bp as web_payment_bp
 app.register_blueprint(web_payment_bp)
+# Read-only production identity status bridge is disabled by default and
+# requires a separate operator-approved deployment plus dedicated bearer key.
+from web.telegram_prod_paid_status_bridge import bp as prod_paid_status_bridge_bp
+app.register_blueprint(prod_paid_status_bridge_bp)
 from web.web_referral_routes import install as install_web_referral
 install_web_referral(app)
 

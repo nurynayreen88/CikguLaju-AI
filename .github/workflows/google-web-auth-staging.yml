@@ -1,0 +1,196 @@
+name: Google Web Auth staging-only unit tests
+
+on:
+  pull_request:
+    paths:
+      - 'web_google_identity_sessions.py'
+      - 'web/google_auth_staging_routes.py'
+      - 'web/google_account_store.py'
+      - 'web/google_staging_service_auth.py'
+      - 'tests/test_web_google_staging_service_auth.py'
+      - 'web/provider_neutral_payment.py'
+      - 'web/google_payment_store.py'
+      - 'web/google_payment_staging_routes.py'
+      - 'web/google_payment_admin_notify.py'
+      - 'migrations/STAGING_ONLY_web_google_identity_445.sql'
+      - 'migrations/STAGING_ONLY_web_google_payments_445.sql'
+      - 'migrations/STAGING_ONLY_web_private_receipt_bucket_445.sql'
+      - 'migrations/STAGING_ONLY_web_payment_review_rpc_445.sql'
+      - 'migrations/STAGING_ONLY_web_google_rph_delivery_quota_448.sql'
+      - 'tests/sql/web_google_rph_quota_integration.sql'
+      - 'migrations/DRAFT_ONLY_web_canonical_identity_449.sql'
+      - 'tests/sql/web_canonical_identity_fixture.sql'
+      - 'tests/sql/web_canonical_identity_integration.sql'
+      - 'migrations/STAGING_ONLY_web_rph_bundle_jobs_450.sql'
+      - 'tests/sql/web_google_rph_bundle_jobs_integration.sql'
+      - 'migrations/STAGING_ONLY_web_google_telegram_dual_login_link_451.sql'
+      - 'tests/sql/web_google_telegram_link_integration.sql'
+      - 'web/google_telegram_link_staging_routes.py'
+      - 'web/google_telegram_signin_staging_routes.py'
+      - 'web/google_staging_telegram.html'
+      - 'tests/test_google_telegram_signin_staging.py'
+      - 'tests/test_linked_telegram_shared_rph_web_staging.py'
+      - 'tests/test_staging_linked_access_status.py'
+      - 'web/staging_production_paid_status_client.py'
+      - 'web/telegram_prod_paid_status_bridge.py'
+      - 'tools/run_web_production.py'
+      - 'tests/test_staging_production_paid_status_client.py'
+      - 'tests/test_private_production_paid_status_bridge.py'
+      - 'web/google_staging_link_telegram.html'
+      - 'tests/test_google_telegram_link_staging.py'
+      - 'web/google_rph_bundle_delivery.py'
+      - 'tests/test_web_google_rph_bundle_delivery.py'
+      - 'web/google_rph_bundle_job_store.py'
+      - 'tests/test_web_google_rph_bundle_job_store.py'
+      - 'web/google_rph_generation_staging_routes.py'
+      - 'tests/test_web_google_rph_generation_staging.py'
+      - 'tests/test_web_google_rph_end_to_end_staging.py'
+      - 'web/google_rph_bundle_quota.py'
+      - 'tests/test_web_google_rph_bundle_quota.py'
+      - 'web/google_native_rph_bundle.py'
+      - 'tests/test_web_google_native_rph_bundle.py'
+      - 'tests/sql/web_google_payment_fixture.sql'
+      - 'tests/sql/web_google_payment_integration.sql'
+      - 'web/google_staging_admin_sessions.py'
+      - 'web/google_staging_admin_auth_routes.py'
+      - 'web/google_staging_admin_login.html'
+      - 'web/google_staging_login.html'
+      - 'web/google_staging_account.html'
+      - 'web/google_staging_web.html'
+      - 'web/google_web_catalog_staging.py'
+      - 'web/provider_neutral_web_identity.py'
+      - 'tests/test_web_google_web_catalog_staging.py'
+      - 'tests/test_web_google_staging_profile.py'
+      - 'web/google_staging_unavailable.html'
+      - 'web/google_staging_payment.html'
+      - 'web/google_staging_admin_payments.html'
+      - 'tests/test_web_google_payments_staging.py'
+      - 'tests/test_web_google_payment_store.py'
+      - 'tests/test_web_provider_neutral_payment.py'
+      - 'tests/test_web_google_auth_staging.py'
+      - 'tools/run_web_v1_preview.py'
+      - 'tools/run_google_payments_staging.py'
+      - 'tools/smoke_google_staging_http.py'
+      - 'tests/test_web_google_staging_wsgi.py'
+      - '.github/workflows/google-web-auth-staging.yml'
+  push:
+    branches:
+      - 'feature/web-google-auth-staging-445'
+
+jobs:
+  test-google-oauth-staging:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install isolated test dependency
+        run: python -m pip install 'Flask==3.1.3'
+      - name: Compile changed Python sources
+        run: python -m py_compile web_google_identity_sessions.py web/google_auth_staging_routes.py web/google_account_store.py web/google_staging_service_auth.py web/google_web_catalog_staging.py web/provider_neutral_web_identity.py tests/test_web_google_web_catalog_staging.py web/google_rph_bundle_quota.py tests/test_web_google_rph_bundle_quota.py web/google_native_rph_bundle.py tests/test_web_google_native_rph_bundle.py web/google_rph_bundle_delivery.py tests/test_web_google_rph_bundle_delivery.py web/google_rph_bundle_job_store.py tests/test_web_google_rph_bundle_job_store.py web/google_rph_generation_staging_routes.py tests/test_web_google_rph_generation_staging.py tests/test_web_google_rph_end_to_end_staging.py  tests/test_web_google_staging_service_auth.py tests/test_web_google_auth_staging.py tests/test_web_google_staging_profile.py web/provider_neutral_payment.py tests/test_web_provider_neutral_payment.py web/google_payment_store.py web/google_payment_staging_routes.py web/google_payment_admin_notify.py web/google_staging_admin_sessions.py web/google_staging_admin_auth_routes.py web/google_telegram_link_staging_routes.py web/google_telegram_signin_staging_routes.py tests/test_google_telegram_link_staging.py tests/test_google_telegram_signin_staging.py tests/test_linked_telegram_shared_rph_web_staging.py tests/test_staging_linked_access_status.py web/staging_production_paid_status_client.py web/telegram_prod_paid_status_bridge.py tests/test_staging_production_paid_status_client.py tests/test_private_production_paid_status_bridge.py tests/test_web_google_payments_staging.py tests/test_web_google_payment_store.py tools/run_google_payments_staging.py tests/test_web_google_staging_wsgi.py
+      - name: Syntax check staging Web inline generation JavaScript
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          for filename in ('web/google_staging_web.html', 'web/google_staging_account.html', 'web/google_staging_link_telegram.html', 'web/google_staging_telegram.html'):
+              html = Path(filename).read_text(encoding='utf-8')
+              script = html.split('<script>', 1)[1].split('</script>', 1)[0]
+              Path('/tmp/' + Path(filename).stem + '.js').write_text(script, encoding='utf-8')
+          PY
+          node --check /tmp/google_staging_web.js
+          node --check /tmp/google_staging_account.js
+          node --check /tmp/google_staging_link_telegram.js
+          node --check /tmp/google_staging_telegram.js
+      - name: Run Google staging authentication tests
+        run: |
+          python -m unittest discover -s tests -p 'test_web_google_auth_staging.py' -v
+          python -m unittest discover -s tests -p 'test_google_telegram_link_staging.py' -v
+          python -m unittest discover -s tests -p 'test_google_telegram_signin_staging.py' -v
+          python -m unittest discover -s tests -p 'test_linked_telegram_shared_rph_web_staging.py' -v
+          python -m unittest discover -s tests -p 'test_staging_linked_access_status.py' -v
+          python -m unittest discover -s tests -p 'test_staging_production_paid_status_client.py' -v
+          python -m unittest discover -s tests -p 'test_private_production_paid_status_bridge.py' -v
+          python -m unittest discover -s tests -p 'test_web_google_staging_service_auth.py' -v
+          python -m unittest discover -s tests -p 'test_web_google_staging_profile.py' -v
+          python -m unittest discover -s tests -p 'test_web_google_web_catalog_staging.py' -v
+          python -m unittest discover -s tests -p 'test_web_google_rph_bundle_quota.py' -v
+          python -m unittest discover -s tests -p 'test_web_google_native_rph_bundle.py' -v
+          python -m unittest discover -s tests -p 'test_web_google_rph_bundle_delivery.py' -v
+          python -m unittest discover -s tests -p 'test_web_google_rph_bundle_job_store.py' -v
+          python -m unittest discover -s tests -p 'test_web_google_rph_generation_staging.py' -v
+          python -m unittest discover -s tests -p 'test_web_google_rph_end_to_end_staging.py' -v
+          python -m unittest discover -s tests -p 'test_web_provider_neutral_payment.py' -v
+          python -m unittest discover -s tests -p 'test_web_google_payments_staging.py' -v
+          python -m unittest discover -s tests -p 'test_web_google_payment_store.py' -v
+          python -m unittest discover -s tests -p 'test_web_google_staging_wsgi.py' -v
+
+  postgres-payment-integration:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: local-test-only
+          POSTGRES_DB: cikgulaju_payment_ci
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d cikgulaju_payment_ci"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 12
+    env:
+      PGHOST: localhost
+      PGPORT: "5432"
+      PGDATABASE: cikgulaju_payment_ci
+      PGUSER: postgres
+      PGPASSWORD: local-test-only
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install PostgreSQL client
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq postgresql-client
+      - name: Create disposable minimal Supabase roles and Storage fixture
+        run: psql -v ON_ERROR_STOP=1 -f tests/sql/web_google_payment_fixture.sql
+      - name: Apply staging SQL in order to disposable PostgreSQL
+        run: |
+          psql -v ON_ERROR_STOP=1 -f migrations/STAGING_ONLY_web_google_identity_445.sql
+          psql -v ON_ERROR_STOP=1 -f migrations/STAGING_ONLY_web_google_payments_445.sql
+          psql -v ON_ERROR_STOP=1 -f migrations/STAGING_ONLY_web_private_receipt_bucket_445.sql
+          psql -v ON_ERROR_STOP=1 -f migrations/STAGING_ONLY_web_payment_review_rpc_445.sql
+          psql -v ON_ERROR_STOP=1 -f migrations/STAGING_ONLY_web_google_rph_delivery_quota_448.sql
+          psql -v ON_ERROR_STOP=1 -f migrations/STAGING_ONLY_web_rph_bundle_jobs_450.sql
+          psql -v ON_ERROR_STOP=1 -f migrations/STAGING_ONLY_web_google_telegram_dual_login_link_451.sql
+      - name: Verify account identity, receipt, manual review and replay
+        run: psql -v ON_ERROR_STOP=1 -f tests/sql/web_google_payment_integration.sql
+      - name: Verify exactly-once Google RPH bundle debit and security on disposable DB
+        run: psql -v ON_ERROR_STOP=1 -f tests/sql/web_google_rph_quota_integration.sql
+      - name: Verify durable private Word+PDF bundle job and replay safety
+        run: psql -v ON_ERROR_STOP=1 -f tests/sql/web_google_rph_bundle_jobs_integration.sql
+      - name: Verify dual-proof identity-link RPC guardrails and no quota changes
+        run: psql -v ON_ERROR_STOP=1 -f tests/sql/web_google_telegram_link_integration.sql
+      - name: Validate draft cross-provider schema in disposable PostgreSQL ONLY
+        run: |
+          psql -v ON_ERROR_STOP=1 -f tests/sql/web_canonical_identity_fixture.sql
+          psql -v ON_ERROR_STOP=1 -f migrations/DRAFT_ONLY_web_canonical_identity_449.sql
+          psql -v ON_ERROR_STOP=1 -f tests/sql/web_canonical_identity_integration.sql
+
+  staging-google-http-smoke:
+    # Only against the explicitly isolated Render staging service after code
+    # arrives on its staging branch; no test user or secret is required.
+    if: (github.event_name == 'push' && github.ref == 'refs/heads/feature/web-google-auth-staging-445') || (github.event_name == 'pull_request' && github.head_ref == 'feature/web-google-auth-staging-445')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify staging readiness without following Google or using credentials
+        run: python tools/smoke_google_staging_http.py

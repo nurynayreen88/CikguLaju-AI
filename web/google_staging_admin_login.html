@@ -1,0 +1,46 @@
+<!doctype html><html lang="ms"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CikguLaju — Admin Staging</title>
+<style>
+:root{font:16px/1.5 system-ui,sans-serif;color:#153c34;background:#f5f9f7}
+main{max-width:560px;margin:7vh auto;padding:30px;border:1px solid #d7e8df;border-radius:18px;background:#fff}
+h1{font-size:1.6rem}p{color:#526e62}small{color:#66796f}
+</style></head><body><main><h1>Semakan bayaran CikguLaju</h1>
+<p>Log masuk menggunakan akaun Telegram admin untuk melihat resit dan mengesahkan bayaran <strong>staging</strong>.</p>
+<div id="widget"></div><p role="status" id="message">Menyemak konfigurasi bot admin...</p>
+<p><small>Pengguna Google tidak perlu akaun Telegram. Telegram hanya digunakan oleh admin. Ini bukan sistem pembayaran produksi.</small></p>
+</main><script>
+'use strict';
+const message=document.getElementById('message');
+function nextPage(){
+ const raw=new URLSearchParams(location.search).get('payment')||'';
+ return '/admin/google-staging-payments'+(/^[a-f0-9-]{36}$/.test(raw)?'?payment='+raw:'');
+}
+window.onCikguLajuStagingAdminAuth=async user=>{
+ message.textContent='Mengesahkan admin...';
+ try{
+  const r=await fetch('/api/auth/google/admin/telegram',{method:'POST',
+    credentials:'same-origin',headers:{'Content-Type':'application/json'},body:JSON.stringify(user)});
+  if(!r.ok){message.textContent='Hanya admin yang disenaraikan boleh menyemak bayaran.';return}
+  location.assign(nextPage());
+ }catch(_){message.textContent='Sambungan pengesahan belum tersedia.'}
+};
+(async()=>{
+ try{
+  const me=await fetch('/api/auth/google/admin/session',{credentials:'same-origin',cache:'no-store'});
+  if(me.ok){location.replace(nextPage());return}
+  const config=await fetch('/api/auth/google/admin/bot',{credentials:'same-origin',cache:'no-store'});
+  if(!config.ok)throw Error('Bot admin staging belum tersedia');
+  const {bot_username}=await config.json();
+  if(!/^[A-Za-z][A-Za-z0-9_]{4,31}$/.test(bot_username))throw Error('Bot belum disahkan');
+  const script=document.createElement('script');
+  script.async=true;script.src='https://telegram.org/js/telegram-widget.js?22';
+  script.setAttribute('data-telegram-login',bot_username);
+  script.setAttribute('data-size','large');
+  script.setAttribute('data-userpic','false');
+  script.setAttribute('data-onauth','onCikguLajuStagingAdminAuth(user)');
+  document.getElementById('widget').append(script);
+  message.textContent='Sila sahkan login Telegram admin.';
+ }catch(err){message.textContent=err.message||'Konfigurasi belum tersedia.'}
+})();
+</script></body></html>

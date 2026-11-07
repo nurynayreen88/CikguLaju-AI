@@ -1,0 +1,234 @@
+# CikguLaju Web — Google-first integration gates (7 Nov 2026)
+
+## Current tested milestone
+
+The owner completed real Google Auth browser login through Supabase staging and
+landed on `/google-staging-account` with **10 staging credits**. The new
+`/google-staging-web` selector is a *read-only* route protected by the same
+verified Google identity. It imports existing
+`web.unified_rph_web.unit_options` / `pdp_options` to list source-backed
+Tahun 2–6 English, Moral, PJPK (PJ/PK), and PSV unit/PdP metadata.
+No duplicate static lesson list, document generator, mock entitlement, or
+production read/write backend was introduced.
+
+At the current milestone:
+- Google credentials and cookie are isolated to
+  `cikgulaju-google-payments-staging.onrender.com`.
+- User can browse available Year/Subject/Unit/Lesson metadata and click
+  **Papar Bahan**; no RPH file is exposed, no download URL is returned.
+- Google staging quota is **display-only**, not 10 productive RPH downloads.
+- Telegram's existing `cikgulaju_web_v1_session` remains unchanged.
+- Neither Google names nor emails are valid account-linking keys.
+- All production RPH generator, Web schedules, RPT and payments are untouched.
+
+## Real source of truth and why production merge is not yet safe
+
+The existing Web account is keyed by Telegram numeric ID:
+`web_v1_telegram_auth_routes._lookup` reads
+`cikgulaju_users.trial_remaining`, pioneer entitlements, and subscriptions
+from the authoritative Supabase project. Both the Web RPH entitlement gate
+(`web/english_rpt_2027_http._account`) and the actual successful-file quota
+debit (`web/rph_delivery_quota.authorize_rendered_document`) depend on a
+verified Telegram ID. The native Telegram RPH renderer itself is used by
+`web/unified_rph_web.py` and must not be substituted with generic Word/PDF.
+
+Google staging uses a UUID identity from a **different** Supabase project.
+Never pass Google UUID into Telegram's signed session format; never fabricate
+Telegram IDs; never copy a paid entitlement just because display/email match.
+
+## Verified progress — 7 November 2026, midday
+
+**Implemented and installed only on isolated Supabase staging:**
+`migrations/STAGING_ONLY_web_google_rph_delivery_quota_448.sql`.
+The new server-only `consume_web_rph_bundle_staging` function and RLS-protected
+`web_rph_delivery_ledger` provide an atomic one-bundle/one-credit debit.
+The same UUID generation reference and same Word+PDF manifest SHA256 are
+idempotent; mismatched replay fails; the eleventh trial fails; database
+confirmed paid entitlement does not debit. The account row is locked before
+checking/updating the ledger to serialize concurrent requests.
+
+The module `web/google_rph_bundle_quota.py` computes a stable digest of
+*both complete* Word+PDF outputs and calls the RPC only AFTER validation.
+An ambiguous network outcome is marked **unconfirmed**, never falsely
+reported as an unchanged balance. This internal helper is intentionally not
+mounted to any browser route, so current Google staging download remains
+disabled until the verified **native Telegram RPH source** is wired.
+
+**Staging verification:** SQL integration tests passed on disposable
+PostgreSQL and were then re-run inside a rolled-back transaction against
+the isolated staging project. After rollback: 1 Google account, 10 credits,
+zero ledgers, zero staging entitlements. No real user's credits were debited.
+
+**Read-only metadata of current production:** `cikgulaju_users` is keyed
+by `telegram_user_id bigint` and the authoritative free balance is
+`trial_remaining`. Confirmed Rakan Pembangun is represented in
+`pioneer_entitlements` (database value `PIONEER_LIFETIME`) and subscriptions
+in `subscriptions`. The old `cikgulaju_use_trial` SQL function is keyed by
+Telegram ID and has legacy account creation behavior; **do not reuse it as a
+Google UUID charge function**.
+
+**Production-compatible but NOT applied:** 
+`migrations/DRAFT_ONLY_web_canonical_identity_449.sql` proposes two
+additive RLS-protected tables for UUID principals and verified Google
+identities. For a linked Telegram principal, `google_only_trial_remaining`
+MUST be NULL, because `cikgulaju_users.trial_remaining` remains
+authoritative; a Google-only principal may have a separate 10-credit balance.
+Linking requires both independent verified sessions and a future reviewed
+server-owned transaction; a shared name or email is never linking proof.
+The draft does not alter, backfill, copy or overwrite any production rows.
+
+**Remaining release blocker:** the native Telegram-backed RPH generation
+service is not yet callable as a Google UUID actor, and the main Web
+requires Telegram numeric IDs for its current quota and access checks.
+Do not claim Google users can actually spend the displayed 10 staging
+credits or download RPH until the shared trusted generator and canonical
+account registry have both been connected and tested.
+
+### Native RPH bridge: offline implementation, not user-facing
+
+`web/google_native_rph_bundle.py` now prepares a *private* Google RPH
+bundle using the **same authoritative Telegram renderer client** as
+`web/unified_rph_web.py`. It requires an approved standalone Lesson,
+immutable `source_fingerprint`, year 5 release approval when relevant,
+and the `telegram-native-rph-v1` layout. It validates teacher class,
+date, time and pupil count, and requests **Word and PDF** from the
+authoritative service. No fake Telegram user ID, generic fallback RPH,
+or silent quota change is allowed. A failed output fails the complete
+bundle. The internal quota helper can charge the server-generated
+bundle ref after successful completion, but an HTTP download route and
+server-side durable retry cache have **not** been enabled.
+
+The existing native service accepts source digest and teacher/lesson
+fields, **not** a Telegram user ID as part of the RPH source payload.
+The current Web *authorization and quota* layers are what depend on
+Telegram ID, so a Google-native front end can use the same document
+engine after a separate UUID-aware identity/entitlement gate. Its
+internal API credentials must remain server-only; do not copy them into
+browser JavaScript or the staging repo.
+
+### Durable private Word+PDF jobs — current staging hardening
+
+**Applied in isolated Supabase staging, not production:** 
+`migrations/STAGING_ONLY_web_rph_bundle_jobs_450.sql` creates:
+- A **private** Storage bucket `web-rph-bundles-staging`, with a file size
+  limit, MIME allowlist and no public downloads.
+- An RLS-protected `web_rph_bundle_jobs` table, with a server-generated UUID
+  key and ownership by canonical Google account UUID. It contains only the
+  selection hash, immutable manifest SHA256, lifecycle and account UUID—not
+  teacher names or downloaded content.
+- Two backend-only RPCs: `prepare_web_rph_bundle_staging` (no debit);
+  `complete_web_rph_bundle_staging` (requires **both private Word and PDF
+  objects** and atomically calls the exactly-once quota ledger). A completed
+  job remains ready across HTTP retries; a failed/missing file cannot charge.
+- Anonymous and ordinary authenticated roles cannot call either RPC or query
+  private jobs. Privileged server key is never returned to a browser.
+
+`web/google_rph_bundle_job_store.py` now implements internal prepare,
+two private uploads (no overwrite), collision detection comparing file bytes,
+and single atomic finalization. On an ambiguous storage/RPC error it fails
+closed and retains the original job key. `web/google_rph_bundle_delivery.py`
+adds a **read-only, account-bound download route** for already-ready jobs;
+it cannot create jobs or spend credits. There are no ready jobs yet.
+
+Integration tests on temporary PostgreSQL passed and the rolled-back staging
+test confirmed both files are mandatory. After the test, **the real staging
+Google account retained 10/10 credits, zero charges, zero jobs**.
+
+**Still disabled for teachers:** there is no public Google RPH generation
+button or prepare/execute endpoint. The internal Telegram native renderer
+credentials and production authoritative ID/entitlement migration must be
+configured and approved before enabling these operations. This is deliberate
+to avoid claiming success from a fabricated or locally generated RPH.
+
+## Next integration gates, in non-destructive order
+
+1. **Design and test additive production identity mapping**, keeping the
+   original Telegram IDs and all existing entitlements, receipts, quota rows,
+   referer/referral attribution and 200 Rakan Pembangun first-batch limit.
+   Before any production migration, perform a snapshot, FK/orphan/duplicate
+   audit and review the change.
+2. **Implement verified optional account linking**, requiring independently
+   verified live Google and Telegram sessions at one browser action. The
+   linking procedure must be transactionally idempotent and must not create
+   a second 10-credit allowance for a linked legacy account. Never merge by
+   email, display name or user-supplied IDs.
+3. **Introduce UUID-aware, atomic RPH trial debit** in the *authoritative*
+   account database for Google-first standalone accounts. Debit once only
+   after the exact native Telegram-backed PDF/Word is successfully rendered,
+   with replay-idempotency, zero-credit rejection and uncertain-commit
+   handling. Paid Rakan Pembangun/VIP have no debit. No Google RPH grants
+   solely from the staging `web_accounts.google_trial_remaining`.
+4. **Wire native Google session verification** into the existing Web
+   `_account()`/catalogue, teacher schedule/profile, RPH download,
+   referral and RPT paid-access boundaries; preserve Telegram-only behavior
+   for all legacy clients. Require exact hostname + secure cookie and never
+   expose service-role keys to JavaScript.
+5. **Payment review parity:** confirmed Google manual receipt reviewed by
+   authorized admin, scoped only to canonical account, idempotent
+   approval/rejection; notifications in Telegram are only admin messages,
+   not a mandatory teacher login. Verify no duplicate lifetime places.
+6. **Staging acceptance matrix:** new Google signup; 10 initial credits;
+   one completed native RPH -> 9; failure -> 10; exhaustion -> 403; paid
+   user unlimited; existing Telegram account unchanged; explicit dual-login
+   linking; no linking by name/email; receipt and admin approval; referral;
+   browser session/logout/replay/CSRF/HTTPS; all subjects, Year1 KP2027
+   and timetable-based RPH Hari Ini. Validate Web/Telegram source parity.
+7. Obtain explicit production rollout approval after all tests; merge PR
+   and publish in controlled Telegram/Web sequence with rollback available.
+
+## Hard gates
+
+- The draft Google OAuth PR must remain **unmerged** until shared account,
+  native document and billing behavior pass E2E; no production config changes.
+- Google-only staging session cannot set Telegram's legacy session cookie.
+- No real payments are requested on staging.
+- SOW/RPT/SK/SP lesson identities stay sourced from approved verified DB,
+  not generated or guessed at runtime.
+
+
+## Follow-up integration checkpoint: staging native renderer configuration
+
+Verified on 7 November 2026 (staging only):
+
+- The authoritative **CikguLaju-AI** Render service at
+  `https://cikgulaju-ai.onrender.com` has historically returned HTTP 200
+  for `POST /internal/rph/v1/render` (Render request logs on 5 November).
+  This confirms the route has handled successful requests before; it is **not**
+  proof that the current Google staging server can authenticate to it.
+- The isolated Google staging Render service has been configured with
+  `CIKGULAJU_AUTHORITATIVE_API_URL=https://cikgulaju-ai.onrender.com`,
+  and explicitly `CIKGULAJU_GOOGLE_RPH_STAGING_ENABLED=0`. Neither
+  a service token nor the production database is changed by this operation.
+- A real Flask issue -> generate -> download **integration test** now runs with
+  an in-memory backend and a simulated native Word/PDF generator. It checks
+  10 -> 9 once, idempotent replay, Word/PDF response, failed generation with
+  no credit debit, zero-credit rejection, cross-origin rejection and cross-account
+  access. This test does **not** count as real Telegram-native E2E.
+- Staging `/readyz` provides *non-secret* configuration diagnostics:
+  `native_renderer_credentials_configured` and
+  `rph_staging_test_gate_open`. The public
+  `rph_generator_enabled` release marker remains false.
+  No token or internal endpoint is returned by readiness.
+- The staging-only Google browser account page can list only its own
+  completed private Word/PDF jobs for recovery after closing the browser.
+  No creation, debit, cross-account lookup, or public Storage URL is offered.
+- GitHub Actions run `42342953025` passed all three CI jobs:
+  Python/Flask and JS tests, disposable PostgreSQL quota/payment integration,
+  and anonymous live staging HTTPS smoke. Staging still has no real ready RPH
+  job or debit in the last database verification.
+
+**Remaining hard blocker for real Google native RPH E2E:**
+Obtain and configure the matching `CIKGULAJU_AUTHORITATIVE_API_TOKEN`
+as a **server-only secret on isolated Render staging** from an authorized
+source; never commit it, print it in diagnostics or paste it in chat. The
+Google staging switch must remain off until the matching trusted token
+has been confirmed. A controlled authenticated staging test should then
+verify one native RPH producing BOTH Word/PDF and one durable debit (10 -> 9),
+retry with no second debit, correct source fingerprint, another account
+denied, failure with no debit, and private download recovery.
+
+**Production is still NOT ready:** Google UUIDs cannot yet safely use the
+existing Telegram-keyed subscriptions, RPT, timetable, referral, payment and
+trial records. The canonical-account migration remains a reviewed draft;
+do not merge PR #447 or change production until independent dual-session
+linking, source parity, cross-provider entitlement and payment tests pass.
