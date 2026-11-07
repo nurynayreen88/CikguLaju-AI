@@ -25,7 +25,7 @@ on:
       - 'scripts/audit_rbt_y5_y6_64_pdp_page_consistency_staging.py'
       - 'tests/test_rpt_2027_rbt_y5_y6_book_mapping.py'
       - 'audits/rbt_y5_y6_textbook_page_evidence_20261106.json'
-      - 'scripts/verify_rbt_t4_textbook_pages_offline.py scripts/audit_rbt_y5_y6_64_pdp_page_consistency_staging.py'
+      - 'scripts/verify_rbt_t4_textbook_pages_offline.py'
       - 'audits/rbt_t4_actual_pdf_page_code_verification_20261107.md'
       - 'tests/test_rpt_2027_rbt_32_week_illustration.py'
       - 'audits/rbt_y4_y6_dskp_full_standard_text_audit_20261107.md'
@@ -71,7 +71,7 @@ jobs:
                       assert page.rect.width>page.rect.height, (f, i)
                       text = page.get_text()
                       # A DSKP bullet previously became U+0000 in PJPK/PSV.
-                      assert '\\x00' not in text, (f, i, "blank/control glyph")
+                      assert chr(0) not in text, (f, i, "blank/control glyph")
                       for block in page.get_text("blocks"):
                           x0,y0,x1,y1 = block[:4]
                           assert 0 <= x0 <= x1 <= page.rect.width, (f, i, "text outside horizontal page")
@@ -107,7 +107,7 @@ jobs:
                   body='\\n'.join(p.get_text() for p in list(doc)[1:])
                   assert 'M03 (SIMULASI)' in body and 'M34 (SIMULASI)' in body
                   assert 'bukan tarikh kelas sebenar' in ' '.join(body.split())
-                  assert not any('\\x00' in p.get_text() for p in doc)
+                  assert not any(chr(0) in p.get_text() for p in doc)
                   for p in doc:
                       for b in p.get_text('blocks'):
                           x0,y0,x1,y1=b[:4]
