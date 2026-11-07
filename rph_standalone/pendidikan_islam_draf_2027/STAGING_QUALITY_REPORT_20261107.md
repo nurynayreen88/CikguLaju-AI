@@ -414,3 +414,25 @@ Teks asal semua medan RPH disimpan di `staging_hadith_original_source_verified.o
 - Sumber DSKP Tahun 6 (Drive `GuruBesar_DSKP_Pendidikan_Islam_Tahun_6.pdf`) dan Buku Teks Tahun 6 (`6 BUKU TEKS PENDIDIKAN ISLAM TAHUN 6 KSSR SEMAKAN.pdf`) dikenal pasti dalam Drive; buku teks yang diperiksa bersifat **imej sahaja** untuk ekstrak teks. Tiada julat ayat spesifik diandaikan atau ditulis tanpa pengesahan halaman.
 - **174** calon Buku Aktiviti T2/T3 kekal tanpa latihan/halaman asal yang disahkan.
 - **0** kelulusan akademik/Jawi formal, **0** RPH baru READY atau perubahan DB/Web/Telegram. **PR #443 DRAFT/HOLD/NO_GO** sehingga syarat pelepasan benar-benar dipenuhi.
+
+
+## 7 November malam — dua tasmi' Juz 30 Tahun 6: pemulihan aktiviti tanpa mereka ayat
+
+Sumber projek **RPT Pendidikan Islam Tahun 6 2027** (Drive ID `1T380Ot_gG58JhxanELMM0z-gr6wmSJcL`, SHA-256 `b39a07b2dd7ef6062912f12fd43e63f87a98b13bde3885c925e88a37dac70e5b`), halaman PDF **48** dan **49**, menyenaraikan:
+- **PdP 137** (halaman PDF 48): Juz 30 — Surah `عبس`, `التكوير`, `الإنفطار`, `المطففين`.
+- **PdP 141** (halaman PDF 49): Juz 30 — Surah `الطارق`, `الأعلى`, `الغاشية`, `الفجر`.
+
+**Kedua-dua halaman RPT hanya menyenaraikan surah, tanpa nombor ayat mula/akhir.** Ini tidak memberi lesen untuk mengandaikan bacaan keseluruhan empat surah boleh ditasmi' kepada semua murid dalam dua jam. **DSKP KSSR Pendidikan Islam Tahun 6** (Drive ID `1pasG1F0ThshBUNoyLtQCD867bIkhekTZ`, SHA-256 `fd12636abb8b220623ec8c33a0c12261c7f27adc44c02efc5ee2ac04b71fea45`), halaman bercetak **19/PDF31**, pula memperihalkan SK 1.1 *Surah al-Sharh*; Juz 30 empat-surah pada RPT ini ialah **perancangan tasmi' tambahan**, **bukan kod SP tiga aras DSKP yang boleh direka**. Buku Teks Tahun 6 yang ditemukan (Drive `10eHX0E_yg3TOpGvaRTtwBevO90Nq-buf`, SHA-256 `d2f9de10d1e848afaa4c61cf1a8635079883966ebf5b05c3559459c37d050e74`) ialah imbasan tanpa lapisan teks.
+
+Perubahan **editorial sahaja** pada `T6-L137` dan `T6-L141`:
+1. Semua nama surah dan medan SK/SP sumber asal **dipelihara**.
+2. Set induksi dan objektif bacaan diperjelas; objektif mengandaikan **ayat yang ditetapkan guru** dan tidak memalsukan julat.
+3. Aktiviti daripada **dua langkah yang terlalu pendek** kepada **empat langkah**: guru memilih dan merekod surah/julat sebenar; talaqqi dan musyafahah; tasmi' giliran bersama maklum balas; rekod berasingan setiap murid untuk makhraj, tajwid, kelancaran dan pemulihan.
+4. Pentaksiran menjadi senarai semak individual berdasarkan **surah/julat ayat pilihan guru**, tanpa menetapkan nombor yang tidak wujud pada RPT.
+5. Setiap medan sumber sebelum perubahan disimpan dalam `staging_tasmi_rpt_2027_review.original_fields_preserved`. `actual_ayah_range_verified=false`, `academic_expert_approved=false`, `jawi_orthography_approved=false`, `publication=HOLD`. Dua rekod masih diasingkan daripada pratonton guru kerana `staging_source_review_required=true`.
+
+Audit baharu `pi_t6_tasmi_rpt_2027_review.py` bersama ujian regresi dan artefak JSON/CSV CI melaporkan dua Lesson, lapan nama surah, **0 julat ayat disahkan**, **0 kod DSKP rekaan**. Selepas pembetulan **690/690 draf mempunyai 3+ langkah aktiviti (100% struktur mekanikal)**, tetapi **6 rekod katalog penuh masih ditahan, 3 sumber kritikal masih HOLD, 687 pratonton/cetakan editor sahaja, 0 RPH pakar diluluskan dan 0 READY**. **100% bukan skor mutu akademik**.
+
+Tindakan diperlukan sebelum T6-L137/L141 boleh dianggap sesuai: guru/pakar memilih bahagian ayat sebenar berdasarkan mushaf dan tahap murid, mengesahkan ia munasabah bagi durasi, kemudian menyemak Jawi serta instrumen tasmi' individu. Jangan mendorong pengguna untuk beranggapan empat surah penuh wajib dinilai kepada setiap murid dalam satu sesi.
+
+**DB, Telegram, Web, hak akses dan produksi tidak disentuh. PR #443 tetap DRAFT/HOLD/NO_GO.**
