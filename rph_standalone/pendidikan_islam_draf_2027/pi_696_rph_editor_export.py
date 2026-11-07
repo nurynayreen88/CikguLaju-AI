@@ -89,7 +89,9 @@ def gather(root=None):
                                                         int(x.split("-")[1][1:])))]
 
 def create_report(output_dir, *, sample=0, batch_size=24):
-    output_dir=Path(output_dir);output_dir.mkdir(parents=True,exist_ok=True)
+    # LibreOffice requires an absolute file:// UserInstallation URI. A relative
+    # URI is parsed as a hostname and can hang until subprocess timeout.
+    output_dir=Path(output_dir).resolve();output_dir.mkdir(parents=True,exist_ok=True)
     exe=shutil.which("libreoffice") or shutil.which("soffice")
     if not exe:
         raise RuntimeError("LibreOffice is required for real Word/PDF export")
