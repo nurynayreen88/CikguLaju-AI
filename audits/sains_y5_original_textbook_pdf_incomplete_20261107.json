@@ -1,0 +1,23 @@
+{
+  "year": 5,
+  "subject": "Sains",
+  "date": "2026-11-07",
+  "status": "SOURCE_PDF_INCOMPLETE__NO_EXACT_SP_PAGE_RELEASE",
+  "original_source_url": "https://drive.google.com/file/d/1m5k8gVkNImT8QEdw6fCEVpQh_tNkUKUT/view",
+  "original_source_file_id": "1m5k8gVkNImT8QEdw6fCEVpQh_tNkUKUT",
+  "file_name": "GuruBesar_BukuTeks_Sains_T5_SK.pdf",
+  "source_size_bytes": 91275648,
+  "source_sha256": "322b8ea0e19fc5b6da1c41ff64a25d22e470917027d9b293c85efc045a6be3e2",
+  "actual_pdf_page_count": 43,
+  "last_printed_page_in_file": 35,
+  "table_of_contents_max_printed_page": 231,
+  "method": "Downloaded exact Drive PDF; opened with PyMuPDF. Observed 43 PDF pages; last PDF page begins with printed 35, while table of contents on PDF pages 5-6 cites school textbook pages through 231. This proves current uploaded source is truncated, without concluding anything about other editions/URLs.",
+  "original_year5_pdp": 83,
+  "exact_page_assignment_per_sp_approved": 0,
+  "notes": "Do not infer 83 exact textbook page refs from this partial upload. No full-book classroom claim.",
+  "teacher_academic_approved": 0,
+  "upload_production": false,
+  "db_writes": false,
+  "request": "Owner should provide a COMPLETE same-edition Year5 original textbook PDF with valid last printed page and unbroken page sequence. Validate checksum and full cover before any SP mapping.",
+  "suggested_followup_action": "Replace nothing; upload new separate source version, compare with 83 source SPs in staging and retain old file checksum for provenance."
+}
