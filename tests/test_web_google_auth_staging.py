@@ -81,7 +81,12 @@ class GoogleStagingRoutes(unittest.TestCase):
         self.assertEqual(r.status_code, 200)
         self.assertIn(b"Teruskan dengan Google", r.data)
         with patch.dict(os.environ, {"CIKGULAJU_GOOGLE_AUTH_STAGING_ENABLED": "0"}):
-            self.assertEqual(self.client.get("/google-staging-login", base_url=self.base).status_code,503)
+            page = self.client.get("/google-staging-login", base_url=self.base)
+            self.assertEqual(page.status_code, 503)
+            self.assertTrue(page.mimetype == "text/html")
+            self.assertIn(b"Google sedang disediakan", page.data)
+            self.assertNotIn(b'href="/api/auth/google/start"', page.data)
+            self.assertEqual(page.headers["Cache-Control"], "no-store")
 
     def test_staging_disabled_fails_closed(self):
         with patch.dict(os.environ, {"CIKGULAJU_GOOGLE_AUTH_STAGING_ENABLED": "0"}):
