@@ -1,5 +1,8 @@
 """Staging payment route authorization and manual-review safety checks."""
 import os
+import hashlib
+import hmac
+import time
 import unittest
 from io import BytesIO
 from unittest.mock import patch
@@ -9,8 +12,8 @@ from flask import Flask
 from web.google_auth_staging_routes import bp as google_bp, TICKET_COOKIE
 from web.google_payment_staging_routes import bp as payments_bp
 from web_google_identity_sessions import issue_google_identity_ticket
-from web_v1_sessions import issue_session_ticket
-from web_v1_telegram_auth_routes import COOKIE
+from web.google_staging_admin_sessions import issue_staging_admin_ticket
+from web.google_staging_admin_auth_routes import ADMIN_COOKIE, bp as admin_auth_bp
 
 SECRET = "google-staging-tests-with-at-least-32-characters"
 STAGING = "https://staging.example.test"
@@ -32,12 +35,15 @@ class PaymentApiTest(unittest.TestCase):
             "CIKGULAJU_GOOGLE_STAGING_ORIGIN": STAGING,
             "CIKGULAJU_GOOGLE_STAGING_ALLOWED_HOST": "staging.example.test",
             "CIKGULAJU_GOOGLE_STAGING_ADMIN_TELEGRAM_IDS": str(ADMIN_UID),
+            "CIKGULAJU_GOOGLE_STAGING_ADMIN_BOT_TOKEN": "123456789:staging-test-only-super-secret-XXXXXXXX",
+            "CIKGULAJU_GOOGLE_STAGING_ADMIN_BOT_USERNAME": "CikguTestAdminBot",
             "CIKGULAJU_GOOGLE_STAGING_PAYMENT_CATALOG_JSON": CATALOG,
             "SUPABASE_URL": "https://live.supabase.co",
         })
         self.env.start()
         self.app = Flask(__name__)
         self.app.register_blueprint(google_bp)
+        self.app.register_blueprint(admin_auth_bp)
         self.app.register_blueprint(payments_bp)
         self.client = self.app.test_client()
 
@@ -50,7 +56,7 @@ class PaymentApiTest(unittest.TestCase):
                                domain="staging.example.test")
 
     def telegram_admin_login(self):
-        self.client.set_cookie(COOKIE, issue_session_ticket(ADMIN_UID, SECRET),
+        self.client.set_cookie(ADMIN_COOKIE, issue_staging_admin_ticket(ADMIN_UID, SECRET),
                                domain="staging.example.test")
 
     def get(self, path):
@@ -106,6 +112,24 @@ class PaymentApiTest(unittest.TestCase):
         self.assertEqual(submit.call_args.args[1], GOOGLE_ID)
         self.assertEqual(submit.call_args.args[2], "rakan_pembangun")
 
+    def test_separate_admin_telegram_widget_requires_hmac_and_allowlist(self):
+        now = int(time.time())
+        profile = {"id": ADMIN_UID, "first_name": "Admin Test", "auth_date": now}
+        data = "\n".join(f"{k}={v}" for k,v in sorted(profile.items()))
+        token = os.environ["CIKGULAJU_GOOGLE_STAGING_ADMIN_BOT_TOKEN"]
+        secret = hashlib.sha256(token.encode()).digest()
+        signature = hmac.new(secret,data.encode(),hashlib.sha256).hexdigest()
+        payload = {**profile, "hash": signature}
+        bad = self.post("/api/auth/google/admin/telegram",
+                        json=payload,headers={"Origin":"https://evil.test"})
+        self.assertEqual(bad.status_code,403)
+        good = self.post("/api/auth/google/admin/telegram",
+                         json=payload,headers={"Origin":STAGING})
+        self.assertEqual(good.status_code,200)
+        self.assertTrue(good.json["authenticated"])
+        status=self.get("/api/auth/google/admin/session")
+        self.assertTrue(status.json["authenticated"])
+
     def test_google_cannot_view_admin_payments(self):
         self.google_login()
         self.assertEqual(self.get("/api/web/google/admin/payments").status_code, 403)
@@ -115,9 +139,6 @@ class PaymentApiTest(unittest.TestCase):
         self.telegram_admin_login()
         account={"telegram_user_id": ADMIN_UID}
         with (
-            patch("web_v1_telegram_auth_routes._config",
-                  return_value={"CIKGULAJU_WEB_SESSION_SECRET":SECRET}) as conf,
-            patch("web_v1_telegram_auth_routes._lookup", return_value=account),
             patch("web.google_payment_staging_routes.review_payment",
                   return_value={"id": PAYMENT_ID, "status":"approved",
                                 "already_reviewed":False}) as review,
@@ -130,13 +151,7 @@ class PaymentApiTest(unittest.TestCase):
 
     def test_admin_cannot_approve_cross_origin(self):
         self.telegram_admin_login()
-        with (
-            patch("web_v1_telegram_auth_routes._config",
-                  return_value={"CIKGULAJU_WEB_SESSION_SECRET":SECRET}),
-            patch("web_v1_telegram_auth_routes._lookup",
-                  return_value={"telegram_user_id":ADMIN_UID}),
-            patch("web.google_payment_staging_routes.review_payment") as review,
-        ):
+        with patch("web.google_payment_staging_routes.review_payment") as review:
             response=self.post("/api/web/google/admin/payments/"+PAYMENT_ID+"/review",
                     json={"action":"approve"}, headers={"Origin":"https://evil.test"})
             review.assert_not_called()
