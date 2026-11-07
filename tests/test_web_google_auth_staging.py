@@ -51,6 +51,7 @@ class GoogleStagingRoutes(unittest.TestCase):
             "CIKGULAJU_GOOGLE_STAGING_SUPABASE_SERVICE_ROLE_KEY": "staging-only-service-key-placeholder",
             "CIKGULAJU_GOOGLE_STAGING_SUPABASE_URL": "https://abcdefghijklmnopqrst.supabase.co",
             "CIKGULAJU_GOOGLE_STAGING_PROJECT_REF": "abcdefghijklmnopqrst",
+            "CIKGULAJU_GOOGLE_PRODUCTION_PROJECT_REF": "productionref1234567",
             "CIKGULAJU_WEB_SESSION_SECRET": SECRET,
             "CIKGULAJU_GOOGLE_STAGING_ORIGIN": "https://staging.example.test",
             "CIKGULAJU_GOOGLE_STAGING_ALLOWED_HOST": "staging.example.test",
