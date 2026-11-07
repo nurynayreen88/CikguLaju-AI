@@ -5,8 +5,8 @@ Output only to the CI workspace. The PDFs are mechanically checked as exactly
 one A4 page; DOCX are compact A4 templates pending visual Word-render QA.
 ALL files stamped DRAF, never upload as user-facing approved materials.
 """
-from tools.render_sains_y3_3_secondary_sp_pbd_20261107 import TASKS as SECONDARY_PBD, stem as secondary_stem
 from __future__ import annotations
+from tools.render_sains_y3_3_secondary_sp_pbd_20261107 import TASKS as SECONDARY_PBD, stem as secondary_stem
 import csv
 import io
 import os
