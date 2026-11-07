@@ -24,7 +24,7 @@ input{font:inherit;width:100%;padding:11px 14px;border:1px solid #b7cec1;border-
 <header><span class="brand">CikguLaju AI</span><a href="/google-staging-account">Akaun Saya</a></header>
 <h1>Pilih Lesson / PdP</h1>
 <p>Ini paparan aliran Web menggunakan akaun Google yang telah disahkan. Pilihan kurikulum diambil daripada sumber Web sedia ada, bukan senarai rekaan.</p>
-<p class="notice"><strong>Mod ujian staging:</strong> Setakat ini hanya Tahun 2–6 bagi beberapa subjek yang mempunyai inventori setempat. Muat turun RPH dan potongan 10 janaan masih dikunci sehingga integrasi akaun/kuota utama selesai.</p>
+<p class="notice" id="stagingNotice"><strong>Mod ujian staging:</strong> Pilihan kurikulum Tahun 2–6 bagi subjek yang tersedia. Janaan RPH hanya dibenarkan untuk akaun penguji yang diluluskan, bukan pengguna rasmi.</p>
 <section class="card">
 <div><label for="year">Tahun</label><select id="year"><option value="">Pilih Tahun</option></select></div>
 <section id="subjectBox" hidden><label for="subject">Subjek</label><select id="subject"><option value="">Pilih Subjek</option></select></section>
@@ -35,7 +35,7 @@ input{font:inherit;width:100%;padding:11px 14px;border:1px solid #b7cec1;border-
 </section>
 <section class="card" id="results" hidden aria-live="polite">
 <h2>Bahan untuk Lesson / PdP dipilih</h2><p id="chosen"></p>
-<ul><li>RPH Word — belum boleh dimuat turun</li><li>RPH PDF — belum boleh dimuat turun</li></ul>
+<ul id="materialList"><li>RPH Word — pilih Jana Bahan untuk ujian</li><li>RPH PDF — pilih Jana Bahan untuk ujian</li></ul>
 <p><small>10 janaan staging tidak ditolak dengan paparan ini. Penjanaan hanya dibuka jika enjin Telegram dan kuota telah disahkan pada staging.</small></p>
 <section id="generationControls" hidden aria-label="Jana RPH sebenar">
 <h3>Jana RPH menggunakan enjin Telegram</h3>
@@ -252,6 +252,8 @@ get('generate').addEventListener('click',async()=>{
     const cap=await capResponse.json();
     generationAllowed=cap.google_verified===true&&cap.staging_only===true&&
                       cap.generation_enabled===true;
+    if(!generationAllowed)get('stagingNotice').textContent=
+      'Mod ujian staging: Pilihan Lesson tersedia, tetapi janaan RPH hanya dibuka kepada akaun penguji yang diluluskan.';
   }
  }catch(e){generationAllowed=false;}
 })();
