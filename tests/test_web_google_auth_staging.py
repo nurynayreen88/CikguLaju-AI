@@ -169,7 +169,7 @@ class GoogleStagingRoutes(unittest.TestCase):
         self.assertEqual(self.client.get("/api/auth/google/status",
                                          base_url=self.base).status_code, 401)
 
-    def test_browser_redirects_to_staging_payment_page(self):
+    def test_browser_redirects_to_staging_account_page(self):
         state, _ = self._start()
         with (
             patch("web.google_auth_staging_routes._json_response",
@@ -181,7 +181,7 @@ class GoogleStagingRoutes(unittest.TestCase):
             r=self.client.get("/api/auth/google/callback?state="+state+"&code=test",
                               base_url=self.base,headers={"Accept":"text/html"})
         self.assertEqual(r.status_code,303)
-        self.assertEqual(r.location,self.base+"/google-staging-payments")
+        self.assertEqual(r.location,self.base+"/google-staging-account")
         self.assertIn("cikgulaju_google_staging_ticket", "\\n".join(r.headers.getlist("Set-Cookie")))
 
     def test_real_browser_accept_header_redirects(self):
@@ -200,7 +200,61 @@ class GoogleStagingRoutes(unittest.TestCase):
                 base_url=self.base,
                 headers={"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"})
         self.assertEqual(r.status_code, 303)
-        self.assertEqual(r.location, self.base + "/google-staging-payments")
+        self.assertEqual(r.location, self.base + "/google-staging-account")
+
+    def test_profile_rejects_anonymous_and_query_identity_override(self):
+        unauthorized = self.client.get("/api/auth/google/profile", base_url=self.base)
+        self.assertEqual(unauthorized.status_code, 401)
+        page = self.client.get("/google-staging-account", base_url=self.base)
+        self.assertEqual(page.status_code, 303)
+        self.assertEqual(page.location, "/google-staging-login")
+        self.client.set_cookie(
+            "cikgulaju_google_staging_ticket",
+            issue_google_identity_ticket(SUBJECT, SECRET),
+            domain="staging.example.test")
+        with patch("web.google_auth_staging_routes.google_staging_account_profile") as read:
+            invalid = self.client.get(
+                "/api/auth/google/profile?account_id=another-account",
+                base_url=self.base)
+            self.assertEqual(invalid.status_code, 401)
+            read.assert_not_called()
+
+    def test_verified_google_account_profile_is_read_only(self):
+        self.client.set_cookie(
+            "cikgulaju_google_staging_ticket",
+            issue_google_identity_ticket(SUBJECT, SECRET),
+            domain="staging.example.test")
+        with patch("web.google_auth_staging_routes.google_staging_account_profile",
+                   return_value={"display_name": "Cikgu Ujian",
+                                 "trial_remaining": 10}) as read:
+            reply = self.client.get("/api/auth/google/profile", base_url=self.base)
+        self.assertEqual(reply.status_code, 200)
+        self.assertEqual(reply.json["display_name"], "Cikgu Ujian")
+        self.assertEqual(reply.json["trial_remaining"], 10)
+        self.assertFalse(reply.json["rph_generation_enabled"])
+        self.assertFalse(reply.json["real_payments_enabled"])
+        self.assertEqual(reply.headers["Cache-Control"], "no-store, private")
+        read.assert_called_once()
+        self.assertEqual(read.call_args.args[1], SUBJECT)
+        html = self.client.get("/google-staging-account", base_url=self.base)
+        self.assertEqual(html.status_code, 200)
+        self.assertIn(b"Kuota percubaan", html.data)
+        self.assertIn(b"/api/auth/google/logout", html.data)
+        with patch.dict(os.environ, {"CIKGULAJU_GOOGLE_AUTH_STAGING_ENABLED": "0"}):
+            disabled = self.client.get("/api/auth/google/profile", base_url=self.base)
+        self.assertEqual(disabled.status_code, 503)
+
+    def test_profile_database_failure_never_exposes_user_data(self):
+        self.client.set_cookie(
+            "cikgulaju_google_staging_ticket",
+            issue_google_identity_ticket(SUBJECT, SECRET),
+            domain="staging.example.test")
+        with patch("web.google_auth_staging_routes.google_staging_account_profile",
+                   side_effect=__import__("web.google_account_store", fromlist=["GoogleAccountUnavailable"]).GoogleAccountUnavailable("backend-down")):
+            fail = self.client.get("/api/auth/google/profile", base_url=self.base)
+        self.assertEqual(fail.status_code, 503)
+        self.assertNotIn("backend-down", fail.get_data(as_text=True))
+
 
     def test_wrong_provider_does_not_grant_ticket(self):
         state, _ = self._start()
