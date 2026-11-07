@@ -24,6 +24,15 @@ The separate Render *Web Service* already exists. Keep it distinct from `cikgula
 - Tests: `.github/workflows/google-web-auth-staging.yml` (Python + disposable PostgreSQL 17)
 - No Telegram production runtime or user-facing RPH generator is imported
 
+## Google-first account screen (staging code, still OAuth-disabled)
+
+- Verified Google browser callback redirects to `/google-staging-account` **instead of the payment page**.
+- This page calls `GET /api/auth/google/profile` with the signed, HttpOnly staging Google cookie. Server-side lookup fetches `display_name` and `google_trial_remaining` only for the verified canonical UUID in `public.web_accounts`, with the private service key on the backend.
+- Shows a staging-only 10-credit counter, a clearly labelled **RPH not yet available** message, a link to the test receipt page, and a same-origin POST logout action.
+- Anonymous or forged identities get HTTP 401; no client-selected account_id, email, or Telegram ID is accepted. Profile responses are no-store/private.
+- `tests/test_web_google_staging_profile.py` and the Google route regression suite verify the read-only, account-bound query and browser destination. This does not prove actual Google provider login works; real browser acceptance still requires Cloud OAuth setup.
+- Service remains fail-closed: `CIKGULAJU_GOOGLE_AUTH_STAGING_ENABLED=0` until setup completes.
+
 ## Remaining blocker after staging DB provisioning (7 November 2026)
 
 **No successful Google browser OAuth login has occurred yet.** Google Cloud OAuth web client and its client ID/secret must be configured privately in the staging Supabase project at https://supabase.com/dashboard/project/eqrcjlnvcytkgazptbor/auth/providers. Staging backend `CIKGULAJU_GOOGLE_STAGING_SUPABASE_SERVICE_ROLE_KEY` also must be set privately in Render; the connected Supabase tool exposes only publishable API keys, not server secrets. Keep `CIKGULAJU_GOOGLE_AUTH_STAGING_ENABLED=0` until all staging-only credentials and Auth redirect URLs are verified.
