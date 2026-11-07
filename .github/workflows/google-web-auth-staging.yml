@@ -33,6 +33,7 @@ on:
       - 'tests/test_web_google_auth_staging.py'
       - 'tools/run_web_v1_preview.py'
       - 'tools/run_google_payments_staging.py'
+      - 'tools/smoke_google_staging_http.py'
       - 'tests/test_web_google_staging_wsgi.py'
       - '.github/workflows/google-web-auth-staging.yml'
   push:
@@ -101,3 +102,18 @@ jobs:
           psql -v ON_ERROR_STOP=1 -f migrations/STAGING_ONLY_web_payment_review_rpc_445.sql
       - name: Verify account identity, receipt, manual review and replay
         run: psql -v ON_ERROR_STOP=1 -f tests/sql/web_google_payment_integration.sql
+
+  staging-google-http-smoke:
+    # Only against the explicitly isolated Render staging service after code
+    # arrives on its staging branch; no test user or secret is required.
+    if: github.event_name == 'push' && github.ref == 'refs/heads/feature/web-google-auth-staging-445'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify staging readiness without following Google or using credentials
+        run: python tools/smoke_google_staging_http.py
