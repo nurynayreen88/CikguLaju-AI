@@ -140,3 +140,26 @@ BEGIN
   END;
 END
 $test$;
+
+-- Privileged service role may use the API, browser roles must not.
+DO $rls$
+BEGIN
+  IF has_table_privilege('anon','public.web_accounts','SELECT')
+     OR has_table_privilege('authenticated','public.web_account_identities','SELECT')
+     OR has_table_privilege('anon','public.web_payment_requests','SELECT')
+     OR has_table_privilege('authenticated','public.web_entitlements','INSERT')
+     OR has_function_privilege('anon',
+       'public.review_web_payment_request(uuid,text,text,text)','EXECUTE')
+     OR has_function_privilege('authenticated',
+       'public.submit_web_payment_request(uuid,text,integer,text,text)','EXECUTE')
+  THEN
+    RAISE EXCEPTION 'Sensitive staging account/payment API improperly exposed';
+  END IF;
+  IF NOT has_table_privilege('service_role','public.web_payment_requests','SELECT')
+     OR NOT has_function_privilege('service_role',
+       'public.review_web_payment_request(uuid,text,text,text)','EXECUTE')
+  THEN
+    RAISE EXCEPTION 'Staging backend payment permissions missing';
+  END IF;
+END
+$rls$;
