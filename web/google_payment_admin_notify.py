@@ -14,7 +14,7 @@ from urllib.parse import urlencode
 from web.provider_neutral_payment import validate_payment_plan
 
 
-def notify_google_payment_admin(config, request_id, account_id, plan_code, mime, raw):
+def notify_google_payment_admin(config, request_id, account_id, plan_code, mime, raw, display_name=""):
     token = os.environ.get("CIKGULAJU_GOOGLE_STAGING_ADMIN_BOT_TOKEN", "")
     chat = os.environ.get("CIKGULAJU_GOOGLE_STAGING_ADMIN_CHAT_ID", "")
     if (not re.fullmatch(r"[0-9]{5,15}:[A-Za-z0-9_-]{20,}", token)
@@ -35,9 +35,10 @@ def notify_google_payment_admin(config, request_id, account_id, plan_code, mime,
            "image/png": ".png", "image/webp": ".webp"}.get(mime)
     if not ext or not link.startswith("https://"):
         return False
+    label = " ".join(display_name.split())[:120] if isinstance(display_name, str) else ""
     caption = (
         "Resit baharu CikguLaju Web (staging)\n"
-        "Guru: Akaun Web " + account_id[:8] + "\n"
+        "Guru: " + (label or "Akaun Web " + account_id[:8]) + "\n"
         "Pakej: " + plan_code + "\n"
         "Bayaran: RM" + format(amount / 100, ".2f") + "\n"
         "Status: MENUNGGU SEMAKAN\n"
