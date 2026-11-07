@@ -22,8 +22,7 @@ from urllib.request import Request, urlopen
 from urllib.error import HTTPError, URLError
 
 from flask import Blueprint, jsonify, make_response, redirect, request
-from web.google_auth_staging_routes import _seal_state, _unseal_state
-from web.google_account_store import verified_google_email
+from web.native_google_oauth_utils import _seal_state, _unseal_state, verified_google_email
 from web.native_google_principal_store import (
     PROD_SUPABASE, CanonicalAccountUnavailable,
     register_verified_google_principal, read_google_principal,
