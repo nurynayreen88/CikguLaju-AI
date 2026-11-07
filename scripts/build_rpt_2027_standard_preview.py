@@ -12,6 +12,7 @@ from pathlib import Path
 from rpt_2027.common.format_2026_layout_preview import build_preview, validate_rows
 from rpt_2027.common.standard_text_enrichment import enrich_moral, enrich_psv, enrich_rbt
 from rpt_2027.common.calendar_week_mapping_staging import reconcile_psv_weeks
+from rpt_2027.common.rbt_truncated_title_guard_staging import expand_rbt_display_titles
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "staging" / "rpt_2027_seragam_2026" / "pdf"
@@ -87,6 +88,7 @@ def rbt_records(year):
                     ". Tarikh A/B belum dinyatakan dalam sumber; tidak diandaikan.")
         })
     enrich_rbt(year,output)
+    expand_rbt_display_titles(year,rows,output)
     validate_rows("rbt",year,output)
     return output
 
