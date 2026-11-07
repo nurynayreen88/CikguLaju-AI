@@ -89,6 +89,27 @@ def check():
     else:
         print("PASS: Google-Telegram linking enabled in staging; anonymous linking denied.")
 
+    # The linked Telegram teacher sign-in is staging-only. It exposes a
+    # public Widget bot name, never credentials, and no account information
+    # without a fresh signed Telegram session and confirmed DB mapping.
+    status, headers, blob = fetch("/google-staging-telegram")
+    assert status == 200 and b"onStagingTelegramLogin" in blob, (
+        "linked Telegram login page", status)
+    status, _headers, blob = fetch("/api/auth/staging/telegram/bot")
+    assert status == 200, ("linked Telegram Widget bot", status)
+    bot = json.loads(blob)
+    assert bot.get("staging_only") is True and bot.get("linked_accounts_only") is True
+    assert isinstance(bot.get("bot_username"), str) and len(bot["bot_username"]) >= 5
+    assert "token" not in json.dumps(bot).lower(), "bot credential exposed"
+    status, _headers, _body = fetch("/api/auth/staging/telegram/profile")
+    assert status == 401, ("anonymous linked Telegram profile", status)
+    status, _headers, _body = fetch("/api/auth/staging/telegram/login",
+                                    post_json={"telegram_auth": {}})
+    assert status == 403, ("cross-origin/unauthenticated Telegram login", status)
+    status, _headers, _body = fetch("/api/auth/staging/telegram/logout", post_json={})
+    assert status == 403, ("cross-origin Telegram logout", status)
+    print("PASS: Telegram teacher sign-in live in staging; anonymous balance denied, Widget bot public only.")
+
     # Newly mounted Web lesson selector must never expose curriculum
     # metadata without a valid Google-only signed session.
     status, headers, _body = fetch("/google-staging-web")
