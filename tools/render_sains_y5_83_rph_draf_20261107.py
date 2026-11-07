@@ -22,7 +22,7 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, Tabl
 
 from tools.audit_sains_342_pdp_release_gate_20261106 import ROOT, analyze
 from web.sains_y5_83_activity_bank_draf_20261107 import BANK
-from tools.sains_y5_83_textbook_original_sp_pages_20261107 import checked_book_pages, SHA as BOOK_SOURCE_SHA
+from tools.sains_y5_83_textbook_original_sp_pages_20261107 import checked_book_pages, source_part_for_printed_page, SHA as BOOK_SOURCE_SHA
 
 OUT = ROOT / "build" / "sains_y5_83_rph_DRAF_20261107"
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
@@ -264,6 +264,8 @@ def main():
         (OUT/(stem+".md")).write_text(markdown(entry),encoding="utf-8")
         word_doc(OUT/(stem+".docx"),entry)
         pdf_doc(OUT/(stem+".pdf"),entry)
+        book_part,book_pdf_zero=source_part_for_printed_page(
+            entry["textbook_page_primary"])
         manifest.append({
             "pdp_code":entry["pdp_code"],"sk":entry["sk"],"sp":entry["sp"],
             "unit":entry["unit"],"title":entry["tajuk"],
@@ -272,6 +274,9 @@ def main():
             "dsKP_source":"TEXT_TOKEN_VERIFIED_NOT_FULL_SP_SEMANTICS",
             "textbook_pages":",".join(map(str,entry["textbook_pages"])),
             "textbook_primary_page":entry["textbook_page_primary"],
+            "textbook_primary_source_part":book_part,
+            "textbook_primary_pdf_page_1_based":book_pdf_zero+1,
+            "textbook_primary_external_source_url":BOOK_SOURCE_PARTS[book_part-1],
             "textbook_sp_code_source_status":entry["textbook_reference_status"],
             "textbook_source_sha256_parts":";".join(BOOK_SOURCE_SHA),
             "lesson_activities":"SOURCE_SPECIFIC_DRAFT",
