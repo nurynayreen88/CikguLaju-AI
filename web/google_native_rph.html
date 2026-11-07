@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="ms">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>CikguLaju AI — RPH dengan Google</title>
+<style>
+:root{font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;color:#223d33;background:#f3f8f5}
+*{box-sizing:border-box}body{margin:0;padding:16px}main{max-width:800px;margin:3vh auto}
+a{color:#087568}header{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+h1{font-size:1.8rem;margin-bottom:6px}h2{font-size:1.23rem;margin-top:0}
+.card{background:#fff;padding:24px;border:1px solid #dbe9e1;border-radius:16px;margin:18px 0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+label{display:block;font-weight:640;margin-bottom:12px}
+input,select{display:block;width:100%;margin-top:6px;padding:11px 12px;border:1px solid #b3cec0;border-radius:9px;font:inherit;background:#fff;color:inherit}
+button{border:0;border-radius:9px;background:#087568;color:#fff;padding:11px 20px;font:inherit;font-weight:650;cursor:pointer}
+button:disabled{opacity:.42;cursor:not-allowed}
+p{color:#52685d}.muted{color:#66776b}.error{color:#af3636}.success{color:#156f48}
+#downloads a{display:inline-block;border:1px solid #087568;border-radius:9px;padding:9px 12px;margin-right:12px;margin-top:10px}
+[hidden]{display:none!important}#status{min-height:1.5em}
+@media(max-width:590px){.grid{grid-template-columns:1fr}.card{padding:17px}body{padding:10px}}
+</style></head>
+<body><main>
+<header><strong>CikguLaju AI</strong><nav><a href="/google-account">Akaun Saya</a> · <a href="/">Web Utama</a></nav></header>
+<h1>Jana RPH</h1>
+<p>Pilih Lesson/PdP daripada sumber CikguLaju yang tersedia. RPH Word dan PDF menggunakan penjana yang sama dengan Telegram.</p>
+<section class="card">
+<h2>Pilihan pengajaran</h2>
+<div class="grid">
+<label>Tahun <select id="year" disabled><option value="">Pilih Tahun</option></select></label>
+<label>Subjek <select id="subject" disabled><option value="">Pilih subjek</option></select></label>
+</div>
+<label id="compWrap" hidden>Komponen PJPK <select id="component"><option value="">Pilih komponen</option><option value="PJ">PJ</option><option value="PK">PK</option></select></label>
+<label id="unitWrap" hidden>Unit/Tajuk <select id="unit"><option value="">Pilih unit</option></select></label>
+<label id="lessonWrap" hidden>Lesson/PdP <select id="lesson"><option value="">Pilih lesson</option></select></label>
+</section>
+<section class="card">
+<h2>Maklumat guru</h2>
+<div class="grid">
+<label>Kelas <input id="cls" maxlength="40" placeholder="Contoh: 3 Amanah"></label>
+<label>Bilangan murid <input id="students" type="number" min="1" max="200" placeholder="30"></label>
+<label>Tarikh <input id="date" type="date"></label>
+<label>Waktu mula <input id="start" type="time"></label>
+<label>Waktu tamat <input id="end" type="time"></label>
+</div>
+<button id="generate" disabled>Jana Bahan</button>
+<p id="status" role="status" aria-live="polite">Menyemak akses akaun…</p>
+<div id="downloads" hidden><strong>RPH sedia dimuat turun</strong><div id="files"></div></div>
+<div id="recover" hidden>
+<p>Jika sambungan terputus, semak permintaan yang sama dahulu. Kredit tidak sepatutnya dipotong dua kali.</p>
+<button id="check">Semak status janaan</button>
+<button id="resume" disabled>Sambung janaan sedia ada</button>
+</div>
+</section>
+</main>
+<script>
+'use strict';
+const $=(id)=>document.getElementById(id);
+const sessionKey='cikgulaju-native-google-last-rph-job';
+let available=false,busy=false,subjects=[],years=[];
+function tell(s,type='muted'){$('status').textContent=s;$('status').className=type;}
+function option(label,value){return new Option(String(label),String(value));}
+function reset(id,placeholder){const el=$(id);el.replaceChildren(option(placeholder,''));el.value='';el.disabled=true;}
+function setBusy(value){busy=value;$('generate').disabled=value||!available||!$('lesson').value;$('check').disabled=value;}
+function hideDownload(){$('downloads').hidden=true;$('files').replaceChildren();}
+function showDownload(job){
+ $('files').replaceChildren();
+ for(const format of ['word','pdf']){
+   const anchor=document.createElement('a');
+   anchor.href='/api/auth/google-native/rph/jobs/'+encodeURIComponent(job)+
+       '/download/'+format;
+   anchor.textContent=format==='word'?'RPH Word (.docx)':'RPH PDF';
+   $('files').append(anchor);
+ }
+ $('downloads').hidden=false;$('recover').hidden=true;
+}
+function lastJob(){try{const d=JSON.parse(sessionStorage.getItem(sessionKey));return d&&typeof d.id==='string'?d:null;}catch{return null;}}
+function remember(job){sessionStorage.setItem(sessionKey,JSON.stringify(job));$('recover').hidden=false;}
+async function api(url,options={}){
+ const r=await fetch(url,{credentials:'same-origin',cache:'no-store',...options});
+ let data;try{data=await r.json();}catch{throw Error('Respons pelayan tidak sah');}
+ if(!r.ok)throw Error(data.error||'Semakan pelayan gagal');
+ return data;
+}
+function params(extra={}){
+ return new URLSearchParams({year:$('year').value,subject:$('subject').value,
+  ...extra}).toString();
+}
+async function catalog(unit){
+ const query=params($('subject').value==='PJPK'
+     ? {component:$('component').value,...(unit?{unit}:{})}
+     : (unit?{unit}:{}));
+ return api('/api/auth/google-native/rph/catalog?'+query);
+}
+function showChoice(id,wrap,items,placeholder){
+ reset(id,placeholder);
+ for(const item of items||[]){
+   if(item&&typeof item.value==='string'&&typeof item.label==='string')
+     $(id).add(option(item.label,item.value));
+ }
+ $(id).disabled=false;$(wrap).hidden=false;
+}
+async function loadUnits(){
+ $('unitWrap').hidden=true;$('lessonWrap').hidden=true;
+ reset('unit','Pilih unit');reset('lesson','Pilih lesson');
+ $('generate').disabled=true;
+ if(!$('year').value||!$('subject').value)return;
+ if($('subject').value==='PJPK'&&!$('component').value)return;
+ try{
+   const data=await catalog();
+   showChoice('unit','unitWrap',data.items,'Pilih unit');
+   tell('Pilih Unit/Tajuk kemudian Lesson/PdP.');
+ }catch(e){tell(e.message,'error');}
+}
+async function loadLessons(){
+ $('lessonWrap').hidden=true;reset('lesson','Pilih lesson');
+ $('generate').disabled=true;
+ if(!$('unit').value)return;
+ try{
+   const data=await catalog($('unit').value);
+   showChoice('lesson','lessonWrap',data.items,'Pilih Lesson/PdP');
+   tell('Lengkapkan maklumat guru dan tekan Jana Bahan.');
+ }catch(e){tell(e.message,'error');}
+}
+function teacher(){
+ const time1=$('start').value,time2=$('end').value;
+ return {'class':$('cls').value.trim(),'students':$('students').value,
+         'date':$('date').value,'time':time1&&time2?time1+' - '+time2:''};
+}
+function selection(){return {
+ year:Number($('year').value),subject:$('subject').value,unit:$('unit').value,
+ lesson:$('lesson').value,component:$('subject').value==='PJPK'?$('component').value:null
+};}
+async function run(){
+ if(busy||!available||!$('lesson').value)return;
+ const body={selection:selection(),teacher:teacher()};
+ if(body.teacher.time&&body.teacher.time.split(' - ')[0]>=body.teacher.time.split(' - ')[1]){
+   tell('Waktu tamat mesti selepas waktu mula.','error');return;
+ }
+ hideDownload();setBusy(true);
+ tell('Mendaftarkan permintaan RPH…');
+ try{
+   const issued=await api('/api/auth/google-native/rph/issue',{
+     method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+   if(!issued.job_id||!issued.ticket)throw Error('Tiket janaan tidak lengkap');
+   const job={id:issued.job_id,ticket:issued.ticket,selection:body.selection,teacher:body.teacher};
+   remember(job);
+   tell('Menjana RPH Word dan PDF daripada sumber asal…');
+   await runExisting(job);
+ }catch(e){
+   tell(e.message+'. Jika permintaan sudah dibuat, semak status janaan asal dahulu.','error');
+   $('recover').hidden=!lastJob();
+ }finally{setBusy(false);}
+}
+async function runExisting(job){
+ const data=await api('/api/auth/google-native/rph/generate',{
+   method:'POST',headers:{'Content-Type':'application/json'},
+   body:JSON.stringify({selection:job.selection,teacher:job.teacher,ticket:job.ticket})});
+ if(data.status==='ready'){
+   showDownload(job.id);
+   sessionStorage.removeItem(sessionKey);
+   tell('RPH berjaya disediakan. Baki janaan: '+String(data.remaining),'success');
+   return;
+ }
+ throw Error('Janaan belum boleh disahkan');
+}
+async function checkExisting(){
+ const job=lastJob();if(!job){$('recover').hidden=true;return;}
+ setBusy(true);
+ try{
+   const result=await api('/api/auth/google-native/rph/jobs/'+encodeURIComponent(job.id)+'/status');
+   if(result.ready){
+     showDownload(job.id);sessionStorage.removeItem(sessionKey);
+     tell('RPH lama dijumpai. Muat turun dokumen di bawah.','success');
+   }else{
+     $('recover').hidden=false;$('resume').disabled=!job.ticket;
+     tell('RPH belum siap. Sambung permintaan ini jika perlu; jangan buat janaan baharu dulu.');
+   }
+ }catch(e){tell(e.message,'error');}
+ finally{setBusy(false);}
+}
+$('year').addEventListener('change',()=>{
+ reset('subject','Pilih subjek');
+ $('unitWrap').hidden=true;$('lessonWrap').hidden=true;$('compWrap').hidden=true;
+ reset('unit','Pilih unit');reset('lesson','Pilih lesson');$('generate').disabled=true;
+ for(const s of subjects)$('subject').add(option(s.label,s.value));
+ $('subject').disabled=!$('year').value;
+});
+$('subject').addEventListener('change',()=>{
+ $('compWrap').hidden=$('subject').value!=='PJPK';$('component').value='';
+ loadUnits();
+});
+$('component').addEventListener('change',loadUnits);
+$('unit').addEventListener('change',loadLessons);
+$('lesson').addEventListener('change',()=>{$('generate').disabled=!available||busy||!$('lesson').value;});
+$('generate').addEventListener('click',run);
+$('check').addEventListener('click',checkExisting);
+$('resume').addEventListener('click',async()=>{
+ const job=lastJob();if(!job)return;
+ setBusy(true);
+ try{tell('Menyambung janaan asal…');await runExisting(job);}
+ catch(e){tell(e.message,'error');}
+ finally{setBusy(false);}
+});
+(async()=>{
+ try{
+   const data=await api('/api/auth/google-native/rph/capabilities');
+   if(!data.enabled||!Array.isArray(data.years)||!Array.isArray(data.subjects))
+     throw Error('Modul RPH Google belum tersedia');
+   years=data.years;subjects=data.subjects.map(v=>({value:v,label:v}));
+   for(const y of years)$('year').add(option('Tahun '+y,y));
+   $('year').disabled=false;available=data.access_mode!=='exhausted';
+   $('generate').disabled=true;
+   tell('Akses '+(data.access_mode==='trial'?'percubaan':data.access_mode)+
+        ' · Baki janaan: '+String(data.remaining));
+   const job=lastJob();if(job)$('recover').hidden=false;
+ }catch(e){tell(e.message,'error');}
+})();
+</script></body></html>
