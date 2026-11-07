@@ -23,7 +23,7 @@ input{font:inherit;width:100%;padding:11px 14px;border:1px solid #b7cec1;border-
 <body><main>
 <header><span class="brand">CikguLaju AI</span><a href="/google-staging-account">Akaun Saya</a></header>
 <h1>Pilih Lesson / PdP</h1>
-<p>Ini paparan aliran Web menggunakan akaun Google yang telah disahkan. Pilihan kurikulum diambil daripada sumber Web sedia ada, bukan senarai rekaan.</p>
+<p>Ini paparan Web untuk akaun Google atau Telegram yang telah dipautkan dan disahkan. Pilihan kurikulum diambil daripada sumber Web sedia ada, bukan senarai rekaan.</p>
 <p class="notice" id="stagingNotice"><strong>Mod ujian staging:</strong> Pilihan kurikulum Tahun 2–6 bagi subjek yang tersedia. Janaan RPH hanya dibenarkan untuk akaun penguji yang diluluskan, bukan pengguna rasmi.</p>
 <section class="card">
 <div><label for="year">Tahun</label><select id="year"><option value="">Pilih Tahun</option></select></div>
@@ -96,7 +96,7 @@ const load=async(url)=>{
  if(r.status===401){location.assign('/google-staging-login');throw Error('Sesi tamat');}
  if(!r.ok)throw Error('Sumber kurikulum belum tersedia');
  const data=await r.json();
- if(data.google_verified!==true||data.staging_only!==true||
+ if(data.identity_verified!==true||data.staging_only!==true||
     data.rph_generation_enabled!==false)throw Error('Status staging tidak sah');
  return data;
 };
@@ -254,7 +254,7 @@ get('generate').addEventListener('click',async()=>{
   const capResponse=await safeGet('/api/google-staging/web/rph/capabilities');
   if(capResponse.ok){
     const cap=await capResponse.json();
-    generationAllowed=cap.google_verified===true&&cap.staging_only===true&&
+    generationAllowed=cap.identity_verified===true&&cap.staging_only===true&&
                       cap.generation_enabled===true;
     // Capabilities may arrive after the user has already opened materials.
     get('generationControls').hidden=get('results').hidden||!generationAllowed;
