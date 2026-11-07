@@ -36,6 +36,11 @@ LESSON_CODES = {
     "T2-L108": ["5.4.3", "5.4.4"],
 }
 CORRECTED_IDS = {"T2-L105", "T2-L108"}
+TEACHER_REFERENCE_PAGES = {
+    "T2-L102": [134],
+    "T2-L105": [134, 135],
+    "T2-L108": [135, 136],
+}
 OLD_543 = "5.4.3 مڠاڤليكاسي ادب مڠاسيهي رسول الله"
 NEW_543 = "5.4.3 مڠاڤليكاسي ادب٢ مڠاسيهي رسول الله"
 OLD_OBJECTIVE_543 = "مڠاڤليكاسي ادب مڠاسيهي رسول الله"
@@ -46,6 +51,7 @@ CSV_FIELDS = (
     "dskp_file_id", "dskp_pdf_page", "dskp_printed_page",
     "textbook_file_id", "textbook_sha256",
     "verified_book_sp_footer_correspondence",
+    "source_supported_material_reference_pages", "source_original_material_line_preserved",
     "dskp_543_adab_adab_wording_corrected",
     "original_sk_sp_preserved", "original_objective_preserved",
     "activity_exact_page_verified", "jawi_editor_approved",
@@ -84,6 +90,20 @@ def audit(root=ROOT):
         assert meta["textbook_page_claim_original_unmodified"] is True
         assert record["staging_textbook_toc_correction"]["publication"] == "HOLD"
         assert "ms. 133–140" in fields["bahan"]
+        material = meta["material_page_guidance"]
+        assert material["textbook_printed_pages_observed"] == TEACHER_REFERENCE_PAGES[lesson_id]
+        assert material["original_materials_first_line"] == (
+            "Kad situasi adab, gambar contoh tingkah laku, senarai semak pemerhatian"
+        )
+        assert material["draft_materials_first_line"] == fields["bahan"].splitlines()[0]
+        assert material["draft_materials_first_line"].startswith(
+            material["original_materials_first_line"]+"; Buku Teks PI Tahun 2 ms. "
+        )
+        assert material["original_audit_note_preserved"] is True
+        assert material["textbook_reference_only_not_pdf_copy"] is True
+        assert material["exercise_or_pbd_verified"] is False
+        assert material["full_content_expert_approved"] is False
+        assert material["publication"] == "HOLD"
         original_sp = meta["original_sp_preserved"]
         original_obj = meta["original_objective_preserved"]
         assert isinstance(original_sp, str) and isinstance(original_obj, str)
@@ -122,6 +142,8 @@ def audit(root=ROOT):
             "textbook_file_id": TEXTBOOK_DRIVE_ID,
             "textbook_sha256": TEXTBOOK_SHA256,
             "verified_book_sp_footer_correspondence": True,
+            "source_supported_material_reference_pages": "|".join(str(x) for x in TEACHER_REFERENCE_PAGES[lesson_id]),
+            "source_original_material_line_preserved": True,
             "dskp_543_adab_adab_wording_corrected": correction,
             "original_sk_sp_preserved": bool(original_sp),
             "original_objective_preserved": bool(original_obj),
@@ -145,6 +167,7 @@ def audit(root=ROOT):
         "book_page_to_pdf_offset": BOOK_PDF_OFFSET,
         "directly_cross_checked_lesson_count": 3,
         "sp_543_jawi_wording_corrections": 2,
+        "staging_rph_material_book_page_references_added": 3,
         "book_sp_footer_page_evidence_count": 5,
         "lesson_specific_activity_approvals": 0,
         "jawi_expert_approvals": 0,
