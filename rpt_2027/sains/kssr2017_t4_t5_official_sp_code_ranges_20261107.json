@@ -1,0 +1,65 @@
+{
+  "status": "OFFICIAL_KSSR2017_YEAR4_YEAR5_PDF_CODE_SET_EVIDENCE_ONLY",
+  "date": "2026-11-07",
+  "source_method": "Read actual owner Drive original KPM KSSR Semakan 2017 DSKP PDFs; PyMuPDF original text tokens of SP codes from PDF pages >=51, grouped by SK, cross-inspected original source pages. Original PDFs were SHA256 locked. Presence of code is not proof of full text matched to v26; colliding code numbers may mean DIFFERENT YEAR-specific content.",
+  "release_approved": false,
+  "years": [
+    {
+      "year": 4,
+      "sha256": "623e60d32156e1a3eeb399f856f40dc6529946445278bf4cf69aea081ad543ea",
+      "pdf_pages": 92,
+      "source_url": "https://drive.google.com/file/d/1eXDdb_qSfCKyqoVtl9T4q2I4rKyHtk9D/view",
+      "official_unique_sp": 91,
+      "sk_sp_max_suffix": {
+        "1.1": 12,
+        "2.1": 6,
+        "2.2": 4,
+        "2.3": 5,
+        "3.1": 4,
+        "3.2": 4,
+        "4.1": 4,
+        "4.2": 5,
+        "5.1": 4,
+        "5.2": 4,
+        "5.3": 4,
+        "6.1": 5,
+        "7.1": 6,
+        "7.2": 3,
+        "8.1": 3,
+        "8.2": 4,
+        "9.1": 3,
+        "9.2": 4,
+        "10.1": 3,
+        "10.2": 4
+      }
+    },
+    {
+      "year": 5,
+      "sha256": "e90744b28e6cc3943e8707475a911238ffc8b6a9dffb812bf742d35bcaa61ef6",
+      "pdf_pages": 88,
+      "source_url": "https://drive.google.com/file/d/1YkiK-pVo4UUzyOUvv_Vrico58eQyddCz/view",
+      "official_unique_sp": 95,
+      "sk_sp_max_suffix": {
+        "1.1": 12,
+        "2.1": 5,
+        "2.2": 4,
+        "2.3": 4,
+        "3.1": 6,
+        "3.2": 4,
+        "3.3": 7,
+        "4.1": 3,
+        "4.2": 4,
+        "5.1": 1,
+        "5.2": 7,
+        "5.3": 4,
+        "6.1": 7,
+        "7.1": 6,
+        "8.1": 5,
+        "8.2": 4,
+        "9.1": 4,
+        "9.2": 3,
+        "10.1": 5
+      }
+    }
+  ]
+}
