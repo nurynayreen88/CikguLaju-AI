@@ -8,6 +8,7 @@ import os
 import uuid
 from flask import Blueprint, jsonify, make_response, request, send_file, current_app
 from io import BytesIO
+from pathlib import Path
 
 from web.google_auth_staging_routes import (
     TICKET_COOKIE, _enabled_config,
@@ -101,6 +102,24 @@ def _same_origin(cfg):
     return (request.headers.get("Origin") == cfg["origin"]
             and request.headers.get("Sec-Fetch-Site", "same-origin") in
                 ("same-origin", "none"))
+
+
+@bp.get("/google-staging-payments")
+def google_payment_page():
+    config, uid, error = _google_account()
+    if error:
+        return error
+    return send_file(Path(__file__).with_name("google_staging_payment.html"),
+                     mimetype="text/html", max_age=0)
+
+
+@bp.get("/admin/google-staging-payments")
+def google_payment_admin_page():
+    config, admin_uid, error = _reviewer()
+    if error:
+        return error
+    return send_file(Path(__file__).with_name("google_staging_admin_payments.html"),
+                     mimetype="text/html", max_age=0)
 
 
 @bp.get("/api/web/google/payments")
