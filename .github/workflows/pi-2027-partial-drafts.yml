@@ -247,3 +247,54 @@ jobs:
             build/pi_held_six_word_pdf_a4_qa.json
           if-no-files-found: warn
           retention-days: 30
+
+
+  editor-word-pdf-export:
+    name: Export 696 editor-only RPH as year ZIPs (Word/PDF; NEVER production)
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Word/PDF generation tools and Amiri Jawi font
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-hosny-amiri fonts-liberation
+          python -m pip install --disable-pip-version-check python-docx==1.1.2 pypdf==5.1.0
+          fc-match "Amiri" | head -1
+      - name: Generate and audit complete 696 one-RPH-per-Lesson review archive
+        run: |
+          python rph_standalone/pendidikan_islam_draf_2027/pi_696_rph_editor_export.py \
+            --output build/pi_2027_696_rph_editor_review --batch-size 24
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path("build/pi_2027_696_rph_editor_review")
+          data=json.loads((root/"RUN_SUMMARY.json").read_text(encoding="utf-8"))
+          assert data["rendered_docx"]==696 and data["rendered_pdf"]==696, data
+          assert len(data["year_archives"])==5, data
+          assert data["teacher_publishable"]==0 and data["source_data_modified"] is False
+          for path in data["year_archives"]:
+              assert (root/path).stat().st_size>5000
+          print("REVIEW ARCHIVES ONLY:", data["year_archives"])
+          PY
+      - name: Upload 5 year-specific reviewer ZIP files and audit indexes
+        uses: actions/upload-artifact@v4
+        with:
+          name: pi-2027-696-review-word-pdf-years2-6-NO_GO
+          path: |
+            build/pi_2027_696_rph_editor_review/RPH_PI_Tahun_2_DRAF_SEMAKAN_Word_PDF.zip
+            build/pi_2027_696_rph_editor_review/RPH_PI_Tahun_3_DRAF_SEMAKAN_Word_PDF.zip
+            build/pi_2027_696_rph_editor_review/RPH_PI_Tahun_4_DRAF_SEMAKAN_Word_PDF.zip
+            build/pi_2027_696_rph_editor_review/RPH_PI_Tahun_5_DRAF_SEMAKAN_Word_PDF.zip
+            build/pi_2027_696_rph_editor_review/RPH_PI_Tahun_6_DRAF_SEMAKAN_Word_PDF.zip
+            build/pi_2027_696_rph_editor_review/INDEX_EDITOR_696.json
+            build/pi_2027_696_rph_editor_review/INDEX_EDITOR_696.csv
+            build/pi_2027_696_rph_editor_review/RUN_SUMMARY.json
+            build/pi_2027_696_rph_editor_review/README_SEMAKAN_EDITOR.txt
+          retention-days: 30
+          if-no-files-found: error
