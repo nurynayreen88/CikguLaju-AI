@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>CikguLaju — Pautkan Telegram (Staging)</title>
+<style>
+:root{font:16px/1.55 system-ui,sans-serif;background:#f3f8f5;color:#163e34}
+*{box-sizing:border-box}body{margin:0;padding:18px}main{max-width:600px;margin:5vh auto}
+h1{font-size:1.7rem;line-height:1.2}.card{background:white;padding:22px;border:1px solid #d6e6dd;border-radius:16px;margin:16px 0}
+a{color:#087568}button{font:inherit;font-weight:700;border:0;border-radius:10px;padding:12px 19px;background:#087568;color:white;cursor:pointer}
+button:disabled{opacity:.45;cursor:not-allowed}.notice{padding:13px;background:#f3f7f5;border-left:3px solid #779b8c;border-radius:6px}
+#status{min-height:30px}small,p{color:#4d685d}[hidden]{display:none!important}
+</style>
+</head>
+<body><main>
+<a href="/google-staging-account">← Akaun Saya</a>
+<h1>Pautkan akaun Telegram</h1>
+<p class="notice"><strong>Ujian staging sahaja.</strong> Ini mengesahkan pemilikan kedua-dua identiti. Langganan, kuota dan status Rakan Pembangun Telegram belum disatukan dengan akaun Web.</p>
+<section class="card">
+<h2>1. Sahkan akaun Telegram</h2>
+<p>Log masuk menggunakan Telegram yang anda gunakan untuk CikguLaju. Jangan pautkan akaun milik orang lain.</p>
+<div id="widget">Memeriksa akaun Google dan bot Telegram…</div>
+<p id="existing" hidden></p>
+</section>
+<section class="card" id="confirmation" hidden>
+<h2>2. Sahkan pemadanan</h2>
+<p id="preview"></p>
+<p><small>Dengan mengesahkan, identiti Telegram ini akan dikaitkan kepada akaun Google yang sedang digunakan. Pemadanan ini tidak boleh diubah sendiri semasa ujian.</small></p>
+<button id="confirm" type="button">Ya, pautkan akaun ini</button>
+</section>
+<p id="status" role="status" aria-live="polite"></p>
+<script>
+'use strict';
+const get=id=>document.getElementById(id);
+let proof=null;
+function setStatus(message){get('status').textContent=message;}
+window.onTelegramAuth=function(user){
+  if(!user||typeof user!=='object'||!user.hash||!user.auth_date||!user.id){
+    setStatus('Telegram tidak memberikan pengesahan lengkap.');return;
+  }
+  proof=user;
+  const name=[user.first_name,user.last_name].filter(Boolean).join(' ')||'Pengguna Telegram';
+  get('preview').textContent=name+' — ID Telegram: '+String(user.id)+'. Betul ini akaun Telegram anda?';
+  get('confirmation').hidden=false;
+  setStatus('Sila semak identiti sebelum menekan butang pengesahan.');
+};
+async function initialize(){
+  try{
+    const res=await fetch('/api/google-staging/link/telegram/status',
+                          {credentials:'same-origin',cache:'no-store'});
+    if(res.status===401){location.assign('/google-staging-login');return;}
+    const data=await res.json();
+    if(!res.ok)throw Error(data.error||'Fungsi pemadanan belum tersedia.');
+    if(data.linked){
+      get('widget').hidden=true;
+      get('existing').hidden=false;
+      get('existing').textContent='Akaun Google ini telah dipautkan kepada ID Telegram '+data.telegram_user_id+'.';
+      setStatus('Identiti telah dipautkan di staging; akses berbayar Telegram belum dipindahkan.');
+      return;
+    }
+    if(typeof data.bot_username!=='string'||
+       !/^[A-Za-z][A-Za-z0-9_]{4,31}$/.test(data.bot_username))throw Error('Bot Telegram staging belum dikonfigurasi.');
+    get('widget').replaceChildren();
+    const script=document.createElement('script');
+    script.async=true;script.src='https://telegram.org/js/telegram-widget.js?22';
+    script.setAttribute('data-telegram-login',data.bot_username);
+    script.setAttribute('data-size','large');
+    script.setAttribute('data-userpic','false');
+    script.setAttribute('data-onauth','onTelegramAuth(user)');
+    script.onerror=()=>setStatus('Widget Telegram tidak dapat dimuatkan. Cuba semula.');
+    get('widget').appendChild(script);
+  }catch(e){get('widget').textContent=e.message||'Belum tersedia.';}
+}
+get('confirm').addEventListener('click',async()=>{
+  if(!proof)return;
+  const button=get('confirm');button.disabled=true;
+  setStatus('Mengesahkan kedua-dua akaun…');
+  try{
+    const response=await fetch('/api/google-staging/link/telegram',{
+      method:'POST',credentials:'same-origin',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({telegram_auth:proof})
+    });
+    const data=await response.json();
+    if(!response.ok||data.linked!==true)throw Error(data.error||'Pemadanan gagal');
+    proof=null;
+    get('confirmation').hidden=true;
+    get('widget').hidden=true;
+    get('existing').hidden=false;
+    get('existing').textContent='Berjaya dipautkan di staging: ID Telegram '+data.telegram_user_id+'.';
+    setStatus('Pengesahan dua identiti berjaya. Langganan Telegram belum dipindahkan.');
+  }catch(e){button.disabled=false;setStatus(e.message||'Pemadanan belum berjaya.');}
+});
+initialize();
+</script>
+</main></body></html>
