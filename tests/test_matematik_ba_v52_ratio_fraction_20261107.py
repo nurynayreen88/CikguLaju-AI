@@ -20,7 +20,8 @@ class V52SourceCompetencyAudit(unittest.TestCase):
             rows=list(csv.DictReader(f))
         self.assertEqual(len(rows),42)
         self.assertEqual(len({x["lesson_id"] for x in rows}),13)
-        self.assertEqual(Counter({k:len([x for x in rows if x["lesson_id"]==k]) for k in {x["lesson_id"] for x in rows}}).total(),13)
+        self.assertEqual(Counter(x["year"] for x in rows)["4"],3)
+        self.assertEqual(Counter(x["year"] for x in rows)["5"],39)
         self.assertEqual({x["lesson_id"] for x in rows},{
             "T4-L104","T5-L072","T5-L074","T5-L077","T5-L079","T5-L082",
             "T5-L089","T5-L090","T5-L091","T5-L092","T5-L093","T5-L107","T5-L108"
