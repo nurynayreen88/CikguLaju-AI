@@ -93,7 +93,7 @@ def english_records(year):
                 continue
             week=f"M{page_index:02d}"
             if week not in master["A"]:
-                raise ValueError("English source week beyond 44 weeks")
+                raise ValueError(f"English T{year} page={page_index+1} week={week} lesson_count={len(result)} ids={[p for p,_ in labeled]} beyond master")
             # Main and Complementary are physically in x292–650, with
             # lesson/Theme/Topic in x129–288 and reference in x655–810.
             for i,(number,(y0,y1)) in enumerate(labeled):
