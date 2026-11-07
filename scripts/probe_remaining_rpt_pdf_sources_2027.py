@@ -18,3 +18,21 @@ for subject, pattern in sources.items():
                 text=pg.get_text("text",sort=True).strip()
                 if len(text)>4900:text=text[:4900]+"...TRUNCATED..."
                 print(f"\n--- page={i+1} {pg.rect.width:.0f}x{pg.rect.height:.0f} chars={len(pg.get_text('text'))} ---\n{text}")
+
+print("\\n=== PDF GRID COORD PROBE ===")
+for sub,name,page_num in (
+    ("english","RPT_ENGLISH_TAHUN_2_2027_UNTUK_GURU.pdf",1),
+    ("matematik","RPT_Matematik_Tahun_2_2027_v28_SEMENTARA.pdf",0),
+):
+    pdf=fitz.open(ROOT/"rpt_2027"/sub/name)
+    pg=pdf[page_num]
+    print(f"=== GRID {sub}, page {page_num+1} ===")
+    for key in (("LESSON: 1","LESSON: 2","LESSON: 3","LESSON: 4") if sub=="english" else
+                ("Lesson 001","Lesson 002","Lesson 003","Lesson 004")):
+        print(key, [tuple(round(v,1) for v in rect) for rect in pg.search_for(key)])
+    words=pg.get_text("words")
+    for word in sorted(words,key=lambda z:(round(z[1]/8)*8,z[0])):
+        x0,y0,x1,y1,t,*_=word
+        if 66<y0<290 and (y0<145 or t in ("MAIN","COMPLEMENTARY","LESSON:","Lesson","001","002","UNIT","FOCUS:")):
+            print(f"XY x={x0:5.1f} y={y0:5.1f} {t!r}")
+    pdf.close()
