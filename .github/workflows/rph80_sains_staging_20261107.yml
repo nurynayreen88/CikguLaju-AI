@@ -56,6 +56,8 @@ on:
       - "audits/sains_y5_kssr2017_content_kps_scope_20261107.json"
       - "tools/audit_sains_y5_kssr2017_content_kps_20261107.py"
       - "tests/test_sains_y5_kssr2017_content_kps_20261107.py"
+      - "audits/sains_y5_8_activities_semantic_repair_20261107.json"
+      - "tests/test_sains_y5_8_activities_semantic_repair_20261107.py"
       - "tools/audit_sains_y6_84_source_preflight_20261107.py"
       - "audits/sains_y6_2021_textbook_toc_topic_ranges_20261107.json"
       - "tools/sains_y6_textbook_toc_20261107.py"
@@ -143,6 +145,8 @@ jobs:
         run: python -m tools.check_sains_y4_79_word_a4_20261107
       - name: Verify authored Sains Year5 bank contains 83 unique, safe SP lesson plans
         run: python -m unittest discover -s tests -p 'test_sains_y5_83_bank_quality_20261107.py' -v
+      - name: Verify eight Year5 SPs use safe observable pupil activities
+        run: python -m unittest discover -s tests -p 'test_sains_y5_8_activities_semantic_repair_20261107.py' -v
       - name: Verify all 83 official KSSR2017 Year5 content SP and draft 12-KPS evidence
         run: |
           python -m unittest discover -s tests -p 'test_sains_y5_kssr2017_content_kps_20261107.py' -v
