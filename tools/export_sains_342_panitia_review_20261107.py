@@ -15,7 +15,7 @@ from tools.audit_rph80_sains_first_20261107 import EXPECTED, validated_staging_d
 from tools.sains_buku_aktiviti_mapping_20261107 import load_activity_books,is_direct_sp_match
 from tools.sains_y6_textbook_toc_20261107 import cue_for,SOURCE_URL
 from tools.render_sains_y3_3_secondary_sp_pbd_20261107 import TASKS as Y3_SECONDARY_PBD, OUT as Y3_SECONDARY_OUTPUT,stem as y3_secondary_stem
-from tools.render_sains_y2_51_rph_draf_20261107 import Y2_SOURCE_CONFLICTS, CORRECTED_CANDIDATE_TITLE
+from tools.render_sains_y2_51_rph_draf_20261107 import Y2_SOURCE_CONFLICTS, CORRECTED_CANDIDATE_TITLE, verified_original_textbook_pages
 from tools.render_sains_y2_3_unmapped_sp_pbd_20261107 import (
     load_semantics as year2_unmapped_semantics,doc_path as year2_supplement_doc_path
 )
@@ -40,6 +40,7 @@ def get_review_rows():
     if len(list(print_y3.glob("SAINS_T3_PDP_*_DRAF.pdf")))!=45:
         raise RuntimeError("Year3 LibreOffice Word print proof missing")
     book_mappings=load_activity_books()
+    book_year2=verified_original_textbook_pages()
     result=[]
     for row in source:
         year=int(row["tahun"])
@@ -102,6 +103,14 @@ def get_review_rows():
                 activity_status+="__MULTI_SOURCE_SP_SECONDARY_PBD_PENDING"
             if year==2 and sp in ("4.1.7","6.1.6"):
                 pbd_alt=f"Original CikguLaju PBD untuk {code}, SP {sp}; bukan Buku Aktiviti rasmi"
+        if year==2:
+            textbook=book_year2.get(sp)
+            if not textbook or textbook["teacher_academic_equivalence_approved"] is not False:
+                raise RuntimeError("Year2 textbook visual review source changed "+code)
+            book_context=(f"Buku Teks asal m/s bercetak {textbook['printed_page']}, "
+                          f"PDF p{int(textbook['pdf_page_one_based'])}; kod SP {sp} dilihat.")
+            book_source="https://drive.google.com/file/d/1LkJJWUb-zyFJ1ftpHM-4HIpIcEGLORI9/view"
+            book_page_status="PRINTED_PAGE_AND_SP_LABEL_CHECKED__CONTENT_PEDAGOGY_TEACHER_HOLD"
         if year==6:
             topic=cue_for(sp)
             book_context=(f"Tajuk '{topic['topic']}', julat m/s "
@@ -208,6 +217,9 @@ def main():
         "year2_original_pdp_source_count_unchanged":51,
         "year_counts":{str(y):EXPECTED[y] for y in EXPECTED},
         "total_word_pdf_rph":342,"technical_A4":342,
+        "year2_textbook_printed_page_and_sp_visual_match":51,
+        "year2_textbook_unique_original_pages_examined":43,
+        "year2_textbook_content_teacher_approved":0,
         "year6_textbook_topic_toc_only":84,
         "year6_exact_textbook_sp_page_approved":0,
         "activity_book_y2_y3_matched_code":94,
