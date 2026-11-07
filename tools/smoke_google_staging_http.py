@@ -47,6 +47,12 @@ def check():
     assert ready.get("google_login_configured") is True, "Google config not ready"
     assert ready.get("rph_generator_enabled") is False, "RPH staging gate unexpectedly open"
     assert ready.get("real_payments_enabled") is False, "Real payment gate unexpectedly open"
+    assert ready.get("rph_staging_test_gate_open") is False, (
+        "Google native RPH staging generation should remain disabled")
+    native_configured = ready.get("native_renderer_credentials_configured")
+    assert type(native_configured) is bool, "Missing safe private bridge diagnostic"
+    print("PASS: native RPH bridge credentials configured:",
+          native_configured, "; generation gate remains off.")
 
     status, headers, blob = fetch("/google-staging-login")
     assert status == 200 and b"/api/auth/google/start" in blob, ("login page", status)
