@@ -169,6 +169,34 @@ class GoogleNativeCanonicalTests(unittest.TestCase):
                                   headers={"Origin":BASE,"Sec-Fetch-Site":"same-origin"})
             self.assertEqual(good.status_code,200)
 
+    def test_dashboard_displays_verified_email_login_id_and_real_trial_balance(self):
+        with (patch("web.google_native_canonical_login_routes._existing_google_account",
+                    return_value=GOOGLE_ONLY),
+              patch("web.google_native_canonical_login_routes.canonical_rph_access",
+                    return_value={"rph_access_mode":"trial",
+                                  "rph_trial_remaining":8,"account_id":ACC})):
+            page=self.client.get("/google-account",base_url=BASE)
+        self.assertEqual(page.status_code,200)
+        self.assertIn(b"ID log masuk Google",page.data)
+        self.assertIn(b"teacher@example.com",page.data)
+        self.assertIn(b"Baki janaan percuma: 8",page.data)
+        self.assertIn(b'href="/google-rph"',page.data)
+        self.assertEqual(page.headers["Cache-Control"],"no-store, private")
+
+    def test_paid_linked_google_uses_original_telegram_web_with_no_trial_badge(self):
+        linked={**GOOGLE_ONLY,"legacy_telegram_user_id":123456789,
+                "google_only_trial_remaining":None}
+        with (patch("web.google_native_canonical_login_routes._existing_google_account",
+                    return_value=linked),
+              patch("web.google_native_canonical_login_routes.canonical_rph_access",
+                    return_value={"rph_access_mode":"paid",
+                                  "rph_trial_remaining":8,"account_id":ACC})):
+            page=self.client.get("/google-account",base_url=BASE)
+        self.assertEqual(page.status_code,200)
+        self.assertIn(b"Akses RPH tanpa had",page.data)
+        self.assertNotIn(b"Baki janaan percuma",page.data)
+        self.assertIn(b'href="/"',page.data)
+
     def test_login_option_visible_only_when_original_web_google_is_enabled(self):
         with patch.dict("os.environ", {"CIKGULAJU_NATIVE_GOOGLE_RPH_ENABLED":"1"}):
             yes=self.client.get("/api/auth/google-native/options",base_url=BASE)
