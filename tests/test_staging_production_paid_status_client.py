@@ -244,9 +244,28 @@ class ProductionPaidBridgeTests(unittest.TestCase):
                     side_effect=PaidStatusBridgeUnavailable("offline"))):
             with self.assertRaises(PaidStatusBridgeUnavailable):
                 verified_paid_uid_for_rph(GOOGLE, CFG)
-        with patch.dict("os.environ", {"CIKGULAJU_PAID_BRIDGE_STAGING_READ_ENABLED":"0"}):
+        with (patch.dict("os.environ", {"CIKGULAJU_PAID_BRIDGE_STAGING_READ_ENABLED":"0"}),
+              patch("web.google_telegram_link_staging_routes._link_status",
+                    return_value={"linked": True, "staging_only": True,
+                                  "telegram_user_id": str(UID)})):
             with self.assertRaises(PaidStatusBridgeUnavailable):
                 verified_paid_uid_for_rph(GOOGLE, CFG)
+
+    def test_google_only_free_trial_never_requires_render_bridge(self):
+        with (patch.dict("os.environ",
+                         {"CIKGULAJU_PAID_BRIDGE_STAGING_READ_ENABLED": "0"}),
+              patch("web.google_telegram_link_staging_routes._link_status",
+                    return_value={"linked": False, "staging_only": True}) as mapping,
+              patch("web.staging_production_paid_status_client.read_paid_status") as bridge):
+            self.assertIsNone(verified_paid_uid_for_rph(GOOGLE, CFG))
+            mapping.assert_called_once_with(CFG, ACCOUNT)
+            bridge.assert_not_called()
+
+    def test_unlinked_telegram_session_cannot_inherit_google_trial(self):
+        with patch("web.google_telegram_link_staging_routes._link_status",
+                   return_value={"linked": False, "staging_only": True}):
+            with self.assertRaises(PaidStatusBridgeUnavailable):
+                verified_paid_uid_for_rph(TELEGRAM, CFG)
 
     def test_production_user_missing_is_not_a_false_negative_entitlement(self):
         with (patch("web.google_telegram_link_staging_routes._link_status",
