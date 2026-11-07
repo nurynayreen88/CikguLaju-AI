@@ -29,7 +29,7 @@ from rpt_2027.common.sains_y6_bpk_2020_panduan_43_sp_source import source_index 
 OUT=ROOT/"staging/rpt_2027_seragam_2026/sains_342_pdp_SEPARA_DRAF"
 EXPECTED={2:51,3:45,4:79,5:83,6:84}
 DECLARED_SOURCE_NAME=SOURCES["v25.82"]
-HOLD="DRAF LEGACY: SK/SP v25.82/v26.00 belum disahkan semula terhadap DSKP edisi tepat bagi T2-T6; konflik KSSR2017 dikenal pasti pada T4-T6. BUKAN untuk digunakan guru. Agihan minggu hanya CADANGAN."
+HOLD="DRAF LEGACY: Kod SP semakan awal sahaja; pernyataan SK/SP, RPH, buku teks, aktiviti KPS dan agihan tarikh belum diluluskan sepenuhnya terhadap DSKP asal setiap tahun. BUKAN untuk digunakan guru. Agihan minggu hanya CADANGAN."
 
 def _normalize(value):
     return re.sub(r"\s+"," ",str(value or "")).strip()
@@ -56,6 +56,36 @@ def _year3_ledgers():
     if len(fixes["changes"])!=12 or len(refs["items"])!=45:
         raise ValueError("Sains Year3 historical candidate ledgers altered")
     return {a["pdp_code"]:a for a in fixes["changes"]},{a["pdp_code"]:a for a in refs["items"]}
+
+def _year6_nervous_system_2021_text_conflicts():
+    """Two exact but differently worded SP in official 2021 Y6 DSKP.
+
+    This corrects STAGED DISPLAY only, not the legacy DB or lesson title.
+    Published 2021 DSKP has not yet been hashed as an original PDF.
+    """
+    p=ROOT/"rpt_2027/sains/sains_y6_kssr2017_2021_sistem_saraf_2_sp_text_corrections_20261108_DRAF.json"
+    d=json.loads(p.read_text(encoding="utf-8"))
+    if (d.get("status")!="STAGING_SAINS_T6_2021_KPM_DSKP_TWO_NUMERIC_MATCH_BUT_TEXT_CONFLICTS_NOT_RELEASE"
+        or d.get("year")!=6 or len(d.get("entries",[]))!=2
+        or d.get("corrected_sp_display_count")!=2
+        or d.get("year6_remaining_original_pdf_sp_wording_signoff_count")!=0
+        or d.get("academic_2027_rph_approved") is not False
+        or d.get("ready_for_web_telegram") is not False
+        or d.get("production_db_writes")!=0):
+        raise ValueError("Official Sains Year6 2.2.2/2.2.3 crosswalk gate changed")
+    out={}
+    for row in d["entries"]:
+        code=row["sp_code"]
+        if (code not in ("2.2.2","2.2.3") or code in out
+            or row["original_2021_flip_pdf_page"]!=59
+            or row["bpk_2020_guide_pdf_page"]!=23
+            or not row["official_2021_dskp_text"]
+            or row["official_2021_dskp_text"]==row["legacy_v26_text"]):
+            raise ValueError("Unsafe official Year6 2.2.2/2.2.3 source mapping")
+        out[code]=row
+    if set(out)!={"2.2.2","2.2.3"}:
+        raise ValueError("Missing official Sains Year6 nervous system statements")
+    return out
 
 def _missing_35_from_official_dskp():
     """35 Year2/3 printed SP statements directly from KPM PDF (not DB)."""
@@ -129,6 +159,7 @@ def source_records():
     dskp_missing=_missing_35_from_official_dskp()
     official_2017=_kssr2017_official_code_sets_y4_y5()
     panduan_2020=panduan_y6_source_index()
+    y6_text_fixes=_year6_nervous_system_2021_text_conflicts()
     seen_dskp_missing=set()
     years={}
     with TemporaryDirectory(prefix="cikgulaju_sains_rpt_ro_") as tmp:
@@ -193,6 +224,18 @@ def source_records():
                 if not unit or not focus:
                     raise ValueError(f"Year{year} {pdp_code}: original PdP title/unit blank")
                 note=f"{pdp_code} | v25.82: {_normalize(raw.get('verification_status'))}. {HOLD}"
+                y6_text_fix=y6_text_fixes.get(sp) if year==6 else None
+                if y6_text_fix:
+                    # A shared numeric SP code hides distinct teaching targets.
+                    if (verified is None
+                        or _normalize(verified["sp_text"])!=_normalize(y6_text_fix["legacy_v26_text"])
+                        or pdp_code!=y6_text_fix["historical_pdp_code"]):
+                        raise ValueError("Sains T6 original text no longer matches conflict evidence")
+                    sp_display=sp+" — "+y6_text_fix["official_2021_dskp_text"]
+                    curriculum_provenance="KPM2021_PUBLISHED_DSKP_EXACT_SP_DISPLAY_ONLY_NOT_ACADEMIC_SIGNOFF"
+                    note+=(" AMARAN: Teks SP v26 berbeza daripada DSKP 2021 (SP "+
+                           sp+"). Teks rasmi dicadang hanya pada RPT staging;"+
+                           " RPH sebenar WAJIB disemak sebelum pengguna.")
                 official_membership=(sp in official_2017[year] if year in (4,5) else None)
                 if official_membership is False:
                     note+=f" AMARAN: kod SP {sp} TIADA dalam DSKP KSSR2017 Tahun {year} asal; wajib petakan semula sebelum RPT pengguna."
@@ -248,7 +291,11 @@ def source_records():
                     panduan_y6_2020_pdf_pages=panduan_pages,
                     panduan_y6_2020_kps_terms=panduan_kps,
                     panduan_y6_2020_sp_code_source_found=bool(panduan_refs),
-                    panduan_y6_2020_is_approved_rph=False
+                    panduan_y6_2020_is_approved_rph=False,
+                    year6_official_2021_sp_display_reconciled=bool(y6_text_fix),
+                    year6_legacy_original_sp_text=(y6_text_fix["legacy_v26_text"]
+                                                   if y6_text_fix else ""),
+                    year6_official_2021_original_pdf_sha_verified=False
                 ))
             validate_rows("sains",year,rows)
             years[year]=rows
