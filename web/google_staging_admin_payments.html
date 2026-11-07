@@ -15,7 +15,8 @@ a{color:#087568}small{color:#55746a}.fail{color:#a12626}
 <article><h2>Permohonan menunggu</h2><div id="list" aria-live="polite">Memuatkan...</div></article>
 <article id="details">
 <h2>Maklumat permohonan</h2><div id="info"></div>
-<p><a id="receipt" target="_blank" rel="noopener noreferrer">Lihat resit peribadi</a></p>
+<iframe id="receipt-preview" title="Resit bayaran" style="width:100%;height:430px;border:1px solid #d8e6df;border-radius:10px" loading="lazy"></iframe>
+<p><a id="receipt" target="_blank" rel="noopener noreferrer">Buka resit dalam tab baharu</a></p>
 <label for="note">Catatan keputusan</label><textarea id="note" rows="3" maxlength="500" placeholder="Sebab penolakan (jika ditolak)"></textarea>
 <div><button id="approve">Sahkan bayaran</button><button id="reject">Tolak bayaran</button></div>
 </article><p id="message" role="status" aria-live="polite"></p>
@@ -34,10 +35,10 @@ async function refresh(){
  if(!data.payments.length)list.textContent='Tiada permohonan menunggu.';
  for(const p of data.payments){
    const row=document.createElement('div');row.style.padding='12px 0';
-   const btn=document.createElement('button');btn.textContent='Semak';
-   btn.addEventListener('click',()=>open(p.id));
+   const btn=document.createElement('button');
    const label=p.web_accounts?.display_name||'Akaun '+p.account_id.slice(0,8);
-   row.append(document.createTextNode(label+' · '+p.plan_code+' · '+fmt(p.quoted_amount_sen)+' '),btn);
+   btn.textContent=label+' · '+p.plan_code+' · '+fmt(p.quoted_amount_sen);
+   btn.addEventListener('click',()=>open(p.id));row.append(btn);
    list.append(row);
  }
  const linked=safeId(new URLSearchParams(location.search).get('payment'));
@@ -53,6 +54,7 @@ async function open(id){
   ' · Jumlah: '+fmt(data.quoted_amount_sen)+' · Status: '+data.status;
  const receipt=document.getElementById('receipt');
  receipt.href=base+'/'+id+'/receipt';
+ document.getElementById('receipt-preview').src=receipt.href;
  document.getElementById('note').value='';
  document.getElementById('approve').disabled=data.status!=='pending';
  document.getElementById('reject').disabled=data.status!=='pending';
@@ -70,7 +72,9 @@ async function review(action){
   const data=await resp.json();
   message.textContent=resp.ok?'Keputusan: '+data.status+(data.already_reviewed?' (telah diproses)':''):
    data.error||'Semakan gagal.';
-  if(resp.ok){selected='';details.style.display='none';history.replaceState(null,'',location.pathname);
+  if(resp.ok){selected='';details.style.display='none';
+   document.getElementById('receipt-preview').removeAttribute('src');
+   history.replaceState(null,'',location.pathname);
    await refresh()}
  }catch(_){message.textContent='Status kelulusan belum pasti. Muat semula sebelum cuba lagi.'}
  finally{if(details.style.display==='block')buttons.forEach(button=>button.disabled=false)}
