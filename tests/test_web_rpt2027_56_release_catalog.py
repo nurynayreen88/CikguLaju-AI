@@ -92,6 +92,8 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
             self.assertEqual(pdf.status_code,200)
             self.assertEqual(pdf.data,self.pdf)
             self.assertEqual(pdf.mimetype,"application/pdf")
+            self.assertEqual(pdf.headers["X-RPT-Source-SHA256"],
+                             hashlib.sha256(self.pdf).hexdigest())
             self.assertIn("attachment",pdf.headers["Content-Disposition"])
             self.assertEqual(pdf.headers["Cache-Control"],"no-store, private")
 
