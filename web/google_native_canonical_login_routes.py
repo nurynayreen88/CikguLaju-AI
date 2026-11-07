@@ -89,6 +89,14 @@ def _private(resp):
     return resp
 
 
+@bp.get("/api/auth/google-native/options")
+def login_options():
+    # Public capability discovery, no secrets or user data.
+    return jsonify({"google_available": _config() is not None,
+                    "login_provider": "google",
+                    "same_account_backend": True})
+
+
 @bp.get("/google-login")
 def landing():
     if _config() is None:
