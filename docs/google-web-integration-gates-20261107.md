@@ -184,3 +184,51 @@ to avoid claiming success from a fabricated or locally generated RPH.
 - No real payments are requested on staging.
 - SOW/RPT/SK/SP lesson identities stay sourced from approved verified DB,
   not generated or guessed at runtime.
+
+
+## Follow-up integration checkpoint: staging native renderer configuration
+
+Verified on 7 November 2026 (staging only):
+
+- The authoritative **CikguLaju-AI** Render service at
+  `https://cikgulaju-ai.onrender.com` has historically returned HTTP 200
+  for `POST /internal/rph/v1/render` (Render request logs on 5 November).
+  This confirms the route has handled successful requests before; it is **not**
+  proof that the current Google staging server can authenticate to it.
+- The isolated Google staging Render service has been configured with
+  `CIKGULAJU_AUTHORITATIVE_API_URL=https://cikgulaju-ai.onrender.com`,
+  and explicitly `CIKGULAJU_GOOGLE_RPH_STAGING_ENABLED=0`. Neither
+  a service token nor the production database is changed by this operation.
+- A real Flask issue -> generate -> download **integration test** now runs with
+  an in-memory backend and a simulated native Word/PDF generator. It checks
+  10 -> 9 once, idempotent replay, Word/PDF response, failed generation with
+  no credit debit, zero-credit rejection, cross-origin rejection and cross-account
+  access. This test does **not** count as real Telegram-native E2E.
+- Staging `/readyz` provides *non-secret* configuration diagnostics:
+  `native_renderer_credentials_configured` and
+  `rph_staging_test_gate_open`. The public
+  `rph_generator_enabled` release marker remains false.
+  No token or internal endpoint is returned by readiness.
+- The staging-only Google browser account page can list only its own
+  completed private Word/PDF jobs for recovery after closing the browser.
+  No creation, debit, cross-account lookup, or public Storage URL is offered.
+- GitHub Actions run `42342953025` passed all three CI jobs:
+  Python/Flask and JS tests, disposable PostgreSQL quota/payment integration,
+  and anonymous live staging HTTPS smoke. Staging still has no real ready RPH
+  job or debit in the last database verification.
+
+**Remaining hard blocker for real Google native RPH E2E:**
+Obtain and configure the matching `CIKGULAJU_AUTHORITATIVE_API_TOKEN`
+as a **server-only secret on isolated Render staging** from an authorized
+source; never commit it, print it in diagnostics or paste it in chat. The
+Google staging switch must remain off until the matching trusted token
+has been confirmed. A controlled authenticated staging test should then
+verify one native RPH producing BOTH Word/PDF and one durable debit (10 -> 9),
+retry with no second debit, correct source fingerprint, another account
+denied, failure with no debit, and private download recovery.
+
+**Production is still NOT ready:** Google UUIDs cannot yet safely use the
+existing Telegram-keyed subscriptions, RPT, timetable, referral, payment and
+trial records. The canonical-account migration remains a reviewed draft;
+do not merge PR #447 or change production until independent dual-session
+linking, source parity, cross-provider entitlement and payment tests pass.
