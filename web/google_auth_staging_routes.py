@@ -22,7 +22,10 @@ from flask import Blueprint, jsonify, make_response, redirect, request, send_fil
 from web_google_identity_sessions import (
     issue_google_identity_ticket, verify_google_identity_ticket,
 )
-from web.google_account_store import ensure_google_staging_account, GoogleAccountUnavailable
+from web.google_account_store import (
+    ensure_google_staging_account, google_staging_account_profile,
+    GoogleAccountUnavailable,
+)
 
 bp = Blueprint("google_auth_staging", __name__)
 STATE_COOKIE = "cikgulaju_google_oauth_staging_state"
@@ -221,7 +224,7 @@ def google_callback():
     if (request.accept_mimetypes.accept_html
             and request.accept_mimetypes["text/html"] >=
                 request.accept_mimetypes["application/json"]):
-        success = redirect(config["origin"] + "/google-staging-payments", code=303)
+        success = redirect(config["origin"] + "/google-staging-account", code=303)
         success.delete_cookie(STATE_COOKIE, path="/api/auth/google",
                               secure=True, httponly=True, samesite="Lax")
     success.set_cookie(TICKET_COOKIE, ticket, secure=True, httponly=True,
@@ -262,4 +265,48 @@ def google_logout():
     response.delete_cookie(TICKET_COOKIE, path="/",
                            secure=True, httponly=True, samesite="Lax")
     response.headers["Cache-Control"] = "no-store"
+    return response
+
+
+@bp.get("/google-staging-account")
+def google_staging_account_page():
+    config = _enabled_config()
+    if not config:
+        return jsonify({"error": "Google staging login not configured"}), 503
+    actor = verify_google_identity_ticket(
+        request.cookies.get(TICKET_COOKIE), config["secret"])
+    if not actor:
+        return redirect("/google-staging-login", code=303)
+    response = make_response(send_file(
+        Path(__file__).with_name("google_staging_account.html"),
+        mimetype="text/html", max_age=0))
+    response.headers["Cache-Control"] = "no-store, private"
+    return response
+
+
+@bp.get("/api/auth/google/profile")
+def google_staging_profile():
+    config = _enabled_config()
+    if not config:
+        return jsonify({"error": "Google staging login not configured"}), 503
+    # The server derives the account from the signed Google-only cookie.
+    # Email, query parameters and Telegram IDs are never used for lookup.
+    account_id = verify_google_identity_ticket(
+        request.cookies.get(TICKET_COOKIE), config["secret"])
+    if not account_id or request.args:
+        return jsonify({"error": "Log masuk Google diperlukan"}), 401
+    try:
+        profile = google_staging_account_profile(config, account_id)
+    except (GoogleAccountUnavailable, ValueError):
+        return jsonify({"error": "Profil staging belum tersedia"}), 503
+    response = make_response(jsonify({
+        "google_verified": True,
+        "display_name": profile["display_name"],
+        "trial_remaining": profile["trial_remaining"],
+        "rph_generation_enabled": False,
+        "real_payments_enabled": False,
+        "staging_only": True,
+    }))
+    response.headers["Cache-Control"] = "no-store, private"
+    response.headers["Vary"] = "Cookie"
     return response
