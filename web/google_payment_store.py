@@ -4,6 +4,7 @@ All calls use the dedicated staging project and server-only service key.
 No access to legacy Telegram payment rows; no direct browser Supabase secrets.
 """
 import hashlib
+from datetime import datetime, timezone
 import json
 import re
 import uuid
@@ -100,6 +101,34 @@ def my_payments(config, account_id):
         "select": "id,plan_code,quoted_amount_sen,status,submitted_at,reviewed_at,review_note",
         "account_id": "eq." + account_id, "order": "submitted_at.desc", "limit": "30"})
     return rows
+
+
+def web_payment_access(config, account_id):
+    """Read approved staging entitlements, never claim RPH generator access."""
+    account_id = _uuid(account_id)
+    rows = _rows(config, "web_entitlements", {
+        "select": "plan_code,valid_from,valid_until",
+        "account_id": "eq." + account_id, "order": "valid_from.desc", "limit": "100"})
+    now = datetime.now(timezone.utc)
+    active = []
+    for entry in rows:
+        if not isinstance(entry, dict):
+            raise PaymentUnavailable("Invalid entitlement record")
+        expiry = entry.get("valid_until")
+        if expiry is None:
+            if entry.get("plan_code") == "rakan_pembangun":
+                active.append({"plan_code": "rakan_pembangun", "valid_until": None})
+            continue
+        try:
+            expires_at = datetime.fromisoformat(expiry.replace("Z", "+00:00"))
+        except (TypeError, ValueError, AttributeError):
+            raise PaymentUnavailable("Invalid entitlement expiry") from None
+        if expires_at.tzinfo is None:
+            raise PaymentUnavailable("Untrusted entitlement timezone")
+        if expires_at > now:
+            active.append({"plan_code": entry.get("plan_code"), "valid_until": expiry})
+    return {"payment_access_active": bool(active), "active_plans": active,
+            "rph_google_integration_ready": False}
 
 
 def eligible_plans(config, catalog):
