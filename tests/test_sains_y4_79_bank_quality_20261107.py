@@ -60,7 +60,7 @@ class TestSainsYear4Bank(unittest.TestCase):
             self.assertEqual(item["status"],"DRAF_HOLD")
 
     def test_unverified_book_pages_never_fabricated(self):
-        self.assertIn("NO_PAGE_REFERENCE_APPROVED",TEXTBOOK_STATUS)
+        self.assertIn("NO_EXACT_SP_PAGE_APPROVED",TEXTBOOK_STATUS)
         sample={
             "pdp_number":1,"pdp_code":"SCI-Y4-PDP-001",
             "unit":"Unit 2: Manusia","tajuk":"Pernafasan","sp":"2.1.1",
