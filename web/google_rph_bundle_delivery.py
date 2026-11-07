@@ -16,6 +16,7 @@ from flask import Blueprint, jsonify, make_response, request, send_file
 from web.google_web_catalog_staging import _actor
 from web.google_auth_staging_routes import _enabled_config
 from web.google_staging_service_auth import staging_service_headers
+from web.provider_neutral_web_identity import canonical_staging_account
 
 bp = Blueprint("google_rph_delivery_staging", __name__)
 BUCKET = "web-rph-bundles-staging"
@@ -43,9 +44,7 @@ def _canonical_id(value):
 def _ready_job(config, actor, job_id, *, transport=None):
     """No browser account_id accepted; ownership checked in DB and code."""
     jid = _canonical_id(job_id)
-    if actor.provider != "google" or actor.account_id is None:
-        raise ValueError("Verified Google account required")
-    account_id = _canonical_id(actor.account_id)
+    account_id = canonical_staging_account(actor)
     key = config["staging_service_key"]
     address = config["supabase_url"].rstrip("/")
     params = urlencode({
@@ -123,9 +122,7 @@ def _recent_ready_jobs(config, actor, *, transport=None):
     This is a read-only recovery path after browser close or uncertain HTTP
     completion; it never generates, charges, or reveals another account.
     """
-    if actor.provider != "google" or actor.account_id is None:
-        raise ValueError("Verified Google account required")
-    account_id = _canonical_id(actor.account_id)
+    account_id = canonical_staging_account(actor)
     key = config["staging_service_key"]
     params = urlencode({
         "select": "id,account_id,status,document_manifest_sha256,ready_at",
