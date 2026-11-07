@@ -2,8 +2,8 @@
 
 RPT Pendidikan Islam Tahun 6 2027 is a teacher planning document, NOT a
 validation of Mushaf ayah ranges or official DSKP wording. The source was
-inspected at PDF pages 3, 5, 7, 21, 41. There is no safe restoration of
-missing content from these RPT snippets alone.
+inspected at PDF pages 3, 5, 7, 21, 41. The original catalog remains withheld; four Quran RPH have separate Rumi
+editor-only candidate proposals, without authorizing Jawi or publication.
 
 None of the five year6 held records receives 'fields' or teacher material.
 """
@@ -22,15 +22,15 @@ HELD_SOURCE={
     "T6-L006":{
         "rpt_pdf_page":3,"lesson_kind":"JUZ25_TASMI",
         "rpt_named_content":"الشورى اية 33–51",
-        "reason":"RPT mentions verses but passage, tajwid and realistic lesson scope have not been checked against mushaf"},
+        "reason":"42:33-51 is within ash-Shura chapter bounds (53 ayat) and continues from PdP002; 67 other Juz25 ayat remain unmapped. Four-step Rumi editor candidate exists; academic/tajwid and teacher time allocation not approved"},
     "T6-L014":{
         "rpt_pdf_page":5,"lesson_kind":"JUZ25_TASMI_GAP",
         "rpt_named_content":"الزخرف اية 34–73",
-        "reason":"RPT explicitly flags continuity gap after az-Zukhruf 73 before ad-Dukhan 40; do not invent intervening verse mapping"},
+        "reason":"Whole Juz25 audit confirms 43:74-89 (16) and 44:1-39 (39) omitted between PdP014 and PdP018; other Juz25 gaps add 12, total 67. Candidate remains editor-only; do not silently assign missing ayat"},
     "T6-L018":{
         "rpt_pdf_page":7,"lesson_kind":"JUZ25_TASMI_GAP",
         "rpt_named_content":"الدخان اية 40–59",
-        "reason":"RPT flags omission of ad-Dukhan 1–39 in its sequence; restore only after Mushaf/RPT continuity check"},
+        "reason":"RPT skips ad-Dukhan 44:1-39 (39 ayat) before PdP018 44:40-59; Year6 Juz25 total 67 ayat missing. Candidate still held until RPT editor assigns omitted passages"},
     "T6-L060":{
         "rpt_pdf_page":21,"lesson_kind":"PROPOSED_SICK_PRAYER_PRACTICAL",
         "rpt_named_content":"Solat ketika sakit; calon SP4.2.3–4.2.5",
@@ -38,7 +38,7 @@ HELD_SOURCE={
     "T6-L117":{
         "rpt_pdf_page":41,"lesson_kind":"JUZ29_TASMI_MIXED_SURA",
         "rpt_named_content":"المعارج 40–44; نوح 1–28; الجن 1–13",
-        "reason":"RPT excludes az-Zumar as not part of Juz29; confirm exact intervals and handling of next passage before RPH creation"},
+        "reason":"MYQURAN/Quran.com verse counts confirm PdP113→117→121 continuously covers 70:1-44, 71:1-28 and 72:1-28 (100/100), with no az-Zumar; Rumi editor candidate exists but Jawi/tajwid review still required"},
 }
 CSV_FIELDS=("id","rpt_pdf_page","lesson_kind","rpt_named_content","reason",
             "source_class","authoritative_mushaf_bounds_approved",
