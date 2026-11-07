@@ -17,7 +17,7 @@ Bukti tepat setiap seksyen sebelum/selepas: `audits/matematik_v49_10_section_fix
 
 ## 4. Artifak dan QA
 - ZIP: `CIKGULAJU_MATEMATIK_v49_585_RPH_KADAR_RM1_DAN_MASA_STAGING.zip`
-- Saiz: **48,774,107 bait**; SHA-256: `4c4c80561fba467debb2bf6364e1b05defaf721006e77224182186c7122c07c2`.
+- Saiz: **48,774,109 bait**; SHA-256: `fcc3e7fe07ed6eb9cb0abdff1ef3bd1765c7050a6d8e036b81abd199ae4835b0`.
 - Sumber v48 SHA-256: `a19841be74474f819496f694faebcd75e617864bfac9c48c4b3e841ec0393b4b`.
 - 585 DOCX, 585 PDF A4 satu halaman, 585 Markdown dan 5 PDF gabungan. ZIP CRC `testzip()==None`. Teks PDF terkini untuk 9 RPH dipastikan tidak melebihi tepi halaman; sampel visual Tahun 4 L056 dan L110 diluluskan semakan susun atur.
 - Rujukan BA Tahun 2–3: **234 lesson** kekal; 46 set induksi konkrit daripada v47 dan 4 pembetulan mata wang berdasarkan DSKP daripada v48 kekal.
@@ -31,4 +31,9 @@ Bukti tepat setiap seksyen sebelum/selepas: `audits/matematik_v49_10_section_fix
 - **Telegram/Web staging sebenar** terhadap DB kanonik dan hak akses pengguna belum diuji (ujian loader ialah synthetic/offline).
 - Pakej ZIP v49 tersedia sebagai artifak perbualan; Library hampir penuh, jadi hanya matriks QA kecil disimpan di Library. **Tiada penghapusan/overwrite arkib lama**.
 
-**Release gate:** `TECHNICAL_QA=PASS`; `GITHUB_CI=CHECK_LATEST_COMMIT`; `ACADEMIC_ITEM_SIGNOFF=0`; `STAGING_E2E=NOT_RUN`; `FINAL_READY=false`.
+**Release gate:** `TECHNICAL_QA=PASS`; `GITHUB_CI=RECHECK_AFTER_METADATA_FIX`; `ACADEMIC_ITEM_SIGNOFF=0`; `STAGING_E2E=NOT_RUN`; `FINAL_READY=false`.
+
+## Pengesahan ZIP sebenar selepas metadata diselaraskan
+Pakej v49 awal menghasilkan schema `academic_final_ready=false` tetapi tiada `final_ready=false` yang diperlukan oleh loader. Isu dikesan melalui ujian local dengan fail ZIP sebenar (ujian sintetik CI sahaja tidak mengesannya). Metadata `AUDIT/V49_RELEASE_GATE.json` ditambah `final_ready=false` tanpa mengubah mana-mana daripada 585 Word/PDF/Markdown; hash baharu dikunci ke dalam loader v49.
+
+**12/12 ujian pratonton terhadap ZIP sebenar LULUS** selepas pembetulan: 585 PDF tersedia, Word dan PDF boleh dipilih mengikut lesson, pengesahan SHA, pengguna berbayar/admin, callback lama, penolakan tanpa akses, input palsu dan kegagalan penghantaran, serta perlindungan DB/kuota. Ini **ujian setempat/mock**, bukan ujian Telegram/Web sebenar. Release gate akademik masih HOLD.
