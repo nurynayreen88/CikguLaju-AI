@@ -17,7 +17,7 @@ EXPECTED_INCOMPLETE = {
 
 
 def expand_rbt_display_titles(year, source_rows, display_rows):
-    if year not in EXPECTED_INCOMPLETE or len(source_rows) != len(display_rows) != 32:
+    if year not in EXPECTED_INCOMPLETE or len(source_rows) != 32 or len(display_rows) != 32:
         raise ValueError("Unrecognized RBT year/source count")
     fixed = set()
     for n, (source, row) in enumerate(zip(source_rows, display_rows), 1):
