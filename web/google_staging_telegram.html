@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>CikguLaju — Log Masuk Telegram (Staging)</title>
+<style>
+:root{font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;color:#143c34;background:#f3f8f5}
+*{box-sizing:border-box}body{margin:0;padding:18px}main{max-width:620px;margin:5vh auto}
+h1{font-size:1.75rem;line-height:1.24}.brand{font-weight:800;color:#087568}
+.card{background:white;border:1px solid #d8e6de;border-radius:16px;padding:22px;margin:16px 0}
+p,small{color:#536c61}a{color:#087568}button{font:inherit;border:1px solid #087568;border-radius:10px;background:#087568;color:white;padding:12px 16px;cursor:pointer}
+button:disabled{opacity:.5}.credit{font-weight:800;color:#087568;font-size:2.5rem}
+.notice{border-left:3px solid #849e91;background:#f4f8f5;padding:12px 15px;border-radius:7px}
+[hidden]{display:none!important}#status{min-height:24px}
+</style>
+</head><body><main>
+<p class="brand">CikguLaju AI • Staging</p>
+<h1>Log masuk dengan Telegram</h1>
+<p class="notice">Untuk akaun yang <strong>sudah dipautkan</strong> melalui Google. Ini hanya ujian: status Rakan Pembangun, langganan Telegram produksi dan pembayaran tidak dipindahkan.</p>
+<section class="card" id="loginBox">
+<h2>Sahkan akaun Telegram</h2>
+<p>Gunakan akaun Telegram yang telah dipautkan. Pengguna baharu perlu <a href="/google-staging-login">log masuk Google</a> dan pautkan Telegram dahulu.</p>
+<div id="widget">Mendapatkan bot pengesahan…</div>
+</section>
+<section class="card" id="profileBox" hidden>
+<h2>Akaun staging dipautkan</h2>
+<p id="teacher">Memuatkan profil…</p>
+<div class="credit"><span id="remaining">–</span> <small>daripada 10 janaan</small></div>
+<p>Kuota di atas dibaca daripada rekod akaun staging yang sama dengan Google. Paparan ini <strong>tidak menolak kredit</strong>.</p>
+<p><a href="/google-staging-login">Log masuk dengan Google</a> untuk menguji janaan dan memuat turun RPH. Login Telegram di halaman ini masih mod profil sahaja.</p>
+<button id="logout" type="button">Log keluar Telegram</button>
+</section>
+<p id="status" role="status" aria-live="polite"></p>
+</main>
+<script>
+'use strict';
+const get=id=>document.getElementById(id);
+function status(message){get('status').textContent=message;}
+async function profile(){
+ const res=await fetch('/api/auth/staging/telegram/profile',{credentials:'same-origin',cache:'no-store'});
+ if(res.status===401)return false;
+ if(!res.ok)throw Error('Profil akaun dipautkan tidak tersedia.');
+ const data=await res.json();
+ if(data.authenticated!==true||data.provider!=='telegram'||data.linked!==true||
+    data.staging_only!==true||data.entitlements_shared!==false||
+    !Number.isInteger(data.trial_remaining)||data.trial_remaining<0||data.trial_remaining>10){
+      throw Error('Status akaun staging tidak sah.');
+    }
+ get('teacher').textContent=data.display_name||'Guru CikguLaju';
+ get('remaining').textContent=String(data.trial_remaining);
+ get('loginBox').hidden=true;
+ get('profileBox').hidden=false;
+ status('Identiti Telegram dipautkan. Baki janaan dibaca daripada akaun yang sama.');
+ return true;
+}
+window.onStagingTelegramLogin=async function(user){
+ if(!user||typeof user!=='object'||!user.hash||!user.auth_date||!user.id){
+   status('Bukti Telegram tidak lengkap.');return;
+ }
+ status('Mengesahkan identiti Telegram yang dipautkan…');
+ try{
+   const res=await fetch('/api/auth/staging/telegram/login',{
+     method:'POST',credentials:'same-origin',
+     headers:{'Content-Type':'application/json'},
+     body:JSON.stringify({telegram_auth:user})
+   });
+   const data=await res.json();
+   if(!res.ok||data.authenticated!==true)throw Error(data.error||'Log masuk gagal');
+   if(!await profile())throw Error('Sesi Telegram belum tersedia');
+ }catch(e){status(e.message||'Log masuk Telegram gagal');}
+};
+async function initialize(){
+ try{
+   if(await profile())return;
+   const res=await fetch('/api/auth/staging/telegram/bot',
+                         {credentials:'same-origin',cache:'no-store'});
+   const data=await res.json();
+   if(!res.ok)throw Error(data.error||'Bot Telegram belum tersedia');
+   if(data.staging_only!==true||data.linked_accounts_only!==true||
+      !/^[A-Za-z][A-Za-z0-9_]{4,31}$/.test(data.bot_username))throw Error('Konfigurasi bot tidak sah');
+   get('widget').replaceChildren();
+   const script=document.createElement('script');
+   script.async=true;script.src='https://telegram.org/js/telegram-widget.js?22';
+   script.setAttribute('data-telegram-login',data.bot_username);
+   script.setAttribute('data-size','large');
+   script.setAttribute('data-userpic','false');
+   script.setAttribute('data-onauth','onStagingTelegramLogin(user)');
+   script.onerror=()=>status('Widget Telegram gagal dimuatkan.');
+   get('widget').appendChild(script);
+   status('Sahkan identiti menggunakan Telegram.');
+ }catch(e){status(e.message||'Sistem staging belum tersedia');}
+}
+get('logout').addEventListener('click',async()=>{
+ const button=get('logout');button.disabled=true;
+ try{
+   const res=await fetch('/api/auth/staging/telegram/logout',{
+     method:'POST',credentials:'same-origin',
+     headers:{'Content-Type':'application/json'}
+   });
+   if(!res.ok)throw Error('Log keluar gagal');
+   location.assign('/google-staging-telegram');
+ }catch(e){button.disabled=false;status(e.message||'Log keluar gagal');}
+});
+initialize();
+</script>
+</body></html>
