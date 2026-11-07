@@ -49,7 +49,8 @@ class GoogleStagingRoutes(unittest.TestCase):
             "CIKGULAJU_GOOGLE_AUTH_STAGING_ENABLED": "1",
             "CIKGULAJU_GOOGLE_STAGING_SUPABASE_PUBLISHABLE_KEY": "sb_publishable_test_not_real",
             "CIKGULAJU_GOOGLE_STAGING_SUPABASE_SERVICE_ROLE_KEY": "staging-only-service-key-placeholder",
-            "CIKGULAJU_GOOGLE_STAGING_SUPABASE_URL": "https://staging.supabase.co",
+            "CIKGULAJU_GOOGLE_STAGING_SUPABASE_URL": "https://abcdefghijklmnopqrst.supabase.co",
+            "CIKGULAJU_GOOGLE_STAGING_PROJECT_REF": "abcdefghijklmnopqrst",
             "CIKGULAJU_WEB_SESSION_SECRET": SECRET,
             "CIKGULAJU_GOOGLE_STAGING_ORIGIN": "https://staging.example.test",
             "CIKGULAJU_GOOGLE_STAGING_ALLOWED_HOST": "staging.example.test",
@@ -69,7 +70,7 @@ class GoogleStagingRoutes(unittest.TestCase):
         self.assertEqual(start.status_code, 302)
         query = parse_qs(urlsplit(start.headers["Location"]).query)
         self.assertEqual(query["provider"], ["google"])
-        self.assertEqual(urlsplit(start.headers["Location"]).netloc, "staging.supabase.co")
+        self.assertEqual(urlsplit(start.headers["Location"]).netloc, "abcdefghijklmnopqrst.supabase.co")
         self.assertEqual(query["code_challenge_method"], ["s256"])
         callback = parse_qs(urlsplit(query["redirect_to"][0]).query)
         return callback["state"][0], start
