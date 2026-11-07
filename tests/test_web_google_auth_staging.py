@@ -100,10 +100,13 @@ class GoogleStagingRoutes(unittest.TestCase):
 
     def test_good_google_identity_only_grants_isolated_ticket(self):
         state, _ = self._start()
-        with patch("web.google_auth_staging_routes._json_response",
-                   side_effect=[{"access_token": "x" * 70},
-                                {"id": SUBJECT, "identities": [{"provider": "google"}]}]) as call,\n             patch("web.google_auth_staging_routes.ensure_google_staging_account",
-                   return_value=SUBJECT) as create:
+        with (
+            patch("web.google_auth_staging_routes._json_response",
+                  side_effect=[{"access_token": "x" * 70},
+                               {"id": SUBJECT, "identities": [{"provider": "google"}]}]) as call,
+            patch("web.google_auth_staging_routes.ensure_google_staging_account",
+                  return_value=SUBJECT) as create,
+        ):
             r = self.client.get("/api/auth/google/callback?state=" + state + "&code=test",
                                 base_url=self.base)
             create.assert_called_once()
@@ -122,10 +125,13 @@ class GoogleStagingRoutes(unittest.TestCase):
 
     def test_unavailable_staging_account_fails_closed(self):
         state, _ = self._start()
-        with patch("web.google_auth_staging_routes._json_response",
-                   side_effect=[{"access_token": "x" * 70},
-                                {"id": SUBJECT, "identities": [{"provider": "google"}]}]),\n             patch("web.google_auth_staging_routes.ensure_google_staging_account",
-                   side_effect=RuntimeError("staging down")):
+        with (
+            patch("web.google_auth_staging_routes._json_response",
+                  side_effect=[{"access_token": "x" * 70},
+                               {"id": SUBJECT, "identities": [{"provider": "google"}]}]),
+            patch("web.google_auth_staging_routes.ensure_google_staging_account",
+                  side_effect=RuntimeError("staging down")),
+        ):
             r = self.client.get("/api/auth/google/callback?state=" + state + "&code=test",
                                 base_url=self.base)
         self.assertEqual(r.status_code, 503)
