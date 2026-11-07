@@ -135,8 +135,11 @@ def google_staging_login():
             mimetype="text/html", max_age=0), 503)
         response.headers["Cache-Control"] = "no-store"
         return response
-    return send_file(Path(__file__).with_name("google_staging_login.html"),
-                     mimetype="text/html", max_age=0)
+    response = make_response(send_file(
+        Path(__file__).with_name("google_staging_login.html"),
+        mimetype="text/html", max_age=0))
+    response.headers["Cache-Control"] = "no-store"
+    return response
 
 
 @bp.get("/api/auth/google/start")
