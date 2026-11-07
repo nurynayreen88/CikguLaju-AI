@@ -63,7 +63,7 @@ class V51CrosswalkGate(unittest.TestCase):
         self.assertEqual(gate["rpt_lesson_sp_matches"],585)
         self.assertEqual(gate["rpt_week_matches"],585)
         self.assertEqual(gate["PDF_A4_one_page"],585)
-        self.assertEqual(gate["rpt_source_version"].split()[-2:],["v28","SEMENTARA"])
+        self.assertIn("v28 SEMENTARA",gate["rpt_source_version"])
         self.assertEqual(gate["academic_signoffs_for_all_585"],0)
         self.assertFalse(gate["academic_exercise_item_verification_all_completed"])
         self.assertFalse(gate["year4_34_split_paired_books_fully_reviewed"])
