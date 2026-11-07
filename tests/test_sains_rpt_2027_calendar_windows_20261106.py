@@ -127,8 +127,8 @@ class SainsRPTCalendarWindowsTests(unittest.TestCase):
                 for codepart in rendered["STANDARD PEMBELAJARAN"].split(", "):
                     self.assertIn(codepart,txt)
                 if primary in YEAR3_INTEGRATED_SP_CANDIDATE:
-                    self.assertIn("3. Guru",word.tables[2].cell(1,1).text)
-                    self.assertIn("4. Murid",word.tables[2].cell(1,1).text)
+                    self.assertIn("3. Guru",word.tables[2].cell(2,1).text)
+                    self.assertIn("4. Murid",word.tables[2].cell(2,1).text)
                     self.assertIn(YEAR3_INTEGRATED_SP_CANDIDATE[primary],txt)
                 else:
                     self.assertNotIn("3. Guru",word.tables[2].cell(1,1).text)
