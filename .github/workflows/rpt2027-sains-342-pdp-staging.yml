@@ -29,6 +29,10 @@ on:
       - 'rpt_2027/sains/kssr2017_t2_t3_official_sp_code_ranges_20261107.json'
       - 'scripts/audit_sains_y2_y3_original_dskp_sp_membership_staging.py'
       - 'tests/test_sains_y2_y3_original_dskp_sp_membership_staging.py'
+      - 'rpt_2027/sains/bpk2020_panduan_sains_t6_43_sp_16_section_source_index_20261108_DRAF.json'
+      - 'rpt_2027/common/sains_y6_bpk_2020_panduan_43_sp_source.py'
+      - 'scripts/audit_sains_y6_bpk_panduan_43_sp_kps_staging.py'
+      - 'tests/test_sains_y6_bpk_panduan_43_sp_kps_staging.py'
       - '.github/workflows/rpt2027-sains-342-pdp-staging.yml'
   workflow_dispatch:
 permissions:
@@ -71,6 +75,10 @@ jobs:
         run: |
           python -m unittest tests.test_sains_y2_y3_original_dskp_sp_membership_staging -v
           python -m scripts.audit_sains_y2_y3_original_dskp_sp_membership_staging
+      - name: Check all 84 Sains Year6 PdP against 16 source-backed BPK 2020 KPS activity blocks
+        run: |
+          python -m unittest tests.test_sains_y6_bpk_panduan_43_sp_kps_staging -v
+          python -m scripts.audit_sains_y6_bpk_panduan_43_sp_kps_staging
       - name: Audit 29 unrepresented content SP as 12 actual DSKP SK topics
         run: |
           python -m unittest tests.test_sains_2027_29_sp_12_topic_clusters_staging -v
@@ -123,5 +131,6 @@ jobs:
             staging/rpt_2027_seragam_2026/sains_kssr2017_186_sp_wording_diff_DRAF.json
             staging/rpt_2027_seragam_2026/sains_legacy_pdp_kssr2017_conflicts_DRAF.json
             staging/rpt_2027_seragam_2026/sains_y2_y3_original_dskp_code_membership_DRAF.json
+            staging/rpt_2027_seragam_2026/sains_y6_2020_BPK_guide_43_sp_84_pdp_kps_DRAF.json
           if-no-files-found: error
           retention-days: 14
