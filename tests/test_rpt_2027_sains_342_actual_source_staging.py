@@ -31,6 +31,21 @@ class Science2027PartialRPTQA(unittest.TestCase):
                                     r["sp_display"] and r["sk_display"] for r in rows))
                 self.assertTrue(all("DRAF, bukan RPT lengkap" in r["note"] for r in rows))
 
+    def test_all_342_source_sp_have_exact_official_full_dskp_text(self):
+        all_records=[row for rows in self.yearly.values() for row in rows]
+        self.assertEqual(sum(r["curriculum_text_matched"] for r in all_records),342)
+        source_counts=Counter(r["curriculum_provenance"] for r in all_records)
+        self.assertEqual(source_counts["KPM_DSKP_ORIGINAL_PDF_TEXT_SP_COLUMN"],35)
+        self.assertEqual(source_counts["V26_VERIFIED_DSKP"],307)
+        for year,rows in self.yearly.items():
+            self.assertTrue(all(" — " in r["sk_display"] and " — " in r["sp_display"]
+                                for r in rows))
+            self.assertFalse(any("Pernyataan DSKP belum" in r["sk_display"] or
+                                 "Kod sumber tanpa" in r["sp_display"] for r in rows))
+        for row in all_records:
+            if row["curriculum_provenance"]=="KPM_DSKP_ORIGINAL_PDF_TEXT_SP_COLUMN":
+                self.assertIn("SP KPM DSKP asli PDF hlm",row["note"])
+
     def test_week_ranges_match_snapshot_exactly_and_do_not_use_breaks(self):
         weeks=load_calendar_weeks()
         for year,rows in self.yearly.items():
