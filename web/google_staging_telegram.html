@@ -29,6 +29,9 @@ button:disabled{opacity:.5}.credit{font-weight:800;color:#087568;font-size:2.5re
 <div class="credit"><span id="remaining">–</span> <small>daripada 10 janaan</small></div>
 <p>Kuota di atas dibaca daripada rekod akaun staging yang sama dengan Google. Paparan ini <strong>tidak menolak kredit</strong>.</p>
 <p><a href="/google-staging-web">Buka pilihan RPH / PdP</a> — akses melalui Telegram yang dipautkan. Janaan baharu hanya dibuka apabila enjin staging diluluskan.</p>
+<h3>Langganan dan Rakan Pembangun</h3>
+<p id="stagingPaidStatus" class="notice">Menyemak akses berbayar staging…</p>
+<p><small>Status ini hanya mengambil rekod bayaran staging, bukan status Telegram produksi.</small></p>
 <h3>RPH siap untuk akaun ini</h3><div id="recentRph">Memeriksa fail Word dan PDF…</div>
 <p><small>Fail yang pernah disiapkan boleh dimuat turun semula tanpa menolak kredit. Langganan Telegram produksi tidak dipindahkan.</small></p>
 <button id="logout" type="button">Log keluar Telegram</button>
@@ -53,9 +56,29 @@ async function profile(){
  get('remaining').textContent=String(data.trial_remaining);
  get('loginBox').hidden=true;
  get('profileBox').hidden=false;
- await recentReady();
+ await Promise.all([recentReady(), accessStatus()]);
  status('Identiti Telegram dipautkan. Baki janaan dibaca daripada akaun yang sama.');
  return true;
+}
+async function accessStatus(){
+ const target=get('stagingPaidStatus');
+ try{
+   const res=await fetch('/api/google-staging/web/access/status',
+      {credentials:'same-origin',cache:'no-store'});
+   if(!res.ok)throw Error('Status langganan staging belum tersedia.');
+   const data=await res.json();
+   if(data.staging_only!==true||data.identity_verified!==true||
+      data.auth_provider!=='telegram'||data.production_entitlements_synced!==false||
+      data.real_payments_enabled!==false||
+      !Array.isArray(data.staging_active_plans)||
+      typeof data.staging_payment_access_active!=='boolean')
+      throw Error('Pengesahan akses staging tidak sah.');
+   target.textContent=data.staging_payment_access_active?
+      'Akses berbayar staging aktif: '+data.staging_active_plans
+        .map(x=>x.plan_code==='rakan_pembangun'?'Rakan Pembangun':x.plan_code).join(', ')+
+        '. Status Telegram produksi belum diselaraskan.':
+      'Tiada akses berbayar dalam staging. Ini BUKAN pengesahan status langganan Telegram produksi.';
+ }catch(e){target.textContent=e.message||'Status langganan staging belum tersedia.';}
 }
 async function recentReady(){
  const target=get('recentRph');
