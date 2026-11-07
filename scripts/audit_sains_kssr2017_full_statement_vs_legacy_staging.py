@@ -108,13 +108,73 @@ def audit(year4_pdf:Path,year5_pdf:Path):
         "production_db_writes":0,
     }
 
+def audit_committed_source_statements():
+    """Run CI without downloading external source PDFs.
+
+    The committed source ledger is deliberately NOT visually signed off. It
+    preserves original-SHA/page provenance and must fail closed on tampering.
+    """
+    source_path=(ROOT/"rpt_2027/sains/"
+                 "kssr2017_y4_y5_186_official_sp_source_extraction_20261107_DRAF.json")
+    data=json.loads(source_path.read_text(encoding="utf-8"))
+    if (data.get("status") !=
+            "STAGING_KSSR2017_SOURCE_STATEMENTS_FROM_ORIGINAL_PDF_EXTRACT_PENDING_VISUAL_SIGNOFF"
+        or data.get("academic_release_ready") is not False
+        or data.get("ready_for_web_telegram") is not False
+        or data.get("total_official_sp") != 186
+        or len(data.get("rows",[])) != 186):
+        raise ValueError("Sains official-source ledger is missing/approved or incomplete")
+    reference=original_codes()
+    original=[]
+    for year in (4,5):
+        source_meta=data["source"].get(str(year),{})
+        if (source_meta.get("official_pdf_sha256")!=EXPECTED[year][0]
+            or source_meta.get("official_sp_count")!=EXPECTED[year][1]
+            or source_meta.get("visual_signoff_count")!=0
+            or source_meta.get("rpt_pdp_mapping_approved") is not False):
+            raise ValueError(f"Sains T{year} source hash or release gate changed")
+        rows=[r for r in data["rows"] if r.get("year")==year]
+        if len(rows)!=EXPECTED[year][1] or {r.get("sp_code") for r in rows}!=reference[year]:
+            raise ValueError(f"Sains T{year} source SP code set inconsistent")
+        for r in rows:
+            if r.get("visual_signoff") is not False:
+                raise ValueError("Unapproved source sentence cannot be marked verified")
+            original.append(dict(
+                year=year,
+                sk_code=r["sk_code"],
+                sk_text=r["sk_title_source"],
+                sp_code=r["sp_code"],
+                sp_text_source_extract_NEEDS_VISUAL_REVIEW=r["sp_text_source_extract_UNVERIFIED"],
+                original_pdf_page=r["original_pdf_page"],
+            ))
+    with TemporaryDirectory(prefix="sains_text_diff_ro_") as work:
+        dbpath=verify_and_rebuild(Path(work),ROOT)
+        with sqlite3.connect(f"file:{dbpath}?mode=ro&immutable=1",uri=True) as db:
+            legacy=_standards(db)
+    result={}
+    for year in (4,5):
+        rows=[r for r in original if r["year"]==year]
+        report=compare_official_to_legacy(year,rows,legacy[year],reference[year])
+        report["source_sha256"]=EXPECTED[year][0]
+        result[str(year)]=report
+    return {
+        "status":"STAGING_KSSR2017_COMMITTED_SOURCE_WORDING_DIFF_NOT_ACADEMIC_SIGNOFF",
+        "source":"SHA-locked original KPM PDF-extracted 186 SP ledger; not signed off visually",
+        "results":result,
+        "ready_for_web_telegram":False,
+        "production_db_writes":0,
+    }
+
 def main():
     ap=argparse.ArgumentParser()
-    ap.add_argument("--year4-pdf",type=Path,required=True)
-    ap.add_argument("--year5-pdf",type=Path,required=True)
+    ap.add_argument("--year4-pdf",type=Path)
+    ap.add_argument("--year5-pdf",type=Path)
     ap.add_argument("--out",type=Path,required=True)
     args=ap.parse_args()
-    info=audit(args.year4_pdf,args.year5_pdf)
+    if bool(args.year4_pdf) != bool(args.year5_pdf):
+        ap.error("Provide both original PDF files or neither")
+    info=(audit(args.year4_pdf,args.year5_pdf) if args.year4_pdf
+          else audit_committed_source_statements())
     out=Path(args.out)
     if "DRAF" not in out.stem.upper() or out.suffix.lower()!=".json":
         raise ValueError("Must write separate DRAF review JSON")
