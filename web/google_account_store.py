@@ -38,7 +38,7 @@ def verified_google_email(auth_user):
         raise ValueError("Invalid Google email")
     email = email.lower()
     if (len(email) > 254 or not re.fullmatch(
-        r"[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9](?:[a-z0-9-]*[a-z0-9])?(?:\\.[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)+", email
+        r"[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9](?:[a-z0-9-]*[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)+", email
     )):
         raise ValueError("Invalid verified login email")
     return email
