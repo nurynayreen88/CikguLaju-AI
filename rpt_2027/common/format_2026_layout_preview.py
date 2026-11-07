@@ -18,6 +18,13 @@ SUBJECTS = {
     "moral": "PENDIDIKAN MORAL",
     "sejarah": "SEJARAH",
     "pjpk": "PENDIDIKAN JASMANI DAN PENDIDIKAN KESIHATAN",
+    "english": "BAHASA INGGERIS",
+    "bahasa_melayu": "BAHASA MELAYU",
+    "matematik": "MATEMATIK",
+    "pendidikan_islam": "PENDIDIKAN ISLAM",
+    "bahasa_arab": "BAHASA ARAB",
+    "muzik": "PENDIDIKAN MUZIK",
+    "sains": "SAINS",
 }
 GROUP_A = "Kedah, Kelantan, Terengganu"
 GROUP_B = "Negeri-negeri lain / Wilayah Persekutuan"
