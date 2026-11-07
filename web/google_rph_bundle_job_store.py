@@ -12,7 +12,7 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import quote
 from urllib.request import Request, urlopen
 
-from web.provider_neutral_web_identity import VerifiedWebIdentity
+from web.provider_neutral_web_identity import canonical_staging_account
 from web.google_staging_service_auth import staging_service_headers
 from web.google_rph_bundle_quota import rendered_bundle_sha256
 from web.google_rph_bundle_delivery import _private_file, BUCKET, MIMES
@@ -25,18 +25,10 @@ class BundleCommitUnconfirmed(RuntimeError):
 
 
 def _actor_id(actor):
-    if (not isinstance(actor, VerifiedWebIdentity)
-            or actor.provider != "google"
-            or actor.account_id is None
-            or actor.subject != actor.account_id):
-        raise ValueError("Verified Google account required")
-    try:
-        account_id = str(uuid.UUID(actor.account_id))
-    except (TypeError, ValueError, AttributeError):
-        raise ValueError("Verified UUID account required") from None
-    if account_id != actor.account_id:
-        raise ValueError("Noncanonical Google UUID")
-    return account_id
+    # The HTTP route must validate a signed Google or linked Telegram cookie
+    # before constructing this actor. Both providers share the same staging
+    # account UUID and exactly-once private bundle ledger.
+    return canonical_staging_account(actor)
 
 
 def _job_id(job_id):
