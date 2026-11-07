@@ -39,7 +39,7 @@ def is_enabled(environ=None) -> bool:
 
 
 def _math_year(state: Mapping) -> int | None:
-    if not isinstance(state, Mapping) or state.get("task") != "rph":
+    if not isinstance(state, Mapping) or state.get("task") not in ("rph", "quick_material"):
         return None
     name = re.sub(r"[^a-z]", "", str(state.get("subject") or "").lower())
     if name not in ("matematik", "mathematics", "math"):
@@ -155,6 +155,62 @@ def verify_state(state: Mapping) -> tuple[int, int, dict] | None:
     return year, number, source
 
 
+
+def resolve_native_state(runtime, state: Mapping) -> Mapping:
+    """Resolve omitted Lesson number from the exact selected Telegram PdP.
+
+    Telegram's quick-material callback sometimes stores only a PdP code;
+    its source_sequence_no must be retrieved from the verified native reader,
+    never inferred from a dropdown index, week or topic.
+    """
+    if not is_enabled() or _math_year(state) is None:
+        return state
+    if state.get("source_sequence_no") is not None:
+        return state
+    if not state.get("quick_material_flow"):
+        raise MathematicsRPHUnavailable("Unverified Mathematics quick flow")
+    code = state.get("pdp_sequence_code")
+    if not isinstance(code, str) or not code.strip() or len(code) > 100:
+        raise MathematicsRPHUnavailable("Exact Telegram PdP key not selected")
+    reader = getattr(runtime, "_sm2542_rows", None)
+    if not callable(reader):
+        raise MathematicsRPHUnavailable("Native PdP source reader unavailable")
+    year = _math_year(state)
+    try:
+        all_rows = reader(f"Tahun {year}", "Matematik")
+    except Exception as exc:
+        raise MathematicsRPHUnavailable("Unable to resolve Telegram PdP") from exc
+    if not isinstance(all_rows, list) or len(all_rows) > 5000:
+        raise MathematicsRPHUnavailable("Invalid Telegram PdP records")
+    rows = [r for r in all_rows if isinstance(r, dict)
+            and str(r.get("pdp_sequence_code") or "").strip() == code]
+    if not rows:
+        raise MathematicsRPHUnavailable("Selected PdP missing in source")
+    nums = {_positive_int(r.get("source_sequence_no")) for r in rows}
+    if len(nums) != 1 or None in nums:
+        raise MathematicsRPHUnavailable("Native PdP has ambiguous Lesson identity")
+    pairs = {(str(r.get("sk_code") or "").strip(),
+              str(r.get("sp_code") or "").strip()) for r in rows}
+    if len(pairs) != 1:
+        raise MathematicsRPHUnavailable("Native PdP needs composite/verified SK/SP")
+    sk, sp = next(iter(pairs))
+    if not sk or not sp:
+        raise MathematicsRPHUnavailable("Native PdP SK/SP missing")
+    if state.get("sp_code") and str(state["sp_code"]).strip() != sp:
+        raise MathematicsRPHUnavailable("Telegram selected a different SP")
+    if state.get("sk_code") and str(state["sk_code"]).strip() != sk:
+        raise MathematicsRPHUnavailable("Telegram selected a different SK")
+    current = state.get("grouped_sp_codes") or state.get("selected_sp_codes")
+    if current is not None and (not isinstance(current, (tuple, list))
+                                or {str(x).strip() for x in current} != {sp}):
+        raise MathematicsRPHUnavailable("Grouped SP mapping differs from PdP")
+    resolved = dict(state)
+    number = nums.pop()
+    resolved.update(task="rph", source_sequence_no=number, pdp_no=number,
+                    sk_code=sk, sp_code=sp, selected_sp_codes=[sp])
+    return resolved
+
+
 def adapt_rows(state: Mapping, rows: dict) -> dict:
     if not isinstance(rows, dict):
         raise MathematicsRPHUnavailable("Word/PDF row layout not available")
@@ -203,11 +259,12 @@ def install(runtime) -> bool:
         if _math_year(state) is None:
             return previous(state, *args, **kwargs)
         # Perform integrity/identity check *before* invoking old renderer.
-        verified = verify_state(state)
+        resolved_state = resolve_native_state(runtime, state)
+        verified = verify_state(resolved_state)
         if verified is None:
             return previous(state, *args, **kwargs)
         rows = previous(state, *args, **kwargs)
-        return adapt_rows(state, rows)
+        return adapt_rows(resolved_state, rows)
 
     runtime._rph_rows = render
     runtime.CIKGULAJU_MATH_V60_NATIVE_ROWS_ACTIVE = True
