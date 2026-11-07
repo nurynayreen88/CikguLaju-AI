@@ -92,6 +92,11 @@ class GoogleStagingRoutes(unittest.TestCase):
             r = self.client.get("/api/auth/google/start", base_url=self.base)
         self.assertEqual(r.status_code, 503)
 
+    def test_ref_mismatch_disables_staging_before_credentials_are_sent(self):
+        with patch.dict(os.environ, {"CIKGULAJU_GOOGLE_STAGING_PROJECT_REF": "zzzzzzzzzzzzzzzzzzzz"}):
+            r = self.client.get("/api/auth/google/start", base_url=self.base)
+            self.assertEqual(r.status_code, 503)
+
     def test_no_host_spoofing(self):
         r = self.client.get("/api/auth/google/start", base_url="https://other.example.test")
         self.assertEqual(r.status_code, 503)
