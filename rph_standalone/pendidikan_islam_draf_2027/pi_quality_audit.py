@@ -81,6 +81,9 @@ def audit(root=ROOT):
                 assert refinement["assessment_criterion_review_only"] in fields["pentaksiran"]
                 assert refinement["observed_evidence_review_only"] in fields["pentaksiran"]
                 flags.append("PBD_SP_SASARAN_BELUM_DISAH_PAKAR")
+            # Script consistency is a QA task, never an automatic transliteration.
+            if re.search(r"[A-Za-z]", fields["penutup"]):
+                flags.append("PENUTUP_RUMI_SEMAK_PENYERAGAMAN_JAWI")
             if domain == "tidak_diketahui":
                 flags.append("BIDANG_TIDAK_DIKENALI")
             enrichment = record.get("staging_enrichment")
@@ -114,6 +117,7 @@ def audit(root=ROOT):
         "critical_source_review_count": flag_counts["SUMBER_KRITIKAL_BELUM_LENGKAP"],
         "generic_pbd_count": flag_counts["PBD_TIDAK_KHUSUS_KEPADA_SP"],
         "refined_pbd_review_count": flag_counts["PBD_SP_SASARAN_BELUM_DISAH_PAKAR"],
+        "closing_rumi_consistency_review_count": flag_counts["PENUTUP_RUMI_SEMAK_PENYERAGAMAN_JAWI"],
         "refined_pbd_review_by_year": {
             str(y): sum(1 for r in rows
                         if r["id"].startswith(f"T{y}-") and
