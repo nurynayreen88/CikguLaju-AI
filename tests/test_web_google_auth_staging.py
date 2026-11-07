@@ -166,6 +166,24 @@ class GoogleStagingRoutes(unittest.TestCase):
         self.assertEqual(r.location,self.base+"/google-staging-payments")
         self.assertIn("cikgulaju_google_staging_ticket", "\\n".join(r.headers.getlist("Set-Cookie")))
 
+    def test_real_browser_accept_header_redirects(self):
+        state, _ = self._start()
+        # Chrome-like Accept contains */*; JSON can be wildcard-accepted.
+        # The user still needs to reach the actual staging Web screen.
+        with (
+            patch("web.google_auth_staging_routes._json_response",
+                  side_effect=[{"access_token": "x" * 70},
+                               {"id": SUBJECT, "identities": [{"provider": "google"}]}]),
+            patch("web.google_auth_staging_routes.ensure_google_staging_account",
+                  return_value=SUBJECT),
+        ):
+            r = self.client.get(
+                "/api/auth/google/callback?state=" + state + "&code=test",
+                base_url=self.base,
+                headers={"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"})
+        self.assertEqual(r.status_code, 303)
+        self.assertEqual(r.location, self.base + "/google-staging-payments")
+
     def test_wrong_provider_does_not_grant_ticket(self):
         state, _ = self._start()
         with patch("web.google_auth_staging_routes._json_response",
