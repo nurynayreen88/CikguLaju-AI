@@ -237,3 +237,21 @@ Setiap baris menyimpan identiti Lesson, bidang, SP asal, tanda isu serta tindaka
 **Kawalan:** semua 696 rekod dilarang diterbitkan (`can_publish=false`), peratus akademik kekal `null`, dan `quality_80_certified=false`. Workflow CI akan menjana dua artefak tambahan `pi_content_review_queue_696.json` dan `pi_content_review_queue_696.csv`, kemudian mengesahkan 13 artefak audit sebelum muat naik. Fail RPH asal, `main`, database, kuota, Telegram dan Web tidak disentuh.
 
 **Skop:** Katalog audit ini hanya meliputi Tahun 2–6. Tahun 1/KP2027 tidak terkandung dalam 696 rekod dan tidak boleh dianggap sudah siap.
+
+
+## Sambungan 7 Nov — 43 PBD dikemaskini secara langsung dalam draf (STAGING)
+
+Selepas penemuan 43 ayat PBD terlalu umum, kini **14 RPH Tahun 2 dan 29 RPH Tahun 3** telah **dikemas kini pada medan `pentaksiran` draf**. Setiap ayat baharu menerangkan hasil SP yang diperhatikan, bukti murid (contohnya padanan kad, bacaan, lakonan, peta cerita, simulasi atau respons bertulis), dan rekod guru untuk bimbingan individu. Pemeriksaan awal memastikan tiada petikan mushaf/hadis, nombor halaman Buku Aktiviti atau kod SP baharu dicipta.
+
+| Perkara selepas pindaan | Bilangan | Tafsiran |
+|---|---:|---|
+| PBD templat generik lama yang masih dipaparkan dalam draf T2/T3 | **0** | 43 ayat lama diganti dengan ayat PBD berfokus |
+| PBD berfokus dalam draf yang **menunggu semakan pakar** | **43** | T2 14 + T3 29; bukan automatik `READY` |
+| Teks PBD lama disimpan dalam `staging_pbd_refinement.original_pentaksiran` | **43** | Pindaan boleh dibanding/diundur pada peringkat rekod |
+| Nota halaman buku teks lama masih belum disahkan | **77** | Tidak diisi nombor halaman palsu |
+| Senarai keutamaan gabungan PBD + halaman | **108 Lesson unik** | 12 daripada 43 PBD turut mempunyai isu halaman lama |
+| RPH dengan pengesahan pakar Jawi bagi pindaan ini | **0** | Semua `content_expert_approved=false`, `jawi_orthography_approved=false` |
+
+Pindaan tidak menyentuh SK, SP, objektif, aktiviti asal, buku teks, material Buku Aktiviti, atau enam rekod tahanan. Identiti katalog tetap 696, dengan 690 draf dan enam tahanan. Pembetulan ialah **pengayaan draf kandungan sebenar** namun belum membuktikan skor akademik ≥80% kerana sumber/Jawi/DSKP, pentaksiran dan Word/PDF belum diperakui. `pi_quality_audit.py` dan `pi_content_review_queue.py` mengasingkan bendera `PBD_SP_SASARAN_BELUM_DISAH_PAKAR` daripada bendera teks generik lama serta mengekalkan baris ini dalam keutamaan P2.
+
+**CI Run #85 lulus**: https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/42322765025. Fail pengguna `main`, DB, Telegram, Web dan Render tidak diubah. PR #443 kekal **DRAFT / HOLD / NO_GO**.
