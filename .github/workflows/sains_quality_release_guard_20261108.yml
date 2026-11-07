@@ -8,9 +8,23 @@ on:
       - "audits/sains_342_individual_academic_release_approvals_20261108.json"
       - "web/sains_rph_quality_release_gate_20261108.py"
       - "tests/test_sains_rph_quality_release_gate_20261108.py"
+      - "tests/test_sains_quality_guard_triggers_20261108.py"
       - "tools/check_sains_rph_publication_20261108.py"
       - "tools/run_telegram_with_curriculum_api.py"
       - "web/sains_y5_83_staging_shared_runtime_20261108.py"
+      - "web/sains_y2_51_activities_draf_20261107.py"
+      - "web/sains_y3_rph_activity_preview_20261106.py"
+      - "web/sains_y4_79_activity_bank_draf_20261107.py"
+      - "web/sains_y5_83_activity_bank_draf_20261107.py"
+      - "web/sains_y6_84_activity_bank_draf_20261107.py"
+      - "web/sains_y6_draf_bank_part*_20261107.tsv"
+      - "tools/render_sains_y2_51_rph_draf_20261107.py"
+      - "tools/render_sains_y3_45_review_pack_20261106.py"
+      - "tools/render_sains_y4_79_rph_draf_20261107.py"
+      - "tools/render_sains_y5_83_rph_draf_20261107.py"
+      - "tools/render_sains_y6_84_rph_draf_20261107.py"
+      - "tools/audit_sains_342_pdp_release_gate_20261106.py"
+      - "tools/audit_rph80_sains_first_20261107.py"
       - ".github/workflows/sains_quality_release_guard_20261108.yml"
   push:
     branches: [main]
@@ -18,9 +32,23 @@ on:
       - "audits/sains_342_individual_academic_release_approvals_20261108.json"
       - "web/sains_rph_quality_release_gate_20261108.py"
       - "tests/test_sains_rph_quality_release_gate_20261108.py"
+      - "tests/test_sains_quality_guard_triggers_20261108.py"
       - "tools/check_sains_rph_publication_20261108.py"
       - "tools/run_telegram_with_curriculum_api.py"
       - "web/sains_y5_83_staging_shared_runtime_20261108.py"
+      - "web/sains_y2_51_activities_draf_20261107.py"
+      - "web/sains_y3_rph_activity_preview_20261106.py"
+      - "web/sains_y4_79_activity_bank_draf_20261107.py"
+      - "web/sains_y5_83_activity_bank_draf_20261107.py"
+      - "web/sains_y6_84_activity_bank_draf_20261107.py"
+      - "web/sains_y6_draf_bank_part*_20261107.tsv"
+      - "tools/render_sains_y2_51_rph_draf_20261107.py"
+      - "tools/render_sains_y3_45_review_pack_20261106.py"
+      - "tools/render_sains_y4_79_rph_draf_20261107.py"
+      - "tools/render_sains_y5_83_rph_draf_20261107.py"
+      - "tools/render_sains_y6_84_rph_draf_20261107.py"
+      - "tools/audit_sains_342_pdp_release_gate_20261106.py"
+      - "tools/audit_rph80_sains_first_20261107.py"
       - ".github/workflows/sains_quality_release_guard_20261108.yml"
 
 permissions:
@@ -37,6 +65,8 @@ jobs:
           python-version: "3.12"
       - name: Verify 342 drafts cannot be released without individual >=80 academic proof
         run: python -m unittest discover -s tests -p "test_sains_rph_quality_release_gate_20261108.py" -v
+      - name: Require release gate triggers on all authored Science banks and generator changes
+        run: python -m unittest discover -s tests -p "test_sains_quality_guard_triggers_20261108.py" -v
       - name: Inspect live entrypoint and individual approval registry without database access
         run: python -m tools.check_sains_rph_publication_20261108
       - name: Keep quality decisions for evidence

@@ -12,6 +12,7 @@ OUT=ROOT/"build/sains_rph_quality_release_20261108"
 MAIN_LAUNCH=ROOT/"tools/run_telegram_with_curriculum_api.py"
 STAGED_MODULES={
     "sains_y2_51_activities_draf_20261107",
+    "sains_y3_rph_activity_preview_20261106",
     "sains_y4_79_activity_bank_draf_20261107",
     "sains_y6_84_activity_bank_draf_20261107",
 }
