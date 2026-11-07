@@ -91,7 +91,7 @@ class GoogleNativeCanonicalTests(unittest.TestCase):
         self.assertIsNotNone(self.client.get_cookie(GOOGLE_COOKIE,domain=HOST))
         read.assert_called_once_with(CFG,123456789)
 
-    def test_cross_account_old_telegram_session_not_merged(self):
+    def test_two_independently_verified_sessions_can_coexist_before_explicit_link(self):
         self.client.set_cookie(LEGACY_COOKIE,
                                issue_session_ticket(987654321,SECRET),domain=HOST)
         state=self._start()
@@ -101,6 +101,27 @@ class GoogleNativeCanonicalTests(unittest.TestCase):
                     return_value=ACC),
               patch("web.google_native_canonical_login_routes.read_google_principal",
                     return_value=GOOGLE_ONLY)):
+            reply=self._callback(state)
+        self.assertEqual(reply.status_code,303)
+        self.assertEqual(reply.location,"/google-account")
+        self.assertIsNotNone(self.client.get_cookie(GOOGLE_COOKIE,domain=HOST))
+        # Original authenticated Telegram cookie remains a different identity
+        # until the user explicitly previews and confirms account linking.
+        original=self.client.get_cookie(LEGACY_COOKIE,domain=HOST)
+        self.assertEqual(verify_session_ticket(original.value,SECRET),987654321)
+
+    def test_conflicting_existing_link_never_switches_original_telegram_identity(self):
+        self.client.set_cookie(LEGACY_COOKIE,
+                               issue_session_ticket(987654321,SECRET),domain=HOST)
+        state=self._start()
+        linked={**GOOGLE_ONLY,"legacy_telegram_user_id":123456789,
+                "google_only_trial_remaining":None}
+        with (patch("web.google_native_canonical_login_routes._read_json",
+                    side_effect=[{"access_token":"x"*60},ID]),
+              patch("web.google_native_canonical_login_routes.register_verified_google_principal",
+                    return_value=ACC),
+              patch("web.google_native_canonical_login_routes.read_google_principal",
+                    return_value=linked)):
             reply=self._callback(state)
         self.assertEqual(reply.status_code,409)
         self.assertIsNone(self.client.get_cookie(GOOGLE_COOKIE,domain=HOST))
