@@ -29,6 +29,8 @@ OUT = ROOT / "build" / "sains_y2_51_rph_DRAF_20261107"
 DSKP = "https://drive.google.com/file/d/1rr4CjNvhtI13ioiVSTZi65cvap7j1U6Z/view"
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 PAGES = ROOT / "audits/sains_y2_51_book_text_page_cues_20261107.json"
+BOOK_PAGES_VISUAL = ROOT / "audits/sains_y2_51_textbook_original_page_visual_20261107.json"
+EXPECTED_BOOK_SHA256 = "cf2e00ba3fc77290dd4298d563faf7e0b352343301120ecf962b735f342d366b"
 KPS = {"1.1.1":"Memerhati", "1.1.2":"Mengelas",
        "1.1.3":"Mengukur dan menggunakan nombor", "1.1.4":"Berkomunikasi"}
 Y2_SOURCE_CONFLICTS = {
@@ -77,9 +79,44 @@ def book_page_cues():
     return cues
 
 
+def verified_original_textbook_pages():
+    """Source-locked 51 printed-page/SP visual checks, not teacher approval."""
+    base=book_page_cues()
+    audit=json.loads(BOOK_PAGES_VISUAL.read_text(encoding="utf-8"))
+    summary=audit["summary"]
+    if (audit["source_sha256"]!=EXPECTED_BOOK_SHA256
+        or audit["source_file_id"]!="1LkJJWUb-zyFJ1ftpHM-4HIpIcEGLORI9"
+        or audit["pdf_page_count"]!=136
+        or audit["printed_page_to_pdf_zero_based_index_offset"]!=5
+        or audit["source_status"]!="SOURCE_PAGE_VISUAL_SP_LABEL_VERIFIED__PEDAGOGY_AUDIT_HOLD"
+        or audit["no_db_or_web_telegram_live_writes"] is not True
+        or audit["no_academic_grade_or_approval"] is not True
+        or summary["source_sp_code_page_matches"]!=51
+        or summary["printed_pages_visually_reviewed"]!=43
+        or summary["teacher_pedagogical_approved"]!=0):
+        raise ValueError("Year2 original textbook visual audit version/status unexpected")
+    result={item["sp"]:item for item in audit["items"]}
+    if len(result)!=51 or set(result)!=set(base):
+        raise ValueError("Year2 original textbook SP coverage differs")
+    for sp,item in result.items():
+        c=base[sp]
+        if (c["printed_page_candidates"]!=[item["printed_page"]]
+            or item["pdf_page_index_zero_based"]!=item["printed_page"]+5
+            or item["pdf_page_one_based"]!=item["printed_page"]+6
+            or item["teacher_academic_equivalence_approved"] is not False
+            or item["independent_pdf_text_token_match"] is not True
+            or item["original_full_page_image_reviewed"] is not True
+            or item["book_printed_sp_code_visible"] is not True
+            or item["book_page_number_visible"] is not True
+            or item["status"]!="PRINTED_PAGE_AND_SP_LABEL_MATCH__TEACHER_PEDAGOGY_SIGNOFF_PENDING"):
+            raise ValueError("Year2 textbook original page/SP visual evidence changed "+sp)
+    if len({x["printed_page"] for x in result.values()})!=43:
+        raise ValueError("Year2 textbook visual page count changed")
+    return result
+
 def get_y2_records():
     source, _ = analyze()
-    pages=book_page_cues()
+    pages=verified_original_textbook_pages()
     y2 = [r for r in source if r["tahun"] == 2]
     if len(y2) != 51 or {r["sp"] for r in y2} != set(BANK):
         raise ValueError("Year2 Sains source SP set differs from 51 manually authored tasks")
@@ -97,8 +134,8 @@ def get_y2_records():
             "kps": kps_for(sp),
             "source_discrepancy": Y2_SOURCE_CONFLICTS.get(sp, ""),
             "source_warning_short":SOURCE_CRITICAL_SHORT_NOTE.get(sp, ""),
-            "book_page_cue": ", ".join(map(str,pages[sp]["printed_page_candidates"])),
-            "book_page_status": "TEXT_CUE_ONLY__NOT_VISUALLY_VERIFIED",
+            "book_page_cue": str(pages[sp]["printed_page"]),
+            "book_page_status": "TEXTBOOK_PRINTED_PAGE_AND_SP_CODE_VERIFIED__CONTENT_PEDAGOGY_PENDING",
             "activity_book": activity_for(2,r["pdp_code"],sp),
             "pbd_alternative":(alt_pbd_doc_file(sp).name if sp in ALT_PBD else ""),
             "quality_score_percent": None,
@@ -118,7 +155,7 @@ def markdown(item):
         f"**SK:** {sp.rsplit('.',1)[0]}\n"
         f"**SP asal sumber:** {sp}\n"
         f"**Rujukan:** DSKP asal Sains Tahun 2; Buku Teks Tahun 2 halaman belum disahkan. "
-        f"Petunjuk m/s bercetak: {item['book_page_cue']} (teks PDF, belum disemak secara visual).\n"
+        f"Buku Teks m/s bercetak {item['book_page_cue']}: nombor halaman & label SP diperiksa pada imej asal; kesesuaian PdP/PBD masih menunggu panitia.\n"
         f"**Tempoh:** 60 minit (cadangan; ikut jadual sebenar)\n"
         f"**Objektif:** Murid menghasilkan bukti berikut: {item['pbd']}.\n"
         f"**Kriteria kejayaan/PBD:** {item['pbd']}.\n"
@@ -192,7 +229,7 @@ def write_docx(path,item):
       ("Penutup (5m)","Murid menyatakan satu dapatan; guru merumus kaitan dengan SP "+item["sp"]+"."),
       ("BBM",item["materials"]),
       ("Keselamatan/etika",item["safety"]),
-      ("Buku teks / Status",f"Petunjuk m/s {item['book_page_cue']} (belum sah visual) • DRAF/HOLD" +
+      ("Buku teks / Status",f"BT m/s {item['book_page_cue']} + label SP disemak; isi/PBD belum sah panitia • DRAF/HOLD" +
        (" | "+item.get("source_warning_short","") if item.get("source_warning_short") else "")),
     ]
     for i,(name,val) in enumerate(fields):
@@ -238,7 +275,7 @@ def write_pdf(path,item):
       ("Penutup 5m","Murid menyatakan dapatan; guru merumus SP "+item["sp"]+"."),
       ("BBM",item["materials"]),
       ("Keselamatan",item["safety"]),
-      ("Rujukan/Status",f"DSKP asal; BT m/s calon {item['book_page_cue']} belum sah visual • DRAF/HOLD" +
+      ("Rujukan/Status",f"DSKP asal; BT m/s {item['book_page_cue']} + kod SP disemak, isi/PBD belum sah panitia • DRAF/HOLD" +
        (" | "+item.get("source_warning_short","") if item.get("source_warning_short") else "")),
       ("Refleksi","____ / ____ murid mencapai objektif."),
     ]
@@ -284,6 +321,8 @@ def main():
             "source_title":item["tajuk"],"candidate_title":item["candidate_title"],
             "source_conflict":item["source_discrepancy"],
             "book_page_cue":item["book_page_cue"],
+            "book_page_status":item["book_page_status"],
+            "book_source_sha256":EXPECTED_BOOK_SHA256,
             "activity_book_page":item["activity_book"]["workbook_printed_page"],
             "activity_book_pdf_page":item["activity_book"]["workbook_pdf_page"],
             "activity_book_exercise":item["activity_book"]["activity_title"],
