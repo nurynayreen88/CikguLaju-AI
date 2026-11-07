@@ -74,7 +74,24 @@
         "4.2.4",
         "4.2.5"
       ],
-      "source_conflict": true
+      "source_conflict": true,
+      "conflict_resolution_evidence": {
+        "year6_expected_topic": "Solat Ketika Sakit",
+        "year6_sk_code": "4.2",
+        "year6_sp_codes": [
+          "4.2.3",
+          "4.2.4",
+          "4.2.5"
+        ],
+        "year6_reference": "https://sites.google.com/moe-dl.edu.my/gapd-rukhsah-solat/utama",
+        "year5_topic_used_by_errant_rpt": "Solat Berjemaah",
+        "year5_reference": "https://edu.sistemguruonline.my/wp-content/uploads/2023/11/carta-alir-SOLAT_BERJEMAAH_MEMBENTUK_KEKUATAN_UMMAHSOLAT_JEMAAH_.pdf",
+        "year6_existing_internal_source": "rph_standalone/pendidikan_islam_draf_2027/year6.json: Lesson 059 SK4.2, SP 4.2.3–4.2.5",
+        "finding": "Exact SP code numbering overlaps between Year5 and Year6, with different learning topics. The source RPT Year6 L060 appears to have copied Year5 Ibadah content. The Year6 topic may be corrected only as a flagged proposal, not a verified distinct RPH.",
+        "candidate_correction_approval": false,
+        "source_rpt_draft_unmodified": true
+      },
+      "proposed_year6_display": "KONFLIK SUMBER: SK 4.2 Tahun 6 ialah Solat Ketika Sakit; Solat Berjemaah ialah padanan Tahun 5 untuk kod 4.2, bukan Tahun 6."
     },
     {
       "year": 6,
@@ -90,5 +107,6 @@
       "passage_sequence_approval_pending": true
     }
   ],
-  "production_changes": 0
+  "production_changes": 0,
+  "year6_l060_conflict_investigated": true
 }
