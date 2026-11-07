@@ -1,0 +1,29 @@
+{
+  "subject": "PSV",
+  "year": 2,
+  "status": "DRAF_CROSSWALK_FULL_DSKP_TEXT",
+  "source": "Original KPM DSKP Pendidikan Seni Visual Tahun 2",
+  "source_drive_file_id": "1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8",
+  "source_url": "https://drive.google.com/file/d/1RA2bw9IGU9MFakT33HhgAdnjY-7H3DW8/view",
+  "extraction": "Drive extracted text, code-indexed and bounded by next SP/teaching-notes marker; requires visual/teacher signoff",
+  "sk": {
+    "1.1": "Bahasa Seni Visual",
+    "2.1": "Kemahiran Seni Visual",
+    "3.1": "Penghasilan karya kreatif",
+    "4.1": "Penghayatan karya Seni Visual",
+    "5.1": "Persembahan hasil karya"
+  },
+  "sp": {
+    "1.1.1": "Mengenal dan menerangkan bahasa seni visual dalam Bidang Menggambar berdasarkan: (i) garisan, rupa, imbangan dan kepelbagaian yang ada pada lukisan. (ii) bentuk, warna, kontra dan kepelbagaian yang ada pada catan. (iii) garisan, rupa, imbangan dan kepelbagaian yang ada pada gosokan. (iv) garisan, warna, kontra serta ritma dan pergerakan yang ada pada resis.",
+    "1.1.2": "Mengenal dan menerangkan bahasa seni visual dalam Bidang Membuat Corak dan Rekaan berdasarkan: (i) rupa, warna, kontra dan harmoni yang ada pada lipatan dan guntingan. (ii) rupa, warna, kontra dan kepelbagaian yang ada pada cetakan.",
+    "1.1.3": "Mengenal dan menerangkan bahasa seni visual dalam Bidang Membentuk dan Membuat Binaan berdasarkan: (i) bentuk, warna, imbangan dan kepelbagaian yang ada pada stabail. (ii) bentuk, jalinan, imbangan dan penegasan yang ada pada topeng.",
+    "1.1.4": "Mengenal dan menerangkan bahasa seni visual dalam Bidang Mengenal Kraf Tradisional berdasarkan: (i) bentuk, jalinan, imbangan dan kontra yang ada pada alat permainan. (ii) bentuk, jalinan, imbangan dan kepelbagaian yang ada pada tembikar.",
+    "2.1.1": "Mengaplikasikan pengetahuan bahasa seni visual melalui media dan proses untuk menghasilkan karya dalam Bidang Menggambar menggunakan: (i) teknik garisan selari (ii) teknik basah atas kering (iii) teknik gosokan (iv) teknik resis",
+    "2.1.2": "Mengaplikasikan pengetahuan bahasa seni visual melalui media dan proses untuk menghasilkan karya dalam Bidang Membuat Corak dan Rekaan menggunakan: (i) teknik lipatan dan guntingan (ii) teknik cetakan blok",
+    "2.1.3": "Mengaplikasikan pengetahuan bahasa seni visual melalui media dan proses untuk menghasilkan karya dalam Bidang Membentuk dan Membuat Binaan menggunakan: (i) teknik binaan dalam penghasilan arca stabail (ii) teknik binaan dalam penghasilan topeng",
+    "3.1.1": "Menghasilkan karya yang kreatif dengan: (i) memilih dan memanipulasi media secara kreatif. (ii) menggunakan bahasa seni visual dalam penghasilan karya secara kreatif. (iii) mengaplikasikan pengetahuan, kefahaman, dan kemahiran bahasa seni visual dalam menghasilkan karya secara kreatif. (iv) membuat kemasan pada hasil karya.",
+    "3.3.1": "Mempersembahkan hasil karya secara berkumpulan mengikut kreativiti.",
+    "4.1.1": "Mempamerkan karya yang dihasilkan.",
+    "4.1.2": "Membuat apresiasi karya sendiri dan rakan berpandukan bahasa seni visual, teknik dan proses serta menghubungkaitkan seni dengan diri sendiri dan alam sekitar."
+  }
+}

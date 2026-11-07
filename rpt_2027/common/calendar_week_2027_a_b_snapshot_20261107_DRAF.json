@@ -1,0 +1,784 @@
+{
+  "kind": "KPM_YEAR_2027_RPT_WEEK_MASTER_SNAPSHOT",
+  "status": "DRAF_REFERENCE_NOT_RELEASE_SIGNOFF",
+  "snapshot_date": "2026-11-07",
+  "source_title": "CIKGULAJU_RPT_2027_KALENDAR_CUTI_FINAL_VERIFIED",
+  "source_url": "https://docs.google.com/spreadsheets/d/1tf6-B6hmA4U6E0fCROcKpxh-B5uLUQOYBt6TZft_7_k/edit",
+  "source_sheet": "INDUK MINGGU RPT 2027 A B",
+  "source_range": "A2:G97",
+  "source_disclaimer": "Connected sheet contains separate audit notes marking legal/public-holiday reconciliation and some release checks as blocked. This snapshot verifies only reported school-week ranges, not final state-specific public holidays.",
+  "weeks": {
+    "A": [
+      {
+        "week": "M01",
+        "start": "2027-01-04",
+        "end": "2027-01-07",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M02",
+        "start": "2027-01-10",
+        "end": "2027-01-14",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M03",
+        "start": "2027-01-17",
+        "end": "2027-01-21",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M04",
+        "start": "2027-01-24",
+        "end": "2027-01-28",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M05",
+        "start": "2027-01-31",
+        "end": "2027-02-04",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M06",
+        "start": "2027-02-07",
+        "end": "2027-02-11",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M07",
+        "start": "2027-02-14",
+        "end": "2027-02-18",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M08",
+        "start": "2027-02-21",
+        "end": "2027-02-25",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M09",
+        "start": "2027-02-28",
+        "end": "2027-03-04",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "",
+        "start": "2027-03-07",
+        "end": "2027-03-13",
+        "kind": "CUTI SEKOLAH TANPA NOMBOR",
+        "status": "CUTI PENGGAL",
+        "note": "Cuti Penggal 1"
+      },
+      {
+        "week": "M10",
+        "start": "2027-03-14",
+        "end": "2027-03-18",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M11",
+        "start": "2027-03-21",
+        "end": "2027-03-25",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M12",
+        "start": "2027-03-28",
+        "end": "2027-04-01",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M13",
+        "start": "2027-04-04",
+        "end": "2027-04-08",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M14",
+        "start": "2027-04-11",
+        "end": "2027-04-15",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M15",
+        "start": "2027-04-18",
+        "end": "2027-04-22",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M16",
+        "start": "2027-04-25",
+        "end": "2027-04-29",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M17",
+        "start": "2027-05-02",
+        "end": "2027-05-06",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M18",
+        "start": "2027-05-09",
+        "end": "2027-05-13",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M19",
+        "start": "2027-05-16",
+        "end": "2027-05-20",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "",
+        "start": "2027-05-23",
+        "end": "2027-05-29",
+        "kind": "CUTI SEKOLAH TANPA NOMBOR",
+        "status": "CUTI PENGGAL",
+        "note": "Cuti Pertengahan Tahun"
+      },
+      {
+        "week": "",
+        "start": "2027-05-30",
+        "end": "2027-06-05",
+        "kind": "CUTI SEKOLAH TANPA NOMBOR",
+        "status": "CUTI PENGGAL",
+        "note": "Cuti Pertengahan Tahun"
+      },
+      {
+        "week": "M20",
+        "start": "2027-06-06",
+        "end": "2027-06-10",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M21",
+        "start": "2027-06-13",
+        "end": "2027-06-17",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M22",
+        "start": "2027-06-20",
+        "end": "2027-06-24",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M23",
+        "start": "2027-06-27",
+        "end": "2027-07-01",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M24",
+        "start": "2027-07-04",
+        "end": "2027-07-08",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M25",
+        "start": "2027-07-11",
+        "end": "2027-07-15",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M26",
+        "start": "2027-07-18",
+        "end": "2027-07-22",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M27",
+        "start": "2027-07-25",
+        "end": "2027-07-29",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M28",
+        "start": "2027-08-01",
+        "end": "2027-08-05",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M29",
+        "start": "2027-08-08",
+        "end": "2027-08-12",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M30",
+        "start": "2027-08-15",
+        "end": "2027-08-19",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M31",
+        "start": "2027-08-22",
+        "end": "2027-08-26",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "",
+        "start": "2027-08-29",
+        "end": "2027-09-04",
+        "kind": "CUTI SEKOLAH TANPA NOMBOR",
+        "status": "CUTI PENGGAL",
+        "note": "Cuti Penggal 2"
+      },
+      {
+        "week": "M32",
+        "start": "2027-09-05",
+        "end": "2027-09-09",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M33",
+        "start": "2027-09-12",
+        "end": "2027-09-16",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M34",
+        "start": "2027-09-19",
+        "end": "2027-09-23",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M35",
+        "start": "2027-09-26",
+        "end": "2027-09-30",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M36",
+        "start": "2027-10-03",
+        "end": "2027-10-07",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M37",
+        "start": "2027-10-10",
+        "end": "2027-10-14",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M38",
+        "start": "2027-10-17",
+        "end": "2027-10-21",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M39",
+        "start": "2027-10-24",
+        "end": "2027-10-28",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M40",
+        "start": "2027-10-31",
+        "end": "2027-11-04",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M41",
+        "start": "2027-11-07",
+        "end": "2027-11-11",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M42",
+        "start": "2027-11-14",
+        "end": "2027-11-18",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M43",
+        "start": "2027-11-21",
+        "end": "2027-11-25",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M44",
+        "start": "2027-11-28",
+        "end": "2027-12-02",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ],
+    "B": [
+      {
+        "week": "M01",
+        "start": "2027-01-04",
+        "end": "2027-01-08",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M02",
+        "start": "2027-01-11",
+        "end": "2027-01-15",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M03",
+        "start": "2027-01-18",
+        "end": "2027-01-22",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M04",
+        "start": "2027-01-25",
+        "end": "2027-01-29",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M05",
+        "start": "2027-02-01",
+        "end": "2027-02-05",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M06",
+        "start": "2027-02-08",
+        "end": "2027-02-12",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M07",
+        "start": "2027-02-15",
+        "end": "2027-02-19",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M08",
+        "start": "2027-02-22",
+        "end": "2027-02-26",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M09",
+        "start": "2027-03-01",
+        "end": "2027-03-05",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "",
+        "start": "2027-03-08",
+        "end": "2027-03-14",
+        "kind": "CUTI SEKOLAH TANPA NOMBOR",
+        "status": "CUTI PENGGAL",
+        "note": "Cuti Penggal 1"
+      },
+      {
+        "week": "M10",
+        "start": "2027-03-15",
+        "end": "2027-03-19",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M11",
+        "start": "2027-03-22",
+        "end": "2027-03-26",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M12",
+        "start": "2027-03-29",
+        "end": "2027-04-02",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M13",
+        "start": "2027-04-05",
+        "end": "2027-04-09",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M14",
+        "start": "2027-04-12",
+        "end": "2027-04-16",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M15",
+        "start": "2027-04-19",
+        "end": "2027-04-23",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M16",
+        "start": "2027-04-26",
+        "end": "2027-04-30",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M17",
+        "start": "2027-05-03",
+        "end": "2027-05-07",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M18",
+        "start": "2027-05-10",
+        "end": "2027-05-14",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M19",
+        "start": "2027-05-17",
+        "end": "2027-05-21",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "",
+        "start": "2027-05-24",
+        "end": "2027-05-30",
+        "kind": "CUTI SEKOLAH TANPA NOMBOR",
+        "status": "CUTI PENGGAL",
+        "note": "Cuti Pertengahan Tahun"
+      },
+      {
+        "week": "",
+        "start": "2027-05-31",
+        "end": "2027-06-06",
+        "kind": "CUTI SEKOLAH TANPA NOMBOR",
+        "status": "CUTI PENGGAL",
+        "note": "Cuti Pertengahan Tahun"
+      },
+      {
+        "week": "M20",
+        "start": "2027-06-07",
+        "end": "2027-06-11",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M21",
+        "start": "2027-06-14",
+        "end": "2027-06-18",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M22",
+        "start": "2027-06-21",
+        "end": "2027-06-25",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M23",
+        "start": "2027-06-28",
+        "end": "2027-07-02",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M24",
+        "start": "2027-07-05",
+        "end": "2027-07-09",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M25",
+        "start": "2027-07-12",
+        "end": "2027-07-16",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M26",
+        "start": "2027-07-19",
+        "end": "2027-07-23",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M27",
+        "start": "2027-07-26",
+        "end": "2027-07-30",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M28",
+        "start": "2027-08-02",
+        "end": "2027-08-06",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M29",
+        "start": "2027-08-09",
+        "end": "2027-08-13",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M30",
+        "start": "2027-08-16",
+        "end": "2027-08-20",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M31",
+        "start": "2027-08-23",
+        "end": "2027-08-27",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "",
+        "start": "2027-08-30",
+        "end": "2027-09-05",
+        "kind": "CUTI SEKOLAH TANPA NOMBOR",
+        "status": "CUTI PENGGAL",
+        "note": "Cuti Penggal 2"
+      },
+      {
+        "week": "M32",
+        "start": "2027-09-06",
+        "end": "2027-09-10",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M33",
+        "start": "2027-09-13",
+        "end": "2027-09-17",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M34",
+        "start": "2027-09-20",
+        "end": "2027-09-24",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M35",
+        "start": "2027-09-27",
+        "end": "2027-10-01",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M36",
+        "start": "2027-10-04",
+        "end": "2027-10-08",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M37",
+        "start": "2027-10-11",
+        "end": "2027-10-15",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M38",
+        "start": "2027-10-18",
+        "end": "2027-10-22",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M39",
+        "start": "2027-10-25",
+        "end": "2027-10-29",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M40",
+        "start": "2027-11-01",
+        "end": "2027-11-05",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M41",
+        "start": "2027-11-08",
+        "end": "2027-11-12",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M42",
+        "start": "2027-11-15",
+        "end": "2027-11-19",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M43",
+        "start": "2027-11-22",
+        "end": "2027-11-26",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      },
+      {
+        "week": "M44",
+        "start": "2027-11-29",
+        "end": "2027-12-03",
+        "kind": "MINGGU RPT",
+        "status": "TERJADUAL",
+        "note": "Cuti umum/UASA/aktiviti kekal dalam minggu"
+      }
+    ]
+  }
+}

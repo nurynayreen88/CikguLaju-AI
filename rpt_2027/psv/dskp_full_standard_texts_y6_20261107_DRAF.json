@@ -1,0 +1,34 @@
+{
+  "subject": "PSV",
+  "year": 6,
+  "status": "DRAF_CROSSWALK_FULL_DSKP_TEXT",
+  "source": "Original KPM DSKP Pendidikan Seni Visual Tahun 6",
+  "source_drive_file_id": "1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy",
+  "source_url": "https://drive.google.com/file/d/1-EmxKXK_Fn3tK-wY42ST4TNOIO0CHBHy/view",
+  "extraction": "Drive extracted text, code-indexed and bounded by next SP/teaching-notes marker; requires visual/teacher signoff",
+  "sk": {
+    "1.1": "Bahasa Seni Visual",
+    "2.1": "Kemahiran Seni Visual",
+    "3.1": "Penghasilan karya seni visual",
+    "4.1": "Penghayatan karya seni visual",
+    "5.1": "Persembahan hasil karya"
+  },
+  "sp": {
+    "1.1.1": "Menyatakan istilah dan pengertian bahasa seni visual.",
+    "1.1.2": "Mencirikan bahasa seni visual yang terdapat pada alam semula jadi, objek buatan manusia dan karya seni berdasarkan: (i) jenis (ii) fungsi",
+    "1.1.3": "Mencerakinkan bahasa seni visual dalam aktiviti mengikut bidang seni visual iaitu: (i) Menggambar (ii) Membuat Corak dan Rekaan (iii) Membentuk dan Membuat Binaan (iv) Mengenal Kraf Tradisional",
+    "2.1.1": "Meneroka media berpandukan bahasa seni visual.",
+    "2.1.2": "Mengaplikasikan bahasa seni visual melalui lakaran berdasarkan: (i) jenis (ii) fungsi",
+    "2.1.3": "Mengeksplorasi media dan teknik gabungan antara bidang untuk penghasilan karya atau produk.",
+    "3.1.1": "Menghasilkan folio bahasa seni visual berdasarkan: (i) Modul Bahasa Seni Visual (ii) Modul Kemahiran Seni Visual",
+    "3.2.1": "Menghasilkan lakaran idea karya atau produk gabungan bidang berdasarkan aspek: (i) tema dan tajuk (ii) fungsi (iii) reka bentuk/ rupa bentuk/ komposisi (iv) media, teknik dan proses (v) kemasan",
+    "3.2.2": "Menghasilkan karya atau produk gabungan bidang berdasarkan: (i) tema dan tajuk melalui sumber idea. (ii) fungsi dan reka bentuk melalui sumber idea. (iii) perkembangan idea reka bentuk/ rupa bentuk/ komposisi dalam penghasilan. (iv) penggunaan jenis media dan teknik yang sesuai. (v) kemasan akhir. (vi) disiplin pengkaryaan, aspek keselamatan dan nilai murni.",
+    "3.2.3": "Menghasilkan gambar karya atau produk akhir secara manual atau digital.",
+    "4.1.1": "Membuat ulasan secara kritis terhadap karya atau produk sendiri dan rakan berpandukan: (i) bahasa seni visual (ii) media, teknik dan proses (iii) gabungan bidang seni visual (iv) nilai gunaan/ nilai estetik karya (v) kreativiti dan inovasi",
+    "5.1.1": "Merancang dan menjalankan proses persediaan pameran seni visual dalam kumpulan meliputi: (i) pelantikan ahli jawatankuasa pameran. (ii) penentuan tema pameran (iii) penentuan lokasi pameran (iv) pengumpulan bahan pameran  folio  karya atau produk  gambar karya atau produk (iv) penghasilan kapsyen (v) penentuan susun atur bahan pameran (vi) promosi pameran",
+    "5.1.2": "Membuat pameran seni visual.",
+    "5.1.3": "Menceritakan tentang karya sendiri dan memberi pandangan tentang karya rakan semasa pameran.",
+    "5.1.4": "Menguruskan karya dan alatan pameran supaya selamat serta terpelihara semasa pameran dijalankan.",
+    "5.1.5": "Menyusun alatan dan bahan pameran seni serta memastikan ruang pameran bersih selepas pameran dilaksanakan."
+  }
+}

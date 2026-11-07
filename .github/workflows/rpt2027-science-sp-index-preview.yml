@@ -1,0 +1,48 @@
+name: RPT2027 Sains 387 DSKP source-only 5-format PDF QA
+on:
+  pull_request:
+    paths:
+      - 'scripts/build_rpt_2027_science_dskp_index_not_annual_plan.py'
+      - 'tests/test_rpt_2027_science_standard_index.py'
+      - '.github/workflows/rpt2027-science-sp-index-preview.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'PyMuPDF==1.24.14' 'reportlab==4.2.5'
+      - run: python -m py_compile scripts/build_rpt_2027_science_dskp_index_not_annual_plan.py
+      - run: python -m unittest tests.test_rpt_2027_science_standard_index -v
+      - run: |
+          python -m scripts.build_rpt_2027_science_dskp_index_not_annual_plan
+          python - <<'PY'
+          import fitz
+          from pathlib import Path
+          files=list(Path('staging/rpt_2027_seragam_2026/sains_dskp_index_BUKAN_RPT').glob('*.pdf'))
+          assert len(files)==5
+          for f in files:
+              with fitz.open(f) as doc:
+                  assert all(p.rect.width>p.rect.height for p in doc)
+                  for page in doc:
+                      assert chr(0) not in page.get_text()
+                      for block in page.get_text('blocks'):
+                          x0,y0,x1,y1=block[:4]
+                          assert 0<=x0<=x1<=page.rect.width and 0<=y0<=y1<=page.rect.height
+                  doc[0].get_pixmap(matrix=fitz.Matrix(1.4,1.4),alpha=False).save(str(f.with_suffix('.cover.png')))
+                  doc[1].get_pixmap(matrix=fitz.Matrix(1.4,1.4),alpha=False).save(str(f.with_suffix('.page2.png')))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: RPT2027-SAINS-387-SP-INDEKS-BUKAN-RPT-PDP-DRAF
+          path: |
+            staging/rpt_2027_seragam_2026/sains_dskp_index_BUKAN_RPT/*.pdf
+            staging/rpt_2027_seragam_2026/sains_dskp_index_BUKAN_RPT/*.png
+          if-no-files-found: error
+          retention-days: 14

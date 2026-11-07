@@ -1,0 +1,108 @@
+{
+  "date": "2026-11-07",
+  "version": 1,
+  "status": "CRITICAL_KSSR2017_CURRICULUM_EDITION_MISMATCH_STAGING_HOLD",
+  "scope": "Sains Tahun4–6 RPT 2027 source v25.82/v26.00 vs authoritative KSSR Semakan 2017 DSKP",
+  "meaning": "The 422/342 internal database SP coverage audit only proves internal coverage. It does not independently prove that v26 codes/text match the KPM KSSR 2017 grade-year curriculum.",
+  "original_source_docs": [
+    {
+      "year": 4,
+      "drive_url": "https://drive.google.com/file/d/1eXDdb_qSfCKyqoVtl9T4q2I4rKyHtk9D/view",
+      "file_name": "GuruBesar_DSKP_Sains_Tahun_4.pdf",
+      "sha256": "623e60d32156e1a3eeb399f856f40dc6529946445278bf4cf69aea081ad543ea",
+      "pages": 92,
+      "inspection": "PDF pages 61 SK2.3, 84 SK10.1, 85 SK10.2; table of contents has no Pewarisan"
+    },
+    {
+      "year": 5,
+      "drive_url": "https://drive.google.com/file/d/1YkiK-pVo4UUzyOUvv_Vrico58eQyddCz/view",
+      "file_name": "GuruBesar_DSKP_Sains_Tahun_5.pdf",
+      "sha256": "e90744b28e6cc3943e8707475a911238ffc8b6a9dffb812bf742d35bcaa61ef6",
+      "pages": 88,
+      "inspection": "PDF pages 71–72 SK6.1 Haba dan Suhu including pengembangan/pengecutan; no SK6.2 or SK10.2 in official PDF text"
+    },
+    {
+      "year": 6,
+      "source_url": "https://beebeeclassroom.com/wp-content/uploads/2022/04/DSKP-KSSR-Semakan-2017-Sains-Tahun-6_ISBN_.pdf",
+      "type": "KPM KSSR 2017 DSKP online, source PDF text; source PDF screenshot unavailable from web cache",
+      "inspection": "Section 2.2 Sistem Saraf, SP 2.2.1–2.2.6"
+    }
+  ],
+  "conflict_samples": [
+    {
+      "year": 4,
+      "legacy_sk": "3.3",
+      "legacy_title": "Manusia bergerak balas terhadap rangsangan",
+      "kssr2017_sk": "2.3",
+      "kssr2017_title": "Manusia Bergerak Balas Terhadap Rangsangan",
+      "source_page_pdf": 61,
+      "conflict": "SOURCE_2017_TOPIC_SAME_BUT_SK_CODE_CHANGED",
+      "action": "Replace year4 source mappings only after exact SP-by-SP DSKP/revised RPH reconciliation"
+    },
+    {
+      "year": 4,
+      "legacy_sk": "3.4",
+      "legacy_title": "Pewarisan",
+      "kssr2017_sk": null,
+      "kssr2017_title": null,
+      "source_page_pdf": null,
+      "conflict": "TOPIC_ABSENT_FROM_DSKP2017_YEAR4_CONTENTS",
+      "action": "Do not generate Year4 inheritance lessons from old DB; consult current textbook/DSKP"
+    },
+    {
+      "year": 4,
+      "legacy_sk": "10.1",
+      "legacy_title": "Mesin ringkas dan mesin kompleks",
+      "kssr2017_sk": "10.2",
+      "kssr2017_title": "Mesin Ringkas dan Mesin Kompleks",
+      "source_page_pdf": 85,
+      "conflict": "PARTIAL_TOPIC_CODE_SHIFT",
+      "action": "Check full official SP text and whether Tuas SK10.1 is already accounted for"
+    },
+    {
+      "year": 5,
+      "legacy_sk": "6.2",
+      "legacy_title": "Pengembangan dan pengecutan bahan",
+      "kssr2017_sk": "6.1",
+      "kssr2017_title": "Haba dan Suhu",
+      "source_page_pdf": 72,
+      "conflict": "TOPIC_PART_OF_DIFFERENT_KSSR2017_SK",
+      "action": "Official SK6.1 spans haba/suhu and expansion; no invented 6.2"
+    },
+    {
+      "year": 5,
+      "legacy_sk": "10.2",
+      "legacy_title": "Mesin kompleks",
+      "kssr2017_sk": null,
+      "kssr2017_title": null,
+      "source_page_pdf": null,
+      "conflict": "LEGACY_TOPIC_NOT_IN_CURRENT_YEAR5_KSSR2017_STANDARD_10_2",
+      "action": "Do not insert Year5 10.2 machine complex SP; check official Year5 unit sequence"
+    },
+    {
+      "year": 6,
+      "legacy_sk": "3.2",
+      "legacy_title": "Sistem saraf manusia",
+      "kssr2017_sk": "2.2",
+      "kssr2017_title": "Sistem Saraf",
+      "source_page_pdf": 59,
+      "conflict": "YEAR6_OFFICIAL_SIX_SP_2_2_1_TO_2_2_6_VS_LEGACY_3_2_1_TO_3_2_5",
+      "action": "Replace with real Year6 SK2.2 and 6 DSKP SP, audit current RPH sequence"
+    }
+  ],
+  "blocked_outputs": [
+    "342-PdP legacy Sains RPT subject PDFs as current KSSR-ready",
+    "80 legacy DB SP gap annex as official coverage",
+    "10 candidate Sains lessons using uncorrected legacy code labels"
+  ],
+  "no_auto_remap": true,
+  "requires_full_reverification_years": [
+    4,
+    5,
+    6
+  ],
+  "y2_y3_not_exonerated_by_this_sample": true,
+  "academic_release_ready": false,
+  "ready_for_web_telegram": false,
+  "production_changes": 0
+}
