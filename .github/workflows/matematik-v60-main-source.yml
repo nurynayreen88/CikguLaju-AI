@@ -1,0 +1,34 @@
+name: Matematik v60 canonical RPH source integrity
+
+on:
+  pull_request:
+    paths:
+      - 'rph_standalone/matematik/v60_source/**'
+      - 'rph_standalone/matematik/v60_source_loader.py'
+      - 'tests/test_matematik_v60_main_source.py'
+      - '.github/workflows/matematik-v60-main-source.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'rph_standalone/matematik/v60_source/**'
+      - 'rph_standalone/matematik/v60_source_loader.py'
+      - 'tests/test_matematik_v60_main_source.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-v60-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify 585 exact Markdown RPH without DB or network access
+        run: python -m unittest discover -s tests -p test_matematik_v60_main_source.py -v
+      - name: Print snapshot identity
+        run: python -m rph_standalone.matematik.v60_source_loader --verify
