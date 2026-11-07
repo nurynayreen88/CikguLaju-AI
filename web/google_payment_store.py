@@ -140,9 +140,19 @@ def submit_receipt(config, account_id, plan_code, approved_catalog, raw, mime):
             "Pengesahan rekod belum pasti. Semak status sebelum muat naik lagi.") from None
 
 
+def account_display_name(config, account_id):
+    account_id = _uuid(account_id)
+    reply = _request(config, "/rest/v1/web_accounts?" + urlencode({
+        "select": "display_name", "id": "eq." + account_id, "limit": "1"}))
+    if not isinstance(reply, list) or len(reply) != 1:
+        raise PaymentUnavailable("Akaun guru tidak tersedia")
+    value = reply[0].get("display_name")
+    return " ".join(value.split())[:120] if isinstance(value, str) else ""
+
+
 def admin_pending(config):
     rows = _rows(config, "web_payment_requests", {
-        "select": "id,account_id,plan_code,quoted_amount_sen,status,submitted_at",
+        "select": "id,account_id,plan_code,quoted_amount_sen,status,submitted_at,web_accounts(display_name)",
         "status": "eq.pending", "order": "submitted_at.asc", "limit": "100"})
     return rows
 
@@ -150,7 +160,7 @@ def admin_pending(config):
 def admin_payment(config, request_id):
     request_id = _uuid(request_id)
     rows = _rows(config, "web_payment_requests", {
-        "select": "id,account_id,plan_code,quoted_amount_sen,status,submitted_at,reviewed_at,reviewed_by,review_note,receipt_storage_path",
+        "select": "id,account_id,plan_code,quoted_amount_sen,status,submitted_at,reviewed_at,reviewed_by,review_note,receipt_storage_path,web_accounts(display_name)",
         "id": "eq." + request_id, "limit": "2"})
     if len(rows) != 1 or rows[0].get("id") != request_id:
         return None
