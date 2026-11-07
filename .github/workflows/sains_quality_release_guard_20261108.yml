@@ -8,6 +8,7 @@ on:
       - "audits/sains_342_individual_academic_release_approvals_20261108.json"
       - "web/sains_rph_quality_release_gate_20261108.py"
       - "tests/test_sains_rph_quality_release_gate_20261108.py"
+      - "tests/test_sains_quality_guard_triggers_20261108.py"
       - "tools/check_sains_rph_publication_20261108.py"
       - "tools/run_telegram_with_curriculum_api.py"
       - "web/sains_y5_83_staging_shared_runtime_20261108.py"
@@ -31,6 +32,7 @@ on:
       - "audits/sains_342_individual_academic_release_approvals_20261108.json"
       - "web/sains_rph_quality_release_gate_20261108.py"
       - "tests/test_sains_rph_quality_release_gate_20261108.py"
+      - "tests/test_sains_quality_guard_triggers_20261108.py"
       - "tools/check_sains_rph_publication_20261108.py"
       - "tools/run_telegram_with_curriculum_api.py"
       - "web/sains_y5_83_staging_shared_runtime_20261108.py"
@@ -63,6 +65,8 @@ jobs:
           python-version: "3.12"
       - name: Verify 342 drafts cannot be released without individual >=80 academic proof
         run: python -m unittest discover -s tests -p "test_sains_rph_quality_release_gate_20261108.py" -v
+      - name: Require release gate triggers on all authored Science banks and generator changes
+        run: python -m unittest discover -s tests -p "test_sains_quality_guard_triggers_20261108.py" -v
       - name: Inspect live entrypoint and individual approval registry without database access
         run: python -m tools.check_sains_rph_publication_20261108
       - name: Keep quality decisions for evidence
