@@ -16,9 +16,9 @@ PROD_URL = "https://cikgulaju-web.onrender.com/internal/identity/v1/entitlements
 SOURCE = "cikgulaju-prod-entitlements-v1"
 STAGING_URL = "https://eqrcjlnvcytkgazptbor.supabase.co"
 MAX_RESPONSE = 2048
-COLD_START_TIMEOUT = 55  # Render free Web can require >20 s to wake.
-GATEWAY_RETRY_TIMEOUT = 25
-GATEWAY_RETRY_BACKOFF = 2
+COLD_START_TIMEOUT = 30  # Render free Web can take over 20 s to wake.
+GATEWAY_RETRY_TIMEOUT = 12
+GATEWAY_RETRY_BACKOFFS = (4, 8, 12)  # Gives sleeping proxy time to restart.
 
 
 class PaidStatusBridgeUnavailable(RuntimeError):
@@ -75,7 +75,7 @@ def read_paid_status(telegram_uid, cfg, *, transport=None, now=None):
             except HTTPError as exc:
                 if exc.code not in (502, 503, 504) or attempt == 3:
                     raise
-                time.sleep(GATEWAY_RETRY_BACKOFF * (attempt + 1))
+                time.sleep(GATEWAY_RETRY_BACKOFFS[attempt])
         payload = json.loads(raw)
         if (not isinstance(payload, dict)
                 or set(payload) != {"source", "telegram_user_id", "registered",
