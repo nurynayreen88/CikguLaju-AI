@@ -87,6 +87,8 @@ class PaymentApiTest(unittest.TestCase):
                   return_value=PAYMENT_ID) as submit,
             patch("web.google_payment_admin_notify.notify_google_payment_admin",
                   return_value=True) as notify,
+            patch("web.google_payment_staging_routes.account_display_name",
+                  return_value="Cikgu Ujian"),
         ):
             valid=self.post(path, data={"plan_code":"rakan_pembangun",
                  "receipt":(BytesIO(pdf),"proof.pdf")},
