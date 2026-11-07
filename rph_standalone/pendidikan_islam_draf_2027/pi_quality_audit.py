@@ -20,6 +20,8 @@ STATES = {"CALON_UJIAN_GURU_DRAF", "SEMAKAN_KEUTAMAAN",
 NUMBERED = re.compile(r"^\s*([0-9]{1,2})[.)]\s+", re.ASCII)
 UNVERIFIED_PAGE = ("perlu padanan", "padanan sk/toc terdahulu",
                    "halaman khusus belum", "belum dipadankan")
+# Reused generic PBD statement. Detect for editorial triage; do not auto-fill.
+GENERIC_PBD = "برداسركن كريتيريا دالم SP"
 DOMAINS = {"القرءان": "al-Quran", "جاوي": "Jawi", "عقيدة": "Akidah",
            "عبادة": "Ibadah", "سيرة": "Sirah", "ادب": "Adab",
            "حديث": "Hadis"}
@@ -62,6 +64,8 @@ def audit(root=ROOT):
                 flags.append("AKTIVITI_TERLALU_RINGKAS_PERLU_SEMAKAN")
             if any(term in fields["bahan"].casefold() for term in UNVERIFIED_PAGE):
                 flags.append("RUJUKAN_HALAMAN_BELUM_DISAHKAN")
+            if GENERIC_PBD in fields["pentaksiran"]:
+                flags.append("PBD_TIDAK_KHUSUS_KEPADA_SP")
             if domain == "tidak_diketahui":
                 flags.append("BIDANG_TIDAK_DIKENALI")
             enrichment = record.get("staging_enrichment")
@@ -93,6 +97,13 @@ def audit(root=ROOT):
         "expanded_activity_draft_count": flag_counts["PENAMBAHAN_PDP_BELUM_SAH_PAKAR"],
         "short_activity_count": flag_counts["AKTIVITI_TERLALU_RINGKAS_PERLU_SEMAKAN"],
         "critical_source_review_count": flag_counts["SUMBER_KRITIKAL_BELUM_LENGKAP"],
+        "generic_pbd_count": flag_counts["PBD_TIDAK_KHUSUS_KEPADA_SP"],
+        "generic_pbd_by_year": {
+            str(y): sum(1 for r in rows
+                        if r["id"].startswith(f"T{y}-") and
+                        "PBD_TIDAK_KHUSUS_KEPADA_SP" in r["flags"])
+            for y in COUNT
+        },
         "mechanical_three_step_coverage_percent": round(
             100 * (690 - flag_counts["AKTIVITI_TERLALU_RINGKAS_PERLU_SEMAKAN"]) / 690, 2
         ),
