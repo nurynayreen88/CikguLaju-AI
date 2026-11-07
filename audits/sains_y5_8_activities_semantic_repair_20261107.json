@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-07",
+  "subject": "Sains",
+  "year": 5,
+  "source": "Owner Google Drive DSKP KSSR Semakan 2017 (Sains Tahun 5, terbitan 2019)",
+  "dskp_source_id": "1YkiK-pVo4UUzyOUvv_Vrico58eQyddCz",
+  "source_sha256": "e90744b28e6cc3943e8707475a911238ffc8b6a9dffb812bf742d35bcaa61ef6",
+  "purpose": "Repair draft lessons where earlier text used photos/videos only or drifted from the official SP emphasis on carrying out an activity and observing real tools",
+  "type": "SOURCE_SEMANTIC_TARGETED_REVIEW_NOT_TEACHER_APPROVAL",
+  "changed_pdp": 8,
+  "source_pdp_identity_preserved": true,
+  "items": [
+    {
+      "sp": "6.1.3",
+      "official_skill_summary": "Use time-temperature relationships to determine freezing and boiling points through activity",
+      "prior_gap": "Video-only data; no pupil measurement",
+      "repair": "Pupil records safe ice and room-temperature measurements while the teacher manages all hot-water/boiling demonstrations",
+      "requires_teacher_signoff": true
+    },
+    {
+      "sp": "6.1.5",
+      "official_skill_summary": "Conclude heat effects on materials through a physical activity",
+      "prior_gap": "Only static images, despite an activity being required",
+      "repair": "Pupil observes air-expansion balloon-and-plastic-bottle model under teacher-controlled lukewarm and cold-water conditions",
+      "requires_teacher_signoff": true
+    },
+    {
+      "sp": "7.1.3",
+      "official_skill_summary": "Experiment to identify factors causing rusting",
+      "prior_gap": "Photo comparison alone; incomplete direct investigation and controls",
+      "repair": "Teacher prepares sealed comparison samples; pupil predicts, states variables, examines samples and records evidence without handling rusty iron",
+      "requires_teacher_signoff": true
+    },
+    {
+      "sp": "8.1.3",
+      "official_skill_summary": "Characterize solid, liquid and gas properties through activity",
+      "prior_gap": "Picture/chart dependent rather than observable manipulations",
+      "repair": "Pupil transfers solid and water safely, examines trapped air, and records shape and volume properties",
+      "requires_teacher_signoff": true
+    },
+    {
+      "sp": "8.1.4",
+      "official_skill_summary": "Generalize that water exists in three states through activity",
+      "prior_gap": "Photos alone and potentially ambiguous visible steam",
+      "repair": "Pupil observes ice melting and condensation; explains water vapour is invisible",
+      "requires_teacher_signoff": true
+    },
+    {
+      "sp": "8.2.1",
+      "official_skill_summary": "Describe water state changes through activity",
+      "prior_gap": "Card ordering without direct observation",
+      "repair": "Pupil observes melting and condensation and distinguishes these from teacher-provided evidence for freezing and evaporation",
+      "requires_teacher_signoff": true
+    },
+    {
+      "sp": "8.2.2",
+      "official_skill_summary": "Explain state changes through gain and loss of heat, using activities",
+      "prior_gap": "Butter example and images moved away from the unit's water focus",
+      "repair": "Pupil observes ice melting and condensation, explaining heat transfer with a four-process comparison",
+      "requires_teacher_signoff": true
+    },
+    {
+      "sp": "10.1.2",
+      "official_skill_summary": "Explain simple-machine combinations in real tools using actual tool observation",
+      "prior_gap": "Only tool diagrams; no real instrument inspection",
+      "repair": "Pupil safely examines blunt closed scissors and mechanical models, labels lever and wedge functions, never handles sharp edges",
+      "requires_teacher_signoff": true
+    }
+  ],
+  "mandatory_next": "Compare complete full SP statement and real class PBD for each; get teacher/panitia approval and authenticated staging E2E before release",
+  "teacher_approved": 0,
+  "academic_quality_percent": null,
+  "runtime_ready": false,
+  "main_changed": false,
+  "production_db_changed": false,
+  "book_sources_not_modified": true
+}

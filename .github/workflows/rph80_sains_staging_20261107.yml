@@ -1,0 +1,273 @@
+name: RPH 80 Sains staging quality gate
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - staging/sains-rpt-2027-ab-clean-20261106
+    paths:
+      - "web/sains_y3_rph_activity_preview_20261106.py"
+      - "audits/sains_y2_51_textbook_original_page_visual_20261107.json"
+      - "audits/sains_y3_45_textbook_original_page_visual_20261107.json"
+      - "tools/render_sains_y3_45_review_pack_20261106.py"
+      - "tools/check_sains_342_rph_format_20261107.py"
+      - "tools/sains_buku_aktiviti_mapping_20261107.py"
+      - "audits/sains_y2_y3_buku_aktiviti_mapping_20261107.json"
+      - "audits/sains_y2_y3_ba_page_content_safety_review_20261107.json"
+      - "audits/sains_y2_43_remaining_page_content_20261107.json"
+      - "audits/sains_y3_42_remaining_page_content_20261107.json"
+      - "tools/check_sains_ba_96_document_content_20261107.py"
+      - "tools/export_sains_ba_96_panitia_queue_20261107.py"
+      - "audits/sains_buku_aktiviti_96_full_page_content_review_20261107.md"
+      - "tests/test_sains_buku_aktiviti_y2_y3_20261107.py"
+      - "web/sains_buku_aktiviti_resources_20261107.py"
+      - "tests/test_sains_buku_aktiviti_resources_20261107.py"
+      - "tools/render_sains_y3_3_secondary_sp_pbd_20261107.py"
+      - "tests/test_sains_y3_3_secondary_sp_pbd_20261107.py"
+      - "audits/sains_y2_y3_buku_aktiviti_integration_20261107.md"
+      - "tools/audit_rph80_sains_first_20261107.py"
+      - "tools/audit_rph80_all_subject_sources_20261107.py"
+      - "web/sains_y2_51_activities_draf_20261107.py"
+      - "tools/render_sains_y2_51_rph_draf_20261107.py"
+      - "tools/check_sains_y2_51_word_a4_20261107.py"
+      - "tools/render_sains_y2_2_sp_alternative_pbd_20261107.py"
+      - "tools/render_sains_y2_3_unmapped_sp_pbd_20261107.py"
+      - "audits/sains_y2_unit3_unmapped_sp_semantic_20261107.json"
+      - "tests/test_sains_y2_unit3_missing_sp_20261107.py"
+      - "tests/test_sains_y2_2_sp_alternative_pbd_20261107.py"
+      - "tests/test_sains_y2_51_bank_quality_20261107.py"
+      - "web/sains_y4_79_activity_bank_draf_20261107.py"
+      - "tools/render_sains_y4_79_rph_draf_20261107.py"
+      - "audits/sains_y4_79_textbook_unit_toc_review_20261107.json"
+      - "tools/check_sains_y4_79_toc_document_20261107.py"
+      - "tools/export_sains_y4_79_content_review_20261107.py"
+      - "tools/export_sains_y6_84_content_review_20261107.py"
+      - "tools/check_sains_y4_79_word_a4_20261107.py"
+      - "tests/test_sains_y4_79_bank_quality_20261107.py"
+      - "web/sains_y5_83_activity_bank_draf_20261107.py"
+      - "tools/render_sains_y5_83_rph_draf_20261107.py"
+      - "tools/sains_y5_83_textbook_original_sp_pages_20261107.py"
+      - "audits/sains_y5_83_full_textbook_printed_sp_pages_20261107.json"
+      - "tools/check_sains_y5_83_word_a4_20261107.py"
+      - "tests/test_sains_y5_83_bank_quality_20261107.py"
+      - "web/sains_y5_83_textbook_resources_20261107.py"
+      - "tests/test_sains_y5_83_textbook_resources_20261107.py"
+      - "tools/check_sains_y5_83_manifest_links_20261107.py"
+      - "audits/sains_y5_kssr2017_content_kps_scope_20261107.json"
+      - "tools/audit_sains_y5_kssr2017_content_kps_20261107.py"
+      - "tests/test_sains_y5_kssr2017_content_kps_20261107.py"
+      - "audits/sains_y5_8_activities_semantic_repair_20261107.json"
+      - "tests/test_sains_y5_8_activities_semantic_repair_20261107.py"
+      - "audits/sains_y5_kssr2017_83_official_sp_statements_20261107.json"
+      - "tools/sains_y5_kssr2017_official_sp_statements_20261107.py"
+      - "tools/check_sains_y5_83_full_sp_documents_20261107.py"
+      - "tools/export_sains_y5_83_rpt_rph_source_20261107.py"
+      - "tools/audit_sains_y5_native_v26_vs_official_20261107.py"
+      - "web/sains_y5_83_staging_shared_runtime_20261108.py"
+      - "tests/test_sains_y5_83_staging_shared_runtime_20261108.py"
+      - "tools/run_telegram_with_curriculum_api.py"
+      - "tools/audit_sains_y6_84_source_preflight_20261107.py"
+      - "audits/sains_y6_2021_textbook_toc_topic_ranges_20261107.json"
+      - "tools/sains_y6_textbook_toc_20261107.py"
+      - "tools/export_sains_342_panitia_review_20261107.py"
+      - "web/sains_y6_draf_bank_part1_20261107.tsv"
+      - "web/sains_y6_draf_bank_part2_20261107.tsv"
+      - "web/sains_y6_draf_bank_part3_20261107.tsv"
+      - "web/sains_y6_84_activity_bank_draf_20261107.py"
+      - "tools/render_sains_y6_84_rph_draf_20261107.py"
+      - "tools/check_sains_y6_84_word_a4_20261107.py"
+      - "tests/test_sains_y6_84_bank_quality_20261107.py"
+      - "tests/test_sains_y6_84_source_preflight_20261107.py"
+      - "tests/test_rph80_all_subject_source_scan_20261107.py"
+      - "audits/rph80_program_20261107.md"
+      - "tests/test_rph80_sains_quality_gate_20261107.py"
+      - ".github/workflows/rph80_sains_staging_20261107.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  sains-staging:
+    if: github.event_name == 'workflow_dispatch' || startsWith(github.head_ref, 'staging/rph80-')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install stage-only document dependencies
+        run: |
+          python -m pip install python-docx==1.1.2 reportlab==4.2.5 pypdf==5.1.0 flask==3.1.3
+      - name: Validate false-ready gate and Sains Year3 pedagogy
+        run: python -m unittest discover -s tests -p 'test_rph80_sains_quality_gate_20261107.py' -v
+      - name: Inventory all 13 subject source formats without quality claims
+        run: |
+          python -m unittest discover -s tests -p 'test_rph80_all_subject_source_scan_20261107.py' -v
+          python -m tools.audit_rph80_all_subject_sources_20261107
+      - name: Build verified-source Sains A/B staging draft indices
+        run: python -m tools.render_sains_rpt_2027_ab_review_20261106
+      - name: Verify 96 scanned Sains Year2/3 activity-book exercise page mappings
+        run: |
+          python -m unittest discover -s tests -p 'test_sains_buku_aktiviti_y2_y3_20261107.py' -v
+          python -m tools.sains_buku_aktiviti_mapping_20261107
+          python -m unittest discover -s tests -p 'test_sains_buku_aktiviti_resources_20261107.py' -v
+      - name: Test authored Science Year2 51 distinct activities
+        run: python -m unittest discover -s tests -p 'test_sains_y2_51_bank_quality_20261107.py' -v
+      - name: Render Science Year2 51 source-specific DRAF Markdown Word PDF
+        run: python -m tools.render_sains_y2_51_rph_draf_20261107
+      - name: Verify printed A4 page count of all 51 Year2 Word drafts
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libreoffice-writer fonts-dejavu-core
+          python -m tools.check_sains_y2_51_word_a4_20261107
+      - name: Check two SP-specific original alternative PBD assessments (not BA pages)
+        run: |
+          python -m unittest discover -s tests -p 'test_sains_y2_2_sp_alternative_pbd_20261107.py' -v
+          python -m tools.render_sains_y2_2_sp_alternative_pbd_20261107
+      - name: Verify Year2 KPM Unit3 source gap and build three UNASSIGNED supplementary SP-PBD sheets
+        run: |
+          python -m unittest discover -s tests -p 'test_sains_y2_unit3_missing_sp_20261107.py' -v
+          python -m tools.render_sains_y2_3_unmapped_sp_pbd_20261107
+      - name: Render 45 Science Year3 review Word/PDF with original Activity Book references
+        run: python -m tools.render_sains_y3_45_review_pack_20261106
+      - name: Check printed one-page A4 for all 45 Year3 Word drafts
+        run: python -m tools.check_sains_y3_word_pages_20261106
+      - name: Render/validate three original secondary SP PBD Year3 sheets without fake BA claims
+        run: |
+          python -m unittest discover -s tests -p 'test_sains_y3_3_secondary_sp_pbd_20261107.py' -v
+          python -m tools.render_sains_y3_3_secondary_sp_pbd_20261107
+      - name: Verify 96 printed workbook titles, pages, PBD warnings and safety notes in actual Word/PDF
+        run: python -m tools.check_sains_ba_96_document_content_20261107
+      - name: Prepare 96-source human Panitia checklist with all academic decisions still HOLD
+        run: python -m tools.export_sains_ba_96_panitia_queue_20261107
+      - name: Test 79 Science Year4 distinct DSKP-linked activity drafts
+        run: python -m unittest discover -s tests -p 'test_sains_y4_79_bank_quality_20261107.py' -v
+      - name: Render 79 Science Year4 standalone DRAF Word PDF Markdown
+        run: python -m tools.render_sains_y4_79_rph_draf_20261107
+      - name: Audit all Year4 79 actual Word PDF TOC-unit range disclaimers
+        run: python -m tools.check_sains_y4_79_toc_document_20261107
+      - name: Export 79 Year4 source-specific academic PBD and safety Panitia review rows
+        run: python -m tools.export_sains_y4_79_content_review_20261107
+      - name: Verify 79 Year4 Word drafts print as one-page A4
+        run: python -m tools.check_sains_y4_79_word_a4_20261107
+      - name: Verify authored Sains Year5 bank contains 83 unique, safe SP lesson plans
+        run: python -m unittest discover -s tests -p 'test_sains_y5_83_bank_quality_20261107.py' -v
+      - name: Verify eight Year5 SPs use safe observable pupil activities
+        run: python -m unittest discover -s tests -p 'test_sains_y5_8_activities_semantic_repair_20261107.py' -v
+      - name: Verify all 83 official KSSR2017 Year5 content SP and draft 12-KPS evidence
+        run: |
+          python -m unittest discover -s tests -p 'test_sains_y5_kssr2017_content_kps_20261107.py' -v
+          python -m tools.audit_sains_y5_kssr2017_content_kps_20261107
+      - name: Verify all 83 Year5 staged textbook source link cards, part/page boundaries
+        run: python -m unittest discover -s tests -p 'test_sains_y5_83_textbook_resources_20261107.py' -v
+      - name: Verify 3-part Year5 textbook SHA/range map (83 source SPs, no academic approval)
+        run: python -m tools.sains_y5_83_textbook_original_sp_pages_20261107
+      - name: Render Sains Year5 83 source-specific DRAF Markdown Word PDF
+        run: python -m tools.render_sains_y5_83_rph_draf_20261107
+      - name: Verify every Year5 Word/PDF contains full source-locked DSKP SK/SP statements
+        run: python -m tools.check_sains_y5_83_full_sp_documents_20261107
+      - name: Audit actual 83 Year5 RPH manifest part-specific source URLs and PDF-page offsets
+        run: python -m tools.check_sains_y5_83_manifest_links_20261107
+      - name: Verify printed 83 Sains Year5 Word one-page A4
+        run: python -m tools.check_sains_y5_83_word_a4_20261107
+      - name: Simulate authenticated Year5 Telegram/Web shared 83 PdP menu and actual RPH Word/PDF downloads
+        run: python -m unittest discover -s tests -p 'test_sains_y5_83_staging_shared_runtime_20261108.py' -v
+      - name: Read-only compare Year5 official 83 SP statements against actual Telegram v26 native DB
+        run: python -m tools.audit_sains_y5_native_v26_vs_official_20261107
+      - name: Export Year5 83 RPH-RPT source index using full official SP texts (no invented weeks)
+        run: python -m tools.export_sains_y5_83_rpt_rph_source_20261107
+      - name: Upload standalone Year5 83 RPH and RPT source reviewer pack
+        uses: actions/upload-artifact@v4
+        with:
+          name: SAINS_T5_83_RPH_KSSR2017_STAGING_REVIEW
+          if-no-files-found: error
+          path: |
+            build/sains_y5_83_rph_DRAF_20261107/*.docx
+            build/sains_y5_83_rph_DRAF_20261107/*.pdf
+            build/sains_y5_83_rph_DRAF_20261107/SAINS_Y5_83_MANIFEST_DRAF.csv
+            build/sains_y5_83_rph_DRAF_20261107/QUALITY_GATE_HOLD.json
+            build/sains_y5_kssr2017_scope_20261107/*.json
+            build/sains_y5_official_sp_document_QA_20261107/*.json
+            build/sains_y5_83_rpt_rph_review_20261107/*.csv
+            build/sains_y5_83_rpt_rph_review_20261107/*.json
+            build/sains_y5_v26_native_official_20261107/*.json
+      - name: Validate Year6 84-SP source mapping and risk HOLD
+        run: python -m unittest discover -s tests -p 'test_sains_y6_84_source_preflight_20261107.py' -v
+      - name: Export Year6 84-PdP source preflight for teacher review
+        run: python -m tools.audit_sains_y6_84_source_preflight_20261107
+      - name: Test 84 Science Year6 DSKP-specific safe teacher-pupil lesson drafts
+        run: python -m unittest discover -s tests -p 'test_sains_y6_84_bank_quality_20261107.py' -v
+      - name: Render 84 Year6 SP-specific DRAF Markdown Word PDF
+        run: python -m tools.render_sains_y6_84_rph_draf_20261107
+      - name: Export detailed individual Year6 84 SP/PBD/KPS Panitia review docket
+        run: python -m tools.export_sains_y6_84_content_review_20261107
+      - name: Verify actual printed one-page A4 of all 84 Year6 Word drafts
+        run: python -m tools.check_sains_y6_84_word_a4_20261107
+      - name: Audit final 342 Sains RPH bold Aktiviti 1/2, numbered actions and Word/PDF parity
+        run: python -m tools.check_sains_342_rph_format_20261107
+      - name: Audit 342 unique Sains PdP and export final technical review queue
+        run: python -m tools.audit_rph80_sains_first_20261107
+      - name: Export all 342 original Science RPH human teacher/panitia approval queue (no auto grade)
+        run: python -m tools.export_sains_342_panitia_review_20261107
+      - name: Retain audit evidence only; never deploy
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: SAINS_RPH80_STAGING_HOLD_20261107
+          if-no-files-found: warn
+          path: |
+            build/sains_y6_84_subject_content_panitia_HOLD_20261107/*.csv
+            build/sains_y6_84_subject_content_panitia_HOLD_20261107/*.json
+            build/sains_y4_79_subject_content_panitia_HOLD_20261107/*.csv
+            build/sains_y4_79_subject_content_panitia_HOLD_20261107/*.json
+            build/sains_y4_79_textbook_toc_document_QA_20261107/*.csv
+            build/sains_y4_79_textbook_toc_document_QA_20261107/*.json
+            build/sains_342_format_consistency_20261107/*.csv
+            build/sains_342_format_consistency_20261107/*.json
+            build/rph80_sains_20261107/*.csv
+            build/rph80_sains_20261107/*.json
+            build/rph80_all_subjects_20261107/*.csv
+            build/rph80_all_subjects_20261107/*.json
+            build/sains_y2_51_rph_DRAF_20261107/*.md
+            build/sains_y2_51_rph_DRAF_20261107/*.docx
+            build/sains_y2_51_rph_DRAF_20261107/*.pdf
+            build/sains_y2_51_rph_DRAF_20261107/*.csv
+            build/sains_y2_51_rph_DRAF_20261107/*.json
+            build/sains_y2_2_alternative_sp_pbd_DRAF_20261107/*.docx
+            build/sains_y2_2_alternative_sp_pbd_DRAF_20261107/*.pdf
+            build/sains_y2_2_alternative_sp_pbd_DRAF_20261107/*.csv
+            build/sains_y2_2_alternative_sp_pbd_DRAF_20261107/*.json
+            build/sains_y2_unit3_3_supplementary_sp_pbd_DRAF_20261107/*.docx
+            build/sains_y2_unit3_3_supplementary_sp_pbd_DRAF_20261107/*.pdf
+            build/sains_y2_unit3_3_supplementary_sp_pbd_DRAF_20261107/*.csv
+            build/sains_y2_unit3_3_supplementary_sp_pbd_DRAF_20261107/*.json
+            build/sains_y3_45_rph_REVIEW_ONLY_20261106/*.docx
+            build/sains_y3_45_rph_REVIEW_ONLY_20261106/*.pdf
+            build/sains_y3_45_rph_REVIEW_ONLY_20261106/*.csv
+            build/sains_y3_45_rph_REVIEW_ONLY_20261106/*.txt
+            build/sains_y3_3_secondary_sp_pbd_DRAF_20261107/*.docx
+            build/sains_y3_3_secondary_sp_pbd_DRAF_20261107/*.pdf
+            build/sains_y3_3_secondary_sp_pbd_DRAF_20261107/*.csv
+            build/sains_y3_3_secondary_sp_pbd_DRAF_20261107/*.json
+            build/sains_ba_96_actual_document_qa_20261107/*.csv
+            build/sains_ba_96_actual_document_qa_20261107/*.json
+            build/sains_y4_79_rph_DRAF_20261107/*.md
+            build/sains_y4_79_rph_DRAF_20261107/*.docx
+            build/sains_y4_79_rph_DRAF_20261107/*.pdf
+            build/sains_y4_79_rph_DRAF_20261107/*.csv
+            build/sains_y4_79_rph_DRAF_20261107/*.json
+            build/sains_y5_kssr2017_scope_20261107/*.json
+            build/sains_y5_official_sp_document_QA_20261107/*.json
+            build/sains_y5_83_rph_DRAF_20261107/*.md
+            build/sains_y5_83_rph_DRAF_20261107/*.docx
+            build/sains_y5_83_rph_DRAF_20261107/*.pdf
+            build/sains_y5_83_rph_DRAF_20261107/*.csv
+            build/sains_y5_83_rph_DRAF_20261107/*.json
+            build/sains_y6_84_rph_DRAF_20261107/*.md
+            build/sains_y6_84_rph_DRAF_20261107/*.docx
+            build/sains_y6_84_rph_DRAF_20261107/*.pdf
+            build/sains_y6_84_rph_DRAF_20261107/*.csv
+            build/sains_y6_84_rph_DRAF_20261107/*.json
+            build/sains_y6_84_preflight_20261107/*.csv
+            build/sains_y6_84_preflight_20261107/*.json

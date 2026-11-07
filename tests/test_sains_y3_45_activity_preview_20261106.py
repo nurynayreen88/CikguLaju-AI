@@ -39,7 +39,7 @@ class SainsY3ActivityCoverageTests(unittest.TestCase):
                 self.assertEqual(revised["AKTIVITI UTAMA"].count("Aktiviti "),2)
                 self.assertTrue(len(revised["AKTIVITI UTAMA"])>200)
                 self.assertIn("Buku Teks Sains Tahun 3",revised["BAHAN BANTU MENGAJAR"])
-                self.assertIn("semak sebelum cetak",revised["BAHAN BANTU MENGAJAR"])
+                self.assertIn("isi/PBD belum disahkan panitia",revised["BAHAN BANTU MENGAJAR"])
                 self.assertTrue(revised["PENTAKSIRAN"])
                 self.assertTrue(revised["PENUTUP"])
                 self.assertTrue(revised["KRITERIA KEJAYAAN"])

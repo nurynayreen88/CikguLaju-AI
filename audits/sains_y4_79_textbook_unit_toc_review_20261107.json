@@ -1,0 +1,149 @@
+{
+  "title": "Sains Year4 2019 printed-book table-of-contents unit range source index — 79 PdP, NO SP page claims",
+  "year": 4,
+  "curriculum": "KSSR Semakan 2017",
+  "book_edition_first_print": 2019,
+  "book_isbn": "978-983-49-2474-4",
+  "original_user_drive_url": "https://drive.google.com/file/d/1Y2Uf44WX5bFhAaaEx55Is7cZpJfrn7Ms/view",
+  "original_user_drive_size_bytes": 337813479,
+  "alternative_text_view_url": "https://anyflip.com/mcde/bmua/basic/",
+  "government_kpm_catalog_url": "https://www.moe.gov.my/storage/files/shares/Banner/E-Katalog%20Buku%20Teks%20KPM.pdf",
+  "source_method": "Manual transcription of table-of-contents unit boundaries from publicly readable original 2019 Year4 textbook edition, cross-referenced KPM e-catalog and owner Drive original existence. This is NOT visual or token-level verification of any one SP against a printed page.",
+  "source_pdp_count": 79,
+  "unit_count": 9,
+  "status": "STAGING_UNIT_TOC_ONLY__SP_PAGE_UNVERIFIED",
+  "source_sp_printed_page_verified_count": 0,
+  "teacher_academic_approval_count": 0,
+  "allow_exact_sp_page_reference": false,
+  "allow_runtime_release": false,
+  "no_database_write": true,
+  "units": [
+    {
+      "unit": 2,
+      "topic": "Manusia",
+      "printed_toc_range": [
+        23,
+        52
+      ],
+      "sk_groups": [
+        "2.1",
+        "2.2",
+        "2.3"
+      ],
+      "status": "UNIT_ONLY__EXACT_SP_PAGE_NOT_VERIFIED",
+      "teacher_approved": false
+    },
+    {
+      "unit": 3,
+      "topic": "Haiwan",
+      "printed_toc_range": [
+        53,
+        68
+      ],
+      "sk_groups": [
+        "3.1",
+        "3.2"
+      ],
+      "status": "UNIT_ONLY__EXACT_SP_PAGE_NOT_VERIFIED",
+      "teacher_approved": false
+    },
+    {
+      "unit": 4,
+      "topic": "Tumbuh-tumbuhan",
+      "printed_toc_range": [
+        69,
+        86
+      ],
+      "sk_groups": [
+        "4.1",
+        "4.2"
+      ],
+      "status": "UNIT_ONLY__EXACT_SP_PAGE_NOT_VERIFIED",
+      "teacher_approved": false
+    },
+    {
+      "unit": 5,
+      "topic": "Sifat Cahaya",
+      "printed_toc_range": [
+        87,
+        110
+      ],
+      "sk_groups": [
+        "5.1",
+        "5.2",
+        "5.3"
+      ],
+      "status": "UNIT_ONLY__EXACT_SP_PAGE_NOT_VERIFIED",
+      "teacher_approved": false
+    },
+    {
+      "unit": 6,
+      "topic": "Bunyi",
+      "printed_toc_range": [
+        111,
+        122
+      ],
+      "sk_groups": [
+        "6.1"
+      ],
+      "status": "UNIT_ONLY__EXACT_SP_PAGE_NOT_VERIFIED",
+      "teacher_approved": false
+    },
+    {
+      "unit": 7,
+      "topic": "Tenaga",
+      "printed_toc_range": [
+        123,
+        140
+      ],
+      "sk_groups": [
+        "7.1",
+        "7.2"
+      ],
+      "status": "UNIT_ONLY__EXACT_SP_PAGE_NOT_VERIFIED",
+      "teacher_approved": false
+    },
+    {
+      "unit": 8,
+      "topic": "Bahan",
+      "printed_toc_range": [
+        141,
+        154
+      ],
+      "sk_groups": [
+        "8.1",
+        "8.2"
+      ],
+      "status": "UNIT_ONLY__EXACT_SP_PAGE_NOT_VERIFIED",
+      "teacher_approved": false
+    },
+    {
+      "unit": 9,
+      "topic": "Bumi",
+      "printed_toc_range": [
+        155,
+        168
+      ],
+      "sk_groups": [
+        "9.1",
+        "9.2"
+      ],
+      "status": "UNIT_ONLY__EXACT_SP_PAGE_NOT_VERIFIED",
+      "teacher_approved": false
+    },
+    {
+      "unit": 10,
+      "topic": "Mesin",
+      "printed_toc_range": [
+        169,
+        184
+      ],
+      "sk_groups": [
+        "10.1",
+        "10.2"
+      ],
+      "status": "UNIT_ONLY__EXACT_SP_PAGE_NOT_VERIFIED",
+      "teacher_approved": false
+    }
+  ]
+}
