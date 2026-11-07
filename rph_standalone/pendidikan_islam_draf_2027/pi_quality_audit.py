@@ -64,6 +64,17 @@ def audit(root=ROOT):
                 flags.append("AKTIVITI_TERLALU_RINGKAS_PERLU_SEMAKAN")
             if any(term in fields["bahan"].casefold() for term in UNVERIFIED_PAGE):
                 flags.append("RUJUKAN_HALAMAN_BELUM_DISAHKAN")
+            source_toc = record.get("staging_textbook_toc_correction")
+            if source_toc:
+                assert year == 2 and record["id"] in ("T2-L102", "T2-L105", "T2-L108")
+                assert source_toc["original_note_preserved"] is True
+                assert source_toc["original_claimed_printed_pages"] == [133, 140]
+                assert source_toc["proposed_section_range_for_editor"] == [133, 138]
+                assert source_toc["sp_to_specific_page_verified"] is False
+                assert source_toc["content_expert_approved"] is False
+                assert source_toc["publication"] == "HOLD"
+                assert "ms. 133–140" in fields["bahan"]
+                flags.append("HALAMAN_BUKU_T2_MELEBIHI_MUKA_TERAKHIR")
             if GENERIC_PBD in fields["pentaksiran"]:
                 flags.append("PBD_TIDAK_KHUSUS_KEPADA_SP")
             refinement = record.get("staging_pbd_refinement")
@@ -115,6 +126,7 @@ def audit(root=ROOT):
         "expanded_activity_draft_count": flag_counts["PENAMBAHAN_PDP_BELUM_SAH_PAKAR"],
         "short_activity_count": flag_counts["AKTIVITI_TERLALU_RINGKAS_PERLU_SEMAKAN"],
         "critical_source_review_count": flag_counts["SUMBER_KRITIKAL_BELUM_LENGKAP"],
+        "textbook_page_range_overrun_count": flag_counts["HALAMAN_BUKU_T2_MELEBIHI_MUKA_TERAKHIR"],
         "generic_pbd_count": flag_counts["PBD_TIDAK_KHUSUS_KEPADA_SP"],
         "refined_pbd_review_count": flag_counts["PBD_SP_SASARAN_BELUM_DISAH_PAKAR"],
         "closing_rumi_consistency_review_count": flag_counts["PENUTUP_RUMI_SEMAK_PENYERAGAMAN_JAWI"],
