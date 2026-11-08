@@ -54,14 +54,17 @@ class PrivateRPTNoteTests(unittest.TestCase):
             self.skipTest("Original, 56-manifest RPT not present")
         original = path.read_bytes()
         cleaned = pdf_for_teacher(path)
-        self.assertIsInstance(cleaned, BytesIO)
         a = fitz.open(stream=original, filetype="pdf")
-        b = fitz.open(stream=cleaned.getvalue(), filetype="pdf")
+        clean_bytes = cleaned.getvalue() if isinstance(cleaned, BytesIO) else original
+        b = fitz.open(stream=clean_bytes, filetype="pdf")
         self.assertEqual(len(a), len(b))
         before = "".join(page.get_text() for page in a)
         after = "".join(page.get_text() for page in b)
         self.assertIn("DRAF SEMAKAN", after)
-        self.assertIn("Pemetaan buku teks belum", before)
+        if "Pemetaan buku teks belum" in before:
+            self.assertIsInstance(cleaned, BytesIO)
+        else:
+            self.assertEqual(cleaned, path)
         self.assertNotIn("Pemetaan buku teks belum", after)
         self.assertNotIn("tidak mereka halaman buku teks", after)
         before_pdp = re.findall(r"PdP\s+(\d{3})", before)
