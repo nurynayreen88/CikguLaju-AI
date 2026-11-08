@@ -71,11 +71,14 @@ def validate_pdf(file, subject, year, old_pdf, cover_layout):
         # mirrored: far-right Minggu > Unit > SK > SP > far-left Catatan.
         for page in list(pdf)[1:]:
             heads={}
-            for label in LABELS:
-                boxes=page.search_for(label)
-                if not boxes:
-                    raise ValueError("RPT table header missing: "+label)
-                heads[label]=boxes[0].x0
+            for block in page.get_text("dict")["blocks"]:
+                for line in block.get("lines",[]):
+                    for span in line["spans"]:
+                        label=span["text"].strip()
+                        if label in LABELS and 40<span["bbox"][1]<95:
+                            heads[label]=span["bbox"][0]
+            if set(heads)!=set(LABELS):
+                raise ValueError("RPT exact column-header spans missing")
             if not (heads["CATATAN / BAHAN"]<heads["SP"]<
                     heads["SK"]<heads["UNIT / TAJUK / PDP"]<
                     heads["MINGGU / TARIKH"]):
