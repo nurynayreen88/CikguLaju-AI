@@ -1,0 +1,68 @@
+{
+  "schema": "cikgulaju.math.y6.native_semantic_hold.v1",
+  "audited_on": "2026-11-08",
+  "scope": "Source meaning audit of Maths Year 6 native PdP 004 and 006; Telegram canonical v25.99 vs primary KPM DSKP 2021 and DBP Textbook 2021",
+  "reference_documents": {
+    "telegram_database": {
+      "table": "verified_pdp_sequence_v2",
+      "sha256": "74f1e139ae6e7f64379ee3fb103334f450c683152186b03368bb02dfe3b8c821",
+      "method": "actual Telegram _sm2542_rows, no guessed sequence"
+    },
+    "dskp": {
+      "drive_file_id": "1Gw3nWRttnfbimQ95slCgxBleL7tKmLSK",
+      "sha256": "e48576169c12cc9666675770432a425e573686a331fba6bcd7f01e33787476a9",
+      "printed_page": 32,
+      "pdf_page": 44,
+      "edition": "September 2021"
+    },
+    "textbook": {
+      "drive_file_id": "1OP6DG9vmT5_q3RtvXHbd7qscc6lj8Za4",
+      "sha256": "5785f6a8e3027168d16a9eecd37ddc60e582b6dbda63a60f0651656be0a51d6e",
+      "edition": "DBP 2021 KSSR Semakan 2017"
+    }
+  },
+  "cases": [
+    {
+      "native_pdp_code": "MT6-PDP-004",
+      "native_lesson_number": 4,
+      "native_title": "Pembundaran Nombor",
+      "native_sk": "1.2",
+      "native_sp": "1.2.1",
+      "reference_dskp_sk": "1.2 Operasi asas dan operasi bergabung",
+      "reference_dskp_sp": "1.2.1 — operasi asas dan operasi bergabung melibatkan nombor bulat, pecahan juta, perpuluhan juta, termasuk tanda kurung dan anu",
+      "finding": "semantic_conflict_even_though_code_exists",
+      "evidence": "Pembundaran nombor bukan fokus SP 1.2.1 dalam DSKP Matematik Tahun 6 rujukan",
+      "candidate": "Semak RPT/edisi/keperluan ulang kaji; jangan mengganti 1.2.1 dengan kod rekaan",
+      "candidate_textbook_printed_pages": [],
+      "action": "REVIEW_RPT_AND_PREREQUISITE_ONLY",
+      "ready": false
+    },
+    {
+      "native_pdp_code": "MT6-PDP-006",
+      "native_lesson_number": 6,
+      "native_title": "Pola Nombor",
+      "native_sk": "1.4",
+      "native_sp": "1.4.1",
+      "reference_dskp_sk": "1.4 Penyelesaian masalah",
+      "reference_dskp_sp": "1.4.1 — menyelesaikan masalah harian melibatkan nombor bulat, nombor perdana dan gubahan, pecahan/perpuluhan juta dan operasi asas/bergabung",
+      "finding": "semantic_conflict_even_though_code_exists",
+      "evidence": "Buku Teks Tahun 6 halaman bercetak 4–8 melabel aktiviti Pola Nombor sebagai 1.1.2. DSKP 1.1.2 menyebut mewakilkan nombor dan menentukan pola nombor.",
+      "candidate_dskp_sk": "1.1 Nombor bulat hingga 10 000 000",
+      "candidate_dskp_sp": "1.1.2",
+      "candidate_textbook_printed_pages": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "candidate_source_status": "SOUND_CANDIDATE_REQUIRES_SIGNOFF",
+      "action": "DRAFT_RPH_WITH_PROPOSED_SP_AND_KEEP_TELEGRAM_UNCHANGED",
+      "ready": false
+    }
+  ],
+  "important_limit": "Absence/ presence of a code is insufficient for semantic verification; the earlier 98-PdP audit was a code-presence subset, not a complete academic conflict count.",
+  "approved_count": 0,
+  "final_ready": false,
+  "production_modified": false
+}
