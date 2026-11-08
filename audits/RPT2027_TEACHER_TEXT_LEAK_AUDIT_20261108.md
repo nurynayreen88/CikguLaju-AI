@@ -55,3 +55,21 @@ Pengesan kini disepadukan **secara baca sahaja** ke dalam lima workflow yang mem
 - 5 PDF Sains separa/legacy (tetap tidak layak keluaran)
 
 Jumlah sasaran: **56 PDF**, setiap aliran memuat naik JSON audit sebagai artifak bersama PDF. Ini adalah skop *ujian yang dikonfigurasikan*, bukan dakwaan keputusan lulus — hasil CI dan bilangan frasa sebenar perlu dibaca daripada laporan setelah workflow siap. Audit frasa ini tidak menggantikan pengesahan akademik, rekod Jawi/Arab, edisi DSKP, atau ujian Telegram/Web LIVE.
+
+## Hasil sebenar GitHub Actions, 8 November 2026 (staging)
+Lima aliran penjanaan PDF telah berjaya menjalankan audit bacaan halaman dengan **0 read_errors** selepas pembaikan PyMuPDF (semua ini ialah PDF **pratayang**, bukan muat turun LIVE yang disahkan):
+| Binaan | PDF / fail diperiksa | Fail ada frasa dalaman | Padanan frasa |
+| --- | ---: | ---: | ---: |
+| English Tahun 2–6 | 5 | 5 | 202 |
+| Matematik Tahun 2–6 | 5 | 5 | 252 |
+| BM, PI, Bahasa Arab, Muzik | 20 | 20 | 1,389 |
+| Sains Tahun 2–6 (sumber legacy separa) | 5 | 5 | 94 |
+| PSV/Moral/RBT/Sejarah/PJPK + PDF sedia ada di `rpt_2027` | **64** | **39** | 642 |
+
+**Penting:** Pada kelompok terakhir, 64 fail itu ialah gabungan **21 PDF pratayang** dan **43 PDF sedia ada**, bukan 64 RPT baharu. Setelah masalah denominator ditemui, workflow diubah untuk mengeluarkan laporan **berasingan** bagi 21 dan 43 PDF. Jangan dedahkan "39 daripada 21" atau gabungkan counts seolah-olah 56 PDF utama sahaja.
+
+**Kesilapan QA yang sudah dibaiki:** audit Sains pertama melaporkan 0 padanan kerana `pypdf` tidak terpasang (lima `read_errors`), sementara workflow tetap `success`. Kini scanner mengutamakan `fitz`, menggunakan `pypdf` sebagai fallback, dan return kod gagal jika mana-mana fail tidak boleh dibaca atau folder kosong. Ulangan menghasilkan **94 padanan, 5/5 PDF, read_errors=[]**. Empat ujian scanner awal lulus; ujian lanjutan fail rosak/folder kosong telah ditambah dan tertakluk pengesahan CI komit paling baharu.
+
+Penanda `DRAF SEMAKAN` yang berulang pada footer bukan isi akademik tetapi tetap kebocoran metadata pembangun ke salinan guru. *Bilangan padanan* bukan bilangan PdP kurikulum salah atau jumlah penggantian frasa yang selamat secara automatik.
+
+**Keputusan release: HOLD.** Belum ada PDF guru baharu yang diterbitkan; pemeriksaan ini mengenal pasti masalah dan menyediakan guardrail audit, bukan menyembunyikan jurang SK/SP/DSKP yang belum siap.
