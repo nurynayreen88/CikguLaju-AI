@@ -119,10 +119,18 @@ jobs:
                       str(file.with_suffix('.page2.png')))
           print('SAINS_342_PDF_QA_OK files',len(pdfs),'pages',pages)
           PY
+      - name: Audit RPT developer-note leakage in SAINS output (read-only)
+        run: |
+          python -m unittest tests.test_rpt2027_teacher_text_leak_scan -v
+          python -m scripts.audit_rpt2027_teacher_text_leaks_20261108 \
+            --teacher-output-only \
+            --output staging/rpt_2027_seragam_2026/teacher_text_leak_SAINS.json \
+            staging/rpt_2027_seragam_2026/sains_342_pdp_SEPARA_DRAF
       - uses: actions/upload-artifact@v4
         with:
           name: RPT2027-SAINS-342-PDP-PROPOSAL-FIVE-COLUMN-PARTIAL-DRAF
           path: |
+            staging/rpt_2027_seragam_2026/teacher_text_leak_SAINS.json
             staging/rpt_2027_seragam_2026/sains_342_pdp_SEPARA_DRAF/*.pdf
             staging/rpt_2027_seragam_2026/sains_342_pdp_SEPARA_DRAF/*.png
             staging/rpt_2027_seragam_2026/sains_verified_sp_coverage_gap_20261107_DRAF.json
