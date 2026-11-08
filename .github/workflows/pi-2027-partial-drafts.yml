@@ -21,6 +21,8 @@ jobs:
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_quality_audit.py --output pi_quality_audit_696.json
       - name: Prove corrected Quran surah and PBD verse consistency across 696 draft records
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_surah_pbd_alignment_audit.py --output pi_surah_pbd_alignment_11_NO_GO.json
+      - name: Export 9 RPT source conflicts and 13 exact field-level RPH corrections for editor signoff
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_rpt_source_errata_editor_register.py --json pi_rpt_source_errata_9_NO_GO.json --csv pi_rpt_source_errata_13_fields_NO_GO.csv
       - name: Audit official DSKP code-number presence Year2/5/6 and mark Year3/4 PDFs unreadable
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_dskp_text_code_presence_ledger.py --json pi_dskp_text_code_presence_696_NO_GO.json --csv pi_dskp_text_code_presence_696_NO_GO.csv
       - name: Verify Year3 solat invalidating cases progress 1-6 to 7-12 to 13-18
@@ -109,6 +111,8 @@ jobs:
           for file in \
             pi_quality_audit_696.json \
             pi_surah_pbd_alignment_11_NO_GO.json \
+            pi_rpt_source_errata_9_NO_GO.json \
+            pi_rpt_source_errata_13_fields_NO_GO.csv \
             pi_dskp_text_code_presence_696_NO_GO.json \
             pi_dskp_text_code_presence_696_NO_GO.csv \
             pi_t3_solat_18_case_sequence_NO_GO.json \
@@ -179,6 +183,8 @@ jobs:
           path: |
             pi_quality_audit_696.json
             pi_surah_pbd_alignment_11_NO_GO.json
+            pi_rpt_source_errata_9_NO_GO.json
+            pi_rpt_source_errata_13_fields_NO_GO.csv
             pi_dskp_text_code_presence_696_NO_GO.json
             pi_dskp_text_code_presence_696_NO_GO.csv
             pi_t3_solat_18_case_sequence_NO_GO.json
