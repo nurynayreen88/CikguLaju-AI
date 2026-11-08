@@ -1,0 +1,46 @@
+name: Stage Telegram main-menu Web announcement safely
+on:
+  push:
+    branches: [feat/telegram-main-menu-web-notice-20261108]
+    paths: [.github/workflows/telegram-web-main-menu-apply-20261108.yml]
+permissions:
+  contents: write
+concurrency:
+  group: telegram-main-menu-web-notice-stage
+  cancel-in-progress: false
+jobs:
+  patch_and_verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout isolated Telegram feature branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Patch final active main menu only and run isolated QA without a bot token
+        run: |
+          python scripts/patch_telegram_main_menu_web_notice_20261108.py
+          python -m py_compile app.py
+          python -m unittest tests.test_telegram_web_main_menu_notice_20261108 tests.test_rph_hari_ini_pause_20261105 -v
+      - name: Verify single menu-only diff then commit app.py on feature branch (never main)
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git branch --show-current)" = 'feat/telegram-main-menu-web-notice-20261108'
+          git diff --check
+          git add -- app.py
+          git diff --cached --name-only > "$RUNNER_TEMP/changed.txt"
+          python - <<'PY'
+          from pathlib import Path
+          import os
+          files=Path(os.environ['RUNNER_TEMP']+'/changed.txt').read_text().splitlines()
+          assert files==['app.py'],files
+          PY
+          git diff --cached --numstat
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'feat(telegram): show Web CikguLaju notice and direct URL on existing main menu'
+          git push origin HEAD:refs/heads/feat/telegram-main-menu-web-notice-20261108
