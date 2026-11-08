@@ -39,6 +39,10 @@ jobs:
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_pedagogy_review.py --output pi_pedagogy_proposals_690.json
       - name: Audit Buku Aktiviti mapping without guessing page numbers
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_activity_book_audit.py --output pi_buku_aktiviti_audit_696.json
+      - name: Audit Year5 DSKP khat source SP7.2.5/7.2.6 corrections (four lessons)
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_y5_khat_nasakh_source_audit.py --output pi_y5_khat_nasakh_source_4_HOLD.json
+      - name: Prepare 13 khat Nasakh per-SP editor PBD and teacher worksheet previews (no official BA)
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_y5_khat_nasakh_editor_overlay.py --output pi_y5_khat_editor_13_NO_GO.json
       - name: Flag 13 ambiguous Year-5 Jawi Buku Aktiviti references (editor review only)
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_y5_activity_book_wording_review.py --output pi_y5_buku_aktiviti_wording_13_NO_GO.json
       - name: Confirm 49 exact Quran tajwid punctuation copyedits and preserve Jawi affix ellipses
@@ -124,6 +128,8 @@ jobs:
             pi_heavy_tasmi_14_editor_overlay_NO_GO.json \
             pi_pedagogy_proposals_690.json \
             pi_buku_aktiviti_audit_696.json \
+            pi_y5_khat_nasakh_source_4_HOLD.json \
+            pi_y5_khat_editor_13_NO_GO.json \
             pi_y5_buku_aktiviti_wording_13_NO_GO.json \
             pi_tajwid_copyedit_49_NO_GO.json \
             pi_ba_candidate_queue_258.json \
@@ -197,6 +203,8 @@ jobs:
             pi_heavy_tasmi_14_editor_overlay_NO_GO.json
             pi_pedagogy_proposals_690.json
             pi_buku_aktiviti_audit_696.json
+            pi_y5_khat_nasakh_source_4_HOLD.json
+            pi_y5_khat_editor_13_NO_GO.json
             pi_y5_buku_aktiviti_wording_13_NO_GO.json
             pi_tajwid_copyedit_49_NO_GO.json
             pi_ba_candidate_queue_258.json
