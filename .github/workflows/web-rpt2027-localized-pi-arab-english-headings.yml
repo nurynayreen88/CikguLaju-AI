@@ -1,0 +1,103 @@
+name: Web RPT2027 native Jawi Arabic English TABLE HEADINGS (15 PDFs)
+on:
+  pull_request:
+    branches:
+      - 'production/cikgulaju-web-20261105'
+    paths:
+      - '.github/workflows/web-rpt2027-localized-pi-arab-english-headings.yml'
+      - 'scripts/install_rpt2027_native_headings_web.py'
+      - 'tests/test_web_rpt_original_cover_layout.py'
+      - 'rpt_2027/web_2027_pdfs/HEADINGS_PI_ARAB_EN_20261108_DRAF_AUDIT.json'
+      - 'rpt_2027/web_2027_pdfs/manifest.json'
+      - 'rpt_2027/web_2027_pdfs/original_cover_layout_verified.json'
+      - 'rpt_2027/web_2027_pdfs/pendidikan_islam/tahun_*.pdf'
+      - 'rpt_2027/web_2027_pdfs/bahasa_arab/tahun_*.pdf'
+      - 'rpt_2027/web_2027_pdfs/english/tahun_*.pdf'
+permissions:
+  contents: write
+  actions: read
+  pull-requests: read
+jobs:
+  install_native_headings:
+    if: ${{ github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'fix/web-rpt2027-native-headings-pi-arab-en-20261108' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 28
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 1
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate baseline 56 PDF hashes and existing paid download access
+        run: |
+          python -m pip install 'Flask==3.1.3' 'PyMuPDF==1.24.14'
+          python -m unittest tests.test_web_rpt2027_56_release_catalog tests.test_web_rpt_2027_all -v
+          python -m py_compile scripts/install_rpt2027_native_headings_web.py
+          sha256sum -c web_v1_static_preview/pdf-lib.min.js.sha256
+      - name: Require two immutable successful academic-source RPT reflow QA runs
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          SRC_SHA=0500b2e38cb1372ca09bfcdb1e1f71fa83e28afd
+          SRC_PI_ARAB_RUN=42430115066
+          SRC_ENGLISH_RUN=42430115126
+          for run in "$SRC_PI_ARAB_RUN" "$SRC_ENGLISH_RUN"; do
+            test "$(gh run view "$run" -R "$GITHUB_REPOSITORY" --json conclusion --jq '.conclusion')" = 'success'
+            test "$(gh run view "$run" -R "$GITHUB_REPOSITORY" --json headSha --jq '.headSha')" = "$SRC_SHA"
+          done
+          mkdir -p "$RUNNER_TEMP/rpt-native-sources/arabpi" "$RUNNER_TEMP/rpt-native-sources/english"
+          gh run download "$SRC_PI_ARAB_RUN" -R "$GITHUB_REPOSITORY" \
+            -n 'RPT2027-20-BM-PI-ARAB-MUZIK-Seragam-DRAF' \
+            -D "$RUNNER_TEMP/rpt-native-sources/arabpi"
+          gh run download "$SRC_ENGLISH_RUN" -R "$GITHUB_REPOSITORY" \
+            -n 'RPT2027-ENGLISH-Y2Y6-800-LIMA-LAJUR-DRAF' \
+            -D "$RUNNER_TEMP/rpt-native-sources/english"
+      - name: Install 15 source-verified PDF headers, never altering the other 41 subjects
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/install_rpt2027_native_headings_web.py \
+            --sources "$RUNNER_TEMP/rpt-native-sources" \
+            --assets rpt_2027/web_2027_pdfs \
+            --run-arabpi 42430115066 --run-english 42430115126
+          python -m unittest tests.test_web_rpt2027_56_release_catalog \
+                             tests.test_web_rpt_2027_all \
+                             tests.test_web_rpt_original_cover_layout -v
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          root=Path('rpt_2027/web_2027_pdfs')
+          m=json.loads((root/'manifest.json').read_text('utf-8'))
+          a=json.loads((root/'HEADINGS_PI_ARAB_EN_20261108_DRAF_AUDIT.json').read_text('utf-8'))
+          assert len(m['files'])==m['count']==56
+          assert a['pdfs_updated']==15
+          assert a['other_pdfs_unchanged']==41
+          assert a['total_lessons_pdp']==1794
+          assert a['total_source_links']==298
+          assert m['status']=='DRAF_USER_VISIBLE_NOT_ACADEMIC_FINAL'
+          print('WEB_RPT15_NATIVE_HEADINGS_SAFE',m['pages'],'pages')
+          PY
+      - name: Commit only 15 PDFs, two checksum manifests and native-heading audit
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git branch --show-current)" = 'fix/web-rpt2027-native-headings-pi-arab-en-20261108'
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- rpt_2027/web_2027_pdfs/pendidikan_islam/tahun_*.pdf \
+                    rpt_2027/web_2027_pdfs/bahasa_arab/tahun_*.pdf \
+                    rpt_2027/web_2027_pdfs/english/tahun_*.pdf \
+                    rpt_2027/web_2027_pdfs/manifest.json \
+                    rpt_2027/web_2027_pdfs/original_cover_layout_verified.json \
+                    rpt_2027/web_2027_pdfs/HEADINGS_PI_ARAB_EN_20261108_DRAF_AUDIT.json
+          if git diff --cached --quiet; then
+            echo 'All 15 native heading PDFs already SHA-verified: no changes.'
+          else
+            git commit -m 'assets(web): PI Jawi, Bahasa Arab Arabic, English native RPT2027 table headings'
+            git push origin HEAD:fix/web-rpt2027-native-headings-pi-arab-en-20261108
+          fi
