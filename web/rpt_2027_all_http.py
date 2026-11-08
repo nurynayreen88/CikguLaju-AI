@@ -41,7 +41,7 @@ assert len(YEAR1_KP2027_CODES)==10
 YEAR1_PREVIEW_STATUS="KP2027 — AKAN DATANG"
 NOTES={
     "sains":"SEPARA DRAF: SK/SP dan RPH belum selesai audit penuh.",
-    "bahasa_arab":"DRAF: teks penuh SK/SP masih memerlukan semakan DSKP.",
+    "bahasa_arab":"DRAF SEMAKAN: 290/298 PdP ada calon ayat SP daripada DSKP; 8 PdP kekal kod SP sahaja. Pernyataan SK penuh dan ketepatan padanan PdP belum disahkan; bukan FINAL READY.",
     "rbt":"DRAF: agihan minggu PdP perlu disesuaikan dengan jadual sekolah.",
     "sejarah":"DRAF: semak agihan PdP mengikut RPT sekolah.",
     "pendidikan_islam":"DRAF: beberapa sesi tasmi dan PdP pilihan belum diluluskan.",
