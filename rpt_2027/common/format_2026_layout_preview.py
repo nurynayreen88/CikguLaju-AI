@@ -26,6 +26,31 @@ SUBJECTS = {
     "muzik": "PENDIDIKAN MUZIK",
     "sains": "SAINS",
 }
+# Physical column order remains five columns; ONLY their displayed headings
+# are localized. These are teaching-table headers, not editable source rows.
+# PI uses Jawi terms found in school RPT examples; Arabic uses subject's
+# Arabic pedagogical terminology; English uses source-SOW nomenclature.
+LOCALIZED_TABLE_HEADINGS = {
+    "pendidikan_islam": (
+        "ميڠݢو / تاريخ", "بيدڠ / تاجوق / ڤدڤ",
+        "ستندرد كاندوڠن", "ستندرد ڤمبالجرن", "چاتتن / باهن",
+    ),
+    "bahasa_arab": (
+        "الأسبوع / التاريخ", "الوحدة / الموضوع / الدرس",
+        "معيار المحتوى", "معيار التعلم", "الملاحظات / الوسائل",
+    ),
+    "english": (
+        "WEEK / DATE", "UNIT / TOPIC / LESSON",
+        "CONTENT STANDARD", "LEARNING STANDARD", "NOTES / MATERIALS",
+    ),
+}
+DEFAULT_TABLE_HEADINGS = (
+    "MINGGU / TARIKH", "UNIT / TAJUK / PDP",
+    "SK", "SP", "CATATAN / BAHAN",
+)
+assert all(len(headings) == 5 and all(headings)
+           for headings in LOCALIZED_TABLE_HEADINGS.values())
+
 GROUP_A = "Kedah, Kelantan, Terengganu"
 GROUP_B = "Negeri-negeri lain / Wilayah Persekutuan"
 REQUIRED = ("id", "unit", "sk", "sp", "note")
@@ -301,8 +326,8 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
     table_part = True
     # The rightmost column in RTL is the first logical column
     # MINGGU -> UNIT/PdP -> SK -> SP -> CATATAN (read right to left).
-    logical_headings = ("MINGGU / TARIKH", "UNIT / TAJUK / PDP",
-                        "SK", "SP", "CATATAN / BAHAN")
+    logical_headings = LOCALIZED_TABLE_HEADINGS.get(
+        subject, DEFAULT_TABLE_HEADINGS)
     headings = tuple(reversed(logical_headings)) if rtl_table else logical_headings
     table_rows = [[p(t,size=8.0,leading=11.7,strong=True,color="#25323a") for t in headings]]
     if max_span_rows is not None and (type(max_span_rows) is not int or not 1 <= max_span_rows <= 8):
