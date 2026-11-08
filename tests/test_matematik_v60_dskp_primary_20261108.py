@@ -33,11 +33,11 @@ class PrimaryDSKPSourceAudit(unittest.TestCase):
         self.assertEqual(y6["dskp_distinct_sp_codes"], 38)
 
     def test_semantic_mismatch_even_when_sp_exists_in_primary_dskp(self):
-        self.assertEqual(self.report["known_semantic_conflict_count"], 23)
-        self.assertEqual(self.report["known_distinct_pdp_requiring_review_minimum"], 121)
+        self.assertEqual(self.report["known_semantic_conflict_count"], 29)
+        self.assertEqual(self.report["known_distinct_pdp_requiring_review_minimum"], 127)
         cases = {x["pdp_code"]: x
                  for x in self.report["code_present_but_semantically_conflicting_known_cases"]}
-        self.assertEqual(len(cases), 23)
+        self.assertEqual(len(cases), 29)
         self.assertTrue({"MT6-PDP-004", "MT6-PDP-006", "MT6-PDP-022",
                          "MT6-PDP-025", "MT6-PDP-034", "MT6-PDP-037",
                          "MT6-PDP-078", "MT6-PDP-079", "MT6-PDP-080",
@@ -52,7 +52,21 @@ class PrimaryDSKPSourceAudit(unittest.TestCase):
         self.assertEqual(cases["MT6-PDP-025"]["candidate_sp"], "2.4.1")
         self.assertEqual(cases["MT6-PDP-082"]["candidate_sp"], "7.2.1;7.3.1;7.4.1")
         self.assertEqual(cases["MT6-PDP-034"]["native_sp"], "3.1.1;3.1.2")
+        self.assertEqual(cases["MT6-PDP-029"]["native_sp"], "2.3.2")
+        self.assertEqual(cases["MT6-PDP-029"]["candidate_sp"], "2.3.3")
+        self.assertEqual(cases["MT6-PDP-026"]["candidate_sp"], "2.2.1;2.2.2")
         self.assertTrue(all(x["approved"] is False for x in cases.values()))
+
+    def test_year6_all_93_initial_title_sp_cases_are_triaged_not_approved(self):
+        r=self.report
+        self.assertEqual(r["year6_native_initial_title_sp_triaged"],93)
+        self.assertEqual(r["year6_native_minimum_priority_review"],91)
+        self.assertEqual(r["year6_native_untriaged_title_sp_count"],0)
+        provisional=r["year6_title_sp_provisional_matches_not_approved"]
+        self.assertEqual({x["pdp_code"] for x in provisional},
+                         {"MT6-PDP-001","MT6-PDP-005"})
+        self.assertTrue(all(x["approved"] is False for x in provisional))
+        self.assertEqual(r["known_distinct_pdp_requiring_review_minimum"],127)
 
     def test_all_conflicts_remain_unapproved_and_no_production_changes(self):
         self.assertFalse(self.report["academic_signoff"])
