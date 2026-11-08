@@ -97,6 +97,45 @@ def audit_dskp_primary():
             "v60_absent_codes": missing_v60,
             "academic_signoff": False,
         }
+    # Semantic conflicts are a different axis from SP-code presence.
+    # Never claim that a code existing in a PDF verifies its teaching scope.
+    ledger_path = ROOT / "audits/matematik_y6_pdp004_006_semantic_conflict_20261108.json"
+    ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
+    if (ledger.get("schema") != "cikgulaju.math.y6.native_semantic_hold.v1"
+            or ledger.get("approved_count") != 0 or ledger.get("final_ready") is not False
+            or ledger.get("production_modified") is not False
+            or len(ledger.get("cases", [])) != 2):
+        raise ValueError("Unexpected Mathematics semantic-review ledger")
+    by_pdp = {
+        item["pdp_code"]: item
+        for item in canonical["candidate_crosswalk"]["by_year"]["6"]["candidates"]
+    }
+    extra_semantic = []
+    for case in ledger["cases"]:
+        key = case["native_pdp_code"]
+        native = by_pdp.get(key)
+        if (native is None or native["native_title"] != case["native_title"]
+                or native["source_sequence_numbers"] != [str(case["native_lesson_number"])]
+                or native["sksp"] != [{"sk": case["native_sk"], "sp": case["native_sp"]}]
+                or case["native_sp"] not in data["documents"]["6"]["sp_codes"]
+                or case.get("ready") is not False):
+            raise ValueError(f"Maths semantic evidence conflicts with actual source {key}")
+        # These are precisely codes that *pass* naive presence checking.
+        if any(p["pdp_code"] == key for p in affected):
+            raise ValueError("Semantic case unexpectedly counted as missing code")
+        if case.get("candidate_dskp_sp") and (
+                case["candidate_dskp_sp"] not in data["documents"]["6"]["sp_codes"]):
+            raise ValueError("Suggested semantic SP not in reference DSKP")
+        extra_semantic.append({
+            "year": 6,
+            "pdp_code": key,
+            "native_title": native["native_title"],
+            "native_sp": case["native_sp"],
+            "reason": case["evidence"],
+            "candidate_sp": case.get("candidate_dskp_sp"),
+            "status": "REQUIRES_ACADEMIC_REVIEW",
+            "approved": False,
+        })
     return {
         "schema": "cikgulaju.math.v60_dskp_code_presence_audit.v1",
         "run_status": "CODE_AUDIT_ONLY",
@@ -107,6 +146,10 @@ def audit_dskp_primary():
         "distinct_absent_code_year_pairs": sum(
             row["native_absent_distinct_sp_codes"] for row in years.values()),
         "affected_pdp": affected,
+        "code_present_but_semantically_conflicting_known_cases": extra_semantic,
+        "known_semantic_conflict_count": len(extra_semantic),
+        "known_distinct_pdp_requiring_review_minimum": len(affected) + len(extra_semantic),
+        "coverage_warning": "This is a minimum of 98 absent-code PdP and 2 independently verified meaning conflicts, not a complete semantic audit of all 528 PdP.",
         "release_decision": "HOLD",
         "academic_signoff": False,
         "runtime_e2e_passed": False,
@@ -134,9 +177,13 @@ def main():
               "native absent", info["native_absent_distinct_sp_codes"],
               "affected PdP", info["native_pdp_requiring_review"],
               "v60 absent", len(info["v60_absent_codes"]))
-    print("RELEASE HOLD: academic review and Web/Telegram E2E not complete")
+    print("Known semantic conflicts with existing SP codes:",
+          report["known_semantic_conflict_count"],
+          "minimum distinct native PdP review:", report["known_distinct_pdp_requiring_review_minimum"])
+    print("RELEASE HOLD: code presence is NOT semantic approval or Web/Telegram E2E")
     if args.require_zero_conflicts and (
             report["affected_native_pdp_total"] > 0
+            or report["known_semantic_conflict_count"] > 0
             or any(info["v60_absent_codes"] for info in report["years"].values())):
         raise SystemExit("RELEASE HOLD: unresolved primary DSKP code conflicts")
 
