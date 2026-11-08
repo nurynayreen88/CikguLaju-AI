@@ -19,6 +19,12 @@
       "drive_file_id": "1OP6DG9vmT5_q3RtvXHbd7qscc6lj8Za4",
       "sha256": "5785f6a8e3027168d16a9eecd37ddc60e582b6dbda63a60f0651656be0a51d6e",
       "edition": "DBP 2021 KSSR Semakan 2017"
+    },
+    "textbook_part3": {
+      "drive_file_id": "1Q7JqVRovkAv0X_pF1GhlIoQ2TGAFHKsM",
+      "sha256": "35006f052cea2a327415c816e08a061c963b1bf56f3fc5346ca2a491fff52571",
+      "edition": "DBP 2021 KSSR Semakan 2017",
+      "coverage": "Printed pages 165–234; Year6 ratio/proportion pages 191–204"
     }
   },
   "cases": [
@@ -118,9 +124,17 @@
       "finding": "semantic_scope_conflict_even_though_code_exists",
       "evidence": "Nisbah dan carta pai ialah tajuk berbeza; kod 8.1.1 Telegram bukan SP nisbah pada DSKP Tahun 6 ini.",
       "candidate_dskp_sp": "7.2.1",
-      "candidate_source_status": "CANDIDATE_ONLY_REQUIRES_TITLE_AND_ACTIVITY_SIGNOFF",
+      "candidate_source_status": "TEXTBOOK_AND_DSKP_CODES_VERIFIED__ACADEMIC_SIGNOFF_PENDING",
       "action": "REVIEW_RATIO_CURRICULUM_ALIGNMENT",
-      "ready": false
+      "ready": false,
+      "candidate_textbook_printed_pages": [
+        191,
+        196
+      ],
+      "candidate_textbook_pdf_pages": [
+        27,
+        32
+      ]
     },
     {
       "native_pdp_code": "MT6-PDP-080",
@@ -135,9 +149,17 @@
       "finding": "semantic_scope_conflict_even_though_code_exists",
       "evidence": "Kadaran bukan kebolehjadian; 8.2.1 Telegram tidak menepati maksud SP 8.2.1 Tahun 6 DSKP ini.",
       "candidate_dskp_sp": "7.3.1",
-      "candidate_source_status": "CANDIDATE_ONLY_REQUIRES_TITLE_AND_ACTIVITY_SIGNOFF",
+      "candidate_source_status": "TEXTBOOK_AND_DSKP_CODES_VERIFIED__ACADEMIC_SIGNOFF_PENDING",
       "action": "REVIEW_PROPORTION_CURRICULUM_ALIGNMENT",
-      "ready": false
+      "ready": false,
+      "candidate_textbook_printed_pages": [
+        197,
+        200
+      ],
+      "candidate_textbook_pdf_pages": [
+        33,
+        36
+      ]
     },
     {
       "native_pdp_code": "MT6-PDP-081",
@@ -152,9 +174,17 @@
       "finding": "semantic_scope_conflict_even_though_code_exists",
       "evidence": "Penyelesaian masalah nisbah dan kadaran bukan penyelesaian masalah pengurusan data dan kebolehjadian yang ditetapkan oleh SP 8.3.1.",
       "candidate_dskp_sp": "7.4.1",
-      "candidate_source_status": "CANDIDATE_ONLY_REQUIRES_TITLE_AND_ACTIVITY_SIGNOFF",
+      "candidate_source_status": "TEXTBOOK_AND_DSKP_CODES_VERIFIED__ACADEMIC_SIGNOFF_PENDING",
       "action": "REVIEW_RATIO_PROPORTION_PROBLEM_ALIGNMENT",
-      "ready": false
+      "ready": false,
+      "candidate_textbook_printed_pages": [
+        201,
+        204
+      ],
+      "candidate_textbook_pdf_pages": [
+        37,
+        40
+      ]
     }
   ],
   "important_limit": "The previous 98-PdP code-presence audit is a lower bound; 8 separate SP-present PdP have apparent semantic scope mismatches. A title-based review is a warning, not final proof that every activity is invalid. No automatic code changes.",
