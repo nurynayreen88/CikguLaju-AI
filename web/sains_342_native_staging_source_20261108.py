@@ -163,7 +163,7 @@ def _catalog():
         or {year:sum(r["year"]==year for r in lessons.values())
              for year in EXPECTED}!=EXPECTED):
         raise ValueError("Sains T2–T6 342 source identities incomplete")
-    payload="\\n".join(
+    payload="\n".join(
         f"{r['year']}|{r['pdp_code']}|{r['unit']}|{r['sp']}"
         for r in lessons.values()
     )
