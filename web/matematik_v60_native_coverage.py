@@ -1,8 +1,10 @@
 """Read-only pre-release reconciliation of all Maths v60 lessons against native PdP.
 
-Never imports or changes the database. Call ONLY with a loaded staging Telegram
-runtime exposing _sm2542_rows and CIKGULAJU_DB_V2600_ACTIVE. This check does
-NOT replace the teacher's textbook/activity-book academic approval or E2E tests.
+Never imports or changes the database. Call ONLY with a staging audit source
+that verifies Telegram Matematik's v25.99 canonical DB checksum first, then
+sets CIKGULAJU_MATH_V2599_SOURCE_VERIFIED and exposes _sm2542_rows.
+This audit-only proof marker is NOT a production feature flag and does NOT
+replace textbook/activity-book academic approval or Web/Telegram E2E tests.
 """
 from __future__ import annotations
 
@@ -33,7 +35,7 @@ def audit_native_mapping(runtime) -> dict:
     """
     if not is_enabled():
         raise NativeCoverageUnavailable("Matematik v60 staging flag is disabled")
-    if not getattr(runtime, "CIKGULAJU_DB_V2600_ACTIVE", False):
+    if not getattr(runtime, "CIKGULAJU_MATH_V2599_SOURCE_VERIFIED", False):
         raise NativeCoverageUnavailable("Native DB v26.00 is not confirmed active")
     reader = getattr(runtime, "_sm2542_rows", None)
     if not callable(reader):
