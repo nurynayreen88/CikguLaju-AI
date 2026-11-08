@@ -98,6 +98,8 @@ class PIReleaseReadinessTests(unittest.TestCase):
         self.assertEqual(r["quran_sp_objective_pbd_range_mismatches_in_staging"], 0)
         self.assertEqual(r["surah_crossfield_editor_corrections"], 11)
         self.assertEqual(r["surah_source_rpt_errors_pending"], 7)
+        self.assertEqual(r["source_rpt_editor_errata_lesson_count"], 9)
+        self.assertEqual(r["source_rpt_editor_field_comparisons"], 13)
         self.assertIs(r["year4_rpt_puasa_six_rukun_error_pending"], True)
         self.assertIs(r["year3_rpt_solat_l059_copy_error_pending"], True)
         self.assertGreaterEqual(r["tasmi_source_high_volume_lessons_review_pending"], 10)
