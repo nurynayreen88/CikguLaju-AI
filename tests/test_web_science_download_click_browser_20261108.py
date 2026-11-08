@@ -35,7 +35,7 @@ class ScienceBrowserDownloadTest(unittest.TestCase):
         self.page.evaluate("""({unit,pdp})=>{
           document.querySelector('main.panel').hidden=true;
           document.querySelector('#workspace').hidden=false;
-          document.querySelector('#view-rph').hidden=false;
+          showWebView('rph'); // Mimic authenticated teacher opening sidebar RPH
           document.querySelector('#teacher-info').hidden=false;
           for(const [id,value] of [
              ['year','4'],['subject','SCIENCE'],['unit',unit],['lesson',pdp]
@@ -73,6 +73,18 @@ class ScienceBrowserDownloadTest(unittest.TestCase):
               {status:503,headers:{'content-type':'application/json'}});
           };
         }""",{"unit":UNIT,"pdp":PDP})
+        actual=self.page.locator("#rph-word").evaluate("""el=>{
+            const chain=[];
+            for(let node=el;node;node=node.parentElement){
+              const style=getComputedStyle(node);
+              chain.push({name:node.tagName+'#'+node.id,
+                hidden:node.hidden,display:style.display,
+                visibility:style.visibility});
+            }
+            return chain;
+        }""")
+        self.assertTrue(self.page.locator("#rph-word").is_visible(),
+                        "RPH Word control hidden in synthetic teacher workspace: "+repr(actual))
 
     def tearDown(self):
         self.page.close()
