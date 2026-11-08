@@ -15,6 +15,8 @@ on:
       - 'audits/pendidikan_islam_6_held_rph_new_candidate_activity_plans_20261107.json'
       - 'audits/pendidikan_islam_rpt2027_6_held_source_recovery_20261107_DRAF.json'
       - 'audits/bahasa_arab_rpt2027_y2_y6_117_sp_pdf_page_evidence_20261107.json'
+      - 'audits/bahasa_arab_rpt2027_t2_19_sp_visual_statement_candidates_20261108.json'
+      - 'audits/bahasa_arab_rpt2027_t3_23_sp_visual_statement_candidates_20261108.json'
       - 'rpt_2027/common/format_2026_layout_preview.py'
       - 'tests/test_rpt_2027_rtl_layout_staging.py'
       - 'rpt_2027/bahasa_melayu/*Format_2026_DRAF.html'

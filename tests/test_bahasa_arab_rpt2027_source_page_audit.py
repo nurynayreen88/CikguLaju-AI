@@ -106,6 +106,46 @@ class ArabicSPPageEvidenceQA(unittest.TestCase):
                             for row in rows))
         self.assertIs(candidate["summary"]["rpt_release_ready"],False)
 
+    def test_year3_23_visual_candidates_hold_three_duplicate_syllable_sp(self):
+        path=ROOT/"audits/bahasa_arab_rpt2027_t3_23_sp_visual_statement_candidates_20261108.json"
+        candidate=json.loads(path.read_text(encoding="utf-8"))
+        original=next(x for x in self.data["years"] if x["year"]==3)
+        self.assertEqual(candidate["status"],
+                         "VISUAL_TRANSCRIPTION_CANDIDATE_ONLY_NOT_ACADEMIC_FINAL")
+        self.assertEqual(candidate["source_pdf_sha256"],original["pdf_sha256"])
+        self.assertEqual(candidate["source_url"],original["source_url"])
+        self.assertEqual(candidate["source_pdf_pages"],48)
+        self.assertEqual(candidate["source_pages_inspected"],[29,30,31,34,35,36,39])
+        code_to_page={e["sp_code"]:e["pdf_page"] for e in original["entries"]}
+        entries={e["sp_code"]:e for e in candidate["entries"]}
+        self.assertEqual(len(entries),23)
+        self.assertEqual(set(entries),set(code_to_page))
+        self.assertEqual(sum(e["candidate_for_staging_display"]
+                             for e in entries.values()),20)
+        self.assertTrue(all(e["pdf_page"]==code_to_page[code]
+                            and e["inspected_rendered_page"]
+                            and e["academic_panel_signed_off"] is False
+                            for code,e in entries.items()))
+        holds={"2.3.1":"2.2.1","2.3.2":"2.2.2","2.3.3":"2.2.3"}
+        self.assertEqual({code for code,e in entries.items()
+                          if not e["candidate_for_staging_display"]},set(holds))
+        for conflict,source in holds.items():
+            self.assertEqual(entries[conflict]["pdf_page"],35)
+            self.assertFalse(entries[conflict]["candidate_for_staging_display"])
+            self.assertEqual(entries[conflict]["visual_transcription_candidate"],
+                             entries[source]["visual_transcription_candidate"])
+            self.assertIn("syllable",entries[conflict]["hold_reason"])
+        self.assertEqual(candidate["summary"]["academic_panel_signoffs"],0)
+        self.assertIs(candidate["summary"]["rpt_release_ready"],False)
+        rows=arabic_records(3)
+        self.assertEqual(len(rows),60)
+        self.assertEqual(sum(row["sp"] in holds for row in rows),6)
+        self.assertEqual(sum(row["source_sp_visual_candidate_staging"]
+                             for row in rows),54)
+        self.assertTrue(all(row["source_sp_dskp_text_signoff"] is False
+                            and row["source_sp_academic_panel_signed_off"] is False
+                            for row in rows))
+
     def test_pdf_location_evidence_cannot_automatically_unlock_rpt(self):
         for year in range(2, 7):
             records = arabic_records(year)
@@ -114,7 +154,9 @@ class ArabicSPPageEvidenceQA(unittest.TestCase):
             for row in records:
                 self.assertIn("Pernyataan penuh SK belum dipadankan",
                               row["sk_display"])
-                if year==2 and row["sp"]!="3.4.1":
+                if ((year==2 and row["sp"]!="3.4.1")
+                    or (year==3 and row["sp"] not in
+                        {"2.3.1","2.3.2","2.3.3"})):
                     self.assertTrue(row["source_sp_visual_candidate_staging"])
                     self.assertIn(" — القدرة على ",row["sp_display"])
                 else:
