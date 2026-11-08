@@ -7,43 +7,43 @@
   "files": {
     "bahasa_arab:2": {
       "path": "bahasa_arab/tahun_2.pdf",
-      "sha256": "e5d582ffecd134cbf6682b60a8940146bfb1b8de4f672bd995a46a349bd285d7",
-      "bytes": 120192,
+      "sha256": "9000db76f5192f9e2cbcbf3c7dc0512b4882777b26efafc7a847a77098080c10",
+      "bytes": 129360,
       "pages": 11,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
+      "source_stage": "ARABIC_Y2_Y6_117_SOURCE_SP_VISUAL_CANDIDATES_NOT_ACADEMIC_FINAL_20261108"
     },
     "bahasa_arab:3": {
       "path": "bahasa_arab/tahun_3.pdf",
-      "sha256": "f80f920368e76cc1f39c937b0047e901fca3786b71998d975ce93891ea0c9b58",
-      "bytes": 119513,
+      "sha256": "11d8a785cd30046980f4c7448e0462c08879be247a98c93d95d4fa9cde4cfb6f",
+      "bytes": 128153,
       "pages": 11,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
+      "source_stage": "ARABIC_Y2_Y6_117_SOURCE_SP_VISUAL_CANDIDATES_NOT_ACADEMIC_FINAL_20261108"
     },
     "bahasa_arab:4": {
       "path": "bahasa_arab/tahun_4.pdf",
-      "sha256": "ddd4632c78985deb01df688f5a269b186023884857542858c35499dbe912fe20",
-      "bytes": 118041,
+      "sha256": "9f3dc07feaf05938d4d5e85a0eada7147228cf0f8d399067829c8f6ce965817a",
+      "bytes": 128374,
       "pages": 11,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
+      "source_stage": "ARABIC_Y2_Y6_117_SOURCE_SP_VISUAL_CANDIDATES_NOT_ACADEMIC_FINAL_20261108"
     },
     "bahasa_arab:5": {
       "path": "bahasa_arab/tahun_5.pdf",
-      "sha256": "8099c47516e20e92683947813724008ebd1025c934d6e5a254da9fec449414a7",
-      "bytes": 121698,
+      "sha256": "a9fa41b0fd233f70ac9fbeb4e81242f2092bd39fb3341b18705e756e63226262",
+      "bytes": 131741,
       "pages": 12,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
+      "source_stage": "ARABIC_Y2_Y6_117_SOURCE_SP_VISUAL_CANDIDATES_NOT_ACADEMIC_FINAL_20261108"
     },
     "bahasa_arab:6": {
       "path": "bahasa_arab/tahun_6.pdf",
-      "sha256": "195f97e5c92d2c38019f7677983526e1794da7785b20a1c86c02e0eb2f4e2ff5",
-      "bytes": 119514,
+      "sha256": "7f2ff45640e57b08a80b62a894acdd2bbe926175418ef6eb14d9b9ae5dc5766e",
+      "bytes": 128246,
       "pages": 11,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
+      "source_stage": "ARABIC_Y2_Y6_117_SOURCE_SP_VISUAL_CANDIDATES_NOT_ACADEMIC_FINAL_20261108"
     },
     "bahasa_melayu:2": {
       "path": "bahasa_melayu/tahun_2.pdf",
