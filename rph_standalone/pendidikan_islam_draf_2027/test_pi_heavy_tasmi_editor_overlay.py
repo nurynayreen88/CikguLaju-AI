@@ -18,6 +18,8 @@ class HeavyTasmiEditorOnlyTests(unittest.TestCase):
         self.assertEqual(data["year6"],10)
         self.assertEqual(data["source_ayah_min"],61)
         self.assertEqual(data["source_ayah_max"],106)
+        self.assertEqual(data["source_specific_surah_range_labels"],14)
+        self.assertEqual(len({r["source_surah_range_label"] for r in rows}),14)
         self.assertEqual(data["original_catalog_files_overwritten"],0)
         self.assertEqual(data["official_ayah_boundaries_reassigned"],0)
         self.assertEqual(data["teacher_exact_subranges_assigned"],0)
@@ -35,7 +37,14 @@ class HeavyTasmiEditorOnlyTests(unittest.TestCase):
             self.assertEqual(
                 hashlib.sha256(r["original_pbd"].encode("utf-8")).hexdigest(),
                 r["original_pbd_sha256"])
-            self.assertEqual(r["proposed_activity_jawi"],ACTIVITY)
+            self.assertNotEqual(r["proposed_activity_jawi"],ACTIVITY)
+            self.assertIn(r["source_surah_range_label"],r["proposed_activity_jawi"])
+            self.assertEqual(r["source_surah_count"],len(r["source_surah_ranges"]))
+            self.assertEqual(
+                r["source_range_ayat_count"],
+                sum(x["end"]-x["start"]+1 for x in r["source_surah_ranges"])
+            )
+            self.assertEqual(len(r["proposed_activity_jawi"].splitlines()),4)
             self.assertEqual(r["proposed_pbd_jawi"],PBD)
             self.assertFalse(r["full_sp_completion_certified"])
             self.assertIsNone(r["teacher_selected_exact_ayah"])
