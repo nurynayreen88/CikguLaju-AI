@@ -94,7 +94,9 @@ class RPT2026LayoutQA(unittest.TestCase):
                     self.assertEqual(numbers,list(range(1,count+1)),
                                      f"{subject} {year} missing/mixed PdP")
                     if subject=="rbt":
-                        self.assertIn("Belum ditentukan",body)
+                        # Missing timetable remains missing in source; no internal
+                        # planning placeholder should be printed for teachers.
+                        self.assertNotIn("Belum ditentukan",body)
                     if subject=="moral":
                         self.assertNotIn("RPH_TERSEDIA_BETA80",body)
                         self.assertNotIn("RPH_PENGUKUHAN_DRAF_SUMBER_TOC",body)
