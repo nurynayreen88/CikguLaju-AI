@@ -1,0 +1,45 @@
+name: Inspect Telegram main-menu Web notice insertion (read-only)
+on:
+  push:
+    branches:
+      - feat/telegram-main-menu-web-notice-20261108
+    paths:
+      - .github/workflows/telegram-web-main-menu-inspect-20261108.yml
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Find current bot main-menu message and keyboard builders without app changes
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          p=Path('app.py')
+          lines=p.read_text(encoding='utf-8').splitlines()
+          print("TOTAL_LINES",len(lines))
+          keys=('10 janaan','rph hari ini','rakan pembangun','rpt 2027','sediakan bahan pdp','menu utama','main_menu','main menu','web app','cikgulaju-web.onrender.com')
+          locations={}
+          for i,s in enumerate(lines):
+              lo=s.lower()
+              for key in keys:
+                  if key in lo:
+                      locations.setdefault(key,[]).append(i)
+          for key,items in locations.items():
+              print("KEY",repr(key),"TOTAL",len(items),"SAMPLE_LINE_NUMBERS",[i+1 for i in items[:25]])
+          preferred=['10 janaan','rph hari ini','rakan pembangun','rpt 2027','sediakan bahan pdp','main_menu','menu utama']
+          centers=set()
+          for key in preferred:
+              for idx in locations.get(key,[])[:8]:
+                  centers.add(idx)
+          for idx in sorted(centers)[:55]:
+              a=max(0,idx-4);b=min(len(lines),idx+7)
+              print("\nAROUND",idx+1)
+              for k in range(a,b):
+                  s=lines[k]
+                  if re.search(r'(?i)(token|secret|api_key|password|private_key)',s):
+                      s='[REDACTED: potential secret]'
+                  print(f"{k+1:06d}: {s[:240]}")
+          PY
