@@ -1,0 +1,112 @@
+name: Matematik v60 native Telegram-Web staging contract
+
+on:
+  pull_request:
+    paths:
+      - "web/matematik_v60_native_rows.py"
+      - "web/matematik_v60_native_coverage.py"
+      - "web/matematik_v60_crosswalk_candidates.py"
+      - "tools/audit_matematik_v60_v2599_native_source_20261108.py"
+      - "tools/audit_matematik_v60_dskp_primary_20261108.py"
+      - "audits/matematik_v60_dskp_primary_sp_inventory_20261108.json"
+      - "web/telegram_verified_sequence_rph_bridge.py"
+      - "tools/run_telegram_with_curriculum_api.py"
+      - "tests/test_matematik_v60_native_rows_20261108.py"
+      - "tests/test_matematik_v60_native_coverage_20261108.py"
+      - "tests/test_matematik_v60_crosswalk_20261108.py"
+      - "tests/test_matematik_v60_canonical_source_contract_20261108.py"
+      - "tests/test_matematik_v60_dskp_primary_20261108.py"
+      - "tests/test_matematik_v60_private_sequence_20261108.py"
+      - "tests/test_matematik_v60_web_telegram_state_20261108.py"
+      - "rph_standalone/matematik/v60_source_loader.py"
+      - "rph_standalone/matematik/v60_source/**"
+      - ".github/workflows/matematik-v60-native-runtime-staging.yml"
+  workflow_dispatch:
+    inputs:
+      require_release:
+        description: "Run strict FINAL READY gate (academic + native + Web/Telegram E2E)"
+        type: boolean
+        required: false
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  source-and-native-bridge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install bridge-only dependencies
+        run: python -m pip install "Flask==3.1.3"
+      - name: Check syntax without importing the production bot
+        run: |
+          python -m py_compile web/matematik_v60_native_rows.py
+          python -m py_compile web/matematik_v60_native_coverage.py
+          python -m py_compile web/telegram_verified_sequence_rph_bridge.py
+          python -m py_compile tools/run_telegram_with_curriculum_api.py
+      - name: Verify all 585 original source lessons (no DB)
+        run: python -m unittest discover -s tests -p "test_matematik_v60_main_source.py" -v
+      - name: Test native Telegram row adapter and authenticated-Web source parity
+        run: |
+          python -m unittest discover -s tests -p "test_matematik_v60_native_rows_20261108.py" -v
+          python -m unittest discover -s tests -p "test_matematik_v60_native_coverage_20261108.py" -v
+          python -m unittest discover -s tests -p "test_matematik_v60_crosswalk_20261108.py" -v
+          python -m unittest discover -s tests -p "test_matematik_v60_canonical_source_contract_20261108.py" -v
+          python -m unittest discover -s tests -p "test_matematik_v60_dskp_primary_20261108.py" -v
+          python -m unittest discover -s tests -p "test_matematik_v60_private_sequence_20261108.py" -v
+          python -m unittest discover -s tests -p "test_matematik_v60_web_telegram_state_20261108.py" -v
+
+      - name: Audit actual Telegram Mathematics v25.99 canonical sequence mapping (read-only)
+        run: |
+          python -m tools.audit_matematik_v60_v2599_native_source_20261108 --output /tmp/matematik_v60_native_coverage.json > /tmp/math_v60_audit_stdout.json
+          python - <<'PY'
+          import json
+          report=json.load(open('/tmp/matematik_v60_native_coverage.json', encoding='utf-8'))
+          print("MATH-V60 SOURCE",report['source_lessons'],"NATIVE MATCHED",report['matched'])
+          print("Candidate types (all NOT approved):",report.get("crosswalk_status_counts",{}))
+          for year, row in report['per_year'].items():
+              print("Year",year,"PdP",row['native_pdp'],"matched",row['matched'],
+                    "missing",row['unmatched'],"conflicts",row['conflicts'])
+          native_total=sum(x['native_pdp'] for x in report['per_year'].values())
+          crosswalk=report.get('candidate_crosswalk',{})
+          assert report['source_lessons']==585, 'Source count changed'
+          assert native_total==528, 'Canonical v25.99 total unexpectedly changed'
+          assert crosswalk.get('approved_count')==0, 'No approval is authorized by this test'
+          assert crosswalk.get('status')=='ACADEMIC_HOLD'
+          assert report['release_decision']=='HOLD'
+          assert report['academic_signoff'] is False and report['runtime_e2e_passed'] is False
+          assert report['mapping_ready'] is False, 'Source changed: reconcile before approval'
+          print("CODE/AUDIT CHECKS PASS. RELEASE STATUS: HOLD, NOT READY.")
+          PY
+
+      - name: Audit source DSKP Tahun 2-6 vs native Maths and v60 (code presence only)
+        run: |
+          python -m tools.audit_matematik_v60_dskp_primary_20261108 --output /tmp/matematik_v60_dskp_primary_audit.json
+          python - <<'PY'
+          import json
+          r=json.load(open('/tmp/matematik_v60_dskp_primary_audit.json',encoding='utf-8'))
+          assert r['affected_native_pdp_total']==98
+          assert r['distinct_absent_code_year_pairs']==65
+          assert all(not v['v60_absent_codes'] for v in r['years'].values())
+          assert r['academic_signoff'] is False and r['production_modified'] is False
+          print("DSKP CODE AUDIT PASS, 98 PDP REQUIRE ACADEMIC REVIEW; RELEASE HOLD")
+          PY
+
+      - name: Preserve signed-source crosswalk audit for review (staging only)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: math-v60-v2599-crosswalk-staging
+          path: |
+            /tmp/matematik_v60_native_coverage.json
+            /tmp/matematik_v60_dskp_primary_audit.json
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Explicit FINAL READY gate (manual only, fail closed)
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.require_release }}
+        run: python -m tools.audit_matematik_v60_v2599_native_source_20261108 --require-release

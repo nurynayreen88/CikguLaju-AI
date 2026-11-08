@@ -1,0 +1,73 @@
+{
+  "schema": "cikgulaju.math_v60.visual_BA_spotcheck.v1",
+  "date": "2026-11-08",
+  "scope": "Matematik Year 2 RPH v60 Lessons 001-003; source-book topical check only",
+  "source": {
+    "drive_file_id": "1_Ea0Qc94Enp9iRf2yy6-vQseLdh1otqH",
+    "filename": "Buku Aktiviti Matematik TAHUN 2.pdf",
+    "size": 51873365,
+    "sha256": "1fac0d7984e9c8c725036dd3888d91df2a5138e9d776fed6574791e610a8f318",
+    "image_scans": true,
+    "page_number_mapping": "printed page n = PDF page n+6; 1-indexed"
+  },
+  "review": [
+    {
+      "lesson": 1,
+      "SP": "1.1.1",
+      "rph_BA_printed": "1–2",
+      "BA_PDF_pages": [
+        7,
+        8
+      ],
+      "printed_section": "KENALI NOMBOR",
+      "observed_activities": [
+        "Sebut dan padankan nombor",
+        "Warnakan nombor dan perkataannya dengan warna yang sama"
+      ],
+      "textbook_pages_indicated_on_BA_footer": "1–3 on BA p1; 4–5 on BA p2",
+      "topical_match": true,
+      "item_by_item_RPH_confirmation": false
+    },
+    {
+      "lesson": 2,
+      "SP": "1.1.2",
+      "rph_BA_printed": "5–6",
+      "BA_PDF_pages": [
+        11,
+        12
+      ],
+      "printed_section": "NILAI NOMBOR",
+      "observed_activities": [
+        "Warnakan objek mengikut nombor",
+        "Tulis nombor menggunakan model blok / bahan manipulatif"
+      ],
+      "textbook_pages_indicated_on_BA_footer": "8–12 on BA p5–6",
+      "topical_match": true,
+      "item_by_item_RPH_confirmation": false
+    },
+    {
+      "lesson": 3,
+      "SP": "1.2.1",
+      "rph_BA_printed": "3–4",
+      "BA_PDF_pages": [
+        9,
+        10
+      ],
+      "printed_section": "TULIS NOMBOR",
+      "observed_activities": [
+        "Tulis nombor dalam angka",
+        "Tulis nombor dalam perkataan"
+      ],
+      "textbook_pages_indicated_on_BA_footer": "6–7 on BA p3–4",
+      "topical_match": true,
+      "item_by_item_RPH_confirmation": false
+    }
+  ],
+  "notes": "Textbook page numbers are PRINTED ON THE ACTIVITY BOOK as references, not independent visual signoff of textbook questions. Do not populate v60 with these numbers automatically. Three topical checks out of 234 activity-book-linked RPH do not constitute full academic approval.",
+  "approval": {
+    "BT_visual_verified": false,
+    "BA_item_signoff": false,
+    "ready": false
+  },
+  "production_modified": false
+}

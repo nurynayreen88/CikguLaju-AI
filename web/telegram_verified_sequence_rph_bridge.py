@@ -168,6 +168,22 @@ def _build_state(runtime, year, subject, unit_token, pdp_code, teacher):
 
 
 def _source_text(runtime, state):
+    # Exact v60 source is selected by the same native PdP that powers Telegram.
+    # This check occurs before advertising availability and before rendering,
+    # so a mismatched SK/SP or missing source cannot silently use legacy RPH.
+    from web.matematik_v60_native_rows import (
+        is_enabled as math_v60_enabled, verify_state as math_v60_verify,
+        MathematicsRPHUnavailable,
+    )
+    if math_v60_enabled() and state.get("subject") == "Matematik":
+        try:
+            verified = math_v60_verify(state)
+            if verified is None:
+                raise MathematicsRPHUnavailable("Matematik selection not verified")
+            from rph_standalone.matematik.v60_source_loader import get_lesson
+            return get_lesson(verified[0], verified[1])
+        except Exception as exc:
+            raise SourceUnavailable("Matematik v60 exact PdP unavailable") from exc
     local = getattr(runtime, "_local_rph_text", None)
     if not callable(local):
         raise SourceUnavailable("Native Telegram lesson text unavailable")
