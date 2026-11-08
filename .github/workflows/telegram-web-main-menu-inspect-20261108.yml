@@ -1,10 +1,8 @@
-name: Inspect Telegram main-menu Web notice insertion (read-only)
+name: Inspect final Telegram main-menu handlers (read-only)
 on:
   push:
-    branches:
-      - feat/telegram-main-menu-web-notice-20261108
-    paths:
-      - .github/workflows/telegram-web-main-menu-inspect-20261108.yml
+    branches: [feat/telegram-main-menu-web-notice-20261108]
+    paths: [.github/workflows/telegram-web-main-menu-inspect-20261108.yml]
 permissions:
   contents: read
 jobs:
@@ -12,34 +10,33 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Find current bot main-menu message and keyboard builders without app changes
+      - name: Display final active menu handler and routing anchors only
         run: |
           python - <<'PY'
           from pathlib import Path
-          import re
-          p=Path('app.py')
-          lines=p.read_text(encoding='utf-8').splitlines()
-          print("TOTAL_LINES",len(lines))
-          keys=('10 janaan','rph hari ini','rakan pembangun','rpt 2027','sediakan bahan pdp','menu utama','main_menu','main menu','web app','cikgulaju-web.onrender.com')
-          locations={}
-          for i,s in enumerate(lines):
-              lo=s.lower()
-              for key in keys:
-                  if key in lo:
-                      locations.setdefault(key,[]).append(i)
-          for key,items in locations.items():
-              print("KEY",repr(key),"TOTAL",len(items),"SAMPLE_LINE_NUMBERS",[i+1 for i in items[:25]])
-          preferred=['10 janaan','rph hari ini','rakan pembangun','rpt 2027','sediakan bahan pdp','main_menu','menu utama']
-          centers=set()
-          for key in preferred:
-              for idx in locations.get(key,[])[:8]:
-                  centers.add(idx)
-          for idx in sorted(centers)[:55]:
-              a=max(0,idx-4);b=min(len(lines),idx+7)
-              print("\nAROUND",idx+1)
-              for k in range(a,b):
-                  s=lines[k]
-                  if re.search(r'(?i)(token|secret|api_key|password|private_key)',s):
-                      s='[REDACTED: potential secret]'
-                  print(f"{k+1:06d}: {s[:240]}")
+          import ast,re
+          s=Path('app.py').read_text(encoding='utf-8')
+          lines=s.splitlines()
+          tree=ast.parse(s)
+          for target in ('menu','callback','send','install_menu_button'):
+              locations=[n for n in tree.body if isinstance(n,(ast.FunctionDef,ast.AsyncFunctionDef)) and n.name==target]
+              print('FUNCTION',target,'TOTAL',len(locations),'LINES',[(n.lineno,n.end_lineno) for n in locations[-8:]])
+              if target=='menu':
+                  for node in locations[-2:]:
+                      a=node.lineno-1;b=min(node.end_lineno,a+95)
+                      print('LAST_MENU',a+1,b)
+                      for i in range(a,b):
+                          text=lines[i]
+                          if re.search(r'(?i)(token|secret|api_key|password|private_key)',text):text='[REDACTED]'
+                          print(f'{i+1:06d}: {text[:250]}')
+              if target=='callback' and locations:
+                  node=locations[-1]
+                  print('FINAL_CALLBACK_START',node.lineno)
+                  for i in range(node.lineno-1,min(node.lineno+30,len(lines))):
+                      text=lines[i]
+                      if re.search(r'(?i)(token|secret|api_key|password|private_key)',text):text='[REDACTED]'
+                      print(f'{i+1:06d}: {text[:250]}')
+          for word in ('cikgulaju-web.onrender.com','https://','web login','webapp','web_app'):
+              found=[i for i,l in enumerate(lines) if word.lower() in l.lower()]
+              print('OTHER',word,'count',len(found),'lines',[i+1 for i in found[-12:]])
           PY
