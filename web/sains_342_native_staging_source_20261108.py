@@ -219,6 +219,7 @@ def _review_text(item):
     year,sp=item["year"],item["sp"]
     body=(
         f"# Sains Tahun {year} · PdP {item['pdp_number']:03d} — SEMAKAN DALAMAN / DRAF HOLD\n"
+        f"Kod PdP: {item['pdp_code']}\n"
         f"Unit: {item['unit']}\n"
         f"Tajuk/fokus: {item['title']}\n"
         f"SK: {item['sk']}\n"
