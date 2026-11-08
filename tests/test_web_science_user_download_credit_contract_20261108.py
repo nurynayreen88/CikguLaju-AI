@@ -119,7 +119,7 @@ class ScienceWebUserDownloadContracts(unittest.TestCase):
         self.assertEqual(uid,825001)
         self.assertEqual(url,"https://example.supabase.co")
         self.assertEqual(key,"internal-fixture-only")
-        self.assertTrue(document.startswith((b"PK\\x03\\x04",b"%PDF-")))
+        self.assertTrue(document.startswith((b"PK\x03\x04",b"%PDF-")))
         if self.remaining==0:
             return {"allowed":False,"remaining":0,"reference":None}
         self.remaining-=1
