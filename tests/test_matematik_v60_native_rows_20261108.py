@@ -114,6 +114,33 @@ class MathNativeV60(unittest.TestCase):
             self.assertEqual(again["STANDARD PEMBELAJARAN"].split(" — ")[0],"1.7.2")
             self.assertEqual(len(calls),2)
 
+    def test_quick_material_renders_with_resolved_native_pdp_identity(self):
+        # The previous Word/PDF row engine must receive the *verified* Lesson
+        # number, not the original Telegram callback with only an opaque code.
+        seen=[]
+        def previous(s,*args,**kwargs):
+            seen.append(dict(s))
+            if s.get("source_sequence_no") != 14 or s.get("pdp_no") != 14:
+                raise AssertionError("Native Word/PDF engine received an unresolved lesson")
+            return {"KELAS":"4 Amanah","TARIKH":"08/11/2026"}
+        runtime=SimpleNamespace(
+            _sm2542_rows=lambda year, subject:[{
+                "pdp_sequence_code":"verified-T4-L014",
+                "source_sequence_no":14,"sk_code":"1.7","sp_code":"1.7.2"
+            }],
+            _rph_rows=previous)
+        callback=dict(state(),task="quick_material",
+                      pdp_sequence_code="verified-T4-L014")
+        callback.pop("source_sequence_no")
+        callback.pop("pdp_no")
+        with patch.dict(os.environ,ENV):
+            self.assertTrue(m.install(runtime))
+            result=runtime._rph_rows(callback)
+        self.assertEqual(result["STANDARD PEMBELAJARAN"].split(" — ")[0],"1.7.2")
+        self.assertEqual(seen[0]["source_sequence_no"],14)
+        self.assertEqual(seen[0]["pdp_no"],14)
+        self.assertNotIn("source_sequence_no",callback)
+
     def test_telegram_quick_material_ambiguous_or_wrong_source_fails_closed(self):
         telegram=dict(state(),task="quick_material",pdp_sequence_code="X-014")
         telegram.pop("source_sequence_no");telegram.pop("pdp_no")
