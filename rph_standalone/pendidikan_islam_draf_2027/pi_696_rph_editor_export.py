@@ -23,6 +23,8 @@ from pi_quality_audit import COUNT
 from pi_heavy_tasmi_editor_overlay import generate as heavy_tasmi_editor
 from pi_y5_khat_nasakh_editor_overlay import generate as khat_y5_editor
 from pi_y5_khat_nasakh_source_audit import UPDATED as Y5_KHAT_SOURCE_REPAIRS
+from pi_tajwid_crossfield_mad_audit import REPAIRED as Y5_MAD_IWAD_REPAIRS
+from pi_y5_qadr_dual_sk_source_audit import LESSONS as Y5_QADR_HAFAZAN_REPAIRS
 from pi_surah_pbd_alignment_audit import RPT_SOURCE_ERRORS
 from pi_y5_activity_book_wording_review import EXPECTED as YEAR5_ACTIVITY_BOOK_AMBIGUOUS
 from pi_word_pdf_print_audit import make_docx, inspect_pdf
@@ -58,6 +60,10 @@ def academic_warning_codes(entry, page_count):
         codes.append("YEAR5_KHAT_EDITOR_WORKSHEET_AND_PBD_PENDING")
     if ident in Y5_KHAT_SOURCE_REPAIRS:
         codes.append("YEAR5_KHAT_SOURCE_SP_CORRECTION_PENDING_EXPERT")
+    if ident in Y5_MAD_IWAD_REPAIRS:
+        codes.append("YEAR5_TAJWID_MAD_IWAD_COPYEDITS_PENDING_EXPERT")
+    if ident in Y5_QADR_HAFAZAN_REPAIRS:
+        codes.append("YEAR5_QADR_TILAWAH_HAFAZAN_SP_CODE_PENDING_EXPERT")
     if entry["tasmi_editor_overlay"]:
         codes.append("HIGH_VOLUME_TASMI_PASSAGE_SELECTION_EDITOR_NOT_APPROVED")
     if ident in JUZ25_UNMAPPED_SOURCE:
@@ -87,6 +93,9 @@ Penutup 690 RPH ditukarkan kepada cadangan Jawi untuk semakan sahaja.
 78 kumpulan calon Jawi belum mendapat kelulusan ejaan/pakar.
 13 PdP khat Nasakh Tahun 5 mempunyai pratonton PBD dan lembaran guru,
 4 daripadanya dibetulkan kod SP berdasarkan DSKP Tahun 5 ms43–44.
+3 PdP tajwid Tahun 5 diperbetulkan kekeliruan mad badal/mad iwad.
+2 PdP Tahun 5 Surah al-Qadr diperbetulkan kod hafazan kepada SP1.3.1,
+berdasarkan DSKP tahun 5 ms19,21.
 Tiada edisi/halaman Buku Aktiviti Tahun 5 didakwa telah disahkan.
 14 PdP tasmi' >60 ayat mempunyai cadangan aktiviti/PBD khas semakan editor,
 tanpa mengubah SP atau menetapkan julat ayat individu secara automatik.
@@ -280,6 +289,8 @@ def create_report(output_dir, *, sample=0, batch_size=24):
         assert warning_counts["HIGH_VOLUME_TASMI_PASSAGE_SELECTION_EDITOR_NOT_APPROVED"] == 14
         assert warning_counts["YEAR5_KHAT_EDITOR_WORKSHEET_AND_PBD_PENDING"] == 13
         assert warning_counts["YEAR5_KHAT_SOURCE_SP_CORRECTION_PENDING_EXPERT"] == 4
+        assert warning_counts["YEAR5_TAJWID_MAD_IWAD_COPYEDITS_PENDING_EXPERT"] == 3
+        assert warning_counts["YEAR5_QADR_TILAWAH_HAFAZAN_SP_CODE_PENDING_EXPERT"] == 2
     (output_dir/"INDEX_EDITOR_696.json").write_text(
         json.dumps({"status":"DRAF_EDITOR_ONLY_NO_GO",
                     "catalog_total":696,
