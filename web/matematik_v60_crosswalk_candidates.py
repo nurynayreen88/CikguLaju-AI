@@ -13,7 +13,7 @@ from rph_standalone.matematik.v60_source_loader import get_lesson
 from web.matematik_v60_native_rows import parse_lesson
 
 
-_SUBSTANDARD = re.compile(r"(\\d+\\.\\d+\\.\\d+)(?:\\([^()]+\\))?")
+_SUBSTANDARD = re.compile(r"([0-9]+[.][0-9]+[.][0-9]+)(?:[(][^()]+[)])?")
 
 
 def _parent_codes(value: str) -> tuple[str, ...] | None:
