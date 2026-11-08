@@ -51,6 +51,34 @@ class PIFullRPHReviewerExportTests(unittest.TestCase):
         two_page = next(x for x in rows if x["record"]["id"] == "T4-L107")
         self.assertIn("PDF_LAYOUT_NOT_ONE_PAGE", academic_warning_codes(two_page, 2))
 
+    def test_14_tasmi_editor_improvements_preserve_exact_source_fields(self):
+        from pi_heavy_tasmi_editor_overlay import generate, EXPECTED
+        source = {r["id"]:r for r in generate()["rows"]}
+        rows = {entry["record"]["id"]:entry for entry in self.rows}
+        overlaid = {r["record"]["id"] for r in self.rows
+                    if r["tasmi_editor_overlay"]}
+        self.assertEqual(overlaid, EXPECTED)
+        self.assertEqual(len(source),14)
+        for ident in EXPECTED:
+            entry=rows[ident]
+            original=source[ident]
+            actual=entry["record"]["fields"]
+            self.assertEqual(actual["sp"],original["unchanged_source_sp"])
+            self.assertEqual(actual["objektif"],original["unchanged_source_objective"])
+            self.assertEqual(actual["aktiviti_utama"],original["proposed_activity_jawi"])
+            self.assertEqual(actual["pentaksiran"],original["proposed_pbd_jawi"])
+            self.assertEqual(entry["tasmi_source_field_hashes"],{
+                "aktiviti_utama": original["original_activity_sha256"],
+                "pentaksiran": original["original_pbd_sha256"],
+            })
+            from pi_696_rph_editor_export import academic_warning_codes
+            self.assertIn("HIGH_VOLUME_TASMI_PASSAGE_SELECTION_EDITOR_NOT_APPROVED",
+                          academic_warning_codes(entry,1))
+        for item in self.rows:
+            if item["record"]["id"] not in EXPECTED:
+                self.assertFalse(item["tasmi_editor_overlay"])
+                self.assertIsNone(item["tasmi_source_field_hashes"])
+
     def test_held_and_critical_never_claim_to_be_ready(self):
         rows=self.rows
         held={x["record"]["id"] for x in rows
