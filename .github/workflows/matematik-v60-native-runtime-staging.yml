@@ -1,6 +1,9 @@
 name: Matematik v60 native Telegram-Web staging contract
 
 on:
+  push:
+    branches:
+      - "staging/matematik-v60-native-runtime-20261108"
   pull_request:
     paths:
       - "web/matematik_v60_native_rows.py"
@@ -9,6 +12,7 @@ on:
       - "tools/audit_matematik_v60_v2599_native_source_20261108.py"
       - "tools/audit_matematik_v60_dskp_primary_20261108.py"
       - "audits/matematik_v60_dskp_primary_sp_inventory_20261108.json"
+      - "audits/matematik_y6_pdp004_006_semantic_conflict_20261108.json"
       - "web/telegram_verified_sequence_rph_bridge.py"
       - "tools/run_telegram_with_curriculum_api.py"
       - "tests/test_matematik_v60_native_rows_20261108.py"
@@ -17,6 +21,8 @@ on:
       - "tests/test_matematik_v60_canonical_source_contract_20261108.py"
       - "tests/test_matematik_v60_dskp_primary_20261108.py"
       - "tests/test_matematik_y6_staging_drafts_20261108.py"
+      - "tests/test_matematik_y6_semantic_draft_20261108.py"
+      - "rph_standalone/matematik/staging_draf_y6_pdp006_pola_nombor_20261108.md"
       - "rph_standalone/matematik/staging_draf_y6_pdp007_012_dskp_bukuteks_20261108.md"
       - "tests/test_matematik_v60_private_sequence_20261108.py"
       - "tests/test_matematik_v60_web_telegram_state_20261108.py"
@@ -61,6 +67,7 @@ jobs:
           python -m unittest discover -s tests -p "test_matematik_v60_canonical_source_contract_20261108.py" -v
           python -m unittest discover -s tests -p "test_matematik_v60_dskp_primary_20261108.py" -v
           python -m unittest discover -s tests -p "test_matematik_y6_staging_drafts_20261108.py" -v
+          python -m unittest discover -s tests -p "test_matematik_y6_semantic_draft_20261108.py" -v
           python -m unittest discover -s tests -p "test_matematik_v60_private_sequence_20261108.py" -v
           python -m unittest discover -s tests -p "test_matematik_v60_web_telegram_state_20261108.py" -v
 
@@ -94,10 +101,12 @@ jobs:
           import json
           r=json.load(open('/tmp/matematik_v60_dskp_primary_audit.json',encoding='utf-8'))
           assert r['affected_native_pdp_total']==98
+          assert r['known_semantic_conflict_count']==2
+          assert r['known_distinct_pdp_requiring_review_minimum']==100
           assert r['distinct_absent_code_year_pairs']==65
           assert all(not v['v60_absent_codes'] for v in r['years'].values())
           assert r['academic_signoff'] is False and r['production_modified'] is False
-          print("DSKP CODE AUDIT PASS, 98 PDP REQUIRE ACADEMIC REVIEW; RELEASE HOLD")
+          print("DSKP CODE AUDIT PASS: 98 absent-code PdP + 2 known code-present semantic conflicts. RELEASE HOLD.")
           PY
 
       - name: Preserve signed-source crosswalk audit for review (staging only)
