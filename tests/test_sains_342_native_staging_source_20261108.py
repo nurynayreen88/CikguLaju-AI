@@ -55,7 +55,7 @@ def fake_runtime():
             d=Document()
             h=d.add_table(rows=2,cols=2)
             h.cell(0,0).text="Sains "+str(item["year"])
-            h.cell(0,1).text="PdP "+str(item["pdp_number"])+" DRAF/HOLD"
+            h.cell(0,1).text="PdP "+format(item["pdp_number"],"03d")+" DRAF/HOLD"
             h.cell(1,0).text=item["unit"]
             h.cell(1,1).text=item["sp"]+": "+item["title"]
             a=d.add_table(rows=3,cols=3)
