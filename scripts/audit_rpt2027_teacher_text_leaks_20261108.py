@@ -44,10 +44,19 @@ def find_internal_notes(text: str) -> list[dict]:
 
 def _parts(path: Path):
     if path.suffix.lower() == ".pdf":
-        from pypdf import PdfReader
-        document = PdfReader(str(path))
-        for page_number, page in enumerate(document.pages, 1):
-            yield page_number, page.extract_text() or ""
+        try:
+            import fitz
+        except ImportError:
+            # Keep the audit usable locally when only pypdf is installed.
+            from pypdf import PdfReader
+            document = PdfReader(str(path))
+            for page_number, page in enumerate(document.pages, 1):
+                yield page_number, page.extract_text() or ""
+        else:
+            # GitHub's five PDF QA jobs already depend on PyMuPDF.
+            with fitz.open(path) as document:
+                for page_number, page in enumerate(document, 1):
+                    yield page_number, page.get_text("text") or ""
     else:
         source = path.read_text(encoding="utf-8-sig")
         if path.suffix.lower() in (".html", ".htm"):
@@ -103,8 +112,11 @@ def main(argv=None) -> int:
     for finding in report["findings"][:30]:
         print(f'{finding["file"]} p.{finding["page"]}: '
               f'{finding["rule"]}: {finding["match"]}')
-    return int(bool(args.fail_on_findings and (
-        report["findings_count"] or report["read_errors"])))
+    # Unreadable PDFs must NEVER produce an apparent clean audit, even for
+    # report-only staging runs. Flagged draft phrases remain informational
+    # unless an explicitly requested release gate is active.
+    return int(bool(report["read_errors"] or not report["scanned_files"] or
+                    (args.fail_on_findings and report["findings_count"])))
 
 
 if __name__ == "__main__":
