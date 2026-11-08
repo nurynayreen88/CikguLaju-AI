@@ -106,21 +106,21 @@ def build_word(draft, output):
     s.left_margin, s.right_margin = Cm(1.25), Cm(1.25)
     s.header_distance, s.footer_distance = Cm(.42), Cm(.4)
     normal = doc.styles["Normal"]
-    normal.font.name, normal.font.size = "Aptos", Pt(8.35)
-    normal.paragraph_format.line_spacing = 1.04
-    normal.paragraph_format.space_after = Pt(2.4)
+    normal.font.name, normal.font.size = "Aptos", Pt(10.2)
+    normal.paragraph_format.line_spacing = 1.12
+    normal.paragraph_format.space_after = Pt(4.2)
     p = doc.add_paragraph()
     p.paragraph_format.space_after=Pt(1.5)
     r=p.add_run("RANCANGAN PENGAJARAN HARIAN  •  MATEMATIK TAHUN 6")
-    r.bold=True; r.font.size=Pt(10.6); r.font.color.rgb=RGBColor(25,60,97)
+    r.bold=True; r.font.size=Pt(11.8); r.font.color.rgb=RGBColor(25,60,97)
     p=doc.add_paragraph()
     p.paragraph_format.space_after=Pt(2.4)
     r=p.add_run(draft.code+"  —  "+draft.title)
-    r.bold=True; r.font.size=Pt(9.7)
+    r.bold=True; r.font.size=Pt(10.9)
     p=doc.add_paragraph()
     p.paragraph_format.space_after=Pt(4)
     r=p.add_run("DRAF QA STAGING  |  BELUM DILULUSKAN  |  BUKAN RPH PENGGUNA")
-    r.bold=True; r.font.size=Pt(7.6); r.font.color.rgb=RGBColor(155,24,32)
+    r.bold=True; r.font.size=Pt(8.1); r.font.color.rgb=RGBColor(155,24,32)
     original, candidate, pages = CANDIDATES[draft.code]
     table=doc.add_table(rows=1,cols=3)
     table.style="Table Grid"
@@ -134,13 +134,13 @@ def build_word(draft, output):
         for p2 in cell.paragraphs:
             p2.paragraph_format.space_after=Pt(0)
             for run in p2.runs:
-                run.font.size=Pt(7.5)
+                run.font.size=Pt(8.6)
     p=doc.add_paragraph()
     p.paragraph_format.space_after=Pt(3)
     r=p.add_run("SP asal Telegram: "+original+
         ("  |  Cadangan sahaja, bukan perubahan DB." if original!="TIADA"
          else "  |  Calon RPT 2027 tanpa ID PdP Telegram rasmi."))
-    r.italic=True; r.font.size=Pt(7.25)
+    r.italic=True; r.font.size=Pt(8.1)
 
     # Preserve all complete original teaching paragraphs, no summarization.
     for raw in re.split(r"\n\s*\n",draft.body):
@@ -148,7 +148,7 @@ def build_word(draft, output):
         if not raw:
             continue
         p=doc.add_paragraph()
-        p.paragraph_format.space_after=Pt(2.6)
+        p.paragraph_format.space_after=Pt(4.6)
         _inline_md(p,raw)
     footer=s.footer.paragraphs[0]
     footer.alignment=WD_ALIGN_PARAGRAPH.CENTER
