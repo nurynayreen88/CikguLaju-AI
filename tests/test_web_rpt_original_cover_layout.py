@@ -80,6 +80,50 @@ class ExistingCoverLayoutTests(unittest.TestCase):
                                       layout["teacher_row_top_left"])
                     ))
 
+    def test_ten_islamic_arabic_pdf_tables_are_rtl_other_46_stay_ltr(self):
+        headers=("MINGGU / TARIKH","UNIT / TAJUK / PDP",
+                 "SK","SP","CATATAN / BAHAN")
+        rtl_subjects={"pendidikan_islam","bahasa_arab"}
+        pdp_counts={
+            "pendidikan_islam":{2:112,3:147,4:151,5:143,6:143},
+            "bahasa_arab":{2:60,3:60,4:58,5:60,6:60}
+        }
+        rtl_count=0
+        arab_links=0
+        for key,entry in self.manifest["files"].items():
+            subject,year_s=key.split(":")
+            year=int(year_s)
+            with self.subTest(key=key),open_pdf(ROOT/entry["path"]) as pdf:
+                spans=[]
+                for block in pdf[1].get_text("dict")["blocks"]:
+                    for line in block.get("lines",[]):
+                        for span in line["spans"]:
+                            if span["text"].strip() in headers and 40<span["bbox"][1]<95:
+                                spans.append((span["text"].strip(),span["bbox"][0]))
+                positions=dict(spans)
+                self.assertEqual(set(positions),set(headers))
+                order=[positions[h] for h in headers]
+                if subject in rtl_subjects:
+                    self.assertEqual(order,sorted(order,reverse=True),
+                                     "Jadual Arab/Jawi mesti RTL, Minggu paling kanan")
+                    rtl_count+=1
+                    tags=[]
+                    for page in list(pdf)[1:]:
+                        for block in page.get_text("dict")["blocks"]:
+                            for line in block.get("lines",[]):
+                                for span in line["spans"]:
+                                    t=span["text"].strip()
+                                    if t.startswith("PdP ") and len(t)==7 and t[4:].isdigit():
+                                        tags.append(int(t[4:]))
+                    self.assertEqual(tags,list(range(1,pdp_counts[subject][year]+1)))
+                    if subject=="bahasa_arab":
+                        arab_links+=sum(len(page.get_links()) for page in pdf)
+                else:
+                    self.assertEqual(order,sorted(order),
+                                     "Subjek lain mesti kekal LTR")
+        self.assertEqual(rtl_count,10)
+        self.assertEqual(arab_links,298)
+
     def test_no_new_page_and_no_layout_leaking_outside_original_spaces(self):
         l=self.layout
         for box in ("logo_interior_top_left","logo_image_safe_top_left",
