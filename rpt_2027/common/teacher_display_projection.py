@@ -30,7 +30,7 @@ _INTERNAL = re.compile(
 _AUDIT_CLAUSE = re.compile(
     r"(?i)(?:\b(?:sumber|semakan)\s*:\s*(?:v\d|legacy|draft)|"
     r"\bRPT\s+2026\s+(?:salah|mengulangi)|"
-    r"\b(?:TARIKH|MINGGU)\s+(?:A/B\s+)?(?:BELUM|ADALAH CADANGAN)|"
+    r"\b(?:TARIKH|MINGGU)\s+(?:A/B\s+)?(?:BELUM|(?:IALAH|ADALAH)\s+CADANGAN)|"
     r"\b(?:HALAMAN|AKTIVITI|BUKU|TEKS|KOD)\b.{0,80}\b(?:belum|draf|calon|sebelum READY)|"
     r"\b(?:audit|developer|release|signoff)\b)"
 )
