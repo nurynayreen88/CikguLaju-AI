@@ -95,6 +95,12 @@ class RemainingRPTFormatQA(unittest.TestCase):
                                           r["sp_display"])
                         else:
                             self.assertIn(" — القدرة على ",r["sp_display"])
+                elif y==4:
+                    self.assertEqual(len(rows),58)
+                    self.assertEqual(sum(r["source_sp_visual_candidate_staging"]
+                                         for r in rows),58)
+                    self.assertTrue(all(" — القدرة على " in r["sp_display"]
+                                        for r in rows))
                 else:
                     self.assertTrue(all("Pernyataan penuh SP belum dipadankan"
                                         in r["sp_display"] for r in rows))
