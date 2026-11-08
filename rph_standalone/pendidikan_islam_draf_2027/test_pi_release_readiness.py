@@ -75,12 +75,15 @@ class PIReleaseReadinessTests(unittest.TestCase):
         self.assertEqual(r["tajwid_crossfield_mad_conflicts_remaining"],0)
         self.assertEqual(r["year5_mad_iwad_copyedit_lessons"],3)
         self.assertEqual(r["year5_mad_iwad_copyedit_fields"],7)
+        self.assertEqual(r["year5_qadr_sp_131_hafazan_source_corrected_lessons"],2)
+        self.assertEqual(r["year5_qadr_sp_131_hafazan_source_corrected_fields"],3)
         self.assertEqual(r["year5_khat_editor_pbd_and_worksheet_overlays"],13)
         self.assertEqual(r["year5_khat_editor_fields_changed"],30)
         self.assertEqual(r["year5_khat_official_activity_book_pages_verified"],0)
         bycode={x["code"]:x for x in r["release_blockers"]}
         self.assertEqual(bycode["YEAR5_KHAT_NASAKH_4_SOURCE_SP_CORRECTIONS_PENDING_EXPERT"]["affected_lessons"],4)
         self.assertEqual(bycode["YEAR5_TAJWID_MAD_BADAL_IWAD_THREE_SOURCE_COPY_ERRORS_PENDING_EXPERT"]["affected_lessons"],3)
+        self.assertEqual(bycode["YEAR5_QADR_TWO_DUAL_SK_HAFAZAN_SOURCE_CODES_PENDING_EXPERT"]["affected_lessons"],2)
         self.assertEqual(bycode["YEAR5_KHAT_NASAKH_13_EDITOR_PBD_AND_WORKSHEET_PENDING"]["affected_lessons"],13)
         source_issue = [b for b in r["release_blockers"] if b["code"] ==
                         "YEAR5_JAWI_BUKU_AKTIVITI_WORDING_SOURCE_UNVERIFIED"]
