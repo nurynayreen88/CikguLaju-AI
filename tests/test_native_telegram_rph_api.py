@@ -238,5 +238,35 @@ class NativeRPHBridgeTests(unittest.TestCase):
         self.assertEqual(state["subject"],"Pendidikan Seni Visual")
 
 
+
+    def test_subject_adapter_guard_uses_actual_telegram_install_state(self):
+        # A Web render must use the same installed flags as the Telegram adapters.
+        cases = (
+            ("PJPK", "CIKGULAJU_PJPK_2027_PREVIEW_INSTALLED",
+             {"component": "PJ", "year": 3, "lesson": 10,
+              "unit": "Unit 4: Semangat Berjuang"}),
+            ("MORAL", "CIKGULAJU_MORAL_80_ACTIVE",
+             {"component": None, "year": 3, "lesson": 1,
+              "unit": "Nilai Murni"}),
+            ("PSV", "PSV_2027_PROVISIONAL_TELEGRAM_ACTIVE",
+             {"component": None, "year": 2, "lesson": 1,
+              "unit": "Seni Visual"}),
+        )
+        for subject, installed_flag, changes in cases:
+            with self.subTest(subject=subject):
+                body = payload("pdf")
+                body.update(subject=subject, **changes)
+                body["layout"]["activity_header"] = [
+                    "Fasa / Masa", "Aktiviti Pengajaran & Pembelajaran", "Catatan"]
+                setattr(self.runtime, installed_flag, False)
+                denied = self._post(body)
+                self.assertEqual(denied.status_code, 503, denied.get_json())
+                before = len(self.runtime.calls)
+                setattr(self.runtime, installed_flag, True)
+                permitted = self._post(body)
+                self.assertEqual(permitted.status_code, 200, permitted.get_json() if permitted.is_json else "")
+                self.assertEqual(len(self.runtime.calls), before + 1)
+                setattr(self.runtime, installed_flag, False)
+
 if __name__=="__main__":
     unittest.main()
