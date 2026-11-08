@@ -27,7 +27,7 @@ class ArabicWeb2027SourceSPDraft(unittest.TestCase):
         self.assertEqual(catalog["total_rpt"],catalog["available_rpt"])
         self.assertEqual(catalog["total_rpt"],56)
         arabic=next(x for x in catalog["subjects"] if x["code"]=="bahasa_arab")
-        self.assertIn("290/298",arabic["years"][0]["note"])
+        self.assertIn("290/298",next(x for x in arabic["years"] if x["year"]==2)["note"])
         for year,(pdp,minvisual) in COUNTS.items():
             with self.subTest(year=year):
                 key=f"bahasa_arab:{year}"
