@@ -21,6 +21,10 @@ class Maths13StandaloneReviewProofs(unittest.TestCase):
                 for label in ("Aktiviti 1", "Aktiviti 2", "Aktiviti 3", "PBD", "Penutup", "BBM"):
                     self.assertIn(label,d.body)
                 self.assertTrue(len(d.body)>650)
+                self.assertNotIn("Pagar keselamatan", d.body)
+                self.assertNotIn("Peraturan penerbitan", d.body)
+                self.assertNotIn("###", d.body)
+                self.assertNotIn("BELUM DILULUSKAN", d.body)
                 self.assertIn(d.code,CANDIDATES)
 
     def test_candidates_not_approved_mapping_or_runtime_content(self):
