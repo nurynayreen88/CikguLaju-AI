@@ -36,7 +36,7 @@ def audit_native_mapping(runtime) -> dict:
     if not is_enabled():
         raise NativeCoverageUnavailable("Matematik v60 staging flag is disabled")
     if not getattr(runtime, "CIKGULAJU_MATH_V2599_SOURCE_VERIFIED", False):
-        raise NativeCoverageUnavailable("Native DB v26.00 is not confirmed active")
+        raise NativeCoverageUnavailable("Canonical Maths v25.99 source checksum not verified")
     reader = getattr(runtime, "_sm2542_rows", None)
     if not callable(reader):
         raise NativeCoverageUnavailable("Native PdP reader unavailable")
