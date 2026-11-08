@@ -17,6 +17,7 @@ SOURCES = [
     "rph_standalone/matematik/staging_draf_y6_pdp079_081_nisbah_kadaran_20261108.md",
     "rph_standalone/matematik/staging_draf_y6_rpt2027_wang_3_sumber_primer_20261108.md",
     "rph_standalone/matematik/staging_draf_y6_9_pdp_dskp2021_sumber_primer_20261108.md",
+    "rph_standalone/matematik/staging_draf_y6_5_pdp_semantic_gap_20261108.md",
 ]
 # The page and SP fields are SOURCE-REVIEW CANDIDATES, not accepted remaps.
 CANDIDATES = {
@@ -42,9 +43,14 @@ CANDIDATES = {
     "DSKP6-07": ("TIADA", "8.1.1", "207–212"),
     "DSKP6-08": ("TIADA", "8.2.1", "213–215"),
     "DSKP6-09": ("TIADA", "8.2.2", "216–219"),
+    "FIX6-01": ("TIADA", "2.2.1", "68–69"),
+    "FIX6-02": ("TIADA", "2.2.2", "70–72"),
+    "FIX6-03": ("TIADA", "2.3.1", "73–74"),
+    "FIX6-04": ("TIADA", "2.3.3", "77–79"),
+    "FIX6-05": ("TIADA", "5.1.1", "155–157"),
 }
 HEADING = re.compile(
-    r"(?m)^## (?:PdP|Calon) (?P<code>(?:MT6-PDP-\d{3}|FIN-T6-\d{2}|DSKP6-\d{2}))\s+—\s+(?P<title>.+)$"
+    r"(?m)^## (?:PdP|Calon) (?P<code>(?:MT6-PDP-\d{3}|FIN-T6-\d{2}|DSKP6-\d{2}|FIX6-\d{2}))\s+—\s+(?P<title>.+)$"
 )
 
 @dataclass(frozen=True)
@@ -95,9 +101,9 @@ def load_drafts(root=ROOT):
             out.append(_draft(h.group("code"), h.group("title"),
                               text[h.end():end], source))
     ids = [d.code for d in out]
-    if len(ids)!=22 or len(set(ids))!=22 or set(ids)!=set(CANDIDATES):
-        raise ValueError("Expected exactly 22 source-grounded draft IDs: "+repr(ids))
-    return sorted(out, key=lambda d:(d.code.startswith("FIN"),d.code.startswith("DSKP"),d.code))
+    if len(ids)!=27 or len(set(ids))!=27 or set(ids)!=set(CANDIDATES):
+        raise ValueError("Expected exactly 27 source-grounded draft IDs: "+repr(ids))
+    return sorted(out, key=lambda d:(d.code.startswith("FIN"),d.code.startswith("DSKP"),d.code.startswith("FIX"),d.code))
 
 def _inline_md(paragraph, text):
     from docx.shared import RGBColor
@@ -194,11 +200,11 @@ def main():
             sp_telegram=original,sp_candidate=candidate,printed_pages=pages,
             academic_signoff=False,teacher_ready=False))
     (out/"manifest.json").write_text(json.dumps({
-        "schema":"cikgulaju.math.22_rph_a4_qa.v1",
-        "count":22,"status":"ACADEMIC_HOLD",
+        "schema":"cikgulaju.math.27_rph_a4_qa.v1",
+        "count":27,"status":"ACADEMIC_HOLD",
         "production_modified":False,"items":manifest,
     },ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print("CREATED 22 DOCX REVIEW PROOFS, NOT USER READY")
+    print("CREATED 27 DOCX REVIEW PROOFS, NOT USER READY")
 
 if __name__=="__main__":
     main()
