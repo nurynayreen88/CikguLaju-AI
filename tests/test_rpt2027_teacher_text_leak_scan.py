@@ -135,6 +135,36 @@ class TeacherTextLeakAuditTests(unittest.TestCase):
         self.assertIn("menulis draf", public_note(row))
         self.assertEqual(find_internal_notes(original), [])
 
+    def test_english_sow_source_provenance_is_not_a_teacher_note(self):
+        from rpt_2027.common.teacher_display_projection import public_note
+        raw = ("SB p.58 | Main/Complementary codes from source SOW, "
+               "not a new DSKP choice.")
+        shown = public_note({"note": raw})
+        self.assertEqual(shown, "SB p.58")
+        self.assertTrue(find_internal_notes(raw))
+        self.assertFalse(find_internal_notes(shown))
+
+    def test_pi_mushaf_reference_survives_without_developer_instruction(self):
+        from rpt_2027.common.teacher_display_projection import public_note
+        original = ("Bahan: Mushaf al-Quran | Mushaf al-Quran (tasmi'/khatam) "
+                    "mengikut ayat dalam RPT; tidak mereka halaman buku teks.")
+        shown = public_note({"note": original})
+        self.assertIn("Mushaf al-Quran (tasmi'/khatam) mengikut ayat dalam RPT", shown)
+        self.assertNotIn("tidak mereka", shown)
+        self.assertFalse(find_internal_notes(shown))
+        self.assertTrue(find_internal_notes(original))
+
+    def test_sains_internal_crosswalk_id_is_preserved_but_not_printed(self):
+        from rpt_2027.common.teacher_display_projection import public_lesson_identity
+        row = {"id": "001", "display_id": "SCI-Y4-PDP-001", "note": "DRAF LEGACY"}
+        initial = dict(row)
+        self.assertEqual(public_lesson_identity("sains", row), "PdP 001")
+        self.assertEqual(row, initial)
+        self.assertTrue(find_internal_notes(row["display_id"]))
+        self.assertFalse(find_internal_notes(public_lesson_identity("sains", row)))
+        self.assertEqual(public_lesson_identity("english", 
+                         {"id": "001", "display_id": "Lesson 001"}), "Lesson 001")
+
     def test_scan_teacher_output_separately_from_source_data(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
