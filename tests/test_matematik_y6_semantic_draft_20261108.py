@@ -21,7 +21,8 @@ class Y6SemanticHold(unittest.TestCase):
         self.assertEqual(data["reference_documents"]["textbook"]["sha256"],
                          "5785f6a8e3027168d16a9eecd37ddc60e582b6dbda63a60f0651656be0a51d6e")
         cases = {r["native_pdp_code"]: r for r in data["cases"]}
-        self.assertEqual(set(cases), {"MT6-PDP-004", "MT6-PDP-006"})
+        self.assertEqual(len(cases), 8)
+        self.assertTrue({"MT6-PDP-004", "MT6-PDP-006", "MT6-PDP-079", "MT6-PDP-080", "MT6-PDP-081"} <= set(cases))
         self.assertEqual(cases["MT6-PDP-004"]["action"], "REVIEW_RPT_AND_PREREQUISITE_ONLY")
         self.assertEqual(cases["MT6-PDP-006"]["candidate_dskp_sp"], "1.1.2")
         self.assertEqual(cases["MT6-PDP-006"]["candidate_textbook_printed_pages"], [4,5,6,7,8])
