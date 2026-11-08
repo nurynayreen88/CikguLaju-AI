@@ -20,6 +20,10 @@ _NOTES = (
         re.IGNORECASE,
     ),
     re.compile(r"tidak\s+mereka\s+halaman\s+buku\s+teks\.", re.IGNORECASE),
+    re.compile(
+        r"Pemetaan\s+buku\s+teks\s+untuk\s+Lesson\s+ini\s+BELUM\s+DISAHKAN\s*;?\s+rujuk\s+naskhah\s+asal\s+sebelum\s+READY\.",
+        re.IGNORECASE,
+    ),
 )
 
 
