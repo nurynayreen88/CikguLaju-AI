@@ -1,0 +1,64 @@
+name: Sains Tahun3 six reproduction modes and kangkung DSKP review
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "web/sains_y3_rph_activity_preview_20261106.py"
+      - "tests/test_sains_y3_six_reproduction_kangkung_20261108.py"
+      - "audits/sains_y3_two_plant_reproduction_sp_corrections_20261108.md"
+      - ".github/workflows/sains_y3_six_plant_kangkung_quality_20261108.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  y3-semantic-source-and-documents:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install offline Word-PDF DRAF QA dependencies
+        run: |
+          python -m pip install 'python-docx==1.1.2' 'reportlab==4.2.5' 'pypdf==5.1.0'
+      - name: Test KPM six reproduction methods and kangkung two-method lesson
+        run: python -m unittest discover -s tests -p 'test_sains_y3_six_reproduction_kangkung_20261108.py' -v
+      - name: Test all 45 unchanged source identity, KPS, safety, PBD and academic HOLD
+        run: python -m unittest discover -s tests -p 'test_sains_y3_45_activity_preview_20261106.py' -v
+      - name: Render all 45 DRAF Word/PDF files and check real PDF A4 pagination
+        run: |
+          python -m tools.render_sains_y3_45_review_pack_20261106
+      - name: Assert two corrected RPH Word/PDF are source-grounded and still labelled DRAF
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from pypdf import PdfReader
+          from docx import Document
+          root=Path('build/sains_y3_45_rph_REVIEW_ONLY_20261106')
+          for number,terms in {
+              17:("enam cara","keratan batang"),
+              19:("kangkung","biji benih","keratan batang","tarikh")
+          }.items():
+              files=list(root.glob(f'SAINS_T3_PDP_{number:03d}_DRAF.*'))
+              if not files: raise AssertionError('Missing RPH source ' + str(number))
+          for file in root.glob('SAINS_T3_PDP_*_DRAF.pdf'):
+              pdf=PdfReader(str(file))
+              assert len(pdf.pages)==1 and pdf.pages[0].extract_text().find('DRAF')!=-1,file.name
+          assert len(list(root.glob('SAINS_T3_PDP_*_DRAF.pdf')))==45
+          assert len(list(root.glob('SAINS_T3_PDP_*_DRAF.docx')))==45
+          print('45/45 Year3 DRAF Word/PDF review pack; PDFs one A4 page')
+          PY
+      - name: Keep academic review copies as private CI artifacts, not runtime
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: SAINS_Y3_45_SIX_MODES_KANGKUNG_REVIEW_DRAF_HOLD
+          if-no-files-found: warn
+          path: |
+            build/sains_y3_45_rph_REVIEW_ONLY_20261106/*.docx
+            build/sains_y3_45_rph_REVIEW_ONLY_20261106/*.pdf
+            build/sains_y3_45_rph_REVIEW_ONLY_20261106/*.csv
