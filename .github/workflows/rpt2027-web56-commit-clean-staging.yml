@@ -1,0 +1,82 @@
+name: Stage 56 cleaned RPT PDF assets on Web review branch
+on:
+  push:
+    branches:
+      - fix/rpt2027-web56-teacher-notes-staging-20261108
+    paths:
+      - .github/workflows/rpt2027-web56-commit-clean-staging.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: web56-clean-staging-assets
+  cancel-in-progress: false
+jobs:
+  stage:
+    if: github.ref == 'refs/heads/fix/rpt2027-web56-teacher-notes-staging-20261108'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'PyMuPDF==1.24.14' 'flask==3.1.3' 'pypdf==5.1.0' 'reportlab==4.2.5' 'pillow'
+      - name: Fetch precise successful, pinned 56-clean PDF artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh run view 42448383523 -R "$GITHUB_REPOSITORY" --json conclusion,headSha > /tmp/web56_source_run.json
+          python - <<'PY'
+          import json
+          src=json.load(open('/tmp/web56_source_run.json',encoding='utf-8'))
+          assert src['conclusion']=='success',src
+          assert src['headSha']=='6c7db28840bd5d29cc2ef89af0657abd3fb974d0',src
+          PY
+          mkdir -p /tmp/cikgulaju_web56_clean
+          gh run download 42448383523 -R "$GITHUB_REPOSITORY" -n 'Web2027-56-clean-staging-catalog-candidates-not-final' -D /tmp/cikgulaju_web56_clean
+          test -s /tmp/cikgulaju_web56_clean/manifest.json
+          test -s /tmp/cikgulaju_web56_clean/clean_candidate_audit.json
+      - name: Apply 56 exact PDF SHA-pinned replacements to staging workspace
+        run: |
+          python -m scripts.apply_web56_clean_catalog_staging_20261108 --candidate /tmp/cikgulaju_web56_clean
+          python -m scripts.audit_web56_teacher_pdf_leaks_20261108 --fail-on-findings
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('staging/web56_teacher_leaks_20261108/report.json')
+          result=json.loads(p.read_text(encoding='utf-8'))
+          assert result['scanned_files']==56
+          assert result['findings_count']==0
+          assert not result['read_errors']
+          assert not result['manifest_discrepancies']
+          PY
+      - name: Test existing Web 56 RPT download catalog contracts
+        run: |
+          python -m unittest tests.test_web_rpt2027_56_release_catalog tests.test_web_rpt_2027_all -v
+      - name: Commit only 56 PDF sources, manifest, cover evidence and backup ledger
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add rpt_2027/web_2027_pdfs audits/WEB56_TEACHER_NOTES_REPLACEMENT_STAGING_20261108.json
+          if git diff --cached --quiet; then
+            echo 'No clean assets changed'; exit 0
+          fi
+          git diff --cached --name-only | tee /tmp/cikgulaju_staged_file_names.txt
+          python - <<'PY'
+          from pathlib import Path
+          lines=Path('/tmp/cikgulaju_staged_file_names.txt').read_text().splitlines()
+          pdfs=[x for x in lines if x.endswith('.pdf')]
+          assert len(pdfs)==56,len(pdfs)
+          assert len(lines)==59,lines
+          assert all(s.startswith('rpt_2027/web_2027_pdfs/') or
+                     s=='audits/WEB56_TEACHER_NOTES_REPLACEMENT_STAGING_20261108.json'
+                     for s in lines)
+          PY
+          git commit -m 'fix(web RPT): stage 56 audited clean DRAF PDFs and matching manifests'
+          git push origin HEAD:refs/heads/fix/rpt2027-web56-teacher-notes-staging-20261108
