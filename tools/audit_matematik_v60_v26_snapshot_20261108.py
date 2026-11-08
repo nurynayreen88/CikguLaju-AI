@@ -29,10 +29,9 @@ def audit_snapshot():
                 raise RuntimeError("Static DB v26.00 quick_check failed")
             cols = {row[1] for row in conn.execute(
                 "PRAGMA table_info(verified_pdp_sequence)")}
-            required = {"year_label", "subject", "pdp_sequence_code",
-                        "source_sequence_no", "sk_code", "sp_code"}
+            required = {"year_label", "subject", "sk_code", "sp_code"}
             if not required <= cols:
-                raise RuntimeError("Required native mapping columns missing: "
+                raise RuntimeError("Required raw source columns missing: "
                                    + repr(sorted(required - cols)))
             rows = [dict(row) for row in conn.execute(
                 """SELECT * FROM verified_pdp_sequence
@@ -41,17 +40,61 @@ def audit_snapshot():
             filtered = [row for row in rows
                         if str(row.get("verification_status") or "").strip().upper()
                         not in REJECTED]
-            runtime = SimpleNamespace(
-                CIKGULAJU_DB_V2600_ACTIVE=True,
-                _sm2542_rows=lambda year, subject: [
-                    row for row in filtered
-                    if row.get("year_label") == year
-                ])
-            with patch.dict("os.environ", {
-                "CIKGULAJU_ENV": "staging",
-                "CIKGULAJU_MATEMATIK_V60_STAGING_ENABLED": "1",
-            }):
-                report = audit_native_mapping(runtime)
+            native_keys = {"pdp_sequence_code", "source_sequence_no"}
+            if not native_keys <= cols:
+                # The v26.00 SQLite *raw* source has no materialized native
+                # Lesson/PdP identity: the Telegram runtime derives it.
+                # Never invent one by row number/week/title. Report what is
+                # actually in the snapshot and require runtime verification.
+                by_year = {}
+                for year in range(2, 7):
+                    subset = [row for row in filtered
+                              if row.get("year_label") == f"Tahun {year}"]
+                    by_year[str(year)] = {
+                        "source": 117,
+                        "raw_source_rows_not_pdp": len(subset),
+                        "raw_distinct_sksp": len({
+                            (str(row.get("sk_code") or "").strip(),
+                             str(row.get("sp_code") or "").strip())
+                            for row in subset
+                        }),
+                        "rows_without_sksp": sum(
+                            not str(row.get("sk_code") or "").strip()
+                            or not str(row.get("sp_code") or "").strip()
+                            for row in subset),
+                        "rows_without_textbook_ref": sum(
+                            not str(row.get("textbook_ref") or "").strip()
+                            for row in subset),
+                        "native_pdp": 0, "matched": 0, "unmatched": 117,
+                        "conflicts": 0,
+                        "note": "Raw source rows are NOT native Telegram PdP identifiers",
+                    }
+                report = {
+                    "version": "v60",
+                    "source_lessons": 585,
+                    "matched": 0,
+                    "mapping_ready": False,
+                    "per_year": by_year,
+                    "missing_native_identity_columns": sorted(native_keys - cols),
+                    "source_table_columns": sorted(cols),
+                    "mapping_requirement": (
+                        "Audit real staging Telegram _sm2542_rows after native "
+                        "sequence derivation; do not equate DB rows with lessons"),
+                    "academic_signoff": False,
+                    "runtime_e2e_passed": False,
+                }
+            else:
+                runtime = SimpleNamespace(
+                    CIKGULAJU_DB_V2600_ACTIVE=True,
+                    _sm2542_rows=lambda year, subject: [
+                        row for row in filtered
+                        if row.get("year_label") == year
+                    ])
+                with patch.dict("os.environ", {
+                    "CIKGULAJU_ENV": "staging",
+                    "CIKGULAJU_MATEMATIK_V60_STAGING_ENABLED": "1",
+                }):
+                    report = audit_native_mapping(runtime)
             report["audit_origin"] = (
                 "SHA-verified v26.00 repo snapshot; filtered verified_pdp_sequence; "
                 "NOT live Render DB, NOT user-ready")
@@ -64,7 +107,8 @@ def audit_snapshot():
             ]
             if not report["mapping_ready"]:
                 report["release_reasons"].insert(
-                    0, "Static native PdP and v60 mapping does not reconcile 585/585")
+                    0, "Native Telegram derived PdP identity unavailable or "
+                       "not uniquely reconciled to 585 v60 lessons")
             return report
 
 
