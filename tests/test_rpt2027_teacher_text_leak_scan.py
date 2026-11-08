@@ -182,6 +182,10 @@ class TeacherTextLeakAuditTests(unittest.TestCase):
         self.assertEqual(row, old)
         self.assertEqual(public_note({"note": "BA1 18–20 berdasarkan BT (BA asal belum disemak)"}), "")
         self.assertEqual(public_note({"note": "Sumber berbeza; jangan dakwa kedua-duanya setara"}), "")
+        note = public_note({"note": "BA sahaja dalam RPT sumber (tiada BT khusus); BA m/s 4-5"})
+        self.assertIn("BA sahaja", note)
+        self.assertIn("BA m/s 4-5", note)
+        self.assertFalse(find_internal_notes(note))
 
     def test_optional_pi_tasmi_has_no_fabricated_official_sk_sp(self):
         from rpt_2027.common.teacher_display_projection import public_standard
