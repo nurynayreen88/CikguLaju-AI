@@ -73,6 +73,31 @@ class ArabicSPPageEvidenceQA(unittest.TestCase):
             self.assertEqual(entry["review_status"],
                              "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF")
 
+    def test_year2_19_visual_candidates_are_source_locked_and_academically_held(self):
+        path=ROOT/"audits/bahasa_arab_rpt2027_t2_19_sp_visual_statement_candidates_20261108.json"
+        candidate=json.loads(path.read_text(encoding="utf-8"))
+        self.assertEqual(candidate["status"],
+                         "VISUAL_TRANSCRIPTION_CANDIDATE_ONLY_NOT_ACADEMIC_FINAL")
+        self.assertEqual(candidate["source_pdf_sha256"],self.data["year2"]["pdf_sha256"])
+        self.assertEqual(candidate["source_url"],self.data["year2"]["source_url"])
+        self.assertEqual(candidate["source_pages_inspected"],list(range(31,39)))
+        evidence={e["sp_code"]:e["pdf_page"] for e in self.data["year2"]["entries"]}
+        parts={e["sp_code"]:e for e in candidate["entries"]}
+        self.assertEqual(set(parts),set(evidence))
+        self.assertEqual(len(parts),19)
+        self.assertEqual(sum(bool(x["candidate_for_staging_display"])
+                             for x in parts.values()),18)
+        self.assertTrue(all(x["pdf_page"]==evidence[code]
+                            and x["inspected_rendered_page"]
+                            and not x["academic_panel_signed_off"]
+                            for code,x in parts.items()))
+        self.assertFalse(parts["3.4.1"]["candidate_for_staging_display"])
+        self.assertEqual(parts["3.4.1"]["visual_transcription_candidate"],
+                         parts["3.3.1"]["visual_transcription_candidate"])
+        self.assertIn("duplicate",parts["3.4.1"]["hold_reason"])
+        self.assertEqual(candidate["summary"]["academic_panel_signoffs"],0)
+        self.assertIs(candidate["summary"]["rpt_release_ready"],False)
+
     def test_pdf_location_evidence_cannot_automatically_unlock_rpt(self):
         for year in range(2, 7):
             records = arabic_records(year)
@@ -81,8 +106,15 @@ class ArabicSPPageEvidenceQA(unittest.TestCase):
             for row in records:
                 self.assertIn("Pernyataan penuh SK belum dipadankan",
                               row["sk_display"])
-                self.assertIn("Pernyataan penuh SP belum dipadankan",
-                              row["sp_display"])
+                if year==2 and row["sp"]!="3.4.1":
+                    self.assertTrue(row["source_sp_visual_candidate_staging"])
+                    self.assertIn(" — القدرة على ",row["sp_display"])
+                else:
+                    self.assertFalse(row["source_sp_visual_candidate_staging"])
+                    self.assertIn("Pernyataan penuh SP belum dipadankan",
+                                  row["sp_display"])
+                self.assertIs(row["source_sp_academic_panel_signed_off"],False)
+                self.assertIs(row["source_sp_dskp_text_signoff"],False)
                 self.assertFalse(row.get("week"))
                 self.assertFalse(row.get("a_start"))
                 self.assertIn("DSKP SP PDF hlm ", row["note"])
