@@ -8,7 +8,6 @@ from __future__ import annotations
 
 import hashlib
 import json
-import re
 import unittest
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -40,7 +39,8 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
 
     def run_case(self,bad_hash=False):
         context=self.browser.new_context(
-            viewport={"width":390,"height":844},is_mobile=True,has_touch=True
+            viewport={"width":390,"height":844},is_mobile=True,has_touch=True,
+            accept_downloads=True
         )
         page=context.new_page()
         requests=[]
@@ -120,37 +120,47 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
                 self.assertTrue(popup.is_closed())
             else:
                 page.wait_for_function(
-                    "() => document.querySelector('#rpt-status').textContent.includes('PDF RPT dibuka di tab baharu')",
+                    "() => document.querySelector('#rpt-status').textContent.includes('PDF siap pada tab baharu')",
                     timeout=30000
                 )
-                try:
-                    popup.wait_for_url(re.compile(r"^blob:"),timeout=8000)
-                except Exception:
-                    print("MOBILE_PDF_DIAGNOSTIC",{
-                        "popup_url":popup.url,
-                        "popup_closed":popup.is_closed(),
-                        "parent_url":page.url,
-                        "status":page.locator("#rpt-status").inner_text(),
-                        "downloads":downloads,
-                        "requests":requests[-7:],
-                    },flush=True)
-                    raise
-                self.assertTrue(popup.url.startswith("blob:"),popup.url)
-                self.assertFalse(popup.is_closed())
+                self.assertEqual(popup.url,"about:blank")
+                self.assertIn("RPT 2027 siap",popup.locator("h1").inner_text())
+                link=popup.get_by_role("link",name="Simpan PDF RPT")
+                self.assertTrue(link.is_visible())
+                output=popup.evaluate("""async () => {
+                    const link=document.querySelector("a[download]");
+                    const data=await (await fetch(link.href)).arrayBuffer();
+                    const hash=Array.from(new Uint8Array(
+                        await crypto.subtle.digest("SHA-256",data)
+                    )).map(b=>b.toString(16).padStart(2,"0")).join("");
+                    return {
+                        bytes:data.byteLength,
+                        header:String.fromCharCode(...new Uint8Array(data.slice(0,5))),
+                        filename:link.download,sha:hash
+                    };
+                }""")
+                self.assertGreater(output["bytes"],8000)
+                self.assertEqual(output["header"],"%PDF-")
+                self.assertNotEqual(output["sha"],entry["sha256"])
+                self.assertIn("PENDIDIKAN_ISLAM_TAHUN_4_2027_ISI_PROFIL.pdf",output["filename"])
+                with popup.expect_download(timeout=12000) as save:
+                    link.tap()
+                download=save.value
+                self.assertEqual(download.suggested_filename,output["filename"])
             if bad_hash:
                 self.assertNotIn(("GET","/api/web/teacher/profile"),requests)
             else:
                 self.assertIn(("GET","/api/web/teacher/profile"),requests)
             self.assertIn(("GET","/api/rpt/2027/all/pendidikan_islam/4.pdf"),requests)
-            self.assertIn(("GET","/assets/rpt-original-cover-layout.json"),requests)
             if not bad_hash:
+                self.assertIn(("GET","/assets/rpt-original-cover-layout.json"),requests)
                 self.assertIn(("GET","/api/web/teacher/school-logo"),requests)
         finally:
             if popup and not popup.is_closed():
                 popup.close()
             context.close()
 
-    def test_real_mobile_click_opens_personalized_pdf_viewer(self):
+    def test_real_mobile_click_opens_personalized_pdf_save_link(self):
         self.run_case()
 
     def test_invalid_source_sha_never_issues_a_personalized_pdf(self):
