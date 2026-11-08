@@ -259,6 +259,42 @@ class ArabicSPPageEvidenceQA(unittest.TestCase):
                             and not r["source_sp_academic_panel_signed_off"]
                             and not r.get("week") for r in rows))
 
+    def test_all_five_years_have_117_codes_290_visual_rows_eight_held_no_signoffs(self):
+        # This is a DRAFT transcription inventory, not a quality percentage
+        # and not authority to change Web/Telegram production release flags.
+        expected={
+            2:(19,18,60,58,1),
+            3:(23,20,60,54,3),
+            4:(25,25,58,58,0),
+            5:(25,25,60,60,0),
+            6:(25,25,60,60,0),
+        }
+        totals=[0,0,0,0,0]
+        for year,(codes,display_codes,pdp,visual_pdp,held_codes) in expected.items():
+            file=ROOT/("audits/bahasa_arab_rpt2027_t%d_%d_sp_visual_statement_candidates_20261108.json"
+                       %(year,codes))
+            evidence=json.loads(file.read_text(encoding="utf-8"))
+            entries=evidence["entries"]
+            rows=arabic_records(year)
+            self.assertEqual(len(entries),codes)
+            self.assertEqual(sum(e["candidate_for_staging_display"] is True
+                                 for e in entries),display_codes)
+            self.assertEqual(sum(e["candidate_for_staging_display"] is False
+                                 for e in entries),held_codes)
+            self.assertEqual(len(rows),pdp)
+            self.assertEqual(sum(r["source_sp_visual_candidate_staging"]
+                                 for r in rows),visual_pdp)
+            self.assertTrue(all(r["source_sp_dskp_text_signoff"] is False
+                                and r["source_sp_academic_panel_signed_off"] is False
+                                and not r.get("week") for r in rows))
+            self.assertEqual(evidence["summary"]["academic_panel_signoffs"],0)
+            self.assertEqual(evidence["summary"]["sk_full_statement_signoffs"],0)
+            self.assertIs(evidence["summary"]["rpt_release_ready"],False)
+            for i,v in enumerate((codes,display_codes,pdp,visual_pdp,held_codes)):
+                totals[i]+=v
+        self.assertEqual(totals,[117,113,298,290,4])
+        self.assertEqual(298-290,8)
+
     def test_pdf_location_evidence_cannot_automatically_unlock_rpt(self):
         for year in range(2, 7):
             records = arabic_records(year)
