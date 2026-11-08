@@ -48,7 +48,7 @@ jobs:
 
       - name: Audit actual Telegram Mathematics v25.99 canonical sequence mapping (read-only)
         run: |
-          python -m tools.audit_matematik_v60_v26_snapshot_20261108 --output /tmp/matematik_v60_native_coverage.json > /tmp/math_v60_audit_stdout.json
+          python -m tools.audit_matematik_v60_v2599_native_source_20261108 --output /tmp/matematik_v60_native_coverage.json > /tmp/math_v60_audit_stdout.json
           python - <<'PY'
           import json
           report=json.load(open('/tmp/matematik_v60_native_coverage.json', encoding='utf-8'))
