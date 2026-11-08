@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-11-08",
+  "status": "VISUAL_TRANSCRIPTION_CANDIDATE_ONLY_NOT_ACADEMIC_FINAL",
+  "source_document": "DSKP KSSR (Semakan 2017) Bahasa Arab Tahun 3.pdf",
+  "source_url": "https://drive.google.com/file/d/1LlqBjz05t3M-M-kMC_FpZA0QSXdcUaZW/view",
+  "source_pdf_sha256": "d09e12abade3a9bf02935fa2bdc888e0e134c7031cac8ef90a95992eb3f72826",
+  "source_pdf_pages": 48,
+  "source_pages_inspected": [
+    29,
+    30,
+    31,
+    34,
+    35,
+    36,
+    39
+  ],
+  "method": "Direct visual reading of the original DSKP PDF page images, with its existing text layer used only as an aid. Code, page and year are matched to the prior original-PDF 23-code ledger. No OCR, no text from another year.",
+  "scope": "23 unique SP codes in the Year3 RPT index (60 lessons). Statements are visual transcription candidates, not an academic panel signoff.",
+  "summary": {
+    "unique_sp": 23,
+    "visual_candidates": 23,
+    "candidate_for_staging_display": 20,
+    "held_source_conflict": 3,
+    "held_rpt_pdp_count": 6,
+    "academic_panel_signoffs": 0,
+    "sk_full_statement_signoffs": 0,
+    "rpt_release_ready": false
+  },
+  "source_ambiguity": "PDF page 35 prints three Year3 SP statements (2.3.1-2.3.3) about the syllable 'المقطع', duplicating SP 2.2.1-2.2.3 even though SK [2.3] specifies 'قراءة الكلمات' (word reading). A fourth SP 2.3.4 in the original PDF has the same issue but is not in the current 60-PdP RPT index. Do not rewrite original standards.",
+  "restrictions": [
+    "Keep all source standards on their exact original PDF pages, with locked PDF SHA-256.",
+    "Do not overwrite original DSKP or ledger of 117 SP codes.",
+    "Do not transfer another year's statements or infer missing SK text.",
+    "Held SP 2.3.1/2.3.2/2.3.3 must remain placeholders in staging previews.",
+    "None of 23 SP is academically signed off, no FINAL READY, no Web/Telegram production updates."
+  ],
+  "entries": [
+    {
+      "sp_code": "1.1.1",
+      "pdf_page": 29,
+      "visual_transcription_candidate": "القدرة على محاكاة أصوات الحروف المسموعة وترديدها ونطقها.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "1.1.2",
+      "pdf_page": 29,
+      "visual_transcription_candidate": "القدرة على تحديد أصوات الحروف المسموعة.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "1.2.1",
+      "pdf_page": 29,
+      "visual_transcription_candidate": "القدرة على محاكاة المقطع المسموع وترديده ونطقه نطقا صحيحا.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "1.2.2",
+      "pdf_page": 29,
+      "visual_transcription_candidate": "القدرة على تحديد المقطع المسموع.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "1.3.1",
+      "pdf_page": 30,
+      "visual_transcription_candidate": "القدرة على محاكاة الكلمات وترديدها ونطقها.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "1.3.2",
+      "pdf_page": 30,
+      "visual_transcription_candidate": "القدرة على تحديد الكلمات المسموعة.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "1.4.1",
+      "pdf_page": 31,
+      "visual_transcription_candidate": "القدرة على الاستماع إلى التراكيب، ومحاكاتها وترديدها ونطقها نطقا صحيحا من حيث النبر والتنغيم.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "1.4.2",
+      "pdf_page": 31,
+      "visual_transcription_candidate": "القدرة على حفظ التراكيب المسموعة وتسميعها.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "1.4.3",
+      "pdf_page": 31,
+      "visual_transcription_candidate": "القدرة على تحديد التراكيب المسموعة.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "2.1.1",
+      "pdf_page": 34,
+      "visual_transcription_candidate": "القدرة على محاكاة قراءة الحروف المركزة المسموعة وترديدها.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "2.1.2",
+      "pdf_page": 34,
+      "visual_transcription_candidate": "القدرة على تحديد الحروف المركزة المقروءة.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "2.1.3",
+      "pdf_page": 34,
+      "visual_transcription_candidate": "القدرة على تمييز الحروف المركزة المقروءة.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "2.2.1",
+      "pdf_page": 34,
+      "visual_transcription_candidate": "القدرة على محاكاة قراءة المقطع المسموع.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "2.2.2",
+      "pdf_page": 34,
+      "visual_transcription_candidate": "القدرة على تحديد المقطع المقروء.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "2.2.3",
+      "pdf_page": 34,
+      "visual_transcription_candidate": "القدرة على تمييز المقطع المقروء.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "2.3.1",
+      "pdf_page": 35,
+      "visual_transcription_candidate": "القدرة على محاكاة قراءة المقطع المسموع.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": false,
+      "hold_reason": "In DSKP PDF page 35, SK [2.3] reads 'قراءة الكلمات' (reading words), but SP 2.3.1 says reading a heard 'المقطع' (syllable), duplicating SP 2.2.1 on page 34. Do not silently replace the source text."
+    },
+    {
+      "sp_code": "2.3.2",
+      "pdf_page": 35,
+      "visual_transcription_candidate": "القدرة على تحديد المقطع المقروء.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": false,
+      "hold_reason": "In DSKP PDF page 35, SK [2.3] is word reading, but SP 2.3.2 says recognizing the 'المقطع المقروء' (read syllable), duplicating SP 2.2.2 on page 34. Do not invent corrected words."
+    },
+    {
+      "sp_code": "2.3.3",
+      "pdf_page": 35,
+      "visual_transcription_candidate": "القدرة على تمييز المقطع المقروء.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": false,
+      "hold_reason": "In DSKP PDF page 35, SK [2.3] is word reading, but SP 2.3.3 says distinguishing the 'المقطع المقروء' (read syllable), duplicating SP 2.2.3 on page 34. Require subject expert review."
+    },
+    {
+      "sp_code": "2.3.5",
+      "pdf_page": 35,
+      "visual_transcription_candidate": "القدرة على محاكاة قراءة الكلمات وترديدها وقراءتها.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "2.4.1",
+      "pdf_page": 36,
+      "visual_transcription_candidate": "القدرة على محاكاة قراءة التراكيب وترديدها وقراءتها قراءة صحيحة من حيث النبر والتنغيم.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "3.1.1",
+      "pdf_page": 39,
+      "visual_transcription_candidate": "القدرة على كتابة الحروف الهجائية متصلة ومنفصلة.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "3.2.1",
+      "pdf_page": 39,
+      "visual_transcription_candidate": "القدرة على كتابة المقاطع في الكلمات.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "3.3.1",
+      "pdf_page": 39,
+      "visual_transcription_candidate": "القدرة على كتابة الكلمات.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    }
+  ]
+}
