@@ -43,6 +43,33 @@ class MathsY6NinePrimaryCandidates(unittest.TestCase):
                 self.assertIn("BELUM DILULUSKAN",self.source)
         self.assertFalse(self.inventory["academic_signoff"])
 
+    def test_pdf_evidence_covers_all_36_pages_and_holds_release(self):
+        evidence=json.loads((ROOT / "audits/matematik_y6_nine_dskp2021_page_evidence_20261108.json").read_text(encoding="utf-8"))
+        self.assertEqual(evidence["source_page_checks_passed"],9)
+        self.assertFalse(evidence["academic_signoff"])
+        self.assertFalse(evidence["telegram_native_mapping_approved"])
+        self.assertFalse(evidence["production_modified"])
+        self.assertEqual(evidence["release_decision"],"ACADEMIC_HOLD")
+        docs=evidence["documents"]
+        self.assertEqual(docs["dskp_y6"]["sha256"],
+            "e48576169c12cc9666675770432a425e573686a331fba6bcd7f01e33787476a9")
+        self.assertEqual(docs["textbook_part2"]["sha256"],
+            "73a38e146f40adaf08432a60df211c4f0a610e5d50e746bd6326706cc9bb5804")
+        self.assertEqual(docs["textbook_part3"]["sha256"],
+            "35006f052cea2a327415c816e08a061c963b1bf56f3fc5346ca2a491fff52571")
+        self.assertEqual({x["code"] for x in evidence["nine_pdp"]},set(EXPECTED))
+        self.assertEqual(sum(len(x["textbook_pages_with_exact_sp_label"])
+                             for x in evidence["nine_pdp"]),36)
+        for row in evidence["nine_pdp"]:
+            with self.subTest(code=row["code"]):
+                code=row["code"]
+                sp,pages,_ = EXPECTED[code]
+                self.assertEqual(row["proposed_sp"],sp)
+                self.assertEqual(str(row["textbook_printed_first"])+"–"+
+                                 str(row["textbook_printed_last"]),pages)
+                self.assertTrue(row["sp_label_present_on_all_specified_textbook_pages"])
+                self.assertFalse(row["approved"])
+
     def test_each_is_a_real_single_session_with_measurable_pbd(self):
         sections=re.split(r"(?m)^## Calon DSKP6-\d\d — ", self.source)[1:]
         self.assertEqual(len(sections),9)
