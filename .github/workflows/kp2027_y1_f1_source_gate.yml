@@ -37,3 +37,5 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_kp2027_year1_bm_sk_26_source_20261107.py' -v
       - name: Verify Matematik Tahun 1 DK search remains evidence-gated
         run: python -m unittest discover -s tests -p 'test_kp2027_year1_math_dk_search_20261108.py' -v
+      - name: Verify 2027 Year 1 textbook leads stay unverified and non-public
+        run: python -m unittest discover -s tests -p 'test_kp2027_year1_textbook_leads_20261108.py' -v
