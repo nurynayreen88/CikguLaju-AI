@@ -16,6 +16,7 @@ SOURCES = [
     "rph_standalone/matematik/staging_draf_y6_pdp007_012_dskp_bukuteks_20261108.md",
     "rph_standalone/matematik/staging_draf_y6_pdp079_081_nisbah_kadaran_20261108.md",
     "rph_standalone/matematik/staging_draf_y6_rpt2027_wang_3_sumber_primer_20261108.md",
+    "rph_standalone/matematik/staging_draf_y6_9_pdp_dskp2021_sumber_primer_20261108.md",
 ]
 # The page and SP fields are SOURCE-REVIEW CANDIDATES, not accepted remaps.
 CANDIDATES = {
@@ -32,9 +33,18 @@ CANDIDATES = {
     "FIN-T6-01": ("TIADA", "3.1.1", "103–106"),
     "FIN-T6-02": ("TIADA", "3.2.1", "121–122"),
     "FIN-T6-03": ("TIADA", "3.3.1", "123–130"),
+    "DSKP6-01": ("TIADA", "2.1.1", "61–67"),
+    "DSKP6-02": ("TIADA", "4.1.1", "141–143"),
+    "DSKP6-03": ("TIADA", "4.1.2", "144–147"),
+    "DSKP6-04": ("TIADA", "6.1.2", "165–167"),
+    "DSKP6-05": ("TIADA", "6.2.1", "178–179"),
+    "DSKP6-06": ("TIADA", "7.1.1", "187–190"),
+    "DSKP6-07": ("TIADA", "8.1.1", "207–212"),
+    "DSKP6-08": ("TIADA", "8.2.1", "213–215"),
+    "DSKP6-09": ("TIADA", "8.2.2", "216–219"),
 }
 HEADING = re.compile(
-    r"(?m)^## (?:PdP|Calon) (?P<code>(?:MT6-PDP-\d{3}|FIN-T6-\d{2}))\s+—\s+(?P<title>.+)$"
+    r"(?m)^## (?:PdP|Calon) (?P<code>(?:MT6-PDP-\d{3}|FIN-T6-\d{2}|DSKP6-\d{2}))\s+—\s+(?P<title>.+)$"
 )
 
 @dataclass(frozen=True)
@@ -85,9 +95,9 @@ def load_drafts(root=ROOT):
             out.append(_draft(h.group("code"), h.group("title"),
                               text[h.end():end], source))
     ids = [d.code for d in out]
-    if len(ids)!=13 or len(set(ids))!=13 or set(ids)!=set(CANDIDATES):
-        raise ValueError("Expected exactly 13 source-grounded draft IDs: "+repr(ids))
-    return sorted(out, key=lambda d:(d.code.startswith("FIN"), d.code))
+    if len(ids)!=22 or len(set(ids))!=22 or set(ids)!=set(CANDIDATES):
+        raise ValueError("Expected exactly 22 source-grounded draft IDs: "+repr(ids))
+    return sorted(out, key=lambda d:(d.code.startswith("FIN"),d.code.startswith("DSKP"),d.code))
 
 def _inline_md(paragraph, text):
     from docx.shared import RGBColor
@@ -144,7 +154,7 @@ def build_word(draft, output):
     p.paragraph_format.space_after=Pt(3)
     r=p.add_run("SP asal Telegram: "+original+
         ("  |  Cadangan sahaja, bukan perubahan DB." if original!="TIADA"
-         else "  |  Calon RPT 2027 tanpa ID PdP Telegram rasmi."))
+         else "  |  Calon semakan DSKP/RPT tanpa ID PdP Telegram rasmi."))
     r.italic=True; r.font.size=Pt(8.1)
 
     # Preserve all complete original teaching paragraphs, no summarization.
@@ -184,11 +194,11 @@ def main():
             sp_telegram=original,sp_candidate=candidate,printed_pages=pages,
             academic_signoff=False,teacher_ready=False))
     (out/"manifest.json").write_text(json.dumps({
-        "schema":"cikgulaju.math.13_rph_a4_qa.v1",
-        "count":13,"status":"ACADEMIC_HOLD",
+        "schema":"cikgulaju.math.22_rph_a4_qa.v1",
+        "count":22,"status":"ACADEMIC_HOLD",
         "production_modified":False,"items":manifest,
     },ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print("CREATED 13 DOCX REVIEW PROOFS, NOT USER READY")
+    print("CREATED 22 DOCX REVIEW PROOFS, NOT USER READY")
 
 if __name__=="__main__":
     main()
