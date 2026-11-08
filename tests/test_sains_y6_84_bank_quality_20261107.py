@@ -105,5 +105,38 @@ class TestYear6FullDraft(unittest.TestCase):
         self.assertIn("belum disahkan",text)
         self.assertIn("DRAF/HOLD",text)
 
+    def test_three_kpm_year6_experiments_have_sourced_data_and_controlled_variables(self):
+        pressure=BANK["6.3.2"]
+        self.assertIn("simulasi",pressure["teacher1"])
+        self.assertIn("bukan bacaan sebenar",pressure["teacher1"])
+        self.assertIn("puncak gunung",pressure["teacher2"])
+        self.assertIn("kaki gunung",pressure["teacher2"])
+        self.assertIn("had data simulasi",pressure["pupil2"])
+        self.assertNotIn("jadual tekanan udara rekaan",pressure["teacher1"].casefold())
+
+        speed=BANK["7.1.2"]
+        self.assertIn("tanpa tolakan",speed["teacher1"])
+        self.assertIn("tiga ulangan",speed["pupil1"])
+        self.assertIn("dua jarak sasaran",speed["pupil1"])
+        self.assertIn("jarak bahagi masa",speed["teacher2"])
+        self.assertIn("pemboleh ubah dimalarkan",speed["teacher2"])
+        self.assertIn("unit",speed["pbd"])
+        self.assertNotIn("menggunakan stopwatch",speed["teacher1"])
+
+        stability=BANK["12.1.3"]
+        self.assertIn("luas tapak",stability["teacher1"])
+        self.assertIn("jisim",stability["teacher1"])
+        self.assertIn("sudut",stability["pupil1"])
+        self.assertIn("tiga ulangan",stability["pupil1"])
+        self.assertIn("tergelincir",stability["pupil1"])
+        self.assertIn("ketinggian",stability["teacher2"])
+        self.assertIn("anti-gelincir",stability["materials"])
+        self.assertNotIn("bilangan gangguan ringan",stability["pupil1"])
+
+        records=get_y6_records()
+        self.assertEqual(len(records),84)
+        self.assertEqual({r["sp"] for r in records},set(BANK))
+        self.assertTrue(all(r["status"]=="DRAF_HOLD" and r["textbook_pages"] is None for r in records))
+
 if __name__=="__main__":
     unittest.main()
