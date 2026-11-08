@@ -7,12 +7,15 @@ on:
       - "web/matematik_v60_native_coverage.py"
       - "web/matematik_v60_crosswalk_candidates.py"
       - "tools/audit_matematik_v60_v2599_native_source_20261108.py"
+      - "tools/audit_matematik_v60_dskp_primary_20261108.py"
+      - "audits/matematik_v60_dskp_primary_sp_inventory_20261108.json"
       - "web/telegram_verified_sequence_rph_bridge.py"
       - "tools/run_telegram_with_curriculum_api.py"
       - "tests/test_matematik_v60_native_rows_20261108.py"
       - "tests/test_matematik_v60_native_coverage_20261108.py"
       - "tests/test_matematik_v60_crosswalk_20261108.py"
       - "tests/test_matematik_v60_canonical_source_contract_20261108.py"
+      - "tests/test_matematik_v60_dskp_primary_20261108.py"
       - "tests/test_matematik_v60_private_sequence_20261108.py"
       - "tests/test_matematik_v60_web_telegram_state_20261108.py"
       - "rph_standalone/matematik/v60_source_loader.py"
@@ -54,6 +57,7 @@ jobs:
           python -m unittest discover -s tests -p "test_matematik_v60_native_coverage_20261108.py" -v
           python -m unittest discover -s tests -p "test_matematik_v60_crosswalk_20261108.py" -v
           python -m unittest discover -s tests -p "test_matematik_v60_canonical_source_contract_20261108.py" -v
+          python -m unittest discover -s tests -p "test_matematik_v60_dskp_primary_20261108.py" -v
           python -m unittest discover -s tests -p "test_matematik_v60_private_sequence_20261108.py" -v
           python -m unittest discover -s tests -p "test_matematik_v60_web_telegram_state_20261108.py" -v
 
@@ -80,12 +84,27 @@ jobs:
           print("CODE/AUDIT CHECKS PASS. RELEASE STATUS: HOLD, NOT READY.")
           PY
 
+      - name: Audit source DSKP Tahun 2-6 vs native Maths and v60 (code presence only)
+        run: |
+          python -m tools.audit_matematik_v60_dskp_primary_20261108 --output /tmp/matematik_v60_dskp_primary_audit.json
+          python - <<'PY'
+          import json
+          r=json.load(open('/tmp/matematik_v60_dskp_primary_audit.json',encoding='utf-8'))
+          assert r['affected_native_pdp_total']==98
+          assert r['distinct_absent_code_year_pairs']==65
+          assert all(not v['v60_absent_codes'] for v in r['years'].values())
+          assert r['academic_signoff'] is False and r['production_modified'] is False
+          print("DSKP CODE AUDIT PASS, 98 PDP REQUIRE ACADEMIC REVIEW; RELEASE HOLD")
+          PY
+
       - name: Preserve signed-source crosswalk audit for review (staging only)
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: math-v60-v2599-crosswalk-staging
-          path: /tmp/matematik_v60_native_coverage.json
+          path: |
+            /tmp/matematik_v60_native_coverage.json
+            /tmp/matematik_v60_dskp_primary_audit.json
           if-no-files-found: warn
           retention-days: 14
       - name: Explicit FINAL READY gate (manual only, fail closed)
