@@ -680,3 +680,19 @@ except Exception as _rph_activity_heading_exc:
     print("RPH typography unavailable:",
           type(_rph_activity_heading_exc).__name__, flush=True)
 
+
+
+# Admin-controlled, one-shot internal validation of actual Sains native Word/PDF.
+# Disabled by default. Uses synthetic metadata and the exact registered
+# private Telegram -> Web sequence API; no user login, credits or DB mutation.
+# Runs only when CIKGULAJU_SAINS_NATIVE_REAL_DOCS_SMOKE=1 and leaves all 342
+# new authoring drafts on HOLD. Reports each year without leaking content.
+try:
+    from tools.sains_native_internal_real_documents_smoke_20261108 import (
+        log_when_enabled as _sains_native_real_docs_smoke,
+    )
+    SAINS_NATIVE_REAL_DOCS_SMOKE_RESULT = _sains_native_real_docs_smoke(telegram_runtime)
+except Exception as _sains_real_docs_smoke_error:
+    SAINS_NATIVE_REAL_DOCS_SMOKE_RESULT = None
+    print("CIKGULAJU_SAINS_NATIVE_REAL_DOCS_SMOKE_UNAVAILABLE",
+          type(_sains_real_docs_smoke_error).__name__,flush=True)
