@@ -1,0 +1,38 @@
+name: Web Sains native Telegram HTTPS Word-PDF probe QA
+
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - "tools/run_web_production.py"
+      - "tools/web_sains_native_telegram_e2e_smoke_20261108.py"
+      - "tests/test_web_sains_native_network_smoke_20261108.py"
+      - ".github/workflows/web_sains_native_real_network_smoke_20261108.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  web-real-network-probe-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Offline test of authenticated Web-to-Telegram source and document validation
+        run: python -m unittest discover -s tests -p "test_web_sains_native_network_smoke_20261108.py" -v
+      - name: Verify production-default flag OFF
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import os
+          from tools.web_sains_native_telegram_e2e_smoke_20261108 import FLAG,log_when_enabled
+          assert FLAG not in os.environ
+          assert log_when_enabled() is None
+          source=Path("tools/run_web_production.py").read_text(encoding="utf-8")
+          assert "from tools.web_sains_native_telegram_e2e_smoke_20261108 import" in source
+          print("WEB SCIENCE HTTPS TEST DEFAULT OFF; NO USER CREDIT OR API TOKEN LOG")
+          PY

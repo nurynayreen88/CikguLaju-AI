@@ -249,3 +249,18 @@ def telegram_login_bot_identity():
     response = jsonify(result)
     response.headers["Cache-Control"] = "no-store"
     return response, 200 if result["username_matches_token"] else 409
+
+
+# Explicitly opt-in one-shot Science Web→Telegram real network diagnostic.
+# No browser route or user account; disabled by default. Does not change
+# quota, entitlement, subscription, or expose RPH source/secret to the UI.
+# DRAF/HOLD authoring bank remains isolated from the verified DB runtime.
+try:
+    from tools.web_sains_native_telegram_e2e_smoke_20261108 import (
+        log_when_enabled as _sains_web_download_network_test,
+    )
+    WEB_SAINS_NATIVE_SMOKE_RESULT = _sains_web_download_network_test()
+except Exception as _sains_web_network_smoke_exc:
+    WEB_SAINS_NATIVE_SMOKE_RESULT = None
+    print("CIKGULAJU_SAINS_WEB_REAL_DOWNLOAD_SMOKE_UNAVAILABLE",
+          type(_sains_web_network_smoke_exc).__name__,flush=True)
