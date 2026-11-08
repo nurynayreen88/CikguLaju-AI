@@ -88,7 +88,7 @@ def audit_snapshot(root: Path = ROOT) -> dict:
                 """, (f"Tahun {year}", "Matematik")).fetchall()
                 rows_by_year[year] = [dict(row) for row in selected]
             runtime = SimpleNamespace(
-                CIKGULAJU_DB_V2600_ACTIVE=True,
+                CIKGULAJU_MATH_V2599_SOURCE_VERIFIED=True,
                 _sm2542_rows=lambda year, subject:
                     rows_by_year[int(year.split()[-1])] if subject == "Matematik" else [],
             )
