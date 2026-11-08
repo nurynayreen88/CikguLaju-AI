@@ -108,7 +108,16 @@ class SharedWebTrialTests(unittest.TestCase):
 
     def test_no_balance_cannot_render_or_download(self):
         self.credits=0
-        for path in ("availability","word","pdf"):
+        # Source availability is read-only: the teacher may see that the
+        # underlying RPH exists, but may not download it without access.
+        # This deliberately differs from the Word/PDF billing boundary.
+        availability=self.client.get("/api/web/rph/availability",
+                                     query_string=teacher_fields())
+        self.assertEqual(availability.status_code,200)
+        self.assertEqual(availability.get_json()["available"],True)
+        self.assertEqual(availability.get_json()["download_allowed"],False)
+        self.assertEqual(availability.get_json()["access_status"],"exhausted")
+        for path in ("word","pdf"):
             r=self.client.get("/api/web/rph/"+path,query_string=teacher_fields())
             self.assertEqual(r.status_code,403)
             self.assertEqual(r.get_json()["code"],"FREE_TRIAL_EXHAUSTED")
