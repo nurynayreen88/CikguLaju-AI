@@ -32,6 +32,24 @@ class CrosswalkCandidateGateTests(unittest.TestCase):
                                        row("R", 10, "1.7", "1.7.2")])
         self.assertEqual(composite["candidates"][0]["status"], "BLOCKED_MULTI_SP")
 
+    def test_subitem_and_composite_codes_are_not_reported_as_missing_atomic_SP(self):
+        subparts = make_candidates(2, [
+            row("A", 1, "1.1", "1.1.1(i);1.1.1(ii)")
+        ])
+        item = subparts["candidates"][0]
+        self.assertEqual(item["status"], "PARENT_SP_SUBPART_REVIEW")
+        self.assertEqual(item["native_parent_sp_codes"], ["1.1.1"])
+        self.assertEqual(item["candidate_v60_lessons"][0]["lesson"], 1)
+        self.assertFalse(item["approved"])
+
+        composite = make_candidates(2, [
+            row("B", 9, "1.3", "1.3.1;1.3.2")
+        ])
+        candidate = composite["candidates"][0]
+        self.assertEqual(candidate["status"], "COMPOSITE_MULTI_SP_REQUIRES_OWN_RPH")
+        self.assertEqual(candidate["candidate_v60_lessons"], [])
+        self.assertFalse(candidate["approved"])
+
     def test_duplicate_number_across_pdp_keys_blocks_both(self):
         r = make_candidates(2, [row("A", 1, "1.1", "1.1.1"),
                                 row("B", "1", "1.1", "1.1.1")])
