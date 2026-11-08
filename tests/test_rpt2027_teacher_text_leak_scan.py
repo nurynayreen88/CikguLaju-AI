@@ -108,6 +108,33 @@ class TeacherTextLeakAuditTests(unittest.TestCase):
                 self.assertEqual(public_note({"note": note}), "")
                 self.assertIn("HOLD", note)  # Original evidence is untouched.
 
+    def test_pjpk_provenance_removed_but_book_and_assessment_remain(self):
+        from rpt_2027.common.teacher_display_projection import public_note
+        note = ("Sumber: PJ456_2027_RPT. Buku teks m/s 2–3. "
+                "Rujukan: Rujuk DSKP | Masa: 30 minit. "
+                "Aktiviti (sumber): Murid melakukan imbangan. "
+                "PBD (draf): Guru menilai imbangan.")
+        rendered = public_note({"note": note})
+        self.assertNotIn("PJ456_2027_RPT", rendered)
+        self.assertNotIn("Rujuk DSKP", rendered)
+        self.assertIn("Buku teks m/s 2–3", rendered)
+        self.assertIn("Masa: 30 minit", rendered)
+        self.assertIn("Aktiviti: Murid melakukan imbangan", rendered)
+        self.assertIn("PBD: Guru menilai imbangan", rendered)
+        self.assertEqual(len(find_internal_notes(rendered)), 0)
+        self.assertTrue(find_internal_notes(note))
+
+    def test_official_menulis_draf_standard_remains_complete(self):
+        from rpt_2027.common.teacher_display_projection import (
+            public_note, public_standard
+        )
+        original = "3.3.1 — Menulis draf dan menghasilkan penulisan imaginatif."
+        row = {"sk": "3.3", "sp": "3.3.1",
+               "sp_display": original, "note": "Murid menulis draf karangan pendek."}
+        self.assertEqual(public_standard(row, "sp"), original)
+        self.assertIn("menulis draf", public_note(row))
+        self.assertEqual(find_internal_notes(original), [])
+
     def test_scan_teacher_output_separately_from_source_data(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
