@@ -24,6 +24,9 @@ RULES = {
     "INTERNAL_SOURCE_ID": r"\b(?:Sumber|Source)\s*:\s*[A-Za-z0-9_]{4,}",
     "UNHELPFUL_REFERENCE_DIRECTIVE": r"\bRujukan\s*:\s*Rujuk\s+DSKP\b",
     "HELD_REVIEW_ONLY": r"\bHOLD\s*:",
+    "SOURCE_SOW_PROVENANCE": r"Main/Complementary\s+codes\s+from\s+source\s+SOW,\s+not\s+a\s+new\s+DSKP\s+choice",
+    "NO_INVENTED_TEXTBOOK_PAGE": r"tidak\s+mereka\s+halaman\s+buku\s+teks",
+    "INTERNAL_SAINS_ID": r"\bSCI-Y[2-6]-PDP-\d{3}\b",
 }
 _COMPILED = tuple((key, re.compile(value, flags=re.IGNORECASE)) for key, value in RULES.items())
 SUFFIXES = frozenset((".pdf", ".html", ".htm", ".csv", ".txt"))
