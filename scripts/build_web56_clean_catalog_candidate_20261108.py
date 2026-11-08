@@ -39,7 +39,12 @@ def cover_preserved(original,replacement):
             pattern=(r"\b(?:SCI-Y[2-6]-PDP-\d{3}|"
                      r"(?:PJ|PK)\s+PdP\s+\d{3}|"
                      r"(?:PdP|Lesson)\s+\d{3})\b")
-            return set(re.findall(pattern,source,flags=re.IGNORECASE))
+            found=re.findall(pattern,source,flags=re.IGNORECASE)
+            # Teachers see "PdP 001", while SCI-Y4-PDP-001 continues to
+            # exist only in the source crosswalk. Preserve the numeric
+            # identity rather than requiring the old developer prefix.
+            return {re.sub(r"(?i)^SCI-Y[2-6]-PDP-(\d{3})$",r"PdP \1",v)
+                    for v in found}
         old_ids,new_ids=pdp_ids(a),pdp_ids(b)
         if not old_ids or old_ids!=new_ids:
             raise ValueError(f"Lesson/PdP identity mismatch: {original} "
