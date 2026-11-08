@@ -34,6 +34,7 @@ from pi_surah_pbd_alignment_audit import audit as surah_pbd_audit
 from pi_primary_source_fiqh_copyedit_audit import audit as fiqh_source_audit
 from pi_t3_solat_case_sequence_audit import audit as solat_sequence_audit
 from pi_tasmi_continuity_quality_guard import audit as tasmi_continuity_audit
+from pi_rpt_source_errata_editor_register import audit as rpt_errata_audit
 
 
 def readiness(root=ROOT):
@@ -63,6 +64,12 @@ def readiness(root=ROOT):
     fiqh_source = fiqh_source_audit(root)
     solat_sequence = solat_sequence_audit(root)
     tasmi_continuity = tasmi_continuity_audit(root)
+    rpt_errata = rpt_errata_audit(root)
+    assert rpt_errata["rpt_source_conflict_lessons"] == 9
+    assert rpt_errata["field_level_editor_comparisons"] == 13
+    assert rpt_errata["approved_for_automatic_rpt_update"] == 0
+    assert rpt_errata["teacher_ready"] == 0
+    assert rpt_errata["release"] == "NO_GO"
     assert quran_114["unheld_drafts_examined"] == 690
     assert quran_114["invalid_chapter_verse_ranges"] == 0
     assert quran_114["crossfield_surah_verse_mismatches"] == 0
@@ -302,6 +309,8 @@ def readiness(root=ROOT):
         "quran_sp_objective_pbd_range_mismatches_in_staging": quran_114["crossfield_surah_verse_mismatches"],
         "surah_crossfield_editor_corrections": surah_pbd["lessons_with_precise_corrections"],
         "surah_source_rpt_errors_pending": surah_pbd["curriculum_RPT2027_copy_errors_flagged"],
+        "source_rpt_editor_errata_lesson_count": rpt_errata["rpt_source_conflict_lessons"],
+        "source_rpt_editor_field_comparisons": rpt_errata["field_level_editor_comparisons"],
         "year4_rpt_puasa_six_rukun_error_pending": fiqh_source["original_rpt_year4_pdp107_six_rukun_incorrect"],
         "year3_rpt_solat_l059_copy_error_pending": solat_sequence["rpt_2027_l059_original_objective_incorrect"],
         "tasmi_source_high_volume_lessons_review_pending": tasmi_continuity["high_volume_60plus_ayah_source_lessons_for_teacher_review"],
