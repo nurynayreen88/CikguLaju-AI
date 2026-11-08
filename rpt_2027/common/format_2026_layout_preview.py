@@ -10,6 +10,7 @@ from datetime import date
 from html import escape
 from pathlib import Path
 import re
+from rpt_2027.common.teacher_display_projection import public_note, public_standard, public_topic
 
 
 SUBJECTS = {
@@ -239,7 +240,7 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
             start = date.fromisoformat(first).strftime("%d/%m/%Y")
             end = date.fromisoformat(last).strftime("%d/%m/%Y")
             return start if first == last else start + " - " + end
-        return "Belum ditentukan"
+        return "—"
 
     doc = SimpleDocTemplate(
         str(out), pagesize=(w, h),
@@ -256,9 +257,9 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
         canvas.setFillColor(ink)
         canvas.drawString(lm, h-24, f"RPT {SUBJECTS[subject]} - TAHUN {year} / 2027")
         canvas.setFont(font, 7)
-        canvas.drawRightString(w-rm, h-24, "KUMPULAN A + B  |  DRAF SEMAKAN")
+        canvas.drawRightString(w-rm, h-24, "KUMPULAN A / B")
         canvas.line(lm, 31, w-rm, 31)
-        canvas.drawString(lm, 20, "Sumber: PdP / DSKP asal. Tarikh dan catatan tertakluk pengesahan sekolah.")
+        canvas.drawString(lm, 20, "RANCANGAN PENGAJARAN TAHUNAN 2027")
         canvas.drawRightString(w-rm, 20, f"Halaman {doc.page}")
         canvas.restoreState()
 
@@ -335,7 +336,7 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
     week_ranges = week_merge_ranges(records, max_rows_per_group=max_span_rows)
     grouped_followers = {index for first, last in week_ranges for index in range(first + 1, last + 1)}
     for index, row in enumerate(records, 1):
-        week = row.get("week","").strip() or "Belum ditetapkan"
+        week = row.get("week","").strip() or "—"
         weektext = (f"{week}\nKumpulan A:\n{range_text(row,'a')}"
                     f"\nKumpulan B:\n{range_text(row,'b')}")
         unit_lines=[
@@ -352,7 +353,7 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
         else:
             unit_lines.append(p(unit_text,size=8,leading=12,strong=True))
         if row.get("topic","").strip():
-            topic_text=row["topic"].strip()
+            topic_text=public_topic(row)
             # Malay teacher-focus and Arabic words are separate paragraphs.
             topic_match=(re.match(r"^([^\u0600-\u08ff]+?)\s+([\u0600-\u08ff].+)$",topic_text)
                          if subject=="bahasa_arab" else None)
@@ -361,7 +362,7 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
                 unit_lines.append(p(topic_match.group(2).strip(),size=7.8,leading=11.6))
             else:
                 unit_lines.append(p(topic_text,size=7.8,leading=11.6))
-        note_cell=[p(row["note"],size=7.6,leading=11.5)]
+        note_cell=[p(public_note(row),size=7.6,leading=11.5)]
         if "source_sp_dskp_pdf_url" in row:
             if subject!="bahasa_arab" or row.get("source_sp_dskp_text_signoff") is not False:
                 raise ValueError("DSKP URL link only supported for unapproved Arabic sources")
@@ -370,8 +371,8 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
         logical_cells = [
             "" if index in grouped_followers else p(weektext,size=7.0,leading=11.3),
             unit_lines,
-            p(row.get("sk_display") or row["sk"],size=7.5,leading=11.3),
-            p(row.get("sp_display") or row["sp"],size=7.3,leading=10.8),
+            p(public_standard(row, "sk"),size=7.5,leading=11.3),
+            p(public_standard(row, "sp"),size=7.3,leading=10.8),
             note_cell
         ]
         table_rows.append(list(reversed(logical_cells)) if rtl_table else logical_cells)
