@@ -147,7 +147,9 @@ class Science2027PartialRPTQA(unittest.TestCase):
                     self.assertIn("MINGGU / TARIKH",body)
                     self.assertIn("UNIT / TAJUK / PDP",body)
                     self.assertIn("CATATAN / BAHAN",body)
-                    self.assertIn("DRAF",body)
+                    # Legacy release holds stay in source metadata, not in
+                    # the teacher-facing body as a developer checkpoint.
+                    self.assertNotIn("DRAF",body)
                     self.assertIn("001",body)
                     self.assertIn(f"{count:03d}",body)
 
