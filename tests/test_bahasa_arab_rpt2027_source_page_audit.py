@@ -96,6 +96,14 @@ class ArabicSPPageEvidenceQA(unittest.TestCase):
                          parts["3.3.1"]["visual_transcription_candidate"])
         self.assertIn("identical",parts["3.4.1"]["hold_reason"])
         self.assertEqual(candidate["summary"]["academic_panel_signoffs"],0)
+        rows=arabic_records(2)
+        self.assertEqual(len(rows),60)
+        self.assertEqual(sum(row["source_sp_visual_candidate_staging"]
+                             for row in rows),58)
+        self.assertEqual(sum(row["sp"]=="3.4.1" for row in rows),2)
+        self.assertTrue(all(row["source_sp_dskp_text_signoff"] is False
+                            and row["source_sp_academic_panel_signed_off"] is False
+                            for row in rows))
         self.assertIs(candidate["summary"]["rpt_release_ready"],False)
 
     def test_pdf_location_evidence_cannot_automatically_unlock_rpt(self):
