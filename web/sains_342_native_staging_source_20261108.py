@@ -9,6 +9,7 @@ isolated staging Render service; known production Render IDs are forbidden.
 from __future__ import annotations
 
 from functools import lru_cache
+from hashlib import sha256
 import os
 import re
 
@@ -34,6 +35,10 @@ UNIT_TITLES={
        11:"Bumi dan Angkasa",12:"Kestabilan dan Kekuatan",13:"Teknologi"},
 }
 SOURCE_STATE="STAGING_DRAF_HOLD_NOT_APPROVED"
+# Canonical (year|PdP code|unit|primary SP) from CI-verified 342-row
+# reviewer CSV, generated from the historical v25.82 source, not guessed
+# from currently accessible runtime DB or fabricated 2027 weeks.
+CANONICAL_SOURCE_SHA256="fc968d472a0f060a7ef15097786e9ac57317279bebb8e8c92d3331290d789fe7"
 
 
 def _year(value):
@@ -158,6 +163,12 @@ def _catalog():
         or {year:sum(r["year"]==year for r in lessons.values())
              for year in EXPECTED}!=EXPECTED):
         raise ValueError("Sains T2–T6 342 source identities incomplete")
+    payload="\\n".join(
+        f"{r['year']}|{r['pdp_code']}|{r['unit']}|{r['sp']}"
+        for r in lessons.values()
+    )
+    if sha256(payload.encode("utf-8")).hexdigest()!=CANONICAL_SOURCE_SHA256:
+        raise ValueError("Original Year2–6 342 PdP-to-SP canonical identity checksum differs")
     return lessons
 
 
