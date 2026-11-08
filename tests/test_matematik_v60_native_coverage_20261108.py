@@ -25,7 +25,7 @@ def source_row(year, lesson=1):
 def runtime(mapping, active=True):
     def reader(year, subject):
         return mapping.get(int(year.split()[-1]), [])
-    return SimpleNamespace(CIKGULAJU_DB_V2600_ACTIVE=active, _sm2542_rows=reader)
+    return SimpleNamespace(CIKGULAJU_MATH_V2599_SOURCE_VERIFIED=active, _sm2542_rows=reader)
 
 
 class CoverageGateTest(unittest.TestCase):
