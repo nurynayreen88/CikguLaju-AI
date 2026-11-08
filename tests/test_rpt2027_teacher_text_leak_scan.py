@@ -165,6 +165,35 @@ class TeacherTextLeakAuditTests(unittest.TestCase):
         self.assertEqual(public_lesson_identity("english", 
                          {"id": "001", "display_id": "Lesson 001"}), "Lesson 001")
 
+    def test_bm_crosswalk_and_editorial_references_are_internal_only(self):
+        from rpt_2027.common.teacher_display_projection import public_note, public_topic
+        row = {"topic": "Ceria Pagi BM2-P001",
+               "note": ("PdP 001 · Ceria Pagi BM2-P001 BT1 m/s 2–3 "
+                        "| Semak judul aktiviti penuh | PBD: Pemerhatian lisan")}
+        old = dict(row)
+        self.assertEqual(public_topic(row), "Ceria Pagi")
+        shown = public_note(row)
+        self.assertNotIn("BM2-P001", shown)
+        self.assertNotIn("Semak judul", shown)
+        self.assertIn("BT1 m/s 2–3", shown)
+        self.assertIn("PBD: Pemerhatian lisan", shown)
+        self.assertTrue(find_internal_notes(row["note"]))
+        self.assertFalse(find_internal_notes(shown))
+        self.assertEqual(row, old)
+        self.assertEqual(public_note({"note": "BA1 18–20 berdasarkan BT (BA asal belum disemak)"}), "")
+        self.assertEqual(public_note({"note": "Sumber berbeza; jangan dakwa kedua-duanya setara"}), "")
+
+    def test_optional_pi_tasmi_has_no_fabricated_official_sk_sp(self):
+        from rpt_2027.common.teacher_display_projection import public_standard
+        row = {"sk": "PROGRAM TASMI PILIHAN GURU — BUKAN KOD SK RASMI",
+               "sp": "BACAAN TASMI / PBD — TIADA KOD SP RASMI DALAM RPT SUMBER"}
+        self.assertEqual(public_standard(row,"sk"),"Aktiviti pilihan guru (tiada SK rasmi)")
+        self.assertEqual(public_standard(row,"sp"),"Aktiviti pilihan guru (tiada SP rasmi)")
+        self.assertTrue(find_internal_notes(row["sk"]))
+        self.assertTrue(find_internal_notes(row["sp"]))
+        self.assertFalse(find_internal_notes(public_standard(row,"sk")))
+        self.assertFalse(find_internal_notes(public_standard(row,"sp")))
+
     def test_scan_teacher_output_separately_from_source_data(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
