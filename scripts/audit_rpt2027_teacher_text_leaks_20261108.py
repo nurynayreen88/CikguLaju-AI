@@ -30,6 +30,7 @@ RULES = {
     "INTERNAL_BM_ID": r"\bBM[2-6]-P\d{3}\b",
     "BM_EDITORIAL_INSTRUCTION": r"(?:Semak\s+judul\s+aktiviti\s+penuh|BA\s+asal\s+belum\s+disemak|jangan\s+dakwa\s+kedua-duanya\s+setara)",
     "INTERNAL_TASMI_STANDARD_FLAG": r"(?:TIADA\s+KOD\s+SP\s+RASMI\s+DALAM\s+RPT\s+SUMBER|BUKAN\s+KOD\s+SK\s+RASMI)",
+    "RPT_SOURCE_PHRASE": r"\bRPT\s+sumber\b",
 }
 _COMPILED = tuple((key, re.compile(value, flags=re.IGNORECASE)) for key, value in RULES.items())
 SUFFIXES = frozenset((".pdf", ".html", ".htm", ".csv", ".txt"))
