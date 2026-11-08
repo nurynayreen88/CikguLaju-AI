@@ -1,0 +1,220 @@
+{
+  "schema": "cikgulaju.math.y6.9_dskp_textbook_page_evidence.v1",
+  "checked_on": "2026-11-08",
+  "method": "Compared source PDF text page-by-page: each listed printed textbook page carries the same SP code as DSKP; verified SHA256s of source PDF files.",
+  "documents": {
+    "dskp_y6": {
+      "name": "GuruBesar_DSKP_Matematik_Tahun_6.pdf",
+      "drive_id": "1Gw3nWRttnfbimQ95slCgxBleL7tKmLSK",
+      "sha256": "e48576169c12cc9666675770432a425e573686a331fba6bcd7f01e33787476a9"
+    },
+    "textbook_part2": {
+      "name": "GuruBesar_BukuTeks_Matematik_T6_SK_Bahagian2.pdf",
+      "drive_id": "1xf_VFKETw5nBJNx3uMcwJPufDtSL_MS3",
+      "sha256": "73a38e146f40adaf08432a60df211c4f0a610e5d50e746bd6326706cc9bb5804"
+    },
+    "textbook_part3": {
+      "name": "GuruBesar_BukuTeks_Matematik_T6_SK_Bahagian3.pdf",
+      "drive_id": "1Q7JqVRovkAv0X_pF1GhlIoQ2TGAFHKsM",
+      "sha256": "35006f052cea2a327415c816e08a061c963b1bf56f3fc5346ca2a491fff52571"
+    }
+  },
+  "nine_pdp": [
+    {
+      "code": "DSKP6-01",
+      "proposed_sp": "2.1.1",
+      "proposed_sk": "2.1",
+      "dskp_printed_page": 36,
+      "dskp_pdf_page": 48,
+      "textbook_reference": "textbook_part2",
+      "textbook_printed_first": 61,
+      "textbook_printed_last": 67,
+      "textbook_pdf_first": 1,
+      "textbook_pdf_last": 7,
+      "textbook_pages_with_exact_sp_label": [
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "sp_label_present_on_all_specified_textbook_pages": true,
+      "status": "PRIMARY_SOURCE_PAGE_CODES_VERIFIED_PEDAGOGY_SIGNOFF_PENDING",
+      "approved": false
+    },
+    {
+      "code": "DSKP6-02",
+      "proposed_sp": "4.1.1",
+      "proposed_sk": "4.1",
+      "dskp_printed_page": 44,
+      "dskp_pdf_page": 56,
+      "textbook_reference": "textbook_part2",
+      "textbook_printed_first": 141,
+      "textbook_printed_last": 143,
+      "textbook_pdf_first": 81,
+      "textbook_pdf_last": 83,
+      "textbook_pages_with_exact_sp_label": [
+        141,
+        142,
+        143
+      ],
+      "sp_label_present_on_all_specified_textbook_pages": true,
+      "status": "PRIMARY_SOURCE_PAGE_CODES_VERIFIED_PEDAGOGY_SIGNOFF_PENDING",
+      "approved": false
+    },
+    {
+      "code": "DSKP6-03",
+      "proposed_sp": "4.1.2",
+      "proposed_sk": "4.1",
+      "dskp_printed_page": 44,
+      "dskp_pdf_page": 56,
+      "textbook_reference": "textbook_part2",
+      "textbook_printed_first": 144,
+      "textbook_printed_last": 147,
+      "textbook_pdf_first": 84,
+      "textbook_pdf_last": 87,
+      "textbook_pages_with_exact_sp_label": [
+        144,
+        145,
+        146,
+        147
+      ],
+      "sp_label_present_on_all_specified_textbook_pages": true,
+      "status": "PRIMARY_SOURCE_PAGE_CODES_VERIFIED_PEDAGOGY_SIGNOFF_PENDING",
+      "approved": false
+    },
+    {
+      "code": "DSKP6-04",
+      "proposed_sp": "6.1.2",
+      "proposed_sk": "6.1",
+      "dskp_printed_page": 52,
+      "dskp_pdf_page": 64,
+      "textbook_reference": "textbook_part3",
+      "textbook_printed_first": 165,
+      "textbook_printed_last": 167,
+      "textbook_pdf_first": 1,
+      "textbook_pdf_last": 3,
+      "textbook_pages_with_exact_sp_label": [
+        165,
+        166,
+        167
+      ],
+      "sp_label_present_on_all_specified_textbook_pages": true,
+      "status": "PRIMARY_SOURCE_PAGE_CODES_VERIFIED_PEDAGOGY_SIGNOFF_PENDING",
+      "approved": false
+    },
+    {
+      "code": "DSKP6-05",
+      "proposed_sp": "6.2.1",
+      "proposed_sk": "6.2",
+      "dskp_printed_page": 52,
+      "dskp_pdf_page": 64,
+      "textbook_reference": "textbook_part3",
+      "textbook_printed_first": 178,
+      "textbook_printed_last": 179,
+      "textbook_pdf_first": 14,
+      "textbook_pdf_last": 15,
+      "textbook_pages_with_exact_sp_label": [
+        178,
+        179
+      ],
+      "sp_label_present_on_all_specified_textbook_pages": true,
+      "status": "PRIMARY_SOURCE_PAGE_CODES_VERIFIED_PEDAGOGY_SIGNOFF_PENDING",
+      "approved": false
+    },
+    {
+      "code": "DSKP6-06",
+      "proposed_sp": "7.1.1",
+      "proposed_sk": "7.1",
+      "dskp_printed_page": 56,
+      "dskp_pdf_page": 68,
+      "textbook_reference": "textbook_part3",
+      "textbook_printed_first": 187,
+      "textbook_printed_last": 190,
+      "textbook_pdf_first": 23,
+      "textbook_pdf_last": 26,
+      "textbook_pages_with_exact_sp_label": [
+        187,
+        188,
+        189,
+        190
+      ],
+      "sp_label_present_on_all_specified_textbook_pages": true,
+      "status": "PRIMARY_SOURCE_PAGE_CODES_VERIFIED_PEDAGOGY_SIGNOFF_PENDING",
+      "approved": false
+    },
+    {
+      "code": "DSKP6-07",
+      "proposed_sp": "8.1.1",
+      "proposed_sk": "8.1",
+      "dskp_printed_page": 60,
+      "dskp_pdf_page": 72,
+      "textbook_reference": "textbook_part3",
+      "textbook_printed_first": 207,
+      "textbook_printed_last": 212,
+      "textbook_pdf_first": 43,
+      "textbook_pdf_last": 48,
+      "textbook_pages_with_exact_sp_label": [
+        207,
+        208,
+        209,
+        210,
+        211,
+        212
+      ],
+      "sp_label_present_on_all_specified_textbook_pages": true,
+      "status": "PRIMARY_SOURCE_PAGE_CODES_VERIFIED_PEDAGOGY_SIGNOFF_PENDING",
+      "approved": false
+    },
+    {
+      "code": "DSKP6-08",
+      "proposed_sp": "8.2.1",
+      "proposed_sk": "8.2",
+      "dskp_printed_page": 60,
+      "dskp_pdf_page": 72,
+      "textbook_reference": "textbook_part3",
+      "textbook_printed_first": 213,
+      "textbook_printed_last": 215,
+      "textbook_pdf_first": 49,
+      "textbook_pdf_last": 51,
+      "textbook_pages_with_exact_sp_label": [
+        213,
+        214,
+        215
+      ],
+      "sp_label_present_on_all_specified_textbook_pages": true,
+      "status": "PRIMARY_SOURCE_PAGE_CODES_VERIFIED_PEDAGOGY_SIGNOFF_PENDING",
+      "approved": false
+    },
+    {
+      "code": "DSKP6-09",
+      "proposed_sp": "8.2.2",
+      "proposed_sk": "8.2",
+      "dskp_printed_page": 60,
+      "dskp_pdf_page": 72,
+      "textbook_reference": "textbook_part3",
+      "textbook_printed_first": 216,
+      "textbook_printed_last": 219,
+      "textbook_pdf_first": 52,
+      "textbook_pdf_last": 55,
+      "textbook_pages_with_exact_sp_label": [
+        216,
+        217,
+        218,
+        219
+      ],
+      "sp_label_present_on_all_specified_textbook_pages": true,
+      "status": "PRIMARY_SOURCE_PAGE_CODES_VERIFIED_PEDAGOGY_SIGNOFF_PENDING",
+      "approved": false
+    }
+  ],
+  "source_page_checks_passed": 9,
+  "academic_signoff": false,
+  "telegram_native_mapping_approved": false,
+  "rpt_sequence_approved": false,
+  "word_pdf_visual_signoff": false,
+  "production_modified": false,
+  "release_decision": "ACADEMIC_HOLD"
+}
