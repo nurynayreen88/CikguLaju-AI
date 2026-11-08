@@ -463,6 +463,19 @@ else:
     SAINS_Y5_83_INTERNAL_REVIEW_ACTIVE = False
 
 
+# Sains T2–T6: explicitly isolated staging reviewer for 342 authored PdP.
+# Uses only repository-committed DSKP + activity banks at runtime, never
+# transient CI build outputs. No new RPH can be published by this switch
+# on the real Telegram/Web Render production services.
+if _sains_review_env.environ.get("CIKGULAJU_SAINS_342_INTERNAL_REVIEW") == "1":
+    from web.sains_342_native_staging_source_20261108 import (
+        install as _install_sains_342_review,
+    )
+    SAINS_342_INTERNAL_REVIEW_ACTIVE = _install_sains_342_review(telegram_runtime)
+else:
+    SAINS_342_INTERNAL_REVIEW_ACTIVE = False
+
+
 # Sains / Matematik: Web units and PdP selections use Telegram's exact
 # grouped verified_pdp_sequence reader, not misleading weekly RPT row IDs.
 try:

@@ -1,0 +1,42 @@
+name: Sains 342 build-free native Telegram Web staging QA
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "web/sains_342_native_staging_source_20261108.py"
+      - "tests/test_sains_342_native_staging_source_20261108.py"
+      - "tools/run_telegram_with_curriculum_api.py"
+      - ".github/workflows/sains342_build_free_native_staging_20261108.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  science-342-native-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install native API and source reader test dependencies
+        run: python -m pip install python-docx==1.1.2 reportlab==4.2.5 pypdf==5.1.0 flask==3.1.3
+      - name: Test all 342 PdP without generated build indices or database writes
+        run: python -m unittest discover -s tests -p 'test_sains_342_native_staging_source_20261108.py' -v
+      - name: Ensure production flag remains opt-in and blocked on known Render services
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path("tools/run_telegram_with_curriculum_api.py").read_text(encoding="utf-8")
+          if p.count('if _sains_review_env.environ.get("CIKGULAJU_SAINS_342_INTERNAL_REVIEW") == "1":') != 1:
+              raise SystemExit("Missing staging-only entrypoint opt-in")
+          if "from web.sains_342_native_staging_source_20261108 import" not in p:
+              raise SystemExit("Staging science adapter is not registered")
+          from web.sains_342_native_staging_source_20261108 import PRODUCTION_SERVICE_IDS, EXPECTED
+          assert sum(EXPECTED.values()) == 342
+          assert {"srv-dah3b8lbedkc738ugqt0","srv-dbm5go8u01pc738f40cg"} <= PRODUCTION_SERVICE_IDS
+          print("SAINS342_NATIVE_STAGING: gated, main runtime default unchanged, 342 authored PdP")
+          PY
