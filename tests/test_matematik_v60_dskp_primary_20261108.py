@@ -32,6 +32,18 @@ class PrimaryDSKPSourceAudit(unittest.TestCase):
         self.assertNotIn("1.2.1", y6["native_absent_codes"])
         self.assertEqual(y6["dskp_distinct_sp_codes"], 38)
 
+    def test_semantic_mismatch_even_when_sp_exists_in_primary_dskp(self):
+        self.assertEqual(self.report["known_semantic_conflict_count"], 2)
+        self.assertEqual(self.report["known_distinct_pdp_requiring_review_minimum"], 100)
+        cases = {x["pdp_code"]: x
+                 for x in self.report["code_present_but_semantically_conflicting_known_cases"]}
+        self.assertEqual(set(cases), {"MT6-PDP-004", "MT6-PDP-006"})
+        self.assertEqual(cases["MT6-PDP-004"]["native_title"], "Pembundaran Nombor")
+        self.assertIsNone(cases["MT6-PDP-004"]["candidate_sp"])
+        self.assertEqual(cases["MT6-PDP-006"]["native_title"], "Pola Nombor")
+        self.assertEqual(cases["MT6-PDP-006"]["candidate_sp"], "1.1.2")
+        self.assertTrue(all(x["approved"] is False for x in cases.values()))
+
     def test_all_conflicts_remain_unapproved_and_no_production_changes(self):
         self.assertFalse(self.report["academic_signoff"])
         self.assertFalse(self.report["runtime_e2e_passed"])
