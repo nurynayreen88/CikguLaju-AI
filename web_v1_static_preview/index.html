@@ -1198,6 +1198,8 @@ function rptChoice(){
  return item&&year?{item,year}:null;
 }
 function refreshRptDownload(){
+ const prepared=document.getElementById("rpt-prepared-manual-link");
+ if(prepared){URL.revokeObjectURL(prepared.href);prepared.remove();}
  const selection=rptChoice();
  const ready=selection?.year.download_enabled===true;
  rptDownload.disabled=!ready;
@@ -1231,7 +1233,7 @@ rptMobileLink.addEventListener("click",(event)=>{
   }
  }catch(_error){viewer=null;}
  void window.downloadCikguLajuRPT(item.item.code,item.year.year,item.item.label,
-                                   rptStatus,rptDownload,viewer);
+                                   rptStatus,rptDownload,viewer,true);
 });
 rptSubject.addEventListener("change",()=>{
  rptDownload.disabled=true;
