@@ -10,7 +10,7 @@ from web.rpt_private_notes import _NOTES, _page_chars
 
 ASSETS = Path(__file__).resolve().parents[1] / "rpt_2027" / "web_2027_pdfs"
 PROBES = {
-    "unverified_mapping": re.compile(r"pemetaan\s+buku\s+teks\s+belum", re.I),
+    "unverified_mapping": re.compile(r"pemetaan\s+buku\s+teks\s+(?:belum|untuk\s+Lesson\s+ini)", re.I),
     "before_ready": re.compile(r"sebelum\s+READY", re.I),
     "developer_fabrication": re.compile(r"tidak\s+mereka", re.I),
     "development_label": re.compile(r"catatan\s+(?:dalaman|pembangun)", re.I),
@@ -45,7 +45,7 @@ def main():
                 for i, expr in enumerate(_NOTES):
                     amount = len(expr.findall(text))
                     if amount:
-                        counts["remove_mapping" if i == 0 else "remove_developer_note"] += amount
+                        counts["remove_mapping" if i in (0, 2) else "remove_developer_note"] += amount
                         matched = True
                 for label, expr in PROBES.items():
                     amount = len(expr.findall(text))
