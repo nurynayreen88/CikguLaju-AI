@@ -28,7 +28,7 @@ _INTERNAL = re.compile(
 )
 # Some note fragments are internal even without a status word.
 _AUDIT_CLAUSE = re.compile(
-    r"(?i)(?:\bSumber\s*:|\bRujukan\s*:\s*Rujuk\s+DSKP\b|\b(?:sumber|semakan)\s*:\s*(?:v\d|legacy|draft)|"
+    r"(?i)(?:\bMain/Complementary codes from source SOW\b|\bSumber\s*:|\bRujukan\s*:\s*Rujuk\s+DSKP\b|\b(?:sumber|semakan)\s*:\s*(?:v\d|legacy|draft)|"
     r"\bRPT\s+2026\s+(?:salah|mengulangi)|"
     r"\b(?:TARIKH|MINGGU)\s+(?:A/B\s+)?(?:BELUM|(?:IALAH|ADALAH)\s+CADANGAN)|"
     r"\b(?:HALAMAN|AKTIVITI|BUKU|TEKS|KOD)\b.{0,80}\b(?:belum|draf|calon|sebelum READY)|"
@@ -60,6 +60,9 @@ def public_note(row: dict) -> str:
     source = re.sub(r"(?i)\bPBD\s*\(sumber\)\s*:", "PBD:", source)
     source = re.sub(r"(?i)\bAktiviti\s*\(sumber\)\s*:", "Aktiviti:", source)
     source = re.sub(r"(?i)\s*\(bukan halaman aktiviti disahkan\)", "", source)
+    # This is a developer instruction, not a teaching material. Keep the
+    # original Mushaf/ayat reference and remove only the review qualifier.
+    source = re.sub(r"(?i);\s*tidak mereka halaman buku teks\.?","",source)
     # Split compound notes conservatively and discard entire questionable
     # clauses rather than silently substituting unverified facts.
     safe = []
@@ -91,3 +94,11 @@ def public_topic(row: dict) -> str:
     if row.get("source_held") and is_internal(text):
         return ""
     return text
+
+
+def public_lesson_identity(subject: str, row: dict) -> str:
+    """Teacher-readable label; source crosswalk IDs remain unchanged."""
+    internal = str(row.get("display_id") or "").strip()
+    if subject == "sains" and re.fullmatch(r"SCI-Y[2-6]-PDP-\d{3}", internal):
+        return f"PdP {row['id']}"
+    return internal or f"PdP {row['id']}"
