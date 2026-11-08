@@ -80,49 +80,56 @@ class ExistingCoverLayoutTests(unittest.TestCase):
                                       layout["teacher_row_top_left"])
                     ))
 
-    def test_ten_islamic_arabic_pdf_tables_are_rtl_other_46_stay_ltr(self):
-        headers=("MINGGU / TARIKH","UNIT / TAJUK / PDP",
-                 "SK","SP","CATATAN / BAHAN")
-        rtl_subjects={"pendidikan_islam","bahasa_arab"}
-        pdp_counts={
-            "pendidikan_islam":{2:112,3:147,4:151,5:143,6:143},
-            "bahasa_arab":{2:60,3:60,4:58,5:60,6:60}
-        }
-        rtl_count=0
-        arab_links=0
+    def test_fifteen_native_language_headers_and_41_unchanged_ltr_pdfs(self):
+        english_labels=("WEEK / DATE","UNIT / TOPIC / LESSON",
+                        "CONTENT STANDARD","LEARNING STANDARD",
+                        "NOTES / MATERIALS")
+        malay_labels=("MINGGU / TARIKH","UNIT / TAJUK / PDP",
+                      "SK","SP","CATATAN / BAHAN")
+        native_subjects={"pendidikan_islam","bahasa_arab"}
+        native_count=0
+        links=0
         for key,entry in self.manifest["files"].items():
             subject,year_s=key.split(":")
-            year=int(year_s)
             with self.subTest(key=key),open_pdf(ROOT/entry["path"]) as pdf:
-                spans=[]
-                for block in pdf[1].get_text("dict")["blocks"]:
-                    for line in block.get("lines",[]):
-                        for span in line["spans"]:
-                            if span["text"].strip() in headers and 40<span["bbox"][1]<95:
-                                spans.append((span["text"].strip(),span["bbox"][0]))
-                positions=dict(spans)
-                self.assertEqual(set(positions),set(headers))
-                order=[positions[h] for h in headers]
-                if subject in rtl_subjects:
-                    self.assertEqual(order,sorted(order,reverse=True),
-                                     "Jadual Arab/Jawi mesti RTL, Minggu paling kanan")
-                    rtl_count+=1
-                    tags=[]
+                first_header=pdf[1].get_text("text")
+                if subject in native_subjects:
+                    native_count+=1
+                    # 5 original physical RTL bands from rightmost Minggu
+                    # to leftmost Catatan must all contain Arabic/Jawi glyphs
+                    # on each repeated header row of the PDF.
                     for page in list(pdf)[1:]:
-                        for block in page.get_text("dict")["blocks"]:
-                            for line in block.get("lines",[]):
-                                for span in line["spans"]:
-                                    t=span["text"].strip()
-                                    if t.startswith("PdP ") and len(t)==7 and t[4:].isdigit():
-                                        tags.append(int(t[4:]))
-                    self.assertEqual(tags,list(range(1,pdp_counts[subject][year]+1)))
+                        spans=[s for block in page.get_text("dict")["blocks"]
+                               for line in block.get("lines",[])
+                               for s in line["spans"]
+                               if 46<=s["bbox"][1]<83 and s["bbox"][3]<90]
+                        for left,right in ((29,193),(193,403),(403,528),
+                                           (528,708),(708,813)):
+                            group=[sp for sp in spans
+                                   if left<=sp["bbox"][0]<right]
+                            self.assertTrue(group,(key,left))
+                            self.assertTrue(any(
+                                any("\u0600"<=c<="\u08ff" or "\ufb50"<=c<="\ufeff"
+                                    for c in sp["text"])
+                                for sp in group),(key,left,group))
+                        for old in ("MINGGU / TARIKH","CATATAN / BAHAN"):
+                            self.assertNotIn(old,page.get_text("text"))
                     if subject=="bahasa_arab":
-                        arab_links+=sum(len(page.get_links()) for page in pdf)
+                        links+=sum(len(page.get_links()) for page in pdf)
+                elif subject=="english":
+                    native_count+=1
+                    for page in list(pdf)[1:]:
+                        text=" ".join(page.get_text("text").split())
+                        for heading in english_labels:
+                            self.assertIn(heading,text,(key,heading))
+                        for old in ("MINGGU / TARIKH",
+                                    "UNIT / TAJUK / PDP","CATATAN / BAHAN"):
+                            self.assertNotIn(old,text)
                 else:
-                    self.assertEqual(order,sorted(order),
-                                     "Subjek lain mesti kekal LTR")
-        self.assertEqual(rtl_count,10)
-        self.assertEqual(arab_links,298)
+                    for head in malay_labels:
+                        self.assertIn(head,first_header)
+        self.assertEqual(native_count,15)
+        self.assertEqual(links,298)
 
     def test_no_new_page_and_no_layout_leaking_outside_original_spaces(self):
         l=self.layout
