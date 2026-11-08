@@ -40,8 +40,12 @@ class EnglishFiveColumnQA(unittest.TestCase):
                     self.assertIn("Lesson 160",text)
                     self.assertIn("M01",text)
                     self.assertIn("M40",text)
-                    self.assertIn("MINGGU / TARIKH",text)
-                    self.assertIn("CATATAN / BAHAN",text)
+                    for expected in ("WEEK / DATE","UNIT / TOPIC / LESSON",
+                                     "CONTENT STANDARD","LEARNING STANDARD",
+                                     "NOTES / MATERIALS"):
+                        self.assertIn(expected,text)
+                    self.assertNotIn("MINGGU / TARIKH",text)
+                    self.assertNotIn("CATATAN / BAHAN",text)
 
 
 if __name__=="__main__":
