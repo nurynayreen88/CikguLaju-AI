@@ -50,6 +50,12 @@ def _draft(code, title, content, source):
         raise ValueError("Missing objective for "+code)
     body = content[match.start():]
     body = re.split(r"\*\*(?:Status|Status kelulusan):\*\*", body, maxsplit=1)[0]
+    # Source authors placed BBM before the objective in some Year6 drafts.
+    # Retain original BBM as a separate teaching paragraph instead of losing it.
+    if "BBM" not in body:
+        m = re.search(r"\\*\\*BBM:\\*\\*\\s*([^\\n]+)", content)
+        if m:
+            body += "\\n\\n**BBM:** " + m.group(1).strip()
     for label in ("Objektif", "Set induksi", "Aktiviti 1", "Aktiviti 2",
                   "Aktiviti 3", "PBD", "Penutup", "BBM"):
         if label.casefold() not in body.casefold():
