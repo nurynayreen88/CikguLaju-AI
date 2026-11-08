@@ -39,6 +39,20 @@ class TeacherTextLeakAuditTests(unittest.TestCase):
         )
         self.assertEqual(find_internal_notes(clean), [])
 
+    def test_unreadable_pdf_and_empty_folder_fail_closed(self):
+        import contextlib
+        import io
+        from scripts.audit_rpt2027_teacher_text_leaks_20261108 import main
+        with tempfile.TemporaryDirectory() as temp:
+            folder = Path(temp)
+            corrupt = folder / "rpt_corrupt.pdf"
+            corrupt.write_bytes(b"%PDF-corrupt-not-real")
+            # This is an error, not a clean document with zero findings.
+            with contextlib.redirect_stdout(io.StringIO()):
+                self.assertEqual(main([str(corrupt)]), 1)
+            with contextlib.redirect_stdout(io.StringIO()):
+                self.assertEqual(main([str(folder / "missing")]), 1)
+
     def test_scan_teacher_output_separately_from_source_data(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
