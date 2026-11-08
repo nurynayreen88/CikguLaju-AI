@@ -10,7 +10,7 @@ class PIQuranFullVerseRangeTests(unittest.TestCase):
 
     def test_quran_metadata_and_coverage(self):
         c=verse_catalog()
-        self.assertEqual(len(c),116)  # 114 canonical plus two genuinely distinct aliases
+        self.assertEqual(len(c),118)  # 114 canonical plus four genuinely distinct Jawi aliases
         self.assertEqual(c["البقرة"],286)
         self.assertEqual(c["الكافرون"],6)
         self.assertEqual(c["العصر"],3)
