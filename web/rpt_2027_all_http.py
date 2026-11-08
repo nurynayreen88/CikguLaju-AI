@@ -215,16 +215,7 @@ def create_all_rpt_blueprint(*,root=ROOT):
         # do not call its SHA-locked personalization API with an unknown hash.
         # Download the exact validated DRAF; teacher identity stays private.
         if staged is not None:
-            # The original 56-file catalog remains SHA-locked. Remove only
-            # internal developer prose from the user-facing copy (not the
-            # academic content, original file, or DRAF status).
-            from web.rpt_private_notes import pdf_for_teacher
-            try:
-                document=pdf_for_teacher(path)
-            except (ValueError, OSError, RuntimeError):
-                # Fail closed: never quietly send an unsanitized PDF if the
-                # glyph-preservation validation cannot pass.
-                return jsonify({"error":"RPT ini memerlukan semakan catatan dalaman. Fail asal tidak diubah."}),503
+            document=path
         else:
             from web.rpt_school_cover import for_download
             from web.teacher_profile_store import ProfileUnavailable
@@ -236,11 +227,6 @@ def create_all_rpt_blueprint(*,root=ROOT):
                            download_name=f"CIKGULAJU_RPT_{subject.upper()}_TAHUN_{year}_2027_DRAF.pdf",
                            conditional=False)
         if staged is not None:
-            if hasattr(document, "getvalue"):
-                # Distinguish actual sanitized download bytes from the
-                # unchanged, audit-approved source PDF checksum.
-                response.headers["X-RPT-Delivered-SHA256"]=hashlib.sha256(
-                    document.getvalue()).hexdigest()
             # Exact PDF hash is from the prevalidated 56-source manifest.
             # Browser must match it to the audited original-cover layout;
             # a future PDF with a changed template cannot be stamped blindly.
