@@ -215,8 +215,8 @@
     },
     "pendidikan_islam:3": {
       "path": "pendidikan_islam/tahun_3.pdf",
-      "sha256": "eaa5993103108ce6dba3602155226408fbfb3bcf1d940e623d8b35439f892ffa",
-      "bytes": 330629,
+      "sha256": "01d09c0a5187a0bee4a59fd1722357424f672c3f6c241d5a0c418ac036ef9f15",
+      "bytes": 316198,
       "pages": 75,
       "status": "DRAF",
       "source_run_id": 42430115066
@@ -231,16 +231,16 @@
     },
     "pendidikan_islam:5": {
       "path": "pendidikan_islam/tahun_5.pdf",
-      "sha256": "d0fe04e0368b8ec2021583302f4d16546d2bf2dd61ff821f4e44320fb7fce16f",
-      "bytes": 313052,
+      "sha256": "082c1f9e567ff305c559f6d63ad20800ce860b2e98b78daad946b0bdd9a46d82",
+      "bytes": 280048,
       "pages": 72,
       "status": "DRAF",
       "source_run_id": 42430115066
     },
     "pendidikan_islam:6": {
       "path": "pendidikan_islam/tahun_6.pdf",
-      "sha256": "8fb883b3865564171358d7f0cbf6f842d800de5c56e5fa959d6000b57d86dee0",
-      "bytes": 323613,
+      "sha256": "8aa293683cf2b52f4724cf3a3a25d689326717d03e8f38692e4ff175b82c9b04",
+      "bytes": 297254,
       "pages": 73,
       "status": "DRAF",
       "source_run_id": 42430115066

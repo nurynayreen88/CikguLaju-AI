@@ -1,0 +1,62 @@
+{
+  "status": "DRAF_INTERNAL_PROSE_REMOVED_NOT_ACADEMIC_READY",
+  "year": 2027,
+  "subject": "pendidikan_islam",
+  "years": [
+    3,
+    5,
+    6
+  ],
+  "unchanged_other_rpt_pdfs": 53,
+  "production_telegram_database_modified": false,
+  "entries": {
+    "pendidikan_islam:3": {
+      "source_sha256": "eaa5993103108ce6dba3602155226408fbfb3bcf1d940e623d8b35439f892ffa",
+      "clean_sha256": "01d09c0a5187a0bee4a59fd1722357424f672c3f6c241d5a0c418ac036ef9f15",
+      "old_bytes": 330629,
+      "clean_bytes": 316198,
+      "pages": 75,
+      "unique_pdp": 147,
+      "notes_removed": {
+        "mapping": 16,
+        "developer": 0
+      },
+      "cover_identical": true,
+      "non_note_glyphs_preserved": true,
+      "other_subjects_unchanged": true,
+      "academic_final_approved": false
+    },
+    "pendidikan_islam:5": {
+      "source_sha256": "d0fe04e0368b8ec2021583302f4d16546d2bf2dd61ff821f4e44320fb7fce16f",
+      "clean_sha256": "082c1f9e567ff305c559f6d63ad20800ce860b2e98b78daad946b0bdd9a46d82",
+      "old_bytes": 313052,
+      "clean_bytes": 280048,
+      "pages": 72,
+      "unique_pdp": 143,
+      "notes_removed": {
+        "mapping": 17,
+        "developer": 36
+      },
+      "cover_identical": true,
+      "non_note_glyphs_preserved": true,
+      "other_subjects_unchanged": true,
+      "academic_final_approved": false
+    },
+    "pendidikan_islam:6": {
+      "source_sha256": "8fb883b3865564171358d7f0cbf6f842d800de5c56e5fa959d6000b57d86dee0",
+      "clean_sha256": "8aa293683cf2b52f4724cf3a3a25d689326717d03e8f38692e4ff175b82c9b04",
+      "old_bytes": 323613,
+      "clean_bytes": 297254,
+      "pages": 73,
+      "unique_pdp": 143,
+      "notes_removed": {
+        "mapping": 0,
+        "developer": 32
+      },
+      "cover_identical": true,
+      "non_note_glyphs_preserved": true,
+      "other_subjects_unchanged": true,
+      "academic_final_approved": false
+    }
+  }
+}
