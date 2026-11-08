@@ -16,6 +16,7 @@ on:
       - 'audits/pendidikan_islam_rpt2027_6_held_source_recovery_20261107_DRAF.json'
       - 'audits/bahasa_arab_rpt2027_y2_y6_117_sp_pdf_page_evidence_20261107.json'
       - 'rpt_2027/common/format_2026_layout_preview.py'
+      - 'tests/test_rpt_2027_rtl_layout_staging.py'
       - 'rpt_2027/bahasa_melayu/*Format_2026_DRAF.html'
       - 'rpt_2027/bahasa_arab/*DRAF.csv'
       - 'staging/pendidikan_muzik/rpt_rph_2027/year*/RPT_MUZIK*DRAF.csv'
@@ -44,6 +45,8 @@ jobs:
           python -m unittest tests.test_arabic_rpt_2027_offline_dskp_bundle_staging -v
       - name: 20 source-faithful five-column RPT audits
         run: python -m unittest tests.test_rpt_2027_remaining_four_subjects_staging tests.test_rpt_2027_music_full_dskp_statements_staging tests.test_bahasa_arab_rpt2027_source_page_audit tests.test_pi_rpt2027_6_held_source_recovery_staging tests.test_pi_6_held_rph_new_candidate_activity_plans -v
+      - name: Verify RTL layout for Arabic / Jawi and LTR for all others
+        run: python -m unittest tests.test_rpt_2027_rtl_layout_staging -v
       - name: Build 20 PDFs and visual QA
         run: |
           python -m scripts.build_rpt_2027_remaining_four_subjects_staging
@@ -69,7 +72,22 @@ jobs:
                       str(file.with_suffix('.cover.png')))
                   pdf[1].get_pixmap(matrix=fitz.Matrix(1.5,1.5),alpha=False).save(
                       str(file.with_suffix('.page2.png')))
-          print('SUCCESS: 20 PDF, 40 PNG previews, landscape bounded text')
+          # For the 10 actual Islamic/Arabic documents, assert table header
+          # physical direction, and unchanged cover profile placeholders.
+          for file in allpdf:
+              name=file.name
+              if 'PENDIDIKAN_ISLAM' not in name and 'BAHASA_ARAB' not in name:
+                  continue
+              with fitz.open(file) as pdf:
+                  page=pdf[1]
+                  x={}
+                  for text in ('MINGGU / TARIKH','UNIT / TAJUK / PDP','SK','SP','CATATAN / BAHAN'):
+                      boxes=page.search_for(text)
+                      assert boxes,(file,text)
+                      x[text]=boxes[0].x0
+                  assert x['CATATAN / BAHAN']<x['SP']<x['SK']<x['UNIT / TAJUK / PDP']<x['MINGGU / TARIKH'],(file,x)
+                  assert x['MINGGU / TARIKH']>650,(file,x)
+          print('SUCCESS: 20 PDF, 40 PNG previews, 10 RTL PDFs, landscape bounded text')
           PY
       - uses: actions/upload-artifact@v4
         with:
