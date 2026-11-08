@@ -20,6 +20,7 @@ from pi_editor_jawi_closing_projection import preview as jawi_preview
 from pi_held_six_editor_candidate_packet import audit as held_packet
 from pi_held_six_word_pdf_print_audit import normalize as normalize_held
 from pi_quality_audit import COUNT
+from pi_heavy_tasmi_editor_overlay import generate as heavy_tasmi_editor
 from pi_surah_pbd_alignment_audit import RPT_SOURCE_ERRORS
 from pi_y5_activity_book_wording_review import EXPECTED as YEAR5_ACTIVITY_BOOK_AMBIGUOUS
 from pi_word_pdf_print_audit import make_docx, inspect_pdf
@@ -51,6 +52,8 @@ def academic_warning_codes(entry, page_count):
         codes.append("ORIGINAL_RPT_YEAR3_SOLAT_OBJECTIVE_SEQUENCE_ERROR_PENDING")
     if ident in YEAR5_ACTIVITY_BOOK_AMBIGUOUS:
         codes.append("YEAR5_BUKU_AKTIVITI_EDITION_AND_EXERCISE_UNVERIFIED")
+    if entry["tasmi_editor_overlay"]:
+        codes.append("HIGH_VOLUME_TASMI_PASSAGE_SELECTION_EDITOR_NOT_APPROVED")
     if ident in JUZ25_UNMAPPED_SOURCE:
         codes.append("ORIGINAL_RPT_YEAR6_JUZ25_67_AYAT_UNMAPPED")
     if ident == "T2-L035":
@@ -62,7 +65,7 @@ def academic_warning_codes(entry, page_count):
     return codes
 COLUMNS = (
     "id", "year", "lesson", "review_status", "ready_for_teacher",
-    "source_sp_approved", "jawi_approved", "file_docx", "file_pdf",
+    "source_sp_approved", "jawi_approved", "tasmi_editor_overlay", "file_docx", "file_pdf",
     "pdf_pages", "one_page_a4", "warning"
 )
 DISCLAIMER = """CIKGULAJU PENDIDIKAN ISLAM — 2027 / TAHUN 2–6
@@ -76,6 +79,8 @@ Enam RPH asal (T2-L035; T6-L006,014,018,060,117) kekal withheld;
 versi dalam ZIP ialah calon editorial, BUKAN rekod rasmi.
 Penutup 690 RPH ditukarkan kepada cadangan Jawi untuk semakan sahaja.
 78 kumpulan calon Jawi belum mendapat kelulusan ejaan/pakar.
+14 PdP tasmi' >60 ayat mempunyai cadangan aktiviti/PBD khas semakan editor,
+tanpa mengubah SP atau menetapkan julat ayat individu secara automatik.
 Juzuk 25 Tahun 6: 67 ayat masih belum dipetakan dalam RPT asal.
 T2 PdP035: pertindihan al-Baqarah 224 dengan PdP032 belum diputuskan.
 Buku Aktiviti Tahun 2/3: 174 latihan muka surat/SP belum disahkan.
@@ -90,6 +95,9 @@ def gather(root=None):
     kw={} if root is None else {"root":root}
     nonheld=jawi_preview(**kw)
     held=held_packet(**kw)
+    heavy=heavy_tasmi_editor(**kw)
+    heavy_by_id={x["id"]:x for x in heavy["rows"]}
+    assert len(heavy_by_id)==14
     assert nonheld["jawi_closing_candidates_injected_in_reversible_preview"] == 690
     assert held["fully_held_editor_candidates"]==6
     rows={}
@@ -100,9 +108,25 @@ def gather(root=None):
         assert ident not in HELD and ident not in rows
         status=("CRITICAL_SOURCE_HOLD" if ident in CRITICAL
                 else "UNVERIFIED_RPH_DRAFT")
+        display_fields=dict(item["display_fields"])
+        heavy_entry=heavy_by_id.get(ident)
+        if heavy_entry:
+            assert heavy_entry["unchanged_source_sp"]==display_fields["sp"],ident
+            assert heavy_entry["unchanged_source_objective"]==display_fields["objektif"],ident
+            assert heavy_entry["original_activity"]==display_fields["aktiviti_utama"],ident
+            assert heavy_entry["original_pbd"]==display_fields["pentaksiran"],ident
+            assert heavy_entry["source_catalog_modified"] is False
+            assert heavy_entry["can_publish"] is False
+            display_fields["aktiviti_utama"]=heavy_entry["proposed_activity_jawi"]
+            display_fields["pentaksiran"]=heavy_entry["proposed_pbd_jawi"]
         rows[ident]={
             "record":{"id":ident,"tahun":year,"lesson":lesson,
-                      "fields":item["display_fields"]},
+                      "fields":display_fields},
+            "tasmi_editor_overlay":heavy_entry is not None,
+            "tasmi_source_field_hashes":({
+                "aktiviti_utama":heavy_entry["original_activity_sha256"],
+                "pentaksiran":heavy_entry["original_pbd_sha256"],
+            } if heavy_entry else None),
             "review_status":status,
             "original_rumi_penutup":item["original_penutup_rumi"],
             "source_bahan_notes":item["editor_only_material_notes"],
@@ -113,6 +137,8 @@ def gather(root=None):
         rows[ident]={
             "record":normalize_held(item),
             "review_status":"ORIGINAL_HELD_EDITOR_CANDIDATE",
+            "tasmi_editor_overlay":False,
+            "tasmi_source_field_hashes":None,
             "original_rumi_penutup":None,
             "source_bahan_notes":[],
         }
@@ -121,6 +147,7 @@ def gather(root=None):
     assert dict(summary)==COUNT,summary
     assert sum(v["review_status"]=="CRITICAL_SOURCE_HOLD" for v in rows.values())==3
     assert sum(v["review_status"]=="ORIGINAL_HELD_EDITOR_CANDIDATE" for v in rows.values())==6
+    assert sum(v["tasmi_editor_overlay"] for v in rows.values())==14
     return [rows[k] for k in sorted(rows, key=lambda x:(int(x.split("-")[0][1:]),
                                                         int(x.split("-")[1][1:])))]
 
@@ -192,6 +219,7 @@ def create_report(output_dir, *, sample=0, batch_size=24):
             "review_status":entry["review_status"],
             "ready_for_teacher":False,
             "source_sp_approved":False,"jawi_approved":False,
+            "tasmi_editor_overlay":entry["tasmi_editor_overlay"],
             "file_docx":f"Tahun_{r['tahun']}/Word/{word.name}",
             "file_pdf":f"Tahun_{r['tahun']}/PDF/{pdf.name}",
             "pdf_pages":pages,
@@ -212,6 +240,7 @@ def create_report(output_dir, *, sample=0, batch_size=24):
         assert warning_counts["YEAR5_BUKU_AKTIVITI_EDITION_AND_EXERCISE_UNVERIFIED"] == 13
         assert warning_counts["ORIGINAL_RPT_YEAR6_JUZ25_67_AYAT_UNMAPPED"] == 7
         assert warning_counts["ORIGINAL_RPT_YEAR2_AYAH224_OVERLAP_UNRESOLVED"] == 1
+        assert warning_counts["HIGH_VOLUME_TASMI_PASSAGE_SELECTION_EDITOR_NOT_APPROVED"] == 14
     (output_dir/"INDEX_EDITOR_696.json").write_text(
         json.dumps({"status":"DRAF_EDITOR_ONLY_NO_GO",
                     "catalog_total":696,
@@ -220,6 +249,7 @@ def create_report(output_dir, *, sample=0, batch_size=24):
                     "not_one_page_ids":[r["id"] for r in records if not r["one_page_a4"]],
                     "all_source_documents_untouched":True,
                     "warning_code_counts":dict(sorted(warning_counts.items())),
+                    "tasmi_high_volume_editor_overlays":sum(x["tasmi_editor_overlay"] for x in records),
                     "year1_kp2027_out_of_scope":True,
                     "ready_for_teacher":0,
                     "rows":records},ensure_ascii=False,indent=2)+"\n",
@@ -263,6 +293,7 @@ def create_report(output_dir, *, sample=0, batch_size=24):
         "rendered_pdf":len(records),
         "one_page_a4":sum(x["one_page_a4"] for x in records),
         "warning_code_counts":dict(sorted(warning_counts.items())),
+        "tasmi_high_volume_editor_overlays":sum(x["tasmi_editor_overlay"] for x in records),
         "a4_binder_by_year":year_binders,
         "year_archives":zipped,
         "source_data_modified":False,
