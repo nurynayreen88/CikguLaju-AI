@@ -122,10 +122,26 @@ class RemainingRPTFormatQA(unittest.TestCase):
                         self.assertIn(required,first)
                     for forbidden in ("ALAMAT SEKOLAH","KUMPULAN A","KUMPULAN B","Halaman 1"):
                         self.assertNotIn(forbidden,first)
-                    # The same five columns as the already approved preview.
+                    # Five-column visual formatting stays the same, but
+                    # Jawi PI and Arabic BA must have native headings.
                     body="\n".join(pg.extract_text() for pg in pdf.pages[1:]).upper()
-                    for head in ("MINGGU / TARIKH","UNIT / TAJUK / PDP","SK","SP","CATATAN / BAHAN"):
-                        self.assertIn(head,body)
+                    if sub in ("pendidikan_islam","bahasa_arab"):
+                        self.assertNotIn("MINGGU / TARIKH",body)
+                        self.assertNotIn("CATATAN / BAHAN",body)
+                        with fitz.open(p) as original:
+                            clip=original[1].get_text("dict")
+                            spans=[s for block in clip["blocks"]
+                                   for line in block.get("lines",[])
+                                   for s in line["spans"]
+                                   if 46<=s["bbox"][1]<86 and s["bbox"][3]<90]
+                            self.assertTrue(any(
+                                any("\u0600"<=c<="\u08ff" or "\ufb50"<=c<="\ufeff"
+                                    for c in s["text"])
+                                for s in spans))
+                    else:
+                        for head in ("MINGGU / TARIKH","UNIT / TAJUK / PDP",
+                                     "SK","SP","CATATAN / BAHAN"):
+                            self.assertIn(head,body)
                     if sub=="bahasa_arab":
                         self.assertIn("BELUM DIPADANKAN",body)
                         with fitz.open(p) as doc:
