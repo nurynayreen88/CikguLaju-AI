@@ -70,6 +70,13 @@ class PIReleaseReadinessTests(unittest.TestCase):
         self.assertEqual(r["teacher_approved_page_specific_exercises"], 0)
         self.assertEqual(r["book_activity_page_candidates"], 174)
         self.assertEqual(r["year5_ambiguous_activity_book_source_mentions"], 13)
+        self.assertEqual(r["year5_khat_source_sp_code_and_objective_corrections"],4)
+        self.assertEqual(r["year5_khat_editor_pbd_and_worksheet_overlays"],13)
+        self.assertEqual(r["year5_khat_editor_fields_changed"],30)
+        self.assertEqual(r["year5_khat_official_activity_book_pages_verified"],0)
+        bycode={x["code"]:x for x in r["release_blockers"]}
+        self.assertEqual(bycode["YEAR5_KHAT_NASAKH_4_SOURCE_SP_CORRECTIONS_PENDING_EXPERT"]["affected_lessons"],4)
+        self.assertEqual(bycode["YEAR5_KHAT_NASAKH_13_EDITOR_PBD_AND_WORKSHEET_PENDING"]["affected_lessons"],13)
         source_issue = [b for b in r["release_blockers"] if b["code"] ==
                         "YEAR5_JAWI_BUKU_AKTIVITI_WORDING_SOURCE_UNVERIFIED"]
         self.assertEqual(len(source_issue), 1)
