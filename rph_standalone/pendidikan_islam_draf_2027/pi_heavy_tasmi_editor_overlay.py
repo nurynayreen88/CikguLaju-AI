@@ -17,6 +17,7 @@ from pathlib import Path
 
 from pi_quality_audit import ROOT, COUNT, HELD
 from pi_tasmi_continuity_quality_guard import audit as tasmi_source_audit
+from pi_quran_114_surah_range_audit import parse as source_verse_ranges
 
 EXPECTED = {
     "T5-L014", "T5-L018", "T5-L106", "T5-L109",
@@ -64,16 +65,32 @@ def generate(root=ROOT):
             assert "تسميع" in f["sk"] or "ختم القرءان" in f["sk"]
             assert all(f[k].strip() for k in ("sp","objektif","aktiviti_utama","pentaksiran"))
             assert f["aktiviti_utama"] != ACTIVITY and f["pentaksiran"] != PBD
+            spans = source_verse_ranges(f["sp"])
+            assert spans and sum(x["end"]-x["start"]+1 for x in spans) == heavy[row["id"]]["source_range_total_ayah"]
+            source_scope = "، ".join(
+                f"سورة {span['surah']} اية {span['start']}-{span['end']}"
+                for span in spans
+            )
+            # The *existing SP ranges* are named for each individual Lesson.
+            # Guru determines the exact student subset; the model assigns none.
+            proposed_activity=ACTIVITY.replace(
+                "برداسركن SP دان مصحف",
+                f"دالم جولتن {source_scope} برداسركن SP دان مصحف"
+            )
+            assert source_scope in proposed_activity and proposed_activity != ACTIVITY
             rows.append({
                 "id":row["id"],"year":year,"lesson":row["lesson"],
                 "source_range_ayat_count":heavy[row["id"]]["source_range_total_ayah"],
+                "source_surah_count":len(spans),
+                "source_surah_range_label":source_scope,
+                "source_surah_ranges":[{"surah":x["surah"],"start":x["start"],"end":x["end"]} for x in spans],
                 "unchanged_source_sp":f["sp"],
                 "unchanged_source_objective":f["objektif"],
                 "original_activity":f["aktiviti_utama"],
                 "original_pbd":f["pentaksiran"],
                 "original_activity_sha256":hashlib.sha256(f["aktiviti_utama"].encode("utf-8")).hexdigest(),
                 "original_pbd_sha256":hashlib.sha256(f["pentaksiran"].encode("utf-8")).hexdigest(),
-                "proposed_activity_jawi":ACTIVITY,
+                "proposed_activity_jawi":proposed_activity,
                 "proposed_pbd_jawi":PBD,
                 "teacher_selected_exact_ayah":None,
                 "full_sp_completion_certified":False,
@@ -90,6 +107,7 @@ def generate(root=ROOT):
     assert Counter(x["year"] for x in rows)=={5:4,6:10}
     assert min(x["source_range_ayat_count"] for x in rows)>60
     assert max(x["source_range_ayat_count"] for x in rows)==106
+    assert len({x["source_surah_range_label"] for x in rows})==14
     assert all(x["unchanged_source_sp"].strip() and
                not x["full_sp_completion_certified"] and
                x["teacher_selected_exact_ayah"] is None and
@@ -98,6 +116,7 @@ def generate(root=ROOT):
         "scope":"14 high-volume Quran tasmi Year5/6 editor previews only",
         "candidate_rph_activity_and_pbd_overlays":len(rows),
         "year5":4,"year6":10,
+        "source_specific_surah_range_labels":len({x["source_surah_range_label"] for x in rows}),
         "source_ayah_min":min(x["source_range_ayat_count"] for x in rows),
         "source_ayah_max":max(x["source_range_ayat_count"] for x in rows),
         "original_catalog_files_overwritten":0,
