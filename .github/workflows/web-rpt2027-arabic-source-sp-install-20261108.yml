@@ -5,6 +5,8 @@ on:
       - feature/web-rpt2027-arabic-t2t6-spdraft-20261108
     paths:
       - .github/workflows/web-rpt2027-arabic-source-sp-install-20261108.yml
+      - scripts/stage_web_arabic_rpt_2027_sp_candidates.py
+      - tests/test_web_rpt2027_arabic_dskp_sp_release_gate_20261108.py
 permissions:
   contents: write
   actions: read
