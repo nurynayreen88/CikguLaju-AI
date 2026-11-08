@@ -263,7 +263,11 @@ def install(runtime) -> bool:
         verified = verify_state(resolved_state)
         if verified is None:
             return previous(state, *args, **kwargs)
-        rows = previous(state, *args, **kwargs)
+        # Pass the verified native identity to the original renderer too.
+        # Telegram quick-material callbacks may omit source_sequence_no;
+        # giving the unresolved state to the renderer risks generating an
+        # unrelated legacy document before v60 replaces its rows.
+        rows = previous(resolved_state, *args, **kwargs)
         return adapt_rows(resolved_state, rows)
 
     runtime._rph_rows = render
