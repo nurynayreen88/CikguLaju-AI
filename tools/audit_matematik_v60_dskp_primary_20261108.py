@@ -99,12 +99,12 @@ def audit_dskp_primary():
         }
     # Semantic conflicts are a different axis from SP-code presence.
     # Never claim that a code existing in a PDF verifies its teaching scope.
-    ledger_path = ROOT / "audits/matematik_y6_pdp004_006_semantic_conflict_20261108.json"
+    ledger_path = ROOT / "audits/matematik_y6_semantic_scope_review_expanded_20261108.json"
     ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
     if (ledger.get("schema") != "cikgulaju.math.y6.native_semantic_hold.v1"
             or ledger.get("approved_count") != 0 or ledger.get("final_ready") is not False
             or ledger.get("production_modified") is not False
-            or len(ledger.get("cases", [])) != 8):
+            or len(ledger.get("cases", [])) != 23):
         raise ValueError("Unexpected Mathematics semantic-review ledger")
     by_pdp = {
         item["pdp_code"]: item
@@ -123,9 +123,12 @@ def audit_dskp_primary():
         # These are precisely codes that *pass* naive presence checking.
         if any(p["pdp_code"] == key for p in affected):
             raise ValueError("Semantic case unexpectedly counted as missing code")
-        if case.get("candidate_dskp_sp") and (
-                case["candidate_dskp_sp"] not in data["documents"]["6"]["sp_codes"]):
-            raise ValueError("Suggested semantic SP not in reference DSKP")
+        if case.get("candidate_dskp_sp"):
+            suggested = [p.strip() for p in case["candidate_dskp_sp"].split(";")]
+            if not suggested or any(
+                p not in data["documents"]["6"]["sp_codes"] for p in suggested
+            ):
+                raise ValueError("Suggested semantic SP not in reference DSKP")
         extra_semantic.append({
             "year": 6,
             "pdp_code": key,
@@ -149,7 +152,7 @@ def audit_dskp_primary():
         "code_present_but_semantically_conflicting_known_cases": extra_semantic,
         "known_semantic_conflict_count": len(extra_semantic),
         "known_distinct_pdp_requiring_review_minimum": len(affected) + len(extra_semantic),
-        "coverage_warning": "This is a minimum of 98 absent-code PdP and 8 independently sourced topic/SP scope warnings, not a complete semantic audit of all 528 PdP.",
+        "coverage_warning": "This is a minimum of 98 absent-code PdP and 23 independently sourced topic/SP scope warnings, not a complete semantic audit of all 528 PdP.",
         "release_decision": "HOLD",
         "academic_signoff": False,
         "runtime_e2e_passed": False,
