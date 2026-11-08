@@ -27,8 +27,8 @@ jobs:
       - name: Check out exact known-clean PR441 source without updating it
         run: |
           git fetch --no-tags origin '+refs/heads/feat/rpt2027-sejarah-pjpk-unified-staging-20261107:refs/remotes/origin/rpt441'
-          git cat-file -e 1feb9100f10e0eece2e3447a66febfeb58d98718^{commit}
-          git worktree add --detach /tmp/rpt2027_clean_source 1feb9100f10e0eece2e3447a66febfeb58d98718
+          git cat-file -e db8b20258a5249c1e16d3adae0c1c3d100838681^{commit}
+          git worktree add --detach /tmp/rpt2027_clean_source db8b20258a5249c1e16d3adae0c1c3d100838681
       - name: Build all 56 five-column reviewer PDFs from exact original records
         working-directory: /tmp/rpt2027_clean_source
         run: |
