@@ -13,6 +13,7 @@ on:
       - "tools/audit_matematik_v60_dskp_primary_20261108.py"
       - "audits/matematik_v60_dskp_primary_sp_inventory_20261108.json"
       - "audits/matematik_y6_pdp004_006_semantic_conflict_20261108.json"
+      - "audits/matematik_y6_semantic_scope_review_expanded_20261108.json"
       - "web/telegram_verified_sequence_rph_bridge.py"
       - "tools/run_telegram_with_curriculum_api.py"
       - "tests/test_matematik_v60_native_rows_20261108.py"
@@ -104,12 +105,12 @@ jobs:
           import json
           r=json.load(open('/tmp/matematik_v60_dskp_primary_audit.json',encoding='utf-8'))
           assert r['affected_native_pdp_total']==98
-          assert r['known_semantic_conflict_count']==8
-          assert r['known_distinct_pdp_requiring_review_minimum']==106
+          assert r['known_semantic_conflict_count']==23
+          assert r['known_distinct_pdp_requiring_review_minimum']==121
           assert r['distinct_absent_code_year_pairs']==65
           assert all(not v['v60_absent_codes'] for v in r['years'].values())
           assert r['academic_signoff'] is False and r['production_modified'] is False
-          print("DSKP CODE AUDIT PASS: 98 absent-code PdP + 8 known code-present semantic scope warnings. RELEASE HOLD.")
+          print("DSKP CODE AUDIT PASS: 98 absent-code PdP + 23 code-present semantic scope warnings. RELEASE HOLD.")
           PY
 
       - name: Preserve signed-source crosswalk audit for review (staging only)
