@@ -70,7 +70,7 @@ def audit(root=ROOT):
         assert meta["revision"]==(
             "pi-y5-l049-mad-iwad-crossfield-20261108" if is49
             else "pi-y5-l041-l045-mad-iwad-copyedit-20261108")
-        assert meta["source_sp_target_hukum" if is49 else "source_sp_target_hukum"]=="مد عوض"
+        assert meta["source_sp_hukum" if is49 else "source_sp_target_hukum"]=="مد عوض"
         assert meta["publication"]=="HOLD" and meta["teacher_ready"] is False
         assert meta["academic_expert_approved"] is False
         assert meta["jawi_orthography_approved"] is False
