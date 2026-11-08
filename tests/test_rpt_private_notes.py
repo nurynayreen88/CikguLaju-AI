@@ -88,7 +88,7 @@ class PrivateRPTNoteTests(unittest.TestCase):
                 self.assertNotIn("Pemetaan buku teks untuk Lesson", full)
                 self.assertNotIn("tidak mereka halaman buku teks", full)
                 self.assertIn("DRAF SEMAKAN", full)
-                self.assertEqual(len(set(re.findall(r"PdP\\s+(\\d{3})", full))), total)
+                self.assertEqual(len(set(re.findall(r"PdP\s+(\d{3})", full))), total)
             self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), source_hash)
 
 
