@@ -15,7 +15,7 @@ def sample_document(fmt):
     if fmt=="pdf":
         return BytesIO(b"%PDF-1.5\n"+b"\x20"*1300+b"\n%%EOF\n")
     binary=BytesIO()
-    with ZipFile(binary,"w",ZIP_DEFLATED) as target:
+    with ZipFile(binary,"w") as target:
         target.writestr("word/document.xml",
                         b'<?xml version="1.0"?><w:document>'+b"a"*1600+
                         b'</w:document>')
