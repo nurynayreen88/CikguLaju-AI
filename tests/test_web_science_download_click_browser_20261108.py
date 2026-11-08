@@ -50,6 +50,11 @@ class ScienceBrowserDownloadTest(unittest.TestCase):
           verifiedRphFormats=['word','pdf'];
           applyRphAccount({rph_access_mode:'trial',rph_trial_remaining:10});
           showRphAction();
+          // Real teacher flow: select Lesson, then press "Jana Bahan".
+          // Direct legacy #rph-word/pdf buttons are intentionally hidden.
+          const materials=document.getElementById('show-materials');
+          materials.hidden=false;
+          materials.disabled=false;
           window.__sainsRequests=[];
           window.fetch=async (url,options)=>{
             const target=String(url);
@@ -73,29 +78,23 @@ class ScienceBrowserDownloadTest(unittest.TestCase):
               {status:503,headers:{'content-type':'application/json'}});
           };
         }""",{"unit":UNIT,"pdp":PDP})
-        actual=self.page.locator("#rph-word").evaluate("""el=>{
-            const chain=[];
-            for(let node=el;node;node=node.parentElement){
-              const style=getComputedStyle(node);
-              chain.push({name:node.tagName+'#'+node.id,
-                hidden:node.hidden,display:style.display,
-                visibility:style.visibility});
-            }
-            return chain;
-        }""")
-        self.assertTrue(self.page.locator("#rph-word").is_visible(),
-                        "RPH Word control hidden in synthetic teacher workspace: "+repr(actual))
+        self.assertTrue(self.page.locator("#show-materials").is_visible())
+
 
     def tearDown(self):
         self.page.close()
 
     def test_real_word_and_pdf_click_decrements_shared_balance_once_each(self):
-        self.assertTrue(self.page.locator("#rph-word").is_enabled())
-        self.assertTrue(self.page.locator("#rph-pdf").is_enabled())
+        self.page.locator("#show-materials").click()
+        self.assertTrue(self.page.locator("#materials-panel").is_visible())
+        self.assertEqual(self.page.locator("#materials-list li").count(),2)
+        self.assertTrue(self.page.locator("#rph-download-actions").is_hidden())
         for fmt,balance in (("word",9),("pdf",8)):
             with self.subTest(fmt=fmt):
                 with self.page.expect_download() as downloaded:
-                    self.page.locator("#rph-"+fmt).click()
+                    label="RPH Word" if fmt=="word" else "RPH PDF"
+                    self.page.locator("#materials-list li").filter(
+                        has_text=label).locator("button").click()
                 result=downloaded.value
                 self.assertTrue(result.suggested_filename.endswith(
                     ".docx" if fmt=="word" else ".pdf"))
@@ -117,9 +116,12 @@ class ScienceBrowserDownloadTest(unittest.TestCase):
             applyRphAccount({rph_access_mode:'exhausted',rph_trial_remaining:0});
             showRphAction();
         }""")
-        self.assertTrue(self.page.locator("#rph-download-actions").is_hidden())
-        self.assertFalse(self.page.locator("#rph-word").is_enabled())
-        self.assertFalse(self.page.locator("#rph-pdf").is_enabled())
+        self.page.locator("#show-materials").click()
+        self.assertTrue(self.page.locator("#materials-panel").is_visible())
+        self.assertEqual(self.page.locator("#materials-list li").count(),2)
+        for row in self.page.locator("#materials-list li").all():
+            self.assertIn("Akses diperlukan",row.inner_text())
+            self.assertFalse(row.locator("button").is_enabled())
         self.assertIn("0 daripada 10 janaan",
                       self.page.locator("#account-access").inner_text())
         self.assertEqual(self.page.evaluate("window.__sainsRequests.length"),0)
@@ -135,7 +137,9 @@ class ScienceBrowserDownloadTest(unittest.TestCase):
               {status:503,headers:{'content-type':'application/json'}});
           };
         }""")
-        self.page.locator("#rph-word").click()
+        self.page.locator("#show-materials").click()
+        self.page.locator("#materials-list li").filter(
+            has_text="RPH Word").locator("button").click()
         self.page.wait_for_function("""() =>
           document.querySelector('#rph-download-status')
              .textContent.includes('Penjana RPH Telegram belum dapat dihubungi')
