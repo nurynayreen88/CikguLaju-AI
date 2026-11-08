@@ -7,9 +7,21 @@ The crosswalk classifies candidates and ambiguity for human source review.
 from __future__ import annotations
 
 from collections import Counter, defaultdict
+import re
 
 from rph_standalone.matematik.v60_source_loader import get_lesson
 from web.matematik_v60_native_rows import parse_lesson
+
+
+_SUBSTANDARD = re.compile(r"(\\d+\\.\\d+\\.\\d+)(?:\\([^()]+\\))?")
+
+
+def _parent_codes(value: str) -> tuple[str, ...] | None:
+    parts = [p.strip() for p in str(value).split(";") if p.strip()]
+    matches = [_SUBSTANDARD.fullmatch(p) for p in parts]
+    if not matches or any(m is None for m in matches):
+        return None
+    return tuple(dict.fromkeys(m.group(1) for m in matches))
 
 
 def make_candidates(year: int, native_rows: list[dict]) -> dict:
@@ -68,8 +80,29 @@ def make_candidates(year: int, native_rows: list[dict]) -> dict:
             candidates = sources.get(pair, [])
             info["candidate_v60_lessons"] = candidates
             if not candidates:
-                info.update(status="UNMAPPED_NO_EXACT_SKSP",
-                            reason="No v60 Lesson has this exact SK/SP")
+                parent_codes = _parent_codes(pair[1])
+                if parent_codes is None:
+                    info.update(status="UNPARSEABLE_NATIVE_SP_REQUIRES_REVIEW",
+                                reason="Native SP syntax requires exact human review")
+                elif len(parent_codes) > 1 or ";" in pair[0]:
+                    info["native_parent_sp_codes"] = list(parent_codes)
+                    info.update(status="COMPOSITE_MULTI_SP_REQUIRES_OWN_RPH",
+                                reason="One native PdP combines multiple standards; "
+                                       "must not replace with a single-SP v60 plan")
+                elif (len(parent_codes) == 1 and parent_codes[0] != pair[1]):
+                    parent = sources.get((pair[0], parent_codes[0]), [])
+                    info["native_parent_sp_codes"] = list(parent_codes)
+                    info["candidate_v60_lessons"] = parent
+                    if parent:
+                        info.update(status="PARENT_SP_SUBPART_REVIEW",
+                                    reason="Native source cites SP subitems, but v60 "
+                                           "cites the parent; needs item-level approval")
+                    else:
+                        info.update(status="UNMAPPED_NO_PARENT_SP",
+                                    reason="No parent SP in v60 for native subparts")
+                else:
+                    info.update(status="UNMAPPED_NO_EXACT_SKSP",
+                                reason="No v60 Lesson has this exact atomic SK/SP")
             elif len(candidates) > 1:
                 info.update(status="AMBIGUOUS_DUPLICATE_SKSP",
                             reason="More than one v60 Lesson has the same SK/SP")
