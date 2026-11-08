@@ -21,6 +21,9 @@ RULES = {
     "EDITOR_ACTION": r"(?:semak\s+tajuk\s+penuh|pengesahan\s+instrumen\s+belum\s+selesai|pengesahan\s+guru\s+belum\s+(?:dibuat|selesai)|kelulusan\s+guru\s+masih\s+tertangguh)",
     "UNVERIFIED_CANDIDATE": r"(?:calon\s+teks\s+digital|belum\s+dipadankan|tiada\s+janaan\s+automatik\s+sehingga\s+pengesahan\s+selesai)",
     "RELEASE_COMMAND": r"(?:JANGAN\s+MERGE|JANGAN\s+DEPLOY|RELEASE\s+BLOCKED|BUKAN\s+UNTUK\s+GURU)",
+    "INTERNAL_SOURCE_ID": r"\b(?:Sumber|Source)\s*:\s*[A-Za-z0-9_]{4,}",
+    "UNHELPFUL_REFERENCE_DIRECTIVE": r"\bRujukan\s*:\s*Rujuk\s+DSKP\b",
+    "HELD_REVIEW_ONLY": r"\bHOLD\s*:",
 }
 _COMPILED = tuple((key, re.compile(value, flags=re.IGNORECASE)) for key, value in RULES.items())
 SUFFIXES = frozenset((".pdf", ".html", ".htm", ".csv", ".txt"))
