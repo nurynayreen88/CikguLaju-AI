@@ -120,7 +120,9 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", help="Write new JSON audit; refuse overwrite")
     parser.add_argument("--require-mapping", action="store_true",
-                        help="Explicit release prerequisite; exit nonzero if not 585/585")
+                        help="Explicit mapping-only gate; fail if not 585/585")
+    parser.add_argument("--require-release", action="store_true",
+                        help="Strict FINAL READY gate: source, academic, E2E must all be signed")
     args = parser.parse_args()
     result = audit_snapshot()
     text = json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True)
@@ -130,7 +132,14 @@ def main():
             fh.write(text + "\n")
     print(text)
     if args.require_mapping and not result["mapping_ready"]:
-        raise SystemExit("RELEASE HOLD: 585 native Mathematics PdP do not uniquely match v60")
+        raise SystemExit("MAPPING HOLD: Telegram Maths native and v60 identifiers differ")
+    if args.require_release and not (
+        result["mapping_ready"]
+        and result.get("academic_signoff") is True
+        and result.get("runtime_e2e_passed") is True
+        and result.get("release_decision") == "READY"
+    ):
+        raise SystemExit("RELEASE HOLD: academic, native mapping and E2E signoff incomplete")
 
 
 if __name__ == "__main__":
