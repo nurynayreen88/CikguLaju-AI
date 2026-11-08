@@ -143,7 +143,11 @@ class RemainingRPTFormatQA(unittest.TestCase):
                                      "SK","SP","CATATAN / BAHAN"):
                             self.assertIn(head,body)
                     if sub=="bahasa_arab":
-                        self.assertIn("BELUM DIPADANKAN",body)
+                        # Missing official Arabic text stays flagged in the source
+                        # audit ledger, never printed as a teacher-facing placeholder.
+                        self.assertNotIn("BELUM DIPADANKAN",body)
+                        self.assertTrue(all(x["source_sp_dskp_text_signoff"] is False
+                                            for x in arabic_records(year)))
                         with fitz.open(p) as doc:
                             urls=[link["uri"] for page in list(doc)[1:]
                                   for link in page.get_links() if link.get("uri")]
