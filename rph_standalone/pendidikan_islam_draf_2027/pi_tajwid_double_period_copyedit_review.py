@@ -49,7 +49,22 @@ def audit(root=ROOT):
             assert edit["activity_semantics_unchanged"] is True
             original = edit["original_activity"]
             assert original.count(BEFORE) == 1, record["id"]
-            assert record["fields"]["aktiviti_utama"] == original.replace(BEFORE, AFTER), record["id"]
+            # Validate the original one-character punctuation correction first.
+            # Later source-backed fixes (e.g. inverted ayat order) retain both
+            # versions and must be chained without erasing this provenance.
+            after_punctuation = original.replace(BEFORE, AFTER)
+            current = record["fields"]["aktiviti_utama"]
+            subsequent = record.get("staging_quran_name_range_primary_source_correction")
+            if current != after_punctuation:
+                assert subsequent is not None, record["id"]
+                assert subsequent["revision"] == "pi-surah-normalization-verse-order-20261108"
+                assert subsequent["original_fields"]["aktiviti_utama"] == after_punctuation
+                assert subsequent["revised_fields"]["aktiviti_utama"] == current
+                assert subsequent["specialist_tajwid_jawi_approved"] is False
+                assert subsequent["publication"] == "HOLD"
+            else:
+                assert not subsequent or "aktiviti_utama" not in subsequent.get("original_fields", {})
+
             assert BEFORE not in record["fields"]["aktiviti_utama"]
             ids.append(record["id"])
             verified.append({"id": record["id"], "year": year,
