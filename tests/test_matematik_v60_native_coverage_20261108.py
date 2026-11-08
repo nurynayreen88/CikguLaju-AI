@@ -59,6 +59,15 @@ class CoverageGateTest(unittest.TestCase):
         self.assertFalse(report["academic_signoff"])
         self.assertFalse(report["runtime_e2e_passed"])
 
+    def test_old_science_v26_flag_cannot_authorize_math_mapping(self):
+        misleading = SimpleNamespace(
+            CIKGULAJU_DB_V2600_ACTIVE=True,
+            _sm2542_rows=lambda year, subject: [source_row(2)],
+        )
+        with patch.dict(os.environ, FLAG):
+            with self.assertRaises(NativeCoverageUnavailable):
+                audit_native_mapping(misleading)
+
     def test_no_live_db_or_flag_fails_closed(self):
         with patch.dict(os.environ, FLAG):
             with self.assertRaises(NativeCoverageUnavailable):
