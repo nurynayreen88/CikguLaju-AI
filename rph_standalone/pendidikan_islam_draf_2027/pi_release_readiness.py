@@ -36,6 +36,8 @@ from pi_t3_solat_case_sequence_audit import audit as solat_sequence_audit
 from pi_tasmi_continuity_quality_guard import audit as tasmi_continuity_audit
 from pi_rpt_source_errata_editor_register import audit as rpt_errata_audit
 from pi_heavy_tasmi_editor_overlay import generate as heavy_tasmi_editor
+from pi_y5_khat_nasakh_source_audit import audit as year5_khat_source_audit
+from pi_y5_khat_nasakh_editor_overlay import generate as year5_khat_editor
 
 
 def readiness(root=ROOT):
@@ -67,6 +69,18 @@ def readiness(root=ROOT):
     tasmi_continuity = tasmi_continuity_audit(root)
     rpt_errata = rpt_errata_audit(root)
     heavy_tasmi = heavy_tasmi_editor(root)
+    year5_khat_source = year5_khat_source_audit(root)
+    year5_khat_preview = year5_khat_editor(root)
+    assert year5_khat_source["four_corrected_ayat_and_tekal_sp_records"] == 4
+    assert year5_khat_source["source_printed_pages"] == [43,44]
+    assert year5_khat_source["academic_expert_approvals"] == 0
+    assert year5_khat_source["release"] == "NO_GO"
+    assert year5_khat_preview["editor_proposed_improvements"] == 13
+    assert year5_khat_preview["editor_changed_field_count"] == 30
+    assert year5_khat_preview["preview_unsupported_official_activity_book_mentions"] == 0
+    assert year5_khat_preview["new_source_verified_workbook_pages"] == 0
+    assert year5_khat_preview["jawi_expert_approvals"] == 0
+    assert year5_khat_preview["release"] == "NO_GO"
     assert heavy_tasmi["candidate_rph_activity_and_pbd_overlays"] == 14
     assert heavy_tasmi["original_catalog_files_overwritten"] == 0
     assert heavy_tasmi["official_ayah_boundaries_reassigned"] == 0
@@ -212,6 +226,12 @@ def readiness(root=ROOT):
     assert sum(x["closing_jawi_candidate_exists"] for x in grouped.values()) == 690
     # Evidence needed before a future release decision; no implicit approval.
     blockers = [
+        {"code":"YEAR5_KHAT_NASAKH_4_SOURCE_SP_CORRECTIONS_PENDING_EXPERT",
+         "affected_lessons": year5_khat_source["four_corrected_ayat_and_tekal_sp_records"],
+         "action":"Four Year5 khat PdP staged SP7.2.5 ayat and SP7.2.6 tekal from KPM DSKP p43-44; original text preserved, Jawi/lesson academic signoff and RPT source check pending"},
+        {"code":"YEAR5_KHAT_NASAKH_13_EDITOR_PBD_AND_WORKSHEET_PENDING",
+         "affected_lessons": year5_khat_preview["editor_proposed_improvements"],
+         "action":"13 source RPH mention unverified Buku Aktiviti in PBD/activity. Restricted editor Word/PDF shows SP-specific huruf, perkataan, ayat PBD using teacher-made worksheets. No official Year5 workbook edition/page/exercise verified or linked; expert/Jawi approval pending"},
         {"code": "HEAVY_TASMI_14_EDITOR_ACTIVITIES_REQUIRE_TEACHER_SELECTION",
          "affected_lessons": heavy_tasmi["candidate_rph_activity_and_pbd_overlays"],
          "action": "14 Year5/6 lessons list 61-106 Quran ayat; editor Word/PDF now uses realistic individual selected passages, talaqqi and PBD but exact student verse range, Jawi accuracy, completion timing and full-SP mastery are unapproved"},
@@ -316,6 +336,10 @@ def readiness(root=ROOT):
         "teacher_approved_page_specific_exercises": 0,
         "book_activity_page_candidates": 174,
         "year5_ambiguous_activity_book_source_mentions": qa["unverified_year4_to6_activity_book_wording_count"],
+        "year5_khat_source_sp_code_and_objective_corrections": year5_khat_source["four_corrected_ayat_and_tekal_sp_records"],
+        "year5_khat_editor_pbd_and_worksheet_overlays": year5_khat_preview["editor_proposed_improvements"],
+        "year5_khat_editor_fields_changed": year5_khat_preview["editor_changed_field_count"],
+        "year5_khat_official_activity_book_pages_verified": year5_khat_preview["new_source_verified_workbook_pages"],
         "quran_verse_range_occurrences_screened": quran_114["verse_range_occurrences_evaluated"],
         "quran_invalid_verse_ranges_in_staging": quran_114["invalid_chapter_verse_ranges"],
         "quran_sp_objective_pbd_range_mismatches_in_staging": quran_114["crossfield_surah_verse_mismatches"],
