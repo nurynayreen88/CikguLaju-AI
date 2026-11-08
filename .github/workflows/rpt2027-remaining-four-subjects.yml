@@ -101,6 +101,7 @@ jobs:
           python -m unittest tests.test_rpt2027_teacher_text_leak_scan -v
           python -m scripts.audit_rpt2027_teacher_text_leaks_20261108 \
             --teacher-output-only \
+            --fail-on-findings \
             --output staging/rpt_2027_seragam_2026/teacher_text_leak_BM-PI-ARAB-MUZIK.json \
             staging/rpt_2027_seragam_2026/baki_4_subjek_DRAF
       - uses: actions/upload-artifact@v4
