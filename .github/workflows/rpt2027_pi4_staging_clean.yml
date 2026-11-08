@@ -1,0 +1,57 @@
+name: Stage clean RPT Pendidikan Islam Tahun 4 2027
+
+on:
+  push:
+    branches:
+      - fix/rpt2027-strip-internal-notes-20261108
+    paths:
+      - "web/rpt_private_notes.py"
+      - "scripts/clean_rpt2027_pi4_asset.py"
+      - ".github/workflows/rpt2027_pi4_staging_clean.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  clean-static-pdf:
+    if: github.ref == 'refs/heads/fix/rpt2027-strip-internal-notes-20261108'
+    runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: .
+    steps:
+      - name: Checkout isolated staging branch
+        uses: actions/checkout@v4
+        with:
+          ref: fix/rpt2027-strip-internal-notes-20261108
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install PDF verification runtime
+        run: python -m pip install "PyMuPDF>=1.24,<1.27"
+
+      - name: Create verified source PDF and update only matching SHA-256 entries
+        run: python scripts/clean_rpt2027_pi4_asset.py
+
+      - name: Run isolated PDF regression tests
+        run: python -m unittest discover -s tests -p "test_rpt_private_notes.py" -v
+
+      - name: Commit only four intended static release artifacts to staging
+        shell: bash
+        run: |
+          git add \
+            rpt_2027/web_2027_pdfs/pendidikan_islam/tahun_4.pdf \
+            rpt_2027/web_2027_pdfs/manifest.json \
+            rpt_2027/web_2027_pdfs/original_cover_layout_verified.json \
+            rpt_2027/web_2027_pdfs/PI4_INTERNAL_PROSE_20261108_DRAF_AUDIT.json
+          if ! git diff --cached --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "fix(rpt2027): clean PI Year4 teacher PDF; preserve 55 other assets"
+            git push origin HEAD:fix/rpt2027-strip-internal-notes-20261108
+          fi
