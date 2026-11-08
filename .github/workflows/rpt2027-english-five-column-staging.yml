@@ -54,10 +54,18 @@ jobs:
                   doc[0].get_pixmap(matrix=fitz.Matrix(1.4,1.4),alpha=False).save(str(f.with_suffix('.cover.png')))
                   doc[1].get_pixmap(matrix=fitz.Matrix(1.4,1.4),alpha=False).save(str(f.with_suffix('.page2.png')))
           PY
+      - name: Audit RPT developer-note leakage in ENGLISH output (read-only)
+        run: |
+          python -m unittest tests.test_rpt2027_teacher_text_leak_scan -v
+          python -m scripts.audit_rpt2027_teacher_text_leaks_20261108 \
+            --teacher-output-only \
+            --output staging/rpt_2027_seragam_2026/teacher_text_leak_ENGLISH.json \
+            staging/rpt_2027_seragam_2026/english_reflow_DRAF
       - uses: actions/upload-artifact@v4
         with:
           name: RPT2027-ENGLISH-Y2Y6-800-LIMA-LAJUR-DRAF
           path: |
+            staging/rpt_2027_seragam_2026/teacher_text_leak_ENGLISH.json
             staging/rpt_2027_seragam_2026/english_reflow_DRAF/*.pdf
             staging/rpt_2027_seragam_2026/english_reflow_DRAF/*.png
           if-no-files-found: error
