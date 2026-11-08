@@ -29,6 +29,8 @@ on:
       - "tests/test_matematik_y6_rpt2027_finance_drafts_20261108.py"
       - "tools/build_matematik_y6_staging_rph_a4_20261108.py"
       - "tests/test_matematik_y6_13_rph_a4_proofs_20261108.py"
+      - "rph_standalone/matematik/staging_draf_y6_9_pdp_dskp2021_sumber_primer_20261108.md"
+      - "tests/test_matematik_y6_9_dskp2021_primary_drafts_20261108.py"
       - "tests/test_matematik_y6_ratio_drafts_20261108.py"
       - "rph_standalone/matematik/staging_draf_y6_pdp007_012_dskp_bukuteks_20261108.md"
       - "tests/test_matematik_v60_private_sequence_20261108.py"
@@ -78,6 +80,7 @@ jobs:
           python -m unittest discover -s tests -p "test_matematik_y6_ratio_drafts_20261108.py" -v
           python -m unittest discover -s tests -p "test_matematik_y6_rpt2027_finance_drafts_20261108.py" -v
           python -m unittest discover -s tests -p "test_matematik_y6_13_rph_a4_proofs_20261108.py" -v
+          python -m unittest discover -s tests -p "test_matematik_y6_9_dskp2021_primary_drafts_20261108.py" -v
           python -m unittest discover -s tests -p "test_matematik_v60_private_sequence_20261108.py" -v
           python -m unittest discover -s tests -p "test_matematik_v60_web_telegram_state_20261108.py" -v
 
@@ -119,22 +122,22 @@ jobs:
           print("DSKP CODE AUDIT PASS: 98 absent-code PdP + 23 code-present semantic scope warnings. RELEASE HOLD.")
           PY
 
-      - name: Render 13 isolated Maths Year 6 draft RPH as A4 DOCX and PDF (not release)
+      - name: Render 22 isolated Maths Year 6 draft RPH as A4 DOCX and PDF (not release)
         run: |
-          mkdir -p /tmp/matematik-y6-13-rph-a4
-          python -m tools.build_matematik_y6_staging_rph_a4_20261108 --output-dir /tmp/matematik-y6-13-rph-a4
+          mkdir -p /tmp/matematik-y6-22-rph-a4
+          python -m tools.build_matematik_y6_staging_rph_a4_20261108 --output-dir /tmp/matematik-y6-22-rph-a4
           if ! command -v libreoffice >/dev/null 2>&1; then
             sudo apt-get update -qq
             sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq libreoffice-writer >/dev/null
           fi
-          libreoffice -env:UserInstallation=file:///tmp/lo_math_y6_qa --headless --convert-to pdf --outdir /tmp/matematik-y6-13-rph-a4 /tmp/matematik-y6-13-rph-a4/*.docx
+          libreoffice -env:UserInstallation=file:///tmp/lo_math_y6_qa --headless --convert-to pdf --outdir /tmp/matematik-y6-22-rph-a4 /tmp/matematik-y6-22-rph-a4/*.docx
           python - <<'PY'
           import json
           from pathlib import Path
           from pypdf import PdfReader
-          out=Path("/tmp/matematik-y6-13-rph-a4")
+          out=Path("/tmp/matematik-y6-22-rph-a4")
           info=json.loads((out/"manifest.json").read_text(encoding="utf-8"))
-          assert info["count"]==13 and info["status"]=="ACADEMIC_HOLD"
+          assert info["count"]==22 and info["status"]=="ACADEMIC_HOLD"
           assert info["production_modified"] is False
           seen=set()
           for d in info["items"]:
@@ -152,19 +155,19 @@ jobs:
               assert d["code"] in text and "BELUM DILULUSKAN" in text
               assert "PBD" in text and "Penutup" in text
               print("A4 ONE PAGE CHECK",d["code"],"PASS")
-          assert len(seen)==13
+          assert len(seen)==22
           (out/"QA_PDF_ONE_PAGE_PASSED.txt").write_text(
-              "13/13 A4 Word/PDF draft proofs passed technical one-page checks.\n"
+              "22/22 A4 Word/PDF draft proofs passed technical one-page checks.\n"
               "ACADEMIC RELEASE: HOLD. No live Web/Telegram E2E or content signoff.\n",
               encoding="utf-8")
           PY
 
-      - name: Preserve 13 A4 Word+PDF draft RPH proofs for visual review
+      - name: Preserve 22 A4 Word+PDF draft RPH proofs for visual review
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: matematik-y6-13-rph-a4-draf-only
-          path: /tmp/matematik-y6-13-rph-a4/
+          name: matematik-y6-22-rph-a4-draf-only
+          path: /tmp/matematik-y6-22-rph-a4/
           if-no-files-found: warn
           retention-days: 14
       - name: Preserve signed-source crosswalk audit for review (staging only)
