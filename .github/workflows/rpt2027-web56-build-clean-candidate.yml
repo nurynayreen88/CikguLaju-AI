@@ -1,0 +1,54 @@
+name: Web RPT 2027 clean 56 PDF staged replacement candidates
+on:
+  pull_request:
+    paths:
+      - 'scripts/build_web56_clean_catalog_candidate_20261108.py'
+      - 'scripts/audit_rpt2027_teacher_text_leaks_20261108.py'
+      - '.github/workflows/rpt2027-web56-build-clean-candidate.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  clean_candidate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'reportlab==4.2.5' 'pypdf==5.1.0' 'PyMuPDF==1.24.14' 'beautifulsoup4==4.12.3' 'arabic-reshaper==3.0.0' 'python-bidi==0.6.3'
+      - name: Check out exact known-clean PR441 source without updating it
+        run: |
+          git fetch --no-tags origin '+refs/heads/feat/rpt2027-sejarah-pjpk-unified-staging-20261107:refs/remotes/origin/rpt441'
+          git cat-file -e 514f562b95867b8f6954d169b9397a3c2af2e144^{commit}
+          git worktree add --detach /tmp/rpt2027_clean_source 514f562b95867b8f6954d169b9397a3c2af2e144
+      - name: Build all 56 five-column reviewer PDFs from exact original records
+        working-directory: /tmp/rpt2027_clean_source
+        run: |
+          python -m scripts.build_rpt_2027_standard_preview
+          python -m scripts.build_rpt_2027_second_batch_preview
+          python -m scripts.build_rpt_2027_remaining_four_subjects_staging
+          python -m scripts.build_rpt_2027_mathematics_pdf_reflow_staging
+          python -m scripts.build_rpt_2027_english_pdf_reflow_staging
+          python -m scripts.build_rpt_2027_sains_342_actual_source_staging
+      - name: Verify 56 identities, official preview covers and zero dev notes
+        run: |
+          python -m scripts.build_web56_clean_catalog_candidate_20261108 --source /tmp/rpt2027_clean_source/staging/rpt_2027_seragam_2026
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('staging/web56_teacher_leaks_20261108/clean_catalog/clean_candidate_audit.json')
+          x=json.loads(p.read_text())
+          assert x['clean_pdf_count']==56
+          assert x['source_pdf_text_audit']['findings_count']==0
+          assert x['source_pdf_text_audit']['read_errors']==[]
+          assert x['all_cover_fields_same_positions_within_2_5pt']
+          assert x['not_academic_final'] and not x['source_assets_mutated']
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Web2027-56-clean-staging-catalog-candidates-not-final
+          path: staging/web56_teacher_leaks_20261108/clean_catalog/
+          if-no-files-found: error
+          retention-days: 14
