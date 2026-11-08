@@ -117,7 +117,11 @@ def audit_dskp_primary():
         if (native is None or native["native_title"] != case["native_title"]
                 or native["source_sequence_numbers"] != [str(case["native_lesson_number"])]
                 or native["sksp"] != [{"sk": case["native_sk"], "sp": case["native_sp"]}]
-                or case["native_sp"] not in data["documents"]["6"]["sp_codes"]
+                or not case["native_sp"].split(";")
+                or any(
+                    code not in data["documents"]["6"]["sp_codes"]
+                    for code in case["native_sp"].split(";")
+                )
                 or case.get("ready") is not False):
             raise ValueError(f"Maths semantic evidence conflicts with actual source {key}")
         # These are precisely codes that *pass* naive presence checking.
