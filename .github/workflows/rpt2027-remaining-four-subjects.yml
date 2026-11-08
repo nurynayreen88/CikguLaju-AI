@@ -80,11 +80,15 @@ jobs:
                   continue
               with fitz.open(file) as pdf:
                   page=pdf[1]
+                  labels=('MINGGU / TARIKH','UNIT / TAJUK / PDP','SK','SP','CATATAN / BAHAN')
                   x={}
-                  for text in ('MINGGU / TARIKH','UNIT / TAJUK / PDP','SK','SP','CATATAN / BAHAN'):
-                      boxes=page.search_for(text)
-                      assert boxes,(file,text)
-                      x[text]=boxes[0].x0
+                  for block in page.get_text('dict')['blocks']:
+                      for line in block.get('lines',[]):
+                          for span in line['spans']:
+                              label=span['text'].strip()
+                              if label in labels and 40<span['bbox'][1]<95:
+                                  x[label]=span['bbox'][0]
+                  assert set(x)==set(labels),(file,x)
                   assert x['CATATAN / BAHAN']<x['SP']<x['SK']<x['UNIT / TAJUK / PDP']<x['MINGGU / TARIKH'],(file,x)
                   assert x['MINGGU / TARIKH']>650,(file,x)
           print('SUCCESS: 20 PDF, 40 PNG previews, 10 RTL PDFs, landscape bounded text')
