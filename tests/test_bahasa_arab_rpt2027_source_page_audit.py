@@ -94,7 +94,7 @@ class ArabicSPPageEvidenceQA(unittest.TestCase):
         self.assertFalse(parts["3.4.1"]["candidate_for_staging_display"])
         self.assertEqual(parts["3.4.1"]["visual_transcription_candidate"],
                          parts["3.3.1"]["visual_transcription_candidate"])
-        self.assertIn("duplicate",parts["3.4.1"]["hold_reason"])
+        self.assertIn("identical",parts["3.4.1"]["hold_reason"])
         self.assertEqual(candidate["summary"]["academic_panel_signoffs"],0)
         self.assertIs(candidate["summary"]["rpt_release_ready"],False)
 
