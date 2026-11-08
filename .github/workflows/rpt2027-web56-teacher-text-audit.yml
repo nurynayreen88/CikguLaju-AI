@@ -1,0 +1,59 @@
+name: Web RPT 2027 actual 56 PDF developer text audit
+on:
+  pull_request:
+    paths:
+      - 'scripts/audit_web56_teacher_pdf_leaks_20261108.py'
+      - 'scripts/audit_rpt2027_teacher_text_leaks_20261108.py'
+      - 'rpt_2027/web_2027_pdfs/**/*.pdf'
+      - 'rpt_2027/web_2027_pdfs/manifest.json'
+      - '.github/workflows/rpt2027-web56-teacher-text-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pdf56_audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'PyMuPDF==1.24.14'
+      - name: Audit 56 real served PDF documents and verify manifest hashes
+        run: python -m scripts.audit_web56_teacher_pdf_leaks_20261108 --fail-on-findings
+      - name: Render source samples and affected pages for visual inspection
+        run: |
+          mkdir -p staging/web56_teacher_leaks_20261108/pages
+          python - <<'PY'
+          import fitz,json
+          from pathlib import Path
+          root=Path('rpt_2027/web_2027_pdfs')
+          result=json.loads(Path('staging/web56_teacher_leaks_20261108/report.json').read_text())
+          pairs={}
+          for entry in result['findings']:
+              name=Path(entry['file'])
+              pairs.setdefault(name,set()).add(entry['page']-1)
+          pi=root/'pendidikan_islam'/'tahun_4.pdf'
+          pairs.setdefault(pi,set()).update({0,1,2})
+          for src,pgset in pairs.items():
+              if not src.exists():
+                  continue
+              label=src.parent.name+'_T'+src.stem.split('_')[-1]
+              with fitz.open(src) as pdf:
+                  for i in sorted(pgset)[:7]:
+                      if i<0 or i>=pdf.page_count:
+                          continue
+                      out=Path('staging/web56_teacher_leaks_20261108/pages')/f'{label}_p{i+1}.png'
+                      pdf[i].get_pixmap(matrix=fitz.Matrix(1.5,1.5),alpha=False).save(str(out))
+          print('Rendered samples for',len(pairs),'source PDFs')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: CikguLaju-Web2027-ACTUAL-56-PDF-audit-samples
+          path: |
+            staging/web56_teacher_leaks_20261108/report.json
+            staging/web56_teacher_leaks_20261108/pages/*.png
+            rpt_2027/web_2027_pdfs/*/*.pdf
+          if-no-files-found: error
+          retention-days: 14

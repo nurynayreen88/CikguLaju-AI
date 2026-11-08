@@ -3,458 +3,458 @@
   "year": 2027,
   "status": "DRAF_USER_VISIBLE_NOT_ACADEMIC_FINAL",
   "count": 56,
-  "pages": 1658,
+  "pages": 1511,
   "files": {
     "bahasa_arab:2": {
       "path": "bahasa_arab/tahun_2.pdf",
-      "sha256": "ed2c5baa98788e2ea818d3e813add4cac7215540b4cdfdcdffd5537258980fcd",
-      "bytes": 125266,
-      "pages": 12,
+      "sha256": "f586180687b116b5d22b2aa98db493ff72e35d958f27c7bd20fcf44b1856c80a",
+      "bytes": 120192,
+      "pages": 11,
       "status": "DRAF",
-      "source_run_id": 42430115066
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "bahasa_arab:3": {
       "path": "bahasa_arab/tahun_3.pdf",
-      "sha256": "8b879dec8876d597c5d83130f4712324a579c13c33f2038c2d97de6694c25ac1",
-      "bytes": 122750,
+      "sha256": "5e7bd258cf446ecc3cc47a8231eff86b6bbc26a3eb58cedb9082345cad9620fa",
+      "bytes": 119513,
       "pages": 11,
       "status": "DRAF",
-      "source_run_id": 42430115066
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "bahasa_arab:4": {
       "path": "bahasa_arab/tahun_4.pdf",
-      "sha256": "76c3c0b68c147344ca6906609eb81eefe01eae77a305bcae786d31697c357dc0",
-      "bytes": 121207,
+      "sha256": "74555dc3cc5ccbdcb6b4f95b4a8ed4e60dd672b673e08c406298c7f2489c1bc6",
+      "bytes": 118041,
       "pages": 11,
       "status": "DRAF",
-      "source_run_id": 42430115066
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "bahasa_arab:5": {
       "path": "bahasa_arab/tahun_5.pdf",
-      "sha256": "43ffa36762ea633a6189c3d40390f1b357cb916a61e8ffff1ee283302f3aae3e",
-      "bytes": 125303,
+      "sha256": "bcd2afa4a25dee3b3f48fa0a47c3f4089602b27c212da1cdf56820fca189095a",
+      "bytes": 121698,
       "pages": 12,
       "status": "DRAF",
-      "source_run_id": 42430115066
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "bahasa_arab:6": {
       "path": "bahasa_arab/tahun_6.pdf",
-      "sha256": "8b15fef375250c220cc81eb95c2c39aa106a62564bd50b6ffecc180cc59a12bd",
-      "bytes": 122811,
+      "sha256": "7b9346c30bb9949d7f2114d7a522d2d17df23b729bde5b4a8082985445e4501f",
+      "bytes": 119514,
       "pages": 11,
       "status": "DRAF",
-      "source_run_id": 42430115066
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "bahasa_melayu:2": {
       "path": "bahasa_melayu/tahun_2.pdf",
-      "sha256": "00bd722eb67c5bf678e171a762a8ece93c63d7a33f2c2d5713436024c530f193",
-      "bytes": 129208,
-      "pages": 32,
+      "sha256": "f8adc30f1c5e372fe934ebc51671063ad10419a2be5971f7d01f09e3ffe63742",
+      "bytes": 124094,
+      "pages": 31,
       "status": "DRAF",
-      "source_run_id": 42395310661
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "bahasa_melayu:3": {
       "path": "bahasa_melayu/tahun_3.pdf",
-      "sha256": "b0cab46186b9a4bfd920abc96701c5744f8bf05c4edd575603feacbf2eb7255e",
-      "bytes": 141204,
-      "pages": 36,
+      "sha256": "2828747ac10adb391c37f529b1ea5141e7cfa9cdf3ca32769c418266736b8aa6",
+      "bytes": 135876,
+      "pages": 35,
       "status": "DRAF",
-      "source_run_id": 42395310661
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "bahasa_melayu:4": {
       "path": "bahasa_melayu/tahun_4.pdf",
-      "sha256": "8e6af25e6a0e71c51a06609b2206dcd108005fb20eaa61e164d3a4ba180159b1",
-      "bytes": 130050,
+      "sha256": "9a44259fedca4245a7c69f2a77ba1ed43ff3f99112ae9a3477e53471302a3c9a",
+      "bytes": 127646,
       "pages": 32,
       "status": "DRAF",
-      "source_run_id": 42395310661
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "bahasa_melayu:5": {
       "path": "bahasa_melayu/tahun_5.pdf",
-      "sha256": "d34ba5b2bbe2b3e35e49397d4528e28fc6a61f38883214d0f0e99c682d61718e",
-      "bytes": 132139,
+      "sha256": "3b2b282369c5036350207634e7eafdf215ec55c1646725d10acc64ea3c571798",
+      "bytes": 129803,
       "pages": 32,
       "status": "DRAF",
-      "source_run_id": 42395310661
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "bahasa_melayu:6": {
       "path": "bahasa_melayu/tahun_6.pdf",
-      "sha256": "6d66e64d112b498fd50d4c1074ffaaa51bbd75abe6d7b0cb83bdb23d78cd2080",
-      "bytes": 134401,
+      "sha256": "387fbe3aca714a5538fba8ecc7e60cf6bf09823c0a86298d88395f1bd8720cc4",
+      "bytes": 131949,
       "pages": 33,
       "status": "DRAF",
-      "source_run_id": 42395310661
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "english:2": {
       "path": "english/tahun_2.pdf",
-      "sha256": "3ed54b912a9f629259a0dab73e32278c907dc81b776423272fd80012ec8ffd42",
-      "bytes": 148050,
+      "sha256": "a318eef6b57d09d74149cf05ca266d6b4b00606e695211640aacd9b0c5a602cf",
+      "bytes": 145578,
       "pages": 40,
       "status": "DRAF",
-      "source_run_id": 42430115126
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "english:3": {
       "path": "english/tahun_3.pdf",
-      "sha256": "fe73aa1a24549cf5f6a60246e57866343b53c899b090f969be9568b7ec16dfd1",
-      "bytes": 148172,
+      "sha256": "50cd2ecef43e0d00731bb7b2887efeaca5a0ed4ca71dca6cdc926fbd9e4d59e1",
+      "bytes": 145573,
       "pages": 41,
       "status": "DRAF",
-      "source_run_id": 42430115126
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "english:4": {
       "path": "english/tahun_4.pdf",
-      "sha256": "ff77257c8feb83bba504182b0a79c0c9c35764d5b2da5ee330b3d8fd923578d4",
-      "bytes": 158505,
+      "sha256": "73636177853552dd4b93c01e2a594bc84f3e7c7b295fc14b51127b11d0e9c8b5",
+      "bytes": 156083,
       "pages": 41,
       "status": "DRAF",
-      "source_run_id": 42430115126
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "english:5": {
       "path": "english/tahun_5.pdf",
-      "sha256": "d9fe097f4f98f2134750ff114165ae8cc6d97e4576bf0b2e0cb7f565ca43bc1c",
-      "bytes": 159947,
+      "sha256": "40b0226b49ac3886528b049e863b2a6a64b10dab243a0fcfe6d2d034be9b540b",
+      "bytes": 157509,
       "pages": 41,
       "status": "DRAF",
-      "source_run_id": 42430115126
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "english:6": {
       "path": "english/tahun_6.pdf",
-      "sha256": "8ee9f9b67299dbf165ac430a4c9937483c388cdc83233387484f29505bf9a271",
-      "bytes": 167881,
+      "sha256": "2309587059fd26cd3ca1acfda3f3fec6a6f380709ba174490619a34cc9b4fbda",
+      "bytes": 165281,
       "pages": 44,
       "status": "DRAF",
-      "source_run_id": 42430115126
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "matematik:2": {
       "path": "matematik/tahun_2.pdf",
-      "sha256": "94f5e9763c735bdf706c6b3fd581f9088af6257309372979309df0f9fc53caae",
-      "bytes": 146604,
+      "sha256": "034971cbc89dc4c68a623c4a1120b52b93965008d9cb64eab537e784ab8efe53",
+      "bytes": 143623,
       "pages": 53,
       "status": "DRAF",
-      "source_run_id": 42395310640
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "matematik:3": {
       "path": "matematik/tahun_3.pdf",
-      "sha256": "0fcc8e6531966d1bab60b86b3f3df0e690bcca54f7f6bfd27f500e98495c6b35",
-      "bytes": 141502,
+      "sha256": "cab42b5ea05b841b5726508c5aac2d7a7cfa96377cd79ed7eb456337a25f0781",
+      "bytes": 138444,
       "pages": 50,
       "status": "DRAF",
-      "source_run_id": 42395310640
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "matematik:4": {
       "path": "matematik/tahun_4.pdf",
-      "sha256": "b59c63f497d22a5032774418596f825832b7e2be59314a1f29d107894c635de8",
-      "bytes": 153152,
+      "sha256": "a3037aa6ca1dc2c8f7602a1daca057b920f95ac7b4bed8e6a35e1f44fb3e575c",
+      "bytes": 150221,
       "pages": 50,
       "status": "DRAF",
-      "source_run_id": 42395310640
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "matematik:5": {
       "path": "matematik/tahun_5.pdf",
-      "sha256": "cf24bb1cb060ffe0ec82bceee7edb8604ef3483b9138751a960332ed6f38352c",
-      "bytes": 149231,
-      "pages": 53,
+      "sha256": "9c6b51c8f88d79036f96fac83d3fb827c7848f2f2c4c68e6f3c090581d7fa820",
+      "bytes": 148951,
+      "pages": 55,
       "status": "DRAF",
-      "source_run_id": 42395310640
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "matematik:6": {
       "path": "matematik/tahun_6.pdf",
-      "sha256": "179cc8acc03d961d2b66f7556036df6cfa9ea5cb4829d61437e944a5176e5090",
-      "bytes": 143733,
+      "sha256": "60f78f24bc5496a23ff56f87072fd00863261b25954d7c771ace021878ac60f7",
+      "bytes": 140907,
       "pages": 51,
       "status": "DRAF",
-      "source_run_id": 42395310640
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "muzik:2": {
       "path": "muzik/tahun_2.pdf",
-      "sha256": "3d1d63aeab816128268f19860b58ef855f24a9bf9dfa7e2f6ab3f5f435ce4be7",
-      "bytes": 61286,
+      "sha256": "ccd66bdb8eaf9304be4850092051657bd60d7b364d2e30eb28a7f68265e76f11",
+      "bytes": 60343,
       "pages": 7,
       "status": "DRAF",
-      "source_run_id": 42395310661
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "muzik:3": {
       "path": "muzik/tahun_3.pdf",
-      "sha256": "d2182418d5bc759939199fa176af4db0a46e783c73f4552638ed86edb3b2e56c",
-      "bytes": 60269,
+      "sha256": "952c0e38b0bacc82e53933ca971e097b486d0739c5a444ae5561a775bd178d0d",
+      "bytes": 59412,
       "pages": 7,
       "status": "DRAF",
-      "source_run_id": 42395310661
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "muzik:4": {
       "path": "muzik/tahun_4.pdf",
-      "sha256": "39c5cafc23fddd9e797fe4533510d8487a0a9928103e27ab43b4da690ea2e4a2",
-      "bytes": 62743,
+      "sha256": "9c50b2df9ca4f99b3b3e1601ef48e4668bf64ec10dd5594780fcaeba8f669547",
+      "bytes": 61272,
       "pages": 8,
       "status": "DRAF",
-      "source_run_id": 42395310661
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "muzik:5": {
       "path": "muzik/tahun_5.pdf",
-      "sha256": "02b174af384720aee37edadbf8cdaef3eb784c7d370b28573bc9260f58eba528",
-      "bytes": 61092,
+      "sha256": "82a7c9f4ac2f04ff2d16e0a632a3154de6dcb116e80b89b35a49be609b6bb01f",
+      "bytes": 60304,
       "pages": 7,
       "status": "DRAF",
-      "source_run_id": 42395310661
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "muzik:6": {
       "path": "muzik/tahun_6.pdf",
-      "sha256": "6e087c3ec17bbe2ab504588ef9c1d6bca11fe335d32b151c775ff5da87216026",
-      "bytes": 63716,
+      "sha256": "8c504fb122e22402b2fd0322d17d9839fd31a6589ccfefb6386a6fa91c5a9f71",
+      "bytes": 62946,
       "pages": 8,
       "status": "DRAF",
-      "source_run_id": 42395310661
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "pendidikan_islam:2": {
       "path": "pendidikan_islam/tahun_2.pdf",
-      "sha256": "a657f9991ca70c105ae0b0a3a4ac18ae412468fefaf359825b1a9bf5e0f3c5d7",
-      "bytes": 247453,
-      "pages": 48,
+      "sha256": "fdd13b154db3bea0ddc777c66287b3347944b74489d75092a1fd3804e90b28ea",
+      "bytes": 225540,
+      "pages": 39,
       "status": "DRAF",
-      "source_run_id": 42430115066
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "pendidikan_islam:3": {
       "path": "pendidikan_islam/tahun_3.pdf",
-      "sha256": "eaa5993103108ce6dba3602155226408fbfb3bcf1d940e623d8b35439f892ffa",
-      "bytes": 330629,
-      "pages": 75,
+      "sha256": "cd0fbb0166ba98737ddda8943b162767ace80320babecdf113223fe4c80b4c25",
+      "bytes": 246785,
+      "pages": 39,
       "status": "DRAF",
-      "source_run_id": 42430115066
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "pendidikan_islam:4": {
       "path": "pendidikan_islam/tahun_4.pdf",
-      "sha256": "3da30e3a09d1efec76749aa343e28d6c91004318b041b07a428c4d8f0dbf4eeb",
-      "bytes": 329568,
-      "pages": 76,
+      "sha256": "4cef6509bad4d3812be609647a6631a326e2300514e5e24170e38969ae73109c",
+      "bytes": 304414,
+      "pages": 66,
       "status": "DRAF",
-      "source_run_id": 42430115066
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "pendidikan_islam:5": {
       "path": "pendidikan_islam/tahun_5.pdf",
-      "sha256": "d0fe04e0368b8ec2021583302f4d16546d2bf2dd61ff821f4e44320fb7fce16f",
-      "bytes": 313052,
-      "pages": 72,
+      "sha256": "7940801564a1872a67ec5c8f6980ad1e9a088e2911ffab6a79ccc9550f70b851",
+      "bytes": 264247,
+      "pages": 48,
       "status": "DRAF",
-      "source_run_id": 42430115066
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "pendidikan_islam:6": {
       "path": "pendidikan_islam/tahun_6.pdf",
-      "sha256": "8fb883b3865564171358d7f0cbf6f842d800de5c56e5fa959d6000b57d86dee0",
-      "bytes": 323613,
-      "pages": 73,
+      "sha256": "7f4e3e569bb473c2ffc33f54d177ac56d6ebaf1aade57950110b76121fcbda6f",
+      "bytes": 243566,
+      "pages": 38,
       "status": "DRAF",
-      "source_run_id": 42430115066
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "pendidikan_moral:2": {
       "path": "pendidikan_moral/tahun_2.pdf",
-      "sha256": "8536bf8d1337dc5ba821083234f6793a4490a8c8c2c55d4323931b1b6f739513",
-      "bytes": 137645,
+      "sha256": "f3abe81e7450d7545a7b08ad0333062afb408cc84778bb1b3bb7bb74187c8558",
+      "bytes": 134964,
       "pages": 45,
       "status": "DRAF",
-      "source_run_id": 42395310597
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "pendidikan_moral:3": {
       "path": "pendidikan_moral/tahun_3.pdf",
-      "sha256": "1d9382e8095099dfc787b7b94789a9da2b4e088921b805bf170f096da2b04d47",
-      "bytes": 136883,
+      "sha256": "3cdf40addc1b794ae5aefd527f1de5fc958ba82e1120d24ae26c190589df5a9e",
+      "bytes": 134441,
       "pages": 44,
       "status": "DRAF",
-      "source_run_id": 42395310597
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "pendidikan_moral:4": {
       "path": "pendidikan_moral/tahun_4.pdf",
-      "sha256": "73f7a2fb2e4bebcc9465f626e9ee04c51d68b7007df4c3b054f2bb12b28e1340",
-      "bytes": 138416,
+      "sha256": "afde5e3bbb5d1631ed3e8af114aec9d32a7e987c10133e41862efbf79e880d57",
+      "bytes": 135796,
       "pages": 45,
       "status": "DRAF",
-      "source_run_id": 42395310597
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "pendidikan_moral:5": {
       "path": "pendidikan_moral/tahun_5.pdf",
-      "sha256": "e83a5587d9d89bcdc65a357f8043958178fd205b47ac1a59caee90e98f4ac292",
-      "bytes": 139686,
+      "sha256": "25f48fbd75e60b56eac623f65ad67a91bde9281199439cb07b96150baaef729f",
+      "bytes": 137064,
       "pages": 45,
       "status": "DRAF",
-      "source_run_id": 42395310597
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "pendidikan_moral:6": {
       "path": "pendidikan_moral/tahun_6.pdf",
-      "sha256": "0af6def68371348506ce2de5d6efbc9e8de74cfd6f1cf948756ba6e67e9ec104",
-      "bytes": 138600,
-      "pages": 45,
+      "sha256": "15fef58f57416c3417dc041660c7630c7aacf82a35272e55e219c86126122d44",
+      "bytes": 134236,
+      "pages": 44,
       "status": "DRAF",
-      "source_run_id": 42395310597
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "pjpk:2": {
       "path": "pjpk/tahun_2.pdf",
-      "sha256": "ea46af913554e707877548ec92f96918eda85345b7d81e327a0a0abdfdc38062",
-      "bytes": 109493,
+      "sha256": "afa637b124b01acd4fc07ee395ccfde021ae3fe39645720775607a63babceeea",
+      "bytes": 104519,
       "pages": 27,
       "status": "DRAF",
-      "source_run_id": 42395310597
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "pjpk:3": {
       "path": "pjpk/tahun_3.pdf",
-      "sha256": "cafa05344f70b969213cf54835e5d4e93e6e6fd483490dd0c634c1e7dc5ed03f",
-      "bytes": 136177,
-      "pages": 36,
+      "sha256": "94ddbb202f2219197dc3277738a75dda0b0d502677beecf37c4312109641b7e7",
+      "bytes": 126923,
+      "pages": 34,
       "status": "DRAF",
-      "source_run_id": 42395310597
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "pjpk:4": {
       "path": "pjpk/tahun_4.pdf",
-      "sha256": "a5b133ccd34760966b3359f24510efa64b69816cb231e92cffff433e37e599c3",
-      "bytes": 108641,
+      "sha256": "3280fe2ffbe72243eb53b6199413b91dd7a4ce5bbae7a48de0419bcb220ce4a3",
+      "bytes": 103793,
       "pages": 26,
       "status": "DRAF",
-      "source_run_id": 42395310597
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "pjpk:5": {
       "path": "pjpk/tahun_5.pdf",
-      "sha256": "f07504434a142b1fbe872e9d6ffd31d42238e85a93e648071fbd700e163e05b8",
-      "bytes": 99568,
+      "sha256": "d4f3e6e9dd178a5fefc0f2d70f43aab0715955eef7d4b5cde2855d8bc05cd541",
+      "bytes": 95519,
       "pages": 22,
       "status": "DRAF",
-      "source_run_id": 42395310597
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "pjpk:6": {
       "path": "pjpk/tahun_6.pdf",
-      "sha256": "507c846772054cdcee96a47fda23eca68a4674feb7ff02d3ea098de4b07c527c",
-      "bytes": 108137,
+      "sha256": "1637a1fbe2763dcd9f2034ce797d1fa7a7b95f22d4a0790a204e481db247b5ab",
+      "bytes": 103382,
       "pages": 26,
       "status": "DRAF",
-      "source_run_id": 42395310597
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "psv:2": {
       "path": "psv/tahun_2.pdf",
-      "sha256": "88e4862e07af6aae10122963c911b4d1b2f1ac1cd8e54b3233b1be9733108af5",
-      "bytes": 84751,
+      "sha256": "27561547b02337398463eae0485073a56791c5437975a40460e00f142803bf06",
+      "bytes": 84011,
       "pages": 16,
       "status": "DRAF",
-      "source_run_id": 42395310597
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "psv:3": {
       "path": "psv/tahun_3.pdf",
-      "sha256": "660bb040db2400e19890688baf96f8d769e86c6ddbb2e07ee0b1efc47afe63c1",
-      "bytes": 83723,
+      "sha256": "24ec37094fef486dd5ab5f7f60221c310e2afdee3814ccd2a0ba67547f566f10",
+      "bytes": 82964,
       "pages": 15,
       "status": "DRAF",
-      "source_run_id": 42395310597
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "psv:4": {
       "path": "psv/tahun_4.pdf",
-      "sha256": "c966e3d8cac777821a3afac0686591cb67cbd0839f4f1d852955d44ee41b9dbf",
-      "bytes": 86028,
-      "pages": 16,
+      "sha256": "c020283b4377038cab2cffca90f32a7899db4d260e7ce9f6ddf9bf4682261996",
+      "bytes": 86859,
+      "pages": 17,
       "status": "DRAF",
-      "source_run_id": 42395310597
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "psv:5": {
       "path": "psv/tahun_5.pdf",
-      "sha256": "4211d0bd9901dfcb3b680c640419d40f0f84b0768b67af93301c356760492891",
-      "bytes": 85654,
+      "sha256": "1df6d75ab1e9c9dcd443a6c44b8833b1a2f04f90084315778aa36485dc3d706e",
+      "bytes": 84867,
       "pages": 16,
       "status": "DRAF",
-      "source_run_id": 42395310597
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "psv:6": {
       "path": "psv/tahun_6.pdf",
-      "sha256": "c34ced7c69eea62696eb066502f7cc9af5c522d201aa70eef7cea7cac6b4fb42",
-      "bytes": 84032,
-      "pages": 15,
+      "sha256": "22728bf27c7511824e77284e4aceded96add9a6d7ca955de397645d828239618",
+      "bytes": 84840,
+      "pages": 16,
       "status": "DRAF",
-      "source_run_id": 42395310597
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "rbt:4": {
       "path": "rbt/tahun_4.pdf",
-      "sha256": "6359b08acc2fceb26b220ee9036833bc1b80009b55529ca35b953d9c0c56c294",
-      "bytes": 61481,
+      "sha256": "839b2ac9aa46cd7e8e9d4f976307235d662f108b617b2a7caf7df97c5655c1d6",
+      "bytes": 59983,
       "pages": 8,
       "status": "DRAF",
-      "source_run_id": 42395310597
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "rbt:5": {
       "path": "rbt/tahun_5.pdf",
-      "sha256": "9715c5f2b5a5e578f413f26f29290d6c175181f26ce26072aac18662a46af017",
-      "bytes": 60626,
-      "pages": 8,
+      "sha256": "8755cc8ad8eb2e8d82904ca3971bec7aa19eb340544a6fabf5fae8e9969bdbc4",
+      "bytes": 57449,
+      "pages": 7,
       "status": "DRAF",
-      "source_run_id": 42395310597
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "rbt:6": {
       "path": "rbt/tahun_6.pdf",
-      "sha256": "870a3edcd4fd57f09e518597d2f337c796021802087c48ffd15cf227e8bb093e",
-      "bytes": 59680,
-      "pages": 8,
+      "sha256": "9f24853244ee1295057dae7a996f71b5af29a7ae86c9e585af2fe50fa2601409",
+      "bytes": 57316,
+      "pages": 7,
       "status": "DRAF",
-      "source_run_id": 42395310597
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "sains:2": {
       "path": "sains/tahun_2.pdf",
-      "sha256": "bf497c1b9edcb0a3b50c671d4f8ba886151cbebd22f7378575752fc961c4db6c",
-      "bytes": 70320,
-      "pages": 12,
+      "sha256": "5d1cdabec9b581b7b341fbb9661cf6492da239dbce457f3b9bacfec70c69fae0",
+      "bytes": 66024,
+      "pages": 11,
       "status": "DRAF",
-      "source_run_id": 42395310498
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "sains:3": {
       "path": "sains/tahun_3.pdf",
-      "sha256": "c58e303c16de2c40b19180e9f97a849110bf212ad32a8ba093616103faa17243",
-      "bytes": 72169,
-      "pages": 13,
+      "sha256": "3936db2c06982b505e12dc1193da0175d70dbe8c43f0a86f0a6f9bbc3c4704a3",
+      "bytes": 63684,
+      "pages": 10,
       "status": "DRAF",
-      "source_run_id": 42395310498
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "sains:4": {
       "path": "sains/tahun_4.pdf",
-      "sha256": "2e6ece78d2f386b4e069460d20fd5ba10bbfab2028e3b8c7341aaf9686a62021",
-      "bytes": 86705,
-      "pages": 20,
+      "sha256": "d2692a13cb8ccd6dea73dd4185d084410861d635141b3181bdbe164cabb9dd73",
+      "bytes": 77981,
+      "pages": 17,
       "status": "DRAF",
-      "source_run_id": 42395310498
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "sains:5": {
       "path": "sains/tahun_5.pdf",
-      "sha256": "bbe30bdef5f5f6f20422c551cff5809992f6f552667bc5fb7c72929b16006f3f",
-      "bytes": 90395,
-      "pages": 22,
+      "sha256": "c3589f714e8bb50017f92e23a08140f25d9902c3cf18a9be60cb75b52d6792cf",
+      "bytes": 80367,
+      "pages": 18,
       "status": "DRAF",
-      "source_run_id": 42395310498
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "sains:6": {
       "path": "sains/tahun_6.pdf",
-      "sha256": "edb3e748bc755768f6cd1fb195346233770c4b78b177a18c78f36146a9ccc3ee",
-      "bytes": 109870,
-      "pages": 32,
+      "sha256": "ecc6c998c79cc4c26d46c2eabecc807b160a8597d56be8da366297eb25e8c6bd",
+      "bytes": 81440,
+      "pages": 19,
       "status": "DRAF",
-      "source_run_id": 42395310498
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "sejarah:4": {
       "path": "sejarah/tahun_4.pdf",
-      "sha256": "df1ac9b782813adecf36f2b81de75f14482e0a2a5c4e410c59e18888b5274374",
-      "bytes": 67944,
-      "pages": 10,
+      "sha256": "92bad0b7c68a511c6dbdce60ddece3c0f2cc14d144c49a42f2ef3abcd8185467",
+      "bytes": 62658,
+      "pages": 8,
       "status": "DRAF",
-      "source_run_id": 42395310597
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "sejarah:5": {
       "path": "sejarah/tahun_5.pdf",
-      "sha256": "c3f74469bf983df00f869fd886adbf1bef5c28f4bb66a121e7fdecef219da956",
-      "bytes": 67927,
-      "pages": 10,
+      "sha256": "dcb3d43bf7727c68a99b7e3b7c25cba81ae6811fc9ac9dd576e2e4c8b82d9506",
+      "bytes": 62963,
+      "pages": 8,
       "status": "DRAF",
-      "source_run_id": 42395310597
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "sejarah:6": {
       "path": "sejarah/tahun_6.pdf",
-      "sha256": "f8befb89f8354f3e21fc33210f47cbf05498975b0d23ba898d2a6e79099d08ba",
-      "bytes": 65704,
-      "pages": 9,
+      "sha256": "ccd5d5f16ce4ec516ddb5bcebe5ea0bef65c3a77c7607897e82c80cd7474dfc7",
+      "bytes": 62245,
+      "pages": 8,
       "status": "DRAF",
-      "source_run_id": 42395310597
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     }
   },
-  "source": "Five successful GitHub Actions RPT 2027 CI artifacts from CikguLaju PR #441, fixed run IDs",
+  "source": "Pinned PR441 commit 514f562b95867b8f6954d169b9397a3c2af2e144; teacher-display cleanup rebuilt 2026-11-08",
   "ready_for_web_catalog": true,
   "academic_final_approved": false,
   "free_rph_quota_charged": false,
@@ -473,7 +473,9 @@
       "bahasa_arab": "Arabic",
       "english": "English"
     },
-    "other_pdf_files_unchanged": 41,
-    "original_cover_preserved": true
-  }
+    "other_pdf_files_unchanged": 0,
+    "original_cover_preserved": true,
+    "cleanup_note": "All 56 source PDFs rebuilt; official subject headings preserved"
+  },
+  "source_projection": "PR441_TEXT_ONLY_REVIEW_CLEANUP_NOT_ACADEMIC_SIGNOFF"
 }
