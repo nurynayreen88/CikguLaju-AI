@@ -7,43 +7,43 @@
   "files": {
     "bahasa_arab:2": {
       "path": "bahasa_arab/tahun_2.pdf",
-      "sha256": "97009cd38e568080ea548a0f61e0cad8bb528bb589e3b33c648e3947fe097b9f",
-      "bytes": 122681,
+      "sha256": "ed2c5baa98788e2ea818d3e813add4cac7215540b4cdfdcdffd5537258980fcd",
+      "bytes": 125266,
       "pages": 12,
       "status": "DRAF",
-      "source_run_id": 42395310661
+      "source_run_id": 42430115066
     },
     "bahasa_arab:3": {
       "path": "bahasa_arab/tahun_3.pdf",
-      "sha256": "a43a7e511619ffe77d9e1c542d2913972abcf233fb46fc98c713b0e5e73ed2ab",
-      "bytes": 120294,
+      "sha256": "8b879dec8876d597c5d83130f4712324a579c13c33f2038c2d97de6694c25ac1",
+      "bytes": 122750,
       "pages": 11,
       "status": "DRAF",
-      "source_run_id": 42395310661
+      "source_run_id": 42430115066
     },
     "bahasa_arab:4": {
       "path": "bahasa_arab/tahun_4.pdf",
-      "sha256": "44dc3fc8de7095e625f37e2530b7496fffe48594ec60e00f5038a5044fe1856c",
-      "bytes": 118530,
+      "sha256": "76c3c0b68c147344ca6906609eb81eefe01eae77a305bcae786d31697c357dc0",
+      "bytes": 121207,
       "pages": 11,
       "status": "DRAF",
-      "source_run_id": 42395310661
+      "source_run_id": 42430115066
     },
     "bahasa_arab:5": {
       "path": "bahasa_arab/tahun_5.pdf",
-      "sha256": "26be8165734d5e9623d62b750852a77896f9e688974ea2bff1129836d7c4480e",
-      "bytes": 123310,
+      "sha256": "43ffa36762ea633a6189c3d40390f1b357cb916a61e8ffff1ee283302f3aae3e",
+      "bytes": 125303,
       "pages": 12,
       "status": "DRAF",
-      "source_run_id": 42395310661
+      "source_run_id": 42430115066
     },
     "bahasa_arab:6": {
       "path": "bahasa_arab/tahun_6.pdf",
-      "sha256": "c89c8c372663e3a5cfa1b7788e99189d08fc8a2fde42eeb4e1d9581a762fbe0b",
-      "bytes": 120697,
+      "sha256": "8b15fef375250c220cc81eb95c2c39aa106a62564bd50b6ffecc180cc59a12bd",
+      "bytes": 122811,
       "pages": 11,
       "status": "DRAF",
-      "source_run_id": 42395310661
+      "source_run_id": 42430115066
     },
     "bahasa_melayu:2": {
       "path": "bahasa_melayu/tahun_2.pdf",
@@ -87,43 +87,43 @@
     },
     "english:2": {
       "path": "english/tahun_2.pdf",
-      "sha256": "844f02c4de0edc4f89dda3a70f0195edace1203ae1e3eb1f2f4423ef9cc2e64b",
-      "bytes": 147073,
+      "sha256": "3ed54b912a9f629259a0dab73e32278c907dc81b776423272fd80012ec8ffd42",
+      "bytes": 148050,
       "pages": 40,
       "status": "DRAF",
-      "source_run_id": 42395310599
+      "source_run_id": 42430115126
     },
     "english:3": {
       "path": "english/tahun_3.pdf",
-      "sha256": "62a6e6835d1e50c56b408adc201faa99a1a7783f99f5300751952f80ebf07843",
-      "bytes": 147160,
+      "sha256": "fe73aa1a24549cf5f6a60246e57866343b53c899b090f969be9568b7ec16dfd1",
+      "bytes": 148172,
       "pages": 41,
       "status": "DRAF",
-      "source_run_id": 42395310599
+      "source_run_id": 42430115126
     },
     "english:4": {
       "path": "english/tahun_4.pdf",
-      "sha256": "f2f3ead75f020b92d577d27a750f28071a8f5c2f95ae6a663307277a368f09d8",
-      "bytes": 157637,
+      "sha256": "ff77257c8feb83bba504182b0a79c0c9c35764d5b2da5ee330b3d8fd923578d4",
+      "bytes": 158505,
       "pages": 41,
       "status": "DRAF",
-      "source_run_id": 42395310599
+      "source_run_id": 42430115126
     },
     "english:5": {
       "path": "english/tahun_5.pdf",
-      "sha256": "304c760281428b1a47b35753e23baa62c6bffb50ec9ae7fef2bf5ee1c7411a95",
-      "bytes": 159044,
+      "sha256": "d9fe097f4f98f2134750ff114165ae8cc6d97e4576bf0b2e0cb7f565ca43bc1c",
+      "bytes": 159947,
       "pages": 41,
       "status": "DRAF",
-      "source_run_id": 42395310599
+      "source_run_id": 42430115126
     },
     "english:6": {
       "path": "english/tahun_6.pdf",
-      "sha256": "a758e65eb643955d8e9b8aa5c9c8ad31c632b484890f8dc2944794c409c65e31",
-      "bytes": 166961,
+      "sha256": "8ee9f9b67299dbf165ac430a4c9937483c388cdc83233387484f29505bf9a271",
+      "bytes": 167881,
       "pages": 44,
       "status": "DRAF",
-      "source_run_id": 42395310599
+      "source_run_id": 42430115126
     },
     "matematik:2": {
       "path": "matematik/tahun_2.pdf",
@@ -207,43 +207,43 @@
     },
     "pendidikan_islam:2": {
       "path": "pendidikan_islam/tahun_2.pdf",
-      "sha256": "f893c1a778858084c5202485d15549ada5ca38e73e6a77fc7c213112d89ad434",
-      "bytes": 242763,
+      "sha256": "a657f9991ca70c105ae0b0a3a4ac18ae412468fefaf359825b1a9bf5e0f3c5d7",
+      "bytes": 247453,
       "pages": 48,
       "status": "DRAF",
-      "source_run_id": 42395310661
+      "source_run_id": 42430115066
     },
     "pendidikan_islam:3": {
       "path": "pendidikan_islam/tahun_3.pdf",
-      "sha256": "3aa68aefe326d2a7282416d12cbeb4d6042b8fe20dbdf294cba1db5a4a253b06",
-      "bytes": 325387,
+      "sha256": "eaa5993103108ce6dba3602155226408fbfb3bcf1d940e623d8b35439f892ffa",
+      "bytes": 330629,
       "pages": 75,
       "status": "DRAF",
-      "source_run_id": 42395310661
+      "source_run_id": 42430115066
     },
     "pendidikan_islam:4": {
       "path": "pendidikan_islam/tahun_4.pdf",
-      "sha256": "b8f9d573375a08ed979d89584e045126d2903f604adcc35679ba78d0a10cf254",
-      "bytes": 324302,
+      "sha256": "3da30e3a09d1efec76749aa343e28d6c91004318b041b07a428c4d8f0dbf4eeb",
+      "bytes": 329568,
       "pages": 76,
       "status": "DRAF",
-      "source_run_id": 42395310661
+      "source_run_id": 42430115066
     },
     "pendidikan_islam:5": {
       "path": "pendidikan_islam/tahun_5.pdf",
-      "sha256": "1df181f15df3737d8e4893c8bfd67906cf11b7ea585c14d2e1ea0b679a947746",
-      "bytes": 308137,
+      "sha256": "d0fe04e0368b8ec2021583302f4d16546d2bf2dd61ff821f4e44320fb7fce16f",
+      "bytes": 313052,
       "pages": 72,
       "status": "DRAF",
-      "source_run_id": 42395310661
+      "source_run_id": 42430115066
     },
     "pendidikan_islam:6": {
       "path": "pendidikan_islam/tahun_6.pdf",
-      "sha256": "69030bbe131e541157260c662614b31b98a35c9221af56caf19c771ddbc0629a",
-      "bytes": 318603,
+      "sha256": "8fb883b3865564171358d7f0cbf6f842d800de5c56e5fa959d6000b57d86dee0",
+      "bytes": 323613,
       "pages": 73,
       "status": "DRAF",
-      "source_run_id": 42395310661
+      "source_run_id": 42430115066
     },
     "pendidikan_moral:2": {
       "path": "pendidikan_moral/tahun_2.pdf",
@@ -464,5 +464,16 @@
     "subject_year_count": 10,
     "status": "DRAF",
     "note": "Same RPT content; physically mirrored five columns for Jawi/Arabic. Original cover unchanged."
+  },
+  "native_table_headings_pi_arab_english_20261108": {
+    "count": 15,
+    "status": "DRAF",
+    "languages": {
+      "pendidikan_islam": "Jawi",
+      "bahasa_arab": "Arabic",
+      "english": "English"
+    },
+    "other_pdf_files_unchanged": 41,
+    "original_cover_preserved": true
   }
 }
