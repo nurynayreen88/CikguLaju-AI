@@ -104,7 +104,7 @@ def audit_dskp_primary():
     if (ledger.get("schema") != "cikgulaju.math.y6.native_semantic_hold.v1"
             or ledger.get("approved_count") != 0 or ledger.get("final_ready") is not False
             or ledger.get("production_modified") is not False
-            or len(ledger.get("cases", [])) != 2):
+            or len(ledger.get("cases", [])) != 8):
         raise ValueError("Unexpected Mathematics semantic-review ledger")
     by_pdp = {
         item["pdp_code"]: item
@@ -149,7 +149,7 @@ def audit_dskp_primary():
         "code_present_but_semantically_conflicting_known_cases": extra_semantic,
         "known_semantic_conflict_count": len(extra_semantic),
         "known_distinct_pdp_requiring_review_minimum": len(affected) + len(extra_semantic),
-        "coverage_warning": "This is a minimum of 98 absent-code PdP and 2 independently verified meaning conflicts, not a complete semantic audit of all 528 PdP.",
+        "coverage_warning": "This is a minimum of 98 absent-code PdP and 8 independently sourced topic/SP scope warnings, not a complete semantic audit of all 528 PdP.",
         "release_decision": "HOLD",
         "academic_signoff": False,
         "runtime_e2e_passed": False,
