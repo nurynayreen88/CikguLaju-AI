@@ -38,6 +38,7 @@ from pi_rpt_source_errata_editor_register import audit as rpt_errata_audit
 from pi_heavy_tasmi_editor_overlay import generate as heavy_tasmi_editor
 from pi_y5_khat_nasakh_source_audit import audit as year5_khat_source_audit
 from pi_y5_khat_nasakh_editor_overlay import generate as year5_khat_editor
+from pi_tajwid_crossfield_mad_audit import audit as tajwid_mad_crossfield
 
 
 def readiness(root=ROOT):
@@ -71,6 +72,13 @@ def readiness(root=ROOT):
     heavy_tasmi = heavy_tasmi_editor(root)
     year5_khat_source = year5_khat_source_audit(root)
     year5_khat_preview = year5_khat_editor(root)
+    mad_crossfield = tajwid_mad_crossfield(root)
+    assert mad_crossfield["single_named_mad_source_lessons_checked"] == 30
+    assert mad_crossfield["conflicting_mad_labels_remaining"] == 0
+    assert mad_crossfield["source_corrected_year5_lessons"] == 3
+    assert mad_crossfield["source_corrected_fields"] == 7
+    assert mad_crossfield["expert_tajwid_approvals"] == 0
+    assert mad_crossfield["release"] == "NO_GO"
     assert year5_khat_source["four_corrected_ayat_and_tekal_sp_records"] == 4
     assert year5_khat_source["source_printed_pages"] == [43,44]
     assert year5_khat_source["academic_expert_approvals"] == 0
@@ -226,6 +234,9 @@ def readiness(root=ROOT):
     assert sum(x["closing_jawi_candidate_exists"] for x in grouped.values()) == 690
     # Evidence needed before a future release decision; no implicit approval.
     blockers = [
+        {"code":"YEAR5_TAJWID_MAD_BADAL_IWAD_THREE_SOURCE_COPY_ERRORS_PENDING_EXPERT",
+         "affected_lessons":mad_crossfield["source_corrected_year5_lessons"],
+         "action":"Year5 L041/L045/L049 inherited RPH content wrongly referred to mad badal although SP targeted mad iwad. Original fields retained in staging; 30 single-mad source RPH checked with zero remaining cross-field mixups; expert tajwid/Jawi verification and textbook verse examples still required"},
         {"code":"YEAR5_KHAT_NASAKH_4_SOURCE_SP_CORRECTIONS_PENDING_EXPERT",
          "affected_lessons": year5_khat_source["four_corrected_ayat_and_tekal_sp_records"],
          "action":"Four Year5 khat PdP staged SP7.2.5 ayat and SP7.2.6 tekal from KPM DSKP p43-44; original text preserved, Jawi/lesson academic signoff and RPT source check pending"},
@@ -337,6 +348,10 @@ def readiness(root=ROOT):
         "book_activity_page_candidates": 174,
         "year5_ambiguous_activity_book_source_mentions": qa["unverified_year4_to6_activity_book_wording_count"],
         "year5_khat_source_sp_code_and_objective_corrections": year5_khat_source["four_corrected_ayat_and_tekal_sp_records"],
+        "single_mad_source_lessons_checked": mad_crossfield["single_named_mad_source_lessons_checked"],
+        "tajwid_crossfield_mad_conflicts_remaining": mad_crossfield["conflicting_mad_labels_remaining"],
+        "year5_mad_iwad_copyedit_lessons": mad_crossfield["source_corrected_year5_lessons"],
+        "year5_mad_iwad_copyedit_fields": mad_crossfield["source_corrected_fields"],
         "year5_khat_editor_pbd_and_worksheet_overlays": year5_khat_preview["editor_proposed_improvements"],
         "year5_khat_editor_fields_changed": year5_khat_preview["editor_changed_field_count"],
         "year5_khat_official_activity_book_pages_verified": year5_khat_preview["new_source_verified_workbook_pages"],
