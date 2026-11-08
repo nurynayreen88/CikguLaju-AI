@@ -7,6 +7,7 @@ on:
     paths:
       - "web/rpt_private_notes.py"
       - "scripts/clean_rpt2027_pi4_asset.py"
+      - "scripts/clean_rpt2027_pi3_pi5_pi6.py"
       - "scripts/audit_rpt2027_internal_notes.py"
       - ".github/workflows/rpt2027_pi4_staging_clean.yml"
   workflow_dispatch:
@@ -37,7 +38,9 @@ jobs:
         run: python -m pip install "PyMuPDF>=1.24,<1.27"
 
       - name: Create verified source PDF and update only matching SHA-256 entries
-        run: python scripts/clean_rpt2027_pi4_asset.py
+        run: |
+          python scripts/clean_rpt2027_pi4_asset.py
+          python scripts/clean_rpt2027_pi3_pi5_pi6.py
 
       - name: Read-only audit of all 56 RPT for developer-only notes
         run: python scripts/audit_rpt2027_internal_notes.py
@@ -49,10 +52,14 @@ jobs:
         shell: bash
         run: |
           git add \
+            rpt_2027/web_2027_pdfs/pendidikan_islam/tahun_3.pdf \
             rpt_2027/web_2027_pdfs/pendidikan_islam/tahun_4.pdf \
+            rpt_2027/web_2027_pdfs/pendidikan_islam/tahun_5.pdf \
+            rpt_2027/web_2027_pdfs/pendidikan_islam/tahun_6.pdf \
             rpt_2027/web_2027_pdfs/manifest.json \
             rpt_2027/web_2027_pdfs/original_cover_layout_verified.json \
-            rpt_2027/web_2027_pdfs/PI4_INTERNAL_PROSE_20261108_DRAF_AUDIT.json
+            rpt_2027/web_2027_pdfs/PI4_INTERNAL_PROSE_20261108_DRAF_AUDIT.json \
+            rpt_2027/web_2027_pdfs/PI356_INTERNAL_PROSE_20261108_DRAF_AUDIT.json
           if ! git diff --cached --quiet; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
