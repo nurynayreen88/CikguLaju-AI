@@ -192,7 +192,7 @@
     if(actualSha!==declaredSha)throw Error("Checksum PDF tidak sepadan. Muat turun dibatalkan.");
     return {bytes,sha:actualSha};
   }
-  async function downloadWithOriginalCover(code,year){
+  async function downloadWithOriginalCover(code,year,openedViewer=null,mobileRequest=false){
     const PDF=window.PDFLib;
     if(!PDF||!PDF.PDFDocument)
       throw Error("Modul PDF tidak dapat dimuatkan. Refresh laman Web dan cuba semula.");
@@ -204,16 +204,58 @@
     const result=await fillOriginalCover(original,profile,logo,layout,{PDFLib:PDF});
     const output=await original.save({useObjectStreams:false});
     const download=new Blob([output],{type:"application/pdf"});
-    const url=URL.createObjectURL(download),link=document.createElement("a");
-    try{
+    const url=URL.createObjectURL(download);
+    const filename="CIKGULAJU_RPT_"+code.toUpperCase()+"_TAHUN_"+year+"_2027_ISI_PROFIL.pdf";
+    function downloadLink(doc){
+      const link=doc.createElement("a");
       link.href=url;
-      link.download="CIKGULAJU_RPT_"+code.toUpperCase()+"_TAHUN_"+year+"_2027_ISI_PROFIL.pdf";
+      link.download=filename;
+      link.textContent="Simpan PDF RPT";
+      link.style.cssText="display:inline-block;background:#087568;color:white;padding:14px 20px;border-radius:12px;font:bold 17px system-ui;text-decoration:none;";
+      return link;
+    }
+    // Chrome may treat navigating to blob: PDF as a download and leave the
+    // preopened phone tab empty. Keep a visible, user-activated save link in
+    // that same tab instead. This also works when Safari blocks async clicks.
+    if(openedViewer && !openedViewer.closed){
+      try{
+        const doc=openedViewer.document;
+        const title=doc.createElement("h1");
+        title.textContent="RPT 2027 siap";
+        const note=doc.createElement("p");
+        note.textContent="PDF bersama profil sekolah sudah disediakan. Tekan butang di bawah untuk menyimpan. Pautan sah selama 10 minit.";
+        doc.body.style.cssText="margin:0;min-height:100vh;padding:28px 18px;box-sizing:border-box;font-family:system-ui,Arial,sans-serif;background:#f0f7f5;color:#174353;";
+        doc.body.replaceChildren(title,note,downloadLink(doc));
+        setTimeout(()=>URL.revokeObjectURL(url),600000);
+        result.delivery="phone-tab-link";
+        return result;
+      }catch(error){
+        try{openedViewer.close();}catch(_ignored){}
+      }
+    }
+    if(mobileRequest){
+      // Popup-blocked browser: show a link that the teacher can tap with a
+      // fresh gesture, not an async synthetic click that may silently fail.
+      const previous=document.getElementById("rpt-prepared-manual-link");
+      if(previous)previous.remove();
+      const manual=downloadLink(document);
+      manual.id="rpt-prepared-manual-link";
+      const status=document.getElementById("rpt-status");
+      if(status)status.insertAdjacentElement("afterend",manual);
+      else document.body.appendChild(manual);
+      setTimeout(()=>{manual.remove();URL.revokeObjectURL(url);},600000);
+      result.delivery="phone-inline-link";
+      return result;
+    }
+    const link=downloadLink(document);
+    try{
       document.body.appendChild(link);link.click();link.remove();
     }finally{setTimeout(()=>URL.revokeObjectURL(url),30000);}
+    result.delivery="desktop-auto";
     return result;
   }
   if(typeof window!=="undefined"){
-    window.downloadCikguLajuRPT=async function(code,year,name,output,button){
+    window.downloadCikguLajuRPT=async function(code,year,name,output,button,openedViewer=null,mobileRequest=false){
       if(!Number.isInteger(year)||year===1){
         if(output)output.textContent="Tahun 1 KP2027 belum dibuka untuk muat turun.";
         return false;
@@ -221,8 +263,8 @@
       if(button)button.disabled=true;
       if(output)output.textContent="Mengisi ruang logo, nama sekolah dan nama guru pada muka depan RPT asal…";
       try{
-        const status=await downloadWithOriginalCover(code,year);
-        if(output)output.textContent="PDF RPT berjaya dimuat turun. Muka depan asal dikekalkan, tiada halaman tambahan."+
+        const status=await downloadWithOriginalCover(code,year,openedViewer,mobileRequest);
+        if(output)output.textContent=(status.delivery==="phone-tab-link"?"PDF siap pada tab baharu. Tekan Simpan PDF RPT di tab itu. ":status.delivery==="phone-inline-link"?"PDF siap. Tekan Simpan PDF RPT di bawah untuk menyimpan. ":"PDF RPT berjaya dimuat turun. ")+"Muka depan asal dikekalkan, tiada halaman tambahan."+
           ((!status.hasLogo||!status.hasSchool||!status.hasTeacher)
            ? " Maklumat belum diisi: "+
              [!status.hasLogo&&"logo sekolah",!status.hasSchool&&"nama sekolah",
@@ -230,6 +272,9 @@
              ". Lengkapkan dalam Profil Guru.":"");
         return true;
       }catch(error){
+        if(openedViewer && !openedViewer.closed){
+          try{openedViewer.close();}catch(_ignored){}
+        }
         if(output)output.textContent=error?.message||"Muat turun RPT tidak berjaya.";
         return false;
       }finally{
