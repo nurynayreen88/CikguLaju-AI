@@ -124,6 +124,29 @@ def install(source_dir,web_assets):
         or set(manifest["files"])!=set(layout.get("source_sha256_by_subject_year",{}))):
         raise ValueError("Web RPT source manifest/cover hash ledger not trusted")
     sources=source_files(source_dir)
+    audit_file=original/"RTL_PI_ARABIC_20261108_DRAF_AUDIT.json"
+    if audit_file.is_file() and all(
+        (original/manifest["files"][key]["path"]).read_bytes()==file.read_bytes()
+        for key,file in sources.items()
+    ):
+        # The same reviewed source files are already in the feature branch.
+        # Repeated CI must NEVER rewrite "before_sha256" history or the PDF
+        # files; only independently check their current hashes and 56 ledger.
+        audit=json.loads(audit_file.read_text("utf-8"))
+        if (audit.get("status")!="DRAF_RTL_LAYOUT_ONLY_NOT_ACADEMIC_FINAL"
+            or set(audit.get("entries",{}))!=EXPECTED
+            or any(audit["entries"][key]["after_sha256"]!=manifest["files"][key]["sha256"]
+                   for key in EXPECTED)
+            or any(layout["source_sha256_by_subject_year"][key]!=entry["sha256"]
+                   for key,entry in manifest["files"].items())):
+            raise ValueError("Existing RTL audit or PDF cover hashes inconsistent")
+        for key,entry in manifest["files"].items():
+            file=original/entry["path"]
+            content=file.read_bytes()
+            if len(content)!=entry["bytes"] or sha256(content).hexdigest()!=entry["sha256"]:
+                raise ValueError("Existing complete 56-PDF manifest changed: "+key)
+        print("RTL_10_PDFS_ALREADY_VERIFIED_NO_REWRITE")
+        return audit["entries"]
     previous_sha={key:manifest["files"][key]["sha256"] for key in EXPECTED}
     updates={}
     for key,source in sorted(sources.items()):
