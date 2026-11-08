@@ -198,11 +198,11 @@ def arabic_records(year):
     if indexed is None:
         raise ValueError("Missing Arabic DSKP source-page index for year")
     source_pages={e["sp_code"]:e["pdf_page"] for e in indexed["entries"]}
-    # Year2/3/4/5 original DSKP PDFs were read visually and locked to SHA + source
+    # Year2/3/4/5/6 original DSKP PDFs were read visually and locked to SHA + source
     # page anchors. These are strictly DRAFT transcription CANDIDATES, never
     # subject-panel-approved SK/SP or permission to publish teachers' RPT.
     visual_candidates={}
-    if year in (2,3,4,5):
+    if year in (2,3,4,5,6):
         expected_visual={
             2:(19,18,1,{"3.4.1"},
                "audits/bahasa_arab_rpt2027_t2_19_sp_visual_statement_candidates_20261108.json"),
@@ -212,6 +212,8 @@ def arabic_records(year):
                "audits/bahasa_arab_rpt2027_t4_25_sp_visual_statement_candidates_20261108.json"),
             5:(25,25,0,set(),
                "audits/bahasa_arab_rpt2027_t5_25_sp_visual_statement_candidates_20261108.json"),
+            6:(25,25,0,set(),
+               "audits/bahasa_arab_rpt2027_t6_25_sp_visual_statement_candidates_20261108.json"),
         }
         count,display_count,held_count,held_codes,relative=expected_visual[year]
         visual=json.loads((ROOT/relative).read_text(encoding="utf-8"))
@@ -223,7 +225,7 @@ def arabic_records(year):
         if (visual.get("status")!="VISUAL_TRANSCRIPTION_CANDIDATE_ONLY_NOT_ACADEMIC_FINAL"
             or visual.get("source_pdf_sha256")!=indexed["pdf_sha256"]
             or visual.get("source_url")!=indexed["source_url"]
-            or (year in (3,4,5) and visual.get("source_pdf_pages")!=indexed["pdf_page_count"])
+            or (year in (3,4,5,6) and visual.get("source_pdf_pages")!=indexed["pdf_page_count"])
             or len(entries)!=count or len(visual_candidates)!=count
             or set(visual_candidates)!=set(source_pages)
             or summary.get("unique_sp")!=count
