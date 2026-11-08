@@ -19,6 +19,12 @@ on:
       - "rph_standalone/matematik/v60_source/**"
       - ".github/workflows/matematik-v60-native-runtime-staging.yml"
   workflow_dispatch:
+    inputs:
+      require_release:
+        description: "Run strict FINAL READY gate (academic + native + Web/Telegram E2E)"
+        type: boolean
+        required: false
+        default: false
 
 permissions:
   contents: read
@@ -62,9 +68,16 @@ jobs:
           for year, row in report['per_year'].items():
               print("Year",year,"PdP",row['native_pdp'],"matched",row['matched'],
                     "missing",row['unmatched'],"conflicts",row['conflicts'])
-          print("Academic and E2E signoffs remain withheld even on full mapping.")
-          if not report['mapping_ready']:
-              raise SystemExit("HOLD: actual Telegram Maths v25.99 mapping not reconciled 585/585")
+          native_total=sum(x['native_pdp'] for x in report['per_year'].values())
+          crosswalk=report.get('candidate_crosswalk',{})
+          assert report['source_lessons']==585, 'Source count changed'
+          assert native_total==528, 'Canonical v25.99 total unexpectedly changed'
+          assert crosswalk.get('approved_count')==0, 'No approval is authorized by this test'
+          assert crosswalk.get('status')=='ACADEMIC_HOLD'
+          assert report['release_decision']=='HOLD'
+          assert report['academic_signoff'] is False and report['runtime_e2e_passed'] is False
+          assert report['mapping_ready'] is False, 'Source changed: reconcile before approval'
+          print("CODE/AUDIT CHECKS PASS. RELEASE STATUS: HOLD, NOT READY.")
           PY
 
       - name: Preserve signed-source crosswalk audit for review (staging only)
@@ -75,3 +88,6 @@ jobs:
           path: /tmp/matematik_v60_native_coverage.json
           if-no-files-found: warn
           retention-days: 14
+      - name: Explicit FINAL READY gate (manual only, fail closed)
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.require_release }}
+        run: python -m tools.audit_matematik_v60_v2599_native_source_20261108 --require-release
