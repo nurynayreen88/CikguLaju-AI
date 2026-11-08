@@ -20,10 +20,46 @@ from pi_editor_jawi_closing_projection import preview as jawi_preview
 from pi_held_six_editor_candidate_packet import audit as held_packet
 from pi_held_six_word_pdf_print_audit import normalize as normalize_held
 from pi_quality_audit import COUNT
+from pi_surah_pbd_alignment_audit import RPT_SOURCE_ERRORS
+from pi_y5_activity_book_wording_review import EXPECTED as YEAR5_ACTIVITY_BOOK_AMBIGUOUS
 from pi_word_pdf_print_audit import make_docx, inspect_pdf
 
 CRITICAL = {"T4-L083", "T6-L137", "T6-L141"}
 HELD = {"T2-L035", "T6-L006", "T6-L014", "T6-L018", "T6-L060", "T6-L117"}
+JUZ25_UNMAPPED_SOURCE = {
+    "T6-L002", "T6-L006", "T6-L010", "T6-L014", "T6-L018",
+    "T6-L022", "T6-L026"
+}
+
+def academic_warning_codes(entry, page_count):
+    """Make source problems visible to the editor even for one-page A4 PDFs.
+
+    Codes reflect existing review audits; they certify neither academic content
+    nor the production Word/PDF generator. Original source stays immutable.
+    """
+    ident = entry["record"]["id"]
+    codes = ["ACADEMIC_AND_JAWI_APPROVAL_PENDING"]
+    if ident in HELD:
+        codes.append("SOURCE_RECORD_WITHHELD_EDITOR_CANDIDATE_ONLY")
+    if ident in CRITICAL:
+        codes.append("CRITICAL_HADITH_OR_TASMI_SOURCE_HOLD")
+    if ident in RPT_SOURCE_ERRORS:
+        codes.append("ORIGINAL_RPT_SURAH_LABEL_ERROR_PENDING")
+    if ident == "T4-L107":
+        codes.append("ORIGINAL_RPT_YEAR4_PUASA_SIX_RUKUN_ERROR_PENDING")
+    if ident == "T3-L059":
+        codes.append("ORIGINAL_RPT_YEAR3_SOLAT_OBJECTIVE_SEQUENCE_ERROR_PENDING")
+    if ident in YEAR5_ACTIVITY_BOOK_AMBIGUOUS:
+        codes.append("YEAR5_BUKU_AKTIVITI_EDITION_AND_EXERCISE_UNVERIFIED")
+    if ident in JUZ25_UNMAPPED_SOURCE:
+        codes.append("ORIGINAL_RPT_YEAR6_JUZ25_67_AYAT_UNMAPPED")
+    if ident == "T2-L035":
+        codes.append("ORIGINAL_RPT_YEAR2_AYAH224_OVERLAP_UNRESOLVED")
+    if entry["source_bahan_notes"]:
+        codes.append("EDITOR_ONLY_SOURCE_MATERIAL_NOTES_HELD_SEPARATELY")
+    if page_count != 1:
+        codes.append("PDF_LAYOUT_NOT_ONE_PAGE")
+    return codes
 COLUMNS = (
     "id", "year", "lesson", "review_status", "ready_for_teacher",
     "source_sp_approved", "jawi_approved", "file_docx", "file_pdf",
@@ -150,6 +186,7 @@ def create_report(output_dir, *, sample=0, batch_size=24):
         assert pages>=1 and a4 and pdf.stat().st_size>1000,(r["id"],pages,a4)
         if chars==0:
             raise RuntimeError("PDF text extraction empty: "+r["id"])
+        warning_codes = academic_warning_codes(entry, pages)
         records.append({
             "id":r["id"],"year":r["tahun"],"lesson":r["lesson"],
             "review_status":entry["review_status"],
@@ -159,9 +196,22 @@ def create_report(output_dir, *, sample=0, batch_size=24):
             "file_pdf":f"Tahun_{r['tahun']}/PDF/{pdf.name}",
             "pdf_pages":pages,
             "one_page_a4":pages==1,
-            "warning":"" if pages==1 else f"{pages}_PAGES_REQUIRES_LAYOUT_REVIEW"
+            "warning":" | ".join(warning_codes)
         })
     assert len(records)==len(source)
+    warning_counts=Counter(
+        code for item in records for code in item["warning"].split(" | ")
+    )
+    assert warning_counts["ACADEMIC_AND_JAWI_APPROVAL_PENDING"] == len(records)
+    if not sample:
+        assert warning_counts["SOURCE_RECORD_WITHHELD_EDITOR_CANDIDATE_ONLY"] == 6
+        assert warning_counts["CRITICAL_HADITH_OR_TASMI_SOURCE_HOLD"] == 3
+        assert warning_counts["ORIGINAL_RPT_SURAH_LABEL_ERROR_PENDING"] == 7
+        assert warning_counts["ORIGINAL_RPT_YEAR4_PUASA_SIX_RUKUN_ERROR_PENDING"] == 1
+        assert warning_counts["ORIGINAL_RPT_YEAR3_SOLAT_OBJECTIVE_SEQUENCE_ERROR_PENDING"] == 1
+        assert warning_counts["YEAR5_BUKU_AKTIVITI_EDITION_AND_EXERCISE_UNVERIFIED"] == 13
+        assert warning_counts["ORIGINAL_RPT_YEAR6_JUZ25_67_AYAT_UNMAPPED"] == 7
+        assert warning_counts["ORIGINAL_RPT_YEAR2_AYAH224_OVERLAP_UNRESOLVED"] == 1
     (output_dir/"INDEX_EDITOR_696.json").write_text(
         json.dumps({"status":"DRAF_EDITOR_ONLY_NO_GO",
                     "catalog_total":696,
@@ -169,6 +219,7 @@ def create_report(output_dir, *, sample=0, batch_size=24):
                     "one_page_a4":sum(r["one_page_a4"] for r in records),
                     "not_one_page_ids":[r["id"] for r in records if not r["one_page_a4"]],
                     "all_source_documents_untouched":True,
+                    "warning_code_counts":dict(sorted(warning_counts.items())),
                     "year1_kp2027_out_of_scope":True,
                     "ready_for_teacher":0,
                     "rows":records},ensure_ascii=False,indent=2)+"\n",
@@ -211,6 +262,7 @@ def create_report(output_dir, *, sample=0, batch_size=24):
         "rendered_docx":len(records),
         "rendered_pdf":len(records),
         "one_page_a4":sum(x["one_page_a4"] for x in records),
+        "warning_code_counts":dict(sorted(warning_counts.items())),
         "a4_binder_by_year":year_binders,
         "year_archives":zipped,
         "source_data_modified":False,
