@@ -143,6 +143,86 @@ def audit_dskp_primary():
             "status": "REQUIRES_ACADEMIC_REVIEW",
             "approved": False,
         })
+    # Complete the previously untriaged 8 native Y6 PdP without changing
+    # the historical 23-case evidence ledger. This is TITLE/SP triage only.
+    last_path = ROOT / "audits/matematik_y6_last8_semantic_review_20261108.json"
+    last = json.loads(last_path.read_text(encoding="utf-8"))
+    official_y6 = set(data["documents"]["6"]["sp_codes"])
+    if (last.get("schema") != "cikgulaju.math.y6.last8_semantic_triage.v1"
+            or last.get("academic_signoff") is not False
+            or last.get("production_modified") is not False
+            or last.get("release_decision") != "HOLD"
+            or len(last.get("cases", [])) != 8):
+        raise ValueError("Unexpected final Year6 eight-case source triage ledger")
+    reference_hashes = {
+        "dskp_y6": EXPECTED_DSKP_HASH[6],
+        "textbook_part1": "5785f6a8e3027168d16a9eecd37ddc60e582b6dbda63a60f0651656be0a51d6e",
+        "textbook_part2": "73a38e146f40adaf08432a60df211c4f0a610e5d50e746bd6326706cc9bb5804",
+    }
+    if any(last["source_documents"][k]["sha256"] != sha
+           for k, sha in reference_hashes.items()):
+        raise ValueError("Year6 last-eight source SHA changed")
+    previously_flagged = {
+        a["pdp_code"] for a in affected if a["year"] == 6
+    } | {x["pdp_code"] for x in extra_semantic}
+    newly_flagged = []
+    provisional_only = []
+    seen_last = set()
+    for entry in last["cases"]:
+        code = entry["native_pdp_code"]
+        native = by_pdp.get(code)
+        if (code in previously_flagged or code in seen_last
+                or native is None
+                or native["native_title"] != entry["native_title"]
+                or native["source_sequence_numbers"] != [str(entry["native_lesson_number"])]
+                or native["sksp"] != [{"sk": entry["native_sk"], "sp": entry["native_sp"]}]
+                or any(x not in official_y6 for x in entry["native_sp"].split(";"))
+                or entry["academic_approved"] is not False):
+            raise ValueError("Final-eight Year6 audit does not match actual canonical PdP: " + code)
+        seen_last.add(code)
+        if entry.get("candidate_dskp_sp"):
+            if any(x not in official_y6
+                   for x in entry["candidate_dskp_sp"].split(";")):
+                raise ValueError("Final-eight candidate SP absent from primary DSKP")
+        expected_book_hash_key = ("textbook_part1" if entry["textbook_reference"] == "part1"
+                                  else "textbook_part2")
+        if expected_book_hash_key not in last["source_documents"]:
+            raise ValueError("Unknown primary textbook reference")
+        first, last_page = min(entry["textbook_printed_pages"]), max(entry["textbook_printed_pages"])
+        if entry["textbook_printed_pages"] != list(range(first, last_page + 1)):
+            raise ValueError("Final-eight textbook printed pages not contiguous")
+        if entry["textbook_pdf_pages"] != [
+                n + (7 if entry["textbook_reference"] == "part1" else -60)
+                for n in entry["textbook_printed_pages"]]:
+            raise ValueError("Final-eight book printed/PDF page translation changed")
+        output = {
+            "year": 6, "pdp_code": code,
+            "native_title": native["native_title"],
+            "native_sp": entry["native_sp"],
+            "reason": entry["evidence"],
+            "candidate_sp": entry.get("candidate_dskp_sp"),
+            "status": entry["status"],
+            "approved": False,
+        }
+        if entry["status"] == "TOPIC_SP_BOOK_MATCH_PROVISIONAL":
+            provisional_only.append(output)
+        elif entry["status"].endswith("REVIEW_REQUIRED"):
+            newly_flagged.append(output)
+        else:
+            raise ValueError("Unexpected last-eight triage classification")
+    if len(newly_flagged) != 6 or len(provisional_only) != 2:
+        raise ValueError("Final-eight must have 6 title/SP flags and 2 provisional matches")
+    extra_semantic.extend(newly_flagged)
+    year6_native_all = set(by_pdp)
+    grouped_year6 = previously_flagged | set(seen_last)
+    if len(year6_native_all) != 93 or grouped_year6 != year6_native_all:
+        raise ValueError("Incomplete Year6 native initial topic/SP triage coverage")
+    year6_review_count = len(year6_native_all) - len(provisional_only)
+    if year6_review_count != 91:
+        raise ValueError("Year6 topic/SP review count changed unexpectedly")
+    # Two provisional matches are NOT APPROVED; their full activity-level
+    # semantic review and RPT/BA/signoff are still outstanding.
+
     return {
         "schema": "cikgulaju.math.v60_dskp_code_presence_audit.v1",
         "run_status": "CODE_AUDIT_ONLY",
@@ -156,7 +236,11 @@ def audit_dskp_primary():
         "code_present_but_semantically_conflicting_known_cases": extra_semantic,
         "known_semantic_conflict_count": len(extra_semantic),
         "known_distinct_pdp_requiring_review_minimum": len(affected) + len(extra_semantic),
-        "coverage_warning": "This is a minimum of 98 absent-code PdP and 23 independently sourced topic/SP scope warnings, not a complete semantic audit of all 528 PdP.",
+        "year6_native_initial_title_sp_triaged": len(year6_native_all),
+        "year6_native_minimum_priority_review": year6_review_count,
+        "year6_title_sp_provisional_matches_not_approved": provisional_only,
+        "year6_native_untriaged_title_sp_count": 0,
+        "coverage_warning": "This is a minimum of 98 absent-code PdP and 29 independent title/SP topic-scope review warnings, not full academic QA of all 528 PdP. Year6 93/93 have received initial title/SP classification only; 2 provisional matches are not approved.",
         "release_decision": "HOLD",
         "academic_signoff": False,
         "runtime_e2e_passed": False,
