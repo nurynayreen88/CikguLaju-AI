@@ -28,7 +28,7 @@ _INTERNAL = re.compile(
 )
 # Some note fragments are internal even without a status word.
 _AUDIT_CLAUSE = re.compile(
-    r"(?i)(?:\b(?:sumber|semakan)\s*:\s*(?:v\d|legacy|draft)|"
+    r"(?i)(?:\bSumber\s*:|\bRujukan\s*:\s*Rujuk\s+DSKP\b|\b(?:sumber|semakan)\s*:\s*(?:v\d|legacy|draft)|"
     r"\bRPT\s+2026\s+(?:salah|mengulangi)|"
     r"\b(?:TARIKH|MINGGU)\s+(?:A/B\s+)?(?:BELUM|(?:IALAH|ADALAH)\s+CADANGAN)|"
     r"\b(?:HALAMAN|AKTIVITI|BUKU|TEKS|KOD)\b.{0,80}\b(?:belum|draf|calon|sebelum READY)|"
@@ -54,6 +54,12 @@ def public_note(row: dict) -> str:
         row.get("week_allocation") == "PROPOSED_2027_WEEK_NOT_TIMETABLE"):
         return ""
     source = str(row.get("note") or "")
+    # Remove reviewer qualifiers without deleting genuine teaching/PBD guidance.
+    # Do not change the source dict or its source_status fields.
+    source = re.sub(r"(?i)\bPBD\s*\(draf\)\s*:", "PBD:", source)
+    source = re.sub(r"(?i)\bPBD\s*\(sumber\)\s*:", "PBD:", source)
+    source = re.sub(r"(?i)\bAktiviti\s*\(sumber\)\s*:", "Aktiviti:", source)
+    source = re.sub(r"(?i)\s*\(bukan halaman aktiviti disahkan\)", "", source)
     # Split compound notes conservatively and discard entire questionable
     # clauses rather than silently substituting unverified facts.
     safe = []
@@ -61,7 +67,7 @@ def public_note(row: dict) -> str:
         part = part.strip(" ;,|")
         if part and not is_internal(part):
             safe.append(part)
-    return " | ".join(safe)
+    return re.sub(r"\.{2,}", ".", " | ".join(safe))
 
 
 def public_standard(row: dict, field: str) -> str:
