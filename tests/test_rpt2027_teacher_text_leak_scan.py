@@ -53,6 +53,48 @@ class TeacherTextLeakAuditTests(unittest.TestCase):
             with contextlib.redirect_stdout(io.StringIO()):
                 self.assertEqual(main([str(folder / "missing")]), 1)
 
+    def test_teacher_projection_keeps_source_and_hides_review_notes(self):
+        from rpt_2027.common.teacher_display_projection import (
+            public_note, public_standard, public_topic
+        )
+        notes = (
+            "Bahan: Kad nombor | PBD: Murid menyusun kad nombor. "
+            "Pemetaan buku teks belum disahkan; rujuk buku dan DSKP sebelum READY.",
+        )
+        row = {
+            "sk": "1.1",
+            "sp": "1.1.1",
+            "sk_display": "1.1 — Pernyataan penuh SK belum dipadankan",
+            "sp_display": "1.1.1 — Pernyataan penuh SP belum dipadankan",
+            "note": notes[0],
+            "topic": "Menyusun kad nombor"
+        }
+        old = dict(row)
+        self.assertEqual(public_standard(row, "sk"), "1.1")
+        self.assertEqual(public_standard(row, "sp"), "1.1.1")
+        printable = public_note(row)
+        self.assertNotIn("belum disahkan", printable)
+        self.assertNotIn("READY", printable)
+        self.assertIn("Bahan: Kad nombor", printable)
+        self.assertEqual(row, old)
+
+        held = dict(row, source_held=True,
+                    topic="KONFLIK SUMBER DIBETULKAN DALAM CADANGAN")
+        self.assertEqual(public_note(held), "")
+        self.assertEqual(public_topic(held), "")
+        arabic = dict(row, source_sp_dskp_text_signoff=False)
+        self.assertEqual(public_note(arabic), "")
+        self.assertFalse(arabic["source_sp_dskp_text_signoff"])
+
+    def test_pdf_render_gate_detects_internal_footer_and_clauses(self):
+        from rpt_2027.common.teacher_display_projection import public_note
+        row = {
+            "note": ("Tarikh A/B ialah cadangan; semak negeri, cuti dan jadual guru. "
+                     "Aktiviti guru: Mengendalikan eksperimen ringkas.")
+        }
+        self.assertNotIn("semak negeri", public_note(row).lower())
+        self.assertIn("Aktiviti guru", public_note(row))
+
     def test_scan_teacher_output_separately_from_source_data(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
