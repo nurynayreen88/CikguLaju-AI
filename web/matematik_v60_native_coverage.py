@@ -68,8 +68,16 @@ def audit_native_mapping(runtime) -> dict:
                 continue
             groups[code].append(row)
 
+        # Collect every raw PdP -> Lesson claim *before* validating SP.
+        # Otherwise one invalid multi-SP group can be overlooked while a
+        # different PdP with the same Lesson is mistakenly counted as matched.
+        claimed_by = defaultdict(set)
+        for code, group in groups.items():
+            numbers = {_single_positive_number(r.get("source_sequence_no")) for r in group}
+            if len(numbers) == 1 and None not in numbers:
+                claimed_by[next(iter(numbers))].add(code)
+
         matched = set()
-        used_numbers = {}
         for code, group in groups.items():
             numbers = {_single_positive_number(r.get("source_sequence_no")) for r in group}
             pairs = {(str(r.get("sk_code") or "").strip(),
@@ -77,14 +85,13 @@ def audit_native_mapping(runtime) -> dict:
             if len(numbers) != 1 or None in numbers:
                 problems.append(f"{code}: missing or ambiguous Lesson number")
                 continue
+            number = next(iter(numbers))
+            if len(claimed_by[number]) != 1:
+                problems.append(f"{code}: duplicate Lesson {number} across native PdP keys")
+                continue
             if len(pairs) != 1 or not all(next(iter(pairs))):
                 problems.append(f"{code}: missing or multiple SK/SP values")
                 continue
-            number = next(iter(numbers))
-            if number in used_numbers:
-                problems.append(f"{code}: duplicate Lesson {number} (also {used_numbers[number]})")
-                continue
-            used_numbers[number] = code
             sk, sp = next(iter(pairs))
             if (sk, sp) != (expected[number]["_sk_code"], expected[number]["_sp_code"]):
                 problems.append(f"{code}: Year {year} Lesson {number} SK/SP differs from v60")
