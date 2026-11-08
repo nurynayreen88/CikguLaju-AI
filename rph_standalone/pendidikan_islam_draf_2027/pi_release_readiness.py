@@ -28,6 +28,12 @@ from pi_t6_held_quran_editor_candidate_review import audit as held_quran_proposa
 from pi_t6_juz25_rpt2026_source_provenance import audit as juz25_legacy_provenance
 from pi_ba_match_queue import match_queue
 from pi_review_catalog import counts as preview_counts
+# These audits cover newly corrected source-content errors, not just layout.
+from pi_quran_114_surah_range_audit import audit as quran_114_audit
+from pi_surah_pbd_alignment_audit import audit as surah_pbd_audit
+from pi_primary_source_fiqh_copyedit_audit import audit as fiqh_source_audit
+from pi_t3_solat_case_sequence_audit import audit as solat_sequence_audit
+from pi_tasmi_continuity_quality_guard import audit as tasmi_continuity_audit
 
 
 def readiness(root=ROOT):
@@ -50,6 +56,37 @@ def readiness(root=ROOT):
     legacy = juz25_legacy_provenance(root)
     ba = match_queue(root)
     preview = preview_counts(root=root)
+    # Fail closed when a new academic-source regression occurs: a passing
+    # older release report must never bypass these newer audit modules.
+    quran_114 = quran_114_audit(root)
+    surah_pbd = surah_pbd_audit(root)
+    fiqh_source = fiqh_source_audit(root)
+    solat_sequence = solat_sequence_audit(root)
+    tasmi_continuity = tasmi_continuity_audit(root)
+    assert quran_114["unheld_drafts_examined"] == 690
+    assert quran_114["invalid_chapter_verse_ranges"] == 0
+    assert quran_114["crossfield_surah_verse_mismatches"] == 0
+    assert quran_114["specialist_approved"] == quran_114["teacher_ready"] == 0
+    assert surah_pbd["named_surah_or_pbd_range_remaining_mismatches"] == 0
+    assert surah_pbd["lessons_with_precise_corrections"] == 11
+    assert surah_pbd["curriculum_RPT2027_copy_errors_flagged"] == 7
+    assert surah_pbd["teacher_publishable"] == 0
+    assert fiqh_source["two_rukun_puasa_correction_applied_in_staging"] is True
+    assert fiqh_source["original_rpt_year4_pdp107_six_rukun_incorrect"] is True
+    assert fiqh_source["other_exact_word_duplicate_fixes"] == 3
+    assert fiqh_source["expert_fiqh_approved"] is False
+    assert fiqh_source["teacher_release"] is False
+    assert solat_sequence["listed_case_numbers_covered_once"] == 18
+    assert solat_sequence["rpt_2027_l059_original_objective_incorrect"] is True
+    assert solat_sequence["expert_fiqh_approved"] is False
+    assert solat_sequence["teacher_ready"] == 0
+    assert tasmi_continuity["years_reviewed"] == 5
+    assert tasmi_continuity["source_gaps_year2_l035_held_ayat225_to245"] == 21
+    assert tasmi_continuity["source_juz25_original_year6_missing_ayah"] == 67
+    assert tasmi_continuity["high_volume_60plus_ayah_source_lessons_for_teacher_review"] >= 10
+    assert tasmi_continuity["expert_approved"] == tasmi_continuity["teacher_ready"] == 0
+    assert all(result["release"] == "NO_GO" for result in
+               (quran_114, surah_pbd, fiqh_source, solat_sequence, tasmi_continuity))
     assert qa["total"] == 696 and qa["drafts"] == 690 and qa["held"] == 6
     assert qa["critical_source_review_count"] == 3
     assert qa["unverified_year4_to6_activity_book_wording_count"] == 13
@@ -159,6 +196,18 @@ def readiness(root=ROOT):
     assert sum(x["closing_jawi_candidate_exists"] for x in grouped.values()) == 690
     # Evidence needed before a future release decision; no implicit approval.
     blockers = [
+        {"code": "RPT_SOURCE_7_SURAH_COPIES_REQUIRE_CORRECTION",
+         "affected_lessons": surah_pbd["curriculum_RPT2027_copy_errors_flagged"],
+         "action": "Seven Year3/4 RPT2027 source entries retained wrong surah labels; staging RPH corrected them, but source RPT and final Jawi/Quran signoff are pending"},
+        {"code": "YEAR4_RPT_PUASA_SIX_RUKUN_SOURCE_ERROR",
+         "affected_lessons": 1,
+         "action": "T4-L107 staging objective now says two rukun puasa as verified against textbook p130; original RPT still says six. Correct RPT separately and verify fiqh/Jawi before teacher use"},
+        {"code": "YEAR3_RPT_SOLAT_L059_DUPLICATE_OBJECTIVE",
+         "affected_lessons": 1,
+         "action": "T3-L059 original RPT objective repeats cases 7-12. Staging RPH has cases 13-18 consistent with PdP051/055; source RPT correction and case-list fiqh signoff still pending"},
+        {"code": "QURAN_TASMI_HIGH_VOLUME_TEACHER_TIMING",
+         "affected_lessons": tasmi_continuity["high_volume_60plus_ayah_source_lessons_for_teacher_review"],
+         "action": "More than 60 source Quran ayat in each flagged lesson require individual timing/tasmi selection, source validation and teacher approval; do not reassign ayat automatically"},
         {"code": "YEAR6_JUZ25_67_UNMAPPED_QURAN_AYAT", "affected_lessons": 7,
          "action": "RPT Year6 Juz25 maps 179/246 ayat across PdP002/006/010/014/018/022/026, missing Fussilat 41:47-54, Zukhruf 43:74-89, Dukhan 44:1-39 and Jathiyah 45:34-37 (67 ayat). RPT editor/teacher must map them; never invent a lesson or code"},
         {"code": "YEAR6_FOUR_QURAN_EDITOR_CANDIDATES_ONLY", "affected_lessons": 4,
@@ -248,6 +297,14 @@ def readiness(root=ROOT):
         "teacher_approved_page_specific_exercises": 0,
         "book_activity_page_candidates": 174,
         "year5_ambiguous_activity_book_source_mentions": qa["unverified_year4_to6_activity_book_wording_count"],
+        "quran_verse_range_occurrences_screened": quran_114["verse_range_occurrences_evaluated"],
+        "quran_invalid_verse_ranges_in_staging": quran_114["invalid_chapter_verse_ranges"],
+        "quran_sp_objective_pbd_range_mismatches_in_staging": quran_114["crossfield_surah_verse_mismatches"],
+        "surah_crossfield_editor_corrections": surah_pbd["lessons_with_precise_corrections"],
+        "surah_source_rpt_errors_pending": surah_pbd["curriculum_RPT2027_copy_errors_flagged"],
+        "year4_rpt_puasa_six_rukun_error_pending": fiqh_source["original_rpt_year4_pdp107_six_rukun_incorrect"],
+        "year3_rpt_solat_l059_copy_error_pending": solat_sequence["rpt_2027_l059_original_objective_incorrect"],
+        "tasmi_source_high_volume_lessons_review_pending": tasmi_continuity["high_volume_60plus_ayah_source_lessons_for_teacher_review"],
         "book_activity_exercises_verified": 0,
         "individual_expert_approvals": 0,
         "native_telegram_web_rph_pdf_verified": 0,
