@@ -1,351 +1,13 @@
 {
   "status": "STAGING_ONLY_TEXT_CLEANUP_NOT_ACADEMIC_APPROVAL",
-  "source_release_manifest_sha256": "3f28d3d5513dc65a40b670cb153b4c398ab6a3ab0d3edc30e8d24ea4558baeaf",
-  "new_release_manifest_sha256": "34842a3a9011e8670b07efee2d2a5eab6e63ed0a88ed1f9e198947b877c7cd6f",
+  "source_release_manifest_sha256": "dbc87c77115263c0984ec90a2f0d80db31821df1d885ff209597eded36df9fb3",
+  "new_release_manifest_sha256": "5b2f4454c2c726c38108dbc96cf32b7066932159d9a804f5c775b23718f9d59c",
   "original_versions_preserved_by_git_history": true,
   "source_branch": "production/cikgulaju-web-20261105",
   "original_web_release_commit": "694d6f8ca0867b1e8ec7e6c41073a982409f4ddd",
   "curriculum_academic_final_approved": false,
   "teacher_note_detector_findings": 0,
   "backup_manifest_by_key": {
-    "bahasa_arab:2": {
-      "path": "bahasa_arab/tahun_2.pdf",
-      "sha256": "ed2c5baa98788e2ea818d3e813add4cac7215540b4cdfdcdffd5537258980fcd",
-      "bytes": 125266,
-      "pages": 12
-    },
-    "bahasa_arab:3": {
-      "path": "bahasa_arab/tahun_3.pdf",
-      "sha256": "8b879dec8876d597c5d83130f4712324a579c13c33f2038c2d97de6694c25ac1",
-      "bytes": 122750,
-      "pages": 11
-    },
-    "bahasa_arab:4": {
-      "path": "bahasa_arab/tahun_4.pdf",
-      "sha256": "76c3c0b68c147344ca6906609eb81eefe01eae77a305bcae786d31697c357dc0",
-      "bytes": 121207,
-      "pages": 11
-    },
-    "bahasa_arab:5": {
-      "path": "bahasa_arab/tahun_5.pdf",
-      "sha256": "43ffa36762ea633a6189c3d40390f1b357cb916a61e8ffff1ee283302f3aae3e",
-      "bytes": 125303,
-      "pages": 12
-    },
-    "bahasa_arab:6": {
-      "path": "bahasa_arab/tahun_6.pdf",
-      "sha256": "8b15fef375250c220cc81eb95c2c39aa106a62564bd50b6ffecc180cc59a12bd",
-      "bytes": 122811,
-      "pages": 11
-    },
-    "bahasa_melayu:2": {
-      "path": "bahasa_melayu/tahun_2.pdf",
-      "sha256": "00bd722eb67c5bf678e171a762a8ece93c63d7a33f2c2d5713436024c530f193",
-      "bytes": 129208,
-      "pages": 32
-    },
-    "bahasa_melayu:3": {
-      "path": "bahasa_melayu/tahun_3.pdf",
-      "sha256": "b0cab46186b9a4bfd920abc96701c5744f8bf05c4edd575603feacbf2eb7255e",
-      "bytes": 141204,
-      "pages": 36
-    },
-    "bahasa_melayu:4": {
-      "path": "bahasa_melayu/tahun_4.pdf",
-      "sha256": "8e6af25e6a0e71c51a06609b2206dcd108005fb20eaa61e164d3a4ba180159b1",
-      "bytes": 130050,
-      "pages": 32
-    },
-    "bahasa_melayu:5": {
-      "path": "bahasa_melayu/tahun_5.pdf",
-      "sha256": "d34ba5b2bbe2b3e35e49397d4528e28fc6a61f38883214d0f0e99c682d61718e",
-      "bytes": 132139,
-      "pages": 32
-    },
-    "bahasa_melayu:6": {
-      "path": "bahasa_melayu/tahun_6.pdf",
-      "sha256": "6d66e64d112b498fd50d4c1074ffaaa51bbd75abe6d7b0cb83bdb23d78cd2080",
-      "bytes": 134401,
-      "pages": 33
-    },
-    "english:2": {
-      "path": "english/tahun_2.pdf",
-      "sha256": "3ed54b912a9f629259a0dab73e32278c907dc81b776423272fd80012ec8ffd42",
-      "bytes": 148050,
-      "pages": 40
-    },
-    "english:3": {
-      "path": "english/tahun_3.pdf",
-      "sha256": "fe73aa1a24549cf5f6a60246e57866343b53c899b090f969be9568b7ec16dfd1",
-      "bytes": 148172,
-      "pages": 41
-    },
-    "english:4": {
-      "path": "english/tahun_4.pdf",
-      "sha256": "ff77257c8feb83bba504182b0a79c0c9c35764d5b2da5ee330b3d8fd923578d4",
-      "bytes": 158505,
-      "pages": 41
-    },
-    "english:5": {
-      "path": "english/tahun_5.pdf",
-      "sha256": "d9fe097f4f98f2134750ff114165ae8cc6d97e4576bf0b2e0cb7f565ca43bc1c",
-      "bytes": 159947,
-      "pages": 41
-    },
-    "english:6": {
-      "path": "english/tahun_6.pdf",
-      "sha256": "8ee9f9b67299dbf165ac430a4c9937483c388cdc83233387484f29505bf9a271",
-      "bytes": 167881,
-      "pages": 44
-    },
-    "matematik:2": {
-      "path": "matematik/tahun_2.pdf",
-      "sha256": "94f5e9763c735bdf706c6b3fd581f9088af6257309372979309df0f9fc53caae",
-      "bytes": 146604,
-      "pages": 53
-    },
-    "matematik:3": {
-      "path": "matematik/tahun_3.pdf",
-      "sha256": "0fcc8e6531966d1bab60b86b3f3df0e690bcca54f7f6bfd27f500e98495c6b35",
-      "bytes": 141502,
-      "pages": 50
-    },
-    "matematik:4": {
-      "path": "matematik/tahun_4.pdf",
-      "sha256": "b59c63f497d22a5032774418596f825832b7e2be59314a1f29d107894c635de8",
-      "bytes": 153152,
-      "pages": 50
-    },
-    "matematik:5": {
-      "path": "matematik/tahun_5.pdf",
-      "sha256": "cf24bb1cb060ffe0ec82bceee7edb8604ef3483b9138751a960332ed6f38352c",
-      "bytes": 149231,
-      "pages": 53
-    },
-    "matematik:6": {
-      "path": "matematik/tahun_6.pdf",
-      "sha256": "179cc8acc03d961d2b66f7556036df6cfa9ea5cb4829d61437e944a5176e5090",
-      "bytes": 143733,
-      "pages": 51
-    },
-    "muzik:2": {
-      "path": "muzik/tahun_2.pdf",
-      "sha256": "3d1d63aeab816128268f19860b58ef855f24a9bf9dfa7e2f6ab3f5f435ce4be7",
-      "bytes": 61286,
-      "pages": 7
-    },
-    "muzik:3": {
-      "path": "muzik/tahun_3.pdf",
-      "sha256": "d2182418d5bc759939199fa176af4db0a46e783c73f4552638ed86edb3b2e56c",
-      "bytes": 60269,
-      "pages": 7
-    },
-    "muzik:4": {
-      "path": "muzik/tahun_4.pdf",
-      "sha256": "39c5cafc23fddd9e797fe4533510d8487a0a9928103e27ab43b4da690ea2e4a2",
-      "bytes": 62743,
-      "pages": 8
-    },
-    "muzik:5": {
-      "path": "muzik/tahun_5.pdf",
-      "sha256": "02b174af384720aee37edadbf8cdaef3eb784c7d370b28573bc9260f58eba528",
-      "bytes": 61092,
-      "pages": 7
-    },
-    "muzik:6": {
-      "path": "muzik/tahun_6.pdf",
-      "sha256": "6e087c3ec17bbe2ab504588ef9c1d6bca11fe335d32b151c775ff5da87216026",
-      "bytes": 63716,
-      "pages": 8
-    },
-    "pendidikan_islam:2": {
-      "path": "pendidikan_islam/tahun_2.pdf",
-      "sha256": "a657f9991ca70c105ae0b0a3a4ac18ae412468fefaf359825b1a9bf5e0f3c5d7",
-      "bytes": 247453,
-      "pages": 48
-    },
-    "pendidikan_islam:3": {
-      "path": "pendidikan_islam/tahun_3.pdf",
-      "sha256": "eaa5993103108ce6dba3602155226408fbfb3bcf1d940e623d8b35439f892ffa",
-      "bytes": 330629,
-      "pages": 75
-    },
-    "pendidikan_islam:4": {
-      "path": "pendidikan_islam/tahun_4.pdf",
-      "sha256": "3da30e3a09d1efec76749aa343e28d6c91004318b041b07a428c4d8f0dbf4eeb",
-      "bytes": 329568,
-      "pages": 76
-    },
-    "pendidikan_islam:5": {
-      "path": "pendidikan_islam/tahun_5.pdf",
-      "sha256": "d0fe04e0368b8ec2021583302f4d16546d2bf2dd61ff821f4e44320fb7fce16f",
-      "bytes": 313052,
-      "pages": 72
-    },
-    "pendidikan_islam:6": {
-      "path": "pendidikan_islam/tahun_6.pdf",
-      "sha256": "8fb883b3865564171358d7f0cbf6f842d800de5c56e5fa959d6000b57d86dee0",
-      "bytes": 323613,
-      "pages": 73
-    },
-    "pendidikan_moral:2": {
-      "path": "pendidikan_moral/tahun_2.pdf",
-      "sha256": "8536bf8d1337dc5ba821083234f6793a4490a8c8c2c55d4323931b1b6f739513",
-      "bytes": 137645,
-      "pages": 45
-    },
-    "pendidikan_moral:3": {
-      "path": "pendidikan_moral/tahun_3.pdf",
-      "sha256": "1d9382e8095099dfc787b7b94789a9da2b4e088921b805bf170f096da2b04d47",
-      "bytes": 136883,
-      "pages": 44
-    },
-    "pendidikan_moral:4": {
-      "path": "pendidikan_moral/tahun_4.pdf",
-      "sha256": "73f7a2fb2e4bebcc9465f626e9ee04c51d68b7007df4c3b054f2bb12b28e1340",
-      "bytes": 138416,
-      "pages": 45
-    },
-    "pendidikan_moral:5": {
-      "path": "pendidikan_moral/tahun_5.pdf",
-      "sha256": "e83a5587d9d89bcdc65a357f8043958178fd205b47ac1a59caee90e98f4ac292",
-      "bytes": 139686,
-      "pages": 45
-    },
-    "pendidikan_moral:6": {
-      "path": "pendidikan_moral/tahun_6.pdf",
-      "sha256": "0af6def68371348506ce2de5d6efbc9e8de74cfd6f1cf948756ba6e67e9ec104",
-      "bytes": 138600,
-      "pages": 45
-    },
-    "pjpk:2": {
-      "path": "pjpk/tahun_2.pdf",
-      "sha256": "ea46af913554e707877548ec92f96918eda85345b7d81e327a0a0abdfdc38062",
-      "bytes": 109493,
-      "pages": 27
-    },
-    "pjpk:3": {
-      "path": "pjpk/tahun_3.pdf",
-      "sha256": "cafa05344f70b969213cf54835e5d4e93e6e6fd483490dd0c634c1e7dc5ed03f",
-      "bytes": 136177,
-      "pages": 36
-    },
-    "pjpk:4": {
-      "path": "pjpk/tahun_4.pdf",
-      "sha256": "a5b133ccd34760966b3359f24510efa64b69816cb231e92cffff433e37e599c3",
-      "bytes": 108641,
-      "pages": 26
-    },
-    "pjpk:5": {
-      "path": "pjpk/tahun_5.pdf",
-      "sha256": "f07504434a142b1fbe872e9d6ffd31d42238e85a93e648071fbd700e163e05b8",
-      "bytes": 99568,
-      "pages": 22
-    },
-    "pjpk:6": {
-      "path": "pjpk/tahun_6.pdf",
-      "sha256": "507c846772054cdcee96a47fda23eca68a4674feb7ff02d3ea098de4b07c527c",
-      "bytes": 108137,
-      "pages": 26
-    },
-    "psv:2": {
-      "path": "psv/tahun_2.pdf",
-      "sha256": "88e4862e07af6aae10122963c911b4d1b2f1ac1cd8e54b3233b1be9733108af5",
-      "bytes": 84751,
-      "pages": 16
-    },
-    "psv:3": {
-      "path": "psv/tahun_3.pdf",
-      "sha256": "660bb040db2400e19890688baf96f8d769e86c6ddbb2e07ee0b1efc47afe63c1",
-      "bytes": 83723,
-      "pages": 15
-    },
-    "psv:4": {
-      "path": "psv/tahun_4.pdf",
-      "sha256": "c966e3d8cac777821a3afac0686591cb67cbd0839f4f1d852955d44ee41b9dbf",
-      "bytes": 86028,
-      "pages": 16
-    },
-    "psv:5": {
-      "path": "psv/tahun_5.pdf",
-      "sha256": "4211d0bd9901dfcb3b680c640419d40f0f84b0768b67af93301c356760492891",
-      "bytes": 85654,
-      "pages": 16
-    },
-    "psv:6": {
-      "path": "psv/tahun_6.pdf",
-      "sha256": "c34ced7c69eea62696eb066502f7cc9af5c522d201aa70eef7cea7cac6b4fb42",
-      "bytes": 84032,
-      "pages": 15
-    },
-    "rbt:4": {
-      "path": "rbt/tahun_4.pdf",
-      "sha256": "6359b08acc2fceb26b220ee9036833bc1b80009b55529ca35b953d9c0c56c294",
-      "bytes": 61481,
-      "pages": 8
-    },
-    "rbt:5": {
-      "path": "rbt/tahun_5.pdf",
-      "sha256": "9715c5f2b5a5e578f413f26f29290d6c175181f26ce26072aac18662a46af017",
-      "bytes": 60626,
-      "pages": 8
-    },
-    "rbt:6": {
-      "path": "rbt/tahun_6.pdf",
-      "sha256": "870a3edcd4fd57f09e518597d2f337c796021802087c48ffd15cf227e8bb093e",
-      "bytes": 59680,
-      "pages": 8
-    },
-    "sains:2": {
-      "path": "sains/tahun_2.pdf",
-      "sha256": "bf497c1b9edcb0a3b50c671d4f8ba886151cbebd22f7378575752fc961c4db6c",
-      "bytes": 70320,
-      "pages": 12
-    },
-    "sains:3": {
-      "path": "sains/tahun_3.pdf",
-      "sha256": "c58e303c16de2c40b19180e9f97a849110bf212ad32a8ba093616103faa17243",
-      "bytes": 72169,
-      "pages": 13
-    },
-    "sains:4": {
-      "path": "sains/tahun_4.pdf",
-      "sha256": "2e6ece78d2f386b4e069460d20fd5ba10bbfab2028e3b8c7341aaf9686a62021",
-      "bytes": 86705,
-      "pages": 20
-    },
-    "sains:5": {
-      "path": "sains/tahun_5.pdf",
-      "sha256": "bbe30bdef5f5f6f20422c551cff5809992f6f552667bc5fb7c72929b16006f3f",
-      "bytes": 90395,
-      "pages": 22
-    },
-    "sains:6": {
-      "path": "sains/tahun_6.pdf",
-      "sha256": "edb3e748bc755768f6cd1fb195346233770c4b78b177a18c78f36146a9ccc3ee",
-      "bytes": 109870,
-      "pages": 32
-    },
-    "sejarah:4": {
-      "path": "sejarah/tahun_4.pdf",
-      "sha256": "df1ac9b782813adecf36f2b81de75f14482e0a2a5c4e410c59e18888b5274374",
-      "bytes": 67944,
-      "pages": 10
-    },
-    "sejarah:5": {
-      "path": "sejarah/tahun_5.pdf",
-      "sha256": "c3f74469bf983df00f869fd886adbf1bef5c28f4bb66a121e7fdecef219da956",
-      "bytes": 67927,
-      "pages": 10
-    },
-    "sejarah:6": {
-      "path": "sejarah/tahun_6.pdf",
-      "sha256": "f8befb89f8354f3e21fc33210f47cbf05498975b0d23ba898d2a6e79099d08ba",
-      "bytes": 65704,
-      "pages": 9
-    }
-  },
-  "replacement_manifest_by_key": {
     "bahasa_arab:2": {
       "path": "bahasa_arab/tahun_2.pdf",
       "sha256": "f586180687b116b5d22b2aa98db493ff72e35d958f27c7bd20fcf44b1856c80a",
@@ -679,6 +341,344 @@
     "sejarah:6": {
       "path": "sejarah/tahun_6.pdf",
       "sha256": "ccd5d5f16ce4ec516ddb5bcebe5ea0bef65c3a77c7607897e82c80cd7474dfc7",
+      "bytes": 62245,
+      "pages": 8
+    }
+  },
+  "replacement_manifest_by_key": {
+    "bahasa_arab:2": {
+      "path": "bahasa_arab/tahun_2.pdf",
+      "sha256": "e5d582ffecd134cbf6682b60a8940146bfb1b8de4f672bd995a46a349bd285d7",
+      "bytes": 120192,
+      "pages": 11
+    },
+    "bahasa_arab:3": {
+      "path": "bahasa_arab/tahun_3.pdf",
+      "sha256": "f80f920368e76cc1f39c937b0047e901fca3786b71998d975ce93891ea0c9b58",
+      "bytes": 119513,
+      "pages": 11
+    },
+    "bahasa_arab:4": {
+      "path": "bahasa_arab/tahun_4.pdf",
+      "sha256": "ddd4632c78985deb01df688f5a269b186023884857542858c35499dbe912fe20",
+      "bytes": 118041,
+      "pages": 11
+    },
+    "bahasa_arab:5": {
+      "path": "bahasa_arab/tahun_5.pdf",
+      "sha256": "8099c47516e20e92683947813724008ebd1025c934d6e5a254da9fec449414a7",
+      "bytes": 121698,
+      "pages": 12
+    },
+    "bahasa_arab:6": {
+      "path": "bahasa_arab/tahun_6.pdf",
+      "sha256": "195f97e5c92d2c38019f7677983526e1794da7785b20a1c86c02e0eb2f4e2ff5",
+      "bytes": 119514,
+      "pages": 11
+    },
+    "bahasa_melayu:2": {
+      "path": "bahasa_melayu/tahun_2.pdf",
+      "sha256": "43e4f24ab8e7c827e453a9a97213ae526c4051ed814f9f2a2d880c94d347cb09",
+      "bytes": 119379,
+      "pages": 29
+    },
+    "bahasa_melayu:3": {
+      "path": "bahasa_melayu/tahun_3.pdf",
+      "sha256": "aa9996ffc9790169d62670fda9b5f220fa0bf82cfa122f481355c672ace48370",
+      "bytes": 131525,
+      "pages": 33
+    },
+    "bahasa_melayu:4": {
+      "path": "bahasa_melayu/tahun_4.pdf",
+      "sha256": "a9c6b091ccd16c4f889be4486ba17a3175f1bd3d84b3c4a348d619d332d1c47e",
+      "bytes": 124751,
+      "pages": 31
+    },
+    "bahasa_melayu:5": {
+      "path": "bahasa_melayu/tahun_5.pdf",
+      "sha256": "40117041271c60beeb1ea35e909761d323f8fd65438e2423aab40eb87c70d5c3",
+      "bytes": 128252,
+      "pages": 32
+    },
+    "bahasa_melayu:6": {
+      "path": "bahasa_melayu/tahun_6.pdf",
+      "sha256": "5388049afb481157fe48613e8a75895c600e855d8ce3a415f4eef8ea5794ff30",
+      "bytes": 128493,
+      "pages": 32
+    },
+    "english:2": {
+      "path": "english/tahun_2.pdf",
+      "sha256": "f12abd36e1cbb64a61d86f650733a92b462de484c44ebd7b5b496fbfdf0820a2",
+      "bytes": 142303,
+      "pages": 40
+    },
+    "english:3": {
+      "path": "english/tahun_3.pdf",
+      "sha256": "bc8081feb67eed883a7897efa9d74774f8ed57418f4b7cb0448ff13eef3adae2",
+      "bytes": 142299,
+      "pages": 41
+    },
+    "english:4": {
+      "path": "english/tahun_4.pdf",
+      "sha256": "cbcced2a72a62808102f9ac02b43d917596a50eb1dc997bd23d7ceda155371ff",
+      "bytes": 147942,
+      "pages": 38
+    },
+    "english:5": {
+      "path": "english/tahun_5.pdf",
+      "sha256": "98f3bf188c185133e285eac48d638b07bf6a550bba292edbb2606b7ade6e7110",
+      "bytes": 154075,
+      "pages": 40
+    },
+    "english:6": {
+      "path": "english/tahun_6.pdf",
+      "sha256": "bcb5a1c13aa6d6800bb7629158085bec14644210164a049b84ec80b78f0140c7",
+      "bytes": 159878,
+      "pages": 42
+    },
+    "matematik:2": {
+      "path": "matematik/tahun_2.pdf",
+      "sha256": "73289bb2dcfbcd33f31f208d589ba1ebefa516e767f4ed618b57584255d3150b",
+      "bytes": 143623,
+      "pages": 53
+    },
+    "matematik:3": {
+      "path": "matematik/tahun_3.pdf",
+      "sha256": "0ad335920554c2ed1571bfd4790e3e5c19103a2fcfced01bd86ee8411efe55a7",
+      "bytes": 138444,
+      "pages": 50
+    },
+    "matematik:4": {
+      "path": "matematik/tahun_4.pdf",
+      "sha256": "f6b93ecae0de86fe9c550423db1d5ff4091a0465d3e5e27ef90f48c0769e138b",
+      "bytes": 150221,
+      "pages": 50
+    },
+    "matematik:5": {
+      "path": "matematik/tahun_5.pdf",
+      "sha256": "3755302cd6d079782682392b1110a4e13de0fc886dd5606983aee96183032796",
+      "bytes": 148951,
+      "pages": 55
+    },
+    "matematik:6": {
+      "path": "matematik/tahun_6.pdf",
+      "sha256": "e09c4f1102ad6a2bc25140b734b1f2fdd2d7eac4afc3f3b19aee463d5b012898",
+      "bytes": 140907,
+      "pages": 51
+    },
+    "muzik:2": {
+      "path": "muzik/tahun_2.pdf",
+      "sha256": "0f3f3c2a8f8ead9996cb36897e9557e397bd12bc3d3d55b5a22b5e8bd9acfd76",
+      "bytes": 60343,
+      "pages": 7
+    },
+    "muzik:3": {
+      "path": "muzik/tahun_3.pdf",
+      "sha256": "fe88c8cc929c28f733b902d478c520e162519b9568fdde4072930cc131b7542f",
+      "bytes": 59412,
+      "pages": 7
+    },
+    "muzik:4": {
+      "path": "muzik/tahun_4.pdf",
+      "sha256": "0a4c773ea923a9a2bbb142650efa4529b584e7c4a87b6129b72db17758485120",
+      "bytes": 61272,
+      "pages": 8
+    },
+    "muzik:5": {
+      "path": "muzik/tahun_5.pdf",
+      "sha256": "fad5914515a5135606a2f5c3f940972f29a24a767573e1dacc1f992d7c5585a9",
+      "bytes": 60304,
+      "pages": 7
+    },
+    "muzik:6": {
+      "path": "muzik/tahun_6.pdf",
+      "sha256": "4d71e25005fad6bb5d5db82c2ff196520c75f98302e3351e9012e94b98f6de1c",
+      "bytes": 62946,
+      "pages": 8
+    },
+    "pendidikan_islam:2": {
+      "path": "pendidikan_islam/tahun_2.pdf",
+      "sha256": "2d0d9556ee60bdbf481c511fc1c62b3706303a5c7576a0c5236d65402304e020",
+      "bytes": 225422,
+      "pages": 39
+    },
+    "pendidikan_islam:3": {
+      "path": "pendidikan_islam/tahun_3.pdf",
+      "sha256": "f185673155e8b785fbd8280b9214e4bb71f381ace38b7f25bbae916b493cb983",
+      "bytes": 246785,
+      "pages": 39
+    },
+    "pendidikan_islam:4": {
+      "path": "pendidikan_islam/tahun_4.pdf",
+      "sha256": "2b75513a7b1b16aa85e3141b25ba87603120f85f718a4bff2e1c23c61e5abbd3",
+      "bytes": 293071,
+      "pages": 60
+    },
+    "pendidikan_islam:5": {
+      "path": "pendidikan_islam/tahun_5.pdf",
+      "sha256": "1eb5918b894e19fbc572cdffe14831ef2743e06be8eec898e3f19dd1d32b9cfb",
+      "bytes": 256105,
+      "pages": 44
+    },
+    "pendidikan_islam:6": {
+      "path": "pendidikan_islam/tahun_6.pdf",
+      "sha256": "98fbfb62390503f0e9277ccaee8259ac3c3f6aae4163c31c534d0f969e66357a",
+      "bytes": 240358,
+      "pages": 37
+    },
+    "pendidikan_moral:2": {
+      "path": "pendidikan_moral/tahun_2.pdf",
+      "sha256": "8dc97ea868c5ecfe4d1b56c4f597758e59000e7595eefca9dc8afd8cfc3bb755",
+      "bytes": 134964,
+      "pages": 45
+    },
+    "pendidikan_moral:3": {
+      "path": "pendidikan_moral/tahun_3.pdf",
+      "sha256": "526ed54a697f2b0f21a09bedd6697d8f01e82915dcfea4dd17e64b0f40e5a989",
+      "bytes": 134441,
+      "pages": 44
+    },
+    "pendidikan_moral:4": {
+      "path": "pendidikan_moral/tahun_4.pdf",
+      "sha256": "13dd4b81fb2209af7330a598d215e32a533366f1992aff0b9e7733db6a7b85f4",
+      "bytes": 135796,
+      "pages": 45
+    },
+    "pendidikan_moral:5": {
+      "path": "pendidikan_moral/tahun_5.pdf",
+      "sha256": "1612ab422008319669435e962de6ef76f26fcc124b488c0d0bc5a3399cbd8f9c",
+      "bytes": 137064,
+      "pages": 45
+    },
+    "pendidikan_moral:6": {
+      "path": "pendidikan_moral/tahun_6.pdf",
+      "sha256": "ecec2273588f5b798118f40b0bab9214f546c25153f151131da71079a063b419",
+      "bytes": 134236,
+      "pages": 44
+    },
+    "pjpk:2": {
+      "path": "pjpk/tahun_2.pdf",
+      "sha256": "22ef95e63561b2b42ef8a72cd0fd725211e6c936045e80fe4616ae03fb44a339",
+      "bytes": 104519,
+      "pages": 27
+    },
+    "pjpk:3": {
+      "path": "pjpk/tahun_3.pdf",
+      "sha256": "69c91ae22fc27ee7cde9665406e40ffdffde5f9a23ab750ef2d49e45a500fa36",
+      "bytes": 126923,
+      "pages": 34
+    },
+    "pjpk:4": {
+      "path": "pjpk/tahun_4.pdf",
+      "sha256": "21fe5806a68c550e8007923a73660b1ddaca425fe26658d973471bb4bb686f90",
+      "bytes": 103793,
+      "pages": 26
+    },
+    "pjpk:5": {
+      "path": "pjpk/tahun_5.pdf",
+      "sha256": "4e65cb3392b9a1f7389ae8da107c1f6cc8383e4dc318c94a845d3cd11ada1ea4",
+      "bytes": 95519,
+      "pages": 22
+    },
+    "pjpk:6": {
+      "path": "pjpk/tahun_6.pdf",
+      "sha256": "85902e4c4c3e99d8ed68b84e7f54c78791c5140b5829a29ff67eee0f1ddbc90d",
+      "bytes": 103382,
+      "pages": 26
+    },
+    "psv:2": {
+      "path": "psv/tahun_2.pdf",
+      "sha256": "b0fdd7aa6f3569692130151859c1c0d10cfed71d969f40bf9ca5bd88565e1a4a",
+      "bytes": 84011,
+      "pages": 16
+    },
+    "psv:3": {
+      "path": "psv/tahun_3.pdf",
+      "sha256": "bf434209d5e75a450aa1ce30d92e4e1210d9e3d480d64b93117c54d571fd8765",
+      "bytes": 82964,
+      "pages": 15
+    },
+    "psv:4": {
+      "path": "psv/tahun_4.pdf",
+      "sha256": "063041453269d161f246cfeaafcdab97f6ad608981c5cb01ff0162548ea8ae40",
+      "bytes": 86859,
+      "pages": 17
+    },
+    "psv:5": {
+      "path": "psv/tahun_5.pdf",
+      "sha256": "5f49b0d27bac20c9e3131ae63c8fa19fd7d00e0c8419765677291f5abbc5cd81",
+      "bytes": 84867,
+      "pages": 16
+    },
+    "psv:6": {
+      "path": "psv/tahun_6.pdf",
+      "sha256": "91de6e92c2d807f6c38a0de4e3776391e08c92798f126148c3a548ad06010a16",
+      "bytes": 84840,
+      "pages": 16
+    },
+    "rbt:4": {
+      "path": "rbt/tahun_4.pdf",
+      "sha256": "38d8e8382302cbdf9e2696546430b73ef5d05b76ba8ae8f61b90289d351ca78b",
+      "bytes": 59983,
+      "pages": 8
+    },
+    "rbt:5": {
+      "path": "rbt/tahun_5.pdf",
+      "sha256": "fe0f737650b45c877e01f4d6821a03ca0810ad93568b8267b7900cc4db6a30c7",
+      "bytes": 57449,
+      "pages": 7
+    },
+    "rbt:6": {
+      "path": "rbt/tahun_6.pdf",
+      "sha256": "20ddf2cb861f2848fd5c58df5e9d4b65586c512cb6c2461ab922249037fea656",
+      "bytes": 57316,
+      "pages": 7
+    },
+    "sains:2": {
+      "path": "sains/tahun_2.pdf",
+      "sha256": "bcc0ddc9dcf6709634727c0c6581a501375e7cb879cd4607c940b51c8d80826d",
+      "bytes": 65912,
+      "pages": 11
+    },
+    "sains:3": {
+      "path": "sains/tahun_3.pdf",
+      "sha256": "6e6e1aade01c5b4126aeee74997e064c0f6069098fb83129e8ccf6658bdb7be0",
+      "bytes": 63584,
+      "pages": 10
+    },
+    "sains:4": {
+      "path": "sains/tahun_4.pdf",
+      "sha256": "d8a813770c1f6c7807a360fd4764f0be56248cf7b474c7595b4b71f45a94faf8",
+      "bytes": 77804,
+      "pages": 17
+    },
+    "sains:5": {
+      "path": "sains/tahun_5.pdf",
+      "sha256": "a9635dff4bcf58353afbf84c20194aaa003c1b26e72991d9005234bb1a6645ac",
+      "bytes": 80180,
+      "pages": 18
+    },
+    "sains:6": {
+      "path": "sains/tahun_6.pdf",
+      "sha256": "44397fd9d785a92110553c8121f578e62e9ff9ec7a8d864402d1b3b9d1f42a7d",
+      "bytes": 81239,
+      "pages": 19
+    },
+    "sejarah:4": {
+      "path": "sejarah/tahun_4.pdf",
+      "sha256": "737ba2f4a6ea47767aacd33e70fb4dee79bece9060cac5d2ddd0a45d9808be6f",
+      "bytes": 62658,
+      "pages": 8
+    },
+    "sejarah:5": {
+      "path": "sejarah/tahun_5.pdf",
+      "sha256": "eee0dcf86b72231b15370f25c0eb0b10e49d39cb3658651381e1fba72c8dce88",
+      "bytes": 62963,
+      "pages": 8
+    },
+    "sejarah:6": {
+      "path": "sejarah/tahun_6.pdf",
+      "sha256": "57ec1ec7271605d4aaf81a68b558a30f34bd124b542a482665880a4f012bc329",
       "bytes": 62245,
       "pages": 8
     }

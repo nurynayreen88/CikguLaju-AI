@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install 'PyMuPDF==1.24.14'
-      - name: Audit 56 real served PDF documents and verify manifest hashes
+      - name: Audit 56 delivered RPT PDFs including BM/Sains IDs, SOW and tasmi reviewer text
         run: python -m scripts.audit_web56_teacher_pdf_leaks_20261108 --fail-on-findings
       - name: Render source samples and affected pages for visual inspection
         run: |
