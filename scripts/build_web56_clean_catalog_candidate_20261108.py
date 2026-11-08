@@ -29,6 +29,21 @@ def rects(page,term):
 def cover_preserved(original,replacement):
     import fitz
     with fitz.open(original) as a,fitz.open(replacement) as b:
+        # Reject unrendered Jawi/Arabic glyphs. Missing Amiri can still yield
+        # a valid PDF with Unicode U+0000 and visible placeholder squares.
+        for index, page in enumerate(b):
+            if chr(0) in page.get_text("text"):
+                raise ValueError(f"Unmapped PDF glyph on page {index+1}: {replacement}")
+        def pdp_ids(document):
+            source=" ".join(page.get_text("text") for page in document)
+            pattern=(r"\b(?:SCI-Y[2-6]-PDP-\d{3}|"
+                     r"(?:PJ|PK)\s+PdP\s+\d{3}|"
+                     r"(?:PdP|Lesson)\s+\d{3})\b")
+            return set(re.findall(pattern,source,flags=re.IGNORECASE))
+        old_ids,new_ids=pdp_ids(a),pdp_ids(b)
+        if not old_ids or old_ids!=new_ids:
+            raise ValueError(f"Lesson/PdP identity mismatch: {original} "
+                             f"({len(old_ids)} original vs {len(new_ids)} new)")
         if abs(a[0].rect.width-b[0].rect.width)>0.2 or abs(a[0].rect.height-b[0].rect.height)>0.2:
             raise ValueError(f"Cover/page size changed: {original}")
         if a[0].rect.width<a[0].rect.height or b[0].rect.width<b[0].rect.height:
