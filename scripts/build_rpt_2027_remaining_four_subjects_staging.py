@@ -198,6 +198,34 @@ def arabic_records(year):
     if indexed is None:
         raise ValueError("Missing Arabic DSKP source-page index for year")
     source_pages={e["sp_code"]:e["pdf_page"] for e in indexed["entries"]}
+    # Year2 original DSKP was inspected page-by-page. Only 18/19 source
+    # statements are safe as draft VISUAL CANDIDATES; SP 3.4.1 is held for
+    # a suspicious word-for-word duplicate against SP 3.3.1. None is an
+    # academic panel signoff, nor a release permission.
+    visual_candidates={}
+    if year==2:
+        visual_path=ROOT/"audits/bahasa_arab_rpt2027_t2_19_sp_visual_statement_candidates_20261108.json"
+        visual=json.loads(visual_path.read_text(encoding="utf-8"))
+        entries=visual.get("entries") or []
+        summary=visual.get("summary") or {}
+        visual_candidates={x["sp_code"]:x for x in entries}
+        if (visual.get("status")!="VISUAL_TRANSCRIPTION_CANDIDATE_ONLY_NOT_ACADEMIC_FINAL"
+            or visual.get("source_pdf_sha256")!=indexed["pdf_sha256"]
+            or visual.get("source_url")!=indexed["source_url"]
+            or len(entries)!=19 or len(visual_candidates)!=19
+            or set(visual_candidates)!=set(source_pages)
+            or summary.get("candidate_for_staging_display")!=18
+            or summary.get("held_source_conflict")!=1
+            or summary.get("academic_panel_signoffs")!=0
+            or summary.get("rpt_release_ready") is not False
+            or sum(bool(x["candidate_for_staging_display"]) for x in entries)!=18
+            or any(x["pdf_page"]!=source_pages[x["sp_code"]]
+                   or x.get("academic_panel_signed_off") is not False
+                   or not x.get("inspected_rendered_page")
+                   or not x.get("visual_transcription_candidate","").startswith("القدرة على ")
+                   for x in entries)
+            or visual_candidates["3.4.1"]["candidate_for_staging_display"] is not False):
+            raise ValueError("Year2 Arabic visual DSKP candidate evidence changed: fail closed")
     source_pdf_url=indexed["source_url"]
     source_pdf_sha256=indexed["pdf_sha256"]
     source_page_count=indexed["pdf_pages"] if year==2 else indexed["pdf_page_count"]
@@ -228,13 +256,19 @@ def arabic_records(year):
         sp_code=left["sp"].strip()
         if sp_code not in source_pages:
             raise ValueError(f"Arabic T{year} PdP{n:03d}: SP has no source DSKP page")
-        # Only numeric codes exist in this repo's year-wide source index.
-        # Do not turn short teacher focus labels into fictitious DSKP statements.
+        # A visual DSKP statement *candidate* may appear only in staging
+        # after the source SHA and 19 code-to-page checks above; the academic
+        # release flag remains FALSE even for the 18 readable statements.
+        candidate=visual_candidates.get(sp_code)
+        use_visual=bool(candidate and candidate["candidate_for_staging_display"])
+        draft_sp_display=(sp_code+" — "+candidate["visual_transcription_candidate"]
+                          if use_visual else
+                          sp_code+" — Pernyataan penuh SP belum dipadankan")
         rows.append(dict(
             id=f"{n:03d}",week="",unit=f"Unit {no}: {titles[no]}",
             topic=left["fokus"],sk=left["sk"],sp=left["sp"],
             sk_display=left["sk"]+" — Pernyataan penuh SK belum dipadankan",
-            sp_display=left["sp"]+" — Pernyataan penuh SP belum dipadankan",
+            sp_display=draft_sp_display,
             note=("BT m/s: "+(left.get("halaman_buku") or "belum disahkan")+
                   f" (calon). DSKP SP PDF hlm {source_pages[sp_code]} (kod disemak; teks belum disahkan). "+
                   "Tarikh A/B belum diperuntukkan. DRAF."),
@@ -242,6 +276,8 @@ def arabic_records(year):
             source_sp_dskp_pdf_url=source_pdf_url,
             source_sp_dskp_pdf_sha256=source_pdf_sha256,
             source_sp_dskp_text_signoff=False,
+            source_sp_visual_candidate_staging=use_visual,
+            source_sp_academic_panel_signed_off=False,
             source_pdf_extraction_code_repeated_unreliable=(year==2),
             source_status=left["status_rpt"],
         ))
