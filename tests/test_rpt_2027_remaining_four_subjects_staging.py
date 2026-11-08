@@ -72,8 +72,22 @@ class RemainingRPTFormatQA(unittest.TestCase):
                 self.assertEqual(len(rows),n)
                 self.assertEqual([r["id"] for r in rows],
                                  [f"{i:03d}" for i in range(1,n+1)])
-                self.assertTrue(all("Pernyataan penuh SK belum dipadankan" in r["sk_display"] and
-                                    "Pernyataan penuh SP belum dipadankan" in r["sp_display"]
+                self.assertTrue(all("Pernyataan penuh SK belum dipadankan" in r["sk_display"]
+                                    for r in rows))
+                if y==2:
+                    self.assertEqual(sum(bool(r["source_sp_visual_candidate_staging"])
+                                         for r in rows),
+                                     sum(r["sp"]!="3.4.1" for r in rows))
+                    for r in rows:
+                        if r["sp"]=="3.4.1":
+                            self.assertIn("Pernyataan penuh SP belum dipadankan",
+                                          r["sp_display"])
+                        else:
+                            self.assertIn(" — القدرة على ",r["sp_display"])
+                else:
+                    self.assertTrue(all("Pernyataan penuh SP belum dipadankan"
+                                        in r["sp_display"] for r in rows))
+                self.assertTrue(all(r["source_sp_academic_panel_signed_off"] is False
                                     for r in rows))
                 self.assertTrue(all(not r.get("week") and not r.get("a_start")
                                     for r in rows))
