@@ -34,6 +34,8 @@ def verse_catalog():
         "النباء":"النبأ", # some source RPTs spell an-Naba' as النباء
         "الصاڤات":"الصافات", # RPT Jawi non-Arabic PEH variant
         "الانفطار":"الإنفطار",
+        "سباء":"سبأ", # RPT Year5 Jawi form with hamzah on line
+        "الاحقاڤ":"الأحقاف", # Year6 Jawi PEH spelling of al-Ahqaf
     }
     for alias,primary in aliases.items():
         catalog[normal(alias)]=catalog[normal(primary)]
