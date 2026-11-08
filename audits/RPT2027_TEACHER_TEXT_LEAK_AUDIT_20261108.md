@@ -73,3 +73,20 @@ Lima aliran penjanaan PDF telah berjaya menjalankan audit bacaan halaman dengan 
 Penanda `DRAF SEMAKAN` yang berulang pada footer bukan isi akademik tetapi tetap kebocoran metadata pembangun ke salinan guru. *Bilangan padanan* bukan bilangan PdP kurikulum salah atau jumlah penggantian frasa yang selamat secara automatik.
 
 **Keputusan release: HOLD.** Belum ada PDF guru baharu yang diterbitkan; pemeriksaan ini mengenal pasti masalah dan menyediakan guardrail audit, bukan menyembunyikan jurang SK/SP/DSKP yang belum siap.
+
+## Keputusan akhir audit bacaan PDF pratayang (8 Nov 2026)
+Selepas pemisahan laporan, QA 21 PDF utama mengeluarkan **21 fail, 21 terkesan, 503 padanan, 0 ralat bacaan**. QA PDF sedia ada `rpt_2027` mengeluarkan **43 fail, 18 terkesan, 139 padanan, 0 ralat bacaan**. Digabung dengan empat kelompok pratayang lain:
+
+| Kelompok 56 PDF staging | PDF diperiksa | Fail terkesan | Padanan |
+| --- | ---: | ---: | ---: |
+| PSV / Moral / RBT / Sejarah / PJPK | 21 | 21 | 503 |
+| BM / Pendidikan Islam / Bahasa Arab / Muzik | 20 | 20 | 1,389 |
+| Matematik | 5 | 5 | 252 |
+| English | 5 | 5 | 202 |
+| Sains | 5 | 5 | 94 |
+| **JUMLAH PRATAYANG** | **56** | **56** | **2,440** |
+| PDF lama sedia ada (auditan berasingan) | 43 | 18 | 139 |
+
+**Semua kelompok PDF yang ditunjukkan di atas mempunyai 0 `read_errors` dalam run QA yang selesai.** Ujian keselamatan bagi fail rosak/folder kosong dan scanner fail-closed telah ditambah dalam staging. **PDF bersih guru belum dikeluarkan; signoff akademik masih wajib.**
+
+Kepentingan pengesanan: banyak padanan `DRAF SEMAKAN` berasal dari header/footer berulang, dan bahan Bahasa Arab masih memaparkan `belum dipadankan` kerana standard Arab belum disahkan. Frasa itu perlu diletakkan di metadata semakan admin, tetapi ia tidak boleh dipadam daripada dokumen untuk guru sehingga bahan yang terjejas benar-benar disahkan/diganti dengan kandungan tepat.
