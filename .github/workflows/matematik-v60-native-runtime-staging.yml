@@ -5,7 +5,7 @@ on:
     paths:
       - "web/matematik_v60_native_rows.py"
       - "web/matematik_v60_native_coverage.py"
-      - "tools/audit_matematik_v60_v26_snapshot_20261108.py"
+      - "tools/audit_matematik_v60_v2599_native_source_20261108.py"
       - "web/telegram_verified_sequence_rph_bridge.py"
       - "tools/run_telegram_with_curriculum_api.py"
       - "tests/test_matematik_v60_native_rows_20261108.py"
@@ -46,7 +46,7 @@ jobs:
           python -m unittest discover -s tests -p "test_matematik_v60_private_sequence_20261108.py" -v
           python -m unittest discover -s tests -p "test_matematik_v60_web_telegram_state_20261108.py" -v
 
-      - name: Audit actual v26.00 snapshot mapping (read-only, fail closed)
+      - name: Audit actual Telegram Mathematics v25.99 canonical sequence mapping (read-only)
         run: |
           python -m tools.audit_matematik_v60_v26_snapshot_20261108 --output /tmp/matematik_v60_native_coverage.json > /tmp/math_v60_audit_stdout.json
           python - <<'PY'
@@ -58,6 +58,6 @@ jobs:
                     "missing",row['unmatched'],"conflicts",row['conflicts'])
           print("Academic and E2E signoffs remain withheld even on full mapping.")
           if not report['mapping_ready']:
-              raise SystemExit("HOLD: static v26.00 mapping has not reconciled 585/585")
+              raise SystemExit("HOLD: actual Telegram Maths v25.99 mapping not reconciled 585/585")
           PY
 
