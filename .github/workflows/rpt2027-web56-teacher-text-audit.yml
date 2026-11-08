@@ -21,7 +21,7 @@ jobs:
           python-version: '3.12'
       - run: pip install 'PyMuPDF==1.24.14'
       - name: Audit 56 real served PDF documents and verify manifest hashes
-        run: python -m scripts.audit_web56_teacher_pdf_leaks_20261108
+        run: python -m scripts.audit_web56_teacher_pdf_leaks_20261108 --fail-on-findings
       - name: Render source samples and affected pages for visual inspection
         run: |
           mkdir -p staging/web56_teacher_leaks_20261108/pages
