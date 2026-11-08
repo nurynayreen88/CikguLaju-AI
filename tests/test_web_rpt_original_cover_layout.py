@@ -9,6 +9,7 @@ from __future__ import annotations
 import hashlib
 import json
 import unittest
+import unicodedata
 from pathlib import Path
 
 from fitz import open as open_pdf
@@ -87,6 +88,20 @@ class ExistingCoverLayoutTests(unittest.TestCase):
         malay_labels=("MINGGU / TARIKH","UNIT / TAJUK / PDP",
                       "SK","SP","CATATAN / BAHAN")
         native_subjects={"pendidikan_islam","bahasa_arab"}
+        # Compare exact natural-language table heading terms (NFKC resolves
+        # presentation-form glyphs from embedded Amiri fonts to Unicode).
+        expected_native={
+            "pendidikan_islam":(
+                "ميڠݢو / تاريخ","بيدڠ / تاجوق / ڤدڤ",
+                "ستندرد كاندوڠن","ستندرد ڤمبالجرن",
+                "چاتتن / باهن",
+            ),
+            "bahasa_arab":(
+                "الأسبوع / التاريخ","الوحدة / الموضوع / الدرس",
+                "معيار المحتوى","معيار التعلم",
+                "الملاحظات / الوسائل",
+            ),
+        }
         native_count=0
         links=0
         for key,entry in self.manifest["files"].items():
@@ -99,6 +114,9 @@ class ExistingCoverLayoutTests(unittest.TestCase):
                     # to leftmost Catatan must all contain Arabic/Jawi glyphs
                     # on each repeated header row of the PDF.
                     for page in list(pdf)[1:]:
+                        text_normalized=unicodedata.normalize("NFKC",page.get_text("text"))
+                        for heading in expected_native[subject]:
+                            self.assertIn(heading,text_normalized,(key,heading))
                         spans=[s for block in page.get_text("dict")["blocks"]
                                for line in block.get("lines",[])
                                for s in line["spans"]
