@@ -44,6 +44,11 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
         )
         page=context.new_page()
         requests=[]
+        downloads=[]
+        def observe_download(download):
+            downloads.append(download.suggested_filename)
+        page.on("download",observe_download)
+        context.on("page",lambda new_page:new_page.on("download",observe_download))
 
         def mock(route):
             url=route.request.url
@@ -118,13 +123,28 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
                     "() => document.querySelector('#rpt-status').textContent.includes('PDF RPT dibuka di tab baharu')",
                     timeout=30000
                 )
-                popup.wait_for_url(re.compile(r"^blob:"),timeout=12000)
+                try:
+                    popup.wait_for_url(re.compile(r"^blob:"),timeout=8000)
+                except Exception:
+                    print("MOBILE_PDF_DIAGNOSTIC",{
+                        "popup_url":popup.url,
+                        "popup_closed":popup.is_closed(),
+                        "parent_url":page.url,
+                        "status":page.locator("#rpt-status").inner_text(),
+                        "downloads":downloads,
+                        "requests":requests[-7:],
+                    },flush=True)
+                    raise
                 self.assertTrue(popup.url.startswith("blob:"),popup.url)
                 self.assertFalse(popup.is_closed())
-            self.assertIn(("GET","/api/web/teacher/profile"),requests)
+            if bad_hash:
+                self.assertNotIn(("GET","/api/web/teacher/profile"),requests)
+            else:
+                self.assertIn(("GET","/api/web/teacher/profile"),requests)
             self.assertIn(("GET","/api/rpt/2027/all/pendidikan_islam/4.pdf"),requests)
             self.assertIn(("GET","/assets/rpt-original-cover-layout.json"),requests)
-            self.assertIn(("GET","/api/web/teacher/school-logo"),requests)
+            if not bad_hash:
+                self.assertIn(("GET","/api/web/teacher/school-logo"),requests)
         finally:
             if popup and not popup.is_closed():
                 popup.close()
