@@ -33,6 +33,8 @@ jobs:
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_primary_source_fiqh_copyedit_audit.py --output pi_fiqh_t4_puasa_and_copyedits_NO_GO.json
       - name: Check Quran tasmi source continuity Year2-6 including inherited Juz25 gaps and heavy sessions
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_tasmi_continuity_quality_guard.py --output pi_tasmi_continuity_five_years_NO_GO.json
+      - name: Prepare 14 heavy tasmi individual reading and assessment editor overlays (no SP edits)
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_heavy_tasmi_editor_overlay.py --output pi_heavy_tasmi_14_editor_overlay_NO_GO.json
       - name: Prepare 690 domain-specific editor suggestions (not RPH)
         run: python rph_standalone/pendidikan_islam_draf_2027/pi_pedagogy_review.py --output pi_pedagogy_proposals_690.json
       - name: Audit Buku Aktiviti mapping without guessing page numbers
@@ -119,6 +121,7 @@ jobs:
             pi_quran_114_surah_all_696_NO_GO.json \
             pi_fiqh_t4_puasa_and_copyedits_NO_GO.json \
             pi_tasmi_continuity_five_years_NO_GO.json \
+            pi_heavy_tasmi_14_editor_overlay_NO_GO.json \
             pi_pedagogy_proposals_690.json \
             pi_buku_aktiviti_audit_696.json \
             pi_y5_buku_aktiviti_wording_13_NO_GO.json \
@@ -191,6 +194,7 @@ jobs:
             pi_quran_114_surah_all_696_NO_GO.json
             pi_fiqh_t4_puasa_and_copyedits_NO_GO.json
             pi_tasmi_continuity_five_years_NO_GO.json
+            pi_heavy_tasmi_14_editor_overlay_NO_GO.json
             pi_pedagogy_proposals_690.json
             pi_buku_aktiviti_audit_696.json
             pi_y5_buku_aktiviti_wording_13_NO_GO.json
