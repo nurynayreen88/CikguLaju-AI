@@ -49,7 +49,12 @@ def _draft(code, title, content, source):
     if not match:
         raise ValueError("Missing objective for "+code)
     body = content[match.start():]
-    body = re.split(r"\*\*(?:Status|Status kelulusan):\*\*", body, maxsplit=1)[0]
+    # Source writers use both **Status:** and **Status: ...**.
+    # Neither review status nor the subsequent academic notes belong in RPH body.
+    body = re.split(
+        r"\*\*(?:Status|Status kelulusan)\b|\n---\s*\n|^#{2,3}\s+(?:Pagar|Peraturan)",
+        body, maxsplit=1, flags=re.M
+    )[0]
     # Source authors placed BBM before the objective in some Year6 drafts.
     # Retain original BBM as a separate teaching paragraph instead of losing it.
     if "BBM" not in body:
