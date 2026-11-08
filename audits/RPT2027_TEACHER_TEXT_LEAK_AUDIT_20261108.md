@@ -45,3 +45,13 @@ python -m scripts.audit_rpt2027_teacher_text_leaks_20261108 --teacher-output-onl
 # Selepas dokumen benar-benar lulus signoff:
 python -m scripts.audit_rpt2027_teacher_text_leaks_20261108 --teacher-output-only --fail-on-findings /path/to/final_rpt_pdf
 ```
+
+## Peluasan QA semua 56 PDF (8 Nov, menunggu CI)
+Pengesan kini disepadukan **secara baca sahaja** ke dalam lima workflow yang membina:
+- 21 PDF utama (PSV, Moral, RBT, Sejarah, PJPK)
+- 20 PDF BM, Pendidikan Islam, Bahasa Arab dan Muzik
+- 5 PDF Matematik
+- 5 PDF English
+- 5 PDF Sains separa/legacy (tetap tidak layak keluaran)
+
+Jumlah sasaran: **56 PDF**, setiap aliran memuat naik JSON audit sebagai artifak bersama PDF. Ini adalah skop *ujian yang dikonfigurasikan*, bukan dakwaan keputusan lulus — hasil CI dan bilangan frasa sebenar perlu dibaca daripada laporan setelah workflow siap. Audit frasa ini tidak menggantikan pengesahan akademik, rekod Jawi/Arab, edisi DSKP, atau ujian Telegram/Web LIVE.
