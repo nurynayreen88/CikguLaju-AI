@@ -42,12 +42,18 @@ class TableDirectionRegression(unittest.TestCase):
         return doc
 
     def positions(self,page):
+        # Exact text spans in the yellow header ONLY. PDF search_for("SK")
+        # also matches "SK" in DSKP and produces a false x=86 position.
+        wanted=("MINGGU / TARIKH","UNIT / TAJUK / PDP",
+                "SK","SP","CATATAN / BAHAN")
         x={}
-        for label in ("MINGGU / TARIKH","UNIT / TAJUK / PDP",
-                      "SK","SP","CATATAN / BAHAN"):
-            hits=page.search_for(label)
-            self.assertTrue(hits,(label,page.get_text()[:300]))
-            x[label]=hits[0].x0
+        for block in page.get_text("dict")["blocks"]:
+            for line in block.get("lines",[]):
+                for span in line["spans"]:
+                    label=span["text"].strip()
+                    if label in wanted and 40<span["bbox"][1]<95:
+                        x[label]=span["bbox"][0]
+        self.assertEqual(set(x),set(wanted),page.get_text()[:550])
         return x
 
     def test_pi_and_arabic_are_true_right_to_left_five_columns(self):
