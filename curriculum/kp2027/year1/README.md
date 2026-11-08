@@ -112,3 +112,14 @@ Ujian:
 - Dokumen KP2027 Matematik **Tingkatan 1** yang boleh dicapai dalam talian bukan DK **Tahun 1**. DSKP KSSR Semakan 2017/Tahap I Edisi 3 juga tidak boleh mengisi jurang ini.
 - Keputusan carian: `ORIGINAL_COMPLETE_DK_NOT_RETRIEVED`; status `SOURCE_HOLD_NOT_READY`. **0 SK/SP baharu disahkan; 0 RPH READY.** Tiada perubahan pada DB aktif atau Web/Telegram.
 - Semakan CI: `python -m unittest discover -s tests -p 'test_kp2027_year1_math_dk_search_20261108.py' -v`.
+
+
+## Carian lanjutan 8 November 2026 — petunjuk buku teks KP2027 Tahun 1
+
+- Salinan slaid penataran pesanan SPBT **tahun 2026 untuk kegunaan 2027**, diterbit semula di [Scribd](https://www.scribd.com/document/1005755183/Slaid-Taklimat-Pesanan-Spbt-Tahun-2026-Kegunaan-Tahun-2027), menyenaraikan kod *calon* buku teks serta buku aktiviti Tahun 1 SK: BM, BI, Matematik, Pendidikan Islam, Bahasa Arab, Pendidikan Moral, Pendidikan Jasmani dan Alam dan Manusia. **Fail asal SPBT/KPM tidak disahkan, salinan buku sebenar belum diambil.**
+- Fail inventori: [textbook_2027_spbt_unverified_catalog_leads_20261108.json](textbook_2027_spbt_unverified_catalog_leads_20261108.json). Status **TITLE_CODE_LEAD_ONLY_NOT_VERIFIED**. Tidak mengaktifkan muat turun buku teks/aktiviti, tiada nombor halaman buku ditentukan, tiada kaitan SK/SP dimuktamadkan.
+- Bagi Matematik Tahun 1 SK, salinan slaid 2027 menyebut `BT081007` (buku teks) dan `BA081005` (buku aktiviti), tetapi penyata SPBT sebuah sekolah bertarikh **10 Februari 2026** menyebut `BA081009` untuk buku aktiviti. **Jangan pilih kod BA secara automatik**: tahun/sumber tidak sama dan bukti buku 2027 asal belum diperoleh.
+- Slaid turut menyenaraikan calon `BT081008`/`BA081006` untuk DLP, serta versi Matematik SJKC/SJKT. Variasi aliran perlu disahkan secara berasingan, bukan dicampurkan ke SK.
+- [Dokumen Rujukan Matriks Pembelajaran KPM (8 Oktober 2026)](https://www.moe.gov.my/dokumen-rujukan-matriks-pembelajaran) merujuk **Tahun 4 dan Tingkatan 3**, bukan DK Matematik KP2027 Tahun 1. Dikecualikan sebagai sumber pemetaan Year 1.
+- Saringan Google dan Drive tidak menemui naskhah akhir DK Matematik Tahun 1 yang boleh dibaca. Isu **30 SP dalam ringkasan, 28 jumlah slaid tajuk, 30 kod lembaran kumpulan** kekal HOLD sehingga teks DK diperoleh.
+- Ujian keselamatan: `python -m unittest discover -s tests -p 'test_kp2027_year1_textbook_leads_20261108.py' -v`. Tiada `main`, DB aktif, Telegram, Web, bayaran, kuota atau produksi diubah.
