@@ -1,0 +1,236 @@
+{
+  "schema": "cikgulaju.math.y6.last8_semantic_triage.v1",
+  "date": "2026-11-08",
+  "scope": "8 native Year6 PdP not in previously-known 62 absent-code or 23 code-present warnings; title-only source triage not signoff",
+  "source_documents": {
+    "telegram_native": {
+      "table": "verified_pdp_sequence_v2",
+      "sha256": "74f1e139ae6e7f64379ee3fb103334f450c683152186b03368bb02dfe3b8c821"
+    },
+    "dskp_y6": {
+      "drive_file_id": "1Gw3nWRttnfbimQ95slCgxBleL7tKmLSK",
+      "sha256": "e48576169c12cc9666675770432a425e573686a331fba6bcd7f01e33787476a9"
+    },
+    "textbook_part1": {
+      "drive_file_id": "1OP6DG9vmT5_q3RtvXHbd7qscc6lj8Za4",
+      "sha256": "5785f6a8e3027168d16a9eecd37ddc60e582b6dbda63a60f0651656be0a51d6e"
+    },
+    "textbook_part2": {
+      "drive_file_id": "1xf_VFKETw5nBJNx3uMcwJPufDtSL_MS3",
+      "sha256": "73a38e146f40adaf08432a60df211c4f0a610e5d50e746bd6326706cc9bb5804"
+    }
+  },
+  "cases": [
+    {
+      "native_pdp_code": "MT6-PDP-001",
+      "native_lesson_number": 1,
+      "native_title": "Nilai Nombor hingga 10 000 000",
+      "native_sk": "1.1",
+      "native_sp": "1.1.1",
+      "status": "TOPIC_SP_BOOK_MATCH_PROVISIONAL",
+      "dskp_pdf_page": 44,
+      "textbook_reference": "part1",
+      "textbook_printed_pages": [
+        1,
+        2,
+        3
+      ],
+      "textbook_pdf_pages": [
+        8,
+        9,
+        10
+      ],
+      "evidence": "DSKP 1.1.1 membaca/menyebut/menulis nombor hingga 10 juta. BT Bahagian 1 m/s 1–3 dilabel 1.1.1 dan mengandungi sebut/tulis nombor. Masih perlu semak aktiviti PdP sebenar.",
+      "academic_approved": false
+    },
+    {
+      "native_pdp_code": "MT6-PDP-002",
+      "native_lesson_number": 2,
+      "native_title": "Nilai Tempat dan Nilai Digit",
+      "native_sk": "1.1",
+      "native_sp": "1.1.2",
+      "status": "TITLE_SCOPE_REVIEW_REQUIRED",
+      "dskp_pdf_page": 44,
+      "textbook_reference": "part1",
+      "textbook_printed_pages": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "textbook_pdf_pages": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "evidence": "DSKP 1.1.2 mewakilkan nombor dan menentukan pola; buku m/s 4–8 menekankan Pola Nombor. Nilai tempat/digit sebagai tajuk tunggal belum dibuktikan memenuhi kedua-dua fokus SP. Mungkin ulang kaji/pengenalan; semak objektif.",
+      "academic_approved": false
+    },
+    {
+      "native_pdp_code": "MT6-PDP-003",
+      "native_lesson_number": 3,
+      "native_title": "Banding dan Susun Nombor",
+      "native_sk": "1.1",
+      "native_sp": "1.1.2",
+      "status": "TITLE_SCOPE_REVIEW_REQUIRED",
+      "dskp_pdf_page": 44,
+      "textbook_reference": "part1",
+      "textbook_printed_pages": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "textbook_pdf_pages": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "evidence": "DSKP 1.1.2 mewakilkan nombor dan menentukan pola; BT m/s 4–8 memuat aktiviti susun kad dalam pola. Tajuk banding/susun secara umum tidak memadai untuk membuktikan liputan SP; lihat aktiviti asal.",
+      "academic_approved": false
+    },
+    {
+      "native_pdp_code": "MT6-PDP-005",
+      "native_lesson_number": 5,
+      "native_title": "Nombor Perdana dan Nombor Gubahan",
+      "native_sk": "1.3",
+      "native_sp": "1.3.1",
+      "status": "TOPIC_SP_BOOK_MATCH_PROVISIONAL",
+      "dskp_pdf_page": 45,
+      "textbook_reference": "part1",
+      "textbook_printed_pages": [
+        42,
+        43,
+        44
+      ],
+      "textbook_pdf_pages": [
+        49,
+        50,
+        51
+      ],
+      "evidence": "DSKP 1.3.1 mengelaskan nombor dalam lingkungan 100 kepada perdana/gubahan. BT Bahagian 1 m/s 42–44 berlabel 1.3.1 dan mengajar pengelasan; semak penilaian sebelum signoff.",
+      "academic_approved": false
+    },
+    {
+      "native_pdp_code": "MT6-PDP-026",
+      "native_lesson_number": 26,
+      "native_title": "Darab dan Bahagi Perpuluhan",
+      "native_sk": "2.2",
+      "native_sp": "2.2.2",
+      "status": "PARTIAL_SP_COVERAGE_REVIEW_REQUIRED",
+      "dskp_pdf_page": 48,
+      "textbook_reference": "part2",
+      "textbook_printed_pages": [
+        68,
+        69,
+        70,
+        71,
+        72
+      ],
+      "textbook_pdf_pages": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "evidence": "DSKP 2.2.1 = darab perpuluhan, 2.2.2 = bahagi perpuluhan; native cuma 2.2.2 walaupun tajuk menggabungkan kedua-dua operasi. BT m/s 68–72 melabel 2.2.1 dan 2.2.2 pada latihan berkaitan.",
+      "candidate_dskp_sp": "2.2.1;2.2.2",
+      "academic_approved": false
+    },
+    {
+      "native_pdp_code": "MT6-PDP-028",
+      "native_lesson_number": 28,
+      "native_title": "Peratus",
+      "native_sk": "2.3",
+      "native_sp": "2.3.1",
+      "status": "GENERIC_TITLE_SCOPE_REVIEW_REQUIRED",
+      "dskp_pdf_page": 48,
+      "textbook_reference": "part2",
+      "textbook_printed_pages": [
+        73,
+        74
+      ],
+      "textbook_pdf_pages": [
+        13,
+        14
+      ],
+      "evidence": "DSKP 2.3.1 ialah penukaran perpuluhan kepada peratus melebihi 100% dan sebaliknya; tajuk 'Peratus' umum tidak memberitahu sama ada objektif/aktiviti merangkumi kemahiran itu. BT 73–74 berlabel 2.3.1.",
+      "academic_approved": false
+    },
+    {
+      "native_pdp_code": "MT6-PDP-029",
+      "native_lesson_number": 29,
+      "native_title": "Kuantiti dan Peratus",
+      "native_sk": "2.3",
+      "native_sp": "2.3.2",
+      "status": "TITLE_SP_MEANING_CONFLICT_REVIEW_REQUIRED",
+      "dskp_pdf_page": 48,
+      "textbook_reference": "part2",
+      "textbook_printed_pages": [
+        75,
+        76,
+        77,
+        78,
+        79
+      ],
+      "textbook_pdf_pages": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "evidence": "DSKP 2.3.2 = tambah dan tolak peratus (BT 75–76). Menentukan nilai peratus daripada kuantiti ialah 2.3.3 (BT 77–79); jangan autorename tanpa melihat objektif sebenar.",
+      "candidate_dskp_sp": "2.3.3",
+      "academic_approved": false
+    },
+    {
+      "native_pdp_code": "MT6-PDP-055",
+      "native_lesson_number": 55,
+      "native_title": "Panjang",
+      "native_sk": "5.1",
+      "native_sp": "5.1.1",
+      "status": "GENERIC_TITLE_SCOPE_REVIEW_REQUIRED",
+      "dskp_pdf_page": 60,
+      "textbook_reference": "part2",
+      "textbook_printed_pages": [
+        155,
+        156,
+        157,
+        158,
+        159,
+        160
+      ],
+      "textbook_pdf_pages": [
+        95,
+        96,
+        97,
+        98,
+        99,
+        100
+      ],
+      "evidence": "DSKP 5.1.1 menyelesaikan masalah harian hubungan panjang-jisim, panjang-isi padu cecair, jisim-isi padu cecair. BT 155–160 berlabel 5.1.1(i)–(iii). Pengukuran panjang sahaja belum mencukupi; perlu semak skop aktiviti.",
+      "academic_approved": false
+    }
+  ],
+  "coverage": {
+    "previous_missing_sp": 62,
+    "previous_code_present_scope_warnings": 23,
+    "new_code_present_scope_warnings": 6,
+    "topic_sp_book_provisional": 2,
+    "year6_native_total": 93,
+    "year6_priority_review_minimum": 91,
+    "year6_remaining_untriaged_title_sp": 0
+  },
+  "limitations": "Topic+SP+book labels assessed. All 93 Year6 rows now categorized for initial source triage, NOT fully checked individual activities, textbook exercises, BA, RPT, or teacher signoff. Provisional matches are not approved.",
+  "production_modified": false,
+  "academic_signoff": false,
+  "release_decision": "HOLD"
+}
