@@ -31,9 +31,11 @@ class ScienceBrowserDownloadTest(unittest.TestCase):
         self.page=self.browser.new_page(
             viewport={"width":375,"height":812},accept_downloads=True)
         self.page.goto(HTML,wait_until="domcontentloaded")
+        self.page.set_default_timeout(8000)
         self.page.evaluate("""({unit,pdp})=>{
           document.querySelector('main.panel').hidden=true;
           document.querySelector('#workspace').hidden=false;
+          document.querySelector('#view-rph').hidden=false;
           document.querySelector('#teacher-info').hidden=false;
           for(const [id,value] of [
              ['year','4'],['subject','SCIENCE'],['unit',unit],['lesson',pdp]
