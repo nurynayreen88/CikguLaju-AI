@@ -1,4 +1,4 @@
-name: Stage clean RPT Pendidikan Islam Tahun 4 2027
+name: Stage clean RPT Pendidikan Islam Tahun 3–6 2027
 
 on:
   push:
@@ -9,6 +9,7 @@ on:
       - "scripts/clean_rpt2027_pi4_asset.py"
       - "scripts/clean_rpt2027_pi3_pi5_pi6.py"
       - "scripts/audit_rpt2027_internal_notes.py"
+      - "tests/test_rpt_private_notes.py"
       - ".github/workflows/rpt2027_pi4_staging_clean.yml"
   workflow_dispatch:
 
@@ -48,7 +49,7 @@ jobs:
       - name: Run isolated PDF regression tests
         run: python -m unittest discover -s tests -p "test_rpt_private_notes.py" -v
 
-      - name: Commit only four intended static release artifacts to staging
+      - name: Commit only intended PI PDF, checksum and audit files to staging
         shell: bash
         run: |
           git add \
@@ -63,6 +64,6 @@ jobs:
           if ! git diff --cached --quiet; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git commit -m "fix(rpt2027): clean PI Year4 teacher PDF; preserve 55 other assets"
+            git commit -m "fix(rpt2027): clean PI Years3-6 teacher PDFs; preserve 52 other assets"
             git push origin HEAD:fix/rpt2027-strip-internal-notes-20261108
           fi
