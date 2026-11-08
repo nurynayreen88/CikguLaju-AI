@@ -95,6 +95,19 @@ class TeacherTextLeakAuditTests(unittest.TestCase):
         self.assertNotIn("semak negeri", public_note(row).lower())
         self.assertIn("Aktiviti guru", public_note(row))
 
+    def test_bm_y2_held_pdp_130_131_do_not_leak_ready_instruction(self):
+        from rpt_2027.common.teacher_display_projection import public_note
+        records = (
+            "HOLD: BT2 m/s 39 Pengayaan A mengedit penggunaan kata dan B "
+            "membina ayat penyata; SP dan pentaksiran perlu disemak sebelum READY",
+            "HOLD: BT2 m/s 41 pengukuhan bacaan kefahaman; SP dalam sumber "
+            "mungkin tidak tepat, perlu semakan DSKP/BT sebelum READY",
+        )
+        for note in records:
+            with self.subTest(note=note):
+                self.assertEqual(public_note({"note": note}), "")
+                self.assertIn("HOLD", note)  # Original evidence is untouched.
+
     def test_scan_teacher_output_separately_from_source_data(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
