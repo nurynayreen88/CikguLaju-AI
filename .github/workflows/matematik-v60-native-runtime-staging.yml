@@ -48,7 +48,7 @@ jobs:
 
       - name: Audit actual v26.00 snapshot mapping (read-only, fail closed)
         run: |
-          python tools/audit_matematik_v60_v26_snapshot_20261108.py --output /tmp/matematik_v60_native_coverage.json > /tmp/math_v60_audit_stdout.json
+          python -m tools.audit_matematik_v60_v26_snapshot_20261108 --output /tmp/matematik_v60_native_coverage.json > /tmp/math_v60_audit_stdout.json
           python - <<'PY'
           import json
           report=json.load(open('/tmp/matematik_v60_native_coverage.json', encoding='utf-8'))
