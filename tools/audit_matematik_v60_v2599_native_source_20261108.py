@@ -20,6 +20,7 @@ from types import SimpleNamespace
 from unittest.mock import patch
 
 from web.matematik_v60_native_coverage import audit_native_mapping
+from web.matematik_v60_crosswalk_candidates import make_all_candidates
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = "CikguLaju_v25_99_MATH_T1_T6_GIT_SPLIT_MANIFEST.json"
@@ -96,6 +97,9 @@ def audit_snapshot(root: Path = ROOT) -> dict:
                 "CIKGULAJU_MATEMATIK_V60_STAGING_ENABLED": "1",
             }):
                 report = audit_native_mapping(runtime)
+            crosswalk = make_all_candidates(rows_by_year)
+            report["crosswalk_status_counts"] = crosswalk["status_counts"]
+            report["candidate_crosswalk"] = crosswalk
 
     report["audited_source"] = "Telegram Maths actual v25.99 SHA-verified SQLite"
     report["table"] = TABLE
