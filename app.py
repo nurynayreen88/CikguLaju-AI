@@ -46694,6 +46694,7 @@ def menu(cid, show_persistent=False):
     kb = [
         [{'text':'📚 SEDIAKAN RPH','callback_data':'quick'}],
         [{'text':'📅 RPT 2027','callback_data':'rpt2027_home'}],
+        [{'text':'🌐 BUKA CIKGULAJU WEB','url':'https://cikgulaju-web.onrender.com/'}],
         [{'text':'👤 PROFIL SAYA','callback_data':'account'}],
         [{'text':'🏆 Jadi Rakan Pembangun','callback_data':'pioneer_join'}],
     ]
@@ -46713,6 +46714,10 @@ def menu(cid, show_persistent=False):
         'Fungsi dan kandungan sedang dilengkapkan secara berperingkat.\n\n'
         '📚 <b>SEDIAKAN RPH</b>\nPilih Tahun → Subjek → Unit/Tajuk → Lesson/PdP, kemudian pilih RPH (PDF/Word).\n\n'
         '📅 <b>RPT 2027</b>\nRancangan Pengajaran Tahunan 2027 mengikut tahun, subjek dan Kumpulan A/B.\n\n'
+        '🌐 <b>CIKGULAJU WEB SUDAH TERSEDIA</b>\n'
+        'Sediakan RPH dan muat turun RPT 2027 melalui telefon atau komputer.\n'
+        '🔗 https://cikgulaju-web.onrender.com/\n'
+        'Log masuk menggunakan Telegram. Baki janaan RPH dikongsi antara Web dan bot; RPT memerlukan akses berbayar.\n\n'
         '👤 <b>PROFIL SAYA</b>\nUrus kelas, jadual waktu dan maklumat cikgu.\n\n'
         '🏆 <b>JADI RAKAN PEMBANGUN</b>\nPeluang menjadi Rakan Pembangun sepanjang tempoh pembangunan. Akses sepanjang CikguLaju AI beroperasi tanpa bayaran langganan bulanan atau tahunan.\n\n'
         '💳 <b>LANGGANAN</b>\nBulanan: <b>RM8/sebulan</b>\nTahunan: <b>RM50/setahun</b>\n'

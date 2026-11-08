@@ -1,0 +1,42 @@
+name: Inspect final Telegram main-menu handlers (read-only)
+on:
+  push:
+    branches: [feat/telegram-main-menu-web-notice-20261108]
+    paths: [.github/workflows/telegram-web-main-menu-inspect-20261108.yml]
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Display final active menu handler and routing anchors only
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import ast,re
+          s=Path('app.py').read_text(encoding='utf-8')
+          lines=s.splitlines()
+          tree=ast.parse(s)
+          for target in ('menu','callback','send','install_menu_button'):
+              locations=[n for n in tree.body if isinstance(n,(ast.FunctionDef,ast.AsyncFunctionDef)) and n.name==target]
+              print('FUNCTION',target,'TOTAL',len(locations),'LINES',[(n.lineno,n.end_lineno) for n in locations[-8:]])
+              if target=='menu':
+                  for node in locations[-2:]:
+                      a=node.lineno-1;b=min(node.end_lineno,a+95)
+                      print('LAST_MENU',a+1,b)
+                      for i in range(a,b):
+                          text=lines[i]
+                          if re.search(r'(?i)(token|secret|api_key|password|private_key)',text):text='[REDACTED]'
+                          print(f'{i+1:06d}: {text[:250]}')
+              if target=='callback' and locations:
+                  node=locations[-1]
+                  print('FINAL_CALLBACK_START',node.lineno)
+                  for i in range(node.lineno-1,min(node.lineno+30,len(lines))):
+                      text=lines[i]
+                      if re.search(r'(?i)(token|secret|api_key|password|private_key)',text):text='[REDACTED]'
+                      print(f'{i+1:06d}: {text[:250]}')
+          for word in ('cikgulaju-web.onrender.com','https://','web login','webapp','web_app'):
+              found=[i for i,l in enumerate(lines) if word.lower() in l.lower()]
+              print('OTHER',word,'count',len(found),'lines',[i+1 for i in found[-12:]])
+          PY
