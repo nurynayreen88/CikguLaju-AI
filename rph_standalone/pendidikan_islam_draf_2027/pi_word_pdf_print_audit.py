@@ -89,6 +89,21 @@ def set_rtl(paragraph, run):
     rpr.append(rtl)
 
 
+NUMERIC_RANGE_BIDI = re.compile(r"(?<![0-9])(?:[0-9]{1,3})[ \\t]*[-–][ \\t]*(?:[0-9]{1,3})(?![0-9])")
+
+def display_bidi_safe(line):
+    """Keep numeric ranges in logical order when displaying Arabic/Jawi in Word.
+
+    LibreOffice/Word can VISUALLY invert 1-3 to 3-1 in RTL paragraphs.
+    Invisible LRM markers are added only to the diagnostic document's
+    display text, not to the original lesson JSON or stored ayat ranges.
+    They prevent teachers from seeing 3-1 for a 1-3 Quran assignment.
+    """
+    if not rtl_preferred(line):
+        return line
+    return NUMERIC_RANGE_BIDI.sub(lambda m: "\u200e" + m.group(0) + "\u200e", line)
+
+
 def add_lines(cell, text, *, base_font=8.1):
     from docx.enum.text import WD_ALIGN_PARAGRAPH
     from docx.shared import Pt
@@ -100,8 +115,9 @@ def add_lines(cell, text, *, base_font=8.1):
         p.paragraph_format.space_before = Pt(0)
         p.paragraph_format.space_after = Pt(0)
         p.paragraph_format.line_spacing = 1.0
-        # Guarantee the same source characters; never strip or transliterate Jawi.
-        run = p.add_run(line)
+        # Preserve all visible source characters; add invisible LRM for ranges
+        # only in Word/PDF preview to prevent visual reversal of ayat 1-3.
+        run = p.add_run(display_bidi_safe(line))
         run.font.name = "Amiri" if rtl_preferred(line) else "Liberation Sans"
         run.font.size = Pt(base_font + (0.35 if rtl_preferred(line) else 0))
         run._element.get_or_add_rPr().rFonts.set(qn("w:eastAsia"), "Amiri")
