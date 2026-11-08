@@ -72,6 +72,25 @@ class PrivateRPTNoteTests(unittest.TestCase):
         self.assertEqual(before_pdp, after_pdp)
         self.assertEqual(len(set(after_pdp)), 151)
 
+    def test_pi_years_3_to_6_are_prose_clean_but_still_draft(self):
+        root = Path(__file__).resolve().parents[1]
+        expected = {3:147, 4:151, 5:143, 6:143}
+        for year, total in expected.items():
+            path = root / f"rpt_2027/web_2027_pdfs/pendidikan_islam/tahun_{year}.pdf"
+            if not path.is_file():
+                self.skipTest(f"PI Year{year} static RPT missing")
+            source_hash = hashlib.sha256(path.read_bytes()).hexdigest()
+            cleaned = pdf_for_teacher(path)
+            self.assertEqual(cleaned, path, f"PI Year{year} asset must be clean before deployment")
+            with fitz.open(path) as pdf:
+                full = "\n".join(page.get_text() for page in pdf)
+                self.assertNotIn("Pemetaan buku teks belum", full)
+                self.assertNotIn("Pemetaan buku teks untuk Lesson", full)
+                self.assertNotIn("tidak mereka halaman buku teks", full)
+                self.assertIn("DRAF SEMAKAN", full)
+                self.assertEqual(len(set(re.findall(r"PdP\\s+(\\d{3})", full))), total)
+            self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), source_hash)
+
 
 if __name__ == "__main__":
     unittest.main()
