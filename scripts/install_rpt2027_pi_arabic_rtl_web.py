@@ -63,10 +63,20 @@ def validate_pdf(file, subject, year, old_pdf, cover_layout):
         if abs(first.rect.width-cover_layout["page_width"])>cover_layout["tolerance_pt"]:
             raise ValueError("Cover layout diverged from locked template")
         codes=CODE_COUNTS[subject][year]
-        pdp=" ".join(p.get_text("text") for p in list(pdf)[1:])
-        for n in range(1,codes+1):
-            if len(re.findall(rf"\bPdP\s+{n:03d}\b",pdp))!=1:
-                raise ValueError(f"PdP {n:03d} missing or repeated in {subject} {year}")
+        # PyMuPDF page.get_text() may join a Jawi SP cell directly into
+        # "PdP 001" from a neighboring cell on the same baseline, removing
+        # the Unicode word boundary. Count EXACT PDF text spans instead.
+        found=[]
+        for page in list(pdf)[1:]:
+            for block in page.get_text("dict")["blocks"]:
+                for line in block.get("lines",[]):
+                    for span in line["spans"]:
+                        tag=span["text"].strip()
+                        if re.fullmatch(r"PdP \d{3}",tag):
+                            found.append(int(tag[-3:]))
+        if found!=list(range(1,codes+1)):
+            raise ValueError(f"PdP sequence missing, repeated or out of order in {subject} {year}: "
+                             f"found {len(found)}, expected {codes}")
         # Header width follows the original columns, but physical order is
         # mirrored: far-right Minggu > Unit > SK > SP > far-left Catatan.
         for page in list(pdf)[1:]:
