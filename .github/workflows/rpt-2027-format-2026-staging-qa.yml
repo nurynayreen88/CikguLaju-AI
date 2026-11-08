@@ -148,10 +148,19 @@ jobs:
                   body=" ".join(page.get_text() for page in list(pdf)[1:])
                   assert 'M03 (CADANGAN RPT)' in body and 'M34 (CADANGAN RPT)' in body
           PY
+      - name: Record teacher-facing RPT developer-note leaks (read-only, not a release approval)
+        run: |
+          python -m unittest tests.test_rpt2027_teacher_text_leak_scan -v
+          python -m scripts.audit_rpt2027_teacher_text_leaks_20261108 \
+            --teacher-output-only \
+            --output staging/rpt_2027_seragam_2026/teacher_text_leak_report.json \
+            rpt_2027 staging/rpt_2027_seragam_2026/pdf
+          # For the later FINAL READY release gate, rerun with --fail-on-findings.
       - uses: actions/upload-artifact@v4
         with:
           name: RPT2027-21-asal-dan-3-RBT-simulasi-DRAF
           path: |
+            staging/rpt_2027_seragam_2026/teacher_text_leak_report.json
             staging/rpt_2027_seragam_2026/pdf/*.pdf
             staging/rpt_2027_seragam_2026/pdf/*.png
             staging/rpt_2027_seragam_2026/audit_calendar_week_alignment.json
