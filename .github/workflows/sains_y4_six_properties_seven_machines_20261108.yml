@@ -25,6 +25,8 @@ jobs:
       - name: Install local DRAF Word/PDF tools
         run: |
           python -m pip install 'python-docx==1.1.2' 'reportlab==4.2.5' 'pypdf==5.1.0'
+      - name: Build existing v25.82 Science source indices without database writes
+        run: python -m tools.render_sains_rpt_2027_ab_review_20261106
       - name: Verify six DSKP material properties seven machines and original 79 HOLD
         run: python -m unittest discover -s tests -p 'test_sains_y4_six_material_seven_machines_20261108.py' -v
       - name: Verify source-specific 79 activities and fixed KPS/teacher-PBD mapping
