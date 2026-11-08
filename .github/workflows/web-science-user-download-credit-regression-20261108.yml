@@ -5,6 +5,7 @@ on:
     branches: [production/cikgulaju-web-20261105]
     paths:
       - "tests/test_web_science_user_download_credit_contract_20261108.py"
+      - "tests/test_web_shared_ten_rph_trial.py"
       - "web/unified_rph_web.py"
       - "web/native_telegram_sequence_rph_client.py"
       - "web/rph_delivery_quota.py"
