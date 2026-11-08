@@ -33,15 +33,18 @@ class PrimaryDSKPSourceAudit(unittest.TestCase):
         self.assertEqual(y6["dskp_distinct_sp_codes"], 38)
 
     def test_semantic_mismatch_even_when_sp_exists_in_primary_dskp(self):
-        self.assertEqual(self.report["known_semantic_conflict_count"], 2)
-        self.assertEqual(self.report["known_distinct_pdp_requiring_review_minimum"], 100)
+        self.assertEqual(self.report["known_semantic_conflict_count"], 8)
+        self.assertEqual(self.report["known_distinct_pdp_requiring_review_minimum"], 106)
         cases = {x["pdp_code"]: x
                  for x in self.report["code_present_but_semantically_conflicting_known_cases"]}
-        self.assertEqual(set(cases), {"MT6-PDP-004", "MT6-PDP-006"})
+        self.assertEqual(set(cases), {"MT6-PDP-004", "MT6-PDP-006", "MT6-PDP-022", "MT6-PDP-047", "MT6-PDP-068", "MT6-PDP-079", "MT6-PDP-080", "MT6-PDP-081"})
         self.assertEqual(cases["MT6-PDP-004"]["native_title"], "Pembundaran Nombor")
         self.assertIsNone(cases["MT6-PDP-004"]["candidate_sp"])
         self.assertEqual(cases["MT6-PDP-006"]["native_title"], "Pola Nombor")
         self.assertEqual(cases["MT6-PDP-006"]["candidate_sp"], "1.1.2")
+        self.assertEqual(cases["MT6-PDP-079"]["candidate_sp"], "7.2.1")
+        self.assertEqual(cases["MT6-PDP-080"]["candidate_sp"], "7.3.1")
+        self.assertEqual(cases["MT6-PDP-081"]["candidate_sp"], "7.4.1")
         self.assertTrue(all(x["approved"] is False for x in cases.values()))
 
     def test_all_conflicts_remain_unapproved_and_no_production_changes(self):
