@@ -84,6 +84,8 @@ on:
       - "tests/test_sains_y6_84_source_preflight_20261107.py"
       - "tests/test_rph80_all_subject_source_scan_20261107.py"
       - "tools/build_sains_342_offline_review_pack_20261108.py"
+      - "tools/enrich_sains_342_offline_pbd_20261108.py"
+      - "tests/test_sains_342_offline_eight_pbd_20261108.py"
       - "tests/test_sains_342_offline_review_pack_20261108.py"
       - "audits/rph80_program_20261107.md"
       - "tests/test_rph80_sains_quality_gate_20261107.py"
@@ -222,6 +224,10 @@ jobs:
         run: python -m tools.build_sains_342_offline_review_pack_20261108
       - name: Validate every offline RPH link and SHA with 342 HOLD rows
         run: python -m unittest discover -s tests -p 'test_sains_342_offline_review_pack_20261108.py' -v
+      - name: Add original Year2 missing-SP and Year2/3 alternative PBD Word/PDF to offline bundle
+        run: python -m tools.enrich_sains_342_offline_pbd_20261108
+      - name: Verify eight supplementary SP PBD, 704 ZIP entries and all 702 offline links
+        run: python -m unittest discover -s tests -p 'test_sains_342_offline_eight_pbd_20261108.py' -v
       - name: Publish one download for internal Science teacher-review (DRAF, not live)
         uses: actions/upload-artifact@v4
         with:
