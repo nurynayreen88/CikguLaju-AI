@@ -135,6 +135,9 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
     )
 
     validate_rows(subject, year, records)
+    # Arabic/Jawi RPTs read their five columns from right to left.
+    # All other subjects preserve the same LTR five-column source template.
+    rtl_table = subject in ("pendidikan_islam", "bahasa_arab")
     out = Path(destination)
     out.parent.mkdir(parents=True, exist_ok=True)
     reg = Path("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")
@@ -172,7 +175,8 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
             "rpt", fontName=(arabic_heavy if strong else arabic_font) if uses_arabic
             else (bold if strong else font),
             fontSize=size, leading=leading, textColor=colors.HexColor(color),
-            wordWrap="CJK", spaceBefore=0, spaceAfter=0, alignment=1 if center else 0
+            wordWrap="CJK", spaceBefore=0, spaceAfter=0,
+            alignment=1 if center else (2 if rtl_table else 0)
         )
         printable = normalize_pdf_text(text)
         if any("\u0600" <= ch <= "\u08ff" for ch in printable):
@@ -289,8 +293,11 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
         # No headers, footers, labels, status or extra metadata on cover.
         pass
 
-    headings = ("MINGGU / TARIKH", "UNIT / TAJUK / PDP",
-                "SK", "SP", "CATATAN / BAHAN")
+    # The rightmost column in RTL is the first logical column
+    # MINGGU -> UNIT/PdP -> SK -> SP -> CATATAN (read right to left).
+    logical_headings = ("MINGGU / TARIKH", "UNIT / TAJUK / PDP",
+                        "SK", "SP", "CATATAN / BAHAN")
+    headings = tuple(reversed(logical_headings)) if rtl_table else logical_headings
     table_rows = [[p(t,size=8.0,leading=11.7,strong=True,color="#25323a") for t in headings]]
     if max_span_rows is not None and (type(max_span_rows) is not int or not 1 <= max_span_rows <= 8):
         raise ValueError("Invalid maximum merged week rows")
@@ -329,15 +336,17 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
                 raise ValueError("DSKP URL link only supported for unapproved Arabic sources")
             note_cell.append(source_pdf_link(row["source_sp_dskp_pdf_url"],
                                              row["source_sp_dskp_pdf_page"]))
-        table_rows.append([
+        logical_cells = [
             "" if index in grouped_followers else p(weektext,size=7.0,leading=11.3),
             unit_lines,
             p(row.get("sk_display") or row["sk"],size=7.5,leading=11.3),
             p(row.get("sp_display") or row["sp"],size=7.3,leading=10.8),
             note_cell
-        ])
+        ]
+        table_rows.append(list(reversed(logical_cells)) if rtl_table else logical_cells)
     # Reserve more width for the newly expanded full DSKP SK/SP statements.
-    widths = [105, 180, 125, 210, usable - 105 - 180 - 125 - 210]
+    logical_widths = [105, 180, 125, 210, usable - 105 - 180 - 125 - 210]
+    widths = list(reversed(logical_widths)) if rtl_table else logical_widths
     if any(x < 0 for x in widths) or abs(sum(widths)-usable)>0.2:
         raise ValueError("RPT layout width overflows landscape A4")
 
@@ -358,15 +367,15 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
         ("LINEBEFORE",(1,0),(-1,-1),0.3,line),
         ("BOX",(0,0),(-1,-1),0.6,ink)
     ]))
-    # The first column is a genuine vertical table merge (rowspan) for
-    # consecutive lessons within the same sourced week. Lesson/PdP, SK and SP
-    # stay on their own rows in columns 2-5.
+    # The week/date column is genuinely vertically merged, on the right for
+    # Jawi/Arabic and on the left for all remaining subjects.
+    week_col = 4 if rtl_table else 0
     for first, last in week_ranges:
         tbl.setStyle(TableStyle([
-            ("BACKGROUND", (0, first), (0, last), colors.HexColor("#eaf1e3")),
-            ("VALIGN", (0, first), (0, last), "MIDDLE"),
-            ("LINEBELOW", (0, last), (0, last), 0.35, line),
-        ] + ([("SPAN", (0, first), (0, last))] if last > first else [])))
+            ("BACKGROUND", (week_col, first), (week_col, last), colors.HexColor("#eaf1e3")),
+            ("VALIGN", (week_col, first), (week_col, last), "MIDDLE"),
+            ("LINEBELOW", (week_col, last), (week_col, last), 0.35, line),
+        ] + ([("SPAN", (week_col, first), (week_col, last))] if last > first else [])))
     story = cover + [tbl]
     doc.build(story, onFirstPage=blank_cover_header, onLaterPages=header)
     if not out.is_file() or out.stat().st_size < 5000:
