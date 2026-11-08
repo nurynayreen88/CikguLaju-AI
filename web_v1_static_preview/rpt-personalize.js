@@ -192,7 +192,7 @@
     if(actualSha!==declaredSha)throw Error("Checksum PDF tidak sepadan. Muat turun dibatalkan.");
     return {bytes,sha:actualSha};
   }
-  async function downloadWithOriginalCover(code,year){
+  async function downloadWithOriginalCover(code,year,openedViewer=null){
     const PDF=window.PDFLib;
     if(!PDF||!PDF.PDFDocument)
       throw Error("Modul PDF tidak dapat dimuatkan. Refresh laman Web dan cuba semula.");
@@ -204,7 +204,20 @@
     const result=await fillOriginalCover(original,profile,logo,layout,{PDFLib:PDF});
     const output=await original.save({useObjectStreams:false});
     const download=new Blob([output],{type:"application/pdf"});
-    const url=URL.createObjectURL(download),link=document.createElement("a");
+    const url=URL.createObjectURL(download);
+    // Mobile Safari may reject a new download gesture after the asynchronous
+    // profile, logo and PDF fetches. Navigate the tab opened synchronously
+    // by the user's original click instead. Nothing is uploaded or shared.
+    if(openedViewer && !openedViewer.closed){
+      try{
+        openedViewer.location.replace(url);
+        setTimeout(()=>URL.revokeObjectURL(url),120000);
+        return result;
+      }catch(error){
+        try{openedViewer.close();}catch(_ignored){}
+      }
+    }
+    const link=document.createElement("a");
     try{
       link.href=url;
       link.download="CIKGULAJU_RPT_"+code.toUpperCase()+"_TAHUN_"+year+"_2027_ISI_PROFIL.pdf";
@@ -213,7 +226,7 @@
     return result;
   }
   if(typeof window!=="undefined"){
-    window.downloadCikguLajuRPT=async function(code,year,name,output,button){
+    window.downloadCikguLajuRPT=async function(code,year,name,output,button,openedViewer=null){
       if(!Number.isInteger(year)||year===1){
         if(output)output.textContent="Tahun 1 KP2027 belum dibuka untuk muat turun.";
         return false;
@@ -221,8 +234,8 @@
       if(button)button.disabled=true;
       if(output)output.textContent="Mengisi ruang logo, nama sekolah dan nama guru pada muka depan RPT asal…";
       try{
-        const status=await downloadWithOriginalCover(code,year);
-        if(output)output.textContent="PDF RPT berjaya dimuat turun. Muka depan asal dikekalkan, tiada halaman tambahan."+
+        const status=await downloadWithOriginalCover(code,year,openedViewer);
+        if(output)output.textContent=(openedViewer?"PDF RPT dibuka di tab baharu. Gunakan pilihan Simpan/Muat Turun pada pelayar. ":"PDF RPT berjaya dimuat turun. ")+"Muka depan asal dikekalkan, tiada halaman tambahan."+
           ((!status.hasLogo||!status.hasSchool||!status.hasTeacher)
            ? " Maklumat belum diisi: "+
              [!status.hasLogo&&"logo sekolah",!status.hasSchool&&"nama sekolah",
@@ -230,6 +243,9 @@
              ". Lengkapkan dalam Profil Guru.":"");
         return true;
       }catch(error){
+        if(openedViewer && !openedViewer.closed){
+          try{openedViewer.close();}catch(_ignored){}
+        }
         if(output)output.textContent=error?.message||"Muat turun RPT tidak berjaya.";
         return false;
       }finally{
