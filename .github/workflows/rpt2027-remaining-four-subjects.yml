@@ -96,10 +96,18 @@ jobs:
                   assert not any('CATATAN / BAHAN' in sp['text'] for sp in spans),file
           print('SUCCESS: 20 PDF, 40 PNG previews, 10 RTL PDFs, landscape bounded text')
           PY
+      - name: Audit RPT developer-note leakage in BM-PI-ARAB-MUZIK output (read-only)
+        run: |
+          python -m unittest tests.test_rpt2027_teacher_text_leak_scan -v
+          python -m scripts.audit_rpt2027_teacher_text_leaks_20261108 \
+            --teacher-output-only \
+            --output staging/rpt_2027_seragam_2026/teacher_text_leak_BM-PI-ARAB-MUZIK.json \
+            staging/rpt_2027_seragam_2026/baki_4_subjek_DRAF
       - uses: actions/upload-artifact@v4
         with:
           name: RPT2027-20-BM-PI-ARAB-MUZIK-Seragam-DRAF
           path: |
+            staging/rpt_2027_seragam_2026/teacher_text_leak_BM-PI-ARAB-MUZIK.json
             staging/rpt_2027_seragam_2026/baki_4_subjek_DRAF/*.pdf
             staging/rpt_2027_seragam_2026/baki_4_subjek_DRAF/*.png
           if-no-files-found: error
