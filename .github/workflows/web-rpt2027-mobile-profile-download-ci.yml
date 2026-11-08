@@ -8,6 +8,7 @@ on:
       - 'web_v1_static_preview/index.html'
       - 'web_v1_static_preview/rpt-personalize.js'
       - 'tests/test_web_mobile_rpt_download_browser.py'
+      - 'tests/test_web_rpt_mobile_profile_end_to_end.py'
       - 'tests/qa_web_rpt_personal_cover_node.cjs'
   workflow_dispatch:
 permissions:
@@ -35,6 +36,8 @@ jobs:
       - name: Verify authenticated RPT routes and mobile click gesture in Chromium
         run: |
           python -m unittest tests.test_web_mobile_rpt_download_browser tests.test_web_rpt2027_56_release_catalog tests.test_web_rpt_2027_all -v
+      - name: End-to-end mobile touch through profile, source checksum and blob PDF viewer
+        run: python -m unittest tests.test_web_rpt_mobile_profile_end_to_end -v
       - name: Fill exact original cover slots on all 56 source PDFs with synthetic profiles
         run: node tests/qa_web_rpt_personal_cover_node.cjs
       - name: Verify all original cover slots and 56 PDF hashes remain intact
