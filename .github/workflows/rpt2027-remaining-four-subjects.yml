@@ -80,17 +80,20 @@ jobs:
                   continue
               with fitz.open(file) as pdf:
                   page=pdf[1]
-                  labels=('MINGGU / TARIKH','UNIT / TAJUK / PDP','SK','SP','CATATAN / BAHAN')
-                  x={}
-                  for block in page.get_text('dict')['blocks']:
-                      for line in block.get('lines',[]):
-                          for span in line['spans']:
-                              label=span['text'].strip()
-                              if label in labels and 40<span['bbox'][1]<95:
-                                  x[label]=span['bbox'][0]
-                  assert set(x)==set(labels),(file,x)
-                  assert x['CATATAN / BAHAN']<x['SP']<x['SK']<x['UNIT / TAJUK / PDP']<x['MINGGU / TARIKH'],(file,x)
-                  assert x['MINGGU / TARIKH']>650,(file,x)
+                  # The physical table stays RTL. All five yellow header
+                  # cells must be Arabic/Jawi, not leftover Malay Latin text.
+                  bands=[(29,193),(193,403),(403,528),(528,708),(708,813)]
+                  spans=[span for block in page.get_text('dict')['blocks']
+                         for line in block.get('lines',[])
+                         for span in line['spans']
+                         if 46<=span['bbox'][1]<86 and span['bbox'][3]<90]
+                  for left,right in bands:
+                      group=[sp for sp in spans if left<=sp['bbox'][0]<right]
+                      assert group,(file,left,spans)
+                      assert any(any('\u0600'<=c<='\u08ff' or '\ufb50'<=c<='\ufeff'
+                                     for c in sp['text']) for sp in group),(file,left,group)
+                  assert not any('MINGGU / TARIKH' in sp['text'] for sp in spans),file
+                  assert not any('CATATAN / BAHAN' in sp['text'] for sp in spans),file
           print('SUCCESS: 20 PDF, 40 PNG previews, 10 RTL PDFs, landscape bounded text')
           PY
       - uses: actions/upload-artifact@v4
