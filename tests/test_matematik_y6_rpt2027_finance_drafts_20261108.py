@@ -34,7 +34,7 @@ class FinanceDraftContract(unittest.TestCase):
                             "60 minit", "PBD", "BELUM DILULUSKAN"):
                     self.assertIn(key,part)
                 durations=[int(x) for x in re.findall(
-                    r"\\((\\d+) minit\\)",part)]
+                    r"\((\d+) minit\)",part)]
                 self.assertEqual(durations, [5,15,20,15,5])
                 self.assertEqual(sum(durations),60)
 
