@@ -17,6 +17,7 @@ on:
       - 'audits/bahasa_arab_rpt2027_y2_y6_117_sp_pdf_page_evidence_20261107.json'
       - 'audits/bahasa_arab_rpt2027_t2_19_sp_visual_statement_candidates_20261108.json'
       - 'audits/bahasa_arab_rpt2027_t3_23_sp_visual_statement_candidates_20261108.json'
+      - 'audits/bahasa_arab_rpt2027_t4_25_sp_visual_statement_candidates_20261108.json'
       - 'rpt_2027/common/format_2026_layout_preview.py'
       - 'tests/test_rpt_2027_rtl_layout_staging.py'
       - 'rpt_2027/bahasa_melayu/*Format_2026_DRAF.html'
