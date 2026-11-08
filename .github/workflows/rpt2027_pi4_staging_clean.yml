@@ -7,6 +7,7 @@ on:
     paths:
       - "web/rpt_private_notes.py"
       - "scripts/clean_rpt2027_pi4_asset.py"
+      - "scripts/audit_rpt2027_internal_notes.py"
       - ".github/workflows/rpt2027_pi4_staging_clean.yml"
   workflow_dispatch:
 
@@ -37,6 +38,9 @@ jobs:
 
       - name: Create verified source PDF and update only matching SHA-256 entries
         run: python scripts/clean_rpt2027_pi4_asset.py
+
+      - name: Read-only audit of all 56 RPT for developer-only notes
+        run: python scripts/audit_rpt2027_internal_notes.py
 
       - name: Run isolated PDF regression tests
         run: python -m unittest discover -s tests -p "test_rpt_private_notes.py" -v
