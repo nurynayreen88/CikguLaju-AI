@@ -39,6 +39,7 @@ from pi_heavy_tasmi_editor_overlay import generate as heavy_tasmi_editor
 from pi_y5_khat_nasakh_source_audit import audit as year5_khat_source_audit
 from pi_y5_khat_nasakh_editor_overlay import generate as year5_khat_editor
 from pi_tajwid_crossfield_mad_audit import audit as tajwid_mad_crossfield
+from pi_y5_qadr_dual_sk_source_audit import audit as qadr_dual_sk_source
 
 
 def readiness(root=ROOT):
@@ -73,6 +74,13 @@ def readiness(root=ROOT):
     year5_khat_source = year5_khat_source_audit(root)
     year5_khat_preview = year5_khat_editor(root)
     mad_crossfield = tajwid_mad_crossfield(root)
+    qadr_dual = qadr_dual_sk_source(root)
+    assert qadr_dual["fixed_combined_sk_lessons"] == 2
+    assert qadr_dual["source_field_replacements"] == 3
+    assert qadr_dual["original_sk_and_objectives_unchanged"] is True
+    assert qadr_dual["academic_expert_approved"] == 0
+    assert qadr_dual["ready_for_teacher"] == 0
+    assert qadr_dual["release"] == "NO_GO"
     assert mad_crossfield["single_named_mad_source_lessons_checked"] == 30
     assert mad_crossfield["conflicting_mad_labels_remaining"] == 0
     assert mad_crossfield["source_corrected_year5_lessons"] == 3
@@ -234,6 +242,9 @@ def readiness(root=ROOT):
     assert sum(x["closing_jawi_candidate_exists"] for x in grouped.values()) == 690
     # Evidence needed before a future release decision; no implicit approval.
     blockers = [
+        {"code":"YEAR5_QADR_TWO_DUAL_SK_HAFAZAN_SOURCE_CODES_PENDING_EXPERT",
+         "affected_lessons":qadr_dual["fixed_combined_sk_lessons"],
+         "action":"Year5 L069/L073 use combined SK1.1 tilawah and SK1.3 hafazan. DSKP p19,21: SP1.1.2 is Quran reading, SP1.3.1 is al-Qadr memorization. Staging source corrected, original SP preserved and expert Jawi/curriculum signoff pending"},
         {"code":"YEAR5_TAJWID_MAD_BADAL_IWAD_THREE_SOURCE_COPY_ERRORS_PENDING_EXPERT",
          "affected_lessons":mad_crossfield["source_corrected_year5_lessons"],
          "action":"Year5 L041/L045/L049 inherited RPH content wrongly referred to mad badal although SP targeted mad iwad. Original fields retained in staging; 30 single-mad source RPH checked with zero remaining cross-field mixups; expert tajwid/Jawi verification and textbook verse examples still required"},
@@ -352,6 +363,8 @@ def readiness(root=ROOT):
         "tajwid_crossfield_mad_conflicts_remaining": mad_crossfield["conflicting_mad_labels_remaining"],
         "year5_mad_iwad_copyedit_lessons": mad_crossfield["source_corrected_year5_lessons"],
         "year5_mad_iwad_copyedit_fields": mad_crossfield["source_corrected_fields"],
+        "year5_qadr_sp_131_hafazan_source_corrected_lessons": qadr_dual["fixed_combined_sk_lessons"],
+        "year5_qadr_sp_131_hafazan_source_corrected_fields": qadr_dual["source_field_replacements"],
         "year5_khat_editor_pbd_and_worksheet_overlays": year5_khat_preview["editor_proposed_improvements"],
         "year5_khat_editor_fields_changed": year5_khat_preview["editor_changed_field_count"],
         "year5_khat_official_activity_book_pages_verified": year5_khat_preview["new_source_verified_workbook_pages"],
