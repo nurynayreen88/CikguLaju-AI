@@ -38,7 +38,7 @@ class PausedDailyRPHTests(unittest.TestCase):
         self.assertEqual(menu(321), "sent")
         cid, message, keyboard = calls.pop()
         self.assertEqual(cid, 321)
-        callbacks = [b["callback_data"] for row in keyboard for b in row]
+        callbacks = [b["callback_data"] for row in keyboard for b in row if "callback_data" in b]
         self.assertIn("quick", callbacks)
         self.assertIn("rpt2027_home", callbacks)
         self.assertIn("account", callbacks)
