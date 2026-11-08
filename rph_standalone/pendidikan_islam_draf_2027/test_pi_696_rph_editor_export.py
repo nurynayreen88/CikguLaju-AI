@@ -39,6 +39,8 @@ class PIFullRPHReviewerExportTests(unittest.TestCase):
         self.assertEqual(counts["ORIGINAL_RPT_YEAR4_PUASA_SIX_RUKUN_ERROR_PENDING"], 1)
         self.assertEqual(counts["ORIGINAL_RPT_YEAR3_SOLAT_OBJECTIVE_SEQUENCE_ERROR_PENDING"], 1)
         self.assertEqual(counts["YEAR5_BUKU_AKTIVITI_EDITION_AND_EXERCISE_UNVERIFIED"], 13)
+        self.assertEqual(counts["YEAR5_TAJWID_MAD_IWAD_COPYEDITS_PENDING_EXPERT"],3)
+        self.assertEqual(counts["YEAR5_QADR_TILAWAH_HAFAZAN_SP_CODE_PENDING_EXPERT"],2)
         self.assertEqual(counts["ORIGINAL_RPT_YEAR6_JUZ25_67_AYAT_UNMAPPED"], 7)
         self.assertEqual(counts["ORIGINAL_RPT_YEAR2_AYAH224_OVERLAP_UNRESOLVED"], 1)
         self.assertIn("ORIGINAL_RPT_YEAR4_PUASA_SIX_RUKUN_ERROR_PENDING",
