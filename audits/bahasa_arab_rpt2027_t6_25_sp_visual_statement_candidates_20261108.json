@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-11-08",
+  "status": "VISUAL_TRANSCRIPTION_CANDIDATE_ONLY_NOT_ACADEMIC_FINAL",
+  "source_document": "DSKP KSSR (Semakan 2017) Bahasa Arab Tahun 6.pdf",
+  "source_url": "https://drive.google.com/file/d/1tHZTKLAc_4N4fpMvHeJN_DgCpn_m7dMp/view",
+  "source_pdf_sha256": "a8e27f109f4aa5cbe1214e71000138f1bdccdea6cdd38cd289715f71cac7238a",
+  "source_pdf_pages": 52,
+  "source_pages_inspected": [
+    31,
+    32,
+    33,
+    34,
+    36,
+    37,
+    38,
+    41,
+    42,
+    43
+  ],
+  "method": "Direct visual transcription from 10 original KPM DSKP Year6 PDF page images; downloaded PDF SHA256 checked against original 117-code PDF-page ledger. No OCR, no copying statement strings from Year5 even where SP numeric codes match.",
+  "scope": "25 unique Year6 DSKP SP codes in exactly 60 original RPT Year6 PdP, draft candidate text only; Arabic SK wording / textbook-to-lesson mapping separate.",
+  "summary": {
+    "unique_sp": 25,
+    "visual_candidates": 25,
+    "candidate_for_staging_display": 25,
+    "held_source_conflict": 0,
+    "held_rpt_pdp_count": 0,
+    "academic_panel_signoffs": 0,
+    "sk_full_statement_signoffs": 0,
+    "rpt_release_ready": false
+  },
+  "notes": [
+    "Year6 statement SP 1.2.5 ends 'من الكلمات المسموعة' while Year5 ends 'من الكلمات المدروسة': year-specific source used.",
+    "Year6 3.1.1 is 'كتابة الكلمات بطريقة صحيحة' but Year5 3.1.1 is words containing visually similar letters; identical numeric SP codes do not authorize copying across years.",
+    "These strings are visual source candidates only and do not attest that each RPH activity or timetable matches the official SP."
+  ],
+  "restrictions": [
+    "Do not edit source DSKP PDF or global 117 SP code/page ledger.",
+    "Keep all 60 source RPT PdP and group A/B dates blank; no invented timetable.",
+    "Zero academic signoffs and no change to Web/Telegram LIVE.",
+    "Do not set Year2–6 RPT status FINAL READY solely on code-to-page and visual statement availability."
+  ],
+  "entries": [
+    {
+      "sp_code": "1.1.1",
+      "pdf_page": 31,
+      "visual_transcription_candidate": "القدرة على محاكاة أصوات الحروف المتماثلة في الكلمات وترديدها ثم نطقها نطقا صحيحا.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "1.1.2",
+      "pdf_page": 31,
+      "visual_transcription_candidate": "القدرة على تحديد أصوات الحروف المتماثلة نطقا داخل الكلمات المسموعة.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "1.1.4",
+      "pdf_page": 31,
+      "visual_transcription_candidate": "القدرة على بناء الكلمات إملائيا من الحروف المتماثلة المسموعة.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "1.2.1",
+      "pdf_page": 32,
+      "visual_transcription_candidate": "القدرة على محاكاة الكلمات المسموعة وترديدها ثم نطقها نطقا صحيحا.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "1.2.2",
+      "pdf_page": 32,
+      "visual_transcription_candidate": "القدرة على تحديد الكلمات المسموعة.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "1.2.3",
+      "pdf_page": 32,
+      "visual_transcription_candidate": "القدرة على تصنيف الكلمات المسموعة.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "1.2.4",
+      "pdf_page": 32,
+      "visual_transcription_candidate": "القدرة على التمييز بين الكلمات المسموعة.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "1.2.5",
+      "pdf_page": 32,
+      "visual_transcription_candidate": "القدرة على إنتاج المشروعات الصوتية من الكلمات المسموعة.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "1.3.1",
+      "pdf_page": 33,
+      "visual_transcription_candidate": "القدرة على محاكاة الجمل البسيطة المسموعة وترديدها ثم نطقها نطقا صحيحا.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "1.3.2",
+      "pdf_page": 33,
+      "visual_transcription_candidate": "القدرة على نطق الجمل البسيطة مع مراعاة النبر والتنغيم.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "1.3.4",
+      "pdf_page": 33,
+      "visual_transcription_candidate": "القدرة على التمييز بين الجمل البسيطة المسموعة.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "1.4.1",
+      "pdf_page": 34,
+      "visual_transcription_candidate": "القدرة على محاكاة الجمل المتناسقة المسموعة وترديدها.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "1.4.3",
+      "pdf_page": 34,
+      "visual_transcription_candidate": "القدرة على تمثيل الجمل المتناسقة المسموعة ارتجاليا.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "2.1.2",
+      "pdf_page": 36,
+      "visual_transcription_candidate": "القدرة على قراءة الكلمات التي فيها الحروف المتماثلة.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "2.2.1",
+      "pdf_page": 37,
+      "visual_transcription_candidate": "القدرة على محاكاة قراءة الكلمات وترديدها ثم قراءتها مع مراعاة النبر.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "2.2.2",
+      "pdf_page": 37,
+      "visual_transcription_candidate": "القدرة على تحديد الكلمات المقروءة.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "2.2.3",
+      "pdf_page": 37,
+      "visual_transcription_candidate": "القدرة على تصنيف الكلمات المقروءة.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "2.2.4",
+      "pdf_page": 37,
+      "visual_transcription_candidate": "القدرة على تمييز الكلمات المقروءة.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "2.2.5",
+      "pdf_page": 37,
+      "visual_transcription_candidate": "القدرة على إنتاج المشروعات للكلمات المقروءة.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "2.3.1",
+      "pdf_page": 38,
+      "visual_transcription_candidate": "القدرة على محاكاة القراءة للجملة البسيطة وترديدها.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "2.3.2",
+      "pdf_page": 38,
+      "visual_transcription_candidate": "القدرة على قراءة الجملة البسيطة مع مراعاة النبر والتنغيم.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "2.3.6",
+      "pdf_page": 38,
+      "visual_transcription_candidate": "القدرة على إنتاج المشروعات للجمل المقروءة.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "3.1.1",
+      "pdf_page": 41,
+      "visual_transcription_candidate": "القدرة على كتابة الكلمات بطريقة صحيحة.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "3.2.1",
+      "pdf_page": 42,
+      "visual_transcription_candidate": "القدرة على كتابة الجمل البسيطة.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    },
+    {
+      "sp_code": "3.3.1",
+      "pdf_page": 43,
+      "visual_transcription_candidate": "القدرة على كتابة الجمل المتناسقة.",
+      "inspected_rendered_page": true,
+      "academic_panel_signed_off": false,
+      "candidate_for_staging_display": true,
+      "hold_reason": null
+    }
+  ]
+}
