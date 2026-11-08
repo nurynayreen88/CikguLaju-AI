@@ -338,13 +338,13 @@ def create_native_rph_blueprint(runtime):
         # A source hash alone is not enough if the native Telegram overlay is
         # disabled. Refuse a Web-only fallback to generic lesson content.
         if (body["subject"]=="PJPK"
-                and not getattr(runtime,"PJPK_2027_RPH_INSTALLED",False)):
+                and not getattr(runtime,"CIKGULAJU_PJPK_2027_PREVIEW_INSTALLED",False)):
             return jsonify({"error":"Telegram PJPK RPH source unavailable"}),503
         if (body["subject"]=="MORAL"
-                and not getattr(runtime,"MORAL_80_RPH_ACTIVE",False)):
+                and not getattr(runtime,"CIKGULAJU_MORAL_80_ACTIVE",False)):
             return jsonify({"error":"Telegram Moral RPH source unavailable"}),503
         if (body["subject"]=="PSV"
-                and not getattr(runtime,"PSV_2027_PROVISIONAL_RPH_ACTIVE",False)):
+                and not getattr(runtime,"PSV_2027_PROVISIONAL_TELEGRAM_ACTIVE",False)):
             return jsonify({"error":"Telegram PSV RPH source unavailable"}),503
         if body["subject"]=="ENGLISH" and body["year"]==5:
             from web.english_y5_standalone_runtime import approved_for_telegram
