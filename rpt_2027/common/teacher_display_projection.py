@@ -11,7 +11,7 @@ import re
 # leaving a dangling imperative such as "rujuk DSKP sebelum READY".
 _INTERNAL = re.compile(
     r"(?i)"
-    r"\b(?:DRAF|STAGING|PRA[\s-]?READY|PRE[\s-]?READY|"
+    r"\b(?:DRAF|STAGING|HOLD|SEBELUM\s+READY|PRA[\s-]?READY|PRE[\s-]?READY|"
     r"REKOD DITAHAN|PENGESAHAN (?:GURU|INSTRUMEN)|"
     r"BELUM (?:DISAH(?:KAN)?|DIPADANKAN|DIPERUNTUKKAN)|"
     r"KELULUSAN GURU|SEMAK TAJUK PENUH|"
