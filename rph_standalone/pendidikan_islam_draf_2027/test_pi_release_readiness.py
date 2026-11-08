@@ -91,6 +91,25 @@ class PIReleaseReadinessTests(unittest.TestCase):
         self.assertIn("179/246",full_juz[0]["action"])
         self.assertIn("67 ayat",full_juz[0]["action"])
 
+    def test_new_curriculum_source_gates_not_mistaken_for_approval(self):
+        r = self.r
+        self.assertGreaterEqual(r["quran_verse_range_occurrences_screened"], 750)
+        self.assertEqual(r["quran_invalid_verse_ranges_in_staging"], 0)
+        self.assertEqual(r["quran_sp_objective_pbd_range_mismatches_in_staging"], 0)
+        self.assertEqual(r["surah_crossfield_editor_corrections"], 11)
+        self.assertEqual(r["surah_source_rpt_errors_pending"], 7)
+        self.assertIs(r["year4_rpt_puasa_six_rukun_error_pending"], True)
+        self.assertIs(r["year3_rpt_solat_l059_copy_error_pending"], True)
+        self.assertGreaterEqual(r["tasmi_source_high_volume_lessons_review_pending"], 10)
+        blockers = {item["code"]: item for item in r["release_blockers"]}
+        self.assertEqual(blockers["RPT_SOURCE_7_SURAH_COPIES_REQUIRE_CORRECTION"]["affected_lessons"], 7)
+        self.assertEqual(blockers["YEAR4_RPT_PUASA_SIX_RUKUN_SOURCE_ERROR"]["affected_lessons"], 1)
+        self.assertEqual(blockers["YEAR3_RPT_SOLAT_L059_DUPLICATE_OBJECTIVE"]["affected_lessons"], 1)
+        self.assertGreaterEqual(blockers["QURAN_TASMI_HIGH_VOLUME_TEACHER_TIMING"]["affected_lessons"], 10)
+        self.assertEqual(r["individual_expert_approvals"], 0)
+        self.assertEqual(r["ready_count"], 0)
+        self.assertEqual(r["decision"], "NO_GO")
+
     def test_year_summary_is_coherent(self):
         r = self.r
         y = r["by_year"]
