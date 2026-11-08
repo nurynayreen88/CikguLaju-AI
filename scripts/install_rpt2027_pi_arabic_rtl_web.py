@@ -114,6 +114,7 @@ def install(source_dir,web_assets):
         or set(manifest["files"])!=set(layout.get("source_sha256_by_subject_year",{}))):
         raise ValueError("Web RPT source manifest/cover hash ledger not trusted")
     sources=source_files(source_dir)
+    previous_sha={key:manifest["files"][key]["sha256"] for key in EXPECTED}
     updates={}
     for key,source in sorted(sources.items()):
         subject,year_s=key.split(":")
@@ -159,6 +160,28 @@ def install(source_dir,web_assets):
         if len(data)!=entry["bytes"] or sha256(data).hexdigest()!=entry["sha256"]:
             raise ValueError("56-catalog after-update SHA mismatch: "+key)
     assert manifest["status"]=="DRAF_USER_VISIBLE_NOT_ACADEMIC_FINAL"
+    audit={
+        "status":"DRAF_RTL_LAYOUT_ONLY_NOT_ACADEMIC_FINAL",
+        "year":2027,
+        "changed_subjects":list(SUBJECTS),
+        "changed_years":list(YEARS),
+        "rtl_updated_count":len(updates),
+        "web_catalog_pdf_count":len(manifest["files"]),
+        "remaining_other_subject_pdfs_sha_unchanged":46,
+        "original_cover_geometry_unchanged":True,
+        "source_links_checked":True,
+        "production_db_modified":False,
+        "telegram_modified":False,
+        "source_rpt_content_not_academically_reapproved":True,
+        "entries":{key:{"before_sha256":previous_sha[key],
+                         "after_sha256":updates[key]["sha256"],
+                         "source_pdp":updates[key]["source_pdp"],
+                         "pages":updates[key]["pages"],
+                         "links":updates[key]["updated_links"]}
+                  for key in sorted(updates)}
+    }
+    (original/"RTL_PI_ARABIC_20261108_DRAF_AUDIT.json").write_text(
+        json.dumps(audit,indent=2,ensure_ascii=False)+"\n","utf-8")
     print("RTL_PI_ARABIC_10_PDF_56_ASSET_MANIFEST_PRESERVED",json.dumps({
         "updates":updates,"pdf_pages":manifest["pages"],"unchanged_pdfs":46
     },ensure_ascii=False))
