@@ -11,7 +11,7 @@ import re
 # leaving a dangling imperative such as "rujuk DSKP sebelum READY".
 _INTERNAL = re.compile(
     r"(?i)"
-    r"\b(?:DRAF|STAGING|HOLD\s*:|SEBELUM\s+READY|PRA[\s-]?READY|PRE[\s-]?READY|"
+    r"\b(?:DRAF(?=\s*[:/_-]|\s+(?:SEMAK(?:AN)?|TERKAWAL|UNTUK\s+SEMAKAN))|STAGING|HOLD(?=\s*:)|SEBELUM\s+READY|PRA[\s-]?READY|PRE[\s-]?READY|"
     r"REKOD DITAHAN|PENGESAHAN (?:GURU|INSTRUMEN)|"
     r"BELUM (?:DISAH(?:KAN)?|DIPADANKAN|DIPERUNTUKKAN)|"
     r"KELULUSAN GURU|SEMAK TAJUK PENUH|"
@@ -65,7 +65,7 @@ def public_note(row: dict) -> str:
     safe = []
     for part in _SEPARATOR.split(source):
         part = part.strip(" ;,|")
-        if part and not is_internal(part):
+        if part and part.casefold() != "draf" and not is_internal(part):
             safe.append(part)
     return re.sub(r"\.{2,}", ".", " | ".join(safe))
 
@@ -78,7 +78,9 @@ def public_standard(row: dict, field: str) -> str:
     expanded = str(row.get(field + "_display") or source).strip()
     if not source:
         raise ValueError("Empty original SK/SP")
-    if is_internal(expanded):
+    # Only a demonstrably absent official statement may fall back to its
+    # original code. Words such as "menulis draf" are legitimate DSKP text.
+    if re.search(r"(?i)pernyataan penuh\s+(?:SK|SP)\s+belum dipadankan", expanded):
         return source
     return expanded
 
