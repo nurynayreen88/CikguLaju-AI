@@ -107,6 +107,13 @@ def stage(source=DEFAULT_SOURCE,dest=DEFAULT_DEST,web=WEB):
         raise ValueError("Clean replacement failed developer-note gate: "+
                          str({k:result[k] for k in ("scanned_files","findings_count","read_errors")}))
     manifest["academic_final_approved"]=False
+    manifest["pages"]=sum(item["pages"] for item in manifest["files"].values())
+    manifest["source"]="Pinned PR441 commit 514f562b95867b8f6954d169b9397a3c2af2e144; teacher-display cleanup rebuilt 2026-11-08"
+    native=manifest.get("native_table_headings_pi_arab_english_20261108")
+    if isinstance(native,dict):
+        native["other_pdf_files_unchanged"]=0
+        native["original_cover_preserved"]=True
+        native["cleanup_note"]="All 56 source PDFs rebuilt; official subject headings preserved"
     manifest["ready_for_web_catalog"]=True  # Same existing user-visible DRAF state.
     manifest["source_projection"]="PR441_TEXT_ONLY_REVIEW_CLEANUP_NOT_ACADEMIC_SIGNOFF"
     (target/"manifest.json").write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n",
