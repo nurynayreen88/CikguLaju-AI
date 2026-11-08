@@ -5,11 +5,13 @@ on:
     paths:
       - "web/matematik_v60_native_rows.py"
       - "web/matematik_v60_native_coverage.py"
+      - "web/matematik_v60_crosswalk_candidates.py"
       - "tools/audit_matematik_v60_v2599_native_source_20261108.py"
       - "web/telegram_verified_sequence_rph_bridge.py"
       - "tools/run_telegram_with_curriculum_api.py"
       - "tests/test_matematik_v60_native_rows_20261108.py"
       - "tests/test_matematik_v60_native_coverage_20261108.py"
+      - "tests/test_matematik_v60_crosswalk_20261108.py"
       - "tests/test_matematik_v60_private_sequence_20261108.py"
       - "tests/test_matematik_v60_web_telegram_state_20261108.py"
       - "rph_standalone/matematik/v60_source_loader.py"
@@ -43,6 +45,7 @@ jobs:
         run: |
           python -m unittest discover -s tests -p "test_matematik_v60_native_rows_20261108.py" -v
           python -m unittest discover -s tests -p "test_matematik_v60_native_coverage_20261108.py" -v
+          python -m unittest discover -s tests -p "test_matematik_v60_crosswalk_20261108.py" -v
           python -m unittest discover -s tests -p "test_matematik_v60_private_sequence_20261108.py" -v
           python -m unittest discover -s tests -p "test_matematik_v60_web_telegram_state_20261108.py" -v
 
@@ -53,6 +56,7 @@ jobs:
           import json
           report=json.load(open('/tmp/matematik_v60_native_coverage.json', encoding='utf-8'))
           print("MATH-V60 SOURCE",report['source_lessons'],"NATIVE MATCHED",report['matched'])
+          print("Candidate types (all NOT approved):",report.get("crosswalk_status_counts",{}))
           for year, row in report['per_year'].items():
               print("Year",year,"PdP",row['native_pdp'],"matched",row['matched'],
                     "missing",row['unmatched'],"conflicts",row['conflicts'])
@@ -61,3 +65,11 @@ jobs:
               raise SystemExit("HOLD: actual Telegram Maths v25.99 mapping not reconciled 585/585")
           PY
 
+      - name: Preserve signed-source crosswalk audit for review (staging only)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: math-v60-v2599-crosswalk-staging
+          path: /tmp/matematik_v60_native_coverage.json
+          if-no-files-found: warn
+          retention-days: 14
