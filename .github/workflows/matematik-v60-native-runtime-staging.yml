@@ -23,6 +23,8 @@ on:
       - "tests/test_matematik_y6_staging_drafts_20261108.py"
       - "tests/test_matematik_y6_semantic_draft_20261108.py"
       - "rph_standalone/matematik/staging_draf_y6_pdp006_pola_nombor_20261108.md"
+      - "rph_standalone/matematik/staging_draf_y6_pdp079_081_nisbah_kadaran_20261108.md"
+      - "tests/test_matematik_y6_ratio_drafts_20261108.py"
       - "rph_standalone/matematik/staging_draf_y6_pdp007_012_dskp_bukuteks_20261108.md"
       - "tests/test_matematik_v60_private_sequence_20261108.py"
       - "tests/test_matematik_v60_web_telegram_state_20261108.py"
@@ -68,6 +70,7 @@ jobs:
           python -m unittest discover -s tests -p "test_matematik_v60_dskp_primary_20261108.py" -v
           python -m unittest discover -s tests -p "test_matematik_y6_staging_drafts_20261108.py" -v
           python -m unittest discover -s tests -p "test_matematik_y6_semantic_draft_20261108.py" -v
+          python -m unittest discover -s tests -p "test_matematik_y6_ratio_drafts_20261108.py" -v
           python -m unittest discover -s tests -p "test_matematik_v60_private_sequence_20261108.py" -v
           python -m unittest discover -s tests -p "test_matematik_v60_web_telegram_state_20261108.py" -v
 
