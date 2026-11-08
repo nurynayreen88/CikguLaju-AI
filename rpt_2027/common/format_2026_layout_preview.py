@@ -10,7 +10,7 @@ from datetime import date
 from html import escape
 from pathlib import Path
 import re
-from rpt_2027.common.teacher_display_projection import public_note, public_standard, public_topic
+from rpt_2027.common.teacher_display_projection import public_note, public_standard, public_topic, public_lesson_identity
 
 
 SUBJECTS = {
@@ -340,7 +340,7 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
         weektext = (f"{week}\nKumpulan A:\n{range_text(row,'a')}"
                     f"\nKumpulan B:\n{range_text(row,'b')}")
         unit_lines=[
-            p(row.get("display_id") or f"PdP {row['id']}",size=8.1,leading=12,strong=True),
+            p(public_lesson_identity(subject, row),size=8.1,leading=12,strong=True),
         ]
         unit_text=row["unit"].strip()
         # Separate Latin "Unit N:" from Arabic title to preserve reading order.
