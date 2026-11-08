@@ -455,7 +455,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
  <label for="rpt-year">Tahun RPT</label>
  <select id="rpt-year" disabled><option value="">Pilih Subjek dahulu</option></select>
  <button id="rpt-download" type="button" disabled>Muat turun RPT 2027 (PDF)</button>
- <a id="rpt-download-mobile" href="#" target="_blank" rel="noopener" aria-label="Muat turun RPT 2027 PDF melalui pautan terus" hidden>📥 Muat Turun RPT 2027 (PDF)</a>
+ <a id="rpt-download-mobile" href="#" target="_blank" rel="noopener" aria-label="Buka RPT 2027 PDF bersama profil sekolah pada tab baharu" hidden>📥 Muat Turun RPT 2027 (PDF)</a>
  <p id="rpt-status" class="notice" role="status"></p>
  <p class="notice rpt-phone-help">Pada telefon, PDF dengan ruang muka depan asal yang telah diisi akan dimuat turun. Jika logo atau nama belum disimpan, ruang tersebut dikekalkan kosong; lengkapkan dalam Profil Guru.</p>
 </section></section>
@@ -1219,8 +1219,19 @@ rptMobileLink.addEventListener("click",(event)=>{
  event.preventDefault();
  const item=rptChoice();
  if(!item?.year.download_enabled)return;
+ // Open during the actual touch/click gesture. On iOS Safari an asynchronous
+ // Blob download launched after fetch() may otherwise be silently blocked.
+ let viewer=null;
+ try{
+  viewer=window.open("about:blank","_blank");
+  if(viewer){
+   viewer.opener=null;
+   viewer.document.title="CikguLaju RPT 2027";
+   viewer.document.body.textContent="Menyediakan PDF RPT bersama profil sekolah…";
+  }
+ }catch(_error){viewer=null;}
  void window.downloadCikguLajuRPT(item.item.code,item.year.year,item.item.label,
-                                   rptStatus,rptDownload);
+                                   rptStatus,rptDownload,viewer);
 });
 rptSubject.addEventListener("change",()=>{
  rptDownload.disabled=true;
