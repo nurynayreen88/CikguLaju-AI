@@ -35,6 +35,7 @@ from pi_primary_source_fiqh_copyedit_audit import audit as fiqh_source_audit
 from pi_t3_solat_case_sequence_audit import audit as solat_sequence_audit
 from pi_tasmi_continuity_quality_guard import audit as tasmi_continuity_audit
 from pi_rpt_source_errata_editor_register import audit as rpt_errata_audit
+from pi_heavy_tasmi_editor_overlay import generate as heavy_tasmi_editor
 
 
 def readiness(root=ROOT):
@@ -65,6 +66,14 @@ def readiness(root=ROOT):
     solat_sequence = solat_sequence_audit(root)
     tasmi_continuity = tasmi_continuity_audit(root)
     rpt_errata = rpt_errata_audit(root)
+    heavy_tasmi = heavy_tasmi_editor(root)
+    assert heavy_tasmi["candidate_rph_activity_and_pbd_overlays"] == 14
+    assert heavy_tasmi["original_catalog_files_overwritten"] == 0
+    assert heavy_tasmi["official_ayah_boundaries_reassigned"] == 0
+    assert heavy_tasmi["teacher_exact_subranges_assigned"] == 0
+    assert heavy_tasmi["claim_to_have_completed_full_sp"] is False
+    assert heavy_tasmi["teacher_ready"] == 0
+    assert heavy_tasmi["release"] == "NO_GO"
     assert rpt_errata["rpt_source_conflict_lessons"] == 9
     assert rpt_errata["field_level_editor_comparisons"] == 13
     assert rpt_errata["approved_for_automatic_rpt_update"] == 0
@@ -203,6 +212,9 @@ def readiness(root=ROOT):
     assert sum(x["closing_jawi_candidate_exists"] for x in grouped.values()) == 690
     # Evidence needed before a future release decision; no implicit approval.
     blockers = [
+        {"code": "HEAVY_TASMI_14_EDITOR_ACTIVITIES_REQUIRE_TEACHER_SELECTION",
+         "affected_lessons": heavy_tasmi["candidate_rph_activity_and_pbd_overlays"],
+         "action": "14 Year5/6 lessons list 61-106 Quran ayat; editor Word/PDF now uses realistic individual selected passages, talaqqi and PBD but exact student verse range, Jawi accuracy, completion timing and full-SP mastery are unapproved"},
         {"code": "RPT_SOURCE_7_SURAH_COPIES_REQUIRE_CORRECTION",
          "affected_lessons": surah_pbd["curriculum_RPT2027_copy_errors_flagged"],
          "action": "Seven Year3/4 RPT2027 source entries retained wrong surah labels; staging RPH corrected them, but source RPT and final Jawi/Quran signoff are pending"},
@@ -314,6 +326,8 @@ def readiness(root=ROOT):
         "year4_rpt_puasa_six_rukun_error_pending": fiqh_source["original_rpt_year4_pdp107_six_rukun_incorrect"],
         "year3_rpt_solat_l059_copy_error_pending": solat_sequence["rpt_2027_l059_original_objective_incorrect"],
         "tasmi_source_high_volume_lessons_review_pending": tasmi_continuity["high_volume_60plus_ayah_source_lessons_for_teacher_review"],
+        "heavy_tasmi_editor_rph_activity_pbd_overlays": heavy_tasmi["candidate_rph_activity_and_pbd_overlays"],
+        "heavy_tasmi_student_ayah_allocations_verified": heavy_tasmi["teacher_exact_subranges_assigned"],
         "book_activity_exercises_verified": 0,
         "individual_expert_approvals": 0,
         "native_telegram_web_rph_pdf_verified": 0,
