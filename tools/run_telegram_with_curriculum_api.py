@@ -652,6 +652,22 @@ except Exception as _web_broadcast_exc:
     print("Web launch admin broadcast unavailable:",
           type(_web_broadcast_exc).__name__, flush=True)
 
+
+# Read-only production self-check of CURRENT Science DB RPH readiness.
+# This only samples one existing PdP per year, logs presence of source and
+# Word/PDF field builder, and never creates documents or touches user credits.
+# All 342 newly authored Science RPH remain DRAF/HOLD until per-PdP signoff.
+try:
+    from tools.sains_native_runtime_readiness_probe_20261108 import (
+        log_readiness as _log_sains_native_readiness,
+    )
+    SAINS_NATIVE_READINESS_REPORT = _log_sains_native_readiness(telegram_runtime)
+except Exception as _sains_readiness_diagnostic_exc:
+    SAINS_NATIVE_READINESS_REPORT = None
+    print("Sains native readiness diagnostic unavailable:",
+          type(_sains_readiness_diagnostic_exc).__name__, flush=True)
+
+
 # Final output-only RPH typography: ensure Aktiviti 1/2/3/4 headings are
 # consistently bold in Word and PDF (including colon variants).
 # Runs after native subject adapters so no source RPH, SK/SP or DB is changed.
