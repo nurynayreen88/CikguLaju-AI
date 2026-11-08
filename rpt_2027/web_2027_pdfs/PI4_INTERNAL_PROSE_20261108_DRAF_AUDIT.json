@@ -1,0 +1,22 @@
+{
+  "status": "DRAF_INTERNAL_PROSE_REMOVED_NOT_ACADEMIC_READY",
+  "subject": "pendidikan_islam",
+  "year": 2027,
+  "class_year": 4,
+  "original_sha256": "3da30e3a09d1efec76749aa343e28d6c91004318b041b07a428c4d8f0dbf4eeb",
+  "clean_sha256": "3c7a11fe1d8e681808bb7f1780ab1e6d416cbcd7845c0ca2d2cf39e1c78e2197",
+  "source_pdf": "pendidikan_islam/tahun_4.pdf",
+  "source_size_bytes": 329568,
+  "clean_size_bytes": 295781,
+  "pages": 76,
+  "unique_pdp": 151,
+  "removed": {
+    "mapping": 16,
+    "developer_note": 38
+  },
+  "other_55_rpt_sources_unchanged": true,
+  "cover_identical": true,
+  "all_sp_and_jawi_preserved": true,
+  "mapping_academic_final_approved": false,
+  "notes": "Developer-only prose removed; teacher-facing RPT remains DRAF."
+}

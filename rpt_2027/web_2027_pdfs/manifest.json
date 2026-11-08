@@ -223,8 +223,8 @@
     },
     "pendidikan_islam:4": {
       "path": "pendidikan_islam/tahun_4.pdf",
-      "sha256": "3da30e3a09d1efec76749aa343e28d6c91004318b041b07a428c4d8f0dbf4eeb",
-      "bytes": 329568,
+      "sha256": "3c7a11fe1d8e681808bb7f1780ab1e6d416cbcd7845c0ca2d2cf39e1c78e2197",
+      "bytes": 295781,
       "pages": 76,
       "status": "DRAF",
       "source_run_id": 42430115066
