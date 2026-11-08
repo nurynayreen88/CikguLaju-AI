@@ -55,7 +55,9 @@ def public_note(row: dict) -> str:
         return ""
     source = str(row.get("note") or "")
     # Source crosswalk IDs belong in the audit ledger, never on a teacher RPT.
-    source = re.sub(r"(?i)\\bBM[2-6]-P\\d{3}\\b", "", source)
+    source = re.sub(r"(?i)\bBM[2-6]-P\d{3}\b", "", source)
+    source = re.sub(r"(?i)\bdalam\s+RPT\s+sumber\b", "", source)
+    source = re.sub(r"[ \t]{2,}", " ", source)
     # Remove reviewer qualifiers without deleting genuine teaching/PBD guidance.
     # Do not change the source dict or its source_status fields.
     source = re.sub(r"(?i)\bPBD\s*\(draf\)\s*:", "PBD:", source)
@@ -101,7 +103,7 @@ def public_topic(row: dict) -> str:
     text = str(row.get("topic") or "").strip()
     if row.get("source_held") and is_internal(text):
         return ""
-    return re.sub(r"(?i)\\bBM[2-6]-P\\d{3}\\b", "", text).strip()
+    return re.sub(r"(?i)\bBM[2-6]-P\d{3}\b", "", text).strip()
 
 
 def public_lesson_identity(subject: str, row: dict) -> str:
