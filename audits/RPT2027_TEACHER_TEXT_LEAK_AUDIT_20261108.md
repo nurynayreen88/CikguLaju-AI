@@ -90,3 +90,22 @@ Selepas pemisahan laporan, QA 21 PDF utama mengeluarkan **21 fail, 21 terkesan, 
 **Semua kelompok PDF yang ditunjukkan di atas mempunyai 0 `read_errors` dalam run QA yang selesai.** Ujian keselamatan bagi fail rosak/folder kosong dan scanner fail-closed telah ditambah dalam staging. **PDF bersih guru belum dikeluarkan; signoff akademik masih wajib.**
 
 Kepentingan pengesanan: banyak padanan `DRAF SEMAKAN` berasal dari header/footer berulang, dan bahan Bahasa Arab masih memaparkan `belum dipadankan` kerana standard Arab belum disahkan. Frasa itu perlu diletakkan di metadata semakan admin, tetapi ia tidak boleh dipadam daripada dokumen untuk guru sehingga bahan yang terjejas benar-benar disahkan/diganti dengan kandungan tepat.
+
+## Pembetulan paparan guru dan kawalan penerbitan (8 Nov 2026)
+- `rpt_2027/common/teacher_display_projection.py` memisahkan catatan guru daripada metadata pembangun semasa render sahaja; rekod sumber, SK/SP rasmi, checksum dan ledger HOLD **tidak diubah**.
+- `rpt_2027/common/format_2026_layout_preview.py` kini tidak lagi memaparkan footer `DRAF SEMAKAN`, arahan sumber audit atau placeholder minggu `Belum ditentukan` dalam PDF pratayang. Nilai minggu sebenar dalam sumber tetap tidak direka.
+- Pemeriksaan PDF sebenar selepas pembetulan awal: 21 PDF PSV/Moral/RBT/Sejarah/PJPK = **0 padanan**, 20 PDF BM/PI/Arab/Muzik = **0 padanan**, 5 Matematik = **0**, 5 English = **0**, 5 Sains = **0**, semua tanpa ralat baca. Jumlah awal **56/56** lulus frasa pemeriksa tahap pertama.
+- Semakan visual berjaya mengesan **kelas kes tambahan yang pengesan awal terlepas**: pada PDF PJPK, catatan `Sumber: PJ456_2027_RPT` dan `Rujukan: Rujuk DSKP` berulang. Pemeriksaan bebas atas artifak pertama mengira 339 label `Sumber:` dan 163 `Rujukan: Rujuk DSKP` pada lima PDF PJPK. Pengguguran provenance ini kini dibuat pada lapisan paparan; butiran buku teks/PBD dikekalkan.
+- Pengesan ditambah untuk `INTERNAL_SOURCE_ID`, `UNHELPFUL_REFERENCE_DIRECTIVE` dan `HELD_REVIEW_ONLY`. Lima workflow binaan PDF menggunakan `--fail-on-findings` supaya output yang masih membawa bahasa pembangun **gagal QA**; PDF lama masih dilaporkan berasingan.
+- QA ujian pengekalan semantik meliputi SK/SP rasmi `Menulis draf` (mesti dikekalkan) supaya perkataan akademik `draf` **tidak** disalah baca sebagai status pembangun. Juga merangkumi BM Tahun 2 PdP 130/131 HOLD dan catatan PBD/aktiviti PJPK.
+- **Perhatian status:** ujian CI terakhir bagi pengesan diperluas dan pemeliharaan PBD sedang menunggu giliran Actions; **jangan klaim tahap kedua lulus 56/56** sebelum hasil akhir dibaca.
+
+## Masih tertahan (jangan samakan pembetulan ayat dengan kebenaran release)
+- **18 daripada 43 PDF sedia ada** masih membawa nota dalaman; belum di-overwrite atau diubah pada produksi.
+- Bahasa Arab: SK/SP penuh rasmi belum ditandatangani walaupun kod dan halaman DSKP diindeks.
+- Sains: konflik edisi DSKP/legacy dan padanan PdP–RPH masih kritikal.
+- Pendidikan Islam: enam sumber RPH/PdP tertahan, termasuk isu Tahun 6.
+- RBT: jadual minggu sebenar tidak boleh diisi secara tekaan.
+- Pengesahan kalendar, rujukan buku, keseragaman Word/PDF, dan muat turun Web/Telegram E2E masih prasyarat sebelum FULL READY.
+
+**Release gate:** PASS pemeriksaan teks sahaja != PASS akademik. PR kekal draft, tidak di-merge ke `main` atau di-deploy.
