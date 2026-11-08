@@ -198,34 +198,53 @@ def arabic_records(year):
     if indexed is None:
         raise ValueError("Missing Arabic DSKP source-page index for year")
     source_pages={e["sp_code"]:e["pdf_page"] for e in indexed["entries"]}
-    # Year2 original DSKP was inspected page-by-page. Only 18/19 source
-    # statements are safe as draft VISUAL CANDIDATES; SP 3.4.1 is held for
-    # a suspicious word-for-word duplicate against SP 3.3.1. None is an
-    # academic panel signoff, nor a release permission.
+    # Year2/3 original DSKP PDFs were read visually and locked to SHA + source
+    # page anchors. These are strictly DRAFT transcription CANDIDATES, never
+    # subject-panel-approved SK/SP or permission to publish teachers' RPT.
     visual_candidates={}
-    if year==2:
-        visual_path=ROOT/"audits/bahasa_arab_rpt2027_t2_19_sp_visual_statement_candidates_20261108.json"
-        visual=json.loads(visual_path.read_text(encoding="utf-8"))
+    if year in (2,3):
+        expected_visual={
+            2:(19,18,1,{"3.4.1"},
+               "audits/bahasa_arab_rpt2027_t2_19_sp_visual_statement_candidates_20261108.json"),
+            3:(23,20,3,{"2.3.1","2.3.2","2.3.3"},
+               "audits/bahasa_arab_rpt2027_t3_23_sp_visual_statement_candidates_20261108.json"),
+        }
+        count,display_count,held_count,held_codes,relative=expected_visual[year]
+        visual=json.loads((ROOT/relative).read_text(encoding="utf-8"))
         entries=visual.get("entries") or []
         summary=visual.get("summary") or {}
         visual_candidates={x["sp_code"]:x for x in entries}
+        actual_held={x["sp_code"] for x in entries
+                     if x.get("candidate_for_staging_display") is False}
         if (visual.get("status")!="VISUAL_TRANSCRIPTION_CANDIDATE_ONLY_NOT_ACADEMIC_FINAL"
             or visual.get("source_pdf_sha256")!=indexed["pdf_sha256"]
             or visual.get("source_url")!=indexed["source_url"]
-            or len(entries)!=19 or len(visual_candidates)!=19
+            or (year==3 and visual.get("source_pdf_pages")!=indexed["pdf_page_count"])
+            or len(entries)!=count or len(visual_candidates)!=count
             or set(visual_candidates)!=set(source_pages)
-            or summary.get("candidate_for_staging_display")!=18
-            or summary.get("held_source_conflict")!=1
+            or summary.get("unique_sp")!=count
+            or summary.get("visual_candidates")!=count
+            or summary.get("candidate_for_staging_display")!=display_count
+            or summary.get("held_source_conflict")!=held_count
             or summary.get("academic_panel_signoffs")!=0
+            or summary.get("sk_full_statement_signoffs")!=0
             or summary.get("rpt_release_ready") is not False
-            or sum(bool(x["candidate_for_staging_display"]) for x in entries)!=18
+            or actual_held!=held_codes
+            or sum(x["candidate_for_staging_display"] is True for x in entries)!=display_count
             or any(x["pdf_page"]!=source_pages[x["sp_code"]]
                    or x.get("academic_panel_signed_off") is not False
-                   or not x.get("inspected_rendered_page")
+                   or x.get("inspected_rendered_page") is not True
                    or not x.get("visual_transcription_candidate","").startswith("القدرة على ")
-                   for x in entries)
-            or visual_candidates["3.4.1"]["candidate_for_staging_display"] is not False):
-            raise ValueError("Year2 Arabic visual DSKP candidate evidence changed: fail closed")
+                   for x in entries)):
+            raise ValueError(f"Year{year} Arabic visual source evidence changed: fail closed")
+        if year==3:
+            # Publisher's 2.3.1-2.3.3 phrases duplicate syllable SP2.2,
+            # despite SK[2.3] reading words. Keep those RPT cells on HOLD.
+            for code,original in {"2.3.1":"2.2.1","2.3.2":"2.2.2",
+                                  "2.3.3":"2.2.3"}.items():
+                if (visual_candidates[code]["visual_transcription_candidate"]
+                    !=visual_candidates[original]["visual_transcription_candidate"]):
+                    raise ValueError("Year3 DSKP duplicated syllable text changed; re-audit source")
     source_pdf_url=indexed["source_url"]
     source_pdf_sha256=indexed["pdf_sha256"]
     source_page_count=indexed["pdf_pages"] if year==2 else indexed["pdf_page_count"]
@@ -256,9 +275,9 @@ def arabic_records(year):
         sp_code=left["sp"].strip()
         if sp_code not in source_pages:
             raise ValueError(f"Arabic T{year} PdP{n:03d}: SP has no source DSKP page")
-        # A visual DSKP statement *candidate* may appear only in staging
-        # after the source SHA and 19 code-to-page checks above; the academic
-        # release flag remains FALSE even for the 18 readable statements.
+        # Source-page and SHA-locked DSKP transcription candidate only.
+        # Held Year2/3 codes are never promoted or rewritten from context.
+        # A displayed visual candidate is NOT academic-release approval.
         candidate=visual_candidates.get(sp_code)
         use_visual=bool(candidate and candidate["candidate_for_staging_display"])
         draft_sp_display=(sp_code+" — "+candidate["visual_transcription_candidate"]
