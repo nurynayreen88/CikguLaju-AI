@@ -161,6 +161,9 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
         arabic_font, arabic_heavy = font, bold
 
 
+    # The cover is a locked original LTR teacher-profile template for ALL
+    # subjects; RTL applies only to the teaching table that follows.
+    table_part = False
     ink = colors.HexColor("#293944")
     line = colors.HexColor("#adb7ba")
     soft = colors.HexColor("#fff4bb")
@@ -176,7 +179,7 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
             else (bold if strong else font),
             fontSize=size, leading=leading, textColor=colors.HexColor(color),
             wordWrap="CJK", spaceBefore=0, spaceAfter=0,
-            alignment=1 if center else (2 if rtl_table else 0)
+            alignment=1 if center else (2 if rtl_table and table_part else 0)
         )
         printable = normalize_pdf_text(text)
         if any("\u0600" <= ch <= "\u08ff" for ch in printable):
@@ -293,6 +296,9 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
         # No headers, footers, labels, status or extra metadata on cover.
         pass
 
+    # All cover blocks are constructed in the original left-aligned
+    # profile form before table alignment switches to right for Arabic/Jawi.
+    table_part = True
     # The rightmost column in RTL is the first logical column
     # MINGGU -> UNIT/PdP -> SK -> SP -> CATATAN (read right to left).
     logical_headings = ("MINGGU / TARIKH", "UNIT / TAJUK / PDP",
