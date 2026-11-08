@@ -23,6 +23,7 @@ def main():
     entries = manifest["files"]
     assert len(entries) == 56 and manifest["status"] == "DRAF_USER_VISIBLE_NOT_ACADEMIC_FINAL"
     found = {}
+    examples = {}
     totals = Counter()
     for key, entry in sorted(entries.items()):
         path = ASSETS / entry["path"]
@@ -34,6 +35,13 @@ def main():
             for no, page in enumerate(pdf, 1):
                 text, _ = _page_chars(page)
                 matched = False
+                if len(examples.get(key, [])) < 3:
+                    for label in ("unverified_mapping", "before_ready", "developer_fabrication", "unverified_source"):
+                        probe = PROBES[label].search(text)
+                        if probe is not None:
+                            excerpt = text[max(0, probe.start() - 85): min(len(text), probe.end() + 85)]
+                            examples.setdefault(key, []).append({"page": no, "probe": label, "context": excerpt})
+                            break
                 for i, expr in enumerate(_NOTES):
                     amount = len(expr.findall(text))
                     if amount:
@@ -62,6 +70,7 @@ def main():
         "counts": dict(totals),
         "affected": found,
     }, ensure_ascii=False, sort_keys=True))
+    print("RPT2027_NOTE_CONTEXT_EXAMPLES=" + json.dumps(examples, ensure_ascii=False))
     if totals["unverified_mapping"] != totals["remove_mapping"]:
         print("WARNING_OTHER_PEMETAAN_VARIANTS_DETECTED")
     if totals["developer_fabrication"] != totals["remove_developer_note"]:
