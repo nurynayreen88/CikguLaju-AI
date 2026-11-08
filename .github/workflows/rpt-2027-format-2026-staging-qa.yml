@@ -154,13 +154,19 @@ jobs:
           python -m scripts.audit_rpt2027_teacher_text_leaks_20261108 \
             --teacher-output-only \
             --output staging/rpt_2027_seragam_2026/teacher_text_leak_report.json \
-            rpt_2027 staging/rpt_2027_seragam_2026/pdf
+            staging/rpt_2027_seragam_2026/pdf
+          # Existing packaged PDFs are reported separately from the 21 new previews.
+          python -m scripts.audit_rpt2027_teacher_text_leaks_20261108 \
+            --teacher-output-only \
+            --output staging/rpt_2027_seragam_2026/teacher_text_leak_existing_packaged_rpt.json \
+            rpt_2027
           # For the later FINAL READY release gate, rerun with --fail-on-findings.
       - uses: actions/upload-artifact@v4
         with:
           name: RPT2027-21-asal-dan-3-RBT-simulasi-DRAF
           path: |
             staging/rpt_2027_seragam_2026/teacher_text_leak_report.json
+            staging/rpt_2027_seragam_2026/teacher_text_leak_existing_packaged_rpt.json
             staging/rpt_2027_seragam_2026/pdf/*.pdf
             staging/rpt_2027_seragam_2026/pdf/*.png
             staging/rpt_2027_seragam_2026/audit_calendar_week_alignment.json
