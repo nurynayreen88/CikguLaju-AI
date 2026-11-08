@@ -105,5 +105,41 @@ class TestYear6FullDraft(unittest.TestCase):
         self.assertIn("belum disahkan",text)
         self.assertIn("DRAF/HOLD",text)
 
+    def test_three_specific_y6_lab_and_preservation_repairs(self):
+        yeast=BANK["3.1.4"]
+        self.assertIn("dua suhu",yeast["teacher1"])
+        self.assertIn("kuantiti yis",yeast["teacher1"])
+        self.assertIn("tanpa menyamakan gas",yeast["pupil1"])
+        self.assertIn("faktor air, udara, nutrien dan keasidan",yeast["teacher2"])
+        self.assertIn("tiga pemboleh ubah",yeast["pupil2"])
+        self.assertIn("air suam selamat",yeast["materials"])
+
+        friction=BANK["6.2.3"]
+        self.assertIn("neraca spring",friction["teacher1"])
+        self.assertIn("dua permukaan",friction["teacher1"])
+        self.assertIn("tiga ulangan",friction["pupil1"])
+        self.assertIn("dalam N",friction["pupil1"])
+        self.assertIn("jisim blok berlainan",friction["teacher2"])
+        self.assertIn("secara berasingan",friction["pupil2"])
+        self.assertIn("jisim",friction["pbd"])
+        self.assertIn("jenis permukaan",friction["pbd"])
+
+        food=BANK["8.2.3"]
+        self.assertIn("dua kaedah",food["teacher1"])
+        self.assertIn("epal yang sama",food["teacher1"])
+        self.assertIn("pengeringan",food["teacher1"])
+        self.assertIn("pendinginan",food["teacher1"])
+        self.assertIn("sampel",food["pupil1"])
+        self.assertIn("pemerhatian susulan",food["teacher2"])
+        self.assertIn("tanpa mereka hasil sesi pertama",food["pupil2"])
+        self.assertIn("pemerhatian susulan sebenar",food["pbd"])
+        self.assertIn("kendalian guru",food["materials"])
+
+        rows=get_y6_records()
+        self.assertEqual(len(rows),84)
+        self.assertEqual(len({r["pdp_code"] for r in rows}),84)
+        self.assertEqual({r["sp"] for r in rows},set(BANK))
+        self.assertTrue(all(r["status"]=="DRAF_HOLD" and r["textbook_pages"] is None for r in rows))
+
 if __name__=="__main__":
     unittest.main()
