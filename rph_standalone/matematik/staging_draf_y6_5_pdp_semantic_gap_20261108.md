@@ -12,7 +12,7 @@
 
 **Aktiviti 1 — Konsep nilai tempat (15 minit):** Guru menunjukkan 0.6 × 0.39 = 0.234, mengaitkan 6 × 39 = 234 dengan tiga tempat perpuluhan pada faktor darab. Murid membandingkan 0.6 × 0.39 dengan anggaran 0.6 × 0.4 = 0.24 bagi mengesan titik perpuluhan tersalah letak.
 
-**Aktiviti 2 — Kaedah lazim berpasangan (20 minit):** Murid menyelesaikan 1.2 × 0.35 = 0.42, 2.5 × 0.08 = 0.2 dan 0.7 × 0.125 = 0.0875 **sebagai contoh pengayaan di luar had hasil tiga tempat perpuluhan**; guru mengehadkan latihan sasaran DSKP kepada hasil maksimum tiga tempat, contohnya 0.8 × 0.125 = 0.1. Pasangan memeriksa anggaran dan membetulkan titik perpuluhan yang tersasar.
+**Aktiviti 2 — Kaedah lazim berpasangan (20 minit):** Murid menyelesaikan 1.2 × 0.35 = 0.42, 2.5 × 0.08 = 0.2 dan 0.8 × 0.125 = 0.1. Semua hasil dikekalkan pada **tidak melebihi tiga tempat perpuluhan** sebagaimana skop DSKP. Pasangan memeriksa anggaran dan membetulkan titik perpuluhan yang tersasar.
 
 **Aktiviti 3 — PBD individu (15 minit):** Lima soalan dengan jawapan hingga tiga tempat perpuluhan; guru merekod susunan langkah, tempat perpuluhan, ketepatan dan semakan anggaran. Murid yang memerlukan sokongan menggunakan petak seratus; pengayaan membandingkan dua kaedah.
 
