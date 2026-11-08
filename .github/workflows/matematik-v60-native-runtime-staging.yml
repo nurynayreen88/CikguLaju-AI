@@ -12,6 +12,7 @@ on:
       - "tests/test_matematik_v60_native_rows_20261108.py"
       - "tests/test_matematik_v60_native_coverage_20261108.py"
       - "tests/test_matematik_v60_crosswalk_20261108.py"
+      - "tests/test_matematik_v60_canonical_source_contract_20261108.py"
       - "tests/test_matematik_v60_private_sequence_20261108.py"
       - "tests/test_matematik_v60_web_telegram_state_20261108.py"
       - "rph_standalone/matematik/v60_source_loader.py"
@@ -46,6 +47,7 @@ jobs:
           python -m unittest discover -s tests -p "test_matematik_v60_native_rows_20261108.py" -v
           python -m unittest discover -s tests -p "test_matematik_v60_native_coverage_20261108.py" -v
           python -m unittest discover -s tests -p "test_matematik_v60_crosswalk_20261108.py" -v
+          python -m unittest discover -s tests -p "test_matematik_v60_canonical_source_contract_20261108.py" -v
           python -m unittest discover -s tests -p "test_matematik_v60_private_sequence_20261108.py" -v
           python -m unittest discover -s tests -p "test_matematik_v60_web_telegram_state_20261108.py" -v
 
