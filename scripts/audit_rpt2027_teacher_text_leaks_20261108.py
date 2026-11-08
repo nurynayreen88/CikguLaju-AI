@@ -76,9 +76,10 @@ def scan_file(path: Path) -> list[dict]:
     return findings
 
 
-def scan_paths(paths, teacher_output_only=False) -> dict:
+def scan_paths(paths, teacher_output_only=False, pdf_only=False) -> dict:
     files = set()
-    suffixes = {".pdf", ".html", ".htm"} if teacher_output_only else SUFFIXES
+    suffixes = ({".pdf"} if pdf_only else
+                {".pdf", ".html", ".htm"} if teacher_output_only else SUFFIXES)
     for path in map(Path, paths):
         if path.is_file() and path.suffix.lower() in suffixes:
             files.add(path)
@@ -102,11 +103,13 @@ def main(argv=None) -> int:
     parser.add_argument("paths", nargs="+", help="RPT files and/or directories")
     parser.add_argument("--teacher-output-only", action="store_true",
                         help="Scan rendered HTML/PDF, not source CSV")
+    parser.add_argument("--pdf-only", action="store_true",
+                        help="Audit only PDF files, excluding HTML source templates")
     parser.add_argument("--fail-on-findings", action="store_true",
                         help="Fail release gate on leaked notes or unreadable files")
     parser.add_argument("--output", help="Optional JSON report path")
     args = parser.parse_args(argv)
-    report = scan_paths(args.paths, args.teacher_output_only)
+    report = scan_paths(args.paths, args.teacher_output_only, args.pdf_only)
     payload = json.dumps(report, ensure_ascii=False, indent=2)
     if args.output:
         Path(args.output).write_text(payload + "\n", encoding="utf-8")
