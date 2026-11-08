@@ -34,9 +34,9 @@ def make_candidates(year: int, native_rows: list[dict]) -> dict:
     seen_numbers = defaultdict(set)
     for code, items in groups.items():
         for item in items:
-            no = item.get("source_sequence_no")
-            if isinstance(no, int) and no > 0:
-                seen_numbers[no].add(code)
+            no = str(item.get("source_sequence_no") or "").strip()
+            if no.isdecimal() and int(no) > 0:
+                seen_numbers[int(no)].add(code)
 
     results = []
     for code, items in groups.items():
