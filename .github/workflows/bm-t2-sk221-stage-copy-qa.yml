@@ -1,0 +1,36 @@
+name: BM Tahun 2 exact SK correction — staged copy only
+
+on:
+  push:
+    branches:
+      - staging/bm-t2-sk221-copy-repair-20261109
+    paths:
+      - 'tools/bm_t2_sk221_stage_patch_20261109.py'
+      - 'tools/bm_t2_sk221_stage_smoke_20261109.py'
+      - 'tests/test_bm_t2_sk221_stage_patch_20261109.py'
+      - '.github/workflows/bm-t2-sk221-stage-copy-qa.yml'
+  pull_request:
+    paths:
+      - 'tools/bm_t2_sk221_stage_patch_20261109.py'
+      - 'tools/bm_t2_sk221_stage_smoke_20261109.py'
+      - 'tests/test_bm_t2_sk221_stage_patch_20261109.py'
+      - '.github/workflows/bm-t2-sk221-stage-copy-qa.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  read-only-source-and-staged-copy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile stage-only source
+        run: python -m py_compile tools/bm_t2_sk221_stage_patch_20261109.py tools/bm_t2_sk221_stage_smoke_20261109.py
+      - name: Run eight non-destructive unit tests
+        run: python -m unittest -v tests.test_bm_t2_sk221_stage_patch_20261109
+      - name: True v26.00 master SHA and stage-copy verification
+        run: python -m tools.bm_t2_sk221_stage_smoke_20261109
