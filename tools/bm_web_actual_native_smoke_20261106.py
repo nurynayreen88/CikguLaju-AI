@@ -205,8 +205,9 @@ def main():
         print("BM source missing action families", missing_families, flush=True)
         assert checked["rendered"] == 229, "BM v26.00 source inventory shifted"
         assert checked["template_detected"] == 229
-        assert checked["template_refined"] == 228, "Generic BM RPH quality regressed"
-        assert checked["template_no_sp_family"] == 1, "Unexpected SP source ambiguity"
+        assert checked["template_refined"] == 229, "Generic BM RPH quality regressed"
+        assert checked["template_no_sp_family"] == 0, "Unexpected SP source ambiguity"
+        assert not missing_families, "Some BM SP action families unresolved"
         assert not errors, "Some real BM Web PdPs remain unverified"
 
     finally:
