@@ -1,0 +1,27 @@
+name: Matematik Tahun 3 curriculum-edition audit
+
+on:
+  pull_request:
+    paths:
+      - tools/rph_mathematics_year3_curriculum_audit_20261109.py
+      - tests/test_rph_mathematics_year3_curriculum_audit_20261109.py
+      - audits/matematik_t3_wang_dskp_edisi3_20261109.md
+      - .github/workflows/math-t3-wang-curriculum-qa-20261109.yml
+  push:
+    branches: [main]
+    paths:
+      - tools/rph_mathematics_year3_curriculum_audit_20261109.py
+      - tests/test_rph_mathematics_year3_curriculum_audit_20261109.py
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check source edition, pedagogy and timing
+        run: |
+          python -m py_compile tools/rph_mathematics_year3_curriculum_audit_20261109.py tests/test_rph_mathematics_year3_curriculum_audit_20261109.py
+          python -m unittest tests.test_rph_mathematics_year3_curriculum_audit_20261109 -v
