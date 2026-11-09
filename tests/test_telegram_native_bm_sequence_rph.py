@@ -84,12 +84,14 @@ class NativeBMBridgeTests(unittest.TestCase):
             conn.execute("""CREATE TABLE curriculum_standards (
                 year_label TEXT, subject TEXT, sk_code TEXT, sp_code TEXT,
                 sk_text TEXT, sp_text TEXT, verified INTEGER)""")
-            conn.execute("""INSERT INTO curriculum_standards VALUES (
-                'Tahun 2', 'Bahasa Melayu', '2.2', '2.2.1',
-                'Membaca, memahami, dan menaakul bahan grafik dan bukan grafik',
-                'Membaca, memahami dan mengenal pasti; (i) kosa kata '
-                '(ii) isi tersurat (iii) isi tersirat (iv) idea utama '
-                '(v) idea sampingan (vi) idea keseluruhan', 1)""")
+            conn.execute(
+                "INSERT INTO curriculum_standards VALUES (?,?,?,?,?,?,?)",
+                ("Tahun 2", "Bahasa Melayu", "2.2", "2.2.1",
+                 "Membaca, memahami, dan menaakul bahan grafik dan bukan grafik",
+                 "Membaca, memahami dan mengenal pasti; (i) kosa kata "
+                 "(ii) isi tersurat (iii) isi tersirat (iv) idea utama "
+                 "(v) idea sampingan (vi) idea keseluruhan", 1),
+            )
         return bm_sequence_token(2, "Kemasyarakatan", "5",
                                  "Hidup Berjiran", "Majlis Pengikat Kemesraan")
 
