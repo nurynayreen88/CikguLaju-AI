@@ -1,6 +1,7 @@
 """Native BM Word/PDF must use verified Telegram PdP sequence, not RPT row IDs."""
 import io
 import os
+import sqlite3
 import tempfile
 import unittest
 from pathlib import Path
@@ -70,6 +71,51 @@ class NativeBMBridgeTests(unittest.TestCase):
         self.assertEqual(s["textbook_ref"], "BT m/s 2–3")
         self.assertEqual(s["rph_date"], "06/11/2026")
         self.assertEqual(s["rph_class"], "2 Bestari")
+
+    def _add_mismapped_bm_t2_source(self):
+        with sqlite3.connect(self.db) as conn:
+            conn.execute("""INSERT INTO verified_pdp_sequence VALUES
+                (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""", (
+                20, "Tahun 2", "Bahasa Melayu", 10,
+                "Kemasyarakatan", "5", "Hidup Berjiran",
+                "Majlis Pengikat Kemesraan", "2.1", "2.2.1",
+                "SOURCE_VERIFIED", "BT m/s 32", "", "", 20
+            ))
+            conn.execute("""CREATE TABLE curriculum_standards (
+                year_label TEXT, subject TEXT, sk_code TEXT, sp_code TEXT,
+                sk_text TEXT, sp_text TEXT, verified INTEGER)""")
+            conn.execute("""INSERT INTO curriculum_standards VALUES (
+                'Tahun 2', 'Bahasa Melayu', '2.2', '2.2.1',
+                'Membaca, memahami, dan menaakul bahan grafik dan bukan grafik',
+                'Membaca, memahami dan mengenal pasti; (i) kosa kata '
+                '(ii) isi tersurat (iii) isi tersirat (iv) idea utama '
+                '(v) idea sampingan (vi) idea keseluruhan', 1)""")
+        return bm_sequence_token(2, "Kemasyarakatan", "5",
+                                 "Hidup Berjiran", "Majlis Pengikat Kemesraan")
+
+    def test_exact_t2_wrong_sk_is_corrected_from_verified_db_read_only(self):
+        token = self._add_mismapped_bm_t2_source()
+        state = _state(self.runtime, 2, "Hidup Berjiran", token, {
+            "class": "2 Bestari", "date": "2026-11-09",
+            "time": "08:00 - 09:00", "students": "30"
+        })
+        self.assertEqual(state["grouped_sk_codes"], ["2.2"])
+        self.assertEqual(state["grouped_sp_codes"], ["2.2.1"])
+        self.assertIn("idea keseluruhan",
+                      state["_bm_web_verified_standards"][0]["sp_text"])
+        with sqlite3.connect(self.db) as conn:
+            self.assertEqual(conn.execute(
+                "SELECT sk_code FROM verified_pdp_sequence WHERE id=20"
+            ).fetchone()[0], "2.1")
+
+    def test_t2_sk_mismatch_must_fail_closed_if_verified_proof_conflicts(self):
+        token = self._add_mismapped_bm_t2_source()
+        with sqlite3.connect(self.db) as conn:
+            conn.execute("""INSERT INTO curriculum_standards VALUES (
+                'Tahun 2','Bahasa Melayu','2.1','2.2.1',
+                'Conflicting SK','Conflicting statement',1)""")
+        with self.assertRaises(SourceUnavailable):
+            _select(self.runtime, 2, "Hidup Berjiran", token)
 
     def test_rejects_wrong_unit_token_and_inactive_master(self):
         with self.assertRaises(SourceUnavailable):
