@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-09",
+  "subject": "Bahasa Melayu",
+  "level": "Tahun 1",
+  "school_stream": "SK",
+  "curriculum": "KP2027",
+  "source_status": "FINAL_SUBJECT_DK_NOT_RETRIEVED",
+  "release_status": "DRAFT_HOLD_NOT_READY",
+  "source_audit": [
+    {
+      "name": "KPM KP2027 general announcement",
+      "url": "https://www.moe.gov.my/kurikulum-persekolahan-2027",
+      "role": "GENERAL_POLICY",
+      "result": "Framework material; not the complete final Bahasa Melayu Tahun 1 SK subject DK"
+    },
+    {
+      "name": "PPD Johor Bahru Bahasa Melayu Year 1 KP2027 training",
+      "url": "https://sites.google.com/moe-dl.edu.my/kpbmthn1jb2027/home",
+      "role": "TRAINING",
+      "result": "Workshop presentation material split into slot 1–2 and slot 3–8, SK and SJK both present; not evidence of final signed subject DK"
+    },
+    {
+      "name": "PPD Kuching Language Unit DSKP and KP2027 page",
+      "url": "https://sites.google.com/moe-dl.edu.my/ppdk-spb-bahasa/Unit-Bahasa/dskp",
+      "role": "SOURCE_LEAD",
+      "result": "Links to BPK KP2027 catalog but not a verified full subject DK in the accessible page"
+    },
+    {
+      "name": "BPK KP2027 repository lead",
+      "url": "https://bpk.moe.gov.my/menu-docman/252-kurikulum-persekolahan-2027-terkini",
+      "role": "UNRESOLVED_ACCESS",
+      "result": "Request timed out during 2026-11-09 verification; no source text or version could be checked"
+    },
+    {
+      "name": "Connected CikguLaju Drive index and Year 1 RPT working draft",
+      "role": "INTERNAL_WORKING_NOTES",
+      "result": "Existing internal indices, source leads and pending RPT only; no original complete BM SK Year 1 DK verified from these documents"
+    }
+  ],
+  "drafts": {
+    "bm_sk_training_candidates": 26,
+    "verified_against_final_dk": 0,
+    "approved_for_release": 0
+  },
+  "checks": {
+    "has_original_final_dk_pdf": false,
+    "original_final_dk_sha256": null,
+    "official_sk_sp_spi_transcribed": false,
+    "school_stream_separation_proven_in_final_dk": false,
+    "textbook_kp2027_pages_confirmed": false,
+    "ready_for_rph_word_pdf": false,
+    "ready_for_web": false,
+    "ready_for_telegram": false
+  },
+  "decision": "Keep 26 training-based examples only as editorial DRAFT. No KSSR-to-KP2027 substitution. No ready status, runtime DB import, Web or Telegram activation."
+}
