@@ -48,11 +48,13 @@ def split_numbered_steps(value):
     result = str(value or "").replace("\r\n", "\n").replace("\r", "\n")
     action = r"(?:Guru|Murid|Secara|Pasangan|Kumpulan|Setiap|Beberapa|Teacher|Pupils)\b"
     result = re.sub(
-        r"(?<=\S)[ \t]*(?=(?:[1-9]|1\d)\.\s*" + action + ")",
+        r"(?<=\S)[ \t]*(?=(?:[1-9]|1\d)[.)][ \t]*" + action + ")",
         "\n", result, flags=re.I,
     )
     result = re.sub(
-        r"(?<=\S)[ \t]*(?=(?:Aktiviti|Activity)\s+[1-9]\d*\s*[–—:-])",
+        r"(?<=\S)[ \t]*(?=(?:Aktiviti|Activity)[ \t]+[1-9]\d*"
+        r"(?:[ \t]*\([ \t]*\d{1,2}[ \t]*(?:minit|minutes?|mins?)[ \t]*\))?"
+        r"[ \t]*(?:[:：]|[–—-]))",
         "\n", result, flags=re.I,
     )
     return "\n".join(line.rstrip() for line in result.split("\n")).strip()
@@ -382,6 +384,23 @@ def _confirmed_families(state):
     return tuple(found[:2])
 
 
+
+# Headings explain the verified BM skill instead of repeating generic lessons.
+# Only the refinement's three generated headings change; lesson source, SK/SP
+# and teacher-authored activity paragraphs are not touched.
+_PHASE_HEADINGS = {
+    "mendengar": ("Dengar dan cam", "Respons terhadap ujaran", "PBD mendengar"),
+    "bertutur": ("Model pertuturan", "Interaksi berpasangan", "PBD pertuturan"),
+    "membaca": ("Baca dan cari bukti", "Fahami teks", "PBD pemahaman"),
+    "menulis": ("Rancang penulisan", "Bina dan semak", "PBD penulisan"),
+    "mencatat": ("Kenal pasti isi", "Catatan berpandu", "PBD catatan"),
+    "imlak": ("Dengar dan tulis", "Semak ejaan", "PBD imlak"),
+    "sunting": ("Kenal pasti kesalahan", "Sunting dan jelaskan", "PBD suntingan"),
+    "mekanis": ("Model tulisan", "Latihan menyalin", "PBD tulisan"),
+    "seni bahasa": ("Hayati karya", "Latihan persembahan", "PBD seni bahasa"),
+    "tatabahasa": ("Kenal bentuk bahasa", "Bina contoh", "PBD tatabahasa"),
+}
+
 def refine_web_bm_rows(state, rows):
     """BM Web only: retain good existing RPH, fix all numbered boundaries.
 
@@ -425,10 +444,13 @@ def refine_web_bm_rows(state, rows):
         "rangsangan yang sepadan dengan sumber dipilih.\n"
         "2. Murid menyatakan satu pemerhatian atau pengetahuan awal."
     )
+    first_labels = _PHASE_HEADINGS[families[0]]
+    second_labels = _PHASE_HEADINGS[families[1]] if secondary else first_labels
+    final_label = "PBD gabungan kemahiran" if secondary else first_labels[2]
     output["AKTIVITI UTAMA"] = "\n".join((
-        "Aktiviti 1 – Teliti dan model (15 minit)", "1. " + first,
-        "Aktiviti 2 – Latihan berpandu (20 minit)", "2. " + second,
-        "Aktiviti 3 – PBD individu (15 minit)", "3. " + third,
+        f"Aktiviti 1 – {first_labels[0]} (15 minit)", "1. " + first,
+        f"Aktiviti 2 – {second_labels[1]} (20 minit)", "2. " + second,
+        f"Aktiviti 3 – {final_label} (15 minit)", "3. " + third,
     ))
     output["PENUTUP"] = (
         "5 minit\n1. Murid menyatakan satu kemahiran bahasa yang dikuasai "
