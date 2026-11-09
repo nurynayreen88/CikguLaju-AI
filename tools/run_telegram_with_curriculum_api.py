@@ -696,3 +696,16 @@ except Exception as _sains_real_docs_smoke_error:
     SAINS_NATIVE_REAL_DOCS_SMOKE_RESULT = None
     print("CIKGULAJU_SAINS_NATIVE_REAL_DOCS_SMOKE_UNAVAILABLE",
           type(_sains_real_docs_smoke_error).__name__,flush=True)
+
+
+# Final Matematik SK presentation correction for native Telegram/Web Word/PDF.
+# The grouped curriculum source can repeat an SK code in both code and text;
+# remove only adjacent identical display prefixes (e.g. "4.4 4.4 Darab wang").
+# No SK/SP mapping, objectives, durations, downloads, credits or DB are changed.
+try:
+    from web.math_rph_sk_display_fix_20261110 import install as install_math_sk_display_fix
+    MATEMATIK_SK_DISPLAY_FIX_ACTIVE = bool(install_math_sk_display_fix(telegram_runtime))
+except Exception as _math_sk_display_exc:
+    MATEMATIK_SK_DISPLAY_FIX_ACTIVE = False
+    print("Matematik SK label formatting unavailable:",
+          type(_math_sk_display_exc).__name__, flush=True)
