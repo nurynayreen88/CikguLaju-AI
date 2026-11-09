@@ -28,6 +28,45 @@ MAX_FILE = 15 * 1024 * 1024
 TOKEN = re.compile(r"b[a-f0-9]{24}")
 
 
+
+def _correct_one_verified_bm_mapping(path, year, key, sk, sp):
+    """Correct a known v26.00 BM T2 SK mismatch at the Web read boundary.
+
+    The source sequence for 'Majlis Pengikat Kemesraan' labels SP 2.2.1 as
+    SK 2.1. The same v26.00 curriculum_standards table has verified SK 2.2
+    with complete SP wording, matching DSKP BM SK Tahun 2 (2017), p.31.
+    Only this exact selection is eligible; never mutate the SQLite master.
+    """
+    if not (
+        year == 2 and key[2] == "Hidup Berjiran"
+        and key[3] == "Majlis Pengikat Kemesraan"
+        and sk == "2.1" and sp == "2.2.1"
+    ):
+        return sk, None
+    import sqlite3
+    try:
+        with sqlite3.connect(
+            Path(path).resolve().as_uri() + "?mode=ro", uri=True
+        ) as conn:
+            conn.execute("PRAGMA query_only=ON")
+            values = conn.execute(
+                """SELECT DISTINCT sk_code, sk_text, sp_text
+                   FROM curriculum_standards
+                   WHERE year_label='Tahun 2' AND subject='Bahasa Melayu'
+                     AND sp_code='2.2.1' AND verified=1"""
+            ).fetchall()
+    except (sqlite3.Error, OSError) as exc:
+        raise SourceUnavailable("BM T2 SP 2.2.1 mapping proof unavailable") from exc
+    if (len(values) != 1 or str(values[0][0] or "").strip() != "2.2"
+            or not str(values[0][2] or "").strip()):
+        raise SourceUnavailable("BM T2 SP 2.2.1 SK mapping ambiguous")
+    return "2.2", {
+        "sk_text": str(values[0][1] or "").strip(),
+        "sp_text": str(values[0][2]).strip(),
+    }
+
+
+
 def _select(runtime, year, unit, token):
     if (type(year) is not int or year not in range(1, 7)
             or not isinstance(unit, str) or not 0 < len(unit.strip()) <= 300
@@ -58,9 +97,16 @@ def _select(runtime, year, unit, token):
         sk = str(r.get("sk_code") or "").strip()
         sp = str(r.get("sp_code") or "").strip()
         if sk and sp:
-            pairs.setdefault((sk, sp), {
-                "sk_code": sk, "sk_text": str(r.get("sk_text") or ""),
-                "sp_code": sp, "sp_text": str(r.get("sp_text") or ""),
+            corrected_sk, proof = _correct_one_verified_bm_mapping(
+                path, year, key, sk, sp
+            )
+            pairs.setdefault((corrected_sk, sp), {
+                "sk_code": corrected_sk,
+                "sk_text": (proof["sk_text"] if proof else
+                            str(r.get("sk_text") or "")),
+                "sp_code": sp,
+                "sp_text": (proof["sp_text"] if proof else
+                            str(r.get("sp_text") or "")),
             })
     if not pairs:
         raise SourceUnavailable("BM PdP lacks a verified SK/SP pair")
