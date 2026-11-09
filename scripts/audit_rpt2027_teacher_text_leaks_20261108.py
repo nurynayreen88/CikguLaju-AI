@@ -15,6 +15,9 @@ from pathlib import Path
 RULES = {
     "READY_INTERNAL": r"\b(?:PRA[\s-]?READY|PRE[\s-]?READY|SEBELUM\s+READY|NOT\s+READY)\b",
     "TEXTBOOK_MAPPING_REVIEW": r"pemetaan\s+buku\s+teks\s+belum\s+disah(?:kan)?",
+    "TEXTBOOK_MAPPING_LESSON_NOTE": r"pemetaan\s+buku\s+teks\s+untuk\s+Lesson\s+ini\s+belum\s+disahkan",
+    "DEVELOPER_NOTE_LABEL": r"catatan\s+(?:dalaman|pembangun)(?:\s+pembangun)?",
+    "ORIGINAL_SOURCE_BEFORE_READY": r"rujuk\s+naskhah\s+asal\s+sebelum\s+READY",
     "DEVELOPER_INSTRUCTION": r"rujuk\s+buku\s+dan\s+DSKP\s+sebelum\s+READY",
     "UNVERIFIED_REFERENCE": r"(?:buku\s+aktiviti|BA|halaman\s+(?:BT|buku\s+teks)|rujukan\s+buku\s+teks)\s+(?:belum\s+disah(?:kan)?|belum\s+sah)",
     "INTERNAL_CHECKPOINT": r"(?:DRAF\s+(?:TERKAWAL|SEMAK(?:AN)?|UNTUK\s+SEMAKAN)|STATUS\s+DRAF)",
