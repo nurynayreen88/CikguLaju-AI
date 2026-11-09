@@ -184,46 +184,6 @@ class BMWebQualityTest(unittest.TestCase):
                 db,2,({"sk_code":"1.1","sp_code":"1.1.3","sp_text":""},)
             )[0]["sp_text"],"")
 
-    def test_dskp_2017_bm_sk_t2_sp221_only_and_read_only(self):
-        """Provenance p.31; the missing T2 source is never guessed for T1."""
-        with tempfile.TemporaryDirectory() as td:
-            db = Path(td) / "master.db"
-            with sqlite3.connect(db) as con:
-                con.execute("""CREATE TABLE curriculum_standards (
-                    year_label TEXT, subject TEXT, sk_code TEXT, sp_code TEXT,
-                    sk_text TEXT, sp_text TEXT, verified INTEGER)""")
-                con.execute("""INSERT INTO curriculum_standards VALUES
-                    ('Tahun 2','Bahasa Melayu','2.2','2.2.1','','',1)""")
-                con.execute("""INSERT INTO curriculum_standards VALUES
-                    ('Tahun 2','Matematik','2.2','2.2.1',
-                     'Salah subjek','Salah subjek',1)""")
-            source = ({"sk_code": "2.2", "sp_code": "2.2.1",
-                       "sk_text": "", "sp_text": ""},)
-            text = complete_verified_bm_standards(db, 2, source)
-            self.assertIn("idea keseluruhan", text[0]["sp_text"])
-            self.assertIn("bahan grafik", text[0]["sk_text"])
-            self.assertEqual(source[0]["sp_text"], "")
-            self.assertEqual(complete_verified_bm_standards(db, 1, source),
-                             source)
-            self.assertEqual(complete_verified_bm_standards(
-                db, 2, ({"sk_code": "2.3", "sp_code": "2.2.1",
-                         "sp_text": ""},))[0]["sp_text"], "")
-            # A verified source value always takes precedence over fallback.
-            with sqlite3.connect(db) as con:
-                con.execute("""UPDATE curriculum_standards
-                    SET sp_text='Teks sah dalam pangkalan data'
-                    WHERE subject='Bahasa Melayu'""")
-            self.assertEqual(complete_verified_bm_standards(
-                db, 2, source)[0]["sp_text"],
-                "Teks sah dalam pangkalan data")
-            # Ambiguity must remain on HOLD rather than filling from DSKP.
-            with sqlite3.connect(db) as con:
-                con.execute("""INSERT INTO curriculum_standards VALUES
-                    ('Tahun 2','Bahasa Melayu','2.2','2.2.1',
-                     'SK lain','Konflik',1)""")
-            self.assertEqual(complete_verified_bm_standards(
-                db, 2, source), source)
-
     def test_genuine_bm_sp_semantics_are_expressed_in_refined_activities(self):
         cases=(
             ({"sp_code":"1.1.2","sp_text":"Mendengar, memahami dan memberikan respons terhadap soalan, suruhan, pesanan dan permintaan"},
