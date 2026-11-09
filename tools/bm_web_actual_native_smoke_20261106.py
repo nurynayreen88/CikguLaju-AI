@@ -39,11 +39,33 @@ def main():
         assert install(runtime)
         assert runtime._rph_rows is not base_rows
 
-        cases = (
+        cases = [
             (2, "Sahabat Karib", "Kenali Rakan"),
             (3, "Keluarga Cergas", "Suria Pagi"),
             (4, "Jiran Tetangga", "Program Kebun Komuniti"),
-        )
+        ]
+        # Also check real Word/PDF for Tahun 5 and 6. Select an eligible
+        # verified PdP from the current master, not a fabricated lesson name.
+        for year in (5, 6):
+            selected = None
+            for candidate in _bm_verified_structured_rows(db, year):
+                token = bm_sequence_token(
+                    year, candidate["theme"], candidate["unit_code"],
+                    candidate["unit_title"], candidate["topic"]
+                )
+                try:
+                    state = _state(runtime, year, candidate["unit_title"],
+                                   token, {"class": f"{year} Bestari",
+                                           "date": "2026-11-06",
+                                           "time": "08:00 - 09:00",
+                                           "students": "30"})
+                except Exception:
+                    continue
+                if _confirmed_families(state):
+                    selected = (year, candidate["unit_title"], candidate["topic"])
+                    break
+            assert selected is not None, ("No verified BM Word/PDF sample", year)
+            cases.append(selected)
         refined = 0
         for year, unit, topic in cases:
             candidates = [
