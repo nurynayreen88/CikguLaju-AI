@@ -60,28 +60,13 @@ def split_numbered_steps(value):
     return "\n".join(line.rstrip() for line in result.split("\n")).strip()
 
 
-# DSKP KSSR (Semakan 2017), Bahasa Melayu SK Tahun 2, printed p.31
-# (PDF p.43); cross-checked visually on 2026-11-09. This narrowly scoped
-# reference is for a source row whose SP 2.2.1 wording was missing in v26.00.
-# Do not generalize it to SJK, other years, or KP2027 Tahun 1.
-# https://bukuteksdigital.my/wp-content/uploads/2020/06/DSKP-KSSR-SEMAKAN-2017-BAHASA-MELAYU-TAHUN-2.pdf#page=43
-_DSKP_2017_BM_SK_T2_SP_221 = (
-    "Membaca, memahami dan mengenal pasti; "
-    "(i) kosa kata (ii) isi tersurat (iii) isi tersirat "
-    "(iv) idea utama (v) idea sampingan (vi) idea keseluruhan"
-)
-_DSKP_2017_BM_SK_T2_SK_22 = (
-    "Membaca, memahami, dan menaakul bahan grafik dan bukan grafik"
-)
-
-
 def complete_verified_bm_standards(database_path, year, standards):
-    """Fill empty SP text using exact verified v26.00 rows or cited DSKP.
+    """Backfill empty SP texts from the *same* verified v26.00 DB.
 
-    Preserve existing source wording. The only external fallback is official
-    BM SK Tahun 2 (2017) SP 2.2.1. Never transfer SP across years, subjects
-    or KP2027; fail closed on ambiguous DB wording or missing databases.
-    Everything is read-only.
+    Some verified_pdp_sequence rows retain codes but empty sk_text/sp_text.
+    Verify exact year/subject/SK/SP against curriculum_standards; never use
+    a different subject's same code or substitute an unverified paragraph.
+    Read-only and fail closed on missing/ambiguous authoritative wording.
     """
     import sqlite3
     from pathlib import Path
@@ -111,18 +96,6 @@ def complete_verified_bm_standards(database_path, year, standards):
                         entry["sp_text"] = str(rows[0][1]).strip()
                     if not str(entry.get("sk_text") or "").strip() and rows[0][0]:
                         entry["sk_text"] = str(rows[0][0]).strip()
-                    improved.append(entry)
-                elif (year == 2 and sk == "2.2" and sp == "2.2.1"
-                      and (not rows or (
-                          len(rows) == 1
-                          and not str(rows[0][1] or "").strip()))):
-                    # A single source-specific repair. Do not edit the DB or
-                    # silently fill a conflicting/ambiguous verified SP.
-                    entry = dict(item)
-                    if not str(entry.get("sp_text") or "").strip():
-                        entry["sp_text"] = _DSKP_2017_BM_SK_T2_SP_221
-                    if not str(entry.get("sk_text") or "").strip():
-                        entry["sk_text"] = _DSKP_2017_BM_SK_T2_SK_22
                     improved.append(entry)
                 else:
                     improved.append(item)
