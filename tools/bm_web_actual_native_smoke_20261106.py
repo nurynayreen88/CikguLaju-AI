@@ -203,6 +203,19 @@ def main():
         print("BM common initial headings", heading_counts.most_common(25), flush=True)
         print("BM source audit exceptions", errors[:25], "total", len(errors), flush=True)
         print("BM source missing action families", missing_families, flush=True)
+        if missing_families:
+            with sqlite3.connect(db.resolve().as_uri()+"?mode=ro", uri=True) as con:
+                print("BM DIAG T2 source 2.2.1", con.execute(
+                    "SELECT sk_code,sp_code,sk_text,sp_text,verification_status "
+                    "FROM verified_pdp_sequence WHERE year_label='Tahun 2' "
+                    "AND subject='Bahasa Melayu' AND sp_code='2.2.1'"
+                ).fetchall(), flush=True)
+                print("BM DIAG T2 curriculum 2.2.1", con.execute(
+                    "SELECT sk_code,sp_code,sk_text,sp_text,verified "
+                    "FROM curriculum_standards WHERE year_label='Tahun 2' "
+                    "AND subject='Bahasa Melayu' AND sp_code='2.2.1'"
+                ).fetchall(), flush=True)
+
         assert checked["rendered"] == 229, "BM v26.00 source inventory shifted"
         assert checked["template_detected"] == 229
         assert checked["template_refined"] == 229, "Generic BM RPH quality regressed"
