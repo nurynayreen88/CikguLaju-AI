@@ -43,6 +43,47 @@ class BMWebQualityTest(unittest.TestCase):
         self.assertIn("3.5", formatted)
         self.assertEqual(formatted, split_numbered_steps(formatted))
 
+    def test_parenthesis_numbering_and_timed_headings_keep_bm_codes(self):
+        original = (
+            "SP 1.1.1, BT m/s 2–3 dan 3.5 markah. "
+            "1) Guru membaca ayat. 2) Murid memberi respons. "
+            "Aktiviti 2 (15 minit): Latihan lisan. "
+            "3) Guru merekod pencapaian."
+        )
+        result = split_numbered_steps(original)
+        self.assertIn("SP 1.1.1, BT m/s 2–3 dan 3.5 markah.\n1) Guru", result)
+        self.assertIn("\n2) Murid memberi respons.", result)
+        self.assertIn("\nAktiviti 2 (15 minit): Latihan lisan.", result)
+        self.assertIn("\n3) Guru merekod", result)
+        self.assertEqual(result, split_numbered_steps(result))
+
+    def test_generated_activity_labels_follow_verified_bm_skills(self):
+        cases = (
+            ("Mendengar dan mengecam sebutan", "Dengar dan cam"),
+            ("Membaca dan memahami bahan bacaan", "Baca dan cari bukti"),
+            ("Menulis ayat berdasarkan bahan", "Rancang penulisan"),
+            ("Mengedit dan menyunting teks", "Kenal pasti kesalahan"),
+            ("Menggunakan kata nama dalam ayat", "Kenal bentuk bahasa"),
+        )
+        source = {
+            "AKTIVITI UTAMA": "Aktiviti 1 – Teroka dengan bahan manipulatif.",
+            "STANDARD PEMBELAJARAN": "Asal, tidak boleh ditukar",
+        }
+        for sp_text, heading in cases:
+            with self.subTest(sp_text=sp_text):
+                st = bm_state(details=({"sp_code": "1.1.1", "sp_text": sp_text},))
+                result = refine_web_bm_rows(st, source)
+                self.assertIn(f"Aktiviti 1 – {heading}", result["AKTIVITI UTAMA"])
+                self.assertEqual(result["STANDARD PEMBELAJARAN"],
+                                 source["STANDARD PEMBELAJARAN"])
+        mixed = bm_state(details=(
+            {"sp_code": "1.1.1", "sp_text": "Mendengar dan mengecam sebutan"},
+            {"sp_code": "1.2.1", "sp_text": "Bertutur dalam pelbagai situasi"},
+        ))
+        result = refine_web_bm_rows(mixed, source)
+        self.assertIn("Aktiviti 2 – Interaksi berpasangan", result["AKTIVITI UTAMA"])
+        self.assertIn("Aktiviti 3 – PBD gabungan kemahiran", result["AKTIVITI UTAMA"])
+
     def test_web_bm_generic_becomes_observable_listening_plan(self):
         original = {
             "AKTIVITI UTAMA":

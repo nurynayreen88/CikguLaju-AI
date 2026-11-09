@@ -39,11 +39,33 @@ def main():
         assert install(runtime)
         assert runtime._rph_rows is not base_rows
 
-        cases = (
+        cases = [
             (2, "Sahabat Karib", "Kenali Rakan"),
             (3, "Keluarga Cergas", "Suria Pagi"),
             (4, "Jiran Tetangga", "Program Kebun Komuniti"),
-        )
+        ]
+        # Also check real Word/PDF for Tahun 5 and 6. Select an eligible
+        # verified PdP from the current master, not a fabricated lesson name.
+        for year in (5, 6):
+            selected = None
+            for candidate in _bm_verified_structured_rows(db, year):
+                token = bm_sequence_token(
+                    year, candidate["theme"], candidate["unit_code"],
+                    candidate["unit_title"], candidate["topic"]
+                )
+                try:
+                    state = _state(runtime, year, candidate["unit_title"],
+                                   token, {"class": f"{year} Bestari",
+                                           "date": "2026-11-06",
+                                           "time": "08:00 - 09:00",
+                                           "students": "30"})
+                except Exception:
+                    continue
+                if _confirmed_families(state):
+                    selected = (year, candidate["unit_title"], candidate["topic"])
+                    break
+            assert selected is not None, ("No verified BM Word/PDF sample", year)
+            cases.append(selected)
         refined = 0
         for year, unit, topic in cases:
             candidates = [
@@ -181,10 +203,24 @@ def main():
         print("BM common initial headings", heading_counts.most_common(25), flush=True)
         print("BM source audit exceptions", errors[:25], "total", len(errors), flush=True)
         print("BM source missing action families", missing_families, flush=True)
+        if missing_families:
+            with sqlite3.connect(db.resolve().as_uri()+"?mode=ro", uri=True) as con:
+                print("BM DIAG T2 source 2.2.1", con.execute(
+                    "SELECT sk_code,sp_code,verification_status,unit_title,pdp_title "
+                    "FROM verified_pdp_sequence WHERE year_label='Tahun 2' "
+                    "AND subject='Bahasa Melayu' AND sp_code='2.2.1'"
+                ).fetchall(), flush=True)
+                print("BM DIAG T2 curriculum 2.2.1", con.execute(
+                    "SELECT sk_code,sp_code,sk_text,sp_text,verified "
+                    "FROM curriculum_standards WHERE year_label='Tahun 2' "
+                    "AND subject='Bahasa Melayu' AND sp_code='2.2.1'"
+                ).fetchall(), flush=True)
+
         assert checked["rendered"] == 229, "BM v26.00 source inventory shifted"
         assert checked["template_detected"] == 229
-        assert checked["template_refined"] == 228, "Generic BM RPH quality regressed"
-        assert checked["template_no_sp_family"] == 1, "Unexpected SP source ambiguity"
+        assert checked["template_refined"] == 229, "Generic BM RPH quality regressed"
+        assert checked["template_no_sp_family"] == 0, "Unexpected SP source ambiguity"
+        assert not missing_families, "Some BM SP action families unresolved"
         assert not errors, "Some real BM Web PdPs remain unverified"
 
     finally:
