@@ -206,7 +206,7 @@ def main():
         if missing_families:
             with sqlite3.connect(db.resolve().as_uri()+"?mode=ro", uri=True) as con:
                 print("BM DIAG T2 source 2.2.1", con.execute(
-                    "SELECT sk_code,sp_code,sk_text,sp_text,verification_status "
+                    "SELECT sk_code,sp_code,verification_status,unit_title,pdp_title "
                     "FROM verified_pdp_sequence WHERE year_label='Tahun 2' "
                     "AND subject='Bahasa Melayu' AND sp_code='2.2.1'"
                 ).fetchall(), flush=True)
