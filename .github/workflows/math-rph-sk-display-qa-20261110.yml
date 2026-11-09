@@ -1,0 +1,31 @@
+name: Matematik RPH duplicate SK display regression
+
+on:
+  pull_request:
+    paths:
+      - 'web/math_rph_sk_display_fix_20261110.py'
+      - 'tests/test_math_rph_sk_display_fix_20261110.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - '.github/workflows/math-rph-sk-display-qa-20261110.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'web/math_rph_sk_display_fix_20261110.py'
+      - 'tests/test_math_rph_sk_display_fix_20261110.py'
+
+permissions:
+  contents: read
+
+jobs:
+  math-sk-display:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax check without importing Telegram or touching user data
+        run: python -m py_compile web/math_rph_sk_display_fix_20261110.py tests/test_math_rph_sk_display_fix_20261110.py tools/run_telegram_with_curriculum_api.py
+      - name: Protect Math SK/SP, timing, class and other subjects
+        run: python -m unittest tests.test_math_rph_sk_display_fix_20261110 -v
