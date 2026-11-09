@@ -35,6 +35,8 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_kp2027_y1_training_alignment_20261107.py' -v
       - name: Audit 26 BM Tahun 1 SK training candidates and prevent false READY
         run: python -m unittest discover -s tests -p 'test_kp2027_year1_bm_sk_26_source_20261107.py' -v
+      - name: Verify Bahasa Melayu Tahun 1 original DK hold remains enforced
+        run: python -m unittest discover -s tests -p 'test_kp2027_year1_bm_sk_final_dk_hold_20261109.py' -v
       - name: Verify Matematik Tahun 1 DK search remains evidence-gated
         run: python -m unittest discover -s tests -p 'test_kp2027_year1_math_dk_search_20261108.py' -v
       - name: Verify 2027 Year 1 textbook leads stay unverified and non-public
