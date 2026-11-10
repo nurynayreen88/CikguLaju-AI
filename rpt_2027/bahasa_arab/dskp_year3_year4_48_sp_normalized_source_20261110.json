@@ -5,7 +5,7 @@
   "scope": "Only SP codes actually used in Year3/4 RPT source lessons; does not assert all DSKP codes included",
   "sources": {
     "3": {
-      "pdf_url": "https://drive.google.com/file/d/1VQcCrSyo-zmAndvAFv9pScQcLT-DRl00/view",
+      "pdf_url": "https://drive.google.com/file/d/1LlqBjz05t3M-M-kMC_FpZA0QSXdcUaZW/view",
       "pdf_sha256": "d09e12abade3a9bf02935fa2bdc888e0e134c7031cac8ef90a95992eb3f72826",
       "pdf_pages": 48,
       "sp_count": 23,
@@ -151,7 +151,7 @@
       ]
     },
     "4": {
-      "pdf_url": "https://drive.google.com/file/d/1J3hPVU5QhA3z1Mus8MEKntWI-83WpImj/view",
+      "pdf_url": "https://drive.google.com/file/d/1ljeuSbPI4vfu0moS_itg7ONaJ6mnKII2/view",
       "pdf_sha256": "f4b35b8cfb5cfb494596e015373be941dd1c6d19dbfda273f6ed7f6c790c0f8b",
       "pdf_pages": 54,
       "sp_count": 25,
@@ -309,5 +309,5 @@
       ]
     }
   },
-  "notes": "Transcribed from original source PDF code/page neighborhoods; Arabic word spacing and ة/ال conflations normalized for legibility. Source Year3 contains repeated-looking SP wording in 2.2 and 2.3 blocks; preserved rather than guessed. Full original PDF visual line-by-line approval and teacher RPH matching still required."
+  "notes": "Transcribed from original source PDF code/page neighborhoods; Arabic word spacing and ة/ال conflations normalized for legibility. Source Year3 contains repeated-looking SP wording in 2.2 and 2.3 blocks; preserved rather than guessed. Full original PDF visual line-by-line approval and teacher RPH matching still required. The copied Year3 and Year4 Drive files share the same SHA256 as the original separately indexed reference URLs; URLs stored here follow the immutable original audit ledger."
 }
