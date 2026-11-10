@@ -89,4 +89,6 @@
   tab.addEventListener("click", () => void load());
   // Called only after the regular Telegram Widget session has been checked.
   window.cikgulajuAdminInit = () => load();
+  // Cover the case where session verification finishes before this asset loads.
+  if (document.getElementById("workspace")?.hidden === false) void load();
 })();
