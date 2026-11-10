@@ -3,6 +3,11 @@ on:
   pull_request:
     paths:
       - 'scripts/prepare_rpt2027_week01_web_candidate_20261110.py'
+      - 'rpt_2027/common/week1_owner_plan_20261110.py'
+      - 'scripts/build_rpt_2027_remaining_four_subjects_staging.py'
+      - 'scripts/build_rpt_2027_standard_preview.py'
+      - 'scripts/build_rpt_2027_sains_342_actual_source_staging.py'
+      - 'tests/test_rpt2027_owner_week1_distribution_20261110.py'
       - '.github/workflows/rpt2027-week01-web-release-candidate-20261110.yml'
   workflow_dispatch:
 
