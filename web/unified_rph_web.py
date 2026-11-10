@@ -764,6 +764,27 @@ def create_blueprint():
                 "error": "Penjana RPH Telegram belum dapat dihubungi. Pilihan guru dikekalkan; cuba semula.",
                 "code": "TELEGRAM_RPH_GENERATOR_UNAVAILABLE"
             }), 503), None
+        # Matematik only: check clear defects in the REAL Telegram Word/PDF
+        # before either paid delivery or a free-trial credit debit. Never
+        # invent an objective, alter a source SK/SP, or change other subjects.
+        if (selected.get("source") == "telegram-native-pdp-sequence"
+                and selected.get("subject") == "MATH"):
+            from web.math_rph_delivery_quality_20261110 import (
+                MathQualityReadError, inspect_math_rph_document,
+            )
+            try:
+                quality = inspect_math_rph_document(
+                    selected, fmt, document.getvalue())
+            except MathQualityReadError:
+                return None, (jsonify({
+                    "error": "Kualiti fail RPH Matematik tidak dapat disemak. Kredit percubaan tidak digunakan.",
+                    "code": "MATH_RPH_QUALITY_CHECK_UNAVAILABLE",
+                }), 503), None
+            if quality["issues"]:
+                return None, (jsonify({
+                    "error": "RPH Matematik ini memerlukan pembetulan sebelum boleh dimuat turun. Kredit percubaan tidak digunakan.",
+                    "code": "MATH_RPH_QUALITY_REVIEW_REQUIRED",
+                }), 503), None
         if g.cikgulaju_rph_paid:
             return document, None, None
         from web.rph_delivery_quota import authorize_rendered_document
