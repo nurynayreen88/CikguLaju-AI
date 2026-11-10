@@ -82,6 +82,20 @@ class EnglishY3RoleLayoutTests(unittest.TestCase):
         self.assertEqual(out["TARIKH"], "13/11/2026")
         self.assertEqual(out["REFLEKSI"], "Teacher supplied")
 
+    def test_lesson14_assessment_does_not_leak_author_working_path(self):
+        # Preserve the actual pupil writing task but not the internal source
+        # filename or developer-only source label in teacher-facing Word/PDF.
+        out = renderer.apply(
+            {"subject": "English", "year": "Year 3", "lesson_no": 14}, {}
+        )
+        assessment = out["PENTAKSIRAN"]
+        self.assertIn("Pupils write three family sentences", assessment)
+        self.assertIn("Teacher: Check punctuation", assessment)
+        self.assertIn("Pupils: Submit two family-description sentences", assessment)
+        self.assertNotIn("CikguLaju original assessment", assessment)
+        self.assertNotIn("materials/lesson_", assessment)
+        self.assertNotIn("`", assessment)
+
     def test_unrelated_year_subject_and_invalid_lesson_fail_closed(self):
         for state in (
             {"subject": "English", "year": "Year 2", "lesson_no": 14},

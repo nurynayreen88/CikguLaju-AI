@@ -44,6 +44,8 @@ jobs:
                   text="\n".join(cell.text for table in doc.tables for row in table.rows for cell in row.cells)
                   assert "Teacher:" in text and "Pupils:" in text,(lesson,text[:900])
                   assert "NOT READY FOR RELEASE" not in text,(lesson,text[:900])
+                  assert "CikguLaju original assessment" not in text,(lesson,text[:900])
+                  assert "materials/lesson_014_writing_family_revision.md" not in text,(lesson,text[:900])
                   assert "**Teacher:**" not in text,(lesson,text[:900])
                   assert "PENTAKSIRAN" not in text or "Assessment" in text or "Pentaksiran" in text
                   assert len(doc.tables)>=3,(lesson,len(doc.tables))
@@ -69,6 +71,7 @@ jobs:
               text="\n".join(p.extract_text() or "" for p in pages)
               assert "Teacher:" in text and "Pupils:" in text,lesson
               assert "NOT READY FOR RELEASE" not in text,lesson
+              assert "CikguLaju original assessment" not in text,lesson
               print(f"PDF_Y3_L{lesson:03d} pages={len(pages)} bytes={path.stat().st_size}")
           PY
       - name: Keep offline PDF diagnostics for academic review
