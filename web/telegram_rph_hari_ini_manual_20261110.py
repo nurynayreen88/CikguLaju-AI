@@ -142,6 +142,13 @@ def install(rt):
             return generate_daily(cid)
         if code == "timetable":
             return timetable(cid)
+        # Old inline keyboards are still clickable in Telegram histories.
+        # Never allow earlier pre-audit daily generators to bypass this guard.
+        if (code.startswith(("todayrph272_", "todaybatch273_",
+                             "daily292_", "quicknext275_",
+                             "quickpick275_", "quickapply276_"))
+                or code == "todaybatch273_run"):
+            return rt._today_rpt_suggestions_v25292(cid)
         if code.startswith(("ttupload281_", "tt310_")):
             rt.state.setdefault(cid, {}).pop("waiting", None)
             return timetable(cid, "Fungsi baca/muat naik jadual waktu dimatikan.")
