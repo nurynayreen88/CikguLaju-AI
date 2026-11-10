@@ -153,6 +153,8 @@ function profileEditorData() {
     display_name: document.getElementById("profile-name").value.trim(),
     school_name: document.getElementById("profile-school").value.trim(),
     state_name: document.getElementById("profile-state").value,
+    district_name: document.getElementById("profile-district").value,
+    school_code: document.getElementById("profile-school-choice").value,
     class_names: teacherClassLines(),
   };
 }
@@ -317,6 +319,136 @@ async function teacherApi(url, method, body) {
   return data;
 }
 
+// All choices come from the server's authenticated Supabase school directory.
+// Keep existing free-text school profiles readable until their owner selects
+// an exact school code; never silently replace or erase an old school name.
+const schoolStateField=document.getElementById("profile-state");
+const schoolDistrictField=document.getElementById("profile-district");
+const schoolChoiceField=document.getElementById("profile-school-choice");
+const schoolNameField=document.getElementById("profile-school");
+const schoolPickerNotice=document.getElementById("profile-school-notice");
+let schoolPickerRequest=0;
+let schoolCatalogOptions=[];
+
+function populateSchoolSelect(control, placeholder, items, saved="") {
+  control.replaceChildren(new Option(placeholder,""));
+  for (const row of items) control.add(new Option(row.label,row.value));
+  if (saved && !items.some(row=>row.value===saved)) {
+    control.add(new Option(saved+" (rekod lama — semak semula)",saved));
+  }
+  control.value=saved||"";
+  control.disabled=items.length===0;
+}
+
+async function getSchoolChoices(kind, state="", district="") {
+  const params=new URLSearchParams({kind});
+  if(kind!=="states")params.set("state",state);
+  if(kind==="schools")params.set("district",district);
+  const data=await teacherApi("/api/web/teacher/school-directory?"+params,"GET");
+  if(!Array.isArray(data.items))throw new Error("Senarai sekolah Supabase tidak sah.");
+  return data.items;
+}
+
+async function populateSchoolDistricts(saved="", requestId=schoolPickerRequest) {
+  const state=schoolStateField.value;
+  populateSchoolSelect(schoolDistrictField,"Memuatkan PPD…",[]);
+  populateSchoolSelect(schoolChoiceField,"Pilih PPD dahulu",[]);
+  schoolCatalogOptions=[];
+  if(!state) {
+    populateSchoolSelect(schoolDistrictField,"Pilih negeri dahulu",[]);
+    return;
+  }
+  const items=await getSchoolChoices("districts",state);
+  if(requestId!==schoolPickerRequest||schoolStateField.value!==state)return;
+  populateSchoolSelect(schoolDistrictField,"Pilih PPD / daerah pendidikan",items,saved);
+}
+
+async function populateSchoolNames(saved="",requestId=schoolPickerRequest) {
+  const state=schoolStateField.value,district=schoolDistrictField.value;
+  populateSchoolSelect(schoolChoiceField,"Memuatkan sekolah…",[]);
+  schoolCatalogOptions=[];
+  if(!state||!district) {
+    populateSchoolSelect(schoolChoiceField,"Pilih PPD dahulu",[]);
+    return;
+  }
+  const items=await getSchoolChoices("schools",state,district);
+  if(requestId!==schoolPickerRequest||
+     schoolStateField.value!==state||schoolDistrictField.value!==district)return;
+  schoolCatalogOptions=items;
+  populateSchoolSelect(schoolChoiceField,"Pilih sekolah",items,saved);
+}
+
+async function loadSchoolPickerForProfile(profile) {
+  const seq=++schoolPickerRequest;
+  const savedState=profile.state_name||"";
+  const savedDistrict=profile.district_name||"";
+  const savedCode=profile.school_code||"";
+  schoolNameField.value=profile.school_name||"";
+  schoolStateField.value=savedState;
+  populateSchoolSelect(schoolDistrictField,"Pilih negeri dahulu",[]);
+  populateSchoolSelect(schoolChoiceField,"Pilih PPD dahulu",[]);
+  schoolPickerNotice.textContent="Memuatkan negeri, PPD dan sekolah dari Supabase…";
+  try {
+    const states=await getSchoolChoices("states");
+    if(seq!==schoolPickerRequest)return;
+    populateSchoolSelect(schoolStateField,"Pilih negeri",states,savedState);
+    if(savedState && savedDistrict) {
+      await populateSchoolDistricts(savedDistrict,seq);
+      await populateSchoolNames(savedCode,seq);
+    } else if(savedState) {
+      await populateSchoolDistricts("",seq);
+    }
+    if(seq!==schoolPickerRequest)return;
+    schoolPickerNotice.textContent=savedCode
+      ? "Sekolah dipadankan melalui kod rasmi. Rujukan direktori Jun 2022."
+      : savedState && profile.school_name
+      ? "Nama sekolah lama dikekalkan. Pilih PPD dan sekolah untuk melengkapkan padanan rasmi."
+      : "Pilih Negeri → PPD → Sekolah. Nama penuh akan diisi automatik (rujukan Jun 2022).";
+  } catch(err) {
+    if(seq!==schoolPickerRequest)return;
+    // Account and timetable still work; do not wipe school data during outages.
+    if(savedState && ![...schoolStateField.options].some(o=>o.value===savedState))
+      schoolStateField.add(new Option(savedState,savedState));
+    schoolStateField.value=savedState;
+    schoolNameField.value=profile.school_name||"";
+    schoolPickerNotice.textContent="Direktori sekolah tidak tersedia. Maklumat lama dikekalkan; cuba Refresh Profil.";
+  }
+}
+
+schoolStateField.addEventListener("change",async()=>{
+  const seq=++schoolPickerRequest;
+  schoolNameField.value="";
+  schoolPickerNotice.textContent="Memuatkan PPD negeri yang dipilih…";
+  try {
+    await populateSchoolDistricts("",seq);
+    if(seq===schoolPickerRequest)
+      schoolPickerNotice.textContent="Pilih PPD, kemudian sekolah.";
+  } catch(err) {
+    if(seq===schoolPickerRequest)
+      schoolPickerNotice.textContent="PPD tidak dapat dimuatkan. Maklumat belum disimpan.";
+  }
+});
+schoolDistrictField.addEventListener("change",async()=>{
+  const seq=++schoolPickerRequest;
+  schoolNameField.value="";
+  schoolPickerNotice.textContent="Memuatkan sekolah PPD yang dipilih…";
+  try {
+    await populateSchoolNames("",seq);
+    if(seq===schoolPickerRequest)
+      schoolPickerNotice.textContent="Pilih sekolah untuk mengisi nama penuh.";
+  } catch(err) {
+    if(seq===schoolPickerRequest)
+      schoolPickerNotice.textContent="Senarai sekolah tidak dapat dimuatkan. Maklumat belum disimpan.";
+  }
+});
+schoolChoiceField.addEventListener("change",()=>{
+  const chosen=schoolCatalogOptions.find(row=>row.value===schoolChoiceField.value);
+  schoolNameField.value=chosen?.label||"";
+  schoolPickerNotice.textContent=chosen
+    ? "Nama rasmi sekolah diisi automatik; tekan Simpan Profil untuk menyimpannya di Supabase."
+    : "Pilih sekolah daripada senarai.";
+});
+
 async function loadTeacherProfile() {
   teacherProfileState.loaded=false;
   setTeacherProfileButtons(false);
@@ -328,8 +460,7 @@ async function loadTeacherProfile() {
        || !Array.isArray(result.timetable.entries))throw new Error("Data profil tidak sah.");
     const profile=result.profile, timetable=result.timetable;
     document.getElementById("profile-name").value=profile.display_name || "Cikgu";
-    document.getElementById("profile-school").value=profile.school_name || "";
-    document.getElementById("profile-state").value=profile.state_name || "";
+    await loadSchoolPickerForProfile(profile);
     document.getElementById("profile-classes").value=profile.class_names.join("\n");
     setTeacherIdentity(profile);
     void loadSchoolLogo();
@@ -358,13 +489,8 @@ profileForm.addEventListener("submit", async event => {
     profileMessage.textContent="Maksimum 25 kelas. Sila kurangkan senarai.";
     return;
   }
-  const body={
-    display_name:document.getElementById("profile-name").value.trim(),
-    school_name:document.getElementById("profile-school").value.trim(),
-    state_name:document.getElementById("profile-state").value,
-    class_names,
-    version:teacherProfileState.profileVersion,
-  };
+  const body={...profileEditorData(),class_names,
+    version:teacherProfileState.profileVersion};
   profileSaveButton.disabled=true;
   profileMessage.textContent="Menyimpan maklumat guru…";
   try {
