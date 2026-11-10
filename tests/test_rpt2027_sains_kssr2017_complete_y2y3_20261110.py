@@ -56,6 +56,8 @@ class SourceCompleteSainsY2Y3(unittest.TestCase):
                 self.assertNotIn("M06",{x["week"] for x in rows})
                 for row in rows:
                     self.assertFalse(row["academic_release_approved"])
+                    self.assertNotIn("Padankan muka surat",row["note"])
+                    self.assertIn("PBD: rekod evidens",row["note"])
                     self.assertFalse(row["official_sp_source_visual_signoff"])
                     self.assertFalse(row["rph_pdp_crosswalk_verified"])
                     self.assertEqual((row["a_start"],row["a_end"]),
