@@ -4,6 +4,9 @@ on:
   pull_request:
     paths:
       - 'web/math_rph_sk_display_fix_20261110.py'
+      - 'web/math_rph_delivery_quality_20261110.py'
+      - 'web/telegram_verified_sequence_rph_bridge.py'
+      - 'tests/test_telegram_math_native_quality_20261110.py'
       - 'tests/test_math_rph_sk_display_fix_20261110.py'
       - 'tools/run_telegram_with_curriculum_api.py'
       - '.github/workflows/math-rph-sk-display-qa-20261110.yml'
@@ -19,13 +22,17 @@ permissions:
 jobs:
   math-sk-display:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Install same document parsers as Telegram production requirements
+        run: python -m pip install "flask==3.1.3" "python-docx==1.1.2" "pypdf==5.1.0" "reportlab==4.2.5"
       - name: Syntax check without importing Telegram or touching user data
-        run: python -m py_compile web/math_rph_sk_display_fix_20261110.py tests/test_math_rph_sk_display_fix_20261110.py tools/run_telegram_with_curriculum_api.py
+        run: python -m py_compile web/math_rph_sk_display_fix_20261110.py web/math_rph_delivery_quality_20261110.py web/telegram_verified_sequence_rph_bridge.py tests/test_math_rph_sk_display_fix_20261110.py tests/test_telegram_math_native_quality_20261110.py tools/run_telegram_with_curriculum_api.py
       - name: Protect Math SK/SP, timing, class and other subjects
         run: python -m unittest tests.test_math_rph_sk_display_fix_20261110 -v
+      - name: Verify private Math Word/PDF quality hold before Web trial debit
+        run: python -m unittest tests.test_telegram_math_native_quality_20261110 -v
