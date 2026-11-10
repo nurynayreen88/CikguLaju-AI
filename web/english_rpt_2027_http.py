@@ -1,4 +1,4 @@
-"""Authenticated, read-only RPT English 2027 PDF delivery for Web staging.
+"""Authenticated, read-only RPT English 2027 PDF delivery for Web.
 
 Loads the exact same Git PDF blobs as Telegram; no generation, DB writes,
 credit decrements, or external redirects. This module does not affect RPH.
@@ -73,28 +73,34 @@ def create_english_rpt_blueprint(root=ROOT):
         if error is not None:
             return error
         return jsonify({"years": [2, 3, 4, 5, 6], "format": "pdf",
-                        "allowed": _has_paid_access(account),
-                        "note": "RPT ialah akses berbayar; 10 janaan RPH percuma tidak digunakan."})
+                        "allowed": True, "personalization_allowed": _has_paid_access(account),
+                        "note": "RPT percuma untuk semua pengguna log masuk; cetakan nama dan logo memerlukan akses berbayar aktif."})
 
     @bp.get("/api/rpt/2027/english/<int:year>.pdf")
     def download(year):
         account, error = _account()
         if error is not None:
             return error
-        if not _has_paid_access(account):
-            return jsonify({"error": "RPT 2027 requires an active paid account or confirmed Rakan Pembangun"}), 403
         if year not in YEARS:
             return jsonify({"error": "RPT English year unavailable"}), 404
         path = pdf_path(root, year)
         if not path.is_file():
             return jsonify({"error": "Verified RPT PDF not present on Web service"}), 503
-        from web.rpt_school_cover import for_download
-        from web.teacher_profile_store import ProfileUnavailable
-        try:
-            document = for_download(account, path, "english", year)
-        except ProfileUnavailable:
-            return jsonify({"error": "RPT dengan identiti sekolah belum dapat disediakan. Sila cuba semula."}), 503
-        return send_file(document, mimetype="application/pdf", as_attachment=True,
-                         download_name=path.name, conditional=False)
+        paid_cover = _has_paid_access(account)
+        if paid_cover:
+            from web.rpt_school_cover import for_download
+            from web.teacher_profile_store import ProfileUnavailable
+            try:
+                document = for_download(account, path, "english", year)
+            except ProfileUnavailable:
+                return jsonify({"error": "RPT dengan identiti sekolah belum dapat disediakan. Sila cuba semula."}), 503
+        else:
+            # Preserve free/expired users' saved profile without placing it in
+            # their PDF, even if the teacher has already uploaded a logo.
+            document = path
+        response = send_file(document, mimetype="application/pdf", as_attachment=True,
+                             download_name=path.name, conditional=False)
+        response.headers["X-RPT-Personalization-Allowed"] = "1" if paid_cover else "0"
+        return response
 
     return bp
