@@ -65,6 +65,7 @@ class MathQualityReadOnlyTests(unittest.TestCase):
         for fmt in ("word", "pdf"):
             with self.subTest(fmt=fmt):
                 source = sample(fmt, bad=True)
+                original_bytes = bytes(source)
                 report = inspect_math_rph_document(SLOT, fmt, source)
                 self.assertEqual(set(report["issues"]), {
                     "GENERIC_OBJECTIVE", "DUPLICATE_SK_DISPLAY",
@@ -73,7 +74,7 @@ class MathQualityReadOnlyTests(unittest.TestCase):
                 self.assertEqual(report["slot_minutes"], 60)
                 self.assertEqual(report["phase_minutes"], 65)
                 self.assertEqual(report["explicit_phase_count"], 6)
-                self.assertEqual(source, sample(fmt, bad=True))
+                self.assertEqual(source, original_bytes)
 
     def test_complete_sixty_minute_plan_is_not_blocked(self):
         for fmt in ("word", "pdf"):
