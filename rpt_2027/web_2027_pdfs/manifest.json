@@ -7,40 +7,40 @@
   "files": {
     "bahasa_arab:2": {
       "path": "bahasa_arab/tahun_2.pdf",
-      "sha256": "d70b68f65ae16698609b6fda03e2b23a5540cd43fe509e343901e3dcb0f470a2",
-      "bytes": 131628,
+      "sha256": "96c1a32737cdc4e5483c740a45acc1dd7e0ff4562b2d1a7e46be6478230e0a41",
+      "bytes": 109951,
       "pages": 12,
       "status": "DRAF",
       "source_stage": "ARABIC_Y2_Y6_117_SOURCE_SP_VISUAL_CANDIDATES_NOT_ACADEMIC_FINAL_20261108"
     },
     "bahasa_arab:3": {
       "path": "bahasa_arab/tahun_3.pdf",
-      "sha256": "54cfc5affec80572422798fc038dca762518fee8f76e9a026403fe9c32d63b0a",
-      "bytes": 130115,
+      "sha256": "65fa01568e6a36c9e5f24067d4b4ddee5a210fadb1fa0ec256ebecabf8cc1a6c",
+      "bytes": 108596,
       "pages": 12,
       "status": "DRAF",
       "source_stage": "ARABIC_Y2_Y6_117_SOURCE_SP_VISUAL_CANDIDATES_NOT_ACADEMIC_FINAL_20261108"
     },
     "bahasa_arab:4": {
       "path": "bahasa_arab/tahun_4.pdf",
-      "sha256": "b6853eb2d0b608367a2db6a2c5a87c665921c3c92de0d6dd3399ff6080ae804d",
-      "bytes": 130593,
+      "sha256": "df8f430d94ebe4ea4e2688bfbb6dba31a0e6d5f977515cbc73c0da324767d708",
+      "bytes": 108306,
       "pages": 12,
       "status": "DRAF",
       "source_stage": "ARABIC_Y2_Y6_117_SOURCE_SP_VISUAL_CANDIDATES_NOT_ACADEMIC_FINAL_20261108"
     },
     "bahasa_arab:5": {
       "path": "bahasa_arab/tahun_5.pdf",
-      "sha256": "984ea11b2de900bdbfa0d60c7c26c35a83a8fe27a9fc1b338aa823b1cd1be26e",
-      "bytes": 132521,
+      "sha256": "9ae50eb552fae0203a80ce36ad5188078a6598dc14a85d9014c44a8eb7e6a660",
+      "bytes": 110047,
       "pages": 12,
       "status": "DRAF",
       "source_stage": "ARABIC_Y2_Y6_117_SOURCE_SP_VISUAL_CANDIDATES_NOT_ACADEMIC_FINAL_20261108"
     },
     "bahasa_arab:6": {
       "path": "bahasa_arab/tahun_6.pdf",
-      "sha256": "1e37e62d9c3fa5cb17a83078032b3f5114d8edfd995ad847aba0dd70347637db",
-      "bytes": 133020,
+      "sha256": "d06ea559bbec3a1a411243bc514ab0ea511ec7b96386d3f96d3512fd726758a0",
+      "bytes": 110355,
       "pages": 12,
       "status": "DRAF",
       "source_stage": "ARABIC_Y2_Y6_117_SOURCE_SP_VISUAL_CANDIDATES_NOT_ACADEMIC_FINAL_20261108"
@@ -207,8 +207,8 @@
     },
     "pendidikan_islam:2": {
       "path": "pendidikan_islam/tahun_2.pdf",
-      "sha256": "08535ffafebf83bec343e8fd5f9f5d5e093e950e4e5f95b4909e4bb2f684e448",
-      "bytes": 223598,
+      "sha256": "fead7a040ca0277d5caa5339f7c02fa5d8e4a33dc7314f3458b372453c832ecf",
+      "bytes": 194406,
       "pages": 39,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
@@ -287,40 +287,40 @@
     },
     "pjpk:2": {
       "path": "pjpk/tahun_2.pdf",
-      "sha256": "22ef95e63561b2b42ef8a72cd0fd725211e6c936045e80fe4616ae03fb44a339",
-      "bytes": 104519,
+      "sha256": "a1bdcce1d906fe90df9d48a82e6f9f81afd26afb98e2427dd2ce476f95059a2c",
+      "bytes": 98405,
       "pages": 27,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "pjpk:3": {
       "path": "pjpk/tahun_3.pdf",
-      "sha256": "69c91ae22fc27ee7cde9665406e40ffdffde5f9a23ab750ef2d49e45a500fa36",
-      "bytes": 126923,
+      "sha256": "a3699414e3cdd1a7dd2b16a549efb4642b00564f19a4dbd7f63d8ff2df910bfe",
+      "bytes": 118869,
       "pages": 34,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "pjpk:4": {
       "path": "pjpk/tahun_4.pdf",
-      "sha256": "21fe5806a68c550e8007923a73660b1ddaca425fe26658d973471bb4bb686f90",
-      "bytes": 103793,
+      "sha256": "5f8b3f9350ed14f5b6e230f550a8e22d9592ee593963c469601e54be7ac46ca3",
+      "bytes": 98522,
       "pages": 26,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "pjpk:5": {
       "path": "pjpk/tahun_5.pdf",
-      "sha256": "4e65cb3392b9a1f7389ae8da107c1f6cc8383e4dc318c94a845d3cd11ada1ea4",
-      "bytes": 95519,
+      "sha256": "37a24236a5e44ea8229be6046c7b06269a25fdca2126705ea9ce9b2a87948019",
+      "bytes": 90995,
       "pages": 22,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "pjpk:6": {
       "path": "pjpk/tahun_6.pdf",
-      "sha256": "85902e4c4c3e99d8ed68b84e7f54c78791c5140b5829a29ff67eee0f1ddbc90d",
-      "bytes": 103382,
+      "sha256": "a510844e7c1404b03fc95d9011bbaf4793dd4d56710b7c7af865c524a69f4ade",
+      "bytes": 98495,
       "pages": 26,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
@@ -431,24 +431,24 @@
     },
     "sejarah:4": {
       "path": "sejarah/tahun_4.pdf",
-      "sha256": "737ba2f4a6ea47767aacd33e70fb4dee79bece9060cac5d2ddd0a45d9808be6f",
-      "bytes": 62658,
+      "sha256": "b02475784a2611a730b64c825aeae8c437b22c09ad0c8bd458e0fdcba2ed2742",
+      "bytes": 60766,
       "pages": 8,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "sejarah:5": {
       "path": "sejarah/tahun_5.pdf",
-      "sha256": "eee0dcf86b72231b15370f25c0eb0b10e49d39cb3658651381e1fba72c8dce88",
-      "bytes": 62963,
+      "sha256": "70dc0c6d2e22ab80486ba51c9fbac1c0548d82d062c05ab9294b4afde1a58519",
+      "bytes": 60920,
       "pages": 8,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "sejarah:6": {
       "path": "sejarah/tahun_6.pdf",
-      "sha256": "57ec1ec7271605d4aaf81a68b558a30f34bd124b542a482665880a4f012bc329",
-      "bytes": 62245,
+      "sha256": "c4acfae098d482be802d9432985263da71ba302dfd39eeb6f560e18c940532b7",
+      "bytes": 60278,
       "pages": 8,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
