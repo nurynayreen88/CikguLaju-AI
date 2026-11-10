@@ -446,7 +446,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <section id="view-rpt" class="app-view" aria-labelledby="rpt2027-heading" hidden>
 <section id="rpt2027-panel" aria-labelledby="rpt2027-heading">
  <h3 id="rpt2027-heading">📅 RPT 2027 — Semua Subjek</h3>
- <p>Semua RPT yang tersedia dipaparkan di bawah mengikut subjek dan tahun. <strong>Sila semak padanan SK/SP, buku teks dan takwim sekolah sebelum digunakan.</strong> Muat turun adalah untuk Rakan Pembangun atau langganan aktif; 10 janaan RPH percuma tidak dipotong. Semasa muat turun, ruang kosong <strong>pada muka depan asal</strong> diisi dengan logo sekolah, nama sekolah dan nama guru daripada Profil Guru. <strong>Tiada muka depan atau halaman tambahan.</strong> <strong>Tahun 1 KP2027 boleh dilihat, tetapi muat turun belum dibuka.</strong></p>
+ <p>Semua RPT yang tersedia dipaparkan di bawah mengikut subjek dan tahun. <strong>Sila semak padanan SK/SP, buku teks dan takwim sekolah sebelum digunakan.</strong> Muat turun RPT adalah <strong>percuma untuk semua pengguna berdaftar</strong> dan tidak memotong 10 janaan RPH percuma. Hanya <strong>Rakan Pembangun atau langganan aktif</strong> mendapat muka depan yang dicetak bersama logo sekolah, nama sekolah dan nama guru daripada Profil Guru. Pengguna biasa atau langganan tamat masih boleh menyimpan maklumat profil, tetapi maklumat itu <strong>tidak dicetak</strong>. Tiada muka depan atau halaman tambahan. <strong>Tahun 1 KP2027 boleh dilihat, tetapi muat turun belum dibuka.</strong></p>
  <p id="rpt-catalog-summary" class="rpt-catalog-summary" role="status">Memuatkan semua RPT 2027…</p>
  <div id="rpt-all-list" class="rpt-all-list" aria-label="Senarai RPT 2027 mengikut subjek"></div>
  <h4>Atau pilih terus mengikut subjek dan tahun</h4>
@@ -455,9 +455,9 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
  <label for="rpt-year">Tahun RPT</label>
  <select id="rpt-year" disabled><option value="">Pilih Subjek dahulu</option></select>
  <button id="rpt-download" type="button" disabled>Muat turun RPT 2027 (PDF)</button>
- <a id="rpt-download-mobile" href="#" target="_blank" rel="noopener" aria-label="Buka RPT 2027 PDF bersama profil sekolah pada tab baharu" hidden>📥 Muat Turun RPT 2027 (PDF)</a>
+ <a id="rpt-download-mobile" href="#" target="_blank" rel="noopener" aria-label="Muat turun RPT 2027 pada tab baharu" hidden>📥 Muat Turun RPT 2027 (PDF)</a>
  <p id="rpt-status" class="notice" role="status"></p>
- <p class="notice rpt-phone-help">Pada telefon, PDF dengan ruang muka depan asal yang telah diisi akan dimuat turun. Jika logo atau nama belum disimpan, ruang tersebut dikekalkan kosong; lengkapkan dalam Profil Guru.</p>
+ <p class="notice rpt-phone-help">Pada telefon, RPT percuma dimuat turun tanpa nama dan logo. Cetakan berprofil hanya untuk Rakan Pembangun atau langganan aktif. Maklumat profil dan logo yang disimpan tidak dipadamkan apabila langganan tamat.</p>
 </section></section>
 <section id="view-account" class="app-view" aria-labelledby="view-account-heading" hidden>
 <h2 id="view-account-heading">Profil Guru</h2>
@@ -478,7 +478,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   </div>
   <section class="school-logo-card" aria-labelledby="school-logo-heading">
     <div class="school-logo-preview"><img id="school-logo-preview" alt="Logo sekolah tersimpan" hidden><span id="school-logo-placeholder">LOGO<br>SEKOLAH</span></div>
-    <div class="school-logo-content"><h4 id="school-logo-heading">Logo Sekolah</h4><p>Tambahkan logo sekolah untuk dimasukkan secara automatik bersama nama sekolah pada muka depan RPT yang dimuat turun.</p>
+    <div class="school-logo-content"><h4 id="school-logo-heading">Logo Sekolah</h4><p>Simpan logo sekolah dalam profil. Logo dan nama sekolah hanya akan muncul pada cetakan RPT apabila akses berbayar masih aktif.</p>
       <label for="school-logo-file">Pilih fail logo</label><input id="school-logo-file" type="file" accept="image/png,image/jpeg,image/webp,.png,.jpg,.jpeg,.webp" aria-describedby="school-logo-help">
       <p class="notice" id="school-logo-help">PNG, JPG atau WebP · maksimum 2 MB · latar telus dibenarkan.</p>
       <div class="profile-actions"><button id="school-logo-upload" type="button" disabled>Muat Naik Logo</button><span id="school-logo-status" class="notice" role="status" aria-live="polite">Logo belum disemak.</span></div>
@@ -503,7 +503,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <span id="timetable-save-status" class="notice" role="status" aria-live="polite">Memuatkan jadual…</span>
 </div>
 </section>
-<p class="notice">RPT memerlukan Rakan Pembangun atau langganan aktif. RPH mempunyai 10 janaan percuma yang dikongsi bersama Telegram.</p>
+<p class="notice">RPT boleh dimuat turun secara percuma. Cetakan nama guru, nama sekolah dan logo sekolah hanya untuk Rakan Pembangun atau langganan aktif. RPH mempunyai 10 janaan percuma yang dikongsi bersama Telegram.</p>
 </section>
 <section id="view-referral" class="app-view" aria-labelledby="view-referral-heading" hidden>
  <h2 id="view-referral-heading">🎁 Referral Saya</h2>
@@ -555,7 +555,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <h3>Bayaran Rakan Pembangun RM10 di Web</h3>
 <p>Tekan menu Rakan Pembangun, lihat status peratus penyertaan, kemudian bayar menggunakan QR DuitNow atau link Touch ’n Go. Muat naik resit yang sebenar. Permohonan Pending hanya direkod selepas resit diterima; admin meluluskan akses melalui Telegram yang sama.</p>
 <h3>Akses &amp; keselamatan</h3>
-<p>Log masuk menggunakan Telegram. Hanya akaun yang mempunyai akses berbayar boleh menggunakan RPT dan janaan RPH Web yang tersedia. Kandungan yang masih dalam semakan ditunjukkan mengikut status sebenarnya.</p>
+<p>Log masuk menggunakan Telegram. Semua pengguna berdaftar boleh memuat turun RPT tersedia; hanya akaun berbayar aktif mendapat cetakan RPT dengan nama dan logo sekolah. Janaan RPH mengikut kuota atau langganan sedia ada.</p>
 </div>
 </section>
 </div>
@@ -563,7 +563,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </section><footer class="foot">CikguLaju AI · Web</footer>
 </div>
 <script src="/assets/pdf-lib.min.js?v=1.17.1"></script>
-<script src="/assets/rpt-personalize.js?v=20261108"></script>
+<script src="/assets/rpt-personalize.js?v=20261110-free-rpt"></script>
 <script>
 "use strict";
 window.onCikguLajuTelegramAuth=async function(user){
@@ -1159,7 +1159,7 @@ function renderAllRptCards(data){
  }
  summary.textContent=subjects.length+" subjek • "+ready+" PDF RPT tersedia • "+
   (listed-ready)+" pilihan belum tersedia termasuk KP2027 Tahun 1"+
-  (data.allowed===true?". Muat turun mengisi ruang asal logo dan nama, tanpa halaman baharu.":". Muat turun memerlukan akses berbayar.");
+  (data.personalization_allowed===true?". Akaun berbayar aktif: muka depan boleh diisi dengan nama dan logo.":". Muat turun percuma tanpa nama dan logo pada cetakan.");
 }
 const rptSubject=document.getElementById("rpt-subject"),rptYear=document.getElementById("rpt-year"),rptDownload=document.getElementById("rpt-download"),rptMobileLink=document.getElementById("rpt-download-mobile"),rptStatus=document.getElementById("rpt-status");
 let rptCatalog=null;
@@ -1183,7 +1183,7 @@ async function loadRptCatalog(){
   }
   rptSubject.disabled=rptSubject.options.length<=1;
   rptYear.replaceChildren(new Option("Pilih Subjek dahulu",""));
-  rptStatus.textContent=data.allowed===true?"Pilih subjek dan tahun untuk melihat PDF yang tersedia.":"Senarai RPT dipaparkan. Muat turun memerlukan Rakan Pembangun atau langganan aktif.";
+  rptStatus.textContent=data.personalization_allowed===true?"Muat turun RPT tersedia. Akaun berbayar aktif boleh mencetak identiti sekolah.":"Muat turun RPT percuma tersedia. Nama dan logo hanya dicetak untuk akaun berbayar aktif.";
  }catch(e){
   rptStatus.textContent=e.message;
   document.getElementById("rpt-catalog-summary").textContent="Katalog RPT tidak dapat dimuatkan.";
@@ -1215,7 +1215,7 @@ function refreshRptDownload(){
  if(!selection){rptStatus.textContent="Pilih subjek dan tahun.";return;}
  if(selection.year.year===1){rptStatus.textContent="Tahun 1 KP2027 — Akan Datang. Butang muat turun belum dibuka.";return;}
  if(!selection.year.pdf_ready){rptStatus.textContent="RPT "+selection.item.label+" Tahun "+selection.year.year+" — fail PDF belum tersedia. Tiada fail subjek/tahun lain digunakan.";return;}
- rptStatus.textContent="RPT "+selection.item.label+" Tahun "+selection.year.year+" — "+selection.year.status+(ready?" · PDF tersedia untuk muat turun.":" · akses berbayar diperlukan.");
+ rptStatus.textContent="RPT "+selection.item.label+" Tahun "+selection.year.year+(ready?" · PDF tersedia untuk muat turun.":" · PDF belum tersedia.")+(rptCatalog?.personalization_allowed?" Cetakan berprofil aktif.":" Versi percuma tanpa identiti sekolah.");
 }
 rptMobileLink.addEventListener("click",(event)=>{
  event.preventDefault();
@@ -1229,7 +1229,7 @@ rptMobileLink.addEventListener("click",(event)=>{
   if(viewer){
    viewer.opener=null;
    viewer.document.title="CikguLaju RPT 2027";
-   viewer.document.body.textContent="Menyediakan PDF RPT bersama profil sekolah…";
+   viewer.document.body.textContent="Menyediakan PDF RPT 2027…";
   }
  }catch(_error){viewer=null;}
  void window.downloadCikguLajuRPT(item.item.code,item.year.year,item.item.label,

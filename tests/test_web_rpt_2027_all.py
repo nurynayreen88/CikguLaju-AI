@@ -37,7 +37,7 @@ class AllSubjectRPTTests(unittest.TestCase):
 
     @patch("web.rpt_2027_all_http._has_paid_access", return_value=False)
     @patch("web.rpt_2027_all_http._account", return_value=({"authenticated": True}, None))
-    def test_free_user_sees_catalog_but_cannot_download(self, *_mocks):
+    def test_free_user_sees_catalog_and_downloads_without_cover(self, *_mocks):
         r = self.client.get("/api/rpt/2027/catalog")
         self.assertEqual(r.status_code, 200)
         data = r.get_json()
@@ -49,9 +49,13 @@ class AllSubjectRPTTests(unittest.TestCase):
         self.assertFalse(by_year[1]["download_enabled"])
         self.assertIn("KP2027",by_year[1]["status"])
         self.assertTrue(by_year[2]["pdf_ready"])
-        self.assertFalse(by_year[2]["download_enabled"])
+        self.assertTrue(by_year[2]["download_enabled"])
+        self.assertTrue(data["allowed"])
+        self.assertFalse(data["personalization_allowed"])
         download = self.client.get("/api/rpt/2027/all/bahasa_melayu/2.pdf")
-        self.assertEqual(download.status_code, 403)
+        self.assertEqual(download.status_code, 200)
+        self.assertEqual(download.headers["X-RPT-Personalization-Allowed"],"0")
+        self.assertEqual(download.data,b"%PDF-"+b"x"*9000)
 
     @patch("web.rpt_2027_all_http._has_paid_access", return_value=True)
     @patch("web.rpt_2027_all_http._account", return_value=({"authenticated": True}, None))
@@ -61,6 +65,7 @@ class AllSubjectRPTTests(unittest.TestCase):
         self.assertEqual(r.mimetype, "application/pdf")
         self.assertEqual(r.data[:5], b"%PDF-")
         self.assertEqual(r.headers["Cache-Control"], "no-store, private")
+        self.assertEqual(r.headers["X-RPT-Personalization-Allowed"],"1")
         self.assertIn("attachment", r.headers["Content-Disposition"])
         self.assertEqual(self.client.get("/api/rpt/2027/all/bahasa_melayu/3.pdf").status_code, 503)
         self.assertEqual(self.client.get("/api/rpt/2027/all/sains/2.pdf").status_code, 503)

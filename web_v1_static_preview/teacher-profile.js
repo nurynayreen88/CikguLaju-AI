@@ -76,7 +76,7 @@ async function loadSchoolLogo() {
     const blob = await response.blob();
     if (blob.type !== "image/png" || blob.size > 460800) throw new Error("Logo tersimpan tidak sah.");
     setSchoolLogoPreview(blob);
-    schoolLogoStatus.textContent = "Logo tersimpan dan akan digunakan dalam RPT.";
+    schoolLogoStatus.textContent = "Logo tersimpan. Cetakan RPT berlogo memerlukan akses berbayar aktif.";
   } catch (error) {
     schoolLogoStatus.textContent = error.message;
   }
@@ -141,7 +141,7 @@ schoolLogoUpload.addEventListener("click", async () => {
       result.error || "Logo tidak berjaya dimuat naik.");
     schoolLogoFile.value = "";
     await loadSchoolLogo();
-    schoolLogoStatus.textContent = "Logo sekolah berjaya disimpan. RPT seterusnya akan menggunakan logo ini.";
+    schoolLogoStatus.textContent = "Logo sekolah berjaya disimpan. Ia dicetak pada RPT hanya jika akses berbayar aktif.";
   } catch (error) {
     schoolLogoStatus.textContent = error.message;
     schoolLogoUpload.disabled = false;

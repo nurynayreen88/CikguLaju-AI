@@ -37,7 +37,7 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
         cls.browser.close()
         cls.playwright.stop()
 
-    def run_case(self,bad_hash=False):
+    def run_case(self,bad_hash=False,paid=True):
         context=self.browser.new_context(
             viewport={"width":390,"height":844},is_mobile=True,has_touch=True,
             accept_downloads=True
@@ -77,7 +77,8 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
             if path=="/api/rpt/2027/all/pendidikan_islam/4.pdf":
                 return route.fulfill(status=200,content_type="application/pdf",
                     headers={"X-RPT-Source-SHA256":"0"*64 if bad_hash else entry["sha256"],
-                             "Cache-Control":"no-store, private"},
+                             "Cache-Control":"no-store, private",
+                             "X-RPT-Personalization-Allowed":"1" if paid else "0"},
                     body=ORIGINAL)
             # Unrelated preview/analytics assets are not used in this test.
             if path.startswith("/assets/") and path.endswith(".js"):
@@ -141,20 +142,27 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
                 }""")
                 self.assertGreater(output["bytes"],8000)
                 self.assertEqual(output["header"],"%PDF-")
-                self.assertNotEqual(output["sha"],entry["sha256"])
-                self.assertIn("PENDIDIKAN_ISLAM_TAHUN_4_2027_ISI_PROFIL.pdf",output["filename"])
+                if paid:
+                    self.assertNotEqual(output["sha"],entry["sha256"])
+                    self.assertIn("PENDIDIKAN_ISLAM_TAHUN_4_2027_ISI_PROFIL.pdf",output["filename"])
+                else:
+                    self.assertEqual(output["sha"],entry["sha256"])
+                    self.assertIn("PENDIDIKAN_ISLAM_TAHUN_4_2027_PERCUMA.pdf",output["filename"])
                 with popup.expect_download(timeout=12000) as save:
                     link.tap()
                 download=save.value
                 self.assertEqual(download.suggested_filename,output["filename"])
-            if bad_hash:
+            if bad_hash or not paid:
                 self.assertNotIn(("GET","/api/web/teacher/profile"),requests)
+                self.assertNotIn(("GET","/api/web/teacher/school-logo"),requests)
             else:
                 self.assertIn(("GET","/api/web/teacher/profile"),requests)
             self.assertIn(("GET","/api/rpt/2027/all/pendidikan_islam/4.pdf"),requests)
-            if not bad_hash:
+            if not bad_hash and paid:
                 self.assertIn(("GET","/assets/rpt-original-cover-layout.json"),requests)
                 self.assertIn(("GET","/api/web/teacher/school-logo"),requests)
+            else:
+                self.assertNotIn(("GET","/assets/rpt-original-cover-layout.json"),requests)
         finally:
             if popup and not popup.is_closed():
                 popup.close()
@@ -165,6 +173,9 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
 
     def test_invalid_source_sha_never_issues_a_personalized_pdf(self):
         self.run_case(bad_hash=True)
+
+    def test_free_user_receives_identical_source_and_profile_is_never_read(self):
+        self.run_case(paid=False)
 
 
 if __name__=="__main__":

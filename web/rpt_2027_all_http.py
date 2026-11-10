@@ -1,4 +1,4 @@
-"""CikguLaju 2027 Web: 12-subject, 56-PDF paid download catalog.
+"""CikguLaju 2027 Web: 12-subject, 56-PDF authenticated download catalog.
 
 The 56 owner-approved-to-show *DRAF* PDFs are shipped as fixed local files
 under rpt_2027/web_2027_pdfs/ by the source-checked GitHub release workflow.
@@ -135,7 +135,7 @@ def pdf_ready(subject,year,*,root=ROOT):
     except ValueError:
         return False
 
-def catalog_data(*,root=ROOT, allowed=False):
+def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
     subjects=[]
     available=0
     for code,(label,years,folder,legacy_name,status) in SUBJECTS.items():
@@ -174,12 +174,13 @@ def catalog_data(*,root=ROOT, allowed=False):
         "year":2027,
         "format":"pdf",
         "allowed":bool(allowed),
+        "personalization_allowed":bool(personalization_allowed),
         "subjects":subjects,
         "total_rpt":56,
         "total_display_choices":66,
         "year1_coming_soon":10,
         "available_rpt":available,
-        "note":"Tahun 1 KP2027 dipaparkan sebagai AKAN DATANG dengan muat turun dimatikan. RPT Tahun 2–6 kekal untuk akses berbayar dan semua DRAF perlu semakan guru.",
+        "note":"Tahun 1 KP2027 belum boleh dimuat turun. RPT Tahun 2–6 boleh dimuat turun oleh semua pengguna log masuk; nama dan logo hanya dicetak untuk akses berbayar yang masih aktif.",
     }
 
 def create_all_rpt_blueprint(*,root=ROOT):
@@ -196,7 +197,8 @@ def create_all_rpt_blueprint(*,root=ROOT):
         account,error=_account()
         if error is not None:
             return error
-        return jsonify(catalog_data(root=root,allowed=_has_paid_access(account)))
+        return jsonify(catalog_data(root=root,allowed=True,
+                                    personalization_allowed=_has_paid_access(account)))
 
     @bp.get("/api/rpt/2027/all/<subject>/<int:year>.pdf")
     def download(subject,year):
@@ -205,16 +207,17 @@ def create_all_rpt_blueprint(*,root=ROOT):
             return error
         if subject not in SUBJECTS or year not in SUBJECTS[subject][1]:
             return jsonify({"error":"Pilihan RPT tidak sah"}),404
-        if not _has_paid_access(account):
-            return jsonify({"error":"Akses RPT memerlukan Rakan Pembangun atau langganan aktif"}),403
         staged=_staged_file(subject,year,root=root)
         path=staged or _legacy_file(subject,year,root=root)
         if path is None:
             return jsonify({"error":"PDF RPT ini belum dipasang pada pelayan. Cuba lagi kemudian."}),503
+        paid_cover=_has_paid_access(account)
         # The staged 56-source set differs from the Telegram local originals;
         # do not call its SHA-locked personalization API with an unknown hash.
         # Download the exact validated DRAF; teacher identity stays private.
-        if staged is not None:
+        if staged is not None or not paid_cover:
+            # Free and expired users receive the validated source PDF, never
+            # any server-side school identity. Profile data remains stored.
             document=path
         else:
             from web.rpt_school_cover import for_download
@@ -226,6 +229,7 @@ def create_all_rpt_blueprint(*,root=ROOT):
         response=send_file(document,mimetype="application/pdf",as_attachment=True,
                            download_name=f"CIKGULAJU_RPT_{subject.upper()}_TAHUN_{year}_2027_DRAF.pdf",
                            conditional=False)
+        response.headers["X-RPT-Personalization-Allowed"]="1" if paid_cover else "0"
         if staged is not None:
             # Exact PDF hash is from the prevalidated 56-source manifest.
             # Browser must match it to the audited original-cover layout;

@@ -1,4 +1,4 @@
-"""58? No: exactly 56 RPT PDF drafts across 12 subjects, paid-gated.
+"""Exactly 56 RPT PDF drafts across 12 subjects, free to authenticated users.
 
 Synthetic files and monkeypatched account lookups; never touch production
 user records or actual trial credits.
@@ -88,6 +88,7 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
             catalog=self.client.get("/api/rpt/2027/catalog")
             self.assertEqual(catalog.status_code,200)
             self.assertEqual(catalog.get_json()["available_rpt"],56)
+            self.assertTrue(catalog.get_json()["personalization_allowed"])
             pdf=self.client.get("/api/rpt/2027/all/bahasa_arab/6.pdf")
             self.assertEqual(pdf.status_code,200)
             self.assertEqual(pdf.data,self.pdf)
@@ -96,23 +97,28 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
                              hashlib.sha256(self.pdf).hexdigest())
             self.assertIn("attachment",pdf.headers["Content-Disposition"])
             self.assertEqual(pdf.headers["Cache-Control"],"no-store, private")
+            self.assertEqual(pdf.headers["X-RPT-Personalization-Allowed"],"1")
 
-    def test_unpaid_user_sees_all_but_cannot_download(self):
+    def test_unpaid_user_downloads_unmodified_pdf_without_paid_cover(self):
         trial={"telegram_user_id":42,"authenticated":True,"free_remaining":10}
         with (patch("web.rpt_2027_all_http._account",return_value=(trial,None)),
               patch("web.rpt_2027_all_http._has_paid_access",return_value=False)):
             catalog=self.client.get("/api/rpt/2027/catalog")
             self.assertEqual(catalog.status_code,200)
             self.assertEqual(catalog.get_json()["available_rpt"],56)
-            self.assertFalse(catalog.get_json()["allowed"])
+            self.assertTrue(catalog.get_json()["allowed"])
+            self.assertFalse(catalog.get_json()["personalization_allowed"])
             result=self.client.get("/api/rpt/2027/all/english/2.pdf")
-            self.assertEqual(result.status_code,403)
+            self.assertEqual(result.status_code,200)
+            self.assertEqual(result.data,self.pdf)
+            self.assertEqual(result.headers["X-RPT-Personalization-Allowed"],"0")
 
     def test_unauthenticated_blocked_and_invalid_year_404(self):
         from flask import jsonify
         with patch("web.rpt_2027_all_http._account",
                    side_effect=lambda:(None,(jsonify({"error":"Login required"}),401))):
             self.assertEqual(self.client.get("/api/rpt/2027/catalog").status_code,401)
+            self.assertEqual(self.client.get("/api/rpt/2027/all/english/2.pdf").status_code,401)
         with (patch("web.rpt_2027_all_http._account",return_value=({"telegram_user_id":42},None)),
               patch("web.rpt_2027_all_http._has_paid_access",return_value=True)):
             self.assertEqual(self.client.get("/api/rpt/2027/all/rbt/2.pdf").status_code,404)
