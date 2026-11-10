@@ -5,6 +5,11 @@ on:
       - release/rpt2027-week01-23-web-20261110
     paths:
       - '.github/workflows/rpt2027-week01-23-web-release-branch.yml'
+  pull_request:
+    branches:
+      - production/cikgulaju-web-20261105
+    paths:
+      - '.github/workflows/rpt2027-week01-23-web-release-branch.yml'
   workflow_dispatch:
 
 permissions:
