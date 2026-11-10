@@ -52,10 +52,10 @@ COVER_KEYS = ("RANCANGAN PENGAJARAN TAHUNAN 2027",
               "LOGO SEKOLAH", "NAMA SEKOLAH", "NAMA GURU")
 EXPECTED_FIRST = {"bahasa_melayu": 3, "pendidikan_islam": 2,
                   "bahasa_arab": 1, "rbt": 1}
-WEEK_REGEX = re.compile(r"(?<![A-Za-z0-9])M\\s*01(?![0-9])", re.I)
+WEEK_REGEX = re.compile(r"(?<![A-Za-z0-9])M\s*01(?![0-9])", re.I)
 HIDDEN_AUDIT_NOTES = re.compile(
-    r"(?i)(?:\\bDRAF\\b|\\bSTAGING\\b|SEBELUM READY|JANGAN MERGE|"
-    r"\\bdeveloper\\b|ACADEMIC SIGNOFF|REKOD DITAHAN|\\bHOLD\\b)"
+    r"(?i)(?:\bDRAF\b|\bSTAGING\b|SEBELUM READY|JANGAN MERGE|"
+    r"\bdeveloper\b|ACADEMIC SIGNOFF|REKOD DITAHAN|\bHOLD\b)"
 )
 
 
@@ -65,7 +65,7 @@ def sha256(data: bytes) -> str:
 
 def pdf_text(path: Path):
     with fitz.open(path) as d:
-        return "\\n".join(p.get_text("text") for p in d)
+        return "\n".join(p.get_text("text") for p in d)
 
 
 def sourced_week_assertions():
@@ -177,7 +177,7 @@ def candidate_package(web_root: Path, output: Path):
                     cover = d[0].get_text()
                     if any(k not in cover for k in COVER_KEYS):
                         raise ValueError(f"{identity}: Web cover slots missing")
-                    teaching = "\\n".join(page.get_text("text") for page in list(d)[1:])
+                    teaching = "\n".join(page.get_text("text") for page in list(d)[1:])
                     if HIDDEN_AUDIT_NOTES.search(teaching):
                         raise ValueError(f"{identity}: internal author status leaked into PDF")
                     if sub not in ("pendidikan_islam", "bahasa_arab") and not WEEK_REGEX.search(teaching):
@@ -218,7 +218,7 @@ def candidate_package(web_root: Path, output: Path):
             raise ValueError("One of the other 33 published PDF bytes changed")
         candidate["pages"] = sum(e["pages"] for e in candidate["files"].values())
         (package / "manifest.json").write_text(
-            json.dumps(candidate, ensure_ascii=False, indent=2) + "\\n", "utf-8")
+            json.dumps(candidate, ensure_ascii=False, indent=2) + "\n", "utf-8")
         report = {
             "status": "REVIEW_ONLY_NOT_PRODUCTION_RELEASE",
             "source_year1_transition_changed": False,
@@ -231,7 +231,7 @@ def candidate_package(web_root: Path, output: Path):
             "files": observations,
         }
         (Path(output) / "week01_candidate_review.json").write_text(
-            json.dumps(report, ensure_ascii=False, indent=2) + "\\n", "utf-8")
+            json.dumps(report, ensure_ascii=False, indent=2) + "\n", "utf-8")
         print("WEEK01_CANDIDATE_PACKAGE_56", json.dumps(
             {"changed": 23, "unchanged": 33,
              "total_pages": candidate["pages"],
