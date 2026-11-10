@@ -70,12 +70,14 @@ class BrowserSharedTrialTests(unittest.TestCase):
             self.assertIn("belum dapat disahkan",page.locator("#account-access").inner_text())
         finally:page.close()
 
-    def test_copy_states_rpt_still_paid_and_trial_shared(self):
+    def test_copy_states_rpt_download_free_profile_print_paid_trial_shared(self):
         page=self.page(360)
         try:
             html=page.content()
             self.assertIn("10 janaan RPH percuma dikongsi antara Web dan Telegram",html)
-            self.assertIn("RPT memerlukan Rakan Pembangun atau langganan aktif",html)
+            self.assertIn("Muat turun RPT adalah",html)
+            self.assertIn("percuma untuk semua pengguna berdaftar",html)
+            self.assertIn("Cetakan berprofil hanya untuk Rakan Pembangun atau langganan aktif",html)
         finally:page.close()
 
 if __name__=="__main__":
