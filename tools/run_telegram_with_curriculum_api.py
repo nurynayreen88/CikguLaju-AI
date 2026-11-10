@@ -709,3 +709,16 @@ except Exception as _math_sk_display_exc:
     MATEMATIK_SK_DISPLAY_FIX_ACTIVE = False
     print("Matematik SK label formatting unavailable:",
           type(_math_sk_display_exc).__name__, flush=True)
+
+
+# User-visible Telegram parity for the existing Web Special Activities catalogue.
+# Installs AFTER previous menu/referral/credit adapters; only prefixes "ak26:"
+# callbacks. Shares the same immutable 59 DRAFT_REVIEW records, digest, Word/PDF.
+# No modifications to curriculum DB, ordinary Lesson/PdP selection, or RPT.
+try:
+    from web.telegram_special_activity_menu import install as install_special_rph_menu
+    TELEGRAM_SPECIAL_ACTIVITY_MENU_ACTIVE = bool(install_special_rph_menu(telegram_runtime))
+except Exception as _special_menu_error:
+    TELEGRAM_SPECIAL_ACTIVITY_MENU_ACTIVE = False
+    print("Telegram Special Activity menu unavailable:",
+          type(_special_menu_error).__name__, flush=True)
