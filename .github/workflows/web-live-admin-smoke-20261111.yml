@@ -1,0 +1,75 @@
+name: LIVE Web admin privacy smoke test
+on:
+  push:
+    branches:
+      - audit/web-live-admin-smoke-20261111
+  pull_request:
+    branches:
+      - production/cikgulaju-web-20261105
+    paths:
+      - .github/workflows/web-live-admin-smoke-20261111.yml
+  workflow_dispatch:
+jobs:
+  anonymous-routes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Inspect production routes without user account or secrets
+        env:
+          WEB_BASE_URL: https://cikgulaju-web.onrender.com
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import time
+          from urllib.error import HTTPError, URLError
+          from urllib.request import Request, urlopen
+
+          root=os.environ["WEB_BASE_URL"].rstrip("/")
+          def get(path):
+              req=Request(root+path, method="GET", headers={
+                  "Accept":"application/json, text/html, application/javascript",
+                  "User-Agent":"CikguLaju-GitHub-Public-Smoke/1.0"})
+              try:
+                  with urlopen(req, timeout=16) as response:
+                      return response.status,dict(response.headers),response.read(256_000)
+              except HTTPError as ex:
+                  return ex.code,dict(ex.headers),ex.read(4096)
+
+          # Retry only public liveness as Render may briefly warm or restart.
+          for attempt in range(4):
+              try:
+                  status,headers,body=get("/healthz")
+                  if status==200:
+                      break
+              except (TimeoutError,URLError):
+                  status=None
+              if attempt<3: time.sleep(10)
+          assert status==200, "Web liveness failed"
+          health=json.loads(body)
+          assert health.get("service")=="cikgulaju-web" and health.get("live") is True
+          print("PASS: Web healthz")
+
+          status,headers,body=get("/")
+          assert status==200 and b'id="web-admin-tab"' in body, "Admin markup missing"
+          assert b'aria-controls="view-admin" hidden' in body, "Admin menu default visibility unsafe"
+          print("PASS: Web menu markup present, private tab hidden by default")
+
+          status,headers,body=get("/assets/admin-usage.js")
+          assert status==200, "Private dashboard client asset missing"
+          assert b'window.cikgulajuAdminInit' in body, "Admin script wrong version"
+          print("PASS: Admin browser script available")
+
+          status,headers,body=get("/api/web/admin/usage")
+          assert status==401, "Private API must reject unauthenticated visitors"
+          obj=json.loads(body)
+          assert "registered_users" not in obj and "rakan_pembangun" not in obj, "Aggregate leak"
+          assert "no-store" in headers.get("Cache-Control","").lower(), "Private cache policy missing"
+          print("PASS: Admin API denies unauthenticated requests and does not leak statistics")
+
+          status,headers,body=get("/api/auth/telegram/session")
+          assert status==401, "Public session check must not authenticate visitors"
+          print("PASS: Unauthenticated session denied")
+
+          print("LIVE SMOKE PASSED: all checks use anonymous read-only requests.")
+          PY
