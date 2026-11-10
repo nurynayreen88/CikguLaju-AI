@@ -86,6 +86,34 @@ class TeacherTextLeakAuditTests(unittest.TestCase):
         self.assertEqual(public_note(arabic), "")
         self.assertFalse(arabic["source_sp_dskp_text_signoff"])
 
+    def test_teacher_notes_hide_editor_status_but_preserve_valid_learning_refs(self):
+        from rpt_2027.common.teacher_display_projection import public_note
+        scenarios = (
+            ("PdP 005 | DRAF PKJR — BAM Aktiviti 1 m/s 1; belum READY",
+             ("BAM Aktiviti 1 m/s 1",), ("DRAF PKJR", "belum READY")),
+            ("DRAF — BT1/BA1/DSKP disemak, belum READY; sesi susulan",
+             (), ("DRAF", "READY")),
+            ("BT m/s: 10 (draf). | Audio: 1–4.",
+             ("BT m/s: 10", "Audio: 1–4"), ("(draf)",)),
+            ("Masih DRAF. | Bahan: Mushaf al-Quran",
+             ("Bahan: Mushaf al-Quran",), ("Masih DRAF",)),
+            ("Masa: 60 minit. | Buku teks m/s: 5.2.1 (hlm. 2–2) — CALON BUKAN VISUAL."
+             " | Jadual sebenar boleh disesuaikan oleh guru.",
+             ("Masa: 60 minit", "Jadual sebenar"), ("CALON", "hlm. 2–2")),
+            ("Murid menulis draf karangan dan menyemak semula.",
+             ("menulis draf karangan",), ("Masih DRAF",)),
+        )
+        for original, must_keep, must_hide in scenarios:
+            with self.subTest(original=original):
+                row = {"note": original}
+                rendered = public_note(row)
+                self.assertEqual(row["note"], original)
+                for value in must_keep:
+                    self.assertIn(value, rendered)
+                for value in must_hide:
+                    self.assertNotIn(value, rendered)
+                self.assertFalse(find_internal_notes(rendered))
+
     def test_pdf_render_gate_detects_internal_footer_and_clauses(self):
         from rpt_2027.common.teacher_display_projection import public_note
         row = {
