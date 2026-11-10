@@ -72,9 +72,8 @@ def annual_source_plan(year):
         explanation=r["sp_text"]
         topic=("Pengukuhan / PBD: " if is_practice else "")+explanation
         # NOTE is pedagogical only, never editor review notes.
-        note=("PBD: guru menilai evidens penguasaan "+sp+
-              " melalui pemerhatian, respons murid atau hasil tugasan."
-              " Padankan muka surat buku teks sebelum digunakan.")
+        note=("PBD: rekod evidens melalui pemerhatian, respons murid "
+              "atau hasil tugasan berasaskan SP "+sp+".")
         result.append(dict(
             id=f"{i:03d}",week=week,
             a_start=a[0],a_end=a[1],b_start=b[0],b_end=b[1],
