@@ -1,0 +1,83 @@
+name: Package real Web RPT2027 56 PDFs - source/sha proof
+on:
+  pull_request:
+    branches:
+      - production/cikgulaju-web-20261105
+    paths:
+      - '.github/workflows/rpt2027-package-56-production-pdfs-20261110.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  package-read-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout exactly production Web PDF revision
+        uses: actions/checkout@v4
+        with:
+          ref: e72597c920dc7c0787862f35c59a1ad2912abe86
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'PyMuPDF==1.24.14'
+      - name: Audit and pack 56 user-facing Year2-6 RPT PDFs (no writes)
+        run: |
+          python - <<'PY'
+          import json,zipfile,hashlib,re
+          from collections import Counter
+          from pathlib import Path
+          import fitz
+          root=Path('rpt_2027/web_2027_pdfs')
+          m=json.loads((root/'manifest.json').read_text('utf-8'))
+          assert m['count']==56 and len(m['files'])==56
+          assert m['academic_final_approved'] is False
+          c=Counter(k.split(':')[0] for k in m['files'])
+          assert len(c)==12 and sum(c.values())==56
+          out=Path('output');out.mkdir(exist_ok=True)
+          target=out/'CIKGULAJU_RPT2027_56_PDF_TAHUN_2_HINGGA_6_SEMAKAN.zip'
+          pages=0;report={'web_commit':'e72597c920dc7c0787862f35c59a1ad2912abe86',
+                         'verified_source_files':56,'academic_final_approved':False,
+                         'subjects':dict(c),'pdfs':[]}
+          with zipfile.ZipFile(target,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=8) as z:
+              for key,info in sorted(m['files'].items()):
+                  p=root/info['path'];raw=p.read_bytes()
+                  assert hashlib.sha256(raw).hexdigest()==info['sha256'],key
+                  assert len(raw)==info['bytes'],key
+                  with fitz.open(p) as pdf:
+                      assert len(pdf)==info['pages'] and len(pdf)>=2,key
+                      assert all(a.rect.width>a.rect.height for a in pdf),key
+                      text='\n'.join(pg.get_text() for pg in list(pdf)[1:])
+                      has_m01=bool(re.search(r'(?<!\d)M\s*01(?!\d)',text,re.I))
+                      row={'key':key,'file':info['path'],
+                           'pages':len(pdf),'has_m01_extracted':has_m01}
+                      pages+=len(pdf)
+                      report['pdfs'].append(row)
+                  z.write(p,arcname=info['path'])
+              # Do not leak internal DRAF academic flags from Web manifest
+              # into teacher archive; keep the complete audit outside the ZIP.
+              z.writestr('BACA_DULU.txt',
+                  'CIKGULAJU AI — RPT 2027 TAHUN 2 HINGGA 6\n'
+                  '56 PDF daripada versi Web, disahkan checksum.\n'
+                  'Pelarasan kalendar sekolah/negeri dan pengesahan bahan'
+                  ' kurikulum perlu dibuat sebelum digunakan sebagai dokumen muktamad.\n'
+                  'Tahun 1 KP2027 tidak termasuk dalam pakej ini.\n')
+          report['total_pages']=pages
+          report['m01_extract_true']=sum(x['has_m01_extracted'] for x in report['pdfs'])
+          report['zip_sha256']=hashlib.sha256(target.read_bytes()).hexdigest()
+          (out/'CIKGULAJU_RPT2027_56_PDF_CHECKSUM_REPORT.json').write_text(
+              json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          with zipfile.ZipFile(target) as z:
+              assert len([x for x in z.namelist() if x.endswith('.pdf')])==56
+              assert z.testzip() is None
+          assert pages==m['pages']
+          print('PRODUCTION_RPT2027_56_PDF_ZIP_READY',
+              'pages',pages,'m01',report['m01_extract_true'],
+              'SHA',report['zip_sha256'],flush=True)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cikgulaju-rpt2027-56-pdf-from-web-20261110
+          retention-days: 30
+          if-no-files-found: error
+          path: output/
