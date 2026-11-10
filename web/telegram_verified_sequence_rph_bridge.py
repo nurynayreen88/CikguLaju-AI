@@ -306,6 +306,34 @@ def create_native_sequence_rph_blueprint(runtime):
                         raise ValueError("Invalid Word package")
             elif not content.startswith(b"%PDF-"):
                 raise ValueError("Invalid PDF file")
+            # This private Telegram endpoint powers Web native Maths Word/PDF.
+            # The actual output is checked before Web can debit trial credits.
+            # Sains and direct Telegram bot handlers remain unchanged.
+            if sel["subject"] == "MATH":
+                from web.math_rph_delivery_quality_20261110 import (
+                    MathQualityReadError, inspect_math_rph_document,
+                )
+                try:
+                    quality = inspect_math_rph_document({
+                        "source": "telegram-native-pdp-sequence",
+                        "subject": "MATH",
+                        "teacher": data["teacher"],
+                    }, fmt, content)
+                except MathQualityReadError:
+                    return jsonify({
+                        "error": "RPH Matematik belum boleh disahkan.",
+                        "code": "MATH_RPH_QUALITY_CHECK_UNAVAILABLE",
+                    }), 503
+                if quality.get("inspection") == "PDF_PARSER_UNAVAILABLE":
+                    return jsonify({
+                        "error": "Semakan PDF Matematik belum tersedia.",
+                        "code": "MATH_RPH_QUALITY_CHECK_UNAVAILABLE",
+                    }), 503
+                if quality["issues"]:
+                    return jsonify({
+                        "error": "RPH Matematik perlu pembetulan sebelum dimuat turun.",
+                        "code": "MATH_RPH_QUALITY_REVIEW_REQUIRED",
+                    }), 503
             response = Response(content,mimetype=MIMES[fmt])
             response.headers["Content-Disposition"] = (
                 'attachment; filename="CikguLaju_RPH.' +
