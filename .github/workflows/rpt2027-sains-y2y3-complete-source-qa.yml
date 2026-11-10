@@ -33,6 +33,7 @@ jobs:
           assert [(y,n) for y,n,p in files]==[(2,92),(3,103)]
           for year,count,path in files:
               with fitz.open(path) as d:
+                  page_count=len(d)
                   assert len(d)>=10
                   assert all(p.rect.width>p.rect.height for p in d)
                   cover=d[0].get_text()
@@ -42,7 +43,7 @@ jobs:
                   assert 'PdP 001' in text
                   assert '1.1.1' in text
                   assert 'JANGAN MERGE' not in text and 'SEBELUM READY' not in text
-              print('ORIGINAL_DSKP_SAINS_YEAR_PDF',year,count,len(d),path,flush=True)
+              print('ORIGINAL_DSKP_SAINS_YEAR_PDF',year,count,page_count,path,flush=True)
           PY
       - uses: actions/upload-artifact@v4
         with:
