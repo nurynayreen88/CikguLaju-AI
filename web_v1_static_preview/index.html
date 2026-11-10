@@ -446,7 +446,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <section id="view-rpt" class="app-view" aria-labelledby="rpt2027-heading" hidden>
 <section id="rpt2027-panel" aria-labelledby="rpt2027-heading">
  <h3 id="rpt2027-heading">📅 RPT 2027 — Semua Subjek</h3>
- <p>Semua RPT yang tersedia dipaparkan di bawah mengikut subjek dan tahun. <strong>RPT DRAF/SEPARA DRAF untuk semakan guru sebelum digunakan di sekolah.</strong> Muat turun adalah untuk Rakan Pembangun atau langganan aktif; 10 janaan RPH percuma tidak dipotong. Semasa muat turun, ruang kosong <strong>pada muka depan asal</strong> diisi dengan logo sekolah, nama sekolah dan nama guru daripada Profil Guru. <strong>Tiada muka depan atau halaman tambahan.</strong> <strong>Tahun 1 KP2027 boleh dilihat, tetapi muat turun belum dibuka.</strong></p>
+ <p>Semua RPT yang tersedia dipaparkan di bawah mengikut subjek dan tahun. <strong>Sila semak padanan SK/SP, buku teks dan takwim sekolah sebelum digunakan.</strong> Muat turun adalah untuk Rakan Pembangun atau langganan aktif; 10 janaan RPH percuma tidak dipotong. Semasa muat turun, ruang kosong <strong>pada muka depan asal</strong> diisi dengan logo sekolah, nama sekolah dan nama guru daripada Profil Guru. <strong>Tiada muka depan atau halaman tambahan.</strong> <strong>Tahun 1 KP2027 boleh dilihat, tetapi muat turun belum dibuka.</strong></p>
  <p id="rpt-catalog-summary" class="rpt-catalog-summary" role="status">Memuatkan semua RPT 2027…</p>
  <div id="rpt-all-list" class="rpt-all-list" aria-label="Senarai RPT 2027 mengikut subjek"></div>
  <h4>Atau pilih terus mengikut subjek dan tahun</h4>
@@ -1129,7 +1129,7 @@ function renderAllRptCards(data){
    const card=document.createElement("div");card.className="rpt-year-card";
    const title=document.createElement("strong");title.textContent="Tahun "+year.year;
    const status=document.createElement("span");status.className="rpt-year-status";
-   status.textContent=typeof year.status==="string"?year.status:"DRAF";
+   status.textContent=year.year===1?"Belum dibuka":year.download_enabled===true?"PDF tersedia":"Belum tersedia";
    card.append(title,status);
    if(year.pdf_ready===true)ready++;
    if(year.year===1){

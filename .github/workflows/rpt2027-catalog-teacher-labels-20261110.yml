@@ -1,0 +1,20 @@
+name: RPT 2027 teacher catalog labels
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'web_v1_static_preview/index.html'
+      - 'tests/test_rpt2027_catalog_teacher_labels_20261110.py'
+      - '.github/workflows/rpt2027-catalog-teacher-labels-20261110.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  teacher-labels:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m unittest discover -s tests -p 'test_rpt2027_catalog_teacher_labels_20261110.py' -v
