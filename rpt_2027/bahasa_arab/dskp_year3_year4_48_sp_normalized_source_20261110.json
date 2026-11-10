@@ -1,0 +1,313 @@
+{
+  "document_type": "SOURCE_SHA_PINNED_ARABIC_WORDING_NORMALIZED_FROM_DSKP_PDF_NOT_VISUAL_ACADEMIC_SIGNOFF",
+  "academic_release_approved": false,
+  "word_for_word_visual_signoff": false,
+  "scope": "Only SP codes actually used in Year3/4 RPT source lessons; does not assert all DSKP codes included",
+  "sources": {
+    "3": {
+      "pdf_url": "https://drive.google.com/file/d/1LlqBjz05t3M-M-kMC_FpZA0QSXdcUaZW/view",
+      "pdf_sha256": "d09e12abade3a9bf02935fa2bdc888e0e134c7031cac8ef90a95992eb3f72826",
+      "pdf_pages": 48,
+      "sp_count": 23,
+      "entries": [
+        {
+          "sp_code": "1.1.1",
+          "pdf_page": 29,
+          "sp_text_ar": "القدرة على محاكاة أصوات الحروف المسموعة وترديدها ونطقها.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "1.1.2",
+          "pdf_page": 29,
+          "sp_text_ar": "القدرة على تحديد أصوات الحروف المسموعة.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "1.2.1",
+          "pdf_page": 29,
+          "sp_text_ar": "القدرة على محاكاة المقطع المسموع وترديده ونطقه نطقا صحيحا.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "1.2.2",
+          "pdf_page": 29,
+          "sp_text_ar": "القدرة على تحديد المقطع المسموع.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "1.3.1",
+          "pdf_page": 30,
+          "sp_text_ar": "القدرة على محاكاة الكلمات وترديدها ونطقها.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "1.3.2",
+          "pdf_page": 30,
+          "sp_text_ar": "القدرة على تحديد الكلمات المسموعة.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "1.4.1",
+          "pdf_page": 31,
+          "sp_text_ar": "القدرة على محاكاة التراكيب وترديدها ونطقها نطقا صحيحا من حيث النبر والتنغيم.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "1.4.2",
+          "pdf_page": 31,
+          "sp_text_ar": "القدرة على حفظ التراكيب المسموعة وتسميعها.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "1.4.3",
+          "pdf_page": 31,
+          "sp_text_ar": "القدرة على تحديد التراكيب المسموعة.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "2.1.1",
+          "pdf_page": 34,
+          "sp_text_ar": "القدرة على محاكاة قراءة الحروف المركزة المسموعة وترديدها.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "2.1.2",
+          "pdf_page": 34,
+          "sp_text_ar": "القدرة على تحديد الحروف المركزة المقروءة.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "2.1.3",
+          "pdf_page": 34,
+          "sp_text_ar": "القدرة على تمييز الحروف المركزة المقروءة.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "2.2.1",
+          "pdf_page": 34,
+          "sp_text_ar": "القدرة على محاكاة قراءة المقطع المسموع.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "2.2.2",
+          "pdf_page": 34,
+          "sp_text_ar": "القدرة على تحديد المقطع المقروء.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "2.2.3",
+          "pdf_page": 34,
+          "sp_text_ar": "القدرة على تمييز المقطع المقروء.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "2.3.1",
+          "pdf_page": 35,
+          "sp_text_ar": "القدرة على محاكاة قراءة المقطع المسموع.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "2.3.2",
+          "pdf_page": 35,
+          "sp_text_ar": "القدرة على تحديد المقطع المقروء.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "2.3.3",
+          "pdf_page": 35,
+          "sp_text_ar": "القدرة على تمييز المقطع المقروء.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "2.3.5",
+          "pdf_page": 35,
+          "sp_text_ar": "القدرة على محاكاة قراءة الكلمات وترديدها وقراءتها.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "2.4.1",
+          "pdf_page": 36,
+          "sp_text_ar": "القدرة على محاكاة قراءة التراكيب وترديدها وقراءتها قراءة صحيحة من حيث النبر والتنغيم.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "3.1.1",
+          "pdf_page": 39,
+          "sp_text_ar": "القدرة على كتابة الحروف الهجائية متصلة ومنفصلة.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "3.2.1",
+          "pdf_page": 39,
+          "sp_text_ar": "القدرة على كتابة المقاطع في الكلمات.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "3.3.1",
+          "pdf_page": 39,
+          "sp_text_ar": "القدرة على كتابة الكلمات.",
+          "source_visual_signoff": false
+        }
+      ]
+    },
+    "4": {
+      "pdf_url": "https://drive.google.com/file/d/1ljeuSbPI4vfu0moS_itg7ONaJ6mnKII2/view",
+      "pdf_sha256": "f4b35b8cfb5cfb494596e015373be941dd1c6d19dbfda273f6ed7f6c790c0f8b",
+      "pdf_pages": 54,
+      "sp_count": 25,
+      "entries": [
+        {
+          "sp_code": "1.1.1",
+          "pdf_page": 31,
+          "sp_text_ar": "القدرة على محاكاة أصوات الحروف القمرية والشمسية داخل كلمات المحاور وترديدها ثم نطقها نطقا صحيحا.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "1.1.2",
+          "pdf_page": 31,
+          "sp_text_ar": "القدرة على تحديد أصوات الحروف القمرية والشمسية داخل كلمات المحاور المسموعة.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "1.2.1",
+          "pdf_page": 32,
+          "sp_text_ar": "القدرة على محاكاة الكلمات المسموعة وترديدها ثم نطقها نطقا صحيحا.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "1.2.2",
+          "pdf_page": 32,
+          "sp_text_ar": "القدرة على تحديد الكلمات المسموعة.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "1.2.3",
+          "pdf_page": 32,
+          "sp_text_ar": "القدرة على تصنيف الكلمات المسموعة.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "1.2.4",
+          "pdf_page": 32,
+          "sp_text_ar": "القدرة على التمييز بين الكلمات المسموعة.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "1.3.1",
+          "pdf_page": 33,
+          "sp_text_ar": "القدرة على محاكاة الجمل البسيطة المسموعة وترديدها ثم نطقها نطقا صحيحا.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "1.3.2",
+          "pdf_page": 33,
+          "sp_text_ar": "القدرة على نطق الجمل البسيطة مع مراعاة النبر والتنغيم.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "1.3.4",
+          "pdf_page": 33,
+          "sp_text_ar": "القدرة على التمييز بين الجمل البسيطة المسموعة.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "1.4.1",
+          "pdf_page": 34,
+          "sp_text_ar": "القدرة على محاكاة الجمل المتناسقة المسموعة وترديدها.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "1.4.2",
+          "pdf_page": 34,
+          "sp_text_ar": "القدرة على نطق الجمل المتناسقة مع مراعاة النبر والتنغيم.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "1.4.4",
+          "pdf_page": 34,
+          "sp_text_ar": "القدرة على تكوين الجمل المتناسقة المسموعة.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "2.1.1",
+          "pdf_page": 36,
+          "sp_text_ar": "القدرة على محاكاة أصوات الحروف القمرية والشمسية في الكلمات المقروءة وترديدها.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "2.2.1",
+          "pdf_page": 37,
+          "sp_text_ar": "القدرة على محاكاة قراءة الكلمات وترديدها ثم قراءتها مع مراعاة النبر.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "2.2.3",
+          "pdf_page": 37,
+          "sp_text_ar": "القدرة على تصنيف الكلمات المقروءة.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "2.2.4",
+          "pdf_page": 37,
+          "sp_text_ar": "القدرة على تمييز الكلمات المقروءة.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "2.3.1",
+          "pdf_page": 38,
+          "sp_text_ar": "القدرة على محاكاة القراءة للجملة البسيطة وترديدها.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "2.3.2",
+          "pdf_page": 38,
+          "sp_text_ar": "القدرة على قراءة الجملة البسيطة مع مراعاة النبر والتنغيم.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "2.3.4",
+          "pdf_page": 38,
+          "sp_text_ar": "القدرة على ترتيب الكلمات لتكون جملا بسيطة مفيدة ثم قراءتها.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "2.3.6",
+          "pdf_page": 38,
+          "sp_text_ar": "القدرة على إنتاج المشروعات للجمل المقروءة.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "2.4.2",
+          "pdf_page": 39,
+          "sp_text_ar": "القدرة على قراءة الجمل المتناسقة مع مراعاة النبر والتنغيم.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "3.1.1",
+          "pdf_page": 41,
+          "sp_text_ar": "القدرة على كتابة كلمات المحاور التي فيها أل القمرية والشمسية كتابة صحيحة.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "3.2.1",
+          "pdf_page": 42,
+          "sp_text_ar": "القدرة على كتابة الكلمات بطريقة صحيحة.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "3.3.1",
+          "pdf_page": 43,
+          "sp_text_ar": "القدرة على كتابة الجمل البسيطة.",
+          "source_visual_signoff": false
+        },
+        {
+          "sp_code": "3.4.1",
+          "pdf_page": 44,
+          "sp_text_ar": "القدرة على كتابة الجمل المتناسقة.",
+          "source_visual_signoff": false
+        }
+      ]
+    }
+  },
+  "notes": "Transcribed from original source PDF code/page neighborhoods; Arabic word spacing and ة/ال conflations normalized for legibility. Source Year3 contains repeated-looking SP wording in 2.2 and 2.3 blocks; preserved rather than guessed. Full original PDF visual line-by-line approval and teacher RPH matching still required. The copied Year3 and Year4 Drive files share the same SHA256 as the original separately indexed reference URLs; URLs stored here follow the immutable original audit ledger."
+}

@@ -72,10 +72,17 @@ class RemainingRPTFormatQA(unittest.TestCase):
                 self.assertEqual(len(rows),n)
                 self.assertEqual([r["id"] for r in rows],
                                  [f"{i:03d}" for i in range(1,n+1)])
-                if y!=6:
+                if y == 2:
                     self.assertTrue(all("Pernyataan penuh SK belum dipadankan" in r["sk_display"] and
                                         "Pernyataan penuh SP belum dipadankan" in r["sp_display"]
                                         for r in rows))
+                elif y in (3,4,5):
+                    self.assertTrue(all("Pernyataan penuh SK belum dipadankan" in r["sk_display"] and
+                                        "Pernyataan penuh SP belum dipadankan" not in r["sp_display"] and
+                                        "القدرة" in r["sp_display"] and
+                                        r["source_arabic_orthography_normalized_not_visual_signoff"] and
+                                        r["source_sp_dskp_text_signoff"] is False for r in rows))
+                    self.assertEqual(len({r["sp"] for r in rows}), {3:23,4:25,5:25}[y])
                 else:
                     self.assertTrue(all("Pernyataan penuh" not in r["sk_display"] and
                                         "Pernyataan penuh" not in r["sp_display"] and
