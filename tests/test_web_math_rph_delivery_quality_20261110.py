@@ -163,7 +163,7 @@ class MathWebQuotaBoundaryTests(unittest.TestCase):
         for fmt in ("word", "pdf"):
             with self.subTest(fmt=fmt):
                 response = self.client.get("/api/web/rph/" + fmt, query_string=self.query())
-                self.assertEqual(response.status_code, 200, response.json)
+                self.assertEqual(response.status_code, 200, response.get_json(silent=True))
                 self.assertEqual(response.headers["X-RPH-Access-Mode"], "trial")
         self.assertEqual(self.balance, 8)
         self.assertEqual(len(self.debits), 2)
