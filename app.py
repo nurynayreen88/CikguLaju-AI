@@ -8442,6 +8442,8 @@ def _class_number_mismatch(s, value):
     return bool(m and int(m.group(1)) != expected)
 
 def _prompt_rph_class(cid, s, prefix=''):
+    # Allow direct typing after selecting Lesson/PdP; keep all source data intact.
+    s['waiting'] = 'rph_class'
     ex=_dynamic_class_example(s)
     class_rows=_profile_class_records(cid)
     classes=[r['name'] for r in class_rows]
