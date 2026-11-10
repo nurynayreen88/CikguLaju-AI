@@ -88,6 +88,30 @@ class SingleMenuTests(unittest.TestCase):
         self.assertEqual(sent, [])
         self.assertEqual(called, [(321, False)])
 
+    def test_manual_and_member_referral_survive_later_markup_edit(self):
+        original = [
+            [{"text": "📚 Sediakan RPH", "callback_data": "quick"}],
+            [{"text": "🧑‍🏫 Profil Saya", "callback_data": "account"}],
+        ]
+        rt, sent, _ = self.make_runtime(original)
+        rt.CIKGULAJU_MANUAL_PENGGUNA_INSTALLED = True
+        rt._private_referral_member = lambda cid: {"enabled": True}
+        rows = self.updated_rows(rt)
+        callbacks = [b.get("callback_data") for row in rows for b in row]
+        self.assertEqual(callbacks.count("manual_pengguna_pdf"), 1)
+        self.assertEqual(callbacks.count("private_referral_home"), 1)
+        self.assertEqual(callbacks.count("todayrph272"), 1)
+        self.assertEqual(sent, [])
+
+    def test_no_private_referral_for_unapproved_user(self):
+        original = [[{"text": "Profil Saya", "callback_data": "account"}]]
+        rt, sent, _ = self.make_runtime(original)
+        rt._private_referral_member = lambda cid: {"enabled": False}
+        rows = self.updated_rows(rt)
+        callbacks = [b.get("callback_data") for row in rows for b in row]
+        self.assertNotIn("private_referral_home", callbacks)
+        self.assertEqual(sent, [])
+
     def test_daily_button_hidden_if_feature_did_not_install(self):
         original = [
             [{"text": "📚 Sediakan RPH", "callback_data": "quick"}],
