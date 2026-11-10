@@ -1,0 +1,31 @@
+name: Telegram single main-menu messages regression
+on:
+  pull_request:
+    paths:
+      - 'web/telegram_special_activity_menu.py'
+      - 'web/telegram_rph_hari_ini_manual_20261110.py'
+      - 'web/web_link_telegram.py'
+      - 'tests/test_telegram_aktiviti_khas_menu_20261110.py'
+      - 'tests/test_telegram_special_activity_menu_20261110.py'
+      - 'tests/test_telegram_rph_hari_ini_manual_20261110.py'
+      - 'tests/test_telegram_single_menu_20261110.py'
+      - '.github/workflows/telegram-single-menu-20261110.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  telegram-one-menu:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -q pytest python-docx reportlab pypdf requests flask
+      - name: Compile Telegram adapters
+        run: python -m py_compile web/telegram_special_activity_menu.py web/telegram_rph_hari_ini_manual_20261110.py web/web_link_telegram.py web/telegram_rph_entry_choices_20261110.py
+      - name: Verify single menu, existing entry callbacks, daily and special RPH
+        run: python -m pytest -q tests/test_telegram_single_menu_20261110.py tests/test_telegram_aktiviti_khas_menu_20261110.py tests/test_telegram_special_activity_menu_20261110.py tests/test_telegram_rph_hari_ini_manual_20261110.py tests/test_telegram_rph_entry_choices_20261110.py
