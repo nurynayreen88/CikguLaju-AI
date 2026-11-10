@@ -57,7 +57,8 @@ HIDDEN_AUDIT_NOTES = re.compile(
     # A pedagogical instruction such as "menulis draf karangan" is valid.
     # Reject release-status labels, not the legitimate word "draf" in DSKP.
     r"(?i)(?:\bDRAF(?=\s*[:/_-]|\s+(?:SEMAKAN|UNTUK\s+SEMAKAN|TERKAWAL))|"
-    r"\bSTATUS\s*[:：]?\s*DRAF\b|\bSTAGING\b|SEBELUM READY|JANGAN MERGE|"
+    r"\bSTATUS\s*[:：]?\s*DRAF\b|DRAF\s+PKJR|MASIH\s+DRAF|"
+    r"CALON\s+BUKAN\s+VISUAL|BELUM\s+READY|\bSTAGING\b|SEBELUM READY|JANGAN MERGE|"
     r"\bdeveloper\b|ACADEMIC SIGNOFF|REKOD DITAHAN|\bHOLD\s*:)"
 )
 
