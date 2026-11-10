@@ -1,0 +1,151 @@
+name: RPT2027 Arabic Year3-5 73 sourced SP Web PDF release QA
+on:
+  pull_request:
+    branches:
+      - production/cikgulaju-web-20261105
+    paths:
+      - '.github/workflows/rpt2027-arabic-y3-y5-73-sp-release.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  review-three-original-dskp-pdfs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: release/rpt2027-arabic-y3-y5-73-sp-pdfs-20261110
+          path: web_release
+          persist-credentials: true
+      - uses: actions/checkout@v4
+        with:
+          ref: b7c0a0e509ffd4b3cf7924fb12124085391f422f
+          path: rpt_source
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install authoring and verification packages + Amiri fonts
+        run: |
+          python -m pip install 'PyMuPDF==1.24.14' 'reportlab==4.2.5' 'pypdf==5.1.0' 'beautifulsoup4==4.12.3' 'arabic-reshaper==3.0.0' 'python-bidi==0.6.3'
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-hosny-amiri
+      - name: Test source SHA, 73 SP original identities and no approval promotion
+        run: |
+          cd rpt_source
+          python -m unittest tests.test_bahasa_arab_rpt2027_source_page_audit tests.test_rpt_2027_remaining_four_subjects_staging -q
+      - name: Build teacher PDFs and inspect Arabic SP source statements
+        run: |
+          cd rpt_source
+          python - <<'PY'
+          import fitz,json,re,hashlib
+          from pathlib import Path
+          from scripts.build_rpt_2027_remaining_four_subjects_staging import build_all,arabic_records
+          expected={3:(60,23),4:(58,25),5:(60,25)}
+          docs=build_all(Path('../staged_arabic/all_20'))
+          review={}
+          for year,(count,sp_codes) in expected.items():
+              original=arabic_records(year)
+              if len(original)!=count or len({r['sp'] for r in original})!=sp_codes:
+                  raise SystemExit('Arabic original PdP/SP count mismatch')
+              if any(r['source_sp_dskp_text_signoff'] is not False or
+                     r['source_arabic_orthography_normalized_not_visual_signoff'] is not True or
+                     'Pernyataan penuh' in r['sp_display'] or
+                     'القدرة' not in r['sp_display'] for r in original):
+                  raise SystemExit('Missing Arabic original source SP text or false signoff')
+              paths=[Path(p) for subject,y,n,p in docs
+                     if subject=='bahasa_arab' and y==year and n==count]
+              if len(paths)!=1:raise SystemExit('Missing Arabic PDF '+str(year))
+              path=paths[0].resolve()
+              with fitz.open(path) as doc:
+                  pages=len(doc)
+                  if pages<5 or any(p.rect.width<=p.rect.height for p in doc):
+                      raise SystemExit('Wrong A4 landscape PDF')
+                  cover=doc[0].get_text()
+                  if 'NAMA GURU' not in cover or 'NAMA SEKOLAH' not in cover:
+                      raise SystemExit('Missing teacher profile cover')
+                  table='\n'.join(p.get_text() for p in list(doc)[1:])
+                  if 'M01' not in table or 'PdP 001' not in table:
+                      raise SystemExit('Week01 first lesson missing')
+                  if 'BELUM DIPADANKAN' in table or 'SEBELUM READY' in table:
+                      raise SystemExit('Developer release text on teacher PDF')
+                  if len(re.findall(r'[\u0600-\u08ff\ufb50-\ufeff]',table))<200:
+                      raise SystemExit('Arabic text missing/font issue')
+              data=path.read_bytes()
+              review[str(year)]={'path':str(path),'sha256':hashlib.sha256(data).hexdigest(),
+                    'bytes':len(data),'pages':pages,'pdp':count,'unique_source_sp':sp_codes,
+                    'academic_release_approved':False}
+          output=Path('../staged_arabic/three_pdf_source_review.json')
+          output.write_text(json.dumps(review,ensure_ascii=False,indent=2)+'\n','utf-8')
+          print('ARABIC_Y3_Y4_Y5_PDF_SOURCE_REVIEW_PASS',json.dumps(review,ensure_ascii=False))
+          PY
+      - name: Replace exactly three Arabic PDFs in separate Web release branch
+        run: |
+          python - <<'PY'
+          import fitz,json,hashlib,shutil
+          from pathlib import Path
+          root=Path('web_release/rpt_2027/web_2027_pdfs')
+          manifest=root/'manifest.json'
+          m=json.loads(manifest.read_text('utf-8'))
+          info=json.loads(Path('staged_arabic/three_pdf_source_review.json').read_text('utf-8'))
+          baseline={k:dict(v) for k,v in m['files'].items()}
+          keys={f'bahasa_arab:{y}' for y in (3,4,5)}
+          if (m.get('count')!=56 or len(baseline)!=56 or
+              m.get('academic_final_approved') is not False or set(info)!={'3','4','5'}):
+              raise SystemExit('Web 56 PDF manifest academic approval drift')
+          for year,entry in info.items():
+              key='bahasa_arab:'+year
+              previous=m['files'][key]
+              current=(root/previous['path']).read_bytes()
+              if hashlib.sha256(current).hexdigest()!=previous['sha256']:
+                  raise SystemExit('Original Arabic PDF SHA mismatch '+key)
+              src=Path(entry['path'])
+              b=src.read_bytes()
+              if hashlib.sha256(b).hexdigest()!=entry['sha256'] or entry['academic_release_approved'] is not False:
+                  raise SystemExit('Updated Arabic PDF SHA/status mismatch '+key)
+              shutil.copyfile(src,root/previous['path'])
+              for field in ('sha256','bytes','pages'):
+                  previous[field]=entry[field]
+          if {k for k in baseline if m['files'][k]!=baseline[k]}!=keys:
+              raise SystemExit('Wrong Arabic manifest entry modifications')
+          for key,previous in m['files'].items():
+              data=(root/previous['path']).read_bytes()
+              if hashlib.sha256(data).hexdigest()!=previous['sha256'] or len(data)!=previous['bytes']:
+                  raise SystemExit('Web PDF checksum mismatch '+key)
+              with fitz.open(root/previous['path']) as doc:
+                  if len(doc)!=previous['pages']:raise SystemExit('Pages mismatch '+key)
+              if key not in keys and baseline[key]!=previous:
+                  raise SystemExit('Other 53 PDFs changed')
+          m['pages']=sum(v['pages'] for v in m['files'].values())
+          m['source_projection']='ARABIC_Y3_Y4_Y5_73_ORIGINAL_DSKP_SP_TEXT_SOURCE_BACKED_ACADEMIC_HOLD'
+          m['academic_final_approved']=False
+          manifest.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n','utf-8')
+          print('ARABIC_Y345_THREE_PDF_RELEASE_REVIEW_OK; 53 untouched; academic approval false')
+          PY
+      - name: Commit only three PDFs and manifest to candidate branch
+        run: |
+          cd web_release
+          git config user.name cikgulaju-rpt-ci
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add rpt_2027/web_2027_pdfs
+          git diff --cached --name-only > ../arabic_changed_paths.txt
+          python - <<'PY'
+          from pathlib import Path
+          changed=set(Path('../arabic_changed_paths.txt').read_text().splitlines())
+          expected={f'rpt_2027/web_2027_pdfs/bahasa_arab/tahun_{y}.pdf' for y in (3,4,5)}
+          expected.add('rpt_2027/web_2027_pdfs/manifest.json')
+          if changed!=expected:raise SystemExit('Unexpected teacher Web file paths '+repr(changed))
+          print('EXACT_ARABIC_Y345_FOUR_FILES_ONLY')
+          PY
+          git commit -m 'rpt2027(web): source-backed Arabic SP full text Year3-5, preserve academic hold'
+          git push origin HEAD:refs/heads/release/rpt2027-arabic-y3-y5-73-sp-pdfs-20261110
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: rpt2027-arabic-y3-y4-y5-73-sp-three-pdf-review
+          path: |
+            staged_arabic/three_pdf_source_review.json
+            arabic_changed_paths.txt
+          if-no-files-found: warn
+          retention-days: 30
