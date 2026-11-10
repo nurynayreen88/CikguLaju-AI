@@ -76,6 +76,18 @@ class MathQualityReadOnlyTests(unittest.TestCase):
                 self.assertEqual(report["explicit_phase_count"], 6)
                 self.assertEqual(source, original_bytes)
 
+    def test_render_web_without_optional_document_packages(self):
+        # The live Render Web build installs only Flask and Gunicorn.
+        word_bytes = sample("word", bad=True)
+        pdf_bytes = sample("pdf", bad=True)
+        with patch.dict("sys.modules", {"docx": None}):
+            report = inspect_math_rph_document(SLOT, "word", word_bytes)
+        self.assertIn("EXPLICIT_PHASES_EXCEED_SLOT", report["issues"])
+        with patch.dict("sys.modules", {"pypdf": None}):
+            report = inspect_math_rph_document(SLOT, "pdf", pdf_bytes)
+        self.assertEqual(report["issues"], [])
+        self.assertEqual(report["inspection"], "PDF_PARSER_UNAVAILABLE")
+
     def test_complete_sixty_minute_plan_is_not_blocked(self):
         for fmt in ("word", "pdf"):
             with self.subTest(fmt=fmt):
