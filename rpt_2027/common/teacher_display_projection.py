@@ -21,7 +21,7 @@ _INTERNAL = re.compile(
     r"BUKAN UNTUK GURU|BUKAN (?:SEMAKAN|HALAMAN AKTIVITI)|"
     r"JANGAN (?:MERGE|DEPLOY|ANJAK AUTOMATIK)|"
     r"BELUM LULUS|BELUM SELESAI|BELUM DIBUAT|"
-    r"CALON PEMBETULAN|KONFLIK SUMBER|"
+    r"CALON PEMBETULAN|CALON BUKAN VISUAL|MASIH DRAF|RPT MASIH DRAF|KONFLIK SUMBER|"
     r"BUKU TEKS.*?BELUM SAH|"
     r"TEKS.*?BELUM SAH|"
     r"TIADA JANAAN AUTOMATIK)\b"
@@ -67,11 +67,18 @@ def public_note(row: dict) -> str:
     # This is a developer instruction, not a teaching material. Keep the
     # original Mushaf/ayat reference and remove only the review qualifier.
     source = re.sub(r"(?i);\s*tidak mereka halaman buku teks\.?","",source)
-    # Split compound notes conservatively and discard entire questionable
-    # clauses rather than silently substituting unverified facts.
+    # Remove only explicitly editorial qualifiers. A genuine teaching step
+    # such as "menulis draf karangan" is never changed or rejected.
+    source = re.sub(r"(?i)\s*\(\s*draf\s*\)", "", source)
+    # Split compound notes conservatively. Keep sourced PKJR activity/page
+    # guidance while stripping the publisher-only "DRAF PKJR" prefix.
     safe = []
     for part in _SEPARATOR.split(source):
         part = part.strip(" ;,|")
+        if re.match(r"(?i)^DRAF\s+PKJR\s*[:—–-]", part):
+            part = re.sub(r"(?i)^DRAF\s+PKJR\s*[:—–-]\s*", "", part)
+            part = re.sub(r"(?i)\s*[;,]\s*belum\s+READY\b\.?", "", part)
+            part = part.strip(" ;,|")
         if part and part.casefold() != "draf" and not is_internal(part):
             safe.append(part)
     return re.sub(r"\.{2,}", ".", " | ".join(safe))
