@@ -170,12 +170,15 @@ def _kssr2017_official_code_sets_y4_y5():
     return result
 
 def _proposed_week_slots(master):
-    # NO fiction of exact lesson dates or teacher timetable. Skip first
-    # transition week, the all-state disruption week M06, and M44 closing.
-    # All slots refer to master Kumpulan A/B week *windows*, not PdP days.
-    numbers=[i for i in range(2,44) if i!=6]
+    # Year 2-6 must not lose M01: the transition-week assumption belongs
+    # only to an explicitly sourced school Year 1 programme. KPM opens
+    # *both* 2027 school groups on 4 January. This remains a provisional
+    # week-window projection and does not create or reorder any Sains PdP.
+    # M06 is the February CNY school closure window; M44 is still reserved
+    # for end-of-year school arrangements. Never infer exact PdP days.
+    numbers=[i for i in range(1,44) if i!=6]
     week_ids=[f"M{i:02d}" for i in numbers]
-    if len(week_ids)!=41 or any(w not in master["A"] or w not in master["B"] for w in week_ids):
+    if len(week_ids)!=42 or any(w not in master["A"] or w not in master["B"] for w in week_ids):
         raise ValueError("KPM proposed week windows incomplete")
     return week_ids
 
