@@ -120,6 +120,9 @@ class EnglishY3RoleLayoutTests(unittest.TestCase):
                     self.assertNotIn("**Teacher:**", out[field])
                     self.assertNotIn("**Pupils:**", out[field])
                     self.assertNotIn("NOT READY FOR RELEASE", out[field])
+                    self.assertNotIn("CikguLaju original assessment", out[field])
+                    self.assertNotIn("`materials/lesson_", out[field])
+                    self.assertNotIn("**Resource status:", out[field])
 
 
 if __name__ == "__main__":
