@@ -93,6 +93,15 @@ def telegram_widget_callback():
             current_app.logger.warning("Web new-user admin notice unavailable: %s",
                                        type(exc).__name__)
     ticket = issue_session_ticket(uid, config["CIKGULAJU_WEB_SESSION_SECRET"])
+    # Record only a verified, registered Web login. Analytics must NEVER
+    # block access or change credits, entitlements or session issuance.
+    if config.get("account_backend") == "supabase":
+        try:
+            from web.web_login_analytics import record_verified_web_login
+            record_verified_web_login(config, uid)
+        except Exception as exc:
+            current_app.logger.warning("Web login analytics unavailable: %s",
+                                       type(exc).__name__)
     response = make_response(jsonify({"authenticated": True}), 200)
     response.set_cookie(COOKIE, ticket, secure=True, httponly=True, samesite="Lax",
                         max_age=43200, path="/")
