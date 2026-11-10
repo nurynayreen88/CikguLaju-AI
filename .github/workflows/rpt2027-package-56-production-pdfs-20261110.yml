@@ -16,7 +16,7 @@ jobs:
       - name: Checkout exactly production Web PDF revision
         uses: actions/checkout@v4
         with:
-          ref: e72597c920dc7c0787862f35c59a1ad2912abe86
+          ref: production/cikgulaju-web-20261105
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -24,7 +24,7 @@ jobs:
       - name: Audit and pack 56 user-facing Year2-6 RPT PDFs (no writes)
         run: |
           python - <<'PY'
-          import json,zipfile,hashlib,re
+          import json,zipfile,hashlib,re,subprocess
           from collections import Counter
           from pathlib import Path
           import fitz
@@ -36,7 +36,8 @@ jobs:
           assert len(c)==12 and sum(c.values())==56
           out=Path('output');out.mkdir(exist_ok=True)
           target=out/'CIKGULAJU_RPT2027_56_PDF_TAHUN_2_HINGGA_6_SEMAKAN.zip'
-          pages=0;report={'web_commit':'e72597c920dc7c0787862f35c59a1ad2912abe86',
+          pages=0;report={'web_commit':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
+                         'checked_branch':'production/cikgulaju-web-20261105',
                          'verified_source_files':56,'academic_final_approved':False,
                          'subjects':dict(c),'pdfs':[]}
           with zipfile.ZipFile(target,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=8) as z:
@@ -48,9 +49,18 @@ jobs:
                       assert len(pdf)==info['pages'] and len(pdf)>=2,key
                       assert all(a.rect.width>a.rect.height for a in pdf),key
                       text='\n'.join(pg.get_text() for pg in list(pdf)[1:])
-                      has_m01=bool(re.search(r'(?<!\d)M\s*01(?!\d)',text,re.I))
-                      row={'key':key,'file':info['path'],
-                           'pages':len(pdf),'has_m01_extracted':has_m01}
+                      has_m01=bool(re.search(r'(?<!\\d)M\\s*01(?!\\d)',text,re.I))
+                      first_content_page=pdf[1].get_text()
+                      first_week_pdp=bool(re.search(r'(?i)\\b(?:PdP|Lesson)\\s*0*1\\b',first_content_page))
+                      first_page_m01=bool(re.search(r'(?i)(?<!\\d)M\\s*01(?!\\d)',first_content_page))
+                      leaked_notes=re.findall(
+                          r'(?i)Buka DSKP asal|pemetaan buku teks belum disahkan|'
+                          r'CALON BUKAN VISUAL|Masih DRAF|DRAF PKJR',text)
+                      row={'key':key,'file':info['path'],'pages':len(pdf),
+                           'has_m01_extracted':has_m01,
+                           'first_page_m01':first_page_m01,
+                           'first_week_pdp_001':first_week_pdp,
+                           'internal_note_leaks':sorted(set(leaked_notes))}
                       pages+=len(pdf)
                       report['pdfs'].append(row)
                   z.write(p,arcname=info['path'])
@@ -64,6 +74,9 @@ jobs:
                   'Tahun 1 KP2027 tidak termasuk dalam pakej ini.\n')
           report['total_pages']=pages
           report['m01_extract_true']=sum(x['has_m01_extracted'] for x in report['pdfs'])
+          report['m01_first_page_true']=sum(x['first_page_m01'] for x in report['pdfs'])
+          report['first_week_pdp_001_true']=sum(x['first_week_pdp_001'] for x in report['pdfs'])
+          report['internal_note_leak_files']=[x['key'] for x in report['pdfs'] if x['internal_note_leaks']]
           report['zip_sha256']=hashlib.sha256(target.read_bytes()).hexdigest()
           (out/'CIKGULAJU_RPT2027_56_PDF_CHECKSUM_REPORT.json').write_text(
               json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
@@ -71,9 +84,15 @@ jobs:
               assert len([x for x in z.namelist() if x.endswith('.pdf')])==56
               assert z.testzip() is None
           assert pages==m['pages']
-          print('PRODUCTION_RPT2027_56_PDF_ZIP_READY',
+          print('PRODUCTION_RPT2027_56_PDF_AUDIT', 'commit',report['web_commit'],
               'pages',pages,'m01',report['m01_extract_true'],
+              'm01_page1',report['m01_first_page_true'],
+              'pdp001_page1',report['first_week_pdp_001_true'],
+              'note_leak_files',report['internal_note_leak_files'],
               'SHA',report['zip_sha256'],flush=True)
+          assert report['m01_first_page_true']==56, 'Missing M01 on first content page'
+          assert report['first_week_pdp_001_true']==56, 'M01 has no first PdP/Lesson'
+          assert not report['internal_note_leak_files'], 'Internal instructions leaked in teacher PDFs'
           PY
       - uses: actions/upload-artifact@v4
         with:
