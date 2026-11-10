@@ -98,8 +98,11 @@ def test_menu_is_additive_and_existing_callbacks_are_unchanged():
     result = bot.menu(123, show_persistent=True)
     assert result == {"original": True, "persistent": True}
     assert bot.menu_calls == 1
+    assert bot.messages == []  # no extra message on the main menu
+    _act(bot, "home")
+    assert any(PREFIX + "home" not in str(keyboard)
+               for _, _, keyboard in bot.messages)
     assert any("RPH Aktiviti Khas" in text for _, text, _ in bot.messages)
-    assert any(PREFIX + "home" in str(keyboard) for _, _, keyboard in bot.messages)
     assert bot.callback(123, "rpt2027_home") == "ordinary route"
     assert bot.fallback_calls == ["rpt2027_home"]
 
