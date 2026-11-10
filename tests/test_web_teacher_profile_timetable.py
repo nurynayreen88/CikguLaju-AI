@@ -152,11 +152,11 @@ class WebTeacherProfileUiTests(unittest.TestCase):
     def test_profile_fields_and_schedule_editor_are_present(self):
         from pathlib import Path
         html=(Path(__file__).resolve().parents[1]/"web_v1_static_preview"/"index.html").read_text(encoding="utf-8")
-        for ident in ("profile-name","profile-school","profile-state","profile-classes",
+        for ident in ("profile-name","profile-school","profile-state","profile-district","profile-school-choice","profile-classes",
                       "teacher-profile-form","timetable-rows","timetable-add",
                       "timetable-save","profile-save","profile-access-summary"):
             self.assertIn('id="'+ident+'"',html)
-        self.assertIn('src="/assets/teacher-profile.js?v=timetable-subject-picker-20261107"',html)
+        self.assertIn('src="/assets/teacher-profile.js?v=school-picker-20261111"',html)
         self.assertIn("loadTeacherProfile();",html)
         self.assertIn('id="view-rpt"',html)
         self.assertIn('id="view-rph"',html)
