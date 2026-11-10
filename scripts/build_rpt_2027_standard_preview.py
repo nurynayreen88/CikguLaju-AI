@@ -14,6 +14,7 @@ from rpt_2027.common.standard_text_enrichment import enrich_moral, enrich_psv, e
 from rpt_2027.common.calendar_week_mapping_staging import reconcile_psv_weeks
 from rpt_2027.common.rbt_truncated_title_guard_staging import expand_rbt_display_titles
 from rpt_2027.common.rbt_2026_week_source_annotation_staging import annotate_rbt_2026_week_reference
+from rpt_2027.common.week1_owner_plan_20261110 import allocate_rbt_weeks
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "staging" / "rpt_2027_seragam_2026" / "pdf"
@@ -136,6 +137,10 @@ def build_all(destination=OUT):
     ):
         for year in years:
             rows=loader(year)
+            if subject=="rbt":
+                # Keep rbt_records() source-faithful for teacher override paths.
+                # Only staging PDF uses the owner-requested provisional plan.
+                rows=allocate_rbt_weeks(rows, year=year)
             if any(not row.get("sk_display") or not row.get("sp_display") for row in rows):
                 raise ValueError("All staged RPT rows must have full sourced SK/SP statements")
             target=destination / f"CIKGULAJU_RPT_{subject.upper()}_TAHUN_{year}_2027_FORMAT_SERAGAM_DRAF.pdf"
