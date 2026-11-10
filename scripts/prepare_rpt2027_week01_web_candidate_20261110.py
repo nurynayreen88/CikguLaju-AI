@@ -54,8 +54,11 @@ EXPECTED_FIRST = {"bahasa_melayu": 3, "pendidikan_islam": 2,
                   "bahasa_arab": 1, "rbt": 1}
 WEEK_REGEX = re.compile(r"(?<![A-Za-z0-9])M\s*01(?![0-9])", re.I)
 HIDDEN_AUDIT_NOTES = re.compile(
-    r"(?i)(?:\bDRAF\b|\bSTAGING\b|SEBELUM READY|JANGAN MERGE|"
-    r"\bdeveloper\b|ACADEMIC SIGNOFF|REKOD DITAHAN|\bHOLD\b)"
+    # A pedagogical instruction such as "menulis draf karangan" is valid.
+    # Reject release-status labels, not the legitimate word "draf" in DSKP.
+    r"(?i)(?:\bDRAF(?=\s*[:/_-]|\s+(?:SEMAKAN|UNTUK\s+SEMAKAN|TERKAWAL))|"
+    r"\bSTATUS\s*[:：]?\s*DRAF\b|\bSTAGING\b|SEBELUM READY|JANGAN MERGE|"
+    r"\bdeveloper\b|ACADEMIC SIGNOFF|REKOD DITAHAN|\bHOLD\s*:)"
 )
 
 
@@ -178,8 +181,10 @@ def candidate_package(web_root: Path, output: Path):
                     if any(k not in cover for k in COVER_KEYS):
                         raise ValueError(f"{identity}: Web cover slots missing")
                     teaching = "\n".join(page.get_text("text") for page in list(d)[1:])
-                    if HIDDEN_AUDIT_NOTES.search(teaching):
-                        raise ValueError(f"{identity}: internal author status leaked into PDF")
+                    found = HIDDEN_AUDIT_NOTES.search(teaching)
+                    if found:
+                        snippet = teaching[max(0, found.start()-65):found.end()+65]
+                        raise ValueError(f"{identity}: internal author status in teacher PDF: {snippet!r}")
                     if sub not in ("pendidikan_islam", "bahasa_arab") and not WEEK_REGEX.search(teaching):
                         raise ValueError(f"{identity}: Week01 not printed")
                     if sub in ("bahasa_arab", "pendidikan_islam") and not re.search(r"2027", teaching):
