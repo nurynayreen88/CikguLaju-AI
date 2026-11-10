@@ -53,14 +53,21 @@ def apply(st, rows):
     if not intro or not any(body for _, body in activities) or not closure:
         return rows
     result = dict(rows)
-    result["SET INDUKSI"] = intro
-    lines = [title + "\n" + body for title, body in activities if body]
+    def clean_phase(text):
+        # Word/PDF table cells are plain text. Keep teacher and pupil actions on
+        # separate lines and remove Markdown-only bold delimiters, not actions.
+        text = re.sub(r"\*\*(Teacher|Pupils):\*\*", r"\n\1:", text, flags=re.I)
+        text = re.sub(r"\*\*([^*\n]+)\*\*", r"\1", text)
+        return re.sub(r"\n{3,}", "\n\n", text).strip()
+
+    result["SET INDUKSI"] = clean_phase(intro)
+    lines = [title + "\n" + clean_phase(body) for title, body in activities if body]
     if assessment:
-        result["PENTAKSIRAN"] = assessment
+        result["PENTAKSIRAN"] = clean_phase(assessment)
     result["AKTIVITI UTAMA"] = "\n\n".join(lines)
     # Internal QA notes belong in source audits, never in teacher-facing RPH.
     closure = re.split(r"(?im)^\s*\*\*(?:QA(?: status)?|Status|Source|Official SOW alignment|Release gate|Verification|Verified SOW lesson outline):\*\*", closure, maxsplit=1)[0].strip()
-    result["PENUTUP"] = closure
+    result["PENUTUP"] = clean_phase(closure)
     ref = re.search(
         r"(?im)^\*\*(?:References|Teaching materials|Materials(?:\s*/\s*references)?|Resources):\*\*\s*([^\n]+)",
         source)
