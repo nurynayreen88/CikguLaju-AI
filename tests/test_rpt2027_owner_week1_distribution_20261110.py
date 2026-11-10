@@ -55,6 +55,19 @@ class OwnerRPTWeek01QA(unittest.TestCase):
                                     for r in rows[:3]))
                 self.assert_cal_dates(rows)
 
+    def test_bm_week01_three_pdp_share_one_merged_week_cell(self):
+        from rpt_2027.common.format_2026_layout_preview import week_merge_ranges
+        for year in range(2, 7):
+            with self.subTest(year=year):
+                rows = week1_proposed_records("bahasa_melayu", year, bm_records)
+                groups = week_merge_ranges(
+                    rows, max_rows_per_group=2, first_group_max_rows=3)
+                self.assertEqual(groups[0], (1, 3))
+                self.assertTrue(all(last-first+1 <= 2 for first,last in groups[1:]))
+                self.assertEqual([r["id"] for r in rows[:3]], ["001", "002", "003"])
+                self.assertEqual([r["week"] for r in rows[:3]], ["M01"] * 3)
+                self.assertEqual(rows[3]["week"], "M02")
+
     def test_pi_5_years_begin_2_pdp_in_m01_and_preserve_holds(self):
         counts = {2: 112, 3: 147, 4: 151, 5: 143, 6: 143}
         for year, n in counts.items():

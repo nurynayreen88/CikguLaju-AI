@@ -98,7 +98,7 @@ def validate_rows(subject, year, records):
     return True
 
 
-def week_merge_ranges(records, *, max_rows_per_group=None):
+def week_merge_ranges(records, *, max_rows_per_group=None, first_group_max_rows=None):
     """Contiguous table-row ranges (1-indexed; row 0 is the table header).
 
     Only merge records that share an *explicit* week label and identical A/B
@@ -117,9 +117,12 @@ def week_merge_ranges(records, *, max_rows_per_group=None):
         current = key(records[start])
         end = start
         if current is not None:
+            # Preserve compact pages for all later weeks, while allowing the
+            # teacher's first shorter school week to appear in one merged cell.
+            max_rows = first_group_max_rows if start == 0 and first_group_max_rows is not None else max_rows_per_group
             while (end + 1 < len(records)
                    and key(records[end + 1]) == current
-                   and (max_rows_per_group is None or end - start + 1 < max_rows_per_group)):
+                   and (max_rows is None or end - start + 1 < max_rows)):
                 end += 1
         ranges.append((start + 1, end + 1))
         start = end + 1
@@ -144,7 +147,7 @@ def normalize_pdf_text(value):
     return printable
 
 
-def build_preview(subject, year, records, destination, *, logo_path=None, school_name="", teacher_name="", max_span_rows=None):
+def build_preview(subject, year, records, destination, *, logo_path=None, school_name="", teacher_name="", max_span_rows=None, first_week_span_rows=None):
     """Create compact, multi-page landscape PDF using only trusted row content.
 
     One 5-column table: MINGGU/TARIKH | UNIT/TAJUK/PDp | SK | SP | CATATAN.
@@ -333,7 +336,11 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
     table_rows = [[p(t,size=8.0,leading=11.7,strong=True,color="#25323a") for t in headings]]
     if max_span_rows is not None and (type(max_span_rows) is not int or not 1 <= max_span_rows <= 8):
         raise ValueError("Invalid maximum merged week rows")
-    week_ranges = week_merge_ranges(records, max_rows_per_group=max_span_rows)
+    if first_week_span_rows is not None and (type(first_week_span_rows) is not int or not 1 <= first_week_span_rows <= 8):
+        raise ValueError("Invalid first-week merged rows")
+    week_ranges = week_merge_ranges(
+        records, max_rows_per_group=max_span_rows,
+        first_group_max_rows=first_week_span_rows)
     grouped_followers = {index for first, last in week_ranges for index in range(first + 1, last + 1)}
     for index, row in enumerate(records, 1):
         week = row.get("week","").strip() or "—"
