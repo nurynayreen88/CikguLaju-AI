@@ -319,7 +319,7 @@ async function teacherApi(url, method, body) {
   return data;
 }
 
-// All choices come from the server's authenticated Supabase school directory.
+// All choices come from the server's authenticated pangkalan data school directory.
 // Keep existing free-text school profiles readable until their owner selects
 // an exact school code; never silently replace or erase an old school name.
 const schoolStateField=document.getElementById("profile-state");
@@ -345,7 +345,7 @@ async function getSchoolChoices(kind, state="", district="") {
   if(kind!=="states")params.set("state",state);
   if(kind==="schools")params.set("district",district);
   const data=await teacherApi("/api/web/teacher/school-directory?"+params,"GET");
-  if(!Array.isArray(data.items))throw new Error("Senarai sekolah Supabase tidak sah.");
+  if(!Array.isArray(data.items))throw new Error("Senarai sekolah pangkalan data tidak sah.");
   return data.items;
 }
 
@@ -387,7 +387,7 @@ async function loadSchoolPickerForProfile(profile) {
   schoolStateField.value=savedState;
   populateSchoolSelect(schoolDistrictField,"Pilih negeri dahulu",[]);
   populateSchoolSelect(schoolChoiceField,"Pilih PPD dahulu",[]);
-  schoolPickerNotice.textContent="Memuatkan negeri, PPD dan sekolah dari Supabase…";
+  schoolPickerNotice.textContent="Memuatkan negeri, PPD dan sekolah dari pangkalan data…";
   try {
     const states=await getSchoolChoices("states");
     if(seq!==schoolPickerRequest)return;
@@ -445,7 +445,7 @@ schoolChoiceField.addEventListener("change",()=>{
   const chosen=schoolCatalogOptions.find(row=>row.value===schoolChoiceField.value);
   schoolNameField.value=chosen?.label||"";
   schoolPickerNotice.textContent=chosen
-    ? "Nama rasmi sekolah diisi automatik; tekan Simpan Profil untuk menyimpannya di Supabase."
+    ? "Nama rasmi sekolah diisi automatik; tekan Simpan Profil untuk menyimpannya di pangkalan data."
     : "Pilih sekolah daripada senarai.";
 });
 
