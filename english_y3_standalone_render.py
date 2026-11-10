@@ -56,6 +56,13 @@ def apply(st, rows):
     def clean_phase(text):
         # Word/PDF table cells are plain text. Keep teacher and pupil actions on
         # separate lines and remove Markdown-only bold delimiters, not actions.
+        # Strip drafting-only labels/working file paths, but retain the pupil
+        # assessment instructions in the source. This does not approve content.
+        text = re.sub(r"(?i)\*\*CikguLaju original assessment:\*\*\s*", "", text)
+        text = re.sub(
+            r"(?i)\bPupils use\s+`materials/lesson_[0-9]{3}_[a-z0-9_-]+\.md`\s+to\s+",
+            "Pupils ", text,
+        )
         text = re.sub(r"\*\*(Teacher|Pupils):\*\*", r"\n\1:", text, flags=re.I)
         text = re.sub(r"\*\*([^*\n]+)\*\*", r"\1", text)
         text = re.sub(r"[ \t]+\n", "\n", text)
