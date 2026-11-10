@@ -72,9 +72,18 @@ class RemainingRPTFormatQA(unittest.TestCase):
                 self.assertEqual(len(rows),n)
                 self.assertEqual([r["id"] for r in rows],
                                  [f"{i:03d}" for i in range(1,n+1)])
-                self.assertTrue(all("Pernyataan penuh SK belum dipadankan" in r["sk_display"] and
-                                    "Pernyataan penuh SP belum dipadankan" in r["sp_display"]
-                                    for r in rows))
+                if y!=6:
+                    self.assertTrue(all("Pernyataan penuh SK belum dipadankan" in r["sk_display"] and
+                                        "Pernyataan penuh SP belum dipadankan" in r["sp_display"]
+                                        for r in rows))
+                else:
+                    self.assertTrue(all("Pernyataan penuh" not in r["sk_display"] and
+                                        "Pernyataan penuh" not in r["sp_display"] and
+                                        "القدرة" in r["sp_display"] and
+                                        r["source_arabic_orthography_normalized_not_visual_signoff"]
+                                        for r in rows))
+                    self.assertEqual(len({r["sp"] for r in rows}),25)
+                    self.assertEqual(rows[0]["sp"],"1.1.1")
                 self.assertTrue(all(not r.get("week") and not r.get("a_start")
                                     for r in rows))
                 self.assertTrue(all(r["source_sp_dskp_pdf_url"].startswith("https://drive.google.com/file/d/")

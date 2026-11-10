@@ -79,10 +79,18 @@ class ArabicSPPageEvidenceQA(unittest.TestCase):
             expected = {2: 60, 3: 60, 4: 58, 5: 60, 6: 60}[year]
             self.assertEqual(len(records), expected)
             for row in records:
-                self.assertIn("Pernyataan penuh SK belum dipadankan",
-                              row["sk_display"])
-                self.assertIn("Pernyataan penuh SP belum dipadankan",
-                              row["sp_display"])
+                if year<6:
+                    self.assertIn("Pernyataan penuh SK belum dipadankan",
+                                  row["sk_display"])
+                    self.assertIn("Pernyataan penuh SP belum dipadankan",
+                                  row["sp_display"])
+                else:
+                    self.assertNotIn("Pernyataan penuh",row["sk_display"])
+                    self.assertNotIn("Pernyataan penuh",row["sp_display"])
+                    self.assertIn("القدرة",row["sp_display"])
+                    self.assertTrue(row["source_sk_opening_not_full_thematic_examples"])
+                    self.assertTrue(row["source_arabic_orthography_normalized_not_visual_signoff"])
+                    self.assertFalse(row["source_sp_dskp_text_signoff"])
                 self.assertFalse(row.get("week"))
                 self.assertFalse(row.get("a_start"))
                 self.assertIn("DSKP SP PDF hlm ", row["note"])
