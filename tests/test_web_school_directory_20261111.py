@@ -114,6 +114,27 @@ class SchoolProfileTests(unittest.TestCase):
         self.assertEqual(captured["class_profiles"][0]["name"],"4 Amanah")
         verified.assert_called_once()
 
+    def test_saved_school_identity_does_not_require_directory_for_class_edit(self):
+        old = {**self.school(), "telegram_user_id":123,
+               "display_name":"Cikgu Ahmad",
+               "updated_at":"2026-11-11T00:00:00+00:00",
+               "class_profiles":[{"name":"4 Amanah","students":28,
+                                  "timetable":[]}],
+               "class_names":["4 Amanah"]}
+        form=self.form(school_name=old["school_name"],
+                       class_names=["4 Amanah","5 Amanah"],
+                       version=old["updated_at"])
+        with patch("web.teacher_profile_store._profile_record",return_value=old), \
+             patch("web.school_directory_store.school_by_code") as directory, \
+             patch("web.teacher_profile_store._save",return_value="saved") as save:
+            self.assertEqual(save_profile("https://db.example.invalid","TEST",123,
+                                          form),"saved")
+            directory.assert_not_called()
+            values=save.call_args.args[4]
+            self.assertEqual(values["school_code"],"JBA0001")
+            self.assertEqual(values["class_profiles"][0]["students"],28)
+            self.assertEqual(values["class_profiles"][1]["name"],"5 Amanah")
+
     def test_school_code_cannot_be_attached_to_other_state_or_ppd(self):
         for changed in ({"state_name":"Kedah"},{"district_name":"PPD JOHOR BAHRU"}):
             with self.subTest(changed=changed), \
