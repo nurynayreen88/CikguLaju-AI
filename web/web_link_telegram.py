@@ -8,6 +8,8 @@ import requests
 WEB_URL = "https://cikgulaju-web.onrender.com/"
 BUTTON = {"text": "🌐 Web CikguLaju", "url": WEB_URL}
 TODAY_BUTTON = {"text": "⚡ RPH Hari Ini", "callback_data": "todayrph272"}
+MANUAL_BUTTON = {"text": "📖 Manual Pengguna", "callback_data": "manual_pengguna_pdf"}
+REFERRAL_BUTTON = {"text": "🎁 Referral Saya", "callback_data": "private_referral_home"}
 
 
 def install(runtime):
@@ -46,6 +48,33 @@ def install(runtime):
                                 for b in row)), len(rows))
                 rows.insert(after_rph, [dict(TODAY_BUTTON)])
                 changed = True
+            # Earlier menu adapters edit the Telegram message, but the original
+            # sendMessage response does not reflect their later edits. Restore
+            # public manual and verified private referral before final edit.
+            if (getattr(runtime, "CIKGULAJU_MANUAL_PENGGUNA_INSTALLED", False)
+                    and not any(b.get("callback_data") == "manual_pengguna_pdf"
+                                for row in rows for b in row)):
+                after_profile = next(
+                    (i + 1 for i, row in enumerate(rows)
+                     if any(b.get("callback_data") == "account"
+                            for b in row)), len(rows))
+                rows.insert(after_profile, [dict(MANUAL_BUTTON)])
+                changed = True
+            member_lookup = getattr(runtime, "_private_referral_member", None)
+            if callable(member_lookup):
+                try:
+                    member = member_lookup(cid)
+                except Exception:
+                    member = None
+                if (isinstance(member, dict) and member.get("enabled") is True
+                        and not any(b.get("callback_data") == "private_referral_home"
+                                    for row in rows for b in row)):
+                    after_manual = next(
+                        (i + 1 for i, row in enumerate(rows)
+                         if any(b.get("callback_data") == "manual_pengguna_pdf"
+                                for b in row)), len(rows))
+                    rows.insert(after_manual, [dict(REFERRAL_BUTTON)])
+                    changed = True
             if not any(b.get("url") == WEB_URL for row in rows for b in row):
                 index = next((i+1 for i, row in enumerate(rows)
                               if any(b.get("callback_data") == "account"
