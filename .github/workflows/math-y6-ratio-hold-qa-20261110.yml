@@ -1,0 +1,41 @@
+name: Mathematics Year 6 source-backed ratio HOLD and private Web bridge
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "web/math_y6_ratio_source_hold_20261110.py"
+      - "web/telegram_verified_sequence_rph_bridge.py"
+      - "tests/test_math_y6_ratio_source_hold_20261110.py"
+      - "audits/matematik_y6_ratio_6_source_hold_20261110.md"
+      - ".github/workflows/math-y6-ratio-hold-qa-20261110.yml"
+  push:
+    branches: [main]
+    paths:
+      - "web/math_y6_ratio_source_hold_20261110.py"
+      - "web/telegram_verified_sequence_rph_bridge.py"
+      - "tests/test_math_y6_ratio_source_hold_20261110.py"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  teacher-curriculum-and-credit-guard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install minimal Telegram native Word/PDF Flask QA dependencies
+        run: python -m pip install "flask==3.1.3" "python-docx==1.1.2" "pypdf==5.1.0" "reportlab==4.2.5"
+      - name: Validate six known Y6 ratio conflicts and no auto-unhold
+        run: python -m unittest tests.test_math_y6_ratio_source_hold_20261110 -v
+      - name: Regression — Telegram private RPH Word/PDF and Sains isolation
+        run: python -m unittest tests.test_telegram_math_native_quality_20261110 -v
+      - name: Regression — duplicate SK only corrected in output presentation
+        run: python -m unittest tests.test_math_rph_sk_display_fix_20261110 -v
+      - name: Syntax guard
+        run: python -m py_compile web/math_y6_ratio_source_hold_20261110.py web/telegram_verified_sequence_rph_bridge.py
