@@ -64,11 +64,12 @@ def public_note(row: dict) -> str:
     source = re.sub(r"(?i)\bPBD\s*\(sumber\)\s*:", "PBD:", source)
     source = re.sub(r"(?i)\bAktiviti\s*\(sumber\)\s*:", "Aktiviti:", source)
     source = re.sub(r"(?i)\s*\(bukan halaman aktiviti disahkan\)", "", source)
+    # Never consume a trailing ' | Penilaian:' field on the same source line.
     # PI standalone source contains standalone developer-review lines in the
     # original Bahan field (Year 3 lessons 006/050 and Year 6 lesson 087).
     # Strip only those lines, preserving Mushaf, tasmi' and assessment text.
     source = re.sub(
-        r"(?im)^[ \t]*(?:SEMAKAN KURIKULUM|SEMAKAN DSKP DIPERLUKAN)\s*:[^\r\n]*",
+        r"(?im)^[ \t]*(?:SEMAKAN KURIKULUM|SEMAKAN DSKP DIPERLUKAN)\s*:[^\r\n|]*",
         "", source,
     )
     source = re.sub(
