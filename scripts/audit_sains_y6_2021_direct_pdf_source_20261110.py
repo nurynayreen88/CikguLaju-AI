@@ -16,6 +16,11 @@ ORIGINAL_LINKS = [
     "https://c.zoom-a.com/cache/dbp/refpub/1668665312763/DSKP-Sains-6-%28Semakan-2017%29.pdf",
     "https://c.zoom-a.com/cache/dbp/refpub/1668665312763/DSKP-Sains-6-(Semakan-2017).pdf",
 ]
+SCHOOL_SOURCE_PAGES = [
+    "https://sites.google.com/moe-dl.edu.my/dskpskfp1/tahun-6-2022",
+    "https://sites.google.com/moe-dl.edu.my/sainssksp/dskprptdpk-2-0/dskp-tahun-6",
+    "https://sites.google.com/moe-dl.edu.my/panitiasainsskkat/pdpc/dskp",
+]
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "rpt_2027/sains/kssr2017_t6_2021_secondary_mirror_sp_code_ranges_20261107_DRAF.json"
 OUT = Path("output/rpt2027_sains_y6_2021_direct_source_audit.json")
@@ -59,6 +64,27 @@ def inspect():
         print("SAINS6_KPM2021_DIRECT",record.get("status_code"),
               record.get("pdf_pages"),record.get("unique_official_sp_codes",0),
               record.get("error",""),flush=True)
+    # Find public Google Drive file IDs embedded by teacher school portals.
+    # School portals are a locator only, not KPM academic verification.
+    import html
+    out["school_portal_drive_candidates"]=[]
+    for portal in SCHOOL_SOURCE_PAGES:
+        entry={"site":portal}
+        try:
+            resp=requests.get(portal,timeout=20,headers={"User-Agent":"Mozilla/5.0"})
+            entry["http_status"]=resp.status_code
+            raw=html.unescape(resp.text).replace("\\\\u003d","=").replace("\\\\u0026","&").replace("\\\\u002f","/")
+            ids=set(re.findall(r"(?:drive\.google\.com/file/d/|docs\.google\.com/(?:file|document)/d/)([A-Za-z0-9_-]{20,})",raw))
+            # Encoded escaped solidus paths are common in Google Sites.
+            ids|=set(re.findall(r"(?:drive\.google\.com.{0,120}?/file/d/)([A-Za-z0-9_-]{20,})",raw))
+            entry["candidate_drive_file_ids"]=sorted(ids)
+            entry["html_length"]=len(raw)
+        except Exception as exc:
+            entry["error"]=type(exc).__name__+": "+str(exc)[:150]
+        out["school_portal_drive_candidates"].append(entry)
+        print("SAINS6_SCHOOL_PORTAL_DRIVE_ID",portal,
+              entry.get("http_status"),len(entry.get("candidate_drive_file_ids",[])),
+              entry.get("candidate_drive_file_ids",[])[:25],flush=True)
     if any(row.get("pdf_pages")==94 and row.get("all_original_sp_codes_found")
            for row in out["sources"]):
         out["all_96_text_codes_located"]=True
