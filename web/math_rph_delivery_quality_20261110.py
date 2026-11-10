@@ -37,21 +37,37 @@ _PHASE = re.compile(
 _MINUTES = re.compile(r"(?<!\d)(\d{1,3})\s*minit\b", re.IGNORECASE)
 
 
-def _read_text(fmt: str, data: bytes) -> str:
+def _read_text(fmt: str, data: bytes) -> str | None:
+    """Read Word using Python stdlib only; PDF parser is optional on Web.
+
+    Render Web currently installs only Flask/Gunicorn, not python-docx or
+    pypdf. An absent PDF parser must not make every Mathematics download fail.
+    The Telegram backend will separately enforce PDF content review.
+    """
     if not isinstance(data, bytes) or not data:
         raise MathQualityReadError("Empty RPH bytes")
     try:
         if fmt == "word":
-            from docx import Document
-            doc = Document(BytesIO(data))
-            text = [para.text for para in doc.paragraphs]
-            for table in doc.tables:
-                for row in table.rows:
-                    for cell in row.cells:
-                        text.extend(p.text for p in cell.paragraphs)
+            from zipfile import ZipFile
+            from xml.etree import ElementTree as ET
+            with ZipFile(BytesIO(data)) as archive:
+                if archive.testzip() or "word/document.xml" not in archive.namelist():
+                    raise MathQualityReadError("Invalid Word archive")
+                root = ET.fromstring(archive.read("word/document.xml"))
+            ns = {"w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"}
+            text = []
+            for paragraph in root.findall(".//w:p", ns):
+                words = [element.text or "" for element in paragraph.findall(".//w:t", ns)]
+                text.append("".join(words))
             extracted = "\n".join(text)
         elif fmt == "pdf":
-            from pypdf import PdfReader
+            try:
+                from pypdf import PdfReader
+            except ImportError:
+                # No PDF extractor installed on the small Web service.
+                # Preserve download availability rather than returning a
+                # false content diagnosis or charging on an exception.
+                return None
             pdf = PdfReader(BytesIO(data))
             if not 1 <= len(pdf.pages) <= 10:
                 raise MathQualityReadError("Unexpected PDF page count")
@@ -65,7 +81,6 @@ def _read_text(fmt: str, data: bytes) -> str:
     if len(extracted.strip()) < 30:
         raise MathQualityReadError("No readable lesson text")
     return extracted
-
 
 def _slot_minutes(raw: object) -> int | None:
     if not isinstance(raw, str):
@@ -113,6 +128,9 @@ def inspect_math_rph_document(selection: dict, fmt: str, data: bytes) -> dict:
             or selection.get("source") != "telegram-native-pdp-sequence"):
         return {"issues": [], "slot_minutes": None, "phase_minutes": None}
     text = _read_text(fmt, data)
+    if text is None:
+        return {"issues": [], "slot_minutes": None, "phase_minutes": None,
+                "inspection": "PDF_PARSER_UNAVAILABLE"}
     issues: list[str] = []
     if _GENERIC.search(text):
         issues.append("GENERIC_OBJECTIVE")
