@@ -22,7 +22,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const issue_number = 497;
+            const issue_number = 496;
             const event = context.payload;
             const repo = context.repo;
             let body;
