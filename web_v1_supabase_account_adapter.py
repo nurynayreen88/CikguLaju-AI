@@ -11,12 +11,18 @@ def lookup_existing_supabase_account(url, secret_key, telegram_id):
     if not url.startswith("https://") or not secret_key:
         raise ValueError("Supabase server configuration missing")
 
+    # New sb_secret_ keys are opaque and must not be used as Bearer JWTs.
+    # Legacy service_role JWTs retain their original headers for compatibility.
+    # Credentials stay exclusively in server-side Render environment variables.
+    headers = {"apikey": secret_key, "Accept": "application/json"}
+    if not secret_key.startswith("sb_secret_"):
+        headers["Authorization"] = "Bearer " + secret_key
+
     def select(table, columns, filters):
         query = urlencode({"select": columns, **filters})
         request = Request(
             url.rstrip("/") + "/rest/v1/" + table + "?" + query,
-            headers={"apikey": secret_key, "Authorization": "Bearer " + secret_key,
-                     "Accept": "application/json"},
+            headers=headers,
         )
         with urlopen(request, timeout=6) as response:
             return json.load(response)
