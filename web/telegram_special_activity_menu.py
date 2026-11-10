@@ -349,11 +349,10 @@ def _handle(runtime, cid, data):
 
 
 def install(runtime):
-    """Install after all prior Telegram menus and callback wrappers.
+    """Install special-activity callbacks, not a second main-menu message.
 
-    An additional Telegram message is intentional: editing the old menu reply
-    markup would silently erase member-only referral buttons inserted by an
-    earlier adapter that only returned the original Telegram HTTP response.
+    The teacher enters through 📚 Sediakan RPH (ak26:home); the original
+    menu and its referral/payment/profile buttons are left untouched.
     """
     if getattr(runtime, "CIKGULAJU_TELEGRAM_SPECIAL_RPH_MENU_ACTIVE", False):
         return True
@@ -368,25 +367,13 @@ def install(runtime):
     # Fail closed if the shared catalog cannot be checked at installation.
     engine.list_options(TRANSISI, 1)
     engine.list_subjects(SELEPAS, 1)
-    old_menu, old_callback = runtime.menu, runtime.callback
-
-    def menu(cid, show_persistent=False):
-        response = old_menu(cid, show_persistent=show_persistent)
-        try:
-            _send(runtime, cid,
-                  "🌱 <b>RPH Aktiviti Khas</b> — Transisi & Tamat Sukatan (DRAF)",
-                  [[_button("🌱 Buka RPH Aktiviti Khas", "home")]])
-        except Exception as exc:
-            print("TELEGRAM SPECIAL RPH MENU WARNING:",
-                  type(exc).__name__, flush=True)
-        return response
+    old_callback = runtime.callback
 
     def callback(cid, data):
         if str(data or "").startswith(PREFIX):
             return _handle(runtime, cid, str(data))
         return old_callback(cid, data)
 
-    runtime.menu = menu
     runtime.callback = callback
     runtime.CIKGULAJU_TELEGRAM_SPECIAL_RPH_MENU_ACTIVE = True
     return True
