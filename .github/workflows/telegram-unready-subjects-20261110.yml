@@ -1,0 +1,22 @@
+name: Telegram unready subject menu guard
+on:
+  push:
+    branches:
+      - fix/telegram-hide-unready-languages-20261110
+  pull_request:
+    paths:
+      - app.py
+      - tests/test_telegram_subject_menu_20261110.py
+      - .github/workflows/telegram-unready-subjects-20261110.yml
+permissions:
+  contents: read
+jobs:
+  subject-menu:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check menu constants and current lesson menu regression
+        run: python -m unittest discover -s tests -p 'test_telegram_subject_menu_20261110.py' -v
