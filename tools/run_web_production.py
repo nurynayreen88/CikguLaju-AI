@@ -24,6 +24,9 @@ install_web_referral(app)
 
 from web.special_activities_web import bp as special_activities_bp
 app.register_blueprint(special_activities_bp)
+from web.admin_usage_web import bp as admin_usage_bp
+app.register_blueprint(admin_usage_bp)
+
 
 
 
@@ -112,6 +115,15 @@ def web_payment_script():
     file = Path(__file__).resolve().parents[1] / "web_v1_static_preview" / "web-payment.js"
     return send_file(file, mimetype="application/javascript", max_age=1800,
                      conditional=True)
+
+
+@app.get("/assets/admin-usage.js")
+def admin_usage_script():
+    """Static UI only. All admin data require verified server-side access."""
+    from pathlib import Path
+    from flask import send_file
+    path = Path(__file__).resolve().parents[1] / "web_v1_static_preview" / "admin-usage.js"
+    return send_file(path, mimetype="application/javascript", max_age=1800, conditional=True)
 
 
 @app.get("/assets/web-referral.js")
