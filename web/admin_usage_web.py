@@ -91,7 +91,7 @@ def _fetch(conf, table, query, *, count=False, opener=None):
 
 def _oldest_login(conf, opener=None):
     rows = _fetch(conf, "web_login_events", {
-        "select": "logged_in_at", "order": "logged_in_at.asc", "limit": "1"
+        "select": "logged_in_at", "source": "eq.web", "order": "logged_in_at.asc", "limit": "1"
     }, opener=opener)
     return _parse_utc(rows[0]["logged_in_at"]) if rows else None
 
@@ -125,7 +125,7 @@ def _login_metrics(conf, now, opener=None):
 
     since = min(starts.values())
     total = _fetch(conf, "web_login_events", {
-        "select": "id", "logged_in_at": "gte." + since.isoformat(), "limit": "1",
+        "select": "id", "source": "eq.web", "logged_in_at": "gte." + since.isoformat(), "limit": "1",
     }, count=True, opener=opener)
     if total > MAX_LOGIN_EVENTS:
         return {"users_today": None, "users_7d": None, "users_30d": None,
@@ -135,9 +135,9 @@ def _login_metrics(conf, now, opener=None):
     unique = {key: set() for key in starts}
     for offset in range(0, total, PAGE_SIZE):
         rows = _fetch(conf, "web_login_events", {
-            "select": "telegram_user_id,logged_in_at",
+            "select": "telegram_user_id,logged_in_at", "source": "eq.web",
             "logged_in_at": "gte." + since.isoformat(),
-            "order": "logged_in_at.asc",
+            "order": "logged_in_at.asc,id.asc",
             "limit": str(PAGE_SIZE), "offset": str(offset),
         }, opener=opener)
         if len(rows) != min(PAGE_SIZE, total - offset):
