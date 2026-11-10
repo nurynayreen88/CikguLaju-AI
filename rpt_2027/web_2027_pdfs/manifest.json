@@ -7,8 +7,8 @@
   "files": {
     "bahasa_arab:2": {
       "path": "bahasa_arab/tahun_2.pdf",
-      "sha256": "a0084f04d6bffd9445696fc6453d6f970329fe98c5cdd2118b22f6b70ad8c167",
-      "bytes": 113987,
+      "sha256": "d70b68f65ae16698609b6fda03e2b23a5540cd43fe509e343901e3dcb0f470a2",
+      "bytes": 131628,
       "pages": 12,
       "status": "DRAF",
       "source_stage": "ARABIC_Y2_Y6_117_SOURCE_SP_VISUAL_CANDIDATES_NOT_ACADEMIC_FINAL_20261108"
@@ -477,5 +477,5 @@
     "original_cover_preserved": true,
     "cleanup_note": "All 56 source PDFs rebuilt; official subject headings preserved"
   },
-  "source_projection": "ARABIC_Y3_Y4_Y5_73_ORIGINAL_DSKP_SP_TEXT_SOURCE_BACKED_ACADEMIC_HOLD"
+  "source_projection": "RPT2027_ARABIC_YEAR2_19_ORIGINAL_DSKP_SP_ADDED_ACADEMIC_HOLD"
 }
