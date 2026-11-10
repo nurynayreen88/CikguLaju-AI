@@ -8,6 +8,9 @@ on:
       - 'scripts/build_rpt_2027_standard_preview.py'
       - 'scripts/build_rpt_2027_sains_342_actual_source_staging.py'
       - 'tests/test_rpt2027_owner_week1_distribution_20261110.py'
+      - 'rpt_2027/common/teacher_display_projection.py'
+      - 'rpt_2027/common/format_2026_layout_preview.py'
+      - 'tests/test_rpt2027_teacher_text_leak_scan.py'
       - '.github/workflows/rpt2027-week01-web-release-candidate-20261110.yml'
   workflow_dispatch:
 
@@ -41,7 +44,7 @@ jobs:
       - name: Check Week01 23-source allocations and no source mutation
         run: |
           python -m py_compile scripts/prepare_rpt2027_week01_web_candidate_20261110.py
-          python -m unittest tests.test_rpt2027_owner_week1_distribution_20261110 -v
+          python -m unittest tests.test_rpt2027_owner_week1_distribution_20261110 tests.test_rpt2027_teacher_text_leak_scan -v
       - name: Build all 56 PDFs in isolated review output, replace exactly 23
         run: |
           python -m scripts.prepare_rpt2027_week01_web_candidate_20261110 \
