@@ -199,6 +199,11 @@ class StoredMetricsTests(unittest.TestCase):
 
     def test_summary_distinguishes_debit_and_partial_rph_data(self):
         def fake(_conf, table, query, *, count=False, opener=None):
+            if table == "pioneer_entitlements":
+                # Original lifetime entitlement values in Supabase are
+                # uppercase PIONEER_LIFETIME; do not filter by lowercase only.
+                self.assertEqual(query["revoked_at"], "is.null")
+                self.assertNotIn("entitlement", query)
             return {"cikgulaju_users": 52, "pioneer_entitlements": 9,
                     "trial_ledger": 7, "admin_rph_deliveries": 0}[table]
         with patch.object(mod, "_fetch", side_effect=fake), patch.object(
