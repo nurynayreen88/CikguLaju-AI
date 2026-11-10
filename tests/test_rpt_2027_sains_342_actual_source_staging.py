@@ -56,7 +56,13 @@ class Science2027PartialRPTQA(unittest.TestCase):
         for year,rows in self.yearly.items():
             actual=[int(r["week"][1:]) for r in rows]
             self.assertEqual(sorted(actual),actual)
-            self.assertTrue(all(2<=x<=43 and x!=6 for x in actual))
+            self.assertTrue(all(1<=x<=43 and x!=6 for x in actual))
+            self.assertEqual(rows[0]["week"], "M01")
+            self.assertEqual(set(actual), set(range(1,44)) - {6})
+            self.assertEqual((rows[0]["a_start"],rows[0]["a_end"]),
+                             weeks["A"]["M01"])
+            self.assertEqual((rows[0]["b_start"],rows[0]["b_end"]),
+                             weeks["B"]["M01"])
             for r in rows:
                 w=r["week"]
                 self.assertEqual((r["a_start"],r["a_end"]),weeks["A"][w])
