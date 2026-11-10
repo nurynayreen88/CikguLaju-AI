@@ -62,6 +62,42 @@ def _failure(exc):
     return jsonify({"error": "Maklumat guru belum dapat disimpan. Data sedia ada tidak diubah."}), 503
 
 
+@bp.get("/api/web/teacher/school-directory")
+def teacher_school_directory():
+    """Private server-side Supabase lookups: Negeri -> PPD -> full school name."""
+    conf, uid, err = _auth()
+    if err is not None:
+        return err
+    args = request.args
+    if any(len(args.getlist(key)) != 1 for key in args):
+        return jsonify({"error": "Parameter berulang tidak dibenarkan"}), 400
+    kind = args.get("kind")
+    allowed = {
+        "states": {"kind"},
+        "districts": {"kind", "state"},
+        "schools": {"kind", "state", "district"},
+    }
+    if kind not in allowed or set(args) != allowed[kind]:
+        return jsonify({"error": "Pilihan negeri, PPD atau sekolah tidak sah"}), 400
+    from web.school_directory_store import (
+        SchoolDirectoryUnavailable, states, districts, schools,
+    )
+    try:
+        if kind == "states":
+            items = states(conf["supabase_url"], conf["supabase_key"])
+        elif kind == "districts":
+            items = districts(conf["supabase_url"], conf["supabase_key"],
+                              args.get("state"))
+        else:
+            items = schools(conf["supabase_url"], conf["supabase_key"],
+                            args.get("state"), args.get("district"))
+    except ValueError:
+        return jsonify({"error": "Negeri atau PPD tidak sah"}), 400
+    except SchoolDirectoryUnavailable:
+        return jsonify({"error": "Direktori sekolah Supabase belum dapat dibaca"}), 503
+    return jsonify({"items": items, "source_period": "2022-06"})
+
+
 @bp.get("/api/web/teacher/profile")
 def teacher_profile_get():
     conf, uid, err = _auth()
