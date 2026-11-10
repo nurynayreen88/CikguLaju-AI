@@ -12,6 +12,7 @@ import re
 import requests
 
 ORIGINAL_LINKS = [
+    "https://beebeeclassroom.com/wp-content/uploads/2022/04/DSKP-KSSR-Semakan-2017-Sains-Tahun-6_ISBN_.pdf",
     "https://c.zoom-a.com/cache/dbp/refpub/1668665312763/DSKP-Sains-6-%28Semakan-2017%29.pdf",
     "https://c.zoom-a.com/cache/dbp/refpub/1668665312763/DSKP-Sains-6-(Semakan-2017).pdf",
 ]
