@@ -7,6 +7,7 @@ import requests
 
 WEB_URL = "https://cikgulaju-web.onrender.com/"
 BUTTON = {"text": "🌐 Web CikguLaju", "url": WEB_URL}
+TODAY_BUTTON = {"text": "⚡ RPH Hari Ini", "callback_data": "todayrph272"}
 
 
 def install(runtime):
@@ -26,12 +27,33 @@ def install(runtime):
             kb = (result.get("reply_markup") or {}).get("inline_keyboard") or []
             if type(mid) is not int or mid < 1 or not isinstance(kb, list) or not kb:
                 raise RuntimeError("Original menu unavailable")
-            if any(b.get("url") == WEB_URL for row in kb for b in row):
-                return response
             rows = [[dict(b) for b in row] for row in kb]
-            index = next((i+1 for i, row in enumerate(rows)
-                          if any(b.get("callback_data") == "account" for b in row)),len(rows))
-            rows.insert(index, [dict(BUTTON)])
+            changed = False
+            # Add today's RPH in the SAME Telegram message as the main menu.
+            # The special-activity flow remains under 📚 Sediakan RPH.
+            if (getattr(runtime, "CIKGULAJU_DAILY_MANUAL_ONLY_20261110", False)
+                    and not any(b.get("callback_data") == "todayrph272"
+                                for row in rows for b in row)):
+                after_rph = next(
+                    (i + 1 for i, row in enumerate(rows)
+                     if any(b.get("callback_data") == "quick"
+                            or "Sediakan RPH" in b.get("text", "")
+                            for b in row)), None)
+                if after_rph is None:
+                    after_rph = next(
+                        (i for i, row in enumerate(rows)
+                         if any(b.get("callback_data") == "account"
+                                for b in row)), len(rows))
+                rows.insert(after_rph, [dict(TODAY_BUTTON)])
+                changed = True
+            if not any(b.get("url") == WEB_URL for row in rows for b in row):
+                index = next((i+1 for i, row in enumerate(rows)
+                              if any(b.get("callback_data") == "account"
+                                     for b in row)), len(rows))
+                rows.insert(index, [dict(BUTTON)])
+                changed = True
+            if not changed:
+                return response
             reply = requests.post(runtime.API + "/editMessageReplyMarkup",
                 json={"chat_id": cid, "message_id": mid,
                       "reply_markup": {"inline_keyboard": rows}}, timeout=12)
