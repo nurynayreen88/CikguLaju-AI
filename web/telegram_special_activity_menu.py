@@ -218,7 +218,9 @@ def _deliver(runtime, cid, fmt):
                      [[_button("📄 Papar Semula RPH", "review")]])
     ss["_busy"] = True
     state = runtime.state.setdefault(cid, {})
-    new_generation = not ss.get("delivered")
+    delivery_key = (ss.get("kind"), ss.get("year"), row["id"], ss.get("digest"),
+                    ss.get("subject"), ss.get("class", ""), ss.get("date", ""))
+    new_generation = ss.get("_confirmed_delivery_key") != delivery_key
     try:
         if new_generation:
             # The native, fail-closed access gate. No debit occurs here.
@@ -246,6 +248,7 @@ def _deliver(runtime, cid, fmt):
             raise RuntimeError("Telegram delivery not confirmed")
         if new_generation:
             ss["delivered"] = True
+            ss["_confirmed_delivery_key"] = delivery_key
             # This is the SAME Supabase success-only trial debit as ordinary RPH.
             runtime._consume_free_after_success_v25282(
                 cid, "successful_special_activity_rph_delivery")
