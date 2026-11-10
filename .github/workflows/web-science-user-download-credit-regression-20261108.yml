@@ -7,6 +7,8 @@ on:
       - "tests/test_web_science_user_download_credit_contract_20261108.py"
       - "tests/test_web_shared_ten_rph_trial.py"
       - "web/unified_rph_web.py"
+      - "web/math_rph_delivery_quality_20261110.py"
+      - "tests/test_web_math_rph_delivery_quality_20261110.py"
       - "web/native_telegram_sequence_rph_client.py"
       - "web/rph_delivery_quota.py"
       - ".github/workflows/web-science-user-download-credit-regression-20261108.yml"
@@ -28,6 +30,8 @@ jobs:
         run: python -m pip install "flask==3.1.3" "python-docx==1.1.2" "reportlab==4.2.5" "pypdf==5.1.0"
       - name: Validate Science Web user-facing routes, source identity and trial/paid quota isolation
         run: python -m unittest discover -s tests -p "test_web_science_user_download_credit_contract_20261108.py" -v
+      - name: Validate Mathematics Word/PDF quality hold before trial debit
+        run: python -m unittest discover -s tests -p "test_web_math_rph_delivery_quality_20261110.py" -v
       - name: Keep existing shared 10-RPH trial contract intact
         run: python -m unittest discover -s tests -p "test_web_shared_ten_rph_trial.py" -v
       - name: Keep native Telegram unit and PdP source handling intact
