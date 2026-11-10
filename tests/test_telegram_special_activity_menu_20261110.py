@@ -70,10 +70,9 @@ class SpecialParityTests(unittest.TestCase):
         response = self.runtime.menu(self.cid)
         self.assertTrue(response.ok)
         self.assertEqual(self.runtime.menu_calls, 1)
-        self.assertEqual(len(self.runtime.messages), 1)
-        self.assertEqual(
-            self.runtime.messages[-1][2][0][0]["callback_data"], "ak26:home"
-        )
+        self.assertEqual(self.runtime.messages, [])
+        self.runtime.callback(self.cid, "ak26:home")
+        self.assertIn("RPH Aktiviti Khas", self.runtime.messages[-1][1])
         self.assertEqual(self.runtime.callback(self.cid, "quick"), "original callback")
         self.assertEqual(self.runtime.fallback_calls, [(self.cid, "quick")])
         self.assertTrue(mod.install(self.runtime))  # idempotent
