@@ -332,7 +332,12 @@ let schoolCatalogOptions=[];
 
 function populateSchoolSelect(control, placeholder, items, saved="") {
   control.replaceChildren(new Option(placeholder,""));
-  for (const row of items) control.add(new Option(row.label,row.value));
+  for (const row of items) {
+    // Codes disambiguate schools sharing a full name within the same PPD.
+    const label=control===schoolChoiceField
+      ? row.label+" ("+row.value+")" : row.label;
+    control.add(new Option(label,row.value));
+  }
   if (saved && !items.some(row=>row.value===saved)) {
     control.add(new Option(saved+" (rekod lama — semak semula)",saved));
   }
