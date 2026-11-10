@@ -239,6 +239,24 @@ def arabic_records(year):
                 len(overlay[code]["sp_text_ar"])<20 for code in overlay) or
             {item["sk"] for item in ar}-set(sk_opening)):
             raise ValueError("Arabic Year6 sourced statement coverage mismatch")
+    if year==2:
+        original=json.loads((base/"dskp_year2_19_sp_visual_source_20261110.json").read_text(encoding="utf-8"))
+        if (original.get("academic_release_approved") is not False or
+            original.get("independent_arabic_word_for_word_signoff") is not False or
+            original.get("original_pdf_text_extraction_code_repeated_unreliable") is not True or
+            original.get("source_sha256")!=source_pdf_sha256 or
+            original.get("source_url")!=source_pdf_url or
+            original.get("source_pdf_pages")!=source_page_count or
+            original.get("source_sp_count")!=19):
+            raise ValueError("Arabic Year2 PDF visual-source provenance drift")
+        overlay={r["sp_code"]:r for r in original["source_rows"]}
+        if (len(overlay)!=19 or len(original["source_rows"])!=19 or
+            set(overlay)!={r["sp"] for r in ar} or
+            any(overlay[code]["pdf_page"]!=source_pages[code] or
+                overlay[code]["source_page_visual_checked"] is not True or
+                overlay[code]["academic_signoff"] is not False or
+                len(overlay[code]["sp_text_ar"])<18 for code in overlay)):
+            raise ValueError("Arabic Year2 visual transcript does not cover all 19 RPT SP")
     if year in (3,4):
         candidate=json.loads((base/"dskp_year3_year4_48_sp_normalized_source_20261110.json").read_text(encoding="utf-8"))
         if (candidate.get("academic_release_approved") is not False or
@@ -297,8 +315,7 @@ def arabic_records(year):
             topic=left["fokus"],sk=left["sk"],sp=left["sp"],
             sk_display=left["sk"]+" — "+(sk_opening[left["sk"]] if year==6
                          else "Pernyataan penuh SK belum dipadankan"),
-            sp_display=left["sp"]+" — "+(overlay[sp_code]["sp_text_ar"] if year in (3,4,5,6)
-                         else "Pernyataan penuh SP belum dipadankan"),
+            sp_display=left["sp"]+" — "+overlay[sp_code]["sp_text_ar"],
             note=("BT m/s: "+(left.get("halaman_buku") or "belum disahkan")+
                   f" (calon). DSKP SP PDF hlm {source_pages[sp_code]} (kod disemak; teks belum disahkan). "+
                   "Tarikh A/B belum diperuntukkan. DRAF."),
@@ -307,7 +324,7 @@ def arabic_records(year):
             source_sp_dskp_pdf_sha256=source_pdf_sha256,
             source_sp_dskp_text_signoff=False,
             source_sk_opening_not_full_thematic_examples=(year==6),
-            source_arabic_orthography_normalized_not_visual_signoff=(year in (3,4,5,6)),
+            source_arabic_orthography_normalized_not_visual_signoff=True,
             source_pdf_extraction_code_repeated_unreliable=(year==2),
             source_status=left["status_rpt"],
         ))
