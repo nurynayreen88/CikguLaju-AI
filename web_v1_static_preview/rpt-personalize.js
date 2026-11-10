@@ -174,7 +174,7 @@
       credentials:"same-origin",cache:"no-store",redirect:"error"
     });
     if(response.status===401)throw Error("Sila log masuk semula untuk muat turun RPT.");
-    if(response.status===403)throw Error("RPT memerlukan Rakan Pembangun atau langganan aktif.");
+    if(response.status===403)throw Error("Akses fail RPT tidak dibenarkan.");
     if(!response.ok)throw Error("Fail RPT belum tersedia (HTTP "+response.status+").");
     if(!response.headers.get("content-type")?.toLowerCase().startsWith("application/pdf"))
       throw Error("Pelayan tidak memulangkan PDF RPT.");
@@ -190,22 +190,32 @@
       await crypto.subtle.digest("SHA-256",bytes)
     )).map(b=>b.toString(16).padStart(2,"0")).join("");
     if(actualSha!==declaredSha)throw Error("Checksum PDF tidak sepadan. Muat turun dibatalkan.");
-    return {bytes,sha:actualSha};
+    return {bytes,sha:actualSha,paidCover:response.headers.get("X-RPT-Personalization-Allowed")==="1"};
   }
   async function downloadWithOriginalCover(code,year,openedViewer=null,mobileRequest=false){
-    const PDF=window.PDFLib;
-    if(!PDF||!PDF.PDFDocument)
-      throw Error("Modul PDF tidak dapat dimuatkan. Refresh laman Web dan cuba semula.");
     const source=await sourcePdf(code,year);
-    const layout=validatedLayout(await coverLayout(),code+":"+year,source.sha);
-    const profile=await fetchProfile();
-    const logo=await fetchLogo();
-    const original=await PDF.PDFDocument.load(source.bytes,{ignoreEncryption:false});
-    const result=await fillOriginalCover(original,profile,logo,layout,{PDFLib:PDF});
-    const output=await original.save({useObjectStreams:false});
+    // Entitlement is evaluated on the server for this PDF request.
+    // Without an active paid entitlement, never fetch private profile or logo
+    // and never invoke the PDF stamping library. Keep source bytes untouched.
+    let output=source.bytes;
+    let result={hasLogo:false,hasSchool:false,hasTeacher:false,
+                personalized:false};
+    if(source.paidCover){
+      const PDF=window.PDFLib;
+      if(!PDF||!PDF.PDFDocument)
+        throw Error("Modul PDF tidak dapat dimuatkan. Refresh laman Web dan cuba semula.");
+      const layout=validatedLayout(await coverLayout(),code+":"+year,source.sha);
+      const profile=await fetchProfile();
+      const logo=await fetchLogo();
+      const original=await PDF.PDFDocument.load(source.bytes,{ignoreEncryption:false});
+      result=await fillOriginalCover(original,profile,logo,layout,{PDFLib:PDF});
+      result.personalized=true;
+      output=await original.save({useObjectStreams:false});
+    }
     const download=new Blob([output],{type:"application/pdf"});
     const url=URL.createObjectURL(download);
-    const filename="CIKGULAJU_RPT_"+code.toUpperCase()+"_TAHUN_"+year+"_2027_ISI_PROFIL.pdf";
+    const filename="CIKGULAJU_RPT_"+code.toUpperCase()+"_TAHUN_"+year+
+      (result.personalized?"_2027_ISI_PROFIL.pdf":"_2027_PERCUMA.pdf");
     function downloadLink(doc){
       const link=doc.createElement("a");
       link.href=url;
@@ -223,7 +233,7 @@
         const title=doc.createElement("h1");
         title.textContent="RPT 2027 siap";
         const note=doc.createElement("p");
-        note.textContent="PDF bersama profil sekolah sudah disediakan. Tekan butang di bawah untuk menyimpan. Pautan sah selama 10 minit.";
+        note.textContent=result.personalized?"PDF bersama profil sekolah sudah disediakan. Tekan Simpan PDF RPT. Pautan sah selama 10 minit.":"PDF percuma tanpa nama guru, nama sekolah dan logo sudah disediakan. Tekan Simpan PDF RPT. Pautan sah selama 10 minit.";
         doc.body.style.cssText="margin:0;min-height:100vh;padding:28px 18px;box-sizing:border-box;font-family:system-ui,Arial,sans-serif;background:#f0f7f5;color:#174353;";
         doc.body.replaceChildren(title,note,downloadLink(doc));
         setTimeout(()=>URL.revokeObjectURL(url),600000);
@@ -261,15 +271,18 @@
         return false;
       }
       if(button)button.disabled=true;
-      if(output)output.textContent="Mengisi ruang logo, nama sekolah dan nama guru pada muka depan RPT asal…";
+      if(output)output.textContent="Menyediakan RPT 2027. Identiti sekolah hanya dicetak untuk akaun berbayar aktif…";
       try{
         const status=await downloadWithOriginalCover(code,year,openedViewer,mobileRequest);
-        if(output)output.textContent=(status.delivery==="phone-tab-link"?"PDF siap pada tab baharu. Tekan Simpan PDF RPT di tab itu. ":status.delivery==="phone-inline-link"?"PDF siap. Tekan Simpan PDF RPT di bawah untuk menyimpan. ":"PDF RPT berjaya dimuat turun. ")+"Muka depan asal dikekalkan, tiada halaman tambahan."+
-          ((!status.hasLogo||!status.hasSchool||!status.hasTeacher)
-           ? " Maklumat belum diisi: "+
-             [!status.hasLogo&&"logo sekolah",!status.hasSchool&&"nama sekolah",
-              !status.hasTeacher&&"nama guru"].filter(Boolean).join(", ")+
-             ". Lengkapkan dalam Profil Guru.":"");
+        if(output)output.textContent=(status.delivery==="phone-tab-link"?"PDF siap pada tab baharu. Tekan Simpan PDF RPT di tab itu. ":status.delivery==="phone-inline-link"?"PDF siap. Tekan Simpan PDF RPT di bawah untuk menyimpan. ":"PDF RPT berjaya dimuat turun. ")+
+          (status.personalized
+           ? "Muka depan asal diisi untuk akaun berbayar aktif, tiada halaman tambahan."+
+             ((!status.hasLogo||!status.hasSchool||!status.hasTeacher)
+               ? " Maklumat belum diisi: "+
+                 [!status.hasLogo&&"logo sekolah",!status.hasSchool&&"nama sekolah",
+                  !status.hasTeacher&&"nama guru"].filter(Boolean).join(", ")+
+                 ". Lengkapkan dalam Profil Guru.":"")
+           : "Versi percuma tanpa nama guru, nama sekolah atau logo. Maklumat Profil Guru tetap disimpan.");
         return true;
       }catch(error){
         if(openedViewer && !openedViewer.closed){
