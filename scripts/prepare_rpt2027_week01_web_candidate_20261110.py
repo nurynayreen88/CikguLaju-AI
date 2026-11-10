@@ -208,7 +208,7 @@ def candidate_package(web_root: Path, output: Path):
                 old_text = pdf_text(old)
                 new_text = pdf_text(target)
                 observation["text_similarity_diagnostic"] = round(
-                    SequenceMatcher(None, old_text, new_text, autojunk=False).ratio(), 4)
+                    SequenceMatcher(None, old_text.splitlines(), new_text.splitlines(), autojunk=False).ratio(), 4)
                 observation["week01_extracted_ltr"] = bool(WEEK_REGEX.search(new_text))
             observations.append(observation)
         if sum(item["changed"] for item in observations) != 23:
