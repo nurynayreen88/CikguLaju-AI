@@ -733,3 +733,14 @@ except Exception as _daily_manual_error:
     TELEGRAM_DAILY_MANUAL_ACTIVE = False
     print("Telegram daily manual timetable unavailable:",
           type(_daily_manual_error).__name__, flush=True)
+
+# UI-only two-choice entry in "Sediakan RPH".
+# RPH Harian retains choose_grade -> existing Lesson/PdP -> matsubmit2528;
+# RPH Aktiviti Khas opens existing ak26:home catalogue. No route rewrites.
+try:
+    from web.telegram_rph_entry_choices_20261110 import install as install_rph_entry_choices
+    TELEGRAM_RPH_ENTRY_CHOICES_ACTIVE = bool(install_rph_entry_choices(telegram_runtime))
+except Exception as _rph_entry_choices_error:
+    TELEGRAM_RPH_ENTRY_CHOICES_ACTIVE = False
+    print("Telegram RPH entry choices unavailable:",
+          type(_rph_entry_choices_error).__name__, flush=True)
