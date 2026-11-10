@@ -1,0 +1,3469 @@
+{
+  "generated_date": "2026-11-10",
+  "project": "nurynayreen88/CikguLaju-AI",
+  "source": "GitHub PR searches split by merged date to avoid 100-result truncation",
+  "warning": "MERGED != CI PASS != ACADEMIC APPROVED != DEPLOYED != LIVE VERIFIED. This file does not authorize production release.",
+  "summary": {
+    "total_prs": 490,
+    "merged_prs": 410,
+    "open_draft": 65,
+    "open_non_draft": 7,
+    "closed_unmerged": 8,
+    "groups": {
+      "merged_pre_oct": 7,
+      "merged_oct": 50,
+      "merged_nov02": 68,
+      "merged_nov03": 20,
+      "merged_nov04": 91,
+      "merged_nov05": 77,
+      "merged_nov06_10": 97,
+      "open_draft": 65,
+      "open_review": 7,
+      "closed_unmerged": 8
+    }
+  },
+  "release_branches": {
+    "telegram": "main",
+    "web": "production/cikgulaju-web-20261105"
+  },
+  "key_holds": {
+    "Maths": "PR #460/#495 need actual PdP crosswalk and academic signoff",
+    "Science": "PR #442 source and 342 RPH staged; gate remains OFF",
+    "Islamic Education": "PR #443 RPH staging HOLD; PR #464 PDFs stale relative to Web",
+    "English": "PR #143/#145/#147/#275/#277 need regressions and E2E before merge",
+    "RPT2027": "56 PDFs on paid Web include DRAF labels, not all academic final",
+    "Google login": "PR #450/#449 OFF pending E2E"
+  },
+  "items": [
+    {
+      "pr": 1,
+      "title": "Use physical SOW 320 master and verified audio runtime",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/1",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_pre_oct"
+    },
+    {
+      "pr": 2,
+      "title": "Use audited English v15 DB at runtime",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/2",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_pre_oct"
+    },
+    {
+      "pr": 3,
+      "title": "Fix English audio reference parser",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/3",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_pre_oct"
+    },
+    {
+      "pr": 4,
+      "title": "Prioritize audited English v15 runtime DB",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/4",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_pre_oct"
+    },
+    {
+      "pr": 5,
+      "title": "Refresh English v15 before cached runtime DB",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/5",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_pre_oct"
+    },
+    {
+      "pr": 6,
+      "title": "Format RPH activities on separate numbered lines",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/6",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_pre_oct"
+    },
+    {
+      "pr": 7,
+      "title": "Apply RPH activity numbering in actual file renderers",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/7",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_pre_oct"
+    },
+    {
+      "pr": 8,
+      "title": "Activate verified PJPK T1–T6 menu with safe staging gate",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/8",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 9,
+      "title": "UASA School Profile v27.18",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/9",
+      "stage": "OPEN_REVIEW_REQUIRED",
+      "group": "open_review"
+    },
+    {
+      "pr": 10,
+      "title": "Fix and test PJPK Tahun 1 RPH handoff",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/10",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 11,
+      "title": "Add actionable PJPK source-gap remediation queue",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/11",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 12,
+      "title": "Release: optional KP2027 curriculum choice (legacy default, fail closed)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/12",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 13,
+      "title": "Show KP2027 subject catalog as Dalam Pembinaan",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/13",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 14,
+      "title": "Add official KP2027 framework preview to under-construction catalog",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/14",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 15,
+      "title": "PJPK T1–T6: fail-closed release gate and CI regression (staging only)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/15",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 16,
+      "title": "Document Pioneer lifetime access requirements",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/16",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 17,
+      "title": "Add durable Pioneer entitlement helper (integration pending)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/17",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 18,
+      "title": "Disable referral offers and new rewards without deleting historical access",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/18",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 19,
+      "title": "Fix: Show Pioneer RM20 permanently in Telegram main menu",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/19",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 20,
+      "title": "Show Pioneer lifetime benefits and remove referral from main menu",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/20",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 21,
+      "title": "Improve Pioneer activation success message",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/21",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 22,
+      "title": "Add RPT 2027 to Telegram main menu",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/22",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 23,
+      "title": "Extend RPT 2027 menu with subject and calendar group selection",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/23",
+      "stage": "OPEN_REVIEW_REQUIRED",
+      "group": "open_review"
+    },
+    {
+      "pr": 24,
+      "title": "Clean internal placeholders and grammar from English RPH output",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/24",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 25,
+      "title": "Improve English RPH classroom activity clarity",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/25",
+      "stage": "OPEN_REVIEW_REQUIRED",
+      "group": "open_review"
+    },
+    {
+      "pr": 26,
+      "title": "Add English Year 1 standalone RPH library and safe lookup adapter",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/26",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 27,
+      "title": "Combine English Year 2 standalone bank with Year 1 staging",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/27",
+      "stage": "CLOSED_UNMERGED",
+      "group": "closed_unmerged"
+    },
+    {
+      "pr": 29,
+      "title": "Pioneer Early Bird RM10 — kuota 500 dan paparan bilangan",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/29",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 30,
+      "title": "Paparkan Pioneer RM10 dan kuota pada menu; sediakan status admin",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/30",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 31,
+      "title": "Admin: batalkan status Pioneer dengan pengesahan dua langkah",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/31",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 32,
+      "title": "Clarify Pioneer membership benefits",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/32",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 33,
+      "title": "Fix Pioneer text line breaks",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/33",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 34,
+      "title": "Render Pioneer menu lines without literal escapes",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/34",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 35,
+      "title": "Update main menu Pioneer and free RPH trial wording",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/35",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 36,
+      "title": "Show upcoming RM5 monthly subscription in main menu",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/36",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 37,
+      "title": "Show RM8 monthly and RM50 yearly subscription prices",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/37",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 38,
+      "title": "Show Pioneer details only when Jadi Pioneer is selected",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/38",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 39,
+      "title": "Show zero free RPH balance and Pioneer option when quota ends",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/39",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 40,
+      "title": "Show Dalam Pembangunan status on main menu",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/40",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 41,
+      "title": "Fix RPH free-trial debit and show remaining balance in main menu",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/41",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 42,
+      "title": "Fix Telegram main menu showing literal \\n",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/42",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 43,
+      "title": "WIP: repair Jawi PDF renderer and run regression tests",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/43",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 44,
+      "title": "WIP: Non-destructive Telegram admin usage analytics",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/44",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 45,
+      "title": "Fix live Telegram admin usage callback routing",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/45",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 46,
+      "title": "Admin analytics: registered users, verified Pioneers and subscription placeholder",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/46",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 47,
+      "title": "Fix RM10 Pioneer payment package shown to admin",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/47",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 48,
+      "title": "Show actionable Pioneer approval errors without marking payment approved",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/48",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 49,
+      "title": "Reconcile verified Pioneer payment when exact lifetime entitlement already active",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/49",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 50,
+      "title": "Draft: PI Jawi PDF renderer guard and regression checks (awaiting PDF validation)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/50",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 51,
+      "title": "fix(PI Jawi): latest-main safe RAQM font guard and PDF verification",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/51",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 52,
+      "title": "Show Pioneer percentage without public quota",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/52",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 53,
+      "title": "Hide Pioneer raw capacity in admin user card",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/53",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 54,
+      "title": "Display Pioneer percentage for active members",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/54",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 55,
+      "title": "Tukar paparan Pioneer kepada Rakan Pembangun",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/55",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 56,
+      "title": "Naikkan percubaan RPH pengguna baharu kepada 10 janaan",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/56",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 57,
+      "title": "Sediakan menu subjek Tahun 1 KP2027",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/57",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 58,
+      "title": "Mulakan kandungan Alam dan Manusia Tahun 1 KP2027 — sumber dan gate kualiti",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/58",
+      "stage": "OPEN_REVIEW_REQUIRED",
+      "group": "open_review"
+    },
+    {
+      "pr": 59,
+      "title": "Fix literal backslash-n in KP2027 Telegram messages",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/59",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 60,
+      "title": "Sembunyikan sementara Bahasa Cina dan Bahasa Tamil daripada menu subjek",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/60",
+      "stage": "OPEN_REVIEW_REQUIRED",
+      "group": "open_review"
+    },
+    {
+      "pr": 61,
+      "title": "Fix Year 3 repaired Student Book large Drive PDF download",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/61",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 62,
+      "title": "Use Year 3 standalone lesson content in generated RPH",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/62",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 63,
+      "title": "Fix PI Jawi PDF unsupported symbols without changing Jawi glyphs",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/63",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 64,
+      "title": "Fix PI Jawi PDF: prioritize project Amiri for mixed Latin punctuation",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/64",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 65,
+      "title": "Add 160 standalone English Year 2 RPH lessons",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/65",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 66,
+      "title": "Restrict RPT 2027 to admin and paid access",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/66",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 67,
+      "title": "Connect English Year 2 standalone RPH to existing renderer",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/67",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 68,
+      "title": "Gate AI timetable reading to paid access; keep manual timetable free",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/68",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 69,
+      "title": "WIP: RPH Minggu Ini — pengesahan cuti, pratonton dan batch RPH",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/69",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 70,
+      "title": "WIP: RPT PJ 2027 calendar resolver from verified Sheet",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/70",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 71,
+      "title": "WIP: Supabase persistent payment history and non-destructive data audit",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/71",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 72,
+      "title": "WIP: English Year 2–3 verified Workbook additions and safety audit",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/72",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 73,
+      "title": "Draft: isolated English Year 2–3 Workbook audit and guarded additions",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/73",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 74,
+      "title": "Fix Telegram display timestamps to Malaysia time (UTC+8)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/74",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_oct"
+    },
+    {
+      "pr": 75,
+      "title": "English Y2–Y4: non-destructive integration gate for Nov 1 work",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/75",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 76,
+      "title": "English Y2: preserve Nov 1 lessons 001–040 SK/SP audit",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/76",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 77,
+      "title": "English Y2: preserve Nov 1 SK/SP audits Lessons 041–160",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/77",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 78,
+      "title": "English Y2 Lesson 082: add speaking cards and link to standalone RPH",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/78",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 79,
+      "title": "English Y2 Lesson 020: restore Workbook assessment from existing staging work",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/79",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 80,
+      "title": "English Y4: integrate four existing standalone RPH without rewriting",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/80",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 81,
+      "title": "English Year 4: preserve standalone RPH Lessons 002–017",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/81",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 82,
+      "title": "English Year 4: preserve existing standalone RPH Lessons 018–033",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/82",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 83,
+      "title": "English Year 4: preserve standalone RPH Lessons 034–049",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/83",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 84,
+      "title": "English Year 4: preserve standalone RPH Lessons 050–065",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/84",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 85,
+      "title": "English Year 4: preserve standalone RPH Lessons 066–081",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/85",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 86,
+      "title": "English Year 4: preserve standalone RPH Lessons 082–097",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/86",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 87,
+      "title": "English Year 4: preserve standalone RPH Lessons 098–113",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/87",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 88,
+      "title": "English Year 4: preserve standalone RPH Lessons 114–129",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/88",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 89,
+      "title": "English Year 4: preserve remaining standalone RPH Lessons 130–159",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/89",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 90,
+      "title": "English Year 2: insert existing Workbook tasks into Assessment/PBD (8 lessons)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/90",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 91,
+      "title": "English Year 2: add existing Workbook PBD to Lessons 083,084,088,089,092,093",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/91",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 92,
+      "title": "English Year 2: add Workbook Assessment/PBD to eight existing RPH",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/92",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 93,
+      "title": "English Year 2: integrate Workbook Assessment/PBD for ten more lessons",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/93",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 94,
+      "title": "Year 3 Workbook PBD additions: Lessons 002–004",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/94",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 95,
+      "title": "Year 3 Workbook PBD additions for eight existing lessons",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/95",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 96,
+      "title": "Year 3: Workbook Assessment additions to Lessons 022–032",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/96",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 97,
+      "title": "Year 3 Workbook PBD additions: Lessons 033–041",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/97",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 98,
+      "title": "Year 3 Workbook PBD: Lessons 043–051",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/98",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 99,
+      "title": "Year 3 Workbook PBD additions: Lessons 052–067",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/99",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 100,
+      "title": "Year 3 Workbook PBD: Lessons 068–081",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/100",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 101,
+      "title": "Year 3 Workbook PBD: seven lessons 082–093",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/101",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 102,
+      "title": "Year 3 Workbook PBD: Lessons 096–104",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/102",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 103,
+      "title": "Year 3 Workbook PBD additions for Lessons 105–115",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/103",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 104,
+      "title": "Year 3 Workbook PBD: Lessons 116–126",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/104",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 105,
+      "title": "Year 3 Workbook PBD: Lessons 127–135",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/105",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 106,
+      "title": "Year 3 Workbook PBD: Lessons 136–145",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/106",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 107,
+      "title": "Year 3 Workbook PBD: Lessons 146–159",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/107",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 108,
+      "title": "Repair Year 3 Lesson 087 provisional Workbook PBD",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/108",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 110,
+      "title": "English Year 3 Lesson 87 Workbook verified",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/110",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 111,
+      "title": "Record teacher-confirmed audio for English Y3 Lesson 093",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/111",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 112,
+      "title": "English Y3 Lesson 093: include Workbook p.48 Activity 1",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/112",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 113,
+      "title": "[DRAFT] Fix Rakan Pembangun approval UUID and add offline checks",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/113",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 114,
+      "title": "English Y3 Lesson 095: add Workbook p.49 story activities",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/114",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 115,
+      "title": "English Y3 Lesson 096: correct Workbook p.50 Activity 2 description",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/115",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 116,
+      "title": "English Y3 Lessons 099 and 102: align Workbook p.53 Activity 2",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/116",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 117,
+      "title": "English Y3 Lesson 103: align Workbook p.53 Activity 2",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/117",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 118,
+      "title": "English Y3 Lesson 110: correct Workbook p.56 Activity 1",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/118",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 119,
+      "title": "English Y3: correct Workbook activities in Lessons 112, 115 and 116",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/119",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 120,
+      "title": "English Y3: correct Workbook tasks in Lessons 118, 120 and 121",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/120",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 121,
+      "title": "English Y3 Lesson 126: correct Workbook p.64 Activity 2",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/121",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 122,
+      "title": "English Y3: correct Workbook instructions in Lessons 130, 131, 134",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/122",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 123,
+      "title": "English Y3 Lesson 132: use existing Workbook p.69 Activity 2",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/123",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 124,
+      "title": "English Y3: align Workbook tasks in Lessons 135, 136, 137, 141 and 142",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/124",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 125,
+      "title": "English Y3: correct Workbook instructions in Lessons 143–150",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/125",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 126,
+      "title": "English Year 3: correct Workbook tasks Lessons 151–160",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/126",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 127,
+      "title": "English Y3 Lesson 130: correct Main SK 2.1 to 2.3",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/127",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 128,
+      "title": "English Year 3: clarify teacher PBD actions in Lessons 61, 69, 71, 73 and 74",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/128",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 129,
+      "title": "English Year 3: clarify teacher PBD evidence in Lessons 42, 55 and 59",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/129",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 130,
+      "title": "English Year 3: prevent repeated Workbook p45 Activity 2 in Lessons 86–87",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/130",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 131,
+      "title": "English Y3: replace repeated Workbook task with original materials in Lessons 86–87",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/131",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 132,
+      "title": "English Year 3: unique PBD materials for Lessons 14 and 18",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/132",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 133,
+      "title": "English Y3 Lesson 25: replace repeated Workbook crossword with original writing task",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/133",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 134,
+      "title": "English Y3: replace three repeated Workbook activities with skill-specific materials",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/134",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 135,
+      "title": "English Y3: remove repeated Workbook exercises in Lessons 70, 76 and 78",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/135",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 136,
+      "title": "[DRAFT] Isolated opt-in read-only Telegram curriculum API (no production activation)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/136",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 137,
+      "title": "English Y3: original farm Listening/Speaking materials for Lessons 102–103",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/137",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 138,
+      "title": "English Y3: four distinct PBD materials for Lessons 121, 123, 124 and 134",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/138",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 139,
+      "title": "English Y3: original assessments replace repeated Workbook in Lessons 155–157",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/139",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 140,
+      "title": "English Y3 Lesson 140: original Did You speaking assessment",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/140",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 141,
+      "title": "English Y3: fix cross-batch Workbook repeats in Lessons 41 and 44",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/141",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 142,
+      "title": "Document English Year 3 global active Workbook duplicate audit (160 lessons)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/142",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 143,
+      "title": "Fix Year 3 standalone RPH material/PBD rendering and role layout",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/143",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 144,
+      "title": "Web: authenticate approved-materials requests against Telegram source",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/144",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 145,
+      "title": "English Year 4 standalone renderer and regression coverage (staging)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/145",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 146,
+      "title": "Draft: connect Telegram approved materials to existing verified English RPH",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/146",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 147,
+      "title": "English Year 4: deliver four supplementary worksheets only",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/147",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 148,
+      "title": "English Y4 worksheets: fresh CI verification (4 lessons)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/148",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 149,
+      "title": "Prevent internal QA notes leaking into English Y2/Y3 RPH",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/149",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov02"
+    },
+    {
+      "pr": 150,
+      "title": "Enable existing English Year 4 standalone RPH in adapter",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/150",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov03"
+    },
+    {
+      "pr": 151,
+      "title": "Connect English RPT 2027 PDF downloads to Telegram paid menu",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/151",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov03"
+    },
+    {
+      "pr": 152,
+      "title": "Connect English RPT 2027 PDF downloads to authenticated Web staging",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/152",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov03"
+    },
+    {
+      "pr": 153,
+      "title": "Web staging: connect authenticated Telegram materials metadata and repair PJPK navigation",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/153",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov03"
+    },
+    {
+      "pr": 154,
+      "title": "English Year 6 RPH 2027 — 160 standalone draft lessons aligned to fixed RPT",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/154",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov03"
+    },
+    {
+      "pr": 155,
+      "title": "Web staging: independent versioned curriculum DB copy with shared Supabase accounts",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/155",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov03"
+    },
+    {
+      "pr": 156,
+      "title": "Aktifkan RPH English Tahun 6 (160 Lesson) dalam penjana Telegram — pemetaan SOW 2027",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/156",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov03"
+    },
+    {
+      "pr": 157,
+      "title": "Web staging: papar RPH English Tahun 6 dan muat turun Word dari sumber Telegram yang sama",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/157",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov03"
+    },
+    {
+      "pr": 158,
+      "title": "English Year 5: stage 160 RPH + fail-closed Telegram integration",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/158",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov03"
+    },
+    {
+      "pr": 159,
+      "title": "English Year 2–6 source corrections: Year 5 L141 + Year 6 L15/L21",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/159",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov03"
+    },
+    {
+      "pr": 160,
+      "title": "English Year 3 Lesson 61: resolve SOW typo with KPM DSKP 3.3.1",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/160",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov03"
+    },
+    {
+      "pr": 161,
+      "title": "Hotfix: English Year 4 Lesson 30 audio CD1 Track 29 from Teacher's Book",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/161",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov03"
+    },
+    {
+      "pr": 162,
+      "title": "Audit English Y2/Y3: 320 RPH Word/PDF row integrity",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/162",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov03"
+    },
+    {
+      "pr": 163,
+      "title": "Fix English Year 6 RPH Word A4 + 30-Lesson layout QA",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/163",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov03"
+    },
+    {
+      "pr": 164,
+      "title": "English 800 Lessons — read-only full Word A4 verification",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/164",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov03"
+    },
+    {
+      "pr": 165,
+      "title": "English Y2 Word A4 — fix only Lessons 2,3,12,13,14",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/165",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov03"
+    },
+    {
+      "pr": 166,
+      "title": "[DRAF] Sambung RPT Matematik Tahun 2–6 v28 ke Telegram dengan akses berbayar",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/166",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov03"
+    },
+    {
+      "pr": 167,
+      "title": "[DRAF] English Y6 corrected RPT PDF V3 + Y4 teacher-choice release gate",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/167",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov03"
+    },
+    {
+      "pr": 168,
+      "title": "RPT Matematik 2027 v28: muat turun PDF terus seperti English",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/168",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov03"
+    },
+    {
+      "pr": 169,
+      "title": "PJPK T1–T6: 400 RPH draf + 163 PK PdP 2027 (staging, NOT READY)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/169",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 170,
+      "title": "Fix English RPH Year 1–6 labels in Word/PDF",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/170",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov03"
+    },
+    {
+      "pr": 171,
+      "title": "feat(rpt): Telegram downloads for Pendidikan Islam 2027 PDF Years 2–6",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/171",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 172,
+      "title": "Fix Telegram English Year 4 RPH Word/PDF using reviewed standalone lessons",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/172",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 173,
+      "title": "English Year 2–6: fix native Word/PDF standards, cross-year audit and safe Year 5 draft gate",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/173",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 174,
+      "title": "RPT Bahasa Melayu 2027 Tahun 2–6: PDF A4 landscape + Telegram paid download (DRAF)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/174",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 175,
+      "title": "PJPK Telegram: gated admin-only preview (338 RPH, no DB/READY changes)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/175",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 176,
+      "title": "fix(rpt): Pendidikan Islam 2027 Jawi formatting like 2026 (Years 2–6)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/176",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 177,
+      "title": "English Year 5: put nine teacher-choice draft lesson plans in Telegram Word/PDF",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/177",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 178,
+      "title": "Kemaskan RPT Bahasa Melayu 2027 Tahun 2–6 mengikut jadual RPT BM 2026",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/178",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 179,
+      "title": "[DRAF QA] Pendidikan Moral Tahun 2–6 — 210 RPH, 70 BBM, 70 halaman unit buku teks",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/179",
+      "stage": "CLOSED_UNMERGED",
+      "group": "closed_unmerged"
+    },
+    {
+      "pr": 180,
+      "title": "fix(pi rpt): hide 2026 source-week audit notes from 2027 teacher PDFs",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/180",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 181,
+      "title": "RPT PJPK 2027: 5 landscape PDF DRAF + paid Telegram menu (Tahun 2–6)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/181",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 182,
+      "title": "English Year 4 + Year 5: full 160 lesson source-backed Telegram RPH drafts, preserve final QA gates",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/182",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 183,
+      "title": "RPT Bahasa Melayu 2027 Tahun 2–6: satu minggu satu halaman PDF",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/183",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 184,
+      "title": "PJPK 2027: betulkan SK 3.1/4.1, keselamatan akuatik dan PDF RPT Tahun 2–6",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/184",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 185,
+      "title": "English 2–6: 800-Lesson technical release audit and Year 6 teacher-choice Word/PDF fix",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/185",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 186,
+      "title": "PJPK 2027: sahkan 31 halaman buku dan selaraskan PJ T6 PdP 033",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/186",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 187,
+      "title": "docs(rpt2027): bahasa guru bagi semua 25 PDF Tahun 2–6",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/187",
+      "stage": "CLOSED_UNMERGED",
+      "group": "closed_unmerged"
+    },
+    {
+      "pr": 188,
+      "title": "BM Tahun 4–6: tambah 496 calon RPH mengikut RPT 2027 (DRAF/HOLD)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/188",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 189,
+      "title": "[BETA 80] Pendidikan Moral Tahun 2–6 — RPH/RPT Telegram berasaskan main terkini",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/189",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 190,
+      "title": "PJPK 2027: aktifkan 339 RPH DRAF Tahun 2–6 dalam Telegram untuk pengguna biasa",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/190",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 191,
+      "title": "English 2–6 final-readiness evidence: independent 800 SOW PDF scan, Y4 L30 audio/source proof, native PDF smoke",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/191",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 192,
+      "title": "BM RPH 2027: audit 825 PdP, betulkan SK/SP Tahun 3 dan objektif 44 RPH",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/192",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 193,
+      "title": "Private referral 20% for verified CikguLaju payments (feature off by default)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/193",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 194,
+      "title": "fix(moral): remove review labels from teacher RPH, RPT PDFs and Telegram menus",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/194",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 195,
+      "title": "English 2–6 FINAL READY evidence: Year4 Lesson30 original audio conflict and native PDF audit",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/195",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 196,
+      "title": "[DRAF / sasaran 90%] PSV T2–T6 — 210 RPH + 5 RPT berasaskan DSKP dan Buku Teks",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/196",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 197,
+      "title": "PJPK Tahun 2–6: tingkatkan 44 RPH berasaskan SP, keselamatan dan PBD",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/197",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 198,
+      "title": "Show private referral as buttons for approved Telegram users",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/198",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 199,
+      "title": "Admin Panel: view private referral points and payment conversions",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/199",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 200,
+      "title": "docs(rpt2027): 25 PDF versi guru bersih Tahun 2–6",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/200",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 201,
+      "title": "English Y4 Lesson30: verify original Workbook p14 Activity1 without promoting audio readiness",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/201",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 202,
+      "title": "Fix silent missing referral registrations for new Telegram users",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/202",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 203,
+      "title": "Ensure private referrals use current 10-RPH trial user setup",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/203",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 204,
+      "title": "English Year 4 Lesson 30: correct Workbook p15 Activity 3 against original TB/SB",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/204",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 205,
+      "title": "fix(payment): reopen stale Rakan Pembangun approvals safely, keep original payment",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/205",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 206,
+      "title": "BM Tahun 2–6: buktikan lapan RPH dengan buku teks asal dan baiki dua tajuk Tahun 5",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/206",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 207,
+      "title": "Fix Telegram Year4 Lesson30 wrong CD2 audio route: fail closed until verified",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/207",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 208,
+      "title": "BM Tahun 4: dua lagi RPH bersumber BT m/s 5–6 (peribahasa & kata nama am)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/208",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 209,
+      "title": "Audit all 160 Year4 legacy Telegram audio routes against instructional RPH references",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/209",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 210,
+      "title": "English Y4 Lesson 103: remove two wrongly attached audio tracks from Telegram route",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/210",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 211,
+      "title": "BM Tahun 4 PdP 008–014: padankan BT asal, betulkan SP dan RPT 2027",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/211",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 212,
+      "title": "fix(pioneer): admin recovery for verified RM10 payments lost from local Pending",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/212",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 213,
+      "title": "Persist CikguLaju user payments, admin queues and feedback in Supabase",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/213",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 214,
+      "title": "BM Tahun 4 PdP 015–024: RPH khusus BT dan RPT 2027",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/214",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 215,
+      "title": "English Year4 Lesson99: align Activity1 CD2 Track24 with original Teacher Book",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/215",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 216,
+      "title": "BM Tahun 4 PdP 025–035: pembetulan aktiviti BT dan RPT 2027",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/216",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 217,
+      "title": "Verify English Y4 Lessons 145/147 CD2 disc refs against original Teacher Book",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/217",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 218,
+      "title": "English Year4: verify five CD1 track references against printed Teacher Book",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/218",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 219,
+      "title": "Verify Year4 Lessons 9, 11 and 22 CD1 audio labels from printed Teacher Book",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/219",
+      "stage": "CLOSED_UNMERGED",
+      "group": "closed_unmerged"
+    },
+    {
+      "pr": 220,
+      "title": "BM Tahun 4 PdP 036–050: pembetulan BT dan SP 042/043 (staging)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/220",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 221,
+      "title": "English Y6 Lessons 155–158: skill-specific induction and closure for teacher-selected plans",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/221",
+      "stage": "CLOSED_UNMERGED",
+      "group": "closed_unmerged"
+    },
+    {
+      "pr": 222,
+      "title": "BM Tahun 4 PdP 051–060: aktiviti RPH berdasarkan Buku Teks dan RPT 2027",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/222",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 223,
+      "title": "fix(payments): show Telegram receipt in admin and exact submission time (MYT)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/223",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 224,
+      "title": "BM Tahun 4 PdP 061–075: pembetulan RPH khusus BT, SP 073 dan HOLD 067–068",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/224",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 225,
+      "title": "BM Tahun 4 PdP 076–090: RPH BT 13 PdP, pembetulan tajuk/halaman, HOLD 076/083",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/225",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 226,
+      "title": "English Y6 choice lessons 16/32/48/64: replace generic activities with original book tasks",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/226",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 227,
+      "title": "fix(payments): create Pending only after customer uploads receipt (RM5/RM10)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/227",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 228,
+      "title": "BM Tahun 4 PdP 091–112: 20 RPH khusus BT, pembetulan SP/halaman, HOLD 095/096",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/228",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 229,
+      "title": "English Y4 Lesson30: record CD1/CD2 acoustic signal difference, keep audio blocked",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/229",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 230,
+      "title": "BM Tahun 4 PdP 113–131: 16 RPH khusus BT, pembetulan SK/SP dan HOLD Jawi",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/230",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 231,
+      "title": "Pendidikan Moral Tahun 2–6: 33 RPH dipadankan dengan bukti buku teks (11 unit)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/231",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 232,
+      "title": "Pendidikan Moral Tahun 2–6: 480 sesi RPH, RPT 2027 A/B dan muat turun Telegram",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/232",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 233,
+      "title": "BM Tahun 4 PdP 132–165: batch besar 33 RPH khusus BT, RPT/SP diperbetul",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/233",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 234,
+      "title": "BM Tahun 2 PdP 001–030: 22 RPH Buku Teks Jilid 1, 6 HOLD pengulangan/PBD",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/234",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 235,
+      "title": "English Year 6 L155–158: replace generic teacher-choice phases with skill-specific activities",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/235",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 236,
+      "title": "BM Tahun 2 PdP 031–080: 33 RPH khusus BT, 17 HOLD dan penyelarasan RPT",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/236",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 237,
+      "title": "English Year 6: strengthen Language Awareness Lessons 96/112/128/144",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/237",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 238,
+      "title": "English Year 6 PBL Lessons 80 and 160: distinct career and story portfolio tasks",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/238",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 239,
+      "title": "feat(telegram): add public Manual Pengguna PDF button to main menu",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/239",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 240,
+      "title": "BM Tahun 2 PdP 081–111: 26 RPH khusus BT Jilid 1/2, SP 087 dibetulkan, 5 HOLD",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/240",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 241,
+      "title": "Pendidikan Moral Tahun 2–5: 12 RPH Unit 4 dipadankan buku teks + audit Tahun 6",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/241",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 242,
+      "title": "Audit all English RPH Year 1–6 (960 files) and SOW source match Year 2–6 (800)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/242",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 244,
+      "title": "English Year 5 L29/L30: correct textbook-aligned 60-minute activities and PBD",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/244",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 245,
+      "title": "English Year 2: remove 47 obsolete SOW code-pending headers using independent PDF proof",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/245",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 246,
+      "title": "English Year 3 L004–L016: replace 12 generic pupil actions with original SOW tasks",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/246",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 247,
+      "title": "Verify latest 61 English changes with native PDF one-page A4 source tests",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/247",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 248,
+      "title": "English Year 6: source-ground six fixed SOW lessons 1–4, 7, 12 with native PDF QA",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/248",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 249,
+      "title": "English Year6: correct six more generic SOW task sequences (Lessons 6,8,9,11,13,14)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/249",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 251,
+      "title": "English: checkpoint only latest verified Year2–6 RPH fixes; retain FINAL READY release gates",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/251",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 252,
+      "title": "English Y6 fixed SOW: independently verify Word A4 for latest 12 corrected RPH",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/252",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 253,
+      "title": "English Year 6 Life in the Past: correct seven original SOW activity sequences",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/253",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 254,
+      "title": "English Year 6 L27–30 and 33–34: original SOW tasks, 25 PDF and 6 Word A4 checks",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/254",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 255,
+      "title": "English Year 6 L35–50: refine 12 Adventure Time / Cool Jobs tasks against KPM SOW",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/255",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 256,
+      "title": "English: checkpoint latest 25 source-verified Year6 improvements and 78 residual QA flags",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/256",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 257,
+      "title": "RPT 2027: masukkan PSV T2–T6, kemaskan muka depan Pendidikan Moral tanpa menimpa modul lain",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/257",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 258,
+      "title": "RPT 2027: satu PDF per subjek/tahun — satukan Moral Kumpulan A+B, buang Word/RPH dari menu",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/258",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 259,
+      "title": "English Year 6: batch 22 source-verified SOW refinements (Lessons 51–78)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/259",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 260,
+      "title": "English Year 6: 16 more KPM SOW-specific RPH for Making a Difference and Music",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/260",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 261,
+      "title": "English Year 6: eight source-specific Music/Film RPH Lessons 102–110",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/261",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 262,
+      "title": "English Year6: ten source-specific KPM SOW moral-story and draft-feedback RPH",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/262",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 263,
+      "title": "English Year6: final 22 fixed-SOW generic RPH corrected against original KPM source",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/263",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 264,
+      "title": "English Year6: protect zero generic RPH flags and checkpoint all 115 SOW refinements",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/264",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 265,
+      "title": "English FINAL READY blockers: Y4 L30 audio fail-closed PBD and published Y6 RPT content gate",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/265",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 266,
+      "title": "RPT 2027: tanya nama & logo sekolah setiap muat turun PDF, tanpa simpan profil",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/266",
+      "stage": "OPEN_REVIEW_REQUIRED",
+      "group": "open_review"
+    },
+    {
+      "pr": 267,
+      "title": "PSV Tahun 2–6 — integrasi 210 RPH sumber DRAF ke main (tidak aktif Telegram)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/267",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 268,
+      "title": "English Y4: opt-in standalone staging preview with strict audio/draft release gates",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/268",
+      "stage": "CLOSED_UNMERGED",
+      "group": "closed_unmerged"
+    },
+    {
+      "pr": 269,
+      "title": "English Y4: protect actual Render launcher 149 fixed-SOW RPH and 11 draft/audio holdbacks",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/269",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 270,
+      "title": "Pendidikan Moral menuju BETA 90: lindungi padanan sumber Tahun 6 Unit 4 dan QA 480 RPH",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/270",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 271,
+      "title": "English Y5: audit all 160 teacher-facing RPH preview routes against current source",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/271",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov04"
+    },
+    {
+      "pr": 272,
+      "title": "English Year4/5: hide internal teacher-review wording without falsely releasing drafts",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/272",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 273,
+      "title": "Pendidikan Moral BETA90: audit DSKP-BT Unit 7 Tahun 6 dan semak 270 RPH PDF penuh",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/273",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 274,
+      "title": "Moral Y2–6: pengesahan 350 SP daripada 5 DSKP asal + 70 tajuk buku teks",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/274",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 275,
+      "title": "English Year 4 Lesson 30: teacher-confirmed CD1 Track29 source and safe exact audio routing",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/275",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 276,
+      "title": "Moral 480 RPH: audit bukti setiap sesi, elak FINAL READY palsu",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/276",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 277,
+      "title": "English Year4 L29 CLIL: correct CD3 Tracks35/36 source; flag incorrect legacy CD1 links",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/277",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 278,
+      "title": "Moral Tahun 2–6: 21 RPH tambahan disahkan aktiviti buku teks (45 → 66)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/278",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 279,
+      "title": "AUDIT ONLY: English Year 4 all 160 SOW Lessons vs 68 audio routes and Drive source formats",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/279",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 280,
+      "title": "Moral Tahun 2: sahkan baki 27 RPH terhadap buku teks asal (42/42)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/280",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 281,
+      "title": "Pendidikan Moral Tahun 3: semua 42 RPH teras disemak halaman aktiviti buku",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/281",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 282,
+      "title": "AUDIT ONLY: English Year1–6 SOW 960 Lesson audio provenance and wrong-textbook source risks",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/282",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 283,
+      "title": "SAFETY STAGING: hold 24 wrong-book English Year4 audio links across 19 lessons",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/283",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 284,
+      "title": "Pendidikan Moral Tahun 4: semak 30 baki RPH melalui aktiviti buku teks asal",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/284",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 285,
+      "title": "Pendidikan Moral Tahun 5: pengesahan halaman buku teks semua 42 RPH teras",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/285",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 286,
+      "title": "Pendidikan Moral Tahun 6: 24 RPH disemak buku teks — 204/210 RPH teras",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/286",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 287,
+      "title": "Pendidikan Moral: 480 sumber dikelaskan, eksport Word 270 RPH untuk audit A4",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/287",
+      "stage": "OPEN_REVIEW_REQUIRED",
+      "group": "open_review"
+    },
+    {
+      "pr": 288,
+      "title": "STAGING QA: English Y6 native PDF A4 L16/L160 and Year4 Workbook test wording",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/288",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 289,
+      "title": "Moral Tahun 6: pisahkan buku KSSR lama, padankan 14 RPH dengan Semakan 2017 dan betulkan audit 480",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/289",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 290,
+      "title": "Moral Tahun 6: selaraskan semua 42 RPH teras ke bab Buku Teks KSSR Semakan 2017",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/290",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 291,
+      "title": "Pendidikan Moral Tahun 6: RPT 96 sesi berasaskan buku teks Semakan 2017 (DBP 2021)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/291",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 292,
+      "title": "English Y2 Lesson26 / Y3 Lesson93: reconcile original audio source proof before final approval",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/292",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 293,
+      "title": "Moral Tahun 6: betulkan tajuk unit RPT PDF Kumpulan A dan B kepada Semakan 2017",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/293",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 294,
+      "title": "Moral Tahun 6: pastikan PDF RPT sebenar memaparkan tajuk Semakan 2017",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/294",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 295,
+      "title": "Hide unfinished RPH Hari Ini from Telegram; keep manual RPH flow",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/295",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 296,
+      "title": "Pendidikan Moral Tahun 6: gantikan 46 rujukan pengukuhan buku lama dengan edisi Semakan 2017",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/296",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 297,
+      "title": "English Year4 Lesson29: verify Class CD3 source, deliver safe printed-reading RPH",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/297",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 298,
+      "title": "Moral Tahun 6: asingkan 24 bukti buku lama daripada pengesahan edisi Semakan 2017",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/298",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 299,
+      "title": "Rename Telegram RPH selection step to Sediakan RPH",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/299",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 300,
+      "title": "English Y3 Lesson93: verify unique CD1 Track97 MP3 identity without premature audio release",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/300",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 301,
+      "title": "Pendidikan Moral Tahun 6: tepatkan kad aktiviti Unit 4, 7 dan tajuk Unit 14 ikut buku 2021",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/301",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 302,
+      "title": "English RPT 2027: correct Year6 RPH availability and clarify final release gates",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/302",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 303,
+      "title": "English Year5: cross-check all 87 SOW audio references against original Drive MP3s",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/303",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 304,
+      "title": "English Year5: prove Teacher/Student/Workbook original Second Edition covers and audio-series match",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/304",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 305,
+      "title": "[DRAFT • STAGING ONLY] Matematik v38 RPH preview 585 Lesson — no production activation",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/305",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 306,
+      "title": "Moral Tahun 6 Unit 3: betulkan 3 RPH PdP 007–009 berdasarkan teks buku DBP 2021",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/306",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 307,
+      "title": "Moral Tahun 6: 24 RPH teras BBM dan set induksi rujuk buku Semakan 2017 DBP 2021",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/307",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 308,
+      "title": "Pendidikan Moral: uji 270 Word pengukuhan dicetak sebagai 270 halaman A4 sebenar",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/308",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 309,
+      "title": "English Year5: audit all 160 SOW printed-page citations against original KPM PDF",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/309",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 310,
+      "title": "Moral 210 RPH teras: uji halaman A4 dengan susun atur Word asli secara offline",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/310",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 311,
+      "title": "DRAFT / NO-GO: PI 2027 696 RPH staging previews + V7 publication gate",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/311",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 312,
+      "title": "Moral Tahun 6 Unit 2: spesifikkan PdP 004–006 ikut situasi asal buku DBP 2021",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/312",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 313,
+      "title": "English Y5 L29/L30: original SOW T106 SB92 WB18-19 CD3 audio source QA",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/313",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 314,
+      "title": "Moral Tahun 6 Unit 14: 3 RPH berasaskan situasi buku 2021 dan GPI sejarah",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/314",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 315,
+      "title": "Pendidikan Moral Tahun 2–6: semak dan murnikan 270 RPH pengukuhan satu persatu mengikut SP",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/315",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 316,
+      "title": "Pendidikan Moral: paparkan RPH Pengukuhan PDF/Word kepada pengguna berbayar",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/316",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 317,
+      "title": "[SAFE PARTIAL RELEASE] Matematik v41 — staging preview infrastructure only (inactive on Telegram)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/317",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 318,
+      "title": "PSV 2027: buka akses 210 RPH Tahun 2–6 melalui Telegram sedia ada",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/318",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 319,
+      "title": "PSV: buang sekatan 'Dalam Pembangunan' untuk Tahun 2–6 dan pulihkan menu 210 PdP",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/319",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 320,
+      "title": "Pendidikan Islam 2027: add 690 review-only draft sources, hold 6 (no live activation)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/320",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 321,
+      "title": "PSV Tahun 2–6: betulkan teks menu 🚧 lama sebelum dihantar",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/321",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 322,
+      "title": "Fix Telegram class-name input after Lesson/PdP selection",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/322",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 323,
+      "title": "Web: papar RPH sebaik sahaja Lesson dipilih (tanpa wajib isi kelas dahulu)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/323",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 324,
+      "title": "Web staging: cadangan nama kelas daripada profil guru Supabase",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/324",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 325,
+      "title": "Web CikguLaju: transparent official logo and table-formatted English RPH",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/325",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 326,
+      "title": "Web production: move RPT 2027 to responsive sidebar navigation",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/326",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 327,
+      "title": "CikguLaju Web: editable teacher profile, saved classes and weekly timetable",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/327",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 328,
+      "title": "Web: one shared Telegram/Web teacher profile and timetable record",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/328",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 329,
+      "title": "Web RPH: match native Telegram three-table A4 Word and PDF print format",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/329",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 330,
+      "title": "Telegram: protected native RPH Word/PDF endpoint for CikguLaju Web",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/330",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 331,
+      "title": "Web: remove RPH preview, direct native Telegram Word/PDF generation",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/331",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 332,
+      "title": "Web: semak ketersediaan RPH sebelum papar butang jana Word/PDF",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/332",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 333,
+      "title": "Telegram: kunci identiti sumber RPH Web dan selaraskan penanda PdP",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/333",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 334,
+      "title": "Web: hanya jana RPH apabila sumber Lesson sama dengan Telegram",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/334",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 335,
+      "title": "[STAGING DRAF] Muzik T2–6: 175 RPH/RPT, kod SP diperbetul, audio & parity belum FINAL",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/335",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 336,
+      "title": "[STAGING] Bahasa Arab T2–T6: 138 RPH draf, T5 Unit2/3, 0 FINAL READY",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/336",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 337,
+      "title": "Telegram: servis dalaman RPT dengan logo/nama sekolah",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/337",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 338,
+      "title": "RPT berlogo: tahun akademik 2027 dan Tahun/PdP tepat pada muka depan",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/338",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 339,
+      "title": "Web: nama guru di sidebar, muat naik logo sekolah dan RPT 2027 beridentiti",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/339",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 340,
+      "title": "Web: betulkan laluan bacaan logo sekolah daripada storan peribadi",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/340",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 341,
+      "title": "[DRAF] Sejarah Tahun 4–6: RPT 2027 + 108 RPH berpandukan DSKP",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/341",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 342,
+      "title": "Telegram: pautan Web di menu utama dan QR pembayaran untuk Web",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/342",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 343,
+      "title": "Web: Refresh label, DuitNow QR, receipt upload and shared Pending payment status",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/343",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 344,
+      "title": "Telegram: sahkan identiti bot sebenar pada katalog bayaran Web",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/344",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 345,
+      "title": "Web: tambah link rasmi Touch ’n Go bersama QR pembayaran",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/345",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 346,
+      "title": "Telegram: Rakan RM10 sahaja pada katalog Web, peratus sah dan resit Web boleh disemak admin",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/346",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 347,
+      "title": "Web: hanya Rakan Pembangun RM10, tunjuk peratus aktif daripada Telegram",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/347",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 348,
+      "title": "Telegram: hebahan Web CikguLaju melalui Panel Admin dengan pratonton dan pengesahan",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/348",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 349,
+      "title": "Fix: aktifkan Hebahan Pengguna selepas sambungan Supabase dimulakan",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/349",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 350,
+      "title": "Web: menu telefon dua lajur tanpa skrol mendatar",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/350",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 351,
+      "title": "Telegram native RPH: masukkan bilangan murid daripada Web dalam Word/PDF",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/351",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 352,
+      "title": "Web: dropdown kelas sebenar, waktu mula/tamat dan bilangan murid dalam RPH",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/352",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 353,
+      "title": "Fix Web RPT PDF on phones and optional school-logo 503 errors",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/353",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 354,
+      "title": "Web: kongsi baki 10 janaan RPH percuma dengan Telegram",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/354",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 355,
+      "title": "Telegram: resit Web bersama butang semak & sahkan bayaran di Panel Admin",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/355",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 356,
+      "title": "Web: selepas resit disimpan, hantar makluman Telegram admin dengan pautan kad pengesahan",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/356",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 357,
+      "title": "Fix RM10 Rakan Pembangun reactivation after intentional deactivation (Payment #3)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/357",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov05"
+    },
+    {
+      "pr": 358,
+      "title": "[STAGING/REVIEW] Bahasa Arab Tahun 5 Unit 4 — 16 RPH draf PdP045–060",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/358",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 359,
+      "title": "Admin: paparkan resit dan maklumat Rakan Pembangun dalam satu kad semakan",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/359",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 360,
+      "title": "[STAGING] Bahasa Arab T3 Unit2: 16 RPH visual buku teks + blok sumber T6 lama",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/360",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 361,
+      "title": "[STAGING] Bahasa Arab Tahun2 Unit2 — 16 RPH draf, peta halaman bercetak sah",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/361",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 362,
+      "title": "Web: capture private referral before Telegram login and show share link",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/362",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 363,
+      "title": "[STAGING] Bahasa Arab T2 Unit3 — 16 RPH khusus anggota badan",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/363",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 364,
+      "title": "[STAGING] Bahasa Arab T2 Unit4 — 16 RPH alat sekolah, Tahun2 60 draf",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/364",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 365,
+      "title": "[STAGING] Bahasa Arab Tahun3 Unit3 — 16 RPH warna dan bunyi berdasarkan Buku Teks",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/365",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 366,
+      "title": "[STAGING] Bahasa Arab Tahun3 Unit4 — 16 RPH masa, rutin & hari",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/366",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 367,
+      "title": "Paparkan tarikh RPH sebagai DD/MM/YYYY",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/367",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 368,
+      "title": "[STAGING] Bahasa Arab Tahun6 Unit2 — 16 RPH kerjaya sumber DBP Semakan 2021",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/368",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 369,
+      "title": "[STAGING] Bahasa Arab T6 Unit3 — 16 RPH pengangkutan dari buku Semakan 2021",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/369",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 370,
+      "title": "[STAGING] Bahasa Arab Tahun6 Unit4 — 16 RPH kenegaraan sumber DBP 2021",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/370",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 371,
+      "title": "[STAGING] RPT Bahasa Arab 2027 Kumpulan A/B — indeks 298 PdP setiap kumpulan",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/371",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 372,
+      "title": "Telegram: maklum admin pendaftaran referral baharu dari Web",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/372",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 373,
+      "title": "Web: notify Telegram admin on verified new referral capture",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/373",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 374,
+      "title": "[STAGING] Bahasa Arab T2–T6: pautkan 60 bukti halaman Unit 1 ke indeks RPT A/B",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/374",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 375,
+      "title": "Telegram: notify admin on a truly new Web-created account",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/375",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 376,
+      "title": "Web: directly register verified Telegram users in shared CikguLaju account",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/376",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 377,
+      "title": "Web CikguLaju: pilihan avatar dalam Profil Guru",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/377",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 378,
+      "title": "[STAGING] Bahasa Arab T2–6: 298 RPH full-inventory structural and source QA gate",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/378",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 379,
+      "title": "[STAGING] Bahasa Arab Tahun 2: pembetulan calon SP PdP010/011 berpandukan buku dan DPK",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/379",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 380,
+      "title": "Web: satu butang Jana Bahan selepas Lesson/PdP, muat turun individu",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/380",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 381,
+      "title": "[STAGING] Bahasa Arab Tahun 2 Unit 1: audit visual 12/12 SP dari buku asal DBP 2017",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/381",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 382,
+      "title": "Telegram: sumber RPH natif BM, Pendidikan Islam, Matematik dan Sains untuk Web",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/382",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 383,
+      "title": "Web: pulihkan RPH BM, Pendidikan Islam, Matematik dan Sains melalui Telegram natif",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/383",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 384,
+      "title": "[STAGING] Bahasa Arab T2 Unit2: 8 calon SP mencurigakan dalam 16 PdP",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/384",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 385,
+      "title": "[STAGING] Bahasa Arab Tahun 2 Unit 2: 8 pembetulan calon SP berpandukan buku asal",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/385",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 386,
+      "title": "Web: restore 403 for unknown SQLite account without touching Supabase signup",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/386",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 387,
+      "title": "CI: cover Web login, shared account signup, and auth route changes",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/387",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 388,
+      "title": "[STAGING] Bahasa Arab Tahun 2 Unit 2: betulkan PdP026 SP 3.4.1 salin frasa",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/388",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 389,
+      "title": "Telegram: sumber sebenar BM Tema → Unit → Tajuk → PdP untuk Web",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/389",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 390,
+      "title": "Telegram: expose verified PI, Mathematics and Science textbook page references in PdP menu",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/390",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 391,
+      "title": "Web: subject-aware navigation, BM Tema/Unit/Tajuk, numbered PdP and textbook page refs",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/391",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 392,
+      "title": "[STAGING] Bahasa Arab Tahun 2–6: RPH boleh cetak tanpa nota audit + QA 298 Word/PDF",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/392",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 393,
+      "title": "Fix BM Web: use true Telegram verified_pdp_sequence and native Word/PDF",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/393",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 394,
+      "title": "Web: fix disabled BM Tema and bind selected PdP to true Telegram native RPH",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/394",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 395,
+      "title": "Sejarah Tahun 4–6 2027: aliran pengguna Telegram daripada sumber RPH sedia ada (DRAF)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/395",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 396,
+      "title": "[SIMPAN DULU — JANGAN MERGE] Arkib RPH Bahasa Arab T2–T6 ke Google Drive",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/396",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 397,
+      "title": "Web: Sejarah Tahun 4–6 2027 — Unit/PdP dan RPH natif daripada Telegram",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/397",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 398,
+      "title": "Telegram: aktifkan sumber Sejarah Tahun 4–6 untuk pilihan dan RPH natif di Web",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/398",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 399,
+      "title": "Fix BM duplicate Tema names using canonical source-only theme identity",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/399",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 400,
+      "title": "Web: distinguish verified RPH from trial/access lock in BM materials",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/400",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 401,
+      "title": "[JANGAN MERGE] RPT Bahasa Arab 2027 Tahun 2–6 Kumpulan A/B — Word/PDF lanskap",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/401",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 402,
+      "title": "Telegram: source-isolated Bahasa Arab and Muzik DRAF RPH service for Web",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/402",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 403,
+      "title": "Web: add Bahasa Arab and Pendidikan Muzik Year2–6 (DRAF) with native Telegram RPH",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/403",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 404,
+      "title": "DRAF: RBT Tahun 4–6 — 96 PdP, RPT 2027 dan pemetaan DSKP",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/404",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 405,
+      "title": "QA regression: update shared RPH subject contract for Arabic and Music",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/405",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 406,
+      "title": "[DRAF — JANGAN MERGE] Sains T1–6: audit sumber sebenar DB v26.00 tanpa tulis data",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/406",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 407,
+      "title": "Fix Sejarah native QA workflow syntax without changing runtime",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/407",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 408,
+      "title": "Web PJ: satu pilihan setiap Unit buku teks, tajuk lain di PdP",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/408",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 409,
+      "title": "BM Web RPH: aktiviti ikut SP PdP dan nombor langkah baris baharu",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/409",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 410,
+      "title": "RBT Tahun 4–6 2027 — sync to latest main, native Telegram/Web adapter and gated QA",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/410",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 411,
+      "title": "Web CikguLaju: RBT Tahun 4-6 Unit/PdP and native Telegram RPH (draft gate)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/411",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 412,
+      "title": "DRAF: 50 RPH Aktiviti Khas berbeza tahap (Transisi + Tamat Sukatan)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/412",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 413,
+      "title": "[DRAF — HOLD] Sains RPT 2027 T2–T6 Kumpulan A/B: bina Word/PDF sumber tanpa tarikh rekaan",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/413",
+      "stage": "CLOSED_UNMERGED",
+      "group": "closed_unmerged"
+    },
+    {
+      "pr": 414,
+      "title": "Web PK: satu Bidang DSKP, aktiviti di bawah 163 PdP bernombor",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/414",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 415,
+      "title": "[DRAF/HOLD] RPT Sains 2027 T2–T6 Kumpulan A/B — 342 PdP, Word/PDF landscape",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/415",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 416,
+      "title": "Web: normalize duplicate English Unit labels and verify subject navigation",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/416",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 417,
+      "title": "Telegram: English verified Workbook pages and Music original audio links",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/417",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 418,
+      "title": "Web Jana Bahan: English Workbook PDF + Music original source links",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/418",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 419,
+      "title": "[DRAF/HOLD] Sains T3 — integrasi SP 3.2.5, 3.3.3 dan 3.3.4 dalam 45 RPH",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/419",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 420,
+      "title": "RPH Hari Ini: gunakan jadual Telegram/Web untuk sediakan RPH mengikut kelas dan waktu",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/420",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 421,
+      "title": "RPH Hari Ini: betulkan ujian menu lama dan pastikan jadual dibuka selepas login",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/421",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 422,
+      "title": "Web RPH Hari Ini: pilih tajuk/topik dan senarai Lesson terus pada kad jadual",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/422",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 423,
+      "title": "Betulkan RPH Hari Ini: dropdown sebenar terus pada kad jadual, bukan halaman Sediakan RPH",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/423",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 424,
+      "title": "RPH Hari Ini: semua dropdown automatik, sekali Jana Bahan, muat turun mengikut Lesson",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/424",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 425,
+      "title": "RPH Hari Ini: kunci pilihan semasa semakan semua Lesson dan pulihkan jika dibatalkan",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/425",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 426,
+      "title": "Web Matematik: gabung Unit bernombor sama tanpa kehilangan PdP/RPH",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/426",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 427,
+      "title": "RBT T4–6: 96 PdP editorial audit, distinct 20 continuation sessions, exact 114-SP DSKP QA",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/427",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 428,
+      "title": "Buang avatar guru daripada UI Web CikguLaju",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/428",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 429,
+      "title": "Web: letak Profil & Akses di bahagian paling atas menu",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/429",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 430,
+      "title": "RPH Matematik dan subjek lain: seragamkan bold Aktiviti 1/2/3/4 dalam Word dan PDF",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/430",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 431,
+      "title": "Secondary BM 2027: stage 460 RPH T2–T5 with 102 textbook SP/page anchors",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/431",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 432,
+      "title": "Telegram: daftarkan API sumber 59 RPH Aktiviti Khas sebagai DRAF berpagar",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/432",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 433,
+      "title": "Web: RPH Aktiviti Khas 59 DRAF — Transisi dan Tamat Sukatan dari Telegram",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/433",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 434,
+      "title": "DRAF KP2027 Tahun 1 + Tingkatan 1 — inventori 21 subjek dan kawalan sumber DK",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/434",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 435,
+      "title": "Web Aktiviti Khas: balas 503 selamat jika Telegram API tidak tersedia",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/435",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 436,
+      "title": "RPH: bold juga Aktiviti 1 (15 minit) dan tajuk tanpa tanda pemisah",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/436",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 437,
+      "title": "Tetapkan kuota Rakan Pembangun batch pertama 200 (bukan 500)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/437",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 438,
+      "title": "Web RPH Hari Ini: semua hasil Jana Bahan di bawah senarai subjek, asing setiap kelas",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/438",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 439,
+      "title": "Jadual Waktu Mengajar: dropdown subjek lebih mesra guru dan telefon",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/439",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 440,
+      "title": "RPT 2027: format seragam berdasarkan contoh 2026 (pratonton sahaja)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/440",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 441,
+      "title": "RPT 2027: pratonton seragam Sejarah T4–6 dan PJPK T2–6 (staging sahaja)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/441",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 442,
+      "title": "[STAGING/HOLD] Sains 342 RPH PASS + 163 audit panitia T4/T6 + BT T5 83 SP",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/442",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 443,
+      "title": "[STAGING / HOLD] Pendidikan Islam — 560 pengayaan RPH, 687/690 aktiviti ≥3 langkah (bukan skor 80%)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/443",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 444,
+      "title": "[DRAFT STAGING v60] Matematik RPH sahaja — skema 68 lesson pasangan Tahun 4 + 8 objektif",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/444",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 446,
+      "title": "WIP: Google-first Web login without mandatory Telegram (#445)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/446",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 447,
+      "title": "Google-first Web staging: secure native RPH issue/generate/download pipeline built, disabled pending E2E",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/447",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 448,
+      "title": "Web produksi: API baca-sahaja status Rakan Pembangun/langganan (terkunci & tanpa ubah DB)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/448",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 449,
+      "title": "Web: sokong kunci Supabase baharu untuk semakan kredit dan akses akaun",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/449",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 450,
+      "title": "Web produksi: Integrasi Google Login UUID, RPH dan pautan Telegram (OFF sehingga selamat)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/450",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 451,
+      "title": "Import Sains T2–T6 (342 RPH staging source) + T5 83 official SP into main safely",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/451",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 452,
+      "title": "[CONTENT MAIN] Matematik RPH v60 — 585 verified Markdown lessons + private Word/PDF archive",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/452",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 453,
+      "title": "Sains T2–T6: sekat semua RPH tanpa kelulusan individu >=80% daripada produksi",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/453",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 454,
+      "title": "Web: papar & muat turun 56 RPT 2027 daripada 12 subjek (DRAF berlabel, akses berbayar)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/454",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 455,
+      "title": "Web RPT 2027: papar Tahun 1 KP2027 (disabled) dan muka depan logo/nama sekolah/guru",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/455",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 456,
+      "title": "Sains Tahun 2: baiki 4 aktiviti PdP berasaskan DSKP dan kekalkan HOLD",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/456",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 457,
+      "title": "Sains T2–T6: quality gate wajib pada semua bank RPH dan generator",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/457",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 458,
+      "title": "Sains T2–T6: pakej Word/PDF 342 RPH boleh dibuka dan dicari secara offline (semakan terkawal)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/458",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 459,
+      "title": "Web RPT 2027: isikan ruang logo, nama sekolah dan guru pada muka depan ASAL (tanpa halaman baharu)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/459",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 460,
+      "title": "[DRAFT ACADEMIC HOLD] Matematik v60 — 127 PdP semak, Y6 93/93 triaj awal, 27 draf RPH A4",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/460",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 461,
+      "title": "Sains T2–T3: tambah 8 lembaran PBD sokongan dalam pakej 342 RPH offline tanpa cipta PdP rasmi",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/461",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 462,
+      "title": "Web RPT2027: jadual RTL Pendidikan Islam & Bahasa Arab (10 PDF, cover asal kekal)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/462",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 463,
+      "title": "Web RPT2027: Jawi headings (PI), Arabic headings (BA), English headings (English)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/463",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 464,
+      "title": "Fix RPT 2027 Pendidikan Islam T3–T6: remove 155 internal developer notes",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/464",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 465,
+      "title": "Fix Web RPH 503: use actual Telegram PJPK/Moral/PSV adapter flags",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/465",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 466,
+      "title": "Sains 342: pembaca PdP Telegram–Web staging tanpa kebergantungan pada build CI",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/466",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 467,
+      "title": "Sains: kenal pasti status sebenar penjana Telegram untuk Tahun 2–6 tanpa menyentuh pengguna",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/467",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 468,
+      "title": "Sains: semak muat turun Word/PDF sebenar bagi Tahun 2–6 melalui API Telegram tanpa kuota",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/468",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 469,
+      "title": "Web Sains: uji sambungan HTTPS ke penjana Telegram Word/PDF sebenar tanpa kuota pengguna",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/469",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 470,
+      "title": "fix(web RPT2027): audit real 56 downloadable PDFs for internal author notes",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/470",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 471,
+      "title": "RPT 2027 follow-up: remove residual developer SOW/PI notes and Sains source IDs",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/471",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 472,
+      "title": "Web Sains: sahkan muat turun Word/PDF Tahun 2–6 mengikut akses guru dan kuota sebenar",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/472",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 473,
+      "title": "Web Sains: uji klik butang Word/PDF dalam Chromium sebenar dan paparan baki 10 janaan",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/473",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 474,
+      "title": "fix(web RPT 2027): reliable mobile personalized PDF download after async profile fill",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/474",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 475,
+      "title": "[STAGING/HOLD] RPT Bahasa Arab T2 — 19 SP DSKP sumber visual, 18 calon ayat, SP 3.4.1 ditahan",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/475",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 476,
+      "title": "Sains Tahun 3: betulkan enam cara pembiakan SP5.1.1 dan projek kangkung SP5.1.3 (DRAF/HOLD)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/476",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 477,
+      "title": "[STAGING/HOLD] Bahasa Arab Tahun 3 — 23 SP visual DSKP, 20 calon, 3 percanggahan sumber",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/477",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 478,
+      "title": "Sains Tahun 4: lengkapkan 6 sifat bahan SP8.2.1 dan 7 mesin ringkas SP10.2.1 — DRAF/HOLD",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/478",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 479,
+      "title": "[STAGING/HOLD] Bahasa Arab Tahun 4 — 25 calon SP DSKP visual pada 58 PdP, tiada FINAL READY",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/479",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 480,
+      "title": "[STAGING/HOLD] Bahasa Arab T5 — 25 SP sumber visual untuk 60 PdP, belum akademik FINAL",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/480",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 481,
+      "title": "[STAGING/HOLD] Bahasa Arab T6 — 25 calon pernyataan SP DSKP untuk 60 PdP, tanpa FINAL READY",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/481",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 482,
+      "title": "[STAGING/HOLD] Sains Tahun 6 — 6 pembetulan eksperimen, PBD dan pengawetan",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/482",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 483,
+      "title": "[STAGING/HOLD] Sains T6 — perkemas eksperimen yis, geseran dan projek dua kaedah pengawetan",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/483",
+      "stage": "CLOSED_UNMERGED",
+      "group": "closed_unmerged"
+    },
+    {
+      "pr": 484,
+      "title": "Web RPT2027: pasang Bahasa Arab T2–T6 versi SP sumber DSKP DRAF (290/298 PdP)",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/484",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 485,
+      "title": "Telegram: makluman & pautan CikguLaju Web pada Menu Utama",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/485",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 486,
+      "title": "[STAGING] BM RPH Tahun 2–6: 229 PdP audit lulus dan padanan SK 2.2.1 diperbetul",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/486",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 487,
+      "title": "[STAGING HOLD] BM Tahun 2: pembetulan SK 2.2.1 melalui salinan DB selamat sahaja",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/487",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 488,
+      "title": "[STAGING] Audit guru Matematik T3 Wang: SK/SP DSKP vs Edisi 3, objektif, 60 minit dan PBD",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/488",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    },
+    {
+      "pr": 489,
+      "title": "Web RPT 2027: gate residual Islamic Education developer notes against current 56 PDFs",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/489",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 490,
+      "title": "Fix Matematik RPH duplicate SK codes in Telegram/Web Word and PDF",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/490",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 491,
+      "title": "Web Matematik: tahan RPH jelas cacat sebelum muat turun dan debit 10 kredit",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/491",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 492,
+      "title": "HOTFIX Web Matematik: avoid missing Word/PDF parser packages on minimal Render",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/492",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 493,
+      "title": "Telegram private Maths API: reject proven defective Word/PDF before Web trial charge",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/493",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 494,
+      "title": "Matematik Y6: HOLD enam PdP Nisbah/Kadaran dengan SK/SP salah sebelum muat turun Web",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/494",
+      "stage": "MERGED_NOT_INDIVIDUALLY_RELEASE_VERIFIED",
+      "group": "merged_nov06_10"
+    },
+    {
+      "pr": 495,
+      "title": "[STAGING HOLD] Matematik T6: lengkapkan tiga RPH PdP 082–084 Nisbah/Kadaran berasaskan DSKP",
+      "url": "https://github.com/nurynayreen88/CikguLaju-AI/pull/495",
+      "stage": "OPEN_DRAFT_HOLD",
+      "group": "open_draft"
+    }
+  ]
+}
