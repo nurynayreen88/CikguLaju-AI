@@ -84,6 +84,7 @@ def schools(url, secret, state, district, *, opener=None):
     rows = _read(url, secret, "school_directory", {
         "select": "school_code,school_name,school_level",
         "state_name": "eq." + state, "district_name": "eq." + district,
+        "school_level": "eq.Rendah",
         "order": "school_name.asc,school_code.asc",
     }, limit=350, opener=opener)
     return [{"value": r["school_code"], "label": r["school_name"],
@@ -95,9 +96,12 @@ def school_by_code(url, secret, code, *, opener=None):
     if not isinstance(code, str) or not _CODE.fullmatch(code):
         raise ValueError("Invalid school code")
     rows = _read(url, secret, "school_directory", {
-        "select": "school_code,school_name,state_name,district_name",
+        "select": "school_code,school_name,state_name,district_name,school_level",
+        "school_level": "eq.Rendah",
         "school_code": "eq." + code,
     }, limit=2, opener=opener)
     if len(rows) != 1 or rows[0].get("school_code") != code:
         raise ValueError("School not found in verified directory")
+    if rows[0].get("school_level") != "Rendah":
+        raise ValueError("Only primary schools are supported")
     return rows[0]
