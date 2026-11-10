@@ -19,6 +19,9 @@ from pathlib import Path
 from rpt_2027.common.calendar_week_mapping_staging import load_calendar_weeks, matching_master_weeks
 from rpt_2027.common.format_2026_layout_preview import build_preview, validate_rows
 from rpt_2027.common.music_dskp_full_statement_staging import music_full_standard_display
+from rpt_2027.common.week1_owner_plan_20261110 import (
+    move_first_sessions_to_m01, allocate_arabic_weeks,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "staging/rpt_2027_seragam_2026/baki_4_subjek_DRAF"
@@ -326,12 +329,26 @@ SPECS=(
     ("muzik",range(2,7),music_records),
 )
 
+def week1_proposed_records(subject, year, reader):
+    """Teacher-facing staging PDF projection; source readers stay untouched."""
+    original = reader(year)
+    if subject == "bahasa_melayu":
+        return move_first_sessions_to_m01(
+            original, subject=subject, year=year, sessions=3)
+    if subject == "pendidikan_islam":
+        return move_first_sessions_to_m01(
+            original, subject=subject, year=year, sessions=2)
+    if subject == "bahasa_arab":
+        return allocate_arabic_weeks(original, year=year)
+    return original
+
+
 def build_all(destination=OUT):
     target=Path(destination)
     results=[]
     for sub,years,reader in SPECS:
         for year in years:
-            rows=reader(year)
+            rows=week1_proposed_records(sub,year,reader)
             filename=f"CIKGULAJU_RPT_{sub.upper()}_TAHUN_{year}_2027_LIMA_LAJUR_DRAF.pdf"
             file=target/filename
             # A merged week group must not exceed the landscape page height.

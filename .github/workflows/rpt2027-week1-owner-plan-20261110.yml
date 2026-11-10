@@ -1,0 +1,83 @@
+name: RPT2027 Years2-6 Week01 sourced owner plan QA
+on:
+  pull_request:
+    paths:
+      - 'rpt_2027/common/week1_owner_plan_20261110.py'
+      - 'scripts/build_rpt_2027_remaining_four_subjects_staging.py'
+      - 'scripts/build_rpt_2027_standard_preview.py'
+      - 'tests/test_rpt2027_owner_week1_distribution_20261110.py'
+      - '.github/workflows/rpt2027-week1-owner-plan-20261110.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-week-one:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install isolated preview-only tooling
+        run: |
+          python -m pip install 'reportlab==4.2.5' 'pypdf==5.1.0' 'PyMuPDF==1.24.14' 'beautifulsoup4==4.12.3' 'arabic-reshaper==3.0.0' 'python-bidi==0.6.3'
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-hosny-amiri
+      - name: Compile changed source and tests
+        run: |
+          python -m py_compile rpt_2027/common/week1_owner_plan_20261110.py scripts/build_rpt_2027_remaining_four_subjects_staging.py scripts/build_rpt_2027_standard_preview.py tests/test_rpt2027_owner_week1_distribution_20261110.py
+      - name: Test all 23 source-year allocations and non-destructive guards
+        run: python -m unittest tests.test_rpt2027_owner_week1_distribution_20261110 -v
+      - name: Check existing RPT source and five-column PDF regressions
+        run: |
+          python -m unittest tests.test_rpt_2027_remaining_four_subjects_staging tests.test_rpt_2027_standard_2026_layout_preview -v
+      - name: Build revised BM PI Arabic RBT PDFs and inspect their Week01 rows
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from collections import Counter
+          import fitz
+          from scripts.build_rpt_2027_remaining_four_subjects_staging import build_all as build_four
+          from scripts.build_rpt_2027_standard_preview import build_all as build_standard
+          from rpt_2027.common.week1_owner_plan_20261110 import PLAN_STATUS
+          from scripts.build_rpt_2027_remaining_four_subjects_staging import week1_proposed_records,bm_records,pi_records,arabic_records
+          from scripts.build_rpt_2027_standard_preview import rbt_records
+          from rpt_2027.common.week1_owner_plan_20261110 import allocate_rbt_weeks
+          rest=build_four("output/rpt2027_week1_previews/bm_pi_arabic_music")
+          core=build_standard("output/rpt2027_week1_previews/psv_rbt_moral")
+          assert len(rest)==20 and len(core)==13
+          expected={("bahasa_melayu",y):3 for y in range(2,7)}
+          expected.update({("pendidikan_islam",y):2 for y in range(2,7)})
+          expected.update({("bahasa_arab",y):1 for y in range(2,7)})
+          expected.update({("rbt",y):1 for y in range(4,7)})
+          sources={"bahasa_melayu":bm_records,"pendidikan_islam":pi_records,"bahasa_arab":arabic_records}
+          for (sub,year),n in expected.items():
+              if sub=="rbt":
+                  rows=allocate_rbt_weeks(rbt_records(year),year=year)
+              else:
+                  rows=week1_proposed_records(sub,year,sources[sub])
+              assert len([r for r in rows if r["week"]=="M01"])==n, (sub,year)
+              assert all(r["week_allocation"]==PLAN_STATUS for r in rows if r["week"]=="M01")
+          selected={(sub,year):Path(path) for sub,year,n,path in rest if (sub,year) in expected}
+          selected.update({(sub,year):Path(path) for sub,year,n,path in core if (sub,year) in expected})
+          assert len(selected)==18,selected
+          for (sub,year),file in sorted(selected.items()):
+              with fitz.open(file) as pdf:
+                  assert pdf.page_count>1,(sub,year)
+                  assert all(page.rect.width>page.rect.height for page in pdf)
+                  text="\n".join(p.get_text() for p in list(pdf)[1:])
+                  if sub in ("pendidikan_islam","bahasa_arab"):
+                      assert "2027" in text, (sub,year,"RTL body absent")
+                  else:
+                      assert "M01" in text, (sub,year,"Week01 not printed")
+              print("PDF_M01_PASS",sub,year,file,flush=True)
+          print("WEEK01_18_SUBJECT_YEAR_PDFS_PASS without academic signoff",flush=True)
+          PY
+      - name: Keep review PDFs available for manual verification
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rpt2027-years2to6-week01-preview-only-20261110
+          retention-days: 14
+          path: output/rpt2027_week1_previews/
