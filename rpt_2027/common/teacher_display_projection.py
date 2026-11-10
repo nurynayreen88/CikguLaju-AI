@@ -21,7 +21,7 @@ _INTERNAL = re.compile(
     r"BUKAN UNTUK GURU|BUKAN (?:SEMAKAN|HALAMAN AKTIVITI)|"
     r"JANGAN (?:MERGE|DEPLOY|ANJAK AUTOMATIK)|"
     r"BELUM LULUS|BELUM SELESAI|BELUM DIBUAT|"
-    r"CALON PEMBETULAN|CALON BUKAN VISUAL|MASIH DRAF|RPT MASIH DRAF|KONFLIK SUMBER|"
+    r"SEMAKAN KURIKULUM|SEMAKAN DSKP DIPERLUKAN|CALON PEMBETULAN|CALON BUKAN VISUAL|MASIH DRAF|RPT MASIH DRAF|KONFLIK SUMBER|"
     r"BUKU TEKS.*?BELUM SAH|"
     r"TEKS.*?BELUM SAH|"
     r"TIADA JANAAN AUTOMATIK)\b"
@@ -64,6 +64,17 @@ def public_note(row: dict) -> str:
     source = re.sub(r"(?i)\bPBD\s*\(sumber\)\s*:", "PBD:", source)
     source = re.sub(r"(?i)\bAktiviti\s*\(sumber\)\s*:", "Aktiviti:", source)
     source = re.sub(r"(?i)\s*\(bukan halaman aktiviti disahkan\)", "", source)
+    # PI standalone source contains standalone developer-review lines in the
+    # original Bahan field (Year 3 lessons 006/050 and Year 6 lesson 087).
+    # Strip only those lines, preserving Mushaf, tasmi' and assessment text.
+    source = re.sub(
+        r"(?im)^[ \t]*(?:SEMAKAN KURIKULUM|SEMAKAN DSKP DIPERLUKAN)\s*:[^\r\n]*",
+        "", source,
+    )
+    source = re.sub(
+        r"(?im)^[ \t]*Pemetaan buku teks terdahulu masih memerlukan "
+        r"semakan visual; belum sahkan halaman\.?[ \t]*$", "", source,
+    )
     # This is a developer instruction, not a teaching material. Keep the
     # original Mushaf/ayat reference and remove only the review qualifier.
     source = re.sub(r"(?i);\s*tidak mereka halaman buku teks\.?","",source)
