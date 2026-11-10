@@ -341,19 +341,30 @@ def save_profile(url, key, uid, form, *, opener=None):
     if "school_code" in values:
         code = values["school_code"]
         if code:
-            from web.school_directory_store import (
-                SchoolDirectoryUnavailable, school_by_code,
+            same_school = bool(
+                record and record.get("school_code") == code and
+                record.get("state_name") == values["state_name"] and
+                record.get("district_name") == values["district_name"] and
+                (record.get("school_name") or "") == values["school_name"]
             )
-            try:
-                school = school_by_code(url, key, code, opener=opener)
-            except SchoolDirectoryUnavailable:
-                raise ProfileUnavailable("Direktori sekolah belum tersedia") from None
-            except ValueError:
-                raise ProfileValidation("Kod sekolah tidak dijumpai dalam direktori") from None
-            if (school["state_name"] != values["state_name"] or
-                    school["district_name"] != values["district_name"]):
-                raise ProfileValidation("Sekolah tidak sepadan dengan negeri atau PPD")
-            values["school_name"] = school["school_name"]
+            if same_school:
+                # Editing a class or timetable must not depend on a second
+                # directory HTTP request when school identity is unchanged.
+                values["school_name"] = record["school_name"]
+            else:
+                from web.school_directory_store import (
+                    SchoolDirectoryUnavailable, school_by_code,
+                )
+                try:
+                    school = school_by_code(url, key, code, opener=opener)
+                except SchoolDirectoryUnavailable:
+                    raise ProfileUnavailable("Direktori sekolah belum tersedia") from None
+                except ValueError:
+                    raise ProfileValidation("Kod sekolah tidak dijumpai dalam direktori") from None
+                if (school["state_name"] != values["state_name"] or
+                        school["district_name"] != values["district_name"]):
+                    raise ProfileValidation("Sekolah tidak sepadan dengan negeri atau PPD")
+                values["school_name"] = school["school_name"]
         elif (record and record.get("school_code")
               and values["school_name"] == (record.get("school_name") or "")
               and values["state_name"] == record.get("state_name")):
