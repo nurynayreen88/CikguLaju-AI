@@ -722,3 +722,14 @@ except Exception as _special_menu_error:
     TELEGRAM_SPECIAL_ACTIVITY_MENU_ACTIVE = False
     print("Telegram Special Activity menu unavailable:",
           type(_special_menu_error).__name__, flush=True)
+
+# Restore Telegram RPH Hari Ini from teacher-entered weekly timetable.
+# Keep all existing verified curriculum, delivery, trial and progress gates.
+# AI photo/PDF timetable reading is intentionally disabled.
+try:
+    from web.telegram_rph_hari_ini_manual_20261110 import install as install_daily_manual
+    TELEGRAM_DAILY_MANUAL_ACTIVE = bool(install_daily_manual(telegram_runtime))
+except Exception as _daily_manual_error:
+    TELEGRAM_DAILY_MANUAL_ACTIVE = False
+    print("Telegram daily manual timetable unavailable:",
+          type(_daily_manual_error).__name__, flush=True)
