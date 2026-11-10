@@ -51,11 +51,13 @@ jobs:
                       text='\n'.join(pg.get_text() for pg in list(pdf)[1:])
                       has_m01=bool(re.search(r'(?<!\d)M\s*01(?!\d)',text,re.I))
                       first_content_page=pdf[1].get_text()
-                      first_week_pdp=bool(re.search(r'(?i)\b(?:PdP|Lesson)\s*0*1\b',first_content_page))
+                      first_week_pdp=bool(re.search(r'(?i)(?:PdP|Lesson)\s*0*1\b',first_content_page))
                       first_page_m01=bool(re.search(r'(?i)(?<!\d)M\s*01(?!\d)',first_content_page))
                       leaked_notes=re.findall(
                           r'(?i)Buka DSKP asal|pemetaan buku teks belum disahkan|'
-                          r'CALON BUKAN VISUAL|Masih DRAF|DRAF PKJR',text)
+                          r'CALON BUKAN VISUAL|Masih DRAF|DRAF PKJR|'
+                          r'perlu padanan fokus halaman|Padanan SK/TOC terdahulu|'
+                          r'M01\s*\(cadangan\)',text)
                       row={'key':key,'file':info['path'],'pages':len(pdf),
                            'has_m01_extracted':has_m01,
                            'first_page_m01':first_page_m01,
