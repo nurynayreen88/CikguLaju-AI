@@ -1,0 +1,28 @@
+name: Moral 480 source + A4 review audit (reconciled)
+on:
+  push:
+    branches:
+      - staging/reconcile-moral-a4-audit-20261110
+  pull_request:
+    paths:
+      - scripts/check_moral_210_source_and_270_supplement.py
+      - scripts/build_moral_word_a4_review_artifact.py
+      - .github/workflows/moral-review-reconcile-20261110.yml
+
+permissions:
+  contents: read
+
+jobs:
+  audit-only:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install isolated Word parser
+        run: python -m pip install python-docx
+      - name: Source classification 204/6/270 (no production writes)
+        run: python scripts/check_moral_210_source_and_270_supplement.py
+      - name: Generate five offline Word review packages, verify A4 dimensions
+        run: python scripts/build_moral_word_a4_review_artifact.py --outdir "${{ runner.temp }}/moral-a4-review"
