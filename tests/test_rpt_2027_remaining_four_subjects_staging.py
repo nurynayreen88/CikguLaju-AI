@@ -74,8 +74,12 @@ class RemainingRPTFormatQA(unittest.TestCase):
                                  [f"{i:03d}" for i in range(1,n+1)])
                 if y == 2:
                     self.assertTrue(all("Pernyataan penuh SK belum dipadankan" in r["sk_display"] and
-                                        "Pernyataan penuh SP belum dipadankan" in r["sp_display"]
+                                        "Pernyataan penuh SP belum dipadankan" not in r["sp_display"] and
+                                        "القدرة" in r["sp_display"] and
+                                        r["source_sp_dskp_text_signoff"] is False and
+                                        r["source_pdf_extraction_code_repeated_unreliable"] is True
                                         for r in rows))
+                    self.assertEqual(len({r["sp"] for r in rows}),19)
                 elif y in (3,4,5):
                     self.assertTrue(all("Pernyataan penuh SK belum dipadankan" in r["sk_display"] and
                                         "Pernyataan penuh SP belum dipadankan" not in r["sp_display"] and
