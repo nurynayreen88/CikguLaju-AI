@@ -39,8 +39,8 @@
     },
     "bahasa_arab:6": {
       "path": "bahasa_arab/tahun_6.pdf",
-      "sha256": "1c1e708cb4dbc9b54d8fc979c3c1d9ebaaadbd96e5fbb322fb0edb89665ee23b",
-      "bytes": 112469,
+      "sha256": "1e37e62d9c3fa5cb17a83078032b3f5114d8edfd995ad847aba0dd70347637db",
+      "bytes": 133020,
       "pages": 12,
       "status": "DRAF",
       "source_stage": "ARABIC_Y2_Y6_117_SOURCE_SP_VISUAL_CANDIDATES_NOT_ACADEMIC_FINAL_20261108"
@@ -477,5 +477,5 @@
     "original_cover_preserved": true,
     "cleanup_note": "All 56 source PDFs rebuilt; official subject headings preserved"
   },
-  "source_projection": "RPT2027_SAINS_Y2_92_Y3_103_Y4_88_Y5_116_KSSR2017_SOURCE_COMPLETED_SP_ACADEMIC_REVIEW_HOLD"
+  "source_projection": "RPT2027_ARABIC_YEAR6_25_ORIGINAL_DSKP_SP_ADDED_ACADEMIC_HOLD"
 }
