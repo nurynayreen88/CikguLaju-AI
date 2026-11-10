@@ -259,6 +259,23 @@ def arabic_records(year):
                 len(overlay[k]["sp_text_ar"].strip()) < 20
                 for k in overlay)):
             raise ValueError("Arabic Year3/4 48 source-SP text coverage incomplete")
+    if year==5:
+        obj=json.loads((base/"dskp_year5_25_sp_normalized_source_20261110.json").read_text(encoding="utf-8"))
+        if (obj.get("academic_release_approved") is not False or
+            obj.get("word_for_word_visual_signoff") is not False or
+            obj.get("source_sha256")!=source_pdf_sha256 or
+            obj.get("source_url")!=source_pdf_url or
+            obj.get("source_pdf_pages")!=source_page_count or
+            obj.get("source_sp_count")!=25):
+            raise ValueError("Arabic Year5 DSKP original PDF source checksum/status mismatch")
+        overlay={item["sp_code"]:item for item in obj["entries"]}
+        if (len(obj["entries"])!=25 or len(overlay)!=25 or
+            set(overlay)!={r["sp"] for r in ar} or
+            any(overlay[code]["pdf_page"]!=source_pages[code] or
+                overlay[code]["source_visual_signoff"] is not False or
+                len(overlay[code]["sp_text_ar"].strip())<20
+                for code in overlay)):
+            raise ValueError("Arabic Year5 source statement coverage incomplete")
     rows=[]
     for n,(left,right) in enumerate(zip(ar,br),1):
         for key in ("tahun","pdp","unit","sk","sp","fokus","halaman_buku"):
@@ -280,7 +297,7 @@ def arabic_records(year):
             topic=left["fokus"],sk=left["sk"],sp=left["sp"],
             sk_display=left["sk"]+" — "+(sk_opening[left["sk"]] if year==6
                          else "Pernyataan penuh SK belum dipadankan"),
-            sp_display=left["sp"]+" — "+(overlay[sp_code]["sp_text_ar"] if year in (3,4,6)
+            sp_display=left["sp"]+" — "+(overlay[sp_code]["sp_text_ar"] if year in (3,4,5,6)
                          else "Pernyataan penuh SP belum dipadankan"),
             note=("BT m/s: "+(left.get("halaman_buku") or "belum disahkan")+
                   f" (calon). DSKP SP PDF hlm {source_pages[sp_code]} (kod disemak; teks belum disahkan). "+
@@ -290,7 +307,7 @@ def arabic_records(year):
             source_sp_dskp_pdf_sha256=source_pdf_sha256,
             source_sp_dskp_text_signoff=False,
             source_sk_opening_not_full_thematic_examples=(year==6),
-            source_arabic_orthography_normalized_not_visual_signoff=(year in (3,4,6)),
+            source_arabic_orthography_normalized_not_visual_signoff=(year in (3,4,5,6)),
             source_pdf_extraction_code_repeated_unreliable=(year==2),
             source_status=left["status_rpt"],
         ))
