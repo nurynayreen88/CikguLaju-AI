@@ -1,5 +1,7 @@
 """Focused, no-network parity tests for Telegram Special Activity RPH menu."""
 from pathlib import Path
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 import pytest
 
@@ -85,7 +87,7 @@ def _transisi_until_preview(bot):
     _act(bot, "d:t")
     assert ss["class"] == "1 Bestari"
     assert ss["students"] == "30"
-    assert ss["date"].startswith("2026-") or ss["date"].startswith("2027-")
+    assert ss["date"] == datetime.now(ZoneInfo("Asia/Kuala_Lumpur")).date().isoformat()
     return ss
 
 
