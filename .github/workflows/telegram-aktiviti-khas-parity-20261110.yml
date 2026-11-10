@@ -6,6 +6,7 @@ on:
       - 'tools/run_telegram_with_curriculum_api.py'
       - 'rph_standalone/aktiviti_khas/**'
       - 'tests/test_telegram_aktiviti_khas_menu_20261110.py'
+      - 'tests/test_telegram_special_activity_menu_20261110.py'
       - '.github/workflows/telegram-aktiviti-khas-parity-20261110.yml'
   workflow_dispatch:
 
@@ -23,4 +24,4 @@ jobs:
       - name: Compile integration and menu without running production app
         run: python -m py_compile web/telegram_special_activity_menu.py tools/run_telegram_with_curriculum_api.py
       - name: Verify 59 shared DRAF records and Telegram Word/PDF parity
-        run: python -m pytest -q tests/test_telegram_aktiviti_khas_menu_20261110.py tests/test_aktiviti_khas_catalog_20261106.py tests/test_aktiviti_khas_render_20261106.py
+        run: python -m pytest -q tests/test_telegram_aktiviti_khas_menu_20261110.py tests/test_telegram_special_activity_menu_20261110.py tests/test_aktiviti_khas_catalog_20261106.py tests/test_aktiviti_khas_render_20261106.py
