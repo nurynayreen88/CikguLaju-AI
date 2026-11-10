@@ -196,6 +196,7 @@ class SchoolProfileTests(unittest.TestCase):
         self.assertIn("/api/web/teacher/school-directory?",js)
         self.assertIn('school_code: document.getElementById("profile-school-choice").value',js)
         self.assertIn("schoolNameField.value=chosen?.label",js)
+        self.assertIn('row.label+" ("+row.value+")"',js)
         self.assertNotIn("service_role",js)
         self.assertNotIn("supabase_key",js)
 
