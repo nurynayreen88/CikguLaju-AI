@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ms">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>CikguLaju AI — Pautkan Akaun</title>
+<style>
+:root{font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;color:#203d35;background:#f4f8f6}
+*{box-sizing:border-box}body{margin:0;padding:16px}main{max-width:640px;margin:4vh auto}
+h1{font-size:1.7rem}a{color:#087568}p{color:#4a6159}
+.card{background:white;border:1px solid #d8e7de;border-radius:14px;padding:22px;margin:20px 0}
+button{padding:11px 18px;background:#087568;color:white;border:0;border-radius:9px;font:inherit;font-weight:650;cursor:pointer}
+button:disabled{opacity:.4;cursor:not-allowed}.muted{color:#62766d}.error{color:#af3333}.success{color:#146a40}
+table{width:100%;border-collapse:collapse}td{padding:8px 0;border-bottom:1px solid #e5ede8}
+td:last-child{text-align:right;font-weight:700}label{display:flex;gap:12px;align-items:flex-start;margin:18px 0}
+</style></head>
+<body><main>
+<p><a href="/google-account">Akaun Google</a></p>
+<h1>Pautkan Google dan Telegram</h1>
+<p>Jika awak sudah menggunakan CikguLaju melalui Telegram, pautkan kedua-dua login supaya status Rakan Pembangun, langganan dan kredit dikongsi.</p>
+<section class="card">
+<h2>1. Sahkan dua login</h2>
+<p>Log masuk Google dahulu. Kemudian log masuk Telegram menggunakan <a href="/" target="_blank" rel="noopener">laman utama CikguLaju</a> pada pelayar yang sama, dan kembali ke sini.</p>
+<button id="check">Semak kedua-dua akaun</button>
+<p class="muted" id="message" role="status">Pemautan tidak dibuat secara automatik.</p>
+</section>
+<section class="card" id="review" hidden>
+<h2>2. Semak baki janaan</h2>
+<p>Sepuluh janaan percuma hanya diberi sekali untuk akaun yang dipautkan. Janaan yang telah digunakan melalui kedua-dua login akan diambil kira sebelum baki disatukan.</p>
+<table><tbody>
+<tr><td>Baki Google sebelum pautan</td><td id="google"></td></tr>
+<tr><td>Baki Telegram sebelum pautan</td><td id="telegram"></td></tr>
+<tr><td>Baki selepas pautan</td><td id="merged"></td></tr>
+</tbody></table>
+<label><input type="checkbox" id="agree"> Saya mengesahkan kedua-dua akaun ini milik saya dan bersetuju dengan baki percubaan yang dipaparkan. Status berbayar Telegram asal tidak berubah.</label>
+<button id="link" disabled>Pautkan akaun</button>
+</section>
+</main>
+<script>
+'use strict';
+const $=(id)=>document.getElementById(id);
+let preview=null;
+function setMessage(msg,bad=false){
+  $('message').textContent=msg;
+  $('message').className=bad?'error':'muted';
+}
+$('agree').addEventListener('change',()=>{$('link').disabled=!preview||!$('agree').checked;});
+$('check').addEventListener('click',async()=>{
+  $('check').disabled=true;
+  $('review').hidden=true;
+  $('agree').checked=false;
+  $('link').disabled=true;
+  preview=null;
+  setMessage('Mengesahkan kedua-dua sesi...');
+  try{
+    const res=await fetch('/api/auth/google-native/link-preview',
+      {credentials:'same-origin',cache:'no-store'});
+    const data=await res.json();
+    if(!res.ok)throw Error(data.error||'Semakan tidak tersedia');
+    if(data.linked){
+      setMessage('Kedua-dua akaun sudah dipautkan. Baki semasa Telegram: '+data.telegram_remaining);
+      return;
+    }
+    for(const key of ['google_remaining','telegram_remaining','after_link_remaining']){
+      if(!Number.isInteger(data[key])||data[key]<0||data[key]>10)throw Error('Baki tidak dapat disahkan');
+    }
+    preview=data;
+    $('google').textContent=data.google_remaining;
+    $('telegram').textContent=data.telegram_remaining;
+    $('merged').textContent=data.after_link_remaining;
+    $('review').hidden=false;
+    setMessage('Semak baki di bawah. Akaun belum dipautkan.');
+  }catch(e){setMessage(e.message||'Tidak dapat menyemak akaun',true);}
+  finally{$('check').disabled=false;}
+});
+$('link').addEventListener('click',async()=>{
+  if(!preview||!$('agree').checked)return;
+  $('link').disabled=true;
+  $('check').disabled=true;
+  setMessage('Mengesahkan pautan. Jangan ulang tekan butang.');
+  try{
+    const response=await fetch('/api/auth/google-native/link-telegram',{
+      method:'POST',credentials:'same-origin',cache:'no-store',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        confirm:true,
+        google_remaining:preview.google_remaining,
+        telegram_remaining:preview.telegram_remaining
+      })
+    });
+    const data=await response.json();
+    if(!response.ok)throw Error(data.error||'Pemautan tidak dapat disahkan');
+    if(data.linked!==true)throw Error('Pengesahan pemautan tidak lengkap');
+    $('review').hidden=true;
+    preview=null;
+    $('message').textContent='Berjaya dipautkan. Baki CikguLaju: '+data.telegram_remaining+
+      '. Gunakan login Google atau Telegram untuk akses akaun yang sama.';
+    $('message').className='success';
+  }catch(e){
+    preview=null;
+    $('review').hidden=true;
+    setMessage((e.message||'Pemautan belum pasti')+'. Tekan Semak kedua-dua akaun untuk mengesahkan status.',true);
+  }finally{$('check').disabled=false;}
+});
+</script></body></html>
