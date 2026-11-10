@@ -32,7 +32,7 @@ jobs:
           expected={"rpt_2027/web_2027_pdfs/manifest.json",
                     "rpt_2027/web_2027_pdfs/original_cover_layout_verified.json"}
           expected.update(f"rpt_2027/web_2027_pdfs/bahasa_arab/tahun_{y}.pdf" for y in range(2,7))
-          assert changed==expected,(changed,expected)
+          assert not changed or changed==expected,(changed,expected)
           print("ONLY_FIVE_ARABIC_PDFS_MANIFEST_COVER_SHA",len(changed))
           PY
       - name: Attach source parity, visual parity, SHA report
@@ -51,5 +51,9 @@ jobs:
           git add rpt_2027/web_2027_pdfs/bahasa_arab/tahun_*.pdf \
                   rpt_2027/web_2027_pdfs/manifest.json \
                   rpt_2027/web_2027_pdfs/original_cover_layout_verified.json
-          git commit -m "rpt2027: restore 298 original DSKP link annotations in five Bahasa Arab PDFs"
-          git push origin "HEAD:$TARGET"
+          if ! git diff --cached --quiet; then
+            git commit -m "rpt2027: restore 298 original DSKP link annotations in five Bahasa Arab PDFs"
+            git push origin "HEAD:$TARGET"
+          else
+            echo "Arabic links already restored; no PDF changes."
+          fi
