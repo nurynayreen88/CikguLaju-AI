@@ -12,7 +12,8 @@ def install(rt):
     if getattr(rt, "CIKGULAJU_DAILY_MANUAL_ONLY_20261110", False):
         return True
     required = ("menu", "callback", "send", "_timetable_entries",
-                "_today_rpt_suggestions_v25292", "_daily_candidate_v25292",
+                "_today_rpt_suggestions_v25292", "_today_rows_v25272",
+                "_entry_with_subject_v25294", "_daily_candidate_v25292",
                 "_generate_one_quick_rph_v25278", "_generate_calendar_row_v25293",
                 "_telegram_delivery_ok_v25279")
     if not all(callable(getattr(rt, k, None)) for k in required):
@@ -96,12 +97,19 @@ def install(rt):
                 if lesson_key in successful_lessons:
                     results.append((canonical, False, "PdP/Lesson yang sama sudah dijana"))
                     continue
+                if not seq:
+                    results.append((canonical, False, "Nombor PdP/Lesson belum disahkan"))
+                    continue
                 ss["_rph_hari_ini_delivery_guard_20261110"] = True
                 try:
-                    if source == "checkpoint":
-                        outcome = rt._generate_one_quick_rph_v25278(cid, canonical)
-                    else:
-                        outcome = rt._generate_calendar_row_v25293(cid, canonical, row)
+                    try:
+                        if source == "checkpoint":
+                            outcome = rt._generate_one_quick_rph_v25278(cid, canonical)
+                        else:
+                            outcome = rt._generate_calendar_row_v25293(cid, canonical, row)
+                    except Exception as exc:
+                        ss.pop("_free_generation_pending_v25282", None)
+                        outcome = {"ok": False, "reason": type(exc).__name__}
                 finally:
                     ss.pop("_rph_hari_ini_delivery_guard_20261110", None)
                 if outcome.get("ok"):
