@@ -1,0 +1,52 @@
+name: CikguLaju release log (cross-chat)
+on:
+  push:
+    branches:
+      - main
+      - production/cikgulaju-web-20261105
+  pull_request_target:
+    types:
+      - closed
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  log-release-change:
+    if: ${{ github.event_name == 'push' || github.event.pull_request.merged == true }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Append release candidate to central ledger issue
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const issue_number = 497;
+            const event = context.payload;
+            const repo = context.repo;
+            let body;
+            if (context.eventName === 'push') {
+              const branch = context.ref.replace('refs/heads/', '');
+              const sha = context.sha;
+              const link = `https://github.com/${repo.owner}/${repo.repo}/commit/${sha}`;
+              body = [
+                '### 🔎 Perubahan branch pengeluaran — SEMAK STATUS',
+                `- Branch: \`${branch}\``,
+                `- Commit: [\`${sha.slice(0,12)}\`](${link})`,
+                '- Status: **push diterima**; Render LIVE dan ujian Web/Telegram belum disahkan oleh log automatik.',
+                '- Tindakan: semak CI, Render LIVE, muat turun Word/PDF dan kuota sebelum label RELEASED.'
+              ].join('\n');
+            } else {
+              const pr = event.pull_request;
+              if (!pr || !pr.merged) return;
+              body = [
+                '### 🔀 PR digabung — SEMAK PENGHANTARAN',
+                `- PR: [#${pr.number}](${pr.html_url}) — ${String(pr.title || '').replace(/[\r\n]/g, ' ')}`,
+                `- Sasaran: \`${pr.base.ref}\``,
+                `- Merge SHA: \`${pr.merge_commit_sha || 'tidak tersedia'}\``,
+                '- Status: **MERGED**, bukan secara automatik READY atau LIVE.',
+                '- Tindakan: semak akademik/QA, status deploy Render, ujian dokumen dan baki kredit.'
+              ].join('\n');
+            }
+            await github.rest.issues.createComment({ ...repo, issue_number, body });
