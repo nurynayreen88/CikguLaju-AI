@@ -1,0 +1,140 @@
+name: RPT 2027 23 Week01 PDF Web release branch QA
+on:
+  push:
+    branches:
+      - release/rpt2027-week01-23-web-20261110
+    paths:
+      - '.github/workflows/rpt2027-week01-23-web-release-branch.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  prepare-production-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - name: Checkout candidate production Web branch
+        uses: actions/checkout@v4
+        with:
+          ref: release/rpt2027-week01-23-web-20261110
+          path: web_release
+          persist-credentials: true
+      - name: Checkout exact audited staging RPT source
+        uses: actions/checkout@v4
+        with:
+          ref: 1268cc51b54c394f258654e49b65b516d424d0ed
+          path: rpt_source
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PDF build and text verification dependencies
+        run: |
+          python -m pip install 'PyMuPDF==1.24.14' 'reportlab==4.2.5' 'pypdf==5.1.0' 'beautifulsoup4==4.12.3' 'arabic-reshaper==3.0.0' 'python-bidi==0.6.3'
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-hosny-amiri
+      - name: Build 56-PDF candidate and verify 23 improvements from immutable source
+        run: |
+          cd rpt_source
+          python -m unittest tests.test_rpt2027_owner_week1_distribution_20261110 tests.test_rpt2027_teacher_text_leak_scan -q
+          python -m scripts.prepare_rpt2027_week01_web_candidate_20261110 \
+            --web-checkout ../web_release \
+            --output ../staged_candidate
+      - name: Install exactly 23 PDFs into separate Web release branch without altering academic flags
+        run: |
+          python - <<'PY'
+          import hashlib, json, shutil
+          from pathlib import Path
+          import fitz
+          stage=Path('staged_candidate/rpt_2027/web_2027_pdfs')
+          production=Path('web_release/rpt_2027/web_2027_pdfs')
+          old=json.loads((production/'manifest.json').read_text('utf-8'))
+          review=json.loads((stage/'manifest.json').read_text('utf-8'))
+          evidence=json.loads(Path('staged_candidate/week01_candidate_review.json').read_text('utf-8'))
+          if old.get('academic_final_approved') is not False or old.get('count')!=56:
+              raise SystemExit('Unexpected original academic approval or file count')
+          if review.get('release_candidate_only') is not True or evidence.get('target_week01_fixes')!=23:
+              raise SystemExit('Candidate has no complete 23-file staging audit')
+          items=evidence['files']
+          targets={r['subject_year'] for r in items if r['changed']}
+          expected={f'{sub}:{y}' for sub,years in (
+             ('bahasa_melayu',range(2,7)),
+             ('pendidikan_islam',range(2,7)),
+             ('bahasa_arab',range(2,7)),
+             ('rbt',range(4,7)),
+             ('sains',range(2,7))) for y in years}
+          if targets!=expected or len(items)!=56:
+              raise SystemExit('Target count and identities changed')
+          frozen={key:dict(val) for key,val in old['files'].items()}
+          for item in items:
+              key=item['subject_year']
+              if key not in frozen or key not in review['files']:
+                  raise SystemExit('Unknown target')
+              previous=frozen[key]
+              data=(production/previous['path']).read_bytes()
+              if hashlib.sha256(data).hexdigest()!=previous['sha256']:
+                  raise SystemExit('Baseline checksum mismatch: '+key)
+              if key not in targets:
+                  if previous != review['files'][key]:
+                      raise SystemExit('Unchanged published PDF metadata drift: '+key)
+                  continue
+              row=review['files'][key]
+              if row['status']!=previous['status'] or row['path']!=previous['path']:
+                  raise SystemExit('Attempt to modify release status/path: '+key)
+              src=stage/row['path'];raw=src.read_bytes()
+              if hashlib.sha256(raw).hexdigest()!=row['sha256']:
+                  raise SystemExit('Candidate checksum mismatch: '+key)
+              with fitz.open(src) as pdf:
+                  if len(pdf)!=row['pages'] or len(pdf)<2:
+                      raise SystemExit('Invalid PDF: '+key)
+              shutil.copyfile(src, production/row['path'])
+              updated=dict(previous)
+              for field in ('sha256','bytes','pages'):
+                  updated[field]=row[field]
+              old['files'][key]=updated
+          if sum(1 for k in old['files'] if old['files'][k]!=frozen[k])!=23:
+              raise SystemExit('Expected exactly 23 PDF metadata replacements')
+          old['pages']=sum(r['pages'] for r in old['files'].values())
+          old['source_projection']='WEEK01_23_PDFS_REFRESHED_20261110_ACADEMIC_HOLD'
+          old['academic_final_approved']=False
+          old['free_rph_quota_charged']=False
+          old['telegram_production_database_modified']=False
+          (production/'manifest.json').write_text(
+              json.dumps(old,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          for key,row in old['files'].items():
+              raw=(production/row['path']).read_bytes()
+              if hashlib.sha256(raw).hexdigest()!=row['sha256'] or len(raw)!=row['bytes']:
+                  raise SystemExit('Final PDF manifest mismatch: '+key)
+          print('RPT_WEEK01_RELEASE_BRANCH_QA_OK 23 updated; 33 byte-identical; 56 total; academic_final_approved=false')
+          PY
+      - name: Commit generated PDFs only to non-production release branch
+        run: |
+          cd web_release
+          git config user.name "cikgulaju-rpt-ci"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add rpt_2027/web_2027_pdfs
+          test -n "$(git diff --cached --name-only)"
+          git diff --cached --name-only > ../web_changed_file_paths.txt
+          python - <<'PY'
+          from pathlib import Path
+          paths=Path('../web_changed_file_paths.txt').read_text().splitlines()
+          pdfs=[x for x in paths if x.endswith('.pdf')]
+          manifest=[x for x in paths if x.endswith('/manifest.json')]
+          assert len(pdfs)==23 and len(manifest)==1 and len(paths)==24,(len(pdfs),len(paths))
+          assert all(x.startswith('rpt_2027/web_2027_pdfs/') for x in paths)
+          print('RELEASE_BRANCH_DIFF exactly 23 PDF + manifest, no application changes')
+          PY
+          git commit -m "rpt2027(web): publish 23 sourced Week01 PDF improvements, keep academic hold"
+          git push origin HEAD:refs/heads/release/rpt2027-week01-23-web-20261110
+      - name: Provide release QA evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rpt2027-23-updated-web-release-branch-qa
+          path: |
+            staged_candidate/week01_candidate_review.json
+            web_changed_file_paths.txt
+          retention-days: 30
+          if-no-files-found: warn
