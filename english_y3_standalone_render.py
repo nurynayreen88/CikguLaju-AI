@@ -66,7 +66,7 @@ def apply(st, rows):
         result["PENTAKSIRAN"] = clean_phase(assessment)
     result["AKTIVITI UTAMA"] = "\n\n".join(lines)
     # Internal QA notes belong in source audits, never in teacher-facing RPH.
-    closure = re.split(r"(?im)^\s*\*\*(?:QA(?: status)?|Status|Source|Official SOW alignment|Release gate|Verification|Verified SOW lesson outline):\*\*", closure, maxsplit=1)[0].strip()
+    closure = re.split(r"(?im)^\s*\*\*(?:QA(?: status)?|Resource status|Status|Source|Official SOW alignment|Release gate|Verification|Verified SOW lesson outline):\*\*", closure, maxsplit=1)[0].strip()
     result["PENUTUP"] = clean_phase(closure)
     ref = re.search(
         r"(?im)^\*\*(?:References|Teaching materials|Materials(?:\s*/\s*references)?|Resources):\*\*\s*([^\n]+)",
