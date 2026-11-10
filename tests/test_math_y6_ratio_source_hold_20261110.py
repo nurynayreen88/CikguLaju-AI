@@ -91,7 +91,7 @@ class Year6RatioHoldTests(unittest.TestCase):
                 row("MT6-PDP-082", "Pengukuhan", "8.1.1"),
                 row("MT6-PDP-083", "Aplikasi", "8.2.1")]))
 
-    def test_corrected_dskp_codes_automatically_restore_eligibility(self):
+    def test_corrected_dskp_codes_remain_on_hold_until_full_signoff(self):
         corrected = [
             ("MT6-PDP-079", "7.2.1"),
             ("MT6-PDP-080", "7.3.1"),
@@ -102,7 +102,7 @@ class Year6RatioHoldTests(unittest.TestCase):
         ]
         for code, sp in corrected:
             with self.subTest(code=code):
-                self.assertFalse(held_math_y6_ratio_source(
+                self.assertTrue(held_math_y6_ratio_source(
                     6, "MATH", code, [row(code, BAD[code][0], sp)]))
         # Other source lesson IDs, even with the same 8.x codes, are not
         # blacklisted as these may correctly teach data/probability.
