@@ -1,0 +1,23 @@
+name: Telegram Sediakan RPH entry choices
+on:
+  pull_request:
+    paths:
+      - 'web/telegram_rph_entry_choices_20261110.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+      - 'tests/test_telegram_rph_entry_choices_20261110.py'
+      - '.github/workflows/telegram-rph-entry-choices-20261110.yml'
+  push:
+    branches:
+      - fix/telegram-sediakan-rph-two-choices-20261110
+permissions:
+  contents: read
+jobs:
+  entry-choices:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m py_compile web/telegram_rph_entry_choices_20261110.py tools/run_telegram_with_curriculum_api.py
+      - run: python -m unittest discover -s tests -p 'test_telegram_rph_entry_choices_20261110.py' -v
