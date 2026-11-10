@@ -96,6 +96,20 @@ class EnglishY3RoleLayoutTests(unittest.TestCase):
         self.assertNotIn("materials/lesson_", assessment)
         self.assertNotIn("`", assessment)
 
+    def test_supplementary_materials_require_separate_teacher_preparation(self):
+        # These original worksheets exist in the project source, but are not
+        # bundled in the one-page RPH download. Do not imply they were sent.
+        for lesson in (25, 70, 87, 155):
+            with self.subTest(lesson=lesson):
+                rows = renderer.apply(
+                    {"subject": "English", "year": "Year 3", "lesson_no": lesson}, {}
+                )
+                pbd = rows["PENTAKSIRAN"]
+                self.assertIn("prepare separately", pbd)
+                self.assertNotIn("materials/lesson_", pbd)
+                self.assertNotIn("CikguLaju material", pbd)
+                self.assertIn("Pupils:", pbd)
+
     def test_unrelated_year_subject_and_invalid_lesson_fail_closed(self):
         for state in (
             {"subject": "English", "year": "Year 2", "lesson_no": 14},
@@ -120,6 +134,9 @@ class EnglishY3RoleLayoutTests(unittest.TestCase):
                     self.assertNotIn("**Teacher:**", out[field])
                     self.assertNotIn("**Pupils:**", out[field])
                     self.assertNotIn("NOT READY FOR RELEASE", out[field])
+                    self.assertNotIn("CikguLaju original assessment", out[field])
+                    self.assertNotIn("`materials/lesson_", out[field])
+                    self.assertNotIn("**Resource status:", out[field])
 
 
 if __name__ == "__main__":

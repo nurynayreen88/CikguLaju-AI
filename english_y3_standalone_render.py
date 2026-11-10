@@ -63,6 +63,23 @@ def apply(st, rows):
             r"(?i)\bPupils use\s+`materials/lesson_[0-9]{3}_[a-z0-9_-]+\.md`\s+to\s+",
             "Pupils ", text,
         )
+        text = re.sub(
+            r"(?i)\b(Teacher|Pupils)\s*\(CikguLaju material\)\s*:",
+            r"\1:", text,
+        )
+        text = re.sub(r"(?i)\boriginal\s+CikguLaju\s+", "supplementary ", text)
+        text = re.sub(r"(?i)\bCikguLaju\s+original\s+", "supplementary ", text)
+        # Markdown support files are not attached to this one-page RPH.
+        # Preserve the teacher's instructions, but never expose a repo path
+        # or imply that a separate worksheet has been provided to the user.
+        text = re.sub(
+            r"(?i)\s+in\s+`materials/lesson_[0-9]{3}_[a-z0-9_-]+\.md`",
+            " (prepare separately)", text,
+        )
+        text = re.sub(
+            r"(?i)\s*`materials/lesson_[0-9]{3}_[a-z0-9_-]+\.md`",
+            " (prepare separately)", text,
+        )
         text = re.sub(r"\*\*(Teacher|Pupils):\*\*", r"\n\1:", text, flags=re.I)
         text = re.sub(r"\*\*([^*\n]+)\*\*", r"\1", text)
         text = re.sub(r"[ \t]+\n", "\n", text)
