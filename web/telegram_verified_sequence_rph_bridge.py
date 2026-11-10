@@ -96,6 +96,18 @@ def _resolve(runtime, year, subject, unit_token, pdp_code=None):
         raise SourceUnavailable("Unit not verified by Telegram")
     unit = matched[0]
     groups = _pdp_groups(rows, unit["_unit_code"], unit["_unit_title"])
+    if year == 6 and subject == "MATH":
+        # Six source-backed Year 6 ratio lessons currently carry *Data* 8.x
+        # codes (DSKP 2021 requires 7.2/7.3/7.4). Hide only the exact
+        # known-bad codes. This also protects stale availability/render URLs
+        # before the Web can debit a user's free trial credit.
+        from web.math_y6_ratio_source_hold_20261110 import (
+            held_math_y6_ratio_source,
+        )
+        groups = {
+            code: items for code, items in groups.items()
+            if not held_math_y6_ratio_source(year, subject, code, items)
+        }
     if pdp_code is None:
         return unit, groups
     if not isinstance(pdp_code, str) or not 0 < len(pdp_code) <= 100:
