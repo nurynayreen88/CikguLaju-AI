@@ -148,10 +148,14 @@ def annual_source_plan(year: int):
             raise ValueError("Source SK titles differ within combined lesson")
         title=next(iter(names))
         a=master["A"][week];b=master["B"][week]
-        suffix = " — PBD/pengukuhan SP sama" if special else ""
-        topic = title + suffix
-        note=("Fokus DSKP: " + " / ".join(codes) +
-              ". Bukti PdP: semak hasil kerja murid berdasarkan pernyataan SP.")
+        # Show the actual SP learning focus, not the same unit heading in
+        # every single PdP. The full original statement remains in SP.
+        focus = group[0]["sp_text_source_extract_UNVERIFIED"].strip()
+        if not focus:
+            raise ValueError("Missing original DSKP SP teaching focus")
+        topic = ("Pengukuhan / PBD: " if special else "") + focus[:115]
+        note=("PBD: kumpulkan evidens melalui pemerhatian, respons murid "
+              "dan hasil tugasan berdasarkan SP " + " / ".join(codes) + ".")
         row=dict(id=f"{n:03d}",
                  week=week,a_start=a[0],a_end=a[1],
                  b_start=b[0],b_end=b[1],
