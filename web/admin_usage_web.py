@@ -174,8 +174,7 @@ def summarize_admin_usage(conf, *, now=None, opener=None):
         "select": "telegram_user_id", "limit": "1"
     }, count=True, opener=opener)
     pioneers = _fetch(conf, "pioneer_entitlements", {
-        "select": "telegram_user_id", "revoked_at": "is.null",
-        "entitlement": "in.(lifetime,rakan_pembangun,pioneer_lifetime)", "limit": "1"
+        "select": "telegram_user_id", "revoked_at": "is.null", "limit": "1"
     }, count=True, opener=opener)
     credit_usage = _fetch(conf, "trial_ledger", {
         "select": "id", "amount": "lt.0", "limit": "1"
