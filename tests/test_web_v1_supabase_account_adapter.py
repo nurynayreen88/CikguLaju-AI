@@ -52,5 +52,50 @@ class SupabaseAccountParityTests(unittest.TestCase):
         self.assertEqual(account['free_remaining'], 0)
 
 
+    def test_new_secret_key_uses_apikey_without_bearer(self):
+        """Supabase sb_secret_ is opaque: never send as a JWT bearer."""
+        called = []
+        def fake_urlopen(request, timeout):
+            headers = {key.lower(): value for key, value in request.header_items()}
+            self.assertEqual(headers.get("apikey"), "sb_secret_test_only_key")
+            self.assertNotIn("authorization", headers)
+            table = urlparse(request.full_url).path.split("/")[-1]
+            called.append(table)
+            if table == "cikgulaju_users":
+                return _Response([{"telegram_user_id": 42, "trial_remaining": 8}])
+            if table == "pioneer_entitlements":
+                return _Response([{"entitlement": "rakan_pembangun",
+                                   "revoked_at": None}])
+            if table == "subscriptions":
+                return _Response([])
+            raise AssertionError("Unexpected table: " + table)
+        with patch("web_v1_supabase_account_adapter.urlopen",
+                   side_effect=fake_urlopen):
+            result = lookup_existing_supabase_account(
+                "https://example.supabase.co", "sb_secret_test_only_key", 42)
+        self.assertEqual(called, ["cikgulaju_users",
+                                  "pioneer_entitlements", "subscriptions"])
+        self.assertEqual(result["free_remaining"], 8)
+        self.assertTrue(result["rakan_pembangun"])
+
+    def test_legacy_service_role_jwt_keeps_bearer(self):
+        """Current production legacy auth must behave identically."""
+        def fake_urlopen(request, timeout):
+            headers = {key.lower(): value for key, value in request.header_items()}
+            self.assertEqual(headers.get("apikey"), "legacy-service-role-jwt")
+            self.assertEqual(headers.get("authorization"),
+                             "Bearer legacy-service-role-jwt")
+            table = urlparse(request.full_url).path.split("/")[-1]
+            if table == "cikgulaju_users":
+                return _Response([{"telegram_user_id": 42, "trial_remaining": 10}])
+            return _Response([])
+        with patch("web_v1_supabase_account_adapter.urlopen",
+                   side_effect=fake_urlopen):
+            result = lookup_existing_supabase_account(
+                "https://example.supabase.co", "legacy-service-role-jwt", 42)
+        self.assertEqual(result["free_remaining"], 10)
+        self.assertFalse(result["rakan_pembangun"])
+
+
 if __name__ == '__main__':
     unittest.main()
