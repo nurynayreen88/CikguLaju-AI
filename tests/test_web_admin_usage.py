@@ -161,9 +161,12 @@ class StoredMetricsTests(unittest.TestCase):
             {"telegram_user_id": 2, "logged_in_at": "2026-11-10T20:00:00Z"},
         ]
         def fake(_conf, table, query, *, count=False, opener=None):
+            self.assertEqual(table, "web_login_events")
+            self.assertEqual(query.get("source"), "eq.web")
             if count:
                 return len(rows)
             if query.get("select") == "telegram_user_id,logged_in_at":
+                self.assertEqual(query.get("order"), "logged_in_at.asc,id.asc")
                 return rows
             raise AssertionError("Unexpected API query")
         with patch.object(mod, "_oldest_login",
