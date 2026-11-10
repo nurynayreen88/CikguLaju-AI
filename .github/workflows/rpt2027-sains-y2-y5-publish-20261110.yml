@@ -65,7 +65,7 @@ jobs:
                   assert 'Padankan muka surat' not in content
                   assert 'SEBELUM READY' not in content
                   pages=len(d)
-              summary[str(year)]={'path':str(p),'pdp_count':n,'pages':pages,
+              summary[str(year)]={'path':str(p.resolve()),'pdp_count':n,'pages':pages,
                                   'sha256':hashlib.sha256(raw).hexdigest(),'bytes':len(raw)}
           (out/'build_summary.json').write_text(
               json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
