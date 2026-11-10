@@ -1,0 +1,69 @@
+name: English Y3 160 Word/PDF A4 full audit (review only)
+on:
+  push:
+    branches:
+      - audit/english-y3-160-word-pdf-20261110
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  full-y3-offline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install isolated document QA dependencies
+        run: |
+          python -m pip install python-docx==1.1.2 reportlab==4.2.5 pypdf==5.1.0
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libreoffice-writer >/dev/null
+      - name: Verify all 160 real Word table files and converted PDF pages
+        id: word
+        continue-on-error: true
+        run: python tools/verify_english_800_word_a4.py --year 3 --batch-size 20
+      - name: Verify all 160 native ReportLab PDF layouts
+        id: native
+        continue-on-error: true
+        run: python tools/verify_english_800_native_pdf_contract_20261104.py --year 3 --all
+      - name: Upload audit reports without exposing teacher/user data
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: english-y3-160-word-pdf-a4-audit-20261110
+          retention-days: 14
+          path: |
+            output/english_full_a4_20261103/year3/verification.json
+            output/english_2_6_native_pdf_smoke_20261104/year3/native_pdf_report.json
+      - name: Gate only technical one-page A4 results, not academic READY
+        if: always()
+        env:
+          WORD_OUTCOME: ${{ steps.word.outcome }}
+          NATIVE_OUTCOME: ${{ steps.native.outcome }}
+        run: |
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          w=Path("output/english_full_a4_20261103/year3/verification.json")
+          p=Path("output/english_2_6_native_pdf_smoke_20261104/year3/native_pdf_report.json")
+          if not w.is_file() or not p.is_file():
+              raise SystemExit("A4 audit incomplete: one or both reports absent")
+          word=json.loads(w.read_text(encoding="utf-8"))
+          native=json.loads(p.read_text(encoding="utf-8"))
+          a=word["counts"];b=native["summary"]
+          print("WORD_A4",a,"OVERFLOW",word.get("non_one_page"))
+          print("NATIVE_PDF_A4",b,"OVERFLOW",native.get("non_one_page"))
+          if (os.getenv("WORD_OUTCOME")!="success" or
+                  os.getenv("NATIVE_OUTCOME")!="success"):
+              raise SystemExit("Document generation failed; keep academic release HOLD")
+          if (a.get("total")!=160 or a.get("word_ok")!=160 or
+                  a.get("pdf_ok")!=160 or a.get("one_page_a4")!=160 or
+                  b.get("total")!=160 or b.get("rendered")!=160 or
+                  b.get("one_page_a4")!=160):
+              raise SystemExit("One-page A4 incomplete; identify lessons from reports")
+          print("Y3_TECHNICAL_160_160_WORD_PDF_A4_PASS (not academic approval)")
+          PY
