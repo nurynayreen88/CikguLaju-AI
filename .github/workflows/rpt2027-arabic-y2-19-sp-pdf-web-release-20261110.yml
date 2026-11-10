@@ -44,7 +44,7 @@ jobs:
           import fitz,hashlib,json,re
           from pathlib import Path
           from scripts.build_rpt_2027_remaining_four_subjects_staging import build_all,arabic_records,week1_proposed_records
-          src=arabic_records(6)
+          src=arabic_records(2)
           assert len(src)==60 and len({row['sp'] for row in src})==19
           assert all(row['source_sp_dskp_text_signoff'] is False for row in src)
           assert all('القدرة' in row['sp_display'] for row in src)
@@ -53,7 +53,7 @@ jobs:
           assert rows[0]['week']=='M01'
           docs=build_all(Path('../arabic_candidate/all_20'))
           choices=[Path(path) for subject,year,count,path in docs
-                   if subject=='bahasa_arab' and year==6 and count==60]
+                   if subject=='bahasa_arab' and year==2 and count==60]
           if len(choices)!=1:raise SystemExit('Arabic Year2 PDF absent')
           candidate=choices[0].resolve()
           with fitz.open(candidate) as doc:
@@ -92,7 +92,7 @@ jobs:
           if old.get('count')!=56 or old.get('academic_final_approved') is not False or x['academic_final_approved'] is not False:
               raise SystemExit('Incorrect release status/manifest count')
           old_copy={k:dict(v) for k,v in old['files'].items()}
-          key='bahasa_arab:6'
+          key='bahasa_arab:2'
           entry=old['files'][key]
           original=(root/entry['path']).read_bytes()
           if hashlib.sha256(original).hexdigest()!=entry['sha256'] or len(original)!=entry['bytes']:
@@ -113,7 +113,7 @@ jobs:
                   raise SystemExit('Changed other 55 subjects')
           if sum(old['files'][k]!=old_copy[k] for k in old_copy)!=1 or old['files'][key]['status']!=old_copy[key]['status']:
               raise SystemExit('Unexpected changed metadata or academic release status')
-          old['source_projection']='RPT2027_ARABIC_YEAR6_25_ORIGINAL_DSKP_SP_ADDED_ACADEMIC_HOLD'
+          old['source_projection']='RPT2027_ARABIC_YEAR2_19_ORIGINAL_DSKP_SP_ADDED_ACADEMIC_HOLD'
           old['pages']=sum(x['pages'] for x in old['files'].values())
           old['academic_final_approved']=False
           mf.write_text(json.dumps(old,ensure_ascii=False,indent=2)+'\n','utf-8')
@@ -129,7 +129,7 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           changed=set(Path('../arabic_web_diff.txt').read_text().splitlines())
-          expected={'rpt_2027/web_2027_pdfs/bahasa_arab/tahun_6.pdf','rpt_2027/web_2027_pdfs/manifest.json'}
+          expected={'rpt_2027/web_2027_pdfs/bahasa_arab/tahun_2.pdf','rpt_2027/web_2027_pdfs/manifest.json'}
           if changed!=expected:raise SystemExit('Unexpected Arabic Web diff '+repr(changed))
           print('ARABIC_WEB_TWO_FILES_ONLY')
           PY
@@ -139,7 +139,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: rpt2027-arabic-year2-60-pdp-25-source-sp-review
+          name: rpt2027-arabic-year2-60-pdp-19-source-sp-review
           path: |
             arabic_candidate/arabic_y2_source_review.json
             arabic_web_diff.txt
