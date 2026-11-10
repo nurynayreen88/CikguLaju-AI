@@ -3,7 +3,7 @@
   "year": 2027,
   "status": "DRAF_USER_VISIBLE_NOT_ACADEMIC_FINAL",
   "count": 56,
-  "pages": 1489,
+  "pages": 1517,
   "files": {
     "bahasa_arab:2": {
       "path": "bahasa_arab/tahun_2.pdf",
@@ -391,33 +391,33 @@
     },
     "sains:2": {
       "path": "sains/tahun_2.pdf",
-      "sha256": "3c6d7166679c27b8bb1583eb8daf9335d033cbc75029f11e11c05ab62169ef70",
-      "bytes": 63838,
-      "pages": 10,
+      "sha256": "91192b433029bef6b7f2986ad06753db49e73b1ad48f7c25342fcfa15522fb01",
+      "bytes": 82912,
+      "pages": 19,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "sains:3": {
       "path": "sains/tahun_3.pdf",
-      "sha256": "41a72661685f3e61084473ad25bb0562ae4ca4b3b11b0604914547676abd8366",
-      "bytes": 61865,
-      "pages": 9,
+      "sha256": "5b7347ac613ac1aa3468469e09e318691ec22983c25bf66abd1d417d62591c7a",
+      "bytes": 85180,
+      "pages": 20,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "sains:4": {
       "path": "sains/tahun_4.pdf",
-      "sha256": "40d3e1a7790a805f71a7d4c9e9f31f4920dd887f137a1abd2bdbae0a93de17cb",
-      "bytes": 77166,
-      "pages": 17,
+      "sha256": "6b74759e9a00014ba3a7a255c981490f0543006c105d654bc3c94ebf533db032",
+      "bytes": 84329,
+      "pages": 19,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "sains:5": {
       "path": "sains/tahun_5.pdf",
-      "sha256": "4cca9a2dc35ba0ca12f5eab1d09d22dd35dc14596435c4e02951fee15f0e41b2",
-      "bytes": 79426,
-      "pages": 18,
+      "sha256": "5ac0c91e08dc2e14c38830decaf10554ac8f75a05b62bcd4dbe15f2063ec64f6",
+      "bytes": 96168,
+      "pages": 24,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
@@ -477,5 +477,5 @@
     "original_cover_preserved": true,
     "cleanup_note": "All 56 source PDFs rebuilt; official subject headings preserved"
   },
-  "source_projection": "WEEK01_23_PDFS_REFRESHED_20261110_ACADEMIC_HOLD"
+  "source_projection": "RPT2027_SAINS_Y2_92_Y3_103_Y4_88_Y5_116_KSSR2017_SOURCE_COMPLETED_SP_ACADEMIC_REVIEW_HOLD"
 }
