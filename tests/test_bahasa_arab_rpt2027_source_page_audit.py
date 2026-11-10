@@ -80,10 +80,11 @@ class ArabicSPPageEvidenceQA(unittest.TestCase):
             self.assertEqual(len(records), expected)
             for row in records:
                 if year == 2:
-                    self.assertIn("Pernyataan penuh SK belum dipadankan",
-                                  row["sk_display"])
-                    self.assertIn("Pernyataan penuh SP belum dipadankan",
-                                  row["sp_display"])
+                    self.assertIn("Pernyataan penuh SK belum dipadankan",row["sk_display"])
+                    self.assertNotIn("Pernyataan penuh SP belum dipadankan",row["sp_display"])
+                    self.assertIn("القدرة",row["sp_display"])
+                    self.assertTrue(row["source_pdf_extraction_code_repeated_unreliable"])
+                    self.assertFalse(row["source_sp_dskp_text_signoff"])
                 elif year in (3,4,5):
                     self.assertIn("Pernyataan penuh SK belum dipadankan",row["sk_display"])
                     self.assertNotIn("Pernyataan penuh SP belum dipadankan",row["sp_display"])
