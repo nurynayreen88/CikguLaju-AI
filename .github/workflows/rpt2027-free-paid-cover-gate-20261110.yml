@@ -42,6 +42,7 @@ jobs:
             PYTHONPATH=. python "$suite"
           done
   phone-personalization:
+    # Playwright 1.55 Chromium does not yet support the ubuntu-latest 26.04 runner.
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
