@@ -722,3 +722,17 @@ except Exception as _special_menu_error:
     TELEGRAM_SPECIAL_ACTIVITY_MENU_ACTIVE = False
     print("Telegram Special Activity menu unavailable:",
           type(_special_menu_error).__name__, flush=True)
+
+
+# Safe Telegram RPH Hari Ini replaces the paused legacy buttons with a
+# manual-timetable-only workflow. The timetable image/PDF reader is removed
+# from Telegram UI/callback/handler; existing saved class profiles, native
+# Word/PDF navigation, RPH progress and Supabase credit gates are untouched.
+# Install after all other menu/callback bridges (including Special Activity).
+try:
+    from web.telegram_today_manual_timetable_20261110 import install as install_today_manual
+    TELEGRAM_TODAY_MANUAL_TIMETABLE_ACTIVE = bool(install_today_manual(telegram_runtime))
+except Exception as _today_manual_error:
+    TELEGRAM_TODAY_MANUAL_TIMETABLE_ACTIVE = False
+    print("Telegram RPH Hari Ini manual timetable unavailable:",
+          type(_today_manual_error).__name__, flush=True)

@@ -373,9 +373,14 @@ def install(runtime):
     def menu(cid, show_persistent=False):
         response = old_menu(cid, show_persistent=show_persistent)
         try:
+            buttons = [[_button("🌱 Buka RPH Aktiviti Khas", "home")]]
+            if getattr(runtime, "CIKGULAJU_MANUAL_TODAY_RPH_ACTIVE", False):
+                buttons.insert(0, [{"text": "⚡ RPH Hari Ini • Jadual Manual",
+                                    "callback_data": "tm26:home"}])
             _send(runtime, cid,
-                  "🌱 <b>RPH Aktiviti Khas</b> — Transisi & Tamat Sukatan (DRAF)",
-                  [[_button("🌱 Buka RPH Aktiviti Khas", "home")]])
+                  "⚡ <b>RPH Hari Ini</b> • jadual diisi sendiri\n"
+                  "🌱 <b>RPH Aktiviti Khas</b> • Transisi & Tamat Sukatan (DRAF)",
+                  buttons)
         except Exception as exc:
             print("TELEGRAM SPECIAL RPH MENU WARNING:",
                   type(exc).__name__, flush=True)
