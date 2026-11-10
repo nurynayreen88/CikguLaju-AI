@@ -49,6 +49,18 @@ def real_doc_bytes(fmt, bad):
         doc = Document()
         for line in lines:
             doc.add_paragraph(line)
+        # Production's compact_web_word_notes expects three native tables:
+        # teacher details; 3-column activities; final reflection.
+        details = doc.add_table(rows=1, cols=2)
+        details.cell(0, 0).text = "Kelas"
+        details.cell(0, 1).text = "4 Ikhlas"
+        activities = doc.add_table(rows=1, cols=3)
+        activities.cell(0, 0).text = "Fasa"
+        activities.cell(0, 1).text = "Aktiviti guru dan murid"
+        activities.cell(0, 2).text = "Catatan"
+        reflection = doc.add_table(rows=1, cols=2)
+        reflection.cell(0, 0).text = "Refleksi"
+        reflection.cell(0, 1).text = "PBD individu"
         doc.save(output)
     else:
         pdf = Canvas(output, pagesize=A4)
