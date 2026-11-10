@@ -1,0 +1,63 @@
+name: RPT2027 14 teacher PDFs - safe note cleanup staging
+on:
+  pull_request:
+    branches:
+      - production/cikgulaju-web-20261105
+    paths:
+      - 'scripts/rpt2027_clean_teacher_notes_20261110.py'
+      - '.github/workflows/rpt2027-clean-14-teacher-pdfs-20261110.yml'
+permissions:
+  contents: write
+jobs:
+  cleanup-review:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout PR branch, never production
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'PyMuPDF==1.24.14'
+      - name: Clean precisely 14 PDFs and verify all 56 manifest entries
+        run: |
+          python scripts/rpt2027_clean_teacher_notes_20261110.py \
+            rpt_2027/web_2027_pdfs qa_rpt2027_notes
+      - name: Require only 14 PDFs + manifest changed
+        shell: bash
+        run: |
+          python - <<'PY'
+          import subprocess
+          changed=subprocess.check_output(['git','diff','--name-only'],text=True).splitlines()
+          allowed={'rpt_2027/web_2027_pdfs/manifest.json'}
+          allowed.update(f'rpt_2027/web_2027_pdfs/bahasa_arab/tahun_{y}.pdf' for y in range(2,7))
+          allowed.add('rpt_2027/web_2027_pdfs/pendidikan_islam/tahun_2.pdf')
+          allowed.update(f'rpt_2027/web_2027_pdfs/pjpk/tahun_{y}.pdf' for y in range(2,7))
+          allowed.update(f'rpt_2027/web_2027_pdfs/sejarah/tahun_{y}.pdf' for y in range(4,7))
+          assert set(changed)<=allowed,changed
+          assert len(changed) in (0,15),(len(changed),changed)
+          print('WHITELIST_OK',len(changed),sorted(changed),flush=True)
+          PY
+      - name: Upload QA evidence; never publish academic readiness
+        uses: actions/upload-artifact@v4
+        with:
+          name: rpt2027-14-teacher-pdf-note-clean-qa
+          if-no-files-found: error
+          retention-days: 30
+          path: qa_rpt2027_notes/QA_RPT2027_14_PDF_TEACHER_NOTE_CLEANUP.json
+      - name: Commit on review branch only, no production push
+        shell: bash
+        env:
+          HEAD_BRANCH: ${{ github.head_ref }}
+        run: |
+          git config user.name 'cikgulaju-rpt-ci'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add rpt_2027/web_2027_pdfs
+          if ! git diff --cached --quiet; then
+            git commit -m 'rpt2027(web): strip teacher-facing editorial notes from exactly 14 PDFs'
+            git push origin "HEAD:$HEAD_BRANCH"
+          fi
