@@ -15,24 +15,24 @@
     },
     "bahasa_arab:3": {
       "path": "bahasa_arab/tahun_3.pdf",
-      "sha256": "7a1a6ca7b90b4e12934ecc29603fe5cdd96ea0e6ffadd5aef98c34e5d2117475",
-      "bytes": 110854,
+      "sha256": "54cfc5affec80572422798fc038dca762518fee8f76e9a026403fe9c32d63b0a",
+      "bytes": 130115,
       "pages": 12,
       "status": "DRAF",
       "source_stage": "ARABIC_Y2_Y6_117_SOURCE_SP_VISUAL_CANDIDATES_NOT_ACADEMIC_FINAL_20261108"
     },
     "bahasa_arab:4": {
       "path": "bahasa_arab/tahun_4.pdf",
-      "sha256": "073088aec6ab1de34650cc7054439546a8845a121aca2a7cbcc2fa9ae810dd0c",
-      "bytes": 109681,
+      "sha256": "b6853eb2d0b608367a2db6a2c5a87c665921c3c92de0d6dd3399ff6080ae804d",
+      "bytes": 130593,
       "pages": 12,
       "status": "DRAF",
       "source_stage": "ARABIC_Y2_Y6_117_SOURCE_SP_VISUAL_CANDIDATES_NOT_ACADEMIC_FINAL_20261108"
     },
     "bahasa_arab:5": {
       "path": "bahasa_arab/tahun_5.pdf",
-      "sha256": "769775d99ca2a23f0204ee6cfda59a613bae1832a9c30a2a9993f6ad0847a459",
-      "bytes": 111985,
+      "sha256": "984ea11b2de900bdbfa0d60c7c26c35a83a8fe27a9fc1b338aa823b1cd1be26e",
+      "bytes": 132521,
       "pages": 12,
       "status": "DRAF",
       "source_stage": "ARABIC_Y2_Y6_117_SOURCE_SP_VISUAL_CANDIDATES_NOT_ACADEMIC_FINAL_20261108"
@@ -477,5 +477,5 @@
     "original_cover_preserved": true,
     "cleanup_note": "All 56 source PDFs rebuilt; official subject headings preserved"
   },
-  "source_projection": "RPT2027_ARABIC_YEAR6_25_ORIGINAL_DSKP_SP_ADDED_ACADEMIC_HOLD"
+  "source_projection": "ARABIC_Y3_Y4_Y5_73_ORIGINAL_DSKP_SP_TEXT_SOURCE_BACKED_ACADEMIC_HOLD"
 }
