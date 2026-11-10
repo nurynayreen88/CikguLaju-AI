@@ -6,13 +6,11 @@ Exact legacy Telegram source identities were audited against the September
 
 This module does NOT correct SK/SP by guess, edit the primary database,
 affect Telegram's direct bot flow, touch credits, or release academic drafts.
-Only the six already-audited sequence IDs with their original wrong 8.x
-source codes are held. If the authoritative source is later corrected, the
-same lesson is automatically released by this guard without a database edit.
+Only the six already-audited sequence IDs are held until explicit academic
+signoff. Changing the codes alone does NOT automatically release an RPH:
+objectives, worked exercises and book references must also be verified.
 """
 from __future__ import annotations
-
-import re
 
 # Expected old wrong SPs, sourced from
 # audits/matematik_y6_semantic_scope_review_expanded_20261108.json
@@ -26,27 +24,20 @@ _BAD_SP_SETS = {
     "MT6-PDP-083": frozenset({"8.1.1", "8.2.1"}),          # Aplikasi
     "MT6-PDP-084": frozenset({"8.3.1"}),                  # Bukan rutin
 }
-_SP = re.compile(r"(?<![\d.])\d{1,2}\.\d{1,2}\.\d{1,2}(?![\d.])")
-
-
 def held_math_y6_ratio_source(year, subject, pdp_code, rows):
-    """True only for an exact known bad source identity and bad SP set.
+    """True for the six confirmed problematic Year 6 lesson identities.
 
-    The runtime source and the currently selected PdP must both match.
-    No release is inferred for an incomplete or unparseable group: the
-    existing native bridge's SK/SP validation handles such cases.
+    Existing bad source SPs are documented in _BAD_SP_SETS as audit evidence.
+    Never auto-approve an RPH solely because someone edits its source code:
+    content, objective, activities, PBD and textbook must pass signoff.
+    Explicitly un-hold a code only in a reviewed future PR.
     """
     if type(year) is not int or year != 6 or subject != "MATH":
         return False
-    bad = _BAD_SP_SETS.get(pdp_code)
-    if bad is None or not isinstance(rows, list) or not rows:
+    if pdp_code not in _BAD_SP_SETS or not isinstance(rows, list) or not rows:
         return False
-    if not all(isinstance(row, dict) and
-               str(row.get("pdp_sequence_code") or "").strip() == pdp_code
-               for row in rows):
-        return False
-    codes = set()
-    for row in rows:
-        raw = str(row.get("sp_code") or "")
-        codes.update(_SP.findall(raw))
-    return bool(codes) and frozenset(codes) == bad
+    return all(
+        isinstance(row, dict)
+        and str(row.get("pdp_sequence_code") or "").strip() == pdp_code
+        for row in rows
+    )
