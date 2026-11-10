@@ -70,12 +70,19 @@ class BrowserSharedTrialTests(unittest.TestCase):
             self.assertIn("belum dapat disahkan",page.locator("#account-access").inner_text())
         finally:page.close()
 
-    def test_copy_states_rpt_still_paid_and_trial_shared(self):
+    def test_copy_states_free_rpt_paid_cover_and_shared_trial(self):
         page=self.page(360)
         try:
             html=page.content()
             self.assertIn("10 janaan RPH percuma dikongsi antara Web dan Telegram",html)
-            self.assertIn("RPT memerlukan Rakan Pembangun atau langganan aktif",html)
+            # As of the approved 10 Nov Web release, authenticated users may
+            # download original RPT PDFs for free without using RPH trial quota.
+            self.assertIn(
+                "Muat turun RPT adalah <strong>percuma untuk semua pengguna berdaftar</strong>", html)
+            self.assertIn("tidak memotong 10 janaan RPH percuma",html)
+            # Printing private teacher/school identity remains paid-only.
+            self.assertIn("<strong>Rakan Pembangun atau langganan aktif</strong>", html)
+            self.assertIn("maklumat itu <strong>tidak dicetak</strong>", html)
         finally:page.close()
 
 if __name__=="__main__":
