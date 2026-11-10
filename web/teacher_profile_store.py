@@ -130,7 +130,11 @@ def _validated_name(value, max_len, label, *, required=False):
 
 
 def clean_profile(form):
-    if not isinstance(form, dict) or set(form) not in (PROFILE_KEYS, PROFILE_KEYS | {"avatar_code"}):
+    school_fields = {"school_code", "district_name"}
+    accepted = (PROFILE_KEYS, PROFILE_KEYS | {"avatar_code"},
+                PROFILE_KEYS | school_fields,
+                PROFILE_KEYS | school_fields | {"avatar_code"})
+    if not isinstance(form, dict) or set(form) not in accepted:
         raise ProfileValidation("Maklumat profil tidak lengkap")
     name = _validated_name(form["display_name"], 100, "Nama guru", required=True)
     school = _validated_name(form["school_name"], 160, "Nama sekolah")
@@ -156,6 +160,13 @@ def clean_profile(form):
         seen.add(cls.casefold())
     values = {"display_name": name, "school_name": school,
               "state_name": state or None, "class_names": cleaned}
+    if "school_code" in form:
+        code = _validated_name(form["school_code"], 12, "Kod sekolah")
+        district = _validated_name(form["district_name"], 100, "PPD sekolah")
+        if bool(code) != bool(district) or (code and not state):
+            raise ProfileValidation("Pilih negeri, PPD dan sekolah bersama-sama")
+        values["school_code"] = code or None
+        values["district_name"] = district or None
     if avatar_code is not None:
         values["avatar_code"] = avatar_code
     return values, _version(form["version"])
@@ -239,7 +250,7 @@ def _class_records(record):
 def _profile_record(url, key, uid, *, opener=None):
     return _get_one(
         url, key, "teacher_profiles", uid,
-        "telegram_user_id,display_name,school_name,state_name,avatar_code,class_names,class_profiles,updated_at",
+        "telegram_user_id,display_name,school_name,state_name,district_name,school_code,avatar_code,class_names,class_profiles,updated_at",
         opener=opener,
     )
 
@@ -262,12 +273,15 @@ def get_profile(url, key, uid, *, opener=None):
     record = _profile_record(url, key, uid, opener=opener)
     if record is None:
         return {"display_name": "Cikgu", "school_name": "",
-                "state_name": "", "avatar_code": "initials", "class_names": [], "version": ""}
+                "state_name": "", "district_name": "", "school_code": "",
+                "avatar_code": "initials", "class_names": [], "version": ""}
     classes = [r["name"] for r in _class_records(record)]
     return {
         "display_name": record.get("display_name") or "Cikgu",
         "school_name": record.get("school_name") or "",
         "state_name": record.get("state_name") or "",
+        "district_name": record.get("district_name") or "",
+        "school_code": record.get("school_code") or "",
         "avatar_code": record.get("avatar_code") if record.get("avatar_code") in AVATAR_CODES else "initials",
         "class_names": classes,
         "version": record.get("updated_at") or "",
@@ -321,6 +335,42 @@ def save_profile(url, key, uid, form, *, opener=None):
     record = _profile_record(url, key, uid, opener=opener)
     if version != ((record or {}).get("updated_at") or ""):
         raise ProfileConflict("Maklumat telah dikemas kini. Muat semula")
+    # New picker submissions can never forge a full school name or attach a
+    # real school code to a different PPD/negeri. Legacy unchanged text is
+    # preserved so pre-existing teacher profiles are not destructively reset.
+    if "school_code" in values:
+        code = values["school_code"]
+        if code:
+            from web.school_directory_store import (
+                SchoolDirectoryUnavailable, school_by_code,
+            )
+            try:
+                school = school_by_code(url, key, code, opener=opener)
+            except SchoolDirectoryUnavailable:
+                raise ProfileUnavailable("Direktori sekolah belum tersedia") from None
+            except ValueError:
+                raise ProfileValidation("Kod sekolah tidak dijumpai dalam direktori") from None
+            if (school["state_name"] != values["state_name"] or
+                    school["district_name"] != values["district_name"]):
+                raise ProfileValidation("Sekolah tidak sepadan dengan negeri atau PPD")
+            values["school_name"] = school["school_name"]
+        elif (record and record.get("school_code")
+              and values["school_name"] == (record.get("school_name") or "")
+              and values["state_name"] == record.get("state_name")):
+            # An unavailable/legacy picker must not wipe previously linked data.
+            values["school_code"] = record["school_code"]
+            values["district_name"] = record.get("district_name")
+        elif values["school_name"]:
+            # Existing manually typed school names remain readable and editable
+            # only by choosing an entry, never by posting an invented new name.
+            if (not record or
+                    values["school_name"] != (record.get("school_name") or "") or
+                    values["state_name"] != record.get("state_name")):
+                raise ProfileValidation("Pilih sekolah daripada direktori rasmi")
+    elif record and record.get("school_code"):
+        if (values["school_name"] != (record.get("school_name") or "")
+                or values["state_name"] != record.get("state_name")):
+            raise ProfileValidation("Muat semula profil dan pilih sekolah daripada senarai")
     rows = _class_records(record)
     byname = {r["name"].casefold(): r for r in rows}
     keep = {name.casefold() for name in values["class_names"]}
