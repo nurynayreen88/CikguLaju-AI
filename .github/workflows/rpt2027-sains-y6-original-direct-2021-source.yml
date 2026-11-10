@@ -1,0 +1,27 @@
+name: RPT2027 Sains Y6 KPM2021 original PDF direct retrieval gate
+on:
+  pull_request:
+    paths:
+      - 'scripts/audit_sains_y6_2021_direct_pdf_source_20261110.py'
+      - '.github/workflows/rpt2027-sains-y6-original-direct-2021-source.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-96-source-sp:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'requests==2.32.5' 'PyMuPDF==1.24.14'
+      - name: Inspect direct source file, no production writes or artificial SK/SP
+        run: python -m scripts.audit_sains_y6_2021_direct_pdf_source_20261110
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sains-y6-2021-96-sp-original-direct-pdf-source-evidence-not-release
+          path: output/rpt2027_sains_y6_2021_direct_source_audit.json
+          retention-days: 30
+          if-no-files-found: error
