@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - name: Checkout exactly production Web PDF revision
+      - name: Checkout current production Web PDF revision
         uses: actions/checkout@v4
         with:
           ref: production/cikgulaju-web-20261105
@@ -49,10 +49,10 @@ jobs:
                       assert len(pdf)==info['pages'] and len(pdf)>=2,key
                       assert all(a.rect.width>a.rect.height for a in pdf),key
                       text='\n'.join(pg.get_text() for pg in list(pdf)[1:])
-                      has_m01=bool(re.search(r'(?<!\\d)M\\s*01(?!\\d)',text,re.I))
+                      has_m01=bool(re.search(r'(?<!\d)M\s*01(?!\d)',text,re.I))
                       first_content_page=pdf[1].get_text()
-                      first_week_pdp=bool(re.search(r'(?i)\\b(?:PdP|Lesson)\\s*0*1\\b',first_content_page))
-                      first_page_m01=bool(re.search(r'(?i)(?<!\\d)M\\s*01(?!\\d)',first_content_page))
+                      first_week_pdp=bool(re.search(r'(?i)\b(?:PdP|Lesson)\s*0*1\b',first_content_page))
+                      first_page_m01=bool(re.search(r'(?i)(?<!\d)M\s*01(?!\d)',first_content_page))
                       leaked_notes=re.findall(
                           r'(?i)Buka DSKP asal|pemetaan buku teks belum disahkan|'
                           r'CALON BUKAN VISUAL|Masih DRAF|DRAF PKJR',text)
@@ -95,6 +95,7 @@ jobs:
           assert not report['internal_note_leak_files'], 'Internal instructions leaked in teacher PDFs'
           PY
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: cikgulaju-rpt2027-56-pdf-from-web-20261110
           retention-days: 30
