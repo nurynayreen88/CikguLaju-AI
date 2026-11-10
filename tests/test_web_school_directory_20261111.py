@@ -27,7 +27,8 @@ class SchoolProfileTests(unittest.TestCase):
     def school():
         return {"school_code": "JBA0001",
                 "school_name": "SEKOLAH KEBANGSAAN LUBOK",
-                "state_name": "Johor", "district_name": "PPD BATU PAHAT"}
+                "state_name": "Johor", "district_name": "PPD BATU PAHAT",
+                "school_level": "Rendah"}
 
     @staticmethod
     def form(**changed):
@@ -66,7 +67,9 @@ class SchoolProfileTests(unittest.TestCase):
                                              "TEST_KEY","JBA0001"), self.school())
         self.assertEqual(calls[1][1]["state_name"],"eq.Johor")
         self.assertEqual(calls[2][1]["district_name"],"eq.PPD BATU PAHAT")
+        self.assertEqual(calls[2][1]["school_level"],"eq.Rendah")
         self.assertEqual(calls[3][1]["school_code"],"eq.JBA0001")
+        self.assertEqual(calls[3][1]["school_level"],"eq.Rendah")
 
     @patch("web.teacher_profile_routes._auth",
            return_value=(None,None,({"error":"Sila log masuk"},401)))
