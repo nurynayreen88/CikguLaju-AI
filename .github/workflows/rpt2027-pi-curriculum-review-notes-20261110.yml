@@ -1,0 +1,64 @@
+name: RPT2027 PI 3 sourced audit-note leaks - PDF QA
+on:
+  pull_request:
+    paths:
+      - 'rpt_2027/common/teacher_display_projection.py'
+      - 'rpt_2027/common/format_2026_layout_preview.py'
+      - 'scripts/build_rpt_2027_remaining_four_subjects_staging.py'
+      - 'tests/test_rpt2027_teacher_text_leak_scan.py'
+      - '.github/workflows/rpt2027-pi-curriculum-review-notes-20261110.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  teacher-pdf-pi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PDF and Arabic/Jawi layout dependencies
+        run: |
+          python -m pip install 'PyMuPDF==1.24.14' 'reportlab==4.2.5' 'pypdf==5.1.0' 'beautifulsoup4==4.12.3' 'arabic-reshaper==3.0.0' 'python-bidi==0.6.3'
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-hosny-amiri
+      - name: Run sourced editorial text projection tests
+        run: |
+          python -m py_compile rpt_2027/common/teacher_display_projection.py tests/test_rpt2027_teacher_text_leak_scan.py
+          python -m unittest tests.test_rpt2027_teacher_text_leak_scan -v
+      - name: Render actual PI Years 3 and 6 and fail if audit instructions print
+        run: |
+          python - <<'PY'
+          import fitz
+          from pathlib import Path
+          from scripts.build_rpt_2027_remaining_four_subjects_staging import pi_records,week1_proposed_records
+          from rpt_2027.common.format_2026_layout_preview import build_preview
+          out=Path('output/rpt2027_pi_curriculum_note_guard')
+          out.mkdir(parents=True,exist_ok=True)
+          for year in (3,6):
+              originals=pi_records(year)
+              records=week1_proposed_records('pendidikan_islam',year,pi_records)
+              assert [r['id'] for r in records]==[r['id'] for r in originals]
+              assert [(r['sk'],r['sp']) for r in records]==[(r['sk'],r['sp']) for r in originals]
+              target=out/f'CIKGULAJU_RPT_PI_T{year}_EDITORIAL_QA_STAGING.pdf'
+              build_preview('pendidikan_islam',year,records,target,max_span_rows=2)
+              with fitz.open(target) as doc:
+                  assert len(doc)>2
+                  assert all(p.rect.width>p.rect.height for p in doc)
+                  body='\n'.join(p.get_text() for p in list(doc)[1:])
+                  for bad in ('SEMAKAN KURIKULUM','SEMAKAN DSKP DIPERLUKAN',
+                              'Pemetaan buku teks terdahulu','Masih DRAF'):
+                      assert bad not in body,(year,bad)
+                  assert '2027' in body
+                  print('PI_EDITORIAL_PDF_PASS',year,'pages',len(doc),flush=True)
+          PY
+      - name: Upload PI reviewer PDFs (NOT for Web deployment)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rpt2027-pi-curriculum-editorial-no-leaks-staging-only
+          retention-days: 14
+          if-no-files-found: warn
+          path: output/rpt2027_pi_curriculum_note_guard/

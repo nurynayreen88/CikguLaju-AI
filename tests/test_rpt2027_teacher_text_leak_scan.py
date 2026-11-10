@@ -114,6 +114,33 @@ class TeacherTextLeakAuditTests(unittest.TestCase):
                     self.assertNotIn(value, rendered)
                 self.assertFalse(find_internal_notes(rendered))
 
+    def test_actual_pi_y3_and_y6_curriculum_audit_notes_never_print(self):
+        """The 3 source records retain provenance, but teacher PDF shows none."""
+        from copy import deepcopy
+        from scripts.build_rpt_2027_remaining_four_subjects_staging import pi_records
+        from rpt_2027.common.teacher_display_projection import public_note
+        for year, lesson in ((3, 6), (3, 50), (6, 87)):
+            with self.subTest(year=year, lesson=lesson):
+                record = pi_records(year)[lesson - 1]
+                original = deepcopy(record)
+                self.assertIn("SEMAKAN KURIKULUM", record["note"])
+                teacher_note = public_note(record)
+                for internal in (
+                    "SEMAKAN KURIKULUM",
+                    "SEMAKAN DSKP DIPERLUKAN",
+                    "Pemetaan buku teks terdahulu",
+                    "Masih DRAF",
+                ):
+                    self.assertNotIn(internal, teacher_note)
+                self.assertIn("Bahan:", teacher_note)
+                self.assertIn("Penilaian:", teacher_note)
+                if year == 3:
+                    self.assertIn("Mushaf al-Quran", teacher_note)
+                else:
+                    self.assertIn("Bahan sumber guru", teacher_note)
+                self.assertFalse(find_internal_notes(teacher_note))
+                self.assertEqual(record, original)
+
     def test_pdf_render_gate_detects_internal_footer_and_clauses(self):
         from rpt_2027.common.teacher_display_projection import public_note
         row = {
