@@ -20,7 +20,7 @@ def install(rt):
         return False
     if not isinstance(getattr(rt, "state", None), dict):
         return False
-    old_menu, old_callback = rt.menu, rt.callback
+    old_callback = rt.callback
 
     def timetable(cid, note=""):
         entries = rt._timetable_entries(cid)
@@ -51,15 +51,6 @@ def install(rt):
             [{"text": "🏠 Menu Utama", "callback_data": "home"}],
         ])
         return rt.send(cid, "\n".join(lines), buttons)
-
-    def menu(cid, show_persistent=False):
-        result = old_menu(cid, show_persistent=show_persistent)
-        # Additional message preserves earlier referral and special-activity adapters.
-        rt.send(cid, "⚡ <b>RPH Hari Ini</b>\n"
-                     "Jadual waktu diisi secara manual, bukan dibaca daripada gambar.",
-                [[{"text": "⚡ Buka RPH Hari Ini", "callback_data": "todayrph272"}],
-                 [{"text": "✏️ Isi Jadual Waktu", "callback_data": "timetable"}]])
-        return result
 
     def generate_daily(cid):
         ss = rt.state.setdefault(cid, {})
@@ -177,6 +168,6 @@ def install(rt):
         rt._handle_timetable_upload_v25281 = no_reader
     rt.TT_READER_ALLOW_GEMINI = False
     rt._timetable_menu = timetable
-    rt.menu, rt.callback = menu, callback
+    rt.callback = callback
     rt.CIKGULAJU_DAILY_MANUAL_ONLY_20261110 = True
     return True

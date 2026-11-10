@@ -99,7 +99,7 @@ class ManualDailyTests(unittest.TestCase):
 
     def test_menu_is_additive_and_old_callbacks_unchanged(self):
         self.assertEqual(self.rt.menu(1), "old menu")
-        self.assertIn("RPH Hari Ini", self.messages[-1][0])
+        self.assertEqual(self.messages, [])  # no second main-menu message
         self.assertEqual(self.rt.callback(1, "ak26:home"), ("old callback", "ak26:home"))
         self.assertEqual(self.rt.callback(1, "tt_add"), ("old callback", "tt_add"))
         self.assertTrue(install(self.rt))
