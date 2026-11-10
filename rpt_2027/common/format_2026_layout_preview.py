@@ -248,7 +248,7 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
     doc = SimpleDocTemplate(
         str(out), pagesize=(w, h),
         leftMargin=lm, rightMargin=rm, topMargin=43, bottomMargin=38,
-        title=f"RPT {SUBJECTS[subject]} Tahun {year} 2027 - DRAF",
+        title=f"RPT {SUBJECTS[subject]} Tahun {year} 2027",
         author="CikguLaju AI"
     )
 
