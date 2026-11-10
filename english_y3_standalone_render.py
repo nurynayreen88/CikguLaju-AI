@@ -58,6 +58,7 @@ def apply(st, rows):
         # separate lines and remove Markdown-only bold delimiters, not actions.
         text = re.sub(r"\*\*(Teacher|Pupils):\*\*", r"\n\1:", text, flags=re.I)
         text = re.sub(r"\*\*([^*\n]+)\*\*", r"\1", text)
+        text = re.sub(r"[ \t]+\n", "\n", text)
         return re.sub(r"\n{3,}", "\n\n", text).strip()
 
     result["SET INDUKSI"] = clean_phase(intro)
