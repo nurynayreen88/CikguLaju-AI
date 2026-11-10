@@ -1,0 +1,25 @@
+name: Web verified login event audit
+on:
+  push:
+    branches:
+      - fix/web-login-events-verified-20261110
+  pull_request:
+    branches:
+      - production/cikgulaju-web-20261105
+    paths:
+      - web/web_login_analytics.py
+      - web_v1_telegram_auth_routes.py
+      - tests/test_web_login_event_capture.py
+      - .github/workflows/web-login-event-audit-20261110.yml
+jobs:
+  login-ledger:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run no-network event and secret safety tests
+        run: python -m unittest discover -s tests -p 'test_web_login_event_capture.py' -v
+      - name: Compile modified auth and analytics modules
+        run: python -m py_compile web_v1_telegram_auth_routes.py web/web_login_analytics.py
