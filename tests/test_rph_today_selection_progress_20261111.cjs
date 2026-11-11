@@ -81,7 +81,7 @@ assert.equal(ctx.generateAll.disabled, true);
 assert.equal(ctx.allStatus.textContent, "Menyemak bahan bagi dua kelas");
 
 ctx.reviewing = false;
-ctx.choices = [{slot: {can_prepare: false}}];
+ctx.choices = [{slot: {can_prepare: false}, controls: {}}];
 ctx.resultsHost.hidden = true;
 update();
 assert.equal(ctx.generateAll.disabled, true);
