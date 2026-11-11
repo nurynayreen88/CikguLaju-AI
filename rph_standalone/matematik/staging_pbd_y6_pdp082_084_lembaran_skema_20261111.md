@@ -12,7 +12,7 @@ Nama: __________________  Kelas: __________  Tarikh: __________
 
 1. Kad merah kepada kad biru ialah **18 : 30**. Tulis nisbah dalam bentuk termudah.
 2. Nyatakan nisbah **2 kg kepada 800 g** dalam bentuk termudah.
-3. Nisbah bilangan manik kepada kotak ialah **3 : 4**. Jika ada **12 manik**, berapakah bilangan kotak pada kadaran yang sama?
+3. Nisbah buku kepada pen ialah **3 : 4**. Jika terdapat **12 buku**, berapakah bilangan pen pada kadaran yang sama?
 4. Nisbah pen kepada buku nota ialah **5 : 7**. Jika terdapat **21 buku nota**, berapakah bilangan pen?
 5. Nisbah murid lelaki kepada perempuan ialah **3 : 4**. Jumlah murid **35 orang**. Tentukan bilangan murid lelaki dan perempuan.
 
@@ -43,7 +43,7 @@ Nama: __________________  Kelas: __________  Tarikh: __________
 
 1. `18 : 30 ÷ 6 = 3 : 5`.
 2. `2 kg : 800 g = 2 000 g : 800 g = 5 : 2`.
-3. `12 ÷ 3 = 4`; kotak `4 × 4 = 16`.
+3. `12 ÷ 3 = 4`; pen `4 × 4 = 16`.
 4. `21 ÷ 7 = 3`; pen `5 × 3 = 15`.
 5. Jumlah bahagian `3+4=7`; satu bahagian `35÷7=5`. Lelaki `15`, perempuan `20`.
 
