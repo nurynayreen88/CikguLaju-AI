@@ -66,7 +66,7 @@ class _VerifiedTelegramRuntime:
         if year != "Tahun 4":
             return [], []
         rows = [{"lesson_no": n, "unit_name": f"Source Lesson {n}"}
-                for n in (43, 103, 157)]
+                for n in (30, 43, 103, 157)]
         return rows, ["Source"]
 
     def _en34_verified_sb_pages_v25230(self, row, year):
@@ -137,6 +137,32 @@ class WebTelegramYear4PartnerContract(unittest.TestCase):
         for result_page, source_index in zip(actual.pages, [52, 53, 54]):
             self.assertEqual(result_page.get_contents().get_data(),
                              original.pages[source_index].get_contents().get_data())
+
+    def test_web_displays_and_downloads_both_real_workbook_and_student_book(self):
+        """One verified Lesson exposes two independently authenticated PDFs."""
+        self.assertEqual(self.runtime.mapped[30], "20")
+        query = self._select(30)
+        with patch("web.unified_rph_web._account",
+                   return_value=({"authenticated": True, "telegram_user_id": 123}, None)), \
+             patch("web.native_telegram_extra_materials_20261106._get",
+                   side_effect=self._dispatch):
+            response = self.web_client.get("/api/web/rph/extra-materials",
+                                           query_string=query)
+            self.assertEqual(response.status_code, 200)
+            material_types = [item["type"] for item in response.json["items"]]
+            self.assertIn("workbook", material_types)
+            self.assertIn("student_book", material_types)
+            book = self.web_client.get("/api/web/rph/english-student-book",
+                                       query_string=query)
+            workbook = self.web_client.get("/api/web/rph/english-workbook",
+                                           query_string=query)
+        self.assertEqual(book.status_code, 200)
+        self.assertEqual(workbook.status_code, 200)
+        self.assertTrue(PdfReader(BytesIO(book.data)).pages)
+        self.assertTrue(PdfReader(BytesIO(workbook.data)).pages)
+        self.assertNotEqual(book.data, workbook.data)
+        self.assertEqual(book.headers["Cache-Control"], "no-store, private")
+        self.assertEqual(workbook.headers["Cache-Control"], "no-store, private")
 
     def test_lesson157_main_page_only_and_lesson43_fails_closed(self):
         self.assertEqual(self.runtime.main[(4, 157)], "110")
