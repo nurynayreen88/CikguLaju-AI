@@ -13,9 +13,10 @@
 - Lesson 157: hanya halaman utama **110**; halaman tambahan 133 tidak disertakan.
 - Lesson 43: rujukan lima halaman kekal ditahan, API muat turun tidak mendedahkan PDF.
 - Lesson 30: **Student Book dan Workbook** muncul berasingan dalam senarai bahan dan kedua-duanya boleh dimuat turun sebagai PDF sumber sebenar.
+- Pengadang kegagalan separa: jika Workbook API gagal, Student Book yang sah kekal dipaparkan/muat turun; jika Student Book gagal, Workbook yang sah masih dipaparkan/muat turun.
 - Login tiada → 401; Unit yang tidak sepadan → 400; Bearer Telegram tiada → 401.
 - Cache PDF Web → `no-store, private`.
-- **4/4 ujian silang lulus** dalam GitHub Actions run **43016329993** (log menjalankan keempat-empat ujian tanpa kegagalan). Ujian awal 3/3 dalam run 43016057275.
+- **5/5 ujian silang lulus** dalam GitHub Actions run **43016729997**, termasuk pengadang kegagalan sebelah sumber. Bukti bertahap: 4/4 run 43016329993 dan 3/3 run 43016057275.
 
 ## Had dan langkah seterusnya
 - Ujian menggunakan kod sebenar dan fail PDF sebenar, tetapi *penghantaran antara proses* menggunakan WSGI mock, **bukan** trafik HTTPS sebenar antara servis Render.
